@@ -156,3 +156,34 @@ export function useSubject(subjectId: string | null) {
     },
   })
 }
+
+// --- Phase 2.6: progress hooks ---
+
+export type AttemptRow = {
+  id: string
+  score: number
+  total: number
+  created_at: string
+  paper: {
+    title: string
+    subject: { name: string } | null
+  } | null
+}
+
+// Recent attempts for a student, with paper + subject names
+export function useAttempts(profileId: string | null) {
+  return useQuery({
+    queryKey: ['attempts', profileId],
+    enabled: !!profileId,
+    queryFn: async (): Promise<AttemptRow[]> => {
+      const { data, error } = await supabase
+        .from('attempts')
+        .select('id, score, total, created_at, paper:papers(title, subject:subjects(name))')
+        .eq('profile_id', profileId!)
+        .order('created_at', { ascending: false })
+        .limit(10)
+      if (error) throw error
+      return data as unknown as AttemptRow[]
+    },
+  })
+}

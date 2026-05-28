@@ -1,7 +1,7 @@
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
 import { useEffect } from 'react'
 import { useAuth } from '@/lib/auth'
-import { useProfile, useStudentSubjects, useFaculties } from '@/lib/queries'
+import { useProfile, useStudentSubjects, useFaculties, useAttempts } from '@/lib/queries'
 import { Button } from '@/components/ui/button'
 
 export const Route = createFileRoute('/')({
@@ -16,11 +16,23 @@ function trialDaysLeft(startedAt: string | null): number {
   return Math.max(0, left)
 }
 
+function relativeTime(iso: string): string {
+  const diff = Date.now() - new Date(iso).getTime()
+  const mins = Math.floor(diff / 60000)
+  if (mins < 1) return 'just now'
+  if (mins < 60) return `${mins}m ago`
+  const hrs = Math.floor(mins / 60)
+  if (hrs < 24) return `${hrs}h ago`
+  const days = Math.floor(hrs / 24)
+  return `${days}d ago`
+}
+
 function Index() {
   const navigate = useNavigate()
   const { user, loading, signOut } = useAuth()
   const { data: profile, isLoading: profileLoading } = useProfile(user?.id ?? null)
   const { data: subjects } = useStudentSubjects(user?.id ?? null)
+  const { data: attempts } = useAttempts(user?.id ?? null)
   const { data: faculties } = useFaculties()
 
   useEffect(() => {
@@ -146,6 +158,38 @@ function Index() {
           </div>
         )}
       </section>
+
+      {/* RECENT ACTIVITY */}
+      {attempts && attempts.length > 0 && (
+        <section className="space-y-3">
+          <h2 className="text-lg font-bold">Recent activity</h2>
+          <div className="space-y-2">
+            {attempts.map((a) => {
+              const pct = a.total > 0 ? Math.round((a.score / a.total) * 100) : 0
+              return (
+                <div
+                  key={a.id}
+                  className="flex items-center justify-between rounded-xl border bg-card px-4 py-3"
+                >
+                  <div className="min-w-0">
+                    <p className="truncate text-sm font-semibold">
+                      {a.paper?.subject?.name ?? 'Subject'} — {a.paper?.title ?? 'Paper'}
+                    </p>
+                    <p className="text-xs text-muted-foreground">{relativeTime(a.created_at)}</p>
+                  </div>
+                  <div
+                    className={`ml-3 shrink-0 rounded-full px-3 py-1 text-xs font-bold ${
+                      pct >= 50 ? 'bg-emerald-500/10 text-emerald-500' : 'bg-amber-500/10 text-amber-500'
+                    }`}
+                  >
+                    {a.score}/{a.total}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </section>
+      )}
     </div>
   )
 }
