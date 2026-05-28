@@ -1,0 +1,31 @@
+{
+  "subject_slug": "mathematics",
+  "paper": {
+    "title": "Mathematics Practice Set 2",
+    "year": 2023,
+    "paper_type": "Practice",
+    "description": "Geometry and algebra basics."
+  },
+  "questions": [
+    {
+      "stem": "What is the area of a rectangle with length 8 cm and width 5 cm?",
+      "explanation": "Area = length × width = 8 × 5 = 40 cm².",
+      "options": [
+        { "label": "A", "content": "13 cm²", "is_correct": false },
+        { "label": "B", "content": "40 cm²", "is_correct": true },
+        { "label": "C", "content": "26 cm²", "is_correct": false },
+        { "label": "D", "content": "45 cm²", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Solve: 5x = 35",
+      "explanation": "Divide both sides by 5: x = 7.",
+      "options": [
+        { "label": "A", "content": "x = 5", "is_correct": false },
+        { "label": "B", "content": "x = 7", "is_correct": true },
+        { "label": "C", "content": "x = 30", "is_correct": false },
+        { "label": "D", "content": "x = 40", "is_correct": false }
+      ]
+    }
+  ]
+}
