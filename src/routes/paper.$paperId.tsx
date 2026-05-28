@@ -1,6 +1,8 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
 import { useState } from 'react'
 import { usePaper } from '@/lib/queries'
+import { useSaveAttempt } from '@/lib/mutations'
+import { useAuth } from '@/lib/auth'
 import { Button } from '@/components/ui/button'
 
 export const Route = createFileRoute('/paper/$paperId')({
@@ -10,6 +12,8 @@ export const Route = createFileRoute('/paper/$paperId')({
 function PaperPage() {
   const { paperId } = useParams({ from: '/paper/$paperId' })
   const { data: questions, isLoading } = usePaper(paperId)
+  const { user } = useAuth()
+  const saveAttempt = useSaveAttempt()
 
   // answers: questionId -> selected optionId
   const [answers, setAnswers] = useState<Record<string, string>>({})
@@ -41,6 +45,32 @@ function PaperPage() {
     const correct = q.options.find((o) => o.is_correct)
     return chosen && correct && chosen === correct.id ? acc + 1 : acc
   }, 0)
+
+  const handleSubmit = async () => {
+    setSubmitted(true)
+    if (!user || !questions) return
+    const answerRows = questions.map((q) => {
+      const chosen = answers[q.id] ?? null
+      const correct = q.options.find((o) => o.is_correct)
+      return {
+        questionId: q.id,
+        optionId: chosen,
+        isCorrect: !!chosen && !!correct && chosen === correct.id,
+      }
+    })
+    try {
+      await saveAttempt.mutateAsync({
+        profileId: user.id,
+        paperId,
+        score,
+        total,
+        answers: answerRows,
+      })
+    } catch (e) {
+      // non-blocking: result still shows even if save fails
+      console.error('Failed to save attempt', e)
+    }
+  }
 
   return (
     <div className="mx-auto max-w-2xl space-y-6 pb-28">
@@ -134,7 +164,7 @@ function PaperPage() {
               <Button
                 className="ml-auto"
                 disabled={answeredCount === 0}
-                onClick={() => setSubmitted(true)}
+                onClick={handleSubmit}
               >
                 Submit
               </Button>

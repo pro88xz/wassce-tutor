@@ -47,3 +47,45 @@ export function useSaveOnboarding() {
     },
   })
 }
+
+type SaveAttemptArgs = {
+  profileId: string
+  paperId: string
+  score: number
+  total: number
+  answers: { questionId: string; optionId: string | null; isCorrect: boolean }[]
+}
+
+// Saves a completed quiz attempt + per-question answers.
+export function useSaveAttempt() {
+  const qc = useQueryClient()
+
+  return useMutation({
+    mutationFn: async ({ profileId, paperId, score, total, answers }: SaveAttemptArgs) => {
+      // 1. create the attempt summary
+      const { data: attempt, error: aErr } = await supabase
+        .from('attempts')
+        .insert({ profile_id: profileId, paper_id: paperId, score, total })
+        .select('id')
+        .single()
+      if (aErr) throw aErr
+
+      // 2. insert the per-question answers
+      if (answers.length > 0) {
+        const rows = answers.map((a) => ({
+          attempt_id: attempt.id,
+          question_id: a.questionId,
+          option_id: a.optionId,
+          is_correct: a.isCorrect,
+        }))
+        const { error: ansErr } = await supabase.from('attempt_answers').insert(rows)
+        if (ansErr) throw ansErr
+      }
+
+      return attempt.id as string
+    },
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['attempts'] })
+    },
+  })
+}
