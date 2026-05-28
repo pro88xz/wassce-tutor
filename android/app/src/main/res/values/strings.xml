@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">WASSCE Tutor</string>
+    <string name="title_activity_main">WASSCE Tutor</string>
+    <string name="package_name">com.wasscetutor.app</string>
+    <string name="custom_url_scheme">com.wasscetutor.app</string>
+</resources>
