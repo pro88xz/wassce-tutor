@@ -1,5 +1,5 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
-import { useSubject, usePapers } from '@/lib/queries'
+import { useSubject, usePapers, useTopics } from '@/lib/queries'
 
 export const Route = createFileRoute('/subject/$subjectId')({
   component: SubjectPage,
@@ -9,6 +9,7 @@ function SubjectPage() {
   const { subjectId } = useParams({ from: '/subject/$subjectId' })
   const { data: subject } = useSubject(subjectId)
   const { data: papers, isLoading } = usePapers(subjectId)
+  const { data: topics } = useTopics(subjectId)
 
   return (
     <div className="mx-auto max-w-3xl space-y-6">
@@ -22,6 +23,27 @@ function SubjectPage() {
           {subject?.name ?? 'Loading…'}
         </h1>
       </header>
+
+      {topics && topics.length > 0 && (
+        <section className="space-y-3">
+          <h2 className="text-lg font-bold">Learn by topic</h2>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            {topics.map((t) => (
+              <Link
+                key={t.id}
+                to="/topic/$topicId"
+                params={{ topicId: t.id }}
+                className="block rounded-2xl border bg-card p-4 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+              >
+                <p className="font-bold">{t.name}</p>
+                {t.description && (
+                  <p className="mt-1 text-sm text-muted-foreground">{t.description}</p>
+                )}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="space-y-3">
         <h2 className="text-lg font-bold">Practice papers</h2>

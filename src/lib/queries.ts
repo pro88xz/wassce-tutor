@@ -187,3 +187,84 @@ export function useAttempts(profileId: string | null) {
     },
   })
 }
+
+// --- Phase 5: topics & lessons ---
+
+export type Topic = {
+  id: string
+  subject_id: string
+  slug: string
+  name: string
+  description: string | null
+  sort_order: number
+}
+
+export type Lesson = {
+  id: string
+  topic_id: string
+  slug: string
+  title: string
+  content: string
+  est_minutes: number | null
+  sort_order: number
+}
+
+// Topics for a subject
+export function useTopics(subjectId: string | null) {
+  return useQuery({
+    queryKey: ['topics', subjectId],
+    enabled: !!subjectId,
+    queryFn: async (): Promise<Topic[]> => {
+      const { data, error } = await supabase
+        .from('topics')
+        .select('*')
+        .eq('subject_id', subjectId!)
+        .order('sort_order')
+      if (error) throw error
+      return data as Topic[]
+    },
+  })
+}
+
+// Lessons in a topic + the topic itself
+export function useTopic(topicId: string | null) {
+  return useQuery({
+    queryKey: ['topic', topicId],
+    enabled: !!topicId,
+    queryFn: async (): Promise<{ topic: Topic; lessons: Lesson[] } | null> => {
+      const { data: topic, error: tErr } = await supabase
+        .from('topics')
+        .select('*')
+        .eq('id', topicId!)
+        .single()
+      if (tErr) throw tErr
+
+      const { data: lessons, error: lErr } = await supabase
+        .from('lessons')
+        .select('*')
+        .eq('topic_id', topicId!)
+        .eq('is_published', true)
+        .order('sort_order')
+      if (lErr) throw lErr
+
+      return { topic: topic as Topic, lessons: (lessons ?? []) as Lesson[] }
+    },
+  })
+}
+
+// A single lesson by id
+export function useLesson(lessonId: string | null) {
+  return useQuery({
+    queryKey: ['lesson', lessonId],
+    enabled: !!lessonId,
+    queryFn: async (): Promise<Lesson | null> => {
+      const { data, error } = await supabase
+        .from('lessons')
+        .select('*')
+        .eq('id', lessonId!)
+        .single()
+      if (error) throw error
+      return data as Lesson
+    },
+  })
+}
