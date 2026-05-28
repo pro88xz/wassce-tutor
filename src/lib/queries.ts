@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 import { supabase } from '@/lib/supabase'
-import type { Faculty, FacultySubject } from '@/lib/types'
+import type { Faculty, FacultySubject, Profile, Subject } from '@/lib/types'
 
 // Fetch all faculties, ordered
 export function useFaculties() {
@@ -34,7 +34,6 @@ export function useFacultySubjects(facultyId: string | null) {
   })
 }
 
-import type { Profile } from '@/lib/types'
 
 // Fetch the current user's profile (onboarding + subscription state)
 export function useProfile(userId: string | null) {
@@ -49,6 +48,23 @@ export function useProfile(userId: string | null) {
         .single()
       if (error) throw error
       return data
+    },
+  })
+}
+
+// Fetch the student's chosen subjects (joined with subject details)
+export function useStudentSubjects(profileId: string | null) {
+  return useQuery({
+    queryKey: ['student_subjects', profileId],
+    enabled: !!profileId,
+    queryFn: async (): Promise<Subject[]> => {
+      const { data, error } = await supabase
+        .from('student_subjects')
+        .select('subject:subjects(*)')
+        .eq('profile_id', profileId!)
+      if (error) throw error
+      // unwrap the joined subject from each row
+      return (data ?? []).map((row: any) => row.subject) as Subject[]
     },
   })
 }

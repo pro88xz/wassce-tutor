@@ -1,63 +1,157 @@
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
 import { useEffect } from 'react'
 import { useAuth } from '@/lib/auth'
-import { useProfile } from '@/lib/queries'
+import { useProfile, useStudentSubjects, useFaculties } from '@/lib/queries'
 import { Button } from '@/components/ui/button'
 
 export const Route = createFileRoute('/')({
   component: Index,
 })
 
+function trialDaysLeft(startedAt: string | null): number {
+  if (!startedAt) return 0
+  const start = new Date(startedAt).getTime()
+  const end = start + 7 * 24 * 60 * 60 * 1000
+  const left = Math.ceil((end - Date.now()) / (24 * 60 * 60 * 1000))
+  return Math.max(0, left)
+}
+
 function Index() {
   const navigate = useNavigate()
   const { user, loading, signOut } = useAuth()
   const { data: profile, isLoading: profileLoading } = useProfile(user?.id ?? null)
+  const { data: subjects } = useStudentSubjects(user?.id ?? null)
+  const { data: faculties } = useFaculties()
 
-  // Redirect signed-in-but-not-onboarded users to onboarding
   useEffect(() => {
     if (!loading && user && profile && !profile.onboarded) {
       navigate({ to: '/onboarding' })
     }
   }, [loading, user, profile, navigate])
 
-  if (loading) return <p className="text-muted-foreground">Loading...</p>
+  if (loading) return <CenterMsg>Loading…</CenterMsg>
 
   // NOT SIGNED IN — landing
   if (!user) {
     return (
-      <div className="max-w-md mx-auto space-y-6 text-center pt-12">
-        <h1 className="text-3xl font-bold">WASSCE Tutor</h1>
-        <p className="text-muted-foreground">
-          Your personalised WASSCE prep — tailored to your faculty.
-        </p>
-        <Link to="/auth">
-          <Button className="w-full">Get Started</Button>
+      <div className="mx-auto flex min-h-[80vh] max-w-md flex-col items-center justify-center gap-8 text-center">
+        <div className="space-y-3">
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-primary text-2xl font-black text-primary-foreground shadow-lg shadow-primary/30">
+            W
+          </div>
+          <h1 className="text-4xl font-black tracking-tight">WASSCE Tutor</h1>
+          <p className="text-balance text-muted-foreground">
+            Your personalised WASSCE prep — tailored to your faculty, built to help you pass.
+          </p>
+        </div>
+        <Link to="/auth" className="w-full">
+          <Button className="h-12 w-full text-base">Get Started — Free for 7 days</Button>
         </Link>
       </div>
     )
   }
 
-  // SIGNED IN, profile still loading
-  if (profileLoading) return <p className="text-muted-foreground">Loading your dashboard...</p>
+  if (profileLoading) return <CenterMsg>Loading your dashboard…</CenterMsg>
 
-  // SIGNED IN + ONBOARDED — minimal dashboard
+  const daysLeft = trialDaysLeft(profile?.trial_started_at ?? null)
+  const facultyName =
+    faculties?.find((f) => f.id === profile?.faculty_id)?.name ?? 'Your faculty'
+  const firstName = profile?.full_name?.split(' ')[0] ?? 'there'
+
   return (
-    <div className="max-w-2xl mx-auto space-y-6">
-      <div className="flex items-center justify-between">
+    <div className="mx-auto max-w-3xl space-y-6">
+      {/* HEADER */}
+      <header className="flex items-start justify-between">
         <div>
-          <h1 className="text-2xl font-bold">
-            Welcome{profile?.full_name ? `, ${profile.full_name}` : ''}
-          </h1>
-          <p className="text-sm text-muted-foreground">Your dashboard</p>
+          <p className="text-sm text-muted-foreground">Welcome back,</p>
+          <h1 className="text-3xl font-black tracking-tight">{firstName} 👋</h1>
         </div>
-        <Button variant="outline" size="sm" onClick={signOut}>Sign Out</Button>
+        <Button variant="ghost" size="sm" onClick={signOut}>
+          Sign out
+        </Button>
+      </header>
+
+      {/* STATUS STRIP */}
+      <div className="grid grid-cols-2 gap-3">
+        <div className="rounded-2xl border bg-card p-4">
+          <p className="text-xs uppercase tracking-wide text-muted-foreground">Faculty</p>
+          <p className="mt-1 text-lg font-bold">{facultyName}</p>
+        </div>
+        <div
+          className={`rounded-2xl border p-4 ${
+            profile?.subscription_active
+              ? 'border-emerald-500/30 bg-emerald-500/5'
+              : daysLeft > 0
+                ? 'border-amber-500/30 bg-amber-500/5'
+                : 'border-red-500/30 bg-red-500/5'
+          }`}
+        >
+          <p className="text-xs uppercase tracking-wide text-muted-foreground">Access</p>
+          <p className="mt-1 text-lg font-bold">
+            {profile?.subscription_active
+              ? 'Active'
+              : daysLeft > 0
+                ? `${daysLeft} day${daysLeft === 1 ? '' : 's'} left`
+                : 'Trial ended'}
+          </p>
+        </div>
       </div>
 
-      <div className="rounded-lg border p-4 space-y-1">
-        <p className="text-sm text-muted-foreground">
-          Onboarding complete. Dashboard content coming in Phase 2.
-        </p>
-      </div>
+      {/* TRIAL NUDGE */}
+      {!profile?.subscription_active && (
+        <div className="flex items-center justify-between rounded-2xl bg-primary px-5 py-4 text-primary-foreground">
+          <div>
+            <p className="font-bold">Unlock everything for a year</p>
+            <p className="text-sm opacity-90">Just 75 NLe — all subjects, all papers.</p>
+          </div>
+          <Button variant="secondary" size="sm">
+            Subscribe
+          </Button>
+        </div>
+      )}
+
+      {/* SUBJECTS */}
+      <section className="space-y-3">
+        <div className="flex items-center justify-between">
+          <h2 className="text-lg font-bold">Your subjects</h2>
+          <Link to="/onboarding" className="text-sm text-primary hover:underline">
+            Edit
+          </Link>
+        </div>
+
+        {!subjects ? (
+          <p className="text-sm text-muted-foreground">Loading subjects…</p>
+        ) : subjects.length === 0 ? (
+          <p className="text-sm text-muted-foreground">No subjects yet.</p>
+        ) : (
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+            {subjects.map((s) => (
+              <button
+                key={s.id}
+                className="group flex aspect-square flex-col justify-between rounded-2xl border bg-card p-4 text-left transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+              >
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary/10 text-sm font-black text-primary">
+                  {s.name.slice(0, 2).toUpperCase()}
+                </div>
+                <div>
+                  <p className="font-semibold leading-tight">{s.name}</p>
+                  <p className="mt-0.5 text-xs text-muted-foreground">
+                    Tap to study →
+                  </p>
+                </div>
+              </button>
+            ))}
+          </div>
+        )}
+      </section>
+    </div>
+  )
+}
+
+function CenterMsg({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex min-h-[60vh] items-center justify-center">
+      <p className="text-muted-foreground">{children}</p>
     </div>
   )
 }
