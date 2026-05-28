@@ -7,6 +7,8 @@ import { AuthProvider } from '@/lib/auth'
 import { routeTree } from './routeTree.gen'
 import './index.css'
 import './native.css'
+import { applyTheme, getTheme } from '@/lib/theme'
+applyTheme(getTheme())
 
 const router = createRouter({ routeTree })
 

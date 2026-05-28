@@ -3,6 +3,8 @@ import { useEffect } from 'react'
 import { useAuth } from '@/lib/auth'
 import { useProfile, useStudentSubjects, useFaculties, useAttempts } from '@/lib/queries'
 import { Button } from '@/components/ui/button'
+import { useState } from 'react'
+import { toggleTheme, getTheme } from '@/lib/theme'
 
 export const Route = createFileRoute('/')({
   component: Index,
@@ -33,6 +35,8 @@ function Index() {
   const { data: profile, isLoading: profileLoading } = useProfile(user?.id ?? null)
   const { data: subjects } = useStudentSubjects(user?.id ?? null)
   const { data: attempts } = useAttempts(user?.id ?? null)
+  const [theme, setTheme] = useState(getTheme())
+  const flip = () => setTheme(toggleTheme())
   const { data: faculties } = useFaculties()
 
   useEffect(() => {
@@ -78,9 +82,12 @@ function Index() {
           <p className="text-sm text-muted-foreground">Welcome back,</p>
           <h1 className="text-3xl font-black tracking-tight">{firstName} 👋</h1>
         </div>
-        <Button variant="ghost" size="sm" onClick={signOut}>
-          Sign out
-        </Button>
+        <div className="flex items-center gap-1">
+          <Button variant="ghost" size="sm" onClick={flip} aria-label="Toggle reading mode">
+            {theme === 'light' ? '🌙' : '☀️'}
+          </Button>
+          <Button variant="ghost" size="sm" onClick={signOut}>Sign out</Button>
+        </div>
       </header>
 
       {/* STATUS STRIP */}
