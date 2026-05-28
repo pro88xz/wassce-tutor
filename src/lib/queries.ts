@@ -68,3 +68,91 @@ export function useStudentSubjects(profileId: string | null) {
     },
   })
 }
+
+// --- Phase 2: content hooks ---
+
+export type PaperRow = {
+  id: string
+  subject_id: string
+  title: string
+  year: number | null
+  paper_type: string | null
+  description: string | null
+  question_count: number
+}
+
+export type OptionRow = {
+  id: string
+  question_id: string
+  label: string
+  content: string
+  is_correct: boolean
+  position: number
+}
+
+export type QuestionRow = {
+  id: string
+  paper_id: string
+  stem: string
+  image_url: string | null
+  explanation: string | null
+  position: number
+  options: OptionRow[]
+}
+
+// Papers for a given subject
+export function usePapers(subjectId: string | null) {
+  return useQuery({
+    queryKey: ['papers', subjectId],
+    enabled: !!subjectId,
+    queryFn: async (): Promise<PaperRow[]> => {
+      const { data, error } = await supabase
+        .from('papers')
+        .select('*')
+        .eq('subject_id', subjectId!)
+        .eq('is_published', true)
+        .order('sort_order')
+      if (error) throw error
+      return data as PaperRow[]
+    },
+  })
+}
+
+// A full paper: its questions, each with its options
+export function usePaper(paperId: string | null) {
+  return useQuery({
+    queryKey: ['paper', paperId],
+    enabled: !!paperId,
+    queryFn: async (): Promise<QuestionRow[]> => {
+      const { data, error } = await supabase
+        .from('questions')
+        .select('*, options(*)')
+        .eq('paper_id', paperId!)
+        .order('position')
+      if (error) throw error
+      // sort options within each question
+      const rows = (data as unknown as QuestionRow[]).map((q) => ({
+        ...q,
+        options: [...q.options].sort((a, b) => a.position - b.position),
+      }))
+      return rows
+    },
+  })
+}
+
+// A single subject by id (for the subject page header)
+export function useSubject(subjectId: string | null) {
+  return useQuery({
+    queryKey: ['subject', subjectId],
+    enabled: !!subjectId,
+    queryFn: async (): Promise<Subject | null> => {
+      const { data, error } = await supabase
+        .from('subjects')
+        .select('*')
+        .eq('id', subjectId!)
+        .single()
+      if (error) throw error
+      return data
+    },
+  })
+}

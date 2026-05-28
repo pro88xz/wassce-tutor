@@ -126,8 +126,10 @@ function Index() {
         ) : (
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
             {subjects.map((s) => (
-              <button
+              <Link
                 key={s.id}
+                to="/subject/$subjectId"
+                params={{ subjectId: s.id }}
                 className="group flex aspect-square flex-col justify-between rounded-2xl border bg-card p-4 text-left transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
               >
                 <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary/10 text-sm font-black text-primary">
@@ -139,7 +141,7 @@ function Index() {
                     Tap to study →
                   </p>
                 </div>
-              </button>
+              </Link>
             ))}
           </div>
         )}
