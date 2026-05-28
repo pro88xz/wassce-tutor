@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from '@tanstack/react-router'
+import { createFileRoute, Link, Outlet, useLocation } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
@@ -12,6 +12,8 @@ export const Route = createFileRoute('/admin')({
 function AdminPage() {
   const { user } = useAuth()
   const { data: profile, isLoading } = useProfile(user?.id ?? null)
+  const loc = useLocation()
+  const atRoot = loc.pathname === '/admin' || loc.pathname === '/admin/'
   const [unlocked, setUnlocked] = useState(false)
   const [password, setPassword] = useState('')
   const [message, setMessage] = useState<string | null>(null)
@@ -90,23 +92,29 @@ function AdminPage() {
     )
   }
 
-  // Unlocked — admin home (forms come next)
+  // Unlocked — render either the sub-route outlet or the admin home grid
   return (
     <div className="mx-auto max-w-3xl space-y-6">
-      <div className="flex items-center justify-between">
-        <div>
-          <p className="text-xs uppercase tracking-wide text-muted-foreground">Admin</p>
-          <h1 className="text-2xl font-bold">Content management</h1>
+      {atRoot && (
+        <div className="flex items-center justify-between">
+          <div>
+            <p className="text-xs uppercase tracking-wide text-muted-foreground">Admin</p>
+            <h1 className="text-2xl font-bold">Content management</h1>
+          </div>
+          <Link to="/"><Button variant="outline" size="sm">Back</Button></Link>
         </div>
-        <Link to="/"><Button variant="outline" size="sm">Back</Button></Link>
-      </div>
+      )}
 
+      {!atRoot ? <Outlet /> : (
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-        <div className="rounded-2xl border bg-card p-5">
+        <Link
+          to="/admin/topics"
+          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+        >
           <h2 className="font-bold">Topics</h2>
           <p className="mt-1 text-sm text-muted-foreground">Create and manage topics by subject.</p>
-          <p className="mt-3 text-xs text-muted-foreground">— form coming next step —</p>
-        </div>
+          <p className="mt-3 text-xs text-primary">Open →</p>
+        </Link>
         <div className="rounded-2xl border bg-card p-5">
           <h2 className="font-bold">Lessons</h2>
           <p className="mt-1 text-sm text-muted-foreground">Add lessons under topics.</p>
@@ -123,6 +131,7 @@ function AdminPage() {
           <p className="mt-3 text-xs text-muted-foreground">— form coming —</p>
         </div>
       </div>
+      )}
     </div>
   )
 }

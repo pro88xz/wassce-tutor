@@ -89,3 +89,48 @@ export function useSaveAttempt() {
     },
   })
 }
+
+type CreateTopicArgs = {
+  subject_id: string
+  slug: string
+  name: string
+  description?: string
+  sort_order?: number
+}
+
+export function useCreateTopic() {
+  const qc = useQueryClient()
+  return useMutation({
+    mutationFn: async (args: CreateTopicArgs) => {
+      const { data, error } = await supabase
+        .from('topics')
+        .insert({
+          subject_id: args.subject_id,
+          slug: args.slug.trim().toLowerCase().replace(/\s+/g, '-'),
+          name: args.name.trim(),
+          description: args.description?.trim() || null,
+          sort_order: args.sort_order ?? 0,
+        })
+        .select('id')
+        .single()
+      if (error) throw error
+      return data.id as string
+    },
+    onSuccess: (_id, vars) => {
+      qc.invalidateQueries({ queryKey: ['topics', vars.subject_id] })
+    },
+  })
+}
+
+export function useDeleteTopic() {
+  const qc = useQueryClient()
+  return useMutation({
+    mutationFn: async (topicId: string) => {
+      const { error } = await supabase.from('topics').delete().eq('id', topicId)
+      if (error) throw error
+    },
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['topics'] })
+    },
+  })
+}
