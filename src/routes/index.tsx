@@ -83,6 +83,11 @@ function Index() {
           <h1 className="text-3xl font-black tracking-tight">{firstName} 👋</h1>
         </div>
         <div className="flex items-center gap-1">
+          {profile?.is_admin && (
+            <Link to="/admin">
+              <Button variant="ghost" size="sm">Admin</Button>
+            </Link>
+          )}
           <Button variant="ghost" size="sm" onClick={flip} aria-label="Toggle reading mode">
             {theme === 'light' ? '🌙' : '☀️'}
           </Button>

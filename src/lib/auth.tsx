@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useState } from 'react'
 import type { ReactNode } from 'react'
 import type { Session, User } from '@supabase/supabase-js'
 import { supabase } from '@/lib/supabase'
+import { clearUnlocked } from '@/lib/adminGate'
 
 type AuthState = {
   session: Session | null
@@ -26,12 +27,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     // Listen for auth changes (login, logout, token refresh)
     const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => {
       setSession(session)
+      // Any auth change (sign in / sign out / refresh) re-requires admin password
+      clearUnlocked()
     })
 
     return () => sub.subscription.unsubscribe()
   }, [])
 
   const signOut = async () => {
+    clearUnlocked()
     await supabase.auth.signOut()
   }
 

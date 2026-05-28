@@ -34,4 +34,5 @@ export type Profile = {
   trial_started_at: string | null
   subscription_active: boolean
   subscription_expires_at: string | null
+  is_admin: boolean
 }
