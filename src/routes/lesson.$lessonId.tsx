@@ -1,4 +1,5 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
+import { AccessGate } from '@/components/AccessGate'
 import ReactMarkdown from 'react-markdown'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
@@ -16,6 +17,7 @@ function LessonPage() {
   if (!lesson) return <p className="text-muted-foreground">Lesson not found.</p>
 
   return (
+    <AccessGate>
     <div className="mx-auto max-w-2xl space-y-6 pb-12">
       <Link to="/" className="text-sm text-muted-foreground hover:text-foreground">
         ← Back
@@ -36,5 +38,6 @@ function LessonPage() {
         <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>{lesson.content}</ReactMarkdown>
       </article>
     </div>
+    </AccessGate>
   )
 }

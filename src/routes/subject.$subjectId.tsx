@@ -1,4 +1,5 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
+import { AccessGate } from '@/components/AccessGate'
 import { useSubject, usePapers, useTopics } from '@/lib/queries'
 
 export const Route = createFileRoute('/subject/$subjectId')({
@@ -12,6 +13,7 @@ function SubjectPage() {
   const { data: topics } = useTopics(subjectId)
 
   return (
+    <AccessGate>
     <div className="mx-auto max-w-3xl space-y-6">
       <Link to="/" className="text-sm text-muted-foreground hover:text-foreground">
         ← Back
@@ -83,5 +85,6 @@ function SubjectPage() {
         )}
       </section>
     </div>
+    </AccessGate>
   )
 }

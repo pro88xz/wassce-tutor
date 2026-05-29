@@ -1,0 +1,74 @@
+import { createFileRoute, Link } from '@tanstack/react-router'
+import { useAuth } from '@/lib/auth'
+import { useProfile } from '@/lib/queries'
+import { Button } from '@/components/ui/button'
+
+export const Route = createFileRoute('/subscribe')({
+  component: SubscribePage,
+})
+
+function SubscribePage() {
+  const { user } = useAuth()
+  const { data: profile } = useProfile(user?.id ?? null)
+
+  if (!user) {
+    return (
+      <div className="mx-auto max-w-md space-y-3 text-center pt-8">
+        <p>Sign in to subscribe.</p>
+        <Link to="/auth"><Button>Sign in</Button></Link>
+      </div>
+    )
+  }
+
+  return (
+    <div className="mx-auto max-w-md space-y-6 pt-8">
+      <Link to="/" className="text-sm text-muted-foreground hover:text-foreground">
+        ← Back
+      </Link>
+
+      <header className="space-y-2 text-center">
+        <h1 className="text-2xl font-bold">Subscribe</h1>
+        <p className="text-sm text-muted-foreground">
+          Full access for a year — every subject, paper, and lesson.
+        </p>
+      </header>
+
+      <div className="rounded-2xl border bg-card p-6 space-y-4">
+        <div className="flex items-baseline justify-between">
+          <span className="font-bold">WASSCE Tutor — 1 year</span>
+          <span>
+            <span className="text-3xl font-black">75</span>{' '}
+            <span className="text-sm text-muted-foreground">NLe</span>
+          </span>
+        </div>
+
+        <ul className="space-y-2 text-sm">
+          <li>✓ All subjects in your faculty</li>
+          <li>✓ Past papers and practice quizzes</li>
+          <li>✓ Step-by-step lessons with explanations</li>
+          <li>✓ Progress tracking and history</li>
+          <li>✓ Reading mode for night study</li>
+        </ul>
+
+        <div className="space-y-2 pt-2">
+          <Button className="h-12 w-full text-base" disabled>
+            Pay with Orange Money / AfriMoney
+          </Button>
+          <p className="text-center text-xs text-muted-foreground">
+            Payments via Monime — coming soon. Account approval pending.
+          </p>
+        </div>
+      </div>
+
+      {profile?.subscription_active && (
+        <div className="rounded-xl bg-emerald-500/10 p-3 text-center text-sm text-emerald-700 dark:text-emerald-400">
+          ✓ You already have an active subscription.
+        </div>
+      )}
+
+      <p className="text-center text-xs text-muted-foreground">
+        Questions? Contact us at support@wasscetutor.app
+      </p>
+    </div>
+  )
+}

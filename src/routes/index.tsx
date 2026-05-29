@@ -103,26 +103,30 @@ function Index() {
         </div>
         <div
           className={`rounded-2xl border p-4 ${
-            profile?.subscription_active
-              ? 'border-emerald-500/30 bg-emerald-500/5'
-              : daysLeft > 0
-                ? 'border-amber-500/30 bg-amber-500/5'
-                : 'border-red-500/30 bg-red-500/5'
+            profile?.is_admin
+              ? 'border-primary/30 bg-primary/5'
+              : profile?.subscription_active
+                ? 'border-emerald-500/30 bg-emerald-500/5'
+                : daysLeft > 0
+                  ? 'border-amber-500/30 bg-amber-500/5'
+                  : 'border-red-500/30 bg-red-500/5'
           }`}
         >
           <p className="text-xs uppercase tracking-wide text-muted-foreground">Access</p>
           <p className="mt-1 text-lg font-bold">
-            {profile?.subscription_active
-              ? 'Active'
-              : daysLeft > 0
-                ? `${daysLeft} day${daysLeft === 1 ? '' : 's'} left`
-                : 'Trial ended'}
+            {profile?.is_admin
+              ? 'Admin'
+              : profile?.subscription_active
+                ? 'Active'
+                : daysLeft > 0
+                  ? `${daysLeft} day${daysLeft === 1 ? '' : 's'} left`
+                  : 'Trial ended'}
           </p>
         </div>
       </div>
 
       {/* TRIAL NUDGE */}
-      {!profile?.subscription_active && (
+      {!profile?.subscription_active && !profile?.is_admin && (
         <div className="flex items-center justify-between rounded-2xl bg-primary px-5 py-4 text-primary-foreground">
           <div>
             <p className="font-bold">Unlock everything for a year</p>

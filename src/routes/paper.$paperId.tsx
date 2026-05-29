@@ -1,4 +1,5 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
+import { AccessGate } from '@/components/AccessGate'
 import { useState } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkMath from 'remark-math'
@@ -76,6 +77,7 @@ function PaperPage() {
   }
 
   return (
+    <AccessGate>
     <div className="mx-auto max-w-2xl space-y-6 pb-28">
       <Link to="/" className="text-sm text-muted-foreground hover:text-foreground">
         ← Back to dashboard
@@ -193,5 +195,6 @@ function PaperPage() {
         </div>
       </div>
     </div>
+    </AccessGate>
   )
 }
