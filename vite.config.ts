@@ -15,4 +15,18 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: (id: string) => {
+          if (id.includes('node_modules')) {
+            if (id.includes('react-dom') || id.includes('/react/')) return 'react'
+            if (id.includes('@supabase')) return 'supabase'
+            if (id.includes('react-markdown') || id.includes('remark-') || id.includes('rehype-') || id.includes('katex')) return 'markdown'
+            if (id.includes('turndown')) return 'turndown'
+          }
+        },
+      },
+    },
+  },
 })
