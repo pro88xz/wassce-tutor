@@ -41,9 +41,14 @@ export function useSaveOnboarding() {
         .eq('id', profileId)
       if (profErr) throw profErr
     },
-    onSuccess: () => {
-      qc.invalidateQueries({ queryKey: ['profile'] })
-      qc.invalidateQueries({ queryKey: ['student_subjects'] })
+    onSuccess: async (_data, vars) => {
+      // Refetch profile + student_subjects so the dashboard sees onboarded=true immediately.
+      await Promise.all([
+        qc.invalidateQueries({ queryKey: ['profile', vars.profileId] }),
+        qc.invalidateQueries({ queryKey: ['profile'] }),
+        qc.invalidateQueries({ queryKey: ['student_subjects'] }),
+      ])
+      await qc.refetchQueries({ queryKey: ['profile', vars.profileId] })
     },
   })
 }

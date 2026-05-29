@@ -167,7 +167,7 @@ function Index() {
   const firstName = profile?.full_name?.split(' ')[0] ?? 'there'
 
   return (
-    <div className="mx-auto max-w-3xl space-y-6">
+    <div className="mx-auto max-w-3xl space-y-6 pb-12">
       {/* HEADER */}
       <header className="flex items-start justify-between">
         <div>
