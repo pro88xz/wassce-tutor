@@ -1,5 +1,7 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
 import ReactMarkdown from 'react-markdown'
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
 import { useLesson } from '@/lib/queries'
 
 export const Route = createFileRoute('/lesson/$lessonId')({
@@ -31,7 +33,7 @@ function LessonPage() {
         prose-headings:font-bold prose-h2:text-xl prose-h2:mt-6 prose-h2:mb-3
         prose-p:leading-relaxed prose-li:my-1
         prose-strong:text-foreground prose-code:text-foreground">
-        <ReactMarkdown>{lesson.content}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>{lesson.content}</ReactMarkdown>
       </article>
     </div>
   )

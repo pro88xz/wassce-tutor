@@ -134,3 +134,50 @@ export function useDeleteTopic() {
     },
   })
 }
+
+type CreateLessonArgs = {
+  topic_id: string
+  slug: string
+  title: string
+  content: string
+  est_minutes?: number | null
+  sort_order?: number
+}
+
+export function useCreateLesson() {
+  const qc = useQueryClient()
+  return useMutation({
+    mutationFn: async (args: CreateLessonArgs) => {
+      const { data, error } = await supabase
+        .from('lessons')
+        .insert({
+          topic_id: args.topic_id,
+          slug: args.slug.trim().toLowerCase().replace(/\s+/g, '-'),
+          title: args.title.trim(),
+          content: args.content,
+          est_minutes: args.est_minutes ?? null,
+          sort_order: args.sort_order ?? 0,
+        })
+        .select('id')
+        .single()
+      if (error) throw error
+      return data.id as string
+    },
+    onSuccess: (_id, vars) => {
+      qc.invalidateQueries({ queryKey: ['topic', vars.topic_id] })
+    },
+  })
+}
+
+export function useDeleteLesson() {
+  const qc = useQueryClient()
+  return useMutation({
+    mutationFn: async (lessonId: string) => {
+      const { error } = await supabase.from('lessons').delete().eq('id', lessonId)
+      if (error) throw error
+    },
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['topic'] })
+    },
+  })
+}

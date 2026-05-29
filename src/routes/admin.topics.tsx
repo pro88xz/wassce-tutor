@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
 import { useAuth } from '@/lib/auth'
-import { useProfile, useFaculties, useTopics } from '@/lib/queries'
+import { useProfile, useTopics } from '@/lib/queries'
 import { useCreateTopic, useDeleteTopic } from '@/lib/mutations'
 import { supabase } from '@/lib/supabase'
 import { Button } from '@/components/ui/button'

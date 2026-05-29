@@ -115,11 +115,14 @@ function AdminPage() {
           <p className="mt-1 text-sm text-muted-foreground">Create and manage topics by subject.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
         </Link>
-        <div className="rounded-2xl border bg-card p-5">
+        <Link
+          to="/admin/lessons"
+          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+        >
           <h2 className="font-bold">Lessons</h2>
           <p className="mt-1 text-sm text-muted-foreground">Add lessons under topics.</p>
-          <p className="mt-3 text-xs text-muted-foreground">— form coming —</p>
-        </div>
+          <p className="mt-3 text-xs text-primary">Open →</p>
+        </Link>
         <div className="rounded-2xl border bg-card p-5">
           <h2 className="font-bold">Papers</h2>
           <p className="mt-1 text-sm text-muted-foreground">Create practice papers and exams.</p>
