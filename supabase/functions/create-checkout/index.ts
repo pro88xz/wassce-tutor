@@ -59,7 +59,7 @@ Deno.serve(async (req) => {
         'Idempotency-Key': idempotencyKey,
       },
       body: JSON.stringify({
-        name: 'WASSCE Tutor — 1 year subscription',
+        name: 'WASSCE Tutor - 1 year subscription',
         description: 'Full access to all WASSCE Tutor content for one academic year.',
         successUrl,
         cancelUrl,
@@ -67,7 +67,7 @@ Deno.serve(async (req) => {
         lineItems: [
           {
             type: 'custom',
-            name: 'WASSCE Tutor — 1 year',
+            name: 'WASSCE Tutor - 1 year',
             price: { currency: 'SLE', value: PRICE_MINOR_UNITS },
             quantity: 1,
           },
