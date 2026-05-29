@@ -50,19 +50,111 @@ function Index() {
   // NOT SIGNED IN — landing
   if (!user) {
     return (
-      <div className="mx-auto flex min-h-[80vh] max-w-md flex-col items-center justify-center gap-8 text-center">
-        <div className="space-y-3">
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-primary text-2xl font-black text-primary-foreground shadow-lg shadow-primary/30">
+      <div className="mx-auto max-w-3xl space-y-16 pb-12">
+        {/* HERO */}
+        <section className="pt-8 sm:pt-16 text-center space-y-6">
+          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-2xl font-black text-primary-foreground shadow-lg shadow-primary/30">
             W
           </div>
-          <h1 className="text-4xl font-black tracking-tight">WASSCE Tutor</h1>
-          <p className="text-balance text-muted-foreground">
-            Your personalised WASSCE prep — tailored to your faculty, built to help you pass.
+          <div className="space-y-3">
+            <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-balance">
+              Pass WASSCE with confidence.
+            </h1>
+            <p className="text-balance text-muted-foreground max-w-xl mx-auto">
+              Personalised practice for every faculty — Science, Arts, Commercial, Technical. Past papers, lessons, and explanations built for Sierra Leone.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+            <Link to="/auth">
+              <Button className="h-12 px-8 text-base">Start free for 7 days</Button>
+            </Link>
+            <Link to="/auth">
+              <Button variant="ghost" className="h-12 px-6 text-base">Sign in</Button>
+            </Link>
+          </div>
+          <p className="text-xs text-muted-foreground">
+            No card needed · 75 NLe / year after trial
           </p>
-        </div>
-        <Link to="/auth" className="w-full">
-          <Button className="h-12 w-full text-base">Get Started — Free for 7 days</Button>
-        </Link>
+        </section>
+
+        {/* HOW IT WORKS */}
+        <section className="space-y-6">
+          <h2 className="text-center text-2xl font-bold">How it works</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="rounded-2xl border bg-card p-5">
+              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary/10 text-sm font-black text-primary">1</div>
+              <h3 className="mt-3 font-bold">Pick your faculty</h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Science, Arts, Commercial or Technical. We tailor your subjects automatically.
+              </p>
+            </div>
+            <div className="rounded-2xl border bg-card p-5">
+              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary/10 text-sm font-black text-primary">2</div>
+              <h3 className="mt-3 font-bold">Learn then test</h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Step-by-step lessons for every topic, then real WASSCE-style questions to lock it in.
+              </p>
+            </div>
+            <div className="rounded-2xl border bg-card p-5">
+              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary/10 text-sm font-black text-primary">3</div>
+              <h3 className="mt-3 font-bold">Track your growth</h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                See your scores rise. Find your weak spots. Walk into the exam knowing you're ready.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* WHAT YOU GET */}
+        <section className="space-y-6">
+          <h2 className="text-center text-2xl font-bold">Built for the WASSCE you're actually taking</h2>
+          <div className="rounded-2xl border bg-card p-6 space-y-3">
+            <Feature>Real past papers and practice questions, scored instantly</Feature>
+            <Feature>Step-by-step explanations for every answer — never just &ldquo;wrong&rdquo;</Feature>
+            <Feature>Lessons with diagrams and properly rendered math equations</Feature>
+            <Feature>Reading mode for late-night study without burning your eyes</Feature>
+            <Feature>Works on any Android phone, even on patchy data</Feature>
+            <Feature>Made in Sierra Leone, for Sierra Leonean students</Feature>
+          </div>
+        </section>
+
+        {/* PRICING */}
+        <section className="space-y-4">
+          <h2 className="text-center text-2xl font-bold">One simple price</h2>
+          <div className="mx-auto max-w-md rounded-2xl border-2 border-primary bg-card p-6 space-y-4">
+            <div className="text-center">
+              <p className="text-sm uppercase tracking-wide text-muted-foreground">Full access</p>
+              <p className="mt-1">
+                <span className="text-5xl font-black">75</span>
+                <span className="ml-1 text-muted-foreground">NLe / year</span>
+              </p>
+              <p className="text-xs text-muted-foreground mt-1">
+                Less than the cost of one textbook
+              </p>
+            </div>
+            <div className="border-t pt-4 space-y-2 text-sm">
+              <Feature>Every subject in your faculty</Feature>
+              <Feature>Every past paper, every lesson</Feature>
+              <Feature>Pay with Orange Money or AfriMoney</Feature>
+              <Feature>Cancel anytime, no questions</Feature>
+            </div>
+            <Link to="/auth" className="block">
+              <Button className="h-11 w-full">Start your 7-day free trial</Button>
+            </Link>
+            <p className="text-center text-xs text-muted-foreground">
+              Try every feature free for a week. Pay only if it helps you.
+            </p>
+          </div>
+        </section>
+
+        {/* FINAL CTA */}
+        <section className="text-center space-y-3 pt-4">
+          <h2 className="text-2xl font-bold">Your WASSCE is closer than you think.</h2>
+          <p className="text-muted-foreground">Start studying smarter today.</p>
+          <Link to="/auth">
+            <Button className="h-12 px-8 text-base">Get started — it's free</Button>
+          </Link>
+        </section>
       </div>
     )
   }
@@ -214,6 +306,16 @@ function CenterMsg({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex min-h-[60vh] items-center justify-center">
       <p className="text-muted-foreground">{children}</p>
+    </div>
+  )
+}
+
+
+function Feature({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex items-start gap-2">
+      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-xs font-bold text-emerald-600">✓</span>
+      <span className="text-sm">{children}</span>
     </div>
   )
 }
