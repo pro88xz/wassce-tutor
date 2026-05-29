@@ -181,3 +181,51 @@ export function useDeleteLesson() {
     },
   })
 }
+
+type CreatePaperArgs = {
+  subject_id: string
+  title: string
+  year?: number | null
+  paper_type?: string
+  description?: string
+  sort_order?: number
+}
+
+export function useCreatePaper() {
+  const qc = useQueryClient()
+  return useMutation({
+    mutationFn: async (args: CreatePaperArgs) => {
+      const { data, error } = await supabase
+        .from('papers')
+        .insert({
+          subject_id: args.subject_id,
+          title: args.title.trim(),
+          year: args.year ?? null,
+          paper_type: args.paper_type?.trim() || null,
+          description: args.description?.trim() || null,
+          sort_order: args.sort_order ?? 0,
+          question_count: 0,
+        })
+        .select('id')
+        .single()
+      if (error) throw error
+      return data.id as string
+    },
+    onSuccess: (_id, vars) => {
+      qc.invalidateQueries({ queryKey: ['papers', vars.subject_id] })
+    },
+  })
+}
+
+export function useDeletePaper() {
+  const qc = useQueryClient()
+  return useMutation({
+    mutationFn: async (paperId: string) => {
+      const { error } = await supabase.from('papers').delete().eq('id', paperId)
+      if (error) throw error
+    },
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['papers'] })
+    },
+  })
+}
