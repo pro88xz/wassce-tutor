@@ -230,7 +230,10 @@ function AdminLessons() {
                 const html = e.clipboardData.getData('text/html')
                 if (!html) return  // no HTML in clipboard — let plain text paste normally
                 e.preventDefault()
-                const md = turndown.turndown(html)
+                let md = turndown.turndown(html)
+                // Un-escape doubled backslashes inside $...$ and $$...$$ math regions
+                md = md.replace(/\$\$([\s\S]*?)\$\$/g, (_m, body) => '$$' + body.replace(/\\\\/g, '\\') + '$$')
+                md = md.replace(/\$([^\n$]+?)\$/g, (_m, body) => '$' + body.replace(/\\\\/g, '\\') + '$')
                 const ta = e.currentTarget
                 const start = ta.selectionStart
                 const end = ta.selectionEnd

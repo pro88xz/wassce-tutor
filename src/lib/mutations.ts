@@ -229,3 +229,96 @@ export function useDeletePaper() {
     },
   })
 }
+
+type CreateQuestionArgs = {
+  paper_id: string
+  stem: string
+  explanation?: string
+  topic_id?: string | null
+  options: { label: string; content: string; is_correct: boolean }[]
+}
+
+export function useCreateQuestion() {
+  const qc = useQueryClient()
+  return useMutation({
+    mutationFn: async (args: CreateQuestionArgs) => {
+      // Find next position
+      const { data: existing } = await supabase
+        .from('questions')
+        .select('position')
+        .eq('paper_id', args.paper_id)
+        .order('position', { ascending: false })
+        .limit(1)
+      const nextPos = (existing?.[0]?.position ?? 0) + 1
+
+      // 1. Insert question
+      const { data: q, error: qErr } = await supabase
+        .from('questions')
+        .insert({
+          paper_id: args.paper_id,
+          stem: args.stem.trim(),
+          explanation: args.explanation?.trim() || null,
+          topic_id: args.topic_id || null,
+          position: nextPos,
+        })
+        .select('id')
+        .single()
+      if (qErr) throw qErr
+
+      // 2. Insert options
+      const optionRows = args.options.map((o, i) => ({
+        question_id: q.id,
+        label: o.label,
+        content: o.content.trim(),
+        is_correct: o.is_correct,
+        position: i + 1,
+      }))
+      const { error: oErr } = await supabase.from('options').insert(optionRows)
+      if (oErr) {
+        // best-effort rollback
+        await supabase.from('questions').delete().eq('id', q.id)
+        throw oErr
+      }
+
+      // 3. Bump paper's question_count
+      const { data: paper } = await supabase
+        .from('papers')
+        .select('question_count')
+        .eq('id', args.paper_id)
+        .single()
+      const newCount = (paper?.question_count ?? 0) + 1
+      await supabase
+        .from('papers')
+        .update({ question_count: newCount })
+        .eq('id', args.paper_id)
+
+      return q.id as string
+    },
+    onSuccess: (_id, vars) => {
+      qc.invalidateQueries({ queryKey: ['paper', vars.paper_id] })
+      qc.invalidateQueries({ queryKey: ['papers'] })
+    },
+  })
+}
+
+export function useDeleteQuestion() {
+  const qc = useQueryClient()
+  return useMutation({
+    mutationFn: async ({ questionId, paperId }: { questionId: string; paperId: string }) => {
+      const { error } = await supabase.from('questions').delete().eq('id', questionId)
+      if (error) throw error
+      // bump paper count down
+      const { data: paper } = await supabase
+        .from('papers')
+        .select('question_count')
+        .eq('id', paperId)
+        .single()
+      const newCount = Math.max(0, (paper?.question_count ?? 1) - 1)
+      await supabase.from('papers').update({ question_count: newCount }).eq('id', paperId)
+    },
+    onSuccess: (_d, vars) => {
+      qc.invalidateQueries({ queryKey: ['paper', vars.paperId] })
+      qc.invalidateQueries({ queryKey: ['papers'] })
+    },
+  })
+}

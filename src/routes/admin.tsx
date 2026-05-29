@@ -131,11 +131,14 @@ function AdminPage() {
           <p className="mt-1 text-sm text-muted-foreground">Create practice papers and exams.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
         </Link>
-        <div className="rounded-2xl border bg-card p-5">
+        <Link
+          to="/admin/questions"
+          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+        >
           <h2 className="font-bold">Questions</h2>
           <p className="mt-1 text-sm text-muted-foreground">Add questions with options.</p>
-          <p className="mt-3 text-xs text-muted-foreground">— form coming —</p>
-        </div>
+          <p className="mt-3 text-xs text-primary">Open →</p>
+        </Link>
       </div>
       )}
     </div>

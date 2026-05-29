@@ -1,5 +1,8 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
 import { useState } from 'react'
+import ReactMarkdown from 'react-markdown'
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
 import { usePaper } from '@/lib/queries'
 import { useSaveAttempt } from '@/lib/mutations'
 import { useAuth } from '@/lib/auth'
@@ -106,7 +109,9 @@ function PaperPage() {
                 <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm font-bold text-primary">
                   {i + 1}
                 </span>
-                <p className="font-semibold leading-relaxed">{q.stem}</p>
+                <div className="font-semibold leading-relaxed prose prose-slate dark:prose-invert max-w-none prose-p:my-0 prose-p:font-semibold">
+                  <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>{q.stem}</ReactMarkdown>
+                </div>
               </div>
 
               <div className="space-y-2">
@@ -130,7 +135,9 @@ function PaperPage() {
                       <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md border text-xs font-bold">
                         {o.label}
                       </span>
-                      <span>{o.content}</span>
+                      <span className="prose prose-sm prose-slate dark:prose-invert max-w-none prose-p:my-0">
+                        <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>{o.content}</ReactMarkdown>
+                      </span>
                     </button>
                   )
                 })}
@@ -140,7 +147,9 @@ function PaperPage() {
               {submitted && q.explanation && (
                 <div className="mt-3 rounded-xl bg-muted/50 p-3 text-sm">
                   <span className="font-semibold">Explanation: </span>
-                  {q.explanation}
+                  <div className="inline prose prose-sm prose-slate dark:prose-invert max-w-none prose-p:my-0 prose-p:inline">
+                    <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>{q.explanation}</ReactMarkdown>
+                  </div>
                   {correctOpt && (
                     <span className="mt-1 block text-xs text-muted-foreground">
                       Correct answer: {correctOpt.label}. {correctOpt.content}
