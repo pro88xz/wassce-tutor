@@ -1,4 +1,6 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
+import { useState } from 'react'
+import { supabase } from '@/lib/supabase'
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { Button } from '@/components/ui/button'
@@ -10,6 +12,38 @@ export const Route = createFileRoute('/subscribe')({
 function SubscribePage() {
   const { user } = useAuth()
   const { data: profile } = useProfile(user?.id ?? null)
+
+  const [busy, setBusy] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+
+  const handlePay = async () => {
+    setBusy(true)
+    setError(null)
+    try {
+      const { data: sess } = await supabase.auth.getSession()
+      const token = sess.session?.access_token
+      if (!token) throw new Error('Not signed in')
+      const res = await fetch(
+        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/create-checkout`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({ origin: window.location.origin }),
+        },
+      )
+      const data = await res.json()
+      if (!res.ok || !data.redirectUrl) {
+        throw new Error(data.error || 'Failed to start checkout')
+      }
+      window.location.href = data.redirectUrl
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Something went wrong')
+      setBusy(false)
+    }
+  }
 
   if (!user) {
     return (
@@ -51,11 +85,16 @@ function SubscribePage() {
         </ul>
 
         <div className="space-y-2 pt-2">
-          <Button className="h-12 w-full text-base" disabled>
-            Pay with Orange Money / AfriMoney
+          <Button
+            className="h-12 w-full text-base"
+            onClick={handlePay}
+            disabled={busy || !!profile?.subscription_active}
+          >
+            {busy ? 'Preparing checkout…' : 'Pay with Orange Money / AfriMoney'}
           </Button>
+          {error && <p className="text-center text-sm text-red-500">{error}</p>}
           <p className="text-center text-xs text-muted-foreground">
-            Payments via Monime — coming soon. Account approval pending.
+            Secure payment via Monime. Test mode active.
           </p>
         </div>
       </div>
