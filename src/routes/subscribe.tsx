@@ -9,7 +9,7 @@ export const Route = createFileRoute('/subscribe')({
   component: SubscribePage,
 })
 
-const WHATSAPP_NUMBER = '23275331472'
+const WHATSAPP_NUMBER = '23277884195'
 
 type Plan = {
   id: 'monthly' | 'quarterly' | 'yearly'
