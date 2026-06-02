@@ -26,3 +26,9 @@ dist-ssr
 # Auto-generated
 src/routeTree.gen.ts
 .env
+
+# Android signing — NEVER commit
+android/keystores/
+*.keystore
+*.jks
+android/key.properties
