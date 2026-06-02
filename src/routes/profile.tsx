@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from '@tanstack/react-router'
+import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { Button } from '@/components/ui/button'
@@ -10,7 +10,12 @@ export const Route = createFileRoute('/profile')({
 })
 
 function ProfilePage() {
+  const navigate = useNavigate()
   const { user, signOut } = useAuth()
+  const handleSignOut = async () => {
+    await signOut()
+    navigate({ to: '/' })
+  }
   const { data: profile } = useProfile(user?.id ?? null)
   const [theme, setTheme] = useState<Theme>(getTheme())
 
@@ -60,7 +65,7 @@ function ProfilePage() {
         </Link>
       )}
 
-      <Button variant="outline" className="w-full" onClick={() => signOut()}>
+      <Button variant="outline" className="w-full" onClick={handleSignOut}>
         Sign out
       </Button>
     </div>
