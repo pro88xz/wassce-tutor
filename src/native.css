@@ -26,3 +26,19 @@ body {
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
 }
+
+/* Hide scrollbars but keep scrolling functionality (native-app feel) */
+* {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* old Edge / IE */
+}
+*::-webkit-scrollbar {
+  display: none;                /* WebKit/Blink (Android WebView, Chrome, Safari) */
+  width: 0;
+  height: 0;
+}
+
+/* Smooth momentum scrolling on iOS WebView (and harmless elsewhere) */
+* {
+  -webkit-overflow-scrolling: touch;
+}

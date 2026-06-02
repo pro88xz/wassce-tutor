@@ -3,8 +3,6 @@ import { useEffect } from 'react'
 import { useAuth } from '@/lib/auth'
 import { useProfile, useStudentSubjects, useFaculties, useAttempts } from '@/lib/queries'
 import { Button } from '@/components/ui/button'
-import { useState } from 'react'
-import { toggleTheme, getTheme } from '@/lib/theme'
 
 export const Route = createFileRoute('/')({
   component: Index,
@@ -18,25 +16,12 @@ function trialDaysLeft(startedAt: string | null): number {
   return Math.max(0, left)
 }
 
-function relativeTime(iso: string): string {
-  const diff = Date.now() - new Date(iso).getTime()
-  const mins = Math.floor(diff / 60000)
-  if (mins < 1) return 'just now'
-  if (mins < 60) return `${mins}m ago`
-  const hrs = Math.floor(mins / 60)
-  if (hrs < 24) return `${hrs}h ago`
-  const days = Math.floor(hrs / 24)
-  return `${days}d ago`
-}
-
 function Index() {
   const navigate = useNavigate()
-  const { user, loading, signOut } = useAuth()
+  const { user, loading } = useAuth()
   const { data: profile, isLoading: profileLoading } = useProfile(user?.id ?? null)
   const { data: subjects } = useStudentSubjects(user?.id ?? null)
   const { data: attempts } = useAttempts(user?.id ?? null)
-  const [theme, setTheme] = useState(getTheme())
-  const flip = () => setTheme(toggleTheme())
   const { data: faculties } = useFaculties()
 
   useEffect(() => {
@@ -45,7 +30,15 @@ function Index() {
     }
   }, [loading, user, profile, navigate])
 
-  if (loading) return <CenterMsg>Loading…</CenterMsg>
+
+  // Auth still restoring from storage — show a quick spinner, no landing flash.
+  if (loading) {
+    return (
+      <div className="flex min-h-[80vh] items-center justify-center">
+        <div className="h-10 w-10 animate-spin rounded-full border-4 border-muted border-t-primary" />
+      </div>
+    )
+  }
 
   // NOT SIGNED IN — landing
   if (!user) {
@@ -169,22 +162,9 @@ function Index() {
   return (
     <div className="mx-auto max-w-3xl space-y-6">
       {/* HEADER */}
-      <header className="flex items-start justify-between">
-        <div>
-          <p className="text-sm text-muted-foreground">Welcome back,</p>
-          <h1 className="text-3xl font-black tracking-tight">{firstName} 👋</h1>
-        </div>
-        <div className="flex items-center gap-1">
-          {profile?.is_admin && (
-            <Link to="/admin">
-              <Button variant="ghost" size="sm">Admin</Button>
-            </Link>
-          )}
-          <Button variant="ghost" size="sm" onClick={flip} aria-label="Toggle reading mode">
-            {theme === 'light' ? '🌙' : '☀️'}
-          </Button>
-          <Button variant="ghost" size="sm" onClick={signOut}>Sign out</Button>
-        </div>
+      <header>
+        <p className="text-sm text-muted-foreground">Welcome back,</p>
+        <h1 className="text-3xl font-black tracking-tight">{firstName} 👋</h1>
       </header>
 
       {/* STATUS STRIP */}
@@ -224,80 +204,44 @@ function Index() {
             <p className="font-bold">Unlock everything for a year</p>
             <p className="text-sm opacity-90">Just 75 NLe — all subjects, all papers.</p>
           </div>
-          <Button variant="secondary" size="sm">
-            Subscribe
-          </Button>
-        </div>
-      )}
-
-      {/* SUBJECTS */}
-      <section className="space-y-3">
-        <div className="flex items-center justify-between">
-          <h2 className="text-lg font-bold">Your subjects</h2>
-          <Link to="/onboarding" className="text-sm text-primary hover:underline">
-            Edit
+          <Link to="/subscribe">
+            <Button variant="secondary" size="sm">Subscribe</Button>
           </Link>
         </div>
-
-        {!subjects ? (
-          <p className="text-sm text-muted-foreground">Loading subjects…</p>
-        ) : subjects.length === 0 ? (
-          <p className="text-sm text-muted-foreground">No subjects yet.</p>
-        ) : (
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-            {subjects.map((s) => (
-              <Link
-                key={s.id}
-                to="/subject/$subjectId"
-                params={{ subjectId: s.id }}
-                className="group flex aspect-square flex-col justify-between rounded-2xl border bg-card p-4 text-left transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
-              >
-                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary/10 text-sm font-black text-primary">
-                  {s.name.slice(0, 2).toUpperCase()}
-                </div>
-                <div>
-                  <p className="font-semibold leading-tight">{s.name}</p>
-                  <p className="mt-0.5 text-xs text-muted-foreground">
-                    Tap to study →
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        )}
-      </section>
-
-      {/* RECENT ACTIVITY */}
-      {attempts && attempts.length > 0 && (
-        <section className="space-y-3">
-          <h2 className="text-lg font-bold">Recent activity</h2>
-          <div className="space-y-2">
-            {attempts.map((a) => {
-              const pct = a.total > 0 ? Math.round((a.score / a.total) * 100) : 0
-              return (
-                <div
-                  key={a.id}
-                  className="flex items-center justify-between rounded-xl border bg-card px-4 py-3"
-                >
-                  <div className="min-w-0">
-                    <p className="truncate text-sm font-semibold">
-                      {a.paper?.subject?.name ?? 'Subject'} — {a.paper?.title ?? 'Paper'}
-                    </p>
-                    <p className="text-xs text-muted-foreground">{relativeTime(a.created_at)}</p>
-                  </div>
-                  <div
-                    className={`ml-3 shrink-0 rounded-full px-3 py-1 text-xs font-bold ${
-                      pct >= 50 ? 'bg-emerald-500/10 text-emerald-500' : 'bg-amber-500/10 text-amber-500'
-                    }`}
-                  >
-                    {a.score}/{a.total}
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-        </section>
       )}
+
+      {/* QUICK ACTIONS */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <Link
+          to="/subjects"
+          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+        >
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-5 w-5 text-primary">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 5a2 2 0 0 1 2-2h10l4 4v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5Z M8 11h8 M8 15h5" />
+            </svg>
+          </div>
+          <p className="mt-3 font-bold">Continue studying</p>
+          <p className="mt-0.5 text-sm text-muted-foreground">{subjects?.length ?? 0} subjects</p>
+          <p className="mt-2 text-xs text-primary">Open →</p>
+        </Link>
+
+        <Link
+          to="/progress"
+          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+        >
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-5 w-5 text-primary">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 17l5-5 4 4 8-8 M14 8h6v6" />
+            </svg>
+          </div>
+          <p className="mt-3 font-bold">See progress</p>
+          <p className="mt-0.5 text-sm text-muted-foreground">
+            {attempts?.length ?? 0} {attempts?.length === 1 ? 'quiz' : 'quizzes'} taken
+          </p>
+          <p className="mt-2 text-xs text-primary">Open →</p>
+        </Link>
+      </div>
     </div>
   )
 }

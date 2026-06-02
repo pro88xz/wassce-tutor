@@ -4,11 +4,11 @@ const config: CapacitorConfig = {
   appId: 'com.wasscetutor.app',
   appName: 'WASSCE Tutor',
   webDir: 'dist',
-  backgroundColor: '#0f172a',
+  backgroundColor: '#ffffff',
   plugins: {
     SplashScreen: {
       launchShowDuration: 1200,
-      backgroundColor: '#0f172a',
+      backgroundColor: '#ffffff',
       showSpinner: false,
       androidScaleType: 'CENTER_CROP',
       splashFullScreen: true,
@@ -16,7 +16,8 @@ const config: CapacitorConfig = {
     },
     StatusBar: {
       style: 'DARK',
-      backgroundColor: '#0f172a',
+      backgroundColor: '#ffffff',
+      overlaysWebView: false,
     },
     Keyboard: {
       resize: 'native',
