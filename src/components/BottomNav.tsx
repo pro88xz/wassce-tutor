@@ -100,10 +100,7 @@ export function BottomNav() {
             aria-label="Tutor"
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} className="h-7 w-7">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M21 12c0 4.97-4.03 9-9 9-1.45 0-2.81-.34-4.02-.95L3 21l1.05-3.98C3.4 15.81 3 14.45 3 13c0-4.97 4.03-9 9-9s9 4.03 9 8z" />
-              <circle cx="9" cy="12" r="0.8" fill="currentColor" />
-              <circle cx="12" cy="12" r="0.8" fill="currentColor" />
-              <circle cx="15" cy="12" r="0.8" fill="currentColor" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4L2 8l10 4 10-4-10-4z M6 10v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" />
             </svg>
             <span className="absolute -bottom-5 text-[10px] font-bold text-primary">Tutor</span>
           </Link>
