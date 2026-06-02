@@ -40,6 +40,7 @@ function AdminPayments() {
   const { data: profile } = useProfile(user?.id ?? null)
   const [rows, setRows] = useState<PaymentRow[]>([])
   const [loading, setLoading] = useState(true)
+  const [loadError, setLoadError] = useState<string | null>(null)
   const [filter, setFilter] = useState<'pending' | 'activated' | 'all'>('pending')
   const [activatingId, setActivatingId] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -63,6 +64,7 @@ function AdminPayments() {
 
       if (loadErr) {
         console.error('load error:', loadErr)
+        if (!cancelled) setLoadError(loadErr.message + ' (code: ' + (loadErr.code || 'n/a') + ')')
       }
 
       if (!cancelled && data) {
@@ -177,6 +179,12 @@ function AdminPayments() {
       </div>
 
       {error && <p className="text-sm text-red-500">{error}</p>}
+      {loadError && (
+        <div className="rounded-xl border border-red-500/40 bg-red-500/5 p-3 text-sm text-red-600">
+          <p className="font-semibold">Query failed:</p>
+          <p className="font-mono text-xs">{loadError}</p>
+        </div>
+      )}
 
       {loading ? (
         <p className="text-sm text-muted-foreground">Loading…</p>
