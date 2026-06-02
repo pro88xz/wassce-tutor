@@ -47,8 +47,10 @@ function Index() {
       <div className="mx-auto max-w-3xl space-y-16 pb-12">
         {/* HERO */}
         <section className="pt-8 sm:pt-16 text-center space-y-6">
-          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-2xl font-black text-primary-foreground shadow-lg shadow-primary/30">
-            W
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary/70 text-primary-foreground shadow-lg shadow-primary/30">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-9 w-9">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4L2 8l10 4 10-4-10-4z M6 10v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" />
+            </svg>
           </div>
           <div className="space-y-3">
             <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-balance">
