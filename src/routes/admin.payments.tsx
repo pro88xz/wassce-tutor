@@ -52,34 +52,31 @@ function AdminPayments() {
     let cancelled = false
     const load = async () => {
       // Pull payment requests with user email/name joined via foreign-table embed
+      // 1. Get the payment requests
       const { data, error: loadErr } = await supabase
         .from('payment_requests')
-        .select(`
-          id, user_id, plan, amount_nle, reference_code, status,
-          created_at, activated_at,
-          profiles!payment_requests_user_id_fkey ( full_name )
-        `)
+        .select('id, user_id, plan, amount_nle, reference_code, status, created_at, activated_at')
         .order('created_at', { ascending: false })
         .limit(500)
 
       if (loadErr) {
         console.error('load error:', loadErr)
         if (!cancelled) setLoadError(loadErr.message + ' (code: ' + (loadErr.code || 'n/a') + ')')
+        if (!cancelled) setLoading(false)
+        return
       }
-
       if (!cancelled && data) {
-        // Also fetch emails since profiles doesn't have email (it's in auth.users)
+        // 2. Separately fetch profiles for those users — no FK embed, no cache issues
         const userIds = [...new Set(data.map((r) => r.user_id))]
-        const emails: Record<string, string> = {}
-        // We can't query auth.users directly; we use the admin-only get_user_emails RPC if available,
-        // otherwise emails just stay blank
-        try {
-          const { data: emailData } = await supabase.rpc('get_user_emails', { user_ids: userIds })
-          if (emailData) {
-            for (const e of emailData) emails[e.id] = e.email
+        const profilesByUser: Record<string, { full_name: string | null }> = {}
+        if (userIds.length > 0) {
+          const { data: profilesData } = await supabase
+            .from('profiles')
+            .select('id, full_name')
+            .in('id', userIds)
+          if (profilesData) {
+            for (const pr of profilesData) profilesByUser[pr.id] = { full_name: pr.full_name }
           }
-        } catch {
-          // RPC not present; emails will be blank (that's fine for v1)
         }
 
         const mapped = data.map((r) => ({
@@ -91,8 +88,7 @@ function AdminPayments() {
           status: r.status,
           created_at: r.created_at,
           activated_at: r.activated_at,
-          user_email: emails[r.user_id],
-          user_name: (r.profiles as { full_name?: string } | null)?.full_name,
+          user_name: profilesByUser[r.user_id]?.full_name ?? undefined,
         })) as PaymentRow[]
         setRows(mapped)
       }
