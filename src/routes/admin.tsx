@@ -139,6 +139,15 @@ function AdminPage() {
           <p className="mt-1 text-sm text-muted-foreground">Add questions with options.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
         </Link>
+
+        <Link
+          to="/admin/downloads"
+          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+        >
+          <h2 className="font-bold">Downloads</h2>
+          <p className="mt-1 text-sm text-muted-foreground">APK download tracking, live updates.</p>
+          <p className="mt-3 text-xs text-primary">Open →</p>
+        </Link>
       </div>
       )}
     </div>

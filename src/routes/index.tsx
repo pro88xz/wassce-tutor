@@ -1,6 +1,7 @@
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
 import { useEffect } from 'react'
 import { useAuth } from '@/lib/auth'
+import { supabase } from '@/lib/supabase'
 import { useProfile, useStudentSubjects, useFaculties, useAttempts } from '@/lib/queries'
 import { Button } from '@/components/ui/button'
 
@@ -61,13 +62,17 @@ function Index() {
             <Link to="/auth">
               <Button className="h-12 px-8 text-base">Start free for 7 days</Button>
             </Link>
-            <Link to="/auth">
-              <Button variant="ghost" className="h-12 px-6 text-base">Sign in</Button>
-            </Link>
+            <DownloadButton variant="outline" />
           </div>
-          <p className="text-xs text-muted-foreground">
-            No card needed · 75 NLe / year after trial
-          </p>
+          <div className="flex justify-center gap-2 pt-1">
+            <Link to="/auth" className="text-xs text-muted-foreground hover:text-foreground">
+              Sign in
+            </Link>
+            <span className="text-xs text-muted-foreground">·</span>
+            <p className="text-xs text-muted-foreground">
+              No card needed · 75 NLe / year after trial
+            </p>
+          </div>
         </section>
 
         {/* HOW IT WORKS */}
@@ -144,9 +149,12 @@ function Index() {
         <section className="text-center space-y-3 pt-4">
           <h2 className="text-2xl font-bold">Your WASSCE is closer than you think.</h2>
           <p className="text-muted-foreground">Start studying smarter today.</p>
-          <Link to="/auth">
-            <Button className="h-12 px-8 text-base">Get started — it's free</Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+            <Link to="/auth">
+              <Button className="h-12 px-8 text-base">Get started — it's free</Button>
+            </Link>
+            <DownloadButton />
+          </div>
         </section>
       </div>
     )
@@ -261,5 +269,45 @@ function Feature({ children }: { children: React.ReactNode }) {
       <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-xs font-bold text-emerald-600">✓</span>
       <span className="text-sm">{children}</span>
     </div>
+  )
+}
+
+
+function DownloadButton({ variant = 'default' }: { variant?: 'default' | 'outline' }) {
+  const trackClick = async () => {
+    try {
+      // Anonymous client id, lasts forever — for unique-downloader estimate
+      let clientId = localStorage.getItem('wt_client_id')
+      if (!clientId) {
+        clientId = crypto.randomUUID()
+        localStorage.setItem('wt_client_id', clientId)
+      }
+      // Fire-and-forget: we don't block the download on this.
+      void supabase.from('downloads').insert({
+        user_agent: navigator.userAgent.slice(0, 500),
+        client_id: clientId,
+      })
+    } catch {
+      // never block download on tracking failure
+    }
+  }
+
+  const className =
+    variant === 'outline'
+      ? 'inline-flex items-center justify-center gap-2 h-12 px-6 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground text-base font-medium transition'
+      : 'inline-flex items-center justify-center gap-2 h-12 px-6 rounded-md bg-primary text-primary-foreground hover:opacity-90 text-base font-medium transition'
+
+  return (
+    <a
+      href="/wassce-tutor.apk"
+      download="wassce-tutor.apk"
+      onClick={trackClick}
+      className={className}
+    >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-5 w-5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+      </svg>
+      Download Android App
+    </a>
   )
 }
