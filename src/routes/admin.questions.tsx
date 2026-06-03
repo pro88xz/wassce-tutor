@@ -1,8 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useEffect, useRef, useState } from 'react'
-import ReactMarkdown from 'react-markdown'
-import remarkMath from 'remark-math'
-import rehypeKatex from 'rehype-katex'
 import TurndownService from 'turndown'
 import { useAuth } from '@/lib/auth'
 import { useProfile, usePapers, useTopics, usePaper } from '@/lib/queries'
@@ -11,6 +8,7 @@ import { supabase } from '@/lib/supabase'
 import { Button } from '@/components/ui/button'
 import { isUnlockedThisSession } from '@/lib/adminGate'
 import type { Subject } from '@/lib/types'
+import { MarkdownView } from '@/components/MarkdownView'
 
 export const Route = createFileRoute('/admin/questions')({
   component: AdminQuestions,
@@ -169,7 +167,7 @@ function AdminQuestions() {
           />
           {stem && (
             <div className="mt-2 rounded-md border bg-background p-3 text-sm prose prose-slate dark:prose-invert max-w-none prose-p:my-1">
-              <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>{stem}</ReactMarkdown>
+              <MarkdownView content={stem} />
             </div>
           )}
         </div>

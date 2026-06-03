@@ -1,9 +1,6 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useEffect, useRef, useState } from 'react'
-import ReactMarkdown from 'react-markdown'
-import remarkMath from 'remark-math'
 import TurndownService from 'turndown'
-import rehypeKatex from 'rehype-katex'
 import { useAuth } from '@/lib/auth'
 import { useProfile, useTopics, useTopic } from '@/lib/queries'
 import { useCreateLesson, useDeleteLesson } from '@/lib/mutations'
@@ -11,6 +8,7 @@ import { supabase } from '@/lib/supabase'
 import { Button } from '@/components/ui/button'
 import { isUnlockedThisSession } from '@/lib/adminGate'
 import type { Subject } from '@/lib/types'
+import { MarkdownView } from '@/components/MarkdownView'
 
 export const Route = createFileRoute('/admin/lessons')({
   component: AdminLessons,
@@ -257,7 +255,7 @@ function AdminLessons() {
                 prose-headings:font-bold prose-h2:text-base prose-h2:mt-3 prose-h2:mb-2
                 prose-p:text-sm prose-li:text-sm prose-li:my-0.5
                 prose-strong:text-foreground">
-                <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>{content || '*Nothing to preview yet.*'}</ReactMarkdown>
+                <MarkdownView content={content || '*Nothing to preview yet.*'} />
               </div>
             </div>
           )}

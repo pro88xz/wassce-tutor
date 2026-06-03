@@ -1,8 +1,20 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
-import { useEffect, useRef, useState } from 'react'
-import ReactMarkdown from 'react-markdown'
-import remarkMath from 'remark-math'
-import rehypeKatex from 'rehype-katex'
+import { useEffect, useRef, useState, lazy, Suspense } from 'react'
+// Lazy-loaded markdown stack — only fetched when AI starts answering
+const ReactMarkdown = lazy(() => import('react-markdown'))
+// remarkMath + rehypeKatex are plugins (small), but we'll load them with markdown
+let remarkMathPlugin: any = null
+let rehypeKatexPlugin: any = null
+async function ensureMarkdownPlugins() {
+  if (!remarkMathPlugin) {
+    const [rm, rk] = await Promise.all([
+      import('remark-math'),
+      import('rehype-katex'),
+    ])
+    remarkMathPlugin = rm.default
+    rehypeKatexPlugin = rk.default
+  }
+}
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { checkAccess } from '@/lib/access'
@@ -240,9 +252,9 @@ function TutorPage() {
                       <p className="whitespace-pre-wrap text-sm leading-relaxed">{m.content}</p>
                     ) : (
                       <div className="prose prose-sm prose-slate dark:prose-invert max-w-none prose-p:my-1.5 prose-pre:my-2 prose-headings:my-2 prose-ol:my-1.5 prose-ul:my-1.5 prose-li:my-0.5">
-                        <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
-                          {m.content}
-                        </ReactMarkdown>
+                        <Suspense fallback={<p className="text-sm whitespace-pre-wrap">{m.content}</p>}>
+                          <MarkdownView content={m.content} />
+                        </Suspense>
                       </div>
                     )}
                   </div>
@@ -299,5 +311,24 @@ function TutorPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+// Wrapper that loads remarkMath + rehypeKatex once, then renders ReactMarkdown
+function MarkdownView({ content }: { content: string }) {
+  const [plugins, setPlugins] = useState<{ remark: any; rehype: any } | null>(null)
+  useEffect(() => {
+    ensureMarkdownPlugins().then(() =>
+      setPlugins({ remark: remarkMathPlugin, rehype: rehypeKatexPlugin })
+    )
+  }, [])
+  if (!plugins) {
+    // First render: show plain text while plugins load
+    return <p className="text-sm whitespace-pre-wrap">{content}</p>
+  }
+  return (
+    <ReactMarkdown remarkPlugins={[plugins.remark]} rehypePlugins={[plugins.rehype]}>
+      {content}
+    </ReactMarkdown>
   )
 }

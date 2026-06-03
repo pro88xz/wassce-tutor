@@ -1,13 +1,11 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
 import { AccessGate } from '@/components/AccessGate'
 import { useState } from 'react'
-import ReactMarkdown from 'react-markdown'
-import remarkMath from 'remark-math'
-import rehypeKatex from 'rehype-katex'
 import { usePaper } from '@/lib/queries'
 import { useSaveAttempt } from '@/lib/mutations'
 import { useAuth } from '@/lib/auth'
 import { Button } from '@/components/ui/button'
+import { MarkdownView } from '@/components/MarkdownView'
 
 export const Route = createFileRoute('/paper/$paperId')({
   component: PaperPage,
@@ -112,7 +110,7 @@ function PaperPage() {
                   {i + 1}
                 </span>
                 <div className="font-semibold leading-relaxed prose prose-slate dark:prose-invert max-w-none prose-p:my-0 prose-p:font-semibold">
-                  <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>{q.stem}</ReactMarkdown>
+                  <MarkdownView content={q.stem} />
                 </div>
               </div>
 
@@ -138,7 +136,7 @@ function PaperPage() {
                         {o.label}
                       </span>
                       <span className="prose prose-sm prose-slate dark:prose-invert max-w-none prose-p:my-0">
-                        <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>{o.content}</ReactMarkdown>
+                        <MarkdownView content={o.content} />
                       </span>
                     </button>
                   )
@@ -150,7 +148,7 @@ function PaperPage() {
                 <div className="mt-3 rounded-xl bg-muted/50 p-3 text-sm">
                   <span className="font-semibold">Explanation: </span>
                   <div className="inline prose prose-sm prose-slate dark:prose-invert max-w-none prose-p:my-0 prose-p:inline">
-                    <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>{q.explanation}</ReactMarkdown>
+                    <MarkdownView content={q.explanation} />
                   </div>
                   {correctOpt && (
                     <span className="mt-1 block text-xs text-muted-foreground">

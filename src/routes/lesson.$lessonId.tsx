@@ -1,9 +1,7 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
 import { AccessGate } from '@/components/AccessGate'
-import ReactMarkdown from 'react-markdown'
-import remarkMath from 'remark-math'
-import rehypeKatex from 'rehype-katex'
 import { useLesson } from '@/lib/queries'
+import { MarkdownView } from '@/components/MarkdownView'
 
 export const Route = createFileRoute('/lesson/$lessonId')({
   component: LessonPage,
@@ -35,7 +33,7 @@ function LessonPage() {
         prose-headings:font-bold prose-h2:text-xl prose-h2:mt-6 prose-h2:mb-3
         prose-p:leading-relaxed prose-li:my-1
         prose-strong:text-foreground prose-code:text-foreground">
-        <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>{lesson.content}</ReactMarkdown>
+        <MarkdownView content={lesson.content} />
       </article>
     </div>
     </AccessGate>
