@@ -13,6 +13,9 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:background">@null</item>
+        <!-- Match Android nav bar to app background (no two-tone whites) -->
+        <item name="android:navigationBarColor">#F8FAFC</item>
+        <item name="android:windowLightNavigationBar">true</item>
     </style>
 
 
