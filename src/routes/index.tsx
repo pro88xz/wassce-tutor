@@ -1,5 +1,6 @@
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
 import { useEffect } from 'react'
+import { Capacitor } from '@capacitor/core'
 import { useAuth } from '@/lib/auth'
 import { supabase } from '@/lib/supabase'
 import { useProfile, useStudentSubjects, useFaculties, useAttempts } from '@/lib/queries'
@@ -30,6 +31,13 @@ function Index() {
       navigate({ to: '/onboarding' })
     }
   }, [loading, user, profile, navigate])
+
+  // Inside the APK, signed-out users go straight to sign-in (skip marketing page)
+  useEffect(() => {
+    if (!loading && !user && Capacitor.isNativePlatform()) {
+      navigate({ to: '/auth' })
+    }
+  }, [loading, user, navigate])
 
 
   // Auth still restoring from storage — show a quick spinner, no landing flash.
