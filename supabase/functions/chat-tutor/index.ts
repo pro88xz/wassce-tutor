@@ -7,6 +7,24 @@ const MODEL = 'llama-3.3-70b-versatile'
 const DAILY_LIMIT = 20
 const MAX_HISTORY = 20
 
+const LESSON_SYSTEM_PROMPT = `You are an expert WASSCE curriculum writer for Sierra Leonean secondary school students preparing for the West African Senior School Certificate Examination.
+
+Write a complete lesson in clean Markdown. Target length 600 to 900 words. Use these sections in order:
+
+1. **Introduction** (2 to 3 sentences orienting the student to why this matters)
+2. **Key Concepts** (the core ideas, defined plainly)
+3. **Worked Examples** (1 to 3 step-by-step examples; show the working, not just the answer)
+4. **Common Mistakes** (2 to 4 things students get wrong)
+5. **Summary** (3 to 5 bullet points the student should remember)
+
+Rules:
+- Use KaTeX inline math like $x = 5$ and block math like $$\\frac{a}{b}$$ for any math
+- Use simple, direct English a Form 5 student understands
+- No padding, no introductions like "In this lesson we will...". Get straight into teaching
+- Use markdown headers (##, ###) for sections, **bold** for emphasis, lists for enumerations
+- Write FOR Sierra Leonean students: use local examples where natural (currency, place names, contexts students will recognize)
+- Output ONLY the lesson markdown. No preamble, no "Here is your lesson:", no closing comments.`
+
 const SYSTEM_PROMPT = `You are a patient WASSCE tutor for Sierra Leonean secondary school students preparing for the West African Senior School Certificate Examination.
 
 Your job:
@@ -75,11 +93,17 @@ Deno.serve(async (req) => {
       }, 429)
     }
 
-    // 5. Validate input
+    // 5. Validate input + branch on mode
     const body = await req.json().catch(() => ({}))
+    const mode = (body.mode as string | undefined) ?? 'chat'
     const userMessage = (body.message as string | undefined)?.trim()
     if (!userMessage) return json({ error: 'Empty message' }, 400)
     if (userMessage.length > 4000) return json({ error: 'Message too long' }, 400)
+
+    // Lesson draft mode: admin-only, no rate limit, no history save, different prompt
+    if (mode === 'lesson_draft') {
+      if (!isAdmin) return json({ error: 'Admin only' }, 403)
+    }
 
     // 6. Load recent history
     const histRes = await fetch(
@@ -90,9 +114,11 @@ Deno.serve(async (req) => {
 
     // 7. Call Groq (OpenAI-compatible API)
     const groqKey = Deno.env.get('GROQ_API_KEY')!
+    const sysPrompt = mode === 'lesson_draft' ? LESSON_SYSTEM_PROMPT : SYSTEM_PROMPT
+    const includeHistory = mode === 'chat'
     const messages = [
-      { role: 'system', content: SYSTEM_PROMPT },
-      ...recentMessages.map((m) => ({ role: m.role, content: m.content })),
+      { role: 'system', content: sysPrompt },
+      ...(includeHistory ? recentMessages.map((m) => ({ role: m.role, content: m.content })) : []),
       { role: 'user', content: userMessage },
     ]
 

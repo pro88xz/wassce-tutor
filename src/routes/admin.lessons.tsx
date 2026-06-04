@@ -43,11 +43,49 @@ function AdminLessons() {
   const createLesson = useCreateLesson()
   const deleteLesson = useDeleteLesson()
 
+  // AI lesson draft generator — fills the markdown textarea with a draft from Groq
+  const generateDraft = async () => {
+    if (!title.trim()) {
+      setGenError('Add a title first — the AI needs to know what to write about.')
+      return
+    }
+    if (!topicData?.topic) {
+      setGenError('Pick a topic first.')
+      return
+    }
+    const subjectName = subjects.find((sub) => sub.id === subjectId)?.name ?? 'this subject'
+    const prompt = `Write a WASSCE lesson on "${title.trim()}". This lesson belongs to the topic "${topicData.topic.name}" in ${subjectName}. Target Sierra Leonean Form 5 students.`
+    setGenError(null)
+    setGenerating(true)
+    try {
+      const { data: sess } = await supabase.auth.getSession()
+      const token = sess.session?.access_token
+      if (!token) throw new Error('Not signed in')
+      const res = await fetch(
+        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/chat-tutor`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+          body: JSON.stringify({ message: prompt, mode: 'lesson_draft' }),
+        },
+      )
+      const data = await res.json()
+      if (!res.ok) throw new Error(data.error || 'Generation failed')
+      setContent(data.reply)
+    } catch (e) {
+      setGenError(e instanceof Error ? e.message : 'Failed to generate draft')
+    } finally {
+      setGenerating(false)
+    }
+  }
+
   const [title, setTitle] = useState('')
   const [slug, setSlug] = useState('')
   const [content, setContent] = useState('## Heading\n\nWrite your lesson here.\n\n- Use markdown\n- **Bold** and *italic* work\n- Lists, headings, all of it')
   const [estMinutes, setEstMinutes] = useState<number>(3)
   const [sortOrder, setSortOrder] = useState<number>(0)
+  const [generating, setGenerating] = useState(false)
+  const [genError, setGenError] = useState<string | null>(null)
   const [showPreview, setShowPreview] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
@@ -220,6 +258,25 @@ function AdminLessons() {
               <ToolbarBtn onClick={() => wrap('`')} title="Inline code">{'<>'}</ToolbarBtn>
               <ToolbarBtn onClick={() => wrap('> ', '', true)} title="Quote">&ldquo;&rdquo;</ToolbarBtn>
             </div>
+            <div className="flex items-center gap-2 mb-2 flex-wrap">
+              <button
+                type="button"
+                onClick={generateDraft}
+                disabled={generating}
+                className="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-primary to-primary/80 px-3 py-1.5 text-xs font-semibold text-primary-foreground shadow-sm hover:opacity-90 disabled:opacity-50 transition"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-3.5 w-3.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 3l1.5 4.5L11 9l-4.5 1.5L5 15l-1.5-4.5L-1 9l4.5-1.5z M14 14l1 3 3 1-3 1-1 3-1-3-3-1 3-1z" transform="translate(2 0)" />
+                </svg>
+                {generating ? 'Generating…' : 'Generate draft with AI'}
+              </button>
+              <span className="text-xs text-muted-foreground">Review and edit before saving</span>
+            </div>
+            {genError && (
+              <div className="rounded-md border border-red-500/40 bg-red-500/5 p-2 mb-2 text-xs text-red-600">
+                {genError}
+              </div>
+            )}
             <textarea
               ref={taRef}
               value={content}
