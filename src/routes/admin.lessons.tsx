@@ -54,7 +54,7 @@ function AdminLessons() {
       return
     }
     const subjectName = subjects.find((sub) => sub.id === subjectId)?.name ?? 'this subject'
-    const prompt = `Write a WASSCE lesson on "${title.trim()}". This lesson belongs to the topic "${topicData.topic.name}" in ${subjectName}. Target Sierra Leonean Form 5 students.`
+    const prompt = `LESSON TITLE: "${title.trim()}"\n\nCONTEXT: This lesson is one focused chunk inside the topic "${topicData.topic.name}" in ${subjectName}. Write a lesson on EXACTLY the title above. Do not write about the whole topic. Do not survey other concepts.`
     setGenError(null)
     setGenerating(true)
     try {
