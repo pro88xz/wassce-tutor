@@ -177,14 +177,41 @@ function Index() {
     faculties?.find((f) => f.id === profile?.faculty_id)?.name ?? 'Your faculty'
   const firstName = profile?.full_name?.split(' ')[0] ?? 'there'
 
+  // --- Today's pick logic ---
+  const hasAttempts = (attempts?.length ?? 0) > 0
+  const initials = (() => {
+    const name = (firstName || '').trim()
+    if (!name) return '?'
+    const parts = name.split(/\s+/)
+    if (parts.length >= 2) return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase()
+    return name[0].toUpperCase()
+  })()
+  const todaysPickSubject = (() => {
+    if (!subjects || subjects.length === 0) return null
+    if (!hasAttempts) return subjects[0]
+    const recentSubjectNames = new Set(
+      (attempts ?? []).slice(0, 3).map((a) => a.paper?.subject?.name).filter(Boolean)
+    )
+    const stale = subjects.find((sub) => !recentSubjectNames.has(sub.name))
+    return stale ?? subjects[0]
+  })()
+
   return (
     <div className="mx-auto max-w-3xl space-y-6">
-      {/* HEADER */}
-      <header>
-        <p className="text-sm text-muted-foreground">Welcome back,</p>
-        <h1 className="text-3xl font-black tracking-tight">{firstName} 👋</h1>
+      {/* HEADER with avatar */}
+      <header className="flex items-start justify-between gap-4">
+        <div>
+          <p className="text-sm text-muted-foreground">Welcome back,</p>
+          <h1 className="text-3xl font-black tracking-tight">{firstName} 👋</h1>
+        </div>
+        <Link
+          to="/profile"
+          aria-label="Open profile"
+          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary/70 text-primary-foreground font-bold shadow-md shadow-primary/20 hover:opacity-90 transition"
+        >
+          {initials}
+        </Link>
       </header>
-
       {/* STATUS STRIP */}
       <div className="grid grid-cols-2 gap-3">
         <div className="rounded-2xl border bg-card p-4">
@@ -228,6 +255,60 @@ function Index() {
         </div>
       )}
 
+      {/* TODAY'S PICK */}
+      {todaysPickSubject && (
+        <Link
+          to="/subject/$subjectId"
+          params={{ subjectId: todaysPickSubject.id }}
+          className="block rounded-2xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent p-5 transition hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"
+        >
+          <p className="text-xs uppercase tracking-wide text-primary font-bold">
+            {hasAttempts ? "Today's pick" : 'Start here'}
+          </p>
+          <p className="mt-1.5 text-xl font-bold">{todaysPickSubject.name}</p>
+          <p className="mt-1 text-sm text-muted-foreground">
+            {hasAttempts
+              ? `Pick up where you left off in ${todaysPickSubject.name}.`
+              : `New to WASSCE Tutor? Open ${todaysPickSubject.name} and take your first lesson.`}
+          </p>
+          <p className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-primary">
+            {hasAttempts ? 'Continue' : 'Open subject'} <span aria-hidden>→</span>
+          </p>
+        </Link>
+      )}
+      {/* RECENT ACTIVITY */}
+      {hasAttempts && (
+        <div className="rounded-2xl border bg-card p-4">
+          <div className="mb-3 flex items-center justify-between">
+            <p className="text-xs uppercase tracking-wide text-muted-foreground">Recent activity</p>
+            <Link to="/progress" className="text-xs text-primary font-semibold hover:underline">
+              See all →
+            </Link>
+          </div>
+          <div className="space-y-2">
+            {attempts!.slice(0, 2).map((a) => {
+              const pct = a.total > 0 ? Math.round((a.score / a.total) * 100) : 0
+              const tone = pct >= 70 ? 'emerald' : pct >= 50 ? 'amber' : 'red'
+              const toneCls = tone === 'emerald'
+                ? 'border-emerald-500/40 bg-emerald-500/5 text-emerald-700'
+                : tone === 'amber'
+                  ? 'border-amber-500/40 bg-amber-500/5 text-amber-700'
+                  : 'border-red-500/40 bg-red-500/5 text-red-700'
+              return (
+                <div key={a.id} className="flex items-center justify-between gap-3 rounded-lg border bg-background px-3 py-2">
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-sm font-semibold">{a.paper?.title ?? 'Quiz'}</p>
+                    <p className="truncate text-xs text-muted-foreground">{a.paper?.subject?.name ?? ''}</p>
+                  </div>
+                  <span className={`shrink-0 rounded-full border px-2.5 py-1 text-xs font-bold ${toneCls}`}>
+                    {a.score}/{a.total}
+                  </span>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      )}
       {/* QUICK ACTIONS */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <Link
