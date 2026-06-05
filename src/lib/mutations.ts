@@ -127,6 +127,33 @@ export function useCreateTopic() {
   })
 }
 
+type UpdateTopicArgs = {
+  id: string
+  subject_id: string
+  slug?: string
+  name?: string
+  description?: string
+  sort_order?: number
+}
+
+export function useUpdateTopic() {
+  const qc = useQueryClient()
+  return useMutation({
+    mutationFn: async (args: UpdateTopicArgs) => {
+      const patch: Record<string, unknown> = {}
+      if (args.slug !== undefined) patch.slug = args.slug.trim().toLowerCase().replace(/\s+/g, '-')
+      if (args.name !== undefined) patch.name = args.name.trim()
+      if (args.description !== undefined) patch.description = args.description?.trim() || null
+      if (args.sort_order !== undefined) patch.sort_order = args.sort_order
+      const { error } = await supabase.from('topics').update(patch).eq('id', args.id)
+      if (error) throw error
+    },
+    onSuccess: (_data, vars) => {
+      qc.invalidateQueries({ queryKey: ['topics', vars.subject_id] })
+    },
+  })
+}
+
 export function useDeleteTopic() {
   const qc = useQueryClient()
   return useMutation({
