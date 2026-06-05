@@ -26,26 +26,13 @@ export function AccessGate({ children }: { children: ReactNode }) {
         </div>
         <h1 className="text-2xl font-bold">Your free trial has ended</h1>
         <p className="text-muted-foreground">
-          Unlock every subject, every paper, and every lesson for a full academic year.
+          You've seen what's here. Pick a plan that fits and keep going — your progress, every subject, every paper, your AI tutor.
         </p>
-      </div>
-
-      <div className="rounded-2xl border bg-card p-5 space-y-3 text-left">
-        <div className="flex items-baseline justify-between">
-          <span className="font-bold">Full access</span>
-          <span><span className="text-2xl font-black">75</span> <span className="text-sm text-muted-foreground">NLe / year</span></span>
-        </div>
-        <ul className="space-y-1.5 text-sm">
-          <li>✓ All subjects in your faculty</li>
-          <li>✓ Past papers and practice quizzes</li>
-          <li>✓ Step-by-step lessons with explanations</li>
-          <li>✓ Progress tracking and history</li>
-        </ul>
       </div>
 
       <div className="space-y-2">
         <Link to="/subscribe" className="block">
-          <Button className="h-12 w-full text-base">Subscribe — 75 NLe / year</Button>
+          <Button className="h-12 w-full text-base">See plans</Button>
         </Link>
         <Link to="/" className="text-sm text-muted-foreground hover:underline inline-block">
           ← Back to dashboard

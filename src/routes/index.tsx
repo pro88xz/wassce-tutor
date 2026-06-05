@@ -80,7 +80,7 @@ function Index() {
             </Link>
             <span className="text-xs text-muted-foreground">·</span>
             <p className="text-xs text-muted-foreground">
-              No card needed · 75 NLe / year after trial
+              No card needed · Cancel anytime
             </p>
           </div>
         </section>
@@ -128,29 +128,34 @@ function Index() {
 
         {/* PRICING */}
         <section className="space-y-4">
-          <h2 className="text-center text-2xl font-bold">One simple price</h2>
-          <div className="mx-auto max-w-md rounded-2xl border-2 border-primary bg-card p-6 space-y-4">
-            <div className="text-center">
-              <p className="text-sm uppercase tracking-wide text-muted-foreground">Full access</p>
-              <p className="mt-1">
-                <span className="text-5xl font-black">75</span>
-                <span className="ml-1 text-muted-foreground">NLe / year</span>
-              </p>
-              <p className="text-xs text-muted-foreground mt-1">
-                Less than the cost of one textbook
-              </p>
+          <h2 className="text-center text-2xl font-bold">Plans that fit your wallet</h2>
+          <p className="text-center text-sm text-muted-foreground -mt-2">All plans unlock every subject, every paper, and your AI tutor.</p>
+          <div className="mx-auto grid max-w-3xl gap-3 sm:grid-cols-3">
+            <div className="rounded-2xl border bg-card p-5 text-center space-y-1">
+              <p className="text-sm font-semibold text-muted-foreground">Monthly</p>
+              <p><span className="text-4xl font-black">15</span><span className="ml-1 text-sm text-muted-foreground">NLe</span></p>
+              <p className="text-xs text-muted-foreground">per month</p>
             </div>
-            <div className="border-t pt-4 space-y-2 text-sm">
-              <Feature>Every subject in your faculty</Feature>
-              <Feature>Every past paper, every lesson</Feature>
-              <Feature>Pay with Orange Money or AfriMoney</Feature>
-              <Feature>Cancel anytime, no questions</Feature>
+            <div className="rounded-2xl border bg-card p-5 text-center space-y-1">
+              <p className="text-sm font-semibold text-muted-foreground">Quarterly</p>
+              <p><span className="text-4xl font-black">38</span><span className="ml-1 text-sm text-muted-foreground">NLe</span></p>
+              <p className="text-xs text-muted-foreground">per 3 months</p>
+              <p className="text-xs font-semibold text-emerald-600">Save 7 NLe</p>
             </div>
+            <div className="rounded-2xl border-2 border-primary bg-card p-5 text-center space-y-1 relative">
+              <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 rounded-full bg-primary px-2.5 py-0.5 text-[10px] font-bold text-primary-foreground uppercase tracking-wide">Best value</span>
+              <p className="text-sm font-semibold text-muted-foreground">Yearly</p>
+              <p><span className="text-4xl font-black">120</span><span className="ml-1 text-sm text-muted-foreground">NLe</span></p>
+              <p className="text-xs text-muted-foreground">per year</p>
+              <p className="text-xs font-semibold text-emerald-600">Save 60 NLe</p>
+            </div>
+          </div>
+          <div className="mx-auto max-w-md pt-2 space-y-2">
             <Link to="/auth" className="block">
               <Button className="h-11 w-full">Start your 7-day free trial</Button>
             </Link>
             <p className="text-center text-xs text-muted-foreground">
-              Try every feature free for a week. Pay only if it helps you.
+              Pay with Orange Money or AfriMoney. Cancel anytime.
             </p>
           </div>
         </section>
@@ -246,8 +251,8 @@ function Index() {
       {!profile?.subscription_active && !profile?.is_admin && (
         <div className="flex items-center justify-between rounded-2xl bg-primary px-5 py-4 text-primary-foreground">
           <div>
-            <p className="font-bold">Unlock everything for a year</p>
-            <p className="text-sm opacity-90">Just 75 NLe — all subjects, all papers.</p>
+            <p className="font-bold">Keep your progress going</p>
+            <p className="text-sm opacity-90">120 NLe for the full year — every subject, every paper.</p>
           </div>
           <Link to="/subscribe">
             <Button variant="secondary" size="sm">Subscribe</Button>

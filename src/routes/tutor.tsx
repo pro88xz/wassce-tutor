@@ -117,7 +117,7 @@ function TutorPage() {
           <p className="text-muted-foreground">• &ldquo;Difference between mitosis and meiosis?&rdquo;</p>
         </div>
         <p className="text-sm text-muted-foreground">
-          Tutor is for subscribers only — part of the full 75 NLe / year plan.
+          Tutor unlocks with any subscription — plans start at 15 NLe / month.
         </p>
         <Link to="/subscribe" className="block">
           <Button className="h-12 w-full">Subscribe to unlock Tutor</Button>

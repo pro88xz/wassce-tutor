@@ -163,7 +163,7 @@ function PaperPage() {
       </div>
 
       {/* STICKY SUBMIT / RETRY */}
-      <div className="fixed bottom-0 left-0 right-0 border-t bg-background p-4">
+      <div className="fixed bottom-0 left-0 right-0 z-50 border-t bg-background p-4">
         <div className="mx-auto flex max-w-2xl items-center gap-3">
           {!submitted ? (
             <>
