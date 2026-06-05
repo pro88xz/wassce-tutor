@@ -7,6 +7,23 @@ const MODEL = 'llama-3.3-70b-versatile'
 const DAILY_LIMIT = 20
 const MAX_HISTORY = 20
 
+const OUTLINE_SYSTEM_PROMPT = `You suggest a sequence of focused 5-to-10 minute lessons that together cover a WASSCE topic.
+
+A user will give you a TOPIC. Return ONLY a JSON array of 5 to 8 lesson titles. Each lesson title is one focused concept a Form 5 Sierra Leonean student can learn in 5 to 10 minutes.
+
+RULES:
+- Output ONLY valid JSON. No preamble, no explanation, no markdown code fences. Just the array.
+- Each title is specific and narrow. Good: "Converting any base to base 10". Bad: "Number Bases" or "Base Conversion".
+- Titles are in teaching order — the first lesson teaches concepts later ones depend on.
+- Each title is a sentence fragment, not a question. Good: "Adding two fractions". Bad: "How do you add fractions?".
+- Use simple, direct English a Form 5 student understands.
+- Maximum 12 words per title.
+
+EXAMPLE INPUT: "Number Bases"
+
+EXAMPLE OUTPUT:
+["What a number base means and why it matters","Converting any base to base 10","Converting base 10 to any base","Converting between non-decimal bases","Adding numbers in different bases","Subtracting numbers in different bases","Multiplying in base 2 and base 8","WASSCE-style word problems with number bases"]`
+
 const LESSON_SYSTEM_PROMPT = `You write focused 5-to-10 minute WASSCE lessons for Form 5 Sierra Leonean students reading on a phone.
 
 You will be given a LESSON TITLE. Write a lesson on exactly that title. Do not write about a different topic. Do not survey the whole subject. Teach the one thing the title says.
@@ -180,7 +197,7 @@ Deno.serve(async (req) => {
     if (userMessage.length > 4000) return json({ error: 'Message too long' }, 400)
 
     // Lesson draft mode: admin-only, no rate limit, no history save, different prompt
-    if (mode === 'lesson_draft') {
+    if (mode === 'lesson_draft' || mode === 'lesson_outline') {
       if (!isAdmin) return json({ error: 'Admin only' }, 403)
     }
 
@@ -193,7 +210,10 @@ Deno.serve(async (req) => {
 
     // 7. Call Groq (OpenAI-compatible API)
     const groqKey = Deno.env.get('GROQ_API_KEY')!
-    const sysPrompt = mode === 'lesson_draft' ? LESSON_SYSTEM_PROMPT : SYSTEM_PROMPT
+    const sysPrompt =
+      mode === 'lesson_draft' ? LESSON_SYSTEM_PROMPT
+      : mode === 'lesson_outline' ? OUTLINE_SYSTEM_PROMPT
+      : SYSTEM_PROMPT
     const includeHistory = mode === 'chat'
     const messages = [
       { role: 'system', content: sysPrompt },

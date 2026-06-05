@@ -79,6 +79,61 @@ function AdminLessons() {
     }
   }
 
+  // AI sub-lesson suggester — calls Edge Function with outline mode, returns JSON titles
+  const suggestLessons = async () => {
+    if (!topicData) {
+      setGenError('Pick a topic first.')
+      return
+    }
+    const subjectName = subjects.find((sub) => sub.id === subjectId)?.name ?? 'this subject'
+    const prompt = `TOPIC: "${topicData.topic.name}" in ${subjectName}.`
+    setGenError(null)
+    setSuggesting(true)
+    try {
+      const { data: sess } = await supabase.auth.getSession()
+      const token = sess.session?.access_token
+      if (!token) throw new Error('Not signed in')
+      const res = await fetch(
+        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/chat-tutor`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+          body: JSON.stringify({ message: prompt, mode: 'lesson_outline' }),
+        },
+      )
+      const data = await res.json()
+      if (!res.ok) throw new Error(data.error || 'Suggestion failed')
+      // The AI returns a JSON array string — parse it
+      let titles: string[] = []
+      try {
+        const parsed = JSON.parse(data.reply)
+        if (Array.isArray(parsed)) {
+          titles = parsed.filter((t): t is string => typeof t === 'string')
+        }
+      } catch {
+        // Sometimes the AI wraps the JSON in code fences — try to extract
+        const match = data.reply.match(/\[[\s\S]*\]/)
+        if (match) {
+          try {
+            const parsed = JSON.parse(match[0])
+            if (Array.isArray(parsed)) titles = parsed.filter((t): t is string => typeof t === 'string')
+          } catch {
+            // give up
+          }
+        }
+      }
+      if (titles.length === 0) {
+        setGenError('AI returned no usable titles. Try again.')
+      } else {
+        setSuggestions(titles)
+      }
+    } catch (e) {
+      setGenError(e instanceof Error ? e.message : 'Failed to get suggestions')
+    } finally {
+      setSuggesting(false)
+    }
+  }
+
   const [title, setTitle] = useState('')
   const [slug, setSlug] = useState('')
   const [content, setContent] = useState('## Heading\n\nWrite your lesson here.\n\n- Use markdown\n- **Bold** and *italic* work\n- Lists, headings, all of it')
@@ -86,6 +141,8 @@ function AdminLessons() {
   const [sortOrder, setSortOrder] = useState<number>(0)
   const [generating, setGenerating] = useState(false)
   const [genError, setGenError] = useState<string | null>(null)
+  const [suggestions, setSuggestions] = useState<string[]>([])
+  const [suggesting, setSuggesting] = useState(false)
   const [showPreview, setShowPreview] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
@@ -230,6 +287,47 @@ function AdminLessons() {
           </button>
         </div>
 
+        {topicData && (
+          <div className="rounded-lg border bg-card/50 p-3 space-y-2">
+            <div className="flex items-center justify-between gap-2 flex-wrap">
+              <div className="text-xs text-muted-foreground">
+                <strong className="text-foreground">Topic:</strong> {topicData.topic.name} — lessons should be focused chunks ~5–10 min each.
+              </div>
+              <button
+                type="button"
+                onClick={suggestLessons}
+                disabled={suggesting}
+                className="inline-flex items-center gap-1.5 rounded-md border border-primary/30 bg-primary/5 px-2.5 py-1 text-xs font-semibold text-primary hover:bg-primary/10 disabled:opacity-50 transition"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-3 w-3">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.5 14.5l5-5m-2.5 5h-2.5v-2.5M14.5 9.5h-2.5V7m-7 7l3 3 3-3M19 5l-3 3-3-3" />
+                </svg>
+                {suggesting ? 'Thinking…' : 'Suggest sub-lessons'}
+              </button>
+            </div>
+            {suggestions.length > 0 && (
+              <div className="flex flex-wrap gap-1.5 pt-1">
+                {suggestions.map((sugg, i) => (
+                  <button
+                    key={i}
+                    type="button"
+                    onClick={() => { setTitle(sugg); setSuggestions([]) }}
+                    className="rounded-full border border-input bg-background hover:bg-accent px-2.5 py-1 text-xs transition"
+                  >
+                    {sugg}
+                  </button>
+                ))}
+                <button
+                  type="button"
+                  onClick={() => setSuggestions([])}
+                  className="text-xs text-muted-foreground hover:text-foreground px-1"
+                >
+                  Dismiss
+                </button>
+              </div>
+            )}
+          </div>
+        )}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <input
             placeholder="Lesson title (e.g. Common Denominators)"
