@@ -8,7 +8,7 @@ import { supabase } from '@/lib/supabase'
 import { Button } from '@/components/ui/button'
 import { isUnlockedThisSession } from '@/lib/adminGate'
 import type { Subject } from '@/lib/types'
-import { MarkdownView } from '@/components/MarkdownView'
+import { LessonView } from '@/components/LessonView'
 
 export const Route = createFileRoute('/admin/lessons')({
   component: AdminLessons,
@@ -410,7 +410,7 @@ function AdminLessons() {
                 prose-headings:font-bold prose-h2:text-base prose-h2:mt-3 prose-h2:mb-2
                 prose-p:text-sm prose-li:text-sm prose-li:my-0.5
                 prose-strong:text-foreground">
-                <MarkdownView content={content || '*Nothing to preview yet.*'} />
+                <LessonView content={content || '*Nothing to preview yet.*'} />
               </div>
             </div>
           )}

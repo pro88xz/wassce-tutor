@@ -129,3 +129,56 @@
     }
 }@plugin "@tailwindcss/typography";
 @import "katex/dist/katex.min.css";
+
+/* ============================================================
+ * Biology lesson content styling
+ * Tables, callouts, and rich content for /lesson/$lessonId
+ * ============================================================ */
+
+.prose table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid hsl(var(--border));
+  margin: 1.25rem 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.prose thead {
+  background: linear-gradient(to bottom, oklch(0.65 0.15 250 / 0.15), oklch(0.65 0.15 250 / 0.08));
+}
+
+.prose thead th {
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-align: left;
+  color: hsl(var(--foreground));
+  border-bottom: 2px solid hsl(var(--border));
+}
+
+.prose tbody td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid hsl(var(--border));
+  color: hsl(var(--foreground));
+}
+
+.prose tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.prose tbody tr:nth-child(even) {
+  background-color: oklch(0.65 0.15 250 / 0.04);
+}
+
+@media (max-width: 640px) {
+  .prose table {
+    font-size: 0.85rem;
+  }
+  .prose thead th,
+  .prose tbody td {
+    padding: 0.6rem 0.75rem;
+  }
+}

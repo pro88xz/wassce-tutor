@@ -1,7 +1,7 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
 import { AccessGate } from '@/components/AccessGate'
 import { useLesson } from '@/lib/queries'
-import { MarkdownView } from '@/components/MarkdownView'
+import { LessonView } from '@/components/LessonView'
 
 export const Route = createFileRoute('/lesson/$lessonId')({
   component: LessonPage,
@@ -33,7 +33,7 @@ function LessonPage() {
         prose-headings:font-bold prose-h2:text-xl prose-h2:mt-6 prose-h2:mb-3
         prose-p:leading-relaxed prose-li:my-1
         prose-strong:text-foreground prose-code:text-foreground">
-        <MarkdownView content={lesson.content} />
+        <LessonView content={lesson.content} />
       </article>
     </div>
     </AccessGate>
