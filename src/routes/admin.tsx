@@ -144,8 +144,17 @@ function AdminPage() {
           to="/admin/import"
           className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
         >
-          <h2 className="font-bold">Bulk Import</h2>
+          <h2 className="font-bold">Bulk Import Topics</h2>
           <p className="mt-1 text-sm text-muted-foreground">Paste JSON to import topics in bulk.</p>
+          <p className="mt-3 text-xs text-primary">Open →</p>
+        </Link>
+
+        <Link
+          to="/admin/import-lessons"
+          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+        >
+          <h2 className="font-bold">Bulk Import Lessons</h2>
+          <p className="mt-1 text-sm text-muted-foreground">Paste JSON to import lessons in bulk.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
         </Link>
 
