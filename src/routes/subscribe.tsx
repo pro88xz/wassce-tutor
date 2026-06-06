@@ -25,25 +25,25 @@ const PLANS: Plan[] = [
   {
     id: 'monthly',
     name: 'Monthly',
-    amount: 15,
+    amount: 25,
     period: '/month',
   },
   {
     id: 'quarterly',
     name: 'Quarterly',
-    amount: 38,
+    amount: 60,
     period: '/3 months',
-    perMonth: '12.67 NLe/mo',
-    savings: 'Save 7 NLe',
+    perMonth: '20 NLe/mo',
+    savings: 'Save 15 NLe',
   },
   {
     id: 'yearly',
     name: 'Yearly',
-    amount: 120,
+    amount: 220,
     period: '/year',
-    perMonth: '10 NLe/mo',
+    perMonth: '18.33 NLe/mo',
     badge: 'Best value',
-    savings: 'Save 60 NLe',
+    savings: 'Save 80 NLe',
   },
 ]
 

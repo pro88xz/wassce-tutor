@@ -133,21 +133,21 @@ function Index() {
           <div className="mx-auto grid max-w-3xl gap-3 sm:grid-cols-3">
             <div className="rounded-2xl border bg-card p-5 text-center space-y-1">
               <p className="text-sm font-semibold text-muted-foreground">Monthly</p>
-              <p><span className="text-4xl font-black">15</span><span className="ml-1 text-sm text-muted-foreground">NLe</span></p>
+              <p><span className="text-4xl font-black">25</span><span className="ml-1 text-sm text-muted-foreground">NLe</span></p>
               <p className="text-xs text-muted-foreground">per month</p>
             </div>
             <div className="rounded-2xl border bg-card p-5 text-center space-y-1">
               <p className="text-sm font-semibold text-muted-foreground">Quarterly</p>
-              <p><span className="text-4xl font-black">38</span><span className="ml-1 text-sm text-muted-foreground">NLe</span></p>
+              <p><span className="text-4xl font-black">60</span><span className="ml-1 text-sm text-muted-foreground">NLe</span></p>
               <p className="text-xs text-muted-foreground">per 3 months</p>
-              <p className="text-xs font-semibold text-emerald-600">Save 7 NLe</p>
+              <p className="text-xs font-semibold text-emerald-600">Save 15 NLe</p>
             </div>
             <div className="rounded-2xl border-2 border-primary bg-card p-5 text-center space-y-1 relative">
               <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 rounded-full bg-primary px-2.5 py-0.5 text-[10px] font-bold text-primary-foreground uppercase tracking-wide">Best value</span>
               <p className="text-sm font-semibold text-muted-foreground">Yearly</p>
-              <p><span className="text-4xl font-black">120</span><span className="ml-1 text-sm text-muted-foreground">NLe</span></p>
+              <p><span className="text-4xl font-black">220</span><span className="ml-1 text-sm text-muted-foreground">NLe</span></p>
               <p className="text-xs text-muted-foreground">per year</p>
-              <p className="text-xs font-semibold text-emerald-600">Save 60 NLe</p>
+              <p className="text-xs font-semibold text-emerald-600">Save 80 NLe</p>
             </div>
           </div>
           <div className="mx-auto max-w-md pt-2 space-y-2">
@@ -252,7 +252,7 @@ function Index() {
         <div className="flex items-center justify-between rounded-2xl bg-primary px-5 py-4 text-primary-foreground">
           <div>
             <p className="font-bold">Keep your progress going</p>
-            <p className="text-sm opacity-90">120 NLe for the full year — every subject, every paper.</p>
+            <p className="text-sm opacity-90">From 25 NLe / month — every subject, every paper, your AI tutor.</p>
           </div>
           <Link to="/subscribe">
             <Button variant="secondary" size="sm">Subscribe</Button>
