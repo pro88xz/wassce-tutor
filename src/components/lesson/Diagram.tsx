@@ -10,6 +10,8 @@ type DiagramName =
   | 'cell-membrane'
   | 'mitochondrion-detailed'
   | 'er-and-ribosomes'
+  | 'mitosis-stages'
+  | 'meiosis-overview'
 
 const DIAGRAMS: Record<DiagramName, () => ReactElement> = {
   'animal-cell': AnimalCell,
@@ -17,6 +19,8 @@ const DIAGRAMS: Record<DiagramName, () => ReactElement> = {
   'cell-membrane': CellMembrane,
   'mitochondrion-detailed': MitochondrionDetailed,
   'er-and-ribosomes': ErAndRibosomes,
+  'mitosis-stages': MitosisStages,
+  'meiosis-overview': MeiosisOverview,
 }
 
 export function Diagram({ name }: { name: string }) {
@@ -388,6 +392,174 @@ function ErAndRibosomes() {
 
       <Leader x1={120} y1={260} x2={50} y2={290} />
       <Label x={45} y={295} text="Free ribosomes in cytoplasm" anchor="end" />
+    </svg>
+  )
+}
+
+// ---------- MITOSIS STAGES (4-panel) ----------
+function MitosisStages() {
+  return (
+    <svg viewBox="0 0 600 540" className="w-full h-auto max-w-[600px] mx-auto block">
+      {/* Panel borders - 2x2 grid */}
+      <line x1="300" y1="20" x2="300" y2="520" stroke="#cbd5e1" strokeWidth="1" />
+      <line x1="20" y1="270" x2="580" y2="270" stroke="#cbd5e1" strokeWidth="1" />
+
+      {/* ==== PROPHASE (top-left) ==== */}
+      <text x="150" y="40" textAnchor="middle" fontSize="14" fontWeight="700" fill="#1e293b" fontFamily="system-ui, sans-serif">PROPHASE</text>
+      <text x="150" y="58" textAnchor="middle" fontSize="11" fill="#475569" fontFamily="system-ui, sans-serif">Chromosomes condense, nuclear membrane breaks down</text>
+      <circle cx="150" cy="160" r="80" fill="#fef3c7" stroke="#b45309" strokeWidth="2" />
+      <circle cx="150" cy="160" r="55" fill="none" stroke="#6d28d9" strokeWidth="1.5" strokeDasharray="6 4" opacity="0.6" />
+      <g transform="translate(120 140)">
+        <path d="M -8 -8 L 8 8 M -8 8 L 8 -8" stroke="#dc2626" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(180 140)">
+        <path d="M -8 -8 L 8 8 M -8 8 L 8 -8" stroke="#1e40af" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(125 180)">
+        <path d="M -8 -8 L 8 8 M -8 8 L 8 -8" stroke="#059669" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(175 180)">
+        <path d="M -8 -8 L 8 8 M -8 8 L 8 -8" stroke="#ea580c" strokeWidth="4" strokeLinecap="round" />
+      </g>
+
+      {/* ==== METAPHASE (top-right) ==== */}
+      <text x="450" y="40" textAnchor="middle" fontSize="14" fontWeight="700" fill="#1e293b" fontFamily="system-ui, sans-serif">METAPHASE</text>
+      <text x="450" y="58" textAnchor="middle" fontSize="11" fill="#475569" fontFamily="system-ui, sans-serif">Chromosomes line up at the cell's middle</text>
+      <circle cx="450" cy="160" r="80" fill="#fef3c7" stroke="#b45309" strokeWidth="2" />
+      <line x1="380" y1="100" x2="450" y2="160" stroke="#94a3b8" strokeWidth="1" />
+      <line x1="380" y1="220" x2="450" y2="160" stroke="#94a3b8" strokeWidth="1" />
+      <line x1="520" y1="100" x2="450" y2="160" stroke="#94a3b8" strokeWidth="1" />
+      <line x1="520" y1="220" x2="450" y2="160" stroke="#94a3b8" strokeWidth="1" />
+      <circle cx="380" cy="160" r="4" fill="#475569" />
+      <circle cx="520" cy="160" r="4" fill="#475569" />
+      <g transform="translate(450 125)">
+        <path d="M -8 -8 L 8 8 M -8 8 L 8 -8" stroke="#dc2626" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(450 150)">
+        <path d="M -8 -8 L 8 8 M -8 8 L 8 -8" stroke="#1e40af" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(450 175)">
+        <path d="M -8 -8 L 8 8 M -8 8 L 8 -8" stroke="#059669" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(450 200)">
+        <path d="M -8 -8 L 8 8 M -8 8 L 8 -8" stroke="#ea580c" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <line x1="450" y1="90" x2="450" y2="230" stroke="#94a3b8" strokeWidth="1" strokeDasharray="3 3" opacity="0.5" />
+
+      {/* ==== ANAPHASE (bottom-left) ==== */}
+      <text x="150" y="290" textAnchor="middle" fontSize="14" fontWeight="700" fill="#1e293b" fontFamily="system-ui, sans-serif">ANAPHASE</text>
+      <text x="150" y="308" textAnchor="middle" fontSize="11" fill="#475569" fontFamily="system-ui, sans-serif">Sister chromatids separate, pulled to opposite poles</text>
+      <circle cx="150" cy="410" r="80" fill="#fef3c7" stroke="#b45309" strokeWidth="2" />
+      <line x1="80" y1="410" x2="115" y2="410" stroke="#94a3b8" strokeWidth="1" />
+      <line x1="220" y1="410" x2="185" y2="410" stroke="#94a3b8" strokeWidth="1" />
+      <circle cx="80" cy="410" r="4" fill="#475569" />
+      <circle cx="220" cy="410" r="4" fill="#475569" />
+      <g transform="translate(105 380)">
+        <line x1="-8" y1="-8" x2="8" y2="8" stroke="#dc2626" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(195 380)">
+        <line x1="-8" y1="-8" x2="8" y2="8" stroke="#dc2626" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(105 400)">
+        <line x1="-8" y1="-8" x2="8" y2="8" stroke="#1e40af" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(195 400)">
+        <line x1="-8" y1="-8" x2="8" y2="8" stroke="#1e40af" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(105 420)">
+        <line x1="-8" y1="-8" x2="8" y2="8" stroke="#059669" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(195 420)">
+        <line x1="-8" y1="-8" x2="8" y2="8" stroke="#059669" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(105 440)">
+        <line x1="-8" y1="-8" x2="8" y2="8" stroke="#ea580c" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(195 440)">
+        <line x1="-8" y1="-8" x2="8" y2="8" stroke="#ea580c" strokeWidth="4" strokeLinecap="round" />
+      </g>
+
+      {/* ==== TELOPHASE (bottom-right) ==== */}
+      <text x="450" y="290" textAnchor="middle" fontSize="14" fontWeight="700" fill="#1e293b" fontFamily="system-ui, sans-serif">TELOPHASE</text>
+      <text x="450" y="308" textAnchor="middle" fontSize="11" fill="#475569" fontFamily="system-ui, sans-serif">Two new nuclei form, cell splits in two</text>
+      <ellipse cx="400" cy="410" rx="55" ry="70" fill="#fef3c7" stroke="#b45309" strokeWidth="2" />
+      <ellipse cx="500" cy="410" rx="55" ry="70" fill="#fef3c7" stroke="#b45309" strokeWidth="2" />
+      <path d="M 450 360 Q 450 410 450 460" fill="none" stroke="#b45309" strokeWidth="2" />
+      <circle cx="400" cy="410" r="32" fill="none" stroke="#6d28d9" strokeWidth="1.5" />
+      <circle cx="500" cy="410" r="32" fill="none" stroke="#6d28d9" strokeWidth="1.5" />
+      <line x1="385" y1="395" x2="395" y2="405" stroke="#dc2626" strokeWidth="3" strokeLinecap="round" />
+      <line x1="405" y1="395" x2="415" y2="405" stroke="#1e40af" strokeWidth="3" strokeLinecap="round" />
+      <line x1="385" y1="415" x2="395" y2="425" stroke="#059669" strokeWidth="3" strokeLinecap="round" />
+      <line x1="405" y1="415" x2="415" y2="425" stroke="#ea580c" strokeWidth="3" strokeLinecap="round" />
+      <line x1="485" y1="395" x2="495" y2="405" stroke="#dc2626" strokeWidth="3" strokeLinecap="round" />
+      <line x1="505" y1="395" x2="515" y2="405" stroke="#1e40af" strokeWidth="3" strokeLinecap="round" />
+      <line x1="485" y1="415" x2="495" y2="425" stroke="#059669" strokeWidth="3" strokeLinecap="round" />
+      <line x1="505" y1="415" x2="515" y2="425" stroke="#ea580c" strokeWidth="3" strokeLinecap="round" />
+    </svg>
+  )
+}
+
+// ---------- MEIOSIS OVERVIEW (1 cell -> 4 daughter cells, half chromosomes each) ----------
+function MeiosisOverview() {
+  return (
+    <svg viewBox="0 0 600 480" className="w-full h-auto max-w-[600px] mx-auto block">
+      <text x="300" y="30" textAnchor="middle" fontSize="14" fontWeight="700" fill="#1e293b" fontFamily="system-ui, sans-serif">MEIOSIS — One cell becomes four, each with half the chromosomes</text>
+      <circle cx="300" cy="100" r="55" fill="#fef3c7" stroke="#b45309" strokeWidth="2.5" />
+      <text x="300" y="70" textAnchor="middle" fontSize="11" fontWeight="600" fill="#475569" fontFamily="system-ui, sans-serif">Parent cell (4 chromosomes)</text>
+      <g transform="translate(280 90)">
+        <path d="M -8 -8 L 8 8 M -8 8 L 8 -8" stroke="#dc2626" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(320 90)">
+        <path d="M -8 -8 L 8 8 M -8 8 L 8 -8" stroke="#dc2626" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(280 120)">
+        <path d="M -8 -8 L 8 8 M -8 8 L 8 -8" stroke="#1e40af" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(320 120)">
+        <path d="M -8 -8 L 8 8 M -8 8 L 8 -8" stroke="#1e40af" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <text x="300" y="180" textAnchor="middle" fontSize="12" fontWeight="700" fill="#7c3aed" fontFamily="system-ui, sans-serif">MEIOSIS I</text>
+      <text x="300" y="196" textAnchor="middle" fontSize="10" fill="#475569" fontFamily="system-ui, sans-serif">Pairs separate</text>
+      <path d="M 285 205 L 220 240" stroke="#475569" strokeWidth="2" markerEnd="url(#arrowhead)" />
+      <path d="M 315 205 L 380 240" stroke="#475569" strokeWidth="2" markerEnd="url(#arrowhead)" />
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+          <path d="M 0 0 L 8 3 L 0 6 Z" fill="#475569" />
+        </marker>
+      </defs>
+      <circle cx="190" cy="270" r="45" fill="#fef3c7" stroke="#b45309" strokeWidth="2" />
+      <g transform="translate(180 265)">
+        <path d="M -7 -7 L 7 7 M -7 7 L 7 -7" stroke="#dc2626" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(200 285)">
+        <path d="M -7 -7 L 7 7 M -7 7 L 7 -7" stroke="#1e40af" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <circle cx="410" cy="270" r="45" fill="#fef3c7" stroke="#b45309" strokeWidth="2" />
+      <g transform="translate(400 265)">
+        <path d="M -7 -7 L 7 7 M -7 7 L 7 -7" stroke="#dc2626" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <g transform="translate(420 285)">
+        <path d="M -7 -7 L 7 7 M -7 7 L 7 -7" stroke="#1e40af" strokeWidth="4" strokeLinecap="round" />
+      </g>
+      <text x="300" y="340" textAnchor="middle" fontSize="12" fontWeight="700" fill="#7c3aed" fontFamily="system-ui, sans-serif">MEIOSIS II</text>
+      <text x="300" y="356" textAnchor="middle" fontSize="10" fill="#475569" fontFamily="system-ui, sans-serif">Chromatids separate</text>
+      <path d="M 180 320 L 130 380" stroke="#475569" strokeWidth="2" markerEnd="url(#arrowhead)" />
+      <path d="M 200 320 L 250 380" stroke="#475569" strokeWidth="2" markerEnd="url(#arrowhead)" />
+      <path d="M 400 320 L 350 380" stroke="#475569" strokeWidth="2" markerEnd="url(#arrowhead)" />
+      <path d="M 420 320 L 470 380" stroke="#475569" strokeWidth="2" markerEnd="url(#arrowhead)" />
+      <circle cx="100" cy="420" r="35" fill="#fef3c7" stroke="#b45309" strokeWidth="2" />
+      <line x1="90" y1="415" x2="100" y2="425" stroke="#dc2626" strokeWidth="4" strokeLinecap="round" />
+      <line x1="105" y1="420" x2="115" y2="430" stroke="#1e40af" strokeWidth="4" strokeLinecap="round" />
+      <circle cx="240" cy="420" r="35" fill="#fef3c7" stroke="#b45309" strokeWidth="2" />
+      <line x1="230" y1="415" x2="240" y2="425" stroke="#dc2626" strokeWidth="4" strokeLinecap="round" />
+      <line x1="245" y1="420" x2="255" y2="430" stroke="#1e40af" strokeWidth="4" strokeLinecap="round" />
+      <circle cx="360" cy="420" r="35" fill="#fef3c7" stroke="#b45309" strokeWidth="2" />
+      <line x1="350" y1="415" x2="360" y2="425" stroke="#dc2626" strokeWidth="4" strokeLinecap="round" />
+      <line x1="365" y1="420" x2="375" y2="430" stroke="#1e40af" strokeWidth="4" strokeLinecap="round" />
+      <circle cx="500" cy="420" r="35" fill="#fef3c7" stroke="#b45309" strokeWidth="2" />
+      <line x1="490" y1="415" x2="500" y2="425" stroke="#dc2626" strokeWidth="4" strokeLinecap="round" />
+      <line x1="505" y1="420" x2="515" y2="430" stroke="#1e40af" strokeWidth="4" strokeLinecap="round" />
+      <text x="300" y="473" textAnchor="middle" fontSize="11" fontWeight="600" fill="#475569" fontFamily="system-ui, sans-serif">4 gametes (each with 2 chromosomes — half of parent)</text>
     </svg>
   )
 }
