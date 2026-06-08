@@ -32,3 +32,4 @@ android/keystores/
 *.keystore
 *.jks
 android/key.properties
+public/wassce-tutor.apk

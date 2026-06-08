@@ -388,7 +388,7 @@ function DownloadButton({ variant = 'default' }: { variant?: 'default' | 'outlin
       })
     } catch {}
     const a = document.createElement('a')
-    a.href = '/wassce-tutor.apk'
+    a.href = 'https://cfclkwugbexrihloqofc.supabase.co/storage/v1/object/public/apk/wassce-tutor.apk'
     a.download = 'wassce-tutor.apk'
     a.click()
     setOpen(false)
