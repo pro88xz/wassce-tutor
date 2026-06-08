@@ -10,7 +10,6 @@ export function useFaculties() {
       const { data, error } = await supabase
         .from('faculties')
         .select('*')
-        .order('group_order', { ascending: true, nullsFirst: false })
         .order('sort_order')
       if (error) throw error
       return data
@@ -28,7 +27,6 @@ export function useFacultySubjects(facultyId: string | null) {
         .from('faculty_subjects')
         .select('*, subject:subjects(*)')
         .eq('faculty_id', facultyId!)
-        .order('group_order', { ascending: true, nullsFirst: false })
         .order('sort_order')
       if (error) throw error
       return data as unknown as FacultySubject[]
@@ -113,7 +111,6 @@ export function usePapers(subjectId: string | null) {
         .select('*')
         .eq('subject_id', subjectId!)
         .eq('is_published', true)
-        .order('group_order', { ascending: true, nullsFirst: false })
         .order('sort_order')
       if (error) throw error
       return data as PaperRow[]
@@ -250,7 +247,6 @@ export function useTopic(topicId: string | null) {
         .select('*')
         .eq('topic_id', topicId!)
         .eq('is_published', true)
-        .order('group_order', { ascending: true, nullsFirst: false })
         .order('sort_order')
       if (lErr) throw lErr
 
