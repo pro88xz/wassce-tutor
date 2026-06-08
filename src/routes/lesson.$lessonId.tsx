@@ -17,7 +17,7 @@ function LessonPage() {
   return (
     <AccessGate>
     <div className="mx-auto max-w-2xl space-y-6 pb-12">
-      <Link to="/" className="text-sm text-muted-foreground hover:text-foreground">
+      <Link to="/topic/$topicId" params={{ topicId: lesson.topic_id }} className="text-sm text-muted-foreground hover:text-foreground">
         ← Back
       </Link>
 
