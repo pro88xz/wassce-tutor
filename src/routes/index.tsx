@@ -52,9 +52,9 @@ function Index() {
   // NOT SIGNED IN — landing
   if (!user) {
     return (
-      <div className="mx-auto max-w-3xl space-y-16 pb-12">
-        {/* HERO - Animated gradient with depth */}
-        <section className="relative -mx-6 -mt-6 mb-12 overflow-hidden rounded-b-3xl">
+      <>
+        {/* HERO - Animated gradient with depth (full-bleed) */}
+        <section className="relative -mx-6 -mt-6 mb-0 overflow-hidden">
           {/* Base gradient layer */}
           <div
             aria-hidden
@@ -123,6 +123,7 @@ function Index() {
           </div>
         </section>
 
+        <div className="mx-auto max-w-3xl space-y-16 pt-12 pb-12">
         {/* HOW IT WORKS */}
         <section className="space-y-6">
           <h2 className="text-center text-2xl font-bold">How it works</h2>
@@ -209,7 +210,8 @@ function Index() {
             <DownloadButton />
           </div>
         </section>
-      </div>
+        </div>
+      </>
     )
   }
 
