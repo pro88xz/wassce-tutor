@@ -2,6 +2,7 @@ import { createRootRoute, Outlet } from '@tanstack/react-router'
 import { lazy, Suspense } from 'react'
 import { useIsFetching } from '@tanstack/react-query'
 import { BottomNav } from '@/components/BottomNav'
+import { Footer } from '@/components/Footer'
 
 // Only load devtools in development — never in production.
 const TanStackRouterDevtools = import.meta.env.PROD
@@ -35,6 +36,7 @@ function RootComponent() {
       >
         <div className="px-6 pt-6 pb-32">
           <Outlet />
+          <Footer />
         </div>
       </main>
       <GlobalLoadingBar />

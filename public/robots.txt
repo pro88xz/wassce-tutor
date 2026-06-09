@@ -1,0 +1,32 @@
+# WasscePrep robots.txt
+# Allows crawling of public marketing pages only.
+# Paid content (lessons, papers, topics, subjects, tutor) is blocked from crawl
+# because it requires authentication and a paid subscription to access.
+
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /privacy
+Allow: /terms
+Allow: /auth
+
+# Block paid content paths (require login + subscription)
+Disallow: /lesson/
+Disallow: /paper/
+Disallow: /topic/
+Disallow: /subject/
+Disallow: /subjects
+Disallow: /tutor
+
+# Block user-specific pages
+Disallow: /profile
+Disallow: /progress
+Disallow: /onboarding
+Disallow: /reset-password
+Disallow: /subscribe
+
+# Block all admin pages
+Disallow: /admin
+Disallow: /admin/
+
+Sitemap: https://wassce-tutor.vercel.app/sitemap.xml
