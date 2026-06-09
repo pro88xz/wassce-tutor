@@ -15,7 +15,7 @@ function Privacy() {
 
       <section className="space-y-3">
         <p className="text-muted-foreground">
-          WasscePrep (&ldquo;we&rdquo;, &ldquo;us&rdquo;) is a WASSCE preparation platform operated from Freetown, Sierra Leone. This Privacy Policy explains what information we collect when you use our website or Android app, how we use it, and the choices you have.
+          WASSCE Tutor (&ldquo;we&rdquo;, &ldquo;us&rdquo;) is a WASSCE preparation platform operated from Freetown, Sierra Leone. This Privacy Policy explains what information we collect when you use our website or Android app, how we use it, and the choices you have.
         </p>
       </section>
 
@@ -48,7 +48,7 @@ function Privacy() {
       <section className="space-y-3">
         <h2 className="text-2xl font-bold">Who can see your data</h2>
         <p className="text-muted-foreground">
-          Only you can see your full account data when signed in. The WasscePrep operator can access anonymised usage statistics to understand which lessons and subjects students engage with most. Individual student responses are not shared with anyone outside the platform.
+          Only you can see your full account data when signed in. The WASSCE Tutor operator can access anonymised usage statistics to understand which lessons and subjects students engage with most. Individual student responses are not shared with anyone outside the platform.
         </p>
         <p className="text-muted-foreground">
           We do not share your data with advertisers. We do not run third-party advertising on this platform.
@@ -75,7 +75,7 @@ function Privacy() {
       <section className="space-y-3">
         <h2 className="text-2xl font-bold">Children</h2>
         <p className="text-muted-foreground">
-          WAEC students are typically aged 16&ndash;19. If you are under 18, please use WasscePrep with the knowledge and supervision of a parent or guardian. We do not knowingly collect data from children under 13.
+          WAEC students are typically aged 16&ndash;19. If you are under 18, please use WASSCE Tutor with the knowledge and supervision of a parent or guardian. We do not knowingly collect data from children under 13.
         </p>
       </section>
 

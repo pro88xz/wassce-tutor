@@ -11,7 +11,7 @@ export function Footer() {
       <div className="mx-auto max-w-3xl space-y-6 px-2">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
           <div className="space-y-3 col-span-2 sm:col-span-1">
-            <p className="font-bold text-foreground">WasscePrep</p>
+            <p className="font-bold text-foreground">WASSCE Tutor</p>
             <p className="text-xs">
               WASSCE practice built in Sierra Leone, for Sierra Leonean students.
             </p>
@@ -37,7 +37,7 @@ export function Footer() {
         </div>
 
         <div className="border-t pt-6 flex flex-col sm:flex-row justify-between gap-2 text-xs">
-          <p>&copy; {new Date().getFullYear()} WasscePrep. Made in Freetown, Sierra Leone.</p>
+          <p>&copy; {new Date().getFullYear()} WASSCE Tutor. Made in Freetown, Sierra Leone.</p>
           <p>Pass WASSCE with confidence.</p>
         </div>
       </div>

@@ -1,4 +1,4 @@
-# WasscePrep robots.txt
+# WASSCE Tutor robots.txt
 # Allows crawling of public marketing pages only.
 # Paid content (lessons, papers, topics, subjects, tutor) is blocked from crawl
 # because it requires authentication and a paid subscription to access.

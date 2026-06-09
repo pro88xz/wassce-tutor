@@ -14,7 +14,7 @@ function About() {
           Built in Sierra Leone, for Sierra Leonean students.
         </h1>
         <p className="text-muted-foreground text-lg">
-          WasscePrep is a WASSCE preparation platform made specifically for students sitting the West African Senior School Certificate Examination in Sierra Leone. We focus on what local students actually need &mdash; not generic global content.
+          WASSCE Tutor is a WASSCE preparation platform made specifically for students sitting the West African Senior School Certificate Examination in Sierra Leone. We focus on what local students actually need &mdash; not generic global content.
         </p>
       </header>
 
@@ -24,7 +24,7 @@ function About() {
           WASSCE is the gate that decides whether a Sierra Leonean student gets into university, secures a scholarship, or starts their working life on the right footing. Yet most preparation materials available to students are imported from Ghana or Nigeria, miss the Sierra Leone context, or sit behind expensive textbooks and private tutors that families can&rsquo;t always afford.
         </p>
         <p className="text-muted-foreground">
-          We built WasscePrep to change that. One affordable subscription unlocks every subject, every past paper, every lesson, and an AI tutor that explains things in a way that fits how Sierra Leonean students learn.
+          We built WASSCE Tutor to change that. One affordable subscription unlocks every subject, every past paper, every lesson, and an AI tutor that explains things in a way that fits how Sierra Leonean students learn.
         </p>
       </section>
 
@@ -61,7 +61,7 @@ function About() {
       <section className="space-y-4">
         <h2 className="text-2xl font-bold">Made for Sierra Leone</h2>
         <p className="text-muted-foreground">
-          WasscePrep is built and maintained in Freetown by a Sierra Leonean developer who understands the realities of studying for WAEC here: limited textbook access, expensive data, shared devices, unreliable power. Every product decision &mdash; from the small APK size to the flat monthly pricing &mdash; is made with these constraints in mind.
+          WASSCE Tutor is built and maintained in Freetown by a Sierra Leonean developer who understands the realities of studying for WAEC here: limited textbook access, expensive data, shared devices, unreliable power. Every product decision &mdash; from the small APK size to the flat monthly pricing &mdash; is made with these constraints in mind.
         </p>
         <p className="text-muted-foreground">
           We are not a global ed-tech company adapting content for Africa. We are a local team building for our own market.
