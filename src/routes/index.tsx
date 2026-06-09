@@ -170,24 +170,24 @@ function Index() {
           <h2 className="text-center text-2xl font-bold">Plans that fit your wallet</h2>
           <p className="text-center text-sm text-muted-foreground -mt-2">All plans unlock every subject, every paper, and your AI tutor.</p>
           <div className="mx-auto grid max-w-3xl gap-3 sm:grid-cols-3">
-            <div className="rounded-2xl border bg-card p-5 text-center space-y-1">
+            <Link to="/auth" className="block rounded-2xl border bg-card p-5 text-center space-y-1 transition hover:border-primary hover:shadow-lg hover:shadow-primary/10 active:scale-[0.98]">
               <p className="text-sm font-semibold text-muted-foreground">Monthly</p>
               <p><span className="text-4xl font-black">25</span><span className="ml-1 text-sm text-muted-foreground">NLe</span></p>
               <p className="text-xs text-muted-foreground">per month</p>
-            </div>
-            <div className="rounded-2xl border bg-card p-5 text-center space-y-1">
+            </Link>
+            <Link to="/auth" className="block rounded-2xl border bg-card p-5 text-center space-y-1 transition hover:border-primary hover:shadow-lg hover:shadow-primary/10 active:scale-[0.98]">
               <p className="text-sm font-semibold text-muted-foreground">Quarterly</p>
               <p><span className="text-4xl font-black">60</span><span className="ml-1 text-sm text-muted-foreground">NLe</span></p>
               <p className="text-xs text-muted-foreground">per 3 months</p>
               <p className="text-xs font-semibold text-emerald-600">Save 15 NLe</p>
-            </div>
-            <div className="rounded-2xl border-2 border-primary bg-card p-5 text-center space-y-1 relative">
+            </Link>
+            <Link to="/auth" className="block rounded-2xl border-2 border-primary bg-card p-5 text-center space-y-1 relative transition hover:shadow-lg hover:shadow-primary/20 active:scale-[0.98]">
               <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 rounded-full bg-primary px-2.5 py-0.5 text-[10px] font-bold text-primary-foreground uppercase tracking-wide">Best value</span>
               <p className="text-sm font-semibold text-muted-foreground">Yearly</p>
               <p><span className="text-4xl font-black">220</span><span className="ml-1 text-sm text-muted-foreground">NLe</span></p>
               <p className="text-xs text-muted-foreground">per year</p>
               <p className="text-xs font-semibold text-emerald-600">Save 80 NLe</p>
-            </div>
+            </Link>
           </div>
           <div className="mx-auto max-w-md pt-2 space-y-2">
             <Link to="/auth" className="block">
