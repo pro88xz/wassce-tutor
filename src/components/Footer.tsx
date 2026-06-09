@@ -1,9 +1,12 @@
 import { Link, useRouterState } from '@tanstack/react-router'
+import { useAuth } from '@/lib/auth'
 
 const SHOW_ON = ['/', '/about', '/privacy', '/terms']
 
 export function Footer() {
   const pathname = useRouterState({ select: (s) => s.location.pathname })
+  const { user } = useAuth()
+  if (user) return null
   if (!SHOW_ON.includes(pathname)) return null
 
   return (
