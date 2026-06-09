@@ -54,7 +54,7 @@ function Index() {
     return (
       <>
         {/* HERO - Animated gradient with depth (full-bleed) */}
-        <section className="relative -mx-6 -mt-6 mb-0 overflow-hidden">
+        <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mt-6 mb-0 overflow-hidden">
           {/* Base gradient layer */}
           <div
             aria-hidden
