@@ -53,35 +53,73 @@ function Index() {
   if (!user) {
     return (
       <div className="mx-auto max-w-3xl space-y-16 pb-12">
-        {/* HERO */}
-        <section className="pt-8 sm:pt-16 text-center space-y-6">
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary/70 text-primary-foreground shadow-lg shadow-primary/30">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-9 w-9">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4L2 8l10 4 10-4-10-4z M6 10v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" />
-            </svg>
-          </div>
-          <div className="space-y-3">
-            <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-balance">
-              Pass WASSCE with confidence.
-            </h1>
-            <p className="text-balance text-muted-foreground max-w-xl mx-auto">
-              Personalised practice for every faculty — Science, Arts, Commercial, Technical. Past papers, lessons, and explanations built for Sierra Leone.
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
-            <Link to="/auth">
-              <Button className="h-12 px-8 text-base">Start free for 7 days</Button>
-            </Link>
-            <DownloadButton variant="outline" />
-          </div>
-          <div className="flex justify-center gap-2 pt-1">
-            <Link to="/auth" className="text-xs text-muted-foreground hover:text-foreground">
-              Sign in
-            </Link>
-            <span className="text-xs text-muted-foreground">·</span>
-            <p className="text-xs text-muted-foreground">
-              No card needed · Cancel anytime
-            </p>
+        {/* HERO - Animated gradient with depth */}
+        <section className="relative -mx-6 -mt-6 mb-12 overflow-hidden rounded-b-3xl">
+          {/* Base gradient layer */}
+          <div
+            aria-hidden
+            className="absolute inset-0 bg-gradient-to-br from-blue-600 via-violet-700 to-fuchsia-700"
+            style={{
+              backgroundSize: '200% 200%',
+              animation: 'heroGradient 20s ease infinite',
+            }}
+          />
+          {/* Soft glowing orbs for atmospheric depth */}
+          <div aria-hidden className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-blue-400/30 blur-3xl" />
+          <div aria-hidden className="absolute -bottom-40 -right-32 h-[28rem] w-[28rem] rounded-full bg-fuchsia-400/25 blur-3xl" />
+          <div aria-hidden className="absolute top-1/4 right-1/4 h-64 w-64 rounded-full bg-teal-400/15 blur-3xl" />
+          {/* SVG grain texture */}
+          <svg aria-hidden className="absolute inset-0 h-full w-full opacity-[0.08] mix-blend-overlay" xmlns="http://www.w3.org/2000/svg">
+            <filter id="heroNoise">
+              <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch" />
+              <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+            </filter>
+            <rect width="100%" height="100%" filter="url(#heroNoise)" />
+          </svg>
+          {/* Decorative floating shapes */}
+          <svg aria-hidden className="absolute top-12 right-8 h-12 w-12 text-white/10" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1z" />
+          </svg>
+          <svg aria-hidden className="absolute bottom-20 left-10 h-8 w-8 text-white/10 rotate-12" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
+          </svg>
+          <div aria-hidden className="absolute top-1/3 left-12 h-3 w-3 rounded-full bg-white/20" />
+          <div aria-hidden className="absolute top-1/2 right-16 h-2 w-2 rounded-full bg-white/30" />
+          <div aria-hidden className="absolute bottom-1/3 left-1/3 h-4 w-4 rounded-full border border-white/15" />
+          {/* Vignette */}
+          <div aria-hidden className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(0,0,0,0.25)_100%)]" />
+          {/* CONTENT */}
+          <div className="relative px-6 pt-16 sm:pt-24 pb-20 text-center space-y-7">
+            <div className="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-xl border border-white/25 shadow-2xl shadow-blue-900/30">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} className="h-9 w-9 text-white drop-shadow-lg">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4L2 8l10 4 10-4-10-4z M6 10v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" />
+              </svg>
+            </div>
+            <div className="space-y-4 max-w-2xl mx-auto">
+              <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-balance text-white drop-shadow-md">
+                Pass WASSCE with confidence.
+              </h1>
+              <p className="text-balance text-white/90 text-base sm:text-lg max-w-xl mx-auto drop-shadow-sm">
+                Personalised practice for every faculty &mdash; Science, Arts, Commercial, Technical. Past papers, lessons, and explanations built for Sierra Leone.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-3">
+              <Link to="/auth" className="w-full sm:w-auto">
+                <button className="w-full sm:w-auto h-12 px-8 rounded-md bg-white text-blue-700 font-bold text-base shadow-xl shadow-blue-900/30 hover:bg-white/95 transition active:scale-[0.98]">
+                  Start free for 7 days
+                </button>
+              </Link>
+              <DownloadButton variant="hero" />
+            </div>
+            <div className="flex justify-center gap-2 pt-1">
+              <Link to="/auth" className="text-xs text-white/80 hover:text-white transition">
+                Sign in
+              </Link>
+              <span className="text-xs text-white/50">&middot;</span>
+              <p className="text-xs text-white/80">
+                No card needed &middot; Cancel anytime
+              </p>
+            </div>
           </div>
         </section>
 
@@ -369,7 +407,7 @@ function Feature({ children }: { children: React.ReactNode }) {
 }
 
 
-function DownloadButton({ variant = 'default' }: { variant?: 'default' | 'outline' }) {
+function DownloadButton({ variant = 'default' }: { variant?: 'default' | 'outline' | 'hero' }) {
   const { user } = useAuth()
   const [open, setOpen] = useState(false)
 
@@ -395,9 +433,11 @@ function DownloadButton({ variant = 'default' }: { variant?: 'default' | 'outlin
   }
 
   const btnClass =
-    variant === 'outline'
-      ? 'inline-flex items-center justify-center gap-2 h-12 px-6 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground text-base font-medium transition'
-      : 'inline-flex items-center justify-center gap-2 h-12 px-6 rounded-md bg-primary text-primary-foreground hover:opacity-90 text-base font-medium transition'
+    variant === 'hero'
+      ? 'inline-flex items-center justify-center gap-2 h-12 px-6 rounded-md bg-white/15 backdrop-blur-md border border-white/30 text-white hover:bg-white/25 text-base font-semibold transition active:scale-[0.98] shadow-lg shadow-blue-900/20'
+      : variant === 'outline'
+        ? 'inline-flex items-center justify-center gap-2 h-12 px-6 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground text-base font-medium transition'
+        : 'inline-flex items-center justify-center gap-2 h-12 px-6 rounded-md bg-primary text-primary-foreground hover:opacity-90 text-base font-medium transition'
 
   return (
     <>
