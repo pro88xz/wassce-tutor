@@ -246,8 +246,25 @@ function Index() {
       {/* HEADER with avatar */}
       <header className="flex items-start justify-between gap-4">
         <div>
-          <p className="text-sm text-muted-foreground">Welcome back,</p>
-          <h1 className="text-3xl font-black tracking-tight">{firstName} 👋</h1>
+          <p className="text-sm text-muted-foreground">{(() => {
+            const h = new Date().getHours()
+            if (h < 5) return "Working late,"
+            if (h < 12) return "Good morning,"
+            if (h < 17) return "Good afternoon,"
+            if (h < 21) return "Good evening,"
+            return "Working late,"
+          })()}</p>
+          <h1 className="text-3xl font-black tracking-tight">{firstName}</h1>
+          <p className="mt-1.5 text-sm text-muted-foreground">{(() => {
+            const prompts = [
+              "What are you studying today?",
+              "Ready to tackle WAEC?",
+              "Let's get sharper today.",
+              "Which subject needs you today?",
+              "One more step closer to passing.",
+            ]
+            return prompts[Math.floor(Math.random() * prompts.length)]
+          })()}</p>
         </div>
         <Link
           to="/profile"
@@ -259,12 +276,12 @@ function Index() {
       </header>
       {/* STATUS STRIP */}
       <div className="grid grid-cols-2 gap-3">
-        <div className="rounded-2xl border bg-card p-4">
-          <p className="text-xs uppercase tracking-wide text-muted-foreground">Faculty</p>
-          <p className="mt-1 text-lg font-bold">{facultyName}</p>
+        <div className="rounded-2xl border bg-card p-3">
+          <p className="text-[10px] uppercase tracking-wide text-muted-foreground font-semibold">Faculty</p>
+          <p className="mt-0.5 text-base font-bold">{facultyName}</p>
         </div>
         <div
-          className={`rounded-2xl border p-4 ${
+          className={`rounded-2xl border p-3 ${
             profile?.is_admin
               ? 'border-primary/30 bg-primary/5'
               : profile?.subscription_active
@@ -274,8 +291,8 @@ function Index() {
                   : 'border-red-500/30 bg-red-500/5'
           }`}
         >
-          <p className="text-xs uppercase tracking-wide text-muted-foreground">Access</p>
-          <p className="mt-1 text-lg font-bold">
+          <p className="text-[10px] uppercase tracking-wide text-muted-foreground font-semibold">Access</p>
+          <p className="mt-0.5 text-base font-bold">
             {profile?.is_admin
               ? 'Admin'
               : profile?.subscription_active
@@ -289,7 +306,7 @@ function Index() {
 
       {/* TRIAL NUDGE */}
       {!profile?.subscription_active && !profile?.is_admin && (
-        <div className="flex items-center justify-between rounded-2xl bg-primary px-5 py-4 text-primary-foreground">
+        <div className="flex items-center justify-between rounded-2xl bg-primary px-4 py-3 text-primary-foreground">
           <div>
             <p className="font-bold">Keep your progress going</p>
             <p className="text-sm opacity-90">From 25 NLe / month — every subject, every paper, your AI tutor.</p>
@@ -305,18 +322,18 @@ function Index() {
         <Link
           to="/subject/$subjectId"
           params={{ subjectId: todaysPickSubject.id }}
-          className="block rounded-2xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent p-5 transition hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"
+          className="block rounded-2xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent p-4 transition hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"
         >
           <p className="text-xs uppercase tracking-wide text-primary font-bold">
             {hasAttempts ? "Today's pick" : 'Start here'}
           </p>
-          <p className="mt-1.5 text-xl font-bold">{todaysPickSubject.name}</p>
-          <p className="mt-1 text-sm text-muted-foreground">
+          <p className="mt-1 text-lg font-bold">{todaysPickSubject.name}</p>
+          <p className="mt-0.5 text-xs text-muted-foreground">
             {hasAttempts
               ? `Pick up where you left off in ${todaysPickSubject.name}.`
               : `New to WASSCE Tutor? Open ${todaysPickSubject.name} and take your first lesson.`}
           </p>
-          <p className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-primary">
+          <p className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-primary">
             {hasAttempts ? 'Continue' : 'Open subject'} <span aria-hidden>→</span>
           </p>
         </Link>
