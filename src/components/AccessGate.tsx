@@ -17,6 +17,13 @@ export function AccessGate({ children }: { children: ReactNode }) {
 
   if (access.hasAccess) return <>{children}</>
 
+  // Detect whether this was an expired subscription or just trial-only
+  const hadSubscription = profile?.subscription_expires_at != null
+  const headline = hadSubscription ? 'Your subscription has ended' : 'Your free trial has ended'
+  const subtext = hadSubscription
+    ? "Thanks for being a subscriber. Renew to keep your full access — every subject, every paper, your AI tutor."
+    : "You've seen what's here. Pick a plan that fits and keep going — your progress, every subject, every paper, your AI tutor."
+
   // Locked screen
   return (
     <div className="mx-auto max-w-md space-y-6 pt-8 text-center">
@@ -24,10 +31,8 @@ export function AccessGate({ children }: { children: ReactNode }) {
         <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-2xl">
           🔒
         </div>
-        <h1 className="text-2xl font-bold">Your free trial has ended</h1>
-        <p className="text-muted-foreground">
-          You've seen what's here. Pick a plan that fits and keep going — your progress, every subject, every paper, your AI tutor.
-        </p>
+        <h1 className="text-2xl font-bold">{headline}</h1>
+        <p className="text-muted-foreground">{subtext}</p>
       </div>
 
       <div className="space-y-2">

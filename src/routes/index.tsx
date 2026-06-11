@@ -5,6 +5,7 @@ import { useAuth } from '@/lib/auth'
 import { supabase } from '@/lib/supabase'
 import { useProfile, useStudentSubjects, useFaculties, useAttempts } from '@/lib/queries'
 import { Button } from '@/components/ui/button'
+import { UpdateBanner } from '@/components/UpdateBanner'
 
 export const Route = createFileRoute('/')({
   component: Index,
@@ -217,6 +218,7 @@ function Index() {
 
   if (profileLoading) return <CenterMsg>Loading your dashboard…</CenterMsg>
 
+  const subscriptionDaysLeft = profile?.subscription_active && profile?.subscription_expires_at ? Math.ceil((new Date(profile.subscription_expires_at).getTime() - Date.now()) / (24 * 60 * 60 * 1000)) : null
   const daysLeft = trialDaysLeft(profile?.trial_started_at ?? null)
   const facultyName =
     faculties?.find((f) => f.id === profile?.faculty_id)?.name ?? 'Your faculty'
@@ -243,6 +245,7 @@ function Index() {
 
   return (
     <div className="mx-auto max-w-3xl space-y-6">
+      <UpdateBanner />
       {/* HEADER with avatar */}
       <header className="flex items-start justify-between gap-4">
         <div>
@@ -303,6 +306,21 @@ function Index() {
           </p>
         </div>
       </div>
+
+      {/* SUBSCRIPTION EXPIRY WARNING */}
+      {subscriptionDaysLeft !== null && subscriptionDaysLeft <= 3 && subscriptionDaysLeft >= 0 && (
+        <div className="flex items-center justify-between rounded-2xl border-2 border-amber-500/40 bg-amber-500/10 px-4 py-3">
+          <div>
+            <p className="font-bold text-amber-700">
+              {subscriptionDaysLeft === 0 ? 'Your subscription expires today' : subscriptionDaysLeft === 1 ? 'Your subscription expires tomorrow' : `Your subscription expires in ${subscriptionDaysLeft} days`}
+            </p>
+            <p className="text-xs text-amber-700/80">Renew now to keep your access without interruption.</p>
+          </div>
+          <Link to="/subscribe">
+            <Button variant="secondary" size="sm">Renew</Button>
+          </Link>
+        </div>
+      )}
 
       {/* TRIAL NUDGE */}
       {!profile?.subscription_active && !profile?.is_admin && (

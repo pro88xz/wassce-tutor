@@ -46,3 +46,24 @@ if (error) {
 const publicUrl = `${SUPABASE_URL}/storage/v1/object/public/${BUCKET}/${REMOTE_FILENAME}`
 console.log(`Upload complete.`)
 console.log(`Public URL: ${publicUrl}`)
+
+// Also publish version manifest so the in-app update checker knows there's a new version
+const pkg = JSON.parse(readFileSync('package.json', 'utf-8'))
+const manifest = {
+  version: pkg.version,
+  apkUrl: publicUrl,
+  releasedAt: new Date().toISOString(),
+}
+const manifestBuffer = Buffer.from(JSON.stringify(manifest, null, 2))
+const { error: manifestErr } = await supabase.storage
+  .from(BUCKET)
+  .upload('version.json', manifestBuffer, {
+    contentType: 'application/json',
+    upsert: true,
+    cacheControl: '60',
+  })
+if (manifestErr) {
+  console.error('Manifest upload failed:', manifestErr.message)
+  process.exit(1)
+}
+console.log(`Manifest published: version ${pkg.version}`)

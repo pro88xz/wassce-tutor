@@ -3,6 +3,7 @@ import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { Button } from '@/components/ui/button'
 import { getTheme, toggleTheme, type Theme } from '@/lib/theme'
+import { fetchLatestVersion, getInstalledVersion, isNewerVersion } from '@/lib/version'
 import { useState } from 'react'
 
 export const Route = createFileRoute('/profile')({
@@ -65,9 +66,56 @@ function ProfilePage() {
         </Link>
       )}
 
+      <CheckForUpdatesButton />
+
       <Button variant="outline" className="w-full" onClick={handleSignOut}>
         Sign out
       </Button>
     </div>
+  )
+}
+
+function CheckForUpdatesButton() {
+  const [status, setStatus] = useState<'idle' | 'checking' | 'up-to-date' | 'available'>('idle')
+  const [latestVersion, setLatestVersion] = useState<string | null>(null)
+  const [apkUrl, setApkUrl] = useState<string | null>(null)
+
+  const check = async () => {
+    setStatus('checking')
+    const manifest = await fetchLatestVersion()
+    if (!manifest) {
+      setStatus('idle')
+      alert('Could not check for updates. Try again later.')
+      return
+    }
+    const installed = getInstalledVersion()
+    if (isNewerVersion(manifest.version, installed)) {
+      setLatestVersion(manifest.version)
+      setApkUrl(manifest.apkUrl)
+      setStatus('available')
+    } else {
+      setStatus('up-to-date')
+      setTimeout(() => setStatus('idle'), 3000)
+    }
+  }
+
+  const install = () => {
+    if (apkUrl) window.location.href = apkUrl
+  }
+
+  if (status === 'available' && latestVersion && apkUrl) {
+    return (
+      <div className="rounded-2xl border-2 border-primary/30 bg-primary/5 p-4 space-y-2">
+        <p className="font-bold text-sm">Version {latestVersion} is available</p>
+        <p className="text-xs text-muted-foreground">Tap install to update.</p>
+        <Button onClick={install} className="w-full">Install update</Button>
+      </div>
+    )
+  }
+
+  return (
+    <Button variant="outline" className="w-full" onClick={check} disabled={status === 'checking'}>
+      {status === 'checking' ? 'Checking…' : status === 'up-to-date' ? "You're up to date" : 'Check for updates'}
+    </Button>
   )
 }
