@@ -1,4 +1,5 @@
 import { hasSubjectPage, subjectPath } from '@/lib/public-content'
+import { SubjectIcon } from '@/lib/subject-theme'
 import type { FacultyRole, PublicFaculty, SubjectSummary } from '@/lib/public-content'
 
 const ROLE_ORDER: FacultyRole[] = ['core', 'faculty', 'elective']
@@ -15,20 +16,22 @@ function facultiesOf(subjects: SubjectSummary[]): PublicFaculty[] {
 }
 
 function SubjectLink({ s, detailed }: { s: SubjectSummary; detailed: boolean }) {
-  const label = hasSubjectPage(s.topicCount) ? (
-    <a href={subjectPath(s.slug)} className="font-medium text-primary hover:underline">{s.name}</a>
-  ) : (
-    <span className="font-medium">{s.name}</span>
+  const content = (
+    <>
+      <SubjectIcon slug={s.slug} size="sm" />
+      <span className="min-w-0 flex-1 truncate font-semibold">{s.name}</span>
+      {detailed && (
+        <span className="shrink-0 text-xs text-muted-foreground">
+          {s.topicCount ? `${s.topicCount} topics` : 'Coming soon'}
+          {s.lessonCount > 0 && ` · ${s.lessonCount} lessons`}
+        </span>
+      )}
+    </>
   )
-  if (!detailed) return label
-  return (
-    <div className="flex items-baseline justify-between gap-3">
-      {label}
-      <span className="shrink-0 text-xs text-muted-foreground">
-        {s.topicCount ? `${s.topicCount} topics` : 'Syllabus coming soon'}
-        {s.lessonCount > 0 && ` · ${s.lessonCount} lessons`}
-      </span>
-    </div>
+  return hasSubjectPage(s.topicCount) ? (
+    <a href={subjectPath(s.slug)} className="flex items-center gap-3 rounded-xl px-2 py-1.5 transition hover:bg-muted">{content}</a>
+  ) : (
+    <span className="flex items-center gap-3 rounded-xl px-2 py-1.5 opacity-60">{content}</span>
   )
 }
 
@@ -37,14 +40,14 @@ export function FacultySubjects({ subjects, detailed = false }: { subjects: Subj
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       {facultiesOf(subjects).map((faculty) => (
-        <section key={faculty.id} className="rounded-xl border p-4 space-y-3">
-          <h3 className="text-lg font-bold">{faculty.name}</h3>
+        <section key={faculty.id} className="space-y-3 rounded-3xl border bg-card p-4 shadow-sm shadow-black/[0.03]">
+          <h3 className="px-2 text-lg font-black tracking-tight">{faculty.name}</h3>
           {ROLE_ORDER.map((role) => {
             const list = subjects.filter((s) => s.faculties.some((f) => f.faculty.id === faculty.id && f.role === role))
             if (list.length === 0) return null
             return (
               <div key={role} className="space-y-1">
-                <p className="text-xs uppercase tracking-wide text-muted-foreground">{ROLE_HEADING[role]}</p>
+                <p className="px-2 text-xs font-bold uppercase tracking-wider text-muted-foreground">{ROLE_HEADING[role]}</p>
                 <ul className="space-y-1">
                   {list.map((s) => (
                     <li key={s.id}><SubjectLink s={s} detailed={detailed} /></li>

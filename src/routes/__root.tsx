@@ -5,6 +5,7 @@ import { useIsFetching } from '@tanstack/react-query'
 import { BottomNav } from '@/components/BottomNav'
 import { Footer } from '@/components/Footer'
 import { NotFoundPage } from '@/components/NotFoundPage'
+import { PublicHeader } from '@/components/public/PublicHeader'
 import { SITE } from '@/lib/seo'
 import appCss from '@/index.css?url'
 import nativeCss from '@/native.css?url'
@@ -109,6 +110,7 @@ function RootComponent() {
         style={{ paddingTop: 'env(safe-area-inset-top)' }}
       >
         <div className="px-6 pt-6 pb-32">
+          <PublicHeader />
           <Outlet />
           <Footer />
         </div>

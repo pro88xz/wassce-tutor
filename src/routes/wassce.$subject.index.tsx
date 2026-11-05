@@ -4,6 +4,7 @@ import { StartCta } from '@/components/public/StartCta'
 import { fetchSubjectHub, hasTopicPage, subjectPath, topicPath } from '@/lib/public-content'
 import type { SubjectHub } from '@/lib/public-content'
 import { breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
+import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
 
 const trail = (hub: SubjectHub): [string, string][] => [
   ['Home', '/'],
@@ -50,45 +51,64 @@ function roleLabel(hub: SubjectHub): string {
 function SubjectHubPage() {
   const hub = Route.useLoaderData()
   const { subject, groups, topicCount, lessonCount, minutes, related } = hub
+  const { icon: Icon, palette } = subjectTheme(subject.slug)
   return (
     <article className="mx-auto max-w-3xl space-y-10 pb-12">
-      <header className="space-y-3 pt-2">
-        <Breadcrumbs trail={trail(hub)} />
-        <h1 className="text-4xl font-black tracking-tight">WASSCE {subject.name}</h1>
-        <p className="text-lg text-muted-foreground">
-          Every topic in the WASSCE {subject.name} syllabus, grouped the way you&rsquo;ll study it, with lessons
-          written for Sierra Leone students.
-        </p>
-        <p className="text-sm text-muted-foreground">
-          {topicCount} topics · {groups.length} sections
-          {lessonCount > 0 && <> · {lessonCount} lessons · about {hours(minutes)} of study</>}
-        </p>
-        {roleLabel(hub) && <p className="text-sm">{roleLabel(hub)}</p>}
+      <Breadcrumbs trail={trail(hub)} />
+
+      <header className={`relative overflow-hidden rounded-3xl bg-gradient-to-br ${palette.gradient} p-6 text-white shadow-lg`}>
+        <Icon className="pointer-events-none absolute -bottom-8 -right-8 h-44 w-44 text-white/10" aria-hidden />
+        <div className="relative space-y-4">
+          <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/20 backdrop-blur">
+            <Icon className="h-6 w-6" aria-hidden />
+          </span>
+          <div className="space-y-2">
+            <h1 className="text-4xl font-black tracking-tight">WASSCE {subject.name}</h1>
+            <p className="text-white/90">
+              Every topic in the WASSCE {subject.name} syllabus, grouped the way you&rsquo;ll study it, with lessons
+              written for Sierra Leone students.
+            </p>
+          </div>
+          <ul className="flex flex-wrap gap-2 text-sm font-semibold">
+            <li className="rounded-full bg-white/20 px-3 py-1">{topicCount} topics</li>
+            <li className="rounded-full bg-white/20 px-3 py-1">{groups.length} sections</li>
+            {lessonCount > 0 && <li className="rounded-full bg-white/20 px-3 py-1">{lessonCount} lessons</li>}
+            {lessonCount > 0 && <li className="rounded-full bg-white/20 px-3 py-1">about {hours(minutes)}</li>}
+          </ul>
+          {roleLabel(hub) && <p className="text-sm text-white/85">{roleLabel(hub)}</p>}
+        </div>
       </header>
 
       <section className="space-y-8" aria-labelledby="syllabus">
-        <h2 id="syllabus" className="text-2xl font-bold">{subject.name} syllabus topics</h2>
+        <h2 id="syllabus" className="text-2xl font-black tracking-tight">{subject.name} syllabus topics</h2>
         {groups.map((group) => (
           <section key={group.name} className="space-y-3">
-            <h3 className="text-lg font-semibold">{group.name}</h3>
-            <ul className="divide-y rounded-xl border">
+            <div className="flex items-center justify-between gap-3">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-muted-foreground">{group.name}</h3>
+              <span className="text-xs text-muted-foreground">{group.topics.length} topics</span>
+            </div>
+            <ul className="space-y-2">
               {group.topics.map((topic) => (
-                <li key={topic.id} className="p-4 space-y-1">
-                  <div className="flex items-baseline justify-between gap-3">
-                    {hasTopicPage(topic) ? (
-                      <a href={topicPath(subject.slug, topic.slug)} className="font-medium text-primary hover:underline">
-                        {topic.name}
-                      </a>
-                    ) : (
-                      <span className="font-medium">{topic.name}</span>
-                    )}
-                    <span className="shrink-0 text-xs text-muted-foreground">
-                      {topic.lessons.length > 0
-                        ? `${topic.lessons.length} lesson${topic.lessons.length === 1 ? '' : 's'}`
-                        : 'Lessons coming soon'}
+                <li key={topic.id} className="rounded-2xl bg-card p-4 ring-1 ring-border/60">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="min-w-0 space-y-1">
+                      {hasTopicPage(topic) ? (
+                        <a href={topicPath(subject.slug, topic.slug)} className={`font-semibold hover:underline ${palette.text}`}>
+                          {topic.name}
+                        </a>
+                      ) : (
+                        <span className="font-semibold">{topic.name}</span>
+                      )}
+                      {topic.description && <p className="text-sm text-muted-foreground">{topic.description}</p>}
+                    </div>
+                    <span
+                      className={`shrink-0 rounded-full px-2.5 py-0.5 text-xs font-semibold ${
+                        topic.lessons.length > 0 ? `${palette.soft} ${palette.text}` : 'bg-muted text-muted-foreground'
+                      }`}
+                    >
+                      {topic.lessons.length > 0 ? `${topic.lessons.length} lesson${topic.lessons.length === 1 ? '' : 's'}` : 'Soon'}
                     </span>
                   </div>
-                  {topic.description && <p className="text-sm text-muted-foreground">{topic.description}</p>}
                 </li>
               ))}
             </ul>
@@ -104,16 +124,19 @@ function SubjectHubPage() {
             : `Practise past papers with instant scoring and ask the AI tutor any ${subject.name} question in plain English. Lessons for this subject are on the way.`
         }
         appHref={`/subject/${subject.id}`}
+        gradient={palette.gradient}
       />
 
       {related.length > 0 && (
         <section className="space-y-3" aria-labelledby="related">
-          <h2 id="related" className="text-xl font-bold">Related subjects</h2>
-          <ul className="flex flex-wrap gap-2">
+          <h2 id="related" className="text-xl font-black tracking-tight">Related subjects</h2>
+          <ul className="grid gap-2 sm:grid-cols-2">
             {related.map((s) => (
               <li key={s.id}>
-                <a href={subjectPath(s.slug)} className="inline-block rounded-full border px-3 py-1 text-sm hover:bg-muted">
-                  {s.name}
+                <a href={subjectPath(s.slug)} className="flex items-center gap-3 rounded-2xl border bg-card p-3 transition hover:border-primary/40">
+                  <SubjectIcon slug={s.slug} size="sm" />
+                  <span className="min-w-0 flex-1 truncate font-semibold">{s.name}</span>
+                  <span className="text-xs text-muted-foreground">{s.topicCount} topics</span>
                 </a>
               </li>
             ))}

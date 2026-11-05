@@ -5,6 +5,7 @@ import { LessonView } from '@/components/LessonView'
 import { fetchPublicLessonPage, lessonPath, lessonSummary, subjectPath, topicPath } from '@/lib/public-content'
 import type { PublicLessonPageData } from '@/lib/public-content'
 import { SITE, absoluteUrl, breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
+import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
 
 const trail = ({ subject, topic, lesson }: PublicLessonPageData): [string, string][] => [
   ['Home', '/'],
@@ -71,13 +72,14 @@ function PublicLessonPage() {
   const data = Route.useLoaderData()
   const { subject, topic, lesson } = data
   const others = topic.lessons.filter((l) => l.id !== lesson.id)
+  const { palette } = subjectTheme(subject.slug)
 
   return (
     <article className="mx-auto max-w-2xl space-y-8 pb-12">
       <header className="space-y-3 pt-2">
         <Breadcrumbs trail={trail(data)} />
-        <p className="text-xs uppercase tracking-wide text-muted-foreground">
-          WASSCE {subject.name} · {topic.name}
+        <p className={`flex items-center gap-2 text-xs font-bold uppercase tracking-wider ${palette.text}`}>
+          <SubjectIcon slug={subject.slug} size="sm" /> WASSCE {subject.name} · {topic.name}
         </p>
         <h1 className="text-3xl font-black tracking-tight sm:text-4xl">{lesson.title}</h1>
         <div className="rounded-xl border bg-muted/40 p-3 text-sm">
@@ -102,6 +104,7 @@ function PublicLessonPage() {
         heading={`Keep going with ${topic.name.toLowerCase()}`}
         body={`This is one of ${topic.lessons.length} lessons in ${topic.name}. Unlock them all, plus past papers with instant scoring and an AI tutor, free for 7 days.`}
         appHref={`/lesson/${lesson.id}`}
+        gradient={palette.gradient}
       />
 
       {others.length > 0 && (

@@ -3,7 +3,7 @@
 // subjects, topics, and the wassce_lesson_index view (lesson titles, never
 // lesson content). Runs at build time (prerendering) and in the browser.
 import { supabase } from '@/lib/supabase'
-import { hasSubjectPage, hasTopicPageByCount } from '@/lib/public-rules'
+import { hasSubjectPage, hasTopicPageByCount, subjectPath, topicPath } from '@/lib/public-rules'
 
 export { hasSubjectPage, lessonPath, subjectPath, topicPath } from '@/lib/public-rules'
 
@@ -269,4 +269,66 @@ export function lessonSummary(markdown: string, max = 155): string {
   if (text.length <= max) return text
   const cut = text.slice(0, max)
   return cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:.\s]+$/, '') + '…'
+}
+
+export type PopularTopic = { subjectSlug: string; subjectName: string; topicSlug: string; topicName: string; lessons: number }
+
+export type LandingData = {
+  subjects: SubjectSummary[]
+  totals: { subjects: number; topics: number; lessons: number }
+  popular: PopularTopic[]
+}
+
+/** Homepage data: subjects with counts, totals for the proof strip, and the topics with the most lessons. */
+export async function fetchLandingData(): Promise<LandingData> {
+  const subjects = await fetchSubjectSummaries()
+  const topics = await loadTopics(subjects.map((s) => s.id))
+  const bySubject = new Map(subjects.map((s) => [s.id, s]))
+  const popular = topics
+    .filter(hasTopicPage)
+    .sort((a, b) => b.lessons.length - a.lessons.length || a.name.localeCompare(b.name))
+    .slice(0, 10)
+    .map((t) => {
+      const s = bySubject.get(t.subject_id)!
+      return { subjectSlug: s.slug, subjectName: s.name, topicSlug: t.slug, topicName: t.name, lessons: t.lessons.length }
+    })
+  return {
+    subjects,
+    totals: {
+      subjects: subjects.length,
+      topics: subjects.reduce((n, s) => n + s.topicCount, 0),
+      lessons: subjects.reduce((n, s) => n + s.lessonCount, 0),
+    },
+    popular,
+  }
+}
+
+export type SearchEntry = { kind: 'subject' | 'topic'; name: string; subjectName: string; href: string; lessons: number }
+
+/**
+ * Everything searchable from the homepage: subjects and all syllabus topics.
+ * Topics with lessons link to their own page; the rest link to their subject hub.
+ */
+export async function fetchSearchIndex(): Promise<SearchEntry[]> {
+  const subjects = await loadSubjects()
+  const topics = await loadTopics(subjects.map((s) => s.id))
+  const bySubject = new Map(subjects.map((s) => [s.id, s]))
+  const entries: SearchEntry[] = subjects.flatMap((s) => {
+    const own = topics.filter((t) => t.subject_id === s.id)
+    if (!hasSubjectPage(own.length)) return []
+    const lessons = own.reduce((n, t) => n + t.lessons.length, 0)
+    return [{ kind: 'subject' as const, name: s.name, subjectName: s.name, href: subjectPath(s.slug), lessons }]
+  })
+  for (const t of topics) {
+    const s = bySubject.get(t.subject_id)
+    if (!s) continue
+    entries.push({
+      kind: 'topic',
+      name: t.name,
+      subjectName: s.name,
+      href: hasTopicPage(t) ? topicPath(s.slug, t.slug) : subjectPath(s.slug),
+      lessons: t.lessons.length,
+    })
+  }
+  return entries
 }
