@@ -15,6 +15,8 @@ const WHATSAPP_NUMBER = '23277884195'
 const COOLDOWN_MS = 10 * 60 * 1000
 
 type Plan = {
+  // Plan ids and prices are also enforced by the payment_requests insert policy
+  // (supabase/migrations/20261105_01_security_fixes.sql). Change both together.
   id: 'monthly' | 'quarterly' | 'yearly'
   name: string
   amount: number
