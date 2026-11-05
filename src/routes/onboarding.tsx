@@ -4,7 +4,10 @@ import { useEffect, useState } from 'react'
 import { useFaculties, useFacultySubjects } from '@/lib/queries'
 import { useSaveOnboarding } from '@/lib/mutations'
 import { useAuth } from '@/lib/auth'
-import { Button } from '@/components/ui/button'
+import { Briefcase, Check, FlaskConical, GraduationCap, Lock, Palette, Wrench } from 'lucide-react'
+import { SubjectIcon } from '@/lib/subject-theme'
+import { ProgressBar } from '@/components/ds/Progress'
+import { PageHeader, Skeleton } from '@/components/ds/Primitives'
 
 export const Route = createFileRoute('/onboarding')({
   head: privateHead('Get started'),
@@ -56,53 +59,66 @@ function Onboarding() {
     navigate({ to: '/' })
   }
 
-  if (isLoading) return <p className="text-muted-foreground">Loading...</p>
+  if (isLoading) {
+    return (
+      <div className="mx-auto max-w-2xl space-y-4">
+        <Skeleton className="h-20" />
+        <div className="grid grid-cols-2 gap-3">{[0, 1, 2, 3].map((i) => <Skeleton key={i} className="h-28" />)}</div>
+      </div>
+    )
+  }
 
   const count = selected.size
   const meetsRecommended = count >= MIN_SUBJECTS && count <= MAX_SUBJECTS
   const canContinue = count >= 2 && count <= MAX_SUBJECTS
+  const FACULTY_ICONS: Record<string, typeof FlaskConical> = { science: FlaskConical, arts: Palette, commercial: Briefcase, technical: Wrench }
 
   return (
-    <div className="max-w-2xl mx-auto space-y-6 pb-24">
-      <div className="space-y-1">
-        <h1 className="text-2xl font-bold">Set up your studies</h1>
-        <p className="text-sm text-muted-foreground">
-          Pick your faculty, then confirm your subjects.
-        </p>
-      </div>
+    <div className="mx-auto max-w-2xl space-y-8 pb-32">
+      <PageHeader eyebrow="Set up your studies" title="What are you sitting?" subtitle="Pick your faculty, then confirm your WASSCE subjects. You can change them any time." />
 
-      {/* FACULTY PICKER */}
-      <div className="grid grid-cols-2 gap-3">
-        {faculties?.map((f) => (
-          <button
-            key={f.id}
-            onClick={() => setFacultyId(f.id)}
-            className={`text-left rounded-lg border p-4 transition ${
-              facultyId === f.id
-                ? 'border-primary bg-primary/5'
-                : 'hover:border-muted-foreground/40'
-            }`}
-          >
-            <div className="font-semibold">{f.name}</div>
-            <div className="text-xs text-muted-foreground mt-1">{f.description}</div>
-          </button>
-        ))}
-      </div>
+      {/* STEP 1: FACULTY */}
+      <section className="space-y-3">
+        <StepLabel n={1} label="Your faculty" />
+        <div className="grid grid-cols-2 gap-3">
+          {faculties?.map((f) => {
+            const Icon = FACULTY_ICONS[f.slug] ?? GraduationCap
+            const active = facultyId === f.id
+            return (
+              <button
+                key={f.id}
+                type="button"
+                aria-pressed={active}
+                onClick={() => setFacultyId(f.id)}
+                className={`flex flex-col items-start gap-2 rounded-3xl bg-card p-4 text-left ring-1 transition ${active ? 'ring-2 ring-primary shadow-md shadow-primary/10' : 'ring-border hover:ring-primary/40'}`}
+              >
+                <span className={`flex h-10 w-10 items-center justify-center rounded-xl ${active ? 'bg-gradient-to-br from-blue-600 to-violet-600 text-white' : 'bg-primary/10 text-primary'}`}>
+                  <Icon className="h-5 w-5" aria-hidden />
+                </span>
+                <span className="font-bold">{f.name}</span>
+                {f.description && <span className="text-xs text-muted-foreground">{f.description}</span>}
+              </button>
+            )
+          })}
+        </div>
+      </section>
 
-      {/* SUBJECT SELECTION */}
+      {/* STEP 2: SUBJECTS */}
       {facultyId && (
-        <div className="space-y-3 border-t pt-4">
-          <div className="flex items-center justify-between">
-            <h2 className="font-semibold">Your subjects</h2>
-            <span
-              className={`text-sm ${meetsRecommended ? 'text-emerald-500' : 'text-amber-500'}`}
-            >
-              {count} of {MAX_SUBJECTS} selected
-            </span>
+        <section className="space-y-3">
+          <StepLabel n={2} label="Your subjects" />
+          <div className="space-y-1.5 rounded-2xl bg-muted/50 p-3">
+            <div className="flex items-center justify-between text-sm font-semibold">
+              <span>{count} of {MAX_SUBJECTS} selected</span>
+              <span className={meetsRecommended ? 'text-emerald-600' : 'text-amber-600'}>
+                {meetsRecommended ? 'Looks good' : `WASSCE needs at least ${MIN_SUBJECTS}`}
+              </span>
+            </div>
+            <ProgressBar value={count} max={MAX_SUBJECTS} fill={meetsRecommended ? 'bg-emerald-500' : 'bg-amber-500'} label="Subjects selected" />
           </div>
 
           {subjectsLoading ? (
-            <p className="text-sm text-muted-foreground">Loading subjects...</p>
+            <div className="space-y-2">{[0, 1, 2, 3, 4].map((i) => <Skeleton key={i} className="h-14" />)}</div>
           ) : (
             <div className="space-y-2">
               {subjects?.map((fs) => {
@@ -111,26 +127,24 @@ function Onboarding() {
                 return (
                   <button
                     key={fs.id}
+                    type="button"
+                    role="checkbox"
+                    aria-checked={isSelected}
                     onClick={() => toggle(fs.subject_id, fs.role)}
                     disabled={isCore}
-                    className={`w-full flex items-center justify-between rounded-md border px-3 py-2.5 text-left text-sm transition ${
-                      isSelected
-                        ? 'border-primary bg-primary/5'
-                        : 'border-border hover:border-muted-foreground/40'
-                    } ${isCore ? 'opacity-90 cursor-default' : ''}`}
+                    className={`flex w-full items-center gap-3 rounded-2xl bg-card px-3 py-3 text-left ring-1 transition ${isSelected ? 'ring-2 ring-primary' : 'ring-border hover:ring-primary/40'} ${isCore ? 'cursor-default' : ''}`}
                   >
-                    <span className="flex items-center gap-2">
-                      <span
-                        className={`inline-flex h-4 w-4 items-center justify-center rounded border text-[10px] ${
-                          isSelected ? 'bg-primary border-primary text-primary-foreground' : 'border-muted-foreground/40'
-                        }`}
-                      >
-                        {isSelected ? '✓' : ''}
+                    <SubjectIcon slug={fs.subject.slug} size="sm" />
+                    <span className="min-w-0 flex-1 font-semibold">{fs.subject.name}</span>
+                    {isCore ? (
+                      <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-[11px] font-semibold text-muted-foreground">
+                        <Lock className="h-3 w-3" aria-hidden /> Required
                       </span>
-                      {fs.subject.name}
-                    </span>
-                    <span className="text-[10px] uppercase text-muted-foreground">
-                      {isCore ? 'required' : fs.role}
+                    ) : (
+                      <span className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">{fs.role === 'elective' ? 'Elective' : 'Main'}</span>
+                    )}
+                    <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border-2 transition ${isSelected ? 'border-primary bg-primary text-primary-foreground' : 'border-muted-foreground/30'}`}>
+                      {isSelected && <Check className="h-4 w-4" aria-hidden />}
                     </span>
                   </button>
                 )
@@ -138,31 +152,34 @@ function Onboarding() {
             </div>
           )}
 
-          {count > 0 && count < MIN_SUBJECTS && (
-            <p className="text-xs text-amber-500">
-              WASSCE requires at least {MIN_SUBJECTS} subjects — you've selected {count}. You can add more anytime.
-            </p>
-          )}
-          {save.error && (
-            <p className="text-sm text-red-500">{String(save.error)}</p>
-          )}
-        </div>
+          {save.error && <p className="text-sm text-red-500">{String(save.error)}</p>}
+        </section>
       )}
 
       {/* STICKY CONTINUE */}
       {facultyId && (
-        <div className="fixed bottom-0 left-0 right-0 border-t bg-background p-4">
-          <div className="max-w-2xl mx-auto">
-            <Button
-              className="w-full"
+        <div className="fixed bottom-0 left-0 right-0 z-50 border-t bg-background/95 p-4 backdrop-blur" style={{ paddingBottom: 'calc(env(safe-area-inset-bottom) + 1rem)' }}>
+          <div className="mx-auto max-w-2xl">
+            <button
+              type="button"
               disabled={!canContinue || save.isPending}
               onClick={handleSave}
+              className="h-12 w-full rounded-2xl bg-gradient-to-br from-blue-600 to-violet-600 text-base font-bold text-white shadow-md transition hover:shadow-lg disabled:opacity-50"
             >
-              {save.isPending ? 'Saving...' : `Continue with ${count} subjects`}
-            </Button>
+              {save.isPending ? 'Saving…' : `Continue with ${count} subject${count === 1 ? '' : 's'}`}
+            </button>
           </div>
         </div>
       )}
     </div>
+  )
+}
+
+function StepLabel({ n, label }: { n: number; label: string }) {
+  return (
+    <p className="flex items-center gap-2 text-sm font-bold">
+      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary text-xs text-primary-foreground">{n}</span>
+      {label}
+    </p>
   )
 }

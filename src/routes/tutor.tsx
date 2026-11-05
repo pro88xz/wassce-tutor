@@ -21,7 +21,8 @@ import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { checkAccess } from '@/lib/access'
 import { supabase } from '@/lib/supabase'
-import { Button } from '@/components/ui/button'
+import { Sparkles } from 'lucide-react'
+import { SubjectIcon } from '@/lib/subject-theme'
 
 export const Route = createFileRoute('/tutor')({
   head: privateHead('AI Tutor'),
@@ -35,27 +36,14 @@ type Message = {
   created_at: string
 }
 
-// Sparkle-graduation-cap hybrid: signals AI + learning
+// Brand-gradient avatar with a sparkle: signals AI + learning
 function TutorAvatar({ size = 32 }: { size?: number }) {
   return (
     <div
-      className="flex shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary/70 text-primary-foreground shadow-sm"
+      className="flex shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 via-violet-600 to-fuchsia-600 text-white shadow-md shadow-violet-500/20"
       style={{ width: size, height: size }}
     >
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={2}
-        className="h-4 w-4"
-      >
-        {/* Graduation cap */}
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M12 4L2 8l10 4 10-4-10-4z M6 10v5c0 1 2.5 2 6 2s6-1 6-2v-5"
-        />
-      </svg>
+      <Sparkles style={{ width: size * 0.5, height: size * 0.5 }} aria-hidden />
     </div>
   )
 }
@@ -105,26 +93,35 @@ function TutorPage() {
 
   if (!allowed) {
     return (
-      <div className="mx-auto max-w-md space-y-6 pt-8 text-center">
-        <TutorAvatar size={56} />
+      <div className="mx-auto max-w-md space-y-6 pt-6 text-center">
+        <div className="mx-auto w-fit"><TutorAvatar size={64} /></div>
         <div className="space-y-2">
-          <h1 className="text-2xl font-bold">Meet your Tutor</h1>
+          <h1 className="text-3xl font-black tracking-tight">Meet your AI Tutor</h1>
           <p className="text-muted-foreground">
-            Stuck on a question? Ask anything — your tutor explains step-by-step, in plain English, any time of day.
+            Stuck on a question? Ask anything. Your tutor explains step by step, in plain English, any time of day.
           </p>
         </div>
-        <div className="rounded-2xl border bg-card p-5 space-y-2 text-left text-sm">
-          <p className="font-semibold">Examples you can ask:</p>
-          <p className="text-muted-foreground">• &ldquo;Explain photosynthesis simply&rdquo;</p>
-          <p className="text-muted-foreground">• &ldquo;Walk me through solving 2x + 5 = 17&rdquo;</p>
-          <p className="text-muted-foreground">• &ldquo;Difference between mitosis and meiosis?&rdquo;</p>
+        <div className="space-y-2 text-left">
+          {[
+            { slug: 'biology', text: 'Explain photosynthesis simply' },
+            { slug: 'mathematics', text: 'Walk me through solving 2x + 5 = 17' },
+            { slug: 'biology', text: "What's the difference between mitosis and meiosis?" },
+          ].map((p) => (
+            <div key={p.text} className="flex items-center gap-3 rounded-2xl border bg-card px-4 py-3 text-sm font-medium shadow-sm">
+              <SubjectIcon slug={p.slug} size="sm" />
+              <span>&ldquo;{p.text}&rdquo;</span>
+            </div>
+          ))}
         </div>
-        <p className="text-sm text-muted-foreground">
-          Tutor unlocks with any subscription — plans start at 25 NLe / month.
-        </p>
-        <Link to="/subscribe" className="block">
-          <Button className="h-12 w-full">Subscribe to unlock Tutor</Button>
-        </Link>
+        <div className="space-y-2">
+          <Link
+            to="/subscribe"
+            className="flex h-12 w-full items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-violet-600 text-base font-bold text-white shadow-md transition hover:shadow-lg"
+          >
+            Unlock the AI Tutor
+          </Link>
+          <p className="text-xs text-muted-foreground">Included in every plan, from 25 NLe / month.</p>
+        </div>
       </div>
     )
   }
@@ -189,9 +186,9 @@ function TutorPage() {
       >
         <TutorAvatar size={36} />
         <div className="min-w-0 flex-1">
-          <p className="font-bold leading-tight">Tutor</p>
+          <p className="font-black leading-tight tracking-tight">AI Tutor</p>
           <p className="text-xs text-muted-foreground leading-tight">
-            Your WASSCE study companion
+            Ask anything from your WASSCE subjects
           </p>
         </div>
         {remaining !== null && (
@@ -206,71 +203,62 @@ function TutorPage() {
         {!historyLoaded ? (
           <p className="pt-8 text-center text-sm text-muted-foreground">Loading…</p>
         ) : messages.length === 0 ? (
-          <div className="mx-auto max-w-md px-5 pt-12 text-center space-y-6">
-            <TutorAvatar size={56} />
+          <div className="mx-auto max-w-md space-y-6 px-5 pt-10 text-center">
+            <div className="mx-auto w-fit"><TutorAvatar size={64} /></div>
             <div className="space-y-2">
-              <h2 className="text-xl font-bold">How can I help you today?</h2>
+              <h2 className="text-2xl font-black tracking-tight">How can I help you today?</h2>
               <p className="text-sm text-muted-foreground">
-                Ask about any subject in your faculty, any topic, any difficulty.
+                Ask about any subject or topic. I&rsquo;ll explain step by step, the way WAEC expects.
               </p>
             </div>
             <div className="space-y-2 text-left">
               {[
-                { icon: '⚛️', text: 'Explain the structure of the atom' },
-                { icon: '📐', text: 'Walk me through finding the area of a circle' },
-                { icon: '📜', text: 'What caused the trans-Atlantic slave trade?' },
+                { slug: 'physics', text: 'Explain the structure of the atom' },
+                { slug: 'mathematics', text: 'Walk me through finding the area of a circle' },
+                { slug: 'history', text: 'What caused the trans-Atlantic slave trade?' },
+                { slug: 'english-language', text: 'How do I write a good WASSCE essay introduction?' },
               ].map((p) => (
                 <button
                   key={p.text}
+                  type="button"
                   onClick={() => sendMessage(p.text)}
-                  className="flex w-full items-center gap-3 rounded-xl border bg-card px-4 py-3 text-left text-sm transition hover:border-primary hover:bg-primary/5"
+                  className="flex w-full items-center gap-3 rounded-2xl border bg-card px-4 py-3 text-left text-sm font-medium shadow-sm transition hover:border-primary/40 hover:shadow-md"
                 >
-                  <span className="text-lg">{p.icon}</span>
+                  <SubjectIcon slug={p.slug} size="sm" />
                   <span>{p.text}</span>
                 </button>
               ))}
             </div>
           </div>
         ) : (
-          messages.map((m) => {
-            const isUser = m.role === 'user'
-            return (
-              <div
-                key={m.id}
-                className={`w-full px-5 py-4 ${isUser ? '' : 'bg-muted/30'}`}
-              >
-                <div className="mx-auto max-w-3xl flex gap-3">
-                  {isUser ? (
-                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-muted text-xs font-bold">
-                      You
+          <div className="mx-auto max-w-3xl space-y-4 px-4 py-5">
+            {messages.map((m) =>
+              m.role === 'user' ? (
+                <div key={m.id} className="flex justify-end">
+                  <p className="max-w-[85%] whitespace-pre-wrap rounded-3xl rounded-br-lg bg-gradient-to-br from-blue-600 to-violet-600 px-4 py-2.5 text-sm leading-relaxed text-white shadow-sm">
+                    {m.content}
+                  </p>
+                </div>
+              ) : (
+                <div key={m.id} className="flex gap-2.5">
+                  <TutorAvatar size={30} />
+                  <div className="min-w-0 max-w-[90%] rounded-3xl rounded-tl-lg border bg-card px-4 py-3 shadow-sm">
+                    <div className="prose prose-sm prose-slate dark:prose-invert max-w-none prose-p:my-1.5 prose-pre:my-2 prose-headings:my-2 prose-ol:my-1.5 prose-ul:my-1.5 prose-li:my-0.5">
+                      <Suspense fallback={<p className="whitespace-pre-wrap text-sm">{m.content}</p>}>
+                        <MarkdownView content={m.content} />
+                      </Suspense>
                     </div>
-                  ) : (
-                    <TutorAvatar />
-                  )}
-                  <div className="min-w-0 flex-1 pt-0.5">
-                    <p className="mb-1 text-xs font-semibold text-muted-foreground">
-                      {isUser ? 'You' : 'Tutor'}
-                    </p>
-                    {isUser ? (
-                      <p className="whitespace-pre-wrap text-sm leading-relaxed">{m.content}</p>
-                    ) : (
-                      <div className="prose prose-sm prose-slate dark:prose-invert max-w-none prose-p:my-1.5 prose-pre:my-2 prose-headings:my-2 prose-ol:my-1.5 prose-ul:my-1.5 prose-li:my-0.5">
-                        <Suspense fallback={<p className="text-sm whitespace-pre-wrap">{m.content}</p>}>
-                          <MarkdownView content={m.content} />
-                        </Suspense>
-                      </div>
-                    )}
                   </div>
                 </div>
-              </div>
-            )
-          })
+              ),
+            )}
+          </div>
         )}
         {sending && (
-          <div className="w-full bg-muted/30 px-5 py-4">
-            <div className="mx-auto max-w-3xl flex gap-3">
-              <TutorAvatar />
-              <div className="flex items-center pt-2 gap-1">
+          <div className="w-full px-4 pb-4">
+            <div className="mx-auto flex max-w-3xl gap-2.5">
+              <TutorAvatar size={30} />
+              <div className="flex items-center gap-1 rounded-3xl rounded-tl-lg border bg-card px-4 py-3">
                 <span className="h-2 w-2 animate-bounce rounded-full bg-muted-foreground [animation-delay:0ms]" />
                 <span className="h-2 w-2 animate-bounce rounded-full bg-muted-foreground [animation-delay:150ms]" />
                 <span className="h-2 w-2 animate-bounce rounded-full bg-muted-foreground [animation-delay:300ms]" />
@@ -304,7 +292,7 @@ function TutorPage() {
           <button
             onClick={() => sendMessage()}
             disabled={sending || !input.trim()}
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground transition disabled:opacity-30 hover:opacity-90"
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-violet-600 text-white shadow-sm transition disabled:opacity-30 hover:opacity-90"
             aria-label="Send"
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.4} className="h-4 w-4">

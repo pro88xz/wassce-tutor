@@ -2,7 +2,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { privateHead } from '@/lib/seo'
 import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
-import { Button } from '@/components/ui/button'
+import { KeyRound } from 'lucide-react'
 
 export const Route = createFileRoute('/reset-password')({
   head: privateHead('Reset password'),
@@ -56,41 +56,47 @@ function ResetPasswordPage() {
     }
   }
 
+  const field = 'h-12 w-full rounded-xl border bg-background px-4 text-base outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20'
   return (
-    <div className="min-h-[80vh] flex items-center justify-center px-4">
+    <div className="flex min-h-[80vh] items-center justify-center px-1 py-6">
       <div className="w-full max-w-sm space-y-6">
-        <div className="text-center space-y-2">
-          <h1 className="text-2xl font-bold">Set a new password</h1>
-          <p className="text-sm text-muted-foreground">
-            Pick something you'll remember this time.
-          </p>
+        <div className="space-y-3 text-center">
+          <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 via-violet-600 to-fuchsia-600 text-white shadow-lg shadow-violet-500/20">
+            <KeyRound className="h-7 w-7" aria-hidden />
+          </span>
+          <h1 className="text-3xl font-black tracking-tight">Set a new password</h1>
+          <p className="text-sm text-muted-foreground">Pick something you&rsquo;ll remember this time.</p>
         </div>
 
         {!ready ? (
-          <p className="text-center text-sm text-muted-foreground">
-            Verifying reset link… If nothing happens after a few seconds, the link may have expired.
+          <p className="rounded-2xl bg-muted/60 p-4 text-center text-sm text-muted-foreground">
+            Checking your reset link… If nothing happens after a few seconds, the link may have expired.
           </p>
         ) : (
-          <div className="space-y-3">
-            <input
-              className="w-full rounded-md border bg-background px-3 py-2 text-sm"
-              type="password"
-              placeholder="New password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <input
-              className="w-full rounded-md border bg-background px-3 py-2 text-sm"
-              type="password"
-              placeholder="Confirm new password"
-              value={confirmPassword}
-              onChange={(e) => setConfirmPassword(e.target.value)}
-            />
-            {error && <p className="text-sm text-red-500">{error}</p>}
-            <Button className="w-full" onClick={handleSubmit} disabled={loading}>
+          <form
+            className="space-y-3"
+            onSubmit={(e) => {
+              e.preventDefault()
+              handleSubmit()
+            }}
+          >
+            <label className="block space-y-1.5">
+              <span className="text-sm font-semibold">New password</span>
+              <input className={field} type="password" autoComplete="new-password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            </label>
+            <label className="block space-y-1.5">
+              <span className="text-sm font-semibold">Confirm new password</span>
+              <input className={field} type="password" autoComplete="new-password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
+            </label>
+            {error && <p role="alert" className="rounded-xl bg-red-500/10 px-3 py-2 text-sm text-red-700 dark:text-red-400">{error}</p>}
+            <button
+              type="submit"
+              disabled={loading}
+              className="h-12 w-full rounded-xl bg-gradient-to-br from-blue-600 to-violet-600 text-base font-bold text-white shadow-md transition hover:shadow-lg disabled:opacity-60"
+            >
               {loading ? 'Saving…' : 'Update password'}
-            </Button>
-          </div>
+            </button>
+          </form>
         )}
       </div>
     </div>

@@ -5,6 +5,7 @@ import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { supabase } from '@/lib/supabase'
 import { Button } from '@/components/ui/button'
+import { Check, CircleCheck, Sparkles } from 'lucide-react'
 
 export const Route = createFileRoute('/subscribe')({
   head: privateHead('Choose a plan'),
@@ -196,23 +197,32 @@ function SubscribePage() {
 
   return (
     <div className="mx-auto max-w-md space-y-6 pb-8">
-      <header className="text-center space-y-1">
+      <header className="space-y-3 text-center">
+        <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 via-violet-600 to-fuchsia-600 text-white shadow-lg shadow-violet-500/20">
+          <Sparkles className="h-7 w-7" aria-hidden />
+        </span>
         <h1 className="text-3xl font-black tracking-tight">Choose your plan</h1>
-        <p className="text-sm text-muted-foreground">All plans unlock every subject, paper, and your AI tutor.</p>
+        <p className="text-sm text-muted-foreground">Every plan unlocks every subject, every paper and your AI tutor.</p>
       </header>
 
-      <div className="space-y-3">
+      <div role="radiogroup" aria-label="Plans" className="space-y-3">
         {PLANS.map((p) => {
           const active = selected === p.id
           return (
             <button
               key={p.id}
+              type="button"
+              role="radio"
+              aria-checked={active}
               onClick={() => setSelected(p.id)}
-              className={`w-full text-left rounded-2xl border-2 bg-card p-5 transition ${
-                active ? 'border-primary shadow-lg shadow-primary/10' : 'border-transparent'
+              className={`w-full rounded-3xl bg-card p-5 text-left ring-1 transition ${
+                active ? 'ring-2 ring-primary shadow-lg shadow-primary/10' : 'ring-border hover:ring-primary/40'
               }`}
             >
               <div className="flex items-start justify-between gap-3">
+                <span className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 ${active ? 'border-primary bg-primary text-primary-foreground' : 'border-muted-foreground/30'}`}>
+                  {active && <Check className="h-4 w-4" aria-hidden />}
+                </span>
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-2 mb-1">
                     <p className="font-bold">{p.name}</p>
@@ -230,7 +240,7 @@ function SubscribePage() {
                   )}
                 </div>
                 <div className="shrink-0 text-right">
-                  <p className="text-2xl font-black leading-none">{p.amount}</p>
+                  <p className="text-3xl font-black leading-none tracking-tight">{p.amount}<span className="ml-1 text-sm font-semibold text-muted-foreground">NLe</span></p>
                   <p className="text-xs text-muted-foreground">{p.period}</p>
                 </div>
               </div>
@@ -274,29 +284,46 @@ function SubscribePage() {
           </p>
         </div>
       ) : (
-        <div className="rounded-2xl border bg-card p-4 space-y-2 text-sm">
-          <p className="font-semibold">How it works:</p>
-          <ol className="space-y-1.5 text-muted-foreground">
-            <li>1. Tap <span className="font-semibold text-foreground">Pay on WhatsApp</span> below</li>
-            <li>2. WhatsApp opens with your details pre-filled &mdash; just tap send</li>
-            <li>3. We&rsquo;ll reply with Orange Money / AfriMoney details</li>
-            <li>4. Send payment &rarr; we activate your account, usually within an hour</li>
-          </ol>
+        <div className="space-y-4">
+          <ul className="grid grid-cols-2 gap-2 text-sm">
+            {['Every subject', 'Every past paper', 'AI tutor', 'Progress tracking'].map((t) => (
+              <li key={t} className="flex items-center gap-2 rounded-2xl bg-muted/50 px-3 py-2.5 font-medium">
+                <CircleCheck className="h-4 w-4 shrink-0 text-emerald-500" aria-hidden /> {t}
+              </li>
+            ))}
+          </ul>
+          <div className="space-y-3 rounded-3xl border bg-card p-5 text-sm">
+            <p className="font-bold">How paying works</p>
+            <ol className="space-y-2.5">
+              {[
+                <>Tap <span className="font-semibold">Pay on WhatsApp</span> below</>,
+                <>WhatsApp opens with your details filled in. Just tap send</>,
+                <>We reply with Orange Money / AfriMoney details</>,
+                <>Send the payment. We switch your plan on, usually within an hour</>,
+              ].map((step, i) => (
+                <li key={i} className="flex gap-3 text-muted-foreground">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary">{i + 1}</span>
+                  <span>{step}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
       )}
 
       {error && <p className="text-center text-sm text-red-500">{error}</p>}
 
-      <Button
+      <button
+        type="button"
         onClick={proceedToWhatsApp}
         disabled={submitting || isLocked}
-        className="h-12 w-full text-base inline-flex items-center justify-center gap-2"
+        className="inline-flex h-14 w-full items-center justify-center gap-2 rounded-2xl bg-[#25D366] text-base font-bold text-white shadow-md shadow-emerald-600/20 transition hover:brightness-95 disabled:opacity-60"
       >
         <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
           <path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.5.2-.7.2-1.4.2-1.5-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.7.5 3.4 1.3 4.9L2 22l5.2-1.3c1.5.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/>
         </svg>
         {isLocked ? `Try again in ${remainingMin}:${String(remainingSec).padStart(2, "0")}` : submitting ? "Opening WhatsApp…" : `Pay ${plan.amount} NLe on WhatsApp`}
-      </Button>
+      </button>
 
       <button
         onClick={() => navigate({ to: '/' })}

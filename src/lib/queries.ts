@@ -271,3 +271,29 @@ export function useLesson(lessonId: string | null) {
     },
   })
 }
+
+// Paper header details: title, year, type and its subject (for colours and links)
+export type PaperMeta = {
+  id: string
+  title: string
+  year: number | null
+  paper_type: string | null
+  description: string | null
+  subject: { id: string; slug: string; name: string } | null
+}
+
+export function usePaperMeta(paperId: string | null) {
+  return useQuery({
+    queryKey: ['paper-meta', paperId],
+    enabled: !!paperId,
+    queryFn: async (): Promise<PaperMeta | null> => {
+      const { data, error } = await supabase
+        .from('papers')
+        .select('id, title, year, paper_type, description, subject:subjects(id, slug, name)')
+        .eq('id', paperId!)
+        .maybeSingle()
+      if (error) throw error
+      return data as unknown as PaperMeta | null
+    },
+  })
+}
