@@ -10,6 +10,7 @@ import { UpdateBanner } from '@/components/UpdateBanner'
 
 export const Route = createFileRoute('/')({
   head: publicHead('/'),
+  ssr: true, // prerendered to static HTML at build time
   component: Index,
 })
 
@@ -43,19 +44,19 @@ function Index() {
   }, [loading, user, navigate])
 
 
-  // Auth still restoring from storage — show a quick spinner, no landing flash.
-  if (loading) {
-    return (
-      <div className="flex min-h-[80vh] items-center justify-center">
-        <div className="h-10 w-10 animate-spin rounded-full border-4 border-muted border-t-primary" />
-      </div>
-    )
-  }
-
-  // NOT SIGNED IN — landing
+  // NOT SIGNED IN (or auth still restoring) — landing.
+  // This branch is what gets prerendered to static HTML for search engines, so
+  // it must not depend on auth state. Visitors with a stored session, and the
+  // Android app, see the boot spinner instead until auth resolves: the inline
+  // boot script in __root.tsx sets a class on <html> and CSS in index.css
+  // swaps [data-landing] for [data-boot-spinner].
   if (!user) {
     return (
       <>
+        <div data-boot-spinner className="min-h-[80vh] items-center justify-center" aria-hidden>
+          <div className="h-10 w-10 animate-spin rounded-full border-4 border-muted border-t-primary" />
+        </div>
+        <div data-landing>
         {/* HERO - Animated gradient with depth (full-bleed) */}
         <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mt-6 mb-0 overflow-hidden">
           {/* Base gradient layer */}
@@ -213,6 +214,7 @@ function Index() {
             <DownloadButton />
           </div>
         </section>
+        </div>
         </div>
       </>
     )

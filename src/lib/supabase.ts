@@ -7,10 +7,15 @@ if (!supabaseUrl || !supabaseAnonKey) {
   throw new Error('Missing Supabase environment variables. Check your .env file.')
 }
 
+// This module is also loaded on the server while public pages are prerendered
+// at build time. Session persistence and the token-refresh timer are
+// browser-only: on the server the timer would keep the build process alive.
+const isBrowser = typeof window !== 'undefined'
+
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   auth: {
-    persistSession: true,
-    autoRefreshToken: true,
-    detectSessionInUrl: true,
+    persistSession: isBrowser,
+    autoRefreshToken: isBrowser,
+    detectSessionInUrl: isBrowser,
   },
 })

@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useState } from 'react'
 import type { ReactNode } from 'react'
 import type { Session, User } from '@supabase/supabase-js'
+import { Capacitor } from '@capacitor/core'
 import { supabase } from '@/lib/supabase'
 import { clearUnlocked } from '@/lib/adminGate'
 
@@ -22,6 +23,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     supabase.auth.getSession().then(({ data }) => {
       setSession(data.session)
       setLoading(false)
+      // Session check done: stop hiding the prerendered landing page
+      // (see BOOT_SCRIPT in routes/__root.tsx). Outside the Android app also
+      // drop "native-app", in case the boot script misdetected the platform.
+      document.documentElement.classList.remove('app-boot')
+      if (!Capacitor.isNativePlatform()) document.documentElement.classList.remove('native-app')
     })
 
     // Listen for auth changes (login, logout, token refresh)

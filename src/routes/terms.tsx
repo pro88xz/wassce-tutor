@@ -3,6 +3,7 @@ import { publicHead } from '@/lib/seo'
 
 export const Route = createFileRoute('/terms')({
   head: publicHead('/terms'),
+  ssr: true, // prerendered to static HTML at build time
   component: Terms,
 })
 

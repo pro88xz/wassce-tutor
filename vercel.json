@@ -1,13 +1,13 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/client",
+  "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/about", "destination": "/about.html" },
-    { "source": "/privacy", "destination": "/privacy.html" },
-    { "source": "/terms", "destination": "/terms.html" },
-    { "source": "/(auth|subjects|tutor|profile|progress|onboarding|subscribe|reset-password|admin)", "destination": "/spa.html" },
-    { "source": "/(subject|topic|lesson|paper)/:id", "destination": "/spa.html" },
-    { "source": "/admin/:path*", "destination": "/spa.html" }
+    { "source": "/(auth|subjects|tutor|profile|progress|onboarding|subscribe|reset-password|admin)", "destination": "/_shell" },
+    { "source": "/(subject|topic|lesson|paper)/:id", "destination": "/_shell" },
+    { "source": "/admin/:path*", "destination": "/_shell" }
   ],
   "headers": [
     {
@@ -23,7 +23,7 @@
       "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
     },
     {
-      "source": "/(spa|404).html",
+      "source": "/(_shell|404|pages)(.*)",
       "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
     }
   ]

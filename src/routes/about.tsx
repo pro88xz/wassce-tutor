@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 
 export const Route = createFileRoute('/about')({
   head: publicHead('/about'),
+  ssr: true, // prerendered to static HTML at build time
   component: About,
 })
 

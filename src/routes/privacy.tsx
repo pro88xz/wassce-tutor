@@ -3,6 +3,7 @@ import { publicHead } from '@/lib/seo'
 
 export const Route = createFileRoute('/privacy')({
   head: publicHead('/privacy'),
+  ssr: true, // prerendered to static HTML at build time
   component: Privacy,
 })
 

@@ -130,6 +130,16 @@
 }@plugin "@tailwindcss/typography";
 /* KaTeX CSS is loaded only by LessonView / MarkdownView, not on every page. */
 
+/* Homepage boot state (see BOOT_SCRIPT in src/routes/__root.tsx).
+ * The landing page is prerendered for search engines. Returning signed-in
+ * visitors (html.app-boot, until auth resolves) and the Android app
+ * (html.native-app) see a spinner in its place instead of a landing flash. */
+[data-boot-spinner] { display: none; }
+html.app-boot [data-boot-spinner],
+html.native-app [data-boot-spinner] { display: flex; }
+html.app-boot [data-landing],
+html.native-app [data-landing] { display: none; }
+
 /* ============================================================
  * Biology lesson content styling
  * Tables, callouts, and rich content for /lesson/$lessonId

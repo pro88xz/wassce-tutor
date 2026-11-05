@@ -2,37 +2,63 @@ import path from "path"
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
-import { tanstackRouter } from '@tanstack/router-plugin/vite'
+import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import pkg from './package.json'
-import { seoPages } from './scripts/vite-plugin-seo-pages'
+import { PUBLIC_PAGES, SITE } from './src/lib/seo'
 
 export default defineConfig({
   define: {
     __APP_VERSION__: JSON.stringify(pkg.version),
   },
   plugins: [
-    tanstackRouter({ target: 'react', autoCodeSplitting: true }),
+    tanstackStart({
+      // Static output only (no server at runtime): public pages are
+      // prerendered to HTML; everything else is a client-rendered SPA served
+      // from the shell (see vercel.json rewrites and scripts/postbuild.mjs).
+      spa: {
+        enabled: true,
+        // Rendered with a client-only route so the shell holds just the app
+        // frame (not a prerendered page). "/" can't be used: it is already a
+        // prerendered page, and Start renders each path once. Output: _shell.html
+        maskPath: '/subjects',
+      },
+      prerender: {
+        enabled: true,
+        autoStaticPathsDiscovery: false, // only the pages listed below
+        crawlLinks: false,
+        autoSubfolderIndex: false, // /about -> about.html (vercel.json cleanUrls)
+        failOnError: true,
+      },
+      pages: Object.entries(PUBLIC_PAGES).map(([p, page]) => ({
+        path: p,
+        prerender: { enabled: true },
+        sitemap: { lastmod: page.lastmod },
+      })),
+      sitemap: { enabled: true, host: SITE.origin },
+    }),
     react(),
     tailwindcss(),
-    seoPages(),
   ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  build: {
-    rollupOptions: {
-      output: {
-        // Long-lived vendor chunks only. Markdown/KaTeX and turndown are left to
-        // automatic splitting so they load with the lesson, paper, tutor and
-        // admin screens that use them, not on every page (grouping them here
-        // pulled ~125 KB gzip into the first load).
-        manualChunks: (id: string) => {
-          if (id.includes('node_modules')) {
-            if (/[\\/]node_modules[\\/](react|react-dom|scheduler)[\\/]/.test(id)) return 'react'
-            if (id.includes('@supabase')) return 'supabase'
-          }
+  environments: {
+    client: {
+      build: {
+        rollupOptions: {
+          output: {
+            // Long-lived vendor chunks only. Markdown/KaTeX and turndown are left to
+            // automatic splitting so they load with the lesson, paper, tutor and
+            // admin screens that use them, not on every page.
+            manualChunks: (id: string) => {
+              if (id.includes('node_modules')) {
+                if (/[\\/]node_modules[\\/](react|react-dom|scheduler)[\\/]/.test(id)) return 'react'
+                if (id.includes('@supabase')) return 'supabase'
+              }
+            },
+          },
         },
       },
     },

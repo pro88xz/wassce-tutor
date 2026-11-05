@@ -3,7 +3,7 @@ import type { CapacitorConfig } from '@capacitor/cli'
 const config: CapacitorConfig = {
   appId: 'com.wasscetutor.app',
   appName: 'WASSCE Tutor',
-  webDir: 'dist',
+  webDir: 'dist/client', // TanStack Start client build (see scripts/postbuild.mjs)
   backgroundColor: '#fafbff',
   plugins: {
     SplashScreen: {
