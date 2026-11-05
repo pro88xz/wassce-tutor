@@ -1,4 +1,5 @@
 import { createFileRoute, Link, Outlet, useLocation } from '@tanstack/react-router'
+import { BadgeCheck, BookOpen, Download, FileText, FileUp, Layers, ListChecks, ShieldCheck, Upload, Wallet } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { useEffect, useState } from 'react'
 import { useAuth } from '@/lib/auth'
@@ -72,7 +73,8 @@ function AdminPage() {
     return (
       <div className="mx-auto max-w-sm space-y-5 pt-8">
         <div className="text-center space-y-1">
-          <h1 className="text-2xl font-bold">Admin access</h1>
+          <span className="mx-auto mb-2 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-violet-600 text-white shadow-lg"><ShieldCheck className="h-7 w-7" aria-hidden /></span>
+          <h1 className="text-3xl font-black tracking-tight">Admin access</h1>
           <p className="text-sm text-muted-foreground">Confirm your password to continue.</p>
         </div>
         <input
@@ -80,7 +82,7 @@ function AdminPage() {
           placeholder="Your password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full rounded-md border bg-background px-3 py-2 text-sm"
+          className="h-12 w-full rounded-xl border bg-background px-4 text-base outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
           onKeyDown={(e) => e.key === 'Enter' && submit()}
         />
         {message && <p className="text-sm text-red-500">{message}</p>}
@@ -101,7 +103,7 @@ function AdminPage() {
         <div className="flex items-center justify-between">
           <div>
             <p className="text-xs uppercase tracking-wide text-muted-foreground">Admin</p>
-            <h1 className="text-2xl font-bold">Content management</h1>
+            <h1 className="text-3xl font-black tracking-tight">Content management</h1>
           </div>
           <Link to="/"><Button variant="outline" size="sm">Back</Button></Link>
         </div>
@@ -111,8 +113,9 @@ function AdminPage() {
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         <Link
           to="/admin/topics"
-          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+          className="rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md"
         >
+          <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><Layers className="h-5 w-5" aria-hidden /></span>
           <h2 className="font-bold">Topics</h2>
           <p className="mt-1 text-sm text-muted-foreground">Create and manage topics by subject.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
@@ -121,30 +124,34 @@ function AdminPage() {
           to="/admin/review"
           className="rounded-2xl border border-primary/40 bg-primary/5 p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
         >
+          <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><BadgeCheck className="h-5 w-5" aria-hidden /></span>
           <h2 className="font-bold">Review lessons</h2>
           <p className="mt-1 text-sm text-muted-foreground">Check lessons and approve them as free public pages with your name.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
         </Link>
         <Link
           to="/admin/lessons"
-          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+          className="rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md"
         >
+          <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><BookOpen className="h-5 w-5" aria-hidden /></span>
           <h2 className="font-bold">Lessons</h2>
           <p className="mt-1 text-sm text-muted-foreground">Add lessons under topics.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
         </Link>
         <Link
           to="/admin/papers"
-          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+          className="rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md"
         >
+          <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><FileText className="h-5 w-5" aria-hidden /></span>
           <h2 className="font-bold">Papers</h2>
           <p className="mt-1 text-sm text-muted-foreground">Create practice papers and exams.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
         </Link>
         <Link
           to="/admin/questions"
-          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+          className="rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md"
         >
+          <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><ListChecks className="h-5 w-5" aria-hidden /></span>
           <h2 className="font-bold">Questions</h2>
           <p className="mt-1 text-sm text-muted-foreground">Add questions with options.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
@@ -152,8 +159,9 @@ function AdminPage() {
 
         <Link
           to="/admin/import"
-          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+          className="rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md"
         >
+          <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><Upload className="h-5 w-5" aria-hidden /></span>
           <h2 className="font-bold">Bulk Import Topics</h2>
           <p className="mt-1 text-sm text-muted-foreground">Paste JSON to import topics in bulk.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
@@ -161,8 +169,9 @@ function AdminPage() {
 
         <Link
           to="/admin/import-lessons"
-          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+          className="rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md"
         >
+          <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><FileUp className="h-5 w-5" aria-hidden /></span>
           <h2 className="font-bold">Bulk Import Lessons</h2>
           <p className="mt-1 text-sm text-muted-foreground">Paste JSON to import lessons in bulk.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
@@ -170,8 +179,9 @@ function AdminPage() {
 
         <Link
           to="/admin/payments"
-          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+          className="rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md"
         >
+          <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><Wallet className="h-5 w-5" aria-hidden /></span>
           <h2 className="font-bold">Payments</h2>
           <p className="mt-1 text-sm text-muted-foreground">Activate pending subscriptions, view history.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
@@ -179,8 +189,9 @@ function AdminPage() {
 
         <Link
           to="/admin/downloads"
-          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+          className="rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md"
         >
+          <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><Download className="h-5 w-5" aria-hidden /></span>
           <h2 className="font-bold">Downloads</h2>
           <p className="mt-1 text-sm text-muted-foreground">APK download tracking, live updates.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
