@@ -11,6 +11,7 @@ async function loadPlugins() {
   const [rm, rk] = await Promise.all([
     import('remark-math'),
     import('rehype-katex'),
+    import('katex/dist/katex.min.css'),
   ])
   plugins = { remark: rm.default, rehype: rk.default }
   return plugins

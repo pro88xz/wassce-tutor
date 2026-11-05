@@ -1,8 +1,10 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
+import { privateHead } from '@/lib/seo'
 import { useAuth } from '@/lib/auth'
 import { useStudentSubjects } from '@/lib/queries'
 
 export const Route = createFileRoute('/subjects')({
+  head: privateHead('Subjects'),
   component: SubjectsPage,
 })
 

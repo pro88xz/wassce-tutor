@@ -31,6 +31,21 @@ const DIAGRAMS: Record<DiagramName, () => ReactElement> = {
   'destarching-experiment': DestarchingExperiment,
 }
 
+// Accessible names, read out by screen readers in place of the SVG's loose text labels.
+const DIAGRAM_LABELS: Record<DiagramName, string> = {
+  'animal-cell': 'Labelled diagram of an animal cell',
+  'plant-cell': 'Labelled diagram of a plant cell',
+  'cell-membrane': 'Diagram of the cell membrane',
+  'mitochondrion-detailed': 'Labelled diagram of a mitochondrion',
+  'er-and-ribosomes': 'Diagram of the endoplasmic reticulum and ribosomes',
+  'mitosis-stages': 'Diagram of the stages of mitosis',
+  'meiosis-overview': 'Overview diagram of meiosis',
+  'leaf-cross-section': 'Labelled cross-section of a leaf',
+  'chloroplast-detailed': 'Labelled diagram of a chloroplast',
+  'limiting-factors-graph': 'Graph of limiting factors in photosynthesis',
+  'destarching-experiment': 'Diagram of the destarching experiment',
+}
+
 export function Diagram({ name }: { name: string }) {
   const D = DIAGRAMS[name as DiagramName]
   if (!D) {
@@ -42,7 +57,11 @@ export function Diagram({ name }: { name: string }) {
   }
   return (
     <figure className="my-6 not-prose">
-      <div className="rounded-2xl border bg-white p-4 dark:bg-slate-50">
+      <div
+        role="img"
+        aria-label={DIAGRAM_LABELS[name as DiagramName]}
+        className="rounded-2xl border bg-white p-4 dark:bg-slate-50"
+      >
         <D />
       </div>
     </figure>

@@ -1,8 +1,10 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { privateHead } from '@/lib/seo'
 import { useAuth } from '@/lib/auth'
 import { useAttempts } from '@/lib/queries'
 
 export const Route = createFileRoute('/progress')({
+  head: privateHead('Progress'),
   component: ProgressPage,
 })
 

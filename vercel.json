@@ -1,5 +1,30 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": false,
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/(auth|subjects|tutor|profile|progress|onboarding|subscribe|reset-password|admin)", "destination": "/spa.html" },
+    { "source": "/(subject|topic|lesson|paper)/:id", "destination": "/spa.html" },
+    { "source": "/admin/:path*", "destination": "/spa.html" }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/(auth|subjects|tutor|profile|progress|onboarding|subscribe|reset-password|admin|subject|topic|lesson|paper)",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    },
+    {
+      "source": "/(admin|subject|topic|lesson|paper)/:path*",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    },
+    {
+      "source": "/(spa|404).html",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    }
   ]
 }

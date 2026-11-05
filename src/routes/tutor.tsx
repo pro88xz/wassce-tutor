@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
+import { privateHead } from '@/lib/seo'
 import { useEffect, useRef, useState, lazy, Suspense } from 'react'
 // Lazy-loaded markdown stack — only fetched when AI starts answering
 const ReactMarkdown = lazy(() => import('react-markdown'))
@@ -10,6 +11,7 @@ async function ensureMarkdownPlugins() {
     const [rm, rk] = await Promise.all([
       import('remark-math'),
       import('rehype-katex'),
+      import('katex/dist/katex.min.css'),
     ])
     remarkMathPlugin = rm.default
     rehypeKatexPlugin = rk.default
@@ -22,6 +24,7 @@ import { supabase } from '@/lib/supabase'
 import { Button } from '@/components/ui/button'
 
 export const Route = createFileRoute('/tutor')({
+  head: privateHead('AI Tutor'),
   component: TutorPage,
 })
 

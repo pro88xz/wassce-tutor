@@ -1,32 +1,23 @@
 # WASSCE Tutor robots.txt
-# Allows crawling of public marketing pages only.
-# Paid content (lessons, papers, topics, subjects, tutor) is blocked from crawl
-# because it requires authentication and a paid subscription to access.
+#
+# Public pages (/, /about, /privacy, /terms) are crawlable and listed in the sitemap.
+# App screens are blocked: they need an account, and logged-out visitors (and
+# bots) would only see a sign-in prompt. /auth is crawlable on purpose so
+# search engines can read its "noindex" and drop it from results.
+# Never block /assets/: Google needs the JS and CSS to render pages.
 
 User-agent: *
-Allow: /
-Allow: /about
-Allow: /privacy
-Allow: /terms
-Allow: /auth
-
-# Block paid content paths (require login + subscription)
+Disallow: /subjects
+Disallow: /subject/
+Disallow: /topic/
 Disallow: /lesson/
 Disallow: /paper/
-Disallow: /topic/
-Disallow: /subject/
-Disallow: /subjects
 Disallow: /tutor
-
-# Block user-specific pages
 Disallow: /profile
 Disallow: /progress
 Disallow: /onboarding
 Disallow: /reset-password
 Disallow: /subscribe
-
-# Block all admin pages
 Disallow: /admin
-Disallow: /admin/
 
 Sitemap: https://wasscetutor.com/sitemap.xml

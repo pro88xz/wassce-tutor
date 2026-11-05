@@ -1,4 +1,5 @@
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
+import { privateHead } from '@/lib/seo'
 import { useState, useEffect } from 'react'
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
@@ -6,6 +7,7 @@ import { supabase } from '@/lib/supabase'
 import { Button } from '@/components/ui/button'
 
 export const Route = createFileRoute('/subscribe')({
+  head: privateHead('Choose a plan'),
   component: SubscribePage,
 })
 

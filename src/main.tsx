@@ -15,6 +15,12 @@ import './native.css'
 import { applyTheme, getTheme } from '@/lib/theme'
 applyTheme(getTheme())
 
+// The HTML file carries static title/description/canonical tags for crawlers
+// and link previews that don't run JavaScript. Remove them so the router's
+// <HeadContent /> (see __root.tsx) is the only source once the app runs;
+// otherwise the static <title> would shadow the per-route one.
+document.head.querySelectorAll('[data-page-meta]').forEach((el) => el.remove())
+
 const router = createRouter({ routeTree })
 
 // Android hardware back button: navigate within app, or exit at root.

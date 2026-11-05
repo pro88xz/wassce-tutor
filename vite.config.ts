@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { tanstackRouter } from '@tanstack/router-plugin/vite'
 import pkg from './package.json'
+import { seoPages } from './scripts/vite-plugin-seo-pages'
 
 export default defineConfig({
   define: {
@@ -13,6 +14,7 @@ export default defineConfig({
     tanstackRouter({ target: 'react', autoCodeSplitting: true }),
     react(),
     tailwindcss(),
+    seoPages(),
   ],
   resolve: {
     alias: {
@@ -22,12 +24,14 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
+        // Long-lived vendor chunks only. Markdown/KaTeX and turndown are left to
+        // automatic splitting so they load with the lesson, paper, tutor and
+        // admin screens that use them, not on every page (grouping them here
+        // pulled ~125 KB gzip into the first load).
         manualChunks: (id: string) => {
           if (id.includes('node_modules')) {
-            if (id.includes('react-dom') || id.includes('/react/')) return 'react'
+            if (/[\\/]node_modules[\\/](react|react-dom|scheduler)[\\/]/.test(id)) return 'react'
             if (id.includes('@supabase')) return 'supabase'
-            if (id.includes('react-markdown') || id.includes('remark-') || id.includes('rehype-') || id.includes('katex')) return 'markdown'
-            if (id.includes('turndown')) return 'turndown'
           }
         },
       },

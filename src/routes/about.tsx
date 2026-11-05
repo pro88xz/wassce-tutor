@@ -1,7 +1,9 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
+import { publicHead } from '@/lib/seo'
 import { Button } from '@/components/ui/button'
 
 export const Route = createFileRoute('/about')({
+  head: publicHead('/about'),
   component: About,
 })
 

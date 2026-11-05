@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
+import { publicHead } from '@/lib/seo'
 
 export const Route = createFileRoute('/terms')({
+  head: publicHead('/terms'),
   component: Terms,
 })
 

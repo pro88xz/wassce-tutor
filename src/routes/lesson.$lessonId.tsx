@@ -1,9 +1,11 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
+import { privateHead } from '@/lib/seo'
 import { AccessGate } from '@/components/AccessGate'
 import { useLesson } from '@/lib/queries'
 import { LessonView } from '@/components/LessonView'
 
 export const Route = createFileRoute('/lesson/$lessonId')({
+  head: privateHead('Lesson'),
   component: LessonPage,
 })
 

@@ -1,9 +1,11 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { privateHead } from '@/lib/seo'
 import { useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { Button } from '@/components/ui/button'
 
 export const Route = createFileRoute('/auth')({
+  head: privateHead('Sign in'),
   component: AuthPage,
 })
 

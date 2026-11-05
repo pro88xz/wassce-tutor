@@ -1,4 +1,5 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
+import { privateHead } from '@/lib/seo'
 import { AccessGate } from '@/components/AccessGate'
 import { useState } from 'react'
 import { usePaper } from '@/lib/queries'
@@ -8,6 +9,7 @@ import { Button } from '@/components/ui/button'
 import { MarkdownView } from '@/components/MarkdownView'
 
 export const Route = createFileRoute('/paper/$paperId')({
+  head: privateHead('Past paper'),
   component: PaperPage,
 })
 

@@ -1,4 +1,5 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { privateHead } from '@/lib/seo'
 import { useEffect, useState } from 'react'
 import { useFaculties, useFacultySubjects } from '@/lib/queries'
 import { useSaveOnboarding } from '@/lib/mutations'
@@ -6,6 +7,7 @@ import { useAuth } from '@/lib/auth'
 import { Button } from '@/components/ui/button'
 
 export const Route = createFileRoute('/onboarding')({
+  head: privateHead('Get started'),
   component: Onboarding,
 })
 

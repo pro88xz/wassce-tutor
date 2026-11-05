@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
+import { publicHead } from '@/lib/seo'
 
 export const Route = createFileRoute('/privacy')({
+  head: publicHead('/privacy'),
   component: Privacy,
 })
 

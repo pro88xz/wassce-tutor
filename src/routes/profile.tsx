@@ -1,4 +1,5 @@
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
+import { privateHead } from '@/lib/seo'
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { Button } from '@/components/ui/button'
@@ -7,6 +8,7 @@ import { fetchLatestVersion, getInstalledVersion, isNewerVersion } from '@/lib/v
 import { useState } from 'react'
 
 export const Route = createFileRoute('/profile')({
+  head: privateHead('Profile'),
   component: ProfilePage,
 })
 

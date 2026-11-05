@@ -1,4 +1,5 @@
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
+import { publicHead } from '@/lib/seo'
 import { useEffect, useState } from 'react'
 import { Capacitor } from '@capacitor/core'
 import { useAuth } from '@/lib/auth'
@@ -8,6 +9,7 @@ import { Button } from '@/components/ui/button'
 import { UpdateBanner } from '@/components/UpdateBanner'
 
 export const Route = createFileRoute('/')({
+  head: publicHead('/'),
   component: Index,
 })
 

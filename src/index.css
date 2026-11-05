@@ -128,7 +128,7 @@
     @apply font-sans;
     }
 }@plugin "@tailwindcss/typography";
-@import "katex/dist/katex.min.css";
+/* KaTeX CSS is loaded only by LessonView / MarkdownView, not on every page. */
 
 /* ============================================================
  * Biology lesson content styling

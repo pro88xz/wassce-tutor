@@ -1,9 +1,11 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { privateHead } from '@/lib/seo'
 import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { Button } from '@/components/ui/button'
 
 export const Route = createFileRoute('/reset-password')({
+  head: privateHead('Reset password'),
   component: ResetPasswordPage,
 })
 

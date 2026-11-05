@@ -1,4 +1,5 @@
 import { createFileRoute, Link, Outlet, useLocation } from '@tanstack/react-router'
+import { privateHead } from '@/lib/seo'
 import { useEffect, useState } from 'react'
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
@@ -6,6 +7,7 @@ import { Button } from '@/components/ui/button'
 import { isUnlockedThisSession, tryUnlock } from '@/lib/adminGate'
 
 export const Route = createFileRoute('/admin')({
+  head: privateHead('Admin'),
   component: AdminPage,
 })
 

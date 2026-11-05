@@ -1,8 +1,10 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
+import { privateHead } from '@/lib/seo'
 import { AccessGate } from '@/components/AccessGate'
 import { useTopic } from '@/lib/queries'
 
 export const Route = createFileRoute('/topic/$topicId')({
+  head: privateHead('Topic'),
   component: TopicPage,
 })
 
