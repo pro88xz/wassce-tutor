@@ -126,7 +126,7 @@ function AdminPage() {
         >
           <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><BadgeCheck className="h-5 w-5" aria-hidden /></span>
           <h2 className="font-bold">Review lessons</h2>
-          <p className="mt-1 text-sm text-muted-foreground">Check lessons and approve them as free public pages with your name.</p>
+          <p className="mt-1 text-sm text-muted-foreground">Approve lessons as free public pages, and practice question sets for students.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
         </Link>
         <Link

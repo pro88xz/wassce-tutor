@@ -145,3 +145,73 @@ export function useSaveByline() {
     onSuccess: (_d, vars) => qc.invalidateQueries({ queryKey: ['profile', vars.profileId] }),
   })
 }
+
+// ── Practice question sets ────────────────────────────────────────────────
+// Question sets are papers with paper_type 'Practice'. New sets arrive hidden
+// (is_published = false). A reviewer takes the set like a student, then
+// approves it: every question is stamped reviewed_at/reviewed_by and the set
+// becomes visible to students on the subject page.
+
+export type ReviewSet = {
+  id: string
+  title: string
+  is_published: boolean
+  question_count: number
+  sort_order: number
+  questions: { id: string; reviewed_at: string | null }[]
+}
+
+/** Practice sets of a subject, including hidden ones. */
+export function useReviewSets(subjectId: string | null) {
+  return useQuery({
+    queryKey: ['review-sets', subjectId],
+    enabled: !!subjectId,
+    queryFn: async (): Promise<ReviewSet[]> => {
+      const { data, error } = await supabase
+        .from('papers')
+        .select('id, title, is_published, question_count, sort_order, questions(id, reviewed_at)')
+        .eq('subject_id', subjectId!)
+        .eq('paper_type', 'Practice')
+        .order('sort_order')
+      if (error) throw error
+      return (data ?? []) as ReviewSet[]
+    },
+  })
+}
+
+function useInvalidateSets() {
+  const qc = useQueryClient()
+  return () => {
+    qc.invalidateQueries({ queryKey: ['review-sets'] })
+    qc.invalidateQueries({ queryKey: ['papers'] })
+  }
+}
+
+/** Approve a set: stamp every question as reviewed, then show the set to students. */
+export function useApproveSet() {
+  const invalidate = useInvalidateSets()
+  return useMutation({
+    mutationFn: async (args: { paperId: string; reviewerId: string }) => {
+      const { error: qErr } = await supabase
+        .from('questions')
+        .update({ reviewed_at: new Date().toISOString(), reviewed_by: args.reviewerId })
+        .eq('paper_id', args.paperId)
+      if (qErr) throw qErr
+      const { error } = await supabase.from('papers').update({ is_published: true }).eq('id', args.paperId)
+      if (error) throw error
+    },
+    onSuccess: invalidate,
+  })
+}
+
+/** Hide a set from students again (its review stamps are kept). */
+export function useHideSet() {
+  const invalidate = useInvalidateSets()
+  return useMutation({
+    mutationFn: async (paperId: string) => {
+      const { error } = await supabase.from('papers').update({ is_published: false }).eq('id', paperId)
+      if (error) throw error
+    },
+    onSuccess: invalidate,
+  })
+}

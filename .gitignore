@@ -33,3 +33,4 @@ android/keystores/
 *.jks
 android/key.properties
 public/wassce-tutor.apk
+__pycache__/

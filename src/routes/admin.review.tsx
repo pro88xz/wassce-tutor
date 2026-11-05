@@ -4,8 +4,8 @@ import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { supabase } from '@/lib/supabase'
 import { isUnlockedThisSession } from '@/lib/adminGate'
-import { useApproveLesson, useReviewLessons, useReviewTopics, useSaveByline, useSaveLesson, useUnpublishLesson } from '@/lib/review'
-import type { ReviewLesson } from '@/lib/review'
+import { useApproveLesson, useApproveSet, useHideSet, useReviewLessons, useReviewSets, useReviewTopics, useSaveByline, useSaveLesson, useUnpublishLesson } from '@/lib/review'
+import type { ReviewLesson, ReviewSet } from '@/lib/review'
 import { Button } from '@/components/ui/button'
 import { LessonView } from '@/components/LessonView'
 
@@ -24,6 +24,7 @@ function AdminReview() {
   const [lessonId, setLessonId] = useState('')
   const { data: topics } = useReviewTopics(subjectId || null)
   const { data: lessons } = useReviewLessons(topicId || null)
+  const { data: sets } = useReviewSets(subjectId || null)
 
   useEffect(() => {
     supabase.from('subjects').select('id, slug, name').order('name').then(({ data }) => {
@@ -51,7 +52,7 @@ function AdminReview() {
       <div className="flex items-center justify-between">
         <div>
           <p className="text-xs uppercase tracking-wide text-muted-foreground">Admin</p>
-          <h1 className="text-2xl font-bold">Review lessons</h1>
+          <h1 className="text-2xl font-bold">Review lessons and questions</h1>
         </div>
         <Link to="/admin"><Button variant="outline" size="sm">Back</Button></Link>
       </div>
@@ -59,6 +60,7 @@ function AdminReview() {
       <p className="text-sm text-muted-foreground">
         Read a lesson, fix anything wrong, then approve it. Approved lessons become free public pages with your name
         on them (they appear on the website after the next deploy). Students in the app see every lesson either way.
+        New practice question sets stay hidden from students until you approve them.
       </p>
 
       {/* keyed so the form resets to the saved values whenever they change */}
@@ -82,6 +84,23 @@ function AdminReview() {
           </select>
         </label>
       </div>
+
+      {sets && sets.length > 0 && (
+        <section className="space-y-3">
+          <div>
+            <h2 className="font-bold">Practice question sets</h2>
+            <p className="text-xs text-muted-foreground">
+              Take each set like a student (wrong answers show the working and the reason behind every option), then
+              approve it. Approving stamps every question with your name and shows the set to students.
+            </p>
+          </div>
+          <ul className="divide-y rounded-xl border">
+            {sets.map((s) => (
+              <SetRow key={s.id} set={s} reviewerId={user.id} canApprove={!!profile.full_name?.trim()} />
+            ))}
+          </ul>
+        </section>
+      )}
 
       {lessons && lessons.length > 0 && (
         <ul className="divide-y rounded-xl border">
@@ -121,6 +140,43 @@ function StatusBadge({ lesson }: { lesson: ReviewLesson }) {
     return <span className="shrink-0 rounded-full bg-muted px-2 py-0.5 text-xs font-semibold text-muted-foreground">Reviewed, private</span>
   }
   return <span className="shrink-0 rounded-full bg-amber-500/10 px-2 py-0.5 text-xs font-semibold text-amber-700">Not reviewed</span>
+}
+
+function SetRow({ set, reviewerId, canApprove }: { set: ReviewSet; reviewerId: string; canApprove: boolean }) {
+  const approve = useApproveSet()
+  const hide = useHideSet()
+  const reviewed = set.questions.filter((q) => q.reviewed_at).length
+  const error = (approve.error || hide.error) as Error | null
+  return (
+    <li className="flex flex-wrap items-center justify-between gap-3 p-3">
+      <div className="min-w-0 space-y-1">
+        <p className="font-medium">{set.title}</p>
+        <p className="text-xs text-muted-foreground">
+          {set.questions.length} questions · {reviewed}/{set.questions.length} reviewed
+        </p>
+        {error && <p className="text-xs text-red-500">{error.message}</p>}
+      </div>
+      <div className="flex shrink-0 items-center gap-2">
+        {set.is_published ? (
+          <span className="rounded-full bg-emerald-500/10 px-2 py-0.5 text-xs font-semibold text-emerald-700">Live</span>
+        ) : (
+          <span className="rounded-full bg-amber-500/10 px-2 py-0.5 text-xs font-semibold text-amber-700">Hidden</span>
+        )}
+        <Link to="/paper/$paperId" params={{ paperId: set.id }} className="rounded-md border px-3 py-1.5 text-sm font-medium hover:bg-muted">
+          Try it
+        </Link>
+        {set.is_published ? (
+          <Button size="sm" variant="outline" disabled={hide.isPending} onClick={() => hide.mutate(set.id)}>
+            {hide.isPending ? 'Hiding…' : 'Hide'}
+          </Button>
+        ) : (
+          <Button size="sm" disabled={!canApprove || approve.isPending} onClick={() => approve.mutate({ paperId: set.id, reviewerId })} title={canApprove ? '' : 'Add your name in the byline first'}>
+            {approve.isPending ? 'Approving…' : 'Approve & publish'}
+          </Button>
+        )}
+      </div>
+    </li>
+  )
 }
 
 function Byline({ profileId, name, bio }: { profileId: string; name: string; bio: string }) {
