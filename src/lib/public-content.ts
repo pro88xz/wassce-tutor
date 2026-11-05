@@ -5,7 +5,7 @@
 import { supabase } from '@/lib/supabase'
 import { hasSubjectPage, hasTopicPageByCount } from '@/lib/public-rules'
 
-export { hasSubjectPage, subjectPath, topicPath } from '@/lib/public-rules'
+export { hasSubjectPage, lessonPath, subjectPath, topicPath } from '@/lib/public-rules'
 
 export type FacultyRole = 'core' | 'faculty' | 'elective'
 
@@ -214,4 +214,59 @@ export async function fetchTopicPage(subjectSlug: string, topicSlug: string): Pr
     previous: withPages[pos - 1] ?? null,
     next: withPages[pos + 1] ?? null,
   }
+}
+
+export type PublicLesson = {
+  id: string
+  topic_id: string
+  slug: string
+  title: string
+  content: string
+  est_minutes: number | null
+  sort_order: number
+  reviewed_at: string
+  updated_at: string
+  reviewer_name: string | null
+  reviewer_bio: string | null
+}
+
+export type PublicLessonPageData = TopicPageData & { lesson: PublicLesson }
+
+/** Everything for /wassce/{subject}/{topic}/{lesson}; null unless the lesson is reviewed and public. */
+export async function fetchPublicLessonPage(
+  subjectSlug: string,
+  topicSlug: string,
+  lessonSlug: string,
+): Promise<PublicLessonPageData | null> {
+  const page = await fetchTopicPage(subjectSlug, topicSlug)
+  if (!page) return null
+  const { data, error } = await supabase
+    .from('wassce_public_lessons')
+    .select('id, topic_id, slug, title, content, est_minutes, sort_order, reviewed_at, updated_at, reviewer_name, reviewer_bio')
+    .eq('topic_id', page.topic.id)
+    .eq('slug', lessonSlug)
+    .maybeSingle()
+  if (error) fail('lesson', error)
+  if (!data) return null
+  return { ...page, lesson: data as PublicLesson }
+}
+
+/** Plain-text summary of lesson markdown, for meta descriptions. */
+export function lessonSummary(markdown: string, max = 155): string {
+  const text = markdown
+    .replace(/^:::.*$/gm, ' ') // directive fences (:::callout, :::diagram)
+    .replace(/\$\$[\s\S]*?\$\$/g, ' ') // display math
+    .replace(/\$[^$\n]+\$/g, ' ') // inline math
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ') // images
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1') // links -> text
+    .replace(/^#{1,6}\s+/gm, '') // heading marks
+    .replace(/^\s*[-*+>]\s+/gm, '') // list / quote markers
+    .replace(/[*_`|]/g, '') // emphasis, code, table pipes
+    .replace(/\s+/g, ' ')
+    .replace(/\s+([.,;:!?])/g, '$1') // space left where math was removed
+    .replace(/[:;,]\./g, '.')
+    .trim()
+  if (text.length <= max) return text
+  const cut = text.slice(0, max)
+  return cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:.\s]+$/, '') + '…'
 }

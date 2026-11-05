@@ -14,3 +14,5 @@ export const hasTopicPageByCount = (lessonCount: number) => lessonCount > 0
 
 export const subjectPath = (subjectSlug: string) => `/wassce/${subjectSlug}`
 export const topicPath = (subjectSlug: string, topicSlug: string) => `/wassce/${subjectSlug}/${topicSlug}`
+export const lessonPath = (subjectSlug: string, topicSlug: string, lessonSlug: string) =>
+  `/wassce/${subjectSlug}/${topicSlug}/${lessonSlug}`

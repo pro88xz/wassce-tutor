@@ -2,7 +2,7 @@ import { createFileRoute, notFound } from '@tanstack/react-router'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { StartCta } from '@/components/public/StartCta'
 import { useAuth } from '@/lib/auth'
-import { fetchTopicPage, hasTopicPage, lessonMinutes, subjectPath, topicPath } from '@/lib/public-content'
+import { fetchTopicPage, hasTopicPage, lessonMinutes, lessonPath, subjectPath, topicPath } from '@/lib/public-content'
 import type { TopicPageData } from '@/lib/public-content'
 import { breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
 
@@ -67,7 +67,9 @@ function TopicPage() {
             <li key={lesson.id} className="flex items-center justify-between gap-3 p-4">
               <span className="flex items-baseline gap-3">
                 <span className="text-xs tabular-nums text-muted-foreground">{i + 1}</span>
-                {user ? (
+                {lesson.is_public ? (
+                  <a href={lessonPath(subject.slug, topic.slug, lesson.slug)} className="font-medium text-primary hover:underline">{lesson.title}</a>
+                ) : user ? (
                   <a href={`/lesson/${lesson.id}`} className="font-medium text-primary hover:underline">{lesson.title}</a>
                 ) : (
                   <span className="font-medium">{lesson.title}</span>
@@ -75,7 +77,7 @@ function TopicPage() {
               </span>
               <span className="shrink-0 text-xs text-muted-foreground">
                 {lesson.est_minutes ? `${lesson.est_minutes} min` : ''}
-                {!user && <span aria-label="Requires a free account"> · 🔒</span>}
+                {lesson.is_public ? ' · Free' : !user && <span aria-label="Requires a free account"> · 🔒</span>}
               </span>
             </li>
           ))}

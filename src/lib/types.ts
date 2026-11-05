@@ -35,4 +35,6 @@ export type Profile = {
   subscription_active: boolean
   subscription_expires_at: string | null
   is_admin: boolean
+  /** One-line bio shown under the name on public lessons this person reviewed. */
+  public_bio?: string | null
 }

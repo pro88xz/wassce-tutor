@@ -118,6 +118,14 @@ function AdminPage() {
           <p className="mt-3 text-xs text-primary">Open →</p>
         </Link>
         <Link
+          to="/admin/review"
+          className="rounded-2xl border border-primary/40 bg-primary/5 p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+        >
+          <h2 className="font-bold">Review lessons</h2>
+          <p className="mt-1 text-sm text-muted-foreground">Check lessons and approve them as free public pages with your name.</p>
+          <p className="mt-3 text-xs text-primary">Open →</p>
+        </Link>
+        <Link
           to="/admin/lessons"
           className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
         >
