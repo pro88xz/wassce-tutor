@@ -118,24 +118,57 @@ const HOME_JSON_LD = {
   ],
 }
 
-/** Tags for an indexable page: unique title + description, self canonical, OG/Twitter text. */
-export function publicPageTags(path: PublicPath): HeadTags {
-  const page: PublicPage = PUBLIC_PAGES[path]
+type IndexablePage = {
+  path: string
+  title: string
+  description: string
+  ogTitle?: string
+  /** JSON-LD objects, each emitted as its own <script type="application/ld+json">. */
+  jsonLd?: Record<string, unknown>[]
+}
+
+/** Tags for an indexable page: unique title + description, self canonical, OG/Twitter text, optional JSON-LD. */
+export function indexablePageTags({ path, title, description, ogTitle = title, jsonLd: data = [] }: IndexablePage): HeadTags {
   const url = absoluteUrl(path)
-  const ogTitle = page.ogTitle ?? page.title
   return {
     meta: [
-      { title: page.title },
-      { name: 'description', content: page.description },
+      { title },
+      { name: 'description', content: description },
       { name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large' },
       { property: 'og:title', content: ogTitle },
-      { property: 'og:description', content: page.description },
+      { property: 'og:description', content: description },
       { property: 'og:url', content: url },
       { name: 'twitter:title', content: ogTitle },
-      { name: 'twitter:description', content: page.description },
+      { name: 'twitter:description', content: description },
     ],
     links: [{ rel: 'canonical', href: url }],
-    scripts: path === '/' ? [jsonLd(HOME_JSON_LD)] : [],
+    scripts: data.map(jsonLd),
+  }
+}
+
+/** Tags for a fixed page listed in PUBLIC_PAGES. */
+export function publicPageTags(path: PublicPath): HeadTags {
+  const page: PublicPage = PUBLIC_PAGES[path]
+  return indexablePageTags({
+    path,
+    title: page.title,
+    description: page.description,
+    ogTitle: page.ogTitle,
+    jsonLd: path === '/' ? [HOME_JSON_LD] : [],
+  })
+}
+
+/** schema.org BreadcrumbList for a trail of [name, path] pairs, ending with the current page. */
+export function breadcrumbJsonLd(trail: [name: string, path: string][]): Record<string, unknown> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: trail.map(([name, path], i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name,
+      item: absoluteUrl(path),
+    })),
   }
 }
 
