@@ -1,7 +1,12 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
+import { BookCheck, Pencil } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { useAuth } from '@/lib/auth'
 import { useStudentSubjects } from '@/lib/queries'
+import { useProgress } from '@/lib/progress'
+import { SubjectCard } from '@/components/ds/SubjectCard'
+import { EmptyState, PageHeader, Skeleton } from '@/components/ds/Primitives'
+import { ProgressBar } from '@/components/ds/Progress'
 
 export const Route = createFileRoute('/subjects')({
   head: privateHead('Subjects'),
@@ -10,47 +15,43 @@ export const Route = createFileRoute('/subjects')({
 
 function SubjectsPage() {
   const { user } = useAuth()
-  const { data: subjects, isLoading } = useStudentSubjects(user?.id ?? null)
+  const { data: subjects, isLoading: subjectsLoading } = useStudentSubjects(user?.id ?? null)
+  const { summary, isLoading } = useProgress(user?.id ?? null, subjects)
 
   return (
-    <div className="mx-auto max-w-3xl space-y-6">
-      <header className="flex items-end justify-between">
-        <div>
-          <p className="text-sm text-muted-foreground">Your subjects</p>
-          <h1 className="text-3xl font-black tracking-tight">Pick one to study</h1>
-        </div>
-        <Link to="/onboarding" className="text-sm text-primary hover:underline">
-          Edit
-        </Link>
-      </header>
-
-      {isLoading ? (
-        <p className="text-sm text-muted-foreground">Loading subjects…</p>
-      ) : !subjects || subjects.length === 0 ? (
-        <div className="rounded-2xl border bg-card p-6 text-center">
-          <p className="text-muted-foreground">No subjects yet.</p>
-          <Link to="/onboarding" className="text-sm text-primary hover:underline mt-2 inline-block">
-            Pick your subjects →
+    <div className="mx-auto max-w-3xl space-y-8 pb-12">
+      <PageHeader
+        eyebrow="Your subjects"
+        title="What are we studying?"
+        subtitle={summary && summary.total > 0 ? `${summary.done} of ${summary.total} lessons done across your subjects` : undefined}
+        aside={
+          <Link
+            to="/onboarding"
+            className="inline-flex items-center gap-1.5 rounded-xl border px-3 py-2 text-sm font-semibold hover:bg-muted"
+          >
+            <Pencil className="h-4 w-4" aria-hidden /> Edit
           </Link>
+        }
+      />
+
+      {summary && summary.total > 0 && (
+        <ProgressBar value={summary.done} max={summary.total} size="lg" fill="bg-gradient-to-r from-primary to-violet-500" label="All lessons completed" />
+      )}
+
+      {subjectsLoading || isLoading ? (
+        <div className="grid gap-3 sm:grid-cols-2">
+          {[0, 1, 2, 3].map((i) => <Skeleton key={i} className="h-36" />)}
         </div>
+      ) : !summary || summary.subjects.length === 0 ? (
+        <EmptyState
+          icon={<BookCheck className="h-6 w-6" />}
+          title="No subjects yet"
+          body="Pick the WASSCE subjects you're sitting to get started."
+          action={<Link to="/onboarding" className="inline-flex h-11 items-center rounded-xl bg-primary px-5 font-semibold text-primary-foreground">Choose subjects</Link>}
+        />
       ) : (
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-          {subjects.map((s) => (
-            <Link
-              key={s.id}
-              to="/subject/$subjectId"
-              params={{ subjectId: s.id }}
-              className="group flex aspect-square flex-col justify-between rounded-2xl border bg-card p-4 text-left transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
-            >
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary/10 text-sm font-black text-primary">
-                {s.name.slice(0, 2).toUpperCase()}
-              </div>
-              <div>
-                <p className="font-semibold leading-tight">{s.name}</p>
-                <p className="mt-0.5 text-xs text-muted-foreground">Tap to study →</p>
-              </div>
-            </Link>
-          ))}
+        <div className="grid gap-3 sm:grid-cols-2">
+          {summary.subjects.map((s) => <SubjectCard key={s.subject.id} s={s} />)}
         </div>
       )}
     </div>

@@ -4,7 +4,13 @@ import { useEffect, useState } from 'react'
 import { Capacitor } from '@capacitor/core'
 import { useAuth } from '@/lib/auth'
 import { supabase } from '@/lib/supabase'
-import { useProfile, useStudentSubjects, useFaculties, useAttempts } from '@/lib/queries'
+import { useProfile, useStudentSubjects, useFaculties } from '@/lib/queries'
+import { Flame, PlayCircle, Target, BookCheck } from 'lucide-react'
+import { useProgress } from '@/lib/progress'
+import { SubjectIcon } from '@/lib/subject-theme'
+import { SubjectCard } from '@/components/ds/SubjectCard'
+import { ProgressRing, percent } from '@/components/ds/Progress'
+import { Card, ScorePill, SectionHeader, Skeleton } from '@/components/ds/Primitives'
 import { Button } from '@/components/ui/button'
 import { UpdateBanner } from '@/components/UpdateBanner'
 
@@ -27,7 +33,7 @@ function Index() {
   const { user, loading } = useAuth()
   const { data: profile, isLoading: profileLoading } = useProfile(user?.id ?? null)
   const { data: subjects } = useStudentSubjects(user?.id ?? null)
-  const { data: attempts } = useAttempts(user?.id ?? null)
+  const { summary } = useProgress(user?.id ?? null, subjects)
   const { data: faculties } = useFaculties()
 
   useEffect(() => {
@@ -228,23 +234,12 @@ function Index() {
     faculties?.find((f) => f.id === profile?.faculty_id)?.name ?? 'Your faculty'
   const firstName = profile?.full_name?.split(' ')[0] ?? 'there'
 
-  // --- Today's pick logic ---
-  const hasAttempts = (attempts?.length ?? 0) > 0
   const initials = (() => {
     const name = (firstName || '').trim()
     if (!name) return '?'
     const parts = name.split(/\s+/)
     if (parts.length >= 2) return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase()
     return name[0].toUpperCase()
-  })()
-  const todaysPickSubject = (() => {
-    if (!subjects || subjects.length === 0) return null
-    if (!hasAttempts) return subjects[0]
-    const recentSubjectNames = new Set(
-      (attempts ?? []).slice(0, 3).map((a) => a.paper?.subject?.name).filter(Boolean)
-    )
-    const stale = subjects.find((sub) => !recentSubjectNames.has(sub.name))
-    return stale ?? subjects[0]
   })()
 
   return (
@@ -339,92 +334,102 @@ function Index() {
         </div>
       )}
 
-      {/* TODAY'S PICK */}
-      {todaysPickSubject && (
-        <Link
-          to="/subject/$subjectId"
-          params={{ subjectId: todaysPickSubject.id }}
-          className="block rounded-2xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent p-4 transition hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"
-        >
-          <p className="text-xs uppercase tracking-wide text-primary font-bold">
-            {hasAttempts ? "Today's pick" : 'Start here'}
-          </p>
-          <p className="mt-1 text-lg font-bold">{todaysPickSubject.name}</p>
-          <p className="mt-0.5 text-xs text-muted-foreground">
-            {hasAttempts
-              ? `Pick up where you left off in ${todaysPickSubject.name}.`
-              : `New to WASSCE Tutor? Open ${todaysPickSubject.name} and take your first lesson.`}
-          </p>
-          <p className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-primary">
-            {hasAttempts ? 'Continue' : 'Open subject'} <span aria-hidden>→</span>
-          </p>
-        </Link>
-      )}
-      {/* RECENT ACTIVITY */}
-      {hasAttempts && (
-        <div className="rounded-2xl border bg-card p-4">
-          <div className="mb-3 flex items-center justify-between">
-            <p className="text-xs uppercase tracking-wide text-muted-foreground">Recent activity</p>
-            <Link to="/progress" className="text-xs text-primary font-semibold hover:underline">
-              See all →
+      {/* CONTINUE LEARNING */}
+      {!summary ? (
+        <Skeleton className="h-44" />
+      ) : (
+        <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-violet-700 to-fuchsia-700 p-5 text-white shadow-lg">
+          <div aria-hidden className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/10 blur-2xl" />
+          <div className="relative flex items-center gap-5">
+            <ProgressRing value={summary.done} max={summary.total} size={92} thickness={9} stroke="text-white" label="Lessons completed across your subjects">
+              <span className="text-xl font-black tabular-nums">{percent(summary.done, summary.total)}%</span>
+            </ProgressRing>
+            <div className="min-w-0 space-y-1">
+              <p className="text-xs font-bold uppercase tracking-wider text-white/75">Your WASSCE progress</p>
+              <p className="text-xl font-black leading-tight">
+                {summary.done} of {summary.total} lessons
+              </p>
+              <p className="text-sm text-white/80">
+                {summary.topicsDone} topics done{summary.streak > 0 ? ` · ${summary.streak}-day streak` : ''}
+              </p>
+            </div>
+          </div>
+          {summary.next && (
+            <Link
+              to="/lesson/$lessonId"
+              params={{ lessonId: summary.next.lesson.id }}
+              className="relative mt-5 flex items-center gap-3 rounded-2xl bg-white p-3 text-slate-900 shadow-md transition hover:shadow-lg"
+            >
+              <SubjectIcon slug={summary.next.subject.slug} />
+              <span className="min-w-0 flex-1">
+                <span className="block text-xs font-bold uppercase tracking-wider text-violet-700">
+                  {summary.done === 0 ? 'Start here' : 'Continue learning'}
+                </span>
+                <span className="block truncate font-semibold">{summary.next.lesson.title}</span>
+                <span className="block truncate text-xs text-slate-500">{summary.next.subject.name} · {summary.next.topic.name}</span>
+              </span>
+              <PlayCircle className="h-8 w-8 shrink-0 text-violet-700" aria-hidden />
             </Link>
-          </div>
-          <div className="space-y-2">
-            {attempts!.slice(0, 2).map((a) => {
-              const pct = a.total > 0 ? Math.round((a.score / a.total) * 100) : 0
-              const tone = pct >= 70 ? 'emerald' : pct >= 50 ? 'amber' : 'red'
-              const toneCls = tone === 'emerald'
-                ? 'border-emerald-500/40 bg-emerald-500/5 text-emerald-700'
-                : tone === 'amber'
-                  ? 'border-amber-500/40 bg-amber-500/5 text-amber-700'
-                  : 'border-red-500/40 bg-red-500/5 text-red-700'
-              return (
-                <div key={a.id} className="flex items-center justify-between gap-3 rounded-lg border bg-background px-3 py-2">
-                  <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm font-semibold">{a.paper?.title ?? 'Quiz'}</p>
-                    <p className="truncate text-xs text-muted-foreground">{a.paper?.subject?.name ?? ''}</p>
-                  </div>
-                  <span className={`shrink-0 rounded-full border px-2.5 py-1 text-xs font-bold ${toneCls}`}>
-                    {a.score}/{a.total}
-                  </span>
-                </div>
-              )
-            })}
-          </div>
+          )}
+        </section>
+      )}
+
+      {/* QUICK STATS */}
+      {summary && (
+        <div className="grid grid-cols-3 gap-2">
+          <Link to="/progress" className="rounded-2xl border bg-card p-3 text-center transition hover:border-primary/40">
+            <Flame className="mx-auto h-5 w-5 text-orange-500" aria-hidden />
+            <p className="mt-1 text-xl font-black tabular-nums">{summary.streak}</p>
+            <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">Day streak</p>
+          </Link>
+          <Link to="/progress" className="rounded-2xl border bg-card p-3 text-center transition hover:border-primary/40">
+            <BookCheck className="mx-auto h-5 w-5 text-emerald-500" aria-hidden />
+            <p className="mt-1 text-xl font-black tabular-nums">{summary.done}</p>
+            <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">Lessons</p>
+          </Link>
+          <Link to="/progress" className="rounded-2xl border bg-card p-3 text-center transition hover:border-primary/40">
+            <Target className="mx-auto h-5 w-5 text-primary" aria-hidden />
+            <p className="mt-1 text-xl font-black tabular-nums">{summary.avgScore === null ? '–' : `${summary.avgScore}%`}</p>
+            <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">Paper avg</p>
+          </Link>
         </div>
       )}
-      {/* QUICK ACTIONS */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        <Link
-          to="/subjects"
-          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
-        >
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-5 w-5 text-primary">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 5a2 2 0 0 1 2-2h10l4 4v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5Z M8 11h8 M8 15h5" />
-            </svg>
-          </div>
-          <p className="mt-3 font-bold">Continue studying</p>
-          <p className="mt-0.5 text-sm text-muted-foreground">{subjects?.length ?? 0} subjects</p>
-          <p className="mt-2 text-xs text-primary">Open →</p>
-        </Link>
 
-        <Link
-          to="/progress"
-          className="rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
-        >
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-5 w-5 text-primary">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3 17l5-5 4 4 8-8 M14 8h6v6" />
-            </svg>
+      {/* YOUR SUBJECTS */}
+      {summary && summary.subjects.length > 0 && (
+        <section className="space-y-3">
+          <SectionHeader title="Your subjects" action={{ to: '/subjects', label: 'See all' }} />
+          <div className="grid gap-3 sm:grid-cols-2">
+            {[...summary.subjects]
+              .sort((a, b) => (b.lastActivity ?? '').localeCompare(a.lastActivity ?? '') || b.total - a.total)
+              .slice(0, 4)
+              .map((s) => <SubjectCard key={s.subject.id} s={s} compact />)}
           </div>
-          <p className="mt-3 font-bold">See progress</p>
-          <p className="mt-0.5 text-sm text-muted-foreground">
-            {attempts?.length ?? 0} {attempts?.length === 1 ? 'quiz' : 'quizzes'} taken
-          </p>
-          <p className="mt-2 text-xs text-primary">Open →</p>
-        </Link>
-      </div>
+        </section>
+      )}
+
+      {/* RECENT PAPERS */}
+      {summary && summary.papersTaken > 0 && (
+        <section className="space-y-3">
+          <SectionHeader title="Recent papers" action={{ to: '/progress', label: 'All scores' }} />
+          <Card className="divide-y">
+            {summary.subjects
+              .flatMap((s) => s.attempts.map((a) => ({ a, s: s.subject })))
+              .sort((x, y) => y.a.created_at.localeCompare(x.a.created_at))
+              .slice(0, 3)
+              .map(({ a, s }) => (
+                <div key={a.id} className="flex items-center gap-3 px-4 py-3">
+                  <SubjectIcon slug={s.slug} size="sm" />
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-sm font-semibold">{a.paper?.title ?? 'Paper'}</p>
+                    <p className="text-xs text-muted-foreground">{s.name}</p>
+                  </div>
+                  <ScorePill score={a.score} total={a.total} />
+                </div>
+              ))}
+          </Card>
+        </section>
+      )}
     </div>
   )
 }

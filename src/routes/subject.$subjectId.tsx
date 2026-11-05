@@ -1,169 +1,128 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
+import { FileText, PlayCircle } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
-import { useState, useMemo } from 'react'
 import { AccessGate } from '@/components/AccessGate'
-import { useSubject, usePapers, useTopics } from '@/lib/queries'
-import type { Topic } from '@/lib/queries'
+import { useAuth } from '@/lib/auth'
+import { usePapers, useSubject } from '@/lib/queries'
+import { useProgress } from '@/lib/progress'
+import { subjectTheme } from '@/lib/subject-theme'
+import { ProgressBar, percent } from '@/components/ds/Progress'
+import { Card, EmptyState, SectionHeader, Skeleton } from '@/components/ds/Primitives'
+import { TopicGroups } from '@/components/ds/TopicGroups'
 
 export const Route = createFileRoute('/subject/$subjectId')({
   head: privateHead('Subject'),
   component: SubjectPage,
 })
 
-function TopicCard({ t }: { t: Topic }) {
-  return (
-    <Link
-      to="/topic/$topicId"
-      params={{ topicId: t.id }}
-      className="block rounded-2xl border bg-card p-4 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
-    >
-      <p className="font-bold">{t.name}</p>
-      {t.description && (
-        <p className="mt-1 text-sm text-muted-foreground">{t.description}</p>
-      )}
-    </Link>
-  )
-}
-
-function GroupedTopics({ topics }: { topics: Topic[] }) {
-  const groups = useMemo(() => {
-    const map = new Map<string, { order: number; topics: Topic[] }>()
-    for (const t of topics) {
-      const key = t.group_name || 'Other Topics'
-      const order = t.group_order ?? 999
-      const existing = map.get(key)
-      if (existing) {
-        existing.topics.push(t)
-      } else {
-        map.set(key, { order, topics: [t] })
-      }
-    }
-    return Array.from(map.entries())
-      .map(([name, value]) => ({ name, order: value.order, topics: value.topics }))
-      .sort((a, b) => a.order - b.order)
-  }, [topics])
-
-  const [expanded, setExpanded] = useState<Set<string>>(
-    () => new Set(groups.length > 0 ? [groups[0].name] : [])
-  )
-
-  const toggle = (name: string) => {
-    setExpanded((prev) => {
-      const next = new Set(prev)
-      if (next.has(name)) next.delete(name)
-      else next.add(name)
-      return next
-    })
-  }
-
-  return (
-    <div className="space-y-3">
-      {groups.map((g) => {
-        const isOpen = expanded.has(g.name)
-        return (
-          <div key={g.name} className="rounded-2xl border bg-card">
-            <button
-              type="button"
-              onClick={() => toggle(g.name)}
-              className="flex w-full items-center justify-between rounded-2xl p-4 text-left transition hover:bg-muted/50"
-            >
-              <div className="flex items-center gap-3">
-                <span className={`inline-block transition-transform ${isOpen ? 'rotate-90' : ''}`}>
-                  &#9656;
-                </span>
-                <span className="font-bold">{g.name}</span>
-              </div>
-              <span className="text-xs text-muted-foreground">
-                {g.topics.length} topic{g.topics.length !== 1 ? 's' : ''}
-              </span>
-            </button>
-            {isOpen && (
-              <div className="grid grid-cols-1 gap-3 border-t p-4 sm:grid-cols-2">
-                {g.topics.map((t) => (
-                  <TopicCard key={t.id} t={t} />
-                ))}
-              </div>
-            )}
-          </div>
-        )
-      })}
-    </div>
-  )
-}
-
-function FlatTopics({ topics }: { topics: Topic[] }) {
-  return (
-    <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-      {topics.map((t) => (
-        <TopicCard key={t.id} t={t} />
-      ))}
-    </div>
-  )
-}
-
 function SubjectPage() {
   const { subjectId } = useParams({ from: '/subject/$subjectId' })
+  const { user } = useAuth()
   const { data: subject } = useSubject(subjectId)
-  const { data: papers, isLoading } = usePapers(subjectId)
-  const { data: topics } = useTopics(subjectId)
-
-  const hasGroups = (topics ?? []).some((t) => t.group_name)
+  const { data: papers, isLoading: papersLoading } = usePapers(subjectId)
+  const { summary } = useProgress(user?.id ?? null, subject ? [subject] : undefined)
+  const sp = summary?.subjects[0]
+  const { icon: Icon, palette } = subjectTheme(subject?.slug)
 
   return (
     <AccessGate>
-    <div className="mx-auto max-w-3xl space-y-6">
-      <Link to="/" className="text-sm text-muted-foreground hover:text-foreground">
-        &larr; Back
-      </Link>
-      <header className="space-y-1">
-        <p className="text-xs uppercase tracking-wide text-muted-foreground">Subject</p>
-        <h1 className="text-3xl font-black tracking-tight">
-          {subject?.name ?? 'Loading...'}
-        </h1>
-      </header>
-      {topics && topics.length > 0 && (
-        <section className="space-y-3">
-          <h2 className="text-lg font-bold">Learn by topic</h2>
-          {hasGroups ? <GroupedTopics topics={topics} /> : <FlatTopics topics={topics} />}
-        </section>
-      )}
-      <section className="space-y-3">
-        <h2 className="text-lg font-bold">Practice papers</h2>
-        {isLoading ? (
-          <p className="text-sm text-muted-foreground">Loading papers...</p>
-        ) : !papers || papers.length === 0 ? (
-          <div className="rounded-2xl border border-dashed p-8 text-center">
-            <p className="text-sm text-muted-foreground">
-              No papers yet for this subject. Check back soon.
-            </p>
-          </div>
-        ) : (
-          <div className="space-y-3">
-            {papers.map((p) => (
-              <Link
-                key={p.id}
-                to="/paper/$paperId"
-                params={{ paperId: p.id }}
-                className="block rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
-              >
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="font-bold">{p.title}</p>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      {[p.paper_type, p.year].filter(Boolean).join(' \u00B7 ')}
-                      {p.description ? ` \u2014 ${p.description}` : ''}
-                    </p>
-                  </div>
-                  <div className="ml-4 shrink-0 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">
-                    {p.question_count} Qs
-                  </div>
+      <div className="mx-auto max-w-3xl space-y-8 pb-12">
+        <Link to="/subjects" className="inline-flex text-sm font-medium text-muted-foreground hover:text-foreground">
+          ← All subjects
+        </Link>
+
+        {/* HERO */}
+        <section className={`relative overflow-hidden rounded-3xl bg-gradient-to-br ${palette.gradient} p-6 text-white shadow-lg`}>
+          <Icon className="pointer-events-none absolute -right-6 -bottom-6 h-40 w-40 text-white/10" aria-hidden />
+          <div className="relative space-y-4">
+            <div className="flex items-center gap-3">
+              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/20 backdrop-blur">
+                <Icon className="h-6 w-6" aria-hidden />
+              </span>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-white/80">WASSCE subject</p>
+                <h1 className="text-3xl font-black tracking-tight">{subject?.name ?? ' '}</h1>
+              </div>
+            </div>
+            {sp ? (
+              <div className="space-y-2">
+                <div className="flex items-baseline justify-between text-sm">
+                  <span className="font-semibold">
+                    {sp.total > 0 ? `${sp.done} of ${sp.total} lessons` : 'Lessons coming soon'}
+                  </span>
+                  {sp.total > 0 && <span className="text-2xl font-black tabular-nums">{percent(sp.done, sp.total)}%</span>}
                 </div>
+                <ProgressBar value={sp.done} max={sp.total} size="lg" fill="bg-white" track="bg-white/25" label={`${sp.subject.name} lessons completed`} />
+                <p className="text-sm text-white/85">
+                  {sp.topicsDone}/{sp.topicsWithLessons} topics done
+                  {sp.minutesLeft > 0 && ` · about ${Math.round(sp.minutesLeft / 60)}h of lessons left`}
+                  {sp.avgScore !== null && ` · papers ${sp.avgScore}%`}
+                </p>
+              </div>
+            ) : (
+              <Skeleton className="h-16 bg-white/20" />
+            )}
+            {sp?.next && (
+              <Link
+                to="/lesson/$lessonId"
+                params={{ lessonId: sp.next.lesson.id }}
+                className="flex items-center justify-between gap-3 rounded-2xl bg-white px-4 py-3 text-slate-900 shadow-md transition hover:shadow-lg"
+              >
+                <span className="min-w-0">
+                  <span className={`block text-xs font-bold uppercase tracking-wider ${palette.text}`}>
+                    {sp.done === 0 ? 'Start here' : 'Continue'}
+                  </span>
+                  <span className="block truncate font-semibold">{sp.next.lesson.title}</span>
+                </span>
+                <PlayCircle className={`h-8 w-8 shrink-0 ${palette.text}`} aria-hidden />
               </Link>
-            ))}
+            )}
           </div>
-        )}
-      </section>
-    </div>
+        </section>
+
+        {/* TOPICS */}
+        <section className="space-y-4">
+          <SectionHeader title="Topics" />
+          {sp ? (
+            <TopicGroups groups={sp.groups} palette={palette} showDescription />
+          ) : (
+            <div className="space-y-2">{[0, 1, 2, 3].map((i) => <Skeleton key={i} className="h-16" />)}</div>
+          )}
+        </section>
+
+        {/* PAPERS */}
+        <section className="space-y-3">
+          <SectionHeader title="Practice papers" />
+          {papersLoading ? (
+            <Skeleton className="h-20" />
+          ) : !papers || papers.length === 0 ? (
+            <EmptyState icon={<FileText className="h-6 w-6" />} title="No papers yet" body={`Past papers for ${subject?.name ?? 'this subject'} are on the way.`} />
+          ) : (
+            <Card className="divide-y">
+              {papers.map((p) => (
+                <Link
+                  key={p.id}
+                  to="/paper/$paperId"
+                  params={{ paperId: p.id }}
+                  className="flex items-center gap-4 p-4 transition hover:bg-muted/40"
+                >
+                  <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${palette.soft} ${palette.text}`}>
+                    <FileText className="h-5 w-5" aria-hidden />
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block truncate font-semibold">{p.title}</span>
+                    <span className="block truncate text-xs text-muted-foreground">
+                      {[p.paper_type, p.year].filter(Boolean).join(' · ')}
+                      {p.description ? ` — ${p.description}` : ''}
+                    </span>
+                  </span>
+                  <span className="shrink-0 rounded-full bg-muted px-2.5 py-1 text-xs font-bold">{p.question_count} Qs</span>
+                </Link>
+              ))}
+            </Card>
+          )}
+        </section>
+      </div>
     </AccessGate>
   )
 }
