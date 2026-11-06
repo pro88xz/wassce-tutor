@@ -1,5 +1,5 @@
 import { Link, useRouterState } from '@tanstack/react-router'
-import { GraduationCap } from 'lucide-react'
+import { BrandMark } from '@/components/BrandMark'
 import { useAuth } from '@/lib/auth'
 
 const isPublicPath = (p: string) => ['/', '/about', '/privacy', '/terms'].includes(p) || p === '/wassce' || p.startsWith('/wassce/')
@@ -13,13 +13,10 @@ export function PublicHeader() {
   const pathname = useRouterState({ select: (s) => s.location.pathname })
   if (user || !isPublicPath(pathname)) return null
   return (
-    <header className="sticky top-0 z-30 -mx-6 -mt-6 mb-6 border-b bg-background/85 backdrop-blur-md">
-      <div className="mx-auto flex h-14 max-w-5xl items-center gap-4 px-4 sm:px-6">
-        <a href="/" className="flex items-center gap-2 font-black tracking-tight">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-violet-600 text-white">
-            <GraduationCap className="h-5 w-5" aria-hidden />
-          </span>
-          <span className="whitespace-nowrap">WASSCE Tutor</span>
+    <header className="sticky top-0 z-30 -mx-4 -mt-4 mb-6 border-b bg-background/90 backdrop-blur-md sm:-mx-6 sm:-mt-6">
+      <div className="mx-auto flex h-16 max-w-5xl items-center gap-4 px-4 sm:px-6">
+        <a href="/" aria-label="WASSCE Tutor home">
+          <BrandMark compact />
         </a>
         <nav aria-label="Main" className="ml-2 hidden items-center gap-5 text-sm font-medium text-muted-foreground sm:flex">
           <a href="/wassce/subjects" className="hover:text-foreground">Subjects</a>

@@ -26,6 +26,9 @@ import { SubjectIcon } from '@/lib/subject-theme'
 
 export const Route = createFileRoute('/tutor')({
   head: privateHead('AI Tutor'),
+  // ?ask= pre-fills the message box (e.g. from "Ask about this topic" links); never sends on its own.
+  validateSearch: (search: Record<string, unknown>): { ask?: string } =>
+    typeof search.ask === 'string' && search.ask.trim() ? { ask: search.ask.slice(0, 300) } : {},
   component: TutorPage,
 })
 
@@ -40,7 +43,7 @@ type Message = {
 function TutorAvatar({ size = 32 }: { size?: number }) {
   return (
     <div
-      className="flex shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 via-violet-600 to-fuchsia-600 text-white shadow-md shadow-violet-500/20"
+      className="flex shrink-0 items-center justify-center rounded-full bg-primary text-white shadow-sm"
       style={{ width: size, height: size }}
     >
       <Sparkles style={{ width: size * 0.5, height: size * 0.5 }} aria-hidden />
@@ -55,7 +58,8 @@ function TutorPage() {
   const allowed = access.reason === 'admin' || access.reason === 'subscribed'
 
   const [messages, setMessages] = useState<Message[]>([])
-  const [input, setInput] = useState('')
+  const { ask } = Route.useSearch()
+  const [input, setInput] = useState(ask ?? '')
   const [sending, setSending] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [remaining, setRemaining] = useState<number | null>(null)
@@ -96,7 +100,7 @@ function TutorPage() {
       <div className="mx-auto max-w-md space-y-6 pt-6 text-center">
         <div className="mx-auto w-fit"><TutorAvatar size={64} /></div>
         <div className="space-y-2">
-          <h1 className="text-3xl font-black tracking-tight">Meet your AI Tutor</h1>
+          <h1 className="text-3xl font-bold tracking-tight">Meet your AI Tutor</h1>
           <p className="text-muted-foreground">
             Stuck on a question? Ask anything. Your tutor explains step by step, in plain English, any time of day.
           </p>
@@ -116,7 +120,7 @@ function TutorPage() {
         <div className="space-y-2">
           <Link
             to="/subscribe"
-            className="flex h-12 w-full items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-violet-600 text-base font-bold text-white shadow-md transition hover:shadow-lg"
+            className="flex h-12 w-full items-center justify-center rounded-2xl bg-primary text-base font-bold text-white shadow-md transition hover:shadow-lg"
           >
             Unlock the AI Tutor
           </Link>
@@ -186,7 +190,7 @@ function TutorPage() {
       >
         <TutorAvatar size={36} />
         <div className="min-w-0 flex-1">
-          <p className="font-black leading-tight tracking-tight">AI Tutor</p>
+          <p className="font-bold leading-tight tracking-tight">AI Tutor</p>
           <p className="text-xs text-muted-foreground leading-tight">
             Ask anything from your WASSCE subjects
           </p>
@@ -206,7 +210,7 @@ function TutorPage() {
           <div className="mx-auto max-w-md space-y-6 px-5 pt-10 text-center">
             <div className="mx-auto w-fit"><TutorAvatar size={64} /></div>
             <div className="space-y-2">
-              <h2 className="text-2xl font-black tracking-tight">How can I help you today?</h2>
+              <h2 className="text-2xl font-bold tracking-tight">How can I help you today?</h2>
               <p className="text-sm text-muted-foreground">
                 Ask about any subject or topic. I&rsquo;ll explain step by step, the way WAEC expects.
               </p>
@@ -235,7 +239,7 @@ function TutorPage() {
             {messages.map((m) =>
               m.role === 'user' ? (
                 <div key={m.id} className="flex justify-end">
-                  <p className="max-w-[85%] whitespace-pre-wrap rounded-3xl rounded-br-lg bg-gradient-to-br from-blue-600 to-violet-600 px-4 py-2.5 text-sm leading-relaxed text-white shadow-sm">
+                  <p className="max-w-[85%] whitespace-pre-wrap rounded-3xl rounded-br-lg bg-primary px-4 py-2.5 text-sm leading-relaxed text-white shadow-sm">
                     {m.content}
                   </p>
                 </div>
@@ -292,7 +296,7 @@ function TutorPage() {
           <button
             onClick={() => sendMessage()}
             disabled={sending || !input.trim()}
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-violet-600 text-white shadow-sm transition disabled:opacity-30 hover:opacity-90"
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-white shadow-sm transition disabled:opacity-30 hover:opacity-90"
             aria-label="Send"
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.4} className="h-4 w-4">

@@ -29,13 +29,13 @@ function About() {
 
   return (
     <div className="mx-auto max-w-3xl space-y-12 pb-12">
-      <header className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-violet-700 to-fuchsia-700 p-7 text-white shadow-lg">
+      <header className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-brand-strong p-7 text-white shadow-lg">
         <div aria-hidden className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/10 blur-2xl" />
         <div className="relative space-y-3">
           <p className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-xs font-semibold ring-1 ring-white/25">
             <MapPin className="h-3.5 w-3.5" aria-hidden /> Freetown, Sierra Leone
           </p>
-          <h1 className="text-4xl font-black tracking-tight text-balance">Built in Sierra Leone, for Sierra Leonean students.</h1>
+          <h1 className="text-4xl font-bold tracking-tight text-balance">Built in Sierra Leone, for Sierra Leonean students.</h1>
           <p className="text-lg text-white/90">
             WASSCE Tutor is a WASSCE preparation platform made specifically for students sitting the West African Senior
             School Certificate Examination in Sierra Leone. We focus on what local students actually need, not generic
@@ -47,14 +47,14 @@ function About() {
       <section className="grid grid-cols-3 gap-px overflow-hidden rounded-3xl border bg-border text-center shadow-sm" aria-label="WASSCE Tutor in numbers">
         {([[totals.subjects, 'subjects'], [totals.topics, 'topics'], [totals.lessons, 'lessons']] as const).map(([n, label]) => (
           <div key={label} className="bg-card px-3 py-5">
-            <p className="text-3xl font-black tabular-nums">{n}</p>
+            <p className="text-3xl font-bold tabular-nums">{n}</p>
             <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{label}</p>
           </div>
         ))}
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-black tracking-tight">Why we exist</h2>
+        <h2 className="text-2xl font-bold tracking-tight">Why we exist</h2>
         <p className="text-muted-foreground">
           WASSCE is the gate that decides whether a Sierra Leonean student gets into university, secures a scholarship,
           or starts their working life on the right footing. Yet most preparation materials available to students are
@@ -68,7 +68,7 @@ function About() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-black tracking-tight">What you get</h2>
+        <h2 className="text-2xl font-bold tracking-tight">What you get</h2>
         <div className="grid gap-3 sm:grid-cols-2">
           {features.map(({ icon: Icon, title, body }) => (
             <div key={title} className="flex gap-4 rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03]">
@@ -85,7 +85,7 @@ function About() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-black tracking-tight">Made for Sierra Leone</h2>
+        <h2 className="text-2xl font-bold tracking-tight">Made for Sierra Leone</h2>
         <p className="text-muted-foreground">
           WASSCE Tutor is built and maintained in Freetown by a Sierra Leonean developer who understands the realities of
           studying for WAEC here: limited textbook access, expensive data, shared devices, unreliable power. Every
@@ -110,9 +110,9 @@ function About() {
         </a>
       </section>
 
-      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-violet-700 to-fuchsia-700 px-6 py-10 text-center text-white shadow-lg">
+      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-brand-strong px-6 py-10 text-center text-white shadow-lg">
         <div className="relative space-y-3">
-          <h2 className="text-3xl font-black tracking-tight">Ready to start?</h2>
+          <h2 className="text-3xl font-bold tracking-tight">Ready to start?</h2>
           <p className="text-white/85">7 days free. No card. Cancel anytime.</p>
           <div className="flex flex-col items-center justify-center gap-3 pt-2 sm:flex-row">
             <Link to="/auth" className="inline-flex h-12 w-full items-center justify-center rounded-xl bg-white px-8 font-bold text-blue-700 shadow-lg sm:w-auto">

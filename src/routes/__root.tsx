@@ -1,8 +1,12 @@
-import { createRootRoute, HeadContent, Outlet, Scripts } from '@tanstack/react-router'
+import { createRootRoute, HeadContent, Outlet, Scripts, useRouterState } from '@tanstack/react-router'
 import { lazy, Suspense } from 'react'
 import type { ReactNode } from 'react'
 import { useIsFetching } from '@tanstack/react-query'
 import { BottomNav } from '@/components/BottomNav'
+import { SideNav } from '@/components/shell/SideNav'
+import { TopBar } from '@/components/shell/TopBar'
+import { useAuth } from '@/lib/auth'
+import { showsStudentNav } from '@/lib/nav'
 import { Footer } from '@/components/Footer'
 import { NotFoundPage } from '@/components/NotFoundPage'
 import { PublicHeader } from '@/components/public/PublicHeader'
@@ -42,7 +46,7 @@ export const Route = createRootRoute({
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
       { name: 'google-site-verification', content: 'S8kJyYT-6kCzOytVerViOFKhPDPleWCwfltAxOG1DM4' },
-      { name: 'theme-color', content: '#2563eb' },
+      { name: 'theme-color', content: '#6438d8' },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: SITE.name },
       { property: 'og:locale', content: 'en_SL' },
@@ -103,18 +107,23 @@ function GlobalLoadingBar() {
 }
 
 function RootComponent() {
+  const { user } = useAuth()
+  const pathname = useRouterState({ select: (st) => st.location.pathname })
+  const studentNav = !!user && showsStudentNav(pathname)
   return (
-    <div className="flex h-screen flex-col bg-background text-foreground">
-      <main
-        className="flex-1 overflow-y-auto"
-        style={{ paddingTop: 'env(safe-area-inset-top)' }}
-      >
-        <div className="px-6 pt-6 pb-32">
-          <PublicHeader />
-          <Outlet />
-          <Footer />
-        </div>
-      </main>
+    <div className="flex h-screen bg-background text-foreground">
+      <SideNav />
+      <div className="flex min-w-0 flex-1 flex-col">
+        <main id="main" className="flex-1 overflow-y-auto" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
+          <TopBar />
+          {/* Bottom padding clears the fixed mobile navigation bar when it is shown. */}
+          <div className={`px-4 pt-4 sm:px-6 sm:pt-6 ${studentNav ? 'pb-28 lg:pb-12' : 'pb-12'}`}>
+            <PublicHeader />
+            <Outlet />
+            <Footer />
+          </div>
+        </main>
+      </div>
       <GlobalLoadingBar />
       <BottomNav />
       <Suspense fallback={null}>

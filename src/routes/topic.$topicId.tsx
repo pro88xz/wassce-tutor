@@ -56,7 +56,7 @@ function TopicPage() {
             <p className={`text-xs font-bold uppercase tracking-wider ${palette.text}`}>
               {[subject?.name, topic.group_name].filter(Boolean).join(' · ') || 'Topic'}
             </p>
-            <h1 className="text-3xl font-black tracking-tight text-balance">{topic.name}</h1>
+            <h1 className="text-3xl font-bold tracking-tight text-balance">{topic.name}</h1>
             {topic.description && <p className="text-muted-foreground">{topic.description}</p>}
           </div>
           {lessons.length > 0 && (

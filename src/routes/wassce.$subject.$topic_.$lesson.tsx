@@ -81,7 +81,7 @@ function PublicLessonPage() {
         <p className={`flex items-center gap-2 text-xs font-bold uppercase tracking-wider ${palette.text}`}>
           <SubjectIcon slug={subject.slug} size="sm" /> WASSCE {subject.name} · {topic.name}
         </p>
-        <h1 className="text-3xl font-black tracking-tight sm:text-4xl">{lesson.title}</h1>
+        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{lesson.title}</h1>
         <div className="rounded-xl border bg-muted/40 p-3 text-sm">
           <p>
             <span className="text-muted-foreground">Reviewed by </span>

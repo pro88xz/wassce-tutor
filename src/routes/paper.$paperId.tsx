@@ -100,7 +100,7 @@ function PaperPage() {
           {meta?.subject ? <SubjectIcon slug={meta.subject.slug} size="lg" /> : <Skeleton className="h-14 w-14" />}
           <div className="min-w-0">
             <p className={`text-xs font-bold uppercase tracking-wider ${palette.text}`}>{meta?.subject?.name ?? 'Past paper'}</p>
-            <h1 className="text-2xl font-black tracking-tight text-balance">{meta?.title ?? 'Past paper'}</h1>
+            <h1 className="text-2xl font-bold tracking-tight text-balance">{meta?.title ?? 'Past paper'}</h1>
             <p className="text-sm text-muted-foreground">
               {[meta?.paper_type, meta?.year, `${total} question${total === 1 ? '' : 's'}`].filter(Boolean).join(' · ')}
             </p>
@@ -119,11 +119,11 @@ function PaperPage() {
         <Card className="overflow-hidden">
           <div className={`flex flex-col items-center gap-5 bg-gradient-to-br ${palette.gradient} p-6 text-white sm:flex-row`}>
             <ProgressRing value={score} max={total} size={120} thickness={11} stroke="text-white" label="Score">
-              <span className="text-3xl font-black tabular-nums">{percent(score, total)}%</span>
+              <span className="text-3xl font-bold tabular-nums">{percent(score, total)}%</span>
               <span className="text-xs text-white/80">{score}/{total}</span>
             </ProgressRing>
             <div className="space-y-1 text-center sm:text-left">
-              <p className="text-2xl font-black">
+              <p className="text-2xl font-bold">
                 {score === total ? 'Perfect score!' : score >= total * 0.7 ? 'Great work!' : score >= total * 0.5 ? 'Good effort.' : 'Keep practising.'}
               </p>
               <p className="text-white/85">
@@ -132,9 +132,9 @@ function PaperPage() {
             </div>
           </div>
           <div className="grid grid-cols-3 divide-x text-center">
-            <div className="p-3"><p className="text-xl font-black text-emerald-600">{score}</p><p className="text-xs text-muted-foreground">Correct</p></div>
-            <div className="p-3"><p className="text-xl font-black text-red-600">{wrong}</p><p className="text-xs text-muted-foreground">Wrong</p></div>
-            <div className="p-3"><p className="text-xl font-black text-muted-foreground">{skipped}</p><p className="text-xs text-muted-foreground">Skipped</p></div>
+            <div className="p-3"><p className="text-xl font-bold text-emerald-600">{score}</p><p className="text-xs text-muted-foreground">Correct</p></div>
+            <div className="p-3"><p className="text-xl font-bold text-red-600">{wrong}</p><p className="text-xs text-muted-foreground">Wrong</p></div>
+            <div className="p-3"><p className="text-xl font-bold text-muted-foreground">{skipped}</p><p className="text-xs text-muted-foreground">Skipped</p></div>
           </div>
         </Card>
       )}

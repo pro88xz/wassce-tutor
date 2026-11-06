@@ -12,7 +12,7 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/(auth|subjects|tutor|profile|progress|onboarding|subscribe|reset-password|admin)",
+      "source": "/(auth|subjects|tutor|profile|account|practice|progress|onboarding|subscribe|reset-password|admin)",
       "destination": "/_shell"
     },
     {
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "source": "/(auth|subjects|tutor|profile|progress|onboarding|subscribe|reset-password|admin|subject|topic|lesson|paper)",
+      "source": "/(auth|subjects|tutor|profile|account|practice|progress|onboarding|subscribe|reset-password|admin|subject|topic|lesson|paper)",
       "headers": [
         {
           "key": "X-Robots-Tag",

@@ -1,113 +1,49 @@
 import { Link, useRouterState } from '@tanstack/react-router'
 import { useAuth } from '@/lib/auth'
+import { STUDENT_NAV, showsStudentNav } from '@/lib/nav'
 
-type Tab = {
-  to: '/' | '/subjects' | '/progress' | '/profile' | '/tutor'
-  label: string
-  icon: (active: boolean) => React.ReactNode
-}
-
-const leftTabs: Tab[] = [
-  {
-    to: '/',
-    label: 'Home',
-    icon: (active) => (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={active ? 2.4 : 1.8} className="h-6 w-6">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 12 12 3l9 9M5 10v10a1 1 0 0 0 1 1h4v-7h4v7h4a1 1 0 0 0 1-1V10" />
-      </svg>
-    ),
-  },
-  {
-    to: '/subjects',
-    label: 'Subjects',
-    icon: (active) => (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={active ? 2.4 : 1.8} className="h-6 w-6">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M4 5a2 2 0 0 1 2-2h10l4 4v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5Z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M8 11h8M8 15h5" />
-      </svg>
-    ),
-  },
-]
-
-const rightTabs: Tab[] = [
-  {
-    to: '/progress',
-    label: 'Progress',
-    icon: (active) => (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={active ? 2.4 : 1.8} className="h-6 w-6">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 17l5-5 4 4 8-8M14 8h6v6" />
-      </svg>
-    ),
-  },
-  {
-    to: '/profile',
-    label: 'Profile',
-    icon: (active) => (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={active ? 2.4 : 1.8} className="h-6 w-6">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM4 21a8 8 0 0 1 16 0" />
-      </svg>
-    ),
-  },
-]
-
+/**
+ * Signed-in mobile navigation: five primary destinations, fixed to the bottom
+ * safe area. Active state = purple icon and label plus a lavender indicator,
+ * so it never relies on colour alone. Hidden from 1024 px up (the sidebar
+ * takes over) and on focused screens (see showsStudentNav).
+ */
 export function BottomNav() {
   const { user } = useAuth()
   const pathname = useRouterState({ select: (s) => s.location.pathname })
-
-  if (!user) return null
-
-  const hideOn = ['/auth', '/onboarding', '/reset-password', '/subscribe']
-  if (hideOn.some((p) => pathname.startsWith(p))) return null
-
-  const isActive = (to: string) =>
-    to === '/' ? pathname === '/' : pathname === to || pathname.startsWith(to + '/')
-
-  const renderTab = (tab: Tab) => {
-    const active = isActive(tab.to)
-    return (
-      <Link
-        key={tab.to}
-        to={tab.to}
-        className={`flex flex-1 flex-col items-center justify-center gap-0.5 py-2.5 text-xs ${
-          active ? 'text-primary' : 'text-muted-foreground'
-        }`}
-      >
-        {tab.icon(active)}
-        <span className={active ? 'font-semibold' : ''}>{tab.label}</span>
-      </Link>
-    )
-  }
-
-  const tutorActive = isActive('/tutor')
+  if (!user || !showsStudentNav(pathname)) return null
 
   return (
     <nav
-      className="fixed bottom-0 left-0 right-0 z-40 border-t bg-background"
+      aria-label="Main"
+      className="fixed inset-x-0 bottom-0 z-40 border-t bg-card/95 backdrop-blur-md lg:hidden"
       style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}
     >
-      <div className="mx-auto flex max-w-3xl items-stretch relative">
-        {leftTabs.map(renderTab)}
-
-        {/* Centered raised Tutor button */}
-        <div className="flex-1 flex justify-center items-start pt-1.5">
-          <Link
-            to="/tutor"
-            className={`relative -mt-6 flex h-14 w-14 items-center justify-center rounded-full shadow-lg transition ${
-              tutorActive
-                ? 'bg-primary text-primary-foreground shadow-primary/40'
-                : 'bg-primary text-primary-foreground shadow-primary/30'
-            }`}
-            aria-label="Tutor"
-          >
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} className="h-7 w-7">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4L2 8l10 4 10-4-10-4z M6 10v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" />
-            </svg>
-            <span className="absolute -bottom-5 text-[10px] font-bold text-primary">Tutor</span>
-          </Link>
-        </div>
-
-        {rightTabs.map(renderTab)}
-      </div>
+      <ul className="mx-auto grid max-w-xl grid-cols-5">
+        {STUDENT_NAV.map(({ to, label, icon: Icon, match }) => {
+          const active = match(pathname)
+          return (
+            <li key={to}>
+              <Link
+                to={to}
+                aria-current={active ? 'page' : undefined}
+                className="flex min-h-[60px] flex-col items-center justify-center gap-1 px-1 py-2"
+              >
+                <span
+                  className={`flex h-7 w-14 items-center justify-center rounded-full transition-colors duration-150 ${
+                    active ? 'bg-brand-soft text-primary' : 'text-muted-foreground'
+                  }`}
+                >
+                  <Icon className="h-5 w-5" strokeWidth={active ? 2.2 : 1.8} aria-hidden />
+                </span>
+                <span className={`text-[11px] leading-none ${active ? 'font-semibold text-primary' : 'font-medium text-muted-foreground'}`}>
+                  {label}
+                </span>
+              </Link>
+            </li>
+          )
+        })}
+      </ul>
     </nav>
   )
 }

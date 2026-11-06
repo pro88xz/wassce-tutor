@@ -41,7 +41,7 @@ export function FacultySubjects({ subjects, detailed = false }: { subjects: Subj
     <div className="grid gap-6 sm:grid-cols-2">
       {facultiesOf(subjects).map((faculty) => (
         <section key={faculty.id} className="space-y-3 rounded-3xl border bg-card p-4 shadow-sm shadow-black/[0.03]">
-          <h3 className="px-2 text-lg font-black tracking-tight">{faculty.name}</h3>
+          <h3 className="px-2 text-lg font-bold tracking-tight">{faculty.name}</h3>
           {ROLE_ORDER.map((role) => {
             const list = subjects.filter((s) => s.faculties.some((f) => f.faculty.id === faculty.id && f.role === role))
             if (list.length === 0) return null

@@ -61,7 +61,7 @@ function TopicPage() {
             WASSCE {subject.name} · {group.name}
           </p>
         </div>
-        <h1 className="text-4xl font-black tracking-tight text-balance">{topic.name}</h1>
+        <h1 className="text-4xl font-bold tracking-tight text-balance">{topic.name}</h1>
         {topic.description && <p className="text-lg text-muted-foreground">{topic.description}</p>}
         <ul className="flex flex-wrap gap-2 text-sm font-semibold">
           <li className={`rounded-full px-3 py-1 ${palette.soft} ${palette.text}`}>
@@ -73,7 +73,7 @@ function TopicPage() {
       </header>
 
       <section className="space-y-3" aria-labelledby="lessons">
-        <h2 id="lessons" className="text-2xl font-black tracking-tight">Lessons in this topic</h2>
+        <h2 id="lessons" className="text-2xl font-bold tracking-tight">Lessons in this topic</h2>
         <ol className="space-y-2">
           {topic.lessons.map((lesson, i) => {
             const href = lesson.is_public ? lessonPath(subject.slug, topic.slug, lesson.slug) : user ? `/lesson/${lesson.id}` : null
@@ -115,7 +115,7 @@ function TopicPage() {
 
       {siblings.length > 0 && (
         <section className="space-y-3" aria-labelledby="more">
-          <h2 id="more" className="text-xl font-black tracking-tight">More in {group.name}</h2>
+          <h2 id="more" className="text-xl font-bold tracking-tight">More in {group.name}</h2>
           <ul className="grid gap-2 sm:grid-cols-2">
             {siblings.map((t) => (
               <li key={t.id}>

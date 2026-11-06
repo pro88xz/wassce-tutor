@@ -15,58 +15,50 @@ export type Palette = {
   bar: string
   /** tinted background: icon tiles, chips */
   soft: string
-  /** readable accent text on the page background */
+  /** readable accent text on the page background (AA contrast) */
   text: string
-  /** gradient for hero headers: use with bg-gradient-to-br */
+  /** kept for older call sites: a flat fill in the subject colour (no decorative gradients) */
   gradient: string
   /** outline highlight (e.g. the "up next" lesson) */
   ring: string
 }
 
+// Five restrained accents (Design System Blueprint section 14, "Subject colour
+// coding"). They help students scan; they are not separate brands, so every
+// subject card, header and control keeps the same structure.
 const PALETTES = {
-  indigo: { bar: 'bg-indigo-500', soft: 'bg-indigo-500/10', text: 'text-indigo-600 dark:text-indigo-400', gradient: 'from-indigo-500 to-blue-600', ring: 'ring-indigo-500' },
-  violet: { bar: 'bg-violet-500', soft: 'bg-violet-500/10', text: 'text-violet-600 dark:text-violet-400', gradient: 'from-violet-500 to-purple-600', ring: 'ring-violet-500' },
-  sky: { bar: 'bg-sky-500', soft: 'bg-sky-500/10', text: 'text-sky-600 dark:text-sky-400', gradient: 'from-sky-500 to-blue-600', ring: 'ring-sky-500' },
-  fuchsia: { bar: 'bg-fuchsia-500', soft: 'bg-fuchsia-500/10', text: 'text-fuchsia-600 dark:text-fuchsia-400', gradient: 'from-fuchsia-500 to-pink-600', ring: 'ring-fuchsia-500' },
-  emerald: { bar: 'bg-emerald-500', soft: 'bg-emerald-500/10', text: 'text-emerald-600 dark:text-emerald-400', gradient: 'from-emerald-500 to-teal-600', ring: 'ring-emerald-500' },
-  cyan: { bar: 'bg-cyan-500', soft: 'bg-cyan-500/10', text: 'text-cyan-600 dark:text-cyan-400', gradient: 'from-cyan-500 to-sky-600', ring: 'ring-cyan-500' },
-  orange: { bar: 'bg-orange-500', soft: 'bg-orange-500/10', text: 'text-orange-600 dark:text-orange-400', gradient: 'from-orange-500 to-red-500', ring: 'ring-orange-500' },
-  lime: { bar: 'bg-lime-500', soft: 'bg-lime-500/10', text: 'text-lime-700 dark:text-lime-400', gradient: 'from-lime-500 to-green-600', ring: 'ring-lime-500' },
-  teal: { bar: 'bg-teal-500', soft: 'bg-teal-500/10', text: 'text-teal-600 dark:text-teal-400', gradient: 'from-teal-500 to-emerald-600', ring: 'ring-teal-500' },
-  rose: { bar: 'bg-rose-500', soft: 'bg-rose-500/10', text: 'text-rose-600 dark:text-rose-400', gradient: 'from-rose-500 to-red-600', ring: 'ring-rose-500' },
-  amber: { bar: 'bg-amber-500', soft: 'bg-amber-500/10', text: 'text-amber-700 dark:text-amber-400', gradient: 'from-amber-500 to-orange-600', ring: 'ring-amber-500' },
-  blue: { bar: 'bg-blue-500', soft: 'bg-blue-500/10', text: 'text-blue-600 dark:text-blue-400', gradient: 'from-blue-500 to-indigo-600', ring: 'ring-blue-500' },
-  yellow: { bar: 'bg-yellow-500', soft: 'bg-yellow-500/10', text: 'text-yellow-700 dark:text-yellow-400', gradient: 'from-yellow-500 to-amber-600', ring: 'ring-yellow-500' },
-  green: { bar: 'bg-green-500', soft: 'bg-green-500/10', text: 'text-green-700 dark:text-green-400', gradient: 'from-green-500 to-emerald-600', ring: 'ring-green-500' },
-  slate: { bar: 'bg-slate-500', soft: 'bg-slate-500/10', text: 'text-slate-600 dark:text-slate-300', gradient: 'from-slate-500 to-slate-700', ring: 'ring-slate-500' },
-  purple: { bar: 'bg-purple-500', soft: 'bg-purple-500/10', text: 'text-purple-600 dark:text-purple-400', gradient: 'from-purple-500 to-fuchsia-600', ring: 'ring-purple-500' },
+  purple: { bar: 'bg-[#6438d8]', soft: 'bg-[#6438d8]/10', text: 'text-[#5a2fd0] dark:text-[#c4b2ff]', gradient: 'from-[#6438d8] to-[#6438d8]', ring: 'ring-[#6438d8]' },
+  teal: { bar: 'bg-[#0f8b8d]', soft: 'bg-[#0f8b8d]/10', text: 'text-[#0b6f71] dark:text-[#7fd6d4]', gradient: 'from-[#0f8b8d] to-[#0f8b8d]', ring: 'ring-[#0f8b8d]' },
+  blue: { bar: 'bg-[#2864c5]', soft: 'bg-[#2864c5]/10', text: 'text-[#2559b0] dark:text-[#9dbdf2]', gradient: 'from-[#2864c5] to-[#2864c5]', ring: 'ring-[#2864c5]' },
+  green: { bar: 'bg-[#17865b]', soft: 'bg-[#17865b]/10', text: 'text-[#136f4b] dark:text-[#86d6b1]', gradient: 'from-[#17865b] to-[#17865b]', ring: 'ring-[#17865b]' },
+  amber: { bar: 'bg-[#b66a12]', soft: 'bg-[#b66a12]/10', text: 'text-[#93550e] dark:text-[#f0c27c]', gradient: 'from-[#b66a12] to-[#b66a12]', ring: 'ring-[#b66a12]' },
 } satisfies Record<string, Palette>
 
 type SubjectTheme = { icon: LucideIcon; palette: Palette }
 
 const THEMES: Record<string, SubjectTheme> = {
-  'mathematics': { icon: Sigma, palette: PALETTES.indigo },
-  'further-mathematics': { icon: Pi, palette: PALETTES.violet },
-  'english-language': { icon: Languages, palette: PALETTES.sky },
-  'literature-in-english': { icon: BookMarked, palette: PALETTES.fuchsia },
-  'biology': { icon: Dna, palette: PALETTES.emerald },
-  'chemistry': { icon: FlaskConical, palette: PALETTES.cyan },
-  'physics': { icon: Atom, palette: PALETTES.orange },
-  'agricultural-science': { icon: Sprout, palette: PALETTES.lime },
+  'mathematics': { icon: Sigma, palette: PALETTES.purple },
+  'further-mathematics': { icon: Pi, palette: PALETTES.purple },
+  'english-language': { icon: Languages, palette: PALETTES.blue },
+  'literature-in-english': { icon: BookMarked, palette: PALETTES.amber },
+  'biology': { icon: Dna, palette: PALETTES.green },
+  'chemistry': { icon: FlaskConical, palette: PALETTES.teal },
+  'physics': { icon: Atom, palette: PALETTES.blue },
+  'agricultural-science': { icon: Sprout, palette: PALETTES.green },
   'economics': { icon: TrendingUp, palette: PALETTES.teal },
-  'government': { icon: Landmark, palette: PALETTES.rose },
+  'government': { icon: Landmark, palette: PALETTES.amber },
   'history': { icon: ScrollText, palette: PALETTES.amber },
-  'geography': { icon: Globe, palette: PALETTES.blue },
-  'commerce': { icon: Store, palette: PALETTES.yellow },
+  'geography': { icon: Globe, palette: PALETTES.teal },
+  'commerce': { icon: Store, palette: PALETTES.amber },
   'financial-accounting': { icon: Calculator, palette: PALETTES.green },
-  'business-management': { icon: Briefcase, palette: PALETTES.slate },
-  'ict-computer-studies': { icon: Monitor, palette: PALETTES.indigo },
+  'business-management': { icon: Briefcase, palette: PALETTES.blue },
+  'ict-computer-studies': { icon: Monitor, palette: PALETTES.blue },
   'religious-studies': { icon: HandHeart, palette: PALETTES.purple },
-  'technical-drawing': { icon: PencilRuler, palette: PALETTES.slate },
-  'building-construction': { icon: HardHat, palette: PALETTES.orange },
+  'technical-drawing': { icon: PencilRuler, palette: PALETTES.teal },
+  'building-construction': { icon: HardHat, palette: PALETTES.amber },
 }
 
-const FALLBACK: SubjectTheme = { icon: BookOpen, palette: PALETTES.slate }
+const FALLBACK: SubjectTheme = { icon: BookOpen, palette: PALETTES.purple }
 
 export function subjectTheme(slug: string | null | undefined): SubjectTheme {
   return (slug && THEMES[slug]) || FALLBACK
@@ -75,11 +67,11 @@ export function subjectTheme(slug: string | null | undefined): SubjectTheme {
 /** Rounded tile with the subject's icon on its tinted colour. */
 export function SubjectIcon({ slug, size = 'md' }: { slug: string | null | undefined; size?: 'sm' | 'md' | 'lg' }) {
   const { icon: Icon, palette } = subjectTheme(slug)
-  const box = size === 'lg' ? 'h-14 w-14 rounded-2xl' : size === 'sm' ? 'h-8 w-8 rounded-lg' : 'h-11 w-11 rounded-xl'
-  const glyph = size === 'lg' ? 'h-7 w-7' : size === 'sm' ? 'h-4 w-4' : 'h-5 w-5'
+  const box = size === 'lg' ? 'h-12 w-12 rounded-xl' : size === 'sm' ? 'h-8 w-8 rounded-lg' : 'h-10 w-10 rounded-xl'
+  const glyph = size === 'lg' ? 'h-6 w-6' : size === 'sm' ? 'h-4 w-4' : 'h-5 w-5'
   return (
     <span className={`inline-flex shrink-0 items-center justify-center ${box} ${palette.soft} ${palette.text}`}>
-      <Icon className={glyph} strokeWidth={2.2} aria-hidden />
+      <Icon className={glyph} strokeWidth={2} aria-hidden />
     </span>
   )
 }

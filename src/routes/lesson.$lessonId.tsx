@@ -65,7 +65,7 @@ function LessonPage() {
         </div>
 
         <header className="space-y-2">
-          <h1 className="text-3xl font-black tracking-tight text-balance sm:text-4xl">{lesson.title}</h1>
+          <h1 className="text-3xl font-bold tracking-tight text-balance sm:text-4xl">{lesson.title}</h1>
           <p className="flex items-center gap-3 text-sm text-muted-foreground">
             {lesson.est_minutes && (
               <span className="inline-flex items-center gap-1"><Clock className="h-4 w-4" aria-hidden /> {lesson.est_minutes} min read</span>

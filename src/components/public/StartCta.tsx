@@ -21,7 +21,7 @@ export function StartCta({
     <section className={`relative overflow-hidden rounded-3xl bg-gradient-to-br ${gradient} p-6 text-white shadow-lg`}>
       <div aria-hidden className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-white/10 blur-2xl" />
       <div className="relative space-y-3">
-        <h2 className="text-2xl font-black tracking-tight text-balance">{heading}</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-balance">{heading}</h2>
         <p className="text-white/85">{body}</p>
         {user ? (
           <a href={appHref ?? '/subjects'} className="inline-flex h-12 items-center rounded-xl bg-white px-6 font-bold text-slate-900 shadow-md">

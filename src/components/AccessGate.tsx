@@ -33,11 +33,11 @@ export function AccessGate({ children }: { children: ReactNode }) {
   // Locked screen
   return (
     <div className="mx-auto max-w-md space-y-6 pt-6 text-center">
-      <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 via-violet-600 to-fuchsia-600 text-white shadow-lg shadow-violet-500/20">
+      <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-primary text-white shadow-sm">
         <Lock className="h-7 w-7" aria-hidden />
       </span>
       <div className="space-y-2">
-        <h1 className="text-3xl font-black tracking-tight text-balance">{headline}</h1>
+        <h1 className="text-3xl font-bold tracking-tight text-balance">{headline}</h1>
         <p className="text-muted-foreground">{subtext}</p>
       </div>
       <ul className="space-y-2 rounded-3xl border bg-card p-4 text-left text-sm">
@@ -50,7 +50,7 @@ export function AccessGate({ children }: { children: ReactNode }) {
       <div className="space-y-3">
         <Link
           to="/subscribe"
-          className="flex h-12 w-full items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-violet-600 text-base font-bold text-white shadow-md transition hover:shadow-lg"
+          className="flex h-12 w-full items-center justify-center rounded-2xl bg-primary text-base font-bold text-white shadow-md transition hover:shadow-lg"
         >
           See plans · from 25 NLe / month
         </Link>

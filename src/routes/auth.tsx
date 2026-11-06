@@ -60,11 +60,11 @@ function AuthPage() {
     <div className="flex min-h-[80vh] items-center justify-center px-1 py-6">
       <div className="w-full max-w-sm space-y-6">
         <div className="space-y-3 text-center">
-          <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 via-violet-600 to-fuchsia-600 text-white shadow-lg shadow-violet-500/20">
+          <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-white shadow-sm">
             <GraduationCap className="h-7 w-7" aria-hidden />
           </span>
           <div className="space-y-1">
-            <h1 className="text-3xl font-black tracking-tight">
+            <h1 className="text-3xl font-bold tracking-tight">
               {mode === 'signup' ? 'Create your free account' : mode === 'forgot' ? 'Reset your password' : 'Welcome back'}
             </h1>
             <p className="text-sm text-muted-foreground">
@@ -142,7 +142,7 @@ function AuthPage() {
           <button
             type="submit"
             disabled={loading}
-            className="h-12 w-full rounded-xl bg-gradient-to-br from-blue-600 to-violet-600 text-base font-bold text-white shadow-md transition hover:shadow-lg disabled:opacity-60"
+            className="h-12 w-full rounded-xl bg-primary text-base font-bold text-white shadow-md transition hover:shadow-lg disabled:opacity-60"
           >
             {loading ? 'Please wait…' : mode === 'signup' ? 'Start my free trial' : mode === 'forgot' ? 'Send reset link' : 'Sign in'}
           </button>

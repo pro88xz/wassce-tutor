@@ -57,11 +57,11 @@ function Overview({ summary }: { summary: ProgressSummary }) {
     <Card className="overflow-hidden">
       <div className="flex flex-col items-center gap-6 bg-gradient-to-br from-primary/10 via-violet-500/5 to-transparent p-6 sm:flex-row">
         <ProgressRing value={summary.done} max={summary.total} size={132} thickness={12} label="Lessons completed across your subjects">
-          <span className="text-3xl font-black tabular-nums">{p}%</span>
+          <span className="text-3xl font-bold tabular-nums">{p}%</span>
           <span className="text-xs text-muted-foreground">complete</span>
         </ProgressRing>
         <div className="w-full space-y-1 text-center sm:text-left">
-          <p className="text-2xl font-black tracking-tight">
+          <p className="text-2xl font-bold tracking-tight">
             {summary.done} of {summary.total} lessons
           </p>
           <p className="text-sm text-muted-foreground">
@@ -143,7 +143,7 @@ function SubjectCard({ s, open, onToggle }: { s: SubjectProgress; open: boolean;
         <div className="min-w-0 flex-1 space-y-2">
           <div className="flex items-baseline justify-between gap-3">
             <p className="truncate font-bold">{s.subject.name}</p>
-            <p className={`shrink-0 text-sm font-black tabular-nums ${palette.text}`}>{s.total > 0 ? `${p}%` : '–'}</p>
+            <p className={`shrink-0 text-sm font-bold tabular-nums ${palette.text}`}>{s.total > 0 ? `${p}%` : '–'}</p>
           </div>
           <ProgressBar value={s.done} max={s.total} fill={palette.bar} label={`${s.subject.name} lessons completed`} />
           <p className="text-xs text-muted-foreground">

@@ -111,19 +111,19 @@ function AdminDownloads() {
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         <div className="rounded-2xl border bg-card p-4 text-center">
           <p className="text-xs uppercase tracking-wide text-muted-foreground">All time</p>
-          <p className="mt-1 text-2xl font-black">{rows.length}</p>
+          <p className="mt-1 text-2xl font-bold">{rows.length}</p>
         </div>
         <div className="rounded-2xl border bg-card p-4 text-center">
           <p className="text-xs uppercase tracking-wide text-muted-foreground">Last 24h</p>
-          <p className="mt-1 text-2xl font-black">{last24h}</p>
+          <p className="mt-1 text-2xl font-bold">{last24h}</p>
         </div>
         <div className="rounded-2xl border bg-card p-4 text-center">
           <p className="text-xs uppercase tracking-wide text-muted-foreground">Last hour</p>
-          <p className="mt-1 text-2xl font-black">{last1h}</p>
+          <p className="mt-1 text-2xl font-bold">{last1h}</p>
         </div>
         <div className="rounded-2xl border bg-card p-4 text-center">
           <p className="text-xs uppercase tracking-wide text-muted-foreground">Unique</p>
-          <p className="mt-1 text-2xl font-black">{uniqueClients}</p>
+          <p className="mt-1 text-2xl font-bold">{uniqueClients}</p>
         </div>
       </div>
 

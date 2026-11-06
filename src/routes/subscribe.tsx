@@ -198,10 +198,10 @@ function SubscribePage() {
   return (
     <div className="mx-auto max-w-md space-y-6 pb-8">
       <header className="space-y-3 text-center">
-        <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 via-violet-600 to-fuchsia-600 text-white shadow-lg shadow-violet-500/20">
+        <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-white shadow-sm">
           <Sparkles className="h-7 w-7" aria-hidden />
         </span>
-        <h1 className="text-3xl font-black tracking-tight">Choose your plan</h1>
+        <h1 className="text-3xl font-bold tracking-tight">Choose your plan</h1>
         <p className="text-sm text-muted-foreground">Every plan unlocks every subject, every paper and your AI tutor.</p>
       </header>
 
@@ -240,7 +240,7 @@ function SubscribePage() {
                   )}
                 </div>
                 <div className="shrink-0 text-right">
-                  <p className="text-3xl font-black leading-none tracking-tight">{p.amount}<span className="ml-1 text-sm font-semibold text-muted-foreground">NLe</span></p>
+                  <p className="text-3xl font-bold leading-none tracking-tight">{p.amount}<span className="ml-1 text-sm font-semibold text-muted-foreground">NLe</span></p>
                   <p className="text-xs text-muted-foreground">{p.period}</p>
                 </div>
               </div>
@@ -268,7 +268,7 @@ function SubscribePage() {
           </p>
           <div className="rounded-xl bg-background p-3 text-center">
             <p className="text-xs text-muted-foreground">You can try again in</p>
-            <p className="text-2xl font-black font-mono mt-0.5">
+            <p className="text-2xl font-bold font-mono mt-0.5">
               {String(remainingMin).padStart(2, '0')}:{String(remainingSec).padStart(2, '0')}
             </p>
           </div>

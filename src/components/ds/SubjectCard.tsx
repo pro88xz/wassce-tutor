@@ -23,7 +23,7 @@ export function SubjectCard({ s, compact = false }: { s: SubjectProgress; compac
             {s.avgScore !== null && ` · papers ${s.avgScore}%`}
           </p>
         </div>
-        {s.total > 0 && <span className={`text-lg font-black tabular-nums ${palette.text}`}>{p}%</span>}
+        {s.total > 0 && <span className={`text-lg font-bold tabular-nums ${palette.text}`}>{p}%</span>}
       </div>
       <ProgressBar value={s.done} max={s.total} fill={palette.bar} label={`${s.subject.name} lessons completed`} />
       {!compact && s.next && (

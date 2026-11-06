@@ -73,8 +73,8 @@ function AdminPage() {
     return (
       <div className="mx-auto max-w-sm space-y-5 pt-8">
         <div className="text-center space-y-1">
-          <span className="mx-auto mb-2 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-violet-600 text-white shadow-lg"><ShieldCheck className="h-7 w-7" aria-hidden /></span>
-          <h1 className="text-3xl font-black tracking-tight">Admin access</h1>
+          <span className="mx-auto mb-2 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-white shadow-lg"><ShieldCheck className="h-7 w-7" aria-hidden /></span>
+          <h1 className="text-3xl font-bold tracking-tight">Admin access</h1>
           <p className="text-sm text-muted-foreground">Confirm your password to continue.</p>
         </div>
         <input
@@ -103,7 +103,7 @@ function AdminPage() {
         <div className="flex items-center justify-between">
           <div>
             <p className="text-xs uppercase tracking-wide text-muted-foreground">Admin</p>
-            <h1 className="text-3xl font-black tracking-tight">Content management</h1>
+            <h1 className="text-3xl font-bold tracking-tight">Content management</h1>
           </div>
           <Link to="/"><Button variant="outline" size="sm">Back</Button></Link>
         </div>

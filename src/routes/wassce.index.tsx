@@ -45,7 +45,7 @@ function WasscePillarPage() {
     <article className="mx-auto max-w-3xl space-y-12 pb-12">
       <header className="space-y-3 pt-2">
         <Breadcrumbs trail={TRAIL} />
-        <h1 className="text-4xl font-black tracking-tight">WASSCE in Sierra Leone</h1>
+        <h1 className="text-4xl font-bold tracking-tight">WASSCE in Sierra Leone</h1>
         <p className="text-lg text-muted-foreground">
           The subjects you&rsquo;ll sit, how WASSCE is graded, and the full syllabus for each subject, in one place.
         </p>

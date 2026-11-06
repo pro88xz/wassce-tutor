@@ -183,7 +183,7 @@ export type ProgressSummary = {
 }
 
 const latest = (a: string | null, b: string | null) => (!a ? b : !b ? a : a > b ? a : b)
-const localDay = (iso: string) => {
+export const localDay = (iso: string) => {
   const d = new Date(iso)
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
 }

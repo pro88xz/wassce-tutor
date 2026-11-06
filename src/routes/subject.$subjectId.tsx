@@ -41,7 +41,7 @@ function SubjectPage() {
               </span>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider text-white/80">WASSCE subject</p>
-                <h1 className="text-3xl font-black tracking-tight">{subject?.name ?? ' '}</h1>
+                <h1 className="text-3xl font-bold tracking-tight">{subject?.name ?? ' '}</h1>
               </div>
             </div>
             {sp ? (
@@ -50,7 +50,7 @@ function SubjectPage() {
                   <span className="font-semibold">
                     {sp.total > 0 ? `${sp.done} of ${sp.total} lessons` : 'Lessons coming soon'}
                   </span>
-                  {sp.total > 0 && <span className="text-2xl font-black tabular-nums">{percent(sp.done, sp.total)}%</span>}
+                  {sp.total > 0 && <span className="text-2xl font-bold tabular-nums">{percent(sp.done, sp.total)}%</span>}
                 </div>
                 <ProgressBar value={sp.done} max={sp.total} size="lg" fill="bg-white" track="bg-white/25" label={`${sp.subject.name} lessons completed`} />
                 <p className="text-sm text-white/85">

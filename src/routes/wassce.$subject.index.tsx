@@ -63,7 +63,7 @@ function SubjectHubPage() {
             <Icon className="h-6 w-6" aria-hidden />
           </span>
           <div className="space-y-2">
-            <h1 className="text-4xl font-black tracking-tight">WASSCE {subject.name}</h1>
+            <h1 className="text-4xl font-bold tracking-tight">WASSCE {subject.name}</h1>
             <p className="text-white/90">
               Every topic in the WASSCE {subject.name} syllabus, grouped the way you&rsquo;ll study it, with lessons
               written for Sierra Leone students.
@@ -80,7 +80,7 @@ function SubjectHubPage() {
       </header>
 
       <section className="space-y-8" aria-labelledby="syllabus">
-        <h2 id="syllabus" className="text-2xl font-black tracking-tight">{subject.name} syllabus topics</h2>
+        <h2 id="syllabus" className="text-2xl font-bold tracking-tight">{subject.name} syllabus topics</h2>
         {groups.map((group) => (
           <section key={group.name} className="space-y-3">
             <div className="flex items-center justify-between gap-3">
@@ -129,7 +129,7 @@ function SubjectHubPage() {
 
       {related.length > 0 && (
         <section className="space-y-3" aria-labelledby="related">
-          <h2 id="related" className="text-xl font-black tracking-tight">Related subjects</h2>
+          <h2 id="related" className="text-xl font-bold tracking-tight">Related subjects</h2>
           <ul className="grid gap-2 sm:grid-cols-2">
             {related.map((s) => (
               <li key={s.id}>

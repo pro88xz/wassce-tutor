@@ -118,6 +118,25 @@ export function usePapers(subjectId: string | null) {
   })
 }
 
+// Published papers and practice sets for several subjects at once (Practice hub, Home)
+export function usePapersForSubjects(subjectIds: string[]) {
+  const ids = [...subjectIds].sort()
+  return useQuery({
+    queryKey: ['papers-for', ids.join(',')],
+    enabled: ids.length > 0,
+    queryFn: async (): Promise<PaperRow[]> => {
+      const { data, error } = await supabase
+        .from('papers')
+        .select('id, subject_id, title, year, paper_type, description, question_count')
+        .in('subject_id', ids)
+        .eq('is_published', true)
+        .order('sort_order')
+      if (error) throw error
+      return data as PaperRow[]
+    },
+  })
+}
+
 // A full paper: its questions, each with its options
 export function usePaper(paperId: string | null) {
   return useQuery({

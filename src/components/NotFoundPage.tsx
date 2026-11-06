@@ -10,7 +10,7 @@ export function NotFoundPage() {
       <title>{`Page not found | ${SITE.name}`}</title>
       <meta name="robots" content="noindex" />
       <p className="text-xs uppercase tracking-wide text-muted-foreground">404</p>
-      <h1 className="text-4xl font-black tracking-tight">Page not found</h1>
+      <h1 className="text-4xl font-bold tracking-tight">Page not found</h1>
       <p className="text-muted-foreground">
         We couldn&rsquo;t find that page. It may have moved, or the link may be wrong.
       </p>

@@ -39,8 +39,8 @@ function Hero() {
     <section className="relative left-1/2 right-1/2 -mx-[50vw] -mt-6 w-screen overflow-hidden">
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-br from-blue-600 via-violet-700 to-fuchsia-700"
-        style={{ backgroundSize: '200% 200%', animation: 'heroGradient 20s ease infinite' }}
+        className="absolute inset-0 bg-gradient-to-br from-primary to-brand-strong"
+
       />
       <div aria-hidden className="absolute -left-32 -top-32 h-96 w-96 rounded-full bg-blue-400/30 blur-3xl" />
       <div aria-hidden className="absolute -bottom-40 -right-32 h-[28rem] w-[28rem] rounded-full bg-fuchsia-400/25 blur-3xl" />
@@ -51,7 +51,7 @@ function Hero() {
           <Sparkles className="h-3.5 w-3.5" aria-hidden /> Built in Freetown for Sierra Leone students
         </p>
         <div className="space-y-4">
-          <h1 className="text-4xl font-black tracking-tight text-balance text-white drop-shadow-md sm:text-6xl">
+          <h1 className="text-4xl font-bold tracking-tight text-balance text-white drop-shadow-md sm:text-6xl">
             Pass WASSCE with confidence.
           </h1>
           <p className="mx-auto max-w-xl text-balance text-base text-white/90 sm:text-lg">
@@ -86,7 +86,7 @@ function ProofStrip({ data }: { data: LandingData }) {
     <section aria-label="WASSCE Tutor in numbers" className="relative z-10 -mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-3xl border bg-border shadow-xl shadow-black/5 sm:grid-cols-4">
       {items.map(([value, label]) => (
         <div key={label} className="bg-card px-4 py-5 text-center">
-          <p className="text-3xl font-black tracking-tight tabular-nums">{value}</p>
+          <p className="text-3xl font-bold tracking-tight tabular-nums">{value}</p>
           <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{label}</p>
         </div>
       ))}
@@ -98,7 +98,7 @@ function SectionTitle({ eyebrow, title, body }: { eyebrow: string; title: string
   return (
     <div className="mx-auto max-w-2xl space-y-2 text-center">
       <p className="text-xs font-bold uppercase tracking-wider text-primary">{eyebrow}</p>
-      <h2 className="text-3xl font-black tracking-tight text-balance">{title}</h2>
+      <h2 className="text-3xl font-bold tracking-tight text-balance">{title}</h2>
       {body && <p className="text-muted-foreground">{body}</p>}
     </div>
   )
@@ -241,8 +241,8 @@ function HowItWorks() {
       <ol className="grid gap-3 sm:grid-cols-3">
         {steps.map(({ icon: Icon, title, body }, i) => (
           <li key={title} className="relative rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03]">
-            <span className="absolute right-5 top-4 text-5xl font-black text-muted/80" aria-hidden>{i + 1}</span>
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-violet-600 text-white">
+            <span className="absolute right-5 top-4 text-5xl font-bold text-muted/80" aria-hidden>{i + 1}</span>
+            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary text-white">
               <Icon className="h-5 w-5" aria-hidden />
             </span>
             <h3 className="mt-4 text-lg font-bold">{title}</h3>
@@ -307,7 +307,7 @@ function Plans() {
             )}
             <span className="text-sm font-semibold text-muted-foreground">{p.name}</span>
             <span>
-              <span className="text-5xl font-black tracking-tight">{p.price}</span>
+              <span className="text-5xl font-bold tracking-tight">{p.price}</span>
               <span className="ml-1 text-sm font-semibold text-muted-foreground">NLe</span>
             </span>
             <span className="text-xs text-muted-foreground">{p.period}</span>
@@ -358,10 +358,10 @@ function Faq() {
 
 function FinalCta() {
   return (
-    <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-violet-700 to-fuchsia-700 px-6 py-12 text-center text-white shadow-xl">
+    <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-brand-strong px-6 py-12 text-center text-white shadow-xl">
       <div aria-hidden className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-white/10 blur-2xl" />
       <div className="relative space-y-4">
-        <h2 className="text-3xl font-black tracking-tight text-balance">Your WASSCE is closer than you think.</h2>
+        <h2 className="text-3xl font-bold tracking-tight text-balance">Your WASSCE is closer than you think.</h2>
         <p className="text-white/85">Start studying smarter today. 7 days free, no card needed.</p>
         <div className="flex flex-col items-center justify-center gap-3 pt-2 sm:flex-row">
           <Link to="/auth" className="inline-flex h-12 w-full items-center justify-center rounded-xl bg-white px-8 font-bold text-blue-700 shadow-lg sm:w-auto">

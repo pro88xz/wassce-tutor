@@ -35,7 +35,7 @@ function SubjectsIndexPage() {
     <article className="mx-auto max-w-3xl space-y-10 pb-12">
       <header className="space-y-3 pt-2">
         <Breadcrumbs trail={TRAIL} />
-        <h1 className="text-4xl font-black tracking-tight">WASSCE subjects</h1>
+        <h1 className="text-4xl font-bold tracking-tight">WASSCE subjects</h1>
         <p className="text-lg text-muted-foreground">
           Every WASSCE subject on WASSCE Tutor, grouped by faculty. English Language and Mathematics are core
           subjects for every candidate; the rest depend on whether you&rsquo;re in Science, Arts, Commercial or

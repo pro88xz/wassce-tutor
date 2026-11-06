@@ -361,7 +361,7 @@ function AdminLessons() {
                 type="button"
                 onClick={generateDraft}
                 disabled={generating}
-                className="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-primary to-primary/80 px-3 py-1.5 text-xs font-semibold text-primary-foreground shadow-sm hover:opacity-90 disabled:opacity-50 transition"
+                className="inline-flex items-center gap-2 rounded-md bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground shadow-sm hover:opacity-90 disabled:opacity-50 transition"
               >
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-3.5 w-3.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 3l1.5 4.5L11 9l-4.5 1.5L5 15l-1.5-4.5L-1 9l4.5-1.5z M14 14l1 3 3 1-3 1-1 3-1-3-3-1 3-1z" transform="translate(2 0)" />

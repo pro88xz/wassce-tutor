@@ -119,15 +119,15 @@ function AdminImport() {
           <div className="grid grid-cols-3 gap-3">
             <div className="rounded-2xl border border-emerald-500/30 bg-emerald-500/5 p-4 text-center">
               <p className="text-xs uppercase tracking-wide text-emerald-700">Inserted</p>
-              <p className="mt-1 text-2xl font-black text-emerald-700">{result.inserted}</p>
+              <p className="mt-1 text-2xl font-bold text-emerald-700">{result.inserted}</p>
             </div>
             <div className="rounded-2xl border border-amber-500/30 bg-amber-500/5 p-4 text-center">
               <p className="text-xs uppercase tracking-wide text-amber-700">Updated</p>
-              <p className="mt-1 text-2xl font-black text-amber-700">{result.updated}</p>
+              <p className="mt-1 text-2xl font-bold text-amber-700">{result.updated}</p>
             </div>
             <div className="rounded-2xl border border-red-500/30 bg-red-500/5 p-4 text-center">
               <p className="text-xs uppercase tracking-wide text-red-700">Errors</p>
-              <p className="mt-1 text-2xl font-black text-red-700">{result.errors?.length ?? 0}</p>
+              <p className="mt-1 text-2xl font-bold text-red-700">{result.errors?.length ?? 0}</p>
             </div>
           </div>
           {result.errors && result.errors.length > 0 && (
