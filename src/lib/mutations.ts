@@ -91,6 +91,7 @@ export function useSaveAttempt() {
     },
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ['attempts'] })
+      qc.invalidateQueries({ queryKey: ['attempts-all'] })
     },
   })
 }
