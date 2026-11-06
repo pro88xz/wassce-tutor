@@ -45,6 +45,17 @@ jobs:
       - run: npm run notes:validate
       - run: npm run notes:test
       - run: npm run notes:build
+      - name: Verify live Supabase curriculum mapping
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        shell: bash
+        run: |
+          if [[ -z "$SUPABASE_URL" || -z "$SUPABASE_ANON_KEY" ]]; then
+            echo "::notice::Skipping live catalog check; configure SUPABASE_URL and SUPABASE_ANON_KEY repository Actions secrets to enable it."
+            exit 0
+          fi
+          npm run notes:catalog
       - name: Upload generated ingestion report
         if: always()
         uses: actions/upload-artifact@v4
