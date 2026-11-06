@@ -256,3 +256,10 @@ html.native-app [data-landing] { display: none; }
   }
 }
 
+
+/* Product tour: the phone screen fades up when a step is chosen. */
+@keyframes tour-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+.tour-in { animation: tour-in 0.28s cubic-bezier(0.2, 0.8, 0.2, 1); }

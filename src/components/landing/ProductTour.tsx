@@ -1,18 +1,8 @@
 // "How it works" as a product tour: each step shows a faithful preview of the
 // real screen instead of an icon card. The practice preview uses a real
 // question, diagram and working from the Mathematics question bank.
-import { Check, CircleCheck, Clock, RotateCcw, Sparkles } from 'lucide-react'
-import type { ReactNode } from 'react'
-
-function Frame({ tint, children }: { tint: string; children: ReactNode }) {
-  return (
-    <div className={`rounded-2xl p-4 sm:p-6 ${tint}`}>
-      <div className="mx-auto max-w-sm rounded-2xl border bg-card p-4 text-left shadow-sm sm:p-5" aria-hidden>
-        {children}
-      </div>
-    </div>
-  )
-}
+import { Check, CircleCheck, Clock, Lightbulb, MessageCircleQuestion, RotateCcw, Sparkles } from 'lucide-react'
+import { useState, type ReactNode } from 'react'
 
 function LessonPreview() {
   return (
@@ -56,7 +46,7 @@ function QuestionPreview() {
       <p className="mt-2 text-sm font-semibold leading-relaxed">
         In the diagram, AB is a diameter of the circle with centre O and ∠CAB = 38°. Find the angle marked x.
       </p>
-      <img src="/questions/mathematics/maths-circles-02.svg" alt="" loading="lazy" width={240} height={180} className="mx-auto my-2 h-36 w-auto sm:h-44" />
+      <img src="/questions/mathematics/maths-circles-02.svg" alt="" loading="lazy" width={240} height={180} className="mx-auto my-1.5 h-28 w-auto" />
       <div className="grid grid-cols-2 gap-2">
         {opts.map(([l, v, state]) => (
           <div
@@ -144,15 +134,32 @@ function ProgressPreview() {
   )
 }
 
-const STEPS = [
+type Chip = { icon: ReactNode; text: string; tone: string }
+
+const STEPS: {
+  n: number
+  label: string
+  title: string
+  body: string
+  points: string[]
+  stage: string
+  accent: string
+  preview: ReactNode
+  chips: [Chip, Chip]
+}[] = [
   {
     n: 1,
     label: 'Learn',
     title: 'Short lessons, written to the syllabus',
     body: 'Every topic is broken into short lessons with key ideas, worked examples and a quick check, in the order WASSCE teaches it.',
     points: ['Worked examples step by step', 'Properly typeset maths and diagrams'],
-    tint: 'bg-brand-soft/70',
+    stage: 'from-[#e9e1ff] via-[#f3efff] to-[#ddd2ff]',
+    accent: 'bg-[#5b34d6]',
     preview: <LessonPreview />,
+    chips: [
+      { icon: <Clock className="h-4 w-4" />, text: '14-minute lesson', tone: 'text-primary' },
+      { icon: <CircleCheck className="h-4 w-4" />, text: 'Lesson complete', tone: 'text-success' },
+    ],
   },
   {
     n: 2,
@@ -160,8 +167,13 @@ const STEPS = [
     title: 'Exam-style questions with the full working',
     body: 'Answer original WASSCE-style questions. Each one is marked straight away, with the working and the reason each wrong option is wrong.',
     points: ['A clear diagram wherever the question needs one', 'Learn from the exact mistake you made'],
-    tint: 'bg-success/10',
+    stage: 'from-[#d6f3e6] via-[#ecfaf3] to-[#c9eedc]',
+    accent: 'bg-[#15805a]',
     preview: <QuestionPreview />,
+    chips: [
+      { icon: <Check className="h-4 w-4" />, text: 'Marked instantly', tone: 'text-success' },
+      { icon: <Lightbulb className="h-4 w-4" />, text: 'Why 76° is wrong', tone: 'text-warning' },
+    ],
   },
   {
     n: 3,
@@ -169,8 +181,13 @@ const STEPS = [
     title: 'An AI tutor when you are stuck',
     body: 'Ask about any step in plain English. The tutor explains one step at a time, then gives you a quick check to try yourself.',
     points: ['Open it from any lesson with your question ready', 'Clearly labelled as AI, with a report button'],
-    tint: 'bg-info/10',
+    stage: 'from-[#dbe7fb] via-[#eef4fd] to-[#cfe0fa]',
+    accent: 'bg-[#2560c0]',
     preview: <TutorPreview />,
+    chips: [
+      { icon: <Sparkles className="h-4 w-4" />, text: 'Step by step', tone: 'text-info' },
+      { icon: <MessageCircleQuestion className="h-4 w-4" />, text: 'Ask follow-ups', tone: 'text-primary' },
+    ],
   },
   {
     n: 4,
@@ -178,39 +195,127 @@ const STEPS = [
     title: 'See what is done and what needs work',
     body: 'Your progress shows which topics are completed, which are in progress and which your practice says to review before the exam.',
     points: ['Review suggestions from your real scores', 'Every number comes from what you have done'],
-    tint: 'bg-warning/10',
+    stage: 'from-[#fbe8cf] via-[#fdf4e8] to-[#f7dcb8]',
+    accent: 'bg-[#b0610f]',
     preview: <ProgressPreview />,
+    chips: [
+      { icon: <RotateCcw className="h-4 w-4" />, text: 'Review recommended', tone: 'text-warning' },
+      { icon: <CircleCheck className="h-4 w-4" />, text: '13 topics completed', tone: 'text-success' },
+    ],
   },
 ]
 
-export function ProductTour() {
+/** The real screen inside a phone, on a coloured stage, with floating result chips. */
+function Showcase({ step }: { step: (typeof STEPS)[number] }) {
+  const chip = 'absolute z-10 inline-flex items-center gap-1.5 rounded-full border bg-card px-3 py-2 text-[13px] font-semibold shadow-lg'
   return (
-    <section className="space-y-10" aria-labelledby="tour-heading">
+    <div className={`relative overflow-hidden rounded-[1.75rem] bg-gradient-to-br ${step.stage} px-5 py-10 sm:px-10 sm:py-12`}>
+      <div aria-hidden className="pointer-events-none absolute inset-0 bg-[radial-gradient(rgba(40,20,95,0.09)_1px,transparent_1.2px)] [background-size:18px_18px]" />
+      <div aria-hidden className={`pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full opacity-15 ${step.accent}`} />
+      <div className="relative mx-auto w-full max-w-[19rem]">
+        <span className={`${chip} -left-1 -top-5 sm:-left-12 ${step.chips[0].tone}`}>
+          {step.chips[0].icon}
+          <span className="text-foreground">{step.chips[0].text}</span>
+        </span>
+        <span className={`${chip} -bottom-5 -right-1 sm:-right-12 ${step.chips[1].tone}`}>
+          {step.chips[1].icon}
+          <span className="text-foreground">{step.chips[1].text}</span>
+        </span>
+        {/* phone */}
+        <div className="rounded-[2.4rem] bg-[#141225] p-2.5 shadow-[0_40px_70px_-25px_rgba(40,20,95,0.55)] ring-1 ring-black/10">
+          <div className="overflow-hidden rounded-[1.9rem] bg-card">
+            <div className="flex items-center justify-between px-5 pb-1 pt-2.5 text-[11px] font-semibold text-foreground">
+              <span>9:41</span>
+              <span className="h-4 w-16 rounded-full bg-[#141225]" />
+              <span className="flex items-center gap-1">
+                <span className="h-2 w-3 rounded-sm bg-foreground/80" />
+                <span className="h-2 w-4 rounded-sm border border-foreground/70" />
+              </span>
+            </div>
+            {/* fixed screen height, so switching steps never moves the page */}
+            <div className="relative h-[30rem] overflow-hidden">
+              <div key={step.n} className="tour-in px-4 pb-5 pt-2 text-left" aria-hidden>
+                {step.preview}
+              </div>
+              <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-14 bg-gradient-to-t from-card to-transparent" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export function ProductTour() {
+  const [active, setActive] = useState(0)
+  const step = STEPS[active]
+  return (
+    <section className="space-y-8" aria-labelledby="tour-heading">
       <div className="mx-auto max-w-2xl space-y-2 text-center">
         <p className="text-sm font-semibold text-primary">How it works</p>
         <h2 id="tour-heading" className="text-[1.75rem] font-bold leading-tight tracking-tight text-balance sm:text-3xl">Learn, practise, ask, track</h2>
-        <p className="text-[15px] text-muted-foreground">Here is what each step looks like inside WASSCE Tutor.</p>
+        <p className="text-[15px] text-muted-foreground">Tap a step to see what it looks like inside WASSCE Tutor.</p>
       </div>
-      <ol className="space-y-12 sm:space-y-16">
-        {STEPS.map((s, i) => (
-          <li key={s.n} className="grid items-center gap-6 md:grid-cols-2 md:gap-12">
-            <div className={`space-y-3 ${i % 2 === 1 ? 'md:order-2' : ''}`}>
-              <p className="inline-flex items-center gap-2 text-sm font-semibold text-primary">
-                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">{s.n}</span>
+
+      <div className="grid items-center gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] md:gap-10">
+        {/* Steps: segmented control on phones, a list with full text from 768 px */}
+        <div className="space-y-4">
+          <div role="tablist" aria-label="How it works" className="grid grid-cols-4 gap-1 rounded-2xl bg-muted p-1 md:hidden">
+            {STEPS.map((s, i) => (
+              <button
+                key={s.n}
+                type="button"
+                role="tab"
+                id={`tour-tab-m-${s.n}`}
+                aria-selected={active === i}
+                aria-controls="tour-panel"
+                onClick={() => setActive(i)}
+                className={`min-h-11 rounded-xl text-sm font-semibold transition-colors ${active === i ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground'}`}
+              >
                 {s.label}
-              </p>
-              <h3 className="text-2xl font-bold leading-tight tracking-tight text-balance">{s.title}</h3>
-              <p className="text-[15px] text-muted-foreground">{s.body}</p>
-              <ul className="space-y-1.5 pt-1 text-sm">
-                {s.points.map((p) => (
-                  <li key={p} className="flex items-center gap-2"><Check className="h-4 w-4 shrink-0 text-success" aria-hidden /> {p}</li>
-                ))}
-              </ul>
-            </div>
-            <Frame tint={s.tint}>{s.preview}</Frame>
-          </li>
-        ))}
-      </ol>
+              </button>
+            ))}
+          </div>
+          <div className="space-y-2 md:hidden">
+            <h3 className="text-xl font-bold leading-tight tracking-tight">{step.title}</h3>
+            <p className="text-[15px] text-muted-foreground">{step.body}</p>
+          </div>
+
+          <ol className="hidden space-y-2 md:block">
+            {STEPS.map((s, i) => {
+              const on = active === i
+              return (
+                <li key={s.n}>
+                  <button
+                    type="button"
+                    onClick={() => setActive(i)}
+                    aria-pressed={on}
+                    aria-controls="tour-panel"
+                    className={`w-full rounded-2xl border p-4 text-left transition-colors ${on ? 'border-transparent bg-card shadow-md ring-1 ring-black/5' : 'border-transparent hover:bg-card/60'}`}
+                  >
+                    <span className="flex items-center gap-3">
+                      <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-bold ${on ? `${s.accent} text-white` : 'bg-muted text-muted-foreground'}`}>{s.n}</span>
+                      <span className={`text-lg font-bold tracking-tight ${on ? '' : 'text-muted-foreground'}`}>{s.title}</span>
+                    </span>
+                    <span className={`mt-2 block pl-11 text-[15px] text-muted-foreground ${on ? '' : 'line-clamp-1'}`}>{s.body}</span>
+                    {on && (
+                      <span className="mt-3 block space-y-1.5 pl-11">
+                        {s.points.map((p) => (
+                          <span key={p} className="flex items-center gap-2 text-sm"><Check className="h-4 w-4 shrink-0 text-success" aria-hidden /> {p}</span>
+                        ))}
+                      </span>
+                    )}
+                  </button>
+                </li>
+              )
+            })}
+          </ol>
+        </div>
+
+        <div id="tour-panel" role="tabpanel" aria-label={step.label}>
+          <Showcase step={step} />
+        </div>
+      </div>
     </section>
   )
 }
