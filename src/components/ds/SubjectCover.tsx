@@ -398,11 +398,6 @@ export function SubjectCover({
           className="absolute inset-0 h-full w-full object-cover"
           style={{ objectPosition: photo.position ?? 'center' }}
         />
-        {shape === 'wide' && (
-          <span className="absolute bottom-2.5 left-2.5 rounded-[10px] bg-white p-0.5 shadow-sm">
-            <SubjectCover slug={slug} shape="square" className="h-8 w-8" rounded="rounded-lg" />
-          </span>
-        )}
         <span className="absolute inset-x-0 bottom-0 h-1" style={{ backgroundColor: art.bg }} />
       </span>
     )
