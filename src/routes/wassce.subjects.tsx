@@ -52,7 +52,7 @@ function SubjectsIndexPage() {
 
       <StartCta
         heading="Prepare for every subject you're sitting"
-        body="Pick your faculty and subjects, then study with lessons, past papers with instant scoring, and an AI tutor that answers in plain English."
+        body="Pick your faculty and subjects, then study with lessons, exam-style practice marked instantly, and an AI tutor that answers in plain English."
       />
     </article>
   )

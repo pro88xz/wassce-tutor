@@ -32,10 +32,10 @@ export function DownloadButton({ variant = 'default' }: { variant?: 'default' | 
 
   const btnClass =
     variant === 'hero'
-      ? 'inline-flex items-center justify-center gap-2 h-12 px-6 rounded-md bg-white/15 backdrop-blur-md border border-white/30 text-white hover:bg-white/25 text-base font-semibold transition active:scale-[0.98] shadow-lg shadow-blue-900/20'
+      ? 'inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl border border-white/40 px-6 text-base font-semibold text-white transition-colors hover:bg-white/10 sm:w-auto'
       : variant === 'outline'
-        ? 'inline-flex items-center justify-center gap-2 h-12 px-6 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground text-base font-medium transition'
-        : 'inline-flex items-center justify-center gap-2 h-12 px-6 rounded-md bg-primary text-primary-foreground hover:opacity-90 text-base font-medium transition'
+        ? 'inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl border bg-card px-6 text-base font-semibold transition-colors hover:border-primary/40 sm:w-auto'
+        : 'inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-primary px-6 text-base font-semibold text-primary-foreground transition-colors hover:bg-brand-strong'
 
   return (
     <>

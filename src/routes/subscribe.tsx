@@ -33,6 +33,8 @@ const PLANS: Plan[] = [
     name: 'Monthly',
     amount: 25,
     period: '/month',
+    perMonth: '25 NLe/mo',
+    savings: 'Pay one month at a time',
   },
   {
     id: 'quarterly',
@@ -202,7 +204,7 @@ function SubscribePage() {
           <Sparkles className="h-7 w-7" aria-hidden />
         </span>
         <h1 className="text-3xl font-bold tracking-tight">Choose your plan</h1>
-        <p className="text-sm text-muted-foreground">Every plan unlocks every subject, every paper and your AI tutor.</p>
+        <p className="text-sm text-muted-foreground">Every plan unlocks every subject, every practice set and your AI tutor.</p>
       </header>
 
       <div role="radiogroup" aria-label="Plans" className="space-y-3">
@@ -215,8 +217,8 @@ function SubscribePage() {
               role="radio"
               aria-checked={active}
               onClick={() => setSelected(p.id)}
-              className={`w-full rounded-3xl bg-card p-5 text-left ring-1 transition ${
-                active ? 'ring-2 ring-primary shadow-lg shadow-primary/10' : 'ring-border hover:ring-primary/40'
+              className={`w-full rounded-2xl bg-card p-5 text-left ring-1 transition ${
+                active ? 'ring-2 ring-primary' : 'ring-border hover:ring-primary/40'
               }`}
             >
               <div className="flex items-start justify-between gap-3">
@@ -236,7 +238,7 @@ function SubscribePage() {
                     <p className="text-xs text-muted-foreground">{p.perMonth}</p>
                   )}
                   {p.savings && (
-                    <p className="text-xs font-semibold text-emerald-600 mt-1">{p.savings}</p>
+                    <p className={`mt-1 text-xs font-semibold ${p.savings.startsWith('Save') ? 'text-success' : 'text-muted-foreground'}`}>{p.savings}</p>
                   )}
                 </div>
                 <div className="shrink-0 text-right">
@@ -250,9 +252,9 @@ function SubscribePage() {
       </div>
 
       {isLocked ? (
-        <div className="rounded-2xl border-2 border-amber-500/30 bg-amber-500/5 p-5 space-y-3">
+        <div className="space-y-3 rounded-2xl border border-warning/30 bg-warning/5 p-5">
           <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-amber-500/20 text-amber-600">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-warning/15 text-warning">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.4} className="h-4 w-4">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3" />
                 <circle cx="12" cy="12" r="9" />
@@ -274,7 +276,7 @@ function SubscribePage() {
           </div>
         </div>
       ) : pending && remainingMs === 0 ? (
-        <div className="rounded-2xl border-2 border-red-500/30 bg-red-500/5 p-5 space-y-3">
+        <div className="space-y-3 rounded-2xl border bg-card p-5">
           <p className="font-bold">Your access hasn&rsquo;t activated yet.</p>
           <p className="text-sm text-muted-foreground">
             This might be because: (1) the WhatsApp message wasn&rsquo;t sent, (2) payment hasn&rsquo;t been received yet, or (3) verification is taking longer than usual.
@@ -286,13 +288,13 @@ function SubscribePage() {
       ) : (
         <div className="space-y-4">
           <ul className="grid grid-cols-2 gap-2 text-sm">
-            {['Every subject', 'Every past paper', 'AI tutor', 'Progress tracking'].map((t) => (
+            {['Every subject', 'Every practice set', 'AI tutor', 'Progress tracking'].map((t) => (
               <li key={t} className="flex items-center gap-2 rounded-2xl bg-muted/50 px-3 py-2.5 font-medium">
-                <CircleCheck className="h-4 w-4 shrink-0 text-emerald-500" aria-hidden /> {t}
+                <CircleCheck className="h-4 w-4 shrink-0 text-success" aria-hidden /> {t}
               </li>
             ))}
           </ul>
-          <div className="space-y-3 rounded-3xl border bg-card p-5 text-sm">
+          <div className="space-y-3 rounded-2xl border bg-card p-5 text-sm">
             <p className="font-bold">How paying works</p>
             <ol className="space-y-2.5">
               {[
@@ -307,17 +309,18 @@ function SubscribePage() {
                 </li>
               ))}
             </ol>
+            <p className="border-t pt-3 text-muted-foreground">Plans do not renew automatically. When a plan ends, you choose whether to pay again. Your progress is kept either way.</p>
           </div>
         </div>
       )}
 
-      {error && <p className="text-center text-sm text-red-500">{error}</p>}
+      {error && <p className="text-center text-sm text-danger" role="alert">{error}</p>}
 
       <button
         type="button"
         onClick={proceedToWhatsApp}
         disabled={submitting || isLocked}
-        className="inline-flex h-14 w-full items-center justify-center gap-2 rounded-2xl bg-[#25D366] text-base font-bold text-white shadow-md shadow-emerald-600/20 transition hover:brightness-95 disabled:opacity-60"
+        className="inline-flex h-13 w-full items-center justify-center gap-2 rounded-xl bg-[#1a8d4a] text-base font-semibold text-white transition hover:brightness-95 disabled:opacity-60"
       >
         <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
           <path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.5.2-.7.2-1.4.2-1.5-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.7.5 3.4 1.3 4.9L2 22l5.2-1.3c1.5.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/>
@@ -327,7 +330,7 @@ function SubscribePage() {
 
       <button
         onClick={() => navigate({ to: '/' })}
-        className="block w-full text-center text-sm text-muted-foreground hover:text-foreground"
+        className="flex min-h-11 w-full items-center justify-center text-sm text-muted-foreground hover:text-foreground"
       >
         Maybe later
       </button>

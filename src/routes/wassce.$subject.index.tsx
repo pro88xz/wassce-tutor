@@ -51,32 +51,27 @@ function roleLabel(hub: SubjectHub): string {
 function SubjectHubPage() {
   const hub = Route.useLoaderData()
   const { subject, groups, topicCount, lessonCount, minutes, related } = hub
-  const { icon: Icon, palette } = subjectTheme(subject.slug)
+  const { palette } = subjectTheme(subject.slug)
   return (
     <article className="mx-auto max-w-3xl space-y-10 pb-12">
       <Breadcrumbs trail={trail(hub)} />
 
-      <header className={`relative overflow-hidden rounded-3xl bg-gradient-to-br ${palette.gradient} p-6 text-white shadow-lg`}>
-        <Icon className="pointer-events-none absolute -bottom-8 -right-8 h-44 w-44 text-white/10" aria-hidden />
-        <div className="relative space-y-4">
-          <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/20 backdrop-blur">
-            <Icon className="h-6 w-6" aria-hidden />
-          </span>
-          <div className="space-y-2">
-            <h1 className="text-4xl font-bold tracking-tight">WASSCE {subject.name}</h1>
-            <p className="text-white/90">
-              Every topic in the WASSCE {subject.name} syllabus, grouped the way you&rsquo;ll study it, with lessons
-              written for Sierra Leone students.
-            </p>
-          </div>
-          <ul className="flex flex-wrap gap-2 text-sm font-semibold">
-            <li className="rounded-full bg-white/20 px-3 py-1">{topicCount} topics</li>
-            <li className="rounded-full bg-white/20 px-3 py-1">{groups.length} sections</li>
-            {lessonCount > 0 && <li className="rounded-full bg-white/20 px-3 py-1">{lessonCount} lessons</li>}
-            {lessonCount > 0 && <li className="rounded-full bg-white/20 px-3 py-1">about {hours(minutes)}</li>}
-          </ul>
-          {roleLabel(hub) && <p className="text-sm text-white/85">{roleLabel(hub)}</p>}
+      <header className="space-y-4">
+        <div className="flex items-center gap-3">
+          <SubjectIcon slug={subject.slug} size="lg" />
+          <h1 className="text-[1.75rem] font-bold leading-tight tracking-tight sm:text-4xl">WASSCE {subject.name}</h1>
         </div>
+        <p className="text-[15px] text-muted-foreground sm:text-base">
+          Every topic in the WASSCE {subject.name} syllabus, grouped the way you&rsquo;ll study it, with lessons
+          written for Sierra Leone students.
+        </p>
+        <ul className="flex flex-wrap gap-2 text-sm font-medium">
+          <li className={`rounded-full px-3 py-1 ${palette.soft} ${palette.text}`}>{topicCount} topics</li>
+          <li className="rounded-full bg-muted px-3 py-1 text-muted-foreground">{groups.length} sections</li>
+          {lessonCount > 0 && <li className="rounded-full bg-muted px-3 py-1 text-muted-foreground">{lessonCount} lessons</li>}
+          {lessonCount > 0 && <li className="rounded-full bg-muted px-3 py-1 text-muted-foreground">about {hours(minutes)}</li>}
+        </ul>
+        {roleLabel(hub) && <p className="text-sm text-muted-foreground">{roleLabel(hub)}</p>}
       </header>
 
       <section className="space-y-8" aria-labelledby="syllabus">
@@ -120,11 +115,10 @@ function SubjectHubPage() {
         heading={`Study WASSCE ${subject.name} with WASSCE Tutor`}
         body={
           lessonCount > 0
-            ? `Get all ${lessonCount} ${subject.name} lessons, past papers with instant scoring, and an AI tutor that answers your questions in plain English.`
-            : `Practise past papers with instant scoring and ask the AI tutor any ${subject.name} question in plain English. Lessons for this subject are on the way.`
+            ? `Get all ${lessonCount} ${subject.name} lessons, exam-style practice marked instantly, and an AI tutor that answers your questions in plain English.`
+            : `Practise exam-style practice marked instantly and ask the AI tutor any ${subject.name} question in plain English. Lessons for this subject are on the way.`
         }
         appHref={`/subject/${subject.id}`}
-        gradient={palette.gradient}
       />
 
       {related.length > 0 && (

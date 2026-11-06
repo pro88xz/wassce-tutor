@@ -54,7 +54,7 @@ function TopicPage() {
     <article className="mx-auto max-w-3xl space-y-10 pb-12">
       <Breadcrumbs trail={trail(data)} />
 
-      <header className="space-y-4 rounded-3xl border bg-card p-6 shadow-sm shadow-black/[0.03]">
+      <header className="space-y-4 rounded-2xl border bg-card p-6">
         <div className="flex items-center gap-3">
           <SubjectIcon slug={subject.slug} />
           <p className={`text-xs font-bold uppercase tracking-wider ${palette.text}`}>
@@ -108,9 +108,8 @@ function TopicPage() {
 
       <StartCta
         heading={`Learn ${topic.name.toLowerCase()} step by step`}
-        body={`Unlock all ${topic.lessons.length} lessons on ${topic.name.toLowerCase()}, plus every other WASSCE ${subject.name} topic, past papers with instant scoring and an AI tutor.`}
+        body={`Unlock all ${topic.lessons.length} lessons on ${topic.name.toLowerCase()}, plus every other WASSCE ${subject.name} topic, exam-style practice marked instantly and an AI tutor.`}
         appHref={`/topic/${topic.id}`}
-        gradient={palette.gradient}
       />
 
       {siblings.length > 0 && (

@@ -110,7 +110,7 @@ function WasscePillarPage() {
 
       <StartCta
         heading="Prepare for WASSCE with WASSCE Tutor"
-        body="Lessons for every topic, past papers with instant scoring, and an AI tutor that explains anything in plain English. Built in Freetown for Sierra Leone students."
+        body="Lessons for every topic, exam-style practice marked instantly, and an AI tutor that explains anything in plain English. Built in Freetown for Sierra Leone students."
       />
     </article>
   )

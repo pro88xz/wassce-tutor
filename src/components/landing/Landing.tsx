@@ -1,13 +1,13 @@
 // Logged-out homepage. Prerendered at build time (with LandingData from the
 // route loader) so search engines and link previews get the full page.
-// Structure follows the competitor teardown: keyword-rich hero with search,
-// proof numbers, subjects by faculty, a "where are you starting" router,
-// popular topics, how it works, what you get, plans, FAQ, final call to action.
+// Section order follows the Design System Blueprint (07): hero, trust strip,
+// subject discovery, how it works, what you get, who it's for, WASSCE guide,
+// plans, FAQ, then a final call to action. Numbers come from the database.
 import { Link } from '@tanstack/react-router'
 import { useState } from 'react'
 import {
-  ArrowRight, BookOpen, ChartLine, CircleCheck, GraduationCap, Library, MessageCircle, Moon, School, Smartphone,
-  Sparkles, UserRound, Users, Wallet,
+  ArrowRight, BookOpen, ChartLine, Check, CircleCheck, ClipboardCheck, Compass, Library, MessageCircle, Moon, School, Smartphone,
+  UserRound, Users, Wallet,
 } from 'lucide-react'
 import type { LandingData, SubjectSummary } from '@/lib/public-content'
 import { subjectPath, topicPath } from '@/lib/public-content'
@@ -19,13 +19,14 @@ export function Landing({ data }: { data: LandingData }) {
   return (
     <>
       <Hero />
-      <div className="mx-auto max-w-5xl space-y-20 pb-16">
-        <ProofStrip data={data} />
+      <div className="mx-auto max-w-5xl space-y-16 sm:space-y-20">
+        <TrustStrip data={data} />
         <SubjectsByFaculty subjects={data.subjects} />
-        <StartingPoint />
         {data.popular.length > 0 && <PopularTopics data={data} />}
         <HowItWorks />
         <WhatYouGet />
+        <StartingPoint />
+        <GuideTeaser />
         <Plans />
         <Faq />
         <FinalCta />
@@ -34,60 +35,50 @@ export function Landing({ data }: { data: LandingData }) {
   )
 }
 
+/** Restrained brand field: one primary action, one discovery action (search), one quieter secondary. */
 function Hero() {
   return (
-    <section className="relative left-1/2 right-1/2 -mx-[50vw] -mt-6 w-screen overflow-hidden">
-      <div
-        aria-hidden
-        className="absolute inset-0 bg-gradient-to-br from-primary to-brand-strong"
-
-      />
-      <div aria-hidden className="absolute -left-32 -top-32 h-96 w-96 rounded-full bg-blue-400/30 blur-3xl" />
-      <div aria-hidden className="absolute -bottom-40 -right-32 h-[28rem] w-[28rem] rounded-full bg-fuchsia-400/25 blur-3xl" />
-      <div aria-hidden className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(0,0,0,0.25)_100%)]" />
-
-      <div className="relative mx-auto max-w-3xl space-y-7 px-6 pb-24 pt-14 text-center sm:pt-20">
-        <p className="mx-auto inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-semibold text-white ring-1 ring-white/25 backdrop-blur">
-          <Sparkles className="h-3.5 w-3.5" aria-hidden /> Built in Freetown for Sierra Leone students
-        </p>
-        <div className="space-y-4">
-          <h1 className="text-4xl font-bold tracking-tight text-balance text-white drop-shadow-md sm:text-6xl">
+    <section className="relative left-1/2 right-1/2 -mx-[50vw] -mt-6 w-screen bg-gradient-to-br from-primary to-brand-strong">
+      <div className="mx-auto max-w-3xl space-y-6 px-6 pb-20 pt-10 text-center sm:pb-24 sm:pt-14">
+        <p className="text-sm font-medium text-white/80">Built in Freetown for Sierra Leone students</p>
+        <div className="space-y-3">
+          <h1 className="text-[2.25rem] font-bold leading-[1.1] tracking-tight text-balance text-white sm:text-[3.25rem]">
             Pass WASSCE with confidence.
           </h1>
-          <p className="mx-auto max-w-xl text-balance text-base text-white/90 sm:text-lg">
-            Lessons for every topic, past papers scored instantly, and an AI tutor that explains anything. For
-            Science, Arts, Commercial and Technical students.
+          <p className="mx-auto max-w-xl text-balance text-base text-white/85 sm:text-lg">
+            Lessons for every topic, exam-style practice with the full working, and an AI tutor that explains anything, all organised around your syllabus.
           </p>
         </div>
         <TopicSearch />
-        <div className="flex flex-col items-center justify-center gap-3 pt-2 sm:flex-row">
+        <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link
             to="/auth"
-            className="inline-flex h-12 w-full items-center justify-center rounded-xl bg-white px-8 text-base font-bold text-blue-700 shadow-xl shadow-blue-950/30 transition hover:bg-white/95 active:scale-[0.98] sm:w-auto"
+            className="inline-flex h-12 w-full items-center justify-center rounded-xl bg-white px-7 text-base font-semibold text-brand-strong transition-colors hover:bg-brand-soft sm:w-auto"
           >
             Start free for 7 days
           </Link>
           <DownloadButton variant="hero" />
         </div>
-        <p className="text-xs text-white/80">No card needed · Pay with Orange Money or AfriMoney · Cancel anytime</p>
+        <p className="text-sm text-white/75">7 days free, no card needed · then from 25 NLe a month with Orange Money or AfriMoney</p>
       </div>
     </section>
   )
 }
 
-function ProofStrip({ data }: { data: LandingData }) {
+/** Verified numbers only (counted from the live syllabus), plus the price. */
+function TrustStrip({ data }: { data: LandingData }) {
   const items: [string, string][] = [
     [String(data.totals.subjects), 'WASSCE subjects'],
     [String(data.totals.topics), 'syllabus topics'],
-    [String(data.totals.lessons), 'lessons'],
-    ['NLe 25', 'a month, all in'],
+    [String(data.totals.lessons), 'lessons written'],
+    ['25 NLe', 'a month, everything included'],
   ]
   return (
-    <section aria-label="WASSCE Tutor in numbers" className="relative z-10 -mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-3xl border bg-border shadow-xl shadow-black/5 sm:grid-cols-4">
-      {items.map(([value, label]) => (
-        <div key={label} className="bg-card px-4 py-5 text-center">
-          <p className="text-3xl font-bold tracking-tight tabular-nums">{value}</p>
-          <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{label}</p>
+    <section aria-label="WASSCE Tutor in numbers" className="relative z-10 -mt-12 grid grid-cols-2 overflow-hidden rounded-2xl border bg-card shadow-sm sm:grid-cols-4">
+      {items.map(([value, label], i) => (
+        <div key={label} className={`px-4 py-5 text-center ${i % 2 === 1 ? 'border-l' : ''} ${i >= 2 ? 'border-t sm:border-t-0' : ''} ${i === 2 ? 'sm:border-l' : ''}`}>
+          <p className="text-2xl font-bold tracking-tight tabular-nums sm:text-3xl">{value}</p>
+          <p className="text-sm text-muted-foreground">{label}</p>
         </div>
       ))}
     </section>
@@ -97,9 +88,9 @@ function ProofStrip({ data }: { data: LandingData }) {
 function SectionTitle({ eyebrow, title, body }: { eyebrow: string; title: string; body?: string }) {
   return (
     <div className="mx-auto max-w-2xl space-y-2 text-center">
-      <p className="text-xs font-bold uppercase tracking-wider text-primary">{eyebrow}</p>
-      <h2 className="text-3xl font-bold tracking-tight text-balance">{title}</h2>
-      {body && <p className="text-muted-foreground">{body}</p>}
+      <p className="text-sm font-semibold text-primary">{eyebrow}</p>
+      <h2 className="text-[1.75rem] font-bold leading-tight tracking-tight text-balance sm:text-3xl">{title}</h2>
+      {body && <p className="text-[15px] text-muted-foreground">{body}</p>}
     </div>
   )
 }
@@ -120,7 +111,7 @@ function SubjectsByFaculty({ subjects }: { subjects: SubjectSummary[] }) {
           body="Pick your faculty. English Language and Mathematics are core for everyone."
         />
       </div>
-      <div role="tablist" aria-label="Faculties" className="mx-auto grid w-full max-w-lg grid-cols-4 gap-1 rounded-2xl bg-muted p-1">
+      <div role="tablist" aria-label="Faculties" className="mx-auto grid w-full max-w-lg grid-cols-4 gap-1 rounded-xl bg-muted p-1">
         {faculties.map((f) => (
           <button
             key={f.id}
@@ -129,7 +120,7 @@ function SubjectsByFaculty({ subjects }: { subjects: SubjectSummary[] }) {
             aria-selected={active === f.id}
             aria-controls={`faculty-${f.id}`}
             onClick={() => setActive(f.id)}
-            className={`rounded-xl px-0.5 py-2 text-xs font-semibold tracking-tight transition sm:text-sm ${active === f.id ? 'bg-card shadow-sm' : 'text-muted-foreground hover:text-foreground'}`}
+            className={`min-h-10 rounded-lg px-0.5 py-2 text-[13px] font-semibold tracking-tight transition-colors sm:text-sm ${active === f.id ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'}`}
           >
             {f.name}
           </button>
@@ -163,46 +154,19 @@ function SubjectsByFaculty({ subjects }: { subjects: SubjectSummary[] }) {
                 </>
               )
               return s.topicCount > 0 ? (
-                <a key={s.id} href={subjectPath(s.slug)} className="flex items-center gap-3 rounded-2xl border bg-card p-4 shadow-sm shadow-black/[0.03] transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md">
+                <a key={s.id} href={subjectPath(s.slug)} className="flex min-h-16 items-center gap-3 rounded-2xl border bg-card p-4 transition-colors hover:border-primary/40">
                   {inner}
                 </a>
               ) : (
-                <div key={s.id} className="flex items-center gap-3 rounded-2xl border border-dashed bg-card p-4 opacity-70">{inner}</div>
+                <div key={s.id} className="flex min-h-16 items-center gap-3 rounded-2xl border border-dashed bg-card/60 p-4 text-muted-foreground">{inner}</div>
               )
             })}
           </div>
         )
       })}
       <p className="text-center text-sm">
-        <a href="/wassce/subjects" className="font-semibold text-primary hover:underline">See every subject and its syllabus →</a>
+        <a href="/wassce/subjects" className="inline-flex min-h-11 items-center font-semibold text-primary hover:underline">See every subject and its syllabus →</a>
       </p>
-    </section>
-  )
-}
-
-function StartingPoint() {
-  const paths = [
-    { icon: School, title: "I'm in SSS3", body: 'Follow your faculty’s subjects topic by topic and track your progress to exam day.', cta: 'Start free', href: '/auth' },
-    { icon: UserRound, title: "I'm a private candidate", body: 'Revise at your own pace with lessons, past papers and an AI tutor whenever you need help.', cta: 'Start free', href: '/auth' },
-    { icon: Users, title: "I'm a parent or teacher", body: 'See exactly what’s covered in every WASSCE subject before your student signs up.', cta: 'Browse subjects', href: '/wassce/subjects' },
-  ]
-  return (
-    <section className="space-y-8">
-      <SectionTitle eyebrow="Where are you starting?" title="Made for everyone preparing for WASSCE" />
-      <div className="grid gap-3 sm:grid-cols-3">
-        {paths.map(({ icon: Icon, title, body, cta, href }) => (
-          <a key={title} href={href} className="group flex flex-col gap-3 rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md">
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
-              <Icon className="h-5 w-5" aria-hidden />
-            </span>
-            <span className="text-lg font-bold">{title}</span>
-            <span className="flex-1 text-sm text-muted-foreground">{body}</span>
-            <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary">
-              {cta} <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" aria-hidden />
-            </span>
-          </a>
-        ))}
-      </div>
     </section>
   )
 }
@@ -216,7 +180,7 @@ function PopularTopics({ data }: { data: LandingData }) {
           <li key={`${t.subjectSlug}/${t.topicSlug}`}>
             <a
               href={topicPath(t.subjectSlug, t.topicSlug)}
-              className="inline-flex items-center gap-2 rounded-full border bg-card py-1.5 pl-1.5 pr-4 text-sm font-medium shadow-sm transition hover:border-primary/40"
+              className="inline-flex min-h-11 items-center gap-2 rounded-full border bg-card py-1.5 pl-1.5 pr-4 text-sm font-medium transition-colors hover:border-primary/40"
             >
               <SubjectIcon slug={t.subjectSlug} size="sm" />
               <span>{t.topicName}</span>
@@ -229,22 +193,26 @@ function PopularTopics({ data }: { data: LandingData }) {
   )
 }
 
+/** The learning loop: learn, practise, ask, track. */
 function HowItWorks() {
   const steps = [
-    { icon: GraduationCap, title: 'Pick your faculty', body: 'Science, Arts, Commercial or Technical. Your subjects are set up for you.' },
-    { icon: BookOpen, title: 'Learn, then test', body: 'Short lessons for each topic, then WASSCE-style questions to lock it in.' },
-    { icon: ChartLine, title: 'Watch your progress', body: 'See every subject and topic fill up, find weak spots, and walk in ready.' },
+    { icon: BookOpen, title: 'Learn a topic', body: 'Short lessons with worked examples, written to the WASSCE syllabus.' },
+    { icon: ClipboardCheck, title: 'Practise exam-style questions', body: 'Every answer is marked straight away, with the full working and why the wrong options are wrong.' },
+    { icon: MessageCircle, title: 'Ask the AI tutor', body: 'Stuck on a step? Ask in plain English and get it explained one step at a time.' },
+    { icon: ChartLine, title: 'Track your progress', body: 'See which topics are done and which need another look before the exam.' },
   ]
   return (
     <section className="space-y-8">
-      <SectionTitle eyebrow="How it works" title="Three steps to exam-ready" />
-      <ol className="grid gap-3 sm:grid-cols-3">
+      <SectionTitle eyebrow="How it works" title="Learn, practise, ask, track" />
+      <ol className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {steps.map(({ icon: Icon, title, body }, i) => (
-          <li key={title} className="relative rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03]">
-            <span className="absolute right-5 top-4 text-5xl font-bold text-muted/80" aria-hidden>{i + 1}</span>
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary text-white">
-              <Icon className="h-5 w-5" aria-hidden />
-            </span>
+          <li key={title} className="rounded-2xl border bg-card p-5">
+            <div className="flex items-center gap-3">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-soft text-primary">
+                <Icon className="h-5 w-5" aria-hidden />
+              </span>
+              <span className="text-sm font-semibold text-muted-foreground">Step {i + 1}</span>
+            </div>
             <h3 className="mt-4 text-lg font-bold">{title}</h3>
             <p className="mt-1 text-sm text-muted-foreground">{body}</p>
           </li>
@@ -256,11 +224,11 @@ function HowItWorks() {
 
 function WhatYouGet() {
   const features = [
-    { icon: Library, title: 'Past papers, scored instantly', body: 'Practise and see exactly which answers you got wrong, with explanations.' },
+    { icon: Library, title: 'Exam-style practice, marked instantly', body: 'Original WASSCE-style questions written to the syllabus, each with the full working.' },
     { icon: BookOpen, title: 'Lessons with diagrams and maths', body: 'Clear step-by-step lessons, with properly typeset equations.' },
     { icon: MessageCircle, title: 'An AI tutor, any time', body: 'Ask any WASSCE question in plain English and get a clear answer in seconds.' },
     { icon: Moon, title: 'Reading mode for late nights', body: 'A warm, low-glare theme for studying after dark.' },
-    { icon: Smartphone, title: 'Built for your phone', body: 'Works on any Android phone and on patchy data.' },
+    { icon: Smartphone, title: 'Built for your phone', body: 'Works in any phone browser, with an Android app, and on patchy data.' },
     { icon: Wallet, title: 'Pay the local way', body: 'Orange Money or AfriMoney. No card, no bank account.' },
   ]
   return (
@@ -268,8 +236,8 @@ function WhatYouGet() {
       <SectionTitle eyebrow="What you get" title="Built for the WASSCE you're actually taking" />
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {features.map(({ icon: Icon, title, body }) => (
-          <div key={title} className="flex gap-4 rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03]">
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <div key={title} className="flex gap-4 rounded-2xl border bg-card p-5">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-soft text-primary">
               <Icon className="h-5 w-5" aria-hidden />
             </span>
             <span>
@@ -283,42 +251,109 @@ function WhatYouGet() {
   )
 }
 
+function StartingPoint() {
+  const paths = [
+    { icon: School, title: "I'm in SSS3", body: 'Follow your faculty’s subjects topic by topic and track your progress to exam day.', cta: 'Start free', href: '/auth' },
+    { icon: UserRound, title: "I'm a private candidate", body: 'Revise at your own pace with lessons, exam-style practice and an AI tutor whenever you need help.', cta: 'Start free', href: '/auth' },
+    { icon: Users, title: "I'm a parent or teacher", body: 'See exactly what’s covered in every WASSCE subject before your student signs up.', cta: 'Browse subjects', href: '/wassce/subjects' },
+  ]
+  return (
+    <section className="space-y-8">
+      <SectionTitle eyebrow="Who it's for" title="Made for everyone preparing for WASSCE" />
+      <div className="grid gap-3 sm:grid-cols-3">
+        {paths.map(({ icon: Icon, title, body, cta, href }) => (
+          <a key={title} href={href} className="group flex flex-col gap-3 rounded-2xl border bg-card p-5 transition-colors hover:border-primary/40">
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-soft text-primary">
+              <Icon className="h-5 w-5" aria-hidden />
+            </span>
+            <span className="text-lg font-bold">{title}</span>
+            <span className="flex-1 text-sm text-muted-foreground">{body}</span>
+            <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary">
+              {cta} <ArrowRight className="h-4 w-4" aria-hidden />
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+/** Exam orientation: points to the public WASSCE guide pages. */
+function GuideTeaser() {
+  return (
+    <section className="flex flex-col gap-5 rounded-2xl border bg-card p-6 sm:flex-row sm:items-center sm:p-8">
+      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-soft text-primary">
+        <Compass className="h-6 w-6" aria-hidden />
+      </span>
+      <div className="flex-1 space-y-1">
+        <h2 className="text-xl font-bold tracking-tight">New to WASSCE? Start with the guide</h2>
+        <p className="text-[15px] text-muted-foreground">How the exam works in Sierra Leone, which subjects each faculty sits, and how grades are worked out.</p>
+      </div>
+      <div className="flex flex-col gap-2 sm:items-end">
+        <a href="/wassce" className="inline-flex h-11 items-center justify-center rounded-xl bg-primary px-5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-brand-strong">
+          Read the WASSCE guide
+        </a>
+        <a href="/wassce/subjects" className="inline-flex min-h-11 items-center justify-center text-sm font-semibold text-primary hover:underline">
+          Every subject and syllabus
+        </a>
+      </div>
+    </section>
+  )
+}
+
+/** Structurally identical cards; terms stated in full, not in footnotes. */
 function Plans() {
   // Prices are also enforced in the database (payment_requests policy); see subscribe.tsx.
   const plans = [
-    { name: 'Monthly', price: 25, period: 'per month', note: null, best: false },
-    { name: 'Quarterly', price: 60, period: 'per 3 months', note: 'Save 15 NLe', best: false },
-    { name: 'Yearly', price: 220, period: 'per year', note: 'Save 80 NLe', best: true },
+    { name: 'Monthly', price: 25, period: 'per month', perMonth: '25 NLe a month', saving: 'Pay one month at a time', best: false },
+    { name: 'Quarterly', price: 60, period: 'per 3 months', perMonth: '20 NLe a month', saving: 'Save 15 NLe', best: false },
+    { name: 'Yearly', price: 220, period: 'per year', perMonth: '18.33 NLe a month', saving: 'Save 80 NLe', best: true },
   ]
+  const includes = ['Every subject and lesson', 'Every practice set', 'The AI tutor', 'Progress tracking']
   return (
     <section id="plans" className="scroll-mt-20 space-y-8">
-      <SectionTitle eyebrow="Plans" title="Plans that fit your wallet" body="Every plan unlocks every subject, every paper and your AI tutor. Start with 7 days free." />
-      <div className="mx-auto grid max-w-3xl gap-3 sm:grid-cols-3">
+      <SectionTitle eyebrow="Plans" title="One price, everything included" body="Every plan unlocks every subject, every practice set and the AI tutor. Start with 7 days free." />
+      <div className="mx-auto grid max-w-4xl gap-3 sm:grid-cols-3">
         {plans.map((p) => (
-          <Link
-            key={p.name}
-            to="/auth"
-            className={`relative flex flex-col items-center gap-1 rounded-3xl bg-card p-6 text-center shadow-sm transition hover:shadow-lg active:scale-[0.98] ${p.best ? 'border-2 border-primary shadow-primary/10' : 'border'}`}
-          >
-            {p.best && (
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-3 py-0.5 text-[11px] font-bold uppercase tracking-wide text-primary-foreground">
-                Best value
-              </span>
-            )}
-            <span className="text-sm font-semibold text-muted-foreground">{p.name}</span>
-            <span>
-              <span className="text-5xl font-bold tracking-tight">{p.price}</span>
-              <span className="ml-1 text-sm font-semibold text-muted-foreground">NLe</span>
-            </span>
-            <span className="text-xs text-muted-foreground">{p.period}</span>
-            {p.note && <span className="text-xs font-bold text-emerald-600">{p.note}</span>}
-          </Link>
+          <div key={p.name} className={`flex flex-col rounded-2xl bg-card p-5 ${p.best ? 'border-2 border-primary' : 'border'}`}>
+            <div className="flex h-6 items-center justify-between">
+              <h3 className="font-semibold">{p.name}</h3>
+              {p.best && <span className="rounded-full bg-brand-soft px-2.5 py-0.5 text-xs font-semibold text-primary">Lowest monthly cost</span>}
+            </div>
+            <p className="mt-3">
+              <span className="text-4xl font-bold tracking-tight tabular-nums">{p.price}</span>
+              <span className="ml-1 text-sm font-semibold text-muted-foreground">NLe {p.period}</span>
+            </p>
+            <p className="mt-1 text-sm text-muted-foreground">{p.perMonth}</p>
+            <p className={`text-sm font-semibold ${p.best || p.saving.startsWith('Save') ? 'text-success' : 'text-muted-foreground'}`}>{p.saving}</p>
+            <ul className="mt-4 flex-1 space-y-2 border-t pt-4 text-sm">
+              {includes.map((t) => (
+                <li key={t} className="flex items-center gap-2">
+                  <Check className="h-4 w-4 shrink-0 text-success" aria-hidden /> {t}
+                </li>
+              ))}
+            </ul>
+            <Link
+              to="/auth"
+              className={`mt-5 inline-flex h-11 items-center justify-center rounded-xl text-sm font-semibold transition-colors ${
+                p.best ? 'bg-primary text-primary-foreground hover:bg-brand-strong' : 'border bg-card hover:border-primary/40'
+              }`}
+            >
+              Start 7 days free
+            </Link>
+          </div>
         ))}
       </div>
-      <ul className="mx-auto flex max-w-2xl flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-muted-foreground">
-        {['7 days free', 'No card needed', 'Orange Money & AfriMoney', 'Cancel anytime'].map((t) => (
-          <li key={t} className="inline-flex items-center gap-1.5">
-            <CircleCheck className="h-4 w-4 text-emerald-500" aria-hidden /> {t}
+      <ul className="mx-auto grid max-w-4xl gap-x-6 gap-y-3 rounded-2xl border bg-card p-5 text-sm text-muted-foreground sm:grid-cols-2">
+        {[
+          ['Free trial', '7 days with full access. No card needed.'],
+          ['After the trial', 'Lessons, practice and the AI tutor need a plan. Your progress is kept.'],
+          ['Paying', 'Orange Money or AfriMoney. We confirm on WhatsApp and switch your plan on.'],
+          ['No automatic renewal', 'A plan simply ends on its last day unless you choose to pay again.'],
+        ].map(([title, body]) => (
+          <li key={title} className="flex gap-2">
+            <CircleCheck className="mt-0.5 h-4 w-4 shrink-0 text-success" aria-hidden />
+            <span><span className="font-semibold text-foreground">{title}.</span> {body}</span>
           </li>
         ))}
       </ul>
@@ -327,9 +362,10 @@ function Plans() {
 }
 
 const FAQ: [question: string, answer: string][] = [
-  ['Is WASSCE Tutor free?', 'You get 7 days free with full access, no card needed. After that, plans start at NLe 25 a month, and every plan includes every subject, every paper and the AI tutor.'],
+  ['Is WASSCE Tutor free?', 'You get 7 days free with full access, no card needed. After that, plans start at NLe 25 a month, and every plan includes every subject, every practice set and the AI tutor.'],
   ['Which subjects are covered?', 'All the main WASSCE subjects for Science, Arts, Commercial and Technical students, including English Language and Mathematics. Each subject is broken down topic by topic, and new lessons are added all the time.'],
-  ['How do I pay?', 'Choose a plan, then pay with Orange Money or AfriMoney. We confirm your payment on WhatsApp and switch your plan on.'],
+  ['Are these real WAEC past papers?', 'No. Practice sets are original WASSCE-style questions written by WASSCE Tutor to match the syllabus and the exam format, each with the full working. We do not copy WAEC papers.'],
+  ['How do I pay?', 'Choose a plan, then pay with Orange Money or AfriMoney. We confirm your payment on WhatsApp and switch your plan on. Plans do not renew automatically.'],
   ['Does it work on my phone?', 'Yes. WASSCE Tutor works in any phone browser, and there is an Android app you can install from this page. It is built to work on patchy data.'],
   ['Who writes the lessons?', 'Lessons are drafted with the help of AI and follow the WASSCE syllabus. Lessons we publish openly on this website are checked by a named reviewer first, and their name appears on the lesson.'],
   ['Is this the official WAEC website?', 'No. WASSCE Tutor is an independent study app built in Sierra Leone. For registration, timetables and results, always use official WAEC channels.'],
@@ -341,14 +377,14 @@ function Faq() {
       <div id="faq-heading">
         <SectionTitle eyebrow="Questions" title="Frequently asked questions" />
       </div>
-      <div className="mx-auto max-w-2xl divide-y rounded-3xl border bg-card">
+      <div className="mx-auto max-w-2xl divide-y rounded-2xl border bg-card">
         {FAQ.map(([q, a]) => (
-          <details key={q} className="group p-5 [&_summary::-webkit-details-marker]:hidden">
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
+          <details key={q} className="group px-5 [&_summary::-webkit-details-marker]:hidden">
+            <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 py-3 font-semibold">
               {q}
-              <span className="text-xl leading-none text-muted-foreground transition group-open:rotate-45" aria-hidden>+</span>
+              <span className="text-xl leading-none text-muted-foreground transition-transform group-open:rotate-45" aria-hidden>+</span>
             </summary>
-            <p className="mt-3 text-sm text-muted-foreground">{a}</p>
+            <p className="pb-5 text-[15px] text-muted-foreground">{a}</p>
           </details>
         ))}
       </div>
@@ -358,16 +394,15 @@ function Faq() {
 
 function FinalCta() {
   return (
-    <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-brand-strong px-6 py-12 text-center text-white shadow-xl">
-      <div aria-hidden className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-white/10 blur-2xl" />
-      <div className="relative space-y-4">
-        <h2 className="text-3xl font-bold tracking-tight text-balance">Your WASSCE is closer than you think.</h2>
-        <p className="text-white/85">Start studying smarter today. 7 days free, no card needed.</p>
+    <section className="rounded-2xl bg-brand-soft px-6 py-10 text-center sm:py-12">
+      <div className="mx-auto max-w-xl space-y-4">
+        <h2 className="text-[1.75rem] font-bold leading-tight tracking-tight text-balance text-brand-deep sm:text-3xl">Your WASSCE is closer than you think.</h2>
+        <p className="text-[15px] text-brand-strong">Start with one topic today. 7 days free, no card needed.</p>
         <div className="flex flex-col items-center justify-center gap-3 pt-2 sm:flex-row">
-          <Link to="/auth" className="inline-flex h-12 w-full items-center justify-center rounded-xl bg-white px-8 font-bold text-blue-700 shadow-lg sm:w-auto">
-            Get started free
+          <Link to="/auth" className="inline-flex h-12 w-full items-center justify-center rounded-xl bg-primary px-7 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong sm:w-auto">
+            Start free for 7 days
           </Link>
-          <DownloadButton variant="hero" />
+          <DownloadButton variant="outline" />
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ import { BookOpen, Search } from 'lucide-react'
 import { fetchSearchIndex } from '@/lib/public-content'
 import type { SearchEntry } from '@/lib/public-content'
 
-const SUGGESTIONS = ['Photosynthesis', 'Quadratic equations', 'Cell structure', 'Essay writing', 'Atomic structure']
+const SUGGESTIONS = ['Photosynthesis', 'Quadratic equations', 'Essay writing']
 
 /**
  * Search box for subjects and syllabus topics. The index (subjects + 600
@@ -37,7 +37,7 @@ export function TopicSearch() {
   return (
     <div className="relative mx-auto w-full max-w-xl text-left">
       <label htmlFor="topic-search" className="sr-only">Search WASSCE subjects and topics</label>
-      <div className="flex items-center gap-3 rounded-2xl bg-white px-4 shadow-xl shadow-blue-950/20 ring-1 ring-white/40">
+      <div className="flex items-center gap-3 rounded-2xl bg-white px-4 shadow-sm ring-1 ring-white/40">
         <Search className="h-5 w-5 shrink-0 text-slate-400" aria-hidden />
         <input
           id="topic-search"

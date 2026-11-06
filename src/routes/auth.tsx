@@ -142,7 +142,7 @@ function AuthPage() {
           <button
             type="submit"
             disabled={loading}
-            className="h-12 w-full rounded-xl bg-primary text-base font-bold text-white shadow-md transition hover:shadow-lg disabled:opacity-60"
+            className="h-12 w-full rounded-xl bg-primary text-base font-semibold text-white transition-colors hover:bg-brand-strong disabled:opacity-60"
           >
             {loading ? 'Please wait…' : mode === 'signup' ? 'Start my free trial' : mode === 'forgot' ? 'Send reset link' : 'Sign in'}
           </button>
@@ -150,7 +150,7 @@ function AuthPage() {
 
         {mode === 'signup' && (
           <ul className="space-y-2 rounded-2xl border bg-card p-4 text-sm">
-            {['Every subject, topic by topic', 'Past papers scored instantly', 'An AI tutor whenever you need help', 'Pay later with Orange Money or AfriMoney'].map((t) => (
+            {['Every subject, topic by topic', 'Exam-style practice, marked instantly', 'An AI tutor whenever you need help', 'Pay later with Orange Money or AfriMoney'].map((t) => (
               <li key={t} className="flex items-center gap-2">
                 <CircleCheck className="h-4 w-4 shrink-0 text-emerald-500" aria-hidden /> {t}
               </li>

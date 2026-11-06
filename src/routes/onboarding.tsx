@@ -90,7 +90,7 @@ function Onboarding() {
                 type="button"
                 aria-pressed={active}
                 onClick={() => setFacultyId(f.id)}
-                className={`flex flex-col items-start gap-2 rounded-3xl bg-card p-4 text-left ring-1 transition ${active ? 'ring-2 ring-primary shadow-md shadow-primary/10' : 'ring-border hover:ring-primary/40'}`}
+                className={`flex flex-col items-start gap-2 rounded-2xl bg-card p-4 text-left ring-1 transition ${active ? 'ring-2 ring-primary shadow-md shadow-primary/10' : 'ring-border hover:ring-primary/40'}`}
               >
                 <span className={`flex h-10 w-10 items-center justify-center rounded-xl ${active ? 'bg-primary text-white' : 'bg-primary/10 text-primary'}`}>
                   <Icon className="h-5 w-5" aria-hidden />
@@ -164,7 +164,7 @@ function Onboarding() {
               type="button"
               disabled={!canContinue || save.isPending}
               onClick={handleSave}
-              className="h-12 w-full rounded-2xl bg-primary text-base font-bold text-white shadow-md transition hover:shadow-lg disabled:opacity-50"
+              className="h-12 w-full rounded-2xl bg-primary text-base font-semibold text-white transition-colors hover:bg-brand-strong disabled:opacity-50"
             >
               {save.isPending ? 'Saving…' : `Continue with ${count} subject${count === 1 ? '' : 's'}`}
             </button>

@@ -120,7 +120,7 @@ function TutorPage() {
         <div className="space-y-2">
           <Link
             to="/subscribe"
-            className="flex h-12 w-full items-center justify-center rounded-2xl bg-primary text-base font-bold text-white shadow-md transition hover:shadow-lg"
+            className="flex h-12 w-full items-center justify-center rounded-2xl bg-primary text-base font-semibold text-white transition-colors hover:bg-brand-strong"
           >
             Unlock the AI Tutor
           </Link>
@@ -239,14 +239,14 @@ function TutorPage() {
             {messages.map((m) =>
               m.role === 'user' ? (
                 <div key={m.id} className="flex justify-end">
-                  <p className="max-w-[85%] whitespace-pre-wrap rounded-3xl rounded-br-lg bg-primary px-4 py-2.5 text-sm leading-relaxed text-white shadow-sm">
+                  <p className="max-w-[85%] whitespace-pre-wrap rounded-2xl rounded-br-lg bg-primary px-4 py-2.5 text-sm leading-relaxed text-white shadow-sm">
                     {m.content}
                   </p>
                 </div>
               ) : (
                 <div key={m.id} className="flex gap-2.5">
                   <TutorAvatar size={30} />
-                  <div className="min-w-0 max-w-[90%] rounded-3xl rounded-tl-lg border bg-card px-4 py-3 shadow-sm">
+                  <div className="min-w-0 max-w-[90%] rounded-2xl rounded-tl-lg border bg-card px-4 py-3 shadow-sm">
                     <div className="prose prose-sm prose-slate dark:prose-invert max-w-none prose-p:my-1.5 prose-pre:my-2 prose-headings:my-2 prose-ol:my-1.5 prose-ul:my-1.5 prose-li:my-0.5">
                       <Suspense fallback={<p className="whitespace-pre-wrap text-sm">{m.content}</p>}>
                         <MarkdownView content={m.content} />
@@ -262,7 +262,7 @@ function TutorPage() {
           <div className="w-full px-4 pb-4">
             <div className="mx-auto flex max-w-3xl gap-2.5">
               <TutorAvatar size={30} />
-              <div className="flex items-center gap-1 rounded-3xl rounded-tl-lg border bg-card px-4 py-3">
+              <div className="flex items-center gap-1 rounded-2xl rounded-tl-lg border bg-card px-4 py-3">
                 <span className="h-2 w-2 animate-bounce rounded-full bg-muted-foreground [animation-delay:0ms]" />
                 <span className="h-2 w-2 animate-bounce rounded-full bg-muted-foreground [animation-delay:150ms]" />
                 <span className="h-2 w-2 animate-bounce rounded-full bg-muted-foreground [animation-delay:300ms]" />
