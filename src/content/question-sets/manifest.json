@@ -74,5 +74,20 @@
    "671cf028-136a-514d-a743-7159e8478c2f"
   ],
   "questions": 50
+ },
+ {
+  "name": "maths_set5_p1",
+  "label": "Mathematics: set 5 (geometry, finance, calculus)",
+  "subject_slug": "mathematics",
+  "version": "58afa5741f19",
+  "papers": [
+   "f891926c-460b-5651-8d9a-c02847dcc45f",
+   "aa59b100-075d-53de-b47c-445824bc5c66",
+   "dbbb6c1a-e3fe-5b66-a71d-dfeaae05c174",
+   "1cfe5c17-26f7-5095-b9bc-e790611a370e",
+   "d49e3369-8639-553d-9ac5-7768cec0bf90",
+   "d512d0d2-c469-5303-b654-cd2284c317cf"
+  ],
+  "questions": 30
  }
 ]

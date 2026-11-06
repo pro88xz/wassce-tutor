@@ -1,0 +1,1208 @@
+{
+ "name": "maths_set5_p1",
+ "label": "Mathematics: set 5 (geometry, finance, calculus)",
+ "subject_slug": "mathematics",
+ "papers": [
+  {
+   "id": "f891926c-460b-5651-8d9a-c02847dcc45f",
+   "topic": "Similar and Congruent Figures",
+   "title": "Similar and Congruent Figures: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on similar and congruent figures, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 140,
+   "questions": [
+    {
+     "id": "cba24f4a-e224-516d-9551-88231bbec237",
+     "key": "maths-similar-01",
+     "stem": "Triangles $ABC$ and $PQR$ are similar, with $A$, $B$, $C$ matching $P$, $Q$, $R$. If $|AB| = 6$ cm, $|BC| = 8$ cm and $|PQ| = 9$ cm, find $|QR|$.",
+     "image_url": null,
+     "explanation": "Scale factor $= \\dfrac{|PQ|}{|AB|} = \\dfrac{9}{6} = 1.5$.\n\n$|QR| = 1.5 \\times |BC| = 1.5 \\times 8 = 12$ cm\n\n**Why the other options are wrong**\n\n- 5.33 cm: You used the scale factor the wrong way round. $PQR$ is the larger triangle: multiply by $\\dfrac{9}{6}$.\n- 11 cm: You added the difference ($9 - 6 = 3$). Similar figures scale by multiplying, not adding.\n- 13.5 cm: You multiplied $PQ$ by the scale factor. Multiply the matching side, $BC$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e0a0a15d-ff4e-56cd-a1f3-dcf4c036293c",
+       "label": "A",
+       "content": "5.33 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c7fd5ca8-c07e-5f5e-8441-9af38c5c1f38",
+       "label": "B",
+       "content": "11 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3bacb1e3-882f-588e-86ba-02251df97874",
+       "label": "C",
+       "content": "12 cm",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "127802af-6432-58e2-8a4b-23560bd3256c",
+       "label": "D",
+       "content": "13.5 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "13f50224-fdb7-5542-915e-b7fef3ba2262",
+     "key": "maths-similar-02",
+     "stem": "Which of these is NOT enough to show that two triangles are congruent?",
+     "image_url": null,
+     "explanation": "SSS, SAS, ASA and RHS each fix a triangle's size and shape. Three equal angles fix only the shape: the triangles are similar but can be different sizes, so AAA does not prove congruence.\n\n**Why the other options are wrong**\n\n- SSS (three sides equal): Three equal sides always give congruent triangles.\n- SAS (two sides and the included angle): Two sides and the angle between them always give congruent triangles.\n- RHS (right angle, hypotenuse, side): A right angle, the hypotenuse and one other side always give congruent triangles.",
+     "position": 2,
+     "options": [
+      {
+       "id": "7913f2dc-7464-57d3-a598-25cb3fd411fd",
+       "label": "A",
+       "content": "SSS (three sides equal)",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7bc149ef-0d6f-5a1c-9f6e-6e68686724e0",
+       "label": "B",
+       "content": "SAS (two sides and the included angle)",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "504c976c-b6ef-548c-9227-2123a703f4d0",
+       "label": "C",
+       "content": "RHS (right angle, hypotenuse, side)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8bf332d4-848d-5cd4-9ef1-1e661dee8556",
+       "label": "D",
+       "content": "AAA (three angles equal)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "445f181b-458e-5b79-9725-8c466d406dfe",
+     "key": "maths-similar-03",
+     "stem": "A map of Bo District has a scale of 1 : 50 000. A road is 4.5 cm long on the map. How long is the real road, in kilometres?",
+     "image_url": null,
+     "explanation": "Real length $= 4.5 \\times 50\\,000 = 225\\,000$ cm.\n\n$100\\,000$ cm $= 1$ km, so the road is $225\\,000 \\div 100\\,000 = 2.25$ km.\n\n**Why the other options are wrong**\n\n- 0.225 km: Check the units: $225\\,000$ cm $= 2250$ m $= 2.25$ km.\n- 22.5 km: You divided by 10 000. There are $100\\,000$ cm in a kilometre.\n- 225 km: You divided by 1000. There are $100\\,000$ cm in a kilometre.",
+     "position": 3,
+     "options": [
+      {
+       "id": "4dad6283-bd08-5f7e-bb94-1faa66cd2ba4",
+       "label": "A",
+       "content": "0.225 km",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fe7d1c03-b413-5169-95b8-52b2ff001322",
+       "label": "B",
+       "content": "2.25 km",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "16108cfc-9ac9-5c7d-ba36-a977e9e9975b",
+       "label": "C",
+       "content": "22.5 km",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "84488e89-acda-5dbb-a958-58301689a39e",
+       "label": "D",
+       "content": "225 km",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "23afdbf2-861b-56c0-b0f4-8cd306c091a9",
+     "key": "maths-similar-04",
+     "stem": "In triangle $ABC$, $DE$ is parallel to $BC$, with $D$ on $AB$ and $E$ on $AC$. If $|AD| = 4$ cm, $|DB| = 6$ cm and $|DE| = 5$ cm, find $|BC|$.",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-similar-04.svg?v=cd94b2d9e1",
+     "explanation": "$DE \\parallel BC$, so triangle $ADE$ is similar to triangle $ABC$.\n\n$|AB| = 4 + 6 = 10$ cm, so the scale factor is $\\dfrac{10}{4} = 2.5$.\n\n$|BC| = 2.5 \\times 5 = 12.5$ cm\n\n**Why the other options are wrong**\n\n- 2 cm: You used the scale factor the wrong way round. $BC$ is longer than $DE$.\n- 7.5 cm: You compared $DB$ with $AD$. Triangle $ABC$ matches triangle $ADE$, so compare $AB = 10$ with $AD = 4$.\n- 11 cm: You added $DB$ to $DE$. Similar triangles scale by multiplying.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c1d3b23c-c826-57db-836d-6aed8fbf33f0",
+       "label": "A",
+       "content": "2 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "62766c7a-df6d-5715-88cb-6239fe60a2c8",
+       "label": "B",
+       "content": "7.5 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6998a4fe-e1c7-51de-873d-3f98890ddc5c",
+       "label": "C",
+       "content": "11 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a4dcbc0f-d36e-54db-bb9c-f4edfdeb0309",
+       "label": "D",
+       "content": "12.5 cm",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ff0644ca-73c7-5a49-bece-2f59e49e1923",
+     "key": "maths-similar-05",
+     "stem": "Two similar triangles have areas of 16 cm² and 36 cm². A side of the smaller triangle is 6 cm. Find the matching side of the larger triangle.",
+     "image_url": null,
+     "explanation": "Ratio of areas $= \\dfrac{36}{16}$, so the ratio of sides $= \\sqrt{\\dfrac{36}{16}} = \\dfrac{6}{4} = 1.5$.\n\nMatching side $= 1.5 \\times 6 = 9$ cm\n\n**Why the other options are wrong**\n\n- 4 cm: You used the ratio the wrong way round. The larger triangle has the longer side.\n- 13.5 cm: You used the ratio of the areas. The sides scale by the square root of that ratio.\n- 26 cm: You added the difference in area. Sides scale by $\\sqrt{\\dfrac{36}{16}} = \\dfrac{6}{4}$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "1e26c7b8-24a4-5ee9-b296-bb3d2a2cc871",
+       "label": "A",
+       "content": "4 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e5baa069-039b-50b1-a44e-f3301fbbc311",
+       "label": "B",
+       "content": "9 cm",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8f123081-a728-5482-9b92-016a5e3198ca",
+       "label": "C",
+       "content": "13.5 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b7d58fe9-487f-5957-9210-70cd6bd331d5",
+       "label": "D",
+       "content": "26 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aa59b100-075d-53de-b47c-445824bc5c66",
+   "topic": "Loci",
+   "title": "Loci: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on loci, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 141,
+   "questions": [
+    {
+     "id": "1c54495f-d8a9-5b3c-997e-d73f9bdf0b12",
+     "key": "maths-loci-01",
+     "stem": "What is the locus of points that are equidistant from two fixed points $P$ and $Q$?",
+     "image_url": null,
+     "explanation": "Every point on the perpendicular bisector of $PQ$ is the same distance from $P$ as from $Q$, and no other point is. So the locus is the perpendicular bisector of $PQ$.\n\n**Why the other options are wrong**\n\n- The line $PQ$: Points on the line $PQ$ are generally nearer one end. Only the mid-point is equidistant.\n- A circle with diameter $PQ$: Points on that circle are not all the same distance from $P$ as from $Q$.\n- A line parallel to $PQ$: Moving along a line parallel to $PQ$ brings you nearer one point than the other.",
+     "position": 1,
+     "options": [
+      {
+       "id": "50a91502-092d-59e3-b55a-f88ddffa4548",
+       "label": "A",
+       "content": "The line $PQ$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "83c08c7e-7f3b-5034-8af7-3dcbddecd6de",
+       "label": "B",
+       "content": "A circle with diameter $PQ$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9924c1c6-5257-5be3-b9ce-95beed0c1b2d",
+       "label": "C",
+       "content": "A line parallel to $PQ$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2bf219a9-08ce-582c-92a1-f9acd8da14d8",
+       "label": "D",
+       "content": "The perpendicular bisector of $PQ$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "163c5cff-b201-5491-92db-a0cce8d762ea",
+     "key": "maths-loci-02",
+     "stem": "What is the locus of points 3 cm from a fixed point $O$?",
+     "image_url": null,
+     "explanation": "All the points 3 cm from $O$ lie on the circle with centre $O$ and radius 3 cm.\n\n**Why the other options are wrong**\n\n- A circle with centre $O$ and diameter 3 cm: Every point is 3 cm from $O$, so 3 cm is the radius, not the diameter.\n- A straight line 3 cm from $O$: Points on a straight line are at different distances from $O$.\n- A pair of parallel lines 3 cm apart: That is the locus of points at a fixed distance from a line, not from a point.",
+     "position": 2,
+     "options": [
+      {
+       "id": "847690a6-d875-5071-bdf8-3fff2ce22f67",
+       "label": "A",
+       "content": "A circle with centre $O$ and diameter 3 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6330e197-c5bf-5d0e-a4b6-588fa86b0601",
+       "label": "B",
+       "content": "A straight line 3 cm from $O$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2f7fe9d5-0825-5978-a3c9-1d83d0317eba",
+       "label": "C",
+       "content": "A pair of parallel lines 3 cm apart",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e200871b-c5bc-5ed4-b244-3892c267eb39",
+       "label": "D",
+       "content": "A circle with centre $O$ and radius 3 cm",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d57bc676-5a73-5dab-99d5-291d6896c75e",
+     "key": "maths-loci-03",
+     "stem": "What is the locus of points that are equidistant from two straight lines that intersect?",
+     "image_url": null,
+     "explanation": "A point the same distance from both lines lies on a line that bisects an angle between them. Two intersecting lines make two pairs of angles, so the locus is the pair of angle bisectors (they cross at right angles).\n\n**Why the other options are wrong**\n\n- A line parallel to both lines: Two intersecting lines are not parallel, so no line is parallel to both.\n- The perpendicular bisector of the two lines: A perpendicular bisector belongs to a line segment between two points, not to two lines.\n- A circle centred where the lines meet: Points on that circle are mostly nearer one line than the other.",
+     "position": 3,
+     "options": [
+      {
+       "id": "a0160c58-1785-5589-963b-543f2ebdcecd",
+       "label": "A",
+       "content": "The bisectors of the angles between the lines",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4ad35a4e-cb97-5937-80ad-a6aa5cc5fd2c",
+       "label": "B",
+       "content": "A line parallel to both lines",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "535c2522-1574-5c04-a78e-bebcb19cc17f",
+       "label": "C",
+       "content": "The perpendicular bisector of the two lines",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "635cd87a-86f6-5771-bc7b-9d59cb9d11de",
+       "label": "D",
+       "content": "A circle centred where the lines meet",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "386adf36-b856-53a6-b298-fe8d13feae16",
+     "key": "maths-loci-04",
+     "stem": "In a plane, what is the locus of points 2 cm from a straight line $AB$ (extended in both directions)?",
+     "image_url": null,
+     "explanation": "Points 2 cm from the line lie on a line parallel to it, 2 cm away, and this happens on both sides. So the locus is a pair of parallel lines, one on each side of $AB$.\n\n**Why the other options are wrong**\n\n- One line parallel to $AB$, 2 cm away: Points 2 cm away can be on either side of $AB$, so there are two lines.\n- A circle of radius 2 cm: A circle is the locus for a fixed distance from a point, not from a line.\n- The perpendicular bisector of $AB$: That is the locus of points equidistant from $A$ and $B$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7b5c8db2-d28e-5159-849a-32196a9a6bf8",
+       "label": "A",
+       "content": "One line parallel to $AB$, 2 cm away",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "41f3a746-a06b-5c0b-bed6-c311da4cd41c",
+       "label": "B",
+       "content": "A circle of radius 2 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5de94951-22ce-59cd-a0cc-695cd71b6fde",
+       "label": "C",
+       "content": "A pair of lines parallel to $AB$, 2 cm on each side",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8d091ca4-d267-50d4-a131-2bbf3eda1604",
+       "label": "D",
+       "content": "The perpendicular bisector of $AB$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e94f547a-8e6b-5a88-8267-cd93ddec5ac2",
+     "key": "maths-loci-05",
+     "stem": "A point $P(x, y)$ moves so that it is always 5 units from the origin. Which equation describes its locus?",
+     "image_url": null,
+     "explanation": "The distance from the origin is $\\sqrt{x^{2} + y^{2}}$. Setting this equal to 5 and squaring: $x^{2} + y^{2} = 25$, a circle with centre $(0, 0)$ and radius 5.\n\n**Why the other options are wrong**\n\n- $x^{2} + y^{2} = 5$: The distance is $\\sqrt{x^{2} + y^{2}} = 5$, so square both sides: $x^{2} + y^{2} = 25$.\n- $x + y = 5$: That is a straight line. Distance from the origin uses Pythagoras: $\\sqrt{x^{2} + y^{2}}$.\n- $y = 5$: That is a horizontal line. Its points are not all 5 units from the origin.",
+     "position": 5,
+     "options": [
+      {
+       "id": "414e8c7a-9956-5fd3-a390-845a8114984c",
+       "label": "A",
+       "content": "$x^{2} + y^{2} = 5$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b6287895-4cba-529c-83d6-d27699feb5e0",
+       "label": "B",
+       "content": "$x + y = 5$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4a2fe964-4532-5e34-bd00-b172b8b79b9e",
+       "label": "C",
+       "content": "$y = 5$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f0f28d80-5268-57d9-8414-a9d01c3b027f",
+       "label": "D",
+       "content": "$x^{2} + y^{2} = 25$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dbbb6c1a-e3fe-5b66-a71d-dfeaae05c174",
+   "topic": "Construction",
+   "title": "Construction: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on construction, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 142,
+   "questions": [
+    {
+     "id": "829f19cc-ea3a-582e-86e4-cf24e1c036ee",
+     "key": "maths-construction-01",
+     "stem": "Using only a ruler and a pair of compasses, an angle of 75° can be constructed by combining which two angles?",
+     "image_url": null,
+     "explanation": "45° comes from bisecting 90°, and 30° from bisecting 60°. Placing them side by side gives $45° + 30° = 75°$.\n\n**Why the other options are wrong**\n\n- 50° and 25°: Neither 50° nor 25° can be made with ruler and compasses alone.\n- 70° and 5°: Neither 70° nor 5° can be made with ruler and compasses alone.\n- 35° and 40°: Neither 35° nor 40° can be made with ruler and compasses alone.",
+     "position": 1,
+     "options": [
+      {
+       "id": "24f36f5b-4337-5e2e-94fc-22b9e38da7f1",
+       "label": "A",
+       "content": "45° and 30°",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0c799915-200d-5960-984b-cdf858de2eed",
+       "label": "B",
+       "content": "50° and 25°",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d1e47b6d-82f1-5fa2-b2f9-8683cf6eb8fd",
+       "label": "C",
+       "content": "70° and 5°",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e7d4e2a2-b8b2-5f43-b491-c2db8bd18925",
+       "label": "D",
+       "content": "35° and 40°",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "890d6541-9c84-5dd9-9521-667a26d3cb40",
+     "key": "maths-construction-02",
+     "stem": "Which of these angles CANNOT be constructed using only a ruler and a pair of compasses?",
+     "image_url": null,
+     "explanation": "With ruler and compasses you can make 60° (equilateral triangle) and 90° (perpendicular), bisect them, and add or subtract the results: 22.5°, 75° and 105° can all be made that way. 40° cannot.\n\n**Why the other options are wrong**\n\n- 22.5°: 22.5° can be constructed: bisect 90° to get 45°, then bisect again.\n- 75°: 75° can be constructed: $45° + 30°$.\n- 105°: 105° can be constructed: $60° + 45°$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "1ccd77c4-a171-5096-8917-420825aad645",
+       "label": "A",
+       "content": "22.5°",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "edebe252-f0e3-50d4-87aa-5e1b01705478",
+       "label": "B",
+       "content": "40°",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "05e69012-8d87-5f9a-b769-d3d8a81b669c",
+       "label": "C",
+       "content": "75°",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d9132a6c-36a4-55cb-850e-01b3396fdf54",
+       "label": "D",
+       "content": "105°",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6f828f79-c593-545b-b405-a9f9ca82376f",
+     "key": "maths-construction-03",
+     "stem": "To construct the perpendicular bisector of a line segment $AB$, you draw arcs of the same radius from $A$ and from $B$. What must that radius be?",
+     "image_url": null,
+     "explanation": "The arcs from $A$ and $B$ must cross above and below $AB$. That only happens if the radius is more than half of $AB$. The line through the two crossing points is the perpendicular bisector.\n\n**Why the other options are wrong**\n\n- Less than half the length of $AB$: Then the arcs from $A$ and $B$ would not meet.\n- Exactly a quarter of the length of $AB$: Then the arcs from $A$ and $B$ would not meet.\n- Exactly the length of the line $AB$ doubled: Any radius more than half of $AB$ works; it does not have to be one particular length.",
+     "position": 3,
+     "options": [
+      {
+       "id": "6a884d7c-5dbd-53a5-aa09-df51b5c1ceec",
+       "label": "A",
+       "content": "Less than half the length of $AB$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "54beeb22-7fc3-5ab8-bd14-d36fa9cd70bd",
+       "label": "B",
+       "content": "Exactly a quarter of the length of $AB$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2c400419-ecfe-5cd7-af8f-07736e77f946",
+       "label": "C",
+       "content": "More than half the length of $AB$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3c57e614-20de-5973-9d1c-5e69a011d9b5",
+       "label": "D",
+       "content": "Exactly the length of the line $AB$ doubled",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "047e21ef-1553-5710-aa8a-43fb37f8f7d1",
+     "key": "maths-construction-04",
+     "stem": "Constructing an angle of 60° with ruler and compasses relies on which fact?",
+     "image_url": null,
+     "explanation": "With the compasses kept at the same radius, the arc from the vertex and the arc from the point where it cuts the arm make an equilateral triangle. Every angle of an equilateral triangle is 60°.\n\n**Why the other options are wrong**\n\n- Angles on a straight line add up to 180°: The construction makes an equilateral triangle; the straight-line fact is not used.\n- The angle in a semicircle is 90°: That gives a right angle, not 60°.\n- Alternate angles are equal: No parallel lines are used in this construction.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e453d91f-2ac3-54f0-90db-346dba11ad2a",
+       "label": "A",
+       "content": "Angles on a straight line add up to 180°",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7c8aad43-87da-5a58-8573-9c702a6ebd94",
+       "label": "B",
+       "content": "The angle in a semicircle is 90°",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "de9a8841-58ce-5ae8-9750-0dfb3ae13dc5",
+       "label": "C",
+       "content": "Alternate angles are equal",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2c6302ba-51e7-55ef-b671-a84a1be99b25",
+       "label": "D",
+       "content": "Each angle of an equilateral triangle is 60°",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6d59b2ab-64de-516f-93f1-c8312d5fa4b2",
+     "key": "maths-construction-05",
+     "stem": "Which set of lengths can NOT be used to construct a triangle?",
+     "image_url": null,
+     "explanation": "Any two sides of a triangle must add up to more than the third. $2 + 3 = 5$, which is less than 6, so the two short sides cannot meet.\n\n**Why the other options are wrong**\n\n- 3 cm, 4 cm, 5 cm: $3 + 4 > 5$, so these make a triangle (a right-angled one).\n- 5 cm, 5 cm, 8 cm: $5 + 5 > 8$, so these make a triangle.\n- 6 cm, 6 cm, 6 cm: These make an equilateral triangle.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9b0e2ca2-14f4-5c5e-9c60-12c63606e9d6",
+       "label": "A",
+       "content": "2 cm, 3 cm, 6 cm",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "43b8666a-cc7f-5102-a814-e63be37913c5",
+       "label": "B",
+       "content": "3 cm, 4 cm, 5 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "01093d44-4123-5cf8-b3e5-c889916bab7a",
+       "label": "C",
+       "content": "5 cm, 5 cm, 8 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bfc82ec9-e9b2-5fb9-ac72-27a55a6b413a",
+       "label": "D",
+       "content": "6 cm, 6 cm, 6 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1cfe5c17-26f7-5095-b9bc-e790611a370e",
+   "topic": "Financial Arithmetic",
+   "title": "Financial Arithmetic: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on financial arithmetic, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 143,
+   "questions": [
+    {
+     "id": "5a5f890d-4f1f-5b20-9cce-13f3074f496e",
+     "key": "maths-financial-01",
+     "stem": "A motorbike bought for Le 30,000 loses 20% of its value at the end of each year (reducing balance). What is it worth after 2 years?",
+     "image_url": null,
+     "explanation": "Each year it keeps 80% of its value:\n\nAfter 1 year: $0.8 \\times 30\\,000 = 24\\,000$. After 2 years: $0.8 \\times 24\\,000 = $ Le 19,200.\n\n**Why the other options are wrong**\n\n- Le 10,800: That is how much value it lost. The question asks what it is worth.\n- Le 18,000: You took 20% of Le 30,000 twice. In year 2 the 20% is of the new, lower value.\n- Le 24,000: That is its value after 1 year.",
+     "position": 1,
+     "options": [
+      {
+       "id": "c960d24b-2426-524e-901f-9184b5a1c8e0",
+       "label": "A",
+       "content": "Le 10,800",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1f8c7d25-f1bc-5a1e-b99c-440661dc5209",
+       "label": "B",
+       "content": "Le 18,000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a7703dfe-b8b5-5521-a7b1-c91ccba6d283",
+       "label": "C",
+       "content": "Le 19,200",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c51e1d6a-0939-5c34-ab45-1f685811eed2",
+       "label": "D",
+       "content": "Le 24,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3b67d31b-c891-547e-ac7e-0295c1fd8d6b",
+     "key": "maths-financial-02",
+     "stem": "A machine costs Le 50,000. After 9 years its scrap value is Le 5,000. Using the straight-line method, find the depreciation each year.",
+     "image_url": null,
+     "explanation": "Total depreciation $= 50\\,000 - 5\\,000 = 45\\,000$.\n\nEach year: $45\\,000 \\div 9 = $ Le 5,000\n\n**Why the other options are wrong**\n\n- Le 5,555.56: You left out the scrap value. Depreciate only the part that is lost: $50\\,000 - 5\\,000$.\n- Le 6,111.11: You added the scrap value. Subtract it: the machine loses $50\\,000 - 5\\,000$.\n- Le 45,000: That is the total depreciation over 9 years. Divide by 9.",
+     "position": 2,
+     "options": [
+      {
+       "id": "cc6a3aae-2c81-5e80-aaf6-0303169d30b4",
+       "label": "A",
+       "content": "Le 5,000",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "144cf764-13da-513b-89dc-1de4db7560e0",
+       "label": "B",
+       "content": "Le 5,555.56",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "69ae1d85-7e6b-5858-8296-85a19098cfad",
+       "label": "C",
+       "content": "Le 6,111.11",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8585b7dc-84b1-5128-846f-aea5c944b180",
+       "label": "D",
+       "content": "Le 45,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1d74e6e8-cf36-541d-a7d9-e7628b2d1c31",
+     "key": "maths-financial-03",
+     "stem": "Mr Conteh buys 400 shares at Le 2.50 each. The company pays a dividend of 8% on the nominal value of Le 2.00 per share. How much dividend does he receive?",
+     "image_url": null,
+     "explanation": "Nominal value of his shares $= 400 \\times 2.00 = $ Le 800.\n\nDividend $= 8\\%$ of $800 = $ Le 64\n\n**Why the other options are wrong**\n\n- Le 80: You worked out 8% of the price he paid (Le 2.50). Dividends are paid on the nominal value, Le 2.00.\n- Le 800: That is the nominal value of his shares. The dividend is 8% of it.\n- Le 1,000: That is what he paid for the shares.",
+     "position": 3,
+     "options": [
+      {
+       "id": "19e823c1-d76d-5745-b3c7-8297345de338",
+       "label": "A",
+       "content": "Le 64",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "eda0d4ec-033e-51a7-a6da-bd012dd472e1",
+       "label": "B",
+       "content": "Le 80",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "29e6d0e6-71b6-527f-bde3-413718dc10df",
+       "label": "C",
+       "content": "Le 800",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7c0849fe-ab50-5557-aac9-43a564b0f553",
+       "label": "D",
+       "content": "Le 1,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "652df846-7850-507d-b262-e5ef480ab1fd",
+     "key": "maths-financial-04",
+     "stem": "A bond of Le 10,000 pays simple interest of 6% per annum. How much interest does it pay in 3 years?",
+     "image_url": null,
+     "explanation": "Simple interest $= \\dfrac{PRT}{100} = \\dfrac{10\\,000 \\times 6 \\times 3}{100} = $ Le 1,800\n\n**Why the other options are wrong**\n\n- Le 600: That is one year's interest. The bond pays for 3 years.\n- Le 1,910.16: That is compound interest. The bond pays simple interest.\n- Le 11,800: That is the bond plus the interest. The question asks for the interest only.",
+     "position": 4,
+     "options": [
+      {
+       "id": "3138cf40-9e5d-50c0-8f7a-df3250de9fb3",
+       "label": "A",
+       "content": "Le 600",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "01b663d8-3c34-5694-8465-5d1a16c475cb",
+       "label": "B",
+       "content": "Le 1,800",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "af404bee-69c2-5af3-83c6-fae2ed124c92",
+       "label": "C",
+       "content": "Le 1,910.16",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9c33af55-d48f-588a-b161-651826f99d10",
+       "label": "D",
+       "content": "Le 11,800",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c31dc3fc-7635-5997-aad5-eb804d7e3e17",
+     "key": "maths-financial-05",
+     "stem": "A fridge costs Le 2,400 cash. On hire purchase you pay a 25% deposit and then 12 monthly instalments of Le 180. How much more than the cash price do you pay on hire purchase?",
+     "image_url": null,
+     "explanation": "Deposit $= 25\\%$ of $2\\,400 = 600$. Instalments $= 12 \\times 180 = 2\\,160$.\n\nHire purchase price $= 600 + 2\\,160 = 2\\,760$, which is $2\\,760 - 2\\,400 = $ Le 360 more than the cash price.\n\n**Why the other options are wrong**\n\n- Le 600: That is the deposit (25% of Le 2,400).\n- Le 2,160: That is the total of the instalments ($12 \\times 180$). Add the deposit and compare with the cash price.\n- Le 2,760: That is the total hire purchase price. The question asks how much more than the cash price.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f79cbeee-d017-5742-9472-5bb037c41210",
+       "label": "A",
+       "content": "Le 360",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "db21d791-9a8e-586e-9c18-4870ce1da382",
+       "label": "B",
+       "content": "Le 600",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "07be60fe-1d24-55e1-aaa5-75ec52218d2c",
+       "label": "C",
+       "content": "Le 2,160",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9a89b7f6-4c61-5c86-83eb-ca5635fbf8a9",
+       "label": "D",
+       "content": "Le 2,760",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d49e3369-8639-553d-9ac5-7768cec0bf90",
+   "topic": "Differentiation",
+   "title": "Differentiation: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on differentiation, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 144,
+   "questions": [
+    {
+     "id": "c2e1b217-7509-5c70-adbf-3599986d3a0b",
+     "key": "maths-differentiation-01",
+     "stem": "Find $\\dfrac{dy}{dx}$ if $y = 3x^{4} - 5x^{2} + 7$.",
+     "image_url": null,
+     "explanation": "Differentiate term by term ($\\dfrac{d}{dx}x^{n} = nx^{n-1}$; a constant gives 0):\n\n$\\dfrac{dy}{dx} = 4 \\times 3x^{3} - 2 \\times 5x - 0 = 12x^{3} - 10x$\n\n**Why the other options are wrong**\n\n- $12x^{3} - 10x + 7$: A constant differentiates to 0, so the 7 disappears.\n- $3x^{3} - 5x$: You lowered the powers but forgot to multiply by them: $\\dfrac{d}{dx}(3x^{4}) = 4 \\times 3x^{3}$.\n- $12x^{5} - 10x^{3}$: The power goes down by 1, not up: $x^{4} \\to x^{3}$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "07edcc22-2e35-50a3-9b13-09f11e77fba5",
+       "label": "A",
+       "content": "$12x^{3} - 10x + 7$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6d3280dd-cdce-50ec-90a0-0cc77295230e",
+       "label": "B",
+       "content": "$3x^{3} - 5x$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ed00a6c4-d0a4-5787-ba68-a2d122712a18",
+       "label": "C",
+       "content": "$12x^{3} - 10x$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2626521c-b44a-555e-87b7-c881d539661c",
+       "label": "D",
+       "content": "$12x^{5} - 10x^{3}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "34e350d5-f16e-5a40-a788-73f40829aaa0",
+     "key": "maths-differentiation-02",
+     "stem": "Find the gradient of the curve $y = x^{2} - 4x + 1$ at the point where $x = 3$.",
+     "image_url": null,
+     "explanation": "$\\dfrac{dy}{dx} = 2x - 4$. At $x = 3$: $2(3) - 4 = 2$.\n\n**Why the other options are wrong**\n\n- $-2$: That is the $y$-value at $x = 3$. The gradient is $\\dfrac{dy}{dx}$ at $x = 3$.\n- $6$: You left out the $-4$: $\\dfrac{dy}{dx} = 2x - 4$.\n- $10$: Sign slip: $\\dfrac{dy}{dx} = 2x - 4$, not $2x + 4$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "96688049-e7fc-5281-be53-ef2715ed0b12",
+       "label": "A",
+       "content": "$-2$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "36f41972-87b6-553b-ad3a-ca40cd9f0083",
+       "label": "B",
+       "content": "$2$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1bbb018a-420d-5876-bca6-97cf6432b702",
+       "label": "C",
+       "content": "$6$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "48047bc7-157f-5efb-9bcc-4fd13ab89199",
+       "label": "D",
+       "content": "$10$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e03492bc-a6f4-5d08-8475-7bdebbf67d46",
+     "key": "maths-differentiation-03",
+     "stem": "Find the minimum value of $y = x^{2} - 6x + 5$.",
+     "image_url": null,
+     "explanation": "At a minimum, $\\dfrac{dy}{dx} = 2x - 6 = 0$, so $x = 3$.\n\n$y = 3^{2} - 6(3) + 5 = 9 - 18 + 5 = -4$\n\n**Why the other options are wrong**\n\n- $3$: $x = 3$ is where the minimum happens. The minimum value is $y$ at $x = 3$.\n- $5$: 5 is the value of $y$ at $x = 0$, not the minimum.\n- $32$: Sign slip: $2x - 6 = 0$ gives $x = 3$, not $-3$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5823bbd8-61f6-5e6b-bc79-ef3e52f11abd",
+       "label": "A",
+       "content": "$-4$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "54dc24fb-d52a-5d83-92dd-07f0f5c055b8",
+       "label": "B",
+       "content": "$3$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a5af726d-e555-5cb3-94fe-c531bf7018b6",
+       "label": "C",
+       "content": "$5$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "987e0973-01d9-5153-8021-4708634903fb",
+       "label": "D",
+       "content": "$32$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9bc822b0-eb45-5ea5-b959-7b736429ef1c",
+     "key": "maths-differentiation-04",
+     "stem": "A particle moves so that its distance in metres after $t$ seconds is $s = t^{3} - 3t^{2} + 2t$. Find its velocity when $t = 3$.",
+     "image_url": null,
+     "explanation": "$v = \\dfrac{ds}{dt} = 3t^{2} - 6t + 2$. At $t = 3$: $27 - 18 + 2 = 11$ m/s.\n\n**Why the other options are wrong**\n\n- 6 m/s: 6 is the distance $s$ at $t = 3$. Velocity is $\\dfrac{ds}{dt}$.\n- 9 m/s: You left out the $+2$: $\\dfrac{ds}{dt} = 3t^{2} - 6t + 2$.\n- 12 m/s: You differentiated twice. That gives the acceleration.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ee89f55f-c871-5054-9db2-075b81c93dc0",
+       "label": "A",
+       "content": "6 m/s",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "27e0823d-0e4a-51fd-8ffc-50e2c2f09e41",
+       "label": "B",
+       "content": "9 m/s",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8c361427-ee70-5e7f-83f5-460a269e6d84",
+       "label": "C",
+       "content": "11 m/s",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0ac40d4e-adf8-50f9-8fec-cdd7ce574485",
+       "label": "D",
+       "content": "12 m/s",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3f20c4d2-808f-5702-a95a-551579a86cc5",
+     "key": "maths-differentiation-05",
+     "stem": "The area of a circle is $A = \\pi r^{2}$. Find $\\dfrac{dA}{dr}$ when $r = 7$ cm. [Take $\\pi = \\dfrac{22}{7}$]",
+     "image_url": null,
+     "explanation": "$\\dfrac{dA}{dr} = 2\\pi r = 2 \\times \\dfrac{22}{7} \\times 7 = 44$ (cm² per cm).\n\n**Why the other options are wrong**\n\n- 22: You worked out $\\pi r$. $\\dfrac{d}{dr}(\\pi r^{2}) = 2\\pi r$.\n- 88: You used the diameter, 14, in $2\\pi r$.\n- 154: That is the area itself. Differentiate first: $\\dfrac{dA}{dr} = 2\\pi r$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e3a99286-f022-5b5b-a1a6-d1760dda3036",
+       "label": "A",
+       "content": "22",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "82ce4314-59c0-5cae-8171-19ecd71eefae",
+       "label": "B",
+       "content": "44",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9d82a51a-e834-59b2-8e3f-517f63e28fb0",
+       "label": "C",
+       "content": "88",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5dac3719-eafd-5c72-bc01-d240f3cbf7cb",
+       "label": "D",
+       "content": "154",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d512d0d2-c469-5303-b654-cd2284c317cf",
+   "topic": "Integration",
+   "title": "Integration: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on integration, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 145,
+   "questions": [
+    {
+     "id": "6132d99e-b818-5948-9ce8-def928858cd1",
+     "key": "maths-integration-01",
+     "stem": "Find $\\displaystyle\\int (6x^{2} - 4x + 3)\\, dx$.",
+     "image_url": null,
+     "explanation": "Integrate term by term ($\\int x^{n}\\,dx = \\dfrac{x^{n+1}}{n+1}$):\n\n$\\dfrac{6x^{3}}{3} - \\dfrac{4x^{2}}{2} + 3x + C = 2x^{3} - 2x^{2} + 3x + C$\n\n**Why the other options are wrong**\n\n- $12x - 4$: You differentiated. To integrate, raise each power by 1 and divide by the new power.\n- $6x^{3} - 4x^{2} + 3x + C$: You raised the powers but forgot to divide by the new powers: $\\int 6x^{2}\\,dx = \\dfrac{6x^{3}}{3}$.\n- $2x^{3} - 2x^{2} + C$: The constant 3 integrates to $3x$, not 0.",
+     "position": 1,
+     "options": [
+      {
+       "id": "6a7a681a-54ae-5697-8e69-6f28c4b1df9b",
+       "label": "A",
+       "content": "$12x - 4$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2bb6aba4-7384-5bda-a47f-60baa203f2b9",
+       "label": "B",
+       "content": "$6x^{3} - 4x^{2} + 3x + C$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bd478a92-786c-53eb-809f-dcc7962c4b24",
+       "label": "C",
+       "content": "$2x^{3} - 2x^{2} + C$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5015de51-4608-53f7-98e4-1b1dea62dec2",
+       "label": "D",
+       "content": "$2x^{3} - 2x^{2} + 3x + C$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "00aee056-605f-53c8-888e-d7572406bd68",
+     "key": "maths-integration-02",
+     "stem": "Evaluate $\\displaystyle\\int_{1}^{3} 2x\\, dx$.",
+     "image_url": null,
+     "explanation": "$\\displaystyle\\int_{1}^{3} 2x\\,dx = \\big[x^{2}\\big]_{1}^{3} = 3^{2} - 1^{2} = 9 - 1 = 8$\n\n**Why the other options are wrong**\n\n- $4$: You put the limits into $2x$ instead of integrating first: $2(3) - 2(1)$.\n- $9$: You put in the top limit only. Subtract the value at the bottom limit.\n- $10$: You added the values at the two limits. Subtract: $9 - 1$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "522cefc7-f974-522b-a9b8-e17e6988898f",
+       "label": "A",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "33c32fce-48af-5f41-ad8a-932e2e1bc2a7",
+       "label": "B",
+       "content": "$8$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "00fb88fa-1e0c-5708-914a-5fc6fcd06952",
+       "label": "C",
+       "content": "$9$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e5f52da4-5451-582d-8e58-8ebf1115956b",
+       "label": "D",
+       "content": "$10$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a7fc1a81-3520-5f87-80b5-9fc1bcfd6407",
+     "key": "maths-integration-03",
+     "stem": "Evaluate $\\displaystyle\\int_{0}^{2} (3x^{2} + 1)\\, dx$.",
+     "image_url": null,
+     "explanation": "$\\displaystyle\\int_{0}^{2} (3x^{2} + 1)\\,dx = \\big[x^{3} + x\\big]_{0}^{2} = (8 + 2) - 0 = 10$\n\n**Why the other options are wrong**\n\n- $8$: You left out the $+1$, which integrates to $x$.\n- $13$: You put $x = 2$ into $3x^{2} + 1$ instead of integrating it first.\n- $26$: You raised the power but forgot to divide by 3: $\\int 3x^{2}\\,dx = x^{3}$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "83c9627b-aca7-59f3-9e5c-4813d11dc264",
+       "label": "A",
+       "content": "$8$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6f8c30da-ded3-53f9-aa88-27a371a88e3c",
+       "label": "B",
+       "content": "$10$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8d23b85c-c1ea-5fad-be6c-fb65f47aee62",
+       "label": "C",
+       "content": "$13$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a91b6b74-5ea9-5044-b23c-b3dd1a55c0ec",
+       "label": "D",
+       "content": "$26$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "47e7e8ec-edd9-57e8-bb2b-358d6d292726",
+     "key": "maths-integration-04",
+     "stem": "Given that $\\dfrac{dy}{dx} = 4x - 3$ and $y = 5$ when $x = 2$, find $y$ in terms of $x$.",
+     "image_url": null,
+     "explanation": "$y = \\displaystyle\\int (4x - 3)\\,dx = 2x^{2} - 3x + C$.\n\nWhen $x = 2$, $y = 5$: $5 = 8 - 6 + C$, so $C = 3$. Therefore $y = 2x^{2} - 3x + 3$.\n\n**Why the other options are wrong**\n\n- $y = 2x^{2} - 3x$: You forgot the constant of integration. Use $y = 5$ when $x = 2$ to find it.\n- $y = 2x^{2} - 3x + 5$: You used 5 as the constant. Substitute $x = 2$, $y = 5$: $5 = 8 - 6 + C$, so $C = 3$.\n- $y = 2x^{2} - 3x - 3$: Sign slip: $5 = 2 + C$ gives $C = 3$, not $-3$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d9861e17-f194-5dd4-9049-9f2592b5f0ed",
+       "label": "A",
+       "content": "$y = 2x^{2} - 3x + 3$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "de9c89c3-ab42-597c-a306-bea782242d09",
+       "label": "B",
+       "content": "$y = 2x^{2} - 3x$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a9abe505-596f-531d-ab86-2b30111ed857",
+       "label": "C",
+       "content": "$y = 2x^{2} - 3x + 5$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e82c482a-ad4b-5738-96a6-a8a97e649d9c",
+       "label": "D",
+       "content": "$y = 2x^{2} - 3x - 3$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "92166589-4c88-5fb8-aadd-bdcbe3084bea",
+     "key": "maths-integration-05",
+     "stem": "Find the area between the curve $y = x^{2}$, the $x$-axis and the lines $x = 0$ and $x = 3$.",
+     "image_url": null,
+     "explanation": "Area $= \\displaystyle\\int_{0}^{3} x^{2}\\,dx = \\left[\\dfrac{x^{3}}{3}\\right]_{0}^{3} = \\dfrac{27}{3} - 0 = 9$ square units\n\n**Why the other options are wrong**\n\n- 3 square units: You divided by 3 but did not raise the power: $\\int x^{2}\\,dx = \\dfrac{x^{3}}{3}$.\n- 6 square units: You differentiated $x^{2}$ and put in $x = 3$. Area needs integration.\n- 27 square units: You raised the power but forgot to divide by 3.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f87be718-1f34-56a1-a355-e930b077f85e",
+       "label": "A",
+       "content": "3 square units",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4363511b-782d-55dc-bda6-d1f80ebc8971",
+       "label": "B",
+       "content": "6 square units",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9c8825d0-2963-5af5-a5f1-893440d01747",
+       "label": "C",
+       "content": "9 square units",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b18fcd47-6ef9-5684-a1ee-e6825bb181b1",
+       "label": "D",
+       "content": "27 square units",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "58afa5741f19"
+}

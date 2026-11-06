@@ -209,8 +209,8 @@ def tex_shows(tex: str, value: Any) -> bool | None:
     if isinstance(value, str):
         if value.isdigit():
             return f"{value}_{{" in t  # base-n numbers, e.g. 2210_{three}
-        if re.fullmatch(r"[A-Za-z][A-Za-z ,'\-]*", value):  # words, e.g. Sunday, many-to-one
-            return value in tex.replace("$", "")
+        if re.search(r"[A-Za-z]", value):  # words, e.g. Sunday, many-to-one, 45 and 30
+            return value in tex.replace("$", "").replace("°", "")
         return None
     if isinstance(value, tuple):  # column vectors: the numbers must appear in order
         shown = re.findall(r"-?\d+(?:\.\d+)?", t)
