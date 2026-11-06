@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 374" width="300" height="374" role="img">
+  <title>From town T, village A is 10 km on a bearing of 030° and village B is 10 km on a bearing of 120°.</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <line x1="78.0" y1="225.2" x2="78.0" y2="49.2" stroke="#111827" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M81.9,57.3 L78.0,49.2 L74.1,57.3" fill="none" stroke="#111827" stroke-width="1.6"/>
+  <text x="78.0" y="38.2" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#111827" text-anchor="middle" dominant-baseline="central">N</text>
+  <line x1="78.0" y1="225.2" x2="158.0" y2="86.6" stroke="#111827" stroke-width="2" stroke-linecap="round"/>
+  <line x1="78.0" y1="225.2" x2="216.6" y2="305.2" stroke="#111827" stroke-width="2" stroke-linecap="round"/>
+  <line x1="158.0" y1="86.6" x2="216.6" y2="305.2" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <path d="M78.0,169.2 A56,56 0 0 1 106.0,176.7" fill="none" stroke="#111827" stroke-width="1.6"/>
+  <text x="95.9" y="158.6" font-family="system-ui, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">30°</text>
+  <path d="M78.0,201.2 A24,24 0 0 1 98.8,237.2" fill="none" stroke="#111827" stroke-width="1.6"/>
+  <text x="114.4" y="204.2" font-family="system-ui, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">120°</text>
+  <text x="129.3" y="162.4" font-family="system-ui, sans-serif" font-size="14" fill="#111827" text-anchor="start" dominant-baseline="central">10 km</text>
+  <text x="140.8" y="276.5" font-family="system-ui, sans-serif" font-size="14" fill="#111827" text-anchor="middle" dominant-baseline="central">10 km</text>
+  <circle cx="78.0" cy="225.2" r="3.2" fill="#111827"/>
+  <text x="63.9" y="230.3" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">T</text>
+  <circle cx="158.0" cy="86.6" r="3.2" fill="#111827"/>
+  <text x="165.5" y="73.6" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">A</text>
+  <circle cx="216.6" cy="305.2" r="3.2" fill="#111827"/>
+  <text x="231.6" y="305.2" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">B</text>
+</svg>

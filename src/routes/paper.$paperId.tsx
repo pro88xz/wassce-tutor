@@ -157,6 +157,15 @@ function PaperPage() {
                   </div>
                 </div>
 
+                {q.image_url && (
+                  <img
+                    src={q.image_url}
+                    alt={`Diagram for question ${i + 1}`}
+                    loading="lazy"
+                    className="mx-auto block h-auto w-full max-w-sm rounded-xl border bg-white"
+                  />
+                )}
+
                 <div className="space-y-2">
                   {q.options.map((o) => {
                     const isChosen = chosen === o.id

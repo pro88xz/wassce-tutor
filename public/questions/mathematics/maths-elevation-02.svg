@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 209" width="340" height="209" role="img">
+  <title>A cliff 80 m high. The angle of depression of boat B from the top is 25°.</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <line x1="36.1" y1="151.7" x2="303.9" y2="151.7" stroke="#111827" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="72.6" y1="151.7" x2="72.6" y2="54.3" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+  <line x1="72.6" y1="54.3" x2="145.7" y2="54.3" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <line x1="72.6" y1="54.3" x2="281.5" y2="151.7" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <path d="M72.6,140.7 L83.6,140.7 L83.6,151.7" fill="none" stroke="#111827" stroke-width="1.5"/>
+  <path d="M118.6,54.3 A46,46 0 0 1 114.3,73.8" fill="none" stroke="#111827" stroke-width="1.6"/>
+  <text x="132.2" y="67.6" font-family="system-ui, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">25°</text>
+  <text x="59.6" y="103.0" font-family="system-ui, sans-serif" font-size="14" fill="#111827" text-anchor="end" dominant-baseline="central">80 m</text>
+  <text x="177.0" y="164.7" font-family="system-ui, sans-serif" font-size="14" fill="#111827" text-anchor="middle" dominant-baseline="central">d</text>
+  <circle cx="281.5" cy="151.7" r="3.2" fill="#111827"/>
+  <text x="289.0" y="138.7" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">B</text>
+</svg>

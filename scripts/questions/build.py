@@ -23,6 +23,7 @@ Output
 
 from __future__ import annotations
 
+import hashlib
 import importlib.util
 import sys
 import uuid
@@ -44,7 +45,17 @@ SETS = [
         "review": ROOT / "content/questions/mathematics/pilot_p1.review.md",
         "sort_from": 100,
     },
+    {
+        "module": ROOT / "content/questions/mathematics/set2_p1.py",
+        "subject_slug": "mathematics",
+        "name": "maths_set2_p1",
+        "sql": ROOT / "supabase/content/20261106_maths_set2_questions.sql",
+        "review": ROOT / "content/questions/mathematics/set2_p1.review.md",
+        "sort_from": 110,
+    },
 ]
+
+SITE = "https://wasscetutor.com"  # diagrams are served from the website so old app builds can show them too
 
 LABELS = "ABCD"
 NS = uuid.UUID("6f1c3f5e-9a51-4d0e-b7a4-2f0c5d6e7a81")  # fixed namespace for stable ids
@@ -69,7 +80,11 @@ def order_options(questions: list[Q]) -> dict[str, list[tuple[str, bool, int]]]:
     later = []
     for q in questions:
         opts = [(q.answer[0], True, 0, q.answer[1])] + [(w.tex, False, i + 1, w.value) for i, w in enumerate(q.wrong)]
-        if all(is_number(v) for *_, v in opts):
+        if q.order:
+            opts.sort(key=lambda o: q.order.index(o[0]))
+            out[q.id] = [(t, c, src) for t, c, src, _ in opts]
+            used[[c for _, c, _, _ in opts].index(True)] += 1
+        elif all(is_number(v) for *_, v in opts):
             opts.sort(key=lambda o: num(o[3]))
             out[q.id] = [(t, c, src) for t, c, src, _ in opts]
             used[[c for _, c, _, _ in opts].index(True)] += 1
@@ -114,11 +129,23 @@ def explanation(q: Q) -> str:
     return big_fracs("\n".join(lines))
 
 
+def diagram_path(cfg: dict, q: Q) -> Path:
+    return ROOT / "public/questions" / cfg["subject_slug"] / f"{q.id}.svg"
+
+
+def image_url(cfg: dict, q: Q, svgs: dict[str, str]) -> str | None:
+    """Versioned URL: a redrawn diagram gets a new URL, which also clears its review."""
+    if q.id not in svgs:
+        return None
+    v = hashlib.sha1(svgs[q.id].encode()).hexdigest()[:10]
+    return f"{SITE}/questions/{cfg['subject_slug']}/{q.id}.svg?v={v}"
+
+
 def sql_str(s: str | None) -> str:
     return "null" if s is None else "'" + s.replace("'", "''") + "'"
 
 
-def build_sql(cfg: dict, questions: list[Q], ordered: dict) -> str:
+def build_sql(cfg: dict, questions: list[Q], ordered: dict, svgs: dict[str, str]) -> str:
     topics = list(OrderedDict.fromkeys(q.topic for q in questions))
     by_topic = {t: [q for q in questions if q.topic == t] for t in topics}
     subj = sql_str(cfg["subject_slug"])
@@ -175,17 +202,18 @@ def build_sql(cfg: dict, questions: list[Q], ordered: dict) -> str:
         for pos, q in enumerate(qs, start=1):
             qid = uid(cfg["name"], "question", q.id)
             out += [
-                "insert into public.questions (id, paper_id, topic_id, stem, explanation, position)",
+                "insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)",
                 f"values ({sql_str(qid)}, {sql_str(pid)}, {topic_id},",
                 f"        {sql_str(big_fracs(q.stem))},",
+                f"        {sql_str(image_url(cfg, q, svgs))},",
                 f"        {sql_str(explanation(q))},",
                 f"        {pos})",
                 "on conflict (id) do update set",
                 "  paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,",
-                "  explanation = excluded.explanation, position = excluded.position,",
-                "  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,",
-                "  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,",
-                "  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;",
+                "  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,",
+                f"  is_public = case when {CHANGED} then false else questions.is_public end,",
+                f"  reviewed_at = case when {CHANGED} then null else questions.reviewed_at end,",
+                f"  reviewed_by = case when {CHANGED} then null else questions.reviewed_by end;",
                 "with new_options (id, question_id, label, content, is_correct, position) as (values",
             ]
             rows = [
@@ -222,7 +250,13 @@ def build_sql(cfg: dict, questions: list[Q], ordered: dict) -> str:
     return "\n".join(out)
 
 
-def build_review(cfg: dict, questions: list[Q], ordered: dict, scope_note: str) -> str:
+CHANGED = (
+    "(questions.stem, questions.image_url, questions.explanation) "
+    "is distinct from (excluded.stem, excluded.image_url, excluded.explanation)"
+)
+
+
+def build_review(cfg: dict, questions: list[Q], ordered: dict, scope_note: str, svgs: dict[str, str]) -> str:
     out = [
         f"# Review sheet: {cfg['name'].replace('_', ' ')}",
         "",
@@ -241,6 +275,9 @@ def build_review(cfg: dict, questions: list[Q], ordered: dict, scope_note: str) 
             topic = q.topic
             out += [f"## {topic}", "", f"_Syllabus: {q.ref}_", ""]
         out += [f"### {num_}. `{q.id}`", "", q.stem, ""]
+        if q.id in svgs:
+            rel = Path("../../..") / diagram_path(cfg, q).relative_to(ROOT)
+            out += [f"![Diagram for {q.id}]({rel.as_posix()})", ""]
         for k, (text, correct, _) in enumerate(ordered[q.id]):
             out.append(f"- **{LABELS[k]}.** {text}" + ("  ✅" if correct else ""))
         out += ["", explanation(q), "", "Reviewer: ☐ approved ☐ needs changes — notes:", "", "---", ""]
@@ -267,6 +304,14 @@ def main() -> int:
             except CheckError as e:
                 print(e)
                 failures += 1
+        svgs: dict[str, str] = {}
+        for q in questions:
+            if q.diagram is not None:
+                try:
+                    svgs[q.id] = q.diagram()
+                except Exception as e:  # noqa: BLE001
+                    print(f"{q.id}: diagram failed: {e!r}")
+                    failures += 1
         if failures:
             continue
         ordered = order_options(questions)
@@ -276,10 +321,15 @@ def main() -> int:
         if check_only:
             continue
         cfg["sql"].parent.mkdir(parents=True, exist_ok=True)
-        cfg["sql"].write_text(build_sql(cfg, questions, ordered))
+        cfg["sql"].write_text(build_sql(cfg, questions, ordered, svgs))
         scope = (mod.__doc__ or "").strip().splitlines()[0]
-        cfg["review"].write_text(build_review(cfg, questions, ordered, scope))
-        print(f"  wrote {cfg['sql'].relative_to(ROOT)} and {cfg['review'].relative_to(ROOT)}")
+        cfg["review"].write_text(build_review(cfg, questions, ordered, scope, svgs))
+        for q in questions:
+            if q.id in svgs:
+                diagram_path(cfg, q).parent.mkdir(parents=True, exist_ok=True)
+                diagram_path(cfg, q).write_text(svgs[q.id])
+        print(f"  wrote {cfg['sql'].relative_to(ROOT)}, {cfg['review'].relative_to(ROOT)}"
+              + (f" and {len(svgs)} diagrams" if svgs else ""))
     if failures:
         print(f"\n{failures} problem(s). Nothing written.")
         return 1

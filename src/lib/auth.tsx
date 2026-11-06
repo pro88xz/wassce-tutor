@@ -31,10 +31,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     })
 
     // Listen for auth changes (login, logout, token refresh)
-    const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => {
+    let lastUserId: string | null | undefined
+    const { data: sub } = supabase.auth.onAuthStateChange((event, session) => {
       setSession(session)
-      // Any auth change (sign in / sign out / refresh) re-requires admin password
-      clearUnlocked()
+      // Re-require the admin password on sign-out, when a different account
+      // signs in, or when the account's credentials change. Page loads
+      // (INITIAL_SESSION) and hourly token refreshes keep the unlock, so a
+      // reviewer isn't asked for the password on every refresh.
+      const userId = session?.user?.id ?? null
+      if (event === 'SIGNED_OUT' || event === 'USER_UPDATED' || (lastUserId !== undefined && userId !== lastUserId)) {
+        clearUnlocked()
+      }
+      lastUserId = userId
     })
 
     return () => sub.subscription.unsubscribe()

@@ -32,9 +32,10 @@ values ('e831c841-7a62-5cba-80ea-8956986769c3', (select id from public.subjects 
 on conflict (id) do update set title = excluded.title, paper_type = excluded.paper_type,
   description = excluded.description, question_count = excluded.question_count, sort_order = excluded.sort_order;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('353eb716-7979-5a08-b0ba-8492ac1aabc8', 'e831c841-7a62-5cba-80ea-8956986769c3', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Indices'),
         'Simplify $\dfrac{27^{\frac{2}{3}} \times 8^{-\frac{1}{3}}}{9^{\frac{1}{2}}}$.',
+        null,
         '$27^{\frac{2}{3}} = (\sqrt[3]{27})^{2} = 3^{2} = 9$
 
 $8^{-\frac{1}{3}} = \dfrac{1}{\sqrt[3]{8}} = \dfrac{1}{2}$
@@ -51,10 +52,10 @@ So the expression is $\dfrac{9 \times \dfrac{1}{2}}{3} = \dfrac{9}{6} = \dfrac{3
         1)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('322903af-70df-5c07-becb-0e6c306a0f16'::uuid, '353eb716-7979-5a08-b0ba-8492ac1aabc8'::uuid, 'A', '$\dfrac{2}{3}$', false, 0),
   ('837633bb-6c85-5d3a-bb19-a6aaf01247a0'::uuid, '353eb716-7979-5a08-b0ba-8492ac1aabc8'::uuid, 'B', '$\dfrac{3}{2}$', true, 1),
@@ -71,9 +72,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('4b7af902-3067-53d2-8d42-a70a7528090a', 'e831c841-7a62-5cba-80ea-8956986769c3', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Indices'),
         'Solve $4^{x+1} = 8^{x-1}$.',
+        null,
         'Write both sides as powers of 2: $4 = 2^{2}$ and $8 = 2^{3}$.
 
 $2^{2(x+1)} = 2^{3(x-1)}$
@@ -90,10 +92,10 @@ Check: $4^{6} = 4096$ and $8^{4} = 4096$. ✓
         2)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('28cfe45d-4ccd-571f-abb1-cebfcda71e58'::uuid, '4b7af902-3067-53d2-8d42-a70a7528090a'::uuid, 'A', '$-1$', false, 0),
   ('ea149e60-f936-539d-9401-c06479f04f08'::uuid, '4b7af902-3067-53d2-8d42-a70a7528090a'::uuid, 'B', '$2$', false, 1),
@@ -110,9 +112,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('f998d02c-b739-5205-a05e-674183b8acab', 'e831c841-7a62-5cba-80ea-8956986769c3', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Indices'),
         'A 25 kg bag of rice contains about $1.2 \times 10^{6}$ grains. Find the average mass of one grain in grams, in standard form, correct to three significant figures.',
+        null,
         'Change to grams: $25 \text{ kg} = 25\,000 \text{ g} = 2.5 \times 10^{4}$ g.
 
 Mass of one grain $= \dfrac{2.5 \times 10^{4}}{1.2 \times 10^{6}} = \dfrac{2.5}{1.2} \times 10^{4-6} = 2.0833 \times 10^{-2}$ g
@@ -127,10 +130,10 @@ $\approx 2.08 \times 10^{-2}$ g (3 s.f.). That is about 0.02 g, which is sensibl
         3)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('78f37a77-5d61-59cb-86d3-58503b5b925f'::uuid, 'f998d02c-b739-5205-a05e-674183b8acab'::uuid, 'A', '$2.08 \times 10^{-5}$ g', false, 0),
   ('fdd334ec-5a86-5283-9b3a-89c8ae185477'::uuid, 'f998d02c-b739-5205-a05e-674183b8acab'::uuid, 'B', '$2.08 \times 10^{-2}$ g', true, 1),
@@ -147,9 +150,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('31c87aab-46e9-5c2c-8135-0338cd348e8a', 'e831c841-7a62-5cba-80ea-8956986769c3', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Indices'),
         'Evaluate $\left(\dfrac{16}{81}\right)^{-\frac{3}{4}}$.',
+        null,
         'The negative index turns the fraction upside down:
 
 $\left(\dfrac{16}{81}\right)^{-\frac{3}{4}} = \left(\dfrac{81}{16}\right)^{\frac{3}{4}} = \left(\sqrt[4]{\dfrac{81}{16}}\right)^{3} = \left(\dfrac{3}{2}\right)^{3} = \dfrac{27}{8}$
@@ -162,10 +166,10 @@ $\left(\dfrac{16}{81}\right)^{-\frac{3}{4}} = \left(\dfrac{81}{16}\right)^{\frac
         4)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('00f1f410-fa71-559b-8423-70a049d17219'::uuid, '31c87aab-46e9-5c2c-8135-0338cd348e8a'::uuid, 'A', '$-\dfrac{27}{8}$', false, 0),
   ('f0af6e78-cb6d-5437-8465-3f8d2953cf6e'::uuid, '31c87aab-46e9-5c2c-8135-0338cd348e8a'::uuid, 'B', '$\dfrac{8}{27}$', false, 1),
@@ -182,9 +186,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('f48fd8b1-7b9d-5a97-9c6d-a711acd93026', 'e831c841-7a62-5cba-80ea-8956986769c3', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Indices'),
         'Simplify $\dfrac{2^{n+2} - 2^{n}}{3 \times 2^{n}}$.',
+        null,
         'Factorise the top: $2^{n+2} - 2^{n} = 2^{n} \times 2^{2} - 2^{n} = 2^{n}(4 - 1) = 3 \times 2^{n}$.
 
 So $\dfrac{3 \times 2^{n}}{3 \times 2^{n}} = 1$.
@@ -197,10 +202,10 @@ So $\dfrac{3 \times 2^{n}}{3 \times 2^{n}} = 1$.
         5)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('8354260a-0a65-5578-87f0-92f10ffc7581'::uuid, 'f48fd8b1-7b9d-5a97-9c6d-a711acd93026'::uuid, 'A', '$1$', true, 0),
   ('da6ea000-abc3-531f-a1da-0e02f53a3be5'::uuid, 'f48fd8b1-7b9d-5a97-9c6d-a711acd93026'::uuid, 'B', '$\dfrac{1}{3}$', false, 1),
@@ -224,9 +229,10 @@ values ('87261da3-18f7-565f-a8ba-1dd811054d79', (select id from public.subjects 
 on conflict (id) do update set title = excluded.title, paper_type = excluded.paper_type,
   description = excluded.description, question_count = excluded.question_count, sort_order = excluded.sort_order;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('670bd38e-296c-5664-b6b7-1e6ddd77c1cd', '87261da3-18f7-565f-a8ba-1dd811054d79', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Number Bases'),
         'Express $10111_{\text{two}}$ as a number in base ten.',
+        null,
         '$10111_{\text{two}} = 1 \times 2^{4} + 0 \times 2^{3} + 1 \times 2^{2} + 1 \times 2^{1} + 1 \times 2^{0}$
 
 $= 16 + 0 + 4 + 2 + 1 = 23$
@@ -239,10 +245,10 @@ $= 16 + 0 + 4 + 2 + 1 = 23$
         1)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('48f7f369-6f49-5062-866e-882440ee2769'::uuid, '670bd38e-296c-5664-b6b7-1e6ddd77c1cd'::uuid, 'A', '$22$', false, 0),
   ('51698e87-bcc5-5063-8eb3-46916ae780a6'::uuid, '670bd38e-296c-5664-b6b7-1e6ddd77c1cd'::uuid, 'B', '$23$', true, 1),
@@ -259,9 +265,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('f994e2a1-0ba6-5cd9-894e-7543899dcb79', '87261da3-18f7-565f-a8ba-1dd811054d79', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Number Bases'),
         'Convert $75_{\text{ten}}$ to a number in base three.',
+        null,
         'Divide by 3 repeatedly and keep the remainders:
 
 $75 \div 3 = 25$ remainder $0$
@@ -284,10 +291,10 @@ Check: $2 \times 27 + 2 \times 9 + 1 \times 3 + 0 = 75$. ✓
         2)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('fca71588-530c-54ee-ba0c-91e548588060'::uuid, 'f994e2a1-0ba6-5cd9-894e-7543899dcb79'::uuid, 'A', '$2210_{\text{three}}$', true, 0),
   ('43313b0a-5adb-5109-970e-f36bbb5fa5f7'::uuid, 'f994e2a1-0ba6-5cd9-894e-7543899dcb79'::uuid, 'B', '$0122_{\text{three}}$', false, 1),
@@ -304,9 +311,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('2067012a-2424-5bdd-bd98-d99fcb040212', '87261da3-18f7-565f-a8ba-1dd811054d79', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Number Bases'),
         'Evaluate $243_{\text{five}} + 134_{\text{five}}$, leaving your answer in base five.',
+        null,
         'Add column by column, carrying fives:
 
 Units: $3 + 4 = 7 = 1 \times 5 + 2$. Write 2, carry 1.
@@ -327,10 +335,10 @@ Check in base ten: $243_{\text{five}} = 73$, $134_{\text{five}} = 44$, $73 + 44 
         3)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('ddc05236-ac27-5433-b9bd-59b2fb6fc428'::uuid, '2067012a-2424-5bdd-bd98-d99fcb040212'::uuid, 'A', '$322_{\text{five}}$', false, 0),
   ('5e345d08-1ca4-5db7-af86-046642f89373'::uuid, '2067012a-2424-5bdd-bd98-d99fcb040212'::uuid, 'B', '$332_{\text{five}}$', false, 1),
@@ -347,9 +355,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('5dc685b6-b4d3-54b4-9341-2a769c614356', '87261da3-18f7-565f-a8ba-1dd811054d79', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Number Bases'),
         'If $123_{x} = 38_{\text{ten}}$, find the value of $x$.',
+        null,
         '$123_{x} = 1 \times x^{2} + 2 \times x + 3$
 
 So $x^{2} + 2x + 3 = 38$, which gives $x^{2} + 2x - 35 = 0$.
@@ -368,10 +377,10 @@ Check: $1 \times 25 + 2 \times 5 + 3 = 38$. ✓
         4)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('49ddc4e2-c89b-5603-8f22-14e6148b79ae'::uuid, '5dc685b6-b4d3-54b4-9341-2a769c614356'::uuid, 'A', '$5$', true, 0),
   ('05bb164d-35bb-53e7-aeb0-92b94c46502f'::uuid, '5dc685b6-b4d3-54b4-9341-2a769c614356'::uuid, 'B', '$-7$', false, 1),
@@ -388,9 +397,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('f85842e9-7762-576a-a2db-07f291410452', '87261da3-18f7-565f-a8ba-1dd811054d79', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Number Bases'),
         'Evaluate $23_{\text{four}} \times 3_{\text{four}}$, leaving your answer in base four.',
+        null,
         'Units: $3 \times 3 = 9 = 2 \times 4 + 1$. Write 1, carry 2.
 
 Fours: $2 \times 3 + 2 = 8 = 2 \times 4 + 0$. Write 0, carry 2.
@@ -407,10 +417,10 @@ Check in base ten: $23_{\text{four}} = 11$, $11 \times 3 = 33$, and $201_{\text{
         5)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('6ab853d1-af76-56ae-9057-c11320896b8d'::uuid, 'f85842e9-7762-576a-a2db-07f291410452'::uuid, 'A', '$33_{\text{four}}$', false, 0),
   ('4a0b2ddf-2725-5c1f-8339-f1ff662959d0'::uuid, 'f85842e9-7762-576a-a2db-07f291410452'::uuid, 'B', '$102_{\text{four}}$', false, 1),
@@ -434,9 +444,10 @@ values ('bf5dffa9-fe87-5747-9d7e-b6fdfea620f2', (select id from public.subjects 
 on conflict (id) do update set title = excluded.title, paper_type = excluded.paper_type,
   description = excluded.description, question_count = excluded.question_count, sort_order = excluded.sort_order;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('dc6b3c1e-e674-5711-baaf-65db00921058', 'bf5dffa9-fe87-5747-9d7e-b6fdfea620f2', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Surds'),
         'Simplify $\sqrt{75} - \sqrt{27} + \sqrt{12}$.',
+        null,
         '$\sqrt{75} = \sqrt{25 \times 3} = 5\sqrt{3}$
 
 $\sqrt{27} = \sqrt{9 \times 3} = 3\sqrt{3}$
@@ -453,10 +464,10 @@ So $5\sqrt{3} - 3\sqrt{3} + 2\sqrt{3} = 4\sqrt{3}$.
         1)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('e1dabfa0-aa15-5dcc-94d2-6bf2673e5932'::uuid, 'dc6b3c1e-e674-5711-baaf-65db00921058'::uuid, 'A', '$4\sqrt{3}$', true, 0),
   ('de1bd6d7-5d16-53c3-8c50-4f1bd485a206'::uuid, 'dc6b3c1e-e674-5711-baaf-65db00921058'::uuid, 'B', '$\sqrt{60}$', false, 1),
@@ -473,9 +484,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('2b16fb9d-61ea-5d31-88fb-216a52bed954', 'bf5dffa9-fe87-5747-9d7e-b6fdfea620f2', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Surds'),
         'Rationalise $\dfrac{2}{3 - \sqrt{5}}$.',
+        null,
         'Multiply top and bottom by $3 + \sqrt{5}$:
 
 $\dfrac{2(3 + \sqrt{5})}{(3 - \sqrt{5})(3 + \sqrt{5})} = \dfrac{2(3 + \sqrt{5})}{9 - 5} = \dfrac{2(3 + \sqrt{5})}{4} = \dfrac{3 + \sqrt{5}}{2}$
@@ -488,10 +500,10 @@ $\dfrac{2(3 + \sqrt{5})}{(3 - \sqrt{5})(3 + \sqrt{5})} = \dfrac{2(3 + \sqrt{5})}
         2)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('f4e47b5f-29f3-5667-89c1-b1a1240f17c1'::uuid, '2b16fb9d-61ea-5d31-88fb-216a52bed954'::uuid, 'A', '$\dfrac{3 - \sqrt{5}}{2}$', false, 0),
   ('a495d9b2-ae28-5a13-83da-b2e979019c57'::uuid, '2b16fb9d-61ea-5d31-88fb-216a52bed954'::uuid, 'B', '$\dfrac{3 + \sqrt{5}}{7}$', false, 1),
@@ -508,9 +520,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('72903d78-61f2-5735-beaa-98c16b9896fa', 'bf5dffa9-fe87-5747-9d7e-b6fdfea620f2', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Surds'),
         'Simplify $(2\sqrt{3} + \sqrt{2})(2\sqrt{3} - \sqrt{2})$.',
+        null,
         'This is a difference of two squares, $(a + b)(a - b) = a^{2} - b^{2}$, with $a = 2\sqrt{3}$ and $b = \sqrt{2}$:
 
 $(2\sqrt{3})^{2} - (\sqrt{2})^{2} = 4 \times 3 - 2 = 12 - 2 = 10$
@@ -523,10 +536,10 @@ $(2\sqrt{3})^{2} - (\sqrt{2})^{2} = 4 \times 3 - 2 = 12 - 2 = 10$
         3)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('b74e4218-2e5f-5b0c-afda-dff7a55c81c8'::uuid, '72903d78-61f2-5735-beaa-98c16b9896fa'::uuid, 'A', '$4$', false, 0),
   ('1a93fd4a-f7d3-5d90-836d-38e60aead0ef'::uuid, '72903d78-61f2-5735-beaa-98c16b9896fa'::uuid, 'B', '$14 - 4\sqrt{6}$', false, 1),
@@ -543,9 +556,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('7856a494-a261-5bb2-ab49-f5192cf7cbf3', 'bf5dffa9-fe87-5747-9d7e-b6fdfea620f2', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Surds'),
         'Expand and simplify $(\sqrt{5} + \sqrt{3})^{2}$.',
+        null,
         '$(\sqrt{5} + \sqrt{3})^{2} = (\sqrt{5})^{2} + 2(\sqrt{5})(\sqrt{3}) + (\sqrt{3})^{2}$
 
 $= 5 + 2\sqrt{15} + 3 = 8 + 2\sqrt{15}$
@@ -558,10 +572,10 @@ $= 5 + 2\sqrt{15} + 3 = 8 + 2\sqrt{15}$
         4)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('895eea9d-1570-5803-8586-2bdd674bb7ac'::uuid, '7856a494-a261-5bb2-ab49-f5192cf7cbf3'::uuid, 'A', '$8$', false, 0),
   ('214779aa-a4e2-5ad9-9fb3-ec11ad7fadb8'::uuid, '7856a494-a261-5bb2-ab49-f5192cf7cbf3'::uuid, 'B', '$8 + \sqrt{15}$', false, 1),
@@ -578,9 +592,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('167d0c3d-7ffb-5e79-8b6c-067059d27b2b', 'bf5dffa9-fe87-5747-9d7e-b6fdfea620f2', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Surds'),
         'A square plot of land in Makeni has an area of 72 m². Find the length of its diagonal.',
+        null,
         'Side $= \sqrt{72} = \sqrt{36 \times 2} = 6\sqrt{2}$ m.
 
 By Pythagoras, diagonal$^{2} = (6\sqrt{2})^{2} + (6\sqrt{2})^{2} = 72 + 72 = 144$.
@@ -595,10 +610,10 @@ So the diagonal $= \sqrt{144} = 12$ m.
         5)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('3ba8c15c-7bb7-5be2-abfb-1cd4aee138b2'::uuid, '167d0c3d-7ffb-5e79-8b6c-067059d27b2b'::uuid, 'A', '$6\sqrt{2}$ m', false, 0),
   ('d1d8626a-f144-5926-8966-dcef2a2c4888'::uuid, '167d0c3d-7ffb-5e79-8b6c-067059d27b2b'::uuid, 'B', '12 m', true, 1),
@@ -622,9 +637,10 @@ values ('73f999eb-9488-5554-8fb1-6442401681ef', (select id from public.subjects 
 on conflict (id) do update set title = excluded.title, paper_type = excluded.paper_type,
   description = excluded.description, question_count = excluded.question_count, sort_order = excluded.sort_order;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('f841c853-b554-5344-a8ec-696fdfc95e13', '73f999eb-9488-5554-8fb1-6442401681ef', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Sequences and Series'),
         'The $n$th term of a sequence is $U_{n} = 3n^{2} - 2$. Find the 4th term.',
+        null,
         '$U_{4} = 3(4)^{2} - 2 = 3 \times 16 - 2 = 48 - 2 = 46$
 
 **Why the other options are wrong**
@@ -635,10 +651,10 @@ values ('f841c853-b554-5344-a8ec-696fdfc95e13', '73f999eb-9488-5554-8fb1-6442401
         1)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('03410676-1cb8-5e72-8475-2339b6457912'::uuid, 'f841c853-b554-5344-a8ec-696fdfc95e13'::uuid, 'A', '$46$', true, 0),
   ('1dcc801a-a1cb-52df-8b85-e99aa8f98128'::uuid, 'f841c853-b554-5344-a8ec-696fdfc95e13'::uuid, 'B', '$50$', false, 1),
@@ -655,9 +671,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('55db28e5-adb0-5691-8269-f345e753d321', '73f999eb-9488-5554-8fb1-6442401681ef', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Sequences and Series'),
         'The third term of an arithmetic progression (A.P.) is 11 and the seventh term is 27. Find the first term.',
+        null,
         '$a + 2d = 11$ and $a + 6d = 27$.
 
 Subtract: $4d = 16$, so $d = 4$.
@@ -674,10 +691,10 @@ Check: 3, 7, 11, 15, 19, 23, 27 — the seventh term is 27. ✓
         2)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('41306632-29ed-5a51-9eb4-1daf9ae4c506'::uuid, '55db28e5-adb0-5691-8269-f345e753d321'::uuid, 'A', '$-1$', false, 0),
   ('c3e57397-376a-5b84-9a96-6f152384aea7'::uuid, '55db28e5-adb0-5691-8269-f345e753d321'::uuid, 'B', '$3$', true, 1),
@@ -694,9 +711,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('0b1e590d-5891-531f-9150-6967c38d7272', '73f999eb-9488-5554-8fb1-6442401681ef', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Sequences and Series'),
         'Find the sum of the first 20 terms of the A.P. 5, 9, 13, …',
+        null,
         '$a = 5$, $d = 4$, $n = 20$.
 
 $S_{20} = \dfrac{20}{2}[2(5) + (20 - 1)(4)] = 10[10 + 76] = 10 \times 86 = 860$
@@ -709,10 +727,10 @@ $S_{20} = \dfrac{20}{2}[2(5) + (20 - 1)(4)] = 10[10 + 76] = 10 \times 86 = 860$
         3)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('cbc7811e-9017-5244-84fe-f02855115ab1'::uuid, '0b1e590d-5891-531f-9150-6967c38d7272'::uuid, 'A', '$81$', false, 0),
   ('f1a1f461-3765-5d0a-bdec-aba4a6c87e9b'::uuid, '0b1e590d-5891-531f-9150-6967c38d7272'::uuid, 'B', '$860$', true, 1),
@@ -729,9 +747,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('1140ebc9-5880-5d82-90ad-05c5f0d1ba4d', '73f999eb-9488-5554-8fb1-6442401681ef', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Sequences and Series'),
         'The first term of a geometric progression (G.P.) is 2 and the common ratio is $-3$. Find the fifth term.',
+        null,
         '$U_{n} = ar^{n-1}$, so $U_{5} = 2 \times (-3)^{4} = 2 \times 81 = 162$
 
 **Why the other options are wrong**
@@ -742,10 +761,10 @@ values ('1140ebc9-5880-5d82-90ad-05c5f0d1ba4d', '73f999eb-9488-5554-8fb1-6442401
         4)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('20a6d723-f275-51cd-889a-a0ee121730c1'::uuid, '1140ebc9-5880-5d82-90ad-05c5f0d1ba4d'::uuid, 'A', '$-486$', false, 0),
   ('e9173111-b3d4-5c79-8060-c1bbffa7cd51'::uuid, '1140ebc9-5880-5d82-90ad-05c5f0d1ba4d'::uuid, 'B', '$-162$', false, 1),
@@ -762,9 +781,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('0072e1a4-3016-5387-add2-cada6c42e590', '73f999eb-9488-5554-8fb1-6442401681ef', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Sequences and Series'),
         'Fatmata saves Le 50 in the first week. Each week after that she saves Le 15 more than the week before. How much does she save altogether in the first 12 weeks?',
+        null,
         'Her savings form an A.P. with $a = 50$, $d = 15$, $n = 12$.
 
 $S_{12} = \dfrac{12}{2}[2(50) + 11(15)] = 6[100 + 165] = 6 \times 265 = 1590$
@@ -779,10 +799,10 @@ She saves Le 1,590.
         5)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('3d281f07-3eda-51f0-9963-5ce305b9ba1a'::uuid, '0072e1a4-3016-5387-add2-cada6c42e590'::uuid, 'A', 'Le 215', false, 0),
   ('e5af0bc8-14f3-57cc-b1fb-02aa99fc1f6a'::uuid, '0072e1a4-3016-5387-add2-cada6c42e590'::uuid, 'B', 'Le 1,590', true, 1),
@@ -806,9 +826,10 @@ values ('8d5b7c53-2fd8-5e2b-8ac2-08da895674f1', (select id from public.subjects 
 on conflict (id) do update set title = excluded.title, paper_type = excluded.paper_type,
   description = excluded.description, question_count = excluded.question_count, sort_order = excluded.sort_order;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('4cb2c4cc-c966-50b7-a5e2-986df4572667', '8d5b7c53-2fd8-5e2b-8ac2-08da895674f1', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Percentages'),
         'Mrs Kamara bought a bag of rice for Le 640 and sold it for Le 720. Find her percentage profit.',
+        null,
         'Profit $= 720 - 640 = $ Le 80.
 
 Percentage profit $= \dfrac{\text{profit}}{\text{cost price}} \times 100\% = \dfrac{80}{640} \times 100\% = 12.5\%$
@@ -821,10 +842,10 @@ Percentage profit $= \dfrac{\text{profit}}{\text{cost price}} \times 100\% = \df
         1)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('e9fc764b-f370-5287-80bc-1b88be51e45d'::uuid, '4cb2c4cc-c966-50b7-a5e2-986df4572667'::uuid, 'A', '11.1%', false, 0),
   ('aa0629cb-f7ad-525b-9cbd-731c1e9a18c5'::uuid, '4cb2c4cc-c966-50b7-a5e2-986df4572667'::uuid, 'B', '12.5%', true, 1),
@@ -841,9 +862,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('2955e0f1-b5de-5691-a30a-b6a05a6b5763', '8d5b7c53-2fd8-5e2b-8ac2-08da895674f1', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Percentages'),
         'By selling a phone for Le 1,380, a trader made a profit of 15%. Find the cost price of the phone.',
+        null,
         'Selling price $= 115\%$ of the cost price.
 
 Cost price $= \dfrac{100}{115} \times 1380 = $ Le 1,200.
@@ -858,10 +880,10 @@ Check: 15% of 1,200 is 180, and $1200 + 180 = 1380$. ✓
         2)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('5ce930e3-d95a-5366-a18d-a142d0247c72'::uuid, '2955e0f1-b5de-5691-a30a-b6a05a6b5763'::uuid, 'A', 'Le 180', false, 0),
   ('9977d76b-c5f9-51c7-bc50-59ba4419c042'::uuid, '2955e0f1-b5de-5691-a30a-b6a05a6b5763'::uuid, 'B', 'Le 1,173', false, 1),
@@ -878,9 +900,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('ced80dcc-fc85-573d-b273-ae4055492740', '8d5b7c53-2fd8-5e2b-8ac2-08da895674f1', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Percentages'),
         'In how many years will Le 2,500 amount to Le 3,400 at 6% simple interest per annum?',
+        null,
         'Interest $I = 3400 - 2500 = $ Le 900.
 
 $T = \dfrac{100I}{PR} = \dfrac{100 \times 900}{2500 \times 6} = \dfrac{90\,000}{15\,000} = 6$ years
@@ -893,10 +916,10 @@ $T = \dfrac{100I}{PR} = \dfrac{100 \times 900}{2500 \times 6} = \dfrac{90\,000}{
         3)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('8e254a01-351f-54eb-89b6-681ff97546cc'::uuid, 'ced80dcc-fc85-573d-b273-ae4055492740'::uuid, 'A', '4.4 years', false, 0),
   ('321ec50b-471e-5c43-982f-58f89b002262'::uuid, 'ced80dcc-fc85-573d-b273-ae4055492740'::uuid, 'B', '6 years', true, 1),
@@ -913,9 +936,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('8a1c76e3-6e66-503f-b86c-fae5deb74c7c', '8d5b7c53-2fd8-5e2b-8ac2-08da895674f1', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Percentages'),
         'Find the compound interest on Le 5,000 for 2 years at 10% per annum.',
+        null,
         'Year 1: interest $= 10\%$ of 5,000 $= 500$; amount $= 5{,}500$.
 
 Year 2: interest $= 10\%$ of 5,500 $= 550$; amount $= 6{,}050$.
@@ -932,10 +956,10 @@ Compound interest $= 6050 - 5000 = $ Le 1,050.
         4)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('78101c3e-d62c-5da8-bcd3-129656a75213'::uuid, '8a1c76e3-6e66-503f-b86c-fae5deb74c7c'::uuid, 'A', 'Le 50', false, 0),
   ('57af66eb-f228-5915-9981-cbd57ee31093'::uuid, '8a1c76e3-6e66-503f-b86c-fae5deb74c7c'::uuid, 'B', 'Le 1,000', false, 1),
@@ -952,9 +976,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('2dbcea42-4bca-559c-a254-d2e6c542664e', '8d5b7c53-2fd8-5e2b-8ac2-08da895674f1', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Percentages'),
         'A tape measure gives the length of a table as 1.5 m. The actual length is 1.6 m. Find the percentage error.',
+        null,
         'Error $= 1.6 - 1.5 = 0.1$ m.
 
 Percentage error $= \dfrac{\text{error}}{\text{actual value}} \times 100\% = \dfrac{0.1}{1.6} \times 100\% = 6.25\%$
@@ -967,10 +992,10 @@ Percentage error $= \dfrac{\text{error}}{\text{actual value}} \times 100\% = \df
         5)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('22e89e22-a02c-5043-869e-b4936d682d26'::uuid, '2dbcea42-4bca-559c-a254-d2e6c542664e'::uuid, 'A', '0.1%', false, 0),
   ('0469fc85-da6a-51ad-aa84-2b51bba44962'::uuid, '2dbcea42-4bca-559c-a254-d2e6c542664e'::uuid, 'B', '6.25%', true, 1),
@@ -994,9 +1019,10 @@ values ('848126c4-b194-585a-933e-361bcd93f336', (select id from public.subjects 
 on conflict (id) do update set title = excluded.title, paper_type = excluded.paper_type,
   description = excluded.description, question_count = excluded.question_count, sort_order = excluded.sort_order;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('46407f6e-6e07-5f9c-bd77-b8d80089631f', '848126c4-b194-585a-933e-361bcd93f336', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Variation'),
         '$y$ varies directly as $x^{2}$. If $y = 12$ when $x = 2$, find $y$ when $x = 5$.',
+        null,
         '$y = kx^{2}$. When $x = 2$, $y = 12$: $12 = k \times 4$, so $k = 3$.
 
 When $x = 5$: $y = 3 \times 25 = 75$.
@@ -1009,10 +1035,10 @@ When $x = 5$: $y = 3 \times 25 = 75$.
         1)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('63cdc86e-a5b2-58b9-9117-38899e3221b2'::uuid, '46407f6e-6e07-5f9c-bd77-b8d80089631f'::uuid, 'A', '$1.92$', false, 0),
   ('2159d88f-3888-5d99-84c2-5f87b282a955'::uuid, '46407f6e-6e07-5f9c-bd77-b8d80089631f'::uuid, 'B', '$30$', false, 1),
@@ -1029,9 +1055,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('ddde25f7-210f-5291-866e-8c3e39ad38d6', '848126c4-b194-585a-933e-361bcd93f336', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Variation'),
         'The time taken to clear a farm varies inversely as the number of workers. 6 workers clear it in 10 days. How many days would 15 workers take?',
+        null,
         '$t = \dfrac{k}{w}$. With 6 workers and 10 days: $k = 6 \times 10 = 60$.
 
 With 15 workers: $t = \dfrac{60}{15} = 4$ days.
@@ -1044,10 +1071,10 @@ With 15 workers: $t = \dfrac{60}{15} = 4$ days.
         2)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('000fa9cf-8bd7-53b6-a8ab-20645c7927d7'::uuid, 'ddde25f7-210f-5291-866e-8c3e39ad38d6'::uuid, 'A', '2.5 days', false, 0),
   ('c8190adc-9ef2-57e4-82a1-728f3f688b31'::uuid, 'ddde25f7-210f-5291-866e-8c3e39ad38d6'::uuid, 'B', '4 days', true, 1),
@@ -1064,9 +1091,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('33613dc1-e0b4-59ae-95ab-1255411debc9', '848126c4-b194-585a-933e-361bcd93f336', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Variation'),
         '$P$ is partly constant and partly varies as $Q$. When $Q = 2$, $P = 11$, and when $Q = 5$, $P = 20$. Find $P$ when $Q = 8$.',
+        null,
         '$P = a + bQ$.
 
 $a + 2b = 11$ and $a + 5b = 20$. Subtract: $3b = 9$, so $b = 3$ and $a = 5$.
@@ -1081,10 +1109,10 @@ When $Q = 8$: $P = 5 + 3 \times 8 = 29$.
         3)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('702e76f1-a62c-51c2-b3b8-4e979d3a8830'::uuid, '33613dc1-e0b4-59ae-95ab-1255411debc9'::uuid, 'A', '$29$', true, 0),
   ('c90cf594-49b8-5beb-9a26-689b86599854'::uuid, '33613dc1-e0b4-59ae-95ab-1255411debc9'::uuid, 'B', '$32$', false, 1),
@@ -1101,9 +1129,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('9607fd45-403c-5a26-91bf-d5236f53501e', '848126c4-b194-585a-933e-361bcd93f336', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Variation'),
         '$z$ varies directly as $x$ and inversely as $y$. If $z = 6$ when $x = 4$ and $y = 2$, find $z$ when $x = 9$ and $y = 3$.',
+        null,
         '$z = \dfrac{kx}{y}$. When $x = 4$, $y = 2$, $z = 6$: $6 = \dfrac{4k}{2}$, so $k = 3$.
 
 When $x = 9$, $y = 3$: $z = \dfrac{3 \times 9}{3} = 9$.
@@ -1116,10 +1145,10 @@ When $x = 9$, $y = 3$: $z = \dfrac{3 \times 9}{3} = 9$.
         4)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('ca05c627-d4a6-5d6d-acae-1ba9bb4d07fb'::uuid, '9607fd45-403c-5a26-91bf-d5236f53501e'::uuid, 'A', '$4$', false, 0),
   ('9d406375-e529-5026-87de-6ba340d0b735'::uuid, '9607fd45-403c-5a26-91bf-d5236f53501e'::uuid, 'B', '$9$', true, 1),
@@ -1136,9 +1165,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('970098b2-139c-587a-aabb-8c30271b54ae', '848126c4-b194-585a-933e-361bcd93f336', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Variation'),
         'The volume $V$ of a gas varies directly as its temperature $T$ and inversely as its pressure $P$. Which equation shows this? ($k$ is a constant.)',
+        null,
         'Directly as $T$: $V \propto T$, so $T$ goes on top.
 
 Inversely as $P$: $V \propto \dfrac{1}{P}$, so $P$ goes underneath.
@@ -1153,10 +1183,10 @@ Together: $V = \dfrac{kT}{P}$.
         5)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('eb20f536-a452-5a59-bf31-1e7df757afbf'::uuid, '970098b2-139c-587a-aabb-8c30271b54ae'::uuid, 'A', '$V = kTP$', false, 0),
   ('cea1affd-a9d2-54d1-93a4-16903fcddc91'::uuid, '970098b2-139c-587a-aabb-8c30271b54ae'::uuid, 'B', '$V = \dfrac{kP}{T}$', false, 1),
@@ -1180,9 +1210,10 @@ values ('eacf2f8a-6948-5d3f-9f23-5b0bf9244a10', (select id from public.subjects 
 on conflict (id) do update set title = excluded.title, paper_type = excluded.paper_type,
   description = excluded.description, question_count = excluded.question_count, sort_order = excluded.sort_order;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('90593a76-a116-5a63-93ae-5f312fe16ae8', 'eacf2f8a-6948-5d3f-9f23-5b0bf9244a10', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Change of Subject'),
         'Make $r$ the subject of the formula $V = \dfrac{1}{3}\pi r^{2}h$.',
+        null,
         '$V = \dfrac{1}{3}\pi r^{2}h$
 
 Multiply both sides by 3: $3V = \pi r^{2}h$
@@ -1199,10 +1230,10 @@ Take the square root: $r = \sqrt{\dfrac{3V}{\pi h}}$
         1)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('b9077049-23c4-5701-8bf8-8f572407afa1'::uuid, '90593a76-a116-5a63-93ae-5f312fe16ae8'::uuid, 'A', '$r = \sqrt{\dfrac{3V}{\pi h}}$', true, 0),
   ('9805ac7a-98ab-52e4-b63f-9c67d9401270'::uuid, '90593a76-a116-5a63-93ae-5f312fe16ae8'::uuid, 'B', '$r = \sqrt{\dfrac{V}{3\pi h}}$', false, 1),
@@ -1219,9 +1250,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('58ae25b4-663d-5a75-b8bf-2362aaa42feb', 'eacf2f8a-6948-5d3f-9f23-5b0bf9244a10', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Change of Subject'),
         'Make $x$ the subject of $y = \dfrac{2x + 3}{x - 1}$.',
+        null,
         'Multiply both sides by $(x - 1)$: $y(x - 1) = 2x + 3$
 
 Expand: $xy - y = 2x + 3$
@@ -1240,10 +1272,10 @@ So $x = \dfrac{y + 3}{y - 2}$.
         2)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('58d0acf6-c004-5f97-a59a-0a8859c29489'::uuid, '58ae25b4-663d-5a75-b8bf-2362aaa42feb'::uuid, 'A', '$x = \dfrac{y - 3}{y - 2}$', false, 0),
   ('b9db9f7b-4a3a-5a19-aebd-8affec9e0f37'::uuid, '58ae25b4-663d-5a75-b8bf-2362aaa42feb'::uuid, 'B', '$x = \dfrac{y + 3}{y + 2}$', false, 1),
@@ -1260,9 +1292,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('34387c79-8064-5dd9-b93f-ec36c436e1a6', 'eacf2f8a-6948-5d3f-9f23-5b0bf9244a10', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Change of Subject'),
         'Given that $\dfrac{1}{f} = \dfrac{1}{u} + \dfrac{1}{v}$, find $v$ when $f = 6$ and $u = 10$.',
+        null,
         '$\dfrac{1}{v} = \dfrac{1}{f} - \dfrac{1}{u} = \dfrac{1}{6} - \dfrac{1}{10} = \dfrac{5 - 3}{30} = \dfrac{2}{30} = \dfrac{1}{15}$
 
 So $v = 15$.
@@ -1275,10 +1308,10 @@ So $v = 15$.
         3)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('fde9e7d5-5755-5670-8e1d-92236d3ba7ec'::uuid, '34387c79-8064-5dd9-b93f-ec36c436e1a6'::uuid, 'A', '$-4$', false, 0),
   ('3a6dbb41-4915-57e6-a864-4492fcb8ce8d'::uuid, '34387c79-8064-5dd9-b93f-ec36c436e1a6'::uuid, 'B', '$\dfrac{1}{15}$', false, 1),
@@ -1295,9 +1328,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('72a71a2b-8dfa-51ae-b19f-5b32fec1074d', 'eacf2f8a-6948-5d3f-9f23-5b0bf9244a10', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Change of Subject'),
         'Make $a$ the subject of $k = \sqrt{\dfrac{a - b}{c}}$.',
+        null,
         'Square both sides: $k^{2} = \dfrac{a - b}{c}$
 
 Multiply by $c$: $ck^{2} = a - b$
@@ -1312,10 +1346,10 @@ Add $b$: $a = ck^{2} + b$
         4)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('19938a9f-a2e5-50a8-b616-f2a367ff4629'::uuid, '72a71a2b-8dfa-51ae-b19f-5b32fec1074d'::uuid, 'A', '$a = ck^{2} - b$', false, 0),
   ('d6b8e03f-cf8f-5f38-9d90-83cac16968de'::uuid, '72a71a2b-8dfa-51ae-b19f-5b32fec1074d'::uuid, 'B', '$a = ck + b$', false, 1),
@@ -1332,9 +1366,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('41172507-4bc8-58d0-8834-87ac51c99231', 'eacf2f8a-6948-5d3f-9f23-5b0bf9244a10', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Change of Subject'),
         'Given that $T = 2\pi\sqrt{\dfrac{l}{g}}$, find $l$ when $T = 2$ and $g = 9.8$, correct to two decimal places. [Take $\pi = \dfrac{22}{7}$]',
+        null,
         'Make $l$ the subject: $\dfrac{T}{2\pi} = \sqrt{\dfrac{l}{g}}$, so $\dfrac{T^{2}}{4\pi^{2}} = \dfrac{l}{g}$ and $l = \dfrac{gT^{2}}{4\pi^{2}}$.
 
 $l = \dfrac{9.8 \times 2^{2}}{4 \times \left(\dfrac{22}{7}\right)^{2}} = \dfrac{39.2}{39.51} = 0.992\ldots \approx 0.99$
@@ -1349,10 +1384,10 @@ $l = \dfrac{9.8 \times 2^{2}}{4 \times \left(\dfrac{22}{7}\right)^{2}} = \dfrac{
         5)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('6ffcd9cb-f720-53fd-b774-fc0b2edc8cfa'::uuid, '41172507-4bc8-58d0-8834-87ac51c99231'::uuid, 'A', '$0.99$', true, 0),
   ('d0bc94a1-6243-509c-a7ee-46ee8b508ef3'::uuid, '41172507-4bc8-58d0-8834-87ac51c99231'::uuid, 'B', '$1.98$', false, 1),
@@ -1376,9 +1411,10 @@ values ('c87c2db2-cafc-5303-9ff3-e7a326b5e947', (select id from public.subjects 
 on conflict (id) do update set title = excluded.title, paper_type = excluded.paper_type,
   description = excluded.description, question_count = excluded.question_count, sort_order = excluded.sort_order;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('86e5c651-8a9b-5489-997b-f45051f70260', 'c87c2db2-cafc-5303-9ff3-e7a326b5e947', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Quadratic Equations'),
         'Solve $x^{2} - x - 12 = 0$.',
+        null,
         'Find two numbers that multiply to $-12$ and add to $-1$: $-4$ and $3$.
 
 $x^{2} - x - 12 = (x - 4)(x + 3) = 0$
@@ -1393,10 +1429,10 @@ So $x = 4$ or $x = -3$.
         1)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('4d27e6fb-861f-5dbc-bdcc-c67761b8463d'::uuid, '86e5c651-8a9b-5489-997b-f45051f70260'::uuid, 'A', '$x = 4$ or $x = -3$', true, 0),
   ('a22c22df-5f7d-5cae-b898-5e379dc85d52'::uuid, '86e5c651-8a9b-5489-997b-f45051f70260'::uuid, 'B', '$x = -4$ or $x = 3$', false, 1),
@@ -1413,9 +1449,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('2766bf8d-72d0-5b7d-9b94-cd3c9cd7a346', 'c87c2db2-cafc-5303-9ff3-e7a326b5e947', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Quadratic Equations'),
         'Find the quadratic equation whose roots are $\dfrac{1}{2}$ and $-3$.',
+        null,
         '$x = \dfrac{1}{2}$ gives $2x - 1 = 0$, and $x = -3$ gives $x + 3 = 0$.
 
 $(2x - 1)(x + 3) = 0$
@@ -1432,10 +1469,10 @@ $2x^{2} + 5x - 3 = 0$
         2)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('59f607ed-8218-56df-b26e-8c3b41efcfcf'::uuid, '2766bf8d-72d0-5b7d-9b94-cd3c9cd7a346'::uuid, 'A', '$2x^{2} - 5x - 3 = 0$', false, 0),
   ('4c657b46-ed3d-54df-95ac-32ae68da71ab'::uuid, '2766bf8d-72d0-5b7d-9b94-cd3c9cd7a346'::uuid, 'B', '$2x^{2} - 7x + 3 = 0$', false, 1),
@@ -1452,9 +1489,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('a52d13eb-10e3-5cd8-a190-15c794b1cffb', 'c87c2db2-cafc-5303-9ff3-e7a326b5e947', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Quadratic Equations'),
         'Solve $2x^{2} - 5x - 1 = 0$, giving your answers correct to two decimal places.',
+        null,
         'Use the formula with $a = 2$, $b = -5$, $c = -1$:
 
 $x = \dfrac{-b \pm \sqrt{b^{2} - 4ac}}{2a} = \dfrac{5 \pm \sqrt{25 + 8}}{4} = \dfrac{5 \pm \sqrt{33}}{4}$
@@ -1469,10 +1507,10 @@ $\sqrt{33} = 5.7446$, so $x = \dfrac{10.7446}{4} = 2.69$ or $x = \dfrac{-0.7446}
         3)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('8a3cfe05-226c-5581-b08c-2e435eafad2c'::uuid, 'a52d13eb-10e3-5cd8-a190-15c794b1cffb'::uuid, 'A', '$x = 0.19$ or $x = -2.69$', false, 0),
   ('ebf4140e-3623-5a6f-b793-19e1a28a3dd0'::uuid, 'a52d13eb-10e3-5cd8-a190-15c794b1cffb'::uuid, 'B', '$x = 0.22$ or $x = 2.28$', false, 1),
@@ -1489,9 +1527,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('a871f0fb-c7a9-563b-a752-c9845a70c6d9', 'c87c2db2-cafc-5303-9ff3-e7a326b5e947', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Quadratic Equations'),
         'The length of a rectangular garden is 3 m more than its width. Its area is 54 m². Find the width of the garden.',
+        null,
         'Let the width be $w$ m. Then the length is $(w + 3)$ m.
 
 $w(w + 3) = 54$, so $w^{2} + 3w - 54 = 0$.
@@ -1508,10 +1547,10 @@ A width cannot be negative, so the width is 6 m (and the length 9 m: $6 \times 9
         4)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('beec6a21-2f0a-5a12-9c4a-9acb5a35a3ef'::uuid, 'a871f0fb-c7a9-563b-a752-c9845a70c6d9'::uuid, 'A', '6 m', true, 0),
   ('9c470c81-d580-5a5a-abff-4e9948b6569f'::uuid, 'a871f0fb-c7a9-563b-a752-c9845a70c6d9'::uuid, 'B', '9 m', false, 1),
@@ -1528,9 +1567,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('222a6184-9c96-5479-bbcc-50e387c7c3a9', 'c87c2db2-cafc-5303-9ff3-e7a326b5e947', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Quadratic Equations'),
         'If $x = 2$ is a root of $x^{2} + kx - 10 = 0$, find the value of $k$.',
+        null,
         'Substitute $x = 2$: $2^{2} + 2k - 10 = 0$
 
 $4 + 2k - 10 = 0$, so $2k - 6 = 0$, $2k = 6$, $k = 3$.
@@ -1543,10 +1583,10 @@ $4 + 2k - 10 = 0$, so $2k - 6 = 0$, $2k = 6$, $k = 3$.
         5)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('d7567ce1-7bcc-5d3b-9230-5f7721a61367'::uuid, '222a6184-9c96-5479-bbcc-50e387c7c3a9'::uuid, 'A', '$-7$', false, 0),
   ('b5514eaa-1315-5254-b9e3-70134fffbd12'::uuid, '222a6184-9c96-5479-bbcc-50e387c7c3a9'::uuid, 'B', '$-3$', false, 1),
@@ -1570,9 +1610,10 @@ values ('3ae79381-50d2-5052-9930-44c04488bd25', (select id from public.subjects 
 on conflict (id) do update set title = excluded.title, paper_type = excluded.paper_type,
   description = excluded.description, question_count = excluded.question_count, sort_order = excluded.sort_order;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('e9efc63b-cc3f-5733-8e72-87daefb95850', '3ae79381-50d2-5052-9930-44c04488bd25', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Sets'),
         '$U = \{1, 2, 3, \ldots, 12\}$, $P$ is the set of multiples of 3 and $Q$ is the set of factors of 12. Find $P \cap Q$.',
+        null,
         '$P = \{3, 6, 9, 12\}$
 
 $Q = \{1, 2, 3, 4, 6, 12\}$
@@ -1587,10 +1628,10 @@ $P \cap Q$ is the numbers in both: $\{3, 6, 12\}$.
         1)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('57f458b4-c8b4-51c2-9136-9c8b099275bc'::uuid, 'e9efc63b-cc3f-5733-8e72-87daefb95850'::uuid, 'A', '$\{3, 6, 12\}$', true, 0),
   ('706b1dd9-3b4a-593f-a3de-16709ddee8ce'::uuid, 'e9efc63b-cc3f-5733-8e72-87daefb95850'::uuid, 'B', '$\{3, 6\}$', false, 1),
@@ -1607,9 +1648,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('2970f299-5fde-5e3c-8b01-e46eb7a49c37', '3ae79381-50d2-5052-9930-44c04488bd25', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Sets'),
         'In a class of 40 pupils, 25 study Biology, 18 study Chemistry and 7 study neither subject. How many pupils study both subjects?',
+        null,
         'Pupils who study at least one subject: $40 - 7 = 33$.
 
 $n(B \cup C) = n(B) + n(C) - n(B \cap C)$
@@ -1624,10 +1666,10 @@ $33 = 25 + 18 - n(B \cap C)$, so $n(B \cap C) = 43 - 33 = 10$.
         2)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('ded69bb2-649e-5ec2-8c18-1b65ad522c11'::uuid, '2970f299-5fde-5e3c-8b01-e46eb7a49c37'::uuid, 'A', '$3$', false, 0),
   ('9da74422-a048-5b49-989f-0d9258c429ae'::uuid, '2970f299-5fde-5e3c-8b01-e46eb7a49c37'::uuid, 'B', '$7$', false, 1),
@@ -1644,9 +1686,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('66ef413e-1c9f-5d97-9215-183cdba7cbd3', '3ae79381-50d2-5052-9930-44c04488bd25', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Sets'),
         '$U = \{a, b, c, d, e, f\}$, $A = \{a, b, c\}$ and $B = \{c, d\}$. Find $(A \cup B)''$.',
+        null,
         '$A \cup B = \{a, b, c, d\}$
 
 $(A \cup B)''$ is everything in $U$ that is not in $A \cup B$: $\{e, f\}$.
@@ -1659,10 +1702,10 @@ $(A \cup B)''$ is everything in $U$ that is not in $A \cup B$: $\{e, f\}$.
         3)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('9abfde17-b42a-5479-916c-3427857cebf5'::uuid, '66ef413e-1c9f-5d97-9215-183cdba7cbd3'::uuid, 'A', '$\{c\}$', false, 0),
   ('35e0dd9e-d63a-5071-bdcf-40b9976ff7c3'::uuid, '66ef413e-1c9f-5d97-9215-183cdba7cbd3'::uuid, 'B', '$\{e, f\}$', true, 1),
@@ -1679,9 +1722,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('cbe39586-d1a8-5bba-b4f4-208e501327ec', '3ae79381-50d2-5052-9930-44c04488bd25', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Sets'),
         'A survey of 60 traders at a market in Bo found that 30 sell rice, 25 sell palm oil and 20 sell pepper. 10 sell rice and palm oil, 8 sell rice and pepper, 6 sell palm oil and pepper, and 4 sell all three. How many of the traders sell none of the three?',
+        null,
         '$n(R \cup O \cup P) = 30 + 25 + 20 - 10 - 8 - 6 + 4 = 55$
 
 None of the three: $60 - 55 = 5$.
@@ -1696,10 +1740,10 @@ On a Venn diagram: rice only 16, palm oil only 13, pepper only 10, rice and palm
         4)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('b13e98c6-4ede-5d88-9c0d-934fa327daf5'::uuid, 'cbe39586-d1a8-5bba-b4f4-208e501327ec'::uuid, 'A', '$5$', true, 0),
   ('c3e0564e-e0f9-5fd4-961c-6f4469b6a23b'::uuid, 'cbe39586-d1a8-5bba-b4f4-208e501327ec'::uuid, 'B', '$9$', false, 1),
@@ -1716,9 +1760,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('45ed4c92-089f-5405-8f8c-137012eaad3c', '3ae79381-50d2-5052-9930-44c04488bd25', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Sets'),
         'How many subsets has the set $\{p, q, r, s\}$?',
+        null,
         'A set with $n$ members has $2^{n}$ subsets. Here $n = 4$, so there are $2^{4} = 16$ subsets.
 
 (They include $\varnothing$ and $\{p, q, r, s\}$ itself.)
@@ -1731,10 +1776,10 @@ values ('45ed4c92-089f-5405-8f8c-137012eaad3c', '3ae79381-50d2-5052-9930-44c0448
         5)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('06d76fe4-a2b3-5a01-9bcf-c721927b2571'::uuid, '45ed4c92-089f-5405-8f8c-137012eaad3c'::uuid, 'A', '$4$', false, 0),
   ('70222c8b-2065-5ef4-b23d-47a8f84727ad'::uuid, '45ed4c92-089f-5405-8f8c-137012eaad3c'::uuid, 'B', '$8$', false, 1),
@@ -1758,9 +1803,10 @@ values ('a67034a6-fb54-57da-8b2c-4a076e094ac7', (select id from public.subjects 
 on conflict (id) do update set title = excluded.title, paper_type = excluded.paper_type,
   description = excluded.description, question_count = excluded.question_count, sort_order = excluded.sort_order;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('5a4a0267-7c40-5768-9074-8d561298e8d1', 'a67034a6-fb54-57da-8b2c-4a076e094ac7', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Probability'),
         'A bag contains 5 red, 3 blue and 4 green beads. A bead is picked at random. What is the probability that it is not blue?',
+        null,
         'Total beads $= 5 + 3 + 4 = 12$. Beads that are not blue $= 5 + 4 = 9$.
 
 $P(\text{not blue}) = \dfrac{9}{12} = \dfrac{3}{4}$
@@ -1773,10 +1819,10 @@ $P(\text{not blue}) = \dfrac{9}{12} = \dfrac{3}{4}$
         1)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('924c30e1-ab83-5d27-9934-eebcc2c0db31'::uuid, '5a4a0267-7c40-5768-9074-8d561298e8d1'::uuid, 'A', '$\dfrac{1}{4}$', false, 0),
   ('2af2fa53-b9e1-551d-a229-da10e3b834ff'::uuid, '5a4a0267-7c40-5768-9074-8d561298e8d1'::uuid, 'B', '$\dfrac{1}{3}$', false, 1),
@@ -1793,9 +1839,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('daefef3f-d3fe-5da8-a2b8-f12fdc4653ae', 'a67034a6-fb54-57da-8b2c-4a076e094ac7', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Probability'),
         'The probabilities that Musa and Isata will pass a test are $\dfrac{2}{3}$ and $\dfrac{3}{5}$ respectively. Find the probability that only one of them passes.',
+        null,
         'Only one passes means Musa passes and Isata fails, or Musa fails and Isata passes.
 
 $P = \dfrac{2}{3} \times \dfrac{2}{5} + \dfrac{1}{3} \times \dfrac{3}{5} = \dfrac{4}{15} + \dfrac{3}{15} = \dfrac{7}{15}$
@@ -1808,10 +1855,10 @@ $P = \dfrac{2}{3} \times \dfrac{2}{5} + \dfrac{1}{3} \times \dfrac{3}{5} = \dfra
         2)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('b3b6e114-bd6c-5237-8c20-8f9811ece9c9'::uuid, 'daefef3f-d3fe-5da8-a2b8-f12fdc4653ae'::uuid, 'A', '$\dfrac{2}{15}$', false, 0),
   ('aee70a29-a450-57a7-a2b5-98fc7de89b20'::uuid, 'daefef3f-d3fe-5da8-a2b8-f12fdc4653ae'::uuid, 'B', '$\dfrac{2}{5}$', false, 1),
@@ -1828,9 +1875,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('d651518f-7af8-5ed8-8189-a80934400a89', 'a67034a6-fb54-57da-8b2c-4a076e094ac7', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Probability'),
         'A box contains 4 white and 6 black balls. Two balls are picked one after the other without replacement. Find the probability that both are white.',
+        null,
         '$P(\text{first white}) = \dfrac{4}{10}$. One white ball is gone, so $P(\text{second white}) = \dfrac{3}{9}$.
 
 $P(\text{both white}) = \dfrac{4}{10} \times \dfrac{3}{9} = \dfrac{12}{90} = \dfrac{2}{15}$
@@ -1843,10 +1891,10 @@ $P(\text{both white}) = \dfrac{4}{10} \times \dfrac{3}{9} = \dfrac{12}{90} = \df
         3)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('9047063f-d830-55e2-949b-22834a5a4ab0'::uuid, 'd651518f-7af8-5ed8-8189-a80934400a89'::uuid, 'A', '$\dfrac{2}{15}$', true, 0),
   ('009ddf14-fc44-5d80-922f-a8474438fa1f'::uuid, 'd651518f-7af8-5ed8-8189-a80934400a89'::uuid, 'B', '$\dfrac{4}{25}$', false, 1),
@@ -1863,9 +1911,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('32e8f05f-9795-5227-9f49-9221ab083f00', 'a67034a6-fb54-57da-8b2c-4a076e094ac7', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Probability'),
         'Two fair dice are thrown together. What is the probability that the total score is 8?',
+        null,
         'There are $6 \times 6 = 36$ equally likely outcomes.
 
 Totals of 8: (2, 6), (3, 5), (4, 4), (5, 3), (6, 2) — 5 outcomes.
@@ -1880,10 +1929,10 @@ $P(\text{total} = 8) = \dfrac{5}{36}$
         4)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('4c33ae59-9cac-5631-aebf-85eb8dd48311'::uuid, '32e8f05f-9795-5227-9f49-9221ab083f00'::uuid, 'A', '$\dfrac{1}{12}$', false, 0),
   ('964c75ea-d079-5d34-b68c-2f8a9ab0b1f6'::uuid, '32e8f05f-9795-5227-9f49-9221ab083f00'::uuid, 'B', '$\dfrac{1}{11}$', false, 1),
@@ -1900,9 +1949,10 @@ select id, question_id, label, content, is_correct, position from new_options
 on conflict (id) do update set label = excluded.label, content = excluded.content,
   is_correct = excluded.is_correct, position = excluded.position;
 
-insert into public.questions (id, paper_id, topic_id, stem, explanation, position)
+insert into public.questions (id, paper_id, topic_id, stem, image_url, explanation, position)
 values ('f000d5b4-b123-5c3c-8c56-ac615f6dc4ef', 'a67034a6-fb54-57da-8b2c-4a076e094ac7', (select t.id from public.topics t join public.subjects s on s.id = t.subject_id where s.slug = 'mathematics' and t.name = 'Probability'),
         'A number is chosen at random from the whole numbers 1 to 20 inclusive. Find the probability that it is even or a multiple of 5.',
+        null,
         'Even numbers: 10. Multiples of 5: 5, 10, 15, 20 (4 numbers). Both: 10 and 20 (2 numbers).
 
 $P = \dfrac{10 + 4 - 2}{20} = \dfrac{12}{20} = \dfrac{3}{5}$
@@ -1915,10 +1965,10 @@ $P = \dfrac{10 + 4 - 2}{20} = \dfrac{12}{20} = \dfrac{3}{5}$
         5)
 on conflict (id) do update set
   paper_id = excluded.paper_id, topic_id = excluded.topic_id, stem = excluded.stem,
-  explanation = excluded.explanation, position = excluded.position,
-  is_public = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then false else questions.is_public end,
-  reviewed_at = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_at end,
-  reviewed_by = case when (questions.stem, questions.explanation) is distinct from (excluded.stem, excluded.explanation) then null else questions.reviewed_by end;
+  image_url = excluded.image_url, explanation = excluded.explanation, position = excluded.position,
+  is_public = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then false else questions.is_public end,
+  reviewed_at = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_at end,
+  reviewed_by = case when (questions.stem, questions.image_url, questions.explanation) is distinct from (excluded.stem, excluded.image_url, excluded.explanation) then null else questions.reviewed_by end;
 with new_options (id, question_id, label, content, is_correct, position) as (values
   ('dff55b63-c816-5f32-b18b-426e9e7e6d21'::uuid, 'f000d5b4-b123-5c3c-8c56-ac615f6dc4ef'::uuid, 'A', '$\dfrac{1}{10}$', false, 0),
   ('2f5af02c-9426-50c9-9c65-9e9b32a7039c'::uuid, 'f000d5b4-b123-5c3c-8c56-ac615f6dc4ef'::uuid, 'B', '$\dfrac{1}{2}$', false, 1),

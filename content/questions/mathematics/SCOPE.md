@@ -87,8 +87,28 @@ How each question is checked before it can be built:
 - The text students see is parsed and checked against the value, so a typo
   in an option fails the build.
 
-Next batches should cover the topics that need diagrams (circle theorems,
-angles, bearings, mensuration, statistics graphs), then Paper 2-style
+## Set 2: 50 questions, 10 more topics, 15 diagrams
+
+`set2_p1.py` has 5 questions on each of: Circles, Angles and Intersecting
+Lines, Sine/Cosine/Tangent, Angles of Elevation and Depression, Bearings,
+Volumes, Measures of Central Tendency, Logarithms, Modular Arithmetic, Vectors.
+
+- Circle theorems, parallel-line angles, elevation, bearings, volumes,
+  averages, modular arithmetic and vectors all appear in the 2018 or 2019
+  Sierra Leone papers. Logarithms and three-figure/distance-bearing form
+  follow the Ministry's revision handbooks.
+- Diagrams are drawn to scale by `scripts/questions/diagram.py` from the
+  same coordinates the question's `solve` measures. If a figure disagrees
+  with its question (say the drawn angle is 120° but the question says 124°),
+  the build fails.
+- Diagrams are saved to `public/questions/` and served from the website.
+  Their URL carries a version: redrawing a diagram changes the URL, which
+  clears that question's review and hides its set until it is approved again.
+- One option on the tree-height question is the answer a student gets by
+  rounding too early, a mistake the examiners name.
+
+Next: statistics graphs (cumulative frequency, histograms), mensuration of
+plane shapes, matrices, polygons and transformations, then Paper 2-style
 questions with full mark schemes.
 
 ## Sources

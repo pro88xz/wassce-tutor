@@ -63,6 +63,8 @@ class Q:
     working: str
     evidence: str = ""  # why this is on the Sierra Leone paper (reports, handbooks)
     tags: list[str] = field(default_factory=list)
+    diagram: Callable[[], str] | None = None  # returns an SVG drawn from the same coordinates as `solve`
+    order: list[str] | None = None  # fixed option order (texts), e.g. days of the week
 
 
 def same(a: Any, b: Any) -> bool:
@@ -117,6 +119,8 @@ def _norm_tex(tex: str) -> str:
 def _number_forms(v: Any) -> list[str]:
     """Ways a number may be written in an option."""
     if isinstance(v, Rounded):
+        if v.dp == 0:
+            return [f"{v.value:.0f}", f"{round(v.value):03d}"]  # also three-figure bearings, e.g. 037
         if v.dp is not None:
             return [f"{v.value:.{v.dp}f}"]
         e = int(math.floor(math.log10(abs(v.value))))
@@ -126,6 +130,8 @@ def _number_forms(v: Any) -> list[str]:
     forms = []
     if r.q == 1:
         forms.append(str(r.p))
+        if 0 <= r.p < 100:
+            forms.append(f"{r.p:03d}")  # three-figure bearings, e.g. 065
     else:
         sign = "-" if r < 0 else ""
         forms.append(f"{sign}\\frac{{{abs(r.p)}}}{{{r.q}}}")
@@ -160,7 +166,19 @@ def tex_shows(tex: str, value: Any) -> bool | None:
     else, None if this kind of value can't be checked automatically."""
     t = _norm_tex(tex)
     if isinstance(value, str):
-        return f"{value}_{{" in t if value.isdigit() else None  # base-n numbers, e.g. 2210_{three}
+        if value.isdigit():
+            return f"{value}_{{" in t  # base-n numbers, e.g. 2210_{three}
+        return value in tex if value.replace(" ", "").isalpha() else None  # words, e.g. Sunday
+    if isinstance(value, tuple):  # column vectors: the numbers must appear in order
+        shown = re.findall(r"-?\d+(?:\.\d+)?", t)
+        want = []
+        for v in value:
+            if isinstance(v, Rounded):
+                want.append(f"{v.value:.{v.dp}f}" if v.dp is not None else None)
+            else:
+                r = sp.Rational(v)
+                want.append(str(r.p) if r.q == 1 else None)
+        return None if None in want else shown == want
     if isinstance(value, (set, frozenset)) and value and all(isinstance(v, str) for v in value):
         return set(re.findall(r"(?<![\\A-Za-z])[a-z](?![A-Za-z])", t)) == set(value)
     if isinstance(value, (set, frozenset)):
@@ -208,6 +226,8 @@ def check(q: Q) -> None:
                 problems.append(f"wrong option {w.tex!r}: stated mistake gives {d!r}, not {w.value!r}")
     values = [q.answer[1]] + [w.value for w in q.wrong]
     texts = [q.answer[0]] + [w.tex for w in q.wrong]
+    if q.order is not None and sorted(q.order) != sorted(texts):
+        problems.append("`order` must list exactly the option texts")
     for t, v in zip(texts, values):
         if tex_shows(t, v) is False:
             problems.append(f"option text {t!r} does not show its value {v!r}")
