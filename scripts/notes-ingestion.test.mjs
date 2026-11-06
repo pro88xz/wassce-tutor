@@ -5,6 +5,7 @@ import os from 'node:os'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { spawnSync } from 'node:child_process'
+import { validateSource, extractMain } from './source-acquisition.mjs'
 
 const script = path.join(path.dirname(fileURLToPath(import.meta.url)), 'notes-ingestion.mjs')
 const validMarkdown = '# Test lesson\n\n## Learning objectives\n\n' + ('Students should understand the concept and apply it correctly in examination questions. '.repeat(35)) + '\n\n## WASSCE examination focus\n\nExplain, compare and apply the main principles using accurate scientific language.\n'
@@ -58,4 +59,21 @@ test('missing rights verification is rejected', async () => {
     assert.equal(result.status, 1)
     assert.match(result.stdout, /rights_verified must be true/)
   } finally { await rm(root, { recursive: true, force: true }) }
+})
+
+test('source acquisition rejects insecure URLs and unapproved licences', () => {
+  const base = { id: 'source-one', url: 'https://example.org/article', title: 'Source', subject: 'Biology', topic: 'cell-structure', license: 'CC-BY-4.0', rights_holder: 'Publisher', rights_verified: true, attribution: 'Publisher', license_evidence: 'Licence page' }
+  assert.equal(validateSource(base).url, base.url)
+  assert.throws(() => validateSource({ ...base, url: 'http://example.org/article' }), /only HTTPS/)
+  assert.throws(() => validateSource({ ...base, url: 'https://127.0.0.1/private' }), /IP-literal/)
+  assert.throws(() => validateSource({ ...base, license: 'CC-BY-NC-4.0' }), /licence is not approved/)
+  assert.throws(() => validateSource({ ...base, rights_verified: false }), /verified rights holder/)
+})
+
+test('HTML extraction prioritises article content and strips scripts and navigation', () => {
+  const html = '<html><body><nav>Navigation noise</nav><article><h1>Cell biology</h1><p>Useful educational text.</p><script>steal()</script></article></body></html>'
+  const markdown = extractMain(html)
+  assert.match(markdown, /Cell biology/)
+  assert.match(markdown, /Useful educational text/)
+  assert.doesNotMatch(markdown, /Navigation noise|steal\(\)/)
 })
