@@ -198,7 +198,7 @@ function ContinueCard({ summary, started }: { summary: ProgressSummary; started:
     <section aria-labelledby="continue-title" className="rounded-2xl border bg-card p-5 shadow-sm sm:p-6">
       <p className="text-sm font-semibold text-primary">{started ? 'Continue learning' : 'Start your first lesson'}</p>
       <div className="mt-3 flex items-start gap-3">
-        <SubjectCover slug={next.subject.slug} shape="square" className="h-14 w-14 shrink-0" />
+        <SubjectCover slug={next.subject.slug} shape="thumb" className="h-16 w-24 shrink-0" />
         <div className="min-w-0">
           <h2 id="continue-title" className="text-xl font-bold leading-snug text-balance">
             {started ? next.lesson.title : next.topic.name}
@@ -418,7 +418,7 @@ function YourSubjects({ subjects }: { subjects: SubjectProgress[] }) {
           return (
             <li key={s.subject.id}>
               <Link to="/subject/$subjectId" params={{ subjectId: s.subject.id }} className="flex min-h-16 items-center gap-3 px-4 py-3 transition-colors hover:bg-muted/50">
-                <SubjectCover slug={s.subject.slug} shape="square" className="h-11 w-11 shrink-0" rounded="rounded-lg" />
+                <SubjectCover slug={s.subject.slug} shape="thumb" className="h-14 w-20 shrink-0" rounded="rounded-lg" />
                 <span className="min-w-0 flex-1 space-y-1">
                   <span className="flex items-baseline justify-between gap-2">
                     <span className="truncate font-semibold">{s.subject.name}</span>
@@ -435,7 +435,7 @@ function YourSubjects({ subjects }: { subjects: SubjectProgress[] }) {
         })}
         {soon.map((s) => (
           <li key={s.subject.id} className="flex min-h-14 items-center gap-3 px-4 py-3 opacity-70">
-            <SubjectCover slug={s.subject.slug} shape="square" className="h-11 w-11 shrink-0 opacity-60" rounded="rounded-lg" />
+            <SubjectCover slug={s.subject.slug} shape="thumb" className="h-12 w-16 shrink-0 opacity-60" rounded="rounded-lg" />
             <span className="min-w-0 flex-1 truncate text-sm font-medium text-muted-foreground">{s.subject.name}</span>
             <Pill>Lessons coming soon</Pill>
           </li>

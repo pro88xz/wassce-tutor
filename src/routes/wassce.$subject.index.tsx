@@ -126,9 +126,11 @@ function SubjectHubPage() {
             {related.map((s) => (
               <li key={s.id}>
                 <a href={subjectPath(s.slug)} className="flex items-center gap-3 rounded-2xl border bg-card p-3 transition hover:border-primary/40">
-                  <SubjectCover slug={s.slug} shape="square" className="h-10 w-10 shrink-0" rounded="rounded-lg" />
-                  <span className="min-w-0 flex-1 truncate font-semibold">{s.name}</span>
-                  <span className="text-xs text-muted-foreground">{s.topicCount} topics</span>
+                  <SubjectCover slug={s.slug} shape="thumb" className="h-12 w-16 shrink-0" rounded="rounded-lg" />
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-[15px] font-semibold leading-snug">{s.name}</span>
+                    <span className="mt-0.5 block text-[13px] text-muted-foreground">{s.topicCount} topics</span>
+                  </span>
                 </a>
               </li>
             ))}

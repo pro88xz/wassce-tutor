@@ -117,7 +117,7 @@ function SubjectSets({ subject, papers, best }: { subject: Subject; papers: Pape
   return (
     <section className="space-y-3" aria-labelledby={`sets-${subject.id}`}>
       <div className="flex items-center gap-3">
-        <SubjectCover slug={subject.slug} shape="square" className="h-11 w-11 shrink-0" rounded="rounded-lg" />
+        <SubjectCover slug={subject.slug} shape="thumb" className="h-12 w-16 shrink-0" rounded="rounded-lg" />
         <div>
           <h2 id={`sets-${subject.id}`} className="text-lg font-bold tracking-tight">{subject.name}</h2>
           {papers.length > 0 && (

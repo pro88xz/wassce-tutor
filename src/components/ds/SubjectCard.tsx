@@ -49,7 +49,7 @@ export function SubjectCard({ s }: { s: SubjectProgress }) {
 export function SubjectSoonRow({ s }: { s: SubjectProgress }) {
   return (
     <li className="flex min-h-14 items-center gap-3 px-4 py-3">
-      <SubjectCover slug={s.subject.slug} shape="square" className="h-10 w-10 shrink-0 opacity-60" rounded="rounded-lg" />
+      <SubjectCover slug={s.subject.slug} shape="thumb" className="h-12 w-16 shrink-0 opacity-60" rounded="rounded-lg" />
       <span className="min-w-0 flex-1 truncate text-sm font-medium text-muted-foreground">{s.subject.name}</span>
       <span className="shrink-0 text-xs text-muted-foreground">Lessons coming soon</span>
     </li>

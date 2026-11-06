@@ -374,7 +374,8 @@ export function SubjectCover({
   priority = false,
 }: {
   slug: string | null | undefined
-  shape?: 'square' | 'wide' | 'banner'
+  /** square: illustration thumbnail; thumb: photo thumbnail for lists (illustration if no photo) */
+  shape?: 'square' | 'thumb' | 'wide' | 'banner'
   className?: string
   rounded?: string
   /** Load immediately (above-the-fold banners). */
@@ -384,6 +385,13 @@ export function SubjectCover({
   // Large shapes use the subject's photograph when there is one; small
   // thumbnails keep the illustration, which stays crisp at 40-64 px.
   const photo = shape !== 'square' ? subjectPhoto(slug) : undefined
+  if (photo && shape === 'thumb') {
+    return (
+      <span className={`relative block overflow-hidden ${rounded} ${className}`} style={{ backgroundColor: art.bg }} aria-hidden>
+        <img src={photo.small} alt="" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover" style={{ objectPosition: photo.position ?? 'center' }} />
+      </span>
+    )
+  }
   if (photo) {
     return (
       <span className={`relative block overflow-hidden ${rounded} ${className}`} style={{ backgroundColor: art.bg }} aria-hidden>
@@ -403,7 +411,7 @@ export function SubjectCover({
     )
   }
   const glyphs = slug ? GLYPHS[slug] : undefined
-  const fit = shape === 'square' ? 'xMaxYMid slice' : shape === 'banner' ? 'xMaxYMid meet' : 'xMidYMid slice'
+  const fit = shape === 'square' || shape === 'thumb' ? 'xMaxYMid slice' : shape === 'banner' ? 'xMaxYMid meet' : 'xMidYMid slice'
   return (
     <span className={`relative block overflow-hidden ${rounded} ${className}`} style={{ backgroundColor: art.bg }} aria-hidden>
       <svg viewBox="0 0 320 180" preserveAspectRatio={fit} className="absolute inset-0 h-full w-full" focusable="false">

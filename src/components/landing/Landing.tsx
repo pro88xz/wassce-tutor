@@ -8,9 +8,10 @@
 import { Link } from '@tanstack/react-router'
 import { BookOpen, Check, ChevronRight, CircleCheck, Compass, Moon, School, Smartphone, UserRound, Users, Wallet } from 'lucide-react'
 import type { LandingData } from '@/lib/public-content'
-import { topicPath } from '@/lib/public-content'
+import { subjectPath, topicPath } from '@/lib/public-content'
 import { SubjectCover } from '@/components/ds/SubjectCover'
 import { SubjectShowcase } from '@/components/landing/SubjectShowcase'
+import { SwipeRow } from '@/components/ds/SwipeRow'
 import { ProductTour } from '@/components/landing/ProductTour'
 import { DownloadButton } from '@/components/DownloadButton'
 import { TopicSearch } from '@/components/landing/TopicSearch'
@@ -95,31 +96,56 @@ function SectionTitle({ eyebrow, title, body }: { eyebrow: string; title: string
   )
 }
 
+/**
+ * Popular topics grouped by subject (as Coursera groups trending courses):
+ * each subject's photo once, with its most-studied topics listed beneath
+ * in readable rows.
+ */
 function PopularTopics({ data }: { data: LandingData }) {
-  const names = new Map(data.subjects.map((x) => [x.slug, x.name]))
+  const groups = new Map<string, { name: string; topics: LandingData['popular'] }>()
+  for (const t of data.popular) {
+    if (!groups.has(t.subjectSlug)) groups.set(t.subjectSlug, { name: t.subjectName, topics: [] })
+    groups.get(t.subjectSlug)!.topics.push(t)
+  }
+  const list = [...groups.entries()].slice(0, 6)
   return (
-    <section className="space-y-4 rounded-2xl bg-muted/70 p-4 sm:p-6" aria-labelledby="popular-heading">
+    <section className="space-y-5" aria-labelledby="popular-heading">
       <div className="flex items-end justify-between gap-3">
-        <div>
+        <div className="space-y-1">
           <p className="text-sm font-semibold text-primary">Popular topics</p>
-          <h2 id="popular-heading" className="text-xl font-bold tracking-tight sm:text-2xl">Jump straight into a topic</h2>
+          <h2 id="popular-heading" className="text-[1.75rem] font-bold leading-tight tracking-tight sm:text-3xl">Jump straight into a topic</h2>
         </div>
-        <a href="/wassce/subjects" className="hidden min-h-11 items-center text-sm font-semibold text-primary hover:underline sm:inline-flex">All subjects →</a>
+        <a href="/wassce/subjects" className="hidden min-h-11 items-center gap-1 text-sm font-semibold text-primary hover:underline sm:inline-flex">
+          All subjects <ChevronRight className="h-4 w-4" aria-hidden />
+        </a>
       </div>
-      <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 [&>*]:min-w-0">
-        {data.popular.slice(0, 8).map((t) => (
-          <li key={`${t.subjectSlug}/${t.topicSlug}`}>
-            <a href={topicPath(t.subjectSlug, t.topicSlug)} className="flex min-h-16 items-center gap-3 rounded-xl bg-card p-2.5 pr-3 transition-colors hover:bg-card/70">
-              <SubjectCover slug={t.subjectSlug} shape="square" className="h-12 w-12 shrink-0" rounded="rounded-lg" />
-              <span className="min-w-0 flex-1">
-                <span className="block truncate font-semibold">{t.topicName}</span>
-                <span className="block text-xs text-muted-foreground">{names.get(t.subjectSlug) ?? t.subjectName} · {t.lessons} lessons</span>
+      <SwipeRow label="Popular topics" count={list.length} grid="sm:grid-cols-2 lg:grid-cols-3">
+        {list.map(([slug, g]) => (
+          <div key={slug} className="flex w-[82%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border bg-card sm:w-auto">
+            <a href={subjectPath(slug)} className="relative block">
+              <SubjectCover slug={slug} shape="wide" rounded="rounded-none" className="aspect-[16/7] w-full" />
+              <span className="absolute inset-0 flex items-end bg-gradient-to-t from-black/65 via-black/15 to-transparent p-4">
+                <span className="inline-flex items-center gap-1 text-lg font-bold text-white">
+                  {g.name} <ChevronRight className="h-4 w-4" aria-hidden />
+                </span>
               </span>
-              <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground" aria-hidden />
             </a>
-          </li>
+            <ul className="divide-y">
+              {g.topics.map((t) => (
+                <li key={t.topicSlug}>
+                  <a href={topicPath(t.subjectSlug, t.topicSlug)} className="flex min-h-16 items-center gap-3 px-4 py-3 transition-colors hover:bg-muted/50">
+                    <span className="min-w-0 flex-1">
+                      <span className="block text-[15px] font-semibold leading-snug">{t.topicName}</span>
+                      <span className="mt-0.5 block text-[13px] text-muted-foreground">{t.lessons} lessons</span>
+                    </span>
+                    <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground" aria-hidden />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         ))}
-      </ul>
+      </SwipeRow>
     </section>
   )
 }

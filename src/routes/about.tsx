@@ -73,7 +73,7 @@ function About() {
         <h2 className="text-2xl font-bold tracking-tight">What you get</h2>
         <div className="grid grid-cols-6 gap-2" aria-hidden>
           {COVER_ROW.map((slug) => (
-            <SubjectCover key={slug} slug={slug} shape="square" className="aspect-square w-full" rounded="rounded-xl" />
+            <SubjectCover key={slug} slug={slug} shape="thumb" className="aspect-square w-full" rounded="rounded-xl" />
           ))}
         </div>
         <ul className="grid gap-x-8 gap-y-4 sm:grid-cols-2">

@@ -129,7 +129,7 @@ function SubjectPanel({ s, papers, open, onToggle }: { s: SubjectProgress; paper
   if (s.total === 0) {
     return (
       <div className="flex items-center gap-4 rounded-2xl border bg-card/60 p-4">
-        <SubjectCover slug={s.subject.slug} shape="square" className="h-11 w-11 shrink-0 opacity-60" rounded="rounded-lg" />
+        <SubjectCover slug={s.subject.slug} shape="thumb" className="h-12 w-16 shrink-0 opacity-60" rounded="rounded-lg" />
         <p className="flex-1 font-semibold text-muted-foreground">{s.subject.name}</p>
         <p className="text-xs text-muted-foreground">Lessons coming soon</p>
       </div>
@@ -144,7 +144,7 @@ function SubjectPanel({ s, papers, open, onToggle }: { s: SubjectProgress; paper
         aria-controls={panelId}
         className="flex min-h-16 w-full items-center gap-4 p-4 text-left transition-colors hover:bg-muted/40"
       >
-        <SubjectCover slug={s.subject.slug} shape="square" className="h-12 w-12 shrink-0" rounded="rounded-lg" />
+        <SubjectCover slug={s.subject.slug} shape="thumb" className="h-14 w-20 shrink-0" rounded="rounded-lg" />
         <div className="min-w-0 flex-1 space-y-1.5">
           <div className="flex items-baseline justify-between gap-3">
             <p className="truncate font-bold">{s.subject.name}</p>
@@ -189,7 +189,7 @@ function PracticeResults({ summary }: { summary: ProgressSummary }) {
           {attempts.slice(0, 15).map(({ a, s }) => {
             const body = (
               <>
-                <SubjectCover slug={s.slug} shape="square" className="h-9 w-9 shrink-0" rounded="rounded-md" />
+                <SubjectCover slug={s.slug} shape="thumb" className="h-11 w-14 shrink-0" rounded="rounded-md" />
                 <span className="min-w-0 flex-1">
                   <span className="block truncate text-sm font-semibold">{a.paper?.title ?? 'Practice set'}</span>
                   <span className="block text-xs text-muted-foreground">

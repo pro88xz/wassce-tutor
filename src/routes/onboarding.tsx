@@ -137,7 +137,7 @@ function Onboarding() {
                     disabled={isCore}
                     className={`flex w-full items-center gap-3 rounded-2xl bg-card px-3 py-3 text-left ring-1 transition ${isSelected ? 'ring-2 ring-primary' : 'ring-border hover:ring-primary/40'} ${isCore ? 'cursor-default' : ''}`}
                   >
-                    <SubjectCover slug={fs.subject.slug} shape="square" className="h-10 w-10 shrink-0" rounded="rounded-lg" />
+                    <SubjectCover slug={fs.subject.slug} shape="thumb" className="h-11 w-14 shrink-0" rounded="rounded-lg" />
                     <span className="min-w-0 flex-1 font-semibold">{fs.subject.name}</span>
                     {isCore ? (
                       <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-[11px] font-semibold text-muted-foreground">

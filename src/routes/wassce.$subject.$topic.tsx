@@ -57,7 +57,7 @@ function TopicPage() {
 
       <header className="space-y-4 rounded-2xl border bg-card p-6">
         <div className="flex items-center gap-3">
-          <SubjectCover slug={subject.slug} shape="square" className="h-10 w-10 shrink-0" rounded="rounded-lg" />
+          <SubjectCover slug={subject.slug} shape="thumb" className="h-12 w-16 shrink-0" rounded="rounded-lg" />
           <p className={`text-sm font-semibold ${palette.text}`}>
             WASSCE {subject.name} · {group.name}
           </p>

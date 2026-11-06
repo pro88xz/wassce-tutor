@@ -18,20 +18,22 @@ function facultiesOf(subjects: SubjectSummary[]): PublicFaculty[] {
 function SubjectLink({ s, detailed }: { s: SubjectSummary; detailed: boolean }) {
   const content = (
     <>
-      <SubjectCover slug={s.slug} shape="square" className="h-10 w-10 shrink-0" rounded="rounded-lg" />
-      <span className="min-w-0 flex-1 truncate font-semibold">{s.name}</span>
-      {detailed && (
-        <span className="shrink-0 text-xs text-muted-foreground">
-          {s.topicCount ? `${s.topicCount} topics` : 'Coming soon'}
-          {s.lessonCount > 0 && ` · ${s.lessonCount} lessons`}
-        </span>
-      )}
+      <SubjectCover slug={s.slug} shape="thumb" className="h-12 w-16 shrink-0" rounded="rounded-lg" />
+      <span className="min-w-0 flex-1">
+        <span className="block text-[15px] font-semibold leading-snug">{s.name}</span>
+        {detailed && (
+          <span className="mt-0.5 block text-[13px] text-muted-foreground">
+            {s.topicCount ? `${s.topicCount} topics` : 'Syllabus coming soon'}
+            {s.lessonCount > 0 && ` · ${s.lessonCount} lessons`}
+          </span>
+        )}
+      </span>
     </>
   )
   return hasSubjectPage(s.topicCount) ? (
-    <a href={subjectPath(s.slug)} className="flex items-center gap-3 rounded-xl px-2 py-1.5 transition hover:bg-muted">{content}</a>
+    <a href={subjectPath(s.slug)} className="flex min-h-16 items-center gap-3 rounded-xl px-2 py-2 transition hover:bg-muted">{content}</a>
   ) : (
-    <span className="flex items-center gap-3 rounded-xl px-2 py-1.5 opacity-60">{content}</span>
+    <span className="flex min-h-16 items-center gap-3 rounded-xl px-2 py-2 opacity-60">{content}</span>
   )
 }
 

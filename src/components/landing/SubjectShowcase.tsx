@@ -1,12 +1,13 @@
 // Subjects on the homepage, presented like products: every subject has its
 // own cover, real counts, and a place in a clear hierarchy (core subjects
 // featured, faculty subjects as cards, electives as compact rows).
-import { useRef, useState, type ReactNode } from 'react'
-import { ArrowRight, ChevronLeft, ChevronRight, ClipboardCheck } from 'lucide-react'
+import { useState } from 'react'
+import { ArrowRight, ChevronRight, ClipboardCheck } from 'lucide-react'
 import type { SubjectSummary } from '@/lib/public-content'
 import { subjectPath } from '@/lib/public-content'
 import { PRACTICE_QUESTIONS } from '@/lib/practice-counts'
 import { SubjectCover } from '@/components/ds/SubjectCover'
+import { SwipeRow } from '@/components/ds/SwipeRow'
 
 type Role = 'core' | 'faculty' | 'elective'
 
@@ -68,67 +69,25 @@ function SubjectCard({ s }: { s: SubjectSummary }) {
   )
 }
 
-/**
- * Phones: a swipeable row of cards with round previous/next buttons (no
- * scrollbar). From 640 px it becomes a plain three-column grid.
- */
-function SwipeRow({ label, count, children }: { label: string; count: number; children: ReactNode }) {
-  const ref = useRef<HTMLDivElement>(null)
-  const [edge, setEdge] = useState({ start: true, end: count <= 1 })
-  const update = () => {
-    const el = ref.current
-    if (!el) return
-    setEdge({ start: el.scrollLeft < 8, end: el.scrollLeft + el.clientWidth >= el.scrollWidth - 8 })
-  }
-  const step = (dir: 1 | -1) => {
-    const el = ref.current
-    if (!el) return
-    const card = el.firstElementChild as HTMLElement | null
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    el.scrollBy({ left: dir * (card ? card.offsetWidth + 12 : el.clientWidth * 0.8), behavior: reduce ? 'auto' : 'smooth' })
-  }
-  const btn = 'absolute top-[34%] z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border bg-card text-foreground shadow-md transition-opacity sm:hidden'
-  return (
-    <div className="relative">
-      <div
-        ref={ref}
-        onScroll={update}
-        aria-label={label}
-        className="-mx-4 flex snap-x snap-mandatory scroll-px-4 gap-3 overflow-x-auto px-4 [scrollbar-width:none] sm:mx-0 sm:grid sm:grid-cols-3 sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden [&>*]:min-w-0"
-      >
-        {children}
-      </div>
-      {!edge.start && (
-        <button type="button" onClick={() => step(-1)} aria-label={`Previous ${label.toLowerCase()}`} className={`${btn} -left-2`}>
-          <ChevronLeft className="h-5 w-5" aria-hidden />
-        </button>
-      )}
-      {!edge.end && (
-        <button type="button" onClick={() => step(1)} aria-label={`More ${label.toLowerCase()}`} className={`${btn} -right-2`}>
-          <ChevronRight className="h-5 w-5" aria-hidden />
-        </button>
-      )}
-    </div>
-  )
-}
-
-/** Elective: compact row with a small cover, inside a tinted panel. */
+/** Elective: a readable row card with a photo thumbnail. */
 function ElectiveRow({ s }: { s: SubjectSummary }) {
   const ready = s.topicCount > 0
   const inner = (
     <>
-      <SubjectCover slug={s.slug} shape="square" className="h-12 w-12 shrink-0" rounded="rounded-lg" />
+      <SubjectCover slug={s.slug} shape="thumb" className="h-16 w-24 shrink-0" rounded="rounded-lg" />
       <span className="min-w-0 flex-1">
-        <span className="block truncate text-sm font-semibold">{s.name}</span>
-        <span className="block text-xs text-muted-foreground">{meta(s)}</span>
+        <span className="block text-[15px] font-semibold leading-snug">{s.name}</span>
+        <span className="mt-0.5 block text-[13px] text-muted-foreground">{meta(s)}</span>
+        {PRACTICE_QUESTIONS[s.slug] ? <span className="mt-1 block"><PracticeBadge slug={s.slug} /></span> : null}
       </span>
-      {ready && <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground" aria-hidden />}
+      {ready && <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground" aria-hidden />}
     </>
   )
+  const cls = 'flex min-h-[88px] items-center gap-3.5 rounded-2xl border bg-card p-3 pr-3.5'
   return ready ? (
-    <a href={subjectPath(s.slug)} className="flex min-h-16 items-center gap-3 rounded-xl bg-card p-2.5 pr-3 transition-colors hover:bg-card/70">{inner}</a>
+    <a href={subjectPath(s.slug)} className={`${cls} transition-colors hover:border-primary/40`}>{inner}</a>
   ) : (
-    <div className="flex min-h-16 items-center gap-3 rounded-xl bg-card/60 p-2.5 pr-3 opacity-80">{inner}</div>
+    <div className={`${cls} opacity-75`}>{inner}</div>
   )
 }
 
@@ -193,9 +152,12 @@ export function SubjectShowcase({ subjects }: { subjects: SubjectSummary[] }) {
               </div>
             )}
             {electives.length > 0 && (
-              <div className="space-y-3 rounded-2xl bg-brand-soft/50 p-3 sm:p-4">
-                <h3 className="px-1 text-sm font-semibold text-brand-strong">Electives</h3>
-                <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 [&>*]:min-w-0">
+              <div className="space-y-3">
+                <div>
+                  <h3 className="text-sm font-semibold text-muted-foreground">Electives</h3>
+                  <p className="text-[13px] text-muted-foreground">Optional subjects you can take alongside your faculty subjects.</p>
+                </div>
+                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 [&>*]:min-w-0">
                   {electives.map((s) => <ElectiveRow key={s.id} s={s} />)}
                 </div>
               </div>
