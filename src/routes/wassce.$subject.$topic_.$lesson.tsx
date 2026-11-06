@@ -78,7 +78,7 @@ function PublicLessonPage() {
     <article className="mx-auto max-w-2xl space-y-8 pb-12">
       <header className="space-y-3 pt-2">
         <Breadcrumbs trail={trail(data)} />
-        <p className={`flex items-center gap-2 text-xs font-bold uppercase tracking-wider ${palette.text}`}>
+        <p className={`flex items-center gap-2 text-sm font-semibold ${palette.text}`}>
           <SubjectIcon slug={subject.slug} size="sm" /> WASSCE {subject.name} · {topic.name}
         </p>
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{lesson.title}</h1>

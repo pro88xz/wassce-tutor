@@ -12,6 +12,7 @@ import { AccessGate } from '@/components/AccessGate'
 import { EmptyState, PageHeader, ScorePill, SectionHeader, Skeleton } from '@/components/ds/Primitives'
 import { Button } from '@/components/ui/button'
 import type { Subject } from '@/lib/types'
+import { SubjectCover } from '@/components/ds/SubjectCover'
 
 export const Route = createFileRoute('/practice')({
   head: privateHead('Practice'),
@@ -115,7 +116,8 @@ function SubjectSets({ subject, papers, best }: { subject: Subject; papers: Pape
 
   return (
     <section className="space-y-3" aria-labelledby={`sets-${subject.id}`}>
-      <div className="flex items-end justify-between gap-3">
+      <div className="flex items-center gap-3">
+        <SubjectCover slug={subject.slug} shape="square" className="h-11 w-11 shrink-0" rounded="rounded-lg" />
         <div>
           <h2 id={`sets-${subject.id}`} className="text-lg font-bold tracking-tight">{subject.name}</h2>
           {papers.length > 0 && (

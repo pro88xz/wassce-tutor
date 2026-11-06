@@ -5,8 +5,9 @@ import { useAuth } from '@/lib/auth'
 import { fetchTopicPage, hasTopicPage, lessonMinutes, lessonPath, subjectPath, topicPath } from '@/lib/public-content'
 import type { TopicPageData } from '@/lib/public-content'
 import { breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
-import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
+import { subjectTheme } from '@/lib/subject-theme'
 import { Lock } from 'lucide-react'
+import { SubjectCover } from '@/components/ds/SubjectCover'
 
 const trail = ({ subject, topic }: TopicPageData): [string, string][] => [
   ['Home', '/'],
@@ -56,12 +57,12 @@ function TopicPage() {
 
       <header className="space-y-4 rounded-2xl border bg-card p-6">
         <div className="flex items-center gap-3">
-          <SubjectIcon slug={subject.slug} />
-          <p className={`text-xs font-bold uppercase tracking-wider ${palette.text}`}>
+          <SubjectCover slug={subject.slug} shape="square" className="h-10 w-10 shrink-0" rounded="rounded-lg" />
+          <p className={`text-sm font-semibold ${palette.text}`}>
             WASSCE {subject.name} · {group.name}
           </p>
         </div>
-        <h1 className="text-4xl font-bold tracking-tight text-balance">{topic.name}</h1>
+        <h1 className="text-[1.75rem] font-bold leading-tight tracking-tight text-balance sm:text-4xl">{topic.name}</h1>
         {topic.description && <p className="text-lg text-muted-foreground">{topic.description}</p>}
         <ul className="flex flex-wrap gap-2 text-sm font-semibold">
           <li className={`rounded-full px-3 py-1 ${palette.soft} ${palette.text}`}>

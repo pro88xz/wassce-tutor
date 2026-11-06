@@ -1,7 +1,8 @@
 import { Link } from '@tanstack/react-router'
 import { ChevronRight } from 'lucide-react'
 import type { SubjectProgress } from '@/lib/progress'
-import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
+import { subjectTheme } from '@/lib/subject-theme'
+import { SubjectCover } from '@/components/ds/SubjectCover'
 import { ProgressBar, percent } from '@/components/ds/Progress'
 
 /**
@@ -15,10 +16,11 @@ export function SubjectCard({ s }: { s: SubjectProgress }) {
     <Link
       to="/subject/$subjectId"
       params={{ subjectId: s.subject.id }}
-      className="flex h-full flex-col gap-3 rounded-2xl border bg-card p-4 transition-colors hover:border-primary/40"
+      className="flex h-full flex-col overflow-hidden rounded-2xl border bg-card transition-colors hover:border-primary/40"
     >
+      <SubjectCover slug={s.subject.slug} shape="wide" rounded="rounded-none" className="aspect-[16/5] w-full sm:aspect-[16/6]" />
+      <div className="flex flex-1 flex-col gap-3 p-4">
       <div className="flex items-center gap-3">
-        <SubjectIcon slug={s.subject.slug} />
         <div className="min-w-0 flex-1">
           <p className="truncate font-bold leading-tight">{s.subject.name}</p>
           <p className="text-xs text-muted-foreground">
@@ -38,6 +40,7 @@ export function SubjectCard({ s }: { s: SubjectProgress }) {
           <span className="font-medium text-foreground">{started ? 'Next' : 'Start with'}:</span> {s.next.topic.name}
         </p>
       )}
+      </div>
     </Link>
   )
 }
@@ -46,9 +49,7 @@ export function SubjectCard({ s }: { s: SubjectProgress }) {
 export function SubjectSoonRow({ s }: { s: SubjectProgress }) {
   return (
     <li className="flex min-h-14 items-center gap-3 px-4 py-3">
-      <span className="opacity-60">
-        <SubjectIcon slug={s.subject.slug} size="sm" />
-      </span>
+      <SubjectCover slug={s.subject.slug} shape="square" className="h-10 w-10 shrink-0 opacity-60" rounded="rounded-lg" />
       <span className="min-w-0 flex-1 truncate text-sm font-medium text-muted-foreground">{s.subject.name}</span>
       <span className="shrink-0 text-xs text-muted-foreground">Lessons coming soon</span>
     </li>

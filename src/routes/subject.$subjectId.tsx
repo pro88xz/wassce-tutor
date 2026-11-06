@@ -7,7 +7,8 @@ import { useAuth } from '@/lib/auth'
 import { usePapers, useSubject } from '@/lib/queries'
 import { useProgress } from '@/lib/progress'
 import { bestByPaper, topicsToReview } from '@/lib/papers'
-import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
+import { subjectTheme } from '@/lib/subject-theme'
+import { SubjectBanner } from '@/components/ds/SubjectCover'
 import { ProgressBar } from '@/components/ds/Progress'
 import { EmptyState, SectionHeader, Skeleton } from '@/components/ds/Primitives'
 import { TopicGroups } from '@/components/ds/TopicGroups'
@@ -50,10 +51,9 @@ function SubjectPage() {
 
         {/* Compact header: identity, progress context, next action */}
         <header className="space-y-3">
+          <SubjectBanner slug={subject?.slug} eyebrow="WASSCE subject" title={subject?.name ?? '\u00a0'} />
           <div className="flex items-center gap-3">
-            <SubjectIcon slug={subject?.slug} size="lg" />
             <div className="min-w-0">
-              <h1 className="text-[1.75rem] font-bold leading-tight tracking-tight">{subject?.name ?? ' '}</h1>
               {sp ? (
                 <p className="text-sm text-muted-foreground">
                   {sp.total === 0

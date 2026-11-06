@@ -5,9 +5,9 @@ import { useFaculties, useFacultySubjects } from '@/lib/queries'
 import { useSaveOnboarding } from '@/lib/mutations'
 import { useAuth } from '@/lib/auth'
 import { Briefcase, Check, FlaskConical, GraduationCap, Lock, Palette, Wrench } from 'lucide-react'
-import { SubjectIcon } from '@/lib/subject-theme'
 import { ProgressBar } from '@/components/ds/Progress'
 import { PageHeader, Skeleton } from '@/components/ds/Primitives'
+import { SubjectCover } from '@/components/ds/SubjectCover'
 
 export const Route = createFileRoute('/onboarding')({
   head: privateHead('Get started'),
@@ -134,7 +134,7 @@ function Onboarding() {
                     disabled={isCore}
                     className={`flex w-full items-center gap-3 rounded-2xl bg-card px-3 py-3 text-left ring-1 transition ${isSelected ? 'ring-2 ring-primary' : 'ring-border hover:ring-primary/40'} ${isCore ? 'cursor-default' : ''}`}
                   >
-                    <SubjectIcon slug={fs.subject.slug} size="sm" />
+                    <SubjectCover slug={fs.subject.slug} shape="square" className="h-10 w-10 shrink-0" rounded="rounded-lg" />
                     <span className="min-w-0 flex-1 font-semibold">{fs.subject.name}</span>
                     {isCore ? (
                       <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-[11px] font-semibold text-muted-foreground">

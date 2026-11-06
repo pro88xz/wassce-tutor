@@ -284,9 +284,17 @@ export async function fetchLandingData(): Promise<LandingData> {
   const subjects = await fetchSubjectSummaries()
   const topics = await loadTopics(subjects.map((s) => s.id))
   const bySubject = new Map(subjects.map((s) => [s.id, s]))
+  // The topics with the most lessons, at most two per subject so the list
+  // shows the range of subjects rather than one subject's syllabus.
+  const perSubject = new Map<string, number>()
   const popular = topics
     .filter(hasTopicPage)
     .sort((a, b) => b.lessons.length - a.lessons.length || a.name.localeCompare(b.name))
+    .filter((t) => {
+      const n = perSubject.get(t.subject_id) ?? 0
+      perSubject.set(t.subject_id, n + 1)
+      return n < 2
+    })
     .slice(0, 10)
     .map((t) => {
       const s = bySubject.get(t.subject_id)!

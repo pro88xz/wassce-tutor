@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
-import { BookOpen, Library, Mail, MapPin, MessageCircle, Smartphone, Wallet } from 'lucide-react'
+import { Check, Mail, MapPin } from 'lucide-react'
+import { SubjectCover } from '@/components/ds/SubjectCover'
 import { publicHead } from '@/lib/seo'
 import { fetchLandingData } from '@/lib/public-content'
 
@@ -12,19 +13,20 @@ export const Route = createFileRoute('/about')({
   component: About,
 })
 
+const COVER_ROW = ['english-language', 'mathematics', 'biology', 'chemistry', 'government', 'economics']
+
 function About() {
   const { totals } = Route.useLoaderData()
   const features = [
     {
-      icon: Library,
       title: `${totals.subjects} WASSCE subjects, topic by topic`,
       body: `Science, Arts, Commercial and Technical subjects, broken down into ${totals.topics} syllabus topics, with ${totals.lessons} lessons so far.`,
     },
-    { icon: BookOpen, title: 'Lessons with diagrams and properly rendered maths', body: 'Step-by-step explanations written for clarity, not for filler.' },
-    { icon: Library, title: 'Exam-style practice, marked instantly', body: 'Original WASSCE-style questions written to the syllabus, with the full working and why each wrong option is wrong.' },
-    { icon: MessageCircle, title: 'AI Tutor', body: 'Ask any WASSCE question in plain English and get a clear, syllabus-aligned answer in seconds.' },
-    { icon: Smartphone, title: 'Built for any Android phone', body: 'Made for patchy data and shared phones.' },
-    { icon: Wallet, title: 'Pay with Orange Money or AfriMoney', body: 'No card needed. Plans start at 25 NLe a month.' },
+    { title: 'Lessons with diagrams and properly rendered maths', body: 'Step-by-step explanations written for clarity, not for filler.' },
+    { title: 'Exam-style practice, marked instantly', body: 'Original WASSCE-style questions written to the syllabus, with the full working and why each wrong option is wrong.' },
+    { title: 'An AI tutor, any time', body: 'Ask any WASSCE question in plain English and get a clear, step-by-step answer, labelled as AI.' },
+    { title: 'Built for any Android phone', body: 'Made for patchy data and shared phones.' },
+    { title: 'Pay with Orange Money or AfriMoney', body: 'No card needed. Plans start at 25 NLe a month.' },
   ]
 
   return (
@@ -45,7 +47,7 @@ function About() {
         {([[totals.subjects, 'subjects'], [totals.topics, 'topics'], [totals.lessons, 'lessons']] as const).map(([n, label]) => (
           <div key={label} className="bg-card px-3 py-5">
             <p className="text-3xl font-bold tabular-nums">{n}</p>
-            <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{label}</p>
+            <p className="text-sm text-muted-foreground">{label}</p>
           </div>
         ))}
       </section>
@@ -64,21 +66,24 @@ function About() {
         </p>
       </section>
 
-      <section className="space-y-4">
+      <section className="space-y-5">
         <h2 className="text-2xl font-bold tracking-tight">What you get</h2>
-        <div className="grid gap-3 sm:grid-cols-2">
-          {features.map(({ icon: Icon, title, body }) => (
-            <div key={title} className="flex gap-4 rounded-2xl border bg-card p-5">
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                <Icon className="h-5 w-5" aria-hidden />
-              </span>
-              <span>
-                <span className="block font-bold">{title}</span>
-                <span className="block text-sm text-muted-foreground">{body}</span>
-              </span>
-            </div>
+        <div className="grid grid-cols-6 gap-2" aria-hidden>
+          {COVER_ROW.map((slug) => (
+            <SubjectCover key={slug} slug={slug} shape="square" className="aspect-square w-full" rounded="rounded-xl" />
           ))}
         </div>
+        <ul className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
+          {features.map(({ title, body }) => (
+            <li key={title} className="flex gap-3">
+              <Check className="mt-0.5 h-5 w-5 shrink-0 text-success" aria-hidden />
+              <span>
+                <span className="block font-semibold">{title}</span>
+                <span className="block text-sm text-muted-foreground">{body}</span>
+              </span>
+            </li>
+          ))}
+        </ul>
       </section>
 
       <section className="space-y-4">

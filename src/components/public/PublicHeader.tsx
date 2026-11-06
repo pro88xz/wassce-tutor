@@ -29,7 +29,7 @@ export function PublicHeader() {
     <header className="sticky top-0 z-30 -mx-4 -mt-4 mb-6 border-b bg-background/95 backdrop-blur-md sm:-mx-6 sm:-mt-6">
       <div className="mx-auto flex h-16 max-w-5xl items-center gap-4 px-4 sm:px-6">
         <a href="/" aria-label="WASSCE Tutor home">
-          <BrandMark compact />
+          <BrandMark compact wordmarkClassName="max-[359px]:sr-only" />
         </a>
         <nav aria-label="Main" className="ml-4 hidden items-center gap-6 text-[15px] font-medium text-muted-foreground md:flex">
           {NAV.map((n) => (

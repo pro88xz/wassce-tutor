@@ -1,6 +1,6 @@
 import { hasSubjectPage, subjectPath } from '@/lib/public-content'
-import { SubjectIcon } from '@/lib/subject-theme'
 import type { FacultyRole, PublicFaculty, SubjectSummary } from '@/lib/public-content'
+import { SubjectCover } from '@/components/ds/SubjectCover'
 
 const ROLE_ORDER: FacultyRole[] = ['core', 'faculty', 'elective']
 const ROLE_HEADING: Record<FacultyRole, string> = {
@@ -18,7 +18,7 @@ function facultiesOf(subjects: SubjectSummary[]): PublicFaculty[] {
 function SubjectLink({ s, detailed }: { s: SubjectSummary; detailed: boolean }) {
   const content = (
     <>
-      <SubjectIcon slug={s.slug} size="sm" />
+      <SubjectCover slug={s.slug} shape="square" className="h-10 w-10 shrink-0" rounded="rounded-lg" />
       <span className="min-w-0 flex-1 truncate font-semibold">{s.name}</span>
       {detailed && (
         <span className="shrink-0 text-xs text-muted-foreground">
@@ -47,7 +47,7 @@ export function FacultySubjects({ subjects, detailed = false }: { subjects: Subj
             if (list.length === 0) return null
             return (
               <div key={role} className="space-y-1">
-                <p className="px-2 text-xs font-bold uppercase tracking-wider text-muted-foreground">{ROLE_HEADING[role]}</p>
+                <p className="px-2 text-sm font-semibold text-muted-foreground">{ROLE_HEADING[role]}</p>
                 <ul className="space-y-1">
                   {list.map((s) => (
                     <li key={s.id}><SubjectLink s={s} detailed={detailed} /></li>

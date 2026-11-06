@@ -11,7 +11,7 @@ function Privacy() {
   return (
     <div className="mx-auto max-w-3xl space-y-4 pb-12">
       <header className="space-y-3 pb-4 pt-2">
-        <p className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary">Legal</p>
+        <p className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">Legal</p>
         <h1 className="text-4xl font-bold tracking-tight text-balance">Privacy Policy</h1>
         <p className="text-sm text-muted-foreground">Last updated: 8 June 2026</p>
       </header>

@@ -1,17 +1,17 @@
 // Logged-out homepage. Prerendered at build time (with LandingData from the
 // route loader) so search engines and link previews get the full page.
 // Section order follows the Design System Blueprint (07): hero, trust strip,
-// subject discovery, how it works, what you get, who it's for, WASSCE guide,
-// plans, FAQ, then a final call to action. Numbers come from the database.
+// subject discovery (subject covers and real counts), popular topics, a
+// product tour with real screens, a local-fit band, who it's for, the WASSCE
+// guide, plans, FAQ and a final call to action. Numbers come from the
+// database and the question-set manifest.
 import { Link } from '@tanstack/react-router'
-import { useState } from 'react'
-import {
-  ArrowRight, BookOpen, ChartLine, Check, CircleCheck, ClipboardCheck, Compass, Library, MessageCircle, Moon, School, Smartphone,
-  UserRound, Users, Wallet,
-} from 'lucide-react'
-import type { LandingData, SubjectSummary } from '@/lib/public-content'
-import { subjectPath, topicPath } from '@/lib/public-content'
-import { SubjectIcon } from '@/lib/subject-theme'
+import { BookOpen, Check, ChevronRight, CircleCheck, Compass, Moon, School, Smartphone, UserRound, Users, Wallet } from 'lucide-react'
+import type { LandingData } from '@/lib/public-content'
+import { topicPath } from '@/lib/public-content'
+import { SubjectCover } from '@/components/ds/SubjectCover'
+import { SubjectShowcase } from '@/components/landing/SubjectShowcase'
+import { ProductTour } from '@/components/landing/ProductTour'
 import { DownloadButton } from '@/components/DownloadButton'
 import { TopicSearch } from '@/components/landing/TopicSearch'
 
@@ -19,12 +19,12 @@ export function Landing({ data }: { data: LandingData }) {
   return (
     <>
       <Hero />
-      <div className="mx-auto max-w-5xl space-y-16 sm:space-y-20">
+      <div className="mx-auto max-w-5xl space-y-16 sm:space-y-24">
         <TrustStrip data={data} />
-        <SubjectsByFaculty subjects={data.subjects} />
+        <SubjectShowcase subjects={data.subjects} />
         {data.popular.length > 0 && <PopularTopics data={data} />}
-        <HowItWorks />
-        <WhatYouGet />
+        <ProductTour />
+        <LocalBand />
         <StartingPoint />
         <GuideTeaser />
         <Plans />
@@ -95,96 +95,27 @@ function SectionTitle({ eyebrow, title, body }: { eyebrow: string; title: string
   )
 }
 
-const ROLE_LABEL = { core: 'Core', faculty: 'Main', elective: 'Elective' } as const
-
-function SubjectsByFaculty({ subjects }: { subjects: SubjectSummary[] }) {
-  const faculties = [...new Map(subjects.flatMap((s) => s.faculties.map((f) => [f.faculty.id, f.faculty] as const))).values()].sort(
-    (a, b) => a.sort_order - b.sort_order,
-  )
-  const [active, setActive] = useState(faculties[0]?.id ?? '')
-  return (
-    <section className="space-y-8" aria-labelledby="subjects-heading">
-      <div id="subjects-heading">
-        <SectionTitle
-          eyebrow="Every subject"
-          title="Your WASSCE subjects, topic by topic"
-          body="Pick your faculty. English Language and Mathematics are core for everyone."
-        />
-      </div>
-      <div role="tablist" aria-label="Faculties" className="mx-auto grid w-full max-w-lg grid-cols-4 gap-1 rounded-xl bg-muted p-1">
-        {faculties.map((f) => (
-          <button
-            key={f.id}
-            type="button"
-            role="tab"
-            aria-selected={active === f.id}
-            aria-controls={`faculty-${f.id}`}
-            onClick={() => setActive(f.id)}
-            className={`min-h-10 rounded-lg px-0.5 py-2 text-[13px] font-semibold tracking-tight transition-colors sm:text-sm ${active === f.id ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'}`}
-          >
-            {f.name}
-          </button>
-        ))}
-      </div>
-      {faculties.map((f) => {
-        const list = subjects
-          .filter((s) => s.faculties.some((x) => x.faculty.id === f.id))
-          .sort((a, b) => {
-            const ra = a.faculties.find((x) => x.faculty.id === f.id)!.role
-            const rb = b.faculties.find((x) => x.faculty.id === f.id)!.role
-            const order = { core: 0, faculty: 1, elective: 2 }
-            return order[ra] - order[rb] || b.lessonCount - a.lessonCount
-          })
-        return (
-          // All faculties are in the HTML (crawlable links); only the active one is shown.
-          <div key={f.id} id={`faculty-${f.id}`} role="tabpanel" hidden={active !== f.id} className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {list.map((s) => {
-              const role = s.faculties.find((x) => x.faculty.id === f.id)!.role
-              const inner = (
-                <>
-                  <SubjectIcon slug={s.slug} />
-                  <span className="min-w-0 flex-1">
-                    <span className="block truncate font-bold">{s.name}</span>
-                    <span className="block text-xs text-muted-foreground">
-                      {s.topicCount ? `${s.topicCount} topics` : 'Syllabus coming soon'}
-                      {s.lessonCount > 0 && ` · ${s.lessonCount} lessons`}
-                    </span>
-                  </span>
-                  <span className="shrink-0 rounded-full bg-muted px-2 py-0.5 text-[11px] font-semibold text-muted-foreground">{ROLE_LABEL[role]}</span>
-                </>
-              )
-              return s.topicCount > 0 ? (
-                <a key={s.id} href={subjectPath(s.slug)} className="flex min-h-16 items-center gap-3 rounded-2xl border bg-card p-4 transition-colors hover:border-primary/40">
-                  {inner}
-                </a>
-              ) : (
-                <div key={s.id} className="flex min-h-16 items-center gap-3 rounded-2xl border border-dashed bg-card/60 p-4 text-muted-foreground">{inner}</div>
-              )
-            })}
-          </div>
-        )
-      })}
-      <p className="text-center text-sm">
-        <a href="/wassce/subjects" className="inline-flex min-h-11 items-center font-semibold text-primary hover:underline">See every subject and its syllabus →</a>
-      </p>
-    </section>
-  )
-}
-
 function PopularTopics({ data }: { data: LandingData }) {
+  const names = new Map(data.subjects.map((x) => [x.slug, x.name]))
   return (
-    <section className="space-y-6">
-      <SectionTitle eyebrow="Popular topics" title="Jump straight into a topic" />
-      <ul className="flex flex-wrap justify-center gap-2">
-        {data.popular.map((t) => (
+    <section className="space-y-4 rounded-2xl bg-muted/70 p-4 sm:p-6" aria-labelledby="popular-heading">
+      <div className="flex items-end justify-between gap-3">
+        <div>
+          <p className="text-sm font-semibold text-primary">Popular topics</p>
+          <h2 id="popular-heading" className="text-xl font-bold tracking-tight sm:text-2xl">Jump straight into a topic</h2>
+        </div>
+        <a href="/wassce/subjects" className="hidden min-h-11 items-center text-sm font-semibold text-primary hover:underline sm:inline-flex">All subjects →</a>
+      </div>
+      <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 [&>*]:min-w-0">
+        {data.popular.slice(0, 8).map((t) => (
           <li key={`${t.subjectSlug}/${t.topicSlug}`}>
-            <a
-              href={topicPath(t.subjectSlug, t.topicSlug)}
-              className="inline-flex min-h-11 items-center gap-2 rounded-full border bg-card py-1.5 pl-1.5 pr-4 text-sm font-medium transition-colors hover:border-primary/40"
-            >
-              <SubjectIcon slug={t.subjectSlug} size="sm" />
-              <span>{t.topicName}</span>
-              <span className="whitespace-nowrap text-xs text-muted-foreground">{t.lessons} lessons</span>
+            <a href={topicPath(t.subjectSlug, t.topicSlug)} className="flex min-h-16 items-center gap-3 rounded-xl bg-card p-2.5 pr-3 transition-colors hover:bg-card/70">
+              <SubjectCover slug={t.subjectSlug} shape="square" className="h-12 w-12 shrink-0" rounded="rounded-lg" />
+              <span className="min-w-0 flex-1">
+                <span className="block truncate font-semibold">{t.topicName}</span>
+                <span className="block text-xs text-muted-foreground">{names.get(t.subjectSlug) ?? t.subjectName} · {t.lessons} lessons</span>
+              </span>
+              <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground" aria-hidden />
             </a>
           </li>
         ))}
@@ -193,59 +124,28 @@ function PopularTopics({ data }: { data: LandingData }) {
   )
 }
 
-/** The learning loop: learn, practise, ask, track. */
-function HowItWorks() {
-  const steps = [
-    { icon: BookOpen, title: 'Learn a topic', body: 'Short lessons with worked examples, written to the WASSCE syllabus.' },
-    { icon: ClipboardCheck, title: 'Practise exam-style questions', body: 'Every answer is marked straight away, with the full working and why the wrong options are wrong.' },
-    { icon: MessageCircle, title: 'Ask the AI tutor', body: 'Stuck on a step? Ask in plain English and get it explained one step at a time.' },
-    { icon: ChartLine, title: 'Track your progress', body: 'See which topics are done and which need another look before the exam.' },
-  ]
-  return (
-    <section className="space-y-8">
-      <SectionTitle eyebrow="How it works" title="Learn, practise, ask, track" />
-      <ol className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        {steps.map(({ icon: Icon, title, body }, i) => (
-          <li key={title} className="rounded-2xl border bg-card p-5">
-            <div className="flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-soft text-primary">
-                <Icon className="h-5 w-5" aria-hidden />
-              </span>
-              <span className="text-sm font-semibold text-muted-foreground">Step {i + 1}</span>
-            </div>
-            <h3 className="mt-4 text-lg font-bold">{title}</h3>
-            <p className="mt-1 text-sm text-muted-foreground">{body}</p>
-          </li>
-        ))}
-      </ol>
-    </section>
-  )
-}
-
-function WhatYouGet() {
-  const features = [
-    { icon: Library, title: 'Exam-style practice, marked instantly', body: 'Original WASSCE-style questions written to the syllabus, each with the full working.' },
-    { icon: BookOpen, title: 'Lessons with diagrams and maths', body: 'Clear step-by-step lessons, with properly typeset equations.' },
-    { icon: MessageCircle, title: 'An AI tutor, any time', body: 'Ask any WASSCE question in plain English and get a clear answer in seconds.' },
+/** Full-width deep band: local fit, set apart from the white sections around it. */
+function LocalBand() {
+  const items = [
+    { icon: Smartphone, title: 'Built for your phone', body: 'Works in any phone browser and as an Android app, even on patchy data.' },
+    { icon: Wallet, title: 'Pay the local way', body: 'Orange Money or AfriMoney. No card and no bank account needed.' },
     { icon: Moon, title: 'Reading mode for late nights', body: 'A warm, low-glare theme for studying after dark.' },
-    { icon: Smartphone, title: 'Built for your phone', body: 'Works in any phone browser, with an Android app, and on patchy data.' },
-    { icon: Wallet, title: 'Pay the local way', body: 'Orange Money or AfriMoney. No card, no bank account.' },
+    { icon: BookOpen, title: 'Written to the WASSCE syllabus', body: 'Topics follow the syllabus, grouped the way you will study them.' },
   ]
   return (
-    <section className="space-y-8">
-      <SectionTitle eyebrow="What you get" title="Built for the WASSCE you're actually taking" />
-      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {features.map(({ icon: Icon, title, body }) => (
-          <div key={title} className="flex gap-4 rounded-2xl border bg-card p-5">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-soft text-primary">
-              <Icon className="h-5 w-5" aria-hidden />
-            </span>
-            <span>
-              <span className="block font-bold">{title}</span>
-              <span className="block text-sm text-muted-foreground">{body}</span>
-            </span>
-          </div>
-        ))}
+    <section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen bg-brand-deep text-white">
+      <div className="mx-auto max-w-5xl px-6 py-12 sm:py-16">
+        <p className="text-sm font-semibold text-white/70">Made in Freetown</p>
+        <h2 className="mt-1 max-w-xl text-[1.75rem] font-bold leading-tight tracking-tight text-balance sm:text-3xl">Built for studying in Sierra Leone</h2>
+        <div className="mt-8 grid gap-x-8 gap-y-7 sm:grid-cols-2 lg:grid-cols-4">
+          {items.map(({ icon: Icon, title, body }) => (
+            <div key={title} className="space-y-2 border-t border-white/15 pt-4">
+              <Icon className="h-6 w-6 text-[#ffd166]" strokeWidth={1.8} aria-hidden />
+              <p className="font-semibold">{title}</p>
+              <p className="text-sm text-white/70">{body}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )
@@ -253,49 +153,71 @@ function WhatYouGet() {
 
 function StartingPoint() {
   const paths = [
-    { icon: School, title: "I'm in SSS3", body: 'Follow your faculty’s subjects topic by topic and track your progress to exam day.', cta: 'Start free', href: '/auth' },
-    { icon: UserRound, title: "I'm a private candidate", body: 'Revise at your own pace with lessons, exam-style practice and an AI tutor whenever you need help.', cta: 'Start free', href: '/auth' },
-    { icon: Users, title: "I'm a parent or teacher", body: 'See exactly what’s covered in every WASSCE subject before your student signs up.', cta: 'Browse subjects', href: '/wassce/subjects' },
+    { icon: School, tone: 'bg-[#5b34d6]', title: "I'm in SSS3", body: 'Follow your faculty’s subjects topic by topic and track your progress to exam day.', href: '/auth' },
+    { icon: UserRound, tone: 'bg-[#0d8486]', title: "I'm a private candidate", body: 'Revise at your own pace with lessons, exam-style practice and the AI tutor.', href: '/auth' },
+    { icon: Users, tone: 'bg-[#b0610f]', title: "I'm a parent or teacher", body: 'See exactly what every WASSCE subject covers before your student signs up.', href: '/wassce/subjects' },
   ]
   return (
-    <section className="space-y-8">
-      <SectionTitle eyebrow="Who it's for" title="Made for everyone preparing for WASSCE" />
-      <div className="grid gap-3 sm:grid-cols-3">
-        {paths.map(({ icon: Icon, title, body, cta, href }) => (
-          <a key={title} href={href} className="group flex flex-col gap-3 rounded-2xl border bg-card p-5 transition-colors hover:border-primary/40">
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-soft text-primary">
-              <Icon className="h-5 w-5" aria-hidden />
-            </span>
-            <span className="text-lg font-bold">{title}</span>
-            <span className="flex-1 text-sm text-muted-foreground">{body}</span>
-            <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary">
-              {cta} <ArrowRight className="h-4 w-4" aria-hidden />
-            </span>
-          </a>
-        ))}
+    <section className="grid items-center gap-6 md:grid-cols-[1fr_1.3fr] md:gap-12" aria-labelledby="who-heading">
+      <div className="space-y-2 text-center md:text-left">
+        <p className="text-sm font-semibold text-primary">Who it's for</p>
+        <h2 id="who-heading" className="text-[1.75rem] font-bold leading-tight tracking-tight text-balance sm:text-3xl">Made for everyone preparing for WASSCE</h2>
+        <p className="text-[15px] text-muted-foreground">Start where you are. Your subjects and first lesson are set up in a minute.</p>
       </div>
+      <ul className="divide-y rounded-2xl border bg-card">
+        {paths.map(({ icon: Icon, tone, title, body, href }) => (
+          <li key={title}>
+            <a href={href} className="flex min-h-20 items-center gap-4 px-4 py-4 transition-colors hover:bg-muted/50 sm:px-5">
+              <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-white ${tone}`}>
+                <Icon className="h-5 w-5" aria-hidden />
+              </span>
+              <span className="min-w-0 flex-1">
+                <span className="block font-bold">{title}</span>
+                <span className="block text-sm text-muted-foreground">{body}</span>
+              </span>
+              <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground" aria-hidden />
+            </a>
+          </li>
+        ))}
+      </ul>
     </section>
   )
 }
 
-/** Exam orientation: points to the public WASSCE guide pages. */
+/** Exam orientation: the public WASSCE guide, with the grade scale as a preview. */
 function GuideTeaser() {
+  const grades: [string, string][] = [
+    ['A1', 'credit'], ['B2', 'credit'], ['B3', 'credit'], ['C4', 'credit'], ['C5', 'credit'], ['C6', 'credit'], ['D7', 'pass'], ['E8', 'pass'], ['F9', 'fail'],
+  ]
+  const tone = { credit: 'bg-success/15 text-success', pass: 'bg-warning/15 text-warning', fail: 'bg-muted text-muted-foreground' }
   return (
-    <section className="flex flex-col gap-5 rounded-2xl border bg-card p-6 sm:flex-row sm:items-center sm:p-8">
-      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-soft text-primary">
-        <Compass className="h-6 w-6" aria-hidden />
-      </span>
-      <div className="flex-1 space-y-1">
-        <h2 className="text-xl font-bold tracking-tight">New to WASSCE? Start with the guide</h2>
+    <section className="overflow-hidden rounded-2xl border bg-card md:grid md:grid-cols-2" aria-labelledby="guide-heading">
+      <div className="space-y-3 p-6 sm:p-8">
+        <p className="inline-flex items-center gap-2 text-sm font-semibold text-primary"><Compass className="h-4 w-4" aria-hidden /> WASSCE guide</p>
+        <h2 id="guide-heading" className="text-2xl font-bold leading-tight tracking-tight">New to WASSCE? Start with the guide</h2>
         <p className="text-[15px] text-muted-foreground">How the exam works in Sierra Leone, which subjects each faculty sits, and how grades are worked out.</p>
+        <div className="flex flex-col gap-2 pt-2 sm:flex-row">
+          <a href="/wassce" className="inline-flex h-11 items-center justify-center rounded-xl bg-primary px-5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-brand-strong">
+            Read the WASSCE guide
+          </a>
+          <a href="/wassce/subjects" className="inline-flex h-11 items-center justify-center rounded-xl border px-5 text-sm font-semibold transition-colors hover:border-primary/40">
+            Subjects and syllabus
+          </a>
+        </div>
       </div>
-      <div className="flex flex-col gap-2 sm:items-end">
-        <a href="/wassce" className="inline-flex h-11 items-center justify-center rounded-xl bg-primary px-5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-brand-strong">
-          Read the WASSCE guide
-        </a>
-        <a href="/wassce/subjects" className="inline-flex min-h-11 items-center justify-center text-sm font-semibold text-primary hover:underline">
-          Every subject and syllabus
-        </a>
+      <div className="border-t bg-muted/50 p-6 sm:p-8 md:border-l md:border-t-0">
+        <p className="text-sm font-semibold">WASSCE grades</p>
+        <ul className="mt-3 grid grid-cols-9 gap-1.5" aria-label="WASSCE grade scale from A1 to F9">
+          {grades.map(([g, k]) => (
+            <li key={g} className={`flex h-11 items-center justify-center rounded-lg text-sm font-bold ${tone[k as keyof typeof tone]}`}>{g}</li>
+          ))}
+        </ul>
+        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
+          <span><span className="font-semibold text-success">A1–C6</span> credit</span>
+          <span><span className="font-semibold text-warning">D7–E8</span> pass</span>
+          <span><span className="font-semibold">F9</span> fail</span>
+        </div>
+        <p className="mt-4 text-sm text-muted-foreground">University courses usually ask for credits (C6 or better) in five subjects, often including English Language and Mathematics.</p>
       </div>
     </section>
   )

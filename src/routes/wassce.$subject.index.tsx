@@ -4,7 +4,8 @@ import { StartCta } from '@/components/public/StartCta'
 import { fetchSubjectHub, hasTopicPage, subjectPath, topicPath } from '@/lib/public-content'
 import type { SubjectHub } from '@/lib/public-content'
 import { breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
-import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
+import { subjectTheme } from '@/lib/subject-theme'
+import { SubjectBanner, SubjectCover } from '@/components/ds/SubjectCover'
 
 const trail = (hub: SubjectHub): [string, string][] => [
   ['Home', '/'],
@@ -57,10 +58,7 @@ function SubjectHubPage() {
       <Breadcrumbs trail={trail(hub)} />
 
       <header className="space-y-4">
-        <div className="flex items-center gap-3">
-          <SubjectIcon slug={subject.slug} size="lg" />
-          <h1 className="text-[1.75rem] font-bold leading-tight tracking-tight sm:text-4xl">WASSCE {subject.name}</h1>
-        </div>
+        <SubjectBanner slug={subject.slug} eyebrow="WASSCE syllabus" title={subject.name} />
         <p className="text-[15px] text-muted-foreground sm:text-base">
           Every topic in the WASSCE {subject.name} syllabus, grouped the way you&rsquo;ll study it, with lessons
           written for Sierra Leone students.
@@ -79,7 +77,7 @@ function SubjectHubPage() {
         {groups.map((group) => (
           <section key={group.name} className="space-y-3">
             <div className="flex items-center justify-between gap-3">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-muted-foreground">{group.name}</h3>
+              <h3 className="text-sm font-semibold text-muted-foreground">{group.name}</h3>
               <span className="text-xs text-muted-foreground">{group.topics.length} topics</span>
             </div>
             <ul className="space-y-2">
@@ -128,7 +126,7 @@ function SubjectHubPage() {
             {related.map((s) => (
               <li key={s.id}>
                 <a href={subjectPath(s.slug)} className="flex items-center gap-3 rounded-2xl border bg-card p-3 transition hover:border-primary/40">
-                  <SubjectIcon slug={s.slug} size="sm" />
+                  <SubjectCover slug={s.slug} shape="square" className="h-10 w-10 shrink-0" rounded="rounded-lg" />
                   <span className="min-w-0 flex-1 truncate font-semibold">{s.name}</span>
                   <span className="text-xs text-muted-foreground">{s.topicCount} topics</span>
                 </a>

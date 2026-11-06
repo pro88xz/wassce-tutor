@@ -29,11 +29,12 @@ import {
   type SubjectRef,
 } from '@/lib/progress'
 import { checkAccess } from '@/lib/access'
-import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
+import { subjectTheme } from '@/lib/subject-theme'
 import { ProgressBar } from '@/components/ds/Progress'
 import { EmptyState, MetricCard, Pill, ScorePill, SectionHeader, Skeleton } from '@/components/ds/Primitives'
 import { Button } from '@/components/ui/button'
 import { UpdateBanner } from '@/components/UpdateBanner'
+import { SubjectCover } from '@/components/ds/SubjectCover'
 
 type Located = { lesson: CurriculumLesson; topic: CurriculumTopic; subject: SubjectRef }
 
@@ -197,7 +198,7 @@ function ContinueCard({ summary, started }: { summary: ProgressSummary; started:
     <section aria-labelledby="continue-title" className="rounded-2xl border bg-card p-5 shadow-sm sm:p-6">
       <p className="text-sm font-semibold text-primary">{started ? 'Continue learning' : 'Start your first lesson'}</p>
       <div className="mt-3 flex items-start gap-3">
-        <SubjectIcon slug={next.subject.slug} size="lg" />
+        <SubjectCover slug={next.subject.slug} shape="square" className="h-14 w-14 shrink-0" />
         <div className="min-w-0">
           <h2 id="continue-title" className="text-xl font-bold leading-snug text-balance">
             {started ? next.lesson.title : next.topic.name}
@@ -417,7 +418,7 @@ function YourSubjects({ subjects }: { subjects: SubjectProgress[] }) {
           return (
             <li key={s.subject.id}>
               <Link to="/subject/$subjectId" params={{ subjectId: s.subject.id }} className="flex min-h-16 items-center gap-3 px-4 py-3 transition-colors hover:bg-muted/50">
-                <SubjectIcon slug={s.subject.slug} size="sm" />
+                <SubjectCover slug={s.subject.slug} shape="square" className="h-11 w-11 shrink-0" rounded="rounded-lg" />
                 <span className="min-w-0 flex-1 space-y-1">
                   <span className="flex items-baseline justify-between gap-2">
                     <span className="truncate font-semibold">{s.subject.name}</span>
@@ -434,7 +435,7 @@ function YourSubjects({ subjects }: { subjects: SubjectProgress[] }) {
         })}
         {soon.map((s) => (
           <li key={s.subject.id} className="flex min-h-14 items-center gap-3 px-4 py-3 opacity-70">
-            <SubjectIcon slug={s.subject.slug} size="sm" />
+            <SubjectCover slug={s.subject.slug} shape="square" className="h-11 w-11 shrink-0 opacity-60" rounded="rounded-lg" />
             <span className="min-w-0 flex-1 truncate text-sm font-medium text-muted-foreground">{s.subject.name}</span>
             <Pill>Lessons coming soon</Pill>
           </li>
@@ -508,21 +509,21 @@ function QuickAccess({ topic }: { topic: string | null }) {
       <h2 id="quick-title" className="text-lg font-bold tracking-tight">Quick access</h2>
       <div className="grid gap-3 sm:grid-cols-3">
         <Link to="/tutor" search={topic ? { ask: `Explain ${topic} simply, with one worked example.` } : {}} className={tile}>
-          <MessageCircleQuestion className="h-5 w-5 shrink-0 text-primary" aria-hidden />
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#2864c5] text-white"><MessageCircleQuestion className="h-5 w-5" aria-hidden /></span>
           <span className="min-w-0">
             <span className="block text-sm font-semibold">{topic ? `Ask about ${topic}` : 'Ask the AI tutor'}</span>
             <span className="block text-xs text-muted-foreground">Step-by-step help from the AI tutor</span>
           </span>
         </Link>
         <Link to="/practice" className={tile}>
-          <PlayCircle className="h-5 w-5 shrink-0 text-primary" aria-hidden />
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#17865b] text-white"><PlayCircle className="h-5 w-5" aria-hidden /></span>
           <span className="min-w-0">
             <span className="block text-sm font-semibold">Practice</span>
             <span className="block text-xs text-muted-foreground">Exam-style sets with full working</span>
           </span>
         </Link>
         <Link to="/progress" className={tile}>
-          <ChartLine className="h-5 w-5 shrink-0 text-primary" aria-hidden />
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#b66a12] text-white"><ChartLine className="h-5 w-5" aria-hidden /></span>
           <span className="min-w-0">
             <span className="block text-sm font-semibold">Progress</span>
             <span className="block text-xs text-muted-foreground">Every subject and score</span>
