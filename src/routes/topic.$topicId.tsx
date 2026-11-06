@@ -1,5 +1,5 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
-import { ArrowLeft, ArrowRight, ChevronRight, CircleCheck, Clock, RotateCcw } from 'lucide-react'
+import { ArrowRight, ChevronRight, CircleCheck, Clock, RotateCcw } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { AccessGate } from '@/components/AccessGate'
 import { useAuth } from '@/lib/auth'
@@ -51,13 +51,23 @@ function TopicPage() {
   return (
     <AccessGate>
       <div className="mx-auto max-w-2xl space-y-6">
-        {subject ? (
-          <Link to="/subject/$subjectId" params={{ subjectId: subject.id }} className="-mb-2 inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground">
-            <ArrowLeft className="h-4 w-4" aria-hidden /> {subject.name}
-          </Link>
-        ) : (
-          <span className="block h-11" />
-        )}
+        <nav aria-label="Breadcrumb" className="-mb-2">
+          <ol className="flex min-w-0 items-center gap-1.5 text-sm text-muted-foreground">
+            <li>
+              <Link to="/subjects" className="inline-flex min-h-11 items-center hover:text-foreground">Subjects</Link>
+            </li>
+            <li aria-hidden><ChevronRight className="h-3.5 w-3.5" /></li>
+            {subject ? (
+              <li className="shrink-0">
+                <Link to="/subject/$subjectId" params={{ subjectId: subject.id }} className="inline-flex min-h-11 items-center hover:text-foreground">{subject.name}</Link>
+              </li>
+            ) : (
+              <li className="h-11" />
+            )}
+            <li aria-hidden><ChevronRight className="h-3.5 w-3.5" /></li>
+            <li aria-current="page" className="truncate font-medium text-foreground">{topic.name}</li>
+          </ol>
+        </nav>
 
         <header className="space-y-3">
           <div className="space-y-1">

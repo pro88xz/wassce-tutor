@@ -60,9 +60,9 @@ function AuthPage() {
     <div className="flex min-h-[80vh] items-center justify-center px-1 py-6">
       <div className="w-full max-w-sm space-y-6">
         <div className="space-y-3 text-center">
-          <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-white shadow-sm">
+          <a href="/" aria-label="WASSCE Tutor home" className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-white transition-colors hover:bg-brand-strong">
             <GraduationCap className="h-7 w-7" aria-hidden />
-          </span>
+          </a>
           <div className="space-y-1">
             <h1 className="text-3xl font-bold tracking-tight">
               {mode === 'signup' ? 'Create your free account' : mode === 'forgot' ? 'Reset your password' : 'Welcome back'}

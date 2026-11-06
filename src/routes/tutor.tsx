@@ -27,8 +27,11 @@ import { SubjectIcon } from '@/lib/subject-theme'
 export const Route = createFileRoute('/tutor')({
   head: privateHead('AI Tutor'),
   // ?ask= pre-fills the message box (e.g. from "Ask about this topic" links); never sends on its own.
-  validateSearch: (search: Record<string, unknown>): { ask?: string } =>
-    typeof search.ask === 'string' && search.ask.trim() ? { ask: search.ask.slice(0, 300) } : {},
+  // ?about= names the subject and topic the student came from (shown in the header).
+  validateSearch: (search: Record<string, unknown>): { ask?: string; about?: string } => ({
+    ...(typeof search.ask === 'string' && search.ask.trim() ? { ask: search.ask.slice(0, 300) } : {}),
+    ...(typeof search.about === 'string' && search.about.trim() ? { about: search.about.slice(0, 80) } : {}),
+  }),
   component: TutorPage,
 })
 
@@ -71,7 +74,7 @@ function TutorPage() {
   const allowed = access.reason === 'admin' || access.reason === 'subscribed'
 
   const [messages, setMessages] = useState<Message[]>([])
-  const { ask } = Route.useSearch()
+  const { ask, about } = Route.useSearch()
   const [input, setInput] = useState(ask ?? '')
   const [sending, setSending] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -206,8 +209,8 @@ function TutorPage() {
         <TutorAvatar size={36} />
         <div className="min-w-0 flex-1">
           <h1 className="font-bold leading-tight tracking-tight">AI tutor</h1>
-          <p className="text-xs leading-tight text-muted-foreground">
-            Step-by-step help with your WASSCE subjects
+          <p className="truncate text-xs leading-tight text-muted-foreground">
+            {about ? <>Asking about <span className="font-semibold text-foreground">{about}</span></> : 'Step-by-step help with your WASSCE subjects'}
           </p>
         </div>
         {remaining !== null && (

@@ -10,6 +10,8 @@ import { TopicStatusIcon, topicStateLabel } from '@/components/ds/TopicStatus'
  */
 export function TopicRow({ t, palette, showDescription = false, review = false }: { t: TopicProgress; palette: Palette; showDescription?: boolean; review?: boolean }) {
   const state = topicStateLabel(t, review)
+  // Total reading time, shown for topics not started yet.
+  const minutes = t.topic.lessons.reduce((n, l) => n + (l.est_minutes ?? 0), 0)
   return (
     <li>
       <Link
@@ -25,6 +27,7 @@ export function TopicRow({ t, palette, showDescription = false, review = false }
           )}
           <span className="mt-1 block text-xs text-muted-foreground">
             {t.status === 'new' ? `${t.total} ${t.total === 1 ? 'lesson' : 'lessons'}` : `${t.done} of ${t.total} lessons`}
+            {minutes > 0 && t.status === 'new' && ` · about ${minutes} min`}
             {' · '}
             <span className={`font-semibold ${state.tone}`}>{state.label}</span>
           </span>

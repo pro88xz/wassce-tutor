@@ -16,7 +16,7 @@ export const Route = createFileRoute('/subjects')({
 function SubjectsPage() {
   const { user } = useAuth()
   const { data: subjects, isLoading: subjectsLoading } = useStudentSubjects(user?.id ?? null)
-  const { summary, isLoading } = useProgress(user?.id ?? null, subjects)
+  const { summary, isLoading, error } = useProgress(user?.id ?? null, subjects)
 
   const available = summary?.subjects.filter((s) => s.total > 0) ?? []
   const soon = summary?.subjects.filter((s) => s.total === 0) ?? []
@@ -43,7 +43,9 @@ function SubjectsPage() {
         }
       />
 
-      {subjectsLoading || isLoading ? (
+      {error ? (
+        <EmptyState title="We couldn't load your subjects" body="Check your connection and try again. Your progress is saved." />
+      ) : subjectsLoading || isLoading ? (
         <div className="grid gap-3 sm:grid-cols-2" aria-busy="true">
           {[0, 1, 2, 3].map((i) => <Skeleton key={i} className="h-28" />)}
         </div>

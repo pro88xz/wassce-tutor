@@ -508,7 +508,7 @@ function QuickAccess({ topic }: { topic: string | null }) {
     <section className="space-y-3" aria-labelledby="quick-title">
       <h2 id="quick-title" className="text-lg font-bold tracking-tight">Quick access</h2>
       <div className="grid gap-3 sm:grid-cols-3">
-        <Link to="/tutor" search={topic ? { ask: `Explain ${topic} simply, with one worked example.` } : {}} className={tile}>
+        <Link to="/tutor" search={topic ? { ask: `Explain ${topic} simply, with one worked example.`, about: topic } : {}} className={tile}>
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#2864c5] text-white"><MessageCircleQuestion className="h-5 w-5" aria-hidden /></span>
           <span className="min-w-0">
             <span className="block text-sm font-semibold">{topic ? `Ask about ${topic}` : 'Ask the AI tutor'}</span>

@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { useFaculties, useFacultySubjects } from '@/lib/queries'
 import { useSaveOnboarding } from '@/lib/mutations'
 import { useAuth } from '@/lib/auth'
-import { Briefcase, Check, FlaskConical, GraduationCap, Lock, Palette, Wrench } from 'lucide-react'
+import { Check, Lock } from 'lucide-react'
 import { ProgressBar } from '@/components/ds/Progress'
 import { PageHeader, Skeleton } from '@/components/ds/Primitives'
 import { SubjectCover } from '@/components/ds/SubjectCover'
@@ -71,7 +71,8 @@ function Onboarding() {
   const count = selected.size
   const meetsRecommended = count >= MIN_SUBJECTS && count <= MAX_SUBJECTS
   const canContinue = count >= 2 && count <= MAX_SUBJECTS
-  const FACULTY_ICONS: Record<string, typeof FlaskConical> = { science: FlaskConical, arts: Palette, commercial: Briefcase, technical: Wrench }
+  // Each faculty is shown with the cover of one of its signature subjects.
+  const FACULTY_COVER: Record<string, string> = { science: 'biology', arts: 'literature-in-english', commercial: 'commerce', technical: 'technical-drawing' }
 
   return (
     <div className="mx-auto max-w-2xl space-y-8 pb-32">
@@ -82,7 +83,6 @@ function Onboarding() {
         <StepLabel n={1} label="Your faculty" />
         <div className="grid grid-cols-2 gap-3">
           {faculties?.map((f) => {
-            const Icon = FACULTY_ICONS[f.slug] ?? GraduationCap
             const active = facultyId === f.id
             return (
               <button
@@ -90,13 +90,16 @@ function Onboarding() {
                 type="button"
                 aria-pressed={active}
                 onClick={() => setFacultyId(f.id)}
-                className={`flex flex-col items-start gap-2 rounded-2xl bg-card p-4 text-left ring-1 transition ${active ? 'ring-2 ring-primary shadow-md shadow-primary/10' : 'ring-border hover:ring-primary/40'}`}
+                className={`relative flex flex-col items-start gap-2 overflow-hidden rounded-2xl bg-card p-0 text-left ring-1 transition ${active ? 'ring-2 ring-primary' : 'ring-border hover:ring-primary/40'}`}
               >
-                <span className={`flex h-10 w-10 items-center justify-center rounded-xl ${active ? 'bg-primary text-white' : 'bg-primary/10 text-primary'}`}>
-                  <Icon className="h-5 w-5" aria-hidden />
-                </span>
-                <span className="font-bold">{f.name}</span>
-                {f.description && <span className="text-xs text-muted-foreground">{f.description}</span>}
+                <SubjectCover slug={FACULTY_COVER[f.slug] ?? null} shape="wide" rounded="rounded-none" className="aspect-[16/7] w-full" />
+                {active && (
+                  <span className="absolute right-2 top-2 flex h-7 w-7 items-center justify-center rounded-full bg-white text-primary shadow-sm">
+                    <Check className="h-4 w-4" aria-hidden />
+                  </span>
+                )}
+                <span className="px-4 font-bold">{f.name}</span>
+                {f.description && <span className="px-4 pb-4 text-xs text-muted-foreground">{f.description}</span>}
               </button>
             )
           })}

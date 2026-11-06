@@ -95,7 +95,10 @@ function LessonPage() {
         <div className="flex flex-col gap-2 rounded-2xl border bg-card p-4 sm:flex-row sm:items-center sm:justify-between">
           <Link
             to="/tutor"
-            search={{ ask: `I'm studying "${lesson.title}" (${topicData?.topic.name ?? subject?.name ?? 'WASSCE'}). Explain the main idea more simply, with one more example.` }}
+            search={{
+              ask: `I'm studying "${lesson.title}" (${topicData?.topic.name ?? subject?.name ?? 'WASSCE'}). Explain the main idea more simply, with one more example.`,
+              about: [subject?.name, topicData?.topic.name].filter(Boolean).join(' · ') || undefined,
+            }}
             className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-primary hover:underline"
           >
             <MessageCircleQuestion className="h-5 w-5" aria-hidden /> Ask the tutor about this lesson

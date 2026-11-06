@@ -1,6 +1,6 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
-import { useMemo } from 'react'
-import { ArrowLeft, ArrowRight } from 'lucide-react'
+import { useMemo, useState } from 'react'
+import { ArrowLeft, ArrowRight, Search } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { AccessGate } from '@/components/AccessGate'
 import { useAuth } from '@/lib/auth'
@@ -28,9 +28,10 @@ function SubjectPage() {
   const { user } = useAuth()
   const { data: subject } = useSubject(subjectId)
   const { data: papers, isLoading: papersLoading } = usePapers(subjectId)
-  const { summary } = useProgress(user?.id ?? null, subject ? [subject] : undefined)
+  const { summary, error: progressError } = useProgress(user?.id ?? null, subject ? [subject] : undefined)
   const sp = summary?.subjects[0]
   const { palette } = subjectTheme(subject?.slug)
+  const [q, setQ] = useState('')
 
   const best = useMemo(() => bestByPaper(sp?.attempts ?? []), [sp])
   const review = useMemo(
@@ -41,6 +42,12 @@ function SubjectPage() {
   const sets = useMemo(() => [...(papers ?? [])].sort((a, b) => Number(best.has(a.id)) - Number(best.has(b.id))), [papers, best])
 
   const started = !!sp && sp.done > 0
+  const needle = q.trim().toLowerCase()
+  const groups = !sp
+    ? []
+    : needle
+      ? sp.groups.map((g) => ({ ...g, topics: g.topics.filter((t) => t.topic.name.toLowerCase().includes(needle)) })).filter((g) => g.topics.length > 0)
+      : sp.groups
 
   return (
     <AccessGate>
@@ -92,8 +99,27 @@ function SubjectPage() {
         {/* TOPICS */}
         <section className="space-y-3" aria-labelledby="topics-title">
           <h2 id="topics-title" className="text-lg font-bold tracking-tight">Topics</h2>
-          {sp ? (
-            <TopicGroups groups={sp.groups} palette={palette} showDescription review={review} />
+          {sp && sp.topicsWithLessons > 8 && (
+            <label className="relative block">
+              <span className="sr-only">Find a {sp.subject.name} topic</span>
+              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" aria-hidden />
+              <input
+                type="search"
+                value={q}
+                onChange={(e) => setQ(e.target.value)}
+                placeholder="Find a topic"
+                className="h-11 w-full rounded-xl border border-input bg-card pl-9 pr-3 text-[15px] outline-none focus-visible:border-primary focus-visible:ring-2 focus-visible:ring-primary/30"
+              />
+            </label>
+          )}
+          {progressError ? (
+            <EmptyState title="We couldn't load this subject's topics" body="Check your connection and try again. Your progress is saved." />
+          ) : sp ? (
+            groups.length > 0 ? (
+              <TopicGroups groups={groups} palette={palette} showDescription review={review} />
+            ) : (
+              <p className="rounded-2xl border bg-card p-4 text-sm text-muted-foreground">No topic matches “{q}”.</p>
+            )
           ) : (
             <div className="space-y-2">{[0, 1, 2, 3].map((i) => <Skeleton key={i} className="h-16" />)}</div>
           )}

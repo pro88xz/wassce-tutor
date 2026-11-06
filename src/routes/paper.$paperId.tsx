@@ -13,6 +13,7 @@ import { useAuth } from '@/lib/auth'
 import { useCurriculum, type CurriculumTopic } from '@/lib/progress'
 import { paperKind, setName } from '@/lib/papers'
 import { MarkdownView } from '@/components/MarkdownView'
+import { ZoomableImage } from '@/components/ds/ZoomableImage'
 import { subjectTheme } from '@/lib/subject-theme'
 import { ProgressBar, percent } from '@/components/ds/Progress'
 import { EmptyState, Skeleton } from '@/components/ds/Primitives'
@@ -228,9 +229,7 @@ function PaperPage() {
                   <MarkdownView content={q.stem} />
                 </div>
 
-                {q.image_url && (
-                  <img src={q.image_url} alt={`Diagram for question ${i + 1}`} loading="lazy" className="mx-auto mt-4 block h-auto w-full max-w-sm rounded-xl border bg-white" />
-                )}
+                {q.image_url && <ZoomableImage src={q.image_url} alt={`Diagram for question ${i + 1}`} />}
 
                 <div className="mt-4 space-y-2" role={submitted ? undefined : 'radiogroup'} aria-label={`Answers for question ${i + 1}`}>
                   {q.options.map((o) => {
