@@ -33,7 +33,7 @@ export function PublicHeader() {
         <a href="/" aria-label="WASSCE Tutor home">
           <BrandMark compact wordmarkClassName="max-[359px]:sr-only" />
         </a>
-        <nav aria-label="Main" className="ml-4 hidden items-center gap-6 text-[15px] font-medium text-muted-foreground lg:flex">
+        <nav aria-label="Main" className="ml-4 hidden items-center gap-5 text-[15px] font-medium text-muted-foreground min-[880px]:flex">
           {NAV.map((n) => (
             <a key={n.href} href={n.href} className="hover:text-foreground">{n.label}</a>
           ))}
@@ -51,14 +51,14 @@ export function PublicHeader() {
             aria-expanded={open}
             aria-controls="public-menu"
             aria-label={open ? 'Close menu' : 'Open menu'}
-            className="-mr-2 flex h-11 w-11 items-center justify-center rounded-xl text-foreground hover:bg-muted lg:hidden"
+            className="-mr-2 flex h-11 w-11 items-center justify-center rounded-xl text-foreground hover:bg-muted min-[880px]:hidden"
           >
             {open ? <X className="h-5 w-5" aria-hidden /> : <Menu className="h-5 w-5" aria-hidden />}
           </button>
         </div>
       </div>
       {open && (
-        <nav id="public-menu" aria-label="Main" className="border-t bg-card px-4 pb-4 lg:hidden">
+        <nav id="public-menu" aria-label="Main" className="border-t bg-card px-4 pb-4 min-[880px]:hidden">
           <ul className="divide-y">
             {NAV.map((n) => (
               <li key={n.href}>

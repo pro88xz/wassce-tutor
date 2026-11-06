@@ -263,3 +263,17 @@ html.native-app [data-landing] { display: none; }
   to { opacity: 1; transform: none; }
 }
 .tour-in { animation: tour-in 0.28s cubic-bezier(0.2, 0.8, 0.2, 1); }
+
+/* Scroll reveal (see useReveal): only once JS has armed it, never for reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-armed [data-reveal] {
+    transition:
+      opacity 0.7s cubic-bezier(0.2, 0.8, 0.2, 1),
+      transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition-delay: calc(var(--reveal-delay, 0) * 1ms);
+  }
+  .reveal-armed [data-reveal]:not(.is-revealed) {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+}

@@ -67,7 +67,7 @@ function TutorsPage() {
               src={TUTOR_PHOTO.src}
               srcSet={`${TUTOR_PHOTO.small} 640w, ${TUTOR_PHOTO.src} 1280w`}
               sizes="(min-width: 768px) 480px, 100vw"
-              alt="A teacher helping a pupil with her work at a desk"
+              alt="A tutor and a student going through notes together"
               width={1280}
               height={853}
               fetchPriority="high"

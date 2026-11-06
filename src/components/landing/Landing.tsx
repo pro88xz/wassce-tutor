@@ -6,7 +6,9 @@
 // guide, plans, FAQ and a final call to action. Numbers come from the
 // database and the question-set manifest.
 import { Link } from '@tanstack/react-router'
-import { BookOpen, Check, ChevronRight, CircleCheck, Compass, Moon, School, Smartphone, UserRound, Users, Wallet } from 'lucide-react'
+import { useRef, type CSSProperties } from 'react'
+import { useReveal } from '@/components/ds/useReveal'
+import { ArrowRight, BookOpen, Check, ChevronRight, CircleCheck, Compass, Moon, Smartphone, UserRound, Wallet } from 'lucide-react'
 import type { LandingData } from '@/lib/public-content'
 import { topicPath } from '@/lib/public-content'
 import { SubjectCover, subjectArt } from '@/components/ds/SubjectCover'
@@ -19,10 +21,12 @@ import { DownloadButton } from '@/components/DownloadButton'
 import { TopicSearch } from '@/components/landing/TopicSearch'
 
 export function Landing({ data }: { data: LandingData }) {
+  const root = useRef<HTMLDivElement>(null)
+  useReveal(root)
   return (
     <>
       <Hero />
-      <div className="mx-auto max-w-5xl space-y-16 sm:space-y-24">
+      <div ref={root} className="mx-auto max-w-5xl space-y-16 sm:space-y-24">
         <TrustStrip data={data} />
         <SubjectShowcase subjects={data.subjects} />
         {data.popular.length > 0 && <PopularTopics data={data} />}
@@ -118,12 +122,14 @@ function PopularTopics({ data }: { data: LandingData }) {
         </a>
       </div>
       <SwipeRow label="Popular topics" count={data.popular.length} grid="sm:grid-cols-2 lg:grid-cols-4">
-        {data.popular.map((t) => {
+        {data.popular.map((t, i) => {
           const photo = topicPhoto(t.subjectSlug, t.topicSlug)
           return (
             <a
               key={`${t.subjectSlug}/${t.topicSlug}`}
               href={topicPath(t.subjectSlug, t.topicSlug)}
+              data-reveal
+              style={{ '--reveal-delay': (i % 4) * 80 } as CSSProperties}
               className="group flex w-[76%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border bg-card transition-colors hover:border-primary/40 sm:w-auto"
             >
               <span className="relative block aspect-[16/10] overflow-hidden bg-muted">
@@ -160,62 +166,108 @@ function PopularTopics({ data }: { data: LandingData }) {
   )
 }
 
-/** Full-width deep band: local fit, set apart from the white sections around it. */
+/** Full-width deep band: local fit, told with photographs rather than small icons. */
+const FEATURES = [
+  { img: 'feature-phone', icon: Smartphone, title: 'Built for your phone', body: 'Works in any phone browser and as an Android app, even on patchy data.' },
+  { img: 'feature-pay', icon: Wallet, title: 'Pay the local way', body: 'Orange Money or AfriMoney. No card and no bank account needed.' },
+  { img: 'feature-night', icon: Moon, title: 'Reading mode for late nights', body: 'A warm, low-glare theme for studying after dark.' },
+  { img: 'feature-syllabus', icon: BookOpen, title: 'Written to the WASSCE syllabus', body: 'Topics follow the syllabus, grouped the way you will study them.' },
+]
+
 function LocalBand() {
-  const items = [
-    { icon: Smartphone, title: 'Built for your phone', body: 'Works in any phone browser and as an Android app, even on patchy data.' },
-    { icon: Wallet, title: 'Pay the local way', body: 'Orange Money or AfriMoney. No card and no bank account needed.' },
-    { icon: Moon, title: 'Reading mode for late nights', body: 'A warm, low-glare theme for studying after dark.' },
-    { icon: BookOpen, title: 'Written to the WASSCE syllabus', body: 'Topics follow the syllabus, grouped the way you will study them.' },
-  ]
   return (
-    <section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen bg-brand-deep text-white">
-      <div className="mx-auto max-w-5xl px-6 py-12 sm:py-16">
-        <p className="text-sm font-semibold text-white/70">Made in Freetown</p>
-        <h2 className="mt-1 max-w-xl text-[1.75rem] font-bold leading-tight tracking-tight text-balance sm:text-3xl">Built for studying in Sierra Leone</h2>
-        <div className="mt-8 grid gap-x-8 gap-y-7 sm:grid-cols-2 lg:grid-cols-4">
-          {items.map(({ icon: Icon, title, body }) => (
-            <div key={title} className="space-y-2 border-t border-white/15 pt-4">
-              <Icon className="h-6 w-6 text-[#ffd166]" strokeWidth={1.8} aria-hidden />
-              <p className="font-semibold">{title}</p>
-              <p className="text-sm text-white/70">{body}</p>
-            </div>
-          ))}
+    <section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen overflow-hidden bg-brand-deep text-white" aria-labelledby="local-heading">
+      <div aria-hidden className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-primary/40 blur-3xl" />
+      <div className="relative mx-auto max-w-5xl px-4 py-14 sm:px-6 sm:py-20">
+        <div data-reveal className="max-w-xl space-y-2">
+          <p className="text-sm font-semibold text-[#ffd166]">Made in Freetown</p>
+          <h2 id="local-heading" className="text-[1.75rem] font-bold leading-tight tracking-tight text-balance sm:text-4xl">Built for studying in Sierra Leone</h2>
+          <p className="text-[15px] text-white/75">Made for the phones, payments and late nights of WASSCE students here.</p>
+        </div>
+        <div className="mt-8">
+          <SwipeRow label="Features" count={FEATURES.length} grid="sm:grid-cols-2 lg:grid-cols-4">
+            {FEATURES.map(({ img, icon: Icon, title, body }, i) => (
+              <div
+                key={title}
+                data-reveal
+                style={{ '--reveal-delay': i * 90 } as CSSProperties}
+                className="group relative aspect-[4/5] w-[72%] shrink-0 snap-start overflow-hidden rounded-2xl bg-black/30 ring-1 ring-white/10 sm:w-auto"
+              >
+                <img
+                  src={`/img/home/${img}-400.webp`}
+                  srcSet={`/img/home/${img}-400.webp 400w, /img/home/${img}.webp 800w`}
+                  sizes="(min-width: 1024px) 240px, (min-width: 640px) 50vw, 72vw"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  width={400}
+                  height={500}
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+                <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/0" />
+                <div className="absolute inset-x-0 bottom-0 space-y-2 p-5">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/15 ring-1 ring-white/25 backdrop-blur-md">
+                    <Icon className="h-5 w-5 text-[#ffd166]" aria-hidden />
+                  </span>
+                  <h3 className="text-lg font-bold leading-snug">{title}</h3>
+                  <p className="text-sm text-white/80">{body}</p>
+                </div>
+              </div>
+            ))}
+          </SwipeRow>
         </div>
       </div>
     </section>
   )
 }
 
+/** Who it's for: one photographed card per audience, each the right age for WASSCE. */
 function StartingPoint() {
   const paths = [
-    { icon: School, tone: 'bg-[#5b34d6]', title: "I'm in SSS3", body: 'Follow your faculty’s subjects topic by topic and track your progress to exam day.', href: '/auth' },
-    { icon: UserRound, tone: 'bg-[#0d8486]', title: "I'm a private candidate", body: 'Revise at your own pace with lessons, exam-style practice and the AI tutor.', href: '/auth' },
-    { icon: Users, tone: 'bg-[#b0610f]', title: "I'm a parent or teacher", body: 'See exactly what every WASSCE subject covers before your student signs up.', href: '/wassce/subjects' },
+    { img: 'persona-sss3', tag: 'SSS students', tone: 'bg-[#5b34d6]', title: "I'm in SSS1 to SSS3", body: 'Follow your faculty’s subjects topic by topic and track your progress to exam day.', cta: 'Start free', href: '/auth', alt: 'Secondary school students working in class' },
+    { img: 'persona-private', tag: 'Private candidates', tone: 'bg-[#0d8486]', title: "I'm a private candidate", body: 'Revise at your own pace with lessons, exam-style practice and the AI tutor.', cta: 'Start free', href: '/auth', alt: 'A young man studying alone at a desk' },
+    { img: 'persona-teacher', tag: 'Parents and teachers', tone: 'bg-[#b0610f]', title: "I'm a parent or teacher", body: 'See exactly what every WASSCE subject covers before your student signs up.', cta: 'Browse subjects', href: '/wassce/subjects', alt: 'A teacher leading a lesson at the whiteboard' },
   ]
   return (
-    <section className="grid items-center gap-6 md:grid-cols-[1fr_1.3fr] md:gap-12" aria-labelledby="who-heading">
-      <div className="space-y-2 text-center md:text-left">
+    <section className="space-y-6" aria-labelledby="who-heading">
+      <div data-reveal className="mx-auto max-w-2xl space-y-2 text-center">
         <p className="text-sm font-semibold text-primary">Who it's for</p>
         <h2 id="who-heading" className="text-[1.75rem] font-bold leading-tight tracking-tight text-balance sm:text-3xl">Made for everyone preparing for WASSCE</h2>
         <p className="text-[15px] text-muted-foreground">Start where you are. Your subjects and first lesson are set up in a minute.</p>
       </div>
-      <ul className="divide-y rounded-2xl border bg-card">
-        {paths.map(({ icon: Icon, tone, title, body, href }) => (
-          <li key={title}>
-            <a href={href} className="flex min-h-20 items-center gap-4 px-4 py-4 transition-colors hover:bg-muted/50 sm:px-5">
-              <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-white ${tone}`}>
-                <Icon className="h-5 w-5" aria-hidden />
+      <SwipeRow label="Audiences" count={paths.length} grid="sm:grid-cols-3">
+        {paths.map(({ img, tag, tone, title, body, cta, href, alt }, i) => (
+          <a
+            key={title}
+            href={href}
+            data-reveal
+            style={{ '--reveal-delay': i * 110 } as CSSProperties}
+            className="group flex w-[82%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border bg-card shadow-sm transition-shadow duration-300 hover:shadow-xl sm:w-auto"
+          >
+            <span className="relative block aspect-[4/3] overflow-hidden">
+              <img
+                src={`/img/home/${img}-480.webp`}
+                srcSet={`/img/home/${img}-480.webp 480w, /img/home/${img}.webp 960w`}
+                sizes="(min-width: 640px) 33vw, 82vw"
+                alt={alt}
+                loading="lazy"
+                decoding="async"
+                width={480}
+                height={360}
+                className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <span className={`absolute left-3 top-3 rounded-full px-3 py-1 text-xs font-semibold text-white shadow-md ${tone}`}>{tag}</span>
+            </span>
+            <span className="flex flex-1 flex-col gap-2 p-5">
+              <span className="text-xl font-bold leading-snug">{title}</span>
+              <span className="flex-1 text-[15px] text-muted-foreground">{body}</span>
+              <span className="mt-1 inline-flex items-center gap-1.5 font-semibold text-primary">
+                {cta} <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden />
               </span>
-              <span className="min-w-0 flex-1">
-                <span className="block font-bold">{title}</span>
-                <span className="block text-sm text-muted-foreground">{body}</span>
-              </span>
-              <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground" aria-hidden />
-            </a>
-          </li>
+            </span>
+          </a>
         ))}
-      </ul>
+      </SwipeRow>
     </section>
   )
 }
@@ -223,17 +275,22 @@ function StartingPoint() {
 /** Book a tutor: the human-tutor product, introduced with its photo. */
 function TutorTeaser() {
   return (
-    <section className="grid overflow-hidden rounded-2xl border bg-card md:grid-cols-2" aria-labelledby="tutor-teaser">
-      <img
-        src={TUTOR_PHOTO.small}
-        srcSet={`${TUTOR_PHOTO.small} 640w, ${TUTOR_PHOTO.src} 1280w`}
-        sizes="(min-width: 768px) 512px, 100vw"
-        alt=""
-        loading="lazy"
-        width={640}
-        height={427}
-        className="h-56 w-full object-cover sm:h-72 md:h-full"
-      />
+    <section data-reveal className="group grid overflow-hidden rounded-2xl border bg-card shadow-sm md:grid-cols-2" aria-labelledby="tutor-teaser">
+      <span className="relative block overflow-hidden">
+        <img
+          src={TUTOR_PHOTO.small}
+          srcSet={`${TUTOR_PHOTO.small} 640w, ${TUTOR_PHOTO.src} 1280w`}
+          sizes="(min-width: 768px) 512px, 100vw"
+          alt="A tutor and a student going through notes together"
+          loading="lazy"
+          width={640}
+          height={427}
+          className="h-60 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 sm:h-80 md:h-full"
+        />
+        <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-slate-900 shadow-lg">
+          <UserRound className="h-4 w-4 text-primary" aria-hidden /> Real teachers, not AI
+        </span>
+      </span>
       <div className="space-y-3 p-6 sm:p-8">
         <p className="text-sm font-semibold text-primary">Book a tutor</p>
         <h2 id="tutor-teaser" className="text-2xl font-bold leading-tight tracking-tight text-balance">Want a real teacher, one to one?</h2>
@@ -260,7 +317,7 @@ function GuideTeaser() {
   ]
   const tone = { credit: 'bg-success/15 text-success', pass: 'bg-warning/15 text-warning', fail: 'bg-muted text-muted-foreground' }
   return (
-    <section className="overflow-hidden rounded-2xl border bg-card md:grid md:grid-cols-2" aria-labelledby="guide-heading">
+    <section data-reveal className="overflow-hidden rounded-2xl border bg-card md:grid md:grid-cols-2" aria-labelledby="guide-heading">
       <div className="space-y-3 p-6 sm:p-8">
         <p className="inline-flex items-center gap-2 text-sm font-semibold text-primary"><Compass className="h-4 w-4" aria-hidden /> WASSCE guide</p>
         <h2 id="guide-heading" className="text-2xl font-bold leading-tight tracking-tight">New to WASSCE? Start with the guide</h2>
@@ -305,8 +362,8 @@ function Plans() {
     <section id="plans" className="scroll-mt-20 space-y-8">
       <SectionTitle eyebrow="Plans" title="One price, everything included" body="Every plan unlocks every subject, every practice set and the AI tutor. Start with 7 days free." />
       <div className="mx-auto grid max-w-4xl gap-3 sm:grid-cols-3">
-        {plans.map((p) => (
-          <div key={p.name} className={`flex flex-col rounded-2xl bg-card p-5 ${p.best ? 'border-2 border-primary' : 'border'}`}>
+        {plans.map((p, i) => (
+          <div key={p.name} data-reveal style={{ '--reveal-delay': i * 100 } as CSSProperties} className={`flex flex-col rounded-2xl bg-card p-5 transition-shadow hover:shadow-lg ${p.best ? 'border-2 border-primary' : 'border'}`}>
             <div className="flex h-6 items-center justify-between">
               <h3 className="font-semibold">{p.name}</h3>
               {p.best && <span className="rounded-full bg-brand-soft px-2.5 py-0.5 text-xs font-semibold text-primary">Lowest monthly cost</span>}

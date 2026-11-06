@@ -30,13 +30,13 @@ export type TutorRequest = {
 
 /** Photo for the tutor pages (credited on the About page with the subject photos). */
 export const TUTOR_PHOTO: { src: string; small: string; caption: string; credit: SubjectPhoto['credit'] } = {
-  src: '/img/tutors.webp',
-  small: '/img/tutors-640.webp',
-  caption: 'A teacher helping pupils with their work',
+  src: '/img/tutors-session.webp',
+  small: '/img/tutors-session-640.webp',
+  caption: 'Two students going through their notes together',
   credit: {
-    creator: 'Katerina Holmes',
+    creator: 'Monstera Production',
     source: 'Pexels',
-    sourceUrl: 'https://www.pexels.com/photo/black-teacher-standing-near-desk-and-pointing-at-pupils-copybook-5905478/',
+    sourceUrl: 'https://www.pexels.com/photo/6238003/',
     license: 'Pexels License',
     licenseUrl: 'https://www.pexels.com/license/',
   },
