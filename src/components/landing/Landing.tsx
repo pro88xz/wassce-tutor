@@ -8,8 +8,9 @@
 import { Link } from '@tanstack/react-router'
 import { BookOpen, Check, ChevronRight, CircleCheck, Compass, Moon, School, Smartphone, UserRound, Users, Wallet } from 'lucide-react'
 import type { LandingData } from '@/lib/public-content'
-import { subjectPath, topicPath } from '@/lib/public-content'
-import { SubjectCover } from '@/components/ds/SubjectCover'
+import { topicPath } from '@/lib/public-content'
+import { SubjectCover, subjectArt } from '@/components/ds/SubjectCover'
+import { topicPhoto } from '@/lib/topic-photos'
 import { SubjectShowcase } from '@/components/landing/SubjectShowcase'
 import { SwipeRow } from '@/components/ds/SwipeRow'
 import { TUTOR_PHOTO } from '@/lib/tutors'
@@ -99,17 +100,12 @@ function SectionTitle({ eyebrow, title, body }: { eyebrow: string; title: string
 }
 
 /**
- * Popular topics grouped by subject (as Coursera groups trending courses):
- * each subject's photo once, with its most-studied topics listed beneath
- * in readable rows.
+ * Popular topics as topic cards. Each card shows a photograph of the topic
+ * itself (topic-photos.ts), not the subject photo, so topic discovery never
+ * repeats the subject cards above; a small subject label in the subject's
+ * colour keeps the link to the subject.
  */
 function PopularTopics({ data }: { data: LandingData }) {
-  const groups = new Map<string, { name: string; topics: LandingData['popular'] }>()
-  for (const t of data.popular) {
-    if (!groups.has(t.subjectSlug)) groups.set(t.subjectSlug, { name: t.subjectName, topics: [] })
-    groups.get(t.subjectSlug)!.topics.push(t)
-  }
-  const list = [...groups.entries()].slice(0, 6)
   return (
     <section className="space-y-5" aria-labelledby="popular-heading">
       <div className="flex items-end justify-between gap-3">
@@ -121,32 +117,44 @@ function PopularTopics({ data }: { data: LandingData }) {
           All subjects <ChevronRight className="h-4 w-4" aria-hidden />
         </a>
       </div>
-      <SwipeRow label="Popular topics" count={list.length} grid="sm:grid-cols-2 lg:grid-cols-3">
-        {list.map(([slug, g]) => (
-          <div key={slug} className="flex w-[82%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border bg-card sm:w-auto">
-            <a href={subjectPath(slug)} className="relative block">
-              <SubjectCover slug={slug} shape="wide" rounded="rounded-none" className="aspect-[16/7] w-full" />
-              <span className="absolute inset-0 flex items-end bg-gradient-to-t from-black/65 via-black/15 to-transparent p-4">
-                <span className="inline-flex items-center gap-1 text-lg font-bold text-white">
-                  {g.name} <ChevronRight className="h-4 w-4" aria-hidden />
+      <SwipeRow label="Popular topics" count={data.popular.length} grid="sm:grid-cols-2 lg:grid-cols-4">
+        {data.popular.map((t) => {
+          const photo = topicPhoto(t.subjectSlug, t.topicSlug)
+          return (
+            <a
+              key={`${t.subjectSlug}/${t.topicSlug}`}
+              href={topicPath(t.subjectSlug, t.topicSlug)}
+              className="group flex w-[76%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border bg-card transition-colors hover:border-primary/40 sm:w-auto"
+            >
+              <span className="relative block aspect-[16/10] overflow-hidden bg-muted">
+                {photo ? (
+                  <img
+                    src={photo.small}
+                    srcSet={`${photo.small} 480w, ${photo.src} 960w`}
+                    sizes="(min-width: 1024px) 240px, (min-width: 640px) 50vw, 76vw"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    width={480}
+                    height={300}
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                    style={{ objectPosition: photo.position ?? 'center' }}
+                  />
+                ) : (
+                  <SubjectCover slug={t.subjectSlug} shape="wide" rounded="rounded-none" className="h-full w-full" />
+                )}
+                <span className="absolute left-2.5 top-2.5 inline-flex items-center gap-1.5 rounded-full bg-white/95 px-2.5 py-1 text-xs font-semibold text-slate-900 shadow-sm">
+                  <span className="h-2 w-2 rounded-full" style={{ backgroundColor: subjectArt(t.subjectSlug).bg }} aria-hidden />
+                  {t.subjectName}
                 </span>
               </span>
+              <span className="flex flex-1 flex-col gap-1 p-4">
+                <span className="text-base font-bold leading-snug">{t.topicName}</span>
+                <span className="mt-auto pt-1 text-[13px] text-muted-foreground">{t.lessons} lessons</span>
+              </span>
             </a>
-            <ul className="divide-y">
-              {g.topics.map((t) => (
-                <li key={t.topicSlug}>
-                  <a href={topicPath(t.subjectSlug, t.topicSlug)} className="flex min-h-16 items-center gap-3 px-4 py-3 transition-colors hover:bg-muted/50">
-                    <span className="min-w-0 flex-1">
-                      <span className="block text-[15px] font-semibold leading-snug">{t.topicName}</span>
-                      <span className="mt-0.5 block text-[13px] text-muted-foreground">{t.lessons} lessons</span>
-                    </span>
-                    <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground" aria-hidden />
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+          )
+        })}
       </SwipeRow>
     </section>
   )

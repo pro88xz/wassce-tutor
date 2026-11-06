@@ -68,12 +68,12 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
     credit: { creator: 'RF._.studio', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/focused-african-american-researcher-conducting-biochemical-experiment-in-clinic-3825434/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
   },
   'physics': {
-    src: '/img/subjects/physics.webp',
-    small: '/img/subjects/physics-640.webp',
-    position: '50% 45%',
+    src: '/img/subjects/physics-circuit.webp',
+    small: '/img/subjects/physics-circuit-640.webp',
+    position: '72% 40%',
     subject: 'Physics',
-    caption: 'A student with laboratory apparatus',
-    credit: { creator: 'cottonbro studio', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/a-high-school-student-in-white-top-looking-at-camera-6208713/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
+    caption: 'A student soldering an electrical circuit',
+    credit: { creator: 'ThisIsEngineering', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/woman-soldering-pcb-in-school-19895844/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
   },
   'agricultural-science': {
     src: '/img/subjects/agricultural-science.webp',

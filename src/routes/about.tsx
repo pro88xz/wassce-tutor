@@ -3,6 +3,7 @@ import { Check, Mail, MapPin } from 'lucide-react'
 import { SubjectCover } from '@/components/ds/SubjectCover'
 import { SUBJECT_PHOTOS } from '@/lib/subject-photos'
 import { TUTOR_PHOTO } from '@/lib/tutors'
+import { TOPIC_PHOTOS } from '@/lib/topic-photos'
 import { publicHead } from '@/lib/seo'
 import { fetchLandingData } from '@/lib/public-content'
 
@@ -18,6 +19,9 @@ export const Route = createFileRoute('/about')({
 const PHOTO_CREDITS = [
   ...Object.entries(SUBJECT_PHOTOS).sort((a, b) => a[1].subject.localeCompare(b[1].subject)),
   ['tutors', { subject: 'Book a tutor', caption: TUTOR_PHOTO.caption, credit: TUTOR_PHOTO.credit }] as const,
+  ...Object.entries(TOPIC_PHOTOS)
+    .sort((a, b) => a[1].topic.localeCompare(b[1].topic))
+    .map(([key, p]) => [key, { subject: `${p.topic} (topic)`, caption: p.caption, credit: p.credit }] as const),
 ]
 
 const COVER_ROW = ['english-language', 'mathematics', 'biology', 'chemistry', 'government', 'economics']

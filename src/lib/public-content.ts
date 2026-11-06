@@ -4,6 +4,7 @@
 // lesson content). Runs at build time (prerendering) and in the browser.
 import { supabase } from '@/lib/supabase'
 import { hasSubjectPage, hasTopicPageByCount, subjectPath, topicPath } from '@/lib/public-rules'
+import { topicPhoto } from '@/lib/topic-photos'
 
 export { hasSubjectPage, lessonPath, subjectPath, topicPath } from '@/lib/public-rules'
 
@@ -284,22 +285,24 @@ export async function fetchLandingData(): Promise<LandingData> {
   const subjects = await fetchSubjectSummaries()
   const topics = await loadTopics(subjects.map((s) => s.id))
   const bySubject = new Map(subjects.map((s) => [s.id, s]))
-  // The topics with the most lessons, at most two per subject so the list
-  // shows the range of subjects rather than one subject's syllabus.
-  const perSubject = new Map<string, number>()
-  const popular = topics
-    .filter(hasTopicPage)
-    .sort((a, b) => b.lessons.length - a.lessons.length || a.name.localeCompare(b.name))
-    .filter((t) => {
-      const n = perSubject.get(t.subject_id) ?? 0
-      perSubject.set(t.subject_id, n + 1)
-      return n < 2
-    })
-    .slice(0, 10)
-    .map((t) => {
-      const s = bySubject.get(t.subject_id)!
-      return { subjectSlug: s.slug, subjectName: s.name, topicSlug: t.slug, topicName: t.name, lessons: t.lessons.length }
-    })
+  // Popular topics: each subject's most-studied topic first, then each
+  // subject's second, so the list spans the syllabus rather than one subject.
+  // Within a subject: most lessons first; ties go to topics with a photo.
+  const rank = (t: TopicWithLessons) => [-t.lessons.length, topicPhoto(bySubject.get(t.subject_id)!.slug, t.slug) ? 0 : 1, t.name] as const
+  const cmp = (x: TopicWithLessons, y: TopicWithLessons) => {
+    const [a1, a2, a3] = rank(x)
+    const [b1, b2, b3] = rank(y)
+    return a1 - b1 || a2 - b2 || a3.localeCompare(b3)
+  }
+  const lists = [...topics.filter(hasTopicPage).reduce((m, t) => m.set(t.subject_id, [...(m.get(t.subject_id) ?? []), t]), new Map<string, TopicWithLessons[]>()).values()]
+    .map((l) => l.sort(cmp))
+    .sort((x, y) => cmp(x[0], y[0]))
+  const picked: TopicWithLessons[] = []
+  for (let round = 0; round < 2 && picked.length < 8; round++) for (const l of lists) if (l[round] && picked.length < 8) picked.push(l[round])
+  const popular = picked.map((t) => {
+    const s = bySubject.get(t.subject_id)!
+    return { subjectSlug: s.slug, subjectName: s.name, topicSlug: t.slug, topicName: t.name, lessons: t.lessons.length }
+  })
   return {
     subjects,
     totals: {
