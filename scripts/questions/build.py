@@ -65,6 +65,14 @@ SETS = [
         "review": ROOT / "content/questions/mathematics/set3_p1.review.md",
         "sort_from": 120,
     },
+    {
+        "module": ROOT / "content/questions/mathematics/set4_p1.py",
+        "subject_slug": "mathematics",
+        "name": "maths_set4_p1",
+        "label": "Mathematics: set 4 (number and algebra)",
+        "review": ROOT / "content/questions/mathematics/set4_p1.review.md",
+        "sort_from": 130,
+    },
 ]
 
 OUT = ROOT / "src/content/question-sets"

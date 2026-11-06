@@ -125,11 +125,22 @@ Inequalities.
   same data the answers are worked out from. The curve joins the plotted
   points with straight lines, so the median read from it is exact.
 
-With sets 1-3, all 30 of the most-examined Paper 1 topics have a practice
-set. Next: the remaining smaller topics (fractions and approximation,
-algebraic expressions and fractions, linear equations, graphs, functions,
-logical reasoning, similar figures, loci, coordinate geometry), then
-Paper 2-style questions with mark schemes.
+## Set 4: 50 questions on number and algebra
+
+`set4_p1.py` covers Fractions/Decimals/Approximations, Integers and Rational
+Numbers, Logical Reasoning, Algebraic Expressions, Operations on Algebraic
+Expressions, Linear Equations, Graphs of Linear and Quadratic Functions,
+Algebraic Fractions, Functions and Relations, and Coordinate Geometry. Fraction
+work (2019 Q13), substitution and factorisation (2019 Q2, Q6), fractional and
+simultaneous equations (2018 Q6, 2019 Q3), graphs (2018 Q7) and functions
+(2019 Q13) come from the Sierra Leone papers; logical reasoning, algebraic
+fractions and coordinate geometry from the government handbooks. One graph,
+used by three questions, is drawn from the same function the answers use.
+
+With sets 1-4, 40 of the 46 Mathematics topics have a practice Still to do: similar and congruent figures, loci, construction, financial
+arithmetic, and (lowest priority for Sierra Leone) differentiation and
+integration; then more questions per topic and Paper 2-style questions with
+mark schemes.
 
 ## Sources
 

@@ -155,10 +155,10 @@ $= 16 + 0 + 4 + 2 + 1 = 23$
 
 Convert $75_{\text{ten}}$ to a number in base three.
 
-- **A.** $2210_{\text{three}}$  ✅
-- **B.** $0122_{\text{three}}$
-- **C.** $210_{\text{three}}$
-- **D.** $2112_{\text{three}}$
+- **A.** $0122_{\text{three}}$
+- **B.** $210_{\text{three}}$
+- **C.** $2112_{\text{three}}$
+- **D.** $2210_{\text{three}}$  ✅
 
 Divide by 3 repeatedly and keep the remainders:
 
@@ -186,10 +186,10 @@ Check: $2 \times 27 + 2 \times 9 + 1 \times 3 + 0 = 75$. ✓
 
 Evaluate $243_{\text{five}} + 134_{\text{five}}$, leaving your answer in base five.
 
-- **A.** $322_{\text{five}}$
-- **B.** $332_{\text{five}}$
-- **C.** $422_{\text{five}}$
-- **D.** $432_{\text{five}}$  ✅
+- **A.** $432_{\text{five}}$  ✅
+- **B.** $322_{\text{five}}$
+- **C.** $332_{\text{five}}$
+- **D.** $422_{\text{five}}$
 
 Add column by column, carrying fives:
 
@@ -215,10 +215,10 @@ Check in base ten: $243_{\text{five}} = 73$, $134_{\text{five}} = 44$, $73 + 44 
 
 If $123_{x} = 38_{\text{ten}}$, find the value of $x$.
 
-- **A.** $5$  ✅
-- **B.** $-7$
-- **C.** $7$
-- **D.** $5$ or $-7$
+- **A.** $-7$
+- **B.** $7$
+- **C.** $5$ or $-7$
+- **D.** $5$  ✅
 
 $123_{x} = 1 \times x^{2} + 2 \times x + 3$
 
@@ -242,10 +242,10 @@ Check: $1 \times 25 + 2 \times 5 + 3 = 38$. ✓
 
 Evaluate $23_{\text{four}} \times 3_{\text{four}}$, leaving your answer in base four.
 
-- **A.** $33_{\text{four}}$
-- **B.** $102_{\text{four}}$
-- **C.** $121_{\text{four}}$
-- **D.** $201_{\text{four}}$  ✅
+- **A.** $201_{\text{four}}$  ✅
+- **B.** $33_{\text{four}}$
+- **C.** $102_{\text{four}}$
+- **D.** $121_{\text{four}}$
 
 Units: $3 \times 3 = 9 = 2 \times 4 + 1$. Write 1, carry 2.
 

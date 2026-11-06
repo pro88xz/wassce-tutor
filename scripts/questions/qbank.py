@@ -97,9 +97,11 @@ def same(a: Any, b: Any) -> bool:
 def is_number(v: Any) -> bool:
     if isinstance(v, Rounded):
         return True
+    if isinstance(v, (str, tuple, set, frozenset)):
+        return False
     try:
         e = S(v)
-        return bool(e.is_number) and bool(e.is_real)
+        return bool(getattr(e, "is_number", False)) and bool(getattr(e, "is_real", False))
     except (sp.SympifyError, TypeError):
         return False
 
@@ -137,8 +139,11 @@ def _number_forms(v: Any) -> list[str]:
     else:
         sign = "-" if r < 0 else ""
         forms.append(f"{sign}\\frac{{{abs(r.p)}}}{{{r.q}}}")
+        whole, rest = divmod(abs(r.p), r.q)
+        if whole:  # mixed numbers, e.g. 1\frac{5}{12}
+            forms.append(f"{sign}{whole}\\frac{{{rest}}}{{{r.q}}}")
         dec = float(r)
-        for dp in range(1, 5):
+        for dp in range(1, 9):
             if abs(round(dec, dp) - dec) < 1e-12:
                 forms.append(f"{dec:.{dp}f}")
                 break
@@ -153,10 +158,14 @@ def _parse_math(tex: str):
     except ImportError:
         return None
     m = re.sub(r"\s+(m|g|cm)$", "", tex.strip()).replace("$", "").strip()
-    if re.search(r"=\s*0$", m):
+    if "\\to" in m:  # mappings: x \to 3x + 2
+        m = m.split("\\to", 1)[1]
+    elif re.search(r"=\s*0$", m):
         m = re.sub(r"=\s*0$", "", m)
     elif re.match(r"^[A-Za-z]\s*=", m):
         m = m.split("=", 1)[1]
+    # A single letter before "(" is multiplication, not a function: x(6y - 9) = x * (6y - 9).
+    m = re.sub(r"(?<![\\a-zA-Z])([a-zA-Z])\(", r"\1\\cdot(", m)
     try:
         return parse_latex(m)
     except Exception:  # noqa: BLE001 - parser raises several types
@@ -195,10 +204,14 @@ def tex_shows(tex: str, value: Any) -> bool | None:
     if isinstance(value, sp.Set):
         shown = _interval_from_tex(tex)
         return None if shown is None else shown == value
+    if isinstance(value, str) and "=" in value:  # equations such as x=1
+        return t.replace(" ", "") == value.replace(" ", "")
     if isinstance(value, str):
         if value.isdigit():
             return f"{value}_{{" in t  # base-n numbers, e.g. 2210_{three}
-        return value in tex if value.replace(" ", "").isalpha() else None  # words, e.g. Sunday
+        if re.fullmatch(r"[A-Za-z][A-Za-z ,'\-]*", value):  # words, e.g. Sunday, many-to-one
+            return value in tex.replace("$", "")
+        return None
     if isinstance(value, tuple):  # column vectors: the numbers must appear in order
         shown = re.findall(r"-?\d+(?:\.\d+)?", t)
         want = []
@@ -207,7 +220,12 @@ def tex_shows(tex: str, value: Any) -> bool | None:
                 want.append(f"{v.value:.{v.dp}f}" if v.dp is not None else None)
             else:
                 r = sp.Rational(v)
-                want.append(str(r.p) if r.q == 1 else None)
+                if r.q == 1:
+                    want.append(str(r.p))
+                else:
+                    dec = float(r)
+                    dp = next((d for d in range(1, 9) if abs(round(dec, d) - dec) < 1e-12), None)
+                    want.append(f"{dec:.{dp}f}" if dp else None)
         return None if None in want else shown == want
     if isinstance(value, (set, frozenset)) and value and all(isinstance(v, str) for v in value):
         return set(re.findall(r"(?<![\\A-Za-z])[a-z](?![A-Za-z])", t)) == set(value)
@@ -234,6 +252,10 @@ def tex_shows(tex: str, value: Any) -> bool | None:
         target = t if "\\frac" in form else no_fracs
         if re.search(r"(?<![\d.\-])" + re.escape(form) + r"(?![\d.}])", target):
             return True
+    if not isinstance(value, Rounded) and "\\" in tex:  # e.g. \sqrt{9} shown for 3
+        parsed = _parse_math(tex)
+        if parsed is not None and parsed.is_number:
+            return sp.simplify(parsed - S(value)) == 0
     return False
 
 

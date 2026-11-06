@@ -3,7 +3,7 @@
   "name": "maths_pilot_p1",
   "label": "Mathematics: set 1",
   "subject_slug": "mathematics",
-  "version": "95d8e0d155a9",
+  "version": "1c595e7ac62d",
   "papers": [
    "e831c841-7a62-5cba-80ea-8956986769c3",
    "87261da3-18f7-565f-a8ba-1dd811054d79",
@@ -53,6 +53,25 @@
    "31e0b0db-af28-5075-8d3a-47be8b6d8ec2",
    "1fdd28da-6dc2-5ceb-8fb9-216a50ae91cf",
    "10ebb4a9-ad2a-547d-9af5-6e59de8828de"
+  ],
+  "questions": 50
+ },
+ {
+  "name": "maths_set4_p1",
+  "label": "Mathematics: set 4 (number and algebra)",
+  "subject_slug": "mathematics",
+  "version": "f9127b186570",
+  "papers": [
+   "b5e73ad3-e1cb-591c-b7ee-f7d5feb01068",
+   "46178f13-4726-56dc-86f3-c27d415ecfac",
+   "1b70f959-9ac3-5fd8-ba7f-cade4257b223",
+   "23b46b8e-5da3-560f-91d5-3d63ab83c641",
+   "8c706e0c-c506-5df9-9b44-9641d82fc7d9",
+   "4336220e-cf43-5ac2-ac1c-a313fe619693",
+   "608e274e-cf63-5eed-bba7-6c10926d9e1d",
+   "5368dc85-8d1a-55b3-af31-5329971f7550",
+   "3b0bdcd8-5559-53bf-81ef-5dbafcb363d8",
+   "671cf028-136a-514d-a743-7159e8478c2f"
   ],
   "questions": 50
  }

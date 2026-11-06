@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 437" width="320" height="437" role="img">
+  <title>Graph of y = x squared minus 2x minus 3, for x from −2 to 4.</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <line x1="65.8" y1="384.2" x2="65.8" y2="59.3" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="98.2" y1="384.2" x2="98.2" y2="59.3" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="130.8" y1="384.2" x2="130.8" y2="59.3" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="163.2" y1="384.2" x2="163.2" y2="59.3" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="195.8" y1="384.2" x2="195.8" y2="59.3" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="228.2" y1="384.2" x2="228.2" y2="59.3" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="260.8" y1="384.2" x2="260.8" y2="59.3" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="65.8" y1="384.2" x2="260.8" y2="384.2" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="65.8" y1="351.8" x2="260.8" y2="351.8" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="65.8" y1="319.2" x2="260.8" y2="319.2" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="65.8" y1="286.8" x2="260.8" y2="286.8" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="65.8" y1="254.2" x2="260.8" y2="254.2" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="65.8" y1="221.8" x2="260.8" y2="221.8" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="65.8" y1="189.2" x2="260.8" y2="189.2" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="65.8" y1="156.8" x2="260.8" y2="156.8" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="65.8" y1="124.3" x2="260.8" y2="124.3" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="65.8" y1="91.8" x2="260.8" y2="91.8" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="65.8" y1="59.3" x2="260.8" y2="59.3" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+  <line x1="49.5" y1="221.8" x2="277.0" y2="221.8" stroke="#111827" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M268.9,225.7 L277.0,221.8 L268.9,217.8" fill="none" stroke="#111827" stroke-width="1.6"/>
+  <line x1="130.8" y1="397.2" x2="130.8" y2="43.0" stroke="#111827" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M134.7,51.1 L130.8,43.0 L126.8,51.1" fill="none" stroke="#111827" stroke-width="1.6"/>
+  <text x="57.8" y="233.8" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="middle" dominant-baseline="central">-2</text>
+  <text x="90.2" y="233.8" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="middle" dominant-baseline="central">-1</text>
+  <text x="170.2" y="233.8" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="middle" dominant-baseline="central">1</text>
+  <text x="202.8" y="233.8" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="middle" dominant-baseline="central">2</text>
+  <text x="235.2" y="233.8" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="middle" dominant-baseline="central">3</text>
+  <text x="267.8" y="233.8" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="middle" dominant-baseline="central">4</text>
+  <text x="58.8" y="384.2" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="end" dominant-baseline="central">-5</text>
+  <text x="58.8" y="351.8" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="end" dominant-baseline="central">-4</text>
+  <text x="58.8" y="319.2" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="end" dominant-baseline="central">-3</text>
+  <text x="58.8" y="286.8" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="end" dominant-baseline="central">-2</text>
+  <text x="58.8" y="254.2" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="end" dominant-baseline="central">-1</text>
+  <text x="58.8" y="221.8" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="end" dominant-baseline="central">0</text>
+  <text x="58.8" y="189.2" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="end" dominant-baseline="central">1</text>
+  <text x="58.8" y="156.8" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="end" dominant-baseline="central">2</text>
+  <text x="58.8" y="124.3" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="end" dominant-baseline="central">3</text>
+  <text x="58.8" y="91.8" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="end" dominant-baseline="central">4</text>
+  <text x="58.8" y="59.3" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#6b7280" text-anchor="end" dominant-baseline="central">5</text>
+  <text x="285.0" y="211.8" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">x</text>
+  <text x="142.8" y="45.0" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">y</text>
+  <polyline points="65.8,59.3 67.4,68.9 69.0,78.4 70.6,87.8 72.2,97.0 73.9,106.0 75.5,114.8 77.1,123.5 78.8,132.0 80.4,140.4 82.0,148.6 83.6,156.7 85.2,164.6 86.9,172.3 88.5,179.8 90.1,187.2 91.8,194.5 93.4,201.5 95.0,208.4 96.6,215.2 98.2,221.8 99.9,228.2 101.5,234.4 103.1,240.5 104.8,246.5 106.4,252.2 108.0,257.8 109.6,263.3 111.2,268.5 112.9,273.7 114.5,278.6 116.1,283.4 117.8,288.1 119.4,292.5 121.0,296.8 122.6,301.0 124.3,305.0 125.9,308.8 127.5,312.4 129.1,315.9 130.8,319.2 132.4,322.4 134.0,325.4 135.6,328.3 137.2,331.0 138.9,333.5 140.5,335.8 142.1,338.0 143.8,340.0 145.4,341.9 147.0,343.6 148.6,345.2 150.2,346.6 151.9,347.8 153.5,348.8 155.1,349.7 156.8,350.4 158.4,351.0 160.0,351.4 161.6,351.7 163.2,351.8 164.9,351.7 166.5,351.4 168.1,351.0 169.8,350.4 171.4,349.7 173.0,348.8 174.6,347.8 176.2,346.6 177.9,345.2 179.5,343.6 181.1,341.9 182.8,340.0 184.4,338.0 186.0,335.8 187.6,333.5 189.2,331.0 190.9,328.3 192.5,325.4 194.1,322.4 195.8,319.2 197.4,315.9 199.0,312.4 200.6,308.8 202.3,305.0 203.9,301.0 205.5,296.8 207.1,292.5 208.8,288.1 210.4,283.4 212.0,278.6 213.6,273.7 215.2,268.6 216.9,263.3 218.5,257.8 220.1,252.2 221.8,246.5 223.4,240.5 225.0,234.4 226.6,228.2 228.2,221.8 229.9,215.2 231.5,208.4 233.1,201.5 234.8,194.4 236.4,187.2 238.0,179.8 239.6,172.3 241.2,164.5 242.9,156.7 244.5,148.6 246.1,140.4 247.7,132.1 249.4,123.5 251.0,114.8 252.6,106.0 254.2,97.0 255.9,87.8 257.5,78.4 259.1,68.9 260.8,59.3" fill="none" stroke="#1d4ed8" stroke-width="2.2" stroke-linejoin="round"/>
+  <text x="187.6" y="82.0" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" font-weight="normal" fill="#1d4ed8" text-anchor="middle" dominant-baseline="central">y = x² − 2x − 3</text>
+</svg>
