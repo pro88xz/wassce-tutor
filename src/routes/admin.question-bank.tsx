@@ -39,9 +39,9 @@ function AdminQuestionBank() {
       </div>
 
       <p className="text-sm text-muted-foreground">
-        Each set adds one practice paper per topic, with every answer already checked. Tap <b>Load</b> and the questions
-        go live for students straight away. Loading a set again updates the same questions; it never adds copies.
-        Hide a set any time in Admin → Review.
+        Each set adds one practice paper per topic, with every answer already checked. New and corrected sets are loaded
+        automatically on every deploy, and go live for students straight away. Use <b>Load</b> only if a set shows as not
+        loaded. Loading again updates the same questions; it never adds copies. Hide a set any time in Admin → Review.
       </p>
 
       <ul className="space-y-3">

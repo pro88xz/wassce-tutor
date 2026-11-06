@@ -37,10 +37,16 @@ Admin → Review lessons and questions.
 
 Practice question sets are not loaded with SQL. They are built and checked by
 `scripts/questions/build.py` (from `content/questions/`) into
-`src/content/question-sets/`, ship with the app, and an admin loads them with
-one tap in Admin → Load question sets. They are live for students straight
-away; Admin → Review can hide or show any set. Loading again updates the same
-rows (fixed ids), so it never adds copies.
+`src/content/question-sets/`. Every production deploy then runs
+`scripts/sync-questions.mjs`, which writes new or changed rows to the database,
+so they go live with no button to press. It needs the `SUPABASE_SECRET_KEY`
+environment variable in Vercel (Production only; never prefix it with `VITE_`,
+which would put it in the browser bundle). Without it the sync is skipped and
+Admin → Load question sets does the same job by hand.
+
+Sets are live for students as soon as they are loaded; Admin → Review can hide
+or show any set, and a hidden set stays hidden on later deploys. Rows have fixed
+ids, so loading again never adds copies.
 
 ## Edge functions
 

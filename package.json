@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && node scripts/postbuild.mjs && tsc -b",
+    "build": "vite build && node scripts/postbuild.mjs && tsc -b && node scripts/sync-questions.mjs",
     "sync:android": "npx cap sync android && rm -f android/app/src/main/assets/public/wassce-tutor.apk",
     "apk": "npm run build && npm run sync:android && cd android && ./gradlew assembleRelease && cd ..",
     "apk:publish": "node scripts/publish-apk.mjs",

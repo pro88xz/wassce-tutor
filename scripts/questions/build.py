@@ -11,9 +11,10 @@ files are written.
 Output
   src/content/question-sets/<set>.json
       the set as the app stores it: one practice paper per topic, with
-      questions and options. An admin loads it into the database with one tap
-      in Admin -> Load question sets (no SQL to paste). Rows have fixed ids,
-      so loading again updates the same rows instead of adding copies.
+      questions and options. Every production deploy loads new or changed
+      rows into the database (scripts/sync-questions.mjs), so they go live
+      with no button to press; Admin -> Load question sets is the manual
+      fallback. Rows have fixed ids, so loading again never adds copies.
   src/content/question-sets/manifest.json
       the list of sets the loader shows.
   public/questions/<subject>/<question>.svg
