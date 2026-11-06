@@ -30,12 +30,7 @@ function assertPublicHttpsUrl(value, label) {
 export function validateSource(source, index = 0) {
   const label = source.id || 'source ' + (index + 1)
   if (!/^[a-z0-9][a-z0-9-]{1,79}$/.test(source.id || '')) fail(label + ': id must be a stable lowercase slug')
-  let url
-  try { url = new URL(source.url) } catch { fail(label + ': invalid source URL') }
-  if (url.protocol !== 'https:') fail(label + ': only HTTPS sources are accepted')
-  if (url.username || url.password) fail(label + ': credential-bearing URLs are forbidden')
-  const host = url.hostname.toLowerCase()
-  if (host === 'localhost' || host.endsWith('.localhost') || host.endsWith('.local') || /^(127\.|10\.|192\.168\.|169\.254\.|0\.)/.test(host) || /^172\.(1[6-9]|2\d|3[01])\./.test(host) || host === '::1' || host.startsWith('fc') || host.startsWith('fd')) fail(label + ': private or local network hosts are forbidden')
+  const url = assertPublicHttpsUrl(source.url, label)
   if (!source.title?.trim() || !source.subject?.trim() || !source.topic?.trim()) fail(label + ': title, subject and topic are required')
   if (!ALLOWED.has(source.license)) fail(label + ': licence is not approved for extraction')
   if (source.rights_verified !== true || !source.rights_holder?.trim() || !source.attribution?.trim() || !source.license_evidence?.trim()) fail(label + ': verified rights holder, attribution and licence evidence are mandatory')
@@ -62,13 +57,21 @@ async function acquire(source, index) {
   const controller = new AbortController()
   const timer = setTimeout(() => controller.abort(), TIMEOUT_MS)
   try {
-    const response = await fetch(item.url, {
-      signal: controller.signal,
-      redirect: 'manual',
-      headers: { 'user-agent': 'WASSCE-Tutor-ResearchBot/1.0 (+https://wasscetutor.com; rights-respecting educational source capture)', accept: 'text/html, text/plain;q=0.9' },
-    })
+    let current = item.url
+    let response
+    for (let hop = 0; hop <= 5; hop++) {
+      assertPublicHttpsUrl(current, item.id)
+      response = await fetch(current, {
+        signal: controller.signal,
+        redirect: 'manual',
+        headers: { 'user-agent': 'WASSCE-Tutor-ResearchBot/1.0 (+https://wasscetutor.com; rights-respecting educational source capture)', accept: 'text/html, text/plain;q=0.9' },
+      })
+      if (![301, 302, 303, 307, 308].includes(response.status)) break
+      const location = response.headers.get('location')
+      if (!location || hop === 5) fail(item.id + ': invalid or excessive redirect chain')
+      current = new URL(location, current).toString()
+    }
     if (!response.ok) fail(item.id + ': HTTP ' + response.status)
-    if (new URL(response.url).protocol !== 'https:') fail(item.id + ': redirect left HTTPS')
     const type = response.headers.get('content-type') || ''
     if (!/(text\/html|text\/plain|application\/xhtml\+xml)/i.test(type)) fail(item.id + ': unsupported content type ' + type)
     const declared = Number(response.headers.get('content-length') || 0)
