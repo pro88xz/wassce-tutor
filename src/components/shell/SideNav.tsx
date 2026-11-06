@@ -38,7 +38,7 @@ export function SideNav() {
           })}
         </ul>
       </nav>
-      <div className="p-3">
+      <div className={`p-3 ${pathname === '/tutor' ? 'hidden' : ''}`}>
         <Link
           to="/tutor"
           className="flex items-start gap-3 rounded-xl border p-3 transition-colors hover:border-primary/40 hover:bg-brand-soft/40"

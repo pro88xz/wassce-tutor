@@ -228,6 +228,8 @@ export type Lesson = {
   content: string
   est_minutes: number | null
   sort_order: number
+  /** set once a named reviewer has checked the lesson (migration 04) */
+  reviewed_at?: string | null
 }
 
 // Topics for a subject

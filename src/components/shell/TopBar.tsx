@@ -26,10 +26,10 @@ export function TopBar() {
           {!onTutor && (
             <Link
               to="/tutor"
-              className="inline-flex h-10 items-center gap-1.5 rounded-xl border bg-card px-3 text-sm font-semibold transition-colors hover:border-primary/40 hover:bg-brand-soft/40 lg:hidden"
+              className="inline-flex h-10 min-w-10 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl border bg-card px-3 text-sm font-semibold transition-colors hover:border-primary/40 hover:bg-brand-soft/40 lg:hidden"
             >
               <MessageCircleQuestion className="h-4 w-4 text-primary" aria-hidden />
-              Ask tutor
+              <span className="sr-only min-[360px]:not-sr-only">Ask tutor</span>
             </Link>
           )}
           <Link

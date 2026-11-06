@@ -21,7 +21,7 @@ import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { checkAccess } from '@/lib/access'
 import { supabase } from '@/lib/supabase'
-import { Sparkles } from 'lucide-react'
+import { Flag, Sparkles } from 'lucide-react'
 import { SubjectIcon } from '@/lib/subject-theme'
 
 export const Route = createFileRoute('/tutor')({
@@ -31,6 +31,19 @@ export const Route = createFileRoute('/tutor')({
     typeof search.ask === 'string' && search.ask.trim() ? { ask: search.ask.slice(0, 300) } : {},
   component: TutorPage,
 })
+
+const SUPPORT_EMAIL = 'secretsafe.cc@gmail.com'
+
+/** Follow-ups offered under the latest answer (Design System Blueprint 09, suggested prompts). */
+const FOLLOW_UPS = ['Explain this more simply', 'Give me another example', 'Test me with a question']
+
+/** A pre-filled email reporting a wrong or confusing answer (trust boundary: a report route for AI answers). */
+function reportHref(answer: string) {
+  const excerpt = answer.length > 600 ? `${answer.slice(0, 600)}…` : answer
+  return `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent('AI tutor answer report')}&body=${encodeURIComponent(
+    `What is wrong or confusing:\n\n\n---\nThe answer:\n${excerpt}`,
+  )}`
+}
 
 type Message = {
   id: string
@@ -111,7 +124,7 @@ function TutorPage() {
             { slug: 'mathematics', text: 'Walk me through solving 2x + 5 = 17' },
             { slug: 'biology', text: "What's the difference between mitosis and meiosis?" },
           ].map((p) => (
-            <div key={p.text} className="flex items-center gap-3 rounded-2xl border bg-card px-4 py-3 text-sm font-medium shadow-sm">
+            <div key={p.text} className="flex items-center gap-3 rounded-2xl border bg-card px-4 py-3 text-sm font-medium">
               <SubjectIcon slug={p.slug} size="sm" />
               <span>&ldquo;{p.text}&rdquo;</span>
             </div>
@@ -181,8 +194,10 @@ function TutorPage() {
     }
   }
 
+  const lastAssistantId = [...messages].reverse().find((m) => m.role === 'assistant')?.id
+
   return (
-    <div className="fixed inset-0 z-30 flex flex-col bg-background" style={{ paddingBottom: 'calc(env(safe-area-inset-bottom) + 76px)' }}>
+    <div className="fixed inset-0 z-30 flex flex-col bg-background pb-[calc(env(safe-area-inset-bottom)+64px)] lg:left-64 lg:pb-0">
       {/* HEADER — sticky, full-width, identity-forward */}
       <header
         className="flex items-center gap-3 border-b bg-background/95 backdrop-blur px-5 py-3"
@@ -190,9 +205,9 @@ function TutorPage() {
       >
         <TutorAvatar size={36} />
         <div className="min-w-0 flex-1">
-          <p className="font-bold leading-tight tracking-tight">AI Tutor</p>
-          <p className="text-xs text-muted-foreground leading-tight">
-            Ask anything from your WASSCE subjects
+          <h1 className="font-bold leading-tight tracking-tight">AI tutor</h1>
+          <p className="text-xs leading-tight text-muted-foreground">
+            Step-by-step help with your WASSCE subjects
           </p>
         </div>
         {remaining !== null && (
@@ -226,7 +241,7 @@ function TutorPage() {
                   key={p.text}
                   type="button"
                   onClick={() => sendMessage(p.text)}
-                  className="flex w-full items-center gap-3 rounded-2xl border bg-card px-4 py-3 text-left text-sm font-medium shadow-sm transition hover:border-primary/40 hover:shadow-md"
+                  className="flex min-h-12 w-full items-center gap-3 rounded-2xl border bg-card px-4 py-3 text-left text-sm font-medium transition-colors hover:border-primary/40"
                 >
                   <SubjectIcon slug={p.slug} size="sm" />
                   <span>{p.text}</span>
@@ -239,19 +254,42 @@ function TutorPage() {
             {messages.map((m) =>
               m.role === 'user' ? (
                 <div key={m.id} className="flex justify-end">
-                  <p className="max-w-[85%] whitespace-pre-wrap rounded-2xl rounded-br-lg bg-primary px-4 py-2.5 text-sm leading-relaxed text-white shadow-sm">
+                  <p className="max-w-[85%] whitespace-pre-wrap rounded-2xl rounded-br-md bg-primary px-4 py-2.5 text-[15px] leading-relaxed text-white">
                     {m.content}
                   </p>
                 </div>
               ) : (
                 <div key={m.id} className="flex gap-2.5">
                   <TutorAvatar size={30} />
-                  <div className="min-w-0 max-w-[90%] rounded-2xl rounded-tl-lg border bg-card px-4 py-3 shadow-sm">
-                    <div className="prose prose-sm prose-slate dark:prose-invert max-w-none prose-p:my-1.5 prose-pre:my-2 prose-headings:my-2 prose-ol:my-1.5 prose-ul:my-1.5 prose-li:my-0.5">
-                      <Suspense fallback={<p className="whitespace-pre-wrap text-sm">{m.content}</p>}>
-                        <MarkdownView content={m.content} />
-                      </Suspense>
+                  <div className="min-w-0 max-w-[90%] space-y-2">
+                    <div className="rounded-2xl rounded-tl-md border bg-card px-4 py-3">
+                      <p className="mb-1 text-xs font-medium text-muted-foreground">AI-generated</p>
+                      <div className="prose prose-slate max-w-none text-[15px] dark:prose-invert prose-headings:my-2 prose-ol:my-1.5 prose-p:my-1.5 prose-pre:my-2 prose-ul:my-1.5 prose-li:my-0.5">
+                        <Suspense fallback={<p className="whitespace-pre-wrap text-sm">{m.content}</p>}>
+                          <MarkdownView content={m.content} />
+                        </Suspense>
+                      </div>
                     </div>
+                    <a
+                      href={reportHref(m.content)}
+                      className="inline-flex min-h-9 items-center gap-1 px-1 text-xs text-muted-foreground hover:text-foreground"
+                    >
+                      <Flag className="h-3.5 w-3.5" aria-hidden /> Report this answer
+                    </a>
+                    {m.id === lastAssistantId && !sending && (
+                      <div className="flex flex-wrap gap-2" aria-label="Suggested follow-ups">
+                        {FOLLOW_UPS.map((f) => (
+                          <button
+                            key={f}
+                            type="button"
+                            onClick={() => sendMessage(f)}
+                            className="inline-flex min-h-10 items-center rounded-full border bg-card px-3.5 text-sm font-medium transition-colors hover:border-primary/40 hover:bg-brand-soft/40"
+                          >
+                            {f}
+                          </button>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
               ),
@@ -262,7 +300,7 @@ function TutorPage() {
           <div className="w-full px-4 pb-4">
             <div className="mx-auto flex max-w-3xl gap-2.5">
               <TutorAvatar size={30} />
-              <div className="flex items-center gap-1 rounded-2xl rounded-tl-lg border bg-card px-4 py-3">
+              <div className="flex items-center gap-1 rounded-2xl rounded-tl-md border bg-card px-4 py-3" role="status" aria-label="The tutor is writing">
                 <span className="h-2 w-2 animate-bounce rounded-full bg-muted-foreground [animation-delay:0ms]" />
                 <span className="h-2 w-2 animate-bounce rounded-full bg-muted-foreground [animation-delay:150ms]" />
                 <span className="h-2 w-2 animate-bounce rounded-full bg-muted-foreground [animation-delay:300ms]" />
@@ -271,13 +309,13 @@ function TutorPage() {
           </div>
         )}
         {error && (
-          <p className="px-5 py-3 text-center text-sm text-red-500">{error}</p>
+          <p className="px-5 py-3 text-center text-sm text-danger" role="alert">{error} Your question is still in the box below, so you can send it again.</p>
         )}
       </div>
 
       {/* INPUT BAR — single floating capsule with integrated send */}
       <div className="bg-background px-4 pb-3 pt-2">
-        <div className="mx-auto flex max-w-3xl items-end gap-2 rounded-full border bg-background pl-5 pr-1.5 py-1.5 shadow-sm focus-within:border-primary/40 focus-within:shadow-md transition">
+        <div className="mx-auto flex max-w-3xl items-end gap-2 rounded-3xl border bg-card py-1.5 pl-5 pr-1.5 transition-colors focus-within:border-primary">
           <textarea
             ref={inputRef}
             value={input}
@@ -288,15 +326,16 @@ function TutorPage() {
                 sendMessage()
               }
             }}
-            placeholder="Ask Tutor anything…"
+            placeholder="Ask about any WASSCE topic…"
+            aria-label="Your question"
             disabled={sending}
             rows={1}
-            className="flex-1 resize-none bg-transparent py-1.5 text-sm leading-relaxed disabled:opacity-50 focus:outline-none placeholder:text-muted-foreground/70"
+            className="flex-1 resize-none bg-transparent py-2 text-[15px] leading-relaxed placeholder:text-muted-foreground/70 focus:outline-none disabled:opacity-50"
           />
           <button
             onClick={() => sendMessage()}
             disabled={sending || !input.trim()}
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-white shadow-sm transition disabled:opacity-30 hover:opacity-90"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white transition-colors hover:bg-brand-strong disabled:opacity-30"
             aria-label="Send"
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.4} className="h-4 w-4">
@@ -304,6 +343,9 @@ function TutorPage() {
             </svg>
           </button>
         </div>
+        <p className="mx-auto mt-1.5 max-w-3xl px-2 text-center text-[11px] leading-snug text-muted-foreground">
+          Answers are AI-generated and can be wrong. Check them against your lessons. This is not an official WAEC marking scheme.
+        </p>
       </div>
     </div>
   )
