@@ -22,12 +22,12 @@ export function StartCta({
       <h2 className="text-xl font-bold tracking-tight text-balance text-brand-deep sm:text-2xl">{heading}</h2>
       <p className="text-[15px] text-brand-strong">{body}</p>
       {user ? (
-        <a href={appHref ?? '/subjects'} className="inline-flex h-12 items-center rounded-xl bg-primary px-6 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong">
+        <a href={appHref ?? '/subjects'} className="inline-flex min-h-12 py-2 items-center rounded-xl bg-primary px-6 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong">
           Open in WASSCE Tutor
         </a>
       ) : (
         <div className="space-y-3 pt-1">
-          <Link to="/auth" className="inline-flex h-12 items-center rounded-xl bg-primary px-6 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong">
+          <Link to="/auth" className="inline-flex min-h-12 py-2 items-center rounded-xl bg-primary px-6 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong">
             Start free for 7 days
           </Link>
           <ul className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-brand-strong">

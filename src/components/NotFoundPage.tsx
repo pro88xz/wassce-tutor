@@ -16,7 +16,7 @@ export function NotFoundPage() {
       </p>
       <Link
         to="/"
-        className="inline-flex h-11 items-center rounded-md bg-primary px-6 font-semibold text-primary-foreground"
+        className="inline-flex min-h-11 py-2 items-center rounded-md bg-primary px-6 font-semibold text-primary-foreground"
       >
         Go to the homepage
       </Link>

@@ -140,7 +140,7 @@ function About() {
           <h2 className="font-bold">Get in touch</h2>
           <p className="text-sm text-muted-foreground">{`WhatsApp ${CONTACT.phoneDisplay} or ${CONTACT.email}.`} Questions, feedback, or partnership enquiries?</p>
         </div>
-        <a href="/contact" className="inline-flex h-11 shrink-0 items-center rounded-xl border bg-card px-4 text-sm font-semibold hover:border-primary/40">
+        <a href="/contact" className="inline-flex min-h-11 py-2 shrink-0 items-center rounded-xl border bg-card px-4 text-sm font-semibold hover:border-primary/40">
           Contact us
         </a>
       </section>
@@ -150,10 +150,10 @@ function About() {
           <h2 className="text-[1.75rem] font-bold tracking-tight text-brand-deep">Ready to start?</h2>
           <p className="text-brand-strong">7 days free. No card. Plans never renew automatically.</p>
           <div className="flex flex-col items-center justify-center gap-3 pt-2 sm:flex-row">
-            <Link to="/auth" className="inline-flex h-12 w-full items-center justify-center rounded-xl bg-primary px-7 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong sm:w-auto">
+            <Link to="/auth" className="inline-flex min-h-12 py-2 w-full items-center justify-center rounded-xl bg-primary px-7 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong sm:w-auto text-center">
               Start your free trial
             </Link>
-            <a href="/wassce/subjects" className="inline-flex h-12 w-full items-center justify-center rounded-xl border bg-card px-7 font-semibold transition-colors hover:border-primary/40 sm:w-auto">
+            <a href="/wassce/subjects" className="inline-flex min-h-12 py-2 w-full items-center justify-center rounded-xl border bg-card px-7 font-semibold transition-colors hover:border-primary/40 sm:w-auto text-center">
               Browse subjects
             </a>
           </div>

@@ -93,7 +93,7 @@ export function Footer() {
               href={CONTACT.whatsappGroup}
               target="_blank"
               rel="noopener"
-              className="inline-flex h-11 items-center gap-2 whitespace-nowrap rounded-xl bg-[#1a8d4a] px-4 text-sm font-semibold text-white transition-colors hover:bg-[#157a3f]"
+              className="inline-flex min-h-11 py-2 items-center gap-2 whitespace-nowrap rounded-xl bg-[#1a8d4a] px-4 text-sm font-semibold text-white transition-colors hover:bg-[#157a3f]"
             >
               <WhatsAppGlyph className="h-5 w-5" /> Join our WhatsApp group
             </a>

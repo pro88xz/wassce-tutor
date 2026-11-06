@@ -260,7 +260,8 @@ export function ProductTour() {
       <div className="grid items-center gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] md:gap-10">
         {/* Steps: segmented control on phones, a list with full text from 768 px */}
         <div className="space-y-4">
-          <div role="tablist" aria-label="How it works" className="grid grid-cols-4 gap-1 rounded-2xl bg-muted p-1 md:hidden">
+          {/* One row while the labels fit; wraps (never clips) with a large phone text size. */}
+          <div role="tablist" aria-label="How it works" className="flex flex-wrap gap-1 rounded-2xl bg-muted p-1 md:hidden">
             {STEPS.map((s, i) => (
               <button
                 key={s.n}
@@ -270,7 +271,7 @@ export function ProductTour() {
                 aria-selected={active === i}
                 aria-controls="tour-panel"
                 onClick={() => setActive(i)}
-                className={`min-h-11 rounded-xl text-sm font-semibold transition-colors ${active === i ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground'}`}
+                className={`min-h-11 min-w-fit grow basis-0 whitespace-nowrap rounded-xl px-2 text-sm font-semibold transition-colors ${active === i ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground'}`}
               >
                 {s.label}
               </button>

@@ -79,7 +79,7 @@ function SubjectTutorPage() {
               ))}
             </ul>
 
-            <a href="#book" className="inline-flex h-12 w-full items-center justify-center rounded-xl bg-primary px-6 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong md:hidden">
+            <a href="#book" className="inline-flex min-h-12 py-2 w-full items-center justify-center rounded-xl bg-primary px-6 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong md:hidden text-center">
               Request a {subject.name} tutor
             </a>
 

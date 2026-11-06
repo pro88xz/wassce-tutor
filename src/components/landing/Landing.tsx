@@ -8,7 +8,7 @@
 import { Link } from '@tanstack/react-router'
 import { useRef } from 'react'
 import { useReveal } from '@/components/ds/useReveal'
-import { ArrowRight, BookOpen, Check, ChevronRight, CircleCheck, Compass, Moon, Smartphone, UserRound, Wallet } from 'lucide-react'
+import { ArrowRight, BookOpen, Check, ChevronRight, CircleCheck, Compass, GraduationCap, Moon, Smartphone, UserRound, Wallet } from 'lucide-react'
 import type { LandingData } from '@/lib/public-content'
 import { topicPath } from '@/lib/public-content'
 import { SubjectCover, subjectArt } from '@/components/ds/SubjectCover'
@@ -63,7 +63,7 @@ function Hero() {
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link
             to="/auth"
-            className="inline-flex h-12 w-full items-center justify-center rounded-xl bg-white px-7 text-base font-semibold text-brand-strong transition-colors hover:bg-brand-soft sm:w-auto"
+            className="inline-flex min-h-12 py-2 w-full items-center justify-center rounded-xl bg-white px-7 text-base font-semibold text-brand-strong transition-colors hover:bg-brand-soft sm:w-auto text-center"
           >
             Start free for 7 days
           </Link>
@@ -300,7 +300,7 @@ function TutorTeaser() {
             <li key={t} className="flex gap-2"><Check className="mt-0.5 h-5 w-5 shrink-0 text-success" aria-hidden /> {t}</li>
           ))}
         </ul>
-        <a href="/tutors" className="mt-2 inline-flex h-12 items-center justify-center rounded-xl bg-primary px-6 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong">
+        <a href="/tutors" className="mt-2 inline-flex min-h-12 py-2 items-center justify-center rounded-xl bg-primary px-6 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong text-center">
           Book a tutor
         </a>
       </div>
@@ -309,39 +309,91 @@ function TutorTeaser() {
 }
 
 /** Exam orientation: the public WASSCE guide, with the grade scale as a preview. */
+// The WAEC grade scale as a ladder: bar heights only show order (WAEC
+// publishes no fixed percentage bands, so none are implied). Class names are
+// literals so Tailwind generates them.
+const GRADE_BARS = [
+  { g: 'A1', m: 'Excellent', kind: 'credit', h: 'h-full', d: 'delay-[0ms]' },
+  { g: 'B2', m: 'Very good', kind: 'credit', h: 'h-[91%]', d: 'delay-[60ms]' },
+  { g: 'B3', m: 'Good', kind: 'credit', h: 'h-[82%]', d: 'delay-[120ms]' },
+  { g: 'C4', m: 'Credit', kind: 'credit', h: 'h-[73%]', d: 'delay-[180ms]' },
+  { g: 'C5', m: 'Credit', kind: 'credit', h: 'h-[64%]', d: 'delay-[240ms]' },
+  { g: 'C6', m: 'Credit', kind: 'credit', h: 'h-[55%]', d: 'delay-[300ms]' },
+  { g: 'D7', m: 'Pass', kind: 'pass', h: 'h-[42%]', d: 'delay-[360ms]' },
+  { g: 'E8', m: 'Pass', kind: 'pass', h: 'h-[34%]', d: 'delay-[420ms]' },
+  { g: 'F9', m: 'Fail', kind: 'fail', h: 'h-[24%]', d: 'delay-[480ms]' },
+] as const
+
+const BAR_TONE = {
+  credit: 'bg-gradient-to-t from-[#0d7a50] to-[#2bb97f] shadow-[0_10px_20px_-8px_rgba(13,122,80,0.55)]',
+  pass: 'bg-gradient-to-t from-[#b0650c] to-[#f2a93b] shadow-[0_10px_20px_-8px_rgba(176,101,12,0.5)]',
+  fail: 'bg-gradient-to-t from-slate-500 to-slate-400 shadow-[0_10px_20px_-8px_rgba(71,85,105,0.5)]',
+}
+
+/** WASSCE guide: an elevated card with the grade ladder, the thing new students most need to understand. */
 function GuideTeaser() {
-  const grades: [string, string][] = [
-    ['A1', 'credit'], ['B2', 'credit'], ['B3', 'credit'], ['C4', 'credit'], ['C5', 'credit'], ['C6', 'credit'], ['D7', 'pass'], ['E8', 'pass'], ['F9', 'fail'],
-  ]
-  const tone = { credit: 'bg-success/15 text-success', pass: 'bg-warning/15 text-warning', fail: 'bg-muted text-muted-foreground' }
   return (
-    <section data-reveal className="overflow-hidden rounded-2xl border bg-card md:grid md:grid-cols-2" aria-labelledby="guide-heading">
-      <div className="space-y-3 p-6 sm:p-8">
-        <p className="inline-flex items-center gap-2 text-sm font-semibold text-primary"><Compass className="h-4 w-4" aria-hidden /> WASSCE guide</p>
-        <h2 id="guide-heading" className="text-2xl font-bold leading-tight tracking-tight">New to WASSCE? Start with the guide</h2>
-        <p className="text-[15px] text-muted-foreground">How the exam works in Sierra Leone, which subjects each faculty sits, and how grades are worked out.</p>
-        <div className="flex flex-col gap-2 pt-2 sm:flex-row">
-          <a href="/wassce" className="inline-flex h-11 items-center justify-center rounded-xl bg-primary px-5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-brand-strong">
-            Read the WASSCE guide
+    <section
+      data-reveal
+      className="relative overflow-hidden rounded-3xl border bg-card shadow-[0_32px_64px_-32px_rgba(76,29,149,0.4)] md:grid md:grid-cols-2"
+      aria-labelledby="guide-heading"
+    >
+      <div aria-hidden className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
+      <div className="relative flex flex-col justify-center space-y-4 p-6 sm:p-10">
+        <p className="inline-flex items-center gap-2 text-sm font-semibold text-primary">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-soft"><Compass className="h-4 w-4" aria-hidden /></span>
+          WASSCE guide
+        </p>
+        <h2 id="guide-heading" className="text-[1.75rem] font-bold leading-tight tracking-tight text-balance sm:text-3xl">New to WASSCE? Know how it is graded</h2>
+        <p className="text-[15px] text-muted-foreground">
+          Every subject gets one of nine grades. Learn what each one means, which subjects each faculty sits, and how the exam works in Sierra Leone.
+        </p>
+        <ul className="space-y-2 text-[15px]">
+          {['A1 to C6 are credits, the grades that count', 'D7 and E8 are passes; F9 is a fail', 'Each subject is graded on its own'].map((t) => (
+            <li key={t} className="flex gap-2"><Check className="mt-0.5 h-5 w-5 shrink-0 text-success" aria-hidden /> {t}</li>
+          ))}
+        </ul>
+        <div className="flex flex-wrap gap-2 pt-2">
+          <a href="/wassce" className="inline-flex min-h-12 py-2 items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-primary px-5 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/25 transition-colors hover:bg-brand-strong text-center">
+            Read the WASSCE guide <ArrowRight className="h-4 w-4" aria-hidden />
           </a>
-          <a href="/wassce/subjects" className="inline-flex h-11 items-center justify-center rounded-xl border px-5 text-sm font-semibold transition-colors hover:border-primary/40">
-            Subjects and syllabus
+          <a href="/wassce/subjects" className="group inline-flex min-h-12 py-2 items-center gap-1 whitespace-nowrap px-3 text-sm font-semibold text-primary hover:underline">
+            Subjects and syllabus <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden />
           </a>
         </div>
       </div>
-      <div className="border-t bg-muted/50 p-6 sm:p-8 md:border-l md:border-t-0">
-        <p className="text-sm font-semibold">WASSCE grades</p>
-        <ul className="mt-3 grid grid-cols-9 gap-1.5" aria-label="WASSCE grade scale from A1 to F9">
-          {grades.map(([g, k]) => (
-            <li key={g} className={`flex h-11 items-center justify-center rounded-lg text-sm font-bold ${tone[k as keyof typeof tone]}`}>{g}</li>
-          ))}
-        </ul>
-        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
-          <span><span className="font-semibold text-success">A1–C6</span> credit</span>
-          <span><span className="font-semibold text-warning">D7–E8</span> pass</span>
-          <span><span className="font-semibold">F9</span> fail</span>
+
+      <div className="relative p-4 pt-0 sm:p-6 md:pl-0">
+        <div className="h-full rounded-2xl bg-gradient-to-b from-brand-soft to-card p-5 ring-1 ring-primary/10 sm:p-6">
+          <p className="font-bold">The WASSCE grade scale</p>
+          <p className="text-xs font-medium text-muted-foreground">A1 is the best grade, F9 the lowest</p>
+          <ul className="mt-4 grid h-44 grid-cols-9 items-end gap-1.5 sm:h-52 sm:gap-2" aria-label="WASSCE grades from A1, the best, to F9">
+            {GRADE_BARS.map((b) => (
+              <li key={b.g} className="flex h-full items-end">
+                <span
+                  className={`grade-bar flex w-full justify-center rounded-t-xl rounded-b-md pt-2 text-xs font-bold text-white ring-1 ring-inset ring-white/20 transition-transform duration-700 ease-out sm:text-sm ${b.h} ${b.d} ${BAR_TONE[b.kind]}`}
+                >
+                  {b.g}
+                  <span className="sr-only">: {b.m}{b.kind === 'credit' ? ', credit' : ''}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-2 grid grid-cols-9 gap-1.5 text-center text-xs font-semibold sm:gap-2" aria-hidden>
+            <span className="col-span-6 border-t-2 border-success pt-1.5 text-success">Credit</span>
+            <span className="col-span-2 border-t-2 border-warning pt-1.5 text-warning">Pass</span>
+            <span className="border-t-2 border-slate-400 pt-1.5 text-muted-foreground">Fail</span>
+          </div>
+          <div className="mt-5 flex gap-3 rounded-xl bg-card p-4 shadow-[0_8px_24px_-12px_rgba(15,23,42,0.25)] ring-1 ring-black/5">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-success/10 text-success">
+              <GraduationCap className="h-5 w-5" aria-hidden />
+            </span>
+            <p className="text-sm">
+              <span className="font-semibold">Aim for C6 or better.</span>{' '}
+              <span className="text-muted-foreground">University courses usually ask for credits in five subjects, often including English Language and Mathematics.</span>
+            </p>
+          </div>
         </div>
-        <p className="mt-4 text-sm text-muted-foreground">University courses usually ask for credits (C6 or better) in five subjects, often including English Language and Mathematics.</p>
       </div>
     </section>
   )
@@ -362,7 +414,7 @@ function Plans() {
       <div className="mx-auto grid max-w-4xl gap-3 sm:grid-cols-3">
         {plans.map((p, i) => (
           <div key={p.name} data-reveal={i} className={`flex flex-col rounded-2xl bg-card p-5 transition-shadow hover:shadow-lg ${p.best ? 'border-2 border-primary' : 'border'}`}>
-            <div className="flex h-6 items-center justify-between">
+            <div className="flex min-h-6 items-center justify-between">
               <h3 className="font-semibold">{p.name}</h3>
               {p.best && <span className="rounded-full bg-brand-soft px-2.5 py-0.5 text-xs font-semibold text-primary">Lowest monthly cost</span>}
             </div>
@@ -445,7 +497,7 @@ function FinalCta() {
         <h2 className="text-[1.75rem] font-bold leading-tight tracking-tight text-balance text-brand-deep sm:text-3xl">Your WASSCE is closer than you think.</h2>
         <p className="text-[15px] text-brand-strong">Start with one topic today. 7 days free, no card needed.</p>
         <div className="flex flex-col items-center justify-center gap-3 pt-2 sm:flex-row">
-          <Link to="/auth" className="inline-flex h-12 w-full items-center justify-center rounded-xl bg-primary px-7 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong sm:w-auto">
+          <Link to="/auth" className="inline-flex min-h-12 py-2 w-full items-center justify-center rounded-xl bg-primary px-7 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong sm:w-auto text-center">
             Start free for 7 days
           </Link>
           <DownloadButton variant="outline" />

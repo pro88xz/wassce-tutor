@@ -111,7 +111,7 @@ function RootComponent() {
   const pathname = useRouterState({ select: (st) => st.location.pathname })
   const studentNav = !!user && showsStudentNav(pathname)
   return (
-    <div className="flex h-screen bg-background text-foreground">
+    <div className="app-frame flex bg-background text-foreground">
       <SideNav />
       <div className="flex min-w-0 flex-1 flex-col">
         <main id="main" className="flex-1 overflow-y-auto pt-[env(safe-area-inset-top)]">

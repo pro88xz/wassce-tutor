@@ -107,7 +107,8 @@ export function SubjectShowcase({ subjects }: { subjects: SubjectSummary[] }) {
         <p className="text-[15px] text-muted-foreground">Pick your faculty to see the subjects you sit.</p>
       </div>
 
-      <div role="tablist" aria-label="Faculties" className="mx-auto grid w-full max-w-lg grid-cols-4 gap-1 rounded-xl bg-muted p-1">
+      {/* Tabs share one row while they fit; with a large phone text size they wrap rather than clip a label. */}
+      <div role="tablist" aria-label="Faculties" className="mx-auto flex w-full max-w-lg flex-wrap gap-1 rounded-xl bg-muted p-1">
         {faculties.map((f) => (
           <button
             key={f.id}
@@ -116,7 +117,7 @@ export function SubjectShowcase({ subjects }: { subjects: SubjectSummary[] }) {
             aria-selected={active === f.id}
             aria-controls={`faculty-${f.id}`}
             onClick={() => setActive(f.id)}
-            className={`min-h-10 rounded-lg px-0.5 py-2 text-[13px] font-semibold tracking-tight transition-colors sm:text-sm ${
+            className={`min-h-10 min-w-fit grow basis-0 whitespace-nowrap rounded-lg px-2 py-2 text-[13px] font-semibold tracking-tight transition-colors sm:text-sm ${
               active === f.id ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
             }`}
           >

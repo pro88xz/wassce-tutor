@@ -18,7 +18,7 @@ export function TopBar() {
   const onTutor = pathname === '/tutor' || pathname.startsWith('/tutor/')
   return (
     <header className="sticky top-0 z-30 border-b bg-background/90 backdrop-blur-md">
-      <div className="mx-auto flex h-14 max-w-5xl items-center gap-3 px-4 sm:px-6">
+      <div className="mx-auto flex min-h-14 py-2 max-w-5xl items-center gap-3 px-4 sm:px-6">
         <Link to="/" aria-label="WASSCE Tutor home" className="lg:hidden">
           <BrandMark compact />
         </Link>
@@ -26,7 +26,7 @@ export function TopBar() {
           {!onTutor && (
             <Link
               to="/tutor"
-              className="inline-flex h-10 min-w-10 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl border bg-card px-3 text-sm font-semibold transition-colors hover:border-primary/40 hover:bg-brand-soft/40 lg:hidden"
+              className="inline-flex min-h-10 py-2 min-w-10 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl border bg-card px-3 text-sm font-semibold transition-colors hover:border-primary/40 hover:bg-brand-soft/40 lg:hidden text-center"
             >
               <MessageCircleQuestion className="h-4 w-4 text-primary" aria-hidden />
               <span className="sr-only min-[360px]:not-sr-only">Ask tutor</span>

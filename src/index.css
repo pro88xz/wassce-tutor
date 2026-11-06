@@ -280,4 +280,23 @@ html.native-app [data-landing] { display: none; }
     opacity: 0;
     transform: translateY(28px);
   }
+  /* Grade ladder bars grow from the baseline as the guide card reveals. */
+  .reveal-armed [data-reveal]:not(.is-revealed) .grade-bar {
+    transform: scaleY(0.08);
+  }
+  .grade-bar { transform-origin: bottom; }
+}
+
+/* App frame height: the dynamic viewport where supported, so the bottom of
+   the scrolling page is never hidden behind a mobile browser's toolbars
+   (100vh is the height with the toolbars hidden). */
+.app-frame {
+  height: 100vh;
+}
+/* Separate rule: the CSS minifier would drop a 100vh fallback written in the
+   same rule, and older Android browsers do not know dvh. */
+@supports (height: 100dvh) {
+  .app-frame {
+    height: 100dvh;
+  }
 }

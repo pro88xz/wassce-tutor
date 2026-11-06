@@ -137,7 +137,7 @@ function TutorPage() {
         <div className="space-y-2">
           <Link
             to="/subscribe"
-            className="flex h-12 w-full items-center justify-center rounded-2xl bg-primary text-base font-semibold text-white transition-colors hover:bg-brand-strong"
+            className="flex min-h-12 py-2 w-full items-center justify-center rounded-2xl bg-primary text-base font-semibold text-white transition-colors hover:bg-brand-strong text-center"
           >
             Unlock the AI Tutor
           </Link>

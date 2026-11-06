@@ -39,10 +39,10 @@ export function PublicHeader() {
           ))}
         </nav>
         <div className="ml-auto flex items-center gap-2">
-          <Link to="/auth" className="hidden h-10 items-center rounded-xl px-3 text-sm font-semibold hover:text-primary sm:inline-flex">
+          <Link to="/auth" className="hidden min-h-10 items-center whitespace-nowrap rounded-xl px-3 text-sm font-semibold hover:text-primary sm:inline-flex">
             Sign in
           </Link>
-          <Link to="/auth" className="inline-flex h-10 items-center whitespace-nowrap rounded-xl bg-primary px-4 text-sm font-semibold text-primary-foreground transition-colors hover:bg-brand-strong">
+          <Link to="/auth" className="inline-flex min-h-10 py-2 items-center whitespace-nowrap rounded-xl bg-primary px-4 text-sm font-semibold text-primary-foreground transition-colors hover:bg-brand-strong">
             Start free
           </Link>
           <button

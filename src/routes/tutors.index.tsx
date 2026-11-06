@@ -54,10 +54,10 @@ function TutorsPage() {
               ))}
             </ul>
             <div className="flex flex-col gap-2 pt-1 sm:flex-row">
-              <a href="#book" className="inline-flex h-12 items-center justify-center rounded-xl bg-primary px-6 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong">
+              <a href="#book" className="inline-flex min-h-12 py-2 items-center justify-center rounded-xl bg-primary px-6 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong text-center">
                 Request a tutor
               </a>
-              <a href="#tutor-how" className="inline-flex h-12 items-center justify-center rounded-xl border bg-card px-6 font-semibold transition-colors hover:border-primary/40">
+              <a href="#tutor-how" className="inline-flex min-h-12 py-2 items-center justify-center rounded-xl border bg-card px-6 font-semibold transition-colors hover:border-primary/40 text-center">
                 How it works
               </a>
             </div>
