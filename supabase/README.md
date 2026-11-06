@@ -20,8 +20,11 @@ etc.). Don't run them against the live project.
 |---|---|
 | `20261105_01_security_fixes.sql` | Admin check on `import_lessons()` (was callable by anyone); admin/payment functions no longer callable logged-out; answer options only for access holders; payment requests must be pending and at a listed price |
 | `20261105_02_seo_foundations.sql` | `updated_at` on content tables; review flags (`is_public`, `reviewed_at`, `reviewed_by`) on lessons and questions; `papers.slug`; topics readable by everyone; read-only public views `wassce_lesson_index`, `wassce_public_lessons`, `wassce_public_questions`, `wassce_stats` |
+| `20261105_03_subject_slugs.sql` | Full-word subject slugs for public URLs, with a check against reserved words |
+| `20261105_04_progress_and_reviewers.sql` | `lesson_progress` (students see only their own rows); reviewer one-line bio (`profiles.public_bio`) shown on public lessons |
+| `20261106_05_hidden_sets.sql` | Hidden (unapproved) papers, their questions and answers are readable by admins only; students see published papers only; public question count includes published papers only |
 
-Both were tested against a local Postgres copy of the live schema (logged-out
+Each was tested against a local Postgres copy of the live schema (logged-out
 visitor, student on trial, expired student, admin) before being committed.
 
 ## Publishing a lesson or question publicly
