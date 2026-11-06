@@ -47,22 +47,20 @@ function FeatureCard({ s }: { s: SubjectSummary }) {
   )
 }
 
-/** Faculty subject: a row with a square cover on phones, a cover card from 640 px. */
+/** Faculty subject: a photo card (swipeable row on phones, grid from 640 px). */
 function SubjectCard({ s }: { s: SubjectSummary }) {
   const ready = s.topicCount > 0
   const body = (
     <>
-      <SubjectCover slug={s.slug} shape="square" rounded="rounded-xl sm:rounded-none" className="h-16 w-16 shrink-0 sm:hidden" />
-      <SubjectCover slug={s.slug} shape="wide" rounded="rounded-none" className="hidden aspect-[16/9] w-full sm:block" />
-      <span className="flex min-w-0 flex-1 flex-col gap-1 sm:p-4">
+      <SubjectCover slug={s.slug} shape="wide" rounded="rounded-none" className="aspect-[16/10] w-full sm:aspect-[16/9]" />
+      <span className="flex flex-1 flex-col gap-1 p-4">
         <span className="truncate font-bold">{s.name}</span>
         <span className="text-xs text-muted-foreground">{meta(s)}</span>
-        <span className="hidden pt-1 sm:block"><PracticeBadge slug={s.slug} /></span>
+        <span className="pt-1"><PracticeBadge slug={s.slug} /></span>
       </span>
-      <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground sm:hidden" aria-hidden />
     </>
   )
-  const cls = 'flex items-center gap-3 rounded-2xl border bg-card p-3 transition-colors sm:flex-col sm:items-stretch sm:gap-0 sm:overflow-hidden sm:p-0'
+  const cls = 'flex w-[72%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border bg-card transition-colors sm:w-auto'
   return ready ? (
     <a href={subjectPath(s.slug)} className={`${cls} hover:border-primary/40`}>{body}</a>
   ) : (
@@ -145,7 +143,7 @@ export function SubjectShowcase({ subjects }: { subjects: SubjectSummary[] }) {
             {main.length > 0 && (
               <div className="space-y-3">
                 <h3 className="text-sm font-semibold text-muted-foreground">{f.name} subjects</h3>
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 [&>*]:min-w-0">
+                <div className="-mx-4 flex snap-x snap-mandatory scroll-px-4 gap-3 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-3 sm:overflow-visible sm:px-0 sm:pb-0 [&>*]:min-w-0" aria-label={`${f.name} subjects`}>
                   {main.map((s) => <SubjectCard key={s.id} s={s} />)}
                 </div>
               </div>

@@ -46,6 +46,7 @@ const GROUPS: Group[] = [
     links: [
       { label: 'Privacy', href: '/privacy' },
       { label: 'Terms', href: '/terms' },
+      { label: 'Photo credits', href: '/about#photo-credits' },
     ],
   },
 ]

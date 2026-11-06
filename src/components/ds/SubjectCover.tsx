@@ -8,6 +8,7 @@
 //   banner  – slim headers; the motif sits right, the pattern runs left
 //             under the title.
 import type { ReactNode } from 'react'
+import { subjectPhoto } from '@/lib/subject-photos'
 
 type Pattern = 'grid' | 'dots' | 'ruled' | 'waves' | 'diag' | 'rings'
 type Art = { bg: string; shade: string; accent: string; pattern: Pattern; motif: (a: string) => ReactNode }
@@ -370,13 +371,42 @@ export function SubjectCover({
   shape = 'wide',
   className = '',
   rounded = 'rounded-xl',
+  priority = false,
 }: {
   slug: string | null | undefined
   shape?: 'square' | 'wide' | 'banner'
   className?: string
   rounded?: string
+  /** Load immediately (above-the-fold banners). */
+  priority?: boolean
 }) {
   const art = subjectArt(slug)
+  // Large shapes use the subject's photograph when there is one; small
+  // thumbnails keep the illustration, which stays crisp at 40-64 px.
+  const photo = shape !== 'square' ? subjectPhoto(slug) : undefined
+  if (photo) {
+    return (
+      <span className={`relative block overflow-hidden ${rounded} ${className}`} style={{ backgroundColor: art.bg }} aria-hidden>
+        <img
+          src={photo.src}
+          srcSet={`${photo.small} 640w, ${photo.src} 1280w`}
+          sizes={shape === 'banner' ? '(min-width: 1024px) 768px, 100vw' : '(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw'}
+          alt=""
+          loading={priority ? 'eager' : 'lazy'}
+          decoding="async"
+          {...(priority ? { fetchPriority: 'high' as const } : {})}
+          className="absolute inset-0 h-full w-full object-cover"
+          style={{ objectPosition: photo.position ?? 'center' }}
+        />
+        {shape === 'wide' && (
+          <span className="absolute bottom-2.5 left-2.5 rounded-[10px] bg-white p-0.5 shadow-sm">
+            <SubjectCover slug={slug} shape="square" className="h-8 w-8" rounded="rounded-lg" />
+          </span>
+        )}
+        <span className="absolute inset-x-0 bottom-0 h-1" style={{ backgroundColor: art.bg }} />
+      </span>
+    )
+  }
   const glyphs = slug ? GLYPHS[slug] : undefined
   const fit = shape === 'square' ? 'xMaxYMid slice' : shape === 'banner' ? 'xMaxYMid meet' : 'xMidYMid slice'
   return (
@@ -404,9 +434,13 @@ export function SubjectCover({
 export function SubjectBanner({ slug, eyebrow, title }: { slug: string | null | undefined; eyebrow?: ReactNode; title: ReactNode }) {
   return (
     <div className="relative overflow-hidden rounded-2xl">
-      <SubjectCover slug={slug} shape="banner" rounded="rounded-2xl" className="h-28 w-full sm:h-36" />
-      {/* A light scrim keeps white text legible over any subject colour. */}
-      <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-r from-black/30 via-black/10 to-transparent p-4 sm:p-6">
+      <SubjectCover slug={slug} shape="banner" rounded="rounded-2xl" className="h-28 w-full sm:h-36" priority />
+      {/* A scrim keeps white text legible: light over illustrations, stronger over photos. */}
+      <div
+        className={`absolute inset-0 flex flex-col justify-end p-4 sm:p-6 ${
+          subjectPhoto(slug) ? 'bg-gradient-to-r from-black/70 via-black/35 to-black/5' : 'bg-gradient-to-r from-black/30 via-black/10 to-transparent'
+        }`}
+      >
         {eyebrow && <p className="text-sm font-medium text-white/85">{eyebrow}</p>}
         <h1 className="max-w-[70%] text-[1.6rem] font-bold leading-tight tracking-tight text-balance text-white sm:text-3xl">{title}</h1>
       </div>

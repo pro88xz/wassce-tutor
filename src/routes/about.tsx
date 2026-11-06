@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { Check, Mail, MapPin } from 'lucide-react'
 import { SubjectCover } from '@/components/ds/SubjectCover'
+import { SUBJECT_PHOTOS } from '@/lib/subject-photos'
 import { publicHead } from '@/lib/seo'
 import { fetchLandingData } from '@/lib/public-content'
 
@@ -12,6 +13,8 @@ export const Route = createFileRoute('/about')({
   staleTime: Infinity,
   component: About,
 })
+
+const PHOTO_CREDITS = Object.entries(SUBJECT_PHOTOS).sort((a, b) => a[1].subject.localeCompare(b[1].subject))
 
 const COVER_ROW = ['english-language', 'mathematics', 'biology', 'chemistry', 'government', 'economics']
 
@@ -98,6 +101,25 @@ function About() {
           market.
         </p>
       </section>
+
+      {PHOTO_CREDITS.length > 0 && (
+        <section id="photo-credits" className="scroll-mt-20 space-y-3">
+          <h2 className="text-lg font-bold tracking-tight">Photo credits</h2>
+          <p className="text-sm text-muted-foreground">
+            Subject photos are used under open licences that allow commercial use. They have been cropped and compressed for the web.
+          </p>
+          <ul className="space-y-1.5 text-sm text-muted-foreground">
+            {PHOTO_CREDITS.map(([slug, p]) => (
+              <li key={slug}>
+                <span className="font-medium text-foreground">{p.subject}:</span> {p.caption}, by{' '}
+                {p.credit.creatorUrl ? <a href={p.credit.creatorUrl} className="underline underline-offset-2 hover:text-foreground" rel="noopener">{p.credit.creator}</a> : p.credit.creator}
+                {' '}via <a href={p.credit.sourceUrl} className="underline underline-offset-2 hover:text-foreground" rel="noopener">{p.credit.source}</a>,{' '}
+                <a href={p.credit.licenseUrl} className="underline underline-offset-2 hover:text-foreground" rel="noopener license">{p.credit.license}</a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <section className="flex items-center gap-4 rounded-2xl border bg-card p-5">
         <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
