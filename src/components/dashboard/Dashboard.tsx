@@ -13,6 +13,7 @@ import {
   Lightbulb,
   MessageCircleQuestion,
   PlayCircle,
+  UserRound,
 } from 'lucide-react'
 import type { User } from '@supabase/supabase-js'
 import type { Profile } from '@/lib/types'
@@ -507,7 +508,7 @@ function QuickAccess({ topic }: { topic: string | null }) {
   return (
     <section className="space-y-3" aria-labelledby="quick-title">
       <h2 id="quick-title" className="text-lg font-bold tracking-tight">Quick access</h2>
-      <div className="grid gap-3 sm:grid-cols-3">
+      <div className="grid gap-3 sm:grid-cols-2">
         <Link to="/tutor" search={topic ? { ask: `Explain ${topic} simply, with one worked example.`, about: topic } : {}} className={tile}>
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#2864c5] text-white"><MessageCircleQuestion className="h-5 w-5" aria-hidden /></span>
           <span className="min-w-0">
@@ -522,6 +523,13 @@ function QuickAccess({ topic }: { topic: string | null }) {
             <span className="block text-xs text-muted-foreground">Exam-style sets with full working</span>
           </span>
         </Link>
+        <a href="/tutors" className={tile}>
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#5b34d6] text-white"><UserRound className="h-5 w-5" aria-hidden /></span>
+          <span className="min-w-0">
+            <span className="block text-sm font-semibold">Book a tutor</span>
+            <span className="block text-xs text-muted-foreground">One-to-one lessons with a real teacher</span>
+          </span>
+        </a>
         <Link to="/progress" className={tile}>
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#b66a12] text-white"><ChartLine className="h-5 w-5" aria-hidden /></span>
           <span className="min-w-0">

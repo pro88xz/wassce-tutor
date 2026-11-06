@@ -12,6 +12,7 @@ import { subjectPath, topicPath } from '@/lib/public-content'
 import { SubjectCover } from '@/components/ds/SubjectCover'
 import { SubjectShowcase } from '@/components/landing/SubjectShowcase'
 import { SwipeRow } from '@/components/ds/SwipeRow'
+import { TUTOR_PHOTO } from '@/lib/tutors'
 import { ProductTour } from '@/components/landing/ProductTour'
 import { DownloadButton } from '@/components/DownloadButton'
 import { TopicSearch } from '@/components/landing/TopicSearch'
@@ -27,6 +28,7 @@ export function Landing({ data }: { data: LandingData }) {
         <ProductTour />
         <LocalBand />
         <StartingPoint />
+        <TutorTeaser />
         <GuideTeaser />
         <Plans />
         <Faq />
@@ -206,6 +208,39 @@ function StartingPoint() {
           </li>
         ))}
       </ul>
+    </section>
+  )
+}
+
+/** Book a tutor: the human-tutor product, introduced with its photo. */
+function TutorTeaser() {
+  return (
+    <section className="grid overflow-hidden rounded-2xl border bg-card md:grid-cols-2" aria-labelledby="tutor-teaser">
+      <img
+        src={TUTOR_PHOTO.small}
+        srcSet={`${TUTOR_PHOTO.small} 640w, ${TUTOR_PHOTO.src} 1280w`}
+        sizes="(min-width: 768px) 512px, 100vw"
+        alt=""
+        loading="lazy"
+        width={640}
+        height={427}
+        className="h-56 w-full object-cover sm:h-72 md:h-full"
+      />
+      <div className="space-y-3 p-6 sm:p-8">
+        <p className="text-sm font-semibold text-primary">Book a tutor</p>
+        <h2 id="tutor-teaser" className="text-2xl font-bold leading-tight tracking-tight text-balance">Want a real teacher, one to one?</h2>
+        <p className="text-[15px] text-muted-foreground">
+          Book a tutor for any WASSCE subject, online or at home. Tell us what you need and we match you with a tutor on WhatsApp. Asking is free.
+        </p>
+        <ul className="space-y-1.5 text-[15px]">
+          {['Help with the topics you find hard', 'Price confirmed before you pay anything'].map((t) => (
+            <li key={t} className="flex gap-2"><Check className="mt-0.5 h-5 w-5 shrink-0 text-success" aria-hidden /> {t}</li>
+          ))}
+        </ul>
+        <a href="/tutors" className="mt-2 inline-flex h-12 items-center justify-center rounded-xl bg-primary px-6 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong">
+          Book a tutor
+        </a>
+      </div>
     </section>
   )
 }

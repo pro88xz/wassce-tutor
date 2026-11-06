@@ -347,7 +347,8 @@ function TutorPage() {
           </button>
         </div>
         <p className="mx-auto mt-1.5 max-w-3xl px-2 text-center text-[11px] leading-snug text-muted-foreground">
-          Answers are AI-generated and can be wrong. Check them against your lessons. This is not an official WAEC marking scheme.
+          Answers are AI-generated and can be wrong. Check them against your lessons. This is not an official WAEC marking scheme.{' '}
+          <a href="/tutors" className="font-semibold text-primary underline-offset-2 hover:underline">Prefer a real person? Book a tutor</a>
         </p>
       </div>
     </div>

@@ -1,8 +1,8 @@
-// Build-time list of data-driven public pages (/wassce/...), with sitemap lastmod.
+// Build-time list of data-driven public pages (/wassce/... and /tutors/...), with sitemap lastmod.
 // Used by vite.config.ts to tell TanStack Start what to prerender. Reads the
 // same public tables/views as src/lib/public-content.ts, over plain REST with
 // the publishable key, and applies the same rules (src/lib/public-rules.ts).
-import { hasSubjectPage, hasTopicPageByCount, lessonPath, subjectPath, topicPath } from '../src/lib/public-rules'
+import { hasSubjectPage, hasTopicPageByCount, lessonPath, subjectPath, topicPath, tutorsPath } from '../src/lib/public-rules'
 
 export type PageEntry = { path: string; lastmod: string }
 
@@ -45,6 +45,8 @@ export async function publicPageList(supabaseUrl: string, publishableKey: string
     const subjectLastmod = day(latest(ownDates))
     subjectLastmods.push(subjectLastmod)
     pages.push({ path: subjectPath(s.slug), lastmod: subjectLastmod })
+    // Book a tutor page for the subject (its topic list comes from the syllabus).
+    pages.push({ path: tutorsPath(s.slug), lastmod: subjectLastmod })
     for (const t of own) {
       const dates = lessonDates.get(t.id) ?? []
       if (!hasTopicPageByCount(dates.length)) continue
@@ -57,6 +59,6 @@ export async function publicPageList(supabaseUrl: string, publishableKey: string
   }
   // The pillar and the subject index list every subject, so they change when any does.
   const all = latest(subjectLastmods)
-  pages.unshift({ path: '/wassce', lastmod: all }, { path: '/wassce/subjects', lastmod: all })
+  pages.unshift({ path: '/wassce', lastmod: all }, { path: '/wassce/subjects', lastmod: all }, { path: tutorsPath(), lastmod: all })
   return pages
 }

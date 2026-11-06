@@ -2,6 +2,7 @@ import { createFileRoute, Link } from '@tanstack/react-router'
 import { Check, Mail, MapPin } from 'lucide-react'
 import { SubjectCover } from '@/components/ds/SubjectCover'
 import { SUBJECT_PHOTOS } from '@/lib/subject-photos'
+import { TUTOR_PHOTO } from '@/lib/tutors'
 import { publicHead } from '@/lib/seo'
 import { fetchLandingData } from '@/lib/public-content'
 
@@ -14,7 +15,10 @@ export const Route = createFileRoute('/about')({
   component: About,
 })
 
-const PHOTO_CREDITS = Object.entries(SUBJECT_PHOTOS).sort((a, b) => a[1].subject.localeCompare(b[1].subject))
+const PHOTO_CREDITS = [
+  ...Object.entries(SUBJECT_PHOTOS).sort((a, b) => a[1].subject.localeCompare(b[1].subject)),
+  ['tutors', { subject: 'Book a tutor', caption: TUTOR_PHOTO.caption, credit: TUTOR_PHOTO.credit }] as const,
+]
 
 const COVER_ROW = ['english-language', 'mathematics', 'biology', 'chemistry', 'government', 'economics']
 

@@ -1,5 +1,5 @@
 import { createFileRoute, Link, Outlet, useLocation } from '@tanstack/react-router'
-import { BadgeCheck, BookOpen, Download, FileText, FileUp, Layers, Library, ListChecks, ShieldCheck, Upload, Wallet } from 'lucide-react'
+import { BadgeCheck, BookOpen, Download, FileText, FileUp, Layers, Library, ListChecks, ShieldCheck, Upload, UserRound, Wallet } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { useEffect, useState } from 'react'
 import { useAuth } from '@/lib/auth'
@@ -193,6 +193,16 @@ function AdminPage() {
           <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><Wallet className="h-5 w-5" aria-hidden /></span>
           <h2 className="font-bold">Payments</h2>
           <p className="mt-1 text-sm text-muted-foreground">Activate pending subscriptions, view history.</p>
+          <p className="mt-3 text-xs text-primary">Open →</p>
+        </Link>
+
+        <Link
+          to="/admin/tutor-requests"
+          className="rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md"
+        >
+          <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><UserRound className="h-5 w-5" aria-hidden /></span>
+          <h2 className="font-bold">Tutor requests</h2>
+          <p className="mt-1 text-sm text-muted-foreground">Book a tutor requests: contact, match, close.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
         </Link>
 

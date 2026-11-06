@@ -4,11 +4,13 @@ import { Menu, X } from 'lucide-react'
 import { BrandMark } from '@/components/BrandMark'
 import { useAuth } from '@/lib/auth'
 
-const isPublicPath = (p: string) => ['/', '/about', '/privacy', '/terms'].includes(p) || p === '/wassce' || p.startsWith('/wassce/')
+const isPublicPath = (p: string) =>
+  ['/', '/about', '/privacy', '/terms'].includes(p) || p === '/wassce' || p.startsWith('/wassce/') || p === '/tutors' || p.startsWith('/tutors/')
 
 const NAV = [
   { label: 'Subjects', href: '/wassce/subjects' },
   { label: 'WASSCE guide', href: '/wassce' },
+  { label: 'Book a tutor', href: '/tutors' },
   { label: 'Plans', href: '/#plans' },
   { label: 'About', href: '/about' },
 ]
@@ -31,7 +33,7 @@ export function PublicHeader() {
         <a href="/" aria-label="WASSCE Tutor home">
           <BrandMark compact wordmarkClassName="max-[359px]:sr-only" />
         </a>
-        <nav aria-label="Main" className="ml-4 hidden items-center gap-6 text-[15px] font-medium text-muted-foreground md:flex">
+        <nav aria-label="Main" className="ml-4 hidden items-center gap-6 text-[15px] font-medium text-muted-foreground lg:flex">
           {NAV.map((n) => (
             <a key={n.href} href={n.href} className="hover:text-foreground">{n.label}</a>
           ))}
@@ -49,14 +51,14 @@ export function PublicHeader() {
             aria-expanded={open}
             aria-controls="public-menu"
             aria-label={open ? 'Close menu' : 'Open menu'}
-            className="-mr-2 flex h-11 w-11 items-center justify-center rounded-xl text-foreground hover:bg-muted md:hidden"
+            className="-mr-2 flex h-11 w-11 items-center justify-center rounded-xl text-foreground hover:bg-muted lg:hidden"
           >
             {open ? <X className="h-5 w-5" aria-hidden /> : <Menu className="h-5 w-5" aria-hidden />}
           </button>
         </div>
       </div>
       {open && (
-        <nav id="public-menu" aria-label="Main" className="border-t bg-card px-4 pb-4 md:hidden">
+        <nav id="public-menu" aria-label="Main" className="border-t bg-card px-4 pb-4 lg:hidden">
           <ul className="divide-y">
             {NAV.map((n) => (
               <li key={n.href}>

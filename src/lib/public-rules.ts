@@ -16,3 +16,6 @@ export const subjectPath = (subjectSlug: string) => `/wassce/${subjectSlug}`
 export const topicPath = (subjectSlug: string, topicSlug: string) => `/wassce/${subjectSlug}/${topicSlug}`
 export const lessonPath = (subjectSlug: string, topicSlug: string, lessonSlug: string) =>
   `/wassce/${subjectSlug}/${topicSlug}/${lessonSlug}`
+
+/** Book a tutor pages: /tutors and /tutors/{subject} (one per subject with a syllabus page). */
+export const tutorsPath = (subjectSlug?: string) => (subjectSlug ? `/tutors/${subjectSlug}` : '/tutors')

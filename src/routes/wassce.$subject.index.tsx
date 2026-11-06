@@ -4,6 +4,8 @@ import { StartCta } from '@/components/public/StartCta'
 import { fetchSubjectHub, hasTopicPage, subjectPath, topicPath } from '@/lib/public-content'
 import type { SubjectHub } from '@/lib/public-content'
 import { breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
+import { tutorsPath } from '@/lib/public-rules'
+import { ChevronRight } from 'lucide-react'
 import { subjectTheme } from '@/lib/subject-theme'
 import { SubjectBanner, SubjectCover } from '@/components/ds/SubjectCover'
 
@@ -108,6 +110,18 @@ function SubjectHubPage() {
           </section>
         ))}
       </section>
+
+      <a
+        href={tutorsPath(subject.slug)}
+        className="flex items-center gap-4 rounded-2xl border bg-card p-4 transition-colors hover:border-primary/40 sm:p-5"
+      >
+        <img src="/img/tutors-640.webp" alt="" loading="lazy" width={640} height={427} className="h-16 w-24 shrink-0 rounded-lg object-cover" />
+        <span className="min-w-0 flex-1">
+          <span className="block font-bold">Need one-to-one help with {subject.name}?</span>
+          <span className="mt-0.5 block text-[15px] text-muted-foreground">Book a real {subject.name} tutor, online or at home.</span>
+        </span>
+        <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground" aria-hidden />
+      </a>
 
       <StartCta
         heading={`Study WASSCE ${subject.name} with WASSCE Tutor`}

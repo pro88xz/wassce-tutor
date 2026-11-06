@@ -4,7 +4,8 @@ import { useAuth } from '@/lib/auth'
 import { BrandMark } from '@/components/BrandMark'
 
 const SHOW_ON = ['/', '/about', '/privacy', '/terms']
-const isPublicPage = (pathname: string) => SHOW_ON.includes(pathname) || pathname === '/wassce' || pathname.startsWith('/wassce/')
+const isPublicPage = (pathname: string) =>
+  SHOW_ON.includes(pathname) || pathname === '/wassce' || pathname.startsWith('/wassce/') || pathname === '/tutors' || pathname.startsWith('/tutors/')
 
 const CONTACT = 'secretsafe.cc@gmail.com'
 
@@ -29,6 +30,7 @@ const GROUPS: Group[] = [
     title: 'Product',
     links: [
       { label: 'Home', href: '/' },
+      { label: 'Book a tutor', href: '/tutors' },
       { label: 'Plans', href: '/#plans' },
       { label: 'Sign in', href: '/auth' },
       { label: 'About', href: '/about' },

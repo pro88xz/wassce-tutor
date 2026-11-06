@@ -188,3 +188,29 @@ export const publicHead = (path: PublicPath) => () => publicPageTags(path)
 
 /** Route `head` option for a non-indexable screen. */
 export const privateHead = (title: string) => () => privatePageTags(title)
+
+/** schema.org Service for a tutoring page. */
+export function tutoringServiceJsonLd({ name, description, path, subject }: { name: string; description: string; path: string; subject?: string }): Record<string, unknown> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name,
+    description,
+    url: absoluteUrl(path),
+    serviceType: subject ? `${subject} tutoring` : 'Private tutoring',
+    category: 'Education',
+    provider: { '@type': 'Organization', name: SITE.name, url: `${SITE.origin}/` },
+    areaServed: { '@type': 'Country', name: 'Sierra Leone' },
+    audience: { '@type': 'EducationalAudience', educationalRole: 'student', audienceType: 'WASSCE candidates' },
+    availableChannel: { '@type': 'ServiceChannel', serviceUrl: absoluteUrl(path), availableLanguage: 'en' },
+  }
+}
+
+/** schema.org FAQPage from visible question/answer pairs (must match what the page shows). */
+export function faqJsonLd(items: [question: string, answer: string][]): Record<string, unknown> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })),
+  }
+}
