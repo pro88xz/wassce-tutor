@@ -6,7 +6,7 @@ import { supabase } from '@/lib/supabase'
 
 // ── Curriculum (topics + lesson titles) for a set of subjects ───────────────
 
-export type CurriculumLesson = { id: string; topic_id: string; title: string; est_minutes: number | null; sort_order: number }
+export type CurriculumLesson = { id: string; topic_id: string; title: string; est_minutes: number | null; sort_order: number; is_free?: boolean }
 export type CurriculumTopic = {
   id: string
   subject_id: string
@@ -35,7 +35,8 @@ export function useCurriculum(subjectIds: string[] | null) {
       const topicIds = (topics.data ?? []).map((t) => t.id)
       // An in() list of hundreds of ids makes the URL too long; above 100
       // topics fetch every lesson title (a few hundred rows) and filter here.
-      const q = supabase.from('wassce_lesson_index').select('id, topic_id, title, est_minutes, sort_order').range(0, 9999)
+      // '*' so is_free (migration 07) comes along once it exists
+      const q = supabase.from('wassce_lesson_index').select('*').range(0, 9999)
       const lessons = topicIds.length === 0 ? { data: [], error: null } : topicIds.length <= 100 ? await q.in('topic_id', topicIds) : await q
       if (lessons.error) throw lessons.error
       const byTopic = new Map<string, CurriculumLesson[]>()

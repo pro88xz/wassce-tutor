@@ -40,7 +40,7 @@ function About() {
     { title: 'Exam-style practice, marked instantly', body: 'Original WASSCE-style questions written to the syllabus, with the full working and why each wrong option is wrong.' },
     { title: 'An AI tutor, any time', body: 'Ask any WASSCE question in plain English and get a clear, step-by-step answer, labelled as AI.' },
     { title: 'Built for any Android phone', body: 'Made for patchy data and shared phones.' },
-    { title: 'Pay with Orange Money or AfriMoney', body: 'No card needed. Plans start at 25 NLe a month.' },
+    { title: 'Pay with Orange Money or AfriMoney', body: '10 NLe for a term or 25 NLe for a full academic year. No card needed.' },
   ]
 
   return (
@@ -75,7 +75,7 @@ function About() {
           tutors that families can&rsquo;t always afford.
         </p>
         <p className="text-muted-foreground">
-          We built WASSCE Tutor to change that. One affordable subscription unlocks every subject, every practice set,
+          We built WASSCE Tutor to change that. A free account opens every subject, and one small payment unlocks every practice set,
           every lesson, and an AI tutor that explains things in a way that fits how Sierra Leonean students learn.
         </p>
       </section>
@@ -148,10 +148,10 @@ function About() {
       <section className="rounded-2xl bg-brand-soft px-6 py-10 text-center">
         <div className="space-y-3">
           <h2 className="text-[1.75rem] font-bold tracking-tight text-brand-deep">Ready to start?</h2>
-          <p className="text-brand-strong">7 days free. No card. Plans never renew automatically.</p>
+          <p className="text-brand-strong">Free to start, no card needed. Everything from 10 NLe, and plans never renew automatically.</p>
           <div className="flex flex-col items-center justify-center gap-3 pt-2 sm:flex-row">
             <Link to="/auth" className="inline-flex min-h-12 py-2 w-full items-center justify-center rounded-xl bg-primary px-7 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong sm:w-auto text-center">
-              Start your free trial
+              Create a free account
             </Link>
             <a href="/wassce/subjects" className="inline-flex min-h-12 py-2 w-full items-center justify-center rounded-xl border bg-card px-7 font-semibold transition-colors hover:border-primary/40 sm:w-auto text-center">
               Browse subjects

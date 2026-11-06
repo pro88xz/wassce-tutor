@@ -8,7 +8,9 @@ import { useScoredAttempts, type ScoredAttempt } from '@/lib/progress'
 import { bestByPaper } from '@/lib/papers'
 import { PracticeSetRow } from '@/components/ds/PracticeSetRow'
 import { subjectTheme } from '@/lib/subject-theme'
-import { AccessGate } from '@/components/AccessGate'
+import { FreePlanBanner } from '@/components/FreePlanBanner'
+import { useAccess } from '@/lib/useAccess'
+import { paperLocked } from '@/lib/access'
 import { EmptyState, PageHeader, ScorePill, SectionHeader, Skeleton } from '@/components/ds/Primitives'
 import { Button } from '@/components/ui/button'
 import type { Subject } from '@/lib/types'
@@ -34,9 +36,9 @@ function PracticePage() {
   const loading = subjectsLoading || (ids.length > 0 && papers.isLoading)
 
   return (
-    <AccessGate>
       <div className="mx-auto max-w-3xl space-y-8">
         <PageHeader title="Practice" subtitle="Exam-style questions with full working. Each result shows what to revise next." />
+        <FreePlanBanner what="A starter practice set in every subject is free." />
 
         {loading ? (
           <div className="space-y-3" aria-busy="true">
@@ -74,7 +76,6 @@ function PracticePage() {
           </>
         )}
       </div>
-    </AccessGate>
   )
 }
 
@@ -108,9 +109,12 @@ function Recent({ attempts, subjects }: { attempts: ScoredAttempt[]; subjects: S
 
 function SubjectSets({ subject, papers, best }: { subject: Subject; papers: PaperRow[]; best: Map<string, ScoredAttempt> }) {
   const { palette } = subjectTheme(subject.slug)
+  const { access } = useAccess()
   const [all, setAll] = useState(false)
   const [q, setQ] = useState('')
-  const filtered = q.trim() ? papers.filter((p) => p.title.toLowerCase().includes(q.trim().toLowerCase())) : papers
+  // On a free account the open starter set comes first.
+  const ordered = access.hasAccess ? papers : [...papers].sort((a, b) => Number(!a.is_free) - Number(!b.is_free))
+  const filtered = q.trim() ? ordered.filter((p) => p.title.toLowerCase().includes(q.trim().toLowerCase())) : ordered
   const shown = all || q.trim() ? filtered : filtered.slice(0, PREVIEW)
   const taken = papers.filter((p) => best.has(p.id)).length
 
@@ -145,7 +149,9 @@ function SubjectSets({ subject, papers, best }: { subject: Subject; papers: Pape
             </label>
           )}
           <ul className="divide-y rounded-2xl border bg-card">
-            {shown.map((p) => <PracticeSetRow key={p.id} paper={p} best={best.get(p.id)} accent={palette.bar} />)}
+            {shown.map((p) => (
+              <PracticeSetRow key={p.id} paper={p} best={best.get(p.id)} accent={palette.bar} access={access.hasAccess ? undefined : paperLocked(access, p) ? 'locked' : 'free'} />
+            ))}
             {shown.length === 0 && <li className="px-4 py-3 text-sm text-muted-foreground">No topic matches “{q}”.</li>}
           </ul>
           {!q.trim() && filtered.length > PREVIEW && (

@@ -2,7 +2,9 @@ import { createFileRoute, Link, useParams } from '@tanstack/react-router'
 import { useMemo, useState } from 'react'
 import { ArrowLeft, ArrowRight, Search } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
-import { AccessGate } from '@/components/AccessGate'
+import { FreePlanBanner } from '@/components/FreePlanBanner'
+import { useAccess } from '@/lib/useAccess'
+import { paperLocked } from '@/lib/access'
 import { useAuth } from '@/lib/auth'
 import { usePapers, useSubject } from '@/lib/queries'
 import { useProgress } from '@/lib/progress'
@@ -32,14 +34,24 @@ function SubjectPage() {
   const sp = summary?.subjects[0]
   const { palette } = subjectTheme(subject?.slug)
   const [q, setQ] = useState('')
+  const { access } = useAccess()
+  // A free account opens each subject's starter set; the others show a lock.
+  const setAccess = (p: { is_free?: boolean }) => (access.hasAccess ? undefined : paperLocked(access, p) ? ('locked' as const) : ('free' as const))
 
   const best = useMemo(() => bestByPaper(sp?.attempts ?? []), [sp])
   const review = useMemo(
     () => topicsToReview(papers ?? [], sp?.attempts ?? [], (sp?.topics ?? []).map((t) => ({ id: t.topic.id, name: t.topic.name, subject_id: t.topic.subject_id }))),
     [papers, sp],
   )
-  // Sets not yet tried come first, so the short list is always useful.
-  const sets = useMemo(() => [...(papers ?? [])].sort((a, b) => Number(best.has(a.id)) - Number(best.has(b.id))), [papers, best])
+  // Sets not yet tried come first, so the short list is always useful; on a
+  // free account the open starter set leads.
+  const sets = useMemo(
+    () =>
+      [...(papers ?? [])].sort(
+        (a, b) => (access.hasAccess ? 0 : Number(!a.is_free) - Number(!b.is_free)) || Number(best.has(a.id)) - Number(best.has(b.id)),
+      ),
+    [papers, best, access.hasAccess],
+  )
 
   const started = !!sp && sp.done > 0
   const needle = q.trim().toLowerCase()
@@ -50,7 +62,6 @@ function SubjectPage() {
       : sp.groups
 
   return (
-    <AccessGate>
       <div className="mx-auto max-w-3xl space-y-6">
         <Link to="/subjects" className="-mb-2 inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground">
           <ArrowLeft className="h-4 w-4" aria-hidden /> All subjects
@@ -77,6 +88,8 @@ function SubjectPage() {
           </div>
           {started && <ProgressBar value={sp!.done} max={sp!.total} fill={palette.bar} size="sm" label={`${sp!.subject.name}: ${sp!.done} of ${sp!.total} lessons done`} />}
         </header>
+
+        <FreePlanBanner />
 
         {sp?.next && (
           <section aria-labelledby="next-title" className="flex flex-col gap-3 rounded-2xl border bg-card p-4 sm:flex-row sm:items-center sm:justify-between">
@@ -134,11 +147,10 @@ function SubjectPage() {
             <EmptyState title="Practice is being written" body={`Practice sets for ${subject?.name ?? 'this subject'} are on the way. The lessons above are ready now.`} />
           ) : (
             <ul className="divide-y rounded-2xl border bg-card">
-              {sets.slice(0, SETS_SHOWN).map((p) => <PracticeSetRow key={p.id} paper={p} best={best.get(p.id)} accent={palette.bar} />)}
+              {sets.slice(0, SETS_SHOWN).map((p) => <PracticeSetRow key={p.id} paper={p} best={best.get(p.id)} accent={palette.bar} access={setAccess(p)} />)}
             </ul>
           )}
         </section>
       </div>
-    </AccessGate>
   )
 }

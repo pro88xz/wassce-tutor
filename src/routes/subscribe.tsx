@@ -1,340 +1,365 @@
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
-import { CONTACT } from '@/lib/contact'
+import { useQueryClient } from '@tanstack/react-query'
+import { useCallback, useEffect, useRef, useState } from 'react'
+import { ArrowRight, Check, CircleCheck, Clock, Loader2, Lock, ShieldCheck, Sparkles, XCircle } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
-import { useState, useEffect } from 'react'
 import { useAuth } from '@/lib/auth'
-import { useProfile } from '@/lib/queries'
 import { supabase } from '@/lib/supabase'
-import { Button } from '@/components/ui/button'
-import { Check, CircleCheck, Sparkles } from 'lucide-react'
+import { useAccess } from '@/lib/useAccess'
+import { CONTACT, whatsappChatLink } from '@/lib/contact'
+import { FREE_FEATURES, PAID_FEATURES, PLANS, planById, type PlanId } from '@/lib/plans'
+import { confirmPayment, forgetCheckout, pendingCheckout, rememberCheckout, startCheckout, type PaymentStatus } from '@/lib/payments'
+import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
+
+type Search = { plan?: PlanId; payment?: string; cancelled?: boolean }
 
 export const Route = createFileRoute('/subscribe')({
   head: privateHead('Choose a plan'),
+  // Monime sends students back here with ?payment=<id> (and &cancelled=1).
+  validateSearch: (s: Record<string, unknown>): Search => ({
+    plan: s.plan === 'term' || s.plan === 'year' ? s.plan : undefined,
+    payment: typeof s.payment === 'string' && /^[0-9a-f-]{36}$/i.test(s.payment) ? s.payment : undefined,
+    cancelled: s.cancelled === '1' || s.cancelled === 1 || s.cancelled === true ? true : undefined,
+  }),
   component: SubscribePage,
 })
 
-const WHATSAPP_NUMBER = CONTACT.whatsapp
-const COOLDOWN_MS = 10 * 60 * 1000
-
-type Plan = {
-  // Plan ids and prices are also enforced by the payment_requests insert policy
-  // (supabase/migrations/20261105_01_security_fixes.sql). Change both together.
-  id: 'monthly' | 'quarterly' | 'yearly'
-  name: string
-  amount: number
-  period: string
-  perMonth?: string
-  badge?: string
-  savings?: string
-}
-
-const PLANS: Plan[] = [
-  {
-    id: 'monthly',
-    name: 'Monthly',
-    amount: 25,
-    period: '/month',
-    perMonth: '25 NLe/mo',
-    savings: 'Pay one month at a time',
-  },
-  {
-    id: 'quarterly',
-    name: 'Quarterly',
-    amount: 60,
-    period: '/3 months',
-    perMonth: '20 NLe/mo',
-    savings: 'Save 15 NLe',
-  },
-  {
-    id: 'yearly',
-    name: 'Yearly',
-    amount: 220,
-    period: '/year',
-    perMonth: '18.33 NLe/mo',
-    badge: 'Best value',
-    savings: 'Save 80 NLe',
-  },
-]
-
-function generateReference(): string {
-  // WT-XXXXX (5 random base32 chars — easy to type, hard to confuse)
-  const chars = '0123456789ABCDEFGHJKMNPQRSTVWXYZ' // omit I, L, O, U for clarity
-  let code = 'WT-'
-  for (let i = 0; i < 5; i++) {
-    code += chars[Math.floor(Math.random() * chars.length)]
-  }
-  return code
-}
-
-type PendingPayment = {
-  reference: string
-  plan: string
-  amount: number
-  clickedAt: number
-}
-
-function getPending(userId: string): PendingPayment | null {
-  try {
-    const raw = localStorage.getItem(`payment_pending_${userId}`)
-    if (!raw) return null
-    const parsed = JSON.parse(raw) as PendingPayment
-    if (Date.now() - parsed.clickedAt > COOLDOWN_MS + 60000) {
-      localStorage.removeItem(`payment_pending_${userId}`)
-      return null
-    }
-    return parsed
-  } catch {
-    return null
-  }
-}
-
-function setPending(userId: string, p: PendingPayment) {
-  localStorage.setItem(`payment_pending_${userId}`, JSON.stringify(p))
-}
-
-function clearPending(userId: string) {
-  localStorage.removeItem(`payment_pending_${userId}`)
-}
+const formatDate = (iso: string) => new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
 
 function SubscribePage() {
+  const { user, loading: authLoading } = useAuth()
+  const search = Route.useSearch()
+
+  if (authLoading) return <div className="mx-auto h-64 max-w-md animate-pulse rounded-3xl bg-muted" aria-busy="true" />
+  if (!user) return <SignedOut returning={!!search.payment && !search.cancelled} />
+  return <Plans userId={user.id} email={user.email ?? ''} search={search} />
+}
+
+/** Signed out: on the website after paying in the Android app's browser, or a visitor. */
+function SignedOut({ returning }: { returning: boolean }) {
+  if (returning) {
+    return (
+      <div className="mx-auto max-w-md space-y-4 pt-8 text-center">
+        <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-success/10 text-success"><CircleCheck className="h-7 w-7" aria-hidden /></span>
+        <h1 className="text-2xl font-bold tracking-tight">Thank you</h1>
+        <p className="text-muted-foreground">
+          Go back to the WASSCE Tutor app. Your plan switches on there as soon as the payment is confirmed, usually within a minute.
+        </p>
+        <Link to="/auth" className="inline-flex min-h-11 items-center font-semibold text-primary hover:underline">Or sign in here</Link>
+      </div>
+    )
+  }
+  return (
+    <div className="mx-auto max-w-md space-y-6 pt-6">
+      <header className="space-y-2 text-center">
+        <h1 className="text-3xl font-bold tracking-tight">Plans</h1>
+        <p className="text-muted-foreground">Create a free account first. You can unlock everything whenever you are ready.</p>
+      </header>
+      <PlanCards selected="year" onSelect={() => {}} interactive={false} />
+      <Link to="/auth" className="flex min-h-12 w-full items-center justify-center rounded-xl bg-primary px-5 py-2 text-base font-semibold text-primary-foreground hover:bg-brand-strong">
+        Create a free account
+      </Link>
+    </div>
+  )
+}
+
+type View =
+  | { kind: 'choose' }
+  | { kind: 'confirming'; paymentId: string; plan?: PlanId; status: PaymentStatus; slow: boolean }
+  | { kind: 'done'; plan?: PlanId }
+  | { kind: 'cancelled' }
+  | { kind: 'whatsapp'; plan: PlanId; reference: string }
+
+function Plans({ userId, email, search }: { userId: string; email: string; search: Search }) {
   const navigate = useNavigate()
-  const { user } = useAuth()
-  const { data: profile } = useProfile(user?.id ?? null)
-  const [selected, setSelected] = useState<Plan['id']>('yearly')
-  const [submitting, setSubmitting] = useState(false)
+  const qc = useQueryClient()
+  const { access, profile } = useAccess()
+  const [selected, setSelected] = useState<PlanId>(search.plan ?? 'year')
+  const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [pending, setPendingState] = useState<PendingPayment | null>(null)
-  const [now, setNow] = useState(Date.now())
+  const [view, setView] = useState<View>(() => {
+    if (search.cancelled) return { kind: 'cancelled' }
+    const pending = pendingCheckout(userId)
+    const paymentId = search.payment ?? pending?.paymentId
+    return paymentId ? { kind: 'confirming', paymentId, plan: pending?.plan, status: 'pending', slow: false } : { kind: 'choose' }
+  })
 
   useEffect(() => {
-    if (!user) return
-    setPendingState(getPending(user.id))
-  }, [user])
+    if (search.cancelled) forgetCheckout(userId)
+  }, [search.cancelled, userId])
 
-  useEffect(() => {
-    if (!pending || !user) return
-    const interval = setInterval(() => {
-      setPendingState(getPending(user.id))
-      setNow(Date.now())
-    }, 1000)
-    return () => clearInterval(interval)
-  }, [pending, user])
-
-  if (!user) {
-    return (
-      <div className="mx-auto max-w-md space-y-4 pt-8 text-center">
-        <p className="text-muted-foreground">Sign in to subscribe.</p>
-        <Link to="/auth"><Button>Sign in</Button></Link>
-      </div>
-    )
-  }
-
-  // Already subscribed?
-  if (profile?.subscription_active && profile?.subscription_expires_at) {
-    clearPending(user.id)
-    const expiresOn = new Date(profile.subscription_expires_at).toLocaleDateString('en-GB', {
-      day: 'numeric', month: 'long', year: 'numeric',
-    })
-    return (
-      <div className="mx-auto max-w-md space-y-4 pt-8 text-center">
-        <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-600">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.4} className="h-7 w-7">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-        </div>
-        <h1 className="text-2xl font-bold">You're subscribed!</h1>
-        <p className="text-muted-foreground">Access expires {expiresOn}.</p>
-        <Link to="/"><Button variant="outline">Back to dashboard</Button></Link>
-      </div>
-    )
-  }
-
-  const plan = PLANS.find((p) => p.id === selected)!
-  const elapsedMs = pending ? now - pending.clickedAt : 0
-  const remainingMs = pending ? Math.max(0, COOLDOWN_MS - elapsedMs) : 0
-  const remainingMin = Math.floor(remainingMs / 60000)
-  const remainingSec = Math.floor((remainingMs % 60000) / 1000)
-  const isLocked = pending !== null && remainingMs > 0
-
-  const proceedToWhatsApp = async () => {
-    setSubmitting(true)
-    setError(null)
-
-    const reference = generateReference()
-
-    try {
-      // 1. Save the payment request in DB so admin sees it
-      const { error: insertErr } = await supabase.from('payment_requests').insert({
-        user_id: user.id,
-        plan: plan.id,
-        amount_nle: plan.amount,
-        reference_code: reference,
-      })
-      if (insertErr) throw insertErr
-
-      const pendingEntry: PendingPayment = { reference, plan: plan.name, amount: plan.amount, clickedAt: Date.now() }
-      setPending(user.id, pendingEntry)
-      setPendingState(pendingEntry)
-
-      // 2. Build pre-filled WhatsApp message
-      const lines = [
-        `Hi! I'd like to subscribe to WASSCE Tutor.`,
-        ``,
-        `Plan: ${plan.name} (${plan.amount} NLe)`,
-        `Email: ${user.email}`,
-        `Reference: ${reference}`,
-        ``,
-        `Please send Orange Money / AfriMoney details.`,
-      ].join('\n')
-      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines)}`
-
-      // 3. Navigate to confirmation page (which the user returns to after WhatsApp)
-      window.location.href = url
-      // Note: most browsers will navigate immediately. We don't await navigation,
-      // we redirect the dashboard view to the pending status next time they open the app.
-    } catch (e) {
-      setError(e instanceof Error ? e.message : 'Could not start checkout')
-      setSubmitting(false)
+  // While confirming: ask our server every few seconds, then less often, and
+  // again whenever the student comes back to the tab or app.
+  const checking = useRef(false)
+  const check = useCallback(async () => {
+    if (view.kind !== 'confirming' || checking.current) return
+    checking.current = true
+    const status = await confirmPayment(view.paymentId)
+    checking.current = false
+    if (status === 'completed') {
+      forgetCheckout(userId)
+      await qc.invalidateQueries({ queryKey: ['profile'] })
+      setView({ kind: 'done', plan: view.plan })
+    } else if (status === 'cancelled' || status === 'expired' || status === 'failed') {
+      forgetCheckout(userId)
+      setView({ kind: 'cancelled' })
+    } else {
+      setView((v) => (v.kind === 'confirming' ? { ...v, status } : v))
     }
+  }, [view, userId, qc])
+
+  useEffect(() => {
+    if (view.kind !== 'confirming') return
+    const started = Date.now()
+    let timer: ReturnType<typeof setTimeout>
+    const tick = () => {
+      void check()
+      const elapsed = Date.now() - started
+      if (elapsed > 60_000) setView((v) => (v.kind === 'confirming' && !v.slow ? { ...v, slow: true } : v))
+      timer = setTimeout(tick, elapsed < 60_000 ? 3000 : 15_000)
+    }
+    tick()
+    const onVisible = () => document.visibilityState === 'visible' && void check()
+    document.addEventListener('visibilitychange', onVisible)
+    return () => {
+      clearTimeout(timer)
+      document.removeEventListener('visibilitychange', onVisible)
+    }
+    // Restart only when a different payment is being confirmed.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [view.kind === 'confirming' ? view.paymentId : null])
+
+  const pay = async () => {
+    setBusy(true)
+    setError(null)
+    const result = await startCheckout(selected)
+    if (result.kind === 'redirect') {
+      rememberCheckout(userId, { paymentId: result.paymentId, plan: selected, startedAt: Date.now() })
+      window.location.href = result.url
+      return
+    }
+    if (result.kind === 'whatsapp') {
+      setView({ kind: 'whatsapp', plan: selected, reference: await requestOnWhatsApp(userId, selected) })
+    } else {
+      setError(result.message)
+    }
+    setBusy(false)
   }
+
+  if (view.kind === 'done') {
+    const plan = planById(view.plan ?? profile?.subscription_plan)
+    return (
+      <div className="mx-auto max-w-md space-y-5 pt-8 text-center">
+        <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-success text-white shadow-lg shadow-success/30"><Check className="h-8 w-8" aria-hidden /></span>
+        <h1 className="text-3xl font-bold tracking-tight">You&rsquo;re all set</h1>
+        <p className="text-muted-foreground">
+          {plan ? `${plan.name} is active.` : 'Your plan is active.'} Every lesson, every practice set and the AI tutor are open
+          {profile?.subscription_expires_at ? <> until <strong className="text-foreground">{formatDate(profile.subscription_expires_at)}</strong></> : null}.
+        </p>
+        <button type="button" onClick={() => navigate({ to: '/' })} className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary px-5 py-2 text-base font-semibold text-primary-foreground hover:bg-brand-strong">
+          Start studying <ArrowRight className="h-4 w-4" aria-hidden />
+        </button>
+      </div>
+    )
+  }
+
+  if (view.kind === 'confirming') {
+    return (
+      <div className="mx-auto max-w-md space-y-5 pt-8 text-center">
+        <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-soft text-primary"><Loader2 className="h-8 w-8 animate-spin motion-reduce:animate-none" aria-hidden /></span>
+        <h1 className="text-2xl font-bold tracking-tight" role="status">Confirming your payment…</h1>
+        <p className="text-muted-foreground">
+          {view.slow
+            ? 'This is taking longer than usual. If you paid, your plan switches on by itself as soon as the payment is confirmed. You can leave this page.'
+            : 'This usually takes a few seconds after you approve the payment on your phone.'}
+        </p>
+        <div className="space-y-2">
+          <button type="button" onClick={() => void check()} className="flex min-h-12 w-full items-center justify-center rounded-xl border bg-card px-5 py-2 font-semibold hover:border-primary/40">
+            Check again
+          </button>
+          {view.slow && (
+            <a href={whatsappChatLink(`Hello WASSCE Tutor, I paid for a plan but it is not active yet. Payment: ${view.paymentId}`)} target="_blank" rel="noopener" className="flex min-h-11 items-center justify-center gap-2 text-sm font-semibold text-[#1a8d4a] hover:underline">
+              <WhatsAppGlyph className="h-4 w-4" /> Message us on WhatsApp
+            </a>
+          )}
+          <button
+            type="button"
+            onClick={() => {
+              forgetCheckout(userId)
+              setView({ kind: 'choose' })
+              navigate({ to: '/subscribe', search: {}, replace: true })
+            }}
+            className="flex min-h-11 w-full items-center justify-center text-sm text-muted-foreground hover:text-foreground"
+          >
+            Choose a plan again
+          </button>
+        </div>
+      </div>
+    )
+  }
+
+  if (view.kind === 'whatsapp') {
+    const plan = planById(view.plan)!
+    return (
+      <div className="mx-auto max-w-md space-y-5 pt-6">
+        <div className="space-y-3 rounded-3xl border bg-card p-6">
+          <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1a8d4a] text-white"><WhatsAppGlyph className="h-6 w-6" /></span>
+          <h1 className="text-2xl font-bold tracking-tight">Finish on WhatsApp</h1>
+          <p className="text-muted-foreground">
+            Send us the message on WhatsApp. We reply with Orange Money or AfriMoney details for <strong className="text-foreground">{plan.priceNle} NLe</strong>, then switch your {plan.name} on.
+          </p>
+          <p className="text-sm text-muted-foreground">Your reference: <span className="font-mono font-semibold text-foreground">{view.reference}</span></p>
+          <a
+            href={whatsappChatLink(whatsappText(plan.id, email, view.reference))}
+            className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#1a8d4a] px-5 py-2 text-base font-semibold text-white hover:bg-[#157a3f]"
+          >
+            <WhatsAppGlyph className="h-5 w-5" /> Open WhatsApp
+          </a>
+        </div>
+        <button type="button" onClick={() => setView({ kind: 'choose' })} className="flex min-h-11 w-full items-center justify-center text-sm text-muted-foreground hover:text-foreground">
+          Back to plans
+        </button>
+      </div>
+    )
+  }
+
+  const plan = planById(selected)!
+  const active = access.reason === 'subscribed' && profile?.subscription_expires_at
 
   return (
-    <div className="mx-auto max-w-md space-y-6 pb-8">
+    <div className="mx-auto max-w-lg space-y-6 pb-8">
       <header className="space-y-3 text-center">
-        <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-white shadow-sm">
+        <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-brand-strong text-white shadow-lg shadow-primary/30">
           <Sparkles className="h-7 w-7" aria-hidden />
         </span>
-        <h1 className="text-3xl font-bold tracking-tight">Choose your plan</h1>
-        <p className="text-sm text-muted-foreground">Every plan unlocks every subject, every practice set and your AI tutor.</p>
+        <h1 className="text-3xl font-bold tracking-tight">{active ? 'Add more time' : 'Unlock everything'}</h1>
+        <p className="text-[15px] text-muted-foreground">
+          {active ? (
+            <>Your {planById(profile?.subscription_plan)?.name ?? 'plan'} runs until <strong className="text-foreground">{formatDate(profile!.subscription_expires_at!)}</strong>. A new plan adds its time on top.</>
+          ) : (
+            'One payment. Every lesson, every practice set and the AI tutor, for the whole plan.'
+          )}
+        </p>
       </header>
 
-      <div role="radiogroup" aria-label="Plans" className="space-y-3">
-        {PLANS.map((p) => {
-          const active = selected === p.id
-          return (
-            <button
-              key={p.id}
-              type="button"
-              role="radio"
-              aria-checked={active}
-              onClick={() => setSelected(p.id)}
-              className={`w-full rounded-2xl bg-card p-5 text-left ring-1 transition ${
-                active ? 'ring-2 ring-primary' : 'ring-border hover:ring-primary/40'
-              }`}
-            >
-              <div className="flex items-start justify-between gap-3">
-                <span className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 ${active ? 'border-primary bg-primary text-primary-foreground' : 'border-muted-foreground/30'}`}>
-                  {active && <Check className="h-4 w-4" aria-hidden />}
-                </span>
-                <div className="min-w-0 flex-1">
-                  <div className="flex items-center gap-2 mb-1">
-                    <p className="font-bold">{p.name}</p>
-                    {p.badge && (
-                      <span className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-bold text-primary">
-                        {p.badge}
-                      </span>
-                    )}
-                  </div>
-                  {p.perMonth && (
-                    <p className="text-xs text-muted-foreground">{p.perMonth}</p>
-                  )}
-                  {p.savings && (
-                    <p className={`mt-1 text-xs font-semibold ${p.savings.startsWith('Save') ? 'text-success' : 'text-muted-foreground'}`}>{p.savings}</p>
-                  )}
-                </div>
-                <div className="shrink-0 text-right">
-                  <p className="text-3xl font-bold leading-none tracking-tight">{p.amount}<span className="ml-1 text-sm font-semibold text-muted-foreground">NLe</span></p>
-                  <p className="text-xs text-muted-foreground">{p.period}</p>
-                </div>
-              </div>
-            </button>
-          )
-        })}
-      </div>
-
-      {isLocked ? (
-        <div className="space-y-3 rounded-2xl border border-warning/30 bg-warning/5 p-5">
-          <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-warning/15 text-warning">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.4} className="h-4 w-4">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3" />
-                <circle cx="12" cy="12" r="9" />
-              </svg>
-            </div>
-            <p className="font-bold">Payment submitted</p>
-          </div>
-          <p className="text-sm text-muted-foreground">
-            We received your request <span className="font-mono font-semibold text-foreground">{pending!.reference}</span> for the <span className="font-semibold text-foreground">{pending!.plan}</span> plan.
-          </p>
-          <p className="text-sm text-muted-foreground">
-            Make sure you sent the WhatsApp message and completed the Orange Money / AfriMoney transfer. Your access usually activates within a few minutes.
-          </p>
-          <div className="rounded-xl bg-background p-3 text-center">
-            <p className="text-xs text-muted-foreground">You can try again in</p>
-            <p className="text-2xl font-bold font-mono mt-0.5">
-              {String(remainingMin).padStart(2, '0')}:{String(remainingSec).padStart(2, '0')}
-            </p>
-          </div>
-        </div>
-      ) : pending && remainingMs === 0 ? (
-        <div className="space-y-3 rounded-2xl border bg-card p-5">
-          <p className="font-bold">Your access hasn&rsquo;t activated yet.</p>
-          <p className="text-sm text-muted-foreground">
-            This might be because: (1) the WhatsApp message wasn&rsquo;t sent, (2) payment hasn&rsquo;t been received yet, or (3) verification is taking longer than usual.
-          </p>
-          <p className="text-sm text-muted-foreground">
-            You can try sending the WhatsApp message again, or contact us if you&rsquo;ve already paid.
-          </p>
-        </div>
-      ) : (
-        <div className="space-y-4">
-          <ul className="grid grid-cols-2 gap-2 text-sm">
-            {['Every subject', 'Every practice set', 'AI tutor', 'Progress tracking'].map((t) => (
-              <li key={t} className="flex items-center gap-2 rounded-2xl bg-muted/50 px-3 py-2.5 font-medium">
-                <CircleCheck className="h-4 w-4 shrink-0 text-success" aria-hidden /> {t}
-              </li>
-            ))}
-          </ul>
-          <div className="space-y-3 rounded-2xl border bg-card p-5 text-sm">
-            <p className="font-bold">How paying works</p>
-            <ol className="space-y-2.5">
-              {[
-                <>Tap <span className="font-semibold">Pay on WhatsApp</span> below</>,
-                <>WhatsApp opens with your details filled in. Just tap send</>,
-                <>We reply with Orange Money / AfriMoney details</>,
-                <>Send the payment. We switch your plan on, usually within an hour</>,
-              ].map((step, i) => (
-                <li key={i} className="flex gap-3 text-muted-foreground">
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary">{i + 1}</span>
-                  <span>{step}</span>
-                </li>
-              ))}
-            </ol>
-            <p className="border-t pt-3 text-muted-foreground">Plans do not renew automatically. When a plan ends, you choose whether to pay again. Your progress is kept either way.</p>
-          </div>
+      {view.kind === 'cancelled' && (
+        <div className="flex gap-3 rounded-2xl border border-warning/30 bg-warning/5 p-4 text-sm" role="status">
+          <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-warning" aria-hidden />
+          <p><span className="font-semibold">The payment was not completed.</span> <span className="text-muted-foreground">No money was taken. You can try again below.</span></p>
         </div>
       )}
 
+      <PlanCards selected={selected} onSelect={setSelected} />
+
+      <ul className="grid gap-2 rounded-2xl border bg-card p-4 text-[15px] sm:grid-cols-2">
+        {PAID_FEATURES.map((f) => (
+          <li key={f} className="flex gap-2"><CircleCheck className="mt-0.5 h-5 w-5 shrink-0 text-success" aria-hidden /> {f}</li>
+        ))}
+      </ul>
+
       {error && <p className="text-center text-sm text-danger" role="alert">{error}</p>}
 
-      <button
-        type="button"
-        onClick={proceedToWhatsApp}
-        disabled={submitting || isLocked}
-        className="inline-flex h-13 w-full items-center justify-center gap-2 rounded-xl bg-[#1a8d4a] text-base font-semibold text-white transition hover:brightness-95 disabled:opacity-60"
-      >
-        <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
-          <path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.5.2-.7.2-1.4.2-1.5-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.7.5 3.4 1.3 4.9L2 22l5.2-1.3c1.5.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/>
-        </svg>
-        {isLocked ? `Try again in ${remainingMin}:${String(remainingSec).padStart(2, "0")}` : submitting ? "Opening WhatsApp…" : `Pay ${plan.amount} NLe on WhatsApp`}
-      </button>
+      <div className="space-y-3">
+        <button
+          type="button"
+          onClick={pay}
+          disabled={busy}
+          className="flex min-h-14 w-full items-center justify-center gap-2 rounded-2xl bg-primary px-5 py-3 text-lg font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition-colors hover:bg-brand-strong disabled:opacity-60"
+        >
+          {busy ? <Loader2 className="h-5 w-5 animate-spin motion-reduce:animate-none" aria-hidden /> : <Lock className="h-5 w-5" aria-hidden />}
+          {busy ? 'Opening the payment page…' : `Pay ${plan.priceNle} NLe`}
+        </button>
+        <p className="flex items-center justify-center gap-1.5 text-center text-sm text-muted-foreground">
+          <ShieldCheck className="h-4 w-4 shrink-0 text-success" aria-hidden /> Secure checkout by Monime: Orange Money, AfriMoney and more
+        </p>
+      </div>
 
-      <button
-        onClick={() => navigate({ to: '/' })}
-        className="flex min-h-11 w-full items-center justify-center text-sm text-muted-foreground hover:text-foreground"
-      >
-        Maybe later
-      </button>
+      <div className="space-y-2 rounded-2xl bg-muted/50 p-4 text-sm text-muted-foreground">
+        <p className="flex gap-2"><Clock className="mt-0.5 h-4 w-4 shrink-0" aria-hidden /> No automatic renewal. When your plan ends you go back to the free account, and your progress is kept.</p>
+        <p>
+          Trouble paying? <a href={whatsappChatLink('Hello WASSCE Tutor, I need help paying for a plan.')} target="_blank" rel="noopener" className="font-semibold text-primary hover:underline">WhatsApp {CONTACT.phoneDisplay}</a>
+        </p>
+      </div>
+
+      {!access.hasAccess && (
+        <div className="space-y-2 border-t pt-5">
+          <p className="text-sm font-semibold">Not ready yet? Your free account keeps</p>
+          <ul className="space-y-1.5 text-sm text-muted-foreground">
+            {FREE_FEATURES.map((f) => (
+              <li key={f} className="flex gap-2"><Check className="mt-0.5 h-4 w-4 shrink-0 text-success" aria-hidden /> {f}</li>
+            ))}
+          </ul>
+          <button type="button" onClick={() => navigate({ to: '/' })} className="inline-flex min-h-11 items-center text-sm font-semibold text-primary hover:underline">
+            Keep studying for free
+          </button>
+        </div>
+      )}
     </div>
   )
+}
+
+function PlanCards({ selected, onSelect, interactive = true }: { selected: PlanId; onSelect: (p: PlanId) => void; interactive?: boolean }) {
+  return (
+    <div role={interactive ? 'radiogroup' : undefined} aria-label="Plans" className="grid gap-3 sm:grid-cols-2">
+      {PLANS.map((p) => {
+        const on = interactive && selected === p.id
+        const Tag = interactive ? 'button' : 'div'
+        return (
+          <Tag
+            key={p.id}
+            {...(interactive ? { type: 'button' as const, role: 'radio', 'aria-checked': on, onClick: () => onSelect(p.id) } : {})}
+            className={`relative flex flex-col rounded-2xl bg-card p-5 text-left transition ${
+              on ? 'ring-2 ring-primary shadow-[0_16px_32px_-20px_rgba(76,29,149,0.6)]' : 'ring-1 ring-border hover:ring-primary/40'
+            }`}
+          >
+            {p.best && <span className="absolute -top-2.5 left-5 rounded-full bg-primary px-2.5 py-0.5 text-xs font-bold text-primary-foreground">Best value</span>}
+            <span className="flex items-center justify-between gap-2">
+              <span className="font-bold">{p.name}</span>
+              {interactive && (
+                <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 ${on ? 'border-primary bg-primary text-primary-foreground' : 'border-muted-foreground/30'}`} aria-hidden>
+                  {on && <Check className="h-4 w-4" />}
+                </span>
+              )}
+            </span>
+            <span className="mt-2 text-4xl font-bold tracking-tight tabular-nums">
+              {p.priceNle}<span className="ml-1 text-base font-semibold text-muted-foreground">NLe</span>
+            </span>
+            <span className="text-sm font-semibold text-muted-foreground">for {p.length}</span>
+            <span className="mt-2 text-sm text-muted-foreground">{p.blurb}</span>
+          </Tag>
+        )
+      })}
+    </div>
+  )
+}
+
+function whatsappText(plan: PlanId, email: string, reference: string) {
+  const p = planById(plan)!
+  return [
+    "Hello WASSCE Tutor, I'd like to pay for a plan.",
+    '',
+    `Plan: ${p.name} (${p.priceNle} NLe for ${p.length})`,
+    `Email: ${email}`,
+    `Reference: ${reference}`,
+    '',
+    'Please send Orange Money / AfriMoney details.',
+  ].join('\n')
+}
+
+/** WT-XXXXX: 5 characters, no I, L, O or U, easy to read out. */
+function reference(): string {
+  const chars = '0123456789ABCDEFGHJKMNPQRSTVWXYZ'
+  return `WT-${Array.from({ length: 5 }, () => chars[Math.floor(Math.random() * chars.length)]).join('')}`
+}
+
+/**
+ * Fallback while online checkout is not switched on: records the request for
+ * Admin → Payments (best effort), then the student finishes on WhatsApp.
+ */
+async function requestOnWhatsApp(userId: string, plan: PlanId): Promise<string> {
+  const ref = reference()
+  const p = planById(plan)!
+  const { error } = await supabase.from('payment_requests').insert({ user_id: userId, plan, amount_nle: p.priceNle, reference_code: ref })
+  if (error) console.warn('Payment request not saved:', error.message)
+  return ref
 }

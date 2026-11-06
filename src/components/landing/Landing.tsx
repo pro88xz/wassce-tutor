@@ -18,6 +18,7 @@ import { SwipeRow } from '@/components/ds/SwipeRow'
 import { TUTOR_PHOTO } from '@/lib/tutors'
 import { ProductTour } from '@/components/landing/ProductTour'
 import { DownloadButton } from '@/components/DownloadButton'
+import { FREE_FEATURES, FROM_PRICE, PAID_FEATURES, PLANS, type PlanId } from '@/lib/plans'
 import { TopicSearch } from '@/components/landing/TopicSearch'
 
 export function Landing({ data }: { data: LandingData }) {
@@ -65,11 +66,11 @@ function Hero() {
             to="/auth"
             className="inline-flex min-h-12 py-2 w-full items-center justify-center rounded-xl bg-white px-7 text-base font-semibold text-brand-strong transition-colors hover:bg-brand-soft sm:w-auto text-center"
           >
-            Start free for 7 days
+            Start free
           </Link>
           <DownloadButton variant="hero" />
         </div>
-        <p className="text-sm text-white/75">7 days free, no card needed · then from 25 NLe a month with Orange Money or AfriMoney</p>
+        <p className="text-sm text-white/75">Free account, no card needed · unlock everything for 25 NLe a whole academic year</p>
       </div>
     </section>
   )
@@ -81,7 +82,7 @@ function TrustStrip({ data }: { data: LandingData }) {
     [String(data.totals.subjects), 'WASSCE subjects'],
     [String(data.totals.topics), 'syllabus topics'],
     [String(data.totals.lessons), 'lessons written'],
-    ['25 NLe', 'a month, everything included'],
+    ['25 NLe', 'a full year, everything included'],
   ]
   return (
     <section aria-label="WASSCE Tutor in numbers" className="relative z-10 -mt-12 grid grid-cols-2 overflow-hidden rounded-2xl border bg-card shadow-sm sm:grid-cols-4">
@@ -400,54 +401,78 @@ function GuideTeaser() {
 }
 
 /** Structurally identical cards; terms stated in full, not in footnotes. */
+/** Free account, then two paid plans; terms stated in full, not in footnotes. */
 function Plans() {
-  // Prices are also enforced in the database (payment_requests policy); see subscribe.tsx.
-  const plans = [
-    { name: 'Monthly', price: 25, period: 'per month', perMonth: '25 NLe a month', saving: 'Pay one month at a time', best: false },
-    { name: 'Quarterly', price: 60, period: 'per 3 months', perMonth: '20 NLe a month', saving: 'Save 15 NLe', best: false },
-    { name: 'Yearly', price: 220, period: 'per year', perMonth: '18.33 NLe a month', saving: 'Save 80 NLe', best: true },
+  // Prices live in src/lib/plans.ts (and are enforced by the server and the database).
+  const cards = [
+    {
+      key: 'free',
+      name: 'Free account',
+      price: 0,
+      length: 'no time limit',
+      blurb: 'Try every subject before you pay.',
+      features: FREE_FEATURES,
+      cta: 'Create a free account',
+      to: '/auth' as const,
+      best: false,
+    },
+    ...PLANS.map((p) => ({
+      key: p.id,
+      name: p.name,
+      price: p.priceNle,
+      length: p.length,
+      blurb: p.blurb,
+      features: PAID_FEATURES,
+      cta: `Get ${p.name.toLowerCase()}`,
+      to: '/subscribe' as const,
+      best: !!p.best,
+    })),
   ]
-  const includes = ['Every subject and lesson', 'Every practice set', 'The AI tutor', 'Progress tracking']
   return (
     <section id="plans" className="scroll-mt-20 space-y-8">
-      <SectionTitle eyebrow="Plans" title="One price, everything included" body="Every plan unlocks every subject, every practice set and the AI tutor. Start with 7 days free." />
-      <div className="mx-auto grid max-w-4xl gap-3 sm:grid-cols-3">
-        {plans.map((p, i) => (
-          <div key={p.name} data-reveal={i} className={`flex flex-col rounded-2xl bg-card p-5 transition-shadow hover:shadow-lg ${p.best ? 'border-2 border-primary' : 'border'}`}>
-            <div className="flex min-h-6 items-center justify-between">
-              <h3 className="font-semibold">{p.name}</h3>
-              {p.best && <span className="rounded-full bg-brand-soft px-2.5 py-0.5 text-xs font-semibold text-primary">Lowest monthly cost</span>}
-            </div>
+      <SectionTitle eyebrow="Plans" title="Start free. Unlock everything for one small payment." body={`A free account opens the first lesson of every topic. A plan opens every lesson, every practice set and the AI tutor, from ${FROM_PRICE} NLe.`} />
+      <div className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-3">
+        {cards.map((c, i) => (
+          <div
+            key={c.key}
+            data-reveal={i}
+            className={`relative flex flex-col rounded-3xl bg-card p-6 transition-shadow hover:shadow-lg ${
+              c.best ? 'border-2 border-primary shadow-[0_24px_48px_-28px_rgba(76,29,149,0.55)]' : 'border'
+            }`}
+          >
+            {c.best && <span className="absolute -top-3 left-6 rounded-full bg-primary px-3 py-1 text-xs font-bold text-primary-foreground">Best value</span>}
+            <h3 className="font-semibold">{c.name}</h3>
             <p className="mt-3">
-              <span className="text-4xl font-bold tracking-tight tabular-nums">{p.price}</span>
-              <span className="ml-1 text-sm font-semibold text-muted-foreground">NLe {p.period}</span>
+              <span className="text-4xl font-bold tracking-tight tabular-nums">{c.price === 0 ? 'Free' : c.price}</span>
+              {c.price > 0 && <span className="ml-1 text-sm font-semibold text-muted-foreground">NLe</span>}
             </p>
-            <p className="mt-1 text-sm text-muted-foreground">{p.perMonth}</p>
-            <p className={`text-sm font-semibold ${p.best || p.saving.startsWith('Save') ? 'text-success' : 'text-muted-foreground'}`}>{p.saving}</p>
+            <p className="text-sm font-semibold text-muted-foreground">{c.price === 0 ? c.length : `for ${c.length}`}</p>
+            <p className="mt-1 text-sm text-muted-foreground">{c.blurb}</p>
             <ul className="mt-4 flex-1 space-y-2 border-t pt-4 text-sm">
-              {includes.map((t) => (
-                <li key={t} className="flex items-center gap-2">
-                  <Check className="h-4 w-4 shrink-0 text-success" aria-hidden /> {t}
+              {c.features.map((t) => (
+                <li key={t} className="flex gap-2">
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-success" aria-hidden /> {t}
                 </li>
               ))}
             </ul>
             <Link
-              to="/auth"
-              className={`mt-5 inline-flex h-11 items-center justify-center rounded-xl text-sm font-semibold transition-colors ${
-                p.best ? 'bg-primary text-primary-foreground hover:bg-brand-strong' : 'border bg-card hover:border-primary/40'
+              to={c.to}
+              {...(c.to === '/subscribe' ? { search: { plan: c.key as PlanId } } : {})}
+              className={`mt-5 inline-flex min-h-11 items-center justify-center rounded-xl px-4 py-2 text-center text-sm font-semibold transition-colors ${
+                c.best ? 'bg-primary text-primary-foreground hover:bg-brand-strong' : 'border bg-card hover:border-primary/40'
               }`}
             >
-              Start 7 days free
+              {c.cta}
             </Link>
           </div>
         ))}
       </div>
       <ul className="mx-auto grid max-w-4xl gap-x-6 gap-y-3 rounded-2xl border bg-card p-5 text-sm text-muted-foreground sm:grid-cols-2">
         {[
-          ['Free trial', '7 days with full access. No card needed.'],
-          ['After the trial', 'Lessons, practice and the AI tutor need a plan. Your progress is kept.'],
-          ['Paying', 'Orange Money or AfriMoney. We confirm on WhatsApp and switch your plan on.'],
-          ['No automatic renewal', 'A plan simply ends on its last day unless you choose to pay again.'],
+          ['No free trial needed', 'The free account never runs out, so you can study before you decide.'],
+          ['Paying', 'Orange Money, AfriMoney and more, through a secure Monime checkout. Your plan switches on as soon as the payment is confirmed.'],
+          ['No automatic renewal', 'A plan simply ends on its last day. You go back to the free account, and your progress is kept.'],
+          ['Buying again', 'Paying while a plan is running adds the new time on top, so nothing is lost.'],
         ].map(([title, body]) => (
           <li key={title} className="flex gap-2">
             <CircleCheck className="mt-0.5 h-4 w-4 shrink-0 text-success" aria-hidden />
@@ -460,10 +485,10 @@ function Plans() {
 }
 
 const FAQ: [question: string, answer: string][] = [
-  ['Is WASSCE Tutor free?', 'You get 7 days free with full access, no card needed. After that, plans start at NLe 25 a month, and every plan includes every subject, every practice set and the AI tutor.'],
+  ['Is WASSCE Tutor free?', 'Yes, to start. A free account opens every subject, the first lesson of every topic and a starter practice set in every subject, with no time limit. To unlock everything, pay 10 NLe for a term (4 months) or 25 NLe for a full academic year (12 months).'],
   ['Which subjects are covered?', 'All the main WASSCE subjects for Science, Arts, Commercial and Technical students, including English Language and Mathematics. Each subject is broken down topic by topic, and new lessons are added all the time.'],
   ['Are these real WAEC past papers?', 'No. Practice sets are original WASSCE-style questions written by WASSCE Tutor to match the syllabus and the exam format, each with the full working. We do not copy WAEC papers.'],
-  ['How do I pay?', 'Choose a plan, then pay with Orange Money or AfriMoney. We confirm your payment on WhatsApp and switch your plan on. Plans do not renew automatically.'],
+  ['How do I pay?', 'Choose a plan and pay on the secure Monime checkout page with Orange Money, AfriMoney and more. Your plan switches on as soon as the payment is confirmed. Plans do not renew automatically.'],
   ['Does it work on my phone?', 'Yes. WASSCE Tutor works in any phone browser, and there is an Android app you can install from this page. It is built to work on patchy data.'],
   ['Who writes the lessons?', 'Lessons are drafted with the help of AI and follow the WASSCE syllabus. Lessons we publish openly on this website are checked by a named reviewer first, and their name appears on the lesson.'],
   ['Is this the official WAEC website?', 'No. WASSCE Tutor is an independent study app built in Sierra Leone. For registration, timetables and results, always use official WAEC channels.'],
@@ -495,10 +520,10 @@ function FinalCta() {
     <section className="rounded-2xl bg-brand-soft px-6 py-10 text-center sm:py-12">
       <div className="mx-auto max-w-xl space-y-4">
         <h2 className="text-[1.75rem] font-bold leading-tight tracking-tight text-balance text-brand-deep sm:text-3xl">Your WASSCE is closer than you think.</h2>
-        <p className="text-[15px] text-brand-strong">Start with one topic today. 7 days free, no card needed.</p>
+        <p className="text-[15px] text-brand-strong">Start with one topic today. Free account, no card needed.</p>
         <div className="flex flex-col items-center justify-center gap-3 pt-2 sm:flex-row">
           <Link to="/auth" className="inline-flex min-h-12 py-2 w-full items-center justify-center rounded-xl bg-primary px-7 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong sm:w-auto text-center">
-            Start free for 7 days
+            Start free
           </Link>
           <DownloadButton variant="outline" />
         </div>

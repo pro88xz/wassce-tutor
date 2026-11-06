@@ -11,6 +11,7 @@ import {
   CircleCheck,
   ClipboardList,
   Lightbulb,
+  Lock,
   MessageCircleQuestion,
   PlayCircle,
   UserRound,
@@ -29,7 +30,10 @@ import {
   type SubjectProgress,
   type SubjectRef,
 } from '@/lib/progress'
-import { checkAccess } from '@/lib/access'
+import { checkAccess, lessonLocked } from '@/lib/access'
+import { useAccess } from '@/lib/useAccess'
+import { FROM_PRICE } from '@/lib/plans'
+import { FreePlanBanner } from '@/components/FreePlanBanner'
 import { subjectTheme } from '@/lib/subject-theme'
 import { ProgressBar } from '@/components/ds/Progress'
 import { EmptyState, MetricCard, Pill, ScorePill, SectionHeader, Skeleton } from '@/components/ds/Primitives'
@@ -152,25 +156,24 @@ export function Dashboard({ user, profile }: { user: User; profile: Profile | nu
   )
 }
 
-/* ── Subscription notice: only when something is about to change or has changed ── */
+/* ── Plan notice: a free account's way to the rest, or a plan about to end ── */
 
 function AccessNotice({ profile }: { profile: Profile | null | undefined }) {
   const a = checkAccess(profile)
   if (a.reason === 'admin' || a.reason === 'no-profile') return null
   const day = (n: number) => (n === 1 ? 'tomorrow' : `in ${n} days`)
+  // Free accounts (and ended plans) get the slim free-account banner.
+  if (a.reason === 'expired') return <FreePlanBanner />
   let title: string
   let body: string
   if (a.reason === 'subscribed') {
-    if (a.subscriptionDaysLeft > 3) return null
+    if (a.subscriptionDaysLeft > 7) return null
     title = `Your plan ends ${day(a.subscriptionDaysLeft)}`
-    body = 'Renew to keep lessons, practice and the AI tutor open without a break.'
-  } else if (a.reason === 'trial') {
+    body = 'Add more time to keep every lesson, practice set and the AI tutor open without a break.'
+  } else {
     if (a.trialDaysLeft > 2) return null
     title = `Your free trial ends ${day(a.trialDaysLeft)}`
-    body = 'Choose a plan to keep lessons, practice and the AI tutor open. Your progress is kept either way.'
-  } else {
-    title = profile?.subscription_expires_at ? 'Your plan has ended' : 'Your free trial has ended'
-    body = 'Lessons, practice and the AI tutor need an active plan. Everything you have done so far is saved.'
+    body = `After that your free account keeps the first lesson of every topic. A plan opens everything, from ${FROM_PRICE} NLe.`
   }
   return (
     <div className="flex flex-col gap-3 rounded-2xl border border-warning/30 bg-warning/5 p-4 sm:flex-row sm:items-center sm:justify-between" role="status">
@@ -179,7 +182,7 @@ function AccessNotice({ profile }: { profile: Profile | null | undefined }) {
         <p className="text-sm text-muted-foreground">{body}</p>
       </div>
       <Button asChild size="sm" className="shrink-0 self-start sm:self-auto">
-        <Link to="/subscribe">See plans</Link>
+        <Link to="/subscribe" search={{ plan: 'year' }}>See plans</Link>
       </Button>
     </div>
   )
@@ -189,6 +192,9 @@ function AccessNotice({ profile }: { profile: Profile | null | undefined }) {
 
 function ContinueCard({ summary, started }: { summary: ProgressSummary; started: boolean }) {
   const next = summary.next!
+  // On a free account the next lesson may be behind the plan: say so on the button.
+  const { access } = useAccess()
+  const locked = lessonLocked(access, next.lesson)
   const sp = summary.subjects.find((s) => s.subject.id === next.subject.id)
   const tp = sp?.topics.find((t) => t.topic.id === next.topic.id)
   const index = next.topic.lessons.findIndex((l) => l.id === next.lesson.id) + 1
@@ -224,11 +230,19 @@ function ContinueCard({ summary, started }: { summary: ProgressSummary; started:
         )}
       </div>
 
-      <Button asChild size="lg" className="mt-5 w-full sm:w-auto">
-        <Link to="/lesson/$lessonId" params={{ lessonId: next.lesson.id }}>
-          {started ? 'Continue' : 'Start lesson'} <ArrowRight className="h-4 w-4" aria-hidden />
-        </Link>
-      </Button>
+      {locked ? (
+        <Button asChild size="lg" className="mt-5 w-full sm:w-auto">
+          <Link to="/subscribe" search={{ plan: 'year' }}>
+            <Lock className="h-4 w-4" aria-hidden /> Unlock to continue · from {FROM_PRICE} NLe
+          </Link>
+        </Button>
+      ) : (
+        <Button asChild size="lg" className="mt-5 w-full sm:w-auto">
+          <Link to="/lesson/$lessonId" params={{ lessonId: next.lesson.id }}>
+            {started ? 'Continue' : 'Start lesson'} <ArrowRight className="h-4 w-4" aria-hidden />
+          </Link>
+        </Button>
+      )}
     </section>
   )
 }

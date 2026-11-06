@@ -37,8 +37,8 @@ export const PUBLIC_PAGES = {
     title: 'WASSCE Practice Questions & Lessons in Sierra Leone | WASSCE Tutor',
     ogTitle: 'WASSCE Tutor: Pass WASSCE with confidence',
     description:
-      'WASSCE lessons and practice questions for Sierra Leone students, with full working, an AI tutor and one-to-one tutors. From NLe 25 a month, 7 days free.',
-    lastmod: '2026-11-06',
+      'WASSCE lessons and practice questions for Sierra Leone students, with full working, an AI tutor and one-to-one tutors. Free to start; everything from NLe 10.',
+    lastmod: '2026-11-07',
   },
   '/about': {
     title: 'About WASSCE Tutor: WASSCE Prep Built in Sierra Leone',
@@ -62,7 +62,7 @@ export const PUBLIC_PAGES = {
     title: 'Terms of Service | WASSCE Tutor',
     description:
       'The terms that apply when you create an account or use WASSCE Tutor, including subscriptions, payments and acceptable use.',
-    lastmod: '2026-06-08',
+    lastmod: '2026-11-07',
   },
 } as const satisfies Record<string, PublicPage>
 
@@ -109,7 +109,7 @@ const ORGANIZATION = {
     addressCountry: CONTACT.countryCode,
   },
   areaServed: { '@type': 'Country', name: CONTACT.country },
-  priceRange: 'NLe 25–220',
+  priceRange: 'NLe 10–25',
   contactPoint: [
     {
       '@type': 'ContactPoint',
@@ -149,7 +149,7 @@ const HOME_JSON_LD = {
         audienceType: 'WASSCE candidates',
         geographicArea: { '@type': 'Country', name: 'Sierra Leone' },
       },
-      offers: { '@type': 'AggregateOffer', priceCurrency: 'SLE', lowPrice: '25', highPrice: '220', offerCount: '3' },
+      offers: { '@type': 'AggregateOffer', priceCurrency: 'SLE', lowPrice: '0', highPrice: '25', offerCount: '3' },
       provider: { '@id': ORG_ID },
     },
   ],

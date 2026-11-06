@@ -79,6 +79,8 @@ export type PaperRow = {
   paper_type: string | null
   description: string | null
   question_count: number
+  /** The subject's free starter set (migration 07; missing before it) */
+  is_free?: boolean
 }
 
 export type OptionRow = {
@@ -127,7 +129,8 @@ export function usePapersForSubjects(subjectIds: string[]) {
     queryFn: async (): Promise<PaperRow[]> => {
       const { data, error } = await supabase
         .from('papers')
-        .select('id, subject_id, title, year, paper_type, description, question_count')
+        // '*' rather than a column list, so is_free is included once migration 07 adds it
+        .select('*')
         .in('subject_id', ids)
         .eq('is_published', true)
         .order('sort_order')
@@ -250,12 +253,25 @@ export function useTopics(subjectId: string | null) {
   })
 }
 
-// Lessons in a topic + the topic itself
+/** A lesson in a list: title and length, never the content (wassce_lesson_index). */
+export type LessonSummary = {
+  id: string
+  topic_id: string
+  slug: string
+  title: string
+  est_minutes: number | null
+  sort_order: number
+  /** The first lesson of its topic, open on a free account (migration 07; missing before it) */
+  is_free?: boolean
+}
+
+// Lessons in a topic + the topic itself. The list comes from the lesson
+// index, so a free account sees every lesson (the locked ones too).
 export function useTopic(topicId: string | null) {
   return useQuery({
     queryKey: ['topic', topicId],
     enabled: !!topicId,
-    queryFn: async (): Promise<{ topic: Topic; lessons: Lesson[] } | null> => {
+    queryFn: async (): Promise<{ topic: Topic; lessons: LessonSummary[] } | null> => {
       const { data: topic, error: tErr } = await supabase
         .from('topics')
         .select('*')
@@ -264,19 +280,20 @@ export function useTopic(topicId: string | null) {
       if (tErr) throw tErr
 
       const { data: lessons, error: lErr } = await supabase
-        .from('lessons')
+        .from('wassce_lesson_index')
         .select('*')
         .eq('topic_id', topicId!)
-        .eq('is_published', true)
         .order('sort_order')
+        .order('id')
       if (lErr) throw lErr
 
-      return { topic: topic as Topic, lessons: (lessons ?? []) as Lesson[] }
+      return { topic: topic as Topic, lessons: (lessons ?? []) as LessonSummary[] }
     },
   })
 }
 
-// A single lesson by id
+// A single lesson by id, with its content. Null when the lesson is behind a
+// plan the student does not have (the database does not return it).
 export function useLesson(lessonId: string | null) {
   return useQuery({
     queryKey: ['lesson', lessonId],
@@ -286,9 +303,22 @@ export function useLesson(lessonId: string | null) {
         .from('lessons')
         .select('*')
         .eq('id', lessonId!)
-        .single()
+        .maybeSingle()
       if (error) throw error
-      return data as Lesson
+      return (data as Lesson | null) ?? null
+    },
+  })
+}
+
+// A lesson's title and place, readable on any account (for the locked screen).
+export function useLessonSummary(lessonId: string | null) {
+  return useQuery({
+    queryKey: ['lesson-summary', lessonId],
+    enabled: !!lessonId,
+    queryFn: async (): Promise<LessonSummary | null> => {
+      const { data, error } = await supabase.from('wassce_lesson_index').select('*').eq('id', lessonId!).maybeSingle()
+      if (error) throw error
+      return (data as LessonSummary | null) ?? null
     },
   })
 }
@@ -300,6 +330,7 @@ export type PaperMeta = {
   year: number | null
   paper_type: string | null
   description: string | null
+  is_free?: boolean
   subject: { id: string; slug: string; name: string } | null
 }
 
@@ -310,7 +341,7 @@ export function usePaperMeta(paperId: string | null) {
     queryFn: async (): Promise<PaperMeta | null> => {
       const { data, error } = await supabase
         .from('papers')
-        .select('id, title, year, paper_type, description, subject:subjects(id, slug, name)')
+        .select('*, subject:subjects(id, slug, name)')
         .eq('id', paperId!)
         .maybeSingle()
       if (error) throw error

@@ -1,7 +1,10 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
-import { ArrowRight, ChevronRight, CircleCheck, Clock, RotateCcw } from 'lucide-react'
+import { ArrowRight, ChevronRight, CircleCheck, Clock, Lock, RotateCcw } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
-import { AccessGate } from '@/components/AccessGate'
+import { FreePlanBanner } from '@/components/FreePlanBanner'
+import { useAccess } from '@/lib/useAccess'
+import { lessonLocked, paperLocked } from '@/lib/access'
+import { FROM_PRICE } from '@/lib/plans'
 import { useAuth } from '@/lib/auth'
 import { usePapers, useSubject, useTopic } from '@/lib/queries'
 import { useCompletedLessons, useScoredAttempts } from '@/lib/progress'
@@ -26,6 +29,7 @@ function TopicPage() {
   const { palette } = subjectTheme(subject?.slug)
   const { data: papers } = usePapers(data?.topic.subject_id ?? null)
   const { data: attempts } = useScoredAttempts(user?.id ?? null)
+  const { access } = useAccess()
 
   if (isLoading) {
     return (
@@ -47,9 +51,10 @@ function TopicPage() {
   const practice = papers ? setForTopic(papers, { name: topic.name, subject_id: topic.subject_id }) : undefined
   const best = bestByPaper(attempts ?? [])
   const last = practice ? latestByPaper(attempts ?? []).get(practice.id) : undefined
+  const isLocked = (l: { is_free?: boolean }) => lessonLocked(access, l)
+  const anyLocked = lessons.some(isLocked)
 
   return (
-    <AccessGate>
       <div className="mx-auto max-w-2xl space-y-6">
         <nav aria-label="Breadcrumb" className="-mb-2">
           <ol className="flex min-w-0 items-center gap-1.5 text-sm text-muted-foreground">
@@ -87,7 +92,13 @@ function TopicPage() {
               </p>
             </div>
           )}
-          {cta && (
+          {cta && isLocked(cta) ? (
+            <Button asChild size="lg" className="w-full sm:w-auto">
+              <Link to="/subscribe" search={{ plan: 'year' }}>
+                <Lock className="h-4 w-4" aria-hidden /> Unlock this topic · from {FROM_PRICE} NLe
+              </Link>
+            </Button>
+          ) : cta && (
             <Button asChild variant={allDone ? 'outline' : 'default'} size="lg" className="w-full sm:w-auto">
               <Link to="/lesson/$lessonId" params={{ lessonId: cta.id }}>
                 {allDone ? <><RotateCcw className="h-4 w-4" aria-hidden /> Review from lesson 1</> : <>{doneCount === 0 ? 'Start lesson 1' : 'Continue'} <ArrowRight className="h-4 w-4" aria-hidden /></>}
@@ -95,6 +106,8 @@ function TopicPage() {
             </Button>
           )}
         </header>
+
+        {anyLocked && <FreePlanBanner what="The first lesson of every topic is free." />}
 
         <section className="space-y-3" aria-labelledby="lessons-title">
           <h2 id="lessons-title" className="text-lg font-bold tracking-tight">Lessons</h2>
@@ -104,7 +117,8 @@ function TopicPage() {
             <ol className="divide-y rounded-2xl border bg-card">
               {lessons.map((l, i) => {
                 const done = isDone(l.id)
-                const upNext = !allDone && next?.id === l.id
+                const locked = isLocked(l)
+                const upNext = !allDone && next?.id === l.id && !locked
                 return (
                   <li key={l.id}>
                     <Link
@@ -115,6 +129,10 @@ function TopicPage() {
                     >
                       {done ? (
                         <CircleCheck className="h-7 w-7 shrink-0 text-success" aria-hidden />
+                      ) : locked ? (
+                        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-muted text-muted-foreground" aria-hidden>
+                          <Lock className="h-3.5 w-3.5" />
+                        </span>
                       ) : (
                         <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-sm font-bold ${upNext ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground'}`} aria-hidden>
                           {i + 1}
@@ -123,7 +141,15 @@ function TopicPage() {
                       <span className="min-w-0 flex-1">
                         <span className="block line-clamp-2 font-semibold">{l.title}</span>
                         <span className="block text-xs text-muted-foreground">
-                          {done ? <span className="font-semibold text-success">Completed</span> : upNext ? <span className="font-semibold text-primary">Up next</span> : 'Not started'}
+                          {done ? (
+                            <span className="font-semibold text-success">Completed</span>
+                          ) : locked ? (
+                            'Included in a plan'
+                          ) : upNext ? (
+                            <span className="font-semibold text-primary">Up next{!access.hasAccess && l.is_free ? ' · Free' : ''}</span>
+                          ) : (
+                            'Not started'
+                          )}
                           {l.est_minutes ? ` · ${l.est_minutes} min` : ''}
                         </span>
                       </span>
@@ -149,11 +175,15 @@ function TopicPage() {
               </p>
             </div>
             <ul className="rounded-2xl border bg-card">
-              <PracticeSetRow paper={practice} best={best.get(practice.id)} accent={palette.bar} />
+              <PracticeSetRow
+                paper={practice}
+                best={best.get(practice.id)}
+                accent={palette.bar}
+                access={access.hasAccess ? undefined : paperLocked(access, practice) ? 'locked' : 'free'}
+              />
             </ul>
           </section>
         )}
       </div>
-    </AccessGate>
   )
 }

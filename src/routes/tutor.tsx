@@ -21,6 +21,7 @@ async function ensureMarkdownPlugins() {
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { checkAccess } from '@/lib/access'
+import { PLANS } from '@/lib/plans'
 import { supabase } from '@/lib/supabase'
 import { Flag, Sparkles } from 'lucide-react'
 import { SubjectIcon } from '@/lib/subject-theme'
@@ -141,7 +142,7 @@ function TutorPage() {
           >
             Unlock the AI Tutor
           </Link>
-          <p className="text-xs text-muted-foreground">Included in every plan, from 25 NLe / month.</p>
+          <p className="text-xs text-muted-foreground">Included in both plans: {PLANS.map((p) => `${p.name}, ${p.priceNle} NLe for ${p.length}`).join(' · ')}.</p>
         </div>
       </div>
     )

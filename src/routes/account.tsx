@@ -22,6 +22,7 @@ import { useAuth } from '@/lib/auth'
 import { supabase } from '@/lib/supabase'
 import { useProfile, useStudentSubjects } from '@/lib/queries'
 import { checkAccess } from '@/lib/access'
+import { FROM_PRICE, PLANS } from '@/lib/plans'
 import { getTheme, toggleTheme, type Theme } from '@/lib/theme'
 import { fetchLatestVersion, getInstalledVersion, isNewerVersion } from '@/lib/version'
 import { initialsOf } from '@/lib/nav'
@@ -194,26 +195,39 @@ function LearningSection({ userId }: { userId: string }) {
 
 /* ------------------------------------------------------------------ */
 
-type PaymentRow = {
+type HistoryRow = {
   id: string
   plan: string
   amount_nle: number
-  reference_code: string
-  status: 'pending' | 'activated' | 'cancelled'
   created_at: string
-  activated_at: string | null
+  /** Monime checkout, or a request paid on WhatsApp */
+  via: 'monime' | 'whatsapp'
+  status: string
+  reference_code?: string
 }
 
-const PLAN_NAMES: Record<string, string> = { monthly: 'Monthly', quarterly: 'Quarterly', yearly: 'Yearly' }
+const PLAN_NAMES: Record<string, string> = {
+  term: 'Term pass',
+  year: 'Academic year',
+  // plans sold before November 2026
+  monthly: 'Monthly',
+  quarterly: 'Quarterly',
+  yearly: 'Yearly',
+}
 
-const STATUS: Record<PaymentRow['status'], { label: string; tone: string }> = {
+const STATUS: Record<string, { label: string; tone: string }> = {
+  completed: { label: 'Paid', tone: 'bg-success/10 text-success' },
+  activated: { label: 'Paid', tone: 'bg-success/10 text-success' },
   pending: { label: 'Waiting for confirmation', tone: 'bg-warning/10 text-warning' },
-  activated: { label: 'Activated', tone: 'bg-success/10 text-success' },
   cancelled: { label: 'Cancelled', tone: 'bg-muted text-muted-foreground' },
+  expired: { label: 'Not completed', tone: 'bg-muted text-muted-foreground' },
 }
 
 const formatDate = (iso: string) =>
   new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+
+/** A table that does not exist yet (before its migration) reads as empty. */
+const missingTable = (e: { code?: string } | null) => e?.code === 'PGRST205' || e?.code === '42P01'
 
 function trialEnd(profile: Profile): string | null {
   if (!profile.trial_started_at) return null
@@ -223,16 +237,20 @@ function trialEnd(profile: Profile): string | null {
 function SubscriptionSection({ profile, userId }: { profile: Profile; userId: string }) {
   const access = checkAccess(profile)
   const payments = useQuery({
-    queryKey: ['payment_requests', userId],
-    queryFn: async (): Promise<PaymentRow[]> => {
-      const { data, error } = await supabase
-        .from('payment_requests')
-        .select('id, plan, amount_nle, reference_code, status, created_at, activated_at')
-        .eq('user_id', userId)
-        .order('created_at', { ascending: false })
-        .limit(12)
-      if (error) throw error
-      return (data ?? []) as PaymentRow[]
+    queryKey: ['payment-history', userId],
+    queryFn: async (): Promise<HistoryRow[]> => {
+      const [online, whatsapp] = await Promise.all([
+        supabase.from('payments').select('id, plan, amount_nle, status, created_at').eq('user_id', userId).in('status', ['completed', 'pending', 'cancelled', 'expired']).order('created_at', { ascending: false }).limit(12),
+        supabase.from('payment_requests').select('id, plan, amount_nle, reference_code, status, created_at').eq('user_id', userId).order('created_at', { ascending: false }).limit(12),
+      ])
+      if (online.error && !missingTable(online.error)) throw online.error
+      if (whatsapp.error) throw whatsapp.error
+      return [
+        ...(online.data ?? []).map((r) => ({ ...r, via: 'monime' as const })),
+        ...(whatsapp.data ?? []).map((r) => ({ ...r, via: 'whatsapp' as const })),
+      ]
+        .sort((a, b) => b.created_at.localeCompare(a.created_at))
+        .slice(0, 12)
     },
   })
 
@@ -245,7 +263,7 @@ function SubscriptionSection({ profile, userId }: { profile: Profile; userId: st
       break
     case 'subscribed':
       status = {
-        pill: 'Active plan',
+        pill: PLAN_NAMES[profile.subscription_plan ?? ''] ?? 'Active plan',
         tone: 'bg-success/10 text-success',
         line: (
           <>
@@ -260,16 +278,16 @@ function SubscriptionSection({ profile, userId }: { profile: Profile; userId: st
         tone: 'bg-info/10 text-info',
         line: (
           <>
-            {days(access.trialDaysLeft)} left{ends && <>, ending <strong className="font-semibold text-foreground">{formatDate(ends)}</strong></>}. After that you'll need a plan to keep opening lessons, practice and the AI tutor. Your progress is kept.
+            {days(access.trialDaysLeft)} left{ends && <>, ending <strong className="font-semibold text-foreground">{formatDate(ends)}</strong></>}. After that your free account keeps the first lesson of every topic and a starter practice set in every subject. Your progress is kept.
           </>
         ),
       }
       break
     default:
       status = {
-        pill: 'No active plan',
+        pill: profile.subscription_expires_at ? 'Plan ended' : 'Free account',
         tone: 'bg-muted text-muted-foreground',
-        line: 'Choose a plan to unlock lessons, practice and the AI tutor again. Your progress is saved.',
+        line: `The first lesson of every topic and a starter practice set in every subject are open. A plan opens everything, from ${FROM_PRICE} NLe.`,
       }
   }
 
@@ -278,7 +296,7 @@ function SubscriptionSection({ profile, userId }: { profile: Profile; userId: st
       title="Subscription"
       action={access.reason !== 'admin' && (
         <Button size="sm" variant={access.reason === 'subscribed' ? 'outline' : 'default'} asChild>
-          <Link to="/subscribe">{access.reason === 'subscribed' ? 'Plans' : 'See plans'}</Link>
+          <Link to="/subscribe" search={{ plan: 'year' }}>{access.reason === 'subscribed' ? 'Add time' : 'See plans'}</Link>
         </Button>
       )}
     >
@@ -288,7 +306,7 @@ function SubscriptionSection({ profile, userId }: { profile: Profile; userId: st
       </div>
       <p className="mt-4 flex items-start gap-2 rounded-xl bg-muted/60 p-3 text-sm text-muted-foreground">
         <Smartphone className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
-        <span>Pay with Orange Money or AfriMoney. Plans start at 25 NLe a month, and access usually switches on within minutes of your payment being confirmed.</span>
+        <span>{PLANS.map((p) => `${p.name}: ${p.priceNle} NLe for ${p.length}`).join(' · ')}. Pay with Orange Money, AfriMoney and more; access switches on as soon as Monime confirms the payment. No automatic renewal.</span>
       </p>
 
       <h3 className="mt-5 text-sm font-semibold">Payment history</h3>
@@ -305,7 +323,7 @@ function SubscriptionSection({ profile, userId }: { profile: Profile; userId: st
                   {PLAN_NAMES[p.plan] ?? p.plan} · {p.amount_nle} NLe
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  {formatDate(p.created_at)} · Ref <span className="font-mono">{p.reference_code}</span>
+                  {formatDate(p.created_at)} · {p.via === 'monime' ? 'Online' : <>WhatsApp · Ref <span className="font-mono">{p.reference_code}</span></>}
                 </p>
               </div>
               <Pill className={STATUS[p.status]?.tone ?? 'bg-muted text-muted-foreground'}>{STATUS[p.status]?.label ?? p.status}</Pill>

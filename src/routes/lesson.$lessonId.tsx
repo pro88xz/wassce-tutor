@@ -1,10 +1,13 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
 import { CONTACT } from '@/lib/contact'
-import { ArrowLeft, ArrowRight, CircleCheck, Clock, Flag, MessageCircleQuestion, ShieldCheck } from 'lucide-react'
+import { ArrowLeft, ArrowRight, CircleCheck, Clock, Flag, Lock, MessageCircleQuestion, ShieldCheck } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
-import { AccessGate } from '@/components/AccessGate'
+import { LockedPanel } from '@/components/AccessGate'
+import { useAccess } from '@/lib/useAccess'
+import { lessonLocked } from '@/lib/access'
+import { FROM_PRICE } from '@/lib/plans'
 import { useAuth } from '@/lib/auth'
-import { useLesson, usePapers, useSubject, useTopic } from '@/lib/queries'
+import { useLesson, useLessonSummary, usePapers, useSubject, useTopic } from '@/lib/queries'
 import { setForTopic } from '@/lib/papers'
 import { Button } from '@/components/ui/button'
 import { useCompletedLessons, useSetLessonComplete } from '@/lib/progress'
@@ -23,8 +26,13 @@ export const Route = createFileRoute('/lesson/$lessonId')({
 function LessonPage() {
   const { lessonId } = useParams({ from: '/lesson/$lessonId' })
   const { user } = useAuth()
-  const { data: lesson, isLoading } = useLesson(lessonId)
-  const { data: topicData } = useTopic(lesson?.topic_id ?? null)
+  // The summary (title, topic) is readable on any account; the content only
+  // with a plan, or when this is the free first lesson of its topic.
+  const { data: summary, isLoading: summaryLoading } = useLessonSummary(lessonId)
+  const { data: lesson, isLoading: lessonLoading } = useLesson(lessonId)
+  const isLoading = summaryLoading || lessonLoading
+  const { data: topicData } = useTopic(lesson?.topic_id ?? summary?.topic_id ?? null)
+  const { access } = useAccess()
   const { data: subject } = useSubject(topicData?.topic.subject_id ?? null)
   const { data: completed } = useCompletedLessons(user?.id ?? null)
   const setComplete = useSetLessonComplete(user?.id ?? null)
@@ -39,7 +47,22 @@ function LessonPage() {
       </div>
     )
   }
-  if (!lesson) return <EmptyState title="Lesson not found" body="It may have been moved." />
+  if (!lesson) {
+    if (summary && !access.hasAccess) {
+      return (
+        <LockedPanel
+          kind="lesson"
+          name={summary.title}
+          back={
+            <Link to="/topic/$topicId" params={{ topicId: summary.topic_id }} className="-ml-1 inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground">
+              <ArrowLeft className="h-4 w-4" aria-hidden /> {topicData?.topic.name ?? 'Topic'}
+            </Link>
+          }
+        />
+      )
+    }
+    return <EmptyState title="Lesson not found" body="It may have been moved." />
+  }
 
   const siblings = topicData?.lessons ?? []
   const index = siblings.findIndex((l) => l.id === lesson.id)
@@ -54,8 +77,9 @@ function LessonPage() {
     `Lesson: ${lesson.title}\nTopic: ${topicData?.topic.name ?? ''}\nLink: https://wasscetutor.com/lesson/${lesson.id}\n\nWhat looks wrong:\n`,
   )}`
 
+  const nextLocked = next ? lessonLocked(access, next) : false
+
   return (
-    <AccessGate>
       <div className="mx-auto max-w-2xl space-y-6">
         {/* READER HEADER: back, position in topic, progress */}
         <div className="space-y-2">
@@ -134,7 +158,19 @@ function LessonPage() {
           )}
           {setComplete.isError && <p className="text-sm text-danger" role="alert">{(setComplete.error as Error).message}</p>}
 
-          {next ? (
+          {next && nextLocked ? (
+            <Link
+              to="/subscribe"
+              search={{ plan: 'year' }}
+              className="flex min-h-16 items-center justify-between gap-3 rounded-xl border border-primary/40 bg-brand-soft/50 px-4 py-3 transition-colors hover:border-primary"
+            >
+              <span className="min-w-0">
+                <span className="flex items-center gap-1 text-xs font-medium text-muted-foreground"><Lock className="h-3 w-3" aria-hidden /> Next lesson · in a plan from {FROM_PRICE} NLe</span>
+                <span className="block truncate font-semibold">{next.title}</span>
+              </span>
+              <ArrowRight className="h-5 w-5 shrink-0 text-primary" aria-hidden />
+            </Link>
+          ) : next ? (
             <Link
               to="/lesson/$lessonId"
               params={{ lessonId: next.id }}
@@ -184,6 +220,5 @@ function LessonPage() {
           </div>
         </section>
       </div>
-    </AccessGate>
   )
 }

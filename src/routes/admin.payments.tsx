@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
+import { useQuery } from '@tanstack/react-query'
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { supabase } from '@/lib/supabase'
@@ -13,7 +14,7 @@ export const Route = createFileRoute('/admin/payments')({
 type PaymentRow = {
   id: string
   user_id: string
-  plan: 'monthly' | 'quarterly' | 'yearly'
+  plan: string
   amount_nle: number
   reference_code: string
   status: 'pending' | 'activated' | 'cancelled'
@@ -23,6 +24,8 @@ type PaymentRow = {
   user_email?: string
   user_name?: string
 }
+
+const PLAN_LABEL: Record<string, string> = { term: 'Term pass', year: 'Academic year', monthly: 'Monthly (old)', quarterly: 'Quarterly (old)', yearly: 'Yearly (old)' }
 
 function relativeTime(iso: string): string {
   const diff = Date.now() - new Date(iso).getTime()
@@ -151,6 +154,13 @@ function AdminPayments() {
         <Link to="/admin"><Button variant="outline" size="sm">Back</Button></Link>
       </div>
 
+      <OnlinePayments />
+
+      <div>
+        <h2 className="text-lg font-bold">WhatsApp payments</h2>
+        <p className="text-sm text-muted-foreground">Requests from students who paid on WhatsApp. Activate once the money has arrived.</p>
+      </div>
+
       {/* Filter tabs */}
       <div className="flex gap-2 border-b">
         {(['pending', 'activated', 'all'] as const).map((f) => (
@@ -217,7 +227,7 @@ function AdminPayments() {
                       </span>
                     </div>
                     <p className="mt-1 text-sm">
-                      <span className="capitalize">{r.plan}</span> · {r.amount_nle} NLe
+                      {PLAN_LABEL[r.plan] ?? r.plan} · {r.amount_nle} NLe
                     </p>
                     {(r.user_email || r.user_name) && (
                       <p className="mt-0.5 text-xs text-muted-foreground truncate">
@@ -245,5 +255,75 @@ function AdminPayments() {
         </div>
       )}
     </div>
+  )
+}
+
+type OnlineRow = { id: string; user_id: string; plan: string; amount_nle: number; status: string; created_at: string; completed_at: string | null; access_until: string | null; checkout_session_id: string | null }
+
+const ONLINE_TONE: Record<string, string> = {
+  completed: 'bg-emerald-500/10 text-emerald-600',
+  pending: 'bg-amber-500/10 text-amber-600',
+}
+
+/** Monime checkouts: switched on automatically, listed here to follow up on. */
+function OnlinePayments() {
+  const q = useQuery({
+    queryKey: ['admin-online-payments'],
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from('payments')
+        .select('id, user_id, plan, amount_nle, status, created_at, completed_at, access_until, checkout_session_id')
+        .neq('status', 'created')
+        .order('created_at', { ascending: false })
+        .limit(50)
+      if (error) {
+        if (error.code === 'PGRST205' || error.code === '42P01') return null
+        throw error
+      }
+      const rows = (data ?? []) as OnlineRow[]
+      const ids = [...new Set(rows.map((r) => r.user_id))]
+      const names = new Map<string, string>()
+      if (ids.length) {
+        const { data: profiles } = await supabase.from('profiles').select('id, full_name').in('id', ids)
+        for (const p of profiles ?? []) names.set(p.id, p.full_name ?? '')
+      }
+      return rows.map((r) => ({ ...r, name: names.get(r.user_id) || r.user_id.slice(0, 8) }))
+    },
+  })
+  const paid = (q.data ?? []).filter((r) => r.status === 'completed')
+  return (
+    <section className="space-y-3">
+      <div>
+        <h2 className="text-lg font-bold">Online payments (Monime)</h2>
+        <p className="text-sm text-muted-foreground">
+          These switch plans on by themselves. {paid.length > 0 && `${paid.length} paid, ${paid.reduce((n, r) => n + r.amount_nle, 0)} NLe in the last 50.`}
+        </p>
+      </div>
+      {q.isLoading ? (
+        <p className="text-sm text-muted-foreground">Loading…</p>
+      ) : q.data === null ? (
+        <p className="rounded-xl border bg-card p-4 text-sm text-muted-foreground">Run supabase/migrations/20261107_07_plans_and_monime.sql to switch on online payments.</p>
+      ) : q.error ? (
+        <p className="text-sm text-red-500">{(q.error as Error).message}</p>
+      ) : (q.data ?? []).length === 0 ? (
+        <p className="rounded-xl border bg-card p-4 text-sm text-muted-foreground">No online payments yet.</p>
+      ) : (
+        <ul className="divide-y rounded-2xl border bg-card">
+          {(q.data ?? []).map((r) => (
+            <li key={r.id} className="flex flex-wrap items-center justify-between gap-2 px-4 py-3">
+              <div className="min-w-0">
+                <p className="text-sm font-semibold">{r.name} · {PLAN_LABEL[r.plan] ?? r.plan} · {r.amount_nle} NLe</p>
+                <p className="text-xs text-muted-foreground">
+                  {relativeTime(r.created_at)}
+                  {r.access_until && ` · access until ${new Date(r.access_until).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}`}
+                  {r.checkout_session_id && <> · <span className="font-mono">{r.checkout_session_id}</span></>}
+                </p>
+              </div>
+              <span className={`rounded-full px-2 py-0.5 text-xs font-bold uppercase ${ONLINE_TONE[r.status] ?? 'bg-muted text-muted-foreground'}`}>{r.status}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
   )
 }

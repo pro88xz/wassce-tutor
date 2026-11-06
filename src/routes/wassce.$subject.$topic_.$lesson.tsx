@@ -102,7 +102,7 @@ function PublicLessonPage() {
 
       <StartCta
         heading={`Keep going with ${topic.name.toLowerCase()}`}
-        body={`This is one of ${topic.lessons.length} lessons in ${topic.name}. Unlock them all, plus exam-style practice marked instantly and an AI tutor, free for 7 days.`}
+        body={`This is one of ${topic.lessons.length} lessons in ${topic.name}. Start free with the first lesson of every topic, then unlock them all, plus exam-style practice and the AI tutor, from 10 NLe.`}
         appHref={`/lesson/${lesson.id}`}
       />
 

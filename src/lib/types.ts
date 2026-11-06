@@ -34,6 +34,8 @@ export type Profile = {
   trial_started_at: string | null
   subscription_active: boolean
   subscription_expires_at: string | null
+  /** 'term' or 'year' once a plan has been bought (migration 07) */
+  subscription_plan?: string | null
   is_admin: boolean
   /** One-line bio shown under the name on public lessons this person reviewed. */
   public_bio?: string | null

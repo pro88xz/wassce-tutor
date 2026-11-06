@@ -1,5 +1,8 @@
 // Returns whether a user currently has full content access.
-// Access = active subscription OR trial still running OR admin.
+// Access = a plan that has not ended OR admin OR a 7-day trial that started
+// before trials were retired (migration 07: new accounts get no trial).
+// Without access, a free account still opens the first lesson of every topic
+// and the starter practice set of every subject (lessonLocked, paperLocked).
 
 import type { Profile } from '@/lib/types'
 
@@ -43,3 +46,13 @@ export function checkAccess(profile: Profile | null | undefined): AccessState {
 
   return { hasAccess: false, reason: 'expired', trialDaysLeft: 0, subscriptionDaysLeft: 0 }
 }
+
+/**
+ * Whether a lesson is closed to this student. is_free comes from the lesson
+ * index (migration 07); before that migration it is missing, and everything
+ * stays behind the plan, which is what the database enforces then too.
+ */
+export const lessonLocked = (access: AccessState, lesson: { is_free?: boolean | null }) => !access.hasAccess && lesson.is_free !== true
+
+/** Whether a practice set is closed to this student (papers.is_free marks each subject's starter set). */
+export const paperLocked = (access: AccessState, paper: { is_free?: boolean | null }) => !access.hasAccess && paper.is_free !== true

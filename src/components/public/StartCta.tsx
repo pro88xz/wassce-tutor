@@ -3,7 +3,7 @@ import { CircleCheck } from 'lucide-react'
 import { useAuth } from '@/lib/auth'
 
 // Call to action on public pages. Logged-out visitors (and the prerendered
-// HTML) get the free-trial sign-up; signed-in students get a link into the app.
+// HTML) get the free-account sign-up; signed-in students get a link into the app.
 // A calm brand-soft panel: the blueprint keeps gradients for the homepage hero.
 export function StartCta({
   heading,
@@ -28,10 +28,10 @@ export function StartCta({
       ) : (
         <div className="space-y-3 pt-1">
           <Link to="/auth" className="inline-flex min-h-12 py-2 items-center rounded-xl bg-primary px-6 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong">
-            Start free for 7 days
+            Start free
           </Link>
           <ul className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-brand-strong">
-            {['No card needed', 'Orange Money & AfriMoney', 'No automatic renewal'].map((t) => (
+            {['Free account, no card needed', 'Everything from 10 NLe', 'No automatic renewal'].map((t) => (
               <li key={t} className="inline-flex items-center gap-1">
                 <CircleCheck className="h-4 w-4" aria-hidden /> {t}
               </li>

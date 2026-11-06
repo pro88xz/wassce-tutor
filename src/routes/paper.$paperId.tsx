@@ -4,9 +4,10 @@
 // with a calm interpretation and links every miss back to its lesson.
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
 import { useMemo, useRef, useState } from 'react'
-import { ArrowRight, BookOpen, Check, CircleCheck, CircleX, FileText, Info, RotateCcw, X } from 'lucide-react'
+import { ArrowLeft, ArrowRight, BookOpen, Check, CircleCheck, CircleX, FileText, Info, RotateCcw, X } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
-import { AccessGate } from '@/components/AccessGate'
+import { LockedPanel } from '@/components/AccessGate'
+import { useAccess } from '@/lib/useAccess'
 import { usePaper, usePaperMeta, type PaperMeta, type QuestionRow } from '@/lib/queries'
 import { useSaveAttempt } from '@/lib/mutations'
 import { useAuth } from '@/lib/auth'
@@ -33,6 +34,7 @@ function PaperPage() {
   const { data: curriculum } = useCurriculum(meta?.subject ? [meta.subject.id] : null)
   const { palette } = subjectTheme(meta?.subject?.slug)
   const { user } = useAuth()
+  const { access, loading: accessLoading } = useAccess()
   const saveAttempt = useSaveAttempt()
 
   const [answers, setAnswers] = useState<Record<string, string>>({})
@@ -50,12 +52,27 @@ function PaperPage() {
 
   const exitTo = meta?.subject ? { to: '/subject/$subjectId' as const, params: { subjectId: meta.subject.id } } : { to: '/practice' as const }
 
-  if (isLoading) {
+  if (isLoading || accessLoading) {
     return (
       <div className="mx-auto max-w-2xl space-y-4">
         <Skeleton className="h-28" />
         {[0, 1, 2].map((i) => <Skeleton key={i} className="h-56" />)}
       </div>
+    )
+  }
+  // No questions came back and the account has no plan: the set is behind
+  // the plan (a free account opens each subject's starter set only).
+  if ((!questions || questions.length === 0) && !access.hasAccess) {
+    return (
+      <LockedPanel
+        kind="practice"
+        name={meta ? setName(meta.title) : undefined}
+        back={
+          <Link {...exitTo} className="-ml-1 inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground">
+            <ArrowLeft className="h-4 w-4" aria-hidden /> {meta?.subject?.name ?? 'Practice'}
+          </Link>
+        }
+      />
     )
   }
   if (!questions || questions.length === 0) {
@@ -126,7 +143,6 @@ function PaperPage() {
   const shown = submitted && missedOnly ? questions.filter((q) => !isRight(q)) : questions
 
   return (
-    <AccessGate>
       <div className="mx-auto max-w-2xl space-y-5 pb-36">
         {/* TOP RAIL: exit, title, progress */}
         <div className="sticky top-0 z-30 -mx-4 border-b bg-background/95 px-4 py-2 backdrop-blur-md sm:-mx-6 sm:px-6" style={{ paddingTop: 'max(0.5rem, env(safe-area-inset-top))' }}>
@@ -358,7 +374,6 @@ function PaperPage() {
           </div>
         </div>
       </div>
-    </AccessGate>
   )
 }
 

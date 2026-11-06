@@ -69,7 +69,7 @@ function AuthPage() {
             </h1>
             <p className="text-sm text-muted-foreground">
               {mode === 'signup'
-                ? '7 days free. No card needed.'
+                ? 'Free to start, no card needed. Unlock everything later from 10 NLe.'
                 : mode === 'forgot'
                   ? "Enter your email and we'll send you a reset link."
                   : 'Sign in to keep studying.'}
@@ -144,7 +144,7 @@ function AuthPage() {
             disabled={loading}
             className="h-12 w-full rounded-xl bg-primary text-base font-semibold text-white transition-colors hover:bg-brand-strong disabled:opacity-60"
           >
-            {loading ? 'Please wait…' : mode === 'signup' ? 'Start my free trial' : mode === 'forgot' ? 'Send reset link' : 'Sign in'}
+            {loading ? 'Please wait…' : mode === 'signup' ? 'Create my free account' : mode === 'forgot' ? 'Send reset link' : 'Sign in'}
           </button>
         </form>
 
