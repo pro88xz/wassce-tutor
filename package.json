@@ -11,7 +11,9 @@
     "apk:publish": "node scripts/publish-apk.mjs",
     "apk:ship": "npm run apk && npm run apk:publish",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "notes:validate": "node scripts/notes-ingestion.mjs validate",
+    "notes:build": "node scripts/notes-ingestion.mjs build"
   },
   "dependencies": {
     "@capacitor/android": "^8.3.4",
