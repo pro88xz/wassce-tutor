@@ -11,7 +11,6 @@ const MAX_BYTES = 1_500_000
 const TIMEOUT_MS = 20_000
 const ALLOWED = new Set(['CC0-1.0', 'CC-BY-4.0', 'CC-BY-SA-4.0', 'PUBLIC-DOMAIN'])
 const turndown = new TurndownService({ headingStyle: 'atx', codeBlockStyle: 'fenced', bulletListMarker: '-' })
-turndown.remove(['script', 'style', 'noscript', 'svg', 'iframe', 'nav', 'footer', 'header', 'form', 'button'])
 
 const sha256 = (value) => createHash('sha256').update(value).digest('hex')
 const fail = (message) => { throw new Error(message) }
