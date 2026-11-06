@@ -1,0 +1,55 @@
+name: Notes engine
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/notes/**'
+      - 'content/sources/**'
+      - 'scripts/notes-ingestion.mjs'
+      - 'scripts/source-acquisition.mjs'
+      - 'scripts/notes-ingestion.test.mjs'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/notes-engine.yml'
+  pull_request:
+    paths:
+      - 'content/notes/**'
+      - 'content/sources/**'
+      - 'scripts/notes-ingestion.mjs'
+      - 'scripts/source-acquisition.mjs'
+      - 'scripts/notes-ingestion.test.mjs'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/notes-engine.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: notes-engine-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run notes:validate
+      - run: npm run notes:test
+      - run: npm run notes:build
+      - name: Upload generated ingestion report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: notes-ingestion-report
+          path: dist/notes-ingestion/
+          if-no-files-found: ignore
+          retention-days: 14
