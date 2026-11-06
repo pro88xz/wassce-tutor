@@ -108,9 +108,28 @@ Volumes, Measures of Central Tendency, Logarithms, Modular Arithmetic, Vectors.
 - One option on the tree-height question is the answer a student gets by
   rounding too early, a mistake the examiners name.
 
-Next: statistics graphs (cumulative frequency, histograms), mensuration of
-plane shapes, matrices, polygons and transformations, then Paper 2-style
-questions with full mark schemes.
+## Set 3: 50 questions, 10 more topics, 8 diagrams and charts
+
+`set3_p1.py` has 5 questions on each of: Areas, Lengths and Perimeters,
+Polygons, Matrices and Determinants, Transformations, Cumulative Frequency,
+Statistics, Measures of Dispersion, Ratio/Proportion/Rates, Linear
+Inequalities.
+
+- Cumulative frequency (2018 Q10), matrices (2018 Q13), transformations
+  (2019 Q9; rotation is a 2018 weakness), sectors and arcs (2018 Q3),
+  perimeter/area (2018 Q9), speed (2019 Q11), polygons, pie charts and
+  inequalities (government mock papers), dispersion (government handbooks).
+- Class boundaries get their own question: examiners reported candidates
+  using class limits instead of boundaries in 2018.
+- The pie chart, bar chart and cumulative frequency curve are drawn from the
+  same data the answers are worked out from. The curve joins the plotted
+  points with straight lines, so the median read from it is exact.
+
+With sets 1-3, all 30 of the most-examined Paper 1 topics have a practice
+set. Next: the remaining smaller topics (fractions and approximation,
+algebraic expressions and fractions, linear equations, graphs, functions,
+logical reasoning, similar figures, loci, coordinate geometry), then
+Paper 2-style questions with mark schemes.
 
 ## Sources
 

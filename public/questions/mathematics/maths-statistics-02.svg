@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" role="img">
+  <title>Pie chart of a family's monthly spending: Food 144°, Rent 90°, Transport 54°, Others 72°.</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <path d="M150.0,150.0 L215.6,240.3 A111.6,111.6 0 0 0 150.0,38.4 Z" fill="#dbeafe" stroke="#111827" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M150.0,150.0 L59.7,215.6 A111.6,111.6 0 0 0 215.6,240.3 Z" fill="#dcfce7" stroke="#111827" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M150.0,150.0 L43.8,115.5 A111.6,111.6 0 0 0 59.7,215.6 Z" fill="#fef3c7" stroke="#111827" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M150.0,150.0 L150.0,38.4 A111.6,111.6 0 0 0 43.8,115.5 Z" fill="#fce7f3" stroke="#111827" stroke-width="2" stroke-linejoin="round"/>
+  <text x="215.8" y="120.6" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#111827" text-anchor="middle" dominant-baseline="central">Food</text>
+  <text x="215.8" y="137.6" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">144°</text>
+  <text x="139.2" y="210.4" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#111827" text-anchor="middle" dominant-baseline="central">Rent</text>
+  <text x="139.2" y="227.4" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">90°</text>
+  <text x="81.6" y="152.8" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#111827" text-anchor="middle" dominant-baseline="central">Transport</text>
+  <text x="81.6" y="169.8" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">54°</text>
+  <text x="109.3" y="86.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#111827" text-anchor="middle" dominant-baseline="central">Others</text>
+  <text x="109.3" y="103.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">72°</text>
+</svg>

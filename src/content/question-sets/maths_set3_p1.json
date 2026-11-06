@@ -1,0 +1,2008 @@
+{
+ "name": "maths_set3_p1",
+ "label": "Mathematics: set 3 (with charts)",
+ "subject_slug": "mathematics",
+ "papers": [
+  {
+   "id": "15f1eb7f-3243-5d29-8762-860a4c44fe51",
+   "topic": "Areas",
+   "title": "Areas: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on areas, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 120,
+   "questions": [
+    {
+     "id": "c5929895-9b65-57aa-8d59-e1e37c1aa9cc",
+     "key": "maths-areas-01",
+     "stem": "The diagram shows a sector of a circle with centre $O$, radius 7 cm and angle 72°. Find its area. [Take $\\pi = \\dfrac{22}{7}$]",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-areas-01.svg?v=7028204e76",
+     "explanation": "Area of a sector $= \\dfrac{\\theta}{360} \\times \\pi r^{2} = \\dfrac{72}{360} \\times \\dfrac{22}{7} \\times 49 = \\dfrac{1}{5} \\times 154 = 30.8$ cm²\n\n**Why the other options are wrong**\n\n- 4.4 cm²: You used $r$ instead of $r^{2}$.\n- 8.8 cm²: That is the arc length, $\\dfrac{72}{360} \\times 2\\pi r$. Area uses $\\pi r^{2}$.\n- 123.2 cm²: You used the diameter, 14 cm, as the radius.",
+     "position": 1,
+     "options": [
+      {
+       "id": "bc5fae90-e837-5882-a9ec-1a2bf8d0c1a7",
+       "label": "A",
+       "content": "4.4 cm²",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "49a7ff7c-54d2-5dde-9cd8-4e00f6904011",
+       "label": "B",
+       "content": "8.8 cm²",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "10d9253e-8ef0-5d8f-9d7e-4c1f0e4d1724",
+       "label": "C",
+       "content": "30.8 cm²",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f9bfd1b8-bac2-59af-a82e-646e52f8a102",
+       "label": "D",
+       "content": "123.2 cm²",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9744ba65-c1d1-5a95-8d1f-95ef8e41181f",
+     "key": "maths-areas-02",
+     "stem": "In triangle $PQR$, $|PQ| = 8$ cm, $|QR| = 10$ cm and $\\angle PQR = 150°$. Find the area of the triangle.",
+     "image_url": null,
+     "explanation": "Area $= \\dfrac{1}{2}ab\\sin C = \\dfrac{1}{2} \\times 8 \\times 10 \\times \\sin 150°$.\n\n$\\sin 150° = \\sin 30° = \\dfrac{1}{2}$, so the area $= 40 \\times \\dfrac{1}{2} = 20$ cm².\n\n**Why the other options are wrong**\n\n- 34.6 cm²: You used cos. The area formula is $\\dfrac{1}{2}ab\\sin C$.\n- 40 cm²: You forgot the $\\dfrac{1}{2}$.\n- 80 cm²: You multiplied the two sides. Area $= \\dfrac{1}{2} \\times 8 \\times 10 \\times \\sin 150°$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "0fef3665-79e8-5992-a255-3aec3e470d7e",
+       "label": "A",
+       "content": "20 cm²",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1d4b0715-0a23-54a2-9523-138089494387",
+       "label": "B",
+       "content": "34.6 cm²",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "afd80e49-f63c-5db3-b691-40f22d5a89c6",
+       "label": "C",
+       "content": "40 cm²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "58d69e70-c5fe-59ea-9e65-5ab608164f3c",
+       "label": "D",
+       "content": "80 cm²",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "84b5c335-fdc1-59f6-8614-491881f3a006",
+     "key": "maths-areas-03",
+     "stem": "A trapezium has parallel sides of 9 cm and 15 cm. The distance between them is 6 cm. Find its area.",
+     "image_url": null,
+     "explanation": "Area of a trapezium $= \\dfrac{1}{2}(a + b)h = \\dfrac{1}{2}(9 + 15) \\times 6 = 12 \\times 6 = 72$ cm²\n\n**Why the other options are wrong**\n\n- 90 cm²: You treated it as a rectangle 15 cm by 6 cm. Use the average of the parallel sides.\n- 144 cm²: You forgot the $\\dfrac{1}{2}$: area $= \\dfrac{1}{2}(a + b)h$.\n- 810 cm²: You multiplied all three lengths. Add the parallel sides first.",
+     "position": 3,
+     "options": [
+      {
+       "id": "07bce2d8-60ec-5a51-a2a0-c7dab5b4695b",
+       "label": "A",
+       "content": "72 cm²",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ab5cdcbc-33b2-5177-90e4-8da7653a5061",
+       "label": "B",
+       "content": "90 cm²",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6d40d4ee-257a-5c56-8d2c-dd45e9a150e7",
+       "label": "C",
+       "content": "144 cm²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a900899c-7d86-55d0-917c-b7a1c2d8bba9",
+       "label": "D",
+       "content": "810 cm²",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d1ddb444-b225-5884-a9a9-ea7ae187aaac",
+     "key": "maths-areas-04",
+     "stem": "The shape is a rectangle 14 cm by 10 cm with a semicircle on its top side. Find the area of the shape. [Take $\\pi = \\dfrac{22}{7}$]",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-areas-04.svg?v=b28f60f9f1",
+     "explanation": "Rectangle: $14 \\times 10 = 140$ cm².\n\nSemicircle: the diameter is 14 cm, so $r = 7$ cm. Area $= \\dfrac{1}{2}\\pi r^{2} = \\dfrac{1}{2} \\times \\dfrac{22}{7} \\times 49 = 77$ cm².\n\nTotal $= 140 + 77 = 217$ cm².\n\n**Why the other options are wrong**\n\n- 162 cm²: You added the length of the curved edge (22 cm) instead of the area of the semicircle.\n- 294 cm²: You added a whole circle. The top is a semicircle: half of $\\pi r^{2}$.\n- 448 cm²: You used 14 cm as the radius. The diameter is 14 cm, so the radius is 7 cm.",
+     "position": 4,
+     "options": [
+      {
+       "id": "6d769d5f-96fe-5649-9769-ef1f7b130d3f",
+       "label": "A",
+       "content": "162 cm²",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cae4cef3-d672-54da-9b1d-cc899a4e19f1",
+       "label": "B",
+       "content": "217 cm²",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8d481ab6-6153-56cc-933b-e22bf400459d",
+       "label": "C",
+       "content": "294 cm²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4eb25e89-dc6b-5c00-a1c9-798d2b96434a",
+       "label": "D",
+       "content": "448 cm²",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "210106a0-7e86-5fca-9b1a-c763410a9c70",
+     "key": "maths-areas-05",
+     "stem": "Two similar triangles have corresponding sides of 3 cm and 5 cm. The area of the smaller triangle is 18 cm². Find the area of the larger triangle.",
+     "image_url": null,
+     "explanation": "Ratio of sides $= \\dfrac{5}{3}$, so ratio of areas $= \\left(\\dfrac{5}{3}\\right)^{2} = \\dfrac{25}{9}$.\n\nArea of the larger triangle $= 18 \\times \\dfrac{25}{9} = 50$ cm².\n\n**Why the other options are wrong**\n\n- 10.8 cm²: You used the ratio the wrong way round, and only once. The larger triangle has the larger area: multiply by $\\left(\\dfrac{5}{3}\\right)^{2}$.\n- 30 cm²: You multiplied by the ratio of the sides, $\\dfrac{5}{3}$. Areas scale by the square of that ratio.\n- 83.3 cm²: You cubed the ratio. That is how volumes scale; areas scale by the square.",
+     "position": 5,
+     "options": [
+      {
+       "id": "2c37cd64-9c83-5771-9842-001346027047",
+       "label": "A",
+       "content": "10.8 cm²",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "43079b51-7e15-561c-b35d-20abbdf9852c",
+       "label": "B",
+       "content": "30 cm²",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5a9bf420-72a8-505c-af16-4711545615b0",
+       "label": "C",
+       "content": "50 cm²",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "99e3b73f-ba26-53b6-b0e5-2d491dc95b0e",
+       "label": "D",
+       "content": "83.3 cm²",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8076f639-ca16-5c2b-b27f-8c90410e1280",
+   "topic": "Lengths and Perimeters",
+   "title": "Lengths and Perimeters: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on lengths and perimeters, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 121,
+   "questions": [
+    {
+     "id": "281a4869-db53-5848-be06-ea1db1b2d090",
+     "key": "maths-lengths-01",
+     "stem": "Find the length of an arc of a circle of radius 21 cm which subtends an angle of 120° at the centre. [Take $\\pi = \\dfrac{22}{7}$]",
+     "image_url": null,
+     "explanation": "Arc length $= \\dfrac{\\theta}{360} \\times 2\\pi r = \\dfrac{120}{360} \\times 2 \\times \\dfrac{22}{7} \\times 21 = \\dfrac{1}{3} \\times 132 = 44$ cm\n\n**Why the other options are wrong**\n\n- 88 cm: You used the diameter, 42 cm, as the radius.\n- 132 cm: That is the whole circumference. The arc is $\\dfrac{120}{360}$ of it.\n- 462 cm: That is the area of the sector, $\\dfrac{120}{360}\\pi r^{2}$. Arc length uses $2\\pi r$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "da89e485-cd4e-532f-8d69-7d8c9525d467",
+       "label": "A",
+       "content": "44 cm",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d1fdfbe7-4e33-56b9-84a2-a994883fb9d1",
+       "label": "B",
+       "content": "88 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b0d309a0-f109-5372-a616-645f638d459c",
+       "label": "C",
+       "content": "132 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "394317fa-1389-55f8-936c-e4d768de6849",
+       "label": "D",
+       "content": "462 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b1c49fbb-dd1c-5aa3-b6cb-051d543dbd73",
+     "key": "maths-lengths-02",
+     "stem": "The diagram shows a sector of a circle with centre $O$, radius 14 cm and angle 45°. Find the perimeter of the sector. [Take $\\pi = \\dfrac{22}{7}$]",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-lengths-02.svg?v=afc757c314",
+     "explanation": "Arc $= \\dfrac{45}{360} \\times 2 \\times \\dfrac{22}{7} \\times 14 = \\dfrac{1}{8} \\times 88 = 11$ cm.\n\nPerimeter $= 11 + 14 + 14 = 39$ cm\n\n**Why the other options are wrong**\n\n- 11 cm: That is only the arc. The perimeter also includes the two radii.\n- 25 cm: You added only one radius. A sector has two straight edges.\n- 77 cm: That is the area of the sector in cm². The perimeter is a length: arc + 2 radii.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c0722351-066a-52b1-8a8a-168f02324754",
+       "label": "A",
+       "content": "11 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f4b70860-ef65-5c7a-818f-dd2833fb5d8e",
+       "label": "B",
+       "content": "25 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b811def9-b7f5-58a1-ad0b-6361ab3ea2d5",
+       "label": "C",
+       "content": "39 cm",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e19eb829-0a59-5a23-93e2-237733c221bb",
+       "label": "D",
+       "content": "77 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "07179b5d-7412-5adc-b8c7-4c9ab5227511",
+     "key": "maths-lengths-03",
+     "stem": "A circular running track has a diameter of 70 m. How far does an athlete run in 3 complete laps? [Take $\\pi = \\dfrac{22}{7}$]",
+     "image_url": null,
+     "explanation": "One lap $= \\pi d = \\dfrac{22}{7} \\times 70 = 220$ m.\n\n3 laps $= 3 \\times 220 = 660$ m\n\n**Why the other options are wrong**\n\n- 220 m: That is one lap. The athlete runs 3 laps.\n- 330 m: You used $\\pi r$. The distance round a circle is $2\\pi r$ (or $\\pi d$).\n- 440 m: You counted 2 laps instead of 3.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b1b0e495-6345-50de-b52c-a2f3a0c5b137",
+       "label": "A",
+       "content": "220 m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "991f4fe7-2b80-5abf-b599-9ce482129438",
+       "label": "B",
+       "content": "330 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "be2ffaa0-a8f6-51a7-bbb6-d9e2c6a20a06",
+       "label": "C",
+       "content": "440 m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "010f075a-21f1-53a6-acae-dce6730a2c7e",
+       "label": "D",
+       "content": "660 m",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "40da4cb2-eaa7-5ce8-88ec-1afdf4a0bfce",
+     "key": "maths-lengths-04",
+     "stem": "The circumference of a circle is 66 cm. Find its radius. [Take $\\pi = \\dfrac{22}{7}$]",
+     "image_url": null,
+     "explanation": "$2\\pi r = 66$, so $r = \\dfrac{66}{2 \\times \\dfrac{22}{7}} = \\dfrac{66 \\times 7}{44} = 10.5$ cm\n\n**Why the other options are wrong**\n\n- 4.6 cm: You used the area formula $\\pi r^{2} = 66$. Circumference is $2\\pi r$.\n- 21 cm: That is the diameter ($66 \\div \\pi$). The radius is half of it.\n- 33 cm: You halved 66. Divide by $2\\pi$, not by 2.",
+     "position": 4,
+     "options": [
+      {
+       "id": "83955d7d-80cd-5211-8fdd-290947232876",
+       "label": "A",
+       "content": "4.6 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a950277b-dd1b-59a0-872d-a1af06ed2fbc",
+       "label": "B",
+       "content": "10.5 cm",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "84813c29-c9e4-5d6a-b90c-886e3bdfde73",
+       "label": "C",
+       "content": "21 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bfde4968-7e86-589d-858a-1172c3918c9d",
+       "label": "D",
+       "content": "33 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0ae4a8e3-d5e2-5a2b-8a08-2755c242b358",
+     "key": "maths-lengths-05",
+     "stem": "The shape is a rectangle 14 cm by 10 cm with a semicircle on its top side. Find the perimeter of the shape. [Take $\\pi = \\dfrac{22}{7}$]",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-lengths-05.svg?v=c7e6e0ed1a",
+     "explanation": "Curved edge (semicircle, $r = 7$ cm): $\\dfrac{1}{2} \\times 2\\pi r = \\dfrac{22}{7} \\times 7 = 22$ cm.\n\nStraight edges: $10 + 14 + 10 = 34$ cm (the dashed line is inside the shape).\n\nPerimeter $= 34 + 22 = 56$ cm\n\n**Why the other options are wrong**\n\n- 70 cm: You included the dashed line. It is inside the shape, not on its edge.\n- 78 cm: You used a whole circle (44 cm). The top edge is a semicircle: half of $2\\pi r$.\n- 92 cm: You added the whole rectangle's perimeter and a full circle.",
+     "position": 5,
+     "options": [
+      {
+       "id": "efe1e038-d35f-52e1-9d39-450149b34440",
+       "label": "A",
+       "content": "56 cm",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5e9e29f4-c8d1-52d4-b504-aa2dcb67f4b8",
+       "label": "B",
+       "content": "70 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9ca5094e-9859-5c4a-9327-04367303d659",
+       "label": "C",
+       "content": "78 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fb45ea81-f43d-5d2b-a859-461ca295a990",
+       "label": "D",
+       "content": "92 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "0d3d418a-f394-5ab4-9612-c1e94fb9176b",
+   "topic": "Polygons",
+   "title": "Polygons: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on polygons, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 122,
+   "questions": [
+    {
+     "id": "abea5d37-f3cc-5020-97b0-3643278c580e",
+     "key": "maths-polygons-01",
+     "stem": "Find the size of each interior angle of a regular hexagon.",
+     "image_url": null,
+     "explanation": "Sum of interior angles $= (n - 2) \\times 180° = 4 \\times 180° = 720°$.\n\nEach angle $= 720° \\div 6 = 120°$.\n\n**Why the other options are wrong**\n\n- 60°: That is each exterior angle ($360° \\div 6$). The interior angle is $180° - 60°$.\n- 108°: That is the interior angle of a regular pentagon (5 sides). A hexagon has 6.\n- 720°: That is the sum of all six interior angles. Divide by 6.",
+     "position": 1,
+     "options": [
+      {
+       "id": "569d04a4-3d60-5549-8bc8-9c8dc792ae8c",
+       "label": "A",
+       "content": "60°",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3f625ea8-e7cb-5fbb-b9cf-e2543012673c",
+       "label": "B",
+       "content": "108°",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "774e8b44-70ea-532e-9385-731fb34c7f26",
+       "label": "C",
+       "content": "120°",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "cd105ab9-337c-5683-ba97-60cac268da01",
+       "label": "D",
+       "content": "720°",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1781c1a9-83bd-537e-9a75-e3a329cb8a4a",
+     "key": "maths-polygons-02",
+     "stem": "Each interior angle of a regular polygon is 156°. How many sides does the polygon have?",
+     "image_url": null,
+     "explanation": "Exterior angle $= 180° - 156° = 24°$.\n\nExterior angles add up to 360°, so $n = 360° \\div 24° = 15$ sides.\n\n**Why the other options are wrong**\n\n- $2.3$: You divided 360° by the interior angle. Divide by the exterior angle, $180° - 156° = 24°$.\n- $7.5$: You divided 180° by the exterior angle. Exterior angles add up to 360°.\n- $24$: 24° is each exterior angle. The number of sides is $360° \\div 24°$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "a66218ab-ffb7-5f4b-a7c8-db5ee77bacf9",
+       "label": "A",
+       "content": "$2.3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ea730642-d99c-573c-8c54-cf9f341a8ac5",
+       "label": "B",
+       "content": "$7.5$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "abb4e3d9-4d8a-5b34-9ef6-dcd3373c76ef",
+       "label": "C",
+       "content": "$15$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8fe14782-b821-5bba-a69c-61dfe9bc92bc",
+       "label": "D",
+       "content": "$24$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6a7a33fa-0092-5fa6-b80f-1ac47561df0d",
+     "key": "maths-polygons-03",
+     "stem": "Find the sum of the interior angles of an octagon.",
+     "image_url": null,
+     "explanation": "Sum of interior angles $= (n - 2) \\times 180° = (8 - 2) \\times 180° = 1080°$\n\n**Why the other options are wrong**\n\n- 135°: That is one interior angle of a regular octagon. The question asks for the sum.\n- 360°: 360° is the sum of the exterior angles of any polygon.\n- 1440°: You worked out $8 \\times 180°$. The formula is $(n - 2) \\times 180°$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "506a6cf6-df59-5b9d-9dd6-4a3fae8dd0ea",
+       "label": "A",
+       "content": "135°",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d5e0d5e1-3669-5e5a-969f-9349890bb26a",
+       "label": "B",
+       "content": "360°",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "356fd51c-4c12-5bed-880c-ed7d6ee10d38",
+       "label": "C",
+       "content": "1080°",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d78b8816-fb62-5526-8ee9-88743709271d",
+       "label": "D",
+       "content": "1440°",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5ff88da9-fcec-5082-bd8e-2a0ccb1a13f9",
+     "key": "maths-polygons-04",
+     "stem": "The interior angles of a pentagon are $2x°$, $3x°$, 100°, 110° and 120°. Find the value of $x$.",
+     "image_url": null,
+     "explanation": "Sum of interior angles of a pentagon $= (5 - 2) \\times 180° = 540°$.\n\n$2x + 3x + 100 + 110 + 120 = 540$, so $5x + 330 = 540$, $5x = 210$ and $x = 42$.\n\n**Why the other options are wrong**\n\n- $6$: You used 360° for the angle sum. A pentagon's angles add up to $(5 - 2) \\times 180° = 540°$.\n- $78$: You used 720°, the angle sum of a hexagon. A pentagon has 5 sides: 540°.\n- $108$: You left out the three known angles: $5x = 540$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "cd40a57b-221c-5dd6-b8a7-6f746cb90e14",
+       "label": "A",
+       "content": "$6$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7af4e5c3-864e-5dff-b1d6-09acc94690e1",
+       "label": "B",
+       "content": "$42$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d5340423-49cb-5a47-93ce-10a78a7cf744",
+       "label": "C",
+       "content": "$78$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4f7a3926-e248-5a59-a67a-35ddb589b3e9",
+       "label": "D",
+       "content": "$108$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c3869506-3ef3-5a43-a5c0-4944198db014",
+     "key": "maths-polygons-05",
+     "stem": "Find the size of each exterior angle of a regular polygon with 20 sides.",
+     "image_url": null,
+     "explanation": "The exterior angles of any polygon add up to 360°.\n\nEach exterior angle $= 360° \\div 20 = 18°$.\n\n**Why the other options are wrong**\n\n- 20°: 20 is the number of sides, not an angle.\n- 162°: That is each interior angle. The exterior angle is $180° - 162°$.\n- 3240°: That is the sum of the interior angles.",
+     "position": 5,
+     "options": [
+      {
+       "id": "0520a984-f2d7-57a4-8172-ea828db93590",
+       "label": "A",
+       "content": "18°",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "04f8653b-33d5-531c-86ac-460bbf7337d2",
+       "label": "B",
+       "content": "20°",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1308b5a8-5959-5667-bae4-c524918a22e5",
+       "label": "C",
+       "content": "162°",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "73dd0110-b63a-5d2a-9687-9310cf5b24ad",
+       "label": "D",
+       "content": "3240°",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "13d177a5-4a50-59ce-9b5f-57f1be655c5e",
+   "topic": "Matrices and Determinants",
+   "title": "Matrices and Determinants: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on matrices and determinants, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 123,
+   "questions": [
+    {
+     "id": "f8f4b6fe-2aa4-562e-8825-aefe843f1283",
+     "key": "maths-matrices-01",
+     "stem": "Find the determinant of the matrix $\\begin{pmatrix} 3 & -2 \\\\ 4 & 5 \\end{pmatrix}$.",
+     "image_url": null,
+     "explanation": "For $\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, the determinant is $ad - bc$:\n\n$3 \\times 5 - (-2) \\times 4 = 15 + 8 = 23$\n\n**Why the other options are wrong**\n\n- $-23$: You worked out $bc - ad$. The determinant is $ad - bc$.\n- $7$: Sign slip: $bc = (-2)(4) = -8$, so $ad - bc = 15 - (-8) = 23$.\n- $22$: You multiplied down the columns. Multiply along the diagonals: $ad - bc$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "2ed43682-caca-53cd-85f1-1461d058ac58",
+       "label": "A",
+       "content": "$-23$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b48796e4-9e1f-5b3e-816a-16e31d277139",
+       "label": "B",
+       "content": "$7$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ebf8bb8c-e7d8-5f1b-bc3e-df0b01195556",
+       "label": "C",
+       "content": "$22$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f66159b8-83a7-58d0-9553-c883594993e9",
+       "label": "D",
+       "content": "$23$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "31904c5d-62e8-5f04-82a3-ab11831bfd56",
+     "key": "maths-matrices-02",
+     "stem": "Given that $A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$ and $B = \\begin{pmatrix} 2 & 0 \\\\ 1 & 3 \\end{pmatrix}$, find $AB$.",
+     "image_url": null,
+     "explanation": "Row 1 of $A$ × columns of $B$: $1(2) + 2(1) = 4$ and $1(0) + 2(3) = 6$.\n\nRow 2 of $A$ × columns of $B$: $3(2) + 4(1) = 10$ and $3(0) + 4(3) = 12$.\n\n$AB = \\begin{pmatrix} 4 & 6 \\\\ 10 & 12 \\end{pmatrix}$\n\n**Why the other options are wrong**\n\n- $\\begin{pmatrix} 2 & 0 \\\\ 3 & 12 \\end{pmatrix}$: You multiplied matching entries. Matrix multiplication is row × column.\n- $\\begin{pmatrix} 2 & 4 \\\\ 10 & 14 \\end{pmatrix}$: That is $BA$. Order matters: for $AB$, use the rows of $A$ with the columns of $B$.\n- $\\begin{pmatrix} 4 & 10 \\\\ 6 & 12 \\end{pmatrix}$: The entries are right but in the wrong places: row 1 of $A$ with column 2 of $B$ goes in row 1, column 2.",
+     "position": 2,
+     "options": [
+      {
+       "id": "df34963d-7956-5f3a-aaf1-e87169fe9085",
+       "label": "A",
+       "content": "$\\begin{pmatrix} 2 & 0 \\\\ 3 & 12 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "094a8305-a255-515d-8abe-e4b7fa7fb56d",
+       "label": "B",
+       "content": "$\\begin{pmatrix} 2 & 4 \\\\ 10 & 14 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c9fff084-a378-5a26-9348-bf167bf9389d",
+       "label": "C",
+       "content": "$\\begin{pmatrix} 4 & 10 \\\\ 6 & 12 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ce901aed-ae93-5ace-b147-3b4a1e6cf533",
+       "label": "D",
+       "content": "$\\begin{pmatrix} 4 & 6 \\\\ 10 & 12 \\end{pmatrix}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a9acb55c-2030-5b7d-b596-5e790102751c",
+     "key": "maths-matrices-03",
+     "stem": "Find the inverse of the matrix $\\begin{pmatrix} 3 & 1 \\\\ 5 & 2 \\end{pmatrix}$.",
+     "image_url": null,
+     "explanation": "Determinant $= 3 \\times 2 - 1 \\times 5 = 1$.\n\nInverse $= \\dfrac{1}{1}\\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix} = \\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix}$ (swap $a$ and $d$, change the signs of $b$ and $c$, divide by the determinant).\n\n**Why the other options are wrong**\n\n- $\\begin{pmatrix} 2 & 1 \\\\ 5 & 3 \\end{pmatrix}$: You swapped $a$ and $d$ but forgot to change the signs of $b$ and $c$.\n- $\\begin{pmatrix} 3 & -1 \\\\ -5 & 2 \\end{pmatrix}$: You changed the signs of $b$ and $c$ but forgot to swap $a$ and $d$.\n- $\\begin{pmatrix} -2 & 1 \\\\ 5 & -3 \\end{pmatrix}$: You changed every sign. Only $b$ and $c$ change sign; $a$ and $d$ swap places.",
+     "position": 3,
+     "options": [
+      {
+       "id": "cc766a63-c309-5198-9bda-f1d8766f6a4c",
+       "label": "A",
+       "content": "$\\begin{pmatrix} 2 & 1 \\\\ 5 & 3 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c79d20df-92d6-5eb1-b829-abfd92e807c7",
+       "label": "B",
+       "content": "$\\begin{pmatrix} 3 & -1 \\\\ -5 & 2 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6e59e7cf-45c9-5b58-9c21-d20d87b371e2",
+       "label": "C",
+       "content": "$\\begin{pmatrix} -2 & 1 \\\\ 5 & -3 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "28d85114-1630-5496-9c9f-f30447e6a264",
+       "label": "D",
+       "content": "$\\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "76fbc004-fc85-51af-b15f-8f69226beeb6",
+     "key": "maths-matrices-04",
+     "stem": "The determinant of $\\begin{pmatrix} x & 2 \\\\ 3 & 4 \\end{pmatrix}$ is 10. Find the value of $x$.",
+     "image_url": null,
+     "explanation": "Determinant $= 4x - 2 \\times 3 = 4x - 6$.\n\n$4x - 6 = 10$, so $4x = 16$ and $x = 4$.\n\n**Why the other options are wrong**\n\n- $1$: You added: $4x + 6 = 10$. The determinant is $ad - bc = 4x - 6$.\n- $2.5$: You left out $bc$: $4x = 10$.\n- $16$: You stopped at $4x = 16$. Divide by 4.",
+     "position": 4,
+     "options": [
+      {
+       "id": "310af1ac-abf2-5f86-882c-c9f6ba13064e",
+       "label": "A",
+       "content": "$1$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "af9f5b51-85e5-59df-90e8-159382099b50",
+       "label": "B",
+       "content": "$2.5$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d0b2242a-4ef2-511e-a9bc-dedfa8b9c9c4",
+       "label": "C",
+       "content": "$4$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d10614fc-3646-55e5-a362-6e3b3c96cdf2",
+       "label": "D",
+       "content": "$16$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6b893d20-e134-57cb-8fe2-c45f4d8171e4",
+     "key": "maths-matrices-05",
+     "stem": "Given that $A = \\begin{pmatrix} 2 & -1 \\\\ 0 & 3 \\end{pmatrix}$ and $B = \\begin{pmatrix} 1 & 4 \\\\ -2 & 5 \\end{pmatrix}$, find $3A - B$.",
+     "image_url": null,
+     "explanation": "$3A = \\begin{pmatrix} 6 & -3 \\\\ 0 & 9 \\end{pmatrix}$\n\n$3A - B = \\begin{pmatrix} 6 - 1 & -3 - 4 \\\\ 0 - (-2) & 9 - 5 \\end{pmatrix} = \\begin{pmatrix} 5 & -7 \\\\ 2 & 4 \\end{pmatrix}$\n\n**Why the other options are wrong**\n\n- $\\begin{pmatrix} 7 & 1 \\\\ -2 & 14 \\end{pmatrix}$: You added $B$ instead of subtracting it.\n- $\\begin{pmatrix} 3 & -15 \\\\ 6 & -6 \\end{pmatrix}$: You multiplied $B$ by 3 as well. Only $A$ is multiplied by 3.\n- $\\begin{pmatrix} 5 & 1 \\\\ 2 & 4 \\end{pmatrix}$: Sign slip in the top right: $-3 - 4 = -7$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "2116c6c8-ae57-59e4-b063-b65323580728",
+       "label": "A",
+       "content": "$\\begin{pmatrix} 7 & 1 \\\\ -2 & 14 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7d9058b0-f565-5427-9f0b-4f96bd09015b",
+       "label": "B",
+       "content": "$\\begin{pmatrix} 3 & -15 \\\\ 6 & -6 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f3fbbe35-bccb-5ddf-a661-ca6297c3a8ee",
+       "label": "C",
+       "content": "$\\begin{pmatrix} 5 & 1 \\\\ 2 & 4 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1e3fa7bd-1423-5153-a4de-2b344eaa833a",
+       "label": "D",
+       "content": "$\\begin{pmatrix} 5 & -7 \\\\ 2 & 4 \\end{pmatrix}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cc78f037-2930-5a96-839e-3d59a7db0fb6",
+   "topic": "Transformations",
+   "title": "Transformations: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on transformations, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 124,
+   "questions": [
+    {
+     "id": "80775024-78b9-5a8a-adba-a6a750969005",
+     "key": "maths-transformations-01",
+     "stem": "Find the image of the point $P(3, -5)$ after a reflection in the line $y = x$.",
+     "image_url": null,
+     "explanation": "A reflection in the line $y = x$ swaps the coordinates: $(x, y) \\to (y, x)$.\n\n$P(3, -5) \\to P'(-5, 3)$\n\n**Why the other options are wrong**\n\n- $(5, -3)$: That is a reflection in the line $y = -x$.\n- $(-3, -5)$: That is a reflection in the $y$-axis.\n- $(3, 5)$: That is a reflection in the $x$-axis.",
+     "position": 1,
+     "options": [
+      {
+       "id": "9a1fbf5e-2c88-5803-a7f9-b549b769cf81",
+       "label": "A",
+       "content": "$(5, -3)$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "55deda5a-92fa-54f3-a38a-51661a0c359b",
+       "label": "B",
+       "content": "$(-3, -5)$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cd7258c8-d457-566a-9025-f2e5238b215c",
+       "label": "C",
+       "content": "$(3, 5)$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f94b1a7f-c137-5c32-bdfb-58853686b7eb",
+       "label": "D",
+       "content": "$(-5, 3)$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f1f1f98a-c723-567b-b9d1-2e84878bb242",
+     "key": "maths-transformations-02",
+     "stem": "The point $Q(4, 1)$ is rotated through 90° anticlockwise about the origin. Find its image.",
+     "image_url": null,
+     "explanation": "A rotation of 90° anticlockwise about the origin maps $(x, y) \\to (-y, x)$.\n\n$Q(4, 1) \\to Q'(-1, 4)$\n\n**Why the other options are wrong**\n\n- $(1, -4)$: That is a 90° clockwise rotation.\n- $(-4, -1)$: That is a rotation through 180°.\n- $(1, 4)$: You swapped the coordinates without changing a sign. That is a reflection in $y = x$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "095d6fb6-3489-5aee-aa5e-c14820ed6329",
+       "label": "A",
+       "content": "$(-1, 4)$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a7d477e3-17cb-56bc-9616-9add77828d26",
+       "label": "B",
+       "content": "$(1, -4)$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "785aea29-b3f0-5d55-aab2-5437bb9e2888",
+       "label": "C",
+       "content": "$(-4, -1)$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0eaaeb78-817a-567f-93cd-0e8f09685197",
+       "label": "D",
+       "content": "$(1, 4)$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0b6fa1ba-e01d-536d-b043-45146ee39674",
+     "key": "maths-transformations-03",
+     "stem": "A translation maps the point $P(2, -3)$ onto $P'(-1, 4)$. Find the translation vector.",
+     "image_url": null,
+     "explanation": "Translation vector $= P' - P = \\begin{pmatrix} -1 - 2 \\\\ 4 - (-3) \\end{pmatrix} = \\begin{pmatrix} -3 \\\\ 7 \\end{pmatrix}$\n\n**Why the other options are wrong**\n\n- $\\begin{pmatrix} 3 \\\\ -7 \\end{pmatrix}$: You worked out $P - P'$. The translation vector is image minus object: $P' - P$.\n- $\\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix}$: You added the coordinates. Subtract: $P' - P$.\n- $\\begin{pmatrix} -3 \\\\ 1 \\end{pmatrix}$: Sign slip in the bottom number: $4 - (-3) = 7$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "903fe52d-c892-53c0-b1a0-c127407de77d",
+       "label": "A",
+       "content": "$\\begin{pmatrix} 3 \\\\ -7 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "421c42bd-90be-5ea4-a08e-f405436cb63f",
+       "label": "B",
+       "content": "$\\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "191f7a3b-4fc1-5fcf-87cd-9b5c76a94c64",
+       "label": "C",
+       "content": "$\\begin{pmatrix} -3 \\\\ 1 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "97c1a7c5-01da-51ce-9145-341ee95ea4ef",
+       "label": "D",
+       "content": "$\\begin{pmatrix} -3 \\\\ 7 \\end{pmatrix}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aaf317ee-2efb-5b93-b3cd-dd8351adf806",
+     "key": "maths-transformations-04",
+     "stem": "The point $P(3, 4)$ is enlarged with centre $(1, 1)$ and scale factor 2. Find its image.",
+     "image_url": null,
+     "explanation": "From the centre $(1, 1)$ to $P(3, 4)$ is $\\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix}$. Double it: $\\begin{pmatrix} 4 \\\\ 6 \\end{pmatrix}$.\n\nImage $= (1 + 4, 1 + 6) = (5, 7)$\n\n**Why the other options are wrong**\n\n- $(6, 8)$: That is an enlargement about the origin. The centre here is $(1, 1)$.\n- $(4, 6)$: You doubled the distance from the centre but forgot to add the centre back on.\n- $(7, 9)$: You doubled $P$ and then added the centre. Double the distance from the centre instead.",
+     "position": 4,
+     "options": [
+      {
+       "id": "61d5bcee-8e1f-5d66-b9a8-e7b10ad03b2b",
+       "label": "A",
+       "content": "$(5, 7)$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c49dec86-1199-5aef-902f-cbb49707cdbc",
+       "label": "B",
+       "content": "$(6, 8)$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0b1a3b28-028f-5304-8f8f-0b114f82fb9d",
+       "label": "C",
+       "content": "$(4, 6)$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a4cfff73-7248-53dd-8875-c1c9f16963c5",
+       "label": "D",
+       "content": "$(7, 9)$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3d53a727-bb43-5ca4-9515-4820bf54be47",
+     "key": "maths-transformations-05",
+     "stem": "A shape with an area of 6 cm² is enlarged by a scale factor of 3. Find the area of the image.",
+     "image_url": null,
+     "explanation": "Lengths are multiplied by 3, so areas are multiplied by $3^{2} = 9$.\n\nArea of the image $= 6 \\times 9 = 54$ cm²\n\n**Why the other options are wrong**\n\n- 9 cm²: You added the scale factor.\n- 18 cm²: You multiplied by 3. Areas are multiplied by the square of the scale factor.\n- 162 cm²: You cubed the scale factor. That is for volumes; areas use the square.",
+     "position": 5,
+     "options": [
+      {
+       "id": "c8ccccc8-e775-5ab4-ad45-6411d80e9912",
+       "label": "A",
+       "content": "9 cm²",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "160c2d0b-aab8-5443-8ad4-fcdad3c84485",
+       "label": "B",
+       "content": "18 cm²",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "91ca7ae8-0423-5166-b983-b32c37ed66fd",
+       "label": "C",
+       "content": "54 cm²",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "eae4877b-27c2-5ce6-8f9a-d5067c053ac1",
+       "label": "D",
+       "content": "162 cm²",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f4a1857e-9204-5842-aa68-ebd6b6f7062a",
+   "topic": "Cumulative Frequency",
+   "title": "Cumulative Frequency: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on cumulative frequency, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 125,
+   "questions": [
+    {
+     "id": "7fd7851c-2779-5c00-bc3d-0380859adf0b",
+     "key": "maths-cumfreq-01",
+     "stem": "The table shows the marks of 60 candidates in a test.\n\n$$\n\\begin{array}{l|cccccc}\n\\text{Marks} & \\text{10–19} & \\text{20–29} & \\text{30–39} & \\text{40–49} & \\text{50–59} & \\text{60–69} \\\\ \\hline\n\\text{Number of candidates} & 4 & 9 & 15 & 20 & 8 & 4\n\\end{array}\n$$\n\nWhat is the cumulative frequency of the class 40–49?",
+     "image_url": null,
+     "explanation": "Add the frequencies up to and including 40–49:\n\n$4 + 9 + 15 + 20 = 48$\n\n**Why the other options are wrong**\n\n- $20$: 20 is the frequency of the class 40–49 alone. Cumulative frequency is the running total up to that class.\n- $28$: 28 is the cumulative frequency up to the class 30–39. Add the 20 candidates in 40–49.\n- $56$: 56 is the cumulative frequency up to the class 50–59, one class too far.",
+     "position": 1,
+     "options": [
+      {
+       "id": "529143eb-5028-56f4-b0aa-8bf743adcebe",
+       "label": "A",
+       "content": "$20$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b43e5eca-1d92-57ad-bf88-f2a8e0cc0427",
+       "label": "B",
+       "content": "$28$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c446f669-8ca7-59dd-bde9-97f1f186b5f5",
+       "label": "C",
+       "content": "$48$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2c1fb126-5549-5a55-a5da-ca3d39ff7bbd",
+       "label": "D",
+       "content": "$56$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b7bf1ba2-d085-5bd4-91a3-434f2dda060f",
+     "key": "maths-cumfreq-02",
+     "stem": "The table shows the marks of 60 candidates in a test.\n\n$$\n\\begin{array}{l|cccccc}\n\\text{Marks} & \\text{10–19} & \\text{20–29} & \\text{30–39} & \\text{40–49} & \\text{50–59} & \\text{60–69} \\\\ \\hline\n\\text{Number of candidates} & 4 & 9 & 15 & 20 & 8 & 4\n\\end{array}\n$$\n\nWhat is the upper class boundary of the class 30–39?",
+     "image_url": null,
+     "explanation": "The upper class boundary lies halfway between the upper limit of this class (39) and the lower limit of the next (40):\n\n$\\dfrac{39 + 40}{2} = 39.5$\n\n**Why the other options are wrong**\n\n- $34.5$: That is the class mark (mid-point) of 30–39.\n- $39$: 39 is the upper class limit. The boundary is halfway between 39 and 40, the lower limit of the next class.\n- $40$: 40 is the lower limit of the next class. The boundary is halfway between 39 and 40.",
+     "position": 2,
+     "options": [
+      {
+       "id": "0369fc65-719f-51c8-8667-d6d3a357c33a",
+       "label": "A",
+       "content": "$34.5$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "23563558-6a2b-50ae-aac9-2bb6136e1af0",
+       "label": "B",
+       "content": "$39$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e5e19c70-e94a-570d-8885-a4c9fe9a5a4c",
+       "label": "C",
+       "content": "$39.5$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ca02e062-19c7-51ca-aee2-dfe0c5a99449",
+       "label": "D",
+       "content": "$40$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8daad92d-5005-55d6-8ff1-c642819c1d90",
+     "key": "maths-cumfreq-03",
+     "stem": "The cumulative frequency curve shows the marks of 60 candidates in a test. Use it to estimate the median mark.",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-cumfreq-03.svg?v=fa1eff3f6c",
+     "explanation": "The median is the $\\dfrac{60}{2} = 30$th mark.\n\nGo across from 30 on the cumulative frequency axis to the curve, then down to the marks axis. The curve passes 28 at 39.5 and 48 at 49.5, so it reaches 30 at about $39.5 + \\dfrac{2}{20} \\times 10 = 40.5$.\n\n**Why the other options are wrong**\n\n- $30$: 30 is the position of the median ($\\dfrac{60}{2}$) on the cumulative frequency axis. Read across to the curve, then down to the marks axis.\n- $44.5$: 44.5 is the mid-point of the median class (40–49). Read the median from the curve.\n- $48$: 48 is a cumulative frequency, not a mark.",
+     "position": 3,
+     "options": [
+      {
+       "id": "85533fc8-dc6c-549c-9fe6-b6b51c075675",
+       "label": "A",
+       "content": "$30$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d043526e-0ac5-5058-8f42-589c054a7720",
+       "label": "B",
+       "content": "$40.5$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ff8f9d08-b10c-5583-9f9b-9277477bf8a7",
+       "label": "C",
+       "content": "$44.5$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "20b289e6-86a3-5240-ab1e-3f603051a1b4",
+       "label": "D",
+       "content": "$48$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1d55f19a-f695-50ba-b11d-81e582784920",
+     "key": "maths-cumfreq-04",
+     "stem": "The table shows the marks of 60 candidates in a test.\n\n$$\n\\begin{array}{l|cccccc}\n\\text{Marks} & \\text{10–19} & \\text{20–29} & \\text{30–39} & \\text{40–49} & \\text{50–59} & \\text{60–69} \\\\ \\hline\n\\text{Number of candidates} & 4 & 9 & 15 & 20 & 8 & 4\n\\end{array}\n$$\n\nHow many candidates scored 50 marks or more?",
+     "image_url": null,
+     "explanation": "Candidates in 50–59 and 60–69: $8 + 4 = 12$.\n\n(Or: $60 - 48 = 12$, using the cumulative frequency up to 49.)\n\n**Why the other options are wrong**\n\n- $4$: 4 is only the class 60–69. Include 50–59 as well.\n- $8$: 8 is only the class 50–59. Include 60–69 as well.\n- $48$: 48 candidates scored less than 50. The question asks for 50 or more.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d654120f-c185-5faa-b505-fd7d45d44c5d",
+       "label": "A",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0d7e0130-8780-5405-8175-499cf6c8c853",
+       "label": "B",
+       "content": "$8$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "871c8d1c-c809-51ac-bb11-3bc24940882b",
+       "label": "C",
+       "content": "$12$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8c75f918-c72c-5074-be6b-4ee21511429f",
+       "label": "D",
+       "content": "$48$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f9248e1c-f994-58c7-b5d9-b67f5af18cbe",
+     "key": "maths-cumfreq-05",
+     "stem": "The table shows the marks of 60 candidates in a test.\n\n$$\n\\begin{array}{l|cccccc}\n\\text{Marks} & \\text{10–19} & \\text{20–29} & \\text{30–39} & \\text{40–49} & \\text{50–59} & \\text{60–69} \\\\ \\hline\n\\text{Number of candidates} & 4 & 9 & 15 & 20 & 8 & 4\n\\end{array}\n$$\n\nA candidate is chosen at random. What is the probability that the candidate scored less than 30?",
+     "image_url": null,
+     "explanation": "Candidates who scored less than 30: $4 + 9 = 13$.\n\n$P = \\dfrac{13}{60}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{3}{20}$: That counts only the class 20–29 (9 candidates). Include 10–19 as well.\n- $\\dfrac{7}{15}$: That counts everyone up to 39 (28 candidates). Less than 30 stops at 29.\n- $\\dfrac{47}{60}$: That is the probability of scoring 30 or more.",
+     "position": 5,
+     "options": [
+      {
+       "id": "006aa3c3-2416-5d0a-9610-3a18951004b6",
+       "label": "A",
+       "content": "$\\dfrac{3}{20}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0533d710-41a4-58a4-be00-01a70961434a",
+       "label": "B",
+       "content": "$\\dfrac{13}{60}$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "15d3ba5b-0368-55e4-91f7-d49ff237c5b9",
+       "label": "C",
+       "content": "$\\dfrac{7}{15}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0274638c-65bb-55bf-83c3-1be236f5e02a",
+       "label": "D",
+       "content": "$\\dfrac{47}{60}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "14817724-5cbb-504c-a769-3bca28eea416",
+   "topic": "Statistics",
+   "title": "Statistics: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on statistics, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 126,
+   "questions": [
+    {
+     "id": "befb70b7-57f6-577a-b522-031c62f6fe13",
+     "key": "maths-statistics-01",
+     "stem": "In a class of 40 pupils, 15 walk to school. On a pie chart of how the pupils travel to school, what angle represents the pupils who walk?",
+     "image_url": null,
+     "explanation": "Angle $= \\dfrac{15}{40} \\times 360° = 135°$\n\n**Why the other options are wrong**\n\n- 24°: You divided 360° by 15. Work out $\\dfrac{15}{40}$ of 360°.\n- 37.5°: 37.5 is the percentage who walk. Change it to an angle: $\\dfrac{15}{40} \\times 360°$.\n- 54°: You treated 15 as a percentage of 360°. 15 is out of 40 pupils.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7eef3ac7-c6cf-5fca-a428-2d5c08d62f1b",
+       "label": "A",
+       "content": "24°",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4cf4f83a-a822-56db-8c37-9ed923b0974b",
+       "label": "B",
+       "content": "37.5°",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d116d509-8f72-5d93-9487-a20bf26b0b84",
+       "label": "C",
+       "content": "54°",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e8fbdd29-79e6-54f1-89f9-42d38050b1bf",
+       "label": "D",
+       "content": "135°",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "da01430d-3856-5e37-93aa-40789726a71c",
+     "key": "maths-statistics-02",
+     "stem": "The pie chart shows how a family in Kenema spends its monthly income. If the family spends Le 1,500 a month on rent, how much does it spend on food?",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-statistics-02.svg?v=202c61d959",
+     "explanation": "Rent is 90°, which stands for Le 1,500. So 1° stands for $\\dfrac{1500}{90}$ Leones.\n\nFood $= 144 \\times \\dfrac{1500}{90} = $ Le 2,400\n\n**Why the other options are wrong**\n\n- Le 600: You found $\\dfrac{144}{360}$ of Le 1,500. But Le 1,500 is the rent (90°), not the whole income.\n- Le 937.50: You turned the ratio upside down. Food has the bigger angle (144°), so it costs more than rent.\n- Le 6,000: That is the whole monthly income. The question asks for food.",
+     "position": 2,
+     "options": [
+      {
+       "id": "68c32049-420c-5914-85b6-9053692b70b7",
+       "label": "A",
+       "content": "Le 600",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b0e248e2-192b-599e-8a8a-19c53b135a61",
+       "label": "B",
+       "content": "Le 937.50",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6d209d2f-363f-5a86-a53f-2269d30dbdf4",
+       "label": "C",
+       "content": "Le 2,400",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b4dc75c2-f39f-5a29-a413-811d47f78d90",
+       "label": "D",
+       "content": "Le 6,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aae6245c-fc02-5025-a948-b779f3b78d7e",
+     "key": "maths-statistics-03",
+     "stem": "The pie chart shows how a family in Kenema spends its monthly income. What percentage of the income is spent on transport?",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-statistics-03.svg?v=202c61d959",
+     "explanation": "Transport $= \\dfrac{54}{360} \\times 100\\% = 15\\%$\n\n**Why the other options are wrong**\n\n- 6.7%: You divided 360 by 54. Work out $\\dfrac{54}{360} \\times 100\\%$.\n- 54%: 54 is the angle in degrees, not a percentage. The whole chart is 360°, not 100.\n- 85%: That is everything except transport.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8e257111-7df6-5b96-8d26-ca26caa78ea8",
+       "label": "A",
+       "content": "6.7%",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bedd6c38-445c-5c1e-bc80-609295458efd",
+       "label": "B",
+       "content": "15%",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7ed56b76-ae15-57fe-8cf2-a351ff2e9e8a",
+       "label": "C",
+       "content": "54%",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d9db6bae-7637-51ce-b6fb-edce91a88dd0",
+       "label": "D",
+       "content": "85%",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "214d4e4d-0671-5355-8b2a-752bd8f65d1b",
+     "key": "maths-statistics-04",
+     "stem": "The bar chart shows the number of pupils absent from a class on each day of one week. Find the mean number of pupils absent per day.",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-statistics-04.svg?v=02c231c39d",
+     "explanation": "Total absent $= 6 + 3 + 5 + 2 + 4 = 20$.\n\nMean $= 20 \\div 5 = 4$ pupils per day.\n\n**Why the other options are wrong**\n\n- $5$: 5 is Wednesday's number, the middle day of the week. The mean is the total divided by the number of days.\n- $6$: 6 is the tallest bar (Monday), not the mean.\n- $20$: 20 is the total for the week. Divide by the 5 days.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7c89bdaf-bfa7-512a-b1dd-e10fd443b552",
+       "label": "A",
+       "content": "$4$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0415d296-8eb6-5aec-b8a6-3ec228bea920",
+       "label": "B",
+       "content": "$5$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "439af6d6-8d5e-5601-aa6b-d31e92858fcc",
+       "label": "C",
+       "content": "$6$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9c53746c-7c00-571b-8873-6ad1ff0e39b0",
+       "label": "D",
+       "content": "$20$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "88396419-ebd4-5445-8048-09d17c88192b",
+     "key": "maths-statistics-05",
+     "stem": "Find the class mark (mid-point) of the class 41–50.",
+     "image_url": null,
+     "explanation": "Class mark $= \\dfrac{\\text{lower limit} + \\text{upper limit}}{2} = \\dfrac{41 + 50}{2} = 45.5$\n\n**Why the other options are wrong**\n\n- $40.5$: That is the lower class boundary.\n- $50.5$: That is the upper class boundary.\n- $91$: You added 41 and 50 but did not halve.",
+     "position": 5,
+     "options": [
+      {
+       "id": "99210c20-4a9e-511c-ae25-bd5e490a135b",
+       "label": "A",
+       "content": "$40.5$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1f3728fe-ec1b-5a0a-b85c-fba160b6a69a",
+       "label": "B",
+       "content": "$45.5$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2d028457-d4a9-5cc4-9e51-fdbce556a8d1",
+       "label": "C",
+       "content": "$50.5$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a45cf3d9-7211-5eff-b8b1-9f1fc6ccace0",
+       "label": "D",
+       "content": "$91$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "31e0b0db-af28-5075-8d3a-47be8b6d8ec2",
+   "topic": "Measures of Dispersion",
+   "title": "Measures of Dispersion: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on measures of dispersion, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 127,
+   "questions": [
+    {
+     "id": "75140d7e-c80f-59e1-bac1-7e1085ee45b7",
+     "key": "maths-dispersion-01",
+     "stem": "Find the range of 23, 17, 31, 9 and 26.",
+     "image_url": null,
+     "explanation": "Range $= \\text{largest} - \\text{smallest} = 31 - 9 = 22$\n\n**Why the other options are wrong**\n\n- $9$: 9 is the smallest number. Range = largest − smallest.\n- $31$: 31 is the largest number. Range = largest − smallest.\n- $40$: You added the largest and smallest. Subtract them.",
+     "position": 1,
+     "options": [
+      {
+       "id": "9d4c2174-b246-57f9-9900-e55ec8b5a655",
+       "label": "A",
+       "content": "$9$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "51563b02-8d82-5f74-9281-d10e4204829b",
+       "label": "B",
+       "content": "$22$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0cf2bbbb-8e15-5366-8130-0f0843f0eb7e",
+       "label": "C",
+       "content": "$31$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6f8fd696-2149-5fb0-b0c4-b5c22952489a",
+       "label": "D",
+       "content": "$40$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b92998a7-7852-5d30-8208-0c9c6c6e0551",
+     "key": "maths-dispersion-02",
+     "stem": "Find the mean deviation of 2, 4, 6, 8 and 10.",
+     "image_url": null,
+     "explanation": "Mean $= \\dfrac{2 + 4 + 6 + 8 + 10}{5} = 6$.\n\nAbsolute deviations: 4, 2, 0, 2, 4. Their mean $= \\dfrac{12}{5} = 2.4$.\n\n**Why the other options are wrong**\n\n- $0$: The signed deviations always add up to 0. Mean deviation uses their sizes (absolute values).\n- $2.83$: That is the standard deviation. Mean deviation is the mean of the absolute deviations.\n- $8$: That is the variance (mean of the squared deviations).",
+     "position": 2,
+     "options": [
+      {
+       "id": "903bd664-f05b-5426-baef-e7cd5eef864d",
+       "label": "A",
+       "content": "$0$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "16f0a9a9-d9d9-5a78-9790-fc7a9a8ca1d5",
+       "label": "B",
+       "content": "$2.4$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c519909d-2ab8-53cd-9267-cf585791a496",
+       "label": "C",
+       "content": "$2.83$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fd98ed3a-7d61-5ef2-abe3-e3be8466c917",
+       "label": "D",
+       "content": "$8$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "15611ded-5195-5e6e-978f-112898062e84",
+     "key": "maths-dispersion-03",
+     "stem": "Find the variance of 3, 5, 7 and 9.",
+     "image_url": null,
+     "explanation": "Mean $= \\dfrac{3 + 5 + 7 + 9}{4} = 6$.\n\nSquared deviations: $9, 1, 1, 9$, which add up to 20.\n\nVariance $= \\dfrac{20}{4} = 5$\n\n**Why the other options are wrong**\n\n- $2$: That is the mean deviation. Variance is the mean of the squared deviations.\n- $2.24$: That is the standard deviation, the square root of the variance.\n- $4$: You divided by 5. There are 4 numbers, so divide by 4.",
+     "position": 3,
+     "options": [
+      {
+       "id": "99578bb4-ffbb-511e-94b1-a75f503dcae6",
+       "label": "A",
+       "content": "$2$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "406d089e-3961-50f2-bc8a-4f75144027b4",
+       "label": "B",
+       "content": "$2.24$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "83a3f9aa-2d1e-5562-92a2-a8e45918225d",
+       "label": "C",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ce00075e-7956-5352-bbcd-005bf080eaf3",
+       "label": "D",
+       "content": "$5$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "325b178b-bfde-5a13-b292-ba1edd482312",
+     "key": "maths-dispersion-04",
+     "stem": "Find the standard deviation of 1, 3, 5, 7 and 9, correct to two decimal places.",
+     "image_url": null,
+     "explanation": "Mean $= 5$. Squared deviations: $16, 4, 0, 4, 16$, which add up to 40.\n\nVariance $= \\dfrac{40}{5} = 8$, so the standard deviation $= \\sqrt{8} = 2.83$.\n\n**Why the other options are wrong**\n\n- $2.40$: That is the mean deviation (the mean of 4, 2, 0, 2, 4). Standard deviation uses squared deviations.\n- $3.16$: You divided by $n - 1 = 4$. Divide by the number of values, 5.\n- $8.00$: That is the variance. Take its square root.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e2ecf131-5d58-52c3-8a5f-d796b7d1781b",
+       "label": "A",
+       "content": "$2.40$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5ef38716-9e02-510d-a0c5-c3c4aa579e87",
+       "label": "B",
+       "content": "$2.83$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "3e96a527-b5ba-5858-94e8-d8faeda30e0b",
+       "label": "C",
+       "content": "$3.16$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "12700510-fbca-5410-8a5e-4a9b65d8bc0c",
+       "label": "D",
+       "content": "$8.00$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d351d34e-2b0b-52d6-9ed7-8c948201dfab",
+     "key": "maths-dispersion-05",
+     "stem": "The standard deviation of a set of numbers is 4. If 5 is added to every number, what is the new standard deviation?",
+     "image_url": null,
+     "explanation": "Adding the same number to every value moves the whole set along without changing how spread out it is. The deviations from the mean stay the same, so the standard deviation is still 4.\n\n**Why the other options are wrong**\n\n- $9$: Adding 5 moves every number by the same amount, so the spread does not change.\n- $16$: 16 is the variance ($4^{2}$). Adding 5 to every number changes neither.\n- $20$: Multiplying is not involved. Adding the same number to every value leaves the spread unchanged.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ab271a46-d8b2-5439-8b45-f45bac719249",
+       "label": "A",
+       "content": "$4$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "383d193e-6c8f-5dd4-b345-4e35b92090ce",
+       "label": "B",
+       "content": "$9$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bdefe72a-55f7-5ec4-a541-22347e95761a",
+       "label": "C",
+       "content": "$16$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "efea10cb-e5df-560c-9f62-2e53fe5fa4fa",
+       "label": "D",
+       "content": "$20$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1fdd28da-6dc2-5ceb-8fb9-216a50ae91cf",
+   "topic": "Ratio, Proportion and Rates",
+   "title": "Ratio, Proportion and Rates: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on ratio, proportion and rates, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 128,
+   "questions": [
+    {
+     "id": "745c14e7-72ee-5d44-8759-636971d5da2e",
+     "key": "maths-ratio-01",
+     "stem": "Musa, Kadie and Sorie share Le 4,500 in the ratio 2 : 3 : 4. How much is the largest share?",
+     "image_url": null,
+     "explanation": "Total parts $= 2 + 3 + 4 = 9$. One part $= 4500 \\div 9 = $ Le 500.\n\nLargest share $= 4 \\times 500 = $ Le 2,000\n\n**Why the other options are wrong**\n\n- Le 500: Le 500 is one part ($4500 \\div 9$). The largest share is 4 parts.\n- Le 1,000: That is the smallest share (2 parts).\n- Le 1,500: You divided by 3, the number of people. The money is shared by the ratio, not equally.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8442a924-7166-5c4d-95b1-14a547ee3768",
+       "label": "A",
+       "content": "Le 500",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4195b9f6-8f47-59bb-930d-c937751fa8f2",
+       "label": "B",
+       "content": "Le 1,000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3a2056bd-482e-54bc-a269-aa862ed8b243",
+       "label": "C",
+       "content": "Le 1,500",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "805f9a45-5b19-505d-bb51-11702704ca45",
+       "label": "D",
+       "content": "Le 2,000",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "13f5d40b-72d6-50b1-99d7-a0cb961f0127",
+     "key": "maths-ratio-02",
+     "stem": "A poda-poda travels 150 km from Freetown in 2 hours 30 minutes. Find its average speed.",
+     "image_url": null,
+     "explanation": "2 hours 30 minutes $= 2.5$ hours.\n\nSpeed $= \\dfrac{\\text{distance}}{\\text{time}} = \\dfrac{150}{2.5} = 60$ km/h\n\n**Why the other options are wrong**\n\n- 65.2 km/h: You wrote 2 hours 30 minutes as 2.3 hours. 30 minutes is half an hour: 2.5 hours.\n- 75 km/h: You divided by 2 hours and ignored the 30 minutes.\n- 375 km/h: You multiplied distance by time. Speed = distance ÷ time.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f8cd50f5-4635-55b4-9840-bf4fa4d850ae",
+       "label": "A",
+       "content": "60 km/h",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5cea8d98-a751-5cca-85b2-b8e8960c6081",
+       "label": "B",
+       "content": "65.2 km/h",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3473e3ab-651b-533f-9fdf-7db9ff42493f",
+       "label": "C",
+       "content": "75 km/h",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "979fabbd-d286-5196-a314-c769ab154366",
+       "label": "D",
+       "content": "375 km/h",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f6e02650-7e97-55a3-8622-40b61c5ca8e6",
+     "key": "maths-ratio-03",
+     "stem": "A trader changes Le 1,410 into US dollars at a rate of 1 US dollar = Le 23.50. How many dollars does she get?",
+     "image_url": null,
+     "explanation": "Number of dollars $= \\dfrac{1410}{23.50} = 60$ US dollars.\n\n**Why the other options are wrong**\n\n- 6 US dollars: Check the decimal point: $1410 \\div 23.5 = 60$.\n- 600 US dollars: Check the decimal point: $1410 \\div 23.5 = 60$, not 600.\n- 33,135 US dollars: You multiplied. To change Leones into dollars, divide by the rate.",
+     "position": 3,
+     "options": [
+      {
+       "id": "13c11e52-9455-53de-a7f0-c3e3c14b982e",
+       "label": "A",
+       "content": "6 US dollars",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ea7bcf3d-874e-55ab-acea-dd3d5dc4f4c6",
+       "label": "B",
+       "content": "60 US dollars",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "20ca3a1d-9220-5e84-9182-526cabb636b5",
+       "label": "C",
+       "content": "600 US dollars",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d8296e47-b9ab-520a-96ad-fab7b651d29e",
+       "label": "D",
+       "content": "33,135 US dollars",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3d851b5e-937e-520b-a556-3f7485690197",
+     "key": "maths-ratio-04",
+     "stem": "A block of metal has a mass of 540 g and a volume of 200 cm³. Find its density.",
+     "image_url": null,
+     "explanation": "Density $= \\dfrac{\\text{mass}}{\\text{volume}} = \\dfrac{540}{200} = 2.7$ g/cm³\n\n**Why the other options are wrong**\n\n- 0.37 g/cm³: You divided volume by mass. Density = mass ÷ volume.\n- 340 g/cm³: You subtracted. Density = mass ÷ volume.\n- 108,000 g/cm³: You multiplied. Density = mass ÷ volume.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2b9e9524-7d7d-545f-a387-c2651b69ba5b",
+       "label": "A",
+       "content": "0.37 g/cm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "aae00a77-97ce-55ab-9e38-d8df99fea9c0",
+       "label": "B",
+       "content": "2.7 g/cm³",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "51579f0b-cbee-5c5e-b5b2-314295462b04",
+       "label": "C",
+       "content": "340 g/cm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "035bc2b4-e3a8-5180-a036-1d8c864c1c35",
+       "label": "D",
+       "content": "108,000 g/cm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "744e4539-249a-510a-b94d-6ca02dd708d3",
+     "key": "maths-ratio-05",
+     "stem": "If 6 exercise books cost Le 45, how much do 10 of the same books cost?",
+     "image_url": null,
+     "explanation": "One book costs $45 \\div 6 = $ Le 7.50.\n\n10 books cost $10 \\times 7.50 = $ Le 75.\n\n**Why the other options are wrong**\n\n- Le 27: You used inverse proportion. More books cost more: this is direct proportion.\n- Le 49: You added 4 Leones for the 4 extra books. Find the cost of one book first.\n- Le 450: You multiplied Le 45 by 10. Le 45 is the price of 6 books, not one.",
+     "position": 5,
+     "options": [
+      {
+       "id": "0e5e981d-a06c-53ab-b948-d26dc4b1a494",
+       "label": "A",
+       "content": "Le 27",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3b942d18-2b55-551f-b215-9dd992868370",
+       "label": "B",
+       "content": "Le 49",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "46e2023f-6da1-5a4b-8b9f-c2c7600a6498",
+       "label": "C",
+       "content": "Le 75",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "5ad8921b-6c55-5b23-ab1f-2bd4f5d96a9b",
+       "label": "D",
+       "content": "Le 450",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "10ebb4a9-ad2a-547d-9af5-6e59de8828de",
+   "topic": "Linear Inequalities",
+   "title": "Linear Inequalities: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on linear inequalities, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 129,
+   "questions": [
+    {
+     "id": "f4558575-06ac-5140-9685-9df567c37562",
+     "key": "maths-inequalities-01",
+     "stem": "Solve the inequality $3x - 4 < 11$.",
+     "image_url": null,
+     "explanation": "$3x - 4 < 11$\n\nAdd 4: $3x < 15$\n\nDivide by 3: $x < 5$\n\n**Why the other options are wrong**\n\n- $x > 5$: You reversed the inequality sign. Reverse it only when you multiply or divide by a negative number.\n- $x < \\dfrac{7}{3}$: Sign slip: add 4 to both sides, $3x < 15$.\n- $x < 15$: You stopped at $3x < 15$. Divide both sides by 3.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8ad1b59c-5212-5caa-a8ea-6dd339986c57",
+       "label": "A",
+       "content": "$x > 5$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3e748d2d-a260-59da-8336-fceb0dd8aa17",
+       "label": "B",
+       "content": "$x < \\dfrac{7}{3}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eb714784-1a96-5b14-93b6-43a5b59b5150",
+       "label": "C",
+       "content": "$x < 15$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8b198938-1dc1-5b01-ad3a-3a6fd9758883",
+       "label": "D",
+       "content": "$x < 5$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4a242eb4-d9e0-5dee-a4cf-6bc115d0adf8",
+     "key": "maths-inequalities-02",
+     "stem": "Solve the inequality $5 - 2x \\geq 11$.",
+     "image_url": null,
+     "explanation": "$5 - 2x \\geq 11$\n\nSubtract 5: $-2x \\geq 6$\n\nDivide by $-2$ and reverse the sign: $x \\leq -3$\n\n**Why the other options are wrong**\n\n- $x \\geq -3$: When you divide both sides by $-2$, the inequality sign must be reversed.\n- $x \\leq 3$: Sign slip: $-2x \\geq 6$ gives $x \\leq -3$, not 3.\n- $x \\leq -8$: You added 5 to 11 instead of subtracting: $-2x \\geq 11 - 5 = 6$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "cc548aea-60c3-5d37-8262-859ccf1a4d94",
+       "label": "A",
+       "content": "$x \\leq -3$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "cc9eb2b4-1a32-545a-b885-f23114c00f83",
+       "label": "B",
+       "content": "$x \\geq -3$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "814107f7-88e4-5020-8028-6dd709454565",
+       "label": "C",
+       "content": "$x \\leq 3$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ae65300b-61b6-5ab2-994d-42d22db1a151",
+       "label": "D",
+       "content": "$x \\leq -8$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e2563a0c-90b2-54b1-b51b-f19efe2e3985",
+     "key": "maths-inequalities-03",
+     "stem": "Find the range of values of $x$ for which $-1 < 2x + 3 \\leq 9$.",
+     "image_url": null,
+     "explanation": "Subtract 3 from all three parts: $-4 < 2x \\leq 6$\n\nDivide all three parts by 2: $-2 < x \\leq 3$\n\n**Why the other options are wrong**\n\n- $-4 < x \\leq 3$: You subtracted 3 from the left side but did not divide it by 2.\n- $-2 < x \\leq 6$: You subtracted 3 from the right side but did not divide it by 2.\n- $-\\dfrac{1}{2} < x \\leq 3$: You did not subtract 3 from the left side. Do the same thing to all three parts.",
+     "position": 3,
+     "options": [
+      {
+       "id": "96cf050f-35b0-510e-8238-980a4e59f1e3",
+       "label": "A",
+       "content": "$-4 < x \\leq 3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "88546a47-36ee-5537-a670-5fb207c8d662",
+       "label": "B",
+       "content": "$-2 < x \\leq 6$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4a90d245-fb93-5787-9260-e61e622b3cf2",
+       "label": "C",
+       "content": "$-\\dfrac{1}{2} < x \\leq 3$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6aae745f-4045-5409-b2e1-86b8c0e6f89c",
+       "label": "D",
+       "content": "$-2 < x \\leq 3$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1601cd13-435e-5912-9be7-42bcf1bcad38",
+     "key": "maths-inequalities-04",
+     "stem": "How many integers $x$ satisfy $-2 < x \\leq 3$?",
+     "image_url": null,
+     "explanation": "The integers are $-1, 0, 1, 2, 3$: that is 5 integers.\n\n$-2$ is not included ($<$), but 3 is ($\\leq$).\n\n**Why the other options are wrong**\n\n- $3$: You counted only the positive integers. 0 and $-1$ also satisfy the inequality.\n- $4$: You left out 3. The sign $\\leq$ includes 3.\n- $6$: You included $-2$. The sign $<$ does not include $-2$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "1dfc71f9-339e-556e-92dd-14461c0893c4",
+       "label": "A",
+       "content": "$3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "86aafc6f-02da-598b-a2ca-b841636b6ab2",
+       "label": "B",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "67d93b38-f39d-5a31-9720-a4d56b8b6ac5",
+       "label": "C",
+       "content": "$5$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d7cd9835-1613-5043-9dc1-a9a4cf63dae5",
+       "label": "D",
+       "content": "$6$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "773c8023-269f-5439-99da-cde3397f8389",
+     "key": "maths-inequalities-05",
+     "stem": "Fatu has Le 200. Pens cost Le 20 each. She must keep at least Le 50 for transport. What is the greatest number of pens she can buy?",
+     "image_url": null,
+     "explanation": "She can spend at most $200 - 50 = $ Le 150 on pens.\n\n$20n \\leq 150$, so $n \\leq 7.5$. The greatest whole number of pens is 7.\n\n**Why the other options are wrong**\n\n- $8$: $20n \\leq 150$ gives $n \\leq 7.5$. She cannot afford 8 pens, so round down.\n- $10$: You forgot the Le 50 she must keep for transport.\n- $12$: You added the transport money instead of taking it away.",
+     "position": 5,
+     "options": [
+      {
+       "id": "46fff4da-465a-5e87-ada8-42e5385a35d9",
+       "label": "A",
+       "content": "$7$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "faaf80fa-484d-58c5-88e4-443ad65d2530",
+       "label": "B",
+       "content": "$8$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6f737f19-66ec-5420-9cdd-a4e212c3b7b1",
+       "label": "C",
+       "content": "$10$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5c5dfe8c-9c63-53fd-9725-b7823445f4eb",
+       "label": "D",
+       "content": "$12$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "66ac24f99c22"
+}

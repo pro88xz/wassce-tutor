@@ -36,5 +36,24 @@
    "ac94586a-2927-5225-9209-929f56a32d39"
   ],
   "questions": 50
+ },
+ {
+  "name": "maths_set3_p1",
+  "label": "Mathematics: set 3 (with charts)",
+  "subject_slug": "mathematics",
+  "version": "66ac24f99c22",
+  "papers": [
+   "15f1eb7f-3243-5d29-8762-860a4c44fe51",
+   "8076f639-ca16-5c2b-b27f-8c90410e1280",
+   "0d3d418a-f394-5ab4-9612-c1e94fb9176b",
+   "13d177a5-4a50-59ce-9b5f-57f1be655c5e",
+   "cc78f037-2930-5a96-839e-3d59a7db0fb6",
+   "f4a1857e-9204-5842-aa68-ebd6b6f7062a",
+   "14817724-5cbb-504c-a769-3bca28eea416",
+   "31e0b0db-af28-5075-8d3a-47be8b6d8ec2",
+   "1fdd28da-6dc2-5ceb-8fb9-216a50ae91cf",
+   "10ebb4a9-ad2a-547d-9af5-6e59de8828de"
+  ],
+  "questions": 50
  }
 ]
