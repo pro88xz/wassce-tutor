@@ -35,3 +35,16 @@ The build enforces a minimum of 180 words, Learning objectives and WASSCE examin
 - The generated JSON batches remain compatible with the existing admin import route; the importer and its human review workflow remain the publication boundary.
 
 The source manifest intentionally starts empty. No external work is presumed redistributable, and no third-party source is fetched until its licence and attribution record has been reviewed and committed.
+
+
+## Live Supabase curriculum validation
+
+Before an administrator imports generated lesson batches, verify every manifest subject and topic against the live public curriculum catalog:
+
+```bash
+SUPABASE_URL="https://YOUR_PROJECT.supabase.co" \
+SUPABASE_ANON_KEY="YOUR_PUBLIC_ANON_KEY" \
+npm run notes:catalog
+```
+
+The command performs read-only paginated queries against `subjects` and `topics`, checks the exact subject-to-topic relationship, and exits non-zero for unknown subjects, unknown topic slugs, or duplicate lesson titles within a topic. The anon key is intended for public read access only; never put a Supabase service-role key in the repository or a client build. This check does not write to Supabase. Actual lesson imports remain an authenticated administrator action through the existing admin importer, in batches of at most 20, followed by the existing editorial review and publication workflow.
