@@ -77,3 +77,21 @@ test('HTML extraction prioritises article content and strips scripts and navigat
   assert.match(markdown, /Useful educational text/)
   assert.doesNotMatch(markdown, /Navigation noise|steal\(\)/)
 })
+
+import { validateCatalog } from './validate-topic-catalog.mjs'
+
+test('live catalog validation requires the exact subject and topic relationship', () => {
+  const manifest = { lessons: [
+    { file: 'valid.md', subject: 'Biology', topic: 'cell-structure', title: 'Cells' },
+    { file: 'wrong-topic.md', subject: 'Biology', topic: 'invented-topic', title: 'Wrong' },
+    { file: 'wrong-subject.md', subject: 'Unknown Subject', topic: 'cell-structure', title: 'Wrong subject' },
+  ] }
+  const subjects = [{ id: 'subject-bio', name: 'Biology', slug: 'biology' }]
+  const topics = [{ id: 'topic-cell', subject_id: 'subject-bio', slug: 'cell-structure' }]
+  const result = validateCatalog(manifest, subjects, topics)
+  assert.equal(result.valid, false)
+  assert.equal(result.checked, 3)
+  assert.equal(result.errors.length, 2)
+  assert.match(result.errors[0], /does not exist under subject/)
+  assert.match(result.errors[1], /subject does not exist/)
+})
