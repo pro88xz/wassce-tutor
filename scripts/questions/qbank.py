@@ -75,6 +75,8 @@ def same(a: Any, b: Any) -> bool:
         return a.matches(b)
     if isinstance(b, Rounded):
         return b.matches(a)
+    if isinstance(a, sp.Set) or isinstance(b, sp.Set):  # solution sets of inequalities
+        return isinstance(a, sp.Set) and isinstance(b, sp.Set) and a == b
     if isinstance(a, (set, frozenset)) or isinstance(b, (set, frozenset)):
         if not (isinstance(a, (set, frozenset)) and isinstance(b, (set, frozenset))):
             return False
@@ -161,10 +163,38 @@ def _parse_math(tex: str):
         return None
 
 
+def _tex_number(t: str):
+    m = re.fullmatch(r"(-?)\\d?frac\{(\d+)\}\{(\d+)\}", t)
+    if m:
+        return (-1 if m.group(1) else 1) * sp.Rational(int(m.group(2)), int(m.group(3)))
+    return sp.Rational(t) if re.fullmatch(r"-?\d+(?:\.\d+)?", t) else None
+
+
+def _interval_from_tex(tex: str):
+    """'$x \\leq -3$' or '$-2 < x \\leq 3$' -> the sympy interval it describes."""
+    t = tex.replace("$", "").replace(" ", "")
+    for a, b in (("\\leq", "≤"), ("\\geq", "≥"), ("\\le", "≤"), ("\\ge", "≥")):
+        t = t.replace(a, b)
+    num = r"(-?\\d?frac\{\d+\}\{\d+\}|-?\d+(?:\.\d+)?)"
+    m = re.fullmatch(rf"x([<>≤≥]){num}", t)
+    if m:
+        op, v = m.group(1), _tex_number(m.group(2))
+        return {"<": sp.Interval.open(-sp.oo, v), "≤": sp.Interval(-sp.oo, v),
+                ">": sp.Interval.open(v, sp.oo), "≥": sp.Interval(v, sp.oo)}[op]
+    m = re.fullmatch(rf"{num}([<≤])x([<≤]){num}", t)
+    if m:
+        lo, hi = _tex_number(m.group(1)), _tex_number(m.group(4))
+        return sp.Interval(lo, hi, left_open=m.group(2) == "<", right_open=m.group(3) == "<")
+    return None
+
+
 def tex_shows(tex: str, value: Any) -> bool | None:
     """True if the option text shows this value, False if it shows something
     else, None if this kind of value can't be checked automatically."""
     t = _norm_tex(tex)
+    if isinstance(value, sp.Set):
+        shown = _interval_from_tex(tex)
+        return None if shown is None else shown == value
     if isinstance(value, str):
         if value.isdigit():
             return f"{value}_{{" in t  # base-n numbers, e.g. 2210_{three}

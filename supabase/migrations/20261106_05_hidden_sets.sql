@@ -1,13 +1,13 @@
 -- 20261106_05_hidden_sets.sql
 --
--- Practice question sets arrive hidden (papers.is_published = false) until a
--- reviewer approves them in Admin -> Review lessons and questions. Until now
--- only the app's screens respected that: the database still returned hidden
--- papers, their questions and their answers to any student with access who
--- asked for them directly. These policies make the database enforce it:
+-- An admin can hide a practice set (papers.is_published = false) in
+-- Admin -> Review. Until now only the app's screens respected that: the
+-- database still returned hidden papers, their questions and their answers
+-- to any student with access who asked for them directly. These policies
+-- make the database enforce it:
 --
 --   students with access   published papers only, with their questions/options
---   admins                 everything (reviewers must see hidden sets to check them)
+--   admins                 everything (so they can try a hidden set before showing it)
 --   everyone else          nothing (unchanged)
 --
 -- Free public pages read the wassce_public_* views, which are unaffected.

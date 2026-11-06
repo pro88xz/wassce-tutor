@@ -1,0 +1,40 @@
+[
+ {
+  "name": "maths_pilot_p1",
+  "label": "Mathematics: set 1",
+  "subject_slug": "mathematics",
+  "version": "95d8e0d155a9",
+  "papers": [
+   "e831c841-7a62-5cba-80ea-8956986769c3",
+   "87261da3-18f7-565f-a8ba-1dd811054d79",
+   "bf5dffa9-fe87-5747-9d7e-b6fdfea620f2",
+   "73f999eb-9488-5554-8fb1-6442401681ef",
+   "8d5b7c53-2fd8-5e2b-8ac2-08da895674f1",
+   "848126c4-b194-585a-933e-361bcd93f336",
+   "eacf2f8a-6948-5d3f-9f23-5b0bf9244a10",
+   "c87c2db2-cafc-5303-9ff3-e7a326b5e947",
+   "3ae79381-50d2-5052-9930-44c04488bd25",
+   "a67034a6-fb54-57da-8b2c-4a076e094ac7"
+  ],
+  "questions": 50
+ },
+ {
+  "name": "maths_set2_p1",
+  "label": "Mathematics: set 2 (with diagrams)",
+  "subject_slug": "mathematics",
+  "version": "56f85ade48b8",
+  "papers": [
+   "d662aa5c-6878-5349-ae6f-2e5294af805e",
+   "70a351f8-bbcf-5e0b-b3be-9930bef62a8f",
+   "69ccfee9-54b3-558c-86ae-36a41d314aad",
+   "d61286c0-e727-52d1-b7af-a1519069ad03",
+   "20685801-a723-5988-869a-2436c20a2491",
+   "6f3f57b6-d1e5-5445-8a97-8b151b1f2527",
+   "9d638445-b514-591a-b902-cce03b01c550",
+   "7077c368-6fb6-5fed-a6c1-12ab6ca06fbc",
+   "ea7c6aff-ada1-52b9-806b-5972ef98b929",
+   "ac94586a-2927-5225-9209-929f56a32d39"
+  ],
+  "questions": 50
+ }
+]

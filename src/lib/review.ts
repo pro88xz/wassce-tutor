@@ -147,10 +147,9 @@ export function useSaveByline() {
 }
 
 // ── Practice question sets ────────────────────────────────────────────────
-// Question sets are papers with paper_type 'Practice'. New sets arrive hidden
-// (is_published = false). A reviewer takes the set like a student, then
-// approves it: every question is stamped reviewed_at/reviewed_by and the set
-// becomes visible to students on the subject page.
+// Question sets are papers with paper_type 'Practice'. Sets go live as soon as
+// they are loaded (Admin -> Load question sets). Here an admin can try a set
+// and hide it from students, or show it again.
 
 export type ReviewSet = {
   id: string
@@ -184,27 +183,23 @@ function useInvalidateSets() {
   return () => {
     qc.invalidateQueries({ queryKey: ['review-sets'] })
     qc.invalidateQueries({ queryKey: ['papers'] })
+    qc.invalidateQueries({ queryKey: ['question-bank-status'] })
   }
 }
 
-/** Approve a set: stamp every question as reviewed, then show the set to students. */
-export function useApproveSet() {
+/** Show a set to students. */
+export function usePublishSet() {
   const invalidate = useInvalidateSets()
   return useMutation({
-    mutationFn: async (args: { paperId: string; reviewerId: string }) => {
-      const { error: qErr } = await supabase
-        .from('questions')
-        .update({ reviewed_at: new Date().toISOString(), reviewed_by: args.reviewerId })
-        .eq('paper_id', args.paperId)
-      if (qErr) throw qErr
-      const { error } = await supabase.from('papers').update({ is_published: true }).eq('id', args.paperId)
+    mutationFn: async (paperId: string) => {
+      const { error } = await supabase.from('papers').update({ is_published: true }).eq('id', paperId)
       if (error) throw error
     },
     onSuccess: invalidate,
   })
 }
 
-/** Hide a set from students again (its review stamps are kept). */
+/** Hide a set from students. */
 export function useHideSet() {
   const invalidate = useInvalidateSets()
   return useMutation({

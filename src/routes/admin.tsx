@@ -1,5 +1,5 @@
 import { createFileRoute, Link, Outlet, useLocation } from '@tanstack/react-router'
-import { BadgeCheck, BookOpen, Download, FileText, FileUp, Layers, ListChecks, ShieldCheck, Upload, Wallet } from 'lucide-react'
+import { BadgeCheck, BookOpen, Download, FileText, FileUp, Layers, Library, ListChecks, ShieldCheck, Upload, Wallet } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { useEffect, useState } from 'react'
 import { useAuth } from '@/lib/auth'
@@ -112,6 +112,15 @@ function AdminPage() {
       {!atRoot ? <Outlet /> : (
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         <Link
+          to="/admin/question-bank"
+          className="rounded-2xl border border-primary/40 bg-primary/5 p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+        >
+          <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><Library className="h-5 w-5" aria-hidden /></span>
+          <h2 className="font-bold">Load question sets</h2>
+          <p className="mt-1 text-sm text-muted-foreground">Add ready-made, answer-checked practice questions in one tap.</p>
+          <p className="mt-3 text-xs text-primary">Open →</p>
+        </Link>
+        <Link
           to="/admin/topics"
           className="rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md"
         >
@@ -122,11 +131,11 @@ function AdminPage() {
         </Link>
         <Link
           to="/admin/review"
-          className="rounded-2xl border border-primary/40 bg-primary/5 p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+          className="rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md"
         >
           <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><BadgeCheck className="h-5 w-5" aria-hidden /></span>
           <h2 className="font-bold">Review lessons</h2>
-          <p className="mt-1 text-sm text-muted-foreground">Approve lessons as free public pages, and practice question sets for students.</p>
+          <p className="mt-1 text-sm text-muted-foreground">Approve lessons as free public pages; show or hide practice sets.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
         </Link>
         <Link

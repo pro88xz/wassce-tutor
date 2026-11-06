@@ -66,8 +66,9 @@ questions are built around.
 6. **Sierra Leonean context.** Local names and places, Leones (Le), realistic
    prices and quantities.
 7. **Worked solution for every question**, plus a check where one is natural.
-8. **Nothing goes live unreviewed.** New sets arrive hidden. A teacher takes
-   the set in the app and approves it (Admin → Review lessons and questions).
+8. **Checked by code, loaded in one tap.** Every set must pass the build's
+   answer checks. An admin loads it in Admin → Load question sets and it is
+   live for students straight away; any set can be hidden in Admin → Review.
 
 ## Pilot: 50 questions, 10 topics
 
@@ -102,8 +103,8 @@ Volumes, Measures of Central Tendency, Logarithms, Modular Arithmetic, Vectors.
   with its question (say the drawn angle is 120° but the question says 124°),
   the build fails.
 - Diagrams are saved to `public/questions/` and served from the website.
-  Their URL carries a version: redrawing a diagram changes the URL, which
-  clears that question's review and hides its set until it is approved again.
+  Their URL carries a version, so a redrawn diagram is never shown from an
+  old cache.
 - One option on the tree-height question is the answer a student gets by
   rounding too early, a mistake the examiners name.
 

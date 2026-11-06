@@ -182,3 +182,76 @@ class Fig:
             f"  <title>{esc(title)}</title>\n"
             f'  <rect width="100%" height="100%" fill="#ffffff"/>\n  {body}\n</svg>\n'
         )
+
+
+# ── Charts and filled shapes ──────────────────────────────────────────────
+FILLS = ["#dbeafe", "#dcfce7", "#fef3c7", "#fce7f3", "#ede9fe", "#e0f2fe"]
+GRID = "#e5e7eb"
+
+
+def _arc_path(f: Fig, c, r, a1, a2) -> str:
+    """SVG arc from angle a1 to a2 (degrees, anticlockwise in the figure)."""
+    (x1, y1), (x2, y2) = f.P(on_circle(c, r, a1)), f.P(on_circle(c, r, a2))
+    large = 1 if (a2 - a1) % 360 > 180 else 0
+    return f"A{r * f.s:.1f},{r * f.s:.1f} 0 {large} 0 {x2:.1f},{y2:.1f}", (x1, y1)
+
+
+def sector(f: Fig, c, r, a1, a2, fill="none", stroke=INK):
+    arc, (x1, y1) = _arc_path(f, c, r, a1, a2)
+    cx, cy = f.P(c)
+    f.items.append(f'<path d="M{cx:.1f},{cy:.1f} L{x1:.1f},{y1:.1f} {arc} Z" fill="{fill}" stroke="{stroke}" stroke-width="2" stroke-linejoin="round"/>')
+
+
+def arc(f: Fig, c, r, a1, a2, color=INK, width=2):
+    path, (x1, y1) = _arc_path(f, c, r, a1, a2)
+    f.items.append(f'<path d="M{x1:.1f},{y1:.1f} {path}" fill="none" stroke="{color}" stroke-width="{width}"/>')
+
+
+def pie(f: Fig, c, r, parts: list[tuple[str, float]], start=90.0):
+    """Pie chart drawn clockwise from `start`; each part is (label, angle in degrees)."""
+    a = start
+    for i, (_, ang) in enumerate(parts):
+        sector(f, c, r, a - ang, a, fill=FILLS[i % len(FILLS)])
+        a -= ang
+    a = start
+    for name, ang in parts:
+        mid = a - ang / 2
+        f.text(name, on_circle(c, r * 0.62, mid), dy=-8, size=13, weight="bold")
+        f.text(f"{ang:g}°", on_circle(c, r * 0.62, mid), dy=9, size=13)
+        a -= ang
+
+
+def rect(f: Fig, x0, y0, x1, y1, fill="none", stroke=INK, width=2):
+    (ax, ay), (bx, by) = f.P((x0, y1)), f.P((x1, y0))
+    f.items.append(f'<rect x="{ax:.1f}" y="{ay:.1f}" width="{bx - ax:.1f}" height="{by - ay:.1f}" fill="{fill}" stroke="{stroke}" stroke-width="{width}"/>')
+
+
+def axes(f: Fig, x0, x1, y0, y1, xticks, yticks, xlabel="", ylabel="", grid=True, xfmt="{:g}", yfmt="{:g}"):
+    """Axes with tick labels and light grid lines, as on squared graph paper."""
+    if grid:
+        for t in yticks:
+            f.line((x0, t), (x1, t), color=GRID, width=1)
+        for t in xticks:
+            f.line((t, y0), (t, y1), color=GRID, width=1)
+    f.line((x0, y0), (x1, y0), width=1.6)
+    f.line((x0, y0), (x0, y1), width=1.6)
+    for t in xticks:
+        f.text(xfmt.format(t) if not isinstance(t, str) else t, (t, y0), dy=12, size=11, color=MUTED)
+    for t in yticks:
+        f.text(yfmt.format(t), (x0, t), dx=-6, size=11, color=MUTED, anchor="end")
+    if xlabel:
+        f.text(xlabel, ((x0 + x1) / 2, y0), dy=30, size=12)
+    if ylabel:
+        x, y = f.P((x0, (y0 + y1) / 2))
+        f.items.append(
+            f'<text x="{x - 34:.1f}" y="{y:.1f}" font-family="system-ui, sans-serif" font-size="12" fill="{INK}" '
+            f'text-anchor="middle" transform="rotate(-90 {x - 34:.1f} {y:.1f})">{esc(ylabel)}</text>'
+        )
+
+
+def polyline(f: Fig, pts, color=INK, width=2, dots=True):
+    d = " ".join(f"{x:.1f},{y:.1f}" for x, y in (f.P(p) for p in pts))
+    f.items.append(f'<polyline points="{d}" fill="none" stroke="{color}" stroke-width="{width}" stroke-linejoin="round"/>')
+    if dots:
+        for p in pts:
+            f.dot(p, r=2.6)

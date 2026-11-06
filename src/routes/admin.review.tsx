@@ -4,7 +4,7 @@ import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { supabase } from '@/lib/supabase'
 import { isUnlockedThisSession } from '@/lib/adminGate'
-import { useApproveLesson, useApproveSet, useHideSet, useReviewLessons, useReviewSets, useReviewTopics, useSaveByline, useSaveLesson, useUnpublishLesson } from '@/lib/review'
+import { useApproveLesson, useHideSet, usePublishSet, useReviewLessons, useReviewSets, useReviewTopics, useSaveByline, useSaveLesson, useUnpublishLesson } from '@/lib/review'
 import type { ReviewLesson, ReviewSet } from '@/lib/review'
 import { Button } from '@/components/ui/button'
 import { LessonView } from '@/components/LessonView'
@@ -60,7 +60,6 @@ function AdminReview() {
       <p className="text-sm text-muted-foreground">
         Read a lesson, fix anything wrong, then approve it. Approved lessons become free public pages with your name
         on them (they appear on the website after the next deploy). Students in the app see every lesson either way.
-        New practice question sets stay hidden from students until you approve them.
       </p>
 
       {/* keyed so the form resets to the saved values whenever they change */}
@@ -90,13 +89,13 @@ function AdminReview() {
           <div>
             <h2 className="font-bold">Practice question sets</h2>
             <p className="text-xs text-muted-foreground">
-              Take each set like a student (wrong answers show the working and the reason behind every option), then
-              approve it. Approving stamps every question with your name and shows the set to students.
+              Live sets are on the subject page for students. Try a set like a student, and hide it if anything needs fixing.
+              New sets come from <Link to="/admin/question-bank" className="text-primary hover:underline">Load question sets</Link>.
             </p>
           </div>
           <ul className="divide-y rounded-xl border">
             {sets.map((s) => (
-              <SetRow key={s.id} set={s} reviewerId={user.id} canApprove={!!profile.full_name?.trim()} />
+              <SetRow key={s.id} set={s} />
             ))}
           </ul>
         </section>
@@ -142,18 +141,15 @@ function StatusBadge({ lesson }: { lesson: ReviewLesson }) {
   return <span className="shrink-0 rounded-full bg-amber-500/10 px-2 py-0.5 text-xs font-semibold text-amber-700">Not reviewed</span>
 }
 
-function SetRow({ set, reviewerId, canApprove }: { set: ReviewSet; reviewerId: string; canApprove: boolean }) {
-  const approve = useApproveSet()
+function SetRow({ set }: { set: ReviewSet }) {
+  const publish = usePublishSet()
   const hide = useHideSet()
-  const reviewed = set.questions.filter((q) => q.reviewed_at).length
-  const error = (approve.error || hide.error) as Error | null
+  const error = (publish.error || hide.error) as Error | null
   return (
     <li className="flex flex-wrap items-center justify-between gap-3 p-3">
       <div className="min-w-0 space-y-1">
         <p className="font-medium">{set.title}</p>
-        <p className="text-xs text-muted-foreground">
-          {set.questions.length} questions · {reviewed}/{set.questions.length} reviewed
-        </p>
+        <p className="text-xs text-muted-foreground">{set.questions.length} questions</p>
         {error && <p className="text-xs text-red-500">{error.message}</p>}
       </div>
       <div className="flex shrink-0 items-center gap-2">
@@ -170,8 +166,8 @@ function SetRow({ set, reviewerId, canApprove }: { set: ReviewSet; reviewerId: s
             {hide.isPending ? 'Hiding…' : 'Hide'}
           </Button>
         ) : (
-          <Button size="sm" disabled={!canApprove || approve.isPending} onClick={() => approve.mutate({ paperId: set.id, reviewerId })} title={canApprove ? '' : 'Add your name in the byline first'}>
-            {approve.isPending ? 'Approving…' : 'Approve & publish'}
+          <Button size="sm" disabled={publish.isPending} onClick={() => publish.mutate(set.id)}>
+            {publish.isPending ? 'Showing…' : 'Show'}
           </Button>
         )}
       </div>
