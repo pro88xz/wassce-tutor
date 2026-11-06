@@ -2,6 +2,8 @@
 import { createHash } from 'node:crypto'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
+import { isIP } from 'node:net'
+import { pathToFileURL } from 'node:url'
 import TurndownService from 'turndown'
 
 const ROOT = process.cwd()
@@ -15,7 +17,17 @@ const turndown = new TurndownService({ headingStyle: 'atx', codeBlockStyle: 'fen
 const sha256 = (value) => createHash('sha256').update(value).digest('hex')
 const fail = (message) => { throw new Error(message) }
 
-function validateSource(source, index) {
+function assertPublicHttpsUrl(value, label) {
+  let url
+  try { url = new URL(value) } catch { fail(label + ': invalid source URL') }
+  if (url.protocol !== 'https:') fail(label + ': only HTTPS sources are accepted')
+  if (url.username || url.password) fail(label + ': credential-bearing URLs are forbidden')
+  const host = url.hostname.toLowerCase().replace(/^\[|\]$/g, '')
+  if (isIP(host) || host === 'localhost' || host.endsWith('.localhost') || host.endsWith('.local')) fail(label + ': IP-literal, private or local hosts are forbidden')
+  return url
+}
+
+export function validateSource(source, index = 0) {
   const label = source.id || 'source ' + (index + 1)
   if (!/^[a-z0-9][a-z0-9-]{1,79}$/.test(source.id || '')) fail(label + ': id must be a stable lowercase slug')
   let url
@@ -30,7 +42,7 @@ function validateSource(source, index) {
   return { ...source, url: url.toString() }
 }
 
-function extractMain(html) {
+export function extractMain(html) {
   let body = html
   const main = html.match(/<(article|main)\b[^>]*>([\s\S]*?)<\/\1>/i)
   if (main) body = main[2]
@@ -52,7 +64,7 @@ async function acquire(source, index) {
   try {
     const response = await fetch(item.url, {
       signal: controller.signal,
-      redirect: 'follow',
+      redirect: 'manual',
       headers: { 'user-agent': 'WASSCE-Tutor-ResearchBot/1.0 (+https://wasscetutor.com; rights-respecting educational source capture)', accept: 'text/html, text/plain;q=0.9' },
     })
     if (!response.ok) fail(item.id + ': HTTP ' + response.status)
@@ -108,4 +120,6 @@ async function main() {
   console.log(JSON.stringify({ total: results.length, acquired: results.filter(x => x.status === 'acquired').length, rejected: results.filter(x => x.status === 'rejected').length }, null, 2))
   if (results.some(x => x.status === 'rejected')) process.exitCode = 1
 }
-main().catch(error => { console.error(error instanceof Error ? error.message : String(error)); process.exitCode = 1 })
+if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
+  main().catch(error => { console.error(error instanceof Error ? error.message : String(error)); process.exitCode = 1 })
+}
