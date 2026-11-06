@@ -1,19 +1,26 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
-import { FileText, PlayCircle } from 'lucide-react'
+import { useMemo } from 'react'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { AccessGate } from '@/components/AccessGate'
 import { useAuth } from '@/lib/auth'
 import { usePapers, useSubject } from '@/lib/queries'
 import { useProgress } from '@/lib/progress'
-import { subjectTheme } from '@/lib/subject-theme'
-import { ProgressBar, percent } from '@/components/ds/Progress'
-import { Card, EmptyState, SectionHeader, Skeleton } from '@/components/ds/Primitives'
+import { bestByPaper, topicsToReview } from '@/lib/papers'
+import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
+import { ProgressBar } from '@/components/ds/Progress'
+import { EmptyState, SectionHeader, Skeleton } from '@/components/ds/Primitives'
 import { TopicGroups } from '@/components/ds/TopicGroups'
+import { PracticeSetRow } from '@/components/ds/PracticeSetRow'
+import { Button } from '@/components/ui/button'
 
 export const Route = createFileRoute('/subject/$subjectId')({
   head: privateHead('Subject'),
   component: SubjectPage,
 })
+
+/** Practice sets shown here before "See all". */
+const SETS_SHOWN = 4
 
 function SubjectPage() {
   const { subjectId } = useParams({ from: '/subject/$subjectId' })
@@ -22,104 +29,87 @@ function SubjectPage() {
   const { data: papers, isLoading: papersLoading } = usePapers(subjectId)
   const { summary } = useProgress(user?.id ?? null, subject ? [subject] : undefined)
   const sp = summary?.subjects[0]
-  const { icon: Icon, palette } = subjectTheme(subject?.slug)
+  const { palette } = subjectTheme(subject?.slug)
+
+  const best = useMemo(() => bestByPaper(sp?.attempts ?? []), [sp])
+  const review = useMemo(
+    () => topicsToReview(papers ?? [], sp?.attempts ?? [], (sp?.topics ?? []).map((t) => ({ id: t.topic.id, name: t.topic.name, subject_id: t.topic.subject_id }))),
+    [papers, sp],
+  )
+  // Sets not yet tried come first, so the short list is always useful.
+  const sets = useMemo(() => [...(papers ?? [])].sort((a, b) => Number(best.has(a.id)) - Number(best.has(b.id))), [papers, best])
+
+  const started = !!sp && sp.done > 0
 
   return (
     <AccessGate>
-      <div className="mx-auto max-w-3xl space-y-8 pb-12">
-        <Link to="/subjects" className="inline-flex text-sm font-medium text-muted-foreground hover:text-foreground">
-          ← All subjects
+      <div className="mx-auto max-w-3xl space-y-6">
+        <Link to="/subjects" className="-mb-2 inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground">
+          <ArrowLeft className="h-4 w-4" aria-hidden /> All subjects
         </Link>
 
-        {/* HERO */}
-        <section className={`relative overflow-hidden rounded-3xl bg-gradient-to-br ${palette.gradient} p-6 text-white shadow-lg`}>
-          <Icon className="pointer-events-none absolute -right-6 -bottom-6 h-40 w-40 text-white/10" aria-hidden />
-          <div className="relative space-y-4">
-            <div className="flex items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/20 backdrop-blur">
-                <Icon className="h-6 w-6" aria-hidden />
-              </span>
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-wider text-white/80">WASSCE subject</p>
-                <h1 className="text-3xl font-bold tracking-tight">{subject?.name ?? ' '}</h1>
-              </div>
-            </div>
-            {sp ? (
-              <div className="space-y-2">
-                <div className="flex items-baseline justify-between text-sm">
-                  <span className="font-semibold">
-                    {sp.total > 0 ? `${sp.done} of ${sp.total} lessons` : 'Lessons coming soon'}
-                  </span>
-                  {sp.total > 0 && <span className="text-2xl font-bold tabular-nums">{percent(sp.done, sp.total)}%</span>}
-                </div>
-                <ProgressBar value={sp.done} max={sp.total} size="lg" fill="bg-white" track="bg-white/25" label={`${sp.subject.name} lessons completed`} />
-                <p className="text-sm text-white/85">
-                  {sp.topicsDone}/{sp.topicsWithLessons} topics done
-                  {sp.minutesLeft > 0 && ` · about ${Math.round(sp.minutesLeft / 60)}h of lessons left`}
-                  {sp.avgScore !== null && ` · papers ${sp.avgScore}%`}
+        {/* Compact header: identity, progress context, next action */}
+        <header className="space-y-3">
+          <div className="flex items-center gap-3">
+            <SubjectIcon slug={subject?.slug} size="lg" />
+            <div className="min-w-0">
+              <h1 className="text-[1.75rem] font-bold leading-tight tracking-tight">{subject?.name ?? ' '}</h1>
+              {sp ? (
+                <p className="text-sm text-muted-foreground">
+                  {sp.total === 0
+                    ? 'Lessons coming soon'
+                    : started
+                      ? `${sp.done} of ${sp.total} lessons · ${sp.topicsDone} of ${sp.topicsWithLessons} topics completed`
+                      : `${sp.total} lessons in ${sp.topicsWithLessons} topics`}
+                  {sp.avgScore !== null && ` · practice ${sp.avgScore}%`}
                 </p>
-              </div>
-            ) : (
-              <Skeleton className="h-16 bg-white/20" />
-            )}
-            {sp?.next && (
-              <Link
-                to="/lesson/$lessonId"
-                params={{ lessonId: sp.next.lesson.id }}
-                className="flex items-center justify-between gap-3 rounded-2xl bg-white px-4 py-3 text-slate-900 shadow-md transition hover:shadow-lg"
-              >
-                <span className="min-w-0">
-                  <span className={`block text-xs font-bold uppercase tracking-wider ${palette.text}`}>
-                    {sp.done === 0 ? 'Start here' : 'Continue'}
-                  </span>
-                  <span className="block truncate font-semibold">{sp.next.lesson.title}</span>
-                </span>
-                <PlayCircle className={`h-8 w-8 shrink-0 ${palette.text}`} aria-hidden />
-              </Link>
-            )}
+              ) : (
+                <Skeleton className="mt-1 h-4 w-48" />
+              )}
+            </div>
           </div>
-        </section>
+          {started && <ProgressBar value={sp!.done} max={sp!.total} fill={palette.bar} size="sm" label={`${sp!.subject.name}: ${sp!.done} of ${sp!.total} lessons done`} />}
+        </header>
+
+        {sp?.next && (
+          <section aria-labelledby="next-title" className="flex flex-col gap-3 rounded-2xl border bg-card p-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="min-w-0">
+              <p className="text-sm font-semibold text-primary">{started ? 'Continue' : 'Start here'}</p>
+              <h2 id="next-title" className="truncate font-bold">{sp.next.lesson.title}</h2>
+              <p className="truncate text-sm text-muted-foreground">
+                {sp.next.topic.name}
+                {sp.next.lesson.est_minutes ? ` · about ${sp.next.lesson.est_minutes} min` : ''}
+              </p>
+            </div>
+            <Button asChild className="shrink-0">
+              <Link to="/lesson/$lessonId" params={{ lessonId: sp.next.lesson.id }}>
+                {started ? 'Continue' : 'Start lesson'} <ArrowRight className="h-4 w-4" aria-hidden />
+              </Link>
+            </Button>
+          </section>
+        )}
 
         {/* TOPICS */}
-        <section className="space-y-4">
-          <SectionHeader title="Topics" />
+        <section className="space-y-3" aria-labelledby="topics-title">
+          <h2 id="topics-title" className="text-lg font-bold tracking-tight">Topics</h2>
           {sp ? (
-            <TopicGroups groups={sp.groups} palette={palette} showDescription />
+            <TopicGroups groups={sp.groups} palette={palette} showDescription review={review} />
           ) : (
             <div className="space-y-2">{[0, 1, 2, 3].map((i) => <Skeleton key={i} className="h-16" />)}</div>
           )}
         </section>
 
-        {/* PAPERS */}
+        {/* PRACTICE */}
         <section className="space-y-3">
-          <SectionHeader title="Practice papers" />
+          <SectionHeader title="Practice" action={papers && papers.length > SETS_SHOWN ? { to: '/practice', label: `All ${papers.length} sets` } : undefined} />
           {papersLoading ? (
             <Skeleton className="h-20" />
-          ) : !papers || papers.length === 0 ? (
-            <EmptyState icon={<FileText className="h-6 w-6" />} title="No papers yet" body={`Past papers for ${subject?.name ?? 'this subject'} are on the way.`} />
+          ) : sets.length === 0 ? (
+            <EmptyState title="Practice is being written" body={`Practice sets for ${subject?.name ?? 'this subject'} are on the way. The lessons above are ready now.`} />
           ) : (
-            <Card className="divide-y">
-              {papers.map((p) => (
-                <Link
-                  key={p.id}
-                  to="/paper/$paperId"
-                  params={{ paperId: p.id }}
-                  className="flex items-center gap-4 p-4 transition hover:bg-muted/40"
-                >
-                  <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${palette.soft} ${palette.text}`}>
-                    <FileText className="h-5 w-5" aria-hidden />
-                  </span>
-                  <span className="min-w-0 flex-1">
-                    <span className="block truncate font-semibold">{p.title}</span>
-                    <span className="block truncate text-xs text-muted-foreground">
-                      {[p.paper_type, p.year].filter(Boolean).join(' · ')}
-                      {p.description ? ` — ${p.description}` : ''}
-                    </span>
-                  </span>
-                  <span className="shrink-0 rounded-full bg-muted px-2.5 py-1 text-xs font-bold">{p.question_count} Qs</span>
-                </Link>
-              ))}
-            </Card>
+            <ul className="divide-y rounded-2xl border bg-card">
+              {sets.slice(0, SETS_SHOWN).map((p) => <PracticeSetRow key={p.id} paper={p} best={best.get(p.id)} accent={palette.bar} />)}
+            </ul>
           )}
         </section>
       </div>

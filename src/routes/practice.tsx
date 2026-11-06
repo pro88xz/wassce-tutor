@@ -5,9 +5,11 @@ import { privateHead } from '@/lib/seo'
 import { useAuth } from '@/lib/auth'
 import { usePapersForSubjects, useStudentSubjects, type PaperRow } from '@/lib/queries'
 import { useScoredAttempts, type ScoredAttempt } from '@/lib/progress'
+import { bestByPaper } from '@/lib/papers'
+import { PracticeSetRow } from '@/components/ds/PracticeSetRow'
 import { subjectTheme } from '@/lib/subject-theme'
 import { AccessGate } from '@/components/AccessGate'
-import { EmptyState, PageHeader, Pill, ScorePill, SectionHeader, Skeleton } from '@/components/ds/Primitives'
+import { EmptyState, PageHeader, ScorePill, SectionHeader, Skeleton } from '@/components/ds/Primitives'
 import { Button } from '@/components/ui/button'
 import type { Subject } from '@/lib/types'
 
@@ -19,12 +21,6 @@ export const Route = createFileRoute('/practice')({
 /** How many sets a subject shows before "Show all". */
 const PREVIEW = 8
 
-/** "Practice" sets are written by WASSCE Tutor; anything else is labelled by its type and year. */
-function paperKind(p: Pick<PaperRow, 'paper_type' | 'year'>): string {
-  if (!p.paper_type || p.paper_type.toLowerCase() === 'practice') return 'Practice set'
-  return [p.paper_type, p.year].filter(Boolean).join(' · ')
-}
-
 function PracticePage() {
   const { user } = useAuth()
   const { data: subjects, isLoading: subjectsLoading } = useStudentSubjects(user?.id ?? null)
@@ -32,15 +28,7 @@ function PracticePage() {
   const papers = usePapersForSubjects(ids)
   const attempts = useScoredAttempts(user?.id ?? null)
 
-  const best = useMemo(() => {
-    const m = new Map<string, ScoredAttempt>()
-    for (const a of attempts.data ?? []) {
-      if (!a.paper) continue
-      const prev = m.get(a.paper.id)
-      if (!prev || a.score / Math.max(a.total, 1) > prev.score / Math.max(prev.total, 1)) m.set(a.paper.id, a)
-    }
-    return m
-  }, [attempts.data])
+  const best = useMemo(() => bestByPaper(attempts.data ?? []), [attempts.data])
 
   const loading = subjectsLoading || (ids.length > 0 && papers.isLoading)
 
@@ -155,31 +143,7 @@ function SubjectSets({ subject, papers, best }: { subject: Subject; papers: Pape
             </label>
           )}
           <ul className="divide-y rounded-2xl border bg-card">
-            {shown.map((p) => {
-              const b = best.get(p.id)
-              return (
-                <li key={p.id}>
-                  <Link to="/paper/$paperId" params={{ paperId: p.id }} className="flex min-h-16 items-center gap-3 px-4 py-3 transition-colors hover:bg-muted/50">
-                    <span className={`h-9 w-1 shrink-0 rounded-full ${palette.bar}`} aria-hidden />
-                    <span className="min-w-0 flex-1">
-                      <span className="block truncate font-semibold">{p.title.replace(/: practice set \d+$/i, '')}</span>
-                      <span className="block truncate text-xs text-muted-foreground">
-                        {paperKind(p)} · {p.question_count} questions
-                      </span>
-                    </span>
-                    {b ? (
-                      <span className="flex shrink-0 flex-col items-end gap-0.5">
-                        <ScorePill score={b.score} total={b.total} />
-                        <span className="text-[11px] text-muted-foreground">Best</span>
-                      </span>
-                    ) : (
-                      <Pill>Not started</Pill>
-                    )}
-                    <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground" aria-hidden />
-                  </Link>
-                </li>
-              )
-            })}
+            {shown.map((p) => <PracticeSetRow key={p.id} paper={p} best={best.get(p.id)} accent={palette.bar} />)}
             {shown.length === 0 && <li className="px-4 py-3 text-sm text-muted-foreground">No topic matches “{q}”.</li>}
           </ul>
           {!q.trim() && filtered.length > PREVIEW && (
