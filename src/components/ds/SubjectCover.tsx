@@ -11,7 +11,8 @@ import type { ReactNode } from 'react'
 import { subjectPhoto } from '@/lib/subject-photos'
 
 type Pattern = 'grid' | 'dots' | 'ruled' | 'waves' | 'diag' | 'rings'
-type Art = { bg: string; shade: string; accent: string; pattern: Pattern; motif: (a: string) => ReactNode }
+/** bg is the colour for SVG fills; tone is the same colour as a Tailwind class (a literal, so Tailwind generates it). */
+type Art = { bg: string; tone: string; shade: string; accent: string; pattern: Pattern; motif: (a: string) => ReactNode }
 
 /** Faint subject symbols on the left of wide covers. */
 const GLYPHS: Record<string, [string, string, string]> = {
@@ -45,7 +46,7 @@ const line = { stroke: W, strokeWidth: 3.5, strokeLinecap: 'round' as const, str
 // Motifs are drawn around (0, 0) within roughly ±60 and placed at (232, 90).
 const ART: Record<string, Art> = {
   mathematics: {
-    bg: '#5b34d6', shade: '#4520b0', accent: '#ffd166', pattern: 'grid',
+    bg: '#5b34d6', tone: 'bg-[#5b34d6]', shade: '#4520b0', accent: '#ffd166', pattern: 'grid',
     motif: (a) => (
       <>
         <path d="M-56 42 H58 M-46 54 V-56" {...line} />
@@ -57,7 +58,7 @@ const ART: Record<string, Art> = {
     ),
   },
   'further-mathematics': {
-    bg: '#3a2a96', shade: '#2a1d75', accent: '#ffd166', pattern: 'grid',
+    bg: '#3a2a96', tone: 'bg-[#3a2a96]', shade: '#2a1d75', accent: '#ffd166', pattern: 'grid',
     motif: (a) => (
       <>
         <path d="M-48 50 Q-38 62 -30 46 L-10 -44 Q-2 -60 8 -48" {...line} strokeWidth={6} />
@@ -70,7 +71,7 @@ const ART: Record<string, Art> = {
     ),
   },
   'english-language': {
-    bg: '#2560c0', shade: '#1b4a99', accent: '#ffd166', pattern: 'ruled',
+    bg: '#2560c0', tone: 'bg-[#2560c0]', shade: '#1b4a99', accent: '#ffd166', pattern: 'ruled',
     motif: (a) => (
       <>
         <text x={-60} y={22} fill={W} fontFamily="Georgia, 'Times New Roman', serif" fontWeight={700} fontSize={78}>Aa</text>
@@ -80,7 +81,7 @@ const ART: Record<string, Art> = {
     ),
   },
   'literature-in-english': {
-    bg: '#a8521f', shade: '#874016', accent: '#ffd166', pattern: 'ruled',
+    bg: '#a8521f', tone: 'bg-[#a8521f]', shade: '#874016', accent: '#ffd166', pattern: 'ruled',
     motif: (a) => (
       <>
         <path d="M0 -28 C-20 -42 -44 -42 -58 -36 V40 C-44 34 -20 34 0 46 Z" fill={T} stroke={W} strokeWidth={3.5} strokeLinejoin="round" />
@@ -92,7 +93,7 @@ const ART: Record<string, Art> = {
     ),
   },
   biology: {
-    bg: '#15805a', shade: '#0e6345', accent: '#ffd166', pattern: 'dots',
+    bg: '#15805a', tone: 'bg-[#15805a]', shade: '#0e6345', accent: '#ffd166', pattern: 'dots',
     motif: (a) => (
       <>
         <ellipse cx={0} cy={0} rx={60} ry={46} fill={T} stroke={W} strokeWidth={3.5} />
@@ -109,7 +110,7 @@ const ART: Record<string, Art> = {
     ),
   },
   chemistry: {
-    bg: '#0d8486', shade: '#096668', accent: '#ffd166', pattern: 'dots',
+    bg: '#0d8486', tone: 'bg-[#0d8486]', shade: '#096668', accent: '#ffd166', pattern: 'dots',
     motif: (a) => (
       <>
         <path d="M-18 -44 L8 -29 V1 L-18 16 L-44 1 V-29 Z" fill={T} stroke={W} strokeWidth={3.5} strokeLinejoin="round" />
@@ -122,7 +123,7 @@ const ART: Record<string, Art> = {
     ),
   },
   physics: {
-    bg: '#1f4fa8', shade: '#173c82', accent: '#ffd166', pattern: 'waves',
+    bg: '#1f4fa8', tone: 'bg-[#1f4fa8]', shade: '#173c82', accent: '#ffd166', pattern: 'waves',
     motif: (a) => (
       <>
         <ellipse cx={0} cy={0} rx={60} ry={21} {...line} />
@@ -136,7 +137,7 @@ const ART: Record<string, Art> = {
     ),
   },
   'agricultural-science': {
-    bg: '#4a8420', shade: '#386617', accent: '#ffd166', pattern: 'dots',
+    bg: '#4a8420', tone: 'bg-[#4a8420]', shade: '#386617', accent: '#ffd166', pattern: 'dots',
     motif: (a) => (
       <>
         <circle cx={-40} cy={-42} r={12} fill={a} />
@@ -149,7 +150,7 @@ const ART: Record<string, Art> = {
     ),
   },
   economics: {
-    bg: '#0c7468', shade: '#085a51', accent: '#ffd166', pattern: 'grid',
+    bg: '#0c7468', tone: 'bg-[#0c7468]', shade: '#085a51', accent: '#ffd166', pattern: 'grid',
     motif: (a) => (
       <>
         <path d="M-58 48 H58" {...line} />
@@ -163,7 +164,7 @@ const ART: Record<string, Art> = {
     ),
   },
   government: {
-    bg: '#8a4a14', shade: '#6c390e', accent: '#ffd166', pattern: 'diag',
+    bg: '#8a4a14', tone: 'bg-[#8a4a14]', shade: '#6c390e', accent: '#ffd166', pattern: 'diag',
     motif: (a) => (
       <>
         <path d="M-58 -18 L0 -54 L58 -18 Z" fill={T} stroke={W} strokeWidth={3.5} strokeLinejoin="round" />
@@ -177,7 +178,7 @@ const ART: Record<string, Art> = {
     ),
   },
   history: {
-    bg: '#9a5410', shade: '#7a420c', accent: '#ffd166', pattern: 'diag',
+    bg: '#9a5410', tone: 'bg-[#9a5410]', shade: '#7a420c', accent: '#ffd166', pattern: 'diag',
     motif: (a) => (
       <>
         <path d="M-40 -50 H8 M-40 50 H8" {...line} strokeWidth={5} />
@@ -193,7 +194,7 @@ const ART: Record<string, Art> = {
     ),
   },
   geography: {
-    bg: '#127386', shade: '#0d5868', accent: '#ffd166', pattern: 'waves',
+    bg: '#127386', tone: 'bg-[#127386]', shade: '#0d5868', accent: '#ffd166', pattern: 'waves',
     motif: (a) => (
       <>
         <circle cx={0} cy={0} r={52} fill={T} stroke={W} strokeWidth={3.5} />
@@ -205,7 +206,7 @@ const ART: Record<string, Art> = {
     ),
   },
   commerce: {
-    bg: '#b0610f', shade: '#8c4c0a', accent: '#fff3c4', pattern: 'dots',
+    bg: '#b0610f', tone: 'bg-[#b0610f]', shade: '#8c4c0a', accent: '#fff3c4', pattern: 'dots',
     motif: (a) => (
       <>
         <path d="M-62 -6 L-34 -40 H8 V28 H-34 Z" fill={T} stroke={W} strokeWidth={3.5} strokeLinejoin="round" />
@@ -221,7 +222,7 @@ const ART: Record<string, Art> = {
     ),
   },
   'financial-accounting': {
-    bg: '#1b7548', shade: '#135a37', accent: '#ffd166', pattern: 'grid',
+    bg: '#1b7548', tone: 'bg-[#1b7548]', shade: '#135a37', accent: '#ffd166', pattern: 'grid',
     motif: (a) => (
       <>
         <rect x={-52} y={-50} width={96} height={100} rx={8} fill={T} stroke={W} strokeWidth={3.5} />
@@ -235,7 +236,7 @@ const ART: Record<string, Art> = {
     ),
   },
   'business-management': {
-    bg: '#3456b4', shade: '#27418b', accent: '#ffd166', pattern: 'dots',
+    bg: '#3456b4', tone: 'bg-[#3456b4]', shade: '#27418b', accent: '#ffd166', pattern: 'dots',
     motif: (a) => (
       <>
         <rect x={-18} y={-54} width={36} height={24} rx={6} fill={a} />
@@ -250,7 +251,7 @@ const ART: Record<string, Art> = {
     ),
   },
   'ict-computer-studies': {
-    bg: '#22388c', shade: '#192a6b', accent: '#7de2b8', pattern: 'grid',
+    bg: '#22388c', tone: 'bg-[#22388c]', shade: '#192a6b', accent: '#7de2b8', pattern: 'grid',
     motif: (a) => (
       <>
         <rect x={-58} y={-46} width={116} height={76} rx={8} fill={T} stroke={W} strokeWidth={3.5} />
@@ -261,7 +262,7 @@ const ART: Record<string, Art> = {
     ),
   },
   'religious-studies': {
-    bg: '#6a3dbd', shade: '#522d96', accent: '#ffd166', pattern: 'rings',
+    bg: '#6a3dbd', tone: 'bg-[#6a3dbd]', shade: '#522d96', accent: '#ffd166', pattern: 'rings',
     motif: (a) => (
       <>
         <path d="M-34 52 V-6 A34 34 0 0 1 34 -6 V52 Z" fill={T} stroke={W} strokeWidth={3.5} strokeLinejoin="round" />
@@ -272,7 +273,7 @@ const ART: Record<string, Art> = {
     ),
   },
   'technical-drawing': {
-    bg: '#18697f', shade: '#115163', accent: '#ffd166', pattern: 'grid',
+    bg: '#18697f', tone: 'bg-[#18697f]', shade: '#115163', accent: '#ffd166', pattern: 'grid',
     motif: (a) => (
       <>
         <path d="M-14 -50 L25 -28 L-14 -6 L-53 -28 Z" fill={S} stroke={W} strokeWidth={3} strokeLinejoin="round" />
@@ -285,7 +286,7 @@ const ART: Record<string, Art> = {
     ),
   },
   'building-construction': {
-    bg: '#a1531a', shade: '#7f4013', accent: '#ffd166', pattern: 'diag',
+    bg: '#a1531a', tone: 'bg-[#a1531a]', shade: '#7f4013', accent: '#ffd166', pattern: 'diag',
     motif: (a) => (
       <>
         <path d="M-62 -4 L0 -50 L62 -4 Z" fill={S} stroke={W} strokeWidth={3.5} strokeLinejoin="round" />
@@ -298,7 +299,7 @@ const ART: Record<string, Art> = {
 }
 
 const FALLBACK: Art = {
-  bg: '#5b34d6', shade: '#4520b0', accent: '#ffd166', pattern: 'dots',
+  bg: '#5b34d6', tone: 'bg-[#5b34d6]', shade: '#4520b0', accent: '#ffd166', pattern: 'dots',
   motif: (a) => (
     <>
       <rect x={-44} y={-46} width={70} height={92} rx={6} fill={T} stroke={W} strokeWidth={3.5} />
@@ -357,6 +358,13 @@ function PatternLayer({ kind }: { kind: Pattern }) {
   }
 }
 
+/**
+ * Alt text for a subject photo. The cover itself is aria-hidden (the card
+ * around it names the subject), so this is for image search and for when the
+ * image fails to load.
+ */
+const photoAlt = (p: { subject: string; caption: string }) => `WASSCE ${p.subject}: ${p.caption.charAt(0).toLowerCase()}${p.caption.slice(1)}`
+
 export function subjectArt(slug: string | null | undefined): Art {
   return (slug && ART[slug]) || FALLBACK
 }
@@ -387,33 +395,32 @@ export function SubjectCover({
   const photo = shape !== 'square' ? subjectPhoto(slug) : undefined
   if (photo && shape === 'thumb') {
     return (
-      <span className={`relative block overflow-hidden ${rounded} ${className}`} style={{ backgroundColor: art.bg }} aria-hidden>
-        <img src={photo.small} alt="" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover" style={{ objectPosition: photo.position ?? 'center' }} />
+      <span className={`relative block overflow-hidden ${art.tone} ${rounded} ${className}`} aria-hidden>
+        <img src={photo.small} alt={photoAlt(photo)} loading="lazy" decoding="async" className={`absolute inset-0 h-full w-full object-cover ${photo.position ?? ''}`} />
       </span>
     )
   }
   if (photo) {
     return (
-      <span className={`relative block overflow-hidden ${rounded} ${className}`} style={{ backgroundColor: art.bg }} aria-hidden>
+      <span className={`relative block overflow-hidden ${art.tone} ${rounded} ${className}`} aria-hidden>
         <img
           src={photo.src}
           srcSet={`${photo.small} 640w, ${photo.src} 1280w`}
           sizes={shape === 'banner' ? '(min-width: 1024px) 768px, 100vw' : '(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw'}
-          alt=""
+          alt={photoAlt(photo)}
           loading={priority ? 'eager' : 'lazy'}
           decoding="async"
           {...(priority ? { fetchPriority: 'high' as const } : {})}
-          className="absolute inset-0 h-full w-full object-cover"
-          style={{ objectPosition: photo.position ?? 'center' }}
+          className={`absolute inset-0 h-full w-full object-cover ${photo.position ?? ''}`}
         />
-        <span className="absolute inset-x-0 bottom-0 h-1" style={{ backgroundColor: art.bg }} />
+        <span className={`absolute inset-x-0 bottom-0 h-1 ${art.tone}`} />
       </span>
     )
   }
   const glyphs = slug ? GLYPHS[slug] : undefined
   const fit = shape === 'square' || shape === 'thumb' ? 'xMaxYMid slice' : shape === 'banner' ? 'xMaxYMid meet' : 'xMidYMid slice'
   return (
-    <span className={`relative block overflow-hidden ${rounded} ${className}`} style={{ backgroundColor: art.bg }} aria-hidden>
+    <span className={`relative block overflow-hidden ${art.tone} ${rounded} ${className}`} aria-hidden>
       <svg viewBox="0 0 320 180" preserveAspectRatio={fit} className="absolute inset-0 h-full w-full" focusable="false">
         <rect x={-1200} y={0} width={1520} height={180} fill={art.bg} />
         <PatternLayer kind={art.pattern} />

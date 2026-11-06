@@ -6,6 +6,7 @@ import { TUTOR_PHOTO } from '@/lib/tutors'
 import { TOPIC_PHOTOS } from '@/lib/topic-photos'
 import { HOME_PHOTO_CREDITS } from '@/lib/home-photos'
 import { publicHead } from '@/lib/seo'
+import { CONTACT } from '@/lib/contact'
 import { fetchLandingData } from '@/lib/public-content'
 
 export const Route = createFileRoute('/about')({
@@ -137,9 +138,9 @@ function About() {
         </span>
         <div className="min-w-0 flex-1">
           <h2 className="font-bold">Get in touch</h2>
-          <p className="text-sm text-muted-foreground">Questions, feedback, or partnership enquiries?</p>
+          <p className="text-sm text-muted-foreground">{`WhatsApp ${CONTACT.phoneDisplay} or ${CONTACT.email}.`} Questions, feedback, or partnership enquiries?</p>
         </div>
-        <a href="mailto:secretsafe.cc@gmail.com" className="inline-flex h-11 shrink-0 items-center rounded-xl border bg-card px-4 text-sm font-semibold hover:border-primary/40">
+        <a href="/contact" className="inline-flex h-11 shrink-0 items-center rounded-xl border bg-card px-4 text-sm font-semibold hover:border-primary/40">
           Contact us
         </a>
       </section>

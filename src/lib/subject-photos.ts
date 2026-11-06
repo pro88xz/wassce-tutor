@@ -7,7 +7,7 @@ export type SubjectPhoto = {
   src: string
   /** 640 px wide WebP */
   small: string
-  /** CSS object-position, to keep the subject of the photo in frame */
+  /** Tailwind object-position class (a literal, so Tailwind generates it), to keep the subject of the photo in frame */
   position?: string
   /** Subject name, for the credits list */
   subject: string
@@ -30,7 +30,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'english-language': {
     src: '/img/subjects/english-language.webp',
     small: '/img/subjects/english-language-640.webp',
-    position: '70% 40%',
+    position: 'object-[70%_40%]',
     subject: 'English Language',
     caption: 'A student reading in a university library',
     credit: { creator: 'Yan Krukau', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/people-studying-in-library-8199762/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -38,7 +38,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'mathematics': {
     src: '/img/subjects/mathematics.webp',
     small: '/img/subjects/mathematics-640.webp',
-    position: '60% 40%',
+    position: 'object-[60%_40%]',
     subject: 'Mathematics',
     caption: 'A student working through equations on a chalkboard',
     credit: { creator: 'Yan Krukau', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/back-view-of-a-student-answering-a-problem-on-the-chalkboard-8197497/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -46,7 +46,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'further-mathematics': {
     src: '/img/subjects/further-mathematics.webp',
     small: '/img/subjects/further-mathematics-640.webp',
-    position: '50% 50%',
+    position: 'object-[50%_50%]',
     subject: 'Further Mathematics',
     caption: 'An integral written on a blackboard',
     credit: { creator: 'Monstera Production', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/mathematical-equation-written-on-blackboard-6238050/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -54,7 +54,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'biology': {
     src: '/img/subjects/biology.webp',
     small: '/img/subjects/biology-640.webp',
-    position: '50% 40%',
+    position: 'object-[50%_40%]',
     subject: 'Biology',
     caption: 'A scientist at a microscope',
     credit: { creator: 'Artem Podrez', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/a-man-looking-at-the-camera-while-holding-the-eyepiece-of-the-microscope-5726797/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -62,7 +62,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'chemistry': {
     src: '/img/subjects/chemistry.webp',
     small: '/img/subjects/chemistry-640.webp',
-    position: '35% 40%',
+    position: 'object-[35%_40%]',
     subject: 'Chemistry',
     caption: 'A researcher running a titration',
     credit: { creator: 'RF._.studio', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/focused-african-american-researcher-conducting-biochemical-experiment-in-clinic-3825434/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -70,7 +70,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'physics': {
     src: '/img/subjects/physics-circuit.webp',
     small: '/img/subjects/physics-circuit-640.webp',
-    position: '72% 40%',
+    position: 'object-[72%_40%]',
     subject: 'Physics',
     caption: 'A student soldering an electrical circuit',
     credit: { creator: 'ThisIsEngineering', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/woman-soldering-pcb-in-school-19895844/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -78,7 +78,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'agricultural-science': {
     src: '/img/subjects/agricultural-science.webp',
     small: '/img/subjects/agricultural-science-640.webp',
-    position: '50% 50%',
+    position: 'object-[50%_50%]',
     subject: 'Agricultural Science',
     caption: 'Farmers harvesting rice in Makurdi, Nigeria',
     credit: { creator: 'ZEUS THE CREATOR', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/people-farming-on-the-field-14314165/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -86,7 +86,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'economics': {
     src: '/img/subjects/economics.webp',
     small: '/img/subjects/economics-640.webp',
-    position: '35% 45%',
+    position: 'object-[35%_45%]',
     subject: 'Economics',
     caption: 'A woman counting money at her desk',
     credit: { creator: 'MART PRODUCTION', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/woman-in-pink-coat-counting-money-8872369/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -94,7 +94,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'commerce': {
     src: '/img/subjects/commerce.webp',
     small: '/img/subjects/commerce-640.webp',
-    position: '50% 55%',
+    position: 'object-[50%_55%]',
     subject: 'Commerce',
     caption: 'A busy produce market with yam sellers',
     credit: { creator: 'Detty Images', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/vibrant-african-local-market-scene-with-vendors-30179958/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -102,7 +102,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'government': {
     src: '/img/subjects/government.webp',
     small: '/img/subjects/government-640.webp',
-    position: '45% 45%',
+    position: 'object-[45%_45%]',
     subject: 'Government',
     caption: 'A voter casting his ballot',
     credit: { creator: 'Edmond Dantès', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/a-man-casting-his-ballot-in-a-ballot-box-7103203/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -110,7 +110,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'history': {
     src: '/img/subjects/history.webp',
     small: '/img/subjects/history-640.webp',
-    position: '35% 60%',
+    position: 'object-[35%_60%]',
     subject: 'History',
     caption: 'A vintage map of West Africa',
     credit: { creator: 'Nothing Ahead', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/brown-map-in-close-up-photography-9494916/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -118,7 +118,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'geography': {
     src: '/img/subjects/geography.webp',
     small: '/img/subjects/geography-640.webp',
-    position: '50% 50%',
+    position: 'object-[50%_50%]',
     subject: 'Geography',
     caption: 'A geography lesson with a globe and world map',
     credit: { creator: 'Tima Miroshnichenko', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/teacher-teaching-a-student-about-geography-using-a-globe-5428269/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -126,7 +126,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'financial-accounting': {
     src: '/img/subjects/financial-accounting.webp',
     small: '/img/subjects/financial-accounting-640.webp',
-    position: '45% 50%',
+    position: 'object-[45%_50%]',
     subject: 'Financial Accounting',
     caption: 'Working figures on a calculator',
     credit: { creator: 'RDNE Stock project', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/woman-uses-calculator-7491011/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -134,7 +134,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'business-management': {
     src: '/img/subjects/business-management.webp',
     small: '/img/subjects/business-management-640.webp',
-    position: '50% 50%',
+    position: 'object-[50%_50%]',
     subject: 'Business Management',
     caption: 'A team meeting in a Lagos office',
     credit: { creator: 'Ninthgrid', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/business-meeting-in-lagos-office-setting-30688596/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -142,7 +142,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'ict-computer-studies': {
     src: '/img/subjects/ict-computer-studies.webp',
     small: '/img/subjects/ict-computer-studies-640.webp',
-    position: '55% 55%',
+    position: 'object-[55%_55%]',
     subject: 'ICT / Computer Studies',
     caption: 'Students working on laptops',
     credit: { creator: 'Kampus Production', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/concentrated-young-diverse-students-using-laptops-during-lesson-in-library-5940711/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -150,7 +150,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'literature-in-english': {
     src: '/img/subjects/literature-in-english.webp',
     small: '/img/subjects/literature-in-english-640.webp',
-    position: '50% 50%',
+    position: 'object-[50%_50%]',
     subject: 'Literature in English',
     caption: 'A stack of leather-bound books',
     credit: { creator: 'photoGraph', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/pile-of-old-books-12006842/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -158,7 +158,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'technical-drawing': {
     src: '/img/subjects/technical-drawing.webp',
     small: '/img/subjects/technical-drawing-640.webp',
-    position: '50% 50%',
+    position: 'object-[50%_50%]',
     subject: 'Technical Drawing',
     caption: 'Architectural drawings and drafting tools',
     credit: { creator: 'Thirdman', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/pen-and-ruler-on-top-of-drawing-pad-5582585/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
@@ -166,7 +166,7 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'building-construction': {
     src: '/img/subjects/building-construction.webp',
     small: '/img/subjects/building-construction-640.webp',
-    position: '50% 45%',
+    position: 'object-[50%_45%]',
     subject: 'Building Construction',
     caption: 'A construction crew at work',
     credit: { creator: 'Jerome Govender', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/construction-workers-working-together-5298215/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },

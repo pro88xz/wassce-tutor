@@ -3,9 +3,10 @@
 // and always handed to WhatsApp, where the team confirms tutor, times and price.
 import { supabase } from '@/lib/supabase'
 import type { SubjectPhoto } from '@/lib/subject-photos'
+import { CONTACT } from '@/lib/contact'
 
 /** The same business WhatsApp number used for plan payments. */
-export const TUTOR_WHATSAPP = '23277884195'
+export const TUTOR_WHATSAPP = CONTACT.whatsapp
 
 export const LEVELS = ['SSS1', 'SSS2', 'SSS3', 'Private candidate'] as const
 export type Level = (typeof LEVELS)[number]

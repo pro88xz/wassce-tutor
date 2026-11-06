@@ -46,7 +46,7 @@ function QuestionPreview() {
       <p className="mt-2 text-sm font-semibold leading-relaxed">
         In the diagram, AB is a diameter of the circle with centre O and ∠CAB = 38°. Find the angle marked x.
       </p>
-      <img src="/questions/mathematics/maths-circles-02.svg" alt="" loading="lazy" width={240} height={180} className="mx-auto my-1.5 h-28 w-auto" />
+      <img src="/questions/mathematics/maths-circles-02.svg" alt="Circle diagram from a WASSCE Mathematics practice question" loading="lazy" width={240} height={180} className="mx-auto my-1.5 h-28 w-auto" />
       <div className="grid grid-cols-2 gap-2">
         {opts.map(([l, v, state]) => (
           <div

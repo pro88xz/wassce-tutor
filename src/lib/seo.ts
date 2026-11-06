@@ -12,6 +12,7 @@
 // both the app bundle and vite.config.ts.
 
 import type { AnyRouteMatch } from '@tanstack/react-router'
+import { CONTACT } from './contact'
 
 export const SITE = {
   origin: 'https://wasscetutor.com',
@@ -33,17 +34,23 @@ type PublicPage = {
 // HTML file at build time, and an entry in /sitemap.xml.
 export const PUBLIC_PAGES = {
   '/': {
-    title: 'WASSCE Past Questions & AI Tutor for Sierra Leone | WASSCE Tutor',
+    title: 'WASSCE Practice Questions & Lessons in Sierra Leone | WASSCE Tutor',
     ogTitle: 'WASSCE Tutor: Pass WASSCE with confidence',
     description:
-      'Prepare for WASSCE with past questions, lessons and an AI tutor built for Sierra Leone students. Plans from NLe 25 a month, 7 days free.',
-    lastmod: '2026-11-05',
+      'WASSCE lessons and practice questions for Sierra Leone students, with full working, an AI tutor and one-to-one tutors. From NLe 25 a month, 7 days free.',
+    lastmod: '2026-11-06',
   },
   '/about': {
     title: 'About WASSCE Tutor: WASSCE Prep Built in Sierra Leone',
     description:
-      'WASSCE Tutor is a WASSCE preparation app built in Freetown for Sierra Leonean students: past WAEC papers, lessons with diagrams and maths, and an AI tutor.',
-    lastmod: '2026-06-11',
+      'WASSCE Tutor is a WASSCE preparation app built in Freetown for Sierra Leone students: syllabus lessons, exam-style practice questions and an AI tutor.',
+    lastmod: '2026-11-06',
+  },
+  '/contact': {
+    title: 'Contact WASSCE Tutor: WhatsApp, Email & Location | WASSCE Tutor',
+    description:
+      'Contact WASSCE Tutor in Freetown, Sierra Leone: WhatsApp +232 77 884195, email, and our WhatsApp study group. Help with plans, payments and tutors.',
+    lastmod: '2026-11-06',
   },
   '/privacy': {
     title: 'Privacy Policy | WASSCE Tutor',
@@ -77,20 +84,50 @@ export function absoluteUrl(path: string): string {
   return path === '/' ? `${SITE.origin}/` : `${SITE.origin}${path}`
 }
 
-// Organization + WebSite + app entity graph, on the homepage only.
+const ORG_ID = `${SITE.origin}/#organization`
+
+// The business itself: an education service based in Freetown that serves
+// the whole country online. Typed as both EducationalOrganization and
+// LocalBusiness so search engines can show it for local searches. Add
+// streetAddress, postalCode and sameAs (Google Business Profile, socials)
+// here when they exist; never guess them.
+const ORGANIZATION = {
+  '@type': ['EducationalOrganization', 'LocalBusiness'],
+  '@id': ORG_ID,
+  name: SITE.name,
+  url: `${SITE.origin}/`,
+  logo: `${SITE.origin}/favicon-512.png`,
+  image: `${SITE.origin}/og-image.jpg`,
+  description:
+    'WASSCE preparation for Sierra Leone students, built in Freetown: syllabus lessons, original exam-style practice questions, an AI tutor and one-to-one tutors.',
+  email: CONTACT.email,
+  telephone: CONTACT.phoneE164,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: CONTACT.locality,
+    addressRegion: CONTACT.region,
+    addressCountry: CONTACT.countryCode,
+  },
+  areaServed: { '@type': 'Country', name: CONTACT.country },
+  priceRange: 'NLe 25–220',
+  contactPoint: [
+    {
+      '@type': 'ContactPoint',
+      contactType: 'customer support',
+      telephone: CONTACT.phoneE164,
+      email: CONTACT.email,
+      areaServed: CONTACT.countryCode,
+      availableLanguage: ['English'],
+    },
+  ],
+  knowsAbout: ['WASSCE', 'West African Senior School Certificate Examination', 'Secondary education in Sierra Leone'],
+}
+
+// Organization + WebSite + app entity graph, on the homepage.
 const HOME_JSON_LD = {
   '@context': 'https://schema.org',
   '@graph': [
-    {
-      '@type': 'Organization',
-      '@id': `${SITE.origin}/#organization`,
-      name: SITE.name,
-      url: `${SITE.origin}/`,
-      logo: `${SITE.origin}/favicon-512.png`,
-      description: 'WASSCE preparation platform built in Freetown, Sierra Leone, with past papers, lessons and an AI tutor.',
-      address: { '@type': 'PostalAddress', addressLocality: 'Freetown', addressCountry: 'SL' },
-      areaServed: { '@type': 'Country', name: 'Sierra Leone' },
-    },
+    ORGANIZATION,
     {
       '@type': 'WebSite',
       '@id': `${SITE.origin}/#website`,
@@ -102,7 +139,7 @@ const HOME_JSON_LD = {
     {
       '@type': 'SoftwareApplication',
       name: SITE.name,
-      description: 'WASSCE preparation app built in Sierra Leone with past papers, lessons and an AI tutor.',
+      description: 'WASSCE preparation app built in Sierra Leone with syllabus lessons, exam-style practice questions and an AI tutor.',
       url: `${SITE.origin}/`,
       applicationCategory: 'EducationalApplication',
       operatingSystem: 'Android, Web',
@@ -113,9 +150,47 @@ const HOME_JSON_LD = {
         geographicArea: { '@type': 'Country', name: 'Sierra Leone' },
       },
       offers: { '@type': 'AggregateOffer', priceCurrency: 'SLE', lowPrice: '25', highPrice: '220', offerCount: '3' },
-      provider: { '@id': `${SITE.origin}/#organization` },
+      provider: { '@id': ORG_ID },
     },
   ],
+}
+
+// Contact page: the business entity in full, with the page about it.
+const CONTACT_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    ORGANIZATION,
+    {
+      '@type': 'ContactPage',
+      '@id': `${SITE.origin}/contact#page`,
+      url: `${SITE.origin}/contact`,
+      name: 'Contact WASSCE Tutor',
+      inLanguage: 'en',
+      about: { '@id': ORG_ID },
+      mainEntity: { '@id': ORG_ID },
+    },
+  ],
+}
+
+const ABOUT_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    ORGANIZATION,
+    {
+      '@type': 'AboutPage',
+      url: `${SITE.origin}/about`,
+      name: 'About WASSCE Tutor',
+      inLanguage: 'en',
+      about: { '@id': ORG_ID },
+    },
+  ],
+}
+
+const PAGE_JSON_LD: Partial<Record<PublicPath, Record<string, unknown>[]>> = {
+  '/': [HOME_JSON_LD],
+  // breadcrumbJsonLd is a function declaration, so it is hoisted and usable here.
+  '/about': [ABOUT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['About', '/about']])],
+  '/contact': [CONTACT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['Contact', '/contact']])],
 }
 
 type IndexablePage = {
@@ -154,7 +229,7 @@ export function publicPageTags(path: PublicPath): HeadTags {
     title: page.title,
     description: page.description,
     ogTitle: page.ogTitle,
-    jsonLd: path === '/' ? [HOME_JSON_LD] : [],
+    jsonLd: PAGE_JSON_LD[path] ?? [],
   })
 }
 
@@ -199,7 +274,7 @@ export function tutoringServiceJsonLd({ name, description, path, subject }: { na
     url: absoluteUrl(path),
     serviceType: subject ? `${subject} tutoring` : 'Private tutoring',
     category: 'Education',
-    provider: { '@type': 'Organization', name: SITE.name, url: `${SITE.origin}/` },
+    provider: { '@type': 'Organization', '@id': ORG_ID, name: SITE.name, url: `${SITE.origin}/`, telephone: CONTACT.phoneE164 },
     areaServed: { '@type': 'Country', name: 'Sierra Leone' },
     audience: { '@type': 'EducationalAudience', educationalRole: 'student', audienceType: 'WASSCE candidates' },
     availableChannel: { '@type': 'ServiceChannel', serviceUrl: absoluteUrl(path), availableLanguage: 'en' },

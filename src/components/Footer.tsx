@@ -1,13 +1,13 @@
 import { Link, useRouterState } from '@tanstack/react-router'
-import { ChevronDown, Mail } from 'lucide-react'
+import { ChevronDown, Mail, MapPin } from 'lucide-react'
 import { useAuth } from '@/lib/auth'
+import { ADDRESS_LINE, CONTACT, whatsappChatLink } from '@/lib/contact'
 import { BrandMark } from '@/components/BrandMark'
+import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
 
-const SHOW_ON = ['/', '/about', '/privacy', '/terms']
+const SHOW_ON = ['/', '/about', '/contact', '/privacy', '/terms']
 const isPublicPage = (pathname: string) =>
   SHOW_ON.includes(pathname) || pathname === '/wassce' || pathname.startsWith('/wassce/') || pathname === '/tutors' || pathname.startsWith('/tutors/')
-
-const CONTACT = 'secretsafe.cc@gmail.com'
 
 type FooterLink = { label: string; href: string }
 type Group = { title: string; links: FooterLink[] }
@@ -39,8 +39,9 @@ const GROUPS: Group[] = [
   {
     title: 'Support',
     links: [
-      { label: 'Contact us', href: `mailto:${CONTACT}` },
-      { label: 'Report a problem', href: `mailto:${CONTACT}?subject=${encodeURIComponent('Problem report: WASSCE Tutor')}` },
+      { label: 'Contact us', href: '/contact' },
+      { label: 'WhatsApp group', href: CONTACT.whatsappGroup },
+      { label: 'Report a problem', href: `mailto:${CONTACT.email}?subject=${encodeURIComponent('Problem report: WASSCE Tutor')}` },
     ],
   },
   {
@@ -54,8 +55,10 @@ const GROUPS: Group[] = [
 ]
 
 /**
- * Public footer (Blueprint v2, section 02): brand first, then Learn,
- * Product, Support and Legal. Desktop shows columns; mobile shows the brand
+ * Public footer (Blueprint v2, section 02): brand and contact details first,
+ * then Learn, Product, Support and Legal. The address, phone and email are
+ * always visible as plain text (never inside an accordion), so visitors and
+ * search engines can find them. Desktop shows columns; mobile shows the brand
  * and contact, then collapsible groups with 44 px rows, then a legal row.
  * Signed-in students never see it: they have the bottom navigation.
  */
@@ -68,15 +71,31 @@ export function Footer() {
   return (
     <footer className="-mx-4 -mb-12 mt-16 border-t bg-card sm:-mx-6">
       <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14">
-        <div className="grid gap-8 sm:grid-cols-[1.4fr_repeat(4,1fr)]">
-          {/* Brand */}
-          <div className="space-y-3">
+        <div className="grid gap-8 sm:grid-cols-4 lg:grid-cols-[1.7fr_repeat(4,1fr)]">
+          {/* Brand and contact: a full-width row on tablets, the first column on desktop */}
+          <div className="space-y-3 sm:col-span-4 lg:col-span-1">
             <BrandMark />
             <p className="max-w-xs text-sm text-muted-foreground">
               WASSCE lessons, practice questions and an AI tutor, organised around the syllabus. Built in Freetown for Sierra Leone students.
             </p>
-            <a href={`mailto:${CONTACT}`} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-primary hover:underline sm:hidden">
-              <Mail className="h-4 w-4" aria-hidden /> Contact us
+            <address className="space-y-1 text-sm not-italic text-muted-foreground">
+              <p className="flex min-h-9 items-center gap-2">
+                <MapPin className="h-4 w-4 shrink-0" aria-hidden /> {ADDRESS_LINE}
+              </p>
+              <a href={whatsappChatLink()} target="_blank" rel="noopener" className="flex min-h-9 items-center gap-2 hover:text-foreground">
+                <WhatsAppGlyph className="h-4 w-4 shrink-0 text-[#1a8d4a]" /> {`WhatsApp ${CONTACT.phoneDisplay}`}
+              </a>
+              <a href={`mailto:${CONTACT.email}`} className="flex min-h-9 items-center gap-2 break-all hover:text-foreground">
+                <Mail className="h-4 w-4 shrink-0" aria-hidden /> {CONTACT.email}
+              </a>
+            </address>
+            <a
+              href={CONTACT.whatsappGroup}
+              target="_blank"
+              rel="noopener"
+              className="inline-flex h-11 items-center gap-2 whitespace-nowrap rounded-xl bg-[#1a8d4a] px-4 text-sm font-semibold text-white transition-colors hover:bg-[#157a3f]"
+            >
+              <WhatsAppGlyph className="h-5 w-5" /> Join our WhatsApp group
             </a>
           </div>
 
@@ -130,7 +149,7 @@ export function Footer() {
 
 function FooterAnchor({ link, className }: { link: FooterLink; className: string }) {
   return (
-    <a href={link.href} className={className}>
+    <a href={link.href} className={className} {...(link.href.startsWith('http') ? { target: '_blank', rel: 'noopener' } : {})}>
       {link.label}
     </a>
   )

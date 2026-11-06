@@ -6,7 +6,7 @@
 // guide, plans, FAQ and a final call to action. Numbers come from the
 // database and the question-set manifest.
 import { Link } from '@tanstack/react-router'
-import { useRef, type CSSProperties } from 'react'
+import { useRef } from 'react'
 import { useReveal } from '@/components/ds/useReveal'
 import { ArrowRight, BookOpen, Check, ChevronRight, CircleCheck, Compass, Moon, Smartphone, UserRound, Wallet } from 'lucide-react'
 import type { LandingData } from '@/lib/public-content'
@@ -48,13 +48,15 @@ function Hero() {
   return (
     <section className="relative left-1/2 right-1/2 -mx-[50vw] -mt-6 w-screen bg-gradient-to-br from-primary to-brand-strong">
       <div className="mx-auto max-w-3xl space-y-6 px-6 pb-20 pt-10 text-center sm:pb-24 sm:pt-14">
-        <p className="text-sm font-medium text-white/80">Built in Freetown for Sierra Leone students</p>
         <div className="space-y-3">
-          <h1 className="text-[2.25rem] font-bold leading-[1.1] tracking-tight text-balance text-white sm:text-[3.25rem]">
-            Pass WASSCE with confidence.
+          {/* The keyword line is part of the h1, so the page's main heading
+              matches its title and description; it reads as an eyebrow. */}
+          <h1 className="flex flex-col gap-6 text-white">
+            <span className="text-sm font-medium text-white/80">WASSCE lessons and practice questions for Sierra Leone</span>
+            <span className="text-[2.25rem] font-bold leading-[1.1] tracking-tight text-balance sm:text-[3.25rem]">Pass WASSCE with confidence.</span>
           </h1>
           <p className="mx-auto max-w-xl text-balance text-base text-white/85 sm:text-lg">
-            Lessons for every topic, exam-style practice with the full working, and an AI tutor that explains anything, all organised around your syllabus.
+            Lessons for every topic, exam-style practice questions with the full working, and an AI tutor that explains anything, all organised around your syllabus. Built in Freetown.
           </p>
         </div>
         <TopicSearch />
@@ -114,8 +116,8 @@ function PopularTopics({ data }: { data: LandingData }) {
     <section className="space-y-5" aria-labelledby="popular-heading">
       <div className="flex items-end justify-between gap-3">
         <div className="space-y-1">
-          <p className="text-sm font-semibold text-primary">Popular topics</p>
-          <h2 id="popular-heading" className="text-[1.75rem] font-bold leading-tight tracking-tight sm:text-3xl">Jump straight into a topic</h2>
+          <p className="text-sm font-semibold text-primary">Jump straight in</p>
+          <h2 id="popular-heading" className="text-[1.75rem] font-bold leading-tight tracking-tight sm:text-3xl">Popular WASSCE topics</h2>
         </div>
         <a href="/wassce/subjects" className="hidden min-h-11 items-center gap-1 text-sm font-semibold text-primary hover:underline sm:inline-flex">
           All subjects <ChevronRight className="h-4 w-4" aria-hidden />
@@ -128,8 +130,7 @@ function PopularTopics({ data }: { data: LandingData }) {
             <a
               key={`${t.subjectSlug}/${t.topicSlug}`}
               href={topicPath(t.subjectSlug, t.topicSlug)}
-              data-reveal
-              style={{ '--reveal-delay': (i % 4) * 80 } as CSSProperties}
+              data-reveal={i % 4}
               className="group flex w-[76%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border bg-card transition-colors hover:border-primary/40 sm:w-auto"
             >
               <span className="relative block aspect-[16/10] overflow-hidden bg-muted">
@@ -138,19 +139,18 @@ function PopularTopics({ data }: { data: LandingData }) {
                     src={photo.small}
                     srcSet={`${photo.small} 480w, ${photo.src} 960w`}
                     sizes="(min-width: 1024px) 240px, (min-width: 640px) 50vw, 76vw"
-                    alt=""
+                    alt={photo.caption}
                     loading="lazy"
                     decoding="async"
                     width={480}
                     height={300}
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-                    style={{ objectPosition: photo.position ?? 'center' }}
+                    className={`h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03] ${photo.position ?? ''}`}
                   />
                 ) : (
                   <SubjectCover slug={t.subjectSlug} shape="wide" rounded="rounded-none" className="h-full w-full" />
                 )}
                 <span className="absolute left-2.5 top-2.5 inline-flex items-center gap-1.5 rounded-full bg-white/95 px-2.5 py-1 text-xs font-semibold text-slate-900 shadow-sm">
-                  <span className="h-2 w-2 rounded-full" style={{ backgroundColor: subjectArt(t.subjectSlug).bg }} aria-hidden />
+                  <span className={`h-2 w-2 rounded-full ${subjectArt(t.subjectSlug).tone}`} aria-hidden />
                   {t.subjectName}
                 </span>
               </span>
@@ -168,10 +168,10 @@ function PopularTopics({ data }: { data: LandingData }) {
 
 /** Full-width deep band: local fit, told with photographs rather than small icons. */
 const FEATURES = [
-  { img: 'feature-phone', icon: Smartphone, title: 'Built for your phone', body: 'Works in any phone browser and as an Android app, even on patchy data.' },
-  { img: 'feature-pay', icon: Wallet, title: 'Pay the local way', body: 'Orange Money or AfriMoney. No card and no bank account needed.' },
-  { img: 'feature-night', icon: Moon, title: 'Reading mode for late nights', body: 'A warm, low-glare theme for studying after dark.' },
-  { img: 'feature-syllabus', icon: BookOpen, title: 'Written to the WASSCE syllabus', body: 'Topics follow the syllabus, grouped the way you will study them.' },
+  { img: 'feature-phone', alt: 'A student studying on her phone', icon: Smartphone, title: 'Built for your phone', body: 'Works in any phone browser and as an Android app, even on patchy data.' },
+  { img: 'feature-pay', alt: 'A customer paying with his phone at a shop', icon: Wallet, title: 'Pay the local way', body: 'Orange Money or AfriMoney. No card and no bank account needed.' },
+  { img: 'feature-night', alt: 'A student studying by lamplight at night', icon: Moon, title: 'Reading mode for late nights', body: 'A warm, low-glare theme for studying after dark.' },
+  { img: 'feature-syllabus', alt: 'A student writing notes from a textbook', icon: BookOpen, title: 'Written to the WASSCE syllabus', body: 'Topics follow the syllabus, grouped the way you will study them.' },
 ]
 
 function LocalBand() {
@@ -186,18 +186,17 @@ function LocalBand() {
         </div>
         <div className="mt-8">
           <SwipeRow label="Features" count={FEATURES.length} grid="sm:grid-cols-2 lg:grid-cols-4">
-            {FEATURES.map(({ img, icon: Icon, title, body }, i) => (
+            {FEATURES.map(({ img, alt, icon: Icon, title, body }, i) => (
               <div
                 key={title}
-                data-reveal
-                style={{ '--reveal-delay': i * 90 } as CSSProperties}
+                data-reveal={i}
                 className="group relative aspect-[4/5] w-[72%] shrink-0 snap-start overflow-hidden rounded-2xl bg-black/30 ring-1 ring-white/10 sm:w-auto"
               >
                 <img
                   src={`/img/home/${img}-400.webp`}
                   srcSet={`/img/home/${img}-400.webp 400w, /img/home/${img}.webp 800w`}
                   sizes="(min-width: 1024px) 240px, (min-width: 640px) 50vw, 72vw"
-                  alt=""
+                  alt={alt}
                   loading="lazy"
                   decoding="async"
                   width={400}
@@ -240,8 +239,7 @@ function StartingPoint() {
           <a
             key={title}
             href={href}
-            data-reveal
-            style={{ '--reveal-delay': i * 110 } as CSSProperties}
+            data-reveal={i}
             className="group flex w-[82%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border bg-card shadow-sm transition-shadow duration-300 hover:shadow-xl sm:w-auto"
           >
             <span className="relative block aspect-[4/3] overflow-hidden">
@@ -293,7 +291,7 @@ function TutorTeaser() {
       </span>
       <div className="space-y-3 p-6 sm:p-8">
         <p className="text-sm font-semibold text-primary">Book a tutor</p>
-        <h2 id="tutor-teaser" className="text-2xl font-bold leading-tight tracking-tight text-balance">Want a real teacher, one to one?</h2>
+        <h2 id="tutor-teaser" className="text-2xl font-bold leading-tight tracking-tight text-balance">Want a real WASSCE tutor, one to one?</h2>
         <p className="text-[15px] text-muted-foreground">
           Book a tutor for any WASSCE subject, online or at home. Tell us what you need and we match you with a tutor on WhatsApp. Asking is free.
         </p>
@@ -363,7 +361,7 @@ function Plans() {
       <SectionTitle eyebrow="Plans" title="One price, everything included" body="Every plan unlocks every subject, every practice set and the AI tutor. Start with 7 days free." />
       <div className="mx-auto grid max-w-4xl gap-3 sm:grid-cols-3">
         {plans.map((p, i) => (
-          <div key={p.name} data-reveal style={{ '--reveal-delay': i * 100 } as CSSProperties} className={`flex flex-col rounded-2xl bg-card p-5 transition-shadow hover:shadow-lg ${p.best ? 'border-2 border-primary' : 'border'}`}>
+          <div key={p.name} data-reveal={i} className={`flex flex-col rounded-2xl bg-card p-5 transition-shadow hover:shadow-lg ${p.best ? 'border-2 border-primary' : 'border'}`}>
             <div className="flex h-6 items-center justify-between">
               <h3 className="font-semibold">{p.name}</h3>
               {p.best && <span className="rounded-full bg-brand-soft px-2.5 py-0.5 text-xs font-semibold text-primary">Lowest monthly cost</span>}

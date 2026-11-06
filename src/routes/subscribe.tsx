@@ -1,4 +1,5 @@
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
+import { CONTACT } from '@/lib/contact'
 import { privateHead } from '@/lib/seo'
 import { useState, useEffect } from 'react'
 import { useAuth } from '@/lib/auth'
@@ -12,7 +13,7 @@ export const Route = createFileRoute('/subscribe')({
   component: SubscribePage,
 })
 
-const WHATSAPP_NUMBER = '23277884195'
+const WHATSAPP_NUMBER = CONTACT.whatsapp
 const COOLDOWN_MS = 10 * 60 * 1000
 
 type Plan = {

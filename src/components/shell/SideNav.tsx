@@ -11,7 +11,7 @@ export function SideNav() {
   if (!user || !showsStudentNav(pathname)) return null
 
   return (
-    <aside className="hidden w-64 shrink-0 flex-col border-r bg-card lg:flex" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
+    <aside className="hidden w-64 shrink-0 flex-col border-r bg-card pt-[env(safe-area-inset-top)] lg:flex">
       <div className="flex h-16 items-center px-5">
         <Link to="/" aria-label="WASSCE Tutor home">
           <BrandMark />

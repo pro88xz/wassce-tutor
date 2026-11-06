@@ -55,7 +55,7 @@ export const Route = createRootRoute({
       { property: 'og:image:height', content: '630' },
       {
         property: 'og:image:alt',
-        content: 'WASSCE Tutor: Pass WASSCE with confidence. Past questions, lessons and an AI tutor, built in Sierra Leone.',
+        content: 'WASSCE Tutor: Pass WASSCE with confidence. Lessons, practice questions and tutors, built in Sierra Leone.',
       },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:image', content: `${SITE.origin}/og-image.jpg` },
@@ -100,7 +100,7 @@ function GlobalLoadingBar() {
   const fetching = useIsFetching()
   if (!fetching) return null
   return (
-    <div className="fixed top-0 left-0 right-0 z-[60] h-0.5 bg-primary/20 overflow-hidden" style={{ marginTop: 'env(safe-area-inset-top)' }}>
+    <div className="fixed top-0 left-0 right-0 z-[60] mt-[env(safe-area-inset-top)] h-0.5 overflow-hidden bg-primary/20">
       <div className="h-full w-1/3 bg-primary animate-[loadingbar_1s_ease-in-out_infinite]" />
     </div>
   )
@@ -114,7 +114,7 @@ function RootComponent() {
     <div className="flex h-screen bg-background text-foreground">
       <SideNav />
       <div className="flex min-w-0 flex-1 flex-col">
-        <main id="main" className="flex-1 overflow-y-auto" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
+        <main id="main" className="flex-1 overflow-y-auto pt-[env(safe-area-inset-top)]">
           <TopBar />
           {/* Bottom padding clears the fixed mobile navigation bar when it is shown. */}
           <div className={`px-4 pt-4 sm:px-6 sm:pt-6 ${studentNav ? 'pb-28 lg:pb-12' : 'pb-12'}`}>

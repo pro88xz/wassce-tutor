@@ -1,4 +1,5 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
+import { CONTACT } from '@/lib/contact'
 import { ArrowLeft, ArrowRight, CircleCheck, Clock, Flag, MessageCircleQuestion, ShieldCheck } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { AccessGate } from '@/components/AccessGate'
@@ -12,7 +13,7 @@ import { LessonView } from '@/components/LessonView'
 import { ProgressBar } from '@/components/ds/Progress'
 import { EmptyState, Skeleton } from '@/components/ds/Primitives'
 
-const SUPPORT_EMAIL = 'secretsafe.cc@gmail.com'
+const SUPPORT_EMAIL = CONTACT.email
 
 export const Route = createFileRoute('/lesson/$lessonId')({
   head: privateHead('Lesson'),

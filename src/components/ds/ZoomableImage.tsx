@@ -26,9 +26,8 @@ export function ZoomableImage({ src, alt, className = '' }: { src: string; alt: 
             type="button"
             autoFocus
             onClick={() => setOpen(false)}
-            className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-white text-slate-900"
+            className="absolute right-4 top-4 mt-[env(safe-area-inset-top)] flex h-11 w-11 items-center justify-center rounded-full bg-white text-slate-900"
             aria-label="Close diagram"
-            style={{ marginTop: 'env(safe-area-inset-top)' }}
           >
             <X className="h-5 w-5" aria-hidden />
           </button>

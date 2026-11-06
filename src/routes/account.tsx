@@ -1,4 +1,5 @@
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
+import { CONTACT } from '@/lib/contact'
 import { useState, type FormEvent, type ReactNode } from 'react'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { Capacitor } from '@capacitor/core'
@@ -33,7 +34,7 @@ export const Route = createFileRoute('/account')({
   component: AccountPage,
 })
 
-const SUPPORT_EMAIL = 'secretsafe.cc@gmail.com'
+const SUPPORT_EMAIL = CONTACT.email
 
 function AccountPage() {
   const { user, signOut } = useAuth()

@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
+import { CONTACT } from '@/lib/contact'
 import { privateHead } from '@/lib/seo'
 import { useEffect, useRef, useState, lazy, Suspense } from 'react'
 // Lazy-loaded markdown stack — only fetched when AI starts answering
@@ -35,7 +36,7 @@ export const Route = createFileRoute('/tutor')({
   component: TutorPage,
 })
 
-const SUPPORT_EMAIL = 'secretsafe.cc@gmail.com'
+const SUPPORT_EMAIL = CONTACT.email
 
 /** Follow-ups offered under the latest answer (Design System Blueprint 09, suggested prompts). */
 const FOLLOW_UPS = ['Explain this more simply', 'Give me another example', 'Test me with a question']

@@ -115,7 +115,7 @@ function SubjectHubPage() {
         href={tutorsPath(subject.slug)}
         className="flex items-center gap-4 rounded-2xl border bg-card p-4 transition-colors hover:border-primary/40 sm:p-5"
       >
-        <img src="/img/tutors-session-640.webp" alt="" loading="lazy" width={640} height={427} className="h-16 w-24 shrink-0 rounded-lg object-cover" />
+        <img src="/img/tutors-session-640.webp" alt="Two students going through their notes with a tutor" loading="lazy" width={640} height={427} className="h-16 w-24 shrink-0 rounded-lg object-cover" />
         <span className="min-w-0 flex-1">
           <span className="block font-bold">Need one-to-one help with {subject.name}?</span>
           <span className="mt-0.5 block text-[15px] text-muted-foreground">Book a real {subject.name} tutor, online or at home.</span>
