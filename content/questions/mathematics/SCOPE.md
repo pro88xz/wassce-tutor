@@ -137,10 +137,24 @@ simultaneous equations (2018 Q6, 2019 Q3), graphs (2018 Q7) and functions
 fractions and coordinate geometry from the government handbooks. One graph,
 used by three questions, is drawn from the same function the answers use.
 
-With sets 1-4, 40 of the 46 Mathematics topics have a practice Still to do: similar and congruent figures, loci, construction, financial
-arithmetic, and (lowest priority for Sierra Leone) differentiation and
-integration; then more questions per topic and Paper 2-style questions with
-mark schemes.
+## Set 5: 30 questions on the last six topics
+
+`set5_p1.py` covers Similar and Congruent Figures, Loci, Construction,
+Financial Arithmetic, Differentiation and Integration. Similar figures, loci
+and construction (2019 Q8) are on the Sierra Leone papers and in the
+handbooks. Financial arithmetic and calculus are in the WAEC syllabus but
+were not set in 2018 or 2019 for Sierra Leone, so they get one short set
+each until there is evidence they are examined.
+
+## Where Mathematics stands
+
+All 46 Mathematics topics now have at least one practice set: 230 Paper 1
+questions in 46 sets, with every answer and all 920 option texts checked by
+the build.
+
+Next: more questions on the most-examined topics (5 per topic is a starter
+set), full 50-question mock Paper 1s, and Paper 2-style questions with
+worked mark schemes.
 
 ## Sources
 
