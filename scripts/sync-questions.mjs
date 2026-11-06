@@ -57,6 +57,23 @@ async function upsert(db, table, rows) {
   }
 }
 
+/** What sort of key this is, without ever printing the key itself. */
+function keyKind(k) {
+  if (k.startsWith('sb_secret_')) return 'secret'
+  if (k.startsWith('sb_publishable_')) return 'the publishable (public) key'
+  const parts = k.split('.')
+  if (parts.length === 3) {
+    try {
+      const role = JSON.parse(Buffer.from(parts[1], 'base64url').toString('utf8')).role
+      if (role === 'service_role') return 'secret'
+      return `a legacy "${role}" key (the public one)`
+    } catch {
+      // not a readable JWT; fall through
+    }
+  }
+  return 'a value that is not a Supabase key'
+}
+
 const pick = (row, cols) => Object.fromEntries(cols.map((c) => [c, row[c] ?? null]))
 
 async function syncSet(db, set) {
@@ -91,6 +108,13 @@ async function main() {
   }
   if (!url) {
     console.log('[questions] No Supabase URL: skipping the question sync.')
+    return
+  }
+  const kind = keyKind(key)
+  if (kind !== 'secret') {
+    console.error(`[questions] QUESTION SYNC SKIPPED: SUPABASE_SECRET_KEY holds ${kind}, which cannot write to the database.`)
+    console.error('[questions] In Supabase -> Project Settings -> API Keys, copy a SECRET key (starts with sb_secret_)')
+    console.error('[questions] or the legacy service_role key, put it in SUPABASE_SECRET_KEY in Vercel, and redeploy.')
     return
   }
   const db = createClient(url, key, { auth: { persistSession: false, autoRefreshToken: false } })
