@@ -33,10 +33,10 @@ function validateLesson(item) {
     if (url.protocol !== 'https:' || !isApprovedHost(url.hostname)) throw new Error('Source host is not on the approved open-education allowlist.')
     if (!ALLOWED_LICENSES.has(source.license)) throw new Error('Source licence is not approved.')
     if (typeof source.license_evidence !== 'string' || source.license_evidence.length < 5) throw new Error('Visible source licence evidence is required.')
-    if (source.license === 'CC-BY-SA-4.0' && !/share.?alike|cc by-sa/i.test(source.license_evidence)) throw new Error('CC BY-SA evidence does not match its declared licence.')
-    if (source.license === 'CC-BY-4.0' && !/(?:attribution.*4\.0|cc by 4\.0)/i.test(source.license_evidence)) throw new Error('CC BY evidence does not match its declared licence.')
+    if (source.license === 'CC-BY-SA-4.0' && !/share.?alike|cc by-sa|creativecommons\.org\/licenses\/by-sa\/4\.0/i.test(source.license_evidence)) throw new Error('CC BY-SA evidence does not match its declared licence.')
+    if (source.license === 'CC-BY-4.0' && !/(?:attribution.*4\.0|cc by 4\.0|creativecommons\.org\/licenses\/by\/4\.0)/i.test(source.license_evidence)) throw new Error('CC BY evidence does not match its declared licence.')
     if (typeof source.title !== 'string' || !source.title.trim() || !item.content.includes(source.url)) throw new Error('Source attribution is incomplete.')
-    if (source.license === 'CC-BY-SA-4.0' && !/ShareAlike/i.test(item.content)) throw new Error('ShareAlike attribution notice is missing.')
+    if (source.license === 'CC-BY-SA-4.0' && !/ShareAlike|creativecommons\.org\/licenses\/by-sa\/4\.0/i.test(item.content)) throw new Error('ShareAlike attribution notice is missing.')
   }
 }
 
