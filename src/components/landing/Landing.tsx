@@ -27,6 +27,7 @@ export function Landing({ data }: { data: LandingData }) {
   return (
     <>
       <Hero data={data} />
+      <TrustStrip />
       <div ref={root} className="mx-auto max-w-6xl space-y-20 px-4 sm:space-y-28 sm:px-6">
         <SubjectShowcase subjects={data.subjects} />
         {data.popular.length > 0 && <PopularTopics data={data} />}
@@ -127,6 +128,26 @@ function Hero({ data }: { data: LandingData }) {
           ))}
         </div>
       </div>
+    </section>
+  )
+}
+
+/** Concrete product assurances, not borrowed testimonials or invented social proof. */
+function TrustStrip() {
+  const items = [
+    { title: 'Built around WASSCE', body: 'Subjects and topics organised for the Sierra Leone syllabus.' },
+    { title: 'Study on your phone', body: 'Use the website or install the Android app.' },
+    { title: 'Local payment options', body: 'Orange Money and AfriMoney for paid plans.' },
+    { title: 'Independent study platform', body: 'Not an official WAEC service or examination body.' },
+  ]
+  return (
+    <section aria-label="WASSCE Tutor at a glance" className="trust-strip relative z-10 mx-auto -mt-1 grid max-w-6xl grid-cols-2 overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-[0_18px_50px_-38px_rgba(20,20,40,.45)] sm:grid-cols-4">
+      {items.map((item, index) => (
+        <div key={item.title} className={'trust-strip-item flex min-h-[7.25rem] flex-col justify-center gap-1.5 px-4 py-4 sm:px-5 ' + (index ? 'border-l border-slate-100 ' : '') + (index > 1 ? 'border-t border-slate-100 sm:border-t-0' : '')}>
+          <span className="text-[11px] font-extrabold uppercase tracking-[.12em] text-primary">{item.title}</span>
+          <span className="text-xs leading-relaxed text-slate-600 sm:text-[13px]">{item.body}</span>
+        </div>
+      ))}
     </section>
   )
 }
@@ -553,9 +574,12 @@ function Plans() {
           ['No automatic renewal', 'A plan simply ends on its last day. You go back to the free account, and your progress is kept.'],
           ['Buying again', 'Paying while a plan is running adds the new time on top, so nothing is lost.'],
         ].map(([title, body]) => (
-          <li key={title} className="flex gap-2">
-            <CircleCheck className="mt-0.5 h-4 w-4 shrink-0 text-success" aria-hidden />
-            <span><span className="font-semibold text-foreground">{title}.</span> {body}</span>
+          <li key={title} className="plan-assurance-card">
+            <span className="plan-assurance-icon"><CircleCheck className="h-5 w-5" aria-hidden /></span>
+            <span className="plan-assurance-copy">
+              <span className="plan-assurance-title">{title}</span>
+              <span className="plan-assurance-body">{body}</span>
+            </span>
           </li>
         ))}
       </ul>
