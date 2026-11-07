@@ -11,8 +11,7 @@ import { fetchLandingData } from '@/lib/public-content'
 
 export const Route = createFileRoute('/about')({
   head: publicHead('/about'),
-  ssr: true, // prerendered to static HTML at build time
-  // Live subject/topic/lesson counts, baked into the prerendered page.
+  ssr: true,
   loader: () => fetchLandingData(),
   staleTime: Infinity,
   component: About,
@@ -44,121 +43,115 @@ function About() {
   ]
 
   return (
-    <div className="mx-auto max-w-3xl space-y-12 pb-12">
-      <header className="space-y-3">
-        <p className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground">
-          <MapPin className="h-4 w-4" aria-hidden /> Freetown, Sierra Leone
-        </p>
-        <h1 className="text-[1.75rem] font-bold leading-tight tracking-tight text-balance sm:text-4xl">Built in Sierra Leone, for Sierra Leonean students.</h1>
-        <p className="text-lg text-muted-foreground">
-          WASSCE Tutor is a WASSCE preparation platform made specifically for students sitting the West African Senior
-          School Certificate Examination in Sierra Leone. We focus on what local students actually need, not generic
-          global content.
-        </p>
+    <article className="about-page mx-auto max-w-6xl space-y-16 pb-12 sm:space-y-20">
+      <header className="about-hero">
+        <div className="about-hero-copy">
+          <p className="about-eyebrow"><MapPin aria-hidden /> Freetown, Sierra Leone</p>
+          <h1>Built here.<br /><em>For the next generation.</em></h1>
+          <p className="about-hero-lede">
+            WASSCE Tutor is a WASSCE preparation platform made specifically for students sitting the West African Senior School Certificate Examination in Sierra Leone. We focus on what local students actually need, not generic global content.
+          </p>
+          <div className="about-hero-actions">
+            <Link to="/auth">Create a free account <span aria-hidden>↗</span></Link>
+            <a href="/wassce/subjects">Explore the subjects</a>
+          </div>
+          <div className="about-origin-note"><span /> Designed and maintained in Sierra Leone</div>
+        </div>
+        <div className="about-hero-art" aria-label="WASSCE subject areas">
+          <div className="about-cover about-cover-one"><SubjectCover slug="biology" shape="thumb" className="h-full w-full" rounded="rounded-2xl" /></div>
+          <div className="about-cover about-cover-two"><SubjectCover slug="mathematics" shape="thumb" className="h-full w-full" rounded="rounded-2xl" /></div>
+          <div className="about-cover about-cover-three"><SubjectCover slug="chemistry" shape="thumb" className="h-full w-full" rounded="rounded-2xl" /></div>
+          <div className="about-cover about-cover-four"><SubjectCover slug="english-language" shape="thumb" className="h-full w-full" rounded="rounded-2xl" /></div>
+          <div className="about-art-label"><span>LOCAL CONTEXT</span><strong>Learning built around the WASSCE syllabus.</strong></div>
+        </div>
+        <div className="about-stats" aria-label="WASSCE Tutor in numbers">
+          <div><strong>{totals.subjects}</strong><span>Subjects</span></div>
+          <div><strong>{totals.topics}</strong><span>Syllabus topics</span></div>
+          <div><strong>{totals.lessons}</strong><span>Published lessons</span></div>
+          <p>Live curriculum coverage</p>
+        </div>
       </header>
 
-      <section className="grid grid-cols-3 gap-px overflow-hidden rounded-2xl border bg-border text-center" aria-label="WASSCE Tutor in numbers">
-        {([[totals.subjects, 'subjects'], [totals.topics, 'topics'], [totals.lessons, 'lessons']] as const).map(([n, label]) => (
-          <div key={label} className="bg-card px-3 py-5">
-            <p className="text-3xl font-bold tabular-nums">{n}</p>
-            <p className="text-sm text-muted-foreground">{label}</p>
-          </div>
-        ))}
+      <section className="about-mission-section">
+        <div className="about-section-heading">
+          <p className="about-eyebrow">WHY WE EXIST</p>
+          <h2>Good preparation<br /><em>should be within reach.</em></h2>
+        </div>
+        <div className="about-mission-copy">
+          <p>
+            WASSCE is the gate that decides whether a Sierra Leonean student gets into university, secures a scholarship,
+            or starts their working life on the right footing. Yet most preparation materials available to students are
+            imported from Ghana or Nigeria, miss the Sierra Leone context, or sit behind expensive textbooks and private
+            tutors that families can’t always afford.
+          </p>
+          <p>
+            We built WASSCE Tutor to change that. A free account opens every subject, and one small payment unlocks every practice set,
+            every lesson, and an AI tutor that explains things in a way that fits how Sierra Leonean students learn.
+          </p>
+        </div>
       </section>
 
-      <section className="space-y-4">
-        <h2 className="text-2xl font-bold tracking-tight">Why we exist</h2>
-        <p className="text-muted-foreground">
-          WASSCE is the gate that decides whether a Sierra Leonean student gets into university, secures a scholarship,
-          or starts their working life on the right footing. Yet most preparation materials available to students are
-          imported from Ghana or Nigeria, miss the Sierra Leone context, or sit behind expensive textbooks and private
-          tutors that families can&rsquo;t always afford.
-        </p>
-        <p className="text-muted-foreground">
-          We built WASSCE Tutor to change that. A free account opens every subject, and one small payment unlocks every practice set,
-          every lesson, and an AI tutor that explains things in a way that fits how Sierra Leonean students learn.
-        </p>
-      </section>
-
-      <section className="space-y-5">
-        <h2 className="text-2xl font-bold tracking-tight">What you get</h2>
-        <div className="grid grid-cols-6 gap-2" aria-hidden>
+      <section className="about-product-section">
+        <div className="about-section-heading about-product-heading">
+          <div><p className="about-eyebrow">THE LEARNING EXPERIENCE</p><h2>Everything connected<br /><em>to your exam goals.</em></h2></div>
+          <p>One platform for understanding the syllabus, practising what you learn and getting help when you need it.</p>
+        </div>
+        <div className="about-subject-ribbon" aria-hidden>
           {COVER_ROW.map((slug) => (
-            <SubjectCover key={slug} slug={slug} shape="thumb" className="aspect-square w-full" rounded="rounded-xl" />
+            <div key={slug}><SubjectCover slug={slug} shape="thumb" className="aspect-[5/4] w-full" rounded="rounded-xl" /></div>
           ))}
         </div>
-        <ul className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
-          {features.map(({ title, body }) => (
-            <li key={title} className="flex gap-3">
-              <Check className="mt-0.5 h-5 w-5 shrink-0 text-success" aria-hidden />
-              <span>
-                <span className="block font-semibold">{title}</span>
-                <span className="block text-sm text-muted-foreground">{body}</span>
-              </span>
-            </li>
+        <div className="about-feature-grid">
+          {features.map(({ title, body }, index) => (
+            <div key={title} className="about-feature-card">
+              <span className="about-feature-number">0{index + 1}</span>
+              <span className="about-feature-check"><Check aria-hidden /></span>
+              <h3>{title}</h3>
+              <p>{body}</p>
+            </div>
           ))}
-        </ul>
+        </div>
       </section>
 
-      <section className="space-y-4">
-        <h2 className="text-2xl font-bold tracking-tight">Made for Sierra Leone</h2>
-        <p className="text-muted-foreground">
-          WASSCE Tutor is built and maintained in Freetown by a Sierra Leonean developer who understands the realities of
-          studying for WAEC here: limited textbook access, expensive data, shared devices, unreliable power. Every
-          product decision, from the small app size to the flat monthly pricing, is made with these constraints in mind.
-        </p>
-        <p className="text-muted-foreground">
-          We are not a global ed-tech company adapting content for Africa. We are a local team building for our own
-          market.
-        </p>
+      <section className="about-local-section">
+        <div className="about-local-mark"><MapPin aria-hidden /></div>
+        <div><p className="about-eyebrow">MADE FOR SIERRA LEONE</p><h2>Built around the realities of learning here.</h2>
+          <p>WASSCE Tutor is built and maintained in Freetown by a Sierra Leonean developer who understands the realities of studying for WAEC here: limited textbook access, expensive data, shared devices, unreliable power. Every product decision, from the small app size to the flat pricing, is made with these constraints in mind.</p>
+          <p>We are not a global ed-tech company adapting content for Africa. We are a local team building for our own market.</p>
+        </div>
       </section>
 
       {PHOTO_CREDITS.length > 0 && (
-        <section id="photo-credits" className="scroll-mt-20 space-y-3">
-          <h2 className="text-lg font-bold tracking-tight">Photo credits</h2>
-          <p className="text-sm text-muted-foreground">
-            Subject photos are used under open licences that allow commercial use. They have been cropped and compressed for the web.
-          </p>
-          <ul className="space-y-1.5 text-sm text-muted-foreground">
-            {PHOTO_CREDITS.map(([slug, p]) => (
-              <li key={slug}>
-                <span className="font-medium text-foreground">{p.subject}:</span> {p.caption}, by{' '}
-                {p.credit.creatorUrl ? <a href={p.credit.creatorUrl} className="underline underline-offset-2 hover:text-foreground" rel="noopener">{p.credit.creator}</a> : p.credit.creator}
-                {' '}via <a href={p.credit.sourceUrl} className="underline underline-offset-2 hover:text-foreground" rel="noopener">{p.credit.source}</a>,{' '}
-                <a href={p.credit.licenseUrl} className="underline underline-offset-2 hover:text-foreground" rel="noopener license">{p.credit.license}</a>
-              </li>
-            ))}
-          </ul>
+        <section id="photo-credits" className="about-credits scroll-mt-20">
+          <div><p className="about-eyebrow">IMAGE SOURCES</p><h2>Photo credits</h2><p>Subject photos are used under open licences that allow commercial use. They have been cropped and compressed for the web.</p></div>
+          <details className="about-credits-details">
+            <summary>View image credits <span aria-hidden>＋</span></summary>
+            <ul>
+              {PHOTO_CREDITS.map(([slug, p]) => (
+                <li key={slug}>
+                  <span className="font-semibold text-foreground">{p.subject}:</span> {p.caption}, by{' '}
+                  {p.credit.creatorUrl ? <a href={p.credit.creatorUrl} rel="noopener">{p.credit.creator}</a> : p.credit.creator}
+                  {' '}via <a href={p.credit.sourceUrl} rel="noopener">{p.credit.source}</a>,{' '}
+                  <a href={p.credit.licenseUrl} rel="noopener license">{p.credit.license}</a>
+                </li>
+              ))}
+            </ul>
+          </details>
         </section>
       )}
 
-      <section className="flex items-center gap-4 rounded-2xl border bg-card p-5">
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
-          <Mail className="h-5 w-5" aria-hidden />
-        </span>
-        <div className="min-w-0 flex-1">
-          <h2 className="font-bold">Get in touch</h2>
-          <p className="text-sm text-muted-foreground">{`WhatsApp ${CONTACT.phoneDisplay} or ${CONTACT.email}.`} Questions, feedback, or partnership enquiries?</p>
-        </div>
-        <a href="/contact" className="inline-flex min-h-11 py-2 shrink-0 items-center rounded-xl border bg-card px-4 text-sm font-semibold hover:border-primary/40">
-          Contact us
-        </a>
+      <section className="about-contact">
+        <span className="about-contact-icon"><Mail aria-hidden /></span>
+        <div><p className="about-eyebrow">TALK TO THE TEAM</p><h2>Questions, feedback or partnerships?</h2><p>{`WhatsApp ${CONTACT.phoneDisplay} or ${CONTACT.email}.`}</p></div>
+        <a href="/contact">Get in touch <span aria-hidden>↗</span></a>
       </section>
 
-      <section className="rounded-2xl bg-brand-soft px-6 py-10 text-center">
-        <div className="space-y-3">
-          <h2 className="text-[1.75rem] font-bold tracking-tight text-brand-deep">Ready to start?</h2>
-          <p className="text-brand-strong">Free to start, no card needed. Everything from 10 NLe, and plans never renew automatically.</p>
-          <div className="flex flex-col items-center justify-center gap-3 pt-2 sm:flex-row">
-            <Link to="/auth" className="inline-flex min-h-12 py-2 w-full items-center justify-center rounded-xl bg-primary px-7 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong sm:w-auto text-center">
-              Create a free account
-            </Link>
-            <a href="/wassce/subjects" className="inline-flex min-h-12 py-2 w-full items-center justify-center rounded-xl border bg-card px-7 font-semibold transition-colors hover:border-primary/40 sm:w-auto text-center">
-              Browse subjects
-            </a>
-          </div>
-        </div>
+      <section className="about-final-cta">
+        <p className="about-eyebrow">YOUR NEXT STEP STARTS HERE</p>
+        <h2>Make your preparation<br /><em>count.</em></h2>
+        <p>Free to start, no card needed. Everything from 10 NLe, and plans never renew automatically.</p>
+        <div><Link to="/auth">Create a free account <span aria-hidden>↗</span></Link><a href="/wassce/subjects">Browse subjects</a></div>
       </section>
-    </div>
+    </article>
   )
 }
