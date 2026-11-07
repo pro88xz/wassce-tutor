@@ -30,7 +30,7 @@ function SubjectsPage() {
         : undefined
 
   return (
-    <div className="mx-auto max-w-3xl space-y-6">
+    <div className="app-page mx-auto w-full max-w-6xl space-y-6">
       <PageHeader
         title="Subjects"
         subtitle={subtitle}
