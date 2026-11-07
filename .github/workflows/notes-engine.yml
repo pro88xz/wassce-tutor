@@ -7,6 +7,8 @@ on:
       - 'content/notes/**'
       - 'content/sources/**'
       - 'scripts/notes-ingestion.mjs'
+      - 'api/notes-engine/**'
+      - 'vercel.json'
       - 'scripts/source-acquisition.mjs'
       - 'scripts/notes-ingestion.test.mjs'
       - 'package.json'
@@ -45,6 +47,8 @@ jobs:
       - run: npm run notes:validate
       - run: npm run notes:test
       - run: npm run notes:build
+      - name: Check autonomous engine serverless function syntax
+        run: node --check api/notes-engine/run.js
       - name: Verify live Supabase curriculum mapping
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
