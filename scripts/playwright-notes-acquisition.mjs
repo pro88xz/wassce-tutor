@@ -109,11 +109,12 @@ async function searchResults(browser, subject, topic) {
           if (approved) { found.add(approved); accepted++ }
         }
         const key = provider.name
-        diagnostics[key] ||= { attempts: 0, rawLinks: 0, approvedLinks: 0, errors: 0, lastTitle: '' }
+        diagnostics[key] ||= { attempts: 0, rawLinks: 0, approvedLinks: 0, errors: 0, lastTitle: '', samples: [] }
         diagnostics[key].attempts++
         diagnostics[key].rawLinks += raw
         diagnostics[key].approvedLinks += accepted
         diagnostics[key].lastTitle = result.title
+        diagnostics[key].samples = result.selected.slice(0, 6).map(item => ({ href: item.href.slice(0, 260), text: item.text.slice(0, 100) }))
       } catch (error) {
         diagnostics[provider.name] ||= { attempts: 0, rawLinks: 0, approvedLinks: 0, errors: 0, lastTitle: '' }
         diagnostics[provider.name].attempts++
