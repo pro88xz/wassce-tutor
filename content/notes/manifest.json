@@ -689,6 +689,84 @@
       "est_minutes": 13,
       "sort_order": 2,
       "auto_sync": true
+    },
+    {
+      "file": "biology-respiratory-gas-exchange-1.md",
+      "subject": "Biology",
+      "topic": "respiratory-systems-and-gas-exchange",
+      "title": "Gas exchange: principles, plants and simple organisms",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 13,
+      "sort_order": 1,
+      "auto_sync": true
+    },
+    {
+      "file": "biology-respiratory-gas-exchange-2.md",
+      "subject": "Biology",
+      "topic": "respiratory-systems-and-gas-exchange",
+      "title": "Gas exchange in fish, insects and mammals",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 15,
+      "sort_order": 2,
+      "auto_sync": true
+    },
+    {
+      "file": "biology-cellular-respiration-1.md",
+      "subject": "Biology",
+      "topic": "cellular-respiration",
+      "title": "Aerobic respiration, ATP and energy transfer",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 14,
+      "sort_order": 1,
+      "auto_sync": true
+    },
+    {
+      "file": "biology-cellular-respiration-2.md",
+      "subject": "Biology",
+      "topic": "cellular-respiration",
+      "title": "Anaerobic respiration, oxygen debt and fermentation",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 14,
+      "sort_order": 2,
+      "auto_sync": true
+    },
+    {
+      "file": "biology-excretion-plants-animals-1.md",
+      "subject": "Biology",
+      "topic": "excretion-in-plants-and-animals",
+      "title": "Metabolic waste products and excretion in plants and animals",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 13,
+      "sort_order": 1,
+      "auto_sync": true
+    },
+    {
+      "file": "biology-excretion-plants-animals-2.md",
+      "subject": "Biology",
+      "topic": "excretion-in-plants-and-animals",
+      "title": "Nitrogenous wastes, osmoregulation and homeostasis",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 14,
+      "sort_order": 2,
+      "auto_sync": true
     }
   ]
 }
