@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/notes-acquisition.yml'
+      - 'scripts/playwright-notes-acquisition.mjs'
   schedule:
     - cron: '0 3 * * *'
   workflow_dispatch:
