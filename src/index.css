@@ -1631,3 +1631,67 @@ a.subject-directory-card:hover .subject-directory-action span { transform: trans
   .tutor-subject-card,.tutor-faq-plus,.guide-primary-link,.about-hero-actions a { transition:none; }
   .tutor-subject-card:hover { transform:none; }
 }
+
+
+/* Student workspace visual system — shared across the live route families. */
+.app-page {
+  --page-card-shadow: 0 16px 42px -34px color-mix(in srgb,var(--foreground) 30%,transparent);
+  width:100%;
+  max-width: min(100%, 76rem);
+  margin-inline:auto;
+  padding-bottom:clamp(1.5rem,4vw,3rem);
+}
+.app-page-reader { max-width:min(100%,58rem); }
+.app-page h1 {
+  letter-spacing:-.055em;
+  text-wrap:balance;
+}
+.app-page h2 { letter-spacing:-.035em; text-wrap:balance; }
+.app-page > header,
+.app-page > [data-page-header] {
+  margin-bottom:clamp(.4rem,1.5vw,1.1rem);
+}
+.app-page :where(.rounded-2xl.border.bg-card,.rounded-2xl.border.bg-card\/60,.rounded-2xl.border.bg-card\/80) {
+  box-shadow:var(--page-card-shadow);
+}
+.app-page :where(section > .divide-y.rounded-2xl.border.bg-card,section > ul.divide-y.rounded-2xl.border.bg-card) {
+  overflow:hidden;
+  box-shadow:var(--page-card-shadow);
+}
+.app-page :where(a,button) {
+  -webkit-tap-highlight-color:transparent;
+}
+.app-page :where(a.flex.min-h-14,a.flex.min-h-16,button.flex.min-h-16) {
+  transition:background-color .18s ease,border-color .18s ease,color .18s ease;
+}
+.app-page :where(input,textarea,select) {
+  min-height:2.9rem;
+  border-radius:.85rem;
+}
+.app-page :where(.prose) { max-width: none; }
+.app-page-reader > article.prose {
+  padding:clamp(1.1rem,3vw,2.25rem);
+  border:1px solid var(--border);
+  border-radius:1.35rem;
+  background:var(--card);
+  box-shadow:var(--page-card-shadow);
+}
+.app-page-reader > header {
+  padding:clamp(1.1rem,3vw,1.8rem);
+  border:1px solid color-mix(in srgb,var(--primary) 15%,var(--border));
+  border-radius:1.25rem;
+  background:linear-gradient(125deg,color-mix(in srgb,var(--brand-soft) 38%,var(--card)),var(--card) 72%);
+}
+.app-page-reader > header h1 { font-size:clamp(1.9rem,4.2vw,3rem); line-height:1.08; }
+@media (min-width: 900px) {
+  .app-page { padding-inline:clamp(0rem,1vw,.75rem); }
+  .app-page :where(section) { scroll-margin-top:6rem; }
+}
+@media (max-width: 640px) {
+  .app-page { gap:1.25rem; }
+  .app-page-reader > article.prose { padding:1rem; border-radius:1rem; }
+  .app-page-reader > header { padding:1rem; border-radius:1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .app-page :where(a,button) { transition:none; }
+}
