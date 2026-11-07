@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/notes-acquisition.yml'
       - 'scripts/playwright-notes-acquisition.mjs'
+      - 'api/notes-engine/ingest.js'
   schedule:
     - cron: '0 3 * * *'
   workflow_dispatch:
