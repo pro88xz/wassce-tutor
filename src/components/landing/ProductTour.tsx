@@ -209,7 +209,7 @@ const STEPS: {
 function Showcase({ step }: { step: (typeof STEPS)[number] }) {
   const chip = 'absolute z-10 inline-flex items-center gap-1.5 rounded-full border bg-card px-3 py-2 text-[13px] font-semibold shadow-lg'
   return (
-    <div className={`relative overflow-hidden rounded-[1.75rem] bg-gradient-to-br ${step.stage} px-5 py-10 sm:px-10 sm:py-12`}>
+    <div className={`product-tour-stage relative overflow-hidden rounded-[1.75rem] bg-gradient-to-br ${step.stage} px-5 py-10 sm:px-10 sm:py-12`}>
       <div aria-hidden className="pointer-events-none absolute inset-0 bg-[radial-gradient(rgba(40,20,95,0.09)_1px,transparent_1.2px)] [background-size:18px_18px]" />
       <div aria-hidden className={`pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full opacity-15 ${step.accent}`} />
       <div className="relative mx-auto w-full max-w-[19rem]">
@@ -250,7 +250,7 @@ export function ProductTour() {
   const [active, setActive] = useState(0)
   const step = STEPS[active]
   return (
-    <section className="space-y-8" aria-labelledby="tour-heading">
+    <section className="product-tour-section space-y-8" aria-labelledby="tour-heading">
       <div className="mx-auto max-w-2xl space-y-2 text-center">
         <p className="text-sm font-semibold text-primary">How it works</p>
         <h2 id="tour-heading" className="text-[1.75rem] font-bold leading-tight tracking-tight text-balance sm:text-3xl">Learn, practise, ask, track</h2>
