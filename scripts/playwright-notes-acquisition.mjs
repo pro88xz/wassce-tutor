@@ -66,7 +66,7 @@ function unwrapSearchHref(href) {
       const encoded = url.searchParams.get('u')
       if (encoded) {
         const decoded = Buffer.from(encoded.replace(/^a1/, ''), 'base64').toString('utf8')
-        if (/^https?:\\/\\//i.test(decoded)) url = new URL(decoded)
+        if (decoded.startsWith('http://') || decoded.startsWith('https://')) url = new URL(decoded)
       }
     }
     return url.href
