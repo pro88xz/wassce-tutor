@@ -178,7 +178,7 @@ function buildLesson(topic, sources) {
     '## Topic overview', '',
     'This study resource is mapped to ' + topic.subject.name + ' — ' + topic.name + '. Read the cited explanations carefully and use the source headings to organise revision. Source material is reproduced under the stated open licence; attribution and licence evidence are retained below.', '',
     ...sections, '',
-    '## WASSCE examination practice', '',
+    '## WASSCE examination focus', '',
     'After studying the source material, practise writing precise definitions, explaining each stage of a process in sequence, comparing related concepts, and supporting answers with relevant examples. For numerical or diagram-based content, work directly from the equations, worked examples and labelled figures in the cited source. Do not assume a source covers a syllabus subtopic unless it is present in the material above.', '',
     '## Sources and reuse licences', '',
     ...sources.map(source => '- [' + source.title + '](' + source.url + ') — ' + source.licence + '; licence evidence: ' + source.licence_evidence + '.'),
