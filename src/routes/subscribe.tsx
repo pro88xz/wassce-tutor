@@ -8,7 +8,7 @@ import { supabase } from '@/lib/supabase'
 import { useAccess } from '@/lib/useAccess'
 import { CONTACT, whatsappChatLink } from '@/lib/contact'
 import { FREE_FEATURES, ONLINE_CHECKOUT, PAID_FEATURES, PLANS, planById, type PlanId } from '@/lib/plans'
-import { confirmPayment, forgetCheckout, pendingCheckout, rememberCheckout, startCheckout, type PaymentStatus } from '@/lib/payments'
+import { confirmPayment, forgetCheckout, pendingCheckout, rememberCheckout, startUssdPayment, type PaymentStatus } from '@/lib/payments'
 import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
 
 type Search = { plan?: PlanId; payment?: string; cancelled?: boolean }
@@ -65,7 +65,7 @@ function SignedOut({ returning }: { returning: boolean }) {
 
 type View =
   | { kind: 'choose' }
-  | { kind: 'confirming'; paymentId: string; plan?: PlanId; status: PaymentStatus; slow: boolean }
+  | { kind: 'confirming'; paymentId: string; plan?: PlanId; status: PaymentStatus; slow: boolean; ussdCode?: string }
   | { kind: 'done'; plan?: PlanId }
   | { kind: 'cancelled' }
   | { kind: 'whatsapp'; plan: PlanId; reference: string }
@@ -81,7 +81,7 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
     if (search.cancelled) return { kind: 'cancelled' }
     const pending = pendingCheckout(userId)
     const paymentId = search.payment ?? pending?.paymentId
-    return paymentId ? { kind: 'confirming', paymentId, plan: pending?.plan, status: 'pending', slow: false } : { kind: 'choose' }
+    return paymentId ? { kind: 'confirming', paymentId, plan: pending?.plan, status: 'pending', slow: false, ussdCode: pending?.ussdCode } : { kind: 'choose' }
   })
 
   useEffect(() => {
@@ -145,10 +145,11 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
     if (!ONLINE_CHECKOUT) return payOnWhatsApp()
     setBusy(true)
     setError(null)
-    const result = await startCheckout(selected)
-    if (result.kind === 'redirect') {
-      rememberCheckout(userId, { paymentId: result.paymentId, plan: selected, startedAt: Date.now() })
-      window.location.href = result.url
+    const result = await startUssdPayment(selected)
+    if (result.kind === 'ussd') {
+      rememberCheckout(userId, { paymentId: result.paymentId, plan: selected, startedAt: Date.now(), ussdCode: result.ussdCode })
+      setView({ kind: 'confirming', paymentId: result.paymentId, plan: selected, status: 'pending', slow: false, ussdCode: result.ussdCode })
+      window.location.href = `tel:${encodeURIComponent(result.ussdCode)}`
       return
     }
     if (result.kind === 'whatsapp') {
@@ -183,10 +184,18 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
         <h1 className="text-2xl font-bold tracking-tight" role="status">Confirming your payment…</h1>
         <p className="text-muted-foreground">
           {view.slow
-            ? 'This is taking longer than usual. If you paid, your plan switches on by itself as soon as the payment is confirmed. You can leave this page.'
-            : 'This usually takes a few seconds after you approve the payment on your phone.'}
+            ? 'This is taking longer than usual. If you paid, your plan switches on automatically once Monime confirms it. You can leave this page.'
+            : 'Complete the Monime payment in the phone dialler. Your plan activates automatically after Monime confirms the payment.'}
         </p>
         <div className="space-y-2">
+          {view.ussdCode && (
+            <div className="space-y-2 rounded-2xl border bg-card p-4 text-left">
+              <p className="text-sm font-semibold">Your one-time USSD payment code</p>
+              <p className="font-mono text-lg font-bold tracking-wide text-foreground">{view.ussdCode}</p>
+              <button type="button" onClick={() => { window.location.href = `tel:${encodeURIComponent(view.ussdCode!)}` }} className="flex min-h-11 w-full items-center justify-center rounded-xl bg-primary px-4 font-semibold text-primary-foreground">Open mobile money dialler</button>
+              <p className="text-xs text-muted-foreground">This code is unique to this order, expires after 10 minutes and charges only the selected plan amount. Do not share it.</p>
+            </div>
+          )}
           <button type="button" onClick={() => void check()} className="flex min-h-12 w-full items-center justify-center rounded-xl border bg-card px-5 py-2 font-semibold hover:border-primary/40">
             Check again
           </button>
@@ -269,10 +278,10 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
             className="flex min-h-14 w-full items-center justify-center gap-2 rounded-2xl bg-primary px-5 py-3 text-lg font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition-colors hover:bg-brand-strong disabled:opacity-60"
           >
             {busy ? <Loader2 className="h-5 w-5 animate-spin motion-reduce:animate-none" aria-hidden /> : <Lock className="h-5 w-5" aria-hidden />}
-            {busy ? 'Opening the payment page…' : `Pay ${plan.priceNle} NLe`}
+            {busy ? 'Preparing secure USSD payment…' : `Pay ${plan.priceNle} NLe`}
           </button>
           <p className="flex items-center justify-center gap-1.5 text-center text-sm text-muted-foreground">
-            <ShieldCheck className="h-4 w-4 shrink-0 text-success" aria-hidden /> Secure checkout by Monime: Orange Money, AfriMoney and more
+            <ShieldCheck className="h-4 w-4 shrink-0 text-success" aria-hidden /> Fixed-price, one-time Monime USSD payment. Your plan activates after confirmation.
           </p>
         </div>
       ) : (
