@@ -2,7 +2,7 @@
 import { chromium } from 'playwright'
 
 const PAGE_SIZE = 500
-const MAX_TOPICS_PER_RUN = Number(process.env.TOPIC_LIMIT || 3)
+const MAX_TOPICS_PER_RUN = Math.max(1, Math.min(3, Number(process.env.TOPIC_LIMIT || 3) || 3))
 const MAX_SOURCES_PER_TOPIC = 2
 const MAX_CONTENT_WORDS = 7000
 const INGEST_URL = process.env.NOTES_INGEST_URL || 'https://wasscetutor.com/api/notes-engine/ingest'
@@ -26,49 +26,28 @@ const safeUrl = (value) => {
   } catch { return null }
 }
 
-async function restRows(base, key, table, select) {
-  const rows = []
-  for (let offset = 0; ; offset += PAGE_SIZE) {
-    const url = new URL('/rest/v1/' + table, base)
-    url.searchParams.set('select', select)
-    url.searchParams.set('order', 'id')
-    const res = await fetch(url, {
-      headers: { apikey: key, Authorization: 'Bearer ' + key, Range: offset + '-' + (offset + PAGE_SIZE - 1), 'Range-Unit': 'items' },
-      signal: AbortSignal.timeout(20000),
-    })
-    if (!res.ok) throw new Error('Supabase ' + table + ' read failed (' + res.status + '): ' + (await res.text()).slice(0, 300))
-    const batch = await res.json()
-    rows.push(...batch)
-    if (batch.length < PAGE_SIZE) return rows
-  }
-}
-
-async function curriculum() {
-  const base = process.env.SUPABASE_URL
-  const key = process.env.SUPABASE_ANON_KEY
-  if (!base || !key) throw new Error('SUPABASE_URL and SUPABASE_ANON_KEY are required for read-only curriculum discovery.')
-  const [subjects, topics, lessons] = await Promise.all([
-    restRows(base, key, 'subjects', 'id,name,slug'),
-    restRows(base, key, 'topics', 'id,subject_id,slug,name,description,sort_order'),
-    restRows(base, key, 'lessons', 'id,topic_id'),
-  ])
-  const byId = new Map(subjects.map(s => [s.id, s]))
-  const counts = new Map()
-  for (const l of lessons) counts.set(l.topic_id, (counts.get(l.topic_id) || 0) + 1)
-  return topics.filter(t => !counts.has(t.id) || counts.get(t.id) === 0)
-    .map(t => ({ ...t, subject: byId.get(t.subject_id) }))
-    .filter(t => t.subject)
-    .sort((a,b) => a.subject.name.localeCompare(b.subject.name) || (a.sort_order ?? 0) - (b.sort_order ?? 0))
+async function curriculumGaps() {
+  const secret = process.env.CRON_SECRET
+  if (!secret) throw new Error('CRON_SECRET is required to read the protected live curriculum catalogue.')
+  const endpoint = process.env.NOTES_CATALOG_URL || 'https://wasscetutor.com/api/notes-engine/catalog'
+  const response = await fetch(endpoint, {
+    headers: { Authorization: 'Bearer ' + secret },
+    signal: AbortSignal.timeout(25000),
+  })
+  const data = await response.json().catch(() => ({}))
+  if (!response.ok || !data.ok) throw new Error('Live Supabase catalogue request failed (' + response.status + '): ' + JSON.stringify(data).slice(0, 800))
+  console.log('Live curriculum: ' + data.subjects + ' subjects, ' + data.topics + ' topics, ' + data.lessons + ' lessons; ' + data.topics_without_lessons + ' gaps.')
+  return data.gaps || []
 }
 
 async function searchResults(page, subject, topic) {
-  const query = encodeURIComponent('"' + topic.name + '" ' + subject.name + ' textbook open textbook')
+  const query = encodeURIComponent('"' + topic.name + '" ' + subject.name + ' (site:openstax.org OR site:en.wikibooks.org OR site:siyavula.com)')
   const searchUrl = 'https://www.google.com/search?q=' + query
   await page.goto(searchUrl, { waitUntil: 'domcontentloaded', timeout: 25000 })
   await page.waitForTimeout(1200)
   const links = await page.locator('a[href]').evaluateAll(els => els.map(a => a.href))
   const seen = new Set()
-  return links.map(safeUrl).filter(url => {
+  return links.map(href => {\n    try { const u = new URL(href); if (u.hostname === 'www.google.com' && u.pathname === '/url') return u.searchParams.get('q') || u.searchParams.get('url'); } catch {}\n    return href;\n  }).map(safeUrl).filter(url => {
     if (!url || seen.has(url)) return false
     seen.add(url)
     return true
@@ -161,7 +140,7 @@ function buildLesson(topic, sources) {
 }
 
 async function main() {
-  const gaps = await curriculum()
+  const gaps = await curriculumGaps()
   if (!gaps.length) {
     console.log(JSON.stringify({ ok: true, message: 'No topics currently have zero lesson records.', created: 0 }))
     return
