@@ -25,7 +25,8 @@ const wordCount = value => (String(value).match(/[\p{L}\p{N}][\p{L}\p{N}'’-]*/
 const allowedUrl = value => {
   try {
     const url = new URL(value)
-    const host = url.hostname.toLowerCase()\n    const approved = HOSTS.has(host) || host === 'libretexts.org' || host.endsWith('.libretexts.org')\n    return url.protocol === 'https:' && approved ? url.href : null
+    const host = url.hostname.toLowerCase()
+    const approved = HOSTS.has(host) || host === 'libretexts.org' || host.endsWith('.libretexts.org')\n    return url.protocol === 'https:' && approved ? url.href : null
   } catch { return null }
 }
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
