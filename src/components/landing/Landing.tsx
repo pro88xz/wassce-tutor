@@ -113,56 +113,91 @@ function SectionTitle({ eyebrow, title, body }: { eyebrow: string; title: string
  * colour keeps the link to the subject.
  */
 function PopularTopics({ data }: { data: LandingData }) {
+  const [featured, ...topics] = data.popular
+  if (!featured) return null
+
+  const renderImage = (subjectSlug: string, topicSlug: string, subjectName: string, compact = false) => {
+    const photo = topicPhoto(subjectSlug, topicSlug)
+    return photo ? (
+      <img
+        src={compact ? photo.small : photo.src}
+        srcSet={compact ? undefined : `${photo.small} 480w, ${photo.src} 960w`}
+        sizes={compact ? '76px' : '(min-width: 768px) 42vw, 100vw'}
+        alt={photo.caption}
+        loading="lazy"
+        decoding="async"
+        width={compact ? 152 : 960}
+        height={compact ? 96 : 600}
+        className={`h-full w-full object-cover ${photo.position ?? ''}`}
+      />
+    ) : (
+      <SubjectCover slug={subjectSlug} shape="wide" rounded="rounded-none" className="h-full w-full" />
+    )
+  }
+
   return (
-    <section className="space-y-5" aria-labelledby="popular-heading">
-      <div className="flex items-end justify-between gap-3">
-        <div className="space-y-1">
-          <p className="text-sm font-semibold text-primary">Jump straight in</p>
-          <h2 id="popular-heading" className="text-[1.75rem] font-bold leading-tight tracking-tight sm:text-3xl">Popular WASSCE topics</h2>
+    <section className="space-y-8 sm:space-y-10" aria-labelledby="popular-heading">
+      <div className="flex flex-col gap-4 border-b pb-5 sm:flex-row sm:items-end sm:justify-between sm:pb-6">
+        <div className="max-w-2xl space-y-2">
+          <p className="text-xs font-bold uppercase tracking-[0.16em] text-primary">Explore the syllabus</p>
+          <h2 id="popular-heading" className="text-3xl font-bold leading-[1.08] tracking-tight text-balance sm:text-4xl">Popular WASSCE topics</h2>
+          <p className="max-w-xl text-[15px] leading-relaxed text-muted-foreground">Go straight to a topic and continue learning, one lesson at a time.</p>
         </div>
-        <a href="/wassce/subjects" className="hidden min-h-11 items-center gap-1 text-sm font-semibold text-primary hover:underline sm:inline-flex">
-          All subjects <ChevronRight className="h-4 w-4" aria-hidden />
+        <a href="/wassce/subjects" className="inline-flex min-h-11 w-fit items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-brand-strong">
+          Explore all subjects <ArrowRight className="h-4 w-4" aria-hidden />
         </a>
       </div>
-      <SwipeRow label="Popular topics" count={data.popular.length} grid="sm:grid-cols-2 lg:grid-cols-4">
-        {data.popular.map((t, i) => {
-          const photo = topicPhoto(t.subjectSlug, t.topicSlug)
-          return (
+
+      <div className="grid gap-5 lg:grid-cols-[1.08fr_0.92fr] lg:gap-7">
+        <a
+          href={topicPath(featured.subjectSlug, featured.topicSlug)}
+          data-reveal
+          className="group relative flex min-h-[25rem] flex-col justify-end overflow-hidden rounded-[1.75rem] bg-slate-950 shadow-[0_24px_60px_-32px_rgba(15,23,42,0.55)] sm:min-h-[31rem]"
+        >
+          <div className="absolute inset-0">
+            {renderImage(featured.subjectSlug, featured.topicSlug, featured.subjectName)}
+          </div>
+          <span aria-hidden className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/45 to-slate-950/0" />
+          <span className="relative z-10 max-w-xl space-y-3 p-6 text-white sm:p-8">
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/25 px-3 py-1.5 text-xs font-semibold text-white/95 backdrop-blur">
+              <span className={`h-2 w-2 rounded-full ${subjectArt(featured.subjectSlug).tone}`} aria-hidden />
+              Featured topic · {featured.subjectName}
+            </span>
+            <span className="block text-2xl font-bold leading-tight tracking-tight text-balance sm:text-3xl">{featured.topicName}</span>
+            <span className="flex items-center justify-between gap-4 text-sm text-white/80">
+              <span>{featured.lessons} lessons available</span>
+              <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-slate-950 transition-transform duration-300 group-hover:translate-x-1">
+                <ArrowRight className="h-5 w-5" aria-hidden />
+              </span>
+            </span>
+          </span>
+        </a>
+
+        <div className="flex flex-col divide-y rounded-[1.5rem] border bg-card px-4 sm:px-5">
+          <div className="flex items-center justify-between py-4">
+            <p className="text-sm font-semibold">More to explore</p>
+            <span className="text-xs text-muted-foreground">{topics.length} topics</span>
+          </div>
+          {topics.map((t, i) => (
             <a
               key={`${t.subjectSlug}/${t.topicSlug}`}
               href={topicPath(t.subjectSlug, t.topicSlug)}
               data-reveal={i % 4}
-              className="group flex w-[76%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border bg-card transition-colors hover:border-primary/40 sm:w-auto"
+              className="group flex min-w-0 items-center gap-4 py-4 transition-colors"
             >
-              <span className="relative block aspect-[16/10] overflow-hidden bg-muted">
-                {photo ? (
-                  <img
-                    src={photo.small}
-                    srcSet={`${photo.small} 480w, ${photo.src} 960w`}
-                    sizes="(min-width: 1024px) 240px, (min-width: 640px) 50vw, 76vw"
-                    alt={photo.caption}
-                    loading="lazy"
-                    decoding="async"
-                    width={480}
-                    height={300}
-                    className={`h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03] ${photo.position ?? ''}`}
-                  />
-                ) : (
-                  <SubjectCover slug={t.subjectSlug} shape="wide" rounded="rounded-none" className="h-full w-full" />
-                )}
-                <span className="absolute left-2.5 top-2.5 inline-flex items-center gap-1.5 rounded-full bg-white/95 px-2.5 py-1 text-xs font-semibold text-slate-900 shadow-sm">
-                  <span className={`h-2 w-2 rounded-full ${subjectArt(t.subjectSlug).tone}`} aria-hidden />
-                  {t.subjectName}
-                </span>
+              <span className="relative h-[4.5rem] w-[4.5rem] shrink-0 overflow-hidden rounded-xl bg-muted ring-1 ring-black/5">
+                {renderImage(t.subjectSlug, t.topicSlug, t.subjectName, true)}
               </span>
-              <span className="flex flex-1 flex-col gap-1 p-4">
-                <span className="text-base font-bold leading-snug">{t.topicName}</span>
-                <span className="mt-auto pt-1 text-[13px] text-muted-foreground">{t.lessons} lessons</span>
+              <span className="min-w-0 flex-1 space-y-1">
+                <span className="block text-[11px] font-semibold uppercase tracking-wide text-primary">{t.subjectName}</span>
+                <span className="block text-[15px] font-bold leading-snug text-foreground transition-colors group-hover:text-primary">{t.topicName}</span>
+                <span className="block text-xs text-muted-foreground">{t.lessons} {t.lessons === 1 ? 'lesson' : 'lessons'}</span>
               </span>
+              <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-primary" aria-hidden />
             </a>
-          )
-        })}
-      </SwipeRow>
+          ))}
+        </div>
+      </div>
     </section>
   )
 }
