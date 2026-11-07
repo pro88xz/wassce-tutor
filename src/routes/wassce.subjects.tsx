@@ -32,18 +32,25 @@ function SubjectsIndexPage() {
   const topics = subjects.reduce((n, s) => n + s.topicCount, 0)
   const lessons = subjects.reduce((n, s) => n + s.lessonCount, 0)
   return (
-    <article className="mx-auto max-w-3xl space-y-10 pb-12">
-      <header className="space-y-3 pt-2">
+    <article className="mx-auto w-full max-w-6xl space-y-9 px-1 pb-16 sm:space-y-12">
+      <header className="subject-index-hero">
         <Breadcrumbs trail={TRAIL} />
-        <h1 className="text-4xl font-bold tracking-tight">WASSCE subjects</h1>
-        <p className="text-lg text-muted-foreground">
-          Every WASSCE subject on WASSCE Tutor, grouped by faculty. English Language and Mathematics are core
-          subjects for every candidate; the rest depend on whether you&rsquo;re in Science, Arts, Commercial or
-          Technical.
-        </p>
-        <p className="text-sm text-muted-foreground">
-          {subjects.length} subjects · {topics} syllabus topics · {lessons} lessons
-        </p>
+        <div className="subject-index-hero-content">
+          <div className="max-w-3xl">
+            <span className="subject-index-eyebrow">YOUR WASSCE, ORGANISED</span>
+            <h1>Find your <span>subjects.</span><br className="hidden sm:block" />Build your path.</h1>
+            <p>Explore the Sierra Leone WASSCE curriculum by faculty. Start with your core subjects, then find the subjects that match your programme.</p>
+          </div>
+          <div className="subject-index-stats" aria-label="Curriculum overview">
+            <div><strong>{subjects.length}</strong><span>subjects</span></div>
+            <div><strong>{topics}</strong><span>syllabus topics</span></div>
+            <div><strong>{lessons}</strong><span>published lessons</span></div>
+          </div>
+        </div>
+        <div className="subject-index-core-note">
+          <span className="subject-index-core-mark">01</span>
+          <span><strong>Start with your core subjects</strong><small>English Language and Mathematics are taken by every WASSCE candidate.</small></span>
+        </div>
       </header>
 
       <section className="space-y-4" aria-label="Subjects by faculty">
