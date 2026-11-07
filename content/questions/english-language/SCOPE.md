@@ -35,9 +35,23 @@ Figures of Speech, Word Formation, Vocabulary in Context (five each). With
 sets 1 to 3, every grammar and vocabulary topic in the syllabus list has a
 practice set: 135 questions in 27 topics.
 
-Next: oral English (vowels, consonants, word and sentence stress) in the
-WAEC test-of-orals format, then comprehension and summary practice, which
-need passages rather than single sentences.
+## Set 4: comprehension and summary, 18 questions on 3 passages
+
+Three original passages (a village rebuilding its footbridge; a grandfather's
+letter about reading; advice on revision), six questions each:
+
+- *Answering Comprehension Questions*: facts, inferences, meaning in context
+  and the grammatical name of an expression.
+- *Tone and Attitude in Comprehension*: tone, attitude, purpose and mood.
+- *Summary Writing*: main points, the main idea, and what to leave out.
+
+On WASSCE Paper 2 these are written answers. The objective versions here
+practise the same reading skills; every answer is backed by a sentence in its
+passage. A set with a passage has `paper_type` *Comprehension*, and the
+practice screen shows the passage above the questions.
+
+Next: more passages (narrative, argumentative, a report), then oral English
+(vowels, consonants, word and sentence stress) in the test-of-orals format.
 
 ## House rules
 

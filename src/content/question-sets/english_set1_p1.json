@@ -854,7 +854,7 @@
      "key": "eng-voice-02",
      "stem": "Which option is the correct passive form of this sentence?\n\n*The teacher marked the scripts.*",
      "image_url": null,
-     "explanation": "To make the passive, the object (*the scripts*) becomes the subject, the verb becomes *be* in the same tense + past participle (*were marked*), and the doer follows *by*.\n\n**Why the other options are wrong**\n\n- The scripts was marked by the teacher.: *Scripts* is plural, so the verb is *were*, not *was*.\n- The scripts are marked by the teacher.: The active sentence is in the past (*marked*), so the passive must be past too.\n- The teacher was marked by the scripts.: The teacher did the marking, so the teacher stays as the doer (*by the teacher*).",
+     "explanation": "To make the passive, the object (*the scripts*) becomes the subject, the verb becomes *be* in the same tense + past participle (*were marked*), and the doer follows *by*.\n\n**Why the other options are wrong**\n\n- The scripts was marked by the teacher.  \n  *Scripts* is plural, so the verb is *were*, not *was*.\n- The scripts are marked by the teacher.  \n  The active sentence is in the past (*marked*), so the passive must be past too.\n- The teacher was marked by the scripts.  \n  The teacher did the marking, so the teacher stays as the doer (*by the teacher*).",
      "position": 2,
      "options": [
       {
@@ -1092,7 +1092,7 @@
      "key": "eng-nonfin-03",
      "stem": "Which sentence is correctly written?",
      "image_url": null,
-     "explanation": "A participle phrase at the start of a sentence must describe the subject that follows it. *Walking to school, I saw…* is correct because *I* was walking.\n\n**Why the other options are wrong**\n\n- Walking to school, a snake was seen on the path.: This says the snake was walking to school: the participle has no correct subject (a dangling participle).\n- Walked to school, I saw a snake on the path.: The participle for an action in progress is *walking*, not *walked*.\n- To walking to school, I saw a snake on the path.: *To* does not go with an -ing form here.",
+     "explanation": "A participle phrase at the start of a sentence must describe the subject that follows it. *Walking to school, I saw…* is correct because *I* was walking.\n\n**Why the other options are wrong**\n\n- Walking to school, a snake was seen on the path.  \n  This says the snake was walking to school: the participle has no correct subject (a dangling participle).\n- Walked to school, I saw a snake on the path.  \n  The participle for an action in progress is *walking*, not *walked*.\n- To walking to school, I saw a snake on the path.  \n  *To* does not go with an -ing form here.",
      "position": 3,
      "options": [
       {
@@ -2004,5 +2004,5 @@
    ]
   }
  ],
- "version": "8d4189a4a12d"
+ "version": "813e71f8650e"
 }

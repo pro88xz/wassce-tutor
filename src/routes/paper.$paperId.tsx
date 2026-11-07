@@ -25,12 +25,15 @@ export const Route = createFileRoute('/paper/$paperId')({
   component: PaperPage,
 })
 
-const isPractice = (m: PaperMeta | null | undefined) => !m?.paper_type || m.paper_type.toLowerCase() === 'practice'
+const isPractice = (m: PaperMeta | null | undefined) => !m?.paper_type || ['practice', 'comprehension'].includes(m.paper_type.toLowerCase())
+/** Comprehension and summary sets carry their reading passage in the description. */
+const passageOf = (m: PaperMeta | null | undefined) => (m?.paper_type?.toLowerCase() === 'comprehension' && m.description ? m.description : null)
 
 function PaperPage() {
   const { paperId } = useParams({ from: '/paper/$paperId' })
   const { data: questions, isLoading } = usePaper(paperId)
   const { data: meta } = usePaperMeta(paperId)
+  const passage = passageOf(meta)
   const { data: curriculum } = useCurriculum(meta?.subject ? [meta.subject.id] : null)
   const { palette } = subjectTheme(meta?.subject?.slug)
   const { user } = useAuth()
@@ -220,6 +223,18 @@ function PaperPage() {
           </div>
         )}
 
+        {/* PASSAGE (comprehension and summary sets) */}
+        {passage && (
+          <section id="passage" className="scroll-mt-20 rounded-2xl border bg-card p-5 shadow-sm sm:p-6" aria-labelledby="passage-label">
+            <p id="passage-label" className="mb-3 inline-flex items-center gap-2 text-sm font-semibold text-primary">
+              <BookOpen className="h-4 w-4" aria-hidden /> Read the passage, then answer the questions
+            </p>
+            <div className="prose prose-slate max-w-none text-[16px] leading-relaxed dark:prose-invert prose-headings:tracking-tight prose-h3:mt-0 prose-p:my-3">
+              <MarkdownView content={passage} />
+            </div>
+          </section>
+        )}
+
         {/* QUESTIONS */}
         <ol className="space-y-4">
           {shown.map((q) => {
@@ -230,7 +245,14 @@ function PaperPage() {
             return (
               <li key={q.id} ref={(el) => { refs.current[q.id] = el }} className="scroll-mt-20 rounded-2xl border bg-card p-5">
                 <p className="mb-2 flex items-center justify-between text-xs font-semibold text-muted-foreground">
-                  <span>Question {i + 1} of {total}</span>
+                  <span className="flex items-center gap-3">
+                    Question {i + 1} of {total}
+                    {passage && (
+                      <a href="#passage" className="inline-flex min-h-8 items-center font-semibold text-primary hover:underline">
+                        Back to the passage
+                      </a>
+                    )}
+                  </span>
                   {submitted && (
                     right ? (
                       <span className="inline-flex items-center gap-1 text-success"><CircleCheck className="h-4 w-4" aria-hidden /> Correct</span>

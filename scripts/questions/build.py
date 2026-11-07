@@ -109,6 +109,15 @@ SETS = [
         "sort_from": 120,
         "checked": "editor",
     },
+    {
+        "module": ROOT / "content/questions/english-language/set4_p1.py",
+        "subject_slug": "english-language",
+        "name": "english_set4_p1",
+        "label": "English Language: set 4 (comprehension and summary)",
+        "review": ROOT / "content/questions/english-language/set4_p1.review.md",
+        "sort_from": 130,
+        "checked": "editor",
+    },
 ]
 
 OUT = ROOT / "src/content/question-sets"
@@ -181,7 +190,8 @@ def big_fracs(tex: str) -> str:
 def explanation(q: Q) -> str:
     # The app already shows the correct letter above this text.
     lines = [q.working.strip(), "", "**Why the other options are wrong**", ""]
-    lines += [f"- {w.tex}: {w.why}" for w in q.wrong]
+    # A full-sentence option keeps its own punctuation; its reason goes on the next line (hard break).
+    lines += [f"- {w.tex}  \n  {w.why}" if w.tex.rstrip()[-1:] in ".?!" else f"- {w.tex}: {w.why}" for w in q.wrong]
     return big_fracs("\n".join(lines))
 
 
@@ -197,7 +207,13 @@ def image_url(cfg: dict, q: Q, svgs: dict[str, str]) -> str | None:
     return f"{SITE}/questions/{cfg['subject_slug']}/{q.id}.svg?v={v}"
 
 
-def build_set(cfg: dict, questions: list[Q], ordered: dict, svgs: dict[str, str]) -> dict:
+def passage_markdown(p: dict) -> str:
+    """A reading passage as the app shows it above its questions."""
+    return f"### {p['title']}\n\n{p['text'].strip()}"
+
+
+def build_set(cfg: dict, questions: list[Q], ordered: dict, svgs: dict[str, str], passages: dict | None = None) -> dict:
+    passages = passages or {}
     topics = list(OrderedDict.fromkeys(q.topic for q in questions))
     papers = []
     for i, topic in enumerate(topics):
@@ -206,8 +222,10 @@ def build_set(cfg: dict, questions: list[Q], ordered: dict, svgs: dict[str, str]
             "id": uid(cfg["name"], "paper", topic),
             "topic": topic,
             "title": f"{topic}: practice set 1",
-            "paper_type": "Practice",
-            "description": (
+            # A comprehension set carries its passage in the description; the
+            # practice screen shows it above the questions.
+            "paper_type": "Comprehension" if topic in passages else "Practice",
+            "description": passage_markdown(passages[topic]) if topic in passages else (
                 f"{len(qs)} original WASSCE-style objective questions on {topic.lower()}, each with "
                 + ("an explanation" if cfg.get("checked") == "editor" else "a worked solution")
                 + " and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers."
@@ -240,7 +258,8 @@ def build_set(cfg: dict, questions: list[Q], ordered: dict, svgs: dict[str, str]
     return body
 
 
-def build_review(cfg: dict, questions: list[Q], ordered: dict, scope_note: str, svgs: dict[str, str]) -> str:
+def build_review(cfg: dict, questions: list[Q], ordered: dict, scope_note: str, svgs: dict[str, str], passages: dict | None = None) -> str:
+    passages = passages or {}
     out = [
         f"# Review sheet: {cfg['label']}",
         "",
@@ -267,6 +286,8 @@ def build_review(cfg: dict, questions: list[Q], ordered: dict, scope_note: str, 
         if q.topic != topic:
             topic = q.topic
             out += [f"## {topic}", "", f"_Syllabus: {q.ref}_", ""]
+            if topic in passages:
+                out += ["#" + passage_markdown(passages[topic]), ""]
         out += [f"### {num_}. `{q.id}`", "", q.stem, ""]
         if q.id in svgs:
             rel = Path("../../..") / diagram_path(cfg, q).relative_to(ROOT)
@@ -321,7 +342,8 @@ def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     manifest = []
     for cfg, mod, questions, ordered, svgs in built:
-        body = build_set(cfg, questions, ordered, svgs)
+        passages = getattr(mod, "PASSAGES", {})
+        body = build_set(cfg, questions, ordered, svgs, passages)
         (OUT / f"{cfg['name']}.json").write_text(json.dumps(body, ensure_ascii=False, indent=1) + "\n")
         manifest.append({
             "name": cfg["name"],
@@ -332,7 +354,7 @@ def main() -> int:
             "questions": len(questions),
         })
         scope = (mod.__doc__ or "").strip().splitlines()[0]
-        cfg["review"].write_text(build_review(cfg, questions, ordered, scope, svgs))
+        cfg["review"].write_text(build_review(cfg, questions, ordered, scope, svgs, passages))
         for q in questions:
             if q.id in svgs:
                 diagram_path(cfg, q).parent.mkdir(parents=True, exist_ok=True)

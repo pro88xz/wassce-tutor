@@ -1,0 +1,722 @@
+{
+ "name": "english_set4_p1",
+ "label": "English Language: set 4 (comprehension and summary)",
+ "subject_slug": "english-language",
+ "papers": [
+  {
+   "id": "7c33b484-50ad-52d8-a838-76f2901b1032",
+   "topic": "Answering Comprehension Questions",
+   "title": "Answering Comprehension Questions: practice set 1",
+   "paper_type": "Comprehension",
+   "description": "### The new footbridge\n\nFor as long as anyone in Mafora could remember, the only way to the secondary school on the other side of the river was a narrow bridge of palm logs. Every rainy season the water rose, the logs grew slippery, and parents waited anxiously on the bank until their children came home. Then, one stormy night in August, the river carried the old bridge away completely.\n\nThe next morning, nobody went to school. The older pupils stood at the water's edge, staring at the broken ends of rope where the bridge had been. Some of the younger children were secretly pleased, but Mr Kamara, the Mathematics teacher, was not. \"Your examinations will not wait for the river to fall,\" he told the pupils who gathered round him. \"If we wait for help from outside, we may be waiting until the dry season.\"\n\nThat evening he called a meeting under the cotton tree. The chief listened carefully, the elders argued for a long time, and at last everyone agreed on a plan. The men would cut strong timber from the forest, the women would cook for the workers, and the older pupils, who knew a little about measurement from their lessons, would help Mr Kamara mark out where each post should stand.\n\nThe work was hard and slow. Twice the current swept away a post before it could be fixed, and twice the workers waded back into the cold water to try again. Yet nobody gave up. Even the children who had been glad to miss school carried stones to steady the posts.\n\nAfter three weeks, the new bridge stood high above the water, wider and stronger than the old one. On the morning it opened, the chief walked across first, followed by a long line of pupils in their uniforms. Mr Kamara came last. When someone asked him why he looked so pleased, he smiled. \"Today the whole village has passed an examination,\" he said, \"and nobody failed.\"",
+   "sort_order": 130,
+   "questions": [
+    {
+     "id": "88452800-734d-5f86-a5f5-8e2747f92d41",
+     "key": "eng-comp-01",
+     "stem": "According to the passage, why did nobody go to school on the morning after the storm?",
+     "image_url": null,
+     "explanation": "The first paragraph ends: *the river carried the old bridge away completely*. With no bridge, the pupils could not cross to the school.\n\n**Why the other options are wrong**\n\n- The school had been flooded.  \n  The passage never says the school was flooded; it was the bridge that was lost.\n- Mr Kamara had cancelled lessons.  \n  Mr Kamara wanted the pupils back at school as soon as possible.\n- The chief had closed the school.  \n  The chief is not mentioned until the meeting that evening.",
+     "position": 1,
+     "options": [
+      {
+       "id": "b5a0a409-2542-5e8c-a035-a253e8bf8bb4",
+       "label": "A",
+       "content": "The river had carried the bridge away.",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b0cadb32-d059-54ab-a97d-bd10286ac522",
+       "label": "B",
+       "content": "The school had been flooded.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d1235c04-20bc-50fd-be7c-9f10390e5abe",
+       "label": "C",
+       "content": "Mr Kamara had cancelled lessons.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "828a9cd8-5766-53c3-a23d-cfc3b0a8d705",
+       "label": "D",
+       "content": "The chief had closed the school.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dc9995d6-affd-562f-b054-67459cd5a572",
+     "key": "eng-comp-02",
+     "stem": "Why were some of the younger children *secretly pleased*?",
+     "image_url": null,
+     "explanation": "The fourth paragraph refers back to them as *the children who had been glad to miss school*.\n\n**Why the other options are wrong**\n\n- They wanted a new bridge to be built.  \n  At that point nobody had suggested building a new bridge.\n- They enjoyed playing in the river.  \n  The passage does not mention playing in the river.\n- Their parents had promised them a reward.  \n  No reward is mentioned anywhere in the passage.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d8ddee98-7a82-50e7-9cf9-5220dcfc0fc0",
+       "label": "A",
+       "content": "They wanted a new bridge to be built.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "38b6004a-35be-50b2-829e-5f3acd7713b4",
+       "label": "B",
+       "content": "They were glad to miss school.",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "68394b88-4d51-5219-b9c4-1fa6d172eefb",
+       "label": "C",
+       "content": "They enjoyed playing in the river.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c7ed3b18-0181-52b8-9fcf-b419881a27f8",
+       "label": "D",
+       "content": "Their parents had promised them a reward.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ca03b1d8-e840-5299-ba82-f98936870b87",
+     "key": "eng-comp-03",
+     "stem": "Which word or phrase can best replace *anxiously* as it is used in the first paragraph?",
+     "image_url": null,
+     "explanation": "The parents waited while their children crossed slippery logs over a rising river: *anxiously* means *with worry*.\n\n**Why the other options are wrong**\n\n- with excitement: The parents were afraid for their children on a slippery bridge, not excited.\n- patiently: *Patiently* describes calm waiting; *anxiously* describes worried waiting.\n- angrily: Nothing suggests the parents were angry.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b06864d3-6a39-51c8-aa94-f76179cb0228",
+       "label": "A",
+       "content": "with excitement",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "49648c08-f84f-5561-bfea-46a5115d6ef5",
+       "label": "B",
+       "content": "patiently",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6d548916-4fe5-5cc9-ace6-b97fb284d31a",
+       "label": "C",
+       "content": "with worry",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3439ff93-cbfa-5cf8-9da8-db35a8c74fe4",
+       "label": "D",
+       "content": "angrily",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c62ad52f-f580-5a55-8011-8fcc16bb524b",
+     "key": "eng-comp-04",
+     "stem": "What is the grammatical name of the expression *If we wait for help from outside*, as it is used in the second paragraph?",
+     "image_url": null,
+     "explanation": "The clause begins with *if*, has its own subject and verb, and states the condition on which the main clause (*we may be waiting until the dry season*) depends.\n\n**Why the other options are wrong**\n\n- noun clause: It is not the subject or object of a verb; it sets a condition.\n- adjectival clause: It does not describe a noun.\n- adverbial phrase of time: It has a subject (*we*) and a finite verb (*wait*), so it is a clause, and it states a condition, not a time.",
+     "position": 4,
+     "options": [
+      {
+       "id": "54633a21-8bcd-5b16-8f59-5b992d3166f1",
+       "label": "A",
+       "content": "noun clause",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "41e60982-cf18-561b-ace6-eace9fcbda62",
+       "label": "B",
+       "content": "adjectival clause",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9859c15e-25b6-5d07-a2c5-262687124f72",
+       "label": "C",
+       "content": "adverbial phrase of time",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cffb416f-ae32-5d77-8787-7f319cc99d1e",
+       "label": "D",
+       "content": "adverbial clause of condition",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6fdb1a4d-ed65-59b8-b8d1-1de7b0ebba45",
+     "key": "eng-comp-05",
+     "stem": "What part did the older pupils play in building the bridge?",
+     "image_url": null,
+     "explanation": "The third paragraph says the older pupils *would help Mr Kamara mark out where each post should stand*.\n\n**Why the other options are wrong**\n\n- They cut timber from the forest.  \n  The passage gives that job to the men.\n- They cooked for the workers.  \n  The passage gives that job to the women.\n- They walked across the bridge first.  \n  The chief walked across first, on the morning it opened.",
+     "position": 5,
+     "options": [
+      {
+       "id": "bc379bd2-fc79-5248-a541-18b4f4b66cb3",
+       "label": "A",
+       "content": "They helped to mark out where the posts should stand.",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4f2a2c41-a4f9-5720-a871-70b658039628",
+       "label": "B",
+       "content": "They cut timber from the forest.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "af2ed7d5-4080-5d6c-98ff-41474eeeffdb",
+       "label": "C",
+       "content": "They cooked for the workers.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "55940d58-fb2e-505c-bd4b-fa369ee47e2d",
+       "label": "D",
+       "content": "They walked across the bridge first.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d05c0475-0df7-584e-93d8-b1d6fe70716a",
+     "key": "eng-comp-06",
+     "stem": "What does Mr Kamara mean when he says that *the whole village has passed an examination*?",
+     "image_url": null,
+     "explanation": "He uses *examination* figuratively: rebuilding the bridge was a hard test, and because everyone helped (*nobody failed*), the village passed it.\n\n**Why the other options are wrong**\n\n- Everyone in the village sat an examination.  \n  He is speaking figuratively; nobody sat a written examination.\n- The pupils had passed their Mathematics examination.  \n  No examination results are mentioned.\n- The chief had set the village a test.  \n  The *test* was the lost bridge, not something the chief set.",
+     "position": 6,
+     "options": [
+      {
+       "id": "84c52658-d3c4-562c-946d-1f3b09ec9bf6",
+       "label": "A",
+       "content": "Everyone in the village sat an examination.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0ffec039-c66b-5025-afb2-19d183ff7825",
+       "label": "B",
+       "content": "The village succeeded at a hard test by working together.",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "df84560a-8eb4-5512-b30f-984ca266e0e4",
+       "label": "C",
+       "content": "The pupils had passed their Mathematics examination.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8527039f-3610-528e-ac13-5024693b0c0f",
+       "label": "D",
+       "content": "The chief had set the village a test.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "0929b27e-52d8-558b-8d83-de34030565bb",
+   "topic": "Tone and Attitude in Comprehension",
+   "title": "Tone and Attitude in Comprehension: practice set 1",
+   "paper_type": "Comprehension",
+   "description": "### A letter to my grandchildren\n\nWhen I was your age, a book was a treasure. My father kept his three books in a tin box under his bed, away from the rain and the rats, and I was allowed to read them only after my chores were done. I read them so many times that I could recite whole pages, and I still remember how proud I felt when I finished the longest one.\n\nToday you have more books on one small phone than my whole village had in a lifetime. And what do you do with this wonderful library? You watch other people dance. You send pictures of your lunch to friends who are sitting beside you. Truly, my generation must look very foolish to you: we walked miles to borrow a book that you can now ignore for free.\n\nDo not misunderstand me. I am not angry with the phone, any more than I am angry with the hoe. A hoe in idle hands clears no farm, and a phone in idle hands fills no mind. The fault is not in the tool but in how we choose to use it.\n\nSo I will make you an offer. For every book you finish this holiday, I will buy you a bag of groundnuts from Mama Fatu's stall, and I will listen while you tell me the story. I suspect you will find, as I did, that a good story is sweeter than any groundnut.\n\nI believe in you. The same hands that scroll so quickly can turn pages just as fast, and the same eyes that never tire of videos can learn to love words. Start tonight. The tin box is open.",
+   "sort_order": 131,
+   "questions": [
+    {
+     "id": "406135f9-be9c-5e2e-95d0-139289c746d8",
+     "key": "eng-tone-01",
+     "stem": "What is the writer's tone in the second paragraph?",
+     "image_url": null,
+     "explanation": "He says the opposite of what he means: *my generation must look very foolish to you* really means that wasting a phone full of books is foolish. Saying the opposite to mock is sarcasm.\n\n**Why the other options are wrong**\n\n- admiring: He does not admire how the phones are used; he mocks it.\n- fearful: Nothing in the paragraph shows fear.\n- neutral: Phrases such as *Truly, my generation must look very foolish to you* are far from neutral.",
+     "position": 1,
+     "options": [
+      {
+       "id": "5c246abd-8b96-5218-8c25-2cabf6d8a7f3",
+       "label": "A",
+       "content": "admiring",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cef44bfe-94fb-5ce3-87df-25527e761968",
+       "label": "B",
+       "content": "fearful",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6f522dd4-66cf-58c3-bd78-7f9c5f344f92",
+       "label": "C",
+       "content": "sarcastic",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f3005580-e89e-5539-93bd-beb91fdbfba5",
+       "label": "D",
+       "content": "neutral",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "445cd67e-7448-5b50-abd5-1fc5b7c89e54",
+     "key": "eng-tone-02",
+     "stem": "What is the writer's attitude to the phone itself, in the third paragraph?",
+     "image_url": null,
+     "explanation": "*The fault is not in the tool but in how we choose to use it*: like a hoe, a phone is only as good as the hands that hold it.\n\n**Why the other options are wrong**\n\n- Phones should be banned.  \n  He says *I am not angry with the phone*.\n- Phones are more useful than books.  \n  He does not compare their usefulness; he wants phones used for reading.\n- He is afraid of new technology.  \n  He describes the phone as *this wonderful library*, which is not fear.",
+     "position": 2,
+     "options": [
+      {
+       "id": "3dbc1d01-e2c8-5cee-afe7-efef977e5fed",
+       "label": "A",
+       "content": "Phones should be banned.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8ff5d635-198a-5d8f-b379-3f69d9d771f8",
+       "label": "B",
+       "content": "Phones are more useful than books.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "87ac50ac-f2b2-58f8-b423-05124ac5eb47",
+       "label": "C",
+       "content": "He is afraid of new technology.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ddd2eb2e-fb96-5069-95bb-10b0ce626136",
+       "label": "D",
+       "content": "It is a tool that can be used well or badly.",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1bf26dbf-f446-512e-b307-619ee5a74346",
+     "key": "eng-tone-03",
+     "stem": "What is the writer's main purpose in the passage?",
+     "image_url": null,
+     "explanation": "Everything builds towards reading: the treasured books of his youth, the wasted library on the phone, the groundnut offer, and *Start tonight*.\n\n**Why the other options are wrong**\n\n- to describe life in his village: The village is mentioned only to compare it with today.\n- to persuade them to stop using phones: He blames how phones are used, not the phones, and wants the same hands to *turn pages*.\n- to advertise Mama Fatu's stall: The groundnuts are a reward for reading, not the point of the letter.",
+     "position": 3,
+     "options": [
+      {
+       "id": "9ec8ea2e-95d4-53b9-8ddd-8827366cd78b",
+       "label": "A",
+       "content": "to encourage his grandchildren to read books",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "f39049a6-ee75-58a3-9ef6-3674d6385257",
+       "label": "B",
+       "content": "to describe life in his village",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8bd2124e-de4a-5496-81f0-cb86872d803a",
+       "label": "C",
+       "content": "to persuade them to stop using phones",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "073edc12-a806-5325-9edc-5f090bf0cbb6",
+       "label": "D",
+       "content": "to advertise Mama Fatu's stall",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e116c123-3280-513a-98f2-bee8ebab3524",
+     "key": "eng-tone-04",
+     "stem": "Which word best describes the mood of the final paragraph?",
+     "image_url": null,
+     "explanation": "*I believe in you*, *can learn to love words* and *Start tonight* show confidence that the children will change: the mood is hopeful.\n\n**Why the other options are wrong**\n\n- bitter: The sarcasm of the second paragraph has gone; he says *I believe in you*.\n- sorrowful: Nothing in the paragraph expresses sadness.\n- indifferent: He clearly cares: he urges them to *Start tonight*.",
+     "position": 4,
+     "options": [
+      {
+       "id": "9d389fe7-b278-5428-88d1-21d392651b01",
+       "label": "A",
+       "content": "bitter",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a32f7dcf-5f44-57b2-88b9-6dcd9be257b5",
+       "label": "B",
+       "content": "hopeful",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "25add85e-3275-50ff-a1f9-90fa5e004528",
+       "label": "C",
+       "content": "sorrowful",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8893059e-1771-5cc4-ae74-2f195ad3f199",
+       "label": "D",
+       "content": "indifferent",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "49e6608a-a91b-508d-a5db-b2a5f803e552",
+     "key": "eng-tone-05",
+     "stem": "Why does the writer mention his father's tin box in the first paragraph?",
+     "image_url": null,
+     "explanation": "The paragraph opens *a book was a treasure*; keeping three books safe from rain and rats shows how precious they were.\n\n**Why the other options are wrong**\n\n- to show that his father was rich: Three books in a tin box suggests books were rare, not that his father was rich.\n- to complain about the rats: The rats are a detail; the point is how carefully the books were protected.\n- to explain where he keeps his phone: The box held books, and the writer had no phone as a child.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9a3e6f5e-e13e-5e08-8216-71ff5e259b35",
+       "label": "A",
+       "content": "to show that his father was rich",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "acede8fd-8da4-5f9f-b8f8-4febca89645a",
+       "label": "B",
+       "content": "to complain about the rats",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2d75b1b9-ab8f-54c7-bfea-94e4d76e62fd",
+       "label": "C",
+       "content": "to show how precious books were when he was young",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d656bc14-a46f-5e5a-bdfc-d1b551c7e079",
+       "label": "D",
+       "content": "to explain where he keeps his phone",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "79345abd-8c90-5ad2-84b8-7a30048aeb08",
+     "key": "eng-tone-06",
+     "stem": "What does the writer mean by *The tin box is open*?",
+     "image_url": null,
+     "explanation": "The tin box stands for books and reading. Saying it is *open* invites the grandchildren to begin, just after *Start tonight*.\n\n**Why the other options are wrong**\n\n- The box has been broken by thieves.  \n  Nothing suggests a theft; the sentence follows *Start tonight*.\n- He has lost his father's books.  \n  An open box is an invitation, not a loss.\n- He wants them to put their phones in the box.  \n  He wants the phones used well, not locked away.",
+     "position": 6,
+     "options": [
+      {
+       "id": "3a1a5cdc-25e7-5bd4-9031-a6d8d3ca78e1",
+       "label": "A",
+       "content": "The box has been broken by thieves.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0b365b66-9a98-5d99-a8b5-305af681695b",
+       "label": "B",
+       "content": "He has lost his father's books.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5f59a041-83b0-5986-b74c-a155542f071e",
+       "label": "C",
+       "content": "He wants them to put their phones in the box.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "12d73076-be9b-5726-9033-84b7ae984354",
+       "label": "D",
+       "content": "He is inviting them to start reading.",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "132aaa85-60b9-5431-9ccc-279af4f0ae66",
+   "topic": "Summary Writing",
+   "title": "Summary Writing: practice set 1",
+   "paper_type": "Comprehension",
+   "description": "### Making revision count\n\nMany candidates spend long hours with their books and still feel unprepared on the day of the examination. The problem is usually not how much they revise, but how they do it. A few simple habits can make the same hours far more useful.\n\nFirst, plan your revision instead of reading whatever you happen to pick up. Divide the weeks before the examination among your subjects, and give more time to the topics you find difficult. A candidate who writes a timetable on the back of an exercise book and sticks to it will cover far more than one who revises at random.\n\nSecond, test yourself rather than simply rereading your notes. Reading a page several times makes it feel familiar, but familiarity is not the same as memory. Close the book and write down what you remember, or answer practice questions, then check what you missed. My cousin Ibrahim, who failed Chemistry once, passed it with a credit after he started covering his notes and explaining each topic aloud to his younger sister.\n\nThird, revise in short sessions with breaks. The mind tires, and after a long stretch without rest most people stop taking in new information. A short walk, a glass of water or a few minutes of helping at home will send you back to your desk refreshed.\n\nFinally, look after your body. Candidates who stay up all night before a paper often cannot remember what they know when they need it most. Regular meals and enough sleep are part of revision, not a distraction from it.",
+   "sort_order": 132,
+   "questions": [
+    {
+     "id": "18643412-407f-57bc-b331-5f71931ee445",
+     "key": "eng-sum-01",
+     "stem": "Which of the following is one of the habits the writer recommends?",
+     "image_url": null,
+     "explanation": "The third paragraph begins: *Second, test yourself rather than simply rereading your notes*.\n\n**Why the other options are wrong**\n\n- Revise for as many hours as possible.  \n  The writer says the problem *is usually not how much they revise*.\n- Read each page several times until it feels familiar.  \n  The writer warns that *familiarity is not the same as memory*.\n- Stay up late before each paper.  \n  The writer warns against staying up all night.",
+     "position": 1,
+     "options": [
+      {
+       "id": "3a5623dd-94c8-5a0d-8dec-32dc9f3d94af",
+       "label": "A",
+       "content": "Test yourself instead of only rereading your notes.",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2c0b7f84-81ad-51f4-bbaa-a3eced45e286",
+       "label": "B",
+       "content": "Revise for as many hours as possible.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ded331ef-d63e-5e2b-a736-e71ba4629c12",
+       "label": "C",
+       "content": "Read each page several times until it feels familiar.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "580cdb73-ddb3-5032-903d-640635a83773",
+       "label": "D",
+       "content": "Stay up late before each paper.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c36288f2-4225-58d2-afbe-ed5eb5156e23",
+     "key": "eng-sum-02",
+     "stem": "Which sentence best summarises the second paragraph?",
+     "image_url": null,
+     "explanation": "The paragraph's main point is in its first two sentences: plan your revision, and give more time to difficult topics. The timetable is an illustration.\n\n**Why the other options are wrong**\n\n- Write your timetable on the back of an exercise book.  \n  This is an example of planning, not the main point.\n- Revise whatever you happen to pick up.  \n  The writer advises against this.\n- Give every subject exactly the same amount of time.  \n  The writer says to give *more time to the topics you find difficult*.",
+     "position": 2,
+     "options": [
+      {
+       "id": "aebf1f95-39e9-5866-a3a5-131da7b591d1",
+       "label": "A",
+       "content": "Write your timetable on the back of an exercise book.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "26f8c3a4-8b2c-52b1-8706-3196e7f274c0",
+       "label": "B",
+       "content": "Plan your revision, giving more time to difficult topics.",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d43f3a6d-bf19-58a2-9a6f-9807f4e69bb3",
+       "label": "C",
+       "content": "Revise whatever you happen to pick up.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "14db6c05-8b3c-5e2e-9440-76eb72b70ec1",
+       "label": "D",
+       "content": "Give every subject exactly the same amount of time.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "55c60b00-820d-5371-a3f2-7624f61803d4",
+     "key": "eng-sum-03",
+     "stem": "In a summary of the writer's advice, which of these should be left out because it is an example, not a main point?",
+     "image_url": null,
+     "explanation": "A summary keeps the main points and drops illustrations. Cousin Ibrahim's story only supports the point about testing yourself.\n\n**Why the other options are wrong**\n\n- Revise in short sessions with breaks.  \n  This is the main point of the fourth paragraph.\n- Look after your body by eating well and sleeping enough.  \n  This is the main point of the last paragraph.\n- Plan your revision.  \n  This is the main point of the second paragraph.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8feeedea-8188-5e1c-8c21-e3fb1924e8c8",
+       "label": "A",
+       "content": "Revise in short sessions with breaks.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "95d78030-58b0-5aff-8c0b-ac72796ab5f7",
+       "label": "B",
+       "content": "Look after your body by eating well and sleeping enough.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4c085244-f3b1-5e7a-86d0-274c32c6bc6a",
+       "label": "C",
+       "content": "Ibrahim passed Chemistry after explaining topics aloud to his sister.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "aade9ad6-9c5b-5b86-a738-2290156e1bf1",
+       "label": "D",
+       "content": "Plan your revision.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9e7fcf1f-2f43-5e3b-bac3-731af41be667",
+     "key": "eng-sum-04",
+     "stem": "How many main habits does the writer recommend?",
+     "image_url": null,
+     "explanation": "The habits are signposted: *First* (plan), *Second* (test yourself), *Third* (short sessions with breaks), *Finally* (look after your body).\n\n**Why the other options are wrong**\n\n- two: The writer lists more than two: count *First*, *Second*, *Third* and *Finally*.\n- three: *Finally* introduces a fourth habit.\n- five: The first paragraph only introduces the topic; it is not a habit.",
+     "position": 4,
+     "options": [
+      {
+       "id": "6ad9af7c-9241-516e-802d-6f0398ff5692",
+       "label": "A",
+       "content": "two",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "52076959-ee82-5cf7-bb20-176333ad44b8",
+       "label": "B",
+       "content": "three",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fe392019-7747-5886-8bcb-3a98e0aa2d90",
+       "label": "C",
+       "content": "five",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6a1cf50a-d381-5a3d-98f1-2e10b05d41b5",
+       "label": "D",
+       "content": "four",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b526b190-6c95-5c51-9a36-d6b3ec8ed76c",
+     "key": "eng-sum-05",
+     "stem": "Which sentence best states the main idea of the whole passage?",
+     "image_url": null,
+     "explanation": "The first paragraph states the main idea: *The problem is usually not how much they revise, but how they do it*.\n\n**Why the other options are wrong**\n\n- Candidates should revise for longer hours.  \n  The writer says the problem is *not how much they revise*.\n- Sleep is more important than revision.  \n  The writer calls sleep *part of revision*, not more important than it.\n- Testing yourself is the only way to pass.  \n  Testing yourself is one of four habits, not the only one.",
+     "position": 5,
+     "options": [
+      {
+       "id": "057d5275-9927-5694-b589-b59a1a83e469",
+       "label": "A",
+       "content": "How you revise matters more than how long you revise.",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "977d456f-eaaa-567d-ad65-0d50da48befb",
+       "label": "B",
+       "content": "Candidates should revise for longer hours.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "295a5249-6a18-5c4a-bbe0-38db7aebd317",
+       "label": "C",
+       "content": "Sleep is more important than revision.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bf692627-87be-5542-b03d-a720f587c469",
+       "label": "D",
+       "content": "Testing yourself is the only way to pass.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2e553e0b-e6cb-5b2a-97e8-2f36248b9e91",
+     "key": "eng-sum-06",
+     "stem": "Which of the following is NOT one of the writer's recommendations?",
+     "image_url": null,
+     "explanation": "Study groups are never mentioned. The four recommendations are planning, testing yourself, short sessions with breaks, and looking after your body.\n\n**Why the other options are wrong**\n\n- Plan your revision.  \n  This is the first habit the writer recommends.\n- Take short breaks while revising.  \n  This is the third habit.\n- Eat regular meals and get enough sleep.  \n  This is the last habit.",
+     "position": 6,
+     "options": [
+      {
+       "id": "8a4ff2ae-667d-5b9b-a710-022586c84e2e",
+       "label": "A",
+       "content": "Plan your revision.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "870b4e6e-d167-56a7-9c7d-e1b7f2377859",
+       "label": "B",
+       "content": "Revise with friends in a study group.",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f20c3995-9503-5b09-bf05-32cb95d41f16",
+       "label": "C",
+       "content": "Take short breaks while revising.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3e6a187f-a48f-5cd9-90ee-c2f4a475edf9",
+       "label": "D",
+       "content": "Eat regular meals and get enough sleep.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "5fe0eb40a200"
+}

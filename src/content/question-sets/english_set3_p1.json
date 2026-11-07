@@ -416,7 +416,7 @@
      "key": "eng-punct-01",
      "stem": "Which sentence is correctly punctuated?",
      "image_url": null,
-     "explanation": "*Its* (no apostrophe) shows possession, like *his* and *hers*. *It's* is short for *it is* or *it has*.\n\n**Why the other options are wrong**\n\n- The school has it's own borehole.: *It's* means *it is* or *it has*. The possessive *its* has no apostrophe.\n- The school has its' own borehole.: There is no such form as *its'*.\n- The school has its own, borehole.: No comma is needed between *own* and the noun it describes.",
+     "explanation": "*Its* (no apostrophe) shows possession, like *his* and *hers*. *It's* is short for *it is* or *it has*.\n\n**Why the other options are wrong**\n\n- The school has it's own borehole.  \n  *It's* means *it is* or *it has*. The possessive *its* has no apostrophe.\n- The school has its' own borehole.  \n  There is no such form as *its'*.\n- The school has its own, borehole.  \n  No comma is needed between *own* and the noun it describes.",
      "position": 1,
      "options": [
       {
@@ -454,7 +454,7 @@
      "key": "eng-punct-02",
      "stem": "Which sentence is correctly punctuated?",
      "image_url": null,
-     "explanation": "A colon introduces a list after a complete clause, and commas separate the items: *Bring the following items: a ruler, a pencil and an eraser.*\n\n**Why the other options are wrong**\n\n- Bring the following items; a ruler, a pencil and an eraser.: A semicolon joins two complete clauses. To introduce a list, use a colon.\n- Bring the following items: a ruler a pencil and an eraser.: Items in a list are separated by commas.\n- Bring, the following items: a ruler, a pencil and an eraser.: No comma is needed between the verb *bring* and its object.",
+     "explanation": "A colon introduces a list after a complete clause, and commas separate the items: *Bring the following items: a ruler, a pencil and an eraser.*\n\n**Why the other options are wrong**\n\n- Bring the following items; a ruler, a pencil and an eraser.  \n  A semicolon joins two complete clauses. To introduce a list, use a colon.\n- Bring the following items: a ruler a pencil and an eraser.  \n  Items in a list are separated by commas.\n- Bring, the following items: a ruler, a pencil and an eraser.  \n  No comma is needed between the verb *bring* and its object.",
      "position": 2,
      "options": [
       {
@@ -492,7 +492,7 @@
      "key": "eng-punct-03",
      "stem": "Which sentence is correctly punctuated?",
      "image_url": null,
-     "explanation": "Direct speech goes inside quotation marks, and when the reporting words follow, the spoken words end with a comma inside the closing mark.\n\n**Why the other options are wrong**\n\n- \"We will win the match\" said the captain.: When the spoken words come first, a comma goes inside the closing quotation mark.\n- \"We will win the match.\" said the captain.: A full stop would end the sentence too early. Use a comma before *said*.\n- We will win the match, \"said the captain.\": Only the words actually spoken go inside the quotation marks.",
+     "explanation": "Direct speech goes inside quotation marks, and when the reporting words follow, the spoken words end with a comma inside the closing mark.\n\n**Why the other options are wrong**\n\n- \"We will win the match\" said the captain.  \n  When the spoken words come first, a comma goes inside the closing quotation mark.\n- \"We will win the match.\" said the captain.  \n  A full stop would end the sentence too early. Use a comma before *said*.\n- We will win the match, \"said the captain.\": Only the words actually spoken go inside the quotation marks.",
      "position": 3,
      "options": [
       {
@@ -530,7 +530,7 @@
      "key": "eng-punct-04",
      "stem": "Which sentence is correctly punctuated?",
      "image_url": null,
-     "explanation": "Two closely related complete sentences can be joined with a semicolon: *It was getting late; we decided to go home.* (Or: *It was getting late, so we decided to go home.*)\n\n**Why the other options are wrong**\n\n- It was getting late, we decided to go home.: A comma alone cannot join two complete sentences (a comma splice).\n- It was getting late; and we decided to go home.: Use either a semicolon or a comma with *and*, not a semicolon with *and*.\n- It was getting late we decided to go home.: Two complete sentences run together with no punctuation (a run-on sentence).",
+     "explanation": "Two closely related complete sentences can be joined with a semicolon: *It was getting late; we decided to go home.* (Or: *It was getting late, so we decided to go home.*)\n\n**Why the other options are wrong**\n\n- It was getting late, we decided to go home.  \n  A comma alone cannot join two complete sentences (a comma splice).\n- It was getting late; and we decided to go home.  \n  Use either a semicolon or a comma with *and*, not a semicolon with *and*.\n- It was getting late we decided to go home.  \n  Two complete sentences run together with no punctuation (a run-on sentence).",
      "position": 4,
      "options": [
       {
@@ -568,7 +568,7 @@
      "key": "eng-punct-05",
      "stem": "Which sentence is correctly punctuated?",
      "image_url": null,
-     "explanation": "A reported (indirect) question is not itself a question: it takes statement word order and a full stop.\n\n**Why the other options are wrong**\n\n- She asked me where the library was?: A reported question is a statement, so it ends with a full stop, not a question mark.\n- She asked me, where the library was.: No comma is needed before a reported question.\n- She asked me where was the library?: A reported question uses statement word order (*where the library was*) and a full stop.",
+     "explanation": "A reported (indirect) question is not itself a question: it takes statement word order and a full stop.\n\n**Why the other options are wrong**\n\n- She asked me where the library was?  \n  A reported question is a statement, so it ends with a full stop, not a question mark.\n- She asked me, where the library was.  \n  No comma is needed before a reported question.\n- She asked me where was the library?  \n  A reported question uses statement word order (*where the library was*) and a full stop.",
      "position": 5,
      "options": [
       {
@@ -730,7 +730,7 @@
      "key": "eng-homo-04",
      "stem": "In which sentence does the word *bank* mean the side of a river?",
      "image_url": null,
-     "explanation": "*Bank* is a homonym: one spelling with several meanings. Watching canoes go by puts us at the side of a river.\n\n**Why the other options are wrong**\n\n- My father keeps his savings in the bank.: Here *bank* means a place that keeps money.\n- You can bank on Sahr to help you.: Here *bank on* means to rely on.\n- The pilot had to bank the plane to the left.: Here *bank* means to tilt an aircraft when turning.",
+     "explanation": "*Bank* is a homonym: one spelling with several meanings. Watching canoes go by puts us at the side of a river.\n\n**Why the other options are wrong**\n\n- My father keeps his savings in the bank.  \n  Here *bank* means a place that keeps money.\n- You can bank on Sahr to help you.  \n  Here *bank on* means to rely on.\n- The pilot had to bank the plane to the left.  \n  Here *bank* means to tilt an aircraft when turning.",
      "position": 4,
      "options": [
       {
@@ -1404,5 +1404,5 @@
    ]
   }
  ],
- "version": "c9fc61b58c4e"
+ "version": "72e953b18c1c"
 }

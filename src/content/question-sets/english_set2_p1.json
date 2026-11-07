@@ -254,7 +254,7 @@
      "key": "eng-adv-02",
      "stem": "Which sentence is correctly written?",
      "image_url": null,
-     "explanation": "Adverbs of frequency (*always, usually, often, never*) go after *be* (*she is always late*) but before other main verbs (*she always arrives late*).\n\n**Why the other options are wrong**\n\n- She always is late for assembly.: Adverbs of frequency come **after** the verb *be*, not before it.\n- Always she is late for assembly.: An adverb of frequency does not normally open a sentence like this.\n- She is late always for assembly.: The adverb of frequency comes between *is* and the adjective, not after the adjective.",
+     "explanation": "Adverbs of frequency (*always, usually, often, never*) go after *be* (*she is always late*) but before other main verbs (*she always arrives late*).\n\n**Why the other options are wrong**\n\n- She always is late for assembly.  \n  Adverbs of frequency come **after** the verb *be*, not before it.\n- Always she is late for assembly.  \n  An adverb of frequency does not normally open a sentence like this.\n- She is late always for assembly.  \n  The adverb of frequency comes between *is* and the adjective, not after the adjective.",
      "position": 2,
      "options": [
       {
@@ -1216,7 +1216,7 @@
      "key": "eng-rep-01",
      "stem": "Choose the option that best reports this sentence.\n\nAminata said, \"I am going to the market now.\"",
      "image_url": null,
-     "explanation": "Reporting after a past verb: the pronoun changes (*I* → *she*), the tense moves back (*am going* → *was going*) and time words change (*now* → *then*).\n\n**Why the other options are wrong**\n\n- Aminata said that she is going to the market now.: In reported speech after *said*, the tense moves back (*am* → *was*) and *now* usually becomes *then*.\n- Aminata said that I was going to the market then.: *I* refers to Aminata, so it becomes *she*.\n- Aminata said that she was going to the market now.: *Now* refers to the moment she spoke, so it usually changes to *then*.",
+     "explanation": "Reporting after a past verb: the pronoun changes (*I* → *she*), the tense moves back (*am going* → *was going*) and time words change (*now* → *then*).\n\n**Why the other options are wrong**\n\n- Aminata said that she is going to the market now.  \n  In reported speech after *said*, the tense moves back (*am* → *was*) and *now* usually becomes *then*.\n- Aminata said that I was going to the market then.  \n  *I* refers to Aminata, so it becomes *she*.\n- Aminata said that she was going to the market now.  \n  *Now* refers to the moment she spoke, so it usually changes to *then*.",
      "position": 1,
      "options": [
       {
@@ -1254,7 +1254,7 @@
      "key": "eng-rep-02",
      "stem": "Choose the option that best reports this sentence.\n\nThe teacher asked me, \"Where do you live?\"",
      "image_url": null,
-     "explanation": "In a reported question, keep the question word, use statement word order (*where I lived*), move the tense back and drop the question mark.\n\n**Why the other options are wrong**\n\n- The teacher asked me where did I live.: A reported question uses statement word order, without *did*.\n- The teacher asked me where do I live?: The tense moves back, the word order becomes a statement, and there is no question mark.\n- The teacher asked me that where I lived.: Reported questions with a question word do not use *that*.",
+     "explanation": "In a reported question, keep the question word, use statement word order (*where I lived*), move the tense back and drop the question mark.\n\n**Why the other options are wrong**\n\n- The teacher asked me where did I live.  \n  A reported question uses statement word order, without *did*.\n- The teacher asked me where do I live?  \n  The tense moves back, the word order becomes a statement, and there is no question mark.\n- The teacher asked me that where I lived.  \n  Reported questions with a question word do not use *that*.",
      "position": 2,
      "options": [
       {
@@ -1292,7 +1292,7 @@
      "key": "eng-rep-03",
      "stem": "Choose the option that best reports this sentence.\n\nThe principal said to the boys, \"Stand up.\"",
      "image_url": null,
-     "explanation": "Commands are reported with *tell/order* + person + *to* + base form: *told the boys to stand up*.\n\n**Why the other options are wrong**\n\n- The principal told the boys that stand up.: A reported command uses *to* + base form, not *that*.\n- The principal said the boys to stand up.: *Say* is not followed directly by the person; use *told the boys*.\n- The principal told the boys stood up.: A reported command uses *to* + base form: *to stand up*.",
+     "explanation": "Commands are reported with *tell/order* + person + *to* + base form: *told the boys to stand up*.\n\n**Why the other options are wrong**\n\n- The principal told the boys that stand up.  \n  A reported command uses *to* + base form, not *that*.\n- The principal said the boys to stand up.  \n  *Say* is not followed directly by the person; use *told the boys*.\n- The principal told the boys stood up.  \n  A reported command uses *to* + base form: *to stand up*.",
      "position": 3,
      "options": [
       {
@@ -1330,7 +1330,7 @@
      "key": "eng-rep-04",
      "stem": "Choose the option that best reports this sentence.\n\nHe asked, \"Have you seen my keys?\"",
      "image_url": null,
-     "explanation": "Yes/no questions are reported with *if* or *whether* + statement word order, with the tense moved back.\n\n**Why the other options are wrong**\n\n- He asked if had I seen his keys.: A reported question uses statement word order: *I had seen*, not *had I seen*.\n- He asked that I had seen his keys.: Yes/no questions are reported with *if* or *whether*, not *that*.\n- He asked if I have seen my keys.: The tense moves back (*have seen* → *had seen*) and *my* becomes *his*.",
+     "explanation": "Yes/no questions are reported with *if* or *whether* + statement word order, with the tense moved back.\n\n**Why the other options are wrong**\n\n- He asked if had I seen his keys.  \n  A reported question uses statement word order: *I had seen*, not *had I seen*.\n- He asked that I had seen his keys.  \n  Yes/no questions are reported with *if* or *whether*, not *that*.\n- He asked if I have seen my keys.  \n  The tense moves back (*have seen* → *had seen*) and *my* becomes *his*.",
      "position": 4,
      "options": [
       {
@@ -1368,7 +1368,7 @@
      "key": "eng-rep-05",
      "stem": "Choose the option that best reports this sentence.\n\nShe said, \"I will travel to Bo tomorrow.\"",
      "image_url": null,
-     "explanation": "*Will* moves back to *would*, and time words shift: *tomorrow* → *the next day*, *today* → *that day*, *yesterday* → *the day before*.\n\n**Why the other options are wrong**\n\n- She said that she will travel to Bo tomorrow.: After *said*, *will* usually becomes *would* and *tomorrow* becomes *the next day*.\n- She said that she would travel to Bo yesterday.: *Tomorrow* becomes *the next day* (or *the following day*), not *yesterday*.\n- She said that she would travelled to Bo the next day.: *Would* is followed by the base form, *travel*.",
+     "explanation": "*Will* moves back to *would*, and time words shift: *tomorrow* → *the next day*, *today* → *that day*, *yesterday* → *the day before*.\n\n**Why the other options are wrong**\n\n- She said that she will travel to Bo tomorrow.  \n  After *said*, *will* usually becomes *would* and *tomorrow* becomes *the next day*.\n- She said that she would travel to Bo yesterday.  \n  *Tomorrow* becomes *the next day* (or *the following day*), not *yesterday*.\n- She said that she would travelled to Bo the next day.  \n  *Would* is followed by the base form, *travel*.",
      "position": 5,
      "options": [
       {
@@ -2004,5 +2004,5 @@
    ]
   }
  ],
- "version": "32fb26b47cd1"
+ "version": "d4d3fc189afc"
 }

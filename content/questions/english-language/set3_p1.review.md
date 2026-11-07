@@ -239,9 +239,12 @@ Which sentence is correctly punctuated?
 
 **Why the other options are wrong**
 
-- The school has it's own borehole.: *It's* means *it is* or *it has*. The possessive *its* has no apostrophe.
-- The school has its' own borehole.: There is no such form as *its'*.
-- The school has its own, borehole.: No comma is needed between *own* and the noun it describes.
+- The school has it's own borehole.  
+  *It's* means *it is* or *it has*. The possessive *its* has no apostrophe.
+- The school has its' own borehole.  
+  There is no such form as *its'*.
+- The school has its own, borehole.  
+  No comma is needed between *own* and the noun it describes.
 
 ---
 
@@ -258,9 +261,12 @@ A colon introduces a list after a complete clause, and commas separate the items
 
 **Why the other options are wrong**
 
-- Bring the following items; a ruler, a pencil and an eraser.: A semicolon joins two complete clauses. To introduce a list, use a colon.
-- Bring the following items: a ruler a pencil and an eraser.: Items in a list are separated by commas.
-- Bring, the following items: a ruler, a pencil and an eraser.: No comma is needed between the verb *bring* and its object.
+- Bring the following items; a ruler, a pencil and an eraser.  
+  A semicolon joins two complete clauses. To introduce a list, use a colon.
+- Bring the following items: a ruler a pencil and an eraser.  
+  Items in a list are separated by commas.
+- Bring, the following items: a ruler, a pencil and an eraser.  
+  No comma is needed between the verb *bring* and its object.
 
 ---
 
@@ -277,8 +283,10 @@ Direct speech goes inside quotation marks, and when the reporting words follow, 
 
 **Why the other options are wrong**
 
-- "We will win the match" said the captain.: When the spoken words come first, a comma goes inside the closing quotation mark.
-- "We will win the match." said the captain.: A full stop would end the sentence too early. Use a comma before *said*.
+- "We will win the match" said the captain.  
+  When the spoken words come first, a comma goes inside the closing quotation mark.
+- "We will win the match." said the captain.  
+  A full stop would end the sentence too early. Use a comma before *said*.
 - We will win the match, "said the captain.": Only the words actually spoken go inside the quotation marks.
 
 ---
@@ -296,9 +304,12 @@ Two closely related complete sentences can be joined with a semicolon: *It was g
 
 **Why the other options are wrong**
 
-- It was getting late, we decided to go home.: A comma alone cannot join two complete sentences (a comma splice).
-- It was getting late; and we decided to go home.: Use either a semicolon or a comma with *and*, not a semicolon with *and*.
-- It was getting late we decided to go home.: Two complete sentences run together with no punctuation (a run-on sentence).
+- It was getting late, we decided to go home.  
+  A comma alone cannot join two complete sentences (a comma splice).
+- It was getting late; and we decided to go home.  
+  Use either a semicolon or a comma with *and*, not a semicolon with *and*.
+- It was getting late we decided to go home.  
+  Two complete sentences run together with no punctuation (a run-on sentence).
 
 ---
 
@@ -315,9 +326,12 @@ A reported (indirect) question is not itself a question: it takes statement word
 
 **Why the other options are wrong**
 
-- She asked me where the library was?: A reported question is a statement, so it ends with a full stop, not a question mark.
-- She asked me, where the library was.: No comma is needed before a reported question.
-- She asked me where was the library?: A reported question uses statement word order (*where the library was*) and a full stop.
+- She asked me where the library was?  
+  A reported question is a statement, so it ends with a full stop, not a question mark.
+- She asked me, where the library was.  
+  No comma is needed before a reported question.
+- She asked me where was the library?  
+  A reported question uses statement word order (*where the library was*) and a full stop.
 
 ---
 
@@ -401,9 +415,12 @@ In which sentence does the word *bank* mean the side of a river?
 
 **Why the other options are wrong**
 
-- My father keeps his savings in the bank.: Here *bank* means a place that keeps money.
-- You can bank on Sahr to help you.: Here *bank on* means to rely on.
-- The pilot had to bank the plane to the left.: Here *bank* means to tilt an aircraft when turning.
+- My father keeps his savings in the bank.  
+  Here *bank* means a place that keeps money.
+- You can bank on Sahr to help you.  
+  Here *bank on* means to rely on.
+- The pilot had to bank the plane to the left.  
+  Here *bank* means to tilt an aircraft when turning.
 
 ---
 

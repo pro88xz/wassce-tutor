@@ -155,9 +155,12 @@ Adverbs of frequency (*always, usually, often, never*) go after *be* (*she is al
 
 **Why the other options are wrong**
 
-- She always is late for assembly.: Adverbs of frequency come **after** the verb *be*, not before it.
-- Always she is late for assembly.: An adverb of frequency does not normally open a sentence like this.
-- She is late always for assembly.: The adverb of frequency comes between *is* and the adjective, not after the adjective.
+- She always is late for assembly.  
+  Adverbs of frequency come **after** the verb *be*, not before it.
+- Always she is late for assembly.  
+  An adverb of frequency does not normally open a sentence like this.
+- She is late always for assembly.  
+  The adverb of frequency comes between *is* and the adjective, not after the adjective.
 
 ---
 
@@ -679,9 +682,12 @@ Reporting after a past verb: the pronoun changes (*I* → *she*), the tense move
 
 **Why the other options are wrong**
 
-- Aminata said that she is going to the market now.: In reported speech after *said*, the tense moves back (*am* → *was*) and *now* usually becomes *then*.
-- Aminata said that I was going to the market then.: *I* refers to Aminata, so it becomes *she*.
-- Aminata said that she was going to the market now.: *Now* refers to the moment she spoke, so it usually changes to *then*.
+- Aminata said that she is going to the market now.  
+  In reported speech after *said*, the tense moves back (*am* → *was*) and *now* usually becomes *then*.
+- Aminata said that I was going to the market then.  
+  *I* refers to Aminata, so it becomes *she*.
+- Aminata said that she was going to the market now.  
+  *Now* refers to the moment she spoke, so it usually changes to *then*.
 
 ---
 
@@ -700,9 +706,12 @@ In a reported question, keep the question word, use statement word order (*where
 
 **Why the other options are wrong**
 
-- The teacher asked me where did I live.: A reported question uses statement word order, without *did*.
-- The teacher asked me where do I live?: The tense moves back, the word order becomes a statement, and there is no question mark.
-- The teacher asked me that where I lived.: Reported questions with a question word do not use *that*.
+- The teacher asked me where did I live.  
+  A reported question uses statement word order, without *did*.
+- The teacher asked me where do I live?  
+  The tense moves back, the word order becomes a statement, and there is no question mark.
+- The teacher asked me that where I lived.  
+  Reported questions with a question word do not use *that*.
 
 ---
 
@@ -721,9 +730,12 @@ Commands are reported with *tell/order* + person + *to* + base form: *told the b
 
 **Why the other options are wrong**
 
-- The principal told the boys that stand up.: A reported command uses *to* + base form, not *that*.
-- The principal said the boys to stand up.: *Say* is not followed directly by the person; use *told the boys*.
-- The principal told the boys stood up.: A reported command uses *to* + base form: *to stand up*.
+- The principal told the boys that stand up.  
+  A reported command uses *to* + base form, not *that*.
+- The principal said the boys to stand up.  
+  *Say* is not followed directly by the person; use *told the boys*.
+- The principal told the boys stood up.  
+  A reported command uses *to* + base form: *to stand up*.
 
 ---
 
@@ -742,9 +754,12 @@ Yes/no questions are reported with *if* or *whether* + statement word order, wit
 
 **Why the other options are wrong**
 
-- He asked if had I seen his keys.: A reported question uses statement word order: *I had seen*, not *had I seen*.
-- He asked that I had seen his keys.: Yes/no questions are reported with *if* or *whether*, not *that*.
-- He asked if I have seen my keys.: The tense moves back (*have seen* → *had seen*) and *my* becomes *his*.
+- He asked if had I seen his keys.  
+  A reported question uses statement word order: *I had seen*, not *had I seen*.
+- He asked that I had seen his keys.  
+  Yes/no questions are reported with *if* or *whether*, not *that*.
+- He asked if I have seen my keys.  
+  The tense moves back (*have seen* → *had seen*) and *my* becomes *his*.
 
 ---
 
@@ -763,9 +778,12 @@ She said, "I will travel to Bo tomorrow."
 
 **Why the other options are wrong**
 
-- She said that she will travel to Bo tomorrow.: After *said*, *will* usually becomes *would* and *tomorrow* becomes *the next day*.
-- She said that she would travel to Bo yesterday.: *Tomorrow* becomes *the next day* (or *the following day*), not *yesterday*.
-- She said that she would travelled to Bo the next day.: *Would* is followed by the base form, *travel*.
+- She said that she will travel to Bo tomorrow.  
+  After *said*, *will* usually becomes *would* and *tomorrow* becomes *the next day*.
+- She said that she would travel to Bo yesterday.  
+  *Tomorrow* becomes *the next day* (or *the following day*), not *yesterday*.
+- She said that she would travelled to Bo the next day.  
+  *Would* is followed by the base form, *travel*.
 
 ---
 

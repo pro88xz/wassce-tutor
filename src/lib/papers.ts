@@ -7,6 +7,7 @@ import type { ScoredAttempt } from '@/lib/progress'
 /** "Practice set" for sets written by WASSCE Tutor; otherwise the paper's type and year. */
 export function paperKind(p: Pick<PaperRow, 'paper_type' | 'year'>): string {
   if (!p.paper_type || p.paper_type.toLowerCase() === 'practice') return 'Practice set'
+  if (p.paper_type.toLowerCase() === 'comprehension') return 'Comprehension passage'
   return [p.paper_type, p.year].filter(Boolean).join(' · ')
 }
 

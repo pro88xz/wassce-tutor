@@ -484,9 +484,12 @@ To make the passive, the object (*the scripts*) becomes the subject, the verb be
 
 **Why the other options are wrong**
 
-- The scripts was marked by the teacher.: *Scripts* is plural, so the verb is *were*, not *was*.
-- The scripts are marked by the teacher.: The active sentence is in the past (*marked*), so the passive must be past too.
-- The teacher was marked by the scripts.: The teacher did the marking, so the teacher stays as the doer (*by the teacher*).
+- The scripts was marked by the teacher.  
+  *Scripts* is plural, so the verb is *were*, not *was*.
+- The scripts are marked by the teacher.  
+  The active sentence is in the past (*marked*), so the passive must be past too.
+- The teacher was marked by the scripts.  
+  The teacher did the marking, so the teacher stays as the doer (*by the teacher*).
 
 ---
 
@@ -612,9 +615,12 @@ A participle phrase at the start of a sentence must describe the subject that fo
 
 **Why the other options are wrong**
 
-- Walking to school, a snake was seen on the path.: This says the snake was walking to school: the participle has no correct subject (a dangling participle).
-- Walked to school, I saw a snake on the path.: The participle for an action in progress is *walking*, not *walked*.
-- To walking to school, I saw a snake on the path.: *To* does not go with an -ing form here.
+- Walking to school, a snake was seen on the path.  
+  This says the snake was walking to school: the participle has no correct subject (a dangling participle).
+- Walked to school, I saw a snake on the path.  
+  The participle for an action in progress is *walking*, not *walked*.
+- To walking to school, I saw a snake on the path.  
+  *To* does not go with an -ing form here.
 
 ---
 
