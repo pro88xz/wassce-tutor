@@ -532,6 +532,7 @@ function Plans() {
           <div
             key={c.key}
             data-reveal={i}
+            data-plan-tier={c.key}
             className={`plan-option-card relative flex flex-col rounded-3xl bg-card p-6 transition-shadow hover:shadow-lg ${
               c.best ? 'border-2 border-primary shadow-[0_24px_48px_-28px_rgba(76,29,149,0.55)]' : 'border'
             }`}
