@@ -1,6 +1,6 @@
 // Paying for a plan with Monime (api/pay/*, server side). The browser never
-// sees a Monime key: it asks our server for a checkout page, sends the
-// student there, and asks our server to confirm when they come back.
+// sees a Monime key: it asks our server for a one-time, fixed-price USSD code
+// and asks our server to verify the resulting payment when the student returns.
 import { Capacitor } from '@capacitor/core'
 import { supabase } from '@/lib/supabase'
 import type { PlanId } from '@/lib/plans'
@@ -21,19 +21,18 @@ async function post(path: string, body: unknown): Promise<{ status: number; data
 }
 
 export type CheckoutResult =
-  | { kind: 'redirect'; url: string; paymentId: string }
-  /** Online checkout is not switched on (no Monime keys yet, or no server): pay on WhatsApp. */
+  | { kind: 'ussd'; ussdCode: string; paymentId: string }
   | { kind: 'whatsapp' }
   | { kind: 'error'; message: string }
 
-export async function startCheckout(plan: PlanId): Promise<CheckoutResult> {
+export async function startUssdPayment(plan: PlanId): Promise<CheckoutResult> {
   try {
-    const { status, data } = await post('checkout', { plan })
-    if (status === 200 && typeof data?.url === 'string' && typeof data.paymentId === 'string') {
-      return { kind: 'redirect', url: data.url, paymentId: data.paymentId }
+    const { status, data } = await post('ussd', { plan })
+    if (status === 200 && typeof data?.ussdCode === 'string' && typeof data.paymentId === 'string') {
+      return { kind: 'ussd', ussdCode: data.ussdCode, paymentId: data.paymentId }
     }
     if (status === 503 || status === 404 || status === 405) return { kind: 'whatsapp' }
-    return { kind: 'error', message: typeof data?.error === 'string' ? data.error : 'The payment page could not be opened. Please try again.' }
+    return { kind: 'error', message: typeof data?.error === 'string' ? data.error : 'The USSD payment could not be prepared. Please try again.' }
   } catch {
     return { kind: 'error', message: 'No connection. Check your data and try again.' }
   }
@@ -53,7 +52,7 @@ export async function confirmPayment(paymentId: string): Promise<PaymentStatus> 
 
 // The payment a student started, kept so the app can confirm it when they
 // come back from the payment page (on Android, payment happens in the browser).
-export type PendingCheckout = { paymentId: string; plan: PlanId; startedAt: number }
+export type PendingCheckout = { paymentId: string; plan: PlanId; startedAt: number; ussdCode?: string }
 const KEY = (userId: string) => `wt_checkout_${userId}`
 
 export function rememberCheckout(userId: string, p: PendingCheckout) {
