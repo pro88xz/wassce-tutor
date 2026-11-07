@@ -1,6 +1,7 @@
 # WASSCE Tutor robots.txt
 #
-# Public pages (/, /about, /privacy, /terms) are crawlable and listed in the sitemap.
+# Public pages (/, /about, /privacy, /terms, /tutors and /tutors/*) are
+# crawlable and listed in the sitemap.
 # App screens are blocked: they need an account, and logged-out visitors (and
 # bots) would only see a sign-in prompt. /auth is crawlable on purpose so
 # search engines can read its "noindex" and drop it from results.
@@ -12,7 +13,7 @@ Disallow: /subject/
 Disallow: /topic/
 Disallow: /lesson/
 Disallow: /paper/
-Disallow: /tutor
+Disallow: /tutor/
 Disallow: /profile
 Disallow: /progress
 Disallow: /onboarding
