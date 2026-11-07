@@ -47,7 +47,10 @@ async function searchResults(page, subject, topic) {
   await page.waitForTimeout(1200)
   const links = await page.locator('a[href]').evaluateAll(els => els.map(a => a.href))
   const seen = new Set()
-  return links.map(href => {\n    try { const u = new URL(href); if (u.hostname === 'www.google.com' && u.pathname === '/url') return u.searchParams.get('q') || u.searchParams.get('url'); } catch {}\n    return href;\n  }).map(safeUrl).filter(url => {
+  return links.map(href => {
+    try { const u = new URL(href); if (u.hostname === 'www.google.com' && u.pathname === '/url') return u.searchParams.get('q') || u.searchParams.get('url'); } catch {}
+    return href;
+  }).map(safeUrl).filter(url => {
     if (!url || seen.has(url)) return false
     seen.add(url)
     return true
