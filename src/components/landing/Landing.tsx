@@ -116,7 +116,7 @@ function PopularTopics({ data }: { data: LandingData }) {
   const [featured, ...topics] = data.popular
   if (!featured) return null
 
-  const renderImage = (subjectSlug: string, topicSlug: string, subjectName: string, compact = false) => {
+  const renderImage = (subjectSlug: string, topicSlug: string, compact = false) => {
     const photo = topicPhoto(subjectSlug, topicSlug)
     return photo ? (
       <img
@@ -155,7 +155,7 @@ function PopularTopics({ data }: { data: LandingData }) {
           className="group relative flex min-h-[25rem] flex-col justify-end overflow-hidden rounded-[1.75rem] bg-slate-950 shadow-[0_24px_60px_-32px_rgba(15,23,42,0.55)] sm:min-h-[31rem]"
         >
           <div className="absolute inset-0">
-            {renderImage(featured.subjectSlug, featured.topicSlug, featured.subjectName)}
+            {renderImage(featured.subjectSlug, featured.topicSlug)}
           </div>
           <span aria-hidden className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/45 to-slate-950/0" />
           <span className="relative z-10 max-w-xl space-y-3 p-6 text-white sm:p-8">
@@ -186,7 +186,7 @@ function PopularTopics({ data }: { data: LandingData }) {
               className="group flex min-w-0 items-center gap-4 py-4 transition-colors"
             >
               <span className="relative h-[4.5rem] w-[4.5rem] shrink-0 overflow-hidden rounded-xl bg-muted ring-1 ring-black/5">
-                {renderImage(t.subjectSlug, t.topicSlug, t.subjectName, true)}
+                {renderImage(t.subjectSlug, t.topicSlug, true)}
               </span>
               <span className="min-w-0 flex-1 space-y-1">
                 <span className="block text-[11px] font-semibold uppercase tracking-wide text-primary">{t.subjectName}</span>
