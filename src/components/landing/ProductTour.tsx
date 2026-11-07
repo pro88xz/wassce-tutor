@@ -1,7 +1,7 @@
 // "How it works" as a product tour: each step shows a faithful preview of the
 // real screen instead of an icon card. The practice preview uses a real
 // question, diagram and working from the Mathematics question bank.
-import { Check, CircleCheck, Clock, Lightbulb, MessageCircleQuestion, RotateCcw, Sparkles } from 'lucide-react'
+import { BookOpen, Check, CircleCheck, Clock, Lightbulb, MessageCircleQuestion, RotateCcw, Sparkles } from 'lucide-react'
 import { useState, type ReactNode } from 'react'
 
 function LessonPreview() {
@@ -205,41 +205,48 @@ const STEPS: {
   },
 ]
 
-/** The real screen inside a phone, on a coloured stage, with floating result chips. */
+/** Editorial product presentation: content-first panels, not a decorative device mockup. */
 function Showcase({ step }: { step: (typeof STEPS)[number] }) {
-  const chip = 'absolute z-10 inline-flex items-center gap-1.5 rounded-full border bg-card px-3 py-2 text-[13px] font-semibold shadow-lg'
+  const chip = 'inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/85 px-3 py-2 text-xs font-semibold shadow-sm backdrop-blur'
   return (
-    <div className={`product-tour-stage relative overflow-hidden rounded-[1.75rem] bg-gradient-to-br ${step.stage} px-5 py-10 sm:px-10 sm:py-12`}>
-      <div aria-hidden className="pointer-events-none absolute inset-0 bg-[radial-gradient(rgba(40,20,95,0.09)_1px,transparent_1.2px)] [background-size:18px_18px]" />
-      <div aria-hidden className={`pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full opacity-15 ${step.accent}`} />
-      <div className="relative mx-auto w-full max-w-[19rem]">
-        <span className={`${chip} -left-1 -top-5 sm:-left-12 ${step.chips[0].tone}`}>
-          {step.chips[0].icon}
-          <span className="text-foreground">{step.chips[0].text}</span>
-        </span>
-        <span className={`${chip} -bottom-5 -right-1 sm:-right-12 ${step.chips[1].tone}`}>
-          {step.chips[1].icon}
-          <span className="text-foreground">{step.chips[1].text}</span>
-        </span>
-        {/* phone */}
-        <div className="rounded-[2.4rem] bg-[#141225] p-2.5 shadow-[0_40px_70px_-25px_rgba(40,20,95,0.55)] ring-1 ring-black/10">
-          <div className="overflow-hidden rounded-[1.9rem] bg-card">
-            <div className="flex items-center justify-between px-5 pb-1 pt-2.5 text-[11px] font-semibold text-foreground">
-              <span>9:41</span>
-              <span className="h-4 w-16 rounded-full bg-[#141225]" />
-              <span className="flex items-center gap-1">
-                <span className="h-2 w-3 rounded-sm bg-foreground/80" />
-                <span className="h-2 w-4 rounded-sm border border-foreground/70" />
+    <div className={`product-tour-stage relative overflow-hidden rounded-[2rem] bg-gradient-to-br ${step.stage} p-4 sm:p-7 lg:p-9`}>
+      <div aria-hidden className="pointer-events-none absolute inset-0 bg-[radial-gradient(rgba(40,20,95,0.10)_1px,transparent_1.2px)] [background-size:20px_20px]" />
+      <div aria-hidden className={`pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full opacity-15 blur-2xl ${step.accent}`} />
+      <div className="relative z-10 mx-auto max-w-[38rem]">
+        <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <span className="text-5xl font-black leading-none tracking-[-.08em] text-slate-900/15 sm:text-6xl">0{step.n}</span>
+            <span className="space-y-0.5">
+              <span className="block text-[10px] font-extrabold uppercase tracking-[.18em] text-slate-700/65">WASSCE TUTOR EXPERIENCE</span>
+              <span className="block text-sm font-bold text-slate-900">{step.label}</span>
+            </span>
+          </div>
+          <span className="rounded-full border border-slate-900/10 bg-white/65 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[.12em] text-slate-700">Illustrative preview</span>
+        </div>
+        <div className="overflow-hidden rounded-[1.5rem] border border-white/80 bg-white shadow-[0_28px_70px_-38px_rgba(31,23,62,.5)]">
+          <div className="flex items-center justify-between border-b border-slate-100 bg-white px-5 py-4">
+            <div className="flex items-center gap-2.5">
+              <span className={`flex h-9 w-9 items-center justify-center rounded-xl text-white shadow-sm ${step.accent}`}>
+                {step.n === 1 ? <BookOpen className="h-4 w-4" /> : step.n === 2 ? <Check className="h-4 w-4" /> : step.n === 3 ? <Sparkles className="h-4 w-4" /> : <CircleCheck className="h-4 w-4" />}
+              </span>
+              <span>
+                <span className="block text-xs font-bold text-slate-900">{step.n === 1 ? 'Lesson workspace' : step.n === 2 ? 'Practice review' : step.n === 3 ? 'Tutor conversation' : 'Learning progress'}</span>
+                <span className="block text-[10px] text-slate-500">A closer look at the experience</span>
               </span>
             </div>
-            {/* fixed screen height, so switching steps never moves the page */}
-            <div className="relative h-[30rem] overflow-hidden">
-              <div key={step.n} className="tour-in px-4 pb-5 pt-2 text-left" aria-hidden>
-                {step.preview}
-              </div>
-              <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-14 bg-gradient-to-t from-card to-transparent" />
-            </div>
+            <span className="hidden rounded-full bg-slate-100 px-3 py-1 text-[10px] font-semibold text-slate-600 sm:inline-flex">WASSCE aligned</span>
           </div>
+          <div key={step.n} className="tour-in p-5 text-left sm:p-7">
+            {step.preview}
+          </div>
+        </div>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {step.chips.map((item, index) => (
+            <span key={index} className={chip}>
+              <span className={item.tone}>{item.icon}</span>
+              <span className="text-slate-800">{item.text}</span>
+            </span>
+          ))}
         </div>
       </div>
     </div>
@@ -251,10 +258,10 @@ export function ProductTour() {
   const step = STEPS[active]
   return (
     <section className="product-tour-section space-y-8" aria-labelledby="tour-heading">
-      <div className="mx-auto max-w-2xl space-y-2 text-center">
+      <div className="product-tour-heading mx-auto max-w-2xl space-y-2 text-center">
         <p className="text-sm font-semibold text-primary">How it works</p>
         <h2 id="tour-heading" className="text-[1.75rem] font-bold leading-tight tracking-tight text-balance sm:text-3xl">Learn, practise, ask, track</h2>
-        <p className="text-[15px] text-muted-foreground">Tap a step to see what it looks like inside WASSCE Tutor.</p>
+        <p className="text-[15px] text-muted-foreground">Explore the learning experience, from the first explanation to the progress you build.</p>
       </div>
 
       <div className="grid items-center gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] md:gap-10">
