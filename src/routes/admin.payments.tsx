@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
+import { ONLINE_CHECKOUT } from '@/lib/plans'
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { supabase } from '@/lib/supabase'
@@ -154,7 +155,7 @@ function AdminPayments() {
         <Link to="/admin"><Button variant="outline" size="sm">Back</Button></Link>
       </div>
 
-      <OnlinePayments />
+      {ONLINE_CHECKOUT && <OnlinePayments />}
 
       <div>
         <h2 className="text-lg font-bold">WhatsApp payments</h2>

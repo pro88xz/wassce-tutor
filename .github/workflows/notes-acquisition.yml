@@ -1,26 +1,31 @@
-name: Playwright WASSCE content acquisition
+name: Open-licence WASSCE content acquisition (benched)
 
+# BENCHED (2026-11-07): no schedule and no automatic runs. The content it can
+# find is not good enough to put in front of students unreviewed: only a few
+# OpenStax books (Physics, Statistics) and Wikibooks are licensed for a paid
+# site, and their sections are general textbook text, not WASSCE notes. Run it
+# by hand from Actions -> Run workflow, with DRY_RUN on, to see what it finds.
+#
+# It no longer scrapes Google, Bing, Brave, DuckDuckGo or Yahoo: they block
+# GitHub's servers (every earlier run found nothing). It asks OpenStax and
+# Wikibooks through their own APIs instead (scripts/oer-acquisition.mjs).
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/notes-acquisition.yml'
-      - 'scripts/playwright-notes-acquisition.mjs'
-      - 'api/notes-engine/ingest.js'
-  schedule:
-    - cron: '0 3 * * *'
   workflow_dispatch:
     inputs:
       topic_limit:
-        description: Maximum missing topics to research in this run (1–3)
+        description: Lessons to create in this run (1-3)
         required: false
         default: '3'
+      dry_run:
+        description: Only report what would be added (no database writes)
+        required: false
+        default: '1'
 
 permissions:
   contents: read
 
 concurrency:
-  group: wassce-playwright-acquisition
+  group: wassce-oer-acquisition
   cancel-in-progress: false
 
 jobs:
@@ -33,16 +38,14 @@ jobs:
         with:
           node-version: 24
           cache: npm
-      - name: Install application dependencies
+      - name: Install dependencies
         run: npm ci
-      - name: Install Playwright Chromium
-        run: |
-          npm install --no-save playwright
-          npx playwright install --with-deps chromium
-      - name: Discover, scrape, verify licences and populate topic gaps
+      - name: Find openly licensed material for topics without lessons
         env:
           NOTES_CATALOG_URL: https://wasscetutor.com/api/notes-engine/catalog
-          CRON_SECRET: ${{ secrets.CRON_SECRET }}
           NOTES_INGEST_URL: https://wasscetutor.com/api/notes-engine/ingest
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+          WIKIMEDIA_TOKEN: ${{ secrets.WIKIMEDIA_TOKEN }}
           TOPIC_LIMIT: ${{ github.event.inputs.topic_limit || '3' }}
-        run: node scripts/playwright-notes-acquisition.mjs
+          DRY_RUN: ${{ github.event.inputs.dry_run || '1' }}
+        run: node scripts/oer-acquisition.mjs

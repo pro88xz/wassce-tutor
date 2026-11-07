@@ -1,5 +1,12 @@
 # WASSCE Tutor content acquisition engine
 
+> **Status: benched (2026-11-07).** The workflow no longer runs on a schedule or on push. Reasons:
+> - **Discovery never worked:** it scraped Google, Bing, Brave, DuckDuckGo and Yahoo from GitHub's servers, which they block (captcha pages, empty results), and their terms do not allow scraping. The catalogue also returned the same first three gaps (Agricultural Science) every run.
+> - **Too little reusable material:** most OpenStax books are now CC BY-NC-SA (NonCommercial), which a paid site cannot reuse. Only OpenStax *Physics* and *Statistics* (CC BY 4.0) and Wikibooks (CC BY-SA 4.0) qualify.
+> - **Not WASSCE quality:** what it can find is general textbook text, not notes written to the WASSCE syllabus, and ingested lessons go live in the app without review.
+>
+> The fixed crawler is `scripts/oer-acquisition.mjs`. It uses the sources' own APIs (OpenStax archive and CMS, MediaWiki), verifies licences from publisher metadata, converts sections to Markdown with LaTeX maths, and tries up to 60 gaps per run in a different order each day. To try it, open Actions -> "Open-licence WASSCE content acquisition (benched)" -> Run workflow, and keep **dry_run = 1** to see what it would add without writing anything. An optional `WIKIMEDIA_TOKEN` Actions secret raises the Wikibooks rate limit.
+
 ## Production acquisition path
 
 The production acquisition pipeline uses Playwright in GitHub Actions to search and browse educational websites. It does not use Groq, an LLM provider, Wikipedia's API, or manual JSON imports.

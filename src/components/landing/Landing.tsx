@@ -549,7 +549,7 @@ function Plans() {
       <ul className="mx-auto grid max-w-4xl gap-x-6 gap-y-3 rounded-2xl border bg-card p-5 text-sm text-muted-foreground sm:grid-cols-2">
         {[
           ['No free trial needed', 'The free account never runs out, so you can study before you decide.'],
-          ['Paying', 'Orange Money, AfriMoney and more, through a secure Monime checkout. Your plan switches on as soon as the payment is confirmed.'],
+          ['Paying', 'Orange Money or AfriMoney. Tap Pay on WhatsApp, send the payment, and we switch your plan on, usually within an hour.'],
           ['No automatic renewal', 'A plan simply ends on its last day. You go back to the free account, and your progress is kept.'],
           ['Buying again', 'Paying while a plan is running adds the new time on top, so nothing is lost.'],
         ].map(([title, body]) => (
@@ -567,7 +567,7 @@ const FAQ: [question: string, answer: string][] = [
   ['Is WASSCE Tutor free?', 'Yes, to start. A free account opens every subject, the first lesson of every topic and a starter practice set in every subject, with no time limit. To unlock everything, pay 10 NLe for a term (4 months) or 25 NLe for a full academic year (12 months).'],
   ['Which subjects are covered?', 'All the main WASSCE subjects for Science, Arts, Commercial and Technical students, including English Language and Mathematics. Each subject is broken down topic by topic, and new lessons are added all the time.'],
   ['Are these real WAEC past papers?', 'No. Practice sets are original WASSCE-style questions written by WASSCE Tutor to match the syllabus and the exam format, each with the full working. We do not copy WAEC papers.'],
-  ['How do I pay?', 'Choose a plan and pay on the secure Monime checkout page with Orange Money, AfriMoney and more. Your plan switches on as soon as the payment is confirmed. Plans do not renew automatically.'],
+  ['How do I pay?', 'Choose a plan and tap Pay on WhatsApp. We reply with the Orange Money or AfriMoney number to pay, and switch your plan on as soon as the payment arrives, usually within an hour. Plans do not renew automatically.'],
   ['Does it work on my phone?', 'Yes. WASSCE Tutor works in any phone browser, and there is an Android app you can install from this page. It is built to work on patchy data.'],
   ['Who writes the lessons?', 'Lessons are drafted with the help of AI and follow the WASSCE syllabus. Lessons we publish openly on this website are checked by a named reviewer first, and their name appears on the lesson.'],
   ['Is this the official WAEC website?', 'No. WASSCE Tutor is an independent study app built in Sierra Leone. For registration, timetables and results, always use official WAEC channels.'],

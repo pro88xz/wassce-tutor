@@ -97,7 +97,7 @@ console.log('[postbuild] updated _shell.html and wrote 404.html')
     '- Who it is for: SSS1 to SSS3 students, private candidates, and the parents and teachers who support them, preparing for the West African Senior School Certificate Examination (WASSCE) in Sierra Leone.',
     '- Practice questions are original WASSCE-style questions written by WASSCE Tutor to match the syllabus and exam format. They are not WAEC past papers, and WASSCE Tutor is not affiliated with WAEC.',
     '- AI tutor answers are labelled as AI. Book a tutor connects students with real teachers for lessons online or at home, arranged on WhatsApp.',
-    `- A free account (no time limit) opens every subject's syllabus, the first lesson of every topic and a starter practice set in every subject. Paid plans unlock everything: Term pass 10 NLe for 4 months, Academic year 25 NLe for 12 months, paid with Orange Money, AfriMoney and more through Monime. No automatic renewal: ${SITE}/#plans`,
+    `- A free account (no time limit) opens every subject's syllabus, the first lesson of every topic and a starter practice set in every subject. Paid plans unlock everything: Term pass 10 NLe for 4 months, Academic year 25 NLe for 12 months, paid with Orange Money or AfriMoney and arranged on WhatsApp. No automatic renewal: ${SITE}/#plans`,
     `- Contact: WhatsApp ${contact.phoneDisplay} (https://wa.me/${contact.whatsapp}), email ${contact.email}. Based in ${contact.locality}, ${contact.country}; serves students across the country online.`,
     `- WhatsApp group: ${contact.whatsappGroup}`,
     '',

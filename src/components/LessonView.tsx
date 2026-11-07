@@ -5,6 +5,7 @@
 // Used by lesson pages and the admin preview pane.
 // MarkdownView (sibling) stays simpler for tutor/papers/question previews.
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import 'katex/dist/katex.min.css'
@@ -40,7 +41,8 @@ function directiveTransformer() {
 export function LessonView({ content }: { content: string }) {
   return (
     <ReactMarkdown
-      remarkPlugins={[remarkMath, remarkDirective, directiveTransformer]}
+      // GFM: tables (and task lists, autolinks). singleTilde off, so "~5 min" never strikes text through.
+      remarkPlugins={[[remarkGfm, { singleTilde: false }], remarkMath, remarkDirective, directiveTransformer]}
       rehypePlugins={[rehypeKatex]}
       components={{
         // Map our custom directive elements to React components.
@@ -51,6 +53,12 @@ export function LessonView({ content }: { content: string }) {
           </Callout>
         ),
         diagram: ({ name }: any) => <Diagram name={name} />,
+        // Wide tables scroll sideways on phones instead of squeezing the page.
+        table: ({ node: _node, ...props }: any) => (
+          <div className="not-prose my-5 overflow-x-auto rounded-xl border">
+            <table className="md-table" {...props} />
+          </div>
+        ),
       } as any}
     >
       {content}

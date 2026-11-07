@@ -300,3 +300,31 @@ html.native-app [data-landing] { display: none; }
     height: 100dvh;
   }
 }
+
+/* Markdown tables (lessons, AI tutor): readable on phones, scroll sideways when wide. */
+.md-table {
+  margin: 0;
+  width: 100%;
+  min-width: 28rem;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+.md-table th {
+  background: var(--muted);
+  text-align: left;
+  font-weight: 700;
+  color: var(--foreground);
+}
+.md-table th,
+.md-table td {
+  padding: 0.625rem 0.875rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.md-table tr:last-child td {
+  border-bottom: 0;
+}
+.md-table tbody tr:nth-child(even) td {
+  background: color-mix(in oklab, var(--muted) 45%, transparent);
+}

@@ -306,7 +306,7 @@ function SubscriptionSection({ profile, userId }: { profile: Profile; userId: st
       </div>
       <p className="mt-4 flex items-start gap-2 rounded-xl bg-muted/60 p-3 text-sm text-muted-foreground">
         <Smartphone className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
-        <span>{PLANS.map((p) => `${p.name}: ${p.priceNle} NLe for ${p.length}`).join(' · ')}. Pay with Orange Money, AfriMoney and more; access switches on as soon as Monime confirms the payment. No automatic renewal.</span>
+        <span>{PLANS.map((p) => `${p.name}: ${p.priceNle} NLe for ${p.length}`).join(' · ')}. Pay with Orange Money or AfriMoney on WhatsApp; we switch your plan on as soon as the payment arrives, usually within an hour. No automatic renewal.</span>
       </p>
 
       <h3 className="mt-5 text-sm font-semibold">Payment history</h3>

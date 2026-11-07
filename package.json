@@ -42,6 +42,7 @@
     "react-markdown": "^10.1.0",
     "rehype-katex": "^7.0.1",
     "remark-directive": "^3.0.1",
+    "remark-gfm": "^4.0.1",
     "remark-math": "^6.0.0",
     "shadcn": "^4.8.2",
     "tailwind-merge": "^3.6.0",
@@ -65,6 +66,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.6.0",
+    "mathml-to-latex": "^1.8.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",
     "vite": "^8.0.12"

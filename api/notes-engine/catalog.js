@@ -45,7 +45,9 @@ export default async function handler(req,res) {
       .map(t=>({...t,subject:subjectById.get(t.subject_id)}))
       .filter(t=>t.subject)
       .sort((a,b)=>a.subject.name.localeCompare(b.subject.name)||(a.sort_order??0)-(b.sort_order??0))
-    return json(res,{ok:true,subjects:subjects.length,topics:topics.length,lessons:lessons.length,topics_without_lessons:gaps.length,gaps:gaps.slice(0,3)})
+    // ?limit=N (1-200, default 3): the crawler asks for many gaps so it does not retry the same three every run.
+    const limit = Math.max(1, Math.min(200, Number(req.query?.limit) || 3))
+    return json(res,{ok:true,subjects:subjects.length,topics:topics.length,lessons:lessons.length,topics_without_lessons:gaps.length,gaps:gaps.slice(0,limit)})
   } catch(error) {
     console.error('[notes-catalog] failed:',error)
     return json(res,{error:error instanceof Error?error.message:'Curriculum scan failed'},500)

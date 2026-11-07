@@ -1,5 +1,5 @@
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
-import { useQueryClient } from '@tanstack/react-query'
+import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { ArrowRight, Check, CircleCheck, Clock, Loader2, Lock, ShieldCheck, Sparkles, XCircle } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
@@ -7,7 +7,7 @@ import { useAuth } from '@/lib/auth'
 import { supabase } from '@/lib/supabase'
 import { useAccess } from '@/lib/useAccess'
 import { CONTACT, whatsappChatLink } from '@/lib/contact'
-import { FREE_FEATURES, PAID_FEATURES, PLANS, planById, type PlanId } from '@/lib/plans'
+import { FREE_FEATURES, ONLINE_CHECKOUT, PAID_FEATURES, PLANS, planById, type PlanId } from '@/lib/plans'
 import { confirmPayment, forgetCheckout, pendingCheckout, rememberCheckout, startCheckout, type PaymentStatus } from '@/lib/payments'
 import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
 
@@ -129,7 +129,20 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [view.kind === 'confirming' ? view.paymentId : null])
 
+  const pending = usePendingRequest(userId)
+
+  const payOnWhatsApp = async () => {
+    setBusy(true)
+    setError(null)
+    const ref = await requestOnWhatsApp(userId, selected)
+    await qc.invalidateQueries({ queryKey: ['pending-request', userId] })
+    setView({ kind: 'whatsapp', plan: selected, reference: ref })
+    setBusy(false)
+    window.location.href = whatsappChatLink(whatsappText(selected, email, ref))
+  }
+
   const pay = async () => {
+    if (!ONLINE_CHECKOUT) return payOnWhatsApp()
     setBusy(true)
     setError(null)
     const result = await startCheckout(selected)
@@ -199,23 +212,9 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
   }
 
   if (view.kind === 'whatsapp') {
-    const plan = planById(view.plan)!
     return (
       <div className="mx-auto max-w-md space-y-5 pt-6">
-        <div className="space-y-3 rounded-3xl border bg-card p-6">
-          <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1a8d4a] text-white"><WhatsAppGlyph className="h-6 w-6" /></span>
-          <h1 className="text-2xl font-bold tracking-tight">Finish on WhatsApp</h1>
-          <p className="text-muted-foreground">
-            Send us the message on WhatsApp. We reply with Orange Money or AfriMoney details for <strong className="text-foreground">{plan.priceNle} NLe</strong>, then switch your {plan.name} on.
-          </p>
-          <p className="text-sm text-muted-foreground">Your reference: <span className="font-mono font-semibold text-foreground">{view.reference}</span></p>
-          <a
-            href={whatsappChatLink(whatsappText(plan.id, email, view.reference))}
-            className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#1a8d4a] px-5 py-2 text-base font-semibold text-white hover:bg-[#157a3f]"
-          >
-            <WhatsAppGlyph className="h-5 w-5" /> Open WhatsApp
-          </a>
-        </div>
+        <RequestSent plan={view.plan} reference={view.reference} email={email} />
         <button type="button" onClick={() => setView({ kind: 'choose' })} className="flex min-h-11 w-full items-center justify-center text-sm text-muted-foreground hover:text-foreground">
           Back to plans
         </button>
@@ -249,6 +248,8 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
         </div>
       )}
 
+      {pending && <RequestSent plan={pending.plan} reference={pending.reference_code} email={email} sentAt={pending.created_at} />}
+
       <PlanCards selected={selected} onSelect={setSelected} />
 
       <ul className="grid gap-2 rounded-2xl border bg-card p-4 text-[15px] sm:grid-cols-2">
@@ -259,20 +260,49 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
 
       {error && <p className="text-center text-sm text-danger" role="alert">{error}</p>}
 
-      <div className="space-y-3">
-        <button
-          type="button"
-          onClick={pay}
-          disabled={busy}
-          className="flex min-h-14 w-full items-center justify-center gap-2 rounded-2xl bg-primary px-5 py-3 text-lg font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition-colors hover:bg-brand-strong disabled:opacity-60"
-        >
-          {busy ? <Loader2 className="h-5 w-5 animate-spin motion-reduce:animate-none" aria-hidden /> : <Lock className="h-5 w-5" aria-hidden />}
-          {busy ? 'Opening the payment page…' : `Pay ${plan.priceNle} NLe`}
-        </button>
-        <p className="flex items-center justify-center gap-1.5 text-center text-sm text-muted-foreground">
-          <ShieldCheck className="h-4 w-4 shrink-0 text-success" aria-hidden /> Secure checkout by Monime: Orange Money, AfriMoney and more
-        </p>
-      </div>
+      {ONLINE_CHECKOUT ? (
+        <div className="space-y-3">
+          <button
+            type="button"
+            onClick={pay}
+            disabled={busy}
+            className="flex min-h-14 w-full items-center justify-center gap-2 rounded-2xl bg-primary px-5 py-3 text-lg font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition-colors hover:bg-brand-strong disabled:opacity-60"
+          >
+            {busy ? <Loader2 className="h-5 w-5 animate-spin motion-reduce:animate-none" aria-hidden /> : <Lock className="h-5 w-5" aria-hidden />}
+            {busy ? 'Opening the payment page…' : `Pay ${plan.priceNle} NLe`}
+          </button>
+          <p className="flex items-center justify-center gap-1.5 text-center text-sm text-muted-foreground">
+            <ShieldCheck className="h-4 w-4 shrink-0 text-success" aria-hidden /> Secure checkout by Monime: Orange Money, AfriMoney and more
+          </p>
+        </div>
+      ) : (
+        <div className="space-y-4">
+          <button
+            type="button"
+            onClick={pay}
+            disabled={busy}
+            className="flex min-h-14 w-full items-center justify-center gap-2 rounded-2xl bg-[#1a8d4a] px-5 py-3 text-lg font-semibold text-white shadow-lg shadow-[#1a8d4a]/30 transition-colors hover:bg-[#157a3f] disabled:opacity-60"
+          >
+            {busy ? <Loader2 className="h-5 w-5 animate-spin motion-reduce:animate-none" aria-hidden /> : <WhatsAppGlyph className="h-5 w-5" />}
+            {busy ? 'Opening WhatsApp…' : `Pay ${plan.priceNle} NLe on WhatsApp`}
+          </button>
+          <div className="space-y-3 rounded-2xl border bg-card p-5 text-sm">
+            <p className="font-bold">How paying works</p>
+            <ol className="space-y-2.5">
+              {[
+                <>Tap <span className="font-semibold text-foreground">Pay on WhatsApp</span>. WhatsApp opens with your plan and reference filled in: just tap send.</>,
+                <>We reply with the Orange Money or AfriMoney number to pay.</>,
+                <>Send the payment. We switch your plan on as soon as it arrives, usually within an hour.</>,
+              ].map((step, i) => (
+                <li key={i} className="flex gap-3 text-muted-foreground">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary">{i + 1}</span>
+                  <span>{step}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      )}
 
       <div className="space-y-2 rounded-2xl bg-muted/50 p-4 text-sm text-muted-foreground">
         <p className="flex gap-2"><Clock className="mt-0.5 h-4 w-4 shrink-0" aria-hidden /> No automatic renewal. When your plan ends you go back to the free account, and your progress is kept.</p>
@@ -353,8 +383,8 @@ function reference(): string {
 }
 
 /**
- * Fallback while online checkout is not switched on: records the request for
- * Admin → Payments (best effort), then the student finishes on WhatsApp.
+ * Paying on WhatsApp: records the request for Admin -> Payments (best
+ * effort; WhatsApp still carries it), then the student finishes on WhatsApp.
  */
 async function requestOnWhatsApp(userId: string, plan: PlanId): Promise<string> {
   const ref = reference()
@@ -362,4 +392,57 @@ async function requestOnWhatsApp(userId: string, plan: PlanId): Promise<string> 
   const { error } = await supabase.from('payment_requests').insert({ user_id: userId, plan, amount_nle: p.priceNle, reference_code: ref })
   if (error) console.warn('Payment request not saved:', error.message)
   return ref
+}
+
+type PendingRequest = { plan: PlanId; reference_code: string; created_at: string }
+
+/** The student's latest WhatsApp request still waiting for an admin (last 7 days). */
+function usePendingRequest(userId: string) {
+  const { data } = useQuery({
+    queryKey: ['pending-request', userId],
+    enabled: !ONLINE_CHECKOUT,
+    queryFn: async (): Promise<PendingRequest | null> => {
+      const since = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()
+      const { data, error } = await supabase
+        .from('payment_requests')
+        .select('plan, reference_code, created_at')
+        .eq('user_id', userId)
+        .eq('status', 'pending')
+        .gte('created_at', since)
+        .order('created_at', { ascending: false })
+        .limit(1)
+      if (error) return null
+      const row = data?.[0] as PendingRequest | undefined
+      return row && planById(row.plan) ? row : null
+    },
+  })
+  return data ?? null
+}
+
+/** A WhatsApp request on its way: what happens next, and a way back to the chat. */
+function RequestSent({ plan, reference, email, sentAt }: { plan: PlanId; reference: string; email: string; sentAt?: string }) {
+  const p = planById(plan)!
+  return (
+    <div className="space-y-3 rounded-2xl border border-[#1a8d4a]/30 bg-[#1a8d4a]/5 p-5" role="status">
+      <div className="flex items-center gap-3">
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#1a8d4a] text-white"><WhatsAppGlyph className="h-5 w-5" /></span>
+        <div className="min-w-0">
+          <p className="font-bold">Request sent: {p.name}, {p.priceNle} NLe</p>
+          <p className="text-sm text-muted-foreground">
+            Reference <span className="font-mono font-semibold text-foreground">{reference}</span>
+            {sentAt && ` · ${new Date(sentAt).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}`}
+          </p>
+        </div>
+      </div>
+      <p className="text-sm text-muted-foreground">
+        Make sure you sent the WhatsApp message, then pay the Orange Money or AfriMoney number we reply with. Your plan switches on as soon as the payment arrives, usually within an hour.
+      </p>
+      <a
+        href={whatsappChatLink(whatsappText(plan, email, reference))}
+        className="flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-[#1a8d4a] px-4 py-2 text-sm font-semibold text-white hover:bg-[#157a3f]"
+      >
+        <WhatsAppGlyph className="h-4 w-4" /> Open WhatsApp again
+      </a>
+    </div>
+  )
 }

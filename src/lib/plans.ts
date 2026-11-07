@@ -37,6 +37,14 @@ export const PLANS: Plan[] = [
   },
 ]
 
+/**
+ * How students pay. false: on WhatsApp (they send the request, pay with
+ * Orange Money or AfriMoney, and an admin switches the plan on in Admin ->
+ * Payments). true: Monime's online checkout (api/pay/*), once its keys and
+ * webhook are set up in Vercel and Monime.
+ */
+export const ONLINE_CHECKOUT = false
+
 export const planById = (id: string | null | undefined) => PLANS.find((p) => p.id === id)
 
 /** Cheapest way in, for "from 10 NLe" copy. */

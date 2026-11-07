@@ -7,15 +7,18 @@ const ReactMarkdown = lazy(() => import('react-markdown'))
 // remarkMath + rehypeKatex are plugins (small), but we'll load them with markdown
 let remarkMathPlugin: any = null
 let rehypeKatexPlugin: any = null
+let remarkGfmPlugin: any = null
 async function ensureMarkdownPlugins() {
   if (!remarkMathPlugin) {
-    const [rm, rk] = await Promise.all([
+    const [rm, rk, gfm] = await Promise.all([
       import('remark-math'),
       import('rehype-katex'),
+      import('remark-gfm'),
       import('katex/dist/katex.min.css'),
     ])
     remarkMathPlugin = rm.default
     rehypeKatexPlugin = rk.default
+    remarkGfmPlugin = gfm.default
   }
 }
 import { useAuth } from '@/lib/auth'
@@ -370,7 +373,11 @@ function MarkdownView({ content }: { content: string }) {
     return <p className="text-sm whitespace-pre-wrap">{content}</p>
   }
   return (
-    <ReactMarkdown remarkPlugins={[plugins.remark]} rehypePlugins={[plugins.rehype]}>
+    <ReactMarkdown
+      remarkPlugins={[[remarkGfmPlugin, { singleTilde: false }], plugins.remark]}
+      rehypePlugins={[plugins.rehype]}
+      components={{ table: ({ node: _node, ...props }: any) => <div className="my-3 overflow-x-auto rounded-xl border"><table className="md-table" {...props} /></div> } as any}
+    >
       {content}
     </ReactMarkdown>
   )
