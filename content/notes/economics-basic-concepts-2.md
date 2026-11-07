@@ -28,7 +28,7 @@ A **production possibility curve (PPC)** shows the different combinations of two
 :::callout{type=worked-example}
 A farming community has a fixed amount of land, labour and tools. It can grow rice, cassava or a mix of the two. Its possible combinations each season are:
 
-| Combination | Rice (bags) | Cassava (bags) | Cassava given up for the extra 2 bags of rice |
+| Point | Rice (bags) | Cassava (bags) | Cassava given up for 2 more rice |
 |---|---|---|---|
 | A | 0 | 20 | — |
 | B | 2 | 18 | 2 |

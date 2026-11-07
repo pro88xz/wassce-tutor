@@ -28,6 +28,7 @@ import { PLANS } from '@/lib/plans'
 import { supabase } from '@/lib/supabase'
 import { Flag, Sparkles } from 'lucide-react'
 import { SubjectIcon } from '@/lib/subject-theme'
+import { MdTable } from '@/components/MdTable'
 
 export const Route = createFileRoute('/tutor')({
   head: privateHead('AI Tutor'),
@@ -376,7 +377,7 @@ function MarkdownView({ content }: { content: string }) {
     <ReactMarkdown
       remarkPlugins={[[remarkGfmPlugin, { singleTilde: false }], plugins.remark]}
       rehypePlugins={[plugins.rehype]}
-      components={{ table: ({ node: _node, ...props }: any) => <div className="my-3 overflow-x-auto rounded-xl border"><table className="md-table" {...props} /></div> } as any}
+      components={{ table: (props: any) => <MdTable className="my-3" {...props} /> } as any}
     >
       {content}
     </ReactMarkdown>

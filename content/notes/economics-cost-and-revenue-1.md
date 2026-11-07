@@ -35,15 +35,28 @@ Here $Q$ is the quantity of output.
 :::callout{type=worked-example}
 A small factory has fixed costs of **NLe 100** a day. Its variable costs at each level of output are given; the rest is calculated.
 
-| Output ($Q$) | FC | VC | TC | AFC | AVC | ATC | MC |
-|---|---|---|---|---|---|---|---|
-| 0 | 100 | 0 | 100 | — | — | — | — |
-| 1 | 100 | 40 | 140 | 100 | 40 | 140 | 40 |
-| 2 | 100 | 70 | 170 | 50 | 35 | 85 | 30 |
-| 3 | 100 | 90 | 190 | 33.3 | 30 | 63.3 | 20 |
-| 4 | 100 | 120 | 220 | 25 | 30 | 55 | 30 |
-| 5 | 100 | 170 | 270 | 20 | 34 | 54 | 50 |
-| 6 | 100 | 240 | 340 | 16.7 | 40 | 56.7 | 70 |
+**Total costs**
+
+| Output ($Q$) | FC | VC | TC |
+|---|---|---|---|
+| 0 | 100 | 0 | 100 |
+| 1 | 100 | 40 | 140 |
+| 2 | 100 | 70 | 170 |
+| 3 | 100 | 90 | 190 |
+| 4 | 100 | 120 | 220 |
+| 5 | 100 | 170 | 270 |
+| 6 | 100 | 240 | 340 |
+
+**Average and marginal costs**
+
+| Output ($Q$) | AFC | AVC | ATC | MC |
+|---|---|---|---|---|
+| 1 | 100 | 40 | 140 | 40 |
+| 2 | 50 | 35 | 85 | 30 |
+| 3 | 33.3 | 30 | 63.3 | 20 |
+| 4 | 25 | 30 | 55 | 30 |
+| 5 | 20 | 34 | 54 | 50 |
+| 6 | 16.7 | 40 | 56.7 | 70 |
 
 Sample calculations:
 

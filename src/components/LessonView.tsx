@@ -12,6 +12,7 @@ import 'katex/dist/katex.min.css'
 import remarkDirective from 'remark-directive'
 import { Callout } from './lesson/Callout'
 import { Diagram } from './lesson/Diagram'
+import { MdTable } from './MdTable'
 
 // Custom remark plugin: rewrite directive nodes to use HTML element names
 // that react-markdown can map via the `components` prop.
@@ -53,12 +54,8 @@ export function LessonView({ content }: { content: string }) {
           </Callout>
         ),
         diagram: ({ name }: any) => <Diagram name={name} />,
-        // Wide tables scroll sideways on phones instead of squeezing the page.
-        table: ({ node: _node, ...props }: any) => (
-          <div className="not-prose my-5 overflow-x-auto rounded-xl border">
-            <table className="md-table" {...props} />
-          </div>
-        ),
+        // Wide tables scroll sideways on phones; short-cell tables fit the screen.
+        table: MdTable,
       } as any}
     >
       {content}

@@ -206,9 +206,10 @@ html.native-app [data-landing] { display: none; }
 /* ============================================================
  * Biology lesson content styling
  * Tables, callouts, and rich content for /lesson/$lessonId
+ * (Markdown tables use .md-table below; these rules are for any other table.)
  * ============================================================ */
 
-.prose table {
+.prose table:not(.md-table) {
   border-collapse: separate;
   border-spacing: 0;
   border-radius: 12px;
@@ -219,11 +220,11 @@ html.native-app [data-landing] { display: none; }
   font-size: 0.9rem;
 }
 
-.prose thead {
+.prose table:not(.md-table) thead {
   background: var(--brand-soft);
 }
 
-.prose thead th {
+.prose table:not(.md-table) thead th {
   padding: 0.75rem 1rem;
   font-weight: 700;
   font-size: 0.85rem;
@@ -232,26 +233,26 @@ html.native-app [data-landing] { display: none; }
   border-bottom: 1px solid var(--border);
 }
 
-.prose tbody td {
+.prose table:not(.md-table) tbody td {
   padding: 0.7rem 1rem;
   border-bottom: 1px solid var(--border);
   color: var(--foreground);
 }
 
-.prose tbody tr:last-child td {
+.prose table:not(.md-table) tbody tr:last-child td {
   border-bottom: none;
 }
 
-.prose tbody tr:nth-child(even) {
+.prose table:not(.md-table) tbody tr:nth-child(even) {
   background-color: color-mix(in oklab, var(--muted) 55%, transparent);
 }
 
 @media (max-width: 640px) {
-  .prose table {
+  .prose table:not(.md-table) {
     font-size: 0.85rem;
   }
-  .prose thead th,
-  .prose tbody td {
+  .prose table:not(.md-table) thead th,
+  .prose table:not(.md-table) tbody td {
     padding: 0.6rem 0.75rem;
   }
 }
@@ -325,8 +326,98 @@ html.native-app [data-landing] { display: none; }
 .md-table tr:last-child td {
   border-bottom: 0;
 }
+/* Tables of short cells (schedules, cost tables) and two-column tables fit a
+   phone without the wordy-table minimum; they still scroll if truly too wide. */
+.md-table[data-compact],
+.md-table[data-cols='2'] {
+  min-width: 0;
+}
+.md-table[data-compact] {
+  font-variant-numeric: tabular-nums;
+}
+.md-table[data-compact] th,
+.md-table[data-compact] td {
+  padding: 0.5rem 0.625rem;
+}
 .md-table tbody tr:nth-child(even) td {
   background: color-mix(in oklab, var(--muted) 45%, transparent);
+}
+.md-table-wrap {
+  container-type: inline-size;
+}
+/* On a narrow screen, short-cell tables tighten a little more to fit. */
+@container (max-width: 24rem) {
+  .md-table[data-compact] {
+    font-size: 0.875rem;
+  }
+  .md-table[data-compact] th,
+  .md-table[data-compact] td {
+    padding: 0.5rem 0.5rem;
+  }
+}
+@container (max-width: 19rem) {
+  .md-table[data-compact] th,
+  .md-table[data-compact] td {
+    padding: 0.5rem 0.375rem;
+  }
+}
+/* Wordy tables of three or more columns become stacked rows on a narrow
+   screen: one card per row, each cell labelled with its column heading, so
+   nothing hides behind a sideways scroll. */
+@container (max-width: 34rem) {
+  .md-table[data-stack] {
+    min-width: 0;
+  }
+  .md-table[data-stack] thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .md-table[data-stack],
+  .md-table[data-stack] tbody,
+  .md-table[data-stack] tr,
+  .md-table[data-stack] td {
+    display: block;
+  }
+  .md-table[data-stack] tr {
+    padding: 0.875rem 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .md-table[data-stack] tr:last-child {
+    border-bottom: 0;
+  }
+  .md-table[data-stack] tbody tr:nth-child(even) {
+    background: color-mix(in oklab, var(--muted) 45%, transparent);
+  }
+  .md-table[data-stack] td,
+  .md-table[data-stack] tbody tr:nth-child(even) td {
+    padding: 0;
+    border: 0;
+    background: none;
+  }
+  .md-table[data-stack] td + td {
+    margin-top: 0.5rem;
+  }
+  .md-table[data-stack] td:empty {
+    display: none;
+  }
+  .md-table[data-stack] td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 0.125rem;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+  }
+  .md-table[data-stack] td:first-child {
+    font-weight: 600;
+    color: var(--foreground);
+  }
 }
 
 

@@ -2,6 +2,7 @@
 // react-markdown + remark-math + rehype-katex + katex CSS are only fetched
 // the first time MarkdownView mounts on any page.
 import { lazy, Suspense, useEffect, useState } from 'react'
+import { MdTable } from './MdTable'
 
 const ReactMarkdown = lazy(() => import('react-markdown'))
 
@@ -36,7 +37,7 @@ export function MarkdownView({ content, className }: { content: string; classNam
         <ReactMarkdown
           remarkPlugins={[[plugins!.gfm, { singleTilde: false }], plugins!.remark]}
           rehypePlugins={[plugins!.rehype]}
-          components={{ table: ({ node: _node, ...props }: any) => <div className="not-prose my-3 overflow-x-auto rounded-xl border"><table className="md-table" {...props} /></div> } as any}
+          components={{ table: (props: any) => <MdTable className="not-prose my-3" {...props} /> } as any}
         >
           {content}
         </ReactMarkdown>
