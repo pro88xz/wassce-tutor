@@ -57,7 +57,7 @@ function AuthPage() {
   const field = 'h-12 w-full rounded-xl border bg-background px-4 text-base outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20'
 
   return (
-    <div className="flex min-h-[80vh] items-center justify-center px-1 py-6">
+    <div className="auth-page flex min-h-[80vh] items-center justify-center px-1 py-6">
       <div className="w-full max-w-sm space-y-6">
         <div className="space-y-3 text-center">
           <a href="/" aria-label="WASSCE Tutor home" className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-white transition-colors hover:bg-brand-strong">
