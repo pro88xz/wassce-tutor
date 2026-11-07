@@ -1,0 +1,2008 @@
+{
+ "name": "english_set2_p1",
+ "label": "English Language: set 2 (grammar and vocabulary)",
+ "subject_slug": "english-language",
+ "papers": [
+  {
+   "id": "ec2f580e-77ad-56d3-8304-ac5d4b33aa1a",
+   "topic": "Parts of Speech",
+   "title": "Parts of Speech: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on parts of speech, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 110,
+   "questions": [
+    {
+     "id": "7019377b-ec5e-5418-b0ad-d17353f84169",
+     "key": "eng-pos-01",
+     "stem": "What part of speech is the word in bold?\n\nAbu ran **fast** to catch the last poda-poda.",
+     "image_url": null,
+     "explanation": "A word's part of speech depends on its job in the sentence. *Fast* tells us **how** Abu ran, so it modifies the verb: an adverb.\n\n**Why the other options are wrong**\n\n- adjective: *Fast* is an adjective when it describes a noun (*a fast car*). Here it tells us how Abu ran.\n- verb: *To fast* (go without food) is a verb, but here *ran* is the verb.\n- noun: *A fast* (a period without food) is a noun, but here the word describes the action.",
+     "position": 1,
+     "options": [
+      {
+       "id": "0ff4e4db-99f3-508f-b3a9-4c4dcbe99702",
+       "label": "A",
+       "content": "adverb",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5c3290e4-ad03-58e2-bca1-7616bb6bc6a7",
+       "label": "B",
+       "content": "adjective",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9f3c9646-b93a-5e57-b3df-cee6e08007f2",
+       "label": "C",
+       "content": "verb",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "92f95232-012b-5e7f-b661-bedf89a16705",
+       "label": "D",
+       "content": "noun",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dda033af-4fa9-592c-860c-172d1f2e4c84",
+     "key": "eng-pos-02",
+     "stem": "What part of speech is the word in bold?\n\nThe **light** in the science laboratory is too dim for the experiment.",
+     "image_url": null,
+     "explanation": "*The light* is the subject of the sentence: it names a thing, so it is a noun.\n\n**Why the other options are wrong**\n\n- adjective: *Light* is an adjective in *a light bag*. Here it is the thing that is too dim.\n- verb: *Light* is a verb in *light the lamp*. Here the verb is *is*.\n- adverb: *Light* is used as an adverb in *travel light*. Here it names a thing.",
+     "position": 2,
+     "options": [
+      {
+       "id": "ccc1ed0f-3c93-5614-92a0-4510dc55ab18",
+       "label": "A",
+       "content": "adjective",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4c2ee60e-3dad-5edd-a476-06ad5578419f",
+       "label": "B",
+       "content": "noun",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8b40ddb3-5ce7-5f9c-8cbd-d007b2de447e",
+       "label": "C",
+       "content": "verb",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "002e18f1-d264-51c0-840d-2c62a161d0ac",
+       "label": "D",
+       "content": "adverb",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "994bde00-bc4d-53ee-b555-11278bedb6ff",
+     "key": "eng-pos-03",
+     "stem": "What part of speech is the word in bold?\n\nWe stayed inside the classroom **until** the rain stopped.",
+     "image_url": null,
+     "explanation": "*Until* joins the clause *the rain stopped* to the main clause, so here it is a conjunction.\n\n**Why the other options are wrong**\n\n- preposition: *Until* is a preposition when a noun follows it (*until Friday*). Here a full clause follows: *the rain stopped*.\n- adverb: *Until* does not modify a verb here; it joins two clauses.\n- pronoun: *Until* does not stand in place of a noun.",
+     "position": 3,
+     "options": [
+      {
+       "id": "340fb285-611c-5420-aeca-48c352d404b8",
+       "label": "A",
+       "content": "preposition",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "17423a26-37f1-5c1e-8881-960aabafbb8c",
+       "label": "B",
+       "content": "adverb",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ff96e1bc-420b-5e60-b2fa-18b91a3f47ea",
+       "label": "C",
+       "content": "conjunction",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "03694717-1657-5494-a78f-e8aa21eecb35",
+       "label": "D",
+       "content": "pronoun",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ef6729b6-4a58-52f0-81ff-27b9762df00d",
+     "key": "eng-pos-04",
+     "stem": "What part of speech is the word in bold?\n\n**Oh**, I have left my calculator at home!",
+     "image_url": null,
+     "explanation": "*Oh* expresses sudden feeling and stands apart from the grammar of the sentence: an interjection.\n\n**Why the other options are wrong**\n\n- conjunction: A conjunction joins words or clauses. *Oh* joins nothing.\n- adverb: *Oh* does not modify a verb, adjective or another adverb.\n- pronoun: *Oh* does not stand in place of a noun.",
+     "position": 4,
+     "options": [
+      {
+       "id": "38d19efa-0145-5ba4-ab0b-1bb8ded6b524",
+       "label": "A",
+       "content": "conjunction",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "917e0201-0cee-5f92-a7ef-498f5da55145",
+       "label": "B",
+       "content": "adverb",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "431783d4-0567-5983-8ac4-c57af56e2e90",
+       "label": "C",
+       "content": "pronoun",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9dfa955a-0fe3-5806-b313-40d1262bc3df",
+       "label": "D",
+       "content": "interjection",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d38bb803-2ef0-5516-9006-e4004837adf6",
+     "key": "eng-pos-05",
+     "stem": "What part of speech is the word in bold?\n\n**Before** the examination, the candidates revised together in the library.",
+     "image_url": null,
+     "explanation": "*Before the examination* is a phrase: *before* is followed by a noun phrase, so it is a preposition.\n\n**Why the other options are wrong**\n\n- conjunction: *Before* is a conjunction when a clause follows it (*before we started*). Here only a noun phrase follows: *the examination*.\n- adverb: *Before* is an adverb when it stands alone (*I have seen it before*).\n- noun: *Before* does not name anything.",
+     "position": 5,
+     "options": [
+      {
+       "id": "553acdcb-7324-550c-a65d-63422bf99932",
+       "label": "A",
+       "content": "preposition",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "55e1cddf-f184-512c-8bc3-eb7fa3ae3530",
+       "label": "B",
+       "content": "conjunction",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fbea1f0d-0cb4-5985-90e1-472a19149a25",
+       "label": "C",
+       "content": "adverb",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8dbf72a3-c25c-507b-a509-fd6b39417cbf",
+       "label": "D",
+       "content": "noun",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a68d145e-9df5-5044-acd1-cf184b425425",
+   "topic": "Adverbs",
+   "title": "Adverbs: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on adverbs, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 111,
+   "questions": [
+    {
+     "id": "1f9b637a-328e-5143-8b7b-648b0eeffa8f",
+     "key": "eng-adv-01",
+     "stem": "Choose the option that best completes the sentence.\n\nAlhaji drives very ____ on the Freetown–Bo highway.",
+     "image_url": null,
+     "explanation": "Adverbs of manner tell us **how** something is done, and many are formed by adding *-ly* to the adjective: *careful* → *carefully*.\n\n**Why the other options are wrong**\n\n- careful: *Careful* is an adjective. To describe how he drives, we need the adverb.\n- carefuly: The adverb keeps both l's: *careful* + *-ly* = *carefully*.\n- care: *Care* is a noun or a verb, not a word that describes how someone drives.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a36018b2-7320-506c-b51c-4207c0da9a85",
+       "label": "A",
+       "content": "careful",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6710472b-52e1-5aff-b6f6-5039c2a9a3b9",
+       "label": "B",
+       "content": "carefully",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "cc06de7a-eea6-5545-a2c3-24b010185976",
+       "label": "C",
+       "content": "carefuly",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "23ffe24f-c40a-5d26-9443-ca0e8500cc3f",
+       "label": "D",
+       "content": "care",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a1c0b95e-1438-5019-b56e-19d66c3bc333",
+     "key": "eng-adv-02",
+     "stem": "Which sentence is correctly written?",
+     "image_url": null,
+     "explanation": "Adverbs of frequency (*always, usually, often, never*) go after *be* (*she is always late*) but before other main verbs (*she always arrives late*).\n\n**Why the other options are wrong**\n\n- She always is late for assembly.: Adverbs of frequency come **after** the verb *be*, not before it.\n- Always she is late for assembly.: An adverb of frequency does not normally open a sentence like this.\n- She is late always for assembly.: The adverb of frequency comes between *is* and the adjective, not after the adjective.",
+     "position": 2,
+     "options": [
+      {
+       "id": "3f011290-0d17-5b84-8d22-7d7ac6b57ad2",
+       "label": "A",
+       "content": "She always is late for assembly.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b95af06e-a8a1-522e-80e8-04bd85c5f403",
+       "label": "B",
+       "content": "Always she is late for assembly.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e2e3c09c-4a8b-5317-ae46-65aaae57b7c7",
+       "label": "C",
+       "content": "She is always late for assembly.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "bb9adb50-50ea-52f8-a793-d25b4136c4f6",
+       "label": "D",
+       "content": "She is late always for assembly.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3f4e57b8-9885-55b1-a091-9489fef24e82",
+     "key": "eng-adv-03",
+     "stem": "Choose the option that best completes the sentence.\n\nMusa worked ____ to pass his examinations.",
+     "image_url": null,
+     "explanation": "*Hard* is both an adjective and an adverb: *he worked hard*. *Hardly* is a different word meaning *scarcely*.\n\n**Why the other options are wrong**\n\n- hardly: *Hardly* means *almost not*. *He hardly worked* is the opposite of what is meant.\n- hardy: *Hardy* is an adjective meaning strong and tough, as in *a hardy plant*.\n- hardness: *Hardness* is a noun. We need an adverb to describe how he worked.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d830426f-49d0-57b2-9742-0fba1c39690a",
+       "label": "A",
+       "content": "hardly",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e2b10dae-81c6-5c91-ab4b-99b9de837d67",
+       "label": "B",
+       "content": "hardy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "55193186-815f-5ad1-97cb-8f76e7edcd63",
+       "label": "C",
+       "content": "hardness",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4d69ad49-0719-52b1-8af0-6aff593e9715",
+       "label": "D",
+       "content": "hard",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4ef3efc5-e3ca-5577-bdb8-5f50f2754574",
+     "key": "eng-adv-04",
+     "stem": "Choose the option that best completes the sentence.\n\nFatu sang ____ at the cultural festival that the whole hall stood up and cheered.",
+     "image_url": null,
+     "explanation": "A result is shown with *so* + adjective/adverb + *that*: *She sang so well that everyone cheered*.\n\n**Why the other options are wrong**\n\n- so good: *Good* is an adjective. To describe how she sang, we need the adverb *well*.\n- such well: *Such* goes with a noun (*such a good voice*), not with an adverb.\n- very well: *Very* cannot introduce a result clause. The pattern is *so* + adverb + *that*.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e4c5cc82-436d-57b0-9515-74e6019ab497",
+       "label": "A",
+       "content": "so well",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3af91d65-571d-5d12-b148-f4787218bdad",
+       "label": "B",
+       "content": "so good",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "60629c7c-7653-5305-8b9e-fbba7e460b02",
+       "label": "C",
+       "content": "such well",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "02b088d4-4008-53c5-a2fb-723c13193fa7",
+       "label": "D",
+       "content": "very well",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0cf49b8f-66ff-5994-91b7-21132a0e9f29",
+     "key": "eng-adv-05",
+     "stem": "Choose the option that best completes the sentence.\n\nOf all the runners in the race, Sahr ran the ____.",
+     "image_url": null,
+     "explanation": "*Fast* compares with *-er* and *-est*: *fast, faster, fastest*. Comparing more than two takes the superlative.\n\n**Why the other options are wrong**\n\n- most fast: Short adverbs like *fast* add *-est*, not *most*.\n- fastly: *Fast* is already an adverb; there is no word *fastly*.\n- faster: *Of all the runners* compares more than two, so we need the superlative.",
+     "position": 5,
+     "options": [
+      {
+       "id": "821473d4-74d2-5c94-a7e6-e580c2afced6",
+       "label": "A",
+       "content": "most fast",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c69001dc-0356-597e-9fed-33e18ca42306",
+       "label": "B",
+       "content": "fastest",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "72102501-abcc-577a-b6b2-75b6b907aca4",
+       "label": "C",
+       "content": "fastly",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "63637750-0097-5649-ad3e-ae4d00420dee",
+       "label": "D",
+       "content": "faster",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "14155bee-408d-5780-8751-be5819bc2fbf",
+   "topic": "Articles",
+   "title": "Articles: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on articles, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 112,
+   "questions": [
+    {
+     "id": "3502ba43-905a-5b1f-8c5b-0affd52ddc8f",
+     "key": "eng-art-01",
+     "stem": "Choose the option that best completes the sentence.\n\nMariatu is ____ honest girl; she returned the money she found.",
+     "image_url": null,
+     "explanation": "The choice between *a* and *an* depends on the first **sound**, not the letter: *an honest girl*, *an hour*, but *a university*.\n\n**Why the other options are wrong**\n\n- a: *Honest* begins with a vowel sound because the *h* is silent, so it takes *an*.\n- (no article): A singular countable noun such as *girl* needs an article here.\n- much: *Much* is used with uncountable nouns, not before *honest girl*.",
+     "position": 1,
+     "options": [
+      {
+       "id": "9beea4b7-1901-5041-b515-f82888ee6c9b",
+       "label": "A",
+       "content": "a",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ceae15ab-84e9-5aab-a8c5-b94c590b2656",
+       "label": "B",
+       "content": "(no article)",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ae74dde5-f7cc-51a0-b27c-bfb42cc65d10",
+       "label": "C",
+       "content": "an",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f6ce3d1c-54ec-5a9b-9a50-cbb21fc5c28a",
+       "label": "D",
+       "content": "much",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cf6ab4d2-2927-5fa5-b6ff-c2d598a2f7fa",
+     "key": "eng-art-02",
+     "stem": "Choose the option that best completes the sentence.\n\n____ Niger is one of the longest rivers in West Africa.",
+     "image_url": null,
+     "explanation": "Rivers, seas, oceans and mountain ranges take *the*: *the Niger*, *the Atlantic Ocean*, *the Loma Mountains*.\n\n**Why the other options are wrong**\n\n- A: *A* means *one of many*. There is only one river Niger.\n- An: *An* means *one of many*, and *Niger* does not begin with a vowel sound.\n- (no article): Names of rivers, seas and oceans take *the*: *the Niger, the Atlantic*.",
+     "position": 2,
+     "options": [
+      {
+       "id": "3732df76-95a0-5ffc-b83d-669aa304c131",
+       "label": "A",
+       "content": "A",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c6f666a2-4247-5541-9272-93e33edd9ade",
+       "label": "B",
+       "content": "An",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "25f67967-1456-5bd0-a3c5-83041dd05abd",
+       "label": "C",
+       "content": "(no article)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6d7aa965-6b07-5f1b-9937-7409402a8e9f",
+       "label": "D",
+       "content": "The",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2409b0f6-ebc0-5026-93d8-c29d22bd4303",
+     "key": "eng-art-03",
+     "stem": "Choose the option that best completes the sentence.\n\nMeeting the President was ____ unique experience for the prize-winners.",
+     "image_url": null,
+     "explanation": "*A* goes before consonant **sounds**, even when the letter is a vowel: *a unique experience*, *a university*, *a European*.\n\n**Why the other options are wrong**\n\n- an: *Unique* begins with a *y* sound (/juː/), which is a consonant sound, so it takes *a*.\n- (no article): A singular countable noun (*experience*) needs an article here.\n- much: *Much* is not used before a singular countable noun.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0860bbfb-bd27-5c1d-b49e-d4dcffcb63db",
+       "label": "A",
+       "content": "a",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b5ba5e51-1510-5863-9052-3d70e2aa1f37",
+       "label": "B",
+       "content": "an",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "896dcb22-a52b-588a-a5c6-d13a27518e38",
+       "label": "C",
+       "content": "(no article)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a5e07ea3-69ed-5553-976e-2f0a414f3fa4",
+       "label": "D",
+       "content": "much",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2387b9a2-0d72-5209-b448-d4cae42e8f59",
+     "key": "eng-art-04",
+     "stem": "Choose the option that best completes the sentence.\n\nWe usually have ____ breakfast at seven o'clock before school.",
+     "image_url": null,
+     "explanation": "Meals (*breakfast, lunch, supper*) take no article when we talk about them in general: *have breakfast*.\n\n**Why the other options are wrong**\n\n- a: Meals in general take no article. *A* is possible only with an adjective, as in *a big breakfast*.\n- the: *The breakfast* would point to one particular meal already mentioned.\n- an: *Breakfast* does not begin with a vowel sound, and meals in general take no article.",
+     "position": 4,
+     "options": [
+      {
+       "id": "cb99a6f9-d57a-5ac5-9abf-08006b01ec0c",
+       "label": "A",
+       "content": "a",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "110d81d9-e7a3-50e8-9e0f-8b1b3851c2fd",
+       "label": "B",
+       "content": "(no article)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "78f132ce-c638-5ace-a59d-fffc47511ebb",
+       "label": "C",
+       "content": "the",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "47eaabd4-d1b8-5cef-aa9a-654e7c3ae2df",
+       "label": "D",
+       "content": "an",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0e5dbbe2-f943-59b9-b2fa-dda50c2e442e",
+     "key": "eng-art-05",
+     "stem": "Choose the option that best completes the sentence.\n\n____ sun was shining brightly on the morning of the inter-house sports.",
+     "image_url": null,
+     "explanation": "Things that are unique take *the*: *the sun*, *the moon*, *the sky*.\n\n**Why the other options are wrong**\n\n- A: There is only one sun, so we use *the*, not *a*.\n- An: There is only one sun, and *sun* begins with a consonant sound.\n- (no article): *Sun* is a singular noun for something unique, which takes *the*.",
+     "position": 5,
+     "options": [
+      {
+       "id": "8b1e58e0-0c67-5290-b2ca-a961945afe10",
+       "label": "A",
+       "content": "A",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "732ce819-f53f-5421-9869-3c43cd52d22c",
+       "label": "B",
+       "content": "An",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9f106db8-a105-5183-bec9-a04d9c4c6a2e",
+       "label": "C",
+       "content": "The",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "05757c69-e397-57a0-9df8-1822ed0933da",
+       "label": "D",
+       "content": "(no article)",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "669d61ee-1d14-5739-a959-56dfac74dde6",
+   "topic": "Question Tags",
+   "title": "Question Tags: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on question tags, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 113,
+   "questions": [
+    {
+     "id": "5f91b9e0-fb04-5569-badd-8cb083955c92",
+     "key": "eng-tag-01",
+     "stem": "Choose the option that best completes the sentence.\n\nYou are coming to the PTA meeting, ____?",
+     "image_url": null,
+     "explanation": "A question tag repeats the auxiliary verb and the subject pronoun, with the opposite polarity: *You are coming, aren't you?*\n\n**Why the other options are wrong**\n\n- are you: A positive statement takes a negative tag.\n- isn't it: *Isn't it* is not a tag for every sentence. The tag repeats the auxiliary (*are*) and the subject (*you*).\n- don't you: The auxiliary in the statement is *are*, so the tag uses *are*, not *do*.",
+     "position": 1,
+     "options": [
+      {
+       "id": "934fae64-adc3-5068-8dc0-228b9a96ff56",
+       "label": "A",
+       "content": "are you",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e6dbef40-cd74-52b1-bfe7-23bfc79e5986",
+       "label": "B",
+       "content": "isn't it",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "49733e91-4a10-5bd9-b204-f85bd7328131",
+       "label": "C",
+       "content": "don't you",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "71f3df49-c74d-5f03-8eb3-f92ea4510f32",
+       "label": "D",
+       "content": "aren't you",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a1b6f3b6-3989-5e8f-8d18-3c64e49cd681",
+     "key": "eng-tag-02",
+     "stem": "Choose the option that best completes the sentence.\n\nKadiatu has finished her assignment, ____?",
+     "image_url": null,
+     "explanation": "The present perfect uses *has* as its auxiliary, so the tag is *hasn't she?*\n\n**Why the other options are wrong**\n\n- didn't she: The auxiliary in the statement is *has*, so the tag uses *has*.\n- doesn't she: The auxiliary is *has*, not *does*.\n- isn't it: The tag must repeat the statement's auxiliary and its subject, *she*.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f907b49f-e47d-5047-9dd7-4240561fa245",
+       "label": "A",
+       "content": "hasn't she",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b44340dc-0fdb-52f4-8e2e-33259c377a14",
+       "label": "B",
+       "content": "didn't she",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f6e2972a-1698-5f84-96c8-fb0d0977bc52",
+       "label": "C",
+       "content": "doesn't she",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f2f6870a-9f47-5894-b22a-b9464fbccc7c",
+       "label": "D",
+       "content": "isn't it",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6c67816d-e972-5efc-8125-9205e9ef2492",
+     "key": "eng-tag-03",
+     "stem": "Choose the option that best completes the sentence.\n\nLet's go to Lumley Beach on Saturday, ____?",
+     "image_url": null,
+     "explanation": "Suggestions beginning with *Let's* take the tag *shall we?*\n\n**Why the other options are wrong**\n\n- will we: After *Let's* (a suggestion that includes the speaker), the tag is *shall we*.\n- don't we: *Let's* is not followed by a *do* tag.\n- let's not: *Let's not* is a negative suggestion, not a tag.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b8a39ddd-9c03-577f-b999-8ed8973602dd",
+       "label": "A",
+       "content": "will we",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dc7652ed-c060-50dd-b172-8c004d8c09ed",
+       "label": "B",
+       "content": "shall we",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1798ab2f-0cbe-5683-a0a1-414fe590a99d",
+       "label": "C",
+       "content": "don't we",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b1c54462-3fde-54ae-82c3-032f16014bab",
+       "label": "D",
+       "content": "let's not",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3e54891c-4477-5014-9a1f-bdf0610d1a67",
+     "key": "eng-tag-04",
+     "stem": "Choose the option that best completes the sentence.\n\nI am your best friend, ____?",
+     "image_url": null,
+     "explanation": "After *I am*, the negative tag is the special form *aren't I?* (*Am I not?* is the formal alternative.)\n\n**Why the other options are wrong**\n\n- amn't I: *Amn't I* is not standard English.\n- isn't I: *Is* does not go with *I*.\n- don't I: The auxiliary is *am*, not *do*.",
+     "position": 4,
+     "options": [
+      {
+       "id": "eea941a4-52ec-53ab-be12-38e8bddd0a9d",
+       "label": "A",
+       "content": "amn't I",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "25ae86fc-88a3-5a8b-b2a1-e1a06c120d64",
+       "label": "B",
+       "content": "isn't I",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0735ed5c-200d-55be-a754-21004201cbcb",
+       "label": "C",
+       "content": "aren't I",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "66c680f1-d8c0-5096-a5d9-ee785611709c",
+       "label": "D",
+       "content": "don't I",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c897a1fb-ea70-582b-b144-f8788124056c",
+     "key": "eng-tag-05",
+     "stem": "Choose the option that best completes the sentence.\n\nNobody came to the party, ____?",
+     "image_url": null,
+     "explanation": "Words like *nobody*, *never* and *nothing* make a statement negative, so the tag is positive. *Nobody*, *somebody* and *everybody* take *they*: *did they?*\n\n**Why the other options are wrong**\n\n- didn't they: *Nobody* makes the statement negative, so the tag is positive.\n- didn't it: The tag pronoun for *nobody*, *everybody* and *somebody* is *they*, and the tag must be positive here.\n- did it: The tag pronoun for *nobody* is *they*, not *it*.",
+     "position": 5,
+     "options": [
+      {
+       "id": "817f8e5d-a8d8-54f9-8671-b6cd6fa24812",
+       "label": "A",
+       "content": "didn't they",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d64f4a8c-ca9a-5808-b72f-e1391b4cc471",
+       "label": "B",
+       "content": "didn't it",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3af9e369-a9e6-5849-b89f-72355a0284ce",
+       "label": "C",
+       "content": "did it",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "17aa3a83-897d-5ea8-8109-b4a7c0ecf675",
+       "label": "D",
+       "content": "did they",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eb712601-3497-5f74-ae9b-8a3ce4df9cc4",
+   "topic": "Modal Verbs",
+   "title": "Modal Verbs: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on modal verbs, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 114,
+   "questions": [
+    {
+     "id": "cbe82023-3119-544d-8d52-a5fdf21a60d0",
+     "key": "eng-modal-01",
+     "stem": "Choose the option that best completes the sentence.\n\nThe rules are strict: candidates ____ switch off their phones before entering the examination hall.",
+     "image_url": null,
+     "explanation": "*Must* expresses a strong obligation or rule: *candidates must switch off their phones*.\n\n**Why the other options are wrong**\n\n- might: *Might* expresses possibility, but the rules make this an obligation.\n- would: *Would* expresses willingness or a condition, not a rule.\n- could: *Could* expresses ability or possibility, not an obligation.",
+     "position": 1,
+     "options": [
+      {
+       "id": "b39c7fda-495a-576c-9f11-0e72a41a8ce5",
+       "label": "A",
+       "content": "must",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7431d826-3ab3-5228-bd3d-b7641c4ee643",
+       "label": "B",
+       "content": "might",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bc11d5dc-aefd-51fe-8ab5-18c2121e25bc",
+       "label": "C",
+       "content": "would",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4d0fc291-f2b3-5951-8f59-b2c79585cae9",
+       "label": "D",
+       "content": "could",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "216723f2-c64e-516d-a104-c5daaec783eb",
+     "key": "eng-modal-02",
+     "stem": "Choose the option that best completes the sentence.\n\nThe ground is wet and the gutters are full. It ____ rained heavily last night.",
+     "image_url": null,
+     "explanation": "To draw a confident conclusion about the past, use *must have* + past participle: *It must have rained*.\n\n**Why the other options are wrong**\n\n- must had: After a modal we use *have*, never *had*: *must have rained*.\n- should have: *Should have* means something was expected but did not happen. Here we are drawing a conclusion.\n- can have: *Can have* is not used for a confident conclusion about the past.",
+     "position": 2,
+     "options": [
+      {
+       "id": "318bd74f-d28f-591c-a1ea-b38063b074c6",
+       "label": "A",
+       "content": "must had",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f2942645-e42b-54af-902b-b44d0516b6e9",
+       "label": "B",
+       "content": "must have",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "80e440da-9bd1-5267-b8d1-cc0ae9d90a81",
+       "label": "C",
+       "content": "should have",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "06129562-8604-5775-af20-5738a5cfe1f6",
+       "label": "D",
+       "content": "can have",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9e0c3659-1982-5bfb-904e-9c7d793d78ce",
+     "key": "eng-modal-03",
+     "stem": "Choose the option that best completes the sentence.\n\n____ I borrow your dictionary, please?",
+     "image_url": null,
+     "explanation": "*May* (or *can*, less formally) asks for permission: *May I borrow your dictionary?*\n\n**Why the other options are wrong**\n\n- Must: *Must* expresses obligation, not a polite request for permission.\n- Ought: *Ought* needs *to* (*ought to*) and gives advice; it does not ask permission.\n- Would: *Would I…?* does not ask for permission.",
+     "position": 3,
+     "options": [
+      {
+       "id": "511fba19-9004-53b6-bfb1-ceaaeef83e6b",
+       "label": "A",
+       "content": "Must",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "375f2052-b656-5024-9fab-8b8a35132053",
+       "label": "B",
+       "content": "Ought",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c021d89e-2220-5410-9e9f-6d476cb7f7b1",
+       "label": "C",
+       "content": "May",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f56443ee-72c1-5e64-a2df-6566e5318184",
+       "label": "D",
+       "content": "Would",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "db52de47-ac76-520b-94bc-0857fc6e952d",
+     "key": "eng-modal-04",
+     "stem": "Choose the option that best completes the sentence.\n\nYou should ____ your teeth at least twice a day.",
+     "image_url": null,
+     "explanation": "Modal verbs (*can, could, may, might, must, shall, should, will, would*) are followed by the base form: *should brush*.\n\n**Why the other options are wrong**\n\n- to brush: *Should* is a modal, so it is followed by the base form without *to*.\n- brushing: A modal is followed by the base form, not the -ing form.\n- brushed: A modal is followed by the base form, not the past form.",
+     "position": 4,
+     "options": [
+      {
+       "id": "8c3d9f57-6f0d-5552-b38d-a08950df3f2d",
+       "label": "A",
+       "content": "to brush",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "43307876-69ed-573c-a845-f69999df9ff8",
+       "label": "B",
+       "content": "brushing",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e74d415c-4cfc-531b-ad74-e75a133d0396",
+       "label": "C",
+       "content": "brushed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f5a30581-72df-5a70-90d4-4a7d9955de9f",
+       "label": "D",
+       "content": "brush",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bba4c2e4-aa1d-5c46-b4bc-a39b8b0535a4",
+     "key": "eng-modal-05",
+     "stem": "Choose the option that best completes the sentence.\n\nWhen he was younger, my grandfather ____ climb a palm tree in a few minutes.",
+     "image_url": null,
+     "explanation": "*Could* is the past of *can* for general ability: *he could climb a palm tree*.\n\n**Why the other options are wrong**\n\n- can: *When he was younger* puts the ability in the past, so we need *could*.\n- may: *May* expresses permission or possibility, not past ability.\n- must: *Must* expresses obligation, not ability.",
+     "position": 5,
+     "options": [
+      {
+       "id": "7781a0c5-0777-5660-8652-81f6d33dc5b8",
+       "label": "A",
+       "content": "could",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "bb361e6d-ef79-503a-8306-f20181f8a118",
+       "label": "B",
+       "content": "can",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4788c3f3-a749-5f5d-ba5f-f10c5907af1a",
+       "label": "C",
+       "content": "may",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ecf58803-2f73-5dff-ba34-ae8ac16f3412",
+       "label": "D",
+       "content": "must",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "12def718-4506-549a-b3f7-cda928d368f7",
+   "topic": "Conditionals",
+   "title": "Conditionals: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on conditionals, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 115,
+   "questions": [
+    {
+     "id": "ab8ced65-9a40-599d-9178-20a83f3339cd",
+     "key": "eng-cond-01",
+     "stem": "Choose the option that best completes the sentence.\n\nIf it rains tomorrow, the school ____ the sports meeting.",
+     "image_url": null,
+     "explanation": "First conditional (a real possibility): *If* + present simple, *will* + base form: *If it rains, the school will postpone…*\n\n**Why the other options are wrong**\n\n- would postpone: *Would* belongs to the second conditional (unlikely or imaginary). Rain tomorrow is a real possibility.\n- postponed: The result is in the future, so the past tense does not fit.\n- would have postponed: *Would have* belongs to the third conditional, about the past.",
+     "position": 1,
+     "options": [
+      {
+       "id": "50080176-b368-51f7-9689-873bb8643d4c",
+       "label": "A",
+       "content": "would postpone",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ae0db226-c243-5bfd-9a7d-0c9bfe170074",
+       "label": "B",
+       "content": "will postpone",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "384ff630-7f9b-5dea-8631-6f6c7daf2516",
+       "label": "C",
+       "content": "postponed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c85329ec-cb8c-5b29-a82e-3e0f3010a093",
+       "label": "D",
+       "content": "would have postponed",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d02de5af-ba26-5d1d-a951-92d723ddd6ae",
+     "key": "eng-cond-02",
+     "stem": "Choose the option that best completes the sentence.\n\nIf I ____ the President, I would build a secondary school in every chiefdom.",
+     "image_url": null,
+     "explanation": "Second conditional (imaginary): *If* + past, *would* + base form. With *I*, formal English uses *were*: *If I were the President…*\n\n**Why the other options are wrong**\n\n- am: *Would build* shows an imaginary situation, which needs the past form in the *if* clause.\n- will be: *Will* is not used in the *if* clause, and the situation is imaginary.\n- be: The *if* clause needs a finite verb; *if I be* is not standard modern English.",
+     "position": 2,
+     "options": [
+      {
+       "id": "43d8c2c1-a3d8-5407-8b52-dbe7e48d551f",
+       "label": "A",
+       "content": "am",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "83d29b1f-28dc-50af-9a43-7b09506c6fce",
+       "label": "B",
+       "content": "will be",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2d7cb4ff-5cc3-5673-b76b-0f0bcf73b018",
+       "label": "C",
+       "content": "were",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fda68bdc-2a95-539e-af96-065fcdff688c",
+       "label": "D",
+       "content": "be",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9489b8e2-cf98-5f13-b53f-2ea5d373f6d5",
+     "key": "eng-cond-03",
+     "stem": "Choose the option that best completes the sentence.\n\nIf you had studied harder last year, you ____ the examination.",
+     "image_url": null,
+     "explanation": "Third conditional (an imaginary past): *If* + past perfect, *would have* + past participle.\n\n**Why the other options are wrong**\n\n- would pass: *Had studied* is about the past, so the result must be in the past too: *would have passed*.\n- will have passed: *Will* is not used for an imaginary past result.\n- had passed: The result clause needs *would have* + past participle.",
+     "position": 3,
+     "options": [
+      {
+       "id": "17260864-505c-5811-abb2-1b9acd667c7b",
+       "label": "A",
+       "content": "would pass",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "04df7914-d29d-5d5d-bdb1-54221a12a44a",
+       "label": "B",
+       "content": "will have passed",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "81b2c8ee-2aeb-5de2-9079-c8636fca98a0",
+       "label": "C",
+       "content": "had passed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "256c93ad-95a2-508e-aeac-8467feebb66e",
+       "label": "D",
+       "content": "would have passed",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "14969d37-2013-5dd1-96d5-899ad03b2a6a",
+     "key": "eng-cond-04",
+     "stem": "Choose the option that best completes the sentence.\n\nUnless he ____ now, he will miss the last ferry.",
+     "image_url": null,
+     "explanation": "*Unless* = *if not*, and like *if* it takes the present simple for the future: *Unless he leaves now…*\n\n**Why the other options are wrong**\n\n- will leave: *Will* is not used in the *unless* clause; use the present simple.\n- left: The situation is about the future, so the past tense does not fit.\n- doesn't leave: *Unless* already means *if not*, so adding *not* makes a double negative.",
+     "position": 4,
+     "options": [
+      {
+       "id": "1457b870-7d3c-51ea-9563-607067f3d104",
+       "label": "A",
+       "content": "leaves",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "edab3af7-4fd1-5acf-b611-6c30285ad62a",
+       "label": "B",
+       "content": "will leave",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ce907be1-da46-53d6-beb1-b06f87817838",
+       "label": "C",
+       "content": "left",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "eff08e49-bdd8-5d42-b734-3e737088c44e",
+       "label": "D",
+       "content": "doesn't leave",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5459eebe-54d9-5ca1-a3a2-887f4f12251a",
+     "key": "eng-cond-05",
+     "stem": "Choose the option that best completes the sentence.\n\nHad I known about the meeting, I ____ attended it.",
+     "image_url": null,
+     "explanation": "*Had I known* is a formal way of saying *If I had known* (third conditional), so the result is *I would have attended*.\n\n**Why the other options are wrong**\n\n- will have: This is an imaginary past situation, which needs *would have*.\n- would: The result is about the past, so we need *would have* + past participle.\n- had: *Had attended* cannot form the result clause of a conditional.",
+     "position": 5,
+     "options": [
+      {
+       "id": "273f25dc-8037-5c29-83ae-9e6980f4d8a2",
+       "label": "A",
+       "content": "will have",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7285beb4-f01a-5b11-8a29-dc25311dd9ed",
+       "label": "B",
+       "content": "would have",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "89bdceef-2149-5ac0-afa7-a02a2c13c78e",
+       "label": "C",
+       "content": "would",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6e31f476-7a66-5a29-923a-8d16aa4c8231",
+       "label": "D",
+       "content": "had",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "65e7f113-83e4-5b95-994e-301469e402dc",
+   "topic": "Direct and Reported Speech",
+   "title": "Direct and Reported Speech: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on direct and reported speech, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 116,
+   "questions": [
+    {
+     "id": "55f9da83-f3d5-5c80-be9a-07cada7d77b7",
+     "key": "eng-rep-01",
+     "stem": "Choose the option that best reports this sentence.\n\nAminata said, \"I am going to the market now.\"",
+     "image_url": null,
+     "explanation": "Reporting after a past verb: the pronoun changes (*I* → *she*), the tense moves back (*am going* → *was going*) and time words change (*now* → *then*).\n\n**Why the other options are wrong**\n\n- Aminata said that she is going to the market now.: In reported speech after *said*, the tense moves back (*am* → *was*) and *now* usually becomes *then*.\n- Aminata said that I was going to the market then.: *I* refers to Aminata, so it becomes *she*.\n- Aminata said that she was going to the market now.: *Now* refers to the moment she spoke, so it usually changes to *then*.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a7ac5c42-9612-51fa-9270-56c418ba9d37",
+       "label": "A",
+       "content": "Aminata said that she is going to the market now.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "46c1749e-5fdd-587d-8abc-1f39b36419f4",
+       "label": "B",
+       "content": "Aminata said that I was going to the market then.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "561df81f-3ce2-5cc1-964f-56a562c89b81",
+       "label": "C",
+       "content": "Aminata said that she was going to the market then.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "44b9abc5-4c2c-562d-99b2-2fe131932725",
+       "label": "D",
+       "content": "Aminata said that she was going to the market now.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "914b0f9f-ab49-5ad3-8668-81be9373716c",
+     "key": "eng-rep-02",
+     "stem": "Choose the option that best reports this sentence.\n\nThe teacher asked me, \"Where do you live?\"",
+     "image_url": null,
+     "explanation": "In a reported question, keep the question word, use statement word order (*where I lived*), move the tense back and drop the question mark.\n\n**Why the other options are wrong**\n\n- The teacher asked me where did I live.: A reported question uses statement word order, without *did*.\n- The teacher asked me where do I live?: The tense moves back, the word order becomes a statement, and there is no question mark.\n- The teacher asked me that where I lived.: Reported questions with a question word do not use *that*.",
+     "position": 2,
+     "options": [
+      {
+       "id": "bc828f05-7587-5398-94d2-ca03f8766f2b",
+       "label": "A",
+       "content": "The teacher asked me where did I live.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5905ab91-7ecb-50ce-a23e-d97187360ad1",
+       "label": "B",
+       "content": "The teacher asked me where do I live?",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "28f13927-375b-5b53-9337-ec9b61493547",
+       "label": "C",
+       "content": "The teacher asked me that where I lived.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a83da101-7cbc-531a-bee5-56cff4ef825f",
+       "label": "D",
+       "content": "The teacher asked me where I lived.",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a08c1f92-68fc-59ae-a724-117e19194998",
+     "key": "eng-rep-03",
+     "stem": "Choose the option that best reports this sentence.\n\nThe principal said to the boys, \"Stand up.\"",
+     "image_url": null,
+     "explanation": "Commands are reported with *tell/order* + person + *to* + base form: *told the boys to stand up*.\n\n**Why the other options are wrong**\n\n- The principal told the boys that stand up.: A reported command uses *to* + base form, not *that*.\n- The principal said the boys to stand up.: *Say* is not followed directly by the person; use *told the boys*.\n- The principal told the boys stood up.: A reported command uses *to* + base form: *to stand up*.",
+     "position": 3,
+     "options": [
+      {
+       "id": "eeffee55-6796-5b07-913b-468e1e6c6cd1",
+       "label": "A",
+       "content": "The principal told the boys to stand up.",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "67885c5a-c551-5e70-8a46-4456e82e5c3f",
+       "label": "B",
+       "content": "The principal told the boys that stand up.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f03366ff-960b-5bfa-952b-792754e28d79",
+       "label": "C",
+       "content": "The principal said the boys to stand up.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4328d2a8-d71e-5ed0-afbc-3b921ddd017d",
+       "label": "D",
+       "content": "The principal told the boys stood up.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b5f861d1-5531-523d-95b2-0005b5b31c9d",
+     "key": "eng-rep-04",
+     "stem": "Choose the option that best reports this sentence.\n\nHe asked, \"Have you seen my keys?\"",
+     "image_url": null,
+     "explanation": "Yes/no questions are reported with *if* or *whether* + statement word order, with the tense moved back.\n\n**Why the other options are wrong**\n\n- He asked if had I seen his keys.: A reported question uses statement word order: *I had seen*, not *had I seen*.\n- He asked that I had seen his keys.: Yes/no questions are reported with *if* or *whether*, not *that*.\n- He asked if I have seen my keys.: The tense moves back (*have seen* → *had seen*) and *my* becomes *his*.",
+     "position": 4,
+     "options": [
+      {
+       "id": "54dc0ee2-d7f1-555c-b7c6-153997761da5",
+       "label": "A",
+       "content": "He asked if had I seen his keys.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a382bfb6-30a0-57d2-97a2-1d00609368cc",
+       "label": "B",
+       "content": "He asked if I had seen his keys.",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "dfe453b8-fac0-5d5b-a601-3cac7e449527",
+       "label": "C",
+       "content": "He asked that I had seen his keys.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c1497efa-80be-5ae3-8b22-0e13ce867bfe",
+       "label": "D",
+       "content": "He asked if I have seen my keys.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0ccc9fe1-187a-57f4-8332-7797ea8088c4",
+     "key": "eng-rep-05",
+     "stem": "Choose the option that best reports this sentence.\n\nShe said, \"I will travel to Bo tomorrow.\"",
+     "image_url": null,
+     "explanation": "*Will* moves back to *would*, and time words shift: *tomorrow* → *the next day*, *today* → *that day*, *yesterday* → *the day before*.\n\n**Why the other options are wrong**\n\n- She said that she will travel to Bo tomorrow.: After *said*, *will* usually becomes *would* and *tomorrow* becomes *the next day*.\n- She said that she would travel to Bo yesterday.: *Tomorrow* becomes *the next day* (or *the following day*), not *yesterday*.\n- She said that she would travelled to Bo the next day.: *Would* is followed by the base form, *travel*.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f693137e-2b4d-5ac7-8603-7ac0e384324c",
+       "label": "A",
+       "content": "She said that she will travel to Bo tomorrow.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5bb97b76-1f69-5dac-80d1-388c89c16a55",
+       "label": "B",
+       "content": "She said that she would travel to Bo yesterday.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3014a877-e08b-5613-921b-f89f01896bcc",
+       "label": "C",
+       "content": "She said that she would travel to Bo the next day.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3ee1d294-304b-543d-898b-d54578f5c42d",
+       "label": "D",
+       "content": "She said that she would travelled to Bo the next day.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "51aa3711-f789-5042-b1d5-ca56a475cd29",
+   "topic": "Synonyms and Antonyms",
+   "title": "Synonyms and Antonyms: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on synonyms and antonyms, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 117,
+   "questions": [
+    {
+     "id": "6330012b-417c-573c-9b3a-298bb5677df8",
+     "key": "eng-syn-01",
+     "stem": "Choose the option nearest in meaning to the word in bold.\n\nThe headmaster was **furious** when he saw the broken window.",
+     "image_url": null,
+     "explanation": "*Furious* means extremely angry.\n\n**Why the other options are wrong**\n\n- surprised: Being surprised is not the same as being angry.\n- very sad: *Furious* describes strong anger, not sadness.\n- curious: *Curious* (wanting to know) only sounds a little like *furious*.",
+     "position": 1,
+     "options": [
+      {
+       "id": "276f58b9-75e3-522c-952a-4143c421dd96",
+       "label": "A",
+       "content": "surprised",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7789a899-25a3-5a15-8cd8-203beb26f405",
+       "label": "B",
+       "content": "very sad",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e9cec3c0-6861-5990-8472-e79b70e8b3b5",
+       "label": "C",
+       "content": "curious",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b25b9572-e4ee-5c2b-a0b0-8e09b013d0b2",
+       "label": "D",
+       "content": "very angry",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "203c7dd7-1962-5919-a7b1-628a4d812775",
+     "key": "eng-syn-02",
+     "stem": "Choose the option nearest in meaning to the word in bold.\n\nThe doctor warned that the disease is highly **contagious**.",
+     "image_url": null,
+     "explanation": "*Contagious* means easily passed from one person to another, which is what *infectious* means.\n\n**Why the other options are wrong**\n\n- deadly: A disease can be deadly without spreading from person to person.\n- painful: *Contagious* is about spreading, not about pain.\n- incurable: *Contagious* says nothing about whether the disease can be cured.",
+     "position": 2,
+     "options": [
+      {
+       "id": "0ec1bc29-8ff7-5b24-ad13-d660276232f6",
+       "label": "A",
+       "content": "infectious",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2840daca-4d07-5812-ac73-13596f35eef6",
+       "label": "B",
+       "content": "deadly",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e950ac9f-5ea2-5ada-9b93-ee2eb6c2f8cb",
+       "label": "C",
+       "content": "painful",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "55d67527-aa13-5264-8afe-2038675b0e03",
+       "label": "D",
+       "content": "incurable",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "61a2d399-4792-5565-bc7c-e673129ee0bf",
+     "key": "eng-syn-03",
+     "stem": "Choose the option nearest in meaning to the word in bold.\n\nMany families **abandoned** their homes when the flood waters rose.",
+     "image_url": null,
+     "explanation": "To *abandon* a place is to leave it, usually for good or in a hurry.\n\n**Why the other options are wrong**\n\n- repaired: *Abandon* means to leave behind, not to repair.\n- sold: *Abandoned* homes were left, not sold.\n- cleaned: *Abandon* means to leave behind, not to clean.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5bebe427-6f8d-57a2-9e59-ecf0ad462b50",
+       "label": "A",
+       "content": "repaired",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5e3a2a84-3659-5a1d-b2b2-090ea8191f0b",
+       "label": "B",
+       "content": "left",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "cefd8388-c861-5364-9a05-c881c7eae11d",
+       "label": "C",
+       "content": "sold",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5009f762-81a5-59e8-92f5-2f4e6c7907bf",
+       "label": "D",
+       "content": "cleaned",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "da4b0ee6-dc87-5b02-a834-c444f25d6ae9",
+     "key": "eng-ant-01",
+     "stem": "Choose the option most nearly opposite in meaning to the word in bold.\n\nThe trader is very **generous** to his poorer customers.",
+     "image_url": null,
+     "explanation": "*Generous* means willing to give; its opposite is *stingy* (or *mean*): unwilling to give or spend.\n\n**Why the other options are wrong**\n\n- kind: *Kind* is close in meaning to *generous*, not opposite.\n- friendly: *Friendly* describes manner, and is not the opposite of *generous*.\n- honest: *Honest* is about telling the truth, not about giving.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e83e3449-57e5-55f4-b1c7-4682cf167d96",
+       "label": "A",
+       "content": "kind",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "24651287-37f8-5bff-943e-cc6dc9b38b23",
+       "label": "B",
+       "content": "friendly",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b750d46e-6c59-510c-af12-4d75eab5919b",
+       "label": "C",
+       "content": "stingy",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0e76539f-fb1b-5ff9-a274-4a056cc83531",
+       "label": "D",
+       "content": "honest",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f3645e0f-5701-5354-9044-1ba6774a513d",
+     "key": "eng-ant-02",
+     "stem": "Choose the option most nearly opposite in meaning to the word in bold.\n\nThe minister gave a **brief** speech at the opening ceremony.",
+     "image_url": null,
+     "explanation": "*Brief* means short in time; its opposite is *long* (or *lengthy*).\n\n**Why the other options are wrong**\n\n- short: *Short* has the same meaning as *brief*.\n- boring: *Boring* describes how interesting a speech is, not its length.\n- clear: *Clear* describes how easy it is to understand, not its length.",
+     "position": 5,
+     "options": [
+      {
+       "id": "be55f2af-5638-58fd-bcc6-d31451089d46",
+       "label": "A",
+       "content": "short",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7cdadcf2-9fdb-58d3-90b6-9132a4cae0d3",
+       "label": "B",
+       "content": "boring",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1da49e27-d2cb-5418-bd78-bcca9c97eef7",
+       "label": "C",
+       "content": "clear",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "24ef1264-3b52-562c-9e1e-738a0aa8c3fa",
+       "label": "D",
+       "content": "long",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "9d0d203f-1474-5ea5-8795-5cc5bf2a07e8",
+   "topic": "Idioms and Idiomatic Expressions",
+   "title": "Idioms and Idiomatic Expressions: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on idioms and idiomatic expressions, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 118,
+   "questions": [
+    {
+     "id": "3d6949cd-24df-58ed-9399-4cdf7f0e83e2",
+     "key": "eng-idiom-01",
+     "stem": "Choose the option that best explains the expression in bold.\n\nKemoh **let the cat out of the bag** about the surprise party for our teacher.",
+     "image_url": null,
+     "explanation": "To *let the cat out of the bag* is to reveal a secret, often by accident.\n\n**Why the other options are wrong**\n\n- lost his pet: The idiom has nothing to do with a real cat.\n- spoiled the food: The idiom is about telling something hidden, not about food.\n- arrived late: The idiom is not about time.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f57832ab-5026-5493-86db-755ed21332f4",
+       "label": "A",
+       "content": "revealed a secret",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "29b9becb-29b8-5ce3-9c1a-c296e45e1c3f",
+       "label": "B",
+       "content": "lost his pet",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "184cdee3-d485-5d21-baac-f44fa3ac578e",
+       "label": "C",
+       "content": "spoiled the food",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a25445c7-7385-59b9-8589-8f0851b6aa7d",
+       "label": "D",
+       "content": "arrived late",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bb98f8dd-fdf0-54d8-831b-a55ae6ce31c6",
+     "key": "eng-idiom-02",
+     "stem": "Choose the option that best explains the expression in bold.\n\nWhen the results were announced, the losing candidate **threw in the towel**.",
+     "image_url": null,
+     "explanation": "*To throw in the towel* means to give up or admit defeat (from boxing).\n\n**Why the other options are wrong**\n\n- celebrated: *Throwing in the towel* is what someone does when they accept defeat, not when they win.\n- cleaned up: The idiom has nothing to do with cleaning.\n- started a fight: The idiom means stopping a struggle, not starting one.",
+     "position": 2,
+     "options": [
+      {
+       "id": "e0d02f38-cb9b-51ae-977c-2da22c6d214e",
+       "label": "A",
+       "content": "celebrated",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4a495526-8209-57e5-8607-2fe93beddfc7",
+       "label": "B",
+       "content": "gave up",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "66c64b01-eba3-59f7-8f4a-5f3d7663b0fd",
+       "label": "C",
+       "content": "cleaned up",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e7e269f9-7f0f-5adf-86fe-e4322150acd3",
+       "label": "D",
+       "content": "started a fight",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a2957816-a3a2-574d-94d1-8653add90aab",
+     "key": "eng-idiom-03",
+     "stem": "Choose the option that best explains the expression in bold.\n\nMy uncle always **foots the bill** when the family eats out.",
+     "image_url": null,
+     "explanation": "*To foot the bill* means to pay for something, often for other people.\n\n**Why the other options are wrong**\n\n- complains about the price: *Foot the bill* means to pay it, not to complain about it.\n- walks home: The idiom has nothing to do with walking.\n- orders the food: *Foot the bill* is about paying, not ordering.",
+     "position": 3,
+     "options": [
+      {
+       "id": "7fb6b4e0-c921-5b5d-9557-09b4c4a30029",
+       "label": "A",
+       "content": "complains about the price",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9efedfe2-c13f-539b-94ca-a6ad84f964ff",
+       "label": "B",
+       "content": "walks home",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "18ded24b-9006-5411-a546-7e9f89635121",
+       "label": "C",
+       "content": "pays",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "38236ed6-fdbf-58b3-b155-43f12c4d58f8",
+       "label": "D",
+       "content": "orders the food",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d67cc3d5-bc96-5237-b7e9-3169f9d2b2e7",
+     "key": "eng-idiom-04",
+     "stem": "Choose the option that best explains the expression in bold.\n\nAfter weeks of revision, the Mathematics paper was **a piece of cake** for Isatu.",
+     "image_url": null,
+     "explanation": "*A piece of cake* means something very easy to do.\n\n**Why the other options are wrong**\n\n- very short: The idiom describes how easy something is, not how long it is.\n- very difficult: *A piece of cake* means the opposite of difficult.\n- a reward: The idiom is not about a prize or treat.",
+     "position": 4,
+     "options": [
+      {
+       "id": "54d8b991-6f96-59da-addf-ccac9fbd1ad0",
+       "label": "A",
+       "content": "very short",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "82968347-91c5-568e-ad29-1961626c8934",
+       "label": "B",
+       "content": "very difficult",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8fdcbb0c-7d0a-5043-8214-e6831b93ae2b",
+       "label": "C",
+       "content": "a reward",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "73a3bf9c-ce8e-548b-bcaf-215cda6bd4aa",
+       "label": "D",
+       "content": "very easy",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "029195e1-fe1c-59c0-8390-6c5cbec3511e",
+     "key": "eng-idiom-05",
+     "stem": "Choose the option that best explains the expression in bold.\n\nStop **beating about the bush** and tell us what really happened.",
+     "image_url": null,
+     "explanation": "*To beat about the bush* means to avoid saying something directly.\n\n**Why the other options are wrong**\n\n- wasting money: The idiom is about how someone talks, not about spending.\n- telling lies: Someone beating about the bush delays the truth; they are not necessarily lying.\n- working on the farm: The idiom has nothing to do with real bushes or farm work.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a9708191-e21c-505a-a786-507fcc029ad9",
+       "label": "A",
+       "content": "avoiding the main point",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a05d4a7b-460d-5905-acd2-6a9b8b47470d",
+       "label": "B",
+       "content": "wasting money",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "93a38f50-f07c-5f10-bcaa-5b10640d4183",
+       "label": "C",
+       "content": "telling lies",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cb1ed576-4b93-513c-b74b-7ca706f9b928",
+       "label": "D",
+       "content": "working on the farm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "4047684d-659e-5bc0-bce4-cf05d922d887",
+   "topic": "Common Confusable Words",
+   "title": "Common Confusable Words: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on common confusable words, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 119,
+   "questions": [
+    {
+     "id": "755e8e84-106b-51a6-baae-85d56144220c",
+     "key": "eng-conf-01",
+     "stem": "Choose the option that best completes the sentence.\n\nThe late rains will badly ____ this year's rice harvest.",
+     "image_url": null,
+     "explanation": "*Affect* is the verb (*the rain will affect the harvest*); *effect* is the noun (*the rain had a bad effect*).\n\n**Why the other options are wrong**\n\n- effect: *Effect* is usually a noun (*the effect of the rain*). The verb meaning *to influence* is *affect*.\n- infect: *Infect* means to pass on a disease.\n- afect: The verb is spelt with two f's: *affect*.",
+     "position": 1,
+     "options": [
+      {
+       "id": "4784471d-6841-5105-b1e6-56be7c1efd60",
+       "label": "A",
+       "content": "effect",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0583a3d0-d075-57ac-b0ce-c03ff1e9f46a",
+       "label": "B",
+       "content": "affect",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e4ca85ad-29a4-544d-ab6f-8840d1a40f20",
+       "label": "C",
+       "content": "infect",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3fa2dffb-4fbc-56d5-acc1-0d1577eea1a4",
+       "label": "D",
+       "content": "afect",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bab9e213-e095-51b3-9bd6-532c345456d3",
+     "key": "eng-conf-02",
+     "stem": "Choose the option that best completes the sentence.\n\nOur school compound is much bigger ____ theirs.",
+     "image_url": null,
+     "explanation": "Use *than* after a comparative (*bigger than*); use *then* for time or sequence.\n\n**Why the other options are wrong**\n\n- then: *Then* refers to time (*we ate, then we left*). Comparisons use *than*.\n- that: *That* does not introduce a comparison after *bigger*.\n- as: *As* is used in *as big as*, not after the comparative *bigger*.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f8cccaab-1e81-512f-8365-62355d105324",
+       "label": "A",
+       "content": "then",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d2981b4a-400c-5273-a8c2-cd0451a0653a",
+       "label": "B",
+       "content": "that",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3220a287-8f23-595a-ade8-30898b08b147",
+       "label": "C",
+       "content": "than",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7684a3eb-1918-5741-b5cc-1688a67d1ee6",
+       "label": "D",
+       "content": "as",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5afd098f-4441-5335-9b4e-47c93cae4d91",
+     "key": "eng-conf-03",
+     "stem": "Choose the option that best completes the sentence.\n\nThe ____ asked the pupils to sit quietly before the visitors arrived.",
+     "image_url": null,
+     "explanation": "*Principal* is the head of a school (and also means *main*); a *principle* is a rule or belief.\n\n**Why the other options are wrong**\n\n- principle: A *principle* is a rule or belief, not a person.\n- principel: This is a misspelling; the word is *principal*.\n- principle's: *Principle* is the wrong word, and the apostrophe makes it possessive.",
+     "position": 3,
+     "options": [
+      {
+       "id": "51925d24-1a28-5dfa-bd5f-b4ce49c70277",
+       "label": "A",
+       "content": "principle",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a1ec8974-6830-5718-a387-aa1b9cb6912d",
+       "label": "B",
+       "content": "principel",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "efeb7540-0bca-5278-bdce-84596830cb52",
+       "label": "C",
+       "content": "principle's",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d9c1875f-d110-5932-95b3-ec2c1f72848d",
+       "label": "D",
+       "content": "principal",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c7c1254c-1245-5cff-b85b-8d669f153b5e",
+     "key": "eng-conf-04",
+     "stem": "Choose the option that best completes the sentence.\n\nDo not ____ your admission card before the examination.",
+     "image_url": null,
+     "explanation": "*Lose* (verb, one o) means to stop having something; *loose* (adjective, two o's) means not tight.\n\n**Why the other options are wrong**\n\n- loose: *Loose* is an adjective meaning *not tight*, as in *a loose button*.\n- loss: *Loss* is a noun. After *do not* we need a verb.\n- lost: After *do not* we need the base form of the verb, not the past.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c6f743dc-0221-5a87-af31-ec05d6a7442d",
+       "label": "A",
+       "content": "lose",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3041d259-eb3e-5da0-a141-b0d653ab71e4",
+       "label": "B",
+       "content": "loose",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "668e404d-7642-54cc-b6d2-86facffb8a8b",
+       "label": "C",
+       "content": "loss",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "82af0bbf-286b-5d4d-9b24-5581f161c426",
+       "label": "D",
+       "content": "lost",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "66e07c21-34c2-5895-9417-f6f1f2457fd0",
+     "key": "eng-conf-05",
+     "stem": "Choose the option that best completes the sentence.\n\nThe bookshop near the school sells pens, rulers, exercise books and other ____.",
+     "image_url": null,
+     "explanation": "*Stationery* (with an *e*, as in *envelope*) means writing materials; *stationary* (with an *a*) means not moving.\n\n**Why the other options are wrong**\n\n- stationary: *Stationary* (with an *a*) means not moving, as in *a stationary vehicle*.\n- stationeries: *Stationery* is uncountable, so it has no plural.\n- stationaries: There is no such word.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9eadec2c-7284-508d-a782-5f209bd5ce41",
+       "label": "A",
+       "content": "stationary",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "16d3b1c0-7cb2-50dd-aa23-b5e51d14dfa6",
+       "label": "B",
+       "content": "stationery",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7b856c15-f8cf-576c-98c5-57b6bbb24de5",
+       "label": "C",
+       "content": "stationeries",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a125dedd-c7a6-5163-84e9-5ca5a964ee22",
+       "label": "D",
+       "content": "stationaries",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "32fb26b47cd1"
+}

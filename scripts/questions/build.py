@@ -91,6 +91,15 @@ SETS = [
         # Language answers cannot be recomputed by code: an editor checked each one.
         "checked": "editor",
     },
+    {
+        "module": ROOT / "content/questions/english-language/set2_p1.py",
+        "subject_slug": "english-language",
+        "name": "english_set2_p1",
+        "label": "English Language: set 2 (grammar and vocabulary)",
+        "review": ROOT / "content/questions/english-language/set2_p1.review.md",
+        "sort_from": 110,
+        "checked": "editor",
+    },
 ]
 
 OUT = ROOT / "src/content/question-sets"

@@ -108,5 +108,24 @@
    "9ab75de3-46fc-54f1-ab8c-594fa976ecd8"
   ],
   "questions": 50
+ },
+ {
+  "name": "english_set2_p1",
+  "label": "English Language: set 2 (grammar and vocabulary)",
+  "subject_slug": "english-language",
+  "version": "32fb26b47cd1",
+  "papers": [
+   "ec2f580e-77ad-56d3-8304-ac5d4b33aa1a",
+   "a68d145e-9df5-5044-acd1-cf184b425425",
+   "14155bee-408d-5780-8751-be5819bc2fbf",
+   "669d61ee-1d14-5739-a959-56dfac74dde6",
+   "eb712601-3497-5f74-ae9b-8a3ce4df9cc4",
+   "12def718-4506-549a-b3f7-cda928d368f7",
+   "65e7f113-83e4-5b95-994e-301469e402dc",
+   "51aa3711-f789-5042-b1d5-ca56a475cd29",
+   "9d0d203f-1474-5ea5-8795-5cc5bf2a07e8",
+   "4047684d-659e-5bc0-bce4-cf05d922d887"
+  ],
+  "questions": 50
  }
 ]

@@ -20,9 +20,17 @@ each, matching the lessons already on the site: Nouns, Pronouns, Verbs and Verb
 Forms, Tenses, Active and Passive Voice, Non-finite Verb Forms, Adjectives,
 Prepositions, Conjunctions, Subject-Verb Agreement.
 
-Next: Parts of Speech, Adverbs and Articles (structure), then lexis sets
-(synonyms and antonyms, idioms, confusable words, vocabulary in context), then
-oral English once its lessons exist.
+## Set 2: structure and lexis, 50 questions
+
+Structure: Parts of Speech, Adverbs, Articles, Question Tags, Modal Verbs,
+Conditionals, Direct and Reported Speech. Lexis: Synonyms and Antonyms (words
+nearest and opposite in meaning), Idioms and Idiomatic Expressions, Common
+Confusable Words. WAEC underlines the word being tested; the app shows it in
+**bold**. With sets 1 and 2, every English topic that has lessons has a set.
+
+Next: Phrases and Clauses, Sentence Types, Punctuation, Homonyms and
+Homophones, Figures of Speech, Word Formation, Vocabulary in Context; then
+oral English (vowels, consonants, stress) once its lessons exist.
 
 ## House rules
 
