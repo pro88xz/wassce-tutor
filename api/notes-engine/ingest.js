@@ -3,7 +3,8 @@ import crypto from 'node:crypto'
 
 export const config = { maxDuration: 30, api: { bodyParser: { sizeLimit: '2mb' } } }
 
-const ALLOWED_HOSTS = new Set(['openstax.org','www.openstax.org','en.wikibooks.org','www.wikibooks.org','siyavula.com','www.siyavula.com'])
+const ALLOWED_HOSTS = new Set(['openstax.org','www.openstax.org','en.wikibooks.org','www.wikibooks.org','siyavula.com','www.siyavula.com','libretexts.org','chem.libretexts.org','bio.libretexts.org','phys.libretexts.org','pressbooks.pub'])
+const isApprovedHost = hostname => ALLOWED_HOSTS.has(hostname) || hostname === 'libretexts.org' || hostname.endsWith('.libretexts.org')
 const ALLOWED_LICENSES = new Set(['CC-BY-4.0','CC-BY-SA-4.0','CC0-1.0','PUBLIC-DOMAIN'])
 const json = (res, body, status = 200) => res.status(status).setHeader('Cache-Control','no-store').json(body)
 const countWords = (s) => (String(s).match(/[\p{L}\p{N}][\p{L}\p{N}'’-]*/gu) || []).length
@@ -29,7 +30,7 @@ function validateLesson(item) {
   for (const source of item.sources) {
     let url
     try { url = new URL(source.url) } catch { throw new Error('Invalid source URL.') }
-    if (url.protocol !== 'https:' || !ALLOWED_HOSTS.has(url.hostname)) throw new Error('Source host is not on the approved open-education allowlist.')
+    if (url.protocol !== 'https:' || !isApprovedHost(url.hostname)) throw new Error('Source host is not on the approved open-education allowlist.')
     if (!ALLOWED_LICENSES.has(source.license)) throw new Error('Source licence is not approved.')
     if (typeof source.license_evidence !== 'string' || source.license_evidence.length < 5) throw new Error('Visible source licence evidence is required.')
     if (source.license === 'CC-BY-SA-4.0' && !/share.?alike|cc by-sa/i.test(source.license_evidence)) throw new Error('CC BY-SA evidence does not match its declared licence.')
