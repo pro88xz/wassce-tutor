@@ -229,34 +229,30 @@ function PopularTopics({ data }: { data: LandingData }) {
           </span>
         </a>
 
-        <div className="rounded-[1.6rem] border border-border/70 bg-gradient-to-b from-card to-muted/25 p-4 shadow-sm sm:p-5">
-          <div className="flex items-end justify-between gap-3 border-b pb-4">
+        <div className="popular-topic-collection">
+          <div className="flex items-end justify-between gap-3 border-b border-border/70 pb-4">
             <div className="space-y-1">
-              <p className="text-base font-bold tracking-tight">More to explore</p>
-              <p className="text-xs leading-relaxed text-muted-foreground">Keep moving through the syllabus.</p>
+              <p className="text-lg font-bold tracking-tight">More to explore</p>
+              <p className="text-xs leading-relaxed text-muted-foreground">Choose a subject area and keep moving.</p>
             </div>
-            <span className="shrink-0 rounded-full bg-muted px-3 py-1 text-xs font-semibold text-muted-foreground">{topics.length} topics</span>
+            <span className="shrink-0 rounded-full bg-primary/8 px-3 py-1.5 text-xs font-bold text-primary">{topics.length} topics</span>
           </div>
-          <div className="divide-y divide-border/70">
+          <div className="popular-topic-grid">
             {topics.map((t, i) => (
               <a
                 key={`${t.subjectSlug}/${t.topicSlug}`}
                 href={topicPath(t.subjectSlug, t.topicSlug)}
                 data-reveal={i % 4}
-                className="group flex min-w-0 items-center gap-3.5 py-4 transition-colors first:pt-4 last:pb-1 sm:gap-4"
+                className="popular-topic-card group"
               >
-                <span className="relative h-[4.6rem] w-[5.25rem] shrink-0 overflow-hidden rounded-xl bg-muted ring-1 ring-black/5 sm:h-[5.1rem] sm:w-[6rem]">
+                <span className="popular-topic-image">
                   {renderImage(t.subjectSlug, t.topicSlug, true)}
+                  <span className="popular-topic-arrow"><ArrowRight className="h-4 w-4" aria-hidden /></span>
                 </span>
-                <span className="min-w-0 flex-1 space-y-1.5">
-                  <span className="block text-[10px] font-bold uppercase tracking-[0.13em] text-primary">{t.subjectName}</span>
-                  <span className="block text-[15px] font-bold leading-snug text-foreground transition-colors group-hover:text-primary sm:text-base">{t.topicName}</span>
-                  <span className="inline-flex items-center gap-1.5 text-xs font-medium text-muted-foreground">
-                    <BookOpen className="h-3.5 w-3.5" aria-hidden /> {t.lessons} {t.lessons === 1 ? 'lesson' : 'lessons'}
-                  </span>
-                </span>
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border bg-card text-muted-foreground transition-all group-hover:border-primary/30 group-hover:bg-primary group-hover:text-primary-foreground">
-                  <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden />
+                <span className="popular-topic-copy">
+                  <span className="popular-topic-subject">{t.subjectName}</span>
+                  <span className="popular-topic-name">{t.topicName}</span>
+                  <span className="popular-topic-lessons"><BookOpen className="h-3.5 w-3.5" aria-hidden /> {t.lessons} {t.lessons === 1 ? 'lesson' : 'lessons'}</span>
                 </span>
               </a>
             ))}
