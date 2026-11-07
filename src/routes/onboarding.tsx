@@ -61,7 +61,7 @@ function Onboarding() {
 
   if (isLoading) {
     return (
-      <div className="mx-auto max-w-2xl space-y-4">
+      <div className="app-page mx-auto w-full max-w-5xl space-y-4">
         <Skeleton className="h-20" />
         <div className="grid grid-cols-2 gap-3">{[0, 1, 2, 3].map((i) => <Skeleton key={i} className="h-28" />)}</div>
       </div>
@@ -75,7 +75,7 @@ function Onboarding() {
   const FACULTY_COVER: Record<string, string> = { science: 'biology', arts: 'literature-in-english', commercial: 'commerce', technical: 'technical-drawing' }
 
   return (
-    <div className="mx-auto max-w-2xl space-y-8 pb-32">
+    <div className="app-page mx-auto w-full max-w-5xl space-y-8 pb-32">
       <PageHeader eyebrow="Set up your studies" title="What are you sitting?" subtitle="Pick your faculty, then confirm your WASSCE subjects. You can change them any time." />
 
       {/* STEP 1: FACULTY */}
@@ -162,7 +162,7 @@ function Onboarding() {
       {/* STICKY CONTINUE */}
       {facultyId && (
         <div className="fixed bottom-0 left-0 right-0 z-50 border-t bg-background/95 p-4 backdrop-blur" style={{ paddingBottom: 'calc(env(safe-area-inset-bottom) + 1rem)' }}>
-          <div className="mx-auto max-w-2xl">
+          <div className="app-page mx-auto w-full max-w-5xl">
             <button
               type="button"
               disabled={!canContinue || save.isPending}
