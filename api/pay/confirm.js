@@ -22,7 +22,7 @@ export async function POST(request) {
 
   const { data: payment } = await client
     .from('payments')
-    .select('id, user_id, status, checkout_session_id, access_until, payment_code_id, provider_payment_id, amount_nle, ussd_code')
+    .select('id, user_id, status, checkout_session_id, access_until, payment_code_id, provider_payment_id, amount_nle, ussd_code, financial_transaction_reference')
     .eq('id', paymentId)
     .maybeSingle()
   // Someone else's payment reads the same as a missing one.
