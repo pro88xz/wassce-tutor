@@ -25,7 +25,7 @@ const HELP: { title: string; href: string }[] = [
 
 function Contact() {
   return (
-    <article className="mx-auto max-w-4xl space-y-12 pb-10">
+    <article className="app-page mx-auto w-full max-w-6xl space-y-12 pb-10">
       <div className="space-y-5">
         <Breadcrumbs trail={TRAIL} />
         <header className="space-y-3">
