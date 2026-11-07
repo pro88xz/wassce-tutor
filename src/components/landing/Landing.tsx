@@ -26,8 +26,8 @@ export function Landing({ data }: { data: LandingData }) {
   useReveal(root)
   return (
     <>
-      <Hero />
-      <div ref={root} className="mx-auto max-w-5xl space-y-16 sm:space-y-24">
+      <Hero data={data} />
+      <div ref={root} className="mx-auto max-w-6xl space-y-20 px-4 sm:space-y-28 sm:px-6">
         <TrustStrip data={data} />
         <SubjectShowcase subjects={data.subjects} />
         {data.popular.length > 0 && <PopularTopics data={data} />}
@@ -44,33 +44,89 @@ export function Landing({ data }: { data: LandingData }) {
   )
 }
 
-/** Restrained brand field: one primary action, one discovery action (search), one quieter secondary. */
-function Hero() {
+/** Editorial hero: discovery-led, with real syllabus subjects as the visual proof. */
+function Hero({ data }: { data: LandingData }) {
+  const featured = data.subjects.filter((s) => s.topicCount > 0).slice(0, 3)
   return (
-    <section className="relative left-1/2 right-1/2 -mx-[50vw] -mt-6 w-screen bg-gradient-to-br from-primary to-brand-strong">
-      <div className="mx-auto max-w-3xl space-y-6 px-6 pb-20 pt-10 text-center sm:pb-24 sm:pt-14">
-        <div className="space-y-3">
-          {/* The keyword line is part of the h1, so the page's main heading
-              matches its title and description; it reads as an eyebrow. */}
-          <h1 className="flex flex-col gap-6 text-white">
-            <span className="text-sm font-medium text-white/80">WASSCE lessons and practice questions for Sierra Leone</span>
-            <span className="text-[2.25rem] font-bold leading-[1.1] tracking-tight text-balance sm:text-[3.25rem]">Pass WASSCE with confidence.</span>
-          </h1>
-          <p className="mx-auto max-w-xl text-balance text-base text-white/85 sm:text-lg">
-            Lessons for every topic, exam-style practice questions with the full working, and an AI tutor that explains anything, all organised around your syllabus. Built in Freetown.
-          </p>
+    <section className="relative isolate left-1/2 right-1/2 -mx-[50vw] -mt-6 w-screen overflow-hidden bg-[#17112f] text-white">
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <div className="absolute -right-32 -top-40 h-[34rem] w-[34rem] rounded-full bg-violet-500/25 blur-[100px]" />
+        <div className="absolute -bottom-56 left-[18%] h-[30rem] w-[30rem] rounded-full bg-indigo-500/20 blur-[110px]" />
+        <div className="absolute inset-0 opacity-[0.12]" style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,.7) 0.7px, transparent 0.7px)', backgroundSize: '22px 22px' }} />
+      </div>
+      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-14 sm:px-8 sm:pb-24 sm:pt-20 lg:grid-cols-[1.04fr_0.96fr] lg:gap-8">
+        <div className="relative z-10 mx-auto w-full max-w-2xl space-y-7 text-center lg:mx-0 lg:text-left">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.07] px-3.5 py-2 text-xs font-semibold tracking-wide text-violet-100 shadow-lg shadow-black/10 backdrop-blur">
+            <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_12px_rgba(52,211,153,.8)]" />
+            SIERRA LEONE WASSCE · BUILT FOR YOUR SYLLABUS
+          </div>
+          <div className="space-y-5">
+            <h1 className="text-[2.7rem] font-bold leading-[1.02] tracking-[-0.055em] text-balance sm:text-6xl xl:text-[4.35rem]">
+              Your next grade<br className="hidden sm:block" /> starts <span className="bg-gradient-to-r from-[#d8c8ff] via-[#b8a0ff] to-[#8ddcf4] bg-clip-text text-transparent">with one topic.</span>
+            </h1>
+            <p className="mx-auto max-w-xl text-base leading-relaxed text-white/70 sm:text-lg lg:mx-0">
+              A clearer way to prepare for WASSCE. Explore your subjects, understand each topic, practise exam-style questions and build confidence at your own pace.
+            </p>
+          </div>
+          <div className="mx-auto max-w-xl lg:mx-0">
+            <TopicSearch />
+          </div>
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
+            <Link to="/auth" className="inline-flex min-h-13 w-full items-center justify-center gap-2 rounded-xl bg-white px-7 py-3 text-base font-bold text-[#28145f] shadow-[0_12px_32px_-12px_rgba(255,255,255,.35)] transition duration-200 hover:-translate-y-0.5 hover:bg-violet-50 sm:w-auto">
+              Start learning free <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
+            <DownloadButton variant="hero" />
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-medium text-white/55 lg:justify-start">
+            <span className="inline-flex items-center gap-1.5"><Check className="h-3.5 w-3.5 text-emerald-300" /> No card needed</span>
+            <span className="hidden h-1 w-1 rounded-full bg-white/30 sm:block" />
+            <span>Start free · upgrade when ready</span>
+          </div>
         </div>
-        <TopicSearch />
-        <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Link
-            to="/auth"
-            className="inline-flex min-h-12 py-2 w-full items-center justify-center rounded-xl bg-white px-7 text-base font-semibold text-brand-strong transition-colors hover:bg-brand-soft sm:w-auto text-center"
-          >
-            Start free
-          </Link>
-          <DownloadButton variant="hero" />
+
+        <div className="relative mx-auto hidden h-[27rem] w-full max-w-[34rem] lg:block" aria-label="Explore WASSCE subjects">
+          <div aria-hidden className="absolute left-[16%] top-[12%] h-[21rem] w-[21rem] rounded-full border border-white/10 bg-white/[0.035] shadow-[0_0_100px_rgba(139,92,246,.18)]" />
+          <div aria-hidden className="absolute left-[25%] top-[21%] h-[17rem] w-[17rem] rounded-full border border-white/10" />
+          {featured[0] && (
+            <a href={subjectPath(featured[0].slug)} className="group absolute left-[10%] top-[5%] z-20 w-[68%] overflow-hidden rounded-[1.6rem] border border-white/20 bg-white p-2.5 shadow-[0_32px_80px_-28px_rgba(0,0,0,.8)] transition duration-500 hover:-translate-y-2 hover:rotate-0">
+              <SubjectCover slug={featured[0].slug} shape="wide" rounded="rounded-[1.1rem]" className="aspect-[16/9] w-full" />
+              <div className="flex items-center justify-between gap-3 px-2 pb-1 pt-3 text-slate-900">
+                <span className="min-w-0"><span className="block text-xs font-semibold uppercase tracking-wider text-violet-700">Explore subject</span><span className="block truncate text-lg font-bold">{featured[0].name}</span></span>
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-violet-100 text-violet-800"><ArrowRight className="h-4 w-4" /></span>
+              </div>
+            </a>
+          )}
+          {featured[1] && (
+            <a href={subjectPath(featured[1].slug)} className="group absolute bottom-[4%] left-0 z-30 w-[55%] -rotate-3 overflow-hidden rounded-2xl border border-white/20 bg-white p-2 shadow-[0_28px_65px_-25px_rgba(0,0,0,.75)] transition duration-500 hover:-translate-y-2 hover:rotate-0">
+              <SubjectCover slug={featured[1].slug} shape="wide" rounded="rounded-xl" className="aspect-[16/10] w-full" />
+              <div className="px-2 pb-1 pt-2 text-slate-900"><span className="block truncate text-base font-bold">{featured[1].name}</span><span className="text-xs text-slate-500">{featured[1].topicCount} syllabus topics</span></div>
+            </a>
+          )}
+          {featured[2] && (
+            <a href={subjectPath(featured[2].slug)} className="group absolute bottom-[10%] right-[1%] z-10 w-[48%] rotate-3 overflow-hidden rounded-2xl border border-white/20 bg-white p-2 shadow-[0_28px_65px_-25px_rgba(0,0,0,.75)] transition duration-500 hover:-translate-y-2 hover:rotate-0">
+              <SubjectCover slug={featured[2].slug} shape="wide" rounded="rounded-xl" className="aspect-[16/10] w-full" />
+              <div className="px-2 pb-1 pt-2 text-slate-900"><span className="block truncate text-base font-bold">{featured[2].name}</span><span className="text-xs text-slate-500">{featured[2].topicCount} syllabus topics</span></div>
+            </a>
+          )}
+          <div className="absolute right-[2%] top-[1%] z-30 flex items-center gap-2 rounded-full border border-white/15 bg-[#302454]/90 px-4 py-2.5 text-xs font-semibold text-white shadow-xl backdrop-blur">
+            <GraduationCap className="h-4 w-4 text-[#d6c4ff]" /> Learn at your pace
+          </div>
         </div>
-        <p className="text-sm text-white/75">Free account, no card needed · unlock everything for 25 NLe a whole academic year</p>
+      </div>
+      <div className="relative border-t border-white/10 bg-black/10">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 divide-x divide-white/10 px-5 py-5 sm:grid-cols-4 sm:px-8">
+          {[
+            [String(data.totals.subjects), 'WASSCE subjects'],
+            [String(data.totals.topics), 'syllabus topics'],
+            [String(data.totals.lessons), 'available lessons'],
+            ['25 NLe', 'per academic year'],
+          ].map(([value, label]) => (
+            <div key={label} className="px-3 py-2 text-center sm:px-5">
+              <p className="text-2xl font-bold tracking-tight tabular-nums sm:text-3xl">{value}</p>
+              <p className="mt-1 text-xs font-medium text-white/55 sm:text-sm">{label}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )
