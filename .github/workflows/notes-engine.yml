@@ -8,6 +8,8 @@ on:
       - 'content/sources/**'
       - 'scripts/notes-ingestion.mjs'
       - 'api/notes-engine/**'
+      - 'scripts/playwright-notes-acquisition.mjs'
+      - '.github/workflows/notes-acquisition.yml'
       - 'vercel.json'
       - 'scripts/source-acquisition.mjs'
       - 'scripts/notes-ingestion.test.mjs'
@@ -48,7 +50,9 @@ jobs:
       - run: npm run notes:test
       - run: npm run notes:build
       - name: Check autonomous engine serverless function syntax
-        run: node --check api/notes-engine/run.js
+        run: node --check api/notes-engine/ingest.js
+      - name: Check Playwright acquisition script syntax
+        run: node --check scripts/playwright-notes-acquisition.mjs
       - name: Verify live Supabase curriculum mapping
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
