@@ -52,7 +52,7 @@ function TopicPage() {
   const freeCount = topic.lessons.filter((l) => l.is_public).length
 
   return (
-    <article className="mx-auto max-w-3xl space-y-10 pb-12">
+    <article className="app-page mx-auto w-full max-w-6xl space-y-10 pb-12">
       <Breadcrumbs trail={trail(data)} />
 
       <header className="space-y-4 rounded-2xl border bg-card p-6">
