@@ -897,6 +897,32 @@
       "est_minutes": 17,
       "sort_order": 2,
       "auto_sync": true
+    },
+    {
+      "file": "biology-endocrine-system-1.md",
+      "subject": "Biology",
+      "topic": "the-endocrine-system",
+      "title": "The endocrine system: glands, hormones and chemical coordination",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 17,
+      "sort_order": 1,
+      "auto_sync": true
+    },
+    {
+      "file": "biology-endocrine-system-2.md",
+      "subject": "Biology",
+      "topic": "the-endocrine-system",
+      "title": "The endocrine system: major hormones, feedback and blood glucose control",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 19,
+      "sort_order": 2,
+      "auto_sync": true
     }
   ]
 }
