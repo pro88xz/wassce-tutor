@@ -64,7 +64,7 @@ function SubjectTutorPage() {
   const { hub, subjects } = Route.useLoaderData()
   const { subject, groups } = hub
   return (
-    <article className="mx-auto max-w-5xl space-y-12 pb-8 sm:space-y-14">
+    <article className="app-page mx-auto w-full max-w-6xl space-y-12 pb-8 sm:space-y-14">
       <div className="space-y-5">
         <Breadcrumbs trail={trail(hub)} />
         <SubjectBanner slug={subject.slug} eyebrow="Book a tutor" title={`${subject.name} tutor`} />
