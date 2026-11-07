@@ -98,7 +98,7 @@ function AdminPage() {
 
   // Unlocked — render either the sub-route outlet or the admin home grid
   return (
-    <div className="mx-auto max-w-3xl space-y-6">
+    <div className="admin-page mx-auto w-full max-w-6xl space-y-6">
       {atRoot && (
         <div className="flex items-center justify-between">
           <div>
