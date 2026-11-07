@@ -17,7 +17,7 @@ const DESCRIPTION =
   'One-to-one WASSCE lessons with a real tutor, online or at home in Sierra Leone. Choose your subject, tell us what you need, and we match you on WhatsApp.'
 
 export const Route = createFileRoute('/tutors/')({
-  ssr: true, // prerendered to static HTML at build time
+  ssr: true,
   loader: async () => (await fetchSubjectSummaries()).filter((s) => hasSubjectPage(s.topicCount)),
   staleTime: Infinity,
   head: () =>
@@ -38,66 +38,78 @@ export const Route = createFileRoute('/tutors/')({
 function TutorsPage() {
   const subjects = Route.useLoaderData()
   return (
-    <article className="mx-auto max-w-5xl space-y-14 pb-8 sm:space-y-16">
+    <article className="tutor-booking-page mx-auto max-w-6xl space-y-16 pb-12 sm:space-y-20">
       <div className="space-y-6">
         <Breadcrumbs trail={TRAIL} />
-        <header className="grid items-center gap-6 md:grid-cols-2 md:gap-10">
-          <div className="space-y-4">
-            <p className="text-sm font-semibold text-primary">Book a tutor</p>
-            <h1 className="text-[2rem] font-bold leading-[1.1] tracking-tight text-balance sm:text-[2.75rem]">A real WASSCE tutor, one to one</h1>
-            <p className="text-[17px] text-muted-foreground">
-              Get personal help from a teacher who knows the WASSCE syllabus, online or at home. Tell us your subject and what you need, and we match you with a tutor.
+        <header className="tutor-booking-hero">
+          <div className="tutor-booking-hero-copy">
+            <p className="tutor-booking-eyebrow"><span /> PERSONAL WASSCE SUPPORT</p>
+            <h1>A real tutor.<br /><em>Focused on your progress.</em></h1>
+            <p className="tutor-booking-lede">
+              One-to-one help from a teacher who knows the WASSCE syllabus. Learn online or at home, with lessons built around the subjects and topics you need help with.
             </p>
-            <ul className="space-y-2 text-[15px]">
-              {['Ask for any WASSCE subject, from SSS1 to SSS3 or as a private candidate', 'Online lessons anywhere, home lessons where available', 'Price confirmed on WhatsApp before you pay anything'].map((t) => (
-                <li key={t} className="flex gap-2"><Check className="mt-0.5 h-5 w-5 shrink-0 text-success" aria-hidden /> {t}</li>
+            <ul className="tutor-booking-points">
+              {[
+                'Any WASSCE subject, from SSS1 to SSS3 or as a private candidate',
+                'Online lessons anywhere; home lessons where available',
+                'Price confirmed on WhatsApp before you pay anything',
+              ].map((t) => (
+                <li key={t}><Check aria-hidden /> <span>{t}</span></li>
               ))}
             </ul>
-            <div className="flex flex-col gap-2 pt-1 sm:flex-row">
-              <a href="#book" className="inline-flex min-h-12 py-2 items-center justify-center rounded-xl bg-primary px-6 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong text-center">
-                Request a tutor
-              </a>
-              <a href="#tutor-how" className="inline-flex min-h-12 py-2 items-center justify-center rounded-xl border bg-card px-6 font-semibold transition-colors hover:border-primary/40 text-center">
-                How it works
-              </a>
+            <div className="tutor-booking-actions">
+              <a href="#book" className="tutor-book-primary">Request a tutor <span aria-hidden>↗</span></a>
+              <a href="#tutor-how" className="tutor-book-secondary">How it works</a>
             </div>
+            <p className="tutor-booking-reassurance"><span /> Free to enquire · No payment until you agree</p>
           </div>
-          <div className="relative">
+          <div className="tutor-booking-visual">
             <img
               src={TUTOR_PHOTO.src}
               srcSet={`${TUTOR_PHOTO.small} 640w, ${TUTOR_PHOTO.src} 1280w`}
-              sizes="(min-width: 768px) 480px, 100vw"
+              sizes="(min-width: 768px) 560px, 100vw"
               alt="A tutor and a student going through notes together"
               width={1280}
               height={853}
               fetchPriority="high"
-              className="aspect-[4/3] w-full rounded-2xl object-cover"
             />
-            <span className="absolute -bottom-4 left-4 inline-flex items-center gap-2 rounded-full border bg-card px-3.5 py-2 text-sm font-semibold shadow-lg">
-              <UserRound className="h-4 w-4 text-primary" aria-hidden /> Real teachers, not AI
-            </span>
+            <div className="tutor-photo-caption">
+              <span className="tutor-photo-icon"><UserRound aria-hidden /></span>
+              <span><strong>One-to-one teaching</strong><small>Real teachers, not AI</small></span>
+            </div>
+            <div className="tutor-visual-index"><span>PERSONAL SUPPORT</span><strong>01 / 03</strong></div>
           </div>
         </header>
       </div>
 
       <TutorHowItWorks />
 
-      <section id="book" className="scroll-mt-20 grid gap-6 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:gap-10" aria-labelledby="book-heading">
-        <div className="space-y-4">
-          <h2 id="book-heading" className="text-2xl font-bold tracking-tight">Request a tutor</h2>
-          <p className="text-[15px] text-muted-foreground">Fill this in and send it on WhatsApp. Asking is free, and nothing is booked until you agree the tutor, times and price.</p>
-          <ul className="space-y-3 text-[15px]">
-            <li className="flex gap-3"><MessageCircle className="mt-0.5 h-5 w-5 shrink-0 text-[#1a8d4a]" aria-hidden /> We reply on WhatsApp, so there is no app or account needed.</li>
-            <li className="flex gap-3"><ClipboardCheck className="mt-0.5 h-5 w-5 shrink-0 text-primary" aria-hidden /> Between lessons, keep practising with WASSCE Tutor's lessons and exam-style questions.</li>
-          </ul>
+      <section id="book" className="tutor-request-section scroll-mt-24" aria-labelledby="book-heading">
+        <div className="tutor-request-intro">
+          <p className="tutor-booking-eyebrow"><span /> START WITH A REQUEST</p>
+          <h2 id="book-heading">Tell us what<br /><em>you want to work on.</em></h2>
+          <p>Share a few details. We’ll follow up on WhatsApp, help find the right tutor and confirm the schedule and price with you.</p>
+          <div className="tutor-request-assurances">
+            <div><span className="tutor-assurance-icon"><MessageCircle aria-hidden /></span><span><strong>Direct WhatsApp follow-up</strong><small>No app or account needed to enquire.</small></span></div>
+            <div><span className="tutor-assurance-icon"><ClipboardCheck aria-hidden /></span><span><strong>Clear before you commit</strong><small>Agree the tutor, times and price first.</small></span></div>
+          </div>
+          <div className="tutor-request-side-note">
+            <span>BETWEEN LESSONS</span>
+            <p>Keep building confidence with WASSCE Tutor lessons and exam-style practice.</p>
+            <a href="/wassce/subjects">Explore the syllabus <span aria-hidden>↗</span></a>
+          </div>
         </div>
-        <div className="rounded-2xl border bg-card p-5 shadow-sm sm:p-6">
+        <div className="tutor-form-shell">
+          <div className="tutor-form-heading"><span>YOUR TUTOR REQUEST</span><strong>Let’s get started.</strong><p>Complete the details below. It takes about a minute.</p></div>
           <BookingForm subjects={subjects.map((s) => s.name)} />
         </div>
       </section>
 
-      <section className="space-y-4" aria-labelledby="by-subject">
-        <h2 id="by-subject" className="text-2xl font-bold tracking-tight">Tutors by subject</h2>
+      <section className="tutor-subject-section" aria-labelledby="by-subject">
+        <div className="tutor-section-heading">
+          <div><p className="tutor-booking-eyebrow"><span /> SUBJECT SPECIALISATIONS</p><h2 id="by-subject">Find support by subject.</h2><p>Choose a subject to see its syllabus topics and tutoring information.</p></div>
+          <a href="/wassce/subjects">Browse all subjects <span aria-hidden>↗</span></a>
+        </div>
         <TutorSubjectGrid subjects={subjects} />
       </section>
 
