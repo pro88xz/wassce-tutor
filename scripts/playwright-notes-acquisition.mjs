@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 import { chromium } from 'playwright'
 
-const PAGE_SIZE = 500
 const MAX_TOPICS_PER_RUN = Math.max(1, Math.min(3, Number(process.env.TOPIC_LIMIT || 3) || 3))
 const MAX_SOURCES_PER_TOPIC = 2
-const MAX_CONTENT_WORDS = 7000
+const MAX_CONTENT_WORDS = 3000
 const INGEST_URL = process.env.NOTES_INGEST_URL || 'https://wasscetutor.com/api/notes-engine/ingest'
 const ALLOWED_HOSTS = new Set([
   'openstax.org', 'www.openstax.org',
@@ -15,7 +14,7 @@ const LICENSES = [
   { re: /Creative Commons Attribution-ShareAlike 4\.0|CC BY-SA 4\.0/i, id: 'CC-BY-SA-4.0' },
   { re: /Creative Commons Attribution 4\.0|CC BY 4\.0/i, id: 'CC-BY-4.0' },
   { re: /CC0 1\.0|CC0 Public Domain Dedication/i, id: 'CC0-1.0' },
-  { re: /public domain/i, id: 'PUBLIC-DOMAIN' },
+  { re: /(?:public domain.{0,50}(?:dedication|license|licence)|(?:license|licence).{0,50}public domain)/i, id: 'PUBLIC-DOMAIN' },
 ]
 const normalize = (s) => String(s ?? '').replace(/\s+/g, ' ').trim()
 const countWords = (s) => (s.match(/[\p{L}\p{N}][\p{L}\p{N}'’-]*/gu) || []).length
@@ -87,7 +86,7 @@ async function extractSource(browser, url) {
       title: normalize(extracted.title).slice(0, 180),
       url,
       license: license.id,
-      license_evidence: license.re.source,
+      license_evidence: (extracted.visible.match(license.re) || [])[0] || license.re.source,
       text: content.split(/\s+/).slice(0, MAX_CONTENT_WORDS).join(' '),
       headings: extracted.headings,
       word_count: Math.min(words, MAX_CONTENT_WORDS),
