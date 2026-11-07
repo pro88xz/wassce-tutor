@@ -53,7 +53,7 @@ export async function POST(request) {
   })
   const ussdCode = code.result?.ussdCode
   const codeId = code.result?.id
-  if (!code.ok || !codeId || typeof ussdCode !== 'string' || !/^\*715\*\d+\*\d+#$/.test(ussdCode)) {
+  if (!code.ok || !codeId || typeof ussdCode !== 'string' || !/^\*715\*\d+(?:\*\d+)?#$/.test(ussdCode)) {
     await client.from('payments').update({ status: 'failed', updated_at: new Date().toISOString() }).eq('id', payment.id)
     const diagnostic = {
       reason: code.reason || 'invalid_payment_code_response',
