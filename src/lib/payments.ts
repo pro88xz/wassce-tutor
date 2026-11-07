@@ -32,6 +32,12 @@ export async function startUssdPayment(plan: PlanId): Promise<CheckoutResult> {
       return { kind: 'ussd', ussdCode: data.ussdCode, paymentId: data.paymentId }
     }
     if (status === 503 || status === 404 || status === 405) return { kind: 'whatsapp' }
+    const diagnostic = data?.diagnostic as { reason?: unknown; status?: unknown; requestId?: unknown } | undefined
+    if (diagnostic && typeof diagnostic.reason === 'string') {
+      const http = typeof diagnostic.status === 'number' && diagnostic.status > 0 ? `HTTP ${diagnostic.status}` : 'network error'
+      const reference = typeof diagnostic.requestId === 'string' ? ` Reference: ${diagnostic.requestId}.` : ''
+      return { kind: 'error', message: `Monime rejected payment-code creation: ${diagnostic.reason} (${http}).${reference}` }
+    }
     return { kind: 'error', message: typeof data?.error === 'string' ? data.error : 'The USSD payment could not be prepared. Please try again.' }
   } catch {
     return { kind: 'error', message: 'No connection. Check your data and try again.' }
