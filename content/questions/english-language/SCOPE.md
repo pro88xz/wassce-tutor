@@ -28,9 +28,16 @@ nearest and opposite in meaning), Idioms and Idiomatic Expressions, Common
 Confusable Words. WAEC underlines the word being tested; the app shows it in
 **bold**. With sets 1 and 2, every English topic that has lessons has a set.
 
-Next: Phrases and Clauses, Sentence Types, Punctuation, Homonyms and
-Homophones, Figures of Speech, Word Formation, Vocabulary in Context; then
-oral English (vowels, consonants, stress) once its lessons exist.
+## Set 3: sentences, punctuation and vocabulary, 35 questions
+
+Phrases and Clauses, Sentence Types, Punctuation, Homonyms and Homophones,
+Figures of Speech, Word Formation, Vocabulary in Context (five each). With
+sets 1 to 3, every grammar and vocabulary topic in the syllabus list has a
+practice set: 135 questions in 27 topics.
+
+Next: oral English (vowels, consonants, word and sentence stress) in the
+WAEC test-of-orals format, then comprehension and summary practice, which
+need passages rather than single sentences.
 
 ## House rules
 

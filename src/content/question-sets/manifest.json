@@ -127,5 +127,21 @@
    "4047684d-659e-5bc0-bce4-cf05d922d887"
   ],
   "questions": 50
+ },
+ {
+  "name": "english_set3_p1",
+  "label": "English Language: set 3 (sentences, punctuation and vocabulary)",
+  "subject_slug": "english-language",
+  "version": "c9fc61b58c4e",
+  "papers": [
+   "73154b64-6a6d-5542-8f86-b2a504f70082",
+   "9cef6f6c-e247-5fda-b641-5e391f97485f",
+   "6bd5b553-c470-50d1-9e49-08473b6faaea",
+   "dbe6b646-a80f-5724-8fbe-be1fae4d1ed2",
+   "fee2a889-7765-56f4-9686-8d8a69c4643f",
+   "07e8b35a-52c6-5877-a232-c005acb5469b",
+   "bfa9edb1-5073-5f05-b79c-2a325b214750"
+  ],
+  "questions": 35
  }
 ]

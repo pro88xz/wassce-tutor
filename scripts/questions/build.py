@@ -100,6 +100,15 @@ SETS = [
         "sort_from": 110,
         "checked": "editor",
     },
+    {
+        "module": ROOT / "content/questions/english-language/set3_p1.py",
+        "subject_slug": "english-language",
+        "name": "english_set3_p1",
+        "label": "English Language: set 3 (sentences, punctuation and vocabulary)",
+        "review": ROOT / "content/questions/english-language/set3_p1.review.md",
+        "sort_from": 120,
+        "checked": "editor",
+    },
 ]
 
 OUT = ROOT / "src/content/question-sets"

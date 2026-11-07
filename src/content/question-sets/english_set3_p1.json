@@ -1,0 +1,1408 @@
+{
+ "name": "english_set3_p1",
+ "label": "English Language: set 3 (sentences, punctuation and vocabulary)",
+ "subject_slug": "english-language",
+ "papers": [
+  {
+   "id": "73154b64-6a6d-5542-8f86-b2a504f70082",
+   "topic": "Phrases and Clauses",
+   "title": "Phrases and Clauses: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on phrases and clauses, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 120,
+   "questions": [
+    {
+     "id": "ffa8e104-0b58-5519-9d0a-6317d0d23d23",
+     "key": "eng-clause-01",
+     "stem": "Which of these groups of words is a clause?",
+     "image_url": null,
+     "explanation": "A clause has its own subject and finite verb: *the bell* (subject) *rang* (verb). The others are phrases.\n\n**Why the other options are wrong**\n\n- after the long break: This has no verb: it is a phrase (a preposition and a noun group).\n- in the school library: This has no subject or verb: it is a prepositional phrase.\n- running across the field: *Running* is not a finite verb and there is no subject, so this is a phrase.",
+     "position": 1,
+     "options": [
+      {
+       "id": "87bee059-1943-5414-80e7-15a6b01c10b5",
+       "label": "A",
+       "content": "when the bell rang",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c3885595-e2f5-5b59-8745-24d5587bcd0a",
+       "label": "B",
+       "content": "after the long break",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7d1898b3-a5be-54ab-bce8-d1745cb106be",
+       "label": "C",
+       "content": "in the school library",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3d0aac50-f8ab-59a9-968f-b0e3f4c2951b",
+       "label": "D",
+       "content": "running across the field",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6810a996-41e6-53dc-ad26-26c5bf8292b2",
+     "key": "eng-clause-02",
+     "stem": "Which of these groups of words is a phrase, not a clause?",
+     "image_url": null,
+     "explanation": "*Under the mango tree* has no subject and no finite verb: it is a phrase. Each of the others contains a subject and a finite verb, so each is a clause.\n\n**Why the other options are wrong**\n\n- when the rain stopped: *The rain stopped* has a subject and a finite verb, so this is a clause.\n- because he was late: *He was* is a subject and a finite verb, so this is a clause.\n- that she would come: *She would come* is a subject and a finite verb, so this is a clause.",
+     "position": 2,
+     "options": [
+      {
+       "id": "676be5b9-d6f7-53b4-aa51-9916464851ef",
+       "label": "A",
+       "content": "when the rain stopped",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e64bcebc-b037-5b94-824b-68664a96ae90",
+       "label": "B",
+       "content": "under the mango tree",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1448eb3b-60b6-517b-ae2d-b73519275bee",
+       "label": "C",
+       "content": "because he was late",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a9cb2f30-bcd4-573e-96be-74dda6114d15",
+       "label": "D",
+       "content": "that she would come",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bc3fe844-d16d-5522-87d8-d35057b82905",
+     "key": "eng-clause-03",
+     "stem": "What is the grammatical name of the clause in bold?\n\nI know **that she will pass the examination**.",
+     "image_url": null,
+     "explanation": "The clause answers *I know what?* It does the job of a noun (the object of *know*), so it is a noun clause.\n\n**Why the other options are wrong**\n\n- adjectival clause: An adjectival clause describes a noun. This clause is the object of *know*.\n- adverbial clause of time: It does not tell us when anything happens.\n- main clause: It cannot stand alone as a sentence: it begins with *that* and depends on *I know*.",
+     "position": 3,
+     "options": [
+      {
+       "id": "7db6aef9-d2a0-559b-bdae-597e79d47d95",
+       "label": "A",
+       "content": "adjectival clause",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "df3747b5-c0a9-511c-a126-2aee7bd97812",
+       "label": "B",
+       "content": "adverbial clause of time",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eeb3bebf-9688-52f8-b5b3-f084b554597d",
+       "label": "C",
+       "content": "noun clause",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7f3fcac1-d0dc-5896-816a-326e7d5bef00",
+       "label": "D",
+       "content": "main clause",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6a1eee67-c264-5222-851f-4eb3d2ab7392",
+     "key": "eng-clause-04",
+     "stem": "What is the grammatical name of the clause in bold?\n\nThe boy **who won the debate prize** is my cousin.",
+     "image_url": null,
+     "explanation": "The clause tells us **which** boy, so it describes the noun *boy*: an adjectival (relative) clause.\n\n**Why the other options are wrong**\n\n- noun clause: A noun clause does the job of a noun. This one describes the noun *boy*.\n- adverbial clause of reason: It does not give a reason; it tells us which boy.\n- main clause: It begins with *who* and cannot stand alone as a sentence.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7e04091e-e69b-590e-ae59-ab41c9056c6c",
+       "label": "A",
+       "content": "noun clause",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ba5b00bc-e78b-5f67-b4b5-86f2cdd4ed93",
+       "label": "B",
+       "content": "adverbial clause of reason",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "96beed6e-0507-5554-8214-f94590314b04",
+       "label": "C",
+       "content": "main clause",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2828f247-9b12-5e42-9409-75b9fe208a21",
+       "label": "D",
+       "content": "adjectival clause",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "09e06f81-d4a4-5766-aea7-88606a6eddf4",
+     "key": "eng-clause-05",
+     "stem": "What is the grammatical name of the clause in bold?\n\nWe stayed at home **because it was raining heavily**.",
+     "image_url": null,
+     "explanation": "The clause answers *why did we stay at home?* Clauses beginning with *because*, *as* or *since* (meaning *because*) are adverbial clauses of reason.\n\n**Why the other options are wrong**\n\n- adverbial clause of time: It does not say when; it says why.\n- adjectival clause: It does not describe a noun.\n- noun clause: It is not the subject or object of a verb; it explains why we stayed.",
+     "position": 5,
+     "options": [
+      {
+       "id": "bdf797ee-d530-5752-bc6d-53ab4c4d5515",
+       "label": "A",
+       "content": "adverbial clause of reason",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8f31ef26-5e06-52b2-a06f-90a4c00b1a1b",
+       "label": "B",
+       "content": "adverbial clause of time",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2cd231fc-32cb-5465-b1ea-5c1c47d7205e",
+       "label": "C",
+       "content": "adjectival clause",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "19b67f02-ffdc-5521-9a06-ea51e1123415",
+       "label": "D",
+       "content": "noun clause",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "9cef6f6c-e247-5fda-b641-5e391f97485f",
+   "topic": "Sentence Types",
+   "title": "Sentence Types: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on sentence types, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 121,
+   "questions": [
+    {
+     "id": "2014e20c-4be7-5bb3-a10c-7c02e71700d9",
+     "key": "eng-stype-01",
+     "stem": "What type of sentence is this?\n\n*Musa ran to the shop, but it was already closed.*",
+     "image_url": null,
+     "explanation": "Two independent clauses (*Musa ran to the shop* / *it was already closed*) joined by the coordinating conjunction *but* make a compound sentence.\n\n**Why the other options are wrong**\n\n- simple sentence: A simple sentence has only one clause. This has two.\n- complex sentence: A complex sentence has a dependent clause. Here both clauses can stand alone.\n- compound-complex sentence: There is no dependent clause, so it is not compound-complex.",
+     "position": 1,
+     "options": [
+      {
+       "id": "712d429f-dd67-5ee2-b07b-e095d743cbff",
+       "label": "A",
+       "content": "simple sentence",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f22b385b-d386-588b-8d00-bbdea3498772",
+       "label": "B",
+       "content": "compound sentence",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "cc454f36-8ca6-5e0e-a69e-4db0017bbb1c",
+       "label": "C",
+       "content": "complex sentence",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "345e5a01-26bc-563e-9996-4839577f33e2",
+       "label": "D",
+       "content": "compound-complex sentence",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "29909f04-8fd7-5c0e-af35-de454cdcba76",
+     "key": "eng-stype-02",
+     "stem": "What type of sentence is this?\n\n*Although she was tired, Hawa finished her homework.*",
+     "image_url": null,
+     "explanation": "One main clause (*Hawa finished her homework*) plus one dependent clause (*Although she was tired*) makes a complex sentence.\n\n**Why the other options are wrong**\n\n- simple sentence: A simple sentence has only one clause. This has two.\n- compound sentence: A compound sentence joins clauses that can each stand alone. *Although she was tired* cannot.\n- compound-complex sentence: There is only one main clause, so it is not compound-complex.",
+     "position": 2,
+     "options": [
+      {
+       "id": "55365229-458d-5b05-b008-d17348dd7af0",
+       "label": "A",
+       "content": "simple sentence",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6795f6b3-c2ec-574b-8e9c-56b0da6ea66e",
+       "label": "B",
+       "content": "compound sentence",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e37995e5-7a5b-5a71-9ecb-a762ad84ff0d",
+       "label": "C",
+       "content": "complex sentence",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "145e36d1-0990-53bc-be76-56f508dd915c",
+       "label": "D",
+       "content": "compound-complex sentence",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b6ac1f19-4a15-5a4f-b609-79fa37597bc0",
+     "key": "eng-stype-03",
+     "stem": "What type of sentence is this?\n\n*The pupils in the front row clapped loudly.*",
+     "image_url": null,
+     "explanation": "One subject (*the pupils in the front row*) and one finite verb (*clapped*): a single clause, so a simple sentence. *In the front row* is only a phrase.\n\n**Why the other options are wrong**\n\n- compound sentence: There is only one clause; nothing is joined by *and*, *but* or *or*.\n- complex sentence: There is no dependent clause.\n- compound-complex sentence: There is only one clause.",
+     "position": 3,
+     "options": [
+      {
+       "id": "9f1ef4a6-4d0a-5e12-80cc-fa9ca6336075",
+       "label": "A",
+       "content": "compound sentence",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "07e31618-20a0-52e8-8068-5be6431c4668",
+       "label": "B",
+       "content": "complex sentence",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dc7c9df2-65e0-5f5e-898b-d904632af1b5",
+       "label": "C",
+       "content": "compound-complex sentence",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c9e84fb7-238e-516c-933c-bb0f5ca4796c",
+       "label": "D",
+       "content": "simple sentence",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "96cf13cc-5bc9-5af7-a013-cc11e3d38305",
+     "key": "eng-stype-04",
+     "stem": "What is the function of this sentence?\n\n*Close the door quietly.*",
+     "image_url": null,
+     "explanation": "A sentence that gives an order, request or instruction is imperative. The subject (*you*) is understood.\n\n**Why the other options are wrong**\n\n- declarative: A declarative sentence makes a statement. This gives an order.\n- interrogative: An interrogative sentence asks a question.\n- exclamatory: An exclamatory sentence expresses strong feeling, as in *What a lovely day!*",
+     "position": 4,
+     "options": [
+      {
+       "id": "2c3e84ec-733a-50a5-b373-328841c9d81f",
+       "label": "A",
+       "content": "imperative",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "bf3e7418-1671-5087-808a-0b506f977cb5",
+       "label": "B",
+       "content": "declarative",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6a01d207-0bfa-53f3-859c-4a4060ece071",
+       "label": "C",
+       "content": "interrogative",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "922854ce-114f-5e43-bcf1-2949022b3c8c",
+       "label": "D",
+       "content": "exclamatory",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "27727ab2-cdc7-5652-8b55-04737f31b3cd",
+     "key": "eng-stype-05",
+     "stem": "What type of sentence is this?\n\n*When the rain stopped, we went outside, and the children played football.*",
+     "image_url": null,
+     "explanation": "Two main clauses (*we went outside* / *the children played football*) plus a dependent clause (*When the rain stopped*) make a compound-complex sentence.\n\n**Why the other options are wrong**\n\n- simple sentence: There are three clauses, not one.\n- compound sentence: A compound sentence has no dependent clause, but *When the rain stopped* is dependent.\n- complex sentence: A complex sentence has one main clause. This has two, joined by *and*.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d2ccc719-0ff2-56b7-87e7-c96b1c6cce98",
+       "label": "A",
+       "content": "simple sentence",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "71c7cea9-c68e-565a-bacc-c51ca45a6551",
+       "label": "B",
+       "content": "compound-complex sentence",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2ebf482b-a1f2-5917-bf25-4e8c4bf2b611",
+       "label": "C",
+       "content": "compound sentence",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "63e9ee60-f000-5f04-9955-27cb5a81a3b6",
+       "label": "D",
+       "content": "complex sentence",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6bd5b553-c470-50d1-9e49-08473b6faaea",
+   "topic": "Punctuation",
+   "title": "Punctuation: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on punctuation, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 122,
+   "questions": [
+    {
+     "id": "e4accffe-658a-5122-96d8-5f99f679b4e8",
+     "key": "eng-punct-01",
+     "stem": "Which sentence is correctly punctuated?",
+     "image_url": null,
+     "explanation": "*Its* (no apostrophe) shows possession, like *his* and *hers*. *It's* is short for *it is* or *it has*.\n\n**Why the other options are wrong**\n\n- The school has it's own borehole.: *It's* means *it is* or *it has*. The possessive *its* has no apostrophe.\n- The school has its' own borehole.: There is no such form as *its'*.\n- The school has its own, borehole.: No comma is needed between *own* and the noun it describes.",
+     "position": 1,
+     "options": [
+      {
+       "id": "d6b22e30-2d91-52eb-8c5e-584177014355",
+       "label": "A",
+       "content": "The school has it's own borehole.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "48dee3a2-fcd0-5e93-85ca-ffe24c65218f",
+       "label": "B",
+       "content": "The school has its' own borehole.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d55a9897-0e67-50d9-888c-b5cb78526d6a",
+       "label": "C",
+       "content": "The school has its own borehole.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6c64ebc9-e121-5aaf-9cfb-eae11ebf2d0b",
+       "label": "D",
+       "content": "The school has its own, borehole.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4ff171ab-053b-5e41-9a3a-3b300d29636d",
+     "key": "eng-punct-02",
+     "stem": "Which sentence is correctly punctuated?",
+     "image_url": null,
+     "explanation": "A colon introduces a list after a complete clause, and commas separate the items: *Bring the following items: a ruler, a pencil and an eraser.*\n\n**Why the other options are wrong**\n\n- Bring the following items; a ruler, a pencil and an eraser.: A semicolon joins two complete clauses. To introduce a list, use a colon.\n- Bring the following items: a ruler a pencil and an eraser.: Items in a list are separated by commas.\n- Bring, the following items: a ruler, a pencil and an eraser.: No comma is needed between the verb *bring* and its object.",
+     "position": 2,
+     "options": [
+      {
+       "id": "6b4cebab-4ce6-5a2b-9f3f-195b6f375bb5",
+       "label": "A",
+       "content": "Bring the following items; a ruler, a pencil and an eraser.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bf2fad88-5929-595e-b698-b0c7d7f874d8",
+       "label": "B",
+       "content": "Bring the following items: a ruler a pencil and an eraser.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5e647eba-feb4-5f4a-a7dc-fd44cd453943",
+       "label": "C",
+       "content": "Bring, the following items: a ruler, a pencil and an eraser.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d244615d-5b72-503e-8ea7-09920f5e7604",
+       "label": "D",
+       "content": "Bring the following items: a ruler, a pencil and an eraser.",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e582588f-5a78-56d8-a5e7-390b9dbaa0f6",
+     "key": "eng-punct-03",
+     "stem": "Which sentence is correctly punctuated?",
+     "image_url": null,
+     "explanation": "Direct speech goes inside quotation marks, and when the reporting words follow, the spoken words end with a comma inside the closing mark.\n\n**Why the other options are wrong**\n\n- \"We will win the match\" said the captain.: When the spoken words come first, a comma goes inside the closing quotation mark.\n- \"We will win the match.\" said the captain.: A full stop would end the sentence too early. Use a comma before *said*.\n- We will win the match, \"said the captain.\": Only the words actually spoken go inside the quotation marks.",
+     "position": 3,
+     "options": [
+      {
+       "id": "56849fd2-0a44-57f0-9702-69f663bcf7db",
+       "label": "A",
+       "content": "\"We will win the match,\" said the captain.",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9ff2f437-b1e3-59e6-842e-a196f558c6f0",
+       "label": "B",
+       "content": "\"We will win the match\" said the captain.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cb91fbe8-4b63-5e24-b23d-a995144d45a5",
+       "label": "C",
+       "content": "\"We will win the match.\" said the captain.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a746b519-48a2-561b-b302-feaaa73027da",
+       "label": "D",
+       "content": "We will win the match, \"said the captain.\"",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "968cb2c9-08b6-5b5a-b92f-28b00063ec43",
+     "key": "eng-punct-04",
+     "stem": "Which sentence is correctly punctuated?",
+     "image_url": null,
+     "explanation": "Two closely related complete sentences can be joined with a semicolon: *It was getting late; we decided to go home.* (Or: *It was getting late, so we decided to go home.*)\n\n**Why the other options are wrong**\n\n- It was getting late, we decided to go home.: A comma alone cannot join two complete sentences (a comma splice).\n- It was getting late; and we decided to go home.: Use either a semicolon or a comma with *and*, not a semicolon with *and*.\n- It was getting late we decided to go home.: Two complete sentences run together with no punctuation (a run-on sentence).",
+     "position": 4,
+     "options": [
+      {
+       "id": "a0c65abd-dff9-5e41-bc3f-cef345ad71f3",
+       "label": "A",
+       "content": "It was getting late, we decided to go home.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "35958a3e-f5fe-5567-8d6d-8d2ed8c16e47",
+       "label": "B",
+       "content": "It was getting late; we decided to go home.",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ff0aad9b-8ef4-521d-96b3-e061eef2b452",
+       "label": "C",
+       "content": "It was getting late; and we decided to go home.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5dc27b27-5b2d-5447-911b-19467f446909",
+       "label": "D",
+       "content": "It was getting late we decided to go home.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2695acee-23d5-5c5d-ab12-e33550050a0e",
+     "key": "eng-punct-05",
+     "stem": "Which sentence is correctly punctuated?",
+     "image_url": null,
+     "explanation": "A reported (indirect) question is not itself a question: it takes statement word order and a full stop.\n\n**Why the other options are wrong**\n\n- She asked me where the library was?: A reported question is a statement, so it ends with a full stop, not a question mark.\n- She asked me, where the library was.: No comma is needed before a reported question.\n- She asked me where was the library?: A reported question uses statement word order (*where the library was*) and a full stop.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e425aa72-3810-55bf-aad2-724fec719043",
+       "label": "A",
+       "content": "She asked me where the library was?",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1c0d54bd-385a-502c-bc8f-82f987574bad",
+       "label": "B",
+       "content": "She asked me, where the library was.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0443ccce-8eea-5fda-a0fe-207cac43035d",
+       "label": "C",
+       "content": "She asked me where the library was.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "00795699-a127-5dcf-aa00-873915d6bc0e",
+       "label": "D",
+       "content": "She asked me where was the library?",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dbe6b646-a80f-5724-8fbe-be1fae4d1ed2",
+   "topic": "Homonyms and Homophones",
+   "title": "Homonyms and Homophones: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on homonyms and homophones, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 123,
+   "questions": [
+    {
+     "id": "015084e7-57e1-507f-9fa1-ca81c72b9d10",
+     "key": "eng-homo-01",
+     "stem": "Choose the option that best completes the sentence.\n\nThe bride walked slowly down the ____ of the church.",
+     "image_url": null,
+     "explanation": "*Aisle* (the passage between rows of seats) and *isle* (an island) are homophones: same sound, different spelling and meaning.\n\n**Why the other options are wrong**\n\n- isle: An *isle* is an island. It sounds the same as *aisle* but means something different.\n- I'll: *I'll* is short for *I will*.\n- ail: *Ail* means to trouble or make ill, as in *what ails you?*",
+     "position": 1,
+     "options": [
+      {
+       "id": "61830fad-63d7-5649-bb95-e64e7fd5efac",
+       "label": "A",
+       "content": "isle",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2c7732c8-4f96-5518-bc34-1d2d937f15bc",
+       "label": "B",
+       "content": "I'll",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "10621b3f-8c4a-59e3-b5a3-39351896340c",
+       "label": "C",
+       "content": "ail",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b536dc7f-2db9-5435-b21c-3add175201e7",
+       "label": "D",
+       "content": "aisle",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8b2bafe8-e43e-5709-b0ff-d114b8ffc60a",
+     "key": "eng-homo-02",
+     "stem": "Choose the option that best completes the sentence.\n\nWe could not ____ the teacher because of the noise from the road.",
+     "image_url": null,
+     "explanation": "*Hear* (with your ear) and *here* (this place) are homophones. A useful reminder: you **hear** with your **ear**.\n\n**Why the other options are wrong**\n\n- here: *Here* means *in this place*. It sounds like *hear* but is not a verb.\n- hair: *Hair* grows on the head.\n- hare: A *hare* is an animal like a large rabbit.",
+     "position": 2,
+     "options": [
+      {
+       "id": "57dea2ed-1c79-5232-be18-8c8a62430dd3",
+       "label": "A",
+       "content": "hear",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "bab6da58-5847-5be8-a639-12828aea069e",
+       "label": "B",
+       "content": "here",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bd6bdde7-e5fa-54af-a056-15bae3f53175",
+       "label": "C",
+       "content": "hair",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7e155964-00b9-587c-840f-1fa2e7066270",
+       "label": "D",
+       "content": "hare",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2e6cdd0e-b9e2-5e1c-85c3-95e978fadebd",
+     "key": "eng-homo-03",
+     "stem": "Choose the option that best completes the sentence.\n\nMariama wants to buy a new ____ of sandals for the wedding.",
+     "image_url": null,
+     "explanation": "*Pair* (two things that go together), *pear* (a fruit) and *pare* (to trim) all sound the same.\n\n**Why the other options are wrong**\n\n- pear: A *pear* is a fruit.\n- pare: To *pare* means to cut away the outer layer, as in *pare a mango*.\n- pairs: After *a new*, the noun is singular: *a pair of sandals*.",
+     "position": 3,
+     "options": [
+      {
+       "id": "40d8e114-8d2b-5d5c-9cea-4855d4966291",
+       "label": "A",
+       "content": "pear",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "54530f25-376e-59d7-89bf-b29382c46593",
+       "label": "B",
+       "content": "pair",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7bc103a8-c86f-5b52-b8be-af4546b726d6",
+       "label": "C",
+       "content": "pare",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "57dc1d99-0e27-541b-bc91-69cb9802c685",
+       "label": "D",
+       "content": "pairs",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "93011ecc-cb51-566b-bdf7-e35f21bfe2c6",
+     "key": "eng-homo-04",
+     "stem": "In which sentence does the word *bank* mean the side of a river?",
+     "image_url": null,
+     "explanation": "*Bank* is a homonym: one spelling with several meanings. Watching canoes go by puts us at the side of a river.\n\n**Why the other options are wrong**\n\n- My father keeps his savings in the bank.: Here *bank* means a place that keeps money.\n- You can bank on Sahr to help you.: Here *bank on* means to rely on.\n- The pilot had to bank the plane to the left.: Here *bank* means to tilt an aircraft when turning.",
+     "position": 4,
+     "options": [
+      {
+       "id": "36b3f21d-2efb-5ef6-85c8-694546f86817",
+       "label": "A",
+       "content": "My father keeps his savings in the bank.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d3620ddf-02c8-5d2d-807c-6a2ec16918b1",
+       "label": "B",
+       "content": "You can bank on Sahr to help you.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d3547878-8de5-5f6c-aadd-bbc198aac549",
+       "label": "C",
+       "content": "We sat on the bank and watched the canoes go by.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "495ffe0e-23e3-59fb-9490-7ef61d1a99f6",
+       "label": "D",
+       "content": "The pilot had to bank the plane to the left.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "822ed28a-7132-5084-87c0-16bd29039cb3",
+     "key": "eng-homo-05",
+     "stem": "Choose the option that best completes the sentence.\n\nThe soldiers marched ____ the town at dawn.",
+     "image_url": null,
+     "explanation": "*Through* (from one side to the other) and *threw* (past of *throw*) are homophones. Use the full spelling *through* in examinations.\n\n**Why the other options are wrong**\n\n- threw: *Threw* is the past tense of *throw*.\n- thru: *Thru* is an informal spelling and is not accepted in formal or examination English.\n- though: *Though* means *although*; it does not show movement.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ca16d33c-b795-54fe-978a-d2d081a036ed",
+       "label": "A",
+       "content": "threw",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "51443226-4a40-553b-ad01-525ed70632e6",
+       "label": "B",
+       "content": "thru",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7d8e48cf-c55e-5e62-8eac-71accc7c74f4",
+       "label": "C",
+       "content": "though",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "57127006-c6eb-5ec6-b0fb-95d3c3cd819b",
+       "label": "D",
+       "content": "through",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fee2a889-7765-56f4-9686-8d8a69c4643f",
+   "topic": "Figures of Speech",
+   "title": "Figures of Speech: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on figures of speech, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 124,
+   "questions": [
+    {
+     "id": "690ed75a-6360-58e5-8824-74ff7ac1c7a5",
+     "key": "eng-fig-01",
+     "stem": "Which figure of speech is used in this sentence?\n\n*The classroom was as quiet as a graveyard.*",
+     "image_url": null,
+     "explanation": "A simile compares two different things using *like* or *as*: *as quiet as a graveyard*.\n\n**Why the other options are wrong**\n\n- metaphor: A metaphor says one thing **is** another. This uses *as… as* to compare.\n- personification: Nothing here is given human qualities.\n- hyperbole: Hyperbole is deliberate exaggeration; the key feature here is the comparison with *as*.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e83d497e-95a6-5505-bd44-fe207c32763b",
+       "label": "A",
+       "content": "simile",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "bc5ceb67-4b28-5837-8088-099ef58ac16d",
+       "label": "B",
+       "content": "metaphor",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1fc96821-6bc0-5c13-b149-98ce5b1f9315",
+       "label": "C",
+       "content": "personification",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "700e3086-cdb7-59d2-b342-6a72a9f70e8a",
+       "label": "D",
+       "content": "hyperbole",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b541962d-0507-5766-b49f-2385a1f41bc4",
+     "key": "eng-fig-02",
+     "stem": "Which figure of speech is used in this sentence?\n\n*The wind whispered through the palm trees.*",
+     "image_url": null,
+     "explanation": "Personification gives human qualities or actions to things that are not human: the wind *whispered*.\n\n**Why the other options are wrong**\n\n- simile: There is no comparison with *like* or *as*.\n- metaphor: The wind is not said to **be** something else; it is given a human action.\n- alliteration: Alliteration is the repetition of the same first sound, which is not the point here.",
+     "position": 2,
+     "options": [
+      {
+       "id": "a3d550c3-ba41-5820-9aca-1905e75f5c39",
+       "label": "A",
+       "content": "simile",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "00d3163c-3665-5ecc-afd1-16468e5535df",
+       "label": "B",
+       "content": "personification",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4f78920d-9eb5-563f-9136-8ba70af5712f",
+       "label": "C",
+       "content": "metaphor",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7264e59e-0435-55f2-a8ee-7110bd89da5f",
+       "label": "D",
+       "content": "alliteration",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4cf13ea4-f7e0-5c62-b9a2-9a9770f0e8cd",
+     "key": "eng-fig-03",
+     "stem": "Which figure of speech is used in this sentence?\n\n*I have told you a million times to shut that door!*",
+     "image_url": null,
+     "explanation": "Hyperbole is deliberate exaggeration for effect: nobody has really said it *a million times*.\n\n**Why the other options are wrong**\n\n- simile: There is no comparison with *like* or *as*.\n- irony: Irony says the opposite of what is meant. The speaker means *many times*, exaggerated.\n- personification: Nothing is given human qualities.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d06dd8d0-ba24-5bbd-a69f-427e077f9b42",
+       "label": "A",
+       "content": "simile",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c4c9bf54-f1f1-5776-8fcf-e2b3180581ff",
+       "label": "B",
+       "content": "irony",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f9da3511-5330-50e8-98de-6d157f6ba0e4",
+       "label": "C",
+       "content": "hyperbole",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2bacacde-0138-53e6-a280-457afe12655b",
+       "label": "D",
+       "content": "personification",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0d6fc24d-0d7b-527a-bb9a-5b0545a66227",
+     "key": "eng-fig-04",
+     "stem": "Which figure of speech is used in this sentence?\n\n*Our principal is a lion when pupils break the rules.*",
+     "image_url": null,
+     "explanation": "A metaphor says one thing **is** another to show a shared quality, without *like* or *as*: the principal is fierce, like a lion.\n\n**Why the other options are wrong**\n\n- simile: A simile would use *like* or *as* (*like a lion*). This says he **is** a lion.\n- personification: Personification gives human qualities to non-human things; here a person is compared to an animal.\n- euphemism: A euphemism is a gentle word for something unpleasant.",
+     "position": 4,
+     "options": [
+      {
+       "id": "791c5096-1c2e-5774-a507-613bff83750c",
+       "label": "A",
+       "content": "simile",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2cbf01f7-bdc2-5e35-a2db-9d51744d4519",
+       "label": "B",
+       "content": "personification",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5f10171b-32ca-51eb-95d5-c0320aa2707d",
+       "label": "C",
+       "content": "euphemism",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "33d04fc9-d8d8-53e0-8f73-8050f459a271",
+       "label": "D",
+       "content": "metaphor",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f6385db0-ec2f-5fa7-b712-4826040a7c48",
+     "key": "eng-fig-05",
+     "stem": "Which figure of speech is used in this sentence?\n\n*Fatu found five fresh fish at the fishing wharf.*",
+     "image_url": null,
+     "explanation": "Alliteration repeats the same first consonant sound in words close together: *Fatu found five fresh fish… fishing*.\n\n**Why the other options are wrong**\n\n- simile: There is no comparison with *like* or *as*.\n- metaphor: Nothing is said to **be** something else.\n- hyperbole: There is no exaggeration.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b383c9e0-18aa-5b5d-956b-5ba529ebd565",
+       "label": "A",
+       "content": "alliteration",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7794be54-143f-5b6e-b5be-4fd3c716e010",
+       "label": "B",
+       "content": "simile",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c3007457-de2d-5786-8545-d086794a4001",
+       "label": "C",
+       "content": "metaphor",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6c780859-85e4-5dbf-8110-0d3b87a5236a",
+       "label": "D",
+       "content": "hyperbole",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "07e8b35a-52c6-5877-a232-c005acb5469b",
+   "topic": "Word Formation",
+   "title": "Word Formation: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on word formation, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 125,
+   "questions": [
+    {
+     "id": "a240933b-2059-5297-bdef-1cb4e94ddc04",
+     "key": "eng-form-01",
+     "stem": "Choose the option that best completes the sentence.\n\nWithout a ladder, it was ____ for Sorie to reach the top shelf.",
+     "image_url": null,
+     "explanation": "The negative prefix *in-* changes to *im-* before *p*, *b* and *m*: *impossible*, *imbalance*, *immature*.\n\n**Why the other options are wrong**\n\n- unpossible: *Possible* does not take *un-*; its negative is *impossible*.\n- inpossible: Before *p*, the prefix *in-* becomes *im-*: *impossible*.\n- dispossible: *Dis-* does not combine with *possible*.",
+     "position": 1,
+     "options": [
+      {
+       "id": "cfae8c87-d1c8-579c-9d1c-6d36606a1738",
+       "label": "A",
+       "content": "unpossible",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f6643668-11b8-59a6-825e-93cb5d14edb6",
+       "label": "B",
+       "content": "impossible",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "89000724-682f-5bd9-b358-3a7b6a890aa9",
+       "label": "C",
+       "content": "inpossible",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cbade8cd-1ab5-5f5b-9d46-12576a4cac55",
+       "label": "D",
+       "content": "dispossible",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "760cbff1-2462-5a5d-be21-4a62d20d92c0",
+     "key": "eng-form-02",
+     "stem": "Choose the option that best completes the sentence.\n\nThe principal's ____ to close the school early was announced at assembly.",
+     "image_url": null,
+     "explanation": "The noun formed from the verb *decide* is *decision* (like *divide* → *division*).\n\n**Why the other options are wrong**\n\n- decidement: *-ment* does not attach to *decide*. The noun is *decision*.\n- decition: The noun is spelt with *-sion*: *decision*.\n- decided: *Decided* is a verb form or adjective. After *the principal's* we need a noun.",
+     "position": 2,
+     "options": [
+      {
+       "id": "086263d5-0f28-5856-a41d-0911cff8065d",
+       "label": "A",
+       "content": "decidement",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "01a9158d-6f9e-5400-bdf3-1e706506cac1",
+       "label": "B",
+       "content": "decition",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4050f211-24cb-5491-be8c-9eeba7204d57",
+       "label": "C",
+       "content": "decision",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "5ff539f1-3f1c-57e4-b7b8-9f1d0eda762e",
+       "label": "D",
+       "content": "decided",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9f87b00c-f26e-5501-b34e-53a616b4fc30",
+     "key": "eng-form-03",
+     "stem": "Choose the option that best completes the sentence.\n\nThe judge was praised for her ____ in a difficult case.",
+     "image_url": null,
+     "explanation": "The suffix *-ness* turns many adjectives into nouns: *fair* → *fairness*, *kind* → *kindness*.\n\n**Why the other options are wrong**\n\n- fairly: *Fairly* is an adverb. After *her* we need a noun.\n- unfair: *Unfair* is an adjective, and it gives the opposite meaning.\n- fairment: There is no such word; the noun from *fair* uses *-ness*.",
+     "position": 3,
+     "options": [
+      {
+       "id": "03587e28-b4df-5518-846b-fd18d553d7a6",
+       "label": "A",
+       "content": "fairly",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3ac534c9-9e56-5cd8-a1ec-5818d36070f8",
+       "label": "B",
+       "content": "unfair",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c47a5000-fa99-58da-90e2-7e51073bbbfa",
+       "label": "C",
+       "content": "fairment",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0c08c54a-bb86-5364-bae7-c1c868cc8d33",
+       "label": "D",
+       "content": "fairness",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eb7e9614-1722-5b8b-a71c-8a01bd89574a",
+     "key": "eng-form-04",
+     "stem": "Choose the option that best completes the sentence.\n\nThe teacher asked Abu to ____ his essay because it had too many mistakes.",
+     "image_url": null,
+     "explanation": "The prefix *re-* means *again*: *rewrite*, *redo*, *reconsider*.\n\n**Why the other options are wrong**\n\n- prewrite: *Pre-* means *before*. Abu must write it **again**.\n- miswrite: *Mis-* means *wrongly*; the teacher wants it written again, correctly.\n- unwrite: *Un-* reverses an action; you cannot *unwrite* an essay.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e86ea97f-9c82-5955-868f-6697c248f1af",
+       "label": "A",
+       "content": "rewrite",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9205acd0-b9a1-5440-b59a-d38af265b3f6",
+       "label": "B",
+       "content": "prewrite",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "90c78a99-1b5c-5af7-90be-814442b95883",
+       "label": "C",
+       "content": "miswrite",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "455bb329-5a3a-58a3-b30a-b5256980efc1",
+       "label": "D",
+       "content": "unwrite",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "caff19f7-fa86-5dd4-8c97-7a31616f86c1",
+     "key": "eng-form-05",
+     "stem": "Choose the option that best completes the sentence.\n\nSwimming in the river during the rainy season can be very ____.",
+     "image_url": null,
+     "explanation": "The suffix *-ous* forms adjectives from some nouns: *danger* → *dangerous*, *fame* → *famous*.\n\n**Why the other options are wrong**\n\n- dangerful: *Danger* takes *-ous*, not *-ful*, to form the adjective.\n- dangerly: *-ly* usually forms adverbs, and there is no word *dangerly*.\n- endanger: *Endanger* is a verb (to put in danger). After *very* we need an adjective.",
+     "position": 5,
+     "options": [
+      {
+       "id": "057cb934-b61a-52b0-ad3e-94371997184b",
+       "label": "A",
+       "content": "dangerful",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "356aa747-d115-5a04-a887-ff20a92b05ae",
+       "label": "B",
+       "content": "dangerous",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "91897322-4e43-58ab-bbee-c2abf63cf11a",
+       "label": "C",
+       "content": "dangerly",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d777acb4-a7b7-552d-8441-666dec953b44",
+       "label": "D",
+       "content": "endanger",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bfa9edb1-5073-5f05-b79c-2a325b214750",
+   "topic": "Vocabulary in Context",
+   "title": "Vocabulary in Context: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on vocabulary in context, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 126,
+   "questions": [
+    {
+     "id": "9815e584-5853-52c4-8c46-1ad0085ebfc9",
+     "key": "eng-ctx-01",
+     "stem": "Choose the option nearest in meaning to the word in bold as it is used in the sentence.\n\nThe village was **isolated** after the bridge collapsed, so food had to be carried in on foot.",
+     "image_url": null,
+     "explanation": "The clue is *food had to be carried in on foot*: with no bridge, the village was cut off.\n\n**Why the other options are wrong**\n\n- crowded with people: Nothing in the sentence suggests crowds.\n- completely destroyed: The bridge collapsed, but the village itself was not destroyed: food was still carried in.\n- very large: *Isolated* is not about size.",
+     "position": 1,
+     "options": [
+      {
+       "id": "56070479-3610-586c-a46a-2ef8960eaf4d",
+       "label": "A",
+       "content": "crowded with people",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "16cb3cab-6262-541c-85a6-f7f78bfad473",
+       "label": "B",
+       "content": "completely destroyed",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "de951aca-f595-57ab-863f-bf4b89c04547",
+       "label": "C",
+       "content": "cut off from other places",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a11d051d-35db-5df0-8e2a-10947fb60313",
+       "label": "D",
+       "content": "very large",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8e4ee6e6-5f4a-54c2-910b-d06cbf4e67e3",
+     "key": "eng-ctx-02",
+     "stem": "Choose the option nearest in meaning to the word in bold as it is used in the sentence.\n\nThe rule is **mandatory**: every pupil must wear the full school uniform.",
+     "image_url": null,
+     "explanation": "The clue is *must*: a mandatory rule is one that has to be obeyed, that is, compulsory.\n\n**Why the other options are wrong**\n\n- optional: *Optional* means you may choose. The sentence says pupils *must*.\n- new: Nothing in the sentence says when the rule was made.\n- unpopular: The sentence says nothing about what pupils think of the rule.",
+     "position": 2,
+     "options": [
+      {
+       "id": "0ffac8f4-a69c-5fcc-a0b7-5c278bd31cdc",
+       "label": "A",
+       "content": "optional",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c1a2b03d-2e5b-5320-a27c-509ddee496f1",
+       "label": "B",
+       "content": "new",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "73d20cbc-eec1-5f47-907f-b90ce117e00a",
+       "label": "C",
+       "content": "unpopular",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b2e2e9b0-1593-5769-a263-9fc10971a3a0",
+       "label": "D",
+       "content": "compulsory",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "379e7de2-63e8-5383-8181-c9e177cede6c",
+     "key": "eng-ctx-03",
+     "stem": "Choose the option nearest in meaning to the word in bold as it is used in the sentence.\n\nAfter weeks without rain, the **parched** fields cracked in the sun.",
+     "image_url": null,
+     "explanation": "The clues are *weeks without rain* and *cracked in the sun*: *parched* means very dry.\n\n**Why the other options are wrong**\n\n- flooded: *Weeks without rain* means the opposite of flooded.\n- green: Fields that crack in the sun after weeks without rain are not green and fresh.\n- newly ploughed: The sentence is about the lack of rain, not ploughing.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2d017701-1370-58b5-b4a1-57d417c1b96c",
+       "label": "A",
+       "content": "very dry",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "280ba77c-4500-56ad-9219-8428fc4c91db",
+       "label": "B",
+       "content": "flooded",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e221b7a5-66e0-55b7-b2e7-43290e020fc4",
+       "label": "C",
+       "content": "green",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dd1e17a1-04b5-5a3e-9db4-12627ac94542",
+       "label": "D",
+       "content": "newly ploughed",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8b337865-7c54-533c-8d18-6dc66a1b09b5",
+     "key": "eng-ctx-04",
+     "stem": "Choose the option nearest in meaning to the word in bold as it is used in the sentence.\n\nThe witness gave such a **vague** description that the police could not identify the thief.",
+     "image_url": null,
+     "explanation": "The clue is that the police *could not identify the thief*: the description was unclear and lacking detail.\n\n**Why the other options are wrong**\n\n- detailed: A detailed description would have helped the police, but they could not identify the thief.\n- truthful: *Vague* is about how clear something is, not whether it is true.\n- long: *Vague* is not about length.",
+     "position": 4,
+     "options": [
+      {
+       "id": "5f88afbe-5966-581f-bcb0-ee7ebeb5f796",
+       "label": "A",
+       "content": "detailed",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a737043e-be25-573f-a46b-8d97ae410c7f",
+       "label": "B",
+       "content": "unclear",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a18ddfb9-5db4-5d3e-814d-e279ad843c19",
+       "label": "C",
+       "content": "truthful",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2bf3df57-7262-5709-a9d6-1ceed02bc7c5",
+       "label": "D",
+       "content": "long",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6d16f24a-60dc-5116-a350-d0b5b3427b9e",
+     "key": "eng-ctx-05",
+     "stem": "Choose the option nearest in meaning to the word in bold as it is used in the sentence.\n\nDespite his **meagre** salary, the teacher bought books for his poorest pupils.",
+     "image_url": null,
+     "explanation": "*Despite* shows a contrast with his kindness: his salary was meagre, that is, very small.\n\n**Why the other options are wrong**\n\n- generous: *Despite* signals a contrast: a generous salary would not need *despite*.\n- regular: *Meagre* is about how much, not how often.\n- late: *Meagre* is about amount, not timing.",
+     "position": 5,
+     "options": [
+      {
+       "id": "23984c61-b517-53a8-a2ac-a45007f5d265",
+       "label": "A",
+       "content": "generous",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ae5ac4ca-4484-5e82-acba-1b8f708d26f6",
+       "label": "B",
+       "content": "regular",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7d83bd9c-2a48-5fed-a7b0-f47f8df2ce3c",
+       "label": "C",
+       "content": "very small",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "11d3d74f-9252-5957-ba70-23111a34b4dd",
+       "label": "D",
+       "content": "late",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "c9fc61b58c4e"
+}
