@@ -28,7 +28,6 @@ export function Landing({ data }: { data: LandingData }) {
     <>
       <Hero data={data} />
       <div ref={root} className="mx-auto max-w-6xl space-y-20 px-4 sm:space-y-28 sm:px-6">
-        <TrustStrip data={data} />
         <SubjectShowcase subjects={data.subjects} />
         {data.popular.length > 0 && <PopularTopics data={data} />}
         <ProductTour />
