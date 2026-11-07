@@ -75,7 +75,7 @@ function PublicLessonPage() {
   const { palette } = subjectTheme(subject.slug)
 
   return (
-    <article className="mx-auto max-w-2xl space-y-8 pb-12">
+    <article className="app-page app-page-reader mx-auto w-full max-w-5xl space-y-8 pb-12">
       <header className="space-y-3 pt-2">
         <Breadcrumbs trail={trail(data)} />
         <p className={`flex items-center gap-2 text-sm font-semibold ${palette.text}`}>
