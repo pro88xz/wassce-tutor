@@ -273,6 +273,84 @@
       "est_minutes": 9,
       "sort_order": 2,
       "auto_sync": true
+    },
+    {
+      "file": "economics-factors-of-production-1.md",
+      "subject": "Economics",
+      "topic": "factors-of-production",
+      "title": "Land and labour",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 10,
+      "sort_order": 1,
+      "auto_sync": true
+    },
+    {
+      "file": "economics-factors-of-production-2.md",
+      "subject": "Economics",
+      "topic": "factors-of-production",
+      "title": "Capital and the entrepreneur",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 10,
+      "sort_order": 2,
+      "auto_sync": true
+    },
+    {
+      "file": "economics-production-theory-1.md",
+      "subject": "Economics",
+      "topic": "production-theory",
+      "title": "Types of production and division of labour",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 10,
+      "sort_order": 1,
+      "auto_sync": true
+    },
+    {
+      "file": "economics-production-theory-2.md",
+      "subject": "Economics",
+      "topic": "production-theory",
+      "title": "Total, average and marginal product; the law of diminishing returns",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 12,
+      "sort_order": 2,
+      "auto_sync": true
+    },
+    {
+      "file": "economics-cost-and-revenue-1.md",
+      "subject": "Economics",
+      "topic": "concepts-of-cost-and-revenue",
+      "title": "Fixed, variable, average and marginal costs",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 12,
+      "sort_order": 1,
+      "auto_sync": true
+    },
+    {
+      "file": "economics-cost-and-revenue-2.md",
+      "subject": "Economics",
+      "topic": "concepts-of-cost-and-revenue",
+      "title": "Revenue and profit maximisation",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 12,
+      "sort_order": 2,
+      "auto_sync": true
     }
   ]
 }
