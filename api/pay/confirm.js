@@ -3,7 +3,7 @@
 // payment page (and while they wait), so access switches on even if the
 // webhook is slow. Checks the session with Monime; never trusts the browser.
 //   200 { status: "completed" | "pending" | "cancelled" | "expired" | ..., accessUntil? }
-import { db, json, monimeConfigured, preflight, requestUser, settlePayment } from '../_lib/server.js'
+import { db, json, monimeConfigured, preflight, requestUser, settlePayment, settlePaymentCode } from '../_lib/server.js'
 
 export const OPTIONS = preflight
 
@@ -22,12 +22,14 @@ export async function POST(request) {
 
   const { data: payment } = await client
     .from('payments')
-    .select('id, user_id, status, checkout_session_id, access_until')
+    .select('id, user_id, status, checkout_session_id, access_until, payment_code_id, provider_payment_id, amount_nle, ussd_code')
     .eq('id', paymentId)
     .maybeSingle()
   // Someone else's payment reads the same as a missing one.
   if (!payment || payment.user_id !== user.id) return json(request, { code: 'not_found' }, 404)
 
-  const result = await settlePayment(client, payment)
-  return json(request, { status: result.status, accessUntil: result.accessUntil ?? null })
+  const result = payment.payment_code_id
+    ? await settlePaymentCode(client, payment)
+    : await settlePayment(client, payment)
+  return json(request, { status: result.status, accessUntil: result.accessUntil ?? null, ussdCode: payment.ussd_code ?? null })
 }
