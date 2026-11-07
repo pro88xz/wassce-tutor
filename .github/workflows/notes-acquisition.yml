@@ -35,8 +35,7 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Discover, scrape, verify licences and populate topic gaps
         env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          NOTES_CATALOG_URL: https://wasscetutor.com/api/notes-engine/catalog
           CRON_SECRET: ${{ secrets.CRON_SECRET }}
           NOTES_INGEST_URL: https://wasscetutor.com/api/notes-engine/ingest
           TOPIC_LIMIT: ${{ github.event.inputs.topic_limit || '3' }}
