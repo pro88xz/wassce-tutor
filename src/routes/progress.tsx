@@ -27,7 +27,7 @@ function ProgressPage() {
   const started = !!summary && (summary.done > 0 || summary.papersTaken > 0)
 
   return (
-    <div className="mx-auto max-w-3xl space-y-7">
+    <div className="app-page mx-auto w-full max-w-6xl space-y-7">
       <PageHeader title="Progress" subtitle="What you've completed, and how your practice is going." />
 
       {error ? (
