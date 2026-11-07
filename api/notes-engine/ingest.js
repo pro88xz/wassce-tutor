@@ -31,6 +31,9 @@ function validateLesson(item) {
     try { url = new URL(source.url) } catch { throw new Error('Invalid source URL.') }
     if (url.protocol !== 'https:' || !ALLOWED_HOSTS.has(url.hostname)) throw new Error('Source host is not on the approved open-education allowlist.')
     if (!ALLOWED_LICENSES.has(source.license)) throw new Error('Source licence is not approved.')
+    if (typeof source.license_evidence !== 'string' || source.license_evidence.length < 5) throw new Error('Visible source licence evidence is required.')
+    if (source.license === 'CC-BY-SA-4.0' && !/share.?alike|cc by-sa/i.test(source.license_evidence)) throw new Error('CC BY-SA evidence does not match its declared licence.')
+    if (source.license === 'CC-BY-4.0' && !/(?:attribution.*4\.0|cc by 4\.0)/i.test(source.license_evidence)) throw new Error('CC BY evidence does not match its declared licence.')
     if (typeof source.title !== 'string' || !source.title.trim() || !item.content.includes(source.url)) throw new Error('Source attribution is incomplete.')
     if (source.license === 'CC-BY-SA-4.0' && !/ShareAlike/i.test(item.content)) throw new Error('ShareAlike attribution notice is missing.')
   }
