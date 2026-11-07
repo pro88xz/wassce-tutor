@@ -107,8 +107,9 @@ export async function monime(method, path, { body, idempotencyKey } = {}) {
   const data = await res.json().catch(() => null)
   if (!res.ok || !data?.success) {
     const reason = data?.error?.reason || `http_${res.status}`
-    console.error(`[monime] ${method} ${path} failed: ${reason} (request ${requestId ?? 'n/a'})`)
-    return { ok: false, status: res.status, reason, requestId }
+    const message = typeof data?.error?.message === 'string' ? data.error.message.slice(0, 300) : null
+    console.error(`[monime] ${method} ${path} failed: ${reason}; status=${res.status}; request=${requestId ?? 'n/a'}; message=${message ?? 'n/a'}`)
+    return { ok: false, status: res.status, reason, requestId, message }
   }
   return { ok: true, status: res.status, result: data.result, requestId }
 }
