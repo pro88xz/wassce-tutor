@@ -73,7 +73,7 @@ export async function POST(request) {
 
   if (name === 'payment_code.completed' && objectId) {
     const { data: payment } = await client.from('payments')
-      .select('id, user_id, status, access_until, payment_code_id, provider_payment_id, amount_nle')
+      .select('id, user_id, status, access_until, payment_code_id, provider_payment_id, amount_nle, financial_transaction_reference')
       .eq('payment_code_id', objectId).maybeSingle()
     if (payment) {
       const result = await settlePaymentCode(client, payment)
