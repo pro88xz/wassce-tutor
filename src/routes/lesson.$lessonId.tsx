@@ -41,7 +41,7 @@ function LessonPage() {
 
   if (isLoading) {
     return (
-      <div className="mx-auto max-w-2xl space-y-4">
+      <div className="app-page app-page-reader mx-auto w-full max-w-5xl space-y-4">
         <Skeleton className="h-24" />
         <Skeleton className="h-96" />
       </div>
@@ -80,7 +80,7 @@ function LessonPage() {
   const nextLocked = next ? lessonLocked(access, next) : false
 
   return (
-      <div className="mx-auto max-w-2xl space-y-6">
+      <div className="app-page app-page-reader mx-auto w-full max-w-5xl space-y-6">
         {/* READER HEADER: back, position in topic, progress */}
         <div className="space-y-2">
           <Link to="/topic/$topicId" params={{ topicId: lesson.topic_id }} className="-ml-1 inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground">
