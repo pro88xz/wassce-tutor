@@ -23,15 +23,24 @@ etc.). Don't run them against the live project.
 | `20261105_03_subject_slugs.sql` | Full-word subject slugs for public URLs, with a check against reserved words |
 | `20261105_04_progress_and_reviewers.sql` | `lesson_progress` (students see only their own rows); reviewer one-line bio (`profiles.public_bio`) shown on public lessons |
 | `20261106_05_hidden_sets.sql` | Papers an admin has hidden, with their questions and answers, are readable by admins only; students see published papers only; public question count includes published papers only |
+| `20261106_06_tutor_requests.sql` | Book-a-tutor requests from /tutors: anyone can send one; only admins read or update them |
+| `20261107_07_plans_and_monime.sql` | Term and academic-year plans, free tier (first lesson per topic, one starter set per subject), payment records; removes the trial |
+| `20261107_08_public_without_review.sql` | Review is no longer a gate: each topic's free lesson and free-set questions are public automatically; `is_public` no longer requires `reviewed_at` |
 
 Each was tested against a local Postgres copy of the live schema (logged-out
 visitor, student on trial, expired student, admin) before being committed.
 
 ## Publishing a lesson or question publicly
 
-Nothing becomes public until a named person has reviewed it; the database
-refuses `is_public = true` without `reviewed_at`. Reviewers do this in the app:
-Admin → Review lessons and questions.
+Review is not a gate (migration 08). The free lesson of every topic (its first
+published lesson) has a public page at `/wassce/{subject}/{topic}/{lesson}`
+automatically, reviewed or not, and the questions of free starter sets are
+public the same way. Paid lessons stay locked unless an admin marks one public.
+
+Review is an optional quality mark: in the app (Admin → Review lessons and
+questions) a reviewer can edit a lesson and mark it reviewed, which adds their
+name and bio as the "Reviewed by" byline. New public pages are prerendered on
+the next deploy.
 
 ## Content: question sets
 

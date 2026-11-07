@@ -58,8 +58,9 @@ function AdminReview() {
       </div>
 
       <p className="text-sm text-muted-foreground">
-        Read a lesson, fix anything wrong, then approve it. Approved lessons become free public pages with your name
-        on them (they appear on the website after the next deploy). Students in the app see every lesson either way.
+        Review is optional: nothing waits for it. Every topic&rsquo;s free lesson is public automatically, and students in
+        the app see every lesson. Marking a lesson reviewed adds your name as &ldquo;Reviewed by&rdquo;; for a paid lesson it
+        also gives it a public page. Public pages update after the next deploy.
       </p>
 
       {/* keyed so the form resets to the saved values whenever they change */}
@@ -132,13 +133,18 @@ function AdminReview() {
 }
 
 function StatusBadge({ lesson }: { lesson: ReviewLesson }) {
-  if (lesson.is_public) {
-    return <span className="shrink-0 rounded-full bg-emerald-500/10 px-2 py-0.5 text-xs font-semibold text-emerald-700">Public</span>
-  }
-  if (lesson.reviewed_at) {
-    return <span className="shrink-0 rounded-full bg-muted px-2 py-0.5 text-xs font-semibold text-muted-foreground">Reviewed, private</span>
-  }
-  return <span className="shrink-0 rounded-full bg-amber-500/10 px-2 py-0.5 text-xs font-semibold text-amber-700">Not reviewed</span>
+  const pill = 'shrink-0 rounded-full px-2 py-0.5 text-xs font-semibold'
+  const isPublic = lesson.is_public || lesson.is_free
+  return (
+    <span className="flex shrink-0 flex-wrap justify-end gap-1">
+      {isPublic ? (
+        <span className={`${pill} bg-emerald-500/10 text-emerald-700`}>{lesson.is_free ? 'Public · free lesson' : 'Public'}</span>
+      ) : (
+        <span className={`${pill} bg-muted text-muted-foreground`}>App only</span>
+      )}
+      {lesson.reviewed_at && <span className={`${pill} bg-sky-500/10 text-sky-700`}>Reviewed</span>}
+    </span>
+  )
 }
 
 function SetRow({ set }: { set: ReviewSet }) {
@@ -184,7 +190,7 @@ function Byline({ profileId, name, bio }: { profileId: string; name: string; bio
     <section className="rounded-2xl border bg-card p-4 space-y-3">
       <div>
         <h2 className="font-bold">Your public byline</h2>
-        <p className="text-xs text-muted-foreground">Shown as &ldquo;Reviewed by&rdquo; on every lesson you approve.</p>
+        <p className="text-xs text-muted-foreground">Shown as &ldquo;Reviewed by&rdquo; on every lesson you mark reviewed.</p>
       </div>
       <div className="grid gap-3 sm:grid-cols-2">
         <label className="space-y-1 text-sm">
@@ -234,7 +240,7 @@ function LessonReview({ lesson, reviewerId, canApprove, publicPath }: { lesson: 
               Reviewed{lesson.reviewer?.full_name ? ` by ${lesson.reviewer.full_name}` : ''} on {new Date(lesson.reviewed_at).toLocaleDateString()}
             </p>
           )}
-          {lesson.is_public && (
+          {(lesson.is_public || lesson.is_free) && (
             <p className="text-xs">
               Public page: <a href={publicPath} target="_blank" rel="noreferrer" className="text-primary hover:underline">{publicPath}</a>
             </p>
@@ -247,18 +253,19 @@ function LessonReview({ lesson, reviewerId, canApprove, publicPath }: { lesson: 
               {saveLesson.isPending ? 'Saving…' : 'Save changes'}
             </Button>
           )}
-          {lesson.is_public ? (
-            <Button size="sm" variant="outline" disabled={unpublish.isPending} onClick={() => unpublish.mutate(lesson.id)}>
-              {unpublish.isPending ? 'Unpublishing…' : 'Unpublish'}
-            </Button>
-          ) : (
+          {!lesson.reviewed_at && (
             <Button size="sm" disabled={!canApprove || approve.isPending || saveLesson.isPending} onClick={saveAndApprove} title={canApprove ? '' : 'Add your name in the byline first'}>
-              {approve.isPending ? 'Approving…' : dirty ? 'Save, approve & publish' : 'Approve & publish'}
+              {approve.isPending ? 'Saving…' : dirty ? 'Save & mark reviewed' : 'Mark reviewed'}
+            </Button>
+          )}
+          {lesson.is_public && !lesson.is_free && (
+            <Button size="sm" variant="outline" disabled={unpublish.isPending} onClick={() => unpublish.mutate(lesson.id)}>
+              {unpublish.isPending ? 'Removing…' : 'Remove public page'}
             </Button>
           )}
         </div>
       </div>
-      {!canApprove && !lesson.is_public && <p className="text-sm text-amber-700">Add your name to the byline above before approving.</p>}
+      {!canApprove && !lesson.reviewed_at && <p className="text-sm text-amber-700">Add your name to the byline above to mark lessons reviewed.</p>}
       {error && <p className="text-sm text-red-500">{error.message}</p>}
 
       {editing && (

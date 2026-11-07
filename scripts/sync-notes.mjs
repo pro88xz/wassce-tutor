@@ -1,7 +1,9 @@
 // Publish editorial notes from content/notes/ into the lessons table on every
 // production deploy, so new or corrected notes go live without a manual import.
 //
-// Runs at the end of `npm run build`, after the question sync. Only manifest
+// Runs at the start of `npm run build`, after the question sync and before
+// the prerender, so a new free lesson gets its public page in the same
+// deploy. Only manifest
 // entries with "auto_sync": true are touched (the earlier notes stay under the
 // manual Admin -> Import lessons route). Each note is matched by topic and
 // slug: new notes are inserted, changed notes are updated, nothing is deleted,

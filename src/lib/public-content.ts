@@ -39,6 +39,7 @@ export type LessonIndexItem = {
   title: string
   est_minutes: number | null
   sort_order: number
+  /** Has a public page: the topic's free lesson, or one an admin marked public (migration 08). */
   is_public: boolean
   updated_at: string
 }
@@ -225,7 +226,8 @@ export type PublicLesson = {
   content: string
   est_minutes: number | null
   sort_order: number
-  reviewed_at: string
+  /** Null when nobody has reviewed the lesson yet (review is optional). */
+  reviewed_at: string | null
   updated_at: string
   reviewer_name: string | null
   reviewer_bio: string | null
@@ -233,7 +235,7 @@ export type PublicLesson = {
 
 export type PublicLessonPageData = TopicPageData & { lesson: PublicLesson }
 
-/** Everything for /wassce/{subject}/{topic}/{lesson}; null unless the lesson is reviewed and public. */
+/** Everything for /wassce/{subject}/{topic}/{lesson}; null unless the lesson is public (each topic's free lesson, or one marked public). */
 export async function fetchPublicLessonPage(
   subjectSlug: string,
   topicSlug: string,

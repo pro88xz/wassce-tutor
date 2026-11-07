@@ -18,7 +18,7 @@ const trail = ({ subject, topic, lesson }: PublicLessonPageData): [string, strin
 const formatDate = (iso: string) =>
   new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })
 
-/** WebPage (with the human reviewer) wrapping the lesson as an Article. */
+/** WebPage wrapping the lesson as an Article; the human reviewer only when there is one. */
 function lessonJsonLd(data: PublicLessonPageData): Record<string, unknown> {
   const { subject, topic, lesson } = data
   const url = absoluteUrl(lessonPath(subject.slug, topic.slug, lesson.slug))
@@ -29,8 +29,8 @@ function lessonJsonLd(data: PublicLessonPageData): Record<string, unknown> {
     url,
     name: lesson.title,
     inLanguage: 'en',
-    lastReviewed: lesson.reviewed_at,
-    ...(lesson.reviewer_name
+    ...(lesson.reviewed_at ? { lastReviewed: lesson.reviewed_at } : {}),
+    ...(lesson.reviewed_at && lesson.reviewer_name
       ? { reviewedBy: { '@type': 'Person', name: lesson.reviewer_name, ...(lesson.reviewer_bio ? { description: lesson.reviewer_bio } : {}) } }
       : {}),
     mainEntity: {
@@ -40,7 +40,7 @@ function lessonJsonLd(data: PublicLessonPageData): Record<string, unknown> {
       about: `${topic.name} (WASSCE ${subject.name})`,
       educationalLevel: 'Senior secondary (WASSCE)',
       isAccessibleForFree: true,
-      datePublished: lesson.reviewed_at,
+      datePublished: lesson.reviewed_at ?? lesson.updated_at,
       dateModified: lesson.updated_at,
       author: { '@type': 'Organization', name: SITE.name, url: `${SITE.origin}/` },
       publisher: { '@id': `${SITE.origin}/#organization` },
@@ -83,16 +83,32 @@ function PublicLessonPage() {
         </p>
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{lesson.title}</h1>
         <div className="rounded-xl border bg-muted/40 p-3 text-sm">
-          <p>
-            <span className="text-muted-foreground">Reviewed by </span>
-            <span className="font-semibold">{lesson.reviewer_name ?? 'the WASSCE Tutor team'}</span>
-            {lesson.reviewer_bio && <span className="text-muted-foreground">, {lesson.reviewer_bio}</span>}
-          </p>
-          <p className="text-xs text-muted-foreground">
-            Checked {formatDate(lesson.reviewed_at)}
-            {lesson.est_minutes ? ` · ${lesson.est_minutes} min read` : ''} · Drafted with AI assistance and checked by a
-            person before publishing.
-          </p>
+          {lesson.reviewed_at ? (
+            <>
+              <p>
+                <span className="text-muted-foreground">Reviewed by </span>
+                <span className="font-semibold">{lesson.reviewer_name ?? 'the WASSCE Tutor team'}</span>
+                {lesson.reviewer_bio && <span className="text-muted-foreground">, {lesson.reviewer_bio}</span>}
+              </p>
+              <p className="text-xs text-muted-foreground">
+                Checked {formatDate(lesson.reviewed_at)}
+                {lesson.est_minutes ? ` · ${lesson.est_minutes} min read` : ''} · Drafted with AI assistance and checked by a
+                person before publishing.
+              </p>
+            </>
+          ) : (
+            <>
+              <p>
+                <span className="text-muted-foreground">By </span>
+                <span className="font-semibold">the WASSCE Tutor team</span>
+              </p>
+              <p className="text-xs text-muted-foreground">
+                Updated {formatDate(lesson.updated_at)}
+                {lesson.est_minutes ? ` · ${lesson.est_minutes} min read` : ''} · Written to the WASSCE syllabus with AI
+                assistance.
+              </p>
+            </>
+          )}
         </div>
       </header>
 

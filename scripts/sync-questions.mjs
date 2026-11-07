@@ -2,7 +2,8 @@
 // production deploy, so new or corrected questions go live without anyone
 // pressing a button.
 //
-// Runs at the end of `npm run build`. It needs a Supabase secret key with
+// Runs at the start of `npm run build`, before the prerender, so new content
+// gets its public pages in the same deploy. It needs a Supabase secret key with
 // write access, set in Vercel (Settings -> Environment Variables) as
 // SUPABASE_SECRET_KEY, Production only. Without the key it does nothing, so
 // local builds never touch the real database.
