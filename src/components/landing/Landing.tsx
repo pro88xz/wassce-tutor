@@ -208,29 +208,38 @@ function PopularTopics({ data }: { data: LandingData }) {
           </span>
         </a>
 
-        <div className="flex flex-col divide-y rounded-[1.5rem] border bg-card px-4 sm:px-5">
-          <div className="flex items-center justify-between py-4">
-            <p className="text-sm font-semibold">More to explore</p>
-            <span className="text-xs text-muted-foreground">{topics.length} topics</span>
+        <div className="rounded-[1.6rem] border border-border/70 bg-gradient-to-b from-card to-muted/25 p-4 shadow-sm sm:p-5">
+          <div className="flex items-end justify-between gap-3 border-b pb-4">
+            <div className="space-y-1">
+              <p className="text-base font-bold tracking-tight">More to explore</p>
+              <p className="text-xs leading-relaxed text-muted-foreground">Keep moving through the syllabus.</p>
+            </div>
+            <span className="shrink-0 rounded-full bg-muted px-3 py-1 text-xs font-semibold text-muted-foreground">{topics.length} topics</span>
           </div>
-          {topics.map((t, i) => (
-            <a
-              key={`${t.subjectSlug}/${t.topicSlug}`}
-              href={topicPath(t.subjectSlug, t.topicSlug)}
-              data-reveal={i % 4}
-              className="group flex min-w-0 items-center gap-4 py-4 transition-colors"
-            >
-              <span className="relative h-[4.5rem] w-[4.5rem] shrink-0 overflow-hidden rounded-xl bg-muted ring-1 ring-black/5">
-                {renderImage(t.subjectSlug, t.topicSlug, true)}
-              </span>
-              <span className="min-w-0 flex-1 space-y-1">
-                <span className="block text-[11px] font-semibold uppercase tracking-wide text-primary">{t.subjectName}</span>
-                <span className="block text-[15px] font-bold leading-snug text-foreground transition-colors group-hover:text-primary">{t.topicName}</span>
-                <span className="block text-xs text-muted-foreground">{t.lessons} {t.lessons === 1 ? 'lesson' : 'lessons'}</span>
-              </span>
-              <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-primary" aria-hidden />
-            </a>
-          ))}
+          <div className="divide-y divide-border/70">
+            {topics.map((t, i) => (
+              <a
+                key={`${t.subjectSlug}/${t.topicSlug}`}
+                href={topicPath(t.subjectSlug, t.topicSlug)}
+                data-reveal={i % 4}
+                className="group flex min-w-0 items-center gap-3.5 py-4 transition-colors first:pt-4 last:pb-1 sm:gap-4"
+              >
+                <span className="relative h-[4.6rem] w-[5.25rem] shrink-0 overflow-hidden rounded-xl bg-muted ring-1 ring-black/5 sm:h-[5.1rem] sm:w-[6rem]">
+                  {renderImage(t.subjectSlug, t.topicSlug, true)}
+                </span>
+                <span className="min-w-0 flex-1 space-y-1.5">
+                  <span className="block text-[10px] font-bold uppercase tracking-[0.13em] text-primary">{t.subjectName}</span>
+                  <span className="block text-[15px] font-bold leading-snug text-foreground transition-colors group-hover:text-primary sm:text-base">{t.topicName}</span>
+                  <span className="inline-flex items-center gap-1.5 text-xs font-medium text-muted-foreground">
+                    <BookOpen className="h-3.5 w-3.5" aria-hidden /> {t.lessons} {t.lessons === 1 ? 'lesson' : 'lessons'}
+                  </span>
+                </span>
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border bg-card text-muted-foreground transition-all group-hover:border-primary/30 group-hover:bg-primary group-hover:text-primary-foreground">
+                  <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden />
+                </span>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
