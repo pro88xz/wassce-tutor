@@ -4,7 +4,8 @@ import crypto from 'node:crypto'
 export const config = { maxDuration: 30, api: { bodyParser: { sizeLimit: '2mb' } } }
 
 const ALLOWED_HOSTS = new Set(['openstax.org','www.openstax.org','en.wikibooks.org','www.wikibooks.org','siyavula.com','www.siyavula.com','libretexts.org','chem.libretexts.org','bio.libretexts.org','phys.libretexts.org','pressbooks.pub'])
-const isApprovedHost = hostname => ALLOWED_HOSTS.has(hostname) || hostname === 'libretexts.org' || hostname.endsWith('.libretexts.org')\nconst ALLOWED_LICENSES = new Set(['CC-BY-4.0','CC-BY-SA-4.0','CC0-1.0','PUBLIC-DOMAIN'])
+const isApprovedHost = hostname => ALLOWED_HOSTS.has(hostname) || hostname === 'libretexts.org' || hostname.endsWith('.libretexts.org')
+const ALLOWED_LICENSES = new Set(['CC-BY-4.0','CC-BY-SA-4.0','CC0-1.0','PUBLIC-DOMAIN'])
 const json = (res, body, status = 200) => res.status(status).setHeader('Cache-Control','no-store').json(body)
 const countWords = (s) => (String(s).match(/[\p{L}\p{N}][\p{L}\p{N}'’-]*/gu) || []).length
 
