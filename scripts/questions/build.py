@@ -81,6 +81,16 @@ SETS = [
         "review": ROOT / "content/questions/mathematics/set5_p1.review.md",
         "sort_from": 140,
     },
+    {
+        "module": ROOT / "content/questions/english-language/set1_p1.py",
+        "subject_slug": "english-language",
+        "name": "english_set1_p1",
+        "label": "English Language: set 1 (grammar)",
+        "review": ROOT / "content/questions/english-language/set1_p1.review.md",
+        "sort_from": 100,
+        # Language answers cannot be recomputed by code: an editor checked each one.
+        "checked": "editor",
+    },
 ]
 
 OUT = ROOT / "src/content/question-sets"
@@ -180,8 +190,9 @@ def build_set(cfg: dict, questions: list[Q], ordered: dict, svgs: dict[str, str]
             "title": f"{topic}: practice set 1",
             "paper_type": "Practice",
             "description": (
-                f"{len(qs)} original WASSCE-style objective questions on {topic.lower()}, each with a worked "
-                "solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers."
+                f"{len(qs)} original WASSCE-style objective questions on {topic.lower()}, each with "
+                + ("an explanation" if cfg.get("checked") == "editor" else "a worked solution")
+                + " and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers."
             ),
             "sort_order": cfg["sort_from"] + i,
             "questions": [
@@ -219,8 +230,18 @@ def build_review(cfg: dict, questions: list[Q], ordered: dict, scope_note: str, 
         "",
         scope_note,
         "",
-        "Every answer below has been recomputed by code. Teachers can still check that each question is on the",
-        "syllabus for Sierra Leone candidates, worded the way WAEC words questions, and clearly explained.",
+        *(
+            [
+                "Language answers cannot be recomputed by code. An editor checked that exactly one option is acceptable",
+                "in standard British English and that every wrong option is a real, common error. A teacher should still",
+                "read each item before it is used in class.",
+            ]
+            if cfg.get("checked") == "editor"
+            else [
+                "Every answer below has been recomputed by code. Teachers can still check that each question is on the",
+                "syllabus for Sierra Leone candidates, worded the way WAEC words questions, and clearly explained.",
+            ]
+        ),
         "",
     ]
     topic = None

@@ -89,5 +89,24 @@
    "d512d0d2-c469-5303-b654-cd2284c317cf"
   ],
   "questions": 30
+ },
+ {
+  "name": "english_set1_p1",
+  "label": "English Language: set 1 (grammar)",
+  "subject_slug": "english-language",
+  "version": "8d4189a4a12d",
+  "papers": [
+   "a82e4ed5-d8d8-5358-ac81-9eb68f2fc643",
+   "f6c6d01a-e338-509a-8415-e3598e94ce54",
+   "f0f1ad43-261c-5363-b8d8-a51e90c538e4",
+   "fdd05a0b-6fee-53de-950b-39068eaa9870",
+   "9ad98908-475c-5d45-8f6c-67c9f4ed34d8",
+   "ea479cdb-82d5-5eae-a153-e2ea3010b2ba",
+   "f556c4f7-559b-5ecb-b7bd-fb0f9022826a",
+   "c27890dd-d9db-5bb2-a86c-92b1a8179beb",
+   "8a9a86f5-fcba-53b0-b271-e20fe37b4e93",
+   "9ab75de3-46fc-54f1-ab8c-594fa976ecd8"
+  ],
+  "questions": 50
  }
 ]

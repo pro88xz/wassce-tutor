@@ -1,0 +1,2008 @@
+{
+ "name": "english_set1_p1",
+ "label": "English Language: set 1 (grammar)",
+ "subject_slug": "english-language",
+ "papers": [
+  {
+   "id": "a82e4ed5-d8d8-5358-ac81-9eb68f2fc643",
+   "topic": "Nouns",
+   "title": "Nouns: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on nouns, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 100,
+   "questions": [
+    {
+     "id": "a320b692-2aab-5700-9db9-da32918acca0",
+     "key": "eng-nouns-01",
+     "stem": "Choose the option that best completes the sentence.\n\nThe school has ordered some new ____ for the staff room.",
+     "image_url": null,
+     "explanation": "*Furniture* is an uncountable noun: it never takes -s and never follows *a*. *Some new furniture* is correct.\n\n**Why the other options are wrong**\n\n- furnitures: *Furniture* is uncountable, so it has no plural form with -s.\n- furniture's: The apostrophe shows possession, not a plural. Nothing here belongs to the furniture.\n- a furniture: Uncountable nouns do not take *a* or *an*. Say *a piece of furniture*.",
+     "position": 1,
+     "options": [
+      {
+       "id": "c332127a-b277-5a35-a9eb-298098858d61",
+       "label": "A",
+       "content": "furniture",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5b17c8d0-7014-5977-bdee-1aab72d831fd",
+       "label": "B",
+       "content": "furnitures",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a28f62b0-52e6-52a3-9421-5f9dbf6599bd",
+       "label": "C",
+       "content": "furniture's",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7489342e-f68d-5ce4-8ddc-6f12f1dd54a7",
+       "label": "D",
+       "content": "a furniture",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c8373fda-d916-5336-bdc5-1141866d1f8d",
+     "key": "eng-nouns-02",
+     "stem": "Choose the option that best completes the sentence.\n\nTwo ____ stopped to help the motorcyclist who had fallen at the roundabout.",
+     "image_url": null,
+     "explanation": "In compounds such as *passer-by*, *mother-in-law* and *commander-in-chief*, the main noun takes the plural: *passers-by*, *mothers-in-law*.\n\n**Why the other options are wrong**\n\n- passer-bys: In a compound noun like this, the main word (*passer*) takes the plural ending, not *by*.\n- passers-bys: Only one part of the compound takes the plural ending: *passers-by*.\n- passer-by's: The apostrophe makes it possessive, not plural.",
+     "position": 2,
+     "options": [
+      {
+       "id": "93f2a35b-ed23-5f17-901f-4ba1e214187f",
+       "label": "A",
+       "content": "passer-bys",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f888a385-ad79-5e03-92fa-365a623db11d",
+       "label": "B",
+       "content": "passers-by",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b1990d35-308c-5ce3-af03-2e441714f649",
+       "label": "C",
+       "content": "passers-bys",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "be886366-ea6d-5398-b54f-17ee8a81abc7",
+       "label": "D",
+       "content": "passer-by's",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bcb7f59c-cbac-5b5b-9c85-a482fa45ce84",
+     "key": "eng-nouns-03",
+     "stem": "Choose the option that best completes the sentence.\n\nThe ____ playground was flooded after the heavy rain, so the pupils stayed indoors.",
+     "image_url": null,
+     "explanation": "Plurals that do not end in -s (*children, men, women, people*) form the possessive with *'s*: *the children's playground*.\n\n**Why the other options are wrong**\n\n- childrens': *Children* is already plural, so the possessive is *children's*, not *childrens'*.\n- childrens: There is no word *childrens*: *children* is the plural of *child*.\n- children: Without the apostrophe and *s*, the noun does not show that the playground belongs to the children.",
+     "position": 3,
+     "options": [
+      {
+       "id": "08b98def-7198-5f93-bfef-fd80f58d7793",
+       "label": "A",
+       "content": "childrens'",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6af832a0-5249-59e8-b7d9-5ba7a475683b",
+       "label": "B",
+       "content": "childrens",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9810096d-d646-5d66-a93e-b84ecda2b61c",
+       "label": "C",
+       "content": "children's",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ff496e7a-9b4f-5c8e-9b94-5d2483e77360",
+       "label": "D",
+       "content": "children",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "20839c1f-c89d-516d-9321-e3ab3d1bffef",
+     "key": "eng-nouns-04",
+     "stem": "Choose the option that best completes the sentence.\n\nThe career counsellor gave us some useful ____ about choosing our WASSCE subjects.",
+     "image_url": null,
+     "explanation": "*Advice* (noun, with a *c*) is uncountable. *Advise* (with an *s*) is the verb: *She advised us to study*.\n\n**Why the other options are wrong**\n\n- advices: *Advice* is uncountable, so it has no plural with -s. Say *pieces of advice*.\n- an advice: Uncountable nouns do not take *a* or *an*.\n- advise: *Advise* is the verb (to advise someone). After *some useful* we need the noun, *advice*.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f918b2de-dea6-5d80-8da5-08985c8c227a",
+       "label": "A",
+       "content": "advices",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "369d06aa-d1a1-5619-bfd4-6e91ddce9f2e",
+       "label": "B",
+       "content": "an advice",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3cb9a9bf-d2f5-5878-ab60-f9067067b2d9",
+       "label": "C",
+       "content": "advise",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3eccbbfe-a158-575a-9a8f-dc6e15bf6aba",
+       "label": "D",
+       "content": "advice",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "23bdf387-8e28-5ce1-9e3f-624756585cdb",
+     "key": "eng-nouns-05",
+     "stem": "Choose the option that best completes the sentence.\n\nThe ____ of the two neighbouring villages met at the chiefdom headquarters to settle the land dispute.",
+     "image_url": null,
+     "explanation": "Some nouns ending in -f change to -ves (*leaf, leaves*; *knife, knives*), but *chief*, *roof*, *belief* and *proof* just add -s: *chiefs*.\n\n**Why the other options are wrong**\n\n- chieves: *Chief* is one of the -f nouns that simply add -s, like *roofs* and *beliefs*.\n- chiefes: There is no *-es* ending here: the plural is *chiefs*.\n- chief's: The apostrophe shows possession, not a plural.",
+     "position": 5,
+     "options": [
+      {
+       "id": "470414da-0e23-5f49-8fe7-d5cc652d393e",
+       "label": "A",
+       "content": "chiefs",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9b74b6e8-b5a2-5e14-8cf3-39ed5a3acef2",
+       "label": "B",
+       "content": "chieves",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0ba667b0-fd37-55ca-aa30-4bc9e83bef0a",
+       "label": "C",
+       "content": "chiefes",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4109cadc-c40c-5692-84f6-ad65aacb2d91",
+       "label": "D",
+       "content": "chief's",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f6c6d01a-e338-509a-8415-e3598e94ce54",
+   "topic": "Pronouns",
+   "title": "Pronouns: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on pronouns, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 101,
+   "questions": [
+    {
+     "id": "60145ed4-c716-58da-bbc1-ea615e2d1efa",
+     "key": "eng-pron-01",
+     "stem": "Choose the option that best completes the sentence.\n\nBetween you and ____, I do not think the bus will leave on time today.",
+     "image_url": null,
+     "explanation": "A pronoun after a preposition takes the object form: *between you and me*, *for him and her*, *with us*.\n\n**Why the other options are wrong**\n\n- I: After a preposition (*between*) we need the object form, *me*, not the subject form *I*.\n- myself: *Myself* is reflexive: it is used when the subject is also *I*, as in *I hurt myself*.\n- mine: *Mine* is a possessive pronoun (*the book is mine*). It cannot follow *between you and*.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f06113f1-0fd4-5971-b2e8-7fd8c0d13d68",
+       "label": "A",
+       "content": "I",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d08dff4e-43b3-5714-bf9a-674e6f7b471f",
+       "label": "B",
+       "content": "me",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "391f028b-77e9-5f9e-8e2f-9e99e99050d9",
+       "label": "C",
+       "content": "myself",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7c627414-8fa5-5d89-9bde-0421e55b248a",
+       "label": "D",
+       "content": "mine",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cb649f6f-9bcb-5641-8903-b3389b05bd72",
+     "key": "eng-pron-02",
+     "stem": "Choose the option that best completes the sentence.\n\nThe girl ____ father owns the shop at Lumley is my classmate.",
+     "image_url": null,
+     "explanation": "*Whose* shows possession in a relative clause: *the girl whose father owns the shop* = the girl's father owns the shop.\n\n**Why the other options are wrong**\n\n- who's: *Who's* means *who is* or *who has*. *Who is father owns* makes no sense.\n- whom: *Whom* is an object pronoun. Here we need possession: the father belongs to the girl.\n- which: *Which* refers to things, not people, and does not show possession.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8eefd4d3-7010-5460-ae22-c9df9a9022bf",
+       "label": "A",
+       "content": "who's",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "05bc5075-5c09-50fe-9990-4252fce1798b",
+       "label": "B",
+       "content": "whom",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "11cf3003-6dde-582d-b489-3b28bea8e6e7",
+       "label": "C",
+       "content": "whose",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "104056a5-e16f-562b-8882-0d823852f3d0",
+       "label": "D",
+       "content": "which",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "71abc953-2589-52ff-83e1-6048eb5579c4",
+     "key": "eng-pron-03",
+     "stem": "Choose the option that best completes the sentence.\n\nFatmata cut ____ while slicing onions for the family's dinner.",
+     "image_url": null,
+     "explanation": "When the subject and the object are the same person, use a reflexive pronoun: *Fatmata cut herself*.\n\n**Why the other options are wrong**\n\n- herselves: *-selves* is the plural ending (*themselves*). One person takes *herself*.\n- hisself: *Hisself* is not standard English, and Fatmata needs a feminine pronoun.\n- her own: *Her own* must be followed by a noun, for example *her own finger*.",
+     "position": 3,
+     "options": [
+      {
+       "id": "33aa1e03-97e3-526a-8d3a-2738cc24f9a0",
+       "label": "A",
+       "content": "herselves",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cfe09694-d850-5722-b639-feed737d9a73",
+       "label": "B",
+       "content": "hisself",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "41b2dcc5-55a2-514f-adb6-dbbe584f0de6",
+       "label": "C",
+       "content": "her own",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "181301b2-c45e-5b86-a89b-b592b3016516",
+       "label": "D",
+       "content": "herself",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "de9fd2ec-04a1-5ddb-8443-b4ba4ad31eea",
+     "key": "eng-pron-04",
+     "stem": "Choose the option that best completes the sentence.\n\nThis calculator is not yours; it is ____.",
+     "image_url": null,
+     "explanation": "A possessive pronoun stands alone in place of a noun, with no apostrophe: *it is hers* (= her calculator).\n\n**Why the other options are wrong**\n\n- her's: Possessive pronouns never take an apostrophe: *hers, his, its, ours, yours, theirs*.\n- her: *Her* needs a noun after it (*her calculator*). On its own we need *hers*.\n- hers': Possessive pronouns never take an apostrophe.",
+     "position": 4,
+     "options": [
+      {
+       "id": "0c1b82b3-761b-5edd-ac57-713c276ae674",
+       "label": "A",
+       "content": "hers",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d405a891-915a-5bb2-8c3c-1c80c7366ec7",
+       "label": "B",
+       "content": "her's",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6c947bde-616f-5da8-98e8-87ae19cec85d",
+       "label": "C",
+       "content": "her",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "23f4afa9-5037-5970-bced-2d35ce07f476",
+       "label": "D",
+       "content": "hers'",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "19aab6e7-3aa3-55ba-9701-bd42d104e796",
+     "key": "eng-pron-05",
+     "stem": "Choose the option that best completes the sentence.\n\nThe poda-poda ____ broke down on the bridge has been towed away.",
+     "image_url": null,
+     "explanation": "For things, the relative pronoun is *which* (or *that*): *the poda-poda which broke down*.\n\n**Why the other options are wrong**\n\n- who: *Who* refers to people. A poda-poda is a thing.\n- whom: *Whom* refers to people, and only as an object.\n- whose: *Whose* shows possession. Here the vehicle is the subject of *broke down*.",
+     "position": 5,
+     "options": [
+      {
+       "id": "7e0893ed-c78e-5fc7-93d6-be3e3d1e6bc4",
+       "label": "A",
+       "content": "who",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1d0d4a79-f88a-5e6e-b860-cffc724b2bc1",
+       "label": "B",
+       "content": "which",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "09e40aa4-5c35-5681-9a6e-c46c9b3c0ced",
+       "label": "C",
+       "content": "whom",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4b7d38d3-632f-5375-9b60-b9be6646b10a",
+       "label": "D",
+       "content": "whose",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f0f1ad43-261c-5363-b8d8-a51e90c538e4",
+   "topic": "Verbs and Verb Forms",
+   "title": "Verbs and Verb Forms: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on verbs and verb forms, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 102,
+   "questions": [
+    {
+     "id": "f746ce7c-41d6-54ea-b396-85fedfa59908",
+     "key": "eng-verbs-01",
+     "stem": "Choose the option that best completes the sentence.\n\nBy the time we reached the gate, the bell had already ____.",
+     "image_url": null,
+     "explanation": "*Ring* is irregular: *ring, rang, rung*. The past perfect is *had* + past participle: *had rung*.\n\n**Why the other options are wrong**\n\n- rang: *Rang* is the simple past. After *had* we need the past participle, *rung*.\n- ringed: *Ringed* is the past of a different verb, *to ring* meaning to circle something, as in *ringed in red*.\n- ring: After *had* we need the past participle, not the base form.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a8069026-e65b-55c2-96c7-22cc2aa9dbb8",
+       "label": "A",
+       "content": "rang",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ce5e16a0-1122-5cfa-a468-30bd0ec7b72c",
+       "label": "B",
+       "content": "ringed",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4be9dec2-cf55-5233-8527-56e9f6e3147a",
+       "label": "C",
+       "content": "rung",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "cac4ce3a-e960-5ffd-babf-55c9fe5246b6",
+       "label": "D",
+       "content": "ring",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "49668f36-c549-5620-a447-4d329f6fb990",
+     "key": "eng-verbs-02",
+     "stem": "Choose the option that best completes the sentence.\n\nEvery morning the sun ____ in the east.",
+     "image_url": null,
+     "explanation": "*Rise* (rise, rose, risen) has no object; *raise* (raise, raised, raised) always has one. A habit or fact takes the present simple: *the sun rises*.\n\n**Why the other options are wrong**\n\n- raises: *Raise* needs an object: you raise your hand. The sun does not raise anything.\n- rise: With a singular subject (*the sun*) the present simple takes -s: *rises*.\n- arouses: *Arouse* means to stir up a feeling, as in *arouse interest*. It does not describe the sun coming up.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c6c43def-54f6-5bd8-ac84-77b4fe856f4a",
+       "label": "A",
+       "content": "raises",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "60253ff6-99bf-5317-b1ba-8360300fce50",
+       "label": "B",
+       "content": "rise",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2706c663-5db9-5739-b95d-238163b43331",
+       "label": "C",
+       "content": "arouses",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e8edd281-6847-5251-9520-7f55a2a397e9",
+       "label": "D",
+       "content": "rises",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9c4eb5f9-76e5-5983-b220-d4e41d9d0153",
+     "key": "eng-verbs-03",
+     "stem": "Choose the option that best completes the sentence.\n\nAfter the long journey from Kabala, my grandfather went to ____ down for an hour.",
+     "image_url": null,
+     "explanation": "*Lie* (to rest flat) has no object: *lie, lay, lain*. *Lay* (to put down) has an object: *lay, laid, laid*. After *to*, use the base form: *to lie down*.\n\n**Why the other options are wrong**\n\n- lay: *Lay* needs an object: you lay a mat or lay a table. Here nothing is being laid.\n- laid: *Laid* is the past of *lay*. After *to* we need the base form.\n- lain: *Lain* is the past participle of *lie*. After *to* we need the base form.",
+     "position": 3,
+     "options": [
+      {
+       "id": "994e2e66-18bc-5f78-aa78-9735981f54ee",
+       "label": "A",
+       "content": "lie",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0f9231f4-c6fa-50fc-bb11-57b6def31e50",
+       "label": "B",
+       "content": "lay",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8d5099c4-86a2-5abc-a943-48e431e2079a",
+       "label": "C",
+       "content": "laid",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b0377c58-aba2-5afb-af4c-957739d3b1f6",
+       "label": "D",
+       "content": "lain",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "00358bde-542f-5d79-ad42-69686404b64a",
+     "key": "eng-verbs-04",
+     "stem": "Choose the option that best completes the sentence.\n\nThe football match was ____ because the field was flooded.",
+     "image_url": null,
+     "explanation": "*Call off* means to cancel: *the match was called off because the field was flooded*.\n\n**Why the other options are wrong**\n\n- called up: *Call up* means to telephone someone or to summon them, for example for national service.\n- called on: *Call on* means to visit someone or to ask someone to speak.\n- called out: *Call out* means to shout or to summon help, as in *call out the fire service*.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c7092a98-7c0b-5e69-ba3a-cd0a272a7cba",
+       "label": "A",
+       "content": "called up",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "579ae6d0-23e8-5273-910c-37a2a1e54830",
+       "label": "B",
+       "content": "called off",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5b7654ad-94d3-5e1f-8716-cda20cd5dc07",
+       "label": "C",
+       "content": "called on",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5bcdce9e-ecb9-5027-83cf-0169f008cac1",
+       "label": "D",
+       "content": "called out",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "98a2ed0b-5f10-5fce-b4af-1b6f1e1c1a31",
+     "key": "eng-verbs-05",
+     "stem": "Choose the option that best completes the sentence.\n\nMy father made me ____ my homework before supper.",
+     "image_url": null,
+     "explanation": "*Make*, *let* and *have* take the base form without *to*: *made me do*, *let us go*. (In the passive it is *I was made to do*.)\n\n**Why the other options are wrong**\n\n- to do: After *make* + object in the active voice, we use the base form without *to*.\n- doing: *Make* is not followed by an -ing form in this pattern.\n- did: The verb after *made me* stays in the base form; the tense is already shown by *made*.",
+     "position": 5,
+     "options": [
+      {
+       "id": "03e4022b-60d5-5fcd-bcbb-3a1e1c6e1665",
+       "label": "A",
+       "content": "to do",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7b5a3670-9e06-5bd7-a2cd-f0239459a558",
+       "label": "B",
+       "content": "doing",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a8b4717a-6923-58f7-8169-f8e0f9b2242e",
+       "label": "C",
+       "content": "do",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c14c17e1-da43-5ccc-90d7-e02fb8ba5332",
+       "label": "D",
+       "content": "did",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fdd05a0b-6fee-53de-950b-39068eaa9870",
+   "topic": "Tenses",
+   "title": "Tenses: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on tenses, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 103,
+   "questions": [
+    {
+     "id": "bf7d1027-5361-5945-adce-59642a2b328c",
+     "key": "eng-tense-01",
+     "stem": "Choose the option that best completes the sentence.\n\nKadiatu ____ in Bo since 2019.",
+     "image_url": null,
+     "explanation": "An action that started in the past and continues now, with *since* or *for*, takes the present perfect: *has lived* (or *has been living*).\n\n**Why the other options are wrong**\n\n- lives: *Since 2019* links the past to now, which needs the present perfect, not the present simple.\n- lived: The simple past describes finished time. *Since 2019* means she still lives there.\n- is living: The present continuous does not combine with *since* + a point in time.",
+     "position": 1,
+     "options": [
+      {
+       "id": "64038573-0fe3-5947-8ae9-cd3b2d8811e3",
+       "label": "A",
+       "content": "lives",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "730a5769-d43d-56e7-a2aa-e530dd05dcbf",
+       "label": "B",
+       "content": "lived",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6dc9cb92-07da-5e8b-9b14-00f8109b5306",
+       "label": "C",
+       "content": "is living",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ab04a66f-a235-54bc-8ce5-130d59e3765f",
+       "label": "D",
+       "content": "has lived",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9d899d19-35c4-50e4-b14b-28098de39639",
+     "key": "eng-tense-02",
+     "stem": "Choose the option that best completes the sentence.\n\nBy the time we got to the bus park, the last bus to Makeni ____.",
+     "image_url": null,
+     "explanation": "For the earlier of two past actions, especially with *by the time*, use the past perfect: *had left*.\n\n**Why the other options are wrong**\n\n- has left: The story is in the past (*got*), so the earlier action needs the past perfect, *had left*.\n- left: *By the time* + past shows that the leaving happened earlier, which needs the past perfect.\n- leaves: The present simple does not fit a story told in the past.",
+     "position": 2,
+     "options": [
+      {
+       "id": "2cdddbc3-67e8-5768-97e8-7dbce33e5dd9",
+       "label": "A",
+       "content": "had left",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "795681c4-80c5-5f95-8066-44c1abba7f0a",
+       "label": "B",
+       "content": "has left",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a8f75937-bceb-533d-8d26-4d45150749ae",
+       "label": "C",
+       "content": "left",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1f6e947f-628d-5d8e-97ee-492bc07d3d45",
+       "label": "D",
+       "content": "leaves",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "15f2841f-97f5-5ad8-80e4-0e565523760d",
+     "key": "eng-tense-03",
+     "stem": "Choose the option that best completes the sentence.\n\nI will call you as soon as I ____ home.",
+     "image_url": null,
+     "explanation": "In time clauses about the future (*as soon as, when, before, after, until*), use the present simple: *as soon as I get home*.\n\n**Why the other options are wrong**\n\n- will get: After *as soon as*, *when*, *before* and *until*, English uses the present simple for the future, not *will*.\n- got: The call is in the future, so the past tense does not fit.\n- am getting: The present continuous does not fit a single future moment after *as soon as*.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8535d5b8-d1a0-51e6-8bc6-5b83aa10626d",
+       "label": "A",
+       "content": "will get",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9f3afaba-2107-51e5-b136-91f7799848ec",
+       "label": "B",
+       "content": "get",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a9ba890d-ae24-581a-8697-58b0c9f43947",
+       "label": "C",
+       "content": "got",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "13cd07c5-4e5e-543a-97b1-dcc75f813764",
+       "label": "D",
+       "content": "am getting",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e679931e-ecd3-5836-8432-b8c5cdb5d002",
+     "key": "eng-tense-04",
+     "stem": "Choose the option that best completes the sentence.\n\nLook! The children ____ in the rain.",
+     "image_url": null,
+     "explanation": "An action in progress at the moment of speaking takes the present continuous: *are playing*.\n\n**Why the other options are wrong**\n\n- play: *Look!* shows the action is happening now, which needs the present continuous.\n- have played: The present perfect describes a finished action with a result, not something we can watch now.\n- played: The simple past describes finished time, but *Look!* means right now.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f56001c4-243c-5515-a326-604cbcc856bf",
+       "label": "A",
+       "content": "play",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "10b7d883-d0d2-5919-9b24-ce232a9f0351",
+       "label": "B",
+       "content": "have played",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1c8f885e-98d7-50e0-9e52-2ec1421c2ce2",
+       "label": "C",
+       "content": "are playing",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "46d072ef-e56b-5120-902d-63f55a71bee5",
+       "label": "D",
+       "content": "played",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "95b6e7c1-c559-5787-bde7-67e66fbbfff0",
+     "key": "eng-tense-05",
+     "stem": "Choose the option that best completes the sentence.\n\nWhile I was reading for my exams, the light suddenly ____ off.",
+     "image_url": null,
+     "explanation": "A long action in progress takes the past continuous (*was reading*); the short action that interrupts it takes the simple past (*went off*).\n\n**Why the other options are wrong**\n\n- goes: The sentence is in the past (*was reading*), so the sudden action needs the simple past.\n- has gone: The present perfect does not fit a story set in the past.\n- had went: *Went* is the simple past; after *had* the participle is *gone*. And the past perfect is not needed here.",
+     "position": 5,
+     "options": [
+      {
+       "id": "2b4b3e4b-4517-533e-b9f0-8223a92bb550",
+       "label": "A",
+       "content": "goes",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "806498c5-1ed3-5197-8bc7-e71f5fa357e1",
+       "label": "B",
+       "content": "has gone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8a40ed87-13dd-56d7-a9ec-ca352187c4bf",
+       "label": "C",
+       "content": "had went",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "23bd0a69-4623-5d17-b4af-8d83840f8064",
+       "label": "D",
+       "content": "went",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "9ad98908-475c-5d45-8f6c-67c9f4ed34d8",
+   "topic": "Active and Passive Voice",
+   "title": "Active and Passive Voice: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on active and passive voice, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 104,
+   "questions": [
+    {
+     "id": "7e825a10-efca-52bb-9079-66aaefa5e0c3",
+     "key": "eng-voice-01",
+     "stem": "Choose the option that best completes the sentence.\n\nThe new classroom block ____ by the Minister of Education next Friday.",
+     "image_url": null,
+     "explanation": "The future passive is *will be* + past participle: *will be opened by the Minister*.\n\n**Why the other options are wrong**\n\n- will open: *By the Minister* shows that someone else does the opening, so the verb must be passive.\n- will opened: After *will* we need *be* + past participle in the passive: *will be opened*.\n- is opening: The block does not open itself, and *by the Minister* calls for the passive.",
+     "position": 1,
+     "options": [
+      {
+       "id": "837703d1-2da7-5054-ac18-25368dd83579",
+       "label": "A",
+       "content": "will be opened",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0a86c135-f798-5153-aefc-a54c5bb792f4",
+       "label": "B",
+       "content": "will open",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "178e204f-f435-5246-8451-edfced660428",
+       "label": "C",
+       "content": "will opened",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7ce4ac73-8e11-5358-8c39-c7523d6fe453",
+       "label": "D",
+       "content": "is opening",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b633282b-e065-5e9d-b974-63026e1d952d",
+     "key": "eng-voice-02",
+     "stem": "Which option is the correct passive form of this sentence?\n\n*The teacher marked the scripts.*",
+     "image_url": null,
+     "explanation": "To make the passive, the object (*the scripts*) becomes the subject, the verb becomes *be* in the same tense + past participle (*were marked*), and the doer follows *by*.\n\n**Why the other options are wrong**\n\n- The scripts was marked by the teacher.: *Scripts* is plural, so the verb is *were*, not *was*.\n- The scripts are marked by the teacher.: The active sentence is in the past (*marked*), so the passive must be past too.\n- The teacher was marked by the scripts.: The teacher did the marking, so the teacher stays as the doer (*by the teacher*).",
+     "position": 2,
+     "options": [
+      {
+       "id": "9047f61a-8fbe-591a-b54a-e7aaed2d4387",
+       "label": "A",
+       "content": "The scripts was marked by the teacher.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7757bf4e-aa28-50d0-9ce8-2d1453d7954c",
+       "label": "B",
+       "content": "The scripts were marked by the teacher.",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9f36b7b9-4a31-5a24-b092-502a57696e55",
+       "label": "C",
+       "content": "The scripts are marked by the teacher.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "055d224b-9bbf-5038-adae-5bb3d5ef7b35",
+       "label": "D",
+       "content": "The teacher was marked by the scripts.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fc1f3999-a17a-581f-8f1c-60984f9610d4",
+     "key": "eng-voice-03",
+     "stem": "Choose the option that best completes the sentence.\n\nEnglish ____ in many West African countries.",
+     "image_url": null,
+     "explanation": "The present simple passive is *am/is/are* + past participle: *English is spoken*.\n\n**Why the other options are wrong**\n\n- is speaking: A language does not speak; people speak it. That needs the passive.\n- speaks: Active *speaks* would mean English itself does the speaking.\n- is spoke: The passive uses the past participle, *spoken*, not the past tense *spoke*.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c2a75045-9719-5870-a796-fd08b70b1f85",
+       "label": "A",
+       "content": "is speaking",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e87e15cc-7ce1-5416-8e9b-88ef16c21c48",
+       "label": "B",
+       "content": "speaks",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e65e52e7-2c93-5e8e-88e1-1fab80eb17b9",
+       "label": "C",
+       "content": "is spoken",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ff44f4a4-2b5b-591d-9199-9752c771bbf7",
+       "label": "D",
+       "content": "is spoke",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0d890e53-1459-54b3-9520-b9c0bb184980",
+     "key": "eng-voice-04",
+     "stem": "Choose the option that best completes the sentence.\n\nThe thief ____ before he could escape with the money.",
+     "image_url": null,
+     "explanation": "The thief receives the action, so the verb is passive: *was* + past participle *caught*.\n\n**Why the other options are wrong**\n\n- was catched: *Catch* is irregular: *catch, caught, caught*. There is no *catched*.\n- caught: Active *caught* needs an object (caught someone). Here the thief is the one caught.\n- had catch: This is neither a correct past perfect (*had caught*) nor a passive.",
+     "position": 4,
+     "options": [
+      {
+       "id": "0a49ec91-30c5-5fcb-a0fe-5ea1267e6524",
+       "label": "A",
+       "content": "was catched",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "78f3afaf-6a9e-55fb-9242-42e2c7c13c0c",
+       "label": "B",
+       "content": "caught",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4cbe4283-cbfe-5b39-ba32-525566fcc1cf",
+       "label": "C",
+       "content": "had catch",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9037f190-dded-5373-8ebf-a4f39836ea33",
+       "label": "D",
+       "content": "was caught",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "610f1efe-35fe-581f-bf7e-29abbbd82e80",
+     "key": "eng-voice-05",
+     "stem": "Choose the option that best completes the sentence.\n\nAll answers must ____ in blue or black ink.",
+     "image_url": null,
+     "explanation": "The passive after a modal is modal + *be* + past participle: *must be written*, *can be done*, *should be answered*.\n\n**Why the other options are wrong**\n\n- written: After a modal (*must*) the passive needs *be*: *must be written*.\n- be wrote: The passive uses the past participle *written*, not the past tense *wrote*.\n- being written: After a modal we need the base form *be*, not *being*.",
+     "position": 5,
+     "options": [
+      {
+       "id": "89fd2fea-ab60-5525-b945-f11d10c7c921",
+       "label": "A",
+       "content": "be written",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "20369f58-884e-565d-9bda-33da5ff040f7",
+       "label": "B",
+       "content": "written",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c1aec809-7c58-5a7d-96a2-d51fa26b8f86",
+       "label": "C",
+       "content": "be wrote",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ddf892e7-3cee-5018-a3d3-73e10e3ec0de",
+       "label": "D",
+       "content": "being written",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ea479cdb-82d5-5eae-a153-e2ea3010b2ba",
+   "topic": "Non-finite Verb Forms",
+   "title": "Non-finite Verb Forms: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on non-finite verb forms, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 105,
+   "questions": [
+    {
+     "id": "809fd582-99a0-54eb-b46f-45a724ad7083",
+     "key": "eng-nonfin-01",
+     "stem": "Choose the option that best completes the sentence.\n\nWe are looking forward to ____ our WASSCE results.",
+     "image_url": null,
+     "explanation": "*Look forward to*, *object to* and *be used to* end in the preposition *to*, which takes a gerund: *looking forward to receiving*.\n\n**Why the other options are wrong**\n\n- receive: In *look forward to*, *to* is a preposition, so it is followed by an -ing form, not the base form.\n- received: A preposition is followed by an -ing form (a gerund), not a past form.\n- be receiving: After the preposition *to* we need the gerund *receiving* on its own.",
+     "position": 1,
+     "options": [
+      {
+       "id": "90adb8cc-964d-5ccb-95f5-98c3db8088fc",
+       "label": "A",
+       "content": "receive",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "44494409-bd9e-5f37-897e-8f5df263fa95",
+       "label": "B",
+       "content": "receiving",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a4160cda-8633-504a-a788-f45ca674b621",
+       "label": "C",
+       "content": "received",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4f5b3552-c37e-53b3-988e-6767b23661e4",
+       "label": "D",
+       "content": "be receiving",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b4699db9-8de0-54ff-a6f9-7630b1bd205d",
+     "key": "eng-nonfin-02",
+     "stem": "Choose the option that best completes the sentence.\n\nAfter his father's illness, Sorie decided ____ a doctor.",
+     "image_url": null,
+     "explanation": "*Decide*, *hope*, *plan*, *agree* and *refuse* take the to-infinitive: *decided to become*.\n\n**Why the other options are wrong**\n\n- becoming: *Decide* is followed by the to-infinitive, not the -ing form.\n- become: *Decide* needs *to* before the verb.\n- becomes: After *decided* the second verb is non-finite (*to become*); it does not change for the subject.",
+     "position": 2,
+     "options": [
+      {
+       "id": "9d36c474-eeed-57a1-8a18-8ff899dce410",
+       "label": "A",
+       "content": "becoming",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4eae07f7-fc75-5327-8d8c-a6bfb3c3e9fc",
+       "label": "B",
+       "content": "become",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "50873d72-68c9-5ea8-9ac7-e0bd62abd0cc",
+       "label": "C",
+       "content": "to become",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8790495a-26ce-5cda-bde2-d173da433024",
+       "label": "D",
+       "content": "becomes",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "891acbb2-c8ce-5840-ac0f-40a37e4cdbbb",
+     "key": "eng-nonfin-03",
+     "stem": "Which sentence is correctly written?",
+     "image_url": null,
+     "explanation": "A participle phrase at the start of a sentence must describe the subject that follows it. *Walking to school, I saw…* is correct because *I* was walking.\n\n**Why the other options are wrong**\n\n- Walking to school, a snake was seen on the path.: This says the snake was walking to school: the participle has no correct subject (a dangling participle).\n- Walked to school, I saw a snake on the path.: The participle for an action in progress is *walking*, not *walked*.\n- To walking to school, I saw a snake on the path.: *To* does not go with an -ing form here.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5811c5b3-0e42-553c-a827-31e79aabde48",
+       "label": "A",
+       "content": "Walking to school, a snake was seen on the path.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a884858f-12b4-50c1-801a-8840a3ee2733",
+       "label": "B",
+       "content": "Walked to school, I saw a snake on the path.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "35881481-7ba3-5d99-984b-6926cbc61c2c",
+       "label": "C",
+       "content": "To walking to school, I saw a snake on the path.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5066d278-366d-50a2-b354-5a27af06147d",
+       "label": "D",
+       "content": "Walking to school, I saw a snake on the path.",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ea140d7c-9d31-5641-a3b9-81e95d8a4715",
+     "key": "eng-nonfin-04",
+     "stem": "Choose the option that best completes the sentence.\n\nThe suspect avoided ____ the question about where he was that night.",
+     "image_url": null,
+     "explanation": "*Avoid*, *enjoy*, *finish*, *deny* and *mind* take the gerund: *avoided answering*.\n\n**Why the other options are wrong**\n\n- to answer: *Avoid* is followed by the -ing form, not the to-infinitive.\n- answer: *Avoid* needs a gerund after it.\n- answered: The second verb is non-finite: *avoided answering*.",
+     "position": 4,
+     "options": [
+      {
+       "id": "da59fd33-1309-54d0-a907-198393322a2a",
+       "label": "A",
+       "content": "answering",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7c8c5b43-f89e-582c-99cd-938e1250d006",
+       "label": "B",
+       "content": "to answer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1499c6f1-7141-56d1-b8c8-9b91168e206d",
+       "label": "C",
+       "content": "answer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4fb1d3cd-3b7f-5fc2-a71b-190f2474a48d",
+       "label": "D",
+       "content": "answered",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ab602788-7256-5dea-b00f-759ed456b5a0",
+     "key": "eng-nonfin-05",
+     "stem": "Choose the option that best completes the sentence.\n\n____ his homework, Amadu went out to play football.",
+     "image_url": null,
+     "explanation": "*Having* + past participle shows that one action was complete before the next: *Having finished his homework, Amadu went out*.\n\n**Why the other options are wrong**\n\n- Have finished: A perfect participle phrase starts with *having*, not *have*.\n- Had finished: *Had finished* needs a subject (*He had finished*); it cannot open the sentence like this.\n- Being finished: *Being finished* would mean Amadu himself was finished. The homework was finished first.",
+     "position": 5,
+     "options": [
+      {
+       "id": "c5bdfb49-a6b2-5fd1-89a0-19e82b9af3db",
+       "label": "A",
+       "content": "Have finished",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "576953e7-a103-510d-840b-4bd88d28456f",
+       "label": "B",
+       "content": "Having finished",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "276b4e22-7310-59be-b00e-9d482b56d9ea",
+       "label": "C",
+       "content": "Had finished",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "36fee137-5711-58d1-b519-af85375fece3",
+       "label": "D",
+       "content": "Being finished",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f556c4f7-559b-5ecb-b7bd-fb0f9022826a",
+   "topic": "Adjectives",
+   "title": "Adjectives: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on adjectives, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 106,
+   "questions": [
+    {
+     "id": "41855f2c-c8f5-5a71-bda8-39111590ed72",
+     "key": "eng-adj-01",
+     "stem": "Choose the option that best completes the sentence.\n\nOf the two sisters, Isatu is the ____.",
+     "image_url": null,
+     "explanation": "When comparing exactly two, use the comparative: *the taller of the two*.\n\n**Why the other options are wrong**\n\n- tallest: The superlative compares three or more. With *of the two*, use the comparative.\n- more taller: Do not use *more* with an -er comparative: that doubles the comparison.\n- most tall: *Tall* forms its comparison with -er/-est, and two people take the comparative.",
+     "position": 1,
+     "options": [
+      {
+       "id": "d4e9657b-c379-57f5-b052-70844c1cce4e",
+       "label": "A",
+       "content": "tallest",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dc1b8f44-49de-50cc-8d38-923968845b33",
+       "label": "B",
+       "content": "more taller",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "aafa6e13-ce45-5671-aa9f-7ad0e23ed1ea",
+       "label": "C",
+       "content": "taller",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b9b3da87-c15f-5986-9376-e2b8b526adec",
+       "label": "D",
+       "content": "most tall",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2093fa8f-79a9-5aa4-a701-e1e9cc7188a8",
+     "key": "eng-adj-02",
+     "stem": "Choose the option that best completes the sentence.\n\nShe wore a ____ dress to her sister's wedding.",
+     "image_url": null,
+     "explanation": "Adjectives usually follow this order: opinion, size, age, shape, colour, origin, material, then the noun: *a beautiful long red cotton dress*.\n\n**Why the other options are wrong**\n\n- red long beautiful cotton: Opinion adjectives (*beautiful*) come before size (*long*) and colour (*red*).\n- cotton beautiful long red: The material (*cotton*) comes last, just before the noun.\n- long beautiful cotton red: Opinion comes before size, and colour comes before material.",
+     "position": 2,
+     "options": [
+      {
+       "id": "7b2a5a2d-584c-5cc2-bb0e-ca45069cd916",
+       "label": "A",
+       "content": "red long beautiful cotton",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2da11a1e-91af-56fe-ba14-d50d8b751ddc",
+       "label": "B",
+       "content": "cotton beautiful long red",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9795bb61-fb76-520c-a29c-6896bd5e8203",
+       "label": "C",
+       "content": "long beautiful cotton red",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b9607135-c48b-5462-8d9f-81de6d15bb9c",
+       "label": "D",
+       "content": "beautiful long red cotton",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "946913d2-0ff9-5bfc-b528-6374d222cce6",
+     "key": "eng-adj-03",
+     "stem": "Choose the option that best completes the sentence.\n\nThe students were ____ by the long lecture on a hot afternoon.",
+     "image_url": null,
+     "explanation": "-ed adjectives describe how someone feels (*bored, interested, tired*); -ing adjectives describe what causes it (*boring, interesting, tiring*).\n\n**Why the other options are wrong**\n\n- boring: *Boring* describes the thing that causes the feeling (*the lecture was boring*), not how the students felt.\n- bore: *Bore* is a noun or a verb, not the adjective we need after *were*.\n- boredom: *Boredom* is a noun. After *were* we need an adjective.",
+     "position": 3,
+     "options": [
+      {
+       "id": "cd6e80f8-3006-56aa-a120-a35e1a44e772",
+       "label": "A",
+       "content": "bored",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "f1abd1ad-363d-5c11-9424-04268cc809a2",
+       "label": "B",
+       "content": "boring",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c37d8f80-578c-5b37-b1ea-2cffefd0b36b",
+       "label": "C",
+       "content": "bore",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7073067a-3215-571e-bd01-2e6a4b826470",
+       "label": "D",
+       "content": "boredom",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "28f36125-fe6e-5fa7-b50d-325492788a5f",
+     "key": "eng-adj-04",
+     "stem": "Choose the option that best completes the sentence.\n\nThis year's rice harvest is ____ than last year's because the rains came late.",
+     "image_url": null,
+     "explanation": "*Bad* compares irregularly: *bad, worse, worst*. With *than* use the comparative: *worse than*.\n\n**Why the other options are wrong**\n\n- worst: *Worst* is the superlative. With *than* we need the comparative.\n- more worse: *Worse* is already comparative; *more* doubles it.\n- badder: *Bad* is irregular: *bad, worse, worst*. There is no *badder*.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e5a6d683-6787-528f-a25c-50c708b2196a",
+       "label": "A",
+       "content": "worst",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cee3b9b1-9e8d-54ed-ab94-01b5f9c3ba75",
+       "label": "B",
+       "content": "worse",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d8d9d344-ed27-54cc-97f6-994bf209144f",
+       "label": "C",
+       "content": "more worse",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c0e7b7d7-022a-5d5c-8701-bc6536baf06f",
+       "label": "D",
+       "content": "badder",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "528e54f5-51d7-52c5-9ed8-8ec6a65c9e5f",
+     "key": "eng-adj-05",
+     "stem": "Choose the option that best completes the sentence.\n\nThere is very ____ water left in the tank, so we must fetch more from the well.",
+     "image_url": null,
+     "explanation": "*Little* goes with uncountable nouns (*little water, little time*); *few* goes with countable plurals. *Very little* means almost none.\n\n**Why the other options are wrong**\n\n- few: *Few* is used with countable plural nouns (*few buckets*). *Water* is uncountable.\n- many: *Many* goes with countable plural nouns, and *very many* would mean a lot.\n- a few: *A few* is for countable nouns, and it means *some*, which does not fit *we must fetch more*.",
+     "position": 5,
+     "options": [
+      {
+       "id": "4a33c6e2-5fae-5615-9b92-0407f9c699c7",
+       "label": "A",
+       "content": "few",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6f4537cd-974e-567d-9b28-ebe777bfb5b8",
+       "label": "B",
+       "content": "many",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "096f7cb9-c5bb-51bb-84b0-89fa00e3eb8e",
+       "label": "C",
+       "content": "little",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c8b37a74-7fad-5177-bef6-0058cdd915c2",
+       "label": "D",
+       "content": "a few",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c27890dd-d9db-5bb2-a86c-92b1a8179beb",
+   "topic": "Prepositions",
+   "title": "Prepositions: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on prepositions, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 107,
+   "questions": [
+    {
+     "id": "b573e844-1b35-5e96-ae99-bc90695720d1",
+     "key": "eng-prep-01",
+     "stem": "Choose the option that best completes the sentence.\n\nThe English paper will begin ____ 9 a.m.",
+     "image_url": null,
+     "explanation": "Use *at* for clock times (*at 9 a.m.*), *on* for days and dates, and *in* for months, years and parts of the day.\n\n**Why the other options are wrong**\n\n- on: *On* is used with days and dates (*on Monday, on 5 May*), not clock times.\n- in: *In* is used with months, years and parts of the day (*in May, in the morning*).\n- for: *For* shows how long something lasts, not when it starts.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8f9e9fd7-613f-5878-b343-8ea15a356837",
+       "label": "A",
+       "content": "on",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "56af6c80-d1ba-5f32-8c26-441f83927cd9",
+       "label": "B",
+       "content": "in",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "75932470-bf04-5271-b061-6bedd9b12c92",
+       "label": "C",
+       "content": "for",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0cbceaca-b9e0-5d35-b8b1-de5369251894",
+       "label": "D",
+       "content": "at",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6a58a478-0f5e-5b68-b0c4-c77451b2aaa8",
+     "key": "eng-prep-02",
+     "stem": "Choose the option that best completes the sentence.\n\nThe young man was accused ____ stealing a goat from the market.",
+     "image_url": null,
+     "explanation": "Some verbs always take the same preposition: *accuse someone of*, *charge someone with*, *blame someone for*.\n\n**Why the other options are wrong**\n\n- for: *Accuse* is followed by *of*, not *for*. (We say *blamed for* or *arrested for*.)\n- with: *Charged with* is correct, but *accused* takes *of*.\n- about: *Accuse* does not take *about*.",
+     "position": 2,
+     "options": [
+      {
+       "id": "80090fc7-d515-5f15-afe1-efb64620ab0f",
+       "label": "A",
+       "content": "of",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1c00986d-12c7-5ddf-b512-586cf0d50e82",
+       "label": "B",
+       "content": "for",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0215b65b-d997-5b0c-83ec-5b5b2aa034be",
+       "label": "C",
+       "content": "with",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "feb8385d-c44b-5da4-9501-6f34a0a471b7",
+       "label": "D",
+       "content": "about",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "91f00527-0581-594d-b8ed-3ac84cd0e544",
+     "key": "eng-prep-03",
+     "stem": "Choose the option that best completes the sentence.\n\nAminata is very good ____ Mathematics.",
+     "image_url": null,
+     "explanation": "*Good at*, *bad at* and *clever at* describe skill in something: *good at Mathematics*.\n\n**Why the other options are wrong**\n\n- in: In standard English, *good* takes *at* for a skill or subject: *good at Mathematics*.\n- on: *Good on* is not used for skill in a subject.\n- with: *Good with* is used for handling people or things (*good with children*), not for a subject.",
+     "position": 3,
+     "options": [
+      {
+       "id": "fd557ce2-dcc1-5a26-aeaf-0fce06c4f40f",
+       "label": "A",
+       "content": "in",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f6d8246e-2d30-5c1e-a640-457705e43607",
+       "label": "B",
+       "content": "at",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1f5cfa88-ab9f-5554-ae56-7122a5e5c9b4",
+       "label": "C",
+       "content": "on",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "44cee1e1-e0fe-51ba-8952-c7ea849e9721",
+       "label": "D",
+       "content": "with",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f86d3833-bc03-58aa-8a17-633d9003fd56",
+     "key": "eng-prep-04",
+     "stem": "Choose the option that best completes the sentence.\n\nWe have been waiting for the ferry ____ two hours.",
+     "image_url": null,
+     "explanation": "With the present perfect continuous, use *for* + a length of time (*for two hours*) and *since* + a starting point (*since 8 o'clock*).\n\n**Why the other options are wrong**\n\n- since: *Since* goes with a starting point (*since 8 o'clock*), not a length of time.\n- from: *From* needs an end point (*from 8 to 10 o'clock*), and does not show a length of time on its own.\n- during: *During* tells us when something happens, not how long it has lasted.",
+     "position": 4,
+     "options": [
+      {
+       "id": "74b066c9-e90f-525c-ac4b-e1a8352a6a99",
+       "label": "A",
+       "content": "since",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ca8abf5c-be8c-5baf-959d-b42184b8c164",
+       "label": "B",
+       "content": "from",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1b4f01b8-1b10-507c-8103-6104d7547869",
+       "label": "C",
+       "content": "for",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "83bbfb2f-da12-5ec5-a286-b02a44c896ed",
+       "label": "D",
+       "content": "during",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f9118cd7-0dd5-5a8e-80a0-475bfb700eb5",
+     "key": "eng-prep-05",
+     "stem": "Choose the option that best completes the sentence.\n\nMohamed is married ____ a nurse who works at Connaught Hospital.",
+     "image_url": null,
+     "explanation": "*Be married to someone* is the standard pattern, like *engaged to* and *related to*.\n\n**Why the other options are wrong**\n\n- with: In standard English the phrase is *married to*, not *married with*.\n- by: *Married by* would mean the person who performed the wedding.\n- for: *Married for* is followed by a length of time (*married for ten years*), not a person.",
+     "position": 5,
+     "options": [
+      {
+       "id": "98af5163-f704-5b49-86ef-2419fc1ccf3e",
+       "label": "A",
+       "content": "with",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "eed69a44-7c9a-52fc-969b-ac984a89828a",
+       "label": "B",
+       "content": "by",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "34bc908a-7272-50ad-8b30-e3bf3935794a",
+       "label": "C",
+       "content": "for",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ddb83b3f-6bef-5570-9a6c-90ee91bfda85",
+       "label": "D",
+       "content": "to",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8a9a86f5-fcba-53b0-b271-e20fe37b4e93",
+   "topic": "Conjunctions",
+   "title": "Conjunctions: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on conjunctions, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 108,
+   "questions": [
+    {
+     "id": "d37fff40-cfcd-59d5-a0b1-88edbe0c4ef8",
+     "key": "eng-conj-01",
+     "stem": "Choose the option that best completes the sentence.\n\n____ it was raining heavily, the inter-secondary sports went on.",
+     "image_url": null,
+     "explanation": "*Although* (or *though*, *even though*) joins two contrasting clauses: *Although it was raining, the sports went on*.\n\n**Why the other options are wrong**\n\n- Because: *Because* gives a reason. The rain is not the reason the sports went on; it is a contrast.\n- Despite: *Despite* is followed by a noun or -ing form (*despite the rain*), not a full clause.\n- Unless: *Unless* means *if not*, which does not fit two facts that both happened.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8784b844-60ff-5fd5-85b3-6120c8e69e2d",
+       "label": "A",
+       "content": "Although",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d0eb5e28-8c4a-512a-bf63-1a6a6fdc76f0",
+       "label": "B",
+       "content": "Because",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "984e95e4-f342-5154-8c91-00dfad1e424e",
+       "label": "C",
+       "content": "Despite",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4f769445-e557-5573-9bd4-cc15efcf5bc4",
+       "label": "D",
+       "content": "Unless",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "87465882-deba-55b1-a89b-279138e7ff07",
+     "key": "eng-conj-02",
+     "stem": "Choose the option that best completes the sentence.\n\nYou will fail the examination ____ you study harder.",
+     "image_url": null,
+     "explanation": "*Unless* means *if… not*: *You will fail unless you study harder* = *If you do not study harder, you will fail*.\n\n**Why the other options are wrong**\n\n- if: *If you study harder, you will fail* says the opposite of what is meant.\n- although: *Although* shows contrast; the sentence needs a condition.\n- because: *Because* gives a reason; studying harder is not the reason for failing.",
+     "position": 2,
+     "options": [
+      {
+       "id": "476ae5f0-7e7f-54ac-a4dc-c23ed53dcb91",
+       "label": "A",
+       "content": "if",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "070dc02e-bf9b-58c6-b2b8-8eb8d701487a",
+       "label": "B",
+       "content": "unless",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1a13028b-c805-5555-88b1-474436ae7c0c",
+       "label": "C",
+       "content": "although",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8e41fd42-0a62-5b57-b0f6-25581c8e608b",
+       "label": "D",
+       "content": "because",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "279c211b-5c2b-542f-9bfb-67cd3deaf513",
+     "key": "eng-conj-03",
+     "stem": "Choose the option that best completes the sentence.\n\nNeither the teacher ____ the pupils knew where the key was.",
+     "image_url": null,
+     "explanation": "Correlative conjunctions come in fixed pairs: *neither… nor*, *either… or*, *both… and*, *not only… but also*.\n\n**Why the other options are wrong**\n\n- or: *Neither* pairs with *nor*; *either* pairs with *or*.\n- and: *Neither… and* is not a correct pair.\n- but: *Neither… but* is not a correct pair.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b56d4a8d-e200-5cfa-a79b-248cc55214e6",
+       "label": "A",
+       "content": "or",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "132947ee-9806-570a-9255-6fd7df84f5f9",
+       "label": "B",
+       "content": "and",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2bd71c73-c7dc-5c17-8426-676ffab6a639",
+       "label": "C",
+       "content": "nor",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "dd95be10-78b1-570e-a06c-4ebfb7d4802e",
+       "label": "D",
+       "content": "but",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "54a8a0a6-1c55-50e6-adcc-5a0f22e30ea9",
+     "key": "eng-conj-04",
+     "stem": "Choose the option that best completes the sentence.\n\nNot only did Hawa pass all her subjects, ____ she also won a scholarship.",
+     "image_url": null,
+     "explanation": "*Not only… but also* adds a second, stronger point: *Not only did she pass, but she also won a scholarship*.\n\n**Why the other options are wrong**\n\n- and: *Not only* pairs with *but (also)*, not *and*.\n- so: *So* shows a result; the sentence adds a second achievement.\n- yet: *Yet* shows contrast, but the pair here is *not only… but also*.",
+     "position": 4,
+     "options": [
+      {
+       "id": "173b9942-506f-56a8-9f30-41b6814020b9",
+       "label": "A",
+       "content": "and",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7086807f-d76c-51c5-9dca-25ba41cee4b4",
+       "label": "B",
+       "content": "so",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ab1765cd-2386-58dc-ba97-b39ea7a115f8",
+       "label": "C",
+       "content": "yet",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "22268ac5-9921-58aa-8b4b-1e338a59a4e9",
+       "label": "D",
+       "content": "but",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6afc66e7-94f6-5f96-a923-f455fcbf0db2",
+     "key": "eng-conj-05",
+     "stem": "Choose the option that best completes the sentence.\n\nHe ran all the way to the junction ____ he would not miss the last bus.",
+     "image_url": null,
+     "explanation": "*So that* introduces a clause of purpose: *He ran so that he would not miss the bus*.\n\n**Why the other options are wrong**\n\n- such that: *Such that* describes a result or a degree (*the noise was such that…*), not a purpose.\n- in order to: *In order to* is followed by a base verb (*in order not to miss*), not a full clause with *he would*.\n- so as: *So as* is followed by *to* + verb (*so as not to miss*), not a clause.",
+     "position": 5,
+     "options": [
+      {
+       "id": "fcb98516-e4a6-5354-a3a1-aad0ab1f36bb",
+       "label": "A",
+       "content": "so that",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "342c67d1-a842-5510-b0a7-635d6055e3aa",
+       "label": "B",
+       "content": "such that",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dd3d46e9-2293-550d-b69c-6f640a860284",
+       "label": "C",
+       "content": "in order to",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "91efd1f5-2157-5745-bc96-0d51a757fef4",
+       "label": "D",
+       "content": "so as",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "9ab75de3-46fc-54f1-ab8c-594fa976ecd8",
+   "topic": "Subject-Verb Agreement",
+   "title": "Subject-Verb Agreement: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on subject-verb agreement, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 109,
+   "questions": [
+    {
+     "id": "308174ab-670e-59d6-a837-a5f10d6d8390",
+     "key": "eng-concord-01",
+     "stem": "Choose the option that best completes the sentence.\n\nMathematics ____ my favourite subject.",
+     "image_url": null,
+     "explanation": "Names of subjects ending in -s, such as *Mathematics*, *Economics* and *Physics*, take a singular verb: *Mathematics is*.\n\n**Why the other options are wrong**\n\n- are: Subjects that end in -s (*Mathematics, Physics, Economics*) are singular nouns.\n- were: This is plural and past; the subject is singular and the sentence is about now.\n- have been: *Have* is plural; a singular subject takes *has been*, and the simple *is* fits best.",
+     "position": 1,
+     "options": [
+      {
+       "id": "0a2894c1-d08e-51eb-b7c7-0053087c9672",
+       "label": "A",
+       "content": "are",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "668ee25b-9378-5133-adfb-1b955acacf55",
+       "label": "B",
+       "content": "is",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "efa8cd3b-f78c-5d6a-9b09-2fe4ee16af58",
+       "label": "C",
+       "content": "were",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "df98b5b1-131b-5935-8bc5-4a70f9079e8b",
+       "label": "D",
+       "content": "have been",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "53ea3392-a807-5f21-aa5a-e17e0f3dfb0a",
+     "key": "eng-concord-02",
+     "stem": "Choose the option that best completes the sentence.\n\nEach of the candidates ____ given a seat number before the examination.",
+     "image_url": null,
+     "explanation": "*Each*, *every*, *either* and *neither* are singular: *Each of the candidates was given…*\n\n**Why the other options are wrong**\n\n- were: The subject is *each*, which is singular, even though *candidates* comes just before the verb.\n- are: *Each* is singular and the sentence is in the past.\n- have been: *Each* is singular, so it would take *has been*, not *have been*.",
+     "position": 2,
+     "options": [
+      {
+       "id": "6ff45a4f-0343-5b18-b352-314e81f69fff",
+       "label": "A",
+       "content": "were",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f4b3dd16-a570-5cd4-aed8-e43317ff61ee",
+       "label": "B",
+       "content": "are",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0723c89b-7a87-5e88-829d-bb7fc7422e46",
+       "label": "C",
+       "content": "was",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "126a6340-0ad1-5042-919a-df06c798a367",
+       "label": "D",
+       "content": "have been",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bba2fbba-8431-53f6-bf33-7be209129fa5",
+     "key": "eng-concord-03",
+     "stem": "Choose the option that best completes the sentence.\n\nThe principal, together with his staff, ____ the visitors at the gate every year.",
+     "image_url": null,
+     "explanation": "Phrases such as *together with*, *as well as* and *along with* do not change the number of the subject: *The principal, together with his staff, welcomes…*\n\n**Why the other options are wrong**\n\n- welcome: The subject is *the principal* (singular). *Together with his staff* does not make it plural.\n- are welcoming: *Are* is plural, and *every year* calls for the present simple.\n- have welcomed: *Have* is plural, and the subject *the principal* is singular.",
+     "position": 3,
+     "options": [
+      {
+       "id": "9ba51fe6-5535-5c7b-891e-225a21bf88af",
+       "label": "A",
+       "content": "welcome",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f203457f-0ce8-5952-b791-52d501bfd231",
+       "label": "B",
+       "content": "are welcoming",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "29456ad0-c1ff-55d1-913e-a50fff5bd120",
+       "label": "C",
+       "content": "have welcomed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "459c6471-3eae-5c13-835a-40b0209e76f0",
+       "label": "D",
+       "content": "welcomes",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ef5a0fa9-d1aa-52ec-b80c-8053badeb2e5",
+     "key": "eng-concord-04",
+     "stem": "Choose the option that best completes the sentence.\n\nNeither the boys nor their sister ____ coming to the party.",
+     "image_url": null,
+     "explanation": "With *neither… nor* and *either… or*, the verb agrees with the subject closest to it: *…nor their sister is*.\n\n**Why the other options are wrong**\n\n- are: With *neither… nor*, the verb agrees with the nearer subject, *their sister*, which is singular.\n- were: The nearer subject is singular, and the sentence is in the present.\n- have: *Have* is plural and does not form *coming* correctly here.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2c228105-8bb0-5698-96b6-196c6628856b",
+       "label": "A",
+       "content": "is",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c92b2ee9-9d09-5fe9-b464-0f6743e40921",
+       "label": "B",
+       "content": "are",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c6e15a47-0d5a-5db2-9bdf-9860b39e498f",
+       "label": "C",
+       "content": "were",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "aeb58a3c-9576-5ab8-905e-2a44237084e9",
+       "label": "D",
+       "content": "have",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0179da26-04ed-5bbd-90c8-e524d4bb29b1",
+     "key": "eng-concord-05",
+     "stem": "Choose the option that best completes the sentence.\n\nThe number of students who passed English ____ increased this year.",
+     "image_url": null,
+     "explanation": "*The number of…* is singular (*the number has increased*); *a number of…* means *several* and is plural (*a number of students have passed*).\n\n**Why the other options are wrong**\n\n- have: The subject is *the number*, which is singular. (*A number of students have…* is plural.)\n- were: *Were* is plural and past, and it does not form a tense with *increased*.\n- are: *Are increased* is not the right tense, and *the number* is singular.",
+     "position": 5,
+     "options": [
+      {
+       "id": "4af8e5b7-df04-52a2-b61e-42f1d79dd8ae",
+       "label": "A",
+       "content": "have",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0098b2d9-9dff-5cca-a42a-77df6359503b",
+       "label": "B",
+       "content": "has",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "327a870b-ebfd-5947-bc3c-87bfeecbd7cb",
+       "label": "C",
+       "content": "were",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "503bbc9b-5c4b-5c97-b635-0fefb26bf0d4",
+       "label": "D",
+       "content": "are",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "8d4189a4a12d"
+}
