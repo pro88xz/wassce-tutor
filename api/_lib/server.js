@@ -164,11 +164,11 @@ export async function settlePaymentCode(client, payment) {
     Number(codeAmount?.value) === expectedMinor &&
     paid?.id === payment.provider_payment_id &&
     paid?.status === 'completed' &&
-    paid?.reference === payment.id &&
     paidAmount?.currency === 'SLE' &&
     Number(paidAmount?.value) === expectedMinor &&
     typeof paid?.financialTransactionReference === 'string' &&
     paid.financialTransactionReference.length > 0 &&
+    (!payment.financial_transaction_reference || paid.financialTransactionReference === payment.financial_transaction_reference) &&
     (!code.financialAccountId || !paid.financialAccountId || code.financialAccountId === paid.financialAccountId)
 
   if (!valid) {
