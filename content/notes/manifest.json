@@ -949,6 +949,32 @@
       "est_minutes": 20,
       "sort_order": 2,
       "auto_sync": true
+    },
+    {
+      "file": "biology-human-reproduction-development-1.md",
+      "subject": "Biology",
+      "topic": "human-reproduction-and-development",
+      "title": "Human reproduction: reproductive systems and the menstrual cycle",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 19,
+      "sort_order": 1,
+      "auto_sync": true
+    },
+    {
+      "file": "biology-human-reproduction-development-2.md",
+      "subject": "Biology",
+      "topic": "human-reproduction-and-development",
+      "title": "Human reproduction: fertilisation, pregnancy, birth and reproductive health",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 21,
+      "sort_order": 2,
+      "auto_sync": true
     }
   ]
 }
