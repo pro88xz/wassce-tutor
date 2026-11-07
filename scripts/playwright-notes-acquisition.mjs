@@ -9,11 +9,10 @@ const MAX_SOURCE_WORDS = 2600
 const CATALOG_URL = process.env.NOTES_CATALOG_URL || 'https://wasscetutor.com/api/notes-engine/catalog'
 const INGEST_URL = process.env.NOTES_INGEST_URL || 'https://wasscetutor.com/api/notes-engine/ingest'
 const HOSTS = new Set([
-  'openstax.org', 'www.openstax.org',
-  'en.wikibooks.org', 'www.wikibooks.org',
-  'siyavula.com', 'www.siyavula.com',
-  'libretexts.org', 'chem.libretexts.org', 'bio.libretexts.org', 'phys.libretexts.org',
-  'pressbooks.pub', 'opentextbc.ca', 'open.umn.edu', 'oercommons.org', 'www.oercommons.org',
+  'openstax.org', 'wikibooks.org', 'siyavula.com', 'libretexts.org',
+  'pressbooks.pub', 'opentextbc.ca', 'open.umn.edu', 'oercommons.org',
+  'open.oregonstate.education', 'ecampusontario.pressbooks.pub', 'open.umn.edu/opentextbooks',
+  'open.lib.umn.edu', 'open textbooklibrary.org', 'oer.galileo.usg.edu',
 ])
 const LICENSES = [
   { id: 'CC-BY-SA-4.0', re: /(?:Creative Commons Attribution-ShareAlike 4\.0|CC BY-SA 4\.0)/i },
@@ -27,7 +26,7 @@ const allowedUrl = value => {
   try {
     const url = new URL(value)
     const host = url.hostname.toLowerCase()
-    const approved = HOSTS.has(host) || host === 'libretexts.org' || host.endsWith('.libretexts.org')
+    const approved = [...HOSTS].some(root => host === root || host.endsWith('.' + root))
     return url.protocol === 'https:' && approved ? url.href : null
   } catch { return null }
 }
@@ -48,8 +47,8 @@ function queriesFor(subject, topic) {
   return [
     phrase + ' ' + subject.name + ' open textbook',
     topic.name + ' ' + subject.name + ' OER CC BY educational resource',
-    topic.name + ' site:openstax.org OR site:libretexts.org OR site:en.wikibooks.org',
-    topic.name + ' site:siyavula.com OR site:pressbooks.pub open textbook',
+    topic.name + ' site:openstax.org OR site:libretexts.org OR site:wikibooks.org OR site:open.umn.edu',
+    topic.name + ' site:pressbooks.pub OR site:opentextbc.ca OR site:oercommons.org OR site:siyavula.com',
   ]
 }
 
