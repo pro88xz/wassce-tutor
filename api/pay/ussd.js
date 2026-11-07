@@ -55,8 +55,13 @@ export async function POST(request) {
   const codeId = code.result?.id
   if (!code.ok || !codeId || typeof ussdCode !== 'string' || !/^\*715\*\d+\*\d+#$/.test(ussdCode)) {
     await client.from('payments').update({ status: 'failed', updated_at: new Date().toISOString() }).eq('id', payment.id)
-    console.error(`[pay] Monime did not return a valid payment-code USSD string for ${payment.id}`)
-    return json(request, { code: 'monime_error', error: 'Monime could not create a payment code. Please try again or use WhatsApp.' }, 502)
+    const diagnostic = {
+      reason: code.reason || 'invalid_payment_code_response',
+      status: Number(code.status) || 0,
+      requestId: code.requestId || null,
+    }
+    console.error(`[pay] Payment Code creation failed for ${payment.id}: ${JSON.stringify(diagnostic)}`)
+    return json(request, { code: 'monime_error', error: 'Monime could not create a payment code.', diagnostic }, 502)
   }
 
   const { error: updateError } = await client.from('payments').update({
