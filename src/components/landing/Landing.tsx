@@ -84,7 +84,7 @@ function Hero({ data }: { data: LandingData }) {
           </div>
         </div>
 
-        <div className="relative mx-auto hidden h-[27rem] w-full max-w-[34rem] lg:block" aria-label="Explore WASSCE subjects">
+        <div className="relative mx-auto -mt-3 h-[18rem] w-full max-w-[24rem] sm:h-[22rem] sm:max-w-[29rem] lg:mt-0 lg:h-[27rem] lg:max-w-[34rem]" aria-label="Explore WASSCE subjects">
           <div aria-hidden className="absolute left-[16%] top-[12%] h-[21rem] w-[21rem] rounded-full border border-white/10 bg-white/[0.035] shadow-[0_0_100px_rgba(139,92,246,.18)]" />
           <div aria-hidden className="absolute left-[25%] top-[21%] h-[17rem] w-[17rem] rounded-full border border-white/10" />
           {featured[0] && (
