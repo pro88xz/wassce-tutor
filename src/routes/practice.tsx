@@ -36,7 +36,7 @@ function PracticePage() {
   const loading = subjectsLoading || (ids.length > 0 && papers.isLoading)
 
   return (
-      <div className="mx-auto max-w-3xl space-y-8">
+      <div className="app-page mx-auto w-full max-w-6xl space-y-8">
         <PageHeader title="Practice" subtitle="Exam-style questions with full working. Each result shows what to revise next." />
         <FreePlanBanner what="A starter practice set in every subject is free." />
 
