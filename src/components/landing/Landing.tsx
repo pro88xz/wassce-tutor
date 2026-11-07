@@ -508,14 +508,14 @@ function Plans() {
     })),
   ]
   return (
-    <section id="plans" className="scroll-mt-20 space-y-8">
+    <section id="plans" className="plans-section scroll-mt-20 space-y-8">
       <SectionTitle eyebrow="Plans" title="Start free. Unlock everything for one small payment." body={`A free account opens the first lesson of every topic. A plan opens every lesson, every practice set and the AI tutor, from ${FROM_PRICE} NLe.`} />
       <div className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-3">
         {cards.map((c, i) => (
           <div
             key={c.key}
             data-reveal={i}
-            className={`relative flex flex-col rounded-3xl bg-card p-6 transition-shadow hover:shadow-lg ${
+            className={`plan-option-card relative flex flex-col rounded-3xl bg-card p-6 transition-shadow hover:shadow-lg ${
               c.best ? 'border-2 border-primary shadow-[0_24px_48px_-28px_rgba(76,29,149,0.55)]' : 'border'
             }`}
           >
@@ -546,7 +546,7 @@ function Plans() {
           </div>
         ))}
       </div>
-      <ul className="mx-auto grid max-w-4xl gap-x-6 gap-y-3 rounded-2xl border bg-card p-5 text-sm text-muted-foreground sm:grid-cols-2">
+      <ul className="plan-assurances mx-auto grid max-w-4xl gap-x-6 gap-y-3 rounded-2xl border bg-card p-5 text-sm text-muted-foreground sm:grid-cols-2">
         {[
           ['No free trial needed', 'The free account never runs out, so you can study before you decide.'],
           ['Paying', 'Orange Money or AfriMoney. Tap Pay on WhatsApp, send the payment, and we switch your plan on, usually within an hour.'],
