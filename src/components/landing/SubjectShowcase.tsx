@@ -74,18 +74,18 @@ function ElectiveRow({ s }: { s: SubjectSummary }) {
   const ready = s.topicCount > 0
   const inner = (
     <>
-      <SubjectCover slug={s.slug} shape="thumb" className="h-16 w-24 shrink-0" rounded="rounded-lg" />
+      <SubjectCover slug={s.slug} shape="thumb" className="h-[4.75rem] w-[5.75rem] shrink-0 sm:h-20 sm:w-28" rounded="rounded-xl" />
       <span className="min-w-0 flex-1">
-        <span className="block text-[15px] font-semibold leading-snug">{s.name}</span>
-        <span className="mt-0.5 block text-[13px] text-muted-foreground">{meta(s)}</span>
+        <span className="block text-base font-bold leading-snug tracking-tight">{s.name}</span>
+        <span className="mt-1 block text-[13px] leading-relaxed text-muted-foreground">{meta(s)}</span>
         {PRACTICE_QUESTIONS[s.slug] ? <span className="mt-1 block"><PracticeBadge slug={s.slug} /></span> : null}
       </span>
       {ready && <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground" aria-hidden />}
     </>
   )
-  const cls = 'flex min-h-[88px] items-center gap-3.5 rounded-2xl border bg-card p-3 pr-3.5'
+  const cls = 'group flex min-h-[108px] items-center gap-4 rounded-2xl border border-border/70 bg-gradient-to-br from-card to-muted/25 p-3.5 pr-4 shadow-sm transition-all duration-200 sm:min-h-[116px] sm:gap-4.5 sm:p-4'
   return ready ? (
-    <a href={subjectPath(s.slug)} className={`${cls} transition-colors hover:border-primary/40`}>{inner}</a>
+    <a href={subjectPath(s.slug)} className={`${cls} hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md`}>{inner}</a>
   ) : (
     <div className={`${cls} opacity-75`}>{inner}</div>
   )
