@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// Automated live acquisition is triggered on crawler changes to main.
 import { chromium } from 'playwright'
 
 const MAX_TOPICS = Math.max(1, Math.min(3, Number(process.env.TOPIC_LIMIT || 3) || 3))
