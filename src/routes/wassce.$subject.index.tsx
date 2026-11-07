@@ -85,7 +85,7 @@ function SubjectHubPage() {
             <ul className="space-y-3">
               {group.topics.map((topic, topicIndex) => (
                 <li key={topic.id} className="group/topic relative overflow-hidden rounded-2xl border border-border/70 bg-card p-4 shadow-[0_8px_24px_-20px_rgba(15,23,42,0.35)] transition-all duration-200 hover:border-primary/30 hover:shadow-md sm:p-5">
-                  <span aria-hidden className={`absolute inset-y-0 left-0 w-1 ${palette.solid ?? 'bg-primary'} opacity-80`} />
+                  <span aria-hidden className={`absolute inset-y-0 left-0 w-1 ${palette.bar} opacity-80`} />
                   <div className="flex items-start gap-3.5 sm:gap-4">
                     <span className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-sm font-bold tabular-nums ${palette.soft} ${palette.text}`}>
                       {String(topicIndex + 1).padStart(2, '0')}
