@@ -62,7 +62,7 @@ function SubjectPage() {
       : sp.groups
 
   return (
-      <div className="mx-auto max-w-3xl space-y-6">
+      <div className="app-page mx-auto w-full max-w-6xl space-y-6">
         <Link to="/subjects" className="-mb-2 inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground">
           <ArrowLeft className="h-4 w-4" aria-hidden /> All subjects
         </Link>
