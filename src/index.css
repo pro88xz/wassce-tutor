@@ -959,3 +959,168 @@ section[aria-labelledby="tour-heading"] [role="tabpanel"] [class*="absolute"][cl
     min-height: 0;
   }
 }
+
+
+/* Popular topics: a featured editorial story beside a deliberate card grid. */
+.popular-topic-collection {
+  min-width: 0;
+  padding: clamp(1rem, 2vw, 1.4rem);
+  border: 1px solid #e4e7ef;
+  border-radius: 1.65rem;
+  background: linear-gradient(155deg, #fff 0%, #f8f9fd 100%);
+  box-shadow: 0 22px 48px -38px rgba(22,28,43,.38);
+}
+.popular-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .8rem;
+  padding-top: 1rem;
+}
+.popular-topic-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #e5e8f0;
+  border-radius: 1.05rem;
+  background: #fff;
+  box-shadow: 0 12px 26px -24px rgba(22,28,43,.45);
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.popular-topic-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(91,52,214,.3);
+  box-shadow: 0 18px 34px -25px rgba(48,31,100,.32);
+}
+.popular-topic-image {
+  position: relative;
+  display: block;
+  aspect-ratio: 1.55 / 1;
+  overflow: hidden;
+  background: #edf0f6;
+}
+.popular-topic-image > img {
+  transition: transform .45s ease;
+}
+.popular-topic-card:hover .popular-topic-image > img {
+  transform: scale(1.045);
+}
+.popular-topic-arrow {
+  position: absolute;
+  right: .55rem;
+  bottom: .55rem;
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.65);
+  border-radius: 999px;
+  background: rgba(255,255,255,.94);
+  color: #28145f;
+  box-shadow: 0 5px 14px rgba(15,23,42,.16);
+  transition: transform .2s ease;
+}
+.popular-topic-card:hover .popular-topic-arrow {
+  transform: translateX(2px);
+}
+.popular-topic-copy {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: .38rem;
+  padding: .85rem .85rem .95rem;
+}
+.popular-topic-subject {
+  color: #6541c7;
+  font-size: .61rem;
+  font-weight: 850;
+  letter-spacing: .105em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+.popular-topic-name {
+  display: -webkit-box;
+  overflow: hidden;
+  color: #171923;
+  font-size: .91rem;
+  font-weight: 800;
+  letter-spacing: -.025em;
+  line-height: 1.25;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.popular-topic-lessons {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  margin-top: auto;
+  padding-top: .25rem;
+  color: #687184;
+  font-size: .7rem;
+  font-weight: 650;
+}
+@media (max-width: 639px) {
+  .popular-topic-grid { gap: .6rem; }
+  .popular-topic-copy { padding: .7rem; }
+  .popular-topic-name { font-size: .84rem; }
+  .popular-topic-image { aspect-ratio: 1.35 / 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .popular-topic-card, .popular-topic-image > img, .popular-topic-arrow { transition: none; }
+  .popular-topic-card:hover { transform: none; }
+}
+
+/* Pricing: make the three choices read as a clear progression, not equal tiles. */
+.plans-section .plan-option-card[data-plan-tier="free"] {
+  background: linear-gradient(155deg, #fff 0%, #f7f8fb 100%);
+}
+.plans-section .plan-option-card[data-plan-tier="term"] {
+  border-color: #d9d4ed;
+  background: linear-gradient(155deg, #fff 0%, #faf8ff 100%);
+}
+.plans-section .plan-option-card[data-plan-tier="year"] {
+  border-color: #8a6be0;
+  background: radial-gradient(ellipse at 50% 0%, #eee8ff 0%, #fff 58%);
+  box-shadow: 0 30px 62px -38px rgba(76,29,149,.58), 0 0 0 5px rgba(100,56,216,.055);
+}
+.plans-section .plan-option-card[data-plan-tier="year"] > p:first-of-type > span:first-child {
+  color: #4b2ba8;
+}
+.plans-section .plan-option-card[data-plan-tier="free"] > p:first-of-type > span:first-child {
+  font-size: 2.65rem;
+  letter-spacing: -.065em;
+}
+.plans-section .plan-option-card[data-plan-tier="term"] > a {
+  border-color: #d8d2e9;
+  background: #fff;
+}
+.plans-section .plan-option-card[data-plan-tier="year"] > a {
+  min-height: 3.35rem;
+  box-shadow: 0 10px 22px -12px rgba(76,29,149,.7);
+}
+.plans-section .plan-option-card > h3 {
+  min-height: 2.8rem;
+  display: flex;
+  align-items: flex-end;
+}
+.plans-section .plan-option-card[data-plan-tier="free"] > h3::before,
+.plans-section .plan-option-card[data-plan-tier="term"] > h3::before,
+.plans-section .plan-option-card[data-plan-tier="year"] > h3::before {
+  display: block;
+  margin-bottom: .4rem;
+  color: #7b8190;
+  font-size: .62rem;
+  font-weight: 850;
+  letter-spacing: .13em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.plans-section .plan-option-card[data-plan-tier="free"] > h3::before { content: "GET STARTED"; }
+.plans-section .plan-option-card[data-plan-tier="term"] > h3::before { content: "SHORT-TERM ACCESS"; }
+.plans-section .plan-option-card[data-plan-tier="year"] > h3::before { content: "BEST LONG-TERM VALUE"; color: #6541c7; }
+@media (max-width: 639px) {
+  .plans-section .plan-option-card { min-height: 0; }
+  .plans-section .plan-option-card > h3 { min-height: 0; display: block; }
+  .plans-section .plan-option-card > h3::before { margin-bottom: .55rem; }
+}
