@@ -10,8 +10,6 @@ const TRAIL: [string, string][] = [
   ['WASSCE', '/wassce'],
 ]
 
-// The WAEC grade scale. Kept to what WAEC publishes on every result slip;
-// no percentage bands (WAEC doesn't publish fixed ones).
 const GRADES: [grade: string, meaning: string, kind: string][] = [
   ['A1', 'Excellent', 'Credit'],
   ['B2', 'Very good', 'Credit'],
@@ -25,7 +23,7 @@ const GRADES: [grade: string, meaning: string, kind: string][] = [
 ]
 
 export const Route = createFileRoute('/wassce/')({
-  ssr: true, // prerendered to static HTML at build time
+  ssr: true,
   loader: () => fetchSubjectSummaries(),
   head: () =>
     indexablePageTags({
@@ -42,70 +40,104 @@ export const Route = createFileRoute('/wassce/')({
 function WasscePillarPage() {
   const subjects = Route.useLoaderData()
   return (
-    <article className="mx-auto max-w-3xl space-y-12 pb-12">
-      <header className="space-y-3 pt-2">
+    <article className="wassce-guide mx-auto max-w-6xl space-y-14 pb-12 sm:space-y-20">
+      <header className="guide-hero">
         <Breadcrumbs trail={TRAIL} />
-        <h1 className="text-4xl font-bold tracking-tight">WASSCE in Sierra Leone</h1>
-        <p className="text-lg text-muted-foreground">
-          The subjects you&rsquo;ll sit, how WASSCE is graded, and the full syllabus for each subject, in one place.
-        </p>
+        <div className="guide-hero-content">
+          <div className="guide-hero-copy">
+            <p className="guide-eyebrow">THE SIERRA LEONE EXAM GUIDE</p>
+            <h1>Understand WASSCE. <span>Prepare with direction.</span></h1>
+            <p className="guide-hero-lede">
+              Your guide to the subjects, syllabus and grading system for the West African Senior School Certificate Examination in Sierra Leone.
+            </p>
+            <div className="guide-hero-actions">
+              <a href="#guide-subjects" className="guide-primary-link">Explore subjects <span aria-hidden>↗</span></a>
+              <a href="#guide-grades" className="guide-secondary-link">Understand grades</a>
+            </div>
+          </div>
+          <div className="guide-hero-index" aria-label="Inside this guide">
+            <p>INSIDE THIS GUIDE</p>
+            <a href="#guide-overview"><span>01</span> The examination <span aria-hidden>↗</span></a>
+            <a href="#guide-subjects"><span>02</span> Subjects by faculty <span aria-hidden>↗</span></a>
+            <a href="#guide-grades"><span>03</span> The grade scale <span aria-hidden>↗</span></a>
+            <div className="guide-index-foot"><span className="guide-index-dot" /> Sierra Leone · WASSCE</div>
+          </div>
+        </div>
+        <div className="guide-hero-bottom">
+          <span>ONE EXAMINATION</span><span>FOUR FACULTIES</span><span>NINE GRADES</span>
+        </div>
       </header>
 
-      <section className="space-y-3">
-        <h2 className="text-2xl font-bold">What is WASSCE?</h2>
-        <p className="text-muted-foreground">
-          The West African Senior School Certificate Examination (WASSCE) is the exam students in Sierra Leone sit
-          in their final year of senior secondary school (SSS3). It is set and marked by the West African
-          Examinations Council (WAEC), which runs the same examination in Ghana, Nigeria, Liberia and The Gambia.
-        </p>
-        <p className="text-muted-foreground">
-          Your WASSCE results decide which university programmes you can apply for, and many scholarships and jobs
-          ask for them too. Each subject is graded separately.
-        </p>
-      </section>
-
-      <section className="space-y-4" aria-labelledby="subjects">
-        <h2 id="subjects" className="text-2xl font-bold">WASSCE subjects by faculty</h2>
-        <p className="text-muted-foreground">
-          Every candidate takes English Language and Mathematics. Your other subjects depend on your faculty.
-          Open a subject to see every topic in its syllabus.
-        </p>
-        <FacultySubjects subjects={subjects} />
-        <p className="text-sm">
-          <a href="/wassce/subjects" className="text-primary hover:underline">See all subjects with topic and lesson counts →</a>
-        </p>
-      </section>
-
-      <section className="space-y-3" aria-labelledby="grades">
-        <h2 id="grades" className="text-2xl font-bold">How WASSCE is graded</h2>
-        <p className="text-muted-foreground">
-          Each subject gets one of nine grades. A1 to C6 are credits, D7 and E8 are passes, and F9 is a fail.
-        </p>
-        <div className="overflow-x-auto">
-          <table className="w-full max-w-md border-collapse text-sm">
-            <thead>
-              <tr className="border-b text-left">
-                <th className="py-2 pr-4 font-semibold">Grade</th>
-                <th className="py-2 pr-4 font-semibold">Meaning</th>
-                <th className="py-2 font-semibold">Counts as</th>
-              </tr>
-            </thead>
-            <tbody>
-              {GRADES.map(([grade, meaning, kind]) => (
-                <tr key={grade} className="border-b last:border-0">
-                  <td className="py-2 pr-4 font-mono font-semibold">{grade}</td>
-                  <td className="py-2 pr-4">{meaning}</td>
-                  <td className="py-2">{kind}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      <section id="guide-overview" className="guide-overview-section scroll-mt-24">
+        <div className="guide-section-heading">
+          <p className="guide-eyebrow">01 / THE EXAMINATION</p>
+          <h2>What is WASSCE?</h2>
+          <p>The qualification at the end of senior secondary school—and what your results mean for the next step.</p>
         </div>
-        <p className="text-muted-foreground">
-          Most university programmes ask for credits (C6 or better) in at least five subjects, usually including
-          English Language and Mathematics. Requirements differ by university and programme, so check the exact
-          entry requirements for the course you want.
-        </p>
+        <div className="guide-overview-grid">
+          <div className="guide-overview-copy">
+            <p>
+              The West African Senior School Certificate Examination (WASSCE) is the exam students in Sierra Leone sit
+              in their final year of senior secondary school (SSS3). It is set and marked by the West African
+              Examinations Council (WAEC), which runs the same examination in Ghana, Nigeria, Liberia and The Gambia.
+            </p>
+            <p>
+              Your WASSCE results decide which university programmes you can apply for, and many scholarships and jobs
+              ask for them too. Each subject is graded separately.
+            </p>
+          </div>
+          <aside className="guide-fact-panel">
+            <span className="guide-fact-kicker">THE RESULT</span>
+            <strong>A grade for<br />every subject.</strong>
+            <p>Your final result is made up of individual subject grades—not one overall score.</p>
+            <a href="#guide-grades">See how the grades work <span aria-hidden>↗</span></a>
+          </aside>
+        </div>
+      </section>
+
+      <section id="guide-subjects" className="guide-subject-section scroll-mt-24">
+        <div className="guide-section-heading guide-section-heading-row">
+          <div>
+            <p className="guide-eyebrow">02 / SUBJECT DIRECTORY</p>
+            <h2>Choose your faculty. Find your subjects.</h2>
+            <p>Every candidate takes English Language and Mathematics. Your other subjects depend on your faculty. Open a subject to see every topic in its syllabus.</p>
+          </div>
+          <a href="/wassce/subjects" className="guide-text-link">Full subject directory <span aria-hidden>↗</span></a>
+        </div>
+        <div className="guide-subject-surface">
+          <FacultySubjects subjects={subjects} />
+        </div>
+      </section>
+
+      <section id="guide-grades" className="guide-grades-section scroll-mt-24">
+        <div className="guide-section-heading">
+          <p className="guide-eyebrow">03 / UNDERSTANDING YOUR RESULT</p>
+          <h2>The WASSCE grade scale</h2>
+          <p>Each subject receives one of nine grades. A1 to C6 are credits, D7 and E8 are passes, and F9 is a fail.</p>
+        </div>
+        <div className="guide-grades-layout">
+          <div className="guide-grade-table-wrap">
+            <table className="guide-grade-table">
+              <thead><tr><th>Grade</th><th>Meaning</th><th>Classification</th></tr></thead>
+              <tbody>
+                {GRADES.map(([grade, meaning, kind]) => (
+                  <tr key={grade} className={kind === 'Credit' ? 'grade-credit' : kind === 'Pass' ? 'grade-pass' : 'grade-fail'}>
+                    <td><span className="guide-grade-pill">{grade}</span></td>
+                    <td>{meaning}</td>
+                    <td><span className="guide-grade-kind">{kind}</span></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <aside className="guide-grade-note">
+            <span className="guide-note-mark">C6</span>
+            <p className="guide-eyebrow">A COMMON ENTRY REQUIREMENT</p>
+            <h3>Know what counts as a credit.</h3>
+            <p>Many university programmes ask for credits (C6 or better) in at least five subjects, usually including English Language and Mathematics.</p>
+            <p>Requirements differ by university and programme, so check the exact entry requirements for the course you want.</p>
+          </aside>
+        </div>
       </section>
 
       <StartCta
