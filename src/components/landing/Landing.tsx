@@ -10,7 +10,7 @@ import { useRef } from 'react'
 import { useReveal } from '@/components/ds/useReveal'
 import { ArrowRight, BookOpen, Check, ChevronRight, CircleCheck, Compass, GraduationCap, Moon, Smartphone, UserRound, Wallet } from 'lucide-react'
 import type { LandingData } from '@/lib/public-content'
-import { topicPath } from '@/lib/public-content'
+import { subjectPath, topicPath } from '@/lib/public-content'
 import { SubjectCover, subjectArt } from '@/components/ds/SubjectCover'
 import { topicPhoto } from '@/lib/topic-photos'
 import { SubjectShowcase } from '@/components/landing/SubjectShowcase'
@@ -128,26 +128,6 @@ function Hero({ data }: { data: LandingData }) {
           ))}
         </div>
       </div>
-    </section>
-  )
-}
-
-/** Verified numbers only (counted from the live syllabus), plus the price. */
-function TrustStrip({ data }: { data: LandingData }) {
-  const items: [string, string][] = [
-    [String(data.totals.subjects), 'WASSCE subjects'],
-    [String(data.totals.topics), 'syllabus topics'],
-    [String(data.totals.lessons), 'lessons written'],
-    ['25 NLe', 'a full year, everything included'],
-  ]
-  return (
-    <section aria-label="WASSCE Tutor in numbers" className="relative z-10 -mt-12 grid grid-cols-2 overflow-hidden rounded-2xl border bg-card shadow-sm sm:grid-cols-4">
-      {items.map(([value, label], i) => (
-        <div key={label} className={`px-4 py-5 text-center ${i % 2 === 1 ? 'border-l' : ''} ${i >= 2 ? 'border-t sm:border-t-0' : ''} ${i === 2 ? 'sm:border-l' : ''}`}>
-          <p className="text-2xl font-bold tracking-tight tabular-nums sm:text-3xl">{value}</p>
-          <p className="text-sm text-muted-foreground">{label}</p>
-        </div>
-      ))}
     </section>
   )
 }
