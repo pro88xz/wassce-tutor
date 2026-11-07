@@ -599,3 +599,248 @@ section[aria-labelledby="tour-heading"] [role="tabpanel"] [class*="absolute"][cl
   #plans > div.grid > div { transition: none; }
   #plans > div.grid > div:hover { transform: none; }
 }
+
+
+/* Homepage conversion sections — stronger editorial hierarchy and trust surfaces. */
+.product-tour-section {
+  padding-block: clamp(1.25rem, 3vw, 2.5rem);
+}
+.product-tour-section .product-tour-heading {
+  position: relative;
+  max-width: 48rem;
+  margin-bottom: clamp(.5rem, 1.5vw, 1.25rem);
+}
+.product-tour-section .product-tour-heading h2 {
+  font-size: clamp(2rem, 4.4vw, 3.25rem);
+  line-height: 1.02;
+  letter-spacing: -.06em;
+}
+.product-tour-section .product-tour-heading > p:last-child {
+  margin: .85rem auto 0;
+  max-width: 38rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.product-tour-section .product-tour-stage {
+  min-height: 38rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(40 20 95 / 9%);
+  box-shadow: 0 30px 80px -52px rgb(31 23 62 / 48%), inset 0 1px 0 rgb(255 255 255 / 55%);
+}
+.product-tour-section .product-tour-stage::before {
+  content: "";
+  position: absolute;
+  inset: 8% 12%;
+  border: 1px solid rgb(255 255 255 / 42%);
+  border-radius: 2rem;
+  pointer-events: none;
+}
+.product-tour-section .product-tour-stage > div.relative {
+  z-index: 1;
+}
+.product-tour-section [role="tabpanel"] {
+  min-width: 0;
+}
+.product-tour-section [role="tabpanel"] > div {
+  border-radius: 2rem;
+}
+.product-tour-section [role="tabpanel"] .tour-in {
+  padding: 1rem 1.1rem 1.5rem;
+}
+.product-tour-section ol > li > button {
+  min-height: 7.8rem;
+  padding: 1.25rem 1.2rem;
+  border-radius: 1.25rem;
+  background: color-mix(in srgb, white 58%, transparent);
+  border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+  transition: transform .2s ease, border-color .2s ease, background .2s ease, box-shadow .2s ease;
+}
+.product-tour-section ol > li > button:hover {
+  transform: translateX(3px);
+  border-color: color-mix(in srgb, var(--primary) 22%, var(--border));
+  background: white;
+}
+.product-tour-section ol > li > button[aria-pressed="true"] {
+  border-color: color-mix(in srgb, var(--primary) 35%, white);
+  background: linear-gradient(135deg, #fff 0%, #f4f0ff 100%);
+  box-shadow: 0 16px 34px -25px rgb(40 20 95 / 55%), 0 0 0 3px rgb(100 56 216 / 7%);
+}
+.product-tour-section ol > li > button[aria-pressed="true"] > span:first-child > span:first-child {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.product-tour-section [role="tablist"] {
+  border: 1px solid #e4def5;
+  background: #f0edf8;
+}
+.product-tour-section [role="tab"][aria-selected="true"] {
+  color: #28145f;
+  background: white;
+  box-shadow: 0 4px 14px rgb(40 20 95 / 12%);
+}
+@media (max-width: 767px) {
+  .product-tour-section .product-tour-stage {
+    min-height: 0;
+    padding-block: 3.25rem;
+    border-radius: 1.5rem;
+  }
+  .product-tour-section .product-tour-stage::before {
+    inset: 5% 4%;
+    border-radius: 1.2rem;
+  }
+  .product-tour-section [role="tabpanel"] > div {
+    border-radius: 1.35rem;
+  }
+}
+
+/* Plans: distinct product tiers plus explicit purchase assurances. */
+.plans-section {
+  padding-block: clamp(1.25rem, 3vw, 2.5rem);
+}
+.plans-section > div:first-child h2 {
+  font-size: clamp(2rem, 4.2vw, 3rem);
+  line-height: 1.04;
+  letter-spacing: -.055em;
+}
+.plans-section > div:first-child > p:last-child {
+  max-width: 40rem;
+  margin-inline: auto;
+  line-height: 1.7;
+}
+.plans-section .plan-option-card {
+  min-height: 100%;
+  padding: clamp(1.35rem, 2.3vw, 1.9rem);
+  border-radius: 1.55rem;
+  border-color: #e0e4ee;
+  background: linear-gradient(155deg, #fff 0%, #fafbff 100%);
+  box-shadow: 0 16px 38px -30px rgb(22 28 43 / 42%);
+}
+.plans-section .plan-option-card::after {
+  content: "";
+  position: absolute;
+  inset: auto 1.4rem 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #dfe2ed, transparent);
+}
+.plans-section .plan-option-card h3 {
+  font-size: 1.05rem;
+  letter-spacing: -.025em;
+}
+.plans-section .plan-option-card > p:nth-of-type(1) {
+  margin-top: 1.4rem;
+}
+.plans-section .plan-option-card > p:nth-of-type(1) > span:first-child {
+  font-size: clamp(2.8rem, 4vw, 3.5rem);
+  letter-spacing: -.075em;
+}
+.plans-section .plan-option-card > p:nth-of-type(2) {
+  color: #59647a;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .09em;
+}
+.plans-section .plan-option-card > ul {
+  gap: .85rem;
+  margin-top: 1.5rem;
+  padding-top: 1.35rem;
+  line-height: 1.55;
+}
+.plans-section .plan-option-card > ul li {
+  align-items: flex-start;
+}
+.plans-section .plan-option-card > ul li svg {
+  flex: 0 0 auto;
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: .15rem;
+  border-radius: 50%;
+  background: #e7f5ed;
+}
+.plans-section .plan-option-card > a {
+  min-height: 3.15rem;
+  border-radius: .9rem;
+  font-size: .9rem;
+}
+.plans-section .plan-option-card:has(> span) {
+  transform: translateY(-.45rem);
+  border: 1.5px solid #8a6be0;
+  background: radial-gradient(ellipse at 50% 0%, #eee8ff 0%, #fff 56%);
+  box-shadow: 0 28px 58px -34px rgb(76 29 149 / 55%), 0 0 0 5px rgb(100 56 216 / 6%);
+}
+.plans-section .plan-option-card:has(> span)::before {
+  height: 5px;
+  background: linear-gradient(90deg, #6438d8, #a78bfa 52%, #73c9d8);
+}
+.plans-section .plan-option-card > span:first-child {
+  top: 1rem;
+  right: 1.1rem;
+  left: auto;
+  padding: .45rem .8rem;
+  border: 1px solid rgb(100 56 216 / 16%);
+  border-radius: 999px;
+  background: #6438d8;
+  box-shadow: 0 8px 20px rgb(76 29 149 / 22%);
+  font-size: .65rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.plans-section .plan-assurances {
+  padding: 0;
+  gap: .85rem;
+  background: transparent;
+  border: 0;
+}
+.plans-section .plan-assurance-card {
+  display: flex;
+  min-height: 7.5rem;
+  align-items: flex-start;
+  gap: .9rem;
+  padding: 1.1rem;
+  border: 1px solid #e2e6ef;
+  border-radius: 1.1rem;
+  background: linear-gradient(145deg, #fff 0%, #f9faff 100%);
+  box-shadow: 0 12px 28px -25px rgb(22 28 43 / 38%);
+}
+.plans-section .plan-assurance-icon {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d8efe2;
+  border-radius: .8rem;
+  background: #edf8f1;
+  color: #168253;
+}
+.plans-section .plan-assurance-copy {
+  display: grid;
+  gap: .3rem;
+  min-width: 0;
+}
+.plans-section .plan-assurance-title {
+  color: var(--foreground);
+  font-size: .9rem;
+  font-weight: 800;
+  letter-spacing: -.02em;
+}
+.plans-section .plan-assurance-body {
+  color: var(--muted-foreground);
+  font-size: .82rem;
+  line-height: 1.55;
+}
+@media (min-width: 640px) {
+  .plans-section .plan-assurances { gap: 1rem; }
+  .plans-section .plan-assurance-card { min-height: 8rem; padding: 1.2rem; }
+}
+@media (max-width: 639px) {
+  .plans-section .plan-option-card:has(> span) { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .product-tour-section ol > li > button,
+  .plans-section .plan-option-card { transition: none; }
+  .product-tour-section ol > li > button:hover,
+  .plans-section .plan-option-card:hover { transform: none; }
+}
