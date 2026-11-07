@@ -844,3 +844,118 @@ section[aria-labelledby="tour-heading"] [role="tabpanel"] [class*="absolute"][cl
   .product-tour-section ol > li > button:hover,
   .plans-section .plan-option-card:hover { transform: none; }
 }
+
+
+/* Final landing-page art direction: product-led showcases and clear trust hierarchy. */
+.trust-strip {
+  position: relative;
+  z-index: 20;
+  margin-top: -1.25rem;
+}
+.trust-strip-item {
+  min-width: 0;
+}
+.trust-strip-item:first-child {
+  border-left: 0;
+}
+.trust-strip-item:nth-child(3) {
+  border-left: 0;
+}
+@media (min-width: 640px) {
+  .trust-strip-item:nth-child(3) {
+    border-left: 1px solid #f1f2f6;
+  }
+}
+.product-tour-section .product-tour-stage {
+  min-height: 0;
+  padding: clamp(1rem, 2.4vw, 2.25rem);
+  box-shadow: 0 34px 84px -54px rgba(31,23,62,.52), inset 0 1px 0 rgba(255,255,255,.7);
+}
+.product-tour-section .product-tour-stage::before {
+  inset: 5% 7%;
+  border-color: rgba(255,255,255,.55);
+  border-radius: 2.5rem;
+}
+.product-tour-section .product-tour-stage .tour-in {
+  min-height: 18rem;
+}
+.product-tour-section .product-tour-stage .tour-in > * {
+  max-width: 100%;
+}
+.product-tour-section .product-tour-stage .tour-in img {
+  max-height: 10rem;
+  object-fit: contain;
+}
+.product-tour-section .product-tour-stage .tour-in > div:first-child {
+  font-size: .75rem;
+}
+.product-tour-section .product-tour-stage .tour-in p {
+  line-height: 1.6;
+}
+.product-tour-section .product-tour-stage .tour-in ol {
+  padding-left: .1rem;
+}
+.product-tour-section .product-tour-stage .tour-in li {
+  line-height: 1.55;
+}
+.product-tour-section .product-tour-stage .tour-in .rounded-xl,
+.product-tour-section .product-tour-stage .tour-in .rounded-lg {
+  border-radius: .9rem;
+}
+.product-tour-section .product-tour-stage .tour-in > .grid {
+  gap: .65rem;
+}
+.product-tour-section .product-tour-heading {
+  margin-bottom: .5rem;
+}
+.plans-section .plan-assurance-card {
+  min-height: 8rem;
+  padding: 1.2rem;
+}
+.plans-section .plan-assurance-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: .9rem;
+}
+.plans-section .plan-assurance-title {
+  font-size: .92rem;
+}
+.plans-section .plan-assurance-body {
+  font-size: .84rem;
+  line-height: 1.6;
+}
+@media (max-width: 639px) {
+  .trust-strip {
+    margin-inline: 1rem;
+    margin-top: -1rem;
+    border-radius: 1.15rem;
+  }
+  .trust-strip-item {
+    min-height: 7rem;
+    padding: .9rem .85rem;
+  }
+  .trust-strip-item:nth-child(odd) {
+    border-left: 0;
+  }
+  .trust-strip-item:nth-child(even) {
+    border-left: 1px solid #f1f2f6;
+  }
+  .product-tour-section .product-tour-stage {
+    padding: 1rem;
+    border-radius: 1.35rem;
+  }
+  .product-tour-section .product-tour-stage::before {
+    inset: 4%;
+    border-radius: 1rem;
+  }
+  .product-tour-section .product-tour-stage .tour-in {
+    min-height: 0;
+    padding: 1rem;
+  }
+  .product-tour-section .product-tour-stage .tour-in .text-lg {
+    font-size: 1rem;
+  }
+  .plans-section .plan-assurance-card {
+    min-height: 0;
+  }
+}
