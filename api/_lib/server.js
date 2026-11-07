@@ -134,6 +134,56 @@ export function verifyMonimeSignature(rawBody, header, secret, nowSeconds = Math
   return given.length === expected.length && crypto.timingSafeEqual(given, expected)
 }
 
+
+/**
+ * Verifies a one-time Payment Code and its resulting Payment with Monime.
+ * The signed webhook is only a trigger; the authoritative code and payment
+ * objects are fetched server-to-server before the subscription is granted.
+ */
+export async function settlePaymentCode(client, payment) {
+  if (payment.status === 'completed') return { status: 'completed', accessUntil: payment.access_until }
+  if (!payment.payment_code_id || !payment.provider_payment_id) return { status: payment.status }
+
+  const [codeResult, paymentResult] = await Promise.all([
+    monime('GET', `/v1/payment-codes/${encodeURIComponent(payment.payment_code_id)}`),
+    monime('GET', `/v1/payments/${encodeURIComponent(payment.provider_payment_id)}`),
+  ])
+  if (!codeResult.ok || !paymentResult.ok) return { status: payment.status, error: 'monime_unavailable' }
+
+  const code = codeResult.result
+  const paid = paymentResult.result
+  const expectedMinor = Number(payment.amount_nle) * 100
+  const codeAmount = code?.amount
+  const paidAmount = paid?.amount
+  const valid =
+    code?.id === payment.payment_code_id &&
+    code?.status === 'completed' &&
+    code?.reference === payment.id &&
+    code?.metadata?.payment_id === payment.id &&
+    codeAmount?.currency === 'SLE' &&
+    Number(codeAmount?.value) === expectedMinor &&
+    paid?.id === payment.provider_payment_id &&
+    paid?.status === 'completed' &&
+    paid?.reference === payment.id &&
+    paidAmount?.currency === 'SLE' &&
+    Number(paidAmount?.value) === expectedMinor &&
+    typeof paid?.financialTransactionReference === 'string' &&
+    paid.financialTransactionReference.length > 0 &&
+    (!code.financialAccountId || !paid.financialAccountId || code.financialAccountId === paid.financialAccountId)
+
+  if (!valid) {
+    console.error(`[pay] Monime Payment Code/payment verification mismatch for local payment ${payment.id}`)
+    return { status: payment.status, error: 'payment_mismatch' }
+  }
+
+  const { data, error } = await client.rpc('complete_payment', { p_payment: payment.id })
+  if (error) {
+    console.error(`[pay] complete_payment failed for ${payment.id}: ${error.message}`)
+    return { status: payment.status, error: 'grant_failed' }
+  }
+  return { status: 'completed', accessUntil: data }
+}
+
 /**
  * Brings a payment up to date with its Monime checkout session. Grants the
  * plan (once) when the session is completed. Returns the payment's status.
