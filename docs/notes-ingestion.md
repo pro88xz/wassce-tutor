@@ -1,66 +1,56 @@
 # WASSCE Tutor content acquisition engine
 
-## Production engine
+## Production acquisition path
 
-The production acquisition endpoint is `api/notes-engine/run.js`. It runs on Vercel and writes directly to the existing Supabase `lessons` table. It does not create JSON files for an administrator to upload.
+The production acquisition pipeline uses Playwright in GitHub Actions to search and browse educational websites. It does not use Groq, an LLM provider, Wikipedia's API, or manual JSON imports.
 
-### Runtime configuration
+### Daily operation
 
-Set these Vercel environment variables for **Production**:
+The workflow `.github/workflows/notes-acquisition.yml` runs daily at 03:00 UTC and can also be started from GitHub Actions → Playwright WASSCE content acquisition → Run workflow.
 
-| Variable | Purpose |
-|---|---|
-| `VITE_SUPABASE_URL` (already used by the application) | Supabase project URL |
-| `SUPABASE_SECRET_KEY` (already used by question sync) | Server-only Supabase secret key or legacy service-role key |
-| `GROQ_API_KEY` | Groq API key used by the existing WASSCE Tutor AI lesson generator |
-| `CRON_SECRET` | Long random secret used to authenticate scheduled engine runs |
+Each run processes at most three missing topics:
 
-Never prefix a secret with `VITE_`. Never put a Supabase secret key or Groq key in client-side code, repository files, or logs. The endpoint rejects missing configuration and rejects a public Supabase key.
+1. Calls the authenticated Vercel catalogue endpoint. That endpoint reads the live Supabase subjects, topics and lessons with the existing server-only Supabase secret key and returns topics with zero lesson rows.
+2. Launches Chromium through Playwright on the GitHub Actions runner.
+3. Searches Google, with DuckDuckGo HTML as a fallback, for the exact subject/topic against the approved open-education domains.
+4. Opens candidate pages in Chromium and extracts the main article text and section headings.
+5. Requires visible page evidence for a recognised open licence. The initial allowlist is OpenStax, Wikibooks and Siyavula; accepted licences are CC BY 4.0, CC BY-SA 4.0, CC0 1.0 and explicit public domain evidence. Pages without matching licence evidence, sufficient text or an approved host are rejected.
+6. Arranges the extracted material into a topic-mapped Markdown lesson with attribution, source URLs, licence identifiers and retrieval date.
+7. Sends the lesson to the authenticated Vercel ingestion endpoint. That endpoint revalidates the source hosts/licences, verifies topic IDs against the live Supabase catalogue, checks for existing lessons and writes directly to the Supabase `lessons` table.
+8. Keeps `is_public=false` and reviewer fields empty. The Admin → Review lessons and questions workflow remains the human approval gate for public publication.
 
-### Schedule and operation
+A topic is not populated when no source meets the host, licence, relevance-search and minimum-content checks. The pipeline does not fabricate replacement material.
 
-Vercel Cron calls `GET /api/notes-engine/run` daily at 03:00 UTC. Vercel supplies `Authorization: Bearer $CRON_SECRET`. The default run processes up to two topic gaps; the endpoint accepts a bounded `?limit=1..4` override for authenticated manual runs.
+## Runtime configuration
 
-Each run:
+Set the same random `CRON_SECRET` value in two places:
 
-1. Reads the live subjects, topics and lessons from Supabase, using paginated queries.
-2. Identifies topics with zero lesson rows. Topics that already have at least one lesson are not overwritten.
-3. Searches Wikipedia's public MediaWiki API for topic-specific reference material and retrieves article extracts.
-4. Uses the same Groq model family already used by the tutor (`llama-3.3-70b-versatile`) to write an independently worded WASSCE lesson.
-5. Validates the title, length, required teaching sections, practice questions and source section.
-6. Inserts the lesson directly into Supabase with `is_published = true` and `is_public = false`.
-7. Returns a machine-readable report including created lesson IDs, source URLs, hashes, failures and remaining gap estimate.
+- GitHub repository → Settings → Secrets and variables → Actions → New repository secret → `CRON_SECRET`.
+- Vercel project → Settings → Environment Variables → `CRON_SECRET` for Production, then redeploy.
 
-The database insert is idempotent against the unique topic/slug constraint. Existing lessons are never overwritten. Failed research or generation leaves the topic gap untouched for a later run.
+The Vercel endpoints reuse the existing `VITE_SUPABASE_URL` and `SUPABASE_SECRET_KEY` (or the legacy `SUPABASE_SERVICE_ROLE_KEY`) already used by the production server-side functions. The GitHub workflow never receives the Supabase secret key; it receives only the cron secret. The public Supabase key is not used for writes.
 
-### Student access and human review
+No Groq key or AI-provider credential is required.
 
-Generated lessons are available in the signed-in learning app under the existing lesson access rules. They are not public SEO pages: `is_public` remains false and no reviewer fields are populated. An administrator can inspect and edit them in **Admin → Review lessons and questions**. Only a named human reviewer can approve a lesson for public publication. The engine never sets `is_public`, `reviewed_at` or `reviewed_by`.
+## Endpoints
 
-### Monitoring
+- `GET /api/notes-engine/catalog`: authenticated, server-side live topic gap scan. Returns up to three topics without lesson rows.
+- `POST /api/notes-engine/ingest`: authenticated, validates scraped lesson content and provenance, then inserts only into the existing `lessons` table.
 
-The endpoint response includes:
-- `topics_without_lessons_before_run`
-- `attempted`, `created`, `failed`, and `remaining_estimate`
-- per-topic status, generated lesson ID, word count, source attribution and content SHA-256
+Both endpoints require `Authorization: Bearer $CRON_SECRET`. They reject unauthenticated requests and do not expose Supabase credentials.
 
-A response of HTTP 503 means required environment configuration is missing. HTTP 401 means the cron secret did not match. HTTP 207 means one or more topic attempts failed; inspect the per-topic error and allow the next scheduled run to retry.
+## Content and rights policy
 
-## Editorial batch tools
+The crawler extracts content only from the initial approved open-education domain allowlist and only when it can detect a visible licence statement. Source titles, URLs and licence identifiers are retained in each lesson. ShareAlike notices are preserved. This is open-licensed source acquisition and structured presentation, not AI paraphrasing. Source material remains attributed to its original authors/publishers.
 
-The separate local tools remain available for content prepared by the editorial team:
+The initial source allowlist will not necessarily cover every WASSCE subject. If no matching open-licensed source is found, the topic remains a gap and the run reports that outcome; it does not scrape arbitrary copyrighted pages or silently treat public accessibility as permission to republish.
 
-- `npm run notes:validate` validates the local Markdown manifest.
-- `npm run notes:build` packages those local files for the existing admin importer.
-- `npm run notes:acquire` fetches explicitly rights-verified sources listed in `content/sources/manifest.json`.
-- `npm run notes:catalog` verifies local lesson topic mappings against the live catalogue.
+## Existing editorial tools
 
-These commands are editorial utilities. They are not the scheduled production acquisition engine and are not required for its direct Supabase writes.
+The local Markdown tools remain separate:
+- `npm run notes:validate`
+- `npm run notes:build`
+- `npm run notes:acquire`
+- `npm run notes:catalog`
 
-## Source and quality policy
-
-The automated engine uses Wikipedia reference extracts (CC BY-SA 4.0) for factual research, includes exact article titles and URLs in the lesson's Sources section, and writes new explanatory text rather than copying source passages. Generated material must pass structural validation before insertion. This is an automated first-draft pipeline, not a substitute for expert subject review; public publication remains a human approval action.
-
-## Security
-
-The endpoint runs only on the Vercel server, authenticates every invocation with `CRON_SECRET`, and uses the Supabase secret key only server-side. It does not accept lesson content or arbitrary database table names from request input. It reads the existing curriculum and writes only to `lessons`. It never grants public review status or modifies existing lesson content.
+They are not required by the Playwright production workflow. No manual Admin bulk import is part of the automated acquisition path.
