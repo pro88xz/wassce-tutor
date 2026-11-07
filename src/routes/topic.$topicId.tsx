@@ -33,7 +33,7 @@ function TopicPage() {
 
   if (isLoading) {
     return (
-      <div className="mx-auto max-w-2xl space-y-4">
+      <div className="app-page mx-auto w-full max-w-5xl space-y-4">
         <Skeleton className="h-40" />
         {[0, 1, 2, 3].map((i) => <Skeleton key={i} className="h-16" />)}
       </div>
@@ -55,7 +55,7 @@ function TopicPage() {
   const anyLocked = lessons.some(isLocked)
 
   return (
-      <div className="mx-auto max-w-2xl space-y-6">
+      <div className="app-page mx-auto w-full max-w-5xl space-y-6">
         <nav aria-label="Breadcrumb" className="-mb-2">
           <ol className="flex min-w-0 items-center gap-1.5 text-sm text-muted-foreground">
             <li>
