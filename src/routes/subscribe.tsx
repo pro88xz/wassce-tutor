@@ -226,7 +226,7 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
   const active = access.reason === 'subscribed' && profile?.subscription_expires_at
 
   return (
-    <div className="mx-auto max-w-lg space-y-6 pb-8">
+    <div className="app-page checkout-page mx-auto w-full max-w-4xl space-y-6 pb-8">
       <header className="space-y-3 text-center">
         <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-brand-strong text-white shadow-lg shadow-primary/30">
           <Sparkles className="h-7 w-7" aria-hidden />
