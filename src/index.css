@@ -1724,3 +1724,12 @@ a.subject-directory-card:hover .subject-directory-action span { transform: trans
   .auth-page > div { border-radius:1.15rem; }
   .checkout-page { padding-inline:.1rem; }
 }
+
+
+.app-page-legal { max-width:min(100%,58rem); }
+.app-page-legal :where(p,li) { line-height:1.85; }
+.app-page-legal :where(h2,h3) { margin-top:1.8em; }
+.app-page-legal :where(ul,ol) { padding-left:1.35rem; }
+@media (max-width:640px) {
+  .app-page-legal { padding-inline:.15rem; }
+}
