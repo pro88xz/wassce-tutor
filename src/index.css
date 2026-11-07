@@ -1695,3 +1695,32 @@ a.subject-directory-card:hover .subject-directory-action span { transform: trans
 @media (prefers-reduced-motion: reduce) {
   .app-page :where(a,button) { transition:none; }
 }
+
+
+/* Authentication, checkout and admin surfaces. */
+.auth-page > div {
+  max-width:28rem;
+  padding:clamp(1.1rem,4vw,2rem);
+  border:1px solid var(--border);
+  border-radius:1.5rem;
+  background:var(--card);
+  box-shadow:0 24px 65px -45px color-mix(in srgb,var(--foreground) 35%,transparent);
+}
+.auth-page > div > div:first-child > a { box-shadow:0 12px 28px -15px color-mix(in srgb,var(--primary) 60%,transparent); }
+.auth-page h1 { font-size:clamp(1.8rem,6vw,2.35rem); letter-spacing:-.06em; line-height:1.05; }
+.checkout-page { max-width:min(100%,64rem); }
+.checkout-page > header { max-width:45rem; margin-inline:auto; }
+.checkout-page > header h1 { letter-spacing:-.065em; }
+.checkout-page > :where(ul,section) { border-radius:1.2rem; }
+.checkout-page [role="radiogroup"] > button,
+.checkout-page [role="radiogroup"] > div { min-height:13rem; padding:1.35rem; }
+.admin-page { max-width:min(100%,76rem); padding-bottom:3rem; }
+.admin-page > div:first-child { padding:clamp(1rem,2.5vw,1.6rem); border:1px solid var(--border); border-radius:1.25rem; background:linear-gradient(120deg,color-mix(in srgb,var(--brand-soft) 34%,var(--card)),var(--card) 75%); }
+.admin-page > div:first-child h1 { font-size:clamp(1.65rem,3.5vw,2.35rem); letter-spacing:-.055em; }
+.admin-page :where(input,textarea,select) { border-radius:.8rem; }
+.admin-page :where(.rounded-2xl.border,.rounded-xl.border) { box-shadow:0 14px 35px -32px color-mix(in srgb,var(--foreground) 32%,transparent); }
+@media (max-width:640px) {
+  .auth-page { min-height:calc(100dvh - 7rem); align-items:flex-start; padding-top:1.25rem; }
+  .auth-page > div { border-radius:1.15rem; }
+  .checkout-page { padding-inline:.1rem; }
+}
