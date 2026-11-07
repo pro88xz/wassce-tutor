@@ -5,7 +5,7 @@ import { fetchSubjectHub, hasTopicPage, subjectPath, topicPath } from '@/lib/pub
 import type { SubjectHub } from '@/lib/public-content'
 import { breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { tutorsPath } from '@/lib/public-rules'
-import { ChevronRight } from 'lucide-react'
+import { BookOpen, ChevronRight } from 'lucide-react'
 import { subjectTheme } from '@/lib/subject-theme'
 import { SubjectBanner, SubjectCover } from '@/components/ds/SubjectCover'
 
@@ -82,26 +82,30 @@ function SubjectHubPage() {
               <h3 className="text-sm font-semibold text-muted-foreground">{group.name}</h3>
               <span className="text-xs text-muted-foreground">{group.topics.length} topics</span>
             </div>
-            <ul className="space-y-2">
-              {group.topics.map((topic) => (
-                <li key={topic.id} className="rounded-2xl bg-card p-4 ring-1 ring-border/60">
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="min-w-0 space-y-1">
+            <ul className="space-y-3">
+              {group.topics.map((topic, topicIndex) => (
+                <li key={topic.id} className="group/topic relative overflow-hidden rounded-2xl border border-border/70 bg-card p-4 shadow-[0_8px_24px_-20px_rgba(15,23,42,0.35)] transition-all duration-200 hover:border-primary/30 hover:shadow-md sm:p-5">
+                  <span aria-hidden className={`absolute inset-y-0 left-0 w-1 ${palette.solid ?? 'bg-primary'} opacity-80`} />
+                  <div className="flex items-start gap-3.5 sm:gap-4">
+                    <span className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-sm font-bold tabular-nums ${palette.soft} ${palette.text}`}>
+                      {String(topicIndex + 1).padStart(2, '0')}
+                    </span>
+                    <div className="min-w-0 flex-1 space-y-1.5">
                       {hasTopicPage(topic) ? (
-                        <a href={topicPath(subject.slug, topic.slug)} className={`font-semibold hover:underline ${palette.text}`}>
+                        <a href={topicPath(subject.slug, topic.slug)} className={`block text-base font-bold leading-snug tracking-tight hover:underline sm:text-[17px] ${palette.text}`}>
                           {topic.name}
                         </a>
                       ) : (
-                        <span className="font-semibold">{topic.name}</span>
+                        <span className="block text-base font-bold leading-snug tracking-tight sm:text-[17px]">{topic.name}</span>
                       )}
-                      {topic.description && <p className="text-sm text-muted-foreground">{topic.description}</p>}
+                      {topic.description && <p className="text-sm leading-relaxed text-muted-foreground sm:text-[15px]">{topic.description}</p>}
+                      <span className="inline-flex items-center gap-1.5 pt-1 text-xs font-medium text-muted-foreground">
+                        <BookOpen className="h-3.5 w-3.5" aria-hidden />
+                        {topic.lessons.length > 0 ? `${topic.lessons.length} available lesson${topic.lessons.length === 1 ? '' : 's'}` : 'Lesson content coming soon'}
+                      </span>
                     </div>
-                    <span
-                      className={`shrink-0 rounded-full px-2.5 py-0.5 text-xs font-semibold ${
-                        topic.lessons.length > 0 ? `${palette.soft} ${palette.text}` : 'bg-muted text-muted-foreground'
-                      }`}
-                    >
-                      {topic.lessons.length > 0 ? `${topic.lessons.length} lesson${topic.lessons.length === 1 ? '' : 's'}` : 'Soon'}
+                    <span className={`mt-0.5 shrink-0 rounded-lg px-2.5 py-1.5 text-xs font-bold ${topic.lessons.length > 0 ? `${palette.soft} ${palette.text}` : 'bg-muted text-muted-foreground'}`}>
+                      {topic.lessons.length > 0 ? 'Ready' : 'Soon'}
                     </span>
                   </div>
                 </li>
