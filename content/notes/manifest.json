@@ -975,6 +975,32 @@
       "est_minutes": 21,
       "sort_order": 2,
       "auto_sync": true
+    },
+    {
+      "file": "biology-growth-development-1.md",
+      "subject": "Biology",
+      "topic": "growth-and-development",
+      "title": "Growth and development: principles, patterns and plant growth",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 18,
+      "sort_order": 1,
+      "auto_sync": true
+    },
+    {
+      "file": "biology-growth-development-2.md",
+      "subject": "Biology",
+      "topic": "growth-and-development",
+      "title": "Growth and development: germination, animal development and measurement",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 20,
+      "sort_order": 2,
+      "auto_sync": true
     }
   ]
 }
