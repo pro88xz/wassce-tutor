@@ -49,5 +49,5 @@ Always write the base as a subscript. Show repeated-division remainders in the c
 1. (2(25)+3(5)+4=69_{10}).
 2. (10011_2).
 3. (13_{10}).
-4. No. Octal digits range from 0 to 7, so 5, 0 and 7 are allowed; therefore it is valid. 
+4. Yes. Octal digits range from 0 to 7, and 5, 0 and 7 are all allowed. 
 5. (12_5).
