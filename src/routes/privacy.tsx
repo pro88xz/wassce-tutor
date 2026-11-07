@@ -9,7 +9,7 @@ export const Route = createFileRoute('/privacy')({
 
 function Privacy() {
   return (
-    <div className="mx-auto max-w-3xl space-y-4 pb-12">
+    <div className="app-page app-page-legal mx-auto w-full max-w-5xl space-y-4 pb-12">
       <header className="space-y-3 pb-4 pt-2">
         <p className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">Legal</p>
         <h1 className="text-4xl font-bold tracking-tight text-balance">Privacy Policy</h1>
