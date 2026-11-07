@@ -13,7 +13,7 @@ const HOSTS = new Set([
   'en.wikibooks.org', 'www.wikibooks.org',
   'siyavula.com', 'www.siyavula.com',
   'libretexts.org', 'chem.libretexts.org', 'bio.libretexts.org', 'phys.libretexts.org',
-  'pressbooks.pub',
+  'pressbooks.pub', 'opentextbc.ca', 'open.umn.edu', 'oercommons.org', 'www.oercommons.org',
 ])
 const LICENSES = [
   { id: 'CC-BY-SA-4.0', re: /(?:Creative Commons Attribution-ShareAlike 4\.0|CC BY-SA 4\.0)/i },
@@ -70,19 +70,37 @@ async function searchProvider(page, url, selector, unwrap) {
 async function searchResults(page, subject, topic) {
   const found = new Set()
   const queries = queriesFor(subject, topic)
-  for (let i = 0; i < queries.length; i++) {
-    const q = encodeURIComponent(queries[i])
-    const google = await searchProvider(page, 'https://www.google.com/search?q=' + q, 'a[href]', u =>
-      u.hostname === 'www.google.com' && u.pathname === '/url' ? (u.searchParams.get('q') || u.searchParams.get('url')) : null)
-    google.forEach(url => found.add(url))
-    if (found.size < 5) {
-      const ddg = await searchProvider(page, 'https://html.duckduckgo.com/html/?q=' + q, 'a.result__a', u =>
-        u.hostname.endsWith('duckduckgo.com') ? u.searchParams.get('uddg') : null)
-      ddg.forEach(url => found.add(url))
-    }
-    if (found.size >= 18) break
+  const unwrap = href => {
+    try {
+      const url = new URL(href)
+      if (url.hostname === 'www.google.com' && url.pathname === '/url') return url.searchParams.get('q') || url.searchParams.get('url')
+      if (url.hostname.endsWith('duckduckgo.com')) return url.searchParams.get('uddg')
+      if (url.hostname.endsWith('bing.com') && url.pathname === '/ck/a') return url.searchParams.get('u') ? Buffer.from(url.searchParams.get('u').replace(/^a1/, ''), 'base64').toString('utf8') : null
+      return href
+    } catch { return null }
   }
-  console.log('Search diagnostics [' + subject.name + ' / ' + topic.name + ']: ' + queries.length + ' queries, ' + found.size + ' approved-domain candidate URLs.')
+  const collect = async (url, selector) => {
+    try {
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 25000 })
+      await sleep(500)
+      const hrefs = await page.locator(selector).evaluateAll(nodes => nodes.map(node => node.href).filter(Boolean))
+      for (const href of hrefs) {
+        const target = unwrap(href)
+        const approved = target && allowedUrl(target)
+        if (approved) found.add(approved)
+      }
+    } catch (error) {
+      console.warn('Search provider error: ' + error.message.slice(0, 160))
+    }
+  }
+  for (const query of queries) {
+    const q = encodeURIComponent(query)
+    await collect('https://www.google.com/search?udm=14&q=' + q, 'a[href]')
+    if (found.size < 6) await collect('https://www.bing.com/search?q=' + q, 'li.b_algo h2 a')
+    if (found.size < 6) await collect('https://html.duckduckgo.com/html/?q=' + q, 'a.result__a')
+    if (found.size >= 20) break
+  }
+  console.log('Search diagnostics [' + subject.name + ' / ' + topic.name + ']: ' + queries.length + ' queries across Google, Bing and DuckDuckGo, ' + found.size + ' approved-domain candidate URLs.')
   return [...found].slice(0, 24)
 }
 
