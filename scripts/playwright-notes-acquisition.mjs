@@ -53,54 +53,81 @@ function queriesFor(subject, topic) {
   ]
 }
 
-async function searchProvider(page, url, selector, unwrap) {
+function unwrapSearchHref(href) {
   try {
-    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 25000 })
-    await sleep(800)
-    const raw = await page.locator(selector).evaluateAll(nodes => nodes.map(node => node.href).filter(Boolean))
-    return raw.map(href => {
-      try { return unwrap(new URL(href)) || href } catch { return href }
-    }).map(allowedUrl).filter(Boolean)
-  } catch (error) {
-    console.warn('Search provider error: ' + error.message)
-    return []
-  }
+    let url = new URL(href)
+    if (url.hostname === 'www.google.com' && url.pathname === '/url') {
+      const target = url.searchParams.get('q') || url.searchParams.get('url')
+      if (target) url = new URL(target)
+    } else if (url.hostname.endsWith('duckduckgo.com')) {
+      const target = url.searchParams.get('uddg')
+      if (target) url = new URL(target)
+    } else if (url.hostname.endsWith('bing.com') && url.pathname === '/ck/a') {
+      const encoded = url.searchParams.get('u')
+      if (encoded) {
+        const decoded = Buffer.from(encoded.replace(/^a1/, ''), 'base64').toString('utf8')
+        if (/^https?:\\/\\//i.test(decoded)) url = new URL(decoded)
+      }
+    }
+    return url.href
+  } catch { return null }
 }
 
-async function searchResults(page, subject, topic) {
+async function searchResults(browser, subject, topic) {
   const found = new Set()
+  const diagnostics = {}
   const queries = queriesFor(subject, topic)
-  const unwrap = href => {
-    try {
-      const url = new URL(href)
-      if (url.hostname === 'www.google.com' && url.pathname === '/url') return url.searchParams.get('q') || url.searchParams.get('url')
-      if (url.hostname.endsWith('duckduckgo.com')) return url.searchParams.get('uddg')
-      if (url.hostname.endsWith('bing.com') && url.pathname === '/ck/a') return url.searchParams.get('u') ? Buffer.from(url.searchParams.get('u').replace(/^a1/, ''), 'base64').toString('utf8') : null
-      return href
-    } catch { return null }
-  }
-  const collect = async (url, selector) => {
-    try {
-      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 25000 })
-      await sleep(500)
-      const hrefs = await page.locator(selector).evaluateAll(nodes => nodes.map(node => node.href).filter(Boolean))
-      for (const href of hrefs) {
-        const target = unwrap(href)
-        const approved = target && allowedUrl(target)
-        if (approved) found.add(approved)
+  const providers = [
+    { name: 'Google', url: q => 'https://www.google.com/search?udm=14&q=' + encodeURIComponent(q), selector: 'a[href]' },
+    { name: 'Bing', url: q => 'https://www.bing.com/search?q=' + encodeURIComponent(q), selector: 'li.b_algo a[href], #b_results a[href]' },
+    { name: 'DuckDuckGo', url: q => 'https://html.duckduckgo.com/html/?q=' + encodeURIComponent(q), selector: 'a.result__a, .result__body a[href]' },
+    { name: 'Brave', url: q => 'https://search.brave.com/search?q=' + encodeURIComponent(q), selector: 'a[href]' },
+    { name: 'Yahoo', url: q => 'https://search.yahoo.com/search?p=' + encodeURIComponent(q), selector: 'a[href]' },
+  ]
+  for (let qi = 0; qi < queries.length; qi++) {
+    for (const provider of providers) {
+      if (found.size >= 24) break
+      let page
+      try {
+        page = await browser.newPage()
+        await page.goto(provider.url(queries[qi]), { waitUntil: 'domcontentloaded', timeout: 12000 })
+        await page.waitForTimeout(450)
+        const result = await page.locator('a[href]').evaluateAll((nodes, selector) => {
+          const selected = [...document.querySelectorAll(selector)]
+          return {
+            title: document.title || '',
+            url: location.href,
+            body: (document.body?.innerText || '').slice(0, 500),
+            anchors: nodes.length,
+            selected: selected.map(node => ({ href: node.href, text: (node.innerText || node.getAttribute('aria-label') || '').trim().slice(0, 180) })).filter(item => item.href),
+          }
+        }, provider.selector)
+        const raw = result.selected.length
+        let accepted = 0
+        for (const item of result.selected) {
+          const target = unwrapSearchHref(item.href)
+          const approved = target && allowedUrl(target)
+          if (approved) { found.add(approved); accepted++ }
+        }
+        const key = provider.name
+        diagnostics[key] ||= { attempts: 0, rawLinks: 0, approvedLinks: 0, errors: 0, lastTitle: '' }
+        diagnostics[key].attempts++
+        diagnostics[key].rawLinks += raw
+        diagnostics[key].approvedLinks += accepted
+        diagnostics[key].lastTitle = result.title
+      } catch (error) {
+        diagnostics[provider.name] ||= { attempts: 0, rawLinks: 0, approvedLinks: 0, errors: 0, lastTitle: '' }
+        diagnostics[provider.name].attempts++
+        diagnostics[provider.name].errors++
+        console.warn(provider.name + ' search error: ' + String(error.message).slice(0, 180))
+      } finally {
+        if (page) await page.close().catch(() => {})
       }
-    } catch (error) {
-      console.warn('Search provider error: ' + error.message.slice(0, 160))
     }
   }
-  for (const query of queries) {
-    const q = encodeURIComponent(query)
-    await collect('https://www.google.com/search?udm=14&q=' + q, 'a[href]')
-    if (found.size < 6) await collect('https://www.bing.com/search?q=' + q, 'li.b_algo h2 a')
-    if (found.size < 6) await collect('https://html.duckduckgo.com/html/?q=' + q, 'a.result__a')
-    if (found.size >= 20) break
-  }
-  console.log('Search diagnostics [' + subject.name + ' / ' + topic.name + ']: ' + queries.length + ' queries across Google, Bing and DuckDuckGo, ' + found.size + ' approved-domain candidate URLs.')
+  console.log('Search diagnostics [' + subject.name + ' / ' + topic.name + ']: ' + JSON.stringify({
+    queries: queries.length, approvedCandidates: found.size, providers: diagnostics,
+  }))
   return [...found].slice(0, 24)
 }
 
@@ -214,14 +241,13 @@ async function main() {
     return
   }
   const browser = await chromium.launch({ headless: true })
-  const searchPage = await browser.newPage()
   const acquired = []
   const totals = { candidates: 0, rejectedLicence: 0, rejectedShort: 0, rejectedOther: 0, rejectedIrrelevant: 0 }
   try {
     for (const topic of gaps) {
       if (acquired.length >= MAX_TOPICS) break
       console.log('Searching: ' + topic.subject.name + ' / ' + topic.name)
-      const urls = await searchResults(searchPage, topic.subject, topic)
+      const urls = await searchResults(browser, topic.subject, topic)
       totals.candidates += urls.length
       const accepted = []
       const rejections = {}
@@ -267,7 +293,6 @@ async function main() {
       console.log('Qualified ' + topic.name + ': ' + accepted.length + ' source(s), ' + accepted.reduce((sum, source) => sum + source.word_count, 0) + ' source words.')
     }
   } finally {
-    await searchPage.close()
     await browser.close()
   }
   console.log('Run diagnostics: ' + JSON.stringify(totals))
