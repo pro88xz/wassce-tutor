@@ -56,7 +56,7 @@ function SubjectHubPage() {
   const { subject, groups, topicCount, lessonCount, minutes, related } = hub
   const { palette } = subjectTheme(subject.slug)
   return (
-    <article className="mx-auto max-w-3xl space-y-10 pb-12">
+    <article className="app-page mx-auto w-full max-w-6xl space-y-10 pb-12">
       <Breadcrumbs trail={trail(hub)} />
 
       <header className="space-y-4">
