@@ -44,7 +44,7 @@ function AccountPage() {
 
   if (!user) {
     return (
-      <div className="mx-auto max-w-2xl pt-6">
+      <div className="app-page mx-auto w-full max-w-5xl pt-6">
         <EmptyState
           title="Sign in to see your account"
           body="Your profile, plan and settings appear here once you're signed in."
@@ -60,7 +60,7 @@ function AccountPage() {
   }
 
   return (
-    <div className="mx-auto max-w-2xl space-y-5">
+    <div className="app-page mx-auto w-full max-w-5xl space-y-5">
       <PageHeader title="Account" subtitle="Your profile, plan and settings." />
       {isLoading || !profile ? (
         <div className="space-y-5" aria-busy="true">
