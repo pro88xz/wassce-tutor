@@ -41,19 +41,34 @@ async function curriculumGaps() {
 
 async function searchResults(page, subject, topic) {
   const query = encodeURIComponent('"' + topic.name + '" ' + subject.name + ' (site:openstax.org OR site:en.wikibooks.org OR site:siyavula.com)')
-  const searchUrl = 'https://www.google.com/search?q=' + query
-  await page.goto(searchUrl, { waitUntil: 'domcontentloaded', timeout: 25000 })
-  await page.waitForTimeout(1200)
-  const links = await page.locator('a[href]').evaluateAll(els => els.map(a => a.href))
-  const seen = new Set()
-  return links.map(href => {
-    try { const u = new URL(href); if (u.hostname === 'www.google.com' && u.pathname === '/url') return u.searchParams.get('q') || u.searchParams.get('url'); } catch {}
-    return href;
-  }).map(safeUrl).filter(url => {
-    if (!url || seen.has(url)) return false
-    seen.add(url)
-    return true
-  }).slice(0, 18)
+  const searchTargets = [
+    { url: 'https://www.google.com/search?q=' + query, selector: 'a[href]' },
+    { url: 'https://html.duckduckgo.com/html/?q=' + query, selector: 'a.result__a' },
+  ]
+  for (const target of searchTargets) {
+    try {
+      await page.goto(target.url, { waitUntil: 'domcontentloaded', timeout: 25000 })
+      await page.waitForTimeout(900)
+      const links = await page.locator(target.selector).evaluateAll(els => els.map(a => a.href))
+      const seen = new Set()
+      const accepted = links.map(href => {
+        try {
+          const u = new URL(href)
+          if (u.hostname === 'www.google.com' && u.pathname === '/url') return u.searchParams.get('q') || u.searchParams.get('url')
+          if (u.hostname.endsWith('duckduckgo.com')) return u.searchParams.get('uddg')
+        } catch {}
+        return href
+      }).map(safeUrl).filter(url => {
+        if (!url || seen.has(url)) return false
+        seen.add(url)
+        return true
+      })
+      if (accepted.length) return accepted.slice(0, 18)
+    } catch (error) {
+      console.warn('Search provider unavailable: ' + target.url + ' — ' + error.message)
+    }
+  }
+  return []
 }
 
 async function extractSource(browser, url) {
