@@ -1,7 +1,8 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { privateHead } from '@/lib/seo'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
+import { useAuth } from '@/lib/auth'
 import { CircleCheck, GraduationCap } from 'lucide-react'
 
 export const Route = createFileRoute('/auth')({
@@ -11,16 +12,26 @@ export const Route = createFileRoute('/auth')({
 
 function AuthPage() {
   const navigate = useNavigate()
+  const { user } = useAuth()
+  const params = new URLSearchParams(window.location.search)
+  const intent = params.get('intent') === 'tutor' ? 'tutor' : params.get('intent') === 'affiliate' ? 'affiliate' : 'student'
+  const requestedNext = params.get('next') ?? ''
+  const destination = intent === 'tutor' ? '/tutor-dashboard' : intent === 'affiliate' ? '/affiliate-dashboard' : ['/onboarding','/subjects','/practice','/progress','/account','/'].includes(requestedNext) ? requestedNext : '/'
   const [mode, setMode] = useState<'signin' | 'signup' | 'forgot'>('signup')
   const [resetSent, setResetSent] = useState(false)
+  const [confirmationSent, setConfirmationSent] = useState(false)
   const [fullName, setFullName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
 
+  useEffect(() => {
+    if (user) navigate({ to: destination as '/' | '/tutor-dashboard' | '/affiliate-dashboard' | '/onboarding' | '/subjects' | '/practice' | '/progress' | '/account' })
+  }, [user, destination, navigate])
+
   const handleSubmit = async () => {
-    const referralCode = new URLSearchParams(window.location.search).get('ref')?.trim().toUpperCase() ?? ''
+    const referralCode = params.get('ref')?.trim().toUpperCase() ?? ''
     setError(null)
     setLoading(true)
     try {
@@ -31,18 +42,25 @@ function AuthPage() {
         if (error) throw error
         setResetSent(true)
       } else if (mode === 'signup') {
-        const { error } = await supabase.auth.signUp({
+        const { data, error } = await supabase.auth.signUp({
           email,
           password,
-          options: { data: { full_name: fullName, ...(referralCode ? { affiliate_code: referralCode } : {}) } },
+          options: {
+            emailRedirectTo: `${window.location.origin}/auth?intent=${intent}${referralCode ? `&ref=${encodeURIComponent(referralCode)}` : ''}`,
+            data: { full_name: fullName.trim(), account_intent: intent, ...(referralCode ? { affiliate_code: referralCode } : {}) },
+          },
         })
         if (error) throw error
-        navigate({ to: '/' })
+        if (data.session) navigate({ to: destination as '/tutor-dashboard' | '/affiliate-dashboard' | '/' })
+        else setConfirmationSent(true)
       } else {
         const { error } = await supabase.auth.signInWithPassword({ email, password })
         if (error) throw error
-        if (referralCode) await supabase.rpc('claim_affiliate_referral', { p_code: referralCode })
-        navigate({ to: '/' })
+        if (referralCode) {
+          const { error: referralError } = await supabase.rpc('claim_affiliate_referral', { p_code: referralCode })
+          if (referralError && !/already|before first payment/i.test(referralError.message)) throw referralError
+        }
+        navigate({ to: destination as '/tutor-dashboard' | '/affiliate-dashboard' | '/' })
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong')
@@ -55,6 +73,7 @@ function AuthPage() {
     setMode(next)
     setError(null)
     setResetSent(false)
+    setConfirmationSent(false)
   }
   const field = 'h-12 w-full rounded-xl border bg-background px-4 text-base outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20'
 
@@ -67,14 +86,14 @@ function AuthPage() {
           </a>
           <div className="space-y-1">
             <h1 className="text-3xl font-bold tracking-tight">
-              {mode === 'signup' ? 'Create your free account' : mode === 'forgot' ? 'Reset your password' : 'Welcome back'}
+              {mode === 'signup' ? (intent === 'tutor' ? 'Create your tutor account' : intent === 'affiliate' ? 'Create your affiliate account' : 'Create your free account') : mode === 'forgot' ? 'Reset your password' : 'Welcome back'}
             </h1>
             <p className="text-sm text-muted-foreground">
               {mode === 'signup'
-                ? 'Free to start, no card needed. Unlock everything later from 10 NLe.'
+                ? intent === 'tutor' ? 'Create your account and continue to your tutor workspace.' : intent === 'affiliate' ? 'Create your account and continue to your affiliate workspace.' : 'Free to start, no card needed. Unlock everything later from 10 NLe.'
                 : mode === 'forgot'
                   ? "Enter your email and we'll send you a reset link."
-                  : 'Sign in to keep studying.'}
+                  : intent === 'tutor' ? 'Sign in to continue to your tutor workspace.' : intent === 'affiliate' ? 'Sign in to continue to your affiliate workspace.' : 'Sign in to keep studying.'}
             </p>
           </div>
         </div>
@@ -135,6 +154,11 @@ function AuthPage() {
           )}
 
           {error && <p role="alert" className="rounded-xl bg-red-500/10 px-3 py-2 text-sm text-red-700 dark:text-red-400">{error}</p>}
+          {confirmationSent && (
+            <p role="status" className="rounded-xl bg-emerald-500/10 px-3 py-2 text-sm text-emerald-700 dark:text-emerald-400">
+              Account created. Check your email to verify your address. After verification, you will be taken to your {intent === 'tutor' ? 'tutor' : intent === 'affiliate' ? 'affiliate' : 'student'} workspace.
+            </p>
+          )}
           {resetSent && (
             <p className="rounded-xl bg-emerald-500/10 px-3 py-2 text-sm text-emerald-700 dark:text-emerald-400">
               Check your email for a password reset link.
