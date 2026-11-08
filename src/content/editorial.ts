@@ -39,6 +39,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     image: 'https://usl.edu.sl/assets/images/bg.jpeg',
     imageAlt: 'University of Sierra Leone campus imagery from its official website',
     imageCredit: 'University of Sierra Leone — official website',
+    imageSourceUrl: 'https://usl.edu.sl/',
     officialUrl: 'https://usl.edu.sl/',
     admissionsUrl: 'https://admissions.usl.edu.sl/university-entry-requirements',
     applicationUrl: 'https://admissions.usl.edu.sl/',
@@ -81,6 +82,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     image: 'https://njala.edu.sl/sites/default/files/Njala_Congregation_2026_Slider.jpg',
     imageAlt: 'Njala University congregation, official university photograph',
     imageCredit: 'Njala University — official website',
+    imageSourceUrl: 'https://njala.edu.sl/',
     officialUrl: 'https://njala.edu.sl/',
     admissionsUrl: 'https://njala.edu.sl/admissions/undergraduate-admissions',
     applicationUrl: 'https://misnjala.edu.sl/apply',
@@ -123,6 +125,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     image: 'https://i.ibb.co/5m2JBwZ/IMG-0243.jpg',
     imageAlt: 'Students engaged in research, as shown on the official ETU-SL website',
     imageCredit: 'Eastern Technical University of Sierra Leone — official website',
+    imageSourceUrl: 'https://etusl.edu.sl/',
     officialUrl: 'https://etusl.edu.sl/',
     admissionsUrl: 'https://etusl.edu.sl/',
     applicationUrl: 'https://app.etusl.edu.sl/',
@@ -208,6 +211,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     image: 'https://ebkustsl.edu.sl/api/media/file/-ebkust-hosts-us-led-research-on-ai-2-768x576.jpg',
     imageAlt: 'EBKUST research activity featured on the university’s official website',
     imageCredit: 'Ernest Bai Koroma University of Science and Technology — official website',
+    imageSourceUrl: 'https://ebkustsl.edu.sl/',
     officialUrl: 'https://ebkustsl.edu.sl/',
     admissionsUrl: 'https://ebkustsl.edu.sl/admissions/admission-requirement/undergraduate',
     applicationUrl: 'https://app.ebkustsl.edu.sl/',
@@ -324,6 +328,7 @@ export type BlogPost = {
   image: string
   imageAlt: string
   imageCredit: string
+  imageSourceUrl: string
   intro: string
   sections: EditorialSection[]
   sources: EditorialSource[]
