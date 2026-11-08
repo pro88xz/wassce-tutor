@@ -186,8 +186,7 @@ function SectionTitle({ eyebrow, title, body }: { eyebrow: string; title: string
  * colour keeps the link to the subject.
  */
 function PopularTopics({ data }: { data: LandingData }) {
-  const [featured, ...topics] = data.popular
-  if (!featured) return null
+  if (data.popular.length === 0) return null
 
   const renderImage = (subjectSlug: string, topicSlug: string, compact = false) => {
     const photo = topicPhoto(subjectSlug, topicSlug)
