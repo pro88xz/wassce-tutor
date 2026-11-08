@@ -144,7 +144,6 @@ export function SubjectShowcase({ subjects }: { subjects: SubjectSummary[] }) {
         const roleOf = (s: SubjectSummary) => s.faculties.find((x) => x.faculty.id === f.id)?.role as Role | undefined
         const inFaculty = subjects.filter((s) => roleOf(s))
         const byLessons = (a: SubjectSummary, b: SubjectSummary) => b.lessonCount - a.lessonCount || b.topicCount - a.topicCount
-        const core = inFaculty.filter((s) => roleOf(s) === 'core').sort(byLessons)
         const main = inFaculty.filter((s) => roleOf(s) === 'faculty').sort(byLessons)
         const electives = inFaculty.filter((s) => roleOf(s) === 'elective').sort(byLessons)
         return (
