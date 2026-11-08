@@ -5,12 +5,14 @@ import { BrandMark } from '@/components/BrandMark'
 import { useAuth } from '@/lib/auth'
 
 const isPublicPath = (p: string) =>
-  ['/', '/about', '/contact', '/privacy', '/terms'].includes(p) || p === '/wassce' || p.startsWith('/wassce/') || p === '/tutors' || p.startsWith('/tutors/') || p === '/affiliate' || p === '/become-a-tutor'
+  ['/', '/about', '/contact', '/privacy', '/terms'].includes(p) || p === '/wassce' || p.startsWith('/wassce/') || p === '/tutors' || p.startsWith('/tutors/') || p === '/affiliate' || p === '/become-a-tutor' || p === '/blog' || p.startsWith('/blog/') || p === '/universities' || p.startsWith('/universities/')
 
 const NAV = [
   { label: 'Subjects', href: '/wassce/subjects' },
   { label: 'WASSCE guide', href: '/wassce' },
   { label: 'Book a tutor', href: '/tutors' },
+  { label: 'Universities', href: '/universities' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Plans', href: '/#plans' },
   { label: 'About', href: '/about' },
 ]
