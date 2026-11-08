@@ -254,7 +254,7 @@ begin
 end $$;
 
 create or replace function public.update_tutor_profile(p_bio text,p_location text,p_teaching_mode text)
-returns void language plpgsql security definer set search_path=public,auth as $
+returns void language plpgsql security definer set search_path=public,auth as $$
 begin
  if auth.uid() is null then raise exception 'Sign in required'; end if;
  if length(trim(p_bio)) not between 80 and 2000 or length(trim(p_location)) not between 2 and 120 or p_teaching_mode not in ('online','in_person','both') then raise exception 'Invalid tutor profile details'; end if;
@@ -389,7 +389,7 @@ begin
 end $$;
 
 create or replace function public.review_affiliate_commission(p_commission_id uuid,p_decision text)
-returns void language plpgsql security definer set search_path=public,auth as $
+returns void language plpgsql security definer set search_path=public,auth as $$
 begin
  if not exists(select 1 from profiles where id=auth.uid() and is_admin=true) then raise exception 'Not authorised'; end if;
  if p_decision not in ('approved','reversed') then raise exception 'Invalid decision'; end if;
