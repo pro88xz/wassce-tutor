@@ -72,7 +72,7 @@ function TutorDashboard() {
     try {
       const {error:rpcError}=await supabase.rpc('update_tutor_booking',{p_booking_id:id,p_status:status,p_reason:null})
       if(rpcError) throw rpcError
-      await supabase.functions.invoke('send-notification-email',{body:{entity_id:id}})
+      await supabase.functions.invoke('send-notification-email',{body:{entity_id:id,event_type:`booking_${status}`}})
       setMessage(`Booking ${status.replace('_',' ')}.`)
       await load()
     } catch(err) {setError(err instanceof Error?err.message:'Could not update booking.')}
@@ -94,7 +94,7 @@ function TutorDashboard() {
     try {
       const {error:rpcError}=await supabase.rpc('review_tutor_application',{p_application_id:id,p_decision:decision,p_note:null})
       if(rpcError) throw rpcError
-      await supabase.functions.invoke('send-notification-email',{body:{entity_id:id}})
+      if(decision!=='under_review') await supabase.functions.invoke('send-notification-email',{body:{entity_id:id,event_type:decision==='approved'?'tutor_approved':'tutor_rejected'}})
       setMessage(`Application ${decision}.`)
       await load()
     } catch(err) {setError(err instanceof Error?err.message:'Could not review application.')}
