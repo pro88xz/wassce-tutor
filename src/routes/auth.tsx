@@ -41,6 +41,7 @@ function AuthPage() {
       } else {
         const { error } = await supabase.auth.signInWithPassword({ email, password })
         if (error) throw error
+        if (referralCode) await supabase.rpc('claim_affiliate_referral', { p_code: referralCode })
         navigate({ to: '/' })
       }
     } catch (err) {
