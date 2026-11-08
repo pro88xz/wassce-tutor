@@ -13,7 +13,7 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/(auth|subjects|tutor|become-a-tutor|tutor-dashboard|affiliate|profile|account|practice|progress|onboarding|subscribe|reset-password|admin)",
+      "source": "/(auth|subjects|tutor|become-a-tutor|tutor-dashboard|affiliate|affiliate-dashboard|profile|account|practice|progress|onboarding|subscribe|reset-password|admin)",
       "destination": "/_shell"
     },
     {
