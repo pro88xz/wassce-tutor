@@ -37,6 +37,13 @@ export function StudentTutorBookings({ userId }: { userId: string }) {
 
   useEffect(() => { void load() }, [load])
 
+  useEffect(() => {
+    const channel = supabase.channel(`student-tutor-bookings-${userId}`)
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'user_notifications', filter: `recipient_id=eq.${userId}` }, () => { void load() })
+      .subscribe()
+    return () => { void supabase.removeChannel(channel) }
+  }, [userId, load])
+
   const update = async (id: string, status: 'confirmed' | 'cancelled') => {
     setBusyId(id); setError(null); setNotice(null)
     try {
