@@ -13,6 +13,7 @@ export type UniversityGuide = {
   seoTitle: string
   location: string
   summary: string
+  entrySummary: string
   image: string
   imageAlt: string
   imageCredit: string
@@ -38,6 +39,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     seoTitle: 'USL Admissions & WASSCE Requirements | WASSCE Tutor',
     location: 'Freetown, Western Area',
     summary: 'A public university system comprising Fourah Bay College (FBC), the Institute of Public Administration and Management (IPAM), the College of Medicine and Allied Health Sciences (COMAHS), and postgraduate studies.',
+    entrySummary: 'Degree: 5 credits in up to 2 sittings, including at least C6 English; faculty rules apply.',
     image: 'https://usl.edu.sl/assets/images/bg.jpeg',
     imageAlt: 'University of Sierra Leone campus imagery from its official website',
     imageCredit: 'University of Sierra Leone — official website',
@@ -81,6 +83,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     seoTitle: 'Njala University Admissions & Requirements | WASSCE Tutor',
     location: 'Njala and Bo, with additional teaching locations',
     summary: 'A public university with undergraduate and postgraduate study across agriculture, basic sciences, environmental sciences, natural resources, technology, veterinary medicine, public health, nursing, medicine and education.',
+    entrySummary: 'Degree: 5 WASSCE credits including English, in up to 2 sittings; school and department rules apply.',
     image: 'https://njala.edu.sl/sites/default/files/Njala_Congregation_2026_Slider.jpg',
     imageAlt: 'Njala University congregation, official university photograph',
     imageCredit: 'Njala University — official website',
@@ -124,6 +127,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     seoTitle: 'ETU-SL Admissions & Requirements | WASSCE Tutor',
     location: 'Kenema, with campuses and teaching locations across the Eastern Province',
     summary: 'A multi-campus technical university offering engineering, computing, applied sciences, vocational and skills development, health, agriculture and natural-resource programmes.',
+    entrySummary: 'Degree: 5 credits including English, in up to 2 sittings; department-specific requirements apply.',
     image: 'https://i.ibb.co/5m2JBwZ/IMG-0243.jpg',
     imageAlt: 'Students engaged in research, as shown on the official ETU-SL website',
     imageCredit: 'Eastern Technical University of Sierra Leone — official website',
@@ -166,6 +170,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     seoTitle: 'MMTU Admissions & Requirements | WASSCE Tutor',
     location: 'Goderich, Congo Cross and Brookfields, Freetown',
     summary: 'A technical university with programmes across education, engineering, science, business, hospitality, tourism, nutrition and vocational training, delivered across three Freetown campuses.',
+    entrySummary: 'Varies by award: BSc/BSc Ed/BTech generally 5 credits including Mathematics and English.',
     image: 'https://www.mmtu.edu.sl/images/Goderichimage.jpeg',
     imageAlt: 'Goderich campus of Milton Margai Technical University, official university photograph',
     imageCredit: 'Milton Margai Technical University — official website',
@@ -211,6 +216,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     seoTitle: 'EBKUST Admissions & Requirements | WASSCE Tutor',
     location: 'Makeni and other university locations',
     summary: 'A science- and technology-focused public university with programmes spanning agriculture and natural resources, basic and health sciences, and other applied disciplines.',
+    entrySummary: 'Programme-specific: science and agriculture courses set required English, Mathematics and subject combinations.',
     image: 'https://ebkustsl.edu.sl/api/media/file/-ebkust-hosts-us-led-research-on-ai-2-768x576.jpg',
     imageAlt: 'EBKUST research activity featured on the university’s official website',
     imageCredit: 'Ernest Bai Koroma University of Science and Technology — official website',
@@ -253,7 +259,8 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     shortName: 'UNIMAK',
     seoTitle: 'University of Makeni Admissions & Requirements | WASSCE Tutor',
     location: 'Makeni, Northern Province',
-    summary: 'A private university in Makeni with academic programmes across several disciplines. Applicants should confirm the current programme catalogue and admissions requirements directly with the Registry.',
+    summary: 'A university in Makeni with academic programmes across several disciplines. Applicants should confirm the current programme catalogue and admissions requirements directly with the Registry.',
+    entrySummary: 'Older published reference: 5 credits including English for degree; 2026/27 rules unverified.',
     image: 'https://unimak.edu.sl/wp-content/uploads/2026/03/Convocation-3-1-2048x1365.jpeg',
     imageAlt: 'University of Makeni convocation ceremony, official university photograph',
     imageCredit: 'University of Makeni — official website',
@@ -291,6 +298,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     seoTitle: 'Limkokwing Sierra Leone Admissions | WASSCE Tutor',
     location: 'Freetown',
     summary: 'The university’s official international website describes its Freetown campus and lists study areas including tourism management, entrepreneurship and international business.',
+    entrySummary: 'Current Sierra Leone WASSCE entry schedule not found in the official source retrieved.',
     image: 'https://www.limkokwing.com/photos/shares/img/sierra_leone2.jpg',
     imageAlt: 'Limkokwing University Sierra Leone campus imagery from the university’s official website',
     imageCredit: 'Limkokwing University — official international website',
