@@ -83,7 +83,7 @@ function BecomeTutor() {
   }
 
   if (authLoading) return <div className="mx-auto h-64 max-w-3xl animate-pulse rounded-3xl bg-muted"/>
-  if (!user) return <div className="mx-auto max-w-lg rounded-3xl border bg-card p-8 text-center"><GraduationCap className="mx-auto h-10 w-10 text-primary"/><h1 className="mt-3 text-2xl font-bold">Become a WASSCE Tutor</h1><p className="mt-2 text-sm text-muted-foreground">Sign in or create an account to start your tutor application.</p><Link to="/auth" className="mt-5 inline-flex min-h-11 items-center rounded-xl bg-primary px-5 font-semibold text-primary-foreground">Continue to sign in</Link></div>
+  if (!user) return <div className="mx-auto max-w-lg rounded-3xl border bg-card p-8 text-center"><GraduationCap className="mx-auto h-10 w-10 text-primary"/><h1 className="mt-3 text-2xl font-bold">Become a WASSCE Tutor</h1><p className="mt-2 text-sm text-muted-foreground">Sign in or create an account to start your tutor application.</p><Link to="/auth" search={{ intent: "tutor" } as never} className="mt-5 inline-flex min-h-11 items-center rounded-xl bg-primary px-5 font-semibold text-primary-foreground">Continue to sign in</Link></div>
 
   return <div className="mx-auto w-full max-w-5xl space-y-8 pb-16">
     <Link to="/tutors" className="inline-flex min-h-10 items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-primary"><ArrowLeft className="h-4 w-4"/> Tutor marketplace</Link>
