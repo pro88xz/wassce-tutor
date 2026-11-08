@@ -117,7 +117,7 @@ function RootComponent() {
           <div className={`px-4 pt-4 sm:px-6 sm:pt-6 ${studentNav ? 'pb-28 lg:pb-12' : 'pb-12'}`}>
             {!roleWorkspace && <PublicHeader />}
             <Outlet />
-            {!roleWorkspace && <Footer />
+            {!roleWorkspace && <Footer />}
           </div>
         </main>
       </div>
