@@ -76,8 +76,8 @@ create table if not exists public.tutor_bookings (
   subject_id uuid not null references public.subjects(id) on delete restrict,
   starts_at timestamptz not null,
   duration_minutes smallint not null default 60 check (duration_minutes in (30,45,60,90,120)),
-  ends_at timestamptz generated always as (starts_at + make_interval(mins => duration_minutes)) stored,
-  booking_slot tstzrange generated always as (tstzrange(starts_at, starts_at + make_interval(mins => duration_minutes), '[)')) stored,
+  ends_at timestamptz not null,
+  booking_slot tstzrange generated always as (tstzrange(starts_at, ends_at, '[)')) stored,
   price_nle numeric(8,2) not null check (price_nle > 0 and price_nle <= 100),
   student_message text check (student_message is null or length(student_message) <= 1000),
   status text not null default 'requested' check (status in ('requested','accepted','confirmed','completed','declined','cancelled','reschedule_requested','no_show')),
@@ -87,6 +87,21 @@ create table if not exists public.tutor_bookings (
   exclude using gist (tutor_id with =, booking_slot with &&)
     where (status in ('requested','accepted','confirmed'))
 );
+
+-- Maintain the end timestamp in a trigger: timestamptz + interval is not
+-- IMMUTABLE across daylight-saving transitions, so it cannot be used in a
+-- stored generated column. The range itself is immutable over stored values.
+create or replace function public.set_tutor_booking_end_time()
+returns trigger language plpgsql set search_path=public as $
+begin
+  new.ends_at := new.starts_at + make_interval(mins => new.duration_minutes);
+  return new;
+end $;
+
+create trigger tutor_bookings_set_end_time
+before insert or update of starts_at, duration_minutes
+on public.tutor_bookings
+for each row execute function public.set_tutor_booking_end_time();
 
 create index if not exists tutor_bookings_student_idx on public.tutor_bookings(student_id, starts_at desc);
 create index if not exists tutor_bookings_tutor_idx on public.tutor_bookings(tutor_id, starts_at desc);
