@@ -584,8 +584,6 @@ export const BLOG_POSTS: BlogPost[] = [
 ]
 
 export const EDITORIAL_PUBLIC_PAGES = [
-  { path: '/blog', lastmod: '2026-11-08' },
-  { path: '/universities', lastmod: '2026-11-08' },
   ...BLOG_POSTS.map((post) => ({ path: `/blog/${post.slug}`, lastmod: post.updatedAt })),
   ...UNIVERSITY_GUIDES.map((university) => ({ path: `/universities/${university.slug}`, lastmod: university.updatedAt }))
 ]
