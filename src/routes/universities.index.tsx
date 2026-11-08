@@ -2,11 +2,19 @@ import { createFileRoute } from '@tanstack/react-router'
 import { ArrowRight, GraduationCap, MapPin } from 'lucide-react'
 import { UNIVERSITY_GUIDES } from '@/content/editorial'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
-import { publicHead } from '@/lib/seo'
+import { absoluteUrl, breadcrumbJsonLd, indexablePageTags } from '@/lib/seo'
 
 export const Route = createFileRoute('/universities/')({
   ssr: true,
-  head: publicHead('/universities'),
+  head: () => indexablePageTags({
+    path: '/universities',
+    title: 'Universities in Sierra Leone: Courses & WASSCE Entry Requirements',
+    description: 'Compare universities in Sierra Leone, explore programmes and WASSCE entry requirements, and follow official admissions links for each institution.',
+    jsonLd: [
+      { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Universities in Sierra Leone', url: absoluteUrl('/universities'), mainEntity: { '@type': 'ItemList', itemListElement: UNIVERSITY_GUIDES.map((u,i) => ({ '@type': 'ListItem', position: i+1, item: { '@type': 'CollegeOrUniversity', name: u.name, url: absoluteUrl(`/universities/${u.slug}`) } })) } },
+      breadcrumbJsonLd([['Home','/'],['Universities','/universities']])
+    ]
+  }),
   component: UniversityDirectoryPage,
 })
 
