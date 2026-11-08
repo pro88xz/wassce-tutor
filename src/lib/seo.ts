@@ -58,12 +58,12 @@ export const PUBLIC_PAGES = {
     lastmod: '2026-11-08',
   },
   '/blog': {
-    title: 'WASSCE Tutor Blog: WASSCE Advice & University Guides in Sierra Leone',
+    title: 'WASSCE Tutor Blog: Study & University Guides',
     description: 'Research-backed WASSCE study advice, Sierra Leone university admissions guides, subject planning and practical resources for students and families.',
     lastmod: '2026-11-08',
   },
   '/universities': {
-    title: 'Universities in Sierra Leone: Courses & WASSCE Entry Requirements',
+    title: 'Sierra Leone Universities: Courses & WASSCE Requirements',
     description: 'Compare universities in Sierra Leone, explore programmes and WASSCE entry requirements, and follow official admissions links for each institution.',
     lastmod: '2026-11-08',
   },
