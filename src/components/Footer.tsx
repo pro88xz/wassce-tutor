@@ -70,10 +70,10 @@ export function Footer() {
 
   return (
     <footer className="-mx-4 -mb-12 mt-16 overflow-hidden border-t border-white/10 bg-brand-deep text-white sm:-mx-6">
-      <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14">
-        <div className="grid gap-8 sm:grid-cols-4 lg:grid-cols-[1.7fr_repeat(4,1fr)]">
+      <div className="mx-auto w-full max-w-7xl px-5 py-12 sm:px-8 sm:py-16 lg:px-10">
+        <div className="grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-[minmax(260px,1.7fr)_repeat(4,minmax(0,1fr))] lg:gap-x-12">
           {/* Brand and contact: a full-width row on tablets, the first column on desktop */}
-          <div className="space-y-3 sm:col-span-4 lg:col-span-1">
+          <div className="space-y-4 sm:col-span-2 lg:col-span-1">
             <BrandMark />
             <p className="max-w-xs text-sm leading-relaxed text-white/70">
               WASSCE lessons, practice questions and an AI tutor, organised around the syllabus. Built in Freetown for Sierra Leone students.
@@ -101,9 +101,9 @@ export function Footer() {
 
           {/* Desktop columns */}
           {GROUPS.map((g) => (
-            <nav key={g.title} aria-label={g.title} className="hidden space-y-3 sm:block">
+            <nav key={g.title} aria-label={g.title} className="hidden space-y-4 sm:block">
               <p className="text-sm font-bold tracking-wide text-white">{g.title}</p>
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 {g.links.map((l) => (
                   <li key={l.label}>
                     <FooterAnchor link={l} className="text-sm text-white/65 transition-colors hover:text-white" />
@@ -133,7 +133,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 flex flex-col gap-3 border-t border-white/15 pt-6 text-xs text-white/55 sm:mt-10 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 flex flex-col gap-4 border-t border-white/15 pt-7 text-xs text-white/55 sm:mt-16 sm:flex-row sm:items-center sm:justify-between">
           <p>
             &copy; <span suppressHydrationWarning>{new Date().getFullYear()}</span> WASSCE Tutor. An independent study service, not affiliated with WAEC.
           </p>
