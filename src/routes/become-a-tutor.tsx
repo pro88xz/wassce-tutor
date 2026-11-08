@@ -1,4 +1,4 @@
-import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
+import { createFileRoute, Link } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
 import { ArrowLeft, CheckCircle2, FileUp, GraduationCap, ShieldCheck } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
@@ -17,7 +17,6 @@ const field = 'h-12 w-full rounded-xl border border-slate-200 bg-white px-3.5 te
 
 function BecomeTutor() {
   const { user, loading: authLoading } = useAuth()
-  const navigate = useNavigate()
   const [subjects, setSubjects] = useState<Subject[]>([])
   const [selected, setSelected] = useState<SelectedSubject[]>([])
   const [fullName, setFullName] = useState(user?.user_metadata?.full_name ?? '')
