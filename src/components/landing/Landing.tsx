@@ -158,7 +158,7 @@ function TrustStrip() {
     { title: 'Independent study platform', body: 'Not an official WAEC service or examination body.' },
   ]
   return (
-    <section aria-label="WASSCE Tutor at a glance" className="trust-strip relative z-10 mx-auto mt-5 mb-8 grid max-w-6xl grid-cols-2 overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-[0_18px_50px_-38px_rgba(20,20,40,.45)] lg:grid-cols-4">
+    <section aria-label="WASSCE Tutor at a glance" className="trust-strip relative mx-auto mt-7 mb-10 grid max-w-6xl grid-cols-2 gap-x-6 gap-y-5 px-5 sm:px-8 lg:grid-cols-4">
       {items.map((item) => (
         <div key={item.title} className="trust-strip-item flex min-h-[7.25rem] flex-col justify-center gap-1.5 px-4 py-4 sm:px-5">
           <span className="text-[11px] font-extrabold uppercase tracking-[.12em] text-primary">{item.title}</span>

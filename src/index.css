@@ -2153,3 +2153,14 @@ a.subject-directory-card:hover .subject-directory-action span { transform: trans
   .trust-strip-item:nth-child(even) { border-left: 1px solid #f1f2f6; }
   .trust-strip-item:first-child { border-left: 0; }
 }
+
+
+/* Trust statements are editorial proof points, not another row of cards. */
+.trust-strip { margin-top: 1.75rem; margin-bottom: 2.75rem; }
+.trust-strip-item { min-height: 0; padding: .85rem 0; border: 0; border-top: 1px solid #e5e7eb; }
+.trust-strip-item:nth-child(-n+2) { border-top: 0; }
+@media (min-width: 1024px) {
+ .trust-strip { margin-top: 2rem; margin-bottom: 3.25rem; }
+ .trust-strip-item, .trust-strip-item:nth-child(-n+2) { border-top: 0; }
+ .trust-strip-item + .trust-strip-item { border-left: 1px solid #e5e7eb; padding-left: 1.25rem; }
+}

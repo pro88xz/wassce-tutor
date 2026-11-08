@@ -117,7 +117,7 @@ export function SubjectShowcase({ subjects }: { subjects: SubjectSummary[] }) {
           </div>
           <span className="text-xs font-semibold text-muted-foreground">Shared across faculties</span>
         </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 [&>*]:min-w-0">
+        <div className="grid max-w-4xl grid-cols-1 gap-4 sm:grid-cols-2 [&>*]:min-w-0">
           {coreSubjects.map((s) => <FeatureCard key={s.id} s={s} />)}
         </div>
       </div>
