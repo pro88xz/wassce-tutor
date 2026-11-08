@@ -13,13 +13,13 @@ concurrency:
 jobs:
   apply-tutor-marketplace-migration:
     name: Apply the single reviewed tutor marketplace migration
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     environment: production
     if: github.ref == 'refs/heads/feature/tutor-affiliate-platform'
     steps:
       - name: Check out the selected feature branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Validate migration and database secret
         shell: bash
@@ -69,7 +69,7 @@ jobs:
           {
             echo "begin;"
             echo "do \$\$ begin if exists (select 1 from wassce_internal.deployed_migrations where version = '$MIGRATION_VERSION') then raise exception 'Migration already applied'; end if; end \$\$;"
-            sed '1{/^[[:space:]]*begin;[[:space:]]*$/Id;}; ${/^[[:space:]]*commit;[[:space:]]*$/Id;}' supabase/migrations/20261108_11_tutor_affiliate_marketplace.sql
+            sed '/^[[:space:]]*begin;[[:space:]]*$/Id; /^[[:space:]]*commit;[[:space:]]*$/Id;' supabase/migrations/20261108_11_tutor_affiliate_marketplace.sql
             printf "insert into wassce_internal.deployed_migrations(version, sha256) values ('%s', '%s');\n" "$MIGRATION_VERSION" "$CHECKSUM"
             echo "commit;"
           } | psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1
