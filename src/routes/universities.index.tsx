@@ -8,8 +8,9 @@ export const Route = createFileRoute('/universities/')({
   ssr: true,
   head: () => indexablePageTags({
     path: '/universities',
-    title: 'Universities in Sierra Leone: Courses & WASSCE Entry Requirements',
+    title: 'Sierra Leone Universities: Courses & WASSCE Requirements',
     description: 'Compare universities in Sierra Leone, explore programmes and WASSCE entry requirements, and follow official admissions links for each institution.',
+    image: UNIVERSITY_GUIDES[0].image,
     jsonLd: [
       { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Universities in Sierra Leone', url: absoluteUrl('/universities'), mainEntity: { '@type': 'ItemList', itemListElement: UNIVERSITY_GUIDES.map((u,i) => ({ '@type': 'ListItem', position: i+1, item: { '@type': 'CollegeOrUniversity', name: u.name, url: absoluteUrl(`/universities/${u.slug}`) } })) } },
       breadcrumbJsonLd([['Home','/'],['Universities','/universities']])
