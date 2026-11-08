@@ -1,12 +1,26 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
-const cors = {
-  "Access-Control-Allow-Origin": Deno.env.get("APP_ORIGIN") ?? "https://wasscetutor.com",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-  "Access-Control-Allow-Methods": "POST, OPTIONS",
-};
+const appOrigin = Deno.env.get("APP_ORIGIN") ?? "https://wasscetutor.com"
+const allowedOrigins = new Set([
+  appOrigin,
+  "https://wassce-tutor-git-feature-tutor-affiliate-platform-dev-bangs.vercel.app",
+  "capacitor://localhost",
+  "http://localhost",
+  "https://localhost",
+])
+const corsHeaders = (req: Request) => {
+  const requestOrigin = req.headers.get("Origin")
+  const allowedOrigin = requestOrigin && allowedOrigins.has(requestOrigin) ? requestOrigin : appOrigin
+  return {
+    "Access-Control-Allow-Origin": allowedOrigin,
+    "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Vary": "Origin",
+  }
+}
 
 Deno.serve(async (req) => {
+  const cors = corsHeaders(req)
   if (req.method === "OPTIONS") return new Response("ok", { headers: cors });
   if (req.method !== "POST") return Response.json({ error: "Method not allowed" }, { status: 405, headers: cors });
 
@@ -28,7 +42,8 @@ Deno.serve(async (req) => {
 
   const body = await req.json().catch(() => ({}));
   const entityId = typeof body.entity_id === "string" ? body.entity_id : "";
-  if (!entityId) return Response.json({ error: "entity_id is required" }, { status: 400, headers: cors });
+  const eventType = typeof body.event_type === "string" ? body.event_type : "";
+  if (!entityId || !eventType) return Response.json({ error: "entity_id and event_type are required" }, { status: 400, headers: cors });
 
   const admin = createClient(supabaseUrl, serviceKey, { auth: { persistSession: false, autoRefreshToken: false } });
   const { data: events, error: eventError } = await admin
@@ -36,6 +51,7 @@ Deno.serve(async (req) => {
     .select("id,recipient_id,title,body,event_type")
     .eq("actor_id", authData.user.id)
     .eq("entity_id", entityId)
+    .eq("event_type", eventType)
     .order("created_at", { ascending: false })
     .limit(5);
   if (eventError) return Response.json({ error: "Could not load notification" }, { status: 500, headers: cors });
