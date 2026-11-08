@@ -67,7 +67,7 @@ export const PUBLIC_PAGES = {
     description: 'Compare universities in Sierra Leone, explore programmes and WASSCE entry requirements, and follow official admissions links for each institution.',
     lastmod: '2026-11-08',
   },
-  '/affiliate': {
+  '/become-a-tutor': {\n    title: 'Become a WASSCE Tutor in Sierra Leone | Teach Online or In Person',\n    description: 'Apply to teach WASSCE students in Sierra Leone. Create a tutor profile, list your subjects and rates, and manage verified bookings in a dedicated tutor workspace.',\n    lastmod: '2026-11-08',\n  },\n  '/affiliate': {
     title: 'WASSCE Tutor Affiliate Programme | Earn from Student Referrals',
     description: 'Join the WASSCE Tutor affiliate programme. Share a tracked referral link and earn 50% of a referred student’s first verified subscription payment.',
     lastmod: '2026-11-08',
@@ -212,7 +212,7 @@ const PAGE_JSON_LD: Partial<Record<PublicPath, Record<string, unknown>[]>> = {
   '/about': [ABOUT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['About', '/about']])],
   '/contact': [CONTACT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['Contact', '/contact']])],
   '/tutors': [breadcrumbJsonLd([['Home', '/'], ['Tutors', '/tutors']])],
-  '/affiliate': [breadcrumbJsonLd([['Home', '/'], ['Affiliate programme', '/affiliate']])],
+  '/affiliate': [breadcrumbJsonLd([['Home', '/'], ['Affiliate programme', '/affiliate']])],\n  '/become-a-tutor': [breadcrumbJsonLd([['Home', '/'], ['Become a tutor', '/become-a-tutor']])],
   '/blog': [breadcrumbJsonLd([['Home', '/'], ['Blog', '/blog']])],
   '/universities': [breadcrumbJsonLd([['Home', '/'], ['Universities', '/universities']])],
 }
