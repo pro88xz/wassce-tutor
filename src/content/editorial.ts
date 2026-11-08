@@ -10,6 +10,7 @@ export type UniversityGuide = {
   slug: string
   name: string
   shortName: string
+  seoTitle: string
   location: string
   summary: string
   image: string
@@ -34,6 +35,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     slug: 'university-of-sierra-leone',
     name: 'University of Sierra Leone',
     shortName: 'USL',
+    seoTitle: 'USL Admissions & WASSCE Requirements | WASSCE Tutor',
     location: 'Freetown, Western Area',
     summary: 'A public university system comprising Fourah Bay College (FBC), the Institute of Public Administration and Management (IPAM), the College of Medicine and Allied Health Sciences (COMAHS), and postgraduate studies.',
     image: 'https://usl.edu.sl/assets/images/bg.jpeg',
@@ -76,6 +78,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     slug: 'njala-university',
     name: 'Njala University',
     shortName: 'Njala',
+    seoTitle: 'Njala University Admissions & Requirements | WASSCE Tutor',
     location: 'Njala and Bo, with additional teaching locations',
     summary: 'A public university with undergraduate and postgraduate study across agriculture, basic sciences, environmental sciences, natural resources, technology, veterinary medicine, public health, nursing, medicine and education.',
     image: 'https://njala.edu.sl/sites/default/files/Njala_Congregation_2026_Slider.jpg',
@@ -118,6 +121,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     slug: 'eastern-technical-university',
     name: 'Eastern Technical University of Sierra Leone',
     shortName: 'ETU-SL',
+    seoTitle: 'ETU-SL Admissions & Requirements | WASSCE Tutor',
     location: 'Kenema, with campuses and teaching locations across the Eastern Province',
     summary: 'A multi-campus technical university offering engineering, computing, applied sciences, vocational and skills development, health, agriculture and natural-resource programmes.',
     image: 'https://i.ibb.co/5m2JBwZ/IMG-0243.jpg',
@@ -159,6 +163,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     slug: 'milton-margai-technical-university',
     name: 'Milton Margai Technical University',
     shortName: 'MMTU',
+    seoTitle: 'MMTU Admissions & Requirements | WASSCE Tutor',
     location: 'Goderich, Congo Cross and Brookfields, Freetown',
     summary: 'A technical university with programmes across education, engineering, science, business, hospitality, tourism, nutrition and vocational training, delivered across three Freetown campuses.',
     image: 'https://www.mmtu.edu.sl/images/Goderichimage.jpeg',
@@ -203,6 +208,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     slug: 'ernest-bai-koroma-university',
     name: 'Ernest Bai Koroma University of Science and Technology',
     shortName: 'EBKUST',
+    seoTitle: 'EBKUST Admissions & Requirements | WASSCE Tutor',
     location: 'Makeni and other university locations',
     summary: 'A science- and technology-focused public university with programmes spanning agriculture and natural resources, basic and health sciences, and other applied disciplines.',
     image: 'https://ebkustsl.edu.sl/api/media/file/-ebkust-hosts-us-led-research-on-ai-2-768x576.jpg',
@@ -245,6 +251,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     slug: 'university-of-makeni',
     name: 'University of Makeni',
     shortName: 'UNIMAK',
+    seoTitle: 'University of Makeni Admissions & Requirements | WASSCE Tutor',
     location: 'Makeni, Northern Province',
     summary: 'A private university in Makeni with academic programmes across several disciplines. Applicants should confirm the current programme catalogue and admissions requirements directly with the Registry.',
     image: 'https://unimak.edu.sl/wp-content/uploads/2026/03/Convocation-3-1-2048x1365.jpeg',
@@ -281,6 +288,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     slug: 'limkokwing-university-sierra-leone',
     name: 'Limkokwing University of Creative Technology — Sierra Leone',
     shortName: 'Limkokwing',
+    seoTitle: 'Limkokwing Sierra Leone Admissions | WASSCE Tutor',
     location: 'Freetown',
     summary: 'The university’s official international website describes its Freetown campus and lists study areas including tourism management, entrepreneurship and international business.',
     image: 'https://www.limkokwing.com/photos/shares/img/sierra_leone2.jpg',
@@ -316,6 +324,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
 export type BlogPost = {
   slug: string
   title: string
+  seoTitle: string
   description: string
   category: string
   publishedAt: string
@@ -334,6 +343,7 @@ export type BlogPost = {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'sierra-leone-university-admission-requirements-2026-2027',
+    seoTitle: 'Sierra Leone University Entry Requirements 2026/27 | WASSCE Tutor',
     title: 'Sierra Leone University Admission Requirements for 2026/2027: A WASSCE Guide',
     description: 'Compare published 2026/2027 WASSCE entry requirements at USL, Njala, ETU-SL, MMTU and EBKUST, with application dates and official links.',
     category: 'University admissions',
@@ -405,6 +415,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'what-counts-as-a-wassce-credit-for-university-admission',
+    seoTitle: 'WASSCE Credit Grades for University Admission | WASSCE Tutor',
     title: 'What Counts as a WASSCE Credit in Sierra Leone? Grades, Sittings and Entry Rules',
     description: 'Understand A1–C6 credit grades, how universities count WASSCE sittings and why programme-specific subject requirements matter.',
     category: 'WASSCE results',
@@ -467,6 +478,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'how-to-choose-wassce-subjects-for-your-university-course',
+    seoTitle: 'Choose WASSCE Subjects for University | WASSCE Tutor',
     title: 'How to Choose WASSCE Subjects for Your University Course in Sierra Leone',
     description: 'Plan WASSCE subjects around real university entry requirements for engineering, health sciences, agriculture, computing, business and humanities.',
     category: 'Subject planning',
@@ -529,6 +541,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'sierra-leone-university-application-checklist',
+    seoTitle: 'Sierra Leone University Application Checklist | WASSCE Tutor',
     title: 'University Application Checklist for Sierra Leone Students: Documents, Fees and Safe Payments',
     description: 'Prepare your WASSCE certificate, identification, testimonial, photograph and payment evidence before applying to a Sierra Leone university.',
     category: 'Application advice',
