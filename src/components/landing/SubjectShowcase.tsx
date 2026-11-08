@@ -96,6 +96,7 @@ export function SubjectShowcase({ subjects }: { subjects: SubjectSummary[] }) {
     (a, b) => a.sort_order - b.sort_order,
   )
   const [active, setActive] = useState(faculties[0]?.id ?? '')
+  const coreSubjects = subjects.filter((s) => s.faculties.some((f) => f.role === 'core')).sort((a, b) => b.lessonCount - a.lessonCount || b.topicCount - a.topicCount)
 
   return (
     <section className="space-y-6" aria-labelledby="subjects-heading">
@@ -108,6 +109,19 @@ export function SubjectShowcase({ subjects }: { subjects: SubjectSummary[] }) {
       </div>
 
       {/* Tabs share one row while they fit; with a large phone text size they wrap rather than clip a label. */}
+      <div className="space-y-3">
+        <div className="flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h3 className="text-lg font-bold tracking-tight">Core subjects every candidate takes</h3>
+            <p className="text-sm text-muted-foreground">Start with English Language and Mathematics, then explore your faculty.</p>
+          </div>
+          <span className="text-xs font-semibold text-muted-foreground">Shared across faculties</span>
+        </div>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 [&>*]:min-w-0">
+          {coreSubjects.map((s) => <FeatureCard key={s.id} s={s} />)}
+        </div>
+      </div>
+
       <div role="tablist" aria-label="Faculties" className="mx-auto flex w-full max-w-lg flex-wrap gap-1 rounded-xl bg-muted p-1">
         {faculties.map((f) => (
           <button
@@ -136,14 +150,6 @@ export function SubjectShowcase({ subjects }: { subjects: SubjectSummary[] }) {
         return (
           // Every faculty is in the HTML (crawlable links); only the active one is shown.
           <div key={f.id} id={`faculty-${f.id}`} role="tabpanel" hidden={active !== f.id} className="space-y-8">
-            {core.length > 0 && (
-              <div className="space-y-3">
-                <h3 className="text-sm font-semibold text-muted-foreground">Core subjects</h3>
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 [&>*]:min-w-0">
-                  {core.map((s) => <FeatureCard key={s.id} s={s} />)}
-                </div>
-              </div>
-            )}
             {main.length > 0 && (
               <div className="space-y-3">
                 <h3 className="text-sm font-semibold text-muted-foreground">{f.name} subjects</h3>

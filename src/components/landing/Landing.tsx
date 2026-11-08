@@ -28,11 +28,11 @@ export function Landing({ data }: { data: LandingData }) {
     <>
       <Hero data={data} />
       <TrustStrip />
-      <div ref={root} className="mx-auto max-w-6xl space-y-20 px-4 sm:space-y-28 sm:px-6">
+      <div ref={root} className="mx-auto max-w-6xl space-y-16 px-4 sm:space-y-20 sm:px-6">
         <SubjectShowcase subjects={data.subjects} />
         {data.popular.length > 0 && <PopularTopics data={data} />}
         <ProductTour />
-        <LocalBand />
+        <LocalBand data={data} />
         <StartingPoint />
         <TutorTeaser />
         <GuideTeaser />
@@ -137,7 +137,7 @@ function TrustStrip() {
   const items = [
     { title: 'Built around WASSCE', body: 'Subjects and topics organised for the Sierra Leone syllabus.' },
     { title: 'Study on your phone', body: 'Use the website or install the Android app.' },
-    { title: 'Local payment options', body: 'Orange Money and AfriMoney for paid plans.' },
+    { title: 'USSD checkout', body: 'Complete a one-time payment from your phone. Access activates after verification.' },
     { title: 'Independent study platform', body: 'Not an official WAEC service or examination body.' },
   ]
   return (
@@ -266,33 +266,43 @@ function PopularTopics({ data }: { data: LandingData }) {
 /** Full-width deep band: local fit, told with photographs rather than small icons. */
 const FEATURES = [
   { img: 'feature-phone', alt: 'A student studying on her phone', icon: Smartphone, title: 'Built for your phone', body: 'Works in any phone browser and as an Android app, even on patchy data.' },
-  { img: 'feature-pay', alt: 'A customer paying with his phone at a shop', icon: Wallet, title: 'Pay the local way', body: 'Orange Money or AfriMoney. No card and no bank account needed.' },
+  { img: 'feature-pay', alt: 'A customer paying with his phone at a shop', icon: Wallet, title: 'Pay the local way', body: 'Choose a plan, complete the Monime USSD payment and receive access after verification.' },
   { img: 'feature-night', alt: 'A student studying by lamplight at night', icon: Moon, title: 'Reading mode for late nights', body: 'A warm, low-glare theme for studying after dark.' },
   { img: 'feature-syllabus', alt: 'A student writing notes from a textbook', icon: BookOpen, title: 'Written to the WASSCE syllabus', body: 'Topics follow the syllabus, grouped the way you will study them.' },
 ]
 
-function LocalBand() {
+function LocalBand({ data }: { data: LandingData }) {
   return (
     <section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen overflow-hidden bg-brand-deep text-white" aria-labelledby="local-heading">
       <div aria-hidden className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-primary/40 blur-3xl" />
-      <div className="relative mx-auto max-w-5xl px-4 py-14 sm:px-6 sm:py-20">
-        <div data-reveal className="max-w-xl space-y-2">
-          <p className="text-sm font-semibold text-[#ffd166]">Made in Freetown</p>
-          <h2 id="local-heading" className="text-[1.75rem] font-bold leading-tight tracking-tight text-balance sm:text-4xl">Built for studying in Sierra Leone</h2>
-          <p className="text-[15px] text-white/75">Made for the phones, payments and late nights of WASSCE students here.</p>
+      <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
+        <div className="grid items-end gap-7 lg:grid-cols-[minmax(0,1.15fr)_minmax(20rem,.85fr)] lg:gap-12">
+          <div data-reveal className="max-w-2xl space-y-3">
+            <p className="text-sm font-semibold text-[#ffd166]">Made in Freetown · Built for Sierra Leone</p>
+            <h2 id="local-heading" className="text-[2rem] font-bold leading-[1.04] tracking-tight text-balance sm:text-4xl lg:text-5xl">A WASSCE learning platform shaped around local students.</h2>
+            <p className="max-w-xl text-[15px] leading-relaxed text-white/75 sm:text-base">Study on the devices you use, follow the subjects you sit and pay through a phone-based checkout. The experience is designed around the realities of preparing for WASSCE in Sierra Leone.</p>
+          </div>
+          <div className="grid grid-cols-3 overflow-hidden rounded-2xl border border-white/15 bg-white/[0.06] backdrop-blur-sm">
+            {[[String(data.totals.subjects), 'subjects'], [String(data.totals.topics), 'syllabus topics'], [String(data.totals.lessons), 'published lessons']].map(([value, label]) => (
+              <div key={label} className="min-w-0 px-3 py-5 text-center sm:px-4 sm:py-6">
+                <p className="text-2xl font-bold tracking-tight tabular-nums text-white sm:text-3xl">{value}</p>
+                <p className="mt-1 text-[10px] font-medium leading-snug text-white/65 sm:text-xs">{label}</p>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="mt-8">
+        <div className="mt-9 sm:mt-12">
           <SwipeRow label="Features" count={FEATURES.length} grid="sm:grid-cols-2 lg:grid-cols-4">
             {FEATURES.map(({ img, alt, icon: Icon, title, body }, i) => (
               <div
                 key={title}
                 data-reveal={i}
-                className="group relative aspect-[4/5] w-[72%] shrink-0 snap-start overflow-hidden rounded-2xl bg-black/30 ring-1 ring-white/10 sm:w-auto"
+                className="group relative aspect-[5/4] w-[82%] shrink-0 snap-start overflow-hidden rounded-2xl bg-black/30 ring-1 ring-white/10 sm:aspect-[4/5] sm:w-auto"
               >
                 <img
                   src={`/img/home/${img}-400.webp`}
                   srcSet={`/img/home/${img}-400.webp 400w, /img/home/${img}.webp 800w`}
-                  sizes="(min-width: 1024px) 240px, (min-width: 640px) 50vw, 72vw"
+                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 82vw"
                   alt={alt}
                   loading="lazy"
                   decoding="async"
