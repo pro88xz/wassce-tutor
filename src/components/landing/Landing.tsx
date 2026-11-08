@@ -230,7 +230,7 @@ function PopularTopics({ data }: { data: LandingData }) {
           >
             <span className="popular-topic-image">
               {renderImage(t.subjectSlug, t.topicSlug, true)}
-              <span className="popular-topic-arrow"><ArrowRight className="h-4 w-4" aria-hidden /></span>
+              
             </span>
             <span className="popular-topic-copy">
               <span className="popular-topic-subject">{t.subjectName}</span>

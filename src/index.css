@@ -2177,9 +2177,10 @@ a.subject-directory-card:hover .subject-directory-action span { transform: trans
   padding: .15rem .1rem .85rem;
   scroll-snap-type: x mandatory;
   scroll-padding-inline: .1rem;
-  scrollbar-width: thin;
-  scrollbar-color: #c9c2df transparent;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+.popular-topic-rail::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .popular-topic-rail > .popular-topic-card {
   min-width: 0;
   height: 100%;
