@@ -214,7 +214,6 @@ alter table public.affiliate_attributions enable row level security;
 alter table public.affiliate_commissions enable row level security;
 alter table public.affiliate_payout_requests enable row level security;
 alter table public.user_notifications enable row level security;
-alter table public.tutor_booking_reviews enable row level security;
 
 create policy "Applicants read own applications" on public.tutor_applications for select to authenticated using (user_id = auth.uid() or exists(select 1 from public.profiles p where p.id=auth.uid() and p.is_admin));
 create policy "Applicants read own application subjects" on public.tutor_application_subjects for select to authenticated using (exists(select 1 from public.tutor_applications a where a.id=application_id and (a.user_id=auth.uid() or exists(select 1 from public.profiles p where p.id=auth.uid() and p.is_admin))));
@@ -226,7 +225,6 @@ create policy "Affiliate owner and admins read affiliate" on public.affiliates f
 create policy "Affiliate owner and admins read attributions" on public.affiliate_attributions for select to authenticated using (referred_user_id=auth.uid() or exists(select 1 from public.affiliates a where a.id=affiliate_id and a.user_id=auth.uid()) or exists(select 1 from public.profiles p where p.id=auth.uid() and p.is_admin));
 create policy "Affiliate owner and admins read commissions" on public.affiliate_commissions for select to authenticated using (exists(select 1 from public.affiliates a where a.id=affiliate_id and a.user_id=auth.uid()) or exists(select 1 from public.profiles p where p.id=auth.uid() and p.is_admin));
 create policy "Affiliate owner and admins read payouts" on public.affiliate_payout_requests for select to authenticated using (exists(select 1 from public.affiliates a where a.id=affiliate_id and a.user_id=auth.uid()) or exists(select 1 from public.profiles p where p.id=auth.uid() and p.is_admin));
-create policy "Public read tutor reviews" on public.tutor_booking_reviews for select to anon,authenticated using (true);
 create policy "Users read own notifications" on public.user_notifications for select to authenticated using (recipient_id=auth.uid());
 create policy "Users update own notification read state" on public.user_notifications for update to authenticated using (recipient_id=auth.uid()) with check (recipient_id=auth.uid());
 
