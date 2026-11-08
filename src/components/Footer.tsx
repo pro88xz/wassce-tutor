@@ -7,7 +7,7 @@ import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
 
 const SHOW_ON = ['/', '/about', '/contact', '/privacy', '/terms']
 const isPublicPage = (pathname: string) =>
-  SHOW_ON.includes(pathname) || pathname === '/affiliate' || pathname === '/become-a-tutor' || pathname === '/wassce' || pathname.startsWith('/wassce/') || pathname === '/tutors' || pathname.startsWith('/tutors/')
+  SHOW_ON.includes(pathname) || pathname === '/affiliate' || pathname === '/become-a-tutor' || pathname === '/wassce' || pathname.startsWith('/wassce/') || pathname === '/tutors' || pathname.startsWith('/tutors/') || pathname === '/blog' || pathname.startsWith('/blog/') || pathname === '/universities' || pathname.startsWith('/universities/')
 
 type FooterLink = { label: string; href: string }
 type Group = { title: string; links: FooterLink[] }
@@ -18,6 +18,8 @@ const GROUPS: Group[] = [
     title: 'Learn',
     links: [
       { label: 'WASSCE guide', href: '/wassce' },
+      { label: 'University directory', href: '/universities' },
+      { label: 'Editorial blog', href: '/blog' },
       { label: 'All subjects', href: '/wassce/subjects' },
       { label: 'English Language', href: '/wassce/english-language' },
       { label: 'Mathematics', href: '/wassce/mathematics' },
