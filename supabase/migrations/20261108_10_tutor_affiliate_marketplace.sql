@@ -82,7 +82,6 @@ create table if not exists public.tutor_bookings (
   cancellation_reason text,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
-  check (starts_at > now()),
   exclude using gist (tutor_id with =, booking_slot with &&)
     where (status in ('requested','accepted','confirmed'))
 );
@@ -254,6 +253,31 @@ begin
   end if;
 end $$;
 
+create or replace function public.update_tutor_profile(p_bio text,p_location text,p_teaching_mode text)
+returns void language plpgsql security definer set search_path=public,auth as $
+begin
+ if auth.uid() is null then raise exception 'Sign in required'; end if;
+ if length(trim(p_bio)) not between 80 and 2000 or length(trim(p_location)) not between 2 and 120 or p_teaching_mode not in ('online','in_person','both') then raise exception 'Invalid tutor profile details'; end if;
+ update tutors set bio=trim(p_bio),location=trim(p_location),teaching_mode=p_teaching_mode,updated_at=now()
+ where user_id=auth.uid() and status='active';
+ if not found then raise exception 'Approved tutor account required'; end if;
+end $;
+
+create or replace function public.update_tutor_subject_prices(p_subjects jsonb)
+returns void language plpgsql security definer set search_path=public,auth as $
+declare v_tutor uuid; v_item jsonb; v_subject uuid; v_price numeric;
+begin
+ select id into v_tutor from tutors where user_id=auth.uid() and status='active';
+ if v_tutor is null then raise exception 'Approved tutor account required'; end if;
+ if jsonb_typeof(p_subjects)<>'array' or jsonb_array_length(p_subjects)<1 or jsonb_array_length(p_subjects)>12 then raise exception 'Select between 1 and 12 subjects'; end if;
+ delete from tutor_subjects where tutor_id=v_tutor;
+ for v_item in select value from jsonb_array_elements(p_subjects) loop
+  v_subject := (v_item->>'subject_id')::uuid; v_price := (v_item->>'price_nle')::numeric;
+  if v_price<=0 or v_price>100 or not exists(select 1 from subjects where id=v_subject) then raise exception 'Invalid subject or rate'; end if;
+  insert into tutor_subjects(tutor_id,subject_id,price_nle) values(v_tutor,v_subject,v_price);
+ end loop;
+end $;
+
 create or replace function public.set_tutor_availability(p_slots jsonb)
 returns void language plpgsql security definer set search_path=public,auth as $$
 declare v_tutor uuid; v_slot jsonb; v_day integer; v_start time; v_end time;
@@ -296,7 +320,7 @@ create or replace function public.update_tutor_booking(p_booking_id uuid,p_statu
 returns void language plpgsql security definer set search_path=public,auth as $$
 declare v_booking tutor_bookings%rowtype; v_tutor_user uuid; v_recipient uuid;
 begin
- select b.*,t.user_id into v_booking,v_tutor_user from tutor_bookings b join tutors t on t.id=b.tutor_id where b.id=p_booking_id for update of b;
+ select b,t.user_id into v_booking,v_tutor_user from tutor_bookings b join tutors t on t.id=b.tutor_id where b.id=p_booking_id for update of b;
  if not found then raise exception 'Booking not found'; end if;
  if auth.uid()<>v_booking.student_id and auth.uid()<>v_tutor_user and not exists(select 1 from profiles where id=auth.uid() and is_admin=true) then raise exception 'Not authorised'; end if;
  if p_status not in ('accepted','confirmed','completed','declined','cancelled','reschedule_requested','no_show') then raise exception 'Invalid booking transition'; end if;
@@ -353,8 +377,9 @@ begin
  select id into v_affiliate from affiliates where user_id=auth.uid() and status='approved';
  if v_affiliate is null then raise exception 'Approved affiliate account required'; end if;
  select coalesce(sum(commission_amount_nle),0) into v_available from affiliate_commissions where affiliate_id=v_affiliate and status='approved';
+ perform 1 from affiliate_commissions where affiliate_id=v_affiliate and status='approved' for update;
  select coalesce(sum(commission_amount_nle),0) into v_available
- from affiliate_commissions where affiliate_id=v_affiliate and status='approved' for update;
+ from affiliate_commissions where affiliate_id=v_affiliate and status='approved';
  if p_amount<50 or p_amount<>v_available then raise exception 'Payout must equal the full approved balance'; end if;
  insert into affiliate_payout_requests(affiliate_id,amount_nle,payout_method,payout_account_name,payout_account_number)
  values(v_affiliate,p_amount,p_method,trim(p_name),trim(p_number)) returning id into v_id;
@@ -446,6 +471,8 @@ end $$;
 revoke all on function public.submit_tutor_application(text,text,text,text,integer,text,text,text,jsonb) from public,anon;
 revoke all on function public.review_tutor_application(uuid,text,text) from public,anon;
 revoke all on function public.set_tutor_availability(jsonb) from public,anon;
+revoke all on function public.update_tutor_profile(text,text,text) from public,anon;
+revoke all on function public.update_tutor_subject_prices(jsonb) from public,anon;
 revoke all on function public.create_tutor_booking(uuid,uuid,timestamptz,integer,text) from public,anon;
 revoke all on function public.update_tutor_booking(uuid,text,text) from public,anon;
 revoke all on function public.apply_as_affiliate() from public,anon;
@@ -457,6 +484,8 @@ revoke all on function public.review_affiliate_payout(uuid,text,text) from publi
 grant execute on function public.submit_tutor_application(text,text,text,text,integer,text,text,text,jsonb) to authenticated;
 grant execute on function public.review_tutor_application(uuid,text,text) to authenticated;
 grant execute on function public.set_tutor_availability(jsonb) to authenticated;
+grant execute on function public.update_tutor_profile(text,text,text) to authenticated;
+grant execute on function public.update_tutor_subject_prices(jsonb) to authenticated;
 grant execute on function public.create_tutor_booking(uuid,uuid,timestamptz,integer,text) to authenticated;
 grant execute on function public.update_tutor_booking(uuid,text,text) to authenticated;
 grant execute on function public.apply_as_affiliate() to authenticated;
