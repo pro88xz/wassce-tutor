@@ -152,6 +152,32 @@ create policy "Affiliate owners and admins read payout commission items" on publ
   or exists(select 1 from public.profiles p where p.id=auth.uid() and p.is_admin)
 );
 
+create table if not exists public.tutor_booking_reviews (
+ id uuid primary key default gen_random_uuid(),
+ booking_id uuid not null unique references public.tutor_bookings(id) on delete cascade,
+ tutor_id uuid not null references public.tutors(id) on delete cascade,
+ reviewer_id uuid not null references auth.users(id) on delete cascade,
+ rating smallint not null check (rating between 1 and 5),
+ review text not null check (length(trim(review)) between 10 and 1200),
+ created_at timestamptz not null default now()
+);
+create index if not exists tutor_booking_reviews_tutor_idx on public.tutor_booking_reviews(tutor_id,created_at desc);
+alter table public.tutor_booking_reviews enable row level security;
+create policy "Public read tutor reviews" on public.tutor_booking_reviews for select to anon,authenticated using (true);
+
+create or replace function public.create_tutor_review(p_booking_id uuid,p_rating integer,p_review text)
+returns uuid language plpgsql security definer set search_path=public,auth as $
+declare v_tutor uuid; v_review uuid;
+begin
+ if auth.uid() is null then raise exception 'Sign in required'; end if;
+ if p_rating not between 1 and 5 or length(trim(p_review)) not between 10 and 1200 then raise exception 'Provide a rating and a review between 10 and 1200 characters'; end if;
+ select tutor_id into v_tutor from tutor_bookings where id=p_booking_id and student_id=auth.uid() and status='completed';
+ if v_tutor is null then raise exception 'Only students with completed sessions can review a tutor'; end if;
+ insert into tutor_booking_reviews(booking_id,tutor_id,reviewer_id,rating,review)
+ values(p_booking_id,v_tutor,auth.uid(),p_rating,trim(p_review)) returning id into v_review;
+ return v_review;
+end $;
+
 create table if not exists public.user_notifications (
   id uuid primary key default gen_random_uuid(),
   recipient_id uuid not null references auth.users(id) on delete cascade,
@@ -188,6 +214,7 @@ alter table public.affiliate_attributions enable row level security;
 alter table public.affiliate_commissions enable row level security;
 alter table public.affiliate_payout_requests enable row level security;
 alter table public.user_notifications enable row level security;
+alter table public.tutor_booking_reviews enable row level security;
 
 create policy "Applicants read own applications" on public.tutor_applications for select to authenticated using (user_id = auth.uid() or exists(select 1 from public.profiles p where p.id=auth.uid() and p.is_admin));
 create policy "Applicants read own application subjects" on public.tutor_application_subjects for select to authenticated using (exists(select 1 from public.tutor_applications a where a.id=application_id and (a.user_id=auth.uid() or exists(select 1 from public.profiles p where p.id=auth.uid() and p.is_admin))));
@@ -199,6 +226,7 @@ create policy "Affiliate owner and admins read affiliate" on public.affiliates f
 create policy "Affiliate owner and admins read attributions" on public.affiliate_attributions for select to authenticated using (referred_user_id=auth.uid() or exists(select 1 from public.affiliates a where a.id=affiliate_id and a.user_id=auth.uid()) or exists(select 1 from public.profiles p where p.id=auth.uid() and p.is_admin));
 create policy "Affiliate owner and admins read commissions" on public.affiliate_commissions for select to authenticated using (exists(select 1 from public.affiliates a where a.id=affiliate_id and a.user_id=auth.uid()) or exists(select 1 from public.profiles p where p.id=auth.uid() and p.is_admin));
 create policy "Affiliate owner and admins read payouts" on public.affiliate_payout_requests for select to authenticated using (exists(select 1 from public.affiliates a where a.id=affiliate_id and a.user_id=auth.uid()) or exists(select 1 from public.profiles p where p.id=auth.uid() and p.is_admin));
+create policy "Public read tutor reviews" on public.tutor_booking_reviews for select to anon,authenticated using (true);
 create policy "Users read own notifications" on public.user_notifications for select to authenticated using (recipient_id=auth.uid());
 create policy "Users update own notification read state" on public.user_notifications for update to authenticated using (recipient_id=auth.uid()) with check (recipient_id=auth.uid());
 
@@ -488,6 +516,7 @@ begin
  end if;
 end $$;
 
+revoke all on function public.create_tutor_review(uuid,integer,text) from public,anon;
 revoke all on function public.submit_tutor_application(text,text,text,text,integer,text,text,text,text,jsonb) from public,anon;
 revoke all on function public.review_tutor_application(uuid,text,text) from public,anon;
 revoke all on function public.set_tutor_availability(jsonb) from public,anon;
@@ -501,6 +530,7 @@ revoke all on function public.review_affiliate(uuid,text) from public,anon;
 revoke all on function public.review_affiliate_commission(uuid,text) from public,anon;
 revoke all on function public.request_affiliate_payout(numeric,text,text,text) from public,anon;
 revoke all on function public.review_affiliate_payout(uuid,text,text) from public,anon;
+grant execute on function public.create_tutor_review(uuid,integer,text) to authenticated;
 grant execute on function public.submit_tutor_application(text,text,text,text,integer,text,text,text,jsonb) to authenticated;
 grant execute on function public.review_tutor_application(uuid,text,text) to authenticated;
 grant execute on function public.set_tutor_availability(jsonb) to authenticated;
@@ -515,8 +545,8 @@ grant execute on function public.review_affiliate_commission(uuid,text) to authe
 grant execute on function public.request_affiliate_payout(numeric,text,text,text) to authenticated;
 grant execute on function public.review_affiliate_payout(uuid,text,text) to authenticated;
 
-grant select on public.tutor_applications,public.tutor_application_subjects,public.tutors,public.tutor_subjects,public.tutor_availability,public.tutor_bookings,public.affiliates,public.affiliate_attributions,public.affiliate_commissions,public.affiliate_payout_requests,public.affiliate_payout_commission_items,public.user_notifications to authenticated;
-grant select on public.tutors,public.tutor_subjects,public.tutor_availability to anon;
+grant select on public.tutor_applications,public.tutor_application_subjects,public.tutors,public.tutor_subjects,public.tutor_availability,public.tutor_bookings,public.affiliates,public.affiliate_attributions,public.affiliate_commissions,public.affiliate_payout_requests,public.affiliate_payout_commission_items,public.user_notifications,public.tutor_booking_reviews to authenticated;
+grant select on public.tutors,public.tutor_subjects,public.tutor_availability,public.tutor_booking_reviews to anon;
 grant update(read_at) on public.user_notifications to authenticated;
 
 commit;
