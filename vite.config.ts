@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import pkg from './package.json'
 import { PUBLIC_PAGES, SITE } from './src/lib/seo'
+import { EDITORIAL_PUBLIC_PAGES } from './src/content/editorial'
 import { publicPageList } from './scripts/public-page-list'
 
 export default defineConfig(async ({ command, mode }) => {
@@ -12,7 +13,7 @@ export default defineConfig(async ({ command, mode }) => {
   // at build time. Skipped for the dev server, which renders on demand.
   const env = loadEnv(mode, process.cwd(), 'VITE_')
   const dataPages = command === 'build' ? await publicPageList(env.VITE_SUPABASE_URL, env.VITE_SUPABASE_ANON_KEY) : []
-  const fixedPages = Object.entries(PUBLIC_PAGES).map(([path, page]) => ({ path, lastmod: page.lastmod }))
+  const fixedPages = [...Object.entries(PUBLIC_PAGES).map(([path, page]) => ({ path, lastmod: page.lastmod })), ...EDITORIAL_PUBLIC_PAGES]
 
   return {
     define: {
