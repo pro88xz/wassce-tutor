@@ -22,8 +22,8 @@ create table if not exists public.tutor_applications (
   review_note text,
   reviewed_at timestamptz,
   created_at timestamptz not null default now(),
-  updated_at timestamptz not null default now(),
- );
+  updated_at timestamptz not null default now()
+);
 alter table public.tutor_applications drop constraint if exists tutor_applications_user_id_key;
 
 create table if not exists public.tutor_application_subjects (
@@ -376,7 +376,6 @@ declare v_affiliate uuid; v_available numeric; v_id uuid;
 begin
  select id into v_affiliate from affiliates where user_id=auth.uid() and status='approved';
  if v_affiliate is null then raise exception 'Approved affiliate account required'; end if;
- select coalesce(sum(commission_amount_nle),0) into v_available from affiliate_commissions where affiliate_id=v_affiliate and status='approved';
  perform 1 from affiliate_commissions where affiliate_id=v_affiliate and status='approved' for update;
  select coalesce(sum(commission_amount_nle),0) into v_available
  from affiliate_commissions where affiliate_id=v_affiliate and status='approved';
