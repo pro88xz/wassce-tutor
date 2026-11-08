@@ -42,7 +42,7 @@ export function StudentTutorBookings({ userId }: { userId: string }) {
     try {
       const { error: rpcError } = await supabase.rpc('update_tutor_booking', { p_booking_id: id, p_status: status, p_reason: null })
       if (rpcError) throw rpcError
-      await supabase.functions.invoke('send-notification-email', { body: { entity_id: id } })
+      await supabase.functions.invoke('send-notification-email', { body: { entity_id: id, event_type: `booking_${status}` } })
       setNotice(status === 'confirmed' ? 'Session confirmed.' : 'Booking cancelled.')
       await load()
     } catch (err) {
