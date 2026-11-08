@@ -28,7 +28,7 @@ export function PublicHeader() {
   if (user || !isPublicPath(pathname)) return null
 
   return (
-    <header className="sticky top-0 z-30 -mx-4 -mt-4 mb-6 border-b bg-background/95 backdrop-blur-md sm:-mx-6 sm:-mt-6">
+    <header className="public-site-header sticky top-0 z-30 -mx-4 -mt-4 mb-6 sm:-mx-6">
       <div className="mx-auto flex h-[4.25rem] max-w-6xl items-center gap-3 px-4 sm:gap-5 sm:px-6 lg:px-8">
         <a href="/" aria-label="WASSCE Tutor home">
           <BrandMark compact wordmarkClassName="max-[359px]:sr-only" />
