@@ -28,6 +28,7 @@ function BecomeTutor() {
   const [location, setLocation] = useState('Freetown')
   const [mode, setMode] = useState<'online'|'in_person'|'both'>('both')
   const [document, setDocument] = useState<File | null>(null)
+  const [avatar, setAvatar] = useState<File | null>(null)
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [success, setSuccess] = useState(false)
@@ -53,6 +54,7 @@ function BecomeTutor() {
     if (!user) return
     setError(null); setBusy(true)
     let documentPath: string | null = null
+    let avatarPath: string | null = null
     try {
       if (document) {
         const safeName = document.name.toLowerCase().replace(/[^a-z0-9._-]/g,'-')
@@ -60,9 +62,15 @@ function BecomeTutor() {
         const { error: uploadError } = await supabase.storage.from('tutor-verification-docs').upload(documentPath,document,{upsert:false,contentType:document.type})
         if (uploadError) throw uploadError
       }
+      if (avatar) {
+        if (!['image/jpeg','image/png','image/webp'].includes(avatar.type) || avatar.size > 5 * 1024 * 1024) throw new Error('Profile photo must be JPG, PNG or WebP and no larger than 5 MB.')
+        avatarPath = `${user.id}/${crypto.randomUUID()}-${avatar.name.toLowerCase().replace(/[^a-z0-9._-]/g,'-')}`
+        const { error: avatarError } = await supabase.storage.from('tutor-profile-images').upload(avatarPath,avatar,{upsert:false,contentType:avatar.type})
+        if (avatarError) throw avatarError
+      }
       const { error: submitError } = await supabase.rpc('submit_tutor_application',{
         p_full_name:fullName.trim(),p_phone:phone.trim(),p_bio:bio.trim(),p_qualifications:qualifications.trim(),
-        p_experience_years:Number(experience),p_location:location.trim(),p_teaching_mode:mode,p_document_path:documentPath,
+        p_experience_years:Number(experience),p_location:location.trim(),p_teaching_mode:mode,p_document_path:documentPath,p_avatar_path:avatarPath,
         p_subjects:selected.map((s)=>({subject_id:s.subject_id,price_nle:Number(s.price_nle)})),
       })
       if (submitError) throw submitError
@@ -70,6 +78,7 @@ function BecomeTutor() {
       setExisting({status:'submitted',review_note:null})
     } catch (err) {
       if (documentPath) await supabase.storage.from('tutor-verification-docs').remove([documentPath])
+      if (avatarPath) await supabase.storage.from('tutor-profile-images').remove([avatarPath])
       setError(err instanceof Error ? err.message : 'Your application could not be submitted.')
     } finally { setBusy(false) }
   }
@@ -87,6 +96,7 @@ function BecomeTutor() {
     </section>
     {existing && existing.status !== 'rejected' && !success ? <section className="rounded-2xl border bg-card p-6"><p className="text-sm font-semibold text-primary">Your application status</p><h2 className="mt-1 text-xl font-bold capitalize">{existing.status.replace('_',' ')}</h2><p className="mt-2 text-sm text-muted-foreground">{existing.review_note ?? 'We will review your details and notify you when a decision is made.'}</p>{existing.status==='rejected' && <p className="mt-3 text-sm">Contact support if you need clarification before submitting a new application.</p>}</section> : success ? <section className="rounded-2xl border border-emerald-200 bg-emerald-50 p-7 text-emerald-950"><CheckCircle2 className="h-8 w-8"/><h2 className="mt-3 text-xl font-bold">Application submitted</h2><p className="mt-1 text-sm">Your application is in the review queue. You will be notified when its status changes.</p><Link to="/tutor-dashboard" className="mt-4 inline-flex min-h-11 items-center rounded-xl bg-emerald-700 px-4 font-semibold text-white">View tutor dashboard</Link></section> : <form className="space-y-7" onSubmit={(e)=>{e.preventDefault();void submit()}}>
       <section className="rounded-2xl border bg-card p-6 sm:p-8"><div className="mb-6"><p className="text-xs font-bold uppercase tracking-wider text-primary">01 / Personal profile</p><h2 className="mt-1 text-xl font-bold">Introduce yourself</h2><p className="mt-1 text-sm text-muted-foreground">These details appear on your public tutor profile after approval.</p></div><div className="grid gap-4 sm:grid-cols-2">
+        <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-dashed p-4 text-sm sm:col-span-2"><span className="flex h-11 w-11 items-center justify-center rounded-xl bg-violet-100 text-violet-800"><GraduationCap className="h-5 w-5"/></span><span className="min-w-0 flex-1"><strong className="block">Profile photograph</strong><span className="text-xs text-muted-foreground">JPG, PNG or WebP · maximum 5 MB · shown on your public profile after approval</span>{avatar&&<span className="mt-1 block truncate text-primary">{avatar.name}</span>}</span><input type="file" accept="image/jpeg,image/png,image/webp" className="sr-only" onChange={(e)=>setAvatar(e.target.files?.[0]??null)}/></label>
         <label className="space-y-1.5 text-sm font-semibold">Full name<input required minLength={2} maxLength={120} className={field} value={fullName} onChange={(e)=>setFullName(e.target.value)}/></label>
         <label className="space-y-1.5 text-sm font-semibold">WhatsApp / phone<input required minLength={7} maxLength={30} className={field} value={phone} onChange={(e)=>setPhone(e.target.value)} placeholder="+232…"/></label>
         <label className="space-y-1.5 text-sm font-semibold">Town / area<input required maxLength={120} className={field} value={location} onChange={(e)=>setLocation(e.target.value)}/></label>
