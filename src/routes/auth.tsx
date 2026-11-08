@@ -20,6 +20,7 @@ function AuthPage() {
   const [loading, setLoading] = useState(false)
 
   const handleSubmit = async () => {
+    const referralCode = new URLSearchParams(window.location.search).get('ref')?.trim().toUpperCase() ?? ''
     setError(null)
     setLoading(true)
     try {
@@ -33,7 +34,7 @@ function AuthPage() {
         const { error } = await supabase.auth.signUp({
           email,
           password,
-          options: { data: { full_name: fullName } },
+          options: { data: { full_name: fullName, ...(referralCode ? { affiliate_code: referralCode } : {}) } },
         })
         if (error) throw error
         navigate({ to: '/' })
