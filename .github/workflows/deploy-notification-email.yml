@@ -2,6 +2,12 @@ name: Deploy tutor notification email function
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - feature/tutor-affiliate-platform
+    paths:
+      - 'supabase/functions/send-notification-email/**'
+      - '.github/workflows/deploy-notification-email.yml'
 
 permissions:
   contents: read
