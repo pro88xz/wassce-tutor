@@ -13,7 +13,7 @@ export const Route = createFileRoute('/auth')({
 function AuthPage() {
   const navigate = useNavigate()
   const { user } = useAuth()
-  const params = new URLSearchParams(window.location.search)
+  const params = new URLSearchParams(typeof window === 'undefined' ? '' : window.location.search)
   const intent = params.get('intent') === 'tutor' ? 'tutor' : params.get('intent') === 'affiliate' ? 'affiliate' : 'student'
   const requestedNext = params.get('next') ?? ''
   const destination = intent === 'tutor' ? '/tutor-dashboard' : intent === 'affiliate' ? '/affiliate-dashboard' : ['/onboarding','/subjects','/practice','/progress','/account','/'].includes(requestedNext) ? requestedNext : '/'
