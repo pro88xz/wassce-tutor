@@ -17,7 +17,7 @@ export const Route = createFileRoute('/become-a-tutor')({
 const field = 'h-12 w-full rounded-xl border border-slate-200 bg-white px-3.5 text-sm text-slate-900 outline-none transition focus:border-violet-500 focus:ring-2 focus:ring-violet-100'
 
 function BecomeTutor() {
-  const { user, loading: authLoading } = useAuth()
+  const { user } = useAuth()
   const [subjects, setSubjects] = useState<Subject[]>([])
   const [selected, setSelected] = useState<SelectedSubject[]>([])
   const [fullName, setFullName] = useState(user?.user_metadata?.full_name ?? '')
