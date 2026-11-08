@@ -52,6 +52,11 @@ export const PUBLIC_PAGES = {
       'Contact WASSCE Tutor in Freetown, Sierra Leone: WhatsApp +232 77 884195, email, and our WhatsApp study group. Help with plans, payments and tutors.',
     lastmod: '2026-11-06',
   },
+  '/tutors': {
+    title: 'Find a WASSCE Tutor in Sierra Leone | WASSCE Tutor',
+    description: 'Find approved WASSCE tutors in Sierra Leone. Compare subjects, teaching formats and session rates, then request a one-to-one lesson.',
+    lastmod: '2026-11-08',
+  },
   '/privacy': {
     title: 'Privacy Policy | WASSCE Tutor',
     description:
@@ -191,6 +196,7 @@ const PAGE_JSON_LD: Partial<Record<PublicPath, Record<string, unknown>[]>> = {
   // breadcrumbJsonLd is a function declaration, so it is hoisted and usable here.
   '/about': [ABOUT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['About', '/about']])],
   '/contact': [CONTACT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['Contact', '/contact']])],
+  '/tutors': [breadcrumbJsonLd([['Home', '/'], ['Tutors', '/tutors']])],
 }
 
 type IndexablePage = {
