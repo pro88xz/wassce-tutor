@@ -4,7 +4,7 @@
 
 begin;
 
-create extension if not exists btree_gist with schema extensions;
+create extension if not exists btree_gist;
 
 create table if not exists public.tutor_applications (
   id uuid primary key default gen_random_uuid(),
@@ -340,12 +340,22 @@ begin
  select id into v_affiliate from affiliates where user_id=auth.uid() and status='approved';
  if v_affiliate is null then raise exception 'Approved affiliate account required'; end if;
  select coalesce(sum(commission_amount_nle),0) into v_available from affiliate_commissions where affiliate_id=v_affiliate and status='approved';
- select v_available-coalesce(sum(amount_nle),0) into v_available from affiliate_payout_requests where affiliate_id=v_affiliate and status in ('requested','processing','paid');
- if p_amount<50 or p_amount>v_available then raise exception 'Payout amount is below the minimum or exceeds your available balance'; end if;
+ select v_available-coalesce(sum(amount_nle),0) into v_available from affiliate_payout_requests where affiliate_id=v_affiliate and status in ('requested','processing');
+ if p_amount<50 or p_amount<>v_available then raise exception 'Payout must equal the full unreserved approved balance'; end if;
  insert into affiliate_payout_requests(affiliate_id,amount_nle,payout_method,payout_account_name,payout_account_number)
  values(v_affiliate,p_amount,p_method,trim(p_name),trim(p_number)) returning id into v_id;
  return v_id;
 end $$;
+
+create or replace function public.review_affiliate_commission(p_commission_id uuid,p_decision text)
+returns void language plpgsql security definer set search_path=public,auth as $
+begin
+ if not exists(select 1 from profiles where id=auth.uid() and is_admin=true) then raise exception 'Not authorised'; end if;
+ if p_decision not in ('approved','reversed') then raise exception 'Invalid decision'; end if;
+ update affiliate_commissions set status=p_decision,approved_at=case when p_decision='approved' then now() else approved_at end
+ where id=p_commission_id and status='pending';
+ if not found then raise exception 'Commission not found or already reviewed'; end if;
+end $;
 
 create or replace function public.review_affiliate_payout(p_payout_id uuid,p_decision text,p_note text default null)
 returns void language plpgsql security definer set search_path=public,auth as $$
@@ -405,6 +415,7 @@ revoke all on function public.update_tutor_booking(uuid,text,text) from public,a
 revoke all on function public.apply_as_affiliate() from public,anon;
 revoke all on function public.claim_affiliate_referral(text) from public,anon;
 revoke all on function public.review_affiliate(uuid,text) from public,anon;
+revoke all on function public.review_affiliate_commission(uuid,text) from public,anon;
 revoke all on function public.request_affiliate_payout(numeric,text,text,text) from public,anon;
 revoke all on function public.review_affiliate_payout(uuid,text,text) from public,anon;
 grant execute on function public.submit_tutor_application(text,text,text,text,integer,text,text,text,jsonb) to authenticated;
@@ -415,6 +426,7 @@ grant execute on function public.update_tutor_booking(uuid,text,text) to authent
 grant execute on function public.apply_as_affiliate() to authenticated;
 grant execute on function public.claim_affiliate_referral(text) to authenticated;
 grant execute on function public.review_affiliate(uuid,text) to authenticated;
+grant execute on function public.review_affiliate_commission(uuid,text) to authenticated;
 grant execute on function public.request_affiliate_payout(numeric,text,text,text) to authenticated;
 grant execute on function public.review_affiliate_payout(uuid,text,text) to authenticated;
 
