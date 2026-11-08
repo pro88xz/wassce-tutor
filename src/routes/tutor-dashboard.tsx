@@ -107,7 +107,7 @@ function TutorDashboard() {
   }
 
   if(loading) return <div className="mx-auto h-64 max-w-5xl animate-pulse rounded-3xl bg-muted"/>
-  if(!user) return <div className="mx-auto max-w-md rounded-2xl border bg-card p-8 text-center"><h1 className="text-xl font-bold">Sign in to continue</h1><Link to="/auth" className="mt-4 inline-flex min-h-11 items-center rounded-xl bg-primary px-5 font-semibold text-white">Sign in</Link></div>
+  if(!user) return <div className="mx-auto max-w-md rounded-2xl border bg-card p-8 text-center"><h1 className="text-xl font-bold">Sign in to continue</h1><Link to="/auth" search={{ intent: "tutor" } as never} className="mt-4 inline-flex min-h-11 items-center rounded-xl bg-primary px-5 font-semibold text-white">Sign in</Link></div>
 
   const incoming=bookings
   const unread=notifications.filter((n)=>!n.read_at).length
