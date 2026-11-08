@@ -166,7 +166,7 @@ alter table public.tutor_booking_reviews enable row level security;
 create policy "Public read tutor reviews" on public.tutor_booking_reviews for select to anon,authenticated using (true);
 
 create or replace function public.create_tutor_review(p_booking_id uuid,p_rating integer,p_review text)
-returns uuid language plpgsql security definer set search_path=public,auth as $
+returns uuid language plpgsql security definer set search_path=public,auth as $$
 declare v_tutor uuid; v_review uuid;
 begin
  if auth.uid() is null then raise exception 'Sign in required'; end if;
@@ -176,7 +176,7 @@ begin
  insert into tutor_booking_reviews(booking_id,tutor_id,reviewer_id,rating,review)
  values(p_booking_id,v_tutor,auth.uid(),p_rating,trim(p_review)) returning id into v_review;
  return v_review;
-end $;
+end $$;
 
 create table if not exists public.user_notifications (
   id uuid primary key default gen_random_uuid(),
@@ -463,7 +463,7 @@ begin
  end if;
  insert into user_notifications(recipient_id,actor_id,event_type,title,body,entity_type,entity_id)
  values(v_user,auth.uid(),'payout_'||p_decision,'Affiliate payout '||p_decision,'Your affiliate payout request was marked '||p_decision||'.','payout',p_payout_id);
-end $;
+end $$;
 
 -- A commission is earned only on the referred user's first verified payment.
 create or replace function public.capture_signup_affiliate_referral()
@@ -531,7 +531,7 @@ revoke all on function public.review_affiliate_commission(uuid,text) from public
 revoke all on function public.request_affiliate_payout(numeric,text,text,text) from public,anon;
 revoke all on function public.review_affiliate_payout(uuid,text,text) from public,anon;
 grant execute on function public.create_tutor_review(uuid,integer,text) to authenticated;
-grant execute on function public.submit_tutor_application(text,text,text,text,integer,text,text,text,jsonb) to authenticated;
+grant execute on function public.submit_tutor_application(text,text,text,text,integer,text,text,text,text,jsonb) to authenticated;
 grant execute on function public.review_tutor_application(uuid,text,text) to authenticated;
 grant execute on function public.set_tutor_availability(jsonb) to authenticated;
 grant execute on function public.update_tutor_profile(text,text,text) to authenticated;
