@@ -385,8 +385,14 @@ create or replace function public.update_tutor_booking(p_booking_id uuid,p_statu
 returns void language plpgsql security definer set search_path=public,auth as $$
 declare v_booking tutor_bookings%rowtype; v_tutor_user uuid; v_recipient uuid;
 begin
- select b,t.user_id into v_booking,v_tutor_user from tutor_bookings b join tutors t on t.id=b.tutor_id where b.id=p_booking_id for update of b;
+ select * into v_booking
+ from tutor_bookings
+ where id=p_booking_id
+ for update;
  if not found then raise exception 'Booking not found'; end if;
+ select user_id into v_tutor_user
+ from tutors
+ where id=v_booking.tutor_id;
  if auth.uid()<>v_booking.student_id and auth.uid()<>v_tutor_user and not exists(select 1 from profiles where id=auth.uid() and is_admin=true) then raise exception 'Not authorised'; end if;
  if p_status not in ('accepted','confirmed','completed','declined','cancelled','reschedule_requested','no_show') then raise exception 'Invalid booking transition'; end if;
  if p_status in ('accepted','declined') and auth.uid()<>v_tutor_user then raise exception 'Only the tutor can respond'; end if;
