@@ -8,7 +8,7 @@
 import { Link } from '@tanstack/react-router'
 import { useRef } from 'react'
 import { useReveal } from '@/components/ds/useReveal'
-import { ArrowRight, BookOpen, Check, ChevronRight, CircleCheck, Compass, GraduationCap, Moon, Smartphone, UserRound, Wallet } from 'lucide-react'
+import { ArrowRight, BookOpen, BookOpenCheck, CalendarClock, Check, ChevronRight, CircleCheck, Compass, GraduationCap, Moon, ShieldCheck, Smartphone, UserRound, Wallet, Zap } from 'lucide-react'
 import type { LandingData } from '@/lib/public-content'
 import { subjectPath, topicPath } from '@/lib/public-content'
 import { SubjectCover, subjectArt } from '@/components/ds/SubjectCover'
@@ -119,7 +119,7 @@ function Hero({ data }: { data: LandingData }) {
             [String(data.totals.subjects), 'WASSCE subjects'],
             [String(data.totals.topics), 'syllabus topics'],
             [String(data.totals.lessons), 'available lessons'],
-            ['25 NLe', 'per academic year'],
+            ['75 NLe', 'per year'],
           ].map(([value, label]) => (
             <div key={label} className="px-3 py-2 text-center sm:px-5">
               <p className="text-2xl font-bold tracking-tight tabular-nums sm:text-3xl">{value}</p>
@@ -527,7 +527,7 @@ function Plans() {
   return (
     <section id="plans" className="plans-section scroll-mt-20 space-y-8">
       <SectionTitle eyebrow="Plans" title="Start free. Unlock everything for one small payment." body={`A free account opens the first lesson of every topic. A plan opens every lesson, every practice set and the AI tutor, from ${FROM_PRICE} NLe.`} />
-      <div className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-3">
+      <div className="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map((c, i) => (
           <div
             key={c.key}
@@ -564,15 +564,15 @@ function Plans() {
           </div>
         ))}
       </div>
-      <ul className="plan-assurances mx-auto grid max-w-4xl gap-x-6 gap-y-3 rounded-2xl border bg-card p-5 text-sm text-muted-foreground sm:grid-cols-2">
+      <ul className="plan-assurances mx-auto grid max-w-6xl gap-3 text-sm sm:grid-cols-2 xl:grid-cols-4">
         {[
-          ['No free trial needed', 'The free account never runs out, so you can study before you decide.'],
-          ['Paying', 'Orange Money or AfriMoney. Tap Pay on WhatsApp, send the payment, and we switch your plan on, usually within an hour.'],
-          ['No automatic renewal', 'A plan simply ends on its last day. You go back to the free account, and your progress is kept.'],
-          ['Buying again', 'Paying while a plan is running adds the new time on top, so nothing is lost.'],
-        ].map(([title, body]) => (
+          { title: 'Secure Monime checkout', body: 'Pay once through your phone’s USSD dialler. The amount is fixed to the plan you choose.', Icon: ShieldCheck },
+          { title: 'Verified activation', body: 'Monime confirms the payment first. Your selected access is activated automatically after verification.', Icon: Zap },
+          { title: 'No recurring charges', body: 'No subscription deductions or automatic renewal. You pay only when you choose to extend access.', Icon: CalendarClock },
+          { title: 'Your progress stays saved', body: 'Your saved study progress remains when a plan expires. Renewing adds the new time to your existing expiry.', Icon: BookOpenCheck },
+        ].map(({ title, body, Icon }) => (
           <li key={title} className="plan-assurance-card">
-            <span className="plan-assurance-icon"><CircleCheck className="h-5 w-5" aria-hidden /></span>
+            <span className="plan-assurance-icon"><Icon className="h-5 w-5" aria-hidden /></span>
             <span className="plan-assurance-copy">
               <span className="plan-assurance-title">{title}</span>
               <span className="plan-assurance-body">{body}</span>
@@ -585,10 +585,10 @@ function Plans() {
 }
 
 const FAQ: [question: string, answer: string][] = [
-  ['Is WASSCE Tutor free?', 'Yes, to start. A free account opens every subject, the first lesson of every topic and a starter practice set in every subject, with no time limit. To unlock everything, pay 10 NLe for a term (4 months) or 25 NLe for a full academic year (12 months).'],
+  ['Is WASSCE Tutor free?', 'Yes, to start. A free account opens every subject, the first lesson of every topic and a starter practice set in every subject, with no time limit. To unlock everything, pay 25 NLe for one month or 75 NLe for 12 months.'],
   ['Which subjects are covered?', 'All the main WASSCE subjects for Science, Arts, Commercial and Technical students, including English Language and Mathematics. Each subject is broken down topic by topic, and new lessons are added all the time.'],
   ['Are these real WAEC past papers?', 'No. Practice sets are original WASSCE-style questions written by WASSCE Tutor to match the syllabus and the exam format, each with the full working. We do not copy WAEC papers.'],
-  ['How do I pay?', 'Choose a plan and tap Pay on WhatsApp. We reply with the Orange Money or AfriMoney number to pay, and switch your plan on as soon as the payment arrives, usually within an hour. Plans do not renew automatically.'],
+  ['How do I pay?', 'Choose a plan, complete the Monime USSD payment on your phone, and your access activates automatically after payment verification. Plans do not renew automatically.'],
   ['Does it work on my phone?', 'Yes. WASSCE Tutor works in any phone browser, and there is an Android app you can install from this page. It is built to work on patchy data.'],
   ['Who writes the lessons?', 'Lessons are drafted with the help of AI and follow the WASSCE syllabus. Lessons we publish openly on this website are checked by a named reviewer first, and their name appears on the lesson.'],
   ['Is this the official WAEC website?', 'No. WASSCE Tutor is an independent study app built in Sierra Leone. For registration, timetables and results, always use official WAEC channels.'],

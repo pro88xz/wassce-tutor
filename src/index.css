@@ -879,13 +879,15 @@ section[aria-labelledby="tour-heading"] [role="tabpanel"] [class*="absolute"][cl
 }
 .plans-section .plan-assurances {
   padding: 0;
-  gap: .85rem;
+  gap: .9rem;
   background: transparent;
   border: 0;
+  align-items: stretch;
+  grid-auto-rows: 1fr;
 }
 .plans-section .plan-assurance-card {
   display: flex;
-  min-height: 7.5rem;
+  min-height: 100%;
   align-items: flex-start;
   gap: .9rem;
   padding: 1.1rem;
@@ -924,7 +926,7 @@ section[aria-labelledby="tour-heading"] [role="tabpanel"] [class*="absolute"][cl
 }
 @media (min-width: 640px) {
   .plans-section .plan-assurances { gap: 1rem; }
-  .plans-section .plan-assurance-card { min-height: 8rem; padding: 1.2rem; }
+  .plans-section .plan-assurance-card { padding: 1.2rem; }
 }
 @media (max-width: 639px) {
   .plans-section .plan-option-card:has(> span) { transform: none; }
