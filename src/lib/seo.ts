@@ -57,6 +57,11 @@ export const PUBLIC_PAGES = {
     description: 'Find approved WASSCE tutors in Sierra Leone. Compare subjects, teaching formats and session rates, then request a one-to-one lesson.',
     lastmod: '2026-11-08',
   },
+  '/affiliate': {
+    title: 'WASSCE Tutor Affiliate Programme | Earn from Student Referrals',
+    description: 'Join the WASSCE Tutor affiliate programme. Share a tracked referral link and earn 50% of a referred student’s first verified subscription payment.',
+    lastmod: '2026-11-08',
+  },
   '/privacy': {
     title: 'Privacy Policy | WASSCE Tutor',
     description:
@@ -197,6 +202,7 @@ const PAGE_JSON_LD: Partial<Record<PublicPath, Record<string, unknown>[]>> = {
   '/about': [ABOUT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['About', '/about']])],
   '/contact': [CONTACT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['Contact', '/contact']])],
   '/tutors': [breadcrumbJsonLd([['Home', '/'], ['Tutors', '/tutors']])],
+  '/affiliate': [breadcrumbJsonLd([['Home', '/'], ['Affiliate programme', '/affiliate']])],
 }
 
 type IndexablePage = {
