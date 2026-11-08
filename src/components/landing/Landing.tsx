@@ -17,7 +17,6 @@ import { SubjectShowcase } from '@/components/landing/SubjectShowcase'
 import { SwipeRow } from '@/components/ds/SwipeRow'
 import { TUTOR_PHOTO } from '@/lib/tutors'
 import { ProductTour } from '@/components/landing/ProductTour'
-import { DownloadButton } from '@/components/DownloadButton'
 import { FREE_FEATURES, FROM_PRICE, PAID_FEATURES, PLANS, type PlanId } from '@/lib/plans'
 import { TopicSearch } from '@/components/landing/TopicSearch'
 import { supabase } from '@/lib/supabase'
@@ -46,19 +45,73 @@ export function Landing({ data }: { data: LandingData }) {
 }
 
 
-function LiveStudentCount() {
-  const [count, setCount] = useState<number | null>(null)
+function AnimatedNumber({ value }: { value: number }) {
+  const [display, setDisplay] = useState(0)
+  useEffect(() => {
+    const target = Math.max(0, Math.floor(value))
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setDisplay(target)
+      return
+    }
+    let frame = 0
+    let startTime = 0
+    const duration = 1050
+    const animate = (time: number) => {
+      if (!startTime) startTime = time
+      const progress = Math.min(1, (time - startTime) / duration)
+      const eased = 1 - Math.pow(1 - progress, 4)
+      setDisplay(Math.round(target * eased))
+      if (progress < 1) frame = window.requestAnimationFrame(animate)
+    }
+    frame = window.requestAnimationFrame(animate)
+    return () => window.cancelAnimationFrame(frame)
+  }, [value])
+  return <span>{display.toLocaleString('en')}</span>
+}
+
+function LivePlatformStats({ initial }: { initial: LandingData['totals'] }) {
+  const [stats, setStats] = useState({
+    subjects: initial.subjects,
+    topics: initial.topics,
+    lessons: initial.lessons,
+    students: 0,
+  })
   useEffect(() => {
     let active = true
-    void supabase.rpc('get_public_student_count').then(({ data, error }) => {
-      if (active && !error && data !== null && data !== undefined) {
-        const value = Number(data)
-        if (Number.isSafeInteger(value) && value >= 0) setCount(value)
-      }
+    void Promise.all([
+      supabase.from('subjects').select('id', { count: 'exact', head: true }),
+      supabase.from('topics').select('id', { count: 'exact', head: true }),
+      supabase.from('wassce_lesson_index').select('id', { count: 'exact', head: true }),
+      supabase.rpc('get_public_student_count'),
+    ]).then(([subjects, topics, lessons, students]) => {
+      if (!active) return
+      setStats((current) => ({
+        subjects: subjects.error || subjects.count === null ? current.subjects : subjects.count,
+        topics: topics.error || topics.count === null ? current.topics : topics.count,
+        lessons: lessons.error || lessons.count === null ? current.lessons : lessons.count,
+        students: students.error || students.data === null ? current.students : Number(students.data),
+      }))
     })
     return () => { active = false }
   }, [])
-  return <span aria-live="polite">{count === null ? '—' : count.toLocaleString('en')}</span>
+  const items = [
+    { value: stats.subjects, label: 'WASSCE subjects' },
+    { value: stats.topics, label: 'syllabus topics' },
+    { value: stats.lessons, label: 'available lessons' },
+    { value: stats.students, label: 'registered students' },
+  ]
+  return (
+    <div className="relative border-t border-white/10 bg-black/10">
+      <div className="mx-auto grid max-w-6xl grid-cols-2 px-5 py-5 sm:px-8 lg:grid-cols-4">
+        {items.map((item) => (
+          <div key={item.label} className="platform-stat px-3 py-2 text-center sm:px-5">
+            <p className="text-2xl font-bold tracking-tight tabular-nums sm:text-3xl"><AnimatedNumber value={item.value} /></p>
+            <p className="mt-1 text-xs font-medium text-white/55 sm:text-sm">{item.label}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
 }
 
 /** Editorial hero: discovery-led, with real syllabus subjects as the visual proof. */
@@ -96,11 +149,15 @@ function Hero({ data }: { data: LandingData }) {
           <div className="mx-auto max-w-xl lg:mx-0">
             <TopicSearch />
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-medium text-white/55 lg:justify-start">
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-xs font-medium text-white/65 lg:justify-start">
             <span className="inline-flex items-center gap-1.5"><Check className="h-3.5 w-3.5 text-emerald-300" /> No card needed</span>
             <span className="hidden h-1 w-1 rounded-full bg-white/30 sm:block" />
             <span>Study free · upgrade when ready</span>
-            <DownloadButton variant="hero" />
+            <span className="inline-flex min-h-10 items-center gap-2 rounded-xl border border-white/20 bg-white/[0.07] px-3.5 text-white/85">
+              <Smartphone className="h-4 w-4 text-violet-200" aria-hidden />
+              <span className="font-semibold">Android app</span>
+              <span className="rounded-full bg-amber-300/15 px-2 py-1 text-[9px] font-extrabold uppercase tracking-[.1em] text-amber-100">Coming soon</span>
+            </span>
           </div>
         </div>
 
@@ -130,21 +187,7 @@ function Hero({ data }: { data: LandingData }) {
           <div className="hero-collage-caption"><GraduationCap className="h-4 w-4 text-[#d6c4ff]" /> Built for your WASSCE syllabus</div>
         </div>
       </div>
-      <div className="relative border-t border-white/10 bg-black/10">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 divide-x divide-white/10 px-5 py-5 sm:px-8 lg:grid-cols-4">
-          {[
-            [String(data.totals.subjects), 'WASSCE subjects'],
-            [String(data.totals.topics), 'syllabus topics'],
-            [String(data.totals.lessons), 'available lessons'],
-            [<LiveStudentCount key="students" />, 'registered students'],
-          ].map(([value, label]) => (
-            <div key={String(label)} className="px-3 py-2 text-center sm:px-5">
-              <p className="text-2xl font-bold tracking-tight tabular-nums sm:text-3xl">{value}</p>
-              <p className="mt-1 text-xs font-medium text-white/55 sm:text-sm">{label}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      <LivePlatformStats initial={data.totals} />
     </section>
   )
 }
