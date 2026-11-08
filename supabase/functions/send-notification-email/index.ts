@@ -47,13 +47,12 @@ Deno.serve(async (req) => {
     if (!email) return { id: event.id, sent: false, reason: "No email address" };
     const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
-      headers: { Authorization: `Bearer ${resendKey}`, "Content-Type": "application/json" },
+      headers: { Authorization: `Bearer ${resendKey}`, "Content-Type": "application/json", "Idempotency-Key": `wassce-notification-${event.id}` },
       body: JSON.stringify({
         from,
         to: [email],
         subject: event.title,
         text: `${event.title}\n\n${event.body}\n\nOpen WASSCE Tutor: https://wasscetutor.com`,
-        headers: { "Idempotency-Key": `wassce-notification-${event.id}` },
       }),
     });
     if (!response.ok) return { id: event.id, sent: false, reason: "Email provider rejected delivery" };
