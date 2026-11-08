@@ -23,8 +23,8 @@ create table if not exists public.tutor_applications (
   reviewed_at timestamptz,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
-  unique(user_id)
-);
+ );
+alter table public.tutor_applications drop constraint if exists tutor_applications_user_id_key;
 
 create table if not exists public.tutor_application_subjects (
   application_id uuid not null references public.tutor_applications(id) on delete cascade,
@@ -117,7 +117,7 @@ create table if not exists public.affiliate_commissions (
   gross_amount_nle numeric(10,2) not null check (gross_amount_nle > 0),
   commission_rate numeric(5,4) not null default 0.5 check (commission_rate = 0.5),
   commission_amount_nle numeric(10,2) not null check (commission_amount_nle > 0),
-  status text not null default 'pending' check (status in ('pending','approved','paid','reversed')),
+  status text not null default 'pending' check (status in ('pending','approved','reserved','paid','reversed')),
   created_at timestamptz not null default now(),
   approved_at timestamptz,
   paid_at timestamptz
@@ -137,6 +137,18 @@ create table if not exists public.affiliate_payout_requests (
   requested_at timestamptz not null default now(),
   reviewed_at timestamptz,
   reviewed_by uuid references auth.users(id)
+);
+
+create table if not exists public.affiliate_payout_commission_items (
+  payout_id uuid not null references public.affiliate_payout_requests(id) on delete cascade,
+  commission_id uuid not null unique references public.affiliate_commissions(id) on delete restrict,
+  primary key(payout_id,commission_id)
+);
+alter table public.affiliate_payout_commission_items enable row level security;
+create policy "Affiliate owners and admins read payout commission items" on public.affiliate_payout_commission_items
+ for select to authenticated using (
+  exists(select 1 from public.affiliate_payout_requests p join public.affiliates a on a.id=p.affiliate_id where p.id=payout_id and a.user_id=auth.uid())
+  or exists(select 1 from public.profiles p where p.id=auth.uid() and p.is_admin)
 );
 
 create table if not exists public.user_notifications (
@@ -235,7 +247,7 @@ begin
     select v_tutor,subject_id,price_nle from tutor_application_subjects where application_id=p_application_id
     on conflict(tutor_id,subject_id) do update set price_nle=excluded.price_nle;
     insert into user_notifications(recipient_id,actor_id,event_type,title,body,entity_type,entity_id)
-    values(v_app.user_id,auth.uid(),'tutor_approved','Tutor application approved','Your tutor profile is now visible in the tutor marketplace.','tutor',v_tutor);
+    values(v_app.user_id,auth.uid(),'tutor_approved','Tutor application approved','Your tutor profile is now visible in the tutor marketplace.','tutor_application',p_application_id);
   elsif p_decision='rejected' then
     insert into user_notifications(recipient_id,actor_id,event_type,title,body,entity_type,entity_id)
     values(v_app.user_id,auth.uid(),'tutor_rejected','Tutor application update',coalesce(nullif(trim(p_note),''),'Your tutor application was not approved. You may contact support.'),'tutor_application',p_application_id);
@@ -269,6 +281,7 @@ begin
  where ts.tutor_id=p_tutor_id and ts.subject_id=p_subject_id and t.status='active';
  if v_price is null then raise exception 'Tutor is not available for this subject'; end if;
  if v_owner=auth.uid() then raise exception 'You cannot book yourself'; end if;
+ if not exists(select 1 from tutor_availability av where av.tutor_id=p_tutor_id and av.active and av.weekday=extract(dow from p_starts_at)::integer and p_starts_at::time >= av.starts_at and (p_starts_at + make_interval(mins=>p_duration_minutes))::time <= av.ends_at) then raise exception 'Requested time is outside published tutor availability'; end if;
  insert into tutor_bookings(tutor_id,student_id,subject_id,starts_at,duration_minutes,price_nle,student_message)
  values(p_tutor_id,auth.uid(),p_subject_id,p_starts_at,p_duration_minutes,v_price,left(p_message,1000))
  returning id into v_booking;
@@ -290,7 +303,7 @@ begin
  if p_status in ('accepted','declined') and auth.uid()<>v_tutor_user then raise exception 'Only the tutor can respond'; end if;
  if p_status='completed' and auth.uid()<>v_tutor_user and not exists(select 1 from profiles where id=auth.uid() and is_admin=true) then raise exception 'Only tutor or admin can complete'; end if;
  if p_status='no_show' and not exists(select 1 from profiles where id=auth.uid() and is_admin=true) then raise exception 'Only admin can mark no-show'; end if;
- if p_status='confirmed' and v_booking.status<>'accepted' then raise exception 'Tutor must accept before confirmation'; end if;
+ if p_status='confirmed' and (v_booking.status<>'accepted' or auth.uid()<>v_booking.student_id) then raise exception 'Student confirmation is required after tutor acceptance'; end if;
  if p_status='accepted' and v_booking.status<>'requested' then raise exception 'Booking is not awaiting a response'; end if;
  if p_status='completed' and v_booking.status not in ('confirmed','accepted') then raise exception 'Only confirmed sessions can be completed'; end if;
  if p_status='cancelled' and v_booking.status not in ('requested','accepted','confirmed') then raise exception 'Booking cannot be cancelled'; end if;
@@ -340,10 +353,14 @@ begin
  select id into v_affiliate from affiliates where user_id=auth.uid() and status='approved';
  if v_affiliate is null then raise exception 'Approved affiliate account required'; end if;
  select coalesce(sum(commission_amount_nle),0) into v_available from affiliate_commissions where affiliate_id=v_affiliate and status='approved';
- select v_available-coalesce(sum(amount_nle),0) into v_available from affiliate_payout_requests where affiliate_id=v_affiliate and status in ('requested','processing');
- if p_amount<50 or p_amount<>v_available then raise exception 'Payout must equal the full unreserved approved balance'; end if;
+ select coalesce(sum(commission_amount_nle),0) into v_available
+ from affiliate_commissions where affiliate_id=v_affiliate and status='approved' for update;
+ if p_amount<50 or p_amount<>v_available then raise exception 'Payout must equal the full approved balance'; end if;
  insert into affiliate_payout_requests(affiliate_id,amount_nle,payout_method,payout_account_name,payout_account_number)
  values(v_affiliate,p_amount,p_method,trim(p_name),trim(p_number)) returning id into v_id;
+ insert into affiliate_payout_commission_items(payout_id,commission_id)
+ select v_id,id from affiliate_commissions where affiliate_id=v_affiliate and status='approved';
+ update affiliate_commissions set status='reserved' where id in (select commission_id from affiliate_payout_commission_items where payout_id=v_id);
  return v_id;
 end $$;
 
@@ -368,12 +385,31 @@ begin
  update affiliate_payout_requests set status=p_decision,admin_note=left(p_note,500),reviewed_at=now(),reviewed_by=auth.uid() where id=p_payout_id;
  if p_decision='paid' then
    update affiliate_commissions set status='paid',paid_at=now()
-   where affiliate_id=v_payout.affiliate_id and status='approved'
-     and created_at <= v_payout.requested_at;
+   where id in (select commission_id from affiliate_payout_commission_items where payout_id=p_payout_id) and status='reserved';
+ elsif p_decision='rejected' then
+   update affiliate_commissions set status='approved'
+   where id in (select commission_id from affiliate_payout_commission_items where payout_id=p_payout_id) and status='reserved';
  end if;
 end $$;
 
 -- A commission is earned only on the referred user's first verified payment.
+create or replace function public.capture_signup_affiliate_referral()
+returns trigger language plpgsql security definer set search_path=public as $
+declare v_affiliate uuid; v_code text;
+begin
+ v_code := upper(trim(coalesce(new.raw_user_meta_data->>'affiliate_code','')));
+ if v_code <> '' then
+   select id into v_affiliate from affiliates where code=v_code and status='approved';
+   if v_affiliate is not null then
+     insert into affiliate_attributions(affiliate_id,referred_user_id) values(v_affiliate,new.id) on conflict(referred_user_id) do nothing;
+   end if;
+ end if;
+ return new;
+end $;
+drop trigger if exists auth_user_affiliate_attribution on auth.users;
+create trigger auth_user_affiliate_attribution after insert on auth.users
+for each row execute function public.capture_signup_affiliate_referral();
+
 create or replace function public.record_first_payment_affiliate_commission()
 returns trigger language plpgsql security definer set search_path=public as $$
 declare v_affiliate uuid;
@@ -430,7 +466,7 @@ grant execute on function public.review_affiliate_commission(uuid,text) to authe
 grant execute on function public.request_affiliate_payout(numeric,text,text,text) to authenticated;
 grant execute on function public.review_affiliate_payout(uuid,text,text) to authenticated;
 
-grant select on public.tutor_applications,public.tutor_application_subjects,public.tutors,public.tutor_subjects,public.tutor_availability,public.tutor_bookings,public.affiliates,public.affiliate_attributions,public.affiliate_commissions,public.affiliate_payout_requests,public.user_notifications to authenticated;
+grant select on public.tutor_applications,public.tutor_application_subjects,public.tutors,public.tutor_subjects,public.tutor_availability,public.tutor_bookings,public.affiliates,public.affiliate_attributions,public.affiliate_commissions,public.affiliate_payout_requests,public.affiliate_payout_commission_items,public.user_notifications to authenticated;
 grant select on public.tutors,public.tutor_subjects,public.tutor_availability to anon;
 grant update(read_at) on public.user_notifications to authenticated;
 
