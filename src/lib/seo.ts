@@ -57,7 +57,7 @@ export const PUBLIC_PAGES = {
     description: 'Find approved WASSCE tutors in Sierra Leone. Compare subjects, teaching formats and session rates, then request a one-to-one lesson.',
     lastmod: '2026-11-08',
   },
-  '/affiliate': {
+  '/blog': {\n    title: 'WASSCE Tutor Blog: WASSCE Advice & University Guides in Sierra Leone',\n    description: 'Research-backed WASSCE study advice, Sierra Leone university admissions guides, subject planning and practical resources for students and families.',\n    lastmod: '2026-11-08',\n  },\n  '/universities': {\n    title: 'Universities in Sierra Leone: Courses & WASSCE Entry Requirements',\n    description: 'Compare universities in Sierra Leone, explore programmes and WASSCE entry requirements, and follow official admissions links for each institution.',\n    lastmod: '2026-11-08',\n  },\n  '/affiliate': {
     title: 'WASSCE Tutor Affiliate Programme | Earn from Student Referrals',
     description: 'Join the WASSCE Tutor affiliate programme. Share a tracked referral link and earn 50% of a referred student’s first verified subscription payment.',
     lastmod: '2026-11-08',
@@ -202,7 +202,7 @@ const PAGE_JSON_LD: Partial<Record<PublicPath, Record<string, unknown>[]>> = {
   '/about': [ABOUT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['About', '/about']])],
   '/contact': [CONTACT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['Contact', '/contact']])],
   '/tutors': [breadcrumbJsonLd([['Home', '/'], ['Tutors', '/tutors']])],
-  '/affiliate': [breadcrumbJsonLd([['Home', '/'], ['Affiliate programme', '/affiliate']])],
+  '/affiliate': [breadcrumbJsonLd([['Home', '/'], ['Affiliate programme', '/affiliate']])],\n  '/blog': [breadcrumbJsonLd([['Home', '/'], ['Blog', '/blog']])],\n  '/universities': [breadcrumbJsonLd([['Home', '/'], ['Universities', '/universities']])],
 }
 
 type IndexablePage = {
@@ -215,18 +215,18 @@ type IndexablePage = {
 }
 
 /** Tags for an indexable page: unique title + description, self canonical, OG/Twitter text, optional JSON-LD. */
-export function indexablePageTags({ path, title, description, ogTitle = title, jsonLd: data = [] }: IndexablePage): HeadTags {
+export function indexablePageTags({ path, title, description, ogTitle = title, jsonLd: data = [], image = `${SITE.origin}/og-image.jpg`, type = 'website' }: IndexablePage): HeadTags {
   const url = absoluteUrl(path)
   return {
     meta: [
       { title },
       { name: 'description', content: description },
       { name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large' },
-      { property: 'og:title', content: ogTitle },
+      { property: 'og:type', content: type },\n      { property: 'og:image', content: image },\n      { property: 'og:image:alt', content: title },\n      { property: 'og:title', content: ogTitle },
       { property: 'og:description', content: description },
       { property: 'og:url', content: url },
-      { name: 'twitter:title', content: ogTitle },
-      { name: 'twitter:description', content: description },
+      { name: 'twitter:card', content: 'summary_large_image' },\n      { name: 'twitter:image', content: image },\n      { name: 'twitter:title', content: ogTitle },
+      { name: 'twitter:description', content: description },\n      ...(type === 'article' ? [{ property: 'article:published_time', content: '' }, { property: 'article:modified_time', content: '' }] : []),
     ],
     links: [{ rel: 'canonical', href: url }],
     scripts: data.map(jsonLd),
