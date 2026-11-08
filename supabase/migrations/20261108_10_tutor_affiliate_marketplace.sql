@@ -363,11 +363,14 @@ end $$;
 
 create or replace function public.review_affiliate(p_affiliate_id uuid,p_decision text)
 returns void language plpgsql security definer set search_path=public,auth as $$
+declare v_user uuid;
 begin
  if not exists(select 1 from profiles where id=auth.uid() and is_admin=true) then raise exception 'Not authorised'; end if;
  if p_decision not in ('approved','suspended') then raise exception 'Invalid decision'; end if;
- update affiliates set status=p_decision,approved_at=case when p_decision='approved' then now() else approved_at end,approved_by=auth.uid() where id=p_affiliate_id;
- if not found then raise exception 'Affiliate not found'; end if;
+ update affiliates set status=p_decision,approved_at=case when p_decision='approved' then now() else approved_at end,approved_by=auth.uid() where id=p_affiliate_id returning user_id into v_user;
+ if v_user is null then raise exception 'Affiliate not found'; end if;
+ insert into user_notifications(recipient_id,actor_id,event_type,title,body,entity_type,entity_id)
+ values(v_user,auth.uid(),'affiliate_'||p_decision,'Affiliate account '||p_decision,'Your WASSCE Tutor affiliate account status is now '||p_decision||'.','affiliate',p_affiliate_id);
 end $$;
 
 create or replace function public.request_affiliate_payout(p_amount numeric,p_method text,p_name text,p_number text)
@@ -390,12 +393,16 @@ end $$;
 
 create or replace function public.review_affiliate_commission(p_commission_id uuid,p_decision text)
 returns void language plpgsql security definer set search_path=public,auth as $$
+declare v_user uuid;
 begin
  if not exists(select 1 from profiles where id=auth.uid() and is_admin=true) then raise exception 'Not authorised'; end if;
  if p_decision not in ('approved','reversed') then raise exception 'Invalid decision'; end if;
- update affiliate_commissions set status=p_decision,approved_at=case when p_decision='approved' then now() else approved_at end
- where id=p_commission_id and status='pending';
- if not found then raise exception 'Commission not found or already reviewed'; end if;
+ update affiliate_commissions c set status=p_decision,approved_at=case when p_decision='approved' then now() else approved_at end
+ where c.id=p_commission_id and c.status='pending'
+ returning (select a.user_id from affiliates a where a.id=c.affiliate_id) into v_user;
+ if v_user is null then raise exception 'Commission not found or already reviewed'; end if;
+ insert into user_notifications(recipient_id,actor_id,event_type,title,body,entity_type,entity_id)
+ values(v_user,auth.uid(),'commission_'||p_decision,'Affiliate commission '||p_decision,'A first-payment referral commission was '||p_decision||'.','commission',p_commission_id);
 end $$;
 
 create or replace function public.review_affiliate_payout(p_payout_id uuid,p_decision text,p_note text default null)
