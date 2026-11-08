@@ -8,8 +8,9 @@ export const Route = createFileRoute('/blog/')({
   ssr: true,
   head: () => indexablePageTags({
     path: '/blog',
-    title: 'WASSCE Tutor Blog: WASSCE Advice & University Guides in Sierra Leone',
+    title: 'WASSCE Tutor Blog: Study & University Guides',
     description: 'Research-backed WASSCE study advice, Sierra Leone university admissions guides, subject planning and practical resources for students and families.',
+    image: BLOG_POSTS[0].image,
     jsonLd: [
       { '@context': 'https://schema.org', '@type': 'Blog', name: 'WASSCE Tutor Blog', url: absoluteUrl('/blog'), inLanguage: 'en', publisher: { '@type': 'Organization', name: SITE.name, url: SITE.origin } },
       { '@context': 'https://schema.org', '@type': 'ItemList', name: 'WASSCE Tutor editorial articles', itemListElement: BLOG_POSTS.map((post,i) => ({ '@type': 'ListItem', position: i+1, url: absoluteUrl(`/blog/${post.slug}`), name: post.title })) },
