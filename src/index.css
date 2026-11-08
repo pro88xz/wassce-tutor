@@ -1832,3 +1832,98 @@ a.subject-directory-card:hover .subject-directory-action span { transform: trans
 @media (max-width:640px) {
   .app-page-legal { padding-inline:.15rem; }
 }
+
+
+/* Pricing reassurance: editorial trust strip, not four boxed widgets. */
+.plans-section .plan-assurances {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  padding: 1.5rem 0 0;
+  border-top: 1px solid #e8eaf0;
+  background: transparent;
+}
+.plans-section .plan-assurance-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-content: start;
+  align-items: start;
+  gap: .8rem;
+  min-width: 0;
+  min-height: 0;
+  padding: .35rem 1.25rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.plans-section .plan-assurance-card + .plan-assurance-card {
+  border-left: 1px solid #e8eaf0;
+}
+.plans-section .plan-assurance-icon {
+  display: flex;
+  width: auto;
+  height: auto;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: .1rem 0 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #6543bd;
+}
+.plans-section .plan-assurance-icon svg {
+  display: block;
+  width: 1.35rem;
+  height: 1.35rem;
+  stroke-width: 1.8;
+}
+.plans-section .plan-assurance-copy {
+  display: grid;
+  gap: .35rem;
+  min-width: 0;
+}
+.plans-section .plan-assurance-title {
+  font-size: .88rem;
+  font-weight: 750;
+  line-height: 1.35;
+  letter-spacing: -.02em;
+}
+.plans-section .plan-assurance-body {
+  max-width: 25rem;
+  color: #687184;
+  font-size: .78rem;
+  line-height: 1.65;
+}
+@media (max-width: 900px) {
+  .plans-section .plan-assurances {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 1.35rem;
+  }
+  .plans-section .plan-assurance-card:nth-child(3) {
+    border-left: 0;
+  }
+  .plans-section .plan-assurance-card:nth-child(3),
+  .plans-section .plan-assurance-card:nth-child(4) {
+    padding-top: 1.25rem;
+    border-top: 1px solid #e8eaf0;
+  }
+}
+@media (max-width: 520px) {
+  .plans-section .plan-assurances {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    padding-top: .8rem;
+  }
+  .plans-section .plan-assurance-card,
+  .plans-section .plan-assurance-card:nth-child(3),
+  .plans-section .plan-assurance-card:nth-child(4) {
+    padding: 1rem .15rem;
+    border: 0;
+    border-bottom: 1px solid #edf0f4;
+  }
+  .plans-section .plan-assurance-card:last-child {
+    border-bottom: 0;
+  }
+}
