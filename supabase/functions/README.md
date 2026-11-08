@@ -6,7 +6,7 @@ The application code is deployed by Vercel. The database migration and Supabase 
 
 Run the complete file below in the Supabase SQL Editor for the production project:
 
-`supabase/migrations/20261108_10_tutor_affiliate_marketplace.sql`
+`supabase/migrations/20261108_11_tutor_affiliate_marketplace.sql`
 
 The migration is additive and does not change Monime checkout initiation, payment verification, existing payment rows or subscription access logic.
 
@@ -24,12 +24,15 @@ The function source is:
 
 `supabase/functions/send-notification-email/index.ts`
 
-From a Supabase CLI workspace already linked to the production project:
+Deploy through the GitHub Actions workflow `.github/workflows/deploy-notification-email.yml` on branch `feature/tutor-affiliate-platform`.
 
-```sh
-supabase secrets set RESEND_API_KEY=<verified-resend-api-key> EMAIL_FROM=<verified-sender-address> APP_ORIGIN=https://wasscetutor.com
-supabase functions deploy send-notification-email
-```
+Add these GitHub Actions repository secrets before running it:
+- `SUPABASE_ACCESS_TOKEN`: a Supabase personal access token.
+- `SUPABASE_PROJECT_REF`: the project reference from the Supabase project URL.
+- `RESEND_API_KEY`: the API key for the verified Resend account.
+- `EMAIL_FROM`: a sender address or sender identity verified in Resend.
+
+The workflow sets `APP_ORIGIN=https://wasscetutor.com`, updates the three Edge Function secrets, and deploys only `send-notification-email`. It does not expose the database password or service-role key to the browser.
 
 Supabase supplies `SUPABASE_URL`, `SUPABASE_ANON_KEY` and `SUPABASE_SERVICE_ROLE_KEY` to deployed Edge Functions. Do not put the service-role key in browser code or Vercel public environment variables.
 
@@ -39,8 +42,8 @@ The sender domain/address must already be verified in Resend. The function verif
 
 1. Confirm the Vercel preview build is green.
 2. Apply the database migration.
-3. Set the three email secrets and deploy the Edge Function.
-4. Merge the approved PR to `main), allowing Vercel to deploy production.
+3. Configure the four GitHub Actions secrets and run the notification deployment workflow.
+4. Merge the approved PR to `main`, allowing Vercel to deploy production.
 5. Test with dedicated accounts: student, tutor applicant, approved tutor, affiliate and admin.
 6. Verify booking conflict rejection, status transitions, realtime inbox updates, email delivery, first-payment commission idempotency and payout reservation/release.
 
