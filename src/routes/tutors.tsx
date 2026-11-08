@@ -72,7 +72,7 @@ function TutorMarketplace() {
         p_message: message.trim() || null,
       })
       if (bookingError) throw bookingError
-      await supabase.functions.invoke('send-notification-email', { body: { entity_id: data } })
+      await supabase.functions.invoke('send-notification-email', { body: { entity_id: data, event_type: 'booking_requested' } })
       setNotice('Your request has been sent. The tutor will respond shortly.')
       setSelected(null); setStartsAt(''); setMessage('')
     } catch (err) {
