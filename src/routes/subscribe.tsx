@@ -245,7 +245,7 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
           {active ? (
             <>Your {planById(profile?.subscription_plan)?.name ?? 'plan'} runs until <strong className="text-foreground">{formatDate(profile!.subscription_expires_at!)}</strong>. A new plan adds its time on top.</>
           ) : (
-            'One payment. Every lesson, every practice set and the AI tutor, for the whole plan.'
+            'Unlock every lesson, every practice set and the AI tutor. Choose monthly flexibility or save with yearly access.'
           )}
         </p>
       </header>
@@ -281,7 +281,7 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
             {busy ? 'Preparing secure USSD payment…' : `Pay ${plan.priceNle} NLe`}
           </button>
           <p className="flex items-center justify-center gap-1.5 text-center text-sm text-muted-foreground">
-            <ShieldCheck className="h-4 w-4 shrink-0 text-success" aria-hidden /> Fixed-price, one-time Monime USSD payment. Your plan activates after confirmation.
+            <ShieldCheck className="h-4 w-4 shrink-0 text-success" aria-hidden /> One-time Monime USSD payment. No automatic renewal. Access starts after confirmation.
           </p>
         </div>
       ) : (
@@ -351,7 +351,7 @@ function PlanCards({ selected, onSelect, interactive = true }: { selected: PlanI
               on ? 'ring-2 ring-primary shadow-[0_16px_32px_-20px_rgba(76,29,149,0.6)]' : 'ring-1 ring-border hover:ring-primary/40'
             }`}
           >
-            {p.best && <span className="absolute -top-2.5 left-5 rounded-full bg-primary px-2.5 py-0.5 text-xs font-bold text-primary-foreground">Best value</span>}
+            {p.best && <span className="absolute -top-2.5 left-5 rounded-full bg-primary px-2.5 py-0.5 text-xs font-bold text-primary-foreground">Save 75%</span>}
             <span className="flex items-center justify-between gap-2">
               <span className="font-bold">{p.name}</span>
               {interactive && (
@@ -360,11 +360,14 @@ function PlanCards({ selected, onSelect, interactive = true }: { selected: PlanI
                 </span>
               )}
             </span>
-            <span className="mt-2 text-4xl font-bold tracking-tight tabular-nums">
-              {p.priceNle}<span className="ml-1 text-base font-semibold text-muted-foreground">NLe</span>
+            <span className="mt-3 flex items-baseline gap-1.5 tabular-nums">
+              <span className="text-4xl font-bold tracking-tight">{p.priceNle}</span>
+              <span className="text-base font-semibold text-muted-foreground">NLe</span>
+              <span className="text-sm font-medium text-muted-foreground">/ {p.id === 'term' ? 'month' : 'year'}</span>
             </span>
-            <span className="text-sm font-semibold text-muted-foreground">for {p.length}</span>
+            <span className="text-sm font-semibold text-muted-foreground">{p.billing}</span>
             <span className="mt-2 text-sm text-muted-foreground">{p.blurb}</span>
+            {p.savings && <span className="mt-2 rounded-xl bg-success/10 px-3 py-2 text-sm font-semibold text-success">{p.savings}</span>}
           </Tag>
         )
       })}

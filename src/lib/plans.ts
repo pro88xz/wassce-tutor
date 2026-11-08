@@ -1,7 +1,6 @@
 // The two paid plans and what the free account includes.
-// KEEP IN SYNC with api/_lib/plans.js (what the server charges) and
-// supabase/migrations/20261107_07_plans_and_monime.sql (plan_months,
-// plan_price_nle and the payment_requests policy).
+// KEEP IN SYNC with api/_lib/plans.js and the monthly/yearly pricing migration.
+// Internal IDs 'term' and 'year' are intentionally retained for payment history.
 
 export type PlanId = 'term' | 'year'
 
@@ -12,27 +11,32 @@ export type Plan = {
   months: number
   /** How long, in words */
   length: string
-  /** One line under the name */
+  /** Card description and billing cadence */
   blurb: string
+  billing: string
+  savings?: string
   best?: boolean
 }
 
 export const PLANS: Plan[] = [
   {
     id: 'term',
-    name: 'Term pass',
-    priceNle: 10,
-    months: 4,
-    length: '4 months',
-    blurb: 'One school term of full access',
+    name: 'Monthly',
+    priceNle: 25,
+    months: 1,
+    length: '1 month',
+    billing: 'Billed monthly',
+    blurb: 'Full access for one month. Pay once; no automatic renewal.',
   },
   {
     id: 'year',
-    name: 'Academic year',
-    priceNle: 25,
+    name: 'Yearly',
+    priceNle: 75,
     months: 12,
     length: '12 months',
-    blurb: 'A full school year, right up to WASSCE',
+    billing: 'Billed once yearly',
+    blurb: 'Just NLe 6.25 per month, paid once for 12 months.',
+    savings: 'Save NLe 225 (75%) compared with 12 monthly payments.',
     best: true,
   },
 ]
