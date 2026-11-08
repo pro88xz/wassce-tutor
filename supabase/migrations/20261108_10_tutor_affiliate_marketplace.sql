@@ -232,6 +232,9 @@ create policy "Tutors upload own profile image" on storage.objects for insert to
 create policy "Public read tutor profile images" on storage.objects for select to anon,authenticated using (bucket_id='tutor-profile-images');
 
 create policy "Users upload own tutor evidence" on storage.objects for insert to authenticated with check (bucket_id='tutor-verification-docs' and (storage.foldername(name))[1]=auth.uid()::text);
+create policy "Users delete own tutor evidence uploads" on storage.objects for delete to authenticated using (bucket_id='tutor-verification-docs' and (storage.foldername(name))[1]=auth.uid()::text);
+create policy "Users delete own tutor profile images" on storage.objects for delete to authenticated using (bucket_id='tutor-profile-images' and (storage.foldername(name))[1]=auth.uid()::text);
+
 create policy "Users read own tutor evidence" on storage.objects for select to authenticated using (bucket_id='tutor-verification-docs' and ((storage.foldername(name))[1]=auth.uid()::text or exists(select 1 from public.profiles p where p.id=auth.uid() and p.is_admin)));
 
 -- All state transitions and monetary writes are server-side security-definer RPCs.
@@ -249,6 +252,14 @@ begin
   if jsonb_typeof(p_subjects) <> 'array' or jsonb_array_length(p_subjects) < 1 or jsonb_array_length(p_subjects) > 12 then
     raise exception 'Select between 1 and 12 subjects';
   end if;
+  if p_document_path is not null and (
+    split_part(p_document_path,'/',1) <> auth.uid()::text
+    or not exists(select 1 from storage.objects where bucket_id='tutor-verification-docs' and name=p_document_path)
+  ) then raise exception 'Invalid qualification document'; end if;
+  if p_avatar_path is not null and (
+    split_part(p_avatar_path,'/',1) <> auth.uid()::text
+    or not exists(select 1 from storage.objects where bucket_id='tutor-profile-images' and name=p_avatar_path)
+  ) then raise exception 'Invalid profile photograph'; end if;
   insert into tutor_applications(user_id,full_name,phone,bio,qualifications,experience_years,location,teaching_mode,document_path,avatar_path)
   values(auth.uid(),trim(p_full_name),trim(p_phone),trim(p_bio),trim(p_qualifications),p_experience_years,trim(p_location),p_teaching_mode,p_document_path,p_avatar_path)
   returning id into v_id;
