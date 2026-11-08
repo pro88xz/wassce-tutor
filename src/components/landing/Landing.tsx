@@ -131,7 +131,7 @@ function Hero({ data }: { data: LandingData }) {
         </div>
       </div>
       <div className="relative border-t border-white/10 bg-black/10">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 divide-x divide-white/10 px-5 py-5 sm:grid-cols-4 sm:px-8">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 divide-x divide-white/10 px-5 py-5 lg:grid-cols-4 sm:px-8">
           {[
             [String(data.totals.subjects), 'WASSCE subjects'],
             [String(data.totals.topics), 'syllabus topics'],
@@ -158,9 +158,9 @@ function TrustStrip() {
     { title: 'Independent study platform', body: 'Not an official WAEC service or examination body.' },
   ]
   return (
-    <section aria-label="WASSCE Tutor at a glance" className="trust-strip relative z-10 mx-auto -mt-1 grid max-w-6xl grid-cols-2 overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-[0_18px_50px_-38px_rgba(20,20,40,.45)] sm:grid-cols-4">
+    <section aria-label="WASSCE Tutor at a glance" className="trust-strip relative z-10 mx-auto mt-5 mb-8 grid max-w-6xl grid-cols-2 overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-[0_18px_50px_-38px_rgba(20,20,40,.45)] lg:grid-cols-4">
       {items.map((item, index) => (
-        <div key={item.title} className={'trust-strip-item flex min-h-[7.25rem] flex-col justify-center gap-1.5 px-4 py-4 sm:px-5 ' + (index ? 'border-l border-slate-100 ' : '') + (index > 1 ? 'border-t border-slate-100 sm:border-t-0' : '')}>
+        <div key={item.title} className="trust-strip-item flex min-h-[7.25rem] flex-col justify-center gap-1.5 px-4 py-4 sm:px-5">
           <span className="text-[11px] font-extrabold uppercase tracking-[.12em] text-primary">{item.title}</span>
           <span className="text-xs leading-relaxed text-slate-600 sm:text-[13px]">{item.body}</span>
         </div>

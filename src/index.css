@@ -2140,3 +2140,16 @@ a.subject-directory-card:hover .subject-directory-action span { transform: trans
   }
   .plans-section ul.plan-assurances > li.plan-assurance-card:last-child { border-bottom: 0; }
 }
+
+
+/* Homepage top fold: separate hero proof from the trust statement and keep the two core subjects balanced. */
+.trust-strip { margin-top: 1.25rem; margin-bottom: 2rem; }
+.trust-strip-item { border-top: 1px solid #f1f2f6; }
+.trust-strip-item:nth-child(-n+2) { border-top: 0; }
+.trust-strip-item:nth-child(even) { border-left: 1px solid #f1f2f6; }
+@media (min-width: 1024px) {
+  .trust-strip { margin-bottom: 2.5rem; }
+  .trust-strip-item, .trust-strip-item:nth-child(-n+2) { border-top: 0; }
+  .trust-strip-item:nth-child(even) { border-left: 1px solid #f1f2f6; }
+  .trust-strip-item:first-child { border-left: 0; }
+}
