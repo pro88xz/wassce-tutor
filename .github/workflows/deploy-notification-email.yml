@@ -64,4 +64,4 @@ jobs:
           SUPABASE_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
         run: |
           set -euo pipefail
-          supabase functions deploy send-notification-email --project-ref "$SUPABASE_PROJECT_REF"
+          supabase functions deploy send-notification-email --remote="$SUPABASE_PROJECT_REF"
