@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
 import { ArrowLeft, CheckCircle2, FileUp, GraduationCap, ShieldCheck } from 'lucide-react'
-import { privateHead } from '@/lib/seo'
+import { publicHead } from '@/lib/seo'
 import { supabase } from '@/lib/supabase'
 import { useAuth } from '@/lib/auth'
 
@@ -9,7 +9,8 @@ type Subject = { id: string; name: string }
 type SelectedSubject = { subject_id: string; price_nle: string }
 
 export const Route = createFileRoute('/become-a-tutor')({
-  head: privateHead('Become a tutor'),
+  ssr: true,
+  head: publicHead('/become-a-tutor'),
   component: BecomeTutor,
 })
 
@@ -82,8 +83,7 @@ function BecomeTutor() {
     } finally { setBusy(false) }
   }
 
-  if (authLoading) return <div className="mx-auto h-64 max-w-3xl animate-pulse rounded-3xl bg-muted"/>
-  if (!user) return <div className="mx-auto max-w-lg rounded-3xl border bg-card p-8 text-center"><GraduationCap className="mx-auto h-10 w-10 text-primary"/><h1 className="mt-3 text-2xl font-bold">Become a WASSCE Tutor</h1><p className="mt-2 text-sm text-muted-foreground">Sign in or create an account to start your tutor application.</p><Link to="/auth" search={{ intent: "tutor" } as never} className="mt-5 inline-flex min-h-11 items-center rounded-xl bg-primary px-5 font-semibold text-primary-foreground">Continue to sign in</Link></div>
+  if (!user) return <main className="mx-auto w-full max-w-5xl space-y-8 pb-16"><section className="overflow-hidden rounded-[2rem] bg-[#21134d] p-7 text-white sm:p-10"><p className="text-xs font-bold uppercase tracking-[.18em] text-violet-200">Teach with WASSCE Tutor</p><h1 className="mt-3 max-w-3xl text-3xl font-bold tracking-tight sm:text-5xl">Become a WASSCE Tutor in Sierra Leone.</h1><p className="mt-4 max-w-2xl text-base leading-relaxed text-white/75">Reach students preparing for their WASSCE. Create a teaching profile, choose the subjects you support, set your session rates and manage booking requests from a dedicated tutor workspace.</p><div className="mt-7 flex flex-wrap gap-3"><Link to="/auth" search={{ intent: 'tutor' } as never} className="inline-flex min-h-12 items-center rounded-xl bg-white px-5 text-sm font-bold text-[#21134d]">Create tutor account</Link><Link to="/tutors" className="inline-flex min-h-12 items-center rounded-xl border border-white/25 px-5 text-sm font-semibold text-white">View tutor marketplace</Link></div></section><section className="grid gap-4 sm:grid-cols-3"><article className="rounded-2xl border bg-card p-5"><h2 className="font-bold">Your teaching profile</h2><p className="mt-2 text-sm leading-relaxed text-muted-foreground">Submit your qualifications, teaching biography, subjects, availability and profile photo for review.</p></article><article className="rounded-2xl border bg-card p-5"><h2 className="font-bold">Your own workspace</h2><p className="mt-2 text-sm leading-relaxed text-muted-foreground">After account creation, continue in the tutor dashboard—not the student learning dashboard.</p></article><article className="rounded-2xl border bg-card p-5"><h2 className="font-bold">Bookings and earnings</h2><p className="mt-2 text-sm leading-relaxed text-muted-foreground">Manage incoming booking requests, session status, profile settings and payout information from one place.</p></article></section><section className="rounded-2xl border bg-card p-6"><h2 className="text-xl font-bold">How tutor approval works</h2><ol className="mt-4 grid gap-4 sm:grid-cols-3">{[['01','Create your tutor account','Choose the tutor path from this page and create an account.'],['02','Submit your profile','Provide your academic background, subjects, teaching preferences and supporting details.'],['03','Wait for review','Profiles are reviewed before tutors appear in the public marketplace.']].map(([n,h,p])=><li key={n}><span className="text-xs font-bold text-primary">{n}</span><h3 className="mt-2 font-bold">{h}</h3><p className="mt-1 text-sm leading-relaxed text-muted-foreground">{p}</p></li>)}</ol></section><p className="text-center text-xs text-muted-foreground">WASSCE Tutor is an independent learning platform. Tutor applications are reviewed before public listing; submitting an application does not guarantee approval.</p></main>
 
   return <div className="mx-auto w-full max-w-5xl space-y-8 pb-16">
     <Link to="/tutors" className="inline-flex min-h-10 items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-primary"><ArrowLeft className="h-4 w-4"/> Tutor marketplace</Link>
