@@ -261,10 +261,10 @@ begin
  update tutors set bio=trim(p_bio),location=trim(p_location),teaching_mode=p_teaching_mode,updated_at=now()
  where user_id=auth.uid() and status='active';
  if not found then raise exception 'Approved tutor account required'; end if;
-end $;
+end $$;
 
 create or replace function public.update_tutor_subject_prices(p_subjects jsonb)
-returns void language plpgsql security definer set search_path=public,auth as $
+returns void language plpgsql security definer set search_path=public,auth as $$
 declare v_tutor uuid; v_item jsonb; v_subject uuid; v_price numeric;
 begin
  select id into v_tutor from tutors where user_id=auth.uid() and status='active';
@@ -276,7 +276,7 @@ begin
   if v_price<=0 or v_price>100 or not exists(select 1 from subjects where id=v_subject) then raise exception 'Invalid subject or rate'; end if;
   insert into tutor_subjects(tutor_id,subject_id,price_nle) values(v_tutor,v_subject,v_price);
  end loop;
-end $;
+end $$;
 
 create or replace function public.set_tutor_availability(p_slots jsonb)
 returns void language plpgsql security definer set search_path=public,auth as $$
@@ -396,7 +396,7 @@ begin
  update affiliate_commissions set status=p_decision,approved_at=case when p_decision='approved' then now() else approved_at end
  where id=p_commission_id and status='pending';
  if not found then raise exception 'Commission not found or already reviewed'; end if;
-end $;
+end $$;
 
 create or replace function public.review_affiliate_payout(p_payout_id uuid,p_decision text,p_note text default null)
 returns void language plpgsql security definer set search_path=public,auth as $$
@@ -418,7 +418,7 @@ end $$;
 
 -- A commission is earned only on the referred user's first verified payment.
 create or replace function public.capture_signup_affiliate_referral()
-returns trigger language plpgsql security definer set search_path=public as $
+returns trigger language plpgsql security definer set search_path=public as $$
 declare v_affiliate uuid; v_code text;
 begin
  v_code := upper(trim(coalesce(new.raw_user_meta_data->>'affiliate_code','')));
@@ -429,7 +429,7 @@ begin
    end if;
  end if;
  return new;
-end $;
+end $$;
 drop trigger if exists auth_user_affiliate_attribution on auth.users;
 create trigger auth_user_affiliate_attribution after insert on auth.users
 for each row execute function public.capture_signup_affiliate_referral();
