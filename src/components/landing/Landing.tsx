@@ -665,7 +665,11 @@ function FinalCta() {
           <Link to="/auth" className="inline-flex min-h-12 py-2 w-full items-center justify-center rounded-xl bg-primary px-7 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong sm:w-auto text-center">
             Start free
           </Link>
-          <DownloadButton variant="outline" />
+          <span className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-primary/20 bg-white px-5 py-2 text-sm font-semibold text-brand-deep">
+            <Smartphone className="h-4 w-4 text-primary" aria-hidden />
+            Android app
+            <span className="rounded-full bg-amber-100 px-2 py-1 text-[9px] font-extrabold uppercase tracking-[.1em] text-amber-800">Coming soon</span>
+          </span>
         </div>
       </div>
     </section>
