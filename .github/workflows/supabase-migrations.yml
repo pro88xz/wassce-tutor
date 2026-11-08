@@ -1,0 +1,77 @@
+name: Apply tutor marketplace database migration
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wassce-tutor-marketplace-db-migration
+  cancel-in-progress: false
+
+jobs:
+  apply-tutor-marketplace-migration:
+    name: Apply the single reviewed tutor marketplace migration
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment: production
+    if: github.ref == 'refs/heads/feature/tutor-affiliate-platform'
+    steps:
+      - name: Check out the selected feature branch
+        uses: actions/checkout@v4
+
+      - name: Validate migration and database secret
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          test -n "$SUPABASE_DB_URL" || { echo "Missing SUPABASE_DB_URL GitHub Actions secret"; exit 1; }
+          test -s "supabase/migrations/20261108_11_tutor_affiliate_marketplace.sql" || { echo "Target migration file is missing"; exit 1; }
+          grep -qiE '^begin;' supabase/migrations/20261108_11_tutor_affiliate_marketplace.sql
+          grep -qiE '^commit;' supabase/migrations/20261108_11_tutor_affiliate_marketplace.sql
+
+      - name: Install PostgreSQL client
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes postgresql-client
+
+      - name: Apply exactly one migration transactionally
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          MIGRATION_VERSION: "20261108_11_tutor_affiliate_marketplace"
+        run: |
+          set -euo pipefail
+
+          # Create a private deployment ledger. It is not exposed through the Supabase API.
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 <<'SQL'
+          create schema if not exists wassce_internal;
+          revoke all on schema wassce_internal from public, anon, authenticated;
+          create table if not exists wassce_internal.deployed_migrations (
+            version text primary key,
+            sha256 text not null,
+            applied_at timestamptz not null default now()
+          );
+          revoke all on all tables in schema wassce_internal from public, anon, authenticated;
+          SQL
+
+          APPLIED="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select exists (select 1 from wassce_internal.deployed_migrations where version = '$MIGRATION_VERSION');" | tr -d '[:space:]')"
+          if [[ "$APPLIED" == "t" ]]; then
+            echo "Migration $MIGRATION_VERSION is already recorded; nothing to do."
+            exit 0
+          fi
+
+          CHECKSUM="$(sha256sum supabase/migrations/20261108_11_tutor_affiliate_marketplace.sql | cut -d ' ' -f 1)"
+
+          # The migration file has its own BEGIN/COMMIT. Strip only those wrapper
+          # statements so the migration and its ledger record commit atomically.
+          {
+            echo "begin;"
+            echo "do \$\$ begin if exists (select 1 from wassce_internal.deployed_migrations where version = '$MIGRATION_VERSION') then raise exception 'Migration already applied'; end if; end \$\$;"
+            sed '1{/^[[:space:]]*begin;[[:space:]]*$/Id;}; ${/^[[:space:]]*commit;[[:space:]]*$/Id;}' supabase/migrations/20261108_11_tutor_affiliate_marketplace.sql
+            printf "insert into wassce_internal.deployed_migrations(version, sha256) values ('%s', '%s');\n" "$MIGRATION_VERSION" "$CHECKSUM"
+            echo "commit;"
+          } | psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1
+
+          echo "Migration applied and recorded successfully."
