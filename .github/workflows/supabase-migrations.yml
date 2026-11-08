@@ -70,7 +70,7 @@ jobs:
             echo "begin;"
             echo "do \$\$ begin if exists (select 1 from wassce_internal.deployed_migrations where version = '$MIGRATION_VERSION') then raise exception 'Migration already applied'; end if; end \$\$;"
             sed '1{/^[[:space:]]*begin;[[:space:]]*$/Id;}; ${/^[[:space:]]*commit;[[:space:]]*$/Id;}' supabase/migrations/20261108_11_tutor_affiliate_marketplace.sql
-            printf "insert into wassce_internal.deployed_migrations(version, sha256) values ('%s', '%s');\\n" "$MIGRATION_VERSION" "$CHECKSUM"
+            printf "insert into wassce_internal.deployed_migrations(version, sha256) values ('%s', '%s');\n" "$MIGRATION_VERSION" "$CHECKSUM"
             echo "commit;"
           } | psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1
 
