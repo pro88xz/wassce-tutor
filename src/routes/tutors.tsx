@@ -7,6 +7,7 @@ import { useAuth } from '@/lib/auth'
 
 type Tutor = {
   id: string
+  avatar_path: string | null
   full_name: string
   bio: string
   qualifications: string
@@ -14,6 +15,8 @@ type Tutor = {
   location: string
   teaching_mode: 'online' | 'in_person' | 'both'
   tutor_subjects: { subject_id: string; price_nle: number; subject: { id: string; name: string } | null }[]
+  tutor_availability: {weekday:number;starts_at:string;ends_at:string}[]
+  tutor_booking_reviews: {rating:number}[]
 }
 
 export const Route = createFileRoute('/tutors')({
@@ -40,7 +43,7 @@ function TutorMarketplace() {
   useEffect(() => {
     let active = true
     void Promise.all([
-      supabase.from('tutors').select('id,full_name,bio,qualifications,experience_years,location,teaching_mode,tutor_subjects(subject_id,price_nle,subject:subjects(id,name))').eq('status', 'active').order('verified_at', { ascending: false }),
+      supabase.from('tutors').select('id,avatar_path,full_name,bio,qualifications,experience_years,location,teaching_mode,tutor_subjects(subject_id,price_nle,subject:subjects(id,name)),tutor_availability(weekday,starts_at,ends_at),tutor_booking_reviews(rating)').eq('status', 'active').order('verified_at', { ascending: false }),
       supabase.from('subjects').select('id,name').order('name'),
     ]).then(([tutorResult, subjectResult]) => {
       if (!active) return
@@ -106,12 +109,14 @@ function TutorMarketplace() {
           visible.length === 0 ? <div className="rounded-2xl border bg-card p-10 text-center"><GraduationCap className="mx-auto h-9 w-9 text-muted-foreground"/><h3 className="mt-3 font-bold">No tutors match this search yet</h3><p className="mt-1 text-sm text-muted-foreground">Try another subject or check back as new tutors are approved.</p></div> :
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">{visible.map((tutor) => (
             <article key={tutor.id} className="flex flex-col rounded-2xl border bg-card p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
-              <div className="flex items-start justify-between gap-3"><div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-100 text-violet-800"><GraduationCap className="h-6 w-6"/></div><span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-700"><ShieldCheck className="h-3.5 w-3.5"/> Approved</span></div>
+              <div className="flex items-start justify-between gap-3"><div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl bg-violet-100 text-violet-800">{tutor.avatar_path?<img src={supabase.storage.from('tutor-profile-images').getPublicUrl(tutor.avatar_path).data.publicUrl} alt={tutor.full_name} className="h-full w-full object-cover"/>:<GraduationCap className="h-6 w-6"/>}</div><span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-700"><ShieldCheck className="h-3.5 w-3.5"/> Approved</span></div>
               <h3 className="mt-4 text-lg font-bold">{tutor.full_name}</h3>
+              {tutor.tutor_booking_reviews.length>0&&<p className="mt-1 text-xs font-semibold text-amber-700">★ {(tutor.tutor_booking_reviews.reduce((sum,r)=>sum+r.rating,0)/tutor.tutor_booking_reviews.length).toFixed(1)} · {tutor.tutor_booking_reviews.length} verified {tutor.tutor_booking_reviews.length===1?'review':'reviews'}</p>}
               <p className="mt-1 text-sm text-muted-foreground">{tutor.qualifications} · {tutor.experience_years} years' experience</p>
               <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-muted-foreground">{tutor.bio}</p>
               <p className="mt-3 flex items-center gap-1.5 text-xs text-muted-foreground"><MapPin className="h-3.5 w-3.5"/>{tutor.location} · {tutor.teaching_mode === 'both' ? 'Online & in person' : tutor.teaching_mode === 'online' ? 'Online' : 'In person'}</p>
               <div className="mt-4 flex flex-wrap gap-2">{tutor.tutor_subjects.map((s) => <span key={s.subject_id} className="rounded-lg bg-muted px-2.5 py-1.5 text-xs font-medium">{s.subject?.name} · NLe {s.price_nle}</span>)}</div>
+              <div className="mt-3 border-t pt-3"><p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">Weekly availability</p><div className="mt-2 flex flex-wrap gap-1.5">{tutor.tutor_availability.map((slot)=><span key={slot.weekday+'-'+slot.starts_at} className="rounded-md bg-violet-50 px-2 py-1 text-[11px] font-medium text-violet-800">{['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][slot.weekday]} {String(slot.starts_at).slice(0,5)}–{String(slot.ends_at).slice(0,5)}</span>)}</div></div>
               <button type="button" onClick={() => { setSelected(tutor); setSubjectId(tutor.tutor_subjects[0]?.subject_id ?? '') }} className="mt-5 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-primary-foreground hover:bg-brand-strong"><CalendarDays className="h-4 w-4"/> Request a session</button>
             </article>
           ))}</div>}
