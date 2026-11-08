@@ -888,8 +888,8 @@ section[aria-labelledby="tour-heading"] [role="tabpanel"] [class*="absolute"][cl
 .plans-section .plan-assurance-card {
   display: flex;
   min-height: 100%;
-  align-items: flex-start;
-  gap: .9rem;
+  align-items: center;
+  gap: 1rem;
   padding: 1.1rem;
   border: 1px solid #e2e6ef;
   border-radius: 1.1rem;
@@ -897,16 +897,22 @@ section[aria-labelledby="tour-heading"] [role="tabpanel"] [class*="absolute"][cl
   box-shadow: 0 12px 28px -25px rgb(22 28 43 / 38%);
 }
 .plans-section .plan-assurance-icon {
-  display: flex;
-  width: 2.5rem;
-  height: 2.5rem;
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 2.75rem;
+  place-items: center;
+  border: 1px solid #e5dcff;
+  border-radius: .95rem;
+  background: linear-gradient(145deg, #f5f0ff 0%, #eee7ff 100%);
+  color: #6335c9;
+}
+.plans-section .plan-assurance-icon svg {
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
   flex: 0 0 auto;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #d8efe2;
-  border-radius: .8rem;
-  background: #edf8f1;
-  color: #168253;
+  stroke-width: 2;
 }
 .plans-section .plan-assurance-copy {
   display: grid;
