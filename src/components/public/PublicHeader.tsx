@@ -5,7 +5,7 @@ import { BrandMark } from '@/components/BrandMark'
 import { useAuth } from '@/lib/auth'
 
 const isPublicPath = (p: string) =>
-  ['/', '/about', '/contact', '/privacy', '/terms'].includes(p) || p === '/wassce' || p.startsWith('/wassce/') || p === '/tutors' || p.startsWith('/tutors/')
+  ['/', '/about', '/contact', '/privacy', '/terms'].includes(p) || p === '/wassce' || p.startsWith('/wassce/') || p === '/tutors' || p.startsWith('/tutors/') || p === '/affiliate' || p === '/become-a-tutor'
 
 const NAV = [
   { label: 'Subjects', href: '/wassce/subjects' },
