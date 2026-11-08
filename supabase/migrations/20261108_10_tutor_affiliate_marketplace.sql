@@ -347,6 +347,8 @@ begin
  returning id into v_booking;
  insert into user_notifications(recipient_id,actor_id,event_type,title,body,entity_type,entity_id)
  values(v_owner,auth.uid(),'booking_requested','New tutoring request','A student requested a tutoring session.','booking',v_booking);
+ insert into user_notifications(recipient_id,actor_id,event_type,title,body,entity_type,entity_id)
+ values(auth.uid(),auth.uid(),'booking_request_sent','Booking request sent','Your request was sent to the tutor. You will be notified when they respond.','booking',v_booking);
  return v_booking;
 exception when exclusion_violation then
  raise exception 'That tutor already has a booking during this time. Choose another slot.';
