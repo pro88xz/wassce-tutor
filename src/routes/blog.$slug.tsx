@@ -19,6 +19,8 @@ export const Route = createFileRoute('/blog/$slug')({
     description: loaderData.description,
     image: loaderData.image,
     type: 'article',
+    publishedAt: loaderData.publishedAt,
+    modifiedAt: loaderData.updatedAt,
     jsonLd: [
       {
         '@context': 'https://schema.org',
@@ -49,13 +51,13 @@ function BlogArticlePage() {
       <header className="space-y-5">
         <a href="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-primary"><ArrowLeft className="h-4 w-4"/> All articles</a>
         <div className="max-w-4xl"><p className="text-xs font-bold uppercase tracking-[.16em] text-primary">{post.category}</p><h1 className="mt-3 text-3xl font-bold leading-tight tracking-tight sm:text-5xl">{post.title}</h1><p className="mt-4 max-w-3xl text-lg leading-relaxed text-muted-foreground">{post.description}</p><div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-muted-foreground"><span>WASSCE Tutor Editorial Desk</span><span>Published {new Date(post.publishedAt+'T00:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})}</span><span className="inline-flex items-center gap-1"><Clock3 className="h-3.5 w-3.5"/>{post.readMinutes} min read</span></div></div>
-        <figure className="overflow-hidden rounded-3xl border bg-muted"><img src={post.image} alt={post.imageAlt} className="max-h-[520px] w-full object-cover"/><figcaption className="bg-card px-4 py-3 text-xs text-muted-foreground">Image: {post.imageCredit}. Source: <a href={post.imageCredit.includes('Njala')?'https://njala.edu.sl/':post.imageCredit.includes('Eastern')?'https://etusl.edu.sl/':'https://usl.edu.sl/'} target="_blank" rel="noopener noreferrer" className="underline">official institution website</a>. Rights remain with the original publisher.</figcaption></figure>
+        <figure className="overflow-hidden rounded-3xl border bg-muted"><img src={post.image} alt={post.imageAlt} className="max-h-[520px] w-full object-cover"/><figcaption className="bg-card px-4 py-3 text-xs text-muted-foreground">Image: {post.imageCredit}. Source: <a href={post.imageSourceUrl} target="_blank" rel="noopener noreferrer" className="underline">official institution website</a>. Rights remain with the original publisher.</figcaption></figure>
       </header>
       <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_250px]">
         <article className="min-w-0">
           <p className="mb-8 border-l-4 border-primary pl-5 text-lg leading-relaxed text-foreground">{post.intro}</p>
           <div className="space-y-9">
-            {post.sections.map((section,i)=><section key={section.heading} className="scroll-mt-24"><h2 className="text-2xl font-bold tracking-tight">{section.heading}</h2><div className="mt-4 space-y-4 text-[16px] leading-8 text-muted-foreground">{section.paragraphs?.map((p,j)=><p key={j}>{p}</p>)}</div>{section.bullets&&<ul className="mt-4 space-y-3">{section.bullets.map((b,j)=><li key={j} className="flex gap-3 text-[15px] leading-7 text-muted-foreground"><span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-primary"/><span>{b}</span></li>)}</ul>}</section>)}
+            {post.sections.map((section,i)=><section id={`section-${i}`} key={section.heading} className="scroll-mt-24"><h2 className="text-2xl font-bold tracking-tight">{section.heading}</h2><div className="mt-4 space-y-4 text-[16px] leading-8 text-muted-foreground">{section.paragraphs?.map((p,j)=><p key={j}>{p}</p>)}</div>{section.bullets&&<ul className="mt-4 space-y-3">{section.bullets.map((b,j)=><li key={j} className="flex gap-3 text-[15px] leading-7 text-muted-foreground"><span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-primary"/><span>{b}</span></li>)}</ul>}</section>)}
           </div>
           <section className="mt-10 rounded-2xl border bg-slate-50 p-5 sm:p-7"><h2 className="text-xl font-bold">Primary sources and further reading</h2><p className="mt-2 text-sm leading-relaxed text-muted-foreground">This article is based on the official sources below. Admissions information was checked on 8 November 2026; confirm current details with the institution before applying.</p><ol className="mt-4 space-y-3">{post.sources.map((source,i)=><li key={source.url} className="flex gap-3 text-sm"><span className="text-xs font-bold text-muted-foreground">{String(i+1).padStart(2,'0')}</span><a href={source.url} target="_blank" rel="noopener noreferrer" className="font-medium text-primary underline decoration-primary/30 underline-offset-4">{source.label} <ExternalLink className="inline h-3 w-3"/></a></li>)}</ol>
           <p className="mt-5 text-xs leading-relaxed text-muted-foreground">Editorial note: WASSCE Tutor is an independent education resource. It is not an admissions office and is not affiliated with WAEC or the universities listed.</p></section>
