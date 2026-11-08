@@ -15,7 +15,7 @@ export const Route = createFileRoute('/blog/$slug')({
   staleTime: Infinity,
   head: ({ loaderData }) => loaderData ? indexablePageTags({
     path: `/blog/${loaderData.slug}`,
-    title: `${loaderData.title} | WASSCE Tutor`,
+    title: loaderData.seoTitle,
     description: loaderData.description,
     image: loaderData.image,
     type: 'article',
