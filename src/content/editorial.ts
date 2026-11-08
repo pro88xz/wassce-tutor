@@ -39,7 +39,6 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     image: 'https://usl.edu.sl/assets/images/bg.jpeg',
     imageAlt: 'University of Sierra Leone campus imagery from its official website',
     imageCredit: 'University of Sierra Leone — official website',
-    imageSourceUrl: 'https://usl.edu.sl/',
     officialUrl: 'https://usl.edu.sl/',
     admissionsUrl: 'https://admissions.usl.edu.sl/university-entry-requirements',
     applicationUrl: 'https://admissions.usl.edu.sl/',
@@ -82,7 +81,6 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     image: 'https://njala.edu.sl/sites/default/files/Njala_Congregation_2026_Slider.jpg',
     imageAlt: 'Njala University congregation, official university photograph',
     imageCredit: 'Njala University — official website',
-    imageSourceUrl: 'https://njala.edu.sl/',
     officialUrl: 'https://njala.edu.sl/',
     admissionsUrl: 'https://njala.edu.sl/admissions/undergraduate-admissions',
     applicationUrl: 'https://misnjala.edu.sl/apply',
@@ -125,7 +123,6 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     image: 'https://i.ibb.co/5m2JBwZ/IMG-0243.jpg',
     imageAlt: 'Students engaged in research, as shown on the official ETU-SL website',
     imageCredit: 'Eastern Technical University of Sierra Leone — official website',
-    imageSourceUrl: 'https://etusl.edu.sl/',
     officialUrl: 'https://etusl.edu.sl/',
     admissionsUrl: 'https://etusl.edu.sl/',
     applicationUrl: 'https://app.etusl.edu.sl/',
@@ -211,7 +208,6 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     image: 'https://ebkustsl.edu.sl/api/media/file/-ebkust-hosts-us-led-research-on-ai-2-768x576.jpg',
     imageAlt: 'EBKUST research activity featured on the university’s official website',
     imageCredit: 'Ernest Bai Koroma University of Science and Technology — official website',
-    imageSourceUrl: 'https://ebkustsl.edu.sl/',
     officialUrl: 'https://ebkustsl.edu.sl/',
     admissionsUrl: 'https://ebkustsl.edu.sl/admissions/admission-requirement/undergraduate',
     applicationUrl: 'https://app.ebkustsl.edu.sl/',
@@ -347,6 +343,7 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://njala.edu.sl/sites/default/files/Njala_Congregation_2026_Slider.jpg',
     imageAlt: 'Njala University congregation, official university photograph',
     imageCredit: 'Njala University — official website',
+    imageSourceUrl: 'https://njala.edu.sl/',
     intro: 'A WASSCE result is not a universal university admission ticket. Most degree routes start with five credits, but the subjects, grade thresholds, sittings, professional qualifications and application windows differ by institution and programme. This guide compares what the universities currently publish—and clearly flags information that is contradictory or out of date.',
     sections: [
       {
@@ -417,6 +414,7 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://usl.edu.sl/assets/images/bg.jpeg',
     imageAlt: 'University of Sierra Leone official campus imagery',
     imageCredit: 'University of Sierra Leone — official website',
+    imageSourceUrl: 'https://usl.edu.sl/',
     intro: 'When a university asks for five WASSCE credits, the number alone is not enough. You must check which grades it accepts, which subjects count for your programme, whether results from two sittings can be combined and whether additional qualifications are recognised.',
     sections: [
       {
@@ -478,6 +476,7 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://i.ibb.co/5m2JBwZ/IMG-0243.jpg',
     imageAlt: 'Students engaged in research at Eastern Technical University, official website image',
     imageCredit: 'Eastern Technical University of Sierra Leone — official website',
+    imageSourceUrl: 'https://etusl.edu.sl/',
     intro: 'The safest time to check university subject requirements is before you finalise your WASSCE subject choices. A course title can sound familiar while its admission rules require a particular combination of Mathematics, English, Chemistry, Biology, Physics or another subject.',
     sections: [
       {
@@ -539,6 +538,7 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://ebkustsl.edu.sl/api/media/file/-ebkust-hosts-us-led-research-on-ai-2-768x576.jpg',
     imageAlt: 'University research and student activity featured on EBKUST official website',
     imageCredit: 'Ernest Bai Koroma University of Science and Technology — official website',
+    imageSourceUrl: 'https://ebkustsl.edu.sl/',
     intro: 'University applications are easier to manage when you prepare your documents before opening the portal. Requirements vary, but official admissions instructions from Sierra Leone universities show a recurring set of records students should have ready.',
     sections: [
       {
