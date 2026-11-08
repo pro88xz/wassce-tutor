@@ -2209,3 +2209,84 @@ a.subject-directory-card:hover .subject-directory-action span { transform: trans
   .popular-topic-rail { scroll-behavior: auto; }
 }
 
+
+
+/* Homepage hero: consistent subject-cover system across desktop, tablet and mobile. */
+.hero-subject-collage {
+  min-height: clamp(18rem, 39vw, 29rem);
+  isolation: isolate;
+}
+.hero-collage-backdrop {
+  position: absolute;
+  inset: 8% 8% 7%;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 2rem;
+  background: radial-gradient(ellipse at 50% 48%,rgba(139,92,246,.23),rgba(255,255,255,.025) 68%,transparent 70%);
+}
+.hero-subject-card {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.72);
+  border-radius: 1.25rem;
+  background: #fff;
+  padding: .55rem;
+  box-shadow: 0 24px 65px -30px rgba(0,0,0,.72);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.hero-subject-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 72px -30px rgba(0,0,0,.78);
+}
+.hero-subject-card-primary {
+  z-index: 3;
+  top: 7%;
+  left: 17%;
+  width: 66%;
+}
+.hero-subject-card-secondary {
+  z-index: 2;
+  bottom: 7%;
+  left: 2%;
+  width: 46%;
+}
+.hero-subject-card-tertiary {
+  z-index: 2;
+  right: 2%;
+  bottom: 7%;
+  width: 46%;
+}
+.hero-collage-caption {
+  position: absolute;
+  z-index: 4;
+  top: 1%;
+  right: 1%;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 999px;
+  background: rgba(37,27,69,.92);
+  padding: .65rem .9rem;
+  color: white;
+  font-size: .7rem;
+  font-weight: 750;
+  box-shadow: 0 12px 28px rgba(0,0,0,.22);
+  backdrop-filter: blur(12px);
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  .hero-subject-collage { max-width: 31rem; min-height: 25rem; }
+  .hero-subject-card-primary { left: 18%; width: 64%; }
+}
+@media (max-width: 639px) {
+  .hero-subject-collage { min-height: 17.5rem; max-width: 29rem; }
+  .hero-collage-backdrop { inset: 9% 6% 6%; border-radius: 1.4rem; }
+  .hero-subject-card { padding: .4rem; border-radius: 1rem; }
+  .hero-subject-card-primary { top: 9%; left: 18%; width: 64%; }
+  .hero-subject-card-secondary { bottom: 5%; left: 1%; width: 47%; }
+  .hero-subject-card-tertiary { bottom: 5%; right: 1%; width: 47%; }
+  .hero-collage-caption { top: 0; right: 0; font-size: .62rem; padding: .5rem .7rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-subject-card { transition: none; }
+}
