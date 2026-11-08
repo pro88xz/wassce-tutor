@@ -17,6 +17,7 @@ create table if not exists public.tutor_applications (
   location text not null check (length(trim(location)) between 2 and 120),
   teaching_mode text not null check (teaching_mode in ('online','in_person','both')),
   document_path text,
+  avatar_path text,
   status text not null default 'submitted' check (status in ('submitted','under_review','approved','rejected')),
   reviewer_id uuid references auth.users(id),
   review_note text,
@@ -43,6 +44,7 @@ create table if not exists public.tutors (
   experience_years integer not null,
   location text not null,
   teaching_mode text not null check (teaching_mode in ('online','in_person','both')),
+  avatar_path text,
   status text not null default 'active' check (status in ('active','suspended')),
   verified_at timestamptz not null default now(),
   created_at timestamptz not null default now(),
@@ -171,6 +173,10 @@ values ('tutor-verification-docs','tutor-verification-docs',false,10485760,
 on conflict (id) do update set public = false, file_size_limit = 10485760,
   allowed_mime_types = array['application/pdf','image/jpeg','image/png'];
 
+insert into storage.buckets(id,name,public,file_size_limit,allowed_mime_types)
+values ('tutor-profile-images','tutor-profile-images',true,5242880,array['image/jpeg','image/png','image/webp'])
+on conflict (id) do update set public=true,file_size_limit=5242880,allowed_mime_types=array['image/jpeg','image/png','image/webp'];
+
 alter table public.tutor_applications enable row level security;
 alter table public.tutor_application_subjects enable row level security;
 alter table public.tutors enable row level security;
@@ -196,6 +202,9 @@ create policy "Affiliate owner and admins read payouts" on public.affiliate_payo
 create policy "Users read own notifications" on public.user_notifications for select to authenticated using (recipient_id=auth.uid());
 create policy "Users update own notification read state" on public.user_notifications for update to authenticated using (recipient_id=auth.uid()) with check (recipient_id=auth.uid());
 
+create policy "Tutors upload own profile image" on storage.objects for insert to authenticated with check (bucket_id='tutor-profile-images' and (storage.foldername(name))[1]=auth.uid()::text);
+create policy "Public read tutor profile images" on storage.objects for select to anon,authenticated using (bucket_id='tutor-profile-images');
+
 create policy "Users upload own tutor evidence" on storage.objects for insert to authenticated with check (bucket_id='tutor-verification-docs' and (storage.foldername(name))[1]=auth.uid()::text);
 create policy "Users read own tutor evidence" on storage.objects for select to authenticated using (bucket_id='tutor-verification-docs' and ((storage.foldername(name))[1]=auth.uid()::text or exists(select 1 from public.profiles p where p.id=auth.uid() and p.is_admin)));
 
@@ -203,7 +212,7 @@ create policy "Users read own tutor evidence" on storage.objects for select to a
 create or replace function public.submit_tutor_application(
   p_full_name text, p_phone text, p_bio text, p_qualifications text,
   p_experience_years integer, p_location text, p_teaching_mode text,
-  p_document_path text, p_subjects jsonb
+  p_document_path text, p_avatar_path text, p_subjects jsonb
 ) returns uuid language plpgsql security definer set search_path=public,auth as $$
 declare v_id uuid; v_item jsonb; v_subject uuid; v_price numeric;
 begin
@@ -214,8 +223,8 @@ begin
   if jsonb_typeof(p_subjects) <> 'array' or jsonb_array_length(p_subjects) < 1 or jsonb_array_length(p_subjects) > 12 then
     raise exception 'Select between 1 and 12 subjects';
   end if;
-  insert into tutor_applications(user_id,full_name,phone,bio,qualifications,experience_years,location,teaching_mode,document_path)
-  values(auth.uid(),trim(p_full_name),trim(p_phone),trim(p_bio),trim(p_qualifications),p_experience_years,trim(p_location),p_teaching_mode,p_document_path)
+  insert into tutor_applications(user_id,full_name,phone,bio,qualifications,experience_years,location,teaching_mode,document_path,avatar_path)
+  values(auth.uid(),trim(p_full_name),trim(p_phone),trim(p_bio),trim(p_qualifications),p_experience_years,trim(p_location),p_teaching_mode,p_document_path,p_avatar_path)
   returning id into v_id;
   for v_item in select value from jsonb_array_elements(p_subjects) loop
     v_subject := (v_item->>'subject_id')::uuid;
@@ -238,9 +247,9 @@ begin
   if not found then raise exception 'Application not found'; end if;
   update tutor_applications set status=p_decision,reviewer_id=auth.uid(),review_note=left(p_note,1000),reviewed_at=now(),updated_at=now() where id=p_application_id;
   if p_decision='approved' then
-    insert into tutors(user_id,full_name,phone,bio,qualifications,experience_years,location,teaching_mode)
-    values(v_app.user_id,v_app.full_name,v_app.phone,v_app.bio,v_app.qualifications,v_app.experience_years,v_app.location,v_app.teaching_mode)
-    on conflict(user_id) do update set full_name=excluded.full_name,phone=excluded.phone,bio=excluded.bio,qualifications=excluded.qualifications,experience_years=excluded.experience_years,location=excluded.location,teaching_mode=excluded.teaching_mode,status='active',updated_at=now()
+    insert into tutors(user_id,full_name,phone,bio,qualifications,experience_years,location,teaching_mode,avatar_path)
+    values(v_app.user_id,v_app.full_name,v_app.phone,v_app.bio,v_app.qualifications,v_app.experience_years,v_app.location,v_app.teaching_mode,v_app.avatar_path)
+    on conflict(user_id) do update set full_name=excluded.full_name,phone=excluded.phone,bio=excluded.bio,qualifications=excluded.qualifications,experience_years=excluded.experience_years,location=excluded.location,teaching_mode=excluded.teaching_mode,avatar_path=excluded.avatar_path,status='active',updated_at=now()
     returning id into v_tutor;
     insert into tutor_subjects(tutor_id,subject_id,price_nle)
     select v_tutor,subject_id,price_nle from tutor_application_subjects where application_id=p_application_id
@@ -479,7 +488,7 @@ begin
  end if;
 end $$;
 
-revoke all on function public.submit_tutor_application(text,text,text,text,integer,text,text,text,jsonb) from public,anon;
+revoke all on function public.submit_tutor_application(text,text,text,text,integer,text,text,text,text,jsonb) from public,anon;
 revoke all on function public.review_tutor_application(uuid,text,text) from public,anon;
 revoke all on function public.set_tutor_availability(jsonb) from public,anon;
 revoke all on function public.update_tutor_profile(text,text,text) from public,anon;
