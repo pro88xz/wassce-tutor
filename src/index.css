@@ -2072,3 +2072,71 @@ a.subject-directory-card:hover .subject-directory-action span { transform: trans
     font-size: .82rem;
   }
 }
+
+
+/* Homepage refinement: remove orphaned plan/subject rows and card-like assurances. */
+@media (min-width: 640px) {
+  .core-subject-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+.plans-section > div.grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+@media (min-width: 768px) {
+  .plans-section > div.grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.plans-section ul.plan-assurances {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  padding: 1.35rem 0 0;
+  border: 0;
+  border-top: 1px solid #e8eaf0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.plans-section ul.plan-assurances > li.plan-assurance-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-content: start;
+  gap: .7rem;
+  min-height: 0;
+  padding: .35rem 1rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.plans-section ul.plan-assurances > li.plan-assurance-card + li.plan-assurance-card {
+  border-left: 1px solid #e8eaf0;
+}
+.plans-section ul.plan-assurances .plan-assurance-icon {
+  display: flex;
+  width: auto;
+  height: auto;
+  padding-top: .12rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #6543bd;
+}
+.plans-section ul.plan-assurances .plan-assurance-copy { gap: .3rem; }
+.plans-section ul.plan-assurances .plan-assurance-title { font-size: .84rem; }
+.plans-section ul.plan-assurances .plan-assurance-body { font-size: .76rem; line-height: 1.55; }
+@media (max-width: 1023px) {
+  .plans-section ul.plan-assurances { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 1rem; }
+  .plans-section ul.plan-assurances > li.plan-assurance-card:nth-child(3) { border-left: 0; }
+  .plans-section ul.plan-assurances > li.plan-assurance-card:nth-child(n+3) { padding-top: 1rem; border-top: 1px solid #e8eaf0; }
+}
+@media (max-width: 520px) {
+  .plans-section ul.plan-assurances { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .plans-section ul.plan-assurances > li.plan-assurance-card,
+  .plans-section ul.plan-assurances > li.plan-assurance-card:nth-child(n+3) {
+    padding: .9rem .1rem;
+    border: 0;
+    border-bottom: 1px solid #edf0f4;
+  }
+  .plans-section ul.plan-assurances > li.plan-assurance-card:last-child { border-bottom: 0; }
+}

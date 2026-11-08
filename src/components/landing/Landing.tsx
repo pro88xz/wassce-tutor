@@ -6,7 +6,7 @@
 // guide, plans, FAQ and a final call to action. Numbers come from the
 // database and the question-set manifest.
 import { Link } from '@tanstack/react-router'
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useReveal } from '@/components/ds/useReveal'
 import { ArrowRight, BookOpen, BookOpenCheck, CalendarClock, Check, ChevronRight, Compass, GraduationCap, Moon, ShieldCheck, Smartphone, UserRound, Wallet, Zap } from 'lucide-react'
 import type { LandingData } from '@/lib/public-content'
@@ -20,6 +20,7 @@ import { ProductTour } from '@/components/landing/ProductTour'
 import { DownloadButton } from '@/components/DownloadButton'
 import { FREE_FEATURES, FROM_PRICE, PAID_FEATURES, PLANS, type PlanId } from '@/lib/plans'
 import { TopicSearch } from '@/components/landing/TopicSearch'
+import { supabase } from '@/lib/supabase'
 
 export function Landing({ data }: { data: LandingData }) {
   const root = useRef<HTMLDivElement>(null)
@@ -28,7 +29,7 @@ export function Landing({ data }: { data: LandingData }) {
     <>
       <Hero data={data} />
       <TrustStrip />
-      <div ref={root} className="mx-auto max-w-6xl space-y-16 px-4 sm:space-y-20 sm:px-6">
+      <div ref={root} className="mx-auto max-w-6xl space-y-12 px-4 sm:space-y-16 sm:px-6">
         <SubjectShowcase subjects={data.subjects} />
         {data.popular.length > 0 && <PopularTopics data={data} />}
         <ProductTour />
@@ -42,6 +43,22 @@ export function Landing({ data }: { data: LandingData }) {
       </div>
     </>
   )
+}
+
+
+function LiveStudentCount() {
+  const [count, setCount] = useState<number | null>(null)
+  useEffect(() => {
+    let active = true
+    void supabase.rpc('get_public_student_count').then(({ data, error }) => {
+      if (active && !error && data !== null && data !== undefined) {
+        const value = Number(data)
+        if (Number.isSafeInteger(value) && value >= 0) setCount(value)
+      }
+    })
+    return () => { active = false }
+  }, [])
+  return <span aria-live="polite">{count === null ? '—' : count.toLocaleString('en')}</span>
 }
 
 /** Editorial hero: discovery-led, with real syllabus subjects as the visual proof. */
@@ -119,9 +136,9 @@ function Hero({ data }: { data: LandingData }) {
             [String(data.totals.subjects), 'WASSCE subjects'],
             [String(data.totals.topics), 'syllabus topics'],
             [String(data.totals.lessons), 'available lessons'],
-            ['75 NLe', 'per year'],
+            [<LiveStudentCount key="students" />, 'registered students'],
           ].map(([value, label]) => (
-            <div key={label} className="px-3 py-2 text-center sm:px-5">
+            <div key={String(label)} className="px-3 py-2 text-center sm:px-5">
               <p className="text-2xl font-bold tracking-tight tabular-nums sm:text-3xl">{value}</p>
               <p className="mt-1 text-xs font-medium text-white/55 sm:text-sm">{label}</p>
             </div>
