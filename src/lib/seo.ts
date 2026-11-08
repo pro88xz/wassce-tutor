@@ -218,7 +218,23 @@ const PAGE_JSON_LD: Partial<Record<PublicPath, Record<string, unknown>[]>> = {
   '/contact': [CONTACT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['Contact', '/contact']])],
   '/tutors': [breadcrumbJsonLd([['Home', '/'], ['Tutors', '/tutors']])],
   '/affiliate': [breadcrumbJsonLd([['Home', '/'], ['Affiliate programme', '/affiliate']])],
-  '/become-a-tutor': [breadcrumbJsonLd([['Home', '/'], ['Become a tutor', '/become-a-tutor']])],
+  '/become-a-tutor': [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: 'Become a WASSCE Tutor in Sierra Leone',
+      url: `${SITE.origin}/become-a-tutor`,
+      description: 'Apply to teach WASSCE students in Sierra Leone, build a verified tutor profile and manage lesson bookings in a dedicated workspace.',
+      mainEntity: {
+        '@type': 'Service',
+        name: 'WASSCE Tutor teaching partner onboarding',
+        serviceType: 'Tutoring marketplace onboarding',
+        provider: { '@id': ORG_ID },
+        areaServed: { '@type': 'Country', name: 'Sierra Leone' },
+      },
+    },
+    breadcrumbJsonLd([['Home', '/'], ['Become a tutor', '/become-a-tutor']]),
+  ],
   '/blog': [breadcrumbJsonLd([['Home', '/'], ['Blog', '/blog']])],
   '/universities': [breadcrumbJsonLd([['Home', '/'], ['Universities', '/universities']])],
 }
