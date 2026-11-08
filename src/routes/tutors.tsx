@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
-import { CalendarDays, GraduationCap, MapPin, Search, ShieldCheck, Video } from 'lucide-react'
+import { CalendarDays, GraduationCap, MapPin, Search, ShieldCheck } from 'lucide-react'
 import { publicHead } from '@/lib/seo'
 import { supabase } from '@/lib/supabase'
 import { useAuth } from '@/lib/auth'
