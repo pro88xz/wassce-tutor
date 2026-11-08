@@ -397,10 +397,12 @@ declare v_user uuid;
 begin
  if not exists(select 1 from profiles where id=auth.uid() and is_admin=true) then raise exception 'Not authorised'; end if;
  if p_decision not in ('approved','reversed') then raise exception 'Invalid decision'; end if;
- update affiliate_commissions c set status=p_decision,approved_at=case when p_decision='approved' then now() else approved_at end
+ select a.user_id into v_user
+ from affiliate_commissions c join affiliates a on a.id=c.affiliate_id
  where c.id=p_commission_id and c.status='pending'
- returning (select a.user_id from affiliates a where a.id=c.affiliate_id) into v_user;
+ for update of c;
  if v_user is null then raise exception 'Commission not found or already reviewed'; end if;
+ update affiliate_commissions set status=p_decision,approved_at=case when p_decision='approved' then now() else approved_at end where id=p_commission_id;
  insert into user_notifications(recipient_id,actor_id,event_type,title,body,entity_type,entity_id)
  values(v_user,auth.uid(),'commission_'||p_decision,'Affiliate commission '||p_decision,'A first-payment referral commission was '||p_decision||'.','commission',p_commission_id);
 end $$;
