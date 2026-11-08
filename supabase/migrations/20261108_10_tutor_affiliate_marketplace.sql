@@ -407,12 +407,13 @@ end $$;
 
 create or replace function public.review_affiliate_payout(p_payout_id uuid,p_decision text,p_note text default null)
 returns void language plpgsql security definer set search_path=public,auth as $$
-declare v_payout affiliate_payout_requests%rowtype; v_affiliate uuid;
+declare v_payout affiliate_payout_requests%rowtype; v_affiliate uuid; v_user uuid;
 begin
  if not exists(select 1 from profiles where id=auth.uid() and is_admin=true) then raise exception 'Not authorised'; end if;
  if p_decision not in ('processing','paid','rejected') then raise exception 'Invalid decision'; end if;
  select * into v_payout from affiliate_payout_requests where id=p_payout_id for update;
  if not found then raise exception 'Payout not found'; end if;
+ select user_id into v_user from affiliates where id=v_payout.affiliate_id;
  update affiliate_payout_requests set status=p_decision,admin_note=left(p_note,500),reviewed_at=now(),reviewed_by=auth.uid() where id=p_payout_id;
  if p_decision='paid' then
    update affiliate_commissions set status='paid',paid_at=now()
@@ -421,7 +422,9 @@ begin
    update affiliate_commissions set status='approved'
    where id in (select commission_id from affiliate_payout_commission_items where payout_id=p_payout_id) and status='reserved';
  end if;
-end $$;
+ insert into user_notifications(recipient_id,actor_id,event_type,title,body,entity_type,entity_id)
+ values(v_user,auth.uid(),'payout_'||p_decision,'Affiliate payout '||p_decision,'Your affiliate payout request was marked '||p_decision||'.','payout',p_payout_id);
+end $;
 
 -- A commission is earned only on the referred user's first verified payment.
 create or replace function public.capture_signup_affiliate_referral()
