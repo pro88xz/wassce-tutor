@@ -20,7 +20,7 @@ import { ProductTour } from '@/components/landing/ProductTour'
 import { FREE_FEATURES, FROM_PRICE, PAID_FEATURES, PLANS, type PlanId } from '@/lib/plans'
 import { TopicSearch } from '@/components/landing/TopicSearch'
 import { supabase } from '@/lib/supabase'
-import { BLOG_POSTS, UNIVERSITY_GUIDES } from '@/content/editorial'
+import { FEATURED_EDITORIAL, UNIVERSITY_FEATURES } from '@/content/editorial-index'
 
 export function Landing({ data }: { data: LandingData }) {
   const root = useRef<HTMLDivElement>(null)
@@ -547,14 +547,14 @@ function EditorialDiscovery() {
         <a href="/universities" className="inline-flex min-h-11 items-center gap-2 text-sm font-bold text-primary">University directory <ArrowRight className="h-4 w-4"/></a>
       </div>
       <div className="grid gap-4 md:grid-cols-3">
-        {UNIVERSITY_GUIDES.slice(0,3).map((u) => <a key={u.slug} href={`/universities/${u.slug}`} className="group overflow-hidden rounded-2xl border bg-card transition hover:-translate-y-0.5 hover:shadow-lg">
+        {UNIVERSITY_FEATURES.map((u) => <a key={u.slug} href={`/universities/${u.slug}`} className="group overflow-hidden rounded-2xl border bg-card transition hover:-translate-y-0.5 hover:shadow-lg">
           <div className="aspect-[16/9] overflow-hidden bg-muted"><img src={u.image} alt={u.imageAlt} loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"/></div>
           <div className="p-4"><p className="text-[11px] font-bold uppercase tracking-wider text-primary">{u.shortName}</p><h3 className="mt-2 font-bold leading-snug">{u.name}</h3><p className="mt-2 line-clamp-2 text-xs leading-relaxed text-muted-foreground">{u.summary}</p><span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-primary">View guide <ArrowRight className="h-3.5 w-3.5"/></span></div>
         </a>)}
       </div>
       <div className="grid gap-4 rounded-2xl bg-[#f7f5ff] p-5 sm:grid-cols-[1fr_auto] sm:items-center sm:p-7">
-        <div><p className="text-xs font-bold uppercase tracking-wider text-violet-700">From the editorial desk</p><h3 className="mt-2 text-xl font-bold text-slate-950">{BLOG_POSTS[0].title}</h3><p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">{BLOG_POSTS[0].description}</p></div>
-        <a href={`/blog/${BLOG_POSTS[0].slug}`} className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-[#21134d] px-5 text-sm font-bold text-white">Read the guide <ArrowRight className="h-4 w-4"/></a>
+        <div><p className="text-xs font-bold uppercase tracking-wider text-violet-700">From the editorial desk</p><h3 className="mt-2 text-xl font-bold text-slate-950">{FEATURED_EDITORIAL.title}</h3><p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">{FEATURED_EDITORIAL.description}</p></div>
+        <a href={`/blog/${FEATURED_EDITORIAL.slug}`} className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-[#21134d] px-5 text-sm font-bold text-white">Read the guide <ArrowRight className="h-4 w-4"/></a>
       </div>
     </section>
   )
