@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
-import { BadgePercent, ChartNoAxesCombined, Link2, Wallet } from 'lucide-react'
+import { BadgePercent, Link2, Wallet } from 'lucide-react'
 import { publicHead } from '@/lib/seo'
 
 export const Route = createFileRoute('/affiliate')({
