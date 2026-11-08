@@ -271,6 +271,7 @@ begin
   if p_decision not in ('approved','rejected','under_review') then raise exception 'Invalid decision'; end if;
   select * into v_app from tutor_applications where id=p_application_id for update;
   if not found then raise exception 'Application not found'; end if;
+ if v_app.status not in ('submitted','under_review') then raise exception 'Application has already been reviewed'; end if;
   update tutor_applications set status=p_decision,reviewer_id=auth.uid(),review_note=left(p_note,1000),reviewed_at=now(),updated_at=now() where id=p_application_id;
   if p_decision='approved' then
     insert into tutors(user_id,full_name,phone,bio,qualifications,experience_years,location,teaching_mode,avatar_path)
@@ -450,6 +451,7 @@ begin
  if p_decision not in ('processing','paid','rejected') then raise exception 'Invalid decision'; end if;
  select * into v_payout from affiliate_payout_requests where id=p_payout_id for update;
  if not found then raise exception 'Payout not found'; end if;
+ if v_payout.status not in ('requested','processing') then raise exception 'Payout has already been closed'; end if;
  select user_id into v_user from affiliates where id=v_payout.affiliate_id;
  update affiliate_payout_requests set status=p_decision,admin_note=left(p_note,500),reviewed_at=now(),reviewed_by=auth.uid() where id=p_payout_id;
  if p_decision='paid' then
