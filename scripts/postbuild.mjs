@@ -77,13 +77,15 @@ console.log('[postbuild] updated _shell.html and wrote 404.html')
   const depth = (p) => p.split('/').filter(Boolean).length
   const pick = (test) => pages.filter((pg) => test(pg.path))
 
-  const MAIN = ['/', '/wassce', '/wassce/subjects', '/tutors', '/about', '/contact']
+  const MAIN = ['/', '/wassce', '/wassce/subjects', '/tutors', '/universities', '/blog', '/become-a-tutor', '/affiliate', '/about', '/contact']
   const sections = [
     ['Start here', pick((p) => MAIN.includes(p)).sort((a, b) => MAIN.indexOf(a.path) - MAIN.indexOf(b.path))],
     ['WASSCE subjects', pick((p) => p.startsWith('/wassce/') && p !== '/wassce/subjects' && depth(p) === 2)],
     ['WASSCE topics', pick((p) => p.startsWith('/wassce/') && depth(p) === 3)],
     ['Free lessons', pick((p) => p.startsWith('/wassce/') && depth(p) === 4)],
     ['Book a tutor by subject', pick((p) => p.startsWith('/tutors/'))],
+    ['Sierra Leone university profiles', pick((p) => p.startsWith('/universities/'))],
+    ['WASSCE Tutor editorial articles', pick((p) => p.startsWith('/blog/'))],
     ['Optional', pick((p) => p === '/privacy' || p === '/terms')],
   ]
 
