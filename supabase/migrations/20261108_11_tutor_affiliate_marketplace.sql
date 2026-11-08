@@ -92,11 +92,12 @@ create table if not exists public.tutor_bookings (
 -- IMMUTABLE across daylight-saving transitions, so it cannot be used in a
 -- stored generated column. The range itself is immutable over stored values.
 create or replace function public.set_tutor_booking_end_time()
-returns trigger language plpgsql set search_path=public as $
+returns trigger language plpgsql set search_path=public as $function$
 begin
   new.ends_at := new.starts_at + make_interval(mins => new.duration_minutes);
   return new;
-end $;
+end;
+$function$;
 
 create trigger tutor_bookings_set_end_time
 before insert or update of starts_at, duration_minutes
