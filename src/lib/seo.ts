@@ -215,7 +215,7 @@ type IndexablePage = {
 }
 
 /** Tags for an indexable page: unique title + description, self canonical, OG/Twitter text, optional JSON-LD. */
-export function indexablePageTags({ path, title, description, ogTitle = title, jsonLd: data = [], image = `${SITE.origin}/og-image.jpg`, type = 'website' }: IndexablePage): HeadTags {
+export function indexablePageTags({ path, title, description, ogTitle = title, jsonLd: data = [], image = `${SITE.origin}/og-image.jpg`, type = 'website', publishedAt, modifiedAt }: IndexablePage): HeadTags {
   const url = absoluteUrl(path)
   return {
     meta: [
@@ -226,7 +226,7 @@ export function indexablePageTags({ path, title, description, ogTitle = title, j
       { property: 'og:description', content: description },
       { property: 'og:url', content: url },
       { name: 'twitter:card', content: 'summary_large_image' },\n      { name: 'twitter:image', content: image },\n      { name: 'twitter:title', content: ogTitle },
-      { name: 'twitter:description', content: description },\n      ...(type === 'article' ? [{ property: 'article:published_time', content: '' }, { property: 'article:modified_time', content: '' }] : []),
+      { name: 'twitter:description', content: description },\n      ...(type === 'article' && publishedAt ? [{ property: 'article:published_time', content: publishedAt }, { property: 'article:modified_time', content: modifiedAt ?? publishedAt }] : []),
     ],
     links: [{ rel: 'canonical', href: url }],
     scripts: data.map(jsonLd),
