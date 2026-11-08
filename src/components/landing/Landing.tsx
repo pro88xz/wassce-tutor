@@ -209,72 +209,43 @@ function PopularTopics({ data }: { data: LandingData }) {
   }
 
   return (
-    <section className="space-y-8 sm:space-y-10" aria-labelledby="popular-heading">
-      <div className="flex flex-col gap-4 border-b pb-5 sm:flex-row sm:items-end sm:justify-between sm:pb-6">
-        <div className="max-w-2xl space-y-2">
+    <section className="space-y-6 sm:space-y-7" aria-labelledby="popular-heading">
+      <div className="flex flex-col gap-3 border-b pb-4 sm:flex-row sm:items-end sm:justify-between sm:pb-5">
+        <div className="max-w-2xl space-y-1.5">
           <p className="text-xs font-bold uppercase tracking-[0.16em] text-primary">Explore the syllabus</p>
           <h2 id="popular-heading" className="text-3xl font-bold leading-[1.08] tracking-tight text-balance sm:text-4xl">Popular WASSCE topics</h2>
-          <p className="max-w-xl text-[15px] leading-relaxed text-muted-foreground">Go straight to a topic and continue learning, one lesson at a time.</p>
+          <p className="text-[15px] leading-relaxed text-muted-foreground">Explore focused lessons across the subjects you are preparing for.</p>
         </div>
-        <a href="/wassce/subjects" className="inline-flex min-h-11 w-fit items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-brand-strong">
+        <a href="/wassce/subjects" className="inline-flex min-h-10 w-fit shrink-0 items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-brand-strong">
           Explore all subjects <ArrowRight className="h-4 w-4" aria-hidden />
         </a>
       </div>
 
-      <div className="grid gap-5 lg:grid-cols-[1.08fr_0.92fr] lg:gap-7">
-        <a
-          href={topicPath(featured.subjectSlug, featured.topicSlug)}
-          data-reveal
-          className="group relative flex min-h-[25rem] flex-col justify-end overflow-hidden rounded-[1.75rem] bg-slate-950 shadow-[0_24px_60px_-32px_rgba(15,23,42,0.55)] sm:min-h-[31rem]"
-        >
-          <div className="absolute inset-0">
-            {renderImage(featured.subjectSlug, featured.topicSlug)}
-          </div>
-          <span aria-hidden className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/45 to-slate-950/0" />
-          <span className="relative z-10 max-w-xl space-y-3 p-6 text-white sm:p-8">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/25 px-3 py-1.5 text-xs font-semibold text-white/95 backdrop-blur">
-              <span className={`h-2 w-2 rounded-full ${subjectArt(featured.subjectSlug).tone}`} aria-hidden />
-              Featured topic · {featured.subjectName}
+      <div className="popular-topic-rail" aria-label="Popular WASSCE topics. Scroll horizontally to see more.">
+        {data.popular.map((t, i) => (
+          <a
+            key={`${t.subjectSlug}/${t.topicSlug}`}
+            href={topicPath(t.subjectSlug, t.topicSlug)}
+            data-reveal={i % 4}
+            className="popular-topic-card group"
+          >
+            <span className="popular-topic-image">
+              {renderImage(t.subjectSlug, t.topicSlug, true)}
+              <span className="popular-topic-arrow"><ArrowRight className="h-4 w-4" aria-hidden /></span>
             </span>
-            <span className="block text-2xl font-bold leading-tight tracking-tight text-balance sm:text-3xl">{featured.topicName}</span>
-            <span className="flex items-center justify-between gap-4 text-sm text-white/80">
-              <span>{featured.lessons} lessons available</span>
-              <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-slate-950 transition-transform duration-300 group-hover:translate-x-1">
-                <ArrowRight className="h-5 w-5" aria-hidden />
-              </span>
+            <span className="popular-topic-copy">
+              <span className="popular-topic-subject">{t.subjectName}</span>
+              <span className="popular-topic-name">{t.topicName}</span>
+              <span className="popular-topic-lessons"><BookOpen className="h-3.5 w-3.5" aria-hidden /> {t.lessons} {t.lessons === 1 ? 'lesson' : 'lessons'}</span>
             </span>
-          </span>
-        </a>
-
-        <div className="popular-topic-collection">
-          <div className="flex items-end justify-between gap-3 border-b border-border/70 pb-4">
-            <div className="space-y-1">
-              <p className="text-lg font-bold tracking-tight">More to explore</p>
-              <p className="text-xs leading-relaxed text-muted-foreground">Choose a subject area and keep moving.</p>
-            </div>
-            <span className="shrink-0 rounded-full bg-primary/8 px-3 py-1.5 text-xs font-bold text-primary">{topics.length} topics</span>
-          </div>
-          <div className="popular-topic-grid">
-            {topics.map((t, i) => (
-              <a
-                key={`${t.subjectSlug}/${t.topicSlug}`}
-                href={topicPath(t.subjectSlug, t.topicSlug)}
-                data-reveal={i % 4}
-                className="popular-topic-card group"
-              >
-                <span className="popular-topic-image">
-                  {renderImage(t.subjectSlug, t.topicSlug, true)}
-                  <span className="popular-topic-arrow"><ArrowRight className="h-4 w-4" aria-hidden /></span>
-                </span>
-                <span className="popular-topic-copy">
-                  <span className="popular-topic-subject">{t.subjectName}</span>
-                  <span className="popular-topic-name">{t.topicName}</span>
-                  <span className="popular-topic-lessons"><BookOpen className="h-3.5 w-3.5" aria-hidden /> {t.lessons} {t.lessons === 1 ? 'lesson' : 'lessons'}</span>
-                </span>
-              </a>
-            ))}
-          </div>
-        </div>
+          </a>
+        ))}
+      </div>
+      <div className="flex items-center justify-between gap-3">
+        <p className="text-xs font-medium text-muted-foreground">Showing {Math.min(3, data.popular.length)} at a time · {data.popular.length} topics</p>
+        <span className="inline-flex items-center gap-1 text-xs font-semibold text-primary" aria-hidden="true">
+          Swipe to explore <ArrowRight className="h-3.5 w-3.5" />
+        </span>
       </div>
     </section>
   )

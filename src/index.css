@@ -2165,39 +2165,46 @@ a.subject-directory-card:hover .subject-directory-action span { transform: trans
  .trust-strip-item + .trust-strip-item { border-left: 1px solid #e5e7eb; padding-left: 1.25rem; }
 }
 
-/* Balanced topic collection: the final odd card becomes an intentional
-   full-width horizontal feature instead of leaving an empty grid cell. */
-.popular-topic-card:last-child:nth-child(odd) {
-  grid-column: 1 / -1;
+/* Premium topic rail: three equal cards remain visible while the collection
+   scrolls horizontally; no wrapped final item or empty grid cell. */
+.popular-topic-rail {
   display: grid;
-  grid-template-columns: minmax(9rem, 36%) minmax(0, 1fr);
-  align-items: stretch;
-  min-height: 9.5rem;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 1.5rem) / 3);
+  gap: .75rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: .15rem .1rem .85rem;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: .1rem;
+  scrollbar-width: thin;
+  scrollbar-color: #c9c2df transparent;
 }
-.popular-topic-card:last-child:nth-child(odd) .popular-topic-image {
-  width: 100%;
+.popular-topic-rail > .popular-topic-card {
+  min-width: 0;
   height: 100%;
-  min-height: 9.5rem;
-  aspect-ratio: auto;
+  scroll-snap-align: start;
 }
-.popular-topic-card:last-child:nth-child(odd) .popular-topic-copy {
-  justify-content: center;
-  padding: clamp(.9rem, 2.2vw, 1.35rem);
+.popular-topic-rail .popular-topic-image {
+  aspect-ratio: 1.55 / 1;
 }
-@media (max-width: 420px) {
-  .popular-topic-grid { grid-template-columns: minmax(0, 1fr); }
-  .popular-topic-card:last-child:nth-child(odd) {
-    grid-column: auto;
-    display: flex;
-    min-height: 0;
+.popular-topic-rail .popular-topic-copy {
+  min-height: 7rem;
+}
+@media (max-width: 639px) {
+  .popular-topic-rail {
+    grid-auto-columns: calc((100% - .9rem) / 2.15);
+    gap: .55rem;
+    margin-right: -.25rem;
+    padding-right: .25rem;
   }
-  .popular-topic-card:last-child:nth-child(odd) .popular-topic-image {
-    width: 100%;
-    min-height: 0;
-    aspect-ratio: 1.55 / 1;
+  .popular-topic-rail .popular-topic-copy {
+    min-height: 7.2rem;
+    padding: .7rem;
   }
-  .popular-topic-card:last-child:nth-child(odd) .popular-topic-copy {
-    padding: .8rem;
-  }
+  .popular-topic-rail .popular-topic-name { font-size: .84rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .popular-topic-rail { scroll-behavior: auto; }
 }
 
