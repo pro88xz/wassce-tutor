@@ -30,7 +30,7 @@ export function PublicHeader() {
         <a href="/" aria-label="WASSCE Tutor home" className="shrink-0">
           <BrandMark compact wordmarkClassName="max-[359px]:sr-only" />
         </a>
-        <nav aria-label="Main" className="ml-2 hidden min-w-0 items-center gap-1.5 text-sm font-semibold text-slate-600 min-[880px]:flex">
+        <nav aria-label="Main" className="ml-2 hidden min-w-0 items-center gap-1.5 text-sm font-semibold text-slate-600 min-[1100px]:flex">
           {NAV.map((n) => (
             <a key={n.href} href={n.href} className={`whitespace-nowrap rounded-lg px-3.5 py-2.5 transition-colors duration-150 hover:bg-violet-50 hover:text-violet-800 ${pathname === n.href || (n.href === '/wassce/subjects' && pathname.startsWith('/wassce/subjects')) ? 'text-violet-800' : ''}`}>{n.label}</a>
           ))}
@@ -48,14 +48,14 @@ export function PublicHeader() {
             aria-expanded={open}
             aria-controls="public-menu"
             aria-label={open ? 'Close menu' : 'Open menu'}
-            className="flex h-11 w-11 items-center justify-center rounded-xl text-slate-700 transition-colors hover:bg-slate-100 min-[880px]:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-xl text-slate-700 transition-colors hover:bg-slate-100 min-[1100px]:hidden"
           >
             {open ? <X className="h-5 w-5" aria-hidden /> : <Menu className="h-5 w-5" aria-hidden />}
           </button>
         </div>
       </div>
       {open && (
-        <nav id="public-menu" aria-label="Main" className="border-t border-slate-100 bg-white px-5 pb-4 shadow-lg min-[880px]:hidden">
+        <nav id="public-menu" aria-label="Main" className="border-t border-slate-100 bg-white px-5 pb-4 shadow-lg min-[1100px]:hidden">
           <ul className="divide-y divide-slate-100">
             {NAV.map((n) => (
               <li key={n.href}>
