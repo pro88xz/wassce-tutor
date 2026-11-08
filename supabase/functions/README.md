@@ -6,7 +6,7 @@ The application code is deployed by Vercel. The database migration and Supabase 
 
 Run the complete file below in the Supabase SQL Editor for the production project:
 
-`supabase/migrations/20261108_11_tutor_affiliate_marketplace.sql`
+`supabase/migrations/20261108_11_tutor_affiliate_marketplace.sql` and `supabase/migrations/20261108_12_booking_transition_guards.sql`
 
 The migration is additive and does not change Monime checkout initiation, payment verification, existing payment rows or subscription access logic.
 
