@@ -15,8 +15,8 @@ export const Route = createFileRoute('/universities/$slug')({
   staleTime: Infinity,
   head: ({ loaderData }) => loaderData ? indexablePageTags({
     path: `/universities/${loaderData.slug}`,
-    title: `${loaderData.name}: Admissions, Courses & WASSCE Requirements | WASSCE Tutor`,
-    description: `${loaderData.name} in Sierra Leone: programmes, WASSCE entry requirements, application process and official admissions links. Updated 8 November 2026.`,
+    title: loaderData.seoTitle,
+    description: `${loaderData.shortName}: programmes, WASSCE entry requirements and official admissions links for Sierra Leone applicants.`,
     image: loaderData.image,
     jsonLd: [
       {
