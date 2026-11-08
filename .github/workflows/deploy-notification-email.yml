@@ -52,7 +52,7 @@ jobs:
         run: |
           set -euo pipefail
           supabase secrets set \
-            --project-ref "$SUPABASE_PROJECT_REF" \
+            --remote="$SUPABASE_PROJECT_REF" --yes \
             "RESEND_API_KEY=$RESEND_API_KEY" \
             "EMAIL_FROM=$EMAIL_FROM" \
             "APP_ORIGIN=https://wasscetutor.com"
