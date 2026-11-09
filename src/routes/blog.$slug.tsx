@@ -44,7 +44,12 @@ export const Route = createFileRoute('/blog/$slug')({
 
 function BlogArticlePage() {
   const post = Route.useLoaderData()
-  const related = post.related.flatMap((slug) => {\n    const article = BLOG_POSTS.find((item) => item.slug === slug)\n    if (article) return [article]\n    const university = UNIVERSITY_GUIDES.find((item) => item.slug === slug)\n    return university ? [university] : []\n  })
+  const related = post.related.flatMap((slug) => {
+    const article = BLOG_POSTS.find((item) => item.slug === slug)
+    if (article) return [article]
+    const university = UNIVERSITY_GUIDES.find((item) => item.slug === slug)
+    return university ? [university] : []
+  })
   return (
     <main className="mx-auto w-full max-w-5xl space-y-8 pb-16">
       <Breadcrumbs trail={[['Home','/'],['Blog','/blog'],[post.title,`/blog/${post.slug}`]]}/>
