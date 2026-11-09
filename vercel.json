@@ -3,8 +3,7 @@
   "git": {
     "deploymentEnabled": {
       "**": false,
-      "main": true,
-      "feature/tutor-affiliate-platform": true
+      "main": true
     }
   },
   "buildCommand": "npm run build",
