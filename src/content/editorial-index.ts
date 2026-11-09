@@ -23,14 +23,6 @@ export const UNIVERSITY_FEATURES = [
     image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=592097176041211',
     imageAlt: 'Njala University image from its official Facebook page',
   },
-  {
-    slug: 'milton-margai-technical-university',
-    name: 'Milton Margai Technical University',
-    shortName: 'MMTU',
-    summary: 'Education, engineering, science, business, hospitality, tourism, nutrition and vocational programmes.',
-    image: 'https://www.mmtu.edu.sl/images/Goderichimage.jpeg',
-    imageAlt: 'Goderich campus of Milton Margai Technical University, official university photograph',
-  },
 ] as const
 
 export const FEATURED_EDITORIAL = {
