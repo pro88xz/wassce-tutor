@@ -1,5 +1,5 @@
 import { Link, useRouterState } from '@tanstack/react-router'
-import { ChevronDown, Mail, MapPin } from 'lucide-react'
+import { ChevronDown, Linkedin, Mail, MapPin } from 'lucide-react'
 import { useAuth } from '@/lib/auth'
 import { ADDRESS_LINE, CONTACT, whatsappChatLink } from '@/lib/contact'
 import { BrandMark } from '@/components/BrandMark'
@@ -141,10 +141,15 @@ export function Footer() {
           <p>
             &copy; <span suppressHydrationWarning>{new Date().getFullYear()}</span> WASSCE Tutor. An independent study service, not affiliated with WAEC.
           </p>
-          <p className="flex gap-4 sm:hidden">
-            <Link to="/privacy" className="inline-flex min-h-11 items-center text-sm text-white/65 hover:text-white">Privacy</Link>
-            <Link to="/terms" className="inline-flex min-h-11 items-center text-sm hover:text-foreground">Terms</Link>
-          </p>
+          <div className="flex items-center justify-between gap-5 sm:justify-end">
+            <a href="https://www.linkedin.com/in/mohamed-bangura-6b209944a/" target="_blank" rel="noopener noreferrer" aria-label="Connect with WASSCE Tutor founder on LinkedIn" className="inline-flex min-h-11 items-center gap-2 text-sm text-white/65 transition-colors hover:text-white">
+              <Linkedin className="h-4 w-4" aria-hidden /> Connect on LinkedIn
+            </a>
+            <p className="flex gap-4 sm:hidden">
+              <Link to="/privacy" className="inline-flex min-h-11 items-center text-sm text-white/65 hover:text-white">Privacy</Link>
+              <Link to="/terms" className="inline-flex min-h-11 items-center text-sm hover:text-white">Terms</Link>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
