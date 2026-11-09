@@ -241,20 +241,22 @@ function SectionTitle({ eyebrow, title, body }: { eyebrow: string; title: string
  * colour keeps the link to the subject.
  */
 function PopularTopics({ data }: { data: LandingData }) {
+  const railRef = useRef<HTMLDivElement>(null)
+  const [activeTopic, setActiveTopic] = useState(0)
   if (data.popular.length === 0) return null
 
-  const renderImage = (subjectSlug: string, topicSlug: string, compact = false) => {
+  const renderImage = (subjectSlug: string, topicSlug: string) => {
     const photo = topicPhoto(subjectSlug, topicSlug)
     return photo ? (
       <img
-        src={compact ? photo.small : photo.src}
-        srcSet={compact ? undefined : `${photo.small} 480w, ${photo.src} 960w`}
-        sizes={compact ? '76px' : '(min-width: 768px) 42vw, 100vw'}
+        src={photo.src}
+        srcSet={`${photo.small} 480w, ${photo.src} 960w`}
+        sizes="(min-width: 1024px) 31vw, (min-width: 640px) 48vw, 86vw"
         alt={photo.caption}
         loading="lazy"
         decoding="async"
-        width={compact ? 152 : 960}
-        height={compact ? 96 : 600}
+        width={960}
+        height={600}
         className={`h-full w-full object-cover ${photo.position ?? ''}`}
       />
     ) : (
@@ -262,44 +264,86 @@ function PopularTopics({ data }: { data: LandingData }) {
     )
   }
 
+  const moveRail = (direction: -1 | 1) => {
+    const rail = railRef.current
+    if (!rail) return
+    const card = rail.querySelector<HTMLElement>('.popular-topic-card')
+    const gap = Number.parseFloat(getComputedStyle(rail).columnGap || getComputedStyle(rail).gap) || 12
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    rail.scrollBy({ left: direction * ((card?.getBoundingClientRect().width ?? rail.clientWidth * .8) + gap), behavior: reduceMotion ? 'auto' : 'smooth' })
+  }
+
+  const updateActiveTopic = () => {
+    const rail = railRef.current
+    const card = rail?.querySelector<HTMLElement>('.popular-topic-card')
+    if (!rail || !card) return
+    const gap = Number.parseFloat(getComputedStyle(rail).columnGap || getComputedStyle(rail).gap) || 12
+    setActiveTopic(Math.min(data.popular.length - 1, Math.max(0, Math.round(rail.scrollLeft / (card.getBoundingClientRect().width + gap)))))
+  }
+
   return (
-    <section className="space-y-6 sm:space-y-7" aria-labelledby="popular-heading">
-      <div className="flex flex-col gap-3 border-b pb-4 sm:flex-row sm:items-end sm:justify-between sm:pb-5">
+    <section className="popular-topics-section space-y-5 sm:space-y-6" aria-labelledby="popular-heading">
+      <div className="flex flex-col gap-3 border-b border-slate-200 pb-4 sm:flex-row sm:items-end sm:justify-between sm:pb-5">
         <div className="max-w-2xl space-y-1.5">
           <p className="text-xs font-bold uppercase tracking-[0.16em] text-primary">Explore the syllabus</p>
           <h2 id="popular-heading" className="text-3xl font-bold leading-[1.08] tracking-tight text-balance sm:text-4xl">Popular WASSCE topics</h2>
-          <p className="text-[15px] leading-relaxed text-muted-foreground">Explore focused lessons across the subjects you are preparing for.</p>
+          <p className="text-[15px] leading-relaxed text-muted-foreground">Go deeper into the topics students need to understand, across the WASSCE syllabus.</p>
         </div>
         <a href="/wassce/subjects" className="inline-flex min-h-10 w-fit shrink-0 items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-brand-strong">
-          Explore all subjects <ArrowRight className="h-4 w-4" aria-hidden />
+          Browse the syllabus <ArrowRight className="h-4 w-4" aria-hidden />
         </a>
       </div>
 
-      <div className="popular-topic-rail" aria-label="Popular WASSCE topics. Scroll horizontally to see more.">
-        {data.popular.map((t, i) => (
-          <a
-            key={`${t.subjectSlug}/${t.topicSlug}`}
-            href={topicPath(t.subjectSlug, t.topicSlug)}
-            data-reveal={i % 4}
-            className="popular-topic-card group"
-          >
-            <span className="popular-topic-image">
-              {renderImage(t.subjectSlug, t.topicSlug, true)}
-              
-            </span>
-            <span className="popular-topic-copy">
-              <span className="popular-topic-subject">{t.subjectName}</span>
-              <span className="popular-topic-name">{t.topicName}</span>
-              <span className="popular-topic-lessons"><BookOpen className="h-3.5 w-3.5" aria-hidden /> {t.lessons} {t.lessons === 1 ? 'lesson' : 'lessons'}</span>
-            </span>
-          </a>
-        ))}
+      <div className="relative">
+        <div
+          ref={railRef}
+          onScroll={updateActiveTopic}
+          className="popular-topic-rail"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Popular WASSCE topics"
+        >
+          {data.popular.map((t, i) => (
+            <a
+              key={`${t.subjectSlug}/${t.topicSlug}`}
+              href={topicPath(t.subjectSlug, t.topicSlug)}
+              aria-label={`${t.topicName}, ${t.subjectName}, ${t.lessons} lessons`}
+              data-reveal={i % 4}
+              className="popular-topic-card group"
+            >
+              <span className="popular-topic-image">
+                {renderImage(t.subjectSlug, t.topicSlug)}
+                <span className="popular-topic-index">{String(i + 1).padStart(2, '0')}</span>
+                <span className="popular-topic-arrow"><ArrowRight className="h-4 w-4" aria-hidden /></span>
+              </span>
+              <span className="popular-topic-copy">
+                <span className="popular-topic-subject">{t.subjectName}</span>
+                <span className="popular-topic-name">{t.topicName}</span>
+                <span className="popular-topic-lessons"><BookOpen className="h-3.5 w-3.5" aria-hidden /> {t.lessons} {t.lessons === 1 ? 'lesson' : 'lessons'}</span>
+              </span>
+            </a>
+          ))}
+        </div>
       </div>
-      <div className="flex items-center justify-between gap-3">
-        <p className="text-xs font-medium text-muted-foreground">{data.popular.length} selected topics</p>
-        <span className="inline-flex items-center gap-2 rounded-full border border-violet-100 bg-violet-50 px-3 py-1.5 text-xs font-semibold text-violet-800">
-          <span className="hidden sm:inline">Scroll to explore</span><span className="sm:hidden">Swipe</span><ArrowRight className="h-3.5 w-3.5" aria-hidden />
-        </span>
+
+      <div className="popular-topic-controls" aria-label="Topic carousel controls">
+        <div className="min-w-0 flex-1">
+          <div className="mb-2 flex items-center justify-between gap-3">
+            <span className="text-xs font-semibold text-slate-700">Discover more topics</span>
+            <span className="text-xs font-bold tabular-nums text-violet-800">{String(activeTopic + 1).padStart(2, '0')} <span className="font-medium text-slate-400">/ {String(data.popular.length).padStart(2, '0')}</span></span>
+          </div>
+          <div className="h-1 overflow-hidden rounded-full bg-slate-200" role="progressbar" aria-label="Topic carousel position" aria-valuemin={1} aria-valuemax={data.popular.length} aria-valuenow={activeTopic + 1}>
+            <div className="h-full rounded-full bg-violet-600 transition-[width] duration-300" style={{ width: `${((activeTopic + 1) / data.popular.length) * 100}%` }} />
+          </div>
+        </div>
+        <div className="flex shrink-0 items-center gap-2">
+          <button type="button" onClick={() => moveRail(-1)} disabled={activeTopic === 0} aria-label="Previous topics" className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-violet-300 hover:text-violet-700 disabled:cursor-not-allowed disabled:opacity-35">
+            <ChevronLeft className="h-4 w-4" aria-hidden />
+          </button>
+          <button type="button" onClick={() => moveRail(1)} disabled={activeTopic >= data.popular.length - 1} aria-label="Next topics" className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-violet-300 hover:text-violet-700 disabled:cursor-not-allowed disabled:opacity-35">
+            <ChevronRight className="h-4 w-4" aria-hidden />
+          </button>
+        </div>
       </div>
     </section>
   )
