@@ -123,8 +123,8 @@ function About() {
 
       <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-9">
         <div className="grid items-center gap-7 sm:grid-cols-[minmax(0,1fr)_minmax(0,1.7fr)] sm:gap-10">
-          <div className="mx-auto flex aspect-square w-full max-w-[260px] items-center justify-center overflow-hidden rounded-2xl bg-brand-deep text-5xl font-semibold tracking-tight text-white shadow-lg" aria-label="Founder portrait placeholder">
-            MB
+          <div className="mx-auto aspect-square w-full max-w-[260px] overflow-hidden rounded-2xl bg-slate-100 shadow-lg">
+            <img src="/images/founder-mohamed-bangura.jpg" alt="Mohamed Bangura, Founder and Developer of WASSCE Tutor" width={400} height={400} loading="lazy" decoding="async" className="h-full w-full object-cover object-center" />
           </div>
           <div>
             <p className="about-eyebrow">THE PERSON BEHIND THE PLATFORM</p>
