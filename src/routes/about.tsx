@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
-import { Check, Mail, MapPin } from 'lucide-react'
+import { Check, Linkedin, Mail, MapPin } from 'lucide-react'
 import { SubjectCover } from '@/components/ds/SubjectCover'
 import { SUBJECT_PHOTOS } from '@/lib/subject-photos'
 import { TUTOR_PHOTO } from '@/lib/tutors'
@@ -118,6 +118,25 @@ function About() {
         <div><p className="about-eyebrow">MADE FOR SIERRA LEONE</p><h2>Built around the realities of learning here.</h2>
           <p>WASSCE Tutor is built and maintained in Freetown by a Sierra Leonean developer who understands the realities of studying for WAEC here: limited textbook access, expensive data, shared devices, unreliable power. Every product decision, from the small app size to the flat pricing, is made with these constraints in mind.</p>
           <p>We are not a global ed-tech company adapting content for Africa. We are a local team building for our own market.</p>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-9">
+        <div className="grid items-center gap-7 sm:grid-cols-[minmax(0,1fr)_minmax(0,1.7fr)] sm:gap-10">
+          <div className="mx-auto flex aspect-square w-full max-w-[260px] items-center justify-center overflow-hidden rounded-2xl bg-brand-deep text-5xl font-semibold tracking-tight text-white shadow-lg" aria-label="Founder portrait placeholder">
+            MB
+          </div>
+          <div>
+            <p className="about-eyebrow">THE PERSON BEHIND THE PLATFORM</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-950">Mohamed Bangura</h2>
+            <p className="mt-1 text-sm font-semibold text-brand">Founder &amp; Developer, WASSCE Tutor</p>
+            <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
+              WASSCE Tutor is built and maintained by a Sierra Leonean developer focused on making structured, locally relevant WASSCE preparation more accessible to students across the country.
+            </p>
+            <a href="https://www.linkedin.com/in/mohamed-bangura-6b209944a/" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-full border border-slate-200 px-4 text-sm font-semibold text-slate-800 transition-colors hover:border-brand hover:text-brand">
+              <Linkedin className="h-4 w-4" aria-hidden /> Connect on LinkedIn
+            </a>
+          </div>
         </div>
       </section>
 
