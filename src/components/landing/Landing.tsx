@@ -97,18 +97,23 @@ function LivePlatformStats({ initial }: { initial: LandingData['totals'] }) {
     return () => { active = false }
   }, [])
   const items = [
-    { value: stats.subjects, label: 'WASSCE subjects' },
-    { value: stats.topics, label: 'syllabus topics' },
-    { value: stats.lessons, label: 'available lessons' },
-    { value: stats.students, label: 'registered students' },
+    { value: stats.subjects, label: 'WASSCE subjects', icon: BookOpenCheck },
+    { value: stats.topics, label: 'syllabus topics', icon: Compass },
+    { value: stats.lessons, label: 'available lessons', icon: BookOpen },
+    { value: stats.students, label: 'registered students', icon: UserRound },
   ]
   return (
     <div className="relative border-t border-white/10 bg-black/10">
-      <div className="mx-auto grid max-w-6xl grid-cols-2 px-5 py-5 sm:px-8 lg:grid-cols-4">
-        {items.map((item) => (
-          <div key={item.label} className="platform-stat px-3 py-2 text-center sm:px-5">
-            <p className="text-2xl font-bold tracking-tight tabular-nums sm:text-3xl"><AnimatedNumber value={item.value} /></p>
-            <p className="mt-1 text-xs font-medium text-white/55 sm:text-sm">{item.label}</p>
+      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-2.5 px-4 py-5 sm:gap-3 sm:px-8 sm:py-6 lg:grid-cols-4">
+        {items.map(({ value, label, icon: Icon }) => (
+          <div key={label} className="platform-stat flex min-h-[5.5rem] items-center justify-center gap-3 rounded-2xl border border-white/10 bg-white/[0.055] px-2.5 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,.06)] sm:min-h-[6rem] sm:justify-start sm:px-4">
+            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-violet-100 ring-1 ring-white/10">
+              <Icon className="h-4 w-4" aria-hidden />
+            </span>
+            <span className="min-w-0 text-left">
+              <span className="block text-xl font-extrabold leading-none tracking-tight tabular-nums text-white sm:text-2xl"><AnimatedNumber value={value} /></span>
+              <span className="mt-1.5 block text-[10px] font-semibold leading-snug text-white/65 sm:text-xs">{label}</span>
+            </span>
           </div>
         ))}
       </div>
