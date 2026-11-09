@@ -8,7 +8,7 @@
 import { Link } from '@tanstack/react-router'
 import { useEffect, useRef, useState } from 'react'
 import { useReveal } from '@/components/ds/useReveal'
-import { ArrowRight, BookOpen, BookOpenCheck, CalendarClock, Check, ChevronLeft, ChevronRight, Compass, GraduationCap, Moon, ShieldCheck, Smartphone, UserRound, Wallet, Zap } from 'lucide-react'
+import { ArrowLeft, ArrowRight, BookOpen, BookOpenCheck, CalendarClock, Check, ChevronRight, Compass, GraduationCap, Moon, ShieldCheck, Smartphone, UserRound, Wallet, Zap } from 'lucide-react'
 import type { LandingData } from '@/lib/public-content'
 import { subjectPath, topicPath } from '@/lib/public-content'
 import { SubjectCover } from '@/components/ds/SubjectCover'
@@ -338,7 +338,7 @@ function PopularTopics({ data }: { data: LandingData }) {
         </div>
         <div className="flex shrink-0 items-center gap-2">
           <button type="button" onClick={() => moveRail(-1)} disabled={activeTopic === 0} aria-label="Previous topics" className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-violet-300 hover:text-violet-700 disabled:cursor-not-allowed disabled:opacity-35">
-            <ChevronLeft className="h-4 w-4" aria-hidden />
+            <ArrowLeft className="h-4 w-4" aria-hidden />
           </button>
           <button type="button" onClick={() => moveRail(1)} disabled={activeTopic >= data.popular.length - 1} aria-label="Next topics" className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-violet-300 hover:text-violet-700 disabled:cursor-not-allowed disabled:opacity-35">
             <ChevronRight className="h-4 w-4" aria-hidden />
