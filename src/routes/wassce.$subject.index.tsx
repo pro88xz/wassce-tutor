@@ -74,45 +74,52 @@ function SubjectHubPage() {
         {roleLabel(hub) && <p className="text-sm text-muted-foreground">{roleLabel(hub)}</p>}
       </header>
 
-      <section className="space-y-8" aria-labelledby="syllabus">
-        <h2 id="syllabus" className="text-2xl font-bold tracking-tight">{subject.name} syllabus topics</h2>
-        {groups.map((group) => (
-          <section key={group.name} className="space-y-3">
-            <div className="flex items-center justify-between gap-3">
-              <h3 className="text-sm font-semibold text-muted-foreground">{group.name}</h3>
-              <span className="text-xs text-muted-foreground">{group.topics.length} topics</span>
-            </div>
-            <ul className="space-y-3">
-              {group.topics.map((topic, topicIndex) => (
-                <li key={topic.id} className="group/topic relative overflow-hidden rounded-2xl border border-border/70 bg-card p-4 shadow-[0_8px_24px_-20px_rgba(15,23,42,0.35)] transition-all duration-200 hover:border-primary/30 hover:shadow-md sm:p-5">
-                  <span aria-hidden className={`absolute inset-y-0 left-0 w-1 ${palette.bar} opacity-80`} />
-                  <div className="flex items-start gap-3.5 sm:gap-4">
-                    <span className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-sm font-bold tabular-nums ${palette.soft} ${palette.text}`}>
-                      {String(topicIndex + 1).padStart(2, '0')}
-                    </span>
-                    <div className="min-w-0 flex-1 space-y-1.5">
-                      {hasTopicPage(topic) ? (
-                        <a href={topicPath(subject.slug, topic.slug)} className={`block text-base font-bold leading-snug tracking-tight hover:underline sm:text-[17px] ${palette.text}`}>
-                          {topic.name}
-                        </a>
-                      ) : (
-                        <span className="block text-base font-bold leading-snug tracking-tight sm:text-[17px]">{topic.name}</span>
-                      )}
-                      {topic.description && <p className="text-sm leading-relaxed text-muted-foreground sm:text-[15px]">{topic.description}</p>}
-                      <span className="inline-flex items-center gap-1.5 pt-1 text-xs font-medium text-muted-foreground">
-                        <BookOpen className="h-3.5 w-3.5" aria-hidden />
-                        {topic.lessons.length > 0 ? `${topic.lessons.length} available lesson${topic.lessons.length === 1 ? '' : 's'}` : 'Lesson content coming soon'}
-                      </span>
-                    </div>
-                    <span className={`mt-0.5 shrink-0 rounded-lg px-2.5 py-1.5 text-xs font-bold ${topic.lessons.length > 0 ? `${palette.soft} ${palette.text}` : 'bg-muted text-muted-foreground'}`}>
-                      {topic.lessons.length > 0 ? 'Ready' : 'Soon'}
-                    </span>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
+      <section className="space-y-5" aria-labelledby="syllabus">
+        <div className="flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[.14em] text-primary">Course outline</p>
+            <h2 id="syllabus" className="text-2xl font-bold tracking-tight">{subject.name} syllabus topics</h2>
+          </div>
+          <p className="text-sm text-muted-foreground">Open a section to explore its topics and lessons.</p>
+        </div>
+        <div className="space-y-3">
+          {groups.map((group, groupIndex) => (
+            <details key={group.name} open={groupIndex === 0} className="group/section overflow-hidden rounded-2xl border border-border/80 bg-card shadow-[0_10px_30px_-26px_rgba(15,23,42,.38)] transition-shadow open:shadow-[0_16px_36px_-28px_rgba(40,20,95,.35)]">
+              <summary className="flex min-h-[4.5rem] cursor-pointer list-none items-center gap-3 px-4 py-4 transition-colors hover:bg-muted/35 sm:px-5 [&::-webkit-details-marker]:hidden">
+                <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-xs font-extrabold tabular-nums ${palette.soft} ${palette.text}`}>{String(groupIndex + 1).padStart(2, '0')}</span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-sm font-bold leading-snug text-foreground sm:text-base">{group.name}</span>
+                  <span className="mt-0.5 block text-xs text-muted-foreground">{group.topics.length} topics</span>
+                </span>
+                <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition-transform duration-200 group-open/section:rotate-90" aria-hidden />
+              </summary>
+              <div className="border-t border-border/70 bg-slate-50/55 p-3 sm:p-4">
+                <ul className="grid gap-2.5">
+                  {group.topics.map((topic, topicIndex) => (
+                    <li key={topic.id} className="group/topic relative overflow-hidden rounded-xl border border-border/70 bg-white p-3.5 transition-all duration-200 hover:border-primary/35 hover:shadow-[0_10px_24px_-20px_rgba(40,20,95,.4)] sm:p-4">
+                      <span aria-hidden className={`absolute inset-y-0 left-0 w-[3px] ${palette.bar} opacity-75`} />
+                      <div className="flex items-start gap-3">
+                        <span className={`mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-xs font-bold tabular-nums ${palette.soft} ${palette.text}`}>{String(topicIndex + 1).padStart(2, '0')}</span>
+                        <div className="min-w-0 flex-1">
+                          {hasTopicPage(topic) ? (
+                            <a href={topicPath(subject.slug, topic.slug)} className={`block text-[15px] font-bold leading-snug tracking-tight hover:underline sm:text-base ${palette.text}`}>{topic.name}</a>
+                          ) : (
+                            <span className="block text-[15px] font-bold leading-snug tracking-tight text-foreground sm:text-base">{topic.name}</span>
+                          )}
+                          {topic.description && <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground sm:text-sm">{topic.description}</p>}
+                          <div className="mt-2.5 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs font-medium text-muted-foreground">
+                            <span className="inline-flex items-center gap-1.5"><BookOpen className="h-3.5 w-3.5" aria-hidden />{topic.lessons.length > 0 ? `${topic.lessons.length} available lesson${topic.lessons.length === 1 ? '' : 's'}` : 'Lesson content coming soon'}</span>
+                            {hasTopicPage(topic) && <span className="inline-flex items-center gap-1 text-primary"><span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />Open topic <ChevronRight className="h-3 w-3" aria-hidden /></span>}
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </details>
+          ))}
+        </div>
       </section>
 
       <a
