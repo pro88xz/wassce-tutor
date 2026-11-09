@@ -8,12 +8,12 @@ export const UNIVERSITY_FEATURES = [
     imageAlt: 'Historic Fourah Bay College building in Cline Town, part of the University of Sierra Leone',
   },
   {
-    slug: 'comahs',
-    name: 'College of Medicine and Allied Health Sciences (COMAHS)',
-    shortName: 'COMAHS',
-    summary: 'Medicine, pharmacy, nursing, medical laboratory sciences and public health within the University of Sierra Leone.',
-    image: 'https://mohs.gov.sl/wp-content/uploads/2025/09/image-1024x680.png',
-    imageAlt: 'Medical training equipment presentation at COMAHS, reported by the Ministry of Health',
+    slug: 'milton-margai-technical-university',
+    name: 'Milton Margai Technical University',
+    shortName: 'MMTU',
+    summary: 'Technical and professional programmes across applied sciences, engineering, business, education, health and technology.',
+    image: 'https://www.mmtu.edu.sl/images/Goderichimage.jpeg',
+    imageAlt: 'Goderich campus of Milton Margai Technical University',
   },
   {
     slug: 'njala-university',
