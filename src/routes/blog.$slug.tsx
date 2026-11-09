@@ -45,13 +45,34 @@ export const Route = createFileRoute('/blog/$slug')({
 type RelatedCard = { slug: string; label: string; title: string; description: string; href: string }
 
 function getRelatedCards(slugs: string[]): RelatedCard[] {
-  return slugs.flatMap((slug): RelatedCard[] => {
+  const cards: RelatedCard[] = []
+
+  for (const slug of slugs) {
     const article = BLOG_POSTS.find((entry) => entry.slug === slug)
-    if (article) return [{ slug: article.slug, label: article.category, title: article.title, description: article.description, href: `/blog/${article.slug}` }]
+    if (article) {
+      cards.push({
+        slug: article.slug,
+        label: article.category,
+        title: article.title,
+        description: article.description,
+        href: `/blog/${article.slug}`,
+      })
+      continue
+    }
+
     const university = UNIVERSITY_GUIDES.find((entry) => entry.slug === slug)
-    if (!university) return []
-    return [{ slug: university.slug, label: 'University guide', title: university.name, description: university.summary, href: `/universities/${university.slug}` }]
-  })
+    if (university) {
+      cards.push({
+        slug: university.slug,
+        label: 'University guide',
+        title: university.name,
+        description: university.summary,
+        href: `/universities/${university.slug}`,
+      })
+    }
+  }
+
+  return cards
 }
 
 function BlogArticlePage() {
