@@ -42,18 +42,21 @@ export const Route = createFileRoute('/blog/$slug')({
   component: BlogArticlePage,
 })
 
+type RelatedCard = { slug: string; label: string; title: string; description: string; href: string }
+
+function getRelatedCards(slugs: string[]): RelatedCard[] {
+  return slugs.flatMap((slug): RelatedCard[] => {
+    const article = BLOG_POSTS.find((entry) => entry.slug === slug)
+    if (article) return [{ slug: article.slug, label: article.category, title: article.title, description: article.description, href: `/blog/${article.slug}` }]
+    const university = UNIVERSITY_GUIDES.find((entry) => entry.slug === slug)
+    if (!university) return []
+    return [{ slug: university.slug, label: 'University guide', title: university.name, description: university.summary, href: `/universities/${university.slug}` }]
+  })
+}
+
 function BlogArticlePage() {
   const post = Route.useLoaderData()
-  type RelatedCard = { slug: string; kind: 'article' | 'university'; label: string; title: string; description: string; href: string }
-  const related: RelatedCard[] = post.related.map((slug): RelatedCard | null => {
-    const article = BLOG_POSTS.find((entry) => entry.slug === slug)
-    if (article) {
-      return { slug: article.slug, kind: 'article', label: article.category, title: article.title, description: article.description, href: `/blog/${article.slug}` }
-    }
-    const university = UNIVERSITY_GUIDES.find((entry) => entry.slug === slug)
-    if (!university) return null
-    return { slug: university.slug, kind: 'university', label: 'University guide', title: university.name, description: university.summary, href: `/universities/${university.slug}` }
-  }).filter((item): item is RelatedCard => item !== null)
+  const related = getRelatedCards(post.related)
   return (
     <main className="mx-auto w-full max-w-5xl space-y-8 pb-16">
       <Breadcrumbs trail={[['Home','/'],['Blog','/blog'],[post.title,`/blog/${post.slug}`]]}/>
