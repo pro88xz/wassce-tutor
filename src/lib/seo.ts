@@ -102,7 +102,7 @@ export type HeadTags = {
 
 /** A <script type="application/ld+json"> head tag; "<" is escaped so the JSON can't close the script. */
 function jsonLd(data: Record<string, unknown>): NonNullable<AnyRouteMatch['headScripts']>[number] {
-  return { type: 'application/ld+json', children: JSON.stringify(data).replace(/</g, '\\u003c') }
+  return { type: 'application/ld+json', children: JSON.stringify(data).replace(/</g, String.fromCharCode(92) + 'u003c') }
 }
 
 export function absoluteUrl(path: string): string {
