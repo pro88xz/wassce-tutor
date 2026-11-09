@@ -409,7 +409,7 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=592097176041211',
     imageAlt: 'Njala University image published on its official Facebook page',
     imageCredit: 'Njala University — official Facebook page',
-    imageSourceUrl: 'https://njala.edu.sl/',
+    imageSourceUrl: 'https://www.facebook.com/njalauniversity/',
     intro: 'A WASSCE result is not a universal university admission ticket. Most degree routes start with five credits, but the subjects, grade thresholds, sittings, professional qualifications and application windows differ by institution and programme. This guide compares what the universities currently publish—and clearly flags information that is contradictory or out of date.',
     sections: [
       {
@@ -427,7 +427,8 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         bullets: [
           'University of Sierra Leone: five credits in up to two sittings, with at least C6 in English for degree programmes; faculty and departmental requirements apply. Diploma: four credits including English; certificate: three credits including English.',
-          'COMAHS (a constituent college of USL): entry is programme-specific. Published pre-entry routes include MBBS with five C5+ credits in English, Chemistry, Biology, Mathematics/Further Mathematics and Physics, and separate C5+ science combinations for Pharmacy, Nursing, Medical Laboratory Sciences and Public Health. Aggregate thresholds and advanced-entry rules differ by programme; check the official course page.',\n          'Njala University: five WASSCE credits including English for undergraduate degrees, in no more than two sittings; school and departmental rules apply. Diploma: three credits; certificate: two credits.',
+          'COMAHS (a constituent college of USL): entry is programme-specific. Published pre-entry routes include MBBS with five C5+ credits in English, Chemistry, Biology, Mathematics/Further Mathematics and Physics, and separate C5+ science combinations for Pharmacy, Nursing, Medical Laboratory Sciences and Public Health. Aggregate thresholds and advanced-entry rules differ by programme; check the official course page.',
+          'Njala University: five WASSCE credits including English for undergraduate degrees, in no more than two sittings; school and departmental rules apply. Diploma: three credits; certificate: two credits.',
           'Eastern Technical University: five WASSCE credits including English for degree programmes, in no more than two sittings; departmental subject rules apply. Higher Diploma generally requires four credits; Ordinary Diploma generally requires three.',
           'Milton Margai Technical University: requirements vary by award. B.Ed/BA routes list five credits including English; BSc/BSc Ed/BTech routes list five including Mathematics and English. HTC/HND and diploma routes have separate criteria.',
           'EBKUST: requirements are listed by faculty and programme. Agriculture and several science routes specify English, Mathematics and relevant subject credits; consult the exact programme page.',
@@ -461,7 +462,10 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     sources: [
       { label: 'USL 2026/2027 entry requirements (PDF)', url: 'https://admissions.usl.edu.sl/sites/default/files/2026-08/usl-entry-requirement-2026-2027.pdf' },
-      { label: 'USL Admission Portal', url: 'https://admissions.usl.edu.sl/university-entry-requirements' },\n      { label: 'COMAHS official college profile', url: 'https://usl.edu.sl/comahs' },\n      { label: 'COMAHS MBBS programme and entry requirements', url: 'https://usl.edu.sl/program-detail?slug=bachelor-of-medicine-bachelor-of-surgery' },\n      { label: 'COMAHS Pharmacy programme and entry requirements', url: 'https://usl.edu.sl/program-detail?slug=bachelor-of-pharmacy' },
+      { label: 'USL Admission Portal', url: 'https://admissions.usl.edu.sl/university-entry-requirements' },
+      { label: 'COMAHS official college profile', url: 'https://usl.edu.sl/comahs' },
+      { label: 'COMAHS MBBS programme and entry requirements', url: 'https://usl.edu.sl/program-detail?slug=bachelor-of-medicine-bachelor-of-surgery' },
+      { label: 'COMAHS Pharmacy programme and entry requirements', url: 'https://usl.edu.sl/program-detail?slug=bachelor-of-pharmacy' },
       { label: 'Njala University undergraduate admissions', url: 'https://njala.edu.sl/admissions/undergraduate-admissions' },
       { label: 'ETU-SL 2026/2027 admission advertisement (PDF)', url: 'https://etusl.edu.sl/wp-content/uploads/2026/08/ETU-SL-2026-2027-ADMISSION-ADVERTISEMENT-FINAL.pdf' },
       { label: 'MMTU admission requirements', url: 'https://admission.mmtu.edu.sl/requirement' },
@@ -481,7 +485,7 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=61558684652269',
     imageAlt: 'University of Sierra Leone official Facebook page image',
     imageCredit: 'University of Sierra Leone — official Facebook page',
-    imageSourceUrl: 'https://usl.edu.sl/',
+    imageSourceUrl: 'https://www.facebook.com/p/University-of-Sierra-Leone-USL-61558684652269/',
     intro: 'When a university asks for five WASSCE credits, the number alone is not enough. You must check which grades it accepts, which subjects count for your programme, whether results from two sittings can be combined and whether additional qualifications are recognised.',
     sections: [
       {
