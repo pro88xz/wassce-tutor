@@ -1,6 +1,6 @@
 export type EditorialSection = {
   heading: string
-  paragraphs: string[]
+  paragraphs?: string[]
   bullets?: string[]
 }
 
@@ -341,7 +341,7 @@ export type BlogPost = {
   image: string
   imageAlt: string
   imageCredit: string
-  imageSourceUrl: string
+  imageSourceUrl?: string
   intro: string
   sections: EditorialSection[]
   sources: EditorialSource[]
