@@ -5,6 +5,7 @@ import { Capacitor } from '@capacitor/core'
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { Dashboard } from '@/components/dashboard/Dashboard'
+import { StudentTutorBookings } from '@/components/dashboard/StudentTutorBookings'
 import { Landing } from '@/components/landing/Landing'
 import { fetchLandingData } from '@/lib/public-content'
 
@@ -60,7 +61,7 @@ function Index() {
 
   if (profileLoading) return <CenterMsg>Loading your dashboard…</CenterMsg>
 
-  return <Dashboard user={user} profile={profile} />
+  return <><Dashboard user={user} profile={profile} /><StudentTutorBookings userId={user.id} /></>
 }
 
 function CenterMsg({ children }: { children: React.ReactNode }) {

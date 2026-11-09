@@ -1,0 +1,79 @@
+name: Apply tutor booking transition safeguards
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feature/tutor-affiliate-platform
+    paths:
+      - 'supabase/migrations/20261108_12_booking_transition_guards.sql'
+      - '.github/workflows/supabase-migration-12.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wassce-tutor-booking-transition-migration
+  cancel-in-progress: false
+
+jobs:
+  apply-booking-guards:
+    name: Apply booking transition guard migration
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    environment: production
+    if: github.ref == 'refs/heads/feature/tutor-affiliate-platform'
+    steps:
+      - name: Check out feature branch
+        uses: actions/checkout@v5
+
+      - name: Validate target migration and database secret
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          test -n "$SUPABASE_DB_URL" || { echo "Missing SUPABASE_DB_URL"; exit 1; }
+          test -s "supabase/migrations/20261108_12_booking_transition_guards.sql" || { echo "Migration file missing"; exit 1; }
+          grep -qiE '^[[:space:]]*begin;' supabase/migrations/20261108_12_booking_transition_guards.sql
+          grep -qiE '^[[:space:]]*commit;' supabase/migrations/20261108_12_booking_transition_guards.sql
+
+      - name: Install PostgreSQL client
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes postgresql-client
+
+      - name: Apply migration once and record checksum
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          MIGRATION_VERSION: "20261108_12_booking_transition_guards"
+        run: |
+          set -euo pipefail
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 <<'SQL'
+          create schema if not exists wassce_internal;
+          revoke all on schema wassce_internal from public, anon, authenticated;
+          create table if not exists wassce_internal.deployed_migrations (
+            version text primary key,
+            sha256 text not null,
+            applied_at timestamptz not null default now()
+          );
+          revoke all on all tables in schema wassce_internal from public, anon, authenticated;
+          SQL
+
+          APPLIED="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select exists (select 1 from wassce_internal.deployed_migrations where version = '$MIGRATION_VERSION');" | tr -d '[:space:]')"
+          if [[ "$APPLIED" == "t" ]]; then
+            echo "Migration $MIGRATION_VERSION is already recorded; nothing to do."
+            exit 0
+          fi
+
+          CHECKSUM="$(sha256sum supabase/migrations/20261108_12_booking_transition_guards.sql | cut -d ' ' -f 1)"
+          {
+            echo "begin;"
+            echo "do \$\$ begin if exists (select 1 from wassce_internal.deployed_migrations where version = '$MIGRATION_VERSION') then raise exception 'Migration already applied'; end if; end \$\$;"
+            sed '/^[[:space:]]*begin;[[:space:]]*$/Id; /^[[:space:]]*commit;[[:space:]]*$/Id;' supabase/migrations/20261108_12_booking_transition_guards.sql
+            printf "insert into wassce_internal.deployed_migrations(version, sha256) values ('%s', '%s');\\n" "$MIGRATION_VERSION" "$CHECKSUM"
+            echo "commit;"
+          } | psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1
+
+          echo "Migration applied and recorded successfully."

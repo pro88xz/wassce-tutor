@@ -1,10 +1,9 @@
 # WASSCE Tutor robots.txt
 #
-# Public pages (/, /about, /privacy, /terms, /tutors and /tutors/*) are
-# crawlable and listed in the sitemap.
-# App screens are blocked: they need an account, and logged-out visitors (and
-# bots) would only see a sign-in prompt. /auth is crawlable on purpose so
-# search engines can read its "noindex" and drop it from results.
+# Public pages (including WASSCE subjects, tutors, university profiles, the
+# editorial blog, affiliate programme and tutor recruitment) are crawlable and
+# listed in the sitemap. Private app screens emit noindex metadata/headers.
+# /auth remains crawlable on purpose so search engines can read its "noindex".
 # Never block /assets/: Google needs the JS and CSS to render pages.
 
 User-agent: *

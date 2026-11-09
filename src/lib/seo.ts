@@ -52,6 +52,31 @@ export const PUBLIC_PAGES = {
       'Contact WASSCE Tutor in Freetown, Sierra Leone: WhatsApp +232 77 884195, email, and our WhatsApp study group. Help with plans, payments and tutors.',
     lastmod: '2026-11-06',
   },
+  '/tutors': {
+    title: 'Find a WASSCE Tutor in Sierra Leone | WASSCE Tutor',
+    description: 'Find approved WASSCE tutors in Sierra Leone. Compare subjects, teaching formats and session rates, then request a one-to-one lesson.',
+    lastmod: '2026-11-08',
+  },
+  '/blog': {
+    title: 'WASSCE Tutor Blog: Study & University Guides',
+    description: 'Research-backed WASSCE study advice, Sierra Leone university admissions guides, subject planning and practical resources for students and families.',
+    lastmod: '2026-11-08',
+  },
+  '/universities': {
+    title: 'Sierra Leone Universities: Courses & WASSCE Requirements',
+    description: 'Compare universities in Sierra Leone, explore programmes and WASSCE entry requirements, and follow official admissions links for each institution.',
+    lastmod: '2026-11-08',
+  },
+  '/become-a-tutor': {
+    title: 'Become a WASSCE Tutor in Sierra Leone | Teach Online or In Person',
+    description: 'Apply to teach WASSCE students in Sierra Leone. Create a tutor profile, list your subjects and rates, and manage verified bookings in a dedicated tutor workspace.',
+    lastmod: '2026-11-08',
+  },
+  '/affiliate': {
+    title: 'WASSCE Tutor Affiliate Programme | Earn from Student Referrals',
+    description: 'Join the WASSCE Tutor affiliate programme. Share a tracked referral link and earn 50% of a referred student’s first verified subscription payment.',
+    lastmod: '2026-11-08',
+  },
   '/privacy': {
     title: 'Privacy Policy | WASSCE Tutor',
     description:
@@ -77,7 +102,7 @@ export type HeadTags = {
 
 /** A <script type="application/ld+json"> head tag; "<" is escaped so the JSON can't close the script. */
 function jsonLd(data: Record<string, unknown>): NonNullable<AnyRouteMatch['headScripts']>[number] {
-  return { type: 'application/ld+json', children: JSON.stringify(data).replace(/</g, '\\u003c') }
+  return { type: 'application/ld+json', children: JSON.stringify(data).replace(/</g, String.fromCharCode(92) + 'u003c') }
 }
 
 export function absoluteUrl(path: string): string {
@@ -191,6 +216,27 @@ const PAGE_JSON_LD: Partial<Record<PublicPath, Record<string, unknown>[]>> = {
   // breadcrumbJsonLd is a function declaration, so it is hoisted and usable here.
   '/about': [ABOUT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['About', '/about']])],
   '/contact': [CONTACT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['Contact', '/contact']])],
+  '/tutors': [breadcrumbJsonLd([['Home', '/'], ['Tutors', '/tutors']])],
+  '/affiliate': [breadcrumbJsonLd([['Home', '/'], ['Affiliate programme', '/affiliate']])],
+  '/become-a-tutor': [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: 'Become a WASSCE Tutor in Sierra Leone',
+      url: `${SITE.origin}/become-a-tutor`,
+      description: 'Apply to teach WASSCE students in Sierra Leone, build a verified tutor profile and manage lesson bookings in a dedicated workspace.',
+      mainEntity: {
+        '@type': 'Service',
+        name: 'WASSCE Tutor teaching partner onboarding',
+        serviceType: 'Tutoring marketplace onboarding',
+        provider: { '@id': ORG_ID },
+        areaServed: { '@type': 'Country', name: 'Sierra Leone' },
+      },
+    },
+    breadcrumbJsonLd([['Home', '/'], ['Become a tutor', '/become-a-tutor']]),
+  ],
+  '/blog': [breadcrumbJsonLd([['Home', '/'], ['Blog', '/blog']])],
+  '/universities': [breadcrumbJsonLd([['Home', '/'], ['Universities', '/universities']])],
 }
 
 type IndexablePage = {
@@ -200,21 +246,31 @@ type IndexablePage = {
   ogTitle?: string
   /** JSON-LD objects, each emitted as its own <script type="application/ld+json">. */
   jsonLd?: Record<string, unknown>[]
+  image?: string
+  type?: 'website' | 'article'
+  publishedAt?: string
+  modifiedAt?: string
 }
 
 /** Tags for an indexable page: unique title + description, self canonical, OG/Twitter text, optional JSON-LD. */
-export function indexablePageTags({ path, title, description, ogTitle = title, jsonLd: data = [] }: IndexablePage): HeadTags {
+export function indexablePageTags({ path, title, description, ogTitle = title, jsonLd: data = [], image = `${SITE.origin}/og-image.jpg`, type = 'website', publishedAt, modifiedAt }: IndexablePage): HeadTags {
   const url = absoluteUrl(path)
   return {
     meta: [
       { title },
       { name: 'description', content: description },
       { name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large' },
+      { property: 'og:type', content: type },
+      { property: 'og:image', content: image },
+      { property: 'og:image:alt', content: title },
       { property: 'og:title', content: ogTitle },
       { property: 'og:description', content: description },
       { property: 'og:url', content: url },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:image', content: image },
       { name: 'twitter:title', content: ogTitle },
       { name: 'twitter:description', content: description },
+      ...(type === 'article' && publishedAt ? [{ property: 'article:published_time', content: publishedAt }, { property: 'article:modified_time', content: modifiedAt ?? publishedAt }] : []),
     ],
     links: [{ rel: 'canonical', href: url }],
     scripts: data.map(jsonLd),

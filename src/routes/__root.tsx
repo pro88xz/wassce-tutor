@@ -106,6 +106,7 @@ function RootComponent() {
   const { user } = useAuth()
   const pathname = useRouterState({ select: (st) => st.location.pathname })
   const studentNav = !!user && showsStudentNav(pathname)
+  const roleWorkspace = pathname === '/tutor-dashboard' || pathname === '/affiliate-dashboard'
   return (
     <div className="app-frame flex bg-background text-foreground">
       <SideNav />
@@ -114,9 +115,9 @@ function RootComponent() {
           <TopBar />
           {/* Bottom padding clears the fixed mobile navigation bar when it is shown. */}
           <div className={`px-4 pt-4 sm:px-6 sm:pt-6 ${studentNav ? 'pb-28 lg:pb-12' : 'pb-12'}`}>
-            <PublicHeader />
+            {!roleWorkspace && <PublicHeader />}
             <Outlet />
-            <Footer />
+            {!roleWorkspace && <Footer />}
           </div>
         </main>
       </div>

@@ -2,6 +2,12 @@ name: Deploy tutor notification email function
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - feature/tutor-affiliate-platform
+    paths:
+      - 'supabase/functions/send-notification-email/**'
+      - '.github/workflows/deploy-notification-email.yml'
 
 permissions:
   contents: read
@@ -52,7 +58,7 @@ jobs:
         run: |
           set -euo pipefail
           supabase secrets set \
-            --project-ref "$SUPABASE_PROJECT_REF" \
+            --remote="$SUPABASE_PROJECT_REF" --yes \
             "RESEND_API_KEY=$RESEND_API_KEY" \
             "EMAIL_FROM=$EMAIL_FROM" \
             "APP_ORIGIN=https://wasscetutor.com"
@@ -64,4 +70,4 @@ jobs:
           SUPABASE_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
         run: |
           set -euo pipefail
-          supabase functions deploy send-notification-email --project-ref "$SUPABASE_PROJECT_REF"
+          supabase functions deploy send-notification-email --remote="$SUPABASE_PROJECT_REF" --yes

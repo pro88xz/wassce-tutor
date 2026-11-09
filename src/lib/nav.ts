@@ -28,7 +28,7 @@ export const STUDENT_NAV: NavItem[] = [
  * assessment (a paper in progress has its own exit path).
  */
 export function showsStudentNav(pathname: string): boolean {
-  return !under(pathname, '/auth', '/onboarding', '/reset-password', '/subscribe', '/admin', '/paper')
+  return !under(pathname, '/auth', '/onboarding', '/reset-password', '/subscribe', '/admin', '/paper', '/become-a-tutor', '/tutor-dashboard', '/affiliate', '/affiliate-dashboard')
 }
 
 /** Up to two initials for the account avatar ("Fatmata Sesay" -> "FS"). */
