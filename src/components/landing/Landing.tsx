@@ -197,17 +197,22 @@ function Hero({ data }: { data: LandingData }) {
 /** Concrete product assurances, not borrowed testimonials or invented social proof. */
 function TrustStrip() {
   const items = [
-    { title: 'Built around WASSCE', body: 'Subjects and topics organised for the Sierra Leone syllabus.' },
-    { title: 'Study on your phone', body: 'Use the website or install the Android app.' },
-    { title: 'USSD checkout', body: 'Complete a one-time payment from your phone. Access activates after verification.' },
-    { title: 'Independent study platform', body: 'Not an official WAEC service or examination body.' },
+    { icon: BookOpenCheck, title: 'Built around WASSCE', body: 'Subjects and topics organised for the Sierra Leone syllabus.' },
+    { icon: Smartphone, title: 'Study on your phone', body: 'Use the website on your phone, including lower-cost Android devices.' },
+    { icon: Wallet, title: 'Local payment options', body: 'Pay once through supported phone-based checkout. Access follows payment verification.' },
+    { icon: ShieldCheck, title: 'Independent platform', body: 'A private study service, not an official WAEC service or examination body.' },
   ]
   return (
-    <section aria-label="WASSCE Tutor at a glance" className="trust-strip relative mx-auto mt-7 mb-10 grid max-w-6xl grid-cols-2 gap-x-6 gap-y-5 px-5 sm:px-8 lg:grid-cols-4">
-      {items.map((item) => (
-        <div key={item.title} className="trust-strip-item flex min-h-[7.25rem] flex-col justify-center gap-1.5 px-4 py-4 sm:px-5">
-          <span className="text-[11px] font-extrabold uppercase tracking-[.12em] text-primary">{item.title}</span>
-          <span className="text-xs leading-relaxed text-slate-600 sm:text-[13px]">{item.body}</span>
+    <section aria-label="WASSCE Tutor at a glance" className="relative mx-auto -mt-1 mb-12 grid max-w-6xl grid-cols-1 gap-3 px-4 sm:grid-cols-2 sm:px-6 lg:-mt-7 lg:grid-cols-4 lg:px-8">
+      {items.map(({ icon: Icon, title, body }) => (
+        <div key={title} className="group flex min-h-[9rem] items-start gap-3.5 rounded-2xl border border-slate-200/90 bg-white p-4 shadow-[0_8px_28px_-22px_rgba(26,20,55,.32)] transition duration-200 hover:-translate-y-0.5 hover:border-violet-200 hover:shadow-[0_16px_34px_-24px_rgba(76,29,149,.32)] sm:p-5">
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-violet-50 text-violet-700 ring-1 ring-violet-100">
+            <Icon className="h-5 w-5" aria-hidden />
+          </span>
+          <span className="min-w-0 pt-0.5">
+            <span className="block text-sm font-bold tracking-tight text-slate-900">{title}</span>
+            <span className="mt-1.5 block text-[13px] leading-relaxed text-slate-600">{body}</span>
+          </span>
         </div>
       ))}
     </section>
@@ -286,9 +291,9 @@ function PopularTopics({ data }: { data: LandingData }) {
         ))}
       </div>
       <div className="flex items-center justify-between gap-3">
-        <p className="text-xs font-medium text-muted-foreground">Showing {Math.min(3, data.popular.length)} at a time · {data.popular.length} topics</p>
-        <span className="inline-flex items-center gap-1 text-xs font-semibold text-primary" aria-hidden="true">
-          Swipe to explore <ArrowRight className="h-3.5 w-3.5" />
+        <p className="text-xs font-medium text-muted-foreground">{data.popular.length} selected topics</p>
+        <span className="inline-flex items-center gap-2 rounded-full border border-violet-100 bg-violet-50 px-3 py-1.5 text-xs font-semibold text-violet-800">
+          <span className="hidden sm:inline">Scroll to explore</span><span className="sm:hidden">Swipe</span><ArrowRight className="h-3.5 w-3.5" aria-hidden />
         </span>
       </div>
     </section>
@@ -314,11 +319,11 @@ function LocalBand({ data }: { data: LandingData }) {
             <h2 id="local-heading" className="text-[2rem] font-bold leading-[1.04] tracking-tight text-balance sm:text-4xl lg:text-5xl">A WASSCE learning platform shaped around local students.</h2>
             <p className="max-w-xl text-[15px] leading-relaxed text-white/75 sm:text-base">Study on the devices you use, follow the subjects you sit and pay through a phone-based checkout. The experience is designed around the realities of preparing for WASSCE in Sierra Leone.</p>
           </div>
-          <div className="grid grid-cols-3 overflow-hidden rounded-2xl border border-white/15 bg-white/[0.06] backdrop-blur-sm">
+          <div className="grid grid-cols-3 gap-2">
             {[[String(data.totals.subjects), 'subjects'], [String(data.totals.topics), 'syllabus topics'], [String(data.totals.lessons), 'published lessons']].map(([value, label]) => (
-              <div key={label} className="min-w-0 px-3 py-5 text-center sm:px-4 sm:py-6">
-                <p className="text-2xl font-bold tracking-tight tabular-nums text-white sm:text-3xl">{value}</p>
-                <p className="mt-1 text-[10px] font-medium leading-snug text-white/65 sm:text-xs">{label}</p>
+              <div key={label} className="min-w-0 rounded-2xl border border-white/15 bg-white/[0.09] px-2.5 py-5 text-center shadow-[inset_0_1px_0_rgba(255,255,255,.08)] sm:px-4 sm:py-6">
+                <p className="text-2xl font-extrabold tracking-tight tabular-nums text-white sm:text-3xl">{value}</p>
+                <p className="mt-1 text-[10px] font-semibold leading-snug text-violet-100/80 sm:text-xs">{label}</p>
               </div>
             ))}
           </div>
