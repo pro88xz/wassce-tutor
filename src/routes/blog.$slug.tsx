@@ -44,14 +44,14 @@ export const Route = createFileRoute('/blog/$slug')({
 
 function BlogArticlePage() {
   const post = Route.useLoaderData()
-  const related = post.related.map((slug) => BLOG_POSTS.find((p) => p.slug === slug) ?? UNIVERSITY_GUIDES.find((u) => u.slug === slug)).filter(Boolean)
+  const related = post.related.flatMap((slug) => {\n    const article = BLOG_POSTS.find((item) => item.slug === slug)\n    if (article) return [article]\n    const university = UNIVERSITY_GUIDES.find((item) => item.slug === slug)\n    return university ? [university] : []\n  })
   return (
     <main className="mx-auto w-full max-w-5xl space-y-8 pb-16">
       <Breadcrumbs trail={[['Home','/'],['Blog','/blog'],[post.title,`/blog/${post.slug}`]]}/>
       <header className="space-y-5">
         <a href="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-primary"><ArrowLeft className="h-4 w-4"/> All articles</a>
         <div className="max-w-4xl"><p className="text-xs font-bold uppercase tracking-[.16em] text-primary">{post.category}</p><h1 className="mt-3 text-3xl font-bold leading-tight tracking-tight sm:text-5xl">{post.title}</h1><p className="mt-4 max-w-3xl text-lg leading-relaxed text-muted-foreground">{post.description}</p><div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-muted-foreground"><span>WASSCE Tutor Editorial Desk</span><span>Published {new Date(post.publishedAt+'T00:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})}</span><span className="inline-flex items-center gap-1"><Clock3 className="h-3.5 w-3.5"/>{post.readMinutes} min read</span></div></div>
-        <figure className="overflow-hidden rounded-3xl border bg-muted"><img src={post.image} alt={post.imageAlt} className="max-h-[520px] w-full object-cover"/><figcaption className="bg-card px-4 py-3 text-xs text-muted-foreground">Image: {post.imageCredit}. Source: <a href={post.imageSourceUrl} target="_blank" rel="noopener noreferrer" className="underline">official institution website</a>. Rights remain with the original publisher.</figcaption></figure>
+        <figure className="overflow-hidden rounded-3xl border bg-muted"><img src={post.image} alt={post.imageAlt} className="max-h-[520px] w-full object-cover"/><figcaption className="bg-card px-4 py-3 text-xs text-muted-foreground">Image: {post.imageCredit}. Source: <a href={post.imageSourceUrl ?? SITE.origin} target="_blank" rel="noopener noreferrer" className="underline">official institution website</a>. Rights remain with the original publisher.</figcaption></figure>
       </header>
       <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_250px]">
         <article className="min-w-0">
@@ -67,7 +67,7 @@ function BlogArticlePage() {
           <div className="rounded-2xl bg-[#21134d] p-5 text-white"><p className="text-xs font-bold uppercase tracking-wider text-violet-200">WASSCE preparation</p><h3 className="mt-2 text-lg font-bold">Build the subject knowledge your next step requires.</h3><a href="/wassce/subjects" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold">Explore subjects <ArrowRight className="h-4 w-4"/></a></div>
         </aside>
       </div>
-      <section className="space-y-4"><h2 className="text-2xl font-bold">Continue exploring</h2><div className="grid gap-4 sm:grid-cols-2">{related.map((item) => item && <a key={item.slug} href={'category' in item?`/blog/${item.slug}`:`/universities/${item.slug}`} className="rounded-2xl border bg-card p-5 transition hover:shadow-md"><p className="text-xs font-bold uppercase tracking-wider text-primary">{'category' in item?item.category:'University guide'}</p><h3 className="mt-2 font-bold leading-snug">{'category' in item ? item.title : item.name}</h3><p className="mt-2 text-sm text-muted-foreground">{'description' in item?item.description:item.summary}</p><span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">Read more <ArrowRight className="h-4 w-4"/></span></a>)}</div></section>
+      <section className="space-y-4"><h2 className="text-2xl font-bold">Continue exploring</h2><div className="grid gap-4 sm:grid-cols-2">{related.map((item) => { const article = 'category' in item; return <a key={item.slug} href={article ? `/blog/${item.slug}` : `/universities/${item.slug}`} className="rounded-2xl border bg-card p-5 transition hover:shadow-md"><p className="text-xs font-bold uppercase tracking-wider text-primary">{article ? item.category : 'University guide'}</p><h3 className="mt-2 font-bold leading-snug">{article ? item.title : item.name}</h3><p className="mt-2 text-sm text-muted-foreground">{article ? item.description : item.summary}</p><span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">Read more <ArrowRight className="h-4 w-4"/></span></a> })}</div></section>
     </main>
   )
 }
