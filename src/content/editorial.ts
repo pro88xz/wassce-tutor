@@ -40,9 +40,9 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     location: 'Freetown, Western Area',
     summary: 'A public university system comprising Fourah Bay College (FBC), the Institute of Public Administration and Management (IPAM), the College of Medicine and Allied Health Sciences (COMAHS), and postgraduate studies.',
     entrySummary: 'Degree: 5 credits in up to 2 sittings, including at least C6 English; faculty rules apply.',
-    image: 'https://usl.edu.sl/assets/images/bg.jpeg',
+    image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=61558684652269',
     imageAlt: 'University of Sierra Leone campus imagery from its official website',
-    imageCredit: 'University of Sierra Leone — official website',
+    imageCredit: 'University of Sierra Leone — official Facebook page',
     officialUrl: 'https://usl.edu.sl/',
     admissionsUrl: 'https://admissions.usl.edu.sl/university-entry-requirements',
     applicationUrl: 'https://admissions.usl.edu.sl/',
@@ -77,6 +77,54 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     updatedAt: '2026-11-08'
   },
   {
+    slug: 'comahs',
+    name: 'College of Medicine and Allied Health Sciences (COMAHS)',
+    shortName: 'COMAHS',
+    seoTitle: 'COMAHS Programmes & WASSCE Entry Requirements | WASSCE Tutor',
+    location: 'Connaught Hospital Complex, Freetown',
+    summary: 'A constituent college of the University of Sierra Leone focused on medical education, clinical training, health-sciences research and community engagement.',
+    entrySummary: 'Programme-specific: published pre-entry routes use C5+ WASSCE credits and science subject combinations; thresholds differ by course.',
+    image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100054337158528',
+    imageAlt: 'College of Medicine and Allied Health Sciences official Facebook page image',
+    imageCredit: 'College of Medicine and Allied Health Sciences — official Facebook page',
+    officialUrl: 'https://usl.edu.sl/comahs',
+    admissionsUrl: 'https://admissions.usl.edu.sl/university-entry-requirements',
+    applicationUrl: 'https://admissions.usl.edu.sl/',
+    status: 'USL 2026/2027 admissions information published; confirm COMAHS programme availability',
+    statusNote: 'The official COMAHS college page currently says no active programmes are linked in its college programme list, while individual USL programme records identify COMAHS for MBBS, Pharmacy, Nursing, Medical Laboratory Sciences and Public Health. Confirm that the exact course is accepting applications with USL Admissions before paying.',
+    requirements: [
+      'MBBS premedical entry: five WASSCE credits at C5 or better in English, Chemistry, Biology, Mathematics/Further Mathematics and Physics, in no more than two sittings. The published page uses aggregate thresholds to place candidates into Pre-medical 1 or 2; selection is subject to interview.',
+      'Pre-Pharmacy: five WASSCE credits at C5 or better in English, Mathematics/Further Mathematics, Physics, Chemistry and Biology, with a published aggregate threshold of 18 and a maximum of two sittings.',
+      'BSc Nursing: the published direct-entry route requires five WASSCE credits at C5 or better in English, Mathematics/Further Mathematics, Physics, Chemistry and Biology, with an aggregate threshold of 18; pre-degree and advanced-entry routes have separate rules.',
+      'Pre-Medical Laboratory Sciences and Public Health foundation routes publish their own five-credit subject combinations and aggregate thresholds. Check the exact programme page for the current wording.',
+      'These are programme-level routes, not one universal COMAHS requirement. Confirm the current admissions cycle, course availability and accepted route through the USL portal.'
+    ],
+    programmes: [
+      'Medicine and Surgery (MBBS), including the published pre-medical route.',
+      'Pharmacy (BPharm), including the published pre-pharmacy route.',
+      'Nursing and Midwifery, including the BSc Nursing route.',
+      'Medical Laboratory Sciences and Diagnostic programmes.',
+      'Public Health, Epidemiology and Disease Control, Health Promotion, and Sexual and Reproductive Health.'
+    ],
+    application: [
+      'Open the official USL admissions portal and review the current entry requirements for the exact COMAHS programme.',
+      'Confirm whether the programme is accepting applications for the current academic year; the college page and programme catalogue should be checked together.',
+      'Select College of Medicine and Allied Health Sciences as the college when completing the USL application, where the portal requests a college choice.',
+      'Follow only the fee and payment instructions displayed by the official admissions portal, then retain the application reference and receipt.'
+    ],
+    sources: [
+      { label: 'COMAHS — official college profile', url: 'https://usl.edu.sl/comahs' },
+      { label: 'USL COMAHS programme directory', url: 'https://usl.edu.sl/programs?campus=comahs' },
+      { label: 'MBBS — official programme and entry requirements', url: 'https://usl.edu.sl/program-detail?slug=bachelor-of-medicine-bachelor-of-surgery' },
+      { label: 'Bachelor of Pharmacy — official programme and entry requirements', url: 'https://usl.edu.sl/program-detail?slug=bachelor-of-pharmacy' },
+      { label: 'BSc Nursing — official programme and entry requirements', url: 'https://usl.edu.sl/program-detail?slug=bachelor-of-science-in-nursing' },
+      { label: 'BSc Medical Laboratory Sciences — official programme and entry requirements', url: 'https://usl.edu.sl/program-detail?slug=bachelor-of-science-in-medical-laboratory-sciences' },
+      { label: 'BSc Public Health — official programme and entry requirements', url: 'https://usl.edu.sl/program-detail?slug=bachelor-of-science-hons-in-public-health' },
+      { label: 'USL 2026/2027 admissions portal', url: 'https://admissions.usl.edu.sl/' }
+    ],
+    updatedAt: '2026-11-09'
+  },
+  {
     slug: 'njala-university',
     name: 'Njala University',
     shortName: 'Njala',
@@ -84,9 +132,9 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     location: 'Njala and Bo, with additional teaching locations',
     summary: 'A public university with undergraduate and postgraduate study across agriculture, basic sciences, environmental sciences, natural resources, technology, veterinary medicine, public health, nursing, medicine and education.',
     entrySummary: 'Degree: 5 WASSCE credits including English, in up to 2 sittings; school and department rules apply.',
-    image: 'https://njala.edu.sl/sites/default/files/Njala_Congregation_2026_Slider.jpg',
-    imageAlt: 'Njala University congregation, official university photograph',
-    imageCredit: 'Njala University — official website',
+    image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=592097176041211',
+    imageAlt: 'Njala University image published on its official Facebook page',
+    imageCredit: 'Njala University — official Facebook page',
     officialUrl: 'https://njala.edu.sl/',
     admissionsUrl: 'https://njala.edu.sl/admissions/undergraduate-admissions',
     applicationUrl: 'https://misnjala.edu.sl/apply',
@@ -128,9 +176,9 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     location: 'Kenema, with campuses and teaching locations across the Eastern Province',
     summary: 'A multi-campus technical university offering engineering, computing, applied sciences, vocational and skills development, health, agriculture and natural-resource programmes.',
     entrySummary: 'Degree: 5 credits including English, in up to 2 sittings; department-specific requirements apply.',
-    image: 'https://i.ibb.co/5m2JBwZ/IMG-0243.jpg',
-    imageAlt: 'Students engaged in research, as shown on the official ETU-SL website',
-    imageCredit: 'Eastern Technical University of Sierra Leone — official website',
+    image: 'https://etusl.edu.sl/wp-content/uploads/2025/08/IMG_0008-1024x683.jpg',
+    imageAlt: 'ETU-SL students in health training, official university website image',
+    imageCredit: 'Eastern Technical University of Sierra Leone — official Facebook page',
     officialUrl: 'https://etusl.edu.sl/',
     admissionsUrl: 'https://etusl.edu.sl/',
     applicationUrl: 'https://app.etusl.edu.sl/',
@@ -299,8 +347,8 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     location: 'Freetown',
     summary: 'The university’s official international website describes its Freetown campus and lists study areas including tourism management, entrepreneurship and international business.',
     entrySummary: 'Current Sierra Leone WASSCE entry schedule not found in the official source retrieved.',
-    image: 'https://www.limkokwing.com/photos/shares/img/sierra_leone2.jpg',
-    imageAlt: 'Limkokwing University Sierra Leone campus imagery from the university’s official website',
+    image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063778429058',
+    imageAlt: 'Limkokwing University Sierra Leone image from its official Facebook page',
     imageCredit: 'Limkokwing University — official international website',
     officialUrl: 'https://www.limkokwing.com/page/sierra_leone',
     admissionsUrl: 'https://www.limkokwing.com/page/sierra_leone',
@@ -353,14 +401,14 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'sierra-leone-university-admission-requirements-2026-2027',
     seoTitle: 'Sierra Leone University Entry Requirements 2026/27 | WASSCE Tutor',
     title: 'Sierra Leone University Admission Requirements for 2026/2027: A WASSCE Guide',
-    description: 'Compare published 2026/2027 WASSCE entry requirements at USL, Njala, ETU-SL, MMTU and EBKUST, with application dates and official links.',
+    description: 'Compare 2026/2027 WASSCE entry requirements at USL, COMAHS, Njala, ETU-SL, MMTU and EBKUST, with programme-specific subject rules and official links.',
     category: 'University admissions',
     publishedAt: '2026-11-08',
     updatedAt: '2026-11-08',
     readMinutes: 11,
-    image: 'https://njala.edu.sl/sites/default/files/Njala_Congregation_2026_Slider.jpg',
-    imageAlt: 'Njala University congregation, official university photograph',
-    imageCredit: 'Njala University — official website',
+    image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=592097176041211',
+    imageAlt: 'Njala University image published on its official Facebook page',
+    imageCredit: 'Njala University — official Facebook page',
     imageSourceUrl: 'https://njala.edu.sl/',
     intro: 'A WASSCE result is not a universal university admission ticket. Most degree routes start with five credits, but the subjects, grade thresholds, sittings, professional qualifications and application windows differ by institution and programme. This guide compares what the universities currently publish—and clearly flags information that is contradictory or out of date.',
     sections: [
@@ -379,7 +427,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         bullets: [
           'University of Sierra Leone: five credits in up to two sittings, with at least C6 in English for degree programmes; faculty and departmental requirements apply. Diploma: four credits including English; certificate: three credits including English.',
-          'Njala University: five WASSCE credits including English for undergraduate degrees, in no more than two sittings; school and departmental rules apply. Diploma: three credits; certificate: two credits.',
+          'COMAHS (a constituent college of USL): entry is programme-specific. Published pre-entry routes include MBBS with five C5+ credits in English, Chemistry, Biology, Mathematics/Further Mathematics and Physics, and separate C5+ science combinations for Pharmacy, Nursing, Medical Laboratory Sciences and Public Health. Aggregate thresholds and advanced-entry rules differ by programme; check the official course page.',\n          'Njala University: five WASSCE credits including English for undergraduate degrees, in no more than two sittings; school and departmental rules apply. Diploma: three credits; certificate: two credits.',
           'Eastern Technical University: five WASSCE credits including English for degree programmes, in no more than two sittings; departmental subject rules apply. Higher Diploma generally requires four credits; Ordinary Diploma generally requires three.',
           'Milton Margai Technical University: requirements vary by award. B.Ed/BA routes list five credits including English; BSc/BSc Ed/BTech routes list five including Mathematics and English. HTC/HND and diploma routes have separate criteria.',
           'EBKUST: requirements are listed by faculty and programme. Agriculture and several science routes specify English, Mathematics and relevant subject credits; consult the exact programme page.',
@@ -413,13 +461,13 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     sources: [
       { label: 'USL 2026/2027 entry requirements (PDF)', url: 'https://admissions.usl.edu.sl/sites/default/files/2026-08/usl-entry-requirement-2026-2027.pdf' },
-      { label: 'USL Admission Portal', url: 'https://admissions.usl.edu.sl/university-entry-requirements' },
+      { label: 'USL Admission Portal', url: 'https://admissions.usl.edu.sl/university-entry-requirements' },\n      { label: 'COMAHS official college profile', url: 'https://usl.edu.sl/comahs' },\n      { label: 'COMAHS MBBS programme and entry requirements', url: 'https://usl.edu.sl/program-detail?slug=bachelor-of-medicine-bachelor-of-surgery' },\n      { label: 'COMAHS Pharmacy programme and entry requirements', url: 'https://usl.edu.sl/program-detail?slug=bachelor-of-pharmacy' },
       { label: 'Njala University undergraduate admissions', url: 'https://njala.edu.sl/admissions/undergraduate-admissions' },
       { label: 'ETU-SL 2026/2027 admission advertisement (PDF)', url: 'https://etusl.edu.sl/wp-content/uploads/2026/08/ETU-SL-2026-2027-ADMISSION-ADVERTISEMENT-FINAL.pdf' },
       { label: 'MMTU admission requirements', url: 'https://admission.mmtu.edu.sl/requirement' },
       { label: 'EBKUST undergraduate requirements', url: 'https://ebkustsl.edu.sl/admissions/admission-requirement/undergraduate' }
     ],
-    related: ['university-of-sierra-leone', 'njala-university', 'eastern-technical-university', 'milton-margai-technical-university', 'ernest-bai-koroma-university']
+    related: ['university-of-sierra-leone', 'comahs', 'njala-university', 'eastern-technical-university', 'milton-margai-technical-university', 'ernest-bai-koroma-university']
   },
   {
     slug: 'what-counts-as-a-wassce-credit-for-university-admission',
@@ -430,9 +478,9 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-11-08',
     updatedAt: '2026-11-08',
     readMinutes: 7,
-    image: 'https://usl.edu.sl/assets/images/bg.jpeg',
-    imageAlt: 'University of Sierra Leone official campus imagery',
-    imageCredit: 'University of Sierra Leone — official website',
+    image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=61558684652269',
+    imageAlt: 'University of Sierra Leone official Facebook page image',
+    imageCredit: 'University of Sierra Leone — official Facebook page',
     imageSourceUrl: 'https://usl.edu.sl/',
     intro: 'When a university asks for five WASSCE credits, the number alone is not enough. You must check which grades it accepts, which subjects count for your programme, whether results from two sittings can be combined and whether additional qualifications are recognised.',
     sections: [
@@ -493,9 +541,9 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-11-08',
     updatedAt: '2026-11-08',
     readMinutes: 8,
-    image: 'https://i.ibb.co/5m2JBwZ/IMG-0243.jpg',
-    imageAlt: 'Students engaged in research at Eastern Technical University, official website image',
-    imageCredit: 'Eastern Technical University of Sierra Leone — official website',
+    image: 'https://etusl.edu.sl/wp-content/uploads/2025/08/IMG_0008-1024x683.jpg',
+    imageAlt: 'ETU-SL students in health training, official university website image',
+    imageCredit: 'Eastern Technical University of Sierra Leone — official Facebook page',
     imageSourceUrl: 'https://etusl.edu.sl/',
     intro: 'The safest time to check university subject requirements is before you finalise your WASSCE subject choices. A course title can sound familiar while its admission rules require a particular combination of Mathematics, English, Chemistry, Biology, Physics or another subject.',
     sections: [
@@ -545,7 +593,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: 'USL 2026/2027 entry requirements (PDF)', url: 'https://admissions.usl.edu.sl/sites/default/files/2026-08/usl-entry-requirement-2026-2027.pdf' },
       { label: 'Njala University 2026/2027 programmes (PDF)', url: 'https://njala.edu.sl/sites/default/files/NU_Programmes_2026-2027.pdf' }
     ],
-    related: ['sierra-leone-university-admission-requirements-2026-2027', 'what-counts-as-a-wassce-credit-for-university-admission']
+    related: ['sierra-leone-university-admission-requirements-2026-2027', 'comahs', 'what-counts-as-a-wassce-credit-for-university-admission']
   },
   {
     slug: 'sierra-leone-university-application-checklist',
