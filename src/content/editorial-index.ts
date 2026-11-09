@@ -4,16 +4,24 @@ export const UNIVERSITY_FEATURES = [
     name: 'University of Sierra Leone',
     shortName: 'USL',
     summary: 'Fourah Bay College, IPAM, COMAHS and postgraduate study across arts, business, sciences, engineering, law and health.',
-    image: 'https://usl.edu.sl/assets/images/bg.jpeg',
-    imageAlt: 'University of Sierra Leone campus imagery from its official website',
+    image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=61558684652269',
+    imageAlt: 'University of Sierra Leone official Facebook page image',
+  },
+  {
+    slug: 'comahs',
+    name: 'College of Medicine and Allied Health Sciences (COMAHS)',
+    shortName: 'COMAHS',
+    summary: 'Medicine, pharmacy, nursing, medical laboratory sciences and public health within the University of Sierra Leone.',
+    image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100054337158528',
+    imageAlt: 'COMAHS official Facebook page image',
   },
   {
     slug: 'njala-university',
     name: 'Njala University',
     shortName: 'Njala',
     summary: 'Agriculture, sciences, natural resources, technology, veterinary medicine, public health, nursing and medicine.',
-    image: 'https://njala.edu.sl/sites/default/files/Njala_Congregation_2026_Slider.jpg',
-    imageAlt: 'Njala University congregation, official university photograph',
+    image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=592097176041211',
+    imageAlt: 'Njala University image from its official Facebook page',
   },
   {
     slug: 'milton-margai-technical-university',
@@ -28,5 +36,5 @@ export const UNIVERSITY_FEATURES = [
 export const FEATURED_EDITORIAL = {
   slug: 'sierra-leone-university-admission-requirements-2026-2027',
   title: 'Sierra Leone University Admission Requirements for 2026/2027: A WASSCE Guide',
-  description: 'Compare published 2026/2027 WASSCE entry requirements at USL, Njala, ETU-SL, MMTU and EBKUST, with application dates and official links.',
+  description: 'Compare 2026/2027 WASSCE entry requirements at USL, COMAHS, Njala, ETU-SL, MMTU and EBKUST, with programme-specific subject rules and official links.',
 } as const
