@@ -44,12 +44,16 @@ export const Route = createFileRoute('/blog/$slug')({
 
 function BlogArticlePage() {
   const post = Route.useLoaderData()
-  const related = post.related.flatMap((slug) => {
-    const article = BLOG_POSTS.find((item) => item.slug === slug)
-    if (article) return [article]
-    const university = UNIVERSITY_GUIDES.find((item) => item.slug === slug)
-    return university ? [university] : []
-  })
+  type RelatedCard = { slug: string; kind: 'article' | 'university'; label: string; title: string; description: string; href: string }
+  const related: RelatedCard[] = post.related.map((slug): RelatedCard | null => {
+    const article = BLOG_POSTS.find((entry) => entry.slug === slug)
+    if (article) {
+      return { slug: article.slug, kind: 'article', label: article.category, title: article.title, description: article.description, href: `/blog/${article.slug}` }
+    }
+    const university = UNIVERSITY_GUIDES.find((entry) => entry.slug === slug)
+    if (!university) return null
+    return { slug: university.slug, kind: 'university', label: 'University guide', title: university.name, description: university.summary, href: `/universities/${university.slug}` }
+  }).filter((item): item is RelatedCard => item !== null)
   return (
     <main className="mx-auto w-full max-w-5xl space-y-8 pb-16">
       <Breadcrumbs trail={[['Home','/'],['Blog','/blog'],[post.title,`/blog/${post.slug}`]]}/>
@@ -72,7 +76,7 @@ function BlogArticlePage() {
           <div className="rounded-2xl bg-[#21134d] p-5 text-white"><p className="text-xs font-bold uppercase tracking-wider text-violet-200">WASSCE preparation</p><h3 className="mt-2 text-lg font-bold">Build the subject knowledge your next step requires.</h3><a href="/wassce/subjects" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold">Explore subjects <ArrowRight className="h-4 w-4"/></a></div>
         </aside>
       </div>
-      <section className="space-y-4"><h2 className="text-2xl font-bold">Continue exploring</h2><div className="grid gap-4 sm:grid-cols-2">{related.map((item) => { const article = 'category' in item; return <a key={item.slug} href={article ? `/blog/${item.slug}` : `/universities/${item.slug}`} className="rounded-2xl border bg-card p-5 transition hover:shadow-md"><p className="text-xs font-bold uppercase tracking-wider text-primary">{article ? item.category : 'University guide'}</p><h3 className="mt-2 font-bold leading-snug">{article ? item.title : item.name}</h3><p className="mt-2 text-sm text-muted-foreground">{article ? item.description : item.summary}</p><span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">Read more <ArrowRight className="h-4 w-4"/></span></a> })}</div></section>
+      <section className="space-y-4"><h2 className="text-2xl font-bold">Continue exploring</h2><div className="grid gap-4 sm:grid-cols-2">{related.map((item) => <a key={item.slug} href={item.href} className="rounded-2xl border bg-card p-5 transition hover:shadow-md"><p className="text-xs font-bold uppercase tracking-wider text-primary">{item.label}</p><h3 className="mt-2 font-bold leading-snug">{item.title}</h3><p className="mt-2 text-sm text-muted-foreground">{item.description}</p><span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">Read more <ArrowRight className="h-4 w-4"/></span></a>)}</div></section>
     </main>
   )
 }
