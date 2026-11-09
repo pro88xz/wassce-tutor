@@ -12,7 +12,8 @@ export const UNIVERSITY_FEATURES = [
     name: 'Milton Margai Technical University',
     shortName: 'MMTU',
     summary: 'Technical and professional programmes across applied sciences, engineering, business, education, health and technology.',
-    image: 'https://www.mmtu.edu.sl/images/brookfields.jpeg',
+    image: 'https://www.mmtu.edu.sl/images/Goderichimage.jpeg',
+    fallbackImage: 'https://www.mmtu.edu.sl/images/brookfields.jpeg',
     imageAlt: 'Milton Margai Technical University campus at Brookfields, Freetown',
   },
   {
