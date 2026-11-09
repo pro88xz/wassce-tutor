@@ -8,7 +8,7 @@
 import { Link } from '@tanstack/react-router'
 import { useEffect, useRef, useState } from 'react'
 import { useReveal } from '@/components/ds/useReveal'
-import { ArrowRight, BookOpen, BookOpenCheck, CalendarClock, Check, ChevronRight, Compass, GraduationCap, Moon, ShieldCheck, Smartphone, UserRound, Wallet, Zap } from 'lucide-react'
+import { ArrowRight, BookOpen, BookOpenCheck, CalendarClock, Check, ChevronLeft, ChevronRight, Compass, GraduationCap, Moon, ShieldCheck, Smartphone, UserRound, Wallet, Zap } from 'lucide-react'
 import type { LandingData } from '@/lib/public-content'
 import { subjectPath, topicPath } from '@/lib/public-content'
 import { SubjectCover } from '@/components/ds/SubjectCover'
