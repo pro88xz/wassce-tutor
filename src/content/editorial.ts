@@ -17,6 +17,7 @@ export type UniversityGuide = {
   image: string
   imageAlt: string
   imageCredit: string
+  imageSourceUrl?: string
   officialUrl: string
   admissionsUrl: string
   applicationUrl?: string
@@ -43,6 +44,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=61558684652269',
     imageAlt: 'University of Sierra Leone official Facebook page image',
     imageCredit: 'University of Sierra Leone — official Facebook page',
+    imageSourceUrl: 'https://www.facebook.com/p/University-of-Sierra-Leone-USL-61558684652269/',
     officialUrl: 'https://usl.edu.sl/',
     admissionsUrl: 'https://admissions.usl.edu.sl/university-entry-requirements',
     applicationUrl: 'https://admissions.usl.edu.sl/',
@@ -87,6 +89,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100054337158528',
     imageAlt: 'College of Medicine and Allied Health Sciences official Facebook page image',
     imageCredit: 'College of Medicine and Allied Health Sciences — official Facebook page',
+    imageSourceUrl: 'https://www.facebook.com/collegeofmedicineCOMAHS/',
     officialUrl: 'https://usl.edu.sl/comahs',
     admissionsUrl: 'https://admissions.usl.edu.sl/university-entry-requirements',
     applicationUrl: 'https://admissions.usl.edu.sl/',
@@ -135,6 +138,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=592097176041211',
     imageAlt: 'Njala University image published on its official Facebook page',
     imageCredit: 'Njala University — official Facebook page',
+    imageSourceUrl: 'https://www.facebook.com/njalauniversity/',
     officialUrl: 'https://njala.edu.sl/',
     admissionsUrl: 'https://njala.edu.sl/admissions/undergraduate-admissions',
     applicationUrl: 'https://misnjala.edu.sl/apply',
@@ -179,6 +183,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     image: 'https://etusl.edu.sl/wp-content/uploads/2025/08/IMG_0008-1024x683.jpg',
     imageAlt: 'ETU-SL students in health training, official university website image',
     imageCredit: 'Eastern Technical University of Sierra Leone — official website',
+    imageSourceUrl: 'https://etusl.edu.sl/',
     officialUrl: 'https://etusl.edu.sl/',
     admissionsUrl: 'https://etusl.edu.sl/',
     applicationUrl: 'https://app.etusl.edu.sl/',
@@ -350,6 +355,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063778429058',
     imageAlt: 'Limkokwing University Sierra Leone image from its official Facebook page',
     imageCredit: 'Limkokwing University Sierra Leone — official Facebook page',
+    imageSourceUrl: 'https://www.facebook.com/p/Limkokwing-Sierra-Leone-100063778429058/',
     officialUrl: 'https://www.limkokwing.com/page/sierra_leone',
     admissionsUrl: 'https://www.limkokwing.com/page/sierra_leone',
     status: 'Current Sierra Leone entry requirements not verified',
