@@ -548,7 +548,7 @@ function EditorialDiscovery() {
       </div>
       <div className="grid gap-4 md:grid-cols-3">
         {UNIVERSITY_FEATURES.map((u) => <a key={u.slug} href={`/universities/${u.slug}`} className="group overflow-hidden rounded-2xl border bg-card transition hover:-translate-y-0.5 hover:shadow-lg">
-          <div className="aspect-[16/9] overflow-hidden bg-muted"><img src={u.image} alt={u.imageAlt} loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"/></div>
+          <div className="aspect-[16/9] overflow-hidden bg-muted"><img src={u.image} alt={u.imageAlt} loading="lazy" decoding="async" width={1200} height={675} onError={(event) => { const image = event.currentTarget; if (image.dataset.fallbackApplied) return; image.dataset.fallbackApplied = 'true'; image.src = 'https://www.mmtu.edu.sl/images/brookfields.jpeg' }} className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"/></div>
           <div className="p-4"><p className="text-[11px] font-bold uppercase tracking-wider text-primary">{u.shortName}</p><h3 className="mt-2 font-bold leading-snug">{u.name}</h3><p className="mt-2 line-clamp-2 text-xs leading-relaxed text-muted-foreground">{u.summary}</p><span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-primary">View guide <ArrowRight className="h-3.5 w-3.5"/></span></div>
         </a>)}
       </div>
