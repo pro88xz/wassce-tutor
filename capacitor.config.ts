@@ -6,6 +6,10 @@ const config: CapacitorConfig = {
   webDir: 'dist/client', // TanStack Start client build (see scripts/postbuild.mjs)
   backgroundColor: '#fafbff',
   plugins: {
+    SocialLogin: {
+      providers: { google: true, facebook: false, apple: false, twitter: false },
+      logLevel: 1,
+    },
     SplashScreen: {
       launchShowDuration: 1200,
       backgroundColor: '#fafbff',
