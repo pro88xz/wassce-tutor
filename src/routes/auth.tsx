@@ -1,9 +1,9 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { privateHead } from '@/lib/seo'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { useAuth } from '@/lib/auth'
-import { CircleCheck, GraduationCap } from 'lucide-react'
+import { CircleCheck, GraduationCap } from 'lucide-react'\nimport { GoogleSignInButton } from '@/components/auth/GoogleSignInButton'
 
 export const Route = createFileRoute('/auth')({
   head: privateHead('Sign in'),
@@ -15,7 +15,7 @@ function AuthPage() {
   const { user } = useAuth()
   const params = new URLSearchParams(typeof window === 'undefined' ? '' : window.location.search)
   const intent = params.get('intent') === 'tutor' ? 'tutor' : params.get('intent') === 'affiliate' ? 'affiliate' : 'student'
-  const requestedNext = params.get('next') ?? ''
+  const requestedNext = params.get('next') ?? ''\n  const referralCode = params.get('ref')?.trim().toUpperCase() ?? ''
   const destination = intent === 'tutor' ? '/tutor-dashboard' : intent === 'affiliate' ? '/affiliate-dashboard' : ['/onboarding','/subjects','/practice','/progress','/account','/'].includes(requestedNext) ? requestedNext : '/'
   const [mode, setMode] = useState<'signin' | 'signup' | 'forgot'>('signup')
   const [resetSent, setResetSent] = useState(false)
@@ -68,6 +68,18 @@ function AuthPage() {
       setLoading(false)
     }
   }
+
+  const handleGoogleAuthenticated = useCallback(async () => {
+    try {
+      if (referralCode) {
+        const { error: referralError } = await supabase.rpc('claim_affiliate_referral', { p_code: referralCode })
+        if (referralError && !/already|before first payment/i.test(referralError.message)) throw referralError
+      }
+      navigate({ to: destination as '/tutor-dashboard' | '/affiliate-dashboard' | '/' | '/onboarding' | '/subjects' | '/practice' | '/progress' | '/account' })
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Your account was created, but the referral could not be applied.')
+    }
+  }, [destination, navigate, referralCode])
 
   const switchMode = (next: 'signin' | 'signup' | 'forgot') => {
     setMode(next)
@@ -173,6 +185,23 @@ function AuthPage() {
             {loading ? 'Please wait…' : mode === 'signup' ? 'Create my free account' : mode === 'forgot' ? 'Send reset link' : 'Sign in'}
           </button>
         </form>
+
+        {mode !== 'forgot' && (
+          <div className="space-y-3">
+            <div className="flex items-center gap-3 text-xs text-muted-foreground">
+              <span className="h-px flex-1 bg-border" />
+              <span>OR CONTINUE WITH</span>
+              <span className="h-px flex-1 bg-border" />
+            </div>
+            <GoogleSignInButton
+              intent={intent}
+              referralCode={referralCode}
+              mode={mode}
+              onAuthenticated={handleGoogleAuthenticated}
+              onError={setError}
+            />
+          </div>
+        )}
 
         {mode === 'signup' && (
           <ul className="space-y-2 rounded-2xl border bg-card p-4 text-sm">
