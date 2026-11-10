@@ -73,7 +73,7 @@ export function Footer() {
   if (!isPublicPage(pathname)) return null
 
   return (
-    <footer className="site-bleed -mb-12 mt-16 overflow-hidden bg-[var(--site-ink)] text-white">
+    <footer data-public-footer className="site-bleed -mb-12 mt-16 overflow-hidden bg-[var(--site-ink)] text-white">
       <div className="site-container py-12 sm:py-16">
         <div className="grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-[minmax(260px,1.7fr)_repeat(4,minmax(0,1fr))] lg:gap-x-12">
           {/* Brand and contact: a full-width row on tablets, the first column on desktop */}

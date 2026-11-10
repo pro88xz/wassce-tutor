@@ -1,4 +1,4 @@
-import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
+import { createFileRoute, Link, useNavigate, useRouter } from '@tanstack/react-router'
 import { CONTACT } from '@/lib/contact'
 import { useState, type FormEvent, type ReactNode } from 'react'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
@@ -40,9 +40,20 @@ const SUPPORT_EMAIL = CONTACT.email
 function AccountPage() {
   const { user, signOut } = useAuth()
   const navigate = useNavigate()
+  const router = useRouter()
+  const [signingOut, setSigningOut] = useState(false)
   const { data: profile, isLoading } = useProfile(user?.id ?? null)
 
   if (!user) {
+    // Between the session ending and the homepage appearing, stay quiet
+    // rather than flashing the "sign in" prompt at someone who just signed out.
+    if (signingOut) {
+      return (
+        <div className="flex min-h-[60vh] items-center justify-center" role="status">
+          <p className="text-muted-foreground">Signing you out…</p>
+        </div>
+      )
+    }
     return (
       <div className="app-page mx-auto w-full max-w-5xl pt-6">
         <EmptyState
@@ -55,8 +66,14 @@ function AccountPage() {
   }
 
   const handleSignOut = async () => {
+    if (signingOut) return
+    setSigningOut(true)
+    // Load the homepage's data while the sign-out request is in flight, so the
+    // homepage appears the moment the session ends instead of seconds later.
+    void router.preloadRoute({ to: '/' }).catch(() => undefined)
     await signOut()
-    navigate({ to: '/' })
+    // Replace, so Back does not return to an account page with nobody signed in.
+    await navigate({ to: '/', replace: true })
   }
 
   return (
@@ -88,9 +105,11 @@ function AccountPage() {
       <button
         type="button"
         onClick={handleSignOut}
-        className="flex min-h-12 py-2 w-full items-center justify-center gap-2 rounded-2xl border bg-card font-semibold text-danger transition-colors hover:bg-danger/5 text-center"
+        disabled={signingOut}
+        aria-busy={signingOut}
+        className="flex min-h-12 py-2 w-full items-center justify-center gap-2 rounded-2xl border bg-card font-semibold text-danger transition-colors hover:bg-danger/5 text-center disabled:opacity-60"
       >
-        <LogOut className="h-4 w-4" aria-hidden /> Sign out
+        <LogOut className="h-4 w-4" aria-hidden /> {signingOut ? 'Signing out…' : 'Sign out'}
       </button>
     </div>
   )

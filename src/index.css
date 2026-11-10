@@ -202,6 +202,11 @@ html.app-boot [data-boot-spinner],
 html.native-app [data-boot-spinner] { display: flex; }
 html.app-boot [data-landing],
 html.native-app [data-landing] { display: none; }
+/* The public header and footer are in the prerendered HTML too. For a
+ * returning signed-in visitor they would show for a moment and then be
+ * replaced by the app's own navigation, so they wait out the session check. */
+html.app-boot .public-site-header,
+html.app-boot [data-public-footer] { display: none; }
 
 /* ============================================================
  * Biology lesson content styling

@@ -50,7 +50,7 @@ function Index() {
     return (
       <>
         <div data-boot-spinner className="min-h-[80vh] items-center justify-center" aria-hidden>
-          <div className="h-10 w-10 animate-spin rounded-full border-4 border-muted border-t-primary" />
+          <Spinner />
         </div>
         <div data-landing>
           <Landing data={landingData} />
@@ -59,17 +59,23 @@ function Index() {
     )
   }
 
-  if (profileLoading) return <CenterMsg>Loading your dashboard…</CenterMsg>
+  // Signed in. Keep the same spinner as the boot state while the profile
+  // loads, and while a first-time student is being sent to onboarding, so the
+  // screen changes once (spinner, then dashboard) instead of flickering
+  // through a loading message or a dashboard that is about to be replaced.
+  if (profileLoading || (profile && !profile.onboarded)) {
+    return (
+      <div className="flex min-h-[80vh] items-center justify-center" role="status" aria-label="Loading your dashboard">
+        <Spinner />
+      </div>
+    )
+  }
 
   return <><Dashboard user={user} profile={profile} /><StudentTutorBookings userId={user.id} /></>
 }
 
-function CenterMsg({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="flex min-h-[60vh] items-center justify-center">
-      <p className="text-muted-foreground">{children}</p>
-    </div>
-  )
+function Spinner() {
+  return <div className="h-10 w-10 animate-spin rounded-full border-4 border-muted border-t-primary motion-reduce:animate-none" />
 }
 
 
