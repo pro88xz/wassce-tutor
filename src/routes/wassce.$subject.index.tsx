@@ -138,8 +138,8 @@ function SubjectHubPage() {
         heading={`Study WASSCE ${subject.name} with WASSCE Tutor`}
         body={
           lessonCount > 0
-            ? `Get all ${lessonCount} ${subject.name} lessons, exam-style practice marked instantly, and an AI tutor that answers your questions in plain English.`
-            : `Practise exam-style practice marked instantly and ask the AI tutor any ${subject.name} question in plain English. Lessons for this subject are on the way.`
+            ? `Get all ${lessonCount} ${subject.name} lessons, exam-style practice marked instantly, and guided learning tools that help you prepare with confidence.`
+            : `Practise exam-style practice marked instantly and use guided learning tools for ${subject.name}. Lessons for this subject are on the way.`
         }
         appHref={`/subject/${subject.id}`}
       />
