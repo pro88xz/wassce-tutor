@@ -140,6 +140,15 @@ SETS += [
         "sort_from": 120,
         "checked": "mixed",
     },
+    {
+        "module": ROOT / "content/questions/physics/set3_p1.py",
+        "subject_slug": "physics",
+        "name": "physics_set3_p1",
+        "label": "Physics: set 3 (waves, sound, light and optics)",
+        "review": ROOT / "content/questions/physics/set3_p1.review.md",
+        "sort_from": 140,
+        "checked": "mixed",
+    },
 ]
 
 OUT = ROOT / "src/content/question-sets"

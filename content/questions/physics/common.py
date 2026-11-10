@@ -45,13 +45,34 @@ def fmt(v) -> str:
     return s
 
 
+def _shown(v):
+    """A fraction with no exact decimal (1/3, 2/3, 1/30) is shown rounded, as a
+    student would write it; the check then compares the rounded value."""
+    if isinstance(v, Rounded) or isinstance(v, float):
+        return v
+    try:
+        r = sp.Rational(v)
+    except (TypeError, ValueError):
+        return v
+    q = int(r.q)
+    while q % 2 == 0:
+        q //= 2
+    while q % 5 == 0:
+        q //= 5
+    if q == 1:
+        return v
+    x = float(r)
+    return Rounded(x, dp=3 if abs(x) < 1 else 2)
+
+
 def make(topics: dict[str, str]):
     def calc(id: str, topic: str, stem: str, unit: str, answer, wrong: list, working: str, solve=None) -> Q:
         """answer: a number or Rounded. wrong: (value, why) or (value, why, derive)."""
         u = f" {unit}" if unit else ""
+        answer = _shown(answer)
         ws = []
         for w in wrong:
-            value, why = w[0], w[1]
+            value, why = _shown(w[0]), w[1]
             derive = w[2] if len(w) > 2 else None
             ws.append(Wrong(f"{fmt(value)}{u}", value, why, _wrap(derive)))
         return Q(

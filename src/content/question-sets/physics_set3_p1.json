@@ -1,0 +1,3148 @@
+{
+ "name": "physics_set3_p1",
+ "label": "Physics: set 3 (waves, sound, light and optics)",
+ "subject_slug": "physics",
+ "papers": [
+  {
+   "id": "a99a60d9-fa9e-57d7-b338-6f53b2376aff",
+   "topic": "Wave Motion and Properties",
+   "title": "Wave Motion and Properties: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on wave motion and properties, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 140,
+   "questions": [
+    {
+     "id": "ecf29509-b040-54e1-a383-7061f86d6705",
+     "key": "phy-wav-01",
+     "stem": "A wave has a frequency of 50 Hz and a wavelength of 4 m. What is its speed?",
+     "image_url": null,
+     "explanation": "$v = f\\lambda = 50 \\times 4 = 200\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 12.5 m s⁻¹: You divided the frequency by the wavelength; $v = f\\lambda$.\n- 0.08 m s⁻¹: You divided the wavelength by the frequency.\n- 54 m s⁻¹: You added the frequency and the wavelength.",
+     "position": 1,
+     "options": [
+      {
+       "id": "642d0f81-2327-5942-98e0-090f2ded72fe",
+       "label": "A",
+       "content": "0.08 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "14573da9-575f-5cc1-b264-2cb8ee2798be",
+       "label": "B",
+       "content": "12.5 m s⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fa649cf2-7dc4-5adf-8597-94e788ef6f1c",
+       "label": "C",
+       "content": "54 m s⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4ebba258-8c9e-5029-abcb-d6d131e56a4a",
+       "label": "D",
+       "content": "200 m s⁻¹",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d8385d6f-b8db-5125-bc97-8cb4805c7466",
+     "key": "phy-wav-02",
+     "stem": "Which of the following is a longitudinal wave?",
+     "image_url": null,
+     "explanation": "In sound, air particles vibrate along the direction of travel, forming compressions and rarefactions.\n\n**Why the other options are wrong**\n\n- light wave: Light is an electromagnetic wave, which is transverse.\n- water ripple: Water ripples are (mainly) transverse.\n- radio wave: Radio waves are electromagnetic and transverse.",
+     "position": 2,
+     "options": [
+      {
+       "id": "0b7f6805-0159-55e7-a9bf-c97d14788e1d",
+       "label": "A",
+       "content": "light wave",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "93ed4b5a-8fd0-5294-8edd-d5b1f46f2b82",
+       "label": "B",
+       "content": "water ripple",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "58f8cc98-1c84-509b-ad48-25ebdf56b11b",
+       "label": "C",
+       "content": "radio wave",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1d90a807-bb68-58f9-a09b-727f5b293c98",
+       "label": "D",
+       "content": "sound wave",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "14582717-ad66-5b08-8682-65b6716092cf",
+     "key": "phy-wav-03",
+     "stem": "A wave completes 25 oscillations in 5 s. What is its period?",
+     "image_url": null,
+     "explanation": "$f = \\dfrac{25}{5} = 5$ Hz, so $T = \\dfrac{1}{f} = 0.2\\ \\text{s}$.\n\n**Why the other options are wrong**\n\n- 5 s: That is the frequency (25 ÷ 5), not the period.\n- 125 s: You multiplied the number of oscillations by the time.\n- 25 s: That is the number of oscillations, not the time for one.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c4988281-80b4-518a-840f-a4c9616c44f0",
+       "label": "A",
+       "content": "0.2 s",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "f97bc929-066a-585b-aebf-f44550109907",
+       "label": "B",
+       "content": "5 s",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "96847e58-fad2-5d56-b9a0-ad4a8661ba70",
+       "label": "C",
+       "content": "25 s",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2e42446d-34a1-5beb-bcbf-f249d359c4ca",
+       "label": "D",
+       "content": "125 s",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a4c319ac-c7ef-5998-8554-67d88c56b5e0",
+     "key": "phy-wav-04",
+     "stem": "When a wave passes from one medium into another, the quantity that does NOT change is its",
+     "image_url": null,
+     "explanation": "The frequency is set by the source, so it stays the same in every medium.\n\n**Why the other options are wrong**\n\n- speed: The speed depends on the medium.\n- wavelength: The wavelength changes with the speed ($\\lambda = v/f$).\n- direction (in general): The direction usually changes: that is refraction.",
+     "position": 4,
+     "options": [
+      {
+       "id": "341746eb-9605-5fe6-9b3b-60f02fd1e4a3",
+       "label": "A",
+       "content": "speed",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "454cec79-9e92-51b9-a3e4-bbebd4eaf7b4",
+       "label": "B",
+       "content": "wavelength",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "972e24e8-fc60-51b0-9fff-d4bf7ca4e76f",
+       "label": "C",
+       "content": "direction (in general)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "45eb497c-5d79-52b0-a14c-dd1d12f01fe7",
+       "label": "D",
+       "content": "frequency",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7a8acdfc-9a2e-5e00-a985-14cc84963786",
+     "key": "phy-wav-05",
+     "stem": "An FM radio station broadcasts at 100 MHz. What is the wavelength of its waves? (speed of radio waves = 3.0 × 10⁸ m s⁻¹)",
+     "image_url": null,
+     "explanation": "$\\lambda = \\dfrac{v}{f} = \\dfrac{3.0 \\times 10^{8}}{1.0 \\times 10^{8}} = 3\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 0.333 m: You divided the frequency by the speed.\n- 3000000 m: You used 100 Hz instead of 100 MHz (100 × 10⁶ Hz).\n- 300 m: You used 1 MHz instead of 100 MHz.",
+     "position": 5,
+     "options": [
+      {
+       "id": "1d53b372-a36a-5f95-9ec5-0b10242da0f0",
+       "label": "A",
+       "content": "0.333 m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "eb06e54e-1d72-526d-b2b9-b5c9d7effc9d",
+       "label": "B",
+       "content": "3 m",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e4093b7a-d9fb-58b1-b5ed-b6ddb19a128c",
+       "label": "C",
+       "content": "300 m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5af06ad8-e9ac-5455-9583-88601d28a222",
+       "label": "D",
+       "content": "3000000 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "45a788c7-8860-5201-8eb6-d265ee6f97e1",
+     "key": "phy-wav-06",
+     "stem": "The distance between two successive crests of a transverse wave is the",
+     "image_url": null,
+     "explanation": "Crest to crest (or compression to compression) is one wavelength.\n\n**Why the other options are wrong**\n\n- amplitude: Amplitude is the maximum displacement from the rest position.\n- frequency: Frequency is the number of waves per second.\n- period: Period is a time, not a distance.",
+     "position": 6,
+     "options": [
+      {
+       "id": "b5245ea8-008a-5df3-b88a-0e90aed7c635",
+       "label": "A",
+       "content": "amplitude",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c3d11544-6388-5859-abac-0be01e14c7ca",
+       "label": "B",
+       "content": "frequency",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fd94e322-06c3-538b-8060-42c482975b69",
+       "label": "C",
+       "content": "period",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fa93fb52-d5d2-5d4e-abfb-630d515f43bb",
+       "label": "D",
+       "content": "wavelength",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8661e60a-5e87-5cf5-bb4c-e9fc64ff0f15",
+     "key": "phy-wav-07",
+     "stem": "Two points on a wave are 0.5 m apart. The wavelength is 2 m. What is the phase difference between them?",
+     "image_url": null,
+     "explanation": "$\\phi = \\dfrac{x}{\\lambda} \\times 360° = \\dfrac{0.5}{2} \\times 360° = 90°$.\n\n**Why the other options are wrong**\n\n- 180 °: Points half a wavelength (1 m) apart differ by 180°.\n- 45 °: Phase difference = (0.5 ÷ 2) × 360°, not × 180°.\n- 360 °: Points one wavelength apart are in phase (360°).",
+     "position": 7,
+     "options": [
+      {
+       "id": "af849b97-3633-5a0c-99dc-4b34b8766d58",
+       "label": "A",
+       "content": "45 °",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "65e0f836-15f4-5953-8ea7-c86e377bfb96",
+       "label": "B",
+       "content": "90 °",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "24741e9c-962a-54ac-9cd7-8dacaf56324b",
+       "label": "C",
+       "content": "180 °",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6481519c-a96d-5e94-81db-229ff727575a",
+       "label": "D",
+       "content": "360 °",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d0d01dae-f64f-54d0-8ac7-e46c6b16c97c",
+     "key": "phy-wav-08",
+     "stem": "A progressive wave is given by y = 0.02 sin(40πt − 0.5πx) in SI units. What is its frequency?",
+     "image_url": null,
+     "explanation": "Compare with $y = a\\sin(2\\pi f t - kx)$: $2\\pi f = 40\\pi \\Rightarrow f = 20\\ \\text{Hz}$.\n\n**Why the other options are wrong**\n\n- 40 Hz: The coefficient of t is 2πf = 40π, so f = 20 Hz, not 40.\n- 125.7 Hz: That is the angular frequency ω in rad s⁻¹.\n- 4 Hz: That is the wavelength (2π/0.5π = 4 m).",
+     "position": 8,
+     "options": [
+      {
+       "id": "e6e33ac0-0779-504a-9615-5b8d99131f74",
+       "label": "A",
+       "content": "4 Hz",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bb927952-6d21-5cdf-806c-44569332088f",
+       "label": "B",
+       "content": "20 Hz",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "51f850d5-c61d-595d-8651-f5149b3e6b35",
+       "label": "C",
+       "content": "40 Hz",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5fe4bfa8-0f18-5510-9518-6597bfc0da10",
+       "label": "D",
+       "content": "125.7 Hz",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f4ed4a94-7466-5c59-a2b6-f159cebde32f",
+   "topic": "Wave Phenomena",
+   "title": "Wave Phenomena: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on wave phenomena, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 141,
+   "questions": [
+    {
+     "id": "8eceaec4-d67a-539f-97c6-e24a4be47447",
+     "key": "phy-wph-01",
+     "stem": "Which wave phenomenon shows that light is a transverse wave?",
+     "image_url": null,
+     "explanation": "Only transverse waves can be polarised.\n\n**Why the other options are wrong**\n\n- diffraction: All waves, longitudinal ones included, can be diffracted.\n- refraction: All waves can be refracted.\n- interference: All waves can interfere.",
+     "position": 1,
+     "options": [
+      {
+       "id": "446f1e11-c1f4-5044-8047-03ee75e4bded",
+       "label": "A",
+       "content": "diffraction",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bbbfb99b-83c6-5bbb-94f4-68fb5c650dd1",
+       "label": "B",
+       "content": "refraction",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "124b05b1-51b7-5af7-978f-18710bbe91be",
+       "label": "C",
+       "content": "interference",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "601b8df5-6764-5b96-8ad9-6960468d7d39",
+       "label": "D",
+       "content": "polarisation",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ec9cd911-9e4a-562b-bbae-cffe75a8f413",
+     "key": "phy-wph-02",
+     "stem": "Diffraction of waves through a gap is greatest when the width of the gap is",
+     "image_url": null,
+     "explanation": "Spreading is greatest when the gap is comparable with the wavelength.\n\n**Why the other options are wrong**\n\n- much larger than the wavelength: A wide gap lets waves through with little spreading.\n- twice the amplitude: Amplitude does not decide diffraction.\n- zero: With no gap, no waves pass through.",
+     "position": 2,
+     "options": [
+      {
+       "id": "b3c68725-f0eb-55d0-8ba5-98158620f8bf",
+       "label": "A",
+       "content": "much larger than the wavelength",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e5eff281-6edd-54a6-bb69-7e631b9e0185",
+       "label": "B",
+       "content": "twice the amplitude",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5deef0c5-7642-57d3-bb39-c03e1401d505",
+       "label": "C",
+       "content": "zero",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d72e0e31-4042-503c-bbf8-1b3647a6d0ca",
+       "label": "D",
+       "content": "about the same as the wavelength",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "56897c96-e4de-598b-b929-b64f1ad45a95",
+     "key": "phy-wph-03",
+     "stem": "When water waves pass from deep to shallow water, their",
+     "image_url": null,
+     "explanation": "In shallow water the waves slow down; with the frequency fixed, the wavelength gets shorter.\n\n**Why the other options are wrong**\n\n- speed increases and wavelength decreases: Waves slow down in shallow water.\n- frequency and speed both decrease: The frequency stays the same.\n- wavelength increases and frequency decreases: Both statements are wrong: λ decreases and f is unchanged.",
+     "position": 3,
+     "options": [
+      {
+       "id": "36576028-b5c4-5a49-8b83-0b8b70efbf7d",
+       "label": "A",
+       "content": "speed and wavelength decrease but frequency is unchanged",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "eb1b4aa2-40da-5265-b2c6-1c06e084e244",
+       "label": "B",
+       "content": "speed increases and wavelength decreases",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a00019a9-7a15-59c0-99bd-0a4b45887b9b",
+       "label": "C",
+       "content": "frequency and speed both decrease",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6ee2d903-3009-5e72-8c5b-98b481b04ca2",
+       "label": "D",
+       "content": "wavelength increases and frequency decreases",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9e0363ba-ccbb-5b37-b62c-9a1e229d35d2",
+     "key": "phy-wph-04",
+     "stem": "Nodes in a stationary wave are 15 cm apart. What is the wavelength of the wave?",
+     "image_url": null,
+     "explanation": "Node-to-node distance $= \\dfrac{\\lambda}{2} = 15$ cm, so $\\lambda = 30$ cm.\n\n**Why the other options are wrong**\n\n- 15 cm: Adjacent nodes are half a wavelength apart.\n- 7.5 cm: You halved instead of doubling.\n- 60 cm: Node to node is λ/2, not λ/4.",
+     "position": 4,
+     "options": [
+      {
+       "id": "62fa9c65-1f5e-55d8-ba49-a2edb428f97c",
+       "label": "A",
+       "content": "7.5 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0fa7b255-33bf-5764-a1a4-c45d862c29f5",
+       "label": "B",
+       "content": "15 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "295ff0e8-4dc2-54df-ae79-68df72074f08",
+       "label": "C",
+       "content": "30 cm",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "328176f2-3e7f-5909-9ba7-0acc29add251",
+       "label": "D",
+       "content": "60 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "edc66aa7-fd79-5d78-9f33-e35dc70eea99",
+     "key": "phy-wph-05",
+     "stem": "Two sources are said to be coherent if they have",
+     "image_url": null,
+     "explanation": "Coherent sources keep a constant phase difference, which requires the same frequency.\n\n**Why the other options are wrong**\n\n- the same amplitude only: Equal amplitudes help, but coherence needs the same frequency and a fixed phase relation.\n- different frequencies: Different frequencies cannot give a steady interference pattern.\n- the same speed only: Waves in the same medium have the same speed anyway.",
+     "position": 5,
+     "options": [
+      {
+       "id": "8dae0f82-03b4-5725-ae70-11f3b9161d52",
+       "label": "A",
+       "content": "the same amplitude only",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "481883c7-65ae-513e-9421-f89a53263a87",
+       "label": "B",
+       "content": "different frequencies",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "22abd601-035f-55fc-afa3-f840d837be48",
+       "label": "C",
+       "content": "the same speed only",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0d46a3c2-48e3-51d1-b417-1952fc79f97b",
+       "label": "D",
+       "content": "the same frequency and a constant phase difference",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5925f866-97be-5c32-b0e0-38491a866d81",
+     "key": "phy-wph-06",
+     "stem": "Destructive interference occurs at a point where two waves from coherent sources arrive",
+     "image_url": null,
+     "explanation": "Crest on trough cancels: a path difference of half a wavelength (or 3/2, 5/2, …).\n\n**Why the other options are wrong**\n\n- in phase (crest meeting crest): That gives constructive interference.\n- with a path difference of one whole wavelength: That gives constructive interference.\n- at different speeds: Speed is not the condition; phase is.",
+     "position": 6,
+     "options": [
+      {
+       "id": "aa2348f8-9251-5030-b49d-83884fb0fc48",
+       "label": "A",
+       "content": "in antiphase (crest meeting trough)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "883131ef-5fbd-537e-88b5-aed9947f646c",
+       "label": "B",
+       "content": "in phase (crest meeting crest)",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "705d82df-c4be-55c1-add4-d5cec3bfe4c6",
+       "label": "C",
+       "content": "with a path difference of one whole wavelength",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5563cb1c-fab7-58d1-824a-af94f5f19819",
+       "label": "D",
+       "content": "at different speeds",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "03a8202c-7df5-5096-a78d-831c17651453",
+     "key": "phy-wph-07",
+     "stem": "Sound can be heard round a corner but light cannot be seen round it because",
+     "image_url": null,
+     "explanation": "Sound wavelengths (about a metre) are comparable to doorways; light's wavelength is tiny, so it hardly diffracts.\n\n**Why the other options are wrong**\n\n- sound travels faster than light: Light is far faster than sound.\n- light cannot be reflected: Light reflects readily.\n- sound is a transverse wave: Sound is longitudinal; this is not the reason.",
+     "position": 7,
+     "options": [
+      {
+       "id": "1e6994be-3d16-58bb-a5fd-0b1d2f4c0863",
+       "label": "A",
+       "content": "sound travels faster than light",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8140cb7d-eb2b-5118-8277-4379a7f99602",
+       "label": "B",
+       "content": "light cannot be reflected",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "774f2c76-7369-5e35-82da-af74aeb4ee8c",
+       "label": "C",
+       "content": "sound is a transverse wave",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bc92e4f3-5ee9-5213-bc6f-c2a133fad177",
+       "label": "D",
+       "content": "the wavelength of sound is much longer, so it diffracts more",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8f35537e-2b95-520e-b8e7-d77f8cf4b1df",
+     "key": "phy-wph-08",
+     "stem": "Water waves of frequency 4 Hz have a wavelength of 3 cm in deep water and travel at 9 cm s⁻¹ in shallow water. What is their wavelength in the shallow water?",
+     "image_url": null,
+     "explanation": "The frequency is unchanged: $\\lambda = \\dfrac{v}{f} = \\dfrac{9}{4} = 2.25\\ \\text{cm}$.\n\n**Why the other options are wrong**\n\n- 3 cm: The wavelength changes when the speed changes.\n- 36 cm: You multiplied the speed by the frequency.\n- 12 cm: That is the speed in deep water (4 × 3 = 12 cm s⁻¹).",
+     "position": 8,
+     "options": [
+      {
+       "id": "751ba0de-1d06-576b-b91f-6398e5e185d8",
+       "label": "A",
+       "content": "2.25 cm",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0da4a4d3-947a-5d6c-9646-f3318735c50d",
+       "label": "B",
+       "content": "3 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "37584c68-3f22-59dc-9eaa-8b9d38b338b7",
+       "label": "C",
+       "content": "12 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c03c2ab0-b7f4-5e10-9436-1c34a6eed2ca",
+       "label": "D",
+       "content": "36 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6e43eec4-45c8-5cd9-a919-667b294a7a1e",
+   "topic": "Sound Waves",
+   "title": "Sound Waves: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on sound waves, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 142,
+   "questions": [
+    {
+     "id": "6c65c508-ddd3-5386-b684-a81430e5f265",
+     "key": "phy-snd-01",
+     "stem": "In the bell-jar experiment, the sound of the bell fades as air is pumped out. This shows that sound",
+     "image_url": null,
+     "explanation": "With the air removed, there is no medium to carry the vibrations, so the sound is not heard.\n\n**Why the other options are wrong**\n\n- travels faster in a vacuum: Sound cannot travel in a vacuum at all.\n- is a transverse wave: The experiment says nothing about the type of wave.\n- is produced by vibrations: The bell still vibrates; the point is that the sound cannot reach us.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f2824119-d5be-5d69-acbd-83951dce0246",
+       "label": "A",
+       "content": "needs a material medium to travel",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c3cc940d-00b7-59c1-987d-a6a7aa8f282c",
+       "label": "B",
+       "content": "travels faster in a vacuum",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "77438b15-a71c-594a-8b46-0de565411b73",
+       "label": "C",
+       "content": "is a transverse wave",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "badaaba6-eca1-58db-87a1-24d71dc55201",
+       "label": "D",
+       "content": "is produced by vibrations",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "226db954-f3e7-5256-946b-c66e5fbc68ca",
+     "key": "phy-snd-02",
+     "stem": "A boy shouts 170 m from a cliff and hears the echo 1.0 s later. What is the speed of sound?",
+     "image_url": null,
+     "explanation": "$v = \\dfrac{2d}{t} = \\dfrac{2 \\times 170}{1.0} = 340\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 170 m s⁻¹: The sound travels to the cliff and back: use 2d.\n- 85 m s⁻¹: You halved instead of doubling.\n- 680 m s⁻¹: You doubled twice.",
+     "position": 2,
+     "options": [
+      {
+       "id": "b6247a01-0d16-5b63-8645-36be3ddd7f95",
+       "label": "A",
+       "content": "85 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5ad2ef73-1954-51ba-a3de-35dd04a81981",
+       "label": "B",
+       "content": "170 m s⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "06e70a7a-86d7-54e4-810d-04384bf4975f",
+       "label": "C",
+       "content": "340 m s⁻¹",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4eeee6fc-0aeb-5c06-b9ac-fa9631d09df5",
+       "label": "D",
+       "content": "680 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "849e029b-64bd-50c9-a3b9-141cbab64476",
+     "key": "phy-snd-03",
+     "stem": "Sound travels fastest in",
+     "image_url": null,
+     "explanation": "Sound travels fastest in solids, where particles are closest and most tightly bound.\n\n**Why the other options are wrong**\n\n- air: Sound is slowest in gases.\n- water: Sound is faster in water than in air, but slower than in steel.\n- a vacuum: Sound cannot travel in a vacuum.",
+     "position": 3,
+     "options": [
+      {
+       "id": "4b7f0ee2-260c-52b2-8df7-dbd8483392d6",
+       "label": "A",
+       "content": "air",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1e361514-9b51-5c7d-a41d-e075169d9903",
+       "label": "B",
+       "content": "water",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c6d179ff-58f2-5532-ac60-c9fe9e142d5c",
+       "label": "C",
+       "content": "a vacuum",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5cead3b1-5bdf-57e4-a7c6-07a9da78dcdb",
+       "label": "D",
+       "content": "steel",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "71a5679f-d009-5762-88be-17c421b6fa12",
+     "key": "phy-snd-04",
+     "stem": "The pitch of a note depends on its",
+     "image_url": null,
+     "explanation": "Higher frequency means higher pitch.\n\n**Why the other options are wrong**\n\n- amplitude: Amplitude decides loudness.\n- overtones: Overtones decide quality (timbre).\n- speed: All sounds in the same air travel at the same speed.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2536d5b3-f332-5189-80b8-46dab3280299",
+       "label": "A",
+       "content": "frequency",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6964975e-450d-5171-a838-ce08a1386f74",
+       "label": "B",
+       "content": "amplitude",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f098bd53-5ee8-5b7d-952e-a71ad636844f",
+       "label": "C",
+       "content": "overtones",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f7276031-2751-539f-817b-5456da362b11",
+       "label": "D",
+       "content": "speed",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f5daac50-811b-5af2-bc7b-6a1104237205",
+     "key": "phy-snd-05",
+     "stem": "Two instruments play the same note at the same loudness but sound different because they differ in",
+     "image_url": null,
+     "explanation": "Different instruments add different overtones to the fundamental, so the quality (timbre) differs.\n\n**Why the other options are wrong**\n\n- pitch: They play the same note, so their pitch (frequency) is the same.\n- loudness: The loudness is the same.\n- speed of sound: The speed is the same in the same air.",
+     "position": 5,
+     "options": [
+      {
+       "id": "85d0e4b1-e108-55b4-95ce-9046e6c5356e",
+       "label": "A",
+       "content": "pitch",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "63a7f4f8-4bc4-52b8-acdd-eb94a1a52d7f",
+       "label": "B",
+       "content": "loudness",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "37715f8f-f616-5753-a3d6-b76c0055d6af",
+       "label": "C",
+       "content": "speed of sound",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "97772209-8efe-526f-9c23-ec0374d58060",
+       "label": "D",
+       "content": "quality (the overtones present)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "80089964-3a19-50ee-932a-f647f86c2e86",
+     "key": "phy-snd-06",
+     "stem": "A ship sends a sound pulse to the sea bed and receives the echo after 0.6 s. If sound travels at 1500 m s⁻¹ in water, how deep is the sea?",
+     "image_url": null,
+     "explanation": "$d = \\dfrac{vt}{2} = \\dfrac{1500 \\times 0.6}{2} = 450\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 900 m: That is the total distance travelled, there and back.\n- 2500 m: You divided the speed by the time.\n- 225 m: You halved twice.",
+     "position": 6,
+     "options": [
+      {
+       "id": "6a136fc1-8892-59be-97dc-593b61399e05",
+       "label": "A",
+       "content": "225 m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4ba411aa-5e19-55d3-9025-a839f883f9af",
+       "label": "B",
+       "content": "450 m",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "fc32d3f2-22b3-5abb-b0f0-f0118912c19a",
+       "label": "C",
+       "content": "900 m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "962ac483-db66-5319-b8b8-8c4d2a8a04a8",
+       "label": "D",
+       "content": "2500 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fec60039-145d-5546-aeff-9c746bf1a07f",
+     "key": "phy-snd-07",
+     "stem": "The range of frequencies audible to a normal human ear is about",
+     "image_url": null,
+     "explanation": "Humans hear about 20 Hz to 20 kHz; above is ultrasound, below is infrasound.\n\n**Why the other options are wrong**\n\n- 2 Hz to 2000 Hz: The upper limit is about 20 kHz.\n- 200 Hz to 200 000 Hz: 200 kHz is far into the ultrasound range.\n- 20 kHz to 200 kHz: That is ultrasound, inaudible to humans.",
+     "position": 7,
+     "options": [
+      {
+       "id": "092ecaac-b180-5c35-83c3-db0bbb4b65c9",
+       "label": "A",
+       "content": "20 Hz to 20 000 Hz",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e9fa74d9-a7bd-5f71-94be-f09311fe9aa1",
+       "label": "B",
+       "content": "2 Hz to 2000 Hz",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d6fdd8d0-882c-52a3-bcf2-a1a9aeeeceb7",
+       "label": "C",
+       "content": "200 Hz to 200 000 Hz",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9f8bd51b-3152-5ab0-9ba1-e3fe499bd4db",
+       "label": "D",
+       "content": "20 kHz to 200 kHz",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a496bf63-d067-5191-9f17-9882142b016b",
+     "key": "phy-snd-08",
+     "stem": "The pitch of an ambulance siren seems higher as it approaches and lower as it moves away. This is the",
+     "image_url": null,
+     "explanation": "Relative motion of source and listener changes the observed frequency: the Doppler effect.\n\n**Why the other options are wrong**\n\n- echo effect: An echo is a reflected sound.\n- resonance effect: Resonance is vibration at the natural frequency.\n- interference effect: Interference needs two coherent sources.",
+     "position": 8,
+     "options": [
+      {
+       "id": "dee47e88-d76c-506d-96dc-38eddd7002c6",
+       "label": "A",
+       "content": "echo effect",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fc3a4d12-e69f-54cc-85b9-75fba888c2f9",
+       "label": "B",
+       "content": "resonance effect",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d1d770ad-1897-54a9-a2b7-fddf85b77d05",
+       "label": "C",
+       "content": "Doppler effect",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1f990b22-f385-5e5b-9444-2231334651e5",
+       "label": "D",
+       "content": "interference effect",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "3f80fdce-1b62-593e-9942-c22e3c9152a9",
+   "topic": "Resonance and Musical Acoustics",
+   "title": "Resonance and Musical Acoustics: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on resonance and musical acoustics, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 143,
+   "questions": [
+    {
+     "id": "3392e3cf-e066-5141-b1d3-b9b0c940d652",
+     "key": "phy-res-01",
+     "stem": "A pipe closed at one end is 0.25 m long. If the speed of sound is 340 m s⁻¹, what is its fundamental frequency (ignore the end correction)?",
+     "image_url": null,
+     "explanation": "Closed pipe: $f_0 = \\dfrac{v}{4L} = \\dfrac{340}{1.0} = 340\\ \\text{Hz}$.\n\n**Why the other options are wrong**\n\n- 680 Hz: That is the fundamental of an open pipe, $v/2L$.\n- 1360 Hz: You used $v/L$.\n- 85 Hz: You multiplied by L instead of dividing.",
+     "position": 1,
+     "options": [
+      {
+       "id": "59cce36b-d345-56f5-bb63-42f0a3b8f693",
+       "label": "A",
+       "content": "85 Hz",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "34037bc8-dbc7-5dc0-8466-18296790cc3d",
+       "label": "B",
+       "content": "340 Hz",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1a04847d-d871-5c54-a1c8-36deead797a4",
+       "label": "C",
+       "content": "680 Hz",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "aed3fa6b-270a-58d3-8087-99a7355c500e",
+       "label": "D",
+       "content": "1360 Hz",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4e3228db-91d5-5e35-a537-77e80859607e",
+     "key": "phy-res-02",
+     "stem": "A stretched string vibrates at 200 Hz. What is its frequency if its tension is increased to four times the original, with length unchanged?",
+     "image_url": null,
+     "explanation": "$f \\propto \\sqrt{T}$: $f = 200 \\times \\sqrt{4} = 400\\ \\text{Hz}$.\n\n**Why the other options are wrong**\n\n- 800 Hz: Frequency is proportional to the square root of tension, not the tension.\n- 100 Hz: Increasing tension raises the frequency.\n- 50 Hz: Increasing tension raises the frequency.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f06627ac-5e5e-586f-84e9-2d1a7bcee85c",
+       "label": "A",
+       "content": "50 Hz",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a9db565e-f675-563a-9244-14a16c0f6872",
+       "label": "B",
+       "content": "100 Hz",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "780c7bc1-e5d9-5905-8d89-7f2e9b77692e",
+       "label": "C",
+       "content": "400 Hz",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "479ddaf0-ee55-5bcd-a532-1b4c25119fba",
+       "label": "D",
+       "content": "800 Hz",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "de745659-fef7-51f6-89c8-298978bd6d66",
+     "key": "phy-res-03",
+     "stem": "A string 0.6 m long is fixed at both ends. What is the wavelength of its fundamental mode?",
+     "image_url": null,
+     "explanation": "Fundamental: $L = \\dfrac{\\lambda}{2} \\Rightarrow \\lambda = 2 \\times 0.6 = 1.2\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 0.6 m: The fundamental has one loop: L = λ/2, so λ = 2L.\n- 0.3 m: You halved the length.\n- 2.4 m: That is 4L, the closed-pipe relation.",
+     "position": 3,
+     "options": [
+      {
+       "id": "f662e3fb-dd4c-5447-909f-eb11f5af8e33",
+       "label": "A",
+       "content": "0.3 m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bec8e0ee-5a4f-529d-9ecf-95d15e015571",
+       "label": "B",
+       "content": "0.6 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7a47c1ef-1fe3-5b09-b48d-ca6295c74702",
+       "label": "C",
+       "content": "1.2 m",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8560e388-ad70-5443-a470-064b7f74aeb2",
+       "label": "D",
+       "content": "2.4 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a07504d1-13f0-5d9e-b583-4a0fda7e8dfa",
+     "key": "phy-res-04",
+     "stem": "In a resonance-tube experiment with a 500 Hz fork, the first and second resonance lengths are 16 cm and 50 cm. What is the speed of sound?",
+     "image_url": null,
+     "explanation": "$\\dfrac{\\lambda}{2} = L_2 - L_1 = 34$ cm, so $\\lambda = 0.68$ m; $v = f\\lambda = 500 \\times 0.68 = 340\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 170 m s⁻¹: You used λ = L₂ − L₁; the difference is half a wavelength.\n- 660 m s⁻¹: You added the lengths instead of subtracting.\n- 320 m s⁻¹: You used 4 × 16 cm as the wavelength (ignoring the end correction).",
+     "position": 4,
+     "options": [
+      {
+       "id": "2c5bd860-e86e-5ba3-89c2-46dd5e8ed1d3",
+       "label": "A",
+       "content": "170 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5156f165-e83f-5aba-a08e-97e79a61474b",
+       "label": "B",
+       "content": "320 m s⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1799ecd3-d880-572c-997d-104c172f100e",
+       "label": "C",
+       "content": "340 m s⁻¹",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f2c72325-fb40-59d8-9fdd-2fb25339ab7b",
+       "label": "D",
+       "content": "660 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2015bf83-5d1d-5730-a5b1-da27bb45f8b6",
+     "key": "phy-res-05",
+     "stem": "A pipe closed at one end can produce",
+     "image_url": null,
+     "explanation": "With a node at the closed end and an antinode at the open end, only odd multiples of f₀ fit.\n\n**Why the other options are wrong**\n\n- only even harmonics: A closed pipe gives f₀, 3f₀, 5f₀, …\n- all harmonics: That is true of an open pipe.\n- no harmonics: It produces its fundamental and odd harmonics.",
+     "position": 5,
+     "options": [
+      {
+       "id": "da1b61e1-989e-53a9-a576-38b7bfe7d1df",
+       "label": "A",
+       "content": "only even harmonics",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9f18e210-2ba8-52c2-8139-ac2e2a91defe",
+       "label": "B",
+       "content": "all harmonics",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a455d378-1593-5813-a34b-eb20fb7d2fa4",
+       "label": "C",
+       "content": "no harmonics",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "93fdad25-2034-56b4-8410-0f33007f17b4",
+       "label": "D",
+       "content": "only odd harmonics",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "22e67189-a74e-5d52-b70a-ca47c0ffb6ce",
+     "key": "phy-res-06",
+     "stem": "Shortening the vibrating length of a guitar string (tension unchanged)",
+     "image_url": null,
+     "explanation": "Pressing a string against a fret shortens it and raises its frequency.\n\n**Why the other options are wrong**\n\n- lowers the pitch: Frequency is inversely proportional to length.\n- does not change the pitch: The length law says f ∝ 1/L.\n- makes the note louder only: It changes the frequency.",
+     "position": 6,
+     "options": [
+      {
+       "id": "861a3cde-a67e-51b6-8b67-f73e904499ea",
+       "label": "A",
+       "content": "raises the pitch",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b0a1e1e1-e6c4-56cd-b8e0-6cc2d65e158c",
+       "label": "B",
+       "content": "lowers the pitch",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "236ccc1f-412c-56d4-b232-aa4b915fc302",
+       "label": "C",
+       "content": "does not change the pitch",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a4d88df5-9ea5-598e-ae34-4ca1e90853e5",
+       "label": "D",
+       "content": "makes the note louder only",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b47d3f09-c8de-5e87-b423-3c0ff3ba6a1d",
+     "key": "phy-res-07",
+     "stem": "Transverse waves travel at 240 m s⁻¹ on a string 0.8 m long fixed at both ends. What is the fundamental frequency?",
+     "image_url": null,
+     "explanation": "$f_0 = \\dfrac{v}{2L} = \\dfrac{240}{1.6} = 150\\ \\text{Hz}$.\n\n**Why the other options are wrong**\n\n- 300 Hz: You used $v/L$; the fundamental is $v/2L$.\n- 75 Hz: You used $v/4L$, the closed-pipe formula.\n- 192 Hz: You multiplied v by L.",
+     "position": 7,
+     "options": [
+      {
+       "id": "3a82f031-b436-5612-a718-2cf3206a8a77",
+       "label": "A",
+       "content": "75 Hz",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8a5e4f3d-2a5e-5892-ba2d-369caf620d58",
+       "label": "B",
+       "content": "150 Hz",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "53e8e59b-6a74-5bc1-81da-ea1d806f067a",
+       "label": "C",
+       "content": "192 Hz",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "01a99094-2984-5650-96cf-4462b1df58f1",
+       "label": "D",
+       "content": "300 Hz",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "782289c1-6c7a-5bd2-98f1-8d288795df54",
+     "key": "phy-res-08",
+     "stem": "In a sonometer experiment, the paper rider on the wire is thrown off when",
+     "image_url": null,
+     "explanation": "When the wire's natural frequency equals the fork's, it vibrates strongly (resonance) and throws off the rider.\n\n**Why the other options are wrong**\n\n- the tension is reduced to zero: With no tension the wire cannot vibrate properly.\n- the tuning fork is held far away: The fork's stem must touch the box.\n- the wire is longer than 1 m: Length alone does not throw the rider off; matching frequency does.",
+     "position": 8,
+     "options": [
+      {
+       "id": "2540f1b0-c8e2-529e-8821-665dbe93928e",
+       "label": "A",
+       "content": "the tension is reduced to zero",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "390b7ed2-ce92-509d-a1d1-4b5ee6c7814b",
+       "label": "B",
+       "content": "the tuning fork is held far away",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b152465a-b77e-5900-ba3c-beafe79fed26",
+       "label": "C",
+       "content": "the wire resonates with the tuning fork",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8486e652-17c1-5422-b254-b4073ff67acd",
+       "label": "D",
+       "content": "the wire is longer than 1 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "4c6b220c-7c2e-5a80-8242-77805b21c708",
+   "topic": "Light as a Wave",
+   "title": "Light as a Wave: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on light as a wave, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 144,
+   "questions": [
+    {
+     "id": "30536439-7eb6-56d7-a879-097cefe8bfee",
+     "key": "phy-lit-01",
+     "stem": "The formation of shadows is evidence that light",
+     "image_url": null,
+     "explanation": "An opaque object blocks the straight-line paths of light, leaving a shadow.\n\n**Why the other options are wrong**\n\n- is a transverse wave: Shadows say nothing about the type of wave.\n- can be polarised: Polarisation is shown with Polaroid filters.\n- travels faster than sound: Shadows do not compare speeds.",
+     "position": 1,
+     "options": [
+      {
+       "id": "4c1067b7-5b56-581b-8830-24e0675937d0",
+       "label": "A",
+       "content": "is a transverse wave",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ff4efff1-4053-578f-b542-128e6bf37045",
+       "label": "B",
+       "content": "can be polarised",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7dc11983-62d2-5625-a751-4d1bd486a83d",
+       "label": "C",
+       "content": "travels faster than sound",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2fd29995-f75a-5b1c-93f9-bb52a4e3bd83",
+       "label": "D",
+       "content": "travels in straight lines",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f91cb28c-1d10-56ac-aff1-596933ca33bb",
+     "key": "phy-lit-02",
+     "stem": "An eclipse of the Sun occurs when",
+     "image_url": null,
+     "explanation": "The Moon's shadow falls on the Earth: a solar eclipse.\n\n**Why the other options are wrong**\n\n- the Earth comes between the Sun and the Moon: That causes an eclipse of the Moon.\n- the Sun comes between the Earth and the Moon: The Sun cannot come between them.\n- the Moon is full: A solar eclipse happens at new moon.",
+     "position": 2,
+     "options": [
+      {
+       "id": "be31ffc4-a4aa-59cf-8c36-927a53153d4b",
+       "label": "A",
+       "content": "the Moon comes between the Sun and the Earth",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "82ab2d4a-d8c9-57ab-8e14-7a59537eb21f",
+       "label": "B",
+       "content": "the Earth comes between the Sun and the Moon",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ce15629b-920a-550b-ad7e-ed9dd3ca299a",
+       "label": "C",
+       "content": "the Sun comes between the Earth and the Moon",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cc17f811-48c9-5f2e-8962-5a1e212a8c56",
+       "label": "D",
+       "content": "the Moon is full",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8877920a-6df2-56f2-a8e0-50c7b7da5e29",
+     "key": "phy-lit-03",
+     "stem": "A pinhole camera is 20 cm long. A tree 12 m tall is 40 m from the pinhole. What is the height of the image?",
+     "image_url": null,
+     "explanation": "$h_i = h_o \\times \\dfrac{v}{u} = 12 \\times \\dfrac{0.20}{40} = 0.06\\ \\text{m} = 6\\ \\text{cm}$.\n\n**Why the other options are wrong**\n\n- 60 cm: You used 4 m instead of 40 m.\n- 0.06 cm: That is the height in metres (0.06 m); the answer is wanted in centimetres.\n- 2400 cm: You multiplied instead of using the ratio of distances.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8ee78bf5-53ad-5452-abbe-d5f0928bace7",
+       "label": "A",
+       "content": "0.06 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f7cf86d6-2467-544c-be69-e0de44e68acd",
+       "label": "B",
+       "content": "6 cm",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a5480d8b-9ff9-56f6-a4a0-8b41aa135e54",
+       "label": "C",
+       "content": "60 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2f4660e9-30da-5bcc-9143-47a11ec26230",
+       "label": "D",
+       "content": "2400 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "13f474a9-d06c-53aa-8b94-f930699fc044",
+     "key": "phy-lit-03b",
+     "stem": "The image formed by a pinhole camera is",
+     "image_url": null,
+     "explanation": "Rays from the top of the object go to the bottom of the screen: a real, inverted image.\n\n**Why the other options are wrong**\n\n- virtual and upright: The image can be caught on the screen, so it is real; it is upside down.\n- virtual and inverted: It is real, not virtual.\n- real and upright: Rays cross at the pinhole, so the image is inverted.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4d6b7af2-0c5b-5758-a4e4-043db781092f",
+       "label": "A",
+       "content": "virtual and upright",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fb8c7527-4af8-541f-a8eb-8f504dfcee21",
+       "label": "B",
+       "content": "virtual and inverted",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "71df1897-ce6f-5c4b-8918-cdc247d2f629",
+       "label": "C",
+       "content": "real and inverted",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "319a65a4-3672-51a1-8293-6ea04ef56167",
+       "label": "D",
+       "content": "real and upright",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b4f2ea2d-78f5-5572-bf46-c1306a6be3d7",
+     "key": "phy-lit-04",
+     "stem": "Enlarging the hole of a pinhole camera makes the image",
+     "image_url": null,
+     "explanation": "More light gets in, but each point of the object makes a patch rather than a point, so images overlap and blur.\n\n**Why the other options are wrong**\n\n- dimmer and sharper: A larger hole lets in more light.\n- brighter and sharper: Overlapping images from the wider hole make it blurred.\n- disappear: An image is still formed.",
+     "position": 5,
+     "options": [
+      {
+       "id": "90b63666-dcb2-59bb-8d3c-c69ef4482fcd",
+       "label": "A",
+       "content": "dimmer and sharper",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d2d16172-b1b8-5737-babc-bce738b6a84c",
+       "label": "B",
+       "content": "brighter and sharper",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3f3490ef-5226-5417-957d-96a1c45b9398",
+       "label": "C",
+       "content": "disappear",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "67675300-36bf-582d-a484-6574da2099f8",
+       "label": "D",
+       "content": "brighter but blurred",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "99aafe1f-3fcb-5b19-99fd-9dabc1c04ca0",
+     "key": "phy-lit-05",
+     "stem": "Light from the Sun takes 500 s to reach the Earth. If the speed of light is 3.0 × 10⁸ m s⁻¹, what is the Sun–Earth distance?",
+     "image_url": null,
+     "explanation": "$d = vt = 3.0 \\times 10^{8} \\times 500 = 1.5 \\times 10^{11}\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 3 × 10¹¹ m: You doubled the distance; the light travels it only once.\n- 15 × 10¹¹ m: Check the power of ten: 3 × 10⁸ × 500 = 1.5 × 10¹¹ m, not 1.5 × 10¹² m.\n- 0.15 × 10¹¹ m: Check the power of ten: 3 × 10⁸ × 500 = 1.5 × 10¹¹ m, not 1.5 × 10¹⁰ m.",
+     "position": 6,
+     "options": [
+      {
+       "id": "88cbdc59-56a6-5cbd-abd4-62ac6caeaded",
+       "label": "A",
+       "content": "0.15 × 10¹¹ m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "71f69359-f8ef-5195-a7fe-bce269341c4a",
+       "label": "B",
+       "content": "1.5 × 10¹¹ m",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "3876cd9d-99ee-507f-9cb7-b3e108c8196c",
+       "label": "C",
+       "content": "3 × 10¹¹ m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0884daeb-b3d7-5edf-b9a9-bf99145fdb91",
+       "label": "D",
+       "content": "15 × 10¹¹ m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eee58e04-d22d-51f3-967e-89fa70f9e956",
+     "key": "phy-lit-06",
+     "stem": "In a double-slit experiment, the slits are 0.4 mm apart and the screen is 2.0 m away. The fringe spacing is 3.0 mm. What is the wavelength of the light?",
+     "image_url": null,
+     "explanation": "$\\lambda = \\dfrac{yd}{D} = \\dfrac{3.0 \\times 10^{-3} \\times 0.4 \\times 10^{-3}}{2.0} = 6.0 \\times 10^{-7}\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 24 × 10⁻⁷ m: You multiplied by D instead of dividing.\n- 12 × 10⁻⁷ m: You forgot to divide by D = 2.0 m.\n- 60 × 10⁻⁷ m: You used d = 4 mm instead of 0.4 mm.",
+     "position": 7,
+     "options": [
+      {
+       "id": "f7ff6e59-683a-5e21-97dc-2174aba7a92a",
+       "label": "A",
+       "content": "6 × 10⁻⁷ m",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "49695c0f-c30b-5694-9b9e-7bb53e79c4b4",
+       "label": "B",
+       "content": "12 × 10⁻⁷ m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "251b4756-f791-595d-b4e0-39a89327e3d0",
+       "label": "C",
+       "content": "24 × 10⁻⁷ m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b0654523-4277-522f-a254-dfda9bedb88d",
+       "label": "D",
+       "content": "60 × 10⁻⁷ m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "152806fc-946b-5012-9dc9-1b99f0e973be",
+     "key": "phy-lit-07",
+     "stem": "Which of the following is a luminous object?",
+     "image_url": null,
+     "explanation": "A luminous object produces its own light.\n\n**Why the other options are wrong**\n\n- the Moon: The Moon reflects sunlight; it makes no light of its own.\n- a mirror: A mirror only reflects light.\n- a sheet of paper: Paper is seen by reflected light.",
+     "position": 8,
+     "options": [
+      {
+       "id": "4722b8e8-8dbb-5b2a-852b-442cc5a3b57a",
+       "label": "A",
+       "content": "a candle flame",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "12264e48-76ff-54b0-84ab-646e80632dc0",
+       "label": "B",
+       "content": "the Moon",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c6739966-5d71-553a-906d-5268095693ba",
+       "label": "C",
+       "content": "a mirror",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "20d4ef38-b97a-5d4f-99ac-5a9999925b66",
+       "label": "D",
+       "content": "a sheet of paper",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "428c75c3-4492-5195-842e-21bab297ea08",
+   "topic": "Reflection of Light",
+   "title": "Reflection of Light: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on reflection of light, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 145,
+   "questions": [
+    {
+     "id": "39594b55-7173-5c9c-8b06-c4d0a886a3a5",
+     "key": "phy-rfl-01",
+     "stem": "The image formed by a plane mirror is",
+     "image_url": null,
+     "explanation": "Plane-mirror images are virtual, upright, the same size, as far behind as the object is in front, and laterally inverted.\n\n**Why the other options are wrong**\n\n- real, inverted and the same size: A plane mirror's image cannot be formed on a screen; it is virtual and upright.\n- virtual, inverted and magnified: It is upright and the same size.\n- real, upright and diminished: It is virtual and the same size.",
+     "position": 1,
+     "options": [
+      {
+       "id": "4baa1dfd-09c0-5d17-9340-f69ce14b436c",
+       "label": "A",
+       "content": "real, inverted and the same size",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "933517d6-4981-5c21-90ae-52e5179610aa",
+       "label": "B",
+       "content": "virtual, inverted and magnified",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8463d7ae-f617-5c02-85a2-cf3948e33549",
+       "label": "C",
+       "content": "virtual, upright and the same size as the object",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "15a2b016-0796-5d4e-b827-235f05af170b",
+       "label": "D",
+       "content": "real, upright and diminished",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6a3da4d8-9e7e-58f3-a5c3-604455c6fa35",
+     "key": "phy-rfl-02",
+     "stem": "Two plane mirrors are inclined at 60° to each other. How many images of an object between them are formed?",
+     "image_url": null,
+     "explanation": "$n = \\dfrac{360}{\\theta} - 1 = \\dfrac{360}{60} - 1 = 5$.\n\n**Why the other options are wrong**\n\n- 6: You forgot to subtract 1: n = 360/θ − 1.\n- 3: That is the number for mirrors at 90°.\n- 7: That is the number for mirrors at 45°.",
+     "position": 2,
+     "options": [
+      {
+       "id": "dbf7ba91-b60c-5933-9764-dc4fcd903f9d",
+       "label": "A",
+       "content": "3",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "40f2c363-6eb5-5452-9952-5655befb14a8",
+       "label": "B",
+       "content": "5",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d25cc14b-e995-5351-a1f7-bf435bd35b46",
+       "label": "C",
+       "content": "6",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f52422d8-0bc2-50bb-90a7-57a595b20b79",
+       "label": "D",
+       "content": "7",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2773278c-fae6-5095-8e89-c5debed60e57",
+     "key": "phy-rfl-03",
+     "stem": "A plane mirror is rotated through 12° while the incident ray stays fixed. Through what angle does the reflected ray turn?",
+     "image_url": null,
+     "explanation": "The reflected ray turns through 2θ = 2 × 12° = 24°.\n\n**Why the other options are wrong**\n\n- 12 °: The reflected ray turns through twice the angle of the mirror.\n- 6 °: You halved instead of doubling.\n- 168 °: You subtracted from 180°.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8c3c4872-6ded-52f0-9b3e-98690c72bf14",
+       "label": "A",
+       "content": "6 °",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cec2cb9c-9087-579a-bf71-cd7fc625c130",
+       "label": "B",
+       "content": "12 °",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e6565a05-d51e-56bf-a55a-ade297f77539",
+       "label": "C",
+       "content": "24 °",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "81fcfd67-56d6-5118-be21-e93e02292ac2",
+       "label": "D",
+       "content": "168 °",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d7c4a998-0340-51de-87b7-2cc70c55459b",
+     "key": "phy-rfl-04",
+     "stem": "A ray strikes a plane mirror at a glancing angle of 35° to the mirror surface. What is the angle of reflection?",
+     "image_url": null,
+     "explanation": "The angle of incidence (from the normal) is 90° − 35° = 55°, so the angle of reflection is 55°.\n\n**Why the other options are wrong**\n\n- 35 °: Angles are measured from the normal, not from the mirror.\n- 70 °: You doubled the glancing angle.\n- 110 °: That is the angle between the incident and reflected rays.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f94a6309-aef4-5456-a37f-fb39dd48ca40",
+       "label": "A",
+       "content": "35 °",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "271aed3a-2ddc-5d4c-9a22-7124a402ab44",
+       "label": "B",
+       "content": "55 °",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9d60e930-22eb-5eea-9b34-f8ccd663d031",
+       "label": "C",
+       "content": "70 °",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9c54f601-d630-537a-8f12-92974ad0e9f2",
+       "label": "D",
+       "content": "110 °",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "26e87a52-55f9-5f68-bc24-b64d21c0b374",
+     "key": "phy-rfl-05",
+     "stem": "An object is placed 30 cm in front of a concave mirror of focal length 10 cm. How far from the mirror is the image?",
+     "image_url": null,
+     "explanation": "$\\dfrac{1}{v} = \\dfrac{1}{10} - \\dfrac{1}{30} = \\dfrac{2}{30} \\Rightarrow v = 15\\ \\text{cm}$ (real, in front of the mirror).\n\n**Why the other options are wrong**\n\n- 20 cm: You subtracted f from u.\n- 7.5 cm: You added 1/u and 1/f instead of subtracting.\n- 40 cm: You added u and f.",
+     "position": 5,
+     "options": [
+      {
+       "id": "dc4f8963-2380-549a-ae2a-1f7e437ef132",
+       "label": "A",
+       "content": "7.5 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "85fae068-31d5-565a-b78a-a7ed6de6cf63",
+       "label": "B",
+       "content": "15 cm",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "057e8b60-60ff-55d1-8908-551c1ce802a4",
+       "label": "C",
+       "content": "20 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "11a042a7-9771-5a9b-b3b8-130a0d2e7df7",
+       "label": "D",
+       "content": "40 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6f05b9e5-5587-5ee2-8ab6-2e275d93052a",
+     "key": "phy-rfl-06",
+     "stem": "A convex mirror is used as a driving mirror because it",
+     "image_url": null,
+     "explanation": "The diminished, upright image lets the driver see a wide stretch of road behind.\n\n**Why the other options are wrong**\n\n- gives a magnified image: A convex mirror always gives a diminished image.\n- gives a real image: Its images are virtual.\n- focuses light to a point: That describes a concave mirror.",
+     "position": 6,
+     "options": [
+      {
+       "id": "700f6431-f101-5e03-8042-43a4ece2e59e",
+       "label": "A",
+       "content": "gives a magnified image",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "130c930c-e073-5a65-8333-abee40b17b03",
+       "label": "B",
+       "content": "gives a real image",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f080a7e0-c930-57eb-8f0a-29dc6f64efc2",
+       "label": "C",
+       "content": "focuses light to a point",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "67b976c5-f7ed-52a7-a034-0129aa84f2be",
+       "label": "D",
+       "content": "gives an upright image and a wide field of view",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f58f2026-37f9-5d35-8095-afaa66b02801",
+     "key": "phy-rfl-07",
+     "stem": "To obtain a virtual, upright, magnified image with a concave mirror, the object must be placed",
+     "image_url": null,
+     "explanation": "Inside F, the reflected rays diverge and appear to come from a magnified image behind the mirror (shaving mirror).\n\n**Why the other options are wrong**\n\n- at the centre of curvature: That gives a real, inverted, same-size image.\n- beyond the centre of curvature: That gives a real, inverted, diminished image.\n- at the principal focus: Then the reflected rays are parallel and no image forms.",
+     "position": 7,
+     "options": [
+      {
+       "id": "be1156ed-1014-5775-b64b-3b23b802e8b9",
+       "label": "A",
+       "content": "between the principal focus and the mirror",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1f0b029f-b58b-5aa8-8d87-230a85a95ed3",
+       "label": "B",
+       "content": "at the centre of curvature",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "524689dd-a919-537f-b914-f08ed5d13f7b",
+       "label": "C",
+       "content": "beyond the centre of curvature",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ef3220e3-e2eb-51eb-96b7-589da36d7b6b",
+       "label": "D",
+       "content": "at the principal focus",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ac508dba-19b6-5625-b305-77f47ff71a3c",
+     "key": "phy-rfl-08",
+     "stem": "A concave mirror has a radius of curvature of 36 cm. What is its focal length?",
+     "image_url": null,
+     "explanation": "$f = \\dfrac{r}{2} = \\dfrac{36}{2} = 18\\ \\text{cm}$.\n\n**Why the other options are wrong**\n\n- 72 cm: f = r/2, not 2r.\n- 36 cm: That is the radius of curvature.\n- 9 cm: You divided by 4.",
+     "position": 8,
+     "options": [
+      {
+       "id": "05718919-5189-5712-ba99-9ecfd019e1bd",
+       "label": "A",
+       "content": "9 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "abad0aa5-cc1a-572c-b62e-1f921f185603",
+       "label": "B",
+       "content": "18 cm",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ea91f65a-b3fc-5f7a-b666-5c631f48b054",
+       "label": "C",
+       "content": "36 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3cd29762-80a9-549a-8c76-35e4015b1689",
+       "label": "D",
+       "content": "72 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "960e505a-734d-5eb8-89cc-5bf528a804d7",
+   "topic": "Refraction and Total Internal Reflection",
+   "title": "Refraction and Total Internal Reflection: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on refraction and total internal reflection, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 146,
+   "questions": [
+    {
+     "id": "36adf9a5-e422-589d-8c12-89b934e928ff",
+     "key": "phy-rfr-01",
+     "stem": "A ray of light enters glass from air at an angle of incidence of 30°. The angle of refraction is 19°. What is the refractive index of the glass?",
+     "image_url": null,
+     "explanation": "$n = \\dfrac{\\sin 30°}{\\sin 19°} = \\dfrac{0.500}{0.326} = 1.54$.\n\n**Why the other options are wrong**\n\n- 1.58: Snell's law uses the sines of the angles, not the angles themselves.\n- 0.65: You inverted the ratio; n = sin i / sin r.\n- 0.92: Use sines, not cosines.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f7ff927d-227c-58c0-b90e-647fd3638c30",
+       "label": "A",
+       "content": "0.65",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6cd2d49e-b5f1-5ef2-a03c-9ffc60626aa8",
+       "label": "B",
+       "content": "0.92",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "838c0fad-a963-539c-8fdd-f4db4682db9c",
+       "label": "C",
+       "content": "1.54",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ca259e6a-8e07-588d-ae7f-2595bf46a0aa",
+       "label": "D",
+       "content": "1.58",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b3d20b84-06d9-5bb4-a3f6-2c79cca7a613",
+     "key": "phy-rfr-02",
+     "stem": "The refractive index of water is 4/3. A coin at the bottom of a pond 1.2 m deep appears to be how deep?",
+     "image_url": null,
+     "explanation": "Apparent depth $= \\dfrac{\\text{real depth}}{n} = \\dfrac{1.2}{4/3} = 0.9\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 1.6 m: You multiplied by n; apparent depth = real depth ÷ n.\n- 0.3 m: That is the apparent displacement (1.2 − 0.9).\n- 1.2 m: Refraction makes the coin look shallower.",
+     "position": 2,
+     "options": [
+      {
+       "id": "48687492-a795-56a3-b0cf-c1b7dbe722f5",
+       "label": "A",
+       "content": "0.3 m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f80932ec-86ee-5d77-b3f2-040808e654ae",
+       "label": "B",
+       "content": "0.9 m",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1319b22c-d3e8-5a80-ab80-373ab8dae905",
+       "label": "C",
+       "content": "1.2 m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a3f0a4ea-4c0d-56bc-8acb-2776afd2dffd",
+       "label": "D",
+       "content": "1.6 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6578c433-c137-55e6-a2cf-acb49c217201",
+     "key": "phy-rfr-03",
+     "stem": "The speed of light in a glass is 2.0 × 10⁸ m s⁻¹. If its speed in air is 3.0 × 10⁸ m s⁻¹, what is the refractive index of the glass?",
+     "image_url": null,
+     "explanation": "$n = \\dfrac{3.0 \\times 10^{8}}{2.0 \\times 10^{8}} = 1.5$.\n\n**Why the other options are wrong**\n\n- 0.667: You inverted the ratio; n = speed in air ÷ speed in glass.\n- 5: You added the speeds.\n- 1: You subtracted the speeds.",
+     "position": 3,
+     "options": [
+      {
+       "id": "40a13a18-bb74-5659-b48c-d59f9907de62",
+       "label": "A",
+       "content": "0.667",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e5942115-6f33-58e1-ba06-5b6e37d39b4e",
+       "label": "B",
+       "content": "1",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eeabca17-5b92-52a5-bfa9-c01fe2a3e459",
+       "label": "C",
+       "content": "1.5",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "00d9e543-a1d2-5c20-a326-1bb9c0eae771",
+       "label": "D",
+       "content": "5",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e667188d-ffac-5dbb-b187-b0b8a5c3d769",
+     "key": "phy-rfr-04",
+     "stem": "What is the critical angle for a glass of refractive index 1.5?",
+     "image_url": null,
+     "explanation": "$\\sin c = \\dfrac{1}{n} = \\dfrac{1}{1.5} = 0.667 \\Rightarrow c = 41.8°$.\n\n**Why the other options are wrong**\n\n- 48.2 °: You used cos c = 1/n; the relation is sin c = 1/n.\n- 33.7 °: You used tan c = 1/n.\n- 60.0 °: You divided 90° by n.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c7b8cd3f-a707-5dae-9d90-5fbd1a8a44c0",
+       "label": "A",
+       "content": "33.7 °",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ef630291-34d3-57a2-95a0-04ecd84d7132",
+       "label": "B",
+       "content": "41.8 °",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7a7576bb-177e-5717-b7a1-fd38a44a4e34",
+       "label": "C",
+       "content": "48.2 °",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f12c9b68-8480-5664-992a-1b8c04716f5d",
+       "label": "D",
+       "content": "60.0 °",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b1b93ca5-ece4-57a0-9275-e48a0ed73fdd",
+     "key": "phy-rfr-05",
+     "stem": "Total internal reflection can occur when light travels from",
+     "image_url": null,
+     "explanation": "TIR needs a denser-to-less-dense boundary and an angle of incidence above the critical angle.\n\n**Why the other options are wrong**\n\n- air to glass at any angle: TIR needs light going from a denser to a less dense medium.\n- glass to air at an angle less than the critical angle: Below the critical angle the light refracts out.\n- air to water at a large angle: Air is less dense than water; TIR cannot happen this way.",
+     "position": 5,
+     "options": [
+      {
+       "id": "455540b4-9200-5dbe-b95e-6f4ae584efb0",
+       "label": "A",
+       "content": "air to glass at any angle",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "de48d7db-89ee-5f77-b6a7-53ba7708d868",
+       "label": "B",
+       "content": "glass to air at an angle of incidence greater than the critical angle",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ee4bf978-dc0e-59a4-850d-e68a04c9bb37",
+       "label": "C",
+       "content": "glass to air at an angle less than the critical angle",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c1c7db15-b2f3-563d-89e9-7eacb2a7eef6",
+       "label": "D",
+       "content": "air to water at a large angle",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9180f539-c0f4-57c1-9175-af0163050afa",
+     "key": "phy-rfr-06",
+     "stem": "Optical fibres carry light signals over long distances by",
+     "image_url": null,
+     "explanation": "Light strikes the core-cladding boundary above the critical angle and is totally reflected along the fibre.\n\n**Why the other options are wrong**\n\n- diffraction: Diffraction would spread the light out.\n- dispersion: Dispersion separates colours; it is unwanted in fibres.\n- refraction out of the fibre: Light that escapes is lost; the fibre keeps it inside by TIR.",
+     "position": 6,
+     "options": [
+      {
+       "id": "d0b26cb4-cd80-5792-8ada-47c04e154f2e",
+       "label": "A",
+       "content": "diffraction",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b5fbb930-916f-5f0b-9823-1c71e61ece72",
+       "label": "B",
+       "content": "dispersion",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ba5a6a81-e79b-5c1c-ad32-e625acceccc3",
+       "label": "C",
+       "content": "total internal reflection",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a6781b3d-fa97-5500-97ab-6923cb766da3",
+       "label": "D",
+       "content": "refraction out of the fibre",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1df95ed1-bb4e-54aa-868e-fcc5a039321b",
+     "key": "phy-rfr-07",
+     "stem": "A mirage on a hot road is caused by",
+     "image_url": null,
+     "explanation": "Light from the sky bends gradually in the hot, less dense air near the road until it is totally internally reflected upwards.\n\n**Why the other options are wrong**\n\n- reflection from water on the road: There is no water; the 'pool' is an image of the sky.\n- diffraction of sunlight: Diffraction is not the cause.\n- dispersion in the hot air: The effect is not due to colour separation.",
+     "position": 7,
+     "options": [
+      {
+       "id": "de17b435-76d0-51cb-9ca9-c6a7c9ed16af",
+       "label": "A",
+       "content": "reflection from water on the road",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b4589d73-d2a0-599a-981f-974c01396317",
+       "label": "B",
+       "content": "diffraction of sunlight",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a6df6a3e-eb9b-510a-bd5a-5fbccc2e0d7e",
+       "label": "C",
+       "content": "dispersion in the hot air",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b65135ea-1ce8-5c73-b954-d094a0d211c2",
+       "label": "D",
+       "content": "refraction and total internal reflection in layers of air of different density",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2a63cda3-5c36-507d-9cab-f27e25a97fcf",
+     "key": "phy-rfr-08",
+     "stem": "Light passes from air into water (refractive index 1.33) at an angle of incidence of 50°. What is the angle of refraction?",
+     "image_url": null,
+     "explanation": "$\\sin r = \\dfrac{\\sin 50°}{1.33} = \\dfrac{0.766}{1.33} = 0.576 \\Rightarrow r = 35.2°$.\n\n**Why the other options are wrong**\n\n- 37.6 °: You divided the angle by n; divide sin i by n.\n- 50 °: Light bends towards the normal entering water.\n- 40 °: That is 90° − 50°; use Snell's law with the sines of the angles.",
+     "position": 8,
+     "options": [
+      {
+       "id": "fa5cd10f-08d5-5e78-a535-996c0dae38b1",
+       "label": "A",
+       "content": "35.2 °",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "33780def-0473-5e63-98b4-f3c56acafe89",
+       "label": "B",
+       "content": "37.6 °",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e6071c57-bed9-539c-9b42-039d4be52925",
+       "label": "C",
+       "content": "40 °",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e1ce6be2-80e8-5963-93ef-9dbe170d412c",
+       "label": "D",
+       "content": "50 °",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f353fd5b-88f1-5c37-bdb3-95d6ec7afee0",
+   "topic": "Lenses and Image Formation",
+   "title": "Lenses and Image Formation: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on lenses and image formation, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 147,
+   "questions": [
+    {
+     "id": "cc5afa2c-a9fc-573d-af51-22c79e7552ed",
+     "key": "phy-lns-01",
+     "stem": "An object is placed 15 cm from a converging lens of focal length 10 cm. How far from the lens is the image?",
+     "image_url": null,
+     "explanation": "$\\dfrac{1}{v} = \\dfrac{1}{10} - \\dfrac{1}{15} = \\dfrac{1}{30} \\Rightarrow v = 30\\ \\text{cm}$ (real image).\n\n**Why the other options are wrong**\n\n- 5 cm: You subtracted f from u.\n- 6 cm: You added 1/u and 1/f instead of subtracting.\n- 25 cm: You added u and f.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f0dc6d1b-7428-5be3-b353-9633e45e757e",
+       "label": "A",
+       "content": "5 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ca46813f-9ff5-5fdd-a54a-db6ea91736ed",
+       "label": "B",
+       "content": "6 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8376b5b7-d228-5e5d-be0a-1cc9cf309164",
+       "label": "C",
+       "content": "25 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9d23c455-085c-5495-a4c3-3de41da67ac1",
+       "label": "D",
+       "content": "30 cm",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b59de6d3-8828-5529-8863-79cf4e22fe7a",
+     "key": "phy-lns-02",
+     "stem": "What is the power of a converging lens of focal length 25 cm?",
+     "image_url": null,
+     "explanation": "$P = \\dfrac{1}{f} = \\dfrac{1}{0.25\\ \\text{m}} = +4\\ \\text{D}$.\n\n**Why the other options are wrong**\n\n- 25 D: Power uses the focal length in metres: 1 ÷ 0.25.\n- 0.04 D: Convert 25 cm to 0.25 m before taking the reciprocal.\n- -4 D: A converging lens has positive power.",
+     "position": 2,
+     "options": [
+      {
+       "id": "9df32eb4-aa13-5a2d-ab11-cf67832ddeab",
+       "label": "A",
+       "content": "-4 D",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4e34f769-c923-5c9d-88bf-a1e4eeecdb8a",
+       "label": "B",
+       "content": "0.04 D",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "630be65d-4ead-57c6-9cb7-ac468753507f",
+       "label": "C",
+       "content": "4 D",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ce37cda6-fc2c-58a9-ac42-11892ea41e6d",
+       "label": "D",
+       "content": "25 D",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e654ce33-f9e5-58b1-ad01-e4dbadf5202f",
+     "key": "phy-lns-03",
+     "stem": "A diverging lens always forms an image that is",
+     "image_url": null,
+     "explanation": "Rays leaving a diverging lens spread out, appearing to come from a smaller, upright image on the object side.\n\n**Why the other options are wrong**\n\n- real, inverted and diminished: A diverging lens cannot form a real image of a real object.\n- virtual, upright and magnified: Its images are always smaller than the object.\n- real, upright and magnified: Its images are virtual and diminished.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c02544a2-9f9e-5ec6-a535-7ca0dc581d3e",
+       "label": "A",
+       "content": "virtual, upright and diminished",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "71bb0222-5646-511b-bfee-3acb326143ee",
+       "label": "B",
+       "content": "real, inverted and diminished",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ca8549e7-fcdb-5bf8-88ad-897afb3bb6de",
+       "label": "C",
+       "content": "virtual, upright and magnified",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d344432e-e32f-5673-8a57-bebce86b42e8",
+       "label": "D",
+       "content": "real, upright and magnified",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e598860d-d43c-5d61-9da4-0f0eb1b467c7",
+     "key": "phy-lns-04",
+     "stem": "A converging lens is used as a magnifying glass. The object must be placed",
+     "image_url": null,
+     "explanation": "Inside F, a converging lens gives a virtual, upright, magnified image.\n\n**Why the other options are wrong**\n\n- at 2F: That gives a real, same-size image.\n- beyond 2F: That gives a real, diminished image (a camera).\n- between F and 2F: That gives a real, magnified image (a projector).",
+     "position": 4,
+     "options": [
+      {
+       "id": "bd07cfbd-d714-5af8-b09b-857e5812c8e7",
+       "label": "A",
+       "content": "at 2F",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3525f434-2e87-565d-9730-d3abd4738eb2",
+       "label": "B",
+       "content": "between the lens and its principal focus",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "174aeacc-22f6-52d1-8b88-175c2a882a23",
+       "label": "C",
+       "content": "beyond 2F",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5e24ee14-ab2b-5453-aeba-b083a9646040",
+       "label": "D",
+       "content": "between F and 2F",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "53c7329b-3ed8-573c-af55-d13a9c2ea7f4",
+     "key": "phy-lns-05",
+     "stem": "An object 5 cm tall is 30 cm from a converging lens and its image is formed 60 cm from the lens. How tall is the image?",
+     "image_url": null,
+     "explanation": "$m = \\dfrac{v}{u} = \\dfrac{60}{30} = 2$; image height $= 2 \\times 5 = 10\\ \\text{cm}$.\n\n**Why the other options are wrong**\n\n- 2.5 cm: You inverted the magnification; m = v/u = 2.\n- 2 cm: That is the magnification, not the image height.\n- 300 cm: You multiplied the height by the image distance.",
+     "position": 5,
+     "options": [
+      {
+       "id": "0ae7ac68-4c76-54bc-9cd8-1e90d6128e0a",
+       "label": "A",
+       "content": "2 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c64c8709-da9b-5769-b42c-550b5abba2a6",
+       "label": "B",
+       "content": "2.5 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3e172107-10fb-5be4-ad7f-f12bb43a38b7",
+       "label": "C",
+       "content": "10 cm",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b0da5616-5389-547d-a343-738a52a5857f",
+       "label": "D",
+       "content": "300 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7eb15fcc-be60-58fa-ab1d-3978ae6313d1",
+     "key": "phy-lns-06",
+     "stem": "An object is placed 6 cm from a converging lens of focal length 12 cm. Where is the image? (real-is-positive convention)",
+     "image_url": null,
+     "explanation": "$\\dfrac{1}{v} = \\dfrac{1}{12} - \\dfrac{1}{6} = -\\dfrac{1}{12} \\Rightarrow v = -12\\ \\text{cm}$: virtual, on the same side as the object.\n\n**Why the other options are wrong**\n\n- 12 cm: The image is virtual, so its distance is negative.\n- 4 cm: You added 1/u and 1/f.\n- 6 cm: That is the object distance.",
+     "position": 6,
+     "options": [
+      {
+       "id": "83342c16-b6f4-59dc-9e97-f296c2fa5dc6",
+       "label": "A",
+       "content": "-12 cm",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b1df1851-aab1-5a05-882d-5250571ec5a5",
+       "label": "B",
+       "content": "4 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "10aed7f2-77eb-5f83-907f-e4501d1c95c6",
+       "label": "C",
+       "content": "6 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "440cebf9-f6bc-506a-afc8-ab501190a558",
+       "label": "D",
+       "content": "12 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "141885a4-9731-53fe-b6fc-1bf8888607cd",
+     "key": "phy-lns-07",
+     "stem": "In a camera, the object is usually placed",
+     "image_url": null,
+     "explanation": "A camera forms a real, inverted, diminished image of distant objects (beyond 2F).\n\n**Why the other options are wrong**\n\n- between F and the lens: That gives a virtual image, which cannot be recorded on film.\n- at F: Then no image forms on the film.\n- between F and 2F: That gives a magnified image, as in a projector.",
+     "position": 7,
+     "options": [
+      {
+       "id": "7f4f5367-b264-5adb-8238-58fd4bf34274",
+       "label": "A",
+       "content": "between F and the lens",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6d86eee2-7158-58e7-a2dc-9da8f581975a",
+       "label": "B",
+       "content": "at F",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f04d90bc-dfde-5073-ae88-16b14d72a5a4",
+       "label": "C",
+       "content": "beyond 2F of the lens",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8ab876cb-dc04-522e-87ea-a36dee6ef0b3",
+       "label": "D",
+       "content": "between F and 2F",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "23832405-9a40-5857-8f1c-1ae959317fb1",
+     "key": "phy-lns-08",
+     "stem": "A lens has a power of −2.5 D. What is its focal length?",
+     "image_url": null,
+     "explanation": "$f = \\dfrac{1}{P} = \\dfrac{1}{-2.5} = -0.4\\ \\text{m} = -40\\ \\text{cm}$ (a diverging lens).\n\n**Why the other options are wrong**\n\n- 40 cm: Negative power means a diverging lens with negative focal length.\n- -0.4 cm: That is the focal length in metres, not centimetres.\n- -25 cm: 1 ÷ 2.5 = 0.4 m = 40 cm, not 25 cm.",
+     "position": 8,
+     "options": [
+      {
+       "id": "e9d34f8f-0327-57fb-b6c1-757e65a13c70",
+       "label": "A",
+       "content": "-40 cm",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a0ccc50a-9902-56ad-8fb1-37ff9ad5e588",
+       "label": "B",
+       "content": "-25 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b08181d6-47f5-58cb-8613-a58d2e183c41",
+       "label": "C",
+       "content": "-0.4 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d41e2a60-2394-5f38-ad08-34c8410b8ac5",
+       "label": "D",
+       "content": "40 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f31c8ab3-1d5f-5e3f-8280-78a7f6e5f59f",
+   "topic": "Optical Instruments",
+   "title": "Optical Instruments: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on optical instruments, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 148,
+   "questions": [
+    {
+     "id": "f8482446-13ce-5b0a-9f85-01d768694014",
+     "key": "phy-ins-01",
+     "stem": "Short sight (myopia) is corrected by using a",
+     "image_url": null,
+     "explanation": "A diverging lens spreads the rays so they focus on the retina instead of in front of it.\n\n**Why the other options are wrong**\n\n- converging (convex) lens: That corrects long sight.\n- cylindrical lens: That corrects astigmatism.\n- plane glass: Plane glass does not change focus.",
+     "position": 1,
+     "options": [
+      {
+       "id": "5185cfab-fbc3-5858-b751-044db7be5a34",
+       "label": "A",
+       "content": "converging (convex) lens",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "db1df189-eec7-5884-a4fa-3bade4277bdb",
+       "label": "B",
+       "content": "cylindrical lens",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e1fca3b3-06d1-5c8c-a81a-30c66f2d1c0f",
+       "label": "C",
+       "content": "plane glass",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a5baf7b2-9863-5ee5-9ea9-939c4eb5c46b",
+       "label": "D",
+       "content": "diverging (concave) lens",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "101d1321-e6f4-59fa-b024-e5e29aac6007",
+     "key": "phy-ins-02",
+     "stem": "The part of the eye that controls the amount of light entering it is the",
+     "image_url": null,
+     "explanation": "The iris changes the size of the pupil.\n\n**Why the other options are wrong**\n\n- retina: The retina detects light.\n- cornea: The cornea refracts light.\n- optic nerve: The optic nerve carries signals to the brain.",
+     "position": 2,
+     "options": [
+      {
+       "id": "0ec44793-27ce-50e3-aa8a-0f6ee8a892c6",
+       "label": "A",
+       "content": "iris",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d24eab9f-6f08-5dea-98b6-d9edd31ed9b0",
+       "label": "B",
+       "content": "retina",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cc5400fa-f469-51a9-8cf6-45c540634629",
+       "label": "C",
+       "content": "cornea",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0814ca9c-04da-5d2e-8a72-dc8145586129",
+       "label": "D",
+       "content": "optic nerve",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "442828f0-bc6b-5821-9a69-b483de9f5968",
+     "key": "phy-ins-03",
+     "stem": "The eye focuses on objects at different distances by",
+     "image_url": null,
+     "explanation": "Accommodation: the ciliary muscles change the lens's shape and so its focal length.\n\n**Why the other options are wrong**\n\n- moving the lens backwards and forwards: That is how a camera focuses.\n- changing the size of the pupil: The pupil controls the amount of light.\n- moving the retina: The retina does not move.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c569c3ff-029e-5a8c-9dff-0fb5406ee282",
+       "label": "A",
+       "content": "moving the lens backwards and forwards",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1d0eda47-0640-527d-a0d4-4d0c8fd27802",
+       "label": "B",
+       "content": "changing the thickness of its lens",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c0e85706-456d-524d-93c0-b4c6dab38bcb",
+       "label": "C",
+       "content": "changing the size of the pupil",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f4eb170b-ad71-5cfb-aca7-28fbe23034a2",
+       "label": "D",
+       "content": "moving the retina",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5e64e96c-96ae-5dd2-839f-e829a579f13f",
+     "key": "phy-ins-04",
+     "stem": "An astronomical telescope has an objective of focal length 90 cm and an eyepiece of focal length 3 cm. What is its magnifying power in normal adjustment?",
+     "image_url": null,
+     "explanation": "$M = \\dfrac{f_o}{f_e} = \\dfrac{90}{3} = 30$.\n\n**Why the other options are wrong**\n\n- 270: You multiplied the focal lengths.\n- 0.033: You inverted the ratio; M = f_o / f_e.\n- 93: That is the length of the telescope in cm, f_o + f_e.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2aa40b5a-cbeb-589b-8e84-edb19ed1b4df",
+       "label": "A",
+       "content": "0.033",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9b753aaa-0848-56de-91f6-02a400d06b37",
+       "label": "B",
+       "content": "30",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d73c94d2-8442-54b4-a3b7-5e86f050e037",
+       "label": "C",
+       "content": "93",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6cad2d99-74cc-527b-86c0-174da7a61f11",
+       "label": "D",
+       "content": "270",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2382f9ac-a01e-5487-907a-f7034330a36e",
+     "key": "phy-ins-05",
+     "stem": "A magnifying glass of focal length 5 cm forms an image at the near point, 25 cm from the eye. What is the magnification?",
+     "image_url": null,
+     "explanation": "$m = 1 + \\dfrac{D}{f} = 1 + \\dfrac{25}{5} = 6$.\n\n**Why the other options are wrong**\n\n- 5: You used D/f only; with the image at the near point, m = 1 + D/f.\n- 0.2: You divided f by D.\n- 30: You added D and f.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a6ac62ad-07ce-56d0-ac23-99629407d25c",
+       "label": "A",
+       "content": "0.2",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1c5dacba-aae9-5e2a-8fb4-3be9c2a143d9",
+       "label": "B",
+       "content": "5",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e86e46bf-9e12-5fd8-adfb-c2a2e6fd07c2",
+       "label": "C",
+       "content": "6",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e6bb28b5-856d-5eef-88b0-852c474c4913",
+       "label": "D",
+       "content": "30",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6ae51e0a-e5a7-5227-96f4-6d32fa89dbf5",
+     "key": "phy-ins-06",
+     "stem": "In a slide projector, the slide is placed upside down because the projection lens",
+     "image_url": null,
+     "explanation": "The image on the screen is inverted relative to the slide, so an inverted slide gives an upright picture.\n\n**Why the other options are wrong**\n\n- forms a virtual image: A projector forms a real image on the screen.\n- forms an upright image: A single converging lens forms an inverted real image.\n- reflects the light: The lens refracts light.",
+     "position": 6,
+     "options": [
+      {
+       "id": "d03750e6-c6c4-59a0-8a81-ee74275e66ec",
+       "label": "A",
+       "content": "forms a virtual image",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "680fef9e-b7f7-5608-9afe-fe8fc6a9d8f2",
+       "label": "B",
+       "content": "forms an upright image",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0f9c4326-8b82-5e97-bc12-bf0cb5517e9c",
+       "label": "C",
+       "content": "forms an inverted real image",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1320f1f5-f121-5370-bea9-f3696157b74b",
+       "label": "D",
+       "content": "reflects the light",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7cbadd07-fed9-5c5b-a7c7-aeb20c018420",
+     "key": "phy-ins-07",
+     "stem": "Compared with the objective of an astronomical telescope, the objective of a compound microscope has a",
+     "image_url": null,
+     "explanation": "A microscope objective has a very short focal length so that a tiny nearby object gives a large real image.\n\n**Why the other options are wrong**\n\n- much longer focal length: A telescope objective has the long focal length.\n- larger diameter: Telescope objectives are made large to gather light.\n- negative power: Both objectives are converging lenses.",
+     "position": 7,
+     "options": [
+      {
+       "id": "de74b754-9954-59a1-81a8-ebd886b0d393",
+       "label": "A",
+       "content": "much longer focal length",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d39919f0-cd20-5b75-98f9-ebaa237d4f2b",
+       "label": "B",
+       "content": "larger diameter",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "45bac3db-f76b-57a9-98c3-4acc9232eb64",
+       "label": "C",
+       "content": "negative power",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d6cf7b39-1535-5a41-bbb6-dfc6015480e9",
+       "label": "D",
+       "content": "much shorter focal length",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f7c71194-1280-5547-a074-8a4f09aa8cd6",
+     "key": "phy-ins-08",
+     "stem": "Long sight (hypermetropia) occurs because the image of a near object is formed",
+     "image_url": null,
+     "explanation": "The eyeball is too short or the lens too weak, so near objects focus behind the retina; a converging lens corrects it.\n\n**Why the other options are wrong**\n\n- in front of the retina: That happens in short sight.\n- on the blind spot: The blind spot is unrelated.\n- at the pupil: Images form on (or near) the retina, not at the pupil.",
+     "position": 8,
+     "options": [
+      {
+       "id": "f69a10c4-4d80-56bd-8ae5-34ac9d4479c0",
+       "label": "A",
+       "content": "behind the retina",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7baf52ac-7a2e-591c-9f6e-55699f1e5fb1",
+       "label": "B",
+       "content": "in front of the retina",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c9599803-a8ec-5c86-b93b-9281d50a6119",
+       "label": "C",
+       "content": "on the blind spot",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c5d02d52-a2e4-5519-ab95-1effdfe9ac4e",
+       "label": "D",
+       "content": "at the pupil",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd536152-d7e9-5c43-b48e-981d7f72b774",
+   "topic": "Dispersion and the Electromagnetic Spectrum",
+   "title": "Dispersion and the Electromagnetic Spectrum: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on dispersion and the electromagnetic spectrum, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 149,
+   "questions": [
+    {
+     "id": "bc68f462-db64-58f8-a2ff-48b637a8f887",
+     "key": "phy-spc-01",
+     "stem": "When white light passes through a prism, the colour deviated most is",
+     "image_url": null,
+     "explanation": "Glass has the highest refractive index for violet, so violet bends most.\n\n**Why the other options are wrong**\n\n- red: Red is deviated least.\n- green: Green lies in the middle of the spectrum.\n- yellow: Yellow is deviated less than violet.",
+     "position": 1,
+     "options": [
+      {
+       "id": "471c86be-9290-53a6-9415-8539b6e4ce2c",
+       "label": "A",
+       "content": "red",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "05ecb12c-38ac-5b3c-b14e-199239c38ede",
+       "label": "B",
+       "content": "violet",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "37aa02ad-470c-5e2b-9984-9fb60d76613a",
+       "label": "C",
+       "content": "green",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "58abe83d-ff8f-5b63-aab9-6359bd2e5b7b",
+       "label": "D",
+       "content": "yellow",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "465ceade-bafc-5ffe-9f15-8b1497153ea2",
+     "key": "phy-spc-02",
+     "stem": "A red shirt viewed in pure green light appears",
+     "image_url": null,
+     "explanation": "A red object reflects only red; in green light it reflects nothing and looks black.\n\n**Why the other options are wrong**\n\n- red: There is no red light for it to reflect.\n- green: The shirt absorbs green light.\n- white: It reflects none of the green light.",
+     "position": 2,
+     "options": [
+      {
+       "id": "79102bac-784f-52dc-91f4-06d23f25a5aa",
+       "label": "A",
+       "content": "red",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f4b43694-cbc5-596d-a13a-b4f2a8414316",
+       "label": "B",
+       "content": "green",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fe0619a9-049c-53f6-8dae-5c47945a91b5",
+       "label": "C",
+       "content": "black",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d4d09745-8252-54bd-9dbd-57b15bffacad",
+       "label": "D",
+       "content": "white",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7c58d647-68fe-5e33-9692-e28f4567e7b6",
+     "key": "phy-spc-03",
+     "stem": "Adding red and green light gives",
+     "image_url": null,
+     "explanation": "In additive mixing of light, red + green = yellow.\n\n**Why the other options are wrong**\n\n- white: White needs red, green and blue together.\n- cyan: Cyan is green + blue.\n- magenta: Magenta is red + blue.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0835ffa7-3fc6-59b6-9fbd-251dd4e895b5",
+       "label": "A",
+       "content": "white",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d01a7c13-d5c3-56db-bc85-476b78884ed0",
+       "label": "B",
+       "content": "cyan",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5abd61f3-65d5-52ba-b5f5-908968847d06",
+       "label": "C",
+       "content": "magenta",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3e124096-f490-526e-ae51-dceeb0301ed1",
+       "label": "D",
+       "content": "yellow",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "838c5d4f-000b-59d7-9fae-a050df1ecccb",
+     "key": "phy-spc-04",
+     "stem": "Which electromagnetic radiation has the longest wavelength?",
+     "image_url": null,
+     "explanation": "In order of increasing wavelength: gamma, X-rays, UV, visible, infrared, microwaves, radio.\n\n**Why the other options are wrong**\n\n- gamma rays: Gamma rays have the shortest wavelength.\n- X-rays: X-rays have very short wavelengths.\n- infrared: Infrared is longer than visible light but much shorter than radio waves.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4afa2987-4f4a-510d-beef-f169db85d1b6",
+       "label": "A",
+       "content": "radio waves",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "72bef9ed-4412-5e75-bebd-89755f26f3b4",
+       "label": "B",
+       "content": "gamma rays",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "326e936b-58b8-5fd4-be2b-aaddfbf77362",
+       "label": "C",
+       "content": "X-rays",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "07b37f44-0c14-5ee3-b217-fc5e2c814b41",
+       "label": "D",
+       "content": "infrared",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6215f1ce-3f1a-50d0-b246-8305acf90f42",
+     "key": "phy-spc-05",
+     "stem": "Which of these is NOT a property of all electromagnetic waves?",
+     "image_url": null,
+     "explanation": "Electromagnetic waves travel through a vacuum; they need no medium.\n\n**Why the other options are wrong**\n\n- They travel at 3 × 10⁸ m s⁻¹ in a vacuum.  \n  This is true of all electromagnetic waves.\n- They are transverse waves.  \n  This is true of all electromagnetic waves.\n- They carry energy.  \n  This is true of all electromagnetic waves.",
+     "position": 5,
+     "options": [
+      {
+       "id": "0c56dbeb-1267-5cc9-ab98-0fa66eacf319",
+       "label": "A",
+       "content": "They travel at 3 × 10⁸ m s⁻¹ in a vacuum.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1df732ab-87c5-5715-a3f9-c401e0fc8354",
+       "label": "B",
+       "content": "They need a material medium to travel.",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "aa6e62b9-6b58-57c7-b792-8ffab668bec2",
+       "label": "C",
+       "content": "They are transverse waves.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "aae82296-41b0-5773-b2de-fae04a795de3",
+       "label": "D",
+       "content": "They carry energy.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5824acd9-daa4-511d-b8b9-d6c6b703d5b0",
+     "key": "phy-spc-06",
+     "stem": "Microwaves used by a mobile phone have a frequency of 1.5 × 10⁹ Hz. What is their wavelength? (c = 3.0 × 10⁸ m s⁻¹)",
+     "image_url": null,
+     "explanation": "$\\lambda = \\dfrac{c}{f} = \\dfrac{3.0 \\times 10^{8}}{1.5 \\times 10^{9}} = 0.2\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 5 m: You divided the frequency by the speed.\n- 2 m: Check the powers of ten: 3 × 10⁸ ÷ 1.5 × 10⁹ = 0.2.\n- 4.5 m: You multiplied instead of dividing (and dropped powers of ten).",
+     "position": 6,
+     "options": [
+      {
+       "id": "68595b30-527d-5438-a232-a9bba3a00750",
+       "label": "A",
+       "content": "0.2 m",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a3603528-21b5-57fe-a3c2-9581b865696b",
+       "label": "B",
+       "content": "2 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e20f6795-66ae-58bf-8d40-16c8fda9ba44",
+       "label": "C",
+       "content": "4.5 m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3376dd6b-3992-5fd0-83b3-ca65fc76be1f",
+       "label": "D",
+       "content": "5 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8eb7b868-bd21-5aa5-a888-14e2cd788697",
+     "key": "phy-spc-07",
+     "stem": "Ultraviolet lamps are used in banks to",
+     "image_url": null,
+     "explanation": "Genuine notes carry marks that glow (fluoresce) under ultraviolet light.\n\n**Why the other options are wrong**\n\n- heat the building: Infrared is used for heating.\n- send signals to satellites: Microwaves are used for satellite links.\n- take images of bones: X-rays are used for that.",
+     "position": 7,
+     "options": [
+      {
+       "id": "3920b36d-ca93-59de-9228-7462a6280355",
+       "label": "A",
+       "content": "heat the building",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9cfb57a0-9efc-56aa-bee9-bdf3af1b731c",
+       "label": "B",
+       "content": "send signals to satellites",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ec6e079d-7b42-52a9-8c64-23b07c52817c",
+       "label": "C",
+       "content": "detect forged banknotes",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "90b80e2d-e21b-50e6-bf0c-170354e412c9",
+       "label": "D",
+       "content": "take images of bones",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ec67edf0-b206-5f77-992a-d77d74c3c6af",
+     "key": "phy-spc-08",
+     "stem": "The colours of white light can be recombined by",
+     "image_url": null,
+     "explanation": "An inverted prism reverses the dispersion and recombines the colours into white light (as does a spinning Newton's disc).\n\n**Why the other options are wrong**\n\n- passing it through a red filter: A filter removes colours; it does not recombine them.\n- reflecting it from a black surface: A black surface absorbs the light.\n- passing it through a narrow slit: A slit does not recombine colours.",
+     "position": 8,
+     "options": [
+      {
+       "id": "2e4b5e4e-ffbf-5fbf-b043-c57a79956878",
+       "label": "A",
+       "content": "passing it through a red filter",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e2ecb620-ee2c-5edd-9f09-83d685584a2c",
+       "label": "B",
+       "content": "reflecting it from a black surface",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "00373edf-a2f0-5c10-b26d-b153e891390f",
+       "label": "C",
+       "content": "passing it through a narrow slit",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3fd7bc01-9aa2-569d-997b-e95b7aaf1bfe",
+       "label": "D",
+       "content": "passing the spectrum through a second, inverted prism",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "8f92645fc6e9"
+}

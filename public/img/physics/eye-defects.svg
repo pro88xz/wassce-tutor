@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Short sight and long sight and their correction</title>
+<desc id="d">Short sight: rays from a distant object focus in front of the retina; a diverging lens corrects it. Long sight: rays from a near object focus behind the retina; a converging lens corrects it.</desc>
+<defs></defs>
+<rect width="680" height="420" rx="20" fill="#f8fafc"/>
+<text x="20.0" y="28.0" font-size="19" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Short sight (myopia)</text>
+<circle cx="200.0" cy="110.0" r="62.0" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+<ellipse cx="154.0" cy="110.0" rx="10.0" ry="30.0" fill="#e0f2fe" stroke="#0f172a" stroke-width="2"/>
+<path d="M 250 74 A 62 62 0 0 1 250 146" stroke="#dc2626" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="40.0" y1="88.0" x2="154.0" y2="88.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="154.0" y1="88.0" x2="232.0" y2="110.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="232.0" y1="110.0" x2="258.0" y2="121.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5"/>
+<line x1="40.0" y1="132.0" x2="154.0" y2="132.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="154.0" y1="132.0" x2="232.0" y2="110.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="232.0" y1="110.0" x2="258.0" y2="99.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5"/>
+<circle cx="232.0" cy="110.0" r="5.0" fill="#ea580c" stroke="#ea580c" stroke-width="1"/>
+<text x="200.0" y="196.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">focus in front of retina</text>
+<circle cx="520.0" cy="110.0" r="62.0" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+<ellipse cx="474.0" cy="110.0" rx="10.0" ry="30.0" fill="#e0f2fe" stroke="#0f172a" stroke-width="2"/>
+<path d="M 570 74 A 62 62 0 0 1 570 146" stroke="#dc2626" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 396 64 L 424 64 Q 412 110 424 156 L 396 156 Q 408 110 396 64 Z" stroke="#0f172a" stroke-width="2.5" fill="#e0f2fe" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="330.0" y1="88.0" x2="410.0" y2="88.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="410.0" y1="88.0" x2="474.0" y2="81.4" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="474.0" y1="81.4" x2="578.0" y2="110.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="330.0" y1="132.0" x2="410.0" y2="132.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="410.0" y1="132.0" x2="474.0" y2="138.6" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="474.0" y1="138.6" x2="578.0" y2="110.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="578.0" cy="110.0" r="5.0" fill="#15803d" stroke="#15803d" stroke-width="1"/>
+<text x="520.0" y="196.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">diverging lens corrects it</text>
+<text x="20.0" y="218.0" font-size="19" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Long sight (hypermetropia)</text>
+<circle cx="200.0" cy="300.0" r="62.0" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+<ellipse cx="154.0" cy="300.0" rx="10.0" ry="30.0" fill="#e0f2fe" stroke="#0f172a" stroke-width="2"/>
+<path d="M 250 264 A 62 62 0 0 1 250 336" stroke="#dc2626" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="40.0" y1="278.0" x2="154.0" y2="278.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="154.0" y1="278.0" x2="288.0" y2="300.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="40.0" y1="322.0" x2="154.0" y2="322.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="154.0" y1="322.0" x2="288.0" y2="300.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="288.0" cy="300.0" r="5.0" fill="#ea580c" stroke="#ea580c" stroke-width="1"/>
+<text x="200.0" y="386.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">focus behind retina</text>
+<circle cx="520.0" cy="300.0" r="62.0" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+<ellipse cx="474.0" cy="300.0" rx="10.0" ry="30.0" fill="#e0f2fe" stroke="#0f172a" stroke-width="2"/>
+<path d="M 570 264 A 62 62 0 0 1 570 336" stroke="#dc2626" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 410 254 Q 436 300 410 346 Q 384 300 410 254 Z" stroke="#0f172a" stroke-width="2.5" fill="#e0f2fe" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="330.0" y1="278.0" x2="410.0" y2="278.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="410.0" y1="278.0" x2="474.0" y2="286.8" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="474.0" y1="286.8" x2="578.0" y2="300.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="330.0" y1="322.0" x2="410.0" y2="322.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="410.0" y1="322.0" x2="474.0" y2="313.2" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="474.0" y1="313.2" x2="578.0" y2="300.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="578.0" cy="300.0" r="5.0" fill="#15803d" stroke="#15803d" stroke-width="1"/>
+<text x="520.0" y="386.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">converging lens corrects it</text>
+</svg>

@@ -911,6 +911,547 @@ def gas_law_graphs():
     return s
 
 
+# ═══ Waves and sound ═════════════════════════════════════════════════════════
+
+@fig
+def transverse_wave():
+    s = Svg(660, 360, "A transverse wave",
+            "Displacement against distance for a transverse wave, showing crests, troughs, the amplitude and the wavelength.")
+    x0, ym, x1 = 50, 200, 630
+    s.line(x0, ym, x1, ym, color=GRID, width=2)
+    A, lam = 90, 240
+    pts = [(x0 + i, ym - A * math.sin(2 * math.pi * i / lam)) for i in range(0, 561, 3)]
+    s.polyline(pts, color=BLUE, width=5)
+    s.text(x0 + 5 * lam / 4, ym - A - 20, "crest", size=20, weight="bold", color=BLUE)
+    s.text(x0 + 3 * lam / 4, ym + A + 28, "trough", size=20, weight="bold", color=BLUE)
+    cx = x0 + lam / 4
+    s.arrow(cx, ym, cx, ym - A + 3, color=GREEN, width=3)
+    s.text(cx + 12, ym - A / 2, "amplitude a", size=19, color=GREEN, weight="bold", anchor="start")
+    y = 40
+    s.line(x0 + lam / 4, y + 10, x0 + lam / 4, y - 10, color=RED, width=2)
+    s.line(x0 + 5 * lam / 4, y + 10, x0 + 5 * lam / 4, y - 10, color=RED, width=2)
+    s.line(x0 + lam / 4, y + 10, x0 + lam / 4, ym - A, color=RED, width=1.2, dash="4 5")
+    s.line(x0 + 5 * lam / 4, y + 10, x0 + 5 * lam / 4, ym - A, color=RED, width=1.2, dash="4 5")
+    s.arrow(x0 + lam * 0.75, y, x0 + lam / 4 + 2, y, color=RED, width=2.5)
+    s.arrow(x0 + lam * 0.75, y, x0 + 5 * lam / 4 - 2, y, color=RED, width=2.5)
+    s.label(x0 + lam * 0.75, y, "wavelength λ", size=19, color=RED, weight="bold")
+    s.text(630, ym + 24, "distance", size=17, color=MUTED, anchor="end")
+    s.arrow(610, 340, 610, 290, color=ORANGE, width=3)
+    s.text(598, 326, "particles move up and down", size=16, color=ORANGE, anchor="end")
+    return s
+
+@fig
+def longitudinal_wave():
+    s = Svg(660, 260, "A longitudinal wave",
+            "A longitudinal wave in a spring or in air: regions where the particles are crowded together are compressions and regions where they are spread out are rarefactions. The wavelength is the distance between two compressions.")
+    xs = []
+    x = 40.0
+    while x < 630:
+        xs.append(x)
+        phase = math.cos(2 * math.pi * (x - 40) / 200)
+        x += 13 - 7 * phase
+    for xx in xs:
+        s.line(xx, 70, xx, 170, color=BLUE, width=3)
+    for k, cx in enumerate((40, 240, 440)):
+        s.text(cx + 4, 196, "C", size=20, weight="bold", color=RED)
+    for cx in (140, 340, 540):
+        s.text(cx, 196, "R", size=20, weight="bold", color=GREEN)
+    s.text(40, 226, "C = compression (crowded)   R = rarefaction (spread out)", size=17, color=MUTED, anchor="start")
+    s.line(40, 50, 40, 36, color=RED, width=2)
+    s.line(240, 50, 240, 36, color=RED, width=2)
+    s.arrow(140, 43, 42, 43, color=RED, width=2.5)
+    s.arrow(140, 43, 238, 43, color=RED, width=2.5)
+    s.label(140, 43, "λ", size=22, color=RED, weight="bold", italic=True)
+    s.arrow(520, 30, 620, 30, color=ORANGE, width=3)
+    s.arrow(620, 30, 520, 30, color=ORANGE, width=3)
+    s.text(570, 54, "particles move to and fro", size=15, color=ORANGE)
+    return s
+
+
+@fig
+def wave_refraction():
+    s = Svg(660, 380, "Refraction of water waves",
+            "Straight water waves pass from deep water into shallow water across a boundary at an angle. In shallow water they move more slowly, their wavelength is shorter and their direction bends towards the normal.")
+    bx = 330
+    s.raw('<defs><clipPath id="cdeep"><rect x="30" y="30" width="300" height="320"/></clipPath><clipPath id="cshal"><rect x="330" y="30" width="300" height="320"/></clipPath></defs>')
+    s.rect(30, 30, 300, 320, fill=WATER, stroke="none", width=0)
+    s.rect(330, 30, 300, 320, fill="#e0f2fe", stroke="none", width=0)
+    i = math.radians(45)
+    r = math.asin(math.sin(i) * 0.6)          # waves travel 0.6 times as fast in shallow water
+    d1 = 46                                   # wavelength in deep water (px)
+    step = d1 / math.sin(i)                   # spacing of wavefronts along the boundary
+    for k in range(-4, 12):
+        yk = 20 + k * step
+        dx1, dy1 = math.sin(i), math.cos(i)   # wavefront direction in deep water
+        dx2, dy2 = math.sin(r), math.cos(r)   # wavefront direction in shallow water
+        s.raw('<g clip-path="url(#cdeep)">')
+        s.line(bx - 600 * dx1, yk - 600 * dy1, bx, yk, color=BLUE, width=3)
+        s.raw('</g><g clip-path="url(#cshal)">')
+        s.line(bx, yk, bx + 600 * dx2, yk + 600 * dy2, color=BLUE, width=3)
+        s.raw('</g>')
+    s.line(bx, 30, bx, 350, color=INK, width=3)
+    s.line(60, 200, 600, 200, color=MUTED, width=1.5, dash="6 6")
+    s.text(600, 188, "normal", size=15, color=MUTED, anchor="end")
+    s.arrow(120, 280, 120 + 120 * math.cos(i), 280 - 120 * math.sin(i), color=RED, width=3.5)
+    s.arrow(430, 260, 430 + 140 * math.cos(r), 260 - 140 * math.sin(r), color=RED, width=3.5)
+    s.label(180, 50, "deep water", size=18, weight="bold")
+    s.label(480, 50, "shallow water", size=18, weight="bold")
+    s.label(480, 330, "slower · shorter λ · bends towards the normal", size=15, color=INK)
+    return s
+
+@fig
+def diffraction_gaps():
+    s = Svg(660, 330, "Diffraction of waves at a gap",
+            "Left: plane waves pass through a wide gap and continue mostly straight with slight spreading at the edges. Right: through a narrow gap about one wavelength wide, the waves spread out in circular arcs.")
+    for i, (gap, title) in enumerate(((150, "wide gap: little spreading"), (34, "narrow gap: strong spreading"))):
+        x0 = 20 + i * 330
+        cx = x0 + 150
+        for k in range(4):
+            y = 60 + k * 28
+            s.line(x0 + 40, y, x0 + 260, y, color=BLUE, width=3)
+        by = 175
+        s.rect(x0 + 20, by - 6, 130 - gap / 2, 12, fill=INK, stroke=INK, width=1)
+        s.rect(cx + gap / 2, by - 6, 280 - (cx + gap / 2 - x0), 12, fill=INK, stroke=INK, width=1)
+        for k in range(1, 5):
+            r = k * 28
+            if gap > 100:
+                s.line(cx - gap / 2 + 6, by + r, cx + gap / 2 - 6, by + r, color=BLUE, width=3)
+                s.arc(cx - gap / 2 + 6, by + r - 0, 0.01, 180, 180, width=0.1)
+                s.path(f"M {cx - gap / 2 + 6} {by + r} Q {cx - gap / 2 - 12} {by + r - 2} {cx - gap / 2 - 18} {by + r - 14}", color=BLUE, width=3)
+                s.path(f"M {cx + gap / 2 - 6} {by + r} Q {cx + gap / 2 + 12} {by + r - 2} {cx + gap / 2 + 18} {by + r - 14}", color=BLUE, width=3)
+            else:
+                s.path(f"M {cx - r * 0.97} {by + r * 0.24} A {r} {r} 0 0 0 {cx + r * 0.97} {by + r * 0.24}", color=BLUE, width=3)
+        s.text(cx, 314, title, size=17, weight="bold")
+    return s
+
+
+@fig
+def stationary_waves_string():
+    s = Svg(660, 400, "Stationary waves on a stretched string",
+            "A string fixed at both ends vibrating in its fundamental mode (one loop, length equals half a wavelength) and its second harmonic (two loops). N marks nodes and A antinodes.")
+    for row, loops in enumerate((1, 2)):
+        y = 130 + row * 160
+        x0, x1 = 90, 570
+        s.rect(x0 - 16, y - 40, 16, 80, fill=F_GREY, stroke=INK, width=2)
+        s.rect(x1, y - 40, 16, 80, fill=F_GREY, stroke=INK, width=2)
+        L = x1 - x0
+        for sign in (1, -1):
+            pts = [(x0 + t, y - sign * 50 * math.sin(math.pi * loops * t / L)) for t in range(0, L + 1, 4)]
+            s.polyline(pts, color=BLUE if sign > 0 else "#93c5fd", width=4 if sign > 0 else 3, dash=None if sign > 0 else "8 6")
+        for k in range(loops + 1):
+            nx = x0 + k * L / loops
+            s.dot(nx, y, 6, color=RED)
+            s.text(nx, y + 26, "N", size=19, weight="bold", color=RED)
+        for k in range(loops):
+            ax = x0 + (k + 0.5) * L / loops
+            s.text(ax, y - 66, "A", size=19, weight="bold", color=GREEN)
+        s.text(30, y - 96, ["Fundamental: L = λ/2", "2nd harmonic: L = λ"][row], size=19, weight="bold", anchor="start")
+    s.text(330, 385, "N = node (no movement)   A = antinode (largest movement)", size=16, color=MUTED)
+    return s
+
+
+@fig
+def pipes_resonance():
+    s = Svg(660, 360, "Resonance in closed and open pipes",
+            "Left: a pipe closed at one end has a node at the closed end and an antinode at the open end; its fundamental wavelength is four times its length. Right: a pipe open at both ends has antinodes at both ends; its fundamental wavelength is twice its length.")
+    def pipe(x0, closed, title, formula):
+        L = 250
+        y0, y1 = 70, 70 + L
+        s.line(x0, y0, x0, y1, width=4)
+        s.line(x0 + 90, y0, x0 + 90, y1, width=4)
+        if closed:
+            s.line(x0 - 4, y1, x0 + 94, y1, width=6)
+        cx = x0 + 45
+        if closed:
+            pts_l = [(cx - 38 * math.cos(math.pi / 2 * t / L), y0 + t) for t in range(0, L + 1, 5)]
+            pts_r = [(cx + 38 * math.cos(math.pi / 2 * t / L), y0 + t) for t in range(0, L + 1, 5)]
+            s.text(cx + 70, y1, "N", size=20, weight="bold", color=RED)
+            s.text(cx + 70, y0, "A", size=20, weight="bold", color=GREEN)
+        else:
+            pts_l = [(cx - 38 * abs(math.cos(math.pi * t / L)), y0 + t) for t in range(0, L + 1, 5)]
+            pts_r = [(cx + 38 * abs(math.cos(math.pi * t / L)), y0 + t) for t in range(0, L + 1, 5)]
+            s.text(cx + 70, y0, "A", size=20, weight="bold", color=GREEN)
+            s.text(cx + 70, y0 + L / 2, "N", size=20, weight="bold", color=RED)
+            s.text(cx + 70, y1, "A", size=20, weight="bold", color=GREEN)
+        s.polyline(pts_l, color=BLUE, width=3)
+        s.polyline(pts_r, color=BLUE, width=3)
+        s.text(cx, 40, title, size=19, weight="bold")
+        s.text(cx, 348, formula, size=19, weight="bold", color=RED)
+    pipe(120, True, "closed pipe", "L = λ/4")
+    pipe(420, False, "open pipe", "L = λ/2")
+    return s
+
+
+# ═══ Light ═══════════════════════════════════════════════════════════════════
+
+@fig
+def pinhole_camera():
+    s = Svg(660, 320, "The pinhole camera",
+            "Light from the top of an object passes through a small pinhole and reaches the bottom of the screen; light from the bottom reaches the top. The image is real and inverted.")
+    s.rect(330, 70, 260, 180, fill=F_GREY, stroke=INK, width=3)
+    s.rect(326, 150, 8, 20, fill=BG, stroke=BG, width=0)
+    s.line(588, 70, 588, 250, color=MUTED, width=6)
+    s.text(600, 280, "screen", size=17, color=MUTED)
+    ox, oy_top, oy_bot = 110, 90, 230
+    s.arrow(ox, oy_bot, ox, oy_top, color=GREEN, width=6)
+    s.text(ox, 270, "object", size=18, weight="bold")
+    px, py = 330, 160
+    for (y_from, col) in ((oy_top, RED), (oy_bot, BLUE)):
+        t = (588 - ox) / (px - ox)
+        y_to = y_from + (py - y_from) * t
+        s.mid_arrow(ox, y_from, 588, y_to, color=col, width=3, at=0.3)
+    yi_top = oy_bot + (py - oy_bot) * (588 - ox) / (px - ox)
+    yi_bot = oy_top + (py - oy_top) * (588 - ox) / (px - ox)
+    s.arrow(578, yi_top, 578, yi_bot, color=GREEN, width=5)
+    s.text(460, 290, "image: real, inverted", size=18, weight="bold", color=GREEN)
+    s.text(330, 50, "pinhole", size=17, color=MUTED)
+    return s
+
+
+@fig
+def shadows_eclipse():
+    s = Svg(660, 330, "Umbra and penumbra",
+            "An extended light source shines on an opaque ball. Behind the ball is a region of total shadow, the umbra, surrounded by a region of partial shadow, the penumbra.")
+    sx, st, sb = 70, 120, 210
+    s.rect(sx - 14, st, 28, sb - st, fill="#fde68a", stroke=ORANGE, width=3, rx=10)
+    s.text(sx, 236, "extended source", size=16, color=ORANGE)
+    bx, by, br = 300, 165, 34
+    sc = 540
+    def hit(y0, y1):
+        return y0 + (y1 - y0) * (sc - sx) / (bx - sx)
+    u_top = hit(st, by - br)
+    u_bot = hit(sb, by + br)
+    p_top = hit(sb, by - br)
+    p_bot = hit(st, by + br)
+    s.polygon([(bx, by - br), (sc, p_top), (sc, p_bot), (bx, by + br)], fill="#cbd5e1", stroke="none", width=0)
+    s.polygon([(bx, by - br), (sc, u_top), (sc, u_bot), (bx, by + br)], fill="#475569", stroke="none", width=0)
+    for (y0, y1) in ((st, by - br), (sb, by + br), (sb, by - br), (st, by + br)):
+        s.line(sx, y0, sc, hit(y0, y1), color=ORANGE, width=1.5, dash="6 5")
+    s.circle(bx, by, br, fill=INK, stroke=INK, width=2)
+    s.line(sc, 40, sc, 290, color=MUTED, width=5)
+    s.text(sc + 10, (u_top + u_bot) / 2, "umbra", size=18, weight="bold", anchor="start")
+    s.text(sc + 10, p_top - 6, "penumbra", size=16, color=MUTED, anchor="start")
+    s.text(sc + 10, p_bot + 14, "penumbra", size=16, color=MUTED, anchor="start")
+    s.text(bx, by + br + 26, "opaque object", size=16, color=MUTED)
+    return s
+
+
+@fig
+def plane_mirror_image():
+    s = Svg(660, 360, "Image in a plane mirror",
+            "Rays from a point object O reflect from a plane mirror into the eye. Traced back, they appear to come from the image I, as far behind the mirror as O is in front.")
+    mx = 330
+    s.line(mx, 40, mx, 320, color=INK, width=5)
+    for y in range(48, 320, 16):
+        s.line(mx + 2, y, mx + 14, y - 10, color=MUTED, width=1.5)
+    O = (170, 180)
+    I = (490, 180)
+    s.dot(*O, 7, color=RED)
+    s.text(O[0] - 18, O[1], "O", size=22, weight="bold", anchor="end")
+    s.dot(*I, 6, color=MUTED)
+    s.text(I[0] + 18, I[1], "I", size=22, weight="bold", anchor="start", color=MUTED)
+    s.ellipse(150, 40, 22, 12, fill="#ffffff", stroke=INK, width=2.5)
+    s.circle(150, 40, 6, fill=INK, stroke=INK, width=1)
+    s.text(110, 40, "eye", size=16, color=MUTED, anchor="end")
+    for yy in (110, 140):
+        s.mid_arrow(O[0], O[1], mx, yy, color=RED, width=3, at=0.6)
+        # reflected ray continues towards the eye area along the reflection
+        t = 1.0                              # angle of reflection = angle of incidence: mirror the x-direction only
+        rx = mx - (mx - O[0]) * t
+        ry = yy + (yy - O[1]) * t
+        s.mid_arrow(mx, yy, rx, ry, color=RED, width=3, at=0.55)
+        s.line(mx, yy, I[0], I[1], color=MUTED, width=2, dash="7 6")
+    s.line(O[0], O[1], I[0], I[1], color=GRID, width=1.5, dash="4 6")
+    s.text(250, 205, "d", size=20, italic=True, weight="bold")
+    s.text(410, 205, "d", size=20, italic=True, weight="bold")
+    s.text(500, 300, "virtual, upright, same size", size=17, color=MUTED)
+    s.text(500, 324, "laterally inverted", size=17, color=MUTED)
+    return s
+
+
+def _mirror_concave(s, mx, y0, h):
+    s.path(f"M {mx - 16} {y0 - h} Q {mx + 14} {y0} {mx - 16} {y0 + h}", color=INK, width=5)
+
+
+@fig
+def concave_mirror_ray():
+    s = Svg(680, 360, "Ray diagram for a concave mirror",
+            "A concave mirror forms a real, inverted, diminished image between F and C when the object is beyond C. Rays: one parallel to the axis reflects through F; one through F reflects parallel; one through C reflects back on itself.")
+    mx, ay = 600, 190
+    f = 110
+    u = 320
+    v = u * f / (u - f)
+    h = 80
+    hi = -h * v / u
+    s.line(30, ay, 640, ay, color=MUTED, width=2)
+    _mirror_concave(s, mx, ay, 150)
+    F, C = mx - f, mx - 2 * f
+    for x, lab in ((F, "F"), (C, "C")):
+        s.dot(x, ay, 5)
+        s.text(x, ay + 24, lab, size=20, weight="bold")
+    ox = mx - u
+    s.arrow(ox, ay, ox, ay - h, color=GREEN, width=5)
+    s.text(ox, ay + 24, "object", size=16, color=GREEN)
+    ix = mx - v
+    top = (ox, ay - h)
+    img = (ix, ay - hi)
+    s.mid_arrow(top[0], top[1], mx, top[1], color=RED, width=3, at=0.5)
+    s.line(mx, top[1], img[0] + (img[0] - mx) * 0.25, img[1] + (img[1] - top[1]) * 0.25, color=RED, width=3)
+    yF = ay - h + (F - ox) * 0  # through F
+    slope = (ay - top[1]) / (F - top[0])
+    y_at_m = top[1] + slope * (mx - top[0])
+    s.mid_arrow(top[0], top[1], mx, y_at_m, color=BLUE, width=3, at=0.4)
+    s.line(mx, y_at_m, img[0] - 40, y_at_m, color=BLUE, width=3)
+    s.arrow(ix, ay, ix, img[1], color=ORANGE, width=5)
+    s.text(ix, img[1] + 26, "image", size=16, color=ORANGE, weight="bold")
+    s.text(330, 340, "object beyond C → image between F and C: real, inverted, smaller", size=16, color=MUTED)
+    return s
+
+
+@fig
+def refraction_glass_block():
+    s = Svg(640, 400, "Refraction through a rectangular glass block",
+            "A ray enters a glass block at an angle of incidence i, bends towards the normal (angle of refraction r), and leaves parallel to its original direction but displaced sideways.")
+    bx0, bx1, by0, by1 = 140, 500, 140, 300
+    s.rect(bx0, by0, bx1 - bx0, by1 - by0, fill=GLASS, stroke=INK, width=3)
+    n = 1.5
+    i = math.radians(50)
+    r = math.asin(math.sin(i) / n)
+    P = (260, by0)
+    A = (P[0] - 130 * math.tan(i), by0 - 130)
+    Q = (P[0] + (by1 - by0) * math.tan(r), by1)
+    E = (Q[0] + 100 * math.tan(i), by1 + 100)
+    s.line(P[0], 40, P[0], by0 + 60, color=MUTED, width=2, dash="6 6")
+    s.line(Q[0], by1 - 60, Q[0], 380, color=MUTED, width=2, dash="6 6")
+    s.mid_arrow(*A, *P, color=RED, width=4, at=0.6)
+    s.mid_arrow(*P, *Q, color=RED, width=4, at=0.55)
+    s.mid_arrow(*Q, *E, color=RED, width=4, at=0.6)
+    s.line(*P, P[0] + (Q[0] - P[0]) * 1.6 + 60, by0 + (by1 - by0) * 1.6 + 60 * (by1 - by0) / (Q[0] - P[0]) * 0, color=GRID, width=0.01)
+    s.line(P[0], P[1], P[0] + 230 * math.tan(i), by0 + 230, color=GRID, width=2, dash="4 5")
+    s.arc(P[0], P[1], 46, 90, 90 + math.degrees(i), width=2.2)
+    s.text(P[0] - 34, P[1] - 56, "i", size=24, italic=True, weight="bold")
+    s.arc(P[0], P[1], 56, -90, -90 + math.degrees(r), width=2.2)
+    s.text(P[0] + 20, P[1] + 70, "r", size=24, italic=True, weight="bold")
+    s.text(560, 220, "glass", size=19, color=MUTED)
+    s.text(100, 380, "emergent ray is parallel to the incident ray", size=16, color=MUTED, anchor="start")
+    return s
+
+
+@fig
+def total_internal_reflection():
+    s = Svg(660, 360, "Critical angle and total internal reflection",
+            "Three rays inside glass meet the glass-air surface. Below the critical angle the ray refracts out; at the critical angle it travels along the surface; beyond it the ray is totally internally reflected.")
+    yb = 150
+    s.rect(20, yb, 620, 190, fill=GLASS, stroke="none", width=0)
+    s.line(20, yb, 640, yb, color=INK, width=3)
+    s.text(40, yb - 20, "air", size=18, color=MUTED, anchor="start")
+    s.text(40, yb + 24, "glass", size=18, color=MUTED, anchor="start")
+    n = 1.5
+    c = math.asin(1 / n)
+    cases = [(130, math.radians(25), "i < c: refracted", BLUE), (330, c, "i = c", ORANGE), (520, math.radians(60), "i > c: totally reflected", RED)]
+    for x, ang, lab, col in cases:
+        s.line(x, yb - 90, x, yb + 150, color=MUTED, width=1.5, dash="5 6")
+        L = 150
+        start = (x - L * math.sin(ang), yb + L * math.cos(ang))
+        s.mid_arrow(*start, x, yb, color=col, width=3.5, at=0.55)
+        if ang < c - 1e-6:
+            rr = math.asin(n * math.sin(ang))
+            s.mid_arrow(x, yb, x + 110 * math.sin(rr), yb - 110 * math.cos(rr), color=col, width=3.5, at=0.6)
+        elif abs(ang - c) < 1e-6:
+            s.mid_arrow(x, yb, x + 120, yb - 2, color=col, width=3.5, at=0.6)
+            s.text(x + 60, yb - 16, "90°", size=16, color=col, weight="bold")
+        else:
+            s.mid_arrow(x, yb, x + L * math.sin(ang), yb + L * math.cos(ang), color=col, width=3.5, at=0.6)
+        s.text(x, yb + 182 if x != 520 else yb + 182, lab, size=16, weight="bold", color=col)
+    s.text(330, 40, "for glass (n = 1.5) the critical angle c ≈ 42°", size=18, weight="bold")
+    return s
+
+
+def _lens(s, x, ay, h, convex=True):
+    if convex:
+        s.path(f"M {x} {ay - h} Q {x + 26} {ay} {x} {ay + h} Q {x - 26} {ay} {x} {ay - h} Z", color=INK, width=2.5, fill=GLASS)
+    else:
+        s.path(f"M {x - 14} {ay - h} L {x + 14} {ay - h} Q {x + 2} {ay} {x + 14} {ay + h} L {x - 14} {ay + h} Q {x - 2} {ay} {x - 14} {ay - h} Z", color=INK, width=2.5, fill=GLASS)
+
+
+@fig
+def convex_lens_ray():
+    s = Svg(680, 360, "Ray diagram for a converging (convex) lens",
+            "Object beyond 2F: a ray parallel to the axis passes through F on the far side, and a ray through the optical centre goes straight on. They meet to form a real, inverted, diminished image between F and 2F.")
+    lx, ay = 330, 180
+    f = 95
+    u = 240
+    v = u * f / (u - f)
+    h = 80
+    hi = h * v / u
+    s.line(20, ay, 660, ay, color=MUTED, width=2)
+    _lens(s, lx, ay, 140)
+    for d, lab in ((-2 * f, "2F"), (-f, "F"), (f, "F"), (2 * f, "2F")):
+        s.dot(lx + d, ay, 5)
+        s.text(lx + d, ay + 24, lab, size=18, weight="bold")
+    ox, ix = lx - u, lx + v
+    top, img = (ox, ay - h), (ix, ay + hi)
+    s.arrow(ox, ay, ox, ay - h, color=GREEN, width=5)
+    s.text(ox, ay - h - 16, "object", size=16, color=GREEN, weight="bold")
+    s.mid_arrow(*top, lx, top[1], color=RED, width=3, at=0.5)
+    end = (img[0] + (img[0] - lx) * 0.3, img[1] + (img[1] - top[1]) * 0.3)
+    s.mid_arrow(lx, top[1], *end, color=RED, width=3, at=0.5)
+    end2 = (img[0] + (img[0] - top[0]) * 0.15, img[1] + (img[1] - top[1]) * 0.15)
+    s.mid_arrow(*top, *end2, color=BLUE, width=3, at=0.3)
+    s.arrow(ix, ay, ix, img[1], color=ORANGE, width=5)
+    s.text(ix + 12, img[1] + 20, "image", size=16, color=ORANGE, weight="bold", anchor="start")
+    s.text(340, 345, "real, inverted, diminished, between F and 2F", size=16, color=MUTED)
+    return s
+
+
+@fig
+def magnifying_glass():
+    s = Svg(680, 360, "A convex lens used as a magnifying glass",
+            "Object between the lens and F: the rays leaving the lens diverge. Traced back, they meet behind the object to form a virtual, upright, magnified image on the same side as the object.")
+    lx, ay = 440, 220
+    f = 130
+    u = 80
+    v = u * f / (u - f)  # negative: virtual
+    h = 50
+    hi = h * (-v) / u
+    s.line(20, ay, 660, ay, color=MUTED, width=2)
+    _lens(s, lx, ay, 150)
+    for d, lab in ((-f, "F"), (f, "F")):
+        s.dot(lx + d, ay, 5)
+        s.text(lx + d, ay + 24, lab, size=18, weight="bold")
+    ox = lx - u
+    ix = lx + v
+    top = (ox, ay - h)
+    img = (ix, ay - hi)
+    s.arrow(ox, ay, ox, ay - h, color=GREEN, width=5)
+    s.mid_arrow(*top, lx, top[1], color=RED, width=3, at=0.5)
+    slope = (ay - top[1]) / (f)
+    s.mid_arrow(lx, top[1], 650, top[1] + slope * (650 - lx), color=RED, width=3, at=0.5)
+    s.line(lx, top[1], img[0], img[1], color=RED, width=2, dash="7 6")
+    s.mid_arrow(*img, 650, img[1] + (top[1] - img[1]) / (ox - img[0]) * (650 - img[0]), color=BLUE, width=0.01, at=0.9)
+    s.line(img[0], img[1], *top, color=BLUE, width=2, dash="7 6")
+    s.mid_arrow(*top, 650, top[1] + (top[1] - img[1]) / (top[0] - img[0]) * (650 - top[0]), color=BLUE, width=3, at=0.4)
+    s.arrow(ix, ay, ix, img[1], color=ORANGE, width=5, dash="9 6")
+    s.text(ix, img[1] - 16, "virtual image", size=16, color=ORANGE, weight="bold")
+    s.text(ox, ay + 44, "object", size=16, color=GREEN, weight="bold")
+    s.text(560, 345, "upright, magnified, virtual", size=16, color=MUTED)
+    return s
+
+
+@fig
+def concave_lens_ray():
+    s = Svg(680, 340, "Ray diagram for a diverging (concave) lens",
+            "A ray parallel to the axis leaves the lens as if it came from the focal point F on the object side; a ray through the centre goes straight on. The image is virtual, upright and diminished, between F and the lens.")
+    lx, ay = 400, 190
+    f = 140
+    u = 220
+    v = u * f / (u + f)  # magnitude of virtual image distance
+    h = 90
+    hi = h * v / u
+    s.line(20, ay, 660, ay, color=MUTED, width=2)
+    _lens(s, lx, ay, 130, convex=False)
+    for d, lab in ((-f, "F"), (f, "F")):
+        s.dot(lx + d, ay, 5)
+        s.text(lx + d, ay + 24, lab, size=18, weight="bold")
+    ox, ix = lx - u, lx - v
+    top, img = (ox, ay - h), (ix, ay - hi)
+    s.arrow(ox, ay, ox, ay - h, color=GREEN, width=5)
+    s.text(ox, ay - h - 16, "object", size=16, color=GREEN, weight="bold")
+    s.mid_arrow(*top, lx, top[1], color=RED, width=3, at=0.5)
+    Fx = lx - f
+    k = (top[1] - ay) / (lx - Fx)
+    s.mid_arrow(lx, top[1], 650, top[1] + k * (650 - lx), color=RED, width=3, at=0.5)
+    s.line(Fx, ay, lx, top[1], color=RED, width=2, dash="7 6")
+    k2 = (ay - top[1]) / (lx - top[0])
+    s.mid_arrow(*top, 650, top[1] + k2 * (650 - top[0]), color=BLUE, width=3, at=0.3)
+    s.arrow(ix, ay, ix, img[1], color=ORANGE, width=5, dash="9 6")
+    s.text(ix - 6, img[1] - 14, "image", size=16, color=ORANGE, weight="bold")
+    s.text(340, 325, "virtual, upright, diminished", size=16, color=MUTED)
+    return s
+
+
+@fig
+def eye_defects():
+    s = Svg(680, 420, "Short sight and long sight and their correction",
+            "Short sight: rays from a distant object focus in front of the retina; a diverging lens corrects it. Long sight: rays from a near object focus behind the retina; a converging lens corrects it.")
+    def eye(cx, cy):
+        s.circle(cx, cy, 62, fill="#ffffff", stroke=INK, width=3)
+        s.ellipse(cx - 46, cy, 10, 30, fill=GLASS, stroke=INK, width=2)
+        s.path(f"M {cx + 50} {cy - 36} A 62 62 0 0 1 {cx + 50} {cy + 36}", color=RED, width=5)
+    rows = [("Short sight (myopia)", -26, "diverging lens corrects it", False),
+            ("Long sight (hypermetropia)", 30, "converging lens corrects it", True)]
+    for r, (title, shift, fix, conv) in enumerate(rows):
+        y = 110 + r * 190
+        s.text(20, y - 82, title, size=19, weight="bold", anchor="start")
+        cx = 200
+        eye(cx, y)
+        fx = cx + 58 + shift
+        for dy in (-22, 22):
+            s.line(40, y + dy, cx - 46, y + dy, color=BLUE, width=2.5)
+            s.line(cx - 46, y + dy, fx, y, color=BLUE, width=2.5)
+            if shift < 0:
+                s.line(fx, y, cx + 58, y - dy * 0.5, color=BLUE, width=2, dash="5 5")
+        s.dot(fx, y, 5, color=ORANGE)
+        s.text(cx, y + 86, "focus in front of retina" if shift < 0 else "focus behind retina", size=15, color=ORANGE)
+        cx2 = 520
+        eye(cx2, y)
+        lx = cx2 - 110
+        _lens(s, lx, y, 46, convex=conv)
+        for dy in (-22, 22):
+            s.line(330, y + dy, lx, y + dy, color=BLUE, width=2.5)
+            mid = (cx2 - 46, y + dy * (1.3 if not conv else 0.6))
+            s.line(lx, y + dy, *mid, color=BLUE, width=2.5)
+            s.line(*mid, cx2 + 58, y, color=BLUE, width=2.5)
+        s.dot(cx2 + 58, y, 5, color=GREEN)
+        s.text(cx2, y + 86, fix, size=15, color=GREEN, weight="bold")
+    return s
+
+
+@fig
+def prism_dispersion():
+    s = Svg(660, 360, "Dispersion of white light by a prism",
+            "A narrow beam of white light enters a glass prism and is split into a spectrum: red is deviated least and violet most.")
+    A, B, C = (300, 60), (170, 300), (430, 300)
+    s.polygon([A, B, C], fill=GLASS, stroke=INK, width=3)
+    entry = (232, 186)
+    s.mid_arrow(40, 230, *entry, color=INK, width=5, at=0.6)
+    s.text(50, 200, "white light", size=18, weight="bold", anchor="start")
+    exit_ = (372, 200)
+    s.line(*entry, *exit_, color="#94a3b8", width=6)
+    colors = ["#dc2626", "#ea580c", "#eab308", "#16a34a", "#2563eb", "#4f46e5", "#7c3aed"]
+    names = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+    for k, (c, nm) in enumerate(zip(colors, names)):
+        ang = math.radians(-8 - k * 4.2)
+        end = (exit_[0] + 230 * math.cos(-ang) , exit_[1] + 230 * math.sin(-ang))
+        s.line(exit_[0], exit_[1] + k * 1.2, end[0], end[1], color=c, width=4)
+        s.text(end[0] + 8, end[1], nm, size=15, color=c, weight="bold", anchor="start")
+    s.text(330, 340, "red is deviated least, violet most", size=17, color=MUTED)
+    return s
+
+
+@fig
+def em_spectrum():
+    s = Svg(680, 300, "The electromagnetic spectrum",
+            "The electromagnetic spectrum in order of decreasing wavelength and increasing frequency: radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, gamma rays.")
+    names = ["radio", "micro-\nwaves", "infra-\nred", "visible", "ultra-\nviolet", "X-rays", "gamma\nrays"]
+    fills = ["#dbeafe", "#e0e7ff", "#fee2e2", "url(#vis)", "#ede9fe", "#f3e8ff", "#fae8ff"]
+    s.raw('<defs><linearGradient id="vis" x1="0" x2="1"><stop offset="0" stop-color="#ef4444"/><stop offset="0.2" stop-color="#f97316"/><stop offset="0.4" stop-color="#eab308"/><stop offset="0.6" stop-color="#22c55e"/><stop offset="0.8" stop-color="#3b82f6"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>')
+    x = 30
+    w = 88
+    for nm, fl in zip(names, fills):
+        s.rect(x, 90, w, 80, fill=fl, stroke=INK, width=2)
+        lines = nm.split("\n")
+        for k, ln in enumerate(lines):
+            s.text(x + w / 2, 130 + (k - (len(lines) - 1) / 2) * 20, ln, size=16, weight="bold")
+        x += w + 2
+    s.arrow(40, 210, 640, 210, color=RED, width=3)
+    s.text(340, 234, "frequency and energy increase →", size=17, color=RED, weight="bold")
+    s.arrow(640, 260, 40, 260, color=BLUE, width=3)
+    s.text(340, 284, "← wavelength increases", size=17, color=BLUE, weight="bold")
+    s.text(340, 50, "all travel at 3 × 10⁸ m s⁻¹ in a vacuum", size=18, weight="bold")
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:

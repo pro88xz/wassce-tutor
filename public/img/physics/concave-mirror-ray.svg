@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Ray diagram for a concave mirror</title>
+<desc id="d">A concave mirror forms a real, inverted, diminished image between F and C when the object is beyond C. Rays: one parallel to the axis reflects through F; one through F reflects parallel; one through C reflects back on itself.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="680" height="360" rx="20" fill="#f8fafc"/>
+<line x1="30.0" y1="190.0" x2="640.0" y2="190.0" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+<path d="M 584 40 Q 614 190 584 340" stroke="#0f172a" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="490.0" cy="190.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="490.0" y="214.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">F</text>
+<circle cx="380.0" cy="190.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="380.0" y="214.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C</text>
+<line x1="280.0" y1="190.0" x2="280.0" y2="110.0" stroke="#15803d" stroke-width="5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<text x="280.0" y="214.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">object</text>
+<line x1="280.0" y1="110.0" x2="600.0" y2="110.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<polygon points="445.9,110.0 428.5,116.1 428.5,103.9" fill="#dc2626"/>
+<line x1="600.0" y1="110.0" x2="390.5" y2="262.4" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<line x1="280.0" y1="110.0" x2="600.0" y2="231.9" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<polygon points="413.5,160.8 395.1,160.4 399.4,149.0" fill="#2563eb"/>
+<line x1="600.0" y1="231.9" x2="392.4" y2="231.9" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="432.4" y1="190.0" x2="432.4" y2="231.9" stroke="#ea580c" stroke-width="5" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<text x="432.4" y="257.9" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">image</text>
+<text x="330.0" y="340.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">object beyond C → image between F and C: real, inverted, smaller</text>
+</svg>

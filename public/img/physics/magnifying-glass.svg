@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A convex lens used as a magnifying glass</title>
+<desc id="d">Object between the lens and F: the rays leaving the lens diverge. Traced back, they meet behind the object to form a virtual, upright, magnified image on the same side as the object.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="680" height="360" rx="20" fill="#f8fafc"/>
+<line x1="20.0" y1="220.0" x2="660.0" y2="220.0" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+<path d="M 440 70 Q 466 220 440 370 Q 414 220 440 70 Z" stroke="#0f172a" stroke-width="2.5" fill="#e0f2fe" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="310.0" cy="220.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="310.0" y="244.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">F</text>
+<circle cx="570.0" cy="220.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="570.0" y="244.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">F</text>
+<line x1="360.0" y1="220.0" x2="360.0" y2="170.0" stroke="#15803d" stroke-width="5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<line x1="360.0" y1="170.0" x2="440.0" y2="170.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<polygon points="405.9,170.0 388.5,176.1 388.5,163.9" fill="#dc2626"/>
+<line x1="440.0" y1="170.0" x2="650.0" y2="250.8" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<polygon points="550.5,212.5 532.1,212.0 536.5,200.6" fill="#dc2626"/>
+<line x1="440.0" y1="170.0" x2="232.0" y2="90.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 6"/>
+<line x1="232.0" y1="90.0" x2="650.0" y2="351.2" stroke="#2563eb" stroke-width="0.01" stroke-linecap="round"/>
+<polygon points="613.2,328.2 595.2,324.2 601.7,313.9" fill="#2563eb"/>
+<line x1="232.0" y1="90.0" x2="360.0" y2="170.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 6"/>
+<line x1="360.0" y1="170.0" x2="650.0" y2="351.2" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<polygon points="481.0,245.6 463.0,241.6 469.5,231.2" fill="#2563eb"/>
+<line x1="232.0" y1="220.0" x2="232.0" y2="90.0" stroke="#ea580c" stroke-width="5" stroke-linecap="round" stroke-dasharray="9 6" marker-end="url(#aea580c)"/>
+<text x="232.0" y="74.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">virtual image</text>
+<text x="360.0" y="264.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">object</text>
+<text x="560.0" y="345.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">upright, magnified, virtual</text>
+</svg>

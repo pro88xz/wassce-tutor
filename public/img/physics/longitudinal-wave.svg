@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 260" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A longitudinal wave</title>
+<desc id="d">A longitudinal wave in a spring or in air: regions where the particles are crowded together are compressions and regions where they are spread out are rarefactions. The wavelength is the distance between two compressions.</desc>
+<defs><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="660" height="260" rx="20" fill="#f8fafc"/>
+<line x1="40.0" y1="70.0" x2="40.0" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="46.0" y1="70.0" x2="46.0" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="52.1" y1="70.0" x2="52.1" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="58.6" y1="70.0" x2="58.6" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="65.8" y1="70.0" x2="65.8" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="74.0" y1="70.0" x2="74.0" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="83.6" y1="70.0" x2="83.6" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="95.2" y1="70.0" x2="95.2" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="109.3" y1="70.0" x2="109.3" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="126.3" y1="70.0" x2="126.3" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="145.7" y1="70.0" x2="145.7" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="165.6" y1="70.0" x2="165.6" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="183.4" y1="70.0" x2="183.4" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="197.9" y1="70.0" x2="197.9" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="209.1" y1="70.0" x2="209.1" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="218.2" y1="70.0" x2="218.2" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="225.8" y1="70.0" x2="225.8" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="232.5" y1="70.0" x2="232.5" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="238.7" y1="70.0" x2="238.7" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="244.7" y1="70.0" x2="244.7" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="250.7" y1="70.0" x2="250.7" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="257.1" y1="70.0" x2="257.1" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="264.1" y1="70.0" x2="264.1" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="272.0" y1="70.0" x2="272.0" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="281.3" y1="70.0" x2="281.3" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="292.4" y1="70.0" x2="292.4" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="305.9" y1="70.0" x2="305.9" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="322.3" y1="70.0" x2="322.3" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="341.2" y1="70.0" x2="341.2" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="361.2" y1="70.0" x2="361.2" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="379.7" y1="70.0" x2="379.7" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="394.9" y1="70.0" x2="394.9" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="406.9" y1="70.0" x2="406.9" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="416.3" y1="70.0" x2="416.3" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="424.2" y1="70.0" x2="424.2" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="431.0" y1="70.0" x2="431.0" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="437.3" y1="70.0" x2="437.3" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="443.3" y1="70.0" x2="443.3" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="449.4" y1="70.0" x2="449.4" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="455.7" y1="70.0" x2="455.7" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="462.5" y1="70.0" x2="462.5" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="470.2" y1="70.0" x2="470.2" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="479.1" y1="70.0" x2="479.1" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="489.7" y1="70.0" x2="489.7" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="502.7" y1="70.0" x2="502.7" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="518.4" y1="70.0" x2="518.4" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="536.8" y1="70.0" x2="536.8" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="556.8" y1="70.0" x2="556.8" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="575.8" y1="70.0" x2="575.8" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="591.8" y1="70.0" x2="591.8" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="604.4" y1="70.0" x2="604.4" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="614.4" y1="70.0" x2="614.4" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="622.5" y1="70.0" x2="622.5" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="629.6" y1="70.0" x2="629.6" y2="170.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<text x="44.0" y="196.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C</text>
+<text x="244.0" y="196.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C</text>
+<text x="444.0" y="196.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C</text>
+<text x="140.0" y="196.0" font-size="20" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">R</text>
+<text x="340.0" y="196.0" font-size="20" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">R</text>
+<text x="540.0" y="196.0" font-size="20" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">R</text>
+<text x="40.0" y="226.0" font-size="17" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">C = compression (crowded)   R = rarefaction (spread out)</text>
+<line x1="40.0" y1="50.0" x2="40.0" y2="36.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+<line x1="240.0" y1="50.0" x2="240.0" y2="36.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+<line x1="140.0" y1="43.0" x2="42.0" y2="43.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<line x1="140.0" y1="43.0" x2="238.0" y2="43.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<rect x="128.8" y="27.0" width="22.3" height="32.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="140.0" y="43.0" font-size="22" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold" font-style="italic">λ</text>
+<line x1="520.0" y1="30.0" x2="620.0" y2="30.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<line x1="620.0" y1="30.0" x2="520.0" y2="30.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<text x="570.0" y="54.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">particles move to and fro</text>
+</svg>

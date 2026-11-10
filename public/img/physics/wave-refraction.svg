@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Refraction of water waves</title>
+<desc id="d">Straight water waves pass from deep water into shallow water across a boundary at an angle. In shallow water they move more slowly, their wavelength is shorter and their direction bends towards the normal.</desc>
+<defs><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="660" height="380" rx="20" fill="#f8fafc"/>
+<defs><clipPath id="cdeep"><rect x="30" y="30" width="300" height="320"/></clipPath><clipPath id="cshal"><rect x="330" y="30" width="300" height="320"/></clipPath></defs>
+<rect x="30.0" y="30.0" width="300.0" height="320.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0"/>
+<rect x="330.0" y="30.0" width="300.0" height="320.0" rx="0" fill="#e0f2fe" stroke="none" stroke-width="0"/>
+<g clip-path="url(#cdeep)">
+<line x1="-94.3" y1="-664.5" x2="330.0" y2="-240.2" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g><g clip-path="url(#cshal)">
+<line x1="330.0" y1="-240.2" x2="584.6" y2="303.1" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#cdeep)">
+<line x1="-94.3" y1="-599.4" x2="330.0" y2="-175.2" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g><g clip-path="url(#cshal)">
+<line x1="330.0" y1="-175.2" x2="584.6" y2="368.2" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#cdeep)">
+<line x1="-94.3" y1="-534.4" x2="330.0" y2="-110.1" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g><g clip-path="url(#cshal)">
+<line x1="330.0" y1="-110.1" x2="584.6" y2="433.2" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#cdeep)">
+<line x1="-94.3" y1="-469.3" x2="330.0" y2="-45.1" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g><g clip-path="url(#cshal)">
+<line x1="330.0" y1="-45.1" x2="584.6" y2="498.3" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#cdeep)">
+<line x1="-94.3" y1="-404.3" x2="330.0" y2="20.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g><g clip-path="url(#cshal)">
+<line x1="330.0" y1="20.0" x2="584.6" y2="563.3" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#cdeep)">
+<line x1="-94.3" y1="-339.2" x2="330.0" y2="85.1" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g><g clip-path="url(#cshal)">
+<line x1="330.0" y1="85.1" x2="584.6" y2="628.4" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#cdeep)">
+<line x1="-94.3" y1="-274.2" x2="330.0" y2="150.1" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g><g clip-path="url(#cshal)">
+<line x1="330.0" y1="150.1" x2="584.6" y2="693.4" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#cdeep)">
+<line x1="-94.3" y1="-209.1" x2="330.0" y2="215.2" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g><g clip-path="url(#cshal)">
+<line x1="330.0" y1="215.2" x2="584.6" y2="758.5" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#cdeep)">
+<line x1="-94.3" y1="-144.0" x2="330.0" y2="280.2" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g><g clip-path="url(#cshal)">
+<line x1="330.0" y1="280.2" x2="584.6" y2="823.5" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#cdeep)">
+<line x1="-94.3" y1="-79.0" x2="330.0" y2="345.3" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g><g clip-path="url(#cshal)">
+<line x1="330.0" y1="345.3" x2="584.6" y2="888.6" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#cdeep)">
+<line x1="-94.3" y1="-13.9" x2="330.0" y2="410.3" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g><g clip-path="url(#cshal)">
+<line x1="330.0" y1="410.3" x2="584.6" y2="953.6" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#cdeep)">
+<line x1="-94.3" y1="51.1" x2="330.0" y2="475.4" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g><g clip-path="url(#cshal)">
+<line x1="330.0" y1="475.4" x2="584.6" y2="1018.7" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#cdeep)">
+<line x1="-94.3" y1="116.2" x2="330.0" y2="540.4" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g><g clip-path="url(#cshal)">
+<line x1="330.0" y1="540.4" x2="584.6" y2="1083.8" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#cdeep)">
+<line x1="-94.3" y1="181.2" x2="330.0" y2="605.5" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g><g clip-path="url(#cshal)">
+<line x1="330.0" y1="605.5" x2="584.6" y2="1148.8" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#cdeep)">
+<line x1="-94.3" y1="246.3" x2="330.0" y2="670.5" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g><g clip-path="url(#cshal)">
+<line x1="330.0" y1="670.5" x2="584.6" y2="1213.9" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#cdeep)">
+<line x1="-94.3" y1="311.3" x2="330.0" y2="735.6" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g><g clip-path="url(#cshal)">
+<line x1="330.0" y1="735.6" x2="584.6" y2="1278.9" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+</g>
+<line x1="330.0" y1="30.0" x2="330.0" y2="350.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="60.0" y1="200.0" x2="600.0" y2="200.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+<text x="600.0" y="188.0" font-size="15" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">normal</text>
+<line x1="120.0" y1="280.0" x2="204.9" y2="195.1" stroke="#dc2626" stroke-width="3.5" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<line x1="430.0" y1="260.0" x2="556.8" y2="200.6" stroke="#dc2626" stroke-width="3.5" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<rect x="124.6" y="36.0" width="110.8" height="28.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="180.0" y="50.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">deep water</text>
+<rect x="409.5" y="36.0" width="141.0" height="28.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="480.0" y="50.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">shallow water</text>
+<rect x="286.0" y="317.5" width="388.0" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="480.0" y="330.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">slower · shorter λ · bends towards the normal</text>
+</svg>

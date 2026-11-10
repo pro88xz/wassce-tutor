@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Refraction through a rectangular glass block</title>
+<desc id="d">A ray enters a glass block at an angle of incidence i, bends towards the normal (angle of refraction r), and leaves parallel to its original direction but displaced sideways.</desc>
+<defs></defs>
+<rect width="640" height="400" rx="20" fill="#f8fafc"/>
+<rect x="140.0" y="140.0" width="360.0" height="160.0" rx="0" fill="#e0f2fe" stroke="#0f172a" stroke-width="3"/>
+<line x1="260.0" y1="40.0" x2="260.0" y2="200.0" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="355.0" y1="240.0" x2="355.0" y2="380.0" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="105.1" y1="10.0" x2="260.0" y2="140.0" stroke="#dc2626" stroke-width="4" stroke-linecap="round"/>
+<polygon points="202.5,91.8 185.3,85.3 193.2,75.9" fill="#dc2626"/>
+<line x1="260.0" y1="140.0" x2="355.0" y2="300.0" stroke="#dc2626" stroke-width="4" stroke-linecap="round"/>
+<polygon points="315.3,233.0 301.2,221.2 311.7,215.0" fill="#dc2626"/>
+<line x1="355.0" y1="300.0" x2="474.2" y2="400.0" stroke="#dc2626" stroke-width="4" stroke-linecap="round"/>
+<polygon points="431.0,363.8 413.8,357.3 421.7,347.9" fill="#dc2626"/>
+<line x1="260.0" y1="140.0" x2="472.1" y2="396.0" stroke="#e2e8f0" stroke-width="0.01" stroke-linecap="round"/>
+<line x1="260.0" y1="140.0" x2="534.1" y2="370.0" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/>
+<path d="M 260.0 94.0 A 46 46 0 0 0 224.8 110.4" stroke="#0f172a" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="226.0" y="84.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold" font-style="italic">i</text>
+<path d="M 260.0 196.0 A 56 56 0 0 0 288.6 188.1" stroke="#0f172a" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="280.0" y="210.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold" font-style="italic">r</text>
+<text x="560.0" y="220.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">glass</text>
+<text x="100.0" y="380.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">emergent ray is parallel to the incident ray</text>
+</svg>

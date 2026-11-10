@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 360" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Dispersion of white light by a prism</title>
+<desc id="d">A narrow beam of white light enters a glass prism and is split into a spectrum: red is deviated least and violet most.</desc>
+<defs></defs>
+<rect width="660" height="360" rx="20" fill="#f8fafc"/>
+<polygon points="300.0,60.0 170.0,300.0 430.0,300.0" fill="#e0f2fe" stroke="#0f172a" stroke-width="3" stroke-linejoin="round"/>
+<line x1="40.0" y1="230.0" x2="232.0" y2="186.0" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+<polygon points="160.9,202.3 145.4,212.1 142.6,200.2" fill="#0f172a"/>
+<text x="50.0" y="200.0" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">white light</text>
+<line x1="232.0" y1="186.0" x2="372.0" y2="200.0" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+<line x1="372.0" y1="200.0" x2="599.8" y2="232.0" stroke="#dc2626" stroke-width="4" stroke-linecap="round"/>
+<text x="607.8" y="232.0" font-size="15" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">red</text>
+<line x1="372.0" y1="201.2" x2="596.8" y2="248.6" stroke="#ea580c" stroke-width="4" stroke-linecap="round"/>
+<text x="604.8" y="248.6" font-size="15" fill="#ea580c" text-anchor="start" dominant-baseline="middle" font-weight="bold">orange</text>
+<line x1="372.0" y1="202.4" x2="592.6" y2="264.9" stroke="#eab308" stroke-width="4" stroke-linecap="round"/>
+<text x="600.6" y="264.9" font-size="15" fill="#eab308" text-anchor="start" dominant-baseline="middle" font-weight="bold">yellow</text>
+<line x1="372.0" y1="203.6" x2="587.3" y2="280.9" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/>
+<text x="595.3" y="280.9" font-size="15" fill="#16a34a" text-anchor="start" dominant-baseline="middle" font-weight="bold">green</text>
+<line x1="372.0" y1="204.8" x2="580.8" y2="296.5" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+<text x="588.8" y="296.5" font-size="15" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">blue</text>
+<line x1="372.0" y1="206.0" x2="573.2" y2="311.5" stroke="#4f46e5" stroke-width="4" stroke-linecap="round"/>
+<text x="581.2" y="311.5" font-size="15" fill="#4f46e5" text-anchor="start" dominant-baseline="middle" font-weight="bold">indigo</text>
+<line x1="372.0" y1="207.2" x2="564.5" y2="325.9" stroke="#7c3aed" stroke-width="4" stroke-linecap="round"/>
+<text x="572.5" y="325.9" font-size="15" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">violet</text>
+<text x="330.0" y="340.0" font-size="17" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">red is deviated least, violet most</text>
+</svg>

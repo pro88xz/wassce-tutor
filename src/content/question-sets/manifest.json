@@ -198,5 +198,24 @@
    "8b2de7f2-d15c-5d2c-803e-74c65f9d7869"
   ],
   "questions": 80
+ },
+ {
+  "name": "physics_set3_p1",
+  "label": "Physics: set 3 (waves, sound, light and optics)",
+  "subject_slug": "physics",
+  "version": "8f92645fc6e9",
+  "papers": [
+   "a99a60d9-fa9e-57d7-b338-6f53b2376aff",
+   "f4ed4a94-7466-5c59-a2b6-f159cebde32f",
+   "6e43eec4-45c8-5cd9-a919-667b294a7a1e",
+   "3f80fdce-1b62-593e-9942-c22e3c9152a9",
+   "4c6b220c-7c2e-5a80-8242-77805b21c708",
+   "428c75c3-4492-5195-842e-21bab297ea08",
+   "960e505a-734d-5eb8-89cc-5bf528a804d7",
+   "f353fd5b-88f1-5c37-bdb3-95d6ec7afee0",
+   "f31c8ab3-1d5f-5e3f-8280-78a7f6e5f59f",
+   "fd536152-d7e9-5c43-b48e-981d7f72b774"
+  ],
+  "questions": 80
  }
 ]

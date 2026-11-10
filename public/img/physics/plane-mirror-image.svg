@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 360" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Image in a plane mirror</title>
+<desc id="d">Rays from a point object O reflect from a plane mirror into the eye. Traced back, they appear to come from the image I, as far behind the mirror as O is in front.</desc>
+<defs></defs>
+<rect width="660" height="360" rx="20" fill="#f8fafc"/>
+<line x1="330.0" y1="40.0" x2="330.0" y2="320.0" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+<line x1="332.0" y1="48.0" x2="344.0" y2="38.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="332.0" y1="64.0" x2="344.0" y2="54.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="332.0" y1="80.0" x2="344.0" y2="70.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="332.0" y1="96.0" x2="344.0" y2="86.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="332.0" y1="112.0" x2="344.0" y2="102.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="332.0" y1="128.0" x2="344.0" y2="118.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="332.0" y1="144.0" x2="344.0" y2="134.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="332.0" y1="160.0" x2="344.0" y2="150.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="332.0" y1="176.0" x2="344.0" y2="166.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="332.0" y1="192.0" x2="344.0" y2="182.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="332.0" y1="208.0" x2="344.0" y2="198.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="332.0" y1="224.0" x2="344.0" y2="214.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="332.0" y1="240.0" x2="344.0" y2="230.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="332.0" y1="256.0" x2="344.0" y2="246.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="332.0" y1="272.0" x2="344.0" y2="262.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="332.0" y1="288.0" x2="344.0" y2="278.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="332.0" y1="304.0" x2="344.0" y2="294.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="170.0" cy="180.0" r="7.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="152.0" y="180.0" font-size="22" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">O</text>
+<circle cx="490.0" cy="180.0" r="6.0" fill="#475569" stroke="#475569" stroke-width="1"/>
+<text x="508.0" y="180.0" font-size="22" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="bold">I</text>
+<ellipse cx="150.0" cy="40.0" rx="22.0" ry="12.0" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<circle cx="150.0" cy="40.0" r="6.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="110.0" y="40.0" font-size="16" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">eye</text>
+<line x1="170.0" y1="180.0" x2="330.0" y2="110.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<polygon points="271.4,135.7 257.9,148.2 253.0,137.0" fill="#dc2626"/>
+<line x1="330.0" y1="110.0" x2="170.0" y2="40.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<polygon points="236.6,69.2 255.0,70.5 250.1,81.7" fill="#dc2626"/>
+<line x1="330.0" y1="110.0" x2="490.0" y2="180.0" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 6"/>
+<line x1="170.0" y1="180.0" x2="330.0" y2="140.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<polygon points="271.7,154.6 256.3,164.7 253.4,152.9" fill="#dc2626"/>
+<line x1="330.0" y1="140.0" x2="170.0" y2="100.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<polygon points="236.3,116.6 254.6,114.9 251.7,126.7" fill="#dc2626"/>
+<line x1="330.0" y1="140.0" x2="490.0" y2="180.0" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 6"/>
+<line x1="170.0" y1="180.0" x2="490.0" y2="180.0" stroke="#e2e8f0" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 6"/>
+<text x="250.0" y="205.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold" font-style="italic">d</text>
+<text x="410.0" y="205.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold" font-style="italic">d</text>
+<text x="500.0" y="300.0" font-size="17" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">virtual, upright, same size</text>
+<text x="500.0" y="324.0" font-size="17" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">laterally inverted</text>
+</svg>
