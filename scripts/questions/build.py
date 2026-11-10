@@ -131,6 +131,15 @@ SETS += [
         # Numerical answers are recomputed by code; conceptual ones were checked by an editor.
         "checked": "mixed",
     },
+    {
+        "module": ROOT / "content/questions/physics/set2_p1.py",
+        "subject_slug": "physics",
+        "name": "physics_set2_p1",
+        "label": "Physics: set 2 (matter, fluids and heat)",
+        "review": ROOT / "content/questions/physics/set2_p1.review.md",
+        "sort_from": 120,
+        "checked": "mixed",
+    },
 ]
 
 OUT = ROOT / "src/content/question-sets"

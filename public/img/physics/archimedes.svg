@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 450" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Archimedes&#x27; principle</title>
+<desc id="d">A stone hangs from a spring balance. In air it weighs 5 N. Lowered into a full displacement can, it weighs 3 N and pushes out 2 N of water: the upthrust equals the weight of water displaced.</desc>
+<defs></defs>
+<rect width="660" height="450" rx="20" fill="#f8fafc"/>
+<line x1="140.0" y1="20.0" x2="140.0" y2="50.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<rect x="114.0" y="50.0" width="52.0" height="100.0" rx="6" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="140.0" y="100.0" font-size="22" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5 N</text>
+<line x1="140.0" y1="150.0" x2="140.0" y2="220.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<ellipse cx="140.0" cy="242.0" rx="32.0" ry="24.0" fill="#94a3b8" stroke="#0f172a" stroke-width="2.5"/>
+<text x="140.0" y="376.0" font-size="20" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">in air</text>
+<line x1="420.0" y1="20.0" x2="420.0" y2="50.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<rect x="394.0" y="50.0" width="52.0" height="100.0" rx="6" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="420.0" y="100.0" font-size="22" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3 N</text>
+<line x1="420.0" y1="150.0" x2="420.0" y2="250.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<ellipse cx="420.0" cy="272.0" rx="32.0" ry="24.0" fill="#94a3b8" stroke="#0f172a" stroke-width="2.5"/>
+<text x="420.0" y="376.0" font-size="20" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">in water</text>
+<rect x="350.0" y="200.0" width="140.0" height="150.0" rx="0" fill="#bfdbfe" stroke="#0f172a" stroke-width="3"/>
+<ellipse cx="420.0" cy="272.0" rx="32.0" ry="24.0" fill="#94a3b8" stroke="#0f172a" stroke-width="2.5"/>
+<line x1="490.0" y1="210.0" x2="530.0" y2="210.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<path d="M 530 212 Q 545 240 545 300" stroke="#2563eb" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="520.0" y="300.0" width="60.0" height="50.0" rx="0" fill="#bfdbfe" stroke="#0f172a" stroke-width="2.5"/>
+<text x="550.0" y="285.0" font-size="19" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2 N</text>
+<text x="330.0" y="414.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">upthrust = 5 − 3 = 2 N = weight of water displaced</text>
+</svg>

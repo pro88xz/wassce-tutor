@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 330" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Graphs of Boyle&#x27;s law and Charles&#x27;s law</title>
+<desc id="d">Left: pressure against volume at constant temperature is a curve (a hyperbola). Middle: pressure against 1/V is a straight line through the origin. Right: volume against temperature in Celsius is a straight line that meets the temperature axis at -273 degrees Celsius.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="660" height="330" rx="20" fill="#f8fafc"/>
+<line x1="40.0" y1="250.0" x2="210.0" y2="250.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="40.0" y1="250.0" x2="40.0" y2="60.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="125.0" y="290.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Boyle: p against V</text>
+<text x="210.0" y="270.0" font-size="16" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">V</text>
+<text x="48.0" y="58.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="auto" font-weight="normal">p</text>
+<path d="M 60.0 70.0 L 64.0 100.0 L 68.0 121.4 L 72.0 137.5 L 76.0 150.0 L 80.0 160.0 L 84.0 168.2 L 88.0 175.0 L 92.0 180.8 L 96.0 185.7 L 100.0 190.0 L 104.0 193.8 L 108.0 197.1 L 112.0 200.0 L 116.0 202.6 L 120.0 205.0 L 124.0 207.1 L 128.0 209.1 L 132.0 210.9 L 136.0 212.5 L 140.0 214.0 L 144.0 215.4 L 148.0 216.7 L 152.0 217.9 L 156.0 219.0 L 160.0 220.0 L 164.0 221.0 L 168.0 221.9 L 172.0 222.7 L 176.0 223.5 L 180.0 224.3 L 184.0 225.0 L 188.0 225.7 L 192.0 226.3 L 196.0 226.9 L 200.0 227.5 L 204.0 228.0" stroke="#2563eb" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="255.0" y1="250.0" x2="425.0" y2="250.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="255.0" y1="250.0" x2="255.0" y2="60.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="340.0" y="290.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Boyle: p against 1/V</text>
+<text x="425.0" y="270.0" font-size="16" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">1/V</text>
+<text x="263.0" y="58.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="auto" font-weight="normal">p</text>
+<line x1="255.0" y1="250.0" x2="410.0" y2="90.0" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+<line x1="450.0" y1="250.0" x2="640.0" y2="250.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="545.0" y1="250.0" x2="545.0" y2="60.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="545.0" y="290.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Charles: V against θ</text>
+<text x="640.0" y="270.0" font-size="16" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">θ / °C</text>
+<text x="553.0" y="58.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="auto" font-weight="normal">V</text>
+<line x1="462.0" y1="250.0" x2="545.0" y2="178.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 5"/>
+<line x1="545.0" y1="178.0" x2="630.0" y2="104.0" stroke="#dc2626" stroke-width="4" stroke-linecap="round"/>
+<circle cx="462.0" cy="250.0" r="5.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="470.0" y="228.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">−273</text>
+<text x="545.0" y="268.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">0</text>
+<text x="330.0" y="28.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Gas laws for a fixed mass of gas</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A bimetallic strip bends when heated</title>
+<desc id="d">Brass and iron strips riveted together. When heated, brass expands more than iron, so the strip bends with the brass on the outside of the curve.</desc>
+<defs></defs>
+<rect width="640" height="320" rx="20" fill="#f8fafc"/>
+<text x="160.0" y="40.0" font-size="21" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cold</text>
+<rect x="40.0" y="80.0" width="240.0" height="16.0" rx="0" fill="#fef3c7" stroke="#0f172a" stroke-width="2"/>
+<rect x="40.0" y="96.0" width="240.0" height="16.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="2"/>
+<text x="160.0" y="68.0" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">brass</text>
+<text x="160.0" y="132.0" font-size="17" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">iron</text>
+<text x="470.0" y="40.0" font-size="21" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Heated</text>
+<path d="M 360 90 Q 470 70 590 170" stroke="#0f172a" stroke-width="18" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 360 90 Q 470 70 590 170" stroke="#fcd34d" stroke-width="14" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 360 106 Q 465 88 578 184" stroke="#0f172a" stroke-width="18" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 360 106 Q 465 88 578 184" stroke="#cbd5e1" stroke-width="14" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="320.0" y="240.0" font-size="17" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">brass expands more, so it ends up on the outside of the curve</text>
+<text x="320.0" y="290.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Used in thermostats, fire alarms and flashing indicator lamps</text>
+</svg>

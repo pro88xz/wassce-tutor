@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Load against extension for a metal wire</title>
+<desc id="d">A straight line from the origin up to the limit of proportionality P, where Hooke&#x27;s law holds. Beyond the elastic limit E the wire is permanently stretched; Y is the yield point and B the breaking point.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="640" height="400" rx="20" fill="#f8fafc"/>
+<line x1="90.0" y1="340.0" x2="610.0" y2="340.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="90.0" y1="340.0" x2="90.0" y2="40.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="610.0" y="366.0" font-size="20" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">extension e</text>
+<text x="100.0" y="36.0" font-size="20" fill="#475569" text-anchor="start" dominant-baseline="auto" font-weight="normal">load F</text>
+<text x="78.0" y="356.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">0</text>
+<path d="M 90.0 340.0 L 290.0 150.0" stroke="#2563eb" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 290 150 Q 310 128 350 118 Q 380 120 400 112 Q 480 86 530 96 L 565 104" stroke="#dc2626" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="290.0" cy="150.0" r="6.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="272.0" y="136.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">P</text>
+<circle cx="310.0" cy="132.0" r="6.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="306.0" y="110.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">E</text>
+<circle cx="350.0" cy="118.0" r="6.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="356.0" y="96.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Y</text>
+<circle cx="565.0" cy="104.0" r="6.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="579.0" y="94.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B</text>
+<text x="175.0" y="290.0" font-size="19" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">Hooke&#x27;s law region:</text>
+<text x="175.0" y="314.0" font-size="19" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="normal">F = ke (straight line)</text>
+<text x="470.0" y="150.0" font-size="19" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">plastic region</text>
+<text x="320.0" y="380.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">P limit of proportionality · E elastic limit · Y yield point · B breaking point</text>
+</svg>

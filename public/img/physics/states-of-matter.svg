@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 330" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Particles in a solid, a liquid and a gas</title>
+<desc id="d">Solid: particles closely packed in a regular pattern, vibrating about fixed positions. Liquid: particles close together but irregular and able to move past one another. Gas: particles far apart moving rapidly in all directions.</desc>
+<defs><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="660" height="330" rx="20" fill="#f8fafc"/>
+<rect x="20.0" y="50.0" width="195.0" height="200.0" rx="6" fill="#f8fafc" stroke="#0f172a" stroke-width="3"/>
+<text x="117.0" y="30.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Solid</text>
+<text x="117.0" y="278.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">vibrate about fixed positions</text>
+<circle cx="46.0" cy="76.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="75.0" cy="76.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="104.0" cy="76.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="133.0" cy="76.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="162.0" cy="76.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="191.0" cy="76.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="46.0" cy="106.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="75.0" cy="106.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="104.0" cy="106.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="133.0" cy="106.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="162.0" cy="106.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="191.0" cy="106.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="46.0" cy="136.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="75.0" cy="136.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="104.0" cy="136.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="133.0" cy="136.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="162.0" cy="136.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="191.0" cy="136.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="46.0" cy="166.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="75.0" cy="166.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="104.0" cy="166.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="133.0" cy="166.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="162.0" cy="166.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="191.0" cy="166.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="46.0" cy="196.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="75.0" cy="196.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="104.0" cy="196.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="133.0" cy="196.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="162.0" cy="196.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="191.0" cy="196.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="46.0" cy="226.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="75.0" cy="226.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="104.0" cy="226.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="133.0" cy="226.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="162.0" cy="226.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="191.0" cy="226.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<rect x="235.0" y="50.0" width="195.0" height="200.0" rx="6" fill="#f8fafc" stroke="#0f172a" stroke-width="3"/>
+<text x="332.0" y="30.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Liquid</text>
+<text x="332.0" y="278.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">close, but slide past each other</text>
+<line x1="239.0" y1="110.0" x2="426.0" y2="110.0" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 5"/>
+<circle cx="257.2" cy="125.2" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="318.5" cy="124.6" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="346.4" cy="126.9" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="399.6" cy="128.1" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="258.4" cy="157.5" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="287.7" cy="154.7" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="349.2" cy="160.6" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="375.2" cy="155.8" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="409.3" cy="161.6" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="259.8" cy="187.2" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="292.8" cy="184.4" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="320.6" cy="186.3" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="342.4" cy="184.9" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="373.1" cy="190.5" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="400.8" cy="188.7" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="264.4" cy="217.0" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="292.5" cy="214.5" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="316.6" cy="215.6" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="351.8" cy="217.4" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="377.1" cy="218.7" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="407.5" cy="216.4" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<rect x="450.0" y="50.0" width="195.0" height="200.0" rx="6" fill="#f8fafc" stroke="#0f172a" stroke-width="3"/>
+<text x="547.0" y="30.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Gas</text>
+<text x="547.0" y="278.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">far apart, fast, random</text>
+<circle cx="587.2" cy="179.8" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<line x1="600.8" y1="183.3" x2="629.9" y2="190.6" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<circle cx="513.0" cy="161.2" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<line x1="506.0" y1="149.0" x2="491.2" y2="122.9" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<circle cx="550.9" cy="206.3" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<line x1="552.1" y1="192.3" x2="554.8" y2="162.4" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<circle cx="578.5" cy="118.2" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<line x1="565.9" y1="112.0" x2="539.0" y2="98.8" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<circle cx="612.3" cy="92.7" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<line x1="622.2" y1="82.8" x2="643.4" y2="61.6" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<circle cx="536.4" cy="188.6" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<line x1="531.0" y1="201.5" x2="519.3" y2="229.1" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<circle cx="500.5" cy="148.3" r="12.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<line x1="495.8" y1="135.2" x2="485.6" y2="107.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="330.0" y="310.0" font-size="17" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">From solid to gas: spacing, freedom and speed of particles increase</text>
+</svg>

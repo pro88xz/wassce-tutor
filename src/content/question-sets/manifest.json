@@ -179,5 +179,24 @@
    "3266bf8f-3919-55c0-a7b5-ed5ff01d0369"
   ],
   "questions": 120
+ },
+ {
+  "name": "physics_set2_p1",
+  "label": "Physics: set 2 (matter, fluids and heat)",
+  "subject_slug": "physics",
+  "version": "c1fcfbb02f82",
+  "papers": [
+   "c1088d82-c7b5-5bb9-9d73-40cd7def8eb0",
+   "fd907161-6d70-547d-9703-ae5c65f738cf",
+   "4e9bdbd4-9e0d-54eb-8820-fe5f6d87d53d",
+   "e7fc2eca-5049-5291-a076-2fb00b57dbd0",
+   "03017477-2e8e-5960-90a4-7181c6425a81",
+   "d317c1e4-9eea-5356-9f06-dffb7afbe468",
+   "f37f2362-abd7-5678-aa29-f90d88b7f66c",
+   "c78f6fac-37c5-5da0-855d-55b0275da7aa",
+   "8d6d9cb4-2a17-5163-b082-f40186c5e935",
+   "8b2de7f2-d15c-5d2c-803e-74c65f9d7869"
+  ],
+  "questions": 80
  }
 ]

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Anomalous expansion of water</title>
+<desc id="d">Volume of a fixed mass of water against temperature from 0 to 10 degrees Celsius. The volume is smallest, and the density greatest, at 4 degrees Celsius.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="640" height="380" rx="20" fill="#f8fafc"/>
+<line x1="90.0" y1="320.0" x2="600.0" y2="320.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="90.0" y1="320.0" x2="90.0" y2="40.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="600.0" y="346.0" font-size="20" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">temperature / °C</text>
+<text x="100.0" y="36.0" font-size="20" fill="#475569" text-anchor="start" dominant-baseline="auto" font-weight="normal">volume</text>
+<text x="78.0" y="336.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">0</text>
+<path d="M 100.0 178.0 L 104.8 181.6 L 109.6 185.0 L 114.4 188.4 L 119.2 191.7 L 124.0 194.9 L 128.8 198.0 L 133.6 201.0 L 138.4 203.9 L 143.2 206.8 L 148.0 209.5 L 152.8 212.2 L 157.6 214.7 L 162.4 217.2 L 167.2 219.6 L 172.0 221.9 L 176.8 224.1 L 181.6 226.2 L 186.4 228.2 L 191.2 230.2 L 196.0 232.0 L 200.8 233.8 L 205.6 235.4 L 210.4 237.0 L 215.2 238.5 L 220.0 239.9 L 224.8 241.2 L 229.6 242.4 L 234.4 243.5 L 239.2 244.6 L 244.0 245.5 L 248.8 246.4 L 253.6 247.1 L 258.4 247.8 L 263.2 248.4 L 268.0 248.9 L 272.8 249.3 L 277.6 249.6 L 282.4 249.8 L 287.2 250.0 L 292.0 250.0 L 296.8 250.0 L 301.6 249.8 L 306.4 249.6 L 311.2 249.3 L 316.0 248.9 L 320.8 248.4 L 325.6 247.8 L 330.4 247.1 L 335.2 246.4 L 340.0 245.5 L 344.8 244.6 L 349.6 243.5 L 354.4 242.4 L 359.2 241.2 L 364.0 239.9 L 368.8 238.5 L 373.6 237.0 L 378.4 235.4 L 383.2 233.8 L 388.0 232.0 L 392.8 230.2 L 397.6 228.2 L 402.4 226.2 L 407.2 224.1 L 412.0 221.9 L 416.8 219.6 L 421.6 217.2 L 426.4 214.7 L 431.2 212.2 L 436.0 209.5 L 440.8 206.8 L 445.6 203.9 L 450.4 201.0 L 455.2 198.0 L 460.0 194.9 L 464.8 191.7 L 469.6 188.4 L 474.4 185.0 L 479.2 181.6 L 484.0 178.0 L 488.8 174.4 L 493.6 170.6 L 498.4 166.8 L 503.2 162.9 L 508.0 158.9 L 512.8 154.8 L 517.6 150.6 L 522.4 146.3 L 527.2 142.0 L 532.0 137.5 L 536.8 133.0 L 541.6 128.3 L 546.4 123.6 L 551.2 118.8 L 556.0 113.9 L 560.8 108.9 L 565.6 103.8 L 570.4 98.6 L 575.2 93.4 L 580.0 88.0" stroke="#2563eb" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="292.0" y1="250.0" x2="292.0" y2="320.0" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<text x="292.0" y="344.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4</text>
+<text x="100.0" y="344.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">0</text>
+<text x="580.0" y="344.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">10</text>
+<circle cx="292.0" cy="250.0" r="7.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<rect x="306.0" y="270.0" width="322.5" height="28.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="306.0" y="284.0" font-size="18" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">minimum volume, maximum density</text>
+</svg>

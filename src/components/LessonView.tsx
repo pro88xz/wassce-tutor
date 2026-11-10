@@ -44,10 +44,15 @@ function directiveTransformer() {
 // otherwise the formula shows as raw text.
 const DISPLAY_MATH = /\\\[([\s\S]+?)\\\]/g
 const INLINE_MATH = /\\\(([\s\S]+?)\\\)/g
+// A line that is only $$ ... $$ is meant as a displayed formula, but Markdown
+// reads it as inline maths (no centring, and a long one widens the page on a
+// phone). Put the $$ on their own lines so it renders as a display block.
+const ONE_LINE_DISPLAY = /^[ \t]*\$\$([^\n$]+?)\$\$[ \t]*$/gm
 export function normalizeMath(md: string): string {
   return md
     .replace(DISPLAY_MATH, (_m, tex: string) => ['', '$$', tex.trim(), '$$', ''].join('\n'))
     .replace(INLINE_MATH, (_m, tex: string) => '$' + tex.trim() + '$')
+    .replace(ONE_LINE_DISPLAY, (_m, tex: string) => ['$$', tex.trim(), '$$'].join('\n'))
 }
 
 export function LessonView({ content }: { content: string }) {

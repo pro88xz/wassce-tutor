@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Pressure increases with depth</title>
+<desc id="d">A tall can of water with three holes at different depths. Water spurts out furthest from the lowest hole because the pressure there is greatest. Pressure p = h rho g.</desc>
+<defs><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="640" height="380" rx="20" fill="#f8fafc"/>
+<rect x="80.0" y="50.0" width="160.0" height="290.0" rx="0" fill="#bfdbfe" stroke="#0f172a" stroke-width="3"/>
+<line x1="80.0" y1="50.0" x2="240.0" y2="50.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<circle cx="240.0" cy="120.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<path d="M 242 120 Q 269.0 116 302 345" stroke="#2563eb" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="240.0" cy="200.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<path d="M 242 200 Q 296.0 196 362 345" stroke="#2563eb" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="240.0" cy="280.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<path d="M 242 280 Q 327.5 276 432 345" stroke="#2563eb" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="40.0" y1="345.0" x2="620.0" y2="345.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="46.0" y1="345.0" x2="36.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="64.0" y1="345.0" x2="54.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="82.0" y1="345.0" x2="72.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="100.0" y1="345.0" x2="90.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="118.0" y1="345.0" x2="108.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="136.0" y1="345.0" x2="126.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="154.0" y1="345.0" x2="144.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="172.0" y1="345.0" x2="162.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="190.0" y1="345.0" x2="180.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="208.0" y1="345.0" x2="198.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="226.0" y1="345.0" x2="216.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="244.0" y1="345.0" x2="234.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="262.0" y1="345.0" x2="252.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="280.0" y1="345.0" x2="270.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="298.0" y1="345.0" x2="288.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="316.0" y1="345.0" x2="306.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="334.0" y1="345.0" x2="324.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="352.0" y1="345.0" x2="342.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="370.0" y1="345.0" x2="360.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="388.0" y1="345.0" x2="378.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="406.0" y1="345.0" x2="396.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="424.0" y1="345.0" x2="414.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="442.0" y1="345.0" x2="432.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="460.0" y1="345.0" x2="450.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="478.0" y1="345.0" x2="468.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="496.0" y1="345.0" x2="486.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="514.0" y1="345.0" x2="504.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="532.0" y1="345.0" x2="522.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="550.0" y1="345.0" x2="540.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="568.0" y1="345.0" x2="558.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="586.0" y1="345.0" x2="576.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="604.0" y1="345.0" x2="594.2" y2="359.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="60.0" y1="52.0" x2="60.0" y2="278.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="48.0" y="165.0" font-size="24" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold" font-style="italic">h</text>
+<text x="470.0" y="90.0" font-size="30" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">p = hρg</text>
+<text x="470.0" y="130.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">deeper → greater pressure</text>
+<text x="470.0" y="156.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">→ water jets out further</text>
+</svg>

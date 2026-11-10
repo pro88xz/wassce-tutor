@@ -621,6 +621,296 @@ def inclined_plane_machine():
     return s
 
 
+# ═══ Matter and fluids ══════════════════════════════════════════════════════
+
+@fig
+def states_of_matter():
+    import random
+    rnd = random.Random(7)
+    s = Svg(660, 330, "Particles in a solid, a liquid and a gas",
+            "Solid: particles closely packed in a regular pattern, vibrating about fixed positions. Liquid: particles close together but irregular and able to move past one another. Gas: particles far apart moving rapidly in all directions.")
+    titles = ["Solid", "Liquid", "Gas"]
+    notes = ["vibrate about fixed positions", "close, but slide past each other", "far apart, fast, random"]
+    for i in range(3):
+        x0 = 20 + i * 215
+        s.rect(x0, 50, 195, 200, fill=BG, stroke=INK, width=3, rx=6)
+        s.text(x0 + 97, 30, titles[i], size=22, weight="bold")
+        s.text(x0 + 97, 278, notes[i], size=16, color=MUTED)
+        if i == 0:
+            for r in range(6):
+                for c in range(6):
+                    s.circle(x0 + 26 + c * 29, 76 + r * 30, 12, fill=F_BLUE, stroke=BLUE, width=2)
+        elif i == 1:
+            pts = []
+            for r in range(4):                 # a loose, jittered arrangement filling the lower part
+                for c in range(6):
+                    if (r, c) in ((0, 1), (0, 4), (1, 2)):
+                        continue                # gaps: a liquid is not a perfect lattice
+                    pts.append((x0 + 24 + c * 29 + rnd.uniform(-5, 5) + (8 if r % 2 else 0) * 0.5,
+                                128 + r * 30 + rnd.uniform(-4, 4)))
+            s.line(x0 + 4, 110, x0 + 191, 110, color=BLUE, width=1.5, dash="5 5")
+            for p in pts:
+                s.circle(*p, 12, fill=F_BLUE, stroke=BLUE, width=2)
+        else:
+            pts = [(x0 + 30 + rnd.random() * 135, 75 + rnd.random() * 150) for _ in range(7)]
+            for p in pts:
+                s.circle(*p, 12, fill=F_BLUE, stroke=BLUE, width=2)
+                a = rnd.random() * 6.28
+                s.arrow(p[0] + 14 * math.cos(a), p[1] + 14 * math.sin(a), p[0] + 44 * math.cos(a), p[1] + 44 * math.sin(a), color=RED, width=2)
+    s.text(330, 310, "From solid to gas: spacing, freedom and speed of particles increase", size=17, color=MUTED)
+    return s
+
+
+@fig
+def hooke_graph():
+    s = Svg(640, 400, "Load against extension for a metal wire",
+            "A straight line from the origin up to the limit of proportionality P, where Hooke's law holds. Beyond the elastic limit E the wire is permanently stretched; Y is the yield point and B the breaking point.")
+    x0, y0 = 90, 340
+    s.axes(x0, y0, 610, 40, "extension e", "load F")
+    P = (290, 150)
+    E = (310, 132)
+    Y = (350, 118)
+    pts = [(x0, y0), P, E, Y, (400, 112), (470, 100), (530, 96), (565, 104)]
+    s.polyline(pts[:2], color=BLUE, width=5)
+    s.path(f"M {P[0]} {P[1]} Q {E[0]} {E[1] - 4} {Y[0]} {Y[1]} Q 380 120 400 112 Q 480 86 530 96 L 565 104", color=RED, width=4)
+    for (pt, lab, dx, dy) in ((P, "P", -18, -14), (E, "E", -4, -22), (Y, "Y", 6, -22), ((565, 104), "B", 14, -10)):
+        s.dot(*pt, 6)
+        s.text(pt[0] + dx, pt[1] + dy, lab, size=22, weight="bold")
+    s.text(175, 290, "Hooke's law region:", size=19, color=BLUE, weight="bold", anchor="start")
+    s.text(175, 314, "F = ke (straight line)", size=19, color=BLUE, anchor="start")
+    s.text(470, 150, "plastic region", size=19, color=RED, weight="bold")
+    s.text(320, 380, "P limit of proportionality · E elastic limit · Y yield point · B breaking point", size=15, color=MUTED)
+    return s
+
+
+@fig
+def capillarity():
+    s = Svg(660, 360, "Capillary rise and capillary depression",
+            "Left: in narrow glass tubes dipped in water, water rises higher in the narrower tube and its surface curves upwards. Right: in mercury, the level in the tube is pushed below the outside level and the surface curves downwards.")
+    s.rect(30, 210, 300, 110, fill=WATER, stroke=INK, width=3)
+    s.text(180, 340, "Water", size=20, weight="bold")
+    for x, w, top in ((90, 14, 70), (180, 26, 130), (260, 40, 165)):
+        s.rect(x - w / 2, 50, w, 250, fill="none", stroke=INK, width=2.5)
+        s.rect(x - w / 2 + 2, top, w - 4, 300 - top, fill=WATER, stroke="none", width=0)
+        s.path(f"M {x - w / 2 + 2} {top - 6} Q {x} {top + 6} {x + w / 2 - 2} {top - 6}", color=BLUE, width=2.5)
+    s.text(180, 30, "narrower tube → higher rise", size=18, color=BLUE, weight="bold")
+    s.rect(360, 210, 270, 110, fill=METAL, stroke=INK, width=3)
+    s.text(495, 340, "Mercury", size=20, weight="bold")
+    for x, w, top in ((440, 18, 268), (550, 34, 240)):
+        s.rect(x - w / 2, 120, w, 180, fill="none", stroke=INK, width=2.5)
+        s.rect(x - w / 2 + 2, top, w - 4, 300 - top, fill=METAL, stroke="none", width=0)
+        s.path(f"M {x - w / 2 + 2} {top + 6} Q {x} {top - 8} {x + w / 2 - 2} {top + 6}", color=INK, width=2.5)
+    s.line(360, 210, 630, 210, width=3)
+    s.text(495, 95, "level pushed down", size=18, color=INK, weight="bold")
+    return s
+
+
+@fig
+def pressure_depth():
+    s = Svg(640, 380, "Pressure increases with depth",
+            "A tall can of water with three holes at different depths. Water spurts out furthest from the lowest hole because the pressure there is greatest. Pressure p = h rho g.")
+    s.rect(80, 50, 160, 290, fill=WATER, stroke=INK, width=3)
+    s.line(80, 50, 240, 50, color=BLUE, width=2)
+    for i, (y, reach) in enumerate(((120, 60), (200, 120), (280, 190))):
+        s.circle(240, y, 5, fill=INK, stroke=INK, width=1)
+        s.path(f"M 242 {y} Q {242 + reach * 0.45} {y - 4} {242 + reach} {345}", color=BLUE, width=4)
+    s.hatch_ground(40, 620, 345)
+    s.arrow(60, 52, 60, 278, color=RED, width=2.5)
+    s.text(48, 165, "h", size=24, italic=True, weight="bold", anchor="end", color=RED)
+    s.text(470, 90, "p = hρg", size=30, weight="bold")
+    s.text(470, 130, "deeper → greater pressure", size=19, color=MUTED)
+    s.text(470, 156, "→ water jets out further", size=19, color=MUTED)
+    return s
+
+
+@fig
+def mercury_barometer():
+    s = Svg(560, 420, "A simple mercury barometer",
+            "A long glass tube full of mercury is inverted in a dish of mercury. The mercury falls until the column is about 760 mm high; the space above it is a vacuum. Atmospheric pressure on the dish supports the column.")
+    s.rect(120, 320, 280, 70, fill=METAL, stroke=INK, width=3)
+    s.rect(240, 40, 40, 330, fill="none", stroke=INK, width=3)
+    s.rect(243, 120, 34, 250, fill=METAL, stroke="none", width=0)
+    s.line(243, 120, 277, 120, color=INK, width=2)
+    s.text(300, 78, "vacuum (Torricellian)", size=19, anchor="start", color=MUTED)
+    s.line(285, 78, 296, 78, color=MUTED, width=2)
+    s.arrow(330, 322, 330, 122, color=RED, width=2.5)
+    s.arrow(330, 122, 330, 322, color=RED, width=2.5)
+    s.text(342, 222, "h ≈ 760 mm", size=21, weight="bold", color=RED, anchor="start")
+    s.line(277, 120, 345, 120, color=GRID, width=2, dash="5 5")
+    s.line(400, 320, 345, 320, color=GRID, width=2, dash="5 5")
+    for x in (150, 190, 350, 380):
+        s.arrow(x, 260, x, 314, color=BLUE, width=3)
+    s.text(120, 250, "air pressure", size=19, color=BLUE, weight="bold", anchor="start")
+    s.text(260, 408, "mercury", size=18, color=MUTED)
+    return s
+
+
+@fig
+def archimedes():
+    s = Svg(660, 450, "Archimedes' principle",
+            "A stone hangs from a spring balance. In air it weighs 5 N. Lowered into a full displacement can, it weighs 3 N and pushes out 2 N of water: the upthrust equals the weight of water displaced.")
+    for i, (reading, inwater) in enumerate((("5 N", False), ("3 N", True))):
+        x = 140 + i * 280
+        s.line(x, 20, x, 50, width=3)
+        s.rect(x - 26, 50, 52, 100, fill=F_GREY, stroke=INK, width=2.5, rx=6)
+        s.text(x, 100, reading, size=22, weight="bold", color=RED)
+        s.line(x, 150, x, 220 if not inwater else 250, width=2)
+        stone_y = 220 if not inwater else 250
+        s.ellipse(x, stone_y + 22, 32, 24, fill="#94a3b8", stroke=INK, width=2.5)
+        s.text(x, 376, "in air" if not inwater else "in water", size=20, weight="bold", color=MUTED)
+        if inwater:
+            s.rect(x - 70, 200, 140, 150, fill=WATER, stroke=INK, width=3)
+            s.ellipse(x, stone_y + 22, 32, 24, fill="#94a3b8", stroke=INK, width=2.5)
+            s.line(x + 70, 210, x + 110, 210, width=3)
+            s.path(f"M {x + 110} 212 Q {x + 125} 240 {x + 125} 300", color=BLUE, width=3)
+            s.rect(x + 100, 300, 60, 50, fill=WATER, stroke=INK, width=2.5)
+            s.text(x + 130, 285, "2 N", size=19, weight="bold", color=BLUE)
+    s.text(330, 414, "upthrust = 5 − 3 = 2 N = weight of water displaced", size=20, weight="bold")
+    return s
+
+
+# ═══ Heat ════════════════════════════════════════════════════════════════════
+
+@fig
+def thermometer_fixed_points():
+    s = Svg(660, 420, "A liquid-in-glass thermometer and its fixed points",
+            "A mercury thermometer with a bulb and a narrow capillary tube. The lower fixed point is 0 °C (melting ice) and the upper fixed point is 100 °C (steam at standard pressure).")
+    s.rect(270, 40, 30, 300, fill="#ffffff", stroke=INK, width=3, rx=14)
+    s.circle(285, 360, 30, fill=METAL, stroke=INK, width=3)
+    s.rect(280, 150, 10, 200, fill=METAL, stroke="none", width=0)
+    for t in range(0, 101, 10):
+        y = 320 - t * 2.4
+        s.line(300, y, 312 if t % 50 else 322, y, width=2)
+        if t % 50 == 0:
+            s.text(330, y, f"{t} °C", size=19, anchor="start", weight="bold")
+    s.text(420, 80, "upper fixed point:", size=19, anchor="start", color=RED, weight="bold")
+    s.text(420, 104, "steam above boiling water", size=17, anchor="start", color=RED)
+    s.text(420, 310, "lower fixed point:", size=19, anchor="start", color=BLUE, weight="bold")
+    s.text(420, 334, "pure melting ice", size=17, anchor="start", color=BLUE)
+    s.text(150, 200, "capillary", size=18, anchor="end", color=MUTED)
+    s.line(155, 200, 265, 200, color=MUTED, width=1.5)
+    s.text(150, 360, "bulb", size=18, anchor="end", color=MUTED)
+    s.line(155, 360, 253, 360, color=MUTED, width=1.5)
+    return s
+
+
+@fig
+def bimetallic_strip():
+    s = Svg(640, 320, "A bimetallic strip bends when heated",
+            "Brass and iron strips riveted together. When heated, brass expands more than iron, so the strip bends with the brass on the outside of the curve.")
+    s.text(160, 40, "Cold", size=21, weight="bold")
+    s.rect(40, 80, 240, 16, fill=F_AMBER, stroke=INK, width=2)
+    s.rect(40, 96, 240, 16, fill=METAL, stroke=INK, width=2)
+    s.text(160, 68, "brass", size=17, color=ORANGE)
+    s.text(160, 132, "iron", size=17, color=MUTED)
+    s.text(470, 40, "Heated", size=21, weight="bold")
+    s.path("M 360 90 Q 470 70 590 170", color=INK, width=18, join="round")
+    s.path("M 360 90 Q 470 70 590 170", color="#fcd34d", width=14)
+    s.path("M 360 106 Q 465 88 578 184", color=INK, width=18)
+    s.path("M 360 106 Q 465 88 578 184", color=METAL, width=14)
+    s.text(320, 240, "brass expands more, so it ends up on the outside of the curve", size=17, color=MUTED)
+    s.text(320, 290, "Used in thermostats, fire alarms and flashing indicator lamps", size=18, weight="bold")
+    return s
+
+
+@fig
+def water_anomalous():
+    s = Svg(640, 380, "Anomalous expansion of water",
+            "Volume of a fixed mass of water against temperature from 0 to 10 degrees Celsius. The volume is smallest, and the density greatest, at 4 degrees Celsius.")
+    x0, y0 = 90, 320
+    s.axes(x0, y0, 600, 40, "temperature / °C", "volume")
+    # screen y grows downwards: the lowest point of the curve is the smallest volume
+    pts = [(x0 + 10 + t * 48, 250 - 4.5 * (t - 4) ** 2) for t in [i / 10 for i in range(0, 101)]]
+    s.polyline(pts, color=BLUE, width=5)
+    mx = x0 + 10 + 4 * 48
+    s.line(mx, 250, mx, y0, color=GRID, width=2, dash="6 6")
+    s.text(mx, y0 + 24, "4", size=20, weight="bold")
+    for t in (0, 10):
+        s.text(x0 + 10 + t * 48, y0 + 24, str(t), size=18, color=MUTED)
+    s.dot(mx, 250, 7, color=RED)
+    s.label(mx + 14, 284, "minimum volume, maximum density", size=18, color=RED, weight="bold", anchor="start")
+    return s
+
+
+@fig
+def heating_curve():
+    s = Svg(660, 400, "Heating curve of water",
+            "Temperature against time as ice at -10 degrees Celsius is heated steadily. The temperature stays at 0 degrees while ice melts and at 100 degrees while water boils; latent heat is absorbed in these flat sections.")
+    x0, y0 = 90, 340
+    s.axes(x0, y0, 630, 40, "time", "temperature / °C")
+    def Y(t):
+        return 300 - t * 2.2
+    pts = [(x0, Y(-10)), (140, Y(0)), (240, Y(0)), (380, Y(100)), (560, Y(100)), (600, Y(118))]
+    s.polyline(pts, color=RED, width=5)
+    s.line(x0 - 6, Y(0), 140, Y(0), color=GRID, width=1.5, dash="5 6")
+    s.line(x0 - 6, Y(100), 380, Y(100), color=GRID, width=1.5, dash="5 6")
+    s.text(x0 - 12, Y(0), "0", size=20, anchor="end", weight="bold")
+    s.text(x0 - 12, Y(100), "100", size=20, anchor="end", weight="bold")
+    s.text(190, Y(0) + 26, "melting", size=18, color=BLUE, weight="bold")
+    s.text(190, Y(0) + 48, "(ice + water)", size=16, color=BLUE)
+    s.text(470, Y(100) - 22, "boiling (water + steam)", size=18, color=BLUE, weight="bold")
+    s.text(122, Y(-10) - 30, "ice", size=17, color=MUTED)
+    s.text(285, Y(50) - 12, "water", size=17, color=MUTED)
+    s.text(600, Y(118) - 18, "steam", size=17, color=MUTED)
+    s.text(360, 380, "flat sections: latent heat changes the state, not the temperature", size=17, color=MUTED)
+    return s
+
+
+@fig
+def vacuum_flask():
+    s = Svg(790, 440, "A vacuum flask",
+            "A double-walled glass bottle with a vacuum between the walls, silvered surfaces, an insulating stopper and a protective case resting on insulating supports.")
+    s.rect(140, 70, 280, 340, fill=F_GREY, stroke=INK, width=3, rx=24)
+    s.rect(180, 110, 200, 270, fill="#ffffff", stroke=INK, width=3, rx=30)
+    s.rect(196, 126, 168, 238, fill=F_AMBER, stroke="#9ca3af", width=4, rx=22)
+    s.rect(212, 142, 136, 206, fill=WATER, stroke=INK, width=3, rx=16)
+    s.rect(230, 70, 100, 80, fill="#a16207", stroke=INK, width=3, rx=8)
+    s.rect(210, 380, 40, 30, fill="#a16207", stroke=INK, width=2)
+    s.rect(310, 380, 40, 30, fill="#a16207", stroke=INK, width=2)
+    labels = [
+        ("stopper: cuts conduction and convection", 300, 76, 40),
+        ("silvered walls: cut radiation", 362, 200, 160),
+        ("vacuum: no conduction or convection", 372, 300, 260),
+        ("insulating supports", 340, 395, 410),
+    ]
+    for text, px, py, ty in labels:
+        s.line(px, py, 430, ty, color=MUTED, width=1.5)
+        s.text(436, ty, text, size=16, anchor="start", weight="bold")
+    s.text(280, 250, "hot drink", size=18, weight="bold")
+    return s
+
+
+@fig
+def gas_law_graphs():
+    s = Svg(660, 330, "Graphs of Boyle's law and Charles's law",
+            "Left: pressure against volume at constant temperature is a curve (a hyperbola). Middle: pressure against 1/V is a straight line through the origin. Right: volume against temperature in Celsius is a straight line that meets the temperature axis at -273 degrees Celsius.")
+    # Boyle p-V
+    def frame(x0, title, xl, yl):
+        s.arrow(x0, 250, x0 + 170, 250, width=2.2)
+        s.arrow(x0, 250, x0, 60, width=2.2)
+        s.text(x0 + 85, 290, title, size=17, weight="bold")
+        s.text(x0 + 170, 270, xl, size=16, color=MUTED, anchor="end")
+        s.text(x0 + 8, 58, yl, size=16, color=MUTED, anchor="start", baseline="auto")
+    frame(40, "Boyle: p against V", "V", "p")
+    pts = [(40 + v, 250 - 3600 / v) for v in range(20, 165, 4)]
+    s.polyline([(x, max(y, 70)) for x, y in pts], color=BLUE, width=4)
+    frame(255, "Boyle: p against 1/V", "1/V", "p")
+    s.line(255, 250, 410, 90, color=BLUE, width=4)
+    # θ axis runs left of the V axis (which sits at 0 °C) so -273 °C can be shown
+    s.arrow(450, 250, 640, 250, width=2.2)
+    s.arrow(545, 250, 545, 60, width=2.2)
+    s.text(545, 290, "Charles: V against θ", size=17, weight="bold")
+    s.text(640, 270, "θ / °C", size=16, color=MUTED, anchor="end")
+    s.text(553, 58, "V", size=16, color=MUTED, anchor="start", baseline="auto")
+    s.line(462, 250, 545, 178, color=RED, width=2.5, dash="6 5")
+    s.line(545, 178, 630, 104, color=RED, width=4)
+    s.dot(462, 250, 5, color=RED)
+    s.text(470, 228, "−273", size=15, color=RED, weight="bold", anchor="middle")
+    s.text(545, 268, "0", size=14, color=MUTED)
+    s.text(330, 28, "Gas laws for a fixed mass of gas", size=19, color=MUTED)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:

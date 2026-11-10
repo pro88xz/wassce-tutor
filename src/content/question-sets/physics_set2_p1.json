@@ -1,0 +1,3148 @@
+{
+ "name": "physics_set2_p1",
+ "label": "Physics: set 2 (matter, fluids and heat)",
+ "subject_slug": "physics",
+ "papers": [
+  {
+   "id": "c1088d82-c7b5-5bb9-9d73-40cd7def8eb0",
+   "topic": "States of Matter and Kinetic Theory",
+   "title": "States of Matter and Kinetic Theory: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on states of matter and kinetic theory, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 120,
+   "questions": [
+    {
+     "id": "64af7100-a352-5632-b5e1-ce62324af014",
+     "key": "phy-kin-01",
+     "stem": "In the smoke-cell experiment, the smoke particles are seen to move randomly because",
+     "image_url": null,
+     "explanation": "Brownian motion: invisible air molecules bombard each smoke particle unevenly, pushing it first one way and then another.\n\n**Why the other options are wrong**\n\n- they are alive: Smoke particles are not living; the motion is caused by collisions.\n- convection currents carry them about: The motion is a random jiggle in all directions, not a steady current.\n- they are attracted by the light: Light is used only to make the particles visible.",
+     "position": 1,
+     "options": [
+      {
+       "id": "ff3ae634-66d8-5f46-a033-a9dad10e9a5c",
+       "label": "A",
+       "content": "they are struck unevenly by fast-moving air molecules",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "efc79d9e-5622-5e44-af6a-ff5439281f98",
+       "label": "B",
+       "content": "they are alive",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5163b751-0ba7-5a63-b054-477dd97ac9a1",
+       "label": "C",
+       "content": "convection currents carry them about",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8f5dfb7e-6841-58b6-b747-3cf41c2c2a13",
+       "label": "D",
+       "content": "they are attracted by the light",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dbdf05e5-8dbc-5034-a37b-156b14f90f96",
+     "key": "phy-kin-02",
+     "stem": "Which statement about the particles of a gas is correct?",
+     "image_url": null,
+     "explanation": "Gas particles have large spaces between them and move fast and randomly, so gases fill their containers and are easily compressed.\n\n**Why the other options are wrong**\n\n- They vibrate about fixed positions.  \n  That describes the particles of a solid.\n- They are closely packed in a regular pattern.  \n  That describes a crystalline solid.\n- They are close together and slide past one another.  \n  That describes a liquid.",
+     "position": 2,
+     "options": [
+      {
+       "id": "71216941-d9f3-523c-89be-efac45a5923d",
+       "label": "A",
+       "content": "They are far apart and move rapidly in random directions.",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0377953e-a8d2-552d-85f2-7fa20a8287ae",
+       "label": "B",
+       "content": "They vibrate about fixed positions.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4db9c8e5-3b6a-5696-83d2-e423139d5c12",
+       "label": "C",
+       "content": "They are closely packed in a regular pattern.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1cb3eb0b-5599-53e3-a29e-39464103ca38",
+       "label": "D",
+       "content": "They are close together and slide past one another.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fde23527-8f38-5f0b-99f9-81190f447be1",
+     "key": "phy-kin-03",
+     "stem": "Diffusion takes place fastest in",
+     "image_url": null,
+     "explanation": "Gas particles are far apart and fast, so they mix most quickly.\n\n**Why the other options are wrong**\n\n- liquids: Liquid particles are closer together and move more slowly than gas particles.\n- solids: Diffusion in solids is extremely slow.\n- all states equally: The rate depends on how freely and how fast the particles move.",
+     "position": 3,
+     "options": [
+      {
+       "id": "38d25272-edff-520e-bb31-a66ae4e40c6c",
+       "label": "A",
+       "content": "gases",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ad34368b-8d79-5093-a592-7a8bc3c0cae5",
+       "label": "B",
+       "content": "liquids",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "67e28e9f-9f2d-58a0-bcc6-ed96b856e24c",
+       "label": "C",
+       "content": "solids",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "19e33a3d-6e5f-5d42-ae6c-a76f2a9671fc",
+       "label": "D",
+       "content": "all states equally",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c58438a7-f54e-5012-b5f2-8eab60a9b9bb",
+     "key": "phy-kin-04",
+     "stem": "Evaporation causes cooling because",
+     "image_url": null,
+     "explanation": "Losing the fastest molecules lowers the average kinetic energy, and therefore the temperature, of the liquid left behind.\n\n**Why the other options are wrong**\n\n- the liquid gives out heat to the surroundings: Evaporation takes in heat; the cooling comes from losing fast molecules.\n- the slowest molecules escape from the liquid: Only molecules with enough energy can escape: the fastest ones.\n- the liquid's mass increases: Evaporation reduces the mass of the liquid.",
+     "position": 4,
+     "options": [
+      {
+       "id": "757bad20-5553-5496-a9e1-109ef48b8948",
+       "label": "A",
+       "content": "the most energetic molecules escape from the liquid",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ca54b9e0-6938-5026-b38d-ab783d0e7315",
+       "label": "B",
+       "content": "the liquid gives out heat to the surroundings",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cfeaf9ef-e2cc-55ff-b412-370b3c45a39b",
+       "label": "C",
+       "content": "the slowest molecules escape from the liquid",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d075704e-14b6-5fb9-84b1-eafe347cdb76",
+       "label": "D",
+       "content": "the liquid's mass increases",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d3177b35-6ee6-52cc-a51d-e8fa543eee17",
+     "key": "phy-kin-05",
+     "stem": "Which of the following is a difference between evaporation and boiling?",
+     "image_url": null,
+     "explanation": "Evaporation: any temperature, at the surface, slow. Boiling: fixed temperature, throughout the liquid, rapid.\n\n**Why the other options are wrong**\n\n- Evaporation occurs throughout the liquid; boiling only at the surface.  \n  It is the other way round: evaporation is a surface process.\n- Boiling causes cooling; evaporation does not.  \n  Evaporation causes cooling; during boiling the temperature stays constant.\n- Evaporation needs a flame; boiling does not.  \n  Evaporation happens without any flame, e.g. clothes drying.",
+     "position": 5,
+     "options": [
+      {
+       "id": "7e4db4e0-5c03-5d15-b62a-047891b2889e",
+       "label": "A",
+       "content": "Evaporation occurs at all temperatures; boiling occurs at a fixed temperature.",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2690b47c-2235-54f5-95fa-fa0697589899",
+       "label": "B",
+       "content": "Evaporation occurs throughout the liquid; boiling only at the surface.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2c27d558-d800-581d-982b-fad1ba49ad1d",
+       "label": "C",
+       "content": "Boiling causes cooling; evaporation does not.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "976f1d39-b212-5509-8756-3ff568d3c2ee",
+       "label": "D",
+       "content": "Evaporation needs a flame; boiling does not.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "92ca7d4d-488c-5ff3-a700-4c2189e8acd8",
+     "key": "phy-kin-06",
+     "stem": "According to the kinetic theory, the temperature of a gas is a measure of",
+     "image_url": null,
+     "explanation": "The faster the molecules move on average, the higher the temperature.\n\n**Why the other options are wrong**\n\n- the number of molecules present: More molecules do not mean a higher temperature.\n- the size of its molecules: Molecular size does not set the temperature.\n- the potential energy of its molecules: Temperature is linked to the motion (kinetic energy) of the molecules.",
+     "position": 6,
+     "options": [
+      {
+       "id": "9aaf20ca-eaee-5304-9ff4-4b9e9d0aecec",
+       "label": "A",
+       "content": "the number of molecules present",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b9c59978-394b-598d-84b4-fc160256d23f",
+       "label": "B",
+       "content": "the size of its molecules",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "490a6c3b-f7f3-59c0-bda9-3d361dd91f14",
+       "label": "C",
+       "content": "the potential energy of its molecules",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "85a8f2c6-5434-5208-8cb0-940a65275420",
+       "label": "D",
+       "content": "the average kinetic energy of its molecules",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "740d6bb3-ef1a-5283-bde3-05af3fb3c89f",
+     "key": "phy-kin-07",
+     "stem": "Water wets clean glass because",
+     "image_url": null,
+     "explanation": "When adhesion to the glass exceeds the attraction between water molecules, the water spreads over the glass.\n\n**Why the other options are wrong**\n\n- the cohesion of water is greater than its adhesion to glass: That is why mercury does not wet glass.\n- water is denser than glass: Glass is denser than water, and density does not decide wetting.\n- glass absorbs water: Glass does not absorb water.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b2c1dd59-47d9-5c1e-b5f2-eb9d1734217c",
+       "label": "A",
+       "content": "the adhesion between water and glass is greater than the cohesion of water",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "490ee010-8400-5fb8-be33-7ea9df3b6038",
+       "label": "B",
+       "content": "the cohesion of water is greater than its adhesion to glass",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4e07111e-cf48-522d-9015-2deb0ef9992c",
+       "label": "C",
+       "content": "water is denser than glass",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "16760828-0394-5dab-8941-fa0959d6ecdb",
+       "label": "D",
+       "content": "glass absorbs water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bf66fca0-9a50-5c53-a164-b6b5f0f0c0d2",
+     "key": "phy-kin-08",
+     "stem": "Which of these is an amorphous solid?",
+     "image_url": null,
+     "explanation": "Glass has an irregular particle arrangement and softens over a range of temperatures instead of melting sharply.\n\n**Why the other options are wrong**\n\n- common salt: Salt forms crystals with a regular lattice.\n- ice: Ice is crystalline.\n- copper: Metals are crystalline.",
+     "position": 8,
+     "options": [
+      {
+       "id": "06736470-b699-5020-baf3-02224c1d9a72",
+       "label": "A",
+       "content": "common salt",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "123d8deb-adb3-5e8d-a337-ffc932a2eefe",
+       "label": "B",
+       "content": "ice",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "02a5d372-621d-5bbb-b00f-8c66b0b029f0",
+       "label": "C",
+       "content": "copper",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d616637c-5553-5625-a343-e377f4246be7",
+       "label": "D",
+       "content": "glass",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd907161-6d70-547d-9703-ae5c65f738cf",
+   "topic": "Elasticity and Hooke's Law",
+   "title": "Elasticity and Hooke's Law: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on elasticity and hooke's law, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 121,
+   "questions": [
+    {
+     "id": "3e3d597d-ed59-5335-9b0f-40cb5703ca06",
+     "key": "phy-ela-01",
+     "stem": "A spring of natural length 15 cm stretches to 18 cm when a load of 6 N hangs on it. What is its spring constant?",
+     "image_url": null,
+     "explanation": "$e = 18 - 15 = 3\\ \\text{cm} = 0.03\\ \\text{m}$; $k = \\dfrac{F}{e} = \\dfrac{6}{0.03} = 200\\ \\text{N m}^{-1}$.\n\n**Why the other options are wrong**\n\n- 2 N m⁻¹: You used the extension in centimetres. 3 cm = 0.03 m.\n- 33.3 N m⁻¹: You used the stretched length (18 cm) instead of the extension.\n- 40 N m⁻¹: You used the natural length instead of the extension.",
+     "position": 1,
+     "options": [
+      {
+       "id": "33a77338-0515-5b0a-9ce7-eec3c3af309a",
+       "label": "A",
+       "content": "2 N m⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c53c8857-69b5-5776-8083-a54302ac9013",
+       "label": "B",
+       "content": "33.3 N m⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4e965d2c-43c5-56ae-8868-6ac3e5a9ed97",
+       "label": "C",
+       "content": "40 N m⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2b2c488b-ff84-5f16-85cd-b185e20faff6",
+       "label": "D",
+       "content": "200 N m⁻¹",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c1da6f22-025d-5afd-8a31-e18df87ef603",
+     "key": "phy-ela-02",
+     "stem": "A spring obeys Hooke's law and extends by 2 cm under a load of 5 N. What load extends it by 7 cm?",
+     "image_url": null,
+     "explanation": "$F \\propto e$: $F = 5 \\times \\dfrac{7}{2} = 17.5\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 1.43 N: You inverted the proportion: load is directly proportional to extension.\n- 35 N: You multiplied 5 by 7 without dividing by 2.\n- 2.8 N: You divided the extensions the wrong way round.",
+     "position": 2,
+     "options": [
+      {
+       "id": "783b402b-2fa4-50c6-908e-9af55f076da0",
+       "label": "A",
+       "content": "1.43 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7671557e-e26d-5e49-b2d8-35a82709fbb4",
+       "label": "B",
+       "content": "2.8 N",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bd7259d5-6bcf-59f4-83da-54df88ee7705",
+       "label": "C",
+       "content": "17.5 N",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0756eebe-ce5f-5acc-bafe-f2e57a777148",
+       "label": "D",
+       "content": "35 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "060a110a-a9dc-5c3b-9429-75bf8f0e42c9",
+     "key": "phy-ela-03",
+     "stem": "Hooke's law states that the extension of a spring is proportional to the load, provided",
+     "image_url": null,
+     "explanation": "Beyond the elastic limit (strictly, the limit of proportionality) extension is no longer proportional to load.\n\n**Why the other options are wrong**\n\n- the spring is made of steel: Hooke's law applies to many elastic materials, not only steel.\n- the load is applied quickly: The speed of loading is not part of the law.\n- the spring is horizontal: Orientation does not matter.",
+     "position": 3,
+     "options": [
+      {
+       "id": "eb3674fe-7d01-5bc3-a98b-40c0ca397d54",
+       "label": "A",
+       "content": "the elastic limit is not exceeded",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "05d76b1b-90bf-528a-b4a7-543ca2b76188",
+       "label": "B",
+       "content": "the spring is made of steel",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7abefda3-ca86-5592-9d30-51b429226b81",
+       "label": "C",
+       "content": "the load is applied quickly",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8d6c316a-5199-5ce2-836e-71feaca3f8c7",
+       "label": "D",
+       "content": "the spring is horizontal",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7bf5c2c7-db86-521d-96fa-e29a0f12218e",
+     "key": "phy-ela-04",
+     "stem": "How much energy is stored in a spring of spring constant 400 N m⁻¹ when it is stretched by 0.05 m?",
+     "image_url": null,
+     "explanation": "$E = \\tfrac{1}{2}ke^2 = \\tfrac{1}{2} \\times 400 \\times 0.05^2 = 0.5\\ \\text{J}$.\n\n**Why the other options are wrong**\n\n- 1 J: You forgot the ½ in $\\tfrac{1}{2}ke^2$.\n- 10 J: You used $\\tfrac{1}{2}ke$ without squaring the extension.\n- 20 J: That is the force, $ke$, not the energy.",
+     "position": 4,
+     "options": [
+      {
+       "id": "168e0529-7786-557d-8159-dbb0355d2d19",
+       "label": "A",
+       "content": "0.5 J",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "262c3c57-269e-53f6-a2df-5c538f354a5c",
+       "label": "B",
+       "content": "1 J",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9df81493-b36f-5744-a022-159c415784f9",
+       "label": "C",
+       "content": "10 J",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "160987fd-8110-5bfc-a7d7-60925cc15000",
+       "label": "D",
+       "content": "20 J",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8c801f7c-8e9c-5d53-afb7-89a183d9b71e",
+     "key": "phy-ela-05",
+     "stem": "A wire of cross-sectional area 2 × 10⁻⁶ m² carries a tension of 80 N. What is the tensile stress?",
+     "image_url": null,
+     "explanation": "Stress $= \\dfrac{F}{A} = \\dfrac{80}{2 \\times 10^{-6}} = 4 \\times 10^{7}\\ \\text{Pa}$.\n\n**Why the other options are wrong**\n\n- 0.4 × 10⁷ Pa: Check the power of ten: 80 ÷ (2 × 10⁻⁶) = 4 × 10⁷ Pa.\n- 8 × 10⁷ Pa: You divided by 10⁻⁶ instead of 2 × 10⁻⁶.\n- 40 × 10⁷ Pa: That would be 4 × 10⁸ Pa, ten times too large.",
+     "position": 5,
+     "options": [
+      {
+       "id": "c0eeb772-d694-5652-8ba6-2ca6c6d7f6de",
+       "label": "A",
+       "content": "0.4 × 10⁷ Pa",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "945b051e-c382-5e4c-a505-1b78476d93b9",
+       "label": "B",
+       "content": "4 × 10⁷ Pa",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "20a7cbf6-a039-5142-a178-346128195f2b",
+       "label": "C",
+       "content": "8 × 10⁷ Pa",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "01e708f0-98bb-56f3-aabe-a4117f3a1714",
+       "label": "D",
+       "content": "40 × 10⁷ Pa",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "868400d3-ab24-5af0-bd1c-13565e83ffe4",
+     "key": "phy-ela-06",
+     "stem": "The unit of tensile strain is",
+     "image_url": null,
+     "explanation": "Strain = extension ÷ original length, a ratio of two lengths, so it has no unit.\n\n**Why the other options are wrong**\n\n- N m⁻²: That is the unit of stress.\n- N m⁻¹: That is the unit of the spring constant.\n- m: Strain is extension divided by original length: the metres cancel.",
+     "position": 6,
+     "options": [
+      {
+       "id": "e0c5d8fa-a05d-5ef3-b5d1-93aaff25a605",
+       "label": "A",
+       "content": "N m⁻²",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "90e8bf51-6844-55c6-b741-851fa0b63e4c",
+       "label": "B",
+       "content": "N m⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "aaf3431f-8e4f-5c60-9a7f-7ddeed97a38f",
+       "label": "C",
+       "content": "m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "13649d22-e300-5c6f-99f3-59df45c975e3",
+       "label": "D",
+       "content": "it has no unit",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e0871f8e-174d-5427-aa56-a4572dc0816e",
+     "key": "phy-ela-07",
+     "stem": "Two identical springs each extend 4 cm under a load of 10 N. How far does a 10 N load stretch the two springs joined end to end (in series)?",
+     "image_url": null,
+     "explanation": "In series each spring carries the whole load and extends 4 cm: total 8 cm.\n\n**Why the other options are wrong**\n\n- 4 cm: Each spring carries the full 10 N, so both stretch 4 cm.\n- 2 cm: That is the extension for the springs side by side (in parallel).\n- 16 cm: You doubled twice.",
+     "position": 7,
+     "options": [
+      {
+       "id": "587b234f-633f-52c5-b3f3-46ec37684e1f",
+       "label": "A",
+       "content": "2 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cf0b0576-e196-5a23-8564-644d31f63c7a",
+       "label": "B",
+       "content": "4 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b226df14-2932-5d8a-a614-69823c046883",
+       "label": "C",
+       "content": "8 cm",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "51276678-8ab0-504e-9e52-8072447331d0",
+       "label": "D",
+       "content": "16 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c87da82a-9ff0-58ba-be15-7783c3262ad0",
+     "key": "phy-ela-08",
+     "stem": "A material that breaks suddenly with little or no plastic deformation is described as",
+     "image_url": null,
+     "explanation": "Brittle materials such as glass and cast iron snap without stretching much.\n\n**Why the other options are wrong**\n\n- ductile: Ductile materials stretch a lot (plastically) before breaking.\n- elastic: An elastic material returns to its shape; this does not describe breaking.\n- malleable: Malleable materials can be hammered into sheets.",
+     "position": 8,
+     "options": [
+      {
+       "id": "1fb9ff09-5ebc-5844-b2e5-80fc3437a42a",
+       "label": "A",
+       "content": "brittle",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d50e5d2c-9b2f-5349-ac05-aff7385b0556",
+       "label": "B",
+       "content": "ductile",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8cc98044-5ea7-541f-b508-c4d25e2895da",
+       "label": "C",
+       "content": "elastic",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "448022d7-54f8-545f-8b17-81c2336f65d6",
+       "label": "D",
+       "content": "malleable",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "4e9bdbd4-9e0d-54eb-8820-fe5f6d87d53d",
+   "topic": "Surface Tension, Capillarity, and Viscosity",
+   "title": "Surface Tension, Capillarity, and Viscosity: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on surface tension, capillarity, and viscosity, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 122,
+   "questions": [
+    {
+     "id": "25d06126-b53a-51d7-ba58-e9353415c775",
+     "key": "phy-sur-01",
+     "stem": "A dry needle placed gently on water floats because of",
+     "image_url": null,
+     "explanation": "The water surface acts like a stretched skin that can support the light needle.\n\n**Why the other options are wrong**\n\n- upthrust alone: Steel is denser than water; upthrust alone cannot support it.\n- viscosity: Viscosity resists motion through a fluid; it does not support a resting needle.\n- capillarity: Capillarity is the rise of a liquid in narrow tubes.",
+     "position": 1,
+     "options": [
+      {
+       "id": "fa29c7bc-ab6a-526a-a450-4bb4db3ad15e",
+       "label": "A",
+       "content": "upthrust alone",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "21f5de15-22be-508a-8630-1e600744cfb8",
+       "label": "B",
+       "content": "viscosity",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "03e365fb-8429-5445-9c4a-d47e42d7d78d",
+       "label": "C",
+       "content": "capillarity",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8ce35ebc-fcef-51d3-9e80-83f06906a4e7",
+       "label": "D",
+       "content": "surface tension",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "df87d061-c6e1-54d5-a26b-e7a8cf193cab",
+     "key": "phy-sur-02",
+     "stem": "Which of the following reduces the surface tension of water?",
+     "image_url": null,
+     "explanation": "Soap and detergents (and raising the temperature) lower surface tension.\n\n**Why the other options are wrong**\n\n- cooling the water: Cooling increases surface tension slightly; heating reduces it.\n- placing a needle on it: A needle does not change the surface tension.\n- increasing the depth of water: Depth does not affect surface tension.",
+     "position": 2,
+     "options": [
+      {
+       "id": "6f1c269e-83ab-5f43-a6c3-2b9afcece7c6",
+       "label": "A",
+       "content": "adding detergent",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d801c2c3-9c99-5f13-8d7b-195c45b6f037",
+       "label": "B",
+       "content": "cooling the water",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7ad38e06-058b-5bce-92b9-4aa6dd17cd40",
+       "label": "C",
+       "content": "placing a needle on it",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "34776d07-e5e2-5515-b009-1801efaba09d",
+       "label": "D",
+       "content": "increasing the depth of water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7e5b9466-5c33-5c62-a5c1-bf8bd60bde0b",
+     "key": "phy-sur-03",
+     "stem": "In narrow glass tubes dipped in water, the water rises highest in the tube that is",
+     "image_url": null,
+     "explanation": "The narrower the tube, the higher the capillary rise.\n\n**Why the other options are wrong**\n\n- widest: Capillary rise is greater in narrower tubes.\n- longest: The length of the tube does not decide the rise.\n- made of plastic: Water rises because it wets glass; the question compares glass tubes.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2e52c6a3-db29-5aa5-901e-49b193b23ef9",
+       "label": "A",
+       "content": "widest",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0b4be48e-9669-557f-b5e0-b089866f16a3",
+       "label": "B",
+       "content": "longest",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "51b4dd7f-bbeb-5201-acee-1b58ebac2220",
+       "label": "C",
+       "content": "made of plastic",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ba693775-5a39-5bf9-8da7-7031ba130aef",
+       "label": "D",
+       "content": "narrowest",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1b23445c-e51c-559a-ab57-edc1c3c0c57a",
+     "key": "phy-sur-04",
+     "stem": "The meniscus of mercury in a glass tube is",
+     "image_url": null,
+     "explanation": "Mercury's cohesion exceeds its adhesion to glass, so its surface curves down and it is depressed in a narrow tube.\n\n**Why the other options are wrong**\n\n- concave, and the mercury rises above the outside level: That describes water in glass.\n- flat, and the level is unchanged: Mercury's cohesion gives a curved surface.\n- concave, and the mercury is depressed: Mercury's surface curves downwards at the edges (convex).",
+     "position": 4,
+     "options": [
+      {
+       "id": "29c955b6-fefa-5b72-92f7-acb994bc8e46",
+       "label": "A",
+       "content": "convex, and the mercury is depressed below the outside level",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2fb93847-37f0-57ca-95a9-25c5d3442115",
+       "label": "B",
+       "content": "concave, and the mercury rises above the outside level",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "aa716bc2-1d2c-5760-9780-95219d0be49d",
+       "label": "C",
+       "content": "flat, and the level is unchanged",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "72239a29-ad8e-59a0-a446-2d8dc88294e9",
+       "label": "D",
+       "content": "concave, and the mercury is depressed",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5f94268c-8305-5deb-8700-666e573ec615",
+     "key": "phy-sur-05",
+     "stem": "Oil rises up the wick of a kerosene lamp by",
+     "image_url": null,
+     "explanation": "The fine spaces between the wick's fibres act as capillary tubes.\n\n**Why the other options are wrong**\n\n- convection: Convection is heat transfer by fluid movement.\n- diffusion: Diffusion is too slow and random to lift the oil.\n- radiation: Radiation transfers heat, not liquid.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d56d3669-cece-561d-b6c3-f23022d21a84",
+       "label": "A",
+       "content": "convection",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "499243a3-7c86-5936-a190-88e37e5ffe82",
+       "label": "B",
+       "content": "diffusion",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2e4a9d64-ee1b-5d49-84d6-2635eab8d30d",
+       "label": "C",
+       "content": "radiation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ff0821c8-1968-516f-beb4-0067038ee863",
+       "label": "D",
+       "content": "capillarity",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "76d51dce-5a9b-5a2d-894f-dcf89ec4d4ac",
+     "key": "phy-sur-06",
+     "stem": "A steel ball falling through glycerine reaches terminal velocity when",
+     "image_url": null,
+     "explanation": "With the upward forces (upthrust + drag) balancing the weight, the resultant force is zero and the speed is constant.\n\n**Why the other options are wrong**\n\n- its weight equals the viscous drag alone: The upthrust also acts upwards and must be included.\n- the viscous drag becomes zero: Drag is greatest at terminal velocity.\n- its acceleration equals g: At terminal velocity the acceleration is zero.",
+     "position": 6,
+     "options": [
+      {
+       "id": "5229660a-f574-5ba0-9f5c-48245f3884e8",
+       "label": "A",
+       "content": "its weight equals the upthrust plus the viscous drag",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b21e92de-370d-54f9-97d1-898afa6e65e0",
+       "label": "B",
+       "content": "its weight equals the viscous drag alone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2c9ab6a4-32f5-5853-b2f7-2f3eafb420ae",
+       "label": "C",
+       "content": "the viscous drag becomes zero",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a3405b04-29e6-564f-b850-7d7b56402b30",
+       "label": "D",
+       "content": "its acceleration equals g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a0e08cde-d286-59de-8966-28e5d406bc95",
+     "key": "phy-sur-07",
+     "stem": "When engine oil is warmed, its viscosity",
+     "image_url": null,
+     "explanation": "The viscosity of liquids falls as temperature rises.\n\n**Why the other options are wrong**\n\n- increases: Liquids flow more easily when warm; it is gases whose viscosity rises with temperature.\n- stays the same: Temperature strongly affects the viscosity of liquids.\n- becomes zero: Warm oil still has some viscosity.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b50f81bc-43b0-57b6-8d46-b89c3a14632b",
+       "label": "A",
+       "content": "increases",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "27b608d7-f75b-5588-8ef6-e0ed1e5f1a53",
+       "label": "B",
+       "content": "decreases",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "dece439f-ad59-57fd-b13e-f569c453dc07",
+       "label": "C",
+       "content": "stays the same",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b97e6113-97ae-54ef-ad34-49395b3ea5c7",
+       "label": "D",
+       "content": "becomes zero",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "43c26cd8-9cdf-54f9-b585-e8fe423d8688",
+     "key": "phy-sur-08",
+     "stem": "A ball of weight 0.50 N falls through a liquid at its terminal velocity. The upthrust on it is 0.08 N. What is the viscous drag?",
+     "image_url": null,
+     "explanation": "At terminal velocity, $W = U + F$, so $F = 0.50 - 0.08 = 0.42\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 0.58 N: You added the upthrust to the weight.\n- 0.5 N: You left out the upthrust.\n- 0.08 N: That is the upthrust, not the drag.",
+     "position": 8,
+     "options": [
+      {
+       "id": "b0590792-7810-5600-b599-f7596e774c0e",
+       "label": "A",
+       "content": "0.08 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0c3bd039-1713-563e-886f-a0f3b2ba2d94",
+       "label": "B",
+       "content": "0.42 N",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "56af40e6-67b1-59e1-8ad7-56644947d977",
+       "label": "C",
+       "content": "0.5 N",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5aa71b38-473d-5f29-a01b-d21392ea002c",
+       "label": "D",
+       "content": "0.58 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e7fc2eca-5049-5291-a076-2fb00b57dbd0",
+   "topic": "Density and Pressure in Fluids",
+   "title": "Density and Pressure in Fluids: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on density and pressure in fluids, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 123,
+   "questions": [
+    {
+     "id": "1288d8c3-7007-590f-8618-57566cdb7812",
+     "key": "phy-flu-01",
+     "stem": "What is the pressure due to water at a depth of 8 m? (density of water = 1000 kg m⁻³, g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "$p = h\\rho g = 8 \\times 1000 \\times 10 = 80\\,000\\ \\text{Pa}$.\n\n**Why the other options are wrong**\n\n- 8000 Pa: You left out g (or the density of 1000 kg m⁻³ was used as 100).\n- 800 Pa: You used the depth × 100.\n- 180000 Pa: You added atmospheric pressure (100 000 Pa); the question asks for the pressure due to the water.",
+     "position": 1,
+     "options": [
+      {
+       "id": "36c5ebff-2c3c-5b26-9b81-7bee8c169551",
+       "label": "A",
+       "content": "800 Pa",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c95bfe88-1091-5863-9097-3d698737020f",
+       "label": "B",
+       "content": "8000 Pa",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6c3be209-9332-51a5-ba2d-a0beed4a7b7a",
+       "label": "C",
+       "content": "80000 Pa",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "87350835-9995-5ac5-807e-ff77bde13c8d",
+       "label": "D",
+       "content": "180000 Pa",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6ec3b8bb-b4a9-5566-b5c6-53144bf94255",
+     "key": "phy-flu-02",
+     "stem": "A box of weight 600 N rests on a face of area 0.3 m². What pressure does it exert on the floor?",
+     "image_url": null,
+     "explanation": "$p = \\dfrac{F}{A} = \\dfrac{600}{0.3} = 2000\\ \\text{Pa}$.\n\n**Why the other options are wrong**\n\n- 180 Pa: You multiplied the weight by the area.\n- 0.0005 Pa: You divided the area by the weight.\n- 200 Pa: You divided by 3 instead of 0.3.",
+     "position": 2,
+     "options": [
+      {
+       "id": "121b80bd-7dc7-5e97-b4ed-3919326358fd",
+       "label": "A",
+       "content": "0.0005 Pa",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3bcffa14-95a2-5fdf-9b3c-69d4c1013d97",
+       "label": "B",
+       "content": "180 Pa",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "412a6dca-61d1-57ce-86ee-b96847134e42",
+       "label": "C",
+       "content": "200 Pa",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f688a90f-d48f-52a3-a87f-fcb45d69e902",
+       "label": "D",
+       "content": "2000 Pa",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1b7d380c-9553-5526-a22c-71afa91eff36",
+     "key": "phy-flu-03",
+     "stem": "The pressure at a point in a liquid does NOT depend on",
+     "image_url": null,
+     "explanation": "$p = h\\rho g$ depends only on depth, density and g, not on the container's shape or width.\n\n**Why the other options are wrong**\n\n- the depth of the point: Pressure increases with depth ($p = h\\rho g$).\n- the density of the liquid: Denser liquids give more pressure at the same depth.\n- the acceleration due to gravity: $g$ appears in $p = h\\rho g$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "a88c5b5b-6a8d-5d37-9a57-aca0655dc869",
+       "label": "A",
+       "content": "the depth of the point",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e320bbb2-b77e-5ba4-8ff6-722e3f5f8a86",
+       "label": "B",
+       "content": "the density of the liquid",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "235c304b-8002-5cfa-9f09-1e6fe98a2319",
+       "label": "C",
+       "content": "the acceleration due to gravity",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fd96e4dc-7114-5342-a76a-09835e55cb21",
+       "label": "D",
+       "content": "the shape of the container",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6d900178-fa36-5d76-aed0-6e2592e546ba",
+     "key": "phy-flu-04",
+     "stem": "Mercury rather than water is used in a barometer mainly because",
+     "image_url": null,
+     "explanation": "A water barometer would need a column about 10 m tall; mercury (RD 13.6) needs only about 0.76 m.\n\n**Why the other options are wrong**\n\n- it is cheaper than water: Mercury is far more expensive than water.\n- it does not stick to glass: That helps, but the main reason is its high density.\n- it is a good conductor of heat: That matters for thermometers, not barometers.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ddbbf9bd-ae40-5e88-a9cc-ac40e210e26a",
+       "label": "A",
+       "content": "its high density gives a short, convenient column",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2b6c07aa-6439-5fc8-8c49-992cdcb5f4cc",
+       "label": "B",
+       "content": "it is cheaper than water",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f8b5c735-5c8d-5bcb-89a1-eb9019005672",
+       "label": "C",
+       "content": "it does not stick to glass",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "71af38b9-0e7f-5a6e-a984-dc551c41ad49",
+       "label": "D",
+       "content": "it is a good conductor of heat",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "228ed6db-36d7-58fe-b199-57fd893c16b0",
+     "key": "phy-flu-05",
+     "stem": "A stone weighs 6.0 N in air and 4.0 N when fully immersed in water. What is its relative density?",
+     "image_url": null,
+     "explanation": "Upthrust $= 6.0 - 4.0 = 2.0$ N. $\\text{RD} = \\dfrac{6.0}{2.0} = 3$.\n\n**Why the other options are wrong**\n\n- 1.5: You divided the weight in air by the weight in water. Divide by the upthrust (loss in weight).\n- 2: That is the upthrust in newtons.\n- 0.33: You divided the upthrust by the weight.",
+     "position": 5,
+     "options": [
+      {
+       "id": "8c0cea0f-c5ec-512c-9c1f-72bd7a8b5a81",
+       "label": "A",
+       "content": "0.33",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8dcee03e-9e57-5348-b751-5663fd6931d4",
+       "label": "B",
+       "content": "1.5",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "14e33bfd-0e68-5956-be8a-b5b12b1eeaee",
+       "label": "C",
+       "content": "2",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4164ba89-20f0-5655-bf7d-8019b31473da",
+       "label": "D",
+       "content": "3",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "342ed0fe-c53d-5b94-89a3-afd32d35b8be",
+     "key": "phy-flu-06",
+     "stem": "Archimedes' principle states that a body wholly or partly immersed in a fluid experiences an upthrust equal to",
+     "image_url": null,
+     "explanation": "Upthrust = weight of fluid displaced, whether the body floats or sinks.\n\n**Why the other options are wrong**\n\n- the weight of the body: That equals the upthrust only for a floating body (law of flotation).\n- the volume of the fluid displaced: Upthrust is a force, equal to the weight of displaced fluid, not its volume.\n- the density of the fluid: Density alone is not a force.",
+     "position": 6,
+     "options": [
+      {
+       "id": "cd9540b4-c5ba-59c6-ac90-ad328589bdfd",
+       "label": "A",
+       "content": "the weight of the body",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "752d9f96-2453-5612-9db5-33466f26a10c",
+       "label": "B",
+       "content": "the weight of the fluid displaced",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e34a7ba3-5274-5eea-976c-0cd5948e6e6c",
+       "label": "C",
+       "content": "the volume of the fluid displaced",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "39e50b16-31b4-50fc-a85a-ecf2d7b8234f",
+       "label": "D",
+       "content": "the density of the fluid",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8b02b6fb-65d9-5cbd-bddb-7721bbdbb59c",
+     "key": "phy-flu-07",
+     "stem": "A block of wood of density 700 kg m⁻³ floats in water of density 1000 kg m⁻³. What fraction of its volume is submerged?",
+     "image_url": null,
+     "explanation": "Weight of block = weight of water displaced: $700V = 1000V_{sub}$, so $\\dfrac{V_{sub}}{V} = 0.7$.\n\n**Why the other options are wrong**\n\n- 0.3: That is the fraction above the water.\n- 1.43: You inverted the ratio; the fraction must be less than 1.\n- 0.5: The fraction submerged equals the ratio of the densities, 700/1000.",
+     "position": 7,
+     "options": [
+      {
+       "id": "35684ca9-8306-57d9-8a25-cacc69e1684f",
+       "label": "A",
+       "content": "0.3",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ed67e4eb-6b8e-5bb2-8e23-e532bbe3fa36",
+       "label": "B",
+       "content": "0.5",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fcac5fa9-69ef-5388-9170-0bb6951eb942",
+       "label": "C",
+       "content": "0.7",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "31ccec35-daca-53ff-b954-b9af6e09dda6",
+       "label": "D",
+       "content": "1.43",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3533ef9c-7b05-5c11-9239-d1780690aef6",
+     "key": "phy-flu-08",
+     "stem": "In a hydraulic press, a force of 50 N is applied to a piston of area 10 cm². What force acts on the large piston of area 400 cm²?",
+     "image_url": null,
+     "explanation": "$F_2 = F_1\\dfrac{A_2}{A_1} = 50 \\times \\dfrac{400}{10} = 2000\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 1.25 N: You divided by the area ratio instead of multiplying.\n- 20000 N: You multiplied by 400 alone instead of the ratio 400/10.\n- 460 N: You added the areas to the force.",
+     "position": 8,
+     "options": [
+      {
+       "id": "e04e0af5-388b-570d-9eeb-b9d832552bf4",
+       "label": "A",
+       "content": "1.25 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "075a2541-d672-59db-a78c-11d7eb43291d",
+       "label": "B",
+       "content": "460 N",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ba918194-6316-594d-85bf-eeb913952ebe",
+       "label": "C",
+       "content": "2000 N",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "be046af7-dcb7-5ed5-afe8-b5434932e1f1",
+       "label": "D",
+       "content": "20000 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "03017477-2e8e-5960-90a4-7181c6425a81",
+   "topic": "Temperature and Thermometers",
+   "title": "Temperature and Thermometers: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on temperature and thermometers, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 124,
+   "questions": [
+    {
+     "id": "42690ea9-d756-5c06-81cd-0b6893a365f7",
+     "key": "phy-temp-01",
+     "stem": "Convert 57 °C to kelvin.",
+     "image_url": null,
+     "explanation": "$T = \\theta + 273 = 57 + 273 = 330\\ \\text{K}$.\n\n**Why the other options are wrong**\n\n- 216 K: You subtracted 273 instead of adding (and ignored the sign).\n- 57 K: Celsius and kelvin readings differ by 273.\n- -216 K: To convert °C to K, add 273.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e8882045-5887-51fb-a2e7-cc4589a14245",
+       "label": "A",
+       "content": "-216 K",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "15ac4e34-08ef-54b6-baca-9470e2b2a848",
+       "label": "B",
+       "content": "57 K",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "55f08fe3-d55b-566a-b326-736893021e4b",
+       "label": "C",
+       "content": "216 K",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3f8aaccd-fa54-5db1-8383-b3a5500f6e53",
+       "label": "D",
+       "content": "330 K",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "644f9b03-05ff-58cb-9986-822fcf5731b8",
+     "key": "phy-temp-02",
+     "stem": "The mercury thread of an unmarked thermometer is 3 cm long at the ice point and 23 cm long at the steam point. What temperature corresponds to a length of 12 cm?",
+     "image_url": null,
+     "explanation": "$\\theta = \\dfrac{12 - 3}{23 - 3} \\times 100 = \\dfrac{9}{20} \\times 100 = 45\\ °\\text{C}$.\n\n**Why the other options are wrong**\n\n- 60 °C: You used 12 ÷ 20 × 100 without subtracting the 3 cm at the ice point.\n- 52.2 °C: You divided by 23 instead of the interval 23 − 3 = 20.\n- 9 °C: That is the length above the ice point, not the temperature.",
+     "position": 2,
+     "options": [
+      {
+       "id": "30f8d80b-638c-54d3-a5ed-c063d4a949de",
+       "label": "A",
+       "content": "9 °C",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6862cdce-8b3a-5bbc-8975-eaaaa3fa40ed",
+       "label": "B",
+       "content": "45 °C",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a139c613-c1df-52d8-87c3-e74c0f42763a",
+       "label": "C",
+       "content": "52.2 °C",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "62fe7e2c-7233-5c27-ab01-53beb2ea169c",
+       "label": "D",
+       "content": "60 °C",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1a77f21a-17c6-57f5-8213-98b571eb89d7",
+     "key": "phy-temp-03",
+     "stem": "The thermometric property used in a thermocouple is",
+     "image_url": null,
+     "explanation": "A thermocouple produces an e.m.f. that depends on the temperature difference between its two junctions.\n\n**Why the other options are wrong**\n\n- the expansion of a liquid: That is the property of a liquid-in-glass thermometer.\n- the resistance of a platinum wire: That is used in a resistance thermometer.\n- the pressure of a gas at constant volume: That is used in a constant-volume gas thermometer.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d105eba8-0cf6-5e83-adaf-cef31f75b42b",
+       "label": "A",
+       "content": "the expansion of a liquid",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "974af568-46b7-5570-932f-df16195c363c",
+       "label": "B",
+       "content": "the resistance of a platinum wire",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a9f7d4ce-6d1a-5eb5-af3c-679990dcc413",
+       "label": "C",
+       "content": "the e.m.f. produced at the junction of two different metals",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "645ec4c1-7ee1-500a-951f-4759f2b7edb9",
+       "label": "D",
+       "content": "the pressure of a gas at constant volume",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "844bd66d-0612-5f61-bac1-f153f8b22484",
+     "key": "phy-temp-04",
+     "stem": "The constriction in a clinical thermometer",
+     "image_url": null,
+     "explanation": "The constriction breaks the mercury thread when the thermometer cools, so the reading stays until it is shaken back.\n\n**Why the other options are wrong**\n\n- makes the thermometer more sensitive: Sensitivity comes from the narrow bore, not the constriction.\n- increases the range of the thermometer: A clinical thermometer has a short range.\n- allows the thermometer to be sterilised in boiling water: It would break in boiling water; its range ends near 43 °C.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ba55a9d9-5232-5dae-b5f4-fb3e20dfe5cb",
+       "label": "A",
+       "content": "makes the thermometer more sensitive",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3904ef01-c3ca-5bd8-8db6-1fac10e80c95",
+       "label": "B",
+       "content": "increases the range of the thermometer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2d688dbe-834a-5dc3-b9a3-68b08fb62033",
+       "label": "C",
+       "content": "allows the thermometer to be sterilised in boiling water",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3153576b-7d88-557c-8ae7-d536cef17ff1",
+       "label": "D",
+       "content": "prevents the mercury from flowing back into the bulb",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1a3b2f4c-6e9f-5fae-8acc-1d4a4fb8cdb2",
+     "key": "phy-temp-05",
+     "stem": "Alcohol is preferred to mercury in thermometers used in very cold regions because alcohol",
+     "image_url": null,
+     "explanation": "Alcohol freezes at about −115 °C; mercury freezes at −39 °C.\n\n**Why the other options are wrong**\n\n- is opaque: Alcohol is colourless and must be dyed; mercury is the opaque one.\n- does not wet glass: Alcohol does wet glass.\n- has a higher boiling point: Alcohol boils at only 78 °C.",
+     "position": 5,
+     "options": [
+      {
+       "id": "239a2c63-c028-5f62-a32d-41b5c0d4bd3c",
+       "label": "A",
+       "content": "has a much lower freezing point",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "257c9cd8-664b-5405-9dfd-622c5cbcd536",
+       "label": "B",
+       "content": "is opaque",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e0b963a8-0add-545a-b84a-ac08f50e7688",
+       "label": "C",
+       "content": "does not wet glass",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fc96c0c3-b61d-5748-b9a4-4eef4d6bc8fc",
+       "label": "D",
+       "content": "has a higher boiling point",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1f022bea-82da-58c2-a38f-f55d020ad049",
+     "key": "phy-temp-06",
+     "stem": "The lower fixed point on the Celsius scale is the temperature of",
+     "image_url": null,
+     "explanation": "The ice point (0 °C) is the temperature of pure melting ice at standard atmospheric pressure.\n\n**Why the other options are wrong**\n\n- pure water boiling at standard pressure: That is the upper fixed point.\n- absolute zero: Absolute zero is −273 °C, not 0 °C.\n- a mixture of ice and salt: Salt lowers the melting point of ice.",
+     "position": 6,
+     "options": [
+      {
+       "id": "d2dd8be9-fad6-545c-8385-bb728178f128",
+       "label": "A",
+       "content": "pure water boiling at standard pressure",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e8135703-4c11-5c7e-aff3-bfb42b25a5de",
+       "label": "B",
+       "content": "pure melting ice at standard atmospheric pressure",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "3569f715-2fc9-51fa-9aaa-6bb01ae88932",
+       "label": "C",
+       "content": "absolute zero",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0560934f-1bed-5771-89c8-234bcc42778e",
+       "label": "D",
+       "content": "a mixture of ice and salt",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a5b62dc4-5584-5e1f-804d-6a4e004f71c9",
+     "key": "phy-temp-07",
+     "stem": "A resistance thermometer has a resistance of 20 Ω at 0 °C and 28 Ω at 100 °C. What temperature does a resistance of 23 Ω indicate?",
+     "image_url": null,
+     "explanation": "$\\theta = \\dfrac{23 - 20}{28 - 20} \\times 100 = \\dfrac{3}{8} \\times 100 = 37.5\\ °\\text{C}$.\n\n**Why the other options are wrong**\n\n- 82.1 °C: You divided 23 by 28 instead of using the interval between the fixed points.\n- 115 °C: You divided 23 by 20, the resistance at 0 °C.\n- 3 °C: That is the change in resistance, not the temperature.",
+     "position": 7,
+     "options": [
+      {
+       "id": "d2dcf08d-ab78-5f9e-82b1-8ee4f9e87d35",
+       "label": "A",
+       "content": "3 °C",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e90555f3-2dce-5ffb-8d74-694f44fd862a",
+       "label": "B",
+       "content": "37.5 °C",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "18a890c1-e091-5c2d-aa75-625eea4ad845",
+       "label": "C",
+       "content": "82.1 °C",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d4122768-b3fc-52ed-94fc-6f580abd242e",
+       "label": "D",
+       "content": "115 °C",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "861a4db1-854e-5029-ab2a-d6cfa8a8bf0f",
+     "key": "phy-temp-08",
+     "stem": "Which thermometer is most suitable for measuring the temperature of a furnace?",
+     "image_url": null,
+     "explanation": "A thermocouple works up to about 1500 °C and responds quickly.\n\n**Why the other options are wrong**\n\n- clinical thermometer: It has a range of only about 35–43 °C.\n- alcohol-in-glass thermometer: Alcohol boils at 78 °C.\n- mercury-in-glass thermometer: Mercury boils at 357 °C and glass softens far below furnace temperatures.",
+     "position": 8,
+     "options": [
+      {
+       "id": "a7d8ef69-187e-5703-a0ee-81fe5bdfccc9",
+       "label": "A",
+       "content": "clinical thermometer",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8264f976-60b0-5dfe-a6f8-2475f41b496f",
+       "label": "B",
+       "content": "alcohol-in-glass thermometer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "69481f9a-b5ed-5787-93c7-32c87663da0b",
+       "label": "C",
+       "content": "thermocouple",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f4f72f8e-48a9-5455-8b7c-43b3e23a0f8a",
+       "label": "D",
+       "content": "mercury-in-glass thermometer",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d317c1e4-9eea-5356-9f06-dffb7afbe468",
+   "topic": "Thermal Expansion",
+   "title": "Thermal Expansion: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on thermal expansion, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 125,
+   "questions": [
+    {
+     "id": "5c8cb0a2-efa9-559f-a277-7661a1e89035",
+     "key": "phy-exp-01",
+     "stem": "A brass rod 2.0 m long is heated from 20 °C to 70 °C. If the linear expansivity of brass is 2 × 10⁻⁵ K⁻¹, what is its increase in length?",
+     "image_url": null,
+     "explanation": "$\\Delta l = \\alpha l_0 \\Delta\\theta = 2 \\times 10^{-5} \\times 2.0 \\times 50 = 2 \\times 10^{-3}\\ \\text{m} = 2\\ \\text{mm}$.\n\n**Why the other options are wrong**\n\n- 0.002 mm: That is the answer in metres (0.002 m), labelled as millimetres.\n- 2.8 mm: You used the final temperature (70 °C) instead of the rise (50 K).\n- 1 mm: You used 1 m instead of 2 m.",
+     "position": 1,
+     "options": [
+      {
+       "id": "816890bd-1631-5744-bad7-5f8d2eb589c5",
+       "label": "A",
+       "content": "0.002 mm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "37880f05-a7c9-54ed-92de-d7320a30bc55",
+       "label": "B",
+       "content": "1 mm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "da063190-c260-526c-8d74-7e184a772696",
+       "label": "C",
+       "content": "2 mm",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9a557409-1214-5433-8b2e-57c61617cfb2",
+       "label": "D",
+       "content": "2.8 mm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5209b62d-9ac9-5427-9699-a7c26819eafe",
+     "key": "phy-exp-02",
+     "stem": "When a bimetallic strip of brass and iron is heated, it bends so that",
+     "image_url": null,
+     "explanation": "Brass has the larger expansivity; the longer brass side ends up on the outside of the curve.\n\n**Why the other options are wrong**\n\n- the iron is on the outside of the curve: Brass expands more, so it forms the longer, outer side.\n- it stays straight but gets longer: The two metals expand by different amounts, so it must bend.\n- it twists into a spiral: A straight strip bends into an arc.",
+     "position": 2,
+     "options": [
+      {
+       "id": "ab5ba7ae-648b-559e-befa-aea6dc47a9c8",
+       "label": "A",
+       "content": "the iron is on the outside of the curve",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d5b04301-b8fd-50e1-a314-e55c40d861af",
+       "label": "B",
+       "content": "it stays straight but gets longer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1caa2d09-1a14-5657-a123-125043853ed9",
+       "label": "C",
+       "content": "it twists into a spiral",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9a5a5ad6-3e5c-5234-9731-e8554396a5bf",
+       "label": "D",
+       "content": "the brass is on the outside of the curve",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "abaf6286-238c-56ea-9838-b686fd35e295",
+     "key": "phy-exp-03",
+     "stem": "Gaps are left between lengths of railway line in order to",
+     "image_url": null,
+     "explanation": "Without gaps, rails expanding in the heat would push against each other and buckle.\n\n**Why the other options are wrong**\n\n- allow rainwater to drain: The gaps are for expansion, not drainage.\n- reduce the cost of steel: The saving would be negligible.\n- make the train run more smoothly: Gaps make the ride slightly less smooth.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b01342b0-651f-5700-b8a8-14a72e06ece3",
+       "label": "A",
+       "content": "allow for expansion in hot weather",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c603ac6c-4f31-55f4-a43a-c54069be8474",
+       "label": "B",
+       "content": "allow rainwater to drain",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "879077d1-ef6c-59da-a0e7-b45be72738bc",
+       "label": "C",
+       "content": "reduce the cost of steel",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7d78f16e-cf95-5294-acfe-326bdeb45783",
+       "label": "D",
+       "content": "make the train run more smoothly",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4f12d616-bea0-5a14-a662-753d40abafdd",
+     "key": "phy-exp-04",
+     "stem": "The linear expansivity of a metal is 1.5 × 10⁻⁵ K⁻¹. What is its cubic (volume) expansivity?",
+     "image_url": null,
+     "explanation": "$\\gamma = 3\\alpha = 3 \\times 1.5 \\times 10^{-5} = 4.5 \\times 10^{-5}\\ \\text{K}^{-1}$.\n\n**Why the other options are wrong**\n\n- 3 × 10⁻⁵ K⁻¹: That is the area expansivity, 2α.\n- 1.5 × 10⁻⁵ K⁻¹: That is the linear expansivity itself.\n- 0.5 × 10⁻⁵ K⁻¹: Volume expansivity is 3α, not α ÷ 3.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ce32430e-84d1-5e5d-a4b5-a62e7e9e2a31",
+       "label": "A",
+       "content": "0.5 × 10⁻⁵ K⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "719bb5d2-3987-5c2c-b9cb-55cf60447292",
+       "label": "B",
+       "content": "1.5 × 10⁻⁵ K⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "aa66161a-be35-5364-9d5f-63d7a65f714e",
+       "label": "C",
+       "content": "3 × 10⁻⁵ K⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "26d4b828-4b81-5b93-b991-ee295d72d195",
+       "label": "D",
+       "content": "4.5 × 10⁻⁵ K⁻¹",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2490a209-ef91-5183-8301-967b6c761d2b",
+     "key": "phy-exp-05",
+     "stem": "Water has its maximum density at",
+     "image_url": null,
+     "explanation": "Water contracts as it is heated from 0 °C to 4 °C and expands above 4 °C: its density peaks at 4 °C.\n\n**Why the other options are wrong**\n\n- 0 °C: Water expands as it cools from 4 °C to 0 °C, so it is less dense at 0 °C.\n- 100 °C: Water is least dense when hot.\n- −4 °C: Below 0 °C pure water is ice, which is less dense than water.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e29665f4-332f-588b-bfab-b2f4dfe03007",
+       "label": "A",
+       "content": "0 °C",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "66c771e9-43e2-55f8-b73a-9cb87ca423b1",
+       "label": "B",
+       "content": "4 °C",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "fb4fb157-877e-58a0-8662-8a6eb73be2c1",
+       "label": "C",
+       "content": "100 °C",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7e6cfccc-8c27-5324-99a1-f02858ea35db",
+       "label": "D",
+       "content": "−4 °C",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "18069de4-091f-56f7-9c20-887ace2c90b2",
+     "key": "phy-exp-06",
+     "stem": "Fish survive in a frozen lake because",
+     "image_url": null,
+     "explanation": "Ice floats and insulates the water below, which remains liquid at about 4 °C.\n\n**Why the other options are wrong**\n\n- water is densest at 0 °C and sinks: Water is densest at 4 °C; the water at 0 °C stays on top and freezes.\n- ice conducts heat well and warms the water: Ice is a poor conductor; that is why it insulates.\n- the whole lake stays at 0 °C: The bottom water stays near 4 °C.",
+     "position": 6,
+     "options": [
+      {
+       "id": "861e76f0-795f-56b9-99c4-9dacf3c91400",
+       "label": "A",
+       "content": "water is densest at 0 °C and sinks",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "22ef12f3-b356-5c29-a0b3-311a4de5c8c4",
+       "label": "B",
+       "content": "ice conducts heat well and warms the water",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f631cd1e-935f-5c1b-b330-757c91460da8",
+       "label": "C",
+       "content": "ice is less dense than water and forms an insulating layer on top",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "08977e01-3f0c-5aea-b03b-330b99de5689",
+       "label": "D",
+       "content": "the whole lake stays at 0 °C",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eb1aa250-a9c7-5810-8772-fd4e388a2fcd",
+     "key": "phy-exp-07",
+     "stem": "The apparent expansivity of a liquid in a glass vessel is 1.6 × 10⁻⁴ K⁻¹ and the cubic expansivity of the glass is 0.3 × 10⁻⁴ K⁻¹. What is the real expansivity of the liquid?",
+     "image_url": null,
+     "explanation": "$\\gamma_r = \\gamma_a + \\gamma_g = 1.6 \\times 10^{-4} + 0.3 \\times 10^{-4} = 1.9 \\times 10^{-4}\\ \\text{K}^{-1}$.\n\n**Why the other options are wrong**\n\n- 1.3 × 10⁻⁴ K⁻¹: You subtracted. Real = apparent + expansivity of the container.\n- 0.48 × 10⁻⁴ K⁻¹: You multiplied the two expansivities.\n- 2.5 × 10⁻⁴ K⁻¹: You added 3 × 0.3; the 0.3 × 10⁻⁴ given is already the cubic expansivity.",
+     "position": 7,
+     "options": [
+      {
+       "id": "79e16eba-cb4a-5227-bfef-493ea43a8a22",
+       "label": "A",
+       "content": "0.48 × 10⁻⁴ K⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1164b3f6-7661-531a-ac15-efa3225365c5",
+       "label": "B",
+       "content": "1.3 × 10⁻⁴ K⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3c9fbbd6-fe61-5e41-9176-041cfee0f768",
+       "label": "C",
+       "content": "1.9 × 10⁻⁴ K⁻¹",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e75a077c-16c1-5e6c-b704-922d1d72539a",
+       "label": "D",
+       "content": "2.5 × 10⁻⁴ K⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4e215b80-c4ba-58cc-ab98-df1b6ca6284b",
+     "key": "phy-exp-08",
+     "stem": "One end of a steel bridge rests on rollers so that",
+     "image_url": null,
+     "explanation": "Rollers let the bridge lengthen in the heat and shorten in the cold without cracking its supports.\n\n**Why the other options are wrong**\n\n- the bridge can be moved to a new site: The rollers allow small changes in length, not relocation.\n- vehicles can cross it faster: Rollers do not affect traffic speed.\n- it does not rust: Rollers have nothing to do with rust.",
+     "position": 8,
+     "options": [
+      {
+       "id": "17d6224c-ebe6-5e91-ae4f-732cbcd62911",
+       "label": "A",
+       "content": "the bridge can be moved to a new site",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fdaa4e6b-4972-5753-8f1a-5a2aa5d8ab5a",
+       "label": "B",
+       "content": "vehicles can cross it faster",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0ac147df-c611-554f-b10a-6d504c8e9234",
+       "label": "C",
+       "content": "it does not rust",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "edfdbca8-c52f-5570-807d-18c1f335f3cb",
+       "label": "D",
+       "content": "the bridge can expand and contract freely",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f37f2362-abd7-5678-aa29-f90d88b7f66c",
+   "topic": "Quantity of Heat and Calorimetry",
+   "title": "Quantity of Heat and Calorimetry: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on quantity of heat and calorimetry, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 126,
+   "questions": [
+    {
+     "id": "35e17f56-9e3e-598a-b183-0fe2b3e63833",
+     "key": "phy-cal-01",
+     "stem": "How much heat is needed to raise the temperature of 3 kg of water from 20 °C to 70 °C? (c = 4200 J kg⁻¹ K⁻¹)",
+     "image_url": null,
+     "explanation": "$Q = mc\\Delta\\theta = 3 \\times 4200 \\times 50 = 630\\,000\\ \\text{J}$.\n\n**Why the other options are wrong**\n\n- 882000 J: You used the final temperature (70 °C) instead of the rise (50 K).\n- 210000 J: You left out the mass of 3 kg.\n- 252000 J: You used the starting temperature (20 °C) as the rise.",
+     "position": 1,
+     "options": [
+      {
+       "id": "4da974b7-7c68-5b37-95be-d3f99c1c6f7c",
+       "label": "A",
+       "content": "210000 J",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6ec05e0f-78a2-58d4-97b9-482c66794a33",
+       "label": "B",
+       "content": "252000 J",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "457fc388-e030-5c59-9676-c289a20fc92c",
+       "label": "C",
+       "content": "630000 J",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "00de1b63-f0f8-59bb-8e42-daf6d74fdc94",
+       "label": "D",
+       "content": "882000 J",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "121a34b7-51c9-5173-a1dc-dc13ca229eba",
+     "key": "phy-cal-02",
+     "stem": "The SI unit of specific heat capacity is",
+     "image_url": null,
+     "explanation": "Specific heat capacity = heat ÷ (mass × temperature change): J kg⁻¹ K⁻¹.\n\n**Why the other options are wrong**\n\n- J K⁻¹: That is the unit of heat capacity (of a whole object).\n- J kg⁻¹: That is the unit of specific latent heat.\n- J: That is the unit of heat (energy).",
+     "position": 2,
+     "options": [
+      {
+       "id": "4baccf7b-f040-5599-a37c-b006e59f423f",
+       "label": "A",
+       "content": "J kg⁻¹ K⁻¹",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3b18f8e2-b3e2-57bf-b8ef-dc1b77ab7c74",
+       "label": "B",
+       "content": "J K⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "551c0e02-4823-502a-9c50-39ff85e49a49",
+       "label": "C",
+       "content": "J kg⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8c1e90c3-27c8-5ac7-b12f-901e826d8999",
+       "label": "D",
+       "content": "J",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9ad2f9b8-4a30-5107-be4e-1cf11effeee3",
+     "key": "phy-cal-03",
+     "stem": "2 kg of water at 80 °C is mixed with 3 kg of water at 30 °C. What is the final temperature, assuming no heat loss?",
+     "image_url": null,
+     "explanation": "$2(80 - \\theta) = 3(\\theta - 30) \\Rightarrow 160 - 2\\theta = 3\\theta - 90 \\Rightarrow \\theta = 50\\ °\\text{C}$.\n\n**Why the other options are wrong**\n\n- 55 °C: You averaged the temperatures without weighting by mass.\n- 60 °C: You weighted the hot water by 3 kg and the cold by 2 kg.\n- 25 °C: You halved the difference between the two temperatures.",
+     "position": 3,
+     "options": [
+      {
+       "id": "fbe1832c-cedb-5314-b03e-9cd6e2700d16",
+       "label": "A",
+       "content": "25 °C",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cec8223c-9b72-5649-b9b2-9ad53f678a53",
+       "label": "B",
+       "content": "50 °C",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f77f753d-41c3-5396-9fa1-f70a7df044fc",
+       "label": "C",
+       "content": "55 °C",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a22676b4-3b0d-594b-9ca9-8ce6a06cc19b",
+       "label": "D",
+       "content": "60 °C",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "23774815-55dc-5bde-86aa-47d9356316d2",
+     "key": "phy-cal-04",
+     "stem": "A 1.5 kW kettle heats 1.0 kg of water from 25 °C to 100 °C. Ignoring heat loss, how long does this take? (c = 4200 J kg⁻¹ K⁻¹)",
+     "image_url": null,
+     "explanation": "$t = \\dfrac{mc\\Delta\\theta}{P} = \\dfrac{1.0 \\times 4200 \\times 75}{1500} = 210\\ \\text{s}$.\n\n**Why the other options are wrong**\n\n- 280 s: You used the final temperature (100 °C) instead of the rise (75 K).\n- 3.5 s: That is the time in minutes, not seconds.\n- 210000 s: You forgot to change 1.5 kW to 1500 W (you divided by 1.5).",
+     "position": 4,
+     "options": [
+      {
+       "id": "91ae8945-2bc8-5ee9-8813-6a3023f0b55f",
+       "label": "A",
+       "content": "3.5 s",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0aebc0b5-28ba-5955-8aab-b6fc3894f928",
+       "label": "B",
+       "content": "210 s",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2399c558-182d-55e1-bc14-145bddfaf136",
+       "label": "C",
+       "content": "280 s",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "54c423b4-7834-5b33-8623-d4195c8f0b59",
+       "label": "D",
+       "content": "210000 s",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f00f19da-cad3-53fd-95d9-44180d59a6fa",
+     "key": "phy-cal-05",
+     "stem": "A metal block of mass 2 kg absorbs 18 000 J of heat and its temperature rises by 20 K. What is the specific heat capacity of the metal?",
+     "image_url": null,
+     "explanation": "$c = \\dfrac{Q}{m\\Delta\\theta} = \\dfrac{18\\,000}{2 \\times 20} = 450\\ \\text{J kg}^{-1}\\ \\text{K}^{-1}$.\n\n**Why the other options are wrong**\n\n- 900 J kg⁻¹ K⁻¹: That is the heat capacity of the whole block (J K⁻¹). Divide by the mass too.\n- 720000 J kg⁻¹ K⁻¹: You multiplied instead of dividing.\n- 225 J kg⁻¹ K⁻¹: You divided by 2 twice.",
+     "position": 5,
+     "options": [
+      {
+       "id": "72b8b4e7-6dd1-54d4-9d1c-2dbe2b163775",
+       "label": "A",
+       "content": "225 J kg⁻¹ K⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ecc36554-e360-5414-bb1a-4b220782c398",
+       "label": "B",
+       "content": "450 J kg⁻¹ K⁻¹",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "995c2464-f6f7-5e35-8ede-8b970fd5d1b5",
+       "label": "C",
+       "content": "900 J kg⁻¹ K⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d7e2e4ad-d628-5d88-8488-64d6f1c4de1a",
+       "label": "D",
+       "content": "720000 J kg⁻¹ K⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "248c7da5-4bbb-5a4e-9555-53f4da2243c7",
+     "key": "phy-cal-06",
+     "stem": "Water is used to cool car engines mainly because it has a high",
+     "image_url": null,
+     "explanation": "A high specific heat capacity lets water absorb a lot of heat with only a small temperature rise.\n\n**Why the other options are wrong**\n\n- density: Density does not let it absorb more heat per degree.\n- boiling point: Water's boiling point (100 °C) is not especially high.\n- thermal conductivity: Water is a poor conductor; its value lies in absorbing heat.",
+     "position": 6,
+     "options": [
+      {
+       "id": "a3e93085-3e83-52dd-a7bf-b4eee4befed1",
+       "label": "A",
+       "content": "density",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d92b95a1-6618-5c76-b6d6-381feadca67b",
+       "label": "B",
+       "content": "specific heat capacity",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7c8e3c71-278e-5250-a087-3708f0e89114",
+       "label": "C",
+       "content": "boiling point",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "11489032-490d-5e22-b9de-d8c8878adbf8",
+       "label": "D",
+       "content": "thermal conductivity",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d4c01ec9-bf5d-5224-9ad7-3789b00dabbd",
+     "key": "phy-cal-07",
+     "stem": "An immersion heater supplies 12 V and 5 A for 2 minutes to 0.6 kg of a liquid, raising its temperature by 4 K. What is the specific heat capacity of the liquid?",
+     "image_url": null,
+     "explanation": "$c = \\dfrac{VIt}{m\\Delta\\theta} = \\dfrac{12 \\times 5 \\times 120}{0.6 \\times 4} = \\dfrac{7200}{2.4} = 3000\\ \\text{J kg}^{-1}\\ \\text{K}^{-1}$.\n\n**Why the other options are wrong**\n\n- 50 J kg⁻¹ K⁻¹: You used 2 s instead of 120 s.\n- 1800 J kg⁻¹ K⁻¹: You did not divide by the mass of 0.6 kg.\n- 12000 J kg⁻¹ K⁻¹: You divided by 0.6 × 1 instead of 0.6 × 4.",
+     "position": 7,
+     "options": [
+      {
+       "id": "6bff86d4-210c-5040-932c-42d8a7127fed",
+       "label": "A",
+       "content": "50 J kg⁻¹ K⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "970e0c62-06e7-5cb4-a251-f72ba8a5d7bc",
+       "label": "B",
+       "content": "1800 J kg⁻¹ K⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "14f840e7-c335-5f0d-b9a1-28309347e631",
+       "label": "C",
+       "content": "3000 J kg⁻¹ K⁻¹",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d0557c5f-26e1-5516-9663-b1bbf9c57caa",
+       "label": "D",
+       "content": "12000 J kg⁻¹ K⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "912dd8ff-d75e-5cd3-b3d7-4b3e22c816a3",
+     "key": "phy-cal-08",
+     "stem": "In a method-of-mixtures experiment, the calorimeter is lagged in order to",
+     "image_url": null,
+     "explanation": "Lagging (with a poor conductor) reduces heat loss or gain, so 'heat lost = heat gained' holds more closely.\n\n**Why the other options are wrong**\n\n- increase the specific heat capacity of the water: Lagging does not change any specific heat capacity.\n- make the mixture reach a higher temperature than possible: It only reduces losses; it cannot add heat.\n- speed up mixing: Stirring speeds up mixing; lagging reduces heat loss.",
+     "position": 8,
+     "options": [
+      {
+       "id": "6382a11b-7529-5a3c-a011-d985b57535da",
+       "label": "A",
+       "content": "increase the specific heat capacity of the water",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "22fb791a-255a-5cf0-b715-caf38ff7f347",
+       "label": "B",
+       "content": "make the mixture reach a higher temperature than possible",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "15380f6a-3eff-5f94-81aa-cb3154b58920",
+       "label": "C",
+       "content": "reduce heat exchange with the surroundings",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "60a819d4-6b9c-56b6-8e6b-4a0883096f1b",
+       "label": "D",
+       "content": "speed up mixing",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c78f6fac-37c5-5da0-855d-55b0275da7aa",
+   "topic": "Change of State",
+   "title": "Change of State: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on change of state, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 127,
+   "questions": [
+    {
+     "id": "3b51f7b1-6f9c-507e-8d31-5e75165936c0",
+     "key": "phy-cs-01",
+     "stem": "How much heat is needed to melt 0.5 kg of ice at 0 °C? (specific latent heat of fusion = 3.36 × 10⁵ J kg⁻¹)",
+     "image_url": null,
+     "explanation": "$Q = mL_f = 0.5 \\times 3.36 \\times 10^{5} = 1.68 \\times 10^{5}\\ \\text{J}$.\n\n**Why the other options are wrong**\n\n- 336000 J: You used 1 kg instead of 0.5 kg.\n- 672000 J: You multiplied by 2 instead of 0.5.\n- 1050 J: You used $mc\\Delta\\theta$; at 0 °C the ice melts without a temperature change, so use $mL$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "5a71d810-d8fb-55c4-a153-c17a22493f75",
+       "label": "A",
+       "content": "1050 J",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ce4b1422-3d6a-54d1-ba7b-0159d4bd65eb",
+       "label": "B",
+       "content": "168000 J",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c89d13f6-c36f-5395-96ee-5017bf07d3af",
+       "label": "C",
+       "content": "336000 J",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9b10db3f-5715-5be3-b25d-cb98df203e8d",
+       "label": "D",
+       "content": "672000 J",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0b3632e7-2b93-5c6e-aa19-71d2c2774600",
+     "key": "phy-cs-02",
+     "stem": "While a pure substance is melting, its temperature",
+     "image_url": null,
+     "explanation": "Latent heat changes the state without changing the temperature.\n\n**Why the other options are wrong**\n\n- rises steadily: The heat goes into breaking bonds, not into speeding up the particles.\n- falls: The substance is gaining heat, not losing it.\n- rises and falls: A pure substance melts at one fixed temperature.",
+     "position": 2,
+     "options": [
+      {
+       "id": "43eecfdf-1c56-5d9e-85fe-5fc9befe7a0e",
+       "label": "A",
+       "content": "rises steadily",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fc0ef71b-8d7c-5d10-927f-a0fb3abc5ae9",
+       "label": "B",
+       "content": "falls",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "909c20fc-1a8f-5fd4-9632-e2dec20ed907",
+       "label": "C",
+       "content": "rises and falls",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b3749562-7307-5eea-86d2-84608bf918fe",
+       "label": "D",
+       "content": "remains constant",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b4ac92fe-ed25-5c6f-b2dc-2cb12ea28cf0",
+     "key": "phy-cs-03",
+     "stem": "How much heat is released when 0.1 kg of steam at 100 °C condenses to water at 100 °C? (L_v = 2.26 × 10⁶ J kg⁻¹)",
+     "image_url": null,
+     "explanation": "$Q = mL_v = 0.1 \\times 2.26 \\times 10^{6} = 2.26 \\times 10^{5}\\ \\text{J}$.\n\n**Why the other options are wrong**\n\n- 2260000 J: You used 1 kg instead of 0.1 kg.\n- 22600 J: You used 0.01 kg.\n- 42000 J: You used $mc\\Delta\\theta$ with 100 K; condensation at 100 °C needs $mL_v$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "3061b059-e321-523b-9d53-dd702b8d15c7",
+       "label": "A",
+       "content": "22600 J",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "aeaac664-f105-5e37-ba6d-30c1b462d6b2",
+       "label": "B",
+       "content": "42000 J",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "17fcf077-0885-5424-807b-0e941990923f",
+       "label": "C",
+       "content": "226000 J",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "81560427-1b09-511f-aae3-8e2c46590f93",
+       "label": "D",
+       "content": "2260000 J",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "87f1cea9-7ee1-5c7a-bdb7-509b5f98746b",
+     "key": "phy-cs-04",
+     "stem": "How much heat is needed to change 0.2 kg of water at 40 °C completely into steam at 100 °C? (c = 4200 J kg⁻¹ K⁻¹, L_v = 2.26 × 10⁶ J kg⁻¹)",
+     "image_url": null,
+     "explanation": "Warm: $0.2 \\times 4200 \\times 60 = 50\\,400$ J. Boil: $0.2 \\times 2.26 \\times 10^{6} = 452\\,000$ J. Total $= 502\\,400$ J.\n\n**Why the other options are wrong**\n\n- 452000 J: You left out the heat needed to warm the water from 40 °C to 100 °C.\n- 50400 J: That only warms the water to 100 °C; it still has to boil.\n- 536000 J: You warmed the water through 100 K instead of 60 K.",
+     "position": 4,
+     "options": [
+      {
+       "id": "3a3e233c-52d3-5fa6-8800-df585ffbb621",
+       "label": "A",
+       "content": "50400 J",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3584e733-5583-5b14-a8b0-4f9b4b3d66d1",
+       "label": "B",
+       "content": "452000 J",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0687490f-4703-5ba8-8ee7-c92c979f7069",
+       "label": "C",
+       "content": "502400 J",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a755ef46-43e8-5f35-933f-3c8c2f025723",
+       "label": "D",
+       "content": "536000 J",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "48951016-1deb-5051-aa9c-d98b3bc1b523",
+     "key": "phy-cs-05",
+     "stem": "A liquid boils when its saturated vapour pressure equals",
+     "image_url": null,
+     "explanation": "Bubbles of vapour can form and grow only when the vapour pressure matches the pressure pushing on the liquid.\n\n**Why the other options are wrong**\n\n- zero: A liquid with zero vapour pressure would not evaporate at all.\n- the pressure at the bottom of the container: Boiling depends on the pressure on the surface.\n- its own weight: Weight is not a pressure.",
+     "position": 5,
+     "options": [
+      {
+       "id": "54ba2a70-93f7-5d86-a26f-a7e14a2987a7",
+       "label": "A",
+       "content": "the external pressure above it",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d9e7f7fd-76eb-56db-9e90-b8bc4a04af5e",
+       "label": "B",
+       "content": "zero",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "da39a266-55c9-5aec-a86b-ba479125a776",
+       "label": "C",
+       "content": "the pressure at the bottom of the container",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d9fb487c-c833-55cc-ab02-0fc0b79dfcc8",
+       "label": "D",
+       "content": "its own weight",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "848fc544-5681-5f22-a700-98558435d5a3",
+     "key": "phy-cs-06",
+     "stem": "Food cooks faster in a pressure cooker because",
+     "image_url": null,
+     "explanation": "At about twice atmospheric pressure water boils near 120 °C, so food cooks faster.\n\n**Why the other options are wrong**\n\n- the pressure lowers the boiling point of water: Higher pressure raises the boiling point.\n- steam is a better conductor than water: Steam is a poor conductor.\n- the cooker uses less heat: The point is the higher cooking temperature.",
+     "position": 6,
+     "options": [
+      {
+       "id": "e714c3c2-3afc-5f79-8b39-1d66d7e42470",
+       "label": "A",
+       "content": "the pressure lowers the boiling point of water",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "747b7750-00ce-5fea-99d7-add71eecd523",
+       "label": "B",
+       "content": "the higher pressure raises the boiling point of water",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "23eb927f-e210-5575-b00f-5ec48a51e107",
+       "label": "C",
+       "content": "steam is a better conductor than water",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "64f95c8d-7570-5b26-af62-0c99ce96828b",
+       "label": "D",
+       "content": "the cooker uses less heat",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ba44149c-7913-52cc-a163-1ed7b373d6ab",
+     "key": "phy-cs-07",
+     "stem": "In a refrigerator, heat is absorbed from the inside of the cabinet when the refrigerant",
+     "image_url": null,
+     "explanation": "Evaporating in the freezer coils, the refrigerant takes in latent heat from the inside of the cabinet.\n\n**Why the other options are wrong**\n\n- condenses: Condensation releases heat; it happens in the coils at the back.\n- is compressed: Compression heats the vapour; it does not absorb heat from the food.\n- freezes: The refrigerant does not freeze in normal operation.",
+     "position": 7,
+     "options": [
+      {
+       "id": "a356e512-3c1b-5801-b19a-258b232807ae",
+       "label": "A",
+       "content": "condenses",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "deec3117-a900-55b1-bec7-0b55ee9618a8",
+       "label": "B",
+       "content": "is compressed",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0edce89e-69fb-5474-b808-6a9813780774",
+       "label": "C",
+       "content": "evaporates",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7abd3a89-ddb4-54a6-a486-dc5000bc3694",
+       "label": "D",
+       "content": "freezes",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "301c0ce7-1bb2-5d50-aa57-b0ecc746dc29",
+     "key": "phy-cs-08",
+     "stem": "The temperature at which air becomes saturated with water vapour and dew begins to form is called the",
+     "image_url": null,
+     "explanation": "Cooling air to its dew point makes the water vapour condense as dew, mist or fog.\n\n**Why the other options are wrong**\n\n- boiling point: Boiling point is where a liquid's vapour pressure equals the external pressure.\n- melting point: Melting point concerns solid to liquid.\n- ice point: The ice point is 0 °C, the melting point of ice.",
+     "position": 8,
+     "options": [
+      {
+       "id": "88d93214-3942-5b95-bac4-6ae9ac58c3f9",
+       "label": "A",
+       "content": "boiling point",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "61794266-2434-572c-8533-90b9181292ab",
+       "label": "B",
+       "content": "melting point",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4725d213-53f9-5a56-a10f-61ca7f593812",
+       "label": "C",
+       "content": "ice point",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "867cd8be-e78f-5e8b-a7a0-75dcf5a5fafc",
+       "label": "D",
+       "content": "dew point",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8d6d9cb4-2a17-5163-b082-f40186c5e935",
+   "topic": "Heat Transfer",
+   "title": "Heat Transfer: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on heat transfer, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 128,
+   "questions": [
+    {
+     "id": "ecafbea0-6044-517c-a4ca-42071e037d58",
+     "key": "phy-ht-01",
+     "stem": "Heat from the Sun reaches the Earth by",
+     "image_url": null,
+     "explanation": "Only radiation (electromagnetic waves) can travel through a vacuum.\n\n**Why the other options are wrong**\n\n- conduction: Conduction needs a material medium; space is almost empty.\n- convection: Convection needs a fluid to move.\n- conduction and convection: Neither can cross the vacuum of space.",
+     "position": 1,
+     "options": [
+      {
+       "id": "317e6127-b06d-5a47-ba95-075eacc66957",
+       "label": "A",
+       "content": "radiation",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "cd5b3667-8a2a-5ee6-8f65-d1d40d9318a2",
+       "label": "B",
+       "content": "conduction",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "138984ea-9ee1-5dc5-b03e-ece9121dbb29",
+       "label": "C",
+       "content": "convection",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8734d3bf-c417-5efb-8cbe-fd73c2af9964",
+       "label": "D",
+       "content": "conduction and convection",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "64ae1c5f-cd51-50a6-9a7b-5007f3ba0a7a",
+     "key": "phy-ht-02",
+     "stem": "Which surface is the best absorber of radiant heat?",
+     "image_url": null,
+     "explanation": "Dull black surfaces are the best absorbers and the best emitters of radiation.\n\n**Why the other options are wrong**\n\n- shiny white: Shiny white surfaces reflect most radiation.\n- polished silver: Silvered surfaces are the worst absorbers.\n- shiny black: A shiny surface reflects more than a dull one of the same colour.",
+     "position": 2,
+     "options": [
+      {
+       "id": "48b2ca50-e581-52b8-9303-ecf337b9b437",
+       "label": "A",
+       "content": "shiny white",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "12632e58-e469-5d27-8578-96980f2c7160",
+       "label": "B",
+       "content": "dull black",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a2e12149-0137-5973-b109-b806a814eced",
+       "label": "C",
+       "content": "polished silver",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "00784a2e-4006-5d06-aeff-8ff318c3a6ea",
+       "label": "D",
+       "content": "shiny black",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8a015fc4-63e7-57a3-94c3-bf259f555ad0",
+     "key": "phy-ht-03",
+     "stem": "The heating element of an electric kettle is placed at the bottom so that",
+     "image_url": null,
+     "explanation": "Water heated at the bottom becomes less dense and rises; cooler water sinks to be heated.\n\n**Why the other options are wrong**\n\n- conduction through the base is reduced: The aim is to heat the water, not to reduce conduction.\n- the water heats by radiation: Radiation plays a small part; convection does the work.\n- the element stays cool: The element becomes very hot wherever it is placed.",
+     "position": 3,
+     "options": [
+      {
+       "id": "6b9966db-c028-5061-a7cb-f87d2ba7b37e",
+       "label": "A",
+       "content": "conduction through the base is reduced",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "407ac282-6a6c-5774-b4c4-d3164b25e219",
+       "label": "B",
+       "content": "the water heats by radiation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1883c59d-0559-5fa5-a674-49754f9a59b2",
+       "label": "C",
+       "content": "convection currents can heat all the water",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2bf4321e-cd28-5ab2-a0f6-3555218fe0a8",
+       "label": "D",
+       "content": "the element stays cool",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6c611c97-868d-526a-9856-dc48d5388e46",
+     "key": "phy-ht-04",
+     "stem": "In a vacuum flask, the vacuum between the walls reduces heat transfer by",
+     "image_url": null,
+     "explanation": "Conduction and convection both need a material medium; a vacuum has none.\n\n**Why the other options are wrong**\n\n- radiation only: Radiation crosses a vacuum; the silvering reduces it.\n- radiation and convection: A vacuum does not stop radiation.\n- evaporation only: The stopper reduces evaporation.",
+     "position": 4,
+     "options": [
+      {
+       "id": "8d35f108-caaa-5faf-b338-44859050f737",
+       "label": "A",
+       "content": "radiation only",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "692b4ed0-bff8-59a7-b441-681e1beb9720",
+       "label": "B",
+       "content": "radiation and convection",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "31941ab6-162d-5e08-a54c-434489e9faf5",
+       "label": "C",
+       "content": "evaporation only",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "15dba6f4-239f-5c34-bc97-b45a36986503",
+       "label": "D",
+       "content": "conduction and convection",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "41803c1b-9bbd-58a9-af39-600d49cd5416",
+     "key": "phy-ht-05",
+     "stem": "A sea breeze blows from the sea to the land during the day because",
+     "image_url": null,
+     "explanation": "Air over the hotter land rises, and cooler air from over the sea flows in to replace it.\n\n**Why the other options are wrong**\n\n- the sea heats up faster than the land: Water has the higher specific heat capacity, so it warms more slowly.\n- cold air rises over the land: Warm, less dense air rises.\n- the wind always blows from the sea: At night the breeze reverses (land breeze).",
+     "position": 5,
+     "options": [
+      {
+       "id": "61a856ee-7fc2-593d-a761-a67dfb120877",
+       "label": "A",
+       "content": "the land heats up faster, so warm air rises over the land",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8fbde436-1d82-5030-836f-44efacd40449",
+       "label": "B",
+       "content": "the sea heats up faster than the land",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "31c33a9d-23b2-5ce8-a44f-41366b1baa18",
+       "label": "C",
+       "content": "cold air rises over the land",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bf01e2ed-6ebc-51df-99e7-577e1e1d428d",
+       "label": "D",
+       "content": "the wind always blows from the sea",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9f5b4a56-290b-5df4-b8f2-603f5b9c24c0",
+     "key": "phy-ht-06",
+     "stem": "Cooking pots often have wooden or plastic handles because these materials are",
+     "image_url": null,
+     "explanation": "A poor conductor keeps the handle cool enough to hold.\n\n**Why the other options are wrong**\n\n- good conductors of heat: A good conductor would make the handle too hot to hold.\n- good emitters of radiation: Radiation is not the reason for the choice.\n- transparent to infrared radiation: That is not the property that matters here.",
+     "position": 6,
+     "options": [
+      {
+       "id": "58c883bd-a1ac-5ede-8054-e62dfebab8d6",
+       "label": "A",
+       "content": "good conductors of heat",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8b0ef175-6432-550b-ac06-97cd2bdc7f5e",
+       "label": "B",
+       "content": "poor conductors of heat",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d600e111-a554-5f3c-9148-dba78db66030",
+       "label": "C",
+       "content": "good emitters of radiation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "008d0a93-d676-594b-aa1b-6cdf76d75cae",
+       "label": "D",
+       "content": "transparent to infrared radiation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "79e57bd9-75e1-507a-a710-2a47bd5cb0e8",
+     "key": "phy-ht-07",
+     "stem": "The greenhouse effect occurs because glass (or carbon dioxide in the atmosphere)",
+     "image_url": null,
+     "explanation": "Short-wave radiation from the hot Sun passes through; the cooler ground re-emits long-wave infrared, which is trapped.\n\n**Why the other options are wrong**\n\n- lets long-wavelength infrared in but blocks short-wavelength radiation: It is the other way round.\n- conducts heat from outside into the greenhouse: Glass is a poor conductor.\n- produces heat when sunlight falls on it: Glass does not generate heat; it traps re-emitted infrared.",
+     "position": 7,
+     "options": [
+      {
+       "id": "170dd9ee-140a-5b81-aaf5-4e8de9a0500c",
+       "label": "A",
+       "content": "lets long-wavelength infrared in but blocks short-wavelength radiation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "04fc18c2-790d-57e9-a700-d9db6c326640",
+       "label": "B",
+       "content": "conducts heat from outside into the greenhouse",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "07e9d029-a0e2-537c-82cd-1785048507ce",
+       "label": "C",
+       "content": "lets short-wavelength radiation in but traps long-wavelength infrared",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "85319883-b3d3-52a4-8a80-be88cc13eb96",
+       "label": "D",
+       "content": "produces heat when sunlight falls on it",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b530d13d-5e51-5896-bfc7-b9e637399ee9",
+     "key": "phy-ht-08",
+     "stem": "Woollen clothing keeps the body warm mainly because",
+     "image_url": null,
+     "explanation": "Air trapped between the fibres is a very poor conductor, reducing heat loss from the body.\n\n**Why the other options are wrong**\n\n- wool produces heat: Wool does not generate heat.\n- wool is a good conductor: A good conductor would carry body heat away.\n- wool is a good absorber of sunlight: Clothes keep you warm even indoors at night.",
+     "position": 8,
+     "options": [
+      {
+       "id": "73d6cf80-e97e-5f72-99fb-7cc1dc6225ed",
+       "label": "A",
+       "content": "wool produces heat",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1072d2ff-bcb2-54b1-adbb-92668a9d49ea",
+       "label": "B",
+       "content": "wool is a good conductor",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "90652a59-080c-5270-ac3b-4acb417b8283",
+       "label": "C",
+       "content": "wool is a good absorber of sunlight",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bb16696c-2474-5340-8f4f-3f43547e665d",
+       "label": "D",
+       "content": "it traps air, which is a poor conductor",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8b2de7f2-d15c-5d2c-803e-74c65f9d7869",
+   "topic": "Gas Laws",
+   "title": "Gas Laws: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on gas laws, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 129,
+   "questions": [
+    {
+     "id": "7c939b97-59b7-5527-98a8-3663f4530c36",
+     "key": "phy-gas-01",
+     "stem": "A gas occupies 600 cm³ at a pressure of 100 kPa. What volume does it occupy at 150 kPa if the temperature is constant?",
+     "image_url": null,
+     "explanation": "Boyle's law: $p_1V_1 = p_2V_2 \\Rightarrow V_2 = \\dfrac{100 \\times 600}{150} = 400\\ \\text{cm}^3$.\n\n**Why the other options are wrong**\n\n- 900 cm³: You multiplied by the pressure ratio; volume decreases as pressure increases.\n- 1.5 cm³: That is only the ratio of the pressures, 150/100.\n- 150 cm³: You confused the pressure with the volume.",
+     "position": 1,
+     "options": [
+      {
+       "id": "084f410a-e278-5f63-90bb-de4ab52db747",
+       "label": "A",
+       "content": "1.5 cm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "65425361-4d94-5aba-b610-a9ebcd8a4540",
+       "label": "B",
+       "content": "150 cm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0ae70a45-d806-5062-8b24-d7b1dbfdfb27",
+       "label": "C",
+       "content": "400 cm³",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "25d1d844-d913-56bf-be4c-2ea8c6f5a952",
+       "label": "D",
+       "content": "900 cm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f024ca02-6812-50d9-8af9-a1f527811ff1",
+     "key": "phy-gas-02",
+     "stem": "A gas occupies 2.0 litres at 27 °C. What volume does it occupy at 127 °C at constant pressure?",
+     "image_url": null,
+     "explanation": "Charles's law: $V_2 = V_1\\dfrac{T_2}{T_1} = 2.0 \\times \\dfrac{400}{300} = 2.67\\ \\text{litres}$.\n\n**Why the other options are wrong**\n\n- 9.41 litres: You used Celsius temperatures; convert to kelvin first.\n- 1.5 litres: You inverted the temperature ratio; heating at constant pressure increases the volume.\n- 4 litres: You doubled the volume; the absolute temperature rises only from 300 K to 400 K.",
+     "position": 2,
+     "options": [
+      {
+       "id": "20a1b47e-a8ec-581d-a3cd-0f262ffa5220",
+       "label": "A",
+       "content": "1.5 litres",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b68df0b6-2f45-5720-96c6-eb31fa8ff308",
+       "label": "B",
+       "content": "2.67 litres",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "55a6ab35-ad28-5faa-b687-5c57def4b703",
+       "label": "C",
+       "content": "4 litres",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1c6206af-2bf1-5d9c-aa73-5d6c556882e1",
+       "label": "D",
+       "content": "9.41 litres",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3de5ba73-af22-5e1e-aab3-afa11066035c",
+     "key": "phy-gas-03",
+     "stem": "The pressure of a fixed mass of gas in a sealed container is 150 kPa at 27 °C. What is its pressure at 87 °C?",
+     "image_url": null,
+     "explanation": "Pressure law: $p_2 = p_1\\dfrac{T_2}{T_1} = 150 \\times \\dfrac{360}{300} = 180\\ \\text{kPa}$.\n\n**Why the other options are wrong**\n\n- 483 kPa: You used Celsius temperatures; use kelvin (300 K and 360 K).\n- 125 kPa: You inverted the ratio; heating at constant volume raises the pressure.\n- 210 kPa: You added the temperature rise (60) to the pressure.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2877cc97-942d-5180-81d1-738e09ed3d57",
+       "label": "A",
+       "content": "125 kPa",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "98a45dcb-2fe2-5fd5-85ea-71502696d043",
+       "label": "B",
+       "content": "180 kPa",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "57a44499-9287-5313-ac20-882f19db4034",
+       "label": "C",
+       "content": "210 kPa",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5cfebcf0-7430-57be-a5e6-12aac4cc7ec1",
+       "label": "D",
+       "content": "483 kPa",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7fbc973d-338b-5298-a105-9349f6be15d7",
+     "key": "phy-gas-04",
+     "stem": "Boyle's law applies to a fixed mass of gas at constant",
+     "image_url": null,
+     "explanation": "Boyle's law: pV = constant for a fixed mass of gas at constant temperature.\n\n**Why the other options are wrong**\n\n- pressure: Boyle's law relates pressure and volume, so pressure varies.\n- volume: Volume changes in Boyle's law.\n- density: Density changes as the volume changes.",
+     "position": 4,
+     "options": [
+      {
+       "id": "468fee13-19e7-5658-a6a2-fa67d3cf4d37",
+       "label": "A",
+       "content": "temperature",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c29842fd-dbc9-535c-a6e6-03819b11c26e",
+       "label": "B",
+       "content": "pressure",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "de581bd6-e26b-5106-847b-5f36e2dd4b14",
+       "label": "C",
+       "content": "volume",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "624a882c-04d2-5aa9-8f98-203939e5b371",
+       "label": "D",
+       "content": "density",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "259e8363-8df8-5734-80aa-ffb420f4553b",
+     "key": "phy-gas-05",
+     "stem": "A graph of the volume of a fixed mass of gas against its temperature in °C, at constant pressure, is a straight line that cuts the temperature axis at about",
+     "image_url": null,
+     "explanation": "Extending the graph backwards meets the temperature axis at absolute zero, about −273 °C.\n\n**Why the other options are wrong**\n\n- 0 °C: At 0 °C the gas still has a large volume.\n- −100 °C: Extrapolation of the line reaches the axis at about −273 °C.\n- 273 °C: The intercept is below zero, at absolute zero.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ebe1191d-4d00-519b-af3f-aa9c4c668028",
+       "label": "A",
+       "content": "0 °C",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bd4ba533-2d67-51f9-b468-310a0cfed8b4",
+       "label": "B",
+       "content": "−273 °C",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7e02e96b-ea9a-53b8-9ff8-71ba7dfccf9a",
+       "label": "C",
+       "content": "−100 °C",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1cdd15db-5f4a-5af1-bb54-c3fe7de1524e",
+       "label": "D",
+       "content": "273 °C",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c89fcadb-3a47-596c-82bc-502a3f7d8717",
+     "key": "phy-gas-06",
+     "stem": "A gas occupies 300 cm³ at 27 °C and 100 kPa. What is its volume at 127 °C and 200 kPa?",
+     "image_url": null,
+     "explanation": "$V_2 = V_1 \\times \\dfrac{p_1}{p_2} \\times \\dfrac{T_2}{T_1} = 300 \\times \\dfrac{100}{200} \\times \\dfrac{400}{300} = 200\\ \\text{cm}^3$.\n\n**Why the other options are wrong**\n\n- 800 cm³: You used the pressure ratio the wrong way round: doubling the pressure halves the volume.\n- 400 cm³: You ignored the change of pressure.\n- 150 cm³: You ignored the change of temperature.",
+     "position": 6,
+     "options": [
+      {
+       "id": "23301656-032a-5ff1-9f23-98e8c3c35a59",
+       "label": "A",
+       "content": "150 cm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4d78e240-89a9-5884-bcf9-8db841354696",
+       "label": "B",
+       "content": "200 cm³",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "614a3f18-ba95-5f76-baf2-e3760fc13bb8",
+       "label": "C",
+       "content": "400 cm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8b6ff4fb-ef02-5ec8-8b5d-8dc39923cb51",
+       "label": "D",
+       "content": "800 cm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2b73429c-257b-55b6-ad92-3a6091d8998a",
+     "key": "phy-gas-07",
+     "stem": "According to the kinetic theory, the pressure of a gas in a closed container rises when it is heated because the molecules",
+     "image_url": null,
+     "explanation": "Faster molecules collide with the walls more frequently and with more force, raising the pressure.\n\n**Why the other options are wrong**\n\n- become larger: Molecules do not grow when heated.\n- increase in number: The number of molecules in a sealed container is fixed.\n- move more slowly and stick to the walls: Heating makes molecules move faster.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b218ffa8-c67b-528f-85c4-55029e061adf",
+       "label": "A",
+       "content": "become larger",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "81baef6a-9d9f-5a64-8a0f-e0f07d075bae",
+       "label": "B",
+       "content": "increase in number",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "62409044-bd8b-5238-878f-7401d0596b5f",
+       "label": "C",
+       "content": "move faster and hit the walls more often and harder",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "801646bf-6d79-5592-ad86-12bba8f3c297",
+       "label": "D",
+       "content": "move more slowly and stick to the walls",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6273ed6b-642f-548b-a027-9ef90d45d86d",
+     "key": "phy-gas-08",
+     "stem": "Standard temperature and pressure (s.t.p.) are",
+     "image_url": null,
+     "explanation": "s.t.p. is 0 °C (273 K) and 760 mmHg (1.01 × 10⁵ Pa).\n\n**Why the other options are wrong**\n\n- 298 K and 760 mmHg: 298 K (25 °C) is room temperature, not standard temperature.\n- 0 K and 760 mmHg: 0 K is absolute zero.\n- 273 K and 1000 mmHg: Standard pressure is 760 mmHg.",
+     "position": 8,
+     "options": [
+      {
+       "id": "978725ca-a9d7-55d4-8679-d5329170b781",
+       "label": "A",
+       "content": "298 K and 760 mmHg",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6573d29c-f126-5cf2-8433-1b6f4705bd86",
+       "label": "B",
+       "content": "0 K and 760 mmHg",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6d14564e-416b-5c7c-8d46-159073bdb94e",
+       "label": "C",
+       "content": "273 K and 1000 mmHg",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "952f01af-461b-55ec-be46-459fc17d3d18",
+       "label": "D",
+       "content": "273 K and 760 mmHg",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "c1fcfbb02f82"
+}
