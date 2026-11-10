@@ -149,6 +149,15 @@ SETS += [
         "sort_from": 140,
         "checked": "mixed",
     },
+    {
+        "module": ROOT / "content/questions/physics/set4_p1.py",
+        "subject_slug": "physics",
+        "name": "physics_set4_p1",
+        "label": "Physics: set 4 (electricity, magnetism and modern physics)",
+        "review": ROOT / "content/questions/physics/set4_p1.review.md",
+        "sort_from": 160,
+        "checked": "mixed",
+    },
 ]
 
 OUT = ROOT / "src/content/question-sets"

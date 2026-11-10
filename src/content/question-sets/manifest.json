@@ -217,5 +217,31 @@
    "fd536152-d7e9-5c43-b48e-981d7f72b774"
   ],
   "questions": 80
+ },
+ {
+  "name": "physics_set4_p1",
+  "label": "Physics: set 4 (electricity, magnetism and modern physics)",
+  "subject_slug": "physics",
+  "version": "03a432d82cbb",
+  "papers": [
+   "fd374487-9a73-575b-a30a-368a6d0d7ea4",
+   "0b793e1d-109b-5d75-a05c-593533a1cb69",
+   "6245e3b8-e07f-539f-afcb-321f9c19c220",
+   "0703302a-7cd1-537e-9593-f4c8d6afb0ac",
+   "75ef106f-3286-5dbb-9afa-fcd33412819f",
+   "7db83234-e419-5970-b770-d3fbe5ad7e09",
+   "a1534a0d-2ce8-51bf-8abe-b951a1950170",
+   "ce20a482-4c35-5dec-b43c-ec37a761dee0",
+   "ee7d961b-50c4-5b58-bdd8-26fa95f4b3fd",
+   "fd7f13ad-8678-5e0c-8d93-60df87b37a56",
+   "fbf34331-04e7-54db-be3a-cb7bca06d5e5",
+   "c7bc78ee-efbb-51cc-a3f7-3bdb2ac56a32",
+   "f9a45959-c117-5a08-b847-f7302dd19d19",
+   "a2162db0-cca0-5cfd-8e80-a3ac5be1ef68",
+   "324996c5-6356-5b24-9469-c157dfafa633",
+   "80621bad-aabe-542d-b8b0-bc3f2788d138",
+   "d7f3a892-f39f-59a6-954c-015bc6567df5"
+  ],
+  "questions": 136
  }
 ]

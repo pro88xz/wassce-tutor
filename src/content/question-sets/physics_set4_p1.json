@@ -1,0 +1,5346 @@
+{
+ "name": "physics_set4_p1",
+ "label": "Physics: set 4 (electricity, magnetism and modern physics)",
+ "subject_slug": "physics",
+ "papers": [
+  {
+   "id": "fd374487-9a73-575b-a30a-368a6d0d7ea4",
+   "topic": "Electrostatics",
+   "title": "Electrostatics: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on electrostatics, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 160,
+   "questions": [
+    {
+     "id": "d07b9b5b-6956-5816-a040-6eae78be8592",
+     "key": "phy-est-01",
+     "stem": "A polythene rod becomes negatively charged when rubbed with wool because",
+     "image_url": null,
+     "explanation": "Rubbing transfers electrons; the polythene gains them and becomes negative, the wool positive.\n\n**Why the other options are wrong**\n\n- protons move from the rod to the wool: Protons are fixed in the nucleus; only electrons move.\n- electrons move from the rod to the wool: That would leave the rod positive.\n- the rod creates new electrons: Charge is transferred, not created.",
+     "position": 1,
+     "options": [
+      {
+       "id": "9a88f980-e542-5d32-b857-7c658d3492eb",
+       "label": "A",
+       "content": "protons move from the rod to the wool",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "89f1e9a3-1ff4-5d80-b1f3-c75c23a68970",
+       "label": "B",
+       "content": "electrons move from the rod to the wool",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "61a269b7-3902-5543-85c2-5ec20a377014",
+       "label": "C",
+       "content": "the rod creates new electrons",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ef7840d0-6c75-569a-a9cb-d7001afe8335",
+       "label": "D",
+       "content": "electrons move from the wool to the rod",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bd10e9ea-43ab-56e9-9a39-b201a2d0abdd",
+     "key": "phy-est-02",
+     "stem": "The only sure test that a body is charged is",
+     "image_url": null,
+     "explanation": "Only like charges repel, so repulsion proves the body is charged.\n\n**Why the other options are wrong**\n\n- attraction by a charged rod: A charged rod also attracts an uncharged body, so attraction proves nothing.\n- its ability to conduct electricity: Conduction shows a material is a conductor, not that it is charged.\n- attraction by a magnet: Magnetism and static charge are different effects.",
+     "position": 2,
+     "options": [
+      {
+       "id": "1c01a2e4-627f-538f-af8a-2bf14331d851",
+       "label": "A",
+       "content": "repulsion by a body with a known charge",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a0aaed0f-6720-5f98-96eb-8a9216eb3525",
+       "label": "B",
+       "content": "attraction by a charged rod",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2e84f8e2-2b23-59b9-ba69-61e72791afd1",
+       "label": "C",
+       "content": "its ability to conduct electricity",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "59baff81-52bd-5078-8e56-d9010e9aa9e0",
+       "label": "D",
+       "content": "attraction by a magnet",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f7c2f1c9-da17-51a3-912c-af831eed90d2",
+     "key": "phy-est-03",
+     "stem": "A metal sphere is charged by induction using a positively charged rod. The charge on the sphere is",
+     "image_url": null,
+     "explanation": "Electrons are attracted from earth to the sphere while the positive rod is near; the sphere ends up negative.\n\n**Why the other options are wrong**\n\n- positive: Induction gives the opposite charge to the inducing body.\n- zero: After earthing and removing the earth, the sphere keeps a net charge.\n- positive on one side and negative on the other only: That is the state before earthing; afterwards it has a net negative charge.",
+     "position": 3,
+     "options": [
+      {
+       "id": "7fc7fe73-c001-5c23-bb56-0861ace83ffd",
+       "label": "A",
+       "content": "positive",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "61a59400-83dd-522f-a281-5c963ab9f2d8",
+       "label": "B",
+       "content": "zero",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "981ef597-b7aa-574a-8d82-5f79e3f66abb",
+       "label": "C",
+       "content": "positive on one side and negative on the other only",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b2e91be8-5cae-5c7f-ba5b-41c04a1b986e",
+       "label": "D",
+       "content": "negative",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9c2b89af-dc30-54e3-a4b1-ba17f3727f57",
+     "key": "phy-est-04",
+     "stem": "Two point charges of 2 μC and 4 μC are 0.3 m apart in air. What is the force between them? (k = 9.0 × 10⁹ N m² C⁻²)",
+     "image_url": null,
+     "explanation": "$F = \\dfrac{kq_1q_2}{r^2} = \\dfrac{9.0 \\times 10^{9} \\times 2 \\times 10^{-6} \\times 4 \\times 10^{-6}}{0.09} = 0.8\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 0.24 N: You divided by r instead of r².\n- 0.4 N: You used 1 μC for one of the charges.\n- 0.08 N: You divided by 0.9 instead of 0.09 (0.3² = 0.09).",
+     "position": 4,
+     "options": [
+      {
+       "id": "dfad6479-4818-5cc6-9607-75aadaf37d75",
+       "label": "A",
+       "content": "0.08 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8372d330-d6f9-523c-b3a3-eb588079bc03",
+       "label": "B",
+       "content": "0.24 N",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4eee59dc-4aa0-5900-9b5c-0f9d7bdb41a6",
+       "label": "C",
+       "content": "0.4 N",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "98d24dd7-20fb-515e-bd33-83f580bb8728",
+       "label": "D",
+       "content": "0.8 N",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0a2a7797-a18e-50dc-8fec-cba6b381d32b",
+     "key": "phy-est-05",
+     "stem": "If the distance between two point charges is doubled, the force between them",
+     "image_url": null,
+     "explanation": "$F \\propto 1/r^2$: doubling $r$ divides $F$ by 4.\n\n**Why the other options are wrong**\n\n- is halved: Coulomb's law is an inverse-square law.\n- is doubled: Increasing distance weakens the force.\n- is unchanged: The force depends on the distance.",
+     "position": 5,
+     "options": [
+      {
+       "id": "69ea0d68-f118-5734-8aa9-9a8b93ae9ef6",
+       "label": "A",
+       "content": "becomes one quarter as large",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "02a29f77-5ce2-5c30-b1ae-58d8eae11cf7",
+       "label": "B",
+       "content": "is halved",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "59d9841a-f1e7-5a4d-a30a-1b343d479594",
+       "label": "C",
+       "content": "is doubled",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "81aa9011-418d-57a6-ac4b-068bbae09ff6",
+       "label": "D",
+       "content": "is unchanged",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "19bfe3fe-a8cd-5271-b1e4-5ff5b3ef7e3c",
+     "key": "phy-est-06",
+     "stem": "Electric field lines",
+     "image_url": null,
+     "explanation": "By convention field lines go from + to −, never cross, and crowd together where the field is strong.\n\n**Why the other options are wrong**\n\n- start on negative charges and end on positive charges: Field lines point the way a positive charge would move: away from +.\n- can cross each other: Field lines never cross.\n- are farther apart where the field is stronger: They are closer together where the field is stronger.",
+     "position": 6,
+     "options": [
+      {
+       "id": "23714288-738d-5581-b43d-4898cd502242",
+       "label": "A",
+       "content": "start on negative charges and end on positive charges",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f8c94a3e-fab6-5c6f-9de4-7d36fb54af7e",
+       "label": "B",
+       "content": "can cross each other",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cf1599dc-59b5-5032-beae-28603055ac35",
+       "label": "C",
+       "content": "are farther apart where the field is stronger",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b869653b-47c0-5a3f-8f00-e06db21c85a4",
+       "label": "D",
+       "content": "start on positive charges and end on negative charges",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f78a6ecd-95c3-5363-be81-c46063f73dd2",
+     "key": "phy-est-07",
+     "stem": "How much work is done in moving a charge of 3 μC through a potential difference of 500 V?",
+     "image_url": null,
+     "explanation": "$W = qV = 3 \\times 10^{-6} \\times 500 = 1.5 \\times 10^{-3}\\ \\text{J}$.\n\n**Why the other options are wrong**\n\n- 0.75 mJ: W = qV here; ½QV is the energy stored in a capacitor.\n- 1500 mJ: You treated μC as mC (10⁻³ C).\n- 0.0015 mJ: That is the answer in joules; the options are in millijoules.",
+     "position": 7,
+     "options": [
+      {
+       "id": "67bf1f96-c1a8-51dd-8e33-8582695a56cd",
+       "label": "A",
+       "content": "0.0015 mJ",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ce0e133a-1dc3-5be2-a10a-0d2b017d45cd",
+       "label": "B",
+       "content": "0.75 mJ",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "31ed7e36-4845-56ae-a57f-3d2340c8f639",
+       "label": "C",
+       "content": "1.5 mJ",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f6358379-58f0-5e3f-b9a5-395bf1f36723",
+       "label": "D",
+       "content": "1500 mJ",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cff94222-c524-5ab6-af16-5abe1df43e3d",
+     "key": "phy-est-08",
+     "stem": "A lightning conductor protects a building mainly because",
+     "image_url": null,
+     "explanation": "Point action neutralises the cloud's charge; if lightning strikes, the thick copper strip conducts it safely to earth.\n\n**Why the other options are wrong**\n\n- it attracts lightning away to another building: It protects the building it is on, by point action and a path to earth.\n- it is made of an insulator: It is a thick conductor (copper).\n- it stores the charge of the lightning: It conducts the charge to earth; it does not store it.",
+     "position": 8,
+     "options": [
+      {
+       "id": "fb4b89b0-33f9-54fd-82be-15bbb5331dd4",
+       "label": "A",
+       "content": "its sharp points discharge the cloud and it gives charge a safe path to earth",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e181985d-1dd6-53e7-8ae0-8ffee332a150",
+       "label": "B",
+       "content": "it attracts lightning away to another building",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c47a1b4d-a90f-5dad-84e5-8108862272eb",
+       "label": "C",
+       "content": "it is made of an insulator",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ed522229-7e2f-5dd7-8ffe-fa1e5aa5e793",
+       "label": "D",
+       "content": "it stores the charge of the lightning",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "0b793e1d-109b-5d75-a05c-593533a1cb69",
+   "topic": "Capacitors",
+   "title": "Capacitors: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on capacitors, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 161,
+   "questions": [
+    {
+     "id": "952eda45-89c0-5238-a28f-3d1c8989a241",
+     "key": "phy-cap-01",
+     "stem": "A 20 μF capacitor is connected to a 12 V battery. How much charge does it store?",
+     "image_url": null,
+     "explanation": "$Q = CV = 20\\ \\mu\\text{F} \\times 12\\ \\text{V} = 240\\ \\mu\\text{C}$ ($2.4 \\times 10^{-4}$ C).\n\n**Why the other options are wrong**\n\n- 1.67 μC: You divided C by V; Q = CV.\n- 0.6 μC: You divided V by C; Q = CV.\n- 32 μC: You added C and V instead of multiplying.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a375996d-42ab-5ca1-b4a0-33d96aa023ca",
+       "label": "A",
+       "content": "0.6 μC",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f1739c38-939c-5a5e-94a8-75137379af6c",
+       "label": "B",
+       "content": "1.67 μC",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e2b55bbd-d1a7-5601-b686-ba7b01fe1752",
+       "label": "C",
+       "content": "32 μC",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f69f0f61-5424-55c0-8fd8-e02f02ad59da",
+       "label": "D",
+       "content": "240 μC",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cfb09591-d501-54f1-bddf-c62ee49adcce",
+     "key": "phy-cap-02",
+     "stem": "Capacitors of 3 μF and 6 μF are connected in series. What is their combined capacitance?",
+     "image_url": null,
+     "explanation": "In series: $C = \\dfrac{C_1C_2}{C_1 + C_2} = \\dfrac{3 \\times 6}{3 + 6} = 2\\ \\mu\\text{F}$.\n\n**Why the other options are wrong**\n\n- 9 μF: That is the combined capacitance in parallel.\n- 4.5 μF: You averaged the capacitances.\n- 18 μF: You multiplied without dividing by the sum.",
+     "position": 2,
+     "options": [
+      {
+       "id": "73904ee4-2469-5a59-aa3f-e65a46a3e58a",
+       "label": "A",
+       "content": "2 μF",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "bb39994f-a79c-5e4d-9a9f-5adbfd9a5e05",
+       "label": "B",
+       "content": "4.5 μF",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "87a2db86-c5d0-5c34-bc3d-f6c97cd20fa7",
+       "label": "C",
+       "content": "9 μF",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6d5907ef-fb2f-50e7-801e-ac9d2bf84482",
+       "label": "D",
+       "content": "18 μF",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3911f0b1-b4d5-5682-bb10-c70e81b817f0",
+     "key": "phy-cap-03",
+     "stem": "Capacitors of 2 μF, 3 μF and 5 μF are connected in parallel. What is their combined capacitance?",
+     "image_url": null,
+     "explanation": "In parallel: $C = 2 + 3 + 5 = 10\\ \\mu\\text{F}$.\n\n**Why the other options are wrong**\n\n- 0.97 μF: You used the series formula; in parallel capacitances add.\n- 30 μF: You multiplied the capacitances.\n- 5 μF: That is only the largest capacitor.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ea3f7e9e-091b-580c-a867-5618b11b0e4c",
+       "label": "A",
+       "content": "0.97 μF",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2745af7e-f1d9-516b-ada8-daab425dfdec",
+       "label": "B",
+       "content": "5 μF",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "745610f3-3023-5ff6-a014-bd86dcbe7c7f",
+       "label": "C",
+       "content": "10 μF",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "155ea473-35b7-5f01-9cfd-1887049e8561",
+       "label": "D",
+       "content": "30 μF",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fc76ff58-cc7f-5aaf-a796-cc7bf3c98c2c",
+     "key": "phy-cap-04",
+     "stem": "The capacitance of a parallel-plate capacitor is increased by",
+     "image_url": null,
+     "explanation": "$C = \\varepsilon A/d$: a smaller gap, a larger area or a dielectric with higher permittivity increases C.\n\n**Why the other options are wrong**\n\n- increasing the separation of the plates: C is inversely proportional to the separation.\n- reducing the area of overlap of the plates: C is proportional to the area.\n- replacing the dielectric with air: Air has a lower permittivity than most dielectrics.",
+     "position": 4,
+     "options": [
+      {
+       "id": "86f0137f-f9a8-5a04-b576-30445e0e155e",
+       "label": "A",
+       "content": "increasing the separation of the plates",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a44c34b2-95a0-566c-82dc-b7e987d4e48e",
+       "label": "B",
+       "content": "reducing the area of overlap of the plates",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "695562ad-8fe3-58ea-8fab-169b19afbc17",
+       "label": "C",
+       "content": "replacing the dielectric with air",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "95668712-953b-5256-8f1c-332a88c463aa",
+       "label": "D",
+       "content": "reducing the separation of the plates",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eb365a3a-9c7f-50bd-bb57-234757d93a13",
+     "key": "phy-cap-05",
+     "stem": "What energy is stored in a 100 μF capacitor charged to 200 V?",
+     "image_url": null,
+     "explanation": "$W = \\tfrac{1}{2}CV^2 = \\tfrac{1}{2} \\times 100 \\times 10^{-6} \\times 200^2 = 2\\ \\text{J}$.\n\n**Why the other options are wrong**\n\n- 4 J: You forgot the ½ in ½CV².\n- 0.01 J: You used ½CV without squaring V.\n- 0.02 J: That is the charge Q = CV in coulombs.",
+     "position": 5,
+     "options": [
+      {
+       "id": "595e21fb-f865-50e3-8367-92fa749b9a3d",
+       "label": "A",
+       "content": "0.01 J",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9978fdd5-ae28-587a-bb27-346b0ed1a6d4",
+       "label": "B",
+       "content": "0.02 J",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "08be4ac1-c10b-5edd-bef9-7b7a0adbc6f6",
+       "label": "C",
+       "content": "2 J",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b3670194-ddae-52fe-addd-2a1d247ca273",
+       "label": "D",
+       "content": "4 J",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "086c049f-30e8-580f-a710-0edb14edf839",
+     "key": "phy-cap-06",
+     "stem": "The SI unit of capacitance is the",
+     "image_url": null,
+     "explanation": "Capacitance = charge ÷ p.d.; 1 farad = 1 coulomb per volt.\n\n**Why the other options are wrong**\n\n- coulomb: The coulomb is the unit of charge.\n- henry: The henry is the unit of inductance.\n- ohm: The ohm is the unit of resistance.",
+     "position": 6,
+     "options": [
+      {
+       "id": "94dc7849-920a-575d-b397-0882812aa406",
+       "label": "A",
+       "content": "farad",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d1311b38-ab98-5296-b82c-44220c929e53",
+       "label": "B",
+       "content": "coulomb",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9cab6526-2c09-500d-9590-ceb88ce25173",
+       "label": "C",
+       "content": "henry",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "562b7e1b-5133-5a22-aaa9-0526bd4bb1a0",
+       "label": "D",
+       "content": "ohm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b0eb6c4e-f492-549d-80f4-c301a67afe57",
+     "key": "phy-cap-07",
+     "stem": "Capacitors of 4 μF and 12 μF in series are connected to a 16 V supply. What is the p.d. across the 4 μF capacitor?",
+     "image_url": null,
+     "explanation": "$C = \\dfrac{4 \\times 12}{16} = 3\\ \\mu\\text{F}$; $Q = 3 \\times 16 = 48\\ \\mu\\text{C}$; $V_4 = \\dfrac{48}{4} = 12\\ \\text{V}$.\n\n**Why the other options are wrong**\n\n- 4 V: That is the p.d. across the 12 μF capacitor; the smaller capacitor takes the larger share.\n- 8 V: In series, the p.d. is not shared equally.\n- 16 V: The supply p.d. is shared between the two capacitors.",
+     "position": 7,
+     "options": [
+      {
+       "id": "62f57c92-cf49-5b2c-9a91-a2bdc518c2c4",
+       "label": "A",
+       "content": "4 V",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a1aeea88-a7fb-549a-9bbb-e782b4cc745d",
+       "label": "B",
+       "content": "8 V",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eefaeaf8-9f21-5d50-ba88-aaeab5d7c12a",
+       "label": "C",
+       "content": "12 V",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4ce8ddf7-4394-5448-963e-ad435093f1d0",
+       "label": "D",
+       "content": "16 V",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "41296368-e845-5edb-96d3-c3950d61dfda",
+     "key": "phy-cap-08",
+     "stem": "Inserting a dielectric between the plates of a charged, isolated capacitor",
+     "image_url": null,
+     "explanation": "The dielectric becomes polarised and reduces the p.d. for the same charge, so C = Q/V increases.\n\n**Why the other options are wrong**\n\n- decreases its capacitance: A dielectric increases the capacitance by the factor εᵣ.\n- has no effect on its capacitance: The permittivity of the gap changes, so C changes.\n- makes it conduct: A dielectric is an insulator.",
+     "position": 8,
+     "options": [
+      {
+       "id": "5784d1f4-1e92-5318-8390-083853b9e9e9",
+       "label": "A",
+       "content": "decreases its capacitance",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9dd5fe28-b922-5a91-adaa-77b8b77da3b4",
+       "label": "B",
+       "content": "has no effect on its capacitance",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8d4e5198-3cb3-50d6-ac2e-56303478c08e",
+       "label": "C",
+       "content": "makes it conduct",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cdcf1993-e03b-54a6-afe2-1f3c070426e9",
+       "label": "D",
+       "content": "increases its capacitance",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6245e3b8-e07f-539f-afcb-321f9c19c220",
+   "topic": "Current Electricity and Ohm's Law",
+   "title": "Current Electricity and Ohm's Law: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on current electricity and ohm's law, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 162,
+   "questions": [
+    {
+     "id": "dcfdc466-14d1-5d9f-8ce1-dea8ff4ef750",
+     "key": "phy-cur-01",
+     "stem": "A current of 0.5 A flows for 2 minutes. How much charge passes?",
+     "image_url": null,
+     "explanation": "$Q = It = 0.5 \\times 120 = 60\\ \\text{C}$.\n\n**Why the other options are wrong**\n\n- 1 C: You used 2 s instead of 120 s.\n- 240 C: You divided the time by the current.\n- 0.0042 C: You divided the current by the time.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8f6aa0b0-8413-580b-8964-4713da702ffc",
+       "label": "A",
+       "content": "0.0042 C",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "80bc37eb-8cc6-59ae-a413-05687dbcc1a7",
+       "label": "B",
+       "content": "1 C",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "50e2fab6-34d3-5633-8aa2-e7dffb824912",
+       "label": "C",
+       "content": "60 C",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2065b9b7-8dfb-597d-9cc4-1829e1c19961",
+       "label": "D",
+       "content": "240 C",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "be2dfc57-5cc3-5937-8fdb-757aada2d9cf",
+     "key": "phy-cur-02",
+     "stem": "A p.d. of 12 V across a resistor drives a current of 0.4 A. What is the resistance?",
+     "image_url": null,
+     "explanation": "$R = \\dfrac{V}{I} = \\dfrac{12}{0.4} = 30\\ \\Omega$.\n\n**Why the other options are wrong**\n\n- 4.8 Ω: You multiplied V by I; R = V/I.\n- 0.033 Ω: You divided I by V.\n- 12.4 Ω: You added V and I.",
+     "position": 2,
+     "options": [
+      {
+       "id": "0792f53c-23b9-5d65-bc8f-fec397351713",
+       "label": "A",
+       "content": "0.033 Ω",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3a567650-6370-5610-8db6-6a99eaca0ec1",
+       "label": "B",
+       "content": "4.8 Ω",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e77d281d-e415-58c8-af1a-dbf1d712466d",
+       "label": "C",
+       "content": "12.4 Ω",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b179715b-c023-5051-a542-f603aacb000e",
+       "label": "D",
+       "content": "30 Ω",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f094faa9-b3ae-5492-8087-5acbd1352588",
+     "key": "phy-cur-03",
+     "stem": "Ohm's law holds for a metallic conductor provided",
+     "image_url": null,
+     "explanation": "V ∝ I for a metal only while its temperature (and other physical conditions) stays the same.\n\n**Why the other options are wrong**\n\n- the current is very large: Large currents heat the wire and change its resistance.\n- the conductor is a semiconductor: Semiconductors do not obey Ohm's law.\n- the p.d. is alternating: The condition is constant temperature (and other physical conditions).",
+     "position": 3,
+     "options": [
+      {
+       "id": "9b22c505-86be-5952-a123-ea0256f9cbfa",
+       "label": "A",
+       "content": "its temperature remains constant",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "726948b4-b974-5ead-90d5-a031c4b37bc7",
+       "label": "B",
+       "content": "the current is very large",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a0d0c373-bf8b-5b6a-a005-0acc99161ffd",
+       "label": "C",
+       "content": "the conductor is a semiconductor",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3802ff4a-9dea-5cef-a10d-04260c19d216",
+       "label": "D",
+       "content": "the p.d. is alternating",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eb787c46-e853-52f7-9cc1-ec95435debac",
+     "key": "phy-cur-04",
+     "stem": "A voltmeter is connected",
+     "image_url": null,
+     "explanation": "A voltmeter goes across (in parallel with) the component and draws almost no current because its resistance is very high.\n\n**Why the other options are wrong**\n\n- in series with the component, and should have a very low resistance: That describes an ammeter.\n- in parallel with the component, and should have a very low resistance: A low-resistance voltmeter would draw a large current and change the circuit.\n- in series with the component, and should have a very high resistance: A voltmeter measures the p.d. across a component, so it goes in parallel.",
+     "position": 4,
+     "options": [
+      {
+       "id": "da9f18aa-3670-57ce-b4ee-1b218fe6a547",
+       "label": "A",
+       "content": "in series with the component, and should have a very low resistance",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "494227c5-eff0-56f3-9896-98b358241a25",
+       "label": "B",
+       "content": "in parallel with the component, and should have a very low resistance",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a181c5cf-f804-5777-8a1b-8d7c937c396f",
+       "label": "C",
+       "content": "in series with the component, and should have a very high resistance",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ba449d54-f525-5f70-a02a-40e6d5aa8c97",
+       "label": "D",
+       "content": "in parallel with the component, and should have a very high resistance",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4fb821d9-716b-5a89-9ce4-871e273ce9c8",
+     "key": "phy-cur-05",
+     "stem": "A wire has a resistance of 8 Ω. What is the resistance of a wire of the same material that is twice as long and has twice the diameter?",
+     "image_url": null,
+     "explanation": "$R \\propto \\dfrac{l}{A}$ and $A \\propto d^2$: $R' = 8 \\times \\dfrac{2}{4} = 4\\ \\Omega$.\n\n**Why the other options are wrong**\n\n- 8 Ω: Doubling the diameter quadruples the area, which more than cancels doubling the length.\n- 16 Ω: You doubled for the length but ignored the larger area.\n- 2 Ω: Doubling the length doubles R; you divided by 4 twice.",
+     "position": 5,
+     "options": [
+      {
+       "id": "56467141-d0e7-5dc5-8b2f-9965152fca3f",
+       "label": "A",
+       "content": "2 Ω",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e1003d41-a919-50e3-a17b-e41750beee34",
+       "label": "B",
+       "content": "4 Ω",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "cc4bede2-680a-511d-91b3-397ba00d8292",
+       "label": "C",
+       "content": "8 Ω",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "96f9446f-8f7f-5cc8-9689-0543d83c8258",
+       "label": "D",
+       "content": "16 Ω",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f40a27d7-e2f0-5d0a-9ef9-89ac6ce13f22",
+     "key": "phy-cur-06",
+     "stem": "A cell of e.m.f. 3.0 V and internal resistance 1 Ω is connected to a 5 Ω resistor. What current flows?",
+     "image_url": null,
+     "explanation": "$I = \\dfrac{E}{R + r} = \\dfrac{3.0}{5 + 1} = 0.5\\ \\text{A}$.\n\n**Why the other options are wrong**\n\n- 0.6 A: You ignored the internal resistance.\n- 3 A: You divided by the internal resistance only.\n- 0.75 A: You subtracted the resistances.",
+     "position": 6,
+     "options": [
+      {
+       "id": "6e2c1fad-6399-5fe8-8673-86a9e5bdcbb6",
+       "label": "A",
+       "content": "0.5 A",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7429a22c-9829-53d4-9439-e0d712195d6a",
+       "label": "B",
+       "content": "0.6 A",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4d35018d-0d67-5fde-9770-81fdebef2769",
+       "label": "C",
+       "content": "0.75 A",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3ca1d4a7-0c9b-56a8-acc3-4f018844914d",
+       "label": "D",
+       "content": "3 A",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "44de8fc2-7b58-559f-9d60-e35462cdc9e2",
+     "key": "phy-cur-07",
+     "stem": "A cell of e.m.f. 2.0 V and internal resistance 0.5 Ω delivers 1.0 A. What is its terminal p.d.?",
+     "image_url": null,
+     "explanation": "$V = E - Ir = 2.0 - 1.0 \\times 0.5 = 1.5\\ \\text{V}$.\n\n**Why the other options are wrong**\n\n- 2.0 V: That is the e.m.f.; some p.d. is lost inside the cell.\n- 2.5 V: You added the lost volts instead of subtracting.\n- 0.5 V: That is the lost volts, Ir.",
+     "position": 7,
+     "options": [
+      {
+       "id": "3462d6e4-4ff5-5987-9ac9-97c69b0e9d94",
+       "label": "A",
+       "content": "0.5 V",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c530cd73-f3a5-5528-a5aa-da4f23bf2804",
+       "label": "B",
+       "content": "1.5 V",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5a61617b-eda4-5404-98b0-8b85f2d37b80",
+       "label": "C",
+       "content": "2.0 V",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2ce08a33-220a-5459-bceb-68aec424971f",
+       "label": "D",
+       "content": "2.5 V",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "59a148e2-bb9d-51bc-ad0f-f37ca448df5b",
+     "key": "phy-cur-08",
+     "stem": "The resistance of a metal wire",
+     "image_url": null,
+     "explanation": "Hotter atoms vibrate more and obstruct the electrons, so a metal's resistance rises with temperature.\n\n**Why the other options are wrong**\n\n- decreases as its temperature rises: That is true of semiconductors such as thermistors.\n- does not depend on temperature: Metal resistance rises with temperature.\n- decreases as its length increases: Resistance increases with length.",
+     "position": 8,
+     "options": [
+      {
+       "id": "07bd7bad-af75-5555-a57e-71a2fba38614",
+       "label": "A",
+       "content": "increases as its temperature rises",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6f47d999-3448-5e73-9e37-2341a33c081c",
+       "label": "B",
+       "content": "decreases as its temperature rises",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "59ff8421-feac-578c-8ec7-b2cb9311da5a",
+       "label": "C",
+       "content": "does not depend on temperature",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "375d6121-b6c5-5c9b-8964-3b740b1942b1",
+       "label": "D",
+       "content": "decreases as its length increases",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "0703302a-7cd1-537e-9593-f4c8d6afb0ac",
+   "topic": "Resistors and Circuit Analysis",
+   "title": "Resistors and Circuit Analysis: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on resistors and circuit analysis, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 163,
+   "questions": [
+    {
+     "id": "b0985be8-5f1f-5692-8318-0aef00d3efba",
+     "key": "phy-ckt-01",
+     "stem": "Resistors of 6 Ω and 3 Ω are connected in parallel. What is their combined resistance?",
+     "image_url": null,
+     "explanation": "$R = \\dfrac{6 \\times 3}{6 + 3} = 2\\ \\Omega$.\n\n**Why the other options are wrong**\n\n- 9 Ω: That is the series value.\n- 4.5 Ω: You averaged the resistances.\n- 18 Ω: You multiplied without dividing by the sum.",
+     "position": 1,
+     "options": [
+      {
+       "id": "fd1aeee2-9b51-550f-b60c-e576053d72d7",
+       "label": "A",
+       "content": "2 Ω",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7ae6b69c-6c3b-5109-a3e9-ed89f72560dc",
+       "label": "B",
+       "content": "4.5 Ω",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2477d4a5-54bb-58c7-aa60-d14f53d70aac",
+       "label": "C",
+       "content": "9 Ω",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8391d226-44e8-558f-b8be-5bca772f5932",
+       "label": "D",
+       "content": "18 Ω",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "79bbbb8d-17da-5da4-ad6a-2c4c0c29f940",
+     "key": "phy-ckt-02",
+     "stem": "Three resistors of 2 Ω, 3 Ω and 5 Ω are in series across a 20 V supply. What is the current?",
+     "image_url": null,
+     "explanation": "$R = 2 + 3 + 5 = 10\\ \\Omega$; $I = \\dfrac{20}{10} = 2\\ \\text{A}$.\n\n**Why the other options are wrong**\n\n- 20.7 A: You used the parallel combination; in series the resistances add.\n- 200 A: You multiplied V by R.\n- 10 A: That is the total resistance in ohms.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d788e1a3-ce62-5eee-9a08-5c9200bba8d3",
+       "label": "A",
+       "content": "2 A",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "20f4c5dc-6145-5518-9dd6-defbd4b7fe20",
+       "label": "B",
+       "content": "10 A",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bb4b69bc-1934-57e0-b7fb-66dfa97359be",
+       "label": "C",
+       "content": "20.7 A",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "70f9ccef-2532-5d02-af92-efb48fc3d940",
+       "label": "D",
+       "content": "200 A",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cbd8698c-e42c-565c-a60e-b53712d3c1a4",
+     "key": "phy-ckt-03",
+     "stem": "A 4 Ω resistor is connected in series with a parallel pair of 6 Ω and 3 Ω resistors across a 12 V supply of negligible internal resistance. What is the total current?",
+     "image_url": null,
+     "explanation": "Parallel pair: $\\dfrac{6 \\times 3}{9} = 2\\ \\Omega$. Total $= 4 + 2 = 6\\ \\Omega$. $I = \\dfrac{12}{6} = 2\\ \\text{A}$.\n\n**Why the other options are wrong**\n\n- 0.92 A: You added all three resistances in series.\n- 3 A: You left out the parallel pair.\n- 6 A: You used only the parallel pair (2 Ω).",
+     "position": 3,
+     "options": [
+      {
+       "id": "d8af2e82-abaa-5961-a363-261d65ca3c17",
+       "label": "A",
+       "content": "0.92 A",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "81df91be-c6dc-5752-9150-1ce50b9b7c7d",
+       "label": "B",
+       "content": "2 A",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7fdfb57e-e42e-5177-a157-271a6d78a206",
+       "label": "C",
+       "content": "3 A",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0d788bcd-023a-5b8e-ae80-1ed21dfbc51c",
+       "label": "D",
+       "content": "6 A",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a0905d36-18c2-5765-b13b-038c4b127332",
+     "key": "phy-ckt-04",
+     "stem": "A current of 3 A divides between resistors of 2 Ω and 4 Ω in parallel. What current flows through the 2 Ω resistor?",
+     "image_url": null,
+     "explanation": "$I_2 = I \\times \\dfrac{R_4}{R_2 + R_4} = 3 \\times \\dfrac{4}{6} = 2\\ \\text{A}$.\n\n**Why the other options are wrong**\n\n- 1 A: That is the current in the 4 Ω resistor; the smaller resistor carries more.\n- 1.5 A: The current does not divide equally.\n- 3 A: The current is shared between the two branches.",
+     "position": 4,
+     "options": [
+      {
+       "id": "3da7b70f-3e44-5e62-a303-1477af0366aa",
+       "label": "A",
+       "content": "1 A",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "99417624-785b-5a30-bef9-bb1a4a33668c",
+       "label": "B",
+       "content": "1.5 A",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a25dc7e0-566a-5ee0-a47e-967584ba9fdf",
+       "label": "C",
+       "content": "2 A",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c1622dd7-5b69-575c-a935-437ffce72b58",
+       "label": "D",
+       "content": "3 A",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dfd1507c-ae88-5bc4-8a4c-7578a76f1bd3",
+     "key": "phy-ckt-05",
+     "stem": "In a metre bridge, a known resistance of 10 Ω is in the right-hand gap and the balance point is 40 cm from the left end. What is the unknown resistance in the left gap?",
+     "image_url": null,
+     "explanation": "$\\dfrac{X}{10} = \\dfrac{40}{60} \\Rightarrow X = 6.67\\ \\Omega$.\n\n**Why the other options are wrong**\n\n- 15 Ω: You inverted the ratio: X/R = l/(100 − l).\n- 4 Ω: Use the ratio of the two lengths, 40/60, not 40/100.\n- 25 Ω: You divided 10 by 0.4.",
+     "position": 5,
+     "options": [
+      {
+       "id": "31b565ef-6ebb-5f54-ab39-02705869a4f4",
+       "label": "A",
+       "content": "4 Ω",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7405d9af-217d-59a1-818d-af6a935a6cb0",
+       "label": "B",
+       "content": "6.67 Ω",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e2de7074-7272-592b-bbca-13b41337a4f7",
+       "label": "C",
+       "content": "15 Ω",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c570646b-b6ed-595c-8729-5fca169a8bbf",
+       "label": "D",
+       "content": "25 Ω",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3a3da343-52c0-5f64-bc02-5caecd713d06",
+     "key": "phy-ckt-06",
+     "stem": "A potentiometer is preferred to a voltmeter for measuring the e.m.f. of a cell because, at balance, it",
+     "image_url": null,
+     "explanation": "With no current drawn, there is no 'lost volts' in the cell, so the true e.m.f. is measured.\n\n**Why the other options are wrong**\n\n- has a very low resistance: The key point is that no current is drawn at balance.\n- is always more sensitive than a galvanometer: It uses a galvanometer to find balance.\n- adds to the e.m.f. of the cell: It measures the e.m.f.; it does not change it.",
+     "position": 6,
+     "options": [
+      {
+       "id": "2de95167-55e5-57f7-9ccf-f3d58fa57c5d",
+       "label": "A",
+       "content": "has a very low resistance",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "56b29f64-9bd5-5546-a446-1ba7b4901320",
+       "label": "B",
+       "content": "is always more sensitive than a galvanometer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b10756aa-13f9-5467-969b-fb7b0e40d414",
+       "label": "C",
+       "content": "adds to the e.m.f. of the cell",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "13bb7ed6-d8e4-58c3-ad65-97b77105fbe1",
+       "label": "D",
+       "content": "draws no current from the cell",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "428d7cff-33d9-592e-b8d0-a12de7f90060",
+     "key": "phy-ckt-07",
+     "stem": "To convert a galvanometer into an ammeter, connect",
+     "image_url": null,
+     "explanation": "A low-resistance shunt in parallel carries most of the current, extending the range.\n\n**Why the other options are wrong**\n\n- a large resistance in series with it: That converts it into a voltmeter.\n- a small resistance in series with it: Most of the current must bypass the galvanometer, so the shunt goes in parallel.\n- a large resistance in parallel with it: A large parallel resistance would carry little current.",
+     "position": 7,
+     "options": [
+      {
+       "id": "301fed17-2279-5e06-b101-05a14d1e709d",
+       "label": "A",
+       "content": "a small resistance (shunt) in parallel with it",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "13ebac1f-5a22-57c3-b923-3ebd01039c00",
+       "label": "B",
+       "content": "a large resistance in series with it",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f2775a91-e28c-5f0c-bf86-789f51365657",
+       "label": "C",
+       "content": "a small resistance in series with it",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "32aa98b9-27b0-5da4-9600-8bd14db93a6d",
+       "label": "D",
+       "content": "a large resistance in parallel with it",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0be1a13f-2e3b-5546-9227-351b985b728c",
+     "key": "phy-ckt-08",
+     "stem": "A galvanometer of resistance 20 Ω gives full-scale deflection at 2 mA. What series resistance converts it into a voltmeter reading up to 10 V?",
+     "image_url": null,
+     "explanation": "$R = \\dfrac{V}{I_g} - G = \\dfrac{10}{0.002} - 20 = 5000 - 20 = 4980\\ \\Omega$.\n\n**Why the other options are wrong**\n\n- 5000 Ω: You forgot to subtract the galvanometer's own 20 Ω.\n- 5020 Ω: You added the galvanometer's resistance instead of subtracting it.\n- 20 Ω: That is the galvanometer's resistance.",
+     "position": 8,
+     "options": [
+      {
+       "id": "0022028d-951a-56c3-a931-e2ae57fcacb0",
+       "label": "A",
+       "content": "20 Ω",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fa2987b2-b97a-5ac8-9c96-390ce815164f",
+       "label": "B",
+       "content": "4980 Ω",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "be0fffd3-e784-596f-b0fb-47e4bfecb1ab",
+       "label": "C",
+       "content": "5000 Ω",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1cf5be88-e9ac-5cac-84bb-2a262608edb6",
+       "label": "D",
+       "content": "5020 Ω",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "75ef106f-3286-5dbb-9afa-fcd33412819f",
+   "topic": "Electric Energy and Power",
+   "title": "Electric Energy and Power: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on electric energy and power, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 164,
+   "questions": [
+    {
+     "id": "d4ed35ce-6c5a-55be-aaca-b8dde3f23fd5",
+     "key": "phy-pow-01",
+     "stem": "An electric iron draws 4 A from a 240 V supply. What is its power?",
+     "image_url": null,
+     "explanation": "$P = VI = 240 \\times 4 = 960\\ \\text{W}$.\n\n**Why the other options are wrong**\n\n- 60 W: You divided the voltage by the current.\n- 244 W: You added the voltage and current.\n- 3840 W: You used P = I²V.",
+     "position": 1,
+     "options": [
+      {
+       "id": "af3cc399-e92c-5c9b-ae35-063c8aa2e0c8",
+       "label": "A",
+       "content": "60 W",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e3398a1d-d4cb-52b6-b23b-cee75d8cc906",
+       "label": "B",
+       "content": "244 W",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bd181ed9-2a0d-5631-b31e-c2e4220b5e1d",
+       "label": "C",
+       "content": "960 W",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c5f89acc-bd96-502f-8f81-59e2f9c66d08",
+       "label": "D",
+       "content": "3840 W",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c970a3ad-925d-5f53-a35c-6268010a0ff4",
+     "key": "phy-pow-02",
+     "stem": "How many joules are there in one kilowatt-hour?",
+     "image_url": null,
+     "explanation": "$1\\ \\text{kWh} = 1000\\ \\text{W} \\times 3600\\ \\text{s} = 3.6 \\times 10^{6}\\ \\text{J}$.\n\n**Why the other options are wrong**\n\n- 0.06 × 10⁶ J: You used 60 s instead of 3600 s.\n- 0.0036 × 10⁶ J: You used 1 W instead of 1 kW (1000 W).\n- 1.0 × 10⁶ J: A kilowatt-hour is power × time: 1000 W × 3600 s.",
+     "position": 2,
+     "options": [
+      {
+       "id": "b95a343e-5aed-58a7-b456-1f025c161734",
+       "label": "A",
+       "content": "0.0036 × 10⁶ J",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d9837d43-3762-5688-a8cf-b4b316e90610",
+       "label": "B",
+       "content": "0.06 × 10⁶ J",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "403927d0-7fe3-55c6-bc18-4baef576cd3e",
+       "label": "C",
+       "content": "1.0 × 10⁶ J",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "77649ce6-189e-589e-bbed-64f5547bbb96",
+       "label": "D",
+       "content": "3.6 × 10⁶ J",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "be0639b3-27e4-5573-a877-589c8bdb16eb",
+     "key": "phy-pow-03",
+     "stem": "A 2 kW heater is used for 3 hours a day for 10 days. If one unit (kWh) costs NLe 2.00, what is the cost in leones (NLe)?",
+     "image_url": null,
+     "explanation": "Energy $= 2 \\times 3 \\times 10 = 60$ kWh. Cost $= 60 \\times 2.00 = $ NLe 120.\n\n**Why the other options are wrong**\n\n- 60: You worked out the energy (60 kWh) but did not multiply by the price.\n- 12: That is the cost for one day only.\n- 120000: You used 2000 W instead of 2 kW.",
+     "position": 3,
+     "options": [
+      {
+       "id": "45cd5d9c-4f7f-58bc-9472-ce6590e3a461",
+       "label": "A",
+       "content": "12",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2fb6ca2d-2c13-510d-a9ab-b96e70902df3",
+       "label": "B",
+       "content": "60",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "75e8b0aa-0e2e-5b7b-a83e-461d120f1a6e",
+       "label": "C",
+       "content": "120",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ce038112-99e2-5dfd-8f64-bce7dd3f04fb",
+       "label": "D",
+       "content": "120000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6efca297-8b53-579a-a3cd-1c107d09111f",
+     "key": "phy-pow-04",
+     "stem": "What is the resistance of a lamp rated 240 V, 60 W when working normally?",
+     "image_url": null,
+     "explanation": "$R = \\dfrac{V^2}{P} = \\dfrac{240^2}{60} = 960\\ \\Omega$.\n\n**Why the other options are wrong**\n\n- 4 Ω: You divided V by P; R = V²/P.\n- 0.25 Ω: That is the current, P/V.\n- 14400 Ω: You multiplied V by P.",
+     "position": 4,
+     "options": [
+      {
+       "id": "05855bfe-7958-5565-8b94-98a042ef1981",
+       "label": "A",
+       "content": "0.25 Ω",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8420dfeb-cec7-547d-b3a6-9a91586a5a43",
+       "label": "B",
+       "content": "4 Ω",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f86b722c-8cec-5d33-b9b3-2dba4c237fa3",
+       "label": "C",
+       "content": "960 Ω",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "bb7a9196-a9e8-5bd6-b87d-52ded9a921a7",
+       "label": "D",
+       "content": "14400 Ω",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2474c420-1c6c-526a-a6ac-b8c693e19aea",
+     "key": "phy-pow-05",
+     "stem": "A lamp rated 240 V, 100 W is connected to a 120 V supply. What power does it use (resistance constant)?",
+     "image_url": null,
+     "explanation": "$R = \\dfrac{240^2}{100} = 576\\ \\Omega$; $P = \\dfrac{120^2}{576} = 25\\ \\text{W}$.\n\n**Why the other options are wrong**\n\n- 50 W: Power is proportional to V², so halving V quarters the power.\n- 100 W: The rated power applies only at the rated voltage.\n- 400 W: You inverted the ratio; the power falls when the voltage falls.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ab9a9370-0295-51a1-bfaa-fcf2d7a984c9",
+       "label": "A",
+       "content": "25 W",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "075c28df-0c59-594d-885e-455092c6c341",
+       "label": "B",
+       "content": "50 W",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "56805c46-8c67-59dc-8a41-9acb823a7778",
+       "label": "C",
+       "content": "100 W",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "59977758-a357-588d-b741-7b3e1bb640e6",
+       "label": "D",
+       "content": "400 W",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cf1a59f0-ada6-517e-bcae-0873368262a8",
+     "key": "phy-pow-06",
+     "stem": "If the current through a resistor is tripled, by what factor does the rate of heat production change?",
+     "image_url": null,
+     "explanation": "$P = I^2R$: tripling $I$ multiplies the power by $3^2 = 9$.\n\n**Why the other options are wrong**\n\n- 3: Heat production depends on I², not I.\n- 6: 3² = 9, not 2 × 3.\n- 27: It depends on I², not I³.",
+     "position": 6,
+     "options": [
+      {
+       "id": "bfc53542-9b7d-5919-ad0c-0e2cb293c192",
+       "label": "A",
+       "content": "3",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1fa6ab42-c255-5152-bc9f-308da106f03b",
+       "label": "B",
+       "content": "6",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5af7dab3-f391-540a-b21f-5d72632a4b8a",
+       "label": "C",
+       "content": "9",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "932ed3ea-e120-56bd-a6fa-ee1333626ac7",
+       "label": "D",
+       "content": "27",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6fdb6ae5-20f0-516c-bbd3-1cb8792cf1ed",
+     "key": "phy-pow-07",
+     "stem": "Electrical power is transmitted over long distances at high voltage in order to",
+     "image_url": null,
+     "explanation": "For a given power P = VI, a higher voltage means a smaller current, and the heating loss I²R falls sharply.\n\n**Why the other options are wrong**\n\n- increase the current in the cables: High voltage gives a small current for the same power.\n- make the electricity travel faster: The voltage does not change the speed of transmission.\n- increase the resistance of the cables: The cable resistance is fixed by their material and size.",
+     "position": 7,
+     "options": [
+      {
+       "id": "56b2d231-02f5-58b2-91e4-805baa957b18",
+       "label": "A",
+       "content": "increase the current in the cables",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8c94e11b-80a0-5015-85cd-14ba561faf96",
+       "label": "B",
+       "content": "make the electricity travel faster",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1a35fe9d-b9c6-5663-bf3e-8ff20090d27c",
+       "label": "C",
+       "content": "increase the resistance of the cables",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "962812b0-d839-5c90-b633-a18c243d832f",
+       "label": "D",
+       "content": "reduce the current and so reduce I²R energy losses in the cables",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0f7906c3-028b-58bd-aea6-80e007b388af",
+     "key": "phy-pow-08",
+     "stem": "Nichrome is used for the heating elements of electric kettles because it has",
+     "image_url": null,
+     "explanation": "High resistivity gives the needed resistance; a high melting point and resistance to oxidation let it glow red hot.\n\n**Why the other options are wrong**\n\n- a low resistivity and a low melting point: A low melting point would make it melt.\n- a low resistivity: High resistivity is needed for heating with a reasonable length of wire.\n- magnetic properties: Magnetism is irrelevant to heating elements.",
+     "position": 8,
+     "options": [
+      {
+       "id": "5c56602d-0a58-5e39-bb29-8f297a74b98a",
+       "label": "A",
+       "content": "a high resistivity and a high melting point",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d9c30241-1f26-5a7a-8c5d-23215b5774cc",
+       "label": "B",
+       "content": "a low resistivity and a low melting point",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2a3e081e-9708-5e34-a51c-7d90224e9011",
+       "label": "C",
+       "content": "a low resistivity",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f1cad994-ae78-527c-8575-8ae48bb2c77b",
+       "label": "D",
+       "content": "magnetic properties",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7db83234-e419-5970-b770-d3fbe5ad7e09",
+   "topic": "Electrolysis",
+   "title": "Electrolysis: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on electrolysis, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 165,
+   "questions": [
+    {
+     "id": "ddbc8ee7-ef55-5cb2-92a0-a57bb827d6eb",
+     "key": "phy-ely-01",
+     "stem": "In electrolysis, positive ions move towards the",
+     "image_url": null,
+     "explanation": "Positive ions (cations) are attracted to the negative electrode, the cathode.\n\n**Why the other options are wrong**\n\n- anode: The anode is positive, so it repels positive ions.\n- electrolyte surface: Ions move towards the electrodes.\n- battery: Ions stay in the electrolyte; electrons flow in the wires.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e3e77940-b4f4-55a9-bd24-2a7613347af0",
+       "label": "A",
+       "content": "anode",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "81d70fe1-1d8c-5286-8360-64b5ebfa6c9f",
+       "label": "B",
+       "content": "electrolyte surface",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "81e618a9-b7cd-5366-969d-a24007827130",
+       "label": "C",
+       "content": "battery",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7e7910b3-26de-5612-9cca-3d49996590b1",
+       "label": "D",
+       "content": "cathode",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d74bda98-8435-56ee-9728-e915ec56b32f",
+     "key": "phy-ely-02",
+     "stem": "To electroplate a spoon with silver, the spoon should be made the",
+     "image_url": null,
+     "explanation": "Silver ions from the electrolyte are deposited on the cathode (the spoon); a silver anode replaces them.\n\n**Why the other options are wrong**\n\n- anode, in a solution of a silver salt: Metal ions are deposited on the cathode, not the anode.\n- cathode, in pure water: Pure water contains no silver ions.\n- anode, in a copper sulphate solution: Copper sulphate would deposit copper, and on the cathode.",
+     "position": 2,
+     "options": [
+      {
+       "id": "40f01c00-0139-5eca-be4f-7f2c11936191",
+       "label": "A",
+       "content": "cathode, in a solution of a silver salt",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9e33187d-02ac-5255-8563-c36dcb90ea66",
+       "label": "B",
+       "content": "anode, in a solution of a silver salt",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "52ceb1db-1e76-5944-b92f-d1dde2f86d79",
+       "label": "C",
+       "content": "cathode, in pure water",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b75d71b0-7c4f-59c9-b1f5-2113a214c643",
+       "label": "D",
+       "content": "anode, in a copper sulphate solution",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "340d5c67-096e-5784-8976-0e74dd1ee33e",
+     "key": "phy-ely-03",
+     "stem": "A current of 2 A passes through copper sulphate solution for 1000 s. What mass of copper is deposited? (e.c.e. of copper = 3.3 × 10⁻⁷ kg C⁻¹)",
+     "image_url": null,
+     "explanation": "$m = zIt = 3.3 \\times 10^{-7} \\times 2 \\times 1000 = 6.6 \\times 10^{-4}\\ \\text{kg} = 0.66\\ \\text{g}$.\n\n**Why the other options are wrong**\n\n- 0.33 g: You used 1 A instead of 2 A.\n- 0.00066 g: That is the mass in kilograms; the options are in grams.\n- 6.6 g: Check the powers of ten: 3.3 × 10⁻⁷ × 2000 = 6.6 × 10⁻⁴ kg = 0.66 g.",
+     "position": 3,
+     "options": [
+      {
+       "id": "cae43f55-e5b8-506a-af46-47f2f236dd56",
+       "label": "A",
+       "content": "0.00066 g",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ddf14a25-f0eb-56ac-9c3f-23470cf34cb2",
+       "label": "B",
+       "content": "0.33 g",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b572db37-dc06-5977-8f28-779b39b5c807",
+       "label": "C",
+       "content": "0.66 g",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "64116934-27f6-5038-b0d1-6288cbe38555",
+       "label": "D",
+       "content": "6.6 g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b1edbaa9-70c5-5089-b00f-fb206f7bb4e6",
+     "key": "phy-ely-04",
+     "stem": "During electrolysis of copper sulphate with copper electrodes, the colour of the solution",
+     "image_url": null,
+     "explanation": "Copper dissolves from the anode as fast as it is deposited on the cathode, so the concentration stays constant.\n\n**Why the other options are wrong**\n\n- gradually fades: That happens with inert (platinum or carbon) electrodes, when copper ions are removed.\n- becomes darker blue: The concentration of copper ions stays the same.\n- turns green: No new substance colours the solution.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2299698e-e7fc-5847-9ad3-4aac4f5e2e81",
+       "label": "A",
+       "content": "gradually fades",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b0eebaf4-69d7-5f36-b6be-97967199c8e7",
+       "label": "B",
+       "content": "becomes darker blue",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "18daf001-df43-5bdb-9a8c-51db583c7783",
+       "label": "C",
+       "content": "turns green",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9b5a468e-3a01-5b89-a645-80de86ba72f3",
+       "label": "D",
+       "content": "remains the same",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c5d6113f-3de0-50b4-836a-bb40baae28e2",
+     "key": "phy-ely-05",
+     "stem": "Faraday's first law of electrolysis states that the mass of a substance liberated is proportional to",
+     "image_url": null,
+     "explanation": "$m = zQ = zIt$: mass ∝ charge passed.\n\n**Why the other options are wrong**\n\n- the voltage across the electrodes: Mass depends on the charge (It), not the voltage.\n- the area of the electrodes: Electrode area does not set the mass deposited.\n- the temperature of the electrolyte: Temperature is not in Faraday's law.",
+     "position": 5,
+     "options": [
+      {
+       "id": "02e25b55-6b4d-59bd-920b-90be443f4f5b",
+       "label": "A",
+       "content": "the quantity of electricity passed",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c366276a-0a89-582f-b3a0-9c49b36c5c9a",
+       "label": "B",
+       "content": "the voltage across the electrodes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fadb7fa2-755e-5dfc-9f46-9970b421e5a6",
+       "label": "C",
+       "content": "the area of the electrodes",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "186cab3c-cf59-537e-b309-a70bf020cbc2",
+       "label": "D",
+       "content": "the temperature of the electrolyte",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "11d99569-4b75-5e85-88b5-81c6e03322e6",
+     "key": "phy-ely-06",
+     "stem": "Which of the following is a secondary (rechargeable) cell?",
+     "image_url": null,
+     "explanation": "A lead–acid accumulator can be recharged by passing current through it in the reverse direction.\n\n**Why the other options are wrong**\n\n- Leclanché dry cell: Dry cells are primary cells; they cannot be recharged.\n- simple voltaic cell: This is a primary cell.\n- Daniell cell: This is a primary cell.",
+     "position": 6,
+     "options": [
+      {
+       "id": "7f936c4c-24c6-5be7-8281-4d51bc0375fb",
+       "label": "A",
+       "content": "Leclanché dry cell",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "338b54d6-cc16-51ed-b306-5dcbb22eb75e",
+       "label": "B",
+       "content": "simple voltaic cell",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0e4e8a2c-6450-5e7e-b23d-0b3266f177e0",
+       "label": "C",
+       "content": "Daniell cell",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "81bb91fe-1c57-55f3-80e4-e7cd7ace8aaa",
+       "label": "D",
+       "content": "lead–acid accumulator",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "15f1dcd9-9cf8-5844-bda6-cd517461c730",
+     "key": "phy-ely-07",
+     "stem": "Polarisation in a simple cell is caused by",
+     "image_url": null,
+     "explanation": "Hydrogen bubbles on the copper raise the internal resistance and set up a back e.m.f.; a depolariser removes them.\n\n**Why the other options are wrong**\n\n- impurities in the zinc plate: That causes local action.\n- the acid becoming too concentrated: Polarisation is due to hydrogen on the positive plate.\n- the zinc plate dissolving: Zinc dissolving is the normal action of the cell.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b24766da-7075-53f8-8d8c-be1c938e47d0",
+       "label": "A",
+       "content": "bubbles of hydrogen collecting on the copper plate",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "418ed6f1-6cff-5ea7-b901-db6da8f31659",
+       "label": "B",
+       "content": "impurities in the zinc plate",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "02d0d3d6-70e7-54e0-8de4-a47d1b4ab3aa",
+       "label": "C",
+       "content": "the acid becoming too concentrated",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f9580803-ca7f-5c56-a547-57cd53cdcc8c",
+       "label": "D",
+       "content": "the zinc plate dissolving",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b78b113f-33a9-5389-b25c-11b96caa03ce",
+     "key": "phy-ely-08",
+     "stem": "How long must a current of 0.5 A flow to deposit 0.56 g of silver? (e.c.e. of silver = 1.12 × 10⁻⁶ kg C⁻¹)",
+     "image_url": null,
+     "explanation": "$t = \\dfrac{m}{zI} = \\dfrac{0.56 \\times 10^{-3}}{1.12 \\times 10^{-6} \\times 0.5} = 1000\\ \\text{s}$.\n\n**Why the other options are wrong**\n\n- 500 s: You left out the current; t = m/(zI).\n- 250 s: You multiplied by the current instead of dividing.\n- 1000000 s: You used 0.56 kg instead of 0.56 × 10⁻³ kg.",
+     "position": 8,
+     "options": [
+      {
+       "id": "f3f27a20-c2b3-54d5-aec1-fe7123a6b283",
+       "label": "A",
+       "content": "250 s",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3079a244-4744-591d-a2f6-f242b58fe1e5",
+       "label": "B",
+       "content": "500 s",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dce02de0-24df-5cd2-bf77-02befd02566d",
+       "label": "C",
+       "content": "1000 s",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a9590147-5e31-5c52-8f4f-f6d1ec4f0392",
+       "label": "D",
+       "content": "1000000 s",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a1534a0d-2ce8-51bf-8abe-b951a1950170",
+   "topic": "Magnets and Magnetic Fields",
+   "title": "Magnets and Magnetic Fields: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on magnets and magnetic fields, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 166,
+   "questions": [
+    {
+     "id": "69f0b00a-6efe-504d-8884-fb82023c8b2b",
+     "key": "phy-mag-01",
+     "stem": "Which material is used for the core of an electromagnet?",
+     "image_url": null,
+     "explanation": "Soft iron magnetises strongly and loses its magnetism as soon as the current stops.\n\n**Why the other options are wrong**\n\n- steel: Steel keeps its magnetism; the electromagnet would not switch off.\n- copper: Copper is not magnetic.\n- aluminium: Aluminium is not magnetic.",
+     "position": 1,
+     "options": [
+      {
+       "id": "6818107e-e811-5e67-ba45-596b4005556b",
+       "label": "A",
+       "content": "steel",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "69600be5-251f-5b18-b40c-1dc2b9c91d3f",
+       "label": "B",
+       "content": "copper",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0795c617-e37c-5af1-b9a7-76edc6f0a6f0",
+       "label": "C",
+       "content": "aluminium",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8309ae5c-748c-5116-af16-ffe34f61f506",
+       "label": "D",
+       "content": "soft iron",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1f598576-603c-5ef0-b318-d2b6da32d189",
+     "key": "phy-mag-02",
+     "stem": "According to the domain theory, a magnet is saturated when",
+     "image_url": null,
+     "explanation": "Once every domain is aligned, the magnet cannot be made any stronger.\n\n**Why the other options are wrong**\n\n- its domains point in random directions: That describes an unmagnetised material.\n- it has been heated strongly: Heating destroys the alignment.\n- half its domains are aligned: Saturation means all of them are aligned.",
+     "position": 2,
+     "options": [
+      {
+       "id": "37a75778-f313-56a8-b022-11c02b661dca",
+       "label": "A",
+       "content": "all its domains are aligned in the same direction",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b798f5cc-a392-564b-8f22-27f0fea849ab",
+       "label": "B",
+       "content": "its domains point in random directions",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a8974f5c-ca13-534d-bc76-e4ca48d413e4",
+       "label": "C",
+       "content": "it has been heated strongly",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e7161059-c986-5763-ab89-2a53d287b015",
+       "label": "D",
+       "content": "half its domains are aligned",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3528b2bf-6e86-5a8f-a1ab-cdd73d7a9d64",
+     "key": "phy-mag-03",
+     "stem": "The best way to demagnetise a magnet is to",
+     "image_url": null,
+     "explanation": "The reversing field of a.c., gradually reduced, leaves the domains in random directions.\n\n**Why the other options are wrong**\n\n- place it in a solenoid carrying direct current: Direct current magnetises; it does not demagnetise.\n- store it with a keeper: Keepers preserve magnetism.\n- stroke it with another magnet: Stroking magnetises.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d12a0492-f5da-553b-a30b-4f3ea8d24655",
+       "label": "A",
+       "content": "place it in a solenoid carrying direct current",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cf5d1ff3-74a7-5973-84ed-fb4d4257b7dd",
+       "label": "B",
+       "content": "store it with a keeper",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f785e1ad-be67-5d21-83ba-39e526f1e697",
+       "label": "C",
+       "content": "stroke it with another magnet",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e9b87bdd-2320-5089-b704-d3f5948f999f",
+       "label": "D",
+       "content": "place it in a solenoid carrying alternating current and slowly withdraw it",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "63d7713f-f4e0-52b7-b381-f1e1ade250ea",
+     "key": "phy-mag-04",
+     "stem": "Outside a bar magnet, magnetic field lines run",
+     "image_url": null,
+     "explanation": "By convention, field lines leave the N pole and enter the S pole outside the magnet.\n\n**Why the other options are wrong**\n\n- from the south pole to the north pole: That is the direction inside the magnet.\n- in circles round the middle of the magnet: That describes the field of a straight current-carrying wire.\n- parallel to the magnet from end to end: They curve from pole to pole.",
+     "position": 4,
+     "options": [
+      {
+       "id": "81b20840-16c1-53d1-a394-4a69154fea76",
+       "label": "A",
+       "content": "from the north pole to the south pole",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d6212af0-96a1-57e8-9eb4-fead26941c67",
+       "label": "B",
+       "content": "from the south pole to the north pole",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eeea987e-f313-598e-96ba-5d2a73d3a93e",
+       "label": "C",
+       "content": "in circles round the middle of the magnet",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e33acc9b-4425-5793-853c-44c3f9262d3d",
+       "label": "D",
+       "content": "parallel to the magnet from end to end",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a4bfa46a-0f05-5f8b-ae60-7c64693630da",
+     "key": "phy-mag-05",
+     "stem": "The angle between the Earth's magnetic field and the horizontal at a place is called the angle of",
+     "image_url": null,
+     "explanation": "The angle of dip is 90° at the magnetic poles and 0° at the magnetic equator.\n\n**Why the other options are wrong**\n\n- declination: Declination is the angle between true north and magnetic north.\n- incidence: That is a term from optics.\n- deviation: That is a term from prisms.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b1009bef-5f7b-5b98-8698-b5fb1941eddb",
+       "label": "A",
+       "content": "declination",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f1934f91-e84f-5bcb-a4b5-efb65e28f738",
+       "label": "B",
+       "content": "incidence",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6818d7a8-4243-5153-b15e-e79fcd79ac59",
+       "label": "C",
+       "content": "deviation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fa533801-7bfc-5a21-8130-180dfbe44619",
+       "label": "D",
+       "content": "dip (inclination)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d7958396-1c2d-5a20-a81c-2f3d555990d8",
+     "key": "phy-mag-06",
+     "stem": "A neutral point in a magnetic field is a point where",
+     "image_url": null,
+     "explanation": "At a neutral point the fields of the magnets (and the Earth) cancel, so a compass shows no particular direction.\n\n**Why the other options are wrong**\n\n- the field is strongest: At a neutral point the fields cancel.\n- only north poles exist: Poles always come in pairs.\n- the field lines cross: Field lines never cross.",
+     "position": 6,
+     "options": [
+      {
+       "id": "9cc51d03-a9cd-5608-bb66-d6fd6f9cc982",
+       "label": "A",
+       "content": "the resultant magnetic field is zero",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6ce38f8f-d1a3-5461-8c84-27c4053a547d",
+       "label": "B",
+       "content": "the field is strongest",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c6d79f7a-6bb9-5d6c-bfa4-404a198ad9f4",
+       "label": "C",
+       "content": "only north poles exist",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "06d7749f-d485-5b73-87c2-6225e79c0722",
+       "label": "D",
+       "content": "the field lines cross",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "63808bd5-201e-5efb-b7ac-1590f53a8fa6",
+     "key": "phy-mag-07",
+     "stem": "Which of these is a non-magnetic material?",
+     "image_url": null,
+     "explanation": "Brass (copper and zinc) is not attracted by a magnet.\n\n**Why the other options are wrong**\n\n- nickel: Nickel is ferromagnetic.\n- cobalt: Cobalt is ferromagnetic.\n- steel: Steel is magnetic (used for permanent magnets).",
+     "position": 7,
+     "options": [
+      {
+       "id": "15b5e2ea-9fe5-5600-b31b-93e5dd1013cb",
+       "label": "A",
+       "content": "nickel",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a0504c56-d336-5ce4-8f4b-38787b7c0805",
+       "label": "B",
+       "content": "brass",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "288d10b7-aae3-5f58-b1f4-242c06ea06be",
+       "label": "C",
+       "content": "cobalt",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2c81ab02-29ad-5fce-8b15-84501ce2a03a",
+       "label": "D",
+       "content": "steel",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e27e608f-06dd-536b-b8d1-92a6261acefe",
+     "key": "phy-mag-08",
+     "stem": "Magnets are stored in pairs with soft-iron keepers in order to",
+     "image_url": null,
+     "explanation": "The keepers complete a closed magnetic loop, keeping the domains aligned.\n\n**Why the other options are wrong**\n\n- make them stronger than saturation: No magnet can be stronger than saturation.\n- demagnetise them: Keepers preserve magnetism.\n- reverse their poles: Keepers do not reverse poles.",
+     "position": 8,
+     "options": [
+      {
+       "id": "f51e6d58-c65c-5e1e-b3f7-9ce100c0077f",
+       "label": "A",
+       "content": "make them stronger than saturation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bff80e6b-1fae-5e62-b5da-daf4082ad465",
+       "label": "B",
+       "content": "demagnetise them",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3f2aa6f0-5f0f-5e5c-bc23-77d2760e7931",
+       "label": "C",
+       "content": "prevent them from losing their magnetism",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "75e52bdb-3c0f-5f59-b4d1-ad38d83f2af8",
+       "label": "D",
+       "content": "reverse their poles",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ce20a482-4c35-5dec-b43c-ec37a761dee0",
+   "topic": "Magnetic Effects of Current",
+   "title": "Magnetic Effects of Current: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on magnetic effects of current, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 167,
+   "questions": [
+    {
+     "id": "cafe021c-3b06-59f8-8d4c-0fb018be611f",
+     "key": "phy-mfx-01",
+     "stem": "The magnetic field lines around a long straight wire carrying a current are",
+     "image_url": null,
+     "explanation": "Circles centred on the wire; the right-hand grip rule gives their direction.\n\n**Why the other options are wrong**\n\n- straight lines parallel to the wire: The field circles the wire.\n- straight lines radiating from the wire: That describes the electric field of a charged wire.\n- like those of a bar magnet: That describes a solenoid.",
+     "position": 1,
+     "options": [
+      {
+       "id": "ea3ff4c5-6fb6-57ec-91d5-a914b9a85180",
+       "label": "A",
+       "content": "straight lines parallel to the wire",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ff133f3d-c2e8-576f-b0cb-7a2cbf46037a",
+       "label": "B",
+       "content": "straight lines radiating from the wire",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6908d110-0fa0-56f2-824f-fccd0bb1048a",
+       "label": "C",
+       "content": "like those of a bar magnet",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "607b31e4-5be2-5b24-915f-63eeb0b79295",
+       "label": "D",
+       "content": "concentric circles centred on the wire",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b43e9dc9-f6e7-5fe0-9418-2ee8fcbe5264",
+     "key": "phy-mfx-02",
+     "stem": "A wire 0.2 m long carries a current of 5 A at right angles to a magnetic field of 0.4 T. What is the force on it?",
+     "image_url": null,
+     "explanation": "$F = BIL = 0.4 \\times 5 \\times 0.2 = 0.4\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 2 N: You left out the length of the wire.\n- 0.08 N: You left out the current.\n- 1 N: You left out the magnetic field.",
+     "position": 2,
+     "options": [
+      {
+       "id": "1947ac62-1661-5d45-ae44-a57119a0b2a5",
+       "label": "A",
+       "content": "0.08 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "96ca5609-8110-5aae-9a84-bf52ca1edc0f",
+       "label": "B",
+       "content": "0.4 N",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9e9c6703-fbad-57fb-a555-c9ea291f0fac",
+       "label": "C",
+       "content": "1 N",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3998bac5-3299-5607-948c-0dd498c14db5",
+       "label": "D",
+       "content": "2 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b0959945-a528-508e-b309-7178d626a2b9",
+     "key": "phy-mfx-03",
+     "stem": "In Fleming's left-hand rule, the thumb points in the direction of the",
+     "image_url": null,
+     "explanation": "First finger: Field; seCond finger: Current; thuMb: Motion (force).\n\n**Why the other options are wrong**\n\n- current: The second finger shows the current.\n- magnetic field: The first finger shows the field.\n- induced e.m.f.  \n  That belongs to the right-hand (dynamo) rule.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2ae178e1-15ae-5b7c-b066-95cd83778c5a",
+       "label": "A",
+       "content": "force (motion)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0510b017-4d24-5fce-b96a-71310ed63e26",
+       "label": "B",
+       "content": "current",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "38e8d7a2-4b69-5fdd-84b1-909354852139",
+       "label": "C",
+       "content": "magnetic field",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "11cbd229-4010-5f40-b848-8ab4371468d7",
+       "label": "D",
+       "content": "induced e.m.f.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2eebf652-865a-5881-9fe8-13c88508fc1a",
+     "key": "phy-mfx-04",
+     "stem": "The split-ring commutator in a d.c. motor",
+     "image_url": null,
+     "explanation": "Reversing the coil current each half turn keeps the couple acting the same way, so the coil keeps rotating.\n\n**Why the other options are wrong**\n\n- keeps the current in the coil constant in direction: It reverses the coil current so the turning force stays in one direction.\n- produces the magnetic field: The magnets produce the field.\n- converts d.c. into a.c. for the supply: It does not change the supply.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2fdaa7da-2206-57bd-a3db-fa44b6cd37dd",
+       "label": "A",
+       "content": "keeps the current in the coil constant in direction",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3561b0dd-9635-5f5b-aaa3-dbbd3a9b8d7f",
+       "label": "B",
+       "content": "reverses the current in the coil every half turn",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "090b8fa0-ba70-55f6-bf1a-74e7af30eb04",
+       "label": "C",
+       "content": "produces the magnetic field",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "19fe96d1-46d7-5205-8058-a6f7c5d37d61",
+       "label": "D",
+       "content": "converts d.c. into a.c. for the supply",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4d8ec055-8870-5c5b-a543-0acf0222afc9",
+     "key": "phy-mfx-05",
+     "stem": "Which change would NOT increase the strength of an electromagnet?",
+     "image_url": null,
+     "explanation": "Copper is non-magnetic and does not strengthen the field.\n\n**Why the other options are wrong**\n\n- increasing the current: More current gives a stronger field.\n- increasing the number of turns: More turns give a stronger field.\n- using a soft-iron core instead of air: Soft iron strengthens the field greatly.",
+     "position": 5,
+     "options": [
+      {
+       "id": "fd9736ff-f627-51a8-8b2b-66dff99f7c3a",
+       "label": "A",
+       "content": "increasing the current",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4bae84a5-2dd3-577f-8fd6-a018329b2e7c",
+       "label": "B",
+       "content": "increasing the number of turns",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c889c0b7-6aa7-5679-aaa4-a38c2d18d97f",
+       "label": "C",
+       "content": "replacing the soft-iron core with a copper core",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "aa81d79a-08c8-5c35-a982-34141efd4373",
+       "label": "D",
+       "content": "using a soft-iron core instead of air",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b49edd8f-b6b5-51cf-b5e8-a960d62a6fd3",
+     "key": "phy-mfx-06",
+     "stem": "Two long parallel wires carry currents in the same direction. The wires",
+     "image_url": null,
+     "explanation": "Parallel currents in the same direction attract; in opposite directions they repel.\n\n**Why the other options are wrong**\n\n- repel each other: Currents in opposite directions repel.\n- exert no force on each other: Each wire is in the other's magnetic field.\n- rotate: They are pulled together, not rotated.",
+     "position": 6,
+     "options": [
+      {
+       "id": "f6b9937e-9efd-5053-ada3-2b1b19278ce0",
+       "label": "A",
+       "content": "repel each other",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "704ce630-7d7a-5cce-864c-e900423a12bc",
+       "label": "B",
+       "content": "exert no force on each other",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "47482f68-5cc1-539f-9c03-7665f90f41da",
+       "label": "C",
+       "content": "rotate",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "49f103d7-011d-5b05-a26d-da4df3ab6b2f",
+       "label": "D",
+       "content": "attract each other",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "528c166d-9923-5940-ba51-ea610d00555e",
+     "key": "phy-mfx-07",
+     "stem": "In an electric bell, the circuit is broken repeatedly because",
+     "image_url": null,
+     "explanation": "When the armature is pulled to strike the gong, it leaves the contact screw, breaking the circuit; the spring pulls it back.\n\n**Why the other options are wrong**\n\n- the battery runs down: The make-and-break is built into the bell.\n- the gong breaks the circuit: The gong only makes the sound.\n- the electromagnet reverses its poles: The electromagnet simply switches on and off.",
+     "position": 7,
+     "options": [
+      {
+       "id": "460ee831-aa95-5d16-99f6-4966699d820c",
+       "label": "A",
+       "content": "the moving armature separates from the contact screw",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "374c4264-5495-5c99-bf79-6252e8593993",
+       "label": "B",
+       "content": "the battery runs down",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9f042c63-79b4-56f8-8d45-1ab0c31e3c92",
+       "label": "C",
+       "content": "the gong breaks the circuit",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "63d4b536-f484-5a9e-b06c-1f1cc7e98486",
+       "label": "D",
+       "content": "the electromagnet reverses its poles",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "42eaed85-f57e-5033-b34d-f8ff98e4426c",
+     "key": "phy-mfx-08",
+     "stem": "The scale of a moving-coil galvanometer is uniform (linear) because",
+     "image_url": null,
+     "explanation": "In a radial field the turning couple is proportional to the current, balanced by the spring couple proportional to deflection.\n\n**Why the other options are wrong**\n\n- the hairsprings have no stiffness: The springs provide the restoring couple.\n- the coil is made of soft iron: The coil is copper wire; the soft-iron cylinder helps make the field radial.\n- it measures only alternating current: It measures d.c.",
+     "position": 8,
+     "options": [
+      {
+       "id": "162a1fd0-a095-5049-bdb0-d4ce34c7fb68",
+       "label": "A",
+       "content": "the hairsprings have no stiffness",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f8a591d0-3a52-51bf-b93b-bc6d57190b03",
+       "label": "B",
+       "content": "the deflection is proportional to the current in a radial field",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1de3b102-979c-599a-a55b-4eac4822bf41",
+       "label": "C",
+       "content": "the coil is made of soft iron",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3beb013a-f112-5ca6-b765-be7db59ec167",
+       "label": "D",
+       "content": "it measures only alternating current",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ee7d961b-50c4-5b58-bdd8-26fa95f4b3fd",
+   "topic": "Electromagnetic Induction",
+   "title": "Electromagnetic Induction: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on electromagnetic induction, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 168,
+   "questions": [
+    {
+     "id": "cae4af77-7318-5ac7-a2c0-bbe56d9a6beb",
+     "key": "phy-ind-01",
+     "stem": "When a magnet is held stationary inside a coil connected to a galvanometer, the galvanometer",
+     "image_url": null,
+     "explanation": "Induction needs a changing magnetic flux; a stationary magnet gives none.\n\n**Why the other options are wrong**\n\n- deflects steadily in one direction: No change of flux means no induced e.m.f.\n- deflects to and fro continuously: Only a changing flux induces an e.m.f.\n- shows a maximum deflection: The magnet must move to induce a current.",
+     "position": 1,
+     "options": [
+      {
+       "id": "3d5fcb6f-8dde-500e-a863-18e002a47a35",
+       "label": "A",
+       "content": "deflects steadily in one direction",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "75f93d0e-fee7-53ae-9aab-f2a2a9c1c3d5",
+       "label": "B",
+       "content": "deflects to and fro continuously",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2d5748dd-9d34-5750-a937-b1bcb78554f7",
+       "label": "C",
+       "content": "shows no deflection",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "48aac9d6-dca8-5817-b39c-3e817f4b71e9",
+       "label": "D",
+       "content": "shows a maximum deflection",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "68a6ae29-6180-53f4-aa7a-d215d029ea53",
+     "key": "phy-ind-02",
+     "stem": "Lenz's law is a consequence of the principle of conservation of",
+     "image_url": null,
+     "explanation": "The induced current opposes the change, so work must be done to produce it: energy is conserved.\n\n**Why the other options are wrong**\n\n- charge: Charge conservation gives Kirchhoff's current rule.\n- momentum: Momentum is not the basis of Lenz's law.\n- mass: Mass conservation is unrelated.",
+     "position": 2,
+     "options": [
+      {
+       "id": "2435e21f-ba86-5315-a9c5-058964e1aa64",
+       "label": "A",
+       "content": "charge",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6eac12e9-23ed-57fa-a38e-c1788fd46662",
+       "label": "B",
+       "content": "momentum",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1ad2fece-a67a-5157-8f0f-430fd5c9c142",
+       "label": "C",
+       "content": "mass",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5364647e-dfba-5354-9830-fe537ff3bc78",
+       "label": "D",
+       "content": "energy",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2ddf1b28-a88d-5690-bfe6-ebedfc336c58",
+     "key": "phy-ind-03",
+     "stem": "The magnetic flux through a coil of 100 turns changes by 0.05 Wb in 0.25 s. What is the average induced e.m.f.?",
+     "image_url": null,
+     "explanation": "$E = N\\dfrac{\\Delta\\Phi}{\\Delta t} = 100 \\times \\dfrac{0.05}{0.25} = 20\\ \\text{V}$.\n\n**Why the other options are wrong**\n\n- 0.2 V: You forgot to multiply by the 100 turns.\n- 1.25 V: You multiplied by the time instead of dividing.\n- 500 V: You divided the time by the flux change.",
+     "position": 3,
+     "options": [
+      {
+       "id": "cd32c18f-25e7-5349-b149-112fa6cd6928",
+       "label": "A",
+       "content": "0.2 V",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8afe5c17-7a18-559d-823d-2d2a18f3a22b",
+       "label": "B",
+       "content": "1.25 V",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bb25cbaf-1c17-510d-9302-6e7d2674e14b",
+       "label": "C",
+       "content": "20 V",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9e205e52-cd0b-5f34-9807-37def737781c",
+       "label": "D",
+       "content": "500 V",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b71f7668-03d7-5bff-9bf5-4738a1b0d4b6",
+     "key": "phy-ind-04",
+     "stem": "A rod 0.5 m long moves at 6 m s⁻¹ at right angles to a magnetic field of 0.2 T. What e.m.f. is induced across its ends?",
+     "image_url": null,
+     "explanation": "$E = BLv = 0.2 \\times 0.5 \\times 6 = 0.6\\ \\text{V}$.\n\n**Why the other options are wrong**\n\n- 15 V: You divided instead of multiplying (E = BLv).\n- 1.2 V: You left out the length of 0.5 m.\n- 0.1 V: You left out the speed.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ff05d57e-82c9-5849-80ac-676dbecd9f8c",
+       "label": "A",
+       "content": "0.1 V",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3076a6a4-65d3-5d57-ad27-445d9d1e8b84",
+       "label": "B",
+       "content": "0.6 V",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d72bc61b-a9f1-55ec-b598-9bcd9546ce3d",
+       "label": "C",
+       "content": "1.2 V",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "db46436b-7176-5b05-b89a-834fd1079966",
+       "label": "D",
+       "content": "15 V",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c6b4a0fc-e12c-5b96-ac05-9cffc29172ee",
+     "key": "phy-ind-05",
+     "stem": "The part of an a.c. generator that keeps the rotating coil connected to the external circuit is the",
+     "image_url": null,
+     "explanation": "Slip rings turn with the coil, and the brushes press on them, giving an alternating output.\n\n**Why the other options are wrong**\n\n- split-ring commutator: A commutator makes the output d.c.\n- field magnet: The magnet provides the field.\n- soft-iron core: The core concentrates the field.",
+     "position": 5,
+     "options": [
+      {
+       "id": "173ab2bc-d5fb-5d1f-9dba-254c9b67c864",
+       "label": "A",
+       "content": "pair of slip rings with carbon brushes",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4d96ab44-f412-5f6f-babd-b1316f8a0c4e",
+       "label": "B",
+       "content": "split-ring commutator",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "efcf95ef-75c6-526d-aaeb-25554a7dee35",
+       "label": "C",
+       "content": "field magnet",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8cff6585-60f3-5b62-a520-9cdf89d9a6e0",
+       "label": "D",
+       "content": "soft-iron core",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8506e5f4-3ee0-5242-b8ab-5f459aa26e47",
+     "key": "phy-ind-06",
+     "stem": "Fleming's right-hand rule gives the direction of the",
+     "image_url": null,
+     "explanation": "Right hand for generators: thuMb Motion, First finger Field, seCond finger induced Current.\n\n**Why the other options are wrong**\n\n- force on a current-carrying conductor: That is Fleming's left-hand rule.\n- magnetic field around a straight wire: That is the right-hand grip rule.\n- rotation of a motor: Motors use the left-hand rule.",
+     "position": 6,
+     "options": [
+      {
+       "id": "0efe6d90-d87f-5624-bd53-a3de5b78605e",
+       "label": "A",
+       "content": "force on a current-carrying conductor",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e2cd2df9-d08e-5763-92f0-8fb5f6d11ca6",
+       "label": "B",
+       "content": "induced current in a conductor moving in a magnetic field",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b0e85684-1dde-5adc-a0cc-754f28a0f7bb",
+       "label": "C",
+       "content": "magnetic field around a straight wire",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0c8ac2af-ddf7-5e5e-bdcc-973f9a861a25",
+       "label": "D",
+       "content": "rotation of a motor",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7a1ad852-3cd3-58c7-ab9e-ebdd216ffefb",
+     "key": "phy-ind-07",
+     "stem": "Transformer cores are laminated in order to reduce",
+     "image_url": null,
+     "explanation": "Thin insulated sheets break up the paths of eddy currents, reducing the heat they waste.\n\n**Why the other options are wrong**\n\n- the number of turns needed: Laminating does not change the turns.\n- the voltage output: Laminations reduce losses, not the output voltage.\n- the frequency of the supply: The frequency is set by the supply.",
+     "position": 7,
+     "options": [
+      {
+       "id": "8d933771-0ba6-598e-97ed-dfa397e88e64",
+       "label": "A",
+       "content": "the number of turns needed",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4bbbeb0f-36c9-5f53-9955-5b83ad868db7",
+       "label": "B",
+       "content": "the voltage output",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ef16505c-f665-5404-ac03-a3affa3e18d1",
+       "label": "C",
+       "content": "eddy currents",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "453ea326-56ef-5156-b985-c4faa3c42092",
+       "label": "D",
+       "content": "the frequency of the supply",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2f033fd3-7e44-56bc-868a-b39434467d55",
+     "key": "phy-ind-08",
+     "stem": "The e.m.f. of a simple a.c. generator is greatest when the plane of the coil is",
+     "image_url": null,
+     "explanation": "With the coil parallel to the field, its sides cut the field lines fastest.\n\n**Why the other options are wrong**\n\n- perpendicular to the magnetic field: Then the sides move along the field lines and the e.m.f. is zero.\n- at 45° to the magnetic field: The e.m.f. is greater at 0° (parallel).\n- stationary: No motion means no induced e.m.f.",
+     "position": 8,
+     "options": [
+      {
+       "id": "ae7ff8e9-aaec-55bc-84c6-dd14ac9a9bbc",
+       "label": "A",
+       "content": "perpendicular to the magnetic field",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "061a9cab-8d0c-5d8d-8309-3f726b7b4bf5",
+       "label": "B",
+       "content": "at 45° to the magnetic field",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "67d1b046-1e37-5e61-969b-2dc806aabc15",
+       "label": "C",
+       "content": "stationary",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c844772f-e65f-5891-9ea2-c8bfd2490016",
+       "label": "D",
+       "content": "parallel to the magnetic field",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fd7f13ad-8678-5e0c-8d93-60df87b37a56",
+   "topic": "Alternating Current and Transformers",
+   "title": "Alternating Current and Transformers: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on alternating current and transformers, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 169,
+   "questions": [
+    {
+     "id": "fa8edc8e-1b71-5c94-9d21-48f7f40f3e43",
+     "key": "phy-ac-01",
+     "stem": "The peak value of an alternating current is 10 A. What is its r.m.s. value?",
+     "image_url": null,
+     "explanation": "$I_{rms} = \\dfrac{I_0}{\\sqrt{2}} = \\dfrac{10}{1.414} = 7.07\\ \\text{A}$.\n\n**Why the other options are wrong**\n\n- 14.14 A: You multiplied by √2; r.m.s. = peak ÷ √2.\n- 5 A: You halved the peak value.\n- 20 A: That is the peak-to-peak value.",
+     "position": 1,
+     "options": [
+      {
+       "id": "07112013-a1c1-5478-b439-8b2dba089d03",
+       "label": "A",
+       "content": "5 A",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "69b5b637-0166-5915-a47c-850ef7ac2afb",
+       "label": "B",
+       "content": "7.07 A",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "615d348c-98f9-5869-a62c-a7bf988cdb00",
+       "label": "C",
+       "content": "14.14 A",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "80fdc660-5f31-5ebf-ad51-3bf50affc631",
+       "label": "D",
+       "content": "20 A",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "454bf1bd-7e84-5319-9db4-006d0063c16d",
+     "key": "phy-ac-02",
+     "stem": "What is the period of a 50 Hz alternating supply?",
+     "image_url": null,
+     "explanation": "$T = \\dfrac{1}{f} = \\dfrac{1}{50} = 0.02\\ \\text{s}$.\n\n**Why the other options are wrong**\n\n- 50 s: That is the frequency, not the period.\n- 0.2 s: 1/50 = 0.02, not 0.2.\n- 0.01 s: That is the time for half a cycle.",
+     "position": 2,
+     "options": [
+      {
+       "id": "914b8b32-aacd-5294-97a3-1b0c2a5d994c",
+       "label": "A",
+       "content": "0.01 s",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bab81d11-80ad-549a-91fe-6ab5378ddccf",
+       "label": "B",
+       "content": "0.02 s",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d745fcd8-1f83-5c7e-8798-d5a466743201",
+       "label": "C",
+       "content": "0.2 s",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a0bb5561-d748-5193-ae83-9250115ebbe9",
+       "label": "D",
+       "content": "50 s",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b05f727b-501a-5a60-859c-6e1b0b6b386d",
+     "key": "phy-ac-03",
+     "stem": "A transformer has 1000 primary turns and 50 secondary turns. If the primary voltage is 240 V, what is the secondary voltage?",
+     "image_url": null,
+     "explanation": "$V_s = V_p\\dfrac{N_s}{N_p} = 240 \\times \\dfrac{50}{1000} = 12\\ \\text{V}$.\n\n**Why the other options are wrong**\n\n- 4800 V: You inverted the turns ratio; this is a step-down transformer.\n- 240 V: The voltage changes in proportion to the turns.\n- 0.208 V: You divided 50 by 240.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ede48669-c752-51e5-bb23-c8204b8f4c55",
+       "label": "A",
+       "content": "0.208 V",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5b934894-c234-5be7-b3ca-6d8d476b6db3",
+       "label": "B",
+       "content": "12 V",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e798be9d-79cd-5ef0-bf04-736700eb18ab",
+       "label": "C",
+       "content": "240 V",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d589314f-985b-5957-a46f-232dd7f4c4df",
+       "label": "D",
+       "content": "4800 V",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "25691870-e307-5322-9c7d-55878423e01c",
+     "key": "phy-ac-04",
+     "stem": "An ideal transformer steps 240 V down to 12 V. If the secondary current is 2 A, what is the primary current?",
+     "image_url": null,
+     "explanation": "$I_p = \\dfrac{V_sI_s}{V_p} = \\dfrac{12 \\times 2}{240} = 0.1\\ \\text{A}$.\n\n**Why the other options are wrong**\n\n- 40 A: You inverted the ratio; stepping the voltage down steps the current up, so the primary current is smaller.\n- 2 A: The currents are not equal: VpIp = VsIs.\n- 24 A: That is the power in watts (VsIs), not the primary current.",
+     "position": 4,
+     "options": [
+      {
+       "id": "20773add-31f4-5cfc-bf34-a005cd124ac3",
+       "label": "A",
+       "content": "0.1 A",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "62c140ff-5d55-52e6-b763-f57484c1b60f",
+       "label": "B",
+       "content": "2 A",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "afaa9beb-83ee-5e90-b4a7-3a62d2f6cb12",
+       "label": "C",
+       "content": "24 A",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d828bb2a-3c58-55b1-ab08-8e5076dec30f",
+       "label": "D",
+       "content": "40 A",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6ff7637d-1be5-5ae8-bda2-ad564f1473ed",
+     "key": "phy-ac-05",
+     "stem": "A transformer takes 2 A from a 240 V supply and delivers 9 A at 48 V. What is its efficiency?",
+     "image_url": null,
+     "explanation": "$\\eta = \\dfrac{48 \\times 9}{240 \\times 2} \\times 100\\% = \\dfrac{432}{480} \\times 100\\% = 90\\%$.\n\n**Why the other options are wrong**\n\n- 111.1 %: You divided input by output.\n- 0.9 %: You found the ratio but did not multiply by 100.\n- 20 %: You compared the voltages only: 48/240.",
+     "position": 5,
+     "options": [
+      {
+       "id": "705f2983-0416-5279-94dd-feadeeb2fc92",
+       "label": "A",
+       "content": "0.9 %",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e8e66a3b-17f0-525d-92e4-84f8d4080910",
+       "label": "B",
+       "content": "20 %",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6af87b83-b818-59c2-b342-8bda4f3347ca",
+       "label": "C",
+       "content": "90 %",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ab78bbff-aed7-500e-8c63-d23317da5ed0",
+       "label": "D",
+       "content": "111.1 %",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a76ef370-15f6-5c50-b9c8-26d0aba6552e",
+     "key": "phy-ac-06",
+     "stem": "A transformer does not work on a steady d.c. supply because",
+     "image_url": null,
+     "explanation": "Mutual induction needs a changing flux; a steady d.c. gives a constant flux, so nothing is induced in the secondary.\n\n**Why the other options are wrong**\n\n- d.c. has no voltage: d.c. does have a voltage.\n- the core would melt: The core does not melt.\n- d.c. cannot flow in copper wire: d.c. flows easily in copper.",
+     "position": 6,
+     "options": [
+      {
+       "id": "40123f08-2d5c-54ff-a69f-791e260f0094",
+       "label": "A",
+       "content": "a steady current produces no changing magnetic flux",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "f9d38193-ea23-5174-959f-9b9cf060a119",
+       "label": "B",
+       "content": "d.c. has no voltage",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f4ac70b2-17ae-559d-9650-8c049e1927c2",
+       "label": "C",
+       "content": "the core would melt",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f2379cbd-da1b-5c4c-9ec4-9b5a0cc81451",
+       "label": "D",
+       "content": "d.c. cannot flow in copper wire",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a1d418bc-966e-5291-a27c-ffcc567e74cf",
+     "key": "phy-ac-07",
+     "stem": "The r.m.s. value of an alternating current is defined as the",
+     "image_url": null,
+     "explanation": "The r.m.s. value is the 'effective' value: the d.c. with the same heating effect.\n\n**Why the other options are wrong**\n\n- average of all the values over a cycle: The simple average over a whole cycle is zero.\n- maximum value of the current: That is the peak value.\n- value at the start of the cycle: That value is zero for a sine wave starting at 0.",
+     "position": 7,
+     "options": [
+      {
+       "id": "d7a91fa4-ddd1-500c-bb78-2701b8a6347d",
+       "label": "A",
+       "content": "average of all the values over a cycle",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "79932abc-c6b8-5ae1-8ebb-e7942a8b2d05",
+       "label": "B",
+       "content": "steady direct current that produces the same heating effect in a resistor",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ae266a39-a338-55e5-9c25-0e3afe83777d",
+       "label": "C",
+       "content": "maximum value of the current",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "99e8ed48-1ce4-51eb-9fc4-96db78752e00",
+       "label": "D",
+       "content": "value at the start of the cycle",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5887807e-2992-5caf-b0fa-1dbd3574673f",
+     "key": "phy-ac-08",
+     "stem": "A 230 V r.m.s. supply is connected to a 46 Ω heater. What is the average power?",
+     "image_url": null,
+     "explanation": "$P = \\dfrac{V_{rms}^2}{R} = \\dfrac{230^2}{46} = 1150\\ \\text{W}$.\n\n**Why the other options are wrong**\n\n- 5 W: That is the r.m.s. current, not the power.\n- 2300 W: You used the peak voltage (≈325 V) squared — that gives twice the average power.\n- 10580 W: You multiplied V by R.",
+     "position": 8,
+     "options": [
+      {
+       "id": "0073243f-8428-559c-9010-3e6d77b2839c",
+       "label": "A",
+       "content": "5 W",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5e7106ba-03d7-5cee-8fa6-bcb39ce24040",
+       "label": "B",
+       "content": "1150 W",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "960b10f0-5d8e-5fcf-bc6c-3e60e741ed71",
+       "label": "C",
+       "content": "2300 W",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "617da6a6-46ab-5b89-ae4e-0d6c0a13f059",
+       "label": "D",
+       "content": "10580 W",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fbf34331-04e7-54db-be3a-cb7bca06d5e5",
+   "topic": "Domestic Electricity and Safety",
+   "title": "Domestic Electricity and Safety: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on domestic electricity and safety, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 170,
+   "questions": [
+    {
+     "id": "46130fb9-cb29-5a13-8e12-5f06d8c6b33b",
+     "key": "phy-dom-01",
+     "stem": "In modern wiring, the live wire is coloured",
+     "image_url": null,
+     "explanation": "Live = brown, neutral = blue, earth = green/yellow.\n\n**Why the other options are wrong**\n\n- blue: Blue is the neutral wire.\n- green and yellow: Green and yellow is the earth wire.\n- black: Black was the old colour for neutral.",
+     "position": 1,
+     "options": [
+      {
+       "id": "47d12b00-c3a7-5312-96a8-150d04a0be59",
+       "label": "A",
+       "content": "blue",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bc490c61-fcc7-5be0-989c-133f5b780fa4",
+       "label": "B",
+       "content": "green and yellow",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5eb6e09d-414d-5679-8a7a-761ea0a0fba1",
+       "label": "C",
+       "content": "brown",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "56d6087f-5e91-592c-972d-07ffdbe988e8",
+       "label": "D",
+       "content": "black",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e8e850e0-629f-58d0-b69c-6a08a5b0ad7c",
+     "key": "phy-dom-02",
+     "stem": "Switches and fuses are connected in the live wire so that",
+     "image_url": null,
+     "explanation": "With the switch or fuse in the live, opening it leaves the appliance at a safe potential.\n\n**Why the other options are wrong**\n\n- the neutral wire carries more current: The same current flows in live and neutral.\n- the appliance uses less energy: The position of the switch does not change energy use.\n- the earth wire is not needed: The earth wire is still needed for metal-cased appliances.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c9649aae-4974-5e68-94b5-de9e2a539061",
+       "label": "A",
+       "content": "the neutral wire carries more current",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "12b7cc4c-b724-5211-9a52-985b80e8fc41",
+       "label": "B",
+       "content": "the appliance uses less energy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "66de1230-661a-581f-a6f2-782fdd78636f",
+       "label": "C",
+       "content": "the earth wire is not needed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ef84839c-de3e-5e61-8783-1430169c9528",
+       "label": "D",
+       "content": "the appliance is disconnected from the high voltage when the switch is off or the fuse blows",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ea3bc5e3-d1ab-5339-b01d-793844bceb23",
+     "key": "phy-dom-03",
+     "stem": "A 920 W iron is used on a 230 V supply. What is its working current?",
+     "image_url": null,
+     "explanation": "$I = \\dfrac{P}{V} = \\dfrac{920}{230} = 4\\ \\text{A}$, so a 5 A fuse is suitable.\n\n**Why the other options are wrong**\n\n- 0.25 A: You divided V by P; I = P/V.\n- 211600 A: You multiplied P by V.\n- 690 A: You subtracted the voltage from the power.",
+     "position": 3,
+     "options": [
+      {
+       "id": "579c243f-d38d-592b-8a74-31c71b9e93ba",
+       "label": "A",
+       "content": "0.25 A",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e98d3512-e889-5c76-8f54-2dd4e33552cc",
+       "label": "B",
+       "content": "4 A",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6ec06471-4d12-52ce-bbd7-e5986ad630e6",
+       "label": "C",
+       "content": "690 A",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bf89acc4-b690-588b-8c51-e56fa0ffc4fb",
+       "label": "D",
+       "content": "211600 A",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bcbe343f-aa79-5212-9e40-deee40e6c54e",
+     "key": "phy-dom-04",
+     "stem": "The earth wire of an electric kettle is connected to its",
+     "image_url": null,
+     "explanation": "If a fault makes the case live, a large current flows to earth and blows the fuse, so the case cannot give a shock.\n\n**Why the other options are wrong**\n\n- heating element: The element is connected to live and neutral.\n- switch: The switch is in the live wire.\n- fuse: The fuse is in the live wire.",
+     "position": 4,
+     "options": [
+      {
+       "id": "77c4ecbe-166d-5da3-b17e-88beda8a3224",
+       "label": "A",
+       "content": "metal case",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d467d9ea-4462-598f-8f2f-64441718eea4",
+       "label": "B",
+       "content": "heating element",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "353c965a-f9b0-5f49-80e2-73b455cabad1",
+       "label": "C",
+       "content": "switch",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "362d16c4-7486-51a2-a774-c8b4250d6004",
+       "label": "D",
+       "content": "fuse",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6512a664-2cb1-59c1-9079-2502f164f483",
+     "key": "phy-dom-05",
+     "stem": "Appliances in a house are connected in parallel so that",
+     "image_url": null,
+     "explanation": "In parallel, every appliance has the full supply voltage and its own switch.\n\n**Why the other options are wrong**\n\n- they share the mains voltage equally: That would happen in series, not parallel.\n- the same current flows through each: That happens in series.\n- one fuse can protect them all from a shock: Parallel wiring is about voltage and independent switching.",
+     "position": 5,
+     "options": [
+      {
+       "id": "55d20cfa-a98b-53da-9415-b7a1cdacad21",
+       "label": "A",
+       "content": "they share the mains voltage equally",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c3ed7c2a-6419-59ad-a2d0-cd37a2f703c9",
+       "label": "B",
+       "content": "each gets the full mains voltage and can be switched independently",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d433dac0-5363-54a1-b269-07e338ab06ca",
+       "label": "C",
+       "content": "the same current flows through each",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8d54a5aa-f961-5f71-9354-e5232e2159ce",
+       "label": "D",
+       "content": "one fuse can protect them all from a shock",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0da320f8-1648-5c1d-9ca3-b031d72a593e",
+     "key": "phy-dom-06",
+     "stem": "When a person is receiving an electric shock, the first thing to do is to",
+     "image_url": null,
+     "explanation": "Break the contact safely first (switch off, or use a dry wooden stick), then call for help and give first aid.\n\n**Why the other options are wrong**\n\n- pull them away with your bare hands: You would receive a shock as well.\n- pour water on them: Water conducts and makes things worse.\n- wait for the current to stop: Delay can be fatal.",
+     "position": 6,
+     "options": [
+      {
+       "id": "c6523461-0f0c-5e55-b182-172c1e4718e7",
+       "label": "A",
+       "content": "pull them away with your bare hands",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "21d75af3-8149-5069-8e10-b73cab671676",
+       "label": "B",
+       "content": "pour water on them",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "96b32096-38c7-53e4-8d8a-bbf5ea3bcc46",
+       "label": "C",
+       "content": "switch off the supply or separate them from it with a dry insulator",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c1a56ec3-cb2c-595d-adff-f606df156504",
+       "label": "D",
+       "content": "wait for the current to stop",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "061e1bcd-bdd7-50a5-b46e-f62cffe6007c",
+     "key": "phy-dom-07",
+     "stem": "A fuse of too high a rating is dangerous because",
+     "image_url": null,
+     "explanation": "The cable could then overheat and start a fire before the fuse blows.\n\n**Why the other options are wrong**\n\n- it melts too easily: A higher rating melts less easily.\n- it increases the mains voltage: A fuse does not change the voltage.\n- it wastes a lot of energy: The energy wasted in a fuse is tiny.",
+     "position": 7,
+     "options": [
+      {
+       "id": "d0cde373-b79c-593e-a792-3378734c0d47",
+       "label": "A",
+       "content": "it melts too easily",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "26a48dd9-bc5d-54fe-a02e-fd1b38fe9da0",
+       "label": "B",
+       "content": "it increases the mains voltage",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "737a2cfe-ba4f-531e-8779-0b52c133780b",
+       "label": "C",
+       "content": "it wastes a lot of energy",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "24e440b1-731c-5353-b800-01dcdb5de6aa",
+       "label": "D",
+       "content": "it may not melt when a fault causes a large current",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b82e298b-0ba1-5648-996b-730b75f12b9b",
+     "key": "phy-dom-08",
+     "stem": "Six 60 W bulbs are replaced by six 10 W LED bulbs, each used 5 hours a day. How many kWh are saved in 30 days?",
+     "image_url": null,
+     "explanation": "Power saved $= 6 \\times (60 - 10) = 300$ W $= 0.3$ kW. Energy $= 0.3 \\times 5 \\times 30 = 45$ kWh.\n\n**Why the other options are wrong**\n\n- 54 kWh: That is the energy used by the old bulbs, not the saving.\n- 9 kWh: That is the energy used by the LEDs.\n- 45000 kWh: You used watts instead of kilowatts.",
+     "position": 8,
+     "options": [
+      {
+       "id": "d04cb1e7-0899-57bc-91a6-756922659243",
+       "label": "A",
+       "content": "9 kWh",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "57b361c8-2e22-539a-9d08-d146a0b3e8a2",
+       "label": "B",
+       "content": "45 kWh",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d6924c14-aa68-581b-981a-439941f79227",
+       "label": "C",
+       "content": "54 kWh",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "57fc2239-2f9b-52bf-96e0-b7b40e89d9bd",
+       "label": "D",
+       "content": "45000 kWh",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c7bc78ee-efbb-51cc-a3f7-3bdb2ac56a32",
+   "topic": "Atomic Structure and Spectra",
+   "title": "Atomic Structure and Spectra: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on atomic structure and spectra, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 171,
+   "questions": [
+    {
+     "id": "16525d7b-bfb0-587f-98f3-c315a87bba9b",
+     "key": "phy-atm-01",
+     "stem": "In Rutherford's alpha-scattering experiment, most alpha particles passed straight through the gold foil. This showed that",
+     "image_url": null,
+     "explanation": "Most alpha particles met nothing, so most of the atom is empty; a few bounced back from a tiny dense nucleus.\n\n**Why the other options are wrong**\n\n- the nucleus is negatively charged: The nucleus is positive (it repels alpha particles).\n- electrons are heavier than protons: Electrons are much lighter.\n- atoms are indivisible: The experiment revealed internal structure.",
+     "position": 1,
+     "options": [
+      {
+       "id": "4593ed8a-1848-556e-88d9-633ed918a932",
+       "label": "A",
+       "content": "most of the atom is empty space",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c007677c-6a76-53b5-a9b1-7f2fb1b6dafb",
+       "label": "B",
+       "content": "the nucleus is negatively charged",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "75d6beaf-af76-5f11-8744-c5922c0942bf",
+       "label": "C",
+       "content": "electrons are heavier than protons",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "601242ed-1ca5-5e55-bbb9-f7734f570f93",
+       "label": "D",
+       "content": "atoms are indivisible",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "191ca076-5666-59ca-9539-706c40954e6e",
+     "key": "phy-atm-02",
+     "stem": "How many neutrons are there in the nucleus of ²³⁸₉₂U?",
+     "image_url": null,
+     "explanation": "Neutrons $= A - Z = 238 - 92 = 146$.\n\n**Why the other options are wrong**\n\n- 92: That is the number of protons.\n- 238: That is the total number of nucleons.\n- 330: You added A and Z.",
+     "position": 2,
+     "options": [
+      {
+       "id": "57af5872-0cfc-5365-89cf-d5bc215e34c5",
+       "label": "A",
+       "content": "92",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d067b13e-6cba-5ce8-ba35-db51005b7a04",
+       "label": "B",
+       "content": "146",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "69a4e427-86a2-5d4f-9126-c6bb95a9040b",
+       "label": "C",
+       "content": "238",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f16c41d9-1dd6-5540-8d87-c2ed8a7891d6",
+       "label": "D",
+       "content": "330",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a2d44fb7-e16f-50a8-a490-f84f2e6a6167",
+     "key": "phy-atm-03",
+     "stem": "Isotopes of an element have the same number of",
+     "image_url": null,
+     "explanation": "Same proton number (same element), different neutron number (different mass).\n\n**Why the other options are wrong**\n\n- neutrons but different numbers of protons: Different proton numbers would be different elements.\n- nucleons: Isotopes differ in nucleon number.\n- neutrons and protons: Then they would be identical nuclei.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2562f8d4-8cd3-57fb-90bc-273c4e88f3fa",
+       "label": "A",
+       "content": "neutrons but different numbers of protons",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "10f95448-e80d-59c8-a5cd-41624dcc162b",
+       "label": "B",
+       "content": "protons but different numbers of neutrons",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c9ea3541-eb57-5887-bbaa-d2ba28298f71",
+       "label": "C",
+       "content": "nucleons",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9568a5dd-1387-580c-86e6-6121e836251d",
+       "label": "D",
+       "content": "neutrons and protons",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f09fb853-5b8f-591b-b7c6-a799183e0801",
+     "key": "phy-atm-04",
+     "stem": "An electron in a hydrogen atom falls from an energy level of −3.4 eV to −13.6 eV. What is the energy of the photon emitted?",
+     "image_url": null,
+     "explanation": "$\\Delta E = -3.4 - (-13.6) = 10.2\\ \\text{eV}$.\n\n**Why the other options are wrong**\n\n- 17.0 eV: You added the energies; the photon energy is their difference.\n- 13.6 eV: That is the ionisation energy from the ground state.\n- 3.4 eV: That is the energy of the upper level only.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ee33be0b-acd5-5ae2-89d3-3ee68cc724f8",
+       "label": "A",
+       "content": "3.4 eV",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a07818ae-9ded-55b7-b2a6-47dfa39973bc",
+       "label": "B",
+       "content": "10.2 eV",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "07c598df-e7fa-58a1-ab43-7d6ad8aa19ad",
+       "label": "C",
+       "content": "13.6 eV",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "47c48492-a5dd-5a80-972f-e0fd00087b8e",
+       "label": "D",
+       "content": "17.0 eV",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b6c6267c-a1c9-5ab5-81d9-ab18d7abcea8",
+     "key": "phy-atm-05",
+     "stem": "A line emission spectrum is produced by",
+     "image_url": null,
+     "explanation": "Atoms in a low-pressure hot gas emit light only at wavelengths set by their energy levels: bright lines.\n\n**Why the other options are wrong**\n\n- a hot solid such as a lamp filament: Hot solids give continuous spectra.\n- white light passing through a prism: That gives a continuous spectrum.\n- a cold gas in front of a white light source: That gives an absorption spectrum.",
+     "position": 5,
+     "options": [
+      {
+       "id": "11d3a05e-0405-56b2-a47e-91559e1a5b0e",
+       "label": "A",
+       "content": "a hot solid such as a lamp filament",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "39f5ddc0-c0a1-5066-bd02-8307d83503be",
+       "label": "B",
+       "content": "white light passing through a prism",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "40824d10-501c-5160-ad40-2956e0627c6c",
+       "label": "C",
+       "content": "a hot gas at low pressure",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f6c0ff57-ec89-5cd0-80a0-cef8c3d2c68b",
+       "label": "D",
+       "content": "a cold gas in front of a white light source",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "84bc75ce-43c0-5d29-ae5f-c0f826216635",
+     "key": "phy-atm-06",
+     "stem": "When an electron in an atom absorbs energy and moves to a higher energy level, the atom is said to be",
+     "image_url": null,
+     "explanation": "Raising an electron to a higher level is excitation; it later falls back, emitting a photon.\n\n**Why the other options are wrong**\n\n- ionised: Ionisation means the electron leaves the atom completely.\n- in its ground state: The ground state is the lowest level.\n- radioactive: Radioactivity concerns the nucleus.",
+     "position": 6,
+     "options": [
+      {
+       "id": "235814d9-f8e7-5512-b8b8-d3676021faa9",
+       "label": "A",
+       "content": "ionised",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0a7856ac-bde4-5b7a-b093-cbf5a3b524ee",
+       "label": "B",
+       "content": "in its ground state",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3bd502b8-df8a-5b66-868d-1512701dca39",
+       "label": "C",
+       "content": "radioactive",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a699ffd7-eebc-581d-9999-101e95f4f949",
+       "label": "D",
+       "content": "excited",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4a4268d7-9499-5f08-a6e5-aeac80d72d3e",
+     "key": "phy-atm-07",
+     "stem": "A photon has an energy of 3.2 × 10⁻¹⁹ J. What is its energy in electronvolts? (1 eV = 1.6 × 10⁻¹⁹ J)",
+     "image_url": null,
+     "explanation": "$E = \\dfrac{3.2 \\times 10^{-19}}{1.6 \\times 10^{-19}} = 2\\ \\text{eV}$.\n\n**Why the other options are wrong**\n\n- 5.12 eV: You multiplied (3.2 × 1.6) instead of dividing.\n- 0.5 eV: You divided 1.6 by 3.2.\n- 3.2 eV: You did not convert from joules.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b3bae6b6-9f1f-5b08-89e5-70231a5fb8e5",
+       "label": "A",
+       "content": "0.5 eV",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a06565b6-8aa5-5c5d-9164-c2551e39043b",
+       "label": "B",
+       "content": "2 eV",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "653c0bf2-ed8c-533d-9f2e-63052bd5aba2",
+       "label": "C",
+       "content": "3.2 eV",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3b5d3aef-ff26-5798-82bd-d6e620bcd4c1",
+       "label": "D",
+       "content": "5.12 eV",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "322a973d-954e-5108-b959-01f04e4d0824",
+     "key": "phy-atm-08",
+     "stem": "In Bohr's model of the atom, electrons",
+     "image_url": null,
+     "explanation": "Bohr proposed fixed energy levels; light is emitted only when an electron jumps between them.\n\n**Why the other options are wrong**\n\n- are embedded in a sphere of positive charge: That is Thomson's model.\n- spiral continuously into the nucleus: Bohr's model was proposed to avoid this.\n- are found inside the nucleus: Electrons are outside the nucleus.",
+     "position": 8,
+     "options": [
+      {
+       "id": "8bb27c24-f92d-5182-8359-d0919d9bf12c",
+       "label": "A",
+       "content": "move only in certain allowed orbits (energy levels)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "48e8b879-cbf0-5ef6-b1ad-4a2851d06a0f",
+       "label": "B",
+       "content": "are embedded in a sphere of positive charge",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9ff75af6-ca74-550e-9aa8-1393f6b8e45e",
+       "label": "C",
+       "content": "spiral continuously into the nucleus",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "776aee30-4396-5abd-8440-4ef727a99de2",
+       "label": "D",
+       "content": "are found inside the nucleus",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f9a45959-c117-5a08-b847-f7302dd19d19",
+   "topic": "Photoelectric Effect and Wave-Particle Duality",
+   "title": "Photoelectric Effect and Wave-Particle Duality: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on photoelectric effect and wave-particle duality, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 172,
+   "questions": [
+    {
+     "id": "60704113-9d02-5f3f-b049-1254609b4eba",
+     "key": "phy-phe-01",
+     "stem": "In the photoelectric effect, increasing the intensity of the light (frequency unchanged and above threshold) increases the",
+     "image_url": null,
+     "explanation": "More intense light means more photons, so more electrons; each photon's energy is unchanged.\n\n**Why the other options are wrong**\n\n- maximum kinetic energy of the electrons: That depends on the frequency, not the intensity.\n- work function of the metal: The work function is a property of the metal.\n- threshold frequency: The threshold frequency is fixed for the metal.",
+     "position": 1,
+     "options": [
+      {
+       "id": "819f4ba3-48ca-5ca3-a7ef-72535d2b9b2c",
+       "label": "A",
+       "content": "maximum kinetic energy of the electrons",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "da878c80-c390-52e1-80e0-91c7bc42ff2b",
+       "label": "B",
+       "content": "number of electrons emitted per second",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8e5cfa97-a3b7-55e3-b0ec-120c97b58a1d",
+       "label": "C",
+       "content": "work function of the metal",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6773945d-97f7-5ffe-9696-7db562871363",
+       "label": "D",
+       "content": "threshold frequency",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9468c99a-5846-58e7-8f3f-fd9ccc2a948a",
+     "key": "phy-phe-02",
+     "stem": "Photons of energy 5.0 eV fall on a metal of work function 3.2 eV. What is the maximum kinetic energy of the photoelectrons?",
+     "image_url": null,
+     "explanation": "$E_{k,max} = hf - W = 5.0 - 3.2 = 1.8\\ \\text{eV}$.\n\n**Why the other options are wrong**\n\n- 8.2 eV: You added the work function; it must be subtracted.\n- 5.0 eV: Part of the photon's energy is used to escape the metal.\n- 1.56 eV: You divided the energies.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d1be8866-f32a-5dd6-87e8-adfa14e5622d",
+       "label": "A",
+       "content": "1.56 eV",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "091f82c8-1acf-57b0-9332-ef157822840b",
+       "label": "B",
+       "content": "1.8 eV",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0717e7f0-791c-5df5-83a7-617c9b14f252",
+       "label": "C",
+       "content": "5.0 eV",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3d311d8d-a811-5eec-94ff-9612133e0f69",
+       "label": "D",
+       "content": "8.2 eV",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5ba97cb2-3bf1-5c7b-a342-0fd40646e358",
+     "key": "phy-phe-03",
+     "stem": "The work function of a metal is",
+     "image_url": null,
+     "explanation": "The work function W is the minimum energy for an electron to escape; W = hf₀.\n\n**Why the other options are wrong**\n\n- the maximum kinetic energy of a photoelectron: That is hf − W.\n- the energy of the incident photon: That is hf.\n- the frequency below which electrons are emitted: Below the threshold frequency no electrons are emitted.",
+     "position": 3,
+     "options": [
+      {
+       "id": "590e3ff5-f270-534d-97c6-79c4ec3bb834",
+       "label": "A",
+       "content": "the maximum kinetic energy of a photoelectron",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a8df8be5-d4f1-56ca-a631-0de684d05f58",
+       "label": "B",
+       "content": "the energy of the incident photon",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b562d0e7-8e11-50dc-9a85-a65d6fbf8a52",
+       "label": "C",
+       "content": "the minimum energy needed to remove an electron from its surface",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4000d630-61fa-551b-abe0-5d6fe51850ed",
+       "label": "D",
+       "content": "the frequency below which electrons are emitted",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "642af88f-e5c0-5ab5-99ca-ffc4f193f5ce",
+     "key": "phy-phe-04",
+     "stem": "The photoelectric effect provides evidence that light",
+     "image_url": null,
+     "explanation": "Each photon gives its energy to one electron: evidence for the particle nature of light.\n\n**Why the other options are wrong**\n\n- is a transverse wave: Polarisation shows that.\n- can be diffracted: Diffraction shows wave behaviour.\n- travels in straight lines: Shadows show that.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4543901c-ad5b-5342-bdf3-6de454af4497",
+       "label": "A",
+       "content": "is a transverse wave",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a21651a4-5ca1-50f9-9683-7363e69734ee",
+       "label": "B",
+       "content": "can be diffracted",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4bc29864-999b-5a8d-bc85-2ccc276b20d7",
+       "label": "C",
+       "content": "travels in straight lines",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0a6ca4d7-5b19-594b-a40f-a07ab5b78413",
+       "label": "D",
+       "content": "consists of particles (photons)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c982938b-91f7-55c1-b282-1c7be98a120d",
+     "key": "phy-phe-05",
+     "stem": "A metal has a work function of 3.3 × 10⁻¹⁹ J. What is its threshold frequency? (h = 6.6 × 10⁻³⁴ J s)",
+     "image_url": null,
+     "explanation": "$f_0 = \\dfrac{W}{h} = \\dfrac{3.3 \\times 10^{-19}}{6.6 \\times 10^{-34}} = 5.0 \\times 10^{14}\\ \\text{Hz}$.\n\n**Why the other options are wrong**\n\n- 2 × 10¹⁴ Hz: You divided h by W; the threshold frequency is f₀ = W/h.\n- 21.78 × 10¹⁴ Hz: You multiplied W by h instead of dividing.\n- 50 × 10¹⁴ Hz: Check the powers of ten: 3.3 × 10⁻¹⁹ ÷ 6.6 × 10⁻³⁴ = 5 × 10¹⁴ Hz.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f8113f72-33fc-5a99-a3dc-06ce3939c786",
+       "label": "A",
+       "content": "2 × 10¹⁴ Hz",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a603d8b0-1097-5559-aaf6-d2a5c98e9d6d",
+       "label": "B",
+       "content": "5 × 10¹⁴ Hz",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a6a59431-fbea-5159-be92-bb053c88ae50",
+       "label": "C",
+       "content": "21.78 × 10¹⁴ Hz",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0b689ae0-32a4-5983-b301-b49a8f60a3cd",
+       "label": "D",
+       "content": "50 × 10¹⁴ Hz",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d7ac2b58-d1ab-5e81-9c71-3cef27af01fe",
+     "key": "phy-phe-06",
+     "stem": "The gradient of a graph of maximum kinetic energy of photoelectrons against the frequency of the light is",
+     "image_url": null,
+     "explanation": "$E_k = hf - W$ is a straight line of gradient $h$.\n\n**Why the other options are wrong**\n\n- the work function: The work function is the (negative) intercept on the energy axis.\n- the threshold frequency: The threshold frequency is the intercept on the frequency axis.\n- the charge of the electron: That is not the gradient.",
+     "position": 6,
+     "options": [
+      {
+       "id": "b9fb4d6a-44d4-5b80-9f4e-002bdb6ed552",
+       "label": "A",
+       "content": "Planck's constant",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4e4408b0-9f76-543c-bde0-c98914cc1f4d",
+       "label": "B",
+       "content": "the work function",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3861ff7f-48f3-584b-a22d-8637f7e924af",
+       "label": "C",
+       "content": "the threshold frequency",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f482a844-926d-571f-9866-9e4d84ef205d",
+       "label": "D",
+       "content": "the charge of the electron",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3429aae6-0788-5a06-8de0-01ce2ad292e5",
+     "key": "phy-phe-07",
+     "stem": "What is the de Broglie wavelength of an electron (mass 9.1 × 10⁻³¹ kg) moving at 2.0 × 10⁶ m s⁻¹? (h = 6.63 × 10⁻³⁴ J s)",
+     "image_url": null,
+     "explanation": "$\\lambda = \\dfrac{h}{mv} = \\dfrac{6.63 \\times 10^{-34}}{9.1 \\times 10^{-31} \\times 2.0 \\times 10^{6}} = 3.64 \\times 10^{-10}\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 7.29 × 10⁻¹⁰ m: You divided h by m and left out the speed; λ = h/mv.\n- 1.82 × 10⁻¹⁰ m: That is the momentum mv (in 10⁻²⁴ kg m s⁻¹), not the wavelength.\n- 0.364 × 10⁻¹⁰ m: Check the power of ten: the answer is 3.64 × 10⁻¹⁰ m.",
+     "position": 7,
+     "options": [
+      {
+       "id": "6490eccf-782c-553a-8d33-b281924d357d",
+       "label": "A",
+       "content": "0.364 × 10⁻¹⁰ m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "247ebdc6-6e5b-5159-b343-66b67cff154f",
+       "label": "B",
+       "content": "1.82 × 10⁻¹⁰ m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0348c240-6958-597d-b8a2-223d7b6d82fb",
+       "label": "C",
+       "content": "3.64 × 10⁻¹⁰ m",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3b9a1bf7-7769-5077-ab60-3a57ef054b2e",
+       "label": "D",
+       "content": "7.29 × 10⁻¹⁰ m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "98595c4f-de31-5b0b-bb84-1b7677c49c11",
+     "key": "phy-phe-08",
+     "stem": "Electron diffraction by a thin graphite film shows that",
+     "image_url": null,
+     "explanation": "Diffraction rings are a wave effect, confirming de Broglie's matter waves.\n\n**Why the other options are wrong**\n\n- electrons are positively charged: Electrons are negative.\n- light consists of photons: The experiment concerns electrons, not light.\n- graphite is a conductor: That is not what diffraction shows.",
+     "position": 8,
+     "options": [
+      {
+       "id": "aca3eae2-e36a-569a-8dcd-6cb53e4ee3f0",
+       "label": "A",
+       "content": "electrons are positively charged",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bd5e1200-d483-588a-8275-bf2ee1c76e2c",
+       "label": "B",
+       "content": "electrons can behave as waves",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "55695f2b-aac2-5128-9ed7-766146e898df",
+       "label": "C",
+       "content": "light consists of photons",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "07fdde2c-c117-570c-a122-1d34939c2b7a",
+       "label": "D",
+       "content": "graphite is a conductor",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a2162db0-cca0-5cfd-8e80-a3ac5be1ef68",
+   "topic": "X-rays and Cathode Rays",
+   "title": "X-rays and Cathode Rays: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on x-rays and cathode rays, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 173,
+   "questions": [
+    {
+     "id": "91de24dd-7e34-50dc-b85d-9cf62ef2aa60",
+     "key": "phy-xry-01",
+     "stem": "Thermionic emission is the emission of electrons from",
+     "image_url": null,
+     "explanation": "Heating gives free electrons enough energy to escape from the metal surface.\n\n**Why the other options are wrong**\n\n- a metal when light falls on it: That is the photoelectric effect.\n- a radioactive nucleus: That is beta decay.\n- a gas at low pressure: Thermionic emission is from hot metal surfaces.",
+     "position": 1,
+     "options": [
+      {
+       "id": "69ae0c9c-4d50-5194-942e-859afb7a406e",
+       "label": "A",
+       "content": "a metal when light falls on it",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ca33bb7d-5ab8-5d5b-a89b-ba728a8ffe58",
+       "label": "B",
+       "content": "a radioactive nucleus",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "65c282b5-fbe5-54d2-b1d4-5c194c465242",
+       "label": "C",
+       "content": "the surface of a heated metal",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "84b91b42-ccad-568b-a4dd-253d79cf09ee",
+       "label": "D",
+       "content": "a gas at low pressure",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "264af166-5990-53be-b27e-4120373ce351",
+     "key": "phy-xry-02",
+     "stem": "Cathode rays are deflected by both electric and magnetic fields. This shows that they",
+     "image_url": null,
+     "explanation": "Only charged particles are deflected by electric and magnetic fields; cathode rays are electrons.\n\n**Why the other options are wrong**\n\n- are electromagnetic waves: Electromagnetic waves are not deflected by fields.\n- travel in straight lines: Deflection shows charge, not straight-line travel.\n- have no mass: They have mass (they are electrons).",
+     "position": 2,
+     "options": [
+      {
+       "id": "2a9bbce3-e50c-500c-bb82-b0a74d0a8a13",
+       "label": "A",
+       "content": "are electromagnetic waves",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d72f1384-104a-57fb-94d7-6868f3481236",
+       "label": "B",
+       "content": "travel in straight lines",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "76e42cb0-3923-51f8-9eea-6101f7b342e0",
+       "label": "C",
+       "content": "have no mass",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0b5430b6-6f84-5350-b055-09899c592888",
+       "label": "D",
+       "content": "are charged particles",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b9b37171-6937-5bf0-8552-f8ea63952ba4",
+     "key": "phy-xry-03",
+     "stem": "An electron is accelerated through a p.d. of 1000 V. What kinetic energy does it gain? (e = 1.6 × 10⁻¹⁹ C)",
+     "image_url": null,
+     "explanation": "$E_k = eV = 1.6 \\times 10^{-19} \\times 1000 = 1.6 \\times 10^{-16}\\ \\text{J}$.\n\n**Why the other options are wrong**\n\n- 0.16 × 10⁻¹⁶ J: Check the power of ten: 1.6 × 10⁻¹⁹ × 1000 = 1.6 × 10⁻¹⁶ J.\n- 16 × 10⁻¹⁶ J: Check the power of ten.\n- 0.0016 × 10⁻¹⁶ J: You divided by 1000 instead of multiplying.",
+     "position": 3,
+     "options": [
+      {
+       "id": "db227fcd-fd40-51b9-be65-be1ce4801300",
+       "label": "A",
+       "content": "0.0016 × 10⁻¹⁶ J",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2f978974-6f2b-50ea-91b6-d04aefe501b1",
+       "label": "B",
+       "content": "0.16 × 10⁻¹⁶ J",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f5fa2379-fc47-5d6e-8c9e-8c36cb732036",
+       "label": "C",
+       "content": "1.6 × 10⁻¹⁶ J",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8e258f0a-8757-52cd-a9e0-54a7eeb2b97d",
+       "label": "D",
+       "content": "16 × 10⁻¹⁶ J",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3ae05102-641e-507d-8003-5a5330eb1f16",
+     "key": "phy-xry-04",
+     "stem": "The target of an X-ray tube is made of tungsten mainly because tungsten",
+     "image_url": null,
+     "explanation": "Most of the electrons' energy becomes heat at the target, so it must withstand very high temperatures.\n\n**Why the other options are wrong**\n\n- is a good insulator: Tungsten is a metal and conducts.\n- is cheap and light: Tungsten is chosen for its melting point and high atomic number.\n- is radioactive: Tungsten is not radioactive.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7e7a7735-7cad-5948-905f-d7605b6233d9",
+       "label": "A",
+       "content": "has a very high melting point",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "46014135-6c3f-52e9-88da-ddd0e28bd508",
+       "label": "B",
+       "content": "is a good insulator",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6517881c-55a9-5912-b622-659b925e5d26",
+       "label": "C",
+       "content": "is cheap and light",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "71e872f4-5e0c-5ca6-bf44-b49810222747",
+       "label": "D",
+       "content": "is radioactive",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5dc02e76-e68e-517b-b4db-d4a26ee92d9c",
+     "key": "phy-xry-05",
+     "stem": "The penetrating power (hardness) of X-rays is increased by",
+     "image_url": null,
+     "explanation": "A higher p.d. gives faster electrons, which produce higher-frequency, more penetrating X-rays.\n\n**Why the other options are wrong**\n\n- increasing the filament current: That increases the intensity (number of X-rays), not their hardness.\n- using a copper target: The target material is not the control for hardness.\n- letting air into the tube: The tube must be evacuated.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a92461da-3894-52a3-9f59-a89800122d10",
+       "label": "A",
+       "content": "increasing the filament current",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "53039ec6-c5bb-5770-9a60-f3ff28013cef",
+       "label": "B",
+       "content": "increasing the accelerating p.d. across the tube",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7f3c953b-cec1-56dc-9465-55b6462bbd14",
+       "label": "C",
+       "content": "using a copper target",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7375f720-d378-5b93-af43-694305f49672",
+       "label": "D",
+       "content": "letting air into the tube",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2edce6f2-3c37-5430-8541-7114c1f4d18c",
+     "key": "phy-xry-06",
+     "stem": "In a cathode-ray oscilloscope, the brightness of the spot is controlled by the",
+     "image_url": null,
+     "explanation": "The grid's negative potential controls how many electrons pass, and so the brightness.\n\n**Why the other options are wrong**\n\n- Y-plates: Y-plates deflect the beam vertically.\n- X-plates: X-plates deflect the beam horizontally.\n- fluorescent screen: The screen only glows where the beam hits.",
+     "position": 6,
+     "options": [
+      {
+       "id": "146e77f5-ec23-5cdb-9909-fbc5f4a6e50f",
+       "label": "A",
+       "content": "Y-plates",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7edad5ec-eaee-588c-b2e6-3e716328859d",
+       "label": "B",
+       "content": "X-plates",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4c8a797c-e303-57d1-bdb8-3ca17d763a59",
+       "label": "C",
+       "content": "grid",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "24afbbf8-1941-51c3-9e03-8cb9f05a217a",
+       "label": "D",
+       "content": "fluorescent screen",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ad213c35-77eb-5b0f-b465-8106362a6c96",
+     "key": "phy-xry-07",
+     "stem": "X-rays are used to examine broken bones because they",
+     "image_url": null,
+     "explanation": "Dense bone absorbs more X-rays than soft tissue, so it shows up as a pale shadow on the film.\n\n**Why the other options are wrong**\n\n- are deflected by bones: X-rays are not deflected by matter in this way.\n- are reflected by flesh: Flesh lets most X-rays through.\n- make bones fluoresce: The image is formed on film or a detector behind the patient.",
+     "position": 7,
+     "options": [
+      {
+       "id": "37de72cc-36f6-573d-8377-8bf3934a48f8",
+       "label": "A",
+       "content": "are deflected by bones",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "638c8e3c-f250-5bf3-b434-688ffeb8811f",
+       "label": "B",
+       "content": "are reflected by flesh",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9a828007-5eab-5270-ba68-173f37df3fd8",
+       "label": "C",
+       "content": "make bones fluoresce",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "69014c6b-3068-5306-852e-8a1bda175fb9",
+       "label": "D",
+       "content": "are absorbed more by bone than by soft tissue",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1b15aa53-9bf6-5831-910d-78994d753fce",
+     "key": "phy-xry-08",
+     "stem": "An X-ray tube operates at 50 kV. What is the minimum wavelength of the X-rays produced? (h = 6.63 × 10⁻³⁴ J s, c = 3.0 × 10⁸ m s⁻¹, e = 1.6 × 10⁻¹⁹ C)",
+     "image_url": null,
+     "explanation": "$\\lambda_{min} = \\dfrac{hc}{eV} = \\dfrac{6.63 \\times 10^{-34} \\times 3.0 \\times 10^{8}}{1.6 \\times 10^{-19} \\times 5.0 \\times 10^{4}} = 2.49 \\times 10^{-11}\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 24.9 × 10⁻¹¹ m: You used 5 kV instead of 50 kV.\n- 0.249 × 10⁻¹¹ m: You used 500 kV instead of 50 kV.\n- 1.21 × 10⁻¹¹ m: That is the maximum frequency eV/h in 10¹⁹ Hz, not the wavelength.",
+     "position": 8,
+     "options": [
+      {
+       "id": "ba93bd2a-36c4-5281-bde5-aabf945dad47",
+       "label": "A",
+       "content": "0.249 × 10⁻¹¹ m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "27541b5a-3f10-5a8a-81ec-d6d733e448a2",
+       "label": "B",
+       "content": "1.21 × 10⁻¹¹ m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d84c0d0d-a4b7-5591-9358-ce9c0f373e1d",
+       "label": "C",
+       "content": "2.49 × 10⁻¹¹ m",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "13c0592c-6ccd-5b41-a882-27690557600e",
+       "label": "D",
+       "content": "24.9 × 10⁻¹¹ m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "324996c5-6356-5b24-9469-c157dfafa633",
+   "topic": "Radioactivity and Nuclear Physics",
+   "title": "Radioactivity and Nuclear Physics: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on radioactivity and nuclear physics, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 174,
+   "questions": [
+    {
+     "id": "878be12a-5c03-5e0c-9752-01bade2e81a2",
+     "key": "phy-rad-01",
+     "stem": "Which radiation is the most penetrating?",
+     "image_url": null,
+     "explanation": "Gamma rays are uncharged electromagnetic waves; only thick lead or concrete reduces them.\n\n**Why the other options are wrong**\n\n- alpha particles: Alpha particles are stopped by paper.\n- beta particles: Beta particles are stopped by a few mm of aluminium.\n- all are equally penetrating: They differ greatly in penetration.",
+     "position": 1,
+     "options": [
+      {
+       "id": "97a17331-08af-545c-afa9-fa44814fe9f2",
+       "label": "A",
+       "content": "gamma rays",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "72f6e9d4-709b-5d34-917e-d0d5d4d5907e",
+       "label": "B",
+       "content": "alpha particles",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6b46ee6f-0d43-57a2-947f-a1c757368b9b",
+       "label": "C",
+       "content": "beta particles",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0163e4e1-f114-5581-82db-1c470764d974",
+       "label": "D",
+       "content": "all are equally penetrating",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3e2b650f-9dad-5542-a207-19af3f402a64",
+     "key": "phy-rad-02",
+     "stem": "An alpha particle is identical to",
+     "image_url": null,
+     "explanation": "An alpha particle is $^{4}_{2}\\text{He}$: two protons and two neutrons.\n\n**Why the other options are wrong**\n\n- an electron: That is a beta particle.\n- a photon: Gamma rays are photons.\n- a hydrogen atom: An alpha particle has 2 protons and 2 neutrons.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8e7f3dd8-794e-5cf7-b649-00228db7babf",
+       "label": "A",
+       "content": "an electron",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5c8f6e9a-f790-510f-bcd5-d68e90e5cee5",
+       "label": "B",
+       "content": "a helium nucleus",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "731cb9b7-8185-5923-9d06-348693c91e7c",
+       "label": "C",
+       "content": "a photon",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d62485ce-5435-5242-a1b3-fe4aef4c336e",
+       "label": "D",
+       "content": "a hydrogen atom",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "daf809be-ef04-5241-af61-0e8fe3a5336a",
+     "key": "phy-rad-03",
+     "stem": "A radioactive sample has a half-life of 4 days. What fraction of it remains after 12 days?",
+     "image_url": null,
+     "explanation": "$\\dfrac{12}{4} = 3$ half-lives; fraction $= \\left(\\tfrac{1}{2}\\right)^3 = \\tfrac{1}{8}$.\n\n**Why the other options are wrong**\n\n- 0.333: 12 days is three half-lives: (1/2)³ = 1/8, not 1/3.\n- 0.25: That is the fraction after two half-lives (8 days).\n- 0.167: You divided by 2 × 3 instead of 2³.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5de59882-9e02-529e-9aa0-04e2ecf865dd",
+       "label": "A",
+       "content": "0.125",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7128c164-22f6-55da-9a50-9c043a70dd14",
+       "label": "B",
+       "content": "0.167",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6f145261-bcd0-58d1-907e-ce295aec9dca",
+       "label": "C",
+       "content": "0.25",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "da9fac6c-657b-5d1a-84e1-417c9e2cafad",
+       "label": "D",
+       "content": "0.333",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7ef1e300-5bf1-5005-9c73-243a4a50048b",
+     "key": "phy-rad-04",
+     "stem": "The activity of a source falls from 640 to 80 counts per minute in 30 minutes. What is its half-life?",
+     "image_url": null,
+     "explanation": "$640 \\to 320 \\to 160 \\to 80$: three half-lives in 30 min, so $T_{1/2} = 10$ min.\n\n**Why the other options are wrong**\n\n- 15 min: 640 → 80 is three halvings, not two.\n- 3.75 min: You divided 30 by 8 (the ratio) instead of by the number of half-lives.\n- 30 min: That is the total time for three half-lives.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a961fe7f-53e1-5f27-b02d-be32b3d7bdb2",
+       "label": "A",
+       "content": "3.75 min",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "19bff9b8-827d-5781-bffd-afe8be21d8a7",
+       "label": "B",
+       "content": "10 min",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7c50836b-ecc9-5dda-bb9c-3c9cb361b44c",
+       "label": "C",
+       "content": "15 min",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "98498f15-b62d-5e8b-bd20-17f5eec09771",
+       "label": "D",
+       "content": "30 min",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5eda1e29-a7fa-5dac-a35e-a142b5d57d34",
+     "key": "phy-rad-05",
+     "stem": "When a nucleus emits a beta particle, its",
+     "image_url": null,
+     "explanation": "A neutron becomes a proton (Z + 1) and an electron is emitted; A stays the same.\n\n**Why the other options are wrong**\n\n- proton number decreases by 2 and nucleon number decreases by 4: That is alpha decay.\n- proton number and nucleon number are both unchanged: That is gamma emission.\n- nucleon number increases by 1: The nucleon number does not change in beta decay.",
+     "position": 5,
+     "options": [
+      {
+       "id": "206f59f3-c15d-555b-b722-8675dfe377ee",
+       "label": "A",
+       "content": "proton number decreases by 2 and nucleon number decreases by 4",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "01f8d0d2-22e6-5a4f-8769-570da48046e0",
+       "label": "B",
+       "content": "proton number and nucleon number are both unchanged",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f8e1eeb5-0aa1-579a-91b7-e1c60b68af5f",
+       "label": "C",
+       "content": "proton number increases by 1 and its nucleon number is unchanged",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "dbe2280c-cc16-576b-9fc3-4372f9518a2e",
+       "label": "D",
+       "content": "nucleon number increases by 1",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cd758dc2-1293-580b-8d1c-8147203b84e9",
+     "key": "phy-rad-06",
+     "stem": "A nucleus ²²⁶₈₈Ra emits an alpha particle. What is the nucleon number of the daughter nucleus?",
+     "image_url": null,
+     "explanation": "Alpha decay: $A$ falls by 4: $226 - 4 = 222$ (and $Z$ falls to 86).\n\n**Why the other options are wrong**\n\n- 224: Alpha emission removes 4 nucleons, not 2.\n- 226: Alpha emission changes the nucleon number.\n- 86: That is the new proton number.",
+     "position": 6,
+     "options": [
+      {
+       "id": "eeb4f0d7-360d-5c9e-856d-dab3a58c2585",
+       "label": "A",
+       "content": "86",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e5e0f871-cb81-569d-a2e8-f774dcf3fecf",
+       "label": "B",
+       "content": "222",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "27f25c95-28ed-5763-a7c7-57dffe0290e2",
+       "label": "C",
+       "content": "224",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1dafa960-6f2d-592f-84e8-7827123ac661",
+       "label": "D",
+       "content": "226",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b95d7d31-afc8-5ac4-a91f-3951ea7c3884",
+     "key": "phy-rad-07",
+     "stem": "How much energy is released when 2 × 10⁻³ kg of mass is converted completely into energy? (c = 3.0 × 10⁸ m s⁻¹)",
+     "image_url": null,
+     "explanation": "$E = mc^2 = 2 \\times 10^{-3} \\times (3.0 \\times 10^{8})^2 = 1.8 \\times 10^{14}\\ \\text{J}$.\n\n**Why the other options are wrong**\n\n- 0.6 × 10¹⁴ J: You squared only the 10⁸, not the 3: (3.0 × 10⁸)² = 9.0 × 10¹⁶.\n- 0.9 × 10¹⁴ J: You used ½mc²; the equation is E = mc².\n- 18 × 10¹⁴ J: Check the power of ten: 2 × 10⁻³ × 9 × 10¹⁶ = 1.8 × 10¹⁴ J.",
+     "position": 7,
+     "options": [
+      {
+       "id": "ea04a124-1c0b-5f56-a780-fdfb069465b2",
+       "label": "A",
+       "content": "0.6 × 10¹⁴ J",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b29545bb-daa8-54c4-a9f9-472e6de5f022",
+       "label": "B",
+       "content": "0.9 × 10¹⁴ J",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "90b45851-4d05-5fae-864b-9ddf67b8dd79",
+       "label": "C",
+       "content": "1.8 × 10¹⁴ J",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "21dbae44-0a88-5b5f-90bd-979aa44562c0",
+       "label": "D",
+       "content": "18 × 10¹⁴ J",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6da23e06-4c91-5161-aece-b8a4581b0a4c",
+     "key": "phy-rad-08",
+     "stem": "In a nuclear reactor, the control rods",
+     "image_url": null,
+     "explanation": "Boron or cadmium control rods absorb neutrons; lowering them slows the reaction.\n\n**Why the other options are wrong**\n\n- slow down the neutrons: That is the job of the moderator.\n- carry heat away to the turbines: That is the coolant.\n- provide the nuclear fuel: The fuel is uranium in the fuel rods.",
+     "position": 8,
+     "options": [
+      {
+       "id": "7dc426c6-9d9e-5730-a0a5-f7a14d8aa3cc",
+       "label": "A",
+       "content": "slow down the neutrons",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dbef62b7-efb2-5ca9-9253-6a4295c64303",
+       "label": "B",
+       "content": "carry heat away to the turbines",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "70ac0bd1-e387-57a0-a269-08f6dae3d8c0",
+       "label": "C",
+       "content": "provide the nuclear fuel",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b5b27489-98b3-537e-9134-39c46b924d39",
+       "label": "D",
+       "content": "absorb neutrons to control the rate of the chain reaction",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "80621bad-aabe-542d-b8b0-bc3f2788d138",
+   "topic": "Semiconductors and Electronics",
+   "title": "Semiconductors and Electronics: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on semiconductors and electronics, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 175,
+   "questions": [
+    {
+     "id": "d74e83a6-4dd7-5a87-ac04-94ecf8a6730c",
+     "key": "phy-sem-01",
+     "stem": "The majority charge carriers in an n-type semiconductor are",
+     "image_url": null,
+     "explanation": "A pentavalent donor gives a free electron, so electrons are the majority carriers.\n\n**Why the other options are wrong**\n\n- holes: Holes are the majority carriers in p-type material.\n- protons: Protons do not move in a solid.\n- positive ions: Ions are fixed in the crystal lattice.",
+     "position": 1,
+     "options": [
+      {
+       "id": "1972418e-ddd4-57e6-ae4f-f44c2abc9b17",
+       "label": "A",
+       "content": "electrons",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "10732132-4428-5290-8ef5-b7812bb8a4a6",
+       "label": "B",
+       "content": "holes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1ea89255-f58d-534f-b641-11afeda2d9a8",
+       "label": "C",
+       "content": "protons",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e45aacc7-30c7-55f7-b006-5685f032360b",
+       "label": "D",
+       "content": "positive ions",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0d4501fb-382b-5002-90a9-9f2e010e8c32",
+     "key": "phy-sem-02",
+     "stem": "A p-type semiconductor is made by doping pure silicon with",
+     "image_url": null,
+     "explanation": "A trivalent acceptor leaves a missing electron (a hole) in the bonds.\n\n**Why the other options are wrong**\n\n- a pentavalent element such as phosphorus: That makes n-type material.\n- more silicon: Pure silicon is intrinsic.\n- copper: Copper is not used as a dopant for p-type silicon.",
+     "position": 2,
+     "options": [
+      {
+       "id": "796aeb14-7633-521a-ac9a-69ab0e5d83b9",
+       "label": "A",
+       "content": "a pentavalent element such as phosphorus",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ea3d9f3b-4246-5b20-8e1d-0f28b597ae30",
+       "label": "B",
+       "content": "a trivalent element such as boron",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5ba238ef-20bc-595f-b8f7-a79b4b44043e",
+       "label": "C",
+       "content": "more silicon",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8f63b7eb-2711-5f1d-8183-d5abc9ff1a60",
+       "label": "D",
+       "content": "copper",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b5b859af-9349-52b8-bd59-a219f59d4134",
+     "key": "phy-sem-03",
+     "stem": "A p-n junction diode conducts a large current when",
+     "image_url": null,
+     "explanation": "Forward bias narrows the depletion layer, and above about 0.6 V a large current flows.\n\n**Why the other options are wrong**\n\n- it is reverse-biased: Reverse bias widens the depletion layer and blocks current.\n- the n-side is connected to the positive terminal: That is reverse bias.\n- no voltage is applied: A p.d. of about 0.6 V forward is needed.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5af22a0b-0b8c-5e26-8396-a08cb3932820",
+       "label": "A",
+       "content": "it is reverse-biased",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4d19e78b-2042-5d10-8fcf-e8dfc6ac6c28",
+       "label": "B",
+       "content": "the n-side is connected to the positive terminal",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f5bcc097-8d7f-5f56-b46a-ee64ccae6c82",
+       "label": "C",
+       "content": "it is forward-biased, with the p-side connected to the positive terminal",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "cd73659b-fddc-521f-aa94-433798c8d00b",
+       "label": "D",
+       "content": "no voltage is applied",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a1697d22-81f2-5ece-b316-9cc7d43106f7",
+     "key": "phy-sem-04",
+     "stem": "The process of converting a.c. into d.c. is called",
+     "image_url": null,
+     "explanation": "Diodes rectify a.c. by letting current through in one direction only.\n\n**Why the other options are wrong**\n\n- amplification: Amplification makes signals larger.\n- induction: Induction produces an e.m.f. from a changing flux.\n- modulation: Modulation puts a signal onto a carrier wave.",
+     "position": 4,
+     "options": [
+      {
+       "id": "3cf2e180-c047-5e32-8ab6-205f67051596",
+       "label": "A",
+       "content": "amplification",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d69f123e-6d96-5549-8f06-4e04b79986a5",
+       "label": "B",
+       "content": "induction",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b47702d5-6515-5009-abb7-b3352742b54f",
+       "label": "C",
+       "content": "modulation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fb3a15f8-be00-5a54-b968-bec5ee33e231",
+       "label": "D",
+       "content": "rectification",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6a1aea23-0f60-5a00-a703-584782589479",
+     "key": "phy-sem-05",
+     "stem": "As the temperature of a pure semiconductor rises, its resistance",
+     "image_url": null,
+     "explanation": "Heating frees more electrons and holes, so a semiconductor's resistance falls.\n\n**Why the other options are wrong**\n\n- increases: That is the behaviour of metals.\n- stays the same: More charge carriers are released when it is heated.\n- becomes infinite: It conducts better when hot.",
+     "position": 5,
+     "options": [
+      {
+       "id": "cb24243d-b297-5e27-bd9c-cd48794f6f9d",
+       "label": "A",
+       "content": "decreases",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "96643f2f-3cb8-52d4-8c16-35dd31c6f3f7",
+       "label": "B",
+       "content": "increases",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "983601a8-ab86-5855-8f05-7019748f549f",
+       "label": "C",
+       "content": "stays the same",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "942558a1-f749-5932-83d2-b9a1c4fe8a2d",
+       "label": "D",
+       "content": "becomes infinite",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2aa9a658-de78-599a-b05f-a78904b90aef",
+     "key": "phy-sem-06",
+     "stem": "A transistor has a base current of 40 μA and a collector current of 6 mA. What is its current gain?",
+     "image_url": null,
+     "explanation": "$\\beta = \\dfrac{I_C}{I_B} = \\dfrac{6 \\times 10^{-3}}{40 \\times 10^{-6}} = 150$.\n\n**Why the other options are wrong**\n\n- 0.0067: You divided the base current by the collector current.\n- 0.15: You did not convert mA and μA to the same unit.\n- 240: You multiplied the two numbers.",
+     "position": 6,
+     "options": [
+      {
+       "id": "b00ec1a2-1fcb-538e-aefe-3fa60b1cbebd",
+       "label": "A",
+       "content": "0.0067",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0e4d0ae4-9260-56cb-a409-2c9a02c87ad2",
+       "label": "B",
+       "content": "0.15",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "693f0578-faf8-5051-96a2-633aa7367902",
+       "label": "C",
+       "content": "150",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e15814a3-6dc2-54b0-8a11-03210e33afda",
+       "label": "D",
+       "content": "240",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cc975b17-faf9-5023-af0f-ddc411e7402f",
+     "key": "phy-sem-07",
+     "stem": "The output of a NOR gate is 1 only when",
+     "image_url": null,
+     "explanation": "NOR = NOT OR: OR is 0 only when both inputs are 0, so NOR is then 1.\n\n**Why the other options are wrong**\n\n- both inputs are 1: Then the OR output is 1, so NOR gives 0.\n- either input is 1: Any input of 1 makes the NOR output 0.\n- the inputs are different: That describes an exclusive-OR (XOR) gate.",
+     "position": 7,
+     "options": [
+      {
+       "id": "0179bb47-ef8f-5a5c-9011-298e490660ad",
+       "label": "A",
+       "content": "both inputs are 1",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ec45dd6c-ce84-520d-8ebd-92e2f34c78d5",
+       "label": "B",
+       "content": "both inputs are 0",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ca45a819-e4cd-53fe-a653-c272cb573eb3",
+       "label": "C",
+       "content": "either input is 1",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6001ca29-cc78-51d6-9ecb-2cb2c828a344",
+       "label": "D",
+       "content": "the inputs are different",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8995a664-19cb-5aba-b657-604abb65de73",
+     "key": "phy-sem-08",
+     "stem": "A large capacitor is connected across the output of a rectifier in order to",
+     "image_url": null,
+     "explanation": "The capacitor charges at each peak and discharges between peaks, filling in the gaps.\n\n**Why the other options are wrong**\n\n- increase the frequency: The capacitor does not raise the frequency.\n- convert d.c. back into a.c.  \n  It smooths the d.c.\n- protect the diode from heat: It stores charge at the peaks and releases it between them.",
+     "position": 8,
+     "options": [
+      {
+       "id": "a44a4f77-c031-5f00-ab08-2d244a17fded",
+       "label": "A",
+       "content": "increase the frequency",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "51d2101e-6c15-52f8-a693-f474d10f4dc4",
+       "label": "B",
+       "content": "convert d.c. back into a.c.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "418ba3dc-a5de-5082-8a4c-5b8ed83d3950",
+       "label": "C",
+       "content": "smooth the output into a steadier d.c.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1767e692-dca5-5208-91b5-5a627669a30c",
+       "label": "D",
+       "content": "protect the diode from heat",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d7f3a892-f39f-59a6-954c-015bc6567df5",
+   "topic": "Practical Physics Skills",
+   "title": "Practical Physics Skills: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on practical physics skills, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 176,
+   "questions": [
+    {
+     "id": "c8b3f70c-b7b9-5e9b-a01e-0cb215d57432",
+     "key": "phy-prc-01",
+     "stem": "When a question says 'plot V against I', the quantity on the vertical axis should be",
+     "image_url": null,
+     "explanation": "'Plot y against x': the first quantity (V) is on the vertical axis.\n\n**Why the other options are wrong**\n\n- I: The first-named quantity goes on the vertical (y) axis.\n- V × I: Plot the measured quantities, not their product.\n- time: Time is not part of this graph.",
+     "position": 1,
+     "options": [
+      {
+       "id": "64c92032-9967-5448-b1b2-ad921b56af10",
+       "label": "A",
+       "content": "I",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1dbfa79f-198e-500d-8e7e-3ec9667568ee",
+       "label": "B",
+       "content": "V × I",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ccf4334f-79bb-563d-ac89-d394237202bb",
+       "label": "C",
+       "content": "time",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a878c7fb-d8df-5cf3-9a78-877a02e6fd34",
+       "label": "D",
+       "content": "V",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "87313f20-7d8a-5c87-847d-d6d1b10cff8d",
+     "key": "phy-prc-02",
+     "stem": "Which of the following is a good precaution when timing a simple pendulum?",
+     "image_url": null,
+     "explanation": "Timing many oscillations reduces the effect of reaction time on each period.\n\n**Why the other options are wrong**\n\n- Take readings carefully.  \n  This is too vague to earn credit.\n- Use a very heavy bob only.  \n  The mass of the bob does not affect the period, and this is not a timing precaution.\n- Swing the bob through a very large angle.  \n  A large angle makes the motion depart from SHM.",
+     "position": 2,
+     "options": [
+      {
+       "id": "e3c31755-a4a8-5f4b-b814-982484defc09",
+       "label": "A",
+       "content": "Time 20 oscillations and calculate the average period.",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "197f60f6-d695-52fa-a943-d1304f87c5a6",
+       "label": "B",
+       "content": "Take readings carefully.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b9252fd0-7348-533b-a3cb-963acaf6b162",
+       "label": "C",
+       "content": "Use a very heavy bob only.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "168202c7-ca94-5d9b-8bf4-802b0c20ef6e",
+       "label": "D",
+       "content": "Swing the bob through a very large angle.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "38f3924b-1b2c-5e72-a77e-922ae583b0e8",
+     "key": "phy-prc-03",
+     "stem": "A length is recorded as (50.0 ± 0.1) cm. What is the percentage error?",
+     "image_url": null,
+     "explanation": "Percentage error $= \\dfrac{0.1}{50.0} \\times 100\\% = 0.2\\%$.\n\n**Why the other options are wrong**\n\n- 0.1 %: That is the absolute error in cm, not the percentage.\n- 0.002 %: You found the fractional error but did not multiply by 100.\n- 2.0 %: 0.1 ÷ 50 × 100 = 0.2%, not 2%.",
+     "position": 3,
+     "options": [
+      {
+       "id": "9f4c7dfc-7b88-5177-b060-9f06a7da75eb",
+       "label": "A",
+       "content": "0.002 %",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2d0c6959-e101-523d-be2a-7502ab74ef2f",
+       "label": "B",
+       "content": "0.1 %",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b37b56a0-20d4-55b8-9358-dc87bb750683",
+       "label": "C",
+       "content": "0.2 %",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "631ea5bc-5c16-5a87-a6e2-64c41ddfd8cf",
+       "label": "D",
+       "content": "2.0 %",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c059c502-7734-5f1c-83f7-5d9b16b41fdc",
+     "key": "phy-prc-04",
+     "stem": "The percentage error in measuring the period T of a pendulum is 1.5%. What is the percentage error in T²?",
+     "image_url": null,
+     "explanation": "For $T^2$, multiply the percentage error by 2: $2 \\times 1.5\\% = 3\\%$.\n\n**Why the other options are wrong**\n\n- 1.5 %: When a quantity is squared, its percentage error doubles.\n- 2.25 %: You squared the percentage error; multiply it by the power instead.\n- 0.75 %: You halved instead of doubling.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4ca878d5-8ea6-5aed-8513-e38a90bfc161",
+       "label": "A",
+       "content": "0.75 %",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b23d4130-4a8c-5699-b329-f88f5bf1bf78",
+       "label": "B",
+       "content": "1.5 %",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3d29e23a-b5b1-58a7-be18-fb71b98ebae4",
+       "label": "C",
+       "content": "2.25 %",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1a9a81d9-1d96-5063-a31f-4c95beae8b47",
+       "label": "D",
+       "content": "3 %",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "66c11abc-206a-5fd7-9fb0-7acab40366c0",
+     "key": "phy-prc-05",
+     "stem": "To find the gradient of a straight-line graph accurately, you should",
+     "image_url": null,
+     "explanation": "A large triangle on the best-fit line reduces the error in reading Δy and Δx.\n\n**Why the other options are wrong**\n\n- use the first two plotted points from the table: They may not lie exactly on the best-fit line.\n- use a very small triangle near the origin: A small triangle increases the percentage reading error.\n- divide the last y-value by the last x-value: That is correct only for a line through the origin, and it ignores the best fit.",
+     "position": 5,
+     "options": [
+      {
+       "id": "3f433866-c9c3-5322-85f6-111f32500dec",
+       "label": "A",
+       "content": "use the first two plotted points from the table",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d60485ad-a3ed-555e-af67-4bfe84f98d8c",
+       "label": "B",
+       "content": "use a large right-angled triangle drawn on the line",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d342cc06-fdcc-50c4-a8de-35486e6cf5e3",
+       "label": "C",
+       "content": "use a very small triangle near the origin",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0168f6ad-9cc9-54fc-8b74-8a843661e45b",
+       "label": "D",
+       "content": "divide the last y-value by the last x-value",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ef16c83b-d360-54dc-b99b-f1002fc5d06b",
+     "key": "phy-prc-06",
+     "stem": "Parallax error when reading a scale is avoided by",
+     "image_url": null,
+     "explanation": "Viewing perpendicularly to the scale removes the apparent shift caused by viewing at an angle.\n\n**Why the other options are wrong**\n\n- reading the scale from one side: That introduces parallax.\n- using a longer scale: Scale length does not remove parallax.\n- taking the reading quickly: Speed does not affect parallax.",
+     "position": 6,
+     "options": [
+      {
+       "id": "fef9cc37-b024-51aa-b81f-482b5f18df7e",
+       "label": "A",
+       "content": "reading the scale from one side",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5148913b-fe50-599f-80d9-e3c861da5112",
+       "label": "B",
+       "content": "using a longer scale",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8233da60-b979-547c-b6ad-54b600612608",
+       "label": "C",
+       "content": "placing the eye directly in line with the reading, perpendicular to the scale",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d6034cc7-4189-5c97-96ad-f388276c7c95",
+       "label": "D",
+       "content": "taking the reading quickly",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3602a3de-1a2b-5c30-9b0c-e7293853fc34",
+     "key": "phy-prc-07",
+     "stem": "In the glass-block experiment, the refractive index is found from the gradient of a graph of",
+     "image_url": null,
+     "explanation": "$\\sin i = n\\sin r$: a graph of sin i against sin r is a straight line of gradient n.\n\n**Why the other options are wrong**\n\n- i against r: Snell's law relates the sines, so i against r is not a straight line through the origin.\n- sin r against i: Use the sines of both angles.\n- 1/i against 1/r: That has no simple relation to n.",
+     "position": 7,
+     "options": [
+      {
+       "id": "d4e466f2-bd03-5f9f-8444-6352fee107c4",
+       "label": "A",
+       "content": "i against r",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ee253266-b615-5b5f-8ca0-d2be55fd9ab9",
+       "label": "B",
+       "content": "sin r against i",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "95bd7793-6869-5724-a6a0-3a88c2165e42",
+       "label": "C",
+       "content": "1/i against 1/r",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "40f401c9-81bf-584b-b88a-14d7107b8fb1",
+       "label": "D",
+       "content": "sin i against sin r",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "845fcc66-c5a1-56f3-8489-ff28ee252daa",
+     "key": "phy-prc-08",
+     "stem": "A graph of T² (s²) against l (m) for a pendulum has a gradient of 4.0 s² m⁻¹. What is g? (take π² = 9.87)",
+     "image_url": null,
+     "explanation": "$T^2 = \\dfrac{4\\pi^2}{g}l$, so $g = \\dfrac{4\\pi^2}{\\text{gradient}} = \\dfrac{4 \\times 9.87}{4.0} = 9.87\\ \\text{m s}^{-2}$.\n\n**Why the other options are wrong**\n\n- 4.0 m s⁻²: That is the gradient; g = 4π²/gradient.\n- 0.101 m s⁻²: You inverted the relation: g = 4π² ÷ gradient.\n- 2.47 m s⁻²: You used π² instead of 4π².",
+     "position": 8,
+     "options": [
+      {
+       "id": "fb658ee7-4829-5911-a0af-e830d2219068",
+       "label": "A",
+       "content": "0.101 m s⁻²",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "69ae74af-0c8c-5d78-a683-98260bb63a02",
+       "label": "B",
+       "content": "2.47 m s⁻²",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6b111882-a015-5c19-9039-bdaa5cefb1b1",
+       "label": "C",
+       "content": "4.0 m s⁻²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bb31f801-3e26-5a1e-bb73-f479e6a7668f",
+       "label": "D",
+       "content": "9.87 m s⁻²",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "03a432d82cbb"
+}
