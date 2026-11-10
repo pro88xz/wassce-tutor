@@ -92,7 +92,7 @@ function PublicLessonPage() {
               </p>
               <p className="text-xs text-muted-foreground">
                 Checked {formatDate(lesson.reviewed_at)}
-                {lesson.est_minutes ? ` · ${lesson.est_minutes} min read` : ''} · Drafted with AI assistance and checked by a
+                {lesson.est_minutes ? ` · ${lesson.est_minutes} min read` : ''} · Reviewed by a
                 person before publishing.
               </p>
             </>
@@ -104,7 +104,7 @@ function PublicLessonPage() {
               </p>
               <p className="text-xs text-muted-foreground">
                 Updated {formatDate(lesson.updated_at)}
-                {lesson.est_minutes ? ` · ${lesson.est_minutes} min read` : ''} · Written to the WASSCE syllabus with AI
+                {lesson.est_minutes ? ` · ${lesson.est_minutes} min read` : ''} · Prepared against the WASSCE syllabus
                 assistance.
               </p>
             </>
