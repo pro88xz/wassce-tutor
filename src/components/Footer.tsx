@@ -80,7 +80,7 @@ export function Footer() {
           <div className="space-y-4 sm:col-span-2 lg:col-span-1">
             <BrandMark />
             <p className="max-w-xs text-sm leading-relaxed text-white/70">
-              WASSCE lessons, practice questions and an AI tutor, organised around the syllabus. Built in Freetown for Sierra Leone students.
+              WASSCE lessons and practice questions, organised around the syllabus. Built in Freetown for Sierra Leone students.
             </p>
             <address className="space-y-1 text-sm not-italic text-white/70">
               <p className="flex min-h-9 items-center gap-2">
