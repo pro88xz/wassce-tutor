@@ -107,7 +107,7 @@ function LessonPage() {
             )}
             {done && <span className="inline-flex items-center gap-1 font-semibold text-success"><CircleCheck className="h-4 w-4" aria-hidden /> Completed</span>}
             <span className="inline-flex items-center gap-1">
-              <ShieldCheck className="h-4 w-4" aria-hidden /> {lesson.reviewed_at ? 'Checked by a reviewer' : 'Drafted with AI help, written to the WASSCE syllabus'}
+              <ShieldCheck className="h-4 w-4" aria-hidden /> {lesson.reviewed_at ? 'Checked by a reviewer' : 'Prepared against the WASSCE syllabus'}
             </span>
           </p>
         </header>
