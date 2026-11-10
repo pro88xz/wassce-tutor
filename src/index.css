@@ -2419,3 +2419,51 @@ html, body {
   .popular-topic-rail { scroll-behavior: auto; }
   .popular-topic-controls * { transition: none; }
 }
+
+
+/* Mobile discovery layout: use the available viewport width like a native
+   course catalogue, while retaining deliberate page gutters. */
+@media (max-width: 639px) {
+  .popular-topics-section {
+    width: calc(100% + 1.5rem);
+    margin-left: -.75rem;
+    padding-inline: .75rem;
+    gap: 1rem;
+  }
+  .popular-topics-section > .flex:first-child {
+    padding-bottom: .9rem;
+  }
+  .popular-topic-rail {
+    grid-auto-columns: 74%;
+    gap: .75rem;
+    margin-right: -.75rem;
+    padding: .1rem .75rem .75rem .05rem;
+    scroll-padding-inline: .05rem;
+  }
+  .popular-topic-rail .popular-topic-image {
+    aspect-ratio: 16 / 9;
+  }
+  .popular-topic-rail .popular-topic-copy {
+    display: flex;
+    min-height: 7.25rem;
+    flex-direction: column;
+    gap: .4rem;
+    padding: .8rem .85rem .85rem;
+  }
+  .popular-topic-rail .popular-topic-subject {
+    font-size: .65rem;
+  }
+  .popular-topic-rail .popular-topic-name {
+    font-size: .98rem;
+    line-height: 1.28;
+  }
+  .popular-topic-rail .popular-topic-lessons {
+    margin-top: auto;
+    padding-top: .35rem;
+  }
+  .popular-topic-controls {
+    align-items: center;
+    gap: .7rem;
+    padding-inline: .05rem;
+  }
+}
