@@ -93,14 +93,10 @@ export function GoogleSignInButton({ intent, referralCode, mode, onAuthenticated
                 provider: 'google',
                 token: response.credential,
                 nonce,
-                options: {
-                  data: {
-                    account_intent: intent,
-                    ...(referralCode ? { affiliate_code: referralCode } : {}),
-                  },
-                },
               })
               if (error) throw error
+              const { error: metadataError } = await supabase.auth.updateUser({ data: { account_intent: intent, ...(referralCode ? { affiliate_code: referralCode } : {}) } })
+              if (metadataError) throw metadataError
               onAuthenticated()
             } catch (error) {
               onError(error instanceof Error ? error.message : 'Google sign-in failed. Please try again.')
@@ -158,15 +154,10 @@ export function GoogleSignInButton({ intent, referralCode, mode, onAuthenticated
         provider: 'google',
         token: result.result.idToken,
         nonce,
-        options: {
-          data: {
-            full_name: result.result.profile.name ?? '',
-            account_intent: intent,
-            ...(referralCode ? { affiliate_code: referralCode } : {}),
-          },
-        },
       })
       if (error) throw error
+      const { error: metadataError } = await supabase.auth.updateUser({ data: { account_intent: intent, ...(referralCode ? { affiliate_code: referralCode } : {}) } })
+      if (metadataError) throw metadataError
       onAuthenticated()
     } catch (error) {
       onError(error instanceof Error ? error.message : 'Google sign-in failed. Please try again.')
