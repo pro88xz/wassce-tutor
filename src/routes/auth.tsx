@@ -3,7 +3,8 @@ import { privateHead } from '@/lib/seo'
 import { useCallback, useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { useAuth } from '@/lib/auth'
-import { CircleCheck, GraduationCap } from 'lucide-react'\nimport { GoogleSignInButton } from '@/components/auth/GoogleSignInButton'
+import { CircleCheck, GraduationCap } from 'lucide-react'
+import { GoogleSignInButton } from '@/components/auth/GoogleSignInButton'
 
 export const Route = createFileRoute('/auth')({
   head: privateHead('Sign in'),
@@ -15,7 +16,8 @@ function AuthPage() {
   const { user } = useAuth()
   const params = new URLSearchParams(typeof window === 'undefined' ? '' : window.location.search)
   const intent = params.get('intent') === 'tutor' ? 'tutor' : params.get('intent') === 'affiliate' ? 'affiliate' : 'student'
-  const requestedNext = params.get('next') ?? ''\n  const referralCode = params.get('ref')?.trim().toUpperCase() ?? ''
+  const requestedNext = params.get('next') ?? ''
+  const referralCode = params.get('ref')?.trim().toUpperCase() ?? ''
   const destination = intent === 'tutor' ? '/tutor-dashboard' : intent === 'affiliate' ? '/affiliate-dashboard' : ['/onboarding','/subjects','/practice','/progress','/account','/'].includes(requestedNext) ? requestedNext : '/'
   const [mode, setMode] = useState<'signin' | 'signup' | 'forgot'>('signup')
   const [resetSent, setResetSent] = useState(false)
