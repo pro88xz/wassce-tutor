@@ -167,7 +167,7 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
         <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-success text-white shadow-lg shadow-success/30"><Check className="h-8 w-8" aria-hidden /></span>
         <h1 className="text-3xl font-bold tracking-tight">You&rsquo;re all set</h1>
         <p className="text-muted-foreground">
-          {plan ? `${plan.name} is active.` : 'Your plan is active.'} Every lesson, every practice set and the AI tutor are open
+          {plan ? `${plan.name} is active.` : 'Your plan is active.'} Every lesson, every practice set and the study tutor are open
           {profile?.subscription_expires_at ? <> until <strong className="text-foreground">{formatDate(profile.subscription_expires_at)}</strong></> : null}.
         </p>
         <button type="button" onClick={() => navigate({ to: '/' })} className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary px-5 py-2 text-base font-semibold text-primary-foreground hover:bg-brand-strong">
@@ -245,7 +245,7 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
           {active ? (
             <>Your {planById(profile?.subscription_plan)?.name ?? 'plan'} runs until <strong className="text-foreground">{formatDate(profile!.subscription_expires_at!)}</strong>. A new plan adds its time on top.</>
           ) : (
-            'Unlock every lesson, every practice set and the AI tutor. Choose monthly flexibility or save with yearly access.'
+            'Unlock every lesson, every practice set and study tutor support. Choose monthly flexibility or save with yearly access.'
           )}
         </p>
       </header>
