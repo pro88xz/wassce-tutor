@@ -189,7 +189,7 @@ Reduce timing uncertainty by using electronic timing or light gates where availa
 
 Check whether a numerical answer is physically reasonable. A walking speed of 5 m s⁻¹ is unusually high for an ordinary walk; a vehicle speed of 5 km h⁻¹ is very low. Unit checks often reveal conversion errors.
 
-## 10. WASSCE examination focus
+## WASSCE examination focus
 
 Be prepared to:
 - define distance, displacement, speed, velocity and acceleration precisely;
