@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 340" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Resistors in series and in parallel</title>
+<desc id="d">Top: three resistors joined end to end in series; the same current flows through each and R = R1 + R2 + R3. Bottom: three resistors side by side in parallel; the same voltage is across each and 1/R = 1/R1 + 1/R2 + 1/R3.</desc>
+<defs></defs>
+<rect width="660" height="340" rx="20" fill="#f8fafc"/>
+<text x="20.0" y="28.0" font-size="19" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Series: R = R₁ + R₂ + R₃</text>
+<line x1="40.0" y1="90.0" x2="80.0" y2="90.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="80.0" y1="90.0" x2="125.0" y2="90.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="205.0" y1="90.0" x2="250.0" y2="90.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<rect x="125.0" y="77.0" width="80.0" height="26.0" rx="0" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+<text x="165.0" y="61.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">R₁</text>
+<line x1="250.0" y1="90.0" x2="295.0" y2="90.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="375.0" y1="90.0" x2="420.0" y2="90.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<rect x="295.0" y="77.0" width="80.0" height="26.0" rx="0" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+<text x="335.0" y="61.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">R₂</text>
+<line x1="420.0" y1="90.0" x2="465.0" y2="90.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="545.0" y1="90.0" x2="590.0" y2="90.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<rect x="465.0" y="77.0" width="80.0" height="26.0" rx="0" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+<text x="505.0" y="61.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">R₃</text>
+<line x1="590.0" y1="90.0" x2="620.0" y2="90.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="40.0" cy="90.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="620.0" cy="90.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="20.0" y="155.0" font-size="19" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Parallel: 1/R = 1/R₁ + 1/R₂ + 1/R₃</text>
+<line x1="80.0" y1="252.0" x2="160.0" y2="252.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="500.0" y1="252.0" x2="580.0" y2="252.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="160.0" y1="200.0" x2="160.0" y2="304.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="500.0" y1="200.0" x2="500.0" y2="304.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="160.0" y1="200.0" x2="290.0" y2="200.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="370.0" y1="200.0" x2="500.0" y2="200.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<rect x="290.0" y="187.0" width="80.0" height="26.0" rx="0" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+<text x="400.0" y="198.0" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">R₁</text>
+<line x1="160.0" y1="252.0" x2="290.0" y2="252.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="370.0" y1="252.0" x2="500.0" y2="252.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<rect x="290.0" y="239.0" width="80.0" height="26.0" rx="0" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+<text x="400.0" y="250.0" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">R₂</text>
+<line x1="160.0" y1="304.0" x2="290.0" y2="304.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="370.0" y1="304.0" x2="500.0" y2="304.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<rect x="290.0" y="291.0" width="80.0" height="26.0" rx="0" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+<text x="400.0" y="302.0" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">R₃</text>
+<circle cx="80.0" cy="252.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="580.0" cy="252.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+</svg>

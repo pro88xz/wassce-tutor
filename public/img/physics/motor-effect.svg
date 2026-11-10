@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The motor effect and Fleming&#x27;s left-hand rule</title>
+<desc id="d">A wire carrying current between the poles of a magnet experiences a force at right angles to both the field and the current. Fleming&#x27;s left-hand rule: First finger Field, seCond finger Current, thuMb Motion.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="660" height="380" rx="20" fill="#f8fafc"/>
+<rect x="60.0" y="120.0" width="90.0" height="140.0" rx="0" fill="#fee2e2" stroke="#0f172a" stroke-width="3"/>
+<rect x="330.0" y="120.0" width="90.0" height="140.0" rx="0" fill="#dbeafe" stroke="#0f172a" stroke-width="3"/>
+<text x="105.0" y="190.0" font-size="30" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">N</text>
+<text x="375.0" y="190.0" font-size="30" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">S</text>
+<line x1="152.0" y1="145.0" x2="326.0" y2="145.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="152.0" y1="175.0" x2="326.0" y2="175.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="152.0" y1="205.0" x2="326.0" y2="205.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="152.0" y1="235.0" x2="326.0" y2="235.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<circle cx="240.0" cy="190.0" r="16.0" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+<circle cx="240.0" cy="190.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="240.0" y="225.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">current out of page</text>
+<line x1="240.0" y1="170.0" x2="240.0" y2="70.0" stroke="#dc2626" stroke-width="5" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="252.0" y="84.0" font-size="19" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">force F</text>
+<text x="240.0" y="300.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">F = BIL</text>
+<line x1="500.0" y1="220.0" x2="590.0" y2="220.0" stroke="#2563eb" stroke-width="5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<text x="586.0" y="242.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Field</text>
+<line x1="500.0" y1="220.0" x2="450.0" y2="290.0" stroke="#ea580c" stroke-width="5" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<text x="446.0" y="308.0" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Current</text>
+<line x1="500.0" y1="220.0" x2="500.0" y2="120.0" stroke="#dc2626" stroke-width="5" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="500.0" y="104.0" font-size="17" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Motion</text>
+<text x="560.0" y="340.0" font-size="17" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">left hand: FBI</text>
+</svg>

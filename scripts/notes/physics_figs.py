@@ -1452,6 +1452,535 @@ def em_spectrum():
     return s
 
 
+# ═══ Electricity ═════════════════════════════════════════════════════════════
+
+@fig
+def gold_leaf_electroscope():
+    s = Svg(680, 420, "A gold-leaf electroscope",
+            "A metal cap on a metal rod passes through an insulating plug into a glass-fronted case. A thin gold leaf hangs from the bottom of the rod; when the electroscope is charged, the leaf and rod repel and the leaf rises.")
+    s.rect(140, 140, 280, 250, fill=GLASS, stroke=INK, width=3, rx=10)
+    s.rect(250, 120, 60, 34, fill="#a16207", stroke=INK, width=2.5, rx=4)
+    s.rect(250, 70, 60, 14, fill=METAL, stroke=INK, width=2.5, rx=3)
+    s.line(280, 84, 280, 290, color="#64748b", width=8)
+    s.path("M 284 220 L 340 290", color="#ca8a04", width=6)
+    for x in (170, 390):
+        s.line(x, 390, x, 410, width=3)
+    s.line(140, 390, 420, 390, width=3)
+    s.rect(160, 380, 240, 10, fill=METAL, stroke=INK, width=1.5)
+    labels = [("metal cap", 310, 77, 46), ("insulating plug", 312, 137, 116), ("metal rod", 286, 200, 196), ("gold leaf", 330, 270, 276), ("earthed case", 420, 340, 350)]
+    for text, px, py, ty in labels:
+        s.line(px, py, 440, ty, color=MUTED, width=1.5)
+        s.text(444, ty, text, size=17, anchor="start", weight="bold")
+    for k, (x, y) in enumerate(((268, 74), (292, 74), (276, 240), (300, 248), (322, 266))):
+        s.text(x, y - 16 if k < 2 else y, "+", size=20, weight="bold", color=RED)
+    return s
+
+
+@fig
+def electric_field_lines():
+    s = Svg(660, 330, "Electric field lines",
+            "Left: field lines point radially outwards from an isolated positive charge. Right: lines leave a positive charge and curve round to enter a nearby negative charge.")
+    c1 = (150, 165)
+    s.circle(*c1, 22, fill=F_RED, stroke=RED, width=3)
+    s.text(*c1, "+", size=28, weight="bold", color=RED)
+    for k in range(12):
+        a = 2 * math.pi * k / 12
+        s.arrow(c1[0] + 28 * math.cos(a), c1[1] + 28 * math.sin(a), c1[0] + 120 * math.cos(a), c1[1] + 120 * math.sin(a), color=INK, width=2)
+    P, N = (390, 165), (590, 165)
+    s.circle(*P, 20, fill=F_RED, stroke=RED, width=3)
+    s.text(*P, "+", size=26, weight="bold", color=RED)
+    s.circle(*N, 20, fill=F_BLUE, stroke=BLUE, width=3)
+    s.text(*N, "−", size=28, weight="bold", color=BLUE)
+    s.arrow(412, 165, 566, 165, color=INK, width=2)
+    for h in (45, 90, 135):
+        for sign in (1, -1):
+            s.path(f"M {P[0] + 16} {P[1] - sign * 12} C {P[0] + 60} {P[1] - sign * h * 1.3} {N[0] - 60} {N[1] - sign * h * 1.3} {N[0] - 16} {N[1] - sign * 12}", color=INK, width=2)
+            s.head(490, 165 - sign * h * 0.98, 0, color=INK, size=11)
+    s.text(150, 315, "isolated positive charge", size=17, weight="bold")
+    s.text(490, 315, "positive and negative charges", size=17, weight="bold")
+    return s
+
+
+@fig
+def simple_circuit():
+    s = Svg(640, 380, "A simple circuit with an ammeter and a voltmeter",
+            "A cell, a switch, an ammeter and a resistor are connected in series. A voltmeter is connected in parallel across the resistor.")
+    L, R_, T, B = 90, 550, 90, 290
+    s.line(L, T, 260, T)
+    s.cell(285, T, "cell")
+    s.line(310, T, R_, T)
+    s.line(R_, T, R_, B)
+    s.line(L, T, L, 150)
+    s.meter(L, 170, "A")
+    s.line(L, 190, L, B)
+    s.line(L, B, 220, B)
+    s.switch(220, B, 270, B)
+    s.line(270, B, 330, B)
+    s.resistor(330, B, R_, "resistor R")
+    s.line(380, B, 380, 340)
+    s.line(500, B, 500, 340)
+    s.line(380, 340, 420, 340)
+    s.meter(440, 340, "V")
+    s.line(460, 340, 500, 340)
+    s.text(118, 170, "ammeter", size=16, anchor="start", color=MUTED)
+    s.text(440, 374, "voltmeter (in parallel)", size=16, color=MUTED)
+    s.text(245, B + 34, "switch", size=16, color=MUTED)
+    s.arrow(400, T - 26, 480, T - 26, color=RED, width=2.5)
+    s.text(440, T - 44, "conventional current: + to −", size=15, color=RED)
+    return s
+
+
+@fig
+def iv_graphs():
+    s = Svg(660, 300, "Current-voltage graphs",
+            "Left: a metal resistor at constant temperature gives a straight line through the origin (ohmic). Middle: a filament lamp gives a curve that flattens as the filament heats up. Right: a diode conducts only in the forward direction.")
+    titles = ["ohmic resistor", "filament lamp", "diode"]
+    for i in range(3):
+        x0 = 40 + i * 215
+        cx, cy = x0 + 85, 140
+        s.arrow(x0, cy, x0 + 175, cy, width=2)
+        s.arrow(cx, 250, cx, 40, width=2)
+        s.text(x0 + 175, cy + 20, "V", size=16, italic=True, color=MUTED, anchor="end")
+        s.text(cx + 8, 42, "I", size=16, italic=True, color=MUTED, anchor="start")
+        if i == 0:
+            s.line(cx - 75, cy + 80, cx + 75, cy - 80, color=BLUE, width=4)
+        elif i == 1:
+            pts = [(cx + t, cy - 80 * math.tanh(t / 45) * 1.05) for t in range(-80, 81, 4)]
+            s.polyline(pts, color=ORANGE, width=4)
+        else:
+            pts = [(cx + t, cy - (0 if t < 40 else min(95, (t - 40) ** 1.8 / 4))) for t in range(-80, 81, 2)]
+            s.polyline([(cx - 80, cy + 3)] + pts, color=GREEN, width=4)
+        s.text(cx, 282, titles[i], size=17, weight="bold")
+    return s
+
+
+@fig
+def resistors_series_parallel():
+    s = Svg(660, 340, "Resistors in series and in parallel",
+            "Top: three resistors joined end to end in series; the same current flows through each and R = R1 + R2 + R3. Bottom: three resistors side by side in parallel; the same voltage is across each and 1/R = 1/R1 + 1/R2 + 1/R3.")
+    y = 90
+    s.text(20, 28, "Series: R = R₁ + R₂ + R₃", size=19, weight="bold", anchor="start")
+    s.line(40, y, 80, y)
+    xs = [80, 250, 420, 590]
+    for k in range(3):
+        s.resistor(xs[k], y, xs[k + 1], f"R{'₁₂₃'[k]}")
+    s.line(590, y, 620, y)
+    s.dot(40, y, 5)
+    s.dot(620, y, 5)
+    s.text(20, 155, "Parallel: 1/R = 1/R₁ + 1/R₂ + 1/R₃", size=19, weight="bold", anchor="start")
+    x0, x1 = 160, 500
+    ys = [200, 252, 304]
+    s.line(80, 252, x0, 252)
+    s.line(x1, 252, 580, 252)
+    s.line(x0, ys[0], x0, ys[-1])
+    s.line(x1, ys[0], x1, ys[-1])
+    for k, yy in enumerate(ys):
+        s.resistor(x0, yy, x1, "")
+        s.text(330 + 70, yy - 2, f"R{'₁₂₃'[k]}", size=18, anchor="start", weight="bold")
+    s.dot(80, 252, 5)
+    s.dot(580, 252, 5)
+    return s
+
+
+@fig
+def meter_bridge():
+    s = Svg(660, 330, "The metre bridge (Wheatstone bridge)",
+            "A uniform resistance wire one metre long has an unknown resistance X and a known resistance R in the gaps. A galvanometer connected through a jockey reads zero at the balance point, dividing the wire into lengths l and 100 minus l.")
+    wy = 230
+    s.line(60, wy, 600, wy, color=ORANGE, width=5)
+    s.text(330, wy + 30, "uniform wire, 100 cm", size=16, color=ORANGE)
+    s.line(60, wy, 60, 110)
+    s.line(600, wy, 600, 110)
+    s.resistor(60, 110, 300, "X (unknown)")
+    s.resistor(360, 110, 600, "R (known)")
+    s.line(300, 110, 360, 110)
+    s.line(330, 110, 330, 150)
+    s.meter(330, 170, "G")
+    s.line(330, 190, 260, wy - 6)
+    s.polygon([(252, wy - 4), (268, wy - 4), (260, wy + 2)], fill=INK, stroke=INK, width=1)
+    s.text(260, wy - 34, "jockey", size=15, color=MUTED, anchor="end")
+    s.line(60, wy, 60, 290)
+    s.line(600, wy, 600, 290)
+    s.line(60, 290, 300, 290)
+    s.cell(325, 290, "")
+    s.line(350, 290, 600, 290)
+    s.arrow(160, wy + 50, 62, wy + 50, color=BLUE, width=2)
+    s.arrow(160, wy + 50, 258, wy + 50, color=BLUE, width=2)
+    s.label(160, wy + 50, "l", size=20, italic=True, weight="bold", color=BLUE)
+    s.text(470, 40, "X / R = l / (100 − l)", size=21, weight="bold")
+    return s
+
+
+@fig
+def electrolysis_cell():
+    s = Svg(600, 380, "Electrolysis of copper(II) sulphate with copper electrodes",
+            "Two copper electrodes dip into copper sulphate solution and are connected to a battery. Copper ions move to the cathode and are deposited as copper; copper dissolves from the anode.")
+    s.rect(140, 150, 320, 190, fill=WATER, stroke=INK, width=3, rx=8)
+    s.rect(200, 90, 30, 210, fill="#c2410c", stroke=INK, width=2.5)
+    s.rect(370, 90, 30, 210, fill="#c2410c", stroke=INK, width=2.5)
+    s.line(215, 90, 215, 50)
+    s.line(385, 90, 385, 50)
+    s.line(215, 50, 285, 50)
+    s.cell(300, 50, "")
+    s.line(315, 50, 385, 50)
+    s.text(160, 70, "anode (+)", size=17, weight="bold", color=RED, anchor="end")
+    s.text(440, 70, "cathode (−)", size=17, weight="bold", color=BLUE, anchor="start")
+    for (x, y) in ((260, 210), (300, 250), (330, 200)):
+        s.circle(x, y, 14, fill=F_BLUE, stroke=BLUE, width=2)
+        s.text(x, y, "Cu²⁺", size=11, weight="bold", color=BLUE)
+        s.arrow(x + 16, y, x + 46, y, color=BLUE, width=2)
+    for (x, y) in ((330, 300), (270, 290)):
+        s.circle(x, y, 14, fill=F_RED, stroke=RED, width=2)
+        s.text(x, y, "SO₄²⁻", size=9, weight="bold", color=RED)
+        s.arrow(x - 16, y, x - 46, y, color=RED, width=2)
+    s.text(300, 362, "copper sulphate solution (electrolyte)", size=16, color=MUTED)
+    return s
+
+
+# ═══ Magnetism ═══════════════════════════════════════════════════════════════
+
+@fig
+def bar_magnet_field():
+    s = Svg(640, 340, "Magnetic field of a bar magnet",
+            "Field lines leave the north pole, curve round and enter the south pole. They are closest together near the poles, where the field is strongest.")
+    cx, cy = 320, 170
+    s.rect(cx - 110, cy - 22, 110, 44, fill=F_RED, stroke=INK, width=3)
+    s.rect(cx, cy - 22, 110, 44, fill=F_BLUE, stroke=INK, width=3)
+    s.text(cx - 55, cy, "N", size=24, weight="bold", color=RED)
+    s.text(cx + 55, cy, "S", size=24, weight="bold", color=BLUE)
+    for h in (40, 75, 115, 150):
+        for sign in (1, -1):
+            s.path(f"M {cx - 110} {cy - sign * 10} C {cx - 110 - h * 1.2} {cy - sign * h * 1.25} {cx + 110 + h * 1.2} {cy - sign * h * 1.25} {cx + 110} {cy - sign * 10}", color=INK, width=2)
+            s.head(cx, cy - sign * h * 0.96, 0, color=INK, size=11)
+    s.arrow(cx - 110, cy, cx - 230, cy, color=INK, width=2)
+    s.arrow(cx + 230, cy, cx + 112, cy, color=INK, width=2)
+    s.text(320, 326, "lines go from N to S outside the magnet", size=17, color=MUTED)
+    return s
+
+
+@fig
+def wire_and_solenoid_fields():
+    s = Svg(660, 340, "Magnetic fields of a straight wire and a solenoid",
+            "Left: around a straight wire carrying current into the page, the field lines are concentric circles running clockwise. Right: a current-carrying solenoid produces a field like a bar magnet, with a north pole at one end.")
+    c = (150, 170)
+    for r in (34, 64, 96):
+        s.circle(*c, r, stroke=INK, width=2)
+        s.head(c[0] + r, c[1], math.pi / 2, color=INK, size=11)
+    s.circle(*c, 12, fill="#ffffff", stroke=INK, width=3)
+    s.line(c[0] - 7, c[1] - 7, c[0] + 7, c[1] + 7, width=3)
+    s.line(c[0] - 7, c[1] + 7, c[0] + 7, c[1] - 7, width=3)
+    s.text(150, 300, "current into page: clockwise field", size=16, weight="bold")
+    x0, x1, yc = 390, 590, 170
+    for k in range(9):
+        x = x0 + 10 + k * 22
+        s.ellipse(x, yc, 10, 46, stroke=ORANGE, width=3)
+    s.line(x0 - 20, yc + 46, x0 + 10, yc + 46, color=ORANGE, width=3)
+    s.line(x1 - 10, yc + 46, x1 + 20, yc + 46, color=ORANGE, width=3)
+    for h in (70, 110):
+        for sign in (1, -1):
+            s.path(f"M {x0} {yc - sign * 30} C {x0 - 70} {yc - sign * h} {x1 + 70} {yc - sign * h} {x1} {yc - sign * 30}", color=INK, width=2)
+    s.arrow(x0 + 30, yc, x1 - 30, yc, color=INK, width=2)
+    s.text(x1 + 26, yc - 4, "N", size=24, weight="bold", color=RED, anchor="start")
+    s.text(x0 - 26, yc - 4, "S", size=24, weight="bold", color=BLUE, anchor="end")
+    s.text(490, 300, "solenoid: like a bar magnet", size=16, weight="bold")
+    return s
+
+
+@fig
+def motor_effect():
+    s = Svg(660, 380, "The motor effect and Fleming's left-hand rule",
+            "A wire carrying current between the poles of a magnet experiences a force at right angles to both the field and the current. Fleming's left-hand rule: First finger Field, seCond finger Current, thuMb Motion.")
+    s.rect(60, 120, 90, 140, fill=F_RED, stroke=INK, width=3)
+    s.rect(330, 120, 90, 140, fill=F_BLUE, stroke=INK, width=3)
+    s.text(105, 190, "N", size=30, weight="bold", color=RED)
+    s.text(375, 190, "S", size=30, weight="bold", color=BLUE)
+    for y in (145, 175, 205, 235):
+        s.arrow(152, y, 326, y, color=MUTED, width=1.6)
+    s.circle(240, 190, 16, fill="#ffffff", stroke=INK, width=3)
+    s.dot(240, 190, 5)
+    s.text(240, 225, "current out of page", size=13, color=MUTED)
+    s.arrow(240, 170, 240, 70, color=RED, width=5)
+    s.text(252, 84, "force F", size=19, weight="bold", color=RED, anchor="start")
+    s.text(240, 300, "F = BIL", size=24, weight="bold")
+    hx, hy = 500, 220
+    s.arrow(hx, hy, hx + 90, hy, color=BLUE, width=5)
+    s.text(hx + 86, hy + 22, "Field", size=17, weight="bold", color=BLUE)
+    s.arrow(hx, hy, hx - 50, hy + 70, color=ORANGE, width=5)
+    s.text(hx - 54, hy + 88, "Current", size=17, weight="bold", color=ORANGE)
+    s.arrow(hx, hy, hx, hy - 100, color=RED, width=5)
+    s.text(hx, hy - 116, "Motion", size=17, weight="bold", color=RED)
+    s.text(560, 340, "left hand: FBI", size=17, color=MUTED)
+    return s
+
+
+@fig
+def electromagnetic_induction():
+    s = Svg(640, 320, "Electromagnetic induction",
+            "Moving a bar magnet into a coil connected to a galvanometer induces a current; the needle deflects while the magnet moves and returns to zero when it stops.")
+    for k in range(7):
+        x = 300 + k * 26
+        s.ellipse(x, 160, 12, 60, stroke=ORANGE, width=3)
+    s.rect(80, 138, 150, 44, fill=F_RED, stroke=INK, width=3)
+    s.rect(80, 138, 75, 44, fill=F_BLUE, stroke=INK, width=3)
+    s.text(118, 160, "S", size=22, weight="bold", color=BLUE)
+    s.text(192, 160, "N", size=22, weight="bold", color=RED)
+    s.arrow(210, 105, 280, 105, color=RED, width=4)
+    s.text(245, 86, "move in", size=16, color=RED, weight="bold")
+    s.line(300, 220, 300, 270, color=ORANGE, width=3)
+    s.line(456, 220, 456, 270, color=ORANGE, width=3)
+    s.line(300, 270, 350, 270, color=ORANGE, width=3)
+    s.line(406, 270, 456, 270, color=ORANGE, width=3)
+    s.meter(378, 270, "G")
+    s.text(378, 306, "galvanometer deflects", size=16, color=MUTED)
+    s.text(500, 60, "e.m.f. ∝ rate of change", size=17, weight="bold")
+    s.text(500, 84, "of magnetic flux", size=17, weight="bold")
+    return s
+
+
+@fig
+def transformer():
+    s = Svg(640, 340, "A transformer",
+            "Two coils wound on a laminated soft-iron core. An alternating voltage on the primary coil produces a changing magnetic flux in the core, which induces an alternating voltage in the secondary coil.")
+    s.rect(200, 70, 240, 200, fill=METAL, stroke=INK, width=3)
+    s.rect(250, 120, 140, 100, fill=BG, stroke=INK, width=3)
+    for k in range(6):
+        y = 90 + k * 30
+        s.path(f"M 196 {y} q -26 8 0 16", color=ORANGE, width=4)
+    for k in range(10):
+        y = 85 + k * 18
+        s.path(f"M 444 {y} q 26 6 0 12", color=BLUE, width=4)
+    s.line(176, 92, 110, 92, color=ORANGE, width=3)
+    s.line(176, 250, 110, 250, color=ORANGE, width=3)
+    s.line(466, 88, 540, 88, color=BLUE, width=3)
+    s.line(466, 254, 540, 254, color=BLUE, width=3)
+    s.text(110, 172, "Vp", size=22, weight="bold", color=ORANGE)
+    s.text(110, 200, "Np turns", size=15, color=ORANGE)
+    s.text(540, 172, "Vs", size=22, weight="bold", color=BLUE)
+    s.text(540, 200, "Ns turns", size=15, color=BLUE)
+    s.text(320, 40, "laminated soft-iron core", size=17, color=MUTED)
+    s.text(320, 310, "Vs / Vp = Ns / Np", size=24, weight="bold")
+    return s
+
+
+@fig
+def ac_waveform():
+    s = Svg(640, 300, "Alternating voltage",
+            "An alternating voltage varies sinusoidally between plus and minus the peak value V0. The r.m.s. value is 0.707 times the peak value.")
+    x0, ym = 70, 150
+    s.arrow(x0, 270, x0, 30, width=2.2)
+    s.arrow(x0, ym, 620, ym, width=2.2)
+    s.text(620, ym + 22, "time", size=16, color=MUTED, anchor="end")
+    s.text(x0 + 8, 32, "voltage", size=16, color=MUTED, anchor="start", baseline="auto")
+    A = 100
+    pts = [(x0 + i * 2.6, ym - A * math.sin(2 * math.pi * i / 100)) for i in range(0, 201)]
+    s.polyline(pts, color=BLUE, width=4)
+    s.line(x0, ym - A, 600, ym - A, color=GRID, width=1.5, dash="5 6")
+    s.line(x0, ym - 0.707 * A, 600, ym - 0.707 * A, color=RED, width=2, dash="8 6")
+    s.text(x0 - 10, ym - A, "V₀", size=19, weight="bold", anchor="end")
+    s.text(605, ym - 0.707 * A, "Vrms = 0.707 V₀", size=16, weight="bold", color=RED, anchor="end", baseline="auto")
+    s.arrow(x0, 285, x0 + 260, 285, color=GREEN, width=2.5)
+    s.arrow(x0 + 260, 285, x0, 285, color=GREEN, width=2.5)
+    s.label(x0 + 130, 285, "one period T", size=16, color=GREEN, weight="bold")
+    return s
+
+
+@fig
+def three_pin_plug():
+    s = Svg(560, 400, "Wiring a three-pin plug",
+            "Inside a three-pin plug: the brown live wire goes through the fuse to the right-hand pin, the blue neutral wire to the left-hand pin, and the green and yellow earth wire to the top pin. A cord grip holds the cable.")
+    s.rect(110, 40, 340, 320, fill="#ffffff", stroke=INK, width=3, rx=30)
+    s.rect(255, 70, 50, 80, fill=METAL, stroke=INK, width=2.5)
+    s.text(280, 168, "E", size=18, weight="bold")
+    s.rect(160, 200, 46, 70, fill=METAL, stroke=INK, width=2.5)
+    s.text(183, 288, "N", size=18, weight="bold")
+    s.rect(354, 200, 46, 70, fill=METAL, stroke=INK, width=2.5)
+    s.text(377, 288, "L", size=18, weight="bold")
+    s.rect(360, 120, 34, 70, fill="#fde68a", stroke=INK, width=2)
+    s.text(410, 155, "fuse", size=16, anchor="start", weight="bold")
+    s.rect(230, 320, 100, 22, fill=F_GREY, stroke=INK, width=2)
+    s.text(342, 332, "cord grip", size=15, anchor="start", color=MUTED)
+    s.path("M 275 345 C 275 300 280 200 280 150", color="#16a34a", width=7)
+    s.path("M 275 345 C 275 300 280 200 280 150", color="#facc15", width=3, dash="10 8")
+    s.path("M 268 345 C 250 300 190 300 183 270", color="#2563eb", width=7)
+    s.path("M 290 345 C 320 300 377 240 377 190", color="#92400e", width=7)
+    s.text(160, 380, "blue = neutral", size=15, color="#2563eb", weight="bold")
+    s.text(290, 380, "brown = live (via fuse)", size=15, color="#92400e", weight="bold")
+    s.text(280, 26, "green/yellow = earth", size=15, color="#15803d", weight="bold")
+    return s
+
+
+# ═══ Modern physics and electronics ══════════════════════════════════════════
+
+@fig
+def energy_levels():
+    s = Svg(640, 380, "Energy levels of the hydrogen atom",
+            "Energy level diagram: n = 1 at -13.6 eV, n = 2 at -3.4 eV, n = 3 at -1.51 eV, n = 4 at -0.85 eV, and zero at infinity. An electron dropping from a higher level to a lower one emits a photon whose energy equals the difference.")
+    levels = [(1, -13.6), (2, -3.4), (3, -1.51), (4, -0.85), (None, 0.0)]
+    pos = {-13.6: 320, -3.4: 200, -1.51: 140, -0.85: 100, 0.0: 60}
+
+    def Y(E):   # spaced for clarity, not to scale
+        if E in pos:
+            return pos[E]
+        ks = sorted(pos)
+        for a, b in zip(ks, ks[1:]):
+            if a <= E <= b:
+                return pos[a] + (E - a) / (b - a) * (pos[b] - pos[a])
+        return 60
+    for n, E in levels:
+        y = Y(E)
+        s.line(120, y, 470, y, color=INK if n else MUTED, width=3 if n else 2, dash=None if n else "6 6")
+        s.text(110, y, f"n = {n}" if n else "n = ∞", size=17, anchor="end", weight="bold")
+        s.text(480, y, f"{E} eV", size=17, anchor="start")
+    s.arrow(200, Y(-3.4), 200, Y(-13.6) - 2, color=PURPLE, width=3)
+    s.arrow(300, Y(-1.51), 300, Y(-3.4) - 2, color=RED, width=3)
+    s.arrow(380, Y(-0.85), 380, Y(-3.4) - 2, color=BLUE, width=3)
+    s.text(210, Y(-8), "UV", size=16, color=PURPLE, anchor="start", weight="bold")
+    s.text(310, Y(-2.4), "red", size=16, color=RED, anchor="start", weight="bold")
+    s.text(390, Y(-2.1), "blue", size=16, color=BLUE, anchor="start", weight="bold")
+    s.text(320, 362, "photon energy hf = E(upper) − E(lower)   (not to scale)", size=17, weight="bold")
+    return s
+
+
+@fig
+def photoelectric_graph():
+    s = Svg(640, 340, "Photoelectric effect: kinetic energy against frequency",
+            "Maximum kinetic energy of photoelectrons against the frequency of the light: zero below the threshold frequency f0, then a straight line of gradient h. Extending the line back meets the energy axis at minus the work function.")
+    x0, y0 = 120, 230
+    s.arrow(x0, y0, 610, y0, width=2.5)
+    s.arrow(x0, 320, x0, 30, width=2.5)
+    s.text(610, y0 + 24, "frequency f", size=16, color=MUTED, anchor="end")
+    s.text(x0 + 8, 32, "max kinetic energy", size=16, color=MUTED, anchor="start", baseline="auto")
+    f0 = 280
+    s.line(f0, y0, 580, 50, color=BLUE, width=5)
+    s.line(x0, y0 + (f0 - x0) * (180 / 300), f0, y0, color=BLUE, width=2, dash="7 6")
+    s.dot(f0, y0, 6, color=RED)
+    s.text(f0, y0 + 24, "f₀ (threshold)", size=16, weight="bold", color=RED)
+    s.text(x0 - 10, y0 + (f0 - x0) * 0.6, "−W", size=18, weight="bold", anchor="end")
+    s.text(470, 180, "gradient = h", size=19, weight="bold", color=BLUE)
+    s.text(380, 300, "Ek = hf − W", size=22, weight="bold")
+    return s
+
+
+@fig
+def xray_tube():
+    s = Svg(660, 340, "An X-ray tube",
+            "Electrons from a heated cathode are accelerated by a very high voltage across an evacuated tube and strike a tungsten target embedded in a copper anode. X-rays are emitted from the target; most of the energy becomes heat, carried away by the copper and cooling fins.")
+    s.ellipse(330, 160, 260, 100, fill=GLASS, stroke=INK, width=3)
+    s.text(330, 46, "evacuated glass tube", size=16, color=MUTED)
+    s.rect(110, 140, 30, 40, fill=METAL, stroke=INK, width=2.5)
+    s.text(125, 205, "heated", size=14, color=MUTED)
+    s.text(125, 222, "cathode", size=14, color=MUTED)
+    s.rect(470, 120, 150, 80, fill="#c2410c", stroke=INK, width=2.5)
+    s.polygon([(470, 120), (470, 200), (430, 160)], fill="#64748b", stroke=INK, width=2.5)
+    s.text(545, 160, "copper anode", size=14, color="#ffffff", weight="bold")
+    s.text(430, 218, "tungsten target", size=14, color=MUTED)
+    for dy in (-8, 0, 8):
+        s.arrow(145, 160 + dy, 425, 160 + dy * 0.2, color=BLUE, width=2)
+    s.text(280, 140, "electrons", size=15, color=BLUE, weight="bold")
+    for k in range(3):
+        x = 440 + k * 12
+        s.path(f"M {x} 175 l -6 14 l 8 4 l -6 14 l 8 4 l -6 14 l 8 4 l -6 14", color=PURPLE, width=2.5)
+    s.text(450, 300, "X-rays", size=17, color=PURPLE, weight="bold")
+    s.text(330, 326, "very high p.d. (tens of kilovolts) between cathode and anode", size=15, color=MUTED)
+    return s
+
+
+@fig
+def decay_curve():
+    s = Svg(640, 340, "Radioactive decay curve",
+            "Activity against time for a radioactive sample: it falls from 800 to 400 counts per minute in one half-life, to 200 after two half-lives and to 100 after three.")
+    x0, y0 = 90, 290
+    s.axes(x0, y0, 610, 30, "time / days", "activity / counts per min")
+    T = 120
+    pts = [(x0 + t, y0 - 240 * 0.5 ** (t / T)) for t in range(0, 501, 4)]
+    s.polyline(pts, color=BLUE, width=4.5)
+    for k, a in enumerate((800, 400, 200, 100)):
+        y = y0 - 240 * 0.5 ** k
+        x = x0 + k * T
+        s.line(x0, y, x, y, color=GRID, width=1.5, dash="5 6")
+        s.line(x, y, x, y0, color=GRID, width=1.5, dash="5 6")
+        s.text(x0 - 8, y, str(a), size=15, anchor="end")
+        if k:
+            s.text(x, y0 + 20, f"{k}T", size=15, weight="bold", color=RED)
+    s.text(420, 120, "half-life T: time for the", size=17, weight="bold")
+    s.text(420, 144, "activity to fall by half", size=17, weight="bold")
+    return s
+
+
+@fig
+def radiation_penetration():
+    s = Svg(660, 280, "Penetrating power of alpha, beta and gamma radiation",
+            "Alpha particles are stopped by a sheet of paper; beta particles pass paper but are stopped by a few millimetres of aluminium; gamma rays pass both and are only reduced by thick lead or concrete.")
+    s.rect(30, 70, 70, 150, fill=F_AMBER, stroke=INK, width=2.5, rx=8)
+    s.text(65, 145, "source", size=15, weight="bold")
+    s.rect(240, 50, 10, 190, fill="#ffffff", stroke=INK, width=2)
+    s.text(245, 262, "paper", size=15, color=MUTED)
+    s.rect(380, 50, 22, 190, fill=METAL, stroke=INK, width=2)
+    s.text(391, 262, "aluminium", size=15, color=MUTED)
+    s.rect(530, 50, 50, 190, fill="#94a3b8", stroke=INK, width=2)
+    s.text(555, 262, "thick lead", size=15, color=MUTED)
+    s.arrow(100, 100, 236, 100, color=RED, width=4)
+    s.text(170, 84, "α", size=22, weight="bold", color=RED)
+    s.arrow(100, 145, 376, 145, color=BLUE, width=4)
+    s.text(170, 130, "β", size=22, weight="bold", color=BLUE)
+    s.arrow(100, 190, 526, 190, color=GREEN, width=4)
+    s.line(580, 190, 640, 190, color=GREEN, width=2, dash="5 5")
+    s.text(170, 176, "γ", size=22, weight="bold", color=GREEN)
+    return s
+
+
+@fig
+def diode_rectifier():
+    s = Svg(660, 330, "A diode and half-wave rectification",
+            "Top: a p-n junction diode conducts when forward-biased and blocks current when reverse-biased. Bottom: alternating input voltage and the half-wave rectified output, which has only the positive half-cycles.")
+    s.polygon([(120, 50), (120, 110), (170, 80)], fill=F_GREY, stroke=INK, width=3)
+    s.line(170, 50, 170, 110, width=4)
+    s.line(60, 80, 120, 80)
+    s.line(170, 80, 230, 80)
+    s.text(145, 30, "diode symbol", size=16, weight="bold")
+    s.arrow(250, 80, 320, 80, color=GREEN, width=3)
+    s.text(370, 70, "forward bias: conducts", size=16, color=GREEN, weight="bold", anchor="start")
+    s.text(370, 96, "reverse bias: blocks", size=16, color=RED, weight="bold", anchor="start")
+    for row, rect in enumerate((False, True)):
+        y = 200 + row * 0
+        x0 = 60 + row * 320
+        s.line(x0, y, x0 + 260, y, color=MUTED, width=1.5)
+        pts = []
+        for i in range(0, 241, 3):
+            v = 50 * math.sin(2 * math.pi * i / 120)
+            if rect and v < 0:
+                v = 0
+            pts.append((x0 + 10 + i, y - v))
+        s.polyline(pts, color=BLUE if not rect else ORANGE, width=4)
+        s.text(x0 + 130, 300, "a.c. input" if not rect else "half-wave rectified output", size=16, weight="bold")
+    return s
+
+
+@fig
+def best_fit_graph():
+    s = Svg(640, 360, "Drawing a line of best fit and finding its gradient",
+            "Plotted points scattered about a straight line of best fit. A large right-angled triangle drawn on the line gives the gradient as the change in y divided by the change in x.")
+    x0, y0 = 90, 300
+    s.axes(x0, y0, 610, 30, "x", "y")
+    pts = [(1, 2.1), (2, 3.8), (3, 6.2), (4, 7.9), (5, 10.1), (6, 11.8), (7, 14.2)]
+    def P(x, y):
+        return x0 + x * 66, y0 - y * 17
+    for x, y in pts:
+        X, Y = P(x, y)
+        s.line(X - 7, Y - 7, X + 7, Y + 7, color=INK, width=2.5)
+        s.line(X - 7, Y + 7, X + 7, Y - 7, color=INK, width=2.5)
+    a, b = 2.0, 0.05
+    s.line(*P(0.3, a * 0.3 + b), *P(7.6, a * 7.6 + b), color=BLUE, width=3.5)
+    A, B = P(1.5, a * 1.5 + b), P(6.5, a * 6.5 + b)
+    s.line(A[0], A[1], B[0], A[1], color=RED, width=2.5, dash="7 5")
+    s.line(B[0], A[1], B[0], B[1], color=RED, width=2.5, dash="7 5")
+    s.text((A[0] + B[0]) / 2, A[1] + 22, "Δx", size=19, weight="bold", color=RED)
+    s.text(B[0] + 12, (A[1] + B[1]) / 2, "Δy", size=19, weight="bold", color=RED, anchor="start")
+    s.text(250, 70, "gradient = Δy / Δx", size=21, weight="bold")
+    s.text(250, 98, "(use a large triangle)", size=16, color=MUTED)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:

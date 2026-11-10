@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A gold-leaf electroscope</title>
+<desc id="d">A metal cap on a metal rod passes through an insulating plug into a glass-fronted case. A thin gold leaf hangs from the bottom of the rod; when the electroscope is charged, the leaf and rod repel and the leaf rises.</desc>
+<defs></defs>
+<rect width="680" height="420" rx="20" fill="#f8fafc"/>
+<rect x="140.0" y="140.0" width="280.0" height="250.0" rx="10" fill="#e0f2fe" stroke="#0f172a" stroke-width="3"/>
+<rect x="250.0" y="120.0" width="60.0" height="34.0" rx="4" fill="#a16207" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="250.0" y="70.0" width="60.0" height="14.0" rx="3" fill="#cbd5e1" stroke="#0f172a" stroke-width="2.5"/>
+<line x1="280.0" y1="84.0" x2="280.0" y2="290.0" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+<path d="M 284 220 L 340 290" stroke="#ca8a04" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="170.0" y1="390.0" x2="170.0" y2="410.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="390.0" y1="390.0" x2="390.0" y2="410.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="140.0" y1="390.0" x2="420.0" y2="390.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<rect x="160.0" y="380.0" width="240.0" height="10.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="310.0" y1="77.0" x2="440.0" y2="46.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<text x="444.0" y="46.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">metal cap</text>
+<line x1="312.0" y1="137.0" x2="440.0" y2="116.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<text x="444.0" y="116.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">insulating plug</text>
+<line x1="286.0" y1="200.0" x2="440.0" y2="196.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<text x="444.0" y="196.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">metal rod</text>
+<line x1="330.0" y1="270.0" x2="440.0" y2="276.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<text x="444.0" y="276.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">gold leaf</text>
+<line x1="420.0" y1="340.0" x2="440.0" y2="350.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<text x="444.0" y="350.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">earthed case</text>
+<text x="268.0" y="58.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+</text>
+<text x="292.0" y="58.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+</text>
+<text x="276.0" y="240.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+</text>
+<text x="300.0" y="248.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+</text>
+<text x="322.0" y="266.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+</text>
+</svg>

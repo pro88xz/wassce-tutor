@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Electromagnetic induction</title>
+<desc id="d">Moving a bar magnet into a coil connected to a galvanometer induces a current; the needle deflects while the magnet moves and returns to zero when it stops.</desc>
+<defs><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="640" height="320" rx="20" fill="#f8fafc"/>
+<ellipse cx="300.0" cy="160.0" rx="12.0" ry="60.0" fill="none" stroke="#ea580c" stroke-width="3"/>
+<ellipse cx="326.0" cy="160.0" rx="12.0" ry="60.0" fill="none" stroke="#ea580c" stroke-width="3"/>
+<ellipse cx="352.0" cy="160.0" rx="12.0" ry="60.0" fill="none" stroke="#ea580c" stroke-width="3"/>
+<ellipse cx="378.0" cy="160.0" rx="12.0" ry="60.0" fill="none" stroke="#ea580c" stroke-width="3"/>
+<ellipse cx="404.0" cy="160.0" rx="12.0" ry="60.0" fill="none" stroke="#ea580c" stroke-width="3"/>
+<ellipse cx="430.0" cy="160.0" rx="12.0" ry="60.0" fill="none" stroke="#ea580c" stroke-width="3"/>
+<ellipse cx="456.0" cy="160.0" rx="12.0" ry="60.0" fill="none" stroke="#ea580c" stroke-width="3"/>
+<rect x="80.0" y="138.0" width="150.0" height="44.0" rx="0" fill="#fee2e2" stroke="#0f172a" stroke-width="3"/>
+<rect x="80.0" y="138.0" width="75.0" height="44.0" rx="0" fill="#dbeafe" stroke="#0f172a" stroke-width="3"/>
+<text x="118.0" y="160.0" font-size="22" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">S</text>
+<text x="192.0" y="160.0" font-size="22" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">N</text>
+<line x1="210.0" y1="105.0" x2="280.0" y2="105.0" stroke="#dc2626" stroke-width="4" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="245.0" y="86.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">move in</text>
+<line x1="300.0" y1="220.0" x2="300.0" y2="270.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<line x1="456.0" y1="220.0" x2="456.0" y2="270.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<line x1="300.0" y1="270.0" x2="350.0" y2="270.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<line x1="406.0" y1="270.0" x2="456.0" y2="270.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="378.0" cy="270.0" r="20.0" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+<text x="378.0" y="271.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">G</text>
+<text x="378.0" y="306.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">galvanometer deflects</text>
+<text x="500.0" y="60.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">e.m.f. ∝ rate of change</text>
+<text x="500.0" y="84.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">of magnetic flux</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 330" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The metre bridge (Wheatstone bridge)</title>
+<desc id="d">A uniform resistance wire one metre long has an unknown resistance X and a known resistance R in the gaps. A galvanometer connected through a jockey reads zero at the balance point, dividing the wire into lengths l and 100 minus l.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="660" height="330" rx="20" fill="#f8fafc"/>
+<line x1="60.0" y1="230.0" x2="600.0" y2="230.0" stroke="#ea580c" stroke-width="5" stroke-linecap="round"/>
+<text x="330.0" y="260.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">uniform wire, 100 cm</text>
+<line x1="60.0" y1="230.0" x2="60.0" y2="110.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="600.0" y1="230.0" x2="600.0" y2="110.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="60.0" y1="110.0" x2="140.0" y2="110.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="220.0" y1="110.0" x2="300.0" y2="110.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<rect x="140.0" y="97.0" width="80.0" height="26.0" rx="0" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+<text x="180.0" y="81.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">X (unknown)</text>
+<line x1="360.0" y1="110.0" x2="440.0" y2="110.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="520.0" y1="110.0" x2="600.0" y2="110.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<rect x="440.0" y="97.0" width="80.0" height="26.0" rx="0" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+<text x="480.0" y="81.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">R (known)</text>
+<line x1="300.0" y1="110.0" x2="360.0" y2="110.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="330.0" y1="110.0" x2="330.0" y2="150.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="330.0" cy="170.0" r="20.0" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+<text x="330.0" y="171.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">G</text>
+<line x1="330.0" y1="190.0" x2="260.0" y2="224.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<polygon points="252.0,226.0 268.0,226.0 260.0,232.0" fill="#0f172a" stroke="#0f172a" stroke-width="1" stroke-linejoin="round"/>
+<text x="260.0" y="196.0" font-size="15" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">jockey</text>
+<line x1="60.0" y1="230.0" x2="60.0" y2="290.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="600.0" y1="230.0" x2="600.0" y2="290.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="60.0" y1="290.0" x2="300.0" y2="290.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="319.0" y1="266.0" x2="319.0" y2="314.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="331.0" y1="277.0" x2="331.0" y2="303.0" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+<line x1="350.0" y1="290.0" x2="600.0" y2="290.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="160.0" y1="280.0" x2="62.0" y2="280.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="160.0" y1="280.0" x2="258.0" y2="280.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="149.4" y="265.0" width="21.2" height="30.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="160.0" y="280.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold" font-style="italic">l</text>
+<text x="470.0" y="40.0" font-size="21" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">X / R = l / (100 − l)</text>
+</svg>
