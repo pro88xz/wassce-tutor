@@ -29,7 +29,7 @@ export function Landing({ data }: { data: LandingData }) {
     <>
       <Hero data={data} />
       <TrustStrip />
-      <div ref={root} className="mx-auto max-w-6xl space-y-12 px-4 sm:space-y-16 sm:px-6">
+      <div ref={root} className="mx-auto -mx-1 max-w-6xl space-y-12 px-0 sm:mx-auto sm:space-y-16 sm:px-0">
         <SubjectShowcase subjects={data.subjects} />
         {data.popular.length > 0 && <PopularTopics data={data} />}
         <ProductTour />
@@ -208,7 +208,7 @@ function TrustStrip() {
     { icon: ShieldCheck, title: 'Independent platform', body: 'A private study service, not an official WAEC service or examination body.' },
   ]
   return (
-    <section aria-label="WASSCE Tutor at a glance" className="relative mx-auto -mt-1 mb-12 grid max-w-6xl grid-cols-1 gap-3 px-4 sm:grid-cols-2 sm:px-6 lg:-mt-7 lg:grid-cols-4 lg:px-8">
+    <section aria-label="WASSCE Tutor at a glance" className="relative mx-auto -mx-1 -mt-1 mb-12 grid max-w-6xl grid-cols-1 gap-3 px-0 sm:mx-auto sm:grid-cols-2 lg:-mt-7 lg:grid-cols-4">
       {items.map(({ icon: Icon, title, body }) => (
         <div key={title} className="group flex min-h-[9rem] items-start gap-3.5 rounded-2xl border border-slate-200/90 bg-white p-4 shadow-[0_8px_28px_-22px_rgba(26,20,55,.32)] transition duration-200 hover:-translate-y-0.5 hover:border-violet-200 hover:shadow-[0_16px_34px_-24px_rgba(76,29,149,.32)] sm:p-5">
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-violet-50 text-violet-700 ring-1 ring-violet-100">
