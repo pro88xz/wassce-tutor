@@ -75,7 +75,7 @@ function TutorsPage() {
             />
             <div className="tutor-photo-caption">
               <span className="tutor-photo-icon"><UserRound aria-hidden /></span>
-              <span><strong>One-to-one teaching</strong><small>Real teachers, not AI</small></span>
+              <span><strong>One-to-one teaching</strong><small>Personal one-to-one teaching</small></span>
             </div>
             <div className="tutor-visual-index"><span>PERSONAL SUPPORT</span><strong>01 / 03</strong></div>
           </div>
