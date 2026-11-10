@@ -31,7 +31,7 @@ import { SubjectIcon } from '@/lib/subject-theme'
 import { MdTable } from '@/components/MdTable'
 
 export const Route = createFileRoute('/tutor')({
-  head: privateHead('AI Tutor'),
+  head: privateHead('Study Tutor'),
   // ?ask= pre-fills the message box (e.g. from "Ask about this topic" links); never sends on its own.
   // ?about= names the subject and topic the student came from (shown in the header).
   validateSearch: (search: Record<string, unknown>): { ask?: string; about?: string } => ({
@@ -49,7 +49,7 @@ const FOLLOW_UPS = ['Explain this more simply', 'Give me another example', 'Test
 /** A pre-filled email reporting a wrong or confusing answer (trust boundary: a report route for AI answers). */
 function reportHref(answer: string) {
   const excerpt = answer.length > 600 ? `${answer.slice(0, 600)}…` : answer
-  return `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent('AI tutor answer report')}&body=${encodeURIComponent(
+  return `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent('Study tutor answer report')}&body=${encodeURIComponent(
     `What is wrong or confusing:\n\n\n---\nThe answer:\n${excerpt}`,
   )}`
 }
@@ -122,7 +122,7 @@ function TutorPage() {
       <div className="mx-auto max-w-md space-y-6 pt-6 text-center">
         <div className="mx-auto w-fit"><TutorAvatar size={64} /></div>
         <div className="space-y-2">
-          <h1 className="text-3xl font-bold tracking-tight">Meet your AI Tutor</h1>
+          <h1 className="text-3xl font-bold tracking-tight">Meet your Study Tutor</h1>
           <p className="text-muted-foreground">
             Stuck on a question? Ask anything. Your tutor explains step by step, in plain English, any time of day.
           </p>
@@ -144,7 +144,7 @@ function TutorPage() {
             to="/subscribe"
             className="flex min-h-12 py-2 w-full items-center justify-center rounded-2xl bg-primary text-base font-semibold text-white transition-colors hover:bg-brand-strong text-center"
           >
-            Unlock the AI Tutor
+            Unlock the Study Tutor
           </Link>
           <p className="text-xs text-muted-foreground">Included in both plans: {PLANS.map((p) => `${p.name}, ${p.priceNle} NLe for ${p.length}`).join(' · ')}.</p>
         </div>
@@ -214,7 +214,7 @@ function TutorPage() {
       >
         <TutorAvatar size={36} />
         <div className="min-w-0 flex-1">
-          <h1 className="font-bold leading-tight tracking-tight">AI tutor</h1>
+          <h1 className="font-bold leading-tight tracking-tight">Study tutor</h1>
           <p className="truncate text-xs leading-tight text-muted-foreground">
             {about ? <>Asking about <span className="font-semibold text-foreground">{about}</span></> : 'Step-by-step help with your WASSCE subjects'}
           </p>
@@ -272,7 +272,7 @@ function TutorPage() {
                   <TutorAvatar size={30} />
                   <div className="min-w-0 max-w-[90%] space-y-2">
                     <div className="rounded-2xl rounded-tl-md border bg-card px-4 py-3">
-                      <p className="mb-1 text-xs font-medium text-muted-foreground">AI-generated</p>
+                      <p className="mb-1 text-xs font-medium text-muted-foreground">Tutor response</p>
                       <div className="prose prose-slate max-w-none text-[15px] dark:prose-invert prose-headings:my-2 prose-ol:my-1.5 prose-p:my-1.5 prose-pre:my-2 prose-ul:my-1.5 prose-li:my-0.5">
                         <Suspense fallback={<p className="whitespace-pre-wrap text-sm">{m.content}</p>}>
                           <MarkdownView content={m.content} />
@@ -353,7 +353,7 @@ function TutorPage() {
           </button>
         </div>
         <p className="mx-auto mt-1.5 max-w-3xl px-2 text-center text-[11px] leading-snug text-muted-foreground">
-          Answers are AI-generated and can be wrong. Check them against your lessons. This is not an official WAEC marking scheme.{' '}
+          Tutor responses may contain errors. Check important explanations against your lessons and the official syllabus. This is not an official WAEC marking scheme.{' '}
           <a href="/tutors" className="font-semibold text-primary underline-offset-2 hover:underline">Prefer a real person? Book a tutor</a>
         </p>
       </div>
