@@ -417,7 +417,7 @@ function LocalBand({ data }: { data: LandingData }) {
 function StartingPoint() {
   const paths = [
     { img: 'persona-sss3', tag: 'SSS students', tone: 'bg-[#5b34d6]', title: "I'm in SSS1 to SSS3", body: 'Follow your faculty’s subjects topic by topic and track your progress to exam day.', cta: 'Start free', href: '/auth', alt: 'Secondary school students working in class' },
-    { img: 'persona-private', tag: 'Private candidates', tone: 'bg-[#0d8486]', title: "I'm a private candidate", body: 'Revise at your own pace with lessons, exam-style practice and the AI tutor.', cta: 'Start free', href: '/auth', alt: 'A young man studying alone at a desk' },
+    { img: 'persona-private', tag: 'Private candidates', tone: 'bg-[#0d8486]', title: "I'm a private candidate", body: 'Revise at your own pace with syllabus lessons and exam-style practice.', cta: 'Start free', href: '/auth', alt: 'A young man studying alone at a desk' },
     { img: 'persona-teacher', tag: 'Parents and teachers', tone: 'bg-[#b0610f]', title: "I'm a parent or teacher", body: 'See exactly what every WASSCE subject covers before your student signs up.', cta: 'Browse subjects', href: '/wassce/subjects', alt: 'A teacher leading a lesson at the whiteboard' },
   ]
   return (
@@ -479,7 +479,7 @@ function TutorTeaser() {
           className="h-60 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 sm:h-80 md:h-full"
         />
         <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-slate-900 shadow-lg">
-          <UserRound className="h-4 w-4 text-primary" aria-hidden /> Real teachers, not AI
+          <UserRound className="h-4 w-4 text-primary" aria-hidden /> Learn with real teachers
         </span>
       </span>
       <div className="space-y-3 p-6 sm:p-8">
@@ -644,7 +644,7 @@ function Plans() {
   ]
   return (
     <section id="plans" className="plans-section scroll-mt-20 space-y-8">
-      <SectionTitle eyebrow="Plans" title="Start free. Unlock everything for one small payment." body={`A free account opens the first lesson of every topic. A plan opens every lesson, every practice set and the AI tutor, from ${FROM_PRICE} NLe.`} />
+      <SectionTitle eyebrow="Plans" title="Start free. Unlock everything for one small payment." body={`A free account opens the first lesson of every topic. A plan opens every lesson and every practice set, from ${FROM_PRICE} NLe.`} />
       <div className="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map((c, i) => (
           <div
@@ -708,7 +708,7 @@ const FAQ: [question: string, answer: string][] = [
   ['Are these real WAEC past papers?', 'No. Practice sets are original WASSCE-style questions written by WASSCE Tutor to match the syllabus and the exam format, each with the full working. We do not copy WAEC papers.'],
   ['How do I pay?', 'Choose a plan, complete the Monime USSD payment on your phone, and your access activates automatically after payment verification. Plans do not renew automatically.'],
   ['Does it work on my phone?', 'Yes. WASSCE Tutor works in any phone browser, and there is an Android app you can install from this page. It is built to work on patchy data.'],
-  ['Who writes the lessons?', 'Lessons are drafted with the help of AI and follow the WASSCE syllabus. Lessons we publish openly on this website are checked by a named reviewer first, and their name appears on the lesson.'],
+  ['Who writes the lessons?', 'Lessons follow the WASSCE syllabus. Every lesson published openly on this website is checked by a named reviewer, whose name appears on the lesson.'],
   ['Is this the official WAEC website?', 'No. WASSCE Tutor is an independent study app built in Sierra Leone. For registration, timetables and results, always use official WAEC channels.'],
 ]
 
