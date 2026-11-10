@@ -44,7 +44,7 @@ function Privacy() {
           Your data is stored on Supabase, a third-party platform that hosts our database and authentication. Supabase is GDPR-compliant and uses industry-standard encryption. We do not store any of your data on our personal devices.
         </p>
         <p className="text-muted-foreground">
-          Tutor questions you submit are sent to Groq, an AI inference provider, to generate responses. Groq does not retain your questions for training purposes per their stated policy. Your questions are tied to your account in our database for your own history view.
+          Questions you submit to the study tutor are sent to Groq, an external response-generation provider. Groq states that it does not retain your questions for model training. Your questions are tied to your account in our database so you can view your history.
         </p>
       </section>
 
