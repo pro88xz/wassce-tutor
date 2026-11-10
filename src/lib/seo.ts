@@ -37,13 +37,13 @@ export const PUBLIC_PAGES = {
     title: 'WASSCE Practice Questions & Lessons in Sierra Leone | WASSCE Tutor',
     ogTitle: 'WASSCE Tutor: Pass WASSCE with confidence',
     description:
-      'WASSCE lessons and practice questions for Sierra Leone students, with full working, an AI tutor and one-to-one tutors. Free to start; everything from NLe 10.',
+      'WASSCE lessons and practice questions for Sierra Leone students, with full working and one-to-one tutors. Free to start; everything from NLe 10.',
     lastmod: '2026-11-07',
   },
   '/about': {
     title: 'About WASSCE Tutor: WASSCE Prep Built in Sierra Leone',
     description:
-      'WASSCE Tutor is a WASSCE preparation app built in Freetown for Sierra Leone students: syllabus lessons, exam-style practice questions and an AI tutor.',
+      'WASSCE Tutor is a WASSCE preparation app built in Freetown for Sierra Leone students, with syllabus lessons and exam-style practice questions.',
     lastmod: '2026-11-06',
   },
   '/contact': {
@@ -124,7 +124,7 @@ const ORGANIZATION = {
   logo: `${SITE.origin}/favicon-512.png`,
   image: `${SITE.origin}/og-image.jpg`,
   description:
-    'WASSCE preparation for Sierra Leone students, built in Freetown: syllabus lessons, original exam-style practice questions, an AI tutor and one-to-one tutors.',
+    'WASSCE preparation for Sierra Leone students, built in Freetown: syllabus lessons, original exam-style practice questions and one-to-one tutors.',
   email: CONTACT.email,
   telephone: CONTACT.phoneE164,
   address: {
@@ -164,7 +164,7 @@ const HOME_JSON_LD = {
     {
       '@type': 'SoftwareApplication',
       name: SITE.name,
-      description: 'WASSCE preparation app built in Sierra Leone with syllabus lessons, exam-style practice questions and an AI tutor.',
+      description: 'WASSCE preparation app built in Sierra Leone with syllabus lessons and exam-style practice questions.',
       url: `${SITE.origin}/`,
       applicationCategory: 'EducationalApplication',
       operatingSystem: 'Android, Web',
