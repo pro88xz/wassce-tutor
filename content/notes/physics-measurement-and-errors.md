@@ -93,9 +93,9 @@ Viewing a scale from an angle causes **parallax error**: the mark appears to shi
 ### 3.2 Vernier calipers
 Vernier calipers combine a fixed main scale with a sliding vernier scale. External jaws measure outside dimensions; internal jaws measure inside dimensions; a depth rod measures depth.
 
-![Vernier calipers showing main scale, sliding vernier and measuring jaws](https://upload.wikimedia.org/wikipedia/commons/4/4a/Vernier_caliper.svg)
+![Vernier calipers showing outside jaws, inside jaws, depth probe, main scale and vernier scale](https://upload.wikimedia.org/wikipedia/commons/f/f6/Vernier_caliper.svg)
 
-*Vernier calipers. Diagram source: Wikimedia Commons.*
+*Vernier caliper illustration by Alvesgaspar, Wikimedia Commons, CC BY-SA 3.0. [Source and licence](https://commons.wikimedia.org/wiki/File:Vernier_caliper.svg).*
 
 For a direct vernier:
 
@@ -131,9 +131,9 @@ Answer: 24.6 mm. Read the last main-scale mark to the left of the vernier zero, 
 ### 3.3 Micrometer screw gauge
 A micrometer measures small thicknesses and diameters. A precision screw moves the spindle as the thimble turns. The frame supports the instrument; the anvil is fixed; the spindle moves; the sleeve carries the main scale; the thimble carries the circular scale; and the ratchet helps apply consistent force.
 
-![Micrometer screw gauge with sleeve, thimble, spindle and anvil](https://upload.wikimedia.org/wikipedia/commons/0/0c/Micrometer001.png)
+![Micrometer screw gauge showing anvil, spindle, sleeve, thimble and ratchet stop](https://upload.wikimedia.org/wikipedia/commons/1/16/Micrometer.svg)
 
-*Micrometer screw gauge. Diagram source: Wikimedia Commons.*
+*Micrometer illustration by Anasofiapaixao, Wikimedia Commons, CC BY-SA 4.0. [Source and licence](https://commons.wikimedia.org/wiki/File:Micrometer.svg).*
 
 The **pitch** is the distance the spindle advances in one complete revolution.
 
@@ -324,9 +324,9 @@ Answer: 7.90 g cm⁻³. If mass is in kg and volume in m³, density is in kg m�
 ## 10. Practical: volume of an irregular solid
 For a solid that does not dissolve, react with water or absorb significant water, use water displacement.
 
-![Water displacement method for measuring the volume of an irregular object](https://upload.wikimedia.org/wikipedia/commons/3/3b/Displacement_method.svg)
+![Two graduated cylinders show the initial water volume and the higher final volume after an irregular solid is submerged; the difference is the solid's volume](https://wasscetutor.com/img/physics/water-displacement-method.svg)
 
-*Water displacement illustration. Source: Wikimedia Commons.*
+*Original WASSCE Tutor teaching diagram.*
 
 1. Pour water into a measuring cylinder.
 2. Read the initial level at eye height, using the bottom of the meniscus for water.
