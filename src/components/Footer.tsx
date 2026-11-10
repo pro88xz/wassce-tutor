@@ -73,12 +73,12 @@ export function Footer() {
   if (!isPublicPage(pathname)) return null
 
   return (
-    <footer className="-mx-4 -mb-12 mt-16 overflow-hidden border-t border-white/10 bg-brand-deep text-white sm:-mx-6">
-      <div className="mx-auto w-full max-w-7xl px-5 py-12 sm:px-8 sm:py-16 lg:px-10">
+    <footer className="site-bleed -mb-12 mt-16 overflow-hidden bg-[var(--site-ink)] text-white">
+      <div className="site-container py-12 sm:py-16">
         <div className="grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-[minmax(260px,1.7fr)_repeat(4,minmax(0,1fr))] lg:gap-x-12">
           {/* Brand and contact: a full-width row on tablets, the first column on desktop */}
           <div className="space-y-4 sm:col-span-2 lg:col-span-1">
-            <BrandMark />
+            <BrandMark tone="light" />
             <p className="max-w-xs text-sm leading-relaxed text-white/70">
               WASSCE lessons and practice questions, organised around the syllabus. Built in Freetown for Sierra Leone students.
             </p>

@@ -1,6 +1,7 @@
 import { Link } from '@tanstack/react-router'
 import { CircleCheck } from 'lucide-react'
 import { useAuth } from '@/lib/auth'
+import { FROM_PRICE } from '@/lib/plans'
 
 // Call to action on public pages. Logged-out visitors (and the prerendered
 // HTML) get the free-account sign-up; signed-in students get a link into the app.
@@ -31,7 +32,7 @@ export function StartCta({
             Start free
           </Link>
           <ul className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-brand-strong">
-            {['Free account, no card needed', 'Everything from 10 NLe', 'No automatic renewal'].map((t) => (
+            {['Free account, no card needed', `Everything from ${FROM_PRICE} NLe`, 'No automatic renewal'].map((t) => (
               <li key={t} className="inline-flex items-center gap-1">
                 <CircleCheck className="h-4 w-4" aria-hidden /> {t}
               </li>

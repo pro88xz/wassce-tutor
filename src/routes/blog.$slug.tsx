@@ -3,6 +3,8 @@ import { ArrowLeft, ArrowRight, Clock3, ExternalLink } from 'lucide-react'
 import { BLOG_POSTS, UNIVERSITY_GUIDES } from '@/content/editorial'
 import type { BlogPost } from '@/content/editorial'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
+import { EditorialPhoto } from '@/components/public/EditorialPhoto'
+import { editorialImage } from '@/lib/editorial-images'
 import { absoluteUrl, breadcrumbJsonLd, indexablePageTags, privatePageTags, SITE } from '@/lib/seo'
 
 export const Route = createFileRoute('/blog/$slug')({
@@ -17,7 +19,7 @@ export const Route = createFileRoute('/blog/$slug')({
     path: `/blog/${loaderData.slug}`,
     title: loaderData.seoTitle,
     description: loaderData.description,
-    image: loaderData.image,
+    image: editorialImage(loaderData.image).og,
     type: 'article',
     publishedAt: loaderData.publishedAt,
     modifiedAt: loaderData.updatedAt,
@@ -27,7 +29,7 @@ export const Route = createFileRoute('/blog/$slug')({
         '@type': 'BlogPosting',
         headline: loaderData.title,
         description: loaderData.description,
-        image: [loaderData.image],
+        image: [editorialImage(loaderData.image).og],
         datePublished: loaderData.publishedAt,
         dateModified: loaderData.updatedAt,
         author: { '@type': 'Organization', name: 'WASSCE Tutor Editorial Desk', url: absoluteUrl('/about') },
@@ -84,7 +86,7 @@ function BlogArticlePage() {
       <header className="space-y-5">
         <a href="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-primary"><ArrowLeft className="h-4 w-4"/> All articles</a>
         <div className="max-w-4xl"><p className="text-xs font-bold uppercase tracking-[.16em] text-primary">{post.category}</p><h1 className="mt-3 text-3xl font-bold leading-tight tracking-tight sm:text-5xl">{post.title}</h1><p className="mt-4 max-w-3xl text-lg leading-relaxed text-muted-foreground">{post.description}</p><div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-muted-foreground"><span>WASSCE Tutor Editorial Desk</span><span>Published {new Date(post.publishedAt+'T00:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})}</span><span className="inline-flex items-center gap-1"><Clock3 className="h-3.5 w-3.5"/>{post.readMinutes} min read</span></div></div>
-        <figure className="overflow-hidden rounded-3xl border bg-muted"><img src={post.image} alt={post.imageAlt} className="max-h-[520px] w-full object-cover"/><figcaption className="bg-card px-4 py-3 text-xs text-muted-foreground">Image: {post.imageCredit}. Source: <a href={post.imageSourceUrl ?? SITE.origin} target="_blank" rel="noopener noreferrer" className="underline">official institution website</a>. Rights remain with the original publisher.</figcaption></figure>
+        <figure className="overflow-hidden rounded-3xl border bg-muted"><EditorialPhoto image={post.image} alt={post.imageAlt} label={post.category} sizes="(min-width: 1024px) 1024px, 100vw" priority className="aspect-[16/10] sm:aspect-[16/8]"/><figcaption className="bg-card px-4 py-3 text-xs text-muted-foreground">Image: {post.imageCredit}. Source: <a href={post.imageSourceUrl ?? SITE.origin} target="_blank" rel="noopener noreferrer" className="underline">official institution website</a>. Rights remain with the original publisher.</figcaption></figure>
       </header>
       <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_250px]">
         <article className="min-w-0">

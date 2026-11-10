@@ -35,9 +35,9 @@ export function TopicSearch() {
   }, [index, query])
 
   return (
-    <div className="relative mx-auto w-full max-w-xl text-left">
+    <div className="relative w-full text-left">
       <label htmlFor="topic-search" className="sr-only">Search WASSCE subjects and topics</label>
-      <div className="flex items-center gap-3 rounded-2xl bg-white px-4 shadow-sm ring-1 ring-white/40">
+      <div className="flex items-center gap-3 rounded-xl bg-white px-4 shadow-[0_18px_40px_-22px_rgba(0,0,0,.7)] ring-1 ring-white/30 transition-shadow focus-within:ring-2 focus-within:ring-violet-300">
         <Search className="h-5 w-5 shrink-0 text-slate-400" aria-hidden />
         <input
           id="topic-search"
@@ -79,14 +79,15 @@ export function TopicSearch() {
         </div>
       )}
 
-      <div className="mt-3 flex flex-wrap justify-center gap-2" aria-label="Popular searches">
+      <div className="mt-3 flex flex-wrap items-center gap-2" aria-label="Popular searches">
+        <span className="text-xs font-medium text-white/55">Popular:</span>
         {SUGGESTIONS.map((s) => (
           <button
             key={s}
             type="button"
             onMouseDown={(e) => e.preventDefault()}
             onClick={() => { load(); setQuery(s); setOpen(true); document.getElementById('topic-search')?.focus() }}
-            className="rounded-full bg-white/15 px-3 py-1 text-xs font-medium text-white ring-1 ring-white/25 backdrop-blur transition hover:bg-white/25"
+            className="rounded-full bg-white/10 px-3 py-1.5 text-xs font-semibold text-white/90 ring-1 ring-white/20 transition hover:bg-white/20"
           >
             {s}
           </button>

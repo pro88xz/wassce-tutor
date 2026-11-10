@@ -3,6 +3,8 @@ import { ArrowLeft, ArrowRight, ExternalLink, GraduationCap, MapPin } from 'luci
 import { UNIVERSITY_GUIDES } from '@/content/editorial'
 import type { UniversityGuide } from '@/content/editorial'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
+import { EditorialPhoto } from '@/components/public/EditorialPhoto'
+import { editorialImage } from '@/lib/editorial-images'
 import { absoluteUrl, breadcrumbJsonLd, indexablePageTags, privatePageTags, SITE } from '@/lib/seo'
 
 export const Route = createFileRoute('/universities/$slug')({
@@ -17,7 +19,7 @@ export const Route = createFileRoute('/universities/$slug')({
     path: `/universities/${loaderData.slug}`,
     title: loaderData.seoTitle,
     description: `${loaderData.shortName}: programmes, WASSCE entry requirements and official admissions links for Sierra Leone applicants.`,
-    image: loaderData.image,
+    image: editorialImage(loaderData.image).og,
     jsonLd: [
       {
         '@context': 'https://schema.org',
@@ -26,7 +28,7 @@ export const Route = createFileRoute('/universities/$slug')({
         name: loaderData.name,
         alternateName: loaderData.shortName,
         url: loaderData.officialUrl,
-        image: loaderData.image,
+        image: editorialImage(loaderData.image).og,
         description: loaderData.summary,
         location: { '@type': 'Place', name: loaderData.location },
         areaServed: { '@type': 'Country', name: 'Sierra Leone' },
@@ -54,7 +56,7 @@ function UniversityProfilePage() {
       <header className="space-y-5">
         <a href="/universities" className="inline-flex items-center gap-2 text-sm font-semibold text-primary"><ArrowLeft className="h-4 w-4"/> All institutions</a>
         <div className="max-w-4xl"><p className="text-xs font-bold uppercase tracking-[.16em] text-primary">Sierra Leone higher-education guide · {guide.shortName}</p><h1 className="mt-3 text-3xl font-bold leading-tight tracking-tight sm:text-5xl">{guide.name}</h1><p className="mt-4 max-w-3xl text-lg leading-relaxed text-muted-foreground">{guide.summary}</p><p className="mt-4 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="h-4 w-4"/>{guide.location}</p></div>
-        <figure className="overflow-hidden rounded-3xl border bg-muted"><img src={guide.image} alt={guide.imageAlt} className="max-h-[480px] w-full object-cover" fetchPriority="high"/><figcaption className="bg-card px-4 py-3 text-xs text-muted-foreground">Image: {guide.imageCredit}. <a href={guide.imageSourceUrl ?? guide.officialUrl} target="_blank" rel="noopener noreferrer" className="underline">Image source</a>. Image rights remain with the original publisher.</figcaption></figure>
+        <figure className="overflow-hidden rounded-3xl border bg-muted"><EditorialPhoto image={guide.image} alt={guide.imageAlt} label={guide.shortName} sizes="(min-width: 1024px) 1024px, 100vw" priority className="aspect-[16/10] sm:aspect-[16/8]"/><figcaption className="bg-card px-4 py-3 text-xs text-muted-foreground">Image: {guide.imageCredit}. <a href={guide.imageSourceUrl ?? guide.officialUrl} target="_blank" rel="noopener noreferrer" className="underline">Image source</a>. Image rights remain with the original publisher.</figcaption></figure>
       </header>
       <section className="rounded-2xl border bg-card p-5 sm:p-7"><div className="flex flex-wrap items-center gap-2"><span className="rounded-full bg-violet-100 px-3 py-1.5 text-xs font-bold text-violet-900">{guide.status}</span><span className="text-xs text-muted-foreground">Source review: {new Date(guide.updatedAt + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</span></div><p className="mt-4 text-sm leading-relaxed text-muted-foreground">{guide.statusNote}</p></section>
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_280px]">

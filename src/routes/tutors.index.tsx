@@ -38,7 +38,7 @@ export const Route = createFileRoute('/tutors/')({
 function TutorsPage() {
   const subjects = Route.useLoaderData()
   return (
-    <article className="tutor-booking-page mx-auto max-w-6xl space-y-16 pb-12 sm:space-y-20">
+    <article className="tutor-booking-page site-page space-y-16 pb-12 sm:space-y-20">
       <div className="space-y-6">
         <Breadcrumbs trail={TRAIL} />
         <header className="tutor-booking-hero">
