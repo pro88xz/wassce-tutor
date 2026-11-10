@@ -45,6 +45,18 @@ async function createNoncePair(): Promise<{ nonce: string; hashedNonce: string }
   return { nonce, hashedNonce }
 }
 
+function googleProfileName(idToken: string): string {
+  try {
+    const payload = idToken.split('.')[1]
+    if (!payload) return ''
+    const base64 = payload.replace(/-/g, '+').replace(/_/g, '/')
+    const claims = JSON.parse(atob(base64)) as { name?: unknown }
+    return typeof claims.name === 'string' ? claims.name : ''
+  } catch {
+    return ''
+  }
+}
+
 function loadGoogleIdentityScript(): Promise<void> {
   if (window.google?.accounts?.id) return Promise.resolve()
   return new Promise((resolve, reject) => {
@@ -95,7 +107,7 @@ export function GoogleSignInButton({ intent, referralCode, mode, onAuthenticated
                 nonce,
               })
               if (error) throw error
-              const { error: metadataError } = await supabase.auth.updateUser({ data: { account_intent: intent, ...(referralCode ? { affiliate_code: referralCode } : {}) } })
+              const { error: metadataError } = await supabase.auth.updateUser({ data: { full_name: googleProfileName(response.credential), account_intent: intent, ...(referralCode ? { affiliate_code: referralCode } : {}) } })
               if (metadataError) throw metadataError
               onAuthenticated()
             } catch (error) {
