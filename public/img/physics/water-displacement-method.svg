@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">Water displacement method</title>
+<desc id="desc">Two graduated cylinders show an initial water level and a higher final water level after an irregular solid is submerged. The difference is the solid's volume.</desc>
+<defs>
+ <linearGradient id="water" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#8bd3f7" stop-opacity=".72"/><stop offset="1" stop-color="#2389c7" stop-opacity=".9"/></linearGradient>
+ <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10" fill="#334155"/></marker>
+</defs>
+<rect width="1200" height="560" rx="28" fill="#f7fafc"/>
+<g font-family="Arial, sans-serif" fill="#172b4d">
+ <text x="300" y="66" text-anchor="middle" font-size="30" font-weight="700">1. Initial volume</text>
+ <text x="900" y="66" text-anchor="middle" font-size="30" font-weight="700">2. After submerging solid</text>
+ <text x="300" y="108" text-anchor="middle" font-size="22" fill="#52657d">Read the bottom of the meniscus</text>
+ <text x="900" y="108" text-anchor="middle" font-size="22" fill="#52657d">Read again at eye level</text>
+</g>
+<g stroke="#334155" stroke-width="8" fill="none" stroke-linejoin="round">
+ <path d="M205 145 L205 430 Q205 455 230 455 L370 455 Q395 455 395 430 L395 145"/>
+ <path d="M805 145 L805 430 Q805 455 830 455 L970 455 Q995 455 995 430 L995 145"/>
+</g>
+<g fill="url(#water)">
+ <path d="M211 310 Q300 299 389 310 L389 430 Q389 449 370 449 L230 449 Q211 449 211 430Z"/>
+ <path d="M811 230 Q900 219 989 230 L989 430 Q989 449 970 449 L830 449 Q811 449 811 430Z"/>
+</g>
+<g stroke="#52657d" stroke-width="3">
+ <path d="M215 190h22 M215 225h22 M215 260h22 M215 295h22 M215 330h22 M215 365h22 M215 400h22"/>
+ <path d="M815 190h22 M815 225h22 M815 260h22 M815 295h22 M815 330h22 M815 365h22 M815 400h22"/>
+</g>
+<g fill="#172b4d" font-family="Arial,sans-serif" font-size="20">
+ <text x="180" y="315" text-anchor="end">V₁</text><text x="780" y="235" text-anchor="end">V₂</text>
+ <text x="300" y="495" text-anchor="middle" font-size="24" font-weight="700">Initial reading: V₁</text>
+ <text x="900" y="495" text-anchor="middle" font-size="24" font-weight="700">Final reading: V₂</text>
+</g>
+<path d="M445 275 H735" stroke="#334155" stroke-width="5" marker-end="url(#arrow)"/>
+<text x="590" y="245" text-anchor="middle" fill="#172b4d" font-family="Arial,sans-serif" font-size="22">Submerge object</text>
+<path d="M900 255 C875 265 870 285 884 300 C895 313 915 311 925 298 C937 281 925 265 900 255Z" fill="#e8a45b" stroke="#9b5a20" stroke-width="4"/>
+<path d="M900 315 L900 340" stroke="#9b5a20" stroke-width="3" stroke-dasharray="5 5"/>
+<text x="600" y="540" text-anchor="middle" fill="#172b4d" font-family="Arial,sans-serif" font-size="24" font-weight="700">Volume of solid = V₂ − V₁</text>
+</svg>
