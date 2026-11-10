@@ -1014,6 +1014,19 @@
       "est_minutes": 35,
       "sort_order": 1,
       "auto_sync": true
+    },
+    {
+      "file": "physics-motion-in-a-straight-line.md",
+      "subject": "Physics",
+      "topic": "motion-in-a-straight-line",
+      "title": "Motion in a straight line: distance, displacement, speed, velocity and graphs",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 35,
+      "sort_order": 1,
+      "auto_sync": true
     }
   ]
 }
