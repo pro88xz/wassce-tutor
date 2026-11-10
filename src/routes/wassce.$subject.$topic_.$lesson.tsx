@@ -104,8 +104,7 @@ function PublicLessonPage() {
               </p>
               <p className="text-xs text-muted-foreground">
                 Updated {formatDate(lesson.updated_at)}
-                {lesson.est_minutes ? ` · ${lesson.est_minutes} min read` : ''} · Prepared against the WASSCE syllabus
-                assistance.
+                {lesson.est_minutes ? ` · ${lesson.est_minutes} min read` : ''} · Prepared against the WASSCE syllabus.
               </p>
             </>
           )}
@@ -118,7 +117,7 @@ function PublicLessonPage() {
 
       <StartCta
         heading={`Keep going with ${topic.name.toLowerCase()}`}
-        body={`This is one of ${topic.lessons.length} lessons in ${topic.name}. Start free with the first lesson of every topic, then unlock them all, plus exam-style practice and the AI tutor, from 10 NLe.`}
+        body={`This is one of ${topic.lessons.length} lessons in ${topic.name}. Start free with the first lesson of every topic, then unlock them all, plus exam-style practice and guided learning tools, from 10 NLe.`}
         appHref={`/lesson/${lesson.id}`}
       />
 
