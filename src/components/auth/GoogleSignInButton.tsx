@@ -95,7 +95,7 @@ export function GoogleSignInButton({ intent, referralCode, mode, onAuthenticated
                 nonce,
               })
               if (error) throw error
-              const { error: metadataError } = await supabase.auth.updateUser({ data: { account_intent: intent, ...(referralCode ? { affiliate_code: referralCode } : {}) } })
+              const { error: metadataError } = await supabase.auth.updateUser({ data: { full_name: result.result.profile.name ?? '', account_intent: intent, ...(referralCode ? { affiliate_code: referralCode } : {}) } })
               if (metadataError) throw metadataError
               onAuthenticated()
             } catch (error) {
