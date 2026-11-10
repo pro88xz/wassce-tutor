@@ -46,8 +46,8 @@ function SubjectsPage() {
       {error ? (
         <EmptyState title="We couldn't load your subjects" body="Check your connection and try again. Your progress is saved." />
       ) : subjectsLoading || isLoading ? (
-        <div className="grid gap-3 sm:grid-cols-2" aria-busy="true">
-          {[0, 1, 2, 3].map((i) => <Skeleton key={i} className="h-28" />)}
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3" aria-busy="true">
+          {[0, 1, 2, 3, 4, 5].map((i) => <Skeleton key={i} className="h-56" />)}
         </div>
       ) : !summary || summary.subjects.length === 0 ? (
         <EmptyState
@@ -59,7 +59,7 @@ function SubjectsPage() {
       ) : (
         <>
           {available.length > 0 && (
-            <div className="grid gap-3 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
               {available.map((s) => <SubjectCard key={s.subject.id} s={s} />)}
             </div>
           )}

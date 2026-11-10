@@ -2,6 +2,12 @@
 // It answers four questions in order: what to do next, what's planned today,
 // how am I doing, and where to get help. Every number comes from recorded
 // activity; a learner with no activity gets a first-step screen, never 0% charts.
+//
+// Layout. The screen sits on the workspace grid (.app-page), like Subjects,
+// Practice and Progress. From 1280 px it has two columns: the things to do
+// (continue, today's plan, subjects, bookings) on the left, and the things to
+// glance at (progress, recent activity, shortcuts) in a rail on the right.
+// Below that it is one column in the reading order set by the order-* classes.
 import { Link } from '@tanstack/react-router'
 import { useMemo, type ReactNode } from 'react'
 import {
@@ -40,6 +46,7 @@ import { EmptyState, MetricCard, Pill, ScorePill, SectionHeader, Skeleton } from
 import { Button } from '@/components/ui/button'
 import { UpdateBanner } from '@/components/UpdateBanner'
 import { SubjectCover } from '@/components/ds/SubjectCover'
+import { StudentTutorBookings } from '@/components/dashboard/StudentTutorBookings'
 
 type Located = { lesson: CurriculumLesson; topic: CurriculumTopic; subject: SubjectRef }
 
@@ -75,7 +82,7 @@ export function Dashboard({ user, profile }: { user: User; profile: Profile | nu
 
   if (error) {
     return (
-      <div className="mx-auto max-w-3xl pt-4">
+      <div className="app-page pt-4">
         <EmptyState title="We couldn't load your dashboard" body="Check your connection and try again. Your progress is saved." />
       </div>
     )
@@ -83,10 +90,18 @@ export function Dashboard({ user, profile }: { user: User; profile: Profile | nu
 
   if (subjectsLoading || isLoading || !summary || !completed) {
     return (
-      <div className="mx-auto max-w-3xl space-y-5" aria-busy="true" aria-label="Loading your dashboard">
-        <Skeleton className="h-16 w-2/3" />
-        <Skeleton className="h-48" />
-        <Skeleton className="h-32" />
+      <div className="app-page space-y-6" aria-busy="true" aria-label="Loading your dashboard">
+        <Skeleton className="h-16 w-2/3 max-w-md" />
+        <div className={COLUMNS}>
+          <div className="space-y-7">
+            <Skeleton className="h-52" />
+            <Skeleton className="h-44" />
+          </div>
+          <div className="space-y-7">
+            <Skeleton className="h-48" />
+            <Skeleton className="h-40" />
+          </div>
+        </div>
       </div>
     )
   }
@@ -94,7 +109,7 @@ export function Dashboard({ user, profile }: { user: User; profile: Profile | nu
   const started = summary.done > 0 || summary.papersTaken > 0
 
   return (
-    <div className="mx-auto max-w-3xl space-y-7">
+    <div className="app-page space-y-6">
       <UpdateBanner />
 
       <header className="space-y-1">
@@ -108,53 +123,73 @@ export function Dashboard({ user, profile }: { user: User; profile: Profile | nu
 
       <AccessNotice profile={profile} />
 
-      {summary.subjects.length === 0 ? (
-        <EmptyState
-          icon={<BookOpen className="h-6 w-6" />}
-          title="Choose your subjects"
-          body="Pick your faculty and the WASSCE subjects you're sitting. Your first lesson appears here straight after."
-          action={<Button asChild><Link to="/onboarding">Choose subjects</Link></Button>}
-        />
-      ) : !summary.next ? (
-        summary.total > 0 && summary.done === summary.total ? (
-          <EmptyState
-            icon={<CircleCheck className="h-6 w-6" />}
-            title="You've finished every lesson in your subjects"
-            body="Keep your knowledge sharp with practice sets, and revisit any topic from Subjects."
-            action={<Button asChild><Link to="/practice">Go to practice</Link></Button>}
-          />
-        ) : (
-          <EmptyState
-            icon={<BookOpen className="h-6 w-6" />}
-            title="Lessons for your subjects are being written"
-            body="New lessons are added every week. You can browse what's ready in Subjects."
-            action={<Button asChild><Link to="/subjects">Browse subjects</Link></Button>}
-          />
-        )
-      ) : (
-        <ContinueCard summary={summary} started={started} />
-      )}
+      <div className={COLUMNS}>
+        <div className={COLUMN}>
+          <div className="order-1 xl:order-none">
+            {summary.subjects.length === 0 ? (
+              <EmptyState
+                icon={<BookOpen className="h-6 w-6" />}
+                title="Choose your subjects"
+                body="Pick your faculty and the WASSCE subjects you're sitting. Your first lesson appears here straight after."
+                action={<Button asChild><Link to="/onboarding">Choose subjects</Link></Button>}
+              />
+            ) : !summary.next ? (
+              summary.total > 0 && summary.done === summary.total ? (
+                <EmptyState
+                  icon={<CircleCheck className="h-6 w-6" />}
+                  title="You've finished every lesson in your subjects"
+                  body="Keep your knowledge sharp with practice sets, and revisit any topic from Subjects."
+                  action={<Button asChild><Link to="/practice">Go to practice</Link></Button>}
+                />
+              ) : (
+                <EmptyState
+                  icon={<BookOpen className="h-6 w-6" />}
+                  title="Lessons for your subjects are being written"
+                  body="New lessons are added every week. You can browse what's ready in Subjects."
+                  action={<Button asChild><Link to="/subjects">Browse subjects</Link></Button>}
+                />
+              )
+            ) : (
+              <ContinueCard summary={summary} started={started} />
+            )}
+          </div>
 
-      {!started ? (
-        summary.next && (
-          <p className="rounded-2xl border border-dashed bg-card/60 p-4 text-sm text-muted-foreground">
-            After your first lesson, your progress and study recommendations will appear here.
-          </p>
-        )
-      ) : (
-        <>
-          <TodayPlan summary={summary} completed={completed} where={where} />
-          <Snapshot summary={summary} />
-          <Recommended summary={summary} papers={papers.data ?? []} />
-          <YourSubjects subjects={summary.subjects} />
-          <RecentActivity summary={summary} completed={completed} where={where} />
-        </>
-      )}
+          {!started && summary.next && (
+            <p className="order-2 rounded-2xl border border-dashed bg-card/60 p-4 text-sm text-muted-foreground xl:order-none">
+              After your first lesson, your progress and study recommendations will appear here.
+            </p>
+          )}
+          {started && (
+            <>
+              <div className={`order-2 ${SLOT}`}><TodayPlan summary={summary} completed={completed} where={where} /></div>
+              <div className={`order-4 ${SLOT}`}><Recommended summary={summary} papers={papers.data ?? []} /></div>
+              <div className={`order-5 ${SLOT}`}><YourSubjects subjects={summary.subjects} /></div>
+            </>
+          )}
+          <div className={`order-8 ${SLOT}`}><StudentTutorBookings userId={user.id} /></div>
+        </div>
 
-      <QuickAccess topic={summary.next?.topic.name ?? null} />
+        <div className={COLUMN}>
+          {started && (
+            <>
+              <div className={`order-3 ${SLOT}`}><Snapshot summary={summary} /></div>
+              <div className={`order-6 ${SLOT}`}><RecentActivity summary={summary} completed={completed} where={where} /></div>
+            </>
+          )}
+          <div className={`order-7 ${SLOT}`}><QuickAccess topic={summary.next?.topic.name ?? null} /></div>
+        </div>
+      </div>
     </div>
   )
 }
+
+// One column in reading order on phones and tablets (the two column wrappers
+// dissolve and each section takes its order-* position); main column plus a
+// 22rem rail from 1280 px.
+const COLUMNS = 'flex flex-col gap-7 xl:grid xl:grid-cols-[minmax(0,1fr)_22rem] xl:items-start xl:gap-8'
+const COLUMN = 'contents xl:flex xl:min-w-0 xl:flex-col xl:gap-7'
+/** A section's place in the layout. A section that renders nothing leaves no gap. */
+const SLOT = 'empty:hidden xl:order-none'
 
 /* ── Plan notice: a free account's way to the rest, or a plan about to end ── */
 
@@ -205,13 +240,13 @@ function ContinueCard({ summary, started }: { summary: ProgressSummary; started:
     <section aria-labelledby="continue-title" className="rounded-2xl border bg-card p-5 shadow-sm sm:p-6">
       <p className="text-sm font-semibold text-primary">{started ? 'Continue learning' : 'Start your first lesson'}</p>
       <div className="mt-3 flex items-start gap-3">
-        <SubjectCover slug={next.subject.slug} shape="thumb" className="h-16 w-24 shrink-0" />
+        <SubjectCover slug={next.subject.slug} shape="thumb" className="h-16 w-24 shrink-0 sm:h-20 sm:w-32" />
         <div className="min-w-0">
           <h2 id="continue-title" className="text-xl font-bold leading-snug text-balance">
             {started ? next.lesson.title : next.topic.name}
           </h2>
           <p className="mt-0.5 text-sm text-muted-foreground">
-            {started ? `${next.subject.name} · ${next.topic.name}` : next.subject.name}
+            {started && next.lesson.title !== next.topic.name ? `${next.subject.name} · ${next.topic.name}` : next.subject.name}
           </p>
         </div>
       </div>
@@ -330,7 +365,7 @@ function Snapshot({ summary }: { summary: ProgressSummary }) {
   return (
     <section className="space-y-3" aria-labelledby="snapshot-title">
       <SectionHeader title={<span id="snapshot-title">Your progress</span>} action={{ to: '/progress', label: 'Details' }} />
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 xl:grid-cols-2">
         <MetricCard label="Lessons completed" value={summary.done} context={`of ${summary.total} in your subjects`} />
         <MetricCard label="Topics finished" value={summary.topicsDone} context="every lesson in the topic done" />
         <MetricCard
@@ -499,7 +534,7 @@ function RecentActivity({ summary, completed, where }: { summary: ProgressSummar
             <span className="block truncate text-xs text-muted-foreground">Practice · {names.get(a.paper!.subject_id) ?? ''} · {shortDate(a.created_at)}</span>
           </span>
           <ScorePill score={a.score} total={a.total} />
-          <span className="hidden text-sm font-semibold text-primary sm:inline">Try again</span>
+          <span className="hidden text-sm font-semibold text-primary sm:inline xl:hidden">Try again</span>
         </Link>
       ),
     }))
@@ -522,7 +557,7 @@ function QuickAccess({ topic }: { topic: string | null }) {
   return (
     <section className="space-y-3" aria-labelledby="quick-title">
       <h2 id="quick-title" className="text-lg font-bold tracking-tight">Quick access</h2>
-      <div className="grid gap-3 sm:grid-cols-2">
+      <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
         <Link to="/tutor" search={topic ? { ask: `Explain ${topic} simply, with one worked example.`, about: topic } : {}} className={tile}>
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#2864c5] text-white"><MessageCircleQuestion className="h-5 w-5" aria-hidden /></span>
           <span className="min-w-0">

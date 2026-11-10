@@ -71,13 +71,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const signOut = async () => {
     clearUnlocked()
-    let failed = false
-    try {
-      const { error } = await supabase.auth.signOut()
-      failed = !!error
-    } catch {
-      failed = true
-    }
+    const failed = await supabase.auth.signOut().then(
+      ({ error }) => !!error,
+      () => true,
+    )
     if (failed) {
       // The server could not be reached, so Supabase kept the session. Signing
       // out must still work on this device (phones here are often shared and

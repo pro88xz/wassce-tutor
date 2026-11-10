@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Link } from '@tanstack/react-router'
-import { CalendarClock, CheckCircle2, Star } from 'lucide-react'
+import { CheckCircle2, Star } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
 
 type StudentBooking = {
@@ -70,16 +70,22 @@ export function StudentTutorBookings({ userId }: { userId: string }) {
     } finally { setBusyId(null) }
   }
 
+  // Most students never book a tutor, and "Book a tutor" is already a shortcut
+  // on the dashboard, so this section appears only once there is a booking.
+  if (loading || bookings.length === 0) return null
+
   return (
-    <section className="mx-auto w-full max-w-7xl space-y-4 pb-8">
-      <div className="flex flex-wrap items-end justify-between gap-3">
-        <div><p className="text-xs font-bold uppercase tracking-wider text-primary">One-to-one learning</p><h2 className="mt-1 text-2xl font-bold">My tutor bookings</h2><p className="mt-1 text-sm text-muted-foreground">Manage your session requests and review completed lessons.</p></div>
-        <Link to="/tutors" className="inline-flex min-h-10 items-center rounded-xl border px-4 text-sm font-semibold hover:bg-muted">Find a tutor</Link>
+    <section className="space-y-3" aria-labelledby="bookings-title">
+      <div className="flex items-end justify-between gap-3">
+        <div>
+          <h2 id="bookings-title" className="text-lg font-bold tracking-tight">Your tutor bookings</h2>
+          <p className="text-sm text-muted-foreground">Confirm, cancel or review your one-to-one sessions.</p>
+        </div>
+        <Link to="/tutors" className="inline-flex min-h-11 shrink-0 items-center text-sm font-semibold text-primary hover:underline">Find a tutor</Link>
       </div>
       {notice && <p role="status" className="rounded-xl bg-emerald-50 p-3 text-sm text-emerald-800">{notice}</p>}
       {error && <p role="alert" className="rounded-xl bg-red-50 p-3 text-sm text-red-700">{error}</p>}
-      {loading ? <div className="h-28 animate-pulse rounded-2xl bg-muted"/> : bookings.length === 0 ? <div className="rounded-2xl border bg-card p-6"><CalendarClock className="h-6 w-6 text-primary"/><h3 className="mt-3 font-bold">No tutor bookings yet</h3><p className="mt-1 text-sm text-muted-foreground">Find an approved tutor and request a session when you need one-to-one support.</p><Link to="/tutors" className="mt-4 inline-flex min-h-10 items-center rounded-xl bg-primary px-4 text-sm font-bold text-white">Browse tutors</Link></div> :
-        <div className="space-y-3">{bookings.map((booking) => {
+      <div className="space-y-3">{bookings.map((booking) => {
           const canConfirm = booking.status === 'accepted'
           const canCancel = ['requested','accepted','confirmed'].includes(booking.status)
           const canReview = booking.status === 'completed' && !reviewed.has(booking.id)
@@ -97,7 +103,7 @@ export function StudentTutorBookings({ userId }: { userId: string }) {
             </div>
             {reviewId===booking.id && <div className="mt-4 space-y-3 rounded-xl bg-muted/40 p-4"><label className="block text-sm font-semibold">Your rating<select value={rating} onChange={(e)=>setRating(Number(e.target.value))} className="mt-1 h-10 w-full rounded-lg border bg-background px-3"><option value={5}>5 — Excellent</option><option value={4}>4 — Very good</option><option value={3}>3 — Good</option><option value={2}>2 — Fair</option><option value={1}>1 — Poor</option></select></label><label className="block text-sm font-semibold">Your feedback<textarea value={review} onChange={(e)=>setReview(e.target.value)} minLength={10} maxLength={1000} rows={3} className="mt-1 w-full rounded-lg border bg-background p-3 text-sm font-normal" placeholder="Describe your learning experience."/></label><button disabled={busyId===booking.id||review.trim().length<10} onClick={()=>void submitReview(booking.id)} className="min-h-10 rounded-lg bg-primary px-4 text-sm font-bold text-white disabled:opacity-50">Submit verified review</button></div>}
           </article>
-        })}</div>}
+        })}</div>
     </section>
   )
 }

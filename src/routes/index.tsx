@@ -5,7 +5,6 @@ import { Capacitor } from '@capacitor/core'
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { Dashboard } from '@/components/dashboard/Dashboard'
-import { StudentTutorBookings } from '@/components/dashboard/StudentTutorBookings'
 import { Landing } from '@/components/landing/Landing'
 import { fetchLandingData } from '@/lib/public-content'
 
@@ -71,7 +70,7 @@ function Index() {
     )
   }
 
-  return <><Dashboard user={user} profile={profile} /><StudentTutorBookings userId={user.id} /></>
+  return <Dashboard user={user} profile={profile} />
 }
 
 function Spinner() {

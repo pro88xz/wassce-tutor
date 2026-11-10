@@ -79,35 +79,45 @@ function AccountPage() {
   return (
     <div className="app-page mx-auto w-full max-w-5xl space-y-5">
       <PageHeader title="Account" subtitle="Your profile, plan and settings." />
-      {isLoading || !profile ? (
-        <div className="space-y-5" aria-busy="true">
-          <Skeleton className="h-28" />
-          <Skeleton className="h-40" />
-          <Skeleton className="h-48" />
-        </div>
-      ) : (
-        <>
-          <ProfileSection profile={profile} email={user.email ?? ''} />
-          <LearningSection userId={user.id} />
-          <SubscriptionSection profile={profile} userId={user.id} />
-          <SecuritySection email={user.email ?? ''} />
-          <PreferencesSection />
-          <HelpSection />
-          {profile.is_admin && (
-            <SectionCard title="Admin tools" description="Only admins see this. Manage topics, lessons, question sets and payments.">
-              <Rows>
-                <Row to="/admin" icon={<Shield className="h-5 w-5" aria-hidden />} title="Open admin" />
-              </Rows>
-            </SectionCard>
-          )}
-        </>
-      )}
+      {/* One column on phones and tablets; from 1280 px, who you are and what
+          you study on the left, settings and help on the right. */}
+      <div className="grid gap-5 xl:grid-cols-2 xl:items-start">
+        {isLoading || !profile ? (
+          <>
+            <div className="space-y-5" aria-busy="true">
+              <Skeleton className="h-28" />
+              <Skeleton className="h-40" />
+            </div>
+            <Skeleton className="h-48" />
+          </>
+        ) : (
+          <>
+            <div className="min-w-0 space-y-5">
+              <ProfileSection profile={profile} email={user.email ?? ''} />
+              <LearningSection userId={user.id} />
+              <SubscriptionSection profile={profile} userId={user.id} />
+            </div>
+            <div className="min-w-0 space-y-5">
+              <SecuritySection email={user.email ?? ''} />
+              <PreferencesSection />
+              <HelpSection />
+              {profile.is_admin && (
+                <SectionCard title="Admin tools" description="Only admins see this. Manage topics, lessons, question sets and payments.">
+                  <Rows>
+                    <Row to="/admin" icon={<Shield className="h-5 w-5" aria-hidden />} title="Open admin" />
+                  </Rows>
+                </SectionCard>
+              )}
+            </div>
+          </>
+        )}
+      </div>
       <button
         type="button"
         onClick={handleSignOut}
         disabled={signingOut}
         aria-busy={signingOut}
-        className="flex min-h-12 py-2 w-full items-center justify-center gap-2 rounded-2xl border bg-card font-semibold text-danger transition-colors hover:bg-danger/5 text-center disabled:opacity-60"
+        className="flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl border bg-card py-2 text-center font-semibold text-danger transition-colors hover:bg-danger/5 disabled:opacity-60 xl:ml-auto xl:w-auto xl:px-8"
       >
         <LogOut className="h-4 w-4" aria-hidden /> {signingOut ? 'Signing out…' : 'Sign out'}
       </button>
