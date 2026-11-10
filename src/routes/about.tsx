@@ -37,7 +37,7 @@ function About() {
     },
     { title: 'Lessons with diagrams and properly rendered maths', body: 'Step-by-step explanations written for clarity, not for filler.' },
     { title: 'Exam-style practice, marked instantly', body: 'Original WASSCE-style questions written to the syllabus, with the full working and why each wrong option is wrong.' },
-    { title: 'An AI tutor, any time', body: 'Ask any WASSCE question in plain English and get a clear, step-by-step answer, labelled as AI.' },
+    { title: 'Step-by-step study support', body: 'Ask WASSCE questions in plain English and get clear explanations to support your revision.' },
     { title: 'Built for any Android phone', body: 'Made for patchy data and shared phones.' },
     { title: 'Pay with Orange Money or AfriMoney', body: '10 NLe for a term or 25 NLe for a full academic year. No card needed.' },
   ]
@@ -86,7 +86,7 @@ function About() {
           </p>
           <p>
             We built WASSCE Tutor to change that. A free account opens every subject, and one small payment unlocks every practice set,
-            every lesson, and an AI tutor that explains things in a way that fits how Sierra Leonean students learn.
+            and clear study support that fits how Sierra Leonean students learn.
           </p>
         </div>
       </section>
