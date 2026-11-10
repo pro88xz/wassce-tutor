@@ -109,7 +109,7 @@ function TopicPage() {
 
       <StartCta
         heading={`Learn ${topic.name.toLowerCase()} step by step`}
-        body={`Unlock all ${topic.lessons.length} lessons on ${topic.name.toLowerCase()}, plus every other WASSCE ${subject.name} topic, exam-style practice marked instantly and an AI tutor.`}
+        body={`Unlock all ${topic.lessons.length} lessons on ${topic.name.toLowerCase()}, plus every other WASSCE ${subject.name} topic, exam-style practice marked instantly and guided learning tools.`}
         appHref={`/topic/${topic.id}`}
       />
 
