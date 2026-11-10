@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Work done from a force-distance graph</title>
+<desc id="d">Force against distance for a spring: a straight line from the origin. The work done is the area of the triangle under the line.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="640" height="360" rx="20" fill="#f8fafc"/>
+<line x1="90.0" y1="300.0" x2="600.0" y2="300.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="90.0" y1="300.0" x2="90.0" y2="40.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="600.0" y="326.0" font-size="20" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">extension / m</text>
+<text x="100.0" y="36.0" font-size="20" fill="#475569" text-anchor="start" dominant-baseline="auto" font-weight="normal">force F / N</text>
+<text x="78.0" y="316.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">0</text>
+<polygon points="90.0,300.0 420.0,90.0 420.0,300.0" fill="#dcfce7" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+<line x1="90.0" y1="300.0" x2="420.0" y2="90.0" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+<line x1="420.0" y1="90.0" x2="420.0" y2="300.0" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="90.0" y1="90.0" x2="420.0" y2="90.0" stroke="#e2e8f0" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+<text x="78.0" y="90.0" font-size="22" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold" font-style="italic">F</text>
+<text x="420.0" y="324.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold" font-style="italic">x</text>
+<text x="320.0" y="250.0" font-size="22" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">work done = area</text>
+<text x="320.0" y="278.0" font-size="22" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">= ½ F x</text>
+</svg>

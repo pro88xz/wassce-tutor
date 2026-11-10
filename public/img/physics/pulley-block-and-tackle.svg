@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 480" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Block and tackle pulley system</title>
+<desc id="d">Two pulley blocks: the upper one hangs from a beam and the lower one carries the load. Four strands of rope support the lower block, so the velocity ratio is 4. The effort pulls down on the free end of the rope.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="560" height="480" rx="20" fill="#f8fafc"/>
+<rect x="40.0" y="26.0" width="400.0" height="18.0" rx="0" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<line x1="250.0" y1="44.0" x2="250.0" y2="70.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<rect x="180.0" y="70.0" width="140.0" height="64.0" rx="12" fill="#cbd5e1" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="180.0" y="270.0" width="140.0" height="64.0" rx="12" fill="#cbd5e1" stroke="#0f172a" stroke-width="2.5"/>
+<circle cx="215.0" cy="102.0" r="24.0" fill="#f8fafc" stroke="#0f172a" stroke-width="2.5"/>
+<circle cx="215.0" cy="302.0" r="24.0" fill="#f8fafc" stroke="#0f172a" stroke-width="2.5"/>
+<circle cx="285.0" cy="102.0" r="24.0" fill="#f8fafc" stroke="#0f172a" stroke-width="2.5"/>
+<circle cx="285.0" cy="302.0" r="24.0" fill="#f8fafc" stroke="#0f172a" stroke-width="2.5"/>
+<line x1="191.0" y1="102.0" x2="191.0" y2="302.0" stroke="#2563eb" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="239.0" y1="102.0" x2="239.0" y2="302.0" stroke="#2563eb" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="261.0" y1="102.0" x2="261.0" y2="302.0" stroke="#2563eb" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="309.0" y1="102.0" x2="309.0" y2="302.0" stroke="#2563eb" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M 309 102 A 24 24 0 0 0 285 78 L 360 78" stroke="#2563eb" stroke-width="3.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 360 78 Q 384 78 384 102 L 384 400" stroke="#2563eb" stroke-width="3.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="384.0" y1="380.0" x2="384.0" y2="446.0" stroke="#2563eb" stroke-width="4.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<text x="398.0" y="430.0" font-size="21" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">effort E</text>
+<line x1="250.0" y1="334.0" x2="250.0" y2="362.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<rect x="210.0" y="362.0" width="80.0" height="58.0" rx="4" fill="#fef3c7" stroke="#0f172a" stroke-width="3"/>
+<text x="250.0" y="391.0" font-size="21" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">load</text>
+<text x="100.0" y="190.0" font-size="21" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4 strands</text>
+<text x="100.0" y="216.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">support the</text>
+<text x="100.0" y="240.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">lower block</text>
+<text x="100.0" y="290.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">VR = 4</text>
+</svg>

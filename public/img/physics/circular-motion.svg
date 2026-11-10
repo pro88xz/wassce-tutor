@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Uniform circular motion</title>
+<desc id="d">An object moves round a circle of radius r at constant speed. Its velocity is along the tangent; the centripetal force and acceleration point towards the centre.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="640" height="420" rx="20" fill="#f8fafc"/>
+<circle cx="230.0" cy="245.0" r="135.0" fill="none" stroke="#475569" stroke-width="3" stroke-dasharray="10 8"/>
+<circle cx="230.0" cy="245.0" r="6.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="214.0" y="267.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<line x1="230.0" y1="245.0" x2="333.4" y2="158.2" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="274.0" y="206.6" width="23.4" height="34.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="285.7" y="223.6" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold" font-style="italic">r</text>
+<circle cx="333.4" cy="158.2" r="16.0" fill="#dbeafe" stroke="#0f172a" stroke-width="3"/>
+<line x1="333.4" y1="158.2" x2="265.9" y2="77.8" stroke="#2563eb" stroke-width="5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<text x="257.9" y="59.8" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">v (along the tangent)</text>
+<line x1="322.7" y1="167.2" x2="256.8" y2="222.5" stroke="#dc2626" stroke-width="5" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="240.0" y="405.0" font-size="19" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">force and acceleration point to the centre</text>
+<text x="530.0" y="150.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">a = v²/r</text>
+<text x="530.0" y="190.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">F = mv²/r</text>
+<text x="530.0" y="230.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">v = ωr</text>
+<text x="530.0" y="270.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">T = 2πr/v</text>
+</svg>

@@ -120,6 +120,19 @@ SETS = [
     },
 ]
 
+SETS += [
+    {
+        "module": ROOT / "content/questions/physics/set1_p1.py",
+        "subject_slug": "physics",
+        "name": "physics_set1_p1",
+        "label": "Physics: set 1 (foundations and mechanics)",
+        "review": ROOT / "content/questions/physics/set1_p1.review.md",
+        "sort_from": 100,
+        # Numerical answers are recomputed by code; conceptual ones were checked by an editor.
+        "checked": "mixed",
+    },
+]
+
 OUT = ROOT / "src/content/question-sets"
 SITE = "https://wasscetutor.com"  # diagrams are served from the website so old app builds can show them too
 LABELS = "ABCD"
@@ -274,6 +287,12 @@ def build_review(cfg: dict, questions: list[Q], ordered: dict, scope_note: str, 
                 "read each item before it is used in class.",
             ]
             if cfg.get("checked") == "editor"
+            else [
+                "Every numerical answer below has been recomputed by code, and every wrong option is what its stated",
+                "mistake produces. Conceptual (non-numerical) answers cannot be recomputed: an editor checked that exactly",
+                "one option is correct. A teacher should still read each item before it is used in class.",
+            ]
+            if cfg.get("checked") == "mixed"
             else [
                 "Every answer below has been recomputed by code. Teachers can still check that each question is on the",
                 "syllabus for Sierra Leone candidates, worded the way WAEC words questions, and clearly explained.",

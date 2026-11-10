@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 330" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Three velocity-time graphs</title>
+<desc id="d">Left: horizontal line, constant velocity. Middle: rising straight line, uniform acceleration. Right: falling straight line, uniform deceleration.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="660" height="330" rx="20" fill="#f8fafc"/>
+<line x1="56.0" y1="250.0" x2="221.0" y2="250.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="56.0" y1="250.0" x2="56.0" y2="80.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="56.0" y1="157.0" x2="206.0" y2="157.0" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+<text x="138.5" y="285.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Constant velocity</text>
+<text x="221.0" y="268.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">t</text>
+<text x="44.0" y="88.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">v</text>
+<line x1="271.0" y1="250.0" x2="436.0" y2="250.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="271.0" y1="250.0" x2="271.0" y2="80.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="271.0" y1="226.8" x2="421.0" y2="118.2" stroke="#15803d" stroke-width="5" stroke-linecap="round"/>
+<text x="353.5" y="285.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Uniform acceleration</text>
+<text x="436.0" y="268.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">t</text>
+<text x="259.0" y="88.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">v</text>
+<line x1="486.0" y1="250.0" x2="651.0" y2="250.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="486.0" y1="250.0" x2="486.0" y2="80.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="486.0" y1="118.2" x2="636.0" y2="242.2" stroke="#dc2626" stroke-width="5" stroke-linecap="round"/>
+<text x="568.5" y="285.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Uniform deceleration</text>
+<text x="651.0" y="268.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">t</text>
+<text x="474.0" y="88.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">v</text>
+<text x="330.0" y="30.0" font-size="21" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Gradient of a v–t graph = acceleration</text>
+</svg>

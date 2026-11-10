@@ -155,5 +155,29 @@
    "132aaa85-60b9-5431-9ccc-279af4f0ae66"
   ],
   "questions": 18
+ },
+ {
+  "name": "physics_set1_p1",
+  "label": "Physics: set 1 (foundations and mechanics)",
+  "subject_slug": "physics",
+  "version": "049274338ab1",
+  "papers": [
+   "004b2ea9-1630-5f23-af93-e7e1481f79bb",
+   "cd9adf03-8d39-5a1c-bc54-6eb20a688bb4",
+   "b694e269-206a-5423-88bb-9fcd11a03513",
+   "8c9e413f-3144-5721-85fd-f72e088d4fcc",
+   "92bfb9a7-a849-51d1-bfc4-83223272d21a",
+   "28040cf9-f4aa-5f8d-a156-526aedf16e4a",
+   "aec63a43-c730-5456-9d4d-b7622f767f40",
+   "51add935-da28-5e61-992a-c7a8eb54a4e0",
+   "297f241f-e018-52ff-b7af-8397c82ca6e7",
+   "7b863b92-3f9f-5ea6-a803-d0e9085380d8",
+   "ce518a43-12bc-5b8c-b58e-50bd916c3954",
+   "037a522c-3171-5f96-91b5-9ad6703b6345",
+   "137f6274-04f6-502d-b810-d5bb8a54334d",
+   "f27e54a2-eb97-5a7f-9e1b-4c3dff62f75d",
+   "3266bf8f-3919-55c0-a7b5-ed5ff01d0369"
+  ],
+  "questions": 120
  }
 ]

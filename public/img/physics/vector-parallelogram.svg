@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Parallelogram law of vector addition</title>
+<desc id="d">Two vectors P and Q act from the same point O. The diagonal of the parallelogram they form, R, is their resultant.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="640" height="380" rx="20" fill="#f8fafc"/>
+<polygon points="110.0,300.0 410.0,300.0 510.7,138.9 210.7,138.9" fill="#dbeafe" stroke="none" stroke-width="0" stroke-linejoin="round" opacity="0.55"/>
+<line x1="410.0" y1="300.0" x2="510.7" y2="138.9" stroke="#475569" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="8 7"/>
+<line x1="210.7" y1="138.9" x2="510.7" y2="138.9" stroke="#475569" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="8 7"/>
+<line x1="110.0" y1="300.0" x2="410.0" y2="300.0" stroke="#2563eb" stroke-width="5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="110.0" y1="300.0" x2="210.7" y2="138.9" stroke="#15803d" stroke-width="5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<line x1="110.0" y1="300.0" x2="510.7" y2="138.9" stroke="#dc2626" stroke-width="5" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<circle cx="110.0" cy="300.0" r="6.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="88.0" y="306.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<text x="260.0" y="330.0" font-size="26" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold" font-style="italic">P</text>
+<text x="134.3" y="219.4" font-size="26" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold" font-style="italic">Q</text>
+<rect x="231.3" y="177.4" width="170.2" height="32.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="316.3" y="193.4" font-size="22" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">R = resultant</text>
+<path d="M 166.0 300.0 A 56 56 0 0 0 139.7 252.5" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="184.0" y="274.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">θ</text>
+<text x="320.0" y="40.0" font-size="22" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Diagonal of the parallelogram = resultant</text>
+</svg>

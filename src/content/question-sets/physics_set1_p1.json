@@ -1,0 +1,4718 @@
+{
+ "name": "physics_set1_p1",
+ "label": "Physics: set 1 (foundations and mechanics)",
+ "subject_slug": "physics",
+ "papers": [
+  {
+   "id": "004b2ea9-1630-5f23-af93-e7e1481f79bb",
+   "topic": "Physical Quantities and Units",
+   "title": "Physical Quantities and Units: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on physical quantities and units, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 100,
+   "questions": [
+    {
+     "id": "7d0498cf-9c79-5cb2-860e-54be66852d26",
+     "key": "phy-units-01",
+     "stem": "Which of the following is a fundamental quantity?",
+     "image_url": null,
+     "explanation": "The seven SI base quantities are length, mass, time, electric current, temperature, amount of substance and luminous intensity. Electric current (the ampere) is one of them.\n\n**Why the other options are wrong**\n\n- Force: Force is derived: $F = ma$ combines mass, length and time.\n- Weight: Weight is a force ($W = mg$), so it is a derived quantity.\n- Pressure: Pressure is force per unit area: a derived quantity.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e4520418-9ab2-5643-828d-71c40cae0e74",
+       "label": "A",
+       "content": "Force",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "53694757-8468-5001-af8e-1f76f325661b",
+       "label": "B",
+       "content": "Weight",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "983575d3-f54f-5617-b585-fc9b497cebab",
+       "label": "C",
+       "content": "Pressure",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "929271e5-b1ac-51f0-8a2b-941da735996e",
+       "label": "D",
+       "content": "Electric current",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f0a8b646-17e1-55c2-90f8-97e20a1c0420",
+     "key": "phy-units-02",
+     "stem": "The SI unit of power expressed in base units is",
+     "image_url": null,
+     "explanation": "Power = work ÷ time. J = kg m² s⁻², so W = J s⁻¹ = kg m² s⁻³.\n\n**Why the other options are wrong**\n\n- kg m² s⁻²: That is the joule, the unit of energy. Power is energy per second, so divide by one more second.\n- kg m s⁻²: That is the newton, the unit of force.\n- kg m⁻¹ s⁻²: That is the pascal, the unit of pressure.",
+     "position": 2,
+     "options": [
+      {
+       "id": "bff2ef35-56b0-5b8d-979c-d7a87102da10",
+       "label": "A",
+       "content": "kg m² s⁻²",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "10067ff9-7fcc-5464-ae01-5d3e14ca2c75",
+       "label": "B",
+       "content": "kg m s⁻²",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "35f0a83b-b16a-507e-b1f4-2973461ef293",
+       "label": "C",
+       "content": "kg m⁻¹ s⁻²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b39ec4e8-1e59-562b-8692-bc9cce9be630",
+       "label": "D",
+       "content": "kg m² s⁻³",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8a44b1c5-796e-5e82-a74e-f6ba4812c998",
+     "key": "phy-units-03",
+     "stem": "Which pair consists of a fundamental quantity and its correct SI unit?",
+     "image_url": null,
+     "explanation": "Thermodynamic temperature is a base quantity and its SI unit is the kelvin (K).\n\n**Why the other options are wrong**\n\n- temperature, degree Celsius: The SI unit of temperature is the kelvin, not the degree Celsius.\n- mass, gram: The SI unit of mass is the kilogram.\n- length, centimetre: The SI unit of length is the metre.",
+     "position": 3,
+     "options": [
+      {
+       "id": "90c9c9cb-5383-59d9-992e-02679a99aeee",
+       "label": "A",
+       "content": "temperature, degree Celsius",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6cd784b8-0341-5aab-a9b2-870e888d5857",
+       "label": "B",
+       "content": "mass, gram",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9adb5fba-0184-53e5-8a27-2b23a49209db",
+       "label": "C",
+       "content": "length, centimetre",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "66732394-9187-5e9d-87cc-60e895b0df82",
+       "label": "D",
+       "content": "temperature, kelvin",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4d978d6c-98e6-5325-b659-a501aadb3fb9",
+     "key": "phy-units-04",
+     "stem": "Express a speed of 90 km h⁻¹ in m s⁻¹.",
+     "image_url": null,
+     "explanation": "$90\\ \\text{km h}^{-1} = \\dfrac{90 \\times 1000\\ \\text{m}}{3600\\ \\text{s}} = 25\\ \\text{m s}^{-1}$ (divide by 3.6).\n\n**Why the other options are wrong**\n\n- 2.5 m s⁻¹: You divided by 36 instead of 3.6.\n- 324 m s⁻¹: You multiplied by 3.6 instead of dividing.\n- 90000 m s⁻¹: You converted kilometres to metres but forgot to change hours to seconds.",
+     "position": 4,
+     "options": [
+      {
+       "id": "bc593c75-4111-5a6a-82b0-61605b5b064d",
+       "label": "A",
+       "content": "2.5 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b2e8b6c8-aaa7-50be-bd30-af02cc8e30e0",
+       "label": "B",
+       "content": "25 m s⁻¹",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8c1d5592-f4f7-5dca-9276-7ccde164d346",
+       "label": "C",
+       "content": "324 m s⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d3846d6c-a6b3-5a7d-bd5a-1765c9ead95a",
+       "label": "D",
+       "content": "90000 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "74f1086f-7c0d-5669-92d8-55c4ef347ce4",
+     "key": "phy-units-05",
+     "stem": "A cube of side 2 cm has a mass of 64 g. What is its density in kg m⁻³?",
+     "image_url": null,
+     "explanation": "Volume $= 2^3 = 8\\ \\text{cm}^3$, so density $= \\dfrac{64}{8} = 8\\ \\text{g cm}^{-3} = 8000\\ \\text{kg m}^{-3}$.\n\n**Why the other options are wrong**\n\n- 8 kg m⁻³: That is the density in g cm⁻³. Multiply by 1000 to get kg m⁻³.\n- 800 kg m⁻³: Check the conversion: 1 g cm⁻³ = 1000 kg m⁻³, not 100.\n- 16000 kg m⁻³: You took the volume as 2 × 2 = 4 cm³. The volume of a cube is side³ = 8 cm³.",
+     "position": 5,
+     "options": [
+      {
+       "id": "1514d914-6fe7-56fe-8083-8eb5a576617f",
+       "label": "A",
+       "content": "8 kg m⁻³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fe25ef8f-a837-5ad2-bd3f-607393cbabd0",
+       "label": "B",
+       "content": "800 kg m⁻³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b0aa4f63-077c-5459-b07a-e5316a2ef23e",
+       "label": "C",
+       "content": "8000 kg m⁻³",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b757016c-0db5-5868-be98-ca09157a8074",
+       "label": "D",
+       "content": "16000 kg m⁻³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9171b1c1-c8a9-56b7-bcde-2a7c35bd4678",
+     "key": "phy-units-06",
+     "stem": "The dimensions of pressure are",
+     "image_url": null,
+     "explanation": "$[p] = \\dfrac{[F]}{[A]} = \\dfrac{\\text{M L T}^{-2}}{\\text{L}^2} = \\text{M L}^{-1}\\text{T}^{-2}$.\n\n**Why the other options are wrong**\n\n- M L T⁻²: Those are the dimensions of force. Pressure is force divided by area (L²).\n- M L² T⁻²: Those are the dimensions of energy.\n- M L⁻³: Those are the dimensions of density.",
+     "position": 6,
+     "options": [
+      {
+       "id": "363449d5-b850-5c24-bccd-34a132cd61e9",
+       "label": "A",
+       "content": "M L⁻¹ T⁻²",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e6955ee4-3626-5a38-a7ec-f5915f72315f",
+       "label": "B",
+       "content": "M L T⁻²",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "60cccb0b-a4f1-59b8-90fc-abfc1a7007f0",
+       "label": "C",
+       "content": "M L² T⁻²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b0ed7c0a-d822-541f-a465-3cac3bbb54b0",
+       "label": "D",
+       "content": "M L⁻³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "efcd37c9-2aac-5b40-8700-14befa27912e",
+     "key": "phy-units-07",
+     "stem": "Which quantity has the dimensions M L T⁻¹?",
+     "image_url": null,
+     "explanation": "Momentum $= mv$, so $[p] = \\text{M} \\times \\text{L T}^{-1} = \\text{M L T}^{-1}$.\n\n**Why the other options are wrong**\n\n- force: Force has dimensions M L T⁻² (mass × acceleration).\n- power: Power has dimensions M L² T⁻³.\n- acceleration: Acceleration has dimensions L T⁻²; it has no mass dimension.",
+     "position": 7,
+     "options": [
+      {
+       "id": "f5e0a9ed-ae0e-582d-8d42-825f536734eb",
+       "label": "A",
+       "content": "force",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a66293ce-8410-5cf8-9d31-322766ae6a97",
+       "label": "B",
+       "content": "power",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "95e9e2f9-dae7-529f-8d3e-0dd660f262fb",
+       "label": "C",
+       "content": "acceleration",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a2eb7ddb-7423-5a56-9b3c-097009b7e94e",
+       "label": "D",
+       "content": "momentum",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "86af3e18-4242-59f1-8559-6457134d7e05",
+     "key": "phy-units-08",
+     "stem": "1 microfarad is equal to",
+     "image_url": null,
+     "explanation": "The prefix micro (μ) means 10⁻⁶, so 1 μF = 10⁻⁶ F.\n\n**Why the other options are wrong**\n\n- 10⁻³ F: That is a millifarad. Micro means 10⁻⁶.\n- 10⁻⁹ F: That is a nanofarad.\n- 10⁻¹² F: That is a picofarad.",
+     "position": 8,
+     "options": [
+      {
+       "id": "5eae8e6c-2190-5c80-aa7b-e3bdecba0458",
+       "label": "A",
+       "content": "10⁻⁶ F",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3cfdddfe-d3f3-5a70-a115-4a041469adf4",
+       "label": "B",
+       "content": "10⁻³ F",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c40699f6-8aa9-5b8d-8583-02e80817d278",
+       "label": "C",
+       "content": "10⁻⁹ F",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "630f2828-74ab-5340-a0a3-2dd360c6a676",
+       "label": "D",
+       "content": "10⁻¹² F",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cd9adf03-8d39-5a1c-bc54-6eb20a688bb4",
+   "topic": "Scalars and Vectors",
+   "title": "Scalars and Vectors: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on scalars and vectors, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 101,
+   "questions": [
+    {
+     "id": "36a92040-b2a5-5755-88d9-ca72ec479d84",
+     "key": "phy-vec-01",
+     "stem": "Which of the following is a vector quantity?",
+     "image_url": null,
+     "explanation": "Displacement has both magnitude and direction, so it is a vector.\n\n**Why the other options are wrong**\n\n- speed: Speed has magnitude only. Velocity is its vector partner.\n- energy: Energy has no direction: it is a scalar.\n- density: Density is mass per unit volume, a scalar.",
+     "position": 1,
+     "options": [
+      {
+       "id": "ed2d31be-d93a-5f3e-87b1-dbae03574910",
+       "label": "A",
+       "content": "speed",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dff5b872-c168-5f59-a7a6-eef3ecf2183b",
+       "label": "B",
+       "content": "energy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2699a8a7-cfe4-55ac-a43e-0b29e2e2980a",
+       "label": "C",
+       "content": "density",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "143b92dc-3960-5c76-8385-5c8bbad57d20",
+       "label": "D",
+       "content": "displacement",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "05d25324-fcb2-5f4e-9d7c-e3cfb319b766",
+     "key": "phy-vec-02",
+     "stem": "Two forces of 6 N and 8 N act on a body at right angles to each other. What is the magnitude of their resultant?",
+     "image_url": null,
+     "explanation": "For perpendicular forces, $R = \\sqrt{6^2 + 8^2} = \\sqrt{100} = 10\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 14 N: You added the forces as if they acted in the same direction.\n- 2 N: You subtracted them as if they acted in opposite directions.\n- 48 N: You multiplied the forces.",
+     "position": 2,
+     "options": [
+      {
+       "id": "95d31acf-f550-5774-84eb-987a1583b3e3",
+       "label": "A",
+       "content": "2 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f59b5ee3-08bc-5da0-8946-a924f7be171f",
+       "label": "B",
+       "content": "10 N",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0ce4468a-baa8-5cde-982b-11292f8c0114",
+       "label": "C",
+       "content": "14 N",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "84e99280-36ba-56b2-a075-f5a39dded31f",
+       "label": "D",
+       "content": "48 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "558c0944-2299-5ffb-bbd2-5b63207388ba",
+     "key": "phy-vec-03",
+     "stem": "A force of 40 N acts at 60° to the horizontal. What is its horizontal component?",
+     "image_url": null,
+     "explanation": "Horizontal component $= F\\cos\\theta = 40\\cos 60° = 40 \\times 0.5 = 20\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 34.6 N: You used sine. The horizontal component is next to the 60° angle, so use cosine.\n- 40 N: The whole force is not horizontal; only its component $F\\cos\\theta$ is.\n- 80 N: You divided by cos 60° instead of multiplying.",
+     "position": 3,
+     "options": [
+      {
+       "id": "f6d8a96c-160b-5d19-b93a-af3caf48ad76",
+       "label": "A",
+       "content": "20 N",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "09edf4d4-719f-5c6c-9770-c6815200bbb6",
+       "label": "B",
+       "content": "34.6 N",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e1d4bc15-1544-5207-adfa-1e78ee0eda38",
+       "label": "C",
+       "content": "40 N",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "273b48bb-a8b7-57eb-985d-5f9735f5900b",
+       "label": "D",
+       "content": "80 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b072a397-be9e-5a08-9a93-56757dd98196",
+     "key": "phy-vec-04",
+     "stem": "A man walks 12 m due east and then 5 m due north. What is his displacement from the starting point?",
+     "image_url": null,
+     "explanation": "Displacement $= \\sqrt{12^2 + 5^2} = \\sqrt{169} = 13\\ \\text{m}$ (north of east).\n\n**Why the other options are wrong**\n\n- 17 m: 17 m is the distance walked, not the displacement.\n- 7 m: You subtracted the two walks.\n- 10.9 m: Pythagoras adds the squares: $\\sqrt{12^2 + 5^2}$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2bf22ab6-d93e-5c4f-91e5-2cc5718ced8c",
+       "label": "A",
+       "content": "7 m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "644a2020-4b3e-57ba-af28-dde3747f82e4",
+       "label": "B",
+       "content": "10.9 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "585f1703-97c2-5bdc-a45b-500bea734f89",
+       "label": "C",
+       "content": "13 m",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "53ff9f57-f615-57da-8c41-850f45ccfeea",
+       "label": "D",
+       "content": "17 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b366eb64-72bb-5a7d-8a9a-e35b4b3f7cda",
+     "key": "phy-vec-05",
+     "stem": "Two forces of 5 N and 3 N act at a point. Which of the following CANNOT be the magnitude of their resultant?",
+     "image_url": null,
+     "explanation": "The resultant of 5 N and 3 N lies between $5 - 3 = 2$ N and $5 + 3 = 8$ N. 9 N is outside this range.\n\n**Why the other options are wrong**\n\n- 2 N: 2 N is possible: the forces act in opposite directions.\n- 8 N: 8 N is possible: the forces act in the same direction.\n- 5 N: 5 N is possible at a suitable angle between the forces.",
+     "position": 5,
+     "options": [
+      {
+       "id": "c5bd4fcf-9987-5f13-aca2-fc98f9b63cdc",
+       "label": "A",
+       "content": "2 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cdeee34c-cce2-531f-b281-cc7c52a3decc",
+       "label": "B",
+       "content": "5 N",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3365f646-dc24-5775-b213-e3d5b62b6a9b",
+       "label": "C",
+       "content": "8 N",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c4bd15e0-0f7e-5994-87f9-94a385a12317",
+       "label": "D",
+       "content": "9 N",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dee0173c-345e-5caa-b69f-fe5d87f3f0c3",
+     "key": "phy-vec-06",
+     "stem": "The equilibrant of a set of forces is",
+     "image_url": null,
+     "explanation": "The equilibrant is the single force that brings the system into equilibrium: equal and opposite to the resultant.\n\n**Why the other options are wrong**\n\n- equal in magnitude and direction to their resultant: That describes the resultant itself, not the force that balances it.\n- the sum of the magnitudes of the forces: Vectors are not added by adding magnitudes.\n- always perpendicular to their resultant: A perpendicular force cannot cancel the resultant.",
+     "position": 6,
+     "options": [
+      {
+       "id": "bcc46090-131f-52d4-be01-99267876a460",
+       "label": "A",
+       "content": "equal in magnitude but opposite in direction to their resultant",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5a454794-c4fc-5bf2-9f78-149404717ba6",
+       "label": "B",
+       "content": "equal in magnitude and direction to their resultant",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b043f57e-cb73-5381-a4a5-dd9502971c09",
+       "label": "C",
+       "content": "the sum of the magnitudes of the forces",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cadaadee-2e63-58db-8589-adf6571d3004",
+       "label": "D",
+       "content": "always perpendicular to their resultant",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8c2e1d75-574f-5e06-b16a-daeb13e5b113",
+     "key": "phy-vec-07",
+     "stem": "A canoe heads straight across a river at 4 m s⁻¹ while the current flows at 3 m s⁻¹. What is the canoe's resultant speed?",
+     "image_url": null,
+     "explanation": "$v = \\sqrt{4^2 + 3^2} = 5\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 7 m s⁻¹: The velocities are perpendicular, so they do not simply add.\n- 1 m s⁻¹: You subtracted the speeds.\n- 2.65 m s⁻¹: That is $\\sqrt{4^2 - 3^2}$, the speed straight across when steering upstream to land opposite.",
+     "position": 7,
+     "options": [
+      {
+       "id": "2e05892f-bb5b-59d7-80fb-15eff431445a",
+       "label": "A",
+       "content": "1 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "866a8e36-43dd-579b-a6a4-9b4011ef1798",
+       "label": "B",
+       "content": "2.65 m s⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "57cf4dc7-5676-5c51-ab3b-9ef19672f4a3",
+       "label": "C",
+       "content": "5 m s⁻¹",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "5dcc2995-b143-56cc-b3f3-1d1161be771e",
+       "label": "D",
+       "content": "7 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2cda322c-407d-502f-902e-ff702c834215",
+     "key": "phy-vec-08",
+     "stem": "Two cars move towards each other along a straight road at 20 m s⁻¹ and 15 m s⁻¹. What is the velocity of one relative to the other?",
+     "image_url": null,
+     "explanation": "Moving in opposite directions, each sees the other approach at $20 + 15 = 35$ m s⁻¹.\n\n**Why the other options are wrong**\n\n- 5 m s⁻¹: That would be their relative speed if they moved in the same direction.\n- 25 m s⁻¹: That is $\\sqrt{20^2 + 15^2}$; the velocities are along the same line, not perpendicular.\n- 17.5 m s⁻¹: You averaged the speeds.",
+     "position": 8,
+     "options": [
+      {
+       "id": "1b572009-d92f-571b-878e-059038a9309e",
+       "label": "A",
+       "content": "5 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "33ca8070-d477-5e6c-a649-43deb066c4c7",
+       "label": "B",
+       "content": "17.5 m s⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e1daf1eb-9889-5156-ba3e-7cfefcf45a10",
+       "label": "C",
+       "content": "25 m s⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9bd0d6e7-8c3f-5bbd-8593-88e2a969520a",
+       "label": "D",
+       "content": "35 m s⁻¹",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b694e269-206a-5423-88bb-9fcd11a03513",
+   "topic": "Measurement and Errors",
+   "title": "Measurement and Errors: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on measurement and errors, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 102,
+   "questions": [
+    {
+     "id": "6554b8d9-e9c5-5b32-ab6f-0823ec3a07ef",
+     "key": "phy-meas-01",
+     "stem": "Which instrument is most suitable for measuring the diameter of a thin wire?",
+     "image_url": null,
+     "explanation": "A micrometer screw gauge reads to 0.01 mm, suitable for a wire's diameter.\n\n**Why the other options are wrong**\n\n- metre rule: A metre rule reads only to about 1 mm, far too coarse for a wire.\n- vernier calipers: Vernier calipers read to 0.01 cm (0.1 mm); a wire needs the finer 0.01 mm of a micrometer.\n- measuring tape: A tape is for long lengths.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8cb3ae68-b27b-57a2-9185-7cc65913e1d4",
+       "label": "A",
+       "content": "metre rule",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e8610809-c933-5049-93d4-142c29f58732",
+       "label": "B",
+       "content": "vernier calipers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "76e32b2b-6881-51fc-9b2f-564d124c50f9",
+       "label": "C",
+       "content": "measuring tape",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "af2d0f09-9e2e-517e-9feb-5f128d020904",
+       "label": "D",
+       "content": "micrometer screw gauge",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aa2e28da-9d37-585e-897a-44afa02b346e",
+     "key": "phy-meas-02",
+     "stem": "On a vernier caliper the main scale reading is 2.3 cm and the 7th vernier division coincides with a main scale division. If the vernier constant is 0.01 cm, what is the reading?",
+     "image_url": null,
+     "explanation": "Reading $= 2.3 + 7 \\times 0.01 = 2.37\\ \\text{cm}$.\n\n**Why the other options are wrong**\n\n- 2.307 cm: Each vernier division is worth 0.01 cm, so 7 divisions add 0.07 cm, not 0.007 cm.\n- 3.0 cm: You added 0.7 cm. Seven vernier divisions add 7 × 0.01 = 0.07 cm.\n- 2.23 cm: The vernier reading is added to, not subtracted from, the main scale reading.",
+     "position": 2,
+     "options": [
+      {
+       "id": "4e6196c8-5dcd-58db-95b5-1ebf54aae9f3",
+       "label": "A",
+       "content": "2.23 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "164b2cce-cf45-5d41-9fc0-bd8cf06097d6",
+       "label": "B",
+       "content": "2.307 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "560ba3eb-51bf-5593-9ac3-ebec0788aa3b",
+       "label": "C",
+       "content": "2.37 cm",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2aa1b57b-7682-57e8-b078-2e8fef10cd52",
+       "label": "D",
+       "content": "3.0 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ce881faa-d698-5de4-bf19-8882217323be",
+     "key": "phy-meas-03",
+     "stem": "A micrometer has a sleeve reading of 5.5 mm and the 28th thimble division is on the datum line. Each thimble division is 0.01 mm. What is the reading?",
+     "image_url": null,
+     "explanation": "Reading $= 5.5 + 28 \\times 0.01 = 5.78\\ \\text{mm}$.\n\n**Why the other options are wrong**\n\n- 5.528 mm: Each thimble division is 0.01 mm, so 28 divisions are 0.28 mm, not 0.028 mm.\n- 8.3 mm: 28 thimble divisions are 0.28 mm, not 2.8 mm.\n- 5.22 mm: The thimble reading is added to the sleeve reading.",
+     "position": 3,
+     "options": [
+      {
+       "id": "4c707c87-70fb-5a1d-936e-83f3c6f353d0",
+       "label": "A",
+       "content": "5.22 mm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0efe337c-fe5f-527f-ac0d-f2bdbbd7ffed",
+       "label": "B",
+       "content": "5.528 mm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "87667b4b-e581-571c-aa1b-414bc1e515a5",
+       "label": "C",
+       "content": "5.78 mm",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "696987d4-0309-514a-8a85-0d71599ebc52",
+       "label": "D",
+       "content": "8.3 mm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "daa7ab80-8b7f-574e-a104-723832e34b86",
+     "key": "phy-meas-04",
+     "stem": "Parallax error in reading a scale is avoided by",
+     "image_url": null,
+     "explanation": "Parallax arises when the eye views the scale at an angle; looking perpendicularly at the mark removes it.\n\n**Why the other options are wrong**\n\n- taking readings very quickly: Speed does not change the angle of viewing.\n- using a longer scale: A longer scale does not remove the effect of viewing at an angle.\n- repeating the reading many times from the same position: Repeating from the same wrong angle repeats the same systematic error.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f56ee1a1-e801-52e0-bd1b-3bee72cc9862",
+       "label": "A",
+       "content": "placing the eye directly in line with the mark being read",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0a00a98f-0569-5be8-b418-c2a36ed70539",
+       "label": "B",
+       "content": "taking readings very quickly",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d8864160-1bfb-586d-8649-9b66e753405c",
+       "label": "C",
+       "content": "using a longer scale",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "128227bb-f36f-52aa-aa1f-2f6989772fb9",
+       "label": "D",
+       "content": "repeating the reading many times from the same position",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2ee73685-6e0f-53d5-8065-922d337513c4",
+     "key": "phy-meas-05",
+     "stem": "A zero error on a measuring instrument produces",
+     "image_url": null,
+     "explanation": "A zero error affects every reading in the same way, so it is systematic. Correct it by subtracting (or adding) the zero reading.\n\n**Why the other options are wrong**\n\n- a random error: Random errors vary unpredictably; a zero error shifts every reading by the same amount.\n- a parallax error: Parallax comes from the angle of viewing, not from the instrument's zero.\n- no error if readings are repeated: Repeating readings cannot remove an error that is the same each time.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e2755e88-278d-51c2-a2f3-ac114379d811",
+       "label": "A",
+       "content": "a random error",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cd114cff-e46d-534d-9c41-6a91ee629ebd",
+       "label": "B",
+       "content": "a parallax error",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9baac670-a387-5072-b165-9d2e18d351b1",
+       "label": "C",
+       "content": "no error if readings are repeated",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "21552ecd-41a5-5f98-b44a-c565116aa78a",
+       "label": "D",
+       "content": "a systematic error",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2498cd90-982e-5a35-94fc-7d9198962560",
+     "key": "phy-meas-06",
+     "stem": "The length of a rod is recorded as (50.0 ± 0.5) cm. What is the percentage error?",
+     "image_url": null,
+     "explanation": "Percentage error $= \\dfrac{0.5}{50.0} \\times 100\\% = 1\\%$.\n\n**Why the other options are wrong**\n\n- 0.5 %: 0.5 is the absolute error in cm, not the percentage.\n- 10 %: Percentage error is 0.5 ÷ 50 × 100, not 0.5 ÷ 5 × 100.\n- 0.01 %: You found the fractional error but did not multiply by 100.",
+     "position": 6,
+     "options": [
+      {
+       "id": "6c51e137-2424-533d-9ff1-3d45e4ddd3ad",
+       "label": "A",
+       "content": "0.01 %",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b12d97cc-5e50-5155-8741-2311dfcbf3d3",
+       "label": "B",
+       "content": "0.5 %",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "02f0b842-62f8-5b5f-8e2a-b7e5c6392857",
+       "label": "C",
+       "content": "1 %",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "467ed2fb-9224-5050-879f-d499dab053b0",
+       "label": "D",
+       "content": "10 %",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4d4ecbab-0125-51c6-ad72-35589cbe8ba1",
+     "key": "phy-meas-07",
+     "stem": "How many significant figures are there in 0.004050?",
+     "image_url": null,
+     "explanation": "Ignore the leading zeros. The significant figures are 4, 0, 5, 0: four in all.\n\n**Why the other options are wrong**\n\n- 7: Leading zeros before the first non-zero digit are not significant.\n- 3: The final zero after the 5 is significant, because it comes after the decimal point.\n- 6: Only the zeros after the first non-zero digit count: 4, 0, 5, 0.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b14ca9e7-2c12-5538-b05e-57b2211ee292",
+       "label": "A",
+       "content": "3",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "01be5495-1181-51bc-9dfc-5ecd153522cd",
+       "label": "B",
+       "content": "4",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "146cf72c-3fb4-5ece-bb0e-6f242180ec6a",
+       "label": "C",
+       "content": "6",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6799beec-0314-54e3-9281-e5d0a292633e",
+       "label": "D",
+       "content": "7",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "50da9eae-1bc5-5203-bcfd-8b99e8a67568",
+     "key": "phy-meas-08",
+     "stem": "Repeating a measurement several times and taking the mean reduces",
+     "image_url": null,
+     "explanation": "Random errors scatter readings both ways, so they partly cancel when the mean is taken.\n\n**Why the other options are wrong**\n\n- systematic errors: A systematic error shifts every reading the same way; averaging keeps it.\n- zero errors: A zero error is systematic; it must be corrected, not averaged away.\n- the resolution of the instrument: Averaging does not change the instrument's smallest division.",
+     "position": 8,
+     "options": [
+      {
+       "id": "b778c1fd-08da-5812-819f-6441f1917db3",
+       "label": "A",
+       "content": "random errors",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "58a85473-55ff-58a2-9b50-9e87fbe7ac1f",
+       "label": "B",
+       "content": "systematic errors",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "db38dfa9-2506-5f38-a71a-2ea76e4b0e96",
+       "label": "C",
+       "content": "zero errors",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a61389b2-f23b-58aa-b635-8d05890928b4",
+       "label": "D",
+       "content": "the resolution of the instrument",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8c9e413f-3144-5721-85fd-f72e088d4fcc",
+   "topic": "Motion in a Straight Line",
+   "title": "Motion in a Straight Line: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on motion in a straight line, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 103,
+   "questions": [
+    {
+     "id": "29663685-fe1a-5bb3-90c1-3effc1e28f36",
+     "key": "phy-lin-01",
+     "stem": "The gradient of a displacement–time graph gives",
+     "image_url": null,
+     "explanation": "Gradient = change in displacement ÷ time = velocity.\n\n**Why the other options are wrong**\n\n- acceleration: Acceleration is the gradient of a velocity–time graph.\n- distance travelled: Displacement is read from the graph's height, not from its gradient.\n- force: A motion graph alone does not give force.",
+     "position": 1,
+     "options": [
+      {
+       "id": "4215e533-c0a9-5d41-ae15-459a0718a20c",
+       "label": "A",
+       "content": "acceleration",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4c8e7c63-376b-5627-9884-b6948ecc3939",
+       "label": "B",
+       "content": "distance travelled",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5cd1c3a8-baef-5c06-8ce6-5459aa69bd1e",
+       "label": "C",
+       "content": "force",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6dbab081-36c9-5a5e-ac79-9f5bdd8ba0fe",
+       "label": "D",
+       "content": "velocity",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dff7ce7d-ea75-5603-a1a0-68c8ab0910c0",
+     "key": "phy-lin-02",
+     "stem": "The area under a velocity–time graph represents",
+     "image_url": null,
+     "explanation": "Area = velocity × time = displacement (distance for one-way motion).\n\n**Why the other options are wrong**\n\n- acceleration: Acceleration is the gradient of the velocity–time graph, not the area.\n- speed: Speed is read directly off the velocity axis.\n- time: Time is on the horizontal axis.",
+     "position": 2,
+     "options": [
+      {
+       "id": "89356b3d-c04d-5657-a973-caedce210f2f",
+       "label": "A",
+       "content": "displacement",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1c211573-0154-5d19-97bd-5154d5f1317b",
+       "label": "B",
+       "content": "acceleration",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b32f144c-db5c-5481-993d-6f3f4eecf482",
+       "label": "C",
+       "content": "speed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "776f8ba4-e2ef-5337-93dc-5e6f5186a5c6",
+       "label": "D",
+       "content": "time",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4ad1ba13-ef2a-5696-8d8c-d40fee15dda6",
+     "key": "phy-lin-03",
+     "stem": "A runner covers 400 m in 50 s and then 200 m in 30 s. What is her average speed for the whole run?",
+     "image_url": null,
+     "explanation": "Average speed $= \\dfrac{400 + 200}{50 + 30} = \\dfrac{600}{80} = 7.5\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 7.33 m s⁻¹: You averaged the two speeds. Average speed is total distance ÷ total time.\n- 8 m s⁻¹: That is the speed for the first part only.\n- 12 m s⁻¹: You divided total distance by the first time only.",
+     "position": 3,
+     "options": [
+      {
+       "id": "95b54abb-ef0d-5e17-8af4-0c9e17e9e480",
+       "label": "A",
+       "content": "7.33 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dbf5209c-f31d-5490-b0b7-01727fde82c3",
+       "label": "B",
+       "content": "7.5 m s⁻¹",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bc71ebdf-b560-58a1-a29d-7881ec30ac91",
+       "label": "C",
+       "content": "8 m s⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "65264a89-24c0-575a-a05e-1ef4aa7209c6",
+       "label": "D",
+       "content": "12 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "26f81a96-275c-50ee-901b-f13bf12a1e1c",
+     "key": "phy-lin-04",
+     "stem": "A car's velocity changes from 10 m s⁻¹ to 30 m s⁻¹ in 4 s. What is its acceleration?",
+     "image_url": null,
+     "explanation": "$a = \\dfrac{v - u}{t} = \\dfrac{30 - 10}{4} = 5\\ \\text{m s}^{-2}$.\n\n**Why the other options are wrong**\n\n- 10 m s⁻²: You divided the change in velocity by 2 instead of by the time, 4 s.\n- 7.5 m s⁻²: You divided the final velocity by the time; subtract the initial velocity first.\n- 80 m s⁻²: You multiplied the change in velocity by the time.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ada97e2c-0391-5194-bccc-e48fa3f64f9b",
+       "label": "A",
+       "content": "5 m s⁻²",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3499c422-0a9b-5794-9a44-1583e2dd01e4",
+       "label": "B",
+       "content": "7.5 m s⁻²",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2ddbf8c2-2a22-5313-92f5-77e6316b3893",
+       "label": "C",
+       "content": "10 m s⁻²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3bd2e361-702b-56ad-bcd9-30775345b7f5",
+       "label": "D",
+       "content": "80 m s⁻²",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eb838c05-9a16-5184-94df-b573c474e805",
+     "key": "phy-lin-05",
+     "stem": "A horizontal straight line on a velocity–time graph shows that the body is",
+     "image_url": null,
+     "explanation": "Constant velocity means zero gradient: a horizontal line above the time axis.\n\n**Why the other options are wrong**\n\n- at rest: At rest, the line would lie along the time axis (velocity zero).\n- accelerating uniformly: Uniform acceleration gives a sloping straight line.\n- decelerating: Deceleration gives a line sloping downwards.",
+     "position": 5,
+     "options": [
+      {
+       "id": "2f6763a0-9347-59b6-9c2b-ec0ec7993cc1",
+       "label": "A",
+       "content": "at rest",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ebbf5a53-2b07-54b6-9513-f3643c4e50c5",
+       "label": "B",
+       "content": "accelerating uniformly",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0512d25e-da8e-51ba-ba86-2ae15bef126e",
+       "label": "C",
+       "content": "decelerating",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "980f251e-cb0e-57e0-b9d5-c5c67dfaf7a8",
+       "label": "D",
+       "content": "moving with uniform velocity",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5d718d83-fc26-5f58-b19a-0d5299996e11",
+     "key": "phy-lin-06",
+     "stem": "A keke goes once round a circular track at constant speed and returns to its starting point. Which statement is correct?",
+     "image_url": null,
+     "explanation": "Ending at the start point gives zero displacement, while the distance is the circumference of the track.\n\n**Why the other options are wrong**\n\n- Its displacement equals the distance travelled.  \n  Displacement is measured in a straight line from start to finish; the keke ended where it began.\n- Its velocity was constant throughout.  \n  Its direction kept changing, so its velocity changed.\n- Its average speed is zero.  \n  Average speed is distance ÷ time, which is not zero.",
+     "position": 6,
+     "options": [
+      {
+       "id": "0585cd2f-427e-5890-9231-4322c9e421c0",
+       "label": "A",
+       "content": "Its displacement is zero but the distance travelled is not.",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e7625503-9339-5ea0-aa60-bc672340c778",
+       "label": "B",
+       "content": "Its displacement equals the distance travelled.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "431bb4bc-5d8c-581f-a8d7-a191307f63d4",
+       "label": "C",
+       "content": "Its velocity was constant throughout.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b82b5246-d3e7-5f8f-993f-716e7dfe80b1",
+       "label": "D",
+       "content": "Its average speed is zero.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "835e8e16-561c-591a-8fd3-34d9716ec63a",
+     "key": "phy-lin-07",
+     "stem": "A body starts from rest and accelerates uniformly to 12 m s⁻¹ in 6 s. Using a velocity–time graph, find the distance covered.",
+     "image_url": null,
+     "explanation": "Distance = area of triangle $= \\tfrac{1}{2} \\times 6 \\times 12 = 36\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 72 m: You took the area as a rectangle (12 × 6). The graph is a triangle: use ½ × base × height.\n- 2 m: That is the acceleration (12 ÷ 6), not the distance.\n- 18 m: You halved twice.",
+     "position": 7,
+     "options": [
+      {
+       "id": "0fb4a7ba-ee53-5feb-acf9-a358f10280dc",
+       "label": "A",
+       "content": "2 m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c67456a5-d744-56f6-8c6d-f4f97612a6b2",
+       "label": "B",
+       "content": "18 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d76da6fd-e02d-5446-b20d-0324ba9b5011",
+       "label": "C",
+       "content": "36 m",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f1a0b0a5-f849-574d-bac5-29cd71cca937",
+       "label": "D",
+       "content": "72 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d08ac4a9-6e2d-5ea2-9148-a6f00a1ef928",
+     "key": "phy-lin-08",
+     "stem": "A train moving at 20 m s⁻¹ is brought to rest uniformly in 25 s. What is its deceleration?",
+     "image_url": null,
+     "explanation": "$a = \\dfrac{0 - 20}{25} = -0.8\\ \\text{m s}^{-2}$, a deceleration of 0.8 m s⁻².\n\n**Why the other options are wrong**\n\n- 1.25 m s⁻²: You divided the time by the velocity.\n- 500 m s⁻²: You multiplied the velocity by the time.\n- 1.6 m s⁻²: You doubled the result; deceleration is simply (20 − 0) ÷ 25.",
+     "position": 8,
+     "options": [
+      {
+       "id": "fe75d149-a567-515c-8eed-b31870733372",
+       "label": "A",
+       "content": "0.8 m s⁻²",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d7bdddb0-b12f-599c-8195-a0f74f984871",
+       "label": "B",
+       "content": "1.25 m s⁻²",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "58c312ef-6edb-5f84-a917-957f88adede0",
+       "label": "C",
+       "content": "1.6 m s⁻²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5c1ea59a-1723-5e4f-8047-a35407b047fe",
+       "label": "D",
+       "content": "500 m s⁻²",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "92bfb9a7-a849-51d1-bfc4-83223272d21a",
+   "topic": "Equations of Motion",
+   "title": "Equations of Motion: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on equations of motion, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 104,
+   "questions": [
+    {
+     "id": "1d93578f-64a0-520c-a446-2e9ce861292f",
+     "key": "phy-eqm-01",
+     "stem": "A car starts from rest and accelerates uniformly at 3 m s⁻² for 10 s. How far does it travel?",
+     "image_url": null,
+     "explanation": "$s = ut + \\tfrac{1}{2}at^2 = 0 + \\tfrac{1}{2}(3)(10)^2 = 150\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 300 m: You forgot the ½ in $s = ut + \\tfrac{1}{2}at^2$.\n- 30 m: That is the final velocity, $v = at$, not the distance.\n- 15 m: You used $t$ instead of $t^2$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "15279943-b3fa-595d-a48c-75f99fc6c2ed",
+       "label": "A",
+       "content": "15 m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "64529440-942b-5a3e-b5cb-fa51e70be05f",
+       "label": "B",
+       "content": "30 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f3c63f76-5c31-52c5-aeb5-8823bb345f0f",
+       "label": "C",
+       "content": "150 m",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1441eefb-e1d0-566a-87e0-b4e452c3e7e1",
+       "label": "D",
+       "content": "300 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a62b38f1-6b30-5093-85eb-951745271929",
+     "key": "phy-eqm-02",
+     "stem": "A car travelling at 30 m s⁻¹ brakes uniformly and stops in 90 m. What is its deceleration?",
+     "image_url": null,
+     "explanation": "$0 = 30^2 + 2a(90) \\Rightarrow a = -\\dfrac{900}{180} = -5\\ \\text{m s}^{-2}$: a deceleration of 5 m s⁻².\n\n**Why the other options are wrong**\n\n- 10 m s⁻²: You forgot the 2 in $v^2 = u^2 + 2as$.\n- 0.33 m s⁻²: You divided the speed by the distance.\n- 2.5 m s⁻²: You used 4 instead of 2 in the denominator.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d408e80b-8dde-5eab-a2ed-7bbd45a95449",
+       "label": "A",
+       "content": "0.33 m s⁻²",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ba7f8d71-24ed-51e5-845c-6faa2201602d",
+       "label": "B",
+       "content": "2.5 m s⁻²",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c2915ca5-b628-5f63-a5b7-42d7a5054ed8",
+       "label": "C",
+       "content": "5 m s⁻²",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f8623aa7-8993-54b5-866e-fe80c6a17912",
+       "label": "D",
+       "content": "10 m s⁻²",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0d807987-5a61-5de6-bf53-51976339ee51",
+     "key": "phy-eqm-03",
+     "stem": "A motorcycle moving at 10 m s⁻¹ accelerates at 2 m s⁻² over 75 m. What is its final velocity?",
+     "image_url": null,
+     "explanation": "$v^2 = u^2 + 2as = 100 + 2(2)(75) = 400 \\Rightarrow v = 20\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 15.8 m s⁻¹: You left out the acceleration: $v^2 = u^2 + 2as$ needs $2 \\times 2 \\times 75$.\n- 400 m s⁻¹: That is $v^2$. Take the square root.\n- 17.3 m s⁻¹: You left out the initial velocity $u^2$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "e261842d-8daa-5463-b733-90690810b93d",
+       "label": "A",
+       "content": "15.8 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a99f0fa2-c4db-50ec-8300-cadafaa965c9",
+       "label": "B",
+       "content": "17.3 m s⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eca427ab-1628-5c51-b094-646118ad8150",
+       "label": "C",
+       "content": "20 m s⁻¹",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1d3d9e27-5c66-541a-9d83-c2bb1aaaca2f",
+       "label": "D",
+       "content": "400 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ef0eec70-ac2b-5a09-bc0a-135c64f8e809",
+     "key": "phy-eqm-04",
+     "stem": "Which equation would you use to find the final velocity of a uniformly accelerating body when the time is not known?",
+     "image_url": null,
+     "explanation": "$v^2 = u^2 + 2as$ is the only equation of motion without $t$.\n\n**Why the other options are wrong**\n\n- $v = u + at$: This needs the time $t$.\n- $s = ut + \\tfrac{1}{2}at^2$: This contains $t$ and does not contain $v$.\n- $s = \\tfrac{1}{2}(u + v)t$: This needs the time $t$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7ea7ca21-62ad-5964-90c2-e9b2e7582edb",
+       "label": "A",
+       "content": "$v = u + at$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d1ea2392-f975-58a6-ad18-38f9b9189f15",
+       "label": "B",
+       "content": "$s = ut + \\tfrac{1}{2}at^2$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ae97eadd-c6d7-564e-91d2-b9bc2fec6bcd",
+       "label": "C",
+       "content": "$s = \\tfrac{1}{2}(u + v)t$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3ec6321d-8004-5698-a4d0-1e86b36687d6",
+       "label": "D",
+       "content": "$v^2 = u^2 + 2as$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a76b35cf-f13a-5116-bd38-1d687add9d42",
+     "key": "phy-eqm-05",
+     "stem": "A taxi at 15 m s⁻¹ has a driver with a reaction time of 0.6 s. After reacting, the brakes give a deceleration of 5 m s⁻². What is the total stopping distance?",
+     "image_url": null,
+     "explanation": "Thinking: $15 \\times 0.6 = 9$ m. Braking: $\\dfrac{15^2}{2 \\times 5} = 22.5$ m. Total $= 31.5$ m.\n\n**Why the other options are wrong**\n\n- 22.5 m: That is the braking distance only. Add the thinking distance, 15 × 0.6 = 9 m.\n- 9 m: That is the thinking distance only.\n- 54 m: You forgot the 2 in the braking distance $u^2/2a$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "732e32ec-4c36-5c12-9ea6-e77df109d5b5",
+       "label": "A",
+       "content": "9 m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d611dd2e-953a-5225-b8e8-bcb405757bf2",
+       "label": "B",
+       "content": "22.5 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a6a69369-a73b-5cb0-8a84-7d277a6a34ed",
+       "label": "C",
+       "content": "31.5 m",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e8ee72ef-998f-5d30-be0b-2244d34f21df",
+       "label": "D",
+       "content": "54 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e6c68a09-7d4c-5c6e-90aa-f68154948e01",
+     "key": "phy-eqm-06",
+     "stem": "A body moving with uniform acceleration has velocity 4 m s⁻¹ at one instant and 16 m s⁻¹ six seconds later. How far does it travel in those 6 s?",
+     "image_url": null,
+     "explanation": "$s = \\tfrac{1}{2}(u + v)t = \\tfrac{1}{2}(4 + 16)(6) = 60\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 96 m: You used the final velocity × time. Use the average velocity, (4 + 16) ÷ 2.\n- 24 m: You used the initial velocity × time.\n- 36 m: You used the change in velocity, (16 − 4), × ½ × 6.",
+     "position": 6,
+     "options": [
+      {
+       "id": "c2b9e30f-ea8e-57d3-ac8d-d76a178fc6ef",
+       "label": "A",
+       "content": "24 m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "83a6b66d-082a-5f62-874f-7fc5f3f85d60",
+       "label": "B",
+       "content": "36 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d664e722-cb5e-533b-b76b-6159a4f9452e",
+       "label": "C",
+       "content": "60 m",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4512ecf0-e1f4-5b62-9528-4c57d73f70d6",
+       "label": "D",
+       "content": "96 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c3828543-29cf-5964-8f47-a75bd6838cdb",
+     "key": "phy-eqm-07",
+     "stem": "A police motorcycle starts from rest with acceleration 4 m s⁻² at the moment a car passes it at a steady 20 m s⁻¹. After what time does the motorcycle catch the car?",
+     "image_url": null,
+     "explanation": "Car: $s = 20t$. Motorcycle: $s = \\tfrac{1}{2}(4)t^2 = 2t^2$. $2t^2 = 20t \\Rightarrow t = 10\\ \\text{s}$.\n\n**Why the other options are wrong**\n\n- 5 s: That is when the motorcycle's speed equals the car's (4t = 20), not when it catches up.\n- 20 s: You forgot the ½ in $\\tfrac{1}{2}at^2$: solve $2t^2 = 20t$.\n- 3.16 s: Set the displacements equal: $2t^2 = 20t$, which gives $t = 10$ s.",
+     "position": 7,
+     "options": [
+      {
+       "id": "0403a59c-66d0-5a69-bf36-0ab7cbc990ad",
+       "label": "A",
+       "content": "3.16 s",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4137574b-bdc6-5c69-bb0e-529c464b9ad4",
+       "label": "B",
+       "content": "5 s",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "019deae8-5843-55e8-bd5c-3aaadcb72193",
+       "label": "C",
+       "content": "10 s",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e884ce46-ca07-589b-98d9-4c499f6b2539",
+       "label": "D",
+       "content": "20 s",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9e22bc25-6d14-5c48-9b1d-a2a83edbf0fc",
+     "key": "phy-eqm-08",
+     "stem": "A body starts from rest with uniform acceleration 2 m s⁻². How far does it travel during the 5th second?",
+     "image_url": null,
+     "explanation": "$s_5 - s_4 = \\tfrac{1}{2}(2)(25) - \\tfrac{1}{2}(2)(16) = 25 - 16 = 9\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 25 m: That is the distance in the first 5 seconds, not in the 5th second alone.\n- 16 m: That is the distance in the first 4 seconds.\n- 10 m: That is the velocity at the end of the 5th second.",
+     "position": 8,
+     "options": [
+      {
+       "id": "badc46e9-add7-55b9-9873-8171faa9f23b",
+       "label": "A",
+       "content": "9 m",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "429801b0-a7f4-5300-80c2-48a5dfc2fdc3",
+       "label": "B",
+       "content": "10 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cfb7da75-a4e7-5baf-a607-c8b337db09ba",
+       "label": "C",
+       "content": "16 m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2be5aabd-1f85-5434-b3a8-8f851c205b41",
+       "label": "D",
+       "content": "25 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "28040cf9-f4aa-5f8d-a156-526aedf16e4a",
+   "topic": "Motion under Gravity",
+   "title": "Motion under Gravity: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on motion under gravity, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 105,
+   "questions": [
+    {
+     "id": "2557cca2-68af-52de-809e-4da4239fda00",
+     "key": "phy-grav-01",
+     "stem": "A stone is dropped from rest from a height of 45 m. How long does it take to reach the ground? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "$h = \\tfrac{1}{2}gt^2 \\Rightarrow 45 = 5t^2 \\Rightarrow t = 3\\ \\text{s}$.\n\n**Why the other options are wrong**\n\n- 4.5 s: You used $h = gt$; the correct equation is $h = \\tfrac{1}{2}gt^2$.\n- 9 s: That is $t^2$. Take the square root.\n- 2.12 s: You forgot the ½: $45 = 5t^2$, not $10t^2$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "eed66777-8552-5eb1-9f6f-dc54e7166319",
+       "label": "A",
+       "content": "2.12 s",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5d9d1310-0e53-5b30-a27f-e87ef59e3fe7",
+       "label": "B",
+       "content": "3 s",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b2f36ddf-4a3f-5a0c-89be-6630a790f91a",
+       "label": "C",
+       "content": "4.5 s",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8894960a-200b-54c8-a32b-4272dbc23250",
+       "label": "D",
+       "content": "9 s",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aacdf824-ad96-55e2-adfe-91c4087ea163",
+     "key": "phy-grav-02",
+     "stem": "A ball is thrown vertically upwards with a speed of 25 m s⁻¹. What is the maximum height reached? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "$H = \\dfrac{u^2}{2g} = \\dfrac{625}{20} = 31.25\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 62.5 m: You forgot the 2 in $H = \\dfrac{u^2}{2g}$.\n- 2.5 m: That is the time to the top, $u/g$, not the height.\n- 125 m: You divided by 5 instead of by 2g = 20.",
+     "position": 2,
+     "options": [
+      {
+       "id": "55f8ccc0-5fa2-52c9-a131-b4adc88991d8",
+       "label": "A",
+       "content": "2.5 m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d90f2b31-cca6-5550-98bf-2bb136661daf",
+       "label": "B",
+       "content": "31.25 m",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5b41c15d-6a07-5a81-a15a-c4ad25c4c059",
+       "label": "C",
+       "content": "62.5 m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c8d978de-cea9-5d11-942f-03ba3bcd9cbf",
+       "label": "D",
+       "content": "125 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "53bc57c2-eeee-5b23-a921-3503e2fa2271",
+     "key": "phy-grav-03",
+     "stem": "A ball is thrown vertically upwards at 20 m s⁻¹ and caught at the same height. What is its total time in the air? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "Time of flight $= \\dfrac{2u}{g} = \\dfrac{40}{10} = 4\\ \\text{s}$.\n\n**Why the other options are wrong**\n\n- 2 s: That is the time to reach the top. The ball takes the same time to come down.\n- 20 s: That is the maximum height, $u^2/2g$, in metres.\n- 8 s: You doubled twice.",
+     "position": 3,
+     "options": [
+      {
+       "id": "9e46f514-2c9d-5043-8699-d8e9754542b0",
+       "label": "A",
+       "content": "2 s",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f3e2cd4a-4407-5930-b543-22c08582a1af",
+       "label": "B",
+       "content": "4 s",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "edf1ff0b-e444-56dd-9822-c454641d27d2",
+       "label": "C",
+       "content": "8 s",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e623ed8f-0bce-53d3-b2f9-95664191fa0c",
+       "label": "D",
+       "content": "20 s",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3ac3688e-a1d9-5f15-811c-174e25c92310",
+     "key": "phy-grav-04",
+     "stem": "A ball is thrown vertically upwards. At its highest point, its",
+     "image_url": null,
+     "explanation": "At the top the ball stops momentarily (v = 0), but its weight still gives it an acceleration $g$ downwards.\n\n**Why the other options are wrong**\n\n- velocity and acceleration are both zero: If the acceleration were zero, the ball would stay at the top. Gravity still acts.\n- velocity is maximum and its acceleration is zero: The velocity is zero at the top, and gravity still accelerates it.\n- acceleration is zero and its velocity is g: Velocity and acceleration are mixed up here; $g$ is the acceleration.",
+     "position": 4,
+     "options": [
+      {
+       "id": "3c03367e-4558-5b13-a5e6-cfdf7f700890",
+       "label": "A",
+       "content": "velocity is zero and its acceleration is g downwards",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c36c052b-99e9-55dd-84f1-d765b922a2a7",
+       "label": "B",
+       "content": "velocity and acceleration are both zero",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b8a995d0-d85b-50ae-8916-2ea1adb91e8f",
+       "label": "C",
+       "content": "velocity is maximum and its acceleration is zero",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "66226154-a13d-5228-bb0a-f529e2193d02",
+       "label": "D",
+       "content": "acceleration is zero and its velocity is g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "753db663-0459-532e-b9a8-fd2685f8abd9",
+     "key": "phy-grav-05",
+     "stem": "In a vacuum, a feather and a stone are released together from the same height. Which statement is correct?",
+     "image_url": null,
+     "explanation": "In a vacuum only gravity acts, and every body falls with acceleration $g$, whatever its mass.\n\n**Why the other options are wrong**\n\n- The stone lands first because it is heavier.  \n  Without air resistance, all bodies fall with the same acceleration $g$.\n- The feather lands first because it is lighter.  \n  Lighter bodies do not fall faster.\n- The feather floats and does not fall.  \n  With no air, nothing supports the feather; it falls freely.",
+     "position": 5,
+     "options": [
+      {
+       "id": "1107b805-6bc1-59fa-b9f6-6cebd9bb40ac",
+       "label": "A",
+       "content": "The stone lands first because it is heavier.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "154da43a-7716-5565-a93c-5e47c20fd622",
+       "label": "B",
+       "content": "The feather lands first because it is lighter.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ad6604d3-9dd3-51c6-8d3a-78a5aa5c3dc9",
+       "label": "C",
+       "content": "The feather floats and does not fall.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d7da0727-f63f-5999-b62f-c850af701568",
+       "label": "D",
+       "content": "They reach the ground at the same time.",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2a27377a-deb6-5cb2-b569-6825521decd5",
+     "key": "phy-grav-06",
+     "stem": "A stone is thrown vertically upwards at 30 m s⁻¹. What is its velocity after 4 s? (Take upwards as positive; g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "$v = u - gt = 30 - 10(4) = -10\\ \\text{m s}^{-1}$: 10 m s⁻¹ downwards.\n\n**Why the other options are wrong**\n\n- 10 m s⁻¹: The magnitude is right, but after 3 s the stone is falling, so its velocity is negative (downwards).\n- 70 m s⁻¹: You added gravity's effect instead of subtracting it: $v = u - gt$.\n- -40 m s⁻¹: You used $v = -gt$ and ignored the initial velocity.",
+     "position": 6,
+     "options": [
+      {
+       "id": "8fcbdb8e-b1f2-5fef-bc15-ac06d13d2cd1",
+       "label": "A",
+       "content": "-40 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "324e1f00-541d-5c5f-97ef-9a8b69227ea2",
+       "label": "B",
+       "content": "-10 m s⁻¹",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "3915ebcc-5024-55d9-baa4-567c55ef83b2",
+       "label": "C",
+       "content": "10 m s⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e700d315-687f-58a4-9df8-1698c8341129",
+       "label": "D",
+       "content": "70 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "705f5c8f-dd47-593e-830e-816d9483a316",
+     "key": "phy-grav-07",
+     "stem": "A body falls freely from rest. What is its speed after falling 20 m? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "$v^2 = 2gh = 2(10)(20) = 400 \\Rightarrow v = 20\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 400 m s⁻¹: That is $v^2$. Take the square root.\n- 14.1 m s⁻¹: You forgot the 2 in $v^2 = 2gh$.\n- 200 m s⁻¹: You multiplied g by h without the 2 or the square root.",
+     "position": 7,
+     "options": [
+      {
+       "id": "8d663b24-3f29-5124-8664-8631a3e54443",
+       "label": "A",
+       "content": "14.1 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "06b235e1-0259-565c-a59f-b476d340dd80",
+       "label": "B",
+       "content": "20 m s⁻¹",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "48d861d6-a68f-55d8-a298-0704c8b4621e",
+       "label": "C",
+       "content": "200 m s⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2258a80a-7835-594e-a294-0b8febace144",
+       "label": "D",
+       "content": "400 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c533d400-73d2-5b49-9da1-93423e486f2e",
+     "key": "phy-grav-08",
+     "stem": "A skydiver falling through air reaches terminal velocity when",
+     "image_url": null,
+     "explanation": "When air resistance balances the weight, the resultant force is zero, so she falls at a constant (terminal) velocity.\n\n**Why the other options are wrong**\n\n- her weight becomes zero: Her weight ($mg$) does not change as she falls.\n- air resistance becomes zero: Air resistance grows with speed; it is at its largest at terminal velocity.\n- her acceleration equals g: At terminal velocity her acceleration is zero.",
+     "position": 8,
+     "options": [
+      {
+       "id": "08800bea-927a-586f-b0d3-17d28a2f04f8",
+       "label": "A",
+       "content": "air resistance equals her weight",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2dc7b9ea-339b-52b0-b5a8-44828a8124a7",
+       "label": "B",
+       "content": "her weight becomes zero",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a5df3379-3f68-527f-9cd8-123740fd75b0",
+       "label": "C",
+       "content": "air resistance becomes zero",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "020bc27f-9c33-5524-a448-b6b39d8d7314",
+       "label": "D",
+       "content": "her acceleration equals g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aec63a43-c730-5456-9d4d-b7622f767f40",
+   "topic": "Projectile Motion",
+   "title": "Projectile Motion: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on projectile motion, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 106,
+   "questions": [
+    {
+     "id": "0f394b56-797f-5897-8805-8ed261415e3d",
+     "key": "phy-proj-01",
+     "stem": "For a projectile (air resistance neglected), which quantity remains constant throughout the flight?",
+     "image_url": null,
+     "explanation": "No horizontal force acts, so the horizontal velocity $u\\cos\\theta$ never changes.\n\n**Why the other options are wrong**\n\n- the vertical component of velocity: Gravity changes the vertical velocity by $g$ every second.\n- the speed: The speed is least at the top and greater elsewhere.\n- the kinetic energy: Kinetic energy changes as the speed changes.",
+     "position": 1,
+     "options": [
+      {
+       "id": "2c36cc3a-4c87-59d4-8f10-77ac87cb2892",
+       "label": "A",
+       "content": "the vertical component of velocity",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0a8d0208-792e-57aa-a0a8-8fdfdc095429",
+       "label": "B",
+       "content": "the speed",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bda9fbc9-b8d9-5838-ae4c-01f425e5ef4e",
+       "label": "C",
+       "content": "the kinetic energy",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cfe01c37-082e-58f0-b308-144c6b906d4b",
+       "label": "D",
+       "content": "the horizontal component of velocity",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "47ebf27f-cf44-51a4-ab7f-5272dac1de96",
+     "key": "phy-proj-02",
+     "stem": "A ball is kicked horizontally at 12 m s⁻¹ off a cliff 80 m high. How far from the foot of the cliff does it land? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "Fall time: $80 = 5t^2 \\Rightarrow t = 4\\ \\text{s}$. Distance $= 12 \\times 4 = 48\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 96 m: You took the fall time as 8 s; $80 = 5t^2$ gives $t = 4$ s.\n- 4 m: That is the time of fall, not the distance.\n- 33.9 m: You forgot the ½: $80 = 5t^2$, not $10t^2$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "972f9a05-b756-574b-90b9-6952b55fb833",
+       "label": "A",
+       "content": "4 m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8aeeb39a-9c0f-5890-9d67-8a1a0c65448b",
+       "label": "B",
+       "content": "33.9 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b2b40806-3981-5c63-a83d-94110daa6d3e",
+       "label": "C",
+       "content": "48 m",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "caa02db7-5965-56c9-86c9-e2ea187b5a40",
+       "label": "D",
+       "content": "96 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ee98faaf-b8cd-5af8-b756-d010a2aa238c",
+     "key": "phy-proj-03",
+     "stem": "A stone is projected at 20 m s⁻¹ at 30° above the horizontal from level ground. What is its time of flight? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "$T = \\dfrac{2u\\sin\\theta}{g} = \\dfrac{2(20)(0.5)}{10} = 2\\ \\text{s}$.\n\n**Why the other options are wrong**\n\n- 1 s: That is the time to the highest point; the flight lasts twice as long.\n- 3.46 s: You used cos 30°. The vertical component is $u\\sin\\theta$.\n- 4 s: You used the full speed 20 m s⁻¹ as the vertical velocity.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d22c4e79-183e-534a-abe8-ee84b2944fc7",
+       "label": "A",
+       "content": "1 s",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1b158545-4cf8-5e20-aa51-e1bde5bc4cdf",
+       "label": "B",
+       "content": "2 s",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "52eea200-6fce-5139-aa36-c7d2c733e6ff",
+       "label": "C",
+       "content": "3.46 s",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "96f301e0-8492-58fc-af38-b74f290f316e",
+       "label": "D",
+       "content": "4 s",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "88fb245d-b39c-59e7-91f8-268f6a145c95",
+     "key": "phy-proj-04",
+     "stem": "For a given speed of projection, the horizontal range on level ground is greatest when the angle of projection is",
+     "image_url": null,
+     "explanation": "$R = \\dfrac{u^2\\sin 2\\theta}{g}$ is greatest when $\\sin 2\\theta = 1$, so $\\theta = 45°$.\n\n**Why the other options are wrong**\n\n- 90°: At 90° the body goes straight up and comes straight down: zero range.\n- 30°: 30° gives less range than 45°, because $\\sin 60° < \\sin 90°$.\n- 60°: 60° gives the same range as 30°, less than at 45°.",
+     "position": 4,
+     "options": [
+      {
+       "id": "3453a890-8e9a-53b1-80f9-98584ba9cc20",
+       "label": "A",
+       "content": "30°",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fae6b01d-f95f-5956-a957-37ad6d1ad924",
+       "label": "B",
+       "content": "45°",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bde11917-e01b-5a98-92e9-ddc6abf98cd3",
+       "label": "C",
+       "content": "60°",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3bcfea39-41f9-5f81-99fd-78bebf54ba21",
+       "label": "D",
+       "content": "90°",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "64f57197-fc88-5edd-92d6-617df3b3377f",
+     "key": "phy-proj-05",
+     "stem": "A ball is projected at 30 m s⁻¹ at 60° to the horizontal. What is its speed at the highest point of its path?",
+     "image_url": null,
+     "explanation": "At the top, speed $= u\\cos\\theta = 30\\cos 60° = 15\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 0 m s⁻¹: Only the vertical velocity is zero at the top; the horizontal velocity remains.\n- 26.0 m s⁻¹: That is the initial vertical component, which is zero at the top.\n- 30 m s⁻¹: The speed at the top equals only the horizontal component, $u\\cos\\theta$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b36dc7cc-4a53-52a5-97cb-9c1328e95615",
+       "label": "A",
+       "content": "0 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "17579d45-3e56-52eb-8a0a-6dca88a4ea05",
+       "label": "B",
+       "content": "15 m s⁻¹",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f61f6b51-3181-5406-8ffe-3456d54097fb",
+       "label": "C",
+       "content": "26.0 m s⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cffc4f10-3515-5572-a3bb-5eb604d64c18",
+       "label": "D",
+       "content": "30 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "04ee14c0-0e8b-5d16-b032-20d0fc0eb02e",
+     "key": "phy-proj-06",
+     "stem": "A projectile is launched at 40 m s⁻¹ at 30° to the horizontal. What is its maximum height? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "$H = \\dfrac{(u\\sin\\theta)^2}{2g} = \\dfrac{(40 \\times 0.5)^2}{20} = \\dfrac{400}{20} = 20\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 80 m: You used the full speed instead of the vertical component $u\\sin\\theta$.\n- 40 m: You forgot the 2 in $H = \\dfrac{(u\\sin\\theta)^2}{2g}$.\n- 60 m: You used cos 30° instead of sin 30°.",
+     "position": 6,
+     "options": [
+      {
+       "id": "06573b85-f391-58d7-a583-0f822062ab0b",
+       "label": "A",
+       "content": "20 m",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c8cdf814-26c8-5aea-bc57-96e387f0410c",
+       "label": "B",
+       "content": "40 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8237b77b-b3b1-5a4d-9db6-c38e5e77d470",
+       "label": "C",
+       "content": "60 m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c8e157fe-0642-58f8-aa82-2fe8083b9bbd",
+       "label": "D",
+       "content": "80 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "831ab2a4-e476-5e59-aa6a-aca6dee222b1",
+     "key": "phy-proj-07",
+     "stem": "What is the maximum range of a projectile launched at 20 m s⁻¹ on level ground? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "Maximum range (at 45°) $= \\dfrac{u^2}{g} = \\dfrac{400}{10} = 40\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 20 m: You divided by 2g; maximum range is $u^2/g$.\n- 80 m: You doubled the range; $R_{max} = u^2/g$.\n- 2 m: That is $u/g$, a time-like quantity, not the range.",
+     "position": 7,
+     "options": [
+      {
+       "id": "a8256803-962e-5ddf-a4eb-b2a8e9e94e83",
+       "label": "A",
+       "content": "2 m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b453a825-c740-5051-9a99-97387d280395",
+       "label": "B",
+       "content": "20 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f542aa81-b312-5a1d-bcad-1d05270b49e5",
+       "label": "C",
+       "content": "40 m",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fc1f7f46-021c-5fbc-a0d8-5c7c81a2a9eb",
+       "label": "D",
+       "content": "80 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7edfed85-9db0-5e2d-8535-8675be2b1a56",
+     "key": "phy-proj-08",
+     "stem": "Which pair of angles of projection gives the same horizontal range for the same speed?",
+     "image_url": null,
+     "explanation": "$\\sin 2\\theta$ is the same for complementary angles: $\\sin 40° = \\sin 140°$, so 20° and 70° give equal ranges.\n\n**Why the other options are wrong**\n\n- 20° and 40°: Equal ranges need angles that add up to 90°.\n- 30° and 45°: These do not add up to 90°; 45° gives the larger range.\n- 60° and 120°: 120° is not a launch angle above the horizontal in the same direction.",
+     "position": 8,
+     "options": [
+      {
+       "id": "e974d71f-27b0-5e79-abd1-547c853d21ef",
+       "label": "A",
+       "content": "20° and 70°",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5c9018df-32af-5b0a-abfd-6abe35a0a30e",
+       "label": "B",
+       "content": "20° and 40°",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "97f8af60-da80-5d44-9e57-2dec61537caf",
+       "label": "C",
+       "content": "30° and 45°",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1a556400-f296-55cb-ad2e-4dfbfcd6b781",
+       "label": "D",
+       "content": "60° and 120°",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "51add935-da28-5e61-992a-c7a8eb54a4e0",
+   "topic": "Newton's Laws of Motion",
+   "title": "Newton's Laws of Motion: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on newton's laws of motion, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 107,
+   "questions": [
+    {
+     "id": "99b51085-cd5f-50f8-9469-4ec2d7fe7d82",
+     "key": "phy-newt-01",
+     "stem": "Passengers in a bus jerk forward when it stops suddenly. This is explained by",
+     "image_url": null,
+     "explanation": "By Newton's first law, a moving body keeps moving unless a force acts. The bus stops, but the passengers' bodies tend to continue: inertia.\n\n**Why the other options are wrong**\n\n- friction: Friction acts between surfaces; it does not explain why the body keeps moving.\n- Newton's third law: The third law is about action–reaction pairs, not about bodies continuing to move.\n- gravity: Gravity acts downwards, not forwards.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f83d53bb-6263-56e3-916a-bcca6fec5fae",
+       "label": "A",
+       "content": "friction",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f0b75825-fa09-51bc-8cb1-d3b00e7d3a46",
+       "label": "B",
+       "content": "Newton's third law",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "26ada21f-f995-5225-a606-9fd65fa11920",
+       "label": "C",
+       "content": "gravity",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d94be4f0-39af-52be-a371-a995d44f2692",
+       "label": "D",
+       "content": "inertia",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8835fdb3-f7c3-55ce-a43d-47e07b3e4077",
+     "key": "phy-newt-02",
+     "stem": "A resultant force of 60 N acts on a mass of 12 kg. What is the acceleration?",
+     "image_url": null,
+     "explanation": "$a = \\dfrac{F}{m} = \\dfrac{60}{12} = 5\\ \\text{m s}^{-2}$.\n\n**Why the other options are wrong**\n\n- 720 m s⁻²: You multiplied force by mass. $a = F/m$.\n- 0.2 m s⁻²: You divided mass by force.\n- 72 m s⁻²: You added force and mass.",
+     "position": 2,
+     "options": [
+      {
+       "id": "65352d0e-ed1e-5db7-a8b8-5947d7d253fb",
+       "label": "A",
+       "content": "0.2 m s⁻²",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "73dc1bf2-5120-52e5-aa1d-654be48a093f",
+       "label": "B",
+       "content": "5 m s⁻²",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "52e96a4b-de51-57b7-a1c5-bc57d265aeca",
+       "label": "C",
+       "content": "72 m s⁻²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "42df12dc-b06b-507c-9e5d-2eb123c40824",
+       "label": "D",
+       "content": "720 m s⁻²",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "91e23fdd-61f3-5ac3-bf4a-83fc830a426c",
+     "key": "phy-newt-03",
+     "stem": "A box of mass 20 kg is pushed with a horizontal force of 150 N against a friction force of 50 N. What is its acceleration?",
+     "image_url": null,
+     "explanation": "Resultant force $= 150 - 50 = 100\\ \\text{N}$; $a = \\dfrac{100}{20} = 5\\ \\text{m s}^{-2}$.\n\n**Why the other options are wrong**\n\n- 7.5 m s⁻²: You ignored friction. Use the resultant force, 150 − 50.\n- 10 m s⁻²: You added the friction instead of subtracting it.\n- 2.5 m s⁻²: You used friction as the resultant force.",
+     "position": 3,
+     "options": [
+      {
+       "id": "6df44233-d32a-5f60-979f-6f9f3b829d1a",
+       "label": "A",
+       "content": "2.5 m s⁻²",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bc591beb-80aa-53f3-992f-9ea8555ff55f",
+       "label": "B",
+       "content": "5 m s⁻²",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7d9fb77d-36bb-5dec-a927-daf5c5ac1331",
+       "label": "C",
+       "content": "7.5 m s⁻²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a8eeb2a2-36e9-5976-9c19-097a021f69e8",
+       "label": "D",
+       "content": "10 m s⁻²",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e754c9f8-b0c0-5f2e-a1df-7a6f06405db6",
+     "key": "phy-newt-04",
+     "stem": "A 0.5 kg ball moving at 20 m s⁻¹ is stopped by a goalkeeper in 0.1 s. What is the average force on his hands?",
+     "image_url": null,
+     "explanation": "$F = \\dfrac{mv - mu}{t} = \\dfrac{0.5 \\times 20}{0.1} = 100\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 10 N: That is the change in momentum (N s), not the force.\n- 1 N: You multiplied the momentum by the time instead of dividing.\n- 200 N: You divided by 0.05 instead of 0.1.",
+     "position": 4,
+     "options": [
+      {
+       "id": "03ada808-b9db-541e-b936-949aa8bd033d",
+       "label": "A",
+       "content": "1 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d6ecbd1d-4667-5e22-8e52-440b5096e696",
+       "label": "B",
+       "content": "10 N",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b8eeaa0a-871a-52da-8f7e-f74ea2b05fab",
+       "label": "C",
+       "content": "100 N",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3be641d9-7e5f-5753-a36f-cea8d0e77977",
+       "label": "D",
+       "content": "200 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2bb5479d-6eea-585d-b2da-8ff679bd2472",
+     "key": "phy-newt-05",
+     "stem": "A 3 kg trolley moving at 4 m s⁻¹ collides with a stationary 1 kg trolley and they move off together. What is their common velocity?",
+     "image_url": null,
+     "explanation": "$3(4) + 1(0) = (3 + 1)v \\Rightarrow v = \\dfrac{12}{4} = 3\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 4 m s⁻¹: Momentum is shared with the extra mass, so the velocity must fall.\n- 12 m s⁻¹: That is the total momentum, not the velocity.\n- 1.33 m s⁻¹: You divided the original velocity by 3. Divide the total momentum (12) by the combined mass, 4 kg.",
+     "position": 5,
+     "options": [
+      {
+       "id": "79e86940-982a-5338-a221-bd323c52f3cf",
+       "label": "A",
+       "content": "1.33 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "010d5c0e-384a-5650-85cf-91d4ba6c988e",
+       "label": "B",
+       "content": "3 m s⁻¹",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "05336854-b020-51fe-8156-4fe818a5c5a5",
+       "label": "C",
+       "content": "4 m s⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f1071996-e87c-5b79-b3e5-269bdeae6d78",
+       "label": "D",
+       "content": "12 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e9dafb35-a5f7-5256-97cc-69417467b07f",
+     "key": "phy-newt-06",
+     "stem": "A gun of mass 5 kg fires a bullet of mass 25 g at 400 m s⁻¹. What is the recoil speed of the gun?",
+     "image_url": null,
+     "explanation": "Total momentum stays zero: $0.025 \\times 400 = 5v \\Rightarrow v = 2\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 2000 m s⁻¹: You used 25 kg for the bullet. 25 g = 0.025 kg.\n- 80 m s⁻¹: You multiplied the bullet's speed by 1/5 without using the bullet's mass.\n- 0.2 m s⁻¹: Recoil speed = bullet momentum ÷ gun mass = 10 ÷ 5.",
+     "position": 6,
+     "options": [
+      {
+       "id": "1d1a087e-086d-58c6-91ef-b202ae3d69e8",
+       "label": "A",
+       "content": "0.2 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ca67802c-5976-5302-9c77-024b7318ec93",
+       "label": "B",
+       "content": "2 m s⁻¹",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a1611db7-1bf0-51a8-baa2-9470f5160813",
+       "label": "C",
+       "content": "80 m s⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "990b1305-e765-52a1-83a2-36d9156cb609",
+       "label": "D",
+       "content": "2000 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bd9e32c7-e416-5781-a6b9-2fab85c758f4",
+     "key": "phy-newt-07",
+     "stem": "A 50 kg girl stands on a weighing scale in a lift accelerating upwards at 2 m s⁻². What does the scale read? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "$R - mg = ma \\Rightarrow R = m(g + a) = 50(10 + 2) = 600\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 500 N: That is her weight at rest. Accelerating upwards, the scale reads more.\n- 400 N: You subtracted; for upward acceleration $R = m(g + a)$.\n- 100 N: That is only the extra force $ma$.",
+     "position": 7,
+     "options": [
+      {
+       "id": "2ac32f44-a96f-52b2-8228-8af2057b88b9",
+       "label": "A",
+       "content": "100 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3b695f07-d594-5a6f-9fec-f690f19686b1",
+       "label": "B",
+       "content": "400 N",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "68f17dd4-2b26-5530-baf9-ebd2d8e0cae4",
+       "label": "C",
+       "content": "500 N",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a8ce0244-7fdf-5555-baf9-135644c7d9e5",
+       "label": "D",
+       "content": "600 N",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "30c053f7-22f2-5113-a246-be51071ed4fa",
+     "key": "phy-newt-08",
+     "stem": "A book rests on a table. The reaction to the weight of the book is",
+     "image_url": null,
+     "explanation": "The weight is the Earth pulling the book. Its third-law partner is the book pulling the Earth, equal and opposite.\n\n**Why the other options are wrong**\n\n- the upward push of the table on the book: That force acts on the same body (the book); action and reaction act on different bodies.\n- the downward push of the book on the table: That is the reaction to the table's push on the book.\n- the friction between the book and the table: No friction acts on a book resting on a level table.",
+     "position": 8,
+     "options": [
+      {
+       "id": "c3e5e8b7-4b39-5639-9d2b-14a033c29760",
+       "label": "A",
+       "content": "the upward pull of the book on the Earth",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "fa247d91-ea8b-5423-88ce-f07dec7da06e",
+       "label": "B",
+       "content": "the upward push of the table on the book",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8362eead-9cbb-54b8-8f0c-a29919451d03",
+       "label": "C",
+       "content": "the downward push of the book on the table",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "41031ab4-2fa5-56d2-96a5-cdce7b2e83a4",
+       "label": "D",
+       "content": "the friction between the book and the table",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "297f241f-e018-52ff-b7af-8397c82ca6e7",
+   "topic": "Equilibrium of Forces",
+   "title": "Equilibrium of Forces: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on equilibrium of forces, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 108,
+   "questions": [
+    {
+     "id": "fd18bcdc-ae78-56eb-acfa-9ca53a182576",
+     "key": "phy-equi-01",
+     "stem": "A body acted on by several concurrent forces is in equilibrium when",
+     "image_url": null,
+     "explanation": "Equilibrium requires zero resultant force, so that the body has no acceleration.\n\n**Why the other options are wrong**\n\n- all the forces are equal in magnitude: Unequal forces can balance, and equal ones need not.\n- the forces all act in the same direction: Forces in one direction cannot balance.\n- the body is moving with uniform acceleration: Equilibrium means zero acceleration.",
+     "position": 1,
+     "options": [
+      {
+       "id": "981265fb-4ba5-5b84-b498-3bc337b617c7",
+       "label": "A",
+       "content": "all the forces are equal in magnitude",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0f764819-c153-5238-b603-9a74b1743c45",
+       "label": "B",
+       "content": "the forces all act in the same direction",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1c850ecd-8b17-5aca-81f8-731fdc58c91c",
+       "label": "C",
+       "content": "the body is moving with uniform acceleration",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4272a468-e55e-5626-9806-c007ecd8290f",
+       "label": "D",
+       "content": "the resultant of the forces is zero",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "097fa3a0-89ed-5465-8ad4-3c0c2da91e4b",
+     "key": "phy-equi-02",
+     "stem": "A lamp of weight 30 N hangs from the midpoint of a wire. Each half of the wire makes 30° with the horizontal. What is the tension in the wire?",
+     "image_url": null,
+     "explanation": "$2T\\sin 30° = 30 \\Rightarrow 2T(0.5) = 30 \\Rightarrow T = 30\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 15 N: You forgot that the vertical component is $T\\sin 30°$, which is half of $T$.\n- 17.3 N: You used cos 30°; the vertical component is $T\\sin 30°$.\n- 60 N: There are two halves of wire sharing the load: $2T\\sin 30° = 30$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f0667316-a3b8-5f73-891c-fe4d354d4733",
+       "label": "A",
+       "content": "15 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e9d3a767-daa0-55ea-a480-d99cef41a819",
+       "label": "B",
+       "content": "17.3 N",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d056030a-6fae-5e4c-90a8-549df4d27620",
+       "label": "C",
+       "content": "30 N",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "5fab303f-9b18-5d61-8a65-d034124e3522",
+       "label": "D",
+       "content": "60 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "54451248-f5b7-5df7-abfa-d49e1aed3991",
+     "key": "phy-equi-03",
+     "stem": "A 50 N block rests on a smooth plane inclined at 30°. What force parallel to the plane holds it at rest?",
+     "image_url": null,
+     "explanation": "Force $= mg\\sin\\theta = 50\\sin 30° = 25\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 43.3 N: That is $mg\\cos\\theta$, the component into the plane.\n- 50 N: Only the component of weight along the plane needs balancing.\n- 100 N: You divided by sin 30° instead of multiplying.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c8adbebe-cf19-5094-bb9e-7ff06be268a3",
+       "label": "A",
+       "content": "25 N",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2c6bdd52-0fa7-5455-a84e-1ba5b53bf0de",
+       "label": "B",
+       "content": "43.3 N",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "470d8995-bafd-515d-af12-060a74e1fa60",
+       "label": "C",
+       "content": "50 N",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "db6e18d6-e4e2-532c-9946-eb01c5869033",
+       "label": "D",
+       "content": "100 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8502f618-1876-555d-b92f-844235e30866",
+     "key": "phy-equi-04",
+     "stem": "Lami's theorem states that when three concurrent forces are in equilibrium, each force is proportional to",
+     "image_url": null,
+     "explanation": "$\\dfrac{F_1}{\\sin\\alpha} = \\dfrac{F_2}{\\sin\\beta} = \\dfrac{F_3}{\\sin\\gamma}$, where each angle lies between the other two forces.\n\n**Why the other options are wrong**\n\n- the cosine of the angle between the other two forces: The theorem uses sines, as in the sine rule.\n- the angle between the other two forces: It is the sine of the angle, not the angle itself.\n- the sum of the other two forces: The forces are vectors; their magnitudes do not simply add.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b128af05-5f75-5880-811d-72202762f7e1",
+       "label": "A",
+       "content": "the sine of the angle between the other two forces",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a10edf70-8237-5827-8468-8aa55f41c5be",
+       "label": "B",
+       "content": "the cosine of the angle between the other two forces",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a7a49cda-510e-5bab-80fa-0f978dd2ce2c",
+       "label": "C",
+       "content": "the angle between the other two forces",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6a6638db-a375-558c-a9dc-a964623dfbb3",
+       "label": "D",
+       "content": "the sum of the other two forces",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "109120d4-9ab5-5bd5-b343-d4b2887b6c69",
+     "key": "phy-equi-05",
+     "stem": "A 100 N weight hangs from two strings at right angles to each other. One string makes 30° with the vertical. What is the tension in that string?",
+     "image_url": null,
+     "explanation": "By Lami's theorem: $\\dfrac{T_1}{\\sin 120°} = \\dfrac{100}{\\sin 90°} \\Rightarrow T_1 = 100 \\times 0.866 = 86.6\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 50 N: That is the tension in the other string, which makes 60° with the vertical.\n- 100 N: The weight is shared between the two strings.\n- 115.5 N: You divided by cos 30°. With the strings at 90°, $T_1 = 100\\cos 30°$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d1a4e7ff-3fc9-535a-8902-aff0614be5d1",
+       "label": "A",
+       "content": "50 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "16509d5f-f243-52e7-9ea5-53e17b2d1f18",
+       "label": "B",
+       "content": "86.6 N",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c40da68d-742d-562c-98a1-9238b6529c35",
+       "label": "C",
+       "content": "100 N",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "363d81e7-39fe-5b4f-8eea-683f1bb17226",
+       "label": "D",
+       "content": "115.5 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bd4b65ff-0bb6-59ef-9bfd-f74907d4a02f",
+     "key": "phy-equi-06",
+     "stem": "Three forces acting at a point are in equilibrium. If they are drawn to scale nose to tail, they form",
+     "image_url": null,
+     "explanation": "Triangle of forces: three forces in equilibrium form a closed triangle when drawn in order.\n\n**Why the other options are wrong**\n\n- a straight line: A straight line arises only if all three forces are parallel.\n- an open triangle with a gap equal to the resultant: In equilibrium there is no resultant, so no gap.\n- a right-angled triangle in every case: The triangle can have any shape.",
+     "position": 6,
+     "options": [
+      {
+       "id": "55a8e32d-95c2-5124-b645-2e9f29f7cef4",
+       "label": "A",
+       "content": "a straight line",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1972b0d0-daa3-54d2-b310-4ac85be5c536",
+       "label": "B",
+       "content": "an open triangle with a gap equal to the resultant",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "da5e3496-893c-54c0-99f0-ed787b29b114",
+       "label": "C",
+       "content": "a right-angled triangle in every case",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a8c0b0ce-d785-5275-acde-51fb053014e8",
+       "label": "D",
+       "content": "a closed triangle",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d4b81a33-8d32-5e74-b4bb-dc2f7ae936fe",
+     "key": "phy-equi-07",
+     "stem": "Forces of 9 N east and 12 N north act on a particle. What is the magnitude of the equilibrant?",
+     "image_url": null,
+     "explanation": "Resultant $= \\sqrt{9^2 + 12^2} = 15$ N; the equilibrant has the same size, opposite direction.\n\n**Why the other options are wrong**\n\n- 21 N: You added the magnitudes directly; the forces are perpendicular.\n- 3 N: You subtracted the magnitudes.\n- 7.94 N: Pythagoras adds the squares: $\\sqrt{9^2 + 12^2}$.",
+     "position": 7,
+     "options": [
+      {
+       "id": "5f1c2a4e-054c-5838-a3ed-ac496a9c076c",
+       "label": "A",
+       "content": "3 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "16c9b023-7c9f-5426-b9e1-92a868967bbd",
+       "label": "B",
+       "content": "7.94 N",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "742563a9-f406-5a77-90ec-1686dd50c1b7",
+       "label": "C",
+       "content": "15 N",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "eb8f000e-10ea-5c3f-853d-1b1d6ce122f1",
+       "label": "D",
+       "content": "21 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2a301144-4072-522a-938f-37cf89086825",
+     "key": "phy-equi-08",
+     "stem": "A 20 N box hangs on a rope. A horizontal force pulls it aside until the rope makes 45° with the vertical. What is the horizontal force?",
+     "image_url": null,
+     "explanation": "Vertically $T\\cos 45° = 20$; horizontally $P = T\\sin 45°$. So $P = 20\\tan 45° = 20\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 28.3 N: That is the tension in the rope, $20/\\cos 45°$.\n- 10 N: Horizontal force $= W\\tan 45° = 20 \\times 1$.\n- 14.1 N: You multiplied by sin 45°; use $\\tan 45°$.",
+     "position": 8,
+     "options": [
+      {
+       "id": "68e9b4c4-69aa-5339-9002-46b55eac4ed7",
+       "label": "A",
+       "content": "10 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "48d595cd-75f4-55d7-9b4c-684b3c9ce2df",
+       "label": "B",
+       "content": "14.1 N",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e5fe82f6-8f5a-55fe-952d-3194e2501cab",
+       "label": "C",
+       "content": "20 N",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "87e21f42-54e8-55a6-b9f4-ff6d63a6c0ff",
+       "label": "D",
+       "content": "28.3 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7b863b92-3f9f-5ea6-a803-d0e9085380d8",
+   "topic": "Moments and Turning Effects",
+   "title": "Moments and Turning Effects: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on moments and turning effects, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 109,
+   "questions": [
+    {
+     "id": "686be987-c0a5-5106-a8c7-d599b8aca0a5",
+     "key": "phy-mom-01",
+     "stem": "A force of 25 N is applied at right angles to a spanner, 0.4 m from the nut. What is the moment about the nut?",
+     "image_url": null,
+     "explanation": "Moment $= F \\times d = 25 \\times 0.4 = 10\\ \\text{N m}$.\n\n**Why the other options are wrong**\n\n- 62.5 N m: You divided force by distance; moment = force × distance.\n- 25.4 N m: You added force and distance.\n- 100 N m: You used 4 m instead of 0.4 m.",
+     "position": 1,
+     "options": [
+      {
+       "id": "dde4618d-271a-51a6-9183-09421721f7f3",
+       "label": "A",
+       "content": "10 N m",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "90e485d0-9199-5d3a-8d4a-325c6ae22bc4",
+       "label": "B",
+       "content": "25.4 N m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "52cc846d-e45f-566f-8bde-c3c159ea4967",
+       "label": "C",
+       "content": "62.5 N m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8364c7e6-c0cb-5554-a722-59a0e2dcd22f",
+       "label": "D",
+       "content": "100 N m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9e041078-8617-57aa-9d4a-4903dc3e640b",
+     "key": "phy-mom-02",
+     "stem": "A see-saw is balanced at its centre. A 400 N boy sits 1.5 m from the pivot. How far from the pivot must a 300 N girl sit on the other side to balance him?",
+     "image_url": null,
+     "explanation": "$400 \\times 1.5 = 300 \\times d \\Rightarrow d = 2\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 1.125 m: You inverted the ratio. The lighter girl must sit further away.\n- 1.5 m: Equal distances balance only equal weights.\n- 1.33 m: You found only the ratio of the weights. Multiply by the boy's distance: 400 × 1.5 = 300 × d.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8c1c17e7-c90e-5f3b-928c-d45212ea1774",
+       "label": "A",
+       "content": "1.125 m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bf76868d-bdf3-5c3d-a016-940199ad748c",
+       "label": "B",
+       "content": "1.33 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "752d4567-8483-5818-ab82-69d365fb5490",
+       "label": "C",
+       "content": "1.5 m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "42c729bd-37b0-58e7-9c4d-89b2a7988fc3",
+       "label": "D",
+       "content": "2 m",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7b35fccf-e9c1-5b1b-940c-82b3dc7e8f90",
+     "key": "phy-mom-03",
+     "stem": "The principle of moments states that for a body in equilibrium",
+     "image_url": null,
+     "explanation": "Equilibrium means no turning: clockwise moments balance anticlockwise moments about any point.\n\n**Why the other options are wrong**\n\n- the clockwise forces equal the anticlockwise forces: The principle is about moments (force × distance), not forces.\n- all the forces act through the pivot: Forces need not act through the pivot.\n- the moments about the pivot are all zero: Individual moments need not be zero; only their total.",
+     "position": 3,
+     "options": [
+      {
+       "id": "bf6be8be-ae97-59cc-bc1d-6975a3b9cb13",
+       "label": "A",
+       "content": "the sum of clockwise moments about a point equals the sum of anticlockwise moments about the same point",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "793374c1-d3bb-5e9b-9200-aa8168884e91",
+       "label": "B",
+       "content": "the clockwise forces equal the anticlockwise forces",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ef4dd0fd-dd24-55ed-b327-94ff44cd74ae",
+       "label": "C",
+       "content": "all the forces act through the pivot",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dd3fd14a-9736-57a7-82c6-153ae4525131",
+       "label": "D",
+       "content": "the moments about the pivot are all zero",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c1131bdb-4f5b-5c74-b09f-3715db0c6b07",
+     "key": "phy-mom-04",
+     "stem": "A uniform metre rule of weight 1.2 N is pivoted at the 30 cm mark. What weight must hang at the 10 cm mark to keep it horizontal?",
+     "image_url": null,
+     "explanation": "The rule's weight acts at 50 cm, 20 cm from the pivot. $W \\times 20 = 1.2 \\times 20 \\Rightarrow W = 1.2\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 2.4 N: The rule's weight acts at the 50 cm mark, 20 cm from the pivot, not 10 cm.\n- 0.6 N: Both distances are 20 cm, so the weights are equal.\n- 3.0 N: Measure distances from the pivot (30 cm mark), not from the end.",
+     "position": 4,
+     "options": [
+      {
+       "id": "396d5772-81e9-54ec-b6fb-e3bfb391977f",
+       "label": "A",
+       "content": "0.6 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c3b51d84-8498-57cf-8e6e-2da51126f68c",
+       "label": "B",
+       "content": "1.2 N",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "81df1647-a94a-5d54-8c1d-9087d2176d93",
+       "label": "C",
+       "content": "2.4 N",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "64cfa2a4-548f-55e1-9217-46af03091fe5",
+       "label": "D",
+       "content": "3.0 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "83276ca9-c5b5-552d-833b-cf79b3c19623",
+     "key": "phy-mom-05",
+     "stem": "A uniform plank 4 m long weighing 200 N rests on supports at its two ends. A 600 N man stands 1 m from the left end. What is the reaction at the right support?",
+     "image_url": null,
+     "explanation": "Moments about the left end: $R \\times 4 = 600 \\times 1 + 200 \\times 2 = 1000 \\Rightarrow R = 250\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 550 N: That is the reaction at the left support.\n- 400 N: The two supports do not share the load equally; the man is nearer the left.\n- 150 N: You left out the plank's own weight.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ef190c92-dee2-508c-b741-7f4bc13611df",
+       "label": "A",
+       "content": "150 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "48fe6ad7-5c34-5d54-ad45-caeba11a7813",
+       "label": "B",
+       "content": "250 N",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7868200a-b7e4-5985-98f2-d74e74486184",
+       "label": "C",
+       "content": "400 N",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ba06416e-ab87-5416-81c2-f283cf1e1339",
+       "label": "D",
+       "content": "550 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "96827148-5a1c-5e6f-8361-4056679b1ca3",
+     "key": "phy-mom-06",
+     "stem": "A body is in stable equilibrium if, when slightly displaced,",
+     "image_url": null,
+     "explanation": "In stable equilibrium, displacement raises the centre of gravity, and the weight's moment returns the body.\n\n**Why the other options are wrong**\n\n- its centre of gravity is lowered and it falls over: That describes unstable equilibrium.\n- its centre of gravity stays at the same height: That describes neutral equilibrium.\n- its weight becomes zero: Displacing a body does not change its weight.",
+     "position": 6,
+     "options": [
+      {
+       "id": "e480b23a-230f-5fa5-8272-4cc58433aa03",
+       "label": "A",
+       "content": "its centre of gravity is lowered and it falls over",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f294f02a-ae0c-505b-aaeb-be9afbc07ad7",
+       "label": "B",
+       "content": "its centre of gravity stays at the same height",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "63d3c6a6-9334-5590-b73b-98916de2c8ef",
+       "label": "C",
+       "content": "its weight becomes zero",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b9366613-b4c4-5b94-9b02-f6d7a4317188",
+       "label": "D",
+       "content": "its centre of gravity is raised and it returns to its original position",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5010b7a3-36ca-5406-8176-d7e67fa0758d",
+     "key": "phy-mom-07",
+     "stem": "Which of these increases the stability of a vehicle?",
+     "image_url": null,
+     "explanation": "A low centre of gravity and a wide base keep the line of action of the weight inside the base even when tilted.\n\n**Why the other options are wrong**\n\n- a high centre of gravity and a narrow base: Both make overturning easier.\n- loading heavy goods on the roof rack: That raises the centre of gravity.\n- a high centre of gravity and a wide base: A high centre of gravity reduces stability.",
+     "position": 7,
+     "options": [
+      {
+       "id": "ef892d34-70e9-548b-b5ab-b97a12fe8a4f",
+       "label": "A",
+       "content": "a low centre of gravity and a wide wheel base",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5df44670-65ef-5e91-914f-e3e70278d277",
+       "label": "B",
+       "content": "a high centre of gravity and a narrow base",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5f1a3f79-886f-57f1-b4d6-0996ec5ae0cf",
+       "label": "C",
+       "content": "loading heavy goods on the roof rack",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9a6bf30e-841f-5a2a-bba2-8bc13c1f1b71",
+       "label": "D",
+       "content": "a high centre of gravity and a wide base",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "450e2d06-1565-53df-8952-ccf48dd04611",
+     "key": "phy-mom-08",
+     "stem": "Two equal and opposite parallel forces of 15 N act on the rim of a steering wheel of diameter 0.4 m. What is the moment of the couple?",
+     "image_url": null,
+     "explanation": "Moment of couple $= F \\times d = 15 \\times 0.4 = 6\\ \\text{N m}$.\n\n**Why the other options are wrong**\n\n- 3 N m: You used the radius. The moment of a couple uses the distance between the forces (the diameter).\n- 12 N m: You doubled the force; use one force × the distance between them.\n- 37.5 N m: You divided by the diameter.",
+     "position": 8,
+     "options": [
+      {
+       "id": "297610cb-a89b-530d-92ea-5c65c92fd2ba",
+       "label": "A",
+       "content": "3 N m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "037526d2-54b0-5493-90ac-3ee71d9d1b6f",
+       "label": "B",
+       "content": "6 N m",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0813608a-98d9-5f97-ace6-c4499d45c9d8",
+       "label": "C",
+       "content": "12 N m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "02d6a0ff-989c-5602-8109-2007434ce3eb",
+       "label": "D",
+       "content": "37.5 N m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ce518a43-12bc-5b8c-b58e-50bd916c3954",
+   "topic": "Friction",
+   "title": "Friction: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on friction, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 110,
+   "questions": [
+    {
+     "id": "1118112b-a7f9-50b0-994d-47e31ca6e6d2",
+     "key": "phy-fric-01",
+     "stem": "A 40 kg crate rests on a floor. The coefficient of static friction is 0.5. What horizontal force just starts it moving? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "$F = \\mu R = \\mu mg = 0.5 \\times 40 \\times 10 = 200\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 20 N: You used the mass instead of the weight: $R = mg = 400$ N.\n- 400 N: That is the normal reaction; friction is $\\mu R$.\n- 800 N: You divided by μ instead of multiplying.",
+     "position": 1,
+     "options": [
+      {
+       "id": "83736a16-98cb-566f-b2d8-ef347b99ad69",
+       "label": "A",
+       "content": "20 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0b658ffc-0ea4-5ab5-b856-76869ae9f83e",
+       "label": "B",
+       "content": "200 N",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0aa4d905-3f7b-58d5-9d43-b426415ba2d5",
+       "label": "C",
+       "content": "400 N",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "338ecbfe-9309-591d-adc7-9b6025a77fc2",
+       "label": "D",
+       "content": "800 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fa414afc-6d9b-513f-a30b-67ddf8d1cb26",
+     "key": "phy-fric-02",
+     "stem": "A force of 30 N just makes a 60 N block start sliding on a horizontal bench. What is the coefficient of static friction?",
+     "image_url": null,
+     "explanation": "$\\mu = \\dfrac{F}{R} = \\dfrac{30}{60} = 0.5$.\n\n**Why the other options are wrong**\n\n- 2: You divided the weight by the force.\n- 30: That is the friction force, not the coefficient.\n- 90: You added the forces.",
+     "position": 2,
+     "options": [
+      {
+       "id": "bcad5dfa-1c1f-5844-8d57-02ef0df24617",
+       "label": "A",
+       "content": "0.5",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ac3b354f-a998-50ad-8092-8bd0b913b5f2",
+       "label": "B",
+       "content": "2",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4fd1ef8d-5d98-5d76-8b53-7a994421c7c4",
+       "label": "C",
+       "content": "30",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bb0c1c4f-6e16-54a2-8aed-72bd4974bbc1",
+       "label": "D",
+       "content": "90",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b602b893-7769-595f-b9d5-a5c4e5f34040",
+     "key": "phy-fric-03",
+     "stem": "Which of the following is NOT a law of solid friction?",
+     "image_url": null,
+     "explanation": "Friction is independent of the area of contact (for the same normal reaction).\n\n**Why the other options are wrong**\n\n- Friction opposes relative motion between the surfaces.  \n  This is a law of friction.\n- Limiting friction is proportional to the normal reaction.  \n  This is a law of friction.\n- Friction depends on the nature of the surfaces.  \n  This is a law of friction.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c747d9fd-dc04-5c3d-a41b-76476d1dd794",
+       "label": "A",
+       "content": "Friction opposes relative motion between the surfaces.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a407d0d0-a250-5140-8b84-1e5139c402aa",
+       "label": "B",
+       "content": "Limiting friction is proportional to the normal reaction.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7b35fa64-fd07-52ce-8788-6beb1214ee69",
+       "label": "C",
+       "content": "Friction depends on the nature of the surfaces.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f6840aba-8e09-5505-874f-85974de419e7",
+       "label": "D",
+       "content": "Friction is directly proportional to the area of contact.",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "69733614-7ca3-5adc-91f2-10517f914bea",
+     "key": "phy-fric-04",
+     "stem": "A block on a plank just begins to slide when the plank is tilted to 30°. What is the coefficient of static friction?",
+     "image_url": null,
+     "explanation": "At the angle of friction, $\\mu = \\tan\\theta = \\tan 30° = 0.58$.\n\n**Why the other options are wrong**\n\n- 0.5: That is $\\sin 30°$; the coefficient is $\\tan\\theta$.\n- 0.87: That is $\\cos 30°$; the coefficient is $\\tan\\theta$.\n- 1.73: That is $\\tan 60°$; use the angle of the plank, 30°.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a7e4a121-0f0d-59d0-b67d-fc18f80b93bf",
+       "label": "A",
+       "content": "0.5",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "44d07752-384e-53a6-8337-f46340952274",
+       "label": "B",
+       "content": "0.58",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "153b3ca4-5d9c-54ca-8652-0fc5e50f757a",
+       "label": "C",
+       "content": "0.87",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "46066652-63e8-5211-93d1-fa63e63edd40",
+       "label": "D",
+       "content": "1.73",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3fe30fc2-bec9-5a65-813e-91427c153433",
+     "key": "phy-fric-05",
+     "stem": "Ball bearings are used in machines mainly to",
+     "image_url": null,
+     "explanation": "Rolling friction is much smaller than sliding friction, so ball bearings reduce wear and wasted energy.\n\n**Why the other options are wrong**\n\n- increase friction so parts grip: Bearings are fitted to reduce friction.\n- increase the weight of the machine: Their purpose has nothing to do with weight.\n- conduct heat away from the machine: That is not their main purpose.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d5a9be81-19de-515c-8a4c-336861fdf539",
+       "label": "A",
+       "content": "reduce friction by replacing sliding with rolling",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ab3dbf19-6f57-57f1-8cb9-37586a3f71b8",
+       "label": "B",
+       "content": "increase friction so parts grip",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ac3715de-3df3-5ffe-9d38-ed6d43f5da03",
+       "label": "C",
+       "content": "increase the weight of the machine",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ba70673f-d127-58a9-bcb0-bb295114d130",
+       "label": "D",
+       "content": "conduct heat away from the machine",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8ea7c868-7fe8-59ed-8b8e-556f413e8a7a",
+     "key": "phy-fric-06",
+     "stem": "A 10 kg box is pulled along a floor by a horizontal force of 80 N. The coefficient of kinetic friction is 0.3. What is its acceleration? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "Friction $= 0.3 \\times 100 = 30$ N. Resultant $= 80 - 30 = 50$ N. $a = \\dfrac{50}{10} = 5\\ \\text{m s}^{-2}$.\n\n**Why the other options are wrong**\n\n- 8 m s⁻²: You ignored friction.\n- 11 m s⁻²: You added friction to the pull.\n- 3 m s⁻²: You used friction as the resultant force.",
+     "position": 6,
+     "options": [
+      {
+       "id": "2896f10e-c76a-5e97-bee3-6e75896da5e6",
+       "label": "A",
+       "content": "3 m s⁻²",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f4c31380-a08b-55e1-bc06-0eb12ccb7f47",
+       "label": "B",
+       "content": "5 m s⁻²",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a9c5a353-f901-5ee1-8da1-476bb74e8eeb",
+       "label": "C",
+       "content": "8 m s⁻²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2489ff38-9f25-537b-a07d-1ab38764591e",
+       "label": "D",
+       "content": "11 m s⁻²",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a4a37d67-c3c1-5946-9bd7-697cb96e0bab",
+     "key": "phy-fric-07",
+     "stem": "Compared with limiting (static) friction between the same surfaces, kinetic friction is",
+     "image_url": null,
+     "explanation": "It takes more force to start a body sliding than to keep it sliding: kinetic friction is slightly less than limiting friction.\n\n**Why the other options are wrong**\n\n- slightly greater: Once sliding starts, friction drops a little; that is why starting a heavy box is harder.\n- exactly equal: Kinetic friction is usually a little smaller.\n- zero: Sliding surfaces still experience friction.",
+     "position": 7,
+     "options": [
+      {
+       "id": "f4a2855f-36eb-5ffa-9a04-872c52fe270d",
+       "label": "A",
+       "content": "slightly greater",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "04a50ce2-0495-55f8-8712-185d3e140d6f",
+       "label": "B",
+       "content": "exactly equal",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d9493c04-b734-519f-a502-31413b79f6e7",
+       "label": "C",
+       "content": "zero",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "46e69c91-bc90-58a4-ae98-5e19fcc22902",
+       "label": "D",
+       "content": "slightly less",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "648f1d60-4530-51a3-843d-7fdc30174bf2",
+     "key": "phy-fric-08",
+     "stem": "A car of mass 800 kg skids to a stop from 20 m s⁻¹ on a road where the coefficient of kinetic friction is 0.5. What is the stopping distance? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "Deceleration $= \\mu g = 0.5 \\times 10 = 5\\ \\text{m s}^{-2}$. $s = \\dfrac{u^2}{2a} = \\dfrac{400}{10} = 40\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 20 m: You forgot the 2 in $s = \\dfrac{u^2}{2a}$.\n- 80 m: You used μ = 0.25 by mistake; deceleration = μg = 5 m s⁻².\n- 4 m: That is the stopping time, 20 ÷ 5.",
+     "position": 8,
+     "options": [
+      {
+       "id": "4c008366-77c3-5874-9484-ac8239d80b2e",
+       "label": "A",
+       "content": "4 m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7047c082-42dc-548c-82bc-134a0ccc954e",
+       "label": "B",
+       "content": "20 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "807cf786-1561-51b7-8529-e3aa80f3bca1",
+       "label": "C",
+       "content": "40 m",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b8875e66-3c0b-5b61-b3c8-b9bc1caa1821",
+       "label": "D",
+       "content": "80 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "037a522c-3171-5f96-91b5-9ad6703b6345",
+   "topic": "Circular Motion",
+   "title": "Circular Motion: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on circular motion, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 111,
+   "questions": [
+    {
+     "id": "67aced13-83b3-57eb-8dc0-b88ec519e2e6",
+     "key": "phy-circ-01",
+     "stem": "A body moves in a circle at constant speed. Its acceleration is",
+     "image_url": null,
+     "explanation": "The changing direction of the velocity gives a centripetal acceleration $v^2/r$ towards the centre.\n\n**Why the other options are wrong**\n\n- zero, because its speed is constant: Its direction changes, so its velocity changes and it is accelerating.\n- along the tangent in the direction of motion: The velocity is along the tangent; the acceleration points to the centre.\n- directed away from the centre: Centripetal means centre-seeking.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7ed17d7a-8fb3-5483-bd9a-e57d08171faa",
+       "label": "A",
+       "content": "directed towards the centre of the circle",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "cd13e88e-6e7b-5e5a-8cbf-f51bfa0da61c",
+       "label": "B",
+       "content": "zero, because its speed is constant",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eebc9236-8b10-57a6-93ca-37bc26ec51f9",
+       "label": "C",
+       "content": "along the tangent in the direction of motion",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e1af09d3-8f0b-5d56-ab3c-531b15a71776",
+       "label": "D",
+       "content": "directed away from the centre",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "65c72418-58e2-5340-9ad8-87fbd13e5afc",
+     "key": "phy-circ-02",
+     "stem": "A wheel turns at 300 revolutions per minute. What is its angular velocity?",
+     "image_url": null,
+     "explanation": "$f = 300 \\div 60 = 5$ Hz; $\\omega = 2\\pi f = 10\\pi = 31.4\\ \\text{rad s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 5 rad s⁻¹: That is the frequency in revolutions per second. Multiply by $2\\pi$.\n- 1885 rad s⁻¹: You forgot to change minutes to seconds.\n- 15.7 rad s⁻¹: One revolution is $2\\pi$ radians, not $\\pi$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "366d686f-3fa3-52dd-9518-bda62728fefc",
+       "label": "A",
+       "content": "5 rad s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8f5df966-9526-5940-84e8-dbd81015dada",
+       "label": "B",
+       "content": "15.7 rad s⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "309bc2ba-bb04-50f8-bcfe-25bd87743720",
+       "label": "C",
+       "content": "31.4 rad s⁻¹",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "eaed629f-7a73-5676-a09b-ec6774b83213",
+       "label": "D",
+       "content": "1885 rad s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5a2f3f0b-b054-5056-a921-57cbb8e21c34",
+     "key": "phy-circ-03",
+     "stem": "A 0.5 kg stone on a string moves in a horizontal circle of radius 2 m at 6 m s⁻¹. What is the tension in the string?",
+     "image_url": null,
+     "explanation": "$T = \\dfrac{mv^2}{r} = \\dfrac{0.5 \\times 36}{2} = 9\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 1.5 N: You used $mv/r$; centripetal force is $mv^2/r$.\n- 36 N: You multiplied by the radius instead of dividing.\n- 18 N: You forgot the mass of 0.5 kg.",
+     "position": 3,
+     "options": [
+      {
+       "id": "7eb9708b-ecef-5d05-aaf7-b35b751a2dc3",
+       "label": "A",
+       "content": "1.5 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3bf89834-6b8f-51b3-9388-0c07946325a8",
+       "label": "B",
+       "content": "9 N",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "194249fe-7904-5bdb-863d-dc29059ec212",
+       "label": "C",
+       "content": "18 N",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9b322bf9-c51d-5115-bd28-fb5d38e9fc0e",
+       "label": "D",
+       "content": "36 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "65613164-78b4-5acb-8ae6-4076b6d75a0d",
+     "key": "phy-circ-04",
+     "stem": "A stone whirled in a horizontal circle on a string is released when the string breaks. It moves off",
+     "image_url": null,
+     "explanation": "With the centripetal force gone, the stone continues in a straight line in the direction it was moving: along the tangent.\n\n**Why the other options are wrong**\n\n- along the radius, away from the centre: No outward force acts; with no force, it moves straight on along its velocity, which is tangential.\n- towards the centre of the circle: With no string, nothing pulls it towards the centre.\n- in a smaller circle: Without a centripetal force it cannot keep circling.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7508d205-8dbb-5505-a153-c19b6539dc55",
+       "label": "A",
+       "content": "along the radius, away from the centre",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9933a79f-562e-557c-9ad6-545a89f3be4f",
+       "label": "B",
+       "content": "towards the centre of the circle",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "81d42777-b50c-5c88-a4e8-22aac59f4ab4",
+       "label": "C",
+       "content": "in a smaller circle",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "867b357a-d405-569d-a843-5ca4d7c90e76",
+       "label": "D",
+       "content": "along the tangent to the circle at that point",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "056eb523-9558-5b90-89e7-0de53ebbd74f",
+     "key": "phy-circ-05",
+     "stem": "A car of mass 1000 kg rounds a level bend of radius 40 m at 10 m s⁻¹. What friction force is needed between the tyres and the road?",
+     "image_url": null,
+     "explanation": "$F = \\dfrac{mv^2}{r} = \\dfrac{1000 \\times 100}{40} = 2500\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 250 N: You used $mv/r$ instead of $mv^2/r$.\n- 2.5 N: You forgot the mass: $v^2/r$ is the acceleration, not the force.\n- 4000000 N: You multiplied by the radius.",
+     "position": 5,
+     "options": [
+      {
+       "id": "2ec52830-2b3b-5d22-914d-edcdee0d6a64",
+       "label": "A",
+       "content": "2.5 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c7f56729-17f1-5190-a383-8eb70b376a45",
+       "label": "B",
+       "content": "250 N",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1d0a5440-af28-5b9b-a37d-937d08481019",
+       "label": "C",
+       "content": "2500 N",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a33c3733-b42d-5039-8426-39ba468fd640",
+       "label": "D",
+       "content": "4000000 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e9e1e711-d591-5e4b-af5c-6dbf3c6398e7",
+     "key": "phy-circ-06",
+     "stem": "If the distance between two masses is doubled, the gravitational force between them becomes",
+     "image_url": null,
+     "explanation": "$F \\propto \\dfrac{1}{r^2}$: doubling $r$ divides $F$ by $2^2 = 4$.\n\n**Why the other options are wrong**\n\n- half as large: Gravity follows an inverse-square law: double the distance, quarter the force.\n- twice as large: Increasing the distance weakens the force.\n- four times as large: The force decreases, it does not increase.",
+     "position": 6,
+     "options": [
+      {
+       "id": "f962d2de-0a9b-5a13-98af-51885db304cd",
+       "label": "A",
+       "content": "one quarter as large",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "28dccde4-fda3-5091-ba65-1204da35b7eb",
+       "label": "B",
+       "content": "half as large",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4cccc55d-9204-54f7-80db-b4012e61582a",
+       "label": "C",
+       "content": "twice as large",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "11db3cff-7c16-5089-bf13-c6b3c605ce16",
+       "label": "D",
+       "content": "four times as large",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f8034a4c-7a22-5cf4-8cf0-1a06065345f9",
+     "key": "phy-circ-07",
+     "stem": "A geostationary satellite has a period of",
+     "image_url": null,
+     "explanation": "It orbits at the same rate as the Earth spins, so it stays above one point on the equator: a period of 24 hours.\n\n**Why the other options are wrong**\n\n- 1 hour: A satellite close to the Earth takes about 1.5 hours; a geostationary one is much higher.\n- 12 hours: To stay above the same point, it must turn with the Earth: once every 24 hours.\n- 365 days: That is the Earth's orbit around the Sun.",
+     "position": 7,
+     "options": [
+      {
+       "id": "c4543a28-5105-53c2-8df7-a84e87eb2731",
+       "label": "A",
+       "content": "1 hour",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8259ff69-16ea-5da1-adf2-03b69f033e94",
+       "label": "B",
+       "content": "12 hours",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "52425edc-ed24-52ee-acca-738065d58818",
+       "label": "C",
+       "content": "365 days",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a99e7c8a-effe-5ca2-87a9-ffa74f3605b3",
+       "label": "D",
+       "content": "24 hours",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b2d1cbc4-a6d4-53c8-b1a1-fca8e7d130ea",
+     "key": "phy-circ-08",
+     "stem": "A body moves in a circle of radius 5 m with angular velocity 4 rad s⁻¹. What is its linear speed?",
+     "image_url": null,
+     "explanation": "$v = \\omega r = 4 \\times 5 = 20\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 1.25 m s⁻¹: You divided the radius by ω; $v = \\omega r$.\n- 0.8 m s⁻¹: You divided ω by the radius.\n- 80 m s⁻¹: That is the centripetal acceleration, $\\omega^2 r$.",
+     "position": 8,
+     "options": [
+      {
+       "id": "fdcd7788-e30b-51b2-94e6-ce42fc69db08",
+       "label": "A",
+       "content": "0.8 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dddf6ed5-f26a-5fdd-be8a-f21361c5a077",
+       "label": "B",
+       "content": "1.25 m s⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "326c89c6-9938-51a8-8c8f-bf88a65b7429",
+       "label": "C",
+       "content": "20 m s⁻¹",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d610b5f2-2771-5258-8c82-ebc47f75a7eb",
+       "label": "D",
+       "content": "80 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "137f6274-04f6-502d-b810-d5bb8a54334d",
+   "topic": "Simple Harmonic Motion",
+   "title": "Simple Harmonic Motion: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on simple harmonic motion, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 112,
+   "questions": [
+    {
+     "id": "decbb2b6-e0bd-58c2-b2e2-5c7e4ab96a17",
+     "key": "phy-shm-01",
+     "stem": "A body moves with simple harmonic motion if its acceleration is",
+     "image_url": null,
+     "explanation": "SHM: $a = -\\omega^2 x$, proportional to displacement and always towards the equilibrium position.\n\n**Why the other options are wrong**\n\n- constant and directed towards a fixed point: In SHM the acceleration changes with displacement.\n- proportional to its velocity: SHM links acceleration to displacement, not velocity.\n- proportional to its displacement and directed away from the fixed point: The restoring acceleration points back towards the fixed point.",
+     "position": 1,
+     "options": [
+      {
+       "id": "6b061f15-30b9-564d-960f-b1a77586742b",
+       "label": "A",
+       "content": "proportional to its displacement from a fixed point and directed towards that point",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0b235ed0-d9d5-59b1-a790-46aea9cd02e9",
+       "label": "B",
+       "content": "constant and directed towards a fixed point",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a99c7148-a75b-5114-85dd-598ccdd42682",
+       "label": "C",
+       "content": "proportional to its velocity",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "10eeeb49-fab0-5e17-9ece-53f2d4bb77c0",
+       "label": "D",
+       "content": "proportional to its displacement and directed away from the fixed point",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e2f3543b-9400-5a74-988a-3fd069878991",
+     "key": "phy-shm-02",
+     "stem": "A pendulum makes 40 complete oscillations in 60 s. What is its frequency?",
+     "image_url": null,
+     "explanation": "$f = \\dfrac{40}{60} = 0.67\\ \\text{Hz}$ (period 1.5 s).\n\n**Why the other options are wrong**\n\n- 1.5 Hz: That is the period (60 ÷ 40), not the frequency.\n- 2400 Hz: You multiplied the oscillations by the time.\n- 40 Hz: That is the number of oscillations, not oscillations per second.",
+     "position": 2,
+     "options": [
+      {
+       "id": "adea2f86-a83e-50a3-9656-18d50b8b77bd",
+       "label": "A",
+       "content": "0.67 Hz",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "df086343-af85-5a32-8920-58e15af70ca6",
+       "label": "B",
+       "content": "1.5 Hz",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a53ffdee-f777-59db-8daf-65e1d5112744",
+       "label": "C",
+       "content": "40 Hz",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "61b37435-7ea4-5771-b458-68a4b56eb4d9",
+       "label": "D",
+       "content": "2400 Hz",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e15ced33-00b2-5765-83c9-4d8a77cb02eb",
+     "key": "phy-shm-03",
+     "stem": "What is the period of a simple pendulum 2.5 m long? (g = 10 m s⁻², take π = 3.14)",
+     "image_url": null,
+     "explanation": "$T = 2\\pi\\sqrt{\\dfrac{l}{g}} = 2(3.14)\\sqrt{0.25} = 3.14\\ \\text{s}$.\n\n**Why the other options are wrong**\n\n- 1.57 s: You left out the 2 in $T = 2\\pi\\sqrt{l/g}$.\n- 9.93 s: You left out g: the formula is $2\\pi\\sqrt{l/g}$, not $2\\pi\\sqrt{l}$.\n- 12.56 s: You used $\\sqrt{g/l}$ instead of $\\sqrt{l/g}$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "4762b64e-bc6d-5d07-83b3-5eee1d36746d",
+       "label": "A",
+       "content": "1.57 s",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "97d9a86f-8415-5af6-9b93-6c823204f1e1",
+       "label": "B",
+       "content": "3.14 s",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "92e21cb2-4e54-57bb-be19-aed4c19c0cb6",
+       "label": "C",
+       "content": "9.93 s",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "86327699-6380-5623-9611-a13885db5d4d",
+       "label": "D",
+       "content": "12.56 s",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "37461f01-9b3d-5b53-bd2d-b3cf6f3d1f62",
+     "key": "phy-shm-04",
+     "stem": "The period of a simple pendulum does NOT depend on",
+     "image_url": null,
+     "explanation": "$T = 2\\pi\\sqrt{l/g}$ contains no mass term.\n\n**Why the other options are wrong**\n\n- the length of the string: $T = 2\\pi\\sqrt{l/g}$: a longer string gives a longer period.\n- the acceleration due to gravity: $g$ appears in the formula; a pendulum swings more slowly on the Moon.\n- the place where it swings, if g differs there: Different places can have slightly different $g$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "0e21409d-d612-52bb-be64-37005489fab1",
+       "label": "A",
+       "content": "the length of the string",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4451488e-52d2-562a-971d-c06586da5489",
+       "label": "B",
+       "content": "the acceleration due to gravity",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fbbb3f7f-a38a-540b-852a-b787f34ac7f0",
+       "label": "C",
+       "content": "the place where it swings, if g differs there",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dc3d1228-22bc-5b12-8c19-fadc3711ed1c",
+       "label": "D",
+       "content": "the mass of the bob",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a126b841-7207-5dad-8466-0b6b4dd3c35e",
+     "key": "phy-shm-05",
+     "stem": "For a body moving with SHM, the speed is greatest",
+     "image_url": null,
+     "explanation": "At the centre the potential energy is least and the kinetic energy greatest.\n\n**Why the other options are wrong**\n\n- at the extreme positions: At the extremes the body stops momentarily.\n- halfway between the centre and an extreme: Speed keeps increasing all the way to the centre.\n- at the same value everywhere: In SHM the speed changes continuously.",
+     "position": 5,
+     "options": [
+      {
+       "id": "c9d684ef-af77-5ca9-9fd0-86beeb679dc4",
+       "label": "A",
+       "content": "at the equilibrium position",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ed192070-0a40-5c91-a33a-ba8c6dd65bd2",
+       "label": "B",
+       "content": "at the extreme positions",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "45276626-3e06-50cf-9cdc-ecabf42b53bb",
+       "label": "C",
+       "content": "halfway between the centre and an extreme",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0918b617-70d9-52b9-996a-07d932cc931c",
+       "label": "D",
+       "content": "at the same value everywhere",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f79e78c7-88eb-576f-bf5d-4b5a9b82f187",
+     "key": "phy-shm-06",
+     "stem": "A 0.2 kg mass oscillates on a spring of spring constant 20 N m⁻¹. What is the period? (take π = 3.14)",
+     "image_url": null,
+     "explanation": "$T = 2\\pi\\sqrt{\\dfrac{m}{k}} = 2(3.14)\\sqrt{\\dfrac{0.2}{20}} = 6.28 \\times 0.1 = 0.628\\ \\text{s}$.\n\n**Why the other options are wrong**\n\n- 62.8 s: You used $\\sqrt{k/m}$ instead of $\\sqrt{m/k}$.\n- 0.0628 s: You forgot the square root.\n- 0.314 s: You left out the 2.",
+     "position": 6,
+     "options": [
+      {
+       "id": "905eec48-5bb2-5ce4-bd61-3df4b5952ae2",
+       "label": "A",
+       "content": "0.0628 s",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ca918748-d3d0-55d9-9672-28c8906c8f6d",
+       "label": "B",
+       "content": "0.314 s",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "19cb8387-b7fb-5af7-9125-d251960d0d96",
+       "label": "C",
+       "content": "0.628 s",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "76258b29-21bc-5157-8ce4-e5fba312b420",
+       "label": "D",
+       "content": "62.8 s",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b09786ba-2b64-5bc6-8212-c26845cb425d",
+     "key": "phy-shm-07",
+     "stem": "Resonance occurs when",
+     "image_url": null,
+     "explanation": "When the driving frequency equals the natural frequency, energy is fed in at just the right moments and the amplitude becomes very large.\n\n**Why the other options are wrong**\n\n- a body vibrates with decreasing amplitude: That is damping.\n- the driving frequency is far from the natural frequency: Then the amplitude stays small.\n- a body stops vibrating: Resonance makes the amplitude large, not zero.",
+     "position": 7,
+     "options": [
+      {
+       "id": "2347a2b4-9381-56dc-8cf0-d1312bf598b5",
+       "label": "A",
+       "content": "a body vibrates with decreasing amplitude",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5bb3be60-5abc-5f2f-b919-0baceda3a5d0",
+       "label": "B",
+       "content": "the driving frequency is far from the natural frequency",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "41bcc2d7-119e-524d-9f23-c3f5cda62da1",
+       "label": "C",
+       "content": "a body stops vibrating",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "77cfba27-7f31-57a4-bccd-3d49ab888169",
+       "label": "D",
+       "content": "a body is forced to vibrate at its natural frequency",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f5815887-69ea-5012-a143-814dd62a046e",
+     "key": "phy-shm-08",
+     "stem": "A body performs SHM with amplitude 0.2 m and angular frequency 5 rad s⁻¹. What is its maximum speed?",
+     "image_url": null,
+     "explanation": "$v_{max} = A\\omega = 0.2 \\times 5 = 1\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 5 m s⁻¹: That is the maximum acceleration, $A\\omega^2$.\n- 0.04 m s⁻¹: You divided the amplitude by ω.\n- 25 m s⁻¹: You squared ω without the amplitude.",
+     "position": 8,
+     "options": [
+      {
+       "id": "c179fa87-df6b-5c77-862c-4e69cd6f3129",
+       "label": "A",
+       "content": "0.04 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c725d049-8202-5ec5-85ce-e16d042939b7",
+       "label": "B",
+       "content": "1 m s⁻¹",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "73b8d48e-b79f-514c-85c0-484f6ad2bb3c",
+       "label": "C",
+       "content": "5 m s⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cac8671f-2a76-5a6d-a1be-10532e68fee5",
+       "label": "D",
+       "content": "25 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f27e54a2-eb97-5a7f-9e1b-4c3dff62f75d",
+   "topic": "Work, Energy, and Power",
+   "title": "Work, Energy, and Power: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on work, energy, and power, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 113,
+   "questions": [
+    {
+     "id": "c65920aa-4d29-5361-bdaf-dd9921c8294f",
+     "key": "phy-wep-01",
+     "stem": "A force of 50 N pulls a box 8 m along the floor in the direction of the force. How much work is done?",
+     "image_url": null,
+     "explanation": "$W = Fs = 50 \\times 8 = 400\\ \\text{J}$.\n\n**Why the other options are wrong**\n\n- 6.25 J: You divided force by distance.\n- 58 J: You added force and distance.\n- 200 J: You halved the work; $W = Fs$ with no ½.",
+     "position": 1,
+     "options": [
+      {
+       "id": "394bfc98-1a9b-5761-bbec-6a9458307a64",
+       "label": "A",
+       "content": "6.25 J",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7fb6dbcf-3cac-5bea-a354-f63a55429068",
+       "label": "B",
+       "content": "58 J",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cb2fa7de-0389-5215-a714-1c0a66cb5c85",
+       "label": "C",
+       "content": "200 J",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d4a208f9-e0bf-5bcb-a8fc-36ce959b16a4",
+       "label": "D",
+       "content": "400 J",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ecfbdf31-97fd-5517-a8db-31e390c67d52",
+     "key": "phy-wep-02",
+     "stem": "A 2 kg ball moves at 6 m s⁻¹. What is its kinetic energy?",
+     "image_url": null,
+     "explanation": "$E_k = \\tfrac{1}{2}mv^2 = \\tfrac{1}{2}(2)(36) = 36\\ \\text{J}$.\n\n**Why the other options are wrong**\n\n- 72 J: You forgot the ½.\n- 12 J: You used $mv$ (momentum), not $\\tfrac{1}{2}mv^2$.\n- 6 J: You forgot to square the speed.",
+     "position": 2,
+     "options": [
+      {
+       "id": "4dd7e7d3-be6f-5594-9c02-3b37dcb3c2e1",
+       "label": "A",
+       "content": "6 J",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d0de2e62-8b22-516e-bba3-9ef89601f79e",
+       "label": "B",
+       "content": "12 J",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a696d681-9b56-590d-89c6-6ac829d8a4f0",
+       "label": "C",
+       "content": "36 J",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0d955394-1ec0-5824-84d9-801104c38284",
+       "label": "D",
+       "content": "72 J",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "709622c6-087d-53e1-80fe-578b6851c276",
+     "key": "phy-wep-03",
+     "stem": "A 60 kg student climbs stairs 5 m high in 10 s. What is her power? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "$P = \\dfrac{mgh}{t} = \\dfrac{60 \\times 10 \\times 5}{10} = 300\\ \\text{W}$.\n\n**Why the other options are wrong**\n\n- 3000 W: That is the work done (energy), not the power.\n- 30 W: You left out g: weight = 600 N.\n- 120 W: You divided by 25 instead of 10.",
+     "position": 3,
+     "options": [
+      {
+       "id": "43be0ec7-6536-5c36-8d94-4d31d3c086b6",
+       "label": "A",
+       "content": "30 W",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4e9fbd43-b0d1-5a46-9b6f-d29f940e832e",
+       "label": "B",
+       "content": "120 W",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6b04551f-d17c-5842-af6e-1a15eb59dd7c",
+       "label": "C",
+       "content": "300 W",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c39deb08-2af6-568b-aec5-8fdc61d64deb",
+       "label": "D",
+       "content": "3000 W",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fdd03a57-6df5-5293-a644-bdd062c236f7",
+     "key": "phy-wep-04",
+     "stem": "A stone falls freely from rest from a height of 45 m. With what speed does it hit the ground? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "$mgh = \\tfrac{1}{2}mv^2 \\Rightarrow v = \\sqrt{2gh} = \\sqrt{900} = 30\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 900 m s⁻¹: That is $v^2$.\n- 21.2 m s⁻¹: You forgot the 2: $mgh = \\tfrac{1}{2}mv^2$ gives $v = \\sqrt{2gh}$.\n- 450 m s⁻¹: You found $gh$ without the 2 or the square root.",
+     "position": 4,
+     "options": [
+      {
+       "id": "faaec8ac-37f1-5c8a-8edd-590aa63a499c",
+       "label": "A",
+       "content": "21.2 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0505e58d-92d7-536d-8cc0-fb01afecf73f",
+       "label": "B",
+       "content": "30 m s⁻¹",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "003a854e-8482-55d2-998d-2b932dc9553f",
+       "label": "C",
+       "content": "450 m s⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "87b63128-4ef7-5ddc-9b72-ca9dd49f6c10",
+       "label": "D",
+       "content": "900 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "512882c6-4e30-5a91-bca4-16b1550a9153",
+     "key": "phy-wep-05",
+     "stem": "In which of these cases is NO work done on the object?",
+     "image_url": null,
+     "explanation": "Work needs movement in the direction of the force. A load held still does not move.\n\n**Why the other options are wrong**\n\n- A woman lifts a bucket of water from the floor to a table.  \n  The bucket moves upwards in the direction of the lifting force: work is done.\n- A boy pushes a cart along a road.  \n  The cart moves in the direction of the push: work is done.\n- A crane raises a steel beam.  \n  The beam moves upwards: work is done.",
+     "position": 5,
+     "options": [
+      {
+       "id": "1834453e-08ad-5d49-9c3a-9b180bd32b34",
+       "label": "A",
+       "content": "A man holds a heavy load still above his head.",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b72d7714-f159-5618-b442-e2be8decc410",
+       "label": "B",
+       "content": "A woman lifts a bucket of water from the floor to a table.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4c5797a4-faf9-5972-b1be-f26627bb1df8",
+       "label": "C",
+       "content": "A boy pushes a cart along a road.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ac133175-c123-521d-818c-dee48fd5afe0",
+       "label": "D",
+       "content": "A crane raises a steel beam.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f1c52451-03e5-5555-8d2c-bf39e1a33bab",
+     "key": "phy-wep-06",
+     "stem": "In a hydroelectric power station, the main energy change is",
+     "image_url": null,
+     "explanation": "Water stored high behind a dam has potential energy; it falls and gains kinetic energy, turning turbines that drive generators.\n\n**Why the other options are wrong**\n\n- chemical energy → heat energy → electrical energy: That describes a diesel or coal power station.\n- light energy → electrical energy: That describes a solar panel.\n- electrical energy → kinetic energy: That describes an electric motor.",
+     "position": 6,
+     "options": [
+      {
+       "id": "5aa4654a-98b0-519a-9aa2-4838143d7a0f",
+       "label": "A",
+       "content": "chemical energy → heat energy → electrical energy",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "399f554b-05bf-5d2c-a827-4a6a8705046b",
+       "label": "B",
+       "content": "light energy → electrical energy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "815fc20f-c738-5d7d-9f4d-eae29eb5189b",
+       "label": "C",
+       "content": "electrical energy → kinetic energy",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "65d7ba3a-0820-5ce0-896e-055c39d026a0",
+       "label": "D",
+       "content": "potential energy → kinetic energy → electrical energy",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "14a7970b-b2cf-5365-b8d6-ef4dab754a2e",
+     "key": "phy-wep-07",
+     "stem": "A pump with an input power of 2 kW raises 900 kg of water through 12 m in 60 s. What is its efficiency? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "Useful work $= mgh = 900 \\times 10 \\times 12 = 108\\,000$ J. Input $= 2000 \\times 60 = 120\\,000$ J. Efficiency $= 90\\%$.\n\n**Why the other options are wrong**\n\n- 5400 %: You compared the useful work with the input power, not with the energy input (power × time).\n- 0.9 %: You found the fraction but did not multiply by 100.\n- 111.1 %: You divided input by output.",
+     "position": 7,
+     "options": [
+      {
+       "id": "d1b5ef61-6e63-5a3a-8629-e95d5c9534cb",
+       "label": "A",
+       "content": "0.9 %",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5c44f774-c0ec-510a-be54-40d5498f9994",
+       "label": "B",
+       "content": "90 %",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2a07bc86-fd13-5dec-9ae1-f3ba377228ba",
+       "label": "C",
+       "content": "111.1 %",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fe63476d-ac15-5fd9-b76e-a3174287a0a5",
+       "label": "D",
+       "content": "5400 %",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "283b8cce-1946-51e8-899d-76640d4833da",
+     "key": "phy-wep-08",
+     "stem": "Which of these is a non-renewable source of energy?",
+     "image_url": null,
+     "explanation": "Crude oil formed over millions of years and is being used up far faster than it forms.\n\n**Why the other options are wrong**\n\n- solar energy: Sunlight is replaced continuously: renewable.\n- hydroelectric energy: Rain refills rivers and dams: renewable.\n- wind energy: Wind is renewed by the Sun's heating of the air: renewable.",
+     "position": 8,
+     "options": [
+      {
+       "id": "46ede13c-03b6-57a6-9475-e29a34126bdf",
+       "label": "A",
+       "content": "crude oil",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "57582ed7-5045-516b-a3e2-9fe5ceeeaa35",
+       "label": "B",
+       "content": "solar energy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d0925613-33cc-5365-afe2-fb51ea51b1d1",
+       "label": "C",
+       "content": "hydroelectric energy",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6a7a0cca-9043-5c11-ab14-c72a9ebc5afb",
+       "label": "D",
+       "content": "wind energy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "3266bf8f-3919-55c0-a7b5-ed5ff01d0369",
+   "topic": "Simple Machines",
+   "title": "Simple Machines: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on simple machines, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 114,
+   "questions": [
+    {
+     "id": "f571dcc2-5677-520c-803e-858470dceab7",
+     "key": "phy-mach-01",
+     "stem": "A machine lifts a load of 500 N with an effort of 125 N. What is its mechanical advantage?",
+     "image_url": null,
+     "explanation": "$\\text{MA} = \\dfrac{\\text{load}}{\\text{effort}} = \\dfrac{500}{125} = 4$.\n\n**Why the other options are wrong**\n\n- 0.25: You divided the effort by the load.\n- 375: You subtracted the effort from the load.\n- 625: You added them.",
+     "position": 1,
+     "options": [
+      {
+       "id": "75ec4a25-10ba-5657-a1ed-74c36bfd2640",
+       "label": "A",
+       "content": "0.25",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0899bfcb-7fea-565e-ab7f-1ba67d2639c1",
+       "label": "B",
+       "content": "4",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "44e65b98-c60f-5531-b251-cb043407b138",
+       "label": "C",
+       "content": "375",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3a8605d0-2560-5663-94c4-5563414b8e7b",
+       "label": "D",
+       "content": "625",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7334fb5e-e536-558a-b029-5d4377b56822",
+     "key": "phy-mach-02",
+     "stem": "A machine has a velocity ratio of 6 and a mechanical advantage of 4.5. What is its efficiency?",
+     "image_url": null,
+     "explanation": "Efficiency $= \\dfrac{\\text{MA}}{\\text{VR}} \\times 100\\% = \\dfrac{4.5}{6} \\times 100\\% = 75\\%$.\n\n**Why the other options are wrong**\n\n- 133.3 %: You divided VR by MA.\n- 27 %: You multiplied MA by VR.\n- 0.75 %: You found the ratio but did not multiply by 100.",
+     "position": 2,
+     "options": [
+      {
+       "id": "986e53fd-241b-5809-b1de-f7ac656e6ead",
+       "label": "A",
+       "content": "0.75 %",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c810a140-e55d-521a-9b1d-f7338c14bf44",
+       "label": "B",
+       "content": "27 %",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ec067993-cf5c-539c-9461-ef57b5b1d759",
+       "label": "C",
+       "content": "75 %",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "decab46f-9a8c-52f3-9d54-afe36294bdf9",
+       "label": "D",
+       "content": "133.3 %",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4c581d67-583d-559d-8db2-b6808d03ca61",
+     "key": "phy-mach-03",
+     "stem": "The efficiency of a real machine is always less than 100% because",
+     "image_url": null,
+     "explanation": "Part of the input work goes into friction (heat) and lifting parts of the machine, so useful output is less than input.\n\n**Why the other options are wrong**\n\n- the effort is always smaller than the load: Many machines have effort smaller than load, yet that is not why efficiency is below 100%.\n- the velocity ratio is always less than 1: Most machines have a VR greater than 1.\n- machines create extra energy: Machines cannot create energy.",
+     "position": 3,
+     "options": [
+      {
+       "id": "e7da409a-537c-5cf8-a0a0-82836b90264a",
+       "label": "A",
+       "content": "the effort is always smaller than the load",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7cfa09dd-764d-5030-9b41-632541f63108",
+       "label": "B",
+       "content": "some work is wasted overcoming friction and lifting moving parts",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "069596d1-ed9d-57d8-98b0-c02d20d0f613",
+       "label": "C",
+       "content": "the velocity ratio is always less than 1",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7ddc4eaa-8626-561f-aed7-972c44735bb3",
+       "label": "D",
+       "content": "machines create extra energy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e7c8dec6-ecb4-56d0-b0f6-d84635969e98",
+     "key": "phy-mach-04",
+     "stem": "A wheelbarrow is an example of a",
+     "image_url": null,
+     "explanation": "The wheel is the fulcrum, the load is in the middle and the effort is at the handles: a second-class lever.\n\n**Why the other options are wrong**\n\n- first-class lever: In a first-class lever the fulcrum is between effort and load; in a wheelbarrow the load is in the middle.\n- third-class lever: In a third-class lever the effort is in the middle.\n- pulley system: A wheelbarrow has no ropes or pulleys.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b2af43c3-1078-52b7-85dd-9128c029d0f6",
+       "label": "A",
+       "content": "first-class lever",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "87db0c3b-bb48-5fc1-8b8b-d743fd19e6a5",
+       "label": "B",
+       "content": "third-class lever",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "45809b57-4055-5e29-884f-ff41bb020eff",
+       "label": "C",
+       "content": "pulley system",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5aa3865a-af4c-5bc8-a31b-af136b0c5d4a",
+       "label": "D",
+       "content": "second-class lever",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f325dc15-eac1-5b41-b507-d6222ead9f85",
+     "key": "phy-mach-05",
+     "stem": "A block and tackle has three pulleys in the upper block and two in the lower block. What is its velocity ratio?",
+     "image_url": null,
+     "explanation": "For a block and tackle, VR = total number of pulleys = 3 + 2 = 5.\n\n**Why the other options are wrong**\n\n- 3: Count the pulleys in both blocks (or the strands supporting the lower block).\n- 2: Count the pulleys in both blocks, not just the lower one.\n- 6: You multiplied the numbers of pulleys.",
+     "position": 5,
+     "options": [
+      {
+       "id": "5f90e468-f0d6-5ce7-8999-d5d1f931379f",
+       "label": "A",
+       "content": "2",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "45dce673-f7be-5c49-a527-d4ae4f1687c2",
+       "label": "B",
+       "content": "3",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4b5f6005-edb3-5d8d-93f1-94d98ba7d8d3",
+       "label": "C",
+       "content": "5",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "823951b8-a4b9-5f5d-80d9-3ba9e513d305",
+       "label": "D",
+       "content": "6",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3bd97db6-7d7f-5186-8f73-a76f8a76aab2",
+     "key": "phy-mach-06",
+     "stem": "A plank 5 m long is used to roll a drum onto a platform 1.25 m high. What is the velocity ratio of this inclined plane?",
+     "image_url": null,
+     "explanation": "$\\text{VR} = \\dfrac{l}{h} = \\dfrac{5}{1.25} = 4$.\n\n**Why the other options are wrong**\n\n- 0.25: You divided the height by the length.\n- 6.25: You multiplied length by height.\n- 3.75: You subtracted the height from the length.",
+     "position": 6,
+     "options": [
+      {
+       "id": "b0f582cb-c01a-5422-a9a1-30d6412ee027",
+       "label": "A",
+       "content": "0.25",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9c1b33ff-13a4-5eb1-b4da-818f7a8cfb7c",
+       "label": "B",
+       "content": "3.75",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a3910c99-4bc5-57a1-a8ea-43905d386bc7",
+       "label": "C",
+       "content": "4",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8fff2e56-7d02-5349-a726-8f6f2c15c8a9",
+       "label": "D",
+       "content": "6.25",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aaecfb41-999c-5511-998b-59283fcf16fd",
+     "key": "phy-mach-07",
+     "stem": "A screw jack has a pitch of 0.5 cm and a handle 35 cm long. What is its velocity ratio? (take π = 22/7)",
+     "image_url": null,
+     "explanation": "$\\text{VR} = \\dfrac{2\\pi a}{p} = \\dfrac{2 \\times \\tfrac{22}{7} \\times 35}{0.5} = \\dfrac{220}{0.5} = 440$.\n\n**Why the other options are wrong**\n\n- 70: You used the handle length directly. The effort moves round a circle of circumference $2\\pi a$.\n- 220: You used $\\pi a$ instead of $2\\pi a$.\n- 110: You used $2\\pi a$ but divided by 2 cm instead of 0.5 cm.",
+     "position": 7,
+     "options": [
+      {
+       "id": "fd356c29-d1aa-5b38-9e89-81378f667f76",
+       "label": "A",
+       "content": "70",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0ed32d07-3f3d-50b6-a8b2-745241612e9f",
+       "label": "B",
+       "content": "110",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "35465d76-7133-5c6f-83c8-5b591d7421a9",
+       "label": "C",
+       "content": "220",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "eb120ce8-d8a1-5224-a0db-80a65240c107",
+       "label": "D",
+       "content": "440",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f2645225-4ad2-5ea5-8a2c-824fcd2b3233",
+     "key": "phy-mach-08",
+     "stem": "In a hydraulic press, the small piston has an area of 4 cm² and the large piston 200 cm². What load can an effort of 60 N support on the large piston?",
+     "image_url": null,
+     "explanation": "$F_2 = F_1 \\times \\dfrac{A_2}{A_1} = 60 \\times \\dfrac{200}{4} = 3000\\ \\text{N}$.\n\n**Why the other options are wrong**\n\n- 1.2 N: You divided instead of multiplying by the area ratio.\n- 264 N: You added the areas to the effort.\n- 12000 N: You multiplied by the larger area alone.",
+     "position": 8,
+     "options": [
+      {
+       "id": "573119a7-8934-5d8e-b847-5dd216a48d1c",
+       "label": "A",
+       "content": "1.2 N",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "13b9ab1d-5ccd-59d9-b1fa-c1d8f5a69608",
+       "label": "B",
+       "content": "264 N",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "443107b0-dfd9-533e-9a07-edea5b40bcec",
+       "label": "C",
+       "content": "3000 N",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ae68283a-ea05-57ec-9a9c-bb6c32392cf5",
+       "label": "D",
+       "content": "12000 N",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "049274338ab1"
+}

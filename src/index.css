@@ -300,6 +300,20 @@ html.app-boot [data-public-footer] { display: none; }
   }
 }
 
+/* Long bare links (e.g. reference URLs) wrap instead of widening the page. */
+.prose a {
+  overflow-wrap: anywhere;
+}
+
+/* Long display formulas scroll inside their own box on phones instead of
+   pushing the whole page sideways. */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+  max-width: 100%;
+}
+
 /* Markdown tables (lessons, AI tutor): readable on phones, scroll sideways when wide. */
 .md-table {
   margin: 0;

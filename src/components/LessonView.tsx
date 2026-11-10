@@ -39,6 +39,17 @@ function directiveTransformer() {
   }
 }
 
+// Some lessons write display maths as \[ ... \] and inline maths as \( ... \)
+// (LaTeX style). remark-math only reads $$ ... $$ and $ ... $, so convert first;
+// otherwise the formula shows as raw text.
+const DISPLAY_MATH = /\\\[([\s\S]+?)\\\]/g
+const INLINE_MATH = /\\\(([\s\S]+?)\\\)/g
+export function normalizeMath(md: string): string {
+  return md
+    .replace(DISPLAY_MATH, (_m, tex: string) => ['', '$$', tex.trim(), '$$', ''].join('\n'))
+    .replace(INLINE_MATH, (_m, tex: string) => '$' + tex.trim() + '$')
+}
+
 export function LessonView({ content }: { content: string }) {
   return (
     <ReactMarkdown
@@ -56,9 +67,19 @@ export function LessonView({ content }: { content: string }) {
         diagram: ({ name }: any) => <Diagram name={name} />,
         // Wide tables scroll sideways on phones; short-cell tables fit the screen.
         table: MdTable,
+        // Diagrams sit on a white card, so line drawings stay readable in dark mode.
+        img: ({ node: _node, src, alt }: any) => (
+          <img
+            src={src}
+            alt={alt ?? ''}
+            loading="lazy"
+            decoding="async"
+            className="not-prose mx-auto my-5 block h-auto max-h-[32rem] w-full max-w-2xl rounded-xl border bg-white object-contain p-1.5"
+          />
+        ),
       } as any}
     >
-      {content}
+      {normalizeMath(content)}
     </ReactMarkdown>
   )
 }

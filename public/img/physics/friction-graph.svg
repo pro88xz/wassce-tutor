@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Friction force against applied force</title>
+<desc id="d">As the applied force increases, static friction rises equally until it reaches the limiting value. The block then starts to slide and friction drops a little to the constant kinetic value.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="640" height="380" rx="20" fill="#f8fafc"/>
+<line x1="90.0" y1="320.0" x2="600.0" y2="320.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="90.0" y1="320.0" x2="90.0" y2="40.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="600.0" y="346.0" font-size="20" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">applied force P / N</text>
+<text x="100.0" y="36.0" font-size="20" fill="#475569" text-anchor="start" dominant-baseline="auto" font-weight="normal">friction F / N</text>
+<text x="78.0" y="336.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">0</text>
+<line x1="90.0" y1="320.0" x2="330.0" y2="120.0" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+<line x1="330.0" y1="120.0" x2="352.0" y2="160.0" stroke="#dc2626" stroke-width="5" stroke-linecap="round"/>
+<line x1="352.0" y1="160.0" x2="570.0" y2="160.0" stroke="#dc2626" stroke-width="5" stroke-linecap="round"/>
+<circle cx="330.0" cy="120.0" r="7.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<rect x="207.4" y="77.0" width="245.2" height="30.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="330.0" y="92.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">limiting friction μₛR</text>
+<text x="470.0" y="186.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">kinetic friction μₖR</text>
+<text x="200.0" y="230.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">static: F = P</text>
+<text x="200.0" y="256.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(block stays still)</text>
+<line x1="330.0" y1="120.0" x2="330.0" y2="320.0" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<text x="450.0" y="230.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">block slides →</text>
+</svg>

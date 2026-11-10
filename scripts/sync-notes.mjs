@@ -8,6 +8,8 @@
 // manual Admin -> Import lessons route). Each note is matched by topic and
 // slug: new notes are inserted, changed notes are updated, nothing is deleted,
 // and review fields (reviewed_by, reviewed_at, is_public) are never changed.
+// An entry may list "retire": [slugs] of older lessons in its topic that it
+// replaces; those are unpublished (is_published = false), never deleted.
 //
 // Needs SUPABASE_SECRET_KEY (Vercel, Production only), like the question sync.
 // Without it, it does nothing, so local builds never touch the real database.
@@ -58,6 +60,7 @@ async function main() {
   let inserted = 0
   let updated = 0
   let unchanged = 0
+  let retired = 0
   for (const e of entries) {
     try {
       const sid = subjectId.get(e.subject)
@@ -93,11 +96,25 @@ async function main() {
       } else {
         unchanged++
       }
+      // "retire": slugs of older lessons in the same topic that this note
+      // replaces. They are unpublished (never deleted), so students' progress
+      // rows stay and an admin can bring one back by publishing it again.
+      if (Array.isArray(e.retire) && e.retire.length) {
+        const { data: gone, error } = await db
+          .from('lessons')
+          .update({ is_published: false })
+          .eq('topic_id', row.topic_id)
+          .in('slug', e.retire.filter((s) => s !== row.slug))
+          .eq('is_published', true)
+          .select('id')
+        if (error) throw new Error(`retire: ${error.message}`)
+        retired += gone?.length ?? 0
+      }
     } catch (err) {
       console.error(`[notes] NOTE SYNC FAILED for ${e.file}: ${err.message}`)
     }
   }
-  console.log(`[notes] ${entries.length} auto-sync notes: ${inserted} new, ${updated} updated, ${unchanged} unchanged.`)
+  console.log(`[notes] ${entries.length} auto-sync notes: ${inserted} new, ${updated} updated, ${unchanged} unchanged, ${retired} older lessons retired.`)
 }
 
 main().catch((e) => console.error(`[notes] NOTES SYNC FAILED: ${e.message}`))

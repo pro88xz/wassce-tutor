@@ -131,6 +131,40 @@ async function main() {
     }
   }
   if (failed) console.error(`[questions] ${failed} set(s) not synced. The site still deployed; fix the error or use Admin -> Load question sets.`)
+  await ensureStarterSets(db, [...new Set(manifest.map((m) => m.subject_slug))])
+}
+
+/**
+ * Free accounts get one starter set per subject (papers.is_free, migration 07).
+ * Migration 07 chose them once; a subject whose first sets arrive later (e.g.
+ * Physics) would otherwise have none. Give each such subject its first
+ * published set. A choice an admin already made is never changed.
+ */
+async function ensureStarterSets(db, subjectSlugs) {
+  try {
+    const { data: subjects, error } = await db.from('subjects').select('id,slug').in('slug', subjectSlugs)
+    if (error) throw new Error(error.message)
+    for (const s of subjects) {
+      const { data: free, error: fErr } = await db.from('papers').select('id').eq('subject_id', s.id).eq('is_free', true).limit(1)
+      if (fErr) throw new Error(fErr.message)
+      if (free.length) continue
+      const { data: first, error: pErr } = await db
+        .from('papers')
+        .select('id,title')
+        .eq('subject_id', s.id)
+        .eq('is_published', true)
+        .order('sort_order')
+        .order('created_at')
+        .limit(1)
+      if (pErr) throw new Error(pErr.message)
+      if (!first.length) continue
+      const { error: uErr } = await db.from('papers').update({ is_free: true }).eq('id', first[0].id)
+      if (uErr) throw new Error(uErr.message)
+      console.log(`[questions] ${s.slug}: "${first[0].title}" is now the free starter set.`)
+    }
+  } catch (e) {
+    console.error(`[questions] Could not check free starter sets: ${e.message}`)
+  }
 }
 
 main().catch((e) => console.error(`[questions] QUESTION SYNC FAILED: ${e.message}`))

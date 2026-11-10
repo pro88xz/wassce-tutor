@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Path of a projectile</title>
+<desc id="d">A ball is launched at speed u at angle theta. Its horizontal velocity stays u cos theta all the way; its vertical velocity decreases to zero at the top and then increases downwards. The path is a parabola.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="660" height="470" rx="20" fill="#f8fafc"/>
+<line x1="30.0" y1="400.0" x2="630.0" y2="400.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="36.0" y1="400.0" x2="26.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="54.0" y1="400.0" x2="44.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="72.0" y1="400.0" x2="62.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="90.0" y1="400.0" x2="80.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="108.0" y1="400.0" x2="98.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="126.0" y1="400.0" x2="116.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="144.0" y1="400.0" x2="134.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="162.0" y1="400.0" x2="152.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="180.0" y1="400.0" x2="170.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="198.0" y1="400.0" x2="188.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="216.0" y1="400.0" x2="206.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="234.0" y1="400.0" x2="224.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="252.0" y1="400.0" x2="242.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="270.0" y1="400.0" x2="260.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.0" y1="400.0" x2="278.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="306.0" y1="400.0" x2="296.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="324.0" y1="400.0" x2="314.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="342.0" y1="400.0" x2="332.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="360.0" y1="400.0" x2="350.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="378.0" y1="400.0" x2="368.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="396.0" y1="400.0" x2="386.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="414.0" y1="400.0" x2="404.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="432.0" y1="400.0" x2="422.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="450.0" y1="400.0" x2="440.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="468.0" y1="400.0" x2="458.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="486.0" y1="400.0" x2="476.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="504.0" y1="400.0" x2="494.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="522.0" y1="400.0" x2="512.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="540.0" y1="400.0" x2="530.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="558.0" y1="400.0" x2="548.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="576.0" y1="400.0" x2="566.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="594.0" y1="400.0" x2="584.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="612.0" y1="400.0" x2="602.2" y2="414.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M 70.0 400.0 L 75.2 390.9 L 80.4 382.0 L 85.6 373.2 L 90.8 364.7 L 96.0 356.3 L 101.2 348.1 L 106.4 340.1 L 111.6 332.3 L 116.8 324.7 L 122.0 317.2 L 127.2 309.9 L 132.4 302.8 L 137.6 295.9 L 142.8 289.2 L 148.0 282.7 L 153.2 276.4 L 158.4 270.2 L 163.6 264.2 L 168.8 258.4 L 174.0 252.8 L 179.2 247.4 L 184.4 242.1 L 189.6 237.1 L 194.8 232.2 L 200.0 227.5 L 205.2 223.0 L 210.4 218.7 L 215.6 214.5 L 220.8 210.6 L 226.0 206.8 L 231.2 203.2 L 236.4 199.8 L 241.6 196.6 L 246.8 193.6 L 252.0 190.7 L 257.2 188.0 L 262.4 185.5 L 267.6 183.2 L 272.8 181.1 L 278.0 179.2 L 283.2 177.5 L 288.4 175.9 L 293.6 174.5 L 298.8 173.3 L 304.0 172.3 L 309.2 171.5 L 314.4 170.8 L 319.6 170.4 L 324.8 170.1 L 330.0 170.0 L 335.2 170.1 L 340.4 170.4 L 345.6 170.8 L 350.8 171.5 L 356.0 172.3 L 361.2 173.3 L 366.4 174.5 L 371.6 175.9 L 376.8 177.5 L 382.0 179.2 L 387.2 181.1 L 392.4 183.2 L 397.6 185.5 L 402.8 188.0 L 408.0 190.7 L 413.2 193.6 L 418.4 196.6 L 423.6 199.8 L 428.8 203.2 L 434.0 206.8 L 439.2 210.6 L 444.4 214.5 L 449.6 218.7 L 454.8 223.0 L 460.0 227.5 L 465.2 232.2 L 470.4 237.1 L 475.6 242.1 L 480.8 247.4 L 486.0 252.8 L 491.2 258.4 L 496.4 264.2 L 501.6 270.2 L 506.8 276.4 L 512.0 282.7 L 517.2 289.2 L 522.4 295.9 L 527.6 302.8 L 532.8 309.9 L 538.0 317.2 L 543.2 324.7 L 548.4 332.3 L 553.6 340.1 L 558.8 348.1 L 564.0 356.3 L 569.2 364.7 L 574.4 373.2 L 579.6 382.0 L 584.8 390.9 L 590.0 400.0" stroke="#475569" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="9 7"/>
+<circle cx="70.0" cy="400.0" r="7.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<line x1="70.0" y1="400.0" x2="136.0" y2="306.0" stroke="#dc2626" stroke-width="4.5" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="110.0" y="288.0" font-size="24" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold" font-style="italic">u</text>
+<path d="M 114.0 400.0 A 44 44 0 0 0 95.2 364.0" stroke="#0f172a" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="128.0" y="382.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">θ</text>
+<line x1="174.0" y1="252.8" x2="244.0" y2="252.8" stroke="#2563eb" stroke-width="3.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="174.0" y1="252.8" x2="174.0" y2="178.5" stroke="#15803d" stroke-width="3.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<circle cx="174.0" cy="252.8" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<line x1="330.0" y1="170.0" x2="400.0" y2="170.0" stroke="#2563eb" stroke-width="3.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<circle cx="330.0" cy="170.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<line x1="486.0" y1="252.8" x2="556.0" y2="252.8" stroke="#2563eb" stroke-width="3.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="486.0" y1="252.8" x2="486.0" y2="327.1" stroke="#15803d" stroke-width="3.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<circle cx="486.0" cy="252.8" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<rect x="306.7" y="149.5" width="286.6" height="29.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="450.0" y="164.0" font-size="19" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">top: vertical velocity = 0</text>
+<line x1="330.0" y1="400.0" x2="330.0" y2="170.0" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<text x="340.0" y="285.0" font-size="24" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold" font-style="italic">H</text>
+<line x1="70.0" y1="430.0" x2="590.0" y2="430.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="590.0" y1="430.0" x2="70.0" y2="430.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="285.8" y="415.0" width="88.4" height="30.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="330.0" y="430.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">range R</text>
+<text x="30.0" y="34.0" font-size="19" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">blue: horizontal velocity u cos θ (never changes)</text>
+<text x="30.0" y="62.0" font-size="19" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">green: vertical velocity (changes by g every second)</text>
+</svg>
