@@ -374,6 +374,21 @@ Precautions: read at eye level, fully submerge the object, remove air bubbles, a
 9. Reading the wrong part of a meniscus or viewing it above/below eye level.
 10. Reporting more significant figures than the instrument and data justify.
 
+## WASSCE examination focus
+
+Questions on measurement and errors commonly test practical instrument readings, least-count calculations, zero correction, unit conversion, significant figures and the interpretation of experimental results. Be prepared to:
+
+- identify the correct instrument for measuring length, internal or external diameter, depth, mass, time and temperature;
+- determine a vernier or micrometer least count from the scale divisions or screw pitch;
+- obtain a complete reading by combining the main or sleeve scale with the coinciding vernier or thimble division;
+- apply signed zero correction using corrected reading = observed reading − zero error;
+- distinguish accuracy, precision, resolution, systematic error and random error using practical examples;
+- calculate mean, range, absolute error and percentage error, showing substitutions and units;
+- describe a valid method for finding the volume and density of regular and irregular solids; and
+- state precautions that reduce parallax, reading, handling and calibration errors.
+
+In calculation questions, show the formula before substitution, retain units through the working, use consistent units, and round only the final result to a precision justified by the measurements. In practical questions, name the instrument, explain how the reading is taken, identify the relevant source of uncertainty and state a specific precaution rather than writing only “take care”.
+
 ## 13. Formula summary
 
 | Measurement | Formula |
