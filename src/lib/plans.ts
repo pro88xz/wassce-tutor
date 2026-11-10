@@ -61,6 +61,6 @@ export const FREE_FEATURES = [
 export const PAID_FEATURES = [
   'Every lesson in every subject',
   'Every practice set, with the full working',
-  'The AI tutor, 20 questions a day',
+  'Study tutor support, 20 questions a day',
   'Your progress, saved',
 ]
