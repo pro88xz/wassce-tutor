@@ -8,6 +8,7 @@ import { HOME_PHOTO_CREDITS } from '@/lib/home-photos'
 import { publicHead } from '@/lib/seo'
 import { CONTACT } from '@/lib/contact'
 import { fetchLandingData } from '@/lib/public-content'
+import { FROM_PRICE, PLANS } from '@/lib/plans'
 
 export const Route = createFileRoute('/about')({
   head: publicHead('/about'),
@@ -39,11 +40,11 @@ function About() {
     { title: 'Exam-style practice, marked instantly', body: 'Original WASSCE-style questions written to the syllabus, with the full working and why each wrong option is wrong.' },
     { title: 'Step-by-step study support', body: 'Ask WASSCE questions in plain English and get clear explanations to support your revision.' },
     { title: 'Built for any Android phone', body: 'Made for patchy data and shared phones.' },
-    { title: 'Pay with Orange Money or AfriMoney', body: '10 NLe for a term or 25 NLe for a full academic year. No card needed.' },
+    { title: 'Pay with Orange Money or AfriMoney', body: `${PLANS.map((p) => `${p.priceNle} NLe for ${p.length}`).join(' or ')}. No card needed.` },
   ]
 
   return (
-    <article className="about-page mx-auto max-w-6xl space-y-16 pb-12 sm:space-y-20">
+    <article className="about-page site-page space-y-16 pb-12 sm:space-y-20">
       <header className="about-hero">
         <div className="about-hero-copy">
           <p className="about-eyebrow"><MapPin aria-hidden /> Freetown, Sierra Leone</p>
@@ -121,21 +122,35 @@ function About() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-9">
-        <div className="grid items-center gap-7 sm:grid-cols-[minmax(0,1fr)_minmax(0,1.7fr)] sm:gap-10">
-          <div className="mx-auto aspect-square w-full max-w-[260px] overflow-hidden rounded-2xl bg-slate-100 shadow-lg">
-            <img src="/images/founder-mohamed-bangura.jpg?v=20261109-founder" alt="Mohamed Bangura, Founder and Developer of WASSCE Tutor" width={480} height={472} loading="eager" fetchPriority="high" decoding="async" className="h-full w-full object-cover object-center" />
+      <section className="site-card overflow-hidden" aria-labelledby="founder-heading">
+        <div className="grid md:grid-cols-[minmax(0,22rem)_minmax(0,1fr)]">
+          <div className="relative bg-muted">
+            <img
+              src="/img/about/founder-mohamed-bangura.webp"
+              srcSet="/img/about/founder-mohamed-bangura-320.webp 320w, /img/about/founder-mohamed-bangura.webp 640w"
+              sizes="(min-width: 768px) 352px, 100vw"
+              alt="Mohamed Bangura, founder and developer of WASSCE Tutor"
+              width={640}
+              height={640}
+              loading="lazy"
+              decoding="async"
+              className="aspect-[4/3] h-full w-full object-cover object-[50%_22%] md:aspect-auto md:min-h-[22rem]"
+            />
           </div>
-          <div>
+          <div className="flex flex-col justify-center p-6 sm:p-10">
             <p className="about-eyebrow">THE PERSON BEHIND THE PLATFORM</p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-950">Mohamed Bangura</h2>
-            <p className="mt-1 text-sm font-semibold text-brand">Founder &amp; Developer, WASSCE Tutor</p>
-            <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
+            <h2 id="founder-heading" className="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Mohamed Bangura</h2>
+            <p className="mt-1.5 text-sm font-bold text-primary">Founder &amp; Developer, WASSCE Tutor</p>
+            <p className="mt-5 max-w-2xl text-base leading-7 text-muted-foreground">
               WASSCE Tutor is built and maintained by a Sierra Leonean developer focused on making structured, locally relevant WASSCE preparation more accessible to students across the country.
             </p>
-            <a href="https://www.linkedin.com/in/mohamed-bangura-6b209944a/" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-full border border-slate-200 px-4 text-sm font-semibold text-slate-800 transition-colors hover:border-brand hover:text-brand">
-              <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 fill-current"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM3.56 9h3.554v11.452H3.56zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg> Connect on LinkedIn
-            </a>
+            <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
+              <a href="https://www.linkedin.com/in/mohamed-bangura-6b209944a/" target="_blank" rel="noopener noreferrer" className="site-btn site-btn-secondary">
+                <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 fill-current"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM3.56 9h3.554v11.452H3.56zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg>
+                Connect on LinkedIn
+              </a>
+              <span className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground"><MapPin className="h-4 w-4" aria-hidden /> Freetown, Sierra Leone</span>
+            </div>
           </div>
         </div>
       </section>
@@ -168,7 +183,7 @@ function About() {
       <section className="about-final-cta">
         <p className="about-eyebrow">YOUR NEXT STEP STARTS HERE</p>
         <h2>Make your preparation<br /><em>count.</em></h2>
-        <p>Free to start, no card needed. Everything from 10 NLe, and plans never renew automatically.</p>
+        <p>{`Free to start, no card needed. Everything from ${FROM_PRICE} NLe, and plans never renew automatically.`}</p>
         <div><Link to="/auth">Create a free account <span aria-hidden>↗</span></Link><a href="/wassce/subjects">Browse subjects</a></div>
       </section>
     </article>

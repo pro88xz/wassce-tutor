@@ -40,7 +40,7 @@ export const Route = createFileRoute('/wassce/')({
 function WasscePillarPage() {
   const subjects = Route.useLoaderData()
   return (
-    <article className="wassce-guide mx-auto max-w-6xl space-y-14 pb-12 sm:space-y-20">
+    <article className="wassce-guide site-page space-y-14 pb-12 sm:space-y-20">
       <header className="guide-hero">
         <Breadcrumbs trail={TRAIL} />
         <div className="guide-hero-content">

@@ -81,7 +81,7 @@ function TutorMarketplace() {
   }
 
   return (
-    <div className="mx-auto w-full max-w-7xl space-y-10 pb-16">
+    <div className="site-page space-y-10 pb-16">
       <section className="relative overflow-hidden rounded-[2rem] bg-[#21134d] px-6 py-10 text-white sm:px-10 sm:py-14">
         <div className="absolute -right-16 -top-24 h-72 w-72 rounded-full bg-violet-500/20 blur-3xl" />
         <div className="relative max-w-3xl space-y-4">

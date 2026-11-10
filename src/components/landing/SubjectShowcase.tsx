@@ -1,93 +1,85 @@
-// Subjects on the homepage, presented like products: every subject has its
-// own cover, real counts, and a place in a clear hierarchy (core subjects
-// featured, faculty subjects as cards, electives as compact rows).
+// The course catalogue: every subject as the same card on one grid, filtered
+// by faculty. Each faculty's panel lists the two core subjects first, then the
+// faculty's own subjects, then its electives, so a student sees their full
+// timetable in one place. Every panel is in the prerendered HTML (crawlable
+// links); only the active one is shown.
 import { useState } from 'react'
-import { ArrowRight, ChevronRight, ClipboardCheck } from 'lucide-react'
+import { ArrowRight, ClipboardCheck, Compass } from 'lucide-react'
 import type { SubjectSummary } from '@/lib/public-content'
 import { subjectPath } from '@/lib/public-content'
 import { PRACTICE_QUESTIONS } from '@/lib/practice-counts'
 import { SubjectCover } from '@/components/ds/SubjectCover'
-import { SwipeRow } from '@/components/ds/SwipeRow'
+import { Band, SectionHeading } from '@/components/public/Section'
 
 type Role = 'core' | 'faculty' | 'elective'
 
-function meta(s: SubjectSummary) {
-  if (!s.topicCount) return 'Syllabus coming soon'
-  return [`${s.topicCount} topics`, s.lessonCount > 0 ? `${s.lessonCount} lessons` : 'lessons coming soon'].join(' · ')
-}
+const ROLE_ORDER: Record<Role, number> = { core: 0, faculty: 1, elective: 2 }
 
-function PracticeBadge({ slug }: { slug: string }) {
-  const n = PRACTICE_QUESTIONS[slug]
-  if (!n) return null
-  return (
-    <span className="inline-flex items-center gap-1 rounded-full bg-success/10 px-2.5 py-0.5 text-xs font-semibold text-success">
-      <ClipboardCheck className="h-3.5 w-3.5" aria-hidden /> {n} practice questions
-    </span>
-  )
-}
+// The catalogue always ends on a full row. When a faculty's subjects leave
+// empty cells in the last row, a guide tile spans them: these maps turn the
+// number of cards left over on a 2, 3 or 4 column grid into that span.
+// (Literal class names, so Tailwind generates them.)
+const FILL_2 = ['hidden', 'flex col-span-1']
+const FILL_3 = ['md:hidden', 'md:flex md:col-span-2', 'md:flex md:col-span-1']
+const FILL_4 = ['lg:hidden', 'lg:flex lg:col-span-3', 'lg:flex lg:col-span-2', 'lg:flex lg:col-span-1']
 
-/** Large card for the core subjects everyone sits. */
-function FeatureCard({ s }: { s: SubjectSummary }) {
+/** Fills the catalogue's last row and routes undecided visitors to the WASSCE guide. */
+function GuideTile({ count }: { count: number }) {
   return (
-    <a href={subjectPath(s.slug)} className="group flex flex-col overflow-hidden rounded-2xl border bg-card transition-colors hover:border-primary/40">
-      <SubjectCover slug={s.slug} shape="wide" rounded="rounded-none" className="aspect-[16/7] w-full sm:aspect-[16/8]" />
-      <div className="flex flex-1 flex-col gap-2 p-5">
-        <div className="flex items-center gap-2">
-          <span className="rounded-full bg-brand-soft px-2.5 py-0.5 text-xs font-semibold text-primary">Core · every student</span>
-        </div>
-        <h4 className="text-xl font-bold tracking-tight">{s.name}</h4>
-        <p className="text-sm text-muted-foreground">{meta(s)}</p>
-        <div className="flex flex-wrap items-center justify-between gap-2 pt-1">
-          <PracticeBadge slug={s.slug} />
-          <span className="ml-auto inline-flex items-center gap-1 text-sm font-semibold text-primary">
-            Explore <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden />
-          </span>
-        </div>
-      </div>
+    <a
+      href="/wassce"
+      className={`group relative isolate flex-col justify-between gap-6 overflow-hidden rounded-2xl bg-[var(--site-ink)] p-4 text-white transition-transform duration-300 hover:-translate-y-[3px] sm:p-6 ${FILL_2[count % 2]} ${FILL_3[count % 3]} ${FILL_4[count % 4]}`}
+    >
+      <span aria-hidden className="site-hero-backdrop -z-10" />
+      <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 ring-1 ring-white/20">
+        <Compass className="h-5 w-5 text-violet-200" aria-hidden />
+      </span>
+      <span>
+        <span className="block text-[15px] font-bold leading-snug tracking-tight sm:text-xl">Not sure which subjects you sit?</span>
+        <span className="mt-2 hidden text-sm leading-relaxed text-white/70 sm:block">The WASSCE guide explains each faculty, the core subjects and how the exam is graded.</span>
+        <span className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-bold text-violet-200 sm:mt-4 sm:text-sm">
+          Read the guide <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden />
+        </span>
+      </span>
     </a>
   )
 }
 
-/** Faculty subject: a photo card (swipeable row on phones, grid from 640 px). */
-function SubjectCard({ s }: { s: SubjectSummary }) {
-  const ready = s.topicCount > 0
-  const body = (
-    <>
-      <SubjectCover slug={s.slug} shape="wide" rounded="rounded-none" className="aspect-[16/10] w-full sm:aspect-[16/9]" />
-      <span className="flex flex-1 flex-col gap-1 p-4">
-        <span className="truncate font-bold">{s.name}</span>
-        <span className="text-xs text-muted-foreground">{meta(s)}</span>
-        <span className="pt-1"><PracticeBadge slug={s.slug} /></span>
-      </span>
-    </>
-  )
-  const cls = 'flex w-[72%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border bg-card transition-colors sm:w-auto'
-  return ready ? (
-    <a href={subjectPath(s.slug)} className={`${cls} hover:border-primary/40`}>{body}</a>
-  ) : (
-    <div className={`${cls} opacity-70`}>{body}</div>
-  )
+function meta(s: SubjectSummary) {
+  if (!s.topicCount) return 'Syllabus coming soon'
+  return `${s.topicCount} topics · ${s.lessonCount > 0 ? `${s.lessonCount} lessons` : 'lessons coming soon'}`
 }
 
-/** Elective: a readable row card with a photo thumbnail. */
-function ElectiveRow({ s }: { s: SubjectSummary }) {
+function SubjectCard({ s, badge }: { s: SubjectSummary; badge: string }) {
   const ready = s.topicCount > 0
-  const inner = (
+  const practice = PRACTICE_QUESTIONS[s.slug]
+  const body = (
     <>
-      <SubjectCover slug={s.slug} shape="thumb" className="h-[4.75rem] w-[5.75rem] shrink-0 sm:h-20 sm:w-28" rounded="rounded-xl" />
-      <span className="min-w-0 flex-1">
-        <span className="block text-base font-bold leading-snug tracking-tight">{s.name}</span>
-        <span className="mt-1 block text-[13px] leading-relaxed text-muted-foreground">{meta(s)}</span>
-        {PRACTICE_QUESTIONS[s.slug] ? <span className="mt-1 block"><PracticeBadge slug={s.slug} /></span> : null}
+      <span className="relative block">
+        <SubjectCover slug={s.slug} shape="wide" rounded="rounded-none" className="aspect-[16/10] w-full" />
+        <span className="absolute left-2.5 top-2.5 rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-bold leading-none text-slate-900 shadow-sm">{badge}</span>
       </span>
-      {ready && <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground" aria-hidden />}
+      <span className="flex flex-1 flex-col p-3.5 sm:p-4">
+        <span className="site-h3 text-[15px] sm:text-[17px]">{s.name}</span>
+        <span className="mt-1 text-xs leading-relaxed text-muted-foreground sm:text-[13px]">{meta(s)}</span>
+        <span className="mt-auto flex items-center justify-between gap-2 pt-3">
+          {practice ? (
+            <span className="inline-flex items-center gap-1 rounded-full bg-success/10 px-2 py-1 text-[11px] font-semibold leading-none text-success">
+              <ClipboardCheck className="h-3.5 w-3.5" aria-hidden /> {practice} questions
+            </span>
+          ) : (
+            <span className="text-[11px] font-semibold text-muted-foreground">{!ready ? 'In preparation' : s.lessonCount > 0 ? 'Syllabus and lessons' : 'Full syllabus'}</span>
+          )}
+          {ready && <ArrowRight className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-1" aria-hidden />}
+        </span>
+      </span>
     </>
   )
-  const cls = 'group flex min-h-[108px] items-center gap-4 rounded-2xl border border-border/70 bg-gradient-to-br from-card to-muted/25 p-3.5 pr-4 shadow-sm transition-all duration-200 sm:min-h-[116px] sm:gap-4.5 sm:p-4'
+  const cls = 'site-card group flex h-full flex-col overflow-hidden'
   return ready ? (
-    <a href={subjectPath(s.slug)} className={`${cls} hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md`}>{inner}</a>
+    <a href={subjectPath(s.slug)} className={`${cls} site-card-link`}>{body}</a>
   ) : (
-    <div className={`${cls} opacity-75`}>{inner}</div>
+    <div className={`${cls} opacity-70`}>{body}</div>
   )
 }
 
@@ -96,42 +88,32 @@ export function SubjectShowcase({ subjects }: { subjects: SubjectSummary[] }) {
     (a, b) => a.sort_order - b.sort_order,
   )
   const [active, setActive] = useState(faculties[0]?.id ?? '')
-  const coreSubjects = subjects.filter((s) => s.faculties.some((f) => f.role === 'core')).sort((a, b) => b.lessonCount - a.lessonCount || b.topicCount - a.topicCount)
 
   return (
-    <section className="space-y-6" aria-labelledby="subjects-heading">
-      <div className="mx-auto max-w-2xl space-y-2 text-center">
-        <p className="text-sm font-semibold text-primary">Every subject</p>
-        <h2 id="subjects-heading" className="text-[1.75rem] font-bold leading-tight tracking-tight text-balance sm:text-3xl">
-          Your WASSCE subjects, topic by topic
-        </h2>
-        <p className="text-[15px] text-muted-foreground">Pick your faculty to see the subjects you sit.</p>
-      </div>
+    <Band labelledBy="subjects-heading">
+      <SectionHeading
+        id="subjects-heading"
+        eyebrow="Course catalogue"
+        title="Every WASSCE subject, organised topic by topic."
+        lede="Choose your faculty to see the subjects you sit: the two core subjects, your faculty subjects and the electives that go with them."
+        action={
+          <a href="/wassce/subjects" className="site-link">
+            Browse the full syllabus <ArrowRight className="h-4 w-4" aria-hidden />
+          </a>
+        }
+      />
 
-      {/* Tabs share one row while they fit; with a large phone text size they wrap rather than clip a label. */}
-      <div className="space-y-3">
-        <div className="flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <h3 className="text-lg font-bold tracking-tight">Core subjects every candidate takes</h3>
-            <p className="text-sm text-muted-foreground">Start with English Language and Mathematics, then explore your faculty.</p>
-          </div>
-          <span className="text-xs font-semibold text-muted-foreground">Shared across faculties</span>
-        </div>
-        <div className="grid max-w-4xl grid-cols-1 gap-4 sm:grid-cols-2 [&>*]:min-w-0">
-          {coreSubjects.map((s) => <FeatureCard key={s.id} s={s} />)}
-        </div>
-      </div>
-
-      <div role="tablist" aria-label="Faculties" className="mx-auto flex w-full max-w-lg flex-wrap gap-1 rounded-xl bg-muted p-1">
+      <div role="tablist" aria-label="Faculties" className="mt-8 flex gap-1 rounded-xl bg-muted p-1 sm:inline-flex">
         {faculties.map((f) => (
           <button
             key={f.id}
             type="button"
             role="tab"
+            id={`faculty-tab-${f.id}`}
             aria-selected={active === f.id}
             aria-controls={`faculty-${f.id}`}
             onClick={() => setActive(f.id)}
-            className={`min-h-10 min-w-fit grow basis-0 whitespace-nowrap rounded-lg px-2 py-2 text-[13px] font-semibold tracking-tight transition-colors sm:text-sm ${
+            className={`min-h-11 min-w-0 flex-1 whitespace-nowrap rounded-lg px-1.5 text-[13px] font-semibold transition-colors sm:flex-none sm:px-6 sm:text-sm ${
               active === f.id ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
             }`}
           >
@@ -142,41 +124,26 @@ export function SubjectShowcase({ subjects }: { subjects: SubjectSummary[] }) {
 
       {faculties.map((f) => {
         const roleOf = (s: SubjectSummary) => s.faculties.find((x) => x.faculty.id === f.id)?.role as Role | undefined
-        const inFaculty = subjects.filter((s) => roleOf(s))
-        const byLessons = (a: SubjectSummary, b: SubjectSummary) => b.lessonCount - a.lessonCount || b.topicCount - a.topicCount
-        const main = inFaculty.filter((s) => roleOf(s) === 'faculty').sort(byLessons)
-        const electives = inFaculty.filter((s) => roleOf(s) === 'elective').sort(byLessons)
+        const inFaculty = subjects
+          .filter((s) => roleOf(s))
+          .sort((a, b) => ROLE_ORDER[roleOf(a)!] - ROLE_ORDER[roleOf(b)!] || b.lessonCount - a.lessonCount || b.topicCount - a.topicCount)
+        const badge: Record<Role, string> = { core: 'Core', faculty: f.name, elective: 'Elective' }
         return (
-          // Every faculty is in the HTML (crawlable links); only the active one is shown.
-          <div key={f.id} id={`faculty-${f.id}`} role="tabpanel" hidden={active !== f.id} className="space-y-8">
-            {main.length > 0 && (
-              <div className="space-y-3">
-                <h3 className="text-sm font-semibold text-muted-foreground">{f.name} subjects</h3>
-                <SwipeRow label={`${f.name} subjects`} count={main.length}>
-                  {main.map((s) => <SubjectCard key={s.id} s={s} />)}
-                </SwipeRow>
-              </div>
-            )}
-            {electives.length > 0 && (
-              <div className="space-y-3">
-                <div>
-                  <h3 className="text-sm font-semibold text-muted-foreground">Electives</h3>
-                  <p className="text-[13px] text-muted-foreground">Optional subjects you can take alongside your faculty subjects.</p>
-                </div>
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 [&>*]:min-w-0">
-                  {electives.map((s) => <ElectiveRow key={s.id} s={s} />)}
-                </div>
-              </div>
-            )}
+          <div
+            key={f.id}
+            id={`faculty-${f.id}`}
+            role="tabpanel"
+            aria-labelledby={`faculty-tab-${f.id}`}
+            hidden={active !== f.id}
+            className="mt-6 grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 [&>*]:min-w-0"
+          >
+            {inFaculty.map((s) => (
+              <SubjectCard key={s.id} s={s} badge={badge[roleOf(s)!]} />
+            ))}
+            <GuideTile count={inFaculty.length} />
           </div>
         )
       })}
-
-      <p className="text-center text-sm">
-        <a href="/wassce/subjects" className="inline-flex min-h-11 items-center gap-1 font-semibold text-primary hover:underline">
-          See every subject and its syllabus <ArrowRight className="h-4 w-4" aria-hidden />
-        </a>
-      </p>
-    </section>
+    </Band>
   )
 }

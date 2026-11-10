@@ -1,14 +1,32 @@
 import { Link, useRouterState } from '@tanstack/react-router'
 import { MessageCircleQuestion } from 'lucide-react'
 import { useAuth } from '@/lib/auth'
-import { STUDENT_NAV, showsStudentNav } from '@/lib/nav'
+import { useProfile } from '@/lib/queries'
+import { checkAccess } from '@/lib/access'
+import { planById } from '@/lib/plans'
+import { STUDENT_NAV, initialsOf, showsStudentNav } from '@/lib/nav'
 import { BrandMark } from '@/components/BrandMark'
 
-/** Desktop and large-tablet navigation: the same five destinations as the mobile bar. */
+/**
+ * Desktop navigation: the same five destinations as the mobile bar, the tutor
+ * shortcut, and the signed-in student with their plan. From 1024 px this
+ * replaces the top bar, so the page itself starts at the top of the screen.
+ */
 export function SideNav() {
   const { user } = useAuth()
   const pathname = useRouterState({ select: (s) => s.location.pathname })
+  const { data: profile } = useProfile(user?.id ?? null)
   if (!user || !showsStudentNav(pathname)) return null
+
+  const access = checkAccess(profile)
+  const plan =
+    access.reason === 'admin'
+      ? 'Admin'
+      : access.reason === 'subscribed'
+        ? `${planById(profile?.subscription_plan)?.name ?? 'Full'} plan`
+        : access.reason === 'trial'
+          ? 'Free trial'
+          : 'Free account'
 
   return (
     <aside className="hidden w-64 shrink-0 flex-col border-r bg-card pt-[env(safe-area-inset-top)] lg:flex">
@@ -50,6 +68,19 @@ export function SideNav() {
           </span>
         </Link>
       </div>
+      <Link
+        to="/account"
+        aria-label={`Account: ${profile?.full_name ?? 'your profile'}, ${plan}`}
+        className="flex items-center gap-3 border-t px-4 py-3.5 transition-colors hover:bg-muted"
+      >
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-soft text-sm font-bold text-primary">
+          {initialsOf(profile?.full_name)}
+        </span>
+        <span className="min-w-0">
+          <span className="block truncate text-sm font-semibold">{profile?.full_name || 'Your account'}</span>
+          <span className="block truncate text-xs text-muted-foreground">{plan}</span>
+        </span>
+      </Link>
     </aside>
   )
 }

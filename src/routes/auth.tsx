@@ -3,8 +3,11 @@ import { privateHead } from '@/lib/seo'
 import { useCallback, useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { useAuth } from '@/lib/auth'
-import { CircleCheck, GraduationCap } from 'lucide-react'
+import { Capacitor } from '@capacitor/core'
+import { CircleCheck } from 'lucide-react'
 import { GoogleSignInButton } from '@/components/auth/GoogleSignInButton'
+import { BrandMark } from '@/components/BrandMark'
+import { FROM_PRICE } from '@/lib/plans'
 
 export const Route = createFileRoute('/auth')({
   head: privateHead('Sign in'),
@@ -89,140 +92,180 @@ function AuthPage() {
     setResetSent(false)
     setConfirmationSent(false)
   }
-  const field = 'h-12 w-full rounded-xl border bg-background px-4 text-base outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20'
+  const field = 'h-12 w-full rounded-xl border border-input bg-card px-4 text-base outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20'
+  const story = STORY[intent]
+  // Google sign-in needs a client id on the web; without one there is nothing to offer.
+  const googleAvailable = Capacitor.isNativePlatform() || !!import.meta.env.VITE_GOOGLE_CLIENT_ID
 
   return (
-    <div className="auth-page flex min-h-[80vh] items-center justify-center px-1 py-6">
-      <div className="w-full max-w-sm space-y-6">
-        <div className="space-y-3 text-center">
-          <a href="/" aria-label="WASSCE Tutor home" className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-white transition-colors hover:bg-brand-strong">
-            <GraduationCap className="h-7 w-7" aria-hidden />
-          </a>
-          <div className="space-y-1">
-            <h1 className="text-3xl font-bold tracking-tight">
+    // Full-bleed: cancels the app wrapper's padding so the two panels meet the screen edges.
+    <div className="site-bleed -mb-12 -mt-4 grid min-h-dvh sm:-mt-6 lg:grid-cols-2">
+      {/* What you are signing up for. Wide screens only: on a phone the form comes first. */}
+      <aside className="site-band-ink relative isolate hidden overflow-hidden lg:flex lg:flex-col lg:justify-between lg:p-12 xl:p-16">
+        <div aria-hidden className="site-hero-backdrop -z-10" />
+        <a href="/" aria-label="WASSCE Tutor home" className="w-fit">
+          <BrandMark tone="light" />
+        </a>
+        <div className="max-w-lg py-10">
+          <p className="site-eyebrow">{story.eyebrow}</p>
+          <h2 className="site-h2 mt-3">{story.title}</h2>
+          <ul className="mt-8 space-y-4">
+            {story.points.map((t) => (
+              <li key={t} className="flex gap-3 text-[17px] leading-snug text-white/85">
+                <CircleCheck className="mt-0.5 h-5 w-5 shrink-0 text-emerald-300" aria-hidden /> {t}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <p className="text-sm text-white/55">An independent study service built in Freetown. Not affiliated with WAEC.</p>
+      </aside>
+
+      <div className="flex flex-col px-5 pb-10 pt-6 sm:px-8 lg:justify-center lg:py-12">
+        <a href="/" aria-label="WASSCE Tutor home" className="mb-8 w-fit lg:hidden">
+          <BrandMark />
+        </a>
+        <div className="mx-auto w-full max-w-sm space-y-6">
+          <div className="space-y-2">
+            <h1 className="text-3xl font-extrabold tracking-tight">
               {mode === 'signup' ? (intent === 'tutor' ? 'Create your tutor account' : intent === 'affiliate' ? 'Create your affiliate account' : 'Create your free account') : mode === 'forgot' ? 'Reset your password' : 'Welcome back'}
             </h1>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-[15px] text-muted-foreground">
               {mode === 'signup'
-                ? intent === 'tutor' ? 'Create your account and continue to your tutor workspace.' : intent === 'affiliate' ? 'Create your account and continue to your affiliate workspace.' : 'Free to start, no card needed. Unlock everything later from 10 NLe.'
+                ? intent === 'tutor' ? 'Create your account and continue to your tutor workspace.' : intent === 'affiliate' ? 'Create your account and continue to your affiliate workspace.' : `Free to start, no card needed. Unlock everything later from ${FROM_PRICE} NLe.`
                 : mode === 'forgot'
                   ? "Enter your email and we'll send you a reset link."
                   : intent === 'tutor' ? 'Sign in to continue to your tutor workspace.' : intent === 'affiliate' ? 'Sign in to continue to your affiliate workspace.' : 'Sign in to keep studying.'}
             </p>
           </div>
-        </div>
 
-        {mode !== 'forgot' && (
-          <div role="tablist" aria-label="Account" className="grid grid-cols-2 gap-1 rounded-2xl bg-muted p-1">
-            {(['signup', 'signin'] as const).map((m) => (
-              <button
-                key={m}
-                type="button"
-                role="tab"
-                aria-selected={mode === m}
-                onClick={() => switchMode(m)}
-                className={`rounded-xl py-2 text-sm font-semibold transition ${mode === m ? 'bg-card shadow-sm' : 'text-muted-foreground hover:text-foreground'}`}
-              >
-                {m === 'signup' ? 'Sign up' : 'Sign in'}
-              </button>
-            ))}
-          </div>
-        )}
-
-        <form
-          className="space-y-3"
-          onSubmit={(e) => {
-            e.preventDefault()
-            handleSubmit()
-          }}
-        >
-          {mode === 'signup' && (
-            <label className="block space-y-1.5">
-              <span className="text-sm font-semibold">Full name</span>
-              <input className={field} autoComplete="name" placeholder="e.g. Fatmata Sesay" value={fullName} onChange={(e) => setFullName(e.target.value)} />
-            </label>
-          )}
-          <label className="block space-y-1.5">
-            <span className="text-sm font-semibold">Email</span>
-            <input className={field} type="email" autoComplete="email" placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} />
-          </label>
           {mode !== 'forgot' && (
-            <label className="block space-y-1.5">
-              <span className="flex items-center justify-between text-sm font-semibold">
-                Password
-                {mode === 'signin' && (
-                  <button type="button" className="text-xs font-medium text-primary hover:underline" onClick={() => switchMode('forgot')}>
-                    Forgot password?
-                  </button>
-                )}
-              </span>
-              <input
-                className={field}
-                type="password"
-                autoComplete={mode === 'signup' ? 'new-password' : 'current-password'}
-                placeholder={mode === 'signup' ? 'At least 6 characters' : 'Your password'}
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </label>
-          )}
-
-          {error && <p role="alert" className="rounded-xl bg-red-500/10 px-3 py-2 text-sm text-red-700 dark:text-red-400">{error}</p>}
-          {confirmationSent && (
-            <p role="status" className="rounded-xl bg-emerald-500/10 px-3 py-2 text-sm text-emerald-700 dark:text-emerald-400">
-              Account created. Check your email to verify your address. After verification, you will be taken to your {intent === 'tutor' ? 'tutor' : intent === 'affiliate' ? 'affiliate' : 'student'} workspace.
-            </p>
-          )}
-          {resetSent && (
-            <p className="rounded-xl bg-emerald-500/10 px-3 py-2 text-sm text-emerald-700 dark:text-emerald-400">
-              Check your email for a password reset link.
-            </p>
-          )}
-
-          <button
-            type="submit"
-            disabled={loading}
-            className="h-12 w-full rounded-xl bg-primary text-base font-semibold text-white transition-colors hover:bg-brand-strong disabled:opacity-60"
-          >
-            {loading ? 'Please wait…' : mode === 'signup' ? 'Create my free account' : mode === 'forgot' ? 'Send reset link' : 'Sign in'}
-          </button>
-        </form>
-
-        {mode !== 'forgot' && (
-          <div className="space-y-3">
-            <div className="flex items-center gap-3 text-xs text-muted-foreground">
-              <span className="h-px flex-1 bg-border" />
-              <span>OR CONTINUE WITH</span>
-              <span className="h-px flex-1 bg-border" />
+            <div role="tablist" aria-label="Account" className="grid grid-cols-2 gap-1 rounded-xl bg-muted p-1">
+              {(['signup', 'signin'] as const).map((m) => (
+                <button
+                  key={m}
+                  type="button"
+                  role="tab"
+                  aria-selected={mode === m}
+                  onClick={() => switchMode(m)}
+                  className={`min-h-11 rounded-lg text-sm font-semibold transition ${mode === m ? 'bg-card shadow-sm' : 'text-muted-foreground hover:text-foreground'}`}
+                >
+                  {m === 'signup' ? 'Sign up' : 'Sign in'}
+                </button>
+              ))}
             </div>
-            <GoogleSignInButton
-              intent={intent}
-              referralCode={referralCode}
-              mode={mode}
-              onAuthenticated={handleGoogleAuthenticated}
-              onError={setError}
-            />
-          </div>
-        )}
+          )}
 
-        {mode === 'signup' && (
-          <ul className="space-y-2 rounded-2xl border bg-card p-4 text-sm">
-            {['Every subject, topic by topic', 'Exam-style practice, marked instantly', 'An AI tutor whenever you need help', 'Pay later with Orange Money or AfriMoney'].map((t) => (
-              <li key={t} className="flex items-center gap-2">
-                <CircleCheck className="h-4 w-4 shrink-0 text-emerald-500" aria-hidden /> {t}
-              </li>
-            ))}
-          </ul>
-        )}
+          {mode !== 'forgot' && googleAvailable && (
+            <div className="space-y-4">
+              <GoogleSignInButton
+                intent={intent}
+                referralCode={referralCode}
+                mode={mode}
+                onAuthenticated={handleGoogleAuthenticated}
+                onError={setError}
+              />
+              <div className="flex items-center gap-3 text-xs font-medium text-muted-foreground">
+                <span className="h-px flex-1 bg-border" />
+                <span>or use your email</span>
+                <span className="h-px flex-1 bg-border" />
+              </div>
+            </div>
+          )}
 
-        {mode === 'forgot' && (
-          <p className="text-center text-sm">
-            <button type="button" className="font-semibold text-primary hover:underline" onClick={() => switchMode('signin')}>
-              ← Back to sign in
+          <form
+            className="space-y-4"
+            onSubmit={(e) => {
+              e.preventDefault()
+              handleSubmit()
+            }}
+          >
+            {mode === 'signup' && (
+              <label className="block space-y-1.5">
+                <span className="text-sm font-semibold">Full name</span>
+                <input className={field} autoComplete="name" placeholder="e.g. Fatmata Sesay" value={fullName} onChange={(e) => setFullName(e.target.value)} />
+              </label>
+            )}
+            <label className="block space-y-1.5">
+              <span className="text-sm font-semibold">Email</span>
+              <input className={field} type="email" autoComplete="email" placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} />
+            </label>
+            {mode !== 'forgot' && (
+              <label className="block space-y-1.5">
+                <span className="flex items-center justify-between text-sm font-semibold">
+                  Password
+                  {mode === 'signin' && (
+                    <button type="button" className="text-xs font-semibold text-primary hover:underline" onClick={() => switchMode('forgot')}>
+                      Forgot password?
+                    </button>
+                  )}
+                </span>
+                <input
+                  className={field}
+                  type="password"
+                  autoComplete={mode === 'signup' ? 'new-password' : 'current-password'}
+                  placeholder={mode === 'signup' ? 'At least 6 characters' : 'Your password'}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </label>
+            )}
+
+            {error && <p role="alert" className="rounded-xl bg-red-500/10 px-3 py-2 text-sm text-red-700 dark:text-red-400">{error}</p>}
+            {confirmationSent && (
+              <p role="status" className="rounded-xl bg-emerald-500/10 px-3 py-2 text-sm text-emerald-700 dark:text-emerald-400">
+                Account created. Check your email to verify your address. After verification, you will be taken to your {intent === 'tutor' ? 'tutor' : intent === 'affiliate' ? 'affiliate' : 'student'} workspace.
+              </p>
+            )}
+            {resetSent && (
+              <p role="status" className="rounded-xl bg-emerald-500/10 px-3 py-2 text-sm text-emerald-700 dark:text-emerald-400">
+                Check your email for a password reset link.
+              </p>
+            )}
+
+            <button type="submit" disabled={loading} className="site-btn site-btn-primary site-btn-lg w-full disabled:opacity-60">
+              {loading ? 'Please wait…' : mode === 'signup' ? 'Create my free account' : mode === 'forgot' ? 'Send reset link' : 'Sign in'}
             </button>
-          </p>
-        )}
+          </form>
+
+          {/* On a phone the benefits sit under the form; on wide screens they are in the panel beside it. */}
+          {mode === 'signup' && (
+            <ul className="space-y-2 rounded-2xl border bg-card p-4 text-sm lg:hidden">
+              {story.points.map((t) => (
+                <li key={t} className="flex items-start gap-2">
+                  <CircleCheck className="mt-0.5 h-4 w-4 shrink-0 text-success" aria-hidden /> {t}
+                </li>
+              ))}
+            </ul>
+          )}
+
+          {mode === 'forgot' && (
+            <p className="text-center text-sm">
+              <button type="button" className="font-semibold text-primary hover:underline" onClick={() => switchMode('signin')}>
+                ← Back to sign in
+              </button>
+            </p>
+          )}
+        </div>
       </div>
     </div>
   )
+}
+
+/** What each kind of account is for: shown beside the form on wide screens, under it on phones. */
+const STORY: Record<'student' | 'tutor' | 'affiliate', { eyebrow: string; title: string; points: string[] }> = {
+  student: {
+    eyebrow: 'For WASSCE students',
+    title: 'Your next grade starts with one topic.',
+    points: ['Every subject, topic by topic', 'Exam-style practice, marked instantly', 'An AI tutor whenever you need help', 'Pay later with Orange Money or AfriMoney'],
+  },
+  tutor: {
+    eyebrow: 'For tutors',
+    title: 'Teach WASSCE students across Sierra Leone.',
+    points: ['Create your tutor profile', 'List your subjects and your rates', 'Manage verified bookings in one workspace'],
+  },
+  affiliate: {
+    eyebrow: 'For affiliates',
+    title: 'Earn when students you refer subscribe.',
+    points: ['Share your own tracked referral link', 'Earn 50% of a referred student’s first verified subscription payment', 'Follow your referrals in one workspace'],
+  },
 }

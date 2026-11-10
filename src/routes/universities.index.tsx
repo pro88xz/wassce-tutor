@@ -2,6 +2,8 @@ import { createFileRoute } from '@tanstack/react-router'
 import { ArrowRight, GraduationCap, MapPin } from 'lucide-react'
 import { UNIVERSITY_GUIDES } from '@/content/editorial'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
+import { EditorialPhoto } from '@/components/public/EditorialPhoto'
+import { editorialImage } from '@/lib/editorial-images'
 import { absoluteUrl, breadcrumbJsonLd, indexablePageTags } from '@/lib/seo'
 
 export const Route = createFileRoute('/universities/')({
@@ -10,7 +12,7 @@ export const Route = createFileRoute('/universities/')({
     path: '/universities',
     title: 'Sierra Leone Universities: Courses & WASSCE Requirements',
     description: 'Compare universities in Sierra Leone, explore programmes and WASSCE entry requirements, and follow official admissions links for each institution.',
-    image: UNIVERSITY_GUIDES[0].image,
+    image: editorialImage(UNIVERSITY_GUIDES[0].image).og,
     jsonLd: [
       { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Universities in Sierra Leone', url: absoluteUrl('/universities'), mainEntity: { '@type': 'ItemList', itemListElement: UNIVERSITY_GUIDES.map((u,i) => ({ '@type': 'ListItem', position: i+1, item: { '@type': 'CollegeOrUniversity', name: u.name, url: absoluteUrl(`/universities/${u.slug}`) } })) } },
       breadcrumbJsonLd([['Home','/'],['Universities','/universities']])
@@ -21,7 +23,7 @@ export const Route = createFileRoute('/universities/')({
 
 function UniversityDirectoryPage() {
   return (
-    <main className="mx-auto w-full max-w-6xl space-y-10 pb-16 sm:space-y-14">
+    <main className="site-page space-y-10 pb-16 sm:space-y-14">
       <Breadcrumbs trail={[['Home','/'],['Universities','/universities']]}/>
       <header className="relative overflow-hidden rounded-[2rem] bg-[#171d3d] px-6 py-10 text-white sm:px-10 sm:py-14">
         <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-blue-500/20 blur-3xl"/>
@@ -46,7 +48,7 @@ function UniversityDirectoryPage() {
         <div className="grid gap-5 md:grid-cols-2">
           {UNIVERSITY_GUIDES.map((u) => <article key={u.slug} className="group overflow-hidden rounded-2xl border bg-card transition hover:-translate-y-0.5 hover:shadow-lg">
             <a href={`/universities/${u.slug}`} className="block">
-              <div className="relative aspect-[16/8] overflow-hidden bg-muted"><img src={u.image} alt={u.imageAlt} loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.025]"/><span className="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-xs font-bold text-slate-900 shadow-sm">{u.shortName}</span></div>
+              <div className="relative"><EditorialPhoto image={u.image} alt={u.imageAlt} label={u.shortName} sizes="(min-width: 768px) 560px, 100vw" className="aspect-[16/8]" imgClassName="transition duration-500 group-hover:scale-[1.025]"/><span className="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-xs font-bold text-slate-900 shadow-sm">{u.shortName}</span></div>
               <div className="space-y-3 p-5 sm:p-6"><p className="text-xs font-semibold text-primary">{u.status}</p><h3 className="text-xl font-bold leading-snug">{u.name}</h3><p className="flex items-center gap-1.5 text-xs text-muted-foreground"><MapPin className="h-3.5 w-3.5"/>{u.location}</p><p className="text-sm leading-relaxed text-muted-foreground">{u.summary}</p><span className="inline-flex items-center gap-2 pt-1 text-sm font-bold text-primary">View requirements and courses <ArrowRight className="h-4 w-4"/></span></div>
             </a>
           </article>)}

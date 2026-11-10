@@ -13,6 +13,10 @@
 
 import type { AnyRouteMatch } from '@tanstack/react-router'
 import { CONTACT } from './contact'
+import { FROM_PRICE, PLANS } from './plans'
+
+/** Dearest plan, for structured-data price ranges. */
+const TOP_PRICE = Math.max(...PLANS.map((p) => p.priceNle))
 
 export const SITE = {
   origin: 'https://wasscetutor.com',
@@ -37,7 +41,7 @@ export const PUBLIC_PAGES = {
     title: 'WASSCE Practice Questions & Lessons in Sierra Leone | WASSCE Tutor',
     ogTitle: 'WASSCE Tutor: Pass WASSCE with confidence',
     description:
-      'WASSCE lessons and practice questions for Sierra Leone students, with full working and one-to-one tutors. Free to start; everything from NLe 10.',
+      `WASSCE lessons and practice questions for Sierra Leone students, with full working and one-to-one tutors. Free to start; everything from NLe ${FROM_PRICE}.`,
     lastmod: '2026-11-07',
   },
   '/about': {
@@ -134,7 +138,7 @@ const ORGANIZATION = {
     addressCountry: CONTACT.countryCode,
   },
   areaServed: { '@type': 'Country', name: CONTACT.country },
-  priceRange: 'NLe 10–25',
+  priceRange: `NLe ${FROM_PRICE}–${TOP_PRICE}`,
   contactPoint: [
     {
       '@type': 'ContactPoint',
@@ -174,7 +178,7 @@ const HOME_JSON_LD = {
         audienceType: 'WASSCE candidates',
         geographicArea: { '@type': 'Country', name: 'Sierra Leone' },
       },
-      offers: { '@type': 'AggregateOffer', priceCurrency: 'SLE', lowPrice: '0', highPrice: '25', offerCount: '3' },
+      offers: { '@type': 'AggregateOffer', priceCurrency: 'SLE', lowPrice: '0', highPrice: String(TOP_PRICE), offerCount: String(PLANS.length + 1) },
       provider: { '@id': ORG_ID },
     },
   ],

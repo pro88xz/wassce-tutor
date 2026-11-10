@@ -18,7 +18,7 @@ export function SubjectCard({ s }: { s: SubjectProgress }) {
       params={{ subjectId: s.subject.id }}
       className="flex h-full flex-col overflow-hidden rounded-2xl border bg-card transition-colors hover:border-primary/40"
     >
-      <SubjectCover slug={s.subject.slug} shape="wide" rounded="rounded-none" className="aspect-[16/5] w-full sm:aspect-[16/6]" />
+      <SubjectCover slug={s.subject.slug} shape="wide" rounded="rounded-none" className="aspect-[16/5] w-full sm:aspect-[16/7]" />
       <div className="flex flex-1 flex-col gap-3 p-4">
       <div className="flex items-center gap-3">
         <div className="min-w-0 flex-1">

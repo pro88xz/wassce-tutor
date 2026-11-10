@@ -32,7 +32,11 @@ const ReactQueryDevtools = import.meta.env.PROD
 //    ("app-boot", a stored Supabase session) so CSS shows a spinner instead of
 //    the prerendered marketing page while the session is restored.
 //    AuthProvider removes "app-boot" once the session check finishes.
-const BOOT_SCRIPT = `(function(){try{var d=document.documentElement;
+// It must act only once per document. The router re-inserts head scripts when
+// it renders a route in the browser, which runs this again; without the guard
+// that second run put "app-boot" back for anyone signed in, and after signing
+// out the landing page stayed hidden behind the spinner until a reload.
+const BOOT_SCRIPT = `(function(){try{if(window.__wtBooted)return;window.__wtBooted=1;var d=document.documentElement;
 if(localStorage.getItem('wassce_theme')==='sepia')d.classList.add('dark');
 var C=window.Capacitor;if(C&&C.isNativePlatform&&C.isNativePlatform())d.classList.add('native-app');
 for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);if(k&&/^sb-.+-auth-token$/.test(k)){d.classList.add('app-boot');break}}

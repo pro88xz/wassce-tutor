@@ -6,8 +6,10 @@ import { initialsOf, showsStudentNav } from '@/lib/nav'
 import { BrandMark } from '@/components/BrandMark'
 
 /**
- * Compact top bar for the signed-in workspace: brand (mobile), the AI tutor as
- * a contextual shortcut (not a sixth navigation destination) and account access.
+ * Compact top bar for the signed-in workspace on phones and tablets: brand,
+ * the tutor as a contextual shortcut (not a sixth navigation destination) and
+ * account access. From 1024 px the sidebar carries all three, so the bar is
+ * hidden rather than left as an empty strip above every page.
  */
 export function TopBar() {
   const { user } = useAuth()
@@ -17,9 +19,9 @@ export function TopBar() {
 
   const onTutor = pathname === '/tutor' || pathname.startsWith('/tutor/')
   return (
-    <header className="sticky top-0 z-30 border-b bg-background/90 backdrop-blur-md">
-      <div className="mx-auto flex min-h-14 py-2 max-w-5xl items-center gap-3 px-4 sm:px-6">
-        <Link to="/" aria-label="WASSCE Tutor home" className="lg:hidden">
+    <header className="sticky top-0 z-30 border-b bg-background/90 backdrop-blur-md lg:hidden">
+      <div className="mx-auto flex min-h-14 max-w-[79rem] items-center gap-3 px-4 py-2 sm:px-6">
+        <Link to="/" aria-label="WASSCE Tutor home">
           <BrandMark compact />
         </Link>
         <div className="ml-auto flex items-center gap-2">

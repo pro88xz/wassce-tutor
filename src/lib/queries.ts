@@ -113,6 +113,9 @@ export function usePapers(subjectId: string | null) {
         .select('*')
         .eq('subject_id', subjectId!)
         .eq('is_published', true)
+        // A set with no questions cannot be taken, so students never see it
+        // (an empty draft published by mistake would otherwise be listed).
+        .gt('question_count', 0)
         .order('sort_order')
       if (error) throw error
       return data as PaperRow[]
@@ -133,6 +136,7 @@ export function usePapersForSubjects(subjectIds: string[]) {
         .select('*')
         .in('subject_id', ids)
         .eq('is_published', true)
+        .gt('question_count', 0) // see usePapers
         .order('sort_order')
       if (error) throw error
       return data as PaperRow[]

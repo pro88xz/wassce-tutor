@@ -2,6 +2,8 @@ import { createFileRoute } from '@tanstack/react-router'
 import { ArrowRight, BookOpen, Clock3 } from 'lucide-react'
 import { BLOG_POSTS } from '@/content/editorial'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
+import { EditorialPhoto } from '@/components/public/EditorialPhoto'
+import { editorialImage } from '@/lib/editorial-images'
 import { absoluteUrl, breadcrumbJsonLd, indexablePageTags, SITE } from '@/lib/seo'
 
 export const Route = createFileRoute('/blog/')({
@@ -10,7 +12,7 @@ export const Route = createFileRoute('/blog/')({
     path: '/blog',
     title: 'WASSCE Tutor Blog: Study & University Guides',
     description: 'Research-backed WASSCE study advice, Sierra Leone university admissions guides, subject planning and practical resources for students and families.',
-    image: BLOG_POSTS[0].image,
+    image: editorialImage(BLOG_POSTS[0].image).og,
     jsonLd: [
       { '@context': 'https://schema.org', '@type': 'Blog', name: 'WASSCE Tutor Blog', url: absoluteUrl('/blog'), inLanguage: 'en', publisher: { '@type': 'Organization', name: SITE.name, url: SITE.origin } },
       { '@context': 'https://schema.org', '@type': 'ItemList', name: 'WASSCE Tutor editorial articles', itemListElement: BLOG_POSTS.map((post,i) => ({ '@type': 'ListItem', position: i+1, url: absoluteUrl(`/blog/${post.slug}`), name: post.title })) },
@@ -24,7 +26,7 @@ function BlogIndexPage() {
   const featured = BLOG_POSTS[0]
   const remaining = BLOG_POSTS.slice(1)
   return (
-    <main className="mx-auto w-full max-w-6xl space-y-10 pb-16 sm:space-y-14">
+    <main className="site-page space-y-10 pb-16 sm:space-y-14">
       <Breadcrumbs trail={[['Home', '/'], ['Blog', '/blog']]} />
       <header className="relative overflow-hidden rounded-[2rem] bg-[#21134d] px-6 py-10 text-white sm:px-10 sm:py-14">
         <div className="absolute -right-20 -top-24 h-80 w-80 rounded-full bg-violet-500/25 blur-3xl" />
@@ -37,7 +39,7 @@ function BlogIndexPage() {
       </header>
       <section className="grid gap-6 lg:grid-cols-[1.45fr_.85fr]">
         <a href={`/blog/${featured.slug}`} className="group overflow-hidden rounded-3xl border bg-card">
-          <div className="aspect-[16/8] overflow-hidden bg-muted"><img src={featured.image} alt={featured.imageAlt} className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.025]" fetchPriority="high"/></div>
+          <EditorialPhoto image={featured.image} alt={featured.imageAlt} label={featured.category} sizes="(min-width: 1024px) 720px, 100vw" priority className="aspect-[16/8]" imgClassName="transition duration-500 group-hover:scale-[1.025]"/>
           <div className="space-y-3 p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-wider text-primary">{featured.category} · Featured guide</p><h2 className="max-w-3xl text-2xl font-bold leading-tight tracking-tight sm:text-3xl">{featured.title}</h2><p className="max-w-2xl text-sm leading-relaxed text-muted-foreground">{featured.description}</p><div className="flex items-center gap-4 pt-2 text-xs text-muted-foreground"><span>{new Date(featured.publishedAt+'T00:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}</span><span className="inline-flex items-center gap-1"><Clock3 className="h-3.5 w-3.5"/>{featured.readMinutes} min read</span><span className="ml-auto inline-flex items-center gap-1 font-semibold text-primary">Read guide <ArrowRight className="h-4 w-4"/></span></div></div>
         </a>
         <aside className="flex flex-col justify-between rounded-3xl border bg-[#f7f5ff] p-6 sm:p-8">
@@ -49,7 +51,7 @@ function BlogIndexPage() {
         <div className="flex flex-wrap items-end justify-between gap-3"><div><p className="text-xs font-bold uppercase tracking-[.16em] text-primary">The latest</p><h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">Guides and useful reads</h2></div><span className="text-sm text-muted-foreground">{BLOG_POSTS.length} researched articles</span></div>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {remaining.map((post) => <a key={post.slug} href={`/blog/${post.slug}`} className="group overflow-hidden rounded-2xl border bg-card transition hover:-translate-y-0.5 hover:shadow-lg">
-            <div className="aspect-[16/10] overflow-hidden bg-muted"><img src={post.image} alt={post.imageAlt} loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"/></div>
+            <EditorialPhoto image={post.image} alt={post.imageAlt} label={post.category} sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw" className="aspect-[16/10]" imgClassName="transition duration-500 group-hover:scale-[1.03]"/>
             <div className="space-y-3 p-5"><p className="text-[11px] font-bold uppercase tracking-wider text-primary">{post.category}</p><h3 className="text-lg font-bold leading-snug">{post.title}</h3><p className="line-clamp-3 text-sm leading-relaxed text-muted-foreground">{post.description}</p><div className="flex items-center justify-between pt-1 text-xs text-muted-foreground"><span>{post.readMinutes} min read</span><span className="inline-flex items-center gap-1 font-semibold text-primary">Read article <ArrowRight className="h-3.5 w-3.5"/></span></div></div>
           </a>)}
         </div>

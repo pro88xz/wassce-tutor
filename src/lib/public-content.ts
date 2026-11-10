@@ -274,7 +274,15 @@ export function lessonSummary(markdown: string, max = 155): string {
   return cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:.\s]+$/, '') + '…'
 }
 
-export type PopularTopic = { subjectSlug: string; subjectName: string; topicSlug: string; topicName: string; lessons: number }
+export type PopularTopic = {
+  subjectSlug: string
+  subjectName: string
+  topicSlug: string
+  topicName: string
+  lessons: number
+  /** The topic's first lessons, in syllabus order: real titles for the homepage lesson preview. */
+  firstLessons: { title: string; minutes: number | null; free: boolean }[]
+}
 
 export type LandingData = {
   subjects: SubjectSummary[]
@@ -303,7 +311,14 @@ export async function fetchLandingData(): Promise<LandingData> {
   for (let round = 0; round < 2 && picked.length < 8; round++) for (const l of lists) if (l[round] && picked.length < 8) picked.push(l[round])
   const popular = picked.map((t) => {
     const s = bySubject.get(t.subject_id)!
-    return { subjectSlug: s.slug, subjectName: s.name, topicSlug: t.slug, topicName: t.name, lessons: t.lessons.length }
+    return {
+      subjectSlug: s.slug,
+      subjectName: s.name,
+      topicSlug: t.slug,
+      topicName: t.name,
+      lessons: t.lessons.length,
+      firstLessons: t.lessons.slice(0, 3).map((l) => ({ title: l.title, minutes: l.est_minutes, free: l.is_public })),
+    }
   })
   return {
     subjects,

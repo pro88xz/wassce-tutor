@@ -32,7 +32,7 @@ function SubjectsIndexPage() {
   const topics = subjects.reduce((n, s) => n + s.topicCount, 0)
   const lessons = subjects.reduce((n, s) => n + s.lessonCount, 0)
   return (
-    <article className="mx-auto w-full max-w-6xl space-y-9 px-1 pb-16 sm:space-y-12">
+    <article className="site-page space-y-9 pb-16 sm:space-y-12">
       <header className="subject-index-hero">
         <Breadcrumbs trail={TRAIL} />
         <div className="subject-index-hero-content">
