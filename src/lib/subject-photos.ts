@@ -25,7 +25,8 @@ export type SubjectPhoto = {
 
 // Sourced from Pexels (free for commercial use, no attribution required;
 // credited anyway). Downloaded at 1600 px, centre-cropped to 3:2 and
-// re-encoded as WebP at 1280 and 640 px (public/img/subjects).
+// re-encoded as WebP at 1280 and 640 px (public/img/subjects), plus a 400 px
+// copy for phone cards (scripts/images/build-variants.mjs).
 export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
   'english-language': {
     src: '/img/subjects/english-language.webp',
@@ -155,6 +156,14 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
     caption: 'A stack of leather-bound books',
     credit: { creator: 'photoGraph', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/pile-of-old-books-12006842/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
   },
+  'religious-studies': {
+    src: '/img/subjects/religious-studies.webp',
+    small: '/img/subjects/religious-studies-640.webp',
+    position: 'object-[50%_60%]',
+    subject: 'Religious Studies',
+    caption: 'An open book on a wooden table',
+    credit: { creator: 'Daniel Radovskis', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/open-book-on-a-wooden-table-by-a-brick-wall-16500523/', license: 'Pexels License', licenseUrl: 'https://www.pexels.com/license/' },
+  },
   'technical-drawing': {
     src: '/img/subjects/technical-drawing.webp',
     small: '/img/subjects/technical-drawing-640.webp',
@@ -176,3 +185,11 @@ export const SUBJECT_PHOTOS: Record<string, SubjectPhoto> = {
 export function subjectPhoto(slug: string | null | undefined): SubjectPhoto | undefined {
   return slug ? SUBJECT_PHOTOS[slug] : undefined
 }
+
+/**
+ * Every size of a subject photo, for srcset: 400 px (phone cards), 640 px and
+ * 1280 px. The 400 px copies are made by scripts/images/build-variants.mjs.
+ */
+export const subjectPhotoSrcSet = (photo: SubjectPhoto) =>
+  `${photo.src.replace(/\.webp$/, '-400.webp')} 400w, ${photo.small} 640w, ${photo.src} 1280w`
+

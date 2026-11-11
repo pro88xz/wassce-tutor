@@ -1,6 +1,7 @@
 // Local fit, told with photographs: the four ways the product is shaped
 // around studying in Sierra Leone. A rail on phones, a four-column row above.
-import { BookOpen, Moon, Smartphone, Wallet } from 'lucide-react'
+// The band ends with who builds it: the founder, by name, as on the About page.
+import { ArrowRight, BookOpen, Moon, Smartphone, Wallet } from 'lucide-react'
 import { Band, SectionHeading } from '@/components/public/Section'
 
 const FEATURES = [
@@ -46,6 +47,32 @@ export function LocalBand() {
             </li>
           ))}
         </ul>
+
+        {/* Who is behind the platform. The wording is the About page's own. */}
+        <div data-reveal className="mt-8 flex flex-col gap-4 rounded-2xl border border-white/12 bg-white/[0.06] p-5 sm:flex-row sm:items-center sm:gap-6 sm:p-6 lg:mt-10">
+          <img
+            src="/img/about/founder-mohamed-bangura-320.webp"
+            alt="Mohamed Bangura, founder and developer of WASSCE Tutor"
+            width={320}
+            height={320}
+            loading="lazy"
+            decoding="async"
+            className="h-16 w-16 shrink-0 rounded-full object-cover object-[50%_22%] ring-2 ring-white/25"
+          />
+          <div className="min-w-0 flex-1">
+            <p className="text-[15px] leading-relaxed text-white/85">
+              WASSCE Tutor is built and maintained in Freetown by a Sierra Leonean developer, to make structured, locally relevant WASSCE preparation
+              accessible to students across the country.
+            </p>
+            <p className="mt-2 text-sm">
+              <span className="font-bold text-white">Mohamed Bangura</span>
+              <span className="text-white/70"> · Founder and developer</span>
+            </p>
+          </div>
+          <a href="/about" className="site-btn site-btn-glass shrink-0">
+            About WASSCE Tutor <ArrowRight className="h-4 w-4" aria-hidden />
+          </a>
+        </div>
       </div>
     </Band>
   )

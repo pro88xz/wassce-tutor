@@ -12,7 +12,7 @@ export type TopicShortcut = { label: string; href: string }
  * Matching tolerates small spelling mistakes (see src/lib/search.ts).
  *
  * `shortcuts` are links to real topics that already have lessons, so a
- * shortcut never leads to a "lessons coming soon" page.
+ * shortcut never leads to a page with no lessons.
  */
 export function TopicSearch({ shortcuts = [] }: { shortcuts?: TopicShortcut[] }) {
   const [query, setQuery] = useState('')
@@ -82,7 +82,7 @@ export function TopicSearch({ shortcuts = [] }: { shortcuts?: TopicShortcut[] })
                       <span className="block truncate text-sm font-semibold">{r.name}</span>
                       <span className="block truncate text-xs text-slate-500">
                         {r.kind === 'subject' ? 'Subject' : r.subjectName}
-                        {r.lessons > 0 ? ` · ${r.lessons} lesson${r.lessons === 1 ? '' : 's'}` : ' · lessons coming soon'}
+                        {r.lessons > 0 ? ` · ${r.lessons} lesson${r.lessons === 1 ? '' : 's'}` : ' · syllabus outline'}
                       </span>
                     </span>
                   </a>

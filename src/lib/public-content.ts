@@ -323,7 +323,8 @@ export async function fetchLandingData(): Promise<LandingData> {
   return {
     subjects,
     totals: {
-      subjects: subjects.length,
+      // Subjects a visitor can open: those with a syllabus page.
+      subjects: subjects.filter((s) => hasSubjectPage(s.topicCount)).length,
       topics: subjects.reduce((n, s) => n + s.topicCount, 0),
       lessons: subjects.reduce((n, s) => n + s.lessonCount, 0),
     },

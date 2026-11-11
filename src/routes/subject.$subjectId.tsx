@@ -75,7 +75,7 @@ function SubjectPage() {
               {sp ? (
                 <p className="text-sm text-muted-foreground">
                   {sp.total === 0
-                    ? 'Lessons coming soon'
+                    ? 'Lessons in preparation'
                     : started
                       ? `${sp.done} of ${sp.total} lessons · ${sp.topicsDone} of ${sp.topicsWithLessons} topics completed`
                       : `${sp.total} lessons in ${sp.topicsWithLessons} topics`}

@@ -7,7 +7,7 @@ import { Link } from '@tanstack/react-router'
 import { useState } from 'react'
 import { ArrowRight, Check, CircleCheck, CircleX, RotateCcw } from 'lucide-react'
 import { SAMPLE_QUESTIONS, type SampleOption } from '@/content/sample-questions'
-import { PRACTICE_QUESTIONS } from '@/lib/practice-counts'
+import { PRACTICE_SUBJECTS_PHRASE, PRACTICE_TOTAL } from '@/lib/practice-counts'
 import { Band } from '@/components/public/Section'
 
 type OptionState = 'open' | 'correct' | 'chosen-wrong' | 'other'
@@ -28,7 +28,6 @@ export function TryQuestion() {
   const last = index === SAMPLE_QUESTIONS.length - 1
   const correct = chosen === question.answer
   const chosenOption = question.options.find((o) => o.label === chosen)
-  const total = Object.values(PRACTICE_QUESTIONS).reduce((sum, n) => sum + n, 0)
 
   const go = (to: number) => {
     setIndex(to)
@@ -56,7 +55,7 @@ export function TryQuestion() {
             ))}
           </ul>
           <p className="mt-6 text-sm text-muted-foreground">
-            {total.toLocaleString('en')} original questions so far, written by WASSCE Tutor to the syllabus. They are not WAEC past papers.
+            {PRACTICE_TOTAL.toLocaleString('en')} original questions so far, in {PRACTICE_SUBJECTS_PHRASE}, written by WASSCE Tutor to the syllabus. They are not WAEC past papers.
           </p>
         </div>
 

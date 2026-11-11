@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { publicHead } from '@/lib/seo'
+import { CONTACT } from '@/lib/contact'
 
 export const Route = createFileRoute('/privacy')({
   head: publicHead('/privacy'),
@@ -93,7 +94,7 @@ function Privacy() {
         <h2 className="text-xl font-bold tracking-tight">Contact</h2>
         <p className="text-muted-foreground">
           Questions about this policy?{' '}
-          <a href="mailto:secretsafe.cc@gmail.com" className="font-semibold text-primary hover:underline">
+          <a href={`mailto:${CONTACT.email}`} className="font-semibold text-primary hover:underline">
             Contact us
           </a>
           .

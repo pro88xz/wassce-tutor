@@ -15,6 +15,7 @@
     "notes:validate": "node scripts/notes-ingestion.mjs validate",
     "notes:outlines": "node scripts/notes/outlines.mjs",
     "brand:icons": "node scripts/brand/build-icons.mjs",
+    "images:variants": "node scripts/images/build-variants.mjs",
     "notes:build": "node scripts/notes-ingestion.mjs build",
     "notes:acquire": "node scripts/source-acquisition.mjs",
     "notes:test": "node --test scripts/notes-ingestion.test.mjs",

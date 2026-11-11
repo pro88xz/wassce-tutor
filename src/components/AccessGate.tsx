@@ -2,7 +2,8 @@ import type { ReactNode } from 'react'
 import { Link } from '@tanstack/react-router'
 import { ArrowRight, Check, Lock } from 'lucide-react'
 import { useAccess } from '@/lib/useAccess'
-import { FREE_FEATURES, PLANS } from '@/lib/plans'
+import { PLANS } from '@/lib/plans'
+import { FREE_FEATURES, FREE_PRACTICE_INLINE } from '@/lib/free-plan'
 
 type Kind = 'lesson' | 'practice' | 'tutor'
 
@@ -13,7 +14,7 @@ const COPY: Record<Kind, { title: (name?: string) => string; body: string }> = {
   },
   practice: {
     title: (name) => (name ? `Unlock “${name}”` : 'Unlock this practice set'),
-    body: 'Your free account includes a starter practice set in every subject. A plan opens every set, with the full working.',
+    body: `Your free account includes ${FREE_PRACTICE_INLINE}. A plan opens every set, with the full working.`,
   },
   tutor: {
     title: () => 'The AI tutor comes with a plan',

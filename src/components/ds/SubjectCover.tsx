@@ -8,7 +8,7 @@
 //   banner  – slim headers; the motif sits right, the pattern runs left
 //             under the title.
 import type { ReactNode } from 'react'
-import { subjectPhoto } from '@/lib/subject-photos'
+import { subjectPhoto, subjectPhotoSrcSet } from '@/lib/subject-photos'
 
 type Pattern = 'grid' | 'dots' | 'ruled' | 'waves' | 'diag' | 'rings'
 /** bg is the colour for SVG fills; tone is the same colour as a Tailwind class (a literal, so Tailwind generates it). */
@@ -380,6 +380,7 @@ export function SubjectCover({
   className = '',
   rounded = 'rounded-xl',
   priority = false,
+  sizes,
 }: {
   slug: string | null | undefined
   /** square: illustration thumbnail; thumb: photo thumbnail for lists (illustration if no photo) */
@@ -388,6 +389,8 @@ export function SubjectCover({
   rounded?: string
   /** Load immediately (above-the-fold banners). */
   priority?: boolean
+  /** The width the cover is shown at (an <img sizes> value), so phones download the small copy. */
+  sizes?: string
 }) {
   const art = subjectArt(slug)
   // Large shapes use the subject's photograph when there is one; small
@@ -396,7 +399,7 @@ export function SubjectCover({
   if (photo && shape === 'thumb') {
     return (
       <span className={`relative block overflow-hidden ${art.tone} ${rounded} ${className}`} aria-hidden>
-        <img src={photo.small} alt={photoAlt(photo)} loading="lazy" decoding="async" className={`absolute inset-0 h-full w-full object-cover ${photo.position ?? ''}`} />
+        <img src={photo.src.replace(/\.webp$/, '-400.webp')} alt={photoAlt(photo)} loading="lazy" decoding="async" className={`absolute inset-0 h-full w-full object-cover ${photo.position ?? ''}`} />
       </span>
     )
   }
@@ -405,8 +408,8 @@ export function SubjectCover({
       <span className={`relative block overflow-hidden ${art.tone} ${rounded} ${className}`} aria-hidden>
         <img
           src={photo.src}
-          srcSet={`${photo.small} 640w, ${photo.src} 1280w`}
-          sizes={shape === 'banner' ? '(min-width: 1024px) 768px, 100vw' : '(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw'}
+          srcSet={subjectPhotoSrcSet(photo)}
+          sizes={sizes ?? (shape === 'banner' ? '(min-width: 1280px) 1216px, 100vw' : '(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw')}
           alt={photoAlt(photo)}
           loading={priority ? 'eager' : 'lazy'}
           decoding="async"

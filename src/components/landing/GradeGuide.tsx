@@ -29,14 +29,15 @@ const POINTS = ['A1 to C6 are credits, the grades that count', 'D7 and E8 are pa
 export function GradeGuide() {
   return (
     <Band labelledBy="guide-heading">
-      <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+      <div className="grid items-center gap-8 sm:gap-10 lg:grid-cols-2 lg:gap-16">
         <div data-reveal className="max-w-xl">
           <p className="site-eyebrow">WASSCE guide</p>
           <h2 id="guide-heading" className="site-h2 mt-3">New to WASSCE? Know how it is graded.</h2>
           <p className="site-lede mt-4">
             Every subject gets one of nine grades. Learn what each one means, which subjects each faculty sits, and how the exam works in Sierra Leone.
           </p>
-          <ul className="mt-6 space-y-3">
+          {/* On phones the chart below carries these three points (its Credit / Pass / Fail scale). */}
+          <ul className="mt-6 hidden space-y-3 sm:block">
             {POINTS.map((t) => (
               <li key={t} className="flex gap-3 text-[15px] font-medium">
                 <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-success/12 text-success">
@@ -46,7 +47,7 @@ export function GradeGuide() {
               </li>
             ))}
           </ul>
-          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2">
+          <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 sm:mt-8">
             <a href="/wassce" className="site-btn site-btn-primary">
               Read the WASSCE guide <ArrowRight className="h-4 w-4" aria-hidden />
             </a>

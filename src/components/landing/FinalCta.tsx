@@ -20,7 +20,7 @@ export function FinalCta() {
             <ul className="mt-8 flex flex-col items-center justify-center gap-x-6 gap-y-2 text-sm font-medium text-white/70 sm:flex-row sm:flex-wrap">
               <li className="inline-flex items-center gap-2"><Check className="h-4 w-4 text-emerald-300" aria-hidden /> Free account, no card needed</li>
               <li className="inline-flex items-center gap-2"><Check className="h-4 w-4 text-emerald-300" aria-hidden /> No automatic renewal</li>
-              <li className="inline-flex items-center gap-2"><Smartphone className="h-4 w-4 text-violet-200" aria-hidden /> Android app coming soon</li>
+              <li className="inline-flex items-center gap-2"><Smartphone className="h-4 w-4 text-violet-200" aria-hidden /> Works in any phone browser</li>
             </ul>
           </div>
         </div>
