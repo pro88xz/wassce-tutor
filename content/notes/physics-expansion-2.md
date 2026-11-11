@@ -35,7 +35,9 @@ $$\gamma_r = 1.8 \times 10^{-4} + 2.7 \times 10^{-5} = 2.07 \times 10^{-4}\ \tex
 
 Fill the bottle with liquid at θ₁ and weigh it; heat it to θ₂ so some liquid overflows; weigh again.
 
-$$\gamma_a = \dfrac{\text{mass of liquid expelled}}{\text{mass of liquid remaining} \times \text{temperature rise}}$$
+$$\gamma_a = \dfrac{\text{mass expelled}}{\text{mass remaining} \times \Delta\theta}$$
+
+where the masses are of the liquid that overflowed and the liquid left in the bottle, and $\Delta\theta$ is the temperature rise.
 
 ## The anomalous expansion of water
 

@@ -13,7 +13,12 @@
 // LessonView renders both forms and shows the stacked one only when the
 // one-line form does not fit (see fitLongMath()), so wide screens are unchanged.
 
-const RELATIONS = ['=', '\\approx', '\\Rightarrow']
+// Steps within a line break before these: "= ...", "≈ ...".
+const RELATIONS = ['=', '\\approx']
+// A new line starts at these and keeps them: "⇒ sin φ = 0.75", "→ Ba + Kr + 3n".
+const ARROWS = ['\\Longrightarrow', '\\Rightarrow', '\\longrightarrow', '\\rightarrow', '\\to']
+// A new line starts here and the spacing itself is dropped.
+const GAPS = ['\\qquad', '\\quad']
 
 /** Roughly how many characters the formula shows (commands count as one). */
 export function visibleLength(tex: string): number {
@@ -86,14 +91,35 @@ function stackRow(row: string): string | null {
   return `\\begin{aligned}${lines.join(' \\\\ ')}\\end{aligned}`
 }
 
+/** Break a formula into lines at \\quad / \\qquad gaps and before arrows. */
+function rows(src: string): string[] {
+  const { parts, seps } = splitTop(src, (s, i) => {
+    for (const g of GAPS) if (commandAt(s, i, g)) return g
+    for (const a of ARROWS) if (commandAt(s, i, a)) return a
+    return null
+  })
+  const out = [parts[0]]
+  seps.forEach((sep, k) => out.push(ARROWS.includes(sep) ? `${sep} ${parts[k + 1]}` : parts[k + 1]))
+  const lines = out.map((r) => r.trim()).filter(Boolean)
+  // "\quad\Longrightarrow\quad s = ..." leaves the arrow alone: join it to the next line.
+  const merged: string[] = []
+  for (let i = 0; i < lines.length; i++) {
+    if (ARROWS.includes(lines[i]) && i + 1 < lines.length) {
+      merged.push(`${lines[i]} ${lines[i + 1]}`)
+      i += 1
+    } else merged.push(lines[i])
+  }
+  return merged
+}
+
 /** The stacked form of a long displayed equation, or null if it needs none. */
 export function splitForNarrow(tex: string): string | null {
   const src = tex.trim()
-  if (visibleLength(src) < 22) return null
+  if (visibleLength(src) < 14) return null
   if (/\\begin\{|\\\\|&/.test(src)) return null // already laid out by its author
-  const rows = splitTop(src, (s, i) => commandAt(s, i, '\\qquad')).parts.map((r) => r.trim()).filter(Boolean)
-  const laid = rows.map((r) => (visibleLength(r) >= 14 ? stackRow(r) : null) ?? r)
-  if (rows.length === 1) return laid[0] === rows[0] ? null : laid[0]
+  const lines = rows(src)
+  const laid = lines.map((r) => (visibleLength(r) >= 12 ? stackRow(r) : null) ?? r)
+  if (lines.length === 1) return laid[0] === lines[0] ? null : laid[0]
   return `\\begin{gathered}${laid.join(' \\\\[6pt] ')}\\end{gathered}`
 }
 

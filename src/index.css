@@ -336,6 +336,12 @@ html.app-boot [data-public-footer] { display: none; }
   padding: 0.25rem 0;
   max-width: 100%;
 }
+/* On phones, displayed formulas are a little smaller (still larger than the body text). */
+@media (max-width: 30rem) {
+  .katex-display > .katex {
+    font-size: 1.1em;
+  }
+}
 
 /* Markdown tables (lessons, AI tutor): readable on phones, scroll sideways when wide. */
 .md-table {

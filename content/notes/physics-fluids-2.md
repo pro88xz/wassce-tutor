@@ -15,7 +15,9 @@ When a body is placed in a fluid, the fluid pushes up on it. This upward force i
 
 The **apparent weight** of a body in a liquid is less than its true weight:
 
-$$\text{upthrust} = \text{weight in air} - \text{apparent weight in liquid}$$
+$$\text{upthrust} = \text{weight in air} - \text{weight in liquid}$$
+
+Here the weight in liquid is the apparent weight: the spring-balance reading while the body is fully immersed.
 
 ## Archimedes' principle
 

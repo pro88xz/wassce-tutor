@@ -13,7 +13,7 @@ By the end of this lesson you should be able to:
 
 When friction acts, some energy is converted into heat:
 
-$$\text{energy at start} = \text{energy at end} + \text{work done against friction}$$
+$$E_{\text{start}} = E_{\text{end}} + \text{work against friction}$$
 
 :::callout{type=worked-example}
 **A 40 kg child slides from rest down a slide 3 m high and reaches the bottom at 6 m s⁻¹. How much energy is lost to friction? ($g = 10$ m s⁻²)**

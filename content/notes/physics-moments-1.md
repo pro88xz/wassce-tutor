@@ -86,7 +86,9 @@ The support nearer the man carries more of the load.
 :::callout{type=definition}
 A **couple** is a pair of **equal**, **parallel** and **opposite** forces whose lines of action do **not** coincide. It produces rotation only, with no translation.
 
-$$\text{moment of a couple (torque)} = \text{one force} \times \text{perpendicular distance between the forces}$$
+$$\text{moment of a couple} = F \times d$$
+
+where $F$ is **one** of the two forces and $d$ is the **perpendicular distance between them**. This moment is also called the **torque** of the couple.
 :::
 
 Examples: turning a tap, a steering wheel, a screwdriver, a bottle top; the forces on the coil of an electric motor.

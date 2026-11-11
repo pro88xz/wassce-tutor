@@ -18,7 +18,9 @@ A **bipolar transistor** is a sandwich of three layers of semiconductor: **n-p-n
 - With the **base–emitter** junction **forward-biased** (base about 0.7 V above the emitter) and the **collector–base** junction reverse-biased, electrons flow from emitter to base. Because the base is thin, most of them sweep on to the **collector**.
 - A **small base current** $I_B$ therefore controls a **much larger collector current** $I_C$.
 
-$$I_E = I_B + I_C \qquad \beta = \dfrac{I_C}{I_B}\ (\text{current gain, typically 50–500})$$
+$$I_E = I_B + I_C \qquad \beta = \dfrac{I_C}{I_B}$$
+
+where $\beta$ is the **current gain**, typically 50 to 500.
 
 :::callout{type=worked-example}
 **A transistor has a current gain of 100. If the base current is 50 μA, find the collector current and the emitter current.**
