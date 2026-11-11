@@ -1,15 +1,20 @@
 import { useMemo, useRef, useState } from 'react'
-import { BookOpen, Search } from 'lucide-react'
+import { ArrowRight, BookOpen, Search } from 'lucide-react'
 import { fetchSearchIndex } from '@/lib/public-content'
 import type { SearchEntry } from '@/lib/public-content'
+import { matchEntries } from '@/lib/search'
 
-const SUGGESTIONS = ['Photosynthesis', 'Quadratic equations', 'Essay writing']
+export type TopicShortcut = { label: string; href: string }
 
 /**
  * Search box for subjects and syllabus topics. The index (subjects + 600
  * topics) loads on first focus, so it costs nothing until someone uses it.
+ * Matching tolerates small spelling mistakes (see src/lib/search.ts).
+ *
+ * `shortcuts` are links to real topics that already have lessons, so a
+ * shortcut never leads to a "lessons coming soon" page.
  */
-export function TopicSearch() {
+export function TopicSearch({ shortcuts = [] }: { shortcuts?: TopicShortcut[] }) {
   const [query, setQuery] = useState('')
   const [index, setIndex] = useState<SearchEntry[] | null>(null)
   const [open, setOpen] = useState(false)
@@ -25,13 +30,17 @@ export function TopicSearch() {
   }
 
   const results = useMemo(() => {
-    const q = query.trim().toLowerCase()
-    if (!index || q.length < 2) return []
-    const words = q.split(/\s+/)
-    return index
-      .filter((e) => words.every((w) => `${e.name} ${e.subjectName}`.toLowerCase().includes(w)))
-      .sort((a, b) => Number(b.lessons > 0) - Number(a.lessons > 0) || Number(a.kind === 'topic') - Number(b.kind === 'topic') || a.name.length - b.name.length)
+    if (!index || query.trim().length < 2) return []
+    return matchEntries(index, query)
+      .sort(
+        (a, b) =>
+          a.cost - b.cost ||
+          Number(b.entry.lessons > 0) - Number(a.entry.lessons > 0) ||
+          Number(a.entry.kind === 'topic') - Number(b.entry.kind === 'topic') ||
+          a.entry.name.length - b.entry.name.length,
+      )
       .slice(0, 8)
+      .map((m) => m.entry)
   }, [index, query])
 
   return (
@@ -57,12 +66,17 @@ export function TopicSearch() {
           {!index ? (
             <p className="px-4 py-3 text-sm text-slate-500">Searching…</p>
           ) : results.length === 0 ? (
-            <p className="px-4 py-3 text-sm text-slate-500">No topics match &ldquo;{query}&rdquo;. Try another word.</p>
+            <div className="px-4 py-3 text-sm text-slate-600">
+              <p>No subject or topic matches &ldquo;{query}&rdquo;. Check the spelling or try a shorter word.</p>
+              <a href="/wassce/subjects" className="mt-2 inline-flex min-h-11 items-center gap-1.5 font-semibold text-violet-700 hover:underline">
+                Browse every subject <ArrowRight className="h-4 w-4" aria-hidden />
+              </a>
+            </div>
           ) : (
             <ul className="max-h-80 overflow-y-auto py-1">
               {results.map((r) => (
                 <li key={`${r.kind}-${r.href}-${r.name}`}>
-                  <a href={r.href} className="flex items-center gap-3 px-4 py-2.5 hover:bg-slate-50">
+                  <a href={r.href} className="flex min-h-12 items-center gap-3 px-4 py-2.5 hover:bg-slate-50">
                     <BookOpen className="h-4 w-4 shrink-0 text-slate-400" aria-hidden />
                     <span className="min-w-0 flex-1">
                       <span className="block truncate text-sm font-semibold">{r.name}</span>
@@ -79,20 +93,20 @@ export function TopicSearch() {
         </div>
       )}
 
-      <div className="mt-3 flex flex-wrap items-center gap-2" aria-label="Popular searches">
-        <span className="text-xs font-medium text-white/55">Popular:</span>
-        {SUGGESTIONS.map((s) => (
-          <button
-            key={s}
-            type="button"
-            onMouseDown={(e) => e.preventDefault()}
-            onClick={() => { load(); setQuery(s); setOpen(true); document.getElementById('topic-search')?.focus() }}
-            className="rounded-full bg-white/10 px-3 py-1.5 text-xs font-semibold text-white/90 ring-1 ring-white/20 transition hover:bg-white/20"
-          >
-            {s}
-          </button>
-        ))}
-      </div>
+      {shortcuts.length > 0 && (
+        <div className="mt-3 flex flex-wrap items-center gap-2">
+          <span className="text-xs font-medium text-white/55">Popular topics:</span>
+          {shortcuts.map((s) => (
+            <a
+              key={s.href}
+              href={s.href}
+              className="inline-flex min-h-8 items-center rounded-full bg-white/10 px-3 text-xs font-semibold text-white/90 ring-1 ring-white/20 transition hover:bg-white/20"
+            >
+              {s.label}
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   )
 }
