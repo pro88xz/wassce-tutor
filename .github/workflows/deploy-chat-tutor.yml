@@ -48,4 +48,5 @@ jobs:
           SUPABASE_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
         run: |
           set -euo pipefail
-          supabase functions deploy chat-tutor --project-ref "$SUPABASE_PROJECT_REF"
+          # --yes: the CLI will not ask for confirmation when it is not run in a terminal.
+          supabase functions deploy chat-tutor --remote="$SUPABASE_PROJECT_REF" --yes
