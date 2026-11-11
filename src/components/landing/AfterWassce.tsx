@@ -18,15 +18,16 @@ export function AfterWassce() {
           </a>
         }
       />
-      <ul className="mt-10 grid gap-5 md:grid-cols-3">
+      {/* A swipeable rail on phones (three stacked cards were two screens of scrolling); a row above. */}
+      <ul className="site-rail -mx-[var(--site-gutter)] mt-8 scroll-px-[var(--site-gutter)] px-[var(--site-gutter)] pb-2 md:mx-0 md:mt-10 md:grid md:grid-cols-3 md:gap-5 md:overflow-visible md:px-0 md:pb-0">
         {UNIVERSITY_FEATURES.map((u, i) => (
-          <li key={u.slug} data-reveal={i}>
+          <li key={u.slug} data-reveal={i} className="w-[80%] md:w-auto">
             <a href={`/universities/${u.slug}`} className="site-card site-card-link group flex h-full flex-col overflow-hidden">
               <EditorialPhoto
                 image={u.image}
                 alt={u.imageAlt}
                 label={u.shortName}
-                sizes="(min-width: 768px) 33vw, 100vw"
+                sizes="(min-width: 768px) 33vw, 80vw"
                 className="aspect-[16/9]"
                 imgClassName="transition-transform duration-700 ease-out group-hover:scale-105"
               />
@@ -42,11 +43,11 @@ export function AfterWassce() {
           </li>
         ))}
       </ul>
-      <div data-reveal className="mt-6 grid gap-5 rounded-2xl border bg-brand-soft/60 p-6 sm:grid-cols-[1fr_auto] sm:items-center sm:gap-10 sm:p-8">
+      <div data-reveal className="mt-4 grid gap-4 rounded-2xl border bg-brand-soft/60 p-5 sm:mt-6 sm:grid-cols-[1fr_auto] sm:items-center sm:gap-10 sm:p-8">
         <div>
           <p className="site-eyebrow">From the editorial desk</p>
           <h3 className="mt-2 text-xl font-bold leading-snug tracking-tight sm:text-2xl">{FEATURED_EDITORIAL.title}</h3>
-          <p className="mt-2 max-w-3xl text-[15px] leading-relaxed text-muted-foreground">{FEATURED_EDITORIAL.description}</p>
+          <p className="mt-2 hidden max-w-3xl text-[15px] leading-relaxed text-muted-foreground sm:block">{FEATURED_EDITORIAL.description}</p>
         </div>
         <a href={`/blog/${FEATURED_EDITORIAL.slug}`} className="site-btn site-btn-primary">
           Read the guide <ArrowRight className="h-4 w-4" aria-hidden />

@@ -8,7 +8,7 @@ export function topicStateLabel(t: TopicProgress, review = false): { label: stri
   if (review) return { label: 'Review recommended', tone: 'text-warning' }
   if (t.status === 'done') return { label: 'Completed', tone: 'text-success' }
   if (t.status === 'started') return { label: 'In progress', tone: 'text-foreground' }
-  if (t.status === 'empty') return { label: 'Lessons coming soon', tone: 'text-muted-foreground' }
+  if (t.status === 'empty') return { label: 'Lessons in preparation', tone: 'text-muted-foreground' }
   return { label: 'Not started', tone: 'text-muted-foreground' }
 }
 

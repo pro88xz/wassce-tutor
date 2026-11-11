@@ -1,6 +1,8 @@
 import { createFileRoute, notFound } from '@tanstack/react-router'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { StartCta } from '@/components/public/StartCta'
+import { FROM_PRICE } from '@/lib/plans'
+import { hasPractice } from '@/lib/practice-counts'
 import { LessonView } from '@/components/LessonView'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { fetchPublicLessonPage, lessonPath, lessonSummary, subjectPath, topicPath } from '@/lib/public-content'
@@ -120,7 +122,7 @@ function PublicLessonPage() {
 
       <StartCta
         heading={`Keep going with ${topic.name.toLowerCase()}`}
-        body={`This is one of ${topic.lessons.length} lessons in ${topic.name}. Start free with the first lesson of every topic, then unlock them all, plus exam-style practice and guided learning tools, from 10 NLe.`}
+        body={`This is one of ${topic.lessons.length} lessons in ${topic.name}. Start free with the first lesson of every topic, then unlock them all${hasPractice(subject.slug) ? ', plus exam-style practice marked instantly' : ''} and guided learning tools, from ${FROM_PRICE} NLe.`}
         appHref={`/lesson/${lesson.id}`}
       />
 

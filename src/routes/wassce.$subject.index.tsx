@@ -1,13 +1,20 @@
-import { createFileRoute, notFound } from '@tanstack/react-router'
+import { createFileRoute, Link, notFound } from '@tanstack/react-router'
+import { ArrowRight, ChevronRight, ClipboardCheck } from 'lucide-react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
+import { CourseHero, type HeroStat } from '@/components/public/CourseHero'
+import { HERO_BTN, studyTime } from '@/lib/study-time'
 import { StartCta } from '@/components/public/StartCta'
-import { fetchSubjectHub, hasTopicPage, subjectPath, topicPath } from '@/lib/public-content'
+import { SubjectCard } from '@/components/public/SubjectCatalogue'
+import { inCatalogueOrder, overallBadge } from '@/lib/catalogue'
+import { OutlineTopics, TopicCard } from '@/components/public/TopicCard'
+import { SubjectCover } from '@/components/ds/SubjectCover'
+import { useAuth } from '@/lib/auth'
+import { PRACTICE_QUESTIONS, PRACTICE_SETS, hasPractice } from '@/lib/practice-counts'
+import { fetchSubjectHub, hasTopicPage, lessonMinutes, subjectPath } from '@/lib/public-content'
 import type { SubjectHub } from '@/lib/public-content'
-import { breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { tutorsPath } from '@/lib/public-rules'
-import { BookOpen, ChevronRight } from 'lucide-react'
+import { breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { subjectTheme } from '@/lib/subject-theme'
-import { SubjectBanner, SubjectCover } from '@/components/ds/SubjectCover'
 
 const trail = (hub: SubjectHub): [string, string][] => [
   ['Home', '/'],
@@ -44,119 +51,196 @@ export const Route = createFileRoute('/wassce/$subject/')({
   component: SubjectHubPage,
 })
 
+/** "Core subject", "Main subject in Science", "Elective in Arts and Commercial". */
 function roleLabel(hub: SubjectHub): string {
   const f = hub.subject.faculties
-  if (f.length > 0 && f.every((x) => x.role === 'core')) return 'Core subject: every candidate takes it'
-  const parts = f.map((x) => `${x.role === 'elective' ? 'elective' : 'main subject'} in ${x.faculty.name}`)
-  return parts.length ? parts.join(' · ').replace(/^./, (c) => c.toUpperCase()) : ''
+  if (f.length === 0) return 'WASSCE syllabus'
+  if (f.every((x) => x.role === 'core')) return 'Core subject'
+  const names = (role: string) => f.filter((x) => x.role === role).map((x) => x.faculty.name)
+  const join = (list: string[]) => (list.length > 1 ? `${list.slice(0, -1).join(', ')} and ${list[list.length - 1]}` : list[0])
+  const main = names('faculty')
+  if (main.length > 0) return `Main subject in ${join(main)}`
+  return `Elective in ${join(names('elective'))}`
 }
 
 function SubjectHubPage() {
   const hub = Route.useLoaderData()
   const { subject, groups, topicCount, lessonCount, minutes, related } = hub
+  const { user } = useAuth()
   const { palette } = subjectTheme(subject.slug)
-  return (
-    <article className="app-page site-page space-y-10 pb-12">
-      <Breadcrumbs trail={trail(hub)} />
+  const hasLessons = lessonCount > 0
+  const practice = PRACTICE_QUESTIONS[subject.slug] ?? 0
+  const topicsWithLessons = groups.reduce((n, g) => n + g.topics.filter(hasTopicPage).length, 0)
+  // The section a visitor most wants open: the first one with something to study.
+  const firstOpen = Math.max(0, groups.findIndex((g) => g.topics.some(hasTopicPage)))
 
-      <header className="space-y-4">
-        <SubjectBanner slug={subject.slug} eyebrow="WASSCE syllabus" title={subject.name} />
-        <p className="text-[15px] text-muted-foreground sm:text-base">
-          Every topic in the WASSCE {subject.name} syllabus, grouped the way you&rsquo;ll study it, with lessons
-          written for Sierra Leone students.
-        </p>
-        <ul className="flex flex-wrap gap-2 text-sm font-medium">
-          <li className={`rounded-full px-3 py-1 ${palette.soft} ${palette.text}`}>{topicCount} topics</li>
-          <li className="rounded-full bg-muted px-3 py-1 text-muted-foreground">{groups.length} sections</li>
-          {lessonCount > 0 && <li className="rounded-full bg-muted px-3 py-1 text-muted-foreground">{lessonCount} lessons</li>}
-          {lessonCount > 0 && <li className="rounded-full bg-muted px-3 py-1 text-muted-foreground">about {hours(minutes)}</li>}
-        </ul>
-        {roleLabel(hub) && <p className="text-sm text-muted-foreground">{roleLabel(hub)}</p>}
-      </header>
+  const stats: HeroStat[] = [
+    { value: String(topicCount), label: 'syllabus topics' },
+    ...(hasLessons
+      ? [
+          { value: String(lessonCount), label: 'lessons' },
+          { value: studyTime(minutes), label: 'of study' },
+        ]
+      : [{ value: String(groups.length), label: groups.length === 1 ? 'section' : 'sections' }]),
+    ...(practice > 0 ? [{ value: String(practice), label: 'practice questions' }] : []),
+  ]
+
+  return (
+    <article className="app-page site-page space-y-10 pb-12 sm:space-y-12">
+      <div className="space-y-4">
+        <Breadcrumbs trail={trail(hub)} />
+        <CourseHero
+          eyebrow={`WASSCE syllabus · ${roleLabel(hub)}`}
+          title={subject.name}
+          lede={
+            hasLessons
+              ? `Every topic in the WASSCE ${subject.name} syllabus, grouped the way you will study it, with lessons written for Sierra Leone students.`
+              : `Every topic in the WASSCE ${subject.name} syllabus, grouped the way you will study it. The lessons for this subject are being written; the outline below shows what they will cover.`
+          }
+          stats={stats}
+          actions={
+            user ? (
+              <a href={`/subject/${subject.id}`} className={`site-btn site-btn-light ${HERO_BTN}`}>
+                Open in WASSCE Tutor <ArrowRight className="h-4 w-4" aria-hidden />
+              </a>
+            ) : hasLessons ? (
+              <>
+                <Link to="/auth" className={`site-btn site-btn-light ${HERO_BTN}`}>
+                  Start {subject.name} free <ArrowRight className="h-4 w-4" aria-hidden />
+                </Link>
+                <a href={tutorsPath(subject.slug)} className={`site-btn site-btn-glass ${HERO_BTN}`}>Book a tutor</a>
+              </>
+            ) : (
+              <>
+                <a href={tutorsPath(subject.slug)} className={`site-btn site-btn-light ${HERO_BTN}`}>
+                  Book a tutor <ArrowRight className="h-4 w-4" aria-hidden />
+                </a>
+                <a href="/wassce/subjects" className={`site-btn site-btn-glass ${HERO_BTN}`}>Subjects with lessons</a>
+              </>
+            )
+          }
+          note={hasLessons && !user ? 'The first lesson of every topic is free. No card needed.' : undefined}
+          media={
+            <SubjectCover
+              slug={subject.slug}
+              shape="wide"
+              priority
+              rounded="rounded-2xl"
+              sizes="(min-width: 1024px) 480px, 100vw"
+              className="aspect-[5/2] w-full shadow-[0_30px_60px_-30px_rgba(0,0,0,.7)] ring-1 ring-white/10 sm:aspect-[3/1] lg:aspect-[4/3]"
+            />
+          }
+        />
+      </div>
 
       <section className="space-y-5" aria-labelledby="syllabus">
-        <div className="flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[.14em] text-primary">Course outline</p>
-            <h2 id="syllabus" className="text-2xl font-bold tracking-tight">{subject.name} syllabus topics</h2>
+            <p className="site-eyebrow">Course outline</p>
+            <h2 id="syllabus" className="site-h2 mt-2 text-[1.625rem] sm:text-[2rem]">{subject.name} syllabus, section by section</h2>
           </div>
-          <p className="text-sm text-muted-foreground">Open a section to explore its topics and lessons.</p>
-        </div>
-        <div className="space-y-3">
-          {groups.map((group, groupIndex) => (
-            <details key={group.name} open={groupIndex === 0} className="group/section overflow-hidden rounded-2xl border border-border/80 bg-card shadow-[0_10px_30px_-26px_rgba(15,23,42,.38)] transition-shadow open:shadow-[0_16px_36px_-28px_rgba(40,20,95,.35)]">
-              <summary className="flex min-h-[4.5rem] cursor-pointer list-none items-center gap-3 px-4 py-4 transition-colors hover:bg-muted/35 sm:px-5 [&::-webkit-details-marker]:hidden">
-                <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-xs font-extrabold tabular-nums ${palette.soft} ${palette.text}`}>{String(groupIndex + 1).padStart(2, '0')}</span>
-                <span className="min-w-0 flex-1">
-                  <span className="block text-sm font-bold leading-snug text-foreground sm:text-base">{group.name}</span>
-                  <span className="mt-0.5 block text-xs text-muted-foreground">{group.topics.length} topics</span>
-                </span>
-                <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition-transform duration-200 group-open/section:rotate-90" aria-hidden />
-              </summary>
-              <div className="border-t border-border/70 bg-slate-50/55 p-3 sm:p-4">
-                <ul className="grid gap-2.5">
-                  {group.topics.map((topic, topicIndex) => (
-                    <li key={topic.id} className="group/topic relative overflow-hidden rounded-xl border border-border/70 bg-white p-3.5 transition-all duration-200 hover:border-primary/35 hover:shadow-[0_10px_24px_-20px_rgba(40,20,95,.4)] sm:p-4">
-                      <span aria-hidden className={`absolute inset-y-0 left-0 w-[3px] ${palette.bar} opacity-75`} />
-                      <div className="flex items-start gap-3">
-                        <span className={`mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-xs font-bold tabular-nums ${palette.soft} ${palette.text}`}>{String(topicIndex + 1).padStart(2, '0')}</span>
-                        <div className="min-w-0 flex-1">
-                          {hasTopicPage(topic) ? (
-                            <a href={topicPath(subject.slug, topic.slug)} className={`block text-[15px] font-bold leading-snug tracking-tight hover:underline sm:text-base ${palette.text}`}>{topic.name}</a>
-                          ) : (
-                            <span className="block text-[15px] font-bold leading-snug tracking-tight text-foreground sm:text-base">{topic.name}</span>
-                          )}
-                          {topic.description && <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground sm:text-sm">{topic.description}</p>}
-                          <div className="mt-2.5 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs font-medium text-muted-foreground">
-                            <span className="inline-flex items-center gap-1.5"><BookOpen className="h-3.5 w-3.5" aria-hidden />{topic.lessons.length > 0 ? `${topic.lessons.length} available lesson${topic.lessons.length === 1 ? '' : 's'}` : 'Lesson content coming soon'}</span>
-                            {hasTopicPage(topic) && <span className="inline-flex items-center gap-1 text-primary"><span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />Open topic <ChevronRight className="h-3 w-3" aria-hidden /></span>}
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
+          {hasLessons && (
+            <div className="sm:w-64 sm:shrink-0">
+              <p className="text-sm font-medium text-muted-foreground">
+                Lessons published for <span className="font-bold text-foreground">{topicsWithLessons}</span> of {topicCount} topics
+              </p>
+              <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-muted" aria-hidden>
+                <div className={`h-full rounded-full ${palette.bar}`} style={{ width: `${(topicsWithLessons / topicCount) * 100}%` }} />
               </div>
-            </details>
-          ))}
+            </div>
+          )}
+        </div>
+
+        <div className="space-y-3">
+          {groups.map((group, groupIndex) => {
+            const numbered = group.topics.map((topic, i) => ({ topic, number: i + 1 }))
+            const ready = numbered.filter(({ topic }) => hasTopicPage(topic))
+            const outline = numbered.filter(({ topic }) => !hasTopicPage(topic))
+            const lessons = group.topics.reduce((n, t) => n + t.lessons.length, 0)
+            const time = lessonMinutes(group.topics.flatMap((t) => t.lessons))
+            return (
+              <details key={group.name} open={groupIndex === firstOpen} className="site-card group/section overflow-hidden">
+                <summary className="flex min-h-[4.75rem] cursor-pointer list-none items-center gap-3.5 px-4 py-3.5 transition-colors hover:bg-muted/40 sm:px-6 [&::-webkit-details-marker]:hidden">
+                  <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-xs font-extrabold tabular-nums ${palette.soft} ${palette.text}`}>
+                    {String(groupIndex + 1).padStart(2, '0')}
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="site-h3 block text-base sm:text-lg">{group.name}</span>
+                    <span className="mt-0.5 block text-[13px] text-muted-foreground">
+                      {group.topics.length} topic{group.topics.length === 1 ? '' : 's'}
+                      {lessons > 0 ? ` · ${lessons} lesson${lessons === 1 ? '' : 's'}${time > 0 ? ` · ${studyTime(time)}` : ''}` : ' · syllabus outline'}
+                    </span>
+                  </span>
+                  <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition-transform duration-200 group-open/section:rotate-90" aria-hidden />
+                </summary>
+                <div className="space-y-5 border-t bg-muted/30 p-3 sm:p-5">
+                  {ready.length > 0 && (
+                    <ul className="grid grid-cols-1 gap-3 lg:grid-cols-2 lg:gap-4">
+                      {ready.map(({ topic, number }) => (
+                        <li key={topic.id}>
+                          <TopicCard subjectSlug={subject.slug} topic={topic} number={number} palette={palette} />
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  <div className="px-1 sm:px-0">
+                    <OutlineTopics topics={outline} heading={ready.length > 0 ? 'Also on the syllabus · lessons in preparation' : undefined} />
+                  </div>
+                </div>
+              </details>
+            )
+          })}
         </div>
       </section>
 
-      <a
-        href={tutorsPath(subject.slug)}
-        className="flex items-center gap-4 rounded-2xl border bg-card p-4 transition-colors hover:border-primary/40 sm:p-5"
-      >
-        <img src="/img/tutors-session-640.webp" alt="Two students going through their notes with a tutor" loading="lazy" width={640} height={427} className="h-16 w-24 shrink-0 rounded-lg object-cover" />
+      {hasPractice(subject.slug) && (
+        <section className="site-card flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:gap-6 sm:p-6" aria-labelledby="practice">
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-success/10 text-success">
+            <ClipboardCheck className="h-6 w-6" aria-hidden />
+          </span>
+          <div className="min-w-0 flex-1">
+            <h2 id="practice" className="site-h3">{practice} {subject.name} practice questions, marked instantly</h2>
+            <p className="mt-1 text-[15px] leading-relaxed text-muted-foreground">
+              {PRACTICE_SETS[subject.slug]} sets of original WASSCE-style questions, each with the full working. They are not WAEC past papers.
+            </p>
+          </div>
+          <a href="/#try-a-question" className="site-btn site-btn-secondary shrink-0">
+            Try a question <ArrowRight className="h-4 w-4" aria-hidden />
+          </a>
+        </section>
+      )}
+
+      <a href={tutorsPath(subject.slug)} className="site-card site-card-link group flex items-center gap-4 p-4 sm:gap-5 sm:p-5">
+        <img src="/img/tutors-session-640.webp" alt="Two students going through their notes with a tutor" loading="lazy" decoding="async" width={640} height={427} className="h-16 w-24 shrink-0 rounded-xl object-cover sm:h-20 sm:w-32" />
         <span className="min-w-0 flex-1">
-          <span className="block font-bold">Need one-to-one help with {subject.name}?</span>
-          <span className="mt-0.5 block text-[15px] text-muted-foreground">Book a real {subject.name} tutor, online or at home.</span>
+          <span className="site-h3 block">Need one-to-one help with {subject.name}?</span>
+          <span className="mt-1 block text-[15px] text-muted-foreground">Book a real {subject.name} tutor, online or at home. Asking is free.</span>
         </span>
-        <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground" aria-hidden />
+        <ArrowRight className="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-1" aria-hidden />
       </a>
 
       <StartCta
         heading={`Study WASSCE ${subject.name} with WASSCE Tutor`}
         body={
-          lessonCount > 0
-            ? `Get all ${lessonCount} ${subject.name} lessons, exam-style practice marked instantly, and guided learning tools that help you prepare with confidence.`
-            : `Practise exam-style practice marked instantly and use guided learning tools for ${subject.name}. Lessons for this subject are on the way.`
+          hasLessons
+            ? `Get all ${lessonCount} ${subject.name} lessons${practice > 0 ? ', exam-style practice marked instantly' : ''} and guided learning tools that help you prepare with confidence.`
+            : `Lessons for ${subject.name} are being written. A free account opens the first lesson of every topic in the subjects that already have them.`
         }
         appHref={`/subject/${subject.id}`}
       />
 
       {related.length > 0 && (
-        <section className="space-y-3" aria-labelledby="related">
-          <h2 id="related" className="text-xl font-bold tracking-tight">Related subjects</h2>
-          <ul className="grid gap-2 sm:grid-cols-2">
-            {related.map((s) => (
+        <section className="space-y-5" aria-labelledby="related">
+          <div className="flex items-end justify-between gap-4">
+            <h2 id="related" className="site-h2 text-[1.375rem] sm:text-[1.625rem]">Subjects taken with {subject.name}</h2>
+            <a href="/wassce/subjects" className="site-link shrink-0">
+              All subjects <ArrowRight className="h-4 w-4" aria-hidden />
+            </a>
+          </div>
+          <ul className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4 [&>*]:min-w-0">
+            {inCatalogueOrder(related).slice(0, 4).map((s) => (
               <li key={s.id}>
-                <a href={subjectPath(s.slug)} className="flex items-center gap-3 rounded-2xl border bg-card p-3 transition hover:border-primary/40">
-                  <SubjectCover slug={s.slug} shape="thumb" className="h-12 w-16 shrink-0" rounded="rounded-lg" />
-                  <span className="min-w-0 flex-1">
-                    <span className="block text-[15px] font-semibold leading-snug">{s.name}</span>
-                    <span className="mt-0.5 block text-[13px] text-muted-foreground">{s.topicCount} topics</span>
-                  </span>
-                </a>
+                <SubjectCard s={s} badge={overallBadge(s)} />
               </li>
             ))}
           </ul>

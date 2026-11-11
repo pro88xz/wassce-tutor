@@ -49,13 +49,8 @@ export const planById = (id: string | null | undefined) => PLANS.find((p) => p.i
 /** Cheapest way in, for "from 10 NLe" copy. */
 export const FROM_PRICE = Math.min(...PLANS.map((p) => p.priceNle))
 
-/** What every free account gets, forever. */
-export const FREE_FEATURES = [
-  'Every subject and its full syllabus',
-  'The first lesson of every topic',
-  'A starter practice set in every subject',
-  'Your progress, saved',
-]
+// What the free account includes is in src/lib/free-plan.ts: it is written from
+// the question bank, which this file cannot import (vite.config.ts loads it in Node).
 
 /** What a plan adds. */
 export const PAID_FEATURES = [

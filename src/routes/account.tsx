@@ -22,7 +22,8 @@ import { useAuth } from '@/lib/auth'
 import { supabase } from '@/lib/supabase'
 import { useProfile, useStudentSubjects } from '@/lib/queries'
 import { checkAccess } from '@/lib/access'
-import { FROM_PRICE, PLANS } from '@/lib/plans'
+import { FROM_PRICE, ONLINE_CHECKOUT, PLANS } from '@/lib/plans'
+import { FREE_PRACTICE_INLINE } from '@/lib/free-plan'
 import { getTheme, toggleTheme, type Theme } from '@/lib/theme'
 import { fetchLatestVersion, getInstalledVersion, isNewerVersion } from '@/lib/version'
 import { initialsOf } from '@/lib/nav'
@@ -307,7 +308,7 @@ function SubscriptionSection({ profile, userId }: { profile: Profile; userId: st
         tone: 'bg-info/10 text-info',
         line: (
           <>
-            {days(access.trialDaysLeft)} left{ends && <>, ending <strong className="font-semibold text-foreground">{formatDate(ends)}</strong></>}. After that your free account keeps the first lesson of every topic and a starter practice set in every subject. Your progress is kept.
+            {days(access.trialDaysLeft)} left{ends && <>, ending <strong className="font-semibold text-foreground">{formatDate(ends)}</strong></>}. After that your free account keeps the first lesson of every topic and {FREE_PRACTICE_INLINE}. Your progress is kept.
           </>
         ),
       }
@@ -316,7 +317,7 @@ function SubscriptionSection({ profile, userId }: { profile: Profile; userId: st
       status = {
         pill: profile.subscription_expires_at ? 'Plan ended' : 'Free account',
         tone: 'bg-muted text-muted-foreground',
-        line: `The first lesson of every topic and a starter practice set in every subject are open. A plan opens everything, from ${FROM_PRICE} NLe.`,
+        line: `The first lesson of every topic is open, and so is ${FREE_PRACTICE_INLINE}. A plan opens everything, from ${FROM_PRICE} NLe.`,
       }
   }
 
@@ -335,7 +336,7 @@ function SubscriptionSection({ profile, userId }: { profile: Profile; userId: st
       </div>
       <p className="mt-4 flex items-start gap-2 rounded-xl bg-muted/60 p-3 text-sm text-muted-foreground">
         <Smartphone className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
-        <span>{PLANS.map((p) => `${p.name}: ${p.priceNle} NLe for ${p.length}`).join(' · ')}. Pay with Orange Money or AfriMoney on WhatsApp; we switch your plan on as soon as the payment arrives, usually within an hour. No automatic renewal.</span>
+        <span>{PLANS.map((p) => `${p.name}: ${p.priceNle} NLe for ${p.length}`).join(' · ')}. {ONLINE_CHECKOUT ? 'Pay once with a Monime USSD code on your phone; your plan switches on automatically when the payment is confirmed.' : 'Pay with Orange Money or AfriMoney on WhatsApp; we switch your plan on as soon as the payment arrives, usually within an hour.'} No automatic renewal.</span>
       </p>
 
       <h3 className="mt-5 text-sm font-semibold">Payment history</h3>

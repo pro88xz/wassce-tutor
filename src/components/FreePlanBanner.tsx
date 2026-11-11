@@ -2,12 +2,13 @@ import { Link } from '@tanstack/react-router'
 import { ArrowRight, Sparkles } from 'lucide-react'
 import { useAccess } from '@/lib/useAccess'
 import { FROM_PRICE } from '@/lib/plans'
+import { FREE_PRACTICE_INLINE } from '@/lib/free-plan'
 
 /**
  * A slim note for free accounts: what is open, and the way to the rest.
  * Shows nothing with a plan (or a running trial), or before the profile loads.
  */
-export function FreePlanBanner({ what = 'The first lesson of every topic and a starter practice set in every subject are free.' }: { what?: string }) {
+export function FreePlanBanner({ what = `The first lesson of every topic is free, and so is ${FREE_PRACTICE_INLINE}.` }: { what?: string }) {
   const { access, loading, profile } = useAccess()
   if (loading || !profile || access.hasAccess) return null
   return (

@@ -11,8 +11,8 @@ import { useEffect, useState } from 'react'
 import { ArrowRight, Check, CircleCheck, PenLine, ScrollText, ShieldCheck } from 'lucide-react'
 import type { LandingData, PopularTopic } from '@/lib/public-content'
 import { topicPath } from '@/lib/public-content'
-import { topicPhoto } from '@/lib/topic-photos'
-import { PRACTICE_QUESTIONS } from '@/lib/practice-counts'
+import { topicPhoto, topicPhotoSrcSet } from '@/lib/topic-photos'
+import { PRACTICE_TOTAL } from '@/lib/practice-counts'
 import { supabase } from '@/lib/supabase'
 import { SubjectCover } from '@/components/ds/SubjectCover'
 import { TopicSearch, type TopicShortcut } from '@/components/landing/TopicSearch'
@@ -46,9 +46,9 @@ export function Hero({ data }: { data: LandingData }) {
             <span className="bg-gradient-to-r from-[#e3d7ff] via-[#b9a2ff] to-[#8fdcf5] bg-clip-text text-transparent">with one topic.</span>
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/72 sm:text-lg sm:leading-[1.65]">
-            Clear lessons for every subject, WASSCE-style practice marked instantly, and a real tutor when you need one.
-            {/* The badge above already says this; on a phone the line is worth more than the sentence. */}
-            <span className="hidden sm:inline"> All organised around your syllabus.</span>
+            Clear lessons that follow the syllabus, WASSCE-style practice marked instantly, and a real tutor when you need one.
+            {/* On a phone the line is worth more than the sentence. */}
+            <span className="hidden sm:inline"> Start with the topic you find hardest.</span>
           </p>
           <div className="mt-6 flex flex-wrap gap-2.5 sm:mt-8 sm:gap-3">
             <Link to="/auth" className={`site-btn site-btn-light flex-1 ${CTA_SIZE}`}>
@@ -95,7 +95,7 @@ function LessonPreview({ topic }: { topic: PopularTopic }) {
           {photo ? (
             <img
               src={photo.src}
-              srcSet={`${photo.small} 480w, ${photo.src} 960w`}
+              srcSet={topicPhotoSrcSet(photo)}
               sizes="(min-width: 768px) 432px, 1px"
               alt={photo.caption}
               width={960}
@@ -170,15 +170,16 @@ function ProofRow({ initial }: { initial: LandingData['totals'] }) {
 
   useEffect(() => {
     let active = true
+    // Subjects are not refreshed: the figure is the number with a syllabus
+    // page (counted at build time), not every row in the subjects table.
     void Promise.all([
-      supabase.from('subjects').select('id', { count: 'exact', head: true }),
       supabase.from('topics').select('id', { count: 'exact', head: true }),
       supabase.from('wassce_lesson_index').select('id', { count: 'exact', head: true }),
       supabase.rpc('get_public_student_count'),
-    ]).then(([subjects, topics, lessons, registered]) => {
+    ]).then(([topics, lessons, registered]) => {
       if (!active) return
       setTotals((current) => ({
-        subjects: subjects.error || subjects.count === null ? current.subjects : subjects.count,
+        subjects: current.subjects,
         topics: topics.error || topics.count === null ? current.topics : topics.count,
         lessons: lessons.error || lessons.count === null ? current.lessons : lessons.count,
       }))
@@ -189,7 +190,6 @@ function ProofRow({ initial }: { initial: LandingData['totals'] }) {
     }
   }, [])
 
-  const practice = Object.values(PRACTICE_QUESTIONS).reduce((sum, n) => sum + n, 0)
   // `short` is the label on phones, where four figures share one row.
   const items = [
     { value: totals.subjects, label: 'WASSCE subjects', short: 'subjects' },
@@ -197,7 +197,7 @@ function ProofRow({ initial }: { initial: LandingData['totals'] }) {
     { value: totals.lessons, label: 'published lessons', short: 'lessons' },
     students >= STUDENT_PROOF_THRESHOLD
       ? { value: students, label: 'registered students', short: 'students' }
-      : { value: practice, label: 'worked practice questions', short: 'questions' },
+      : { value: PRACTICE_TOTAL, label: 'worked practice questions', short: 'questions' },
   ]
 
   return (

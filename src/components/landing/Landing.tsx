@@ -59,7 +59,7 @@ export function Landing({ data }: { data: LandingData }) {
       <GradeGuide />
       <AfterWassce />
       <Plans />
-      <Faq />
+      <Faq subjects={data.subjects} />
       <FinalCta />
     </div>
   )

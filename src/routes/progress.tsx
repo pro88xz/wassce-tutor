@@ -131,7 +131,7 @@ function SubjectPanel({ s, papers, open, onToggle }: { s: SubjectProgress; paper
       <div className="flex items-center gap-4 rounded-2xl border bg-card/60 p-4">
         <SubjectCover slug={s.subject.slug} shape="thumb" className="h-12 w-16 shrink-0 opacity-60" rounded="rounded-lg" />
         <p className="flex-1 font-semibold text-muted-foreground">{s.subject.name}</p>
-        <p className="text-xs text-muted-foreground">Lessons coming soon</p>
+        <p className="text-xs text-muted-foreground">Lessons in preparation</p>
       </div>
     )
   }

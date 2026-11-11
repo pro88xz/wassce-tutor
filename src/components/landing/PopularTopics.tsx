@@ -5,7 +5,7 @@ import { useRef, useState } from 'react'
 import { ArrowRight, BookOpen, ChevronLeft, ChevronRight } from 'lucide-react'
 import type { LandingData } from '@/lib/public-content'
 import { topicPath } from '@/lib/public-content'
-import { topicPhoto } from '@/lib/topic-photos'
+import { topicPhoto, topicPhotoSrcSet } from '@/lib/topic-photos'
 import { SubjectCover } from '@/components/ds/SubjectCover'
 import { Band, SectionHeading } from '@/components/public/Section'
 
@@ -79,7 +79,7 @@ export function PopularTopics({ data }: { data: LandingData }) {
                 {photo ? (
                   <img
                     src={photo.small}
-                    srcSet={`${photo.small} 480w, ${photo.src} 960w`}
+                    srcSet={topicPhotoSrcSet(photo)}
                     sizes="(min-width: 1024px) 290px, (min-width: 640px) 46vw, 78vw"
                     alt={photo.caption}
                     loading="lazy"

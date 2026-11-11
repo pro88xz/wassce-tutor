@@ -9,6 +9,7 @@ import { bestByPaper } from '@/lib/papers'
 import { PracticeSetRow } from '@/components/ds/PracticeSetRow'
 import { subjectTheme } from '@/lib/subject-theme'
 import { FreePlanBanner } from '@/components/FreePlanBanner'
+import { FREE_PRACTICE } from '@/lib/free-plan'
 import { useAccess } from '@/lib/useAccess'
 import { paperLocked } from '@/lib/access'
 import { EmptyState, PageHeader, ScorePill, SectionHeader, Skeleton } from '@/components/ds/Primitives'
@@ -38,7 +39,7 @@ function PracticePage() {
   return (
       <div className="app-page mx-auto w-full max-w-6xl space-y-8">
         <PageHeader title="Practice" subtitle="Exam-style questions with full working. Each result shows what to revise next." />
-        <FreePlanBanner what="A starter practice set in every subject is free." />
+        <FreePlanBanner what={`${FREE_PRACTICE} is free.`} />
 
         {loading ? (
           <div className="space-y-3" aria-busy="true">

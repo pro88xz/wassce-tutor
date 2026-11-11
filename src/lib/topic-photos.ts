@@ -2,10 +2,11 @@
 // Subject photos (subject-photos.ts) give each subject one consistent image;
 // topic photos show the topic itself, so a Biology card and a Cell Structure
 // card never share a picture. Keyed "subject-slug/topic-slug". Self-hosted
-// WebP in public/img/topics (960 and 480 px, 16:10), credited on the About page.
+// WebP in public/img/topics (960, 640 and 480 px, 16:10), credited on the About
+// page. The 640 px copies are made by scripts/images/build-variants.mjs.
 type Credit = { creator: string; creatorUrl?: string; source: string; sourceUrl: string; license: string; licenseUrl: string }
 /** position: Tailwind object-position class, written as a literal so Tailwind generates it. */
-export type TopicPhoto = { src: string; small: string; position?: string; topic: string; caption: string; credit: Credit }
+export type TopicPhoto = { src: string; medium: string; small: string; position?: string; topic: string; caption: string; credit: Credit }
 
 const pexels = (creator: string, page: string): Credit => ({
   creator,
@@ -17,7 +18,7 @@ const pexels = (creator: string, page: string): Credit => ({
 
 const photo = (key: string, topic: string, caption: string, credit: Credit, position?: string): [string, TopicPhoto] => {
   const file = key.replace('/', '--')
-  return [key, { src: `/img/topics/${file}.webp`, small: `/img/topics/${file}-480.webp`, position, topic, caption, credit }]
+  return [key, { src: `/img/topics/${file}.webp`, medium: `/img/topics/${file}-640.webp`, small: `/img/topics/${file}-480.webp`, position, topic, caption, credit }]
 }
 
 export const TOPIC_PHOTOS: Record<string, TopicPhoto> = Object.fromEntries([
@@ -40,3 +41,7 @@ export const TOPIC_PHOTOS: Record<string, TopicPhoto> = Object.fromEntries([
 export function topicPhoto(subjectSlug: string, topicSlug: string): TopicPhoto | undefined {
   return TOPIC_PHOTOS[`${subjectSlug}/${topicSlug}`]
 }
+
+/** Every size of a topic photo, for srcset. */
+export const topicPhotoSrcSet = (photo: TopicPhoto) => `${photo.small} 480w, ${photo.medium} 640w, ${photo.src} 960w`
+

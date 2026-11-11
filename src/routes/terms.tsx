@@ -1,5 +1,11 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { publicHead } from '@/lib/seo'
+import { CONTACT } from '@/lib/contact'
+import { PLANS } from '@/lib/plans'
+import { FREE_PRACTICE_INLINE } from '@/lib/free-plan'
+
+// The plans as sold today, so this page can never quote an old price.
+const PLAN_TERMS = PLANS.map((p) => `the ${p.name} plan (${p.priceNle} NLe for ${p.length})`).join(' or ')
 
 export const Route = createFileRoute('/terms')({
   head: publicHead('/terms'),
@@ -32,7 +38,7 @@ function Terms() {
       <section className="space-y-3 rounded-2xl border bg-card p-6">
         <h2 className="text-xl font-bold tracking-tight">Subscription &amp; payment</h2>
         <p className="text-muted-foreground">
-          A free account gives access to every subject&rsquo;s syllabus, the first lesson of every topic and a starter practice set in every subject, with no time limit. Full access to every lesson, every practice set and study support features need a paid plan: the Term pass (10 NLe for 4 months) or the Academic year (25 NLe for 12 months), counted from the day the payment is confirmed. Payments are made with Orange Money or AfriMoney, arranged on WhatsApp, and the plan is switched on once we have confirmed the payment. Plans do not renew automatically: when a plan ends, the account returns to the free account and your progress is kept. Paying again while a plan is running adds the new time to the end of the current plan.
+          A free account gives access to every subject&rsquo;s syllabus, the first lesson of every topic and {FREE_PRACTICE_INLINE}, with no time limit. Full access to every lesson, every practice set and study support features needs a paid plan: {PLAN_TERMS}, counted from the day the payment is confirmed. Payments are made once, from your mobile money wallet, through the Monime USSD checkout on your phone, and the plan is switched on automatically once Monime has confirmed the payment. Plans do not renew automatically: when a plan ends, the account returns to the free account and your progress is kept. Paying again while a plan is running adds the new time to the end of the current plan.
         </p>
         <p className="text-muted-foreground">
           Refunds are issued at our discretion. Contact us within 7 days of payment if you believe a refund is warranted.
@@ -95,7 +101,7 @@ function Terms() {
         <h2 className="text-xl font-bold tracking-tight">Contact</h2>
         <p className="text-muted-foreground">
           Questions about these Terms?{' '}
-          <a href="mailto:secretsafe.cc@gmail.com" className="font-semibold text-primary hover:underline">
+          <a href={`mailto:${CONTACT.email}`} className="font-semibold text-primary hover:underline">
             Contact us
           </a>
           .

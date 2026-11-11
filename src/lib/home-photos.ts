@@ -9,7 +9,7 @@ const pexels = (creator: string, page: string) => ({
 
 export const HOME_PHOTO_CREDITS: { label: string; caption: string; credit: ReturnType<typeof pexels> & { creatorUrl?: string } }[] = [
   { label: 'Who it’s for', caption: 'Secondary school students working in class', credit: pexels('Tosin Olowoleni', 'african-students-focused-on-classroom-studies-34162714') },
-  { label: 'Who it’s for', caption: 'A young man studying at a desk', credit: pexels('Monstera Production', 'wistful-black-man-writing-in-notepad-during-lesson-6237991') },
+  { label: 'Who it’s for', caption: 'A young man studying at his desk', credit: pexels('Oladimeji Ajegbile', 'photo-of-man-writing-on-notebook-2989397') },
   { label: 'Who it’s for', caption: 'A teacher leading a lesson', credit: pexels('Katerina Holmes', 'focused-black-female-teacher-explaining-class-plan-to-pupils-5905444') },
   { label: 'Built for Sierra Leone', caption: 'A student studying on her phone', credit: pexels('Charlotte May', 'black-student-listening-to-music-using-smartphone-in-park-5965930') },
   { label: 'Built for Sierra Leone', caption: 'Paying with a phone at a shop', credit: pexels('Kampus Production', 'a-man-paying-his-bill-in-the-grocery-store-8475146') },

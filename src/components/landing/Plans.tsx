@@ -3,7 +3,8 @@
 // in src/lib/plans.ts (and are enforced by the server and the database).
 import { Link } from '@tanstack/react-router'
 import { BookOpenCheck, CalendarClock, Check, ShieldCheck, Zap } from 'lucide-react'
-import { FREE_FEATURES, FROM_PRICE, PAID_FEATURES, PLANS, type PlanId } from '@/lib/plans'
+import { FROM_PRICE, PAID_FEATURES, PLANS, type PlanId } from '@/lib/plans'
+import { FREE_FEATURES } from '@/lib/free-plan'
 import { Band, SectionHeading } from '@/components/public/Section'
 
 const KICKER: Record<'free' | PlanId, string> = {
@@ -97,15 +98,16 @@ export function Plans() {
         ))}
       </div>
 
-      <ul className="mt-10 grid gap-x-8 gap-y-7 border-t pt-9 sm:grid-cols-2 lg:mt-12 lg:grid-cols-4">
+      {/* Phones: the four assurances as a two-by-two of titles; the detail (also in the FAQ) shows from tablet width. */}
+      <ul className="mt-8 grid grid-cols-2 gap-x-4 gap-y-5 border-t pt-7 sm:mt-10 sm:gap-x-8 sm:gap-y-7 sm:pt-9 lg:mt-12 lg:grid-cols-4">
         {ASSURANCES.map(({ title, body, Icon }) => (
-          <li key={title} className="flex gap-3.5">
+          <li key={title} className="flex items-center gap-3 sm:items-start sm:gap-3.5">
             <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-card text-primary shadow-sm ring-1 ring-border">
               <Icon className="h-5 w-5" strokeWidth={1.9} aria-hidden />
             </span>
-            <span>
-              <span className="block text-[15px] font-bold tracking-tight">{title}</span>
-              <span className="mt-1 block text-[13px] leading-relaxed text-muted-foreground">{body}</span>
+            <span className="min-w-0">
+              <span className="block text-sm font-bold leading-snug tracking-tight sm:text-[15px]">{title}</span>
+              <span className="mt-1 hidden text-[13px] leading-relaxed text-muted-foreground sm:block">{body}</span>
             </span>
           </li>
         ))}
