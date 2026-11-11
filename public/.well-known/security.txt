@@ -1,0 +1,7 @@
+# Security contact for WASSCE Tutor (https://wasscetutor.com)
+# Found a vulnerability? Please tell us privately before sharing it publicly.
+Contact: mailto:secretsafe.cc@gmail.com
+Contact: https://wasscetutor.com/contact
+Expires: 2027-11-11T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://wasscetutor.com/.well-known/security.txt

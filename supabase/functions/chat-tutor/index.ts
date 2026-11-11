@@ -1,6 +1,11 @@
 // Edge Function: WASSCE Tutor chat via Groq (Llama 3.3 70B)
 // Verifies user, checks subscription, enforces daily rate limit,
 // saves both messages to DB, returns the AI reply.
+//
+// The daily limit is taken atomically in the database
+// (consume_tutor_question, migration 13). Deploy with:
+//   supabase functions deploy chat-tutor --project-ref <ref>
+// or run the "Deploy AI tutor function" workflow in GitHub Actions.
 
 const GROQ_API = 'https://api.groq.com/openai/v1/chat/completions'
 const MODEL = 'llama-3.3-70b-versatile'
@@ -134,14 +139,34 @@ Your job:
 
 You're built for Sierra Leone. WASSCE is a real exam they're sitting. Take them seriously.`
 
-const corsHeaders = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'authorization, content-type',
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+// Browsers that may call this function: the website, the Android app
+// (Capacitor serves it from https://localhost) and local development.
+const APP_ORIGIN = Deno.env.get('APP_ORIGIN') ?? 'https://wasscetutor.com'
+function allowedOrigin(origin: string | null): string {
+  if (!origin) return APP_ORIGIN
+  if (origin === APP_ORIGIN || origin === 'https://localhost' || origin === 'capacitor://localhost') return origin
+  if (/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)) return origin
+  return APP_ORIGIN
 }
+const corsHeaders = (req: Request) => ({
+  'Access-Control-Allow-Origin': allowedOrigin(req.headers.get('Origin')),
+  'Access-Control-Allow-Headers': 'authorization, content-type, apikey, x-client-info',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  Vary: 'Origin',
+})
+
+/** Longest stored message replayed to the model (characters). */
+const MAX_HISTORY_CHARS = 6000
 
 Deno.serve(async (req) => {
-  if (req.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders })
+  const json = (body: unknown, status = 200) =>
+    new Response(JSON.stringify(body), {
+      status,
+      headers: { ...corsHeaders(req), 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
+    })
+
+  if (req.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders(req) })
+  if (req.method !== 'POST') return json({ error: 'Method not allowed' }, 405)
 
   try {
     const authHeader = req.headers.get('Authorization')
@@ -150,6 +175,7 @@ Deno.serve(async (req) => {
     const supabaseUrl = Deno.env.get('SUPABASE_URL')!
     const supabaseAnon = Deno.env.get('SUPABASE_ANON_KEY')!
     const supabaseService = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!
+    const service = { apikey: supabaseService, Authorization: `Bearer ${supabaseService}` }
 
     // 1. Verify user
     const userRes = await fetch(`${supabaseUrl}/auth/v1/user`, {
@@ -158,11 +184,12 @@ Deno.serve(async (req) => {
     if (!userRes.ok) return json({ error: 'Invalid session' }, 401)
     const userData = await userRes.json()
     const userId = userData.id as string
+    if (!/^[0-9a-f-]{36}$/i.test(userId ?? '')) return json({ error: 'Invalid session' }, 401)
 
     // 2. Load profile
     const profileRes = await fetch(
       `${supabaseUrl}/rest/v1/profiles?id=eq.${userId}&select=is_admin,subscription_active,subscription_expires_at,tutor_questions_today,tutor_questions_date`,
-      { headers: { apikey: supabaseService, Authorization: `Bearer ${supabaseService}` } },
+      { headers: service },
     )
     const profiles = await profileRes.json()
     const profile = profiles[0]
@@ -178,35 +205,67 @@ Deno.serve(async (req) => {
       return json({ error: 'Tutor is for subscribers only.', code: 'subscription_required' }, 403)
     }
 
-    // 4. Rate limit
-    const today = new Date().toISOString().slice(0, 10)
-    let questionsToday = profile.tutor_questions_today ?? 0
-    if (profile.tutor_questions_date !== today) questionsToday = 0
-    if (!isAdmin && questionsToday >= DAILY_LIMIT) {
-      return json({
-        error: `Daily limit reached (${DAILY_LIMIT}/day). Come back tomorrow.`,
-        code: 'rate_limit',
-      }, 429)
-    }
-
-    // 5. Validate input + branch on mode
+    // 4. Validate input + branch on mode
     const body = await req.json().catch(() => ({}))
-    const mode = (body.mode as string | undefined) ?? 'chat'
-    const userMessage = (body.message as string | undefined)?.trim()
+    const mode = body.mode === 'lesson_draft' || body.mode === 'lesson_outline' ? (body.mode as string) : 'chat'
+    const userMessage = typeof body.message === 'string' ? body.message.trim() : ''
     if (!userMessage) return json({ error: 'Empty message' }, 400)
     if (userMessage.length > 4000) return json({ error: 'Message too long' }, 400)
 
-    // Lesson draft mode: admin-only, no rate limit, no history save, different prompt
-    if (mode === 'lesson_draft' || mode === 'lesson_outline') {
-      if (!isAdmin) return json({ error: 'Admin only' }, 403)
+    // Lesson drafting: admins only. Not counted, and not saved to the chat history.
+    const drafting = mode !== 'chat'
+    if (drafting && !isAdmin) return json({ error: 'Admin only' }, 403)
+
+    // 5. Daily limit. One database statement takes a place for this question
+    //    (migration 13), so requests sent at the same moment cannot all pass.
+    const today = new Date().toISOString().slice(0, 10)
+    const limitReached = () =>
+      json({ error: `Daily limit reached (${DAILY_LIMIT}/day). Come back tomorrow.`, code: 'rate_limit' }, 429)
+    let countAfter: number | null = null
+    let atomic = false
+    if (!isAdmin) {
+      const take = await fetch(`${supabaseUrl}/rest/v1/rpc/consume_tutor_question`, {
+        method: 'POST',
+        headers: { ...service, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ p_user: userId, p_limit: DAILY_LIMIT }),
+      })
+      if (take.ok) {
+        atomic = true
+        countAfter = (await take.json()) as number | null
+        if (countAfter === null) return limitReached()
+      } else if (take.status === 404) {
+        // The database function is not installed yet: the earlier check, kept only for that case.
+        const used = profile.tutor_questions_date === today ? (profile.tutor_questions_today ?? 0) : 0
+        if (used >= DAILY_LIMIT) return limitReached()
+        countAfter = used + 1
+      } else {
+        console.error('consume_tutor_question failed:', take.status)
+        return json({ error: 'Tutor is having a moment. Try again.' }, 503)
+      }
+    }
+    const giveBack = async () => {
+      if (!atomic) return
+      await fetch(`${supabaseUrl}/rest/v1/rpc/refund_tutor_question`, {
+        method: 'POST',
+        headers: { ...service, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ p_user: userId }),
+      }).catch(() => {})
     }
 
-    // 6. Load recent history
-    const histRes = await fetch(
-      `${supabaseUrl}/rest/v1/tutor_messages?user_id=eq.${userId}&select=role,content&order=created_at.desc&limit=${MAX_HISTORY}`,
-      { headers: { apikey: supabaseService, Authorization: `Bearer ${supabaseService}` } },
-    )
-    const recentMessages = ((await histRes.json()) as { role: string; content: string }[]).reverse()
+    // 6. Load recent history (chat only). Only the two roles this function
+    //    writes are replayed, so nothing stored can pose as an instruction.
+    let recentMessages: { role: string; content: string }[] = []
+    if (!drafting) {
+      const histRes = await fetch(
+        `${supabaseUrl}/rest/v1/tutor_messages?user_id=eq.${userId}&role=in.(user,assistant)&select=role,content&order=created_at.desc&limit=${MAX_HISTORY}`,
+        { headers: service },
+      )
+      const rows = histRes.ok ? ((await histRes.json()) as { role: string; content: string }[]) : []
+      recentMessages = rows
+        .filter((m) => (m.role === 'user' || m.role === 'assistant') && typeof m.content === 'string')
+        .map((m) => ({ role: m.role, content: m.content.slice(0, MAX_HISTORY_CHARS) }))
+        .reverse()
+    }
 
     // 7. Call Groq (OpenAI-compatible API)
     const groqKey = Deno.env.get('GROQ_API_KEY')!
@@ -214,10 +273,9 @@ Deno.serve(async (req) => {
       mode === 'lesson_draft' ? LESSON_SYSTEM_PROMPT
       : mode === 'lesson_outline' ? OUTLINE_SYSTEM_PROMPT
       : SYSTEM_PROMPT
-    const includeHistory = mode === 'chat'
     const messages = [
       { role: 'system', content: sysPrompt },
-      ...(includeHistory ? recentMessages.map((m) => ({ role: m.role, content: m.content })) : []),
+      ...recentMessages,
       { role: 'user', content: userMessage },
     ]
 
@@ -236,63 +294,49 @@ Deno.serve(async (req) => {
     })
 
     if (!groqRes.ok) {
-      const errBody = await groqRes.text()
-      console.error('Groq error:', groqRes.status, errBody)
-      return json({ error: 'Tutor is having a moment. Try again.', detail: errBody }, 502)
+      // The provider's reply stays in the server log; the browser gets a plain message.
+      console.error('Groq error:', groqRes.status, await groqRes.text())
+      await giveBack()
+      return json({ error: 'Tutor is having a moment. Try again.' }, 502)
     }
 
     const groqData = await groqRes.json()
     const reply = groqData?.choices?.[0]?.message?.content?.trim()
     if (!reply) {
       console.error('Groq empty reply:', JSON.stringify(groqData))
+      await giveBack()
       return json({ error: 'Tutor returned no answer.' }, 502)
     }
+
+    if (drafting) return json({ reply, remaining: null, limit: DAILY_LIMIT })
 
     // 8. Save both messages
     await fetch(`${supabaseUrl}/rest/v1/tutor_messages`, {
       method: 'POST',
-      headers: {
-        apikey: supabaseService,
-        Authorization: `Bearer ${supabaseService}`,
-        'Content-Type': 'application/json',
-        Prefer: 'return=minimal',
-      },
+      headers: { ...service, 'Content-Type': 'application/json', Prefer: 'return=minimal' },
       body: JSON.stringify([
         { user_id: userId, role: 'user', content: userMessage },
         { user_id: userId, role: 'assistant', content: reply },
       ]),
     })
 
-    // 9. Bump counter
-    const newCount = questionsToday + 1
-    await fetch(`${supabaseUrl}/rest/v1/profiles?id=eq.${userId}`, {
-      method: 'PATCH',
-      headers: {
-        apikey: supabaseService,
-        Authorization: `Bearer ${supabaseService}`,
-        'Content-Type': 'application/json',
-        Prefer: 'return=minimal',
-      },
-      body: JSON.stringify({
-        tutor_questions_today: newCount,
-        tutor_questions_date: today,
-      }),
-    })
+    // 9. Without the database function, record the count the old way.
+    if (!isAdmin && !atomic) {
+      await fetch(`${supabaseUrl}/rest/v1/profiles?id=eq.${userId}`, {
+        method: 'PATCH',
+        headers: { ...service, 'Content-Type': 'application/json', Prefer: 'return=minimal' },
+        body: JSON.stringify({ tutor_questions_today: countAfter, tutor_questions_date: today }),
+      })
+    }
 
     return json({
       reply,
-      remaining: isAdmin ? null : Math.max(0, DAILY_LIMIT - newCount),
+      remaining: isAdmin ? null : Math.max(0, DAILY_LIMIT - (countAfter ?? 0)),
       limit: DAILY_LIMIT,
     })
   } catch (e) {
+    // Details stay in the server log.
     console.error('Unhandled error:', e)
-    return json({ error: e instanceof Error ? e.message : 'Unknown error' }, 500)
+    return json({ error: 'Something went wrong. Please try again.' }, 500)
   }
 })
-
-function json(body: unknown, status = 200) {
-  return new Response(JSON.stringify(body), {
-    status,
-    headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-  })
-}

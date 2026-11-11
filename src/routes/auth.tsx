@@ -8,6 +8,7 @@ import { CircleCheck } from 'lucide-react'
 import { GoogleSignInButton } from '@/components/auth/GoogleSignInButton'
 import { BrandMark } from '@/components/BrandMark'
 import { FROM_PRICE } from '@/lib/plans'
+import { MIN_PASSWORD_LENGTH } from '@/lib/password'
 
 export const Route = createFileRoute('/auth')({
   head: privateHead('Sign in'),
@@ -47,6 +48,7 @@ function AuthPage() {
         if (error) throw error
         setResetSent(true)
       } else if (mode === 'signup') {
+        if (password.length < MIN_PASSWORD_LENGTH) throw new Error(`Choose a password of at least ${MIN_PASSWORD_LENGTH} characters.`)
         const { data, error } = await supabase.auth.signUp({
           email,
           password,
@@ -203,7 +205,7 @@ function AuthPage() {
                   className={field}
                   type="password"
                   autoComplete={mode === 'signup' ? 'new-password' : 'current-password'}
-                  placeholder={mode === 'signup' ? 'At least 6 characters' : 'Your password'}
+                  placeholder={mode === 'signup' ? `At least ${MIN_PASSWORD_LENGTH} characters` : 'Your password'}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />

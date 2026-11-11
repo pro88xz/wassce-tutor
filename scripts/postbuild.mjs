@@ -8,12 +8,14 @@
 //      loads, and a leftover static <title> would linger as a duplicate
 //   2. writes dist/client/404.html from the shell, which Vercel serves with a
 //      real 404 status for unknown URLs; the router then shows its not-found page
+//   3. writes each page's Content-Security-Policy <meta> (scripts/csp.mjs)
 //
 // The Android app (capacitor.config.ts webDir) uses dist/client as-is: it
 // starts at the prerendered index.html, where the boot script in __root.tsx
 // hides the marketing page behind a spinner until the app has routed.
 import fs from 'node:fs'
 import path from 'node:path'
+import { headerPolicy, withPagePolicy } from './csp.mjs'
 
 const root = path.resolve(import.meta.dirname, '..')
 const client = path.join(root, 'dist/client')
@@ -41,6 +43,24 @@ const notFound = neutralShell.replace(ROBOTS_RE, '<meta name="robots" content="n
 fs.writeFileSync(path.join(client, '404.html'), notFound)
 
 console.log('[postbuild] updated _shell.html and wrote 404.html')
+
+// Content Security Policy (scripts/csp.mjs): every built page gets a <meta>
+// policy listing the hashes of its own inline scripts, and the response
+// header in vercel.json must be the one csp.mjs describes.
+{
+  const walk = (dir) =>
+    fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(path.join(dir, e.name)) : e.name.endsWith('.html') ? [path.join(dir, e.name)] : []))
+  const pages = walk(client)
+  for (const file of pages) fs.writeFileSync(file, withPagePolicy(fs.readFileSync(file, 'utf8')))
+
+  const vercel = JSON.parse(fs.readFileSync(path.join(root, 'vercel.json'), 'utf8'))
+  const sent = vercel.headers?.flatMap((h) => h.headers).find((h) => h.key === 'Content-Security-Policy')?.value
+  if (sent !== headerPolicy()) {
+    console.error('[postbuild] vercel.json Content-Security-Policy differs from scripts/csp.mjs. Set it to:\n' + headerPolicy())
+    process.exit(1)
+  }
+  console.log(`[postbuild] wrote a Content-Security-Policy into ${pages.length} pages`)
+}
 
 // /llms.txt (https://llmstxt.org): a plain-language map of the public site
 // for AI assistants and answer engines. Built from the sitemap and the

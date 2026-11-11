@@ -24,6 +24,7 @@ import { useProfile, useStudentSubjects } from '@/lib/queries'
 import { checkAccess } from '@/lib/access'
 import { FROM_PRICE, ONLINE_CHECKOUT, PLANS } from '@/lib/plans'
 import { FREE_PRACTICE_INLINE } from '@/lib/free-plan'
+import { MIN_PASSWORD_LENGTH } from '@/lib/password'
 import { getTheme, toggleTheme, type Theme } from '@/lib/theme'
 import { fetchLatestVersion, getInstalledVersion, isNewerVersion } from '@/lib/version'
 import { initialsOf } from '@/lib/nav'
@@ -378,7 +379,7 @@ function SecuritySection({ email }: { email: string }) {
 
   const submit = async (e: FormEvent) => {
     e.preventDefault()
-    if (pw.length < 6) return setMsg({ ok: false, text: 'Use at least 6 characters.' })
+    if (pw.length < MIN_PASSWORD_LENGTH) return setMsg({ ok: false, text: `Use at least ${MIN_PASSWORD_LENGTH} characters.` })
     if (pw !== confirm) return setMsg({ ok: false, text: "The two passwords don't match." })
     setBusy(true)
     setMsg(null)
@@ -399,7 +400,7 @@ function SecuritySection({ email }: { email: string }) {
         <form onSubmit={submit} className="space-y-3">
           <div className="space-y-1.5">
             <label htmlFor="new-password" className="block text-sm font-medium">New password</label>
-            <input id="new-password" type="password" autoComplete="new-password" value={pw} onChange={(e) => setPw(e.target.value)} className={field} placeholder="At least 6 characters" />
+            <input id="new-password" type="password" autoComplete="new-password" value={pw} onChange={(e) => setPw(e.target.value)} className={field} placeholder={`At least ${MIN_PASSWORD_LENGTH} characters`} />
           </div>
           <div className="space-y-1.5">
             <label htmlFor="confirm-password" className="block text-sm font-medium">Confirm new password</label>
