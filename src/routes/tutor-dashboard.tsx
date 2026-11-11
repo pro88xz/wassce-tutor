@@ -36,7 +36,7 @@ function TutorDashboard() {
 
   const load = async () => {
     if (!user) return
-    const tutorResult = await supabase.from('tutors').select('*').eq('user_id',user.id).maybeSingle()
+    const tutorResult = await supabase.from('tutors').select('id,user_id,full_name,bio,qualifications,experience_years,location,teaching_mode,avatar_path,status').eq('user_id',user.id).maybeSingle()
     const tutorRecord = tutorResult.error ? null : tutorResult.data
     const [b,n,a,av,ts,app] = await Promise.all([
       supabase.from('tutor_bookings').select('id,starts_at,duration_minutes,price_nle,status,student_id,tutor_id,student_message,subject:subjects(name),tutor:tutors(user_id,full_name)').eq('tutor_id',tutorRecord?.id ?? '00000000-0000-0000-0000-000000000000').order('starts_at',{ascending:false}).limit(50),

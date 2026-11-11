@@ -21,6 +21,17 @@ import { fitLongMath, splitForNarrow } from '@/lib/math-split'
 //
 // :::callout{type=definition} ... :::  becomes  <callout type="definition">...</callout>
 // :::diagram{name=animal-cell}         becomes  <diagram name="animal-cell" />
+//
+// Only the directives below exist, each with a fixed set of attributes.
+// Anything else written in directive syntax (for example ::iframe{src=...} or
+// :::script) is not turned into an element: it stays a plain block of its own
+// text. Lesson text can come from outside sources (the open-notes pipeline),
+// so the lesson must never be able to choose which HTML element is rendered.
+const DIRECTIVES: Record<string, string[]> = {
+  callout: ['type', 'title'],
+  diagram: ['name'],
+}
+
 function directiveTransformer() {
   return (tree: any) => {
     walk(tree)
@@ -32,8 +43,24 @@ function directiveTransformer() {
       node.type === 'textDirective'
     ) {
       const data = node.data || (node.data = {})
-      data.hName = node.name
-      data.hProperties = node.attributes
+      const allowed = Object.hasOwn(DIRECTIVES, node.name) ? DIRECTIVES[node.name] : null
+      if (allowed) {
+        const attributes: Record<string, string> = {}
+        for (const key of allowed) {
+          const value = node.attributes?.[key]
+          if (typeof value === 'string') attributes[key] = value
+        }
+        data.hName = node.name
+        data.hProperties = attributes
+      } else if (node.type === 'textDirective' && !node.children?.length) {
+        // A colon followed by a word in ordinary text ("a:b"): keep it as written.
+        node.type = 'text'
+        node.value = `:${node.name}`
+        delete node.data
+      } else {
+        data.hName = node.type === 'textDirective' ? 'span' : 'div'
+        data.hProperties = {}
+      }
     }
     if (node.children) {
       for (const child of node.children) walk(child)

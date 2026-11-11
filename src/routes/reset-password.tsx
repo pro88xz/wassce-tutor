@@ -2,6 +2,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { privateHead } from '@/lib/seo'
 import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
+import { MIN_PASSWORD_LENGTH } from '@/lib/password'
 import { KeyRound } from 'lucide-react'
 
 export const Route = createFileRoute('/reset-password')({
@@ -36,8 +37,8 @@ function ResetPasswordPage() {
 
   const handleSubmit = async () => {
     setError(null)
-    if (password.length < 6) {
-      setError('Password must be at least 6 characters.')
+    if (password.length < MIN_PASSWORD_LENGTH) {
+      setError(`Password must be at least ${MIN_PASSWORD_LENGTH} characters.`)
       return
     }
     if (password !== confirmPassword) {

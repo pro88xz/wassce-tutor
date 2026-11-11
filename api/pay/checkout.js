@@ -18,7 +18,8 @@ export async function POST(request) {
 
   const body = await request.json().catch(() => ({}))
   const planId = typeof body?.plan === 'string' ? body.plan : ''
-  const plan = PLANS[planId]
+  // Own properties only: "constructor" or "__proto__" must not pass as a plan.
+  const plan = Object.hasOwn(PLANS, planId) ? PLANS[planId] : null
   if (!plan) return json(request, { code: 'bad_plan', error: 'Choose a plan.' }, 400)
 
   // Reuse a checkout started in the last 30 minutes for the same plan, so a

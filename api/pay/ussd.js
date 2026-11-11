@@ -15,7 +15,8 @@ export async function POST(request) {
 
   const body = await request.json().catch(() => ({}))
   const planId = typeof body?.plan === 'string' ? body.plan : ''
-  const plan = PLANS[planId]
+  // Own properties only: "constructor" or "__proto__" must not pass as a plan.
+  const plan = Object.hasOwn(PLANS, planId) ? PLANS[planId] : null
   if (!plan) return json(request, { code: 'bad_plan', error: 'Choose a valid plan.' }, 400)
 
   // Reuse a live one-time code after a double tap or retry.
@@ -62,11 +63,8 @@ export async function POST(request) {
       requestId: code.requestId || null,
     }
     console.error(`[pay] Payment Code creation failed for ${payment.id}: ${JSON.stringify(diagnostic)}`)
-    const detail = diagnostic.reason.replace(/[^a-zA-Z0-9_.:-]/g, ' ').slice(0, 180)
-    const http = diagnostic.status > 0 ? `HTTP ${diagnostic.status}` : 'network error'
-    const reference = diagnostic.requestId ? ` Reference: ${diagnostic.requestId}.` : ''
-    const errorMessage = `Monime payment-code creation failed: ${detail} (${http}).${reference}`
-    return json(request, { code: 'monime_error', error: errorMessage, diagnostic }, 502)
+    // The reason and Monime's request id are in the server log above; the browser gets a plain message.
+    return json(request, { code: 'monime_error', error: 'The payment code could not be created. Please try again in a moment.' }, 502)
   }
 
   const { error: updateError } = await client.from('payments').update({

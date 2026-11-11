@@ -1,0 +1,51 @@
+name: Deploy AI tutor function
+
+# Run by hand from the Actions tab, on main. Deploys supabase/functions/chat-tutor
+# (the AI tutor). The function works with or without migration 13; with it,
+# the daily question limit is enforced atomically in the database.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wassce-tutor-chat-tutor-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy-chat-tutor:
+    name: Deploy the AI tutor edge function
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    environment: production
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v5
+
+      - name: Validate deployment configuration
+        shell: bash
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+          SUPABASE_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
+        run: |
+          set -euo pipefail
+          test -n "$SUPABASE_ACCESS_TOKEN" || { echo "Missing SUPABASE_ACCESS_TOKEN"; exit 1; }
+          test -n "$SUPABASE_PROJECT_REF" || { echo "Missing SUPABASE_PROJECT_REF"; exit 1; }
+          test -s "supabase/functions/chat-tutor/index.ts" || { echo "Edge Function source is missing"; exit 1; }
+          test -s "supabase/config.toml" || { echo "Supabase config is missing"; exit 1; }
+
+      - name: Install Supabase CLI
+        uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      - name: Deploy only the AI tutor function
+        shell: bash
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+          SUPABASE_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
+        run: |
+          set -euo pipefail
+          supabase functions deploy chat-tutor --project-ref "$SUPABASE_PROJECT_REF"

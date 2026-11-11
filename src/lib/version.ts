@@ -8,6 +8,18 @@ export type VersionManifest = {
   releaseNotes?: string
 }
 
+const TRUSTED_DOWNLOAD_HOSTS = [new URL(MANIFEST_URL).hostname, 'wasscetutor.com']
+
+/** An https address on our own storage or site: the only places an app update may come from. */
+export function isTrustedDownload(url: string): boolean {
+  try {
+    const u = new URL(url)
+    return u.protocol === 'https:' && TRUSTED_DOWNLOAD_HOSTS.includes(u.hostname)
+  } catch {
+    return false
+  }
+}
+
 export function getInstalledVersion(): string {
   return __APP_VERSION__
 }
@@ -17,8 +29,10 @@ export async function fetchLatestVersion(): Promise<VersionManifest | null> {
     const res = await fetch(MANIFEST_URL, { cache: 'no-store' })
     if (!res.ok) return null
     const data = await res.json()
-    if (!data.version || !data.apkUrl) return null
-    return data as VersionManifest
+    if (typeof data.version !== 'string' || typeof data.apkUrl !== 'string') return null
+    // The update button opens this address: accept it only from our own storage or site.
+    if (!isTrustedDownload(data.apkUrl)) return null
+    return { version: data.version, apkUrl: data.apkUrl, releaseNotes: typeof data.releaseNotes === 'string' ? data.releaseNotes : undefined }
   } catch {
     return null
   }
