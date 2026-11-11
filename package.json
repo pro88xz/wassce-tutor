@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "node scripts/sync-questions.mjs && node scripts/sync-notes.mjs && vite build && node scripts/postbuild.mjs && tsc -b",
+    "build": "node scripts/sync-questions.mjs && node scripts/sync-notes.mjs && node scripts/notes/outlines.mjs && vite build && node scripts/postbuild.mjs && tsc -b",
     "sync:android": "npx cap sync android && rm -f android/app/src/main/assets/public/wassce-tutor.apk",
     "apk": "npm run build && npm run sync:android && cd android && ./gradlew assembleRelease && cd ..",
     "apk:publish": "node scripts/publish-apk.mjs",
@@ -13,6 +13,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "notes:validate": "node scripts/notes-ingestion.mjs validate",
+    "notes:outlines": "node scripts/notes/outlines.mjs",
     "notes:build": "node scripts/notes-ingestion.mjs build",
     "notes:acquire": "node scripts/source-acquisition.mjs",
     "notes:test": "node --test scripts/notes-ingestion.test.mjs",

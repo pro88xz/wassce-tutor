@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Micrometer screw gauge and its parts</title>
+<desc id="d">A micrometer screw gauge: a C-shaped frame holds a fixed anvil facing a moving spindle. The spindle is driven by the thimble, which carries the circular scale and turns against the main scale on the sleeve. The ratchet stops over-tightening.</desc>
+<defs></defs>
+<rect width="720" height="380" rx="20" fill="#f8fafc"/>
+<path d="M 70 150 L 128 150 L 128 205 Q 128 262 215 262 Q 296 262 310 212 L 310 160 L 352 160 L 352 222 Q 336 314 215 314 Q 70 314 70 210 Z" stroke="#0f172a" stroke-width="2.5" fill="#e2e8f0" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="128.0" y="158.0" width="46.0" height="34.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="214.0" y="158.0" width="96.0" height="34.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="174.0" y="154.0" width="40.0" height="42.0" rx="0" fill="#fef3c7" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="352.0" y="150.0" width="150.0" height="54.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="2.5"/>
+<line x1="352.0" y1="177.0" x2="502.0" y2="177.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<line x1="362.0" y1="177.0" x2="362.0" y2="164.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="373.0" y1="177.0" x2="373.0" y2="188.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="384.0" y1="177.0" x2="384.0" y2="164.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="395.0" y1="177.0" x2="395.0" y2="188.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="406.0" y1="177.0" x2="406.0" y2="164.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="417.0" y1="177.0" x2="417.0" y2="188.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="428.0" y1="177.0" x2="428.0" y2="164.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="439.0" y1="177.0" x2="439.0" y2="188.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="450.0" y1="177.0" x2="450.0" y2="164.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="461.0" y1="177.0" x2="461.0" y2="188.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="472.0" y1="177.0" x2="472.0" y2="164.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="483.0" y1="177.0" x2="483.0" y2="188.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="494.0" y1="177.0" x2="494.0" y2="164.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<polygon points="478.0,140.0 600.0,140.0 600.0,214.0 478.0,214.0 466.0,200.0 466.0,154.0" fill="#dbeafe" stroke="#0f172a" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="468.0" y1="149.0" x2="483.0" y2="149.0" stroke="#2563eb" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="466.0" y1="156.0" x2="483.0" y2="156.0" stroke="#2563eb" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="466.0" y1="163.0" x2="483.0" y2="163.0" stroke="#2563eb" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="466.0" y1="170.0" x2="483.0" y2="170.0" stroke="#2563eb" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="466.0" y1="177.0" x2="488.0" y2="177.0" stroke="#2563eb" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="466.0" y1="184.0" x2="483.0" y2="184.0" stroke="#2563eb" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="466.0" y1="191.0" x2="483.0" y2="191.0" stroke="#2563eb" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="466.0" y1="198.0" x2="483.0" y2="198.0" stroke="#2563eb" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="468.0" y1="205.0" x2="483.0" y2="205.0" stroke="#2563eb" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="520.0" y1="144.0" x2="520.0" y2="210.0" stroke="#93c5fd" stroke-width="2" stroke-linecap="round"/>
+<line x1="532.0" y1="144.0" x2="532.0" y2="210.0" stroke="#93c5fd" stroke-width="2" stroke-linecap="round"/>
+<line x1="544.0" y1="144.0" x2="544.0" y2="210.0" stroke="#93c5fd" stroke-width="2" stroke-linecap="round"/>
+<line x1="556.0" y1="144.0" x2="556.0" y2="210.0" stroke="#93c5fd" stroke-width="2" stroke-linecap="round"/>
+<line x1="568.0" y1="144.0" x2="568.0" y2="210.0" stroke="#93c5fd" stroke-width="2" stroke-linecap="round"/>
+<line x1="580.0" y1="144.0" x2="580.0" y2="210.0" stroke="#93c5fd" stroke-width="2" stroke-linecap="round"/>
+<line x1="592.0" y1="144.0" x2="592.0" y2="210.0" stroke="#93c5fd" stroke-width="2" stroke-linecap="round"/>
+<rect x="600.0" y="158.0" width="64.0" height="38.0" rx="5" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<line x1="610.0" y1="162.0" x2="610.0" y2="192.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="619.0" y1="162.0" x2="619.0" y2="192.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="628.0" y1="162.0" x2="628.0" y2="192.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="637.0" y1="162.0" x2="637.0" y2="192.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="646.0" y1="162.0" x2="646.0" y2="192.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="655.0" y1="162.0" x2="655.0" y2="192.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<text x="150.0" y="120.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">anvil</text>
+<line x1="150.0" y1="128.0" x2="150.0" y2="156.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<text x="194.0" y="92.0" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">object</text>
+<line x1="194.0" y1="100.0" x2="194.0" y2="152.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<text x="262.0" y="120.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">spindle</text>
+<line x1="262.0" y1="128.0" x2="262.0" y2="156.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<text x="420.0" y="100.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">sleeve (main scale)</text>
+<line x1="420.0" y1="108.0" x2="420.0" y2="148.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<text x="556.0" y="252.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">thimble (circular scale)</text>
+<line x1="540.0" y1="238.0" x2="540.0" y2="216.0" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round"/>
+<text x="632.0" y="120.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">ratchet</text>
+<line x1="632.0" y1="128.0" x2="632.0" y2="156.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<text x="215.0" y="346.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">frame</text>
+<text x="360.0" y="40.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Turn only the ratchet when closing on the object</text>
+</svg>

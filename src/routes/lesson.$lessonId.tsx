@@ -13,6 +13,7 @@ import { Button } from '@/components/ui/button'
 import { useCompletedLessons, useSetLessonComplete } from '@/lib/progress'
 import { subjectTheme } from '@/lib/subject-theme'
 import { LessonView } from '@/components/LessonView'
+import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { ProgressBar } from '@/components/ds/Progress'
 import { EmptyState, Skeleton } from '@/components/ds/Primitives'
 
@@ -219,6 +220,8 @@ function LessonPage() {
             )}
           </div>
         </section>
+
+        <WaecPastPapers subjectSlug={subject?.slug} subjectName={subject?.name} />
       </div>
   )
 }

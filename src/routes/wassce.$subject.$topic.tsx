@@ -8,6 +8,10 @@ import { breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { subjectTheme } from '@/lib/subject-theme'
 import { Lock } from 'lucide-react'
 import { SubjectCover } from '@/components/ds/SubjectCover'
+import { LessonOutlineList, outlineLinkClass } from '@/components/LessonOutline'
+import { WaecPastPapers } from '@/components/WaecPastPapers'
+import { describeTotals, loadOutlines, outlineKey, sectionId, totals } from '@/lib/lesson-outlines'
+import type { LessonOutline } from '@/lib/lesson-outlines'
 
 const trail = ({ subject, topic }: TopicPageData): [string, string][] => [
   ['Home', '/'],
@@ -27,7 +31,14 @@ export const Route = createFileRoute('/wassce/$subject/$topic')({
   loader: async ({ params }) => {
     const data = await fetchTopicPage(params.subject, params.topic)
     if (!data) throw notFound()
-    return data
+    // What each lesson covers (sections, worked examples, diagrams), keyed by lesson slug.
+    const all = await loadOutlines(data.subject.slug)
+    const outlines: Record<string, LessonOutline> = {}
+    for (const l of data.topic.lessons) {
+      const o = all[outlineKey(data.topic.slug, l.slug)]
+      if (o) outlines[l.slug] = o
+    }
+    return { ...data, outlines }
   },
   head: ({ loaderData: data }) =>
     data
@@ -44,12 +55,13 @@ export const Route = createFileRoute('/wassce/$subject/$topic')({
 
 function TopicPage() {
   const data = Route.useLoaderData()
-  const { subject, topic, group, previous, next } = data
+  const { subject, topic, group, previous, next, outlines } = data
   const { user } = useAuth()
   const { palette } = subjectTheme(subject.slug)
   const minutes = lessonMinutes(topic.lessons)
   const siblings = group.topics.filter((t) => t.id !== topic.id)
   const freeCount = topic.lessons.filter((l) => l.is_public).length
+  const covered = describeTotals(totals(topic.lessons.map((l) => outlines[l.slug])))
 
   return (
     <article className="app-page site-page space-y-10 pb-12">
@@ -69,7 +81,10 @@ function TopicPage() {
             {topic.lessons.length} lesson{topic.lessons.length === 1 ? '' : 's'}
           </li>
           <li className="rounded-full bg-muted px-3 py-1 text-muted-foreground">about {minutes} minutes</li>
-          {freeCount > 0 && <li className="rounded-full bg-emerald-500/10 px-3 py-1 text-emerald-700">{freeCount} free to read</li>}
+          {covered.map((c) => (
+            <li key={c} className="rounded-full bg-muted px-3 py-1 text-muted-foreground">{c}</li>
+          ))}
+          {freeCount > 0 && <li className="rounded-full bg-emerald-500/10 px-3 py-1 text-emerald-700 dark:text-emerald-300">{freeCount} free to read</li>}
         </ul>
       </header>
 
@@ -94,12 +109,20 @@ function TopicPage() {
                 </span>
               </>
             )
+            const outline = outlines[lesson.slug]
             return (
-              <li key={lesson.id}>
+              <li key={lesson.id} className="rounded-2xl bg-card ring-1 ring-border/60">
                 {href ? (
-                  <a href={href} className="flex items-center gap-3 rounded-2xl bg-card px-4 py-3.5 ring-1 ring-border/60 transition hover:ring-primary/40">{body}</a>
+                  <a href={href} className="flex items-center gap-3 rounded-2xl px-4 py-3.5 transition hover:bg-muted/40">{body}</a>
                 ) : (
-                  <div className="flex items-center gap-3 rounded-2xl bg-card px-4 py-3.5 ring-1 ring-border/60">{body}</div>
+                  <div className="flex items-center gap-3 px-4 py-3.5">{body}</div>
+                )}
+                {outline && (
+                  <LessonOutlineList
+                    outline={outline}
+                    className="-mt-1 pb-4 pl-[3.75rem] pr-4"
+                    link={href ? (n, b) => <a href={`${href}#${sectionId(n)}`} className={outlineLinkClass}>{b}</a> : undefined}
+                  />
                 )}
               </li>
             )
@@ -107,9 +130,11 @@ function TopicPage() {
         </ol>
       </section>
 
+      <WaecPastPapers subjectSlug={subject.slug} subjectName={subject.name} />
+
       <StartCta
         heading={`Learn ${topic.name.toLowerCase()} step by step`}
-        body={`Unlock all ${topic.lessons.length} lessons on ${topic.name.toLowerCase()}, plus every other WASSCE ${subject.name} topic, exam-style practice marked instantly and guided learning tools.`}
+        body={`Unlock ${topic.lessons.length === 2 ? 'both lessons' : `all ${topic.lessons.length} lessons`} on ${topic.name.toLowerCase()}, plus every other WASSCE ${subject.name} topic, exam-style practice marked instantly and guided learning tools.`}
         appHref={`/topic/${topic.id}`}
       />
 

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Displacement-time graphs</title>
+<desc id="d">Three displacement-time graphs: a horizontal line means the body is at rest; a straight sloping line means constant velocity; a curve that gets steeper means the velocity is increasing.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="720" height="300" rx="20" fill="#f8fafc"/>
+<line x1="50.0" y1="230.0" x2="240.0" y2="230.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="50.0" y1="230.0" x2="50.0" y2="60.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="240.0" y="256.0" font-size="18" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">t</text>
+<text x="60.0" y="56.0" font-size="18" fill="#475569" text-anchor="start" dominant-baseline="auto" font-weight="normal">s</text>
+<text x="38.0" y="246.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">0</text>
+<line x1="50.0" y1="150.0" x2="220.0" y2="150.0" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+<text x="145.0" y="268.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">at rest</text>
+<line x1="280.0" y1="230.0" x2="470.0" y2="230.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="280.0" y1="230.0" x2="280.0" y2="60.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="470.0" y="256.0" font-size="18" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">t</text>
+<text x="290.0" y="56.0" font-size="18" fill="#475569" text-anchor="start" dominant-baseline="auto" font-weight="normal">s</text>
+<text x="268.0" y="246.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">0</text>
+<line x1="280.0" y1="230.0" x2="445.0" y2="90.0" stroke="#15803d" stroke-width="4" stroke-linecap="round"/>
+<text x="375.0" y="268.0" font-size="18" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">constant velocity</text>
+<line x1="510.0" y1="230.0" x2="700.0" y2="230.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="510.0" y1="230.0" x2="510.0" y2="60.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="700.0" y="256.0" font-size="18" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">t</text>
+<text x="520.0" y="56.0" font-size="18" fill="#475569" text-anchor="start" dominant-baseline="auto" font-weight="normal">s</text>
+<text x="498.0" y="246.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">0</text>
+<path d="M 510.0 230.0 L 515.0 229.9 L 520.0 229.5 L 525.0 228.8 L 530.0 227.9 L 535.0 226.8 L 540.0 225.4 L 545.0 223.7 L 550.0 221.8 L 555.0 219.6 L 560.0 217.1 L 565.0 214.4 L 570.0 211.5 L 575.0 208.3 L 580.0 204.8 L 585.0 201.1 L 590.0 197.1 L 595.0 192.8 L 600.0 188.3 L 605.0 183.6 L 610.0 178.6 L 615.0 173.3 L 620.0 167.8 L 625.0 162.0 L 630.0 156.0 L 635.0 149.7 L 640.0 143.1 L 645.0 136.3 L 650.0 129.2 L 655.0 121.9 L 660.0 114.3 L 665.0 106.5 L 670.0 98.4 L 675.0 90.0" stroke="#dc2626" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="605.0" y="268.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">speeding up</text>
+<text x="360.0" y="26.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">gradient of s–t graph = velocity</text>
+</svg>

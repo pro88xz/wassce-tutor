@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Ticker-tape patterns</title>
+<desc id="d">Three ticker tapes from a 50 Hz timer. Equal gaps between dots mean constant velocity; gaps that grow mean acceleration; gaps that shrink mean deceleration. Each gap is made in 0.02 s.</desc>
+<defs></defs>
+<rect width="720" height="380" rx="20" fill="#f8fafc"/>
+<rect x="200.0" y="70.0" width="500.0" height="40.0" rx="0" fill="#fffdf5" stroke="#0f172a" stroke-width="2"/>
+<circle cx="220.0" cy="90.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="260.0" cy="90.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="300.0" cy="90.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="340.0" cy="90.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="380.0" cy="90.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="420.0" cy="90.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="460.0" cy="90.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="500.0" cy="90.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="540.0" cy="90.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="580.0" cy="90.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="620.0" cy="90.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="660.0" cy="90.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="188.0" y="90.0" font-size="17" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">constant velocity</text>
+<rect x="200.0" y="170.0" width="500.0" height="40.0" rx="0" fill="#fffdf5" stroke="#0f172a" stroke-width="2"/>
+<circle cx="220.0" cy="190.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="232.0" cy="190.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="250.0" cy="190.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="274.0" cy="190.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="304.0" cy="190.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="340.0" cy="190.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="382.0" cy="190.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="430.0" cy="190.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="484.0" cy="190.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="544.0" cy="190.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="610.0" cy="190.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="188.0" y="190.0" font-size="17" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">accelerating</text>
+<rect x="200.0" y="270.0" width="500.0" height="40.0" rx="0" fill="#fffdf5" stroke="#0f172a" stroke-width="2"/>
+<circle cx="220.0" cy="290.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="286.0" cy="290.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="346.0" cy="290.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="400.0" cy="290.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="448.0" cy="290.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="490.0" cy="290.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="526.0" cy="290.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="556.0" cy="290.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="580.0" cy="290.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="598.0" cy="290.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="610.0" cy="290.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="188.0" y="290.0" font-size="17" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">decelerating</text>
+<line x1="220.0" y1="126.0" x2="220.0" y2="138.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="260.0" y1="126.0" x2="260.0" y2="138.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="220.0" y1="132.0" x2="260.0" y2="132.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<text x="270.0" y="136.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">one gap = 0.02 s</text>
+<text x="360.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">50 Hz timer: 50 dots every second</text>
+<text x="460.0" y="236.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">gaps grow: speed increasing</text>
+<text x="460.0" y="336.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">gaps shrink: speed decreasing</text>
+</svg>

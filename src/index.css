@@ -305,6 +305,29 @@ html.app-boot [data-public-footer] { display: none; }
   overflow-wrap: anywhere;
 }
 
+/* A long equation and its stacked form (LessonView): the stacked one shows only
+   when the one-line form would overflow; the hidden one stays measurable. */
+.math-split {
+  position: relative;
+}
+.math-split > .math-narrow {
+  display: none;
+}
+.math-split.is-narrow > .math-narrow {
+  display: block;
+}
+.math-split.is-narrow > .math-wide {
+  position: absolute;
+  inset: 0 0 auto 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Lesson sections linked from topic pages (#section-N) land below the sticky header. */
+[id^='section-'] {
+  scroll-margin-top: 5.5rem;
+}
+
 /* Long display formulas scroll inside their own box on phones instead of
    pushing the whole page sideways. */
 .katex-display {

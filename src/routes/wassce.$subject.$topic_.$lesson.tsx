@@ -2,6 +2,7 @@ import { createFileRoute, notFound } from '@tanstack/react-router'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { StartCta } from '@/components/public/StartCta'
 import { LessonView } from '@/components/LessonView'
+import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { fetchPublicLessonPage, lessonPath, lessonSummary, subjectPath, topicPath } from '@/lib/public-content'
 import type { PublicLessonPageData } from '@/lib/public-content'
 import { SITE, absoluteUrl, breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
@@ -114,6 +115,8 @@ function PublicLessonPage() {
       <div className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-bold prose-h2:text-xl prose-h2:mt-6 prose-h2:mb-3 prose-p:leading-relaxed prose-li:my-1 prose-strong:text-foreground">
         <LessonView content={lesson.content} />
       </div>
+
+      <WaecPastPapers subjectSlug={subject.slug} subjectName={subject.name} />
 
       <StartCta
         heading={`Keep going with ${topic.name.toLowerCase()}`}

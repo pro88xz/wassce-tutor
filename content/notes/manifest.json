@@ -1003,35 +1003,65 @@
       "auto_sync": true
     },
     {
-      "file": "physics-measurement-and-errors.md",
+      "file": "physics-measurement-1.md",
       "subject": "Physics",
       "topic": "measurement-and-errors",
-      "title": "Measurement and errors: instruments, accuracy and experimental uncertainty",
+      "title": "Measuring length: metre rule, vernier calipers and micrometer screw gauge",
       "license": "ORIGINAL",
       "rights_holder": "WASSCE Tutor",
       "rights_verified": true,
       "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 35,
-      "sort_order": 1,
-      "auto_sync": true
-    },
-    {
-      "file": "physics-motion-in-a-straight-line.md",
-      "subject": "Physics",
-      "topic": "motion-in-a-straight-line",
-      "title": "Motion in a straight line: distance, displacement, speed, velocity and graphs",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 35,
+      "est_minutes": 12,
       "sort_order": 1,
       "auto_sync": true,
       "retire": [
+        "measurement-and-errors-instruments-accuracy-and-experimental-uncertainty"
+      ]
+    },
+    {
+      "file": "physics-measurement-2.md",
+      "subject": "Physics",
+      "topic": "measurement-and-errors",
+      "title": "Errors, accuracy, significant figures and density practicals",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 11,
+      "sort_order": 2,
+      "auto_sync": true
+    },
+    {
+      "file": "physics-motion-line-1.md",
+      "subject": "Physics",
+      "topic": "motion-in-a-straight-line",
+      "title": "Distance, displacement, speed, velocity and acceleration",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 9,
+      "sort_order": 1,
+      "auto_sync": true,
+      "retire": [
+        "motion-in-a-straight-line-distance-displacement-speed-velocity-and-graphs",
         "motion-in-a-straight-line-(kinematics)",
         "acceleration",
         "graphical-analysis-of-linear-motion"
       ]
+    },
+    {
+      "file": "physics-motion-line-2.md",
+      "subject": "Physics",
+      "topic": "motion-in-a-straight-line",
+      "title": "Motion graphs and the ticker-tape timer",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "est_minutes": 10,
+      "sort_order": 2,
+      "auto_sync": true
     },
     {
       "file": "physics-quantities-units-1.md",

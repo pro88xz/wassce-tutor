@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Reading vernier calipers: 24.6 mm</title>
+<desc id="d">The vernier zero lies just past the 24 mm mark of the main scale, and the sixth vernier mark lines up exactly with a main-scale mark, so the reading is 24 mm plus 6 times 0.1 mm, which is 24.6 mm.</desc>
+<defs></defs>
+<rect width="720" height="360" rx="20" fill="#f8fafc"/>
+<rect x="30.0" y="70.0" width="660.0" height="60.0" rx="4" fill="#cbd5e1" stroke="#0f172a" stroke-width="2.5"/>
+<line x1="50.0" y1="130.0" x2="50.0" y2="100.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="50.0" y="86.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">20 mm</text>
+<line x1="76.0" y1="130.0" x2="76.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="102.0" y1="130.0" x2="102.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="128.0" y1="130.0" x2="128.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="154.0" y1="130.0" x2="154.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="180.0" y1="130.0" x2="180.0" y2="109.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<line x1="206.0" y1="130.0" x2="206.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="232.0" y1="130.0" x2="232.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="258.0" y1="130.0" x2="258.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="284.0" y1="130.0" x2="284.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="310.0" y1="130.0" x2="310.0" y2="100.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="310.0" y="86.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">30 mm</text>
+<line x1="336.0" y1="130.0" x2="336.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="362.0" y1="130.0" x2="362.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="388.0" y1="130.0" x2="388.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="414.0" y1="130.0" x2="414.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="440.0" y1="130.0" x2="440.0" y2="109.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<line x1="466.0" y1="130.0" x2="466.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="492.0" y1="130.0" x2="492.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="518.0" y1="130.0" x2="518.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="544.0" y1="130.0" x2="544.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="570.0" y1="130.0" x2="570.0" y2="100.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="570.0" y="86.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">40 mm</text>
+<line x1="596.0" y1="130.0" x2="596.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="622.0" y1="130.0" x2="622.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="648.0" y1="130.0" x2="648.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="674.0" y1="130.0" x2="674.0" y2="117.0" stroke="#0f172a" stroke-width="1.4" stroke-linecap="round"/>
+<text x="678.0" y="86.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">main scale</text>
+<rect x="147.6" y="130.0" width="290.0" height="58.0" rx="0" fill="#dbeafe" stroke="#0f172a" stroke-width="2.5"/>
+<line x1="169.6" y1="130.0" x2="169.6" y2="154.0" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/>
+<text x="169.6" y="176.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">0</text>
+<line x1="193.0" y1="130.0" x2="193.0" y2="145.0" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="216.4" y1="130.0" x2="216.4" y2="145.0" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="239.8" y1="130.0" x2="239.8" y2="145.0" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="263.2" y1="130.0" x2="263.2" y2="145.0" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="286.6" y1="130.0" x2="286.6" y2="154.0" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/>
+<text x="286.6" y="176.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5</text>
+<line x1="310.0" y1="130.0" x2="310.0" y2="145.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<line x1="333.4" y1="130.0" x2="333.4" y2="145.0" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="356.8" y1="130.0" x2="356.8" y2="145.0" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="380.2" y1="130.0" x2="380.2" y2="145.0" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="403.6" y1="130.0" x2="403.6" y2="154.0" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/>
+<text x="403.6" y="176.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">10</text>
+<line x1="310.0" y1="98.0" x2="310.0" y2="130.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<text x="445.6" y="160.0" font-size="15" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="normal">vernier</text>
+<line x1="169.6" y1="196.0" x2="169.6" y2="232.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="165.6" y="250.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">vernier zero is just past 24 mm</text>
+<line x1="310.0" y1="196.0" x2="370.0" y2="290.0" stroke="#dc2626" stroke-width="1.6" stroke-linecap="round"/>
+<text x="374.0" y="296.0" font-size="16" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">6th vernier mark lines up</text>
+<text x="360.0" y="334.0" font-size="21" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Reading = 24 mm + 6 × 0.1 mm = 24.6 mm</text>
+<text x="360.0" y="30.0" font-size="17" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">10 vernier divisions = 9 mm, so least count = 0.1 mm</text>
+</svg>

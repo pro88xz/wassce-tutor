@@ -1,4 +1,5 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
+import { useQuery } from '@tanstack/react-query'
 import { ArrowRight, ChevronRight, CircleCheck, Clock, Lock, RotateCcw } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { FreePlanBanner } from '@/components/FreePlanBanner'
@@ -14,6 +15,9 @@ import { Button } from '@/components/ui/button'
 import { subjectTheme } from '@/lib/subject-theme'
 import { ProgressBar } from '@/components/ds/Progress'
 import { EmptyState, Skeleton } from '@/components/ds/Primitives'
+import { LessonOutlineList, outlineLinkClass } from '@/components/LessonOutline'
+import { WaecPastPapers } from '@/components/WaecPastPapers'
+import { describeTotals, loadOutlines, outlineKey, sectionId, totals } from '@/lib/lesson-outlines'
 
 export const Route = createFileRoute('/topic/$topicId')({
   head: privateHead('Topic'),
@@ -30,6 +34,12 @@ function TopicPage() {
   const { data: papers } = usePapers(data?.topic.subject_id ?? null)
   const { data: attempts } = useScoredAttempts(user?.id ?? null)
   const { access } = useAccess()
+  const { data: outlines } = useQuery({
+    queryKey: ['lesson-outlines', subject?.slug],
+    enabled: !!subject?.slug,
+    staleTime: Infinity,
+    queryFn: () => loadOutlines(subject!.slug),
+  })
 
   if (isLoading) {
     return (
@@ -53,6 +63,8 @@ function TopicPage() {
   const last = practice ? latestByPaper(attempts ?? []).get(practice.id) : undefined
   const isLocked = (l: { is_free?: boolean }) => lessonLocked(access, l)
   const anyLocked = lessons.some(isLocked)
+  const outlineOf = (l: { slug: string }) => outlines?.[outlineKey(topic.slug, l.slug)]
+  const covered = describeTotals(totals(lessons.map(outlineOf)))
 
   return (
       <div className="app-page mx-auto w-full max-w-5xl space-y-6">
@@ -88,6 +100,7 @@ function TopicPage() {
                 {minutesLeft > 0 && (
                   <span className="inline-flex items-center gap-1"><Clock className="h-3.5 w-3.5" aria-hidden /> about {minutesLeft} min {doneCount > 0 ? 'left' : 'in total'}</span>
                 )}
+                {covered.length > 0 && <span>{covered.join(' · ')}</span>}
                 {allDone && <span className="inline-flex items-center gap-1 font-semibold text-success"><CircleCheck className="h-4 w-4" aria-hidden /> Completed</span>}
               </p>
             </div>
@@ -119,6 +132,7 @@ function TopicPage() {
                 const done = isDone(l.id)
                 const locked = isLocked(l)
                 const upNext = !allDone && next?.id === l.id && !locked
+                const outline = outlineOf(l)
                 return (
                   <li key={l.id}>
                     <Link
@@ -155,6 +169,17 @@ function TopicPage() {
                       </span>
                       <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground" aria-hidden />
                     </Link>
+                    {outline && (
+                      <LessonOutlineList
+                        outline={outline}
+                        className="-mt-1 pb-4 pl-14 pr-4"
+                        link={locked ? undefined : (n, body) => (
+                          <Link to="/lesson/$lessonId" params={{ lessonId: l.id }} hash={sectionId(n)} className={outlineLinkClass}>
+                            {body}
+                          </Link>
+                        )}
+                      />
+                    )}
                   </li>
                 )
               })}
@@ -184,6 +209,8 @@ function TopicPage() {
             </ul>
           </section>
         )}
+
+        <WaecPastPapers subjectSlug={subject?.slug} subjectName={subject?.name} />
       </div>
   )
 }

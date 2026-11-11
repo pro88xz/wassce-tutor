@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 330" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Distance and displacement on a straight road</title>
+<desc id="d">A student walks 300 m east to a shop and then 100 m west. The distance travelled is 400 m; the displacement is 200 m east.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="720" height="330" rx="20" fill="#f8fafc"/>
+<line x1="50.0" y1="250.0" x2="690.0" y2="250.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="120.0" y1="242.0" x2="120.0" y2="258.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="120.0" y="276.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">0</text>
+<line x1="260.0" y1="242.0" x2="260.0" y2="258.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="260.0" y="276.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+100 m</text>
+<line x1="400.0" y1="242.0" x2="400.0" y2="258.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="400.0" y="276.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+200 m</text>
+<line x1="540.0" y1="242.0" x2="540.0" y2="258.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="540.0" y="276.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+300 m</text>
+<line x1="680.0" y1="242.0" x2="680.0" y2="258.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="680.0" y="276.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+400 m</text>
+<text x="686.0" y="232.0" font-size="16" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">east +</text>
+<line x1="120.0" y1="96.0" x2="540.0" y2="96.0" stroke="#2563eb" stroke-width="4" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<text x="330.0" y="78.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1st: 300 m east</text>
+<line x1="540.0" y1="146.0" x2="400.0" y2="146.0" stroke="#ea580c" stroke-width="4" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<text x="552.0" y="146.0" font-size="18" fill="#ea580c" text-anchor="start" dominant-baseline="middle" font-weight="bold">2nd: 100 m west</text>
+<line x1="120.0" y1="200.0" x2="400.0" y2="200.0" stroke="#dc2626" stroke-width="6" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<rect x="149.2" y="166.0" width="221.7" height="28.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="260.0" y="180.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">displacement = +200 m</text>
+<circle cx="120.0" cy="250.0" r="7.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="540.0" cy="250.0" r="7.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="400.0" cy="250.0" r="7.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="120.0" y="228.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">start</text>
+<text x="540.0" y="228.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">shop</text>
+<text x="400.0" y="228.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">finish</text>
+<line x1="540.0" y1="104.0" x2="540.0" y2="140.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 5"/>
+<text x="360.0" y="34.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">distance = 300 m + 100 m = 400 m</text>
+</svg>

@@ -1981,6 +1981,304 @@ def best_fit_graph():
     return s
 
 
+# ═══ Measurement and straight-line motion ═══════════════════════════════════
+
+@fig
+def vernier_caliper():
+    s = Svg(720, 420, "Vernier calipers and their parts",
+            "Vernier calipers: a fixed jaw on a main-scale beam and a sliding jaw carrying the vernier scale. "
+            "The large lower jaws grip an object's outside; the small upper jaws fit inside a hole; the depth rod measures depth.")
+    k = 6  # px per mm
+    zero = 130  # main-scale zero (jaws closed: vernier zero sits here)
+    gap = 22 * k  # object 22 mm long
+    face_fixed, face_slide = 110, 110 + gap
+    # beam with main scale
+    s.rect(60, 140, 600, 60, fill=METAL, stroke=INK, width=2.5, rx=4)
+    for mm in range(0, 86):
+        x = zero + mm * k
+        h = 18 if mm % 10 == 0 else (12 if mm % 5 == 0 else 7)
+        s.line(x, 200, x, 200 - h, color=INK, width=1.6 if mm % 10 == 0 else 1.1)
+        if mm % 10 == 0:
+            s.text(x, 166, str(mm // 10), size=15, color=INK)
+    s.text(640, 154, "cm", size=14, color=MUTED, anchor="end")
+    # depth rod
+    s.rect(660, 165, 46, 8, fill=METAL, stroke=INK, width=2)
+    # fixed jaw (outside, below) and its small inside jaw (above)
+    s.polygon([(60, 140), (face_fixed, 140), (face_fixed, 330), (92, 352), (60, 352)], fill=F_GREY, stroke=INK, width=2.5)
+    s.polygon([(78, 140), (face_fixed, 140), (face_fixed, 70), (98, 70)], fill=F_GREY, stroke=INK, width=2.5)
+    # sliding jaw with vernier plate
+    xs = face_slide
+    s.rect(xs, 200, 150, 40, fill=F_BLUE, stroke=INK, width=2.5)
+    for i in range(11):
+        x = xs + 20 + i * 0.9 * k
+        s.line(x, 200, x, 200 + (14 if i % 5 == 0 else 9), color=BLUE, width=1.3)
+    s.rect(xs, 122, 150, 18, fill=F_BLUE, stroke=INK, width=2.5)
+    s.circle(xs + 104, 112, 10, fill=F_GREY, stroke=INK, width=2)
+    s.line(xs + 104, 122, xs + 104, 112, color=INK, width=2)
+    s.polygon([(xs, 240), (xs + 50, 240), (xs + 50, 290), (xs + 18, 352), (xs, 352), (xs, 330)], fill=F_BLUE, stroke=INK, width=2.5)
+    s.polygon([(xs, 122), (xs + 34, 122), (xs + 12, 70), (xs, 70)], fill=F_BLUE, stroke=INK, width=2.5)
+    # object held in the outside jaws
+    s.rect(face_fixed, 262, gap, 58, fill=F_AMBER, stroke=INK, width=2.5)
+    s.text((face_fixed + face_slide) / 2, 291, "object", size=17, color=INK)
+    # labels
+    s.text(176, 52, "inside jaws: internal diameter", size=17, color=MUTED)
+    s.text(176, 380, "outside jaws: length or external diameter", size=17, color=MUTED, anchor="start")
+    s.line(166, 372, 120, 344, color=MUTED, width=1.5)
+    s.text(470, 104, "locking screw", size=16, color=MUTED, anchor="start")
+    s.line(466, 104, xs + 116, 110, color=MUTED, width=1.5)
+    s.text(470, 262, "vernier scale", size=17, color=BLUE, weight="bold", anchor="start")
+    s.line(466, 262, xs + 150, 228, color=BLUE, width=1.5)
+    s.text(560, 124, "main scale", size=17, weight="bold", anchor="middle")
+    s.text(712, 222, "depth rod", size=15, color=MUTED, anchor="end")
+    return s
+
+
+@fig
+def vernier_reading():
+    s = Svg(720, 360, "Reading vernier calipers: 24.6 mm",
+            "The vernier zero lies just past the 24 mm mark of the main scale, and the sixth vernier mark lines up exactly with a main-scale mark, "
+            "so the reading is 24 mm plus 6 times 0.1 mm, which is 24.6 mm.")
+    k = 26  # px per mm
+    x0 = 50  # main-scale 20 mm
+
+    def mx(mm):
+        return x0 + (mm - 20) * k
+
+    s.rect(30, 70, 660, 60, fill=METAL, stroke=INK, width=2.5, rx=4)
+    for mm in range(20, 45):
+        x = mx(mm)
+        h = 30 if mm % 10 == 0 else (21 if mm % 5 == 0 else 13)
+        s.line(x, 130, x, 130 - h, color=INK, width=2 if mm % 5 == 0 else 1.4)
+        if mm % 10 == 0:
+            s.text(x, 86, f"{mm} mm", size=16, weight="bold")
+    s.text(678, 86, "main scale", size=14, color=MUTED, anchor="end")
+    v0 = mx(24.6)
+    s.rect(v0 - 22, 130, 290, 58, fill=F_BLUE, stroke=INK, width=2.5)
+    for i in range(11):
+        x = v0 + i * 0.9 * k
+        hit = i == 6
+        s.line(x, 130, x, 130 + (24 if i % 5 == 0 else 15), color=RED if hit else BLUE, width=3 if hit else 1.8)
+        if i % 5 == 0:
+            s.text(x, 176, str(i), size=15, color=BLUE, weight="bold")
+    hx = v0 + 6 * 0.9 * k
+    s.line(hx, 98, hx, 130, color=RED, width=3)
+    s.text(v0 + 276, 160, "vernier", size=15, color=BLUE, anchor="start")
+    # callouts
+    s.line(v0, 196, v0, 232, color=INK, width=1.6)
+    s.text(v0 - 4, 250, "vernier zero is just past 24 mm", size=16, anchor="start")
+    s.line(hx, 196, hx + 60, 290, color=RED, width=1.6)
+    s.text(hx + 64, 296, "6th vernier mark lines up", size=16, color=RED, weight="bold", anchor="start")
+    s.text(360, 334, "Reading = 24 mm + 6 × 0.1 mm = 24.6 mm", size=21, weight="bold")
+    s.text(360, 30, "10 vernier divisions = 9 mm, so least count = 0.1 mm", size=17, color=MUTED)
+    return s
+
+
+@fig
+def micrometer():
+    s = Svg(720, 380, "Micrometer screw gauge and its parts",
+            "A micrometer screw gauge: a C-shaped frame holds a fixed anvil facing a moving spindle. The spindle is driven by the thimble, "
+            "which carries the circular scale and turns against the main scale on the sleeve. The ratchet stops over-tightening.")
+    # C-frame
+    s.path("M 70 150 L 128 150 L 128 205 Q 128 262 215 262 Q 296 262 310 212 L 310 160 L 352 160 L 352 222 "
+           "Q 336 314 215 314 Q 70 314 70 210 Z", color=INK, width=2.5, fill=F_GREY)
+    s.rect(128, 158, 46, 34, fill=METAL, stroke=INK, width=2.5)  # anvil
+    s.rect(214, 158, 96, 34, fill=METAL, stroke=INK, width=2.5)  # spindle
+    s.rect(174, 154, 40, 42, fill=F_AMBER, stroke=INK, width=2.5)  # object
+    # sleeve with main scale
+    s.rect(352, 150, 150, 54, fill=METAL, stroke=INK, width=2.5)
+    s.line(352, 177, 502, 177, color=INK, width=2)
+    for i in range(13):
+        x = 362 + i * 11
+        if i % 2 == 0:
+            s.line(x, 177, x, 164, color=INK, width=1.4)
+        else:
+            s.line(x, 177, x, 188, color=INK, width=1.2)
+    # thimble with circular scale
+    s.polygon([(478, 140), (600, 140), (600, 214), (478, 214), (466, 200), (466, 154)], fill=F_BLUE, stroke=INK, width=2.5)
+    for j in range(-4, 5):
+        y = 177 + j * 7
+        s.line(466 if abs(j) < 4 else 468, y, 478 + (10 if j % 5 == 0 else 5), y, color=BLUE, width=1.4)
+    for x in range(520, 600, 12):
+        s.line(x, 144, x, 210, color="#93c5fd", width=2)
+    # ratchet
+    s.rect(600, 158, 64, 38, fill=F_GREY, stroke=INK, width=2.5, rx=5)
+    for x in range(610, 662, 9):
+        s.line(x, 162, x, 192, color=MUTED, width=1.5)
+    # labels
+    s.text(150, 120, "anvil", size=17, weight="bold")
+    s.line(150, 128, 150, 156, color=MUTED, width=1.5)
+    s.text(194, 92, "object", size=17, color=ORANGE, weight="bold")
+    s.line(194, 100, 194, 152, color=MUTED, width=1.5)
+    s.text(262, 120, "spindle", size=17, weight="bold")
+    s.line(262, 128, 262, 156, color=MUTED, width=1.5)
+    s.text(420, 100, "sleeve (main scale)", size=17, weight="bold")
+    s.line(420, 108, 420, 148, color=MUTED, width=1.5)
+    s.text(556, 252, "thimble (circular scale)", size=17, color=BLUE, weight="bold")
+    s.line(540, 238, 540, 216, color=BLUE, width=1.5)
+    s.text(632, 120, "ratchet", size=17, weight="bold")
+    s.line(632, 128, 632, 156, color=MUTED, width=1.5)
+    s.text(215, 346, "frame", size=17, weight="bold")
+    s.text(360, 40, "Turn only the ratchet when closing on the object", size=18, color=MUTED)
+    return s
+
+
+@fig
+def micrometer_reading():
+    s = Svg(720, 380, "Reading a micrometer screw gauge: 5.78 mm",
+            "The sleeve shows 5 mm and the half-millimetre mark after it, so the sleeve reading is 5.5 mm. "
+            "The 28th division of the thimble lies on the datum line, adding 28 times 0.01 mm. The reading is 5.78 mm.")
+    k = 56  # px per mm on the sleeve
+    x0 = 60
+    datum = 170
+    edge = x0 + 5.78 * k
+    s.rect(30, 130, edge - 30 + 40, 80, fill=METAL, stroke=INK, width=2.5)
+    s.line(30, datum, edge, datum, color=INK, width=2.5)
+    for mm in range(0, 6):
+        x = x0 + mm * k
+        s.line(x, datum, x, datum - 26, color=INK, width=2)
+        if mm in (0, 5):
+            s.text(x, datum - 40, str(mm), size=18, weight="bold")
+    for half in range(0, 6):
+        x = x0 + (half + 0.5) * k
+        if x < edge:
+            s.line(x, datum, x, datum + 20, color=INK, width=1.6)
+    s.text(36, 232, "mm marks above the line, half-mm below", size=15, color=MUTED, anchor="start")
+    # thimble
+    s.polygon([(edge, 60), (edge + 210, 60), (edge + 210, 280), (edge, 280)], fill=F_BLUE, stroke=INK, width=2.5)
+    step = 13
+    for v in range(20, 37):
+        y = datum - (v - 28) * step
+        long = v % 5 == 0
+        hit = v == 28
+        s.line(edge, y, edge + (30 if long else 18), y, color=RED if hit else BLUE, width=3 if hit else 1.6)
+        if long:
+            s.text(edge + 38, y, str(v), size=15, color=BLUE, anchor="start", weight="bold")
+    s.text(edge + 196, datum, "28 on the line", size=16, color=RED, weight="bold", anchor="end")
+    s.text(edge + 105, 300, "thimble (50 divisions)", size=15, color=BLUE)
+    # callouts
+    hx = x0 + 5.5 * k
+    s.line(hx, datum + 24, hx - 30, 252, color=INK, width=1.6)
+    s.text(hx - 34, 266, "5.5 mm mark is showing", size=16, anchor="end")
+    s.text(360, 30, "Pitch 0.5 mm ÷ 50 divisions: least count = 0.01 mm", size=17, color=MUTED)
+    s.text(360, 350, "Reading = 5.5 mm + 28 × 0.01 mm = 5.78 mm", size=21, weight="bold")
+    return s
+
+
+@fig
+def displacement_line():
+    s = Svg(720, 330, "Distance and displacement on a straight road",
+            "A student walks 300 m east to a shop and then 100 m west. The distance travelled is 400 m; the displacement is 200 m east.")
+    k = 1.4
+    o = 120
+
+    def X(m):
+        return o + m * k
+
+    y = 250
+    s.arrow(50, y, 690, y, color=INK, width=2.5)
+    for m in range(-0, 401, 100):
+        s.line(X(m), y - 8, X(m), y + 8, color=INK, width=2)
+        s.text(X(m), y + 26, f"{m:+d} m" if m else "0", size=16, color=MUTED)
+    s.text(686, y - 18, "east +", size=16, color=MUTED, anchor="end")
+    s.arrow(X(0), 96, X(300), 96, color=BLUE, width=4)
+    s.text(X(150), 78, "1st: 300 m east", size=18, color=BLUE, weight="bold")
+    s.arrow(X(300), 146, X(200), 146, color=ORANGE, width=4)
+    s.text(X(300) + 12, 146, "2nd: 100 m west", size=18, color=ORANGE, weight="bold", anchor="start")
+    s.arrow(X(0), 200, X(200), 200, color=RED, width=6)
+    s.label(X(100), 180, "displacement = +200 m", size=18, color=RED, weight="bold")
+    for m, name in ((0, "start"), (300, "shop"), (200, "finish")):
+        s.dot(X(m), y, 7, color=INK)
+    s.text(X(0), y - 22, "start", size=15, weight="bold")
+    s.text(X(300), y - 22, "shop", size=15, weight="bold")
+    s.text(X(200), y - 22, "finish", size=15, weight="bold")
+    s.line(X(300), 104, X(300), 140, color=MUTED, width=1.5, dash="5 5")
+    s.text(360, 34, "distance = 300 m + 100 m = 400 m", size=20, weight="bold")
+    return s
+
+
+@fig
+def ticker_tape():
+    s = Svg(720, 380, "Ticker-tape patterns",
+            "Three ticker tapes from a 50 Hz timer. Equal gaps between dots mean constant velocity; gaps that grow mean acceleration; "
+            "gaps that shrink mean deceleration. Each gap is made in 0.02 s.")
+    rows = [
+        ("constant velocity", [40] * 11, BLUE),
+        ("accelerating", [12, 18, 24, 30, 36, 42, 48, 54, 60, 66], GREEN),
+        ("decelerating", [66, 60, 54, 48, 42, 36, 30, 24, 18, 12], RED),
+    ]
+    y = 90
+    for name, gaps, col in rows:
+        s.rect(200, y - 20, 500, 40, fill="#fffdf5", stroke=INK, width=2)
+        x = 220
+        s.dot(x, y, 5, color=INK)
+        for g in gaps:
+            x += g
+            if x > 690:
+                break
+            s.dot(x, y, 5, color=INK)
+        s.text(188, y, name, size=17, color=col, weight="bold", anchor="end")
+        y += 100
+    # bracket on the first tape
+    s.line(220, 126, 220, 138, color=MUTED, width=1.5)
+    s.line(260, 126, 260, 138, color=MUTED, width=1.5)
+    s.line(220, 132, 260, 132, color=MUTED, width=1.5)
+    s.text(270, 136, "one gap = 0.02 s", size=15, color=MUTED, anchor="start")
+    s.text(360, 30, "50 Hz timer: 50 dots every second", size=18, color=MUTED)
+    s.text(460, 236, "gaps grow: speed increasing", size=15, color=GREEN, anchor="middle")
+    s.text(460, 336, "gaps shrink: speed decreasing", size=15, color=RED, anchor="middle")
+    return s
+
+
+@fig
+def st_graphs():
+    s = Svg(720, 300, "Displacement-time graphs",
+            "Three displacement-time graphs: a horizontal line means the body is at rest; a straight sloping line means constant velocity; "
+            "a curve that gets steeper means the velocity is increasing.")
+    panels = [("at rest", BLUE), ("constant velocity", GREEN), ("speeding up", RED)]
+    for i, (name, col) in enumerate(panels):
+        x0, y0 = 50 + i * 230, 230
+        s.axes(x0, y0, x0 + 190, y0 - 170, xlabel="t", ylabel="s", size=18)
+        if i == 0:
+            s.line(x0, y0 - 80, x0 + 170, y0 - 80, color=col, width=4)
+        elif i == 1:
+            s.line(x0, y0, x0 + 165, y0 - 140, color=col, width=4)
+        else:
+            pts = [(x0 + t, y0 - 140 * (t / 165) ** 2) for t in range(0, 166, 5)]
+            s.polyline(pts, color=col, width=4)
+        s.text(x0 + 95, 268, name, size=18, color=col, weight="bold")
+    s.text(360, 26, "gradient of s–t graph = velocity", size=18, color=MUTED)
+    return s
+
+
+@fig
+def vt_area():
+    s = Svg(680, 430, "Displacement from the area under a velocity-time graph",
+            "A body accelerates uniformly from rest to 12 m/s in 4 s, then moves at 12 m/s for 3 s. "
+            "The area of the triangle is 24 m and the area of the rectangle is 36 m, so the displacement is 60 m.")
+    x0, y0 = 90, 352
+    kx, ky = 62, 18
+
+    def P(t, v):
+        return x0 + t * kx, y0 - v * ky
+
+    s.polygon([P(0, 0), P(4, 12), P(4, 0)], fill=F_BLUE, stroke="none", width=0)
+    s.polygon([P(4, 0), P(4, 12), P(7, 12), P(7, 0)], fill=F_GREEN, stroke="none", width=0)
+    s.axes(x0, y0, x0 + 8.4 * kx, y0 - 15 * ky, xlabel="t / s", ylabel="v / m s⁻¹", size=18)
+    s.polyline([P(0, 0), P(4, 12), P(7, 12)], color=INK, width=4)
+    s.line(*P(4, 12), *P(4, 0), color=MUTED, width=2, dash="6 5")
+    s.line(*P(7, 12), *P(7, 0), color=MUTED, width=2, dash="6 5")
+    s.line(*P(0, 12), *P(4, 12), color=MUTED, width=1.5, dash="4 5")
+    for t in (4, 7):
+        s.text(P(t, 0)[0], y0 + 22, str(t), size=17)
+    s.text(x0 - 16, P(0, 12)[1], "12", size=17, anchor="end")
+    s.text(*P(2.9, 3.6), "½ × 4 × 12", size=16, color=BLUE, weight="bold")
+    s.text(*P(2.9, 1.6), "= 24 m", size=16, color=BLUE, weight="bold")
+    s.text(*P(5.5, 7), "3 × 12", size=17, color=GREEN, weight="bold")
+    s.text(*P(5.5, 5), "= 36 m", size=17, color=GREEN, weight="bold")
+    s.text(340, 34, "displacement = area under graph = 24 m + 36 m = 60 m", size=19, weight="bold")
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:
