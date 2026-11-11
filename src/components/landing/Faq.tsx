@@ -11,7 +11,8 @@ const FAQ: [question: string, answer: string][] = [
   ['Are these real WAEC past papers?', 'No. Practice sets are original WASSCE-style questions written by WASSCE Tutor to match the syllabus and the exam format, each with the full working. We do not copy WAEC papers.'],
   ['How do I pay?', 'Choose a plan, complete the Monime USSD payment on your phone, and your access activates automatically after payment verification. Plans do not renew automatically.'],
   ['Does it work on my phone?', 'Yes. WASSCE Tutor works in any phone browser and is built for patchy data. An Android app is coming soon.'],
-  ['Who writes the lessons?', 'Lessons follow the WASSCE syllabus. Every lesson published openly on this website is checked by a named reviewer, whose name appears on the lesson.'],
+  // Reviews are optional and recorded per lesson, so this answer makes no claim about how many lessons are reviewed.
+  ['Who writes the lessons?', 'Lessons are prepared by WASSCE Tutor to follow the WASSCE syllabus. Where a lesson has been checked by a reviewer, the reviewer’s name appears on that lesson.'],
   ['Is this the official WAEC website?', 'No. WASSCE Tutor is an independent study platform built in Sierra Leone. For registration, timetables and results, always use official WAEC channels.'],
 ]
 
