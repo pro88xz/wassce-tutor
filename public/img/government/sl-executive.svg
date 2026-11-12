@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The executive in Sierra Leone</title>
+<desc id="d">The President is head of state, head of government and commander-in-chief, elected for five years and limited to two terms. The Vice-President is elected on the same ticket. Ministers are appointed by the President with the approval of Parliament and together form the Cabinet; ministries are run by the civil service. The President&#x27;s power is limited by the Constitution, Parliament, the courts, elections and the media.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The executive arm in Sierra Leone</text>
+<rect x="220.0" y="68.0" width="360.0" height="84.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="87.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">President</text>
+<text x="400.0" y="110.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">head of state and government,</text>
+<text x="400.0" y="133.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">commander-in-chief</text>
+<rect x="40.0" y="190.0" width="220.0" height="60.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="150.0" y="210.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Vice-President</text>
+<text x="150.0" y="230.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">elected on the same ticket</text>
+<rect x="280.0" y="195.0" width="240.0" height="70.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="209.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cabinet</text>
+<text x="400.0" y="230.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ministers approved</text>
+<text x="400.0" y="251.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">by Parliament</text>
+<rect x="250.0" y="315.0" width="300.0" height="60.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="345.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ministries and the civil service</text>
+<line x1="400.0" y1="158.0" x2="150.0" y2="184.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="400.0" y1="158.0" x2="400.0" y2="189.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="400.0" y1="271.0" x2="400.0" y2="309.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<text x="660.0" y="210.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Limits on power</text>
+<text x="660.0" y="240.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the Constitution</text>
+<text x="660.0" y="264.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Parliament</text>
+<text x="660.0" y="288.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the courts</text>
+<text x="660.0" y="312.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">elections, two terms</text>
+<text x="660.0" y="336.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the media, public opinion</text>
+<text x="400.0" y="450.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Five-year term, at most two terms; 55% of valid votes needed to win in round one.</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">How a bill becomes law in Sierra Leone</title>
+<desc id="d">A bill is drafted and published in the Gazette, then goes through the first reading (title read), second reading (debate on its principles), committee stage (clause by clause), report stage and third reading (final vote). It then goes to the President for assent; if the President refuses, the bill is returned to Parliament within 14 days with reasons. Once signed it becomes an Act.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="520" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">From bill to Act of Parliament</text>
+<rect x="50.0" y="77.0" width="320.0" height="66.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="210.0" y="99.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. Drafting and gazetting</text>
+<text x="210.0" y="120.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">bill published for the public</text>
+<line x1="210.0" y1="144.0" x2="210.0" y2="174.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="50.0" y="177.0" width="320.0" height="66.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="210.0" y="199.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2. First reading</text>
+<text x="210.0" y="220.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">title read; no debate</text>
+<line x1="210.0" y1="244.0" x2="210.0" y2="274.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="50.0" y="277.0" width="320.0" height="66.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="210.0" y="299.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3. Second reading</text>
+<text x="210.0" y="320.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">debate on the main principles</text>
+<line x1="210.0" y1="344.0" x2="210.0" y2="374.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="50.0" y="377.0" width="320.0" height="66.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="210.0" y="399.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4. Committee stage</text>
+<text x="210.0" y="420.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">examined clause by clause</text>
+<rect x="430.0" y="77.0" width="320.0" height="66.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="590.0" y="99.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5. Report stage</text>
+<text x="590.0" y="120.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">amendments reported to the House</text>
+<line x1="590.0" y1="144.0" x2="590.0" y2="174.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="430.0" y="177.0" width="320.0" height="66.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="590.0" y="199.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6. Third reading</text>
+<text x="590.0" y="220.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">final debate and vote</text>
+<line x1="590.0" y1="244.0" x2="590.0" y2="274.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="430.0" y="277.0" width="320.0" height="66.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="590.0" y="299.5" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7. Presidential assent</text>
+<text x="590.0" y="320.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">signed, or returned within 14 days</text>
+<line x1="590.0" y1="344.0" x2="590.0" y2="374.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="430.0" y="377.0" width="320.0" height="66.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="590.0" y="399.5" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">8. Act of Parliament</text>
+<text x="590.0" y="420.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">now law; published</text>
+<path d="M 370 410 C 400 410, 400 110, 412 110" stroke="#475569" stroke-width="2.6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="408.0" y1="110.0" x2="428.0" y2="110.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="400.0" y="498.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Bills to change the Constitution need two-thirds of all MPs (some also need a referendum).</text>
+</svg>

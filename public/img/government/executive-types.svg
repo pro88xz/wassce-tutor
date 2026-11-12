@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Kinds of executive</title>
+<desc id="d">The executive can be classified as nominal (ceremonial head of state, such as a constitutional monarch) or real (the head who holds power, such as Sierra Leone&#x27;s President); single (one person heads state and government) or plural (power shared by a council); and political (elected or appointed leaders who change) or permanent (the civil service, which stays).</desc>
+<defs></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Three ways to classify the executive</text>
+<rect x="10.0" y="100.0" width="240.0" height="130.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="130.0" y="144.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Nominal</text>
+<text x="130.0" y="165.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ceremonial head of state</text>
+<text x="130.0" y="186.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. a constitutional monarch</text>
+<text x="130.0" y="255.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">versus</text>
+<rect x="10.0" y="280.0" width="240.0" height="130.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="130.0" y="324.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Real</text>
+<text x="130.0" y="345.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">holds actual power</text>
+<text x="130.0" y="366.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. the President of Sierra Leone</text>
+<rect x="280.0" y="100.0" width="240.0" height="130.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="144.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Single</text>
+<text x="400.0" y="165.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">one person heads state and government</text>
+<text x="400.0" y="186.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. presidential systems</text>
+<text x="400.0" y="255.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">versus</text>
+<rect x="280.0" y="280.0" width="240.0" height="130.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="400.0" y="324.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Plural (collegial)</text>
+<text x="400.0" y="345.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">a council shares power</text>
+<text x="400.0" y="366.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. Switzerland&#x27;s Federal Council</text>
+<rect x="550.0" y="100.0" width="240.0" height="130.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="670.0" y="144.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Political</text>
+<text x="670.0" y="165.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">elected or appointed leaders</text>
+<text x="670.0" y="186.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">change with elections</text>
+<text x="670.0" y="255.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">versus</text>
+<rect x="550.0" y="280.0" width="240.0" height="130.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="670.0" y="324.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Permanent</text>
+<text x="670.0" y="345.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the civil service</text>
+<text x="670.0" y="366.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">stays when governments change</text>
+</svg>

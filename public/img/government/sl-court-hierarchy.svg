@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The courts of Sierra Leone</title>
+<desc id="d">The Supreme Court, headed by the Chief Justice, is the highest court and final court of appeal, with original jurisdiction in constitutional matters. Below it are the Court of Appeal and the High Court; these three are the superior courts of judicature. Below them are the Magistrate Courts and the Local Courts, which apply customary law. Appeals move upward.</desc>
+<defs><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="800" height="520" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Appeals move up the ladder</text>
+<rect x="250.0" y="67.0" width="360.0" height="74.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="430.0" y="83.0" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Supreme Court</text>
+<text x="430.0" y="104.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Chief Justice; final appeals;</text>
+<text x="430.0" y="125.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">interprets the Constitution</text>
+<rect x="230.0" y="155.0" width="400.0" height="74.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="430.0" y="171.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Court of Appeal</text>
+<text x="430.0" y="192.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">hears appeals from</text>
+<text x="430.0" y="213.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the High Court</text>
+<rect x="210.0" y="243.0" width="440.0" height="74.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="430.0" y="259.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">High Court</text>
+<text x="430.0" y="280.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">serious criminal and civil cases;</text>
+<text x="430.0" y="301.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">appeals from lower courts</text>
+<rect x="190.0" y="331.0" width="480.0" height="74.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="430.0" y="347.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Magistrate Courts</text>
+<text x="430.0" y="368.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">less serious criminal</text>
+<text x="430.0" y="389.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">and civil cases</text>
+<rect x="170.0" y="419.0" width="520.0" height="74.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="430.0" y="435.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Local Courts</text>
+<text x="430.0" y="456.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">customary law</text>
+<text x="430.0" y="477.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">in the chiefdoms</text>
+<line x1="740.0" y1="470.0" x2="740.0" y2="80.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<rect x="705.6" y="262.5" width="68.8" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="740.0" y="275.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">appeals</text>
+<line x1="40.0" y1="70.0" x2="40.0" y2="314.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<text x="52.0" y="184.0" font-size="15" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">superior</text>
+<text x="52.0" y="204.0" font-size="15" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">courts</text>
+<line x1="40.0" y1="330.0" x2="40.0" y2="490.0" stroke="#15803d" stroke-width="3" stroke-linecap="round"/>
+<text x="52.0" y="404.0" font-size="15" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">lower</text>
+<text x="52.0" y="424.0" font-size="15" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">courts</text>
+</svg>

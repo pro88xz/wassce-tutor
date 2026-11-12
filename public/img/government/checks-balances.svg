@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Checks and balances among the three organs</title>
+<desc id="d">Each organ checks the others. The legislature makes laws, approves the budget and appointments, and can impeach the President. The executive can refuse assent to bills and appoints judges. The judiciary can declare laws and executive actions unconstitutional. Judges are appointed by the President but need Parliament&#x27;s approval.</desc>
+<defs></defs>
+<rect width="800" height="520" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Each arm checks the other two</text>
+<rect x="280.0" y="75.0" width="240.0" height="70.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="98.5" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Executive</text>
+<text x="400.0" y="121.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">President and ministers</text>
+<rect x="20.0" y="365.0" width="240.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="140.0" y="388.5" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Legislature</text>
+<text x="140.0" y="411.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Parliament</text>
+<rect x="540.0" y="365.0" width="240.0" height="70.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="660.0" y="388.5" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Judiciary</text>
+<text x="660.0" y="411.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the courts</text>
+<line x1="300.0" y1="150.0" x2="175.0" y2="360.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="500.0" y1="150.0" x2="625.0" y2="360.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="265.0" y1="400.0" x2="535.0" y2="400.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="66.7" y="233.5" width="206.6" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="170.0" y="245.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">approves budget, ministers;</text>
+<rect x="88.6" y="253.5" width="162.9" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="170.0" y="265.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">can impeach President</text>
+<rect x="254.0" y="288.5" width="111.9" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="310.0" y="300.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">refuses assent</text>
+<rect x="275.9" y="308.5" width="68.2" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="310.0" y="320.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">to bills</text>
+<rect x="570.4" y="233.5" width="119.2" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="630.0" y="245.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">appoints judges</text>
+<rect x="548.6" y="253.5" width="162.9" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="630.0" y="265.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(Parliament approves)</text>
+<rect x="436.8" y="298.5" width="126.5" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="500.0" y="310.0" font-size="13" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">declares actions</text>
+<rect x="436.8" y="318.5" width="126.5" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="500.0" y="330.0" font-size="13" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">unconstitutional</text>
+<rect x="285.8" y="368.5" width="228.4" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="400.0" y="380.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">approves judicial appointments</text>
+<rect x="285.8" y="413.5" width="228.4" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="400.0" y="425.0" font-size="13" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">reviews laws (judicial review)</text>
+<text x="400.0" y="498.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Separation of powers divides the work; checks and balances stop any arm abusing it.</text>
+</svg>

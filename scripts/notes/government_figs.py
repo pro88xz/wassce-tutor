@@ -300,6 +300,273 @@ def aristotle_classification():
     return s
 
 
+# ═══ Group 2: organs and institutions ════════════════════════════════════════
+
+@fig
+def executive_types():
+    s = Svg(800, 470, "Kinds of executive",
+            "The executive can be classified as nominal (ceremonial head of state, such as a constitutional monarch) or "
+            "real (the head who holds power, such as Sierra Leone's President); single (one person heads state and "
+            "government) or plural (power shared by a council); and political (elected or appointed leaders who change) or "
+            "permanent (the civil service, which stays).")
+    heading(s, "Three ways to classify the executive")
+    pairs = [(130, "Nominal", "ceremonial head of state", "e.g. a constitutional monarch", "Real", "holds actual power", "e.g. the President of Sierra Leone"),
+             (400, "Single", "one person heads state and government", "e.g. presidential systems", "Plural (collegial)", "a council shares power", "e.g. Switzerland's Federal Council"),
+             (670, "Political", "elected or appointed leaders", "change with elections", "Permanent", "the civil service", "stays when governments change")]
+    for x, a1, a2, a3, b1, b2, b3 in pairs:
+        box(s, x, 165, 240, 130, [a1, a2, a3], col=BLUE, fill=F_BLUE, size=15)
+        s.text(x, 255, "versus", size=15, color=MUTED, weight="bold")
+        box(s, x, 345, 240, 130, [b1, b2, b3], col=ORANGE, fill=F_AMBER, size=15)
+    return s
+
+
+@fig
+def sl_executive():
+    s = Svg(800, 500, "The executive in Sierra Leone",
+            "The President is head of state, head of government and commander-in-chief, elected for five years and limited "
+            "to two terms. The Vice-President is elected on the same ticket. Ministers are appointed by the President with "
+            "the approval of Parliament and together form the Cabinet; ministries are run by the civil service. The "
+            "President's power is limited by the Constitution, Parliament, the courts, elections and the media.")
+    heading(s, "The executive arm in Sierra Leone")
+    pr = box(s, 400, 110, 360, 84, ["President", "head of state and government,", "commander-in-chief"], col=BLUE, fill=F_BLUE, size=17)
+    vp = box(s, 150, 220, 220, 60, ["Vice-President", "elected on the same ticket"], col=BLUE, fill="#ffffff", size=14)
+    cb = box(s, 400, 230, 240, 70, ["Cabinet", "ministers approved", "by Parliament"], col=BLUE, fill=F_BLUE, size=15)
+    ms = box(s, 400, 345, 300, 60, ["Ministries and the civil service"], col=GREEN, fill=F_GREEN, size=16)
+    link(s, pr, vp, color=BLUE)
+    link(s, pr, cb, color=BLUE)
+    link(s, cb, ms, color=GREEN)
+    s.text(660, 210, "Limits on power", size=16, weight="bold", color=RED)
+    for k, t in enumerate(["the Constitution", "Parliament", "the courts", "elections, two terms", "the media, public opinion"]):
+        s.text(660, 240 + k * 24, t, size=15, color=RED)
+    note(s, "Five-year term, at most two terms; 55% of valid votes needed to win in round one.", 450, size=15)
+    return s
+
+
+@fig
+def unicameral_bicameral():
+    s = Svg(800, 420, "Unicameral and bicameral legislatures",
+            "A unicameral legislature has one chamber, as in Sierra Leone and Ghana. A bicameral legislature has two "
+            "chambers: an upper house (such as the Senate in Nigeria and the USA, or the House of Lords in Britain) and a "
+            "lower house (the House of Representatives or the House of Commons).")
+    heading(s, "One chamber or two?")
+    for cx, name, col in ((200, "Unicameral", GREEN), (600, "Bicameral", BLUE)):
+        s.rect(cx - 180, 56, 360, 330, fill="#ffffff", stroke=col, width=2, rx=14)
+        s.text(cx, 84, name, size=20, weight="bold", color=col)
+    box(s, 200, 200, 260, 110, ["Parliament", "one chamber makes", "all the laws"], col=GREEN, fill=F_GREEN, size=17)
+    s.text(200, 300, "Sierra Leone, Ghana,", size=15, weight="bold", color=INK)
+    s.text(200, 322, "The Gambia", size=15, weight="bold", color=INK)
+    up = box(s, 600, 150, 270, 66, ["Upper house", "Senate / House of Lords"], col=BLUE, fill=F_BLUE, size=15)
+    lo = box(s, 600, 255, 270, 66, ["Lower house", "Representatives / Commons"], col=BLUE, fill=F_BLUE, size=15)
+    s.line(600, 184, 600, 222, color=BLUE, width=2.6)
+    s.text(612, 205, "both must pass a bill", size=13, color=MUTED, anchor="start")
+    s.text(600, 322, "Nigeria, Liberia,", size=15, weight="bold", color=INK)
+    s.text(600, 344, "USA, Britain", size=15, weight="bold", color=INK)
+    return s
+
+
+@fig
+def bill_to_law():
+    s = Svg(800, 520, "How a bill becomes law in Sierra Leone",
+            "A bill is drafted and published in the Gazette, then goes through the first reading (title read), second "
+            "reading (debate on its principles), committee stage (clause by clause), report stage and third reading (final "
+            "vote). It then goes to the President for assent; if the President refuses, the bill is returned to Parliament "
+            "within 14 days with reasons. Once signed it becomes an Act.")
+    heading(s, "From bill to Act of Parliament")
+    steps = [("Drafting and gazetting", "bill published for the public"), ("First reading", "title read; no debate"),
+             ("Second reading", "debate on the main principles"), ("Committee stage", "examined clause by clause"),
+             ("Report stage", "amendments reported to the House"), ("Third reading", "final debate and vote"),
+             ("Presidential assent", "signed, or returned within 14 days"), ("Act of Parliament", "now law; published")]
+    for k, (a, b) in enumerate(steps):
+        col = PURPLE if k == len(steps) - 1 else BLUE if k < 6 else ORANGE
+        fill = F_PURPLE if k == len(steps) - 1 else F_BLUE if k < 6 else F_AMBER
+        x = 210 if k < 4 else 590
+        y = 110 + (k % 4) * 100
+        b_ = box(s, x, y, 320, 66, [f"{k + 1}. {a}", b], col=col, fill=fill, size=15)
+        if k % 4 != 3:
+            arrow(s, x, y + 34, x, y + 64, color=MUTED)
+    s.path("M 370 410 C 400 410, 400 110, 412 110", color=MUTED, width=2.6)
+    arrow(s, 408, 110, 428, 110, color=MUTED)
+    note(s, "Bills to change the Constitution need two-thirds of all MPs (some also need a referendum).", 498, size=14)
+    return s
+
+
+@fig
+def judicial_independence():
+    s = Svg(800, 450, "Safeguards of judicial independence",
+            "Judges are independent when they are appointed on merit through the Judicial and Legal Service Commission with "
+            "Parliament's approval, have security of tenure until retirement at 65, can be removed only for proven "
+            "misconduct or incapacity by a special procedure, are paid salaries that cannot be reduced and are charged on "
+            "the Consolidated Fund, have immunity for judicial acts, and stay out of party politics.")
+    heading(s, "What keeps judges independent?")
+    c = box(s, 400, 235, 220, 70, ["Independent", "judiciary"], col=PURPLE, fill=F_PURPLE, size=19)
+    items = [(150, 110, "Appointment on merit", "advice of the JLSC,", "approved by Parliament"),
+             (650, 110, "Security of tenure", "serve until 65;", "hard to remove"),
+             (130, 235, "Removal only for cause", "proven misconduct or", "incapacity, by tribunal"),
+             (670, 235, "Protected salaries", "cannot be reduced;", "Consolidated Fund"),
+             (150, 360, "Judicial immunity", "not sued for", "judicial decisions"),
+             (650, 360, "No party politics", "judges stay neutral", "and impartial")]
+    for x, y, a, b, c2 in items:
+        b_ = box(s, x, y, 230, 84, [a, b, c2], col=TEAL, fill=F_TEAL, size=15)
+        link(s, b_, c, color=MUTED)
+    return s
+
+
+@fig
+def sl_court_hierarchy():
+    s = Svg(800, 520, "The courts of Sierra Leone",
+            "The Supreme Court, headed by the Chief Justice, is the highest court and final court of appeal, with original "
+            "jurisdiction in constitutional matters. Below it are the Court of Appeal and the High Court; these three are "
+            "the superior courts of judicature. Below them are the Magistrate Courts and the Local Courts, which apply "
+            "customary law. Appeals move upward.")
+    heading(s, "Appeals move up the ladder")
+    tiers = [("Supreme Court", "Chief Justice; final appeals;", "interprets the Constitution", 360, PURPLE, F_PURPLE),
+             ("Court of Appeal", "hears appeals from", "the High Court", 400, BLUE, F_BLUE),
+             ("High Court", "serious criminal and civil cases;", "appeals from lower courts", 440, BLUE, F_BLUE),
+             ("Magistrate Courts", "less serious criminal", "and civil cases", 480, GREEN, F_GREEN),
+             ("Local Courts", "customary law", "in the chiefdoms", 520, ORANGE, F_AMBER)]
+    cx = 430
+    for k, (name, d1, d2, w, col, fill) in enumerate(tiers):
+        y = 104 + k * 88
+        box(s, cx, y, w, 74, [name, d1, d2], col=col, fill=fill, size=15)
+    arrow(s, 740, 470, 740, 80, color=RED, width=3)
+    s.label(740, 275, "appeals", size=15, color=RED, weight="bold")
+    s.line(40, 70, 40, 314, color=BLUE, width=3)
+    s.text(52, 184, "superior", size=15, weight="bold", color=BLUE, anchor="start")
+    s.text(52, 204, "courts", size=15, weight="bold", color=BLUE, anchor="start")
+    s.line(40, 330, 40, 490, color=GREEN, width=3)
+    s.text(52, 404, "lower", size=15, weight="bold", color=GREEN, anchor="start")
+    s.text(52, 424, "courts", size=15, weight="bold", color=GREEN, anchor="start")
+    return s
+
+
+@fig
+def rule_of_law_dicey():
+    s = Svg(800, 400, "A. V. Dicey's three principles of the rule of law",
+            "The British jurist A. V. Dicey (1885) set out three principles: supremacy of the law (no one is punished "
+            "except for a breach of law proved in court; no arbitrary power), equality before the law (everyone, including "
+            "officials, is subject to the same law and courts), and rights secured by the courts (fundamental rights are "
+            "protected by the ordinary courts and the constitution).")
+    heading(s, "The rule of law: Dicey's three principles")
+    pillars = [(150, "Supremacy of the law", ["no punishment except", "for a breach of law", "proved in court"], BLUE, F_BLUE),
+               (400, "Equality before the law", ["leaders and citizens", "obey the same laws", "and courts"], GREEN, F_GREEN),
+               (650, "Rights protected by courts", ["courts and the", "constitution protect", "individual liberty"], ORANGE, F_AMBER)]
+    s.rect(60, 70, 680, 40, fill=F_PURPLE, stroke=PURPLE, width=2.5, rx=8)
+    s.text(400, 90, "THE RULE OF LAW", size=19, weight="bold", color=PURPLE)
+    for x, head, lines, col, fill in pillars:
+        box(s, x, 230, 220, 190, [head] + lines, col=col, fill=fill, size=16)
+    s.rect(60, 340, 680, 20, fill=F_GREY, stroke=MUTED, width=1.5, rx=4)
+    note(s, "A. V. Dicey, Introduction to the Study of the Law of the Constitution (1885)", 384, size=14)
+    return s
+
+
+@fig
+def checks_balances():
+    s = Svg(800, 520, "Checks and balances among the three organs",
+            "Each organ checks the others. The legislature makes laws, approves the budget and appointments, and can "
+            "impeach the President. The executive can refuse assent to bills and appoints judges. The judiciary can declare "
+            "laws and executive actions unconstitutional. Judges are appointed by the President but need Parliament's "
+            "approval.")
+    heading(s, "Each arm checks the other two")
+    ex = box(s, 400, 110, 240, 70, ["Executive", "President and ministers"], col=BLUE, fill=F_BLUE, size=17)
+    lg = box(s, 140, 400, 240, 70, ["Legislature", "Parliament"], col=GREEN, fill=F_GREEN, size=17)
+    jd = box(s, 660, 400, 240, 70, ["Judiciary", "the courts"], col=ORANGE, fill=F_AMBER, size=17)
+    s.line(300, 150, 175, 360, color=MUTED, width=2.2)
+    s.line(500, 150, 625, 360, color=MUTED, width=2.2)
+    s.line(265, 400, 535, 400, color=MUTED, width=2.2)
+    s.label(170, 245, "approves budget, ministers;", size=13, color=GREEN)
+    s.label(170, 265, "can impeach President", size=13, color=GREEN)
+    s.label(310, 300, "refuses assent", size=13, color=BLUE)
+    s.label(310, 320, "to bills", size=13, color=BLUE)
+    s.label(630, 245, "appoints judges", size=13, color=BLUE)
+    s.label(630, 265, "(Parliament approves)", size=13, color=BLUE)
+    s.label(500, 310, "declares actions", size=13, color=ORANGE)
+    s.label(500, 330, "unconstitutional", size=13, color=ORANGE)
+    s.label(400, 380, "approves judicial appointments", size=13, color=GREEN)
+    s.label(400, 425, "reviews laws (judicial review)", size=13, color=ORANGE)
+    note(s, "Separation of powers divides the work; checks and balances stop any arm abusing it.", 498, size=14)
+    return s
+
+
+@fig
+def rights_categories():
+    s = Svg(800, 440, "Categories of human rights",
+            "Civil and political rights (first generation): life, liberty, fair hearing, freedom of speech, religion, "
+            "association and movement, the right to vote. Economic, social and cultural rights (second generation): work, "
+            "education, health, an adequate standard of living. Collective or solidarity rights (third generation): "
+            "development, peace, a healthy environment, self-determination.")
+    heading(s, "Three generations of human rights")
+    cols = [(140, "Civil and political", "1st generation", ["life and liberty", "fair hearing", "speech, religion,", "association, vote"], BLUE, F_BLUE),
+            (400, "Economic, social, cultural", "2nd generation", ["work and fair pay", "education", "health care", "decent living"], GREEN, F_GREEN),
+            (660, "Collective (solidarity)", "3rd generation", ["development", "peace", "clean environment", "self-determination"], ORANGE, F_AMBER)]
+    for x, head, gen, items, col, fill in cols:
+        box(s, x, 230, 230, 260, [head, gen] + items, col=col, fill=fill, size=16)
+    note(s, "In Sierra Leone, Chapter III of the 1991 Constitution protects civil and political rights.", 420, size=14)
+    return s
+
+
+@fig
+def citizenship_modes():
+    s = Svg(800, 440, "How citizenship is acquired and lost",
+            "Citizenship can be acquired by birth, by descent from a citizen parent, by registration (for example through "
+            "marriage to a citizen), by naturalisation after lawful residence and good conduct, or as an honour. It can be "
+            "lost by renunciation or by deprivation (for example for fraud in obtaining it).")
+    heading(s, "Becoming, and ceasing to be, a citizen")
+    c = box(s, 400, 220, 200, 70, ["CITIZEN"], col=PURPLE, fill=F_PURPLE, size=22)
+    ways = [(130, 110, "By birth", ["born in the state"]), (400, 95, "By descent", ["a parent is a citizen"]),
+            (670, 110, "By registration", ["e.g. through marriage"]), (150, 330, "By naturalisation", ["long lawful residence,", "good conduct, oath"]),
+            (650, 330, "Honorary", ["granted as an honour"])]
+    for x, y, head, lines in ways:
+        b = box(s, x, y, 220, 70 if len(lines) == 1 else 84, [head] + lines, col=GREEN, fill=F_GREEN, size=15)
+        link(s, b, c, color=GREEN)
+    lost = box(s, 400, 370, 260, 70, ["Lost by", "renunciation or deprivation"], col=RED, fill=F_RED, size=15)
+    link(s, c, lost, color=RED)
+    return s
+
+
+@fig
+def constitution_sources_types():
+    s = Svg(800, 500, "Sources and types of constitutions",
+            "Sources of a constitution: constitutional conferences and constituent assemblies, statutes (acts of the "
+            "legislature), judicial precedents, conventions, historical documents, customs and traditions, and the works of "
+            "constitutional experts. Types: written or unwritten, rigid or flexible, unitary or federal, presidential or "
+            "parliamentary, monarchical or republican.")
+    heading(s, "Where constitutions come from, and their types")
+    s.text(200, 76, "Sources", size=18, weight="bold", color=BLUE)
+    srcs = ["Constitutional conferences", "Statutes (Acts of Parliament)", "Judicial precedents", "Conventions",
+            "Historical documents", "Customs and traditions", "Works of experts"]
+    for k, t in enumerate(srcs):
+        box(s, 200, 116 + k * 52, 300, 42, [t], col=BLUE, fill=F_BLUE, size=15, bold_first=False)
+    s.text(600, 76, "Types", size=18, weight="bold", color=ORANGE)
+    pairs = [("Written", "Unwritten"), ("Rigid", "Flexible"), ("Unitary", "Federal"), ("Presidential", "Parliamentary"),
+             ("Republican", "Monarchical")]
+    for k, (a, b) in enumerate(pairs):
+        y = 116 + k * 66
+        box(s, 540, y, 130, 46, [a], col=ORANGE, fill=F_AMBER, size=15)
+        box(s, 680, y, 130, 46, [b], col=ORANGE, fill="#ffffff", size=15)
+    note(s, "Sierra Leone's 1991 Constitution: written, rigid, unitary, presidential and republican.", 482, size=14)
+    return s
+
+
+@fig
+def amendment_process():
+    s = Svg(800, 470, "Amending Sierra Leone's 1991 Constitution",
+            "A bill to alter the Constitution must be supported by at least two-thirds of all Members of Parliament at its "
+            "second and third readings. For the entrenched provisions, it must also be approved at a referendum in which at "
+            "least half of the registered voters vote in favour and at least two-thirds of the valid votes cast support it. "
+            "It then goes to the President for assent.")
+    heading(s, "A rigid constitution: two hurdles, sometimes three")
+    b1 = box(s, 400, 100, 420, 60, ["Bill to alter the Constitution", "published and introduced in Parliament"], col=INK, fill=F_GREY, size=15)
+    b2 = box(s, 400, 200, 420, 66, ["Parliament: at least two-thirds of all MPs", "at the second and third readings"], col=BLUE, fill=F_BLUE, size=15)
+    b3 = box(s, 560, 310, 360, 84, ["Entrenched provisions only:", "referendum: half of registered voters", "and two-thirds of valid votes in favour"], col=ORANGE, fill=F_AMBER, size=14)
+    b4 = box(s, 220, 410, 300, 60, ["Presidential assent", "the amendment becomes law"], col=GREEN, fill=F_GREEN, size=15)
+    link(s, b1, b2, color=MUTED)
+    link(s, b2, b3, color=ORANGE)
+    arrow(s, 300, 234, 230, 378, color=MUTED)
+    s.label(225, 300, "other provisions", size=13, color=MUTED)
+    arrow(s, 470, 352, 370, 410, color=ORANGE)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Categories of human rights</title>
+<desc id="d">Civil and political rights (first generation): life, liberty, fair hearing, freedom of speech, religion, association and movement, the right to vote. Economic, social and cultural rights (second generation): work, education, health, an adequate standard of living. Collective or solidarity rights (third generation): development, peace, a healthy environment, self-determination.</desc>
+<defs></defs>
+<rect width="800" height="440" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Three generations of human rights</text>
+<rect x="25.0" y="100.0" width="230.0" height="260.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="140.0" y="175.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Civil and political</text>
+<text x="140.0" y="197.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1st generation</text>
+<text x="140.0" y="219.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">life and liberty</text>
+<text x="140.0" y="241.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">fair hearing</text>
+<text x="140.0" y="263.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">speech, religion,</text>
+<text x="140.0" y="285.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">association, vote</text>
+<rect x="285.0" y="100.0" width="230.0" height="260.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="175.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Economic, social, cultural</text>
+<text x="400.0" y="197.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2nd generation</text>
+<text x="400.0" y="219.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">work and fair pay</text>
+<text x="400.0" y="241.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">education</text>
+<text x="400.0" y="263.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">health care</text>
+<text x="400.0" y="285.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">decent living</text>
+<rect x="545.0" y="100.0" width="230.0" height="260.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="660.0" y="175.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Collective (solidarity)</text>
+<text x="660.0" y="197.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">3rd generation</text>
+<text x="660.0" y="219.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">development</text>
+<text x="660.0" y="241.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">peace</text>
+<text x="660.0" y="263.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">clean environment</text>
+<text x="660.0" y="285.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">self-determination</text>
+<text x="400.0" y="420.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">In Sierra Leone, Chapter III of the 1991 Constitution protects civil and political rights.</text>
+</svg>

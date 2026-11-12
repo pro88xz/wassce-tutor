@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Sources and types of constitutions</title>
+<desc id="d">Sources of a constitution: constitutional conferences and constituent assemblies, statutes (acts of the legislature), judicial precedents, conventions, historical documents, customs and traditions, and the works of constitutional experts. Types: written or unwritten, rigid or flexible, unitary or federal, presidential or parliamentary, monarchical or republican.</desc>
+<defs></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Where constitutions come from, and their types</text>
+<text x="200.0" y="76.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sources</text>
+<rect x="50.0" y="95.0" width="300.0" height="42.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="200.0" y="116.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Constitutional conferences</text>
+<rect x="50.0" y="147.0" width="300.0" height="42.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="200.0" y="168.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Statutes (Acts of Parliament)</text>
+<rect x="50.0" y="199.0" width="300.0" height="42.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="200.0" y="220.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Judicial precedents</text>
+<rect x="50.0" y="251.0" width="300.0" height="42.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="200.0" y="272.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Conventions</text>
+<rect x="50.0" y="303.0" width="300.0" height="42.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="200.0" y="324.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Historical documents</text>
+<rect x="50.0" y="355.0" width="300.0" height="42.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="200.0" y="376.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Customs and traditions</text>
+<rect x="50.0" y="407.0" width="300.0" height="42.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="200.0" y="428.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Works of experts</text>
+<text x="600.0" y="76.0" font-size="18" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Types</text>
+<rect x="475.0" y="93.0" width="130.0" height="46.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="540.0" y="116.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Written</text>
+<rect x="615.0" y="93.0" width="130.0" height="46.0" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="680.0" y="116.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Unwritten</text>
+<rect x="475.0" y="159.0" width="130.0" height="46.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="540.0" y="182.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Rigid</text>
+<rect x="615.0" y="159.0" width="130.0" height="46.0" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="680.0" y="182.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Flexible</text>
+<rect x="475.0" y="225.0" width="130.0" height="46.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="540.0" y="248.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Unitary</text>
+<rect x="615.0" y="225.0" width="130.0" height="46.0" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="680.0" y="248.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Federal</text>
+<rect x="475.0" y="291.0" width="130.0" height="46.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="540.0" y="314.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Presidential</text>
+<rect x="615.0" y="291.0" width="130.0" height="46.0" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="680.0" y="314.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Parliamentary</text>
+<rect x="475.0" y="357.0" width="130.0" height="46.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="540.0" y="380.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Republican</text>
+<rect x="615.0" y="357.0" width="130.0" height="46.0" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="680.0" y="380.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Monarchical</text>
+<text x="400.0" y="482.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Sierra Leone&#x27;s 1991 Constitution: written, rigid, unitary, presidential and republican.</text>
+</svg>
