@@ -1,0 +1,2208 @@
+{
+ "name": "chemistry_set2_p1",
+ "label": "Chemistry: set 2 (acids, salts, solutions, redox and physical chemistry)",
+ "subject_slug": "chemistry",
+ "papers": [
+  {
+   "id": "e0ff4982-ddaa-5964-84fa-4fd26ba45a54",
+   "topic": "Acids, Bases, and pH",
+   "title": "Acids, Bases, and pH: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on acids, bases, and ph, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 120,
+   "questions": [
+    {
+     "id": "e0ef47ec-5082-5ae4-9000-b24a7fbd8568",
+     "key": "chem-ab-01",
+     "stem": "According to the Brønsted–Lowry theory, an acid is",
+     "image_url": null,
+     "explanation": "In HCl + H₂O → H₃O⁺ + Cl⁻, HCl donates a proton to water, so HCl is the acid and water is the base.\n\n**Why the other options are wrong**\n\n- a proton (H⁺) acceptor: That is a Brønsted–Lowry base.\n- an electron-pair donor: That is a Lewis base.\n- a substance that produces OH⁻ ions in water: That is the Arrhenius definition of a base (alkali).",
+     "position": 1,
+     "options": [
+      {
+       "id": "4289c106-0712-52e6-bdd3-43137c52d008",
+       "label": "A",
+       "content": "a proton (H⁺) donor",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "fcd0d52b-a143-507f-bcf6-dc88ab8b922b",
+       "label": "B",
+       "content": "a proton (H⁺) acceptor",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "af9bf425-8ed1-5a95-bd8e-572972d072a1",
+       "label": "C",
+       "content": "an electron-pair donor",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7080b4fc-8feb-5394-be19-1dd140a93a0f",
+       "label": "D",
+       "content": "a substance that produces OH⁻ ions in water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d81c2efc-9caf-58b5-99cd-b7d1dbc27d0d",
+     "key": "chem-ab-02",
+     "stem": "What is the pH of a 0.01 mol/dm³ solution of hydrochloric acid (fully ionised)?",
+     "image_url": null,
+     "explanation": "$[\\text{H}^+] = 0.01 = 10^{-2}$ mol/dm³, so pH $= -\\log 10^{-2} = 2$.\n\n**Why the other options are wrong**\n\n- 0.01: That is the hydrogen ion concentration, not the pH.\n- −2: pH = −log[H⁺]; you left out the minus sign.\n- 12: That would be the pH of 0.01 mol/dm³ sodium hydroxide.",
+     "position": 2,
+     "options": [
+      {
+       "id": "1cfd9e0a-1214-5643-a703-5e95d9d5594f",
+       "label": "A",
+       "content": "−2",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a79fa370-fdf6-59d6-9cc1-8cc4cac0943e",
+       "label": "B",
+       "content": "0.01",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2a8eeb24-31ab-59b9-ba90-40ce5e526fbe",
+       "label": "C",
+       "content": "2",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c8949b52-408b-5e35-8931-cb7a4af90ab8",
+       "label": "D",
+       "content": "12",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2861bd74-6e85-5901-afb3-4f1c2b77098b",
+     "key": "chem-ab-03",
+     "stem": "Ethanoic acid is described as a weak acid because it",
+     "image_url": null,
+     "explanation": "Only about 1% of ethanoic acid molecules ionise in a 0.1 mol/dm³ solution: CH₃COOH ⇌ CH₃COO⁻ + H⁺.\n\n**Why the other options are wrong**\n\n- is always dilute: Weak and dilute mean different things; concentrated ethanoic acid is still weak.\n- does not react with metals: Ethanoic acid reacts (slowly) with reactive metals such as magnesium.\n- contains few hydrogen atoms: Strength depends on ionisation, not on the number of hydrogen atoms.",
+     "position": 3,
+     "options": [
+      {
+       "id": "6b8f8a62-805b-5544-b62e-4747878c5125",
+       "label": "A",
+       "content": "is only partially ionised in water",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "68538e4a-6d4f-5152-b1c3-10de0e2323ae",
+       "label": "B",
+       "content": "is always dilute",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a7b7d5cb-f096-5980-8905-670ed03b88e7",
+       "label": "C",
+       "content": "does not react with metals",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d77c7d96-d7fb-53f4-a544-0561a43947de",
+       "label": "D",
+       "content": "contains few hydrogen atoms",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8f822152-a211-5754-8611-ed497d12f5a5",
+     "key": "chem-ab-04",
+     "stem": "What is the pH of a 0.001 mol/dm³ solution of sodium hydroxide? (pH + pOH = 14)",
+     "image_url": null,
+     "explanation": "$[\\text{OH}^-] = 10^{-3}$, so pOH $= 3$ and pH $= 14 - 3 = 11$.\n\n**Why the other options are wrong**\n\n- 3: That is the pOH, not the pH.\n- 0.001: That is the hydroxide ion concentration.\n- 4: You subtracted 3 from 7 instead of finding 14 − pOH.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e0145ae1-cded-5452-8999-3cb07c5374b0",
+       "label": "A",
+       "content": "0.001",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0ab3060b-25af-5b5f-9ef3-2926dc656523",
+       "label": "B",
+       "content": "3",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9a65874b-98d0-5238-bbb2-6fea3f64f42c",
+       "label": "C",
+       "content": "4",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "27878d43-12cb-520d-afd8-b820446be580",
+       "label": "D",
+       "content": "11",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1688f78d-8bd2-5a6c-bee3-60ab088d6f57",
+     "key": "chem-ab-05",
+     "stem": "Which of the following is an amphoteric oxide?",
+     "image_url": null,
+     "explanation": "An amphoteric oxide reacts with both acids and alkalis: ZnO + 2HCl → ZnCl₂ + H₂O and ZnO + 2NaOH → Na₂ZnO₂ + H₂O.\n\n**Why the other options are wrong**\n\n- Sodium oxide: Sodium oxide is basic: it reacts only with acids.\n- Sulphur(IV) oxide: Sulphur(IV) oxide is acidic: it reacts with alkalis.\n- Carbon(II) oxide: Carbon(II) oxide is neutral: it reacts with neither acids nor alkalis.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d7ec7184-8b8f-574f-9826-dd94c5f8a3c2",
+       "label": "A",
+       "content": "Zinc oxide",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "55b37348-8096-51f6-a8f6-9419339aa26f",
+       "label": "B",
+       "content": "Sodium oxide",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4f2e073b-eca1-581f-85ef-2f92c2eb4518",
+       "label": "C",
+       "content": "Sulphur(IV) oxide",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "128e1daf-30a8-5727-8833-8feec3bdd07e",
+       "label": "D",
+       "content": "Carbon(II) oxide",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5a729db5-8de2-597d-8520-6674f97de84f",
+   "topic": "Salts and Their Preparation",
+   "title": "Salts and Their Preparation: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on salts and their preparation, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 121,
+   "questions": [
+    {
+     "id": "1d0e1893-9a77-569a-b38b-564817990d11",
+     "key": "chem-sa-01",
+     "stem": "Which salt is best prepared by precipitation (double decomposition)?",
+     "image_url": null,
+     "explanation": "Insoluble salts are made by mixing two soluble salts: Pb(NO₃)₂ + 2KI → PbI₂(s) + 2KNO₃, then filtering and washing.\n\n**Why the other options are wrong**\n\n- Sodium nitrate: Sodium nitrate is soluble; it is made by titrating an acid with an alkali.\n- Copper(II) sulphate: It is soluble; it is made by adding excess copper(II) oxide to the acid.\n- Magnesium chloride: It is soluble; it is made by adding excess magnesium to the acid.",
+     "position": 1,
+     "options": [
+      {
+       "id": "bcae04ee-f313-5eca-a930-41db7e97924c",
+       "label": "A",
+       "content": "Sodium nitrate",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "112858bb-6dbf-5169-a3d8-086137c3541e",
+       "label": "B",
+       "content": "Copper(II) sulphate",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6e9d9067-c212-5cc2-a0b5-53e2458f2c7e",
+       "label": "C",
+       "content": "Magnesium chloride",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f4aa2932-e18d-5a9a-b152-1deccadfe5ef",
+       "label": "D",
+       "content": "Lead(II) iodide",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b049a726-9f7f-5cfe-a044-2a28b0ee142e",
+     "key": "chem-sa-02",
+     "stem": "Which of the following is an acid salt?",
+     "image_url": null,
+     "explanation": "An acid salt still contains replaceable hydrogen; NaHSO₄ is formed when only one H of H₂SO₄ is replaced.\n\n**Why the other options are wrong**\n\n- Na₂SO₄: Na₂SO₄ is a normal salt: all the replaceable hydrogen has been replaced.\n- Mg(OH)Cl: Mg(OH)Cl is a basic salt; it contains hydroxide.\n- KAl(SO₄)₂·12H₂O: Potash alum is a double salt.",
+     "position": 2,
+     "options": [
+      {
+       "id": "450ca58b-948c-5caf-9c6c-60331bcc4362",
+       "label": "A",
+       "content": "NaHSO₄",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6d129a63-f8ea-51e0-88d4-b5c08614e888",
+       "label": "B",
+       "content": "Na₂SO₄",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dbd3e3ce-6735-50d9-bb6a-0db5de27a2f0",
+       "label": "C",
+       "content": "Mg(OH)Cl",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e845e33e-dc72-56c8-a745-c2e1c47cf5d1",
+       "label": "D",
+       "content": "KAl(SO₄)₂·12H₂O",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b1efd3f4-f9b7-545f-8220-fd07e514d525",
+     "key": "chem-sa-03",
+     "stem": "Solid sodium hydroxide left in an open dish absorbs water from the air and dissolves in it. It is described as",
+     "image_url": null,
+     "explanation": "Deliquescent substances (NaOH, CaCl₂, MgCl₂) absorb so much water that they form a solution.\n\n**Why the other options are wrong**\n\n- efflorescent: Efflorescent crystals lose water of crystallisation to the air.\n- hygroscopic: Hygroscopic substances absorb water but do not dissolve in it.\n- hydrated: Hydrated means containing water of crystallisation.",
+     "position": 3,
+     "options": [
+      {
+       "id": "7e2dd5fa-45f3-589c-87e7-e0739c907844",
+       "label": "A",
+       "content": "efflorescent",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e5a89dd8-a8c1-52b3-9d2a-6b0e503ff972",
+       "label": "B",
+       "content": "hygroscopic",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6d8ed693-0e11-59fc-9da4-c1f85bfebdbb",
+       "label": "C",
+       "content": "deliquescent",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6d17e96b-de12-530e-a0a8-ba54669eba04",
+       "label": "D",
+       "content": "hydrated",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "00d05ecd-2245-5aa3-8141-0754fd65e37d",
+     "key": "chem-sa-04",
+     "stem": "When copper(II) sulphate is made from copper(II) oxide and dilute sulphuric acid, excess copper(II) oxide is added in order to",
+     "image_url": null,
+     "explanation": "The unreacted solid oxide is filtered off, leaving a solution of the salt with no acid left in it.\n\n**Why the other options are wrong**\n\n- speed up the crystallisation: Excess oxide does not affect crystallisation; it is filtered off first.\n- make the solution more acidic: Excess base removes acid; it does not add any.\n- increase the solubility of the salt: The amount of base added does not change solubility.",
+     "position": 4,
+     "options": [
+      {
+       "id": "cb9f159e-0307-54c6-b5d5-bb76151bdae6",
+       "label": "A",
+       "content": "speed up the crystallisation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "27b3b25d-4b2c-52b2-a923-d937b8345e5f",
+       "label": "B",
+       "content": "make the solution more acidic",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9ae491f8-157b-50ca-8278-6930e1c75b52",
+       "label": "C",
+       "content": "increase the solubility of the salt",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "81a30974-ab65-551e-9ddb-a24122ccfb66",
+       "label": "D",
+       "content": "make sure that all the acid is used up",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "038496a8-bb89-551f-9de5-614e28b4e147",
+     "key": "chem-sa-05",
+     "stem": "What mass of copper(II) sulphate crystals, CuSO₄·5H₂O, can be made from 0.05 mol of sulphuric acid? (CuSO₄·5H₂O = 250)",
+     "image_url": null,
+     "explanation": "1 mol H₂SO₄ gives 1 mol CuSO₄·5H₂O, so mass $= 0.05 \\times 250 = 12.5$ g.\n\n**Why the other options are wrong**\n\n- 8 g: That is the mass of anhydrous CuSO₄ (Mᵣ 160); the crystals contain water.\n- 4.9 g: That is the mass of the sulphuric acid used (Mᵣ 98).\n- 250 g: That is the molar mass; multiply it by the number of moles.",
+     "position": 5,
+     "options": [
+      {
+       "id": "02252ccc-6232-5cd1-a1b9-fc41234b71d3",
+       "label": "A",
+       "content": "4.9 g",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b53dd6ab-e123-58e0-b84f-fd0b9bfd0f72",
+       "label": "B",
+       "content": "8 g",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5ec157ca-99a4-526f-b265-5de8056d735c",
+       "label": "C",
+       "content": "12.5 g",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "bd28b081-cc58-56ac-95d6-078e54bb3708",
+       "label": "D",
+       "content": "250 g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d3dd4eae-2a77-5566-8ad3-14f5b21c6c32",
+   "topic": "Acid-Base Titration",
+   "title": "Acid-Base Titration: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on acid-base titration, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 122,
+   "questions": [
+    {
+     "id": "44dcb368-8720-5581-b33a-5a2bda9bf723",
+     "key": "chem-ti-01",
+     "stem": "25.0 cm³ of sodium hydroxide solution is neutralised by 20.0 cm³ of 0.100 mol/dm³ hydrochloric acid. What is the concentration of the sodium hydroxide?",
+     "image_url": null,
+     "explanation": "Moles HCl $= 0.100 \\times \\dfrac{20.0}{1000} = 0.00200$; ratio 1 : 1; $[\\text{NaOH}] = \\dfrac{0.00200}{0.0250} = 0.0800$ mol/dm³\n\n**Why the other options are wrong**\n\n- 0.125 mol/dm³: You inverted the volumes.\n- 0.002 mol/dm³: That is the number of moles, not the concentration.\n- 0.1 mol/dm³: The volumes are different, so the concentrations cannot be equal.",
+     "position": 1,
+     "options": [
+      {
+       "id": "aeabea3e-0e95-57c0-8245-78d5b3ab1c02",
+       "label": "A",
+       "content": "0.002 mol/dm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "74a4b84c-52a6-5043-b929-6aad523a2250",
+       "label": "B",
+       "content": "0.08 mol/dm³",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "47af5381-2401-573a-9a83-0e61894e6b27",
+       "label": "C",
+       "content": "0.1 mol/dm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6129f87d-30f4-5f04-8525-a66de953e833",
+       "label": "D",
+       "content": "0.125 mol/dm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b55e09a3-cdcb-5867-b36e-9fe9a7d9c8d0",
+     "key": "chem-ti-02",
+     "stem": "25.0 cm³ of sodium carbonate solution needs 20.0 cm³ of 0.100 mol/dm³ HCl for complete reaction: Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂. What is the concentration of the sodium carbonate?",
+     "image_url": null,
+     "explanation": "Moles HCl $= 0.00200$; moles Na₂CO₃ $= \\dfrac{0.00200}{2} = 0.00100$; concentration $= \\dfrac{0.00100}{0.0250} = 0.0400$ mol/dm³\n\n**Why the other options are wrong**\n\n- 0.08 mol/dm³: You used a 1 : 1 ratio; 1 mol Na₂CO₃ reacts with 2 mol HCl.\n- 0.16 mol/dm³: You multiplied by 2 instead of dividing by 2.\n- 0.001 mol/dm³: That is the number of moles of Na₂CO₃, not its concentration.",
+     "position": 2,
+     "options": [
+      {
+       "id": "95f8ffad-26e2-5e7f-85a6-bccfb06c69ee",
+       "label": "A",
+       "content": "0.001 mol/dm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5f7205d5-663e-5589-84a9-95256d103f5c",
+       "label": "B",
+       "content": "0.04 mol/dm³",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6fc3fe78-147f-5f91-8614-064a36ca92de",
+       "label": "C",
+       "content": "0.08 mol/dm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "86bd525a-e180-5f1b-a9db-8892ee1d9e25",
+       "label": "D",
+       "content": "0.16 mol/dm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cfc9c00f-84a9-552d-8e5b-96f10e0b9900",
+     "key": "chem-ti-03",
+     "stem": "Which indicator is most suitable for titrating ethanoic acid with sodium hydroxide solution?",
+     "image_url": null,
+     "explanation": "The end point of a weak acid–strong base titration is above pH 7, which matches phenolphthalein's range (8–10).\n\n**Why the other options are wrong**\n\n- Methyl orange: Methyl orange changes at pH 3–4.5, before the end point of a weak acid–strong base titration.\n- Litmus: Litmus changes colour gradually and is not used for accurate titrations.\n- Universal indicator: Universal indicator gives a range of colours, not a sharp end point.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8b3dc0cb-2c3f-56be-bbfc-353aba96e2c3",
+       "label": "A",
+       "content": "Phenolphthalein",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "98a4fbd3-ce39-58a3-b0a1-6e19dee89383",
+       "label": "B",
+       "content": "Methyl orange",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c16c8255-285b-5f21-9632-ebcf1f6fc621",
+       "label": "C",
+       "content": "Litmus",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2e8b6461-a557-515f-a50e-93a2a51902d4",
+       "label": "D",
+       "content": "Universal indicator",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "577c9df0-2602-5b44-aad5-1208f57b73bf",
+     "key": "chem-ti-04",
+     "stem": "What colour is methyl orange in an alkaline solution?",
+     "image_url": null,
+     "explanation": "Methyl orange: red in acid, orange at the end point, yellow in alkali.\n\n**Why the other options are wrong**\n\n- Red: Methyl orange is red in acidic solution.\n- Pink: Pink is the colour of phenolphthalein in alkali.\n- Colourless: Phenolphthalein, not methyl orange, is colourless in acid.",
+     "position": 4,
+     "options": [
+      {
+       "id": "0622f5d2-bb36-5265-a5d9-c2e2db699f28",
+       "label": "A",
+       "content": "Red",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e1029ebf-90e0-5915-8e1c-b1d260e600fb",
+       "label": "B",
+       "content": "Yellow",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6bd7d473-dc45-5389-b883-ee34e3b3784c",
+       "label": "C",
+       "content": "Pink",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f948e163-2a97-5b57-8a2d-b8d680abeb1c",
+       "label": "D",
+       "content": "Colourless",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b0b61e5d-f807-563e-a60c-4dfe3e6c6875",
+     "key": "chem-ti-05",
+     "stem": "Three accurate titres were 23.80 cm³, 23.90 cm³ and 24.40 cm³. What average titre should be used in the calculation?",
+     "image_url": null,
+     "explanation": "Concordant titres agree within 0.10 cm³: 23.80 and 23.90. Average $= \\dfrac{23.80 + 23.90}{2} = 23.85$ cm³\n\n**Why the other options are wrong**\n\n- 24.03 cm³: You averaged all three; 24.40 is not concordant and must be left out.\n- 24.40 cm³: That is the result that disagrees with the others.\n- 23.80 cm³: That is only the smallest titre.",
+     "position": 5,
+     "options": [
+      {
+       "id": "1e0ae579-9f97-557d-b03b-c9ed461dd399",
+       "label": "A",
+       "content": "23.80 cm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7629bcbe-3f82-55ab-b525-8cc5655c054c",
+       "label": "B",
+       "content": "23.85 cm³",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d71c0234-dc1a-5e2f-8741-38eabcd43140",
+       "label": "C",
+       "content": "24.03 cm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8c838acf-a008-53da-aa26-08b5fe8e2139",
+       "label": "D",
+       "content": "24.40 cm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a3864f3d-6996-5ae8-b515-d92407cf1888",
+   "topic": "Water and Its Properties",
+   "title": "Water and Its Properties: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on water and its properties, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 123,
+   "questions": [
+    {
+     "id": "7eb27641-1163-54e5-91c8-76dcb9cbd6a2",
+     "key": "chem-wa-01",
+     "stem": "Temporary hardness of water is caused by dissolved",
+     "image_url": null,
+     "explanation": "Boiling decomposes calcium hydrogencarbonate: Ca(HCO₃)₂ → CaCO₃ + H₂O + CO₂, removing the Ca²⁺ ions.\n\n**Why the other options are wrong**\n\n- calcium sulphate: Calcium sulphate causes permanent hardness.\n- sodium chloride: Sodium ions do not cause hardness.\n- magnesium chloride: Magnesium chloride causes permanent hardness.",
+     "position": 1,
+     "options": [
+      {
+       "id": "581dc42d-6936-5b33-bdff-b56c83dc699a",
+       "label": "A",
+       "content": "calcium sulphate",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f8e5108a-3eed-5e03-a19b-9ff2e9305c7c",
+       "label": "B",
+       "content": "sodium chloride",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2af9b164-cdb4-593d-8a15-df7a9dd23202",
+       "label": "C",
+       "content": "calcium hydrogencarbonate",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "38a8bf25-5053-5929-8191-76e4d965db02",
+       "label": "D",
+       "content": "magnesium chloride",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "84fe0e6f-bb86-51bf-992d-6c8af5e43505",
+     "key": "chem-wa-02",
+     "stem": "Permanent hardness of water can be removed by",
+     "image_url": null,
+     "explanation": "Carbonate ions precipitate the hardness ions: Ca²⁺ + CO₃²⁻ → CaCO₃(s). Ion exchange and distillation also work.\n\n**Why the other options are wrong**\n\n- boiling: Boiling removes only temporary hardness.\n- filtration: The hardness ions are dissolved, so they pass through a filter.\n- adding chlorine: Chlorine kills germs; it does not remove calcium or magnesium ions.",
+     "position": 2,
+     "options": [
+      {
+       "id": "9efa0b28-ca64-59b4-aa23-0b3dc9e98fe2",
+       "label": "A",
+       "content": "boiling",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "18f1ceeb-b2c8-5ee9-a267-f3f5b9ced581",
+       "label": "B",
+       "content": "filtration",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "63d043e0-da3b-5dc1-a7c5-aef09022e1c5",
+       "label": "C",
+       "content": "adding chlorine",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f268d8b4-45ec-525d-8033-74bcd2edbe83",
+       "label": "D",
+       "content": "adding washing soda (sodium carbonate)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4374339b-aaab-5977-82e4-9c5cb3fd84b7",
+     "key": "chem-wa-03",
+     "stem": "Which test shows that a liquid contains water?",
+     "image_url": null,
+     "explanation": "These tests show that water is present; to show it is pure water, check that it boils at 100 °C and freezes at 0 °C.\n\n**Why the other options are wrong**\n\n- It turns blue litmus paper red: That shows the liquid is acidic.\n- It turns lime water milky: That is the test for carbon(IV) oxide.\n- It turns pink cobalt(II) chloride paper blue: The change is the other way: water turns blue cobalt(II) chloride paper pink.",
+     "position": 3,
+     "options": [
+      {
+       "id": "61cd5a61-ce17-51bb-9e93-437483796ada",
+       "label": "A",
+       "content": "It turns white anhydrous copper(II) sulphate blue",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "50d48828-1b23-5759-9fca-650160c8edb7",
+       "label": "B",
+       "content": "It turns blue litmus paper red",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "570772ea-a0a5-51e2-83e6-cd51d5e4fb96",
+       "label": "C",
+       "content": "It turns lime water milky",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "269a4c52-4315-5e5f-aa16-de38d2d88845",
+       "label": "D",
+       "content": "It turns pink cobalt(II) chloride paper blue",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "afdb2e2d-c4cb-5a19-a8fa-781474e8d19f",
+     "key": "chem-wa-04",
+     "stem": "In the treatment of a town's water supply, chlorine is added to",
+     "image_url": null,
+     "explanation": "Chlorine (or chlorine compounds) disinfects the water so that diseases such as cholera and typhoid are not spread.\n\n**Why the other options are wrong**\n\n- make suspended particles settle: Alum (aluminium sulphate) is added to coagulate fine particles.\n- remove dissolved salts: Chlorine does not remove dissolved salts.\n- remove unpleasant smells by aeration: Aeration is done by spraying the water into air.",
+     "position": 4,
+     "options": [
+      {
+       "id": "8934b75b-6403-54b6-a050-d8cafc9cfcfa",
+       "label": "A",
+       "content": "make suspended particles settle",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "48b04447-e4f5-5854-8b5e-0174db49fa0c",
+       "label": "B",
+       "content": "kill harmful micro-organisms",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e2bf7fcc-b084-59e5-a8f2-16da68f12822",
+       "label": "C",
+       "content": "remove dissolved salts",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e2690fb0-23cc-5c06-99ce-09490053d990",
+       "label": "D",
+       "content": "remove unpleasant smells by aeration",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9b47c755-f99b-55b0-8974-cf41dbd13ad8",
+     "key": "chem-wa-05",
+     "stem": "Ice floats on liquid water because",
+     "image_url": null,
+     "explanation": "Water is densest at 4 °C. On freezing, hydrogen bonding forms an open lattice, so ice is about 9% less dense than water.\n\n**Why the other options are wrong**\n\n- ice contains trapped air: Pure ice floats even with no air in it.\n- ice molecules are lighter than water molecules: The molecules are identical H₂O.\n- ice has a lower boiling point: Boiling point has nothing to do with floating.",
+     "position": 5,
+     "options": [
+      {
+       "id": "60753267-0568-57d7-98df-e8e20046e36e",
+       "label": "A",
+       "content": "ice contains trapped air",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "254f2c9b-c43b-57b4-b4e2-46854d82e74e",
+       "label": "B",
+       "content": "ice molecules are lighter than water molecules",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5e35b642-5fa3-53fa-b2e9-2f4f12241257",
+       "label": "C",
+       "content": "hydrogen bonds hold the molecules in an open structure, so ice is less dense",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "24ccadad-446a-5f59-b9c8-900005eb0563",
+       "label": "D",
+       "content": "ice has a lower boiling point",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "10e29ac1-5491-5cd5-a935-1adeadbbe01f",
+   "topic": "Solutions and Solubility",
+   "title": "Solutions and Solubility: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on solutions and solubility, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 124,
+   "questions": [
+    {
+     "id": "e72f2af2-84f9-53fe-887b-c8cd264863b1",
+     "key": "chem-so-01",
+     "stem": "At 25 °C, 12 g of a salt dissolves in 40 g of water to form a saturated solution. What is the solubility of the salt in g per 100 g of water?",
+     "image_url": null,
+     "explanation": "Solubility $= \\dfrac{12}{40} \\times 100 = 30$ g per 100 g of water.\n\n**Why the other options are wrong**\n\n- 12 g: That is the mass dissolved in 40 g of water, not in 100 g.\n- 4.8 g: You multiplied by 40 and divided by 100 instead of the reverse.\n- 33.33 g: You divided 40 by 12.",
+     "position": 1,
+     "options": [
+      {
+       "id": "27039679-b6c4-53f2-9aa4-0b8c5324cd01",
+       "label": "A",
+       "content": "4.8 g",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bdc41565-4c42-5a6b-b408-7607017b1dcb",
+       "label": "B",
+       "content": "12 g",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "445de86c-8609-5b1d-b96b-26f78cdc04cf",
+       "label": "C",
+       "content": "30 g",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a73b7cbf-64e7-5a44-b123-22cef1e0bd12",
+       "label": "D",
+       "content": "33.33 g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "46ccfe30-c850-5e5c-b447-6e721cdd59ad",
+     "key": "chem-so-02",
+     "stem": "The solubility of salt X is 80 g per 100 g of water at 60 °C and 30 g per 100 g at 20 °C. What mass of crystals forms when a saturated solution in 100 g of water is cooled from 60 °C to 20 °C?",
+     "image_url": null,
+     "explanation": "Mass of crystals $= 80 - 30 = 50$ g\n\n**Why the other options are wrong**\n\n- 110 g: You added the two solubilities.\n- 80 g: Not all the salt comes out; 30 g stays dissolved at 20 °C.\n- 30 g: That is the mass that stays in solution.",
+     "position": 2,
+     "options": [
+      {
+       "id": "366b63b0-309d-559c-a2d9-add65a501886",
+       "label": "A",
+       "content": "30 g",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "562be822-244f-5247-9908-ecf30fd41616",
+       "label": "B",
+       "content": "50 g",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6de3735c-29f7-5f94-a737-334ec5120ccb",
+       "label": "C",
+       "content": "80 g",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1262730a-bdcc-5451-b2d5-faa8d5e7253e",
+       "label": "D",
+       "content": "110 g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3ffe7af3-c42f-5c20-886e-04d517c5afc0",
+     "key": "chem-so-03",
+     "stem": "As the temperature of water rises, the solubility of gases such as oxygen in it",
+     "image_url": null,
+     "explanation": "Gas molecules gain energy and escape from warm water; this is why warm water from factories (thermal pollution) holds less oxygen for fish.\n\n**Why the other options are wrong**\n\n- increases: That is true of most solids, not gases.\n- stays the same: Gas solubility changes noticeably with temperature.\n- first increases and then decreases: Gas solubility falls steadily as temperature rises.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8c21c544-b56a-5323-9f2a-b02d4d5cf016",
+       "label": "A",
+       "content": "increases",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "edd23c23-837c-59b3-8df5-6599a01a6309",
+       "label": "B",
+       "content": "stays the same",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c9ab7af2-b61a-5db7-81b3-d37fa74f5ae5",
+       "label": "C",
+       "content": "first increases and then decreases",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "54dea4df-1b1a-594c-a306-907279732016",
+       "label": "D",
+       "content": "decreases",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ea434bcb-d038-5241-891a-58a071615c49",
+     "key": "chem-so-04",
+     "stem": "A saturated solution is one that",
+     "image_url": null,
+     "explanation": "At a given temperature, no more solute will dissolve in a saturated solution; extra solid stays undissolved.\n\n**Why the other options are wrong**\n\n- contains a very large amount of solute: A solution of a sparingly soluble salt can be saturated yet very dilute.\n- has been heated to its boiling point: Saturation has nothing to do with boiling.\n- contains two or more solutes: Saturation refers to one solute reaching its limit.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ae5c2daf-9513-5a7e-a68d-e3ee29c8e0f4",
+       "label": "A",
+       "content": "contains as much solute as can dissolve at that temperature",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a893ede7-1e7c-5a66-afd3-6378eb1a0e45",
+       "label": "B",
+       "content": "contains a very large amount of solute",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b64a304a-4f17-5df0-862d-3288c9e65500",
+       "label": "C",
+       "content": "has been heated to its boiling point",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d44b0978-5f23-52e7-b8bb-5a3eefeb47b4",
+       "label": "D",
+       "content": "contains two or more solutes",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d2c5301d-100f-569a-aff2-2db6929edfb0",
+     "key": "chem-so-05",
+     "stem": "A beam of light passed through starch solution is visible from the side, but not when passed through salt solution. This is",
+     "image_url": null,
+     "explanation": "Colloid particles (1–1000 nm) are big enough to scatter light; the ions in a true solution are too small.\n\n**Why the other options are wrong**\n\n- Brownian motion: Brownian motion is the random movement of small particles in a fluid.\n- dialysis: Dialysis separates colloid particles from small ions through a membrane.\n- coagulation: Coagulation is the clumping together of colloid particles.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a733515e-e8af-5b7c-85c5-3efc523a7c0a",
+       "label": "A",
+       "content": "Brownian motion",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3c9754d7-b718-5631-883c-d5373fe618ca",
+       "label": "B",
+       "content": "the Tyndall effect",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "19c1ad3a-b368-5a5a-b4ac-ed22713e4b83",
+       "label": "C",
+       "content": "dialysis",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4d0dfef6-7c63-56a2-bd50-25e2718550d4",
+       "label": "D",
+       "content": "coagulation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "28da0b58-6eb7-5aff-a698-0ddd31297974",
+   "topic": "Oxidation and Reduction Reactions",
+   "title": "Oxidation and Reduction Reactions: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on oxidation and reduction reactions, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 125,
+   "questions": [
+    {
+     "id": "ec4046a3-e132-5197-ba0e-5b228733d98e",
+     "key": "chem-rd-01",
+     "stem": "What is the oxidation number of manganese in potassium manganate(VII), KMnO₄?",
+     "image_url": null,
+     "explanation": "K is +1 and each O is −2: +1 + x − 8 = 0, so x = +7, as the name manganate(VII) shows.\n\n**Why the other options are wrong**\n\n- +6: Check the sum: +1 + x + 4(−2) = 0 gives x = +7.\n- +4: +4 is manganese's oxidation number in MnO₂.\n- +2: +2 is manganese's oxidation number in Mn²⁺ salts.",
+     "position": 1,
+     "options": [
+      {
+       "id": "cc6f9ff6-cda2-5f7b-9367-d54384a189ab",
+       "label": "A",
+       "content": "+2",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3fe4cae6-631c-5f61-8d35-be0b1fd3d8d4",
+       "label": "B",
+       "content": "+4",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2f4dd67e-1a57-52f3-b943-bbc5ecc234eb",
+       "label": "C",
+       "content": "+6",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3f38c0c2-433f-51b5-afd3-80469a8c0248",
+       "label": "D",
+       "content": "+7",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d3c31d81-89c3-5ac2-893e-af818d8a5be3",
+     "key": "chem-rd-02",
+     "stem": "In the reaction Zn + Cu²⁺ → Zn²⁺ + Cu, the reducing agent is",
+     "image_url": null,
+     "explanation": "Zinc loses two electrons (it is oxidised) and gives them to Cu²⁺; the substance that gives electrons is the reducing agent.\n\n**Why the other options are wrong**\n\n- Cu²⁺: Cu²⁺ gains electrons: it is the oxidising agent.\n- Zn²⁺: Zn²⁺ is a product, formed when zinc is oxidised.\n- Cu: Cu is a product, formed when Cu²⁺ is reduced.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d7d7461c-924d-567b-9354-d768ca912ddc",
+       "label": "A",
+       "content": "Cu²⁺",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a43b9b55-5552-56f9-a2ea-d80cb3af079c",
+       "label": "B",
+       "content": "Zn²⁺",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "72a10cce-d922-5cd5-955a-5dac51b6f4d8",
+       "label": "C",
+       "content": "Zn",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0c24c206-f332-5c93-91f9-d9f2a127f2a9",
+       "label": "D",
+       "content": "Cu",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f69cb545-572d-55a6-95c5-30a176579f5b",
+     "key": "chem-rd-03",
+     "stem": "In terms of electron transfer, oxidation is",
+     "image_url": null,
+     "explanation": "OIL RIG: Oxidation Is Loss of electrons; Reduction Is Gain. Oxidation also means an increase in oxidation number.\n\n**Why the other options are wrong**\n\n- the gain of electrons: That is reduction (OIL RIG: oxidation is loss, reduction is gain).\n- the gain of protons: Proton transfer describes acid–base reactions.\n- the loss of oxygen: Loss of oxygen is reduction.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0d72cf93-c38a-5a0f-89fa-44707291885c",
+       "label": "A",
+       "content": "the gain of electrons",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bf229f89-6c9c-5ba4-8443-71388aa42edb",
+       "label": "B",
+       "content": "the gain of protons",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8072fc0c-c5b3-5568-9417-fb9def9a4bf5",
+       "label": "C",
+       "content": "the loss of oxygen",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f4fd6b50-5121-53cf-a66f-b165b028a710",
+       "label": "D",
+       "content": "the loss of electrons",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "339490ec-0762-56cc-a398-17cf18866717",
+     "key": "chem-rd-04",
+     "stem": "Which change is a reduction?",
+     "image_url": null,
+     "explanation": "Fe³⁺ gains one electron and its oxidation number falls from +3 to +2: that is reduction.\n\n**Why the other options are wrong**\n\n- Fe²⁺ → Fe³⁺: The oxidation number rises from +2 to +3: oxidation.\n- 2Cl⁻ → Cl₂: Chloride ions lose electrons: oxidation.\n- Cu → Cu²⁺: Copper loses electrons: oxidation.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e425310e-ac4e-53c5-9639-cc921597f0da",
+       "label": "A",
+       "content": "Fe³⁺ → Fe²⁺",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "92761208-3eb3-55b2-96fe-f578429e612a",
+       "label": "B",
+       "content": "Fe²⁺ → Fe³⁺",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8bbf704f-a0b0-5cb6-8ce0-d8aa6e6d971e",
+       "label": "C",
+       "content": "2Cl⁻ → Cl₂",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c6d5f88f-f38e-59ee-a41e-78b50410f960",
+       "label": "D",
+       "content": "Cu → Cu²⁺",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5d7d1775-01a3-5973-909e-12d0f608437c",
+     "key": "chem-rd-05",
+     "stem": "Which observation shows that a gas is a reducing agent?",
+     "image_url": null,
+     "explanation": "The gas reduces orange Cr₂O₇²⁻ (Cr +6) to green Cr³⁺ (Cr +3); sulphur(IV) oxide and hydrogen sulphide do this.\n\n**Why the other options are wrong**\n\n- It turns lime water milky: That is the test for carbon(IV) oxide, which is not acting as a reducing agent.\n- It relights a glowing splint: That shows oxygen, which supports burning.\n- It turns damp red litmus paper blue: That shows an alkaline gas (ammonia).",
+     "position": 5,
+     "options": [
+      {
+       "id": "c71eed11-6930-56a9-9fd3-b3f62b8faa42",
+       "label": "A",
+       "content": "It turns lime water milky",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "92d4df16-59bd-5611-972a-9df7a5261405",
+       "label": "B",
+       "content": "It turns acidified potassium dichromate(VI) from orange to green",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8b7aa3d1-3aef-5600-b3cf-3adecd792331",
+       "label": "C",
+       "content": "It relights a glowing splint",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "14921199-8cab-5e43-9f85-ba0d6df46229",
+       "label": "D",
+       "content": "It turns damp red litmus paper blue",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dffa0bf4-ef26-5f30-a5d8-5b8f8235aa23",
+   "topic": "Electrolysis",
+   "title": "Electrolysis: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on electrolysis, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 126,
+   "questions": [
+    {
+     "id": "03147fce-7fef-53c2-b56c-e37aa2a313a5",
+     "key": "chem-el-01",
+     "stem": "In the electrolysis of concentrated sodium chloride solution with carbon electrodes, the product at the anode is",
+     "image_url": null,
+     "explanation": "Concentrated Cl⁻ ions are discharged in preference to OH⁻ at the anode: 2Cl⁻ → Cl₂ + 2e⁻.\n\n**Why the other options are wrong**\n\n- oxygen: Oxygen forms at the anode only with dilute chloride solutions.\n- hydrogen: Hydrogen is formed at the cathode.\n- sodium: Sodium is never formed from aqueous solution; it would react with water.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a78dc667-39f1-5723-9e45-be4c4e3e8ae3",
+       "label": "A",
+       "content": "oxygen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "10c2c587-06e5-58ce-9541-c0f370689405",
+       "label": "B",
+       "content": "hydrogen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "62467a95-51b0-56ea-9d1e-30cdd623dc1b",
+       "label": "C",
+       "content": "chlorine",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ea07dc58-6b45-5dcb-9ac6-6a44988d6104",
+       "label": "D",
+       "content": "sodium",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0ea3e274-0826-5d40-9dfb-9ddb32d6c8f5",
+     "key": "chem-el-02",
+     "stem": "What mass of copper is deposited at the cathode when 9650 C of electricity passes through copper(II) sulphate solution? (Cu = 64; F = 96 500 C/mol)",
+     "image_url": null,
+     "explanation": "Moles of electrons $= \\dfrac{9650}{96\\,500} = 0.1$; Cu²⁺ + 2e⁻ → Cu, so moles Cu $= 0.05$; mass $= 0.05 \\times 64 = 3.2$ g\n\n**Why the other options are wrong**\n\n- 6.4 g: You used one electron per copper ion; Cu²⁺ needs two.\n- 0.05 g: That is the number of moles of copper, not its mass.\n- 1.6 g: You divided by 4 instead of 2.",
+     "position": 2,
+     "options": [
+      {
+       "id": "ac2b0012-7cc5-5d6e-9c45-e56a575a6ce5",
+       "label": "A",
+       "content": "0.05 g",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e0f0d85a-8e04-5cd3-a057-8ee21bcba11d",
+       "label": "B",
+       "content": "1.6 g",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ef48bc91-5246-5122-ab01-ae9c03b37329",
+       "label": "C",
+       "content": "3.2 g",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6c499bad-55f2-58ac-af3f-51c3153449ea",
+       "label": "D",
+       "content": "6.4 g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2e3eee9b-05b1-5902-874b-ef50e25a1a7e",
+     "key": "chem-el-03",
+     "stem": "In the electrolysis of dilute sulphuric acid, oxygen forms at the anode: 4OH⁻ → 2H₂O + O₂ + 4e⁻. What volume of oxygen at s.t.p. is produced by 0.4 mol of electrons?",
+     "image_url": null,
+     "explanation": "Moles O₂ $= \\dfrac{0.4}{4} = 0.1$; volume $= 0.1 \\times 22.4 = 2.24$ dm³\n\n**Why the other options are wrong**\n\n- 4.48 dm³: You used two electrons per O₂; four are needed.\n- 8.96 dm³: You assumed one mole of O₂ per mole of electrons.\n- 2.4 dm³: You used 24 dm³, the molar volume at room conditions.",
+     "position": 3,
+     "options": [
+      {
+       "id": "e912114b-dd59-55de-8d26-c3b675b49e02",
+       "label": "A",
+       "content": "2.24 dm³",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b08848be-920a-53d5-96f1-e57db5b8a0df",
+       "label": "B",
+       "content": "2.4 dm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d9b59080-2ba3-51aa-94b3-ac9ba9570b73",
+       "label": "C",
+       "content": "4.48 dm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "466c39f7-ec44-5b88-b180-45123c8b04ba",
+       "label": "D",
+       "content": "8.96 dm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4c6e7d81-d40f-53a2-9f2d-f06504e99257",
+     "key": "chem-el-04",
+     "stem": "In the purification of copper by electrolysis, the impure copper is made the",
+     "image_url": null,
+     "explanation": "At the anode, copper dissolves as Cu²⁺; the ions move to the cathode and are deposited as pure copper. Impurities fall as anode sludge.\n\n**Why the other options are wrong**\n\n- cathode: Pure copper is deposited on the cathode.\n- electrolyte: The electrolyte is copper(II) sulphate solution.\n- salt bridge: There is no salt bridge in an electrolytic cell.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e4514ced-1a8c-59d4-b9d1-88a6206dc64d",
+       "label": "A",
+       "content": "cathode",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1b87c9cf-9d2b-5d1a-835e-84d32b0a92a4",
+       "label": "B",
+       "content": "electrolyte",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "81f590c1-2141-546c-b2b3-62d725b96678",
+       "label": "C",
+       "content": "salt bridge",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "13e7bc1b-0e68-514d-91df-42cfa1b83a24",
+       "label": "D",
+       "content": "anode",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cb617f98-6247-5b95-a574-e1e5c7a72935",
+     "key": "chem-el-05",
+     "stem": "Sodium is extracted by electrolysing molten sodium chloride, not its aqueous solution, because in aqueous solution",
+     "image_url": null,
+     "explanation": "Water's H⁺ ions are discharged more easily than Na⁺; and any sodium formed would react with water at once.\n\n**Why the other options are wrong**\n\n- sodium chloride does not conduct electricity: Aqueous sodium chloride is a good electrolyte.\n- chlorine would not be formed: Chlorine is formed at the anode from concentrated solution.\n- the solution would be too expensive: Cost is not the reason; the chemistry is.",
+     "position": 5,
+     "options": [
+      {
+       "id": "8056fac9-716a-58e4-a07b-732e834f575c",
+       "label": "A",
+       "content": "hydrogen is discharged at the cathode instead of sodium",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6e02f534-e036-51ba-8cef-6349b9650d6a",
+       "label": "B",
+       "content": "sodium chloride does not conduct electricity",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "56854287-209e-5e4b-beba-67b92ed389d6",
+       "label": "C",
+       "content": "chlorine would not be formed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4455bf79-660e-5091-b8a4-6d9b548844e4",
+       "label": "D",
+       "content": "the solution would be too expensive",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "25bce57e-ec45-56f4-b270-a327cd833703",
+   "topic": "Electrochemical Cells",
+   "title": "Electrochemical Cells: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on electrochemical cells, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 127,
+   "questions": [
+    {
+     "id": "c28a7e4b-e779-532e-86b0-98ca92187b86",
+     "key": "chem-ce-01",
+     "stem": "E° for Zn²⁺/Zn is −0.76 V and for Cu²⁺/Cu is +0.34 V. What is the e.m.f. of the Daniell cell?",
+     "image_url": null,
+     "explanation": "$E_{\\text{cell}} = E_{\\text{right}} - E_{\\text{left}} = +0.34 - (-0.76) = +1.10$ V\n\n**Why the other options are wrong**\n\n- 0.42 V: You subtracted the sizes without the signs: 0.76 − 0.34.\n- −0.42 V: You added the two potentials.\n- −1.10 V: You subtracted the wrong way round; a working cell has a positive e.m.f.",
+     "position": 1,
+     "options": [
+      {
+       "id": "75aaf9fe-9ef8-5821-9188-4be3f812b9da",
+       "label": "A",
+       "content": "−1.10 V",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "88372030-2135-582b-8fbc-87ab69421884",
+       "label": "B",
+       "content": "−0.42 V",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "80cabc42-0453-52a5-8e8a-59822bee1dec",
+       "label": "C",
+       "content": "0.42 V",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dda334f0-d81e-5366-a198-765bd8b2c82c",
+       "label": "D",
+       "content": "1.10 V",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e6e32771-b7c6-57ff-bc26-2b385eeef1b2",
+     "key": "chem-ce-02",
+     "stem": "In the Daniell cell, electrons flow in the external wire",
+     "image_url": null,
+     "explanation": "Zinc is oxidised (Zn → Zn²⁺ + 2e⁻) and is the negative electrode; electrons travel to the copper, where Cu²⁺ is reduced.\n\n**Why the other options are wrong**\n\n- from the copper electrode to the zinc electrode: Zinc is more reactive, so it gives up electrons.\n- through the salt bridge: Ions, not electrons, move through the salt bridge.\n- in both directions equally: The current flows one way while the cell discharges.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8c3957c3-a2de-539b-a611-2e99e35999bc",
+       "label": "A",
+       "content": "from the copper electrode to the zinc electrode",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6e6f4824-2290-54b5-9653-69e1f6e612bc",
+       "label": "B",
+       "content": "from the zinc electrode to the copper electrode",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9bc257d7-83cc-5e92-9ee5-ef021a3214bc",
+       "label": "C",
+       "content": "through the salt bridge",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1449f945-757b-5c19-8a7f-cd4929e2dbeb",
+       "label": "D",
+       "content": "in both directions equally",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5ddf12b9-a884-564e-9cd2-ea4d3ac98dc9",
+     "key": "chem-ce-03",
+     "stem": "The function of the salt bridge in a cell is to",
+     "image_url": null,
+     "explanation": "Ions in the salt bridge keep each solution electrically neutral, so current can continue to flow.\n\n**Why the other options are wrong**\n\n- carry electrons between the electrodes: Electrons flow through the external wire, not the salt bridge.\n- increase the e.m.f. of the cell: The salt bridge does not change the e.m.f.\n- supply the metal ions that are reduced: The metal ions come from the electrolyte in each half-cell.",
+     "position": 3,
+     "options": [
+      {
+       "id": "9b2a636d-4764-5485-b090-4cdd44239891",
+       "label": "A",
+       "content": "carry electrons between the electrodes",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "256d164a-1818-5469-9cef-ea4570782ac0",
+       "label": "B",
+       "content": "increase the e.m.f. of the cell",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "03f904f7-1b00-5f9a-97c8-2e320140fa87",
+       "label": "C",
+       "content": "complete the circuit by allowing ions to move between the half-cells",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8b0bbffc-45bf-5a7c-854e-c05d5657e2be",
+       "label": "D",
+       "content": "supply the metal ions that are reduced",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "61dafc57-fc2e-5a8d-b9b9-e60ed3ebe673",
+     "key": "chem-ce-04",
+     "stem": "In the zinc–carbon dry (Leclanché) cell, the electrolyte is",
+     "image_url": null,
+     "explanation": "The dry cell has a zinc case (negative), a carbon rod (positive) surrounded by MnO₂, and a moist NH₄Cl paste as electrolyte.\n\n**Why the other options are wrong**\n\n- dilute sulphuric acid: That is the electrolyte of the lead–acid accumulator.\n- manganese(IV) oxide: Manganese(IV) oxide is the depolariser around the carbon rod.\n- zinc: The zinc case is the negative electrode.",
+     "position": 4,
+     "options": [
+      {
+       "id": "18f58b1e-9467-502c-98e9-233d25f645f3",
+       "label": "A",
+       "content": "dilute sulphuric acid",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b067f8f5-80b8-57b5-9e62-5ebeffad2ed3",
+       "label": "B",
+       "content": "manganese(IV) oxide",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ed005a82-8013-5a93-ba7a-ce874c08f160",
+       "label": "C",
+       "content": "zinc",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4be35c67-60a5-5636-8c87-48e95c97de4b",
+       "label": "D",
+       "content": "ammonium chloride paste",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c16295cf-6267-5590-bc1f-bf98cdadf688",
+     "key": "chem-ce-05",
+     "stem": "Galvanised iron does not rust even when the zinc coating is scratched because zinc",
+     "image_url": null,
+     "explanation": "This is sacrificial protection: zinc loses electrons more readily than iron, so the iron stays reduced.\n\n**Why the other options are wrong**\n\n- is less reactive than iron: A less reactive coating (such as tin) makes rusting faster when scratched.\n- forms an airtight layer over the scratch: The scratch exposes the iron; protection is sacrificial.\n- reacts with rust to form iron: Zinc does not reverse rusting.",
+     "position": 5,
+     "options": [
+      {
+       "id": "71340957-47b9-5122-a7d1-ea7852e1ad89",
+       "label": "A",
+       "content": "is more reactive than iron and corrodes in preference to it",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6702dee9-e696-577e-9ed1-2489e7f27303",
+       "label": "B",
+       "content": "is less reactive than iron",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ee35b8ae-e05b-5f0b-9a02-7426e5b3baf3",
+       "label": "C",
+       "content": "forms an airtight layer over the scratch",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6e0f8964-ddaf-5130-b714-91f6633b3135",
+       "label": "D",
+       "content": "reacts with rust to form iron",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f59b319c-4352-531f-8fbf-a670ac413965",
+   "topic": "Energy Changes in Reactions",
+   "title": "Energy Changes in Reactions: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on energy changes in reactions, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 128,
+   "questions": [
+    {
+     "id": "e2c3b6ee-ebb6-5f8e-84f8-1e0a1ead947b",
+     "key": "chem-en-01",
+     "stem": "In an exothermic reaction",
+     "image_url": null,
+     "explanation": "The products have less energy than the reactants; the difference is released to the surroundings, which get warmer.\n\n**Why the other options are wrong**\n\n- heat is taken in and ΔH is negative: Heat taken in means ΔH is positive (endothermic).\n- heat is given out and ΔH is positive: When heat is given out, the products have less energy, so ΔH is negative.\n- heat is taken in and ΔH is positive: That describes an endothermic reaction.",
+     "position": 1,
+     "options": [
+      {
+       "id": "6c0e1167-93b1-5231-81b7-b3e9ef9fbcfc",
+       "label": "A",
+       "content": "heat is taken in and ΔH is negative",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7901e74e-19c2-5050-a4f2-c84128c0a5cf",
+       "label": "B",
+       "content": "heat is given out and ΔH is negative",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "020951dc-9c32-569a-b158-db4c021b4afa",
+       "label": "C",
+       "content": "heat is given out and ΔH is positive",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0733a283-4cc6-5356-be89-d007ee6cf9b5",
+       "label": "D",
+       "content": "heat is taken in and ΔH is positive",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "312e73e3-f7ad-5660-9704-14dc484d7c7e",
+     "key": "chem-en-02",
+     "stem": "A reaction raises the temperature of 50 g of solution by 6 °C. How much heat is given out? (c = 4.2 J/g/°C)",
+     "image_url": null,
+     "explanation": "$Q = mc\\Delta T = 50 \\times 4.2 \\times 6 = 1260$ J\n\n**Why the other options are wrong**\n\n- 210 J: You left out the temperature change.\n- 300 J: You left out the specific heat capacity.\n- 25.2 J: You left out the mass.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d47fa074-41eb-5f7c-a6cf-6bf18b397f4f",
+       "label": "A",
+       "content": "25.2 J",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dbf0b853-41cb-5dd2-9ec3-d5c0934c21f1",
+       "label": "B",
+       "content": "210 J",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "37cde5aa-6808-50c4-b9d1-af605d4038ce",
+       "label": "C",
+       "content": "300 J",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7ab8e4a1-c3a2-5b3a-9b33-62b421dc210f",
+       "label": "D",
+       "content": "1260 J",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "969d445b-b499-570c-b426-a84e1e360e46",
+     "key": "chem-en-03",
+     "stem": "50 cm³ of 1.0 mol/dm³ HCl is mixed with 50 cm³ of 1.0 mol/dm³ NaOH, and the temperature rises by 6.8 °C. What is the enthalpy of neutralisation? (Mass of solution = 100 g; c = 4.2 J/g/°C)",
+     "image_url": null,
+     "explanation": "$Q = 100 \\times 4.2 \\times 6.8 = 2856$ J; moles of water $= 0.05$; $\\Delta H = -\\dfrac{2.856}{0.05} = -57.12$ kJ/mol\n\n**Why the other options are wrong**\n\n- −28.56 kJ/mol: You used only 50 g; the mass of the whole mixture is 100 g.\n- −2.856 kJ/mol: That is the heat released in kJ; divide by the 0.05 mol of water formed.\n- 57.12 kJ/mol: Neutralisation gives out heat, so ΔH is negative.",
+     "position": 3,
+     "options": [
+      {
+       "id": "3723b3a4-c510-5db5-a29f-8b90e820f5af",
+       "label": "A",
+       "content": "−57.12 kJ/mol",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7ad2e507-8d01-5b9d-9783-fd5f5789e981",
+       "label": "B",
+       "content": "−28.56 kJ/mol",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1a028c49-be69-53e1-950d-71f8bab90366",
+       "label": "C",
+       "content": "−2.856 kJ/mol",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c81f1903-fa14-5949-a706-003612e635c8",
+       "label": "D",
+       "content": "57.12 kJ/mol",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4259df73-daf7-5212-9516-3a98159c77d1",
+     "key": "chem-en-04",
+     "stem": "Use the bond energies H–H = 436, Cl–Cl = 242 and H–Cl = 431 kJ/mol to find ΔH for H₂ + Cl₂ → 2HCl.",
+     "image_url": null,
+     "explanation": "Bonds broken $= 436 + 242 = 678$; bonds made $= 2 \\times 431 = 862$; $\\Delta H = 678 - 862 = -184$ kJ/mol\n\n**Why the other options are wrong**\n\n- 184 kJ/mol: You subtracted the bonds broken from the bonds made; ΔH = bonds broken − bonds made.\n- 247 kJ/mol: You formed only one H–Cl bond; two are formed.\n- −1540 kJ/mol: You added all the bond energies and made the total negative.",
+     "position": 4,
+     "options": [
+      {
+       "id": "1d5767fa-90e3-5ddf-93ce-ab2991fde6e0",
+       "label": "A",
+       "content": "−1540 kJ/mol",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "58b42e4c-45f4-5425-803c-2c8b67e0cefe",
+       "label": "B",
+       "content": "−184 kJ/mol",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "46e054a6-5d91-540c-b77f-6debff46fc36",
+       "label": "C",
+       "content": "184 kJ/mol",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8e8f9aca-602d-5321-bf69-d1b09936f8ed",
+       "label": "D",
+       "content": "247 kJ/mol",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "706fe690-73ef-5ee7-a2f0-ab664100342d",
+     "key": "chem-en-05",
+     "stem": "Which of the following is an endothermic process?",
+     "image_url": null,
+     "explanation": "The solution gets colder as ammonium nitrate dissolves, because heat is taken in from the surroundings.\n\n**Why the other options are wrong**\n\n- Burning methane: Combustion always gives out heat.\n- Neutralising an acid with an alkali: Neutralisation is exothermic (about −57 kJ/mol).\n- Respiration: Respiration releases energy from glucose.",
+     "position": 5,
+     "options": [
+      {
+       "id": "5e279a38-2fc4-53ad-adcf-c30ea1dd2b91",
+       "label": "A",
+       "content": "Burning methane",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "caf0150d-edd8-5132-b32c-67697e170205",
+       "label": "B",
+       "content": "Neutralising an acid with an alkali",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c6fbdb05-00e8-5bcb-974b-87096bacfda8",
+       "label": "C",
+       "content": "Dissolving ammonium nitrate in water",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "287ca856-6431-5c70-a388-98feb1c4362f",
+       "label": "D",
+       "content": "Respiration",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "101ef470-a542-520c-a91d-b0577bbece34",
+   "topic": "Rate of Reaction",
+   "title": "Rate of Reaction: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on rate of reaction, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 129,
+   "questions": [
+    {
+     "id": "777359fa-6a5d-50e0-b1ba-d60c2c01e8c3",
+     "key": "chem-rr-01",
+     "stem": "Raising the temperature increases the rate of a reaction mainly because",
+     "image_url": null,
+     "explanation": "Faster particles collide more often, and a much larger fraction of collisions have enough energy to react.\n\n**Why the other options are wrong**\n\n- the activation energy is lowered: Temperature does not change the activation energy; a catalyst does.\n- the particles become larger: Particle size does not change with temperature.\n- the concentration of the reactants increases: Heating does not change concentration.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f779fa9b-f5da-5494-8c4f-3dab9eb389da",
+       "label": "A",
+       "content": "the activation energy is lowered",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4506e139-e4f7-5309-a7bb-35b5fcd81461",
+       "label": "B",
+       "content": "the particles become larger",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5c45f333-a9fe-526b-8e30-21fd25372dc0",
+       "label": "C",
+       "content": "the concentration of the reactants increases",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9dc6c18d-016f-51b7-af1f-8b29654fb111",
+       "label": "D",
+       "content": "more particles have energy equal to or greater than the activation energy",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "35e1947e-4dee-598b-bc04-564eec4033c8",
+     "key": "chem-rr-02",
+     "stem": "Powdered marble reacts faster with dilute hydrochloric acid than the same mass of marble lumps because the powder",
+     "image_url": null,
+     "explanation": "More particles are exposed to the acid, so there are more collisions per second.\n\n**Why the other options are wrong**\n\n- has a lower activation energy: Both forms are the same substance with the same activation energy.\n- is more concentrated: Concentration applies to solutions, not to the solid.\n- contains more calcium carbonate: The masses are the same.",
+     "position": 2,
+     "options": [
+      {
+       "id": "df4290d1-a454-5150-b2de-954bb2e371b6",
+       "label": "A",
+       "content": "has a larger surface area",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3ea2d33c-f952-5aa5-b340-5ba5a8e736fc",
+       "label": "B",
+       "content": "has a lower activation energy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8cc7a142-c536-5d6b-bb27-ed73ed04ff98",
+       "label": "C",
+       "content": "is more concentrated",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6a7df4f4-e5b8-5324-bf8b-3f2aa8a0c55b",
+       "label": "D",
+       "content": "contains more calcium carbonate",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4ec3b3d0-f374-5bda-9c80-4d1135526ebe",
+     "key": "chem-rr-03",
+     "stem": "A catalyst increases the rate of a reaction by",
+     "image_url": null,
+     "explanation": "With a lower activation energy, a greater fraction of collisions are successful at the same temperature.\n\n**Why the other options are wrong**\n\n- increasing the energy of the reacting particles: A catalyst does not heat the reactants.\n- shifting the equilibrium towards the products: A catalyst does not change the position of equilibrium.\n- being used up in the reaction: A catalyst is unchanged chemically at the end.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c3b1231f-11a7-5a27-9ca8-eaee2f9bf725",
+       "label": "A",
+       "content": "increasing the energy of the reacting particles",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e48fab50-5dca-5485-810e-465d76e5a801",
+       "label": "B",
+       "content": "providing an alternative pathway with a lower activation energy",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "597e9717-1406-597b-9a51-b9608990dce9",
+       "label": "C",
+       "content": "shifting the equilibrium towards the products",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "34c2c410-706f-554c-b590-e0d0e8d34fbd",
+       "label": "D",
+       "content": "being used up in the reaction",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2effe1e8-909f-5ff8-8c54-6af7ce081908",
+     "key": "chem-rr-04",
+     "stem": "In the first 30 s of a reaction, 60 cm³ of gas is collected. What is the average rate of the reaction over this time?",
+     "image_url": null,
+     "explanation": "Average rate $= \\dfrac{\\text{volume of gas}}{\\text{time}} = \\dfrac{60}{30} = 2$ cm³/s\n\n**Why the other options are wrong**\n\n- 0.5 cm³/s: You divided the time by the volume.\n- 1800 cm³/s: You multiplied instead of dividing.\n- 30 cm³/s: You divided the volume by 2 instead of by the time.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c684ed5d-9ab4-5772-b3d9-8eb9f538e2a5",
+       "label": "A",
+       "content": "0.5 cm³/s",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fbf3791e-febb-52ba-a086-e5b58b0a04f9",
+       "label": "B",
+       "content": "2 cm³/s",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4b4abe6d-6afe-50f9-82eb-a0e4ad93b72f",
+       "label": "C",
+       "content": "30 cm³/s",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ea5d9d2b-1134-50c9-932c-f2ce554ff737",
+       "label": "D",
+       "content": "1800 cm³/s",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "52683b65-e4a8-55b5-8a6d-609b3450450a",
+     "key": "chem-rr-05",
+     "stem": "On a graph of the volume of gas collected against time, the curve eventually becomes horizontal because",
+     "image_url": null,
+     "explanation": "When the limiting reactant is used up, no more gas is produced, so the volume stays constant.\n\n**Why the other options are wrong**\n\n- the catalyst has been used up: Catalysts are not used up.\n- the gas has stopped being collected: The apparatus still collects gas; none is being made.\n- the activation energy has increased: The activation energy does not change during the reaction.",
+     "position": 5,
+     "options": [
+      {
+       "id": "10f2622e-1edf-5da2-9ce7-341bdd9bc398",
+       "label": "A",
+       "content": "the catalyst has been used up",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "34cc7ea1-cf86-5224-b05e-efb740b2e902",
+       "label": "B",
+       "content": "the gas has stopped being collected",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bd3e3ab8-6c49-5e1c-ab92-16f2d6c88f61",
+       "label": "C",
+       "content": "one of the reactants has been used up",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0a7b6975-eba7-51dd-a22b-1d00f62e7fd4",
+       "label": "D",
+       "content": "the activation energy has increased",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c39691ac-5883-5b57-b96b-70e5a92b6c17",
+   "topic": "Chemical Equilibrium",
+   "title": "Chemical Equilibrium: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on chemical equilibrium, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 130,
+   "questions": [
+    {
+     "id": "b2be001e-4488-57ba-a9b8-e550603c9644",
+     "key": "chem-eqm-01",
+     "stem": "A reversible reaction is in dynamic equilibrium when",
+     "image_url": null,
+     "explanation": "Because the rates are equal, the concentrations stop changing even though particles keep reacting both ways.\n\n**Why the other options are wrong**\n\n- both reactions have stopped: At dynamic equilibrium, both reactions continue.\n- the concentrations of reactants and products are equal: The concentrations are constant, not necessarily equal.\n- all the reactants have been used up: Some reactants always remain at equilibrium.",
+     "position": 1,
+     "options": [
+      {
+       "id": "2b3622b0-2079-5e00-b921-ee43ae3c0001",
+       "label": "A",
+       "content": "both reactions have stopped",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7338c93d-f151-5c71-9c58-b5c63921ff88",
+       "label": "B",
+       "content": "the concentrations of reactants and products are equal",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "af383b80-71d2-5fde-8c60-2526a17518fa",
+       "label": "C",
+       "content": "all the reactants have been used up",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "15dfeae2-82b5-5137-a5ac-f732201e91d2",
+       "label": "D",
+       "content": "the forward and backward reactions continue at equal rates",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9779724a-c343-533f-ae71-fb39d6d6a717",
+     "key": "chem-eqm-02",
+     "stem": "For N₂(g) + 3H₂(g) ⇌ 2NH₃(g), increasing the pressure",
+     "image_url": null,
+     "explanation": "By Le Chatelier's principle, the system reduces the pressure by shifting to the side with fewer gas molecules.\n\n**Why the other options are wrong**\n\n- decreases the yield of ammonia, because there are fewer gas molecules on the right: Higher pressure favours the side with fewer gas molecules.\n- has no effect, because all the substances are gases: The number of gas molecules differs: 4 on the left, 2 on the right.\n- increases the yield, because the reaction is exothermic: Pressure acts through the number of gas molecules, not through ΔH.",
+     "position": 2,
+     "options": [
+      {
+       "id": "3785543b-efbf-5d10-894c-8421fc89a498",
+       "label": "A",
+       "content": "increases the yield of ammonia, because there are fewer gas molecules on the right",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "add4eab2-4f37-537c-81b4-a647b6e2d65f",
+       "label": "B",
+       "content": "decreases the yield of ammonia, because there are fewer gas molecules on the right",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "916ca24e-b18f-5e1a-af02-615a3b4dec62",
+       "label": "C",
+       "content": "has no effect, because all the substances are gases",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "48243e37-f042-5134-8c75-ac5249522642",
+       "label": "D",
+       "content": "increases the yield, because the reaction is exothermic",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "58c85eea-2d6d-56df-952e-f7f653957e0e",
+     "key": "chem-eqm-03",
+     "stem": "For N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92 kJ/mol, raising the temperature",
+     "image_url": null,
+     "explanation": "Heating favours the endothermic direction (the backward reaction), so less ammonia is present at equilibrium; it does make equilibrium faster.\n\n**Why the other options are wrong**\n\n- increases the yield of ammonia: The forward reaction is exothermic, so heating favours the backward reaction.\n- does not change the yield of ammonia: Temperature changes the position of equilibrium.\n- stops the reaction: The reaction continues, faster, at a higher temperature.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2c5528d1-3946-51f0-b491-061a68167952",
+       "label": "A",
+       "content": "increases the yield of ammonia",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0c2862f1-b756-5e1a-b60f-d7ba36a7bdd9",
+       "label": "B",
+       "content": "decreases the yield of ammonia",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "00eea7fd-9f07-5bd4-ae40-68e1ffd548b3",
+       "label": "C",
+       "content": "does not change the yield of ammonia",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1f7106b5-b0ec-5201-9fad-330b722ee167",
+       "label": "D",
+       "content": "stops the reaction",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8b660740-951d-5317-8953-5854945a600d",
+     "key": "chem-eqm-04",
+     "stem": "Adding a catalyst to a reaction at equilibrium",
+     "image_url": null,
+     "explanation": "A catalyst lets equilibrium be reached sooner, but the equilibrium amounts are the same.\n\n**Why the other options are wrong**\n\n- increases the yield of products: A catalyst speeds up both directions equally.\n- decreases the yield of products: A catalyst does not favour either direction.\n- changes the value of the equilibrium constant: Only temperature changes the equilibrium constant.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c808aebe-cdf7-5bbe-989b-b72cd8d6e590",
+       "label": "A",
+       "content": "increases the yield of products",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "be15c991-a00e-5633-927d-2ff2d004ce37",
+       "label": "B",
+       "content": "decreases the yield of products",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dbff6fe3-e6dc-582e-98d2-80bc4b2aafab",
+       "label": "C",
+       "content": "does not change the position of equilibrium",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b50ba719-760e-5acb-bc6d-b52074f3a23b",
+       "label": "D",
+       "content": "changes the value of the equilibrium constant",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "76cae135-1801-5447-843d-900567590603",
+     "key": "chem-eqm-05",
+     "stem": "For H₂(g) + I₂(g) ⇌ 2HI(g), the equilibrium concentrations are [H₂] = 0.1, [I₂] = 0.1 and [HI] = 0.8 mol/dm³. What is Kc?",
+     "image_url": null,
+     "explanation": "$K_c = \\dfrac{[\\text{HI}]^2}{[\\text{H}_2][\\text{I}_2]} = \\dfrac{0.8^2}{0.1 \\times 0.1} = \\dfrac{0.64}{0.01} = 64$\n\n**Why the other options are wrong**\n\n- 80: You did not square [HI]; its coefficient is 2.\n- 8: You divided by only one of the reactant concentrations and did not square [HI].\n- 0.015625: You put the reactants over the products.",
+     "position": 5,
+     "options": [
+      {
+       "id": "668ca55c-26bc-568a-94c4-aa4ea099594f",
+       "label": "A",
+       "content": "0.015625",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cb770f6e-13fe-5bb6-81f7-8dc913169027",
+       "label": "B",
+       "content": "8",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2292bd19-5592-5ccd-9435-6a79c167d8df",
+       "label": "C",
+       "content": "64",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "22d3b083-49dd-505f-b186-44cc47a203d2",
+       "label": "D",
+       "content": "80",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "045ee2eb0101"
+}

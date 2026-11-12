@@ -354,5 +354,89 @@
    "60dc77fb-c7e3-5254-9bf0-6c1a9077e009"
   ],
   "questions": 56
+ },
+ {
+  "name": "chemistry_set1_p1",
+  "label": "Chemistry: set 1 (foundations, atoms, bonding and chemical calculations)",
+  "subject_slug": "chemistry",
+  "version": "20936fdce282",
+  "papers": [
+   "fff88fe5-776b-5314-b1d8-727f4d7671d8",
+   "b8646aa8-aba4-5eff-844e-b6b96553db2a",
+   "3c13c505-d924-59da-8933-d616b9b15c69",
+   "86aedc3f-bfca-58fe-ac33-aca9bf8b3f3a",
+   "f56fcce2-8be7-5204-b015-d98180d9a984",
+   "52a97a44-04b3-581c-9e7d-7d6102c9232b",
+   "83190417-3cd5-5d0c-8edc-900a903aa48e",
+   "c7507db0-f00a-5497-97eb-4f0f44466c1b",
+   "d3ee7982-14da-5a17-a3e6-a2f06a9f8e0c",
+   "9076ba4d-3803-59b4-8449-ab02481b04a9",
+   "8a2c2de2-8b09-5f4c-815d-f7b2f3d3353e"
+  ],
+  "questions": 55
+ },
+ {
+  "name": "chemistry_set2_p1",
+  "label": "Chemistry: set 2 (acids, salts, solutions, redox and physical chemistry)",
+  "subject_slug": "chemistry",
+  "version": "045ee2eb0101",
+  "papers": [
+   "e0ff4982-ddaa-5964-84fa-4fd26ba45a54",
+   "5a729db5-8de2-597d-8520-6674f97de84f",
+   "d3dd4eae-2a77-5566-8ad3-14f5b21c6c32",
+   "a3864f3d-6996-5ae8-b515-d92407cf1888",
+   "10e29ac1-5491-5cd5-a935-1adeadbbe01f",
+   "28da0b58-6eb7-5aff-a698-0ddd31297974",
+   "dffa0bf4-ef26-5f30-a5d8-5b8f8235aa23",
+   "25bce57e-ec45-56f4-b270-a327cd833703",
+   "f59b319c-4352-531f-8fbf-a670ac413965",
+   "101ef470-a542-520c-a91d-b0577bbece34",
+   "c39691ac-5883-5b57-b96b-70e5a92b6c17"
+  ],
+  "questions": 55
+ },
+ {
+  "name": "chemistry_set3_p1",
+  "label": "Chemistry: set 3 (non-metals, metals and industrial chemistry)",
+  "subject_slug": "chemistry",
+  "version": "5ad775dfe6a7",
+  "papers": [
+   "2bd206ed-d0c7-59de-8156-6be6f60a51b7",
+   "8c8a1754-d72c-5363-b24e-c0e5e9c07097",
+   "9d4e6419-c4b6-59c1-bf7e-123600509dd0",
+   "7cac4eaa-2d66-550d-af2c-57cc87fbbfd9",
+   "9f8b70a5-b5e6-5f6d-a296-aafdd8370098",
+   "7aa234d3-4e3a-568b-8602-8d89c82b56c4",
+   "14093205-e452-5365-8cae-22c2fed7c49b",
+   "275109c0-cb82-56d9-b50b-3c60e87fc6a5",
+   "7e67ad84-7586-587c-ac04-865a10bbe8cb",
+   "ac3d0e56-a841-5362-9863-f1affe89536e",
+   "12661598-44de-5bc5-9169-c5a0688a9f65",
+   "a256d3db-765d-574f-b785-d19fb7a0c6d6"
+  ],
+  "questions": 60
+ },
+ {
+  "name": "chemistry_set4_p1",
+  "label": "Chemistry: set 4 (organic, environmental and practical chemistry)",
+  "subject_slug": "chemistry",
+  "version": "9226c122ddbc",
+  "papers": [
+   "eccc653e-f449-5593-a9f4-aed424948cdc",
+   "50658036-f282-5202-ad11-81dfb6b06fff",
+   "f17308a9-1bdb-507f-a99a-145b0bb30716",
+   "57451097-0572-5e3c-a751-5875f1b8177f",
+   "273bcf7f-5154-562f-92fc-bcb5154afd1b",
+   "58b4053b-5698-5282-a611-7cf5716df44c",
+   "a4b2709a-fb00-55d5-a6da-665f82bc10d0",
+   "fcedb672-c990-58ea-b8a6-d6a438f6dcc9",
+   "b9c9de78-a6cf-5e6a-9fbd-f2d59f9b39a3",
+   "85f9f816-c1ad-5aa4-b948-161e35f2f06f",
+   "6d92df29-683c-536c-8553-c69db73745f9",
+   "8364c13f-9b07-5fd5-859a-657bad8a14ae",
+   "1379e7d1-9a47-5dac-93c7-6b20c52e9126",
+   "8e217615-9dfd-54ef-9d8b-e5bf181b4371"
+  ],
+  "questions": 70
  }
 ]

@@ -223,6 +223,45 @@ SETS += [
     },
 ]
 
+SETS += [
+    {
+        "module": ROOT / "content/questions/chemistry/set1_p1.py",
+        "subject_slug": "chemistry",
+        "name": "chemistry_set1_p1",
+        "label": "Chemistry: set 1 (foundations, atoms, bonding and chemical calculations)",
+        "review": ROOT / "content/questions/chemistry/set1_p1.review.md",
+        "sort_from": 100,
+        "checked": "mixed",
+    },
+    {
+        "module": ROOT / "content/questions/chemistry/set2_p1.py",
+        "subject_slug": "chemistry",
+        "name": "chemistry_set2_p1",
+        "label": "Chemistry: set 2 (acids, salts, solutions, redox and physical chemistry)",
+        "review": ROOT / "content/questions/chemistry/set2_p1.review.md",
+        "sort_from": 120,
+        "checked": "mixed",
+    },
+    {
+        "module": ROOT / "content/questions/chemistry/set3_p1.py",
+        "subject_slug": "chemistry",
+        "name": "chemistry_set3_p1",
+        "label": "Chemistry: set 3 (non-metals, metals and industrial chemistry)",
+        "review": ROOT / "content/questions/chemistry/set3_p1.review.md",
+        "sort_from": 140,
+        "checked": "mixed",
+    },
+    {
+        "module": ROOT / "content/questions/chemistry/set4_p1.py",
+        "subject_slug": "chemistry",
+        "name": "chemistry_set4_p1",
+        "label": "Chemistry: set 4 (organic, environmental and practical chemistry)",
+        "review": ROOT / "content/questions/chemistry/set4_p1.review.md",
+        "sort_from": 160,
+        "checked": "mixed",
+    },
+]
+
 OUT = ROOT / "src/content/question-sets"
 SITE = "https://wasscetutor.com"  # diagrams are served from the website so old app builds can show them too
 LABELS = "ABCD"

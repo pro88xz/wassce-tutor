@@ -1,0 +1,2208 @@
+{
+ "name": "chemistry_set1_p1",
+ "label": "Chemistry: set 1 (foundations, atoms, bonding and chemical calculations)",
+ "subject_slug": "chemistry",
+ "papers": [
+  {
+   "id": "fff88fe5-776b-5314-b1d8-727f4d7671d8",
+   "topic": "Introduction to Chemistry",
+   "title": "Introduction to Chemistry: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on introduction to chemistry, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 100,
+   "questions": [
+    {
+     "id": "0cb3a1d1-3865-5ceb-90a1-7bb003c0eb2b",
+     "key": "chem-in-01",
+     "stem": "The branch of chemistry that deals mainly with the compounds of carbon is",
+     "image_url": null,
+     "explanation": "Organic chemistry is the study of carbon compounds (except simple ones such as carbonates and carbon oxides).\n\n**Why the other options are wrong**\n\n- inorganic chemistry: Inorganic chemistry studies the other elements and their compounds.\n- physical chemistry: Physical chemistry studies energy, rates and equilibrium in reactions.\n- analytical chemistry: Analytical chemistry finds what substances are present and how much.",
+     "position": 1,
+     "options": [
+      {
+       "id": "6bd6e54d-635d-5c42-9a53-2776ada23748",
+       "label": "A",
+       "content": "inorganic chemistry",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f4a72529-401b-50dc-8b7c-44c2e80fd8d3",
+       "label": "B",
+       "content": "physical chemistry",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "309f3066-3c25-565e-9208-c82ecddd3c28",
+       "label": "C",
+       "content": "analytical chemistry",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "11ef819e-9bee-5c1a-97e1-7d5ed5651c4e",
+       "label": "D",
+       "content": "organic chemistry",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aee7ee4a-15b9-520c-b220-d59e80541f2f",
+     "key": "chem-in-02",
+     "stem": "Which of the following is the correct order of steps in the scientific method?",
+     "image_url": null,
+     "explanation": "A scientist observes, proposes a hypothesis to explain the observation, tests it by experiment and then draws a conclusion.\n\n**Why the other options are wrong**\n\n- Hypothesis, observation, conclusion, experiment: A conclusion cannot come before the experiment that tests it.\n- Experiment, conclusion, observation, hypothesis: A hypothesis is made before it is tested, not after.\n- Conclusion, experiment, hypothesis, observation: This reverses the whole method.",
+     "position": 2,
+     "options": [
+      {
+       "id": "5d03478e-5679-561b-b3a6-6f286d803a82",
+       "label": "A",
+       "content": "Observation, hypothesis, experiment, conclusion",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0efd0879-69b4-5efd-ae39-5070440739e7",
+       "label": "B",
+       "content": "Hypothesis, observation, conclusion, experiment",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5d47a897-daa7-5ea8-9844-4a69577dedf4",
+       "label": "C",
+       "content": "Experiment, conclusion, observation, hypothesis",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "eae7e15a-a26f-53d6-92dd-177d9e9f8601",
+       "label": "D",
+       "content": "Conclusion, experiment, hypothesis, observation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3e23b508-c0fc-5515-bedd-4e8f4d6f6e18",
+     "key": "chem-in-03",
+     "stem": "Which apparatus measures exactly 25.0 cm³ of a solution most accurately?",
+     "image_url": null,
+     "explanation": "A 25.0 cm³ pipette delivers one fixed volume to about ±0.05 cm³; it is used for the aliquot in titrations.\n\n**Why the other options are wrong**\n\n- Measuring cylinder: A measuring cylinder is much less accurate (about ±0.5 cm³).\n- Beaker: Beaker markings are only rough guides.\n- Conical flask: A conical flask holds the solution during a titration; it does not measure volume accurately.",
+     "position": 3,
+     "options": [
+      {
+       "id": "a15c2176-f8e4-5921-9fc3-d78a44bf8d23",
+       "label": "A",
+       "content": "Measuring cylinder",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5a0f37c9-dd8f-5896-9b74-c9aaf62e5e90",
+       "label": "B",
+       "content": "Beaker",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2eb7cd16-0ac7-55bb-9f89-3adabb730abf",
+       "label": "C",
+       "content": "Conical flask",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "22bfe4fe-d036-5bca-962f-d8fbb890ecff",
+       "label": "D",
+       "content": "Pipette",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ec3edcd1-a6d8-5bf8-ae0d-634c0a0de05a",
+     "key": "chem-in-04",
+     "stem": "A reagent bottle carries a label showing a skull and crossbones. The substance is",
+     "image_url": null,
+     "explanation": "A skull and crossbones warns that the substance is toxic (poisonous) if swallowed, breathed in or absorbed through the skin.\n\n**Why the other options are wrong**\n\n- corrosive: The corrosive symbol shows liquid dripping onto a hand and a surface.\n- flammable: The flammable symbol is a flame.\n- oxidising: The oxidising symbol is a flame above a circle.",
+     "position": 4,
+     "options": [
+      {
+       "id": "437b5efe-75e6-510c-a8cb-933350e0c58c",
+       "label": "A",
+       "content": "toxic",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0f1a4b30-d52e-5f27-b426-41e64ba91c11",
+       "label": "B",
+       "content": "corrosive",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ae1ef398-453a-547d-b1de-9b9121d854a3",
+       "label": "C",
+       "content": "flammable",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "90655aee-cb07-5e87-aa62-5c3785748568",
+       "label": "D",
+       "content": "oxidising",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9df620dd-1a17-594f-b030-49c83e2198f0",
+     "key": "chem-in-05",
+     "stem": "Which of the following is a physical change?",
+     "image_url": null,
+     "explanation": "In a physical change no new substance is formed and the change is easily reversed: liquid wax solidifies again on cooling.\n\n**Why the other options are wrong**\n\n- Rusting of an iron roof: Rusting forms a new substance, hydrated iron(III) oxide.\n- Burning of charcoal: Burning forms carbon(IV) oxide, a new substance.\n- Souring of palm wine: Ethanol is oxidised to ethanoic acid, a new substance.",
+     "position": 5,
+     "options": [
+      {
+       "id": "0511fafe-c33d-544a-91a0-211daeca3c73",
+       "label": "A",
+       "content": "Rusting of an iron roof",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bb8b5094-1550-5c63-a6c4-f8b0ebc6982d",
+       "label": "B",
+       "content": "Burning of charcoal",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d3a8ac19-a116-5a69-a76e-11e08b5a8dd8",
+       "label": "C",
+       "content": "Souring of palm wine",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "df447674-a831-5f90-aa15-6445c3075d6c",
+       "label": "D",
+       "content": "Melting of candle wax",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b8646aa8-aba4-5eff-844e-b6b96553db2a",
+   "topic": "Particulate Nature of Matter",
+   "title": "Particulate Nature of Matter: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on particulate nature of matter, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 101,
+   "questions": [
+    {
+     "id": "628f4af4-e80c-5e04-8e79-f34f00a85dc0",
+     "key": "chem-pm-01",
+     "stem": "Which of the following is a compound?",
+     "image_url": null,
+     "explanation": "A compound contains two or more elements chemically combined in a fixed ratio: NaCl is always 1 Na to 1 Cl.\n\n**Why the other options are wrong**\n\n- Air: Air is a mixture of gases in no fixed proportion.\n- Brass: Brass is an alloy, a mixture of copper and zinc.\n- Sea water: Sea water is a mixture of water and dissolved salts.",
+     "position": 1,
+     "options": [
+      {
+       "id": "2ba96cb8-223e-5258-80f0-62ca7bb8cee2",
+       "label": "A",
+       "content": "Sodium chloride",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1ac591f5-153b-5e34-8b7b-e5a53c6c70d8",
+       "label": "B",
+       "content": "Air",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4dc19349-24b6-59e8-8d59-d021e35d85d5",
+       "label": "C",
+       "content": "Brass",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "107b09f4-11a4-555c-adef-b574ff68c3ff",
+       "label": "D",
+       "content": "Sea water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4edc32a6-6b3f-5b13-99ca-295f69217be2",
+     "key": "chem-pm-02",
+     "stem": "The coloured dyes in a sample of black ink are best separated by",
+     "image_url": null,
+     "explanation": "Dyes move up the paper at different rates because they differ in solubility in the solvent and attraction to the paper.\n\n**Why the other options are wrong**\n\n- simple distillation: Distillation separates a liquid solvent from dissolved solids, not dyes from each other.\n- filtration: The dyes are dissolved, so they pass through filter paper.\n- sublimation: Dyes in ink do not sublime.",
+     "position": 2,
+     "options": [
+      {
+       "id": "700cfebb-fb26-54ac-9dcd-14a066deb86d",
+       "label": "A",
+       "content": "simple distillation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dd07c061-b44d-56b8-aede-18c3cf9619a7",
+       "label": "B",
+       "content": "paper chromatography",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "be47c79f-c2a3-5b99-9f30-17d7bc06e189",
+       "label": "C",
+       "content": "filtration",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fcae53c0-0ee4-573d-a1f5-4662bd69001a",
+       "label": "D",
+       "content": "sublimation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4ad41dfa-3e1a-5d77-96de-3699cf5f360b",
+     "key": "chem-pm-03",
+     "stem": "On a chromatogram, the solvent front moved 8.0 cm from the base line and a spot moved 3.0 cm. What is the Rf value of the spot?",
+     "image_url": null,
+     "explanation": "$R_f = \\dfrac{\\text{distance moved by spot}}{\\text{distance moved by solvent}} = \\dfrac{3.0}{8.0} = 0.375$\n\n**Why the other options are wrong**\n\n- 2.67: You divided the solvent distance by the spot distance; Rf is always less than 1.\n- 5: That is the difference between the two distances.\n- 0.273: You divided by the sum of the distances instead of the solvent distance.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ffa954dc-d4a0-5f49-98a8-5255a255935b",
+       "label": "A",
+       "content": "0.273",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "282a9ade-501d-592a-93d1-22de2d62e733",
+       "label": "B",
+       "content": "0.375",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "3d704953-4564-57ff-95a1-64f1249d2dcd",
+       "label": "C",
+       "content": "2.67",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e414187b-c350-5f36-9b73-b85e3f58f401",
+       "label": "D",
+       "content": "5",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "76b13d9a-7fff-532e-97ec-9055e6aab08a",
+     "key": "chem-pm-04",
+     "stem": "Which mixture can be separated by sublimation?",
+     "image_url": null,
+     "explanation": "On heating, ammonium chloride sublimes and collects on a cool surface, leaving sodium chloride behind.\n\n**Why the other options are wrong**\n\n- Sand and water: Sand and water are separated by filtration.\n- Ethanol and water: Ethanol and water are separated by fractional distillation.\n- Kerosene and water: Immiscible liquids are separated with a separating funnel.",
+     "position": 4,
+     "options": [
+      {
+       "id": "fb1444fd-ea2f-5d2b-91d1-dcf4fa11ec74",
+       "label": "A",
+       "content": "Sand and water",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1704781c-150c-5da5-a87b-27981209c71c",
+       "label": "B",
+       "content": "Ethanol and water",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8724d226-2f8b-515e-9241-decd5a5c8675",
+       "label": "C",
+       "content": "Kerosene and water",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "14c7d4f5-0478-5b12-aafb-2e22d196892d",
+       "label": "D",
+       "content": "Ammonium chloride and sodium chloride",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8688ba14-e1f2-5630-84f4-2691780c8c32",
+     "key": "chem-pm-05",
+     "stem": "Ethanol (boiling point 78 °C) is separated from water (boiling point 100 °C) by",
+     "image_url": null,
+     "explanation": "A fractionating column gives repeated condensation and boiling, so the more volatile ethanol distils first.\n\n**Why the other options are wrong**\n\n- simple distillation: The boiling points are too close; simple distillation gives a poor separation.\n- using a separating funnel: Ethanol and water are miscible; they do not form two layers.\n- evaporation: Evaporation would lose the ethanol to the air.",
+     "position": 5,
+     "options": [
+      {
+       "id": "780d4171-0104-5a48-ba3f-17975dd5f322",
+       "label": "A",
+       "content": "fractional distillation",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "f1e82637-ecd5-5a8a-98ac-f8dcddaa5f0f",
+       "label": "B",
+       "content": "simple distillation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ab2e77e2-73c0-5210-bb3d-6ac6f886b42f",
+       "label": "C",
+       "content": "using a separating funnel",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9e9d90ae-0794-59f7-bc0a-d9ce31ed42e5",
+       "label": "D",
+       "content": "evaporation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "3c13c505-d924-59da-8933-d616b9b15c69",
+   "topic": "Atomic Structure",
+   "title": "Atomic Structure: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on atomic structure, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 102,
+   "questions": [
+    {
+     "id": "85614e84-dc69-55e5-a7ec-1ea6be4cfab6",
+     "key": "chem-as-01",
+     "stem": "How many neutrons are in an atom of aluminium, mass number 27 and atomic number 13?",
+     "image_url": null,
+     "explanation": "Neutrons $=$ mass number $-$ atomic number $= 27 - 13 = 14$.\n\n**Why the other options are wrong**\n\n- 13: That is the number of protons (the atomic number).\n- 27: That is the mass number: protons plus neutrons.\n- 40: You added the mass number and the atomic number.",
+     "position": 1,
+     "options": [
+      {
+       "id": "589b68b0-3f9b-51c3-9fb5-cb5a2d0a1326",
+       "label": "A",
+       "content": "13",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "71a3db09-1bbb-5cc7-bacb-107a00ef27ad",
+       "label": "B",
+       "content": "14",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d4d1dc8b-3e68-5c5e-b0db-3d778276a760",
+       "label": "C",
+       "content": "27",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c478c342-d7d6-5b43-af12-04535ceb0b6b",
+       "label": "D",
+       "content": "40",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c72a2295-2544-5be2-adef-fa2c6d0aa0c3",
+     "key": "chem-as-02",
+     "stem": "Chlorine consists of 75% chlorine-35 and 25% chlorine-37. What is its relative atomic mass?",
+     "image_url": null,
+     "explanation": "$A_r = \\dfrac{(75 \\times 35) + (25 \\times 37)}{100} = \\dfrac{2625 + 925}{100} = 35.5$\n\n**Why the other options are wrong**\n\n- 36: That is the simple average of 35 and 37; the isotopes are not equally abundant.\n- 35: That is only the most abundant isotope.\n- 36.5: You swapped the percentages of the two isotopes.",
+     "position": 2,
+     "options": [
+      {
+       "id": "1b4aa295-b96c-5a27-9c1a-a0fc52d4c733",
+       "label": "A",
+       "content": "35",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dd3a1962-aeaa-5377-8b2d-04915d494892",
+       "label": "B",
+       "content": "35.5",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8abde1e2-cd8a-5f24-91a3-7ca5e19b67a6",
+       "label": "C",
+       "content": "36",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "21d64d31-33b4-5820-95f7-db1640a815c7",
+       "label": "D",
+       "content": "36.5",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cd9dc1b6-729e-5752-bd8a-57dd2f290d5f",
+     "key": "chem-as-03",
+     "stem": "Isotopes of an element have the same number of",
+     "image_url": null,
+     "explanation": "Isotopes are atoms of the same element (same atomic number) with different mass numbers, e.g. ³⁵Cl and ³⁷Cl.\n\n**Why the other options are wrong**\n\n- neutrons but different numbers of protons: Different numbers of protons would make different elements.\n- nucleons: Isotopes have different mass numbers, so different numbers of nucleons.\n- protons and neutrons: Then they would be identical atoms, not isotopes.",
+     "position": 3,
+     "options": [
+      {
+       "id": "681faeae-3bd8-55bd-870d-5c222ff12e79",
+       "label": "A",
+       "content": "neutrons but different numbers of protons",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "34477604-8081-596d-b0bf-578b8270f0b7",
+       "label": "B",
+       "content": "protons but different numbers of neutrons",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a09373e2-9787-50dd-a2df-d97113d0cb05",
+       "label": "C",
+       "content": "nucleons",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f8d40cc7-88c2-580f-9d26-785c4a707ae1",
+       "label": "D",
+       "content": "protons and neutrons",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b6dca825-6e86-58c5-baa3-d575658e107e",
+     "key": "chem-as-04",
+     "stem": "Which radiation is the most penetrating and is not deflected by an electric field?",
+     "image_url": null,
+     "explanation": "Gamma rays are electromagnetic waves with no charge and no mass; they are stopped only by thick lead or concrete.\n\n**Why the other options are wrong**\n\n- Alpha particles: Alpha particles are the least penetrating and are deflected towards the negative plate.\n- Beta particles: Beta particles are deflected strongly towards the positive plate.\n- Protons: Protons are charged, so they would be deflected.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4128af1c-eacc-561a-b18d-6da888c4f19b",
+       "label": "A",
+       "content": "Alpha particles",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9774bbd7-4976-5ed7-a71f-0e2a778dc112",
+       "label": "B",
+       "content": "Beta particles",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0a60b55a-2692-5e1a-b258-b8e1960d0f23",
+       "label": "C",
+       "content": "Protons",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9a7a0e77-77ba-5505-9250-892270110cbe",
+       "label": "D",
+       "content": "Gamma rays",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "180fc2e3-90cb-5870-b4e2-0b69229cc9d4",
+     "key": "chem-as-05",
+     "stem": "A radioactive isotope has a half-life of 5 days. What mass of an 80 g sample remains after 15 days?",
+     "image_url": null,
+     "explanation": "15 days $= 3$ half-lives: $80 \\to 40 \\to 20 \\to 10$ g, i.e. $80 \\times \\left(\\tfrac{1}{2}\\right)^3 = 10$ g.\n\n**Why the other options are wrong**\n\n- 40 g: That is after one half-life (5 days) only.\n- 20 g: That is after two half-lives (10 days).\n- 26.67 g: You divided by the number of half-lives instead of halving three times.",
+     "position": 5,
+     "options": [
+      {
+       "id": "4835bec6-1435-53c2-a8b1-cde594e2b648",
+       "label": "A",
+       "content": "10 g",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "126ab9b1-7dd3-5a4a-bdb2-805322b879fe",
+       "label": "B",
+       "content": "20 g",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bceecf57-eda3-5602-8da8-61a76919be64",
+       "label": "C",
+       "content": "26.67 g",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "adb77300-c664-5b17-94c9-aca4dfcdd5bd",
+       "label": "D",
+       "content": "40 g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "86aedc3f-bfca-58fe-ac33-aca9bf8b3f3a",
+   "topic": "Electronic Configuration",
+   "title": "Electronic Configuration: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on electronic configuration, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 103,
+   "questions": [
+    {
+     "id": "c959f6f2-eccd-5367-8f12-34bbb2865338",
+     "key": "chem-ec-01",
+     "stem": "Which is the electronic configuration of sodium (atomic number 11)?",
+     "image_url": null,
+     "explanation": "Fill sub-shells in order of energy: 1s² 2s² 2p⁶ (10 electrons), then the eleventh electron goes into 3s.\n\n**Why the other options are wrong**\n\n- 1s² 2s² 2p⁶ 3s²: That has 12 electrons: it is magnesium.\n- 1s² 2s² 2p⁶ 3p¹: The 3s sub-shell fills before 3p.\n- 1s² 2s² 2p⁷: A p sub-shell holds at most 6 electrons.",
+     "position": 1,
+     "options": [
+      {
+       "id": "2da0d0f3-1a5f-5328-81a4-f4ce6bc76d26",
+       "label": "A",
+       "content": "1s² 2s² 2p⁶ 3s¹",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "20f74031-1cf0-560a-a15f-4b4a3b51f521",
+       "label": "B",
+       "content": "1s² 2s² 2p⁶ 3s²",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "030630c5-be9b-5da4-94af-5398e4fe8f7d",
+       "label": "C",
+       "content": "1s² 2s² 2p⁶ 3p¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cac86fcd-4a54-598e-819f-6b3c1b4970da",
+       "label": "D",
+       "content": "1s² 2s² 2p⁷",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ef6a2a98-e366-5e7f-aa2b-109c7113974d",
+     "key": "chem-ec-02",
+     "stem": "What is the maximum number of electrons that the third shell (n = 3) can hold?",
+     "image_url": null,
+     "explanation": "Maximum $= 2n^2 = 2 \\times 3^2 = 18$ (3s holds 2, 3p holds 6 and 3d holds 10).\n\n**Why the other options are wrong**\n\n- 8: Eight is the number in the outer shell of a noble gas, not the capacity of the third shell.\n- 9: That is n², the number of orbitals; each orbital holds two electrons.\n- 6: That is 2n.",
+     "position": 2,
+     "options": [
+      {
+       "id": "33ac592a-34e4-5f43-928d-d6566cea9e2c",
+       "label": "A",
+       "content": "6",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4ba74da0-70f6-58d5-808f-a65d17e1eb1c",
+       "label": "B",
+       "content": "8",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c3e7d0f9-65e5-55e6-b7e9-f7576291e17b",
+       "label": "C",
+       "content": "9",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "35f38263-f6b4-5a1a-a70e-b8067f920890",
+       "label": "D",
+       "content": "18",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "442f9f10-94d2-5e70-8c72-dee2bd838490",
+     "key": "chem-ec-03",
+     "stem": "Electrons occupy orbitals of equal energy singly, with parallel spins, before pairing up. This is",
+     "image_url": null,
+     "explanation": "In nitrogen, for example, the three 2p electrons occupy the three 2p orbitals singly: 2p ↑ ↑ ↑.\n\n**Why the other options are wrong**\n\n- the Pauli exclusion principle: Pauli's principle says an orbital holds at most two electrons, with opposite spins.\n- the Aufbau principle: The Aufbau principle says sub-shells fill in order of increasing energy.\n- the octet rule: The octet rule concerns atoms gaining a stable outer shell of eight in bonding.",
+     "position": 3,
+     "options": [
+      {
+       "id": "766e2fbd-4cd2-55b3-b0e6-324ae4dd7ea9",
+       "label": "A",
+       "content": "the Pauli exclusion principle",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5f2822c3-a893-5bdd-8689-bc31b685dc5a",
+       "label": "B",
+       "content": "Hund's rule",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "76771294-8cd2-527c-9f03-ddfc49aaaca8",
+       "label": "C",
+       "content": "the Aufbau principle",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cdee804d-1b39-5021-b394-0695eee5eaf1",
+       "label": "D",
+       "content": "the octet rule",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c93cfaf3-45ee-56b9-b6a7-5535fbb5aa1d",
+     "key": "chem-ec-04",
+     "stem": "The electronic configuration of chromium (atomic number 24) is",
+     "image_url": null,
+     "explanation": "Chromium (and copper, [Ar] 3d¹⁰ 4s¹) are exceptions: one 4s electron moves into 3d to give a half-filled (or full) d sub-shell.\n\n**Why the other options are wrong**\n\n- [Ar] 3d⁴ 4s²: This is the expected order, but a half-filled 3d⁵ sub-shell is more stable.\n- [Ar] 3d⁶: The 4s orbital is occupied in the chromium atom.\n- [Ar] 4s² 4p⁴: The 3d sub-shell fills before 4p.",
+     "position": 4,
+     "options": [
+      {
+       "id": "0292af85-0a4c-5674-83da-a6c02f833655",
+       "label": "A",
+       "content": "[Ar] 3d⁴ 4s²",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0efe1aa9-39bc-57b6-b086-b904bfac837d",
+       "label": "B",
+       "content": "[Ar] 3d⁶",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a08cc3e8-1dae-590d-8890-912eaed205ce",
+       "label": "C",
+       "content": "[Ar] 4s² 4p⁴",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f9def50d-e8bf-57f7-8ffe-36b159fb868e",
+       "label": "D",
+       "content": "[Ar] 3d⁵ 4s¹",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c32f6212-05e3-522b-98e4-b78dde95b2fb",
+     "key": "chem-ec-05",
+     "stem": "How many unpaired electrons are present in a nitrogen atom, 1s² 2s² 2p³?",
+     "image_url": null,
+     "explanation": "The three 2p electrons occupy the three 2p orbitals singly (Hund's rule), so there are 3 unpaired electrons.\n\n**Why the other options are wrong**\n\n- 1: You paired two of the 2p electrons; by Hund's rule they stay unpaired.\n- 5: That is the number of outer (valence) electrons, including the paired 2s electrons.\n- 0: Only the 1s and 2s electrons are paired.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9422bd28-909c-5662-95e4-e5e9b6eb6b04",
+       "label": "A",
+       "content": "0",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "edfd94fd-5a99-5965-9323-0bbd72a39da8",
+       "label": "B",
+       "content": "1",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bcefce6d-9ef0-5638-9aee-0ef3b718592e",
+       "label": "C",
+       "content": "3",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9be6c50b-3262-5618-9f93-5eaea0f5d28f",
+       "label": "D",
+       "content": "5",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f56fcce2-8be7-5204-b015-d98180d9a984",
+   "topic": "The Periodic Table and Periodicity",
+   "title": "The Periodic Table and Periodicity: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the periodic table and periodicity, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 104,
+   "questions": [
+    {
+     "id": "e4eb41f1-05a5-5eda-a595-48d63b80488e",
+     "key": "chem-pt-01",
+     "stem": "An element has the electron arrangement 2, 8, 7. In which group and period is it?",
+     "image_url": null,
+     "explanation": "Number of occupied shells = period (3); number of outer electrons = group (VII). The element is chlorine.\n\n**Why the other options are wrong**\n\n- Group III, period 7: You swapped the group and the period.\n- Group VII, period 2: It has three occupied shells, so it is in period 3.\n- Group I, period 3: It has 7 outer electrons, so it is in group VII.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a4b91d1e-30b7-55d0-b98b-c8ec654e2583",
+       "label": "A",
+       "content": "Group VII, period 3",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b64ac869-e9a8-5544-a086-1af3929bdfbd",
+       "label": "B",
+       "content": "Group III, period 7",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "29821059-f067-5940-94a6-4ee0b3d4f728",
+       "label": "C",
+       "content": "Group VII, period 2",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5c2a6ac3-df99-5f7d-aea4-6242b509f0b0",
+       "label": "D",
+       "content": "Group I, period 3",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d4b0ab41-de7b-57b5-a724-0e2cbfcffe8c",
+     "key": "chem-pt-02",
+     "stem": "Across a period from left to right, the atomic radius generally",
+     "image_url": null,
+     "explanation": "Each step adds a proton; the outer electrons in the same shell are attracted more strongly, so the atom shrinks.\n\n**Why the other options are wrong**\n\n- increases, because more electrons are added: The electrons go into the same shell and are pulled in more strongly.\n- decreases, because more shells are added: The number of shells stays the same across a period.\n- stays the same, because the number of shells is constant: The rising nuclear charge pulls the shell closer.",
+     "position": 2,
+     "options": [
+      {
+       "id": "9749f350-8db2-505c-93aa-7abcfa7640df",
+       "label": "A",
+       "content": "increases, because more electrons are added",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7c92698b-fe35-5da6-a4e4-c10f76e90777",
+       "label": "B",
+       "content": "decreases, because the nuclear charge increases",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4a5bcb32-7cba-5479-8fdb-558bc77e5c6a",
+       "label": "C",
+       "content": "decreases, because more shells are added",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4ae7b092-494c-5a0a-9d7a-3cd02cf768f5",
+       "label": "D",
+       "content": "stays the same, because the number of shells is constant",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "80cd2b82-f56b-541b-9205-83dcc62d0946",
+     "key": "chem-pt-03",
+     "stem": "Which element has the highest first ionisation energy?",
+     "image_url": null,
+     "explanation": "Helium's two electrons are in the first shell, very close to a nucleus with two protons, and are not shielded.\n\n**Why the other options are wrong**\n\n- Neon: Neon's outer electrons are further from the nucleus than helium's.\n- Hydrogen: Hydrogen has only one proton holding its electron.\n- Lithium: Lithium's single outer electron is easily removed.",
+     "position": 3,
+     "options": [
+      {
+       "id": "af8d839b-e2aa-589f-b268-ffe4a504a822",
+       "label": "A",
+       "content": "Neon",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "98639168-a5f3-5017-9100-85d73394ddba",
+       "label": "B",
+       "content": "Hydrogen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "26239d94-6ce9-5dce-95a2-78368fa9b4cf",
+       "label": "C",
+       "content": "Helium",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "bec0040b-f6b5-5972-826c-aa32c7b3dc7e",
+       "label": "D",
+       "content": "Lithium",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "78c9acbb-44ce-53e5-9daa-481b10877a21",
+     "key": "chem-pt-04",
+     "stem": "The most electronegative element in the periodic table is",
+     "image_url": null,
+     "explanation": "Electronegativity increases across a period and decreases down a group, so fluorine (top right, excluding noble gases) is highest.\n\n**Why the other options are wrong**\n\n- oxygen: Oxygen is second; fluorine has a higher nuclear charge in the same shell.\n- chlorine: Chlorine's outer shell is further from the nucleus than fluorine's.\n- caesium: Caesium is one of the least electronegative elements.",
+     "position": 4,
+     "options": [
+      {
+       "id": "fc528653-4b77-5551-9461-5ef1052e6ee1",
+       "label": "A",
+       "content": "oxygen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "40dbdad3-f4a2-5449-8483-dce4f53cbb74",
+       "label": "B",
+       "content": "chlorine",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d27b4edf-ae24-599d-ada5-5e1c1c1c44dd",
+       "label": "C",
+       "content": "caesium",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b85d718c-d916-5544-94d6-f51af4a51313",
+       "label": "D",
+       "content": "fluorine",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "351205f9-4d11-5bcb-a617-a5d61c57a24d",
+     "key": "chem-pt-05",
+     "stem": "The reactivity of group I metals increases down the group because",
+     "image_url": null,
+     "explanation": "More shells and more shielding mean the single outer electron is held less tightly, so ionisation energy falls and reactivity rises.\n\n**Why the other options are wrong**\n\n- the nuclear charge decreases down the group: Nuclear charge increases down the group.\n- the metals become more electronegative: Electronegativity decreases down the group.\n- the number of outer electrons increases: All group I atoms have one outer electron.",
+     "position": 5,
+     "options": [
+      {
+       "id": "dfcbcaf6-41e1-51ec-b637-5273fe341624",
+       "label": "A",
+       "content": "the outer electron is further from the nucleus and more easily lost",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "121c7e58-beff-5baf-a1c3-949867df0a4f",
+       "label": "B",
+       "content": "the nuclear charge decreases down the group",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6030879b-4e62-5008-8972-6c230c4fbe62",
+       "label": "C",
+       "content": "the metals become more electronegative",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5d09906e-906c-5945-af20-dbea39e4b964",
+       "label": "D",
+       "content": "the number of outer electrons increases",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "52a97a44-04b3-581c-9e7d-7d6102c9232b",
+   "topic": "Chemical Bonding",
+   "title": "Chemical Bonding: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on chemical bonding, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 105,
+   "questions": [
+    {
+     "id": "9830dc94-a4a1-5d4d-a67d-1d4dc0adf82c",
+     "key": "chem-cb-01",
+     "stem": "Which pair of elements combines to form an ionic compound?",
+     "image_url": null,
+     "explanation": "A reactive metal (Ca) transfers electrons to a non-metal (Cl): Ca²⁺ and 2Cl⁻ ions form CaCl₂.\n\n**Why the other options are wrong**\n\n- Carbon and hydrogen: Two non-metals share electrons: covalent bonding.\n- Hydrogen and chlorine: Hydrogen chloride is a covalent molecule.\n- Nitrogen and oxygen: Two non-metals form covalent oxides.",
+     "position": 1,
+     "options": [
+      {
+       "id": "3f52e58a-747c-5c22-8471-8aade55b9e83",
+       "label": "A",
+       "content": "Carbon and hydrogen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "321ba67e-d47d-559b-b787-020908d346f6",
+       "label": "B",
+       "content": "Calcium and chlorine",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8e22b934-7f66-5546-8a5b-65d47aee482f",
+       "label": "C",
+       "content": "Hydrogen and chlorine",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bef51ac9-6b0f-5ba4-868b-0c113c8c2750",
+       "label": "D",
+       "content": "Nitrogen and oxygen",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3f2c28e8-e3f9-5afa-86f8-7d9e5dd50f4f",
+     "key": "chem-cb-02",
+     "stem": "What is the shape of the ammonia molecule, NH₃?",
+     "image_url": null,
+     "explanation": "Nitrogen has three bond pairs and one lone pair; the lone pair pushes the bonds down (angle about 107°).\n\n**Why the other options are wrong**\n\n- Tetrahedral: The four electron pairs are tetrahedral, but one is a lone pair, so the atoms form a pyramid.\n- Trigonal planar: That is the shape of BF₃, which has no lone pair on the central atom.\n- Linear: That is the shape of molecules such as CO₂.",
+     "position": 2,
+     "options": [
+      {
+       "id": "2d9c989e-73f2-5f2f-a133-57ffeea616e2",
+       "label": "A",
+       "content": "Tetrahedral",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "20abbf74-9368-519d-9ee1-58e5ce7ae67f",
+       "label": "B",
+       "content": "Trigonal planar",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "99897536-5d51-51e8-b87f-cad6448d9e35",
+       "label": "C",
+       "content": "Trigonal pyramidal",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b663c2ef-b36f-5a2f-bc9f-c844c1a8b3c8",
+       "label": "D",
+       "content": "Linear",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "525d33c2-cd3a-5d7e-b410-2c7f77ff70c9",
+     "key": "chem-cb-03",
+     "stem": "Which of the following contains a dative (coordinate) covalent bond?",
+     "image_url": null,
+     "explanation": "In NH₄⁺ the nitrogen's lone pair is donated to an H⁺ ion: both electrons of that bond come from nitrogen.\n\n**Why the other options are wrong**\n\n- Methane, CH₄: All four C–H bonds are ordinary covalent bonds.\n- Water, H₂O: Water has two ordinary covalent bonds and two lone pairs.\n- Sodium chloride, NaCl: NaCl is ionic.",
+     "position": 3,
+     "options": [
+      {
+       "id": "f31795bc-9d20-5be4-adb5-cb8da54201a1",
+       "label": "A",
+       "content": "Methane, CH₄",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "015c40c3-2cee-50a7-95c1-7cd7847e9580",
+       "label": "B",
+       "content": "Water, H₂O",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "46ca1735-b323-5830-9971-0368aa5669da",
+       "label": "C",
+       "content": "Sodium chloride, NaCl",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2c1d49de-a004-5310-83d9-4560cb7d4885",
+       "label": "D",
+       "content": "The ammonium ion, NH₄⁺",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ad044fbf-4da0-5809-8da4-450602203df7",
+     "key": "chem-cb-04",
+     "stem": "Water has a much higher boiling point than hydrogen sulphide, H₂S, because water molecules",
+     "image_url": null,
+     "explanation": "Hydrogen bonds between O–H groups of neighbouring water molecules are much stronger than the van der Waals forces in H₂S.\n\n**Why the other options are wrong**\n\n- have stronger covalent bonds inside them: Boiling separates molecules; it does not break covalent bonds.\n- are heavier than H₂S molecules: H₂S (Mᵣ 34) is heavier than water (Mᵣ 18).\n- are held together by ionic bonds: Water is a covalent molecule, not ionic.",
+     "position": 4,
+     "options": [
+      {
+       "id": "6aae4869-b3d2-5031-8e3d-c836df203199",
+       "label": "A",
+       "content": "form hydrogen bonds with one another",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d539df8c-abe0-5041-8f6c-c050d702b315",
+       "label": "B",
+       "content": "have stronger covalent bonds inside them",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9f3b5fbb-a782-5adb-ad6e-e9d16860bc8f",
+       "label": "C",
+       "content": "are heavier than H₂S molecules",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0b3d8238-27b1-59c8-916e-83533f61e945",
+       "label": "D",
+       "content": "are held together by ionic bonds",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "81aaa44c-2216-50ab-81be-fa93b14970ac",
+     "key": "chem-cb-05",
+     "stem": "Metals conduct electricity in the solid state because they contain",
+     "image_url": null,
+     "explanation": "Metallic bonding is a lattice of positive ions in a 'sea' of delocalised electrons, which move when a voltage is applied.\n\n**Why the other options are wrong**\n\n- mobile ions: The metal ions are fixed in the lattice; ions move only in molten or dissolved ionic compounds.\n- shared pairs of electrons between two atoms: Localised shared pairs cannot move through the solid.\n- lone pairs of electrons: Metals in the solid state have no lone pairs to carry charge.",
+     "position": 5,
+     "options": [
+      {
+       "id": "cecb15de-0602-57b0-bfde-bbd72b7c4543",
+       "label": "A",
+       "content": "mobile ions",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "21d5e842-1c34-571a-9df1-0b5998215cd5",
+       "label": "B",
+       "content": "delocalised (mobile) electrons",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "448acdb9-08c6-5384-acf8-431c98635e50",
+       "label": "C",
+       "content": "shared pairs of electrons between two atoms",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "596642a5-7e36-5d75-aa25-6ad3bb63f152",
+       "label": "D",
+       "content": "lone pairs of electrons",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "83190417-3cd5-5d0c-8edc-900a903aa48e",
+   "topic": "States of Matter",
+   "title": "States of Matter: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on states of matter, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 106,
+   "questions": [
+    {
+     "id": "8852baa9-eb41-558c-9a21-b3ed4247f456",
+     "key": "chem-sm-01",
+     "stem": "According to the kinetic theory, the absolute temperature of a gas is a measure of",
+     "image_url": null,
+     "explanation": "Average kinetic energy is proportional to the absolute (kelvin) temperature: heating makes particles move faster.\n\n**Why the other options are wrong**\n\n- the number of particles present: The number of particles affects pressure, not temperature.\n- the size of the particles: Particle size does not change with temperature.\n- the forces of attraction between the particles: In an ideal gas these forces are taken as zero.",
+     "position": 1,
+     "options": [
+      {
+       "id": "789709f2-3045-532b-90fb-9d1f71232fcb",
+       "label": "A",
+       "content": "the number of particles present",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "20e48397-3f9e-52b9-9727-c22f3137929f",
+       "label": "B",
+       "content": "the size of the particles",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8de6620f-9162-5120-a364-ccf1df998aa1",
+       "label": "C",
+       "content": "the average kinetic energy of its particles",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1d6a05d5-bb59-5692-9361-8fe8bbb3cf0d",
+       "label": "D",
+       "content": "the forces of attraction between the particles",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3798ba09-de94-5cd5-9efd-0d4beadd9914",
+     "key": "chem-sm-02",
+     "stem": "When iodine crystals are heated gently they change directly into a violet vapour. This change is",
+     "image_url": null,
+     "explanation": "Sublimation is a change from solid directly to gas without melting; iodine, ammonium chloride and naphthalene sublime.\n\n**Why the other options are wrong**\n\n- evaporation: Evaporation is liquid to gas at the surface of a liquid.\n- condensation: Condensation is gas to liquid.\n- melting: Melting is solid to liquid.",
+     "position": 2,
+     "options": [
+      {
+       "id": "de7eccd4-a421-5cbd-a00c-7c4f8f095751",
+       "label": "A",
+       "content": "evaporation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2a8b343e-537f-540c-b463-caaad4dbc5c0",
+       "label": "B",
+       "content": "condensation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7af9c2d3-3c5c-59ec-a0dc-cca97a95612c",
+       "label": "C",
+       "content": "melting",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bb663623-353c-5055-b267-bd2697309204",
+       "label": "D",
+       "content": "sublimation",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9bef9bf1-af45-5866-9e77-6014e90248e2",
+     "key": "chem-sm-03",
+     "stem": "While ice is melting at 0 °C, its temperature stays constant even though heat is supplied because the heat is used to",
+     "image_url": null,
+     "explanation": "This energy is the latent heat of fusion; it changes the arrangement of particles, not their kinetic energy.\n\n**Why the other options are wrong**\n\n- increase the speed of the particles: Their average kinetic energy, and so the temperature, does not change during melting.\n- break the covalent bonds in water molecules: Melting does not break bonds inside molecules.\n- expand the ice: Ice actually contracts as it melts.",
+     "position": 3,
+     "options": [
+      {
+       "id": "09cfb36a-7aa1-5269-8182-43f32a0a50cf",
+       "label": "A",
+       "content": "overcome the forces holding the particles in fixed positions",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8612b706-5c7c-5e5b-be53-e0c1475642a7",
+       "label": "B",
+       "content": "increase the speed of the particles",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e9008da6-61a5-55da-9942-c931ee8a86f5",
+       "label": "C",
+       "content": "break the covalent bonds in water molecules",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c80d80eb-2880-56ec-a5ac-814541837dc9",
+       "label": "D",
+       "content": "expand the ice",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b72debab-c367-5f6a-b851-ffbf1a193335",
+     "key": "chem-sm-04",
+     "stem": "How many times faster does hydrogen (Mᵣ = 2) diffuse than oxygen (Mᵣ = 32) under the same conditions?",
+     "image_url": null,
+     "explanation": "Graham's law: $\\dfrac{r_{H_2}}{r_{O_2}} = \\sqrt{\\dfrac{M_{O_2}}{M_{H_2}}} = \\sqrt{\\dfrac{32}{2}} = \\sqrt{16} = 4$\n\n**Why the other options are wrong**\n\n- 16: You forgot to take the square root of the ratio of molar masses.\n- 0.25: You inverted the ratio; the lighter gas diffuses faster.\n- 0.0625: You inverted the ratio and forgot the square root.",
+     "position": 4,
+     "options": [
+      {
+       "id": "be0c9a20-7b35-5fba-af0a-8fa144f5e7bc",
+       "label": "A",
+       "content": "0.0625",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "aa54d89b-6d46-5d6c-96e2-22b342e01f73",
+       "label": "B",
+       "content": "0.25",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "41358ba8-7bd3-541f-a987-f7d85a089903",
+       "label": "C",
+       "content": "4",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "5107600d-1d11-5bc1-a921-8173732a09eb",
+       "label": "D",
+       "content": "16",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4fb99fcf-7c7a-534d-85d0-b2455f3a35af",
+     "key": "chem-sm-05",
+     "stem": "Pollen grains in water, seen under a microscope, move about in a random, jerky way. This shows that",
+     "image_url": null,
+     "explanation": "Brownian motion: the visible particles are bombarded unevenly by invisible, fast-moving water molecules.\n\n**Why the other options are wrong**\n\n- pollen grains are alive and swim: Dead pollen and smoke particles move in the same way.\n- water molecules are larger than pollen grains: Water molecules are far too small to see.\n- the pollen is dissolving: Pollen does not dissolve; it is knocked about by moving molecules.",
+     "position": 5,
+     "options": [
+      {
+       "id": "2a4954f9-6013-5393-b9b3-24f5d6cc602c",
+       "label": "A",
+       "content": "pollen grains are alive and swim",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c0923b8f-4b03-5c1c-9a94-69737d062f68",
+       "label": "B",
+       "content": "water molecules are in constant random motion",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7778c82a-a990-5954-afed-366651b7ebb8",
+       "label": "C",
+       "content": "water molecules are larger than pollen grains",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7c97bfbb-5bf3-5227-8e0c-ef0dc4ee1ca9",
+       "label": "D",
+       "content": "the pollen is dissolving",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c7507db0-f00a-5497-97eb-4f0f44466c1b",
+   "topic": "Gas Laws",
+   "title": "Gas Laws: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on gas laws, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 107,
+   "questions": [
+    {
+     "id": "3d65bbc9-f352-536b-8272-13616a6a9753",
+     "key": "chem-gl-01",
+     "stem": "A gas occupies 300 cm³ at 27 °C. At constant pressure, what is its volume at 127 °C?",
+     "image_url": null,
+     "explanation": "Charles' law: $V_2 = V_1 \\times \\dfrac{T_2}{T_1} = 300 \\times \\dfrac{127 + 273}{27 + 273} = 300 \\times \\dfrac{400}{300} = 400$ cm³\n\n**Why the other options are wrong**\n\n- 1411.11 cm³: You used Celsius temperatures; gas law temperatures must be in kelvin.\n- 225 cm³: You inverted the temperature ratio; volume rises when the gas is heated.\n- 127 cm³: You used kelvin for the first temperature but Celsius for the second.",
+     "position": 1,
+     "options": [
+      {
+       "id": "9133027e-eced-55ba-97e6-37ea19d5f23e",
+       "label": "A",
+       "content": "127 cm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8991884a-99f8-5ae8-af81-a616d8c806cc",
+       "label": "B",
+       "content": "225 cm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cc76add7-50c2-52dc-b39d-48b4dad3e72d",
+       "label": "C",
+       "content": "400 cm³",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2d08260e-e2f4-5842-9026-417fa7749506",
+       "label": "D",
+       "content": "1411.11 cm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d8bd18d6-9dfa-5041-b443-234c8755a2e9",
+     "key": "chem-gl-02",
+     "stem": "A gas has a volume of 500 cm³ at 2 atm and 300 K. What will its volume be at 1 atm and 600 K?",
+     "image_url": null,
+     "explanation": "$V_2 = V_1 \\times \\dfrac{P_1}{P_2} \\times \\dfrac{T_2}{T_1} = 500 \\times \\dfrac{2}{1} \\times \\dfrac{600}{300} = 2000$ cm³\n\n**Why the other options are wrong**\n\n- 500 cm³: You assumed the pressure and temperature changes cancel; both changes increase the volume.\n- 125 cm³: You inverted both the pressure and the temperature ratios.\n- 1000 cm³: You allowed for the temperature change but not the pressure change.",
+     "position": 2,
+     "options": [
+      {
+       "id": "29ac6477-201c-52c2-a6ab-77c235fa3331",
+       "label": "A",
+       "content": "125 cm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2c3f1a6e-0095-5b54-bb19-5c74700308f6",
+       "label": "B",
+       "content": "500 cm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d03c9505-d5b4-5015-949b-b5851b5673d6",
+       "label": "C",
+       "content": "1000 cm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f16c5e46-9c57-550a-8a1d-27bdf71a00e0",
+       "label": "D",
+       "content": "2000 cm³",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b8a7de2e-049b-52c8-b57f-9ee7f08c4ec5",
+     "key": "chem-gl-03",
+     "stem": "Equal volumes of all gases at the same temperature and pressure contain equal numbers of molecules. This is",
+     "image_url": null,
+     "explanation": "Avogadro's law is why gas volumes in an equation are in the same ratio as the numbers of moles.\n\n**Why the other options are wrong**\n\n- Boyle's law: Boyle's law relates pressure and volume at constant temperature.\n- Charles' law: Charles' law relates volume and temperature at constant pressure.\n- Graham's law: Graham's law concerns rates of diffusion.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c6bb046f-a145-585e-9ba3-afeb10311129",
+       "label": "A",
+       "content": "Boyle's law",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2e4dc3ff-8344-5331-b36f-1501ccb9674c",
+       "label": "B",
+       "content": "Charles' law",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "802919d6-0275-598a-a4c4-3eb4e6d77b57",
+       "label": "C",
+       "content": "Avogadro's law",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "acfea565-8612-5def-95c7-8bcddf10ca56",
+       "label": "D",
+       "content": "Graham's law",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "655f853f-0a67-5ae3-8ec1-b96fde4455cb",
+     "key": "chem-gl-04",
+     "stem": "30 cm³ of propane burns completely: C₃H₈ + 5O₂ → 3CO₂ + 4H₂O. What volume of carbon(IV) oxide is formed (all volumes at the same temperature and pressure)?",
+     "image_url": null,
+     "explanation": "By Gay-Lussac's law, volume of CO₂ $= 3 \\times 30 = 90$ cm³.\n\n**Why the other options are wrong**\n\n- 30 cm³: You assumed a 1 : 1 ratio; 3 volumes of CO₂ form from 1 volume of propane.\n- 150 cm³: That is the volume of oxygen used.\n- 120 cm³: That would be the volume of steam, not carbon(IV) oxide.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c6dfd1ec-1520-532f-8537-1a376279f269",
+       "label": "A",
+       "content": "30 cm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a00a7866-236e-504b-9d7a-374357df59b7",
+       "label": "B",
+       "content": "90 cm³",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c994ab44-d8ef-54ad-b850-505cdf7a0295",
+       "label": "C",
+       "content": "120 cm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "37d53fce-1b79-59e5-85e1-30bff5111df1",
+       "label": "D",
+       "content": "150 cm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b511ac60-cb1b-567e-a794-ed22c96a4fa2",
+     "key": "chem-gl-05",
+     "stem": "At constant temperature, 2.0 dm³ of a gas at 100 kPa is compressed until its pressure is 400 kPa. What is the new volume?",
+     "image_url": null,
+     "explanation": "Boyle's law: $V_2 = \\dfrac{P_1 V_1}{P_2} = \\dfrac{100 \\times 2.0}{400} = 0.5$ dm³\n\n**Why the other options are wrong**\n\n- 8 dm³: You inverted the pressure ratio; volume falls as pressure rises.\n- 2 dm³: The volume changes when the pressure changes.\n- 4 dm³: You divided the new pressure by the old pressure and left out the volume.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ae639545-a597-5b2e-82f1-a1d5972c1fee",
+       "label": "A",
+       "content": "0.5 dm³",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3f6c1a74-76ea-5cae-a2af-dfe67fab423c",
+       "label": "B",
+       "content": "2 dm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "02c3d238-d300-5096-b6bc-9232d2f4db1c",
+       "label": "C",
+       "content": "4 dm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e42e33bb-254c-5619-a326-f90d12eab5b2",
+       "label": "D",
+       "content": "8 dm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d3ee7982-14da-5a17-a3e6-a2f06a9f8e0c",
+   "topic": "The Mole Concept",
+   "title": "The Mole Concept: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the mole concept, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 108,
+   "questions": [
+    {
+     "id": "f6937e6a-8213-53f1-bd72-93f89a2cb4ca",
+     "key": "chem-mo-01",
+     "stem": "How many moles are there in 4.4 g of carbon(IV) oxide, CO₂?",
+     "image_url": null,
+     "explanation": "$M_r(\\text{CO}_2) = 12 + 32 = 44$; moles $= \\dfrac{4.4}{44} = 0.1$ mol\n\n**Why the other options are wrong**\n\n- 10 mol: You divided the molar mass by the mass.\n- 0.157 mol: You used the molar mass of carbon(II) oxide, CO (28).\n- 0.275 mol: You used the molar mass of oxygen atoms (16).",
+     "position": 1,
+     "options": [
+      {
+       "id": "f968d3cd-f7cc-5f75-a8a0-5f2473ac0951",
+       "label": "A",
+       "content": "0.1 mol",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5ca957d5-7103-5df6-be4e-5c0a2219b099",
+       "label": "B",
+       "content": "0.157 mol",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "483303dc-14da-5e61-a377-f021f07c4104",
+       "label": "C",
+       "content": "0.275 mol",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ba22f391-417e-5e18-a548-ff822ce42d69",
+       "label": "D",
+       "content": "10 mol",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7af8783d-8db7-5bef-9b62-0eeb287558a1",
+     "key": "chem-mo-02",
+     "stem": "What is the mass of 0.25 mol of calcium carbonate, CaCO₃?",
+     "image_url": null,
+     "explanation": "$M_r(\\text{CaCO}_3) = 40 + 12 + 48 = 100$; mass $= 0.25 \\times 100 = 25$ g\n\n**Why the other options are wrong**\n\n- 400 g: You divided the molar mass by the number of moles.\n- 0.0025 g: You divided the moles by the molar mass.\n- 17 g: You used 68 for the molar mass (counted only one oxygen).",
+     "position": 2,
+     "options": [
+      {
+       "id": "4edeca89-1a8e-5b00-af13-222500b54740",
+       "label": "A",
+       "content": "0.0025 g",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c286a4b9-6d19-52de-9909-ca8e8b2f4974",
+       "label": "B",
+       "content": "17 g",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ff029a96-3483-552c-b18c-d8b80e199fbd",
+       "label": "C",
+       "content": "25 g",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3e7995b1-e566-5cee-8e25-06b87a2bac84",
+       "label": "D",
+       "content": "400 g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "596ed2c6-181e-5da4-baeb-04bc6f4991f2",
+     "key": "chem-mo-03",
+     "stem": "What volume does 8.0 g of oxygen gas, O₂, occupy at s.t.p.? (Molar volume = 22.4 dm³)",
+     "image_url": null,
+     "explanation": "Moles $= \\dfrac{8.0}{32} = 0.25$ mol; volume $= 0.25 \\times 22.4 = 5.6$ dm³\n\n**Why the other options are wrong**\n\n- 11.2 dm³: You used 16 as the molar mass; oxygen gas is O₂ (32).\n- 179.2 dm³: You multiplied the mass by 22.4 without finding moles first.\n- 6 dm³: You used 24 dm³, the molar volume at room conditions, not at s.t.p.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c2f2b516-4545-5d6b-9283-9d17a236a937",
+       "label": "A",
+       "content": "5.6 dm³",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c5b2f566-9618-526c-a8f6-128940f5ba1a",
+       "label": "B",
+       "content": "6 dm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0f122277-553b-5ecf-a097-a2c84ee1bc37",
+       "label": "C",
+       "content": "11.2 dm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5d5f6aa1-2e83-5b1d-977d-418ca461a36e",
+       "label": "D",
+       "content": "179.2 dm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "786bf057-2957-5c38-b242-453bafcbee4a",
+     "key": "chem-mo-04",
+     "stem": "How many moles of atoms are present in 0.2 mol of sulphuric(VI) acid, H₂SO₄?",
+     "image_url": null,
+     "explanation": "Each H₂SO₄ has $2 + 1 + 4 = 7$ atoms, so moles of atoms $= 7 \\times 0.2 = 1.4$ mol.\n\n**Why the other options are wrong**\n\n- 0.2 mol: That is the number of moles of molecules, not atoms.\n- 0.8 mol: That counts only the oxygen atoms.\n- 7 mol: That is the number of atoms in one molecule.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4d8f057d-f292-5862-ae65-2f1da10d56f2",
+       "label": "A",
+       "content": "0.2 mol",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e0189492-aecd-5f1b-8253-e7e2b3db8f8e",
+       "label": "B",
+       "content": "0.8 mol",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "46e98c5f-f554-541c-a8b6-0a278da70766",
+       "label": "C",
+       "content": "1.4 mol",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "de539247-8075-5b8d-823c-9f279281ecd8",
+       "label": "D",
+       "content": "7 mol",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "93932f46-1f5e-5192-95cb-a3c9e3da8535",
+     "key": "chem-mo-05",
+     "stem": "4.0 g of sodium hydroxide is dissolved in water to make 250 cm³ of solution. What is the concentration in mol/dm³? (NaOH = 40)",
+     "image_url": null,
+     "explanation": "Moles $= \\dfrac{4.0}{40} = 0.1$; concentration $= \\dfrac{0.1}{0.250} = 0.4$ mol/dm³\n\n**Why the other options are wrong**\n\n- 0.1 mol/dm³: That is the number of moles, not the concentration.\n- 16 mol/dm³: That is the mass concentration in g/dm³.\n- 0.025 mol/dm³: You multiplied by 0.25 dm³ instead of dividing by it.",
+     "position": 5,
+     "options": [
+      {
+       "id": "785799bf-1d6d-5a95-8028-8beb73c4e014",
+       "label": "A",
+       "content": "0.025 mol/dm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3e22b1fb-126b-5cbb-8bbd-4130f32fd9a7",
+       "label": "B",
+       "content": "0.1 mol/dm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "26c6fdd3-0a86-5f3f-8b5a-413c9ae348c9",
+       "label": "C",
+       "content": "0.4 mol/dm³",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "49888a0a-8da9-5f06-8d19-935f2ca57f6a",
+       "label": "D",
+       "content": "16 mol/dm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "9076ba4d-3803-59b4-8449-ab02481b04a9",
+   "topic": "Chemical Equations and Stoichiometry",
+   "title": "Chemical Equations and Stoichiometry: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on chemical equations and stoichiometry, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 109,
+   "questions": [
+    {
+     "id": "5c5f1f31-e10d-59d9-a51d-49dad65981e4",
+     "key": "chem-eq-01",
+     "stem": "Which equation for the burning of aluminium is correctly balanced?",
+     "image_url": null,
+     "explanation": "Left: 4 Al and 6 O. Right: 2 × Al₂O₃ = 4 Al and 6 O. Both elements balance.\n\n**Why the other options are wrong**\n\n- 2Al + O₂ → Al₂O₃: Oxygen is not balanced: 2 atoms on the left, 3 on the right.\n- 4Al + 6O₂ → 2Al₂O₃: Oxygen is not balanced: 12 atoms on the left, 6 on the right.\n- 2Al + 3O₂ → 2Al₂O₃: Aluminium is not balanced: 2 atoms on the left, 4 on the right.",
+     "position": 1,
+     "options": [
+      {
+       "id": "82186775-6349-52e1-a067-e3b6c4046751",
+       "label": "A",
+       "content": "2Al + O₂ → Al₂O₃",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4a68b214-a3ba-5bea-981a-625ce61aed2f",
+       "label": "B",
+       "content": "4Al + 6O₂ → 2Al₂O₃",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "31eae2af-47a7-5448-9f17-e20918eb1546",
+       "label": "C",
+       "content": "2Al + 3O₂ → 2Al₂O₃",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "be8c655f-bae2-5454-a5db-0cd4994730ab",
+       "label": "D",
+       "content": "4Al + 3O₂ → 2Al₂O₃",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1edab529-2e0f-55ee-915e-1d781969fcc5",
+     "key": "chem-eq-02",
+     "stem": "What mass of calcium oxide is obtained by heating 50 g of calcium carbonate completely? CaCO₃ → CaO + CO₂",
+     "image_url": null,
+     "explanation": "Moles CaCO₃ $= \\dfrac{50}{100} = 0.5$; moles CaO $= 0.5$; mass $= 0.5 \\times 56 = 28$ g\n\n**Why the other options are wrong**\n\n- 22 g: That is the mass of carbon(IV) oxide given off.\n- 50 g: Mass is lost as carbon(IV) oxide escapes.\n- 20 g: You used 40 (calcium only) as the molar mass of calcium oxide.",
+     "position": 2,
+     "options": [
+      {
+       "id": "43c7a883-463b-5eb5-a84a-4a448594128f",
+       "label": "A",
+       "content": "20 g",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "53b654bc-12d5-59fd-976b-429b22241061",
+       "label": "B",
+       "content": "22 g",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "89206c38-1b2a-55d7-80fd-e3656816de90",
+       "label": "C",
+       "content": "28 g",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "07d84469-384e-5494-a79d-216d000b303c",
+       "label": "D",
+       "content": "50 g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "26654e9e-3268-5623-97a8-3804973c8ffb",
+     "key": "chem-eq-03",
+     "stem": "What volume of hydrogen at s.t.p. is produced when 2.4 g of magnesium reacts with excess dilute hydrochloric acid? Mg + 2HCl → MgCl₂ + H₂",
+     "image_url": null,
+     "explanation": "Moles Mg $= \\dfrac{2.4}{24} = 0.1$; moles H₂ $= 0.1$; volume $= 0.1 \\times 22.4 = 2.24$ dm³\n\n**Why the other options are wrong**\n\n- 4.48 dm³: You used the 2 from 2HCl; 1 mol Mg gives 1 mol H₂.\n- 1.12 dm³: You halved the moles of hydrogen.\n- 2.4 dm³: You used 24 dm³, the molar volume at room conditions.",
+     "position": 3,
+     "options": [
+      {
+       "id": "6ff7d4a9-631b-576e-b7d8-abfb8f18672a",
+       "label": "A",
+       "content": "1.12 dm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "61ca118d-cdbc-5202-8ff9-5df205f0f520",
+       "label": "B",
+       "content": "2.24 dm³",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "52293008-5a96-5187-8752-47e4b1ccae9b",
+       "label": "C",
+       "content": "2.4 dm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "172e8d19-5377-5761-bfe5-13a27b35a6a6",
+       "label": "D",
+       "content": "4.48 dm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "46c5cb56-ab55-5416-8981-333d7ddc2a39",
+     "key": "chem-eq-04",
+     "stem": "A reaction should give 20 g of product, but only 15 g is obtained. What is the percentage yield?",
+     "image_url": null,
+     "explanation": "Percentage yield $= \\dfrac{\\text{actual}}{\\text{theoretical}} \\times 100 = \\dfrac{15}{20} \\times 100 = 75\\%$\n\n**Why the other options are wrong**\n\n- 133.33%: You divided the theoretical yield by the actual yield.\n- 25%: That is the percentage that was lost.\n- 5%: That is the mass lost in grams, not a percentage.",
+     "position": 4,
+     "options": [
+      {
+       "id": "20dc948f-f821-5f72-a906-4bb00c1d4be0",
+       "label": "A",
+       "content": "5%",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "967fb058-fe5c-5e83-8199-d2814618b3ae",
+       "label": "B",
+       "content": "25%",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "92f5306f-62eb-5f54-b15f-21e508663fe2",
+       "label": "C",
+       "content": "75%",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "63d56196-b977-551b-88f0-9649e001431e",
+       "label": "D",
+       "content": "133.33%",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "44f0896e-b37a-5acd-b09b-e2e541dca4ea",
+     "key": "chem-eq-05",
+     "stem": "4 g of hydrogen is exploded with 16 g of oxygen: 2H₂ + O₂ → 2H₂O. What mass of water forms?",
+     "image_url": null,
+     "explanation": "H₂: $\\dfrac{4}{2} = 2$ mol; O₂: $\\dfrac{16}{32} = 0.5$ mol. O₂ needs only 1 mol H₂, so O₂ is limiting. Water $= 2 \\times 0.5 = 1$ mol $= 18$ g\n\n**Why the other options are wrong**\n\n- 36 g: You assumed hydrogen is used up; oxygen (0.5 mol) is the limiting reagent.\n- 20 g: You added the masses of the reactants; excess hydrogen is left over.\n- 9 g: You used 0.5 mol of water; 0.5 mol O₂ gives 1 mol H₂O.",
+     "position": 5,
+     "options": [
+      {
+       "id": "791b07da-de88-5ccd-a212-db0b8b352c18",
+       "label": "A",
+       "content": "9 g",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "637a1b08-d0e0-5211-9348-4ac274a6607f",
+       "label": "B",
+       "content": "18 g",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d42d266e-8b7a-5314-8e98-9c6d84235f93",
+       "label": "C",
+       "content": "20 g",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "89e4e234-4d15-5fe8-941c-0f509e014145",
+       "label": "D",
+       "content": "36 g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8a2c2de2-8b09-5f4c-815d-f7b2f3d3353e",
+   "topic": "Empirical and Molecular Formulas",
+   "title": "Empirical and Molecular Formulas: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on empirical and molecular formulas, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 110,
+   "questions": [
+    {
+     "id": "c475f5d1-79f4-52db-80b6-79094dd5302f",
+     "key": "chem-ef-01",
+     "stem": "A compound contains 40.0% carbon, 6.7% hydrogen and 53.3% oxygen by mass. What is its empirical formula?",
+     "image_url": null,
+     "explanation": "C: 40.0 ÷ 12 = 3.33; H: 6.7 ÷ 1 = 6.7; O: 53.3 ÷ 16 = 3.33. Dividing by 3.33 gives 1 : 2 : 1, so CH₂O.\n\n**Why the other options are wrong**\n\n- C₆H₁₂O₆: That is a molecular formula (glucose); the empirical formula is the simplest ratio.\n- CHO: The moles of hydrogen (6.7) are twice those of carbon (3.33).\n- C₂H₄O: The moles of carbon and oxygen are equal (3.33 each), not 2 : 1.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8451ca79-ccd0-59fb-8be4-1dda2fcf34ad",
+       "label": "A",
+       "content": "CH₂O",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5f317442-5e7c-577e-b5ed-6dee166549ca",
+       "label": "B",
+       "content": "C₆H₁₂O₆",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "791bddb3-6c4f-5972-8356-0b6e87d543ac",
+       "label": "C",
+       "content": "CHO",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f64314fa-0798-5e38-ba59-2554f63bf7df",
+       "label": "D",
+       "content": "C₂H₄O",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f467f8a0-5b84-5f5a-8015-3951f854c87f",
+     "key": "chem-ef-02",
+     "stem": "A hydrocarbon has the empirical formula CH₂ and a relative molecular mass of 56. What is its molecular formula?",
+     "image_url": null,
+     "explanation": "Mᵣ of CH₂ = 14; n = 56 ÷ 14 = 4, so the molecular formula is (CH₂)₄ = C₄H₈.\n\n**Why the other options are wrong**\n\n- C₂H₄: C₂H₄ has Mᵣ 28; you need (CH₂)ₙ with 14n = 56.\n- C₄H₁₀: C₄H₁₀ has Mᵣ 58 and is not a multiple of CH₂.\n- C₅H₁₀: C₅H₁₀ has Mᵣ 70.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c46f7d23-2907-5fe1-8612-e42b6bec502f",
+       "label": "A",
+       "content": "C₂H₄",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4c05a14f-4b55-51e6-9ce3-e175cce16935",
+       "label": "B",
+       "content": "C₄H₈",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "839ddb08-a37f-5874-97e5-a3c257fd7fba",
+       "label": "C",
+       "content": "C₄H₁₀",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bb90b89d-fe6d-5854-b951-24b8c44f7718",
+       "label": "D",
+       "content": "C₅H₁₀",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d41bbe92-4bcb-5ace-a7e9-baf894eaeb22",
+     "key": "chem-ef-03",
+     "stem": "What is the percentage by mass of nitrogen in ammonium nitrate, NH₄NO₃? (Mᵣ = 80)",
+     "image_url": null,
+     "explanation": "Mass of N $= 2 \\times 14 = 28$; $\\% \\text{N} = \\dfrac{28}{80} \\times 100 = 35\\%$\n\n**Why the other options are wrong**\n\n- 17.5%: You counted only one nitrogen atom; NH₄NO₃ has two.\n- 28%: 28 is the mass of nitrogen in one formula unit, not a percentage.\n- 60%: That is the percentage of oxygen.",
+     "position": 3,
+     "options": [
+      {
+       "id": "725d5dc2-45cc-59fa-900f-a51c6275ffc9",
+       "label": "A",
+       "content": "17.5%",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3b2d5340-c6da-57fd-b15b-aa7aa5624f98",
+       "label": "B",
+       "content": "28%",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0e0f95bc-d582-5632-b72d-e50f9dd90e8e",
+       "label": "C",
+       "content": "35%",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "cecf9ced-f2b2-5903-929c-fe718e7159da",
+       "label": "D",
+       "content": "60%",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e7f1a9cf-0821-5ce5-9efe-5f37f8724e6d",
+     "key": "chem-ef-04",
+     "stem": "2.86 g of hydrated sodium carbonate, Na₂CO₃·xH₂O, gives 1.06 g of anhydrous Na₂CO₃ on heating. Find x. (Na₂CO₃ = 106, H₂O = 18)",
+     "image_url": null,
+     "explanation": "Water lost $= 2.86 - 1.06 = 1.80$ g $= 0.1$ mol; Na₂CO₃ $= \\dfrac{1.06}{106} = 0.01$ mol; $x = \\dfrac{0.1}{0.01} = 10$\n\n**Why the other options are wrong**\n\n- 1.8: That is the mass of water lost (1.80 g), not the number of water molecules.\n- 0.1: That is the number of moles of water; divide by the moles of Na₂CO₃ (0.01).\n- 5: You used 36 as the molar mass of water.",
+     "position": 4,
+     "options": [
+      {
+       "id": "bd599aec-3b2f-535c-8380-071240ac25de",
+       "label": "A",
+       "content": "0.1",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "50138476-77f3-5987-98bf-956a33fdc154",
+       "label": "B",
+       "content": "1.8",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fdab1d0d-934a-562f-979f-f7816ed05b75",
+       "label": "C",
+       "content": "5",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2058d935-814a-53ef-a326-5ab849ff2cd6",
+       "label": "D",
+       "content": "10",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fa61c526-af82-5a70-a4df-1b3548a23676",
+     "key": "chem-ef-05",
+     "stem": "The empirical formula of a compound shows",
+     "image_url": null,
+     "explanation": "Glucose, C₆H₁₂O₆, and ethanoic acid, C₂H₄O₂, share the empirical formula CH₂O.\n\n**Why the other options are wrong**\n\n- the actual number of atoms of each element in one molecule: That is the molecular formula.\n- how the atoms are joined together: That is the structural formula.\n- the percentage by mass of each element: That is the percentage composition.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e288df3a-7390-532d-b9e2-3770ecd49252",
+       "label": "A",
+       "content": "the actual number of atoms of each element in one molecule",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "87460146-8b92-55ac-9a01-b22093f53bb2",
+       "label": "B",
+       "content": "how the atoms are joined together",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "425f087b-3342-5ba8-9c0e-ae4397469f3f",
+       "label": "C",
+       "content": "the simplest whole-number ratio of the atoms of each element in it",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d90b3539-520b-5d2f-9474-7fc90c593ef0",
+       "label": "D",
+       "content": "the percentage by mass of each element",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "20936fdce282"
+}

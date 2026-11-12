@@ -1,0 +1,2408 @@
+{
+ "name": "chemistry_set3_p1",
+ "label": "Chemistry: set 3 (non-metals, metals and industrial chemistry)",
+ "subject_slug": "chemistry",
+ "papers": [
+  {
+   "id": "2bd206ed-d0c7-59de-8156-6be6f60a51b7",
+   "topic": "Hydrogen",
+   "title": "Hydrogen: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on hydrogen, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 140,
+   "questions": [
+    {
+     "id": "dcac4375-448e-5e78-be35-c7568b75dd6e",
+     "key": "chem-hy-01",
+     "stem": "Hydrogen is usually prepared in the laboratory by the action of",
+     "image_url": null,
+     "explanation": "Zn + 2HCl → ZnCl₂ + H₂. A few drops of copper(II) sulphate speed up the reaction.\n\n**Why the other options are wrong**\n\n- dilute hydrochloric acid on copper turnings: Copper is below hydrogen in the reactivity series and does not react.\n- concentrated nitric acid on zinc: Nitric acid is an oxidising acid; it gives oxides of nitrogen, not hydrogen.\n- water on sodium: The reaction is too violent to control safely.",
+     "position": 1,
+     "options": [
+      {
+       "id": "1825c51f-e8b3-5adf-8c5d-1eda2029756d",
+       "label": "A",
+       "content": "dilute hydrochloric acid on copper turnings",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a58a86e0-1c83-5310-8d59-29967a124a14",
+       "label": "B",
+       "content": "concentrated nitric acid on zinc",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1710dbe8-09c2-581b-9587-04e42a167c35",
+       "label": "C",
+       "content": "dilute hydrochloric acid on zinc granules",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "31ce8928-e25a-5f85-88c7-9094696e5e57",
+       "label": "D",
+       "content": "water on sodium",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2e0a2b48-c386-551c-b7ef-422bd605fd13",
+     "key": "chem-hy-02",
+     "stem": "Hydrogen can be collected over water because it is",
+     "image_url": null,
+     "explanation": "A gas is collected over water if it does not dissolve in or react with water.\n\n**Why the other options are wrong**\n\n- lighter than air: Being lighter than air allows upward delivery, not collection over water.\n- a reducing agent: Reducing power has nothing to do with the collection method.\n- colourless: Colour does not decide the collection method.",
+     "position": 2,
+     "options": [
+      {
+       "id": "58e3ef2f-5994-54cd-9e21-f8f0e7ea27d2",
+       "label": "A",
+       "content": "lighter than air",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a4d642ec-8c02-506e-9b6d-9650b8a12aa9",
+       "label": "B",
+       "content": "almost insoluble in water",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "696901ec-81a9-56eb-a7b9-a2846573a5ad",
+       "label": "C",
+       "content": "a reducing agent",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7e20ff50-e54f-5840-81f1-aca2050b1d70",
+       "label": "D",
+       "content": "colourless",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dff552ce-d59c-56db-bfa9-3943e1694af1",
+     "key": "chem-hy-03",
+     "stem": "Which observation identifies hydrogen gas?",
+     "image_url": null,
+     "explanation": "A small amount of hydrogen mixed with air explodes gently: 2H₂ + O₂ → 2H₂O.\n\n**Why the other options are wrong**\n\n- It relights a glowing splint: That is the test for oxygen.\n- It turns lime water milky: That is the test for carbon(IV) oxide.\n- It turns damp red litmus paper blue: That is the test for ammonia.",
+     "position": 3,
+     "options": [
+      {
+       "id": "90bd2d67-0402-5493-a198-6e2594d03885",
+       "label": "A",
+       "content": "It relights a glowing splint",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0fcd7737-910e-57df-a61c-c2527071bda8",
+       "label": "B",
+       "content": "It turns lime water milky",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c97eab2a-14a8-503a-aa8a-3ee091a41d24",
+       "label": "C",
+       "content": "It burns with a squeaky pop when a lighted splint is applied",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "74a11d18-3bd6-5cf1-8d83-65c33a109b6c",
+       "label": "D",
+       "content": "It turns damp red litmus paper blue",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "23c7d826-b739-507e-936c-5f6930c8590d",
+     "key": "chem-hy-04",
+     "stem": "When dry hydrogen is passed over heated copper(II) oxide, the black solid",
+     "image_url": null,
+     "explanation": "CuO + H₂ → Cu + H₂O. Hydrogen is a reducing agent: it removes oxygen from the oxide.\n\n**Why the other options are wrong**\n\n- turns white and oxygen is given off: Copper(II) oxide is reduced, not decomposed; no oxygen is released.\n- turns blue and hydrogen is absorbed: The product is copper metal, which is reddish-brown.\n- does not change: Hydrogen reduces the oxides of metals below iron in the reactivity series.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7ad1a8f4-2470-5367-bbe6-d6499ba629f9",
+       "label": "A",
+       "content": "turns white and oxygen is given off",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1fd5fd33-dcf7-5c6b-95ed-7026da31eb6f",
+       "label": "B",
+       "content": "turns blue and hydrogen is absorbed",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0c9424af-35f8-5866-94c5-84337d7c378e",
+       "label": "C",
+       "content": "does not change",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cb6c1d73-97ca-58bf-b885-195895cffb69",
+       "label": "D",
+       "content": "turns reddish-brown and droplets of water form",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "208e7f2b-177f-5384-a2bb-270dbb1d7825",
+     "key": "chem-hy-05",
+     "stem": "What volume of hydrogen at s.t.p. is produced when 6.5 g of zinc reacts with excess dilute hydrochloric acid? Zn + 2HCl → ZnCl₂ + H₂",
+     "image_url": null,
+     "explanation": "Moles Zn $= \\dfrac{6.5}{65} = 0.1$; moles H₂ $= 0.1$; volume $= 0.1 \\times 22.4 = 2.24$ dm³\n\n**Why the other options are wrong**\n\n- 4.48 dm³: You used the 2 from 2HCl; 1 mol of zinc gives 1 mol of hydrogen.\n- 145.6 dm³: You multiplied the mass by 22.4 without finding moles.\n- 2.4 dm³: You used 24 dm³, the molar volume at room conditions.",
+     "position": 5,
+     "options": [
+      {
+       "id": "0192957d-ece0-5718-8b62-e579de49c096",
+       "label": "A",
+       "content": "2.24 dm³",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5ad060f0-7fd1-5e2b-af82-4db1f62428b2",
+       "label": "B",
+       "content": "2.4 dm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "36080094-87b2-5431-b019-b4b73ec16cde",
+       "label": "C",
+       "content": "4.48 dm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "290a0982-0e1b-52ab-80d9-aeb4884fd572",
+       "label": "D",
+       "content": "145.6 dm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8c8a1754-d72c-5363-b24e-c0e5e9c07097",
+   "topic": "Oxygen and Air",
+   "title": "Oxygen and Air: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on oxygen and air, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 141,
+   "questions": [
+    {
+     "id": "d398aed9-a928-5ef8-a4ff-67c5f83f99fc",
+     "key": "chem-ox-01",
+     "stem": "Which method is used to prepare oxygen in the laboratory?",
+     "image_url": null,
+     "explanation": "2H₂O₂ → 2H₂O + O₂. The MnO₂ is unchanged at the end; the oxygen is collected over water.\n\n**Why the other options are wrong**\n\n- Heating calcium carbonate: Calcium carbonate gives carbon(IV) oxide.\n- Adding zinc to dilute hydrochloric acid: This gives hydrogen.\n- Heating ammonium chloride: This gives ammonia and hydrogen chloride.",
+     "position": 1,
+     "options": [
+      {
+       "id": "ce35f59e-b003-5380-a81b-e799a3d8fe41",
+       "label": "A",
+       "content": "Heating calcium carbonate",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b55d223a-756a-5bd5-af73-b93f02f60ee1",
+       "label": "B",
+       "content": "Decomposing hydrogen peroxide with manganese(IV) oxide as catalyst",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5cb3e4c9-bd12-5462-ad83-1d899ad4424a",
+       "label": "C",
+       "content": "Adding zinc to dilute hydrochloric acid",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "994389f5-12ae-518b-9799-9dd06ed496f7",
+       "label": "D",
+       "content": "Heating ammonium chloride",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b0945ab5-a071-5914-a960-3f0d8cb63d1e",
+     "key": "chem-ox-02",
+     "stem": "100 cm³ of air is passed repeatedly over heated copper until the volume stops changing. 79 cm³ of gas remains. What is the percentage of oxygen in the air?",
+     "image_url": null,
+     "explanation": "Oxygen removed $= 100 - 79 = 21$ cm³, so $\\% \\text{O}_2 = \\dfrac{21}{100} \\times 100 = 21\\%$\n\n**Why the other options are wrong**\n\n- 79%: That is the percentage of the gas left (mainly nitrogen).\n- 100%: That is the total volume of air.\n- 26.58%: You divided by the volume remaining instead of the original volume.",
+     "position": 2,
+     "options": [
+      {
+       "id": "6aab62b0-6d28-5742-856e-db7ae2ce2586",
+       "label": "A",
+       "content": "21%",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e0f2cf19-3831-5d50-93f5-b2c5e0f56471",
+       "label": "B",
+       "content": "26.58%",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "135e35d1-16bc-5c63-8123-bd1f910c521b",
+       "label": "C",
+       "content": "79%",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5c02be48-547f-5200-927a-7c9500f13c2f",
+       "label": "D",
+       "content": "100%",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4141b2f3-7860-5522-9c56-a70e175e471d",
+     "key": "chem-ox-03",
+     "stem": "When liquid air is fractionally distilled, nitrogen boils off before oxygen because nitrogen",
+     "image_url": null,
+     "explanation": "Nitrogen boils at −196 °C and oxygen at −183 °C, so nitrogen vaporises first as the liquid air warms.\n\n**Why the other options are wrong**\n\n- is less dense than oxygen: Separation depends on boiling point, not density.\n- is more abundant in air: The amount present does not decide the order of boiling.\n- is less reactive than oxygen: Reactivity does not affect distillation.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5dcc7b9b-e0c9-5289-808d-e4b65b5e025b",
+       "label": "A",
+       "content": "is less dense than oxygen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "361499b8-8cd0-56e6-a95e-d01efe066be4",
+       "label": "B",
+       "content": "is more abundant in air",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f72ea2b2-6362-5b6b-bc68-3945a215e165",
+       "label": "C",
+       "content": "has a lower boiling point",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "dd1b2eb0-6ede-56f5-8795-94c6e0042c10",
+       "label": "D",
+       "content": "is less reactive than oxygen",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "211a6433-29f8-5cf8-898c-12e3ae7fdb34",
+     "key": "chem-ox-04",
+     "stem": "Iron rusts only when it is in contact with",
+     "image_url": null,
+     "explanation": "Rust is hydrated iron(III) oxide, Fe₂O₃·xH₂O; salt water and acids speed up rusting.\n\n**Why the other options are wrong**\n\n- oxygen alone: Iron in dry air does not rust.\n- water alone: Iron in boiled water under oil (no oxygen) does not rust.\n- carbon(IV) oxide alone: Carbon(IV) oxide is not needed for rusting.",
+     "position": 4,
+     "options": [
+      {
+       "id": "22646bab-2636-5904-a170-1b9fd8eccfd8",
+       "label": "A",
+       "content": "oxygen alone",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a9d12c1c-5261-57cc-92fd-d62944c58358",
+       "label": "B",
+       "content": "water alone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "339b2fac-bff6-52e6-81e1-9b1ef56dc23a",
+       "label": "C",
+       "content": "carbon(IV) oxide alone",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c6eecb52-297b-59db-a64b-0121ebb09c7e",
+       "label": "D",
+       "content": "both oxygen and water",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2b9aaafa-872a-5e0f-9a74-d1594dc8e786",
+     "key": "chem-ox-05",
+     "stem": "Electric light bulbs are filled with argon because argon",
+     "image_url": null,
+     "explanation": "In air the hot tungsten filament would burn; argon, a noble gas, protects it.\n\n**Why the other options are wrong**\n\n- burns brightly: Argon does not burn.\n- conducts electricity: The filament conducts; the gas must not react with it.\n- is the most abundant gas in air: Argon is less than 1% of air; nitrogen is the most abundant.",
+     "position": 5,
+     "options": [
+      {
+       "id": "99dfa57b-0781-54fb-a6e1-8427e76e5274",
+       "label": "A",
+       "content": "is unreactive and does not react with the hot filament",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "960d56f7-d591-5fc0-823d-6222503780c7",
+       "label": "B",
+       "content": "burns brightly",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e42f6d0b-6ffb-5313-af03-e8959ac52daa",
+       "label": "C",
+       "content": "conducts electricity",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "45eca114-c48e-549e-94c7-14d85fa3a16d",
+       "label": "D",
+       "content": "is the most abundant gas in air",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "9d4e6419-c4b6-59c1-bf7e-123600509dd0",
+   "topic": "The Halogens",
+   "title": "The Halogens: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the halogens, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 142,
+   "questions": [
+    {
+     "id": "5584111d-ee58-58e1-8fac-9fb017d250f0",
+     "key": "chem-ha-01",
+     "stem": "In the laboratory preparation of chlorine from concentrated hydrochloric acid and manganese(IV) oxide, the manganese(IV) oxide acts as",
+     "image_url": null,
+     "explanation": "MnO₂ + 4HCl → MnCl₂ + Cl₂ + 2H₂O. Chloride ions are oxidised to chlorine; Mn is reduced from +4 to +2.\n\n**Why the other options are wrong**\n\n- a catalyst: Manganese(IV) oxide is used up: it is reduced to manganese(II) chloride.\n- a drying agent: Concentrated sulphuric acid dries the chlorine.\n- a reducing agent: It removes electrons from chloride ions; it is the oxidising agent.",
+     "position": 1,
+     "options": [
+      {
+       "id": "4664541e-e311-5c93-9222-8c62cc7dba47",
+       "label": "A",
+       "content": "a catalyst",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "16cab0d9-a8ab-54a0-b169-996313bb4c9d",
+       "label": "B",
+       "content": "an oxidising agent",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "98258a62-7825-5598-a0cd-8fe271915e57",
+       "label": "C",
+       "content": "a drying agent",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e9b52eb9-012f-5fb8-85df-b2daa5d9866d",
+       "label": "D",
+       "content": "a reducing agent",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fb3e3e62-2619-5467-9854-b04d03ba2bb3",
+     "key": "chem-ha-02",
+     "stem": "Chlorine prepared in the laboratory is passed first through water and then through concentrated sulphuric acid. The water removes",
+     "image_url": null,
+     "explanation": "Hydrogen chloride from the acid is very soluble in water, while chlorine is only slightly soluble.\n\n**Why the other options are wrong**\n\n- water vapour: Concentrated sulphuric acid removes the water vapour.\n- oxygen: No oxygen is produced in the preparation.\n- manganese(II) chloride: Manganese(II) chloride stays in the flask.",
+     "position": 2,
+     "options": [
+      {
+       "id": "b23d81fd-7d3a-5a3a-bd5b-8bdf6e137235",
+       "label": "A",
+       "content": "water vapour",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f3e2c160-5d86-5bcf-be6b-7c9b5c948d92",
+       "label": "B",
+       "content": "oxygen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ac81de58-6c69-5b93-902f-38773bc448ce",
+       "label": "C",
+       "content": "hydrogen chloride",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0ee86dce-2514-5ab8-b10d-f81c8124f6e8",
+       "label": "D",
+       "content": "manganese(II) chloride",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3568ae2e-0f8d-52df-98db-3d977d12a80a",
+     "key": "chem-ha-03",
+     "stem": "When chlorine water is added to colourless potassium bromide solution, the solution turns",
+     "image_url": null,
+     "explanation": "Cl₂ + 2KBr → 2KCl + Br₂. A more reactive halogen displaces a less reactive one from its salts.\n\n**Why the other options are wrong**\n\n- violet, because iodine is displaced: There is no iodide in the solution.\n- colourless, because no reaction takes place: Chlorine is more reactive than bromine, so it displaces it.\n- pale green, because chlorine dissolves: The orange colour of bromine is seen.",
+     "position": 3,
+     "options": [
+      {
+       "id": "4797efca-5d30-57ff-be3d-83ea044bdfe7",
+       "label": "A",
+       "content": "violet, because iodine is displaced",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "55a40481-29a1-51e1-9462-73b040cd683e",
+       "label": "B",
+       "content": "colourless, because no reaction takes place",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d9065894-30e7-57c2-b64f-2009a76786aa",
+       "label": "C",
+       "content": "pale green, because chlorine dissolves",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0fee3b2c-6769-570a-8260-18230de0062d",
+       "label": "D",
+       "content": "orange, because bromine is displaced",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e6f0fbcd-4a0c-5414-b5be-f94c75ee60eb",
+     "key": "chem-ha-04",
+     "stem": "Going down group VII from fluorine to iodine,",
+     "image_url": null,
+     "explanation": "Larger atoms attract an extra electron less strongly, so the halogens become weaker oxidising agents.\n\n**Why the other options are wrong**\n\n- the boiling points decrease: Boiling points increase: fluorine and chlorine are gases, iodine is a solid.\n- the colours become lighter: The colours darken: pale yellow, yellow-green, red-brown, black.\n- the reactivity of the elements increases: Reactivity decreases down group VII.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b6001a0b-4f62-5d03-98b5-de3cac3ab7cf",
+       "label": "A",
+       "content": "the oxidising power of the elements decreases",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3349f72c-4517-56ed-bd37-5b651ebbd6cc",
+       "label": "B",
+       "content": "the boiling points decrease",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "68b197d7-f243-54ef-8842-6167507219c4",
+       "label": "C",
+       "content": "the colours become lighter",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "49294e09-f598-5b09-865f-46a2a0b22cba",
+       "label": "D",
+       "content": "the reactivity of the elements increases",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c5fbb775-eddb-5dc4-a640-b4f8c5bbfdd8",
+     "key": "chem-ha-05",
+     "stem": "Dry chlorine does not bleach dry litmus paper, but moist chlorine does, because",
+     "image_url": null,
+     "explanation": "Cl₂ + H₂O → HCl + HOCl; HOCl releases oxygen that oxidises the dye to a colourless substance.\n\n**Why the other options are wrong**\n\n- dry chlorine is not acidic: The bleaching is by oxidation, not acidity.\n- water makes the chlorine more concentrated: Water does not concentrate chlorine.\n- dry litmus paper is not coloured: Dry litmus is coloured; the chlorine needs water to bleach it.",
+     "position": 5,
+     "options": [
+      {
+       "id": "55a94fad-eefc-50bd-8401-4837008d405b",
+       "label": "A",
+       "content": "dry chlorine is not acidic",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5f09df76-1c86-5b3f-ae4b-2b0680f1e328",
+       "label": "B",
+       "content": "water reacts with chlorine to form chloric(I) acid, which bleaches",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "668e760b-83e6-5d41-8449-c7abf03fa800",
+       "label": "C",
+       "content": "water makes the chlorine more concentrated",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b6b421d1-502f-5515-9513-7ee3244f2632",
+       "label": "D",
+       "content": "dry litmus paper is not coloured",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7cac4eaa-2d66-550d-af2c-57cc87fbbfd9",
+   "topic": "Nitrogen and Its Compounds",
+   "title": "Nitrogen and Its Compounds: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on nitrogen and its compounds, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 143,
+   "questions": [
+    {
+     "id": "cd376c36-cf1f-5aa9-afd0-edffe36234bb",
+     "key": "chem-ni-01",
+     "stem": "Which conditions are used in the Haber process for making ammonia?",
+     "image_url": null,
+     "explanation": "N₂ + 3H₂ ⇌ 2NH₃. High pressure favours ammonia; 450 °C with an iron catalyst gives a reasonable rate.\n\n**Why the other options are wrong**\n\n- Vanadium(V) oxide catalyst, about 450 °C, 1–2 atm: These are the conditions of the Contact process.\n- Platinum catalyst, about 900 °C, about 10 atm: These are the conditions of the Ostwald process.\n- Nickel catalyst, about 150 °C, about 5 atm: These are conditions for hydrogenating vegetable oils.",
+     "position": 1,
+     "options": [
+      {
+       "id": "21dea09b-4669-5070-a75f-6e5a6ea67c22",
+       "label": "A",
+       "content": "Vanadium(V) oxide catalyst, about 450 °C, 1–2 atm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b257321b-ef9f-5732-b861-a07c846fa4b6",
+       "label": "B",
+       "content": "Platinum catalyst, about 900 °C, about 10 atm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bd77b02f-fef8-5415-8da0-d28c2bb66058",
+       "label": "C",
+       "content": "Iron catalyst, about 450 °C, about 200 atm",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7abe5181-9190-50e7-abae-526bfacf1534",
+       "label": "D",
+       "content": "Nickel catalyst, about 150 °C, about 5 atm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8e141ea8-1a13-57ff-88d3-1fef39cb3089",
+     "key": "chem-ni-02",
+     "stem": "Ammonia gas is dried by passing it through",
+     "image_url": null,
+     "explanation": "Quicklime is a basic drying agent, so it removes water without reacting with the alkaline gas.\n\n**Why the other options are wrong**\n\n- concentrated sulphuric acid: Ammonia is alkaline and reacts with the acid to form ammonium sulphate.\n- anhydrous calcium chloride: Ammonia combines with calcium chloride.\n- phosphorus(V) oxide: This acidic drying agent reacts with ammonia.",
+     "position": 2,
+     "options": [
+      {
+       "id": "037d7bdd-a3ea-5ff7-b0ff-30653e2e1474",
+       "label": "A",
+       "content": "concentrated sulphuric acid",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4c7a6ca8-6480-51ce-ae74-c0b247f7b69c",
+       "label": "B",
+       "content": "anhydrous calcium chloride",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e6a91093-5023-569e-96e6-a6898430a232",
+       "label": "C",
+       "content": "phosphorus(V) oxide",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "41f7a1c0-a029-5f27-8ab0-511a287dceea",
+       "label": "D",
+       "content": "calcium oxide (quicklime)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d747ce99-8949-5992-8a3f-03fd83eac465",
+     "key": "chem-ni-03",
+     "stem": "In the fountain experiment, water rushes into a flask of ammonia and the red litmus in it turns blue. This shows that ammonia is",
+     "image_url": null,
+     "explanation": "As ammonia dissolves, the pressure in the flask falls and water is pushed in: NH₃ + H₂O ⇌ NH₄⁺ + OH⁻.\n\n**Why the other options are wrong**\n\n- insoluble in water and acidic: The water rushes in because the gas dissolves rapidly.\n- denser than air: Ammonia is less dense than air; density does not cause the fountain.\n- a strong oxidising agent: The fountain shows solubility, not oxidising power.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2f264e52-3381-5585-8e8e-67f88b55314c",
+       "label": "A",
+       "content": "very soluble in water and forms an alkaline solution",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "15ebec22-a1ef-51d5-825a-d9ae4fb37fa1",
+       "label": "B",
+       "content": "insoluble in water and acidic",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d22dbffc-40d1-5e59-a3ab-966f818eddf7",
+       "label": "C",
+       "content": "denser than air",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3253b264-82d5-55a5-b39d-21b73888b0c7",
+       "label": "D",
+       "content": "a strong oxidising agent",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6a06bce9-5f16-5972-967a-4a7f4865aeb2",
+     "key": "chem-ni-04",
+     "stem": "What is the percentage by mass of nitrogen in urea, CO(NH₂)₂? (Mᵣ = 60)",
+     "image_url": null,
+     "explanation": "Mass of N $= 2 \\times 14 = 28$; $\\% \\text{N} = \\dfrac{28}{60} \\times 100 = 46.7\\%$\n\n**Why the other options are wrong**\n\n- 23.33%: You counted only one nitrogen atom; urea has two.\n- 28%: 28 is the mass of nitrogen in one molecule, not a percentage.\n- 35%: 35% is the nitrogen content of ammonium nitrate, not urea.",
+     "position": 4,
+     "options": [
+      {
+       "id": "183110ff-9ae5-5281-b35c-287d6bdac411",
+       "label": "A",
+       "content": "23.33%",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bc308e42-0fde-52c1-a43a-5a9ad85ee66e",
+       "label": "B",
+       "content": "28%",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5b7a7d6d-3cb6-5cbb-9acc-bdc98554babd",
+       "label": "C",
+       "content": "35%",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "aad0941c-451a-5112-913f-27c3e1df4b55",
+       "label": "D",
+       "content": "46.67%",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b66cb58c-4681-5798-a336-4c9f32c006cb",
+     "key": "chem-ni-05",
+     "stem": "When sodium nitrate is heated strongly, the products are",
+     "image_url": null,
+     "explanation": "2NaNO₃ → 2NaNO₂ + O₂. Nitrates of very reactive metals (K, Na) give the nitrite and oxygen only.\n\n**Why the other options are wrong**\n\n- sodium oxide, nitrogen(IV) oxide and oxygen: That pattern applies to nitrates of metals below sodium, e.g. lead(II) nitrate.\n- sodium and nitrogen: Heating does not break the salt into its elements.\n- sodium oxide and nitrogen(IV) oxide only: Sodium nitrate gives no brown gas.",
+     "position": 5,
+     "options": [
+      {
+       "id": "5e870615-eb7b-50f7-b728-02ea41b3dc2f",
+       "label": "A",
+       "content": "sodium oxide, nitrogen(IV) oxide and oxygen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f5a0cc38-fb70-5154-9f77-0f6f582d5b55",
+       "label": "B",
+       "content": "sodium nitrite and oxygen",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a088c272-b082-504c-a9cb-e404a899c089",
+       "label": "C",
+       "content": "sodium and nitrogen",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e9df303c-91c2-5992-b178-6484ea593e3c",
+       "label": "D",
+       "content": "sodium oxide and nitrogen(IV) oxide only",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "9f8b70a5-b5e6-5f6d-a296-aafdd8370098",
+   "topic": "Sulphur and Its Compounds",
+   "title": "Sulphur and Its Compounds: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on sulphur and its compounds, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 144,
+   "questions": [
+    {
+     "id": "81b40357-6795-5f75-81e7-7616af03c68a",
+     "key": "chem-su-01",
+     "stem": "The catalyst used in the Contact process is",
+     "image_url": null,
+     "explanation": "2SO₂ + O₂ ⇌ 2SO₃ over V₂O₅ at about 450 °C and 1–2 atm.\n\n**Why the other options are wrong**\n\n- iron: Iron is the catalyst in the Haber process.\n- platinum–rhodium: Platinum–rhodium is used in the Ostwald process.\n- nickel: Nickel is used to hydrogenate oils.",
+     "position": 1,
+     "options": [
+      {
+       "id": "33dfe7b2-ef5e-5ecf-a437-97104837e32f",
+       "label": "A",
+       "content": "iron",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "30117ccc-3420-5264-83d8-0bccf9e9bf50",
+       "label": "B",
+       "content": "platinum–rhodium",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5601484e-1463-56d7-a48e-9ab2f2f0f6ec",
+       "label": "C",
+       "content": "vanadium(V) oxide",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fb2f3ccf-0422-539c-ab38-bcbe9912ffb4",
+       "label": "D",
+       "content": "nickel",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b3f52c2d-e005-5734-aaa3-83603a5dd9fb",
+     "key": "chem-su-02",
+     "stem": "In the Contact process, sulphur(VI) oxide is absorbed in concentrated sulphuric acid rather than in water because with water it",
+     "image_url": null,
+     "explanation": "SO₃ + H₂SO₄ → H₂S₂O₇ (oleum), which is then diluted carefully: H₂S₂O₇ + H₂O → 2H₂SO₄.\n\n**Why the other options are wrong**\n\n- does not react: SO₃ reacts very vigorously with water.\n- forms sulphuric(IV) acid: SO₃ with water gives sulphuric(VI) acid, but as an uncontrollable mist.\n- explodes: The problem is the acid mist, not an explosion.",
+     "position": 2,
+     "options": [
+      {
+       "id": "818dc6b1-4672-562f-b8f0-04cfbee9b903",
+       "label": "A",
+       "content": "does not react",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f0e51c6c-90e1-5a82-b7c4-b9b25bcbaf18",
+       "label": "B",
+       "content": "forms sulphuric(IV) acid",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "13e3965a-d395-5541-82de-738c07720a05",
+       "label": "C",
+       "content": "explodes",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "16b17861-a472-5e03-9f16-dc46afec423f",
+       "label": "D",
+       "content": "forms a fine mist of acid that is hard to collect",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1bb9a51c-e1be-5754-97fe-fdcd76918ccd",
+     "key": "chem-su-03",
+     "stem": "When concentrated sulphuric acid is added to sugar, a black mass of carbon forms. Here the acid acts as",
+     "image_url": null,
+     "explanation": "C₁₂H₂₂O₁₁ → 12C + 11H₂O: the acid removes the elements of water from the sugar.\n\n**Why the other options are wrong**\n\n- an oxidising agent: The acid removes hydrogen and oxygen as water; that is dehydration.\n- a catalyst: The acid is used up as it absorbs the water.\n- a reducing agent: Concentrated sulphuric acid is never a reducing agent.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d5f61f4f-ba27-5e7a-a20d-b89a9d2c5a97",
+       "label": "A",
+       "content": "a dehydrating agent",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "cff7fc77-bfe7-55ca-80ee-83c33e05ee32",
+       "label": "B",
+       "content": "an oxidising agent",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6f78fd0b-8606-5c55-a130-6ef3f85542a8",
+       "label": "C",
+       "content": "a catalyst",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1ef8f7be-e9d6-5755-aa75-3942a612e8df",
+       "label": "D",
+       "content": "a reducing agent",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e06be0bc-9e9b-5edc-b182-756669d2fd53",
+     "key": "chem-su-04",
+     "stem": "Sulphur(IV) oxide bleaches damp coloured flowers by",
+     "image_url": null,
+     "explanation": "SO₂ removes oxygen from the dye; air slowly re-oxidises it, so the colour can return (temporary bleaching).\n\n**Why the other options are wrong**\n\n- oxidation: Chlorine bleaches by oxidation; sulphur(IV) oxide bleaches by reduction.\n- dehydration: Dehydration removes water; it does not bleach dyes.\n- neutralisation: Bleaching is not an acid–base reaction.",
+     "position": 4,
+     "options": [
+      {
+       "id": "18ab5b67-d756-53e1-a717-8081b9d59209",
+       "label": "A",
+       "content": "oxidation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bd4ac33b-50e3-54bd-b332-23ea819d070a",
+       "label": "B",
+       "content": "reduction",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d613b5f7-41fb-5b60-bb82-dfee73cf8ed2",
+       "label": "C",
+       "content": "dehydration",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6efb036a-2f44-5e81-900f-7e40497a4454",
+       "label": "D",
+       "content": "neutralisation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8192a4b1-db92-5dfa-9cbe-1eb921801d39",
+     "key": "chem-su-05",
+     "stem": "In the Contact process each sulphur atom ends up in one H₂SO₄ molecule. What mass of sulphuric(VI) acid can be made from 32 g of sulphur? (H₂SO₄ = 98)",
+     "image_url": null,
+     "explanation": "S → SO₂ → SO₃ → H₂SO₄: 1 mol S (32 g) gives 1 mol H₂SO₄ $= 98$ g.\n\n**Why the other options are wrong**\n\n- 32 g: That is the mass of sulphur, not of the acid.\n- 64 g: That is the mass of SO₂ formed in the first step.\n- 80 g: That is the mass of SO₃, before it is converted into acid.",
+     "position": 5,
+     "options": [
+      {
+       "id": "5f90324c-5c92-545b-8323-2a0440948b16",
+       "label": "A",
+       "content": "32 g",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "275e70cd-4234-5b69-b99e-ebf895df71f9",
+       "label": "B",
+       "content": "64 g",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "75b231d5-9e75-538f-ad04-4377514ea0f3",
+       "label": "C",
+       "content": "80 g",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fc8ebc2c-f32e-5606-82d5-1ee04a8916c4",
+       "label": "D",
+       "content": "98 g",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7aa234d3-4e3a-568b-8602-8d89c82b56c4",
+   "topic": "Carbon and Its Inorganic Compounds",
+   "title": "Carbon and Its Inorganic Compounds: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on carbon and its inorganic compounds, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 145,
+   "questions": [
+    {
+     "id": "ebab0428-447a-5c5a-870a-0fe287b0d696",
+     "key": "chem-ca-01",
+     "stem": "Diamond is very hard because",
+     "image_url": null,
+     "explanation": "Every atom is held in place by strong C–C bonds in three dimensions, so the crystal is extremely hard.\n\n**Why the other options are wrong**\n\n- its atoms are held by weak van der Waals forces: Weak forces hold the layers of graphite, which is soft.\n- it contains delocalised electrons: Diamond has no delocalised electrons; that is why it does not conduct.\n- it is made of small carbon molecules: Diamond is a giant covalent structure, not molecular.",
+     "position": 1,
+     "options": [
+      {
+       "id": "86ae1636-ea29-5aa1-9ac8-7b744810848b",
+       "label": "A",
+       "content": "its atoms are held by weak van der Waals forces",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "04db25ee-d89d-5a41-80b0-986739640137",
+       "label": "B",
+       "content": "it contains delocalised electrons",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5015b2e1-5947-5c02-822a-3ca221c5cc72",
+       "label": "C",
+       "content": "each carbon atom is covalently bonded to four others in a giant network",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "aeae5436-4712-58f0-acf8-9176ce2b00b1",
+       "label": "D",
+       "content": "it is made of small carbon molecules",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f73d1d70-ccd1-5547-a064-d12f256d75a4",
+     "key": "chem-ca-02",
+     "stem": "Graphite conducts electricity because",
+     "image_url": null,
+     "explanation": "Three electrons form bonds within a layer; the fourth is delocalised and carries current along the layers.\n\n**Why the other options are wrong**\n\n- it contains carbon ions: Graphite is covalent; it has no ions.\n- its layers slide over one another: Sliding layers make graphite soft and slippery, not conducting.\n- each carbon atom forms four bonds: Each atom forms only three bonds in graphite; the fourth electron is free.",
+     "position": 2,
+     "options": [
+      {
+       "id": "6fc9255e-c4ac-561b-997d-1fbfff555afc",
+       "label": "A",
+       "content": "it contains carbon ions",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e664fd28-c2c5-512d-bfae-97e397584b60",
+       "label": "B",
+       "content": "its layers slide over one another",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c9595d96-eb61-577d-97a4-e907ed94846d",
+       "label": "C",
+       "content": "each carbon atom forms four bonds",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "47a3e859-d6b4-5ffe-920f-345421c40b50",
+       "label": "D",
+       "content": "each carbon atom has one delocalised electron that moves between the layers",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5b2a869e-60a9-5e00-a395-3f4527e05fc9",
+     "key": "chem-ca-03",
+     "stem": "Dilute sulphuric acid is not used with marble chips to prepare carbon(IV) oxide because",
+     "image_url": null,
+     "explanation": "Dilute hydrochloric acid is used instead: CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂; calcium chloride is soluble.\n\n**Why the other options are wrong**\n\n- sulphuric acid does not react with carbonates: It does react at first, until the coating forms.\n- the gas produced is sulphur(IV) oxide: The gas would still be carbon(IV) oxide.\n- the reaction is too violent: The reaction quickly slows and stops.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0b0bd49f-3312-552b-8fa3-42e9b8cc4fa2",
+       "label": "A",
+       "content": "insoluble calcium sulphate coats the marble and stops the reaction",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "48c8d91f-d74b-5b57-8879-d9de73b7c6dd",
+       "label": "B",
+       "content": "sulphuric acid does not react with carbonates",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c145fc06-0deb-5e9f-875a-eaea35ec45d6",
+       "label": "C",
+       "content": "the gas produced is sulphur(IV) oxide",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "84e48bae-b3b2-5196-bf73-7aa609f68395",
+       "label": "D",
+       "content": "the reaction is too violent",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9c54b412-7bff-583c-bb3d-c8301d3deb01",
+     "key": "chem-ca-04",
+     "stem": "Lime water turns milky when carbon(IV) oxide is bubbled through it, but clear again with excess gas, because",
+     "image_url": null,
+     "explanation": "Ca(OH)₂ + CO₂ → CaCO₃(s) + H₂O, then CaCO₃ + H₂O + CO₂ → Ca(HCO₃)₂(aq).\n\n**Why the other options are wrong**\n\n- the calcium carbonate decomposes: Calcium carbonate decomposes only on strong heating.\n- the water evaporates: The solution does not evaporate.\n- calcium hydroxide is formed again: Excess CO₂ forms Ca(HCO₃)₂, not Ca(OH)₂.",
+     "position": 4,
+     "options": [
+      {
+       "id": "dbded02f-6ee7-5b9b-ae9e-8140224f7917",
+       "label": "A",
+       "content": "the calcium carbonate decomposes",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c394d127-d3dd-5c0d-bb52-d23d0f4a2c04",
+       "label": "B",
+       "content": "soluble calcium hydrogencarbonate is formed",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ac2ef8a4-2c73-56b4-83cc-5e55d0ad4e50",
+       "label": "C",
+       "content": "the water evaporates",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3cb6951d-265a-57e2-9d6e-61d22f591af9",
+       "label": "D",
+       "content": "calcium hydroxide is formed again",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5ba44f47-204f-5ced-bf9c-0cc5510d7406",
+     "key": "chem-ca-05",
+     "stem": "What volume of carbon(IV) oxide at s.t.p. is given off when 10 g of calcium carbonate reacts with excess dilute hydrochloric acid? (CaCO₃ = 100)",
+     "image_url": null,
+     "explanation": "Moles CaCO₃ $= \\dfrac{10}{100} = 0.1$; moles CO₂ $= 0.1$; volume $= 0.1 \\times 22.4 = 2.24$ dm³\n\n**Why the other options are wrong**\n\n- 22.4 dm³: You used the molar volume without finding the number of moles.\n- 4.48 dm³: You used the 2 from 2HCl; 1 mol CaCO₃ gives 1 mol CO₂.\n- 2.4 dm³: You used 24 dm³, the molar volume at room conditions.",
+     "position": 5,
+     "options": [
+      {
+       "id": "4db98bef-3154-51b7-a67e-5d0e06afccea",
+       "label": "A",
+       "content": "2.24 dm³",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "453aaef7-84d5-53f8-b9c9-6557ea3e5c8d",
+       "label": "B",
+       "content": "2.4 dm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "931d4f4e-ba2f-58aa-a562-b7f635889214",
+       "label": "C",
+       "content": "4.48 dm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "13d2079f-490b-5120-b3ad-5f21ef0978ae",
+       "label": "D",
+       "content": "22.4 dm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "14093205-e452-5365-8cae-22c2fed7c49b",
+   "topic": "Reactivity Series and Extraction of Metals",
+   "title": "Reactivity Series and Extraction of Metals: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on reactivity series and extraction of metals, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 146,
+   "questions": [
+    {
+     "id": "898d1677-2235-5c63-abad-646ec6c5f100",
+     "key": "chem-rx-01",
+     "stem": "Aluminium is extracted by electrolysis rather than by heating its oxide with carbon because aluminium",
+     "image_url": null,
+     "explanation": "Metals above carbon in the reactivity series (K, Na, Ca, Mg, Al) hold oxygen too strongly for carbon to remove it.\n\n**Why the other options are wrong**\n\n- has a very low melting point: Its melting point does not decide the method; its reactivity does.\n- does not form an oxide: Its ore, bauxite, is aluminium oxide.\n- is found uncombined in nature: Aluminium is always found combined.",
+     "position": 1,
+     "options": [
+      {
+       "id": "6899b9ae-1fb8-55a3-b8c6-6fe07a4b8159",
+       "label": "A",
+       "content": "has a very low melting point",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "481e955b-0268-5cac-b472-622b3ada5188",
+       "label": "B",
+       "content": "does not form an oxide",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "83954c33-04f2-5b12-9691-d297eac7cf05",
+       "label": "C",
+       "content": "is too reactive to be reduced by carbon",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "56bdd2c3-fb77-5289-8c9f-ad0507f3eb6d",
+       "label": "D",
+       "content": "is found uncombined in nature",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c43bdd2c-b1cd-5a01-a87e-f1d5f71ebd7d",
+     "key": "chem-rx-02",
+     "stem": "The main reducing agent in the blast furnace is",
+     "image_url": null,
+     "explanation": "Fe₂O₃ + 3CO → 2Fe + 3CO₂. The CO is formed when coke burns and the CO₂ reacts with more coke.\n\n**Why the other options are wrong**\n\n- limestone: Limestone removes impurities as slag.\n- hot air: Hot air burns the coke to provide heat and carbon(II) oxide.\n- carbon(IV) oxide: Carbon(IV) oxide is reduced to carbon(II) oxide by coke; it does not reduce the ore.",
+     "position": 2,
+     "options": [
+      {
+       "id": "ca3d1b90-89df-5c90-ad5c-a2709887b176",
+       "label": "A",
+       "content": "limestone",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a6ee3c22-d549-5b4e-aba3-e731fa8b55fd",
+       "label": "B",
+       "content": "hot air",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "de808389-6c05-5a32-851e-5dc903d35245",
+       "label": "C",
+       "content": "carbon(IV) oxide",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c1163aa1-f63f-54e2-9039-7f173d2ca8d4",
+       "label": "D",
+       "content": "carbon(II) oxide",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "83c7434d-5270-5872-b8f0-c4817cbbc55b",
+     "key": "chem-rx-03",
+     "stem": "Limestone is added to the blast furnace in order to",
+     "image_url": null,
+     "explanation": "CaCO₃ → CaO + CO₂, then CaO + SiO₂ → CaSiO₃ (slag), which floats on the molten iron.\n\n**Why the other options are wrong**\n\n- reduce the iron ore: Carbon(II) oxide reduces the ore.\n- provide oxygen for burning the coke: Hot air provides the oxygen.\n- make the iron harder: Limestone does not dissolve in the iron.",
+     "position": 3,
+     "options": [
+      {
+       "id": "4dc9438f-b21f-576f-bee2-58113b561b1e",
+       "label": "A",
+       "content": "remove silica (sand) impurities as slag",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "563f4138-e08a-5bd9-87be-47623b8918ab",
+       "label": "B",
+       "content": "reduce the iron ore",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "32a2f434-7a16-5fbf-865a-6b8d639c6a88",
+       "label": "C",
+       "content": "provide oxygen for burning the coke",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cac73c23-73d7-56ad-b7c7-7613a0866d3c",
+       "label": "D",
+       "content": "make the iron harder",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0501bf51-34a9-5b8c-878f-f1e886d96ad0",
+     "key": "chem-rx-04",
+     "stem": "Which of the following mixtures will react?",
+     "image_url": null,
+     "explanation": "A more reactive metal displaces a less reactive one from its salt: Zn + CuSO₄ → ZnSO₄ + Cu.\n\n**Why the other options are wrong**\n\n- Copper and zinc sulphate solution: Copper is less reactive than zinc, so it cannot displace it.\n- Silver and copper(II) sulphate solution: Silver is less reactive than copper.\n- Iron and magnesium chloride solution: Iron is less reactive than magnesium.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f1844eaa-fa7a-5ead-a1d0-49b9e75a6cdc",
+       "label": "A",
+       "content": "Copper and zinc sulphate solution",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b7d2fd8e-2ebb-5120-9ae5-04959d2c61f6",
+       "label": "B",
+       "content": "Zinc and copper(II) sulphate solution",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "52bfae35-5046-541d-8079-4b37f4d762ba",
+       "label": "C",
+       "content": "Silver and copper(II) sulphate solution",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "606e794d-56aa-556f-bf4f-7428991ea9ae",
+       "label": "D",
+       "content": "Iron and magnesium chloride solution",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7ee879a4-572e-5a08-b02e-6e9cee7372a7",
+     "key": "chem-rx-05",
+     "stem": "What mass of iron can be obtained from 320 g of iron(III) oxide? Fe₂O₃ + 3CO → 2Fe + 3CO₂ (Fe₂O₃ = 160)",
+     "image_url": null,
+     "explanation": "Moles Fe₂O₃ $= \\dfrac{320}{160} = 2$; moles Fe $= 4$; mass $= 4 \\times 56 = 224$ g\n\n**Why the other options are wrong**\n\n- 112 g: You used one mole of iron per mole of oxide; each Fe₂O₃ contains two Fe.\n- 320 g: Mass is lost as oxygen is removed.\n- 96 g: That is the mass of oxygen removed.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b3d075a0-aee2-5885-86f4-a449373d6508",
+       "label": "A",
+       "content": "96 g",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "76297ebc-3434-545e-8884-e781888b4322",
+       "label": "B",
+       "content": "112 g",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9c705f76-4f44-506e-afa7-8667225b644d",
+       "label": "C",
+       "content": "224 g",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "66d183d3-95d8-5d9a-924e-20db17257c73",
+       "label": "D",
+       "content": "320 g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "275109c0-cb82-56d9-b50b-3c60e87fc6a5",
+   "topic": "Alkali Metals",
+   "title": "Alkali Metals: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on alkali metals, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 147,
+   "questions": [
+    {
+     "id": "31b12b59-3206-52de-8883-b11ce3e9ac61",
+     "key": "chem-am-01",
+     "stem": "Sodium is stored under paraffin oil because it",
+     "image_url": null,
+     "explanation": "Paraffin oil keeps out air and moisture; sodium would otherwise tarnish at once and react with water vapour.\n\n**Why the other options are wrong**\n\n- is very heavy: Sodium is less dense than water.\n- melts at room temperature: Sodium melts at 98 °C.\n- is poisonous: The reason is reactivity, not toxicity.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8466e10f-a455-5473-beba-a685b091527d",
+       "label": "A",
+       "content": "is very heavy",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cef0a761-4bdf-5bf9-a5e1-ec9491cb4284",
+       "label": "B",
+       "content": "melts at room temperature",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5e6a0d2f-cd19-5b95-a612-054ac9f4c769",
+       "label": "C",
+       "content": "reacts rapidly with air and water",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b81ab481-4fc2-589e-8169-ad94cdb7f213",
+       "label": "D",
+       "content": "is poisonous",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "587e9b2f-c2ae-5cd7-a2c9-978726e0a4f8",
+     "key": "chem-am-02",
+     "stem": "The products of the reaction of sodium with cold water are",
+     "image_url": null,
+     "explanation": "2Na + 2H₂O → 2NaOH + H₂. The sodium melts into a ball and darts about on the water.\n\n**Why the other options are wrong**\n\n- sodium oxide and hydrogen: The oxide reacts with water; the product in solution is the hydroxide.\n- sodium hydroxide and oxygen: Water is reduced to hydrogen, not oxidised to oxygen.\n- sodium oxide and oxygen: No oxygen is formed.",
+     "position": 2,
+     "options": [
+      {
+       "id": "59d22c7c-faec-51bd-b3d7-72da9f02052b",
+       "label": "A",
+       "content": "sodium oxide and hydrogen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "557c2b36-9e79-553e-8998-e76bd1622863",
+       "label": "B",
+       "content": "sodium hydroxide and oxygen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a67d78f1-3bde-56cc-8a60-56b0f16299c0",
+       "label": "C",
+       "content": "sodium oxide and oxygen",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1beba6e6-b940-5e2d-b922-d40045a7fd22",
+       "label": "D",
+       "content": "sodium hydroxide and hydrogen",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f1ffd674-d0d8-5169-aba8-d8509c90cf9b",
+     "key": "chem-am-03",
+     "stem": "What colour does potassium give in a flame test?",
+     "image_url": null,
+     "explanation": "Potassium's lilac flame is easily masked by sodium's yellow, so it is viewed through blue cobalt glass.\n\n**Why the other options are wrong**\n\n- Golden yellow: Golden yellow is sodium.\n- Brick-red: Brick-red is calcium.\n- Blue-green: Blue-green is copper.",
+     "position": 3,
+     "options": [
+      {
+       "id": "cf2a95dc-2fd3-5bf0-a991-0b20559f9343",
+       "label": "A",
+       "content": "Lilac",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "081f071c-bb86-5e8b-8120-00c79167720d",
+       "label": "B",
+       "content": "Golden yellow",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3ae581cd-0c22-52d8-9c2f-5ba9296ad76b",
+       "label": "C",
+       "content": "Brick-red",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fdc63979-76e2-5e04-953f-c664ef87ba4f",
+       "label": "D",
+       "content": "Blue-green",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f93a9aa0-8c46-56bf-8777-77556f8ed3b6",
+     "key": "chem-am-04",
+     "stem": "What volume of hydrogen at s.t.p. is produced when 2.3 g of sodium reacts completely with water? 2Na + 2H₂O → 2NaOH + H₂",
+     "image_url": null,
+     "explanation": "Moles Na $= \\dfrac{2.3}{23} = 0.1$; moles H₂ $= 0.05$; volume $= 0.05 \\times 22.4 = 1.12$ dm³\n\n**Why the other options are wrong**\n\n- 2.24 dm³: You used a 1 : 1 ratio; 2 mol Na give 1 mol H₂.\n- 4.48 dm³: You doubled the moles instead of halving them.\n- 1.2 dm³: You used 24 dm³, the molar volume at room conditions.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b13fc3b6-f2a2-5522-8e8c-ed7df613063c",
+       "label": "A",
+       "content": "1.12 dm³",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "097d0eac-a6c5-5dc6-8bad-b02ccf1736d5",
+       "label": "B",
+       "content": "1.2 dm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1775f1c8-a7f5-540e-ba8f-f955c3d0caf1",
+       "label": "C",
+       "content": "2.24 dm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "30153554-bbb3-5e33-a0e4-6e48f671d2e3",
+       "label": "D",
+       "content": "4.48 dm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8df0022f-cccf-559f-a548-6b38fd005a95",
+     "key": "chem-am-05",
+     "stem": "Sodium carbonate is manufactured industrially by",
+     "image_url": null,
+     "explanation": "The Solvay process uses brine, limestone and ammonia; sodium hydrogencarbonate is heated to give sodium carbonate.\n\n**Why the other options are wrong**\n\n- the Haber process: The Haber process makes ammonia.\n- the Contact process: The Contact process makes sulphuric(VI) acid.\n- the Ostwald process: The Ostwald process makes nitric(V) acid.",
+     "position": 5,
+     "options": [
+      {
+       "id": "07bf795a-b9a3-5773-a2bd-603466998137",
+       "label": "A",
+       "content": "the Haber process",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2674dc06-416f-54dc-bf6b-75447a125173",
+       "label": "B",
+       "content": "the Solvay process",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ac171f7d-a0ce-556e-af87-162fd42a8c84",
+       "label": "C",
+       "content": "the Contact process",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "800b467b-c940-58f1-8a45-83215d70d921",
+       "label": "D",
+       "content": "the Ostwald process",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7e67ad84-7586-587c-ac04-865a10bbe8cb",
+   "topic": "Alkaline Earth Metals",
+   "title": "Alkaline Earth Metals: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on alkaline earth metals, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 148,
+   "questions": [
+    {
+     "id": "e91d4cc5-05a8-5435-bbfd-61ad6b310e79",
+     "key": "chem-ae-01",
+     "stem": "Magnesium ribbon burns in air with",
+     "image_url": null,
+     "explanation": "2Mg + O₂ → 2MgO; some magnesium nitride, Mg₃N₂, also forms with the nitrogen in air.\n\n**Why the other options are wrong**\n\n- a lilac flame, forming a black powder: Lilac is potassium's flame colour; MgO is white.\n- a pale blue flame, forming a yellow liquid: Magnesium burns with a dazzling white light.\n- no flame, because magnesium is unreactive: Magnesium burns readily once lit.",
+     "position": 1,
+     "options": [
+      {
+       "id": "db1dbe3e-6043-5ece-9b74-422289a7f747",
+       "label": "A",
+       "content": "a lilac flame, forming a black powder",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9b6fd68b-3b43-51da-8eeb-2a8c54b3bd94",
+       "label": "B",
+       "content": "a pale blue flame, forming a yellow liquid",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "05064924-4795-51c3-a4c4-07081c10cd1d",
+       "label": "C",
+       "content": "a brilliant white flame, forming a white powder",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b90fe05b-911c-5719-8fbf-dbee2979805d",
+       "label": "D",
+       "content": "no flame, because magnesium is unreactive",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2f94be5c-b864-5a5d-9f02-9e55ef8f89e7",
+     "key": "chem-ae-02",
+     "stem": "Calcium reacts with cold water to give",
+     "image_url": null,
+     "explanation": "Ca + 2H₂O → Ca(OH)₂ + H₂. Calcium hydroxide is only slightly soluble, so the mixture looks milky.\n\n**Why the other options are wrong**\n\n- oxygen and calcium oxide: Water is reduced to hydrogen; no oxygen forms.\n- hydrogen and calcium carbonate: There is no carbon in the reactants.\n- no reaction: Calcium reacts steadily with cold water.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c9ac19b9-8dbf-5b43-a82a-5935f634f6d7",
+       "label": "A",
+       "content": "oxygen and calcium oxide",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5ab3a48f-24a1-5482-8e75-a42b045e6980",
+       "label": "B",
+       "content": "hydrogen and calcium carbonate",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "13ebf816-e8f2-5ef0-af3e-8c888fb3a2c3",
+       "label": "C",
+       "content": "no reaction",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "33358af6-20a5-5dd8-8f8b-1f4f8b184913",
+       "label": "D",
+       "content": "hydrogen and a milky suspension of calcium hydroxide",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e8ab520d-8e6b-5805-ae57-e6a441a94a05",
+     "key": "chem-ae-03",
+     "stem": "When limestone (calcium carbonate) is heated strongly in a kiln, it forms",
+     "image_url": null,
+     "explanation": "CaCO₃ → CaO + CO₂. Quicklime (CaO) is used to make cement, slaked lime and in steel-making.\n\n**Why the other options are wrong**\n\n- calcium hydroxide and carbon(IV) oxide: Calcium hydroxide forms when water is added to quicklime.\n- calcium and carbon(IV) oxide: Heating does not release the metal.\n- calcium oxide and carbon(II) oxide: The gas is carbon(IV) oxide.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8c14b91c-9949-5205-bba4-5016e153006d",
+       "label": "A",
+       "content": "calcium oxide and carbon(IV) oxide",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "22ca4f52-f0b4-5e7c-a4eb-0cf91da1ba2c",
+       "label": "B",
+       "content": "calcium hydroxide and carbon(IV) oxide",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a917240f-6d27-50dd-ac2f-06a58a1d206a",
+       "label": "C",
+       "content": "calcium and carbon(IV) oxide",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bc71131c-0b96-5e82-a080-bc5224888bc7",
+       "label": "D",
+       "content": "calcium oxide and carbon(II) oxide",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fe2d9fee-bee0-51ba-824d-fe17aec2b919",
+     "key": "chem-ae-04",
+     "stem": "Farmers add slaked lime, Ca(OH)₂, to soil in order to",
+     "image_url": null,
+     "explanation": "Calcium hydroxide neutralises acids in the soil, raising the pH so that crops grow better.\n\n**Why the other options are wrong**\n\n- increase the nitrogen content: Slaked lime contains no nitrogen.\n- make the soil more acidic: Slaked lime is a base; it neutralises acids.\n- kill all insects: Liming is not a pesticide treatment.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ccb7429b-88b5-5fde-a625-0011052b6432",
+       "label": "A",
+       "content": "increase the nitrogen content",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c5901968-516e-520c-8408-85c184659869",
+       "label": "B",
+       "content": "reduce the acidity of the soil",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b52a450a-6ed4-50b2-8090-5ecc52a5f5a4",
+       "label": "C",
+       "content": "make the soil more acidic",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5fb7b7d8-0c0e-598e-aa18-d8895cedfb58",
+       "label": "D",
+       "content": "kill all insects",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0de621dc-59a8-5b88-9236-a64b92456cdd",
+     "key": "chem-ae-05",
+     "stem": "Which compound is used to make casts for broken bones?",
+     "image_url": null,
+     "explanation": "Plaster of Paris mixed with water sets hard as it forms gypsum, CaSO₄·2H₂O.\n\n**Why the other options are wrong**\n\n- Slaked lime, Ca(OH)₂: Slaked lime is used in mortar and to treat acidic soil.\n- Quicklime, CaO: Quicklime reacts violently with water and would burn the skin.\n- Limestone, CaCO₃: Limestone does not set when mixed with water.",
+     "position": 5,
+     "options": [
+      {
+       "id": "dafd5970-305e-5c4c-988f-b295d44eb973",
+       "label": "A",
+       "content": "Slaked lime, Ca(OH)₂",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8b1f37a9-143e-515b-9c40-a8aaceef8b7e",
+       "label": "B",
+       "content": "Quicklime, CaO",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "605d4656-ac06-5f0b-bfe7-9c2a6bdd9bf3",
+       "label": "C",
+       "content": "Plaster of Paris, CaSO₄·½H₂O",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3167c3e5-dcc4-5944-a993-43c8b929cd9b",
+       "label": "D",
+       "content": "Limestone, CaCO₃",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ac3d0e56-a841-5362-9863-f1affe89536e",
+   "topic": "Aluminium and Group III Metals",
+   "title": "Aluminium and Group III Metals: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on aluminium and group iii metals, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 149,
+   "questions": [
+    {
+     "id": "efb46b95-711a-5931-9b57-55d8f84afb1b",
+     "key": "chem-al-01",
+     "stem": "The chief ore of aluminium is",
+     "image_url": null,
+     "explanation": "Bauxite is impure hydrated aluminium oxide, Al₂O₃·2H₂O; Sierra Leone has bauxite deposits in the south.\n\n**Why the other options are wrong**\n\n- haematite: Haematite is an ore of iron.\n- cryolite: Cryolite is added to lower the melting point; it is not the main ore.\n- rutile: Rutile is an ore of titanium.",
+     "position": 1,
+     "options": [
+      {
+       "id": "43a053da-e2f7-5e75-bf8b-85d8b3d2271c",
+       "label": "A",
+       "content": "haematite",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "64d4f128-286e-5b1f-890f-6b9c8f1e1751",
+       "label": "B",
+       "content": "cryolite",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1b96c62c-89f7-534d-b61b-b8aa00eb8a4b",
+       "label": "C",
+       "content": "rutile",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "41f0434f-3e9a-5375-a9cd-37cd420bf003",
+       "label": "D",
+       "content": "bauxite",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cb4b44e8-1a56-5d30-b7ea-42299019af34",
+     "key": "chem-al-02",
+     "stem": "Cryolite is added in the electrolytic extraction of aluminium in order to",
+     "image_url": null,
+     "explanation": "Pure Al₂O₃ melts at about 2050 °C; dissolved in molten cryolite it can be electrolysed at about 950 °C.\n\n**Why the other options are wrong**\n\n- act as the anode: The anodes are made of carbon.\n- reduce the aluminium ions: Aluminium ions are reduced by electrons at the cathode.\n- increase the amount of oxygen produced: Cryolite does not change the products.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d972f8a4-a7b8-50f1-b13c-d24a6a38187c",
+       "label": "A",
+       "content": "lower the melting point of the electrolyte and save energy",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4055be69-d07e-5945-95f2-261c8ca3b080",
+       "label": "B",
+       "content": "act as the anode",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6e45c65c-66b3-56d5-8a22-0c9d32f2d071",
+       "label": "C",
+       "content": "reduce the aluminium ions",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f33383ec-57a4-5641-973f-2c141d74d888",
+       "label": "D",
+       "content": "increase the amount of oxygen produced",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e2d1794c-5109-503e-972c-975c96399ced",
+     "key": "chem-al-03",
+     "stem": "Aluminium is high in the reactivity series, yet aluminium roofing sheets do not corrode because",
+     "image_url": null,
+     "explanation": "The oxide layer is tough and sticks to the metal, so air and water cannot reach the aluminium beneath.\n\n**Why the other options are wrong**\n\n- aluminium is less reactive than iron: Aluminium is more reactive than iron.\n- aluminium does not react with oxygen: Aluminium reacts with oxygen at once to form the protective oxide.\n- rain water contains no oxygen: Rain water contains dissolved oxygen.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5fb942be-fd8c-51b1-9788-70dcd1463b5a",
+       "label": "A",
+       "content": "aluminium is less reactive than iron",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7a6b2cec-52d1-535b-a89f-693d79e7de70",
+       "label": "B",
+       "content": "a thin, unreactive layer of aluminium oxide protects the metal",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "03fb2f5f-07c8-56d2-a2b0-48d3bf73ab45",
+       "label": "C",
+       "content": "aluminium does not react with oxygen",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8da63372-b371-574a-ba75-81b0c811335c",
+       "label": "D",
+       "content": "rain water contains no oxygen",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6371d79d-5082-59fc-a5d1-2a95c8f33b33",
+     "key": "chem-al-04",
+     "stem": "What mass of aluminium is deposited at the cathode by 289 500 C of electricity? Al³⁺ + 3e⁻ → Al (Al = 27; F = 96 500 C/mol)",
+     "image_url": null,
+     "explanation": "Moles of electrons $= \\dfrac{289\\,500}{96\\,500} = 3$; moles Al $= \\dfrac{3}{3} = 1$; mass $= 27$ g\n\n**Why the other options are wrong**\n\n- 81 g: You used one electron per aluminium ion; three are needed.\n- 40.5 g: You used two electrons per aluminium ion.\n- 3 g: That is the number of moles of electrons, not the mass of aluminium.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f9414c40-d1a4-56e3-a493-514bc4c37393",
+       "label": "A",
+       "content": "3 g",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "063723d0-997f-5ac7-a8d0-4860ff0832b5",
+       "label": "B",
+       "content": "27 g",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "883a94de-b44c-5cdc-8227-8aefdfc33b8e",
+       "label": "C",
+       "content": "40.5 g",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4da9aa1e-61ce-541d-b5e4-5504cdd1278b",
+       "label": "D",
+       "content": "81 g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1e620676-d562-5b32-8ac6-ca25574784a6",
+     "key": "chem-al-05",
+     "stem": "Aluminium hydroxide dissolves in both dilute hydrochloric acid and sodium hydroxide solution. This shows that it is",
+     "image_url": null,
+     "explanation": "Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O and Al(OH)₃ + NaOH → NaAl(OH)₄ (sodium aluminate).\n\n**Why the other options are wrong**\n\n- basic only: A purely basic hydroxide would not dissolve in sodium hydroxide.\n- acidic only: A purely acidic hydroxide would not dissolve in hydrochloric acid.\n- neutral: A neutral substance reacts with neither.",
+     "position": 5,
+     "options": [
+      {
+       "id": "227a4f61-7a64-5c0b-a114-2ba76a296f9a",
+       "label": "A",
+       "content": "basic only",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "36f08609-4ba7-543c-8927-024f35565a61",
+       "label": "B",
+       "content": "acidic only",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fbfb4125-e2c4-58fc-b42f-9b3eedfd8f19",
+       "label": "C",
+       "content": "amphoteric",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1f1b011d-a886-5f82-9119-72e52bbbcae3",
+       "label": "D",
+       "content": "neutral",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "12661598-44de-5bc5-9169-c5a0688a9f65",
+   "topic": "Iron and Other Transition Metals",
+   "title": "Iron and Other Transition Metals: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on iron and other transition metals, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 150,
+   "questions": [
+    {
+     "id": "ee74f404-e658-53be-b682-f700b1e06c53",
+     "key": "chem-tm-01",
+     "stem": "A solution containing iron(II) ions gives, with sodium hydroxide solution,",
+     "image_url": null,
+     "explanation": "Fe²⁺ + 2OH⁻ → Fe(OH)₂(s); the green precipitate slowly turns brown in air as it is oxidised.\n\n**Why the other options are wrong**\n\n- a red-brown precipitate: That is iron(III) hydroxide, from Fe³⁺ ions.\n- a blue precipitate: That is copper(II) hydroxide.\n- a white precipitate that dissolves in excess: That is zinc, aluminium or lead hydroxide.",
+     "position": 1,
+     "options": [
+      {
+       "id": "dbb3ec01-ddc4-58b6-bcb5-bc74ce0cb83b",
+       "label": "A",
+       "content": "a red-brown precipitate",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "884761e5-8132-5777-9086-dea56f1c73ba",
+       "label": "B",
+       "content": "a blue precipitate",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ac5d947b-2e0c-5472-9292-67abd62d3f6e",
+       "label": "C",
+       "content": "a white precipitate that dissolves in excess",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5bbb4117-2922-5c08-b6dd-2b6ff1c2f96d",
+       "label": "D",
+       "content": "a dirty green precipitate",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9c03fea9-f975-5f97-8149-dfb94d35ad42",
+     "key": "chem-tm-02",
+     "stem": "Rust is",
+     "image_url": null,
+     "explanation": "Rust is Fe₂O₃·xH₂O. It flakes off, so fresh iron below is exposed and rusting continues.\n\n**Why the other options are wrong**\n\n- iron(II) oxide: Rust contains iron in the +3 state and water.\n- anhydrous iron(III) oxide: Rust contains water of hydration.\n- iron(II) carbonate: Rust is an oxide, not a carbonate.",
+     "position": 2,
+     "options": [
+      {
+       "id": "a7d6bdd0-93cf-5c17-8db7-a53d734271ba",
+       "label": "A",
+       "content": "hydrated iron(III) oxide",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "09e96df9-5a5a-51f5-8d24-6c7b6ea64526",
+       "label": "B",
+       "content": "iron(II) oxide",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a46b88a7-3260-5dc8-a690-88ad3a06cada",
+       "label": "C",
+       "content": "anhydrous iron(III) oxide",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "17d8d88c-a700-59c0-bc2d-71d1581a64f7",
+       "label": "D",
+       "content": "iron(II) carbonate",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7ad180b8-957f-5461-bd9f-595db6e33777",
+     "key": "chem-tm-03",
+     "stem": "Which pair of properties is typical of transition metals?",
+     "image_url": null,
+     "explanation": "Iron forms Fe²⁺ (green) and Fe³⁺ (yellow-brown); copper forms Cu⁺ and Cu²⁺ (blue). Many also act as catalysts.\n\n**Why the other options are wrong**\n\n- Low melting points and low densities: Transition metals are hard, dense and high-melting.\n- One oxidation state and white compounds: These are typical of group I and II metals.\n- Very vigorous reactions with cold water: Transition metals react slowly, if at all, with water.",
+     "position": 3,
+     "options": [
+      {
+       "id": "38261eb3-8f32-5d1e-8b20-3404936cb8f5",
+       "label": "A",
+       "content": "Low melting points and low densities",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9772aa6d-d653-53f1-8864-e4c32712c71a",
+       "label": "B",
+       "content": "Variable oxidation states and coloured compounds",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "59173287-4477-576c-8985-03ee9a9ca775",
+       "label": "C",
+       "content": "One oxidation state and white compounds",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4aecfd31-2441-57f4-88f6-ee4fc3f5fcad",
+       "label": "D",
+       "content": "Very vigorous reactions with cold water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "88f2057c-f200-5308-8fad-f97bee5b074b",
+     "key": "chem-tm-04",
+     "stem": "Steel is made from pig iron mainly by",
+     "image_url": null,
+     "explanation": "Pig iron contains about 4% carbon, which makes it brittle. Oxygen burns off carbon as CO₂ and other impurities form slag.\n\n**Why the other options are wrong**\n\n- adding more coke to the molten iron: Coke would add carbon; steel needs less carbon.\n- electrolysing the molten iron: Iron is not refined by electrolysis.\n- heating the iron with limestone only: Limestone removes silica; oxygen removes carbon.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e7d03825-1526-5fdf-bd21-22aac1a33e66",
+       "label": "A",
+       "content": "adding more coke to the molten iron",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8d2ca3c4-2cb3-5e73-990f-cef1d8866c14",
+       "label": "B",
+       "content": "electrolysing the molten iron",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b860c613-3c55-5ac8-86b9-5839406ae3d3",
+       "label": "C",
+       "content": "blowing oxygen through the molten iron to remove most of the carbon",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2d9a964d-f9a2-594b-add5-fe64c653970e",
+       "label": "D",
+       "content": "heating the iron with limestone only",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c1752c17-2e89-56b0-8e61-59a8d07f71ce",
+     "key": "chem-tm-05",
+     "stem": "Excess ammonia solution added to a solution of copper(II) ions gives",
+     "image_url": null,
+     "explanation": "A blue precipitate of Cu(OH)₂ forms first, then dissolves in excess ammonia to give the deep blue [Cu(NH₃)₄]²⁺ ion.\n\n**Why the other options are wrong**\n\n- a red-brown precipitate: That is iron(III) hydroxide.\n- a white precipitate: Copper(II) hydroxide is blue, not white.\n- a green solution: Copper ions with ammonia are deep blue.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ea951090-78ce-55eb-b4ba-e30165e8f511",
+       "label": "A",
+       "content": "a red-brown precipitate",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8d542e10-cdbb-5ecb-af39-a76e86037d5a",
+       "label": "B",
+       "content": "a white precipitate",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b5cd5e27-49ea-5764-8f0f-1f96c37428be",
+       "label": "C",
+       "content": "a green solution",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "11befded-aedd-5936-8ec1-74f42d7db846",
+       "label": "D",
+       "content": "a deep blue solution",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a256d3db-765d-574f-b785-d19fb7a0c6d6",
+   "topic": "Industrial Chemical Processes",
+   "title": "Industrial Chemical Processes: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on industrial chemical processes, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 151,
+   "questions": [
+    {
+     "id": "9c216d55-a670-5337-bd30-69f3794da861",
+     "key": "chem-ip-01",
+     "stem": "The most important factor in deciding where to site a cement factory is nearness to",
+     "image_url": null,
+     "explanation": "Cement factories use huge amounts of heavy limestone; siting them near the quarry cuts transport costs.\n\n**Why the other options are wrong**\n\n- a large river for shipping: Transport matters, but limestone is bulky and is the main raw material.\n- a big city market: The raw material is far heavier and bulkier than the product.\n- an international airport: Air transport is not used for cement.",
+     "position": 1,
+     "options": [
+      {
+       "id": "72179a94-7eb1-5603-b57b-a3f954a9e2a6",
+       "label": "A",
+       "content": "deposits of limestone",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1ca26172-6194-5821-a974-866644290e8e",
+       "label": "B",
+       "content": "a large river for shipping",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "86b8e05b-c22c-5950-99d6-66fbca111126",
+       "label": "C",
+       "content": "a big city market",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8f89fe22-985e-5c10-9822-d9ac4c0ca620",
+       "label": "D",
+       "content": "an international airport",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7386ff4e-95c1-5386-9500-140b22367e29",
+     "key": "chem-ip-02",
+     "stem": "The catalyst used for oxidising ammonia in the manufacture of nitric(V) acid is",
+     "image_url": null,
+     "explanation": "Ostwald process: 4NH₃ + 5O₂ → 4NO + 6H₂O over Pt–Rh at about 900 °C; NO is then oxidised and absorbed in water.\n\n**Why the other options are wrong**\n\n- finely divided iron: Iron is the Haber process catalyst.\n- vanadium(V) oxide: Vanadium(V) oxide is the Contact process catalyst.\n- nickel: Nickel is used for hydrogenating oils.",
+     "position": 2,
+     "options": [
+      {
+       "id": "540856c5-5239-519e-a9d0-40946c5a3944",
+       "label": "A",
+       "content": "finely divided iron",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3ba86a1a-c8b3-559a-ad8d-fa9c5b265cb6",
+       "label": "B",
+       "content": "platinum–rhodium gauze",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c611d791-0912-5e74-a230-6cc3cb9f0ffc",
+       "label": "C",
+       "content": "vanadium(V) oxide",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "74d5fad4-c74b-571e-ae99-f0d6259089d8",
+       "label": "D",
+       "content": "nickel",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fa9d5b48-614c-5ce3-843e-6341458094fc",
+     "key": "chem-ip-03",
+     "stem": "In the Haber process, the nitrogen and hydrogen that do not react are",
+     "image_url": null,
+     "explanation": "Only about 15% conversion happens each pass, so recycling gives an overall yield of about 98%.\n\n**Why the other options are wrong**\n\n- released into the air: That would waste raw materials.\n- burned to provide heat: Nitrogen does not burn; the gases are reused.\n- dissolved in water: Ammonia is removed by cooling; the unreacted gases are recycled.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ce6b3f42-28f3-570d-bca7-01c867968dc8",
+       "label": "A",
+       "content": "released into the air",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6de579ff-d85c-594a-b22b-c37f831694d6",
+       "label": "B",
+       "content": "burned to provide heat",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d3930b8f-ffae-5679-8ce2-53dafba899b9",
+       "label": "C",
+       "content": "recycled over the catalyst",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "16515022-1e5c-5d4e-8376-52c7f48fa2cb",
+       "label": "D",
+       "content": "dissolved in water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2d42d203-d54a-5838-83ee-515b73584634",
+     "key": "chem-ip-04",
+     "stem": "N₂ + 3H₂ → 2NH₃. What volume of ammonia is formed if 30 dm³ of hydrogen reacts completely with nitrogen (same temperature and pressure)?",
+     "image_url": null,
+     "explanation": "By Gay-Lussac's law, volume of NH₃ $= 30 \\times \\dfrac{2}{3} = 20$ dm³\n\n**Why the other options are wrong**\n\n- 45 dm³: You inverted the ratio; 3 volumes of hydrogen give 2 volumes of ammonia.\n- 10 dm³: That is the volume of nitrogen used.\n- 30 dm³: You assumed a 1 : 1 ratio.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d82c4f93-f8cd-5827-b62e-23869920c72a",
+       "label": "A",
+       "content": "10 dm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3d0172b3-aa7c-5032-8589-f25edabf960a",
+       "label": "B",
+       "content": "20 dm³",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "11857cdd-fd30-5416-a518-d3aedcd29cf6",
+       "label": "C",
+       "content": "30 dm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ae470d02-5ceb-5a14-9486-1140f4abbfcc",
+       "label": "D",
+       "content": "45 dm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9a14f849-5d64-50bd-a63f-ab2d31b664b2",
+     "key": "chem-ip-05",
+     "stem": "The Haber process is run at about 450 °C, although a lower temperature would give a higher equilibrium yield of ammonia, because at a lower temperature",
+     "image_url": null,
+     "explanation": "450 °C is a compromise between a reasonable yield and a fast enough rate.\n\n**Why the other options are wrong**\n\n- the catalyst would be poisoned: Catalyst poisoning is caused by impurities, not low temperature.\n- ammonia would decompose: Ammonia is more stable at lower temperatures.\n- the pressure would fall to zero: Pressure is set by the compressors, not by the temperature.",
+     "position": 5,
+     "options": [
+      {
+       "id": "8262f17c-037e-5f88-95cc-42b4bf185fe5",
+       "label": "A",
+       "content": "the catalyst would be poisoned",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cb02333b-37f2-5f1c-b99e-c1cd7fd0d76a",
+       "label": "B",
+       "content": "ammonia would decompose",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "88bd826f-c8ab-5f4f-99f5-bbfcf0435871",
+       "label": "C",
+       "content": "the pressure would fall to zero",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f3f2b935-fb9e-53fc-87b9-105474e6cb60",
+       "label": "D",
+       "content": "the reaction would be too slow",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "5ad775dfe6a7"
+}

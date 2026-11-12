@@ -115,7 +115,7 @@ class CheckError(Exception):
 
 
 def _norm_tex(tex: str) -> str:
-    t = tex.replace("$", "").replace("\\dfrac", "\\frac").replace("{,}", "")
+    t = tex.replace("$", "").replace("\\dfrac", "\\frac").replace("{,}", "").replace("−", "-")
     t = re.sub(r"(?<=\d),(?=\d{3})", "", t)  # 1,590 -> 1590
     return re.sub(r"\s+", "", t)
 

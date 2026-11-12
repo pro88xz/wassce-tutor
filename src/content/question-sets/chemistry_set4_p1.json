@@ -1,0 +1,2808 @@
+{
+ "name": "chemistry_set4_p1",
+ "label": "Chemistry: set 4 (organic, environmental and practical chemistry)",
+ "subject_slug": "chemistry",
+ "papers": [
+  {
+   "id": "eccc653e-f449-5593-a9f4-aed424948cdc",
+   "topic": "Introduction to Organic Chemistry",
+   "title": "Introduction to Organic Chemistry: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on introduction to organic chemistry, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 160,
+   "questions": [
+    {
+     "id": "3247c85f-e37c-50ec-a6ab-c99877bb26ef",
+     "key": "chem-oi-01",
+     "stem": "The functional group of the alkanols is",
+     "image_url": null,
+     "explanation": "The hydroxyl group, –OH, gives alkanols such as ethanol, C₂H₅OH, their typical reactions.\n\n**Why the other options are wrong**\n\n- –COOH: –COOH is the carboxyl group of the alkanoic acids.\n- –COO–: –COO– is the ester group of the alkanoates.\n- C=C: C=C is the functional group of the alkenes.",
+     "position": 1,
+     "options": [
+      {
+       "id": "20e6f720-efec-501b-bb73-342c1b86a379",
+       "label": "A",
+       "content": "–OH",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d9f97dac-9a70-53a7-9b32-674c8bbdda7c",
+       "label": "B",
+       "content": "–COOH",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8c661d66-9fd1-51c9-b011-8eb1401a833a",
+       "label": "C",
+       "content": "–COO–",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "268961bd-fbfd-5535-baa4-9d51d4f6b8dd",
+       "label": "D",
+       "content": "C=C",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0ade7dc0-9c4b-526f-aa5e-8722b551ae91",
+     "key": "chem-oi-02",
+     "stem": "Which statement about the members of a homologous series is correct?",
+     "image_url": null,
+     "explanation": "A homologous series has one general formula and functional group; members differ by CH₂ (Mᵣ 14).\n\n**Why the other options are wrong**\n\n- They all have the same physical properties: Physical properties change gradually along the series.\n- They all have the same molecular formula: Compounds with the same molecular formula are isomers.\n- They have different general formulas: All members share one general formula.",
+     "position": 2,
+     "options": [
+      {
+       "id": "20cfc22a-4588-5745-9618-666ada18f0c9",
+       "label": "A",
+       "content": "They all have the same physical properties",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "253b1778-71de-5c51-98aa-8c78d50f1421",
+       "label": "B",
+       "content": "They all have the same molecular formula",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "baae6acf-b725-5607-9eac-111744d70dfc",
+       "label": "C",
+       "content": "They have different general formulas",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "27ca537c-aaa8-5bdd-bb1d-15f031c9006e",
+       "label": "D",
+       "content": "Successive members differ by a CH₂ group",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3fded361-3ae3-5c2d-95c2-cff36ed267ee",
+     "key": "chem-oi-03",
+     "stem": "How many structural isomers have the molecular formula C₄H₁₀?",
+     "image_url": null,
+     "explanation": "C₄H₁₀ has two isomers: butane, CH₃CH₂CH₂CH₃, and 2-methylpropane, CH₃CH(CH₃)CH₃.\n\n**Why the other options are wrong**\n\n- 1: There is also a branched chain: 2-methylpropane.\n- 3: Three isomers belong to C₅H₁₂, not C₄H₁₀.\n- 4: Numbering the same chain from different ends does not give new compounds.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2d182000-e14c-5cec-8052-de34436a22fc",
+       "label": "A",
+       "content": "1",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cd5e5c37-5160-5c3e-95dd-1de2e125545a",
+       "label": "B",
+       "content": "2",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "62f1b6b4-cee6-5ed4-b651-3128b6d3d1d5",
+       "label": "C",
+       "content": "3",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "15b177d5-1a23-51db-ad59-92798a96c2a9",
+       "label": "D",
+       "content": "4",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bbfbe37a-1aea-5c14-a01c-9f17573d4357",
+     "key": "chem-oi-04",
+     "stem": "What is the IUPAC name of CH₃CH(CH₃)CH₃?",
+     "image_url": null,
+     "explanation": "The longest chain is three carbons (propane) with a methyl branch on carbon 2.\n\n**Why the other options are wrong**\n\n- butane: Butane is the straight-chain isomer; this one is branched.\n- 1-methylpropane: A methyl group on carbon 1 would just lengthen the chain to butane.\n- 2-methylbutane: The longest chain has three carbons, not four.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a5d0c65d-f602-53ef-99ab-8afb01c7a0c9",
+       "label": "A",
+       "content": "2-methylpropane",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4613e00e-ea80-5375-9d2f-14384bcf6f37",
+       "label": "B",
+       "content": "butane",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "79cc2537-b5d5-5b18-a8db-54daccc42d3e",
+       "label": "C",
+       "content": "1-methylpropane",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cfaaf051-0c56-5fa3-83dc-371e1a09ed81",
+       "label": "D",
+       "content": "2-methylbutane",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e8c14a2e-23ec-5dea-b140-370978f24af8",
+     "key": "chem-oi-05",
+     "stem": "An organic compound is heated with dry copper(II) oxide. The gas given off turns lime water milky. This shows the presence of",
+     "image_url": null,
+     "explanation": "Carbon is oxidised by CuO to carbon(IV) oxide, which turns lime water milky.\n\n**Why the other options are wrong**\n\n- hydrogen: Hydrogen forms water, shown by anhydrous copper(II) sulphate turning blue.\n- oxygen: This test does not detect oxygen in the compound.\n- nitrogen: Nitrogen is not detected by lime water.",
+     "position": 5,
+     "options": [
+      {
+       "id": "12b790b2-63f6-52f7-9086-973409455649",
+       "label": "A",
+       "content": "hydrogen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "62531fa1-5f5b-52d1-9345-150c6236fabd",
+       "label": "B",
+       "content": "oxygen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "65d0e61f-451d-5df9-a4ef-7f4e104d0e38",
+       "label": "C",
+       "content": "nitrogen",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "66fae407-1762-5d99-9493-ee37543736ba",
+       "label": "D",
+       "content": "carbon",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "50658036-f282-5202-ad11-81dfb6b06fff",
+   "topic": "Alkanes",
+   "title": "Alkanes: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on alkanes, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 161,
+   "questions": [
+    {
+     "id": "fb01dfa5-789e-57a0-9b98-4cd2067ae921",
+     "key": "chem-ak-01",
+     "stem": "The general formula of the alkanes is",
+     "image_url": null,
+     "explanation": "Methane CH₄ (n = 1), ethane C₂H₆ (n = 2), propane C₃H₈ (n = 3) all fit CₙH₂ₙ₊₂.\n\n**Why the other options are wrong**\n\n- CₙH₂ₙ: CₙH₂ₙ is the general formula of the alkenes.\n- CₙH₂ₙ₋₂: CₙH₂ₙ₋₂ is the general formula of the alkynes.\n- CₙH₂ₙ₊₁OH: CₙH₂ₙ₊₁OH is the general formula of the alkanols.",
+     "position": 1,
+     "options": [
+      {
+       "id": "778e6a06-4dbb-514f-8cd7-b41095309f32",
+       "label": "A",
+       "content": "CₙH₂ₙ₊₂",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e0e3bba2-8382-5c4e-8848-63c60f620afc",
+       "label": "B",
+       "content": "CₙH₂ₙ",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "92280013-b0b4-5ef6-9de0-5f502bd50c1f",
+       "label": "C",
+       "content": "CₙH₂ₙ₋₂",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "23575bc8-670f-5046-bee1-d00bfb4e0cd6",
+       "label": "D",
+       "content": "CₙH₂ₙ₊₁OH",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8b828edc-5112-53ba-8ca2-30fc56e21b4e",
+     "key": "chem-ak-02",
+     "stem": "An alkane has a relative molecular mass of 72. What is its molecular formula?",
+     "image_url": null,
+     "explanation": "For CₙH₂ₙ₊₂, Mᵣ = 14n + 2 = 72, so n = 5: C₅H₁₂ (pentane).\n\n**Why the other options are wrong**\n\n- C₆H₁₄: C₆H₁₄ has Mᵣ 86.\n- C₅H₁₀: C₅H₁₀ (Mᵣ 70) is an alkene, not an alkane.\n- C₄H₁₀: C₄H₁₀ has Mᵣ 58.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8c45cd7c-1a8b-535a-8cd9-8115637fe887",
+       "label": "A",
+       "content": "C₆H₁₄",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c79de3a9-c69c-5be3-905d-a9e087f281d8",
+       "label": "B",
+       "content": "C₅H₁₀",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6b18e3d1-01b7-5f77-a06e-575c09cc132e",
+       "label": "C",
+       "content": "C₄H₁₀",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b37f6951-9039-5d3d-b921-249f318275c5",
+       "label": "D",
+       "content": "C₅H₁₂",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "051d5ec6-b166-54e3-9c6e-3b667b434d19",
+     "key": "chem-ak-03",
+     "stem": "Methane reacts with chlorine in sunlight to form chloromethane and hydrogen chloride. This is",
+     "image_url": null,
+     "explanation": "CH₄ + Cl₂ → CH₃Cl + HCl: a chlorine atom replaces (substitutes) a hydrogen atom.\n\n**Why the other options are wrong**\n\n- an addition reaction: Methane has no double bond to add across.\n- a polymerisation reaction: No long chains are formed.\n- a neutralisation reaction: No acid reacts with a base.",
+     "position": 3,
+     "options": [
+      {
+       "id": "4992e0dc-e123-58a2-9723-c4c82dc5f614",
+       "label": "A",
+       "content": "a substitution reaction",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "17d60ad9-c4b6-53d9-8f70-1c43e2726adf",
+       "label": "B",
+       "content": "an addition reaction",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "480aab8d-141c-5b34-a682-ac9fd2d77551",
+       "label": "C",
+       "content": "a polymerisation reaction",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c1fb6713-a40f-59ff-996f-47cc7fcb8041",
+       "label": "D",
+       "content": "a neutralisation reaction",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "92f93590-f8a5-56f8-8782-64a32e2456cb",
+     "key": "chem-ak-04",
+     "stem": "Methane is prepared in the laboratory by heating",
+     "image_url": null,
+     "explanation": "CH₃COONa + NaOH → CH₄ + Na₂CO₃; the methane is collected over water.\n\n**Why the other options are wrong**\n\n- ethanol with concentrated sulphuric acid: That prepares ethene.\n- calcium carbide with water: That prepares ethyne (and needs no heating).\n- ethanol with acidified potassium dichromate(VI): That oxidises ethanol to ethanal and ethanoic acid.",
+     "position": 4,
+     "options": [
+      {
+       "id": "5c3b6450-afc3-5fd3-924e-efcdad898343",
+       "label": "A",
+       "content": "ethanol with concentrated sulphuric acid",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f748cccb-13ef-529a-93c9-254b4e5461c0",
+       "label": "B",
+       "content": "calcium carbide with water",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "04d535ea-205c-5aac-917c-7a2598e48899",
+       "label": "C",
+       "content": "ethanol with acidified potassium dichromate(VI)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "98c41325-30f9-5878-ae8b-988dde40dfa5",
+       "label": "D",
+       "content": "sodium ethanoate with soda lime",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6015b06d-eb44-5302-be22-4f69ebf2b47f",
+     "key": "chem-ak-05",
+     "stem": "2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O. What volume of oxygen is needed to burn 20 cm³ of ethane completely (same conditions)?",
+     "image_url": null,
+     "explanation": "Volume of O₂ $= 20 \\times \\dfrac{7}{2} = 70$ cm³\n\n**Why the other options are wrong**\n\n- 140 cm³: You multiplied by 7 without dividing by 2; the ratio is 2 : 7.\n- 40 cm³: That is the volume of carbon(IV) oxide formed.\n- 20 cm³: You assumed a 1 : 1 ratio.",
+     "position": 5,
+     "options": [
+      {
+       "id": "27188930-a828-5ee8-a6e4-38a7acab37e3",
+       "label": "A",
+       "content": "20 cm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e32a64bd-6a55-5920-9fd8-fe2a43e6d4b1",
+       "label": "B",
+       "content": "40 cm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "40b916a3-d019-5418-8b0d-4286699e6452",
+       "label": "C",
+       "content": "70 cm³",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "271a9270-e795-533c-b565-c81113899c5f",
+       "label": "D",
+       "content": "140 cm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f17308a9-1bdb-507f-a99a-145b0bb30716",
+   "topic": "Alkenes",
+   "title": "Alkenes: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on alkenes, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 162,
+   "questions": [
+    {
+     "id": "1ba6f569-c94e-5560-b7c9-db22d913ccf1",
+     "key": "chem-ke-01",
+     "stem": "Which test distinguishes ethene from ethane?",
+     "image_url": null,
+     "explanation": "The C=C bond in ethene adds bromine at once (CH₂=CH₂ + Br₂ → CH₂BrCH₂Br); ethane is saturated.\n\n**Why the other options are wrong**\n\n- Ethene turns lime water milky; ethane does not: Neither gas turns lime water milky.\n- Ethene relights a glowing splint; ethane does not: Neither gas relights a glowing splint.\n- Ethene turns damp red litmus blue; ethane does not: Neither gas is alkaline.",
+     "position": 1,
+     "options": [
+      {
+       "id": "6587aa41-3f77-50e2-b9ef-6d393ff76f84",
+       "label": "A",
+       "content": "Ethene decolourises bromine water quickly; ethane does not",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ac8aa4dd-6d69-524c-b104-6bdf9dca2024",
+       "label": "B",
+       "content": "Ethene turns lime water milky; ethane does not",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "27793064-4fc5-5ee0-af2c-60740d6f6739",
+       "label": "C",
+       "content": "Ethene relights a glowing splint; ethane does not",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "42ed0af5-784b-5f3a-b3d7-c85d9684d41a",
+       "label": "D",
+       "content": "Ethene turns damp red litmus blue; ethane does not",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "29193e03-8145-513b-bbd8-668f31e5b0dc",
+     "key": "chem-ke-02",
+     "stem": "Ethene is prepared in the laboratory by heating ethanol with",
+     "image_url": null,
+     "explanation": "C₂H₅OH → C₂H₄ + H₂O: the acid is a dehydrating agent. At 140 °C ethoxyethane forms instead.\n\n**Why the other options are wrong**\n\n- soda lime: Soda lime with sodium ethanoate gives methane.\n- water and calcium carbide: That gives ethyne.\n- acidified potassium dichromate(VI): That oxidises ethanol; it does not give ethene.",
+     "position": 2,
+     "options": [
+      {
+       "id": "5b2913fc-58e0-5313-ad90-56ef1c7ff41c",
+       "label": "A",
+       "content": "soda lime",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c07acd92-4ae1-5cc9-8b66-ebb06bcac60b",
+       "label": "B",
+       "content": "water and calcium carbide",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4b860197-e34f-50ea-b6ac-6589f0fc694a",
+       "label": "C",
+       "content": "excess concentrated sulphuric acid at about 170 °C",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "5c2c991b-ae76-578a-a7c3-c0fce81702df",
+       "label": "D",
+       "content": "acidified potassium dichromate(VI)",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b435907b-12e3-514a-9771-6e6b2a97b1db",
+     "key": "chem-ke-03",
+     "stem": "The catalyst used when hydrogen is added to ethene (or to vegetable oils) is",
+     "image_url": null,
+     "explanation": "CH₂=CH₂ + H₂ → CH₃CH₃ over finely divided nickel at about 150 °C; the same reaction makes margarine.\n\n**Why the other options are wrong**\n\n- iron: Iron is the catalyst in the Haber process.\n- vanadium(V) oxide: Vanadium(V) oxide is used in the Contact process.\n- manganese(IV) oxide: Manganese(IV) oxide catalyses the decomposition of hydrogen peroxide.",
+     "position": 3,
+     "options": [
+      {
+       "id": "154ae0cd-29ff-50bc-82c1-738413e64789",
+       "label": "A",
+       "content": "iron",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "62116140-b5ea-582e-9bd9-341dec07f499",
+       "label": "B",
+       "content": "vanadium(V) oxide",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "816e5a1f-7192-5c16-9230-67f74df8cdfb",
+       "label": "C",
+       "content": "manganese(IV) oxide",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d015e9ca-eb11-573c-b9ac-978f20c639a0",
+       "label": "D",
+       "content": "nickel",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8c6d63e4-8adb-5735-9e5d-6ce8a24f566d",
+     "key": "chem-ke-04",
+     "stem": "What is the main product when hydrogen bromide adds to propene, CH₃CH=CH₂?",
+     "image_url": null,
+     "explanation": "By Markovnikov's rule, the H of HBr goes to the CH₂ end and Br to the middle carbon: 2-bromopropane.\n\n**Why the other options are wrong**\n\n- CH₃CH₂CH₂Br: This is the minor product; H adds to the carbon that already has more hydrogens.\n- CH₂BrCHBrCH₃: That would be the product of adding Br₂, not HBr.\n- CH₃CH=CHBr: Addition removes the double bond; this still has one.",
+     "position": 4,
+     "options": [
+      {
+       "id": "978d50a2-93db-5469-8c09-6d6fbe0b03f3",
+       "label": "A",
+       "content": "CH₃CHBrCH₃",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8a74bdec-d2b0-5fac-bb97-1098bc91e35f",
+       "label": "B",
+       "content": "CH₃CH₂CH₂Br",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4532c731-3720-5943-bd7d-bbee1e8ba84c",
+       "label": "C",
+       "content": "CH₂BrCHBrCH₃",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d2f27a0e-7f62-52c9-b149-9d2e01d4ab0b",
+       "label": "D",
+       "content": "CH₃CH=CHBr",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1e192726-de04-5a47-9b72-5ea131dbd730",
+     "key": "chem-ke-05",
+     "stem": "What mass of bromine, Br₂, adds to 2.8 g of ethene? CH₂=CH₂ + Br₂ → CH₂BrCH₂Br (C₂H₄ = 28; Br₂ = 160)",
+     "image_url": null,
+     "explanation": "Moles C₂H₄ $= \\dfrac{2.8}{28} = 0.1$; moles Br₂ $= 0.1$; mass $= 0.1 \\times 160 = 16$ g\n\n**Why the other options are wrong**\n\n- 32 g: One C=C bond adds one molecule of Br₂, not two.\n- 8 g: You used 80 (one Br atom) as the molar mass of bromine.\n- 18.8 g: That is the mass of the product, 1,2-dibromoethane.",
+     "position": 5,
+     "options": [
+      {
+       "id": "372da5c2-4a5a-57d8-9da3-3ecb02ed88ff",
+       "label": "A",
+       "content": "8 g",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f12f79f3-6ed4-5286-9b0a-4d4041c8c4a8",
+       "label": "B",
+       "content": "16 g",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "def368fb-48ed-5281-aa2b-0c92373be501",
+       "label": "C",
+       "content": "18.8 g",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4a82f3f6-44e2-5d4b-a6f5-ea91f1a29365",
+       "label": "D",
+       "content": "32 g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "57451097-0572-5e3c-a751-5875f1b8177f",
+   "topic": "Alkynes",
+   "title": "Alkynes: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on alkynes, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 163,
+   "questions": [
+    {
+     "id": "a56b6da9-a666-551a-825a-d529e4d679d0",
+     "key": "chem-ky-01",
+     "stem": "Ethyne is prepared in the laboratory by the action of water on",
+     "image_url": null,
+     "explanation": "CaC₂ + 2H₂O → Ca(OH)₂ + C₂H₂. Water is dripped onto the carbide because the reaction is vigorous.\n\n**Why the other options are wrong**\n\n- calcium carbonate: Calcium carbonate does not react with water.\n- sodium ethanoate: Sodium ethanoate heated with soda lime gives methane.\n- ethanol: Water does not react with ethanol to give a gas.",
+     "position": 1,
+     "options": [
+      {
+       "id": "722788b8-6bf7-5705-baa9-9a7f59d0c475",
+       "label": "A",
+       "content": "calcium carbonate",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fe0d5b53-b806-508e-8cbb-87c8e9a35a9b",
+       "label": "B",
+       "content": "sodium ethanoate",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bab59fe1-47f2-5c20-8afb-098b73f534ff",
+       "label": "C",
+       "content": "calcium carbide",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1df7ee21-da49-57a2-9ac0-356665ca0c43",
+       "label": "D",
+       "content": "ethanol",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b670fec7-60a3-5cf5-8ee3-5337453c4340",
+     "key": "chem-ky-02",
+     "stem": "The shape of the ethyne molecule, HC≡CH, is",
+     "image_url": null,
+     "explanation": "Each carbon forms a triple bond and one C–H bond, all in a straight line.\n\n**Why the other options are wrong**\n\n- tetrahedral, with bond angles of 109.5°: That is the shape around each carbon in ethane.\n- planar, with bond angles of 120°: That is the shape of ethene.\n- bent, with bond angles of 104.5°: That is the shape of the water molecule.",
+     "position": 2,
+     "options": [
+      {
+       "id": "4fb8df43-3c5c-5db2-8f51-49370edbd2b5",
+       "label": "A",
+       "content": "tetrahedral, with bond angles of 109.5°",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3d891345-6b21-5cc1-94cc-c48786e655b0",
+       "label": "B",
+       "content": "planar, with bond angles of 120°",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "89a4a685-db98-5db7-af41-600d80f3360e",
+       "label": "C",
+       "content": "bent, with bond angles of 104.5°",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1e821ce7-3efe-59cc-927f-864c1461744f",
+       "label": "D",
+       "content": "linear, with bond angles of 180°",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c847c76d-ce75-5351-b516-35850fc89473",
+     "key": "chem-ky-03",
+     "stem": "Which reagent gives a precipitate with ethyne but not with ethene?",
+     "image_url": null,
+     "explanation": "The H atoms on the C≡C are weakly acidic: ethyne gives a white precipitate of silver dicarbide, Ag₂C₂.\n\n**Why the other options are wrong**\n\n- Bromine water: Both ethene and ethyne decolourise bromine water.\n- Acidified potassium manganate(VII): Both unsaturated gases decolourise it.\n- Lime water: Neither gas reacts with lime water.",
+     "position": 3,
+     "options": [
+      {
+       "id": "427c096e-8ac3-5e74-838e-0323e72df0d9",
+       "label": "A",
+       "content": "Ammoniacal silver nitrate",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3635ede4-be9f-5f5c-8787-c6b90d445a4f",
+       "label": "B",
+       "content": "Bromine water",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6bc232e3-f681-5894-a0e5-b794b47c31ad",
+       "label": "C",
+       "content": "Acidified potassium manganate(VII)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fedc280f-7cec-58d7-8504-a01458622869",
+       "label": "D",
+       "content": "Lime water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "874ba2c2-e419-5deb-a6eb-59b216ed4dfb",
+     "key": "chem-ky-04",
+     "stem": "What volume of hydrogen is needed to convert 50 cm³ of ethyne completely into ethane (same conditions)? C₂H₂ + 2H₂ → C₂H₆",
+     "image_url": null,
+     "explanation": "1 volume of ethyne needs 2 volumes of hydrogen: $2 \\times 50 = 100$ cm³\n\n**Why the other options are wrong**\n\n- 50 cm³: That converts ethyne only to ethene; two molecules of H₂ are needed to reach ethane.\n- 25 cm³: You halved instead of doubling.\n- 150 cm³: Ethyne adds two molecules of hydrogen, not three.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e0155161-2e17-54a8-9412-eae94ba6ad0d",
+       "label": "A",
+       "content": "25 cm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1217f8eb-44b7-590d-8e19-acf51df665b7",
+       "label": "B",
+       "content": "50 cm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "925dc750-3ab0-58d7-9bb1-49fe401f00be",
+       "label": "C",
+       "content": "100 cm³",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1aadb74b-305e-5b82-8fa3-8eca954b7837",
+       "label": "D",
+       "content": "150 cm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cd43b407-9ca3-5dcc-b7c2-12e521bacf72",
+     "key": "chem-ky-05",
+     "stem": "Ethyne burned in pure oxygen is used for",
+     "image_url": null,
+     "explanation": "The oxy-acetylene flame reaches about 3000 °C, hot enough to melt steel.\n\n**Why the other options are wrong**\n\n- making plastic bags: Plastic bags are made from poly(ethene).\n- ripening fruit safely: Calcium carbide (which gives ethyne) is misused for ripening; it is unsafe.\n- filling light bulbs: Light bulbs are filled with argon.",
+     "position": 5,
+     "options": [
+      {
+       "id": "49484489-de7a-53b3-bd96-0f4af1db0c9b",
+       "label": "A",
+       "content": "making plastic bags",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "482afb5d-57ae-5e74-ba19-05928409ff93",
+       "label": "B",
+       "content": "welding and cutting metals",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1235303c-c966-511b-9692-3e204ccd0c15",
+       "label": "C",
+       "content": "ripening fruit safely",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1f77acd6-014e-5baf-afac-da790122aa07",
+       "label": "D",
+       "content": "filling light bulbs",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "273bcf7f-5154-562f-92fc-bcb5154afd1b",
+   "topic": "Petroleum and Petrochemicals",
+   "title": "Petroleum and Petrochemicals: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on petroleum and petrochemicals, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 164,
+   "questions": [
+    {
+     "id": "6bbc9533-0bf6-5773-8f62-9dfd2e6faaca",
+     "key": "chem-pe-01",
+     "stem": "Crude oil is separated into fractions by fractional distillation because its components have different",
+     "image_url": null,
+     "explanation": "Each fraction condenses at the level of the column where the temperature falls below its boiling point.\n\n**Why the other options are wrong**\n\n- densities: Separation in the column depends on boiling point, not density.\n- colours: Colour plays no part in the separation.\n- solubilities in water: Hydrocarbons are almost insoluble in water; water is not used.",
+     "position": 1,
+     "options": [
+      {
+       "id": "62143eae-6fe1-51d4-bc28-4f1eb59fd278",
+       "label": "A",
+       "content": "densities",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "68ab0cc6-b0ad-55c8-9c72-4ea2f100db77",
+       "label": "B",
+       "content": "colours",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5fac1a80-5ba1-50a2-9bc5-c2ef4569a299",
+       "label": "C",
+       "content": "boiling points",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "998d45b1-28b2-584b-be1b-44ffd399aa07",
+       "label": "D",
+       "content": "solubilities in water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2ac4519d-3ab5-5baf-9a12-12afb2b47197",
+     "key": "chem-pe-02",
+     "stem": "Which petroleum fraction is used as fuel for jet aircraft?",
+     "image_url": null,
+     "explanation": "Kerosene (about C₁₀–C₁₆) is used as aviation fuel and in lamps and stoves.\n\n**Why the other options are wrong**\n\n- Bitumen: Bitumen is used for road surfaces.\n- Lubricating oil: Lubricating oil reduces friction in engines.\n- Refinery gas: Refinery gas is used as LPG for cooking.",
+     "position": 2,
+     "options": [
+      {
+       "id": "7f74fc9d-2911-56bb-9720-00c3a8196e7d",
+       "label": "A",
+       "content": "Bitumen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1dba19b4-f8c9-5626-93a7-9fd229facdd1",
+       "label": "B",
+       "content": "Lubricating oil",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ddf005d8-80a9-5a22-a30d-7466102e810d",
+       "label": "C",
+       "content": "Refinery gas",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1fe1b583-e0f0-5d0f-8e26-089ac69b977b",
+       "label": "D",
+       "content": "Kerosene",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fb2a1a9e-83bf-58d1-82cc-b9c589fd3daf",
+     "key": "chem-pe-03",
+     "stem": "Cracking is the process of",
+     "image_url": null,
+     "explanation": "Cracking uses heat and often a catalyst (Al₂O₃/SiO₂); it gives smaller alkanes and alkenes such as ethene.\n\n**Why the other options are wrong**\n\n- separating crude oil into fractions: That is fractional distillation.\n- joining small molecules into polymers: That is polymerisation.\n- removing sulphur from crude oil: That is desulphurisation.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1c3e1772-cf4c-566d-8167-3bab86e9c7bd",
+       "label": "A",
+       "content": "breaking large hydrocarbon molecules into smaller, more useful ones",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "57081f28-e86c-53ca-8338-fe6f14802d95",
+       "label": "B",
+       "content": "separating crude oil into fractions",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5e7c5c52-ab8b-54a8-bd42-3dd5ac103cad",
+       "label": "C",
+       "content": "joining small molecules into polymers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a7916d15-1c67-52f8-816b-b5810a719dcc",
+       "label": "D",
+       "content": "removing sulphur from crude oil",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a121716d-5d6a-58e0-92de-de63a9bb7d8a",
+     "key": "chem-pe-04",
+     "stem": "Petrol with a high octane number contains a high proportion of",
+     "image_url": null,
+     "explanation": "2,2,4-trimethylpentane (octane number 100) is branched; heptane (0) is a straight chain.\n\n**Why the other options are wrong**\n\n- straight-chain alkanes: Straight chains knock easily and have low octane numbers.\n- water: Water is an impurity, not a component that raises octane number.\n- bitumen: Bitumen is far too heavy to be in petrol.",
+     "position": 4,
+     "options": [
+      {
+       "id": "efd5dfbe-fd53-59e6-952c-72136a1bd935",
+       "label": "A",
+       "content": "straight-chain alkanes",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2ea86401-9bcd-59a4-baef-aa7f2c1f5219",
+       "label": "B",
+       "content": "branched-chain alkanes",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "16e7f651-03cf-59e8-a9f3-01d107d1a123",
+       "label": "C",
+       "content": "water",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "40219a86-223d-5ae5-af5b-2d5c8ff2030f",
+       "label": "D",
+       "content": "bitumen",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f4547bab-9cef-5490-8118-c8ff13dd05fb",
+     "key": "chem-pe-05",
+     "stem": "In the cracking reaction C₁₂H₂₆ → C₈H₁₈ + 2X, what is X?",
+     "image_url": null,
+     "explanation": "Carbon: 12 − 8 = 4 = 2 × 2; hydrogen: 26 − 18 = 8 = 2 × 4. So X = C₂H₄ (ethene).\n\n**Why the other options are wrong**\n\n- C₄H₈: C₄H₈ would balance 1X, but the equation shows 2X.\n- C₂H₆: Two C₂H₆ would need 12 more H atoms than are available.\n- C₄H₁₀: This does not balance carbon or hydrogen with 2X.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ce710e2b-c8ab-545f-95fd-ee8f3fe2eaae",
+       "label": "A",
+       "content": "C₄H₈",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a5ea19a7-5159-54b1-aa7b-3483824d338a",
+       "label": "B",
+       "content": "C₂H₆",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6dbd31c3-3132-5ce7-b457-008afa85f285",
+       "label": "C",
+       "content": "C₂H₄",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1539c534-49c2-51ca-a3c5-e4e6b83abeba",
+       "label": "D",
+       "content": "C₄H₁₀",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "58b4053b-5698-5282-a611-7cf5716df44c",
+   "topic": "Alkanols",
+   "title": "Alkanols: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on alkanols, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 165,
+   "questions": [
+    {
+     "id": "6b03c332-c151-5b9e-b0b1-ec67ebb6a077",
+     "key": "chem-an-01",
+     "stem": "The enzyme in yeast that converts glucose into ethanol and carbon(IV) oxide is",
+     "image_url": null,
+     "explanation": "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂, catalysed by zymase at about 25–35 °C without air.\n\n**Why the other options are wrong**\n\n- diastase: Diastase (in malt) converts starch into maltose.\n- maltase: Maltase converts maltose into glucose.\n- amylase: Amylase (in saliva) converts starch into maltose.",
+     "position": 1,
+     "options": [
+      {
+       "id": "0188f41b-41b9-53e2-8421-0e15e7d7a399",
+       "label": "A",
+       "content": "diastase",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e33ab373-0577-5dd3-9ca2-6d339da5c70d",
+       "label": "B",
+       "content": "maltase",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "571ae000-2304-50a3-936d-e3b84d6d9c5a",
+       "label": "C",
+       "content": "amylase",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5c7b0a8c-da39-52b2-893e-2865e44ab435",
+       "label": "D",
+       "content": "zymase",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "01a7c967-3480-5376-aeea-48b73cda689a",
+     "key": "chem-an-02",
+     "stem": "Propan-2-ol, CH₃CH(OH)CH₃, is classified as",
+     "image_url": null,
+     "explanation": "The carbon carrying –OH is joined to two other carbon atoms, so propan-2-ol is secondary.\n\n**Why the other options are wrong**\n\n- a primary alkanol: In a primary alkanol, the C–OH carbon is joined to only one other carbon.\n- a tertiary alkanol: In a tertiary alkanol, the C–OH carbon is joined to three other carbons.\n- a dihydric alkanol: It has only one –OH group.",
+     "position": 2,
+     "options": [
+      {
+       "id": "4d9df80f-7905-52d7-86fb-32b81bc1cb2d",
+       "label": "A",
+       "content": "a secondary alkanol",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "06e2bd8f-6df1-5420-93ee-afec00f5384a",
+       "label": "B",
+       "content": "a primary alkanol",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4d05b45f-6b52-5dc7-b8fe-a8fac2d06bf5",
+       "label": "C",
+       "content": "a tertiary alkanol",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "df8e891d-21a7-5cb9-842f-307abbb8bb3d",
+       "label": "D",
+       "content": "a dihydric alkanol",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1717d359-e4a0-59f0-a3e6-8b80d2f71e7e",
+     "key": "chem-an-03",
+     "stem": "When ethanol is warmed with acidified potassium dichromate(VI), the colour changes from",
+     "image_url": null,
+     "explanation": "Ethanol is oxidised to ethanal and then ethanoic acid; Cr₂O₇²⁻ is reduced to Cr³⁺.\n\n**Why the other options are wrong**\n\n- purple to colourless: That is the change with acidified potassium manganate(VII).\n- green to orange: Dichromate(VI) is orange; it is reduced to green Cr³⁺.\n- colourless to pink: That is phenolphthalein turning alkaline.",
+     "position": 3,
+     "options": [
+      {
+       "id": "a8eb0e72-4dc5-549f-932a-6b2690643a00",
+       "label": "A",
+       "content": "purple to colourless",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "89d1b50b-1179-537e-ba6c-2b0ae41dd43f",
+       "label": "B",
+       "content": "orange to green",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9dd002cc-bc96-57e1-84fb-134da6eece37",
+       "label": "C",
+       "content": "green to orange",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3e630fa1-9f30-5086-8b25-b2c440512a46",
+       "label": "D",
+       "content": "colourless to pink",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "434305b4-9ed3-528b-8f0e-7de740bdc8f3",
+     "key": "chem-an-04",
+     "stem": "What mass of ethanol is formed by the complete fermentation of 18 g of glucose? C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ (C₆H₁₂O₆ = 180; C₂H₅OH = 46)",
+     "image_url": null,
+     "explanation": "Moles glucose $= \\dfrac{18}{180} = 0.1$; moles ethanol $= 0.2$; mass $= 0.2 \\times 46 = 9.2$ g\n\n**Why the other options are wrong**\n\n- 4.6 g: You used a 1 : 1 ratio; each glucose gives two ethanol molecules.\n- 8.8 g: That is the mass of carbon(IV) oxide formed.\n- 18 g: Some of the mass is lost as carbon(IV) oxide.",
+     "position": 4,
+     "options": [
+      {
+       "id": "5a32b43a-9855-54a2-8612-aec039ebea2f",
+       "label": "A",
+       "content": "4.6 g",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "794da514-814c-5816-8935-08b38019a39a",
+       "label": "B",
+       "content": "8.8 g",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ff3b31af-206c-5cd4-a14d-cf63afa57efc",
+       "label": "C",
+       "content": "9.2 g",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b0af31e7-76cc-5680-9f42-05d4703664d8",
+       "label": "D",
+       "content": "18 g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "74f8051a-6c08-5972-b02f-aff4d0a203cd",
+     "key": "chem-an-05",
+     "stem": "Sodium reacts with ethanol to give",
+     "image_url": null,
+     "explanation": "2C₂H₅OH + 2Na → 2C₂H₅ONa + H₂. The fizzing is a test for an –OH group.\n\n**Why the other options are wrong**\n\n- sodium hydroxide and hydrogen: That is the product with water, not ethanol.\n- sodium ethanoate and water: Sodium ethanoate forms from ethanoic acid and sodium hydroxide.\n- ethene and sodium hydroxide: Sodium does not dehydrate ethanol.",
+     "position": 5,
+     "options": [
+      {
+       "id": "65da7a1c-9c8d-532c-ac7c-048c218e983c",
+       "label": "A",
+       "content": "sodium hydroxide and hydrogen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7988b1c1-e6cd-5a02-9f2d-7c8a7f143712",
+       "label": "B",
+       "content": "sodium ethanoate and water",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9bd44e2c-3125-5d55-81c5-7a30ce0d7db7",
+       "label": "C",
+       "content": "sodium ethoxide and hydrogen",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "953d3da9-46fa-5d5e-81f1-f5ac92a7a628",
+       "label": "D",
+       "content": "ethene and sodium hydroxide",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a4b2709a-fb00-55d5-a6da-665f82bc10d0",
+   "topic": "Alkanoic Acids",
+   "title": "Alkanoic Acids: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on alkanoic acids, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 166,
+   "questions": [
+    {
+     "id": "84c55380-a16d-5c13-9716-8afb785a2653",
+     "key": "chem-ac-01",
+     "stem": "The functional group of the alkanoic acids is",
+     "image_url": null,
+     "explanation": "The carboxyl group, –COOH, contains a C=O and an –OH on the same carbon.\n\n**Why the other options are wrong**\n\n- –OH: –OH is the hydroxyl group of the alkanols.\n- –CHO: –CHO is the aldehyde (alkanal) group.\n- –NH₂: –NH₂ is the amino group.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e9de8c6b-63c9-54d9-ab44-ffc34312d803",
+       "label": "A",
+       "content": "–OH",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "532cb727-1bbf-5fa6-b314-9b8f22b4b5e2",
+       "label": "B",
+       "content": "–CHO",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0c942cc4-2269-5679-99ba-18a6a3606eef",
+       "label": "C",
+       "content": "–NH₂",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fa059d1b-6a18-51b7-afd0-ce7d37d81016",
+       "label": "D",
+       "content": "–COOH",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9d6ecc97-62c3-580c-b8b8-a20df42aacab",
+     "key": "chem-ac-02",
+     "stem": "Which reagent distinguishes ethanoic acid from ethanol?",
+     "image_url": null,
+     "explanation": "Ethanoic acid gives effervescence of CO₂ with NaHCO₃; ethanol does not react.\n\n**Why the other options are wrong**\n\n- Sodium metal: Both compounds fizz with sodium, giving hydrogen.\n- Water: Both are miscible with water.\n- A lighted splint held over the liquid: Both are flammable liquids; this is not a safe or clear test.",
+     "position": 2,
+     "options": [
+      {
+       "id": "6416e9d5-5e96-5bd0-8653-644c942696c6",
+       "label": "A",
+       "content": "Sodium hydrogencarbonate solution",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9f13d0ef-b8c0-5bdf-92dd-253d451b9bb9",
+       "label": "B",
+       "content": "Sodium metal",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7ad803f0-9994-53ce-b787-4d0d2cabc4f3",
+       "label": "C",
+       "content": "Water",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "617573b8-82ad-5d0e-9b60-858d198936ed",
+       "label": "D",
+       "content": "A lighted splint held over the liquid",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "294f618f-34e4-5070-9f1f-395b69517a83",
+     "key": "chem-ac-03",
+     "stem": "The IUPAC name of CH₃CH₂COOH is",
+     "image_url": null,
+     "explanation": "Count all the carbons including the one in –COOH: three, so propanoic acid.\n\n**Why the other options are wrong**\n\n- ethanoic acid: The carbon of –COOH is counted: there are three carbons.\n- propan-1-ol: Propan-1-ol is an alkanol, CH₃CH₂CH₂OH.\n- butanoic acid: Butanoic acid has four carbons, C₃H₇COOH.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8cd5f6f7-5c04-598d-ab61-9f42303519d8",
+       "label": "A",
+       "content": "ethanoic acid",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "08bd2102-d88e-5b97-89d8-38d21f4d9eb0",
+       "label": "B",
+       "content": "propanoic acid",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8bb33831-460c-5045-a19a-20b7e1649f8e",
+       "label": "C",
+       "content": "propan-1-ol",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "52f46c2e-fbb6-549b-abc7-a07908956631",
+       "label": "D",
+       "content": "butanoic acid",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d3ab3862-d0ef-5fb3-b3ee-41644269a5a5",
+     "key": "chem-ac-04",
+     "stem": "A vinegar contains 0.80 mol/dm³ of ethanoic acid. What is its concentration in g/dm³? (CH₃COOH = 60)",
+     "image_url": null,
+     "explanation": "Mass concentration $= 0.80 \\times 60 = 48$ g/dm³\n\n**Why the other options are wrong**\n\n- 0.013 g/dm³: You divided the concentration by the molar mass.\n- 75 g/dm³: You divided the molar mass by the concentration.\n- 36.8 g/dm³: You used 46, the molar mass of ethanol.",
+     "position": 4,
+     "options": [
+      {
+       "id": "3d3ff5bb-20f6-5c58-a942-44348f33775a",
+       "label": "A",
+       "content": "0.013 g/dm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c55231c3-3bde-52f3-a910-2955a75f8011",
+       "label": "B",
+       "content": "36.8 g/dm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1f3dd04a-24f7-5496-8732-2aa6a63c6a10",
+       "label": "C",
+       "content": "48 g/dm³",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "be2258cc-5c12-55e6-bae6-49fde47b50a9",
+       "label": "D",
+       "content": "75 g/dm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "340df2d4-32c7-5add-b893-3511a039e983",
+     "key": "chem-ac-05",
+     "stem": "Compared with 0.1 mol/dm³ hydrochloric acid, 0.1 mol/dm³ ethanoic acid",
+     "image_url": null,
+     "explanation": "Ethanoic acid is only partly ionised; its pH is about 3, while that of 0.1 mol/dm³ HCl is 1.\n\n**Why the other options are wrong**\n\n- has a lower pH: Ethanoic acid is weak and produces fewer H⁺ ions, so its pH is higher.\n- neutralises more sodium hydroxide: Equal volumes neutralise the same amount of NaOH (both are monobasic).\n- conducts electricity better: It has fewer ions, so it conducts less well.",
+     "position": 5,
+     "options": [
+      {
+       "id": "8acfde75-7c61-5fe1-afd2-dee75ef34b26",
+       "label": "A",
+       "content": "has a lower pH",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "794d60fd-9b54-5d5f-a63e-4a7d01b214eb",
+       "label": "B",
+       "content": "neutralises more sodium hydroxide",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "76cf0bde-84fe-5018-9042-900be53aab74",
+       "label": "C",
+       "content": "has a higher pH",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b5e8cbe5-4423-56c4-9424-f1891a61acb0",
+       "label": "D",
+       "content": "conducts electricity better",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fcedb672-c990-58ea-b8a6-d6a438f6dcc9",
+   "topic": "Alkanoates and Esters",
+   "title": "Alkanoates and Esters: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on alkanoates and esters, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 167,
+   "questions": [
+    {
+     "id": "10055068-7a01-501a-80a6-99b24e6dd34a",
+     "key": "chem-es-01",
+     "stem": "The name of the ester CH₃COOC₂H₅ is",
+     "image_url": null,
+     "explanation": "The alkanol part (C₂H₅–, ethyl) is named first, then the acid part (CH₃COO–, ethanoate).\n\n**Why the other options are wrong**\n\n- methyl propanoate: That is CH₃CH₂COOCH₃.\n- ethyl methanoate: That is HCOOC₂H₅.\n- propyl methanoate: That is HCOOC₃H₇.",
+     "position": 1,
+     "options": [
+      {
+       "id": "c4b41e42-4604-51a6-80c9-456bce1d2c69",
+       "label": "A",
+       "content": "methyl propanoate",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0f946799-44c4-5da8-b4f4-36c8e0826cb9",
+       "label": "B",
+       "content": "ethyl methanoate",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cf724f30-2952-5936-a34b-e4447d4f2c2d",
+       "label": "C",
+       "content": "propyl methanoate",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0d85fd55-079d-584c-9c96-cd7a3343a9ae",
+       "label": "D",
+       "content": "ethyl ethanoate",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6266bd66-5bda-52c3-870f-80e0b6d746a6",
+     "key": "chem-es-02",
+     "stem": "In the preparation of an ester from an alkanoic acid and an alkanol, concentrated sulphuric acid acts as",
+     "image_url": null,
+     "explanation": "It speeds up the reaction and absorbs the water formed, shifting the equilibrium towards the ester.\n\n**Why the other options are wrong**\n\n- an oxidising agent: Nothing is oxidised in esterification.\n- a reducing agent: Concentrated sulphuric acid is not a reducing agent.\n- the source of the ester group: The ester group comes from the acid and the alkanol.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f03565ee-c9cc-5a6f-97a5-0c1300b3a455",
+       "label": "A",
+       "content": "a catalyst and a dehydrating agent",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c2e915f2-40f4-501d-a4b5-adfb9eac5d2e",
+       "label": "B",
+       "content": "an oxidising agent",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5c226593-402c-5d96-8ce2-3791b8b1a48d",
+       "label": "C",
+       "content": "a reducing agent",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bddacc0f-b266-5422-a62b-194d9cec63d2",
+       "label": "D",
+       "content": "the source of the ester group",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a4d54420-6cfe-52dc-9db8-07d49782c4d5",
+     "key": "chem-es-03",
+     "stem": "Which property is typical of simple esters such as ethyl ethanoate?",
+     "image_url": null,
+     "explanation": "Esters are volatile, pleasant-smelling and used as flavourings, perfumes and solvents.\n\n**Why the other options are wrong**\n\n- A sharp smell of vinegar and solubility in water: That describes ethanoic acid.\n- Effervescence with sodium carbonate: Esters are neutral; only acids fizz with carbonates.\n- A high boiling point due to hydrogen bonding: Esters cannot hydrogen-bond with each other, so their boiling points are low.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c4761aa7-5ca9-5522-944c-44944e7d9cbc",
+       "label": "A",
+       "content": "A sharp smell of vinegar and solubility in water",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "28a19880-4571-5308-bc2f-99a9105d0266",
+       "label": "B",
+       "content": "A sweet, fruity smell and insolubility in water",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "95ee4b02-4be0-5cce-93f7-d3bdf353fa5d",
+       "label": "C",
+       "content": "Effervescence with sodium carbonate",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "641a295c-4dfc-59d3-b43c-8a6cfc11de20",
+       "label": "D",
+       "content": "A high boiling point due to hydrogen bonding",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "37443109-e288-5f47-b31b-0b52404b5b0c",
+     "key": "chem-es-04",
+     "stem": "12 g of ethanoic acid is warmed with excess ethanol and gives 11.44 g of ethyl ethanoate. What is the percentage yield? (CH₃COOH = 60; CH₃COOC₂H₅ = 88)",
+     "image_url": null,
+     "explanation": "Moles acid $= \\dfrac{12}{60} = 0.2$; theoretical ester $= 0.2 \\times 88 = 17.6$ g; yield $= \\dfrac{11.44}{17.6} \\times 100 = 65\\%$\n\n**Why the other options are wrong**\n\n- 95.33%: You compared the mass of ester with the mass of acid used.\n- 35%: That is the percentage that was not obtained.\n- 153.85%: You divided the theoretical mass by the actual mass.",
+     "position": 4,
+     "options": [
+      {
+       "id": "dc1a0435-facb-5567-9076-7d0ede0c6e54",
+       "label": "A",
+       "content": "35%",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "44e038f8-4d5f-5a76-aa17-a635389fc75a",
+       "label": "B",
+       "content": "65%",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9eb22c59-81ab-5b96-8fcb-13e15e118a59",
+       "label": "C",
+       "content": "95.33%",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f429ca36-a69f-5c37-869b-c31149e1da69",
+       "label": "D",
+       "content": "153.85%",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ee59e4b7-725b-5d31-94f8-950082e81dea",
+     "key": "chem-es-05",
+     "stem": "Which compound is a functional group isomer of propanoic acid, CH₃CH₂COOH?",
+     "image_url": null,
+     "explanation": "Both are C₃H₆O₂, but one is an acid (–COOH) and the other an ester (–COO–).\n\n**Why the other options are wrong**\n\n- Propan-1-ol, CH₃CH₂CH₂OH: Propan-1-ol is C₃H₈O; propanoic acid is C₃H₆O₂.\n- Ethanoic acid, CH₃COOH: Ethanoic acid is C₂H₄O₂, a different formula.\n- Propanal, CH₃CH₂CHO: Propanal is C₃H₆O.",
+     "position": 5,
+     "options": [
+      {
+       "id": "759f9418-eb30-57e8-a52e-a53dff3f0199",
+       "label": "A",
+       "content": "Propan-1-ol, CH₃CH₂CH₂OH",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0eb68150-d394-5e95-a1c9-87e7a5044d80",
+       "label": "B",
+       "content": "Ethanoic acid, CH₃COOH",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b0da8143-7232-5012-acdd-7d3850ca8253",
+       "label": "C",
+       "content": "Methyl ethanoate, CH₃COOCH₃",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f8466cee-60b8-5fb7-9b57-8017b4334c7c",
+       "label": "D",
+       "content": "Propanal, CH₃CH₂CHO",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b9c9de78-a6cf-5e6a-9fbd-f2d59f9b39a3",
+   "topic": "Soaps, Detergents, and Oils",
+   "title": "Soaps, Detergents, and Oils: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on soaps, detergents, and oils, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 168,
+   "questions": [
+    {
+     "id": "6201f24a-5fb4-560c-bd23-f53b506d070c",
+     "key": "chem-sd-01",
+     "stem": "When a fat is boiled with sodium hydroxide solution, the products are",
+     "image_url": null,
+     "explanation": "Saponification: fat + 3NaOH → glycerol + 3 sodium salts of fatty acids (soap).\n\n**Why the other options are wrong**\n\n- soap and ethanol: The alkanol released from fats is glycerol, not ethanol.\n- margarine and water: Margarine is made by hydrogenating oils.\n- glycerol and fatty acids only: In alkali, the fatty acids form their sodium salts (soap).",
+     "position": 1,
+     "options": [
+      {
+       "id": "6b17c72f-7221-502c-8f8a-8a59c599abd1",
+       "label": "A",
+       "content": "soap and ethanol",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2fc6471c-95c1-5f72-a2b8-8f195a8a8e86",
+       "label": "B",
+       "content": "margarine and water",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c979ffb6-bd47-5562-9cde-3febbc3439fa",
+       "label": "C",
+       "content": "glycerol and fatty acids only",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6566b4ed-6f57-59fe-8671-8d7f229bb329",
+       "label": "D",
+       "content": "soap and glycerol",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4e28f49e-f937-546b-a6c5-bb6002f893b3",
+     "key": "chem-sd-02",
+     "stem": "In soap making, the soap is separated from the glycerol solution by adding",
+     "image_url": null,
+     "explanation": "Salting out: soap is much less soluble in brine, so it separates as a curd that floats.\n\n**Why the other options are wrong**\n\n- sodium hydroxide: Sodium hydroxide is the alkali used to saponify the fat.\n- calcium chloride: Calcium ions would form insoluble scum, spoiling the soap.\n- ethanol: Ethanol would dissolve the soap rather than separate it.",
+     "position": 2,
+     "options": [
+      {
+       "id": "89271cce-9e04-5963-aa90-636201e94cdf",
+       "label": "A",
+       "content": "sodium chloride (brine)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "acd47abb-7fa6-57bc-9aa7-ab0f1d29c579",
+       "label": "B",
+       "content": "sodium hydroxide",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "721af3bc-85dd-51bf-911b-64dfe9e8edd4",
+       "label": "C",
+       "content": "calcium chloride",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "71e28ce9-5d90-5dad-9f42-7a86b6067ca1",
+       "label": "D",
+       "content": "ethanol",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "96de14ec-0fb7-508f-97ff-bd83b9435ed8",
+     "key": "chem-sd-03",
+     "stem": "Soap forms a scum in hard water because",
+     "image_url": null,
+     "explanation": "2C₁₇H₃₅COO⁻ + Ca²⁺ → (C₁₇H₃₅COO)₂Ca(s). Soapless detergents do not form scum.\n\n**Why the other options are wrong**\n\n- hard water is too acidic: Hardness is caused by Ca²⁺ and Mg²⁺ ions, not acidity.\n- soap does not dissolve in water: Soap dissolves in soft water and lathers well.\n- hard water contains chloride ions: Chloride ions do not react with soap.",
+     "position": 3,
+     "options": [
+      {
+       "id": "56dbb1d3-a209-5db3-bc8c-229223d35715",
+       "label": "A",
+       "content": "hard water is too acidic",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d30e2970-6417-590d-926f-e700095b8553",
+       "label": "B",
+       "content": "calcium and magnesium ions form insoluble salts with the soap",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c69ae09c-3085-54d3-ac5c-e7a73e213bea",
+       "label": "C",
+       "content": "soap does not dissolve in water",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "713b547a-8d8b-59da-bbec-8861a46a90a9",
+       "label": "D",
+       "content": "hard water contains chloride ions",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fa1c0595-3410-5b45-9c3f-95adf62cf60d",
+     "key": "chem-sd-04",
+     "stem": "Vegetable oils are liquid at room temperature while animal fats are solid because oils contain",
+     "image_url": null,
+     "explanation": "Kinks at C=C bonds stop the chains packing closely, so the forces between molecules are weaker.\n\n**Why the other options are wrong**\n\n- more saturated fatty acid chains: Saturated chains pack closely and make fats solid.\n- no glycerol: Both fats and oils are esters of glycerol.\n- water: Oils are not liquid because of water.",
+     "position": 4,
+     "options": [
+      {
+       "id": "bead8adc-00de-5854-8866-47ca6f7a3401",
+       "label": "A",
+       "content": "more saturated fatty acid chains",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "48c570ce-6374-517a-afae-4751e05d4628",
+       "label": "B",
+       "content": "no glycerol",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ee9dd85f-1068-518e-ad26-31f8851322f9",
+       "label": "C",
+       "content": "more unsaturated (C=C) fatty acid chains",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f2433a8e-babd-590b-93a8-26e107167f9a",
+       "label": "D",
+       "content": "water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "53e6ebfc-95d2-57a7-8802-682a738034a4",
+     "key": "chem-sd-05",
+     "stem": "Which part of a soap anion dissolves in grease?",
+     "image_url": null,
+     "explanation": "The hydrophobic tail dissolves in the grease and the ionic head stays in the water, lifting the grease off.\n\n**Why the other options are wrong**\n\n- The –COO⁻ group: The ionic head is hydrophilic and dissolves in water.\n- The sodium ion: Na⁺ is separate from the anion and stays in the water.\n- The whole anion equally: The two ends behave differently; that is how soap works.",
+     "position": 5,
+     "options": [
+      {
+       "id": "05eca0a0-1b4f-52a3-a1a9-21210c47bcef",
+       "label": "A",
+       "content": "The –COO⁻ group",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7c88d668-b824-5dc1-a65b-421e729f6b70",
+       "label": "B",
+       "content": "The sodium ion",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "acb942ce-4e63-5fa8-80a8-0155a343cff1",
+       "label": "C",
+       "content": "The whole anion equally",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a99d9865-4415-5540-bec0-16d8495b879c",
+       "label": "D",
+       "content": "The long hydrocarbon chain",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "85f9f816-c1ad-5aa4-b948-161e35f2f06f",
+   "topic": "Carbohydrates",
+   "title": "Carbohydrates: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on carbohydrates, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 169,
+   "questions": [
+    {
+     "id": "b37f28bf-ef35-5889-bc21-b9984f33d8fa",
+     "key": "chem-cr-01",
+     "stem": "Starch gives a blue-black colour with",
+     "image_url": null,
+     "explanation": "Iodine forms a blue-black complex with starch; it stays brown-yellow with sugars.\n\n**Why the other options are wrong**\n\n- Benedict's solution: Benedict's solution tests for reducing sugars.\n- biuret reagent: The biuret test detects proteins.\n- bromine water: Bromine water tests for C=C bonds.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7776d650-1ee9-5946-9e52-f92dd985207d",
+       "label": "A",
+       "content": "iodine solution",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "95441237-5d76-5018-ac6b-02fad5990c09",
+       "label": "B",
+       "content": "Benedict's solution",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "135384dc-c073-5e47-bbd5-cad61e18f389",
+       "label": "C",
+       "content": "biuret reagent",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8af139ea-5726-5963-8105-009665ee2691",
+       "label": "D",
+       "content": "bromine water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cd744d6d-932e-5d73-b1ef-2c44572fb078",
+     "key": "chem-cr-02",
+     "stem": "Which of the following is not a reducing sugar?",
+     "image_url": null,
+     "explanation": "Sucrose gives no precipitate with Benedict's solution until it is hydrolysed to glucose and fructose.\n\n**Why the other options are wrong**\n\n- Glucose: Glucose gives a brick-red precipitate with Benedict's solution.\n- Fructose: Fructose is a reducing sugar.\n- Maltose: Maltose is a reducing sugar.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d5b8f292-5c8d-59ad-88ac-b5ea9b27bbfb",
+       "label": "A",
+       "content": "Glucose",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0eec7341-712a-56a9-bc04-f502310c3b1d",
+       "label": "B",
+       "content": "Sucrose",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8d9e418d-1a97-5523-b360-34ce11c7f325",
+       "label": "C",
+       "content": "Fructose",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "72412df6-9c9f-5247-9f81-414e55c8e8ee",
+       "label": "D",
+       "content": "Maltose",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b3b98d12-e130-558c-b2da-b1166e205ba4",
+     "key": "chem-cr-03",
+     "stem": "The products of the acid hydrolysis of sucrose are",
+     "image_url": null,
+     "explanation": "C₁₂H₂₂O₁₁ + H₂O → C₆H₁₂O₆ (glucose) + C₆H₁₂O₆ (fructose).\n\n**Why the other options are wrong**\n\n- glucose only: Maltose, not sucrose, gives glucose only.\n- glucose and galactose: Lactose gives glucose and galactose.\n- ethanol and carbon(IV) oxide: Those are products of fermentation.",
+     "position": 3,
+     "options": [
+      {
+       "id": "7da58c61-ce46-51fe-a0aa-33a4529af87c",
+       "label": "A",
+       "content": "glucose only",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2d3df9d1-5569-5c4f-9cfd-caed955393ea",
+       "label": "B",
+       "content": "glucose and galactose",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a9a1ad81-41f5-5db8-be07-8ede7d7b2bb8",
+       "label": "C",
+       "content": "glucose and fructose",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "78aacd20-a04f-594f-bd27-fdf9067fb32b",
+       "label": "D",
+       "content": "ethanol and carbon(IV) oxide",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c85501d6-aff8-5050-b2ca-0945c850f712",
+     "key": "chem-cr-04",
+     "stem": "What mass of glucose is produced by the complete hydrolysis of 342 g of sucrose? C₁₂H₂₂O₁₁ + H₂O → C₆H₁₂O₆ + C₆H₁₂O₆ (sucrose = 342; glucose = 180)",
+     "image_url": null,
+     "explanation": "Moles sucrose $= \\dfrac{342}{342} = 1$; it gives 1 mol glucose $= 180$ g (and 1 mol fructose).\n\n**Why the other options are wrong**\n\n- 360 g: Sucrose gives one glucose and one fructose, not two glucose.\n- 342 g: Mass of sucrose is not the mass of glucose formed.\n- 171 g: You halved the mass of sucrose.",
+     "position": 4,
+     "options": [
+      {
+       "id": "dbc25d86-5141-5044-93c7-7192b89f444d",
+       "label": "A",
+       "content": "171 g",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5891b13f-1a8a-5906-aac7-b2bb07bb7aad",
+       "label": "B",
+       "content": "180 g",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "909d16c5-be28-50e2-9883-cdfce2d0d537",
+       "label": "C",
+       "content": "342 g",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a275f08f-03aa-5492-85e9-c59d64e50b6f",
+       "label": "D",
+       "content": "360 g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "69857d70-f25b-5861-baa3-8e9ba0b777b2",
+     "key": "chem-cr-05",
+     "stem": "The enzyme in saliva that hydrolyses starch is",
+     "image_url": null,
+     "explanation": "Salivary amylase hydrolyses starch to maltose, which is why bread tastes sweet when chewed.\n\n**Why the other options are wrong**\n\n- zymase: Zymase in yeast ferments glucose to ethanol.\n- pepsin: Pepsin hydrolyses proteins in the stomach.\n- invertase: Invertase hydrolyses sucrose.",
+     "position": 5,
+     "options": [
+      {
+       "id": "bbd7fcd5-e002-5f6c-89ba-5bd42b76524a",
+       "label": "A",
+       "content": "zymase",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b57886db-e64a-5350-bf74-57328d8f8fc2",
+       "label": "B",
+       "content": "pepsin",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "130823c1-4314-5e09-887a-542e12d1fb8d",
+       "label": "C",
+       "content": "invertase",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "01bc492d-bc6a-569c-a5c1-3cabcc37f49f",
+       "label": "D",
+       "content": "amylase (ptyalin)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6d92df29-683c-536c-8553-c69db73745f9",
+   "topic": "Proteins and Amino Acids",
+   "title": "Proteins and Amino Acids: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on proteins and amino acids, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 170,
+   "questions": [
+    {
+     "id": "a49930f1-e8f3-58fb-a87b-8a046cccb989",
+     "key": "chem-pr-01",
+     "stem": "Which element is present in all proteins but not in carbohydrates?",
+     "image_url": null,
+     "explanation": "Proteins are built from amino acids, each with an –NH₂ group; carbohydrates contain only C, H and O.\n\n**Why the other options are wrong**\n\n- Carbon: Carbohydrates also contain carbon.\n- Oxygen: Carbohydrates also contain oxygen.\n- Hydrogen: Carbohydrates also contain hydrogen.",
+     "position": 1,
+     "options": [
+      {
+       "id": "d4150ee8-dad9-5e1c-8d2c-30a156ca4d39",
+       "label": "A",
+       "content": "Nitrogen",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5af648fd-d024-5062-8354-32e87a2682a5",
+       "label": "B",
+       "content": "Carbon",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "be9c9855-52e6-5e21-9f7a-aa7bdfbff49c",
+       "label": "C",
+       "content": "Oxygen",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4fc94480-d268-5d1f-a1fb-78ecde73b669",
+       "label": "D",
+       "content": "Hydrogen",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "035ee76a-ab11-5f4e-9b57-b905d9f7dff8",
+     "key": "chem-pr-02",
+     "stem": "The link that joins amino acids together in a protein is",
+     "image_url": null,
+     "explanation": "The peptide (amide) link forms when –COOH of one amino acid reacts with –NH₂ of the next, losing water.\n\n**Why the other options are wrong**\n\n- –COO–: –COO– is the ester link in fats and polyesters.\n- –O–: –O– links sugar units in starch and cellulose.\n- –C=C–: C=C is the functional group of alkenes.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f48574e9-0a79-5d41-97b2-1d17fdd13cbf",
+       "label": "A",
+       "content": "–COO–",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3b85f66f-d83e-5932-a715-fd26e9fc82db",
+       "label": "B",
+       "content": "–CO–NH–",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c2d9ae0d-2a5e-5c8a-a9a7-ad82153651ed",
+       "label": "C",
+       "content": "–O–",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e2763537-d86c-55fe-9aa6-25769e101b4e",
+       "label": "D",
+       "content": "–C=C–",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9e8c3c40-2b82-5de2-bd7d-dac2b193e714",
+     "key": "chem-pr-03",
+     "stem": "A food sample gives a violet colour when sodium hydroxide and a few drops of dilute copper(II) sulphate are added. This shows the presence of",
+     "image_url": null,
+     "explanation": "This is the biuret test: Cu²⁺ in alkali forms a violet complex with peptide bonds.\n\n**Why the other options are wrong**\n\n- starch: Starch is detected with iodine.\n- a reducing sugar: Reducing sugars are detected with Benedict's or Fehling's solution.\n- fat: Fats are detected by the grease-spot or emulsion test.",
+     "position": 3,
+     "options": [
+      {
+       "id": "3402091f-009f-5e25-b782-b96799d43c9a",
+       "label": "A",
+       "content": "starch",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "43311208-a3b1-5436-a8c2-3dc0a84ea3b0",
+       "label": "B",
+       "content": "a reducing sugar",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3f661172-1547-5f9b-a554-efff245dc2a0",
+       "label": "C",
+       "content": "protein",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0e1e1756-f188-5963-82ae-e0a45ad809bb",
+       "label": "D",
+       "content": "fat",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "805696ef-b436-5c36-b871-d27ed45689d3",
+     "key": "chem-pr-04",
+     "stem": "When egg white is heated it becomes a white solid. During this denaturation,",
+     "image_url": null,
+     "explanation": "Heat breaks the hydrogen bonds that hold the folded shape; the chain unfolds and the protein coagulates.\n\n**Why the other options are wrong**\n\n- the protein is hydrolysed to amino acids: Hydrolysis breaks peptide bonds; heating an egg does not.\n- new peptide bonds form between the chains: Denaturation does not make new peptide bonds.\n- the protein is converted into starch: Proteins do not turn into carbohydrates on heating.",
+     "position": 4,
+     "options": [
+      {
+       "id": "10bc135d-cbe3-5080-8589-ef2de28945ef",
+       "label": "A",
+       "content": "the protein is hydrolysed to amino acids",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "529942cb-f6b7-5469-9cf7-7f902c92def9",
+       "label": "B",
+       "content": "new peptide bonds form between the chains",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "07852788-a63b-56cc-9c1c-6ee594e32278",
+       "label": "C",
+       "content": "the protein is converted into starch",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "262e1cdd-213f-5130-ab7d-493e7824ac59",
+       "label": "D",
+       "content": "the 3-D shape of the protein changes but the peptide bonds are not broken",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "491c234f-0f63-56d2-bad9-4bb5d8c6fc79",
+     "key": "chem-pr-05",
+     "stem": "Glycine (Mᵣ = 75) and alanine (Mᵣ = 89) join to form a dipeptide. What is the relative molecular mass of the dipeptide? (H₂O = 18)",
+     "image_url": null,
+     "explanation": "$M_r = 75 + 89 - 18 = 146$ (one H₂O is eliminated in the condensation).\n\n**Why the other options are wrong**\n\n- 164: You forgot that a molecule of water is lost when the peptide bond forms.\n- 128: Only one molecule of water is lost, not two.\n- 182: Water is lost, not added.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f6fa75d6-ddd9-58fb-82dc-541e68b587cf",
+       "label": "A",
+       "content": "128",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9e493dab-302f-5bd5-a3a3-34f8c39526e6",
+       "label": "B",
+       "content": "146",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "012bfdf0-f520-54dd-af43-9d6eb815b444",
+       "label": "C",
+       "content": "164",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "57e14cdd-724d-5745-b314-6a8268dd1a6c",
+       "label": "D",
+       "content": "182",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8364c13f-9b07-5fd5-859a-657bad8a14ae",
+   "topic": "Polymers and Plastics",
+   "title": "Polymers and Plastics: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on polymers and plastics, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 171,
+   "questions": [
+    {
+     "id": "6d3a9d42-7a44-56e8-b4ea-29334351c2f8",
+     "key": "chem-po-01",
+     "stem": "The monomer of PVC is",
+     "image_url": null,
+     "explanation": "n CH₂=CHCl → (–CH₂–CHCl–)ₙ, poly(chloroethene), used for water pipes.\n\n**Why the other options are wrong**\n\n- ethene, CH₂=CH₂: Ethene is the monomer of poly(ethene).\n- propene, CH₂=CHCH₃: Propene is the monomer of poly(propene).\n- chloroethane, CH₃CH₂Cl: Chloroethane has no C=C bond, so it cannot form an addition polymer.",
+     "position": 1,
+     "options": [
+      {
+       "id": "6320c861-55cc-58d3-a602-113a1ee50f42",
+       "label": "A",
+       "content": "chloroethene, CH₂=CHCl",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "817b30eb-a4a2-5670-9c66-ce3391d5b167",
+       "label": "B",
+       "content": "ethene, CH₂=CH₂",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a0d3a97c-4992-55b8-a4f8-8c2439379451",
+       "label": "C",
+       "content": "propene, CH₂=CHCH₃",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9565f4d7-fe6d-5ffa-a494-d7abb9205166",
+       "label": "D",
+       "content": "chloroethane, CH₃CH₂Cl",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f1b2fb49-844c-57db-be79-b1d27b532c77",
+     "key": "chem-po-02",
+     "stem": "Nylon is formed by",
+     "image_url": null,
+     "explanation": "A diamine and a dicarboxylic acid join through amide links, losing water at each link.\n\n**Why the other options are wrong**\n\n- addition polymerisation: Addition polymers form from C=C monomers with no by-product.\n- fermentation: Fermentation produces ethanol from sugars.\n- cracking: Cracking breaks large molecules into smaller ones.",
+     "position": 2,
+     "options": [
+      {
+       "id": "6bfe7d9b-bf72-588d-9259-1781593798e6",
+       "label": "A",
+       "content": "addition polymerisation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "309cbbba-bf42-5462-b626-e3b99d624ba9",
+       "label": "B",
+       "content": "condensation polymerisation",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9da939ff-c36f-548b-8d53-b338269afa5e",
+       "label": "C",
+       "content": "fermentation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f5c5af27-334f-5a98-a44c-e148f5be6cf6",
+       "label": "D",
+       "content": "cracking",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9298e30a-6e6d-510c-8fe6-2223ca43afc3",
+     "key": "chem-po-03",
+     "stem": "A thermosetting plastic does not soften on heating because",
+     "image_url": null,
+     "explanation": "Covalent cross-links stop the chains sliding past each other, so the plastic chars rather than melts.\n\n**Why the other options are wrong**\n\n- its chains are short: Thermosets have long chains, joined to each other.\n- it contains no carbon: Thermosetting plastics are organic polymers.\n- it is held together only by weak forces: Weak forces between chains allow a thermoplastic to soften.",
+     "position": 3,
+     "options": [
+      {
+       "id": "39a521d9-d00b-5fca-aedd-ab61e86dddec",
+       "label": "A",
+       "content": "its chains are short",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "df025cd1-fbd6-513e-8c68-8e28b71dd5bc",
+       "label": "B",
+       "content": "it contains no carbon",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "78c561dd-70ce-56df-9be3-277fdd1e2508",
+       "label": "C",
+       "content": "its chains are joined by strong cross-links",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "09a0947f-4968-5877-9a90-f7075cdd5c77",
+       "label": "D",
+       "content": "it is held together only by weak forces",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "460685f3-2038-573f-b7fd-e3304c922a36",
+     "key": "chem-po-04",
+     "stem": "A sample of poly(ethene) has a relative molecular mass of 42 000. How many ethene units does each chain contain? (C₂H₄ = 28)",
+     "image_url": null,
+     "explanation": "$n = \\dfrac{M_r(\\text{polymer})}{M_r(\\text{monomer})} = \\dfrac{42\\,000}{28} = 1500$\n\n**Why the other options are wrong**\n\n- 3000: You used 14 (CH₂) as the mass of the monomer; the monomer is C₂H₄.\n- 750: You used 56 as the molar mass of ethene.\n- 42,000: That is the relative molecular mass, not the number of units.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4848bc4d-3e8c-52fe-952e-55e925d9f9b5",
+       "label": "A",
+       "content": "750",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "99c3340d-8825-50b0-944a-616db4562fa8",
+       "label": "B",
+       "content": "1500",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1600ab77-c853-5da3-a997-f57a2e551b06",
+       "label": "C",
+       "content": "3000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "534b514f-a5fd-5402-a077-fc70e6b54bd2",
+       "label": "D",
+       "content": "42,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "05505710-1d34-584e-a068-463f18138c06",
+     "key": "chem-po-05",
+     "stem": "Vulcanisation of rubber involves heating it with",
+     "image_url": null,
+     "explanation": "Sulphur forms –S–S– cross-links between the chains, making rubber harder, stronger and more elastic.\n\n**Why the other options are wrong**\n\n- chlorine: Chlorine does not form cross-links in natural rubber.\n- nitrogen: Nitrogen is unreactive and is not used.\n- carbon(IV) oxide: Carbon(IV) oxide does not react with rubber.",
+     "position": 5,
+     "options": [
+      {
+       "id": "95b985eb-bec2-5818-969d-22d42e4f640b",
+       "label": "A",
+       "content": "chlorine",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1224bcd2-5346-505f-9f37-16c0efb909c0",
+       "label": "B",
+       "content": "nitrogen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0ee669f5-1bb9-5031-939c-63cd1e338126",
+       "label": "C",
+       "content": "carbon(IV) oxide",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ec9e74b4-a949-50e5-b975-df9f0eb215b5",
+       "label": "D",
+       "content": "sulphur",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1379e7d1-9a47-5dac-93c7-6b20c52e9126",
+   "topic": "Chemistry and the Environment",
+   "title": "Chemistry and the Environment: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on chemistry and the environment, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 172,
+   "questions": [
+    {
+     "id": "ce1a807e-6c71-5bd0-813d-c6be9dc3e8c3",
+     "key": "chem-ev-01",
+     "stem": "Which gas is the main cause of acid rain from burning coal and fuel oil?",
+     "image_url": null,
+     "explanation": "SO₂ dissolves in rain and is oxidised to sulphuric(VI) acid: 2SO₂ + O₂ + 2H₂O → 2H₂SO₄.\n\n**Why the other options are wrong**\n\n- Carbon(II) oxide: Carbon(II) oxide is poisonous but does not form acid rain.\n- Methane: Methane is a greenhouse gas, not a cause of acid rain.\n- Nitrogen: Nitrogen gas itself is unreactive; its oxides (NOₓ) contribute.",
+     "position": 1,
+     "options": [
+      {
+       "id": "ec4e5989-62c8-5144-96aa-bfd2c4554d3b",
+       "label": "A",
+       "content": "Sulphur(IV) oxide",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ca85a96f-8d54-52b9-870e-a0d3d25c04b5",
+       "label": "B",
+       "content": "Carbon(II) oxide",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1d0e856d-02c6-5e39-b3ef-37363f8f2158",
+       "label": "C",
+       "content": "Methane",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "03cfbad7-60b5-50ac-ad70-8b16cf7c7249",
+       "label": "D",
+       "content": "Nitrogen",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a8cba58c-2499-5626-af9c-d0e65bce9a79",
+     "key": "chem-ev-02",
+     "stem": "The burning of fossil fuels adds most to global warming by increasing the amount of which gas in the air?",
+     "image_url": null,
+     "explanation": "CO₂ absorbs infrared radiation from the Earth and re-emits it, trapping heat (the greenhouse effect).\n\n**Why the other options are wrong**\n\n- Oxygen: Burning uses up oxygen; it does not add it.\n- Nitrogen: Nitrogen is not a greenhouse gas.\n- Argon: Argon is not produced by burning and is not a greenhouse gas.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d2ea444c-11b2-5b88-9306-a5be1d6edd71",
+       "label": "A",
+       "content": "Oxygen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4393b5d6-619f-5fe4-ba61-147665fe4472",
+       "label": "B",
+       "content": "Carbon(IV) oxide",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "319ee192-ad33-5359-bd3d-c66e7c26c756",
+       "label": "C",
+       "content": "Nitrogen",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ae658030-3f14-59a5-a7e3-b686d95cbd71",
+       "label": "D",
+       "content": "Argon",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a3d3b1c7-d745-5460-b882-145dfe87ea76",
+     "key": "chem-ev-03",
+     "stem": "Carbon(II) oxide from a generator running in a closed room is dangerous because it",
+     "image_url": null,
+     "explanation": "CO binds about 200 times more strongly than oxygen to haemoglobin, causing drowsiness and death.\n\n**Why the other options are wrong**\n\n- causes acid rain: Carbon(II) oxide does not form acid rain.\n- destroys the ozone layer: CFCs destroy ozone.\n- has a strong choking smell that damages the lungs: Carbon(II) oxide is odourless, which makes it more dangerous.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1d54568f-df65-55a7-a3a1-b156ad3cd456",
+       "label": "A",
+       "content": "causes acid rain",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "723648b7-3d02-5f22-9f06-b2c15f42d193",
+       "label": "B",
+       "content": "destroys the ozone layer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "58216af6-e689-57cd-8bf4-e4a9ee59445d",
+       "label": "C",
+       "content": "combines with haemoglobin and stops the blood carrying oxygen",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "79b58658-3108-52f6-9a59-731d461a07d9",
+       "label": "D",
+       "content": "has a strong choking smell that damages the lungs",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "22d0558a-eff9-5c1c-ae11-6747baa0a337",
+     "key": "chem-ev-04",
+     "stem": "Eutrophication of a lake is caused mainly by",
+     "image_url": null,
+     "explanation": "Nutrients cause algal blooms; when the algae die, bacteria decomposing them use up the dissolved oxygen.\n\n**Why the other options are wrong**\n\n- sulphur(IV) oxide from factories: Sulphur(IV) oxide causes acid rain.\n- carbon(IV) oxide from vehicles: Carbon(IV) oxide causes global warming.\n- oil spills from ships: Oil spills coat water and wildlife; they do not cause algal blooms.",
+     "position": 4,
+     "options": [
+      {
+       "id": "3ec92fd3-f67c-53e0-9985-15f2fc55d5e3",
+       "label": "A",
+       "content": "sulphur(IV) oxide from factories",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6d28a52e-9a26-55d5-8ec1-6777a9c5e417",
+       "label": "B",
+       "content": "carbon(IV) oxide from vehicles",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "300c466a-3150-53ce-a52f-c6713bbbb27f",
+       "label": "C",
+       "content": "oil spills from ships",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "709d1cc5-dabc-5214-b7d3-01e44338bef1",
+       "label": "D",
+       "content": "nitrates and phosphates from fertilisers and detergents",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2cf4dc23-16f6-5047-9c73-e60aa658c8c8",
+     "key": "chem-ev-05",
+     "stem": "Chlorofluorocarbons (CFCs) harm the environment mainly by",
+     "image_url": null,
+     "explanation": "UV light releases chlorine atoms from CFCs; these destroy ozone, letting more harmful UV reach the ground.\n\n**Why the other options are wrong**\n\n- causing acid rain: CFCs do not form acids in rain.\n- poisoning fish in rivers: CFCs are not the main river pollutants.\n- making water hard: Hardness is caused by calcium and magnesium ions.",
+     "position": 5,
+     "options": [
+      {
+       "id": "0790c450-49e1-5d7a-a3f7-029322f2b52f",
+       "label": "A",
+       "content": "destroying ozone in the upper atmosphere",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8053acf3-6225-5cee-8212-f48e136b0da4",
+       "label": "B",
+       "content": "causing acid rain",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0d584835-e195-5aa5-a71a-fdb3df357c6c",
+       "label": "C",
+       "content": "poisoning fish in rivers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5fd7bb10-ae45-5ada-8a4c-7a61e0f567de",
+       "label": "D",
+       "content": "making water hard",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8e217615-9dfd-54ef-9d8b-e5bf181b4371",
+   "topic": "Practical Chemistry Skills",
+   "title": "Practical Chemistry Skills: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on practical chemistry skills, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 173,
+   "questions": [
+    {
+     "id": "74211ad6-9abd-538d-9571-9d64ffbdba6a",
+     "key": "chem-px-01",
+     "stem": "A solution, acidified with dilute hydrochloric acid, gives a white precipitate with barium chloride solution. The anion present is",
+     "image_url": null,
+     "explanation": "Ba²⁺ + SO₄²⁻ → BaSO₄(s), a white precipitate insoluble in acid.\n\n**Why the other options are wrong**\n\n- chloride, Cl⁻: Chloride is tested with acidified silver nitrate.\n- carbonate, CO₃²⁻: The acid removes carbonate ions, which fizz instead.\n- nitrate, NO₃⁻: Nitrate is tested by the brown-ring test.",
+     "position": 1,
+     "options": [
+      {
+       "id": "fcbf4962-19b1-5541-a99e-cbbff6add840",
+       "label": "A",
+       "content": "chloride, Cl⁻",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2c457db0-7518-5d08-901b-c8d3b0e67257",
+       "label": "B",
+       "content": "sulphate, SO₄²⁻",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2f67c795-5e26-51bc-9124-75d3898808dd",
+       "label": "C",
+       "content": "carbonate, CO₃²⁻",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c0b303db-7995-5aed-a687-0ec7455785df",
+       "label": "D",
+       "content": "nitrate, NO₃⁻",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "97df3fd6-9fcf-5c8d-bd9f-cfe8c944abe5",
+     "key": "chem-px-02",
+     "stem": "Which test shows that a salt contains the ammonium ion, NH₄⁺?",
+     "image_url": null,
+     "explanation": "NH₄⁺ + OH⁻ → NH₃ + H₂O on warming; ammonia is the only common alkaline gas.\n\n**Why the other options are wrong**\n\n- Adding dilute acid gives a gas that turns lime water milky: That shows a carbonate.\n- Adding silver nitrate gives a white precipitate: That shows a chloride.\n- A flame test gives a lilac colour: That shows potassium.",
+     "position": 2,
+     "options": [
+      {
+       "id": "392c2673-14e1-505e-a990-220a77c0951b",
+       "label": "A",
+       "content": "Adding dilute acid gives a gas that turns lime water milky",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "41e1f5ef-e5d4-5648-ab60-486d01abaacb",
+       "label": "B",
+       "content": "Adding silver nitrate gives a white precipitate",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9eeb85c8-4f4d-5986-8386-3ffff3716630",
+       "label": "C",
+       "content": "Warming with sodium hydroxide solution gives a gas that turns damp red litmus blue",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8fbb7b3c-6791-52bd-91fa-329fa9aced84",
+       "label": "D",
+       "content": "A flame test gives a lilac colour",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6ef79da6-82d5-5cb2-b329-7d29a771e49f",
+     "key": "chem-px-03",
+     "stem": "A solution gives a white precipitate with NaOH(aq) that dissolves in excess, and a white precipitate with NH₃(aq) that also dissolves in excess. The cation is",
+     "image_url": null,
+     "explanation": "Only zinc hydroxide dissolves in excess of both reagents (zincate with NaOH, a complex ion with NH₃).\n\n**Why the other options are wrong**\n\n- Al³⁺: Aluminium hydroxide does not dissolve in excess ammonia.\n- Pb²⁺: Lead(II) hydroxide does not dissolve in excess ammonia.\n- Ca²⁺: Calcium hydroxide does not dissolve in excess NaOH, and ammonia gives no precipitate.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1baf51b5-d605-5f94-910c-090aa6f23a69",
+       "label": "A",
+       "content": "Al³⁺",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1aa99586-a174-53fd-a046-7525d039dc94",
+       "label": "B",
+       "content": "Pb²⁺",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0f970c9c-fc51-520f-b1db-012ef82e4ae2",
+       "label": "C",
+       "content": "Ca²⁺",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1708f6a1-9f83-55dc-841c-74c0c7af982f",
+       "label": "D",
+       "content": "Zn²⁺",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "99a7abc7-e874-5f50-9791-ca33cde274ac",
+     "key": "chem-px-04",
+     "stem": "A solution acidified with dilute nitric acid gives a white precipitate with silver nitrate solution, soluble in excess ammonia. The anion present is",
+     "image_url": null,
+     "explanation": "Ag⁺ + Cl⁻ → AgCl(s), a white precipitate that dissolves in excess aqueous ammonia.\n\n**Why the other options are wrong**\n\n- iodide, I⁻: Silver iodide is yellow and insoluble in ammonia.\n- bromide, Br⁻: Silver bromide is cream and only slightly soluble in ammonia.\n- sulphate, SO₄²⁻: Sulphate is tested with acidified barium chloride.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4a23f16b-30c1-58f0-9e07-c37145404cf6",
+       "label": "A",
+       "content": "chloride, Cl⁻",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "306e3637-3b4d-5896-a2a6-4fc3ceb4bf96",
+       "label": "B",
+       "content": "iodide, I⁻",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "002653ec-9618-5d26-a4f5-2ddef56565ad",
+       "label": "C",
+       "content": "bromide, Br⁻",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cf747e25-94b5-59e0-bc47-ea23de4995f1",
+       "label": "D",
+       "content": "sulphate, SO₄²⁻",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b17b6874-26dd-569e-84eb-56fedbc96d8b",
+     "key": "chem-px-05",
+     "stem": "Which burette reading is correctly recorded?",
+     "image_url": null,
+     "explanation": "A burette is read to ±0.05 cm³, so readings are given to two decimal places with the last digit 0 or 5.\n\n**Why the other options are wrong**\n\n- 23.4 cm³: Burette readings are recorded to two decimal places.\n- 23 cm³: A whole number loses the precision of the burette.\n- 23.405 cm³: A burette cannot be read to three decimal places.",
+     "position": 5,
+     "options": [
+      {
+       "id": "1ed55134-d638-558b-82ca-d004c0ed4a71",
+       "label": "A",
+       "content": "23.4 cm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e01f60aa-77cc-5351-83a1-88221023a1e1",
+       "label": "B",
+       "content": "23.40 cm³",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2d704d1e-8e46-5a93-91a5-a89a43f16fec",
+       "label": "C",
+       "content": "23 cm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "23ddac82-72c9-54e4-9718-efa59b0a117b",
+       "label": "D",
+       "content": "23.405 cm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "9226c122ddbc"
+}
