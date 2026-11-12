@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The structure of government under the 1971 Republican Constitution</title>
+<desc id="d">The 1971 Constitution created an executive President who was both head of state and head of government, with a Vice-President and a Prime Minister to assist him, ministers, a unicameral House of Representatives with Paramount Chief members, and a Supreme Court as the final court of appeal, replacing the Privy Council.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Republican Constitution, 1971</text>
+<rect x="190.0" y="60.0" width="420.0" height="70.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="84.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Executive President</text>
+<text x="400.0" y="106.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">head of state AND head of government</text>
+<rect x="60.0" y="175.0" width="240.0" height="60.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="180.0" y="205.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Vice-President</text>
+<rect x="320.0" y="175.0" width="160.0" height="60.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="205.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Prime Minister</text>
+<rect x="500.0" y="175.0" width="240.0" height="60.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="620.0" y="205.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ministers / Cabinet</text>
+<line x1="400.0" y1="136.0" x2="180.0" y2="169.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="400.0" y1="136.0" x2="400.0" y2="169.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="400.0" y1="136.0" x2="620.0" y2="169.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="65.0" y="290.0" width="330.0" height="80.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="230.0" y="309.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Parliament</text>
+<text x="230.0" y="330.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">elected members +</text>
+<text x="230.0" y="351.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Paramount Chief members</text>
+<rect x="425.0" y="290.0" width="330.0" height="80.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="590.0" y="309.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Judiciary</text>
+<text x="590.0" y="330.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Supreme Court: final appeal</text>
+<text x="590.0" y="351.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(no more Privy Council)</text>
+<text x="400.0" y="448.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Power concentrated in the President; it paved the way for the one-party state of 1978.</text>
+</svg>

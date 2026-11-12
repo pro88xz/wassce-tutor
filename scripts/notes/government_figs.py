@@ -865,6 +865,471 @@ def corporation_control():
     return s
 
 
+# ═══ Group 4: Sierra Leone political history ════════════════════════════════
+
+def timeline(s: Svg, items, x=170, y0=84, step=56, col=BLUE, size=15, text_w=None):
+    """Vertical timeline: items are (year, line1, line2|None, colour|None)."""
+    y_end = y0 + step * (len(items) - 1)
+    s.line(x, y0 - 16, x, y_end + 16, color=MUTED, width=3)
+    for k, it in enumerate(items):
+        yr, l1, l2 = it[0], it[1], it[2]
+        c = it[3] if len(it) > 3 and it[3] else col
+        y = y0 + k * step
+        s.circle(x, y, 9, fill="#ffffff", stroke=c, width=3)
+        s.text(x - 22, y, yr, size=size + 1, weight="bold", color=c, anchor="end")
+        if l2:
+            s.text(x + 24, y - 10, l1, size=size, weight="bold", color=INK, anchor="start")
+            s.text(x + 24, y + 11, l2, size=size - 1, color=MUTED, anchor="start")
+        else:
+            s.text(x + 24, y, l1, size=size, weight="bold", color=INK, anchor="start")
+
+
+@fig
+def mende_structure():
+    s = Svg(800, 500, "Political organisation of the Mende before colonial rule",
+            "Mende country was divided into many independent chiefdoms. Each was ruled by a chief (mahei), chosen from "
+            "ruling families and advised by a council of elders and sub-chiefs, with a speaker as the chief's deputy and "
+            "spokesman. Section chiefs, town chiefs and village heads ruled smaller units. The Poro society made laws, "
+            "settled disputes, regulated war and trade and checked the chief; the Sande society trained girls. Warriors "
+            "were important because chiefdoms often expanded by war.")
+    heading(s, "A Mende chiefdom before colonial rule")
+    ch = box(s, 400, 100, 280, 66, ["Chief (mahei)", "from a ruling family"], col=BLUE, fill=F_BLUE, size=17)
+    co = box(s, 150, 200, 230, 70, ["Council of elders", "and sub-chiefs: advise"], col=GREEN, fill=F_GREEN, size=15)
+    sp = box(s, 650, 200, 230, 70, ["Speaker", "chief's deputy and", "spokesman"], col=GREEN, fill=F_GREEN, size=15)
+    se = box(s, 400, 220, 220, 56, ["Section chiefs"], col=BLUE, fill="#ffffff", size=16)
+    tc = box(s, 400, 310, 220, 56, ["Town chiefs"], col=BLUE, fill="#ffffff", size=16)
+    vh = box(s, 400, 400, 220, 56, ["Village heads"], col=BLUE, fill="#ffffff", size=16)
+    link(s, ch, co, color=GREEN)
+    link(s, ch, sp, color=GREEN)
+    link(s, ch, se, color=BLUE)
+    link(s, se, tc, color=BLUE)
+    link(s, tc, vh, color=BLUE)
+    po = box(s, 140, 360, 220, 110, ["Poro society", "laws, courts, war", "and trade; checks", "the chief"], col=ORANGE, fill=F_AMBER, size=15)
+    wa = box(s, 660, 360, 220, 110, ["Warriors", "defence and", "expansion of", "the chiefdom"], col=RED, fill=F_RED, size=15)
+    note(s, "Many small independent chiefdoms, not one Mende kingdom; women could rule.", 482, size=14)
+    return s
+
+
+@fig
+def temne_structure():
+    s = Svg(800, 500, "Political organisation of the Temne before colonial rule",
+            "Temne chiefdoms were ruled by a paramount chief with titles such as Bai or Obai, chosen from ruling houses. "
+            "Before installation the chief-elect went through kantha, a period of seclusion and instruction directed by "
+            "societies such as the Ragbenle or Poro. The chief was regarded as sacred and was advised by title-holders "
+            "and elders; sub-chiefs ruled sections, towns and villages.")
+    heading(s, "A Temne chiefdom before colonial rule")
+    so = box(s, 150, 105, 240, 90, ["Ragbenle / Poro", "select and install", "the chief"], col=ORANGE, fill=F_AMBER, size=15)
+    ka = box(s, 400, 105, 200, 90, ["Kantha", "seclusion and", "instruction"], col=PURPLE, fill=F_PURPLE, size=15)
+    ch = box(s, 650, 105, 240, 90, ["Paramount chief", "titles: Bai, Obai;", "sacred ruler"], col=BLUE, fill=F_BLUE, size=15)
+    arrow(s, 272, 105, 296, 105, color=ORANGE)
+    arrow(s, 502, 105, 526, 105, color=PURPLE)
+    tt = box(s, 400, 250, 250, 70, ["Title-holders, elders", "advise the chief"], col=GREEN, fill=F_GREEN, size=15)
+    sc = box(s, 650, 250, 220, 56, ["Sub-chiefs"], col=BLUE, fill="#ffffff", size=16)
+    tc = box(s, 650, 340, 220, 56, ["Town chiefs"], col=BLUE, fill="#ffffff", size=16)
+    vh = box(s, 650, 430, 220, 56, ["Village heads"], col=BLUE, fill="#ffffff", size=16)
+    link(s, ch, tt, color=GREEN)
+    link(s, ch, sc, color=BLUE)
+    link(s, sc, tc, color=BLUE)
+    link(s, tc, vh, color=BLUE)
+    box(s, 140, 330, 230, 110, ["Rituals and", "religion bind", "chief and people;", "Islam in the north"], col=TEAL, fill=F_TEAL, size=15)
+    return s
+
+
+@fig
+def colonial_timeline():
+    s = Svg(800, 560, "Key dates in the making of colonial Sierra Leone",
+            "1787 settlers arrive at the Province of Freedom; 1792 Nova Scotian settlers and Freetown under the Sierra "
+            "Leone Company; 1800 Jamaican Maroons arrive; 1808 Sierra Leone becomes a British Crown Colony; from 1808 "
+            "Liberated Africans are landed in Freetown; 1863 Executive and Legislative Councils; 1896 the hinterland is "
+            "declared a Protectorate; 1898 the Hut Tax War.")
+    heading(s, "From settlement to Colony and Protectorate")
+    timeline(s, [("1787", "Black Poor settlers: Province of Freedom", "sponsored by abolitionists such as Granville Sharp", None),
+                 ("1792", "Nova Scotian settlers; Freetown founded", "run by the Sierra Leone Company", None),
+                 ("1800", "Jamaican Maroons arrive", None, None),
+                 ("1808", "Sierra Leone becomes a Crown Colony", "Liberated Africans landed in Freetown", RED),
+                 ("1863", "Executive and Legislative Councils", "created for the Colony", None),
+                 ("1896", "Protectorate declared over the hinterland", "ruled indirectly through chiefs", RED),
+                 ("1898", "Hut Tax War", "Bai Bureh in the north; rising in Mende country", ORANGE),
+                 ("1924", "Slater Constitution", "first elected members", None)],
+             x=150, y0=88, step=62)
+    return s
+
+
+@fig
+def indirect_rule_chain():
+    s = Svg(800, 500, "Indirect rule in the Sierra Leone Protectorate",
+            "Under indirect rule, orders passed from the Secretary of State for the Colonies in London to the Governor in "
+            "Freetown, then to District Commissioners in the Protectorate districts, then to the paramount chiefs, who "
+            "ruled their people through traditional institutions, collected tax, kept order and ran native courts.")
+    heading(s, "The chain of command under indirect rule")
+    chain = [("Secretary of State for the Colonies", "London: overall policy", PURPLE, F_PURPLE),
+             ("Governor", "Freetown: head of the colonial government", BLUE, F_BLUE),
+             ("District Commissioners", "British officers supervising each district", BLUE, F_BLUE),
+             ("Paramount Chiefs", "rule chiefdoms; collect tax; keep order; courts", ORANGE, F_AMBER),
+             ("Sub-chiefs and people", "section, town and village chiefs", GREEN, F_GREEN)]
+    prev = None
+    for k, (a, b, col, fill) in enumerate(chain):
+        bb = box(s, 400, 95 + k * 88, 480, 64, [a, b], col=col, fill=fill, size=16)
+        if prev:
+            link(s, prev, bb, color=MUTED)
+        prev = bb
+    s.text(712, 270, "British", size=14, weight="bold", color=BLUE, anchor="start")
+    s.text(712, 288, "officials", size=14, weight="bold", color=BLUE, anchor="start")
+    s.text(712, 400, "African", size=14, weight="bold", color=ORANGE, anchor="start")
+    s.text(712, 418, "rulers", size=14, weight="bold", color=ORANGE, anchor="start")
+    return s
+
+
+@fig
+def slater_legco():
+    s = Svg(800, 470, "The Legislative Council under the 1924 Slater Constitution",
+            "The Governor presided over a Legislative Council with an official majority. For the first time three "
+            "members were elected, by Colony voters on a limited franchise (two for Freetown, one for the rural Colony), "
+            "and three Paramount Chiefs were nominated to represent the Protectorate. Other unofficial members were "
+            "nominated by the Governor.")
+    heading(s, "Legislative Council, 1924")
+    box(s, 400, 90, 300, 56, ["Governor", "presides; can veto"], col=PURPLE, fill=F_PURPLE, size=16)
+    box(s, 400, 185, 600, 70, ["Official members (the majority)", "colonial officials who vote with the Governor"], col=BLUE, fill=F_BLUE, size=16)
+    s.text(400, 255, "Unofficial members", size=17, weight="bold", color=INK)
+    box(s, 160, 330, 220, 100, ["3 elected", "Colony voters,", "limited franchise"], col=GREEN, fill=F_GREEN, size=16)
+    box(s, 400, 330, 220, 100, ["3 Paramount", "Chiefs", "nominated"], col=ORANGE, fill=F_AMBER, size=16)
+    box(s, 640, 330, 220, 100, ["Others", "nominated by", "the Governor"], col=MUTED, fill=F_GREY, size=16)
+    note(s, "First elected members and first Protectorate voice, but power stayed with officials.", 440, size=14)
+    return s
+
+
+@fig
+def self_government_steps():
+    s = Svg(800, 560, "Steps towards self-government in Sierra Leone",
+            "1863 Executive and Legislative Councils. 1924 Slater Constitution: first elected members. 1951 constitution: "
+            "African majority in the Legislative Council, with Protectorate members. 1953 ministerial system. 1956 "
+            "constitution: House of Representatives; 1957 elections. 1958: Premier and an all-Sierra Leonean Executive "
+            "Council. 1960 Lancaster House conference. 27 April 1961 independence.")
+    heading(s, "Constitutional steps to independence")
+    timeline(s, [("1863", "Executive and Legislative Councils", "officials and nominated members only", None),
+                 ("1924", "Slater Constitution", "first 3 elected members; 3 chiefs nominated", None),
+                 ("1951", "Stevenson / Beresford-Stooke Constitution", "African majority; Protectorate represented", GREEN),
+                 ("1953", "Ministerial system", "Africans head government departments", GREEN),
+                 ("1956", "House of Representatives replaces LegCo", "elections held in 1957", GREEN),
+                 ("1958", "Premier; all-Sierra Leonean Executive Council", "internal self-government", GREEN),
+                 ("1960", "Lancaster House conference, London", "independence terms agreed", ORANGE),
+                 ("1961", "Independence, 27 April", "Sir Milton Margai, Prime Minister", RED)],
+             x=150, y0=88, step=62)
+    return s
+
+
+@fig
+def nationalism_causes():
+    s = Svg(800, 480, "Causes of nationalism in Sierra Leone",
+            "Nationalism grew from racial discrimination and exclusion of Africans from senior posts, economic "
+            "exploitation and colonial taxes, the spread of Western education, the effects of the Second World War "
+            "(ex-servicemen and the Atlantic Charter), the press, Pan-Africanism and the independence of India (1947) "
+            "and Ghana (1957), and the Colony–Protectorate divide.")
+    heading(s, "Why Sierra Leoneans demanded self-rule")
+    c = box(s, 400, 250, 210, 76, ["NATIONALISM"], col=PURPLE, fill=F_PURPLE, size=19)
+    items = [(130, 95, "Discrimination", ["Africans kept out", "of senior posts"]),
+             (400, 90, "Economic grievances", ["low prices, taxes,", "foreign firms"]),
+             (670, 95, "Western education", ["educated elite,", "ideas of liberty"]),
+             (115, 250, "Second World War", ["ex-servicemen;", "Atlantic Charter"]),
+             (685, 250, "The press", ["newspapers spread", "ideas"]),
+             (130, 405, "Pan-Africanism", ["Garvey, Du Bois,", "Wallace-Johnson"]),
+             (400, 410, "Example of others", ["India 1947,", "Ghana 1957"]),
+             (670, 405, "Colonial taxes", ["Hut Tax War memory;", "1955–56 riots"])]
+    for x, y, head, lines in items:
+        b = box(s, x, y, 220, 80, [head] + lines, col=BLUE, fill=F_BLUE, size=15)
+        link(s, b, c, color=MUTED, width=1.8)
+    return s
+
+
+@fig
+def independence_road():
+    s = Svg(800, 560, "The road to independence, 1938 to 1961",
+            "1938 West African Youth League (Wallace-Johnson). 1950 National Council of Sierra Leone. 1951 SLPP founded "
+            "and wins the election. 1955 Freetown strike and riots; 1955–56 tax riots in the north. 1957 general "
+            "election won by the SLPP. 1958 Albert Margai and Siaka Stevens form the PNP. 1960 United National Front and "
+            "the Lancaster House conference; Stevens refuses to sign and forms the APC. 27 April 1961 independence.")
+    heading(s, "Movements, parties and milestones")
+    timeline(s, [("1938", "West African Youth League branch", "I. T. A. Wallace-Johnson", None),
+                 ("1950", "National Council of Sierra Leone", "Colony party (Bankole-Bright)", None),
+                 ("1951", "SLPP founded; wins the election", "Dr Milton Margai", GREEN),
+                 ("1955", "Freetown strike and riots", "followed by tax riots in the north", ORANGE),
+                 ("1957", "General election", "SLPP wins most seats", GREEN),
+                 ("1958", "People's National Party (PNP)", "Albert Margai and Siaka Stevens", None),
+                 ("1960", "United Front; Lancaster House", "Stevens refuses to sign; APC formed", RED),
+                 ("1961", "Independence, 27 April", None, RED)],
+             x=150, y0=88, step=62)
+    return s
+
+
+@fig
+def constitution_1961():
+    s = Svg(800, 500, "The structure of government under the 1961 Constitution",
+            "At independence the British monarch remained head of state, represented by a Governor-General. Executive "
+            "power lay with the Prime Minister and Cabinet, drawn from and responsible to the House of Representatives, "
+            "which included elected members and Paramount Chief members. The judiciary included the Supreme Court and the "
+            "Court of Appeal, with final appeals to the Judicial Committee of the Privy Council in London.")
+    heading(s, "Independence Constitution, 1961: a parliamentary system")
+    q = box(s, 400, 88, 360, 56, ["The British monarch", "head of state"], col=PURPLE, fill=F_PURPLE, size=16)
+    gg = box(s, 400, 175, 360, 56, ["Governor-General", "represents the monarch (ceremonial)"], col=PURPLE, fill="#ffffff", size=15)
+    pm = box(s, 400, 270, 360, 64, ["Prime Minister and Cabinet", "real executive power"], col=BLUE, fill=F_BLUE, size=16)
+    hr = box(s, 400, 370, 400, 64, ["House of Representatives", "elected members + Paramount Chief members"], col=GREEN, fill=F_GREEN, size=15)
+    link(s, q, gg, color=PURPLE)
+    link(s, gg, pm, color=MUTED)
+    s.line(400, 302, 400, 338, color=GREEN, width=2.5)
+    s.text(412, 320, "responsible to", size=13, color=MUTED, anchor="start")
+    box(s, 115, 270, 190, 100, ["Courts", "Supreme Court,", "Court of Appeal"], col=ORANGE, fill=F_AMBER, size=15)
+    box(s, 685, 270, 190, 100, ["Final appeal", "Privy Council,", "London"], col=RED, fill=F_RED, size=15)
+    note(s, "Also: fundamental rights, Public Service Commission, entrenched clauses.", 460, size=14)
+    return s
+
+
+@fig
+def events_1961_1971():
+    s = Svg(800, 560, "Key political events from 1961 to 1971",
+            "1961 independence under Sir Milton Margai. 1964 Milton Margai dies; Albert Margai becomes Prime Minister. "
+            "1967 the APC wins the general election; Brigadier Lansana declares martial law; officers form the National "
+            "Reformation Council. 1968 the Sergeants' revolt ends NRC rule and Siaka Stevens becomes Prime Minister. "
+            "1971 attempted coup; Sierra Leone becomes a republic on 19 April and Stevens executive President.")
+    heading(s, "From independence to republic")
+    timeline(s, [("1961", "Independence", "Sir Milton Margai, Prime Minister (SLPP)", GREEN),
+                 ("1964", "Milton Margai dies", "Albert Margai becomes Prime Minister", GREEN),
+                 ("1966", "Albert Margai proposes a one-party state", "and a republic; strong opposition", ORANGE),
+                 ("1967", "APC wins the election; Stevens sworn in", "Brigadier Lansana declares martial law", RED),
+                 ("1967", "National Reformation Council (NRC)", "military rule, Juxon-Smith", RED),
+                 ("1968", "Sergeants' revolt ends NRC rule", "Siaka Stevens becomes Prime Minister (APC)", BLUE),
+                 ("1971", "Attempted coup (March)", None, ORANGE),
+                 ("1971", "Republic declared, 19 April", "Stevens executive President", BLUE)],
+             x=150, y0=88, step=62)
+    return s
+
+
+@fig
+def republic_reasons():
+    s = Svg(800, 450, "Why Sierra Leone became a republic in 1971",
+            "Reasons included ending the British monarch's role as head of state, completing independence and national "
+            "pride, ending appeals to the Privy Council, the APC's long-standing republican aims, the wish for a strong "
+            "executive president to deal with coups and instability, and following the example of other African states.")
+    heading(s, "Reasons for the 1971 republic")
+    c = box(s, 400, 230, 220, 76, ["REPUBLIC", "19 April 1971"], col=PURPLE, fill=F_PURPLE, size=18)
+    items = [(140, 95, "Full sovereignty", ["no foreign", "head of state"]),
+             (660, 95, "National pride", ["a Sierra Leonean", "head of state"]),
+             (120, 230, "Final court at home", ["end Privy Council", "appeals"]),
+             (680, 230, "APC policy", ["long-standing", "republican aim"]),
+             (140, 370, "Strong executive", ["deal with coups", "and instability"]),
+             (660, 370, "African trend", ["Ghana 1960,", "others followed"])]
+    for x, y, head, lines in items:
+        b = box(s, x, y, 230, 80, [head] + lines, col=BLUE, fill=F_BLUE, size=15)
+        link(s, b, c, color=MUTED)
+    return s
+
+
+@fig
+def constitution_1971():
+    s = Svg(800, 470, "The structure of government under the 1971 Republican Constitution",
+            "The 1971 Constitution created an executive President who was both head of state and head of government, "
+            "with a Vice-President and a Prime Minister to assist him, ministers, a unicameral House of Representatives "
+            "with Paramount Chief members, and a Supreme Court as the final court of appeal, replacing the Privy Council.")
+    heading(s, "Republican Constitution, 1971")
+    pr = box(s, 400, 95, 420, 70, ["Executive President", "head of state AND head of government"], col=BLUE, fill=F_BLUE, size=16)
+    vp = box(s, 180, 205, 240, 60, ["Vice-President"], col=BLUE, fill="#ffffff", size=15)
+    pm = box(s, 400, 205, 160, 60, ["Prime Minister"], col=BLUE, fill="#ffffff", size=15)
+    mn = box(s, 620, 205, 240, 60, ["Ministers / Cabinet"], col=BLUE, fill="#ffffff", size=15)
+    for b in (vp, pm, mn):
+        link(s, pr, b, color=BLUE)
+    box(s, 230, 330, 330, 80, ["Parliament", "elected members +", "Paramount Chief members"], col=GREEN, fill=F_GREEN, size=15)
+    box(s, 590, 330, 330, 80, ["Judiciary", "Supreme Court: final appeal", "(no more Privy Council)"], col=ORANGE, fill=F_AMBER, size=15)
+    note(s, "Power concentrated in the President; it paved the way for the one-party state of 1978.", 448, size=14)
+    return s
+
+
+@fig
+def one_party_1978():
+    s = Svg(800, 500, "Government under the 1978 one-party Constitution",
+            "The 1978 Constitution made the APC the only lawful party. Its national conference chose a single candidate "
+            "for President, who served a seven-year term with a First and a Second Vice-President. All Members of "
+            "Parliament had to be APC members, though several APC candidates could compete in a constituency. Opposition "
+            "parties were banned.")
+    heading(s, "The one-party state, 1978 to 1991")
+    ap = box(s, 400, 95, 440, 70, ["All People's Congress (APC)", "the only lawful party"], col=RED, fill=F_RED, size=17)
+    pr = box(s, 400, 200, 440, 70, ["President", "single party candidate; seven-year term"], col=BLUE, fill=F_BLUE, size=16)
+    v1 = box(s, 240, 300, 260, 56, ["First Vice-President"], col=BLUE, fill="#ffffff", size=15)
+    v2 = box(s, 560, 300, 260, 56, ["Second Vice-President"], col=BLUE, fill="#ffffff", size=15)
+    pa = box(s, 400, 400, 520, 70, ["Parliament: APC members only", "several APC candidates could contest a seat"], col=GREEN, fill=F_GREEN, size=15)
+    link(s, ap, pr, color=RED)
+    link(s, pr, v1, color=BLUE)
+    link(s, pr, v2, color=BLUE)
+    s.path("M 180 95 C 60 95, 60 400, 140 400", color=RED, width=2.4)
+    arrow(s, 130, 400, 140, 400, color=RED)
+    s.label(70, 250, "party controls", size=13, color=RED)
+    note(s, "Opposition parties banned; ended by the 1991 Constitution.", 482, size=14)
+    return s
+
+
+@fig
+def constitutions_compare():
+    s = Svg(800, 470, "Sierra Leone's constitutions compared",
+            "1961: parliamentary system, British monarch as head of state, multi-party, final appeal to the Privy Council. "
+            "1971: republic with an executive President, multi-party in law, Supreme Court final. 1978: executive "
+            "President, one-party state (APC), Supreme Court final. 1991: executive President, multi-party democracy, "
+            "two-term limit, Supreme Court final.")
+    heading(s, "Four constitutions at a glance")
+    rows = ["System", "Head of state", "Parties", "Final court"]
+    cols = [("1961", ["parliamentary", "British monarch", "multi-party", "Privy Council"], GREEN, F_GREEN),
+            ("1971", ["presidential", "executive President", "multi-party", "Supreme Court"], BLUE, F_BLUE),
+            ("1978", ["presidential", "executive President", "one party (APC)", "Supreme Court"], RED, F_RED),
+            ("1991", ["presidential", "President, 2 terms", "multi-party", "Supreme Court"], PURPLE, F_PURPLE)]
+    for k, r in enumerate(rows):
+        s.text(72, 160 + k * 74, r, size=15, weight="bold", color=INK)
+    for j, (yr, vals, col, fill) in enumerate(cols):
+        x = 215 + j * 160
+        box(s, x, 92, 148, 50, [yr], col=col, fill=fill, size=19)
+        for k, v in enumerate(vals):
+            box(s, x, 160 + k * 74, 148, 56, [v], col=col, fill="#ffffff", size=14, bold_first=False)
+    return s
+
+
+@fig
+def power_timeline():
+    s = Svg(800, 560, "Who has governed Sierra Leone since independence",
+            "SLPP 1961 to 1967 (Milton Margai, Albert Margai); military NRC 1967 to 1968; APC 1968 to 1992 (Siaka Stevens, "
+            "then Joseph Momoh from 1985; one-party state 1978 to 1991); military NPRC 1992 to 1996 (Valentine Strasser, "
+            "Julius Maada Bio); SLPP 1996 to 2007 (Ahmad Tejan Kabbah, interrupted by the AFRC junta 1997 to 1998); APC "
+            "2007 to 2018 (Ernest Bai Koroma); SLPP from 2018 (Julius Maada Bio).")
+    heading(s, "Governments since independence")
+    x0, x1, y0a, y1a = 140, 760, 1961, 2026
+    def X(y):
+        return x0 + (y - y0a) * (x1 - x0) / (y1a - y0a)
+    rows = [(1961, 1967, "SLPP", "Milton Margai, Albert Margai", GREEN, F_GREEN),
+            (1967, 1968, "Military", "NRC", RED, F_RED),
+            (1968, 1992, "APC", "Stevens; Momoh from 1985", BLUE, F_BLUE),
+            (1992, 1996, "Military", "NPRC: Strasser, Bio", RED, F_RED),
+            (1996, 2007, "SLPP", "Kabbah (AFRC junta 1997–98)", GREEN, F_GREEN),
+            (2007, 2018, "APC", "Ernest Bai Koroma", BLUE, F_BLUE),
+            (2018, 2026, "SLPP", "Julius Maada Bio", GREEN, F_GREEN)]
+    for k, (a, b, party, who, col, fill) in enumerate(rows):
+        y = 92 + k * 56
+        s.text(126, y, f"{a}–{b if b < 2026 else ''}".rstrip("–") if b < 2026 else f"{a}–", size=15, weight="bold", color=col, anchor="end")
+        s.rect(X(a), y - 16, max(X(b) - X(a), 8), 32, fill=fill, stroke=col, width=2, rx=4)
+        if X(b) < 520:
+            s.text(X(b) + 10, y - 7, party, size=15, weight="bold", color=col, anchor="start")
+            s.text(X(b) + 10, y + 11, who, size=13, color=MUTED, anchor="start")
+        else:
+            s.text(X(a) - 10, y - 7, party, size=15, weight="bold", color=col, anchor="end")
+            s.text(X(a) - 10, y + 11, who, size=13, color=MUTED, anchor="end")
+    s.rect(X(1978), 475, X(1991) - X(1978), 14, fill=F_RED, stroke=RED, width=1.5, rx=3)
+    s.text((X(1978) + X(1991)) / 2, 504, "one-party state 1978–91", size=13, color=RED)
+    for yr in (1961, 1971, 1981, 1991, 2001, 2011, 2021):
+        s.line(X(yr), 460, X(yr), 468, color=MUTED, width=1.5)
+        s.text(X(yr), 530, str(yr), size=13, color=MUTED)
+    s.line(x0, 464, x1, 464, color=MUTED, width=1.5)
+    return s
+
+
+@fig
+def party_formation():
+    s = Svg(800, 560, "Formation of political parties in Sierra Leone",
+            "1950 National Council of Sierra Leone; 1951 Sierra Leone People's Party; 1958 People's National Party; 1960 "
+            "All People's Congress; 1978 to 1991 only the APC allowed; 1991 multi-party politics restored and new parties "
+            "registered; 2002 RUF Party contests elections; 2006 People's Movement for Democratic Change; 2017 National "
+            "Grand Coalition and Coalition for Change; 2022 the PPRC Act and Political Parties Act.")
+    heading(s, "When the main parties were formed")
+    timeline(s, [("1950", "National Council of Sierra Leone (NCSL)", "Colony-based; Bankole-Bright", None),
+                 ("1951", "Sierra Leone People's Party (SLPP)", "Milton Margai; symbol: palm tree; green", GREEN),
+                 ("1958", "People's National Party (PNP)", "Albert Margai, Siaka Stevens", None),
+                 ("1960", "All People's Congress (APC)", "Siaka Stevens; symbol: rising sun; red", BLUE),
+                 ("1978", "One-party state: only the APC", "until the 1991 Constitution", RED),
+                 ("1991", "Multi-party politics restored", "new parties registered", None),
+                 ("2006", "People's Movement for Democratic Change", "Charles Margai (PMDC)", None),
+                 ("2017", "NGC and C4C formed", "Kandeh Yumkella; Samuel Sam-Sumana", None)],
+             x=150, y0=88, step=62)
+    return s
+
+
+@fig
+def coups_timeline():
+    s = Svg(800, 520, "Military interventions in Sierra Leone",
+            "March 1967: Brigadier David Lansana seizes power, then officers form the National Reformation Council under "
+            "Andrew Juxon-Smith. April 1968: the Sergeants' revolt (Anti-Corruption Revolutionary Movement) restores "
+            "civilian rule. April 1992: the National Provisional Ruling Council under Valentine Strasser overthrows "
+            "President Momoh. January 1996: Julius Maada Bio replaces Strasser, then hands over to the elected Kabbah. "
+            "May 1997: the Armed Forces Revolutionary Council under Johnny Paul Koroma; ECOMOG restores Kabbah in 1998.")
+    heading(s, "Coups and juntas")
+    timeline(s, [("1967", "Lansana coup; National Reformation Council", "Juxon-Smith rules by decree", RED),
+                 ("1968", "Sergeants' revolt", "civilian rule restored; Stevens PM", BLUE),
+                 ("1992", "NPRC coup, 29 April", "Captain Valentine Strasser", RED),
+                 ("1996", "Palace coup: Julius Maada Bio", "hands over to elected President Kabbah", ORANGE),
+                 ("1997", "AFRC coup, 25 May", "Johnny Paul Koroma; joins with the RUF", RED),
+                 ("1998", "ECOMOG restores Kabbah", "Nigerian-led ECOWAS force", GREEN),
+                 ("Since", "No successful coup since 1998", "elected governments, 2002 onward", GREEN)],
+             x=150, y0=88, step=62)
+    return s
+
+
+@fig
+def civil_war_timeline():
+    s = Svg(800, 600, "Sierra Leone's civil war and peace process, 1991 to 2002",
+            "March 1991 the RUF attacks from Liberia at Bomaru, Kailahun District. 1996 Abidjan Peace Accord. 1997 AFRC "
+            "coup and AFRC–RUF junta. 1998 ECOMOG restores Kabbah. January 1999 attack on Freetown. July 1999 Lomé Peace "
+            "Agreement. October 1999 UNAMSIL created. May 2000 UN peacekeepers taken hostage; British intervention; "
+            "Sankoh arrested. 2000–2001 Abuja agreements and disarmament. 18 January 2002 the war declared over.")
+    heading(s, "War and peace, 1991–2002")
+    timeline(s, [("1991", "RUF invades from Liberia, 23 March", "Bomaru, Kailahun District; Foday Sankoh", RED),
+                 ("1996", "Elections; Abidjan Peace Accord", "fighting continues", ORANGE),
+                 ("1997", "AFRC coup; junta with the RUF", "Kabbah goes into exile", RED),
+                 ("1998", "ECOMOG restores Kabbah", None, GREEN),
+                 ("1999", "6 January attack on Freetown", "Lomé Peace Agreement, 7 July", ORANGE),
+                 ("1999", "UNAMSIL peacekeepers", "UN mission created in October", GREEN),
+                 ("2000", "UN peacekeepers taken hostage", "British troops intervene; Sankoh arrested", ORANGE),
+                 ("2002", "War declared over, 18 January", "disarmament complete; elections in May", GREEN)],
+             x=150, y0=88, step=64)
+    return s
+
+
+@fig
+def chiefdom_structure():
+    s = Svg(800, 500, "Chiefdom administration in Sierra Leone today",
+            "Each of the 190 chiefdoms is headed by a Paramount Chief, elected for life by the chiefdom councillors from "
+            "candidates of the recognised ruling houses, under the Chieftaincy Act 2009. The chief works with the "
+            "Chiefdom Council and the Chiefdom Speaker; section chiefs and town chiefs govern smaller units. Paramount "
+            "Chiefs also sit in Parliament, one for each provincial district.")
+    heading(s, "Inside a chiefdom")
+    rh = box(s, 140, 100, 220, 76, ["Ruling houses", "supply candidates"], col=ORANGE, fill=F_AMBER, size=15)
+    cc = box(s, 400, 100, 220, 76, ["Chiefdom councillors", "vote (elect for life)"], col=GREEN, fill=F_GREEN, size=15)
+    pc = box(s, 660, 100, 220, 76, ["Paramount Chief", "head of chiefdom"], col=BLUE, fill=F_BLUE, size=16)
+    arrow(s, 252, 100, 286, 100, color=MUTED)
+    arrow(s, 512, 100, 546, 100, color=MUTED)
+    sp = box(s, 660, 215, 220, 60, ["Chiefdom Speaker", "deputy to the chief"], col=BLUE, fill="#ffffff", size=15)
+    cn = box(s, 400, 215, 220, 60, ["Chiefdom Council", "advises, by-laws"], col=GREEN, fill="#ffffff", size=15)
+    sc = box(s, 660, 320, 220, 56, ["Section chiefs"], col=BLUE, fill="#ffffff", size=16)
+    tc = box(s, 660, 410, 220, 56, ["Town and village chiefs"], col=BLUE, fill="#ffffff", size=15)
+    link(s, pc, sp, color=BLUE)
+    link(s, sp, sc, color=BLUE)
+    link(s, sc, tc, color=BLUE)
+    link(s, pc, cn, color=GREEN)
+    box(s, 230, 370, 340, 120, ["Paramount Chief duties", "keep peace and order; custodian", "of land and custom; support", "councils; sit in Parliament (PCMPs)"], col=PURPLE, fill=F_PURPLE, size=14)
+    return s
+
+
+@fig
+def local_gov_history():
+    s = Svg(800, 520, "Milestones in local government in Sierra Leone",
+            "1893 Freetown becomes a municipality with a city council. 1896 the Protectorate is ruled through chiefs. 1937 "
+            "Native Administration reforms with chiefdom treasuries. 1940s District Councils and the Protectorate "
+            "Assembly. 1972 local councils abolished. 2004 Local Government Act revives councils, with elections. 2017 "
+            "new chiefdoms bring the total to 190. 2022 a new Local Government Act.")
+    heading(s, "Local government through the years")
+    timeline(s, [("1893", "Freetown becomes a municipality", "a city council for the capital", None),
+                 ("1896", "Protectorate ruled through chiefs", "indirect rule", None),
+                 ("1937", "Native Administration reforms", "chiefdom treasuries and estimates", None),
+                 ("1940s", "District Councils; Protectorate Assembly", None, None),
+                 ("1972", "Local councils abolished", "power centralised in Freetown", RED),
+                 ("2004", "Local Government Act", "councils revived; elections held", GREEN),
+                 ("2017", "New chiefdoms: 190 in total", None, None),
+                 ("2022", "Local Government Act 2022", "replaces the 2004 Act", GREEN)],
+             x=150, y0=88, step=58)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:

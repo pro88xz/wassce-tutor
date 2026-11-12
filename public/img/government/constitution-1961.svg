@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The structure of government under the 1961 Constitution</title>
+<desc id="d">At independence the British monarch remained head of state, represented by a Governor-General. Executive power lay with the Prime Minister and Cabinet, drawn from and responsible to the House of Representatives, which included elected members and Paramount Chief members. The judiciary included the Supreme Court and the Court of Appeal, with final appeals to the Judicial Committee of the Privy Council in London.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7c3aed"/></marker><marker id="a7c3aeds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#7c3aed"/></marker></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Independence Constitution, 1961: a parliamentary system</text>
+<rect x="220.0" y="60.0" width="360.0" height="56.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="77.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The British monarch</text>
+<text x="400.0" y="99.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">head of state</text>
+<rect x="220.0" y="147.0" width="360.0" height="56.0" rx="12" fill="#ffffff" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="164.5" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Governor-General</text>
+<text x="400.0" y="185.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">represents the monarch (ceremonial)</text>
+<rect x="220.0" y="238.0" width="360.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="259.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Prime Minister and Cabinet</text>
+<text x="400.0" y="281.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">real executive power</text>
+<rect x="200.0" y="338.0" width="400.0" height="64.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="359.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">House of Representatives</text>
+<text x="400.0" y="380.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">elected members + Paramount Chief members</text>
+<line x1="400.0" y1="122.0" x2="400.0" y2="141.0" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a7c3aed)"/>
+<line x1="400.0" y1="209.0" x2="400.0" y2="232.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="400.0" y1="302.0" x2="400.0" y2="338.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round"/>
+<text x="412.0" y="320.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">responsible to</text>
+<rect x="20.0" y="220.0" width="190.0" height="100.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="115.0" y="249.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Courts</text>
+<text x="115.0" y="270.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Supreme Court,</text>
+<text x="115.0" y="291.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Court of Appeal</text>
+<rect x="590.0" y="220.0" width="190.0" height="100.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="685.0" y="249.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Final appeal</text>
+<text x="685.0" y="270.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Privy Council,</text>
+<text x="685.0" y="291.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">London</text>
+<text x="400.0" y="460.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Also: fundamental rights, Public Service Commission, entrenched clauses.</text>
+</svg>

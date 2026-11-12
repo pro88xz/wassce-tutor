@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Sierra Leone&#x27;s civil war and peace process, 1991 to 2002</title>
+<desc id="d">March 1991 the RUF attacks from Liberia at Bomaru, Kailahun District. 1996 Abidjan Peace Accord. 1997 AFRC coup and AFRC–RUF junta. 1998 ECOMOG restores Kabbah. January 1999 attack on Freetown. July 1999 Lomé Peace Agreement. October 1999 UNAMSIL created. May 2000 UN peacekeepers taken hostage; British intervention; Sankoh arrested. 2000–2001 Abuja agreements and disarmament. 18 January 2002 the war declared over.</desc>
+<defs></defs>
+<rect width="800" height="600" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">War and peace, 1991–2002</text>
+<line x1="150.0" y1="72.0" x2="150.0" y2="552.0" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+<circle cx="150.0" cy="88.0" r="9.0" fill="#ffffff" stroke="#dc2626" stroke-width="3"/>
+<text x="128.0" y="88.0" font-size="16" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">1991</text>
+<text x="174.0" y="78.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">RUF invades from Liberia, 23 March</text>
+<text x="174.0" y="99.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Bomaru, Kailahun District; Foday Sankoh</text>
+<circle cx="150.0" cy="152.0" r="9.0" fill="#ffffff" stroke="#ea580c" stroke-width="3"/>
+<text x="128.0" y="152.0" font-size="16" fill="#ea580c" text-anchor="end" dominant-baseline="middle" font-weight="bold">1996</text>
+<text x="174.0" y="142.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Elections; Abidjan Peace Accord</text>
+<text x="174.0" y="163.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">fighting continues</text>
+<circle cx="150.0" cy="216.0" r="9.0" fill="#ffffff" stroke="#dc2626" stroke-width="3"/>
+<text x="128.0" y="216.0" font-size="16" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">1997</text>
+<text x="174.0" y="206.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">AFRC coup; junta with the RUF</text>
+<text x="174.0" y="227.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Kabbah goes into exile</text>
+<circle cx="150.0" cy="280.0" r="9.0" fill="#ffffff" stroke="#15803d" stroke-width="3"/>
+<text x="128.0" y="280.0" font-size="16" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">1998</text>
+<text x="174.0" y="280.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">ECOMOG restores Kabbah</text>
+<circle cx="150.0" cy="344.0" r="9.0" fill="#ffffff" stroke="#ea580c" stroke-width="3"/>
+<text x="128.0" y="344.0" font-size="16" fill="#ea580c" text-anchor="end" dominant-baseline="middle" font-weight="bold">1999</text>
+<text x="174.0" y="334.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">6 January attack on Freetown</text>
+<text x="174.0" y="355.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Lomé Peace Agreement, 7 July</text>
+<circle cx="150.0" cy="408.0" r="9.0" fill="#ffffff" stroke="#15803d" stroke-width="3"/>
+<text x="128.0" y="408.0" font-size="16" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">1999</text>
+<text x="174.0" y="398.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">UNAMSIL peacekeepers</text>
+<text x="174.0" y="419.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">UN mission created in October</text>
+<circle cx="150.0" cy="472.0" r="9.0" fill="#ffffff" stroke="#ea580c" stroke-width="3"/>
+<text x="128.0" y="472.0" font-size="16" fill="#ea580c" text-anchor="end" dominant-baseline="middle" font-weight="bold">2000</text>
+<text x="174.0" y="462.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">UN peacekeepers taken hostage</text>
+<text x="174.0" y="483.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">British troops intervene; Sankoh arrested</text>
+<circle cx="150.0" cy="536.0" r="9.0" fill="#ffffff" stroke="#15803d" stroke-width="3"/>
+<text x="128.0" y="536.0" font-size="16" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">2002</text>
+<text x="174.0" y="526.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">War declared over, 18 January</text>
+<text x="174.0" y="547.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">disarmament complete; elections in May</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Chiefdom administration in Sierra Leone today</title>
+<desc id="d">Each of the 190 chiefdoms is headed by a Paramount Chief, elected for life by the chiefdom councillors from candidates of the recognised ruling houses, under the Chieftaincy Act 2009. The chief works with the Chiefdom Council and the Chiefdom Speaker; section chiefs and town chiefs govern smaller units. Paramount Chiefs also sit in Parliament, one for each provincial district.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Inside a chiefdom</text>
+<rect x="30.0" y="62.0" width="220.0" height="76.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="140.0" y="89.5" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ruling houses</text>
+<text x="140.0" y="110.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">supply candidates</text>
+<rect x="290.0" y="62.0" width="220.0" height="76.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="89.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Chiefdom councillors</text>
+<text x="400.0" y="110.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">vote (elect for life)</text>
+<rect x="550.0" y="62.0" width="220.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="660.0" y="89.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Paramount Chief</text>
+<text x="660.0" y="111.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">head of chiefdom</text>
+<line x1="252.0" y1="100.0" x2="286.0" y2="100.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="512.0" y1="100.0" x2="546.0" y2="100.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="550.0" y="185.0" width="220.0" height="60.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="660.0" y="204.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Chiefdom Speaker</text>
+<text x="660.0" y="225.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">deputy to the chief</text>
+<rect x="290.0" y="185.0" width="220.0" height="60.0" rx="12" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="204.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Chiefdom Council</text>
+<text x="400.0" y="225.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">advises, by-laws</text>
+<rect x="550.0" y="292.0" width="220.0" height="56.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="660.0" y="320.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Section chiefs</text>
+<rect x="550.0" y="382.0" width="220.0" height="56.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="660.0" y="410.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Town and village chiefs</text>
+<line x1="660.0" y1="144.0" x2="660.0" y2="179.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="660.0" y1="251.0" x2="660.0" y2="286.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="660.0" y1="354.0" x2="660.0" y2="376.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="660.0" y1="144.0" x2="400.0" y2="179.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="60.0" y="310.0" width="340.0" height="120.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="230.0" y="340.0" font-size="14" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Paramount Chief duties</text>
+<text x="230.0" y="360.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">keep peace and order; custodian</text>
+<text x="230.0" y="380.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">of land and custom; support</text>
+<text x="230.0" y="400.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">councils; sit in Parliament (PCMPs)</text>
+</svg>

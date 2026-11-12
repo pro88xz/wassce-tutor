@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Government under the 1978 one-party Constitution</title>
+<desc id="d">The 1978 Constitution made the APC the only lawful party. Its national conference chose a single candidate for President, who served a seven-year term with a First and a Second Vice-President. All Members of Parliament had to be APC members, though several APC candidates could compete in a constituency. Opposition parties were banned.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The one-party state, 1978 to 1991</text>
+<rect x="180.0" y="60.0" width="440.0" height="70.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="400.0" y="83.5" font-size="17" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">All People&#x27;s Congress (APC)</text>
+<text x="400.0" y="106.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the only lawful party</text>
+<rect x="180.0" y="165.0" width="440.0" height="70.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="189.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">President</text>
+<text x="400.0" y="211.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">single party candidate; seven-year term</text>
+<rect x="110.0" y="272.0" width="260.0" height="56.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="240.0" y="300.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">First Vice-President</text>
+<rect x="430.0" y="272.0" width="260.0" height="56.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="560.0" y="300.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Second Vice-President</text>
+<rect x="140.0" y="365.0" width="520.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="389.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Parliament: APC members only</text>
+<text x="400.0" y="410.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">several APC candidates could contest a seat</text>
+<line x1="400.0" y1="136.0" x2="400.0" y2="159.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<line x1="400.0" y1="241.0" x2="240.0" y2="266.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="400.0" y1="241.0" x2="560.0" y2="266.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<path d="M 180 95 C 60 95, 60 400, 140 400" stroke="#dc2626" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="130.0" y1="400.0" x2="140.0" y2="400.0" stroke="#dc2626" stroke-width="2.6" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<rect x="14.0" y="238.5" width="111.9" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="70.0" y="250.0" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">party controls</text>
+<text x="400.0" y="482.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Opposition parties banned; ended by the 1991 Constitution.</text>
+</svg>

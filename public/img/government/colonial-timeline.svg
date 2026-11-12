@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Key dates in the making of colonial Sierra Leone</title>
+<desc id="d">1787 settlers arrive at the Province of Freedom; 1792 Nova Scotian settlers and Freetown under the Sierra Leone Company; 1800 Jamaican Maroons arrive; 1808 Sierra Leone becomes a British Crown Colony; from 1808 Liberated Africans are landed in Freetown; 1863 Executive and Legislative Councils; 1896 the hinterland is declared a Protectorate; 1898 the Hut Tax War.</desc>
+<defs></defs>
+<rect width="800" height="560" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">From settlement to Colony and Protectorate</text>
+<line x1="150.0" y1="72.0" x2="150.0" y2="538.0" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+<circle cx="150.0" cy="88.0" r="9.0" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+<text x="128.0" y="88.0" font-size="16" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">1787</text>
+<text x="174.0" y="78.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Black Poor settlers: Province of Freedom</text>
+<text x="174.0" y="99.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">sponsored by abolitionists such as Granville Sharp</text>
+<circle cx="150.0" cy="150.0" r="9.0" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+<text x="128.0" y="150.0" font-size="16" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">1792</text>
+<text x="174.0" y="140.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Nova Scotian settlers; Freetown founded</text>
+<text x="174.0" y="161.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">run by the Sierra Leone Company</text>
+<circle cx="150.0" cy="212.0" r="9.0" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+<text x="128.0" y="212.0" font-size="16" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">1800</text>
+<text x="174.0" y="212.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Jamaican Maroons arrive</text>
+<circle cx="150.0" cy="274.0" r="9.0" fill="#ffffff" stroke="#dc2626" stroke-width="3"/>
+<text x="128.0" y="274.0" font-size="16" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">1808</text>
+<text x="174.0" y="264.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Sierra Leone becomes a Crown Colony</text>
+<text x="174.0" y="285.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Liberated Africans landed in Freetown</text>
+<circle cx="150.0" cy="336.0" r="9.0" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+<text x="128.0" y="336.0" font-size="16" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">1863</text>
+<text x="174.0" y="326.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Executive and Legislative Councils</text>
+<text x="174.0" y="347.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">created for the Colony</text>
+<circle cx="150.0" cy="398.0" r="9.0" fill="#ffffff" stroke="#dc2626" stroke-width="3"/>
+<text x="128.0" y="398.0" font-size="16" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">1896</text>
+<text x="174.0" y="388.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Protectorate declared over the hinterland</text>
+<text x="174.0" y="409.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">ruled indirectly through chiefs</text>
+<circle cx="150.0" cy="460.0" r="9.0" fill="#ffffff" stroke="#ea580c" stroke-width="3"/>
+<text x="128.0" y="460.0" font-size="16" fill="#ea580c" text-anchor="end" dominant-baseline="middle" font-weight="bold">1898</text>
+<text x="174.0" y="450.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Hut Tax War</text>
+<text x="174.0" y="471.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Bai Bureh in the north; rising in Mende country</text>
+<circle cx="150.0" cy="522.0" r="9.0" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+<text x="128.0" y="522.0" font-size="16" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">1924</text>
+<text x="174.0" y="512.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Slater Constitution</text>
+<text x="174.0" y="533.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">first elected members</text>
+</svg>

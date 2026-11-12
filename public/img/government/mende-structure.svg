@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Political organisation of the Mende before colonial rule</title>
+<desc id="d">Mende country was divided into many independent chiefdoms. Each was ruled by a chief (mahei), chosen from ruling families and advised by a council of elders and sub-chiefs, with a speaker as the chief&#x27;s deputy and spokesman. Section chiefs, town chiefs and village heads ruled smaller units. The Poro society made laws, settled disputes, regulated war and trade and checked the chief; the Sande society trained girls. Warriors were important because chiefdoms often expanded by war.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A Mende chiefdom before colonial rule</text>
+<rect x="260.0" y="67.0" width="280.0" height="66.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="88.5" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Chief (mahei)</text>
+<text x="400.0" y="111.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">from a ruling family</text>
+<rect x="35.0" y="165.0" width="230.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="150.0" y="189.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Council of elders</text>
+<text x="150.0" y="210.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">and sub-chiefs: advise</text>
+<rect x="535.0" y="165.0" width="230.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="650.0" y="179.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Speaker</text>
+<text x="650.0" y="200.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">chief&#x27;s deputy and</text>
+<text x="650.0" y="221.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">spokesman</text>
+<rect x="290.0" y="192.0" width="220.0" height="56.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="220.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Section chiefs</text>
+<rect x="290.0" y="282.0" width="220.0" height="56.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="310.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Town chiefs</text>
+<rect x="290.0" y="372.0" width="220.0" height="56.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="400.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Village heads</text>
+<line x1="400.0" y1="139.0" x2="150.0" y2="159.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<line x1="400.0" y1="139.0" x2="650.0" y2="159.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<line x1="400.0" y1="139.0" x2="400.0" y2="186.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="400.0" y1="254.0" x2="400.0" y2="276.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="400.0" y1="344.0" x2="400.0" y2="366.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="30.0" y="305.0" width="220.0" height="110.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="140.0" y="328.5" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Poro society</text>
+<text x="140.0" y="349.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">laws, courts, war</text>
+<text x="140.0" y="370.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">and trade; checks</text>
+<text x="140.0" y="391.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the chief</text>
+<rect x="550.0" y="305.0" width="220.0" height="110.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="660.0" y="328.5" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Warriors</text>
+<text x="660.0" y="349.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">defence and</text>
+<text x="660.0" y="370.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">expansion of</text>
+<text x="660.0" y="391.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the chiefdom</text>
+<text x="400.0" y="482.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Many small independent chiefdoms, not one Mende kingdom; women could rule.</text>
+</svg>

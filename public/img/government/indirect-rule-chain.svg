@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Indirect rule in the Sierra Leone Protectorate</title>
+<desc id="d">Under indirect rule, orders passed from the Secretary of State for the Colonies in London to the Governor in Freetown, then to District Commissioners in the Protectorate districts, then to the paramount chiefs, who ruled their people through traditional institutions, collected tax, kept order and ran native courts.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The chain of command under indirect rule</text>
+<rect x="160.0" y="63.0" width="480.0" height="64.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="84.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Secretary of State for the Colonies</text>
+<text x="400.0" y="106.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">London: overall policy</text>
+<rect x="160.0" y="151.0" width="480.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="172.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Governor</text>
+<text x="400.0" y="194.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Freetown: head of the colonial government</text>
+<line x1="400.0" y1="133.0" x2="400.0" y2="145.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="160.0" y="239.0" width="480.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="260.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">District Commissioners</text>
+<text x="400.0" y="282.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">British officers supervising each district</text>
+<line x1="400.0" y1="221.0" x2="400.0" y2="233.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="160.0" y="327.0" width="480.0" height="64.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="400.0" y="348.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Paramount Chiefs</text>
+<text x="400.0" y="370.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rule chiefdoms; collect tax; keep order; courts</text>
+<line x1="400.0" y1="309.0" x2="400.0" y2="321.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="160.0" y="415.0" width="480.0" height="64.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="436.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sub-chiefs and people</text>
+<text x="400.0" y="458.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">section, town and village chiefs</text>
+<line x1="400.0" y1="397.0" x2="400.0" y2="409.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="712.0" y="270.0" font-size="14" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">British</text>
+<text x="712.0" y="288.0" font-size="14" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">officials</text>
+<text x="712.0" y="400.0" font-size="14" fill="#ea580c" text-anchor="start" dominant-baseline="middle" font-weight="bold">African</text>
+<text x="712.0" y="418.0" font-size="14" fill="#ea580c" text-anchor="start" dominant-baseline="middle" font-weight="bold">rulers</text>
+</svg>
