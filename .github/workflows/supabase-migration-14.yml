@@ -1,0 +1,94 @@
+name: Apply tutor monthly pricing migration (14)
+
+# Run by hand from the Actions tab, on main, after the release that contains
+# the migration is live. Removes the NLe 100 cap on tutor fees (now monthly),
+# alerts admins about tutor and affiliate applications, fixes affiliate sign-up,
+# adds pause/restore for tutors, and stops the affiliate commission trigger from
+# ever blocking a Monime payment. It does not change how payments work.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wassce-tutor-monthly-pricing-migration
+  cancel-in-progress: false
+
+jobs:
+  apply-monthly-pricing:
+    name: Apply tutor monthly pricing migration
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    environment: production
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v5
+
+      - name: Validate target migration and database secret
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          test -n "$SUPABASE_DB_URL" || { echo "Missing SUPABASE_DB_URL"; exit 1; }
+          test -s "supabase/migrations/20261112_14_tutor_monthly_pricing_and_admin.sql" || { echo "Migration file missing"; exit 1; }
+          grep -qiE '^[[:space:]]*begin;' supabase/migrations/20261112_14_tutor_monthly_pricing_and_admin.sql
+          grep -qiE '^[[:space:]]*commit;' supabase/migrations/20261112_14_tutor_monthly_pricing_and_admin.sql
+
+      - name: Install PostgreSQL client
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes postgresql-client
+
+      - name: Apply migration once and record checksum
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          MIGRATION_VERSION: "20261112_14_tutor_monthly_pricing_and_admin"
+        run: |
+          set -euo pipefail
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 <<'SQL'
+          create schema if not exists wassce_internal;
+          revoke all on schema wassce_internal from public, anon, authenticated;
+          create table if not exists wassce_internal.deployed_migrations (
+            version text primary key,
+            sha256 text not null,
+            applied_at timestamptz not null default now()
+          );
+          revoke all on all tables in schema wassce_internal from public, anon, authenticated;
+          SQL
+
+          APPLIED="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select exists (select 1 from wassce_internal.deployed_migrations where version = '$MIGRATION_VERSION');" | tr -d '[:space:]')"
+          if [[ "$APPLIED" == "t" ]]; then
+            echo "Migration $MIGRATION_VERSION is already recorded; nothing to do."
+            exit 0
+          fi
+
+          CHECKSUM="$(sha256sum supabase/migrations/20261112_14_tutor_monthly_pricing_and_admin.sql | cut -d ' ' -f 1)"
+          {
+            echo "begin;"
+            echo "do \$\$ begin if exists (select 1 from wassce_internal.deployed_migrations where version = '$MIGRATION_VERSION') then raise exception 'Migration already applied'; end if; end \$\$;"
+            sed '/^[[:space:]]*begin;[[:space:]]*$/Id; /^[[:space:]]*commit;[[:space:]]*$/Id;' supabase/migrations/20261112_14_tutor_monthly_pricing_and_admin.sql
+            printf "insert into wassce_internal.deployed_migrations(version, sha256) values ('%s', '%s');\\n" "$MIGRATION_VERSION" "$CHECKSUM"
+            echo "commit;"
+          } | psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1
+
+          echo "Migration applied and recorded successfully."
+
+      - name: Verify the migration took effect
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            (select count(*) from pg_constraint where conname in ('tutor_application_subjects_price_positive','tutor_subjects_price_positive','tutor_bookings_price_positive')),
+            (select count(*) from pg_constraint where contype = 'c' and conrelid in ('public.tutor_application_subjects'::regclass,'public.tutor_subjects'::regclass,'public.tutor_bookings'::regclass) and pg_get_constraintdef(oid) ilike '%price_nle%' and pg_get_constraintdef(oid) ilike '%100%'),
+            pg_get_functiondef('public.apply_as_affiliate()'::regprocedure) ilike '%gen_random_bytes%',
+            pg_get_functiondef('public.record_first_payment_affiliate_commission()'::regprocedure) ilike '%exception when others%',
+            has_function_privilege('authenticated','public.set_tutor_status(uuid,text)','execute'),
+            has_function_privilege('anon','public.set_tutor_status(uuid,text)','execute'));" | tr -d '[:space:]')"
+          echo "price checks, 100-caps left, uses gen_random_bytes, payment trigger guarded, admins can pause, anon can pause: $RESULT"
+          test "$RESULT" = "3,0,f,t,t,f" || { echo "Migration 14 checks did not match 3,0,f,t,t,f"; exit 1; }
