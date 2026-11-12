@@ -2714,58 +2714,6 @@
       "auto_sync": true
     },
     {
-      "file": "commerce-nature-and-scope.md",
-      "subject": "Commerce",
-      "topic": "nature-and-scope-of-commerce",
-      "title": "Nature and scope of commerce",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 14,
-      "sort_order": 1,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-production-and-occupations.md",
-      "subject": "Commerce",
-      "topic": "production-and-occupations",
-      "title": "Production and occupations",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 13,
-      "sort_order": 2,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-aids-to-trade.md",
-      "subject": "Commerce",
-      "topic": "aids-to-trade",
-      "title": "Aids to trade",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 14,
-      "sort_order": 3,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-forms-of-business-units.md",
-      "subject": "Commerce",
-      "topic": "forms-of-business-units",
-      "title": "Forms of business units",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 15,
-      "sort_order": 4,
-      "auto_sync": true
-    },
-    {
       "file": "commerce-sources-of-business-capital.md",
       "subject": "Commerce",
       "topic": "sources-of-business-capital",
@@ -2958,58 +2906,6 @@
       "original_author": "WASSCE Tutor editorial team",
       "est_minutes": 15,
       "sort_order": 19,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-nature-and-scope-2.md",
-      "subject": "Commerce",
-      "topic": "nature-and-scope-of-commerce",
-      "title": "Advanced scope of commerce: distribution channels and commercial efficiency",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 15,
-      "sort_order": 2,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-production-and-occupations-2.md",
-      "subject": "Commerce",
-      "topic": "production-and-occupations",
-      "title": "Specialisation, division of labour and productivity",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 14,
-      "sort_order": 2,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-aids-to-trade-2.md",
-      "subject": "Commerce",
-      "topic": "aids-to-trade",
-      "title": "How aids to trade work together in a modern supply chain",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 14,
-      "sort_order": 2,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-forms-of-business-units-2.md",
-      "subject": "Commerce",
-      "topic": "forms-of-business-units",
-      "title": "Choosing a form of business: liability, control and continuity",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 15,
-      "sort_order": 2,
       "auto_sync": true
     },
     {
@@ -3206,6 +3102,126 @@
       "est_minutes": 15,
       "sort_order": 2,
       "auto_sync": true
+    },
+    {
+      "file": "commerce-scope-1.md",
+      "subject": "Commerce",
+      "topic": "nature-and-scope-of-commerce",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "What commerce is: meaning, branches and scope",
+      "est_minutes": 7,
+      "sort_order": 1,
+      "retire": [
+        "advanced-scope-of-commerce-distribution-channels-and-commercial-efficiency",
+        "nature-and-scope-of-commerce"
+      ]
+    },
+    {
+      "file": "commerce-scope-2.md",
+      "subject": "Commerce",
+      "topic": "nature-and-scope-of-commerce",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Functions and importance of commerce, and its problems in West Africa",
+      "est_minutes": 7,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-production-1.md",
+      "subject": "Commerce",
+      "topic": "production-and-occupations",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Production, occupations and the factors of production",
+      "est_minutes": 6,
+      "sort_order": 1,
+      "retire": [
+        "production-and-occupations",
+        "specialisation-division-of-labour-and-productivity"
+      ]
+    },
+    {
+      "file": "commerce-production-2.md",
+      "subject": "Commerce",
+      "topic": "production-and-occupations",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Division of labour, specialisation and exchange",
+      "est_minutes": 7,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-aids-1.md",
+      "subject": "Commerce",
+      "topic": "aids-to-trade",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Aids to trade: removing the hindrances to trade",
+      "est_minutes": 7,
+      "sort_order": 1,
+      "retire": [
+        "aids-to-trade",
+        "how-aids-to-trade-work-together-in-a-modern-supply-chain"
+      ]
+    },
+    {
+      "file": "commerce-aids-2.md",
+      "subject": "Commerce",
+      "topic": "aids-to-trade",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Aids to trade in practice: working together, new aids and problems",
+      "est_minutes": 7,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-business-units-1.md",
+      "subject": "Commerce",
+      "topic": "forms-of-business-units",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Sole proprietorship and partnership",
+      "est_minutes": 8,
+      "sort_order": 1,
+      "retire": [
+        "choosing-a-form-of-business-liability-control-and-continuity",
+        "forms-of-business-units"
+      ]
+    },
+    {
+      "file": "commerce-business-units-2.md",
+      "subject": "Commerce",
+      "topic": "forms-of-business-units",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Companies, cooperatives, public enterprises and business combinations",
+      "est_minutes": 8,
+      "sort_order": 2
     },
     {
       "file": "geography-introduction-to-geography-1.md",

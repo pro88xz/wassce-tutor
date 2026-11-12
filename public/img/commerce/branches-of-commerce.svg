@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The branches of commerce</title>
+<desc id="d">Commerce is divided into trade and aids to trade. Trade is home trade (retail and wholesale) or foreign trade (import, export and entrepôt). Aids to trade are transport, communication, banking, insurance, warehousing and advertising.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="760" height="480" rx="20" fill="#f8fafc"/>
+<rect x="280.0" y="33.0" width="200.0" height="54.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="380.0" y="60.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Commerce</text>
+<rect x="105.0" y="140.0" width="190.0" height="50.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="200.0" y="165.0" font-size="19" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Trade</text>
+<rect x="465.0" y="140.0" width="220.0" height="50.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="575.0" y="165.0" font-size="19" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Aids to trade</text>
+<line x1="380.0" y1="93.0" x2="200.0" y2="134.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="380.0" y1="93.0" x2="575.0" y2="134.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="15.0" y="250.0" width="170.0" height="50.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="100.0" y="275.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Home trade</text>
+<rect x="215.0" y="250.0" width="170.0" height="50.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="300.0" y="275.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Foreign trade</text>
+<line x1="200.0" y1="196.0" x2="100.0" y2="244.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="200.0" y1="196.0" x2="300.0" y2="244.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="40.0" y="332.0" width="136.0" height="40.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="108.0" y="352.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">retail</text>
+<rect x="40.0" y="382.0" width="136.0" height="40.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="108.0" y="402.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">wholesale</text>
+<line x1="100.0" y1="300.0" x2="100.0" y2="312.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="100.0" y1="312.0" x2="24.0" y2="312.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="24.0" y1="312.0" x2="24.0" y2="402.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="24.0" y1="352.0" x2="36.0" y2="352.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="24.0" y1="402.0" x2="36.0" y2="402.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="240.0" y="334.0" width="136.0" height="36.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="308.0" y="352.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">import</text>
+<rect x="240.0" y="380.0" width="136.0" height="36.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="308.0" y="398.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">export</text>
+<rect x="240.0" y="426.0" width="136.0" height="36.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="308.0" y="444.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">entrepôt</text>
+<line x1="300.0" y1="300.0" x2="300.0" y2="312.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="300.0" y1="312.0" x2="224.0" y2="312.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="224.0" y1="312.0" x2="224.0" y2="444.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="224.0" y1="352.0" x2="236.0" y2="352.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="224.0" y1="398.0" x2="236.0" y2="398.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="224.0" y1="444.0" x2="236.0" y2="444.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="575.0" y1="192.0" x2="575.0" y2="222.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="505.0" y1="222.0" x2="650.0" y2="222.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="505.0" y1="222.0" x2="505.0" y2="238.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="650.0" y1="222.0" x2="650.0" y2="238.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="439.0" y="243.0" width="132.0" height="44.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="505.0" y="265.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">transport</text>
+<rect x="584.0" y="243.0" width="132.0" height="44.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="650.0" y="265.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">communication</text>
+<rect x="439.0" y="305.0" width="132.0" height="44.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="505.0" y="327.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">banking</text>
+<rect x="584.0" y="305.0" width="132.0" height="44.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="650.0" y="327.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">insurance</text>
+<rect x="439.0" y="367.0" width="132.0" height="44.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="505.0" y="389.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">warehousing</text>
+<rect x="584.0" y="367.0" width="132.0" height="44.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="650.0" y="389.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">advertising</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 320" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The evolution of money</title>
+<desc id="d">Money developed from barter, through commodity money such as cowries and salt, metal coins and paper notes, to bank money (cheques and cards) and electronic and mobile money.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="780" height="320" rx="20" fill="#f8fafc"/>
+<rect x="12.0" y="127.0" width="116.0" height="86.0" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="70.0" y="159.5" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Barter</text>
+<text x="70.0" y="180.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">goods for goods</text>
+<rect x="140.0" y="127.0" width="116.0" height="86.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="198.0" y="159.5" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Commodity</text>
+<text x="198.0" y="180.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cowries, salt, iron</text>
+<line x1="131.0" y1="170.0" x2="137.0" y2="170.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="268.0" y="127.0" width="116.0" height="86.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="326.0" y="159.5" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Coins</text>
+<text x="326.0" y="180.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">metal money</text>
+<line x1="259.0" y1="170.0" x2="265.0" y2="170.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="396.0" y="127.0" width="116.0" height="86.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="454.0" y="159.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Paper notes</text>
+<text x="454.0" y="180.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">bank notes</text>
+<line x1="387.0" y1="170.0" x2="393.0" y2="170.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="524.0" y="127.0" width="116.0" height="86.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="582.0" y="159.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Bank money</text>
+<text x="582.0" y="180.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cheques, cards</text>
+<line x1="515.0" y1="170.0" x2="521.0" y2="170.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="652.0" y="127.0" width="116.0" height="86.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="710.0" y="159.5" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Mobile money</text>
+<text x="710.0" y="180.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">phone payments</text>
+<line x1="643.0" y1="170.0" x2="649.0" y2="170.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="60.0" y1="260.0" x2="720.0" y2="260.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="390.0" y="288.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">time →</text>
+<text x="390.0" y="60.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">From barter to mobile money</text>
+</svg>

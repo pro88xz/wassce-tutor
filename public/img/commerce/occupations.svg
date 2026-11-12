@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Classification of occupations</title>
+<desc id="d">Occupations are industrial (extractive, manufacturing and construction), commercial (trade and aids to trade) or direct services (teachers, nurses, police).</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="760" height="400" rx="20" fill="#f8fafc"/>
+<rect x="270.0" y="34.0" width="220.0" height="52.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="380.0" y="60.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Occupations</text>
+<rect x="40.0" y="134.0" width="200.0" height="52.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="140.0" y="160.0" font-size="18" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Industrial</text>
+<line x1="380.0" y1="92.0" x2="140.0" y2="128.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="28.0" y="200.0" width="224.0" height="170.0" rx="10" fill="#ffffff" stroke="#15803d" stroke-width="2"/>
+<text x="140.0" y="232.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">extractive: farming, fishing, mining</text>
+<text x="140.0" y="264.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">manufacturing: milling, brewing</text>
+<text x="140.0" y="296.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">construction: roads, houses</text>
+<rect x="280.0" y="134.0" width="200.0" height="52.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="380.0" y="160.0" font-size="18" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Commercial</text>
+<line x1="380.0" y1="92.0" x2="380.0" y2="128.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="268.0" y="200.0" width="224.0" height="170.0" rx="10" fill="#ffffff" stroke="#ea580c" stroke-width="2"/>
+<text x="380.0" y="232.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">trade: retail, wholesale,</text>
+<text x="380.0" y="264.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">import and export</text>
+<text x="380.0" y="296.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">aids to trade: banking,</text>
+<text x="380.0" y="328.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">transport, insurance</text>
+<rect x="520.0" y="134.0" width="200.0" height="52.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="620.0" y="160.0" font-size="18" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Direct services</text>
+<line x1="380.0" y1="92.0" x2="620.0" y2="128.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="508.0" y="200.0" width="224.0" height="170.0" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+<text x="620.0" y="232.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">teachers, nurses, doctors</text>
+<text x="620.0" y="264.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">police, lawyers</text>
+<text x="620.0" y="296.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">hairdressers</text>
+</svg>

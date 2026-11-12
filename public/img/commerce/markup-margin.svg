@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Mark-up and margin</title>
+<desc id="d">Goods cost NLe 100 and sell for NLe 125, a gross profit of NLe 25. Mark-up is profit as a percentage of cost price: 25%. Margin is profit as a percentage of selling price: 20%.</desc>
+<defs></defs>
+<rect width="700" height="360" rx="20" fill="#f8fafc"/>
+<rect x="70.0" y="150.0" width="440.0" height="60.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="290.0" y="180.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">cost price NLe 100</text>
+<rect x="510.0" y="150.0" width="110.0" height="60.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="565.0" y="180.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">25</text>
+<text x="565.0" y="134.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">profit</text>
+<line x1="70.0" y1="236.0" x2="620.0" y2="236.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<polygon points="67.3,232.4 79.0,240.3 71.5,245.9" fill="#0f172a"/>
+<polygon points="624.5,236.0 611.2,240.7 611.2,231.3" fill="#0f172a"/>
+<rect x="245.9" y="223.0" width="198.2" height="26.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="345.0" y="236.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">selling price NLe 125</text>
+<text x="350.0" y="280.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">mark-up = 25 ÷ 100 × 100% = 25%   (profit on cost)</text>
+<text x="350.0" y="312.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">margin = 25 ÷ 125 × 100% = 20%   (profit on selling price)</text>
+<text x="350.0" y="50.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Same profit, two different percentages</text>
+</svg>

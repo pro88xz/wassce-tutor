@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Elements of a valid contract</title>
+<desc id="d">A valid contract needs offer and acceptance, consideration, capacity of the parties, intention to create legal relations, legality of purpose and genuine consent.</desc>
+<defs><marker id="a0f766e" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f766e"/></marker><marker id="a0f766es" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f766e"/></marker><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7c3aed"/></marker><marker id="a7c3aeds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#7c3aed"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="720" height="470" rx="20" fill="#f8fafc"/>
+<rect x="260.0" y="200.0" width="200.0" height="80.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="360.0" y="227.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Valid</text>
+<text x="360.0" y="253.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">contract</text>
+<rect x="265.0" y="38.0" width="190.0" height="54.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="360.0" y="65.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Offer</text>
+<line x1="360.0" y1="96.0" x2="360.0" y2="196.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="464.4" y="103.9" width="190.0" height="54.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="559.4" y="130.9" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Acceptance</text>
+<line x1="559.4" y1="161.9" x2="360.0" y2="196.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="513.6" y="251.9" width="190.0" height="54.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="608.6" y="278.9" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Consideration</text>
+<line x1="509.6" y1="278.9" x2="464.0" y2="240.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="375.6" y="370.7" width="190.0" height="54.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="470.6" y="397.7" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Capacity</text>
+<line x1="470.6" y1="366.7" x2="360.0" y2="284.0" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<rect x="154.4" y="366.7" width="190.0" height="62.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="249.4" y="387.2" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Intention to</text>
+<text x="249.4" y="408.2" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">create legal relations</text>
+<line x1="249.4" y1="362.7" x2="360.0" y2="284.0" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a7c3aed)"/>
+<rect x="16.4" y="251.9" width="190.0" height="54.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="111.4" y="278.9" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Legality</text>
+<line x1="210.4" y1="278.9" x2="256.0" y2="240.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<rect x="65.6" y="103.9" width="190.0" height="54.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="160.6" y="130.9" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Genuine consent</text>
+<line x1="160.6" y1="161.9" x2="360.0" y2="196.0" stroke="#0f766e" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f766e)"/>
+</svg>

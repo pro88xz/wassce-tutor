@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Payment by letter of credit</title>
+<desc id="d">1. The importer asks its bank to open a letter of credit. 2. The importer&#x27;s bank sends it to the exporter&#x27;s bank. 3. The exporter ships the goods and receives a bill of lading. 4. The exporter presents the documents and is paid. 5. The documents go to the importer&#x27;s bank. 6. The importer pays and receives the documents. 7. The importer collects the goods with the bill of lading.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="780" height="470" rx="20" fill="#f8fafc"/>
+<rect x="35.0" y="82.0" width="190.0" height="56.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="130.0" y="110.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Importer</text>
+<rect x="35.0" y="302.0" width="190.0" height="56.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="130.0" y="330.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Importer&#x27;s bank</text>
+<rect x="555.0" y="302.0" width="190.0" height="56.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="650.0" y="330.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Exporter&#x27;s bank</text>
+<rect x="555.0" y="82.0" width="190.0" height="56.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="650.0" y="110.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Exporter</text>
+<rect x="295.0" y="82.0" width="190.0" height="56.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="390.0" y="110.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Shipping line</text>
+<line x1="110.0" y1="142.0" x2="110.0" y2="298.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="68.6" y="208.5" width="82.8" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="110.0" y="220.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1 open L/C</text>
+<line x1="229.0" y1="340.0" x2="551.0" y2="340.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="301.3" y="328.5" width="177.4" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="390.0" y="340.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2 letter of credit sent</text>
+<line x1="551.0" y1="102.0" x2="489.0" y2="102.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="403.8" y="53.0" width="312.4" height="22.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="560.0" y="64.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3 goods shipped; exporter gets bill of lading</text>
+<line x1="670.0" y1="142.0" x2="670.0" y2="298.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="599.5" y="208.5" width="141.0" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="670.0" y="220.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4 documents → paid</text>
+<line x1="551.0" y1="372.0" x2="229.0" y2="372.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="326.8" y="360.5" width="126.5" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="390.0" y="372.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5 documents sent</text>
+<line x1="160.0" y1="298.0" x2="160.0" y2="142.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="111.3" y="238.5" width="97.4" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="160.0" y="250.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6 pays; gets</text>
+<rect x="122.2" y="256.5" width="75.5" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="160.0" y="268.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">documents</text>
+<line x1="291.0" y1="118.0" x2="229.0" y2="118.0" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<rect x="196.8" y="138.5" width="126.5" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="260.0" y="150.0" font-size="13" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7 collects goods</text>
+<text x="390.0" y="26.0" font-size="17" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">The banks guarantee payment for both sides</text>
+<text x="390.0" y="440.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">L/C = letter of credit</text>
+</svg>

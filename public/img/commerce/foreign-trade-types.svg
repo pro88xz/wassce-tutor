@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Import, export and entrepôt trade</title>
+<desc id="d">Sierra Leone imports goods from other countries and exports goods to them. In entrepôt trade, goods are imported into a country and re-exported to a third country, often with little processing.</desc>
+<defs><marker id="a0f766e" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f766e"/></marker><marker id="a0f766es" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f766e"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7c3aed"/></marker><marker id="a7c3aeds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#7c3aed"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="760" height="380" rx="20" fill="#f8fafc"/>
+<rect x="280.0" y="150.0" width="200.0" height="80.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="380.0" y="190.0" font-size="19" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sierra Leone</text>
+<rect x="15.0" y="82.0" width="170.0" height="56.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="100.0" y="110.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Country A</text>
+<rect x="575.0" y="82.0" width="170.0" height="56.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="660.0" y="110.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Country B</text>
+<rect x="575.0" y="262.0" width="170.0" height="56.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="660.0" y="290.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Country C</text>
+<line x1="188.0" y1="118.0" x2="276.0" y2="168.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<text x="220.0" y="168.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">import</text>
+<line x1="484.0" y1="168.0" x2="572.0" y2="118.0" stroke="#7c3aed" stroke-width="3" stroke-linecap="round" marker-end="url(#a7c3aed)"/>
+<text x="548.0" y="168.0" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">export</text>
+<line x1="188.0" y1="300.0" x2="276.0" y2="222.0" stroke="#0f766e" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 6" marker-end="url(#a0f766e)"/>
+<line x1="484.0" y1="222.0" x2="572.0" y2="290.0" stroke="#0f766e" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 6" marker-end="url(#a0f766e)"/>
+<rect x="15.0" y="272.0" width="170.0" height="56.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="100.0" y="300.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Country D</text>
+<text x="380.0" y="330.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">entrepôt: imported, then re-exported</text>
+<text x="380.0" y="36.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Foreign trade: goods crossing national borders</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 480" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Open and crossed cheques</title>
+<desc id="d">An open cheque can be cashed over the counter. A general crossing (two parallel lines) means it must be paid into a bank account. A special crossing names the bank. &#x27;Account payee only&#x27; means it can be paid only into the payee&#x27;s account.</desc>
+<defs></defs>
+<rect width="780" height="480" rx="20" fill="#f8fafc"/>
+<rect x="20.0" y="50.0" width="360.0" height="140.0" rx="8" fill="#fffdf5" stroke="#0f172a" stroke-width="2"/>
+<text x="34.0" y="72.0" font-size="13" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">ABC BANK  ·  Freetown</text>
+<text x="366.0" y="72.0" font-size="12" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">Date: 12/03/2026</text>
+<text x="34.0" y="102.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Pay: Kamara Hardware Ltd</text>
+<line x1="70.0" y1="108.0" x2="260.0" y2="108.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<text x="34.0" y="130.0" font-size="12" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Two thousand leones only</text>
+<rect x="270.0" y="114.0" width="96.0" height="26.0" rx="4" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<text x="318.0" y="127.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">NLe 2,000</text>
+<text x="366.0" y="176.0" font-size="14" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal" font-style="italic">F. Conteh</text>
+<text x="200.0" y="212.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Open: can be cashed at the counter</text>
+<rect x="400.0" y="50.0" width="360.0" height="140.0" rx="8" fill="#fffdf5" stroke="#0f172a" stroke-width="2"/>
+<text x="414.0" y="72.0" font-size="13" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">ABC BANK  ·  Freetown</text>
+<text x="746.0" y="72.0" font-size="12" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">Date: 12/03/2026</text>
+<text x="414.0" y="102.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Pay: Kamara Hardware Ltd</text>
+<line x1="450.0" y1="108.0" x2="640.0" y2="108.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<text x="414.0" y="130.0" font-size="12" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Two thousand leones only</text>
+<rect x="650.0" y="114.0" width="96.0" height="26.0" rx="4" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<text x="698.0" y="127.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">NLe 2,000</text>
+<text x="746.0" y="176.0" font-size="14" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal" font-style="italic">F. Conteh</text>
+<line x1="551.2" y1="54.0" x2="577.2" y2="186.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="573.2" y1="54.0" x2="599.2" y2="186.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/>
+<text x="580.0" y="212.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">General crossing: pay into an account</text>
+<rect x="20.0" y="280.0" width="360.0" height="140.0" rx="8" fill="#fffdf5" stroke="#0f172a" stroke-width="2"/>
+<text x="34.0" y="302.0" font-size="13" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">ABC BANK  ·  Freetown</text>
+<text x="366.0" y="302.0" font-size="12" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">Date: 12/03/2026</text>
+<text x="34.0" y="332.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Pay: Kamara Hardware Ltd</text>
+<line x1="70.0" y1="338.0" x2="260.0" y2="338.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<text x="34.0" y="360.0" font-size="12" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Two thousand leones only</text>
+<rect x="270.0" y="344.0" width="96.0" height="26.0" rx="4" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<text x="318.0" y="357.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">NLe 2,000</text>
+<text x="366.0" y="406.0" font-size="14" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal" font-style="italic">F. Conteh</text>
+<line x1="171.2" y1="284.0" x2="197.2" y2="416.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="193.2" y1="284.0" x2="219.2" y2="416.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/>
+<text x="195.2" y="350.0" font-size="11" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">ABC Bank</text>
+<text x="200.0" y="442.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Special crossing: through the named bank</text>
+<rect x="400.0" y="280.0" width="360.0" height="140.0" rx="8" fill="#fffdf5" stroke="#0f172a" stroke-width="2"/>
+<text x="414.0" y="302.0" font-size="13" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">ABC BANK  ·  Freetown</text>
+<text x="746.0" y="302.0" font-size="12" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">Date: 12/03/2026</text>
+<text x="414.0" y="332.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Pay: Kamara Hardware Ltd</text>
+<line x1="450.0" y1="338.0" x2="640.0" y2="338.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<text x="414.0" y="360.0" font-size="12" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Two thousand leones only</text>
+<rect x="650.0" y="344.0" width="96.0" height="26.0" rx="4" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<text x="698.0" y="357.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">NLe 2,000</text>
+<text x="746.0" y="406.0" font-size="14" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal" font-style="italic">F. Conteh</text>
+<line x1="551.2" y1="284.0" x2="577.2" y2="416.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="573.2" y1="284.0" x2="599.2" y2="416.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/>
+<text x="575.2" y="350.0" font-size="11" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A/C payee</text>
+<text x="580.0" y="442.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Account payee only: payee&#x27;s account</text>
+</svg>

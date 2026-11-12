@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 430" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The product life cycle</title>
+<desc id="d">Sales of a product rise slowly at introduction, quickly during growth, level off at maturity and fall in decline.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="700" height="430" rx="20" fill="#f8fafc"/>
+<line x1="80.0" y1="350.0" x2="654.0" y2="350.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="80.0" y1="350.0" x2="80.0" y2="76.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="654.0" y="384.0" font-size="16" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">Time</text>
+<text x="88.0" y="68.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Sales</text>
+<path d="M 80.0 345.9 L 85.6 345.9 L 91.2 345.8 L 96.8 345.8 L 102.4 345.7 L 108.0 345.7 L 113.6 345.6 L 119.2 345.5 L 124.8 345.3 L 130.4 345.2 L 136.0 345.0 L 141.6 344.7 L 147.2 344.5 L 152.8 344.1 L 158.4 343.7 L 164.0 343.2 L 169.6 342.7 L 175.2 342.0 L 180.8 341.2 L 186.4 340.3 L 192.0 339.2 L 197.6 338.0 L 203.2 336.6 L 208.8 335.0 L 214.4 333.2 L 220.0 331.1 L 225.6 328.8 L 231.2 326.2 L 236.8 323.2 L 242.4 319.9 L 248.0 316.3 L 253.6 312.3 L 259.2 308.0 L 264.8 303.2 L 270.4 298.1 L 276.0 292.5 L 281.6 286.5 L 287.2 280.1 L 292.8 273.3 L 298.4 266.2 L 304.0 258.6 L 309.6 250.8 L 315.2 242.7 L 320.8 234.3 L 326.4 225.7 L 332.0 217.0 L 337.6 208.2 L 343.2 199.3 L 348.8 190.6 L 354.4 182.0 L 360.0 173.6 L 365.6 165.4 L 371.2 157.7 L 376.8 150.4 L 382.4 143.6 L 388.0 137.5 L 393.6 132.0 L 399.2 127.2 L 404.8 123.2 L 410.4 120.1 L 416.0 117.8 L 421.6 116.5 L 427.2 116.0 L 432.8 116.5 L 438.4 117.8 L 444.0 120.1 L 449.6 123.2 L 455.2 127.2 L 460.8 132.0 L 466.4 137.5 L 472.0 143.6 L 477.6 150.4 L 483.2 157.7 L 488.8 165.4 L 494.4 173.6 L 500.0 182.0 L 505.6 190.6 L 511.2 199.3 L 516.8 208.2 L 522.4 217.0 L 528.0 225.7 L 533.6 234.3 L 539.2 242.7 L 544.8 250.8 L 550.4 258.6 L 556.0 266.2 L 561.6 273.3 L 567.2 280.1 L 572.8 286.5 L 578.4 292.5 L 584.0 298.1 L 589.6 303.2 L 595.2 308.0 L 600.8 312.3 L 606.4 316.3 L 612.0 319.9 L 617.6 323.2 L 623.2 326.2 L 628.8 328.8 L 634.4 331.1 L 640.0 333.2" stroke="#2563eb" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="155.6" y="370.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Introduction</text>
+<line x1="231.2" y1="350.0" x2="231.2" y2="90.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+<text x="290.0" y="370.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Growth</text>
+<line x1="348.8" y1="350.0" x2="348.8" y2="90.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+<text x="432.8" y="370.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Maturity</text>
+<line x1="516.8" y1="350.0" x2="516.8" y2="90.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+<text x="578.4" y="370.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Decline</text>
+<text x="350.0" y="40.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Introduction → growth → maturity → decline</text>
+</svg>

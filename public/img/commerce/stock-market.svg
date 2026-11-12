@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Primary and secondary markets</title>
+<desc id="d">In the primary market a company issues new shares to investors and receives their money. In the secondary market (the stock exchange) investors buy and sell existing shares among themselves through brokers; the company receives nothing.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7c3aed"/></marker><marker id="a7c3aeds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#7c3aed"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="780" height="420" rx="20" fill="#f8fafc"/>
+<rect x="20.0" y="60.0" width="360.0" height="330.0" rx="14" fill="#f0f9ff" stroke="#2563eb" stroke-width="2"/>
+<text x="200.0" y="88.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Primary market (new issues)</text>
+<rect x="100.0" y="142.0" width="200.0" height="56.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="200.0" y="170.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Company</text>
+<rect x="100.0" y="292.0" width="200.0" height="56.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="200.0" y="320.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Investors</text>
+<line x1="170.0" y1="200.0" x2="170.0" y2="290.0" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a7c3aed)"/>
+<rect x="128.6" y="233.5" width="82.8" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="170.0" y="245.0" font-size="13" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">new shares</text>
+<line x1="230.0" y1="290.0" x2="230.0" y2="200.0" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<rect x="206.8" y="233.5" width="46.4" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="230.0" y="245.0" font-size="13" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">money</text>
+<rect x="400.0" y="60.0" width="360.0" height="330.0" rx="14" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+<text x="580.0" y="88.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Secondary market (stock exchange)</text>
+<rect x="420.0" y="142.0" width="140.0" height="56.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="490.0" y="159.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Investor A</text>
+<text x="490.0" y="181.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sells</text>
+<rect x="600.0" y="142.0" width="140.0" height="56.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="670.0" y="159.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Investor B</text>
+<text x="670.0" y="181.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">buys</text>
+<rect x="470.0" y="292.0" width="220.0" height="56.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="580.0" y="309.5" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Brokers on the</text>
+<text x="580.0" y="330.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">stock exchange</text>
+<line x1="490.0" y1="204.0" x2="580.0" y2="286.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="580.0" y1="286.0" x2="670.0" y2="204.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="580.0" y="252.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">existing shares change hands</text>
+<text x="390.0" y="34.0" font-size="17" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">New money for the company comes only from the primary market</text>
+</svg>
