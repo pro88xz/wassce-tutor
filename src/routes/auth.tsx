@@ -2,6 +2,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { privateHead } from '@/lib/seo'
 import { useCallback, useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
+import { campaignMetadata } from '@/lib/attribution'
 import { useAuth } from '@/lib/auth'
 import { Capacitor } from '@capacitor/core'
 import { CircleCheck } from 'lucide-react'
@@ -56,7 +57,7 @@ function AuthPage() {
           password,
           options: {
             emailRedirectTo: `${window.location.origin}/auth?intent=${intent}${referralCode ? `&ref=${encodeURIComponent(referralCode)}` : ''}`,
-            data: { full_name: fullName.trim(), account_intent: intent, ...(referralCode ? { affiliate_code: referralCode } : {}) },
+            data: { full_name: fullName.trim(), account_intent: intent, ...campaignMetadata(), ...(referralCode ? { affiliate_code: referralCode } : {}) },
           },
         })
         if (error) throw error

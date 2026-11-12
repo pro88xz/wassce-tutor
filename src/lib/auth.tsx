@@ -4,6 +4,7 @@ import type { Session, User } from '@supabase/supabase-js'
 import { Capacitor } from '@capacitor/core'
 import { supabase } from '@/lib/supabase'
 import { clearUnlocked } from '@/lib/adminGate'
+import { captureCampaign, reportCampaign } from '@/lib/attribution'
 
 type AuthState = {
   session: Session | null
@@ -30,6 +31,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    captureCampaign()
     // Get the current session on load. Whatever happens (including an error
     // reading it), the check must end, or the boot spinner would never clear.
     supabase.auth
@@ -51,6 +53,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         clearUnlocked()
       }
       lastUserId = userId
+      if (userId) void reportCampaign(userId)
     })
 
     return () => sub.subscription.unsubscribe()

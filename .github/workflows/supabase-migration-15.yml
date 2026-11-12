@@ -1,0 +1,89 @@
+name: Apply sign-up source migration (15)
+
+# Run by hand from the Actions tab, on main. Adds profiles.signup_source and
+# signup_campaign and record_signup_source(), so the admin home can show where
+# new accounts come from (e.g. wasscetutor.com/tiktok). Sign-up is unchanged.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wassce-tutor-signup-source-migration
+  cancel-in-progress: false
+
+jobs:
+  apply-signup-source:
+    name: Apply sign-up source migration
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    environment: production
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v5
+
+      - name: Validate target migration and database secret
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          test -n "$SUPABASE_DB_URL" || { echo "Missing SUPABASE_DB_URL"; exit 1; }
+          test -s "supabase/migrations/20261112_15_signup_source.sql" || { echo "Migration file missing"; exit 1; }
+          grep -qiE '^[[:space:]]*begin;' supabase/migrations/20261112_15_signup_source.sql
+          grep -qiE '^[[:space:]]*commit;' supabase/migrations/20261112_15_signup_source.sql
+
+      - name: Install PostgreSQL client
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes postgresql-client
+
+      - name: Apply migration once and record checksum
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          MIGRATION_VERSION: "20261112_15_signup_source"
+        run: |
+          set -euo pipefail
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 <<'SQL'
+          create schema if not exists wassce_internal;
+          revoke all on schema wassce_internal from public, anon, authenticated;
+          create table if not exists wassce_internal.deployed_migrations (
+            version text primary key,
+            sha256 text not null,
+            applied_at timestamptz not null default now()
+          );
+          revoke all on all tables in schema wassce_internal from public, anon, authenticated;
+          SQL
+
+          APPLIED="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select exists (select 1 from wassce_internal.deployed_migrations where version = '$MIGRATION_VERSION');" | tr -d '[:space:]')"
+          if [[ "$APPLIED" == "t" ]]; then
+            echo "Migration $MIGRATION_VERSION is already recorded; nothing to do."
+            exit 0
+          fi
+
+          CHECKSUM="$(sha256sum supabase/migrations/20261112_15_signup_source.sql | cut -d ' ' -f 1)"
+          {
+            echo "begin;"
+            echo "do \$\$ begin if exists (select 1 from wassce_internal.deployed_migrations where version = '$MIGRATION_VERSION') then raise exception 'Migration already applied'; end if; end \$\$;"
+            sed '/^[[:space:]]*begin;[[:space:]]*$/Id; /^[[:space:]]*commit;[[:space:]]*$/Id;' supabase/migrations/20261112_15_signup_source.sql
+            printf "insert into wassce_internal.deployed_migrations(version, sha256) values ('%s', '%s');\\n" "$MIGRATION_VERSION" "$CHECKSUM"
+            echo "commit;"
+          } | psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1
+
+          echo "Migration applied and recorded successfully."
+
+      - name: Verify the migration took effect
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            (select count(*) from information_schema.columns where table_schema='public' and table_name='profiles' and column_name in ('signup_source','signup_campaign')),
+            has_function_privilege('authenticated','public.record_signup_source(text,text)','execute'),
+            has_function_privilege('anon','public.record_signup_source(text,text)','execute'));" | tr -d '[:space:]')"
+          echo "source columns, signed-in users can record, anon can record: $RESULT"
+          test "$RESULT" = "2,t,f" || { echo "Migration 15 checks did not match 2,t,f"; exit 1; }

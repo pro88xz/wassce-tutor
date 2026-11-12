@@ -46,6 +46,29 @@ function AdminPage() {
   })
   const waiting = pending.data ?? { applications: 0, affiliates: 0 }
 
+  // Where new accounts came from in the last 30 days (migration 15), and how
+  // many of them have paid. Null until that migration is applied.
+  const sources = useQuery({
+    queryKey: ['admin-signup-sources'],
+    enabled: !!profile?.is_admin && unlocked,
+    queryFn: async () => {
+      const since = new Date(Date.now() - 30 * 86_400_000).toISOString()
+      const people = await supabase.from('profiles').select('id,signup_source').gte('created_at', since).limit(10000)
+      if (people.error) return null
+      const pays = await supabase.from('payments').select('user_id').eq('status', 'completed').gte('created_at', since).limit(10000)
+      const paid = new Set((pays.data ?? []).map((r) => r.user_id as string))
+      const rows = new Map<string, { signups: number; paid: number }>()
+      for (const person of people.data ?? []) {
+        const key = (person.signup_source as string | null) ?? 'direct'
+        const row = rows.get(key) ?? { signups: 0, paid: 0 }
+        row.signups += 1
+        if (paid.has(person.id as string)) row.paid += 1
+        rows.set(key, row)
+      }
+      return [...rows.entries()].sort((a, b) => b[1].signups - a[1].signups)
+    },
+  })
+
   if (isLoading) return <p className="text-muted-foreground">Loading…</p>
 
   // Not signed in
@@ -135,6 +158,19 @@ function AdminPage() {
           {waiting.applications > 0 && <Link to="/admin/tutors" className="font-semibold underline">{waiting.applications} tutor application{waiting.applications === 1 ? '' : 's'}</Link>}
           {waiting.affiliates > 0 && <Link to="/admin/affiliates" className="font-semibold underline">{waiting.affiliates} affiliate item{waiting.affiliates === 1 ? '' : 's'}</Link>}
         </div>
+      )}
+
+      {atRoot && sources.data && (
+        <section className="rounded-2xl border bg-card p-5" aria-labelledby="sources-title">
+          <h2 id="sources-title" className="font-bold">Where new accounts come from <span className="font-normal text-muted-foreground">· last 30 days</span></h2>
+          <p className="mt-1 text-xs text-muted-foreground">Share wasscetutor.com/tiktok on TikTok so those sign-ups are counted here.</p>
+          <table className="mt-3 w-full text-sm">
+            <thead><tr className="text-left text-xs text-muted-foreground"><th className="py-1 font-semibold">Source</th><th className="py-1 text-right font-semibold">Sign-ups</th><th className="py-1 text-right font-semibold">Paid</th></tr></thead>
+            <tbody>{sources.data.length === 0 ? <tr><td colSpan={3} className="py-2 text-muted-foreground">No new accounts yet.</td></tr> : sources.data.map(([source, row]) => (
+              <tr key={source} className="border-t"><td className="py-1.5 font-medium capitalize">{source === 'direct' ? 'Direct or other' : source}</td><td className="py-1.5 text-right tabular-nums">{row.signups}</td><td className="py-1.5 text-right tabular-nums">{row.paid}</td></tr>
+            ))}</tbody>
+          </table>
+        </section>
       )}
 
       {!atRoot ? <Outlet /> : (
