@@ -2714,58 +2714,6 @@
       "auto_sync": true
     },
     {
-      "file": "commerce-sources-of-business-capital.md",
-      "subject": "Commerce",
-      "topic": "sources-of-business-capital",
-      "title": "Sources of business capital",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 14,
-      "sort_order": 5,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-trade-associations.md",
-      "subject": "Commerce",
-      "topic": "trade-associations",
-      "title": "Trade associations",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 13,
-      "sort_order": 6,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-retail-trade.md",
-      "subject": "Commerce",
-      "topic": "retail-trade",
-      "title": "Retail trade",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 14,
-      "sort_order": 7,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-wholesale-trade.md",
-      "subject": "Commerce",
-      "topic": "wholesale-trade",
-      "title": "Wholesale trade",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 14,
-      "sort_order": 8,
-      "auto_sync": true
-    },
-    {
       "file": "commerce-foreign-trade.md",
       "subject": "Commerce",
       "topic": "foreign-trade",
@@ -2906,58 +2854,6 @@
       "original_author": "WASSCE Tutor editorial team",
       "est_minutes": 15,
       "sort_order": 19,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-sources-of-business-capital-2.md",
-      "subject": "Commerce",
-      "topic": "sources-of-business-capital",
-      "title": "Cost of capital, working capital and financial planning",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 14,
-      "sort_order": 2,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-trade-associations-2.md",
-      "subject": "Commerce",
-      "topic": "trade-associations",
-      "title": "Trade associations, chambers of commerce and consumer representation",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 13,
-      "sort_order": 2,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-retail-trade-2.md",
-      "subject": "Commerce",
-      "topic": "retail-trade",
-      "title": "Retail pricing, stock control and customer service",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 15,
-      "sort_order": 2,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-wholesale-trade-2.md",
-      "subject": "Commerce",
-      "topic": "wholesale-trade",
-      "title": "Wholesale operations: breaking bulk, warehousing and distribution",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 14,
-      "sort_order": 2,
       "auto_sync": true
     },
     {
@@ -3221,6 +3117,126 @@
       "auto_sync": true,
       "title": "Companies, cooperatives, public enterprises and business combinations",
       "est_minutes": 8,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-capital-1.md",
+      "subject": "Commerce",
+      "topic": "sources-of-business-capital",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Business capital: types and sources",
+      "est_minutes": 7,
+      "sort_order": 1,
+      "retire": [
+        "cost-of-capital-working-capital-and-financial-planning",
+        "sources-of-business-capital"
+      ]
+    },
+    {
+      "file": "commerce-capital-2.md",
+      "subject": "Commerce",
+      "topic": "sources-of-business-capital",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Capital, turnover and profit: the key calculations",
+      "est_minutes": 8,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-associations-1.md",
+      "subject": "Commerce",
+      "topic": "trade-associations",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Trade associations and chambers of commerce",
+      "est_minutes": 6,
+      "sort_order": 1,
+      "retire": [
+        "trade-associations",
+        "trade-associations-chambers-of-commerce-and-consumer-representation"
+      ]
+    },
+    {
+      "file": "commerce-associations-2.md",
+      "subject": "Commerce",
+      "topic": "trade-associations",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Consumer associations, trade fairs and business ethics",
+      "est_minutes": 6,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-retail-1.md",
+      "subject": "Commerce",
+      "topic": "retail-trade",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Retail trade: functions and small-scale retailers",
+      "est_minutes": 7,
+      "sort_order": 1,
+      "retire": [
+        "retail-pricing-stock-control-and-customer-service",
+        "retail-trade"
+      ]
+    },
+    {
+      "file": "commerce-retail-2.md",
+      "subject": "Commerce",
+      "topic": "retail-trade",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Large-scale retailing and modern trends in retailing",
+      "est_minutes": 7,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-wholesale-1.md",
+      "subject": "Commerce",
+      "topic": "wholesale-trade",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Wholesale trade: the wholesaler's services",
+      "est_minutes": 6,
+      "sort_order": 1,
+      "retire": [
+        "wholesale-operations-breaking-bulk-warehousing-and-distribution",
+        "wholesale-trade"
+      ]
+    },
+    {
+      "file": "commerce-wholesale-2.md",
+      "subject": "Commerce",
+      "topic": "wholesale-trade",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Agents, middlemen and the case for eliminating the wholesaler",
+      "est_minutes": 6,
       "sort_order": 2
     },
     {
