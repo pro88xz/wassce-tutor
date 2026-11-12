@@ -38,9 +38,9 @@ Governments pass laws dealing with:
 | **Sierra Leone Standards Bureau** | Sets **standards** for goods, tests products and certifies quality |
 | **Pharmacy Board of Sierra Leone** | Registers medicines, licenses pharmacies and seizes fake or expired drugs |
 | **Ministry of Trade and Industry** | Weights and measures inspection, price monitoring, trade policy |
-| **Ministry of Health** (environmental health officers) | Inspects food premises, markets and sanitation |
+| **Ministry of Health** | Its health officers inspect food premises, markets and sanitation |
 | **Local councils** | License and inspect traders and markets |
-| **Regulators** of utilities and telecoms | Control tariffs and service quality in electricity, water and telecommunications |
+| **Utility and telecom regulators** | Control prices and service quality for electricity, water and phone networks |
 | **Courts** | Hear consumers' claims for compensation and punish offenders |
 
 **Other government measures:**

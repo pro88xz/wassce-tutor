@@ -55,11 +55,11 @@ By the end of this lesson you should be able to:
 | Type | Description |
 |---|---|
 | **General wholesaler** | Stocks a wide range of goods (provisions, toiletries, drinks) |
-| **Specialist wholesaler** | Deals in one line of goods (pharmaceuticals, building materials, textiles) |
+| **Specialist wholesaler** | Deals in one line of goods (medicines, building materials, textiles) |
 | **Regional / national wholesaler** | Serves one region, or the whole country through branches |
 | **Cash-and-carry wholesaler** | Retailers come to the warehouse, select goods themselves, pay cash and carry them away; no credit or delivery, so prices are lower |
 | **Importer-wholesaler** | Imports goods in bulk and sells them to local retailers |
-| **Manufacturer's own wholesale branch** | A producer runs its own wholesale depot |
+| **Producer's own depot** | A manufacturer runs its own wholesale branch |
 
 **Cash-and-carry:** advantages to retailers are **lower prices**, the chance to **choose goods** themselves and **quick service**. Disadvantages: **no credit**, **no delivery**, and the retailer pays the cost of transport.
 
