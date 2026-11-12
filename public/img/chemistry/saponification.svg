@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Saponification: making soap from a fat or oil</title>
+<desc id="d">A triglyceride (fat or oil), drawn as three CH2/CH/CH2–O–CO–R groups, is boiled with three sodium hydroxide units. It gives glycerol (propane-1,2,3-triol) and three molecules of soap, the sodium salt R–COO−Na+. Below, the process: boil the oil with sodium hydroxide, add brine to salt out the soap, skim off the soap curd, then add perfume and colour and mould it.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="800" height="450" rx="20" fill="#f8fafc"/>
+<text x="60.0" y="110.0" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">CH<tspan dy="5.8" font-size="12.6">2</tspan><tspan dy="-5.8">–O–CO–R</tspan></text>
+<text x="60.0" y="160.0" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">CH–O–CO–R</text>
+<text x="60.0" y="210.0" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">CH<tspan dy="5.8" font-size="12.6">2</tspan><tspan dy="-5.8">–O–CO–R</tspan></text>
+<line x1="73.0" y1="122.0" x2="73.0" y2="148.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="73.0" y1="172.0" x2="73.0" y2="198.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round"/>
+<text x="150.0" y="250.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">fat or oil (triglyceride)</text>
+<text x="300.0" y="160.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+ 3NaOH</text>
+<line x1="358.0" y1="160.0" x2="432.0" y2="160.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="395.0" y="142.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">boil</text>
+<text x="450.0" y="110.0" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">CH<tspan dy="5.8" font-size="12.6">2</tspan><tspan dy="-5.8">–OH</tspan></text>
+<text x="450.0" y="160.0" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">CH–OH</text>
+<text x="450.0" y="210.0" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">CH<tspan dy="5.8" font-size="12.6">2</tspan><tspan dy="-5.8">–OH</tspan></text>
+<line x1="463.0" y1="122.0" x2="463.0" y2="148.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="463.0" y1="172.0" x2="463.0" y2="198.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round"/>
+<text x="490.0" y="250.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">glycerol</text>
+<text x="560.0" y="160.0" font-size="18" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">+ 3R–COO<tspan dy="-7.6" font-size="12.6">-</tspan><tspan dy="7.6">Na</tspan><tspan dy="-7.6" font-size="12.6">+</tspan><tspan dy="7.6"></tspan></text>
+<text x="640.0" y="192.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">soap</text>
+<text x="400.0" y="288.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">R = a long hydrocarbon chain, e.g. C₁₅H₃₁ (palmitic) or C₁₇H₃₅ (stearic)</text>
+<rect x="25.0" y="348.0" width="170.0" height="64.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="110.0" y="369.5" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. Boil</text>
+<text x="110.0" y="390.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">oil + NaOH(aq)</text>
+<rect x="218.0" y="348.0" width="170.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="303.0" y="369.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2. Salt out</text>
+<text x="303.0" y="390.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">add brine (NaCl)</text>
+<rect x="411.0" y="348.0" width="170.0" height="64.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="496.0" y="369.5" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3. Skim</text>
+<text x="496.0" y="390.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">soap curd floats</text>
+<rect x="604.0" y="348.0" width="170.0" height="64.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="689.0" y="369.5" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4. Finish</text>
+<text x="689.0" y="390.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">perfume, colour, mould</text>
+<line x1="198.0" y1="380.0" x2="215.0" y2="380.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="391.0" y1="380.0" x2="408.0" y2="380.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="584.0" y1="380.0" x2="601.0" y2="380.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="400.0" y="40.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">fat or oil + sodium hydroxide → glycerol + soap</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Monosaccharides, disaccharides and polysaccharides</title>
+<desc id="d">Glucose, a monosaccharide, drawn as a single six-membered ring. Maltose or sucrose, a disaccharide, is two rings joined by an oxygen link. Starch or cellulose, a polysaccharide, is a long chain of many glucose rings. Rings join by condensation, losing water; hydrolysis with acid or enzymes reverses this.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="800" height="440" rx="20" fill="#f8fafc"/>
+<rect x="5.0" y="60.0" width="250.0" height="250.0" rx="10" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="130.0" y="84.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Monosaccharide</text>
+<polygon points="152.5,173.0 130.0,186.0 107.5,173.0 107.5,147.0 130.0,134.0 152.5,147.0" fill="#dcfce7" stroke="#15803d" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="130.0" cy="134.0" r="8.0" fill="#ffffff" stroke="#15803d" stroke-width="1.5"/>
+<text x="130.0" y="135.0" font-size="10" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<text x="130.0" y="222.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C₆H₁₂O₆</text>
+<text x="130.0" y="248.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">glucose, fructose</text>
+<text x="130.0" y="274.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sweet, soluble, reducing</text>
+<rect x="265.0" y="60.0" width="250.0" height="250.0" rx="10" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="390.0" y="84.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Disaccharide</text>
+<polygon points="375.5,173.0 353.0,186.0 330.5,173.0 330.5,147.0 353.0,134.0 375.5,147.0" fill="#dcfce7" stroke="#15803d" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="353.0" cy="134.0" r="8.0" fill="#ffffff" stroke="#15803d" stroke-width="1.5"/>
+<text x="353.0" y="135.0" font-size="10" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<polygon points="449.5,173.0 427.0,186.0 404.5,173.0 404.5,147.0 427.0,134.0 449.5,147.0" fill="#dcfce7" stroke="#15803d" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="427.0" cy="134.0" r="8.0" fill="#ffffff" stroke="#15803d" stroke-width="1.5"/>
+<text x="427.0" y="135.0" font-size="10" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<line x1="376.0" y1="160.0" x2="404.0" y2="160.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="390.0" cy="160.0" r="7.0" fill="#ffffff" stroke="#0f172a" stroke-width="1.2"/>
+<text x="390.0" y="161.0" font-size="9" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<text x="390.0" y="222.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C₁₂H₂₂O₁₁</text>
+<text x="390.0" y="248.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">maltose, sucrose, lactose</text>
+<text x="390.0" y="274.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sweet, soluble</text>
+<rect x="530.0" y="60.0" width="250.0" height="250.0" rx="10" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="655.0" y="84.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Polysaccharide</text>
+<polygon points="603.5,173.0 581.0,186.0 558.5,173.0 558.5,147.0 581.0,134.0 603.5,147.0" fill="#dcfce7" stroke="#15803d" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="581.0" cy="134.0" r="8.0" fill="#ffffff" stroke="#15803d" stroke-width="1.5"/>
+<text x="581.0" y="135.0" font-size="10" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<polygon points="677.5,173.0 655.0,186.0 632.5,173.0 632.5,147.0 655.0,134.0 677.5,147.0" fill="#dcfce7" stroke="#15803d" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="655.0" cy="134.0" r="8.0" fill="#ffffff" stroke="#15803d" stroke-width="1.5"/>
+<text x="655.0" y="135.0" font-size="10" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<line x1="604.0" y1="160.0" x2="632.0" y2="160.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="618.0" cy="160.0" r="7.0" fill="#ffffff" stroke="#0f172a" stroke-width="1.2"/>
+<text x="618.0" y="161.0" font-size="9" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<polygon points="751.5,173.0 729.0,186.0 706.5,173.0 706.5,147.0 729.0,134.0 751.5,147.0" fill="#dcfce7" stroke="#15803d" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="729.0" cy="134.0" r="8.0" fill="#ffffff" stroke="#15803d" stroke-width="1.5"/>
+<text x="729.0" y="135.0" font-size="10" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<line x1="678.0" y1="160.0" x2="706.0" y2="160.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="692.0" cy="160.0" r="7.0" fill="#ffffff" stroke="#0f172a" stroke-width="1.2"/>
+<text x="692.0" y="161.0" font-size="9" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<text x="539.0" y="160.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">…</text>
+<text x="771.0" y="160.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">…</text>
+<text x="655.0" y="222.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">(C₆H₁₀O₅)ₙ</text>
+<text x="655.0" y="248.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">starch, cellulose, glycogen</text>
+<text x="655.0" y="274.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">not sweet, insoluble</text>
+<line x1="150.0" y1="352.0" x2="640.0" y2="352.0" stroke="#15803d" stroke-width="3" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="248.9" y="340.0" width="292.2" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="395.0" y="352.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">condensation: rings join, losing H₂O</text>
+<line x1="640.0" y1="396.0" x2="150.0" y2="396.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<rect x="225.4" y="384.0" width="339.3" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="395.0" y="396.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">hydrolysis: + H₂O (dilute acid or enzymes)</text>
+<text x="400.0" y="32.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Carbohydrates: Cₓ(H₂O)ᵧ, built from sugar units</text>
+</svg>

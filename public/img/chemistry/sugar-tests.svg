@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Tests for starch and reducing sugars</title>
+<desc id="d">Starch with iodine solution turns blue-black. Glucose heated with Benedict&#x27;s or Fehling&#x27;s solution gives a brick-red precipitate. Sucrose heated with Benedict&#x27;s solution stays blue, because it is not a reducing sugar. Sucrose first boiled with dilute hydrochloric acid and neutralised then gives a brick-red precipitate, because hydrolysis has produced glucose and fructose.</desc>
+<defs></defs>
+<rect width="800" height="400" rx="20" fill="#f8fafc"/>
+<text x="110.0" y="72.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Starch</text>
+<text x="110.0" y="89.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+ iodine solution</text>
+<path d="M 89.0 187.5 L 89.0 247.0 A 21.0 21.0 0 0 0 131.0 247.0 L 131.0 187.5 Z" stroke="none" stroke-width="0" fill="#312e81" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 87.0 120 L 87.0 247.0 A 23.0 23.0 0 0 0 133.0 247.0 L 133.0 120" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="110.0" y="294.0" font-size="13" fill="#312e81" text-anchor="middle" dominant-baseline="middle" font-weight="bold">blue-black</text>
+<text x="110.0" y="311.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">starch present</text>
+<text x="300.0" y="72.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Glucose</text>
+<text x="300.0" y="89.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+ Benedict&#x27;s, heat</text>
+<path d="M 279.0 187.5 L 279.0 247.0 A 21.0 21.0 0 0 0 321.0 247.0 L 321.0 187.5 Z" stroke="none" stroke-width="0" fill="#fb923c" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 277.0 120 L 277.0 247.0 A 23.0 23.0 0 0 0 323.0 247.0 L 323.0 120" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 279.0 241.0 L 279.0 247.0 A 21.0 21.0 0 0 0 321.0 247.0 L 321.0 241.0 Z" stroke="none" stroke-width="0" fill="#b91c1c" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="300.0" y="294.0" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">brick-red ppt</text>
+<text x="300.0" y="311.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">reducing sugar</text>
+<text x="490.0" y="72.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sucrose</text>
+<text x="490.0" y="89.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+ Benedict&#x27;s, heat</text>
+<path d="M 469.0 187.5 L 469.0 247.0 A 21.0 21.0 0 0 0 511.0 247.0 L 511.0 187.5 Z" stroke="none" stroke-width="0" fill="#60a5fa" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 467.0 120 L 467.0 247.0 A 23.0 23.0 0 0 0 513.0 247.0 L 513.0 120" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="490.0" y="294.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">stays blue</text>
+<text x="490.0" y="311.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">not reducing</text>
+<text x="690.0" y="72.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sucrose boiled with HCl,</text>
+<text x="690.0" y="89.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">neutralised, + Benedict&#x27;s</text>
+<path d="M 669.0 187.5 L 669.0 247.0 A 21.0 21.0 0 0 0 711.0 247.0 L 711.0 187.5 Z" stroke="none" stroke-width="0" fill="#fb923c" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 667.0 120 L 667.0 247.0 A 23.0 23.0 0 0 0 713.0 247.0 L 713.0 120" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 669.0 241.0 L 669.0 247.0 A 21.0 21.0 0 0 0 711.0 247.0 L 711.0 241.0 Z" stroke="none" stroke-width="0" fill="#b91c1c" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="690.0" y="294.0" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">brick-red ppt</text>
+<text x="690.0" y="311.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">hydrolysed to glucose</text>
+<text x="400.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Iodine finds starch; Benedict&#x27;s or Fehling&#x27;s finds reducing sugars</text>
+</svg>

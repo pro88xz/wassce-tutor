@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">How soap removes grease</title>
+<desc id="d">Panel 1: a soap anion has a long hydrocarbon tail that is hydrophobic and dissolves in grease, and an ionic COO− head that is hydrophilic and dissolves in water. Panel 2: on a greasy cloth, the tails bury themselves in the grease and the heads stay in the water. Panel 3: rubbing lifts the grease off as a droplet surrounded by negative heads (a micelle); droplets repel each other and are rinsed away.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="800" height="420" rx="20" fill="#f8fafc"/>
+<rect x="20.0" y="70.0" width="240.0" height="290.0" rx="10" fill="#eff6ff" stroke="#475569" stroke-width="1.5"/>
+<rect x="280.0" y="70.0" width="240.0" height="290.0" rx="10" fill="#eff6ff" stroke="#475569" stroke-width="1.5"/>
+<rect x="540.0" y="70.0" width="240.0" height="290.0" rx="10" fill="#eff6ff" stroke="#475569" stroke-width="1.5"/>
+<text x="140.0" y="92.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. A soap anion</text>
+<path d="M 50.0 192.0 L 64.0 208.0 L 78.0 192.0 L 92.0 208.0 L 106.0 192.0 L 120.0 208.0 L 134.0 192.0 L 148.0 208.0 L 162.0 192.0 L 176.0 208.0 L 190.0 192.0" stroke="#ea580c" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="210.0" cy="200.0" r="16.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.5"/>
+<text x="210.0" y="200.0" font-size="10" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">COO<tspan dy="-4.2" font-size="7.0">-</tspan><tspan dy="4.2"></tspan></text>
+<text x="228.0" y="236.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Na<tspan dy="-5.9" font-size="9.8">+</tspan><tspan dy="5.9"></tspan></text>
+<text x="110.0" y="236.0" font-size="13" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">hydrocarbon tail</text>
+<text x="110.0" y="254.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">hydrophobic:</text>
+<text x="110.0" y="270.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">dissolves in grease</text>
+<text x="196.0" y="146.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">ionic head</text>
+<text x="186.0" y="162.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">hydrophilic: in water</text>
+<text x="400.0" y="92.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2. Tails enter the grease</text>
+<rect x="290.0" y="300.0" width="220.0" height="50.0" rx="0" fill="#e5e7eb" stroke="#0f172a" stroke-width="1.5"/>
+<text x="400.0" y="330.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cloth</text>
+<path d="M 330 300 A 70 64 0 0 1 470 300 Z" stroke="#a16207" stroke-width="2" fill="#fde68a" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="305.5" y1="284.4" x2="352.7" y2="292.7" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="305.5" cy="284.4" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="316.9" y1="255.0" x2="358.4" y2="279.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="316.9" cy="255.0" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="338.3" y1="231.1" x2="369.1" y2="267.8" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="338.3" cy="231.1" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="367.2" y1="215.4" x2="383.6" y2="260.5" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="367.2" cy="215.4" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="400.0" y1="210.0" x2="400.0" y2="258.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="400.0" cy="210.0" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="432.8" y1="215.4" x2="416.4" y2="260.5" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="432.8" cy="215.4" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="461.7" y1="231.1" x2="430.9" y2="267.8" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="461.7" cy="231.1" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="483.1" y1="255.0" x2="441.6" y2="279.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="483.1" cy="255.0" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="494.5" y1="284.4" x2="447.3" y2="292.7" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="494.5" cy="284.4" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<text x="400.0" y="286.0" font-size="14" fill="#a16207" text-anchor="middle" dominant-baseline="middle" font-weight="bold">grease</text>
+<text x="660.0" y="92.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3. Grease lifted off</text>
+<circle cx="660.0" cy="215.0" r="42.0" fill="#fde68a" stroke="#a16207" stroke-width="2"/>
+<line x1="724.0" y1="215.0" x2="684.0" y2="215.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="724.0" cy="215.0" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="717.7" y1="242.8" x2="681.6" y2="225.4" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="717.7" cy="242.8" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="699.9" y1="265.0" x2="675.0" y2="233.8" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="699.9" cy="265.0" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="674.2" y1="277.4" x2="665.3" y2="238.4" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="674.2" cy="277.4" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="645.8" y1="277.4" x2="654.7" y2="238.4" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="645.8" cy="277.4" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="620.1" y1="265.0" x2="645.0" y2="233.8" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="620.1" cy="265.0" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="602.3" y1="242.8" x2="638.4" y2="225.4" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="602.3" cy="242.8" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="596.0" y1="215.0" x2="636.0" y2="215.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="596.0" cy="215.0" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="602.3" y1="187.2" x2="638.4" y2="204.6" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="602.3" cy="187.2" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="620.1" y1="165.0" x2="645.0" y2="196.2" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="620.1" cy="165.0" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="645.8" y1="152.6" x2="654.7" y2="191.6" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="645.8" cy="152.6" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="674.2" y1="152.6" x2="665.3" y2="191.6" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="674.2" cy="152.6" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="699.9" y1="165.0" x2="675.0" y2="196.2" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="699.9" cy="165.0" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="717.7" y1="187.2" x2="681.6" y2="204.6" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<circle cx="717.7" cy="187.2" r="7.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.2"/>
+<text x="660.0" y="312.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">a micelle: negative heads</text>
+<text x="660.0" y="328.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">repel other droplets, so the</text>
+<text x="660.0" y="344.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">grease is rinsed away</text>
+<line x1="500.0" y1="200.0" x2="570.0" y2="200.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="506.5" y="169.0" width="57.0" height="22.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="535.0" y="180.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rubbing</text>
+<text x="400.0" y="36.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">One end loves water, the other loves grease</text>
+</svg>

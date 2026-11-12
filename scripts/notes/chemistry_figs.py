@@ -2593,6 +2593,342 @@ def ester_hydrolysis():
     return s
 
 
+@fig
+def saponification():
+    s = Svg(800, 450, "Saponification: making soap from a fat or oil",
+            "A triglyceride (fat or oil), drawn as three CH2/CH/CH2–O–CO–R groups, is boiled with three sodium hydroxide units. "
+            "It gives glycerol (propane-1,2,3-triol) and three molecules of soap, the sodium salt R–COO−Na+. Below, the process: "
+            "boil the oil with sodium hydroxide, add brine to salt out the soap, skim off the soap curd, then add perfume and "
+            "colour and mould it.")
+    rows = [("CH_2", 110), ("CH", 160), ("CH_2", 210)]
+    for lab, y in rows:
+        chem(s, 60, y, lab + "–O–CO–R", size=18, anchor="start")
+    for y1, y2 in ((122, 148), (172, 198)):
+        s.line(73, y1, 73, y2, width=2.4)
+    s.text(150, 250, "fat or oil (triglyceride)", size=14, color=MUTED)
+    chem(s, 300, 160, "+ 3NaOH", size=18, weight="bold", color=BLUE)
+    s.arrow(358, 160, 432, 160, color=INK, width=3)
+    s.text(395, 142, "boil", size=14, color=ORANGE, weight="bold")
+    for lab, y in rows:
+        chem(s, 450, y, lab + "–OH", size=18, anchor="start")
+    for y1, y2 in ((122, 148), (172, 198)):
+        s.line(463, y1, 463, y2, width=2.4)
+    s.text(490, 250, "glycerol", size=14, color=MUTED)
+    chem(s, 560, 160, "+ 3R–COO^-Na^+", size=18, weight="bold", color=PURPLE, anchor="start")
+    s.text(640, 192, "soap", size=16, weight="bold", color=PURPLE)
+    s.text(400, 288, "R = a long hydrocarbon chain, e.g. C₁₅H₃₁ (palmitic) or C₁₇H₃₅ (stearic)", size=14, color=MUTED)
+    steps = [("1. Boil", "oil + NaOH(aq)"), ("2. Salt out", "add brine (NaCl)"), ("3. Skim", "soap curd floats"),
+             ("4. Finish", "perfume, colour, mould")]
+    cols = [(TEAL, F_TEAL), (BLUE, F_BLUE), (ORANGE, F_AMBER), (PURPLE, F_PURPLE)]
+    bs = [box(s, 110 + i * 193, 380, 170, 64, [a, b], col=c, fill=f, size=15) for i, ((a, b), (c, f)) in enumerate(zip(steps, cols))]
+    for a, b in zip(bs, bs[1:]):
+        link(s, a, b, color=INK, gap=3, width=2)
+    title(s, "fat or oil + sodium hydroxide → glycerol + soap", y=40)
+    return s
+
+
+def _anion(s, hx, hy, tx, ty, r=7):
+    s.line(hx, hy, tx, ty, color=ORANGE, width=3)
+    s.circle(hx, hy, r, fill=BLUE, stroke=INK, width=1.2)
+
+
+@fig
+def soap_action():
+    s = Svg(800, 420, "How soap removes grease",
+            "Panel 1: a soap anion has a long hydrocarbon tail that is hydrophobic and dissolves in grease, and an ionic COO− head "
+            "that is hydrophilic and dissolves in water. Panel 2: on a greasy cloth, the tails bury themselves in the grease and "
+            "the heads stay in the water. Panel 3: rubbing lifts the grease off as a droplet surrounded by negative heads (a "
+            "micelle); droplets repel each other and are rinsed away.")
+    for x0 in (20, 280, 540):
+        s.rect(x0, 70, 240, 290, fill="#eff6ff", stroke=MUTED, width=1.5, rx=10)
+    s.text(140, 92, "1. A soap anion", size=15, weight="bold", color=BLUE)
+    pts = [(50 + i * 14, 200 + (8 if i % 2 else -8)) for i in range(11)]
+    s.polyline(pts, color=ORANGE, width=4)
+    s.circle(210, 200, 16, fill=BLUE, stroke=INK, width=1.5)
+    chem(s, 210, 200, "COO^-", size=10, color="#ffffff", weight="bold")
+    chem(s, 228, 236, "Na^+", size=14, color=MUTED)
+    s.text(110, 236, "hydrocarbon tail", size=13, color=ORANGE, weight="bold")
+    s.text(110, 254, "hydrophobic:", size=13, color=MUTED)
+    s.text(110, 270, "dissolves in grease", size=13, color=MUTED)
+    s.text(196, 146, "ionic head", size=13, color=BLUE, weight="bold")
+    s.text(186, 162, "hydrophilic: in water", size=13, color=MUTED)
+    s.text(400, 92, "2. Tails enter the grease", size=15, weight="bold", color=BLUE)
+    s.rect(290, 300, 220, 50, fill="#e5e7eb", stroke=INK, width=1.5)
+    s.text(400, 330, "cloth", size=13, color=MUTED)
+    cx, cy, rx, ry = 400, 268, 70, 32
+    s.path(f"M {cx - rx} 300 A {rx} {ry * 2} 0 0 1 {cx + rx} 300 Z", color="#a16207", width=2, fill="#fde68a")
+    for k in range(9):
+        a = math.pi + (k + 0.5) * math.pi / 9
+        ex, ey = cx + rx * math.cos(a), 300 + ry * 2 * math.sin(a)
+        hx, hy = cx + (rx + 26) * math.cos(a), 300 + (ry * 2 + 26) * math.sin(a)
+        ix, iy = cx + (rx - 22) * math.cos(a), 300 + (ry * 2 - 22) * math.sin(a)
+        _anion(s, hx, hy, ix, iy)
+    s.text(400, 286, "grease", size=14, weight="bold", color="#a16207")
+    s.text(660, 92, "3. Grease lifted off", size=15, weight="bold", color=BLUE)
+    mx, my, mr = 660, 215, 42
+    s.circle(mx, my, mr, fill="#fde68a", stroke="#a16207", width=2)
+    for k in range(14):
+        a = k * 2 * math.pi / 14
+        _anion(s, mx + (mr + 22) * math.cos(a), my + (mr + 22) * math.sin(a), mx + (mr - 18) * math.cos(a),
+               my + (mr - 18) * math.sin(a))
+    s.text(660, 312, "a micelle: negative heads", size=13, color=MUTED)
+    s.text(660, 328, "repel other droplets, so the", size=13, color=MUTED)
+    s.text(660, 344, "grease is rinsed away", size=13, color=MUTED)
+    s.arrow(500, 200, 570, 200, color=INK, width=2.5)
+    s.label(535, 180, "rubbing", size=12, color=INK)
+    title(s, "One end loves water, the other loves grease", y=36)
+    return s
+
+
+def _ring(s, cx, cy, r=26, fill=F_GREEN, col=GREEN):
+    pts = [(cx + r * math.cos(math.radians(30 + 60 * k)), cy + r * math.sin(math.radians(30 + 60 * k))) for k in range(6)]
+    s.polygon(pts, fill=fill, stroke=col, width=2.5)
+    ox, oy = pts[4]
+    s.circle(ox, oy, 8, fill="#ffffff", stroke=col, width=1.5)
+    s.text(ox, oy + 1, "O", size=10, weight="bold", color=RED)
+    return pts
+
+
+@fig
+def carbohydrate_types():
+    s = Svg(800, 440, "Monosaccharides, disaccharides and polysaccharides",
+            "Glucose, a monosaccharide, drawn as a single six-membered ring. Maltose or sucrose, a disaccharide, is two rings "
+            "joined by an oxygen link. Starch or cellulose, a polysaccharide, is a long chain of many glucose rings. Rings join "
+            "by condensation, losing water; hydrolysis with acid or enzymes reverses this.")
+    cols = [(130, "Monosaccharide", 1, "glucose, fructose", "C₆H₁₂O₆", "sweet, soluble, reducing"),
+            (390, "Disaccharide", 2, "maltose, sucrose, lactose", "C₁₂H₂₂O₁₁", "sweet, soluble"),
+            (655, "Polysaccharide", 3, "starch, cellulose, glycogen", "(C₆H₁₀O₅)ₙ", "not sweet, insoluble")]
+    for cx, head, n, ex, f, props in cols:
+        s.rect(cx - 125, 60, 250, 250, fill="#ffffff", stroke=MUTED, width=1.5, rx=10)
+        s.text(cx, 84, head, size=16, weight="bold", color=BLUE)
+        gap = 74
+        xs = [cx + (i - (n - 1) / 2) * gap for i in range(n)]
+        for i, x in enumerate(xs):
+            _ring(s, x, 160)
+            if i:
+                s.line(xs[i - 1] + 23, 160, x - 23, 160, width=2.4)
+                s.circle((xs[i - 1] + x) / 2, 160, 7, fill="#ffffff", stroke=INK, width=1.2)
+                s.text((xs[i - 1] + x) / 2, 161, "O", size=9, weight="bold", color=RED)
+        if n == 3:
+            s.text(xs[0] - 42, 160, "…", size=20, weight="bold")
+            s.text(xs[-1] + 42, 160, "…", size=20, weight="bold")
+        s.text(cx, 222, f, size=16, weight="bold")
+        s.text(cx, 248, ex, size=14, color=INK)
+        s.text(cx, 274, props, size=13, color=MUTED)
+    s.arrow(150, 352, 640, 352, color=GREEN, width=3)
+    s.label(395, 352, "condensation: rings join, losing H₂O", size=14, color=GREEN, weight="bold")
+    s.arrow(640, 396, 150, 396, color=ORANGE, width=3)
+    s.label(395, 396, "hydrolysis: + H₂O (dilute acid or enzymes)", size=14, color=ORANGE, weight="bold")
+    title(s, "Carbohydrates: Cₓ(H₂O)ᵧ, built from sugar units", y=32)
+    return s
+
+
+def _tube_row(s, items, ytop=120, h=150, w=46):
+    """Test tubes in a row. items: (x, liquid, ppt_or_None, heading_lines, result_lines, result_colour)."""
+    for x, liq, ppt, heads, res, rcol in items:
+        for i, hl in enumerate(heads):
+            s.text(x, ytop - 40 + i * 17 - (len(heads) - 1) * 8, hl, size=13, weight="bold" if i == 0 else "normal",
+                   color=INK if i == 0 else MUTED)
+        test_tube(s, x - w / 2, ytop, w, h, frac=0.55, liquid=liq)
+        if ppt:
+            r = w / 2
+            yb = ytop + h
+            s.path(f"M {x - w / 2 + 2} {yb - r - 6} L {x - w / 2 + 2} {yb - r} A {r - 2} {r - 2} 0 0 0 {x + w / 2 - 2} {yb - r} "
+                   f"L {x + w / 2 - 2} {yb - r - 6} Z", color="none", width=0, fill=ppt)
+        for i, rl in enumerate(res):
+            s.text(x, ytop + h + 24 + i * 17, rl, size=13, weight="bold" if i == 0 else "normal", color=rcol if i == 0 else MUTED)
+
+
+@fig
+def sugar_tests():
+    s = Svg(800, 400, "Tests for starch and reducing sugars",
+            "Starch with iodine solution turns blue-black. Glucose heated with Benedict's or Fehling's solution gives a "
+            "brick-red precipitate. Sucrose heated with Benedict's solution stays blue, because it is not a reducing sugar. "
+            "Sucrose first boiled with dilute hydrochloric acid and neutralised then gives a brick-red precipitate, because "
+            "hydrolysis has produced glucose and fructose.")
+    _tube_row(s, [
+        (110, "#312e81", None, ["Starch", "+ iodine solution"], ["blue-black", "starch present"], "#312e81"),
+        (300, "#fb923c", "#b91c1c", ["Glucose", "+ Benedict's, heat"], ["brick-red ppt", "reducing sugar"], RED),
+        (490, "#60a5fa", None, ["Sucrose", "+ Benedict's, heat"], ["stays blue", "not reducing"], BLUE),
+        (690, "#fb923c", "#b91c1c", ["Sucrose boiled with HCl,", "neutralised, + Benedict's"], ["brick-red ppt", "hydrolysed to glucose"], RED)])
+    title(s, "Iodine finds starch; Benedict's or Fehling's finds reducing sugars", y=30)
+    return s
+
+
+@fig
+def protein_tests():
+    s = Svg(800, 400, "Tests for proteins",
+            "Biuret test: sodium hydroxide then a few drops of dilute copper(II) sulphate give a violet colour. Millon's reagent, "
+            "warmed, gives a brick-red or pink precipitate. Xanthoproteic test: concentrated nitric acid, warmed, gives a yellow "
+            "colour that turns orange with ammonia. Heating egg white coagulates it into a white solid.")
+    _tube_row(s, [
+        (110, "#8b5cf6", None, ["Biuret test", "NaOH + dilute CuSO₄"], ["violet / purple", "peptide bonds"], PURPLE),
+        (300, "#fecdd3", "#be123c", ["Millon's reagent", "warm"], ["brick-red ppt", "protein present"], RED),
+        (490, "#facc15", None, ["Conc. HNO₃, warm", "(xanthoproteic test)"], ["yellow", "orange with NH₃"], "#a16207"),
+        (690, "#e5e7eb", None, ["Egg white", "heated"], ["white solid", "coagulated (denatured)"], MUTED)])
+    title(s, "Colour tests show that a food contains protein", y=30)
+    return s
+
+
+@fig
+def peptide_bond():
+    s = Svg(800, 420, "Forming a peptide bond",
+            "Two amino acids, each H2N–CHR–COOH. The OH of the first amino acid's carboxyl group and an H from the second "
+            "amino acid's amino group leave as water. The new –CO–NH– link between them is the peptide bond, giving a dipeptide.")
+    y1 = 130
+    disp(s, 80, y1, [{"atom": "N", "left": "H", "up": "H"}, CH(down="R"), {"atom": "C", "up": "=O"}])
+    _bond(s, 204, y1, 250, y1)
+    chem(s, 262, y1, "OH", size=17, weight="bold", color=RED)
+    s.text(316, y1, "+", size=26, weight="bold")
+    chem(s, 362, y1, "H", size=17, weight="bold", color=RED)
+    _bond(s, 370, y1, 414, y1)
+    disp(s, 414, y1, [{"atom": "N", "up": "H"}, CH(down="R′"), {"atom": "C", "up": "=O", "right": "OH"}])
+    s.rect(244, y1 - 20, 134, 40, fill="none", stroke=RED, width=2, rx=10, dash="5 4")
+    s.text(311, y1 + 40, "→ H₂O", size=15, weight="bold", color=RED)
+    s.text(142, 210, "amino acid 1", size=14, color=MUTED)
+    s.text(476, 210, "amino acid 2", size=14, color=MUTED)
+    s.text(400, 248, "condensation: water is lost", size=15, weight="bold", color=BLUE)
+    s.arrow(400, 260, 400, 282, color=BLUE, width=2.5)
+    y2 = 340
+    disp(s, 130, y2, [{"atom": "N", "left": "H", "up": "H"}, CH(down="R"), {"atom": "C", "up": "=O"},
+                      {"atom": "N", "down": "H"}, CH(down="R′"), {"atom": "C", "up": "=O", "right": "OH"}])
+    s.rect(236, y2 - 64, 98, 112, fill="none", stroke=RED, width=2.2, rx=10, dash="6 4")
+    s.text(285, y2 + 66, "peptide bond, –CO–NH–", size=14, weight="bold", color=RED)
+    s.text(600, y2 + 66, "a dipeptide", size=14, color=MUTED)
+    s.text(640, 130, "R and R′ are side", size=13, color=MUTED, anchor="start")
+    s.text(640, 148, "groups (H in glycine,", size=13, color=MUTED, anchor="start")
+    s.text(640, 166, "CH₃ in alanine)", size=13, color=MUTED, anchor="start")
+    title(s, "–COOH + H₂N– → –CO–NH– + H₂O", y=32)
+    return s
+
+
+@fig
+def protein_structure():
+    s = Svg(800, 330, "Protein structure and denaturation",
+            "Primary structure: a chain of amino acids in a particular order. Secondary structure: the chain coils into a helix "
+            "(or folds into sheets), held by hydrogen bonds. Tertiary structure: the coiled chain folds into a precise 3-D shape, "
+            "as in an enzyme. Denaturation by heat, strong acids or alkalis, heavy-metal ions or alcohol unfolds the shape and "
+            "destroys the protein's function, though the chain is not broken.")
+    panels = [(105, "Primary", "order of amino acids"), (300, "Secondary", "helix or sheet"),
+              (495, "Tertiary", "3-D folded shape"), (695, "Denatured", "shape lost")]
+    for cx, head, sub in panels:
+        s.rect(cx - 90, 56, 180, 240, fill="#ffffff", stroke=MUTED if head != "Denatured" else RED, width=1.5, rx=10)
+        s.text(cx, 78, head, size=16, weight="bold", color=BLUE if head != "Denatured" else RED)
+        s.text(cx, 276, sub, size=13, color=MUTED)
+    cols = [F_GREEN, F_BLUE, F_AMBER, F_PURPLE, F_RED]
+    stroke = [GREEN, BLUE, ORANGE, PURPLE, RED]
+    for i in range(9):
+        x, y = 105 + (i % 3 - 1) * 46, 112 + i // 3 * 52
+        if i % 3 < 2:
+            s.line(x, y, x + 46, y, width=2)
+        elif i < 8:
+            s.line(x, y, x - 92, y + 52, width=2, dash="3 3")
+    for i in range(9):
+        x, y = 105 + (i % 3 - 1) * 46, 112 + i // 3 * 52
+        s.circle(x, y, 13, fill=cols[i % 5], stroke=stroke[i % 5], width=2)
+    s.text(105, 248, "Gly–Ala–Ser–…", size=12, color=MUTED)
+    pts = [(300 + 30 * math.cos(t / 6), 104 + t * 1.3 + 9 * math.sin(t / 6)) for t in range(0, 115)]
+    s.polyline(pts, color=BLUE, width=3)
+    pts = []
+    for k in range(260):
+        t = k / 20
+        r = 52 + 14 * math.sin(3 * t) + 8 * math.cos(5 * t)
+        pts.append((495 + r * math.cos(t) * (0.6 + 0.4 * math.sin(t / 3)), 172 + r * math.sin(t) * (0.6 + 0.4 * math.cos(t / 2))))
+    s.polyline(pts, color=ORANGE, width=2.6)
+    pts = [(620 + k * 3, 172 + 34 * math.sin(k / 6) + 14 * math.sin(k / 2.3)) for k in range(51)]
+    s.polyline(pts, color=RED, width=2.6)
+    s.arrow(587, 172, 610, 172, color=RED, width=2.5)
+    s.text(695, 236, "heat, acid, alkali,", size=12, color=MUTED)
+    s.text(695, 252, "heavy metals, alcohol", size=12, color=MUTED)
+    title(s, "The order of amino acids decides how the chain folds", y=28)
+    return s
+
+
+@fig
+def polymerisation():
+    s = Svg(800, 590, "Addition and condensation polymerisation",
+            "Addition: many ethene molecules, each with a C=C double bond, join into one long chain of poly(ethene); the double "
+            "bonds open and nothing else is formed. Condensation: a dicarboxylic acid and a diol join end to end through ester "
+            "links, and a small molecule of water is released at every link, giving a polyester.")
+    s.rect(20, 50, 760, 284, fill="#ffffff", stroke=MUTED, width=1.5, rx=10)
+    s.text(40, 74, "Addition polymerisation: C=C bonds open; the polymer is the only product", size=15, weight="bold",
+           color=BLUE, anchor="start")
+    for i, x0 in enumerate((150, 330, 510)):
+        disp(s, x0, 140, [CH(next=2), CH()], size=16)
+        if i < 2:
+            s.text(x0 + 121, 140, "+", size=22, weight="bold")
+    s.text(640, 140, "+ …", size=20, weight="bold")
+    s.text(100, 140, "ethene", size=13, color=MUTED, anchor="end")
+    s.arrow(400, 194, 400, 228, color=BLUE, width=2.5)
+    s.text(414, 211, "high pressure, catalyst", size=13, color=BLUE, anchor="start")
+    y = 284
+    xs = [230 + 62 * i for i in range(6)]
+    disp(s, xs[0], y, [CH() for _ in range(6)], size=16)
+    s.line(xs[0] - 50, y, xs[0] - 13, y, width=2.4)
+    s.line(xs[-1] + 13, y, xs[-1] + 50, y, width=2.4)
+    s.text(xs[0] - 66, y, "…", size=20, weight="bold")
+    s.text(xs[-1] + 66, y, "…", size=20, weight="bold")
+    s.text(640, y + 2, "poly(ethene)", size=15, weight="bold", color=BLUE, anchor="start")
+    s.rect(20, 356, 760, 214, fill="#ffffff", stroke=MUTED, width=1.5, rx=10)
+    s.text(40, 380, "Condensation polymerisation: a small molecule (water) is lost at every link", size=15, weight="bold",
+           color=GREEN, anchor="start")
+
+    def unit(cx, cy, kind):
+        col, fill = (BLUE, F_BLUE) if kind == "A" else (GREEN, F_GREEN)
+        s.rect(cx - 26, cy - 16, 52, 32, fill=fill, stroke=col, width=2, rx=8)
+    unit(150, 430, "A")
+    chem(s, 118, 430, "HOOC–", size=14, anchor="end")
+    chem(s, 182, 430, "–COOH", size=14, anchor="start")
+    s.text(270, 430, "+", size=22, weight="bold")
+    unit(390, 430, "B")
+    chem(s, 358, 430, "HO–", size=14, anchor="end")
+    chem(s, 422, 430, "–OH", size=14, anchor="start")
+    s.text(150, 458, "dicarboxylic acid", size=12, color=MUTED)
+    s.text(390, 458, "diol", size=12, color=MUTED)
+    s.arrow(500, 430, 560, 430, color=GREEN, width=2.5)
+    chem(s, 600, 430, "– H_2O", size=16, weight="bold", color=RED, anchor="start")
+    y = 522
+    xs = [90 + 128 * i for i in range(5)]
+    for i, x in enumerate(xs):
+        unit(x, y, "A" if i % 2 == 0 else "B")
+        if i < 4:
+            chem(s, x + 64, y, "–CO–O–" if i % 2 == 0 else "–O–CO–", size=13, weight="bold", color=RED)
+    s.text(xs[-1] + 50, y, "…", size=20, weight="bold")
+    s.text(400, 556, "a polyester (e.g. Terylene): ester links join the units; nylon uses amide links –CO–NH–", size=13,
+           color=MUTED)
+    title(s, "Monomers join into polymers in two ways", y=28)
+    return s
+
+
+@fig
+def thermoplastic_thermoset():
+    s = Svg(800, 340, "Thermoplastics and thermosetting plastics",
+            "Left: a thermoplastic has separate long chains held by weak forces; heating lets them slide, so it softens and can "
+            "be remoulded (poly(ethene), PVC, nylon). Right: a thermosetting plastic has chains joined by strong cross-links; "
+            "it does not soften on heating and chars instead (Bakelite, melamine).")
+    for x0, head, col in ((20, "Thermoplastic", BLUE), (410, "Thermosetting", RED)):
+        s.rect(x0, 50, 370, 270, fill="#ffffff", stroke=MUTED, width=1.5, rx=10)
+        s.text(x0 + 185, 74, head, size=16, weight="bold", color=col)
+
+    def chain(x0, x1, yb, k):
+        return [(x, yb + 10 * math.sin(x / 18 + k) + 6 * math.sin(x / 7 + 2 * k)) for x in range(x0, x1 + 1, 6)]
+    for half, x0 in ((0, 40), (1, 430)):
+        chains = [chain(x0, x0 + 330, 104 + 36 * k, k * 1.7) for k in range(5)]
+        for c in chains:
+            s.polyline(c, color=BLUE if half == 0 else INK, width=2.6)
+        if half:
+            for k in range(4):
+                for j in (6 + 3 * k, 26 + 4 * (k % 2), 44 - 2 * k):
+                    a, b = chains[k][j], chains[k + 1][j]
+                    s.line(a[0], a[1] + 3, b[0], b[1] - 3, color=RED, width=2.6)
+    s.text(205, 278, "separate chains, weak forces between them", size=13, color=MUTED)
+    s.text(205, 298, "softens on heating; can be remoulded", size=13, weight="bold", color=BLUE)
+    s.text(595, 278, "strong cross-links (red) join the chains", size=13, color=MUTED)
+    s.text(595, 298, "does not soften; chars on strong heating", size=13, weight="bold", color=RED)
+    title(s, "Cross-links decide whether a plastic melts", y=28)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:
