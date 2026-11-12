@@ -420,6 +420,152 @@
       "sort_order": 2
     },
     {
+      "file": "chemistry-acids-1.md",
+      "subject": "Chemistry",
+      "topic": "acids-bases-and-ph",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Acids and bases: definitions, properties and strength",
+      "est_minutes": 9,
+      "sort_order": 1,
+      "retire": [
+        "acids,-bases,-and-ph"
+      ]
+    },
+    {
+      "file": "chemistry-acids-2.md",
+      "subject": "Chemistry",
+      "topic": "acids-bases-and-ph",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "pH, indicators and neutralisation",
+      "est_minutes": 7,
+      "sort_order": 2
+    },
+    {
+      "file": "chemistry-salts-1.md",
+      "subject": "Chemistry",
+      "topic": "salts-and-their-preparation",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Salts: types, solubility and uses",
+      "est_minutes": 7,
+      "sort_order": 1,
+      "retire": [
+        "salts-and-their-preparation"
+      ]
+    },
+    {
+      "file": "chemistry-salts-2.md",
+      "subject": "Chemistry",
+      "topic": "salts-and-their-preparation",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Preparing salts and the hydrolysis of salts",
+      "est_minutes": 8,
+      "sort_order": 2
+    },
+    {
+      "file": "chemistry-titration-1.md",
+      "subject": "Chemistry",
+      "topic": "acid-base-titration",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Titration: apparatus, procedure and indicators",
+      "est_minutes": 8,
+      "sort_order": 1,
+      "retire": [
+        "acid-base-titration"
+      ]
+    },
+    {
+      "file": "chemistry-titration-2.md",
+      "subject": "Chemistry",
+      "topic": "acid-base-titration",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Titration calculations",
+      "est_minutes": 8,
+      "sort_order": 2
+    },
+    {
+      "file": "chemistry-water-1.md",
+      "subject": "Chemistry",
+      "topic": "water-and-its-properties",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Water: composition, properties and hardness",
+      "est_minutes": 8,
+      "sort_order": 1,
+      "retire": [
+        "municipal-water-treatment-protocol",
+        "water-and-its-properties"
+      ]
+    },
+    {
+      "file": "chemistry-water-2.md",
+      "subject": "Chemistry",
+      "topic": "water-and-its-properties",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Water treatment and water pollution",
+      "est_minutes": 7,
+      "sort_order": 2
+    },
+    {
+      "file": "chemistry-solutions-1.md",
+      "subject": "Chemistry",
+      "topic": "solutions-and-solubility",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Solutions, suspensions and colloids",
+      "est_minutes": 8,
+      "sort_order": 1,
+      "retire": [
+        "solutions-and-solubility"
+      ]
+    },
+    {
+      "file": "chemistry-solutions-2.md",
+      "subject": "Chemistry",
+      "topic": "solutions-and-solubility",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Solubility, solubility curves and crystallisation",
+      "est_minutes": 8,
+      "sort_order": 2
+    },
+    {
       "file": "english-language-nouns.md",
       "subject": "English Language",
       "topic": "nouns",

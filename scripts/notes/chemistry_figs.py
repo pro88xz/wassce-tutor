@@ -1101,6 +1101,224 @@ def crucible_mgo():
     return s
 
 
+# ═══ Group 3: acids, bases, salts and solutions ══════════════════════════════
+
+PH_COLOURS = ["#b91c1c", "#dc2626", "#ea580c", "#f97316", "#f59e0b", "#eab308", "#a3e635", "#22c55e",
+              "#14b8a6", "#0ea5e9", "#3b82f6", "#4f46e5", "#6d28d9", "#7c3aed", "#581c87"]
+
+
+@fig
+def ph_scale():
+    s = Svg(800, 430, "The pH scale",
+            "The pH scale runs from 0 to 14. Below 7 is acidic (red to yellow on universal indicator), 7 is neutral (green) and "
+            "above 7 is alkaline (blue to purple). Examples: stomach acid about 1, lime juice 2, vinegar 3, palm wine and "
+            "rainwater 4 to 6, pure water 7, blood 7.4, sea water 8, baking soda 9, soap 10, ammonia solution 11, bleach 12, "
+            "sodium hydroxide 14.")
+    x0, w, y = 50, 700 / 15, 220
+    for i in range(15):
+        s.rect(x0 + i * w, y, w, 54, fill=PH_COLOURS[i], stroke="#ffffff", width=1.5)
+        s.text(x0 + i * w + w / 2, y + 27, str(i), size=17, weight="bold", color="#ffffff")
+    s.text(x0 + 3.5 * w, 110, "ACIDIC", size=17, weight="bold", color=RED)
+    s.text(x0 + 7.5 * w, 110, "NEUTRAL", size=17, weight="bold", color=GREEN)
+    s.text(x0 + 11.5 * w, 110, "ALKALINE", size=17, weight="bold", color=PURPLE)
+    s.arrow(x0 + 6.4 * w, 76, x0 + 0.2 * w, 76, color=RED, width=2.5)
+    s.text(x0 + 3.4 * w, 60, "stronger acid", size=14, color=RED)
+    s.arrow(x0 + 8.6 * w, 76, x0 + 14.8 * w, 76, color=PURPLE, width=2.5)
+    s.text(x0 + 11.6 * w, 60, "stronger alkali", size=14, color=PURPLE)
+    above = [(1, "stomach acid", 0), (2, "lime juice", 1), (3, "vinegar", 0), (7, "pure water", 0), (10, "soap", 0),
+             (12, "bleach", 1)]
+    below = [(4, "palm wine"), (5.6, "rainwater"), (7.4, "blood"), (8, "sea water"), (9, "baking soda"), (11, "ammonia"),
+             (14, "NaOH")]
+    for v, t in below:
+        x = x0 + v * w + w / 2
+        s.line(x, y + 56, x, y + 84, color=MUTED, width=1.5)
+        s.text(x, y + 100 + (16 if v in (5.6, 8, 11) else 0), t, size=13, color=INK)
+    for v, t, tier in above:
+        x = x0 + v * w + w / 2
+        top = y - 30 - tier * 24
+        s.line(x, y - 2, x, top + 8, color=MUTED, width=1.5)
+        s.label(x, top, t, size=13)
+    s.text(400, 410, "colours are those of universal indicator", size=14, color=MUTED, italic=True)
+    return s
+
+
+@fig
+def titration_setup():
+    s = Svg(780, 480, "Titration apparatus",
+            "A burette clamped vertically above a conical flask standing on a white tile. The conical flask holds a measured "
+            "volume of alkali from a pipette and a few drops of indicator. Acid is run in from the burette while the flask is "
+            "swirled. The burette is read at the bottom of the meniscus with the eye level with it.")
+    s.rect(60, 440, 200, 12, fill=METAL, stroke=INK, width=2)
+    s.rect(78, 70, 10, 372, fill=METAL, stroke=INK, width=2)
+    s.rect(88, 140, 70, 10, fill=METAL, stroke=INK, width=2)
+    s.rect(150, 132, 26, 26, fill="#ffffff", stroke=INK, width=2, rx=3)
+    bx = 163
+    s.rect(bx - 9, 60, 18, 250, fill="#ffffff", stroke=INK, width=2.5)
+    s.rect(bx - 7, 110, 14, 198, fill=F_RED, stroke="none", width=0)
+    for k in range(12):
+        s.line(bx - 9, 70 + k * 20, bx - 2, 70 + k * 20, color=INK, width=1.3)
+    s.path(f"M {bx - 9} 310 L {bx - 3} 330 L {bx - 3} 352 M {bx + 9} 310 L {bx + 3} 330 L {bx + 3} 352", color=INK, width=2.5)
+    s.rect(bx - 12, 318, 24, 7, fill=METAL, stroke=INK, width=1.5)
+    s.text(bx + 24, 140, "burette (acid)", size=15, anchor="start")
+    s.text(bx + 24, 322, "tap", size=15, anchor="start")
+    conical(s, bx, 432, 110, 90, 0.35, liquid="#fbcfe8")
+    s.rect(bx - 80, 432, 160, 10, fill="#ffffff", stroke=MUTED, width=2)
+    s.text(bx + 70, 410, "conical flask: alkali + indicator", size=15, anchor="start")
+    s.text(bx + 88, 445, "white tile", size=15, anchor="start")
+    # meniscus inset
+    ix, iy = 560, 170
+    s.rect(ix - 120, iy - 120, 240, 240, fill="#ffffff", stroke=MUTED, width=2, rx=10)
+    s.text(ix, iy - 98, "Reading the burette", size=16, weight="bold")
+    s.rect(ix - 30, iy - 80, 60, 170, fill="#ffffff", stroke=INK, width=2.5)
+    s.path(f"M {ix - 28} {iy - 2} Q {ix} {iy + 18} {ix + 28} {iy - 2} L {ix + 28} {iy + 88} L {ix - 28} {iy + 88} Z",
+           color="none", width=0, fill=F_RED)
+    s.path(f"M {ix - 28} {iy - 2} Q {ix} {iy + 18} {ix + 28} {iy - 2}", color=RED, width=2)
+    for k, lab in [(0, "22.0"), (1, "22.5"), (2, "23.0")]:
+        yy = iy - 40 + k * 30
+        s.line(ix - 30, yy, ix - 10, yy, color=INK, width=1.5)
+        s.text(ix - 36, yy, lab, size=13, anchor="end")
+    s.line(ix - 110, iy + 8, ix + 110, iy + 8, color=BLUE, width=1.5, dash="5 4")
+    s.text(ix + 34, iy + 30, "eye level with the", size=13, color=BLUE, anchor="start")
+    s.text(ix + 34, iy + 47, "bottom of meniscus", size=13, color=BLUE, anchor="start")
+    s.text(ix, 330, "reads 22.80 cm³", size=16, weight="bold", color=RED)
+    return s
+
+
+@fig
+def titration_curve():
+    s = Svg(760, 420, "pH change during a titration and the choice of indicator",
+            "As sodium hydroxide is added to hydrochloric acid, the pH rises slowly from about 1, then jumps from about 3 to 11 "
+            "at the end point (25 cm3), then levels off near 13. Both methyl orange (changes at pH 3.1 to 4.4) and "
+            "phenolphthalein (8.3 to 10) change colour within the steep part, so either can be used for a strong acid and "
+            "strong base.")
+    p = Plot(s, 90, 350, 560, 280, (0, 50), (0, 14))
+    p.axes("volume of NaOH added (cm³)", "pH", xticks=[10, 20, 25, 30, 40, 50], yticks=[0, 2, 4, 6, 7, 8, 10, 12, 14], zero=False)
+    def ph(v):
+        a0, c = 0.1 * 25, 0.1
+        if v < 24.999:
+            h = (a0 - c * v) / (25 + v) * 1000 / 1000
+            return -math.log10(max(h, 1e-14))
+        if v > 25.001:
+            oh = (c * v - a0) / (25 + v)
+            return 14 + math.log10(oh)
+        return 7
+    pts = [(v / 10, ph(v / 10)) for v in range(0, 501)]
+    p.poly([pt for pt in pts if not (24.9 < pt[0] < 25.1)] [:249] + [(25, 7)] + [pt for pt in pts if pt[0] > 25.1], color=BLUE, width=3)
+    for lo, hi, col, name in [(3.1, 4.4, ORANGE, "methyl orange 3.1–4.4"), (8.3, 10, PURPLE, "phenolphthalein 8.3–10")]:
+        x0, y0 = p.P(0, hi)
+        x1, y1 = p.P(50, lo)
+        s.rect(x0, y0, x1 - x0, y1 - y0, fill=col, stroke="none", width=0, opacity=0.18)
+        p.text(48, (lo + hi) / 2, name, size=14, weight="bold", color=col, anchor="end")
+    p.guide(25, 7, to_y=False)
+    p.text(25, 7, "end point", dx=10, size=14, weight="bold", anchor="start")
+    title(s, "Strong acid titrated with strong alkali", y=28)
+    return s
+
+
+@fig
+def solubility_curves():
+    s = Svg(760, 440, "Solubility curves",
+            "Solubility in grams per 100 g of water against temperature. Potassium nitrate rises steeply from 13 g at 0 °C to "
+            "169 g at 80 °C; copper(II) sulphate rises from 14 g to 55 g; sodium chloride hardly changes, about 36 to 38 g. "
+            "Cooling saturated potassium nitrate solution from 60 °C (110 g) to 20 °C (32 g) crystallises about 78 g.")
+    p = Plot(s, 90, 370, 560, 300, (0, 80), (0, 180))
+    p.axes("temperature (°C)", "solubility (g per 100 g water)", xticks=[0, 20, 40, 60, 80], yticks=[0, 40, 80, 120, 160],
+           zero=False)
+    kno3 = [(0, 13.3), (20, 31.6), (40, 63.9), (60, 110), (80, 169)]
+    cuso4 = [(0, 14.3), (20, 20.7), (40, 28.5), (60, 40), (80, 55)]
+    nacl = [(0, 35.7), (20, 36.0), (40, 36.6), (60, 37.3), (80, 38.4)]
+    p.smooth(kno3, color=RED, width=3.5)
+    p.smooth(cuso4, color=BLUE, width=3.5)
+    p.smooth(nacl, color=GREEN, width=3.5)
+    chem(s, p.X(66), p.Y(150), "KNO_3", size=16, weight="bold", color=RED)
+    chem(s, p.X(74), p.Y(62), "CuSO_4", size=16, weight="bold", color=BLUE)
+    chem(s, p.X(74), p.Y(28), "NaCl", size=16, weight="bold", color=GREEN)
+    p.guide(60, 110)
+    p.guide(20, 31.6)
+    p.dot(60, 110, color=RED)
+    p.dot(20, 31.6, color=RED)
+    x = p.X(40)
+    s.arrow(p.X(58), p.Y(110), p.X(22), p.Y(110), color=PURPLE, width=2)
+    s.text(x, p.Y(110) - 14, "cool 60 °C → 20 °C", size=14, color=PURPLE, weight="bold")
+    s.text(p.X(2), p.Y(150), "110 − 32 ≈ 78 g crystallises", size=14, color=PURPLE, weight="bold", anchor="start")
+    return s
+
+
+@fig
+def water_treatment():
+    s = Svg(800, 420, "Treating water for a town supply",
+            "Water from a dam or river is screened, then alum is added to coagulate fine particles, which settle in sedimentation "
+            "tanks. The water is filtered through sand beds, chlorinated to kill germs, and stored in a reservoir before being "
+            "piped to homes.")
+    steps = [("Intake", "dam or river", BLUE, F_BLUE), ("Screening", "removes leaves, fish", TEAL, F_TEAL),
+             ("Coagulation", "alum added", PURPLE, F_PURPLE), ("Sedimentation", "flocs settle", ORANGE, F_AMBER),
+             ("Filtration", "sand beds", GREEN, F_GREEN), ("Chlorination", "kills germs", RED, F_RED),
+             ("Storage", "covered reservoir", BLUE, F_BLUE), ("Supply", "pipes to homes", INK, F_GREY)]
+    xs = [110, 300, 490, 680]
+    pos = [(xs[i % 4], 130 if i < 4 else 290) for i in range(8)]
+    pos = pos[:4] + list(reversed(pos[4:]))
+    boxes = []
+    for (x, y), (a, b, col, fill) in zip(pos, steps):
+        boxes.append(box(s, x, y, 166, 70, [a, b], col, fill, size=16))
+    for a, b in zip(boxes, boxes[1:]):
+        link(s, a, b, color=INK, gap=4)
+    s.text(400, 390, "e.g. Guma Valley treatment works supplying Freetown", size=15, color=MUTED, italic=True)
+    title(s, "From raw water to tap water", y=40)
+    return s
+
+
+@fig
+def salt_preparation():
+    s = Svg(800, 470, "Choosing a method to prepare a salt",
+            "If the salt is insoluble, prepare it by precipitation (mixing two solutions), then filter, wash and dry. If it is "
+            "soluble and a sodium, potassium or ammonium salt, use titration of acid with alkali. Other soluble salts are made by "
+            "adding excess metal, insoluble base or carbonate to the acid, filtering off the excess and crystallising.")
+    q1 = box(s, 400, 76, 300, 52, ["Is the salt soluble in water?"], INK, F_GREY, size=17)
+    no = box(s, 150, 190, 250, 86, ["No: precipitation", "mix two solutions", "e.g. BaSO_4, AgCl, PbI_2"], RED, F_RED, size=16)
+    q2 = box(s, 560, 190, 330, 70, ["Yes: is it a Na, K or", "NH_4 salt?"], INK, F_GREY, size=16, bold_first=False)
+    s.path("M 330 102 L 150 140", color=RED, width=2.5, arrow="end")
+    s.text(228, 112, "no", size=15, weight="bold", color=RED)
+    s.path("M 470 102 L 560 150", color=GREEN, width=2.5, arrow="end")
+    s.text(540, 116, "yes", size=15, weight="bold", color=GREEN)
+    t = box(s, 430, 350, 250, 86, ["Yes: titration", "acid + alkali", "e.g. NaCl, KNO_3"], BLUE, F_BLUE, size=16)
+    e = box(s, 690, 350, 210, 86, ["No: excess solid", "metal, oxide or", "carbonate + acid"], GREEN, F_GREEN, size=16)
+    s.path("M 520 225 L 450 302", color=BLUE, width=2.5, arrow="end")
+    s.text(460, 258, "yes", size=15, weight="bold", color=BLUE)
+    s.path("M 610 225 L 680 302", color=GREEN, width=2.5, arrow="end")
+    s.text(672, 258, "no", size=15, weight="bold", color=GREEN)
+    s.text(150, 260, "filter, wash, dry", size=15, color=RED)
+    s.text(430, 418, "repeat without indicator; crystallise", size=14, color=BLUE)
+    s.text(690, 418, "filter off excess; crystallise", size=14, color=GREEN)
+    title(s, "Start with the solubility of the salt", y=24)
+    return s
+
+
+@fig
+def tyndall_effect():
+    s = Svg(760, 330, "The Tyndall effect",
+            "A beam of light passes invisibly through a true solution such as salt solution, but its path is visible through a "
+            "colloid such as starch solution or diluted milk, because the colloid particles scatter the light.")
+    for x, label, colloid in [(250, "salt solution (true solution)", False), (560, "starch solution (colloid)", True)]:
+        beaker(s, x - 70, 260, 140, 150, 0.8, liquid="#e0f2fe" if not colloid else "#f1f5f9")
+        s.text(x, 290, label, size=15, weight="bold")
+        if colloid:
+            s.polygon([(x - 70, 168), (x + 70, 160), (x + 70, 192), (x - 70, 184)], fill="#fde047", stroke="none", opacity=0.75)
+            import random
+            rnd = random.Random(5)
+            for _ in range(40):
+                s.circle(rnd.uniform(x - 66, x + 66), rnd.uniform(140, 250), 1.6, fill=MUTED, stroke=MUTED, width=0.5)
+            s.text(x, 80, "beam visible", size=15, color=ORANGE, weight="bold")
+        else:
+            s.text(x, 80, "beam invisible", size=15, color=MUTED, weight="bold")
+    s.rect(40, 160, 50, 30, fill=INK, stroke=INK, width=1, rx=4)
+    s.text(65, 140, "torch", size=14)
+    s.line(90, 175, 180, 175, color="#facc15", width=6)
+    s.line(320, 175, 490, 175, color="#facc15", width=6)
+    s.line(630, 176, 720, 176, color="#facc15", width=6)
+    title(s, "Colloid particles scatter light", y=30)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:
