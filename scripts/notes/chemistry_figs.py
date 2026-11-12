@@ -1855,6 +1855,161 @@ def nitrogen_cycle():
     return s
 
 
+@fig
+def contact_process():
+    s = Svg(800, 420, "The Contact process",
+            "Sulphur is burned in air to give sulphur(IV) oxide, which is purified and dried, then oxidised to sulphur(VI) oxide over "
+            "vanadium(V) oxide at about 450 °C and 1 to 2 atm. The sulphur(VI) oxide is absorbed in concentrated sulphuric acid to "
+            "form oleum, which is diluted with the right amount of water to give sulphuric acid.")
+    steps = [("Burner", "S + O₂ → SO₂", ORANGE, F_AMBER), ("Purifier", "dust removed, dried", TEAL, F_TEAL),
+             ("Converter", "V₂O₅, 450 °C, 1–2 atm", RED, F_RED), ("Absorber", "SO₃ into conc. H₂SO₄", PURPLE, F_PURPLE),
+             ("Oleum", "H₂S₂O₇", BLUE, F_BLUE), ("Diluted", "H₂SO₄ (98%)", GREEN, F_GREEN)]
+    pos = [(130, 120), (400, 120), (670, 120), (670, 290), (400, 290), (130, 290)]
+    boxes = [box(s, x, y, 220, 70, [a, b], col, fill, size=16) for (x, y), (a, b, col, fill) in zip(pos, steps)]
+    for a, b in zip(boxes, boxes[1:]):
+        link(s, a, b, color=INK, gap=4)
+    chem(s, 400, 384, "2SO_2 + O_2 ⇌ 2SO_3     ΔH = −197 kJ/mol", size=17, weight="bold")
+    s.text(400, 220, "SO₃ is not absorbed directly in water: it forms a mist of acid", size=14, color=MUTED, italic=True)
+    title(s, "Manufacturing sulphuric acid", y=40)
+    return s
+
+
+@fig
+def carbon_allotropes():
+    s = Svg(800, 400, "Diamond and graphite",
+            "In diamond each carbon atom is joined to four others in a rigid three-dimensional tetrahedral network, so diamond is "
+            "very hard and does not conduct electricity. In graphite each carbon is joined to three others in flat hexagonal layers "
+            "held by weak forces; the layers slide, and one electron per atom is delocalised, so graphite is soft and conducts.")
+    s.text(200, 40, "Diamond", size=18, weight="bold", color=BLUE)
+    pts = {}
+    cx, cy = 200, 200
+    ring = [(cx + 90 * math.cos(math.radians(a)), cy + 60 * math.sin(math.radians(a))) for a in (90, 210, 330)]
+    top = (cx, cy - 100)
+    centre = (cx, cy)
+    for q in ring + [top]:
+        s.line(centre[0], centre[1], q[0], q[1], color=INK, width=3)
+    for q in ring:
+        for d in (-1, 1):
+            r2 = (q[0] + d * 50, q[1] + 60)
+            s.line(q[0], q[1], r2[0], r2[1], color=MUTED, width=2.5)
+            s.circle(r2[0], r2[1], 9, fill=F_BLUE, stroke=BLUE, width=2)
+    for q in ring + [top, centre]:
+        s.circle(q[0], q[1], 13, fill=F_BLUE, stroke=BLUE, width=2.5)
+    s.text(200, 345, "each C bonded to 4 others", size=14, color=MUTED)
+    s.text(200, 365, "rigid 3-D network: very hard", size=14, color=MUTED)
+    s.text(590, 40, "Graphite", size=18, weight="bold", color=PURPLE)
+    def hexlayer(y0, shift):
+        for i in range(3):
+            hx = 470 + shift + i * 80
+            pts_ = [(hx + 40 * math.cos(math.radians(a)), y0 + 22 * math.sin(math.radians(a))) for a in range(0, 360, 60)]
+            s.polygon(pts_, fill="none", stroke=PURPLE, width=2.5)
+            for q in pts_:
+                s.circle(q[0], q[1], 5.5, fill=F_PURPLE, stroke=PURPLE, width=1.5)
+    hexlayer(110, 0)
+    hexlayer(200, 30)
+    hexlayer(290, 0)
+    for x in (480, 560, 640):
+        s.line(x, 134, x + 15, 176, color=MUTED, width=1.5, dash="4 5")
+        s.line(x + 15, 224, x, 266, color=MUTED, width=1.5, dash="4 5")
+    s.text(590, 345, "flat layers of hexagons; weak forces between", size=14, color=MUTED)
+    s.text(590, 365, "layers slide (soft); delocalised electrons conduct", size=14, color=MUTED)
+    return s
+
+
+@fig
+def carbon_cycle():
+    s = Svg(800, 460, "The carbon cycle",
+            "Carbon(IV) oxide in the air is taken in by plants in photosynthesis and built into carbohydrates. Animals eat plants. "
+            "Respiration by plants, animals and decomposers, and the burning of fuels, return carbon(IV) oxide to the air. Dead "
+            "matter can form fossil fuels and limestone over millions of years.")
+    air = box(s, 400, 70, 300, 60, ["Carbon(IV) oxide in the air"], BLUE, F_BLUE, size=17)
+    pl = box(s, 150, 230, 200, 70, ["Green plants", "carbohydrates"], GREEN, F_GREEN, size=16)
+    an = box(s, 400, 330, 200, 70, ["Animals", "eat plants"], PURPLE, F_PURPLE, size=16)
+    dec = box(s, 150, 400, 220, 64, ["Dead matter", "decomposers"], MUTED, F_GREY, size=16)
+    fu = box(s, 650, 330, 220, 70, ["Fossil fuels", "coal, oil, gas, wood"], ORANGE, F_AMBER, size=16)
+    s.path("M 300 100 C 220 120, 160 150, 150 190", color=GREEN, width=2.5, arrow="end")
+    s.text(195, 132, "photosynthesis", size=14, color=GREEN, weight="bold", anchor="end")
+    s.path("M 250 230 C 320 240, 360 270, 380 292", color=PURPLE, width=2.5, arrow="end")
+    s.text(330, 240, "feeding", size=13, color=PURPLE, weight="bold", anchor="start")
+    s.path("M 300 330 C 250 340, 200 360, 165 366", color=MUTED, width=2.2, arrow="end")
+    s.path("M 150 196 C 150 170, 250 120, 300 104", color=TEAL, width=2, dash="6 5")
+    s.path("M 420 294 L 420 102", color=TEAL, width=2.5, dash="6 5", arrow="end")
+    s.text(430, 200, "respiration", size=14, color=TEAL, weight="bold", anchor="start")
+    s.path("M 650 294 C 650 200, 600 130, 552 100", color=RED, width=2.5, arrow="end")
+    s.text(640, 196, "combustion", size=14, color=RED, weight="bold", anchor="start")
+    s.path("M 262 410 C 420 440, 560 420, 600 368", color=ORANGE, width=2, dash="7 6", arrow="end")
+    s.text(430, 438, "millions of years", size=13, color=ORANGE, anchor="middle", italic=True)
+    return s
+
+
+@fig
+def co2_prep():
+    return gas_rig("co2-prep", "Laboratory preparation of carbon(IV) oxide",
+                   "Dilute hydrochloric acid is added through a thistle funnel to marble chips (calcium carbonate). The carbon(IV) "
+                   "oxide is collected by downward delivery because it is denser than air (it can also be collected over water, as it "
+                   "is only fairly soluble).",
+                   "thistle", "CaCO_3 + dilute HCl", [], "down", "CO_2", "CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂")
+
+
+@fig
+def reactivity_series():
+    s = Svg(780, 560, "The reactivity series and methods of extraction",
+            "Metals in order of reactivity: potassium, sodium, calcium, magnesium and aluminium are extracted by electrolysis of "
+            "molten compounds; carbon fits between aluminium and zinc; zinc, iron, tin and lead are extracted by reduction with "
+            "carbon or carbon(II) oxide; hydrogen fits between lead and copper; copper, mercury, silver and gold are less "
+            "reactive, and silver and gold are found native.")
+    metals = [("K", "potassium"), ("Na", "sodium"), ("Ca", "calcium"), ("Mg", "magnesium"), ("Al", "aluminium"),
+              ("C", "carbon"), ("Zn", "zinc"), ("Fe", "iron"), ("Sn", "tin"), ("Pb", "lead"), ("H", "hydrogen"),
+              ("Cu", "copper"), ("Hg", "mercury"), ("Ag", "silver"), ("Au", "gold")]
+    y0 = 60
+    for i, (sym, name) in enumerate(metals):
+        y = y0 + i * 32
+        ref = sym in ("C", "H")
+        s.rect(80, y - 13, 190, 26, fill="#ffffff" if ref else F_GREY, stroke=MUTED if ref else INK, width=1.5, rx=5,
+               dash="5 4" if ref else None)
+        s.text(100, y, sym, size=15, weight="bold", anchor="start", color=MUTED if ref else INK)
+        s.text(145, y, name, size=15, anchor="start", color=MUTED if ref else INK, italic=ref)
+    s.arrow(40, y0 + 14 * 32, 40, y0 - 4, color=RED, width=3)
+    s.text(26, y0 - 32, "more reactive", size=14, color=RED, weight="bold", anchor="start")
+    def band(i0, i1, title_, sub, col, fill):
+        ya, yb = y0 + i0 * 32 - 14, y0 + i1 * 32 + 14
+        s.rect(300, ya, 440, yb - ya, fill=fill, stroke=col, width=2, rx=8)
+        s.text(520, (ya + yb) / 2 - 10, title_, size=16, weight="bold", color=col)
+        s.text(520, (ya + yb) / 2 + 12, sub, size=14, color=INK)
+    band(0, 4, "Electrolysis of molten compounds", "most energy needed; ores very stable", RED, F_RED)
+    band(6, 9, "Reduction with carbon / carbon(II) oxide", "blast furnace and similar", ORANGE, F_AMBER)
+    band(11, 12, "Roasting / heating ore", "copper, mercury", BLUE, F_BLUE)
+    band(13, 14, "Found native (uncombined)", "silver, gold", GREEN, F_GREEN)
+    s.text(520, y0 + 5 * 32, "carbon reduces oxides of metals below it", size=13, color=MUTED, italic=True)
+    s.text(520, y0 + 10 * 32, "metals above hydrogen give H₂ with dilute acids", size=13, color=MUTED, italic=True)
+    return s
+
+
+@fig
+def solvay_process():
+    s = Svg(800, 430, "The Solvay process for sodium carbonate",
+            "Brine is saturated with ammonia, then carbon(IV) oxide is bubbled through it in a carbonating tower. Sodium "
+            "hydrogencarbonate, which is only slightly soluble, precipitates and is filtered off, then heated to give sodium "
+            "carbonate. The carbon(IV) oxide comes from heating limestone, and the ammonia is recovered and reused.")
+    a = box(s, 120, 110, 190, 70, ["Brine", "+ ammonia"], BLUE, F_BLUE, size=16)
+    b = box(s, 400, 110, 230, 84, ["Carbonating tower", "CO₂ bubbled in", "NaHCO₃ precipitates"], PURPLE, F_PURPLE, size=16)
+    c = box(s, 680, 110, 190, 70, ["Filter", "solid NaHCO₃"], TEAL, F_TEAL, size=16)
+    d = box(s, 680, 290, 190, 84, ["Heat", "2NaHCO₃ →", "Na₂CO₃ + H₂O + CO₂"], RED, F_RED, size=15)
+    e = box(s, 400, 290, 230, 70, ["Sodium carbonate", "soda ash"], GREEN, F_GREEN, size=16)
+    lime = box(s, 120, 290, 190, 84, ["Limestone kiln", "CaCO₃ → CaO + CO₂"], ORANGE, F_AMBER, size=15, bold_first=True)
+    link(s, a, b, color=INK)
+    link(s, b, c, color=INK)
+    link(s, c, d, color=INK)
+    link(s, d, e, color=INK)
+    s.path("M 120 248 C 140 200, 250 200, 290 150", color=ORANGE, width=2.5, dash="7 5", arrow="end")
+    s.text(160, 200, "CO₂", size=14, color=ORANGE, weight="bold")
+    s.path("M 680 248 C 650 200, 560 200, 520 158", color=RED, width=2.2, dash="7 5", arrow="end")
+    s.text(640, 200, "CO₂ reused", size=13, color=RED, weight="bold", anchor="start")
+    chem(s, 400, 400, "NaCl + NH_3 + CO_2 + H_2O → NaHCO_3 + NH_4Cl", size=16, weight="bold")
+    title(s, "Ammonia is recovered from NH₄Cl with CaO and reused", y=36, size=16)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:

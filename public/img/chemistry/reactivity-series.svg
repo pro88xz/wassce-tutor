@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 560" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The reactivity series and methods of extraction</title>
+<desc id="d">Metals in order of reactivity: potassium, sodium, calcium, magnesium and aluminium are extracted by electrolysis of molten compounds; carbon fits between aluminium and zinc; zinc, iron, tin and lead are extracted by reduction with carbon or carbon(II) oxide; hydrogen fits between lead and copper; copper, mercury, silver and gold are less reactive, and silver and gold are found native.</desc>
+<defs><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="780" height="560" rx="20" fill="#f8fafc"/>
+<rect x="80.0" y="47.0" width="190.0" height="26.0" rx="5" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<text x="100.0" y="60.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">K</text>
+<text x="145.0" y="60.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">potassium</text>
+<rect x="80.0" y="79.0" width="190.0" height="26.0" rx="5" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<text x="100.0" y="92.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Na</text>
+<text x="145.0" y="92.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">sodium</text>
+<rect x="80.0" y="111.0" width="190.0" height="26.0" rx="5" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<text x="100.0" y="124.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Ca</text>
+<text x="145.0" y="124.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">calcium</text>
+<rect x="80.0" y="143.0" width="190.0" height="26.0" rx="5" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<text x="100.0" y="156.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Mg</text>
+<text x="145.0" y="156.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">magnesium</text>
+<rect x="80.0" y="175.0" width="190.0" height="26.0" rx="5" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<text x="100.0" y="188.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Al</text>
+<text x="145.0" y="188.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">aluminium</text>
+<rect x="80.0" y="207.0" width="190.0" height="26.0" rx="5" fill="#ffffff" stroke="#475569" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="100.0" y="220.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="bold">C</text>
+<text x="145.0" y="220.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal" font-style="italic">carbon</text>
+<rect x="80.0" y="239.0" width="190.0" height="26.0" rx="5" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<text x="100.0" y="252.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Zn</text>
+<text x="145.0" y="252.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">zinc</text>
+<rect x="80.0" y="271.0" width="190.0" height="26.0" rx="5" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<text x="100.0" y="284.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Fe</text>
+<text x="145.0" y="284.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">iron</text>
+<rect x="80.0" y="303.0" width="190.0" height="26.0" rx="5" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<text x="100.0" y="316.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Sn</text>
+<text x="145.0" y="316.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">tin</text>
+<rect x="80.0" y="335.0" width="190.0" height="26.0" rx="5" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<text x="100.0" y="348.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Pb</text>
+<text x="145.0" y="348.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">lead</text>
+<rect x="80.0" y="367.0" width="190.0" height="26.0" rx="5" fill="#ffffff" stroke="#475569" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="100.0" y="380.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="bold">H</text>
+<text x="145.0" y="380.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal" font-style="italic">hydrogen</text>
+<rect x="80.0" y="399.0" width="190.0" height="26.0" rx="5" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<text x="100.0" y="412.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Cu</text>
+<text x="145.0" y="412.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">copper</text>
+<rect x="80.0" y="431.0" width="190.0" height="26.0" rx="5" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<text x="100.0" y="444.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Hg</text>
+<text x="145.0" y="444.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">mercury</text>
+<rect x="80.0" y="463.0" width="190.0" height="26.0" rx="5" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<text x="100.0" y="476.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Ag</text>
+<text x="145.0" y="476.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">silver</text>
+<rect x="80.0" y="495.0" width="190.0" height="26.0" rx="5" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<text x="100.0" y="508.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Au</text>
+<text x="145.0" y="508.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">gold</text>
+<line x1="40.0" y1="508.0" x2="40.0" y2="56.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="26.0" y="28.0" font-size="14" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">more reactive</text>
+<rect x="300.0" y="46.0" width="440.0" height="156.0" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="520.0" y="114.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Electrolysis of molten compounds</text>
+<text x="520.0" y="136.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">most energy needed; ores very stable</text>
+<rect x="300.0" y="238.0" width="440.0" height="124.0" rx="8" fill="#fef3c7" stroke="#ea580c" stroke-width="2"/>
+<text x="520.0" y="290.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Reduction with carbon / carbon(II) oxide</text>
+<text x="520.0" y="312.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">blast furnace and similar</text>
+<rect x="300.0" y="398.0" width="440.0" height="60.0" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="520.0" y="418.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Roasting / heating ore</text>
+<text x="520.0" y="440.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">copper, mercury</text>
+<rect x="300.0" y="462.0" width="440.0" height="60.0" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="520.0" y="482.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Found native (uncombined)</text>
+<text x="520.0" y="504.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">silver, gold</text>
+<text x="520.0" y="220.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">carbon reduces oxides of metals below it</text>
+<text x="520.0" y="380.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">metals above hydrogen give H₂ with dilute acids</text>
+</svg>

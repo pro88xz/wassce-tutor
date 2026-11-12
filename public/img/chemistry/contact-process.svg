@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The Contact process</title>
+<desc id="d">Sulphur is burned in air to give sulphur(IV) oxide, which is purified and dried, then oxidised to sulphur(VI) oxide over vanadium(V) oxide at about 450 °C and 1 to 2 atm. The sulphur(VI) oxide is absorbed in concentrated sulphuric acid to form oleum, which is diluted with the right amount of water to give sulphuric acid.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="800" height="420" rx="20" fill="#f8fafc"/>
+<rect x="20.0" y="85.0" width="220.0" height="70.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="130.0" y="109.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Burner</text>
+<text x="130.0" y="131.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">S + O₂ → SO₂</text>
+<rect x="290.0" y="85.0" width="220.0" height="70.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="400.0" y="109.0" font-size="16" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Purifier</text>
+<text x="400.0" y="131.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">dust removed, dried</text>
+<rect x="560.0" y="85.0" width="220.0" height="70.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="670.0" y="109.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Converter</text>
+<text x="670.0" y="131.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">V₂O₅, 450 °C, 1–2 atm</text>
+<rect x="560.0" y="255.0" width="220.0" height="70.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="670.0" y="279.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Absorber</text>
+<text x="670.0" y="301.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">SO₃ into conc. H₂SO₄</text>
+<rect x="290.0" y="255.0" width="220.0" height="70.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="279.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Oleum</text>
+<text x="400.0" y="301.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">H₂S₂O₇</text>
+<rect x="20.0" y="255.0" width="220.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="130.0" y="279.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Diluted</text>
+<text x="130.0" y="301.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">H₂SO₄ (98%)</text>
+<line x1="244.0" y1="120.0" x2="286.0" y2="120.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="514.0" y1="120.0" x2="556.0" y2="120.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="670.0" y1="159.0" x2="670.0" y2="251.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="556.0" y1="290.0" x2="514.0" y2="290.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="286.0" y1="290.0" x2="244.0" y2="290.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="400.0" y="384.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2SO<tspan dy="5.4" font-size="11.9">2</tspan><tspan dy="-5.4"> + O</tspan><tspan dy="5.4" font-size="11.9">2</tspan><tspan dy="-5.4"> ⇌ 2SO</tspan><tspan dy="5.4" font-size="11.9">3</tspan><tspan dy="-5.4">     ΔH = −197 kJ/mol</tspan></text>
+<text x="400.0" y="220.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">SO₃ is not absorbed directly in water: it forms a mist of acid</text>
+<text x="400.0" y="40.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Manufacturing sulphuric acid</text>
+</svg>
