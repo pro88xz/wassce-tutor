@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Order of filling orbitals (Aufbau principle)</title>
+<desc id="d">Sub-shells fill in order of increasing energy: 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p. The 4s sub-shell is lower in energy than 3d, so it fills first.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="720" height="470" rx="20" fill="#f8fafc"/>
+<line x1="140.0" y1="430.0" x2="174.0" y2="430.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<text x="128.0" y="430.0" font-size="17" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">1s</text>
+<line x1="140.0" y1="360.0" x2="174.0" y2="360.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<text x="128.0" y="360.0" font-size="17" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">2s</text>
+<line x1="270.0" y1="340.0" x2="304.0" y2="340.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="310.0" y1="340.0" x2="344.0" y2="340.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="350.0" y1="340.0" x2="384.0" y2="340.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<text x="258.0" y="340.0" font-size="17" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">2p</text>
+<line x1="140.0" y1="280.0" x2="174.0" y2="280.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<text x="128.0" y="280.0" font-size="17" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">3s</text>
+<line x1="270.0" y1="260.0" x2="304.0" y2="260.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="310.0" y1="260.0" x2="344.0" y2="260.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="350.0" y1="260.0" x2="384.0" y2="260.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<text x="258.0" y="260.0" font-size="17" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">3p</text>
+<line x1="140.0" y1="205.0" x2="174.0" y2="205.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<text x="128.0" y="205.0" font-size="17" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">4s</text>
+<line x1="420.0" y1="185.0" x2="454.0" y2="185.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="460.0" y1="185.0" x2="494.0" y2="185.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="500.0" y1="185.0" x2="534.0" y2="185.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="540.0" y1="185.0" x2="574.0" y2="185.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="580.0" y1="185.0" x2="614.0" y2="185.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<text x="408.0" y="185.0" font-size="17" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">3d</text>
+<line x1="270.0" y1="150.0" x2="304.0" y2="150.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="310.0" y1="150.0" x2="344.0" y2="150.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="350.0" y1="150.0" x2="384.0" y2="150.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<text x="258.0" y="150.0" font-size="17" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">4p</text>
+<line x1="60.0" y1="450.0" x2="60.0" y2="110.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="60.0" y="90.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">energy</text>
+<text x="470.0" y="230.0" font-size="16" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">4s fills before 3d</text>
+<text x="380.0" y="450.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">order: 1s 2s 2p 3s 3p 4s 3d 4p</text>
+<text x="360.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Lowest energy sub-shell first</text>
+</svg>

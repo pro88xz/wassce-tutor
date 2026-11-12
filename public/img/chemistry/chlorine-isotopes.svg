@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The isotopes of chlorine</title>
+<desc id="d">Chlorine-35 (17 protons, 18 neutrons) makes up 75% of natural chlorine and chlorine-37 (17 protons, 20 neutrons) makes up 25%. The relative atomic mass is (35 × 75 + 37 × 25) ÷ 100 = 35.5.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="760" height="400" rx="20" fill="#f8fafc"/>
+<line x1="110.0" y1="320.0" x2="426.0" y2="320.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="110.0" y1="320.0" x2="110.0" y2="62.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="426.0" y="356.0" font-size="16" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">mass number</text>
+<text x="118.0" y="54.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">abundance (%)</text>
+<line x1="160.0" y1="320.0" x2="160.0" y2="326.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="160.0" y="339.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">34</text>
+<line x1="210.0" y1="320.0" x2="210.0" y2="326.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="210.0" y="339.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">35</text>
+<line x1="260.0" y1="320.0" x2="260.0" y2="326.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="260.0" y="339.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">36</text>
+<line x1="310.0" y1="320.0" x2="310.0" y2="326.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="310.0" y="339.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">37</text>
+<line x1="360.0" y1="320.0" x2="360.0" y2="326.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="360.0" y="339.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">38</text>
+<line x1="104.0" y1="320.0" x2="110.0" y2="320.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="100.0" y="320.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">0</text>
+<line x1="104.0" y1="260.0" x2="110.0" y2="260.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="100.0" y="260.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">25</text>
+<line x1="104.0" y1="200.0" x2="110.0" y2="200.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="100.0" y="200.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">50</text>
+<line x1="104.0" y1="140.0" x2="110.0" y2="140.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="100.0" y="140.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">75</text>
+<line x1="104.0" y1="80.0" x2="110.0" y2="80.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="100.0" y="80.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">100</text>
+<rect x="196.0" y="140.0" width="28.0" height="180.0" rx="0" fill="#dc2626" stroke="#dc2626" stroke-width="1" opacity="0.85"/>
+<text x="210.0" y="126.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">75%</text>
+<rect x="296.0" y="260.0" width="28.0" height="60.0" rx="0" fill="#2563eb" stroke="#2563eb" stroke-width="1" opacity="0.85"/>
+<text x="310.0" y="246.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">25%</text>
+<text x="582.0" y="95.7" font-size="18.700000000000003" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">35</text>
+<text x="582.0" y="124.3" font-size="18.700000000000003" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">17</text>
+<text x="585.0" y="110.0" font-size="34" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">Cl</text>
+<text x="590.0" y="150.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">17 p, 18 n, 17 e</text>
+<text x="582.0" y="195.7" font-size="18.700000000000003" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">37</text>
+<text x="582.0" y="224.3" font-size="18.700000000000003" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">17</text>
+<text x="585.0" y="210.0" font-size="34" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">Cl</text>
+<text x="590.0" y="250.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">17 p, 20 n, 17 e</text>
+<text x="590.0" y="310.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">RAM = (35×75 + 37×25) ÷ 100</text>
+<text x="590.0" y="336.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">= 35.5</text>
+<text x="380.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Same protons, different neutrons</text>
+</svg>

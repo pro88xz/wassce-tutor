@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Paper chromatography</title>
+<desc id="d">Spots of a pure dye A and of an ink are placed on a pencil base line above the solvent. The solvent rises and separates the ink into two dyes; one has travelled as far as dye A, so the ink contains dye A. Rf = distance moved by the spot ÷ distance moved by the solvent front.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="780" height="420" rx="20" fill="#f8fafc"/>
+<rect x="60.0" y="70.0" width="260.0" height="300.0" rx="6" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="62.0" y="320.0" width="256.0" height="48.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0"/>
+<rect x="110.0" y="60.0" width="160.0" height="290.0" rx="0" fill="#fffbeb" stroke="#475569" stroke-width="2"/>
+<line x1="110.0" y1="300.0" x2="270.0" y2="300.0" stroke="#0f172a" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+<text x="290.0" y="300.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">base line (pencil)</text>
+<line x1="110.0" y1="110.0" x2="270.0" y2="110.0" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+<text x="290.0" y="110.0" font-size="14" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="normal">solvent front</text>
+<text x="190.0" y="352.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">solvent</text>
+<line x1="155.0" y1="300.0" x2="165.0" y2="300.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<line x1="215.0" y1="300.0" x2="225.0" y2="300.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<circle cx="160.0" cy="170.0" r="9.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<circle cx="220.0" cy="170.0" r="9.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<circle cx="220.0" cy="240.0" r="9.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="160.0" y="318.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">dye A</text>
+<text x="220.0" y="318.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ink</text>
+<text x="600.0" y="90.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Working out Rf</text>
+<line x1="510.0" y1="330.0" x2="510.0" y2="110.0" stroke="#0f172a" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="500.0" y1="330.0" x2="720.0" y2="330.0" stroke="#0f172a" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+<line x1="500.0" y1="110.0" x2="720.0" y2="110.0" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+<circle cx="620.0" cy="170.0" r="9.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<circle cx="670.0" cy="240.0" r="9.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<line x1="570.0" y1="330.0" x2="570.0" y2="113.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<text x="564.0" y="222.0" font-size="14" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="normal">10 cm</text>
+<line x1="640.0" y1="330.0" x2="640.0" y2="173.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<text x="646.0" y="300.0" font-size="14" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="normal">8 cm</text>
+<text x="600.0" y="370.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Rf (blue) = 8 ÷ 10 = 0.8</text>
+<text x="600.0" y="396.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Rf (red) = 5.5 ÷ 10 = 0.55</text>
+<line x1="690.0" y1="330.0" x2="690.0" y2="243.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="696.0" y="290.0" font-size="14" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="normal">5.5</text>
+<text x="390.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">The ink contains dye A and one other dye</text>
+</svg>

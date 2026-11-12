@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Filtration, evaporation and the separating funnel</title>
+<desc id="d">Filtration separates an insoluble solid (residue) from a liquid (filtrate). Evaporation recovers a dissolved solid. A separating funnel separates two immiscible liquids, such as oil and water: the denser layer is run off first.</desc>
+<defs></defs>
+<rect width="800" height="430" rx="20" fill="#f8fafc"/>
+<text x="130.0" y="40.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Filtration</text>
+<path d="M 70 70 L 190 70 L 145 140 L 145 190 L 115 190 L 115 140 Z" stroke="#0f172a" stroke-width="2.5" fill="#ffffff" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="78.0,74.0 182.0,74.0 130.0,140.0" fill="#fde68a" stroke="#ea580c" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="130.0" y="92.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">residue</text>
+<rect x="82.0" y="295.0" width="96.0" height="33.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0"/>
+<path d="M 74 230 L 80 236 L 80 330 L 180 330 L 180 230" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="130.0" y="352.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">filtrate</text>
+<text x="400.0" y="40.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Evaporation</text>
+<path d="M 330 220 Q 400 280 470 220" stroke="#0f172a" stroke-width="2.5" fill="#bfdbfe" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="320.0" y1="222.0" x2="480.0" y2="222.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<line x1="345.0" y1="232.0" x2="455.0" y2="232.0" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+<line x1="353.0" y1="232.0" x2="339.0" y2="330.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="447.0" y1="232.0" x2="461.0" y2="330.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="372.0" y="320.0" width="56.0" height="10.0" rx="3" fill="#cbd5e1" stroke="#0f172a" stroke-width="2"/>
+<rect x="392.0" y="260.0" width="16.0" height="60.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="2"/>
+<path d="M 400 218 C 416 238, 412 256, 400 258 C 388 256, 384 238, 400 218 Z" stroke="#f97316" stroke-width="2" fill="#fed7aa" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 400 234 C 407 244, 405 254, 400 256 C 395 254, 393 244, 400 234 Z" stroke="#2563eb" stroke-width="1.5" fill="#dbeafe" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 370 205 C 362 190, 378 180, 370 165" stroke="#475569" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="4 4"/>
+<path d="M 400 205 C 392 190, 408 180, 400 165" stroke="#475569" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="4 4"/>
+<path d="M 430 205 C 422 190, 438 180, 430 165" stroke="#475569" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="4 4"/>
+<text x="400.0" y="150.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">water vapour</text>
+<text x="400.0" y="352.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">solid left in dish</text>
+<text x="660.0" y="40.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Separating funnel</text>
+<path d="M 640 70 L 680 70 L 680 90 C 730 120, 730 230, 666 270 L 666 300 L 654 300 L 654 270 C 590 230, 590 120, 640 90 Z" stroke="#0f172a" stroke-width="2.5" fill="#ffffff" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 612 150 C 612 200, 630 245, 657 268 L 663 268 C 690 245, 708 200, 708 150 Z" stroke="none" stroke-width="0" fill="#bfdbfe" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 618 110 L 702 110 L 708 150 L 612 150 Z" stroke="none" stroke-width="0" fill="#fde68a" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="660.0" y="132.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">oil (less dense)</text>
+<text x="660.0" y="200.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">water</text>
+<rect x="648.0" y="280.0" width="24.0" height="8.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="1.5"/>
+<text x="690.0" y="285.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">tap</text>
+<rect x="617.0" y="382.5" width="86.0" height="15.5" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0"/>
+<path d="M 609 330 L 615 336 L 615 400 L 705 400 L 705 330" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

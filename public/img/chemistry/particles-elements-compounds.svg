@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 340" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Particles in elements, compounds and mixtures</title>
+<desc id="d">An element contains one kind of atom; a compound contains atoms of different elements chemically joined in a fixed ratio; a mixture contains different substances not chemically joined, in any proportion.</desc>
+<defs></defs>
+<rect width="780" height="340" rx="20" fill="#f8fafc"/>
+<rect x="25.0" y="60.0" width="230.0" height="200.0" rx="12" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+<text x="140.0" y="286.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Element</text>
+<text x="140.0" y="310.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">one kind of atom</text>
+<rect x="275.0" y="60.0" width="230.0" height="200.0" rx="12" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+<text x="390.0" y="286.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Compound</text>
+<text x="390.0" y="310.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">atoms joined in a fixed ratio</text>
+<rect x="525.0" y="60.0" width="230.0" height="200.0" rx="12" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+<text x="640.0" y="286.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Mixture</text>
+<text x="640.0" y="310.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">substances not joined</text>
+<circle cx="46.8" cy="90.2" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="106.8" cy="90.9" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="160.8" cy="93.8" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="229.0" cy="98.6" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="53.2" cy="146.7" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="108.4" cy="147.3" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="162.1" cy="145.3" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="220.6" cy="155.1" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="53.9" cy="208.7" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="111.6" cy="201.3" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="163.7" cy="206.5" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="226.8" cy="209.3" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="313.8" cy="105.9" r="17.0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<circle cx="297.8" cy="123.9" r="10.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<circle cx="329.8" cy="123.9" r="10.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<circle cx="389.1" cy="111.7" r="17.0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<circle cx="373.1" cy="129.7" r="10.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<circle cx="405.1" cy="129.7" r="10.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<circle cx="466.1" cy="106.8" r="17.0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<circle cx="450.1" cy="124.8" r="10.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<circle cx="482.1" cy="124.8" r="10.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<circle cx="309.7" cy="185.9" r="17.0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<circle cx="293.7" cy="203.9" r="10.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<circle cx="325.7" cy="203.9" r="10.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<circle cx="392.3" cy="193.7" r="17.0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<circle cx="376.3" cy="211.7" r="10.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<circle cx="408.3" cy="211.7" r="10.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<circle cx="466.5" cy="188.0" r="17.0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<circle cx="450.5" cy="206.0" r="10.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<circle cx="482.5" cy="206.0" r="10.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<circle cx="564.1" cy="105.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="630.7" cy="105.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="703.8" cy="105.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="563.5" cy="190.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="630.1" cy="190.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="590.0" cy="200.0" r="13.0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<circle cx="612.0" cy="200.0" r="13.0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<circle cx="645.0" cy="230.0" r="13.0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<circle cx="667.0" cy="230.0" r="13.0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<circle cx="700.0" cy="200.0" r="13.0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<circle cx="722.0" cy="200.0" r="13.0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="390.0" y="34.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. iron; water (H₂O); air or salt solution</text>
+</svg>

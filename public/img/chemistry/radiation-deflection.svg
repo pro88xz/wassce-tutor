@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Alpha, beta and gamma radiation in an electric field</title>
+<desc id="d">Between charged plates, alpha particles (positive) bend slightly towards the negative plate, beta particles (negative) bend more strongly towards the positive plate, and gamma rays (no charge) pass straight through.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7c3aed"/></marker><marker id="a7c3aeds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#7c3aed"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="760" height="380" rx="20" fill="#f8fafc"/>
+<rect x="60.0" y="165.0" width="70.0" height="50.0" rx="6" fill="#cbd5e1" stroke="#0f172a" stroke-width="2.5"/>
+<text x="95.0" y="235.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">source</text>
+<rect x="240.0" y="70.0" width="300.0" height="14.0" rx="0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="390.0" y="56.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+ + + + + + positive plate</text>
+<rect x="240.0" y="300.0" width="300.0" height="14.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="390.0" y="336.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">− − − − − − negative plate</text>
+<path d="M 130 190 L 240 190 Q 420 196 660 250" stroke="#ea580c" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<text x="670.0" y="262.0" font-size="17" fill="#ea580c" text-anchor="start" dominant-baseline="middle" font-weight="bold">α (+)</text>
+<path d="M 130 190 L 240 190 Q 330 180 420 90" stroke="#7c3aed" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a7c3aed)"/>
+<text x="430.0" y="108.0" font-size="17" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">β (−)</text>
+<line x1="130.0" y1="190.0" x2="670.0" y2="190.0" stroke="#15803d" stroke-width="3" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<text x="680.0" y="190.0" font-size="17" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">γ (none)</text>
+<text x="380.0" y="26.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Charge decides the direction of bending</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Rutherford&#x27;s gold foil experiment</title>
+<desc id="d">Alpha particles fired at thin gold foil: most pass straight through, a few are deflected and a very few bounce back. So the atom is mostly empty space with a small, dense, positive nucleus.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7c3aed"/></marker><marker id="a7c3aeds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#7c3aed"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="780" height="380" rx="20" fill="#f8fafc"/>
+<rect x="40.0" y="160.0" width="90.0" height="60.0" rx="6" fill="#cbd5e1" stroke="#0f172a" stroke-width="2.5"/>
+<text x="85.0" y="240.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">alpha source</text>
+<rect x="380.0" y="70.0" width="14.0" height="240.0" rx="0" fill="#fde047" stroke="#ea580c" stroke-width="2"/>
+<text x="387.0" y="330.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">thin gold foil</text>
+<path d="M 547.7 381.5 A 250 250 0 0 0 547.7 -1.5" stroke="#15803d" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 195.5 29.3 A 250 250 0 0 0 195.5 350.7" stroke="#15803d" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="660.0" y="46.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">detecting screen</text>
+<line x1="130.0" y1="178.0" x2="625.0" y2="154.0" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="130.0" y1="186.0" x2="625.0" y2="178.0" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="130.0" y1="194.0" x2="625.0" y2="202.0" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="130.0" y1="202.0" x2="625.0" y2="226.0" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="130.0" y1="186.0" x2="387.0" y2="176.0" stroke="#dc2626" stroke-width="2.2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<line x1="387.0" y1="176.0" x2="545.0" y2="60.0" stroke="#dc2626" stroke-width="2.2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<line x1="130.0" y1="194.0" x2="380.0" y2="200.0" stroke="#7c3aed" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a7c3aed)"/>
+<line x1="380.0" y1="200.0" x2="170.0" y2="300.0" stroke="#7c3aed" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a7c3aed)"/>
+<rect x="453.1" y="203.0" width="213.8" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="560.0" y="215.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">most pass straight through</text>
+<rect x="496.2" y="98.0" width="127.6" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="560.0" y="110.0" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">a few deflected</text>
+<rect x="166.6" y="306.0" width="166.8" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="250.0" y="318.0" font-size="14" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="normal">very few bounce back</text>
+<text x="390.0" y="26.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Conclusion: a tiny, dense, positive nucleus</text>
+</svg>

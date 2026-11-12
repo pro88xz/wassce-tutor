@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The main branches of chemistry</title>
+<desc id="d">Chemistry divides into physical, inorganic, organic and analytical chemistry, with applied branches such as biochemistry, industrial, environmental and agricultural chemistry.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="780" height="470" rx="20" fill="#f8fafc"/>
+<rect x="280.0" y="34.0" width="220.0" height="52.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="390.0" y="60.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Chemistry</text>
+<rect x="13.0" y="137.0" width="178.0" height="66.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="102.0" y="158.5" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Physical</text>
+<text x="102.0" y="181.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">energy, rates, equilibrium</text>
+<line x1="390.0" y1="92.0" x2="102.0" y2="131.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="205.0" y="137.0" width="178.0" height="66.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="294.0" y="158.5" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Inorganic</text>
+<text x="294.0" y="181.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">elements other than carbon</text>
+<line x1="390.0" y1="92.0" x2="294.0" y2="131.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="397.0" y="137.0" width="178.0" height="66.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="486.0" y="158.5" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Organic</text>
+<text x="486.0" y="181.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">carbon compounds</text>
+<line x1="390.0" y1="92.0" x2="486.0" y2="131.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="589.0" y="137.0" width="178.0" height="66.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="678.0" y="158.5" font-size="17" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Analytical</text>
+<text x="678.0" y="181.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">what and how much</text>
+<line x1="390.0" y1="92.0" x2="678.0" y2="131.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="390.0" y="262.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">applied branches</text>
+<rect x="13.0" y="297.0" width="178.0" height="66.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="102.0" y="319.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Biochemistry</text>
+<text x="102.0" y="341.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">chemistry of living things</text>
+<rect x="205.0" y="297.0" width="178.0" height="66.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="294.0" y="319.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Industrial</text>
+<text x="294.0" y="341.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">large-scale production</text>
+<rect x="397.0" y="297.0" width="178.0" height="66.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="486.0" y="319.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Environmental</text>
+<text x="486.0" y="341.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">air, water and soil</text>
+<rect x="589.0" y="297.0" width="178.0" height="66.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="678.0" y="319.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Agricultural</text>
+<text x="678.0" y="341.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">soils and fertilisers</text>
+<line x1="60.0" y1="285.0" x2="720.0" y2="285.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 5"/>
+<text x="390.0" y="420.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">branches overlap: a soap maker uses organic, physical and analytical chemistry</text>
+</svg>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Shapes of molecules (electron-pair repulsion)</title>
+<desc id="d">Linear CO2 (180°), trigonal planar BF3 (120°), tetrahedral CH4 (109.5°), pyramidal NH3 (107°) and bent H2O (104.5°). Lone pairs repel more than bonding pairs, so they squeeze the bond angle.</desc>
+<defs></defs>
+<rect width="800" height="360" rx="20" fill="#f8fafc"/>
+<line x1="30.0" y1="150.0" x2="130.0" y2="150.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="80.0" cy="150.0" r="17.0" fill="#e2e8f0" stroke="#0f172a" stroke-width="2"/>
+<text x="80.0" y="150.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C</text>
+<circle cx="30.0" cy="150.0" r="17.0" fill="#fee2e2" stroke="#0f172a" stroke-width="2"/>
+<text x="30.0" y="150.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<circle cx="130.0" cy="150.0" r="17.0" fill="#fee2e2" stroke="#0f172a" stroke-width="2"/>
+<text x="130.0" y="150.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<line x1="255.0" y1="150.0" x2="255.0" y2="102.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="255.0" cy="102.0" r="15.0" fill="#dcfce7" stroke="#0f172a" stroke-width="2"/>
+<text x="255.0" y="102.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">F</text>
+<line x1="255.0" y1="150.0" x2="213.4" y2="174.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="213.4" cy="174.0" r="15.0" fill="#dcfce7" stroke="#0f172a" stroke-width="2"/>
+<text x="213.4" y="174.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">F</text>
+<line x1="255.0" y1="150.0" x2="296.6" y2="174.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="296.6" cy="174.0" r="15.0" fill="#dcfce7" stroke="#0f172a" stroke-width="2"/>
+<text x="296.6" y="174.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">F</text>
+<circle cx="255.0" cy="150.0" r="17.0" fill="#e2e8f0" stroke="#0f172a" stroke-width="2"/>
+<text x="255.0" y="150.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B</text>
+<line x1="410.0" y1="150.0" x2="410.0" y2="98.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="410.0" cy="98.0" r="13.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<text x="410.0" y="98.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">H</text>
+<line x1="410.0" y1="150.0" x2="364.0" y2="180.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="364.0" cy="180.0" r="13.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<text x="364.0" y="180.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">H</text>
+<line x1="410.0" y1="150.0" x2="460.0" y2="172.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 4"/>
+<circle cx="460.0" cy="172.0" r="13.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<text x="460.0" y="172.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">H</text>
+<polygon points="410.0,148.0 420.0,196.0 404.0,196.0" fill="#0f172a" stroke="#0f172a" stroke-width="1" stroke-linejoin="round"/>
+<circle cx="412.0" cy="204.0" r="13.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<text x="412.0" y="204.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">H</text>
+<circle cx="410.0" cy="150.0" r="17.0" fill="#e2e8f0" stroke="#0f172a" stroke-width="2"/>
+<text x="410.0" y="150.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C</text>
+<ellipse cx="560.0" cy="120.0" rx="16" ry="9" transform="rotate(-90 560.0 120.0)" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<circle cx="556.0" cy="120.0" r="2.5" fill="#7c3aed" stroke="#7c3aed" stroke-width="1"/>
+<circle cx="564.0" cy="120.0" r="2.5" fill="#7c3aed" stroke="#7c3aed" stroke-width="1"/>
+<line x1="560.0" y1="150.0" x2="516.0" y2="184.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="516.0" cy="184.0" r="13.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<text x="516.0" y="184.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">H</text>
+<line x1="560.0" y1="150.0" x2="604.0" y2="184.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="604.0" cy="184.0" r="13.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<text x="604.0" y="184.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">H</text>
+<line x1="560.0" y1="150.0" x2="566.0" y2="198.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 4"/>
+<circle cx="566.0" cy="198.0" r="13.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<text x="566.0" y="198.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">H</text>
+<circle cx="560.0" cy="150.0" r="17.0" fill="#dbeafe" stroke="#0f172a" stroke-width="2"/>
+<text x="560.0" y="150.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">N</text>
+<ellipse cx="725.0" cy="124.0" rx="16" ry="9" transform="rotate(-60 725.0 124.0)" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<circle cx="721.5" cy="122.0" r="2.5" fill="#7c3aed" stroke="#7c3aed" stroke-width="1"/>
+<circle cx="728.5" cy="126.0" r="2.5" fill="#7c3aed" stroke="#7c3aed" stroke-width="1"/>
+<ellipse cx="695.0" cy="124.0" rx="16" ry="9" transform="rotate(-120 695.0 124.0)" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<circle cx="691.5" cy="126.0" r="2.5" fill="#7c3aed" stroke="#7c3aed" stroke-width="1"/>
+<circle cx="698.5" cy="122.0" r="2.5" fill="#7c3aed" stroke="#7c3aed" stroke-width="1"/>
+<line x1="710.0" y1="150.0" x2="670.0" y2="186.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="670.0" cy="186.0" r="13.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<text x="670.0" y="186.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">H</text>
+<line x1="710.0" y1="150.0" x2="750.0" y2="186.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="750.0" cy="186.0" r="13.0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<text x="750.0" y="186.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">H</text>
+<circle cx="710.0" cy="150.0" r="17.0" fill="#fee2e2" stroke="#0f172a" stroke-width="2"/>
+<text x="710.0" y="150.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<text x="80.0" y="250.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">CO<tspan dy="5.4" font-size="11.9">2</tspan><tspan dy="-5.4"></tspan></text>
+<text x="80.0" y="274.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">linear</text>
+<text x="80.0" y="296.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">180°</text>
+<text x="255.0" y="250.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">BF<tspan dy="5.4" font-size="11.9">3</tspan><tspan dy="-5.4"></tspan></text>
+<text x="255.0" y="274.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">trigonal planar</text>
+<text x="255.0" y="296.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">120°</text>
+<text x="410.0" y="250.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">CH<tspan dy="5.4" font-size="11.9">4</tspan><tspan dy="-5.4"></tspan></text>
+<text x="410.0" y="274.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">tetrahedral</text>
+<text x="410.0" y="296.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">109.5°</text>
+<text x="560.0" y="250.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">NH<tspan dy="5.4" font-size="11.9">3</tspan><tspan dy="-5.4"></tspan></text>
+<text x="560.0" y="274.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">pyramidal</text>
+<text x="560.0" y="296.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">107°</text>
+<text x="710.0" y="250.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">H<tspan dy="5.4" font-size="11.9">2</tspan><tspan dy="-5.4">O</tspan></text>
+<text x="710.0" y="274.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">bent (V-shaped)</text>
+<text x="710.0" y="296.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">104.5°</text>
+<text x="400.0" y="336.0" font-size="14" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">purple = lone pair: lone pairs repel more, so angles shrink</text>
+<text x="400.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Electron pairs spread out as far apart as possible</text>
+</svg>

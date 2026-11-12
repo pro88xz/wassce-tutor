@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Simple distillation</title>
+<desc id="d">Salt solution is heated in a flask. The water boils, the vapour passes the thermometer at the side arm, is cooled in a Liebig condenser by cold water flowing in at the bottom and out at the top, and drips into a beaker as the distillate. The salt stays behind in the flask.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="800" height="430" rx="20" fill="#f8fafc"/>
+<path d="M 98.3 256.2 A 60 60 0 0 0 221.7 256.2 Z" stroke="none" stroke-width="0" fill="#bfdbfe" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 147.0 129.4 L 147.0 189.4 A 62 62 0 1 0 173.0 189.4 L 173.0 129.4" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="100.0" y1="316.0" x2="220.0" y2="316.0" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+<line x1="108.0" y1="316.0" x2="94.0" y2="400.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="212.0" y1="316.0" x2="226.0" y2="400.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="132.0" y="390.0" width="56.0" height="10.0" rx="3" fill="#cbd5e1" stroke="#0f172a" stroke-width="2"/>
+<rect x="152.0" y="330.0" width="16.0" height="60.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="2"/>
+<path d="M 160 288 C 176 308, 172 326, 160 328 C 148 326, 144 308, 160 288 Z" stroke="#f97316" stroke-width="2" fill="#fed7aa" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 160 304 C 167 314, 165 324, 160 326 C 155 324, 153 314, 160 304 Z" stroke="#2563eb" stroke-width="1.5" fill="#dbeafe" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="156.0" y="69.4" width="8.0" height="90.0" rx="4" fill="#ffffff" stroke="#0f172a" stroke-width="1.8"/>
+<circle cx="160.0" cy="159.4" r="6.0" fill="#dc2626" stroke="#0f172a" stroke-width="1.8"/>
+<line x1="160.0" y1="153.4" x2="160.0" y2="109.9" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<rect x="144.0" y="125.4" width="32.0" height="10.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="173.0" y1="151.4" x2="260.0" y2="156.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<polygon points="253.3,166.7 553.3,286.7 566.7,253.3 266.7,133.3" fill="#bfdbfe" stroke="#0f172a" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="241.4" y1="142.6" x2="606.4" y2="288.6" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+<line x1="241.4" y1="142.6" x2="606.4" y2="288.6" stroke="#e0f2fe" stroke-width="2" stroke-linecap="round"/>
+<line x1="569.5" y1="288.4" x2="529.5" y2="242.4" stroke="#2563eb" stroke-width="3" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<text x="575.5" y="304.4" font-size="15" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="normal">cold water in</text>
+<line x1="290.5" y1="177.6" x2="320.5" y2="131.6" stroke="#2563eb" stroke-width="3" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<text x="324.5" y="121.6" font-size="15" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="normal">water out</text>
+<text x="420.0" y="160.0" font-size="16" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Liebig condenser</text>
+<rect x="602.0" y="373.0" width="96.0" height="25.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0"/>
+<path d="M 594 310 L 600 316 L 600 400 L 700 400 L 700 310" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="650.0" y="418.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">distillate (pure water)</text>
+<text x="160.0" y="420.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">heat</text>
+<text x="40.0" y="215.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">salt</text>
+<text x="40.0" y="233.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">solution</text>
+<text x="186.0" y="79.4" font-size="14" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="normal">thermometer bulb at the side arm</text>
+</svg>

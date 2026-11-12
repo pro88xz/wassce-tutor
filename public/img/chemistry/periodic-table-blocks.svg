@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The periodic table: groups, periods and blocks</title>
+<desc id="d">Outline of the periodic table showing the s-block (groups 1 and 2), the d-block (transition metals), and the p-block (groups 3 to 0), with the first 20 elements labelled.</desc>
+<defs></defs>
+<rect width="800" height="400" rx="20" fill="#f8fafc"/>
+<rect x="70.0" y="70.0" width="35.0" height="43.0" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="87.5" y="91.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">H</text>
+<rect x="716.0" y="70.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="733.5" y="91.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">He</text>
+<rect x="70.0" y="116.0" width="35.0" height="43.0" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="87.5" y="137.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Li</text>
+<rect x="108.0" y="116.0" width="35.0" height="43.0" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="125.5" y="137.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Be</text>
+<rect x="526.0" y="116.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="543.5" y="137.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B</text>
+<rect x="564.0" y="116.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="581.5" y="137.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C</text>
+<rect x="602.0" y="116.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="619.5" y="137.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">N</text>
+<rect x="640.0" y="116.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="657.5" y="137.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<rect x="678.0" y="116.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="695.5" y="137.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">F</text>
+<rect x="716.0" y="116.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="733.5" y="137.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ne</text>
+<rect x="70.0" y="162.0" width="35.0" height="43.0" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="87.5" y="183.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Na</text>
+<rect x="108.0" y="162.0" width="35.0" height="43.0" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="125.5" y="183.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Mg</text>
+<rect x="526.0" y="162.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="543.5" y="183.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Al</text>
+<rect x="564.0" y="162.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="581.5" y="183.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Si</text>
+<rect x="602.0" y="162.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="619.5" y="183.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">P</text>
+<rect x="640.0" y="162.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="657.5" y="183.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">S</text>
+<rect x="678.0" y="162.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="695.5" y="183.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cl</text>
+<rect x="716.0" y="162.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="733.5" y="183.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ar</text>
+<rect x="70.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="87.5" y="229.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">K</text>
+<rect x="108.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="125.5" y="229.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ca</text>
+<rect x="146.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<rect x="184.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<rect x="222.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<rect x="260.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<rect x="298.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<rect x="336.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="353.5" y="229.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Fe</text>
+<rect x="374.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<rect x="412.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<rect x="450.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="467.5" y="229.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cu</text>
+<rect x="488.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="505.5" y="229.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Zn</text>
+<rect x="526.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<rect x="564.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<rect x="602.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<rect x="640.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<rect x="678.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<rect x="716.0" y="208.0" width="35.0" height="43.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="88.0" y="56.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="126.0" y="56.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2</text>
+<text x="544.0" y="56.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3</text>
+<text x="582.0" y="56.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4</text>
+<text x="620.0" y="56.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5</text>
+<text x="658.0" y="56.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6</text>
+<text x="696.0" y="56.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7</text>
+<text x="734.0" y="56.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">0</text>
+<text x="58.0" y="92.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">1</text>
+<text x="58.0" y="138.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">2</text>
+<text x="58.0" y="184.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">3</text>
+<text x="58.0" y="230.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">4</text>
+<text x="60.0" y="56.0" font-size="12" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">period</text>
+<rect x="40.0" y="274.0" width="22.0" height="20.0" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="72.0" y="284.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">s-block: groups 1, 2</text>
+<rect x="280.0" y="274.0" width="22.0" height="20.0" rx="3" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="312.0" y="284.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">d-block: transition metals</text>
+<rect x="560.0" y="274.0" width="22.0" height="20.0" rx="3" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="592.0" y="284.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">p-block: groups 3 to 0</text>
+<text x="400.0" y="330.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">group number = outer electrons; period number = number of shells</text>
+<text x="400.0" y="28.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Groups go down, periods go across</text>
+</svg>

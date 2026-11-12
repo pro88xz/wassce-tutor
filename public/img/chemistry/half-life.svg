@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Radioactive decay and half-life</title>
+<desc id="d">The mass of a radioactive sample halves every half-life: 80 g becomes 40 g after one half-life, 20 g after two, 10 g after three and 5 g after four.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="720" height="400" rx="20" fill="#f8fafc"/>
+<line x1="90.0" y1="330.0" x2="646.0" y2="330.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="90.0" y1="330.0" x2="90.0" y2="62.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="646.0" y="366.0" font-size="16" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">time (half-lives)</text>
+<text x="98.0" y="54.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">mass left (g)</text>
+<line x1="212.7" y1="330.0" x2="212.7" y2="336.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="212.7" y="349.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1</text>
+<line x1="335.5" y1="330.0" x2="335.5" y2="336.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="335.5" y="349.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2</text>
+<line x1="458.2" y1="330.0" x2="458.2" y2="336.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="458.2" y="349.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">3</text>
+<line x1="580.9" y1="330.0" x2="580.9" y2="336.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="580.9" y="349.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">4</text>
+<line x1="84.0" y1="330.0" x2="90.0" y2="330.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="330.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">0</text>
+<line x1="84.0" y1="271.2" x2="90.0" y2="271.2" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="271.2" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">20</text>
+<line x1="84.0" y1="212.4" x2="90.0" y2="212.4" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="212.4" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">40</text>
+<line x1="84.0" y1="153.5" x2="90.0" y2="153.5" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="153.5" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">60</text>
+<line x1="84.0" y1="94.7" x2="90.0" y2="94.7" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="94.7" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">80</text>
+<path d="M 90.0 94.7 L 98.8 106.1 L 107.6 117.0 L 116.4 127.3 L 125.2 137.1 L 134.0 146.5 L 142.8 155.4 L 151.6 163.8 L 160.4 171.9 L 169.2 179.5 L 178.0 186.8 L 186.8 193.8 L 195.5 200.4 L 204.3 206.6 L 213.1 212.6 L 221.9 218.3 L 230.7 223.7 L 239.5 228.9 L 248.3 233.8 L 257.1 238.4 L 265.9 242.9 L 274.7 247.1 L 283.5 251.1 L 292.3 254.9 L 301.1 258.6 L 309.9 262.0 L 318.7 265.3 L 327.5 268.5 L 336.3 271.4 L 345.1 274.3 L 353.9 277.0 L 362.7 279.6 L 371.5 282.0 L 380.2 284.3 L 389.0 286.5 L 397.8 288.6 L 406.6 290.6 L 415.4 292.6 L 424.2 294.4 L 433.0 296.1 L 441.8 297.7 L 450.6 299.3 L 459.4 300.8 L 468.2 302.2 L 477.0 303.6 L 485.8 304.8 L 494.6 306.1 L 503.4 307.2 L 512.2 308.3 L 521.0 309.4 L 529.8 310.4 L 538.6 311.3 L 547.4 312.2 L 556.2 313.1 L 565.0 313.9 L 573.8 314.7 L 582.5 315.4 L 591.3 316.1 L 600.1 316.8 L 608.9 317.4 L 617.7 318.1" stroke="#dc2626" stroke-width="3.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="212.7" y1="212.4" x2="212.7" y2="330.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="6 5"/>
+<line x1="212.7" y1="212.4" x2="90.0" y2="212.4" stroke="#475569" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="6 5"/>
+<circle cx="212.7" cy="212.4" r="5.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="224.7" y="198.4" font-size="15" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">40 g</text>
+<line x1="335.5" y1="271.2" x2="335.5" y2="330.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="6 5"/>
+<line x1="335.5" y1="271.2" x2="90.0" y2="271.2" stroke="#475569" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="6 5"/>
+<circle cx="335.5" cy="271.2" r="5.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="347.5" y="257.2" font-size="15" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">20 g</text>
+<line x1="458.2" y1="300.6" x2="458.2" y2="330.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="6 5"/>
+<line x1="458.2" y1="300.6" x2="90.0" y2="300.6" stroke="#475569" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="6 5"/>
+<circle cx="458.2" cy="300.6" r="5.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="470.2" y="286.6" font-size="15" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">10 g</text>
+<line x1="580.9" y1="315.3" x2="580.9" y2="330.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="6 5"/>
+<line x1="580.9" y1="315.3" x2="90.0" y2="315.3" stroke="#475569" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="6 5"/>
+<circle cx="580.9" cy="315.3" r="5.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="592.9" y="301.3" font-size="15" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">5 g</text>
+<circle cx="90.0" cy="94.7" r="5.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="360.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Halving every half-life</text>
+</svg>
