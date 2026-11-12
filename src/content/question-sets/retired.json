@@ -1,0 +1,8 @@
+{
+  "note": "Old placeholder papers that are not part of the question bank. Each deploy unpublishes them (they are never deleted) and takes away their free-starter flag, so the subject gets a real starter set instead.",
+  "papers": [
+    { "id": "0b87f31b-645d-40ab-80a0-ef29dcac20be", "title": "Mathematics Practice Set 2", "reason": "placeholder seed paper with 2 questions" },
+    { "id": "5e0ab8db-e7d8-488c-a096-41cb07610474", "title": "Mathematics Practice Set 1", "reason": "placeholder seed paper" },
+    { "id": "b9f0bbe7-fbe5-469c-b562-df9bbb341ea1", "title": "tyijtjf", "reason": "test paper with no questions" }
+  ]
+}

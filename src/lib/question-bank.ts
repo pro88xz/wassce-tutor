@@ -38,7 +38,7 @@ type SetFile = {
 }
 
 const manifestFile = import.meta.glob<SetSummary[]>('../content/question-sets/manifest.json', { eager: true, import: 'default' })
-const setFiles = import.meta.glob<SetFile>(['../content/question-sets/*.json', '!../content/question-sets/manifest.json'], { import: 'default' })
+const setFiles = import.meta.glob<SetFile>(['../content/question-sets/*.json', '!../content/question-sets/manifest.json', '!../content/question-sets/retired.json'], { import: 'default' })
 
 export const QUESTION_SETS: SetSummary[] = Object.values(manifestFile)[0] ?? []
 

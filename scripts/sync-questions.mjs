@@ -131,7 +131,31 @@ async function main() {
     }
   }
   if (failed) console.error(`[questions] ${failed} set(s) not synced. The site still deployed; fix the error or use Admin -> Load question sets.`)
+  await retirePapers(db)
   await ensureStarterSets(db, [...new Set(manifest.map((m) => m.subject_slug))])
+}
+
+/**
+ * Unpublish old placeholder papers listed in retired.json (never deleted, so
+ * any past attempts keep their history). A retired paper also loses its free
+ * starter flag, so ensureStarterSets can give the subject a real one.
+ */
+async function retirePapers(db) {
+  try {
+    const { papers = [] } = JSON.parse(readFileSync(join(dir, 'retired.json'), 'utf8'))
+    const ids = papers.map((p) => p.id)
+    if (!ids.length) return
+    const { data, error } = await db
+      .from('papers')
+      .update({ is_published: false, is_free: false })
+      .in('id', ids)
+      .or('is_published.eq.true,is_free.eq.true')
+      .select('title')
+    if (error) throw new Error(error.message)
+    if (data.length) console.log(`[questions] Retired ${data.length} placeholder paper(s): ${data.map((p) => p.title).join(', ')}`)
+  } catch (e) {
+    console.error(`[questions] Could not retire placeholder papers: ${e.message}`)
+  }
 }
 
 /**
