@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Reading a burette</title>
+<desc id="d">A close-up of a burette scale from 22.0 to 23.5 cm³, with numbers increasing downwards. The bottom of the meniscus is at 22.80 cm³. An eye level with the bottom of the meniscus reads 22.80 correctly. An eye above it reads too small a value, and an eye below it reads too large a value: parallax error.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="400" rx="20" fill="#f8fafc"/>
+<rect x="303.0" y="214.0" width="64.0" height="146.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0"/>
+<path d="M 303 205.0 Q 335.0 223.0 367 205.0 L 367 214.0 L 303 214.0 Z" stroke="none" stroke-width="0" fill="#bfdbfe" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 303 205.0 Q 335.0 223.0 367 205.0" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="300.0" y1="50.0" x2="300.0" y2="360.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="370.0" y1="50.0" x2="370.0" y2="360.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="300.0" y1="70.0" x2="326.0" y2="70.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="290.0" y="70.0" font-size="16" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">22</text>
+<line x1="300.0" y1="88.0" x2="314.0" y2="88.0" stroke="#0f172a" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="300.0" y1="106.0" x2="314.0" y2="106.0" stroke="#0f172a" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="300.0" y1="124.0" x2="314.0" y2="124.0" stroke="#0f172a" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="300.0" y1="142.0" x2="314.0" y2="142.0" stroke="#0f172a" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="300.0" y1="160.0" x2="326.0" y2="160.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="300.0" y1="178.0" x2="314.0" y2="178.0" stroke="#0f172a" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="300.0" y1="196.0" x2="314.0" y2="196.0" stroke="#0f172a" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="300.0" y1="214.0" x2="314.0" y2="214.0" stroke="#0f172a" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="300.0" y1="232.0" x2="314.0" y2="232.0" stroke="#0f172a" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="300.0" y1="250.0" x2="326.0" y2="250.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="290.0" y="250.0" font-size="16" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">23</text>
+<line x1="300.0" y1="268.0" x2="314.0" y2="268.0" stroke="#0f172a" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="300.0" y1="286.0" x2="314.0" y2="286.0" stroke="#0f172a" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="300.0" y1="304.0" x2="314.0" y2="304.0" stroke="#0f172a" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="300.0" y1="322.0" x2="314.0" y2="322.0" stroke="#0f172a" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="300.0" y1="340.0" x2="326.0" y2="340.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M 602 214.0 Q 620 201.0 638 214.0 Q 620 227.0 602 214.0 Z" stroke="#15803d" stroke-width="2" fill="#ffffff" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="616.0" cy="214.0" r="5.0" fill="#15803d" stroke="none" stroke-width="0"/>
+<line x1="600.0" y1="214.0" x2="374.0" y2="214.0" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 4"/>
+<text x="650.0" y="210.0" font-size="13" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">eye level with the</text>
+<text x="650.0" y="227.0" font-size="13" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">bottom of meniscus</text>
+<text x="650.0" y="244.0" font-size="13" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">reads 22.80 ✓</text>
+<path d="M 582 94.0 Q 600 81.0 618 94.0 Q 600 107.0 582 94.0 Z" stroke="#dc2626" stroke-width="2" fill="#ffffff" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="596.0" cy="94.0" r="5.0" fill="#dc2626" stroke="none" stroke-width="0"/>
+<line x1="582.0" y1="94.0" x2="335.0" y2="215.0" stroke="#dc2626" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="4 4"/>
+<text x="630.0" y="86.0" font-size="13" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">eye too high:</text>
+<text x="630.0" y="103.0" font-size="13" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="normal">reading too small</text>
+<path d="M 582 324.0 Q 600 311.0 618 324.0 Q 600 337.0 582 324.0 Z" stroke="#dc2626" stroke-width="2" fill="#ffffff" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="596.0" cy="324.0" r="5.0" fill="#dc2626" stroke="none" stroke-width="0"/>
+<line x1="582.0" y1="324.0" x2="335.0" y2="215.0" stroke="#dc2626" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="4 4"/>
+<text x="630.0" y="316.0" font-size="13" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">eye too low:</text>
+<text x="630.0" y="333.0" font-size="13" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="normal">reading too large</text>
+<text x="150.0" y="120.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Numbers increase</text>
+<text x="150.0" y="138.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">downwards</text>
+<line x1="150.0" y1="152.0" x2="150.0" y2="230.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="150.0" y="270.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Record to 2 decimal</text>
+<text x="150.0" y="288.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">places: 22.80, not 22.8</text>
+<text x="400.0" y="24.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Read the bottom of the meniscus at eye level</text>
+</svg>

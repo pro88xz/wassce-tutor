@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 410" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Precipitates with sodium hydroxide solution</title>
+<desc id="d">Adding sodium hydroxide solution to solutions of metal ions: copper(II) gives a blue precipitate, iron(II) a dirty green one, iron(III) a red-brown one, all insoluble in excess. Zinc, aluminium and lead(II) ions give white precipitates that dissolve in excess sodium hydroxide. Calcium ions give a white precipitate that does not dissolve.</desc>
+<defs></defs>
+<rect width="800" height="410" rx="20" fill="#f8fafc"/>
+<text x="70.0" y="62.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cu²⁺</text>
+<text x="70.0" y="79.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+ NaOH(aq)</text>
+<path d="M 50.0 177.5 L 50.0 238.0 A 20.0 20.0 0 0 0 90.0 238.0 L 90.0 177.5 Z" stroke="none" stroke-width="0" fill="#eff6ff" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 48.0 110 L 48.0 238.0 A 22.0 22.0 0 0 0 92.0 238.0 L 92.0 110" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 50.0 204.0 L 50.0 238.0 A 20.0 20.0 0 0 0 90.0 238.0 L 90.0 204.0 Z" stroke="none" stroke-width="0" fill="#2563eb" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="70.0" y="284.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">blue</text>
+<text x="70.0" y="301.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">insoluble</text>
+<text x="180.0" y="62.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Fe²⁺</text>
+<text x="180.0" y="79.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+ NaOH(aq)</text>
+<path d="M 160.0 177.5 L 160.0 238.0 A 20.0 20.0 0 0 0 200.0 238.0 L 200.0 177.5 Z" stroke="none" stroke-width="0" fill="#f0fdf4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 158.0 110 L 158.0 238.0 A 22.0 22.0 0 0 0 202.0 238.0 L 202.0 110" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 160.0 204.0 L 160.0 238.0 A 20.0 20.0 0 0 0 200.0 238.0 L 200.0 204.0 Z" stroke="none" stroke-width="0" fill="#4d7c0f" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="180.0" y="284.0" font-size="13" fill="#4d7c0f" text-anchor="middle" dominant-baseline="middle" font-weight="bold">dirty green</text>
+<text x="180.0" y="301.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">insoluble</text>
+<text x="290.0" y="62.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Fe³⁺</text>
+<text x="290.0" y="79.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+ NaOH(aq)</text>
+<path d="M 270.0 177.5 L 270.0 238.0 A 20.0 20.0 0 0 0 310.0 238.0 L 310.0 177.5 Z" stroke="none" stroke-width="0" fill="#fff7ed" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 268.0 110 L 268.0 238.0 A 22.0 22.0 0 0 0 312.0 238.0 L 312.0 110" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 270.0 204.0 L 270.0 238.0 A 20.0 20.0 0 0 0 310.0 238.0 L 310.0 204.0 Z" stroke="none" stroke-width="0" fill="#9a3412" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="290.0" y="284.0" font-size="13" fill="#9a3412" text-anchor="middle" dominant-baseline="middle" font-weight="bold">red-brown</text>
+<text x="290.0" y="301.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">insoluble</text>
+<text x="400.0" y="62.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Zn²⁺</text>
+<text x="400.0" y="79.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+ NaOH(aq)</text>
+<path d="M 380.0 177.5 L 380.0 238.0 A 20.0 20.0 0 0 0 420.0 238.0 L 420.0 177.5 Z" stroke="none" stroke-width="0" fill="#f8fafc" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 378.0 110 L 378.0 238.0 A 22.0 22.0 0 0 0 422.0 238.0 L 422.0 110" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 380.0 204.0 L 380.0 238.0 A 20.0 20.0 0 0 0 420.0 238.0 L 420.0 204.0 Z" stroke="none" stroke-width="0" fill="#d1d5db" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="400.0" y="284.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">white</text>
+<text x="400.0" y="301.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">dissolves</text>
+<text x="510.0" y="62.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Al³⁺</text>
+<text x="510.0" y="79.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+ NaOH(aq)</text>
+<path d="M 490.0 177.5 L 490.0 238.0 A 20.0 20.0 0 0 0 530.0 238.0 L 530.0 177.5 Z" stroke="none" stroke-width="0" fill="#f8fafc" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 488.0 110 L 488.0 238.0 A 22.0 22.0 0 0 0 532.0 238.0 L 532.0 110" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 490.0 204.0 L 490.0 238.0 A 20.0 20.0 0 0 0 530.0 238.0 L 530.0 204.0 Z" stroke="none" stroke-width="0" fill="#d1d5db" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="510.0" y="284.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">white</text>
+<text x="510.0" y="301.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">dissolves</text>
+<text x="620.0" y="62.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Pb²⁺</text>
+<text x="620.0" y="79.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+ NaOH(aq)</text>
+<path d="M 600.0 177.5 L 600.0 238.0 A 20.0 20.0 0 0 0 640.0 238.0 L 640.0 177.5 Z" stroke="none" stroke-width="0" fill="#f8fafc" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 598.0 110 L 598.0 238.0 A 22.0 22.0 0 0 0 642.0 238.0 L 642.0 110" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 600.0 204.0 L 600.0 238.0 A 20.0 20.0 0 0 0 640.0 238.0 L 640.0 204.0 Z" stroke="none" stroke-width="0" fill="#d1d5db" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="620.0" y="284.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">white</text>
+<text x="620.0" y="301.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">dissolves</text>
+<text x="730.0" y="62.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ca²⁺</text>
+<text x="730.0" y="79.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+ NaOH(aq)</text>
+<path d="M 710.0 177.5 L 710.0 238.0 A 20.0 20.0 0 0 0 750.0 238.0 L 750.0 177.5 Z" stroke="none" stroke-width="0" fill="#f8fafc" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 708.0 110 L 708.0 238.0 A 22.0 22.0 0 0 0 752.0 238.0 L 752.0 110" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 710.0 204.0 L 710.0 238.0 A 20.0 20.0 0 0 0 750.0 238.0 L 750.0 204.0 Z" stroke="none" stroke-width="0" fill="#d1d5db" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="730.0" y="284.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">white</text>
+<text x="730.0" y="301.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">insoluble</text>
+<text x="400.0" y="336.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">second line: what happens when excess NaOH(aq) is added</text>
+<text x="400.0" y="366.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">With NH₃(aq): Cu²⁺ ppt dissolves to a deep blue solution; Zn²⁺ ppt dissolves;</text>
+<text x="400.0" y="384.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Al³⁺ and Pb²⁺ ppts do not; Ca²⁺ gives no ppt.</text>
+<text x="400.0" y="26.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Hydroxide colours identify metal ions</text>
+</svg>

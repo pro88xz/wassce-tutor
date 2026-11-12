@@ -1356,6 +1356,58 @@
       "sort_order": 2
     },
     {
+      "file": "chemistry-environment-1.md",
+      "subject": "Chemistry",
+      "topic": "chemistry-and-the-environment",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Air pollution, the greenhouse effect and acid rain",
+      "est_minutes": 9,
+      "sort_order": 1
+    },
+    {
+      "file": "chemistry-environment-2.md",
+      "subject": "Chemistry",
+      "topic": "chemistry-and-the-environment",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Water and land pollution and waste management",
+      "est_minutes": 8,
+      "sort_order": 2
+    },
+    {
+      "file": "chemistry-practical-1.md",
+      "subject": "Chemistry",
+      "topic": "practical-chemistry-skills",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Tests for gases and ions (qualitative analysis)",
+      "est_minutes": 9,
+      "sort_order": 1
+    },
+    {
+      "file": "chemistry-practical-2.md",
+      "subject": "Chemistry",
+      "topic": "practical-chemistry-skills",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Volumetric analysis and good practical technique",
+      "est_minutes": 10,
+      "sort_order": 2
+    },
+    {
       "file": "english-language-nouns.md",
       "subject": "English Language",
       "topic": "nouns",

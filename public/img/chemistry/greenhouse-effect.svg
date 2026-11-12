@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The greenhouse effect</title>
+<desc id="d">Sunlight, mainly visible and short-wave radiation, passes through the atmosphere and warms the Earth&#x27;s surface. The warm surface gives out long-wave infrared radiation. Greenhouse gases in the atmosphere (carbon(IV) oxide, methane, water vapour, nitrogen oxides and CFCs) absorb much of it and re-emit it in all directions, some back to the surface, which keeps the Earth warmer. More greenhouse gas traps more heat: global warming.</desc>
+<defs><marker id="aca8a04" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ca8a04"/></marker><marker id="aca8a04s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ca8a04"/></marker></defs>
+<rect width="800" height="450" rx="20" fill="#f8fafc"/>
+<rect x="0.0" y="0.0" width="800.0" height="450.0" rx="0" fill="#eef2ff" stroke="none" stroke-width="0"/>
+<rect x="0.0" y="130.0" width="800.0" height="90.0" rx="0" fill="#c7d2fe" stroke="none" stroke-width="0" opacity="0.7"/>
+<text x="790.0" y="150.0" font-size="14" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">atmosphere with greenhouse gases</text>
+<text x="790.0" y="172.0" font-size="14" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="normal">CO<tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5">, CH</tspan><tspan dy="4.5" font-size="9.8">4</tspan><tspan dy="-4.5">, H</tspan><tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5">O, N</tspan><tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5">O, CFCs</tspan></text>
+<circle cx="90.0" cy="70.0" r="38.0" fill="#fde047" stroke="#ca8a04" stroke-width="2.5"/>
+<line x1="136.0" y1="70.0" x2="148.0" y2="70.0" stroke="#ca8a04" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="127.2" y1="97.0" x2="136.9" y2="104.1" stroke="#ca8a04" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="104.2" y1="113.7" x2="107.9" y2="125.2" stroke="#ca8a04" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="75.8" y1="113.7" x2="72.1" y2="125.2" stroke="#ca8a04" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="52.8" y1="97.0" x2="43.1" y2="104.1" stroke="#ca8a04" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="44.0" y1="70.0" x2="32.0" y2="70.0" stroke="#ca8a04" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="52.8" y1="43.0" x2="43.1" y2="35.9" stroke="#ca8a04" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="75.8" y1="26.3" x2="72.1" y2="14.8" stroke="#ca8a04" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="104.2" y1="26.3" x2="107.9" y2="14.8" stroke="#ca8a04" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="127.2" y1="43.0" x2="136.9" y2="35.9" stroke="#ca8a04" stroke-width="2.5" stroke-linecap="round"/>
+<text x="90.0" y="136.0" font-size="15" fill="#a16207" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sun</text>
+<path d="M 0 370 Q 200 352 400 368 T 800 362 L 800 450 L 0 450 Z" stroke="none" stroke-width="0" fill="#86efac" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 0 400 Q 200 388 400 402 T 800 396 L 800 450 L 0 450 Z" stroke="none" stroke-width="0" fill="#a16207" stroke-linejoin="round" stroke-linecap="round" opacity="0.35"/>
+<text x="400.0" y="430.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Earth&#x27;s surface</text>
+<line x1="140.0" y1="110.0" x2="280.0" y2="355.0" stroke="#ca8a04" stroke-width="4" stroke-linecap="round" marker-end="url(#aca8a04)"/>
+<line x1="190.0" y1="100.0" x2="330.0" y2="355.0" stroke="#ca8a04" stroke-width="4" stroke-linecap="round" marker-end="url(#aca8a04)"/>
+<rect x="70.4" y="248.5" width="199.3" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="170.0" y="260.0" font-size="13" fill="#a16207" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. sunlight passes through</text>
+<path d="M 420.0 355.0 L 423.6 352.5 L 426.8 349.8 L 429.3 346.8 L 430.9 343.5 L 431.5 339.8 L 431.3 335.8 L 430.5 331.5 L 429.5 327.2 L 428.7 323.0 L 428.5 318.9 L 429.1 315.2 L 430.7 311.9 L 433.2 309.0 L 436.4 306.3 L 440.0 303.8 L 443.6 301.2 L 446.8 298.5 L 449.3 295.6 L 450.9 292.3 L 451.5 288.6 L 451.3 284.5 L 450.5 280.3 L 449.5 276.0 L 448.7 271.7 L 448.5 267.7 L 449.1 264.0 L 450.7 260.7 L 453.2 257.7 L 456.4 255.0 L 460.0 252.5 L 463.6 250.0 L 466.8 247.3 L 469.3 244.3 L 470.9 241.0 L 471.5 237.3 L 471.3 233.3 L 470.5 229.0 L 469.5 224.7 L 468.7 220.5 L 468.5 216.4 L 469.1 212.7 L 470.7 209.4 L 473.2 206.5 L 476.4 203.8 L 480.0 201.2 L 483.6 198.7 L 486.8 196.0 L 489.3 193.1 L 490.9 189.8 L 491.5 186.1 L 491.3 182.0 L 490.5 177.8 L 489.5 173.5 L 489.3 169.4 L 490.0 165.8 L 491.6 162.5 L 493.8 159.4 L 496.2 156.4 L 498.4 153.3 L 500.0 150.0" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="502.0,145.0 501.4,161.9 490.9,157.8" fill="#dc2626"/>
+<path d="M 505.0 160.0 L 503.6 163.8 L 502.6 167.4 L 502.3 170.9 L 502.9 174.0 L 504.6 176.9 L 507.1 179.5 L 510.2 181.9 L 513.5 184.3 L 516.6 186.7 L 519.1 189.4 L 520.8 192.2 L 521.5 195.4 L 521.2 198.8 L 520.2 202.5 L 518.8 206.2 L 517.3 210.0 L 516.3 213.7 L 516.0 217.1 L 516.7 220.3 L 518.4 223.1 L 520.9 225.8 L 524.0 228.2 L 527.3 230.6 L 530.4 233.0 L 532.9 235.6 L 534.6 238.5 L 535.2 241.6 L 534.9 245.1 L 533.9 248.7 L 532.5 252.5 L 531.1 256.3 L 530.1 259.9 L 529.8 263.4 L 530.4 266.5 L 532.1 269.4 L 534.6 272.0 L 537.7 274.4 L 541.0 276.8 L 544.1 279.2 L 546.6 281.9 L 548.3 284.7 L 549.0 287.9 L 548.7 291.3 L 547.7 295.0 L 546.2 298.8 L 544.8 302.5 L 543.8 306.2 L 543.5 309.6 L 544.2 312.8 L 545.9 315.6 L 548.4 318.3 L 551.5 320.7 L 554.7 323.1 L 557.3 325.7 L 558.9 328.6 L 559.5 331.7 L 559.5 335.1 L 559.4 338.5 L 559.4 341.8 L 560.0 345.0" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="561.5,350.2 551.6,336.4 562.4,333.2" fill="#dc2626"/>
+<rect x="494.2" y="268.5" width="235.7" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="612.0" y="280.0" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3. gases absorb and re-emit IR;</text>
+<rect x="490.5" y="286.5" width="243.0" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="612.0" y="298.0" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">some returns and warms the Earth</text>
+<path d="M 380.0 355.0 L 383.1 349.7 L 385.8 344.4 L 387.7 338.9 L 388.6 333.4 L 388.5 327.7 L 387.5 321.9 L 385.9 316.1 L 384.1 310.2 L 382.5 304.3 L 381.5 298.6 L 381.4 292.9 L 382.3 287.3 L 384.2 281.9 L 386.9 276.5 L 390.0 271.2 L 393.1 266.0 L 395.8 260.6 L 397.7 255.2 L 398.6 249.6 L 398.5 243.9 L 397.5 238.2 L 395.9 232.3 L 394.1 226.4 L 392.5 220.6 L 391.5 214.8 L 391.4 209.1 L 392.3 203.6 L 394.2 198.1 L 396.9 192.8 L 400.0 187.5 L 403.1 182.2 L 405.8 176.9 L 407.7 171.4 L 408.6 165.9 L 408.5 160.2 L 407.5 154.4 L 405.9 148.6 L 404.1 142.7 L 402.5 136.8 L 401.5 131.1 L 401.4 125.4 L 402.3 119.8 L 404.2 114.4 L 406.9 109.0 L 410.0 103.8 L 413.1 98.5 L 415.8 93.1 L 417.7 87.7 L 418.6 82.1 L 418.5 76.4 L 417.5 70.7 L 415.9 64.8 L 414.1 58.9 L 413.1 53.2 L 413.1 47.5 L 414.0 41.9 L 415.6 36.5 L 417.4 31.0 L 419.0 25.5 L 420.0 20.0" stroke="#f97316" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="420.6,14.6 424.3,31.2 413.1,29.9" fill="#f97316"/>
+<rect x="223.6" y="48.5" width="162.9" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="305.0" y="60.0" font-size="13" fill="#c2410c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">some escapes to space</text>
+<rect x="399.0" y="240.5" width="90.1" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="444.0" y="252.0" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2. infrared</text>
+<text x="400.0" y="22.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Greenhouse gases trap outgoing heat</text>
+</svg>

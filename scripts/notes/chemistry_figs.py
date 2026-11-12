@@ -2723,7 +2723,7 @@ def carbohydrate_types():
     return s
 
 
-def _tube_row(s, items, ytop=120, h=150, w=46):
+def _tube_row(s, items, ytop=120, h=150, w=46, ppt_h=6):
     """Test tubes in a row. items: (x, liquid, ppt_or_None, heading_lines, result_lines, result_colour)."""
     for x, liq, ppt, heads, res, rcol in items:
         for i, hl in enumerate(heads):
@@ -2733,8 +2733,8 @@ def _tube_row(s, items, ytop=120, h=150, w=46):
         if ppt:
             r = w / 2
             yb = ytop + h
-            s.path(f"M {x - w / 2 + 2} {yb - r - 6} L {x - w / 2 + 2} {yb - r} A {r - 2} {r - 2} 0 0 0 {x + w / 2 - 2} {yb - r} "
-                   f"L {x + w / 2 - 2} {yb - r - 6} Z", color="none", width=0, fill=ppt)
+            s.path(f"M {x - w / 2 + 2} {yb - r - ppt_h} L {x - w / 2 + 2} {yb - r} A {r - 2} {r - 2} 0 0 0 {x + w / 2 - 2} {yb - r} "
+                   f"L {x + w / 2 - 2} {yb - r - ppt_h} Z", color="none", width=0, fill=ppt)
         for i, rl in enumerate(res):
             s.text(x, ytop + h + 24 + i * 17, rl, size=13, weight="bold" if i == 0 else "normal", color=rcol if i == 0 else MUTED)
 
@@ -2926,6 +2926,255 @@ def thermoplastic_thermoset():
     s.text(595, 278, "strong cross-links (red) join the chains", size=13, color=MUTED)
     s.text(595, 298, "does not soften; chars on strong heating", size=13, weight="bold", color=RED)
     title(s, "Cross-links decide whether a plastic melts", y=28)
+    return s
+
+
+def _wavy(s, x1, y1, x2, y2, color=RED, amp=6, waves=4, width=2.5):
+    d = math.hypot(x2 - x1, y2 - y1)
+    ux, uy = (x2 - x1) / d, (y2 - y1) / d
+    nx, ny = -uy, ux
+    pts = []
+    for k in range(61):
+        t = k / 60
+        a = amp * math.sin(t * waves * 2 * math.pi) * (1 if t < 0.88 else (1 - t) / 0.12)
+        pts.append((x1 + ux * d * t + nx * a, y1 + uy * d * t + ny * a))
+    s.polyline(pts, color=color, width=width)
+    s.head(x2, y2, math.atan2(y2 - y1, x2 - x1), color=color, size=12)
+
+
+@fig
+def greenhouse_effect():
+    s = Svg(800, 450, "The greenhouse effect",
+            "Sunlight, mainly visible and short-wave radiation, passes through the atmosphere and warms the Earth's surface. "
+            "The warm surface gives out long-wave infrared radiation. Greenhouse gases in the atmosphere (carbon(IV) oxide, "
+            "methane, water vapour, nitrogen oxides and CFCs) absorb much of it and re-emit it in all directions, some back to "
+            "the surface, which keeps the Earth warmer. More greenhouse gas traps more heat: global warming.")
+    s.rect(0, 0, 800, 450, fill="#eef2ff", stroke="none", width=0)
+    s.rect(0, 130, 800, 90, fill="#c7d2fe", stroke="none", width=0, opacity=0.7)
+    s.text(790, 150, "atmosphere with greenhouse gases", size=14, weight="bold", color=PURPLE, anchor="end")
+    chem(s, 790, 172, "CO_2, CH_4, H_2O, N_2O, CFCs", size=14, color=PURPLE, anchor="end")
+    s.circle(90, 70, 38, fill="#fde047", stroke="#ca8a04", width=2.5)
+    for k in range(10):
+        a = k * math.pi / 5
+        s.line(90 + 46 * math.cos(a), 70 + 46 * math.sin(a), 90 + 58 * math.cos(a), 70 + 58 * math.sin(a), color="#ca8a04", width=2.5)
+    s.text(90, 136, "Sun", size=15, weight="bold", color="#a16207")
+    s.path("M 0 370 Q 200 352 400 368 T 800 362 L 800 450 L 0 450 Z", color="none", width=0, fill="#86efac")
+    s.path("M 0 400 Q 200 388 400 402 T 800 396 L 800 450 L 0 450 Z", color="none", width=0, fill="#a16207", opacity=0.35)
+    s.text(400, 430, "Earth's surface", size=15, weight="bold", color=GREEN)
+    s.arrow(140, 110, 280, 355, color="#ca8a04", width=4)
+    s.arrow(190, 100, 330, 355, color="#ca8a04", width=4)
+    s.label(170, 260, "1. sunlight passes through", size=13, color="#a16207", weight="bold")
+    _wavy(s, 420, 355, 500, 150, color=RED)
+    _wavy(s, 505, 160, 560, 345, color=RED)
+    s.label(612, 280, "3. gases absorb and re-emit IR;", size=13, color=RED, weight="bold")
+    s.label(612, 298, "some returns and warms the Earth", size=13, color=RED, weight="bold")
+    _wavy(s, 380, 355, 420, 20, color="#f97316", width=2)
+    s.label(305, 60, "some escapes to space", size=13, color="#c2410c")
+    s.label(444, 252, "2. infrared", size=13, color=RED, weight="bold")
+    title(s, "Greenhouse gases trap outgoing heat", y=22)
+    return s
+
+
+@fig
+def acid_rain():
+    s = Svg(800, 460, "How acid rain forms and what it damages",
+            "A factory chimney gives out sulphur(IV) oxide from burning fuels and smelting, and vehicles give out nitrogen oxides. "
+            "In clouds these react with water and oxygen to form sulphuric(IV), sulphuric(VI) and nitric(V) acids. The rain that "
+            "falls has a pH below about 5.6. It kills trees, makes lakes too acidic for fish, corrodes metals and wears away "
+            "limestone and marble buildings.")
+    s.rect(0, 0, 800, 460, fill="#f8fafc", stroke="none", width=0)
+    s.rect(0, 400, 800, 60, fill="#bbf7d0", stroke="none", width=0)
+    s.rect(40, 300, 120, 100, fill=F_GREY, stroke=INK, width=2.5)
+    s.rect(120, 190, 26, 110, fill=F_GREY, stroke=INK, width=2.5)
+    for k, (dx, dy, r) in enumerate([(0, 0, 18), (22, -16, 22), (50, -30, 26)]):
+        s.circle(133 + dx, 172 + dy, r, fill="#9ca3af", stroke="none", width=0)
+    chem(s, 100, 420, "factory: SO_2", size=14, weight="bold", anchor="middle")
+    s.rect(210, 360, 90, 30, fill=F_BLUE, stroke=INK, width=2, rx=8)
+    s.rect(228, 342, 50, 22, fill=F_BLUE, stroke=INK, width=2, rx=6)
+    s.circle(230, 392, 10, fill=INK, stroke=INK, width=1)
+    s.circle(282, 392, 10, fill=INK, stroke=INK, width=1)
+    s.path("M 210 378 q -14 -4 -22 -14 q -6 -8 -16 -8", color="#9ca3af", width=4)
+    chem(s, 255, 425, "vehicles: NO_x", size=14, weight="bold")
+    s.arrow(200, 130, 300, 95, color=MUTED, width=2.5)
+    s.arrow(255, 330, 320, 150, color=MUTED, width=2.5)
+    for cx, cy, r in [(380, 90, 40), (430, 70, 48), (490, 82, 44), (540, 96, 36), (450, 106, 40)]:
+        s.circle(cx, cy, r, fill="#cbd5e1", stroke="none", width=0)
+    chem(s, 460, 74, "SO_2 + H_2O → H_2SO_3", size=13, weight="bold")
+    chem(s, 460, 94, "2SO_2 + O_2 + 2H_2O → 2H_2SO_4", size=13, weight="bold")
+    chem(s, 460, 114, "4NO_2 + O_2 + 2H_2O → 4HNO_3", size=13, weight="bold")
+    for k in range(26):
+        x = 380 + (k % 13) * 30 + (k // 13) * 14
+        y = 160 + (k // 13) * 46 + (k % 3) * 10
+        s.line(x, y, x - 6, y + 18, color=BLUE, width=2)
+    s.label(640, 250, "acid rain, pH below 5.6", size=15, weight="bold", color=BLUE)
+    s.rect(380, 310, 10, 90, fill="#78350f", stroke="none", width=0)
+    s.polyline([(385, 312), (360, 280), (385, 295), (408, 270), (387, 300)], color="#78350f", width=3)
+    s.text(385, 445, "trees die", size=13, color=INK)
+    s.ellipse(500, 405, 60, 16, fill="#93c5fd", stroke=BLUE, width=2)
+    s.path("M 486 400 q 10 -8 20 0 q -10 8 -20 0 Z M 506 400 l 8 -5 l 0 10 Z", color=INK, width=1.5, fill="#e5e7eb")
+    s.text(500, 445, "lakes: fish die", size=13, color=INK)
+    s.rect(610, 300, 130, 14, fill="#e7e5e4", stroke=INK, width=2)
+    s.polygon([(600, 300), (675, 268), (750, 300)], fill="#e7e5e4", stroke=INK, width=2)
+    for x in (622, 652, 682, 712):
+        s.rect(x, 314, 14, 86, fill="#f5f5f4", stroke=INK, width=1.5)
+    s.path("M 652 360 l 6 6 l -4 8", color=RED, width=2)
+    s.text(675, 430, "limestone and marble wear away;", size=13, color=INK)
+    s.text(675, 446, "metals corrode", size=13, color=INK)
+    title(s, "Acidic gases dissolve in clouds and fall as acid rain", y=24)
+    return s
+
+
+@fig
+def eutrophication():
+    s = Svg(800, 330, "Eutrophication",
+            "Fertilisers, sewage and detergent phosphates wash into a river or lake. The nitrates and phosphates make algae grow "
+            "rapidly (an algal bloom), which blocks light so water plants below die. Bacteria decompose the dead algae and plants, "
+            "using up the dissolved oxygen. Fish and other animals suffocate and die.")
+    steps = [("1. Nutrients enter", "fertiliser, sewage,", "detergent phosphates"), ("2. Algal bloom", "nitrates and phosphates", "feed rapid algae growth"),
+             ("3. Light blocked", "plants below the", "surface die"), ("4. Bacteria decompose", "dead matter, using up", "dissolved oxygen"),
+             ("5. Fish suffocate", "oxygen-poor water;", "animals die")]
+    cols = [(GREEN, F_GREEN), (TEAL, F_TEAL), (ORANGE, F_AMBER), (PURPLE, F_PURPLE), (RED, F_RED)]
+    pos = [(140, 110), (400, 110), (660, 110), (530, 250), (270, 250)]
+    bs = [box(s, x, y, 230, 84, list(t), col=c, fill=f, size=15) for (x, y), t, (c, f) in zip(pos, steps, cols)]
+    for a, b in zip(bs, bs[1:]):
+        link(s, a, b, color=INK, gap=4)
+    title(s, "Too many nutrients can starve a river of oxygen", y=30)
+    return s
+
+
+def _icon_tube(s, x, y, liquid=None):
+    test_tube(s, x - 16, y, 32, 92, frac=0.4 if liquid else 0, liquid=liquid or WATER)
+
+
+def _splint(s, x, y, kind):
+    s.line(x - 30, y - 30, x, y, color="#a16207", width=4)
+    if kind == "flame":
+        s.path(f"M {x + 2} {y - 24} C {x + 12} {y - 12}, {x + 8} {y - 2}, {x + 2} {y} C {x - 4} {y - 2}, {x - 6} {y - 12}, {x + 2} {y - 24} Z",
+               color=FLAME, width=1.5, fill="#fed7aa")
+    else:
+        s.circle(x, y, 4, fill=RED, stroke="none", width=0)
+
+
+def _paper(s, x, y, colours):
+    w = 14
+    for i, c in enumerate(colours):
+        s.rect(x - 7, y - 40 + i * w, 14, w, fill=c, stroke="none", width=0)
+    s.rect(x - 7, y - 40, 14, w * len(colours), fill="none", stroke=INK, width=1.2)
+
+
+@fig
+def gas_tests():
+    s = Svg(800, 540, "Tests for common gases",
+            "Hydrogen: a lighted splint burns with a squeaky pop. Oxygen: a glowing splint relights. Carbon(IV) oxide: lime water "
+            "turns milky. Ammonia: damp red litmus turns blue, and white fumes form with hydrogen chloride. Chlorine: damp blue "
+            "litmus turns red and is then bleached. Sulphur(IV) oxide: acidified potassium dichromate(VI) paper turns from orange "
+            "to green. Hydrogen chloride: white fumes with ammonia. Hydrogen sulphide: lead(II) ethanoate paper turns black.")
+    cards = [("H_2", "lighted splint", "squeaky pop", "flame", None), ("O_2", "glowing splint", "relights", "glow", None),
+             ("CO_2", "bubble into lime water", "lime water turns milky", "lime", None),
+             ("NH_3", "damp red litmus", "turns blue", "paper", ["#fca5a5", "#93c5fd"]),
+             ("Cl_2", "damp blue litmus", "red, then bleached white", "paper", ["#93c5fd", "#fca5a5", "#ffffff"]),
+             ("SO_2", "acidified K_2Cr_2O_7 paper", "orange → green", "paper", ["#fb923c", "#4ade80"]),
+             ("HCl", "rod dipped in conc. NH_3", "dense white fumes", "fumes", None),
+             ("H_2S", "lead(II) ethanoate paper", "turns black", "paper", ["#f1f5f9", "#111827"])]
+    for i, (gas, test, res, kind, cols) in enumerate(cards):
+        x0 = 12 + (i % 4) * 196
+        y0 = 52 + (i // 4) * 244
+        s.rect(x0, y0, 186, 232, fill="#ffffff", stroke=MUTED, width=1.5, rx=10)
+        chem(s, x0 + 93, y0 + 24, gas, size=20, weight="bold", color=BLUE)
+        cx, ty = x0 + 93, y0 + 82
+        if kind == "lime":
+            _icon_tube(s, cx, ty, liquid="#f1f5f9")
+            tube(s, [(cx + 50, ty - 30), (cx + 4, ty - 30), (cx + 4, ty + 78)])
+            for k in range(3):
+                s.circle(cx + 2, ty + 70 - k * 12, 3.5, fill="#ffffff", stroke=MUTED, width=1)
+        else:
+            _icon_tube(s, cx, ty)
+        if kind in ("flame", "glow"):
+            _splint(s, cx + 4, ty - 6, kind)
+            if kind == "flame":
+                s.text(cx + 40, ty - 28, "pop!", size=14, weight="bold", color=RED)
+        elif kind == "paper":
+            _paper(s, cx, ty + 4, cols)
+        elif kind == "fumes":
+            s.line(cx + 10, ty - 50, cx + 2, ty + 6, color=INK, width=3)
+            import random
+            rnd = random.Random(i)
+            for _ in range(16):
+                s.circle(cx + rnd.uniform(-20, 24), ty - 4 + rnd.uniform(-18, 8), rnd.uniform(3, 6), fill="#e5e7eb", stroke="none", width=0)
+        chem(s, x0 + 93, y0 + 198, test, size=12.5, color=MUTED)
+        chem(s, x0 + 93, y0 + 216, res, size=13, weight="bold", color=INK)
+    title(s, "Each gas has a simple, characteristic test", y=24)
+    return s
+
+
+@fig
+def hydroxide_precipitates():
+    s = Svg(800, 410, "Precipitates with sodium hydroxide solution",
+            "Adding sodium hydroxide solution to solutions of metal ions: copper(II) gives a blue precipitate, iron(II) a dirty "
+            "green one, iron(III) a red-brown one, all insoluble in excess. Zinc, aluminium and lead(II) ions give white "
+            "precipitates that dissolve in excess sodium hydroxide. Calcium ions give a white precipitate that does not dissolve.")
+    data = [("Cu²⁺", "#eff6ff", "#2563eb", "blue", "insoluble"), ("Fe²⁺", "#f0fdf4", "#4d7c0f", "dirty green", "insoluble"),
+            ("Fe³⁺", "#fff7ed", "#9a3412", "red-brown", "insoluble"), ("Zn²⁺", "#f8fafc", "#ffffff", "white", "dissolves"),
+            ("Al³⁺", "#f8fafc", "#ffffff", "white", "dissolves"), ("Pb²⁺", "#f8fafc", "#ffffff", "white", "dissolves"),
+            ("Ca²⁺", "#f8fafc", "#ffffff", "white", "insoluble")]
+    items = []
+    for i, (ion, liq, ppt, col, exc) in enumerate(data):
+        rc = ppt if ppt != "#ffffff" else MUTED
+        items.append((70 + i * 110, liq, ppt if ppt != "#ffffff" else "#d1d5db", [ion, "+ NaOH(aq)"], [col, exc], rc))
+    _tube_row(s, items, ytop=110, h=150, w=44, ppt_h=34)
+    s.text(400, 336, "second line: what happens when excess NaOH(aq) is added", size=13, color=MUTED)
+    s.text(400, 366, "With NH₃(aq): Cu²⁺ ppt dissolves to a deep blue solution; Zn²⁺ ppt dissolves;", size=13, color=INK)
+    s.text(400, 384, "Al³⁺ and Pb²⁺ ppts do not; Ca²⁺ gives no ppt.", size=13, color=INK)
+    title(s, "Hydroxide colours identify metal ions", y=26)
+    return s
+
+
+def _eye(s, x, y, col=INK):
+    s.path(f"M {x - 18} {y} Q {x} {y - 13} {x + 18} {y} Q {x} {y + 13} {x - 18} {y} Z", color=col, width=2, fill="#ffffff")
+    s.circle(x - 4, y, 5, fill=col, stroke="none", width=0)
+
+
+@fig
+def burette_reading():
+    s = Svg(800, 400, "Reading a burette",
+            "A close-up of a burette scale from 22.0 to 23.5 cm³, with numbers increasing downwards. The bottom of the meniscus "
+            "is at 22.80 cm³. An eye level with the bottom of the meniscus reads 22.80 correctly. An eye above it reads too "
+            "small a value, and an eye below it reads too large a value: parallax error.")
+    x0, x1, ytop, ybot = 300, 370, 50, 360
+    scale = (ybot - ytop - 40) / 1.5
+    ym = ytop + 20 + 0.8 * scale
+    s.rect(x0 + 3, ym, x1 - x0 - 6, ybot - ym, fill="#bfdbfe", stroke="none", width=0)
+    s.path(f"M {x0 + 3} {ym - 9} Q {(x0 + x1) / 2} {ym + 9} {x1 - 3} {ym - 9} L {x1 - 3} {ym} L {x0 + 3} {ym} Z", color="none",
+           width=0, fill="#bfdbfe")
+    s.path(f"M {x0 + 3} {ym - 9} Q {(x0 + x1) / 2} {ym + 9} {x1 - 3} {ym - 9}", color=BLUE, width=2.5)
+    s.line(x0, ytop, x0, ybot, width=3)
+    s.line(x1, ytop, x1, ybot, width=3)
+    for k in range(16):
+        y = ytop + 20 + k * scale / 10
+        major = k % 5 == 0
+        s.line(x0, y, x0 + (26 if major else 14), y, width=1.6 if major else 1.1)
+        if k % 10 == 0:
+            s.text(x0 - 10, y, f"{22 + k // 10}", size=16, weight="bold", anchor="end")
+    yc = ym
+    _eye(s, 620, yc, GREEN)
+    s.line(600, yc, x1 + 4, yc, color=GREEN, width=2, dash="6 4")
+    s.text(650, yc - 4, "eye level with the", size=13, color=GREEN, anchor="start", weight="bold")
+    s.text(650, yc + 13, "bottom of meniscus", size=13, color=GREEN, anchor="start", weight="bold")
+    s.text(650, yc + 30, "reads 22.80 ✓", size=13, color=GREEN, anchor="start", weight="bold")
+    _eye(s, 600, yc - 120, RED)
+    s.line(582, yc - 120, (x0 + x1) / 2, yc + 1, color=RED, width=1.6, dash="4 4")
+    s.text(630, yc - 128, "eye too high:", size=13, color=RED, anchor="start", weight="bold")
+    s.text(630, yc - 111, "reading too small", size=13, color=RED, anchor="start")
+    _eye(s, 600, yc + 110, RED)
+    s.line(582, yc + 110, (x0 + x1) / 2, yc + 1, color=RED, width=1.6, dash="4 4")
+    s.text(630, yc + 102, "eye too low:", size=13, color=RED, anchor="start", weight="bold")
+    s.text(630, yc + 119, "reading too large", size=13, color=RED, anchor="start")
+    s.text(150, 120, "Numbers increase", size=14, color=MUTED)
+    s.text(150, 138, "downwards", size=14, color=MUTED)
+    s.arrow(150, 152, 150, 230, color=MUTED, width=2)
+    s.text(150, 270, "Record to 2 decimal", size=14, color=INK, weight="bold")
+    s.text(150, 288, "places: 22.80, not 22.8", size=14, color=INK, weight="bold")
+    title(s, "Read the bottom of the meniscus at eye level", y=24)
     return s
 
 

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Tests for common gases</title>
+<desc id="d">Hydrogen: a lighted splint burns with a squeaky pop. Oxygen: a glowing splint relights. Carbon(IV) oxide: lime water turns milky. Ammonia: damp red litmus turns blue, and white fumes form with hydrogen chloride. Chlorine: damp blue litmus turns red and is then bleached. Sulphur(IV) oxide: acidified potassium dichromate(VI) paper turns from orange to green. Hydrogen chloride: white fumes with ammonia. Hydrogen sulphide: lead(II) ethanoate paper turns black.</desc>
+<defs></defs>
+<rect width="800" height="540" rx="20" fill="#f8fafc"/>
+<rect x="12.0" y="52.0" width="186.0" height="232.0" rx="10" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="105.0" y="76.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">H<tspan dy="6.4" font-size="14.0">2</tspan><tspan dy="-6.4"></tspan></text>
+<path d="M 89 134 L 89 210.0 A 16.0 16.0 0 0 0 121 210.0 L 121 134" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="79.0" y1="98.0" x2="109.0" y2="128.0" stroke="#a16207" stroke-width="4" stroke-linecap="round"/>
+<path d="M 111 104 C 121 116, 117 126, 111 128 C 105 126, 103 116, 111 104 Z" stroke="#f97316" stroke-width="1.5" fill="#fed7aa" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="145.0" y="106.0" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">pop!</text>
+<text x="105.0" y="250.0" font-size="12.5" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">lighted splint</text>
+<text x="105.0" y="268.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">squeaky pop</text>
+<rect x="208.0" y="52.0" width="186.0" height="232.0" rx="10" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="301.0" y="76.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O<tspan dy="6.4" font-size="14.0">2</tspan><tspan dy="-6.4"></tspan></text>
+<path d="M 285 134 L 285 210.0 A 16.0 16.0 0 0 0 317 210.0 L 317 134" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="275.0" y1="98.0" x2="305.0" y2="128.0" stroke="#a16207" stroke-width="4" stroke-linecap="round"/>
+<circle cx="305.0" cy="128.0" r="4.0" fill="#dc2626" stroke="none" stroke-width="0"/>
+<text x="301.0" y="250.0" font-size="12.5" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">glowing splint</text>
+<text x="301.0" y="268.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">relights</text>
+<rect x="404.0" y="52.0" width="186.0" height="232.0" rx="10" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="497.0" y="76.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">CO<tspan dy="6.4" font-size="14.0">2</tspan><tspan dy="-6.4"></tspan></text>
+<path d="M 483 189.2 L 483 210.0 A 14.0 14.0 0 0 0 511 210.0 L 511 189.2 Z" stroke="none" stroke-width="0" fill="#f1f5f9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 481 134 L 481 210.0 A 16.0 16.0 0 0 0 513 210.0 L 513 134" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 547.0 104.0 L 501.0 104.0 L 501.0 212.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 547.0 104.0 L 501.0 104.0 L 501.0 212.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="499.0" cy="204.0" r="3.5" fill="#ffffff" stroke="#475569" stroke-width="1"/>
+<circle cx="499.0" cy="192.0" r="3.5" fill="#ffffff" stroke="#475569" stroke-width="1"/>
+<circle cx="499.0" cy="180.0" r="3.5" fill="#ffffff" stroke="#475569" stroke-width="1"/>
+<text x="497.0" y="250.0" font-size="12.5" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">bubble into lime water</text>
+<text x="497.0" y="268.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">lime water turns milky</text>
+<rect x="600.0" y="52.0" width="186.0" height="232.0" rx="10" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="693.0" y="76.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">NH<tspan dy="6.4" font-size="14.0">3</tspan><tspan dy="-6.4"></tspan></text>
+<path d="M 677 134 L 677 210.0 A 16.0 16.0 0 0 0 709 210.0 L 709 134" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="686.0" y="98.0" width="14.0" height="14.0" rx="0" fill="#fca5a5" stroke="none" stroke-width="0"/>
+<rect x="686.0" y="112.0" width="14.0" height="14.0" rx="0" fill="#93c5fd" stroke="none" stroke-width="0"/>
+<rect x="686.0" y="98.0" width="14.0" height="28.0" rx="0" fill="none" stroke="#0f172a" stroke-width="1.2"/>
+<text x="693.0" y="250.0" font-size="12.5" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">damp red litmus</text>
+<text x="693.0" y="268.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">turns blue</text>
+<rect x="12.0" y="296.0" width="186.0" height="232.0" rx="10" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="105.0" y="320.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cl<tspan dy="6.4" font-size="14.0">2</tspan><tspan dy="-6.4"></tspan></text>
+<path d="M 89 378 L 89 454.0 A 16.0 16.0 0 0 0 121 454.0 L 121 378" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="98.0" y="342.0" width="14.0" height="14.0" rx="0" fill="#93c5fd" stroke="none" stroke-width="0"/>
+<rect x="98.0" y="356.0" width="14.0" height="14.0" rx="0" fill="#fca5a5" stroke="none" stroke-width="0"/>
+<rect x="98.0" y="370.0" width="14.0" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="0"/>
+<rect x="98.0" y="342.0" width="14.0" height="42.0" rx="0" fill="none" stroke="#0f172a" stroke-width="1.2"/>
+<text x="105.0" y="494.0" font-size="12.5" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">damp blue litmus</text>
+<text x="105.0" y="512.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">red, then bleached white</text>
+<rect x="208.0" y="296.0" width="186.0" height="232.0" rx="10" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="301.0" y="320.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">SO<tspan dy="6.4" font-size="14.0">2</tspan><tspan dy="-6.4"></tspan></text>
+<path d="M 285 378 L 285 454.0 A 16.0 16.0 0 0 0 317 454.0 L 317 378" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="294.0" y="342.0" width="14.0" height="14.0" rx="0" fill="#fb923c" stroke="none" stroke-width="0"/>
+<rect x="294.0" y="356.0" width="14.0" height="14.0" rx="0" fill="#4ade80" stroke="none" stroke-width="0"/>
+<rect x="294.0" y="342.0" width="14.0" height="28.0" rx="0" fill="none" stroke="#0f172a" stroke-width="1.2"/>
+<text x="301.0" y="494.0" font-size="12.5" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">acidified K<tspan dy="4.0" font-size="8.8">2</tspan><tspan dy="-4.0">Cr</tspan><tspan dy="4.0" font-size="8.8">2</tspan><tspan dy="-4.0">O</tspan><tspan dy="4.0" font-size="8.8">7</tspan><tspan dy="-4.0"> paper</tspan></text>
+<text x="301.0" y="512.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">orange → green</text>
+<rect x="404.0" y="296.0" width="186.0" height="232.0" rx="10" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="497.0" y="320.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">HCl</text>
+<path d="M 481 378 L 481 454.0 A 16.0 16.0 0 0 0 513 454.0 L 513 378" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="507.0" y1="328.0" x2="499.0" y2="384.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="511.9" cy="377.4" r="4.5" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<circle cx="488.5" cy="356.0" r="5.0" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<circle cx="497.7" cy="375.8" r="4.1" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<circle cx="510.9" cy="363.1" r="5.4" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<circle cx="509.1" cy="366.8" r="4.6" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<circle cx="507.0" cy="361.0" r="4.7" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<circle cx="512.4" cy="362.9" r="5.4" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<circle cx="507.2" cy="378.0" r="4.0" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<circle cx="481.1" cy="376.8" r="5.4" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<circle cx="496.6" cy="358.4" r="3.6" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<circle cx="504.9" cy="363.6" r="5.9" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<circle cx="502.9" cy="361.2" r="5.0" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<circle cx="492.9" cy="380.3" r="5.7" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<circle cx="499.6" cy="372.8" r="5.1" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<circle cx="512.4" cy="381.4" r="3.1" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<circle cx="492.9" cy="371.6" r="3.9" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<text x="497.0" y="494.0" font-size="12.5" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rod dipped in conc. NH<tspan dy="4.0" font-size="8.8">3</tspan><tspan dy="-4.0"></tspan></text>
+<text x="497.0" y="512.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">dense white fumes</text>
+<rect x="600.0" y="296.0" width="186.0" height="232.0" rx="10" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="693.0" y="320.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">H<tspan dy="6.4" font-size="14.0">2</tspan><tspan dy="-6.4">S</tspan></text>
+<path d="M 677 378 L 677 454.0 A 16.0 16.0 0 0 0 709 454.0 L 709 378" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="686.0" y="342.0" width="14.0" height="14.0" rx="0" fill="#f1f5f9" stroke="none" stroke-width="0"/>
+<rect x="686.0" y="356.0" width="14.0" height="14.0" rx="0" fill="#111827" stroke="none" stroke-width="0"/>
+<rect x="686.0" y="342.0" width="14.0" height="28.0" rx="0" fill="none" stroke="#0f172a" stroke-width="1.2"/>
+<text x="693.0" y="494.0" font-size="12.5" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">lead(II) ethanoate paper</text>
+<text x="693.0" y="512.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">turns black</text>
+<text x="400.0" y="24.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Each gas has a simple, characteristic test</text>
+</svg>

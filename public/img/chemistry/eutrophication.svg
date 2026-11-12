@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Eutrophication</title>
+<desc id="d">Fertilisers, sewage and detergent phosphates wash into a river or lake. The nitrates and phosphates make algae grow rapidly (an algal bloom), which blocks light so water plants below die. Bacteria decompose the dead algae and plants, using up the dissolved oxygen. Fish and other animals suffocate and die.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="800" height="330" rx="20" fill="#f8fafc"/>
+<rect x="25.0" y="68.0" width="230.0" height="84.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="140.0" y="89.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. Nutrients enter</text>
+<text x="140.0" y="110.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">fertiliser, sewage,</text>
+<text x="140.0" y="131.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">detergent phosphates</text>
+<rect x="285.0" y="68.0" width="230.0" height="84.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="400.0" y="89.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2. Algal bloom</text>
+<text x="400.0" y="110.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">nitrates and phosphates</text>
+<text x="400.0" y="131.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">feed rapid algae growth</text>
+<rect x="545.0" y="68.0" width="230.0" height="84.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="660.0" y="89.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3. Light blocked</text>
+<text x="660.0" y="110.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">plants below the</text>
+<text x="660.0" y="131.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">surface die</text>
+<rect x="415.0" y="208.0" width="230.0" height="84.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="530.0" y="229.0" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4. Bacteria decompose</text>
+<text x="530.0" y="250.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">dead matter, using up</text>
+<text x="530.0" y="271.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">dissolved oxygen</text>
+<rect x="155.0" y="208.0" width="230.0" height="84.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="270.0" y="229.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5. Fish suffocate</text>
+<text x="270.0" y="250.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">oxygen-poor water;</text>
+<text x="270.0" y="271.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">animals die</text>
+<line x1="259.0" y1="110.0" x2="281.0" y2="110.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="519.0" y1="110.0" x2="541.0" y2="110.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="660.0" y1="156.0" x2="530.0" y2="204.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="411.0" y1="250.0" x2="389.0" y2="250.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="400.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Too many nutrients can starve a river of oxygen</text>
+</svg>
