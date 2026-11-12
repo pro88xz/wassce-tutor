@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Structure of a ministry in Sierra Leone</title>
+<desc id="d">A ministry is headed politically by a minister, assisted by deputy ministers. The permanent secretary is the administrative head and accounting officer, and a professional head (such as a chief medical officer) leads the technical staff. Directors head divisions, which reach down to district offices. The Secretary to the Cabinet is Head of the Civil Service, and the Public Service Commission handles appointments.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Who runs a ministry?</text>
+<rect x="250.0" y="66.0" width="300.0" height="58.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="84.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Minister</text>
+<text x="400.0" y="106.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">political head (appointed)</text>
+<rect x="250.0" y="155.0" width="300.0" height="50.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="180.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Deputy Minister(s)</text>
+<rect x="140.0" y="242.0" width="250.0" height="66.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="265.0" y="255.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Permanent Secretary</text>
+<text x="265.0" y="275.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">administrative head,</text>
+<text x="265.0" y="295.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">accounting officer</text>
+<rect x="440.0" y="242.0" width="250.0" height="66.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="565.0" y="255.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Professional head</text>
+<text x="565.0" y="275.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. Chief Medical Officer,</text>
+<text x="565.0" y="295.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Chief Education Officer</text>
+<rect x="190.0" y="345.0" width="420.0" height="50.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="400.0" y="370.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Directors and divisions</text>
+<rect x="190.0" y="418.0" width="420.0" height="44.0" rx="12" fill="#ffffff" stroke="#0f766e" stroke-width="2.5"/>
+<text x="400.0" y="440.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">District and field offices</text>
+<line x1="400.0" y1="130.0" x2="400.0" y2="149.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="400.0" y1="211.0" x2="265.0" y2="236.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="400.0" y1="211.0" x2="565.0" y2="236.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="265.0" y1="314.0" x2="400.0" y2="339.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="565.0" y1="314.0" x2="400.0" y2="339.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="400.0" y1="401.0" x2="400.0" y2="412.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="20.0" y="95.0" font-size="14" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">political</text>
+<text x="20.0" y="266.0" font-size="14" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">permanent</text>
+<text x="20.0" y="284.0" font-size="14" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">civil service</text>
+</svg>

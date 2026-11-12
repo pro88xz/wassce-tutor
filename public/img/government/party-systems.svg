@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Party systems</title>
+<desc id="d">In a one-party system only one party is allowed or effectively exists, as in Sierra Leone under the 1978 Constitution. In a two-party system two major parties alternate in power, as in the USA. In a multi-party system many parties compete and may form coalitions; Sierra Leone today is multi-party, though the SLPP and the APC dominate.</desc>
+<defs></defs>
+<rect width="800" height="430" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">One, two or many parties?</text>
+<rect x="20.0" y="60.0" width="240.0" height="340.0" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="140.0" y="90.0" font-size="19" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">One-party</text>
+<circle cx="140.0" cy="175.0" r="43.4" fill="#dbeafe" stroke="#2563eb" stroke-width="2.2"/>
+<text x="140.0" y="262.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">only one party allowed</text>
+<text x="140.0" y="286.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">or effectively exists</text>
+<text x="140.0" y="310.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="140.0" y="334.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sierra Leone 1978–1991</text>
+<rect x="280.0" y="60.0" width="240.0" height="340.0" rx="14" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="90.0" font-size="19" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Two-party</text>
+<circle cx="350.0" cy="175.0" r="32.2" fill="#dcfce7" stroke="#15803d" stroke-width="2.2"/>
+<circle cx="450.0" cy="175.0" r="28.5" fill="#dcfce7" stroke="#15803d" stroke-width="2.2"/>
+<text x="400.0" y="262.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">two big parties</text>
+<text x="400.0" y="286.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">take turns in power</text>
+<text x="400.0" y="310.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="400.0" y="334.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">USA (Democrats,</text>
+<text x="400.0" y="358.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Republicans)</text>
+<rect x="540.0" y="60.0" width="240.0" height="340.0" rx="14" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="660.0" y="90.0" font-size="19" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Multi-party</text>
+<circle cx="575.0" cy="175.0" r="24.8" fill="#fef3c7" stroke="#ea580c" stroke-width="2.2"/>
+<circle cx="625.0" cy="175.0" r="21.1" fill="#fef3c7" stroke="#ea580c" stroke-width="2.2"/>
+<circle cx="670.0" cy="175.0" r="13.6" fill="#fef3c7" stroke="#ea580c" stroke-width="2.2"/>
+<circle cx="708.0" cy="175.0" r="11.2" fill="#fef3c7" stroke="#ea580c" stroke-width="2.2"/>
+<circle cx="742.0" cy="175.0" r="8.7" fill="#fef3c7" stroke="#ea580c" stroke-width="2.2"/>
+<text x="660.0" y="262.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">many parties compete;</text>
+<text x="660.0" y="286.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">coalitions possible</text>
+<text x="660.0" y="310.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="660.0" y="334.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sierra Leone since 1991,</text>
+<text x="660.0" y="358.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Nigeria, Ghana</text>
+<text x="400.0" y="418.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Circle size shows a party&#x27;s share of support.</text>
+</svg>

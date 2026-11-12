@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Local government structure in Sierra Leone</title>
+<desc id="d">The Ministry of Local Government oversees local councils: district councils in rural areas and city or municipal councils in towns. Councillors are elected; mayors and council chairpersons are directly elected. Wards have ward committees. In the provinces, chiefdoms are governed by Paramount Chiefs and chiefdom councils, down to section and town chiefs.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Two strands of local administration</text>
+<rect x="200.0" y="60.0" width="400.0" height="56.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="77.5" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ministry of Local Government</text>
+<text x="400.0" y="98.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">oversight, grants, policy</text>
+<text x="215.0" y="162.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Elected local councils</text>
+<text x="590.0" y="162.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Traditional authority</text>
+<line x1="300.0" y1="118.0" x2="240.0" y2="146.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="500.0" y1="118.0" x2="565.0" y2="146.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="65.0" y="183.0" width="300.0" height="84.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="215.0" y="204.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Local councils</text>
+<text x="215.0" y="225.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">district councils (rural)</text>
+<text x="215.0" y="246.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">city / municipal councils</text>
+<rect x="65.0" y="300.0" width="300.0" height="60.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="215.0" y="319.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Mayor or Chairperson</text>
+<text x="215.0" y="340.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">directly elected</text>
+<rect x="65.0" y="390.0" width="300.0" height="60.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="215.0" y="409.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Wards and ward committees</text>
+<text x="215.0" y="430.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">councillors elected</text>
+<rect x="440.0" y="183.0" width="300.0" height="84.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="590.0" y="204.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Paramount Chief</text>
+<text x="590.0" y="225.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">and chiefdom council</text>
+<text x="590.0" y="246.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(190 chiefdoms)</text>
+<rect x="440.0" y="300.0" width="300.0" height="60.0" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="590.0" y="330.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Section chiefs</text>
+<rect x="440.0" y="390.0" width="300.0" height="60.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="590.0" y="420.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Town and village chiefs</text>
+<line x1="215.0" y1="273.0" x2="215.0" y2="294.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="215.0" y1="366.0" x2="215.0" y2="384.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="590.0" y1="273.0" x2="590.0" y2="294.0" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<line x1="590.0" y1="366.0" x2="590.0" y2="384.0" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<line x1="400.0" y1="150.0" x2="400.0" y2="470.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+</svg>

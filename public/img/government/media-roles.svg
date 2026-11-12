@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The mass media: forms, roles and threats</title>
+<desc id="d">The mass media include print (newspapers, magazines), broadcast (radio, television) and online media (news sites, social media). Their roles are to inform, educate, act as a watchdog on government, set the agenda, provide a platform for debate, mobilise citizens and entertain. Threats include censorship, ownership by politicians, poor pay and bribery, harassment of journalists and fake news.</desc>
+<defs></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The mass media in a democracy</text>
+<rect x="40.0" y="62.0" width="220.0" height="56.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="150.0" y="79.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Print</text>
+<text x="150.0" y="100.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">newspapers, magazines</text>
+<rect x="290.0" y="62.0" width="220.0" height="56.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="79.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Broadcast</text>
+<text x="400.0" y="100.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">radio, television</text>
+<rect x="540.0" y="62.0" width="220.0" height="56.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="650.0" y="79.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Online</text>
+<text x="650.0" y="100.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">news sites, social media</text>
+<text x="230.0" y="150.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Roles</text>
+<rect x="100.0" y="166.0" width="260.0" height="32.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="230.0" y="182.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">inform</text>
+<rect x="100.0" y="204.0" width="260.0" height="32.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="230.0" y="220.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">educate</text>
+<rect x="100.0" y="242.0" width="260.0" height="32.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="230.0" y="258.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">watchdog on power</text>
+<rect x="100.0" y="280.0" width="260.0" height="32.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="230.0" y="296.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">set the agenda</text>
+<rect x="100.0" y="318.0" width="260.0" height="32.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="230.0" y="334.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">platform for debate</text>
+<rect x="100.0" y="356.0" width="260.0" height="32.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="230.0" y="372.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">mobilise citizens</text>
+<rect x="100.0" y="394.0" width="260.0" height="32.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="230.0" y="410.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">entertain</text>
+<text x="580.0" y="150.0" font-size="17" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Threats</text>
+<rect x="440.0" y="166.0" width="280.0" height="32.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="580.0" y="182.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">censorship and harsh laws</text>
+<rect x="440.0" y="204.0" width="280.0" height="32.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="580.0" y="220.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">political ownership</text>
+<rect x="440.0" y="242.0" width="280.0" height="32.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="580.0" y="258.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">poor pay, bribery</text>
+<rect x="440.0" y="280.0" width="280.0" height="32.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="580.0" y="296.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">attacks on journalists</text>
+<rect x="440.0" y="318.0" width="280.0" height="32.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="580.0" y="334.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">fake news</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">How public corporations are controlled</title>
+<desc id="d">Public corporations are controlled by the minister (appoints the board and gives general directions), Parliament (creates them by Act, debates their reports and examines accounts through committees), the Auditor-General (audits accounts), the courts (they can sue and be sued), consumers and the press, and regulators that set tariffs and standards.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="450" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Who keeps a public corporation in check?</text>
+<rect x="275.0" y="195.0" width="250.0" height="80.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="223.5" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Public corporation</text>
+<text x="400.0" y="246.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">board of directors</text>
+<rect x="30.0" y="55.0" width="220.0" height="80.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="140.0" y="74.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Minister</text>
+<text x="140.0" y="95.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">appoints the board,</text>
+<text x="140.0" y="116.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">general directions</text>
+<line x1="140.0" y1="141.0" x2="400.0" y2="189.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="550.0" y="55.0" width="220.0" height="80.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="660.0" y="74.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Parliament</text>
+<text x="660.0" y="95.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">creates it by Act;</text>
+<text x="660.0" y="116.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">debates its reports</text>
+<line x1="660.0" y1="141.0" x2="400.0" y2="189.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="10.0" y="206.0" width="220.0" height="58.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="120.0" y="224.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Auditor-General</text>
+<text x="120.0" y="245.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">audits accounts</text>
+<line x1="236.0" y1="235.0" x2="269.0" y2="235.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="570.0" y="195.0" width="220.0" height="80.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="680.0" y="214.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Courts</text>
+<text x="680.0" y="235.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">it can sue and</text>
+<text x="680.0" y="256.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">be sued</text>
+<line x1="564.0" y1="235.0" x2="531.0" y2="235.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="30.0" y="340.0" width="220.0" height="80.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="140.0" y="359.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Regulators</text>
+<text x="140.0" y="380.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">set tariffs and</text>
+<text x="140.0" y="401.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">standards</text>
+<line x1="140.0" y1="334.0" x2="400.0" y2="281.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="550.0" y="340.0" width="220.0" height="80.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="660.0" y="359.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Consumers, press</text>
+<text x="660.0" y="380.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">complaints and</text>
+<text x="660.0" y="401.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">public pressure</text>
+<line x1="660.0" y1="334.0" x2="400.0" y2="281.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Controls on the civil service</title>
+<desc id="d">The civil service is controlled by ministers, Parliament (questions and the Public Accounts Committee), the courts, the Public Service Commission, the Auditor-General, the Anti-Corruption Commission, the Ombudsman, and the press and public opinion.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="450" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Keeping the civil service accountable</text>
+<rect x="290.0" y="205.0" width="220.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="227.0" font-size="20" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Civil</text>
+<text x="400.0" y="253.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">service</text>
+<rect x="25.0" y="70.0" width="210.0" height="60.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="130.0" y="89.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ministers</text>
+<text x="130.0" y="110.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">direct and supervise</text>
+<line x1="130.0" y1="136.0" x2="400.0" y2="199.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="295.0" y="60.0" width="210.0" height="60.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="79.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Parliament</text>
+<text x="400.0" y="100.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">questions, Public Accounts</text>
+<line x1="400.0" y1="126.0" x2="400.0" y2="199.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="565.0" y="70.0" width="210.0" height="60.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="670.0" y="89.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The courts</text>
+<text x="670.0" y="110.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">judicial review, suits</text>
+<line x1="670.0" y1="136.0" x2="400.0" y2="199.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="5.0" y="210.0" width="210.0" height="60.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="110.0" y="229.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Public Service</text>
+<text x="110.0" y="250.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Commission: discipline</text>
+<line x1="221.0" y1="240.0" x2="284.0" y2="240.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="585.0" y="210.0" width="210.0" height="60.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="690.0" y="229.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Auditor-General</text>
+<text x="690.0" y="250.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">audits spending</text>
+<line x1="579.0" y1="240.0" x2="516.0" y2="240.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="25.0" y="350.0" width="210.0" height="60.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="130.0" y="369.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Anti-Corruption</text>
+<text x="130.0" y="390.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Commission</text>
+<line x1="130.0" y1="344.0" x2="400.0" y2="281.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="295.0" y="365.0" width="210.0" height="60.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="384.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ombudsman</text>
+<text x="400.0" y="405.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">complaints of injustice</text>
+<line x1="400.0" y1="359.0" x2="400.0" y2="281.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="565.0" y="350.0" width="210.0" height="60.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="670.0" y="369.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Press and</text>
+<text x="670.0" y="390.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">public opinion</text>
+<line x1="670.0" y1="344.0" x2="400.0" y2="281.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+</svg>

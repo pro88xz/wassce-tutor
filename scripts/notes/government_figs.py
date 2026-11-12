@@ -567,6 +567,304 @@ def amendment_process():
     return s
 
 
+# ═══ Group 3: political processes and public administration ══════════════════
+
+@fig
+def party_systems():
+    s = Svg(800, 430, "Party systems",
+            "In a one-party system only one party is allowed or effectively exists, as in Sierra Leone under the 1978 "
+            "Constitution. In a two-party system two major parties alternate in power, as in the USA. In a multi-party "
+            "system many parties compete and may form coalitions; Sierra Leone today is multi-party, though the SLPP and "
+            "the APC dominate.")
+    heading(s, "One, two or many parties?")
+    cols = [(140, "One-party", BLUE, F_BLUE, 1, ["only one party allowed", "or effectively exists", "", "Sierra Leone 1978–1991"]),
+            (400, "Two-party", GREEN, F_GREEN, 2, ["two big parties", "take turns in power", "", "USA (Democrats,", "Republicans)"]),
+            (660, "Multi-party", ORANGE, F_AMBER, 5, ["many parties compete;", "coalitions possible", "", "Sierra Leone since 1991,", "Nigeria, Ghana"])]
+    for cx, name, col, fill, n, lines in cols:
+        s.rect(cx - 120, 60, 240, 340, fill="#ffffff", stroke=col, width=2.5, rx=14)
+        s.text(cx, 90, name, size=19, weight="bold", color=col)
+        sizes = {1: [70], 2: [52, 46], 5: [40, 34, 22, 18, 14]}[n]
+        xs = {1: [cx], 2: [cx - 50, cx + 50], 5: [cx - 85, cx - 35, cx + 10, cx + 48, cx + 82]}[n]
+        for x, r in zip(xs, sizes):
+            s.circle(x, 175, r * 0.62, fill=fill, stroke=col, width=2.2)
+        for k, t in enumerate(lines):
+            s.text(cx, 262 + k * 24, t, size=15, color=INK if k < 2 else MUTED, weight="bold" if k >= 3 else "normal")
+    note(s, "Circle size shows a party's share of support.", 418, size=13)
+    return s
+
+
+@fig
+def pressure_groups():
+    s = Svg(800, 480, "Types and methods of pressure groups",
+            "Interest (sectional or protective) groups defend their members, such as trade unions and professional "
+            "bodies. Promotional (cause) groups promote an idea, such as human rights or women's representation. "
+            "Institutional groups are bodies within government or society, such as religious councils. Anomic groups "
+            "arise suddenly, such as spontaneous protests. Methods include lobbying, petitions, media campaigns, "
+            "strikes, demonstrations, court action and boycotts.")
+    heading(s, "Pressure groups: who they are and how they act")
+    types = [(110, "Interest", ["(sectional)", "defend members:", "SLTU, Labour", "Congress, Bar"]),
+             (305, "Promotional", ["(cause)", "promote an idea:", "50/50 Group,", "rights groups"]),
+             (500, "Institutional", ["inside society", "or the state:", "Inter-Religious", "Council"]),
+             (695, "Anomic", ["sudden and", "unorganised:", "spontaneous", "street protests"])]
+    for x, head, lines in types:
+        box(s, x, 150, 180, 140, [head] + lines, col=BLUE, fill=F_BLUE, size=15)
+    s.text(400, 255, "Methods", size=18, weight="bold", color=ORANGE)
+    methods = ["lobbying officials", "petitions", "press and radio", "strikes", "demonstrations",
+               "court action", "boycotts", "funding candidates"]
+    for k, m in enumerate(methods):
+        x = 110 + (k % 4) * 195
+        y = 300 + (k // 4) * 60
+        box(s, x, y, 180, 44, [m], col=ORANGE, fill=F_AMBER, size=15, bold_first=False)
+    note(s, "Pressure groups seek to influence policy; unlike parties, they do not seek to form a government.", 455, size=14)
+    return s
+
+
+@fig
+def opinion_formation():
+    s = Svg(800, 480, "How public opinion is formed and measured",
+            "Public opinion is shaped by agents such as the family, school, mass media, religious bodies, political "
+            "parties, pressure groups, peer groups and government. It is expressed and measured through elections, "
+            "opinion polls, referendums, letters and phone-in programmes, demonstrations and social media.")
+    heading(s, "Shaping and measuring public opinion")
+    po = box(s, 400, 262, 200, 80, ["PUBLIC", "OPINION"], col=PURPLE, fill=F_PURPLE, size=20)
+    s.text(130, 70, "Formed by", size=17, weight="bold", color=BLUE)
+    agents = ["family", "school", "mass media", "religious bodies", "parties", "pressure groups", "peer groups"]
+    for k, a in enumerate(agents):
+        y = 105 + k * 52
+        box(s, 130, y, 190, 40, [a], col=BLUE, fill=F_BLUE, size=15, bold_first=False)
+        s.line(225, y, 262, y, color=BLUE, width=2)
+    s.line(262, 105, 262, 417, color=BLUE, width=2.4)
+    arrow(s, 262, 262, 294, 262, color=BLUE)
+    s.text(670, 70, "Measured by", size=17, weight="bold", color=GREEN)
+    meas = ["elections", "opinion polls", "referendums", "phone-ins, letters", "demonstrations", "social media"]
+    for k, a in enumerate(meas):
+        y = 110 + k * 60
+        box(s, 670, y, 190, 42, [a], col=GREEN, fill=F_GREEN, size=15, bold_first=False)
+        arrow(s, 540, y, 571, y, color=GREEN)
+    s.line(540, 110, 540, 410, color=GREEN, width=2.4)
+    s.line(500, 262, 540, 262, color=GREEN, width=2.4)
+    return s
+
+
+@fig
+def media_roles():
+    s = Svg(800, 470, "The mass media: forms, roles and threats",
+            "The mass media include print (newspapers, magazines), broadcast (radio, television) and online media "
+            "(news sites, social media). Their roles are to inform, educate, act as a watchdog on government, set the "
+            "agenda, provide a platform for debate, mobilise citizens and entertain. Threats include censorship, "
+            "ownership by politicians, poor pay and bribery, harassment of journalists and fake news.")
+    heading(s, "The mass media in a democracy")
+    forms = [(150, "Print", "newspapers, magazines"), (400, "Broadcast", "radio, television"), (650, "Online", "news sites, social media")]
+    for x, a, b in forms:
+        box(s, x, 90, 220, 56, [a, b], col=BLUE, fill=F_BLUE, size=15)
+    s.text(230, 150, "Roles", size=17, weight="bold", color=GREEN)
+    roles = ["inform", "educate", "watchdog on power", "set the agenda", "platform for debate", "mobilise citizens", "entertain"]
+    for k, r in enumerate(roles):
+        box(s, 230, 182 + k * 38, 260, 32, [r], col=GREEN, fill=F_GREEN, size=15, bold_first=False)
+    s.text(580, 150, "Threats", size=17, weight="bold", color=RED)
+    thr = ["censorship and harsh laws", "political ownership", "poor pay, bribery", "attacks on journalists", "fake news"]
+    for k, r in enumerate(thr):
+        box(s, 580, 182 + k * 38, 280, 32, [r], col=RED, fill=F_RED, size=15, bold_first=False)
+    return s
+
+
+@fig
+def election_process():
+    s = Svg(800, 500, "Stages in the conduct of an election",
+            "The electoral commission delimits constituencies, registers voters and displays the register, receives "
+            "nominations of candidates, oversees the campaign, conducts polling by secret ballot, counts and collates "
+            "the votes, and declares the results. Disputes are settled by election petitions in the courts.")
+    heading(s, "How an election is run")
+    steps = [("1. Delimitation", "boundaries of constituencies"), ("2. Voter registration", "register compiled and displayed"),
+             ("3. Nomination", "candidates file papers and fees"), ("4. Campaign", "rallies, manifestos, debates"),
+             ("5. Polling", "secret ballot at polling stations"), ("6. Counting", "votes counted and collated"),
+             ("7. Declaration", "results announced"), ("8. Petitions", "courts settle disputes")]
+    for k, (a, b) in enumerate(steps):
+        x = 210 if k < 4 else 590
+        y = 100 + (k % 4) * 100
+        col, fill = (BLUE, F_BLUE) if k < 4 else (GREEN, F_GREEN)
+        if k == 7:
+            col, fill = ORANGE, F_AMBER
+        box(s, x, y, 320, 64, [a, b], col=col, fill=fill, size=15)
+        if k % 4 != 3:
+            arrow(s, x, y + 33, x, y + 66, color=MUTED)
+    s.path("M 370 400 C 400 400, 400 100, 412 100", color=MUTED, width=2.6)
+    arrow(s, 408, 100, 428, 100, color=MUTED)
+    note(s, "In Sierra Leone the Electoral Commission (ECSL) runs elections; the PPRC regulates parties.", 482, size=14)
+    return s
+
+
+@fig
+def fptp_vs_pr():
+    s = Svg(800, 470, "First-past-the-post compared with proportional representation",
+            "Illustration with ten seats. Party A wins 46% of the votes, B 34% and C 20%. Under first-past-the-post, "
+            "A might win 7 seats, B 3 and C none, because only the leading candidate in each constituency wins. Under "
+            "proportional representation the seats follow the vote shares: A 5, B 3, C 2.")
+    heading(s, "Same votes, different seats (10 seats)")
+    parties = [("A", 46, BLUE, F_BLUE), ("B", 34, GREEN, F_GREEN), ("C", 20, ORANGE, F_AMBER)]
+    s.text(130, 80, "Votes", size=17, weight="bold", color=INK)
+    for k, (p, v, col, fill) in enumerate(parties):
+        y = 120 + k * 56
+        s.text(60, y, p, size=18, weight="bold", color=col)
+        s.rect(80, y - 16, v * 3.2, 32, fill=fill, stroke=col, width=2, rx=4)
+        s.text(80 + v * 3.2 + 26, y, f"{v}%", size=15, color=INK, weight="bold")
+    def seats(x0, title_, counts, y0):
+        s.text(x0 + 110, y0 - 40, title_, size=17, weight="bold", color=INK)
+        k = 0
+        for (p, v, col, fill), n in zip(parties, counts):
+            for _ in range(n):
+                cx = x0 + (k % 5) * 46
+                cy = y0 + (k // 5) * 50
+                s.circle(cx, cy, 18, fill=fill, stroke=col, width=2.4)
+                s.text(cx, cy + 1, p, size=14, weight="bold", color=col)
+                k += 1
+        s.text(x0 + 92, y0 + 100, "  ".join(f"{p} {n}" for (p, *_), n in zip(parties, counts)), size=15, color=MUTED, weight="bold")
+    seats(470, "First-past-the-post", [7, 3, 0], 120)
+    seats(470, "Proportional representation", [5, 3, 2], 330)
+    s.text(200, 330, "FPTP: the winner in each", size=15, color=INK)
+    s.text(200, 352, "constituency takes the seat;", size=15, color=INK)
+    s.text(200, 374, "small parties lose out.", size=15, color=INK)
+    s.text(200, 408, "PR: seats follow vote shares.", size=15, color=INK)
+    return s
+
+
+@fig
+def ministry_structure():
+    s = Svg(800, 470, "Structure of a ministry in Sierra Leone",
+            "A ministry is headed politically by a minister, assisted by deputy ministers. The permanent secretary is the "
+            "administrative head and accounting officer, and a professional head (such as a chief medical officer) leads "
+            "the technical staff. Directors head divisions, which reach down to district offices. The Secretary to the "
+            "Cabinet is Head of the Civil Service, and the Public Service Commission handles appointments.")
+    heading(s, "Who runs a ministry?")
+    mn = box(s, 400, 95, 300, 58, ["Minister", "political head (appointed)"], col=BLUE, fill=F_BLUE, size=16)
+    dm = box(s, 400, 180, 300, 50, ["Deputy Minister(s)"], col=BLUE, fill="#ffffff", size=15)
+    ps = box(s, 265, 275, 250, 66, ["Permanent Secretary", "administrative head,", "accounting officer"], col=GREEN, fill=F_GREEN, size=14)
+    ph = box(s, 565, 275, 250, 66, ["Professional head", "e.g. Chief Medical Officer,", "Chief Education Officer"], col=GREEN, fill=F_GREEN, size=14)
+    dr = box(s, 400, 370, 420, 50, ["Directors and divisions"], col=TEAL, fill=F_TEAL, size=15)
+    ds = box(s, 400, 440, 420, 44, ["District and field offices"], col=TEAL, fill="#ffffff", size=15)
+    link(s, mn, dm, color=MUTED)
+    link(s, dm, ps, color=MUTED)
+    link(s, dm, ph, color=MUTED)
+    link(s, ps, dr, color=MUTED)
+    link(s, ph, dr, color=MUTED)
+    link(s, dr, ds, color=MUTED)
+    s.text(20, 95, "political", size=14, weight="bold", color=BLUE, anchor="start")
+    s.text(20, 266, "permanent", size=14, weight="bold", color=GREEN, anchor="start")
+    s.text(20, 284, "civil service", size=14, weight="bold", color=GREEN, anchor="start")
+    return s
+
+
+@fig
+def civil_service_control():
+    s = Svg(800, 450, "Controls on the civil service",
+            "The civil service is controlled by ministers, Parliament (questions and the Public Accounts Committee), the "
+            "courts, the Public Service Commission, the Auditor-General, the Anti-Corruption Commission, the Ombudsman, "
+            "and the press and public opinion.")
+    heading(s, "Keeping the civil service accountable")
+    c = box(s, 400, 240, 220, 70, ["Civil", "service"], col=GREEN, fill=F_GREEN, size=20)
+    items = [(130, 100, "Ministers", "direct and supervise"), (400, 90, "Parliament", "questions, Public Accounts"),
+             (670, 100, "The courts", "judicial review, suits"), (110, 240, "Public Service", "Commission: discipline"),
+             (690, 240, "Auditor-General", "audits spending"), (130, 380, "Anti-Corruption", "Commission"),
+             (400, 395, "Ombudsman", "complaints of injustice"), (670, 380, "Press and", "public opinion")]
+    for x, y, a, b in items:
+        bb = box(s, x, y, 210, 60, [a, b], col=BLUE, fill=F_BLUE, size=15)
+        link(s, bb, c, color=MUTED, width=1.8)
+    return s
+
+
+@fig
+def sl_local_government():
+    s = Svg(800, 500, "Local government structure in Sierra Leone",
+            "The Ministry of Local Government oversees local councils: district councils in rural areas and city or "
+            "municipal councils in towns. Councillors are elected; mayors and council chairpersons are directly "
+            "elected. Wards have ward committees. In the provinces, chiefdoms are governed by Paramount Chiefs and "
+            "chiefdom councils, down to section and town chiefs.")
+    heading(s, "Two strands of local administration")
+    mn = box(s, 400, 88, 400, 56, ["Ministry of Local Government", "oversight, grants, policy"], col=PURPLE, fill=F_PURPLE, size=15)
+    s.text(215, 162, "Elected local councils", size=16, weight="bold", color=BLUE)
+    s.text(590, 162, "Traditional authority", size=16, weight="bold", color=ORANGE)
+    arrow(s, 300, 118, 240, 146, color=MUTED)
+    arrow(s, 500, 118, 565, 146, color=MUTED)
+    lc = box(s, 215, 225, 300, 84, ["Local councils", "district councils (rural)", "city / municipal councils"], col=BLUE, fill=F_BLUE, size=15)
+    hd = box(s, 215, 330, 300, 60, ["Mayor or Chairperson", "directly elected"], col=BLUE, fill="#ffffff", size=15)
+    wc = box(s, 215, 420, 300, 60, ["Wards and ward committees", "councillors elected"], col=BLUE, fill=F_BLUE, size=15)
+    pc = box(s, 590, 225, 300, 84, ["Paramount Chief", "and chiefdom council", "(190 chiefdoms)"], col=ORANGE, fill=F_AMBER, size=15)
+    sc = box(s, 590, 330, 300, 60, ["Section chiefs"], col=ORANGE, fill="#ffffff", size=15)
+    tc = box(s, 590, 420, 300, 60, ["Town and village chiefs"], col=ORANGE, fill=F_AMBER, size=15)
+    link(s, lc, hd, color=BLUE)
+    link(s, hd, wc, color=BLUE)
+    link(s, pc, sc, color=ORANGE)
+    link(s, sc, tc, color=ORANGE)
+    s.line(400, 150, 400, 470, color=MUTED, width=1.5, dash="6 6")
+    return s
+
+
+@fig
+def decentralisation_forms():
+    s = Svg(800, 420, "Centralisation and forms of decentralisation",
+            "Power can be centralised in the capital or decentralised. Deconcentration moves central officials to the "
+            "districts but keeps decisions at the centre. Delegation hands specific tasks to bodies such as public "
+            "corporations. Devolution transfers real legal powers and resources to elected local councils, as Sierra "
+            "Leone's Local Government Act does.")
+    heading(s, "How far is power moved from the centre?")
+    arrow(s, 70, 330, 740, 330, color=MUTED, width=3)
+    s.text(70, 360, "power stays at the centre", size=14, color=MUTED, anchor="start")
+    s.text(740, 360, "power moved to local bodies", size=14, color=MUTED, anchor="end")
+    items = [(140, "Centralisation", ["all decisions", "made in the capital"], RED, F_RED),
+             (320, "Deconcentration", ["central officials", "posted to districts"], ORANGE, F_AMBER),
+             (500, "Delegation", ["tasks handed to", "agencies, corporations"], TEAL, F_TEAL),
+             (680, "Devolution", ["legal powers and", "money to elected councils"], GREEN, F_GREEN)]
+    for x, head, lines, col, fill in items:
+        box(s, x, 200, 170, 150, [head] + lines, col=col, fill=fill, size=15)
+        s.line(x, 278, x, 322, color=col, width=2.2)
+        s.dot(x, 330, r=7, color=col)
+    note(s, "Decentralisation = deconcentration, delegation or devolution.", 400, size=14)
+    return s
+
+
+@fig
+def enterprise_types():
+    s = Svg(800, 470, "Government department, public corporation and private company",
+            "A government department is part of a ministry, financed from the budget and run by civil servants under a "
+            "minister. A public corporation is created by an Act, owned by the state, run by a board with day-to-day "
+            "independence, and aims to provide a service at reasonable cost. A private company is owned by shareholders "
+            "and run for profit.")
+    heading(s, "Three ways to run an enterprise")
+    rows = ["Created by", "Owned by", "Managed by", "Financed by", "Main aim"]
+    cols = [(300, "Government", "department", BLUE, F_BLUE, ["a ministry", "the state", "civil servants", "the budget", "public service"]),
+            (500, "Public", "corporation", GREEN, F_GREEN, ["an Act of Parliament", "the state", "a board", "own revenue + grants", "service at fair cost"]),
+            (700, "Private", "company", ORANGE, F_AMBER, ["registration", "shareholders", "directors", "shares, loans, profit", "profit"])]
+    for k, r in enumerate(rows):
+        s.text(110, 160 + k * 58, r, size=15, weight="bold", color=INK)
+    for x, h1, h2, col, fill, vals in cols:
+        box(s, x, 92, 180, 60, [h1, h2], col=col, fill=fill, size=16)
+        for k, v in enumerate(vals):
+            box(s, x, 160 + k * 58, 180, 44, [v], col=col, fill="#ffffff", size=14, bold_first=False)
+    note(s, "Sierra Leone examples: Guma Valley Water Company, EDSA, SLBC, NASSIT (public corporations).", 452, size=14)
+    return s
+
+
+@fig
+def corporation_control():
+    s = Svg(800, 450, "How public corporations are controlled",
+            "Public corporations are controlled by the minister (appoints the board and gives general directions), "
+            "Parliament (creates them by Act, debates their reports and examines accounts through committees), the "
+            "Auditor-General (audits accounts), the courts (they can sue and be sued), consumers and the press, and "
+            "regulators that set tariffs and standards.")
+    heading(s, "Who keeps a public corporation in check?")
+    c = box(s, 400, 235, 250, 80, ["Public corporation", "board of directors"], col=GREEN, fill=F_GREEN, size=17)
+    items = [(140, 95, "Minister", ["appoints the board,", "general directions"]),
+             (660, 95, "Parliament", ["creates it by Act;", "debates its reports"]),
+             (120, 235, "Auditor-General", ["audits accounts"]),
+             (680, 235, "Courts", ["it can sue and", "be sued"]),
+             (140, 380, "Regulators", ["set tariffs and", "standards"]),
+             (660, 380, "Consumers, press", ["complaints and", "public pressure"])]
+    for x, y, head, lines in items:
+        b = box(s, x, y, 220, 80 if len(lines) == 2 else 58, [head] + lines, col=BLUE, fill=F_BLUE, size=15)
+        link(s, b, c, color=MUTED)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:

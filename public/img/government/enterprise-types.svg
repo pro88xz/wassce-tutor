@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Government department, public corporation and private company</title>
+<desc id="d">A government department is part of a ministry, financed from the budget and run by civil servants under a minister. A public corporation is created by an Act, owned by the state, run by a board with day-to-day independence, and aims to provide a service at reasonable cost. A private company is owned by shareholders and run for profit.</desc>
+<defs></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Three ways to run an enterprise</text>
+<text x="110.0" y="160.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Created by</text>
+<text x="110.0" y="218.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Owned by</text>
+<text x="110.0" y="276.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Managed by</text>
+<text x="110.0" y="334.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Financed by</text>
+<text x="110.0" y="392.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Main aim</text>
+<rect x="210.0" y="62.0" width="180.0" height="60.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="300.0" y="81.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Government</text>
+<text x="300.0" y="103.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">department</text>
+<rect x="210.0" y="138.0" width="180.0" height="44.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="300.0" y="160.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">a ministry</text>
+<rect x="210.0" y="196.0" width="180.0" height="44.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="300.0" y="218.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the state</text>
+<rect x="210.0" y="254.0" width="180.0" height="44.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="300.0" y="276.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">civil servants</text>
+<rect x="210.0" y="312.0" width="180.0" height="44.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="300.0" y="334.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the budget</text>
+<rect x="210.0" y="370.0" width="180.0" height="44.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="300.0" y="392.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">public service</text>
+<rect x="410.0" y="62.0" width="180.0" height="60.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="500.0" y="81.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Public</text>
+<text x="500.0" y="103.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">corporation</text>
+<rect x="410.0" y="138.0" width="180.0" height="44.0" rx="12" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="500.0" y="160.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">an Act of Parliament</text>
+<rect x="410.0" y="196.0" width="180.0" height="44.0" rx="12" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="500.0" y="218.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the state</text>
+<rect x="410.0" y="254.0" width="180.0" height="44.0" rx="12" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="500.0" y="276.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">a board</text>
+<rect x="410.0" y="312.0" width="180.0" height="44.0" rx="12" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="500.0" y="334.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">own revenue + grants</text>
+<rect x="410.0" y="370.0" width="180.0" height="44.0" rx="12" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="500.0" y="392.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">service at fair cost</text>
+<rect x="610.0" y="62.0" width="180.0" height="60.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="700.0" y="81.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Private</text>
+<text x="700.0" y="103.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">company</text>
+<rect x="610.0" y="138.0" width="180.0" height="44.0" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="700.0" y="160.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">registration</text>
+<rect x="610.0" y="196.0" width="180.0" height="44.0" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="700.0" y="218.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">shareholders</text>
+<rect x="610.0" y="254.0" width="180.0" height="44.0" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="700.0" y="276.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">directors</text>
+<rect x="610.0" y="312.0" width="180.0" height="44.0" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="700.0" y="334.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">shares, loans, profit</text>
+<rect x="610.0" y="370.0" width="180.0" height="44.0" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="700.0" y="392.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">profit</text>
+<text x="400.0" y="452.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Sierra Leone examples: Guma Valley Water Company, EDSA, SLBC, NASSIT (public corporations).</text>
+</svg>

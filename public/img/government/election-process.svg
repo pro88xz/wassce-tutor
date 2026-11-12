@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Stages in the conduct of an election</title>
+<desc id="d">The electoral commission delimits constituencies, registers voters and displays the register, receives nominations of candidates, oversees the campaign, conducts polling by secret ballot, counts and collates the votes, and declares the results. Disputes are settled by election petitions in the courts.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">How an election is run</text>
+<rect x="50.0" y="68.0" width="320.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="210.0" y="89.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. Delimitation</text>
+<text x="210.0" y="110.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">boundaries of constituencies</text>
+<line x1="210.0" y1="133.0" x2="210.0" y2="166.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="50.0" y="168.0" width="320.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="210.0" y="189.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2. Voter registration</text>
+<text x="210.0" y="210.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">register compiled and displayed</text>
+<line x1="210.0" y1="233.0" x2="210.0" y2="266.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="50.0" y="268.0" width="320.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="210.0" y="289.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3. Nomination</text>
+<text x="210.0" y="310.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">candidates file papers and fees</text>
+<line x1="210.0" y1="333.0" x2="210.0" y2="366.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="50.0" y="368.0" width="320.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="210.0" y="389.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4. Campaign</text>
+<text x="210.0" y="410.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rallies, manifestos, debates</text>
+<rect x="430.0" y="68.0" width="320.0" height="64.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="590.0" y="89.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5. Polling</text>
+<text x="590.0" y="110.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">secret ballot at polling stations</text>
+<line x1="590.0" y1="133.0" x2="590.0" y2="166.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="430.0" y="168.0" width="320.0" height="64.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="590.0" y="189.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6. Counting</text>
+<text x="590.0" y="210.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">votes counted and collated</text>
+<line x1="590.0" y1="233.0" x2="590.0" y2="266.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="430.0" y="268.0" width="320.0" height="64.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="590.0" y="289.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7. Declaration</text>
+<text x="590.0" y="310.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">results announced</text>
+<line x1="590.0" y1="333.0" x2="590.0" y2="366.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="430.0" y="368.0" width="320.0" height="64.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="590.0" y="389.5" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">8. Petitions</text>
+<text x="590.0" y="410.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">courts settle disputes</text>
+<path d="M 370 400 C 400 400, 400 100, 412 100" stroke="#475569" stroke-width="2.6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="408.0" y1="100.0" x2="428.0" y2="100.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="400.0" y="482.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">In Sierra Leone the Electoral Commission (ECSL) runs elections; the PPRC regulates parties.</text>
+</svg>
