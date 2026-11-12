@@ -168,34 +168,34 @@
      "key": "com-mc-05",
      "stem": "After the 2022 redenomination, what is the price in new leones of a bag of rice that cost Le 450,000?",
      "image_url": null,
-     "explanation": "1,000 old leones = 1 new leone, so 450,000 ÷ 1,000 = NLe 450.\n\n**Why the other options are wrong**\n\n- 450000 NLe: That is the old price; three zeros were removed.\n- 4500 NLe: You divided by 100 instead of 1,000.\n- 45 NLe: You divided by 10,000 instead of 1,000.",
+     "explanation": "1,000 old leones = 1 new leone, so 450,000 ÷ 1,000 = NLe 450.\n\n**Why the other options are wrong**\n\n- NLe 450,000: That is the old price; three zeros were removed.\n- NLe 4,500: You divided by 100 instead of 1,000.\n- NLe 45: You divided by 10,000 instead of 1,000.",
      "position": 5,
      "options": [
       {
        "id": "5c6de04f-d627-5470-a15f-4e44f45c4364",
        "label": "A",
-       "content": "45 NLe",
+       "content": "NLe 45",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "9e4bdf51-5171-59bc-bd71-1e17e5fa722f",
        "label": "B",
-       "content": "450 NLe",
+       "content": "NLe 450",
        "is_correct": true,
        "position": 1
       },
       {
        "id": "00336ed9-30b1-54d7-8b37-5bfbe7317e77",
        "label": "C",
-       "content": "4500 NLe",
+       "content": "NLe 4,500",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "5530f74e-0264-54d1-9648-0a5bd36c8948",
        "label": "D",
-       "content": "450000 NLe",
+       "content": "NLe 450,000",
        "is_correct": false,
        "position": 3
       }
@@ -206,34 +206,34 @@
      "key": "com-mc-06",
      "stem": "The price index rises from 100 in the base year to 125. What is the value of NLe 1 in base-year terms?",
      "image_url": null,
-     "explanation": "Value of money $= \\dfrac{100}{125} \\times 1 = $ NLe 0.80: a 20% fall in purchasing power.\n\n**Why the other options are wrong**\n\n- 1.25 NLe: You divided the index by 100; the value of money is 100 ÷ index.\n- 0.75 NLe: You subtracted the 25% rise from 1; that overstates the fall.\n- 0.25 NLe: That is the rise in prices as a fraction, not the value of money.",
+     "explanation": "Value of money $= \\dfrac{100}{125} \\times 1 = $ NLe 0.80: a 20% fall in purchasing power.\n\n**Why the other options are wrong**\n\n- NLe 1.25: You divided the index by 100; the value of money is 100 ÷ index.\n- NLe 0.75: You subtracted the 25% rise from 1; that overstates the fall.\n- NLe 0.25: That is the rise in prices as a fraction, not the value of money.",
      "position": 6,
      "options": [
       {
        "id": "f81b1c08-da52-5171-833e-41a948623a5d",
        "label": "A",
-       "content": "0.25 NLe",
+       "content": "NLe 0.25",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "c136bca4-9e64-5d67-aa5d-b9526f055fd8",
        "label": "B",
-       "content": "0.75 NLe",
+       "content": "NLe 0.75",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "636cf850-8d90-5173-9bd1-1800841eca9b",
        "label": "C",
-       "content": "0.80 NLe",
+       "content": "NLe 0.80",
        "is_correct": true,
        "position": 2
       },
       {
        "id": "f30ed820-502d-58b6-be48-1189a3ac0cbf",
        "label": "D",
-       "content": "1.25 NLe",
+       "content": "NLe 1.25",
        "is_correct": false,
        "position": 3
       }
@@ -282,34 +282,34 @@
      "key": "com-mc-08",
      "stem": "An importer must pay 4,000 US dollars. The exchange rate is 1 US dollar = NLe 24. How much is this in leones?",
      "image_url": null,
-     "explanation": "Cost in leones $= 4000 \\times 24 = $ NLe 96,000.\n\n**Why the other options are wrong**\n\n- 166.67 NLe: You divided by the exchange rate instead of multiplying.\n- 4024 NLe: You added the exchange rate.\n- 100000 NLe: You used a rate of NLe 25 to the dollar.",
+     "explanation": "Cost in leones $= 4000 \\times 24 = $ NLe 96,000.\n\n**Why the other options are wrong**\n\n- NLe 166.67: You divided by the exchange rate instead of multiplying.\n- NLe 4,024: You added the exchange rate.\n- NLe 100,000: You used a rate of NLe 25 to the dollar.",
      "position": 8,
      "options": [
       {
        "id": "bc570def-b670-5309-b5aa-42237e19d60e",
        "label": "A",
-       "content": "166.67 NLe",
+       "content": "NLe 166.67",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "216d50cd-5710-529d-ab7f-a3364e06e43f",
        "label": "B",
-       "content": "4024 NLe",
+       "content": "NLe 4,024",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "5767e438-fe91-5032-ba93-854e33ea2119",
        "label": "C",
-       "content": "96000 NLe",
+       "content": "NLe 96,000",
        "is_correct": true,
        "position": 2
       },
       {
        "id": "a11e1030-9da2-5d91-8e57-d3bbe9d1abd7",
        "label": "D",
-       "content": "100000 NLe",
+       "content": "NLe 100,000",
        "is_correct": false,
        "position": 3
       }
@@ -558,34 +558,34 @@
      "key": "com-in-07",
      "stem": "Goods worth NLe 80,000 are insured for NLe 60,000. A fire causes a loss of NLe 20,000. How much does the insurer pay under the average clause?",
      "image_url": null,
-     "explanation": "Claim $= \\dfrac{60000}{80000} \\times 20000 = $ NLe 15,000.\n\n**Why the other options are wrong**\n\n- 20000 NLe: You paid the full loss; the goods were under-insured.\n- 60000 NLe: That is the sum insured, not the claim.\n- 26666.67 NLe: You turned the fraction upside down (value ÷ sum insured).",
+     "explanation": "Claim $= \\dfrac{60000}{80000} \\times 20000 = $ NLe 15,000.\n\n**Why the other options are wrong**\n\n- NLe 20,000: You paid the full loss; the goods were under-insured.\n- NLe 60,000: That is the sum insured, not the claim.\n- NLe 26,666.67: You turned the fraction upside down (value ÷ sum insured).",
      "position": 7,
      "options": [
       {
        "id": "6455d0ba-10ed-5595-bf0c-b1b25c6a222c",
        "label": "A",
-       "content": "15000 NLe",
+       "content": "NLe 15,000",
        "is_correct": true,
        "position": 0
       },
       {
        "id": "f259dd2c-dda7-5d68-9c7c-3ef5746defb1",
        "label": "B",
-       "content": "20000 NLe",
+       "content": "NLe 20,000",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "fcc45a76-811a-55b6-8237-143956e4cefc",
        "label": "C",
-       "content": "26666.67 NLe",
+       "content": "NLe 26,666.67",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "0e42bf5c-c2cc-5f6e-8bad-287465914830",
        "label": "D",
-       "content": "60000 NLe",
+       "content": "NLe 60,000",
        "is_correct": false,
        "position": 3
       }
@@ -596,34 +596,34 @@
      "key": "com-in-08",
      "stem": "A warehouse worth NLe 400,000 is insured against fire at NLe 5 per NLe 1,000. What is the annual premium?",
      "image_url": null,
-     "explanation": "Premium $= \\dfrac{400000}{1000} \\times 5 = $ NLe 2,000.\n\n**Why the other options are wrong**\n\n- 2000000 NLe: You multiplied the value by 5 without dividing by 1,000.\n- 80000 NLe: You divided by 5 instead of multiplying the number of thousands by 5.\n- 400 NLe: That is the number of thousands, not the premium.",
+     "explanation": "Premium $= \\dfrac{400000}{1000} \\times 5 = $ NLe 2,000.\n\n**Why the other options are wrong**\n\n- NLe 2,000,000: You multiplied the value by 5 without dividing by 1,000.\n- NLe 80,000: You divided by 5 instead of multiplying the number of thousands by 5.\n- NLe 400: That is the number of thousands, not the premium.",
      "position": 8,
      "options": [
       {
        "id": "9b37e841-c6bb-5cd2-a933-24a0eb1604bb",
        "label": "A",
-       "content": "400 NLe",
+       "content": "NLe 400",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "c288a105-5567-5eff-96fb-7a00890b4eab",
        "label": "B",
-       "content": "2000 NLe",
+       "content": "NLe 2,000",
        "is_correct": true,
        "position": 1
       },
       {
        "id": "c034a191-b4fc-5c81-86c2-93771fa47cf0",
        "label": "C",
-       "content": "80000 NLe",
+       "content": "NLe 80,000",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "71b7fc94-129d-5d1c-b3de-89ddb4f9605d",
        "label": "D",
-       "content": "2000000 NLe",
+       "content": "NLe 2,000,000",
        "is_correct": false,
        "position": 3
       }
@@ -834,34 +834,34 @@
      "key": "com-se-06",
      "stem": "A company has NLe 30,000 to pay as ordinary dividend on 200,000 shares of NLe 1 each. What is the dividend per share?",
      "image_url": null,
-     "explanation": "Dividend per share $= 30000 \\div 200000 = $ NLe 0.15 (a 15% dividend on a NLe 1 share).\n\n**Why the other options are wrong**\n\n- 6.67 NLe: You divided the shares by the dividend.\n- 0.30 NLe: You divided by 100,000 shares instead of 200,000.\n- 1.50 NLe: You divided by 20,000 shares instead of 200,000.",
+     "explanation": "Dividend per share $= 30000 \\div 200000 = $ NLe 0.15 (a 15% dividend on a NLe 1 share).\n\n**Why the other options are wrong**\n\n- NLe 6.67: You divided the shares by the dividend.\n- NLe 0.30: You divided by 100,000 shares instead of 200,000.\n- NLe 1.50: You divided by 20,000 shares instead of 200,000.",
      "position": 6,
      "options": [
       {
        "id": "a2d05572-1d2b-5682-ba02-6cc872d68728",
        "label": "A",
-       "content": "0.15 NLe",
+       "content": "NLe 0.15",
        "is_correct": true,
        "position": 0
       },
       {
        "id": "473411fa-473e-5c07-ab71-83bd99e09aa1",
        "label": "B",
-       "content": "0.30 NLe",
+       "content": "NLe 0.30",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "2d99a539-222c-513a-a0a6-717c4a8dbe0f",
        "label": "C",
-       "content": "1.50 NLe",
+       "content": "NLe 1.50",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "e01dfaf3-c93f-57ed-97ca-5304ebe7639d",
        "label": "D",
-       "content": "6.67 NLe",
+       "content": "NLe 6.67",
        "is_correct": false,
        "position": 3
       }
@@ -872,34 +872,34 @@
      "key": "com-se-07",
      "stem": "A share with a par value of NLe 1 pays a dividend of NLe 0.12 and sells for NLe 2 on the exchange. What is the dividend yield?",
      "image_url": null,
-     "explanation": "Dividend yield $= \\dfrac{0.12}{2} \\times 100 = 6\\%$.\n\n**Why the other options are wrong**\n\n- 12 %: That is the dividend as a percentage of par value, not of market price.\n- 1666.67 %: You divided the price by the dividend.\n- 24 %: You multiplied the dividend by the price.",
+     "explanation": "Dividend yield $= \\dfrac{0.12}{2} \\times 100 = 6\\%$.\n\n**Why the other options are wrong**\n\n- 12%: That is the dividend as a percentage of par value, not of market price.\n- 1,666.67%: You divided the price by the dividend.\n- 24%: You multiplied the dividend by the price.",
      "position": 7,
      "options": [
       {
        "id": "f6ec1e5f-198d-5be4-b93d-3e3036ae12ac",
        "label": "A",
-       "content": "6 %",
+       "content": "6%",
        "is_correct": true,
        "position": 0
       },
       {
        "id": "4fd27a8c-78ca-5ec8-a2d3-b5f67071aadd",
        "label": "B",
-       "content": "12 %",
+       "content": "12%",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "c1276965-1409-521d-99d0-0b247f4efd09",
        "label": "C",
-       "content": "24 %",
+       "content": "24%",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "de485ee9-9032-5f47-8bd6-f19a7c560fbc",
        "label": "D",
-       "content": "1666.67 %",
+       "content": "1,666.67%",
        "is_correct": false,
        "position": 3
       }
@@ -910,34 +910,34 @@
      "key": "com-se-08",
      "stem": "An investor buys 2,000 shares at NLe 1.50 each. Brokerage is 1.5% of the cost and other charges are NLe 25. What is the total cost?",
      "image_url": null,
-     "explanation": "Cost $= 2000 \\times 1.50 = 3000$; brokerage $= 1.5\\% \\times 3000 = 45$; total $= 3000 + 45 + 25 = $ NLe 3,070.\n\n**Why the other options are wrong**\n\n- 3000 NLe: You left out the brokerage and other charges.\n- 3045 NLe: You left out the other charges of NLe 25.\n- 3475 NLe: You charged 15% brokerage instead of 1.5%.",
+     "explanation": "Cost $= 2000 \\times 1.50 = 3000$; brokerage $= 1.5\\% \\times 3000 = 45$; total $= 3000 + 45 + 25 = $ NLe 3,070.\n\n**Why the other options are wrong**\n\n- NLe 3,000: You left out the brokerage and other charges.\n- NLe 3,045: You left out the other charges of NLe 25.\n- NLe 3,475: You charged 15% brokerage instead of 1.5%.",
      "position": 8,
      "options": [
       {
        "id": "0463f15f-dc47-5db8-b155-584e8065e331",
        "label": "A",
-       "content": "3000 NLe",
+       "content": "NLe 3,000",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "4ab694dd-50ab-54ce-9151-2131cba6da82",
        "label": "B",
-       "content": "3045 NLe",
+       "content": "NLe 3,045",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "a85b335c-b506-5a36-bfb2-638014c5b4a0",
        "label": "C",
-       "content": "3070 NLe",
+       "content": "NLe 3,070",
        "is_correct": true,
        "position": 2
       },
       {
        "id": "0ee4cfce-c9d8-5f26-978e-9deec3466b5e",
        "label": "D",
-       "content": "3475 NLe",
+       "content": "NLe 3,475",
        "is_correct": false,
        "position": 3
       }
@@ -1224,34 +1224,34 @@
      "key": "com-lg-08",
      "stem": "A freezer costs NLe 6,000 cash, or a 20% deposit and 12 monthly instalments of NLe 480 on hire purchase. What is the hire purchase charge?",
      "image_url": null,
-     "explanation": "Deposit $= 1200$; HP price $= 1200 + 12 \\times 480 = 6960$; charge $= 6960 - 6000 = $ NLe 960.\n\n**Why the other options are wrong**\n\n- 6960 NLe: That is the hire purchase price, not the extra charge.\n- 5760 NLe: That is the total of the instalments.\n- 1200 NLe: That is the deposit, not the hire purchase charge.",
+     "explanation": "Deposit $= 1200$; HP price $= 1200 + 12 \\times 480 = 6960$; charge $= 6960 - 6000 = $ NLe 960.\n\n**Why the other options are wrong**\n\n- NLe 6,960: That is the hire purchase price, not the extra charge.\n- NLe 5,760: That is the total of the instalments.\n- NLe 1,200: That is the deposit, not the hire purchase charge.",
      "position": 8,
      "options": [
       {
        "id": "63f58355-eb65-574e-95ec-f203e63c6752",
        "label": "A",
-       "content": "960 NLe",
+       "content": "NLe 960",
        "is_correct": true,
        "position": 0
       },
       {
        "id": "fbd1c411-6125-5e95-be3d-70650f3244cd",
        "label": "B",
-       "content": "1200 NLe",
+       "content": "NLe 1,200",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "cbacec1b-8257-5292-b404-a70db33647da",
        "label": "C",
-       "content": "5760 NLe",
+       "content": "NLe 5,760",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "f5a56234-ef9e-5daa-807f-18b0906562fa",
        "label": "D",
-       "content": "6960 NLe",
+       "content": "NLe 6,960",
        "is_correct": false,
        "position": 3
       }
@@ -1500,34 +1500,34 @@
      "key": "com-cp-07",
      "stem": "A measure sold as 2 kg of rice for NLe 40 actually holds 1.6 kg. What is the true price per kilogram?",
      "image_url": null,
-     "explanation": "True price $= 40 \\div 1.6 = $ NLe 25 per kg, not NLe 20: a hidden 25% price rise.\n\n**Why the other options are wrong**\n\n- 20 NLe: That is the price per kilogram the consumer believes they pay.\n- 64 NLe: You multiplied the price by the true weight.\n- 5 NLe: That is the overcharge per kilogram, not the true price.",
+     "explanation": "True price $= 40 \\div 1.6 = $ NLe 25 per kg, not NLe 20: a hidden 25% price rise.\n\n**Why the other options are wrong**\n\n- NLe 20: That is the price per kilogram the consumer believes they pay.\n- NLe 64: You multiplied the price by the true weight.\n- NLe 5: That is the overcharge per kilogram, not the true price.",
      "position": 7,
      "options": [
       {
        "id": "3137c102-3b95-5edd-99ce-fee200e4ac0c",
        "label": "A",
-       "content": "5 NLe",
+       "content": "NLe 5",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "fdf09204-6550-5bdf-bf96-41a0ddf387cc",
        "label": "B",
-       "content": "20 NLe",
+       "content": "NLe 20",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "e77c91a7-117f-5f3c-9cce-d7625b6f1ac1",
        "label": "C",
-       "content": "25 NLe",
+       "content": "NLe 25",
        "is_correct": true,
        "position": 2
       },
       {
        "id": "a8afc1bd-60ce-5da7-989a-0f1f244591fc",
        "label": "D",
-       "content": "64 NLe",
+       "content": "NLe 64",
        "is_correct": false,
        "position": 3
       }
@@ -1738,34 +1738,34 @@
      "key": "com-gp-05",
      "stem": "A radio costs NLe 400 before Goods and Services Tax at 15%. What does the consumer pay?",
      "image_url": null,
-     "explanation": "GST $= 15\\% \\times 400 = 60$. Price $= 400 + 60 = $ NLe 460.\n\n**Why the other options are wrong**\n\n- 60 NLe: That is the tax alone.\n- 340 NLe: You subtracted the tax instead of adding it.\n- 415 NLe: You added NLe 15 instead of 15%.",
+     "explanation": "GST $= 15\\% \\times 400 = 60$. Price $= 400 + 60 = $ NLe 460.\n\n**Why the other options are wrong**\n\n- NLe 60: That is the tax alone.\n- NLe 340: You subtracted the tax instead of adding it.\n- NLe 415: You added NLe 15 instead of 15%.",
      "position": 5,
      "options": [
       {
        "id": "b4ba2f38-b001-52a9-aa7a-b3f1b036d4ff",
        "label": "A",
-       "content": "60 NLe",
+       "content": "NLe 60",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "bbdcfac6-136b-5254-a6ca-9b280789f9f4",
        "label": "B",
-       "content": "340 NLe",
+       "content": "NLe 340",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "6bf47124-ef92-5e32-ab37-fbc1f70c0434",
        "label": "C",
-       "content": "415 NLe",
+       "content": "NLe 415",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "76f38db3-c3bf-5815-b3f2-e4aa49c93c35",
        "label": "D",
-       "content": "460 NLe",
+       "content": "NLe 460",
        "is_correct": true,
        "position": 3
       }
@@ -2128,34 +2128,34 @@
      "key": "com-ec-07",
      "stem": "A trader sells 120 dresses a month online at NLe 150 each; each costs NLe 100. She pays NLe 10 delivery per order and NLe 400 for data and adverts. What is her monthly net profit?",
      "image_url": null,
-     "explanation": "$120 \\times (150 - 100 - 10) - 400 = 4800 - 400 = $ NLe 4,400.\n\n**Why the other options are wrong**\n\n- 6000 NLe: That is the gross profit before delivery and data costs.\n- 5600 NLe: You left out the delivery charges.\n- 4800 NLe: You left out the data and advertising cost.",
+     "explanation": "$120 \\times (150 - 100 - 10) - 400 = 4800 - 400 = $ NLe 4,400.\n\n**Why the other options are wrong**\n\n- NLe 6,000: That is the gross profit before delivery and data costs.\n- NLe 5,600: You left out the delivery charges.\n- NLe 4,800: You left out the data and advertising cost.",
      "position": 7,
      "options": [
       {
        "id": "8fb0323a-3ba0-5367-a0d6-ccf168ca4272",
        "label": "A",
-       "content": "4400 NLe",
+       "content": "NLe 4,400",
        "is_correct": true,
        "position": 0
       },
       {
        "id": "3cdde99f-9cfb-53a2-8230-cfbaf7884074",
        "label": "B",
-       "content": "4800 NLe",
+       "content": "NLe 4,800",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "96b4dc31-1483-557b-a880-d1e0993cbd7f",
        "label": "C",
-       "content": "5600 NLe",
+       "content": "NLe 5,600",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "788ac2ac-4358-5958-b980-ab55817105f5",
        "label": "D",
-       "content": "6000 NLe",
+       "content": "NLe 6,000",
        "is_correct": false,
        "position": 3
       }
@@ -2202,5 +2202,5 @@
    ]
   }
  ],
- "version": "0720022481b3"
+ "version": "1ab58316e6cf"
 }

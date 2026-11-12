@@ -92,18 +92,18 @@ Notes and coins issued by the Bank of Sierra Leone are legal tender.
 
 After the 2022 redenomination, what is the price in new leones of a bag of rice that cost Le 450,000?
 
-- **A.** 45 NLe
-- **B.** 450 NLe  ✅
-- **C.** 4500 NLe
-- **D.** 450000 NLe
+- **A.** NLe 45
+- **B.** NLe 450  ✅
+- **C.** NLe 4,500
+- **D.** NLe 450,000
 
 1,000 old leones = 1 new leone, so 450,000 ÷ 1,000 = NLe 450.
 
 **Why the other options are wrong**
 
-- 450000 NLe: That is the old price; three zeros were removed.
-- 4500 NLe: You divided by 100 instead of 1,000.
-- 45 NLe: You divided by 10,000 instead of 1,000.
+- NLe 450,000: That is the old price; three zeros were removed.
+- NLe 4,500: You divided by 100 instead of 1,000.
+- NLe 45: You divided by 10,000 instead of 1,000.
 
 ---
 
@@ -111,18 +111,18 @@ After the 2022 redenomination, what is the price in new leones of a bag of rice 
 
 The price index rises from 100 in the base year to 125. What is the value of NLe 1 in base-year terms?
 
-- **A.** 0.25 NLe
-- **B.** 0.75 NLe
-- **C.** 0.80 NLe  ✅
-- **D.** 1.25 NLe
+- **A.** NLe 0.25
+- **B.** NLe 0.75
+- **C.** NLe 0.80  ✅
+- **D.** NLe 1.25
 
 Value of money $= \dfrac{100}{125} \times 1 = $ NLe 0.80: a 20% fall in purchasing power.
 
 **Why the other options are wrong**
 
-- 1.25 NLe: You divided the index by 100; the value of money is 100 ÷ index.
-- 0.75 NLe: You subtracted the 25% rise from 1; that overstates the fall.
-- 0.25 NLe: That is the rise in prices as a fraction, not the value of money.
+- NLe 1.25: You divided the index by 100; the value of money is 100 ÷ index.
+- NLe 0.75: You subtracted the 25% rise from 1; that overstates the fall.
+- NLe 0.25: That is the rise in prices as a fraction, not the value of money.
 
 ---
 
@@ -149,18 +149,18 @@ Debtors repay loans with money that buys less than when they borrowed it.
 
 An importer must pay 4,000 US dollars. The exchange rate is 1 US dollar = NLe 24. How much is this in leones?
 
-- **A.** 166.67 NLe
-- **B.** 4024 NLe
-- **C.** 96000 NLe  ✅
-- **D.** 100000 NLe
+- **A.** NLe 166.67
+- **B.** NLe 4,024
+- **C.** NLe 96,000  ✅
+- **D.** NLe 100,000
 
 Cost in leones $= 4000 \times 24 = $ NLe 96,000.
 
 **Why the other options are wrong**
 
-- 166.67 NLe: You divided by the exchange rate instead of multiplying.
-- 4024 NLe: You added the exchange rate.
-- 100000 NLe: You used a rate of NLe 25 to the dollar.
+- NLe 166.67: You divided by the exchange rate instead of multiplying.
+- NLe 4,024: You added the exchange rate.
+- NLe 100,000: You used a rate of NLe 25 to the dollar.
 
 ---
 
@@ -286,18 +286,18 @@ Fidelity guarantee covers theft or fraud by cashiers, storekeepers and other sta
 
 Goods worth NLe 80,000 are insured for NLe 60,000. A fire causes a loss of NLe 20,000. How much does the insurer pay under the average clause?
 
-- **A.** 15000 NLe  ✅
-- **B.** 20000 NLe
-- **C.** 26666.67 NLe
-- **D.** 60000 NLe
+- **A.** NLe 15,000  ✅
+- **B.** NLe 20,000
+- **C.** NLe 26,666.67
+- **D.** NLe 60,000
 
 Claim $= \dfrac{60000}{80000} \times 20000 = $ NLe 15,000.
 
 **Why the other options are wrong**
 
-- 20000 NLe: You paid the full loss; the goods were under-insured.
-- 60000 NLe: That is the sum insured, not the claim.
-- 26666.67 NLe: You turned the fraction upside down (value ÷ sum insured).
+- NLe 20,000: You paid the full loss; the goods were under-insured.
+- NLe 60,000: That is the sum insured, not the claim.
+- NLe 26,666.67: You turned the fraction upside down (value ÷ sum insured).
 
 ---
 
@@ -305,18 +305,18 @@ Claim $= \dfrac{60000}{80000} \times 20000 = $ NLe 15,000.
 
 A warehouse worth NLe 400,000 is insured against fire at NLe 5 per NLe 1,000. What is the annual premium?
 
-- **A.** 400 NLe
-- **B.** 2000 NLe  ✅
-- **C.** 80000 NLe
-- **D.** 2000000 NLe
+- **A.** NLe 400
+- **B.** NLe 2,000  ✅
+- **C.** NLe 80,000
+- **D.** NLe 2,000,000
 
 Premium $= \dfrac{400000}{1000} \times 5 = $ NLe 2,000.
 
 **Why the other options are wrong**
 
-- 2000000 NLe: You multiplied the value by 5 without dividing by 1,000.
-- 80000 NLe: You divided by 5 instead of multiplying the number of thousands by 5.
-- 400 NLe: That is the number of thousands, not the premium.
+- NLe 2,000,000: You multiplied the value by 5 without dividing by 1,000.
+- NLe 80,000: You divided by 5 instead of multiplying the number of thousands by 5.
+- NLe 400: That is the number of thousands, not the premium.
 
 ---
 
@@ -423,18 +423,18 @@ Ordinary shareholders control the company: one vote per share.
 
 A company has NLe 30,000 to pay as ordinary dividend on 200,000 shares of NLe 1 each. What is the dividend per share?
 
-- **A.** 0.15 NLe  ✅
-- **B.** 0.30 NLe
-- **C.** 1.50 NLe
-- **D.** 6.67 NLe
+- **A.** NLe 0.15  ✅
+- **B.** NLe 0.30
+- **C.** NLe 1.50
+- **D.** NLe 6.67
 
 Dividend per share $= 30000 \div 200000 = $ NLe 0.15 (a 15% dividend on a NLe 1 share).
 
 **Why the other options are wrong**
 
-- 6.67 NLe: You divided the shares by the dividend.
-- 0.30 NLe: You divided by 100,000 shares instead of 200,000.
-- 1.50 NLe: You divided by 20,000 shares instead of 200,000.
+- NLe 6.67: You divided the shares by the dividend.
+- NLe 0.30: You divided by 100,000 shares instead of 200,000.
+- NLe 1.50: You divided by 20,000 shares instead of 200,000.
 
 ---
 
@@ -442,18 +442,18 @@ Dividend per share $= 30000 \div 200000 = $ NLe 0.15 (a 15% dividend on a NLe 1 
 
 A share with a par value of NLe 1 pays a dividend of NLe 0.12 and sells for NLe 2 on the exchange. What is the dividend yield?
 
-- **A.** 6 %  ✅
-- **B.** 12 %
-- **C.** 24 %
-- **D.** 1666.67 %
+- **A.** 6%  ✅
+- **B.** 12%
+- **C.** 24%
+- **D.** 1,666.67%
 
 Dividend yield $= \dfrac{0.12}{2} \times 100 = 6\%$.
 
 **Why the other options are wrong**
 
-- 12 %: That is the dividend as a percentage of par value, not of market price.
-- 1666.67 %: You divided the price by the dividend.
-- 24 %: You multiplied the dividend by the price.
+- 12%: That is the dividend as a percentage of par value, not of market price.
+- 1,666.67%: You divided the price by the dividend.
+- 24%: You multiplied the dividend by the price.
 
 ---
 
@@ -461,18 +461,18 @@ Dividend yield $= \dfrac{0.12}{2} \times 100 = 6\%$.
 
 An investor buys 2,000 shares at NLe 1.50 each. Brokerage is 1.5% of the cost and other charges are NLe 25. What is the total cost?
 
-- **A.** 3000 NLe
-- **B.** 3045 NLe
-- **C.** 3070 NLe  ✅
-- **D.** 3475 NLe
+- **A.** NLe 3,000
+- **B.** NLe 3,045
+- **C.** NLe 3,070  ✅
+- **D.** NLe 3,475
 
 Cost $= 2000 \times 1.50 = 3000$; brokerage $= 1.5\% \times 3000 = 45$; total $= 3000 + 45 + 25 = $ NLe 3,070.
 
 **Why the other options are wrong**
 
-- 3000 NLe: You left out the brokerage and other charges.
-- 3045 NLe: You left out the other charges of NLe 25.
-- 3475 NLe: You charged 15% brokerage instead of 1.5%.
+- NLe 3,000: You left out the brokerage and other charges.
+- NLe 3,045: You left out the other charges of NLe 25.
+- NLe 3,475: You charged 15% brokerage instead of 1.5%.
 
 ---
 
@@ -617,18 +617,18 @@ Until then the buyer is a hirer and the seller may repossess on default.
 
 A freezer costs NLe 6,000 cash, or a 20% deposit and 12 monthly instalments of NLe 480 on hire purchase. What is the hire purchase charge?
 
-- **A.** 960 NLe  ✅
-- **B.** 1200 NLe
-- **C.** 5760 NLe
-- **D.** 6960 NLe
+- **A.** NLe 960  ✅
+- **B.** NLe 1,200
+- **C.** NLe 5,760
+- **D.** NLe 6,960
 
 Deposit $= 1200$; HP price $= 1200 + 12 \times 480 = 6960$; charge $= 6960 - 6000 = $ NLe 960.
 
 **Why the other options are wrong**
 
-- 6960 NLe: That is the hire purchase price, not the extra charge.
-- 5760 NLe: That is the total of the instalments.
-- 1200 NLe: That is the deposit, not the hire purchase charge.
+- NLe 6,960: That is the hire purchase price, not the extra charge.
+- NLe 5,760: That is the total of the instalments.
+- NLe 1,200: That is the deposit, not the hire purchase charge.
 
 ---
 
@@ -754,18 +754,18 @@ Codes of conduct, quality control, guarantees and after-sales service protect bu
 
 A measure sold as 2 kg of rice for NLe 40 actually holds 1.6 kg. What is the true price per kilogram?
 
-- **A.** 5 NLe
-- **B.** 20 NLe
-- **C.** 25 NLe  ✅
-- **D.** 64 NLe
+- **A.** NLe 5
+- **B.** NLe 20
+- **C.** NLe 25  ✅
+- **D.** NLe 64
 
 True price $= 40 \div 1.6 = $ NLe 25 per kg, not NLe 20: a hidden 25% price rise.
 
 **Why the other options are wrong**
 
-- 20 NLe: That is the price per kilogram the consumer believes they pay.
-- 64 NLe: You multiplied the price by the true weight.
-- 5 NLe: That is the overcharge per kilogram, not the true price.
+- NLe 20: That is the price per kilogram the consumer believes they pay.
+- NLe 64: You multiplied the price by the true weight.
+- NLe 5: That is the overcharge per kilogram, not the true price.
 
 ---
 
@@ -872,18 +872,18 @@ Strategic and essential services are brought under public control.
 
 A radio costs NLe 400 before Goods and Services Tax at 15%. What does the consumer pay?
 
-- **A.** 60 NLe
-- **B.** 340 NLe
-- **C.** 415 NLe
-- **D.** 460 NLe  ✅
+- **A.** NLe 60
+- **B.** NLe 340
+- **C.** NLe 415
+- **D.** NLe 460  ✅
 
 GST $= 15\% \times 400 = 60$. Price $= 400 + 60 = $ NLe 460.
 
 **Why the other options are wrong**
 
-- 60 NLe: That is the tax alone.
-- 340 NLe: You subtracted the tax instead of adding it.
-- 415 NLe: You added NLe 15 instead of 15%.
+- NLe 60: That is the tax alone.
+- NLe 340: You subtracted the tax instead of adding it.
+- NLe 415: You added NLe 15 instead of 15%.
 
 ---
 
@@ -1066,18 +1066,18 @@ Real networks and banks never ask for your PIN or OTP.
 
 A trader sells 120 dresses a month online at NLe 150 each; each costs NLe 100. She pays NLe 10 delivery per order and NLe 400 for data and adverts. What is her monthly net profit?
 
-- **A.** 4400 NLe  ✅
-- **B.** 4800 NLe
-- **C.** 5600 NLe
-- **D.** 6000 NLe
+- **A.** NLe 4,400  ✅
+- **B.** NLe 4,800
+- **C.** NLe 5,600
+- **D.** NLe 6,000
 
 $120 \times (150 - 100 - 10) - 400 = 4800 - 400 = $ NLe 4,400.
 
 **Why the other options are wrong**
 
-- 6000 NLe: That is the gross profit before delivery and data costs.
-- 5600 NLe: You left out the delivery charges.
-- 4800 NLe: You left out the data and advertising cost.
+- NLe 6,000: That is the gross profit before delivery and data costs.
+- NLe 5,600: You left out the delivery charges.
+- NLe 4,800: You left out the data and advertising cost.
 
 ---
 

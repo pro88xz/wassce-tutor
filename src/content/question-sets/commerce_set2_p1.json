@@ -92,34 +92,34 @@
      "key": "com-ft-03",
      "stem": "A country's visible exports are worth NLe 9,000 million and its visible imports NLe 13,000 million. What is its balance of trade (NLe million)?",
      "image_url": null,
-     "explanation": "Balance of trade = visible exports − visible imports = 9,000 − 13,000 = −4,000: an unfavourable balance.\n\n**Why the other options are wrong**\n\n- 4000: You subtracted exports from imports; the balance is exports minus imports.\n- 22000: You added exports and imports.\n- -6000: That includes invisible trade; the balance of trade covers goods only.",
+     "explanation": "Balance of trade = visible exports − visible imports = 9,000 − 13,000 = −4,000: an unfavourable balance.\n\n**Why the other options are wrong**\n\n- 4,000: You subtracted exports from imports; the balance is exports minus imports.\n- 22,000: You added exports and imports.\n- -6,000: That includes invisible trade; the balance of trade covers goods only.",
      "position": 3,
      "options": [
       {
        "id": "246aedc3-c68b-56dc-ad92-b3dbd26988de",
        "label": "A",
-       "content": "-6000",
+       "content": "-6,000",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "6f486367-55f5-564c-b624-726dbbb013c0",
        "label": "B",
-       "content": "-4000",
+       "content": "-4,000",
        "is_correct": true,
        "position": 1
       },
       {
        "id": "c3f97daf-f590-5bff-a366-7ee88bb0343d",
        "label": "C",
-       "content": "4000",
+       "content": "4,000",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "2234b03e-f2aa-55e9-825b-552b2c6c8054",
        "label": "D",
-       "content": "22000",
+       "content": "22,000",
        "is_correct": false,
        "position": 3
       }
@@ -406,34 +406,34 @@
      "key": "com-dt-03",
      "stem": "Goods listed at NLe 10,000 are sold with a 20% trade discount. What is the net invoice value?",
      "image_url": null,
-     "explanation": "Trade discount $= 20\\% \\times 10000 = 2000$. Invoice value $= 10000 - 2000 = $ NLe 8,000.\n\n**Why the other options are wrong**\n\n- 2000 NLe: That is the discount, not the invoice value.\n- 12000 NLe: You added the discount instead of subtracting it.\n- 9800 NLe: You subtracted 2% instead of 20%.",
+     "explanation": "Trade discount $= 20\\% \\times 10000 = 2000$. Invoice value $= 10000 - 2000 = $ NLe 8,000.\n\n**Why the other options are wrong**\n\n- NLe 2,000: That is the discount, not the invoice value.\n- NLe 12,000: You added the discount instead of subtracting it.\n- NLe 9,800: You subtracted 2% instead of 20%.",
      "position": 3,
      "options": [
       {
        "id": "5761c181-1b00-50c6-ad68-690b024abe43",
        "label": "A",
-       "content": "2000 NLe",
+       "content": "NLe 2,000",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "440927f2-e54f-5dc6-b618-d97a69e72b08",
        "label": "B",
-       "content": "8000 NLe",
+       "content": "NLe 8,000",
        "is_correct": true,
        "position": 1
       },
       {
        "id": "4e14a7a2-bb69-5b9d-a340-e66b2d30f93f",
        "label": "C",
-       "content": "9800 NLe",
+       "content": "NLe 9,800",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "d68ef2cf-d797-53a6-874f-309fdf588011",
        "label": "D",
-       "content": "12000 NLe",
+       "content": "NLe 12,000",
        "is_correct": false,
        "position": 3
       }
@@ -444,34 +444,34 @@
      "key": "com-dt-04",
      "stem": "A retailer orders 40 cartons at a list price of NLe 250 each, less 20% trade discount, with 5% cash discount for payment within 14 days. How much does the retailer pay if paying promptly?",
      "image_url": null,
-     "explanation": "Gross $= 40 \\times 250 = 10000$; less 20% $= 8000$; less 5% cash discount $= 8000 - 400 = $ NLe 7,600.\n\n**Why the other options are wrong**\n\n- 8000 NLe: That is the invoice value before cash discount.\n- 7500 NLe: You added the two discounts (25%) and took them off the list price.\n- 9500 NLe: You took only the 5% cash discount and forgot the trade discount.",
+     "explanation": "Gross $= 40 \\times 250 = 10000$; less 20% $= 8000$; less 5% cash discount $= 8000 - 400 = $ NLe 7,600.\n\n**Why the other options are wrong**\n\n- NLe 8,000: That is the invoice value before cash discount.\n- NLe 7,500: You added the two discounts (25%) and took them off the list price.\n- NLe 9,500: You took only the 5% cash discount and forgot the trade discount.",
      "position": 4,
      "options": [
       {
        "id": "a6a121e5-0219-5170-aff8-909525ba2e91",
        "label": "A",
-       "content": "7500 NLe",
+       "content": "NLe 7,500",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "62891f91-2e0c-57c4-97bf-9777a929e89a",
        "label": "B",
-       "content": "7600 NLe",
+       "content": "NLe 7,600",
        "is_correct": true,
        "position": 1
       },
       {
        "id": "6c193173-c812-51d3-8242-e043f6d302f6",
        "label": "C",
-       "content": "8000 NLe",
+       "content": "NLe 8,000",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "6016fd1c-2bd2-5200-9fdc-41f4eea33099",
        "label": "D",
-       "content": "9500 NLe",
+       "content": "NLe 9,500",
        "is_correct": false,
        "position": 3
       }
@@ -520,34 +520,34 @@
      "key": "com-dt-06",
      "stem": "Goods cost 10,000 US dollars FOB. Freight to Freetown is 800 US dollars and insurance is 200 US dollars. What is the CIF price in US dollars?",
      "image_url": null,
-     "explanation": "CIF = cost + insurance + freight = 10,000 + 200 + 800 = 11,000 US dollars.\n\n**Why the other options are wrong**\n\n- 10800: You left out the insurance.\n- 10200: You left out the freight.\n- 9000: You subtracted freight and insurance instead of adding them.",
+     "explanation": "CIF = cost + insurance + freight = 10,000 + 200 + 800 = 11,000 US dollars.\n\n**Why the other options are wrong**\n\n- 10,800: You left out the insurance.\n- 10,200: You left out the freight.\n- 9,000: You subtracted freight and insurance instead of adding them.",
      "position": 6,
      "options": [
       {
        "id": "73be215a-d7e3-5a18-a8b6-716873a6eaca",
        "label": "A",
-       "content": "9000",
+       "content": "9,000",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "357d913f-af83-511e-9b28-ea1c4fbccb04",
        "label": "B",
-       "content": "10200",
+       "content": "10,200",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "d28adf75-e6c2-5483-948e-a999096d7e2e",
        "label": "C",
-       "content": "10800",
+       "content": "10,800",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "b50dafdc-efa2-58e2-84b8-9708bd6e58d6",
        "label": "D",
-       "content": "11000",
+       "content": "11,000",
        "is_correct": true,
        "position": 3
       }
@@ -872,34 +872,34 @@
      "key": "com-tr-07",
      "stem": "A haulier charges NLe 2 per tonne-kilometre plus NLe 500 for loading. What is the cost of carrying 20 tonnes of rice 300 km?",
      "image_url": null,
-     "explanation": "Tonne-km $= 20 \\times 300 = 6000$; haulage $= 6000 \\times 2 = 12000$; total $= 12000 + 500 = $ NLe 12,500.\n\n**Why the other options are wrong**\n\n- 12000 NLe: You left out the loading charge.\n- 6500 NLe: You forgot to multiply by the rate of NLe 2.\n- 1140 NLe: You added tonnes and kilometres instead of multiplying.",
+     "explanation": "Tonne-km $= 20 \\times 300 = 6000$; haulage $= 6000 \\times 2 = 12000$; total $= 12000 + 500 = $ NLe 12,500.\n\n**Why the other options are wrong**\n\n- NLe 12,000: You left out the loading charge.\n- NLe 6,500: You forgot to multiply by the rate of NLe 2.\n- NLe 1,140: You added tonnes and kilometres instead of multiplying.",
      "position": 7,
      "options": [
       {
        "id": "bfe42a3f-8ee3-552b-9c3a-86a7487e9836",
        "label": "A",
-       "content": "1140 NLe",
+       "content": "NLe 1,140",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "2856378f-4c4a-5966-bc09-958744cb9af6",
        "label": "B",
-       "content": "6500 NLe",
+       "content": "NLe 6,500",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "89985765-c850-5a95-a9e0-51cfaa6e02ad",
        "label": "C",
-       "content": "12000 NLe",
+       "content": "NLe 12,000",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "a442edbe-5679-5ae5-bea5-3c2e8bc6e2f8",
        "label": "D",
-       "content": "12500 NLe",
+       "content": "NLe 12,500",
        "is_correct": true,
        "position": 3
       }
@@ -1500,34 +1500,34 @@
      "key": "com-wh-07",
      "stem": "A trader buys 200 bags of rice at NLe 400 each, stores them for 4 months at NLe 15 per bag per month, and sells them at NLe 500 each. What is the profit?",
      "image_url": null,
-     "explanation": "Revenue $= 200 \\times 500 = 100000$; cost $= 200 \\times 400 + 200 \\times 15 \\times 4 = 92000$; profit $= $ NLe 8,000.\n\n**Why the other options are wrong**\n\n- 20000 NLe: You forgot the storage cost.\n- 17000 NLe: You charged storage for one month only.\n- 12000 NLe: That is the storage cost.",
+     "explanation": "Revenue $= 200 \\times 500 = 100000$; cost $= 200 \\times 400 + 200 \\times 15 \\times 4 = 92000$; profit $= $ NLe 8,000.\n\n**Why the other options are wrong**\n\n- NLe 20,000: You forgot the storage cost.\n- NLe 17,000: You charged storage for one month only.\n- NLe 12,000: That is the storage cost.",
      "position": 7,
      "options": [
       {
        "id": "a1b3bdea-e193-57ad-9fe7-6996734f8a3a",
        "label": "A",
-       "content": "8000 NLe",
+       "content": "NLe 8,000",
        "is_correct": true,
        "position": 0
       },
       {
        "id": "1c6dc941-0346-55c6-85ee-58a2a3fb35ee",
        "label": "B",
-       "content": "12000 NLe",
+       "content": "NLe 12,000",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "cc3ba090-a8e3-5d9e-811d-db2aa78cf438",
        "label": "C",
-       "content": "17000 NLe",
+       "content": "NLe 17,000",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "30957d9e-216c-58e9-b2b7-9f8fd75d4e2f",
        "label": "D",
-       "content": "20000 NLe",
+       "content": "NLe 20,000",
        "is_correct": false,
        "position": 3
       }
@@ -1776,34 +1776,34 @@
      "key": "com-ma-06",
      "stem": "A radio advert costs NLe 900 and reaches 300,000 listeners. What is the cost per thousand listeners?",
      "image_url": null,
-     "explanation": "300,000 listeners = 300 thousands. Cost per thousand $= 900 \\div 300 = $ NLe 3.\n\n**Why the other options are wrong**\n\n- 0.003 NLe: You divided by the number of listeners, not by thousands of listeners.\n- 333 NLe: You divided the listeners by the cost.\n- 300 NLe: You divided by 3 instead of by 300 thousands.",
+     "explanation": "300,000 listeners = 300 thousands. Cost per thousand $= 900 \\div 300 = $ NLe 3.\n\n**Why the other options are wrong**\n\n- NLe 0.003: You divided by the number of listeners, not by thousands of listeners.\n- NLe 333: You divided the listeners by the cost.\n- NLe 300: You divided by 3 instead of by 300 thousands.",
      "position": 6,
      "options": [
       {
        "id": "7ddb2c46-468a-5bb9-9412-38465a50016e",
        "label": "A",
-       "content": "0.003 NLe",
+       "content": "NLe 0.003",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "42aa70be-8afe-561c-b70b-d0a3ddbd4707",
        "label": "B",
-       "content": "3 NLe",
+       "content": "NLe 3",
        "is_correct": true,
        "position": 1
       },
       {
        "id": "74b33cb5-4245-5cdb-aadd-27c8bf392b8b",
        "label": "C",
-       "content": "300 NLe",
+       "content": "NLe 300",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "f85629bd-cca1-5ed8-97a0-395e1b5f2af2",
        "label": "D",
-       "content": "333 NLe",
+       "content": "NLe 333",
        "is_correct": false,
        "position": 3
       }
@@ -2014,34 +2014,34 @@
      "key": "com-bk-04",
      "stem": "A trader overdraws an average of NLe 8,000 for 3 months at 24% a year. What is the interest?",
      "image_url": null,
-     "explanation": "$I = \\dfrac{P \\times R \\times T}{100} = \\dfrac{8000 \\times 24 \\times 3}{100 \\times 12} = $ NLe 480.\n\n**Why the other options are wrong**\n\n- 1920 NLe: You charged a full year's interest.\n- 5760 NLe: You multiplied by 3 years instead of 3 months.\n- 160 NLe: That is one month's interest; the overdraft lasted three months.",
+     "explanation": "$I = \\dfrac{P \\times R \\times T}{100} = \\dfrac{8000 \\times 24 \\times 3}{100 \\times 12} = $ NLe 480.\n\n**Why the other options are wrong**\n\n- NLe 1,920: You charged a full year's interest.\n- NLe 5,760: You multiplied by 3 years instead of 3 months.\n- NLe 160: That is one month's interest; the overdraft lasted three months.",
      "position": 4,
      "options": [
       {
        "id": "c38f2b7b-9da2-54be-a66c-529159c045dd",
        "label": "A",
-       "content": "160 NLe",
+       "content": "NLe 160",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "197bb620-8711-5437-903b-22a42b9f8dca",
        "label": "B",
-       "content": "480 NLe",
+       "content": "NLe 480",
        "is_correct": true,
        "position": 1
       },
       {
        "id": "6d2f550c-7849-55a9-b3f3-6788a1148924",
        "label": "C",
-       "content": "1920 NLe",
+       "content": "NLe 1,920",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "3147b65e-3c6e-5216-891b-2f16a2592b9b",
        "label": "D",
-       "content": "5760 NLe",
+       "content": "NLe 5,760",
        "is_correct": false,
        "position": 3
       }
@@ -2202,5 +2202,5 @@
    ]
   }
  ],
- "version": "7359403daf58"
+ "version": "2a982d138c93"
 }

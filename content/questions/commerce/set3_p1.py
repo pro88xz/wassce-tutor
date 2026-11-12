@@ -12,7 +12,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from common import make  # noqa: E402
+from commerce_common import make  # noqa: E402
 from qbank import R, Rounded  # noqa: E402
 
 TOPICS = {

@@ -310,7 +310,7 @@
   "name": "commerce_set1_p1",
   "label": "Commerce: set 1 (commerce, production, business units and home trade)",
   "subject_slug": "commerce",
-  "version": "40893f91a214",
+  "version": "84ff668b9743",
   "papers": [
    "7dc2e54d-a5fc-596b-b62c-f285fe219c21",
    "d34dc2d3-793a-51a7-9f99-fdd9ee82b9f2",
@@ -327,7 +327,7 @@
   "name": "commerce_set2_p1",
   "label": "Commerce: set 2 (foreign trade, documents and the aids to trade)",
   "subject_slug": "commerce",
-  "version": "7359403daf58",
+  "version": "2a982d138c93",
   "papers": [
    "53e618d9-6bb9-5725-a626-bd0ab0e8c16b",
    "dc39664d-322e-580b-bd6d-7d7000d2f582",
@@ -343,7 +343,7 @@
   "name": "commerce_set3_p1",
   "label": "Commerce: set 3 (money, finance, law and modern commerce)",
   "subject_slug": "commerce",
-  "version": "0720022481b3",
+  "version": "1ab58316e6cf",
   "papers": [
    "c7f35992-e108-56f1-85d7-5d4d28f40333",
    "7c83f855-407e-55ab-bfec-38e6fdf7a382",

@@ -54,18 +54,18 @@ Foreign trade needs foreign exchange; home trade uses one currency.
 
 A country's visible exports are worth NLe 9,000 million and its visible imports NLe 13,000 million. What is its balance of trade (NLe million)?
 
-- **A.** -6000
-- **B.** -4000  ✅
-- **C.** 4000
-- **D.** 22000
+- **A.** -6,000
+- **B.** -4,000  ✅
+- **C.** 4,000
+- **D.** 22,000
 
 Balance of trade = visible exports − visible imports = 9,000 − 13,000 = −4,000: an unfavourable balance.
 
 **Why the other options are wrong**
 
-- 4000: You subtracted exports from imports; the balance is exports minus imports.
-- 22000: You added exports and imports.
-- -6000: That includes invisible trade; the balance of trade covers goods only.
+- 4,000: You subtracted exports from imports; the balance is exports minus imports.
+- 22,000: You added exports and imports.
+- -6,000: That includes invisible trade; the balance of trade covers goods only.
 
 ---
 
@@ -210,18 +210,18 @@ It shows what the invoice will be and supports advance payment or an import lice
 
 Goods listed at NLe 10,000 are sold with a 20% trade discount. What is the net invoice value?
 
-- **A.** 2000 NLe
-- **B.** 8000 NLe  ✅
-- **C.** 9800 NLe
-- **D.** 12000 NLe
+- **A.** NLe 2,000
+- **B.** NLe 8,000  ✅
+- **C.** NLe 9,800
+- **D.** NLe 12,000
 
 Trade discount $= 20\% \times 10000 = 2000$. Invoice value $= 10000 - 2000 = $ NLe 8,000.
 
 **Why the other options are wrong**
 
-- 2000 NLe: That is the discount, not the invoice value.
-- 12000 NLe: You added the discount instead of subtracting it.
-- 9800 NLe: You subtracted 2% instead of 20%.
+- NLe 2,000: That is the discount, not the invoice value.
+- NLe 12,000: You added the discount instead of subtracting it.
+- NLe 9,800: You subtracted 2% instead of 20%.
 
 ---
 
@@ -229,18 +229,18 @@ Trade discount $= 20\% \times 10000 = 2000$. Invoice value $= 10000 - 2000 = $ N
 
 A retailer orders 40 cartons at a list price of NLe 250 each, less 20% trade discount, with 5% cash discount for payment within 14 days. How much does the retailer pay if paying promptly?
 
-- **A.** 7500 NLe
-- **B.** 7600 NLe  ✅
-- **C.** 8000 NLe
-- **D.** 9500 NLe
+- **A.** NLe 7,500
+- **B.** NLe 7,600  ✅
+- **C.** NLe 8,000
+- **D.** NLe 9,500
 
 Gross $= 40 \times 250 = 10000$; less 20% $= 8000$; less 5% cash discount $= 8000 - 400 = $ NLe 7,600.
 
 **Why the other options are wrong**
 
-- 8000 NLe: That is the invoice value before cash discount.
-- 7500 NLe: You added the two discounts (25%) and took them off the list price.
-- 9500 NLe: You took only the 5% cash discount and forgot the trade discount.
+- NLe 8,000: That is the invoice value before cash discount.
+- NLe 7,500: You added the two discounts (25%) and took them off the list price.
+- NLe 9,500: You took only the 5% cash discount and forgot the trade discount.
 
 ---
 
@@ -267,18 +267,18 @@ E&OE lets the seller correct mistakes in the invoice later.
 
 Goods cost 10,000 US dollars FOB. Freight to Freetown is 800 US dollars and insurance is 200 US dollars. What is the CIF price in US dollars?
 
-- **A.** 9000
-- **B.** 10200
-- **C.** 10800
-- **D.** 11000  ✅
+- **A.** 9,000
+- **B.** 10,200
+- **C.** 10,800
+- **D.** 11,000  ✅
 
 CIF = cost + insurance + freight = 10,000 + 200 + 800 = 11,000 US dollars.
 
 **Why the other options are wrong**
 
-- 10800: You left out the insurance.
-- 10200: You left out the freight.
-- 9000: You subtracted freight and insurance instead of adding them.
+- 10,800: You left out the insurance.
+- 10,200: You left out the freight.
+- 9,000: You subtracted freight and insurance instead of adding them.
 
 ---
 
@@ -442,18 +442,18 @@ Transport moves goods from where they are produced to where they are wanted, cre
 
 A haulier charges NLe 2 per tonne-kilometre plus NLe 500 for loading. What is the cost of carrying 20 tonnes of rice 300 km?
 
-- **A.** 1140 NLe
-- **B.** 6500 NLe
-- **C.** 12000 NLe
-- **D.** 12500 NLe  ✅
+- **A.** NLe 1,140
+- **B.** NLe 6,500
+- **C.** NLe 12,000
+- **D.** NLe 12,500  ✅
 
 Tonne-km $= 20 \times 300 = 6000$; haulage $= 6000 \times 2 = 12000$; total $= 12000 + 500 = $ NLe 12,500.
 
 **Why the other options are wrong**
 
-- 12000 NLe: You left out the loading charge.
-- 6500 NLe: You forgot to multiply by the rate of NLe 2.
-- 1140 NLe: You added tonnes and kilometres instead of multiplying.
+- NLe 12,000: You left out the loading charge.
+- NLe 6,500: You forgot to multiply by the rate of NLe 2.
+- NLe 1,140: You added tonnes and kilometres instead of multiplying.
 
 ---
 
@@ -754,18 +754,18 @@ Reorder level = daily use × lead time + buffer stock = 40 × 5 + 100 = 300 cart
 
 A trader buys 200 bags of rice at NLe 400 each, stores them for 4 months at NLe 15 per bag per month, and sells them at NLe 500 each. What is the profit?
 
-- **A.** 8000 NLe  ✅
-- **B.** 12000 NLe
-- **C.** 17000 NLe
-- **D.** 20000 NLe
+- **A.** NLe 8,000  ✅
+- **B.** NLe 12,000
+- **C.** NLe 17,000
+- **D.** NLe 20,000
 
 Revenue $= 200 \times 500 = 100000$; cost $= 200 \times 400 + 200 \times 15 \times 4 = 92000$; profit $= $ NLe 8,000.
 
 **Why the other options are wrong**
 
-- 20000 NLe: You forgot the storage cost.
-- 17000 NLe: You charged storage for one month only.
-- 12000 NLe: That is the storage cost.
+- NLe 20,000: You forgot the storage cost.
+- NLe 17,000: You charged storage for one month only.
+- NLe 12,000: That is the storage cost.
 
 ---
 
@@ -891,18 +891,18 @@ Penetration pricing attracts buyers away from rivals; the price may rise later.
 
 A radio advert costs NLe 900 and reaches 300,000 listeners. What is the cost per thousand listeners?
 
-- **A.** 0.003 NLe
-- **B.** 3 NLe  ✅
-- **C.** 300 NLe
-- **D.** 333 NLe
+- **A.** NLe 0.003
+- **B.** NLe 3  ✅
+- **C.** NLe 300
+- **D.** NLe 333
 
 300,000 listeners = 300 thousands. Cost per thousand $= 900 \div 300 = $ NLe 3.
 
 **Why the other options are wrong**
 
-- 0.003 NLe: You divided by the number of listeners, not by thousands of listeners.
-- 333 NLe: You divided the listeners by the cost.
-- 300 NLe: You divided by 3 instead of by 300 thousands.
+- NLe 0.003: You divided by the number of listeners, not by thousands of listeners.
+- NLe 333: You divided the listeners by the cost.
+- NLe 300: You divided by 3 instead of by 300 thousands.
 
 ---
 
@@ -1009,18 +1009,18 @@ Current accounts suit business payments; they usually pay no interest.
 
 A trader overdraws an average of NLe 8,000 for 3 months at 24% a year. What is the interest?
 
-- **A.** 160 NLe
-- **B.** 480 NLe  ✅
-- **C.** 1920 NLe
-- **D.** 5760 NLe
+- **A.** NLe 160
+- **B.** NLe 480  ✅
+- **C.** NLe 1,920
+- **D.** NLe 5,760
 
 $I = \dfrac{P \times R \times T}{100} = \dfrac{8000 \times 24 \times 3}{100 \times 12} = $ NLe 480.
 
 **Why the other options are wrong**
 
-- 1920 NLe: You charged a full year's interest.
-- 5760 NLe: You multiplied by 3 years instead of 3 months.
-- 160 NLe: That is one month's interest; the overdraft lasted three months.
+- NLe 1,920: You charged a full year's interest.
+- NLe 5,760: You multiplied by 3 years instead of 3 months.
+- NLe 160: That is one month's interest; the overdraft lasted three months.
 
 ---
 

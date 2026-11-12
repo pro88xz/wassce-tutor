@@ -286,18 +286,18 @@ Kono and Tonkolili concentrate on mining because of their natural resources: spe
 
 Five tailors each make 4 shirts a day working alone. With division of labour, the same five make 35 shirts a day. By what percentage has output increased?
 
-- **A.** 15 %
-- **B.** 43 %
-- **C.** 75 %  ✅
-- **D.** 175 %
+- **A.** 15%
+- **B.** 43%
+- **C.** 75%  ✅
+- **D.** 175%
 
 Output before $= 5 \times 4 = 20$. Increase $= \dfrac{35 - 20}{20} \times 100\% = 75\%$.
 
 **Why the other options are wrong**
 
-- 15 %: That is the increase in shirts, not the percentage increase.
-- 43 %: You divided the increase by the new output; divide by the original output.
-- 175 %: That is the new output as a percentage of the old, not the increase.
+- 15%: That is the increase in shirts, not the percentage increase.
+- 43%: You divided the increase by the new output; divide by the original output.
+- 175%: That is the new output as a percentage of the old, not the increase.
 
 ---
 
@@ -307,15 +307,15 @@ A rice mill employs 8 workers and produces 1,200 bags a week. What is the output
 
 - **A.** 120 bags
 - **B.** 150 bags  ✅
-- **C.** 1192 bags
-- **D.** 9600 bags
+- **C.** 1,192 bags
+- **D.** 9,600 bags
 
 Productivity $= \dfrac{\text{output}}{\text{workers}} = \dfrac{1200}{8} = 150$ bags per worker.
 
 **Why the other options are wrong**
 
-- 9600 bags: You multiplied instead of dividing.
-- 1192 bags: You subtracted the number of workers.
+- 9,600 bags: You multiplied instead of dividing.
+- 1,192 bags: You subtracted the number of workers.
 - 120 bags: You divided by 10 workers instead of 8.
 
 ---
@@ -617,18 +617,18 @@ Moving back towards the source of raw materials is backward vertical integration
 
 Fatu and Musa contributed NLe 30,000 and NLe 20,000 to a partnership and share profit in the ratio of capital. The profit is NLe 15,000. What is Fatu's share?
 
-- **A.** 6000 NLe
-- **B.** 7500 NLe
-- **C.** 9000 NLe  ✅
-- **D.** 10000 NLe
+- **A.** NLe 6,000
+- **B.** NLe 7,500
+- **C.** NLe 9,000  ✅
+- **D.** NLe 10,000
 
 Ratio $= 30000 : 20000 = 3 : 2$. Fatu's share $= \dfrac{3}{5} \times 15000 = $ NLe 9,000.
 
 **Why the other options are wrong**
 
-- 7500 NLe: That is an equal share; the deed says share in the ratio of capital.
-- 6000 NLe: That is Musa's share.
-- 10000 NLe: You used a ratio of 2 : 1 instead of 3 : 2.
+- NLe 7,500: That is an equal share; the deed says share in the ratio of capital.
+- NLe 6,000: That is Musa's share.
+- NLe 10,000: You used a ratio of 2 : 1 instead of 3 : 2.
 
 ---
 
@@ -640,18 +640,18 @@ _Syllabus: Types of capital; share capital; internal and external sources; turno
 
 A trader's current assets are NLe 11,000 and current liabilities are NLe 5,000. What is the working capital?
 
-- **A.** 5000 NLe
-- **B.** 6000 NLe  ✅
-- **C.** 11000 NLe
-- **D.** 16000 NLe
+- **A.** NLe 5,000
+- **B.** NLe 6,000  ✅
+- **C.** NLe 11,000
+- **D.** NLe 16,000
 
 Working capital = current assets − current liabilities = 11,000 − 5,000 = NLe 6,000.
 
 **Why the other options are wrong**
 
-- 16000 NLe: You added current liabilities instead of subtracting them.
-- 5000 NLe: That is the current liabilities.
-- 11000 NLe: That is the current assets alone.
+- NLe 16,000: You added current liabilities instead of subtracting them.
+- NLe 5,000: That is the current liabilities.
+- NLe 11,000: That is the current assets alone.
 
 ---
 
@@ -659,18 +659,18 @@ Working capital = current assets − current liabilities = 11,000 − 5,000 = NL
 
 A trader's opening stock is NLe 4,000, purchases NLe 20,000 and closing stock NLe 6,000. What is the cost of goods sold?
 
-- **A.** 18000 NLe  ✅
-- **B.** 20000 NLe
-- **C.** 22000 NLe
-- **D.** 30000 NLe
+- **A.** NLe 18,000  ✅
+- **B.** NLe 20,000
+- **C.** NLe 22,000
+- **D.** NLe 30,000
 
 Cost of goods sold = opening stock + purchases − closing stock = 4,000 + 20,000 − 6,000 = NLe 18,000.
 
 **Why the other options are wrong**
 
-- 30000 NLe: You added the closing stock instead of subtracting it.
-- 22000 NLe: You subtracted the opening stock and added the closing stock.
-- 20000 NLe: That is the purchases only.
+- NLe 30,000: You added the closing stock instead of subtracting it.
+- NLe 22,000: You subtracted the opening stock and added the closing stock.
+- NLe 20,000: That is the purchases only.
 
 ---
 
@@ -697,18 +697,18 @@ Average stock $= \dfrac{4000 + 6000}{2} = 5000$. Rate of turnover $= \dfrac{1800
 
 Goods cost NLe 100 and are sold for NLe 125. What is the margin?
 
-- **A.** 20 %  ✅
-- **B.** 25 %
-- **C.** 80 %
-- **D.** 125 %
+- **A.** 20%  ✅
+- **B.** 25%
+- **C.** 80%
+- **D.** 125%
 
 Margin $= \dfrac{\text{profit}}{\text{selling price}} \times 100\% = \dfrac{25}{125} \times 100\% = 20\%$.
 
 **Why the other options are wrong**
 
-- 25 %: That is the mark-up (profit on cost price).
-- 125 %: That is the selling price as a percentage of cost.
-- 80 %: That is the cost as a percentage of the selling price.
+- 25%: That is the mark-up (profit on cost price).
+- 125%: That is the selling price as a percentage of cost.
+- 80%: That is the cost as a percentage of the selling price.
 
 ---
 
@@ -716,18 +716,18 @@ Margin $= \dfrac{\text{profit}}{\text{selling price}} \times 100\% = \dfrac{25}{
 
 Goods cost NLe 800 and the trader adds a mark-up of 25%. What is the selling price?
 
-- **A.** 200 NLe
-- **B.** 600 NLe
-- **C.** 1000 NLe  ✅
-- **D.** 1066.67 NLe
+- **A.** NLe 200
+- **B.** NLe 600
+- **C.** NLe 1,000  ✅
+- **D.** NLe 1,066.67
 
 Selling price $= 800 + 25\% \times 800 = 800 + 200 = $ NLe 1,000.
 
 **Why the other options are wrong**
 
-- 200 NLe: That is the profit, not the selling price.
-- 600 NLe: You subtracted the mark-up instead of adding it.
-- 1066.67 NLe: You treated 25% as the margin on the selling price.
+- NLe 200: That is the profit, not the selling price.
+- NLe 600: You subtracted the mark-up instead of adding it.
+- NLe 1,066.67: You treated 25% as the margin on the selling price.
 
 ---
 
@@ -735,18 +735,18 @@ Selling price $= 800 + 25\% \times 800 = 800 + 200 = $ NLe 1,000.
 
 A company issues 600,000 shares of NLe 1 each and calls up NLe 0.75 per share. Shareholders have paid NLe 420,000. What are the calls in arrear?
 
-- **A.** 30000 NLe  ✅
-- **B.** 150000 NLe
-- **C.** 180000 NLe
-- **D.** 450000 NLe
+- **A.** NLe 30,000  ✅
+- **B.** NLe 150,000
+- **C.** NLe 180,000
+- **D.** NLe 450,000
 
 Called-up $= 600000 \times 0.75 = 450000$. Calls in arrear $= 450000 - 420000 = $ NLe 30,000.
 
 **Why the other options are wrong**
 
-- 450000 NLe: That is the called-up capital.
-- 180000 NLe: You subtracted the paid-up capital from the issued capital.
-- 150000 NLe: That is the uncalled capital.
+- NLe 450,000: That is the called-up capital.
+- NLe 180,000: You subtracted the paid-up capital from the issued capital.
+- NLe 150,000: That is the uncalled capital.
 
 ---
 
@@ -1085,18 +1085,18 @@ Electronic payment, online selling, barcodes and self-service are modern retail 
 
 A shopkeeper buys a carton of 24 tins of tomato paste for NLe 192 and sells each tin for NLe 10. What is the profit per tin?
 
-- **A.** 2 NLe  ✅
-- **B.** 8 NLe
-- **C.** 25 NLe
-- **D.** 48 NLe
+- **A.** NLe 2  ✅
+- **B.** NLe 8
+- **C.** NLe 25
+- **D.** NLe 48
 
 Cost per tin $= 192 \div 24 = $ NLe 8. Profit per tin $= 10 - 8 = $ NLe 2.
 
 **Why the other options are wrong**
 
-- 48 NLe: That is the profit on the whole carton.
-- 8 NLe: That is the cost of one tin.
-- 25 NLe: That is the mark-up as a percentage, not the profit in leones.
+- NLe 48: That is the profit on the whole carton.
+- NLe 8: That is the cost of one tin.
+- NLe 25: That is the mark-up as a percentage, not the profit in leones.
 
 ---
 
@@ -1241,17 +1241,17 @@ Holding stock evens out supply through the year, so prices do not swing sharply.
 
 A wholesaler buys 500 cartons for NLe 60,000 and sells them all to retailers at NLe 140 a carton. What is the gross profit?
 
-- **A.** 20 NLe
-- **B.** 10000 NLe  ✅
-- **C.** 70000 NLe
-- **D.** 130000 NLe
+- **A.** NLe 20
+- **B.** NLe 10,000  ✅
+- **C.** NLe 70,000
+- **D.** NLe 130,000
 
 Revenue $= 500 \times 140 = 70000$. Gross profit $= 70000 - 60000 = $ NLe 10,000.
 
 **Why the other options are wrong**
 
-- 70000 NLe: That is the sales revenue, not the profit.
-- 20 NLe: That is the profit per carton.
-- 130000 NLe: You added the cost to the revenue.
+- NLe 70,000: That is the sales revenue, not the profit.
+- NLe 20: That is the profit per carton.
+- NLe 130,000: You added the cost to the revenue.
 
 ---

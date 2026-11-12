@@ -558,34 +558,34 @@
      "key": "com-po-07",
      "stem": "Five tailors each make 4 shirts a day working alone. With division of labour, the same five make 35 shirts a day. By what percentage has output increased?",
      "image_url": null,
-     "explanation": "Output before $= 5 \\times 4 = 20$. Increase $= \\dfrac{35 - 20}{20} \\times 100\\% = 75\\%$.\n\n**Why the other options are wrong**\n\n- 15 %: That is the increase in shirts, not the percentage increase.\n- 43 %: You divided the increase by the new output; divide by the original output.\n- 175 %: That is the new output as a percentage of the old, not the increase.",
+     "explanation": "Output before $= 5 \\times 4 = 20$. Increase $= \\dfrac{35 - 20}{20} \\times 100\\% = 75\\%$.\n\n**Why the other options are wrong**\n\n- 15%: That is the increase in shirts, not the percentage increase.\n- 43%: You divided the increase by the new output; divide by the original output.\n- 175%: That is the new output as a percentage of the old, not the increase.",
      "position": 7,
      "options": [
       {
        "id": "871b52e7-a2af-50e5-993b-a632f779741b",
        "label": "A",
-       "content": "15 %",
+       "content": "15%",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "d0bedd4d-3dff-565a-ba43-38c74a5dc74d",
        "label": "B",
-       "content": "43 %",
+       "content": "43%",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "b6c22111-ffe8-53d9-9a75-b8b578701b42",
        "label": "C",
-       "content": "75 %",
+       "content": "75%",
        "is_correct": true,
        "position": 2
       },
       {
        "id": "9a27431d-2f1d-5347-8ba9-85779c072644",
        "label": "D",
-       "content": "175 %",
+       "content": "175%",
        "is_correct": false,
        "position": 3
       }
@@ -596,7 +596,7 @@
      "key": "com-po-08",
      "stem": "A rice mill employs 8 workers and produces 1,200 bags a week. What is the output per worker?",
      "image_url": null,
-     "explanation": "Productivity $= \\dfrac{\\text{output}}{\\text{workers}} = \\dfrac{1200}{8} = 150$ bags per worker.\n\n**Why the other options are wrong**\n\n- 9600 bags: You multiplied instead of dividing.\n- 1192 bags: You subtracted the number of workers.\n- 120 bags: You divided by 10 workers instead of 8.",
+     "explanation": "Productivity $= \\dfrac{\\text{output}}{\\text{workers}} = \\dfrac{1200}{8} = 150$ bags per worker.\n\n**Why the other options are wrong**\n\n- 9,600 bags: You multiplied instead of dividing.\n- 1,192 bags: You subtracted the number of workers.\n- 120 bags: You divided by 10 workers instead of 8.",
      "position": 8,
      "options": [
       {
@@ -616,14 +616,14 @@
       {
        "id": "03e327da-6f5b-5e53-9159-f1a0227d4cf5",
        "label": "C",
-       "content": "1192 bags",
+       "content": "1,192 bags",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "bc0ba0f5-efbb-5f17-a33e-54585eced9cc",
        "label": "D",
-       "content": "9600 bags",
+       "content": "9,600 bags",
        "is_correct": false,
        "position": 3
       }
@@ -1224,34 +1224,34 @@
      "key": "com-bu-08",
      "stem": "Fatu and Musa contributed NLe 30,000 and NLe 20,000 to a partnership and share profit in the ratio of capital. The profit is NLe 15,000. What is Fatu's share?",
      "image_url": null,
-     "explanation": "Ratio $= 30000 : 20000 = 3 : 2$. Fatu's share $= \\dfrac{3}{5} \\times 15000 = $ NLe 9,000.\n\n**Why the other options are wrong**\n\n- 7500 NLe: That is an equal share; the deed says share in the ratio of capital.\n- 6000 NLe: That is Musa's share.\n- 10000 NLe: You used a ratio of 2 : 1 instead of 3 : 2.",
+     "explanation": "Ratio $= 30000 : 20000 = 3 : 2$. Fatu's share $= \\dfrac{3}{5} \\times 15000 = $ NLe 9,000.\n\n**Why the other options are wrong**\n\n- NLe 7,500: That is an equal share; the deed says share in the ratio of capital.\n- NLe 6,000: That is Musa's share.\n- NLe 10,000: You used a ratio of 2 : 1 instead of 3 : 2.",
      "position": 8,
      "options": [
       {
        "id": "008b1643-2e16-5acd-8b80-20978a81631b",
        "label": "A",
-       "content": "6000 NLe",
+       "content": "NLe 6,000",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "a0a7aa19-4df7-537f-b6b8-22d0e336684c",
        "label": "B",
-       "content": "7500 NLe",
+       "content": "NLe 7,500",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "8d9ad517-1d00-59e3-a64d-2216c12c664c",
        "label": "C",
-       "content": "9000 NLe",
+       "content": "NLe 9,000",
        "is_correct": true,
        "position": 2
       },
       {
        "id": "e58f011f-d0df-59df-9ca3-9b5a5e740653",
        "label": "D",
-       "content": "10000 NLe",
+       "content": "NLe 10,000",
        "is_correct": false,
        "position": 3
       }
@@ -1272,34 +1272,34 @@
      "key": "com-ca-01",
      "stem": "A trader's current assets are NLe 11,000 and current liabilities are NLe 5,000. What is the working capital?",
      "image_url": null,
-     "explanation": "Working capital = current assets − current liabilities = 11,000 − 5,000 = NLe 6,000.\n\n**Why the other options are wrong**\n\n- 16000 NLe: You added current liabilities instead of subtracting them.\n- 5000 NLe: That is the current liabilities.\n- 11000 NLe: That is the current assets alone.",
+     "explanation": "Working capital = current assets − current liabilities = 11,000 − 5,000 = NLe 6,000.\n\n**Why the other options are wrong**\n\n- NLe 16,000: You added current liabilities instead of subtracting them.\n- NLe 5,000: That is the current liabilities.\n- NLe 11,000: That is the current assets alone.",
      "position": 1,
      "options": [
       {
        "id": "1c306664-8151-5519-9555-b732b24a62e8",
        "label": "A",
-       "content": "5000 NLe",
+       "content": "NLe 5,000",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "2c08050c-2052-5240-8c17-02c39aef8758",
        "label": "B",
-       "content": "6000 NLe",
+       "content": "NLe 6,000",
        "is_correct": true,
        "position": 1
       },
       {
        "id": "1facf48e-35c5-5af2-bc3c-4efa3d4b44a7",
        "label": "C",
-       "content": "11000 NLe",
+       "content": "NLe 11,000",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "36f7fc32-c0db-5295-8027-1c6fb4bf2844",
        "label": "D",
-       "content": "16000 NLe",
+       "content": "NLe 16,000",
        "is_correct": false,
        "position": 3
       }
@@ -1310,34 +1310,34 @@
      "key": "com-ca-02",
      "stem": "A trader's opening stock is NLe 4,000, purchases NLe 20,000 and closing stock NLe 6,000. What is the cost of goods sold?",
      "image_url": null,
-     "explanation": "Cost of goods sold = opening stock + purchases − closing stock = 4,000 + 20,000 − 6,000 = NLe 18,000.\n\n**Why the other options are wrong**\n\n- 30000 NLe: You added the closing stock instead of subtracting it.\n- 22000 NLe: You subtracted the opening stock and added the closing stock.\n- 20000 NLe: That is the purchases only.",
+     "explanation": "Cost of goods sold = opening stock + purchases − closing stock = 4,000 + 20,000 − 6,000 = NLe 18,000.\n\n**Why the other options are wrong**\n\n- NLe 30,000: You added the closing stock instead of subtracting it.\n- NLe 22,000: You subtracted the opening stock and added the closing stock.\n- NLe 20,000: That is the purchases only.",
      "position": 2,
      "options": [
       {
        "id": "35c3011d-e0d6-5cbb-b20d-88c92c5f1d44",
        "label": "A",
-       "content": "18000 NLe",
+       "content": "NLe 18,000",
        "is_correct": true,
        "position": 0
       },
       {
        "id": "4e09ae27-5366-54ad-b98f-8f22a1d57acc",
        "label": "B",
-       "content": "20000 NLe",
+       "content": "NLe 20,000",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "112d22b1-ce9a-5d6f-9063-ba7cfc1049ed",
        "label": "C",
-       "content": "22000 NLe",
+       "content": "NLe 22,000",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "212bf967-d35a-5f14-b684-73c64e07a429",
        "label": "D",
-       "content": "30000 NLe",
+       "content": "NLe 30,000",
        "is_correct": false,
        "position": 3
       }
@@ -1386,34 +1386,34 @@
      "key": "com-ca-04",
      "stem": "Goods cost NLe 100 and are sold for NLe 125. What is the margin?",
      "image_url": null,
-     "explanation": "Margin $= \\dfrac{\\text{profit}}{\\text{selling price}} \\times 100\\% = \\dfrac{25}{125} \\times 100\\% = 20\\%$.\n\n**Why the other options are wrong**\n\n- 25 %: That is the mark-up (profit on cost price).\n- 125 %: That is the selling price as a percentage of cost.\n- 80 %: That is the cost as a percentage of the selling price.",
+     "explanation": "Margin $= \\dfrac{\\text{profit}}{\\text{selling price}} \\times 100\\% = \\dfrac{25}{125} \\times 100\\% = 20\\%$.\n\n**Why the other options are wrong**\n\n- 25%: That is the mark-up (profit on cost price).\n- 125%: That is the selling price as a percentage of cost.\n- 80%: That is the cost as a percentage of the selling price.",
      "position": 4,
      "options": [
       {
        "id": "e5a08f89-efc2-599a-aeaf-85e0aa5ae014",
        "label": "A",
-       "content": "20 %",
+       "content": "20%",
        "is_correct": true,
        "position": 0
       },
       {
        "id": "6bdec080-c308-5446-9f6b-5269b52f156c",
        "label": "B",
-       "content": "25 %",
+       "content": "25%",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "a716bbdc-5daf-5f07-9c8d-447ce4292f08",
        "label": "C",
-       "content": "80 %",
+       "content": "80%",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "d606ac8c-ab03-5eed-84e0-f4bbde2379f8",
        "label": "D",
-       "content": "125 %",
+       "content": "125%",
        "is_correct": false,
        "position": 3
       }
@@ -1424,34 +1424,34 @@
      "key": "com-ca-05",
      "stem": "Goods cost NLe 800 and the trader adds a mark-up of 25%. What is the selling price?",
      "image_url": null,
-     "explanation": "Selling price $= 800 + 25\\% \\times 800 = 800 + 200 = $ NLe 1,000.\n\n**Why the other options are wrong**\n\n- 200 NLe: That is the profit, not the selling price.\n- 600 NLe: You subtracted the mark-up instead of adding it.\n- 1066.67 NLe: You treated 25% as the margin on the selling price.",
+     "explanation": "Selling price $= 800 + 25\\% \\times 800 = 800 + 200 = $ NLe 1,000.\n\n**Why the other options are wrong**\n\n- NLe 200: That is the profit, not the selling price.\n- NLe 600: You subtracted the mark-up instead of adding it.\n- NLe 1,066.67: You treated 25% as the margin on the selling price.",
      "position": 5,
      "options": [
       {
        "id": "e86a1a48-11d7-5249-8d02-ef30a3cdae4c",
        "label": "A",
-       "content": "200 NLe",
+       "content": "NLe 200",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "1b6f0289-1665-5219-9f30-886eff831856",
        "label": "B",
-       "content": "600 NLe",
+       "content": "NLe 600",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "0283f61c-c735-5132-8df5-9f2234fca604",
        "label": "C",
-       "content": "1000 NLe",
+       "content": "NLe 1,000",
        "is_correct": true,
        "position": 2
       },
       {
        "id": "e36c9ff7-6a83-5c47-af21-b31e6405e230",
        "label": "D",
-       "content": "1066.67 NLe",
+       "content": "NLe 1,066.67",
        "is_correct": false,
        "position": 3
       }
@@ -1462,34 +1462,34 @@
      "key": "com-ca-06",
      "stem": "A company issues 600,000 shares of NLe 1 each and calls up NLe 0.75 per share. Shareholders have paid NLe 420,000. What are the calls in arrear?",
      "image_url": null,
-     "explanation": "Called-up $= 600000 \\times 0.75 = 450000$. Calls in arrear $= 450000 - 420000 = $ NLe 30,000.\n\n**Why the other options are wrong**\n\n- 450000 NLe: That is the called-up capital.\n- 180000 NLe: You subtracted the paid-up capital from the issued capital.\n- 150000 NLe: That is the uncalled capital.",
+     "explanation": "Called-up $= 600000 \\times 0.75 = 450000$. Calls in arrear $= 450000 - 420000 = $ NLe 30,000.\n\n**Why the other options are wrong**\n\n- NLe 450,000: That is the called-up capital.\n- NLe 180,000: You subtracted the paid-up capital from the issued capital.\n- NLe 150,000: That is the uncalled capital.",
      "position": 6,
      "options": [
       {
        "id": "b0ec8b88-f2ad-5067-ab23-1c93af1242c9",
        "label": "A",
-       "content": "30000 NLe",
+       "content": "NLe 30,000",
        "is_correct": true,
        "position": 0
       },
       {
        "id": "05737a18-8f7e-56f6-afa4-86ea23f1bfb9",
        "label": "B",
-       "content": "150000 NLe",
+       "content": "NLe 150,000",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "69bbec19-262b-535c-9d7c-8c436f056569",
        "label": "C",
-       "content": "180000 NLe",
+       "content": "NLe 180,000",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "dfd8f18f-44ac-54ec-a29b-e6f83cb91e23",
        "label": "D",
-       "content": "450000 NLe",
+       "content": "NLe 450,000",
        "is_correct": false,
        "position": 3
       }
@@ -2166,34 +2166,34 @@
      "key": "com-rt-08",
      "stem": "A shopkeeper buys a carton of 24 tins of tomato paste for NLe 192 and sells each tin for NLe 10. What is the profit per tin?",
      "image_url": null,
-     "explanation": "Cost per tin $= 192 \\div 24 = $ NLe 8. Profit per tin $= 10 - 8 = $ NLe 2.\n\n**Why the other options are wrong**\n\n- 48 NLe: That is the profit on the whole carton.\n- 8 NLe: That is the cost of one tin.\n- 25 NLe: That is the mark-up as a percentage, not the profit in leones.",
+     "explanation": "Cost per tin $= 192 \\div 24 = $ NLe 8. Profit per tin $= 10 - 8 = $ NLe 2.\n\n**Why the other options are wrong**\n\n- NLe 48: That is the profit on the whole carton.\n- NLe 8: That is the cost of one tin.\n- NLe 25: That is the mark-up as a percentage, not the profit in leones.",
      "position": 8,
      "options": [
       {
        "id": "ce99d3b9-4ed7-57e7-b41d-d89a4100bef9",
        "label": "A",
-       "content": "2 NLe",
+       "content": "NLe 2",
        "is_correct": true,
        "position": 0
       },
       {
        "id": "57fd0a96-74b0-5545-8240-89609e5da693",
        "label": "B",
-       "content": "8 NLe",
+       "content": "NLe 8",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "d6a53304-19aa-58eb-a4d9-aed2b53a4b38",
        "label": "C",
-       "content": "25 NLe",
+       "content": "NLe 25",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "c17ab4e8-febb-532b-80cf-7be8020ab2d7",
        "label": "D",
-       "content": "48 NLe",
+       "content": "NLe 48",
        "is_correct": false,
        "position": 3
       }
@@ -2480,34 +2480,34 @@
      "key": "com-wt-08",
      "stem": "A wholesaler buys 500 cartons for NLe 60,000 and sells them all to retailers at NLe 140 a carton. What is the gross profit?",
      "image_url": null,
-     "explanation": "Revenue $= 500 \\times 140 = 70000$. Gross profit $= 70000 - 60000 = $ NLe 10,000.\n\n**Why the other options are wrong**\n\n- 70000 NLe: That is the sales revenue, not the profit.\n- 20 NLe: That is the profit per carton.\n- 130000 NLe: You added the cost to the revenue.",
+     "explanation": "Revenue $= 500 \\times 140 = 70000$. Gross profit $= 70000 - 60000 = $ NLe 10,000.\n\n**Why the other options are wrong**\n\n- NLe 70,000: That is the sales revenue, not the profit.\n- NLe 20: That is the profit per carton.\n- NLe 130,000: You added the cost to the revenue.",
      "position": 8,
      "options": [
       {
        "id": "2b576288-6f82-5e18-aa5f-ae40229504e1",
        "label": "A",
-       "content": "20 NLe",
+       "content": "NLe 20",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "e620eb60-b08e-5cea-8170-2d17e0d8731a",
        "label": "B",
-       "content": "10000 NLe",
+       "content": "NLe 10,000",
        "is_correct": true,
        "position": 1
       },
       {
        "id": "e778186e-7bbb-5912-8327-630523bfe90d",
        "label": "C",
-       "content": "70000 NLe",
+       "content": "NLe 70,000",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "842bc462-8b16-5ebe-a42c-18bb9509cdc2",
        "label": "D",
-       "content": "130000 NLe",
+       "content": "NLe 130,000",
        "is_correct": false,
        "position": 3
       }
@@ -2516,5 +2516,5 @@
    ]
   }
  ],
- "version": "40893f91a214"
+ "version": "84ff668b9743"
 }
