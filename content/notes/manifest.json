@@ -5408,6 +5408,58 @@
       "title": "Local councils and decentralisation in Sierra Leone",
       "est_minutes": 6,
       "sort_order": 2
+    },
+    {
+      "file": "government-un-1.md",
+      "subject": "Government",
+      "topic": "the-united-nations-and-the-commonwealth",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "The United Nations: origin, aims and organs",
+      "est_minutes": 7,
+      "sort_order": 1
+    },
+    {
+      "file": "government-un-2.md",
+      "subject": "Government",
+      "topic": "the-united-nations-and-the-commonwealth",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "The UN in Sierra Leone and the Commonwealth",
+      "est_minutes": 7,
+      "sort_order": 2
+    },
+    {
+      "file": "government-regional-1.md",
+      "subject": "Government",
+      "topic": "african-union-ecowas-and-regional-cooperation",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "From the OAU to the African Union",
+      "est_minutes": 7,
+      "sort_order": 1
+    },
+    {
+      "file": "government-regional-2.md",
+      "subject": "Government",
+      "topic": "african-union-ecowas-and-regional-cooperation",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "ECOWAS, the Mano River Union and NEPAD",
+      "est_minutes": 8,
+      "sort_order": 2
     }
   ]
 }

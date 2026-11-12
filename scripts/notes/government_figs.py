@@ -1330,6 +1330,101 @@ def local_gov_history():
     return s
 
 
+# ═══ Group 5: international relations ═══════════════════════════════════════
+
+@fig
+def un_organs():
+    s = Svg(800, 520, "The principal organs of the United Nations",
+            "The United Nations has six principal organs: the General Assembly (all 193 members, one vote each), the "
+            "Security Council (15 members, five permanent with a veto), the Economic and Social Council, the "
+            "International Court of Justice at The Hague, the Secretariat headed by the Secretary-General, and the "
+            "Trusteeship Council, which suspended its work in 1994.")
+    heading(s, "Six principal organs of the UN")
+    c = box(s, 400, 265, 220, 80, ["UNITED NATIONS", "founded 24 Oct 1945"], col=PURPLE, fill=F_PURPLE, size=17)
+    items = [(140, 105, "General Assembly", ["all 193 members,", "one vote each"], BLUE, F_BLUE),
+             (400, 95, "Security Council", ["15 members; 5 permanent", "with a veto"], RED, F_RED),
+             (660, 105, "ECOSOC", ["economic and social", "cooperation; 54 members"], GREEN, F_GREEN),
+             (140, 425, "Int. Court of Justice", ["The Hague;", "15 judges"], ORANGE, F_AMBER),
+             (400, 435, "Secretariat", ["headed by the", "Secretary-General"], TEAL, F_TEAL),
+             (660, 425, "Trusteeship Council", ["work suspended", "in 1994"], MUTED, F_GREY)]
+    for x, y, head, lines, col, fill in items:
+        b = box(s, x, y, 230, 86, [head] + lines, col=col, fill=fill, size=15)
+        link(s, b, c, color=MUTED)
+    s.text(110, 265, "Headquarters:", size=14, weight="bold", color=INK)
+    s.text(110, 285, "New York", size=14, color=INK)
+    s.text(690, 265, "Permanent five:", size=14, weight="bold", color=RED)
+    s.text(690, 285, "China, France, Russia,", size=13, color=INK)
+    s.text(690, 303, "UK, USA", size=13, color=INK)
+    return s
+
+
+@fig
+def un_in_sl():
+    s = Svg(800, 540, "The United Nations in Sierra Leone",
+            "Sierra Leone joined the UN on 27 September 1961. During and after the civil war the UN deployed an observer "
+            "mission (UNOMSIL, 1998–1999), the peacekeeping mission UNAMSIL (1999–2005), and the peacebuilding offices "
+            "UNIOSIL (2006–2008) and UNIPSIL (2008–2014). It backed the Special Court for Sierra Leone (2002–2013). UN "
+            "agencies such as WHO, UNICEF, WFP and UNDP support health, education, food and development.")
+    heading(s, "From membership to peacekeeping and development")
+    timeline(s, [("1961", "Joins the UN, 27 September", "a new member soon after independence", BLUE),
+                 ("1998", "UNOMSIL observer mission", "monitors security and disarmament", ORANGE),
+                 ("1999", "UNAMSIL peacekeepers (to 2005)", "disarmament of over 70,000 fighters", RED),
+                 ("2002", "Special Court for Sierra Leone", "set up with the UN; closed 2013", PURPLE),
+                 ("2006", "UNIOSIL peacebuilding office", "supports institutions (to 2008)", GREEN),
+                 ("2008", "UNIPSIL political mission", "elections, reconciliation (to 2014)", GREEN),
+                 ("2014", "Ebola response", "WHO, UNICEF, WFP and UNMEER", ORANGE),
+                 ("2024", "Security Council seat", "non-permanent member, 2024–2025", BLUE)],
+             x=150, y0=90, step=60)
+    return s
+
+
+@fig
+def oau_to_au():
+    s = Svg(800, 520, "From the OAU to the African Union",
+            "The Organisation of African Unity was founded in Addis Ababa on 25 May 1963 to promote unity, defend "
+            "sovereignty and end colonialism, but held to non-interference in members' internal affairs. The African "
+            "Union replaced it, launched in Durban on 9 July 2002. The AU may intervene in a member state in cases of war "
+            "crimes, genocide and crimes against humanity, suspends governments that seize power unconstitutionally, and "
+            "has more organs, including the Pan-African Parliament and the Peace and Security Council.")
+    heading(s, "OAU (1963–2002) and AU (2002 onward)")
+    rows = ["Founded", "Headquarters", "Main focus", "Internal conflicts", "Coups", "Key organs"]
+    oau = ["25 May 1963", "Addis Ababa", "end colonialism; unity", "non-interference", "often tolerated", "Assembly, Council, Secretariat"]
+    au = ["9 July 2002", "Addis Ababa", "integration, peace, development", "may intervene (Art. 4h)", "members suspended", "+ Parliament, PSC, Court"]
+    s.text(115, 80, "", size=1)
+    box(s, 380, 80, 230, 48, ["OAU"], col=BLUE, fill=F_BLUE, size=19)
+    box(s, 640, 80, 250, 48, ["African Union"], col=GREEN, fill=F_GREEN, size=19)
+    for k, r in enumerate(rows):
+        y = 150 + k * 60
+        s.text(140, y, r, size=15, weight="bold", color=INK)
+        box(s, 380, y, 230, 48, [oau[k]], col=BLUE, fill="#ffffff", size=14, bold_first=False)
+        box(s, 640, y, 250, 48, [au[k]], col=GREEN, fill="#ffffff", size=14, bold_first=False)
+    note(s, "Africa Day, 25 May, marks the founding of the OAU.", 505, size=14)
+    return s
+
+
+@fig
+def ecowas_structure():
+    s = Svg(800, 520, "The institutions of ECOWAS",
+            "ECOWAS was founded by the Treaty of Lagos on 28 May 1975 and revised in 1993. Its supreme body is the "
+            "Authority of Heads of State and Government, supported by the Council of Ministers and the ECOWAS Commission in "
+            "Abuja. Other institutions include the Community Parliament, the Community Court of Justice and the ECOWAS Bank "
+            "for Investment and Development. ECOMOG was its military monitoring group.")
+    heading(s, "How ECOWAS is organised")
+    au = box(s, 400, 95, 460, 66, ["Authority of Heads of State and Government", "supreme decision-making body"], col=PURPLE, fill=F_PURPLE, size=15)
+    cm = box(s, 400, 190, 460, 56, ["Council of Ministers", "advises the Authority"], col=BLUE, fill=F_BLUE, size=15)
+    co = box(s, 400, 285, 460, 66, ["ECOWAS Commission (Abuja)", "runs programmes; headed by a President"], col=BLUE, fill=F_BLUE, size=15)
+    link(s, au, cm, color=MUTED)
+    link(s, cm, co, color=MUTED)
+    others = [(140, "Community", ["Parliament"]), (330, "Court of", ["Justice"]), (520, "EBID", ["(bank)"]), (690, "ECOMOG", ["military force"])]
+    for x, a, b in others:
+        bb = box(s, x, 410, 165, 70, [a] + b, col=GREEN if x < 600 else RED, fill=F_GREEN if x < 600 else F_RED, size=15)
+        s.line(x, 375, x, 352 if x in (330, 520) else 375, color=MUTED, width=1.6)
+    s.line(140, 375, 690, 375, color=MUTED, width=1.6)
+    s.line(400, 318, 400, 375, color=MUTED, width=1.6)
+    note(s, "Treaty of Lagos, 28 May 1975; revised Treaty, 1993.", 500, size=14)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:

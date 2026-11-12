@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The institutions of ECOWAS</title>
+<desc id="d">ECOWAS was founded by the Treaty of Lagos on 28 May 1975 and revised in 1993. Its supreme body is the Authority of Heads of State and Government, supported by the Council of Ministers and the ECOWAS Commission in Abuja. Other institutions include the Community Parliament, the Community Court of Justice and the ECOWAS Bank for Investment and Development. ECOMOG was its military monitoring group.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="520" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">How ECOWAS is organised</text>
+<rect x="170.0" y="62.0" width="460.0" height="66.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="84.5" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Authority of Heads of State and Government</text>
+<text x="400.0" y="105.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">supreme decision-making body</text>
+<rect x="170.0" y="162.0" width="460.0" height="56.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="179.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Council of Ministers</text>
+<text x="400.0" y="200.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">advises the Authority</text>
+<rect x="170.0" y="252.0" width="460.0" height="66.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="274.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">ECOWAS Commission (Abuja)</text>
+<text x="400.0" y="295.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">runs programmes; headed by a President</text>
+<line x1="400.0" y1="134.0" x2="400.0" y2="156.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="400.0" y1="224.0" x2="400.0" y2="246.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="57.5" y="375.0" width="165.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="140.0" y="399.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Community</text>
+<text x="140.0" y="420.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Parliament</text>
+<line x1="140.0" y1="375.0" x2="140.0" y2="375.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<rect x="247.5" y="375.0" width="165.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="330.0" y="399.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Court of</text>
+<text x="330.0" y="420.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Justice</text>
+<line x1="330.0" y1="375.0" x2="330.0" y2="352.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<rect x="437.5" y="375.0" width="165.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="520.0" y="399.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">EBID</text>
+<text x="520.0" y="420.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(bank)</text>
+<line x1="520.0" y1="375.0" x2="520.0" y2="352.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<rect x="607.5" y="375.0" width="165.0" height="70.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="690.0" y="399.5" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">ECOMOG</text>
+<text x="690.0" y="420.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">military force</text>
+<line x1="690.0" y1="375.0" x2="690.0" y2="375.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="140.0" y1="375.0" x2="690.0" y2="375.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="400.0" y1="318.0" x2="400.0" y2="375.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+<text x="400.0" y="500.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Treaty of Lagos, 28 May 1975; revised Treaty, 1993.</text>
+</svg>

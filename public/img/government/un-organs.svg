@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The principal organs of the United Nations</title>
+<desc id="d">The United Nations has six principal organs: the General Assembly (all 193 members, one vote each), the Security Council (15 members, five permanent with a veto), the Economic and Social Council, the International Court of Justice at The Hague, the Secretariat headed by the Secretary-General, and the Trusteeship Council, which suspended its work in 1994.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="520" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Six principal organs of the UN</text>
+<rect x="290.0" y="225.0" width="220.0" height="80.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="253.5" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">UNITED NATIONS</text>
+<text x="400.0" y="276.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">founded 24 Oct 1945</text>
+<rect x="25.0" y="62.0" width="230.0" height="86.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="140.0" y="84.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">General Assembly</text>
+<text x="140.0" y="105.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">all 193 members,</text>
+<text x="140.0" y="126.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">one vote each</text>
+<line x1="140.0" y1="154.0" x2="400.0" y2="219.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="285.0" y="52.0" width="230.0" height="86.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="400.0" y="74.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Security Council</text>
+<text x="400.0" y="95.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">15 members; 5 permanent</text>
+<text x="400.0" y="116.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">with a veto</text>
+<line x1="400.0" y1="144.0" x2="400.0" y2="219.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="545.0" y="62.0" width="230.0" height="86.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="660.0" y="84.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">ECOSOC</text>
+<text x="660.0" y="105.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">economic and social</text>
+<text x="660.0" y="126.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cooperation; 54 members</text>
+<line x1="660.0" y1="154.0" x2="400.0" y2="219.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="25.0" y="382.0" width="230.0" height="86.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="140.0" y="404.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Int. Court of Justice</text>
+<text x="140.0" y="425.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">The Hague;</text>
+<text x="140.0" y="446.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">15 judges</text>
+<line x1="140.0" y1="376.0" x2="400.0" y2="311.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="285.0" y="392.0" width="230.0" height="86.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="400.0" y="414.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Secretariat</text>
+<text x="400.0" y="435.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">headed by the</text>
+<text x="400.0" y="456.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Secretary-General</text>
+<line x1="400.0" y1="386.0" x2="400.0" y2="311.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="545.0" y="382.0" width="230.0" height="86.0" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="660.0" y="404.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Trusteeship Council</text>
+<text x="660.0" y="425.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">work suspended</text>
+<text x="660.0" y="446.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">in 1994</text>
+<line x1="660.0" y1="376.0" x2="400.0" y2="311.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="110.0" y="265.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Headquarters:</text>
+<text x="110.0" y="285.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">New York</text>
+<text x="690.0" y="265.0" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Permanent five:</text>
+<text x="690.0" y="285.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">China, France, Russia,</text>
+<text x="690.0" y="303.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">UK, USA</text>
+</svg>
