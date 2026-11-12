@@ -75,18 +75,6 @@
       "sort_order": 1
     },
     {
-      "file": "chemistry-atomic-structure.md",
-      "subject": "Chemistry",
-      "topic": "atomic-structure",
-      "title": "Atomic structure: subatomic particles, isotopes and electron arrangement",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 16,
-      "sort_order": 1
-    },
-    {
       "file": "chemistry-intro-1.md",
       "subject": "Chemistry",
       "topic": "introduction-to-chemistry",
@@ -148,6 +136,133 @@
       "auto_sync": true,
       "title": "Separating mixtures and testing for purity",
       "est_minutes": 9,
+      "sort_order": 2
+    },
+    {
+      "file": "chemistry-atomic-structure-1.md",
+      "subject": "Chemistry",
+      "topic": "atomic-structure",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Inside the atom: particles, atomic number and isotopes",
+      "est_minutes": 8,
+      "sort_order": 1,
+      "retire": [
+        "atomic-mass-unit-(amu)",
+        "atomic-parameters",
+        "atomic-structure-subatomic-particles-isotopes-and-electron-arrangement",
+        "dalton's-atomic-theory",
+        "particles",
+        "radioactivity",
+        "relative-atomic-mass"
+      ]
+    },
+    {
+      "file": "chemistry-atomic-structure-2.md",
+      "subject": "Chemistry",
+      "topic": "atomic-structure",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Relative atomic mass and radioactivity",
+      "est_minutes": 9,
+      "sort_order": 2
+    },
+    {
+      "file": "chemistry-electron-config-1.md",
+      "subject": "Chemistry",
+      "topic": "electronic-configuration",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Shells, sub-shells and orbitals",
+      "est_minutes": 7,
+      "sort_order": 1,
+      "retire": [
+        "electrons-in-atoms",
+        "pauli’s-exclusion-principle"
+      ]
+    },
+    {
+      "file": "chemistry-electron-config-2.md",
+      "subject": "Chemistry",
+      "topic": "electronic-configuration",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Writing electron configurations: Aufbau, Pauli and Hund",
+      "est_minutes": 6,
+      "sort_order": 2
+    },
+    {
+      "file": "chemistry-periodic-table-1.md",
+      "subject": "Chemistry",
+      "topic": "the-periodic-table-and-periodicity",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "The periodic table: development, groups, periods and blocks",
+      "est_minutes": 7,
+      "sort_order": 1,
+      "retire": [
+        "the-modern-periodic-law"
+      ]
+    },
+    {
+      "file": "chemistry-periodic-table-2.md",
+      "subject": "Chemistry",
+      "topic": "the-periodic-table-and-periodicity",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Periodic trends: size, ionisation energy and electronegativity",
+      "est_minutes": 7,
+      "sort_order": 2
+    },
+    {
+      "file": "chemistry-bonding-1.md",
+      "subject": "Chemistry",
+      "topic": "chemical-bonding",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Ionic, covalent and dative bonding",
+      "est_minutes": 7,
+      "sort_order": 1,
+      "retire": [
+        "chemical-bonding",
+        "metallic-bonding",
+        "molecular-geometry-and-hybridization",
+        "sigma-and-pi-covalent-bonds",
+        "types-of-chemical-bonds"
+      ]
+    },
+    {
+      "file": "chemistry-bonding-2.md",
+      "subject": "Chemistry",
+      "topic": "chemical-bonding",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Metallic bonding, intermolecular forces and shapes of molecules",
+      "est_minutes": 8,
       "sort_order": 2
     },
     {

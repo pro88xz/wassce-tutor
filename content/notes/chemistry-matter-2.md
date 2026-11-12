@@ -57,7 +57,7 @@ Key points of the set-up:
 
 *Figure 3. Paper chromatography and Rf values. WASSCE Tutor diagram.*
 
-$$R_f = \dfrac{\text{distance moved by the spot}}{\text{distance moved by the solvent front}}$$
+$$R_f = \dfrac{\text{distance moved by spot}}{\text{distance moved by solvent}}$$
 
 - The base line is drawn in **pencil**, because ink would itself separate.
 - The base line must be **above** the solvent level, or the spots dissolve into the solvent.
