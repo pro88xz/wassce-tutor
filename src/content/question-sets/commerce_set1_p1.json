@@ -1,0 +1,2520 @@
+{
+ "name": "commerce_set1_p1",
+ "label": "Commerce: set 1 (commerce, production, business units and home trade)",
+ "subject_slug": "commerce",
+ "papers": [
+  {
+   "id": "7dc2e54d-a5fc-596b-b62c-f285fe219c21",
+   "topic": "Nature and Scope of Commerce",
+   "title": "Nature and Scope of Commerce: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on nature and scope of commerce, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 100,
+   "questions": [
+    {
+     "id": "54bdb109-e4a5-5f8e-8adc-bc17e5aa419b",
+     "key": "com-sc-01",
+     "stem": "Commerce is best defined as",
+     "image_url": null,
+     "explanation": "Commerce covers trade and the aids to trade that move goods and services from producers to consumers.\n\n**Why the other options are wrong**\n\n- the extraction of raw materials from the earth: That is primary (extractive) production.\n- the manufacture of finished goods in factories: That is secondary production (manufacturing).\n- the provision of personal services such as teaching: That is direct services, not commerce.",
+     "position": 1,
+     "options": [
+      {
+       "id": "74b69823-c512-5a6a-b960-88fa41db9a72",
+       "label": "A",
+       "content": "the extraction of raw materials from the earth",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f27e863f-6091-5d3d-9ce0-c7fb787306d7",
+       "label": "B",
+       "content": "the manufacture of finished goods in factories",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "90a46c7e-fbce-5453-a69c-3a535a7738fc",
+       "label": "C",
+       "content": "the provision of personal services such as teaching",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f8414914-a280-5bef-ad55-88741ac24312",
+       "label": "D",
+       "content": "all activities involved in the distribution and exchange of goods and services",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c5db2619-8ee3-5800-ad31-64a81b5a75d8",
+     "key": "com-sc-02",
+     "stem": "The two main branches of commerce are",
+     "image_url": null,
+     "explanation": "Commerce = trade (home and foreign) + aids to trade (transport, communication, banking, insurance, warehousing, advertising).\n\n**Why the other options are wrong**\n\n- industry and direct services: These are other branches of production, not of commerce.\n- home trade and foreign trade: These are the two branches of trade, which is only one part of commerce.\n- retail trade and wholesale trade: These are the two branches of home trade.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c0bdc178-f832-51c2-9534-4c2583055864",
+       "label": "A",
+       "content": "industry and direct services",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b99f7ca6-a16c-5076-bac1-d5ac733fa179",
+       "label": "B",
+       "content": "home trade and foreign trade",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "35cee15a-d79f-5a7e-a10e-1655166b12fb",
+       "label": "C",
+       "content": "retail trade and wholesale trade",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "408607ea-7f6f-54f2-8d99-9978a5bdf26b",
+       "label": "D",
+       "content": "trade and aids to trade",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "05a6aaf5-a4f4-554d-8238-fc1afbc80572",
+     "key": "com-sc-03",
+     "stem": "Which aid to trade removes the hindrance of ignorance?",
+     "image_url": null,
+     "explanation": "Advertising tells consumers what goods exist, where to buy them and at what price.\n\n**Why the other options are wrong**\n\n- Insurance: Insurance removes the hindrance of risk.\n- Warehousing: Warehousing removes the hindrance of time.\n- Transport: Transport removes the hindrance of place.",
+     "position": 3,
+     "options": [
+      {
+       "id": "3e2e7b31-08cc-5c53-bffc-8537acf7a891",
+       "label": "A",
+       "content": "Insurance",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2f04e51f-5d93-54fc-9ed3-8f5aceb17dc3",
+       "label": "B",
+       "content": "Warehousing",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4851656b-6aee-5475-b0bc-7598fc5794d6",
+       "label": "C",
+       "content": "Transport",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cbee83e6-70f3-547e-be7e-e6413b6933ef",
+       "label": "D",
+       "content": "Advertising",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4001dfa6-021a-5228-a89d-0d1984386661",
+     "key": "com-sc-04",
+     "stem": "A nurse in a government hospital is engaged in",
+     "image_url": null,
+     "explanation": "Direct services are personal services given directly to people: nurses, teachers, police, lawyers.\n\n**Why the other options are wrong**\n\n- commerce: A nurse does not distribute goods or help exchange.\n- industry: A nurse does not extract, manufacture or construct.\n- primary production: Primary production takes resources from nature.",
+     "position": 4,
+     "options": [
+      {
+       "id": "278096b1-ca02-57aa-a209-ca903deed202",
+       "label": "A",
+       "content": "commerce",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0e18cfb6-892e-5b45-8a35-3a8554be4189",
+       "label": "B",
+       "content": "direct services",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e496ccdb-e622-5425-9e98-6b148794c884",
+       "label": "C",
+       "content": "industry",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7cd6ebbe-62e4-5e30-87cb-43170cfce9d3",
+       "label": "D",
+       "content": "primary production",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5520e427-1d24-5dec-8583-3d534efa1340",
+     "key": "com-sc-05",
+     "stem": "Entrepôt trade is part of",
+     "image_url": null,
+     "explanation": "Foreign trade is divided into import, export and entrepôt (re-export) trade.\n\n**Why the other options are wrong**\n\n- home trade: Entrepôt trade crosses national borders twice: imported, then re-exported.\n- retail trade: Retail trade is selling to final consumers at home.\n- aids to trade: Entrepôt trade is trade itself, not an aid to it.",
+     "position": 5,
+     "options": [
+      {
+       "id": "09c6c294-82c0-5573-8cd4-255d6c593361",
+       "label": "A",
+       "content": "home trade",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a7b3d4a9-3ae4-5681-b705-23b50cee29aa",
+       "label": "B",
+       "content": "retail trade",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1789a5aa-b685-5859-9c08-980d0315dc72",
+       "label": "C",
+       "content": "aids to trade",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cdf97986-94b1-54cf-81b2-16bba24b1435",
+       "label": "D",
+       "content": "foreign trade",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "27f193c3-1c93-597f-995c-f0002f0415cc",
+     "key": "com-sc-06",
+     "stem": "Commerce creates place utility mainly through",
+     "image_url": null,
+     "explanation": "Goods are more useful where they are wanted; transport carries them there.\n\n**Why the other options are wrong**\n\n- warehousing: Warehousing creates time utility.\n- insurance: Insurance reduces risk; it does not move goods.\n- banking: Banking provides finance and payment.",
+     "position": 6,
+     "options": [
+      {
+       "id": "0fbc9f80-e515-599b-81e3-0eee8cdddb2a",
+       "label": "A",
+       "content": "transport",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "92be4f3c-db3b-59b6-b7c2-208af95d7097",
+       "label": "B",
+       "content": "warehousing",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "66645f04-3a73-5d8b-8ab5-ba669040acab",
+       "label": "C",
+       "content": "insurance",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "58b33a65-037b-508c-b942-ab5cfa44a373",
+       "label": "D",
+       "content": "banking",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "adbf9798-41f7-5c55-9f7d-363d59cb2088",
+     "key": "com-sc-07",
+     "stem": "Which of these is NOT a problem facing commerce in West Africa?",
+     "image_url": null,
+     "explanation": "West Africa suffers from a shortage of modern storage, not too much of it.\n\n**Why the other options are wrong**\n\n- Poor roads and feeder roads: This is a real problem that raises transport costs.\n- Unreliable electricity: This is a real problem for storage and communication.\n- Lack of capital and credit for small traders: This is a real problem for small traders.",
+     "position": 7,
+     "options": [
+      {
+       "id": "11d5ce7c-9f77-534d-a205-e28d8e80a5ba",
+       "label": "A",
+       "content": "Poor roads and feeder roads",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bae39442-cb0c-5f3f-9c06-4357d3b89a29",
+       "label": "B",
+       "content": "Too many modern warehouses",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "174fd584-ac03-5071-83be-46f51bc4d31b",
+       "label": "C",
+       "content": "Unreliable electricity",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2f0ece34-178c-5754-a87f-f08a98f48d33",
+       "label": "D",
+       "content": "Lack of capital and credit for small traders",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1f548a58-c357-5308-aae9-68123837bbd8",
+     "key": "com-sc-08",
+     "stem": "The difficulty of finding someone who has what you want and wants what you have is called",
+     "image_url": null,
+     "explanation": "Barter needs a double coincidence of wants; money and commerce remove this problem.\n\n**Why the other options are wrong**\n\n- the hindrance of risk: Risk is the possibility of loss, removed by insurance.\n- the division of labour: Division of labour is splitting production into tasks.\n- the hindrance of time: Time is the gap between production and consumption.",
+     "position": 8,
+     "options": [
+      {
+       "id": "ff2899d5-1d32-501e-a9c7-9381fc5a18ef",
+       "label": "A",
+       "content": "the hindrance of risk",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "becee235-911f-5f67-bda2-dd81d75180e8",
+       "label": "B",
+       "content": "the division of labour",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3ce798bb-2a52-5431-be6a-cd7c094b7640",
+       "label": "C",
+       "content": "the double coincidence of wants",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b385460a-2898-52bd-ab85-b0634f6d03d9",
+       "label": "D",
+       "content": "the hindrance of time",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d34dc2d3-793a-51a7-9f99-fdd9ee82b9f2",
+   "topic": "Production and Occupations",
+   "title": "Production and Occupations: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on production and occupations, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 101,
+   "questions": [
+    {
+     "id": "bb1902f3-14ab-5eb4-95fc-80262e2de3fd",
+     "key": "com-po-01",
+     "stem": "Fishing at Tombo is an example of",
+     "image_url": null,
+     "explanation": "Primary (extractive) production takes resources from nature: farming, fishing, mining.\n\n**Why the other options are wrong**\n\n- secondary production: Secondary production turns raw materials into finished goods.\n- tertiary production: Tertiary production is services such as trade and transport.\n- direct services: Direct services are personal services such as nursing.",
+     "position": 1,
+     "options": [
+      {
+       "id": "dff9c579-e7b3-5f9b-9196-b200c5aedbab",
+       "label": "A",
+       "content": "secondary production",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9162ee07-fb60-575d-864f-bfbde3e5504e",
+       "label": "B",
+       "content": "tertiary production",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "739ef49b-5a68-575e-9961-1e82957a94e2",
+       "label": "C",
+       "content": "direct services",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fedcdbfd-c7f5-53d7-b98c-37d3294c65e7",
+       "label": "D",
+       "content": "primary production",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f65e4429-cc23-54ee-b46a-c20b48b9fed2",
+     "key": "com-po-02",
+     "stem": "The reward for land as a factor of production is",
+     "image_url": null,
+     "explanation": "Land earns rent; labour earns wages; capital earns interest; the entrepreneur earns profit.\n\n**Why the other options are wrong**\n\n- wages: Wages are the reward for labour.\n- interest: Interest is the reward for capital.\n- profit: Profit is the reward for the entrepreneur.",
+     "position": 2,
+     "options": [
+      {
+       "id": "e279d236-258b-5eb1-b261-7856ae90c7ca",
+       "label": "A",
+       "content": "rent",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5b679a2e-4b77-5ae7-a0dc-f6c7dfa584cf",
+       "label": "B",
+       "content": "wages",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "40b82c41-8ca3-5a8e-9811-564cc776bc93",
+       "label": "C",
+       "content": "interest",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3db5104f-709c-540d-b5ef-ae6b0cb2676f",
+       "label": "D",
+       "content": "profit",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "519b2561-e5d7-5ec8-bbf4-4e4b6c4c38d1",
+     "key": "com-po-03",
+     "stem": "The factor of production that organises the others and bears the risk is",
+     "image_url": null,
+     "explanation": "The entrepreneur combines land, labour and capital and takes the risk of loss for the reward of profit.\n\n**Why the other options are wrong**\n\n- labour: Labour supplies human effort but does not bear the business risk.\n- capital: Capital is man-made goods used in production.\n- land: Land is natural resources.",
+     "position": 3,
+     "options": [
+      {
+       "id": "afc0391e-e4a3-502f-b546-6516f7690fb5",
+       "label": "A",
+       "content": "labour",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9cdc73c3-60c7-5fc7-9f25-90dee9dd5492",
+       "label": "B",
+       "content": "the entrepreneur",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6ad07c10-1eec-5f40-ac69-a4254328035c",
+       "label": "C",
+       "content": "capital",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "41942543-f6fb-5c84-9df8-11fb4bdfb3ab",
+       "label": "D",
+       "content": "land",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7f8d40a6-ef31-56e8-9bc9-a1af70289bc5",
+     "key": "com-po-04",
+     "stem": "The most important limit to division of labour is",
+     "image_url": null,
+     "explanation": "If few goods can be sold, there is no point splitting production into many specialised tasks.\n\n**Why the other options are wrong**\n\n- the number of machines in the world: This is not a limit on a firm's division of labour.\n- the age of the workers: Age is not a limit on dividing tasks.\n- the colour of the product: The colour of a product has nothing to do with dividing work.",
+     "position": 4,
+     "options": [
+      {
+       "id": "eee95c52-d33e-51d2-8ed3-3e5c11cc80e2",
+       "label": "A",
+       "content": "the number of machines in the world",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6932aa29-551a-59a5-9fd8-3e2481803729",
+       "label": "B",
+       "content": "the age of the workers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d2770145-f228-5e2f-971a-1e40cae3c8af",
+       "label": "C",
+       "content": "the size of the market",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a6ce0f88-8c43-55c8-9ed5-bb78a1712c64",
+       "label": "D",
+       "content": "the colour of the product",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f34fac41-a61d-5e0c-8e16-f88b0234f97b",
+     "key": "com-po-05",
+     "stem": "Which is a disadvantage of division of labour to the worker?",
+     "image_url": null,
+     "explanation": "Repeating one small task all day is boring and gives the worker little pride in the finished good.\n\n**Why the other options are wrong**\n\n- Higher output per worker: That is an advantage.\n- Quicker training: That is an advantage.\n- Use of machinery: That is an advantage.",
+     "position": 5,
+     "options": [
+      {
+       "id": "58c7c6fa-2ff7-5407-a608-96f91c14f4fd",
+       "label": "A",
+       "content": "Higher output per worker",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c7987dce-5ef2-57b7-9057-6f17110d09f9",
+       "label": "B",
+       "content": "Quicker training",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "49046040-2510-5940-812f-955525c9fbdb",
+       "label": "C",
+       "content": "Use of machinery",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0aa6ed67-f4e8-5175-b78a-a32105df7bef",
+       "label": "D",
+       "content": "Monotony from repeating one task",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1a2eabd4-b9a8-5ea3-a91f-a554dfa3713d",
+     "key": "com-po-06",
+     "stem": "A region that concentrates on mining because it has mineral deposits shows",
+     "image_url": null,
+     "explanation": "Kono and Tonkolili concentrate on mining because of their natural resources: specialisation by region.\n\n**Why the other options are wrong**\n\n- specialisation by process: Process specialisation is one worker doing one stage of a product.\n- specialisation by craft: Craft specialisation is one person following one trade.\n- division of labour within a factory: This is about a region, not tasks in a factory.",
+     "position": 6,
+     "options": [
+      {
+       "id": "67707231-14b6-5c95-a204-2a6325af606f",
+       "label": "A",
+       "content": "territorial (regional) specialisation",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2dc2317b-b2f3-5763-b671-b03a8c1e6365",
+       "label": "B",
+       "content": "specialisation by process",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "396580d2-c312-5cb5-8ba5-b37b08ef0fc8",
+       "label": "C",
+       "content": "specialisation by craft",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "361ee56b-9a88-543b-9de5-6584bd0e129b",
+       "label": "D",
+       "content": "division of labour within a factory",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8254624e-ff26-5d1a-bda6-46d96b7fe714",
+     "key": "com-po-07",
+     "stem": "Five tailors each make 4 shirts a day working alone. With division of labour, the same five make 35 shirts a day. By what percentage has output increased?",
+     "image_url": null,
+     "explanation": "Output before $= 5 \\times 4 = 20$. Increase $= \\dfrac{35 - 20}{20} \\times 100\\% = 75\\%$.\n\n**Why the other options are wrong**\n\n- 15 %: That is the increase in shirts, not the percentage increase.\n- 43 %: You divided the increase by the new output; divide by the original output.\n- 175 %: That is the new output as a percentage of the old, not the increase.",
+     "position": 7,
+     "options": [
+      {
+       "id": "871b52e7-a2af-50e5-993b-a632f779741b",
+       "label": "A",
+       "content": "15 %",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d0bedd4d-3dff-565a-ba43-38c74a5dc74d",
+       "label": "B",
+       "content": "43 %",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b6c22111-ffe8-53d9-9a75-b8b578701b42",
+       "label": "C",
+       "content": "75 %",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9a27431d-2f1d-5347-8ba9-85779c072644",
+       "label": "D",
+       "content": "175 %",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "86d0a6f9-5963-5f71-8bab-998b287dd02f",
+     "key": "com-po-08",
+     "stem": "A rice mill employs 8 workers and produces 1,200 bags a week. What is the output per worker?",
+     "image_url": null,
+     "explanation": "Productivity $= \\dfrac{\\text{output}}{\\text{workers}} = \\dfrac{1200}{8} = 150$ bags per worker.\n\n**Why the other options are wrong**\n\n- 9600 bags: You multiplied instead of dividing.\n- 1192 bags: You subtracted the number of workers.\n- 120 bags: You divided by 10 workers instead of 8.",
+     "position": 8,
+     "options": [
+      {
+       "id": "8f00a81b-8ceb-5c18-b5e6-4adb5e427443",
+       "label": "A",
+       "content": "120 bags",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "03f93e3e-9e87-5220-a3d6-d71abba049c1",
+       "label": "B",
+       "content": "150 bags",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "03e327da-6f5b-5e53-9159-f1a0227d4cf5",
+       "label": "C",
+       "content": "1192 bags",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bc0ba0f5-efbb-5f17-a33e-54585eced9cc",
+       "label": "D",
+       "content": "9600 bags",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5dfa556a-588c-5bf6-857c-15cda135f58f",
+   "topic": "Aids to Trade",
+   "title": "Aids to Trade: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on aids to trade, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 102,
+   "questions": [
+    {
+     "id": "0d94cdd1-3dcf-51b4-b9b8-854fcf310fa6",
+     "key": "com-at-01",
+     "stem": "Insurance helps trade by",
+     "image_url": null,
+     "explanation": "Insurance removes the hindrance of risk by pooling small premiums to pay the losses of the few.\n\n**Why the other options are wrong**\n\n- moving goods from producers to consumers: That is transport.\n- storing goods until they are needed: That is warehousing.\n- telling consumers about goods: That is advertising.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8a9a8466-33fe-51b0-a293-9cec9d51f09c",
+       "label": "A",
+       "content": "moving goods from producers to consumers",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c4bdf9a2-a205-5447-816b-9718aa4515fb",
+       "label": "B",
+       "content": "spreading the risk of loss among many people",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f254aa95-ce58-57ff-9b3d-cd6e5a2fd287",
+       "label": "C",
+       "content": "storing goods until they are needed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dea068bb-9d54-5905-b63c-72c66f7d84ef",
+       "label": "D",
+       "content": "telling consumers about goods",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cc8df304-8303-5c1b-a8fb-bdfcf541226d",
+     "key": "com-at-02",
+     "stem": "The hindrance of time in trade is removed by",
+     "image_url": null,
+     "explanation": "Warehouses hold goods from the time they are produced until the time they are wanted.\n\n**Why the other options are wrong**\n\n- transport: Transport removes the hindrance of place.\n- banking: Banking removes the hindrance of finance.\n- communication: Communication removes the hindrance of distance between traders.",
+     "position": 2,
+     "options": [
+      {
+       "id": "606f41c9-423e-574f-affa-545c1258ffe6",
+       "label": "A",
+       "content": "transport",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f9f6c48c-8aa0-5608-bde7-b774b2500d50",
+       "label": "B",
+       "content": "banking",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3d5c7823-cbbd-52ee-aac0-7fdd01dafb97",
+       "label": "C",
+       "content": "warehousing",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e10bfc8c-247b-5ef4-8d9e-8e391ffa7edf",
+       "label": "D",
+       "content": "communication",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b572cf65-86da-5937-995d-75c2d8807d8f",
+     "key": "com-at-03",
+     "stem": "Which aid to trade provides finance and makes payment easy?",
+     "image_url": null,
+     "explanation": "Banks lend to traders and provide cheques, transfers and other means of payment.\n\n**Why the other options are wrong**\n\n- Warehousing: Warehousing stores goods.\n- Advertising: Advertising informs and persuades consumers.\n- Transport: Transport moves goods and people.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ea7db7f4-2b53-5f5b-aac2-675d59324262",
+       "label": "A",
+       "content": "Warehousing",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "432c78d2-8680-572b-b94c-bc9a6ded7adb",
+       "label": "B",
+       "content": "Advertising",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bac89d78-0c49-5b37-9dfc-6f7da03a28bd",
+       "label": "C",
+       "content": "Transport",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1a246afb-ccf2-5fe5-a37a-75974a7bce06",
+       "label": "D",
+       "content": "Banking",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ea5e39ec-4e9c-5e13-9f15-b7c6e74101fe",
+     "key": "com-at-04",
+     "stem": "Mobile money services such as Orange Money and Afrimoney are newer aids to trade mainly because they",
+     "image_url": null,
+     "explanation": "Mobile money lets traders pay and be paid instantly, even in rural areas with no bank.\n\n**Why the other options are wrong**\n\n- store goods in cold rooms: Storage is the work of warehouses.\n- carry goods to rural markets: Carrying goods is transport.\n- insure traders against fire: Fire cover is insurance.",
+     "position": 4,
+     "options": [
+      {
+       "id": "865695c3-e5d8-50be-a4b3-dd13beac05a8",
+       "label": "A",
+       "content": "allow fast payments without a bank account",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "647b4b68-3bef-5255-9c62-d3867d6869bd",
+       "label": "B",
+       "content": "store goods in cold rooms",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "05a04276-cf20-589d-a7fe-a450d422e5ae",
+       "label": "C",
+       "content": "carry goods to rural markets",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "de96251a-54a6-5ffa-90e1-3a4d9d591097",
+       "label": "D",
+       "content": "insure traders against fire",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d80c6a36-4afd-5098-b71d-666d08c2dafc",
+     "key": "com-at-05",
+     "stem": "Containerisation helps trade mainly by",
+     "image_url": null,
+     "explanation": "Goods are sealed in standard boxes from door to door, so they are handled less and are safer.\n\n**Why the other options are wrong**\n\n- increasing the number of times goods are handled: Containers reduce handling.\n- removing the need for ships: Containers still travel by ship, rail and road.\n- making goods more perishable: Containers protect goods.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9a33ede3-6354-55c2-86d9-ee410b6011a3",
+       "label": "A",
+       "content": "increasing the number of times goods are handled",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2a73ed2b-f4f8-5e9d-9a0f-5918545618c3",
+       "label": "B",
+       "content": "reducing damage, theft and handling costs",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a1161718-5fae-5284-be43-f4824a0e6f15",
+       "label": "C",
+       "content": "removing the need for ships",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "97631648-3fd7-5dba-b7b5-cc8ff83ec9f3",
+       "label": "D",
+       "content": "making goods more perishable",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ad50ecea-4675-5458-8b11-e7748ee26567",
+     "key": "com-at-06",
+     "stem": "Which of these is a problem facing aids to trade in Sierra Leone?",
+     "image_url": null,
+     "explanation": "Many traders do not insure, through lack of awareness or distrust, so losses ruin them.\n\n**Why the other options are wrong**\n\n- Too many banks in every village: Rural areas have limited banking.\n- Very cheap advertising for all: Advertising is costly for small businesses.\n- Excess cold storage everywhere: There is a shortage of modern warehouses.",
+     "position": 6,
+     "options": [
+      {
+       "id": "612da509-559b-5957-a69d-b42e14ce75f1",
+       "label": "A",
+       "content": "Too many banks in every village",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9a0fefd6-459c-5ce6-a417-fb4084d941f2",
+       "label": "B",
+       "content": "Very cheap advertising for all",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "27402c4f-c8ab-5c11-9335-4adf87334a39",
+       "label": "C",
+       "content": "Low use of insurance by traders",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "679b22d8-b51c-5ca0-9ef0-dc7b635faf7c",
+       "label": "D",
+       "content": "Excess cold storage everywhere",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c5d1cee8-56f4-5783-a494-651ec4581c12",
+     "key": "com-at-07",
+     "stem": "Trade fairs and exhibitions help trade by",
+     "image_url": null,
+     "explanation": "Producers display and launch products, meet buyers and take orders at trade fairs.\n\n**Why the other options are wrong**\n\n- removing all taxes on trade: Trade fairs do not change taxes.\n- replacing banks: Trade fairs do not provide banking.\n- storing perishable goods: Storage is the work of warehouses.",
+     "position": 7,
+     "options": [
+      {
+       "id": "196faa07-3773-5498-af7f-e49bef6782c5",
+       "label": "A",
+       "content": "removing all taxes on trade",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "016c36ef-fa9e-51d4-a148-4589fa9d235c",
+       "label": "B",
+       "content": "replacing banks",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "569fb478-87e4-5a89-a142-5c906ccefd37",
+       "label": "C",
+       "content": "storing perishable goods",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b67932b3-cfc2-5443-8cfb-c6b3bd86d30f",
+       "label": "D",
+       "content": "letting producers show goods to many buyers at once",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "27f08b5b-ba00-598b-a76c-d9f2582453b0",
+     "key": "com-at-08",
+     "stem": "Aids to trade are also called",
+     "image_url": null,
+     "explanation": "Aids to trade (auxiliary services) assist trade: transport, communication, banking, insurance, warehousing and advertising.\n\n**Why the other options are wrong**\n\n- direct services: Direct services are personal services such as teaching.\n- extractive industries: These are primary industries.\n- constructive industries: These are part of secondary production.",
+     "position": 8,
+     "options": [
+      {
+       "id": "748e3be7-c575-5509-a685-1a7b0d39bb78",
+       "label": "A",
+       "content": "auxiliary services",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "862a6ba0-4400-531a-b4a8-ebb2f913ca41",
+       "label": "B",
+       "content": "direct services",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0a018d41-62ea-5bd7-8a3e-7785f84326e4",
+       "label": "C",
+       "content": "extractive industries",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "93727e0a-f46c-5dff-8a36-43c7ab23e835",
+       "label": "D",
+       "content": "constructive industries",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "31cdfe48-369c-5759-a0aa-2d3f883fc62c",
+   "topic": "Forms of Business Units",
+   "title": "Forms of Business Units: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on forms of business units, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 103,
+   "questions": [
+    {
+     "id": "0ab7fb48-cff9-5499-8a68-4a14a20b3110",
+     "key": "com-bu-01",
+     "stem": "A major disadvantage of the sole proprietorship is",
+     "image_url": null,
+     "explanation": "The sole trader's personal property can be taken to pay the business's debts.\n\n**Why the other options are wrong**\n\n- quick decision-making: That is an advantage.\n- close contact with customers: That is an advantage.\n- the owner keeps all the profit: That is an advantage.",
+     "position": 1,
+     "options": [
+      {
+       "id": "956ca0fa-d5fd-59de-8617-4f6fba012438",
+       "label": "A",
+       "content": "quick decision-making",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ba1f0b4a-f047-5593-907b-d254b4b7b2c2",
+       "label": "B",
+       "content": "unlimited liability",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4d778bcb-06ba-5045-92af-cbabb5849649",
+       "label": "C",
+       "content": "close contact with customers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "74266954-183d-59d8-8549-dcc802464e6d",
+       "label": "D",
+       "content": "the owner keeps all the profit",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fcecc8b4-9941-57aa-b67d-8d56dff73ecc",
+     "key": "com-bu-02",
+     "stem": "A partner who contributes capital but takes no part in management is",
+     "image_url": null,
+     "explanation": "A sleeping partner provides capital and shares profit but does not manage the business.\n\n**Why the other options are wrong**\n\n- an active partner: An active partner takes part in management.\n- a nominal partner: A nominal partner lends only a name and contributes no capital.\n- a minor partner: A minor is admitted only to the benefits of a partnership.",
+     "position": 2,
+     "options": [
+      {
+       "id": "e676f151-650e-52aa-8699-80f0dcebf30c",
+       "label": "A",
+       "content": "an active partner",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "34603c09-b922-50e7-a519-4d5153922a75",
+       "label": "B",
+       "content": "a nominal partner",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6624b62a-25c6-56f1-9eb6-91912ce40406",
+       "label": "C",
+       "content": "a sleeping (dormant) partner",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4190159a-00b4-537d-9508-097ea4b48785",
+       "label": "D",
+       "content": "a minor partner",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "47962a53-2216-5c23-a93e-a779ce9d9b4f",
+     "key": "com-bu-03",
+     "stem": "The document that sets out the rules governing the relationship among partners is the",
+     "image_url": null,
+     "explanation": "The deed covers capital, profit-sharing, duties, admission and dissolution.\n\n**Why the other options are wrong**\n\n- memorandum of association: That is a company's document governing its external relations.\n- certificate of incorporation: That is the company's birth certificate.\n- prospectus: A prospectus invites the public to buy a company's shares.",
+     "position": 3,
+     "options": [
+      {
+       "id": "15be951b-2b6f-5a19-be93-126e8e99f49f",
+       "label": "A",
+       "content": "memorandum of association",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ed95e167-d3ca-56f2-90bb-166d41521d5f",
+       "label": "B",
+       "content": "certificate of incorporation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1e3e0747-0522-5dd0-95cc-3f684d1ba904",
+       "label": "C",
+       "content": "prospectus",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "687da85b-69b3-5c31-97a3-6b6d4df1707a",
+       "label": "D",
+       "content": "partnership deed",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "79dd2216-f48d-5178-9896-f76aeadd90a4",
+     "key": "com-bu-04",
+     "stem": "A public limited company differs from a private limited company because it",
+     "image_url": null,
+     "explanation": "A Plc's shares are offered to the public and are freely transferable, often on the stock exchange.\n\n**Why the other options are wrong**\n\n- is owned by the government: That is a public corporation, not a public company.\n- has unlimited liability: Both kinds of company have limited liability.\n- cannot publish its accounts: A public company must publish audited accounts.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4b97e91a-c906-5d8d-8f20-5d998fb0d308",
+       "label": "A",
+       "content": "can offer its shares to the public",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ea697da3-1db3-5a3a-8a48-1a657b2cb18d",
+       "label": "B",
+       "content": "is owned by the government",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "24a0ac01-7f3d-5f48-a37a-4dba74bf764c",
+       "label": "C",
+       "content": "has unlimited liability",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c1a91100-973e-5d3e-a811-449fd11d529a",
+       "label": "D",
+       "content": "cannot publish its accounts",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3daf60fe-224e-582c-98bb-fc548e9a6cb4",
+     "key": "com-bu-05",
+     "stem": "The document that governs the internal management of a company is the",
+     "image_url": null,
+     "explanation": "The articles cover directors' powers, meetings, voting and transfer of shares.\n\n**Why the other options are wrong**\n\n- memorandum of association: The memorandum governs the company's external relations: name, objects, capital.\n- partnership deed: That is for partnerships.\n- certificate of trading: That allows a public company to start business.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9e89b68c-baf4-58c1-b490-f9f30b702e27",
+       "label": "A",
+       "content": "memorandum of association",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cca78c39-a24a-559c-a518-96a7b5471be0",
+       "label": "B",
+       "content": "articles of association",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d92dd371-8608-53df-a8ac-2e06e3826cd6",
+       "label": "C",
+       "content": "partnership deed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "234546f6-4c39-591d-83a7-679418c171f5",
+       "label": "D",
+       "content": "certificate of trading",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d149bd84-6977-5cfa-9391-69f261989f85",
+     "key": "com-bu-06",
+     "stem": "A cooperative society in which farmers pool and sell their produce together is a",
+     "image_url": null,
+     "explanation": "Producer cooperatives market members' output together to get better prices.\n\n**Why the other options are wrong**\n\n- consumer (retail) cooperative: A consumer cooperative buys goods to sell to its members.\n- credit and thrift cooperative: This collects savings and lends to members.\n- public corporation: A public corporation is owned by the government.",
+     "position": 6,
+     "options": [
+      {
+       "id": "e2ff8870-d137-5a54-ae19-0cb74ab49ba5",
+       "label": "A",
+       "content": "consumer (retail) cooperative",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "41df132a-1010-588a-90cb-038d4e28ceea",
+       "label": "B",
+       "content": "credit and thrift cooperative",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5227a06e-8388-5b27-a2cf-cc8d7a31b797",
+       "label": "C",
+       "content": "producer (marketing) cooperative",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ebd2967e-968a-5235-9a7d-ced3fefacd9f",
+       "label": "D",
+       "content": "public corporation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1a70fa2c-4161-5701-b388-e277bd029029",
+     "key": "com-bu-07",
+     "stem": "When a rice mill takes over the farms that supply its rice, the combination is",
+     "image_url": null,
+     "explanation": "Moving back towards the source of raw materials is backward vertical integration.\n\n**Why the other options are wrong**\n\n- forward vertical integration: Forward integration is towards consumers, such as buying shops.\n- horizontal integration: Horizontal integration joins firms at the same stage.\n- lateral integration: Lateral integration joins firms in unrelated industries.",
+     "position": 7,
+     "options": [
+      {
+       "id": "c6f9d8b0-0280-5a48-b8cf-910a45a4090f",
+       "label": "A",
+       "content": "forward vertical integration",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bcfbc0da-d6b5-54bc-b699-63c16a7d786a",
+       "label": "B",
+       "content": "horizontal integration",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "610ca2ea-1bf5-5444-b6b1-6a134cc1fb1d",
+       "label": "C",
+       "content": "lateral integration",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4331682e-2950-57b7-976f-21d51cbec503",
+       "label": "D",
+       "content": "backward vertical integration",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b2e567d2-ea2e-59e0-a1d0-aad6aa68edb2",
+     "key": "com-bu-08",
+     "stem": "Fatu and Musa contributed NLe 30,000 and NLe 20,000 to a partnership and share profit in the ratio of capital. The profit is NLe 15,000. What is Fatu's share?",
+     "image_url": null,
+     "explanation": "Ratio $= 30000 : 20000 = 3 : 2$. Fatu's share $= \\dfrac{3}{5} \\times 15000 = $ NLe 9,000.\n\n**Why the other options are wrong**\n\n- 7500 NLe: That is an equal share; the deed says share in the ratio of capital.\n- 6000 NLe: That is Musa's share.\n- 10000 NLe: You used a ratio of 2 : 1 instead of 3 : 2.",
+     "position": 8,
+     "options": [
+      {
+       "id": "008b1643-2e16-5acd-8b80-20978a81631b",
+       "label": "A",
+       "content": "6000 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a0a7aa19-4df7-537f-b6b8-22d0e336684c",
+       "label": "B",
+       "content": "7500 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8d9ad517-1d00-59e3-a64d-2216c12c664c",
+       "label": "C",
+       "content": "9000 NLe",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e58f011f-d0df-59df-9ca3-9b5a5e740653",
+       "label": "D",
+       "content": "10000 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "330848e5-6b95-5e1c-86c9-da3e66634a65",
+   "topic": "Sources of Business Capital",
+   "title": "Sources of Business Capital: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on sources of business capital, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 104,
+   "questions": [
+    {
+     "id": "0c02d86a-beb2-5f69-b3a9-704105199592",
+     "key": "com-ca-01",
+     "stem": "A trader's current assets are NLe 11,000 and current liabilities are NLe 5,000. What is the working capital?",
+     "image_url": null,
+     "explanation": "Working capital = current assets − current liabilities = 11,000 − 5,000 = NLe 6,000.\n\n**Why the other options are wrong**\n\n- 16000 NLe: You added current liabilities instead of subtracting them.\n- 5000 NLe: That is the current liabilities.\n- 11000 NLe: That is the current assets alone.",
+     "position": 1,
+     "options": [
+      {
+       "id": "1c306664-8151-5519-9555-b732b24a62e8",
+       "label": "A",
+       "content": "5000 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2c08050c-2052-5240-8c17-02c39aef8758",
+       "label": "B",
+       "content": "6000 NLe",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1facf48e-35c5-5af2-bc3c-4efa3d4b44a7",
+       "label": "C",
+       "content": "11000 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "36f7fc32-c0db-5295-8027-1c6fb4bf2844",
+       "label": "D",
+       "content": "16000 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eb85415b-10f9-5f6e-aaf3-9691d938b9ef",
+     "key": "com-ca-02",
+     "stem": "A trader's opening stock is NLe 4,000, purchases NLe 20,000 and closing stock NLe 6,000. What is the cost of goods sold?",
+     "image_url": null,
+     "explanation": "Cost of goods sold = opening stock + purchases − closing stock = 4,000 + 20,000 − 6,000 = NLe 18,000.\n\n**Why the other options are wrong**\n\n- 30000 NLe: You added the closing stock instead of subtracting it.\n- 22000 NLe: You subtracted the opening stock and added the closing stock.\n- 20000 NLe: That is the purchases only.",
+     "position": 2,
+     "options": [
+      {
+       "id": "35c3011d-e0d6-5cbb-b20d-88c92c5f1d44",
+       "label": "A",
+       "content": "18000 NLe",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4e09ae27-5366-54ad-b98f-8f22a1d57acc",
+       "label": "B",
+       "content": "20000 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "112d22b1-ce9a-5d6f-9063-ba7cfc1049ed",
+       "label": "C",
+       "content": "22000 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "212bf967-d35a-5f14-b684-73c64e07a429",
+       "label": "D",
+       "content": "30000 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5f788e57-19f8-523a-ba7e-7d956801c229",
+     "key": "com-ca-03",
+     "stem": "Cost of goods sold is NLe 18,000, opening stock NLe 4,000 and closing stock NLe 6,000. What is the rate of turnover?",
+     "image_url": null,
+     "explanation": "Average stock $= \\dfrac{4000 + 6000}{2} = 5000$. Rate of turnover $= \\dfrac{18000}{5000} = 3.6$ times.\n\n**Why the other options are wrong**\n\n- 4.5 times: You divided by the opening stock instead of the average stock.\n- 3 times: You divided by the closing stock instead of the average stock.\n- 1.8 times: You divided by the total of the two stocks; use their average.",
+     "position": 3,
+     "options": [
+      {
+       "id": "71f39ebc-d55f-58af-9fb7-5a79c400954e",
+       "label": "A",
+       "content": "1.8 times",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2b4ebc42-b16d-5b6f-91f8-998de8d50085",
+       "label": "B",
+       "content": "3 times",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "46ee1dcf-b4b9-5977-b58e-d1d92c5c54f6",
+       "label": "C",
+       "content": "3.6 times",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "91f08999-b3fd-594d-89ab-f2b40d6bbcb0",
+       "label": "D",
+       "content": "4.5 times",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8a08e4ba-1fee-518f-8679-9ce5e1faf8fa",
+     "key": "com-ca-04",
+     "stem": "Goods cost NLe 100 and are sold for NLe 125. What is the margin?",
+     "image_url": null,
+     "explanation": "Margin $= \\dfrac{\\text{profit}}{\\text{selling price}} \\times 100\\% = \\dfrac{25}{125} \\times 100\\% = 20\\%$.\n\n**Why the other options are wrong**\n\n- 25 %: That is the mark-up (profit on cost price).\n- 125 %: That is the selling price as a percentage of cost.\n- 80 %: That is the cost as a percentage of the selling price.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e5a08f89-efc2-599a-aeaf-85e0aa5ae014",
+       "label": "A",
+       "content": "20 %",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6bdec080-c308-5446-9f6b-5269b52f156c",
+       "label": "B",
+       "content": "25 %",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a716bbdc-5daf-5f07-9c8d-447ce4292f08",
+       "label": "C",
+       "content": "80 %",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d606ac8c-ab03-5eed-84e0-f4bbde2379f8",
+       "label": "D",
+       "content": "125 %",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d6a92e8d-f503-5431-9a67-11d81fc893a2",
+     "key": "com-ca-05",
+     "stem": "Goods cost NLe 800 and the trader adds a mark-up of 25%. What is the selling price?",
+     "image_url": null,
+     "explanation": "Selling price $= 800 + 25\\% \\times 800 = 800 + 200 = $ NLe 1,000.\n\n**Why the other options are wrong**\n\n- 200 NLe: That is the profit, not the selling price.\n- 600 NLe: You subtracted the mark-up instead of adding it.\n- 1066.67 NLe: You treated 25% as the margin on the selling price.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e86a1a48-11d7-5249-8d02-ef30a3cdae4c",
+       "label": "A",
+       "content": "200 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1b6f0289-1665-5219-9f30-886eff831856",
+       "label": "B",
+       "content": "600 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0283f61c-c735-5132-8df5-9f2234fca604",
+       "label": "C",
+       "content": "1000 NLe",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e36c9ff7-6a83-5c47-af21-b31e6405e230",
+       "label": "D",
+       "content": "1066.67 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ffe77540-163d-5d39-b108-72ecb1109ae5",
+     "key": "com-ca-06",
+     "stem": "A company issues 600,000 shares of NLe 1 each and calls up NLe 0.75 per share. Shareholders have paid NLe 420,000. What are the calls in arrear?",
+     "image_url": null,
+     "explanation": "Called-up $= 600000 \\times 0.75 = 450000$. Calls in arrear $= 450000 - 420000 = $ NLe 30,000.\n\n**Why the other options are wrong**\n\n- 450000 NLe: That is the called-up capital.\n- 180000 NLe: You subtracted the paid-up capital from the issued capital.\n- 150000 NLe: That is the uncalled capital.",
+     "position": 6,
+     "options": [
+      {
+       "id": "b0ec8b88-f2ad-5067-ab23-1c93af1242c9",
+       "label": "A",
+       "content": "30000 NLe",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "05737a18-8f7e-56f6-afa4-86ea23f1bfb9",
+       "label": "B",
+       "content": "150000 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "69bbec19-262b-535c-9d7c-8c436f056569",
+       "label": "C",
+       "content": "180000 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dfd8f18f-44ac-54ec-a29b-e6f83cb91e23",
+       "label": "D",
+       "content": "450000 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "de86dd64-9b84-5537-8c80-8f6743a9831b",
+     "key": "com-ca-07",
+     "stem": "Ploughed-back profit is an example of",
+     "image_url": null,
+     "explanation": "Retained profit is profit kept in the business instead of being withdrawn or paid as dividends.\n\n**Why the other options are wrong**\n\n- an external source of capital: It comes from within the business itself.\n- borrowed capital: Retained profit belongs to the owners; it is not borrowed.\n- a long-term bank loan: A bank loan comes from outside the business.",
+     "position": 7,
+     "options": [
+      {
+       "id": "88205442-7605-5822-8417-76fd8183c0eb",
+       "label": "A",
+       "content": "an internal source of capital",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "204b3894-5654-5fe3-bebb-cd38bad00fd7",
+       "label": "B",
+       "content": "an external source of capital",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fda617ba-14cc-5359-bea1-0986e2163bd3",
+       "label": "C",
+       "content": "borrowed capital",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "542d1c0e-7bbf-5719-8885-2acf2082af66",
+       "label": "D",
+       "content": "a long-term bank loan",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0425c475-af8c-52bc-9ff7-9d5288fee55b",
+     "key": "com-ca-08",
+     "stem": "The maximum share capital a company may issue, as stated in its memorandum, is the",
+     "image_url": null,
+     "explanation": "Authorised (nominal or registered) capital is the ceiling on the shares a company may issue.\n\n**Why the other options are wrong**\n\n- issued capital: Issued capital is the part actually offered to shareholders.\n- called-up capital: Called-up capital is the part shareholders have been asked to pay.\n- paid-up capital: Paid-up capital is the amount actually paid.",
+     "position": 8,
+     "options": [
+      {
+       "id": "9df51827-38d9-5b63-9af3-5c8d36381445",
+       "label": "A",
+       "content": "issued capital",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "998b88cf-2095-588b-a464-e99c945e5038",
+       "label": "B",
+       "content": "authorised capital",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6c2c72f1-9b1e-5574-a7dd-fdd38add2fe5",
+       "label": "C",
+       "content": "called-up capital",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9f849181-f01b-57a9-af9d-f1ffac108f4f",
+       "label": "D",
+       "content": "paid-up capital",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6632f8f3-11f6-5291-bbbf-25162e75d6b4",
+   "topic": "Trade Associations",
+   "title": "Trade Associations: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on trade associations, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 105,
+   "questions": [
+    {
+     "id": "c85be1af-840b-5a05-a49d-e8f42db5dc0f",
+     "key": "com-ta-01",
+     "stem": "A chamber of commerce differs from a trade association because it",
+     "image_url": null,
+     "explanation": "A trade association serves one trade; a chamber of commerce serves all kinds of business in a town, region or country.\n\n**Why the other options are wrong**\n\n- represents firms in one trade only: That describes a trade association.\n- is run by the government: Chambers of commerce are voluntary business bodies.\n- represents consumers: That is a consumer association.",
+     "position": 1,
+     "options": [
+      {
+       "id": "b2a99720-ee0b-5a2c-81b7-431406e8e5e2",
+       "label": "A",
+       "content": "represents firms in one trade only",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9e6b6a76-587f-59fd-ba5e-a34ba1e1b946",
+       "label": "B",
+       "content": "is run by the government",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7773b821-0a2f-582e-bb52-11f9594c7670",
+       "label": "C",
+       "content": "represents businesses of all kinds in an area",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "133f3ad3-a394-5248-b636-a0d1224d5d70",
+       "label": "D",
+       "content": "represents consumers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "99e84538-f567-5fd0-a0dd-1b23193e1ea0",
+     "key": "com-ta-02",
+     "stem": "Which document for exporters is commonly issued by a chamber of commerce?",
+     "image_url": null,
+     "explanation": "The certificate of origin confirms where goods were made, so the right duties apply.\n\n**Why the other options are wrong**\n\n- Bill of lading: The bill of lading is issued by the shipping company.\n- Import licence: Import licences are issued by the government.\n- Letter of credit: Letters of credit are issued by banks.",
+     "position": 2,
+     "options": [
+      {
+       "id": "287002e1-7f0e-53ac-92fb-392411546331",
+       "label": "A",
+       "content": "Bill of lading",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1c68f45d-5f52-556a-8242-ff7f69e45907",
+       "label": "B",
+       "content": "Import licence",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5e59fb8e-3ba9-5977-bb3b-8e30df666969",
+       "label": "C",
+       "content": "Letter of credit",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "68ab0df5-b72e-57d8-b729-875af6f8a618",
+       "label": "D",
+       "content": "Certificate of origin",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4903209b-6fbc-5023-9a69-ebef0a3cf76a",
+     "key": "com-ta-03",
+     "stem": "One function of a trade association is to",
+     "image_url": null,
+     "explanation": "Trade associations speak for their members on taxes, levies, licences and new laws.\n\n**Why the other options are wrong**\n\n- issue the national currency: That is the central bank's function.\n- collect customs duties: That is the customs authority's function.\n- register companies: Companies are registered by a government registry.",
+     "position": 3,
+     "options": [
+      {
+       "id": "dab2294d-49dc-5b43-a2cb-fc4c6000bca3",
+       "label": "A",
+       "content": "represent its members in discussions with government",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "91939fbb-c964-5520-a08a-cf242ff1f6ad",
+       "label": "B",
+       "content": "issue the national currency",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b0eda46c-7705-57bf-b488-2e7d1026ee4e",
+       "label": "C",
+       "content": "collect customs duties",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cb702522-3092-53ca-9ee3-f67078c3c56c",
+       "label": "D",
+       "content": "register companies",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5efe8089-798d-51d2-9855-780afb5daeb2",
+     "key": "com-ta-04",
+     "stem": "A consumer association protects consumers mainly by",
+     "image_url": null,
+     "explanation": "Consumer associations educate, test products, expose bad practices and take up complaints.\n\n**Why the other options are wrong**\n\n- fixing prices for traders: Fixing prices is not its role, and price-fixing by traders is unfair.\n- lending money to consumers: It is not a bank.\n- producing goods for its members: It does not produce goods.",
+     "position": 4,
+     "options": [
+      {
+       "id": "40c39a31-8c18-5141-8002-8bfe73484fc1",
+       "label": "A",
+       "content": "fixing prices for traders",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3595e509-c57a-51ef-a197-85db88085ddf",
+       "label": "B",
+       "content": "educating them and taking up their complaints",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "3c7ad076-4c82-5ddc-bd58-94fd5ba2e43b",
+       "label": "C",
+       "content": "lending money to consumers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "90c7191d-9c95-5257-91a8-7c59e5883ff0",
+       "label": "D",
+       "content": "producing goods for its members",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b56c0162-4332-5bec-98ab-4b4e93590c2c",
+     "key": "com-ta-05",
+     "stem": "An organisation formed by employers to negotiate with trade unions is",
+     "image_url": null,
+     "explanation": "Employers' associations bargain with unions over wages and conditions on behalf of employers.\n\n**Why the other options are wrong**\n\n- a consumer association: Consumer associations protect buyers.\n- a cooperative society: A cooperative is a business owned by its members.\n- a chamber of commerce: A chamber of commerce represents business generally, not in wage bargaining.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ac0eabac-c68c-5d06-aa93-c2c2281923b9",
+       "label": "A",
+       "content": "a consumer association",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0539f1be-9851-5660-81df-581b3f9a321e",
+       "label": "B",
+       "content": "a cooperative society",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3ddfe3f3-58f8-5dc9-8bd3-36e9b0e27c42",
+       "label": "C",
+       "content": "an employers' association",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "67b7fec5-51a4-5d13-95e1-8e6057eaa48d",
+       "label": "D",
+       "content": "a chamber of commerce",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a643c5aa-4f7a-5df4-b8b7-85507e0b5897",
+     "key": "com-ta-06",
+     "stem": "Which is a benefit of a trade fair to a manufacturer?",
+     "image_url": null,
+     "explanation": "Trade fairs bring buyers and sellers together to compare products, take orders and promote exports.\n\n**Why the other options are wrong**\n\n- Avoiding all advertising costs: Exhibiting at a fair is itself a cost.\n- Getting free insurance: Trade fairs do not provide insurance.\n- Escaping taxes on sales: Sales at fairs are still taxed.",
+     "position": 6,
+     "options": [
+      {
+       "id": "c28a49e5-f526-51f6-9f3f-d0937111ddbd",
+       "label": "A",
+       "content": "Avoiding all advertising costs",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "70313cf7-fd68-5025-a67e-3e4393dd23b8",
+       "label": "B",
+       "content": "Getting free insurance",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9275a2a3-658f-5813-8ae9-709604f0c6f5",
+       "label": "C",
+       "content": "Escaping taxes on sales",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "21d77682-ec14-5ea9-9942-89720d56d469",
+       "label": "D",
+       "content": "Meeting many buyers and launching new products",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "00b2705b-cacb-5df4-bd12-4ccbfbba9f4d",
+     "key": "com-ta-07",
+     "stem": "A business that pays its taxes, avoids pollution and supports local schools is showing",
+     "image_url": null,
+     "explanation": "Social responsibility means a business considers customers, workers, government, the community and the environment.\n\n**Why the other options are wrong**\n\n- monopoly power: Monopoly is control of a market.\n- vertical integration: That is a kind of business combination.\n- unlimited liability: That is about owners' personal responsibility for debts.",
+     "position": 7,
+     "options": [
+      {
+       "id": "d5bd0bbd-5655-5c39-86d4-fcf6df71d789",
+       "label": "A",
+       "content": "social responsibility",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "deedea73-55ed-5a60-a5da-642448ca1521",
+       "label": "B",
+       "content": "monopoly power",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "87eab7d6-d0d1-5bb1-abeb-f9a5e275fc35",
+       "label": "C",
+       "content": "vertical integration",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8fc48131-0ff4-5b36-83d6-e172a65beea3",
+       "label": "D",
+       "content": "unlimited liability",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f5994ef4-3c24-5027-a153-863201c41fa7",
+     "key": "com-ta-08",
+     "stem": "Which of these is an unethical business practice?",
+     "image_url": null,
+     "explanation": "Short weights cheat customers and are against business ethics and the law.\n\n**Why the other options are wrong**\n\n- Giving customers receipts: Giving receipts is good practice.\n- Paying suppliers on time: This is ethical behaviour.\n- Labelling goods with expiry dates: This protects consumers.",
+     "position": 8,
+     "options": [
+      {
+       "id": "706809ee-9bec-5173-9acd-1868762edd68",
+       "label": "A",
+       "content": "Giving customers receipts",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "05cee6d0-b149-5bf1-9c26-371bfc01afde",
+       "label": "B",
+       "content": "Selling goods with false weights",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e90aa8b7-b566-5638-9537-92a7658420b8",
+       "label": "C",
+       "content": "Paying suppliers on time",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0c6b80a0-b361-52a5-92ec-1bb2ac58f3db",
+       "label": "D",
+       "content": "Labelling goods with expiry dates",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c15e5caf-fb53-534c-85b0-d9988bb65cfe",
+   "topic": "Retail Trade",
+   "title": "Retail Trade: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on retail trade, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 106,
+   "questions": [
+    {
+     "id": "1245867a-973f-5cbb-b62b-3476cce46ac6",
+     "key": "com-rt-01",
+     "stem": "The retailer serves the consumer by",
+     "image_url": null,
+     "explanation": "Retailers sell in small quantities households can afford, such as a cup of rice or a single sachet.\n\n**Why the other options are wrong**\n\n- buying in very large quantities from consumers: The retailer sells to consumers, not buys from them.\n- manufacturing goods: Retailers distribute; they do not manufacture.\n- issuing currency: That is the central bank's role.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8cd26431-8e7c-568d-bb21-603d861d9167",
+       "label": "A",
+       "content": "buying in very large quantities from consumers",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fa300f2f-6d0b-5c72-8650-4063d4338784",
+       "label": "B",
+       "content": "manufacturing goods",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8081f1ae-4f00-59e8-ac56-9e9bc553d175",
+       "label": "C",
+       "content": "breaking bulk into small quantities",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "774eee9a-f581-5cbb-8a95-97fad16416cd",
+       "label": "D",
+       "content": "issuing currency",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "26b1f7d9-693e-5159-87ab-0a990a9c4958",
+     "key": "com-rt-02",
+     "stem": "A trader who carries goods from house to house or village to village is a",
+     "image_url": null,
+     "explanation": "Peddlers and hawkers are itinerant (mobile) retailers.\n\n**Why the other options are wrong**\n\n- wholesaler: A wholesaler sells in bulk to retailers.\n- supermarket: A supermarket is a large fixed self-service shop.\n- chain store: A chain store is one of many branches under one owner.",
+     "position": 2,
+     "options": [
+      {
+       "id": "575221dc-0382-5294-8bde-760f3c650265",
+       "label": "A",
+       "content": "wholesaler",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "503d4e35-9cb0-5f3c-80de-d37980421862",
+       "label": "B",
+       "content": "supermarket",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b01af90d-d314-5bb4-8a99-a7ec493db462",
+       "label": "C",
+       "content": "chain store",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cf802e72-63d7-5083-badb-fe465dc8f481",
+       "label": "D",
+       "content": "peddler",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "74a34bb2-aaab-5c34-aaef-6b5a47f82c5f",
+     "key": "com-rt-03",
+     "stem": "A supermarket is mainly characterised by",
+     "image_url": null,
+     "explanation": "Customers pick goods themselves and pay at a checkout, which cuts staff costs.\n\n**Why the other options are wrong**\n\n- hawking goods in traffic: That describes hawkers.\n- selling only one line of goods: Supermarkets sell a wide range, mainly food and household goods.\n- selling only on credit: Most supermarket sales are for cash or card.",
+     "position": 3,
+     "options": [
+      {
+       "id": "97984ee3-3263-5e47-93d6-a2e8602733d2",
+       "label": "A",
+       "content": "self-service",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "85e73216-9ec4-5a99-a23c-c9bcbadc8193",
+       "label": "B",
+       "content": "hawking goods in traffic",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d7858afa-6234-5d5e-98ca-519d1688b443",
+       "label": "C",
+       "content": "selling only one line of goods",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "32cc21fc-e2ac-55ae-a266-86ac47556123",
+       "label": "D",
+       "content": "selling only on credit",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c11e5eae-d7ca-5464-a1d1-7a8920f2b835",
+     "key": "com-rt-04",
+     "stem": "Chain stores (multiple shops) are",
+     "image_url": null,
+     "explanation": "Chain stores have the same name, layout and prices in many towns, with central buying.\n\n**Why the other options are wrong**\n\n- one large shop divided into departments: That is a department store.\n- shops selling only one supplier's products: Those are tied shops.\n- traders who move from place to place: Those are itinerant traders.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4ab63539-efcf-5c4d-bbb4-a4530d8294e7",
+       "label": "A",
+       "content": "one large shop divided into departments",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "514d9454-f11d-5dc9-92d6-d4b1c5ebe4d0",
+       "label": "B",
+       "content": "many similar branches owned and controlled by one firm",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1e275b79-9c93-5347-9824-cc3794340958",
+       "label": "C",
+       "content": "shops selling only one supplier's products",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "876583ea-9d33-527f-acba-a48fa2ad961e",
+       "label": "D",
+       "content": "traders who move from place to place",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5c6a061f-5c37-50d2-9d0a-06385467f760",
+     "key": "com-rt-05",
+     "stem": "A department store is",
+     "image_url": null,
+     "explanation": "Each department (clothing, furniture, electronics) is managed like a separate shop under one roof.\n\n**Why the other options are wrong**\n\n- a small kiosk selling phone credit: That is a kiosk.\n- a shop that sells only by post: That is mail order.\n- a warehouse where retailers buy for cash: That is a cash-and-carry wholesaler.",
+     "position": 5,
+     "options": [
+      {
+       "id": "780b746d-528d-5b65-90cb-b818e68c2da5",
+       "label": "A",
+       "content": "a small kiosk selling phone credit",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ddb7847f-8dd9-5885-9541-12ff750ec2da",
+       "label": "B",
+       "content": "a shop that sells only by post",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "25bd259b-b388-53aa-8beb-1ce64c9a2c2f",
+       "label": "C",
+       "content": "a large shop divided into sections, each selling a different class of goods",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9933eab5-d502-52ca-89b1-346ec4007719",
+       "label": "D",
+       "content": "a warehouse where retailers buy for cash",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "29f826b6-544a-5b2f-aa6c-02b517df33bb",
+     "key": "com-rt-06",
+     "stem": "Why do small retailers survive despite competition from supermarkets?",
+     "image_url": null,
+     "explanation": "Convenience, credit to trusted customers, long hours and personal service keep small shops in business.\n\n**Why the other options are wrong**\n\n- They always charge lower prices than supermarkets: Small shops usually cannot match supermarket prices.\n- They buy in larger quantities than supermarkets: Supermarkets buy in far larger quantities.\n- They are owned by the government: Most small retailers are sole traders.",
+     "position": 6,
+     "options": [
+      {
+       "id": "d751261f-b5b9-5f68-b1f5-06220444e898",
+       "label": "A",
+       "content": "They always charge lower prices than supermarkets",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e5f706c1-4c09-5bec-ad72-4bbb9a0c34b4",
+       "label": "B",
+       "content": "They buy in larger quantities than supermarkets",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "44644c07-1c25-5e37-8c31-3af7bca3962b",
+       "label": "C",
+       "content": "They are owned by the government",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d7f8d967-2ad4-5670-b054-fc75f4884577",
+       "label": "D",
+       "content": "They are close to customers and give credit and personal service",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "840c9f58-2593-5e8e-8f19-5cf6e9f664b1",
+     "key": "com-rt-07",
+     "stem": "Which is a modern trend in retailing?",
+     "image_url": null,
+     "explanation": "Electronic payment, online selling, barcodes and self-service are modern retail trends.\n\n**Why the other options are wrong**\n\n- Barter of goods for goods: Barter is the oldest form of trade.\n- Selling only on market days: This is a traditional pattern.\n- Refusing to package goods: Modern retailing relies on branding and packaging.",
+     "position": 7,
+     "options": [
+      {
+       "id": "552332fd-601e-529d-a274-d3cb34fa9552",
+       "label": "A",
+       "content": "Payment by mobile money and POS terminals",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "48309fde-0e97-5dbe-b3e2-d976e9e89455",
+       "label": "B",
+       "content": "Barter of goods for goods",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "87534e25-bc08-5782-822c-6753f6a83b37",
+       "label": "C",
+       "content": "Selling only on market days",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "da11055c-c4fb-53b1-a4e0-4e692a012473",
+       "label": "D",
+       "content": "Refusing to package goods",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e7c13feb-996b-5e61-8100-6f648c7ce121",
+     "key": "com-rt-08",
+     "stem": "A shopkeeper buys a carton of 24 tins of tomato paste for NLe 192 and sells each tin for NLe 10. What is the profit per tin?",
+     "image_url": null,
+     "explanation": "Cost per tin $= 192 \\div 24 = $ NLe 8. Profit per tin $= 10 - 8 = $ NLe 2.\n\n**Why the other options are wrong**\n\n- 48 NLe: That is the profit on the whole carton.\n- 8 NLe: That is the cost of one tin.\n- 25 NLe: That is the mark-up as a percentage, not the profit in leones.",
+     "position": 8,
+     "options": [
+      {
+       "id": "ce99d3b9-4ed7-57e7-b41d-d89a4100bef9",
+       "label": "A",
+       "content": "2 NLe",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "57fd0a96-74b0-5545-8240-89609e5da693",
+       "label": "B",
+       "content": "8 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d6a53304-19aa-58eb-a4d9-aed2b53a4b38",
+       "label": "C",
+       "content": "25 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c17ab4e8-febb-532b-80cf-7be8020ab2d7",
+       "label": "D",
+       "content": "48 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2a9d470b-506d-5810-8c57-919c35822fdc",
+   "topic": "Wholesale Trade",
+   "title": "Wholesale Trade: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on wholesale trade, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 107,
+   "questions": [
+    {
+     "id": "7f7d6b16-2e28-5307-8f8e-8b0e316affa3",
+     "key": "com-wt-01",
+     "stem": "A service the wholesaler gives to the manufacturer is",
+     "image_url": null,
+     "explanation": "Bulk orders let manufacturers plan production, and the wholesaler pays promptly and stores the goods.\n\n**Why the other options are wrong**\n\n- breaking bulk for consumers: Breaking bulk for consumers is the retailer's job.\n- selling in single units to households: That is retailing.\n- granting credit to final consumers: Wholesalers grant credit to retailers.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f647c75b-ea20-516f-8055-071cf8d96bd0",
+       "label": "A",
+       "content": "breaking bulk for consumers",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1e2daaa2-9e81-51ec-9004-d7a64ca64527",
+       "label": "B",
+       "content": "buying in bulk, so the manufacturer can produce on a large scale",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6a2aea4c-4457-56e6-85fe-b89611ed0f20",
+       "label": "C",
+       "content": "selling in single units to households",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "83bcfc0c-1984-54b6-9117-ad07e3256221",
+       "label": "D",
+       "content": "granting credit to final consumers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "825629f2-493f-58ca-8944-ef327b03733e",
+     "key": "com-wt-02",
+     "stem": "A wholesaler where retailers select goods, pay cash and transport them away themselves is a",
+     "image_url": null,
+     "explanation": "Cash-and-carry gives no credit and no delivery, so it can charge lower prices.\n\n**Why the other options are wrong**\n\n- specialist wholesaler: A specialist wholesaler deals in one line of goods.\n- general wholesaler: A general wholesaler stocks a wide range and may deliver.\n- del credere agent: That is an agent who guarantees payment.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c0afd337-da42-5092-a97b-c8d74a0c8743",
+       "label": "A",
+       "content": "specialist wholesaler",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2b297087-caea-5143-96cc-2883db2a57a8",
+       "label": "B",
+       "content": "general wholesaler",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ef66cc9e-ef6d-51e4-aa38-3e230f4bba2b",
+       "label": "C",
+       "content": "cash-and-carry wholesaler",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2371f362-2555-52de-a8ac-c2bdf1a918f6",
+       "label": "D",
+       "content": "del credere agent",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "85106d51-1305-5b01-b65d-4b635b807915",
+     "key": "com-wt-03",
+     "stem": "An agent who brings buyers and sellers together but does NOT take possession of the goods is a",
+     "image_url": null,
+     "explanation": "Brokers arrange contracts for brokerage (commission) without handling the goods.\n\n**Why the other options are wrong**\n\n- factor: A factor takes possession of the goods and sells in his own name.\n- del credere agent: A del credere agent guarantees that buyers will pay.\n- auctioneer: An auctioneer sells goods publicly to the highest bidder.",
+     "position": 3,
+     "options": [
+      {
+       "id": "53916e7f-0e31-54f4-bddc-54ef6d50da63",
+       "label": "A",
+       "content": "factor",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "26e2c03b-de49-5280-865f-55187d9af6d5",
+       "label": "B",
+       "content": "del credere agent",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2ecf3f6a-ac8a-5ae0-84f0-c75bcf814492",
+       "label": "C",
+       "content": "auctioneer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f12a2617-eea1-55a6-9c9f-45282c353abd",
+       "label": "D",
+       "content": "broker",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9e818ba8-dec5-5aac-a6ab-274eacbd49b7",
+     "key": "com-wt-04",
+     "stem": "An agent who sells on credit for a principal and guarantees that buyers will pay is a",
+     "image_url": null,
+     "explanation": "For bearing the risk of bad debts, the del credere agent earns an extra (del credere) commission.\n\n**Why the other options are wrong**\n\n- broker: A broker does not guarantee payment.\n- sole agent: A sole agent has the exclusive right to sell in an area.\n- commission agent: A commission agent buys or sells for commission without a guarantee.",
+     "position": 4,
+     "options": [
+      {
+       "id": "6a178f6b-961b-5781-931f-db707aa70ccd",
+       "label": "A",
+       "content": "del credere agent",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8b94d687-2fe8-55f4-9092-a9b42c6cc5b4",
+       "label": "B",
+       "content": "broker",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "552fde52-8abf-52e6-8f6f-0ad6e984bd98",
+       "label": "C",
+       "content": "sole agent",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7b22a404-8438-5c3e-9f9a-7921d7a9a73b",
+       "label": "D",
+       "content": "commission agent",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5b2d09bd-99b4-556d-953a-e00eef1df24e",
+     "key": "com-wt-05",
+     "stem": "The wholesaler is likely to be eliminated when",
+     "image_url": null,
+     "explanation": "Large retailers can buy in bulk directly, so they bypass the wholesaler.\n\n**Why the other options are wrong**\n\n- there are many small retailers in rural areas: This is a reason to keep the wholesaler.\n- small retailers need credit: This is a reason to keep the wholesaler.\n- manufacturers cannot store their goods: This makes the wholesaler more useful.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ec57e2ee-9900-5a85-b0ef-6c7223eaf3cd",
+       "label": "A",
+       "content": "there are many small retailers in rural areas",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d30b1e35-10ea-52a5-84ad-5a05d8f94971",
+       "label": "B",
+       "content": "large supermarkets buy directly from manufacturers",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "16fdb439-a99c-55c7-81c8-975f2b63b84c",
+       "label": "C",
+       "content": "small retailers need credit",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f349f8ba-a42b-5fdc-ae39-d30fcff2110e",
+       "label": "D",
+       "content": "manufacturers cannot store their goods",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4498d4a4-8cf7-500e-ac0e-f37c90a10eb9",
+     "key": "com-wt-06",
+     "stem": "When the wholesaler is eliminated, the functions of the wholesaler are",
+     "image_url": null,
+     "explanation": "Eliminating the wholesaler does not eliminate the wholesaler's functions; someone else must do them.\n\n**Why the other options are wrong**\n\n- no longer needed by anyone: Storage, bulk-breaking and financing must still be done.\n- taken over by the central bank: The central bank does not distribute goods.\n- performed by consumers' associations: Consumer associations do not distribute goods.",
+     "position": 6,
+     "options": [
+      {
+       "id": "712338ef-fc1a-51b1-902c-c01107f560ba",
+       "label": "A",
+       "content": "no longer needed by anyone",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a70edcce-3c93-5b32-931e-db33b461b4c7",
+       "label": "B",
+       "content": "taken over by the central bank",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ccbf298b-6a43-5ada-9fd8-a78f293d9b14",
+       "label": "C",
+       "content": "taken over by the manufacturer or the retailer",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e9699b2f-ab71-529c-9296-759c1f2fe029",
+       "label": "D",
+       "content": "performed by consumers' associations",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "096b794a-ec93-5398-a446-4184f640590a",
+     "key": "com-wt-07",
+     "stem": "The wholesaler helps to stabilise prices by",
+     "image_url": null,
+     "explanation": "Holding stock evens out supply through the year, so prices do not swing sharply.\n\n**Why the other options are wrong**\n\n- refusing to sell to retailers: This would cause shortages.\n- printing price lists: Price lists do not stabilise prices.\n- selling only for cash: Payment method does not stabilise prices.",
+     "position": 7,
+     "options": [
+      {
+       "id": "2f26bead-07e9-5644-90a5-11c0ffe9deb8",
+       "label": "A",
+       "content": "refusing to sell to retailers",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "85e17ced-910d-5a46-aee3-77f5bf3459ed",
+       "label": "B",
+       "content": "printing price lists",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2d9b465a-36b5-5502-9733-9d4cd74169da",
+       "label": "C",
+       "content": "selling only for cash",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f65f244f-1249-5644-9f84-597ce46139c8",
+       "label": "D",
+       "content": "storing goods in times of plenty and releasing them in times of scarcity",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d221a10c-f67c-5313-8962-4cff0f7f4ff9",
+     "key": "com-wt-08",
+     "stem": "A wholesaler buys 500 cartons for NLe 60,000 and sells them all to retailers at NLe 140 a carton. What is the gross profit?",
+     "image_url": null,
+     "explanation": "Revenue $= 500 \\times 140 = 70000$. Gross profit $= 70000 - 60000 = $ NLe 10,000.\n\n**Why the other options are wrong**\n\n- 70000 NLe: That is the sales revenue, not the profit.\n- 20 NLe: That is the profit per carton.\n- 130000 NLe: You added the cost to the revenue.",
+     "position": 8,
+     "options": [
+      {
+       "id": "2b576288-6f82-5e18-aa5f-ae40229504e1",
+       "label": "A",
+       "content": "20 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e620eb60-b08e-5cea-8170-2d17e0d8731a",
+       "label": "B",
+       "content": "10000 NLe",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e778186e-7bbb-5912-8327-630523bfe90d",
+       "label": "C",
+       "content": "70000 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "842bc462-8b16-5ebe-a42c-18bb9509cdc2",
+       "label": "D",
+       "content": "130000 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "40893f91a214"
+}

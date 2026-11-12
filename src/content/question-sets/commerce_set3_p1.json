@@ -1,0 +1,2206 @@
+{
+ "name": "commerce_set3_p1",
+ "label": "Commerce: set 3 (money, finance, law and modern commerce)",
+ "subject_slug": "commerce",
+ "papers": [
+  {
+   "id": "c7f35992-e108-56f1-85d7-5d4d28f40333",
+   "topic": "Money and Currency",
+   "title": "Money and Currency: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on money and currency, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 140,
+   "questions": [
+    {
+     "id": "6030b263-19ea-5b1b-bb7c-902cf2e995e6",
+     "key": "com-mc-01",
+     "stem": "The main problem of barter that money solves as a medium of exchange is",
+     "image_url": null,
+     "explanation": "Under barter each trader must want exactly what the other has; money ends that search.\n\n**Why the other options are wrong**\n\n- the need for banks: Banks developed after money, not as a problem of barter.\n- the high cost of advertising: Advertising is unrelated to barter.\n- the use of cheques: Cheques are a form of bank money, not a barter problem.",
+     "position": 1,
+     "options": [
+      {
+       "id": "0a6dc827-7946-5d2c-8742-f046624dc4f9",
+       "label": "A",
+       "content": "the need for banks",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "491b8df4-a8ce-5597-83c2-f4e4efb19b6c",
+       "label": "B",
+       "content": "the high cost of advertising",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3e26e5e4-aa97-5248-8c70-78e0b8dc15d0",
+       "label": "C",
+       "content": "the use of cheques",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "23561d9e-d700-5981-b63c-14a8eafac104",
+       "label": "D",
+       "content": "the double coincidence of wants",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "af01a669-5522-586a-9ced-3b2f91df78ec",
+     "key": "com-mc-02",
+     "stem": "When the price of a bag of rice is stated in leones, money is acting as",
+     "image_url": null,
+     "explanation": "Money provides a common unit in which the value of every good is stated as a price.\n\n**Why the other options are wrong**\n\n- a store of value: A store of value means holding money to spend later.\n- a standard of deferred payment: That is about stating future payments in money.\n- a medium of exchange: That is money being used to pay for goods.",
+     "position": 2,
+     "options": [
+      {
+       "id": "b78fec45-a766-54e0-83cf-671489d21fac",
+       "label": "A",
+       "content": "a store of value",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "76ff9804-2a40-59d5-80c9-8011efef7f85",
+       "label": "B",
+       "content": "a measure (unit) of value",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "da08b2ba-87ff-5d61-ac47-512fd85202a1",
+       "label": "C",
+       "content": "a standard of deferred payment",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "27cf4c40-5b2f-51a6-8985-5e3424e17447",
+       "label": "D",
+       "content": "a medium of exchange",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ff97ad6a-0562-5306-b59c-52c07749e341",
+     "key": "com-mc-03",
+     "stem": "The quality of money that makes it difficult to forge is",
+     "image_url": null,
+     "explanation": "Good money is easily recognised and hard to copy.\n\n**Why the other options are wrong**\n\n- divisibility: Divisibility means it can be split into smaller units.\n- portability: Portability means it is easy to carry.\n- durability: Durability means it lasts a long time.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5b66d37c-beef-5df7-a6c0-233952e3d321",
+       "label": "A",
+       "content": "divisibility",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fd10378c-88a6-57b8-b0c6-80541a923304",
+       "label": "B",
+       "content": "portability",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8a81c4d7-221e-5a4e-9919-e3b19fae87be",
+       "label": "C",
+       "content": "durability",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "456f0b12-9a7f-5cbf-a2ad-df1fc8d8456a",
+       "label": "D",
+       "content": "recognisability (cognisability)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "53d777b2-96d5-5090-98e5-058ca9daf458",
+     "key": "com-mc-04",
+     "stem": "Money that must by law be accepted in settlement of debts is",
+     "image_url": null,
+     "explanation": "Notes and coins issued by the Bank of Sierra Leone are legal tender.\n\n**Why the other options are wrong**\n\n- near money: Near money, such as treasury bills, is not a means of payment.\n- commodity money: Commodity money is goods such as cowries or salt.\n- bank money: Bank money is moved by cheque or transfer and may be refused.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c54f7a1c-4dd8-533b-889d-aa800747635f",
+       "label": "A",
+       "content": "near money",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ebb7a6f9-a6e7-52e9-98fe-a18e809c0b99",
+       "label": "B",
+       "content": "legal tender",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "54539982-1065-5e23-a250-423c3eb115bf",
+       "label": "C",
+       "content": "commodity money",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4b62f760-c4bf-5a89-8d2d-3a8b14c6d0c8",
+       "label": "D",
+       "content": "bank money",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "75a86d05-3658-5562-8407-04bff616b953",
+     "key": "com-mc-05",
+     "stem": "After the 2022 redenomination, what is the price in new leones of a bag of rice that cost Le 450,000?",
+     "image_url": null,
+     "explanation": "1,000 old leones = 1 new leone, so 450,000 ÷ 1,000 = NLe 450.\n\n**Why the other options are wrong**\n\n- 450000 NLe: That is the old price; three zeros were removed.\n- 4500 NLe: You divided by 100 instead of 1,000.\n- 45 NLe: You divided by 10,000 instead of 1,000.",
+     "position": 5,
+     "options": [
+      {
+       "id": "5c6de04f-d627-5470-a15f-4e44f45c4364",
+       "label": "A",
+       "content": "45 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9e4bdf51-5171-59bc-bd71-1e17e5fa722f",
+       "label": "B",
+       "content": "450 NLe",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "00336ed9-30b1-54d7-8b37-5bfbe7317e77",
+       "label": "C",
+       "content": "4500 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5530f74e-0264-54d1-9648-0a5bd36c8948",
+       "label": "D",
+       "content": "450000 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fdf1fe61-e2a6-54dc-90d7-8a11051c52d2",
+     "key": "com-mc-06",
+     "stem": "The price index rises from 100 in the base year to 125. What is the value of NLe 1 in base-year terms?",
+     "image_url": null,
+     "explanation": "Value of money $= \\dfrac{100}{125} \\times 1 = $ NLe 0.80: a 20% fall in purchasing power.\n\n**Why the other options are wrong**\n\n- 1.25 NLe: You divided the index by 100; the value of money is 100 ÷ index.\n- 0.75 NLe: You subtracted the 25% rise from 1; that overstates the fall.\n- 0.25 NLe: That is the rise in prices as a fraction, not the value of money.",
+     "position": 6,
+     "options": [
+      {
+       "id": "f81b1c08-da52-5171-833e-41a948623a5d",
+       "label": "A",
+       "content": "0.25 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c136bca4-9e64-5d67-aa5d-b9526f055fd8",
+       "label": "B",
+       "content": "0.75 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "636cf850-8d90-5173-9bd1-1800841eca9b",
+       "label": "C",
+       "content": "0.80 NLe",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f30ed820-502d-58b6-be48-1189a3ac0cbf",
+       "label": "D",
+       "content": "1.25 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "090b779b-898f-5b22-bfef-e67c1d956daa",
+     "key": "com-mc-07",
+     "stem": "During inflation, the group most likely to gain is",
+     "image_url": null,
+     "explanation": "Debtors repay loans with money that buys less than when they borrowed it.\n\n**Why the other options are wrong**\n\n- creditors: Creditors are repaid in money worth less.\n- pensioners on fixed incomes: Fixed incomes buy less as prices rise.\n- savers: Savings lose purchasing power.",
+     "position": 7,
+     "options": [
+      {
+       "id": "5f28e58b-055f-5ee6-b9b7-23e67955ea1d",
+       "label": "A",
+       "content": "creditors",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "664dcfef-958a-59a9-8bef-77f7da64d817",
+       "label": "B",
+       "content": "pensioners on fixed incomes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a3c981eb-23d5-5602-bdeb-5810cd6f5453",
+       "label": "C",
+       "content": "savers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dae3878e-8b50-557c-8d0f-77bee8f57551",
+       "label": "D",
+       "content": "debtors",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fdaa69e2-c8da-5b06-ac10-66cf4c551682",
+     "key": "com-mc-08",
+     "stem": "An importer must pay 4,000 US dollars. The exchange rate is 1 US dollar = NLe 24. How much is this in leones?",
+     "image_url": null,
+     "explanation": "Cost in leones $= 4000 \\times 24 = $ NLe 96,000.\n\n**Why the other options are wrong**\n\n- 166.67 NLe: You divided by the exchange rate instead of multiplying.\n- 4024 NLe: You added the exchange rate.\n- 100000 NLe: You used a rate of NLe 25 to the dollar.",
+     "position": 8,
+     "options": [
+      {
+       "id": "bc570def-b670-5309-b5aa-42237e19d60e",
+       "label": "A",
+       "content": "166.67 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "216d50cd-5710-529d-ab7f-a3364e06e43f",
+       "label": "B",
+       "content": "4024 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5767e438-fe91-5032-ba93-854e33ea2119",
+       "label": "C",
+       "content": "96000 NLe",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a11e1030-9da2-5d91-8e57-d3bbe9d1abd7",
+       "label": "D",
+       "content": "100000 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7c83f855-407e-55ab-bfec-38e6fdf7a382",
+   "topic": "Insurance",
+   "title": "Insurance: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on insurance, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 141,
+   "questions": [
+    {
+     "id": "8f8f0990-2afd-5f67-8f56-e1f5f36b3823",
+     "key": "com-in-01",
+     "stem": "The principle that requires both parties to disclose all material facts is",
+     "image_url": null,
+     "explanation": "Uberrimae fidei: hiding a material fact makes the contract voidable.\n\n**Why the other options are wrong**\n\n- indemnity: Indemnity restores the insured to their former position.\n- subrogation: Subrogation passes the insured's rights to the insurer after a claim.\n- contribution: Contribution makes several insurers share a loss.",
+     "position": 1,
+     "options": [
+      {
+       "id": "ec4035da-8ddc-5ad8-90d6-223557f3d6a9",
+       "label": "A",
+       "content": "indemnity",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b0b315fa-276c-5f30-8bab-6166b89307ca",
+       "label": "B",
+       "content": "utmost good faith",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1ae01aa6-d15c-5c53-b347-dfc74a3442d0",
+       "label": "C",
+       "content": "subrogation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2edb1a54-060b-5288-90f2-aac46da28880",
+       "label": "D",
+       "content": "contribution",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "873f6c8c-bc71-5e95-8662-d9aaed4b5a35",
+     "key": "com-in-02",
+     "stem": "A person can insure a shop only if they would suffer financial loss from its destruction. This is the principle of",
+     "image_url": null,
+     "explanation": "You may insure your own shop, but not your neighbour's.\n\n**Why the other options are wrong**\n\n- proximate cause: Proximate cause concerns the main cause of a loss.\n- utmost good faith: That concerns disclosure of facts.\n- contribution: That concerns sharing a loss among insurers.",
+     "position": 2,
+     "options": [
+      {
+       "id": "b9763913-4199-5ba0-b9b5-026832df6d15",
+       "label": "A",
+       "content": "proximate cause",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "de774316-60fe-5c77-b8fc-abbaa105d4eb",
+       "label": "B",
+       "content": "utmost good faith",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "adbc7823-6fc7-51dc-845a-403ff47699bb",
+       "label": "C",
+       "content": "insurable interest",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "407da6f8-c23a-5581-a17a-3d1190dec613",
+       "label": "D",
+       "content": "contribution",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "56c0ce2c-eef6-527b-9539-12e0d4235eca",
+     "key": "com-in-03",
+     "stem": "After paying a claim for a car damaged in an accident, the insurer sues the driver who caused it. This is",
+     "image_url": null,
+     "explanation": "The insurer takes over the insured's rights against third parties.\n\n**Why the other options are wrong**\n\n- indemnity: Indemnity is the compensation itself.\n- reinsurance: Reinsurance is passing part of a risk to another insurer.\n- double insurance: That is insuring the same property with two insurers.",
+     "position": 3,
+     "options": [
+      {
+       "id": "94961c3a-9ed8-5cee-a166-20f70f41e5ab",
+       "label": "A",
+       "content": "indemnity",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "be3332e8-e251-51db-8f47-329f6a3f8d5d",
+       "label": "B",
+       "content": "reinsurance",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "302b15b0-07c5-5639-bb7e-3971e62b2988",
+       "label": "C",
+       "content": "double insurance",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a2c0fe88-1384-529b-8767-ccc363b4c258",
+       "label": "D",
+       "content": "subrogation",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d11b65e9-f663-5712-930b-765aae4b69a8",
+     "key": "com-in-04",
+     "stem": "Which of these risks is NOT insurable?",
+     "image_url": null,
+     "explanation": "Losses from fashion changes cannot be calculated from past records, so they are borne by the entrepreneur.\n\n**Why the other options are wrong**\n\n- Fire in a warehouse: Fire is insurable.\n- Theft of stock by burglars: Burglary is insurable.\n- Damage to goods at sea: Marine losses are insurable.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d29ff07e-68d6-52d8-acc3-98e984f1ee90",
+       "label": "A",
+       "content": "Loss from a change in fashion",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e1d289a2-b07d-5836-ace7-4a90c7a8e829",
+       "label": "B",
+       "content": "Fire in a warehouse",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9053e2d8-add6-599c-ad4b-0a05e8ce38ca",
+       "label": "C",
+       "content": "Theft of stock by burglars",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ab09473f-8017-5222-a122-59383ef1990a",
+       "label": "D",
+       "content": "Damage to goods at sea",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c7dc19f9-4fce-5a0e-a032-1c60081b3d3b",
+     "key": "com-in-05",
+     "stem": "The type of motor insurance required by law is",
+     "image_url": null,
+     "explanation": "Third-party cover protects other people injured or whose property is damaged by the vehicle.\n\n**Why the other options are wrong**\n\n- comprehensive insurance: Comprehensive cover is optional, though wider.\n- fidelity guarantee: Fidelity guarantee covers dishonest employees.\n- life assurance: Life assurance is not motor insurance.",
+     "position": 5,
+     "options": [
+      {
+       "id": "abc64869-d88e-5e33-8244-85a8cdca1519",
+       "label": "A",
+       "content": "comprehensive insurance",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "003bd410-88a7-57f1-b169-54ba24889b2d",
+       "label": "B",
+       "content": "third-party insurance",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "23733f4d-c74d-5dd4-8005-0c70c42ad164",
+       "label": "C",
+       "content": "fidelity guarantee",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "16449957-56ba-5186-81c2-f29fd6f4e29c",
+       "label": "D",
+       "content": "life assurance",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "10dd70e8-9532-5f76-8fe7-83743e5167cf",
+     "key": "com-in-06",
+     "stem": "Insurance against loss caused by dishonest employees is",
+     "image_url": null,
+     "explanation": "Fidelity guarantee covers theft or fraud by cashiers, storekeepers and other staff.\n\n**Why the other options are wrong**\n\n- burglary insurance: Burglary insurance covers theft by forced entry.\n- public liability insurance: That covers injury to the public on the premises.\n- consequential loss insurance: That covers lost profit after a fire.",
+     "position": 6,
+     "options": [
+      {
+       "id": "fcdae579-7d80-54df-a440-ebaa7ac143ac",
+       "label": "A",
+       "content": "burglary insurance",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1b0bf5f2-c648-5cab-afbd-7f08f54c220d",
+       "label": "B",
+       "content": "public liability insurance",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "17accec2-6abe-5456-8832-6ae2072fe4d8",
+       "label": "C",
+       "content": "fidelity guarantee insurance",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "453e3ee7-0c29-5d25-897d-32441d109532",
+       "label": "D",
+       "content": "consequential loss insurance",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1ca1940f-f57b-5e1a-ac5b-4d095ca1e469",
+     "key": "com-in-07",
+     "stem": "Goods worth NLe 80,000 are insured for NLe 60,000. A fire causes a loss of NLe 20,000. How much does the insurer pay under the average clause?",
+     "image_url": null,
+     "explanation": "Claim $= \\dfrac{60000}{80000} \\times 20000 = $ NLe 15,000.\n\n**Why the other options are wrong**\n\n- 20000 NLe: You paid the full loss; the goods were under-insured.\n- 60000 NLe: That is the sum insured, not the claim.\n- 26666.67 NLe: You turned the fraction upside down (value ÷ sum insured).",
+     "position": 7,
+     "options": [
+      {
+       "id": "6455d0ba-10ed-5595-bf0c-b1b25c6a222c",
+       "label": "A",
+       "content": "15000 NLe",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "f259dd2c-dda7-5d68-9c7c-3ef5746defb1",
+       "label": "B",
+       "content": "20000 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fcc45a76-811a-55b6-8237-143956e4cefc",
+       "label": "C",
+       "content": "26666.67 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0e42bf5c-c2cc-5f6e-8bad-287465914830",
+       "label": "D",
+       "content": "60000 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "be87a0f0-cc03-5661-8ea6-1bd1fefc11f2",
+     "key": "com-in-08",
+     "stem": "A warehouse worth NLe 400,000 is insured against fire at NLe 5 per NLe 1,000. What is the annual premium?",
+     "image_url": null,
+     "explanation": "Premium $= \\dfrac{400000}{1000} \\times 5 = $ NLe 2,000.\n\n**Why the other options are wrong**\n\n- 2000000 NLe: You multiplied the value by 5 without dividing by 1,000.\n- 80000 NLe: You divided by 5 instead of multiplying the number of thousands by 5.\n- 400 NLe: That is the number of thousands, not the premium.",
+     "position": 8,
+     "options": [
+      {
+       "id": "9b37e841-c6bb-5cd2-a933-24a0eb1604bb",
+       "label": "A",
+       "content": "400 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c288a105-5567-5eff-96fb-7a00890b4eab",
+       "label": "B",
+       "content": "2000 NLe",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c034a191-b4fc-5c81-86c2-93771fa47cf0",
+       "label": "C",
+       "content": "80000 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "71b7fc94-129d-5d1c-b3de-89ddb4f9605d",
+       "label": "D",
+       "content": "2000000 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "057bd2b5-d5fc-55bf-95ee-a3c50b6d74aa",
+   "topic": "The Stock Exchange and Capital Market",
+   "title": "The Stock Exchange and Capital Market: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on the stock exchange and capital market, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 142,
+   "questions": [
+    {
+     "id": "e6e99614-4ee5-533e-bafc-6506cfd1b24f",
+     "key": "com-se-01",
+     "stem": "The stock exchange is mainly a market for",
+     "image_url": null,
+     "explanation": "It is a secondary market where investors buy and sell shares, debentures and bonds already issued.\n\n**Why the other options are wrong**\n\n- new bank notes: Notes are issued by the central bank.\n- short-term treasury bills only: Treasury bills belong to the money market.\n- foreign currency: Foreign currency is traded in the foreign exchange market.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e70c3532-df65-5c32-b58c-867e16c9992d",
+       "label": "A",
+       "content": "new bank notes",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4e585e07-0dca-5cf0-ba5b-a32bc17526a0",
+       "label": "B",
+       "content": "short-term treasury bills only",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a6fffbdf-6ea3-570e-ae4d-617633d3000b",
+       "label": "C",
+       "content": "foreign currency",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b9b9daba-ee76-5ba2-943a-e198a1c733a8",
+       "label": "D",
+       "content": "existing securities",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "77d88fba-eead-5d8d-b8a2-3dc0ce0b63be",
+     "key": "com-se-02",
+     "stem": "A speculator who buys shares expecting their prices to rise is a",
+     "image_url": null,
+     "explanation": "Bulls buy now to sell later at a higher price.\n\n**Why the other options are wrong**\n\n- bear: A bear sells, expecting prices to fall.\n- stag: A stag buys new issues to sell quickly.\n- lame duck: A lame duck cannot meet commitments.",
+     "position": 2,
+     "options": [
+      {
+       "id": "17fa3b82-4f4d-5b10-aba2-02d8a9cdd77d",
+       "label": "A",
+       "content": "bull",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "070f1075-d4f9-58c9-ae4c-9c08c2c2b93d",
+       "label": "B",
+       "content": "bear",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a5ef536f-6ddc-5959-8235-c2b247a6e470",
+       "label": "C",
+       "content": "stag",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1422c5b4-62e3-5210-8200-8df3a270e884",
+       "label": "D",
+       "content": "lame duck",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9391408d-fc6f-52bc-b4f9-2a1a43fb1e2c",
+     "key": "com-se-03",
+     "stem": "A person who applies for newly issued shares hoping to sell them at a profit as soon as dealing begins is a",
+     "image_url": null,
+     "explanation": "Stags speculate on new issues in the primary market.\n\n**Why the other options are wrong**\n\n- bull: A bull buys existing shares expecting a general rise.\n- bear: A bear sells expecting prices to fall.\n- jobber: A jobber is a dealer who trades on their own account.",
+     "position": 3,
+     "options": [
+      {
+       "id": "3839ede3-2d6d-52ec-a404-83d72d108f41",
+       "label": "A",
+       "content": "bull",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6622ed40-817b-56fb-a65e-7ea77938cdeb",
+       "label": "B",
+       "content": "stag",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "3c035537-26cc-5c20-8139-a277af02e9ca",
+       "label": "C",
+       "content": "bear",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "321d1130-bb4d-5d21-8a92-a8e9f0bbf36b",
+       "label": "D",
+       "content": "jobber",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f56cca83-127e-5311-9b92-658310d72d49",
+     "key": "com-se-04",
+     "stem": "Debenture holders are",
+     "image_url": null,
+     "explanation": "A debenture is a long-term loan to a company at a fixed rate of interest.\n\n**Why the other options are wrong**\n\n- owners of the company: Shareholders are the owners.\n- directors of the company: Directors manage the company.\n- paid only when there is profit: Debenture interest must be paid even in a loss.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a07a2a5a-149b-54ed-bb0e-0e3633f4695a",
+       "label": "A",
+       "content": "owners of the company",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "be5122b9-a25e-5eae-bbb1-cfc34fa988ca",
+       "label": "B",
+       "content": "directors of the company",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c3956160-dbe2-5019-9ed6-f7c17c6c4259",
+       "label": "C",
+       "content": "creditors of the company",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4ac8a737-efdf-5548-8bd3-17b40d1f1ae4",
+       "label": "D",
+       "content": "paid only when there is profit",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "09d51600-1b67-53ca-b5a0-75ca479f41de",
+     "key": "com-se-05",
+     "stem": "Which shareholders usually have voting rights?",
+     "image_url": null,
+     "explanation": "Ordinary shareholders control the company: one vote per share.\n\n**Why the other options are wrong**\n\n- Preference shareholders: They usually have no voting rights.\n- Debenture holders: Debenture holders are creditors, not shareholders.\n- Treasury bill holders: Treasury bills are government securities.",
+     "position": 5,
+     "options": [
+      {
+       "id": "eddc8724-79e0-5c0c-a262-367972081a4f",
+       "label": "A",
+       "content": "Preference shareholders",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "07c186c4-1004-597d-b360-fa4a3ce0bb3a",
+       "label": "B",
+       "content": "Debenture holders",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e8f6737a-ab01-5b56-90f9-7a3af9d0f511",
+       "label": "C",
+       "content": "Treasury bill holders",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fafe3a7a-91bc-503d-940e-9103bd0b5139",
+       "label": "D",
+       "content": "Ordinary shareholders",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "146785cc-f61d-5090-81aa-1397cbc7e3b7",
+     "key": "com-se-06",
+     "stem": "A company has NLe 30,000 to pay as ordinary dividend on 200,000 shares of NLe 1 each. What is the dividend per share?",
+     "image_url": null,
+     "explanation": "Dividend per share $= 30000 \\div 200000 = $ NLe 0.15 (a 15% dividend on a NLe 1 share).\n\n**Why the other options are wrong**\n\n- 6.67 NLe: You divided the shares by the dividend.\n- 0.30 NLe: You divided by 100,000 shares instead of 200,000.\n- 1.50 NLe: You divided by 20,000 shares instead of 200,000.",
+     "position": 6,
+     "options": [
+      {
+       "id": "a2d05572-1d2b-5682-ba02-6cc872d68728",
+       "label": "A",
+       "content": "0.15 NLe",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "473411fa-473e-5c07-ab71-83bd99e09aa1",
+       "label": "B",
+       "content": "0.30 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2d99a539-222c-513a-a0a6-717c4a8dbe0f",
+       "label": "C",
+       "content": "1.50 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e01dfaf3-c93f-57ed-97ca-5304ebe7639d",
+       "label": "D",
+       "content": "6.67 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2a56d44b-8e5c-512e-8e5b-8551868a0611",
+     "key": "com-se-07",
+     "stem": "A share with a par value of NLe 1 pays a dividend of NLe 0.12 and sells for NLe 2 on the exchange. What is the dividend yield?",
+     "image_url": null,
+     "explanation": "Dividend yield $= \\dfrac{0.12}{2} \\times 100 = 6\\%$.\n\n**Why the other options are wrong**\n\n- 12 %: That is the dividend as a percentage of par value, not of market price.\n- 1666.67 %: You divided the price by the dividend.\n- 24 %: You multiplied the dividend by the price.",
+     "position": 7,
+     "options": [
+      {
+       "id": "f6ec1e5f-198d-5be4-b93d-3e3036ae12ac",
+       "label": "A",
+       "content": "6 %",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4fd27a8c-78ca-5ec8-a2d3-b5f67071aadd",
+       "label": "B",
+       "content": "12 %",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c1276965-1409-521d-99d0-0b247f4efd09",
+       "label": "C",
+       "content": "24 %",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "de485ee9-9032-5f47-8bd6-f19a7c560fbc",
+       "label": "D",
+       "content": "1666.67 %",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4799340b-5ea9-5adb-bbac-24ec84ad206e",
+     "key": "com-se-08",
+     "stem": "An investor buys 2,000 shares at NLe 1.50 each. Brokerage is 1.5% of the cost and other charges are NLe 25. What is the total cost?",
+     "image_url": null,
+     "explanation": "Cost $= 2000 \\times 1.50 = 3000$; brokerage $= 1.5\\% \\times 3000 = 45$; total $= 3000 + 45 + 25 = $ NLe 3,070.\n\n**Why the other options are wrong**\n\n- 3000 NLe: You left out the brokerage and other charges.\n- 3045 NLe: You left out the other charges of NLe 25.\n- 3475 NLe: You charged 15% brokerage instead of 1.5%.",
+     "position": 8,
+     "options": [
+      {
+       "id": "0463f15f-dc47-5db8-b155-584e8065e331",
+       "label": "A",
+       "content": "3000 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4ab694dd-50ab-54ce-9151-2131cba6da82",
+       "label": "B",
+       "content": "3045 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a85b335c-b506-5a36-bfb2-638014c5b4a0",
+       "label": "C",
+       "content": "3070 NLe",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0ee4cfce-c9d8-5f26-978e-9deec3466b5e",
+       "label": "D",
+       "content": "3475 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cdde96b9-8ed5-5d5e-8544-e04c45e80667",
+   "topic": "Legal Aspects of Business",
+   "title": "Legal Aspects of Business: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on legal aspects of business, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 143,
+   "questions": [
+    {
+     "id": "92d2a8c4-4778-54fc-8bce-0c90da8f1371",
+     "key": "com-lg-01",
+     "stem": "Goods displayed in a shop window with price tags are, in law,",
+     "image_url": null,
+     "explanation": "A display invites customers to make offers, which the seller may accept or refuse.\n\n**Why the other options are wrong**\n\n- an offer: The customer makes the offer at the till.\n- an acceptance: Acceptance comes from the seller.\n- a binding contract: No contract exists until the seller accepts the customer's offer.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e7cc65df-21a1-53eb-82ec-c0d5a0e0a617",
+       "label": "A",
+       "content": "an invitation to treat",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5f0421df-0004-5b92-a679-c741a5210c63",
+       "label": "B",
+       "content": "an offer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5f0e6204-77a1-5286-8c3f-360dfc636dc9",
+       "label": "C",
+       "content": "an acceptance",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "51aff12c-dc00-5649-8ddf-f8f823aa24a1",
+       "label": "D",
+       "content": "a binding contract",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e0a1c0f5-d84d-547c-82cc-f396a0e63463",
+     "key": "com-lg-02",
+     "stem": "Something of value given by each party to a contract is called",
+     "image_url": null,
+     "explanation": "Consideration: the price, goods, services or promises exchanged.\n\n**Why the other options are wrong**\n\n- capacity: Capacity is the legal ability to contract.\n- consent: Consent is genuine agreement.\n- legality: Legality means the purpose must be lawful.",
+     "position": 2,
+     "options": [
+      {
+       "id": "4a539869-88a7-5b53-8570-3e40fdf011ee",
+       "label": "A",
+       "content": "capacity",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4a1e4b61-1d34-51ef-9ae4-fedc73169f03",
+       "label": "B",
+       "content": "consideration",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "04c85015-9a38-5e36-bb06-2ba9537f6cf8",
+       "label": "C",
+       "content": "consent",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7ccb9df3-1b26-51ff-9e6a-fd92e094199a",
+       "label": "D",
+       "content": "legality",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4c9b595a-8a22-584a-b181-5a158644fa33",
+     "key": "com-lg-03",
+     "stem": "A contract induced by misrepresentation is",
+     "image_url": null,
+     "explanation": "It is valid until the injured party chooses to cancel (rescind) it.\n\n**Why the other options are wrong**\n\n- void from the start: A void contract has no legal effect at all.\n- illegal: An illegal contract has an unlawful purpose.\n- always valid and enforceable: The injured party may cancel it.",
+     "position": 3,
+     "options": [
+      {
+       "id": "12cf7680-5a21-5278-83ae-1f935c3cd634",
+       "label": "A",
+       "content": "void from the start",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e11877d5-4ae0-525d-94c1-3fd38db5d3bf",
+       "label": "B",
+       "content": "illegal",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e4663515-7490-5b4d-8db2-ba608569a684",
+       "label": "C",
+       "content": "voidable",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "83009054-e2c5-52a4-9814-5078aa40ba7c",
+       "label": "D",
+       "content": "always valid and enforceable",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4190fc78-d6d9-59a6-9bc4-a084fbf30f8e",
+     "key": "com-lg-04",
+     "stem": "A court order to carry out the terms of a contract is",
+     "image_url": null,
+     "explanation": "Used where money is not an adequate remedy, such as the sale of a particular plot of land.\n\n**Why the other options are wrong**\n\n- an injunction: An injunction stops a party from doing something.\n- damages: Damages are money compensation.\n- quantum meruit: This is payment for work already done.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a2c708f0-d39c-54fe-b4a7-1666810136de",
+       "label": "A",
+       "content": "an injunction",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9b1aa734-49b7-5086-8578-c0f8d22bbe9f",
+       "label": "B",
+       "content": "damages",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a9b6b9f0-5b6a-5798-bf5a-033fb8221d62",
+       "label": "C",
+       "content": "quantum meruit",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d98cd8c4-39ce-5b6d-9b5d-c4386def211d",
+       "label": "D",
+       "content": "specific performance",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7eb63b6a-c2d3-5e81-83b0-d78f132cd041",
+     "key": "com-lg-05",
+     "stem": "A contract ends because the goods to be sold were destroyed by flood before delivery. This discharge is by",
+     "image_url": null,
+     "explanation": "An event beyond the parties' control made performance impossible.\n\n**Why the other options are wrong**\n\n- performance: Performance is when both sides do what they promised.\n- breach: Breach is a party failing to perform; nobody is at fault here.\n- agreement: Agreement is when both sides choose to end it.",
+     "position": 5,
+     "options": [
+      {
+       "id": "724fc395-9ac6-54cc-aed9-b40585ebd8cf",
+       "label": "A",
+       "content": "frustration",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6490a50b-f892-5543-b459-778b3babfcdd",
+       "label": "B",
+       "content": "performance",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d9554157-9af7-58b0-b3c4-184fd56e7d21",
+       "label": "C",
+       "content": "breach",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3ae1aba3-45fb-5a25-bef5-d4e38ed1e3f0",
+       "label": "D",
+       "content": "agreement",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "751f6680-2e0c-515d-bfac-b5d759d7ae9f",
+     "key": "com-lg-06",
+     "stem": "When a principal later approves a contract made by an agent without authority, agency is created by",
+     "image_url": null,
+     "explanation": "Ratification gives the agent's act the same effect as if it had been authorised.\n\n**Why the other options are wrong**\n\n- necessity: Agency of necessity arises in an emergency.\n- estoppel: Estoppel arises when the principal leads others to believe someone is their agent.\n- express appointment: Express appointment is made before the agent acts.",
+     "position": 6,
+     "options": [
+      {
+       "id": "bd1110ed-9e26-5d7d-ba8c-4b0516a10764",
+       "label": "A",
+       "content": "necessity",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "da6f8767-df5b-53dd-b45e-f5bd39583fcb",
+       "label": "B",
+       "content": "ratification",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "47d0fd82-063f-5c04-8ac1-9f76c9e62f5b",
+       "label": "C",
+       "content": "estoppel",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cd790eb4-a485-5cc0-bdab-07cd777cc3b6",
+       "label": "D",
+       "content": "express appointment",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "26eee0e3-1820-53cf-8184-589db10eb9c2",
+     "key": "com-lg-07",
+     "stem": "Under hire purchase, ownership of the goods passes to the buyer",
+     "image_url": null,
+     "explanation": "Until then the buyer is a hirer and the seller may repossess on default.\n\n**Why the other options are wrong**\n\n- when the deposit is paid: The buyer gets possession, not ownership, on paying the deposit.\n- when the agreement is signed: That is a credit sale.\n- never: Ownership passes at the final payment.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b74c806c-c30e-52eb-ba06-547fc64862c6",
+       "label": "A",
+       "content": "when the deposit is paid",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "524c814c-3064-5c5e-af8f-cca4e6bc50f5",
+       "label": "B",
+       "content": "when the agreement is signed",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f3aedd9a-1685-56f8-bc16-c2bb873ebaaa",
+       "label": "C",
+       "content": "when the last instalment is paid",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d61d86fb-5a1c-54bf-81af-dca8d2ea167a",
+       "label": "D",
+       "content": "never",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "66cd6d2c-60d0-54de-b6b9-b2cb18403e7e",
+     "key": "com-lg-08",
+     "stem": "A freezer costs NLe 6,000 cash, or a 20% deposit and 12 monthly instalments of NLe 480 on hire purchase. What is the hire purchase charge?",
+     "image_url": null,
+     "explanation": "Deposit $= 1200$; HP price $= 1200 + 12 \\times 480 = 6960$; charge $= 6960 - 6000 = $ NLe 960.\n\n**Why the other options are wrong**\n\n- 6960 NLe: That is the hire purchase price, not the extra charge.\n- 5760 NLe: That is the total of the instalments.\n- 1200 NLe: That is the deposit, not the hire purchase charge.",
+     "position": 8,
+     "options": [
+      {
+       "id": "63f58355-eb65-574e-95ec-f203e63c6752",
+       "label": "A",
+       "content": "960 NLe",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "fbd1c411-6125-5e95-be3d-70650f3244cd",
+       "label": "B",
+       "content": "1200 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cbacec1b-8257-5292-b404-a70db33647da",
+       "label": "C",
+       "content": "5760 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f5a56234-ef9e-5daa-807f-18b0906562fa",
+       "label": "D",
+       "content": "6960 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "0f1ea293-d6f3-5a02-b8c5-7433f1e415dd",
+   "topic": "Consumer Protection",
+   "title": "Consumer Protection: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on consumer protection, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 144,
+   "questions": [
+    {
+     "id": "36e2a531-39ee-5204-b0de-4cef2107b443",
+     "key": "com-cp-01",
+     "stem": "Mixing sand with grain before selling it is an example of",
+     "image_url": null,
+     "explanation": "Adulteration lowers quality by adding cheaper substances.\n\n**Why the other options are wrong**\n\n- hoarding: Hoarding is holding goods back to raise prices.\n- price discrimination: That is charging different prices to different groups.\n- branding: Branding gives a product a name and identity.",
+     "position": 1,
+     "options": [
+      {
+       "id": "ffbcf9e6-ba49-5f58-8d8d-8dd0d094da8b",
+       "label": "A",
+       "content": "hoarding",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "076ce22b-b59b-5d08-b540-7a84754f61fe",
+       "label": "B",
+       "content": "price discrimination",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1aee757e-eafc-50df-a580-9f61cb01ba5c",
+       "label": "C",
+       "content": "branding",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "466bbdd7-396f-5799-9a59-c70f42e0de74",
+       "label": "D",
+       "content": "adulteration",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fc24ba27-2b75-544c-abb5-06910fa4ce08",
+     "key": "com-cp-02",
+     "stem": "The consumer's right to a refund, repair, replacement or compensation for faulty goods is the right to",
+     "image_url": null,
+     "explanation": "Redress means a fair settlement of genuine complaints.\n\n**Why the other options are wrong**\n\n- choose: The right to choose is about access to a variety of goods.\n- be informed: The right to be informed is about accurate information.\n- a healthy environment: That concerns pollution.",
+     "position": 2,
+     "options": [
+      {
+       "id": "e1d323f8-ce53-59b2-8bfa-193e5a6c1704",
+       "label": "A",
+       "content": "redress",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7888f4dc-404f-5e35-9b68-6c82fa965ba7",
+       "label": "B",
+       "content": "choose",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8a13b5fa-d5e3-5043-a533-daf3ece98787",
+       "label": "C",
+       "content": "be informed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a5993a4e-dce5-5a3c-a20d-17ba342d6451",
+       "label": "D",
+       "content": "a healthy environment",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4cfd6e41-cada-5465-af11-09e9fc531fa7",
+     "key": "com-cp-03",
+     "stem": "In Sierra Leone, the body that registers medicines and seizes fake drugs is",
+     "image_url": null,
+     "explanation": "The Pharmacy Board licenses pharmacies, registers drugs and removes fake or expired medicines.\n\n**Why the other options are wrong**\n\n- the Sierra Leone Standards Bureau: The Standards Bureau sets and tests product standards.\n- the National Revenue Authority: The NRA collects taxes.\n- SALPOST: SALPOST provides postal services.",
+     "position": 3,
+     "options": [
+      {
+       "id": "7b1c4c77-6598-5a93-87dd-f068c76a668a",
+       "label": "A",
+       "content": "the Sierra Leone Standards Bureau",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3841f054-5c5f-5995-a5bf-140fe40268c1",
+       "label": "B",
+       "content": "the Pharmacy Board of Sierra Leone",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "92b3e186-75f2-5d82-8399-b490a818b51c",
+       "label": "C",
+       "content": "the National Revenue Authority",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a5897c57-89e8-5cc2-a0c5-cb01a44968a6",
+       "label": "D",
+       "content": "SALPOST",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0c6e663e-ee05-5e68-89a4-3bfb68811d86",
+     "key": "com-cp-04",
+     "stem": "Which is a responsibility of the consumer?",
+     "image_url": null,
+     "explanation": "Receipts are needed to seek redress; checking dates avoids expired goods.\n\n**Why the other options are wrong**\n\n- Fixing the prices of goods in markets: Consumers do not fix prices.\n- Issuing standards for products: That is the Standards Bureau's role.\n- Licensing pharmacies: That is the Pharmacy Board's role.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b4fc6d24-dd16-5cc7-9dae-671e1a56a38c",
+       "label": "A",
+       "content": "Fixing the prices of goods in markets",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f9ca7899-ea1a-5999-9e0e-0c0eda47525d",
+       "label": "B",
+       "content": "Issuing standards for products",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cffe9a1b-69db-5c21-9e6f-708907e824eb",
+       "label": "C",
+       "content": "Keeping receipts and checking expiry dates",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a9f48344-b4ec-5903-9ad2-cbca83861540",
+       "label": "D",
+       "content": "Licensing pharmacies",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e81af966-c074-5d15-adb7-8e34066b1641",
+     "key": "com-cp-05",
+     "stem": "Consumers need protection mainly because",
+     "image_url": null,
+     "explanation": "One buyer knows less and has less power than a large seller or a monopoly.\n\n**Why the other options are wrong**\n\n- sellers always charge the lowest prices: Some sellers exploit consumers.\n- all goods are tested before sale: Many goods are not tested.\n- advertising is always accurate: Some advertising misleads.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f6f2bc8f-94dc-5991-b5fa-136203699fd4",
+       "label": "A",
+       "content": "sellers always charge the lowest prices",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f4856f2e-11b5-58dd-adca-02292c7d8e8e",
+       "label": "B",
+       "content": "all goods are tested before sale",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cd3c7f20-0e20-55d9-bdd0-fe37616b1721",
+       "label": "C",
+       "content": "advertising is always accurate",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "062925c8-32c7-5647-8126-2d6a794719fc",
+       "label": "D",
+       "content": "they often lack information and bargaining power compared with sellers",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f8eed3ca-8453-56af-9eaf-09aa610d6a37",
+     "key": "com-cp-06",
+     "stem": "Producers protect consumers through self-regulation when they",
+     "image_url": null,
+     "explanation": "Codes of conduct, quality control, guarantees and after-sales service protect buyers and reputations.\n\n**Why the other options are wrong**\n\n- hoard goods to raise prices: That exploits consumers.\n- remove expiry dates from packs: That harms consumers.\n- refuse to accept complaints: That denies redress.",
+     "position": 6,
+     "options": [
+      {
+       "id": "63ec905f-ff2a-5500-b3ba-01ce575ce754",
+       "label": "A",
+       "content": "adopt codes of conduct and give guarantees",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "bc683216-56c1-5894-92dd-37f48b9dc982",
+       "label": "B",
+       "content": "hoard goods to raise prices",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "785f969d-2f92-52cc-ba70-2cba256962d8",
+       "label": "C",
+       "content": "remove expiry dates from packs",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6f54eef6-6b3d-58e9-abc1-889168e35b59",
+       "label": "D",
+       "content": "refuse to accept complaints",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "69b50e1d-55dd-581b-82cd-a56263c137f6",
+     "key": "com-cp-07",
+     "stem": "A measure sold as 2 kg of rice for NLe 40 actually holds 1.6 kg. What is the true price per kilogram?",
+     "image_url": null,
+     "explanation": "True price $= 40 \\div 1.6 = $ NLe 25 per kg, not NLe 20: a hidden 25% price rise.\n\n**Why the other options are wrong**\n\n- 20 NLe: That is the price per kilogram the consumer believes they pay.\n- 64 NLe: You multiplied the price by the true weight.\n- 5 NLe: That is the overcharge per kilogram, not the true price.",
+     "position": 7,
+     "options": [
+      {
+       "id": "3137c102-3b95-5edd-99ce-fee200e4ac0c",
+       "label": "A",
+       "content": "5 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fdf09204-6550-5bdf-bf96-41a0ddf387cc",
+       "label": "B",
+       "content": "20 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e77c91a7-117f-5f3c-9cce-d7625b6f1ac1",
+       "label": "C",
+       "content": "25 NLe",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a8afc1bd-60ce-5da7-989a-0f1f244591fc",
+       "label": "D",
+       "content": "64 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d3c094cd-1489-5d48-a62d-ce7672916d76",
+     "key": "com-cp-08",
+     "stem": "A function of a consumer association is to",
+     "image_url": null,
+     "explanation": "They also test products, expose bad practice and press government for better laws.\n\n**Why the other options are wrong**\n\n- manufacture goods for members: Consumer associations do not produce goods.\n- collect import duties: That is customs.\n- issue the national currency: That is the central bank.",
+     "position": 8,
+     "options": [
+      {
+       "id": "e8f40d88-4ab2-5d00-bc6e-f460318ee579",
+       "label": "A",
+       "content": "manufacture goods for members",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3217dd15-4d64-50c2-b884-3a3f87ea333b",
+       "label": "B",
+       "content": "educate consumers and take up their complaints",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "64bece80-ea9f-56d4-8154-56271a834785",
+       "label": "C",
+       "content": "collect import duties",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b3e322df-0c9c-5818-ab5f-e448be17f2b1",
+       "label": "D",
+       "content": "issue the national currency",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f7e8b20d-23f6-56a1-aa42-47df6231c53b",
+   "topic": "Government Policies and Business",
+   "title": "Government Policies and Business: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on government policies and business, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 145,
+   "questions": [
+    {
+     "id": "6b0bfd9a-0f30-57c9-8fb8-9c68e3a2119f",
+     "key": "com-gp-01",
+     "stem": "The transfer of a government-owned enterprise to private owners is",
+     "image_url": null,
+     "explanation": "In Sierra Leone it is managed by the National Commission for Privatisation, set up in 2002.\n\n**Why the other options are wrong**\n\n- nationalisation: Nationalisation is the opposite: private to government.\n- commercialisation: Commercialisation keeps the enterprise in government ownership.\n- indigenisation: Indigenisation transfers ownership from foreigners to citizens.",
+     "position": 1,
+     "options": [
+      {
+       "id": "17a59791-581a-56cd-ab6e-0a2f9ba19cfc",
+       "label": "A",
+       "content": "nationalisation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d46e7380-1dc0-539b-bcaa-e8e9ffa26b6e",
+       "label": "B",
+       "content": "commercialisation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7d416423-4f68-57f0-8be4-ff8c0ad75e81",
+       "label": "C",
+       "content": "privatisation",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fa22d2a2-1a96-501c-ac01-dadc91424155",
+       "label": "D",
+       "content": "indigenisation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1cff90ff-d257-5894-9f25-629694cad0ff",
+     "key": "com-gp-02",
+     "stem": "A government enterprise told to cover its costs and make a profit without subsidy, while remaining state-owned, has been",
+     "image_url": null,
+     "explanation": "Commercialisation changes how the enterprise is run, not who owns it.\n\n**Why the other options are wrong**\n\n- privatised: Privatisation transfers ownership to private owners.\n- nationalised: Nationalisation brings a private firm into state ownership.\n- indigenised: Indigenisation concerns foreign and citizen ownership.",
+     "position": 2,
+     "options": [
+      {
+       "id": "9aed0b96-8574-59b6-b396-51f5022e5fc3",
+       "label": "A",
+       "content": "privatised",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "46b3f2b6-7974-5bd1-98b1-a6f615508539",
+       "label": "B",
+       "content": "nationalised",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c55faa34-ada1-5e0a-a13f-7b3c8bb93fab",
+       "label": "C",
+       "content": "indigenised",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fec2486e-1f57-5253-b5db-ef19a5ff5d38",
+       "label": "D",
+       "content": "commercialised",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ee787ee1-5466-57ae-84c0-c2340ac36a49",
+     "key": "com-gp-03",
+     "stem": "A policy to transfer the ownership and control of businesses from foreigners to citizens is",
+     "image_url": null,
+     "explanation": "Nigeria's Indigenisation Decrees of the 1970s are the best-known West African example.\n\n**Why the other options are wrong**\n\n- privatisation: Privatisation moves state firms to private owners of any nationality.\n- deregulation: Deregulation removes rules that limit competition.\n- nationalisation: Nationalisation moves ownership to the state.",
+     "position": 3,
+     "options": [
+      {
+       "id": "9db6924b-ba95-588f-9e95-1f6ea8d5d11a",
+       "label": "A",
+       "content": "indigenisation",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5abf8286-5b4b-5115-a9ca-b0b84862706d",
+       "label": "B",
+       "content": "privatisation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9dc5590a-54f6-5926-9020-4edf830ee589",
+       "label": "C",
+       "content": "deregulation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dd480e41-2b53-5e32-b14b-6123524abb5c",
+       "label": "D",
+       "content": "nationalisation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8ce7ecc3-8009-5412-b561-9bc584432194",
+     "key": "com-gp-04",
+     "stem": "A main reason for nationalisation is to",
+     "image_url": null,
+     "explanation": "Strategic and essential services are brought under public control.\n\n**Why the other options are wrong**\n\n- reduce government control of the economy: Nationalisation increases government control.\n- raise money by selling state assets: That is a reason for privatisation.\n- encourage foreign ownership: Nationalisation reduces foreign ownership.",
+     "position": 4,
+     "options": [
+      {
+       "id": "3b8343a3-9fdd-54c5-ac77-bab45a506b34",
+       "label": "A",
+       "content": "reduce government control of the economy",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "de5adf8d-66b3-52d1-b56d-11829b5371b8",
+       "label": "B",
+       "content": "control strategic industries such as power and water",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "38872f5a-80cc-5a23-9b17-d0466331e11d",
+       "label": "C",
+       "content": "raise money by selling state assets",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "35d1bd2a-1cdf-5006-af66-171be927dad4",
+       "label": "D",
+       "content": "encourage foreign ownership",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2f0ddb0a-5df9-573d-88bf-f4c34942bd81",
+     "key": "com-gp-05",
+     "stem": "A radio costs NLe 400 before Goods and Services Tax at 15%. What does the consumer pay?",
+     "image_url": null,
+     "explanation": "GST $= 15\\% \\times 400 = 60$. Price $= 400 + 60 = $ NLe 460.\n\n**Why the other options are wrong**\n\n- 60 NLe: That is the tax alone.\n- 340 NLe: You subtracted the tax instead of adding it.\n- 415 NLe: You added NLe 15 instead of 15%.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b4ba2f38-b001-52a9-aa7a-b3f1b036d4ff",
+       "label": "A",
+       "content": "60 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bbdcfac6-136b-5254-a6ca-9b280789f9f4",
+       "label": "B",
+       "content": "340 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6bf47124-ef92-5e32-ab37-fbc1f70c0434",
+       "label": "C",
+       "content": "415 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "76f38db3-c3bf-5815-b3f2-e4aa49c93c35",
+       "label": "D",
+       "content": "460 NLe",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e2ddf45a-71b7-5bd0-b8c6-358a276c9738",
+     "key": "com-gp-06",
+     "stem": "Which government agency in Sierra Leone promotes investment and helps exporters find markets?",
+     "image_url": null,
+     "explanation": "The Sierra Leone Investment and Export Promotion Agency supports investors and exporters.\n\n**Why the other options are wrong**\n\n- NASSIT: NASSIT runs social security.\n- NATCOM: NATCOM regulates telecommunications.\n- SALPOST: SALPOST provides postal services.",
+     "position": 6,
+     "options": [
+      {
+       "id": "256872a6-e250-5324-a12b-13cd3f31a188",
+       "label": "A",
+       "content": "NASSIT",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a5da5788-6780-59f1-9174-17cc5a8ecab9",
+       "label": "B",
+       "content": "NATCOM",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "50df84a4-08df-5eb0-9be5-8dd205e6f552",
+       "label": "C",
+       "content": "SLIEPA",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ce717574-f3e1-5c8c-b491-95daa108cb79",
+       "label": "D",
+       "content": "SALPOST",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5e79447c-034c-5b19-ab61-2698e9b19f89",
+     "key": "com-gp-07",
+     "stem": "A rise in interest rates by the central bank is most likely to",
+     "image_url": null,
+     "explanation": "Monetary policy works through the cost of credit.\n\n**Why the other options are wrong**\n\n- make loans cheaper: Higher rates make borrowing more expensive.\n- increase government tax revenue directly: Interest rates are monetary policy, not tax.\n- remove all import duties: Interest rates do not affect duties.",
+     "position": 7,
+     "options": [
+      {
+       "id": "336bf097-72f6-5adb-89f2-cd3bf1c0d133",
+       "label": "A",
+       "content": "make loans cheaper",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c62521d6-249b-597f-af2d-68b08d8d960c",
+       "label": "B",
+       "content": "increase government tax revenue directly",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e4e0e968-c189-52d4-9213-6803486042b2",
+       "label": "C",
+       "content": "remove all import duties",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "94499a33-b6eb-5c09-9091-889eb878c0af",
+       "label": "D",
+       "content": "make loans dearer and reduce business investment",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3a48e8ee-0208-5799-8705-e5f3cb07929e",
+     "key": "com-gp-08",
+     "stem": "A feature of a public corporation is that it is",
+     "image_url": null,
+     "explanation": "Examples include Guma Valley Water Company and the Sierra Leone Ports and Harbours Authority.\n\n**Why the other options are wrong**\n\n- owned by shareholders who buy its shares on the stock exchange: That describes a public limited company.\n- run by a sole proprietor: A sole proprietor owns a small private business.\n- free from any accountability to Parliament: It is accountable through the minister.",
+     "position": 8,
+     "options": [
+      {
+       "id": "60616b84-5745-590d-b341-b1ddbd9585e6",
+       "label": "A",
+       "content": "owned by the state and set up by an Act of Parliament",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7d1210fe-157c-5ba9-ac98-c6363c27ba98",
+       "label": "B",
+       "content": "owned by shareholders who buy its shares on the stock exchange",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e2763499-f4e8-5f50-b138-7b3e4d6031cd",
+       "label": "C",
+       "content": "run by a sole proprietor",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8b8818bf-7f31-5418-b09b-20d37b47ac61",
+       "label": "D",
+       "content": "free from any accountability to Parliament",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "60dc77fb-c7e3-5254-9bf0-6c1a9077e009",
+   "topic": "E-Commerce and Modern Trends in Commerce",
+   "title": "E-Commerce and Modern Trends in Commerce: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on e-commerce and modern trends in commerce, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 146,
+   "questions": [
+    {
+     "id": "c1889c29-3d03-513c-8f86-c6d0c43eef17",
+     "key": "com-ec-01",
+     "stem": "A wholesaler taking online orders from retailers is an example of",
+     "image_url": null,
+     "explanation": "Both the wholesaler and the retailers are businesses.\n\n**Why the other options are wrong**\n\n- business-to-consumer (B2C) e-commerce: B2C sells to individual final buyers.\n- consumer-to-consumer (C2C) e-commerce: C2C is individuals selling to each other.\n- government-to-citizen (G2C) e-commerce: G2C is government services online.",
+     "position": 1,
+     "options": [
+      {
+       "id": "69dca897-01b8-575a-8fee-6e24d01a8036",
+       "label": "A",
+       "content": "business-to-consumer (B2C) e-commerce",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "893f87f1-ec55-55d1-bfee-937c255cb24a",
+       "label": "B",
+       "content": "business-to-business (B2B) e-commerce",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "fc1259bf-27da-5342-bc35-0b858bdf3b1b",
+       "label": "C",
+       "content": "consumer-to-consumer (C2C) e-commerce",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b0047b8b-242d-58f7-94b8-89d6721f9a6c",
+       "label": "D",
+       "content": "government-to-citizen (G2C) e-commerce",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d17d407f-9a61-57c1-8c45-a86b01914dd4",
+     "key": "com-ec-02",
+     "stem": "Selling used phones to other individuals through a Facebook group is",
+     "image_url": null,
+     "explanation": "Individuals trade with each other through an online platform.\n\n**Why the other options are wrong**\n\n- business-to-business (B2B) e-commerce: No business is involved on either side.\n- business-to-government (B2G) e-commerce: No government is involved.\n- franchising: Franchising is using another firm's brand for a fee.",
+     "position": 2,
+     "options": [
+      {
+       "id": "3b9df3c4-cea8-59df-84ba-ff32c327a5c0",
+       "label": "A",
+       "content": "business-to-business (B2B) e-commerce",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4f47c97b-a8db-5518-bf58-f7ac7d153463",
+       "label": "B",
+       "content": "business-to-government (B2G) e-commerce",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bbf9a0a8-7b59-5520-9c27-a6148cc1b8ec",
+       "label": "C",
+       "content": "consumer-to-consumer (C2C) e-commerce",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ed1bad20-1a23-5a47-997e-402efeea025f",
+       "label": "D",
+       "content": "franchising",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a648504a-434c-5982-93ba-0972f16e209b",
+     "key": "com-ec-03",
+     "stem": "A disadvantage of e-commerce to consumers is that",
+     "image_url": null,
+     "explanation": "Buyers rely on photos and descriptions, and risk fraud or poor quality.\n\n**Why the other options are wrong**\n\n- they can shop at any time: That is an advantage.\n- prices are easy to compare: That is an advantage.\n- goods are delivered to the door: That is an advantage.",
+     "position": 3,
+     "options": [
+      {
+       "id": "4e993f9d-c791-50d9-8b80-922edfe028e4",
+       "label": "A",
+       "content": "they can shop at any time",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bfd8e452-d371-5449-918d-96600a4c2898",
+       "label": "B",
+       "content": "prices are easy to compare",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "40eccd5e-3fe0-57f1-8027-ca338f76a4c6",
+       "label": "C",
+       "content": "goods are delivered to the door",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "058381ae-4825-50f8-b8dd-112782d034e4",
+       "label": "D",
+       "content": "goods cannot be inspected before buying",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0054a3fc-6199-5943-bd8a-7ee28568f336",
+     "key": "com-ec-04",
+     "stem": "An arrangement in which a firm lets another business use its name and methods for a fee and royalties is",
+     "image_url": null,
+     "explanation": "The franchisor supplies the brand and system; the franchisee pays fees and royalties.\n\n**Why the other options are wrong**\n\n- outsourcing: Outsourcing is hiring outside firms for tasks.\n- containerisation: Containerisation is moving goods in standard boxes.\n- agency banking: Agency banking lets shops act for banks.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f9e6aaf4-e77b-55a8-932d-e0ed3c708e16",
+       "label": "A",
+       "content": "franchising",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1c2b9882-bbc5-5255-bbfd-653a71008534",
+       "label": "B",
+       "content": "outsourcing",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "48890994-66da-54b4-afef-f64ccb4a10e7",
+       "label": "C",
+       "content": "containerisation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "aa3c8aea-378f-5898-b833-79f238bd05b1",
+       "label": "D",
+       "content": "agency banking",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "073bf691-d25e-5938-b009-0a0847e31fc2",
+     "key": "com-ec-05",
+     "stem": "A machine in a shop that lets customers pay with a card is a",
+     "image_url": null,
+     "explanation": "POS terminals let shops accept card payments, so they hold less cash.\n\n**Why the other options are wrong**\n\n- automated teller machine (ATM): ATMs are mainly for cash withdrawals.\n- franking machine: Franking machines print postage.\n- vending machine: Vending machines sell goods directly.",
+     "position": 5,
+     "options": [
+      {
+       "id": "91d1f8bb-fac2-513b-a174-dd5c2d738f08",
+       "label": "A",
+       "content": "automated teller machine (ATM)",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "16467e40-4e72-5d69-951b-0fd6ab1ee336",
+       "label": "B",
+       "content": "point-of-sale (POS) terminal",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d544a8e2-d09e-5b88-a1c1-0d040b159766",
+       "label": "C",
+       "content": "franking machine",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c2ee44d8-5a06-541b-a553-adaff1e08d14",
+       "label": "D",
+       "content": "vending machine",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d1725031-c38f-5a89-a9d2-f919cdfa5470",
+     "key": "com-ec-06",
+     "stem": "Someone claiming to be from a mobile network asks for your one-time code (OTP). You should",
+     "image_url": null,
+     "explanation": "Real networks and banks never ask for your PIN or OTP.\n\n**Why the other options are wrong**\n\n- send the code so they can fix your account: Anyone with the OTP can take your money.\n- send half of the code: No part of the code should be shared.\n- reply with your PIN instead: The PIN must never be shared either.",
+     "position": 6,
+     "options": [
+      {
+       "id": "593eae3f-2948-5a28-920a-5cad61620f7e",
+       "label": "A",
+       "content": "send the code so they can fix your account",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4d384137-2507-5ecd-bba1-456bcfe33d70",
+       "label": "B",
+       "content": "send half of the code",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ae5cb5bc-ec38-5b9d-ac0c-e2db49fd33d0",
+       "label": "C",
+       "content": "refuse and report the number",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "443d32ab-dea6-500f-9c64-731408eaeb86",
+       "label": "D",
+       "content": "reply with your PIN instead",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a1943971-193a-5b3e-bfef-b08e6eac35df",
+     "key": "com-ec-07",
+     "stem": "A trader sells 120 dresses a month online at NLe 150 each; each costs NLe 100. She pays NLe 10 delivery per order and NLe 400 for data and adverts. What is her monthly net profit?",
+     "image_url": null,
+     "explanation": "$120 \\times (150 - 100 - 10) - 400 = 4800 - 400 = $ NLe 4,400.\n\n**Why the other options are wrong**\n\n- 6000 NLe: That is the gross profit before delivery and data costs.\n- 5600 NLe: You left out the delivery charges.\n- 4800 NLe: You left out the data and advertising cost.",
+     "position": 7,
+     "options": [
+      {
+       "id": "8fb0323a-3ba0-5367-a0d6-ccf168ca4272",
+       "label": "A",
+       "content": "4400 NLe",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3cdde99f-9cfb-53a2-8230-cfbaf7884074",
+       "label": "B",
+       "content": "4800 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "96b4dc31-1483-557b-a880-d1e0993cbd7f",
+       "label": "C",
+       "content": "5600 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "788ac2ac-4358-5958-b980-ab55817105f5",
+       "label": "D",
+       "content": "6000 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "676dd7af-7e04-588a-9a17-704d459d942b",
+     "key": "com-ec-08",
+     "stem": "Which is a problem of e-commerce in Sierra Leone?",
+     "image_url": null,
+     "explanation": "Without formal addresses, deliveries depend on landmarks and phone calls.\n\n**Why the other options are wrong**\n\n- Too many delivery riders in every village: Delivery services are limited outside towns.\n- Mobile money is not used anywhere: Mobile money is widely used.\n- Network coverage is perfect everywhere: Coverage is poor in many rural areas.",
+     "position": 8,
+     "options": [
+      {
+       "id": "e1ce823c-6574-5a58-9d14-b584d486ac59",
+       "label": "A",
+       "content": "Too many delivery riders in every village",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3296cf5c-d9c9-52a9-9417-0a88e7737d42",
+       "label": "B",
+       "content": "Mobile money is not used anywhere",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9ba5e1d9-c448-552a-993c-f903b3f8a008",
+       "label": "C",
+       "content": "Network coverage is perfect everywhere",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "31cb6d90-d43c-51e1-a70e-f74dfff95a4a",
+       "label": "D",
+       "content": "Lack of street addresses for delivery",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "0720022481b3"
+}

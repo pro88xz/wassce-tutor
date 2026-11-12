@@ -194,6 +194,33 @@ SETS += [
         "sort_from": 160,
         "checked": "mixed",
     },
+    {
+        "module": ROOT / "content/questions/commerce/set1_p1.py",
+        "subject_slug": "commerce",
+        "name": "commerce_set1_p1",
+        "label": "Commerce: set 1 (commerce, production, business units and home trade)",
+        "review": ROOT / "content/questions/commerce/set1_p1.review.md",
+        "sort_from": 100,
+        "checked": "mixed",
+    },
+    {
+        "module": ROOT / "content/questions/commerce/set2_p1.py",
+        "subject_slug": "commerce",
+        "name": "commerce_set2_p1",
+        "label": "Commerce: set 2 (foreign trade, documents and the aids to trade)",
+        "review": ROOT / "content/questions/commerce/set2_p1.review.md",
+        "sort_from": 120,
+        "checked": "mixed",
+    },
+    {
+        "module": ROOT / "content/questions/commerce/set3_p1.py",
+        "subject_slug": "commerce",
+        "name": "commerce_set3_p1",
+        "label": "Commerce: set 3 (money, finance, law and modern commerce)",
+        "review": ROOT / "content/questions/commerce/set3_p1.review.md",
+        "sort_from": 140,
+        "checked": "mixed",
+    },
 ]
 
 OUT = ROOT / "src/content/question-sets"

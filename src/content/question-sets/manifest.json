@@ -297,7 +297,7 @@
   "name": "economics_set4_p1",
   "label": "Economics: set 4 (trade and development)",
   "subject_slug": "economics",
-  "version": "3e192243ca40",
+  "version": "4944e201a9c7",
   "papers": [
    "44953a9f-9434-514e-88ac-cf900bdeecd6",
    "f1133a61-df5a-5f74-ac0f-2e3328075430",
@@ -305,5 +305,54 @@
    "d12aae33-9ce5-5dca-9f72-4931d7e2bfa3"
   ],
   "questions": 32
+ },
+ {
+  "name": "commerce_set1_p1",
+  "label": "Commerce: set 1 (commerce, production, business units and home trade)",
+  "subject_slug": "commerce",
+  "version": "40893f91a214",
+  "papers": [
+   "7dc2e54d-a5fc-596b-b62c-f285fe219c21",
+   "d34dc2d3-793a-51a7-9f99-fdd9ee82b9f2",
+   "5dfa556a-588c-5bf6-857c-15cda135f58f",
+   "31cdfe48-369c-5759-a0aa-2d3f883fc62c",
+   "330848e5-6b95-5e1c-86c9-da3e66634a65",
+   "6632f8f3-11f6-5291-bbbf-25162e75d6b4",
+   "c15e5caf-fb53-534c-85b0-d9988bb65cfe",
+   "2a9d470b-506d-5810-8c57-919c35822fdc"
+  ],
+  "questions": 64
+ },
+ {
+  "name": "commerce_set2_p1",
+  "label": "Commerce: set 2 (foreign trade, documents and the aids to trade)",
+  "subject_slug": "commerce",
+  "version": "7359403daf58",
+  "papers": [
+   "53e618d9-6bb9-5725-a626-bd0ab0e8c16b",
+   "dc39664d-322e-580b-bd6d-7d7000d2f582",
+   "b7530dd8-b5e0-53d1-b970-d650d925090e",
+   "c613d8e4-5d41-5cd9-85ba-ee0b52afab06",
+   "2753a1b1-88aa-548d-b410-2e8d2a6342cf",
+   "4f5759d2-89a2-556d-9866-20f7199f0488",
+   "5e502a5a-9f9d-5d9e-8abd-1889bdf3f6d3"
+  ],
+  "questions": 56
+ },
+ {
+  "name": "commerce_set3_p1",
+  "label": "Commerce: set 3 (money, finance, law and modern commerce)",
+  "subject_slug": "commerce",
+  "version": "0720022481b3",
+  "papers": [
+   "c7f35992-e108-56f1-85d7-5d4d28f40333",
+   "7c83f855-407e-55ab-bfec-38e6fdf7a382",
+   "057bd2b5-d5fc-55bf-95ee-a3c50b6d74aa",
+   "cdde96b9-8ed5-5d5e-8544-e04c45e80667",
+   "0f1ea293-d6f3-5a02-b8c5-7433f1e415dd",
+   "f7e8b20d-23f6-56a1-aa42-47df6231c53b",
+   "60dc77fb-c7e3-5254-9bf0-6c1a9077e009"
+  ],
+  "questions": 56
  }
 ]

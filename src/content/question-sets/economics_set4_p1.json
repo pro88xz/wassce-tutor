@@ -328,36 +328,36 @@
     {
      "id": "5116e663-1e01-5189-97d8-d0d39c29e8c7",
      "key": "eco-bp-01",
-     "stem": "A country exports goods worth US$900 million and imports goods worth US$1,300 million. What is its balance of trade?",
+     "stem": "A country exports goods worth 900 million US dollars and imports goods worth 1,300 million US dollars. What is its balance of trade?",
      "image_url": null,
-     "explanation": "Balance of trade = exports − imports of goods = 900 − 1,300 = −US$400 million (a deficit).\n\n**Why the other options are wrong**\n\n- 400 US$ million: Imports are larger than exports, so the balance is negative (a deficit).\n- 2200 US$ million: You added exports and imports.\n- 1300 US$ million: That is the value of imports.",
+     "explanation": "Balance of trade = exports − imports of goods = 900 − 1,300 = −400 million US dollars (a deficit).\n\n**Why the other options are wrong**\n\n- 400 million US dollars: Imports are larger than exports, so the balance is negative (a deficit).\n- 2200 million US dollars: You added exports and imports.\n- 1300 million US dollars: That is the value of imports.",
      "position": 1,
      "options": [
       {
        "id": "856850f3-7eb6-503e-ae6f-da5bf1535758",
        "label": "A",
-       "content": "-400 US$ million",
+       "content": "-400 million US dollars",
        "is_correct": true,
        "position": 0
       },
       {
        "id": "b0e160a8-2dba-527d-ac4d-98d47c03c3ef",
        "label": "B",
-       "content": "400 US$ million",
+       "content": "400 million US dollars",
        "is_correct": false,
        "position": 1
       },
       {
        "id": "75addda1-88ba-593c-b223-703e12d898f7",
        "label": "C",
-       "content": "1300 US$ million",
+       "content": "1300 million US dollars",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "84cb3512-bc7d-5dea-b25d-e463aa043805",
        "label": "D",
-       "content": "2200 US$ million",
+       "content": "2200 million US dollars",
        "is_correct": false,
        "position": 3
       }
@@ -442,7 +442,7 @@
     {
      "id": "d099220e-51bb-5455-9730-e0ed779e3cdf",
      "key": "eco-bp-04",
-     "stem": "The exchange rate is NLe 24 = US$1. How many leones does US$500 cost?",
+     "stem": "The exchange rate is NLe 24 = 1 US dollar. How many leones do 500 US dollars cost?",
      "image_url": null,
      "explanation": "500 × 24 = NLe 12,000.\n\n**Why the other options are wrong**\n\n- 20.83 NLe: You divided instead of multiplying.\n- 524 NLe: You added the numbers.\n- 476 NLe: You subtracted the numbers.",
      "position": 4,
@@ -594,36 +594,36 @@
     {
      "id": "1fc9ed08-1517-5e48-842c-2216ef756701",
      "key": "eco-bp-08",
-     "stem": "A country has a visible balance of −400, a services balance of −200, net primary income of −120 and net transfers of +420 (US$ million). What is its current account balance?",
+     "stem": "A country has a visible balance of −400, a services balance of −200, net primary income of −120 and net transfers of +420 (all in million US dollars). What is its current account balance?",
      "image_url": null,
-     "explanation": "Current account = −400 − 200 − 120 + 420 = −US$300 million (a deficit).\n\n**Why the other options are wrong**\n\n- -720 US$ million: You left out the transfers.\n- 300 US$ million: The current account is in deficit, so the balance is negative.\n- 1140 US$ million: You added all the figures as if they were positive.",
+     "explanation": "Current account = −400 − 200 − 120 + 420 = −300 million US dollars (a deficit).\n\n**Why the other options are wrong**\n\n- -720 million US dollars: You left out the transfers.\n- 300 million US dollars: The current account is in deficit, so the balance is negative.\n- 1140 million US dollars: You added all the figures as if they were positive.",
      "position": 8,
      "options": [
       {
        "id": "2e28d2cc-19e3-5a85-81c0-c07e4feb4df2",
        "label": "A",
-       "content": "-720 US$ million",
+       "content": "-720 million US dollars",
        "is_correct": false,
        "position": 0
       },
       {
        "id": "35e23989-5a2a-5897-a884-5ea1809f4536",
        "label": "B",
-       "content": "-300 US$ million",
+       "content": "-300 million US dollars",
        "is_correct": true,
        "position": 1
       },
       {
        "id": "40e81ebb-bbd0-55ea-a76e-c4b98b8e4d58",
        "label": "C",
-       "content": "300 US$ million",
+       "content": "300 million US dollars",
        "is_correct": false,
        "position": 2
       },
       {
        "id": "5911c780-c98c-5f37-ac7e-359857610887",
        "label": "D",
-       "content": "1140 US$ million",
+       "content": "1140 million US dollars",
        "is_correct": false,
        "position": 3
       }
@@ -1260,5 +1260,5 @@
    ]
   }
  ],
- "version": "3e192243ca40"
+ "version": "4944e201a9c7"
 }

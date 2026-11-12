@@ -170,20 +170,20 @@ _Syllabus: Balance of trade and payments; deficits; exchange rate systems; deval
 
 ### 9. `eco-bp-01`
 
-A country exports goods worth US$900 million and imports goods worth US$1,300 million. What is its balance of trade?
+A country exports goods worth 900 million US dollars and imports goods worth 1,300 million US dollars. What is its balance of trade?
 
-- **A.** -400 US$ million  ✅
-- **B.** 400 US$ million
-- **C.** 1300 US$ million
-- **D.** 2200 US$ million
+- **A.** -400 million US dollars  ✅
+- **B.** 400 million US dollars
+- **C.** 1300 million US dollars
+- **D.** 2200 million US dollars
 
-Balance of trade = exports − imports of goods = 900 − 1,300 = −US$400 million (a deficit).
+Balance of trade = exports − imports of goods = 900 − 1,300 = −400 million US dollars (a deficit).
 
 **Why the other options are wrong**
 
-- 400 US$ million: Imports are larger than exports, so the balance is negative (a deficit).
-- 2200 US$ million: You added exports and imports.
-- 1300 US$ million: That is the value of imports.
+- 400 million US dollars: Imports are larger than exports, so the balance is negative (a deficit).
+- 2200 million US dollars: You added exports and imports.
+- 1300 million US dollars: That is the value of imports.
 
 ---
 
@@ -227,7 +227,7 @@ Remittances are one-way transfers with nothing given in return.
 
 ### 12. `eco-bp-04`
 
-The exchange rate is NLe 24 = US$1. How many leones does US$500 cost?
+The exchange rate is NLe 24 = 1 US dollar. How many leones do 500 US dollars cost?
 
 - **A.** 20.83 NLe
 - **B.** 476 NLe
@@ -303,20 +303,20 @@ The IMF also promotes exchange rate stability and advises on economic policy.
 
 ### 16. `eco-bp-08`
 
-A country has a visible balance of −400, a services balance of −200, net primary income of −120 and net transfers of +420 (US$ million). What is its current account balance?
+A country has a visible balance of −400, a services balance of −200, net primary income of −120 and net transfers of +420 (all in million US dollars). What is its current account balance?
 
-- **A.** -720 US$ million
-- **B.** -300 US$ million  ✅
-- **C.** 300 US$ million
-- **D.** 1140 US$ million
+- **A.** -720 million US dollars
+- **B.** -300 million US dollars  ✅
+- **C.** 300 million US dollars
+- **D.** 1140 million US dollars
 
-Current account = −400 − 200 − 120 + 420 = −US$300 million (a deficit).
+Current account = −400 − 200 − 120 + 420 = −300 million US dollars (a deficit).
 
 **Why the other options are wrong**
 
-- -720 US$ million: You left out the transfers.
-- 300 US$ million: The current account is in deficit, so the balance is negative.
-- 1140 US$ million: You added all the figures as if they were positive.
+- -720 million US dollars: You left out the transfers.
+- 300 million US dollars: The current account is in deficit, so the balance is negative.
+- 1140 million US dollars: You added all the figures as if they were positive.
 
 ---
 

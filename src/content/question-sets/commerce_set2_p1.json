@@ -1,0 +1,2206 @@
+{
+ "name": "commerce_set2_p1",
+ "label": "Commerce: set 2 (foreign trade, documents and the aids to trade)",
+ "subject_slug": "commerce",
+ "papers": [
+  {
+   "id": "53e618d9-6bb9-5725-a626-bd0ab0e8c16b",
+   "topic": "Foreign Trade",
+   "title": "Foreign Trade: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on foreign trade, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 120,
+   "questions": [
+    {
+     "id": "d3f7a262-0f35-5ea4-9150-f0f80a18a2fc",
+     "key": "com-ft-01",
+     "stem": "Importing goods and re-exporting them to another country with little or no processing is",
+     "image_url": null,
+     "explanation": "Entrepôt (re-export) trade: goods are imported first, then re-exported.\n\n**Why the other options are wrong**\n\n- export trade: Export trade sells home-produced goods abroad.\n- home trade: Home trade takes place within one country.\n- wholesale trade: Wholesale trade is buying in bulk and selling to retailers.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8537c81d-012a-557d-8667-bfacb885bc79",
+       "label": "A",
+       "content": "export trade",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fd4b5c40-8965-5d57-ad57-c67e447a10c9",
+       "label": "B",
+       "content": "home trade",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4eddb1f2-a484-52ba-b100-bc37bac35c97",
+       "label": "C",
+       "content": "entrepôt trade",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a5e142af-3cae-5c1a-b9be-bffc99e890b0",
+       "label": "D",
+       "content": "wholesale trade",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d3e34249-e33e-50c1-812c-85799382214d",
+     "key": "com-ft-02",
+     "stem": "Which is a difference between home trade and foreign trade?",
+     "image_url": null,
+     "explanation": "Foreign trade needs foreign exchange; home trade uses one currency.\n\n**Why the other options are wrong**\n\n- Home trade needs a bill of lading: Bills of lading are used mainly in foreign trade by sea.\n- Home trade pays import duties: Import duties apply to foreign trade.\n- Foreign trade has lower transport costs: Foreign trade usually has higher transport costs.",
+     "position": 2,
+     "options": [
+      {
+       "id": "71933bc8-bf19-5782-81cc-ee7e73c30bd4",
+       "label": "A",
+       "content": "Foreign trade involves different currencies",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8162061f-ed04-56f8-9afb-cf98394eec12",
+       "label": "B",
+       "content": "Home trade needs a bill of lading",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b0dc3fd1-257e-589a-9216-d158108f7b5b",
+       "label": "C",
+       "content": "Home trade pays import duties",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "959dede9-4306-5e4e-9460-21c276fd1de4",
+       "label": "D",
+       "content": "Foreign trade has lower transport costs",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0ca070a7-3833-5955-bad1-9ad9bf53f066",
+     "key": "com-ft-03",
+     "stem": "A country's visible exports are worth NLe 9,000 million and its visible imports NLe 13,000 million. What is its balance of trade (NLe million)?",
+     "image_url": null,
+     "explanation": "Balance of trade = visible exports − visible imports = 9,000 − 13,000 = −4,000: an unfavourable balance.\n\n**Why the other options are wrong**\n\n- 4000: You subtracted exports from imports; the balance is exports minus imports.\n- 22000: You added exports and imports.\n- -6000: That includes invisible trade; the balance of trade covers goods only.",
+     "position": 3,
+     "options": [
+      {
+       "id": "246aedc3-c68b-56dc-ad92-b3dbd26988de",
+       "label": "A",
+       "content": "-6000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6f486367-55f5-564c-b624-726dbbb013c0",
+       "label": "B",
+       "content": "-4000",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c3f97daf-f590-5bff-a366-7ee88bb0343d",
+       "label": "C",
+       "content": "4000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2234b03e-f2aa-55e9-825b-552b2c6c8054",
+       "label": "D",
+       "content": "22000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "37224d18-b2a9-5483-8f95-d469c374829f",
+     "key": "com-ft-04",
+     "stem": "The index of export prices is 110 and the index of import prices is 125. What are the terms of trade?",
+     "image_url": null,
+     "explanation": "Terms of trade $= \\dfrac{110}{125} \\times 100 = 88$: unfavourable, because it is below 100.\n\n**Why the other options are wrong**\n\n- 113.6: You divided import prices by export prices.\n- -15: You subtracted the indices instead of dividing them.\n- 235: You added the two indices.",
+     "position": 4,
+     "options": [
+      {
+       "id": "1acf2d4c-d997-5b67-bd85-df3d61c6a72d",
+       "label": "A",
+       "content": "-15",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2d4daf58-2ccb-5286-a4bf-d425ac28954c",
+       "label": "B",
+       "content": "88",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2402abb4-1800-5b5c-bb49-ff1d370d690d",
+       "label": "C",
+       "content": "113.6",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9b626924-2344-5314-be29-771bee507c51",
+       "label": "D",
+       "content": "235",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "be1773a0-3a76-555e-a9d8-37e6ac60cc2c",
+     "key": "com-ft-05",
+     "stem": "Shipping, insurance, banking and tourism services sold abroad are",
+     "image_url": null,
+     "explanation": "Invisible trade is trade in services; visible trade is trade in goods.\n\n**Why the other options are wrong**\n\n- visible exports: Visible exports are goods.\n- visible imports: These services are sold abroad, so they are exports.\n- entrepôt goods: Entrepôt trade is in goods.",
+     "position": 5,
+     "options": [
+      {
+       "id": "894d89aa-e39b-5daf-939f-153253b824c8",
+       "label": "A",
+       "content": "visible exports",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "50b158d9-2b54-563e-9286-620b42146071",
+       "label": "B",
+       "content": "visible imports",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "33367caf-b79a-5cc9-90ca-2de6b76f4ae1",
+       "label": "C",
+       "content": "invisible exports",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "cdb0bb04-637d-5616-ba2c-7410e004ffff",
+       "label": "D",
+       "content": "entrepôt goods",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "75297069-a7cc-551a-884b-1246c9b64ef5",
+     "key": "com-ft-06",
+     "stem": "A complete ban on trade in a good or with a country is",
+     "image_url": null,
+     "explanation": "An embargo stops trade completely, often for political, health or security reasons.\n\n**Why the other options are wrong**\n\n- a quota: A quota limits the quantity; it does not ban it completely.\n- a tariff: A tariff is a tax on imports or exports.\n- a subsidy: A subsidy is government help to local producers.",
+     "position": 6,
+     "options": [
+      {
+       "id": "abe8701f-a44f-5feb-930b-7fcbc20b7db8",
+       "label": "A",
+       "content": "an embargo",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1aec7c55-cff3-53f4-a04d-f7d7030ffc85",
+       "label": "B",
+       "content": "a quota",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "951e1707-5d50-5103-8a0b-e1f54b088503",
+       "label": "C",
+       "content": "a tariff",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "81a8ac83-b2d1-5ce2-ab8c-4ade463ecb57",
+       "label": "D",
+       "content": "a subsidy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b911c315-8227-5ba9-a7fe-7035f2501287",
+     "key": "com-ft-07",
+     "stem": "A main reason for protecting infant industries is to",
+     "image_url": null,
+     "explanation": "Young firms with high costs are shielded from foreign competition for a time.\n\n**Why the other options are wrong**\n\n- increase the variety of imported goods: Protection reduces imports.\n- lower prices for consumers immediately: Protection usually raises prices.\n- encourage smuggling: Smuggling is a harmful side effect, not a reason.",
+     "position": 7,
+     "options": [
+      {
+       "id": "76bc1a17-9d0b-5daa-8691-8e80a9c49bf8",
+       "label": "A",
+       "content": "increase the variety of imported goods",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "29307e30-46d6-56ba-a4b6-5c9c4fb25226",
+       "label": "B",
+       "content": "lower prices for consumers immediately",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8c345a20-d49d-5f62-9ee6-090f3f093010",
+       "label": "C",
+       "content": "allow new local industries to grow until they can compete",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0b1017d7-51c5-5c09-8c4b-fbbad464877f",
+       "label": "D",
+       "content": "encourage smuggling",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8120c92f-5578-5fd9-bb86-fb3eef77d6f4",
+     "key": "com-ft-08",
+     "stem": "In Sierra Leone, import duties are collected by the customs services of the",
+     "image_url": null,
+     "explanation": "The NRA's customs services collect duties, check documents and prevent smuggling.\n\n**Why the other options are wrong**\n\n- Bank of Sierra Leone: The central bank manages money and banks, not customs.\n- Sierra Leone Ports and Harbours Authority: The ports authority runs the ports; customs collect duties.\n- Sierra Leone Standards Bureau: The Standards Bureau sets and tests product standards.",
+     "position": 8,
+     "options": [
+      {
+       "id": "c08256e9-8c84-57a8-ae46-3168bfadc8dc",
+       "label": "A",
+       "content": "National Revenue Authority",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "84b65d65-b06c-5bdc-93fb-3f3394adf779",
+       "label": "B",
+       "content": "Bank of Sierra Leone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ad52e38b-813c-51e0-8ff7-13f6bd67f2a1",
+       "label": "C",
+       "content": "Sierra Leone Ports and Harbours Authority",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "14615396-7f0a-5080-9376-091a89e6745a",
+       "label": "D",
+       "content": "Sierra Leone Standards Bureau",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dc39664d-322e-580b-bd6d-7d7000d2f582",
+   "topic": "Documents and Terms in Foreign Trade",
+   "title": "Documents and Terms in Foreign Trade: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on documents and terms in foreign trade, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 121,
+   "questions": [
+    {
+     "id": "2003c088-ce57-5cc8-ab2a-fb5161151993",
+     "key": "com-dt-01",
+     "stem": "The document a seller sends to correct an overcharge on an invoice is a",
+     "image_url": null,
+     "explanation": "A credit note reduces the amount the buyer owes: overcharges, returns or damaged goods.\n\n**Why the other options are wrong**\n\n- debit note: A debit note corrects an undercharge, so the buyer owes more.\n- statement of account: A statement summarises transactions and the balance owed.\n- delivery note: A delivery note goes with the goods.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8250434c-8969-538f-a103-d4056e2d19a3",
+       "label": "A",
+       "content": "debit note",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "48e45990-587a-5010-918f-f155d28f93a1",
+       "label": "B",
+       "content": "statement of account",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d6dacccf-0124-57d3-b126-fb6b07567ff0",
+       "label": "C",
+       "content": "credit note",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3b7c113e-74f2-5290-852c-957192d39ae1",
+       "label": "D",
+       "content": "delivery note",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8db4089e-c60a-5af4-a167-13b9e180dbd7",
+     "key": "com-dt-02",
+     "stem": "A pro forma invoice is sent",
+     "image_url": null,
+     "explanation": "It shows what the invoice will be and supports advance payment or an import licence application.\n\n**Why the other options are wrong**\n\n- after payment, as proof of payment: Proof of payment is a receipt.\n- to correct an undercharge: That is a debit note.\n- at the end of the month to summarise transactions: That is a statement of account.",
+     "position": 2,
+     "options": [
+      {
+       "id": "0b45e022-6417-5911-aaa2-e455157c9c33",
+       "label": "A",
+       "content": "after payment, as proof of payment",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e6c71435-1caf-5381-a191-391db8299695",
+       "label": "B",
+       "content": "to correct an undercharge",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "994308e3-54f2-5763-b7f0-edf13774ffbd",
+       "label": "C",
+       "content": "at the end of the month to summarise transactions",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fa659406-3cbd-5601-845b-fa9075c018d7",
+       "label": "D",
+       "content": "before goods are supplied, often to request payment in advance",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "402c6118-2d31-51e2-a002-f4493d165241",
+     "key": "com-dt-03",
+     "stem": "Goods listed at NLe 10,000 are sold with a 20% trade discount. What is the net invoice value?",
+     "image_url": null,
+     "explanation": "Trade discount $= 20\\% \\times 10000 = 2000$. Invoice value $= 10000 - 2000 = $ NLe 8,000.\n\n**Why the other options are wrong**\n\n- 2000 NLe: That is the discount, not the invoice value.\n- 12000 NLe: You added the discount instead of subtracting it.\n- 9800 NLe: You subtracted 2% instead of 20%.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5761c181-1b00-50c6-ad68-690b024abe43",
+       "label": "A",
+       "content": "2000 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "440927f2-e54f-5dc6-b618-d97a69e72b08",
+       "label": "B",
+       "content": "8000 NLe",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4e14a7a2-bb69-5b9d-a340-e66b2d30f93f",
+       "label": "C",
+       "content": "9800 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d68ef2cf-d797-53a6-874f-309fdf588011",
+       "label": "D",
+       "content": "12000 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cda05ee7-7908-5f77-a1da-1c6370ce57c3",
+     "key": "com-dt-04",
+     "stem": "A retailer orders 40 cartons at a list price of NLe 250 each, less 20% trade discount, with 5% cash discount for payment within 14 days. How much does the retailer pay if paying promptly?",
+     "image_url": null,
+     "explanation": "Gross $= 40 \\times 250 = 10000$; less 20% $= 8000$; less 5% cash discount $= 8000 - 400 = $ NLe 7,600.\n\n**Why the other options are wrong**\n\n- 8000 NLe: That is the invoice value before cash discount.\n- 7500 NLe: You added the two discounts (25%) and took them off the list price.\n- 9500 NLe: You took only the 5% cash discount and forgot the trade discount.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a6a121e5-0219-5170-aff8-909525ba2e91",
+       "label": "A",
+       "content": "7500 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "62891f91-2e0c-57c4-97bf-9777a929e89a",
+       "label": "B",
+       "content": "7600 NLe",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6c193173-c812-51d3-8242-e043f6d302f6",
+       "label": "C",
+       "content": "8000 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6016fd1c-2bd2-5200-9fdc-41f4eea33099",
+       "label": "D",
+       "content": "9500 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7df9cb70-614d-5534-a432-e56289c6e66f",
+     "key": "com-dt-05",
+     "stem": "The term E&OE on an invoice means",
+     "image_url": null,
+     "explanation": "E&OE lets the seller correct mistakes in the invoice later.\n\n**Why the other options are wrong**\n\n- export and overseas exchange: This is not what the abbreviation stands for.\n- ex-works or ex-warehouse: Ex-works is a different term.\n- each order on exchange: This is not a trade term.",
+     "position": 5,
+     "options": [
+      {
+       "id": "8f79f28d-ebc8-50d4-8e07-671ccfcd4808",
+       "label": "A",
+       "content": "errors and omissions excepted",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "05cf3896-c624-52b3-b557-75261d84b15a",
+       "label": "B",
+       "content": "export and overseas exchange",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8a18f890-b14a-5e06-86ff-5e269e305a49",
+       "label": "C",
+       "content": "ex-works or ex-warehouse",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3c97aaff-7a6b-50b5-952a-a8fbdd21b75f",
+       "label": "D",
+       "content": "each order on exchange",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9f49f5a3-4389-50aa-8803-627cee7f2844",
+     "key": "com-dt-06",
+     "stem": "Goods cost 10,000 US dollars FOB. Freight to Freetown is 800 US dollars and insurance is 200 US dollars. What is the CIF price in US dollars?",
+     "image_url": null,
+     "explanation": "CIF = cost + insurance + freight = 10,000 + 200 + 800 = 11,000 US dollars.\n\n**Why the other options are wrong**\n\n- 10800: You left out the insurance.\n- 10200: You left out the freight.\n- 9000: You subtracted freight and insurance instead of adding them.",
+     "position": 6,
+     "options": [
+      {
+       "id": "73be215a-d7e3-5a18-a8b6-716873a6eaca",
+       "label": "A",
+       "content": "9000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "357d913f-af83-511e-9b28-ea1c4fbccb04",
+       "label": "B",
+       "content": "10200",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d28adf75-e6c2-5483-948e-a999096d7e2e",
+       "label": "C",
+       "content": "10800",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b50dafdc-efa2-58e2-84b8-9708bd6e58d6",
+       "label": "D",
+       "content": "11000",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2623d2e2-9bfb-5e66-85ef-4da5ca8bb1bf",
+     "key": "com-dt-07",
+     "stem": "Which document is a receipt for goods shipped, evidence of the contract of carriage and a document of title?",
+     "image_url": null,
+     "explanation": "Whoever holds the bill of lading can claim the goods at the port of arrival.\n\n**Why the other options are wrong**\n\n- Air waybill: An air waybill is not a document of title.\n- Certificate of origin: This shows where the goods were made.\n- Consular invoice: This is certified by a consulate to check value.",
+     "position": 7,
+     "options": [
+      {
+       "id": "81b38648-ff65-5d44-9ff3-13284bdfa87d",
+       "label": "A",
+       "content": "Air waybill",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9ed4cfe3-92bd-5da8-98fb-2c67d7d5d7a7",
+       "label": "B",
+       "content": "Certificate of origin",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bea0cc38-3ca1-5b8b-a4a4-743a3dd5dcc1",
+       "label": "C",
+       "content": "Bill of lading",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d44b0ccd-d2ef-5183-9493-8444041ae4c6",
+       "label": "D",
+       "content": "Consular invoice",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1dfa941e-1f86-5b00-9e50-030655be1cd9",
+     "key": "com-dt-08",
+     "stem": "An indent that allows the overseas agent to buy from any supplier who offers the best terms is",
+     "image_url": null,
+     "explanation": "An open indent leaves the choice of supplier to the agent.\n\n**Why the other options are wrong**\n\n- a closed indent: A closed indent names the supplier or brand.\n- a letter of credit: That is a bank's guarantee of payment.\n- a shipping note: That gives the shipping company details of goods to be loaded.",
+     "position": 8,
+     "options": [
+      {
+       "id": "afc508f4-8393-5a07-9d58-4abf496a33d5",
+       "label": "A",
+       "content": "a closed indent",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b7a4bc29-23a8-5b20-80d7-adf9487ef789",
+       "label": "B",
+       "content": "a letter of credit",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cd2b4bc5-56f1-50a2-91c4-f474d09ad612",
+       "label": "C",
+       "content": "a shipping note",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fd0c75a9-2c2e-5996-a5a0-48e6bb310643",
+       "label": "D",
+       "content": "an open indent",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b7530dd8-b5e0-53d1-b970-d650d925090e",
+   "topic": "Transportation",
+   "title": "Transportation: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on transportation, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 122,
+   "questions": [
+    {
+     "id": "fc3b0460-51b2-5c30-a7f9-9f49a5c10b57",
+     "key": "com-tr-01",
+     "stem": "The main advantage of road transport over rail is that it",
+     "image_url": null,
+     "explanation": "Lorries and vans deliver right to the buyer's premises, even in villages.\n\n**Why the other options are wrong**\n\n- is cheapest for very bulky goods over long distances: That is water or rail.\n- is never affected by bad weather: Roads are badly affected by rain.\n- has the fewest accidents: Road has more accidents than rail.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7651e3bc-501c-5b2c-b749-6b441ccca712",
+       "label": "A",
+       "content": "gives door-to-door service",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "50e60cf9-f99d-5051-ba1e-bfc6badd481e",
+       "label": "B",
+       "content": "is cheapest for very bulky goods over long distances",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d212c994-7a74-5824-a21d-4a45f6460c47",
+       "label": "C",
+       "content": "is never affected by bad weather",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "311953e5-56c6-542a-8dbc-1596c8c3821f",
+       "label": "D",
+       "content": "has the fewest accidents",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2925fbc0-b8d2-5842-84dd-e850a6e679a7",
+     "key": "com-tr-02",
+     "stem": "Ships that sail on fixed routes to a fixed timetable at published rates are",
+     "image_url": null,
+     "explanation": "Liners sail whether full or not; tramps go wherever there is cargo.\n\n**Why the other options are wrong**\n\n- tramps: Tramps have no fixed route or timetable.\n- coasters: Coasters move goods between ports along one coast.\n- tankers chartered for one voyage: Chartered ships go wherever they are hired to.",
+     "position": 2,
+     "options": [
+      {
+       "id": "85159028-48dd-54ef-bde9-8cb357dd8e7f",
+       "label": "A",
+       "content": "tramps",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cfda4770-ed36-5cba-ae44-7972d7e7d7a1",
+       "label": "B",
+       "content": "coasters",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "512809c7-6049-5a76-8196-3f88d7a99a04",
+       "label": "C",
+       "content": "liners",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "5122ff0e-4f81-5be5-a885-5464aa9fda8e",
+       "label": "D",
+       "content": "tankers chartered for one voyage",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c85e4187-b54d-5517-abf1-a7aa3fda46a1",
+     "key": "com-tr-03",
+     "stem": "Which mode of transport is best for urgent, light and valuable goods such as medicines?",
+     "image_url": null,
+     "explanation": "Air is the fastest mode, and its high cost is justified for urgent, light or valuable goods.\n\n**Why the other options are wrong**\n\n- Sea: Sea is slow, though cheap for bulk.\n- Pipeline: Pipelines carry only liquids and gases.\n- Rail: Rail suits heavy bulk over land.",
+     "position": 3,
+     "options": [
+      {
+       "id": "23c19c5b-34db-5aca-8fb9-cecc7bd10bcb",
+       "label": "A",
+       "content": "Sea",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5a10a465-697f-5dba-bb03-34b8aa2c72e6",
+       "label": "B",
+       "content": "Pipeline",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4eb142f6-eb91-5b58-b584-ea7800d83ea6",
+       "label": "C",
+       "content": "Rail",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "84a75b4c-efd7-5fd9-9cb9-8c8b9878664d",
+       "label": "D",
+       "content": "Air",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2e196356-8cf2-5399-9547-61e48d703158",
+     "key": "com-tr-04",
+     "stem": "A contract for the hire of a whole ship is a",
+     "image_url": null,
+     "explanation": "A ship may be chartered for one voyage (voyage charter) or for a period (time charter).\n\n**Why the other options are wrong**\n\n- bill of lading: A bill of lading covers goods carried, not hire of the ship.\n- waybill: A waybill lists goods carried by road or rail.\n- ship's manifest: A manifest lists all cargo on board.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ec59eb89-f0d2-57fb-a096-002cdfcd5b17",
+       "label": "A",
+       "content": "charter party",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d7db0868-0af3-5369-8b06-014a265f0873",
+       "label": "B",
+       "content": "bill of lading",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f4409e00-0c7b-510b-aca7-c12d66452603",
+       "label": "C",
+       "content": "waybill",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "660caf94-7148-550f-b7cb-4076c50b42ed",
+       "label": "D",
+       "content": "ship's manifest",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "130307fc-9b47-5d20-ac64-99930517f319",
+     "key": "com-tr-05",
+     "stem": "One advantage of containerisation is",
+     "image_url": null,
+     "explanation": "Sealed containers are moved between modes without unpacking.\n\n**Why the other options are wrong**\n\n- no need for cranes at ports: Container ports need large cranes.\n- more dock jobs: Containerisation reduces dock jobs.\n- suitable for every kind of cargo: Some cargo, such as very large machinery, does not fit.",
+     "position": 5,
+     "options": [
+      {
+       "id": "323a5b2f-b748-5cac-96e5-26868b0fa877",
+       "label": "A",
+       "content": "no need for cranes at ports",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6a102722-6364-5572-a3f3-3084592f8fc0",
+       "label": "B",
+       "content": "less handling, so less damage and theft",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bd3f6cc8-6366-5b3e-861f-411dacb1f77b",
+       "label": "C",
+       "content": "more dock jobs",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a00a60d1-5a28-5aa9-b562-f63f902a58a9",
+       "label": "D",
+       "content": "suitable for every kind of cargo",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "41a74c25-9661-5c5d-9222-ae37e464758c",
+     "key": "com-tr-06",
+     "stem": "Transport removes the hindrance of",
+     "image_url": null,
+     "explanation": "Transport moves goods from where they are produced to where they are wanted, creating place utility.\n\n**Why the other options are wrong**\n\n- time: Warehousing removes the hindrance of time.\n- risk: Insurance removes the hindrance of risk.\n- finance: Banking removes the hindrance of finance.",
+     "position": 6,
+     "options": [
+      {
+       "id": "5144a91a-cb0f-55fd-acdf-47ef06704aec",
+       "label": "A",
+       "content": "time",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "389006fb-e66a-55b9-9133-fc73bd64df4c",
+       "label": "B",
+       "content": "risk",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8d165637-3661-5acc-b1a5-409e17fa5d4b",
+       "label": "C",
+       "content": "place",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4654ffa9-5f9b-5bf2-992c-51a17e2dcae1",
+       "label": "D",
+       "content": "finance",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e352f1a0-8173-5f21-882f-1a1f83b0bd43",
+     "key": "com-tr-07",
+     "stem": "A haulier charges NLe 2 per tonne-kilometre plus NLe 500 for loading. What is the cost of carrying 20 tonnes of rice 300 km?",
+     "image_url": null,
+     "explanation": "Tonne-km $= 20 \\times 300 = 6000$; haulage $= 6000 \\times 2 = 12000$; total $= 12000 + 500 = $ NLe 12,500.\n\n**Why the other options are wrong**\n\n- 12000 NLe: You left out the loading charge.\n- 6500 NLe: You forgot to multiply by the rate of NLe 2.\n- 1140 NLe: You added tonnes and kilometres instead of multiplying.",
+     "position": 7,
+     "options": [
+      {
+       "id": "bfe42a3f-8ee3-552b-9c3a-86a7487e9836",
+       "label": "A",
+       "content": "1140 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2856378f-4c4a-5966-bc09-958744cb9af6",
+       "label": "B",
+       "content": "6500 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "89985765-c850-5a95-a9e0-51cfaa6e02ad",
+       "label": "C",
+       "content": "12000 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a442edbe-5679-5ae5-bea5-3c2e8bc6e2f8",
+       "label": "D",
+       "content": "12500 NLe",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b8239a7a-e7a9-5b05-8761-e60bd65cf3d8",
+     "key": "com-tr-08",
+     "stem": "Which factor is MOST important when choosing transport for fresh fish?",
+     "image_url": null,
+     "explanation": "Perishable goods must reach the market quickly, so speed comes first.\n\n**Why the other options are wrong**\n\n- The colour of the vehicle: Colour does not affect the choice.\n- Whether the route is scenic: This does not matter for goods.\n- The age of the driver: This is not a factor in choosing a mode.",
+     "position": 8,
+     "options": [
+      {
+       "id": "4eec50e0-dba0-58fa-878e-8bc7c6f4d49b",
+       "label": "A",
+       "content": "The colour of the vehicle",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6d14229d-b1c7-5472-b884-0ef8ce837935",
+       "label": "B",
+       "content": "Whether the route is scenic",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fe2cc909-92d7-5ffe-a98c-3e698f6e8df3",
+       "label": "C",
+       "content": "The age of the driver",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0d66c5ea-1d6a-5807-b970-71ca5e8a0730",
+       "label": "D",
+       "content": "Speed, because the goods are perishable",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c613d8e4-5d41-5cd9-85ba-ee0b52afab06",
+   "topic": "Communication",
+   "title": "Communication: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on communication, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 123,
+   "questions": [
+    {
+     "id": "1dd1efa8-6e9c-5a0b-a3a2-8ce405c299d7",
+     "key": "com-cm-01",
+     "stem": "In the communication process, the receiver's response to a message is called",
+     "image_url": null,
+     "explanation": "Feedback tells the sender whether the message was understood.\n\n**Why the other options are wrong**\n\n- encoding: Encoding is the sender putting the idea into words or signals.\n- noise: Noise is anything that distorts the message.\n- the channel: The channel is the medium used.",
+     "position": 1,
+     "options": [
+      {
+       "id": "54b1a0d8-9432-507c-8173-30aacae6f699",
+       "label": "A",
+       "content": "feedback",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "fe9144fa-d7a0-553e-b072-25d495ebc2e4",
+       "label": "B",
+       "content": "encoding",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "64bfb6ae-65b2-5434-9d60-b9cf1ee5943a",
+       "label": "C",
+       "content": "noise",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3c1e80e6-04cf-5b9a-9347-f1e0e87beea0",
+       "label": "D",
+       "content": "the channel",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4ffc1dac-5cae-540b-a3ed-c0052963e52e",
+     "key": "com-cm-02",
+     "stem": "A major advantage of written communication over oral communication is that it",
+     "image_url": null,
+     "explanation": "Letters, memos and emails can be kept as evidence and checked later.\n\n**Why the other options are wrong**\n\n- gives immediate feedback: Oral communication gives quicker feedback.\n- is always faster: Writing is usually slower.\n- needs no literacy: Written messages need reading skills.",
+     "position": 2,
+     "options": [
+      {
+       "id": "851785ac-6c7d-57a5-9054-06a013601a02",
+       "label": "A",
+       "content": "gives immediate feedback",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bd9e6ff3-7b04-5e3d-b7c1-89542dc1288a",
+       "label": "B",
+       "content": "provides a permanent record",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e504f5c5-dd9b-542a-9361-5020b63b8fe2",
+       "label": "C",
+       "content": "is always faster",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c146f4e4-73ee-50b3-9316-51c2ceb8531d",
+       "label": "D",
+       "content": "needs no literacy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aac01624-d964-50c3-8485-c99b27a80b65",
+     "key": "com-cm-03",
+     "stem": "Poor network coverage that distorts a phone call is an example of",
+     "image_url": null,
+     "explanation": "Noise is anything that interferes with the message on its way.\n\n**Why the other options are wrong**\n\n- feedback: Feedback is the receiver's response.\n- decoding: Decoding is interpreting the message.\n- encoding: Encoding is forming the message.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b5617dbd-8806-50df-84e8-7461d5fc9077",
+       "label": "A",
+       "content": "feedback",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "52198a57-4084-5110-bc15-76498eb969da",
+       "label": "B",
+       "content": "decoding",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6e9e840a-71ec-5322-a6c5-794ec274ff21",
+       "label": "C",
+       "content": "noise",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6941c192-b5c0-560c-a1d7-02f4a82298cb",
+       "label": "D",
+       "content": "encoding",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3025ef89-def0-59e2-bc1a-89e17bb9ff4e",
+     "key": "com-cm-04",
+     "stem": "Which postal service gives compensation if an item is lost?",
+     "image_url": null,
+     "explanation": "Registered mail is recorded at posting and signed for, with compensation for loss.\n\n**Why the other options are wrong**\n\n- Recorded delivery: Recorded delivery gives proof of posting and delivery, but little or no compensation.\n- Poste restante: This holds mail for travellers to collect.\n- Ordinary mail: Ordinary mail gives no compensation.",
+     "position": 4,
+     "options": [
+      {
+       "id": "521eb61e-171e-5a35-b0fd-289de9da80a5",
+       "label": "A",
+       "content": "Recorded delivery",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ef51d306-9dca-5c6c-8aca-5bd62d0c5e7c",
+       "label": "B",
+       "content": "Poste restante",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a86a89b0-d7eb-56ee-aa48-eb88a37af89f",
+       "label": "C",
+       "content": "Ordinary mail",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "af6d3841-00d1-58f0-bcdb-526201ced0ea",
+       "label": "D",
+       "content": "Registered post",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4f6797fc-028c-58c1-b65a-eb98059013d6",
+     "key": "com-cm-05",
+     "stem": "Compared with the post office, a courier service is usually",
+     "image_url": null,
+     "explanation": "Couriers collect and deliver door to door with tracking, for a higher charge.\n\n**Why the other options are wrong**\n\n- cheaper and slower: Couriers are dearer and faster.\n- run only by the government: Most couriers are private companies.\n- unable to track parcels: Couriers usually offer full tracking.",
+     "position": 5,
+     "options": [
+      {
+       "id": "6f732384-6c18-5747-9223-a33ee70c72b0",
+       "label": "A",
+       "content": "faster and door to door, but more expensive",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "605a4bcb-a295-582a-9e4e-b79c44b9d841",
+       "label": "B",
+       "content": "cheaper and slower",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9eaa3ea7-d7a2-56b2-8af0-fbb83acc6abc",
+       "label": "C",
+       "content": "run only by the government",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5fce16b5-a9ac-5226-883d-bc4d4f27226c",
+       "label": "D",
+       "content": "unable to track parcels",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1c7a350d-a4d5-5bcd-97c1-6cdf23cc0531",
+     "key": "com-cm-06",
+     "stem": "Communication from a manager to the staff is described as",
+     "image_url": null,
+     "explanation": "Instructions passing down the organisation are downward communication.\n\n**Why the other options are wrong**\n\n- upward communication: Upward communication goes from staff to managers.\n- horizontal communication: Horizontal communication is between people at the same level.\n- external communication: External communication is with outsiders.",
+     "position": 6,
+     "options": [
+      {
+       "id": "495fe214-e5b7-5f15-a1b6-e16ccd123c13",
+       "label": "A",
+       "content": "upward communication",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b8db04db-8f39-541c-9e3d-8712eca54038",
+       "label": "B",
+       "content": "downward communication",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f696e253-3a4c-5bb8-8a35-ebec88e3666f",
+       "label": "C",
+       "content": "horizontal communication",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "269bfde5-e4dc-5dad-b499-404e1fe753ef",
+       "label": "D",
+       "content": "external communication",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eb987334-d5e7-5721-b0ad-32df496442b1",
+     "key": "com-cm-07",
+     "stem": "In Sierra Leone, the telecommunications sector is licensed and regulated by",
+     "image_url": null,
+     "explanation": "NATCOM licenses and regulates mobile networks and other telecom operators.\n\n**Why the other options are wrong**\n\n- SALPOST: SALPOST provides postal services.\n- the National Revenue Authority: The NRA collects taxes.\n- the Sierra Leone Ports and Harbours Authority: This runs the ports.",
+     "position": 7,
+     "options": [
+      {
+       "id": "e46d6819-e409-581c-b7a5-44afeacf453e",
+       "label": "A",
+       "content": "SALPOST",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8ecac10a-fef1-51bb-a2c5-5f5d44b70597",
+       "label": "B",
+       "content": "the National Revenue Authority",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6daa4448-d7e7-57cc-a5ed-f7b6549c347a",
+       "label": "C",
+       "content": "the National Telecommunications Commission (NATCOM)",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "dceec70c-7666-5a01-9781-e937d4c1a7cc",
+       "label": "D",
+       "content": "the Sierra Leone Ports and Harbours Authority",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "14f2748d-4f1c-5c86-baf4-73af2cde344b",
+     "key": "com-cm-08",
+     "stem": "A trader who cannot read is best reached by",
+     "image_url": null,
+     "explanation": "Illiteracy is a barrier to written messages; radio, phone calls and pictures overcome it.\n\n**Why the other options are wrong**\n\n- long written reports: Written reports need literacy.\n- email newsletters: Email needs reading skills.\n- printed catalogues with no pictures: Text without pictures needs literacy.",
+     "position": 8,
+     "options": [
+      {
+       "id": "505175d0-c840-51cb-afff-187434db6be9",
+       "label": "A",
+       "content": "long written reports",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bf1c6257-90be-5e6f-89d6-6b4b89c49f99",
+       "label": "B",
+       "content": "email newsletters",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "afd1208d-07a1-54e1-b19c-7dbd845f7eab",
+       "label": "C",
+       "content": "printed catalogues with no pictures",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a07250c8-2efa-552d-b90c-3ef1a3be8de3",
+       "label": "D",
+       "content": "oral and visual messages",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2753a1b1-88aa-548d-b410-2e8d2a6342cf",
+   "topic": "Warehousing",
+   "title": "Warehousing: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on warehousing, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 124,
+   "questions": [
+    {
+     "id": "ba25ea2b-873f-5a0f-af60-9e6f58fbb0b8",
+     "key": "com-wh-01",
+     "stem": "Warehousing removes the hindrance of",
+     "image_url": null,
+     "explanation": "Warehouses hold goods from production until consumption, creating time utility.\n\n**Why the other options are wrong**\n\n- place: Transport removes the hindrance of place.\n- risk: Insurance removes the hindrance of risk.\n- ignorance: Advertising removes the hindrance of ignorance.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f127d0bd-ee2c-5051-a632-21f511790aea",
+       "label": "A",
+       "content": "time",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "564646a4-dbf3-5163-97f6-9d48eb2ebd9f",
+       "label": "B",
+       "content": "place",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6605eda1-20b1-5f6e-86f2-1f2d8d0f9e97",
+       "label": "C",
+       "content": "risk",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2a716661-9513-5211-bf79-35e27dc6c16c",
+       "label": "D",
+       "content": "ignorance",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ce4fc9cf-567d-512d-b5c7-a96a3c998db0",
+     "key": "com-wh-02",
+     "stem": "A warehouse where imported goods are kept until import duty is paid is a",
+     "image_url": null,
+     "explanation": "Bonded warehouses are under customs control; duty is paid only when goods are released for home use.\n\n**Why the other options are wrong**\n\n- cold store: A cold store keeps perishables cool.\n- private warehouse: A private warehouse holds the owner's own goods, duty paid.\n- cooperative warehouse: This is shared by members of a cooperative.",
+     "position": 2,
+     "options": [
+      {
+       "id": "85f80b6b-b0ae-50d5-97d9-3773df03e8ff",
+       "label": "A",
+       "content": "cold store",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c04beffa-9234-5deb-bc22-2c4836d3ac94",
+       "label": "B",
+       "content": "bonded warehouse",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "757d8087-91ac-54d2-a83e-78c93d05aa90",
+       "label": "C",
+       "content": "private warehouse",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7494d123-4fb3-5865-9c91-ffb6b9991237",
+       "label": "D",
+       "content": "cooperative warehouse",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c9f8169e-c570-51e2-897a-212a8a4acf99",
+     "key": "com-wh-03",
+     "stem": "An advantage of a bonded warehouse to the importer is that",
+     "image_url": null,
+     "explanation": "The importer pays duty in instalments, batch by batch, and none on re-exports.\n\n**Why the other options are wrong**\n\n- no duty is ever paid on goods sold at home: Duty must be paid before release for home use.\n- customs officers cannot inspect the goods: The goods are under customs control.\n- goods cannot be repacked: Goods may be sampled, repacked or blended in bond.",
+     "position": 3,
+     "options": [
+      {
+       "id": "3b1d9246-7612-5f68-89fe-baed3b45b45f",
+       "label": "A",
+       "content": "no duty is ever paid on goods sold at home",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "df7a38f0-b3b6-514d-8e03-307994070330",
+       "label": "B",
+       "content": "customs officers cannot inspect the goods",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a48c9803-d480-5ce1-a8b8-4b795c30d00c",
+       "label": "C",
+       "content": "duty is paid only on the goods taken out",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d8d9e43a-752a-5aaa-8676-87470aaa62ad",
+       "label": "D",
+       "content": "goods cannot be repacked",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9086d269-1bf6-5a71-87c8-57ddb0b3b259",
+     "key": "com-wh-04",
+     "stem": "Which warehouse document is a document of title that can be pledged to a bank as security?",
+     "image_url": null,
+     "explanation": "A warehouse warrant can be transferred by endorsement and used as collateral.\n\n**Why the other options are wrong**\n\n- Warehouse keeper's receipt: This is only a receipt; it is not transferable.\n- Goods received note: This only records goods arriving.\n- Bin card: A bin card is a stock record.",
+     "position": 4,
+     "options": [
+      {
+       "id": "de0a7e8a-c099-5cd1-bc7a-14d64010777a",
+       "label": "A",
+       "content": "Warehouse keeper's receipt",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fdeed82c-bd89-534a-a60d-28a62ca1e670",
+       "label": "B",
+       "content": "Goods received note",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "803a89ed-0ebc-5d18-baf1-c97bb3af5095",
+       "label": "C",
+       "content": "Bin card",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7706d1df-0e9b-5a06-bcf4-429168ac0c75",
+       "label": "D",
+       "content": "Warehouse warrant",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "53613778-95d5-567d-bc0a-ebdec1766883",
+     "key": "com-wh-05",
+     "stem": "Issuing older stock before newer stock is called",
+     "image_url": null,
+     "explanation": "FIFO stops goods expiring or deteriorating on the shelves.\n\n**Why the other options are wrong**\n\n- last in, first out: That issues newest stock first.\n- reorder level: Reorder level is the stock level that triggers a new order.\n- buffer stock: Buffer stock is a safety reserve.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9feab912-ad90-5ae8-a668-80e7b56b6d54",
+       "label": "A",
+       "content": "first in, first out (FIFO)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "805a5c95-dbb0-5707-a45d-5e97158b1458",
+       "label": "B",
+       "content": "last in, first out",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "38d97cef-d49c-53d1-be0c-93827cf489d5",
+       "label": "C",
+       "content": "reorder level",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9f8c98ec-5f08-5a9f-b47d-4be4047cd40f",
+       "label": "D",
+       "content": "buffer stock",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5a071d37-d7db-5d59-9e5c-e73d75c5749e",
+     "key": "com-wh-06",
+     "stem": "A wholesaler sells 40 cartons a day. Delivery takes 5 days and a buffer stock of 100 cartons is kept. What is the reorder level?",
+     "image_url": null,
+     "explanation": "Reorder level = daily use × lead time + buffer stock = 40 × 5 + 100 = 300 cartons.\n\n**Why the other options are wrong**\n\n- 200 cartons: You left out the buffer stock.\n- 145 cartons: You added the daily sales and the lead time instead of multiplying them.\n- 100 cartons: That is only the buffer stock.",
+     "position": 6,
+     "options": [
+      {
+       "id": "16376530-8cc6-5e39-950d-65de9be37fbf",
+       "label": "A",
+       "content": "100 cartons",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f2e7d309-c8a6-55fc-8b09-de1d7d656b44",
+       "label": "B",
+       "content": "145 cartons",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7dbd83b4-25bb-59b6-bf01-479794a0343d",
+       "label": "C",
+       "content": "200 cartons",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b28e6e71-e1a9-5d42-aa71-dba309fff93a",
+       "label": "D",
+       "content": "300 cartons",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fda73f7e-bc47-5be2-ad5f-71dac2d362ea",
+     "key": "com-wh-07",
+     "stem": "A trader buys 200 bags of rice at NLe 400 each, stores them for 4 months at NLe 15 per bag per month, and sells them at NLe 500 each. What is the profit?",
+     "image_url": null,
+     "explanation": "Revenue $= 200 \\times 500 = 100000$; cost $= 200 \\times 400 + 200 \\times 15 \\times 4 = 92000$; profit $= $ NLe 8,000.\n\n**Why the other options are wrong**\n\n- 20000 NLe: You forgot the storage cost.\n- 17000 NLe: You charged storage for one month only.\n- 12000 NLe: That is the storage cost.",
+     "position": 7,
+     "options": [
+      {
+       "id": "a1b3bdea-e193-57ad-9fe7-6996734f8a3a",
+       "label": "A",
+       "content": "8000 NLe",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1c6dc941-0346-55c6-85ee-58a2a3fb35ee",
+       "label": "B",
+       "content": "12000 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cc3ba090-a8e3-5d9e-811d-db2aa78cf438",
+       "label": "C",
+       "content": "17000 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "30957d9e-216c-58e9-b2b7-9f8fd75d4e2f",
+       "label": "D",
+       "content": "20000 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "13625547-0e8d-5d29-80e6-f22b11c852e4",
+     "key": "com-wh-08",
+     "stem": "Which is a feature of a good warehouse?",
+     "image_url": null,
+     "explanation": "A good warehouse is well located, secure, dry, fire-protected and well recorded.\n\n**Why the other options are wrong**\n\n- No fire protection, to save money: Fire protection is essential.\n- Damp storage rooms: Goods must be kept dry.\n- No records of goods received: Proper records are essential.",
+     "position": 8,
+     "options": [
+      {
+       "id": "1885fa6a-0b7c-5573-8346-03d7ce4be2d0",
+       "label": "A",
+       "content": "No fire protection, to save money",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a6840137-c5b1-5fce-9ab9-fa24f471a4d6",
+       "label": "B",
+       "content": "Good location near transport routes",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "915c3771-7751-54c5-9de1-6a30690d02cc",
+       "label": "C",
+       "content": "Damp storage rooms",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "364501f5-7bb7-537a-a823-043daef2e967",
+       "label": "D",
+       "content": "No records of goods received",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "4f5759d2-89a2-556d-9866-20f7199f0488",
+   "topic": "Marketing and Advertising",
+   "title": "Marketing and Advertising: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on marketing and advertising, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 125,
+   "questions": [
+    {
+     "id": "58062c39-5490-5a11-a7cc-9859bff0a208",
+     "key": "com-ma-01",
+     "stem": "The marketing concept states that a firm should",
+     "image_url": null,
+     "explanation": "Marketing starts with the customer's wants, not with the product.\n\n**Why the other options are wrong**\n\n- produce goods cheaply and wait for buyers: That is the production concept.\n- push whatever it makes with strong selling: That is the selling concept.\n- advertise only on television: This is not a concept of marketing.",
+     "position": 1,
+     "options": [
+      {
+       "id": "300b487b-c18d-521a-be85-8064e6ac1bbb",
+       "label": "A",
+       "content": "produce goods cheaply and wait for buyers",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "85f142fd-97b8-5fff-9f8a-8ece56c861ee",
+       "label": "B",
+       "content": "push whatever it makes with strong selling",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f1b0d8c0-9ebc-5802-8847-339755988db9",
+       "label": "C",
+       "content": "find out what customers want and produce to satisfy them",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b5028279-8b17-5abd-b525-d6cc0966a269",
+       "label": "D",
+       "content": "advertise only on television",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3619b119-063d-5c8a-a378-dbd16a9a9ea2",
+     "key": "com-ma-02",
+     "stem": "The four Ps of the marketing mix are product, price, place and",
+     "image_url": null,
+     "explanation": "Product, price, place and promotion must fit together to suit the target customer.\n\n**Why the other options are wrong**\n\n- production: Production is not one of the four Ps.\n- profit: Profit is a goal, not a P of the mix.\n- packaging: Packaging is part of the product.",
+     "position": 2,
+     "options": [
+      {
+       "id": "25dbfdd4-d52b-536e-9132-556a02accbb4",
+       "label": "A",
+       "content": "production",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2fed349a-aed6-5ea9-ac36-15797decf27b",
+       "label": "B",
+       "content": "profit",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c6d60753-040f-5671-a4e7-b31a22359873",
+       "label": "C",
+       "content": "packaging",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dbb4ac44-387c-538c-9fbd-7a2f39f445d1",
+       "label": "D",
+       "content": "promotion",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "73cc85ae-2dac-5e2c-9576-eea225c916b3",
+     "key": "com-ma-03",
+     "stem": "At which stage of the product life cycle does competition become strongest and sales level off?",
+     "image_url": null,
+     "explanation": "At maturity most buyers already have the product, so firms compete hard for market share.\n\n**Why the other options are wrong**\n\n- Introduction: At introduction sales are low and competition weak.\n- Growth: In growth, sales are still rising fast.\n- Decline: In decline, sales fall and many competitors leave.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5cb68e80-ee3b-5e0b-8309-c17eef09c2b0",
+       "label": "A",
+       "content": "Maturity",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3a25f039-508f-5060-97f3-96545aae8a84",
+       "label": "B",
+       "content": "Introduction",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "782a6f73-45b5-5d46-bab2-88d5b4e398e9",
+       "label": "C",
+       "content": "Growth",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ce90a89a-d5b1-513e-a78c-f5bccb644992",
+       "label": "D",
+       "content": "Decline",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fb9b60af-8411-54e4-8b0d-ad84c5a8f004",
+     "key": "com-ma-04",
+     "stem": "Advertising by a group of producers to promote a type of product rather than a brand is",
+     "image_url": null,
+     "explanation": "For example, rice growers advertising 'Eat more local rice'.\n\n**Why the other options are wrong**\n\n- competitive advertising: Competitive advertising compares one brand with rivals.\n- informative advertising: Informative advertising gives facts about a product.\n- institutional advertising: Institutional advertising builds a firm's image.",
+     "position": 4,
+     "options": [
+      {
+       "id": "098948e3-238a-5a87-801c-ae81a4253878",
+       "label": "A",
+       "content": "competitive advertising",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9ddb43fd-9fc2-520c-8388-f51045be37f2",
+       "label": "B",
+       "content": "mass (generic or collective) advertising",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ec58be74-0632-54d9-9bda-3cc0d2ceed8f",
+       "label": "C",
+       "content": "informative advertising",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4c30ff80-d682-5e74-9d75-d1e40a76e30f",
+       "label": "D",
+       "content": "institutional advertising",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9c09bdd0-c0a4-52e3-a535-90aece21ed88",
+     "key": "com-ma-05",
+     "stem": "Setting a low price for a new product to win market share quickly is",
+     "image_url": null,
+     "explanation": "Penetration pricing attracts buyers away from rivals; the price may rise later.\n\n**Why the other options are wrong**\n\n- price skimming: Skimming starts high and lowers the price later.\n- cost-plus pricing: Cost-plus adds a mark-up to cost.\n- psychological pricing: Psychological pricing uses prices such as NLe 9.99.",
+     "position": 5,
+     "options": [
+      {
+       "id": "44efe582-e3e0-5780-89f2-824af44ed3d8",
+       "label": "A",
+       "content": "price skimming",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "65033a53-2e01-5301-b05e-a6dfa6b49768",
+       "label": "B",
+       "content": "cost-plus pricing",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "51a012e3-0796-5470-8552-ddef6c6da08f",
+       "label": "C",
+       "content": "penetration pricing",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "676b834a-6f2b-5e1a-bf5d-8e6f8a555a96",
+       "label": "D",
+       "content": "psychological pricing",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4d01f9ce-f8e7-515e-9711-d1936abdc200",
+     "key": "com-ma-06",
+     "stem": "A radio advert costs NLe 900 and reaches 300,000 listeners. What is the cost per thousand listeners?",
+     "image_url": null,
+     "explanation": "300,000 listeners = 300 thousands. Cost per thousand $= 900 \\div 300 = $ NLe 3.\n\n**Why the other options are wrong**\n\n- 0.003 NLe: You divided by the number of listeners, not by thousands of listeners.\n- 333 NLe: You divided the listeners by the cost.\n- 300 NLe: You divided by 3 instead of by 300 thousands.",
+     "position": 6,
+     "options": [
+      {
+       "id": "7ddb2c46-468a-5bb9-9412-38465a50016e",
+       "label": "A",
+       "content": "0.003 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "42aa70be-8afe-561c-b70b-d0a3ddbd4707",
+       "label": "B",
+       "content": "3 NLe",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "74b33cb5-4245-5cdb-aadd-27c8bf392b8b",
+       "label": "C",
+       "content": "300 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f85629bd-cca1-5ed8-97a0-395e1b5f2af2",
+       "label": "D",
+       "content": "333 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "000d3582-9235-5362-9f73-2d3018321b63",
+     "key": "com-ma-07",
+     "stem": "Free samples, discounts and competitions are examples of",
+     "image_url": null,
+     "explanation": "Sales promotion gives short-term incentives to buy now.\n\n**Why the other options are wrong**\n\n- public relations: PR builds goodwill and the firm's image.\n- personal selling: Personal selling is face-to-face selling by representatives.\n- market research: Market research gathers information about customers.",
+     "position": 7,
+     "options": [
+      {
+       "id": "e4a21ef3-0d62-5f3e-8a08-474ea374ccd4",
+       "label": "A",
+       "content": "public relations",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0fafea06-5184-5cc8-b8e4-e7dce4927b2d",
+       "label": "B",
+       "content": "personal selling",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dba11fd0-f8ca-5d66-84b9-7407e1eb2074",
+       "label": "C",
+       "content": "market research",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5352f73f-c837-5305-a2d5-17e7432a5498",
+       "label": "D",
+       "content": "sales promotion",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "147cbb67-dc4e-5b9d-b209-7237165ae476",
+     "key": "com-ma-08",
+     "stem": "Which is a disadvantage of advertising?",
+     "image_url": null,
+     "explanation": "Advertising can exaggerate, persuade people to buy what they do not need and add to costs.\n\n**Why the other options are wrong**\n\n- It informs consumers about new products: That is an advantage.\n- It helps firms produce on a large scale: That is an advantage.\n- It funds radio and newspapers: That is an advantage.",
+     "position": 8,
+     "options": [
+      {
+       "id": "f87abca4-8862-580c-bf82-ec43a136eba7",
+       "label": "A",
+       "content": "It may mislead consumers with false claims",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3cbc97fc-6f40-53a2-8cff-a940fb21de55",
+       "label": "B",
+       "content": "It informs consumers about new products",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3c47fd5b-313e-55b8-92f1-aca9d3e67a58",
+       "label": "C",
+       "content": "It helps firms produce on a large scale",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5a4fba7c-d2ba-5ee0-827f-6a9c22802957",
+       "label": "D",
+       "content": "It funds radio and newspapers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5e502a5a-9f9d-5d9e-8abd-1889bdf3f6d3",
+   "topic": "Banking",
+   "title": "Banking: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on banking, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 126,
+   "questions": [
+    {
+     "id": "a1f8f4e1-7376-5111-9dd3-421d8d24517b",
+     "key": "com-bk-01",
+     "stem": "Which is a function of the central bank but NOT of commercial banks?",
+     "image_url": null,
+     "explanation": "Only the central bank (the Bank of Sierra Leone) issues notes and coins.\n\n**Why the other options are wrong**\n\n- Accepting deposits from the public: Commercial banks do this.\n- Granting loans and overdrafts to traders: Commercial banks do this.\n- Providing safe deposit boxes: Commercial banks do this.",
+     "position": 1,
+     "options": [
+      {
+       "id": "958315ab-57bd-5608-a677-958866d0bc76",
+       "label": "A",
+       "content": "Accepting deposits from the public",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3f940bba-b3cf-52c9-aa6a-31ad0c875b0b",
+       "label": "B",
+       "content": "Issuing the national currency",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e095a848-690f-5839-82de-49976dec6c86",
+       "label": "C",
+       "content": "Granting loans and overdrafts to traders",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0a1d605e-5b5b-5a46-8d42-0c740248b94f",
+       "label": "D",
+       "content": "Providing safe deposit boxes",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "beb621ae-af03-5585-abe4-e35a5f70797b",
+     "key": "com-bk-02",
+     "stem": "The central bank acting as the lender of last resort means it",
+     "image_url": null,
+     "explanation": "When commercial banks run short of funds, the central bank lends to them to prevent a crisis.\n\n**Why the other options are wrong**\n\n- lends to any trader who is refused by other banks: It does not lend to the public.\n- is the last bank to open each day: This is not its meaning.\n- pays the government's last debts: This is not its meaning.",
+     "position": 2,
+     "options": [
+      {
+       "id": "1911f0c1-cc77-51cb-9163-a65b8195d042",
+       "label": "A",
+       "content": "lends to any trader who is refused by other banks",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ac1fca25-2e11-5229-b1f4-4a8958068ba8",
+       "label": "B",
+       "content": "is the last bank to open each day",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e56a06f2-2bb7-5c74-8e29-132eaa5be5cc",
+       "label": "C",
+       "content": "lends to commercial banks in difficulty",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "01aa7918-bd10-597b-b26a-7fcaa6855c07",
+       "label": "D",
+       "content": "pays the government's last debts",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fb7a900c-05fe-543e-a62d-ec5a2e965d5e",
+     "key": "com-bk-03",
+     "stem": "An account that gives the holder a cheque book and may allow an overdraft is a",
+     "image_url": null,
+     "explanation": "Current accounts suit business payments; they usually pay no interest.\n\n**Why the other options are wrong**\n\n- savings account: Savings accounts usually have no cheque book.\n- fixed deposit account: Fixed deposits are locked for a period.\n- loan account: A loan account records money borrowed.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d32f586b-3d4e-5f54-b82d-c1d53d287845",
+       "label": "A",
+       "content": "savings account",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a54c33df-893a-5dad-809b-7694173ce28d",
+       "label": "B",
+       "content": "fixed deposit account",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4d2ee84b-ebc2-5436-8304-65cf3a688101",
+       "label": "C",
+       "content": "loan account",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "31375bb0-c9af-5a61-81b6-871ed830de45",
+       "label": "D",
+       "content": "current account",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "94ddcec8-a6b3-5e5a-8206-4d7b5a94f980",
+     "key": "com-bk-04",
+     "stem": "A trader overdraws an average of NLe 8,000 for 3 months at 24% a year. What is the interest?",
+     "image_url": null,
+     "explanation": "$I = \\dfrac{P \\times R \\times T}{100} = \\dfrac{8000 \\times 24 \\times 3}{100 \\times 12} = $ NLe 480.\n\n**Why the other options are wrong**\n\n- 1920 NLe: You charged a full year's interest.\n- 5760 NLe: You multiplied by 3 years instead of 3 months.\n- 160 NLe: That is one month's interest; the overdraft lasted three months.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c38f2b7b-9da2-54be-a66c-529159c045dd",
+       "label": "A",
+       "content": "160 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "197bb620-8711-5437-903b-22a42b9f8dca",
+       "label": "B",
+       "content": "480 NLe",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6d2f550c-7849-55a9-b3f3-6788a1148924",
+       "label": "C",
+       "content": "1920 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3147b65e-3c6e-5216-891b-2f16a2592b9b",
+       "label": "D",
+       "content": "5760 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "703e5c82-173e-5499-8705-16a5bf97bde5",
+     "key": "com-bk-05",
+     "stem": "The bank on which a cheque is drawn is the",
+     "image_url": null,
+     "explanation": "The three parties are the drawer (signs), the drawee (bank) and the payee (receives).\n\n**Why the other options are wrong**\n\n- drawer: The drawer is the account holder who signs the cheque.\n- payee: The payee receives the money.\n- endorsee: An endorsee receives a cheque by endorsement.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d4fa75bd-b32c-591a-a7b3-1e565351b65c",
+       "label": "A",
+       "content": "drawee",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "721ea554-ed49-5d8a-9d50-9113ad33e3ac",
+       "label": "B",
+       "content": "drawer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d028eaac-4af8-5add-b753-9b753d47c4a5",
+       "label": "C",
+       "content": "payee",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c2bfc6c8-144a-5b25-9e5f-4fd7c7b410f7",
+       "label": "D",
+       "content": "endorsee",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b5bc5c4f-de6d-57e9-a977-35439739f9d1",
+     "key": "com-bk-06",
+     "stem": "A cheque presented for payment more than six months after its date is",
+     "image_url": null,
+     "explanation": "Banks refuse to pay stale cheques without the drawer's confirmation.\n\n**Why the other options are wrong**\n\n- a post-dated cheque: A post-dated cheque bears a future date.\n- a crossed cheque: A crossed cheque must be paid into an account.\n- a bearer cheque: A bearer cheque is payable to whoever holds it.",
+     "position": 6,
+     "options": [
+      {
+       "id": "7b6e8def-9326-57a5-93cc-7045078dcb78",
+       "label": "A",
+       "content": "a post-dated cheque",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "263340bf-7e37-51c3-9b4d-fdd117403936",
+       "label": "B",
+       "content": "a stale cheque",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f44504f5-0a77-5c52-a7f0-9395edd93763",
+       "label": "C",
+       "content": "a crossed cheque",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f09d66f7-6528-587d-9a24-339dddc0fbdb",
+       "label": "D",
+       "content": "a bearer cheque",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "703f0a94-2d25-5388-8150-0e0fc32e675f",
+     "key": "com-bk-07",
+     "stem": "A cheque with two parallel lines drawn across it",
+     "image_url": null,
+     "explanation": "A general crossing protects against theft because the money can be traced through an account.\n\n**Why the other options are wrong**\n\n- can be cashed over the counter by anyone: That is an open cheque.\n- is payable only after six months: Crossing has nothing to do with dates.\n- has been dishonoured: Crossing does not mean dishonour.",
+     "position": 7,
+     "options": [
+      {
+       "id": "a5bb3f30-456f-5fec-80d9-70e70e9aa9be",
+       "label": "A",
+       "content": "can be cashed over the counter by anyone",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "08d9789e-f9e9-523d-ad1d-58ec45c55ca7",
+       "label": "B",
+       "content": "is payable only after six months",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fb983597-3d0d-5352-9e67-b0795e8410d2",
+       "label": "C",
+       "content": "must be paid into a bank account",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "5c20b1e3-81a5-5314-ab60-fc1089659ff6",
+       "label": "D",
+       "content": "has been dishonoured",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ca899bc4-db71-5798-8f73-bf2d9657eb01",
+     "key": "com-bk-08",
+     "stem": "An instruction to a bank to pay a FIXED sum to a named payee at regular intervals is a",
+     "image_url": null,
+     "explanation": "Standing orders suit fixed payments such as rent and loan repayments.\n\n**Why the other options are wrong**\n\n- direct debit: A direct debit lets the payee collect varying sums.\n- bank draft: A bank draft is a cheque drawn by a bank on itself.\n- credit transfer: A credit transfer pays several people with one slip.",
+     "position": 8,
+     "options": [
+      {
+       "id": "23f78a4d-ebfd-5546-9022-84f4e801335e",
+       "label": "A",
+       "content": "direct debit",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e8ce26d8-2c0d-5ca7-9d9b-7dad1315085a",
+       "label": "B",
+       "content": "bank draft",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7d6e8aa0-87cc-52d4-84bd-234033f1c2ef",
+       "label": "C",
+       "content": "credit transfer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "46600a83-452f-5181-9278-7d426f66778b",
+       "label": "D",
+       "content": "standing order",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "7359403daf58"
+}
