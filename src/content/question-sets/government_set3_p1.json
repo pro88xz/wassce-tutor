@@ -1,0 +1,1408 @@
+{
+ "name": "government_set3_p1",
+ "label": "Government: set 3 (Sierra Leone from pre-colonial times to 1991)",
+ "subject_slug": "government",
+ "papers": [
+  {
+   "id": "25f0027b-560d-5d04-a7c9-b1d6071a18c8",
+   "topic": "Pre-Colonial Political Systems of the Mende and Temne",
+   "title": "Pre-Colonial Political Systems of the Mende and Temne: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on pre-colonial political systems of the mende and temne, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 140,
+   "questions": [
+    {
+     "id": "b58146da-5b04-5372-97af-4fbb79dfcac0",
+     "key": "gov-pm-01",
+     "stem": "Among the pre-colonial Mende, the society that made laws, settled disputes and could check the chief was the",
+     "image_url": null,
+     "explanation": "The Poro had political, judicial and educational roles among the Mende.\n\n**Why the other options are wrong**\n\n- Sande: The Sande (Bondo) is the women's society that trained girls.\n- Ragbenle: The Ragbenle is associated with the eastern Temne.\n- Freemasons: Freemasonry is a European society, not a Mende institution.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a23ddb7c-c2d3-53f4-a5c3-6a83e0666cb9",
+       "label": "A",
+       "content": "Poro",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ab639803-0954-5f3b-8750-c7738e3fb0dd",
+       "label": "B",
+       "content": "Sande",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5fa3ce28-e55a-5d9c-8c7a-4d530ebd6e3e",
+       "label": "C",
+       "content": "Ragbenle",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7e3dd610-2bb1-5609-8d08-538aa6cf49d9",
+       "label": "D",
+       "content": "Freemasons",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "02728be8-e127-55c8-81b9-0c33c190d492",
+     "key": "gov-pm-02",
+     "stem": "Kantha in Temne political tradition refers to",
+     "image_url": null,
+     "explanation": "During kantha the chief-elect is taught the law, history and boundaries of the chiefdom.\n\n**Why the other options are wrong**\n\n- the council of warriors that advised the chief on war: Kantha is not a council.\n- the annual tribute of rice and labour paid to the chief: Tribute is not called kantha.\n- the society that initiated Temne girls into womanhood: That is the Bondo society.",
+     "position": 2,
+     "options": [
+      {
+       "id": "89a0229c-85f8-5ae8-9762-186d1b2c072d",
+       "label": "A",
+       "content": "the council of warriors that advised the chief on war",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "96c6afd7-4b34-5e8d-bb3d-2465ff946422",
+       "label": "B",
+       "content": "the annual tribute of rice and labour paid to the chief",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4fb59a65-d5ce-51b3-9397-48df189d1a00",
+       "label": "C",
+       "content": "the society that initiated Temne girls into womanhood",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ed45c3f1-144a-53ee-941b-397de67ad47a",
+       "label": "D",
+       "content": "the seclusion and instruction of a chief-elect before installation",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f7055911-150a-53ae-9e3a-af66a2855196",
+     "key": "gov-pm-03",
+     "stem": "A famous Mende woman ruler of the nineteenth century was",
+     "image_url": null,
+     "explanation": "Madam Yoko ruled the Kpaa Mende from Senehun.\n\n**Why the other options are wrong**\n\n- Bai Bureh: Bai Bureh was a Temne ruler from Kasseh.\n- King Naimbana: Naimbana was a Temne ruler of Koya.\n- Bai Farima: Bai is a Temne title.",
+     "position": 3,
+     "options": [
+      {
+       "id": "704e683c-00ca-50b1-a89f-e884551e3a63",
+       "label": "A",
+       "content": "Madam Yoko",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4246d48c-ee5c-5653-81ba-def0e7a0d20d",
+       "label": "B",
+       "content": "Bai Bureh",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e600db24-6899-5d8d-9f4c-95fc3b744a70",
+       "label": "C",
+       "content": "King Naimbana",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "21da4d7e-1dbc-5941-a722-50af4cf57959",
+       "label": "D",
+       "content": "Bai Farima",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2700ebf5-fb87-5efb-8066-8e8f81372c94",
+     "key": "gov-pm-04",
+     "stem": "Which of the following was common to both the Mende and Temne political systems?",
+     "image_url": null,
+     "explanation": "Both systems drew chiefs from ruling families, advised by elders and societies.\n\n**Why the other options are wrong**\n\n- Chiefs were directly elected by all adults: Chiefs were chosen by elders and societies, not universal vote.\n- All power was held by a single kingdom: Both peoples lived in many independent chiefdoms.\n- Women could never hold any office: Mende women could become chiefs.",
+     "position": 4,
+     "options": [
+      {
+       "id": "40962241-f98c-5334-9fe7-0fbc6787ea77",
+       "label": "A",
+       "content": "Chiefs were directly elected by all adults",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bbb68f31-8290-5d90-bfe5-c709cfccc089",
+       "label": "B",
+       "content": "All power was held by a single kingdom",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a3face6e-cc42-509b-b2b3-8bc2cf54711a",
+       "label": "C",
+       "content": "Women could never hold any office",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ce251c99-3f77-5d97-8ce7-1c8d9ced391c",
+       "label": "D",
+       "content": "Chiefs were chosen from ruling families or houses",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7fa2285b-690b-5146-9795-13b17b050f9b",
+     "key": "gov-pm-05",
+     "stem": "A major difference between the Temne and Mende systems was that",
+     "image_url": null,
+     "explanation": "Muslim scholars served as advisers in many northern chiefdoms, and titles such as Alimamy were used.\n\n**Why the other options are wrong**\n\n- the Temne had no chiefs and were ruled only by elders: The Temne had paramount chiefs with titles such as Bai.\n- the Mende had no secret societies of any political importance: The Mende had the Poro and Sande.\n- the Mende lived only in the north and were ruled by one king: The Mende live mainly in the south and east.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b9ccc74d-bb0b-55be-8756-9296cd47db6f",
+       "label": "A",
+       "content": "Islam had a stronger influence on many northern Temne chiefdoms",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "bcbdc534-c154-5984-aa90-0ef83c7f5860",
+       "label": "B",
+       "content": "the Temne had no chiefs and were ruled only by elders",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a46f5c16-233e-539b-ad32-9c36559aa8e4",
+       "label": "C",
+       "content": "the Mende had no secret societies of any political importance",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c546c47c-212e-5be0-9300-5bc883bb3a6f",
+       "label": "D",
+       "content": "the Mende lived only in the north and were ruled by one king",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "80f98e19-2b9a-53dc-ae39-23f45c5e896f",
+   "topic": "British Colonial Administration in Sierra Leone",
+   "title": "British Colonial Administration in Sierra Leone: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on british colonial administration in sierra leone, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 141,
+   "questions": [
+    {
+     "id": "d0c1a9b7-2461-52bd-b00b-e4b3698517b5",
+     "key": "gov-ca-01",
+     "stem": "Sierra Leone became a British Crown Colony in",
+     "image_url": null,
+     "explanation": "The Colony was taken over by the Crown on 1 January 1808.\n\n**Why the other options are wrong**\n\n- 1787: 1787 was the founding of the Province of Freedom.\n- 1792: 1792 was the arrival of the Nova Scotians and the founding of Freetown.\n- 1896: 1896 was the declaration of the Protectorate.",
+     "position": 1,
+     "options": [
+      {
+       "id": "29e6c631-228a-534d-89a0-b98176f1a8ec",
+       "label": "A",
+       "content": "1787",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "99470fde-3630-52cf-b03d-f5cdbb6664fa",
+       "label": "B",
+       "content": "1792",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "95df69b4-ed7d-59f4-a080-1f8c0c3de7e3",
+       "label": "C",
+       "content": "1808",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "dcfb0a02-fa3a-5206-afe1-b838dae35ed3",
+       "label": "D",
+       "content": "1896",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d4e22ae8-8d90-51c7-9649-8bec69d29cf2",
+     "key": "gov-ca-02",
+     "stem": "The British declared a Protectorate over the hinterland of Sierra Leone in",
+     "image_url": null,
+     "explanation": "The Protectorate was declared on 31 August 1896, partly to block French expansion.\n\n**Why the other options are wrong**\n\n- 1808: 1808 was when the Colony became a Crown Colony.\n- 1898: 1898 was the Hut Tax War.\n- 1924: 1924 was the Slater Constitution.",
+     "position": 2,
+     "options": [
+      {
+       "id": "e5abbb71-7c1e-5bca-95a0-680f7ec6625d",
+       "label": "A",
+       "content": "1808",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6b3c2d6b-aea0-5a66-8aae-4152d34d2040",
+       "label": "B",
+       "content": "1896",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "af19e3a4-31e2-591a-96ad-a830ddd57821",
+       "label": "C",
+       "content": "1898",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0ea84f9a-889a-54ea-b759-6921d2af1def",
+       "label": "D",
+       "content": "1924",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "306d3e39-4ec7-57ad-a693-b3e0d0c3008b",
+     "key": "gov-ca-03",
+     "stem": "The Hut Tax of 1898 was imposed by Governor",
+     "image_url": null,
+     "explanation": "Cardew's house tax provoked the Hut Tax War.\n\n**Why the other options are wrong**\n\n- Alexander Ransford Slater: Slater gave his name to the 1924 Constitution.\n- Hubert Stevenson: Stevenson proposed the 1951 constitution.\n- Maurice Dorman: Dorman was the first Governor-General at independence.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c271e6cc-9a77-53f4-93cb-246b54b09c88",
+       "label": "A",
+       "content": "Alexander Ransford Slater",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0aa4859d-f1dd-5e87-bf4d-c38c35086c40",
+       "label": "B",
+       "content": "Hubert Stevenson",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "893543b7-def0-559c-b069-fb4aea7dbd8d",
+       "label": "C",
+       "content": "Frederic Cardew",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "25d9eee0-cf11-53f0-b4f4-8e824ca91681",
+       "label": "D",
+       "content": "Maurice Dorman",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "933b8ab9-7233-5b73-8598-62b8ce4c6aba",
+     "key": "gov-ca-04",
+     "stem": "The leader of resistance in the north during the Hut Tax War was",
+     "image_url": null,
+     "explanation": "Bai Bureh of Kasseh fought a guerrilla war in 1898 before being captured and exiled.\n\n**Why the other options are wrong**\n\n- Madam Yoko: Madam Yoko cooperated with the British.\n- Siaka Stevens: Stevens was a twentieth-century politician.\n- Milton Margai: Margai led Sierra Leone to independence.",
+     "position": 4,
+     "options": [
+      {
+       "id": "51d064b6-1fcb-519f-9ba0-2c302a2aad91",
+       "label": "A",
+       "content": "Madam Yoko",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "095eee14-19aa-55cb-9884-8de22d7ded20",
+       "label": "B",
+       "content": "Siaka Stevens",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "af4800d8-8a38-5b71-88e4-46e6d21a485d",
+       "label": "C",
+       "content": "Milton Margai",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d0781b33-2ff7-5c90-aac1-75163fe39915",
+       "label": "D",
+       "content": "Bai Bureh",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8bec2893-cdf7-50f9-80fb-63b6e7b6bf36",
+     "key": "gov-ca-05",
+     "stem": "Under indirect rule in the Protectorate, chiefs were supervised by",
+     "image_url": null,
+     "explanation": "District Commissioners were British officers who supervised chiefs in each district.\n\n**Why the other options are wrong**\n\n- the Legislative Council: The LegCo made laws mainly for the Colony.\n- the Poro society: The Poro was a traditional society, not a colonial supervisor.\n- the Prime Minister: There was no Prime Minister in the colonial period.",
+     "position": 5,
+     "options": [
+      {
+       "id": "89588420-8dfd-5753-a475-fbb4142694f4",
+       "label": "A",
+       "content": "District Commissioners",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b71ef8f0-2a3f-5720-92d3-792cc3ea8412",
+       "label": "B",
+       "content": "the Legislative Council",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fbbf4b2b-edc4-5c2a-b0d1-5cdd4c40b519",
+       "label": "C",
+       "content": "the Poro society",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "47513b15-e0f0-5f91-98ae-246101d83842",
+       "label": "D",
+       "content": "the Prime Minister",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "856f1c4b-3a1c-500d-8ce7-4a7bb686c273",
+   "topic": "Colonial Constitutions of Sierra Leone",
+   "title": "Colonial Constitutions of Sierra Leone: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on colonial constitutions of sierra leone, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 142,
+   "questions": [
+    {
+     "id": "89c38db2-c0df-5312-91c3-c17d2aeff9d0",
+     "key": "gov-cc-01",
+     "stem": "The Executive and Legislative Councils of the Colony were created in",
+     "image_url": null,
+     "explanation": "The 1863 Constitution set up the two councils with an official majority.\n\n**Why the other options are wrong**\n\n- 1808: 1808 was when Sierra Leone became a Crown Colony.\n- 1924: 1924 introduced elected members.\n- 1951: 1951 gave an African majority in the LegCo.",
+     "position": 1,
+     "options": [
+      {
+       "id": "1a8d343a-ca55-56aa-8012-434600f4ce21",
+       "label": "A",
+       "content": "1808",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "85c93036-f094-50a6-a183-7557beca2806",
+       "label": "B",
+       "content": "1863",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9a9e40f3-794d-5aa1-945b-02d7014cf7fe",
+       "label": "C",
+       "content": "1924",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "33438a1a-3448-5488-bea3-937001376f03",
+       "label": "D",
+       "content": "1951",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a3f0a707-d696-51a2-9a1f-b98bbfa37f91",
+     "key": "gov-cc-02",
+     "stem": "The 1924 Slater Constitution was important because it",
+     "image_url": null,
+     "explanation": "Three members were elected by Colony voters on a limited franchise.\n\n**Why the other options are wrong**\n\n- gave Africans a majority in the Legislative Council: That happened in 1951.\n- granted full internal self-government to Sierra Leone: Independence came in 1961.\n- abolished the Governor's veto over laws passed by the Council: The Governor kept the veto.",
+     "position": 2,
+     "options": [
+      {
+       "id": "a3f4dcce-52e5-5608-9b54-fae4ac78bb18",
+       "label": "A",
+       "content": "gave Africans a majority in the Legislative Council",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ad92985e-d7d1-59fd-a636-308a355c6784",
+       "label": "B",
+       "content": "introduced elected members into the Legislative Council for the first time",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5515d36f-f05b-5972-bcca-8a3815c4d7f5",
+       "label": "C",
+       "content": "granted full internal self-government to Sierra Leone",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9bfeea81-b699-59ed-a8a3-ef25e3acb742",
+       "label": "D",
+       "content": "abolished the Governor's veto over laws passed by the Council",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ba904939-3bc3-5dad-a88c-20afde8a8069",
+     "key": "gov-cc-03",
+     "stem": "Under the 1924 Constitution, the Protectorate was represented in the Legislative Council by",
+     "image_url": null,
+     "explanation": "For the first time the Protectorate had a voice, though its representatives were nominated.\n\n**Why the other options are wrong**\n\n- fourteen elected members: Fourteen Protectorate members came with the 1951 constitution.\n- District Commissioners only: District Commissioners were officials, not Protectorate representatives.\n- members chosen by the Protectorate Assembly: The Protectorate Assembly did not exist until the 1940s.",
+     "position": 3,
+     "options": [
+      {
+       "id": "bf8db9a3-406f-5983-8f7c-31b0075d5f3b",
+       "label": "A",
+       "content": "fourteen elected members",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ec138551-2ba7-51ac-aac7-2cb044a6fbef",
+       "label": "B",
+       "content": "District Commissioners only",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6dcc2b84-25b6-5b53-986e-00df9519111f",
+       "label": "C",
+       "content": "three Paramount Chiefs nominated by the Governor",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d5b79490-8d32-5ddc-b3dc-8204905562d4",
+       "label": "D",
+       "content": "members chosen by the Protectorate Assembly",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f254cea7-9230-5d9f-9771-436fee2ead42",
+     "key": "gov-cc-04",
+     "stem": "The constitution that first gave Africans a majority in the Legislative Council came into effect in",
+     "image_url": null,
+     "explanation": "The 1951 (Stevenson) constitution united Colony and Protectorate members in one LegCo with an African majority.\n\n**Why the other options are wrong**\n\n- 1924: The 1924 Constitution kept an official majority.\n- 1958: 1958 introduced a Premier and an all-Sierra Leonean Executive Council.\n- 1961: 1961 was independence.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f62f2a67-6590-5cda-969d-acd51821bedc",
+       "label": "A",
+       "content": "1924",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b7e9bde0-1027-5a28-b629-fe803f830b79",
+       "label": "B",
+       "content": "1951",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5313f8a8-c374-5f09-bdfb-e2ac05dd285b",
+       "label": "C",
+       "content": "1958",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8c37fe73-d891-55f7-b5fe-9780608c30d3",
+       "label": "D",
+       "content": "1961",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6e43ee7f-c3a6-5615-ba0a-b090cfb93e89",
+     "key": "gov-cc-05",
+     "stem": "The 1951 constitution was strongly opposed by Colony leaders led by",
+     "image_url": null,
+     "explanation": "Bankole-Bright's National Council of Sierra Leone feared Protectorate domination.\n\n**Why the other options are wrong**\n\n- Milton Margai: Margai led the SLPP, which supported the constitution.\n- Siaka Stevens: Stevens was then a member of the SLPP.\n- Albert Margai: Albert Margai was an SLPP leader.",
+     "position": 5,
+     "options": [
+      {
+       "id": "319fefc0-2f6f-5481-b2e5-8cfb4ee18882",
+       "label": "A",
+       "content": "Milton Margai",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a0214fa3-fb5a-5414-9c7f-7e463888fdcb",
+       "label": "B",
+       "content": "Siaka Stevens",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3e4ab32b-fdc5-55cf-a721-f459ce21e517",
+       "label": "C",
+       "content": "Albert Margai",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "13a92d49-3394-5ee1-ae90-ef2100cdbe96",
+       "label": "D",
+       "content": "H. C. Bankole-Bright",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "84ef5610-7e84-586b-be13-221620b980fd",
+   "topic": "Nationalism and the Road to Independence",
+   "title": "Nationalism and the Road to Independence: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on nationalism and the road to independence, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 143,
+   "questions": [
+    {
+     "id": "3b79e2ef-2390-5e64-bbfb-21ce3f7e0d8c",
+     "key": "gov-na-01",
+     "stem": "The Sierra Leone branch of the West African Youth League was founded in 1938 by",
+     "image_url": null,
+     "explanation": "Wallace-Johnson organised workers and youth and was detained in 1939.\n\n**Why the other options are wrong**\n\n- J. E. Casely Hayford: Casely Hayford founded the NCBWA in the Gold Coast.\n- Milton Margai: Margai led the SLPP from 1951.\n- Lamina Sankoh: Sankoh led the People's Party.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a54c7f21-df13-59ff-bfe1-8b102bbb13c2",
+       "label": "A",
+       "content": "I. T. A. Wallace-Johnson",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "f02d4ea8-6b20-5d86-9309-b5560be0b8be",
+       "label": "B",
+       "content": "J. E. Casely Hayford",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f0a5e1b0-a72f-5e03-bce8-482f2e7dd879",
+       "label": "C",
+       "content": "Milton Margai",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c64185e2-2cf1-5742-a20f-7bb4df66d190",
+       "label": "D",
+       "content": "Lamina Sankoh",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f1188d2d-5c29-5e9d-baf2-069fd19b14c5",
+     "key": "gov-na-02",
+     "stem": "The Sierra Leone People's Party was formed in",
+     "image_url": null,
+     "explanation": "The SLPP was formed by the merger of the SOS, the People's Party and PEPU members.\n\n**Why the other options are wrong**\n\n- 1960: 1960 was the formation of the APC.\n- 1938: 1938 was the West African Youth League.\n- 1946: 1946 was the Sierra Leone Organisation Society.",
+     "position": 2,
+     "options": [
+      {
+       "id": "4455624e-ed94-5672-bf7b-0057c3415eef",
+       "label": "A",
+       "content": "1938",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "073d7d85-b9fa-5f44-a557-ac0c06ce89d7",
+       "label": "B",
+       "content": "1946",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4c9040ad-a6fa-55ad-a5c8-e26fb44d122a",
+       "label": "C",
+       "content": "1951",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9e04e8f6-6eb4-529b-ac6c-179398fedc8e",
+       "label": "D",
+       "content": "1960",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "275385b7-fd36-5299-b2ac-6f6b6e01d35f",
+     "key": "gov-na-03",
+     "stem": "Independence for Sierra Leone was agreed at a constitutional conference held in 1960 at",
+     "image_url": null,
+     "explanation": "The United National Front negotiated independence for 27 April 1961.\n\n**Why the other options are wrong**\n\n- Addis Ababa: Addis Ababa hosted the founding of the OAU.\n- Freetown: The conference was held in London.\n- Lomé: Lomé hosted the 1999 peace agreement.",
+     "position": 3,
+     "options": [
+      {
+       "id": "f64d7749-646b-59cc-9ea3-8cbc445b161b",
+       "label": "A",
+       "content": "Addis Ababa",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3f2d9198-0735-5347-8ef5-18afd45e8af3",
+       "label": "B",
+       "content": "Lancaster House, London",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9212d5d7-a99a-54ff-a366-c7279695f808",
+       "label": "C",
+       "content": "Freetown",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "96506dff-bac7-5e4f-bd9b-75189b98809a",
+       "label": "D",
+       "content": "Lomé",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e8663a3a-bed4-5037-b275-132db3dc1dab",
+     "key": "gov-na-04",
+     "stem": "Siaka Stevens refused to sign the independence agreement in 1960 because he",
+     "image_url": null,
+     "explanation": "He formed the Elections Before Independence Movement, which became the APC.\n\n**Why the other options are wrong**\n\n- wanted Sierra Leone to remain a British colony for ten more years: He supported independence.\n- wanted to be appointed Governor-General at independence: That was not his reason.\n- opposed the creation of a national Parliament for the new state: He did not oppose Parliament.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2f5bc8d2-d49d-5c23-8f29-d1006fc63ad7",
+       "label": "A",
+       "content": "wanted Sierra Leone to remain a British colony for ten more years",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "25604bf3-2485-5482-9976-096338ef2ae7",
+       "label": "B",
+       "content": "wanted to be appointed Governor-General at independence",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cd4fb82d-99f3-5cc0-a821-f96cadd29813",
+       "label": "C",
+       "content": "opposed the defence agreement and wanted elections before independence",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d05d0135-6045-5558-b8ea-a0f393900c27",
+       "label": "D",
+       "content": "opposed the creation of a national Parliament for the new state",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b93c08f3-a3b4-5fe4-b5b0-af54c9933da1",
+     "key": "gov-na-05",
+     "stem": "Which of the following encouraged nationalism in Sierra Leone?",
+     "image_url": null,
+     "explanation": "Soldiers returned with new ideas and expectations after fighting abroad.\n\n**Why the other options are wrong**\n\n- The Hut Tax being abolished in 1898: The Hut Tax was not abolished in 1898.\n- The absence of Western education: Western education encouraged nationalism.\n- Full equality between Africans and Europeans in the civil service: Discrimination, not equality, fuelled nationalism.",
+     "position": 5,
+     "options": [
+      {
+       "id": "fc9e6e14-ca42-5b5a-b743-238e319f3531",
+       "label": "A",
+       "content": "The Hut Tax being abolished in 1898",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c9ebfe58-844d-5dda-bb75-8a3cb07fd87e",
+       "label": "B",
+       "content": "The absence of Western education",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c5fc031f-02da-5731-859b-9abbc330bed4",
+       "label": "C",
+       "content": "Full equality between Africans and Europeans in the civil service",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "af188985-d2de-5227-9f19-60662e2cbee8",
+       "label": "D",
+       "content": "The return of ex-servicemen after the Second World War",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "03a73494-5a2c-50cd-a5f6-32869d5c9a35",
+   "topic": "Independence and the 1961 Constitution",
+   "title": "Independence and the 1961 Constitution: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on independence and the 1961 constitution, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 144,
+   "questions": [
+    {
+     "id": "80f9eeac-1afc-5944-92b3-f148d8b42668",
+     "key": "gov-61-01",
+     "stem": "Under the 1961 Constitution, the head of state of Sierra Leone was",
+     "image_url": null,
+     "explanation": "Sierra Leone was a constitutional monarchy within the Commonwealth from 1961 to 1971.\n\n**Why the other options are wrong**\n\n- the Prime Minister, as leader of the majority party: The Prime Minister was head of government.\n- an executive President elected by the people: An executive President came in 1971.\n- the Speaker of the House of Representatives: The Speaker presided over the House.",
+     "position": 1,
+     "options": [
+      {
+       "id": "6833f569-a40d-559f-9680-4308ea168746",
+       "label": "A",
+       "content": "the British monarch, represented by a Governor-General",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ec6eaa4f-97be-580f-b4c1-bdbb3ab01972",
+       "label": "B",
+       "content": "the Prime Minister, as leader of the majority party",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2c826d20-43e6-5cf5-91d5-6accfc426952",
+       "label": "C",
+       "content": "an executive President elected by the people",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "34106b54-e58d-54f2-86ee-71bff90a11b0",
+       "label": "D",
+       "content": "the Speaker of the House of Representatives",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "441ebe4d-9ac9-5529-8ece-5b24d6493bd1",
+     "key": "gov-61-02",
+     "stem": "The first Prime Minister of independent Sierra Leone was",
+     "image_url": null,
+     "explanation": "Sir Milton Margai led the SLPP government at independence.\n\n**Why the other options are wrong**\n\n- Sir Albert Margai: Albert Margai succeeded his brother in 1964.\n- Siaka Stevens: Stevens became Prime Minister in 1968.\n- Sir Maurice Dorman: Dorman was the first Governor-General.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8d2de003-061f-5d17-b5a3-3e160f908e21",
+       "label": "A",
+       "content": "Sir Albert Margai",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d19610e3-6183-57bd-8d8c-b83c834c527a",
+       "label": "B",
+       "content": "Sir Milton Margai",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f15aaf1b-d5fb-5dc7-9592-d52211419420",
+       "label": "C",
+       "content": "Siaka Stevens",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "34204503-e31d-586a-8771-55624b8d89cb",
+       "label": "D",
+       "content": "Sir Maurice Dorman",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8f1578df-f408-567e-a559-7bd309ab7317",
+     "key": "gov-61-03",
+     "stem": "Under the 1961 Constitution, the final court of appeal for Sierra Leone was the",
+     "image_url": null,
+     "explanation": "Final appeals went to the Privy Council in London until 1971.\n\n**Why the other options are wrong**\n\n- Supreme Court of Sierra Leone: The Supreme Court became final only in 1971.\n- International Court of Justice: The ICJ settles disputes between states.\n- ECOWAS Court of Justice: The ECOWAS Court did not then exist.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b736e7ac-30d7-510d-9165-5c328cfcd844",
+       "label": "A",
+       "content": "Supreme Court of Sierra Leone",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "82a9676f-6d19-5569-af6d-7f0bba3fdfbd",
+       "label": "B",
+       "content": "International Court of Justice",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5c1c8cd9-d9f0-52f9-bb6c-efca1340f645",
+       "label": "C",
+       "content": "Judicial Committee of the Privy Council",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "466bb3d2-b7d8-5d7e-9d41-d4665e065497",
+       "label": "D",
+       "content": "ECOWAS Court of Justice",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5e12c602-d62b-5b82-a50a-04e9baea598b",
+     "key": "gov-61-04",
+     "stem": "A weakness of the 1961 Constitution was that",
+     "image_url": null,
+     "explanation": "Many saw a foreign head of state as incomplete independence.\n\n**Why the other options are wrong**\n\n- it had no protection for human rights: It included fundamental rights.\n- it banned opposition parties: It allowed multi-party politics.\n- it had no legislature: It provided for the House of Representatives.",
+     "position": 4,
+     "options": [
+      {
+       "id": "40fe801c-6aa0-5bff-9c30-09864239a7f6",
+       "label": "A",
+       "content": "it had no protection for human rights",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b450b7ed-88d5-585d-8d0d-5005046ede62",
+       "label": "B",
+       "content": "it banned opposition parties",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "17ed0d55-2a84-547d-9a9f-71e3bed12319",
+       "label": "C",
+       "content": "it had no legislature",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "38a6c7ef-1e68-541a-b827-b79650f9a10d",
+       "label": "D",
+       "content": "the head of state was a foreign monarch",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "21e3a56c-2e34-5716-b25b-e64de7afc4e8",
+     "key": "gov-61-05",
+     "stem": "The National Reformation Council ruled Sierra Leone from",
+     "image_url": null,
+     "explanation": "The NRC, under Lt-Col Andrew Juxon-Smith, was ended by the Sergeants' revolt in 1968.\n\n**Why the other options are wrong**\n\n- 1992 to 1996: That was the NPRC.\n- 1997 to 1998: That was the AFRC.\n- 1971 to 1978: That was a civilian APC government.",
+     "position": 5,
+     "options": [
+      {
+       "id": "cc620ff6-3a77-5358-933c-83da39a5eeba",
+       "label": "A",
+       "content": "1967 to 1968",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "dfa80b95-f698-512d-9c84-7a1cb0347e76",
+       "label": "B",
+       "content": "1992 to 1996",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a166c7a5-89f8-547e-a21e-2ffefa3ed9a3",
+       "label": "C",
+       "content": "1997 to 1998",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "071c73a3-4e70-5eb1-8216-fd9568e5f53e",
+       "label": "D",
+       "content": "1971 to 1978",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "33a6d5be-a775-53d0-a1bc-bce4b68f99af",
+   "topic": "Republican Constitution of 1971",
+   "title": "Republican Constitution of 1971: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on republican constitution of 1971, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 145,
+   "questions": [
+    {
+     "id": "8a34e60b-c9c8-572e-b3ad-246476123115",
+     "key": "gov-71-01",
+     "stem": "The first executive President of Sierra Leone was",
+     "image_url": null,
+     "explanation": "Stevens was sworn in as executive President on 21 April 1971.\n\n**Why the other options are wrong**\n\n- Joseph Saidu Momoh: Momoh succeeded Stevens in 1985.\n- Sir Milton Margai: Margai was Prime Minister, not President.\n- Ahmad Tejan Kabbah: Kabbah was elected in 1996.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e2ecbee3-aaa6-5d2e-bfda-4249bf72d8d6",
+       "label": "A",
+       "content": "Joseph Saidu Momoh",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f7eafc40-f116-5593-bd4a-9386470d7082",
+       "label": "B",
+       "content": "Siaka Stevens",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "abeecfd6-3764-548f-8729-41b38d4ae67a",
+       "label": "C",
+       "content": "Sir Milton Margai",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "71402710-e43f-53db-8e8c-d71e912fb352",
+       "label": "D",
+       "content": "Ahmad Tejan Kabbah",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b25493eb-0938-56e4-b681-7cf127b8376b",
+     "key": "gov-71-02",
+     "stem": "Under the 1971 Republican Constitution, the President was",
+     "image_url": null,
+     "explanation": "The 1971 Constitution created an executive presidency.\n\n**Why the other options are wrong**\n\n- a ceremonial head of state only: That describes the Governor-General under the 1961 Constitution.\n- appointed by the British monarch: The republic ended the monarch's role.\n- chosen by the Chief Justice: The Chief Justice does not choose the President.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f8589ce7-2f70-59fe-8e3e-c510dda6b174",
+       "label": "A",
+       "content": "a ceremonial head of state only",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3005b387-f80d-53ae-b749-b73fdc8399b7",
+       "label": "B",
+       "content": "appointed by the British monarch",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6a2d6b82-7edd-57e0-bd48-5e17a9d47823",
+       "label": "C",
+       "content": "both head of state and head of government",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1d863343-af8f-5e03-b3cd-480fc4e07a73",
+       "label": "D",
+       "content": "chosen by the Chief Justice",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "79990302-3afa-570a-8706-705dba4ec342",
+     "key": "gov-71-03",
+     "stem": "One effect of the 1971 Constitution was that",
+     "image_url": null,
+     "explanation": "The Supreme Court of Sierra Leone became the final court of appeal.\n\n**Why the other options are wrong**\n\n- Sierra Leone left the Commonwealth: Sierra Leone remained in the Commonwealth.\n- all political parties were banned: Parties were banned only from 1978.\n- the Paramount Chiefs lost their seats in Parliament: PC members remained.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2dd8cde6-4d8d-5878-b38f-64eaeacb2265",
+       "label": "A",
+       "content": "Sierra Leone left the Commonwealth",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7ed70632-5f93-5cdf-a75c-27f0d13318a6",
+       "label": "B",
+       "content": "all political parties were banned",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4ba6a352-9bdb-54dd-8f77-c2a97cbf3672",
+       "label": "C",
+       "content": "the Paramount Chiefs lost their seats in Parliament",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "33d3c9da-f7f7-545b-91dc-36ad8775ad94",
+       "label": "D",
+       "content": "appeals to the Privy Council were abolished",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a451ff5d-b389-5d21-b376-dbcab2014b45",
+     "key": "gov-71-04",
+     "stem": "Shortly before the republic was declared in 1971, Stevens was supported against an attempted coup by troops from",
+     "image_url": null,
+     "explanation": "Guinea's President Sékou Touré sent troops under a defence agreement.\n\n**Why the other options are wrong**\n\n- Nigeria: Nigerian troops came later, with ECOMOG in the 1990s.\n- Britain: British troops intervened in 2000.\n- Liberia: Liberia did not send troops to support Stevens.",
+     "position": 4,
+     "options": [
+      {
+       "id": "422544bc-9ac6-537a-a1b2-7eb41bdaf15b",
+       "label": "A",
+       "content": "Guinea",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e4ccbe57-ac93-5ef8-bca5-061481f950c4",
+       "label": "B",
+       "content": "Nigeria",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6902ad33-9a46-59ab-9835-d90f5d795c68",
+       "label": "C",
+       "content": "Britain",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c0ba6084-f938-55c0-acfd-5ef665935889",
+       "label": "D",
+       "content": "Liberia",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "63f09bc9-e81c-57d1-8288-410e1957a68d",
+     "key": "gov-71-05",
+     "stem": "A major criticism of the 1971 Constitution is that it",
+     "image_url": null,
+     "explanation": "The powerful presidency and dominant party paved the way for the one-party state.\n\n**Why the other options are wrong**\n\n- gave too much power to the Governor-General: The office of Governor-General was abolished.\n- created a federal system: Sierra Leone remained unitary.\n- made the Privy Council the final court: It ended Privy Council appeals.",
+     "position": 5,
+     "options": [
+      {
+       "id": "1b8daa78-245d-52a3-95d6-a0c752878045",
+       "label": "A",
+       "content": "gave too much power to the Governor-General",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dbf18812-25ed-5e09-964f-93f5ae61b4e3",
+       "label": "B",
+       "content": "concentrated too much power in the President",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "38381ae5-48b2-569d-b4cd-c4dd844cf4b2",
+       "label": "C",
+       "content": "created a federal system",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b9461123-2656-5e9a-8ec4-32878cce33ba",
+       "label": "D",
+       "content": "made the Privy Council the final court",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c39d81a3-f1f8-5163-baa7-889e64f74548",
+   "topic": "The 1978 and 1991 Constitutions",
+   "title": "The 1978 and 1991 Constitutions: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the 1978 and 1991 constitutions, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 146,
+   "questions": [
+    {
+     "id": "ebceec69-abf9-5a28-afce-e6401f3d39c8",
+     "key": "gov-78-01",
+     "stem": "The 1978 Constitution made Sierra Leone",
+     "image_url": null,
+     "explanation": "Only the APC was allowed under the 1978 Constitution.\n\n**Why the other options are wrong**\n\n- a federal republic: Sierra Leone remained unitary.\n- a constitutional monarchy: It had been a republic since 1971.\n- a multi-party democracy: That was restored by the 1991 Constitution.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7189cbd5-0bed-5ebc-991e-922e6f37bc58",
+       "label": "A",
+       "content": "a federal republic",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "18f0458c-6602-5b75-b22a-cb910040431d",
+       "label": "B",
+       "content": "a constitutional monarchy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "024dd688-ff0d-5937-b374-516f05f0b658",
+       "label": "C",
+       "content": "a one-party state under the APC",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "86b48bf7-47c0-5bba-a7dc-4d2f1b40ac9e",
+       "label": "D",
+       "content": "a multi-party democracy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f40ebdf4-137d-5f3c-8210-f79a05352069",
+     "key": "gov-78-02",
+     "stem": "Under the 1978 Constitution, the President's term of office was",
+     "image_url": null,
+     "explanation": "The single party candidate was elected for a seven-year term.\n\n**Why the other options are wrong**\n\n- five years: Five-year terms apply under the 1991 Constitution.\n- four years: That is not correct for Sierra Leone.\n- for life: The term was fixed at seven years.",
+     "position": 2,
+     "options": [
+      {
+       "id": "3492f2f0-d1ae-5d0d-93b5-6f79d7aa12a6",
+       "label": "A",
+       "content": "five years",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2e5b1103-7f6b-511d-9330-a0d098876b42",
+       "label": "B",
+       "content": "four years",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ba025fc3-62ac-526a-b8a1-228afc185fe6",
+       "label": "C",
+       "content": "for life",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "18871b13-60e7-513f-8ed5-0e59e4d0b4eb",
+       "label": "D",
+       "content": "seven years",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "50702855-b8a3-5558-bd65-97dee231e953",
+     "key": "gov-78-03",
+     "stem": "The Constitutional Review Commission of 1990, which led to the 1991 Constitution, was chaired by",
+     "image_url": null,
+     "explanation": "The Tucker Commission recommended a return to multi-party democracy.\n\n**Why the other options are wrong**\n\n- Justice Edmond Cowan: Cowan chaired the review commission of 2013–2016.\n- Dr John Karefa-Smart: Karefa-Smart was a politician and party leader.\n- Sir Henry Lightfoot Boston: Lightfoot Boston was Governor-General in the 1960s.",
+     "position": 3,
+     "options": [
+      {
+       "id": "99d62bfd-2766-5443-aa4c-6246c33cc6f5",
+       "label": "A",
+       "content": "Dr Peter Tucker",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e7b7b3e8-205e-5d51-8a41-c5e2d4498e04",
+       "label": "B",
+       "content": "Justice Edmond Cowan",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b6c239be-4b4a-579b-89dc-6642dbb60fd0",
+       "label": "C",
+       "content": "Dr John Karefa-Smart",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a4fbe6a0-2805-5fb5-9d78-9e7ffc13c8b1",
+       "label": "D",
+       "content": "Sir Henry Lightfoot Boston",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "17040545-1623-5b68-91b9-ceb3082d6ef7",
+     "key": "gov-78-04",
+     "stem": "The 1991 Constitution of Sierra Leone came into force on",
+     "image_url": null,
+     "explanation": "It was approved by referendum in 1991 and took effect on 1 October.\n\n**Why the other options are wrong**\n\n- 27 April 1991: 27 April is Independence Day.\n- 19 April 1991: 19 April is Republic Day.\n- 29 April 1992: That was the date of the NPRC coup.",
+     "position": 4,
+     "options": [
+      {
+       "id": "8f823e40-2ec9-5b67-9e12-5faadb0fd333",
+       "label": "A",
+       "content": "27 April 1991",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f94cc17c-3f51-5dc0-8542-0d1605a703a8",
+       "label": "B",
+       "content": "1 October 1991",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a924d6c4-6204-54fa-a6ee-3f1a0d501cec",
+       "label": "C",
+       "content": "19 April 1991",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a06052b6-a6e9-544d-b640-2120750b57c0",
+       "label": "D",
+       "content": "29 April 1992",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9f37ebb1-0e44-540c-a958-52457be5cbb0",
+     "key": "gov-78-05",
+     "stem": "Under the 1991 Constitution, a President of Sierra Leone may serve",
+     "image_url": null,
+     "explanation": "The two-term limit is an entrenched provision.\n\n**Why the other options are wrong**\n\n- one seven-year term only: That is not the rule in the 1991 Constitution.\n- unlimited five-year terms: The 1991 Constitution sets a two-term limit.\n- two seven-year terms: Terms are five years long.",
+     "position": 5,
+     "options": [
+      {
+       "id": "58d25c1e-c81f-51e8-9204-684bcdf69d30",
+       "label": "A",
+       "content": "one seven-year term only",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e845e6e3-6f96-57c2-89fd-86ab0f0c064c",
+       "label": "B",
+       "content": "unlimited five-year terms",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "78a66382-5f31-5878-8a01-595ff23f2fde",
+       "label": "C",
+       "content": "no more than two five-year terms",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b9ecd2c1-9f2d-5699-9ed1-7f173508d4ea",
+       "label": "D",
+       "content": "two seven-year terms",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "8775d222545f"
+}

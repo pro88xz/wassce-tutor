@@ -438,5 +438,70 @@
    "8e217615-9dfd-54ef-9d8b-e5bf181b4371"
   ],
   "questions": 70
+ },
+ {
+  "name": "government_set1_p1",
+  "label": "Government: set 1 (political concepts and the organs of government)",
+  "subject_slug": "government",
+  "version": "81e6f36f99d3",
+  "papers": [
+   "b8a52d32-122f-5420-a11b-585c72484839",
+   "fa74ad91-47fc-5de2-b737-2d7c632ffbe3",
+   "93c7a177-efdb-54fb-b007-ee9c6e0d57b3",
+   "91537b54-4a02-5f16-9bcc-7bbe1815ce99",
+   "43b2cc1e-5311-5d89-a307-fade45021f42",
+   "e35f00f2-db4d-5884-a3bb-af6bfcf62344",
+   "0c00e4af-8a7d-593d-b861-26c4b0809b59",
+   "63a6ac69-e835-5b8d-9085-fc8fb0e2e521"
+  ],
+  "questions": 40
+ },
+ {
+  "name": "government_set2_p1",
+  "label": "Government: set 2 (rights, constitutions and political processes)",
+  "subject_slug": "government",
+  "version": "3ae6345d4f6c",
+  "papers": [
+   "ec775fd8-cd2e-5866-9183-c2ec1db6840d",
+   "1fbebbd0-e8d5-5aad-b4c7-8deb2c2594eb",
+   "42f03e6b-158c-5d03-bb92-0a7d7739170d",
+   "85b8b250-6ccb-5771-bf25-278e95545c42",
+   "4589fee5-015d-5d1b-98e3-414ef46a3027",
+   "99bef3c3-1541-52fb-8d8c-468ca57617ba",
+   "81ad8ee6-2afb-537a-b326-e3a61ddc262e",
+   "3cc7867b-2a82-5246-8b95-7f035d78cbd9",
+   "5f16176c-ab47-58cb-9f62-33802c5d592d"
+  ],
+  "questions": 45
+ },
+ {
+  "name": "government_set3_p1",
+  "label": "Government: set 3 (Sierra Leone from pre-colonial times to 1991)",
+  "subject_slug": "government",
+  "version": "8775d222545f",
+  "papers": [
+   "25f0027b-560d-5d04-a7c9-b1d6071a18c8",
+   "80f98e19-2b9a-53dc-ae39-23f45c5e896f",
+   "856f1c4b-3a1c-500d-8ce7-4a7bb686c273",
+   "84ef5610-7e84-586b-be13-221620b980fd",
+   "03a73494-5a2c-50cd-a5f6-32869d5c9a35",
+   "33a6d5be-a775-53d0-a1bc-bce4b68f99af",
+   "c39d81a3-f1f8-5163-baa7-889e64f74548"
+  ],
+  "questions": 35
+ },
+ {
+  "name": "government_set4_p1",
+  "label": "Government: set 4 (parties, military rule, chiefdoms and international relations)",
+  "subject_slug": "government",
+  "version": "ccc2b2ff3f65",
+  "papers": [
+   "ba4f46f6-c421-51e0-9447-d61f28637b67",
+   "a433efce-2e1d-5b1c-a7a3-0ad677e56371",
+   "78ff2a61-a56f-5905-8c32-a29f3e7cf10b",
+   "c405a49b-467a-5ddd-97f7-c171b252ca9c",
+   "533b04d2-ca0c-58f2-b932-50a988c3af3c"
+  ],
+  "questions": 25
  }
 ]

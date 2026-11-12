@@ -262,6 +262,25 @@ SETS += [
     },
 ]
 
+SETS += [
+    {
+        "module": ROOT / f"content/questions/government/set{n}_p1.py",
+        "subject_slug": "government",
+        "name": f"government_set{n}_p1",
+        "label": label,
+        "review": ROOT / f"content/questions/government/set{n}_p1.review.md",
+        "sort_from": 80 + 20 * n,
+        # Factual answers cannot be recomputed by code: an editor checked each one.
+        "checked": "facts",
+    }
+    for n, label in (
+        (1, "Government: set 1 (political concepts and the organs of government)"),
+        (2, "Government: set 2 (rights, constitutions and political processes)"),
+        (3, "Government: set 3 (Sierra Leone from pre-colonial times to 1991)"),
+        (4, "Government: set 4 (parties, military rule, chiefdoms and international relations)"),
+    )
+]
+
 OUT = ROOT / "src/content/question-sets"
 SITE = "https://wasscetutor.com"  # diagrams are served from the website so old app builds can show them too
 LABELS = "ABCD"
@@ -369,7 +388,7 @@ def build_set(cfg: dict, questions: list[Q], ordered: dict, svgs: dict[str, str]
             "paper_type": "Comprehension" if topic in passages else "Practice",
             "description": passage_markdown(passages[topic]) if topic in passages else (
                 f"{len(qs)} original WASSCE-style objective questions on {topic.lower()}, each with "
-                + ("an explanation" if cfg.get("checked") == "editor" else "a worked solution")
+                + ("an explanation" if cfg.get("checked") in ("editor", "facts") else "a worked solution")
                 + " and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers."
             ),
             "sort_order": cfg["sort_from"] + i,
@@ -416,6 +435,12 @@ def build_review(cfg: dict, questions: list[Q], ordered: dict, scope_note: str, 
                 "read each item before it is used in class.",
             ]
             if cfg.get("checked") == "editor"
+            else [
+                "These are factual questions, so the answers cannot be recomputed by code. An editor checked each answer",
+                "against the WASSCE Tutor notes and the 1991 Constitution of Sierra Leone, and checked that exactly one",
+                "option is correct. A teacher should still read each item before it is used in class.",
+            ]
+            if cfg.get("checked") == "facts"
             else [
                 "Every numerical answer below has been recomputed by code, and every wrong option is what its stated",
                 "mistake produces. Conceptual (non-numerical) answers cannot be recomputed: an editor checked that exactly",

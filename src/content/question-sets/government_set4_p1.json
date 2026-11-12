@@ -1,0 +1,1008 @@
+{
+ "name": "government_set4_p1",
+ "label": "Government: set 4 (parties, military rule, chiefdoms and international relations)",
+ "subject_slug": "government",
+ "papers": [
+  {
+   "id": "ba4f46f6-c421-51e0-9447-d61f28637b67",
+   "topic": "Major Political Parties in Sierra Leone",
+   "title": "Major Political Parties in Sierra Leone: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on major political parties in sierra leone, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 160,
+   "questions": [
+    {
+     "id": "c9d9713a-6bbf-55a6-bea2-623e872525d7",
+     "key": "gov-sp-01",
+     "stem": "The All People's Congress (APC) was founded in 1960 by",
+     "image_url": null,
+     "explanation": "Stevens formed the APC after refusing to sign the Lancaster House agreement.\n\n**Why the other options are wrong**\n\n- Milton Margai: Margai founded and led the SLPP.\n- Albert Margai: Albert Margai co-founded the PNP and later led the SLPP.\n- Charles Margai: Charles Margai founded the PMDC in 2006.",
+     "position": 1,
+     "options": [
+      {
+       "id": "775a5016-7f7c-595b-8d95-cf694a2a3311",
+       "label": "A",
+       "content": "Milton Margai",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b3116c12-d90c-56b2-8c27-cf03ee46de67",
+       "label": "B",
+       "content": "Siaka Stevens",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b17bd432-ef70-56e1-8d86-95619b7a662f",
+       "label": "C",
+       "content": "Albert Margai",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a88778b1-75da-5677-be20-c8cff5010cbf",
+       "label": "D",
+       "content": "Charles Margai",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4705e191-875e-5555-84a9-bf4568f94d5e",
+     "key": "gov-sp-02",
+     "stem": "The symbol of the Sierra Leone People's Party is the",
+     "image_url": null,
+     "explanation": "The SLPP's colour is green and its symbol the palm tree.\n\n**Why the other options are wrong**\n\n- rising sun: The rising sun is the APC's symbol.\n- cockerel: The cockerel is not the SLPP symbol.\n- open book: The open book is not the SLPP symbol.",
+     "position": 2,
+     "options": [
+      {
+       "id": "95b12d84-db04-577e-a3f9-5ded9953fa41",
+       "label": "A",
+       "content": "palm tree",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ee2a8232-dbe3-50d9-aa36-6f08c139ddc2",
+       "label": "B",
+       "content": "rising sun",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "05f85eca-ae1c-5cb6-8750-4fa7764e9193",
+       "label": "C",
+       "content": "cockerel",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "06c8b2f7-4ca8-58af-95f5-a52c62250092",
+       "label": "D",
+       "content": "open book",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "54148ff8-784f-5ee5-aede-728a69406cb6",
+     "key": "gov-sp-03",
+     "stem": "In which year did power pass peacefully from the APC to the SLPP through an election after the civil war?",
+     "image_url": null,
+     "explanation": "Julius Maada Bio of the SLPP won the 2018 run-off against Samura Kamara of the APC.\n\n**Why the other options are wrong**\n\n- 2007: In 2007 power passed from the SLPP to the APC.\n- 2012: The APC was re-elected in 2012.\n- 2002: The SLPP was re-elected in 2002.",
+     "position": 3,
+     "options": [
+      {
+       "id": "970bc996-0494-57d0-9567-8fff708ee0cd",
+       "label": "A",
+       "content": "2002",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7836bbf2-ee2a-57b2-a203-b42164969245",
+       "label": "B",
+       "content": "2007",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7e823d10-f9ed-59a9-9a22-eff0fe581c45",
+       "label": "C",
+       "content": "2012",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bd72df76-9a7a-5188-b623-54c19d3fa4ed",
+       "label": "D",
+       "content": "2018",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a119b456-c463-5378-81dd-806161848915",
+     "key": "gov-sp-04",
+     "stem": "The People's Movement for Democratic Change (PMDC), formed in 2006, was led by",
+     "image_url": null,
+     "explanation": "The PMDC split from the SLPP and backed Koroma in the 2007 run-off.\n\n**Why the other options are wrong**\n\n- Kandeh Yumkella: Yumkella led the National Grand Coalition (2017).\n- Samuel Sam-Sumana: Sam-Sumana led the Coalition for Change (2017).\n- John Karefa-Smart: Karefa-Smart led the UNPP in the 1990s.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f48c4387-bd28-5bb5-a101-cf19f442310d",
+       "label": "A",
+       "content": "Kandeh Yumkella",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6a53a84c-ab03-5856-b06c-be1632a3403d",
+       "label": "B",
+       "content": "Charles Margai",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5976b1cf-1aaa-54dc-80d8-c3e24dc398b8",
+       "label": "C",
+       "content": "Samuel Sam-Sumana",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b65cee37-baa0-5184-b909-f4c4d7cacc69",
+       "label": "D",
+       "content": "John Karefa-Smart",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e6ce0da6-4bc0-50bd-afbd-91ee8170457b",
+     "key": "gov-sp-05",
+     "stem": "Under Sierra Leone's law, political parties must",
+     "image_url": null,
+     "explanation": "The constitution and the Political Parties Act require parties to be national in character.\n\n**Why the other options are wrong**\n\n- be approved by the President before contesting any election: Parties are registered by the PPRC, not the President.\n- have at least one Paramount Chief among their national leaders: There is no such rule.\n- contest every by-election held anywhere in the country: There is no such requirement.",
+     "position": 5,
+     "options": [
+      {
+       "id": "8f9693c5-5252-53ff-ba8d-9b572ef95c2a",
+       "label": "A",
+       "content": "have a national character and not be based on ethnicity, religion or region",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e68ea903-f24e-5715-9289-a966570e6f71",
+       "label": "B",
+       "content": "be approved by the President before contesting any election",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "229e617e-b9f9-56a9-957f-b821901595e1",
+       "label": "C",
+       "content": "have at least one Paramount Chief among their national leaders",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5dec253c-53a4-59d1-8c2d-93caf775fce8",
+       "label": "D",
+       "content": "contest every by-election held anywhere in the country",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a433efce-2e1d-5b1c-a7a3-0ad677e56371",
+   "topic": "Military Regimes and the Civil War in Sierra Leone",
+   "title": "Military Regimes and the Civil War in Sierra Leone: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on military regimes and the civil war in sierra leone, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 161,
+   "questions": [
+    {
+     "id": "2251793a-7086-53a9-9856-88f78bb600e4",
+     "key": "gov-mr-01",
+     "stem": "The National Provisional Ruling Council (NPRC) came to power in 1992 under",
+     "image_url": null,
+     "explanation": "Young officers overthrew President Momoh on 29 April 1992.\n\n**Why the other options are wrong**\n\n- Major Johnny Paul Koroma: Koroma led the AFRC in 1997.\n- Lt-Col Andrew Juxon-Smith: Juxon-Smith led the NRC in 1967.\n- Brigadier David Lansana: Lansana intervened in 1967.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e53b1735-3d48-5a15-a5f7-ac9d2887b901",
+       "label": "A",
+       "content": "Major Johnny Paul Koroma",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7cb1da75-4196-5db5-a76b-516b1be65de2",
+       "label": "B",
+       "content": "Captain Valentine Strasser",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e608a457-fb69-5fa0-b0fd-84cea2851829",
+       "label": "C",
+       "content": "Lt-Col Andrew Juxon-Smith",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6935c13c-1c9f-546e-a330-be4536535bf5",
+       "label": "D",
+       "content": "Brigadier David Lansana",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "adde47e8-e1e7-5d1c-974b-baad77cca5cc",
+     "key": "gov-mr-02",
+     "stem": "The civil war in Sierra Leone began in March 1991 when the RUF attacked",
+     "image_url": null,
+     "explanation": "The RUF, led by Foday Sankoh, entered from Liberia with Charles Taylor's backing.\n\n**Why the other options are wrong**\n\n- Freetown: Freetown was invaded in January 1999.\n- Makeni in Bombali District: The war began in the east, on the Liberian border.\n- Bo in the Southern Province: The first attack was at Bomaru.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f9a5188d-0368-576b-9784-9c10b63eab29",
+       "label": "A",
+       "content": "Freetown",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "db627918-cfef-5cef-b18a-414fb743e77e",
+       "label": "B",
+       "content": "Makeni in Bombali District",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8d569125-8af0-5767-b26a-5a8cb99b1c07",
+       "label": "C",
+       "content": "Bomaru in Kailahun District",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b216307f-7524-5707-9c2e-c6a7cb9ce037",
+       "label": "D",
+       "content": "Bo in the Southern Province",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1f674ecd-c48e-5438-9229-a7df4d9f36f1",
+     "key": "gov-mr-03",
+     "stem": "The Lomé Peace Agreement between the government and the RUF was signed in",
+     "image_url": null,
+     "explanation": "It was signed on 7 July 1999 and provided for power-sharing and amnesty.\n\n**Why the other options are wrong**\n\n- 1996: 1996 was the Abidjan Peace Accord.\n- 2002: The war was declared over in 2002.\n- 1991: 1991 was the start of the war.",
+     "position": 3,
+     "options": [
+      {
+       "id": "48251023-f46a-5acb-b748-757ab149a272",
+       "label": "A",
+       "content": "1991",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5db558d0-067c-5600-b02a-3758dd5389d1",
+       "label": "B",
+       "content": "1996",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0001f9e0-af24-5994-a4f0-803397282089",
+       "label": "C",
+       "content": "1999",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "5016b5fc-6be6-59ad-8b6d-99a05707da58",
+       "label": "D",
+       "content": "2002",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "df89bd0a-38e1-5a05-a7a7-6972ea899ff5",
+     "key": "gov-mr-04",
+     "stem": "The body set up to hear testimony and explain the causes of the civil war was the",
+     "image_url": null,
+     "explanation": "The TRC reported in 2004, blaming bad governance, corruption and the marginalisation of youth.\n\n**Why the other options are wrong**\n\n- Anti-Corruption Commission: The ACC investigates corruption.\n- Political Parties Regulation Commission: The PPRC regulates political parties.\n- Public Service Commission: The PSC deals with public officers.",
+     "position": 4,
+     "options": [
+      {
+       "id": "281cb9f3-57cd-52c3-8f6e-fe46b9c5b1c7",
+       "label": "A",
+       "content": "Anti-Corruption Commission",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "83fc6e4f-d57e-536d-a106-df6f265009ae",
+       "label": "B",
+       "content": "Political Parties Regulation Commission",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5003dafb-7b76-563b-bbac-8548a3983e58",
+       "label": "C",
+       "content": "Public Service Commission",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5eb1b5cc-2432-582a-8f6c-f28747b466b9",
+       "label": "D",
+       "content": "Truth and Reconciliation Commission",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e7cb71fc-6ecd-5b25-b377-8d4329394ca8",
+     "key": "gov-mr-05",
+     "stem": "Which of the following is a feature of military rule?",
+     "image_url": null,
+     "explanation": "Military rulers suspend the constitution and govern through decrees.\n\n**Why the other options are wrong**\n\n- Periodic multi-party elections: Military regimes suspend elections.\n- An independent elected legislature: Military regimes dissolve legislatures.\n- Strict separation of powers: Military councils combine executive and legislative powers.",
+     "position": 5,
+     "options": [
+      {
+       "id": "914e3a69-e18c-5336-821e-dfe328d27704",
+       "label": "A",
+       "content": "Rule by decree",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2e43d17b-e95b-5910-a8cb-3b178a5ccd8a",
+       "label": "B",
+       "content": "Periodic multi-party elections",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3e59244b-18a1-5ecf-9732-bbcd19118b2c",
+       "label": "C",
+       "content": "An independent elected legislature",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "76a96918-8215-568b-9525-c1f8ec985935",
+       "label": "D",
+       "content": "Strict separation of powers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "78ff2a61-a56f-5905-8c32-a29f3e7cf10b",
+   "topic": "Traditional Authority and Local Government in Sierra Leone",
+   "title": "Traditional Authority and Local Government in Sierra Leone: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on traditional authority and local government in sierra leone, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 162,
+   "questions": [
+    {
+     "id": "ee7d28b3-8f74-5ff2-989d-995344dd2f15",
+     "key": "gov-ta-01",
+     "stem": "A Paramount Chief in Sierra Leone is elected by",
+     "image_url": null,
+     "explanation": "The Chieftaincy Act 2009 sets out the election procedure.\n\n**Why the other options are wrong**\n\n- all registered voters in the chiefdom, by secret ballot: Voting is limited to chiefdom councillors.\n- the Members of Parliament for the district: MPs do not elect chiefs.\n- the President alone, on the advice of the Minister: The President recognises, but does not elect, the chief.",
+     "position": 1,
+     "options": [
+      {
+       "id": "05986fb2-cfab-504a-8467-ad839da6f893",
+       "label": "A",
+       "content": "all registered voters in the chiefdom, by secret ballot",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "43b6a36e-528e-54bf-a1d1-0856a55e3622",
+       "label": "B",
+       "content": "chiefdom councillors from candidates of recognised ruling houses",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e73f668c-826e-524b-85f4-b7d80d530369",
+       "label": "C",
+       "content": "the Members of Parliament for the district",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bb7dd310-6229-5746-ac62-5fac63821dc8",
+       "label": "D",
+       "content": "the President alone, on the advice of the Minister",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "49f0c4d9-9854-5c6f-9157-318a558f0f9b",
+     "key": "gov-ta-02",
+     "stem": "How many chiefdoms are there in Sierra Leone since 2017?",
+     "image_url": null,
+     "explanation": "New chiefdoms were created in 2017, bringing the total to 190.\n\n**Why the other options are wrong**\n\n- 149: There were 149 chiefdoms before 2017.\n- 22: 22 is the number of local councils.\n- 14: 14 is the number of provincial districts.",
+     "position": 2,
+     "options": [
+      {
+       "id": "60867ee3-ecf8-56b8-aa02-3a8acc0f57cb",
+       "label": "A",
+       "content": "14",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9e448bfd-e97c-5288-a6f1-5224f2a69203",
+       "label": "B",
+       "content": "22",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "49b600ed-71fe-5be2-a306-66a44559b3bd",
+       "label": "C",
+       "content": "149",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c761c857-9c2b-53fb-8853-4211a9241a30",
+       "label": "D",
+       "content": "190",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "910ac7b4-e8cb-5d32-8df6-494232ead359",
+     "key": "gov-ta-03",
+     "stem": "The official who acts as deputy to a Paramount Chief is the",
+     "image_url": null,
+     "explanation": "The Chiefdom Speaker acts for the chief when the chief is absent.\n\n**Why the other options are wrong**\n\n- District Officer: District Officers are central government officials.\n- Mayor: Mayors head city councils.\n- Clerk of Parliament: The Clerk heads Parliament's administration.",
+     "position": 3,
+     "options": [
+      {
+       "id": "cfc3c770-6cd8-56ca-93d0-51027c11c168",
+       "label": "A",
+       "content": "District Officer",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e7b4805e-8b67-5996-a570-f34faade765b",
+       "label": "B",
+       "content": "Mayor",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "234c33ba-938d-55e1-b3ee-f7c753a67f4e",
+       "label": "C",
+       "content": "Chiefdom Speaker",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "94b012f2-f680-59d4-a076-2e36396f0889",
+       "label": "D",
+       "content": "Clerk of Parliament",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2bcbd8a9-8745-5835-82bf-a5472bb2686b",
+     "key": "gov-ta-04",
+     "stem": "Local councils in Sierra Leone were abolished in",
+     "image_url": null,
+     "explanation": "After 1972 power was centralised in Freetown until councils were revived in 2004.\n\n**Why the other options are wrong**\n\n- 1961: Councils existed at independence.\n- 2004: Councils were revived in 2004.\n- 1893: Freetown became a municipality in 1893.",
+     "position": 4,
+     "options": [
+      {
+       "id": "6c99239a-436c-5539-a651-87f65e1ef6a0",
+       "label": "A",
+       "content": "1893",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dff3c363-d861-584d-9c85-0abae59f5014",
+       "label": "B",
+       "content": "1961",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "45724cdb-415e-5b39-abd0-e0f3b2a3f538",
+       "label": "C",
+       "content": "1972",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e484be4b-968b-5d79-8a80-20b27b20bc52",
+       "label": "D",
+       "content": "2004",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cd6cb74a-6e5b-5200-bbb6-9094124ac273",
+     "key": "gov-ta-05",
+     "stem": "A common source of conflict between local councils and chiefdom authorities is",
+     "image_url": null,
+     "explanation": "Councils and chiefdoms share local tax, which can cause disputes.\n\n**Why the other options are wrong**\n\n- the election of the President: Presidential elections are national.\n- the appointment of judges: Judges are appointed through the JLSC and Parliament.\n- the conduct of foreign policy: Foreign policy is a central government matter.",
+     "position": 5,
+     "options": [
+      {
+       "id": "779f4ff3-9608-5457-b9a8-6102ae7127a4",
+       "label": "A",
+       "content": "the election of the President",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ad95bd55-c4bd-5ac8-8d99-5f013107cabe",
+       "label": "B",
+       "content": "the appointment of judges",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c8574cfc-9409-5544-80c1-f7b993fa914a",
+       "label": "C",
+       "content": "the conduct of foreign policy",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f7e643f6-dafd-5cfb-a670-4edcc0887d34",
+       "label": "D",
+       "content": "the sharing of local revenue",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c405a49b-467a-5ddd-97f7-c171b252ca9c",
+   "topic": "The United Nations and the Commonwealth",
+   "title": "The United Nations and the Commonwealth: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the united nations and the commonwealth, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 163,
+   "questions": [
+    {
+     "id": "78073fd3-9d69-5e1a-acae-c619797ee305",
+     "key": "gov-un-01",
+     "stem": "The United Nations was formally established on",
+     "image_url": null,
+     "explanation": "24 October is United Nations Day.\n\n**Why the other options are wrong**\n\n- 26 June 1945: The Charter was signed on 26 June 1945.\n- 10 December 1948: The UDHR was adopted on 10 December 1948.\n- 25 May 1963: The OAU was founded on 25 May 1963.",
+     "position": 1,
+     "options": [
+      {
+       "id": "664ec992-e650-575f-a925-c3498eec359c",
+       "label": "A",
+       "content": "24 October 1945",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0bd2d838-aecd-5013-a628-91a5c783d072",
+       "label": "B",
+       "content": "26 June 1945",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6a8c8c6a-d775-57c1-bd16-73437381ccdc",
+       "label": "C",
+       "content": "10 December 1948",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8258a83d-258c-5ba5-a5aa-9c8cd9992fb9",
+       "label": "D",
+       "content": "25 May 1963",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1ecc63c1-3f65-523d-961b-0e9d3d5743fc",
+     "key": "gov-un-02",
+     "stem": "Which organ of the UN has five permanent members with a veto?",
+     "image_url": null,
+     "explanation": "China, France, Russia, the UK and the USA are the permanent five.\n\n**Why the other options are wrong**\n\n- The General Assembly: All members have one vote each and no veto.\n- The Economic and Social Council: ECOSOC has 54 elected members.\n- The Secretariat: The Secretariat is the administrative organ.",
+     "position": 2,
+     "options": [
+      {
+       "id": "27406918-e632-59d8-a4b1-a62de0d3be9c",
+       "label": "A",
+       "content": "The General Assembly",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2ed7ded9-822c-5a99-9069-5d274e1cbd29",
+       "label": "B",
+       "content": "The Security Council",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "568b8546-2db1-5ba3-8d22-659dba4cd3f8",
+       "label": "C",
+       "content": "The Economic and Social Council",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "52205537-6bcd-5136-9039-d251465ecc9f",
+       "label": "D",
+       "content": "The Secretariat",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "85a1124f-3c45-5fc6-9317-9229186d0591",
+     "key": "gov-un-03",
+     "stem": "The UN peacekeeping mission in Sierra Leone from 1999 to 2005 was",
+     "image_url": null,
+     "explanation": "UNAMSIL supported disarmament and the 2002 elections.\n\n**Why the other options are wrong**\n\n- ECOMOG: ECOMOG was the ECOWAS force.\n- UNIPSIL: UNIPSIL was a political peacebuilding office (2008–2014).\n- UNMEER: UNMEER was the Ebola emergency mission.",
+     "position": 3,
+     "options": [
+      {
+       "id": "a009c1fc-52e1-5eeb-b371-51cf32594bc3",
+       "label": "A",
+       "content": "ECOMOG",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "49caf1a8-a69e-5c20-815b-3e540dd59328",
+       "label": "B",
+       "content": "UNIPSIL",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "67a7d20d-8f16-5f23-8023-1d14c13c6506",
+       "label": "C",
+       "content": "UNAMSIL",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ba1426aa-f606-5f7c-beaa-6ad2301197c3",
+       "label": "D",
+       "content": "UNMEER",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0000687e-e971-591f-a8f4-43180b90c485",
+     "key": "gov-un-04",
+     "stem": "The UN agency responsible for international health matters is the",
+     "image_url": null,
+     "explanation": "The WHO led the international health response during the Ebola epidemic.\n\n**Why the other options are wrong**\n\n- Food and Agriculture Organization: The FAO deals with food and agriculture.\n- International Labour Organization: The ILO deals with workers' rights.\n- UNESCO: UNESCO deals with education, science and culture.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e1cd6136-f1d4-565e-af1b-ee4451359afd",
+       "label": "A",
+       "content": "Food and Agriculture Organization",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "000cf7d4-4ab8-5c2f-82e1-8fa5a907a671",
+       "label": "B",
+       "content": "International Labour Organization",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "54aa3d88-833e-5edc-a69d-f6716de8d2f8",
+       "label": "C",
+       "content": "UNESCO",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "eb602fb7-10b2-5449-afb3-4c2a82ea27e7",
+       "label": "D",
+       "content": "World Health Organization",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1030905c-928d-531e-88cb-d152bacb4c57",
+     "key": "gov-un-05",
+     "stem": "The Commonwealth is best described as",
+     "image_url": null,
+     "explanation": "Sierra Leone joined the Commonwealth at independence in 1961.\n\n**Why the other options are wrong**\n\n- a federation of former colonies governed by the British Parliament in London: Members are fully sovereign.\n- a military alliance of African and Asian states formed after the Second World War: It is not a military alliance.\n- a principal organ of the United Nations that deals with former colonies: It is a separate organisation.",
+     "position": 5,
+     "options": [
+      {
+       "id": "32b3d6aa-1452-5f17-8427-8a7feed34371",
+       "label": "A",
+       "content": "a voluntary association of independent states, most of them former British colonies",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c497db46-aaaa-513c-b002-aa71d51b97ad",
+       "label": "B",
+       "content": "a federation of former colonies governed by the British Parliament in London",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d20aa477-ac28-50a7-8eb4-95c8a42e8ba7",
+       "label": "C",
+       "content": "a military alliance of African and Asian states formed after the Second World War",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b7a05801-11b9-5791-b30e-ebfe08e4da33",
+       "label": "D",
+       "content": "a principal organ of the United Nations that deals with former colonies",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "533b04d2-ca0c-58f2-b932-50a988c3af3c",
+   "topic": "African Union, ECOWAS, and Regional Cooperation",
+   "title": "African Union, ECOWAS, and Regional Cooperation: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on african union, ecowas, and regional cooperation, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 164,
+   "questions": [
+    {
+     "id": "e8d38bfc-373c-51a2-9738-35ef1e62edf1",
+     "key": "gov-ar-01",
+     "stem": "The Organisation of African Unity was founded in Addis Ababa in",
+     "image_url": null,
+     "explanation": "The OAU was founded on 25 May 1963, now celebrated as Africa Day.\n\n**Why the other options are wrong**\n\n- 1975: 1975 was the founding of ECOWAS.\n- 2002: 2002 was the launch of the African Union.\n- 1973: 1973 was the founding of the Mano River Union.",
+     "position": 1,
+     "options": [
+      {
+       "id": "152e219b-0c7d-5cc0-8df1-dab9b7406824",
+       "label": "A",
+       "content": "1963",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "eb185f73-a78d-56c1-97c6-9afe63be318d",
+       "label": "B",
+       "content": "1973",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7930bdf0-422d-5861-834f-e51d62f3360b",
+       "label": "C",
+       "content": "1975",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f2ec8dec-2b1e-5f5c-8642-79ba6c0fdbcd",
+       "label": "D",
+       "content": "2002",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "faaa90ab-3941-54a5-b8a6-8dc862b07c61",
+     "key": "gov-ar-02",
+     "stem": "One major difference between the AU and the OAU is that the AU",
+     "image_url": null,
+     "explanation": "Article 4(h) of the AU's Constitutive Act allows intervention in grave circumstances.\n\n**Why the other options are wrong**\n\n- has its headquarters in Lagos rather than in Addis Ababa: Both the OAU and the AU are based in Addis Ababa.\n- admits only West African states that have democratic constitutions: The AU includes all African states.\n- holds strictly to non-interference in members' internal affairs in all cases: That was the OAU's principle.",
+     "position": 2,
+     "options": [
+      {
+       "id": "aa784147-a10c-59a6-bc99-178616f3b337",
+       "label": "A",
+       "content": "has its headquarters in Lagos rather than in Addis Ababa",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7e78611a-ff48-57fc-87f8-6ebc87dc6d1a",
+       "label": "B",
+       "content": "may intervene in a member state in cases of war crimes, genocide and crimes against humanity",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "12b2e3c0-83f4-59f0-a7b8-1681a7f98ff5",
+       "label": "C",
+       "content": "admits only West African states that have democratic constitutions",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d4c55b51-3d40-5665-8f3d-53f1042352d9",
+       "label": "D",
+       "content": "holds strictly to non-interference in members' internal affairs in all cases",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "893dc1da-47e7-5f67-909a-701d683c1d10",
+     "key": "gov-ar-03",
+     "stem": "ECOWAS was established in 1975 by the",
+     "image_url": null,
+     "explanation": "The Treaty of Lagos was signed on 28 May 1975.\n\n**Why the other options are wrong**\n\n- Treaty of Lomé: Lomé hosted the 1999 Sierra Leone peace agreement.\n- Sirte Declaration: The Sirte Declaration (1999) led to the AU.\n- Mano River Declaration: That created the Mano River Union in 1973.",
+     "position": 3,
+     "options": [
+      {
+       "id": "f9aa9db9-1077-5c15-8f96-d824986e0808",
+       "label": "A",
+       "content": "Treaty of Lomé",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6248d64c-39f6-5933-a131-be888a878512",
+       "label": "B",
+       "content": "Sirte Declaration",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "44317b86-2f32-5d7a-937b-c20637d3fa82",
+       "label": "C",
+       "content": "Treaty of Lagos",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "97602e7e-76cb-5431-824c-8f4858939455",
+       "label": "D",
+       "content": "Mano River Declaration",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "451318e5-76ff-56c1-bb89-ba5fc9e5d7f4",
+     "key": "gov-ar-04",
+     "stem": "The ECOWAS force that restored President Kabbah to power in 1998 was",
+     "image_url": null,
+     "explanation": "ECOMOG, led by Nigeria, drove the AFRC junta out of Freetown in February 1998.\n\n**Why the other options are wrong**\n\n- UNAMSIL: UNAMSIL was a UN mission created in 1999.\n- the Kamajors: The Kamajors were a local civil defence force.\n- the RUF: The RUF was the rebel movement.",
+     "position": 4,
+     "options": [
+      {
+       "id": "88f6d333-d671-5b71-8e69-a238c6662a40",
+       "label": "A",
+       "content": "UNAMSIL",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "92d3fc27-a380-595d-b6c4-3d2530c38b14",
+       "label": "B",
+       "content": "the Kamajors",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7059e399-1a10-5693-bc78-e755b48adbba",
+       "label": "C",
+       "content": "the RUF",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "370592e3-6025-5afb-b95a-f2d1636a10e6",
+       "label": "D",
+       "content": "ECOMOG",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "87ca863f-0e5d-562a-a69c-69efe68050ed",
+     "key": "gov-ar-05",
+     "stem": "The Mano River Union was founded in 1973 by",
+     "image_url": null,
+     "explanation": "The Union's headquarters is in Freetown.\n\n**Why the other options are wrong**\n\n- Guinea and Côte d'Ivoire: Guinea joined in 1980 and Côte d'Ivoire in 2008.\n- Nigeria and Ghana: They are not members of the Mano River Union.\n- Senegal and The Gambia: They formed the Senegambia Confederation.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ba0e9606-1712-5d2c-a70a-c53e6b68cea7",
+       "label": "A",
+       "content": "Liberia and Sierra Leone",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8fb8aa9e-fbcc-5269-9f8f-98cb37dcf3b6",
+       "label": "B",
+       "content": "Guinea and Côte d'Ivoire",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "791d30d8-2fcc-54a1-8947-2e12ada9eb72",
+       "label": "C",
+       "content": "Nigeria and Ghana",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "07cf2b24-a97d-5eb1-af68-97f3a031105b",
+       "label": "D",
+       "content": "Senegal and The Gambia",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "ccc2b2ff3f65"
+}

@@ -1,0 +1,1808 @@
+{
+ "name": "government_set2_p1",
+ "label": "Government: set 2 (rights, constitutions and political processes)",
+ "subject_slug": "government",
+ "papers": [
+  {
+   "id": "ec775fd8-cd2e-5866-9183-c2ec1db6840d",
+   "topic": "Rule of Law and Separation of Powers",
+   "title": "Rule of Law and Separation of Powers: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on rule of law and separation of powers, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 120,
+   "questions": [
+    {
+     "id": "e4e4c428-1dce-5ffd-8b8b-811e7832c4ce",
+     "key": "gov-rl-01",
+     "stem": "The principles of supremacy of the law, equality before the law and rights protected by the courts are associated with",
+     "image_url": null,
+     "explanation": "A. V. Dicey set out these principles in 1885.\n\n**Why the other options are wrong**\n\n- Baron de Montesquieu: Montesquieu is associated with the separation of powers.\n- Abraham Lincoln: Lincoln is associated with a definition of democracy.\n- Lord Lugard: Lugard is associated with indirect rule.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a76b7992-7312-5494-94c5-57994c957643",
+       "label": "A",
+       "content": "A. V. Dicey",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a9a37fe3-a292-5545-b117-c805467beb97",
+       "label": "B",
+       "content": "Baron de Montesquieu",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "75b49fd9-62e4-5b3f-8ca8-87b98e1428c2",
+       "label": "C",
+       "content": "Abraham Lincoln",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1c619351-28af-517c-8766-d3043599f6c3",
+       "label": "D",
+       "content": "Lord Lugard",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "69da7051-065d-54ed-9452-e1714e462048",
+     "key": "gov-rl-02",
+     "stem": "Which of the following is a limitation on the rule of law?",
+     "image_url": null,
+     "explanation": "Immunity places a person beyond ordinary legal process, limiting equality before the law.\n\n**Why the other options are wrong**\n\n- An independent judiciary that can rule against the government: An independent judiciary supports the rule of law.\n- Fair hearing for every person accused of a crime: Fair hearing is part of the rule of law.\n- Equality of all citizens, including leaders, before the law: Equality before the law is a principle of the rule of law.",
+     "position": 2,
+     "options": [
+      {
+       "id": "dc6d7988-1808-5ccb-8932-a0780b406ddc",
+       "label": "A",
+       "content": "An independent judiciary that can rule against the government",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "aa33b6a4-66e9-5ad3-bf7d-7d15eb9ee2fb",
+       "label": "B",
+       "content": "Fair hearing for every person accused of a crime",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6379ed99-8168-5096-bf8c-d85e3d76f887",
+       "label": "C",
+       "content": "Immunity of the President from prosecution while in office",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0015b39f-aeb9-5064-835b-289585ba98bb",
+       "label": "D",
+       "content": "Equality of all citizens, including leaders, before the law",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ef854c58-c084-589a-89a9-7d4bbbaa7ecd",
+     "key": "gov-rl-03",
+     "stem": "The theory of separation of powers is most associated with",
+     "image_url": null,
+     "explanation": "Montesquieu argued in The Spirit of the Laws (1748) that liberty requires separate powers.\n\n**Why the other options are wrong**\n\n- Karl Marx: Marx is associated with communism.\n- A. V. Dicey: Dicey is associated with the rule of law.\n- Adam Smith: Smith is associated with capitalism.",
+     "position": 3,
+     "options": [
+      {
+       "id": "55b037fb-9a2e-5c70-8b74-bf0a67a01648",
+       "label": "A",
+       "content": "Karl Marx",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "35985fb2-0382-5dd8-abc0-9deec62e20ad",
+       "label": "B",
+       "content": "A. V. Dicey",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d4c8ff99-b92c-59ea-94bd-b34012ed1397",
+       "label": "C",
+       "content": "Adam Smith",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cc6b617f-5039-5c7a-bd4c-335f9b1370ec",
+       "label": "D",
+       "content": "Baron de Montesquieu",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "00fddbe9-c668-58fd-8f36-0d714d7b79fe",
+     "key": "gov-rl-04",
+     "stem": "The President of Sierra Leone refusing assent to a bill passed by Parliament is an example of",
+     "image_url": null,
+     "explanation": "Each organ can limit the others; refusing assent is the executive's check on the legislature.\n\n**Why the other options are wrong**\n\n- fusion of powers: Fusion means organs overlap in personnel, as in parliamentary systems.\n- judicial review: Judicial review is done by courts.\n- delegated legislation: Delegated legislation is law-making by the executive under an Act.",
+     "position": 4,
+     "options": [
+      {
+       "id": "3de4d6ec-4390-5ec5-85cf-b8cff947dc5b",
+       "label": "A",
+       "content": "checks and balances",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "402e428e-e712-5889-838c-1adae41053ed",
+       "label": "B",
+       "content": "fusion of powers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eccfb14a-36c1-567e-823b-34ad04d96219",
+       "label": "C",
+       "content": "judicial review",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0de125c5-a8de-540a-b603-6820cde3dc6d",
+       "label": "D",
+       "content": "delegated legislation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fd81fd58-c3fe-5e79-a175-14d4d12af2da",
+     "key": "gov-rl-05",
+     "stem": "A court order that a detained person be brought before it so that the lawfulness of the detention can be examined is",
+     "image_url": null,
+     "explanation": "Habeas corpus protects personal liberty against unlawful detention.\n\n**Why the other options are wrong**\n\n- an injunction: An injunction orders someone to do or stop doing something.\n- a subpoena: A subpoena orders a person to attend court as a witness.\n- a writ of mandamus: Mandamus orders a public body to perform a duty.",
+     "position": 5,
+     "options": [
+      {
+       "id": "536861d2-ae85-51ca-8853-dab537c74c9a",
+       "label": "A",
+       "content": "an injunction",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dcf6312a-714a-5726-bee5-833ee6ae27d1",
+       "label": "B",
+       "content": "habeas corpus",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f9854f69-08e1-5849-8e2e-42c6c601f159",
+       "label": "C",
+       "content": "a subpoena",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "30df4e00-49ac-5f0e-9f4d-23108982e74c",
+       "label": "D",
+       "content": "a writ of mandamus",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1fbebbd0-e8d5-5aad-b4c7-8deb2c2594eb",
+   "topic": "Fundamental Human Rights and Citizenship",
+   "title": "Fundamental Human Rights and Citizenship: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on fundamental human rights and citizenship, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 121,
+   "questions": [
+    {
+     "id": "c0b524f5-37bf-5f5d-b3b2-34c367fd9add",
+     "key": "gov-rc-01",
+     "stem": "The Universal Declaration of Human Rights was adopted by the UN General Assembly in",
+     "image_url": null,
+     "explanation": "The UDHR was adopted on 10 December 1948.\n\n**Why the other options are wrong**\n\n- 1945: The UN was founded in 1945.\n- 1963: The OAU was founded in 1963.\n- 1981: The African Charter on Human and Peoples' Rights was adopted in 1981.",
+     "position": 1,
+     "options": [
+      {
+       "id": "9e0ad6f5-a786-5efd-9ee2-c8ba4c7c2574",
+       "label": "A",
+       "content": "1945",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a143bbb1-d03e-541d-a0da-00d76b6d3654",
+       "label": "B",
+       "content": "1948",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ff20d62c-3474-51bb-97a4-53e5a5a84750",
+       "label": "C",
+       "content": "1963",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6599aab0-dbfb-542b-a25f-8deed54f9ddc",
+       "label": "D",
+       "content": "1981",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1f9c98fc-cfd8-5ea6-baa6-aa27aed8cf89",
+     "key": "gov-rc-02",
+     "stem": "Fundamental human rights in the 1991 Constitution of Sierra Leone are found in",
+     "image_url": null,
+     "explanation": "Chapter III protects the fundamental human rights and freedoms of the individual.\n\n**Why the other options are wrong**\n\n- Chapter II: Chapter II contains the Fundamental Principles of State Policy.\n- Chapter V: Chapter V deals with the Executive.\n- Chapter VII: Chapter VII deals with the Judiciary.",
+     "position": 2,
+     "options": [
+      {
+       "id": "5ae610e4-e722-50ba-8dd6-f6dc57933a34",
+       "label": "A",
+       "content": "Chapter II",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "345fc834-6f74-5211-a56f-fa41ad77a341",
+       "label": "B",
+       "content": "Chapter V",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "aab4f7e2-6d3b-52ee-a6b2-56e6fec1fe89",
+       "label": "C",
+       "content": "Chapter III",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "996cf7ec-821c-5c66-bc8b-351d0113cf46",
+       "label": "D",
+       "content": "Chapter VII",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9ca49a8e-e98a-581a-be14-08d960693b63",
+     "key": "gov-rc-03",
+     "stem": "The right to education is classified as",
+     "image_url": null,
+     "explanation": "Education, health and work are second-generation economic, social and cultural rights.\n\n**Why the other options are wrong**\n\n- a civil and political right: Civil and political rights include life, liberty and free speech.\n- a collective right: Collective rights include peace and development.\n- a political duty: Education is a right, not a duty in this sense.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ef0c520f-6046-55e4-999b-3e921751b09d",
+       "label": "A",
+       "content": "a civil and political right",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9c6f028d-2dae-53df-81a6-57eed52eaaba",
+       "label": "B",
+       "content": "a collective right",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c514991a-c7a8-5bbf-9c31-23de092742de",
+       "label": "C",
+       "content": "a political duty",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4e5b9f34-00d2-5f4c-ba83-c1f8f1dc2957",
+       "label": "D",
+       "content": "an economic, social and cultural right",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b3e184c0-cfb5-57be-80be-d2f85d468aa6",
+     "key": "gov-rc-04",
+     "stem": "A foreigner who becomes a citizen after a period of lawful residence and an oath of allegiance acquires citizenship by",
+     "image_url": null,
+     "explanation": "Naturalisation is open to aliens who meet residence and character requirements.\n\n**Why the other options are wrong**\n\n- birth: Citizenship by birth comes from being born to citizen parents or in the state.\n- descent: Descent comes from a citizen parent.\n- registration: Registration is for people with a special link, such as marriage to a citizen.",
+     "position": 4,
+     "options": [
+      {
+       "id": "9c4ea8c1-d755-5517-9286-0440dc8274f3",
+       "label": "A",
+       "content": "naturalisation",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3350e989-2af2-56ea-a1a0-5f217cffc3cf",
+       "label": "B",
+       "content": "birth",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1788ca4a-9d6d-535f-ac2f-04a22634c97b",
+       "label": "C",
+       "content": "descent",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "381fb9ee-40f1-551c-a75e-bce03a54f16e",
+       "label": "D",
+       "content": "registration",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b9279276-f1b5-5f60-8ef3-9e83cdc4caf3",
+     "key": "gov-rc-05",
+     "stem": "Which of the following is a duty of a citizen?",
+     "image_url": null,
+     "explanation": "Citizens must obey the laws, pay taxes and defend the state.\n\n**Why the other options are wrong**\n\n- Holding a passport: A passport is a right, not a duty.\n- Voting for the ruling party: Citizens may vote for any party.\n- Joining a pressure group: Joining a pressure group is a freedom, not a duty.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a3b662e0-9bdc-52b3-96ad-89bd1d3695cd",
+       "label": "A",
+       "content": "Holding a passport",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "82ff324f-4926-57d1-9f69-a27488af2123",
+       "label": "B",
+       "content": "Paying taxes",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "438dc649-a878-588f-8468-976085f95d85",
+       "label": "C",
+       "content": "Voting for the ruling party",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0c1056a8-1da7-5d64-859c-0c7e60635404",
+       "label": "D",
+       "content": "Joining a pressure group",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "42f03e6b-158c-5d03-bb92-0a7d7739170d",
+   "topic": "Constitutions",
+   "title": "Constitutions: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on constitutions, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 122,
+   "questions": [
+    {
+     "id": "d907b25b-53fe-51f4-9e70-4720347562b4",
+     "key": "gov-cn-01",
+     "stem": "A constitution that can be amended by the ordinary law-making process is",
+     "image_url": null,
+     "explanation": "Britain's constitution is the standard example of a flexible constitution.\n\n**Why the other options are wrong**\n\n- rigid: A rigid constitution needs a special procedure.\n- federal: Federal describes the division of power, not the amendment procedure.\n- written: Written constitutions are usually rigid.",
+     "position": 1,
+     "options": [
+      {
+       "id": "db279293-2f25-59dc-a36b-27832e32462a",
+       "label": "A",
+       "content": "rigid",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4e1e40c5-5751-5744-8daa-03203b9fdf77",
+       "label": "B",
+       "content": "federal",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "398206f0-224f-5754-af87-aa11aecfc2d9",
+       "label": "C",
+       "content": "flexible",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e530451a-3a04-5759-8377-8616bcb38849",
+       "label": "D",
+       "content": "written",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "871f6197-b870-597c-ae52-55794d164256",
+     "key": "gov-cn-02",
+     "stem": "Britain's constitution is described as unwritten because",
+     "image_url": null,
+     "explanation": "Its rules come from statutes, conventions, judicial decisions and historical documents.\n\n**Why the other options are wrong**\n\n- none of its rules are written down: Many of its rules are in statutes and court judgments.\n- it was never approved by Parliament: Many of its sources are Acts of Parliament.\n- it has no conventions: Conventions are an important source of it.",
+     "position": 2,
+     "options": [
+      {
+       "id": "aff70383-6b7c-5796-b0b9-b35ac9809d71",
+       "label": "A",
+       "content": "none of its rules are written down",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c639c873-89cc-58a2-9762-f5d4d4d571c7",
+       "label": "B",
+       "content": "it was never approved by Parliament",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cb31acc4-7896-5dc4-9158-24bfc377f0a4",
+       "label": "C",
+       "content": "it has no conventions",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ed98337f-7b88-5a29-85f5-2638b1819b95",
+       "label": "D",
+       "content": "it is not contained in a single document",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e6edf828-2c3e-5615-b701-c20528fdaca9",
+     "key": "gov-cn-03",
+     "stem": "Under section 108 of the 1991 Constitution of Sierra Leone, a bill to alter the Constitution must be supported at its second and third readings by at least",
+     "image_url": null,
+     "explanation": "Entrenched provisions also need approval in a referendum.\n\n**Why the other options are wrong**\n\n- a simple majority of members present: That is enough for an ordinary bill only.\n- three-quarters of all Members of Parliament: The requirement is two-thirds.\n- one-half of all Members of Parliament: One-half is not enough.",
+     "position": 3,
+     "options": [
+      {
+       "id": "7bca9493-7684-5018-b029-732143a17e17",
+       "label": "A",
+       "content": "two-thirds of all Members of Parliament",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a8a722d9-aa30-590f-a6ae-b829f8c27b6e",
+       "label": "B",
+       "content": "a simple majority of members present",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "966699cc-9ddd-54ca-9c1e-699d0e43f0d2",
+       "label": "C",
+       "content": "three-quarters of all Members of Parliament",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "72f51f64-b2a3-55e2-9645-7670ec6f4fea",
+       "label": "D",
+       "content": "one-half of all Members of Parliament",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "86cb6c17-9287-51b7-be59-e1dee6f3191f",
+     "key": "gov-cn-04",
+     "stem": "Provisions of a constitution that can be changed only by a stricter procedure than the rest are called",
+     "image_url": null,
+     "explanation": "In Sierra Leone, entrenched clauses include Chapter III, the presidential term limit and section 108.\n\n**Why the other options are wrong**\n\n- conventions: Conventions are unwritten practices.\n- ouster clauses: Ouster clauses try to exclude the courts' jurisdiction.\n- directive principles: Directive principles guide state policy and are not enforceable in court.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d2aa4434-6cc4-5ade-9639-2b8183676825",
+       "label": "A",
+       "content": "conventions",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "87458b14-32d1-50ef-87c2-eb7eca590a11",
+       "label": "B",
+       "content": "entrenched clauses",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d5d6102b-a20f-5e9e-8093-7a1694e8166f",
+       "label": "C",
+       "content": "ouster clauses",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "649b6845-0f37-562f-ab9e-158068b92d2f",
+       "label": "D",
+       "content": "directive principles",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6409b59b-47e8-5ca2-a171-04d54858291e",
+     "key": "gov-cn-05",
+     "stem": "Constitutionalism means that",
+     "image_url": null,
+     "explanation": "Constitutionalism is about rulers actually respecting constitutional limits.\n\n**Why the other options are wrong**\n\n- every state must have a written constitution in a single document: A written document alone does not guarantee constitutionalism.\n- the constitution can be changed by the President alone: That would undermine constitutionalism.\n- Parliament is above the constitution and can override it at will: In constitutionalism the constitution is supreme.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9d2d87f7-8f15-5c41-982b-ef7c96051b0e",
+       "label": "A",
+       "content": "every state must have a written constitution in a single document",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "77b930fc-c619-5b54-a75b-0d0b2b44e2b4",
+       "label": "B",
+       "content": "the constitution can be changed by the President alone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "53c41666-3c09-5c99-83a6-e6264264f98f",
+       "label": "C",
+       "content": "government power is limited by the constitution and exercised according to it",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e68a54b0-1e6d-5d45-b208-21efb4a159a9",
+       "label": "D",
+       "content": "Parliament is above the constitution and can override it at will",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "85b8b250-6ccb-5771-bf25-278e95545c42",
+   "topic": "Political Parties and Pressure Groups",
+   "title": "Political Parties and Pressure Groups: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on political parties and pressure groups, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 123,
+   "questions": [
+    {
+     "id": "902e0adb-9637-546c-a377-adfec1a8a90c",
+     "key": "gov-pp-01",
+     "stem": "The main aim of a political party is to",
+     "image_url": null,
+     "explanation": "Parties contest elections in order to form the government and carry out their programmes.\n\n**Why the other options are wrong**\n\n- influence government without seeking office: That is the aim of a pressure group.\n- make profit for its members: Parties are not businesses.\n- interpret the laws of the state: That is the work of the judiciary.",
+     "position": 1,
+     "options": [
+      {
+       "id": "fc9447e0-5777-538b-a10f-1c99e6e0d944",
+       "label": "A",
+       "content": "influence government without seeking office",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "72993baf-35da-514c-9677-0264ce9344ec",
+       "label": "B",
+       "content": "make profit for its members",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dff04856-cccc-5e7c-b609-a35a27b784a9",
+       "label": "C",
+       "content": "interpret the laws of the state",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9933b5df-3403-5f14-a071-5385df7127a3",
+       "label": "D",
+       "content": "win control of government through elections",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c1a73ded-61a6-5712-8286-0bdc0a3e0b2a",
+     "key": "gov-pp-02",
+     "stem": "Sierra Leone was a de jure one-party state from",
+     "image_url": null,
+     "explanation": "The 1978 Constitution made the APC the only lawful party until the 1991 Constitution.\n\n**Why the other options are wrong**\n\n- 1961 to 1967: That was a multi-party period under the SLPP.\n- 1992 to 1996: That was the NPRC military regime.\n- 1971 to 1978: Opposition parties were still legal in that period.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c7bb09cf-0259-529e-8c2a-f694a858a5dd",
+       "label": "A",
+       "content": "1978 to 1991",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d53c393d-1de1-559b-b241-6586ead5b8c2",
+       "label": "B",
+       "content": "1961 to 1967",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f99ac3c2-41c1-5c52-bb1a-46de07198fcc",
+       "label": "C",
+       "content": "1992 to 1996",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "22e5d8ca-1532-5c48-b7f6-63fe933f16d9",
+       "label": "D",
+       "content": "1971 to 1978",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "77973eab-1d49-5bfd-a592-061736fc4004",
+     "key": "gov-pp-03",
+     "stem": "A group that promotes a cause benefiting society as a whole, such as women's representation, is a",
+     "image_url": null,
+     "explanation": "The 50/50 Group in Sierra Leone is an example of a promotional group.\n\n**Why the other options are wrong**\n\n- sectional (interest) group: Sectional groups protect their own members' interests.\n- anomic group: Anomic groups are spontaneous and unorganised.\n- political party: A party seeks to win power.",
+     "position": 3,
+     "options": [
+      {
+       "id": "e65fdc43-d0b3-5946-b8d2-d0c21b47c713",
+       "label": "A",
+       "content": "sectional (interest) group",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ffe3828c-0c7d-50c2-8b07-d078094073a8",
+       "label": "B",
+       "content": "promotional (cause) group",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d2be74f7-35e7-521b-b283-b1334a318efb",
+       "label": "C",
+       "content": "anomic group",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "96d1864d-efa9-55ba-b406-d0659c8967fc",
+       "label": "D",
+       "content": "political party",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7549fe08-6ae3-5b9d-811d-5849b79f6ba3",
+     "key": "gov-pp-04",
+     "stem": "Persuading legislators and officials directly to support a group's interests is called",
+     "image_url": null,
+     "explanation": "Lobbying is a common, peaceful method of pressure groups.\n\n**Why the other options are wrong**\n\n- boycotting: A boycott is a refusal to buy or take part.\n- canvassing: Canvassing is seeking votes in an election.\n- gerrymandering: Gerrymandering is manipulating constituency boundaries.",
+     "position": 4,
+     "options": [
+      {
+       "id": "8f6310c1-fe42-5fb4-9b5a-7dbd5598cc80",
+       "label": "A",
+       "content": "boycotting",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3dcf860b-bdf1-51b3-9515-1284825c5f0a",
+       "label": "B",
+       "content": "canvassing",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "00beb8f6-9c8a-5c7d-a81a-eea83446c38e",
+       "label": "C",
+       "content": "lobbying",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "73436125-c297-5bf1-8a17-219948c739ee",
+       "label": "D",
+       "content": "gerrymandering",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e2d8f314-a846-532b-b11d-2700da0057e9",
+     "key": "gov-pp-05",
+     "stem": "Which body registers and regulates political parties in Sierra Leone?",
+     "image_url": null,
+     "explanation": "The PPRC registers parties and monitors their conduct.\n\n**Why the other options are wrong**\n\n- Electoral Commission for Sierra Leone: The ECSL conducts elections.\n- Independent Media Commission: The IMC regulates the media.\n- Public Service Commission: The PSC deals with public officers.",
+     "position": 5,
+     "options": [
+      {
+       "id": "2b6aded0-3600-53e8-97a4-7b1bcbe14010",
+       "label": "A",
+       "content": "Electoral Commission for Sierra Leone",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0ef69853-992c-54b8-a91a-288998d94ff2",
+       "label": "B",
+       "content": "Independent Media Commission",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e2306b7b-9791-518f-bf0f-f917a8051266",
+       "label": "C",
+       "content": "Public Service Commission",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "303cc957-0e77-55d5-9771-a3a614c2906b",
+       "label": "D",
+       "content": "Political Parties Regulation Commission",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "4589fee5-015d-5d1b-98e3-414ef46a3027",
+   "topic": "Public Opinion and Mass Media",
+   "title": "Public Opinion and Mass Media: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on public opinion and mass media, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 124,
+   "questions": [
+    {
+     "id": "e6d2ef8b-8785-5590-9bcc-fb712df7fd5b",
+     "key": "gov-po-01",
+     "stem": "A survey of a sample of people to find out the views of the population is",
+     "image_url": null,
+     "explanation": "Opinion polls estimate public opinion from a representative sample.\n\n**Why the other options are wrong**\n\n- a referendum: A referendum is a vote by the whole electorate.\n- a census: A census counts the whole population.\n- a by-election: A by-election fills a vacant seat.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a380de41-96ad-5823-9175-d70c9c258211",
+       "label": "A",
+       "content": "an opinion poll",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "34c3b57b-cdbc-5440-864c-8736d1afed4d",
+       "label": "B",
+       "content": "a referendum",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "568c45a0-844d-52fe-a664-491096da11f9",
+       "label": "C",
+       "content": "a census",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "03efc02f-b77c-5ad1-bebd-b2bc6e0af5c7",
+       "label": "D",
+       "content": "a by-election",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fc608860-8af7-5bdf-b419-09b8a6a1beea",
+     "key": "gov-po-02",
+     "stem": "The \"watchdog\" role of the mass media refers to",
+     "image_url": null,
+     "explanation": "By exposing wrongdoing, the press holds leaders accountable.\n\n**Why the other options are wrong**\n\n- entertaining the public: Entertainment is a separate role.\n- selling advertisements: That is a source of income, not a democratic role.\n- guarding government buildings: That is the job of security services.",
+     "position": 2,
+     "options": [
+      {
+       "id": "1fa34a6d-79a7-57af-8a65-8316367596a7",
+       "label": "A",
+       "content": "entertaining the public",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dd87d6fc-5a1c-56f9-b4f5-d49a42758585",
+       "label": "B",
+       "content": "exposing abuse of power and corruption",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "80818173-b8c1-5e08-9f38-02144ec5991a",
+       "label": "C",
+       "content": "selling advertisements",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "14cc0ef5-7bf0-5677-9886-95a8398e74c4",
+       "label": "D",
+       "content": "guarding government buildings",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bb84e21b-47c9-5c5f-b684-96f47a5c4bfd",
+     "key": "gov-po-03",
+     "stem": "Which of the following limits press freedom?",
+     "image_url": null,
+     "explanation": "Censorship prevents the media from publishing freely.\n\n**Why the other options are wrong**\n\n- Independent ownership of newspapers: Independent ownership supports press freedom.\n- A free flow of information: A free flow of information is the purpose of press freedom.\n- Training of journalists: Training improves the press.",
+     "position": 3,
+     "options": [
+      {
+       "id": "de505351-2df4-57f9-a1e1-a31714b9bbf5",
+       "label": "A",
+       "content": "Independent ownership of newspapers",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f6068e9c-7dcd-5ee7-831a-46ea16982410",
+       "label": "B",
+       "content": "A free flow of information",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6f99283a-fef5-5260-a99d-e4390ee4ad7c",
+       "label": "C",
+       "content": "Censorship by the government",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9fcfa62b-145d-5ca6-89f2-1abc7db42b5a",
+       "label": "D",
+       "content": "Training of journalists",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d4bd39e2-8e16-530b-b25f-fcedf794fba8",
+     "key": "gov-po-04",
+     "stem": "The body that registers and regulates the media in Sierra Leone is the",
+     "image_url": null,
+     "explanation": "The IMC registers media houses and handles complaints against them.\n\n**Why the other options are wrong**\n\n- Sierra Leone Association of Journalists: SLAJ is the journalists' professional association.\n- Sierra Leone Broadcasting Corporation: SLBC is the public broadcaster.\n- National Telecommunications Commission: NATCOM regulates telecommunications, not media content.",
+     "position": 4,
+     "options": [
+      {
+       "id": "990166de-1e22-514e-a1ec-cd917be97f4f",
+       "label": "A",
+       "content": "Sierra Leone Association of Journalists",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b367a631-6551-55fb-b47b-3cd943c6c3cb",
+       "label": "B",
+       "content": "Sierra Leone Broadcasting Corporation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "67b45b57-1d1c-55d0-8c72-4c8265e3a2d6",
+       "label": "C",
+       "content": "National Telecommunications Commission",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f55630e4-6736-51b8-b027-1ee26ecc94d7",
+       "label": "D",
+       "content": "Independent Media Commission",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dc3f57aa-fb17-5da8-b993-6e88bbaec8a0",
+     "key": "gov-po-05",
+     "stem": "In 2020, Sierra Leone repealed the criminal libel provisions of the",
+     "image_url": null,
+     "explanation": "Part V of the Public Order Act 1965 had been used to prosecute journalists.\n\n**Why the other options are wrong**\n\n- Local Government Act 2004: That Act revived local councils.\n- Chieftaincy Act 2009: That Act deals with paramount chiefs.\n- Citizenship Act 1973: That Act deals with citizenship.",
+     "position": 5,
+     "options": [
+      {
+       "id": "0c61ade2-a042-5797-b7b0-095d007cd478",
+       "label": "A",
+       "content": "Public Order Act 1965",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "498ac2c7-cb25-5d2a-8b9d-302f8003de9c",
+       "label": "B",
+       "content": "Local Government Act 2004",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7af517ce-81c4-570e-94c8-00f8c7c13918",
+       "label": "C",
+       "content": "Chieftaincy Act 2009",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1040e7bc-30e1-5cd1-aaad-f34def3fb6de",
+       "label": "D",
+       "content": "Citizenship Act 1973",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "99bef3c3-1541-52fb-8d8c-468ca57617ba",
+   "topic": "Elections and Electoral Systems",
+   "title": "Elections and Electoral Systems: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on elections and electoral systems, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 125,
+   "questions": [
+    {
+     "id": "ef6f28a8-ac02-5d7c-b221-9129a11f9752",
+     "key": "gov-el-01",
+     "stem": "An election held to fill a vacancy in Parliament between general elections is a",
+     "image_url": null,
+     "explanation": "By-elections follow the death, resignation or removal of a member.\n\n**Why the other options are wrong**\n\n- run-off election: A run-off is a second round when no one wins outright.\n- primary election: A primary chooses party candidates.\n- referendum: A referendum decides a question, not a seat.",
+     "position": 1,
+     "options": [
+      {
+       "id": "50b2ae62-ed27-51ab-b2e6-91bcac2b9af6",
+       "label": "A",
+       "content": "run-off election",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9c1d804e-8850-555a-b5c6-c0e54565a0dc",
+       "label": "B",
+       "content": "by-election",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "87e635de-00d0-5350-9ed6-b7c0e221795f",
+       "label": "C",
+       "content": "primary election",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "37fcf241-830e-5db9-817f-c9307107da6e",
+       "label": "D",
+       "content": "referendum",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "859b1991-7657-58cb-ac06-2dcd0e38d8d1",
+     "key": "gov-el-02",
+     "stem": "Universal adult suffrage means that",
+     "image_url": null,
+     "explanation": "In Sierra Leone every citizen aged 18 and above who is registered may vote.\n\n**Why the other options are wrong**\n\n- only educated adults may vote: Literacy tests are not part of universal suffrage.\n- only property owners may vote: Property qualifications restrict suffrage.\n- all residents, including foreigners, must vote: Voting is a citizen's right, not compulsory for all residents.",
+     "position": 2,
+     "options": [
+      {
+       "id": "bdb19637-05ce-585f-94a3-5798da59c314",
+       "label": "A",
+       "content": "only educated adults may vote",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "17c5482f-c12c-5324-a9b9-231a747d0b1e",
+       "label": "B",
+       "content": "only property owners may vote",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "78aff27f-3895-52bc-bffe-fc70295b8b8e",
+       "label": "C",
+       "content": "all adult citizens have the right to vote",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "db40e131-8ab8-541d-a576-7f985016c15d",
+       "label": "D",
+       "content": "all residents, including foreigners, must vote",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "caf3d672-f47f-523c-9a08-cf4cb5833f64",
+     "key": "gov-el-03",
+     "stem": "Under the simple majority (first-past-the-post) system, the winner in a constituency is the candidate who",
+     "image_url": null,
+     "explanation": "Under first-past-the-post, the leading candidate wins even without a majority.\n\n**Why the other options are wrong**\n\n- obtains more than half of all votes cast: That is the absolute majority system.\n- obtains at least 55% of the votes: 55% is Sierra Leone's presidential threshold.\n- is ranked first on the party list: Party lists are used in proportional representation.",
+     "position": 3,
+     "options": [
+      {
+       "id": "78b7ab00-d1de-5335-a026-1734c485c2cd",
+       "label": "A",
+       "content": "obtains more than half of all votes cast",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "62299125-2024-568f-9805-d71d8c99962e",
+       "label": "B",
+       "content": "obtains at least 55% of the votes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0b400788-5231-5fcf-957b-c9fc56e4e51f",
+       "label": "C",
+       "content": "is ranked first on the party list",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "11d126c4-6348-5473-9e97-9dc01cb3cee7",
+       "label": "D",
+       "content": "obtains more votes than any other candidate",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f8c08943-93b8-5351-90f3-ae0a2cf3f56b",
+     "key": "gov-el-04",
+     "stem": "A merit of proportional representation is that",
+     "image_url": null,
+     "explanation": "PR reduces wasted votes and gives small parties fair representation.\n\n**Why the other options are wrong**\n\n- it always produces single-party governments: PR often produces coalitions.\n- it creates a strong link between each MP and a single constituency: That is a merit of first-past-the-post.\n- it is the simplest system to count: PR is more complex to count.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7a19c8a9-0ceb-56f6-8923-f17f2ff177d0",
+       "label": "A",
+       "content": "seats reflect parties' shares of the vote",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d5f5d4bd-5d69-5976-bb31-13b628167328",
+       "label": "B",
+       "content": "it always produces single-party governments",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bc128726-c723-59c8-90dd-25f0e1bc269a",
+       "label": "C",
+       "content": "it creates a strong link between each MP and a single constituency",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "42b90b71-274a-5fa9-a95c-fe353ed4c346",
+       "label": "D",
+       "content": "it is the simplest system to count",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "152b4b8c-f727-574f-b882-a305e18a1851",
+     "key": "gov-el-05",
+     "stem": "The body responsible for conducting public elections in Sierra Leone is the",
+     "image_url": null,
+     "explanation": "The ECSL registers voters, conducts elections and declares results.\n\n**Why the other options are wrong**\n\n- Political Parties Regulation Commission: The PPRC regulates parties.\n- Ministry of Local Government: The ministry oversees local councils.\n- Human Rights Commission: The Human Rights Commission investigates rights abuses.",
+     "position": 5,
+     "options": [
+      {
+       "id": "1b6adf34-0e42-5fe4-8a5e-1141d06a2d3b",
+       "label": "A",
+       "content": "Political Parties Regulation Commission",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "88a6f890-cf65-5caa-90fa-c90c1fdd7d57",
+       "label": "B",
+       "content": "Electoral Commission for Sierra Leone",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e224099d-27ad-57f0-90ba-3cd0a200ff79",
+       "label": "C",
+       "content": "Ministry of Local Government",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "79685ac8-590e-5f8a-93cd-9771d2369fd7",
+       "label": "D",
+       "content": "Human Rights Commission",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "81ad8ee6-2afb-537a-b326-e3a61ddc262e",
+   "topic": "Public Administration and Civil Service",
+   "title": "Public Administration and Civil Service: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on public administration and civil service, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 126,
+   "questions": [
+    {
+     "id": "e253689b-ffe3-59d8-9823-907f79a8969a",
+     "key": "gov-cs-01",
+     "stem": "The principle that civil servants should serve any government loyally without taking part in party politics is",
+     "image_url": null,
+     "explanation": "Neutrality allows the civil service to serve successive governments.\n\n**Why the other options are wrong**\n\n- anonymity: Anonymity means civil servants work behind the scenes.\n- permanence: Permanence means they stay in office when governments change.\n- hierarchy: Hierarchy is the chain of command.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7d765476-358a-5362-9703-7b18dd46d6a8",
+       "label": "A",
+       "content": "anonymity",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "42d289a8-eb26-51c3-a773-1d190cfd8a7c",
+       "label": "B",
+       "content": "permanence",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "69c9e2a8-a521-5eea-affe-09be1b3de039",
+       "label": "C",
+       "content": "political neutrality",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "da556801-0aff-512c-adab-052fc3067426",
+       "label": "D",
+       "content": "hierarchy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4df7c8e7-b28f-5235-855d-85825a3e4cdb",
+     "key": "gov-cs-02",
+     "stem": "The administrative head and accounting officer of a ministry is the",
+     "image_url": null,
+     "explanation": "The Permanent Secretary advises the minister and is responsible for the ministry's spending.\n\n**Why the other options are wrong**\n\n- Minister: The minister is the political head.\n- Deputy Minister: The deputy assists the minister.\n- Auditor-General: The Auditor-General audits government accounts.",
+     "position": 2,
+     "options": [
+      {
+       "id": "09a6f928-848e-5acf-a101-083533530fb6",
+       "label": "A",
+       "content": "Minister",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7d861004-236d-5126-8114-5c07aa281d3e",
+       "label": "B",
+       "content": "Deputy Minister",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a7db2dd4-0604-5532-a256-2e48dfdc8797",
+       "label": "C",
+       "content": "Auditor-General",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dbc5079b-7b9e-5f2e-bc15-c51029d153a5",
+       "label": "D",
+       "content": "Permanent Secretary",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8105172e-ef45-5e92-b012-6a384ccc5742",
+     "key": "gov-cs-03",
+     "stem": "The body responsible for appointing, promoting and disciplining public officers on merit is the",
+     "image_url": null,
+     "explanation": "The PSC keeps public appointments free from political interference.\n\n**Why the other options are wrong**\n\n- Judicial and Legal Service Commission: The JLSC deals with judicial and legal officers.\n- Anti-Corruption Commission: The ACC investigates corruption.\n- Electoral Commission: The Electoral Commission conducts elections.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2cd0e275-78c3-55cf-8b6b-ab8d45907e7b",
+       "label": "A",
+       "content": "Public Service Commission",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "44de9b37-f7a7-56e7-8af9-a884c4228bb5",
+       "label": "B",
+       "content": "Judicial and Legal Service Commission",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bffccf22-278b-5d38-9ff4-9d8be7b1ea0a",
+       "label": "C",
+       "content": "Anti-Corruption Commission",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "39146ad3-dc75-5cbb-91ad-65866f6ef672",
+       "label": "D",
+       "content": "Electoral Commission",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a86d02e2-2ed8-5acb-a4f3-c7c45a947d94",
+     "key": "gov-cs-04",
+     "stem": "Names of non-existent or departed workers kept on the government payroll are called",
+     "image_url": null,
+     "explanation": "Payroll verification is used to remove ghost workers.\n\n**Why the other options are wrong**\n\n- casual workers: Casual workers are real, temporary staff.\n- seconded officers: Seconded officers are real officers working elsewhere.\n- redundant workers: Redundant workers are real staff whose jobs are no longer needed.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b3ae82a8-7083-5555-a3aa-bb6d669d0ee2",
+       "label": "A",
+       "content": "casual workers",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "294fd173-046b-5c7a-81c7-e244c1852e8b",
+       "label": "B",
+       "content": "ghost workers",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bcb69e24-f4e8-5249-b8d2-8ee05caf2cb7",
+       "label": "C",
+       "content": "seconded officers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4de5b6ee-010c-590d-8fde-eb4bb16d0fa8",
+       "label": "D",
+       "content": "redundant workers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1b9b57bc-a0e2-5541-99a8-b35cfa4b3364",
+     "key": "gov-cs-05",
+     "stem": "The official who investigates complaints of injustice by public officials is the",
+     "image_url": null,
+     "explanation": "The Ombudsman investigates maladministration and recommends remedies.\n\n**Why the other options are wrong**\n\n- Speaker: The Speaker presides over Parliament.\n- Attorney-General: The Attorney-General is the government's chief legal adviser.\n- Clerk of Parliament: The Clerk heads Parliament's administration.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a7e4c13f-a849-508d-990c-e0fc5a26ee9a",
+       "label": "A",
+       "content": "Speaker",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "653ffc53-1548-5324-9b1c-7e8c467f154f",
+       "label": "B",
+       "content": "Attorney-General",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d90c8214-3dbc-5809-b7a5-4f7aa3756824",
+       "label": "C",
+       "content": "Ombudsman",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "92e7b171-4d11-5197-8f7d-d961bdfb66fb",
+       "label": "D",
+       "content": "Clerk of Parliament",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "3cc7867b-2a82-5246-8b95-7f035d78cbd9",
+   "topic": "Local Government and Decentralization",
+   "title": "Local Government and Decentralization: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on local government and decentralization, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 127,
+   "questions": [
+    {
+     "id": "189c54c4-a6a5-58ae-ac0a-3c0d91a65982",
+     "key": "gov-lc-01",
+     "stem": "The transfer of legal powers, functions and revenue from the central government to elected local councils is",
+     "image_url": null,
+     "explanation": "Devolution is the strongest form of decentralisation.\n\n**Why the other options are wrong**\n\n- deconcentration: Deconcentration posts central officials to the districts.\n- delegation: Delegation hands tasks to agencies acting for the centre.\n- centralisation: Centralisation keeps power at the centre.",
+     "position": 1,
+     "options": [
+      {
+       "id": "328d5231-968d-581a-a32e-30f53a2f1c9e",
+       "label": "A",
+       "content": "deconcentration",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cf5ce7da-8805-57c4-b7aa-7c6952f56e1a",
+       "label": "B",
+       "content": "delegation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4ee2fcda-58d3-5340-b624-b94ae21b8151",
+       "label": "C",
+       "content": "centralisation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fe5db029-f6b5-549f-b73e-1db9e2b5f5d1",
+       "label": "D",
+       "content": "devolution",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0a558a0e-2741-58ea-9bb1-e84befeb7c00",
+     "key": "gov-lc-02",
+     "stem": "Local councils in Sierra Leone were revived after the civil war by the",
+     "image_url": null,
+     "explanation": "The 2004 Act restored councils abolished in 1972; it has since been replaced by the 2022 Act.\n\n**Why the other options are wrong**\n\n- Chieftaincy Act 2009: That Act deals with paramount chiefs.\n- Public Elections Act 2022: That Act deals with elections.\n- Protectorate Ordinance 1896: That ordinance set up the Protectorate.",
+     "position": 2,
+     "options": [
+      {
+       "id": "280c5c81-06f9-5ca9-bc80-e315183698bf",
+       "label": "A",
+       "content": "Local Government Act 2004",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c16b29f6-fcd9-5758-a27f-f854a07abbce",
+       "label": "B",
+       "content": "Chieftaincy Act 2009",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3551a4fb-5078-5e11-8ba3-3328959972d4",
+       "label": "C",
+       "content": "Public Elections Act 2022",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9eec4a80-ddac-56ec-9d95-4595e293d070",
+       "label": "D",
+       "content": "Protectorate Ordinance 1896",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b64dbe81-2207-5674-96ca-46c6eba8b156",
+     "key": "gov-lc-03",
+     "stem": "A city council in Sierra Leone is headed by a",
+     "image_url": null,
+     "explanation": "Mayors and council chairpersons are directly elected.\n\n**Why the other options are wrong**\n\n- Paramount Chief: Paramount Chiefs head chiefdoms.\n- District Officer: District Officers are central government officials.\n- chairperson: A chairperson heads a district council.",
+     "position": 3,
+     "options": [
+      {
+       "id": "4692b22c-a9f5-5c67-b72d-0e6d3848b13d",
+       "label": "A",
+       "content": "Paramount Chief",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d4ff6aa6-c5b4-5c2c-bae5-67591de44165",
+       "label": "B",
+       "content": "mayor",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "3f16af5d-3a70-590c-975e-d7a94249a3f9",
+       "label": "C",
+       "content": "District Officer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3951e8d0-9189-5a87-9cfe-40d10ae770c8",
+       "label": "D",
+       "content": "chairperson",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dcce3ceb-4bea-5892-9fee-05dde3157e94",
+     "key": "gov-lc-04",
+     "stem": "Which of the following is an internal source of revenue for local councils?",
+     "image_url": null,
+     "explanation": "Councils raise their own revenue through property rates, local tax, market dues and licences.\n\n**Why the other options are wrong**\n\n- Grants from central government: Grants are external revenue.\n- Loans from donors: Loans are external sources.\n- Customs duties: Customs duties are collected by the central government.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a93888dd-2ce3-5d0a-add5-123ce24643ad",
+       "label": "A",
+       "content": "Grants from central government",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2f0cb674-1189-5b9a-a758-c43172b2cc78",
+       "label": "B",
+       "content": "Loans from donors",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fb9031d3-9332-5df2-9f6f-925ca0f293a9",
+       "label": "C",
+       "content": "Property rates",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7c99acf6-1a5c-5b7b-a06a-1175940a4835",
+       "label": "D",
+       "content": "Customs duties",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5273c5b1-3242-55af-9a8a-a4c63fad5da0",
+     "key": "gov-lc-05",
+     "stem": "A major problem of local councils in Sierra Leone is",
+     "image_url": null,
+     "explanation": "Councils depend heavily on central grants, which often arrive late.\n\n**Why the other options are wrong**\n\n- too many qualified staff: Councils face a shortage of qualified staff.\n- excessive local revenue: Councils have a narrow revenue base.\n- lack of any central supervision: Councils are supervised by the Ministry of Local Government.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f8ba73cd-3f46-524c-adb5-5f512ae32b33",
+       "label": "A",
+       "content": "too many qualified staff",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "df8737ad-5779-50f0-8479-fd7a35ce19c7",
+       "label": "B",
+       "content": "excessive local revenue",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "24baf8e2-8cea-580d-a7b0-68009d1f2a9c",
+       "label": "C",
+       "content": "lack of any central supervision",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e26c5662-9545-5ad3-b8d2-b8d0efc12648",
+       "label": "D",
+       "content": "inadequate funds and late central grants",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5f16176c-ab47-58cb-9f62-33802c5d592d",
+   "topic": "Public Corporations",
+   "title": "Public Corporations: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on public corporations, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 128,
+   "questions": [
+    {
+     "id": "dabe3a1c-041a-5ddd-8a38-6c5b0979fdb2",
+     "key": "gov-pc-01",
+     "stem": "A public corporation is usually established by",
+     "image_url": null,
+     "explanation": "The Act sets out the corporation's powers and duties.\n\n**Why the other options are wrong**\n\n- registration with the Registrar of Companies: That is how private companies are formed.\n- a decision of its shareholders: Public corporations are owned by the state.\n- a resolution of a local council: Councils do not create national public corporations.",
+     "position": 1,
+     "options": [
+      {
+       "id": "11eb6276-4ab7-5e8e-a5e0-c56ca1c24424",
+       "label": "A",
+       "content": "an Act of Parliament",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7ae9a67f-e8c8-5bd8-bb9b-2f035b802832",
+       "label": "B",
+       "content": "registration with the Registrar of Companies",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7f3df9d0-bac3-5013-bf34-f47ef9db309d",
+       "label": "C",
+       "content": "a decision of its shareholders",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "271748b6-a515-5887-a494-61c165b0fd9d",
+       "label": "D",
+       "content": "a resolution of a local council",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0ead2670-278d-53a5-9b5e-85e1664ed05f",
+     "key": "gov-pc-02",
+     "stem": "Which of the following is a public corporation in Sierra Leone?",
+     "image_url": null,
+     "explanation": "Guma Valley supplies water to Freetown and is state-owned.\n\n**Why the other options are wrong**\n\n- Sierra Leone Teachers' Union: That is a pressure group.\n- All People's Congress: That is a political party.\n- Freetown City Council: That is a local council.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8240c65b-bda8-51c3-b6d2-7bbde1252a56",
+       "label": "A",
+       "content": "Sierra Leone Teachers' Union",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8b873d42-dd05-563f-997e-f66ebdbf3bb1",
+       "label": "B",
+       "content": "Guma Valley Water Company",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f0b5f53a-6194-5655-b358-24feeb647940",
+       "label": "C",
+       "content": "All People's Congress",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "25db71e3-17f5-525d-8397-d918c7a38043",
+       "label": "D",
+       "content": "Freetown City Council",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8cb2679d-e22f-5db3-a274-b06c19547715",
+     "key": "gov-pc-03",
+     "stem": "One reason for establishing public corporations is to",
+     "image_url": null,
+     "explanation": "Water, electricity and ports are essential services needing large capital.\n\n**Why the other options are wrong**\n\n- make the maximum possible profit for private shareholders: That is the aim of private companies.\n- replace the civil service in running the ministries: Corporations do not replace ministries.\n- reduce the powers of Parliament over public spending: Parliament creates and oversees them.",
+     "position": 3,
+     "options": [
+      {
+       "id": "573b6eba-6d9c-5d85-af9f-a0d5791ffcd2",
+       "label": "A",
+       "content": "make the maximum possible profit for private shareholders",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b45f6ce1-bad2-5bbd-ab82-f44ec5976822",
+       "label": "B",
+       "content": "replace the civil service in running the ministries",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e4922904-6b0d-565c-8f75-df695b67466f",
+       "label": "C",
+       "content": "provide essential services that private firms may neglect",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "536b8cc0-09b2-500b-bbaa-cc329370d568",
+       "label": "D",
+       "content": "reduce the powers of Parliament over public spending",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6c6c52ed-492b-56a7-9e22-13dcea2a7369",
+     "key": "gov-pc-04",
+     "stem": "Transferring the ownership of a public enterprise to private investors is",
+     "image_url": null,
+     "explanation": "Sierra Leone set up the National Commission for Privatisation in 2002.\n\n**Why the other options are wrong**\n\n- nationalisation: Nationalisation transfers private firms to the state.\n- commercialisation: Commercialisation keeps state ownership but runs the firm on business lines.\n- indigenisation: Indigenisation transfers ownership to citizens of the country.",
+     "position": 4,
+     "options": [
+      {
+       "id": "fe62c162-e8e3-5d53-b708-4b00a89c0fb7",
+       "label": "A",
+       "content": "nationalisation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e920e568-2bc4-53fd-a044-5f2793c39aa3",
+       "label": "B",
+       "content": "commercialisation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "081c70f1-ae98-5ba7-84a7-0c3e37c6290a",
+       "label": "C",
+       "content": "indigenisation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5e6bec1f-cab4-5248-8346-4a240ce6c341",
+       "label": "D",
+       "content": "privatisation",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f8a407ee-c5b8-53ed-88b4-f96774b911d7",
+     "key": "gov-pc-05",
+     "stem": "Public corporations are controlled financially through",
+     "image_url": null,
+     "explanation": "The Auditor-General's reports are examined by Parliament.\n\n**Why the other options are wrong**\n\n- election of their boards by voters: Boards are appointed, not elected by voters.\n- the Political Parties Regulation Commission: The PPRC regulates parties.\n- the Local Courts: Local Courts apply customary law.",
+     "position": 5,
+     "options": [
+      {
+       "id": "7f7e69c1-a8e7-5536-8369-1561dfd407d4",
+       "label": "A",
+       "content": "audit of their accounts by the Auditor-General",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0f0b0668-5540-5dc4-829e-ed98736da33d",
+       "label": "B",
+       "content": "election of their boards by voters",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9c0f9833-65ee-553d-bc15-809c69e9c1f5",
+       "label": "C",
+       "content": "the Political Parties Regulation Commission",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a910edc3-cc55-5289-bd08-a2eb2eb76e1f",
+       "label": "D",
+       "content": "the Local Courts",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "3ae6345d4f6c"
+}

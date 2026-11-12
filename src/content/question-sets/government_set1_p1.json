@@ -1,0 +1,1608 @@
+{
+ "name": "government_set1_p1",
+ "label": "Government: set 1 (political concepts and the organs of government)",
+ "subject_slug": "government",
+ "papers": [
+  {
+   "id": "b8a52d32-122f-5420-a11b-585c72484839",
+   "topic": "Meaning and Nature of Government",
+   "title": "Meaning and Nature of Government: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on meaning and nature of government, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 100,
+   "questions": [
+    {
+     "id": "7c138967-8e05-5baf-a5dc-44c29392f6c2",
+     "key": "gov-mn-01",
+     "stem": "Government as an institution refers to",
+     "image_url": null,
+     "explanation": "As an institution, government means the legislature, executive and judiciary that make, enforce and interpret laws.\n\n**Why the other options are wrong**\n\n- the academic study of the state, its organs and how power is used: That is government as an academic subject.\n- the activity or process of ruling a society and making decisions for it: That is government as a process or art.\n- the citizens who vote in elections to choose their representatives: Voters are the electorate, not the institutions of government.",
+     "position": 1,
+     "options": [
+      {
+       "id": "b9b086e0-bebb-5ce8-a73c-c57e23545cac",
+       "label": "A",
+       "content": "the organs that make, carry out and interpret the laws of a state",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a8ea20e9-055b-5c6f-a0bd-45f8814d27d7",
+       "label": "B",
+       "content": "the academic study of the state, its organs and how power is used",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "12a8cff5-71fe-5998-b93b-49af75857630",
+       "label": "C",
+       "content": "the activity or process of ruling a society and making decisions for it",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "983442bf-f18d-593e-8372-f84c094d8b53",
+       "label": "D",
+       "content": "the citizens who vote in elections to choose their representatives",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b385b94e-1ea8-5ebc-824c-3140fef79a7b",
+     "key": "gov-mn-02",
+     "stem": "Power that is accepted as rightful by the people over whom it is exercised is called",
+     "image_url": null,
+     "explanation": "Authority is legitimate power: the right to command that people accept.\n\n**Why the other options are wrong**\n\n- force: Force is the use of physical coercion, not accepted right.\n- influence: Influence is the ability to persuade without the right to command.\n- sovereignty: Sovereignty is the supreme power of the state, not acceptance by the governed.",
+     "position": 2,
+     "options": [
+      {
+       "id": "4579b892-9fdb-5b30-be86-c034b81d4a68",
+       "label": "A",
+       "content": "force",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "34bd431d-c463-5c13-981f-1f2cdc3e6916",
+       "label": "B",
+       "content": "authority",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "78a22e63-aceb-5067-a77b-cbc964815080",
+       "label": "C",
+       "content": "influence",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9c9842a4-e8e8-5ac3-a373-62c0d797ee84",
+       "label": "D",
+       "content": "sovereignty",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9a60d790-a87c-53a6-9197-4da05cc551bf",
+     "key": "gov-mn-03",
+     "stem": "The process by which people acquire political values and attitudes is known as",
+     "image_url": null,
+     "explanation": "Political socialisation passes on political values through family, school, media, religion and peers.\n\n**Why the other options are wrong**\n\n- political participation: Participation is taking part in political activity, not learning values.\n- political culture: Political culture is the set of values itself, not the process of acquiring them.\n- political recruitment: Recruitment is the selection of people for political office.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b5402748-1695-5911-874c-6ef54f057334",
+       "label": "A",
+       "content": "political participation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c2e2d214-d73f-55f9-a6a3-4d764ca58673",
+       "label": "B",
+       "content": "political culture",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "06df4e16-b275-57c0-a779-9697a2ecb53f",
+       "label": "C",
+       "content": "political socialisation",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "137354dd-6774-569e-8815-9904d11eeaa7",
+       "label": "D",
+       "content": "political recruitment",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ba6c919b-4b70-588d-8aae-580e898963fe",
+     "key": "gov-mn-04",
+     "stem": "A government is said to be legitimate when",
+     "image_url": null,
+     "explanation": "Legitimacy is the acceptance by the governed that those in power have the right to rule, often through free elections.\n\n**Why the other options are wrong**\n\n- it has a large army: Military strength gives force, not legitimacy.\n- it collects taxes regularly: Tax collection does not prove that the people accept the government.\n- it has ruled for a long time: Long rule can be maintained by force without acceptance.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4e0c5912-d863-5aa1-af74-42e3e3555f9f",
+       "label": "A",
+       "content": "it has a large army",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0abb50cf-d4ea-5a68-89e3-8e8e2fb5b96f",
+       "label": "B",
+       "content": "it collects taxes regularly",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "66446545-a620-5b21-b213-948452aa7c2d",
+       "label": "C",
+       "content": "it has ruled for a long time",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "539f214c-13c5-55f3-aa25-eddcdda9b37e",
+       "label": "D",
+       "content": "the people accept its right to rule",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1f37a1cc-778e-522d-8a8f-f0d1574533e2",
+     "key": "gov-mn-05",
+     "stem": "Which of the following is a function of government?",
+     "image_url": null,
+     "explanation": "Functions of government include maintaining law and order, defending the state and providing social services.\n\n**Why the other options are wrong**\n\n- Forming political parties: Parties are formed by citizens, not by the government as a function.\n- Writing newspaper editorials: Editorials are written by the press.\n- Choosing members of pressure groups: Pressure groups recruit their own members.",
+     "position": 5,
+     "options": [
+      {
+       "id": "70004a94-5c67-5292-ae6f-560a00905fd5",
+       "label": "A",
+       "content": "Maintaining law and order",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "afbd935f-3956-5be4-95f0-f74e7af4055a",
+       "label": "B",
+       "content": "Forming political parties",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "77b958b0-2613-5343-8247-4e46f704ee63",
+       "label": "C",
+       "content": "Writing newspaper editorials",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0ccd9964-4947-52cd-aee2-d3b0a94d64de",
+       "label": "D",
+       "content": "Choosing members of pressure groups",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fa74ad91-47fc-5de2-b737-2d7c632ffbe3",
+   "topic": "State and Sovereignty",
+   "title": "State and Sovereignty: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on state and sovereignty, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 101,
+   "questions": [
+    {
+     "id": "1cb5390a-0fc5-5791-bae7-32c78065e080",
+     "key": "gov-ss-01",
+     "stem": "Which of the following is NOT an essential feature of a state?",
+     "image_url": null,
+     "explanation": "A state needs population, territory, government and sovereignty; many states contain several ethnic groups.\n\n**Why the other options are wrong**\n\n- A defined territory: Territory is an essential feature of a state.\n- A population: Population is an essential feature of a state.\n- Sovereignty: Sovereignty is an essential feature of a state.",
+     "position": 1,
+     "options": [
+      {
+       "id": "45d39fbb-96d1-574e-bd41-37941412b5d6",
+       "label": "A",
+       "content": "A defined territory",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0dd5869c-afb1-5229-a0f5-d35d037a67e6",
+       "label": "B",
+       "content": "A single ethnic group",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b37e0808-7bc7-5da9-9d15-c96118f0c3a4",
+       "label": "C",
+       "content": "A population",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f730f266-d700-5c81-842f-f68a018453fb",
+       "label": "D",
+       "content": "Sovereignty",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "09af24cb-90b4-5f37-bc78-80a7d14c5c6b",
+     "key": "gov-ss-02",
+     "stem": "Sovereignty means",
+     "image_url": null,
+     "explanation": "Sovereignty is the supreme and final legal authority of the state, internally and externally.\n\n**Why the other options are wrong**\n\n- the right of all adult citizens to vote freely in periodic elections: That is the franchise.\n- the power of the courts to interpret the laws and settle disputes: That is judicial power, only part of state authority.\n- a group of people who share a common culture, language and history: That describes a nation.",
+     "position": 2,
+     "options": [
+      {
+       "id": "feca168b-8710-5b5d-9fa1-244c907c368b",
+       "label": "A",
+       "content": "the right of all adult citizens to vote freely in periodic elections",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3c35677d-158d-5256-baf8-78c9f129dc99",
+       "label": "B",
+       "content": "the power of the courts to interpret the laws and settle disputes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "517e41b4-3672-5fa8-9e10-ccbd66f1c82a",
+       "label": "C",
+       "content": "supreme power of a state over its people and territory, free from external control",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a4e9dbff-c56e-5c64-a20a-46ee21d44d17",
+       "label": "D",
+       "content": "a group of people who share a common culture, language and history",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "40f27261-abe2-5585-bb7c-786a0d25cf02",
+     "key": "gov-ss-03",
+     "stem": "The main difference between a state and a nation is that a state",
+     "image_url": null,
+     "explanation": "A nation is a people with a shared identity; a state is a sovereign political unit with a government.\n\n**Why the other options are wrong**\n\n- must have a common language: A common language is more typical of a nation.\n- must be made up of one ethnic group: States often contain many ethnic groups.\n- cannot have a defined territory: A state must have a defined territory.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2064cab7-d0d3-5aa9-a70a-b1b78dc84af3",
+       "label": "A",
+       "content": "must have a common language",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "36cc4e49-8f0c-573a-961e-abf6964f1b5d",
+       "label": "B",
+       "content": "must be made up of one ethnic group",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "31b2538b-8c15-5716-b25e-92cc3c009dd3",
+       "label": "C",
+       "content": "cannot have a defined territory",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5cbeb470-9f22-5062-89b0-385c1cfbf3f7",
+       "label": "D",
+       "content": "must have sovereignty and a government",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "68095c40-668b-5a6d-b578-a835735d2176",
+     "key": "gov-ss-04",
+     "stem": "Membership of international organisations such as the UN and ECOWAS is a",
+     "image_url": null,
+     "explanation": "Treaties and international obligations limit what a state can do, restricting its external sovereignty.\n\n**Why the other options are wrong**\n\n- source of the sovereignty of a state: Sovereignty does not come from membership of organisations.\n- feature of a nation: It has nothing to do with being a nation.\n- form of de facto sovereignty: De facto sovereignty is about who actually holds power within a state.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a5e3334e-3d51-56c0-a747-f5ac0f1d14f4",
+       "label": "A",
+       "content": "limitation on the sovereignty of a state",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4fb5e3bc-2731-5232-8613-3574db308789",
+       "label": "B",
+       "content": "source of the sovereignty of a state",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d49cb1b8-c20e-5e94-ae3a-bab635a804d7",
+       "label": "C",
+       "content": "feature of a nation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "14df6b18-a712-5dd8-8f4e-57b0455a9382",
+       "label": "D",
+       "content": "form of de facto sovereignty",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "baaa87fe-2a02-5964-8511-42d73c93ee25",
+     "key": "gov-ss-05",
+     "stem": "A military junta that controls a country after a coup but is not recognised by law exercises",
+     "image_url": null,
+     "explanation": "De facto sovereignty is power held in fact, whether or not it is legal.\n\n**Why the other options are wrong**\n\n- de jure sovereignty: De jure sovereignty is legal sovereignty, which the junta lacks.\n- popular sovereignty: Popular sovereignty rests with the people.\n- titular sovereignty: Titular sovereignty is held by a ceremonial head of state.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a190153a-69e9-57a5-a1fc-593c51d23a32",
+       "label": "A",
+       "content": "de jure sovereignty",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c0b552cc-ac87-53df-bdb1-32e34c2dff75",
+       "label": "B",
+       "content": "de facto sovereignty",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "898ece28-ac02-53da-a377-4fb0afa81d4e",
+       "label": "C",
+       "content": "popular sovereignty",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "feca2ee8-6cfc-59b6-b634-43584e510405",
+       "label": "D",
+       "content": "titular sovereignty",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "93c7a177-efdb-54fb-b007-ee9c6e0d57b3",
+   "topic": "Forms of Government",
+   "title": "Forms of Government: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on forms of government, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 102,
+   "questions": [
+    {
+     "id": "551807c2-784e-504c-bcaa-2911c7a3f694",
+     "key": "gov-fg-01",
+     "stem": "In a unitary state, governmental power is",
+     "image_url": null,
+     "explanation": "In a unitary state the central government is supreme; local bodies get only the powers it delegates.\n\n**Why the other options are wrong**\n\n- shared equally by the centre and the regions under the constitution: That describes federalism.\n- held by sovereign member states: That describes a confederation.\n- held only by local councils: Local councils exercise only powers delegated by the centre.",
+     "position": 1,
+     "options": [
+      {
+       "id": "91fcee28-f269-50a7-883f-0f9847f56df5",
+       "label": "A",
+       "content": "shared equally by the centre and the regions under the constitution",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2862df2b-6c1c-532f-b235-1862a8527c89",
+       "label": "B",
+       "content": "held by sovereign member states",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "737b414b-9607-520b-aa5d-792089aa673d",
+       "label": "C",
+       "content": "concentrated in the central government",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1790482a-7637-57f2-88da-5c8afb7fe946",
+       "label": "D",
+       "content": "held only by local councils",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c508ba7a-20fd-5d2a-be29-4f379deb8ee7",
+     "key": "gov-fg-02",
+     "stem": "Which country is an example of a federal state in West Africa?",
+     "image_url": null,
+     "explanation": "Nigeria has a federal constitution with 36 states and a federal government.\n\n**Why the other options are wrong**\n\n- Sierra Leone: Sierra Leone is a unitary state.\n- Ghana: Ghana is a unitary state.\n- Liberia: Liberia is a unitary state.",
+     "position": 2,
+     "options": [
+      {
+       "id": "6c85ef56-dc8a-5d1b-96a8-af160c7eaa5d",
+       "label": "A",
+       "content": "Sierra Leone",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7da139d8-8a65-5e86-861e-c43570cb745d",
+       "label": "B",
+       "content": "Ghana",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d411f639-0979-5415-9f59-e5bca7adfa6b",
+       "label": "C",
+       "content": "Liberia",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "df682259-fd14-5a43-9b17-4c7e9eb70dfe",
+       "label": "D",
+       "content": "Nigeria",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "43c48f11-ebe1-504f-a05b-022c405996f8",
+     "key": "gov-fg-03",
+     "stem": "In a federation, matters on which both the federal and state governments may legislate are on the",
+     "image_url": null,
+     "explanation": "The concurrent list contains shared subjects; federal law prevails if laws conflict.\n\n**Why the other options are wrong**\n\n- exclusive list: Only the federal government legislates on the exclusive list.\n- residual list: Residual matters belong to the states.\n- reserved list: That is not the usual name for shared powers.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8b271e2d-7ceb-5a02-bdae-25a84f894f37",
+       "label": "A",
+       "content": "concurrent list",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d0e2ceae-d7b8-526e-86d8-9c65114da945",
+       "label": "B",
+       "content": "exclusive list",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e09001f9-5feb-5c3a-a852-317042a33dec",
+       "label": "C",
+       "content": "residual list",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "399f444b-70b8-5353-a517-6adac0c46759",
+       "label": "D",
+       "content": "reserved list",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "747f7d58-7b3a-5585-bab3-5b7e7f161e13",
+     "key": "gov-fg-04",
+     "stem": "A loose union of sovereign states that keep the right to withdraw is a",
+     "image_url": null,
+     "explanation": "In a confederation members remain sovereign and may leave, as in Senegambia (1982–1989).\n\n**Why the other options are wrong**\n\n- federation: Members of a federation cannot secede at will.\n- unitary state: A unitary state is a single state with a strong centre.\n- protectorate: A protectorate is a territory under the protection of another state.",
+     "position": 4,
+     "options": [
+      {
+       "id": "bf4ac5c4-9bfe-5f76-b4d6-668c2ced781c",
+       "label": "A",
+       "content": "federation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5f9731c9-86ce-5697-ba02-26dab392e050",
+       "label": "B",
+       "content": "confederation",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "309af0dd-37eb-585d-9111-42321d7b2f0e",
+       "label": "C",
+       "content": "unitary state",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "56ddefc0-fd02-5205-8461-19bfe05043db",
+       "label": "D",
+       "content": "protectorate",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d105f274-2047-53d7-8872-8bab08c44114",
+     "key": "gov-fg-05",
+     "stem": "One merit of a unitary system of government is that it",
+     "image_url": null,
+     "explanation": "With one centre of power, a unitary state can act quickly and apply the same laws everywhere.\n\n**Why the other options are wrong**\n\n- gives regions equal power with the centre: That is a feature of federalism.\n- allows member states to secede: That is a feature of a confederation.\n- requires two levels of legislature: That is a federal feature and a cost, not a unitary merit.",
+     "position": 5,
+     "options": [
+      {
+       "id": "01df5082-3420-5861-a7c3-4fa78ad95838",
+       "label": "A",
+       "content": "gives regions equal power with the centre",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8dd01130-f8f5-5e06-99a9-452badaf2a7f",
+       "label": "B",
+       "content": "allows member states to secede",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3e23e7b1-4d46-5243-82ed-f5ca02d88f36",
+       "label": "C",
+       "content": "promotes uniform laws and quick decisions",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4f5e666f-99e8-5b5f-9ad5-45c41100c492",
+       "label": "D",
+       "content": "requires two levels of legislature",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "91537b54-4a02-5f16-9bcc-7bbe1815ce99",
+   "topic": "Systems of Government",
+   "title": "Systems of Government: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on systems of government, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 103,
+   "questions": [
+    {
+     "id": "35f6d505-6ef6-51ce-b40a-b1731fb1cfb9",
+     "key": "gov-sg-01",
+     "stem": "In a parliamentary system, the head of government is the",
+     "image_url": null,
+     "explanation": "Parliamentary systems have a dual executive: a ceremonial head of state and a prime minister who governs.\n\n**Why the other options are wrong**\n\n- monarch: The monarch is a ceremonial head of state.\n- speaker: The speaker presides over the legislature.\n- chief justice: The chief justice heads the judiciary.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f1eaede7-4684-5e08-8259-b8d867afb68c",
+       "label": "A",
+       "content": "monarch",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3b5266d5-9ed2-591f-81a7-5d4c1e1adac5",
+       "label": "B",
+       "content": "speaker",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ba23266d-cea3-5e00-b82d-6e55563c5451",
+       "label": "C",
+       "content": "chief justice",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5915b2ef-5c08-5871-8b6c-8834b6557f1d",
+       "label": "D",
+       "content": "prime minister",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bcbeee23-93eb-59eb-b4d5-0be7aeb41695",
+     "key": "gov-sg-02",
+     "stem": "Collective responsibility is a feature of the",
+     "image_url": null,
+     "explanation": "In a parliamentary system the cabinet stands or falls together and defends its decisions as one.\n\n**Why the other options are wrong**\n\n- presidential system: Presidential systems do not rely on cabinet collective responsibility to parliament.\n- confederal system: Confederation is a form of state, not a system of executive responsibility.\n- military system: Military regimes do not operate cabinet responsibility to a legislature.",
+     "position": 2,
+     "options": [
+      {
+       "id": "ea5b2af3-66d1-53d3-bb4a-eb93de40fcec",
+       "label": "A",
+       "content": "parliamentary system",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "130ac87b-78a6-54ca-9e58-463491c50d21",
+       "label": "B",
+       "content": "presidential system",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "757a5733-599a-52a9-9efb-c11b2e010886",
+       "label": "C",
+       "content": "confederal system",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bbca4ef0-4f3b-57b0-a5d0-ff6275f4094a",
+       "label": "D",
+       "content": "military system",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7bc951ef-6c01-51b5-aa12-d879f46a2b0e",
+     "key": "gov-sg-03",
+     "stem": "According to Aristotle, the perverted form of rule by a few is",
+     "image_url": null,
+     "explanation": "Aristotle contrasted aristocracy (the best few for all) with oligarchy (a few for themselves).\n\n**Why the other options are wrong**\n\n- aristocracy: Aristocracy is the good form of rule by a few.\n- tyranny: Tyranny is the perverted form of rule by one.\n- polity: Polity is the good form of rule by the many.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1bfddc67-af72-526e-ba6b-fe6e81084afc",
+       "label": "A",
+       "content": "aristocracy",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b92245b7-70aa-5e6e-9089-49dad1a3be02",
+       "label": "B",
+       "content": "oligarchy",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "384cf8b3-492f-56b3-8eab-cb917056e1d3",
+       "label": "C",
+       "content": "tyranny",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "66a9c301-1c67-5794-b89c-6d92b0a137e5",
+       "label": "D",
+       "content": "polity",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "284579da-1f6a-5f9f-9297-aabf65c3bfc0",
+     "key": "gov-sg-04",
+     "stem": "Government by religious leaders according to religious law is called",
+     "image_url": null,
+     "explanation": "Theocracy is rule in the name of God or religious law.\n\n**Why the other options are wrong**\n\n- gerontocracy: Gerontocracy is rule by the elders.\n- plutocracy: Plutocracy is rule by the wealthy.\n- autocracy: Autocracy is rule by one person with unlimited power.",
+     "position": 4,
+     "options": [
+      {
+       "id": "923fe6fd-2368-530a-9245-a0d52cc4ed71",
+       "label": "A",
+       "content": "gerontocracy",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f84bbf1b-2404-5122-ae7f-2c0e48a3b1ec",
+       "label": "B",
+       "content": "plutocracy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4b2c6f29-d1ea-5dd8-ae93-844f201f0fa4",
+       "label": "C",
+       "content": "theocracy",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a3a1eeb0-4c57-5fb3-b71b-9ace24c73353",
+       "label": "D",
+       "content": "autocracy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9a4f80dd-7a5e-513e-909e-0d0e3bb84596",
+     "key": "gov-sg-05",
+     "stem": "Sierra Leone became a republic on",
+     "image_url": null,
+     "explanation": "On 19 April 1971 the British monarch ceased to be head of state.\n\n**Why the other options are wrong**\n\n- 27 April 1961: That was independence.\n- 1 October 1991: That was when the 1991 Constitution came into force.\n- 29 April 1992: That was the NPRC coup.",
+     "position": 5,
+     "options": [
+      {
+       "id": "779f2d28-1296-5f73-b47f-72fc6e6759a6",
+       "label": "A",
+       "content": "27 April 1961",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "aacf789c-05da-52df-b5a6-4e5862257ec1",
+       "label": "B",
+       "content": "1 October 1991",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8897f7f7-c406-5bcc-9b58-984822412dda",
+       "label": "C",
+       "content": "29 April 1992",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "beae42fe-7ccd-5b69-95d0-e6fe87c4fb2e",
+       "label": "D",
+       "content": "19 April 1971",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "43b2cc1e-5311-5d89-a307-fade45021f42",
+   "topic": "Democracy and Other Political Ideologies",
+   "title": "Democracy and Other Political Ideologies: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on democracy and other political ideologies, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 104,
+   "questions": [
+    {
+     "id": "30596c7f-a1bd-5c65-b555-a27a890d078e",
+     "key": "gov-di-01",
+     "stem": "\"Government of the people, by the people, for the people\" is a definition of democracy given by",
+     "image_url": null,
+     "explanation": "Abraham Lincoln used the phrase in his Gettysburg Address of 1863.\n\n**Why the other options are wrong**\n\n- Karl Marx: Marx wrote about communism and class struggle.\n- A. V. Dicey: Dicey wrote about the rule of law.\n- Baron de Montesquieu: Montesquieu wrote about the separation of powers.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7163010c-0675-575f-9940-7b57f29c5e07",
+       "label": "A",
+       "content": "Abraham Lincoln",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2f923016-09cb-54a8-9a80-ba34deb1c818",
+       "label": "B",
+       "content": "Karl Marx",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2458bbeb-6d7d-5b1f-9ce4-405a00233320",
+       "label": "C",
+       "content": "A. V. Dicey",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "aa2e8379-c8fc-55e5-b3d2-2e288bbfa0cc",
+       "label": "D",
+       "content": "Baron de Montesquieu",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f4378571-e464-5f54-b073-b4d2ba83ed17",
+     "key": "gov-di-02",
+     "stem": "A direct vote by the electorate on a single public question is a",
+     "image_url": null,
+     "explanation": "A referendum lets voters decide an issue directly, as in Sierra Leone's 1991 constitutional referendum.\n\n**Why the other options are wrong**\n\n- by-election: A by-election fills a vacant seat.\n- primary election: A primary chooses a party's candidates.\n- run-off: A run-off is a second round between leading candidates.",
+     "position": 2,
+     "options": [
+      {
+       "id": "cfca6762-8259-5398-9625-e6fd8cf1a044",
+       "label": "A",
+       "content": "by-election",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "088d90ae-00be-5077-8e20-786d8ca76814",
+       "label": "B",
+       "content": "referendum",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9ec0f3bf-3e2a-55a5-b692-1b1d73dbe4d1",
+       "label": "C",
+       "content": "primary election",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b9ba07d2-e97b-5fb6-bbe0-ed026127c928",
+       "label": "D",
+       "content": "run-off",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4ba95f05-b32d-5e92-bbbc-fe306bf385fd",
+     "key": "gov-di-03",
+     "stem": "Which of the following is a condition necessary for democracy to work well?",
+     "image_url": null,
+     "explanation": "Free and fair elections need an impartial electoral body that all parties trust.\n\n**Why the other options are wrong**\n\n- A ban on opposition parties: Banning opposition destroys democracy.\n- Control of the press by the ruling party: A free press is needed for democracy.\n- Life tenure for the president: Periodic elections are a feature of democracy.",
+     "position": 3,
+     "options": [
+      {
+       "id": "00113de0-4383-5b07-a5c0-c9e2321038af",
+       "label": "A",
+       "content": "A ban on opposition parties",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5d9c198c-5b36-5c4a-b457-b63d5ffef2ea",
+       "label": "B",
+       "content": "Control of the press by the ruling party",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d6609176-4e18-5f76-a982-d0e41e60579a",
+       "label": "C",
+       "content": "An independent electoral commission",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b582d632-bbc4-5146-83df-5c6b446c00e1",
+       "label": "D",
+       "content": "Life tenure for the president",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "066cb54c-1d9e-5cce-a6fd-a02835e2d23a",
+     "key": "gov-di-04",
+     "stem": "The Communist Manifesto (1848) was written by",
+     "image_url": null,
+     "explanation": "Marx and Engels set out the theory of class struggle and a classless communist society.\n\n**Why the other options are wrong**\n\n- Adam Smith: Adam Smith wrote The Wealth of Nations, a founding work of capitalism.\n- Benito Mussolini: Mussolini founded fascism in Italy.\n- John Locke: Locke was a liberal philosopher of the 1600s.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4f6a9ae6-fc73-5252-96ec-c1bd82a5fbbc",
+       "label": "A",
+       "content": "Adam Smith",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7ce51d2e-9817-5db8-924f-af1782f60ded",
+       "label": "B",
+       "content": "Benito Mussolini",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9e72de9d-a0c1-573f-a00e-9e2124761256",
+       "label": "C",
+       "content": "John Locke",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0c4bc7a1-8812-5b2b-a037-774e33f26101",
+       "label": "D",
+       "content": "Karl Marx and Friedrich Engels",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4bcbd9eb-4b25-5419-8dc4-10a529f427da",
+     "key": "gov-di-05",
+     "stem": "An economy in which both the state and private individuals own and run enterprises is a",
+     "image_url": null,
+     "explanation": "Most modern states, including Sierra Leone, combine public and private enterprise.\n\n**Why the other options are wrong**\n\n- capitalist economy: Capitalism relies mainly on private ownership.\n- communist economy: Communism aims at common ownership of all means of production.\n- feudal economy: Feudalism was a medieval system of land held in return for service.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e51a224f-5410-5654-a432-9cfbb6415c4b",
+       "label": "A",
+       "content": "mixed economy",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "45cee8af-ed6e-5862-84af-fb744f789a98",
+       "label": "B",
+       "content": "capitalist economy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7591f578-3334-5541-8c24-8d428248130d",
+       "label": "C",
+       "content": "communist economy",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0577af14-09a4-52c9-87d4-133a1386435c",
+       "label": "D",
+       "content": "feudal economy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e35f00f2-db4d-5884-a3bb-af6bfcf62344",
+   "topic": "The Executive",
+   "title": "The Executive: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the executive, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 105,
+   "questions": [
+    {
+     "id": "d4ee4137-3034-5dcc-aaf2-a6efa00403c6",
+     "key": "gov-ex-01",
+     "stem": "The civil service is often described as the",
+     "image_url": null,
+     "explanation": "Civil servants stay in office when governments change, providing continuity.\n\n**Why the other options are wrong**\n\n- political executive: The political executive is the President and ministers, who change with elections.\n- nominal executive: A nominal executive is a ceremonial head of state.\n- plural executive: A plural executive is a council that shares executive power.",
+     "position": 1,
+     "options": [
+      {
+       "id": "332c77b8-a2cb-53be-b191-a8a2fe2c6f51",
+       "label": "A",
+       "content": "political executive",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4b4a337e-a9c2-5558-9366-035101420953",
+       "label": "B",
+       "content": "permanent executive",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ae4a2bf5-c8db-50e6-a1e2-0198c99c0eed",
+       "label": "C",
+       "content": "nominal executive",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c31218f0-df53-527f-9069-ca78f3b0b1fb",
+       "label": "D",
+       "content": "plural executive",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aca80dbd-1451-551a-9be8-ac8b9364ac09",
+     "key": "gov-ex-02",
+     "stem": "The minimum age for a candidate for President under the 1991 Constitution of Sierra Leone is",
+     "image_url": null,
+     "explanation": "A presidential candidate must be a citizen, at least 40 years old, and a member of a political party.\n\n**Why the other options are wrong**\n\n- 21 years: 21 is the minimum age to be a Member of Parliament.\n- 18 years: 18 is the voting age.\n- 35 years: 35 is the age requirement in some other countries, such as the USA.",
+     "position": 2,
+     "options": [
+      {
+       "id": "a753005b-34f6-5b4d-85f8-a76617db1d18",
+       "label": "A",
+       "content": "21 years",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "729abf72-b92a-576e-bb71-942d38534cf3",
+       "label": "B",
+       "content": "18 years",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "207e576b-33c5-5d1e-a5b6-3c9712675b0f",
+       "label": "C",
+       "content": "40 years",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8a47ca1d-2808-50a6-84b5-0134bb82b115",
+       "label": "D",
+       "content": "35 years",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ea4e0b8d-2481-554b-9e21-b0d8c2eada22",
+     "key": "gov-ex-03",
+     "stem": "To win the presidential election in Sierra Leone in the first round, a candidate must obtain at least",
+     "image_url": null,
+     "explanation": "If no candidate reaches 55%, a run-off is held between the top two.\n\n**Why the other options are wrong**\n\n- 50% of the valid votes cast: Sierra Leone sets a higher threshold of 55%.\n- two-thirds of the valid votes cast: Two-thirds is the threshold for constitutional amendments in Parliament.\n- the highest number of votes, whatever the share: That is simple majority; Sierra Leone requires 55% to avoid a run-off.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ce7d92ed-f3a8-5a13-88f4-6b931a428eeb",
+       "label": "A",
+       "content": "50% of the valid votes cast",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6dc6a765-c42f-5dd5-8830-c531d24c7716",
+       "label": "B",
+       "content": "two-thirds of the valid votes cast",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a0df5dcd-3695-5009-9cd0-b00022f705e0",
+       "label": "C",
+       "content": "the highest number of votes, whatever the share",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "41eec5db-7645-5658-aade-5963f320884c",
+       "label": "D",
+       "content": "55% of the valid votes cast",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7d1df925-34a7-5673-91b8-271bb44912bc",
+     "key": "gov-ex-04",
+     "stem": "Which of the following is a function of the executive?",
+     "image_url": null,
+     "explanation": "The executive carries out laws and policies and runs the administration.\n\n**Why the other options are wrong**\n\n- Interpreting the constitution in disputes: That is a judicial function.\n- Passing the Appropriation Act: Parliament passes the Appropriation Act.\n- Hearing election petitions: Courts hear election petitions.",
+     "position": 4,
+     "options": [
+      {
+       "id": "5883dbdb-73f8-55fd-b383-a6c2a76a2d01",
+       "label": "A",
+       "content": "Implementing laws passed by the legislature",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b9508726-8225-5b7b-a1af-b15d551febe9",
+       "label": "B",
+       "content": "Interpreting the constitution in disputes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9973fdfb-f950-5097-a550-a828063b9e54",
+       "label": "C",
+       "content": "Passing the Appropriation Act",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a363bbc0-c39c-5b99-8501-a5057e1a889f",
+       "label": "D",
+       "content": "Hearing election petitions",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "41f3dd20-0275-54f8-a1c4-84ddf5e104f3",
+     "key": "gov-ex-05",
+     "stem": "Executive power has grown in modern states mainly because of",
+     "image_url": null,
+     "explanation": "Providing education, health and economic management needs a large, powerful executive.\n\n**Why the other options are wrong**\n\n- the abolition of the civil service in most countries: The civil service has grown, not been abolished.\n- the decline of political parties and party discipline: Party control actually strengthens executives.\n- the reduction of government functions and spending: Government functions have expanded.",
+     "position": 5,
+     "options": [
+      {
+       "id": "5e942b3a-e61d-5dc6-814e-cca979d082cc",
+       "label": "A",
+       "content": "the abolition of the civil service in most countries",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b264584f-aa0a-5df5-b947-665f45e6df87",
+       "label": "B",
+       "content": "the expansion of welfare services and economic planning",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0c16bc44-6164-5cfd-aa78-4eac53f2fdd0",
+       "label": "C",
+       "content": "the decline of political parties and party discipline",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b906921a-9b0f-5367-b90b-edf60958d7f9",
+       "label": "D",
+       "content": "the reduction of government functions and spending",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "0c00e4af-8a7d-593d-b861-26c4b0809b59",
+   "topic": "The Legislature",
+   "title": "The Legislature: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the legislature, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 106,
+   "questions": [
+    {
+     "id": "625083d7-f197-54ca-9459-adb8679238f9",
+     "key": "gov-lg-01",
+     "stem": "A legislature with two chambers is described as",
+     "image_url": null,
+     "explanation": "Nigeria, the USA and Britain have bicameral legislatures.\n\n**Why the other options are wrong**\n\n- unicameral: Unicameral means one chamber.\n- plural: Plural describes an executive council.\n- federal: Federal describes a form of state, not the number of chambers.",
+     "position": 1,
+     "options": [
+      {
+       "id": "463a8500-15d4-57ae-a1e0-028a09b17b50",
+       "label": "A",
+       "content": "unicameral",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8a28de46-c59e-5272-92e8-e9d52bd14657",
+       "label": "B",
+       "content": "plural",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c5807551-924c-567a-8596-2a09e24b8419",
+       "label": "C",
+       "content": "bicameral",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b4825ccf-38a2-5f28-b9a0-2a9d0709380d",
+       "label": "D",
+       "content": "federal",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b121dd79-ca38-5ecb-b195-06713c422f88",
+     "key": "gov-lg-02",
+     "stem": "At which stage of a bill are its general principles debated?",
+     "image_url": null,
+     "explanation": "If the House rejects the principle at the second reading, the bill fails.\n\n**Why the other options are wrong**\n\n- First reading: At the first reading only the title is read.\n- Committee stage: The committee examines the bill clause by clause.\n- Report stage: The report stage considers the committee's amendments.",
+     "position": 2,
+     "options": [
+      {
+       "id": "078eb339-ba27-5caf-bf94-01bfd79b49de",
+       "label": "A",
+       "content": "First reading",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "55d65ed0-76a0-5d9b-998d-19aa2b1edd39",
+       "label": "B",
+       "content": "Committee stage",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9b95d720-ff67-5b4b-ac09-0da474629f6d",
+       "label": "C",
+       "content": "Report stage",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3ba4459d-bcbb-5674-8acc-5e86c2a30913",
+       "label": "D",
+       "content": "Second reading",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5c233b59-3eb2-532f-b3e2-dfcdfdc6d314",
+     "key": "gov-lg-03",
+     "stem": "The officer who presides over the Parliament of Sierra Leone is the",
+     "image_url": null,
+     "explanation": "The Speaker presides over sittings, keeps order and interprets the standing orders.\n\n**Why the other options are wrong**\n\n- Clerk of Parliament: The Clerk is the chief administrative officer.\n- Leader of Government Business: This leader manages government business but does not preside.\n- Sergeant-at-Arms: The Sergeant-at-Arms keeps order and carries the Mace.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0718635c-4201-54cb-8a0a-de6dd4645a8e",
+       "label": "A",
+       "content": "Speaker",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2faff2c3-b562-5577-b9ee-aca0d538e8e0",
+       "label": "B",
+       "content": "Clerk of Parliament",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c3799e7d-f2c7-57bd-b9ee-4f5cef15dc56",
+       "label": "C",
+       "content": "Leader of Government Business",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "23aff7bd-fb60-5931-9fa2-e9de95da21e3",
+       "label": "D",
+       "content": "Sergeant-at-Arms",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "14f1b24c-a200-588b-ad36-f10caadd6b8b",
+     "key": "gov-lg-04",
+     "stem": "Paramount Chief Members of Parliament in Sierra Leone represent",
+     "image_url": null,
+     "explanation": "There is one Paramount Chief Member of Parliament for each of the 14 provincial districts.\n\n**Why the other options are wrong**\n\n- each of the 190 chiefdoms, one member for every chiefdom: There are only 14 PCMPs, not one per chiefdom.\n- the Western Area Urban and Rural districts only: PCMPs come from the provincial districts.\n- the political parties, in proportion to their votes: PCMPs are not party list members.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a128cb81-572d-50e6-8f90-3f046410276c",
+       "label": "A",
+       "content": "each of the 190 chiefdoms, one member for every chiefdom",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "32094d8c-b551-5b1a-88d0-27a7a1242f41",
+       "label": "B",
+       "content": "the provincial districts, one member for each district",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6b976fcf-eba7-5e6b-984e-39bdc2984431",
+       "label": "C",
+       "content": "the Western Area Urban and Rural districts only",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b8dc6a8d-55a8-53bd-8bac-e26dcb274277",
+       "label": "D",
+       "content": "the political parties, in proportion to their votes",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "50d8f7f5-cf64-5dd5-9989-ba0b4f8008f8",
+     "key": "gov-lg-05",
+     "stem": "Parliament controls public spending after it has taken place mainly through the",
+     "image_url": null,
+     "explanation": "The Public Accounts Committee examines the Auditor-General's report on how money was spent.\n\n**Why the other options are wrong**\n\n- Committee of Selection: This committee chooses members of committees.\n- Appointments Committee: This committee vets nominees for office.\n- Committee of the Whole House: This is a sitting of all MPs, often on money bills, before spending.",
+     "position": 5,
+     "options": [
+      {
+       "id": "dd20c63f-f81b-51e2-8051-e816a167500c",
+       "label": "A",
+       "content": "Committee of Selection",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e4152cc5-8ab5-5680-b0b1-ea3cefc89290",
+       "label": "B",
+       "content": "Appointments Committee",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bbb55490-9029-5781-8b02-52ef9f797f09",
+       "label": "C",
+       "content": "Public Accounts Committee",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fc95041e-a605-5c92-bd67-ca7b9d6aa9e1",
+       "label": "D",
+       "content": "Committee of the Whole House",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "63a6ac69-e835-5b8d-9085-fc8fb0e2e521",
+   "topic": "The Judiciary",
+   "title": "The Judiciary: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the judiciary, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 107,
+   "questions": [
+    {
+     "id": "a469a32e-0887-549a-abe4-9078b9a9a9b8",
+     "key": "gov-jd-01",
+     "stem": "The power of the courts to declare a law unconstitutional is called",
+     "image_url": null,
+     "explanation": "Judicial review lets courts strike down laws and actions that conflict with the constitution.\n\n**Why the other options are wrong**\n\n- judicial precedent: Precedent means following earlier decisions.\n- judicial immunity: Immunity protects judges from being sued for their decisions.\n- appellate jurisdiction: That is the power to hear appeals.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7a685675-87dd-5e4e-8fdf-5e85b6786bfb",
+       "label": "A",
+       "content": "judicial precedent",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2dbea0b2-9e09-5707-93d6-425dd9adabb8",
+       "label": "B",
+       "content": "judicial immunity",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5ba45738-1c34-5c10-91e5-cc0fadb3eda2",
+       "label": "C",
+       "content": "appellate jurisdiction",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cf766470-f87b-53a9-88a2-986f28e0e0f2",
+       "label": "D",
+       "content": "judicial review",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "192fb7f4-9fbc-5ed9-8008-9c436ca63586",
+     "key": "gov-jd-02",
+     "stem": "Which of the following helps to ensure the independence of the judiciary?",
+     "image_url": null,
+     "explanation": "Judges who cannot be removed at will can rule against the government without fear.\n\n**Why the other options are wrong**\n\n- Appointment of judges by the ruling party: Party appointment undermines independence.\n- Annual votes on judges' salaries by Parliament: Salaries are charged on the Consolidated Fund to avoid this pressure.\n- Membership of judges in political parties: Judges must stay out of party politics.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c559b976-68bd-5fba-8df1-fcb1ca260a38",
+       "label": "A",
+       "content": "Security of tenure of judges",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d7089548-86ea-56ad-85ce-55145a3cc290",
+       "label": "B",
+       "content": "Appointment of judges by the ruling party",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "956feef5-ae47-5f16-b79e-98f7d3ec266d",
+       "label": "C",
+       "content": "Annual votes on judges' salaries by Parliament",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "08af50ca-88bd-5ce9-bbe5-97cda986f95e",
+       "label": "D",
+       "content": "Membership of judges in political parties",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c64c4c93-0667-5174-9b3b-a381c98eb99f",
+     "key": "gov-jd-03",
+     "stem": "The highest court in Sierra Leone is the",
+     "image_url": null,
+     "explanation": "The Supreme Court, headed by the Chief Justice, is the final court of appeal and interprets the Constitution.\n\n**Why the other options are wrong**\n\n- Court of Appeal: The Court of Appeal is below the Supreme Court.\n- High Court: The High Court is below the Court of Appeal.\n- Judicial Committee of the Privy Council: Appeals to the Privy Council ended in 1971.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ffd613ea-0a7b-5b04-b8ec-15594810b6e6",
+       "label": "A",
+       "content": "Court of Appeal",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3e569d30-bbf0-52cf-90b2-f3476dcb2413",
+       "label": "B",
+       "content": "Supreme Court",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e2dc5a64-58de-5129-9931-34c29ad61afb",
+       "label": "C",
+       "content": "High Court",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9a9c9fab-942d-5cde-8b3d-f5b5bc344021",
+       "label": "D",
+       "content": "Judicial Committee of the Privy Council",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "077b942f-8262-52a6-8c56-3102f604ac71",
+     "key": "gov-jd-04",
+     "stem": "Courts that apply customary law in the chiefdoms of Sierra Leone are",
+     "image_url": null,
+     "explanation": "Local Courts deal with customary matters such as land, family and inheritance.\n\n**Why the other options are wrong**\n\n- Magistrate Courts: Magistrate Courts apply statute and common law in less serious cases.\n- Courts martial: Courts martial try members of the armed forces.\n- Commercial Courts: The Commercial Court handles business disputes in the High Court.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4b5c0687-8e0b-50ed-9322-35b79435579f",
+       "label": "A",
+       "content": "Magistrate Courts",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d0ad7008-4540-5ce8-9d3f-40fe61958592",
+       "label": "B",
+       "content": "Courts martial",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a01c92cb-8fd1-5154-8d57-d5e4fb6f9d05",
+       "label": "C",
+       "content": "Local Courts",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1be8e84e-e139-5c98-a780-9595266e8a00",
+       "label": "D",
+       "content": "Commercial Courts",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "83e4ba7d-3328-5c2b-82e3-98750766e1c4",
+     "key": "gov-jd-05",
+     "stem": "In Sierra Leone, judges of the superior courts are appointed by the President on the advice of the",
+     "image_url": null,
+     "explanation": "The JLSC advises and Parliament approves, so no single person chooses the judges.\n\n**Why the other options are wrong**\n\n- Public Service Commission, without any parliamentary approval: The Public Service Commission deals with public officers, not judges.\n- Electoral Commission, after consulting the political parties: The Electoral Commission conducts elections.\n- Political Parties Regulation Commission, with the Speaker's consent: The PPRC regulates political parties.",
+     "position": 5,
+     "options": [
+      {
+       "id": "574376ed-f918-593e-b964-2affa3161d6d",
+       "label": "A",
+       "content": "Public Service Commission, without any parliamentary approval",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3848e35b-9a89-50d7-b25d-a5707089e2fa",
+       "label": "B",
+       "content": "Electoral Commission, after consulting the political parties",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ff59835f-47a2-5c78-81e4-695974068ac1",
+       "label": "C",
+       "content": "Political Parties Regulation Commission, with the Speaker's consent",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "31cbf9f0-6954-5ed2-8029-5db8916a9fa6",
+       "label": "D",
+       "content": "Judicial and Legal Service Commission, subject to Parliament's approval",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "81e6f36f99d3"
+}
