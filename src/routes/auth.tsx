@@ -22,7 +22,9 @@ function AuthPage() {
   const intent = params.get('intent') === 'tutor' ? 'tutor' : params.get('intent') === 'affiliate' ? 'affiliate' : 'student'
   const requestedNext = params.get('next') ?? ''
   const referralCode = params.get('ref')?.trim().toUpperCase() ?? ''
-  const destination = intent === 'tutor' ? '/tutor-dashboard' : intent === 'affiliate' ? '/affiliate-dashboard' : ['/onboarding','/subjects','/practice','/progress','/account','/'].includes(requestedNext) ? requestedNext : '/'
+  // Only same-site paths we know, so ?next= cannot send people elsewhere.
+  const safeNext = ['/onboarding','/subjects','/practice','/progress','/account','/','/tutors'].includes(requestedNext) || /^\/tutors\/[a-z0-9-]+$/.test(requestedNext)
+  const destination = intent === 'tutor' ? '/tutor-dashboard' : intent === 'affiliate' ? '/affiliate-dashboard' : safeNext ? requestedNext : '/'
   const [mode, setMode] = useState<'signin' | 'signup' | 'forgot'>('signup')
   const [resetSent, setResetSent] = useState(false)
   const [confirmationSent, setConfirmationSent] = useState(false)

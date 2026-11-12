@@ -6,7 +6,7 @@ import { SubjectCover } from '@/components/ds/SubjectCover'
 
 export const TUTOR_FAQ: [question: string, answer: string][] = [
   ['Is this a real person or the AI tutor?', 'A real person. Book a tutor arranges one-to-one lessons with a human teacher. It is separate from the AI tutor inside the WASSCE Tutor app.'],
-  ['How much does a tutor cost?', 'It depends on the subject, how often you meet and whether lessons are online or at home. We tell you the price on WhatsApp before you agree to anything, and you pay nothing to ask.'],
+  ['How much does a tutor cost?', 'Each approved tutor sets their own monthly fee for each subject, shown on their profile before you send a request. If we match you on WhatsApp instead, we tell you the monthly fee before you agree to anything, and you pay nothing to ask.'],
   ['Can the tutor come to my home?', 'Home lessons depend on where you live. Tell us your town or area and we will let you know whether a tutor can come to you. Online lessons work anywhere with a phone and data.'],
   ['How do online lessons work?', 'Your tutor calls you on a video or voice call at the times you agree, and shares working and past questions as you go. A phone is enough.'],
   ['Do I need a WASSCE Tutor account?', 'No. Anyone can request a tutor. Between lessons, the app is there for lessons, exam-style practice and the AI tutor if you want them.'],

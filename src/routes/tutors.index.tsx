@@ -5,6 +5,7 @@ import { fetchSubjectSummaries, hasSubjectPage } from '@/lib/public-content'
 import { breadcrumbJsonLd, faqJsonLd, indexablePageTags, tutoringServiceJsonLd } from '@/lib/seo'
 import { TUTOR_PHOTO } from '@/lib/tutors'
 import { BookingForm } from '@/components/tutors/BookingForm'
+import { TutorMarketplace } from '@/components/tutors/Marketplace'
 import { TUTOR_FAQ, TutorFaq, TutorHowItWorks, TutorSubjectGrid } from '@/components/tutors/TutorSections'
 
 const TRAIL: [string, string][] = [
@@ -81,6 +82,8 @@ function TutorsPage() {
           </div>
         </header>
       </div>
+
+      <TutorMarketplace />
 
       <TutorHowItWorks />
 

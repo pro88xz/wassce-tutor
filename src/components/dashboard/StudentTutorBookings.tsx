@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { Link } from '@tanstack/react-router'
 import { CheckCircle2, Star } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
+import { monthlyFee } from '@/lib/tutors'
 
 type StudentBooking = {
   id: string
@@ -49,8 +50,8 @@ export function StudentTutorBookings({ userId }: { userId: string }) {
     try {
       const { error: rpcError } = await supabase.rpc('update_tutor_booking', { p_booking_id: id, p_status: status, p_reason: null })
       if (rpcError) throw rpcError
-      await supabase.functions.invoke('send-notification-email', { body: { entity_id: id, event_type: `booking_${status}` } })
-      setNotice(status === 'confirmed' ? 'Session confirmed.' : 'Booking cancelled.')
+      await supabase.functions.invoke('send-notification-email', { body: { entity_id: id, event_type: `booking_${status}` } }).catch(() => undefined)
+      setNotice(status === 'confirmed' ? 'Tutoring confirmed. Agree your weekly lesson times with your tutor.' : 'Booking cancelled.')
       await load()
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Could not update this booking.')
@@ -79,7 +80,7 @@ export function StudentTutorBookings({ userId }: { userId: string }) {
       <div className="flex items-end justify-between gap-3">
         <div>
           <h2 id="bookings-title" className="text-lg font-bold tracking-tight">Your tutor bookings</h2>
-          <p className="text-sm text-muted-foreground">Confirm, cancel or review your one-to-one sessions.</p>
+          <p className="text-sm text-muted-foreground">Confirm, cancel or review your monthly tutoring.</p>
         </div>
         <Link to="/tutors" className="inline-flex min-h-11 shrink-0 items-center text-sm font-semibold text-primary hover:underline">Find a tutor</Link>
       </div>
@@ -91,12 +92,12 @@ export function StudentTutorBookings({ userId }: { userId: string }) {
           const canReview = booking.status === 'completed' && !reviewed.has(booking.id)
           return <article key={booking.id} className="rounded-2xl border bg-card p-5">
             <div className="flex flex-wrap items-start justify-between gap-3">
-              <div><h3 className="font-bold">{booking.subject?.name ?? 'Tutoring session'}</h3><p className="mt-1 text-sm text-muted-foreground">{booking.tutor?.full_name ?? 'Tutor'} · {booking.tutor?.location ?? 'Location not set'}</p><p className="mt-2 text-sm">{new Date(booking.starts_at).toLocaleString('en-GB',{dateStyle:'medium',timeStyle:'short'})} · {booking.duration_minutes} minutes</p></div>
-              <div className="text-right"><p className="font-bold tabular-nums">NLe {Number(booking.price_nle).toFixed(2)}</p><span className="mt-1 inline-flex rounded-full bg-muted px-2.5 py-1 text-xs font-semibold capitalize">{booking.status.replace('_',' ')}</span></div>
+              <div><h3 className="font-bold">{booking.subject?.name ?? 'Tutoring session'}</h3><p className="mt-1 text-sm text-muted-foreground">{booking.tutor?.full_name ?? 'Tutor'} · {booking.tutor?.location ?? 'Location not set'}</p><p className="mt-2 text-sm">First lesson {new Date(booking.starts_at).toLocaleString('en-GB',{dateStyle:'medium',timeStyle:'short'})} · {booking.duration_minutes}-minute lessons</p></div>
+              <div className="text-right"><p className="font-bold tabular-nums">{monthlyFee(booking.price_nle)}</p><span className="mt-1 inline-flex rounded-full bg-muted px-2.5 py-1 text-xs font-semibold capitalize">{booking.status.replace('_',' ')}</span></div>
             </div>
             {booking.student_message && <p className="mt-3 rounded-xl bg-muted/50 p-3 text-sm text-muted-foreground">{booking.student_message}</p>}
             <div className="mt-4 flex flex-wrap gap-2">
-              {canConfirm && <button disabled={busyId===booking.id} onClick={()=>void update(booking.id,'confirmed')} className="inline-flex min-h-10 items-center gap-1.5 rounded-lg bg-emerald-700 px-4 text-sm font-semibold text-white"><CheckCircle2 className="h-4 w-4"/> Confirm session</button>}
+              {canConfirm && <button disabled={busyId===booking.id} onClick={()=>void update(booking.id,'confirmed')} className="inline-flex min-h-10 items-center gap-1.5 rounded-lg bg-emerald-700 px-4 text-sm font-semibold text-white"><CheckCircle2 className="h-4 w-4"/> Confirm tutoring</button>}
               {canCancel && <button disabled={busyId===booking.id} onClick={()=>void update(booking.id,'cancelled')} className="min-h-10 rounded-lg border border-red-200 px-4 text-sm font-semibold text-red-700">Cancel booking</button>}
               {canReview && <button onClick={()=>{setReviewId(reviewId===booking.id?null:booking.id);setRating(5)}} className="inline-flex min-h-10 items-center gap-1.5 rounded-lg border px-4 text-sm font-semibold"><Star className="h-4 w-4"/> Review tutor</button>}
               {booking.status==='completed' && reviewed.has(booking.id) && <span className="self-center text-xs font-semibold text-emerald-700">Review submitted</span>}

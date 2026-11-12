@@ -1,5 +1,7 @@
 import { createFileRoute, Link, Outlet, useLocation } from '@tanstack/react-router'
-import { BadgeCheck, BookOpen, Download, FileText, FileUp, Layers, Library, ListChecks, ShieldCheck, Upload, UserRound, Wallet } from 'lucide-react'
+import { BadgeCheck, BadgePercent, BookOpen, Download, FileText, FileUp, GraduationCap, Layers, Library, ListChecks, ShieldCheck, Upload, UserRound, Wallet } from 'lucide-react'
+import { useQuery } from '@tanstack/react-query'
+import { supabase } from '@/lib/supabase'
 import { privateHead } from '@/lib/seo'
 import { useEffect, useState } from 'react'
 import { useAuth } from '@/lib/auth'
@@ -25,6 +27,24 @@ function AdminPage() {
   useEffect(() => {
     setUnlocked(isUnlockedThisSession())
   }, [])
+
+  // What is waiting for an admin decision (tutor and affiliate programmes).
+  const pending = useQuery({
+    queryKey: ['admin-pending-counts'],
+    enabled: !!profile?.is_admin && unlocked,
+    refetchInterval: 60_000,
+    queryFn: async () => {
+      const count = async (q: PromiseLike<{ count: number | null; error: unknown }>) => { const r = await q; return r.error ? 0 : r.count ?? 0 }
+      const [applications, affiliates, commissions, payouts] = await Promise.all([
+        count(supabase.from('tutor_applications').select('id', { count: 'exact', head: true }).in('status', ['submitted', 'under_review'])),
+        count(supabase.from('affiliates').select('id', { count: 'exact', head: true }).eq('status', 'pending')),
+        count(supabase.from('affiliate_commissions').select('id', { count: 'exact', head: true }).eq('status', 'pending')),
+        count(supabase.from('affiliate_payout_requests').select('id', { count: 'exact', head: true }).in('status', ['requested', 'processing'])),
+      ])
+      return { applications, affiliates: affiliates + commissions + payouts }
+    },
+  })
+  const waiting = pending.data ?? { applications: 0, affiliates: 0 }
 
   if (isLoading) return <p className="text-muted-foreground">Loading…</p>
 
@@ -109,8 +129,34 @@ function AdminPage() {
         </div>
       )}
 
+      {atRoot && (waiting.applications > 0 || waiting.affiliates > 0) && (
+        <div role="status" className="flex flex-wrap items-center gap-x-4 gap-y-2 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+          <span className="font-semibold">Waiting for you:</span>
+          {waiting.applications > 0 && <Link to="/admin/tutors" className="font-semibold underline">{waiting.applications} tutor application{waiting.applications === 1 ? '' : 's'}</Link>}
+          {waiting.affiliates > 0 && <Link to="/admin/affiliates" className="font-semibold underline">{waiting.affiliates} affiliate item{waiting.affiliates === 1 ? '' : 's'}</Link>}
+        </div>
+      )}
+
       {!atRoot ? <Outlet /> : (
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <Link
+          to="/admin/tutors"
+          className="rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md"
+        >
+          <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><GraduationCap className="h-5 w-5" aria-hidden /></span>
+          <h2 className="font-bold">Tutors{waiting.applications > 0 && <span className="ml-2 rounded-full bg-amber-100 px-2 py-0.5 align-middle text-xs font-bold text-amber-800">{waiting.applications} waiting</span>}</h2>
+          <p className="mt-1 text-sm text-muted-foreground">Approve tutor applications, pause or restore tutors, see every booking.</p>
+          <p className="mt-3 text-xs text-primary">Open →</p>
+        </Link>
+        <Link
+          to="/admin/affiliates"
+          className="rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md"
+        >
+          <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><BadgePercent className="h-5 w-5" aria-hidden /></span>
+          <h2 className="font-bold">Affiliates{waiting.affiliates > 0 && <span className="ml-2 rounded-full bg-amber-100 px-2 py-0.5 align-middle text-xs font-bold text-amber-800">{waiting.affiliates} waiting</span>}</h2>
+          <p className="mt-1 text-sm text-muted-foreground">Approve affiliates, review commissions, settle payout requests.</p>
+          <p className="mt-3 text-xs text-primary">Open →</p>
+        </Link>
         <Link
           to="/admin/question-bank"
           className="rounded-2xl border border-primary/40 bg-primary/5 p-5 transition hover:border-primary hover:shadow-lg hover:shadow-primary/5"
@@ -201,8 +247,8 @@ function AdminPage() {
           className="rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md"
         >
           <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><UserRound className="h-5 w-5" aria-hidden /></span>
-          <h2 className="font-bold">Tutor requests</h2>
-          <p className="mt-1 text-sm text-muted-foreground">Book a tutor requests: contact, match, close.</p>
+          <h2 className="font-bold">Tutor requests (WhatsApp)</h2>
+          <p className="mt-1 text-sm text-muted-foreground">Match requests from the Book a tutor form: contact, match, close.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
         </Link>
 

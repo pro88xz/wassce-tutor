@@ -82,3 +82,28 @@ export async function saveTutorRequest(r: TutorRequest, userId: string | null): 
   if (error) console.warn('Tutor request not saved:', error.message)
   return !error
 }
+
+/** Tutors set their own monthly fee per subject (migration 14). */
+export function monthlyFee(price: number | string): string {
+  const n = Number(price)
+  const shown = Number.isFinite(n) ? n.toLocaleString('en-GB', { maximumFractionDigits: 2 }) : String(price)
+  return `NLe ${shown} / month`
+}
+
+export const WEEKDAYS_SHORT = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'] as const
+
+export type AvailabilitySlot = { weekday: number; starts_at: string; ends_at: string }
+
+/**
+ * Whether a first lesson at `startIso` for `minutes` fits one of the tutor's
+ * weekly windows. Mirrors create_tutor_booking(), which compares in UTC; Sierra
+ * Leone time is GMT all year, so this is also the student's local time.
+ */
+export function fitsAvailability(slots: AvailabilitySlot[], startIso: string, minutes: number): boolean {
+  const start = new Date(startIso)
+  if (Number.isNaN(start.getTime())) return false
+  const end = new Date(start.getTime() + minutes * 60000)
+  const hm = (d: Date) => `${String(d.getUTCHours()).padStart(2, '0')}:${String(d.getUTCMinutes()).padStart(2, '0')}`
+  if (end.getUTCDate() !== start.getUTCDate()) return false
+  return slots.some((s) => s.weekday === start.getUTCDay() && hm(start) >= String(s.starts_at).slice(0, 5) && hm(end) <= String(s.ends_at).slice(0, 5))
+}

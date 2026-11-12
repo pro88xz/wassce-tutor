@@ -7,6 +7,7 @@ import { tutorsPath } from '@/lib/public-rules'
 import { breadcrumbJsonLd, faqJsonLd, indexablePageTags, privatePageTags, tutoringServiceJsonLd } from '@/lib/seo'
 import { SubjectBanner } from '@/components/ds/SubjectCover'
 import { BookingForm } from '@/components/tutors/BookingForm'
+import { TutorMarketplace } from '@/components/tutors/Marketplace'
 import { TUTOR_FAQ, TutorFaq, TutorHowItWorks, TutorSubjectGrid } from '@/components/tutors/TutorSections'
 
 type Data = { hub: SubjectHub; subjects: SubjectSummary[] }
@@ -113,6 +114,8 @@ function SubjectTutorPage() {
           </section>
         </div>
       </div>
+
+      <TutorMarketplace subjectId={subject.id} subjectName={subject.name} />
 
       <TutorHowItWorks />
 
