@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 560" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The blast furnace</title>
+<desc id="d">Iron ore (haematite), coke and limestone are loaded at the top. Hot air is blown in near the bottom. Coke burns to carbon(IV) oxide, which reacts with more coke to form carbon(II) oxide; this reduces the iron oxide to molten iron. Limestone decomposes to calcium oxide, which combines with sand to form molten slag. Molten iron and slag are tapped off at the bottom; waste gases leave at the top.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="780" height="560" rx="20" fill="#f8fafc"/>
+<polygon points="300.0,70.0 420.0,70.0 470.0,330.0 480.0,430.0 240.0,430.0 250.0,330.0" fill="#e2e8f0" stroke="#0f172a" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="268.0,400.0 452.0,400.0 480.0,430.0 240.0,430.0" fill="#f97316" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+<polygon points="272.0,372.0 448.0,372.0 452.0,400.0 268.0,400.0" fill="#a3a3a3" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+<rect x="240.0" y="430.0" width="240.0" height="30.0" rx="0" fill="#475569" stroke="#0f172a" stroke-width="3"/>
+<text x="360.0" y="50.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">iron ore + coke + limestone</text>
+<line x1="360.0" y1="56.0" x2="360.0" y2="76.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="420.0" y1="110.0" x2="520.0" y2="80.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="530.0" y="80.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">waste gases (CO₂, N₂, CO)</text>
+<line x1="150.0" y1="350.0" x2="246.0" y2="350.0" stroke="#dc2626" stroke-width="4" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<line x1="570.0" y1="350.0" x2="474.0" y2="350.0" stroke="#dc2626" stroke-width="4" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="150.0" y="374.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">hot air</text>
+<text x="600.0" y="334.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">hot air</text>
+<line x1="450.0" y1="386.0" x2="560.0" y2="386.0" stroke="#475569" stroke-width="3" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="568.0" y="386.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">molten slag</text>
+<line x1="470.0" y1="416.0" x2="560.0" y2="430.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<text x="568.0" y="432.0" font-size="14" fill="#ea580c" text-anchor="start" dominant-baseline="middle" font-weight="bold">molten iron</text>
+<text x="230.0" y="180.0" font-size="14" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">Fe₂O₃ + 3CO → 2Fe + 3CO₂</text>
+<text x="230.0" y="198.0" font-size="12" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">reduction (about 700 °C)</text>
+<line x1="236.0" y1="180.0" x2="300.0" y2="180.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+<text x="230.0" y="250.0" font-size="14" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">CO₂ + C → 2CO</text>
+<text x="230.0" y="268.0" font-size="12" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">carbon(II) oxide forms</text>
+<line x1="236.0" y1="250.0" x2="300.0" y2="250.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+<text x="230.0" y="310.0" font-size="14" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">C + O₂ → CO₂</text>
+<text x="230.0" y="328.0" font-size="12" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">coke burns: 1900 °C, heat</text>
+<line x1="236.0" y1="310.0" x2="252.0" y2="310.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+<text x="500.0" y="220.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">CaCO₃ → CaO + CO₂</text>
+<text x="500.0" y="240.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">CaO + SiO₂ → CaSiO₃ (slag)</text>
+<line x1="440.0" y1="228.0" x2="496.0" y2="228.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+<text x="360.0" y="500.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">slag floats on the iron and protects it from re-oxidising</text>
+</svg>

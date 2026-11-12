@@ -2010,6 +2010,133 @@ def solvay_process():
     return s
 
 
+@fig
+def lime_cycle():
+    s = Svg(780, 470, "The limestone cycle",
+            "Heating limestone (calcium carbonate) in a lime kiln gives quicklime (calcium oxide) and carbon(IV) oxide. Adding "
+            "water to quicklime gives slaked lime (calcium hydroxide) with much heat. Slaked lime dissolved in water is lime water; "
+            "it absorbs carbon(IV) oxide and forms calcium carbonate again.")
+    a = box(s, 390, 80, 300, 74, ["Limestone, CaCO₃", "building, cement, iron extraction"], BLUE, F_BLUE, size=16)
+    b = box(s, 640, 290, 260, 74, ["Quicklime, CaO", "drying agent, steelmaking"], RED, F_RED, size=16)
+    c = box(s, 140, 290, 260, 74, ["Slaked lime, Ca(OH)₂", "farm soils, mortar, whitewash"], GREEN, F_GREEN, size=16)
+    s.path("M 540 100 C 640 120, 660 180, 650 248", color=ORANGE, width=3, arrow="end")
+    s.text(618, 160, "heat about 900 °C", size=14, color=ORANGE, weight="bold", anchor="end")
+    s.text(618, 178, "(lime kiln)", size=13, color=ORANGE, anchor="end")
+    chem(s, 618, 198, "gives off CO_2", size=14, color=ORANGE, anchor="end")
+    s.path("M 508 300 L 274 300", color=TEAL, width=3, arrow="end")
+    s.text(390, 284, "add water (slaking)", size=14, color=TEAL, weight="bold")
+    s.text(390, 322, "much heat; lumps crumble", size=13, color=TEAL)
+    s.path("M 130 248 C 120 160, 160 110, 236 96", color=PURPLE, width=3, arrow="end")
+    s.text(110, 160, "+ CO₂ from air", size=14, color=PURPLE, weight="bold", anchor="end")
+    s.text(110, 178, "(mortar hardens;", size=13, color=PURPLE, anchor="end")
+    s.text(110, 194, "lime water milky)", size=13, color=PURPLE, anchor="end")
+    chem(s, 390, 400, "CaCO_3 → CaO + CO_2     CaO + H_2O → Ca(OH)_2     Ca(OH)_2 + CO_2 → CaCO_3 + H_2O", size=14,
+         weight="bold")
+    return s
+
+
+@fig
+def aluminium_cell():
+    s = Svg(780, 480, "Extraction of aluminium by electrolysis",
+            "Purified aluminium oxide (alumina) is dissolved in molten cryolite at about 950 °C in a steel tank lined with carbon, "
+            "which is the cathode. Carbon anodes dip into the melt. Aluminium ions are reduced at the cathode and molten aluminium "
+            "collects at the bottom and is tapped off. Oxide ions are oxidised to oxygen at the anodes, which burns the carbon "
+            "anodes away as carbon(IV) oxide, so they must be replaced.")
+    x0, x1 = 60, 560
+    s.rect(x0, 160, x1 - x0, 220, fill="#475569", stroke=INK, width=3, rx=8)
+    s.rect(x0 + 20, 170, x1 - x0 - 40, 196, fill="#1f2937", stroke="none", width=0, rx=6)
+    s.rect(x0 + 20, 190, x1 - x0 - 40, 130, fill="#fdba74", stroke="none", width=0)
+    s.rect(x0 + 20, 320, x1 - x0 - 40, 46, fill="#e5e7eb", stroke="none", width=0)
+    xs = (170, 310, 450)
+    for x in xs:
+        s.rect(x - 34, 110, 68, 150, fill="#334155", stroke=INK, width=2)
+        s.line(x, 110, x, 70, width=3)
+    s.line(xs[0], 70, xs[-1], 70, width=3)
+    s.text(310, 54, "carbon anodes (+): burn away, replaced", size=15, weight="bold", color=RED)
+    s.text(580, 230, "alumina dissolved in", size=14, anchor="start")
+    s.text(580, 248, "molten cryolite", size=14, anchor="start")
+    s.text(580, 266, "(about 950 °C)", size=14, anchor="start")
+    s.text(580, 340, "molten aluminium", size=14, anchor="start", weight="bold")
+    s.text(580, 358, "tapped off", size=13, anchor="start", color=MUTED)
+    s.text(310, 404, "carbon lining = cathode (−)", size=15, weight="bold", color=BLUE)
+    chem(s, 310, 436, "cathode: Al^{3+} + 3e^− → Al", size=15, color=BLUE)
+    chem(s, 310, 462, "anode: 2O^{2−} → O_2 + 4e^−  (O_2 then burns the carbon)", size=15, color=RED)
+    return s
+
+
+@fig
+def blast_furnace():
+    s = Svg(780, 560, "The blast furnace",
+            "Iron ore (haematite), coke and limestone are loaded at the top. Hot air is blown in near the bottom. Coke burns to "
+            "carbon(IV) oxide, which reacts with more coke to form carbon(II) oxide; this reduces the iron oxide to molten iron. "
+            "Limestone decomposes to calcium oxide, which combines with sand to form molten slag. Molten iron and slag are tapped "
+            "off at the bottom; waste gases leave at the top.")
+    s.polygon([(300, 70), (420, 70), (470, 330), (480, 430), (240, 430), (250, 330)], fill="#e2e8f0", stroke=INK, width=3)
+    s.polygon([(268, 400), (452, 400), (480, 430), (240, 430)], fill="#f97316", stroke="none", width=0)
+    s.polygon([(272, 372), (448, 372), (452, 400), (268, 400)], fill="#a3a3a3", stroke="none", width=0)
+    s.rect(240, 430, 240, 30, fill="#475569", stroke=INK, width=3)
+    s.text(360, 50, "iron ore + coke + limestone", size=15, weight="bold")
+    s.arrow(360, 56, 360, 76, color=INK, width=2.5)
+    s.arrow(420, 110, 520, 80, color=MUTED, width=2.5)
+    s.text(530, 80, "waste gases (CO₂, N₂, CO)", size=14, color=MUTED, anchor="start")
+    for x1, x2 in ((150, 246), (570, 474)):
+        s.arrow(x1, 350, x2, 350, color=RED, width=4)
+    s.text(150, 374, "hot air", size=15, weight="bold", color=RED)
+    s.text(600, 334, "hot air", size=15, weight="bold", color=RED)
+    s.arrow(450, 386, 560, 386, color=MUTED, width=3)
+    s.text(568, 386, "molten slag", size=14, anchor="start", weight="bold")
+    s.arrow(470, 416, 560, 430, color=ORANGE, width=3)
+    s.text(568, 432, "molten iron", size=14, anchor="start", weight="bold", color=ORANGE)
+    rows = [(180, "Fe₂O₃ + 3CO → 2Fe + 3CO₂", "reduction (about 700 °C)"), (250, "CO₂ + C → 2CO", "carbon(II) oxide forms"),
+            (310, "C + O₂ → CO₂", "coke burns: 1900 °C, heat")]
+    for y, eq, note in rows:
+        s.text(230, y, eq, size=14, anchor="end", weight="bold")
+        s.text(230, y + 18, note, size=12, anchor="end", color=MUTED)
+        s.line(236, y, 300 if y < 300 else 252, y, color=MUTED, width=1.2, dash="3 4")
+    s.text(500, 220, "CaCO₃ → CaO + CO₂", size=14, anchor="start", weight="bold")
+    s.text(500, 240, "CaO + SiO₂ → CaSiO₃ (slag)", size=14, anchor="start", weight="bold")
+    s.line(440, 228, 496, 228, color=MUTED, width=1.2, dash="3 4")
+    s.text(360, 500, "slag floats on the iron and protects it from re-oxidising", size=14, color=MUTED, italic=True)
+    return s
+
+
+@fig
+def industry_siting():
+    s = Svg(780, 470, "Factors in siting a chemical plant",
+            "Factors that decide where a chemical plant is built: raw materials, energy supply, water, transport, labour, market, "
+            "waste disposal, land and cost, safety and the environment, and government policy.")
+    c = box(s, 390, 235, 220, 70, ["Chemical", "plant"], INK, F_GREY, size=19, bold_first=False)
+    items = [("Raw materials", "near source cuts cost", BLUE, F_BLUE), ("Energy", "reliable, cheap power", RED, F_RED),
+             ("Water", "for cooling, processing", TEAL, F_TEAL), ("Transport", "roads, rail, port", ORANGE, F_AMBER),
+             ("Market", "near customers", GREEN, F_GREEN), ("Labour", "skilled workers", PURPLE, F_PURPLE),
+             ("Waste and safety", "away from homes", RED, F_RED), ("Government", "incentives, permits", BLUE, F_BLUE)]
+    import math as _m
+    for i, (a, b, col, fill) in enumerate(items):
+        ang = _m.radians(90 - i * 45)
+        x, y = 390 + 290 * _m.cos(ang), 235 - 175 * _m.sin(ang)
+        bx = box(s, x, y, 190, 62, [a, b], col, fill, size=15)
+        link(s, bx, c, color=col, width=2)
+    return s
+
+
+@fig
+def brewing_flow():
+    s = Svg(800, 400, "Making beer: from grain to bottle",
+            "Grain is malted (germinated and dried) so that enzymes turn starch into sugar. The malt is mashed with hot water, "
+            "boiled with hops for flavour, cooled, and fermented by yeast, which turns sugar into ethanol and carbon(IV) oxide. "
+            "The beer is matured, filtered and bottled.")
+    steps = [("Malting", "grain germinates", ORANGE, F_AMBER), ("Mashing", "enzymes: starch → sugar", TEAL, F_TEAL),
+             ("Boiling", "with hops (flavour)", RED, F_RED), ("Fermenting", "yeast: sugar → ethanol", PURPLE, F_PURPLE),
+             ("Maturing", "flavour develops", BLUE, F_BLUE), ("Bottling", "filtered, CO₂ added", GREEN, F_GREEN)]
+    pos = [(140, 120), (400, 120), (660, 120), (660, 280), (400, 280), (140, 280)]
+    boxes = [box(s, x, y, 220, 70, [a, b], col, fill, size=16) for (x, y), (a, b, col, fill) in zip(pos, steps)]
+    for a, b in zip(boxes, boxes[1:]):
+        link(s, a, b, color=INK, gap=4)
+    chem(s, 400, 370, "C_6H_{12}O_6 → 2C_2H_5OH + 2CO_2   (yeast enzymes, about 30 °C)", size=16, weight="bold")
+    title(s, "Fermentation is the key chemical step", y=40)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:

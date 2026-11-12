@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 480" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Extraction of aluminium by electrolysis</title>
+<desc id="d">Purified aluminium oxide (alumina) is dissolved in molten cryolite at about 950 °C in a steel tank lined with carbon, which is the cathode. Carbon anodes dip into the melt. Aluminium ions are reduced at the cathode and molten aluminium collects at the bottom and is tapped off. Oxide ions are oxidised to oxygen at the anodes, which burns the carbon anodes away as carbon(IV) oxide, so they must be replaced.</desc>
+<defs></defs>
+<rect width="780" height="480" rx="20" fill="#f8fafc"/>
+<rect x="60.0" y="160.0" width="500.0" height="220.0" rx="8" fill="#475569" stroke="#0f172a" stroke-width="3"/>
+<rect x="80.0" y="170.0" width="460.0" height="196.0" rx="6" fill="#1f2937" stroke="none" stroke-width="0"/>
+<rect x="80.0" y="190.0" width="460.0" height="130.0" rx="0" fill="#fdba74" stroke="none" stroke-width="0"/>
+<rect x="80.0" y="320.0" width="460.0" height="46.0" rx="0" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<rect x="136.0" y="110.0" width="68.0" height="150.0" rx="0" fill="#334155" stroke="#0f172a" stroke-width="2"/>
+<line x1="170.0" y1="110.0" x2="170.0" y2="70.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<rect x="276.0" y="110.0" width="68.0" height="150.0" rx="0" fill="#334155" stroke="#0f172a" stroke-width="2"/>
+<line x1="310.0" y1="110.0" x2="310.0" y2="70.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<rect x="416.0" y="110.0" width="68.0" height="150.0" rx="0" fill="#334155" stroke="#0f172a" stroke-width="2"/>
+<line x1="450.0" y1="110.0" x2="450.0" y2="70.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="170.0" y1="70.0" x2="450.0" y2="70.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<text x="310.0" y="54.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">carbon anodes (+): burn away, replaced</text>
+<text x="580.0" y="230.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">alumina dissolved in</text>
+<text x="580.0" y="248.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">molten cryolite</text>
+<text x="580.0" y="266.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">(about 950 °C)</text>
+<text x="580.0" y="340.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">molten aluminium</text>
+<text x="580.0" y="358.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">tapped off</text>
+<text x="310.0" y="404.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">carbon lining = cathode (−)</text>
+<text x="310.0" y="436.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cathode: Al<tspan dy="-6.3" font-size="10.5">3+</tspan><tspan dy="6.3"> + 3e</tspan><tspan dy="-6.3" font-size="10.5">−</tspan><tspan dy="6.3"> → Al</tspan></text>
+<text x="310.0" y="462.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">anode: 2O<tspan dy="-6.3" font-size="10.5">2−</tspan><tspan dy="6.3"> → O</tspan><tspan dy="4.8" font-size="10.5">2</tspan><tspan dy="-4.8"> + 4e</tspan><tspan dy="-6.3" font-size="10.5">−</tspan><tspan dy="6.3">  (O</tspan><tspan dy="4.8" font-size="10.5">2</tspan><tspan dy="-4.8"> then burns the carbon)</tspan></text>
+</svg>

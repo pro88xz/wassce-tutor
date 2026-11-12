@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Factors in siting a chemical plant</title>
+<desc id="d">Factors that decide where a chemical plant is built: raw materials, energy supply, water, transport, labour, market, waste disposal, land and cost, safety and the environment, and government policy.</desc>
+<defs><marker id="a0f766e" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f766e"/></marker><marker id="a0f766es" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f766e"/></marker><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7c3aed"/></marker><marker id="a7c3aeds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#7c3aed"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="780" height="470" rx="20" fill="#f8fafc"/>
+<rect x="280.0" y="200.0" width="220.0" height="70.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="390.0" y="222.5" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Chemical</text>
+<text x="390.0" y="247.5" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">plant</text>
+<rect x="295.0" y="29.0" width="190.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="390.0" y="49.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Raw materials</text>
+<text x="390.0" y="70.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">near source cuts cost</text>
+<line x1="390.0" y1="97.0" x2="390.0" y2="194.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="500.1" y="80.3" width="190.0" height="62.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="595.1" y="100.8" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Energy</text>
+<text x="595.1" y="121.8" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">reliable, cheap power</text>
+<line x1="595.1" y1="148.3" x2="390.0" y2="194.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<rect x="585.0" y="204.0" width="190.0" height="62.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="680.0" y="224.5" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Water</text>
+<text x="680.0" y="245.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">for cooling, processing</text>
+<line x1="579.0" y1="235.0" x2="506.0" y2="235.0" stroke="#0f766e" stroke-width="2" stroke-linecap="round" marker-end="url(#a0f766e)"/>
+<rect x="500.1" y="327.7" width="190.0" height="62.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="595.1" y="348.2" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Transport</text>
+<text x="595.1" y="369.2" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">roads, rail, port</text>
+<line x1="595.1" y1="321.7" x2="390.0" y2="276.0" stroke="#ea580c" stroke-width="2" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<rect x="295.0" y="379.0" width="190.0" height="62.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="390.0" y="399.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Market</text>
+<text x="390.0" y="420.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">near customers</text>
+<line x1="390.0" y1="373.0" x2="390.0" y2="276.0" stroke="#15803d" stroke-width="2" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="89.9" y="327.7" width="190.0" height="62.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="184.9" y="348.2" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Labour</text>
+<text x="184.9" y="369.2" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">skilled workers</text>
+<line x1="184.9" y1="321.7" x2="390.0" y2="276.0" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" marker-end="url(#a7c3aed)"/>
+<rect x="5.0" y="204.0" width="190.0" height="62.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="100.0" y="224.5" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Waste and safety</text>
+<text x="100.0" y="245.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">away from homes</text>
+<line x1="201.0" y1="235.0" x2="274.0" y2="235.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<rect x="89.9" y="80.3" width="190.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="184.9" y="100.8" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Government</text>
+<text x="184.9" y="121.8" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">incentives, permits</text>
+<line x1="184.9" y1="148.3" x2="390.0" y2="194.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The limestone cycle</title>
+<desc id="d">Heating limestone (calcium carbonate) in a lime kiln gives quicklime (calcium oxide) and carbon(IV) oxide. Adding water to quicklime gives slaked lime (calcium hydroxide) with much heat. Slaked lime dissolved in water is lime water; it absorbs carbon(IV) oxide and forms calcium carbonate again.</desc>
+<defs><marker id="a0f766e" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f766e"/></marker><marker id="a0f766es" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f766e"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7c3aed"/></marker><marker id="a7c3aeds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#7c3aed"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="780" height="470" rx="20" fill="#f8fafc"/>
+<rect x="240.0" y="43.0" width="300.0" height="74.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="390.0" y="69.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Limestone, CaCO₃</text>
+<text x="390.0" y="91.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">building, cement, iron extraction</text>
+<rect x="510.0" y="253.0" width="260.0" height="74.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="640.0" y="279.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Quicklime, CaO</text>
+<text x="640.0" y="301.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">drying agent, steelmaking</text>
+<rect x="10.0" y="253.0" width="260.0" height="74.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="140.0" y="279.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Slaked lime, Ca(OH)₂</text>
+<text x="140.0" y="301.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">farm soils, mortar, whitewash</text>
+<path d="M 540 100 C 640 120, 660 180, 650 248" stroke="#ea580c" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<text x="618.0" y="160.0" font-size="14" fill="#ea580c" text-anchor="end" dominant-baseline="middle" font-weight="bold">heat about 900 °C</text>
+<text x="618.0" y="178.0" font-size="13" fill="#ea580c" text-anchor="end" dominant-baseline="middle" font-weight="normal">(lime kiln)</text>
+<text x="618.0" y="198.0" font-size="14" fill="#ea580c" text-anchor="end" dominant-baseline="middle" font-weight="normal">gives off CO<tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5"></tspan></text>
+<path d="M 508 300 L 274 300" stroke="#0f766e" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a0f766e)"/>
+<text x="390.0" y="284.0" font-size="14" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">add water (slaking)</text>
+<text x="390.0" y="322.0" font-size="13" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="normal">much heat; lumps crumble</text>
+<path d="M 130 248 C 120 160, 160 110, 236 96" stroke="#7c3aed" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a7c3aed)"/>
+<text x="110.0" y="160.0" font-size="14" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">+ CO₂ from air</text>
+<text x="110.0" y="178.0" font-size="13" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="normal">(mortar hardens;</text>
+<text x="110.0" y="194.0" font-size="13" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="normal">lime water milky)</text>
+<text x="390.0" y="400.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">CaCO<tspan dy="4.5" font-size="9.8">3</tspan><tspan dy="-4.5"> → CaO + CO</tspan><tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5">     CaO + H</tspan><tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5">O → Ca(OH)</tspan><tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5">     Ca(OH)</tspan><tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5"> + CO</tspan><tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5"> → CaCO</tspan><tspan dy="4.5" font-size="9.8">3</tspan><tspan dy="-4.5"> + H</tspan><tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5">O</tspan></text>
+</svg>

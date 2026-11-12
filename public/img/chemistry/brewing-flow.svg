@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Making beer: from grain to bottle</title>
+<desc id="d">Grain is malted (germinated and dried) so that enzymes turn starch into sugar. The malt is mashed with hot water, boiled with hops for flavour, cooled, and fermented by yeast, which turns sugar into ethanol and carbon(IV) oxide. The beer is matured, filtered and bottled.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="800" height="400" rx="20" fill="#f8fafc"/>
+<rect x="30.0" y="85.0" width="220.0" height="70.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="140.0" y="109.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Malting</text>
+<text x="140.0" y="131.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">grain germinates</text>
+<rect x="290.0" y="85.0" width="220.0" height="70.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="400.0" y="109.0" font-size="16" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Mashing</text>
+<text x="400.0" y="131.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">enzymes: starch → sugar</text>
+<rect x="550.0" y="85.0" width="220.0" height="70.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="660.0" y="109.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Boiling</text>
+<text x="660.0" y="131.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">with hops (flavour)</text>
+<rect x="550.0" y="245.0" width="220.0" height="70.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="660.0" y="269.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Fermenting</text>
+<text x="660.0" y="291.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">yeast: sugar → ethanol</text>
+<rect x="290.0" y="245.0" width="220.0" height="70.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="269.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Maturing</text>
+<text x="400.0" y="291.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">flavour develops</text>
+<rect x="30.0" y="245.0" width="220.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="140.0" y="269.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Bottling</text>
+<text x="140.0" y="291.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">filtered, CO₂ added</text>
+<line x1="254.0" y1="120.0" x2="286.0" y2="120.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="514.0" y1="120.0" x2="546.0" y2="120.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="660.0" y1="159.0" x2="660.0" y2="241.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="546.0" y1="280.0" x2="514.0" y2="280.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="286.0" y1="280.0" x2="254.0" y2="280.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="400.0" y="370.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C<tspan dy="5.1" font-size="11.2">6</tspan><tspan dy="-5.1">H</tspan><tspan dy="5.1" font-size="11.2">12</tspan><tspan dy="-5.1">O</tspan><tspan dy="5.1" font-size="11.2">6</tspan><tspan dy="-5.1"> → 2C</tspan><tspan dy="5.1" font-size="11.2">2</tspan><tspan dy="-5.1">H</tspan><tspan dy="5.1" font-size="11.2">5</tspan><tspan dy="-5.1">OH + 2CO</tspan><tspan dy="5.1" font-size="11.2">2</tspan><tspan dy="-5.1">   (yeast enzymes, about 30 °C)</tspan></text>
+<text x="400.0" y="40.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Fermentation is the key chemical step</text>
+</svg>
