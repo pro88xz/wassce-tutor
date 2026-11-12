@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The nitrogen cycle</title>
+<desc id="d">Nitrogen in the air is fixed by lightning, by nitrogen-fixing bacteria in the root nodules of legumes and by the Haber process (fertilisers). Plants absorb nitrates and make proteins; animals eat plants. Dead matter and wastes are decomposed to ammonium compounds, which nitrifying bacteria turn into nitrites and nitrates. Denitrifying bacteria return nitrogen gas to the air.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7c3aed"/></marker><marker id="a7c3aeds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#7c3aed"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<rect x="260.0" y="32.0" width="280.0" height="56.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="60.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Nitrogen in the air, N₂</text>
+<rect x="25.0" y="155.0" width="230.0" height="90.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="140.0" y="179.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Fixation</text>
+<text x="140.0" y="200.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">lightning, root-nodule</text>
+<text x="140.0" y="221.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">bacteria, Haber process</text>
+<rect x="290.0" y="235.0" width="220.0" height="70.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="400.0" y="259.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Nitrates in soil</text>
+<text x="400.0" y="281.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">NO₃⁻</text>
+<rect x="550.0" y="165.0" width="220.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="660.0" y="189.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Plants</text>
+<text x="660.0" y="211.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">make proteins</text>
+<rect x="550.0" y="305.0" width="220.0" height="70.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="660.0" y="329.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Animals</text>
+<text x="660.0" y="351.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">eat plants</text>
+<rect x="270.0" y="395.0" width="260.0" height="70.0" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="400.0" y="419.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Decay and wastes</text>
+<text x="400.0" y="441.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">→ ammonium (NH₄⁺)</text>
+<line x1="400.0" y1="94.0" x2="140.0" y2="149.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<line x1="261.0" y1="200.0" x2="284.0" y2="270.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<line x1="516.0" y1="270.0" x2="544.0" y2="200.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<line x1="660.0" y1="241.0" x2="660.0" y2="299.0" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a7c3aed)"/>
+<path d="M 660 375 C 660 430, 600 440, 532 440" stroke="#475569" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a475569)"/>
+<path d="M 560 236 C 560 300, 600 420, 532 420" stroke="#475569" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5 5" marker-end="url(#a475569)"/>
+<path d="M 400 395 L 400 307" stroke="#ea580c" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<text x="410.0" y="352.0" font-size="13" fill="#ea580c" text-anchor="start" dominant-baseline="middle" font-weight="bold">nitrifying bacteria</text>
+<path d="M 470 235 C 520 160, 520 120, 470 90" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5" marker-end="url(#adc2626)"/>
+<text x="458.0" y="150.0" font-size="13" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">denitrifying</text>
+<text x="458.0" y="166.0" font-size="13" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">bacteria</text>
+</svg>

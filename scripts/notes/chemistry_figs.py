@@ -1590,6 +1590,271 @@ def equilibrium_time():
     return s
 
 
+# ═══ Group 5: non-metals and metals ══════════════════════════════════════════
+
+def tube(s: Svg, pts):
+    """A glass delivery tube along the points."""
+    s.polyline(pts, color=INK, width=6)
+    s.polyline(pts, color=GLASS, width=2.4)
+
+
+def _gen_flask_thistle(s, x, ybase, reagents, liquid=WATER, dropping=False):
+    top = conical(s, x, ybase, 130, 170, 0.35, liquid=liquid)
+    s.rect(x - 20, top[1] - 6, 40, 12, fill="#a16207", stroke=INK, width=1.5, rx=3)
+    if dropping:
+        s.path(f"M {x - 22} {top[1] - 70} L {x + 2} {top[1] - 70} L {x - 4} {top[1] - 40} L {x - 4} {top[1] + 60} "
+               f"M {x - 8} {top[1] - 40} L {x - 8} {top[1] + 60}", color=INK, width=2.5)
+        s.polygon([(x - 34, top[1] - 120), (x + 14, top[1] - 120), (x - 6, top[1] - 70), (x - 14, top[1] - 70)],
+                  fill="#ffffff", stroke=INK, width=2.5)
+        s.rect(x - 14, top[1] - 58, 16, 6, fill=METAL, stroke=INK, width=1.2)
+    else:
+        s.path(f"M {x - 8} {top[1] - 70} L {x - 8} {ybase - 20} M {x - 2} {top[1] - 70} L {x - 2} {ybase - 20}", color=INK, width=2.5)
+        s.path(f"M {x - 5} {top[1] - 70} m -18 -26 a 18 14 0 1 0 36 0 a 18 14 0 1 0 -36 0", color=INK, width=2.5, fill="#ffffff")
+    chem(s, x, ybase + 20, reagents, size=14, color=MUTED)
+    return (x + 8, top[1] + 4)
+
+
+def _gen_flask_heated(s, x, ybase, reagents):
+    cy = ybase - 150
+    top = round_flask(s, x, cy, 52, neck=46, frac=0.45, liquid="#fde68a")
+    s.rect(x - 16, top[1] - 6, 32, 12, fill="#a16207", stroke=INK, width=1.5, rx=3)
+    s.path(f"M {x - 6} {top[1] - 60} L {x - 6} {cy + 30}", color=INK, width=2.5)
+    s.path(f"M {x - 6} {top[1] - 60} m -16 -22 a 16 12 0 1 0 32 0 a 16 12 0 1 0 -32 0", color=INK, width=2.5, fill="#ffffff")
+    tripod(s, x, cy + 56, ybase, w=110)
+    burner(s, x, ybase)
+    chem(s, x, ybase + 20, reagents, size=14, color=MUTED)
+    return (x + 8, top[1] + 4)
+
+
+def _gen_tube_heated(s, x, ybase, reagents):
+    yt = ybase - 150
+    s.raw(f'<g transform="rotate(-12 {x} {yt})">')
+    s.path(f"M {x - 70} {yt - 16} L {x + 70} {yt - 16} A 16 16 0 0 1 {x + 70} {yt + 16} L {x - 70} {yt + 16}",
+           color=INK, width=2.5, fill="#ffffff")
+    s.rect(x + 10, yt - 2, 70, 16, fill="#e2e8f0", stroke="none", width=0)
+    s.rect(x - 84, yt - 12, 16, 24, fill="#a16207", stroke=INK, width=1.5, rx=3)
+    s.raw("</g>")
+    burner(s, x + 45, ybase)
+    chem(s, x, ybase + 20, reagents, size=14, color=MUTED)
+    return (x - 80, yt + 18)
+
+
+def _wash(s, x, ybase, label, liquid):
+    w, h = 64, 120
+    s.rect(x - w / 2, ybase - h, w, h, fill="#ffffff", stroke=INK, width=2.5, rx=8)
+    s.rect(x - w / 2 + 2, ybase - h * 0.55, w - 4, h * 0.55 - 2, fill=liquid, stroke="none", width=0)
+    tube(s, [(x - 12, ybase - h - 30), (x - 12, ybase - 20)])
+    tube(s, [(x + 12, ybase - h + 10), (x + 12, ybase - h - 30)])
+    chem(s, x, ybase + 18, label, size=13, color=MUTED)
+    return (x - 12, ybase - h - 30), (x + 12, ybase - h - 30)
+
+
+def _tower(s, x, ybase, label):
+    s.rect(x - 26, ybase - 150, 52, 130, fill="#f1f5f9", stroke=INK, width=2.5, rx=6)
+    import random
+    rnd = random.Random(9)
+    for _ in range(30):
+        s.circle(x + rnd.uniform(-20, 20), ybase - rnd.uniform(28, 145), 4, fill="#ffffff", stroke=MUTED, width=1)
+    chem(s, x, ybase + 2, label, size=13, color=MUTED)
+    return (x, ybase - 20), (x, ybase - 150)
+
+
+def _collect(s, x, ybase, how, gas):
+    if how == "water":
+        s.rect(x - 90, ybase - 70, 180, 70, fill="#ffffff", stroke=INK, width=2.5, rx=4)
+        s.rect(x - 88, ybase - 52, 176, 50, fill=WATER, stroke="none", width=0)
+        s.rect(x - 28, ybase - 190, 56, 160, fill=WATER, stroke=INK, width=2.5, rx=4)
+        s.rect(x - 26, ybase - 188, 52, 70, fill="#ffffff", stroke="none", width=0)
+        s.rect(x - 34, ybase - 34, 68, 8, fill=METAL, stroke=INK, width=1.5)
+        chem(s, x, ybase - 154, gas, size=17, weight="bold", color=BLUE)
+        s.text(x, ybase + 20, "collected over water", size=13, color=MUTED)
+        return [(x - 70, ybase - 40), (x, ybase - 40), (x, ybase - 100)]
+    if how == "down":
+        s.rect(x - 32, ybase - 170, 64, 170, fill="#ffffff", stroke=INK, width=2.5, rx=4)
+        s.rect(x - 32, ybase - 60, 64, 58, fill="#bbf7d0", stroke="none", width=0, opacity=0.8)
+        chem(s, x, ybase - 30, gas, size=16, weight="bold", color=GREEN)
+        s.text(x, ybase + 20, "downward delivery", size=13, color=MUTED)
+        s.text(x, ybase + 36, "(gas denser than air)", size=12, color=MUTED)
+        return [(x, ybase - 200), (x, ybase - 20)]
+    s.rect(x - 32, ybase - 170, 64, 170, fill="#ffffff", stroke=INK, width=2.5, rx=4)
+    s.rect(x - 32, ybase - 168, 64, 58, fill="#e0e7ff", stroke="none", width=0, opacity=0.9)
+    chem(s, x, ybase - 140, gas, size=16, weight="bold", color=PURPLE)
+    s.text(x, ybase + 20, "upward delivery", size=13, color=MUTED)
+    s.text(x, ybase + 36, "(gas lighter than air)", size=12, color=MUTED)
+    return [(x, ybase + 30 - 30), (x, ybase - 150)]
+
+
+def gas_rig(name, title_, desc, gen, reagents, washes, collect, gas, heading, width=800, liquid=WATER, dropping=False):
+    s = Svg(width, 460, title_, desc)
+    yb = 400
+    if gen == "thistle":
+        out = _gen_flask_thistle(s, 110, yb, reagents, liquid=liquid, dropping=dropping)
+    elif gen == "heated":
+        out = _gen_flask_heated(s, 110, yb, reagents)
+    else:
+        out = _gen_tube_heated(s, 140, yb, reagents)
+    x = 300 if gen != "tube" else 340
+    prev = out
+    pts = [prev]
+    for kind, label, liq in washes:
+        if kind == "wash":
+            inlet, outlet = _wash(s, x, yb, label, liq)
+            tube(s, [prev, (prev[0], min(prev[1], inlet[1])) if False else prev, (inlet[0], prev[1]), inlet])
+            prev = outlet
+        else:
+            bottom, topp = _tower(s, x, yb, label)
+            tube(s, [prev, (x - 40, prev[1]), (x - 40, yb - 10), (x, yb - 10), bottom])
+            prev = topp
+        x += 110
+    cx = x + 60
+    target = _collect(s, cx, yb, collect, gas)
+    if collect == "water":
+        tube(s, [prev, (prev[0] + 20, prev[1]), (target[0][0], prev[1]), target[0], target[1], target[2]])
+    elif collect == "down":
+        tube(s, [prev, (target[0][0], prev[1]), target[1]])
+    else:
+        tube(s, [prev, (prev[0], prev[1]), (cx - 60, prev[1]), (cx - 60, yb + 6), (cx, yb + 6), target[1]])
+    title(s, heading, y=28)
+    return s
+
+
+@fig
+def hydrogen_prep():
+    return gas_rig("hydrogen-prep", "Laboratory preparation of hydrogen",
+                   "Granulated zinc reacts with dilute hydrochloric acid added through a thistle funnel. The hydrogen passes along a "
+                   "delivery tube and is collected over water in an inverted gas jar, because it is almost insoluble in water.",
+                   "thistle", "Zn + dilute HCl", [], "water", "H_2", "Zn + 2HCl → ZnCl₂ + H₂")
+
+
+@fig
+def oxygen_prep():
+    return gas_rig("oxygen-prep", "Laboratory preparation of oxygen",
+                   "Hydrogen peroxide solution is dripped from a dropping funnel onto manganese(IV) oxide, which catalyses its "
+                   "decomposition. The oxygen is collected over water.",
+                   "thistle", "H_2O_2 on MnO_2", [], "water", "O_2", "2H₂O₂ → 2H₂O + O₂ (MnO₂ catalyst)", dropping=True,
+                   liquid="#e2e8f0")
+
+
+@fig
+def chlorine_prep():
+    return gas_rig("chlorine-prep", "Laboratory preparation of chlorine",
+                   "Concentrated hydrochloric acid is heated with manganese(IV) oxide. The gas passes through water, which removes "
+                   "hydrogen chloride, then through concentrated sulphuric acid, which dries it. Chlorine is collected by downward "
+                   "delivery, because it is denser than air. Done in a fume cupboard.",
+                   "heated", "MnO_2 + conc. HCl", [("wash", "water", WATER), ("wash", "conc. H_2SO_4", "#fef9c3")],
+                   "down", "Cl_2", "MnO₂ + 4HCl → MnCl₂ + 2H₂O + Cl₂ (fume cupboard)")
+
+
+@fig
+def ammonia_prep():
+    return gas_rig("ammonia-prep", "Laboratory preparation of ammonia",
+                   "A mixture of calcium hydroxide and ammonium chloride is heated in a test tube sloping slightly downwards. The "
+                   "ammonia is dried by passing through a tower of calcium oxide (quicklime) and collected by upward delivery, "
+                   "because it is lighter than air.",
+                   "tube", "Ca(OH)_2 + NH_4Cl", [("tower", "CaO", None)], "up", "NH_3",
+                   "Ca(OH)₂ + 2NH₄Cl → CaCl₂ + 2H₂O + 2NH₃")
+
+
+@fig
+def gas_collection():
+    s = Svg(800, 380, "Three ways to collect a gas",
+            "Over water, for gases that are insoluble or only slightly soluble (hydrogen, oxygen, nitrogen). Downward delivery "
+            "into an upright jar, for gases denser than air (chlorine, carbon(IV) oxide, sulphur(IV) oxide, hydrogen chloride). "
+            "Upward delivery into an inverted jar, for gases lighter than air (ammonia, hydrogen).")
+    for cx, how, gas, ex in [(140, "water", "gas", "H₂, O₂, N₂, CO"), (420, "down", "gas", "Cl₂, CO₂, SO₂, HCl"),
+                             (660, "up", "gas", "NH₃ (and H₂)")]:
+        t = _collect(s, cx, 300, how, gas)
+        if how == "water":
+            tube(s, [(cx - 120, 260), (cx - 70, 260), *t])
+        elif how == "down":
+            tube(s, [(cx - 90, t[0][1]), *t])
+        else:
+            tube(s, [(cx - 90, 306), (cx, 306), t[1]])
+        s.text(cx, 350, ex, size=14, weight="bold")
+    title(s, "Choose by solubility and density of the gas", y=28)
+    return s
+
+
+@fig
+def air_composition():
+    s = Svg(720, 380, "Composition of dry air by volume",
+            "Dry air is about 78% nitrogen, 21% oxygen, 0.93% argon and other noble gases, and 0.04% carbon(IV) oxide, with "
+            "variable amounts of water vapour and pollutants.")
+    cx, cy, r, r2 = 210, 200, 140, 70
+    parts = [(78.08, "Nitrogen 78%", BLUE, F_BLUE), (20.95, "Oxygen 21%", RED, F_RED), (0.97, "Argon, others ~1%", PURPLE, F_PURPLE)]
+    a = -90
+    for v, lab, col, fill in parts:
+        b = a + v * 3.6
+        x1, y1 = cx + r * math.cos(math.radians(a)), cy + r * math.sin(math.radians(a))
+        x2, y2 = cx + r * math.cos(math.radians(b)), cy + r * math.sin(math.radians(b))
+        x3, y3 = cx + r2 * math.cos(math.radians(b)), cy + r2 * math.sin(math.radians(b))
+        x4, y4 = cx + r2 * math.cos(math.radians(a)), cy + r2 * math.sin(math.radians(a))
+        large = 1 if v > 50 else 0
+        s.path(f"M {x1:.1f} {y1:.1f} A {r} {r} 0 {large} 1 {x2:.1f} {y2:.1f} L {x3:.1f} {y3:.1f} A {r2} {r2} 0 {large} 0 "
+               f"{x4:.1f} {y4:.1f} Z", color="#ffffff", width=2, fill=col)
+        a = b
+    s.text(cx, cy - 8, "dry air", size=17, weight="bold")
+    s.text(cx, cy + 14, "by volume", size=14, color=MUTED)
+    rows = [("Nitrogen, N₂", "78%", BLUE), ("Oxygen, O₂", "21%", RED), ("Argon and other noble gases", "0.93%", PURPLE),
+            ("Carbon(IV) oxide, CO₂", "0.04%", GREEN), ("Water vapour", "variable", TEAL)]
+    for i, (n, v, col) in enumerate(rows):
+        y = 110 + i * 44
+        s.rect(400, y - 10, 20, 20, fill=col, stroke=col, width=1, rx=3)
+        s.text(430, y, n, size=15, anchor="start")
+        s.text(700, y, v, size=15, anchor="end", weight="bold", color=col)
+    title(s, "Air is a mixture, not a compound", y=30)
+    return s
+
+
+@fig
+def haber_process():
+    s = Svg(800, 400, "The Haber process",
+            "Nitrogen from air and hydrogen from natural gas are mixed in a 1 : 3 ratio, compressed to about 200 atm and passed "
+            "over an iron catalyst at about 450 °C in the converter. About 15% forms ammonia. The mixture is cooled so that ammonia "
+            "liquefies and is removed; the unreacted nitrogen and hydrogen are recycled.")
+    a = box(s, 110, 110, 170, 70, ["N₂ + 3H₂", "1 : 3 by volume"], BLUE, F_BLUE, size=16)
+    b = box(s, 320, 110, 170, 70, ["Compressor", "about 200 atm"], PURPLE, F_PURPLE, size=16)
+    c = box(s, 540, 110, 190, 84, ["Converter", "iron catalyst", "about 450 °C"], RED, F_RED, size=16)
+    d = box(s, 540, 270, 190, 70, ["Cooler", "NH₃ liquefies"], TEAL, F_TEAL, size=16)
+    e = box(s, 320, 270, 170, 70, ["Liquid ammonia", "to storage"], GREEN, F_GREEN, size=16)
+    link(s, a, b, color=INK)
+    link(s, b, c, color=INK)
+    link(s, c, d, color=INK)
+    link(s, d, e, color=INK)
+    s.path("M 635 270 C 760 240, 760 60, 560 55 L 330 55 L 330 72", color=ORANGE, width=2.5, dash="8 6", arrow="end")
+    for i, t in enumerate(("unreacted", "N₂ + H₂", "recycled")):
+        s.label(742, 150 + i * 20, t, size=14, color=ORANGE, weight="bold")
+    chem(s, 400, 370, "N_2 + 3H_2 ⇌ 2NH_3     ΔH = −92 kJ/mol", size=17, weight="bold")
+    return s
+
+
+@fig
+def nitrogen_cycle():
+    s = Svg(800, 500, "The nitrogen cycle",
+            "Nitrogen in the air is fixed by lightning, by nitrogen-fixing bacteria in the root nodules of legumes and by the "
+            "Haber process (fertilisers). Plants absorb nitrates and make proteins; animals eat plants. Dead matter and wastes "
+            "are decomposed to ammonium compounds, which nitrifying bacteria turn into nitrites and nitrates. Denitrifying "
+            "bacteria return nitrogen gas to the air.")
+    air = box(s, 400, 60, 280, 56, ["Nitrogen in the air, N₂"], BLUE, F_BLUE, size=17)
+    fix = box(s, 140, 200, 230, 90, ["Fixation", "lightning, root-nodule", "bacteria, Haber process"], GREEN, F_GREEN, size=15)
+    nit = box(s, 400, 270, 220, 70, ["Nitrates in soil", "NO₃⁻"], ORANGE, F_AMBER, size=16)
+    pl = box(s, 660, 200, 220, 70, ["Plants", "make proteins"], GREEN, F_GREEN, size=16)
+    an = box(s, 660, 340, 220, 70, ["Animals", "eat plants"], PURPLE, F_PURPLE, size=16)
+    dec = box(s, 400, 430, 260, 70, ["Decay and wastes", "→ ammonium (NH₄⁺)"], MUTED, F_GREY, size=16)
+    link(s, air, fix, color=GREEN)
+    link(s, fix, nit, color=GREEN)
+    link(s, nit, pl, color=GREEN)
+    link(s, pl, an, color=PURPLE)
+    s.path("M 660 375 C 660 430, 600 440, 532 440", color=MUTED, width=2.5, arrow="end")
+    s.path("M 560 236 C 560 300, 600 420, 532 420", color=MUTED, width=2, dash="5 5", arrow="end")
+    s.path("M 400 395 L 400 307", color=ORANGE, width=2.5, arrow="end")
+    s.text(410, 352, "nitrifying bacteria", size=13, color=ORANGE, anchor="start", weight="bold")
+    s.path("M 470 235 C 520 160, 520 120, 470 90", color=RED, width=2.5, dash="7 5", arrow="end")
+    s.text(458, 150, "denitrifying", size=13, color=RED, anchor="end", weight="bold")
+    s.text(458, 166, "bacteria", size=13, color=RED, anchor="end", weight="bold")
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Three ways to collect a gas</title>
+<desc id="d">Over water, for gases that are insoluble or only slightly soluble (hydrogen, oxygen, nitrogen). Downward delivery into an upright jar, for gases denser than air (chlorine, carbon(IV) oxide, sulphur(IV) oxide, hydrogen chloride). Upward delivery into an inverted jar, for gases lighter than air (ammonia, hydrogen).</desc>
+<defs></defs>
+<rect width="800" height="380" rx="20" fill="#f8fafc"/>
+<rect x="50.0" y="230.0" width="180.0" height="70.0" rx="4" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="52.0" y="248.0" width="176.0" height="50.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0"/>
+<rect x="112.0" y="110.0" width="56.0" height="160.0" rx="4" fill="#bfdbfe" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="114.0" y="112.0" width="52.0" height="70.0" rx="0" fill="#ffffff" stroke="none" stroke-width="0"/>
+<rect x="106.0" y="266.0" width="68.0" height="8.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="1.5"/>
+<text x="140.0" y="146.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">gas</text>
+<text x="140.0" y="320.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">collected over water</text>
+<path d="M 20.0 260.0 L 70.0 260.0 L 70.0 260.0 L 140.0 260.0 L 140.0 200.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 20.0 260.0 L 70.0 260.0 L 70.0 260.0 L 140.0 260.0 L 140.0 200.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="140.0" y="350.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">H₂, O₂, N₂, CO</text>
+<rect x="388.0" y="130.0" width="64.0" height="170.0" rx="4" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="388.0" y="240.0" width="64.0" height="58.0" rx="0" fill="#bbf7d0" stroke="none" stroke-width="0" opacity="0.8"/>
+<text x="420.0" y="270.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">gas</text>
+<text x="420.0" y="320.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">downward delivery</text>
+<text x="420.0" y="336.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(gas denser than air)</text>
+<path d="M 330.0 100.0 L 420.0 100.0 L 420.0 280.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 330.0 100.0 L 420.0 100.0 L 420.0 280.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="420.0" y="350.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cl₂, CO₂, SO₂, HCl</text>
+<rect x="628.0" y="130.0" width="64.0" height="170.0" rx="4" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="628.0" y="132.0" width="64.0" height="58.0" rx="0" fill="#e0e7ff" stroke="none" stroke-width="0" opacity="0.9"/>
+<text x="660.0" y="160.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">gas</text>
+<text x="660.0" y="320.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">upward delivery</text>
+<text x="660.0" y="336.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(gas lighter than air)</text>
+<path d="M 570.0 306.0 L 660.0 306.0 L 660.0 150.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 570.0 306.0 L 660.0 306.0 L 660.0 150.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="660.0" y="350.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">NH₃ (and H₂)</text>
+<text x="400.0" y="28.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Choose by solubility and density of the gas</text>
+</svg>

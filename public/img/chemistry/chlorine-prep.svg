@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Laboratory preparation of chlorine</title>
+<desc id="d">Concentrated hydrochloric acid is heated with manganese(IV) oxide. The gas passes through water, which removes hydrogen chloride, then through concentrated sulphuric acid, which dries it. Chlorine is collected by downward delivery, because it is denser than air. Done in a fume cupboard.</desc>
+<defs></defs>
+<rect width="800" height="460" rx="20" fill="#f8fafc"/>
+<path d="M 58.3 255.2 A 50 50 0 0 0 161.7 255.2 Z" stroke="none" stroke-width="0" fill="#fde68a" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 99.1 153.2 L 99.1 199.2 A 52 52 0 1 0 120.9 199.2 L 120.9 153.2" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="94.0" y="147.2" width="32.0" height="12.0" rx="3" fill="#a16207" stroke="#0f172a" stroke-width="1.5"/>
+<path d="M 104 93.15952793295483 L 104 280" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 104 93.15952793295483 m -16 -22 a 16 12 0 1 0 32 0 a 16 12 0 1 0 -32 0" stroke="#0f172a" stroke-width="2.5" fill="#ffffff" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="55.0" y1="306.0" x2="165.0" y2="306.0" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+<line x1="63.0" y1="306.0" x2="49.0" y2="400.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="157.0" y1="306.0" x2="171.0" y2="400.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="82.0" y="390.0" width="56.0" height="10.0" rx="3" fill="#cbd5e1" stroke="#0f172a" stroke-width="2"/>
+<rect x="102.0" y="330.0" width="16.0" height="60.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="2"/>
+<path d="M 110 288 C 126 308, 122 326, 110 328 C 98 326, 94 308, 110 288 Z" stroke="#f97316" stroke-width="2" fill="#fed7aa" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 110 304 C 117 314, 115 324, 110 326 C 105 324, 103 314, 110 304 Z" stroke="#2563eb" stroke-width="1.5" fill="#dbeafe" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="110.0" y="420.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">MnO<tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5"> + conc. HCl</tspan></text>
+<rect x="268.0" y="280.0" width="64.0" height="120.0" rx="8" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="270.0" y="334.0" width="60.0" height="64.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0"/>
+<path d="M 288.0 250.0 L 288.0 380.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 288.0 250.0 L 288.0 380.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 312.0 290.0 L 312.0 250.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 312.0 290.0 L 312.0 250.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="300.0" y="418.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">water</text>
+<path d="M 118.0 157.2 L 118.0 157.2 L 288.0 157.2 L 288.0 250.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 118.0 157.2 L 118.0 157.2 L 288.0 157.2 L 288.0 250.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="378.0" y="280.0" width="64.0" height="120.0" rx="8" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="380.0" y="334.0" width="60.0" height="64.0" rx="0" fill="#fef9c3" stroke="none" stroke-width="0"/>
+<path d="M 398.0 250.0 L 398.0 380.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 398.0 250.0 L 398.0 380.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 422.0 290.0 L 422.0 250.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 422.0 290.0 L 422.0 250.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="410.0" y="418.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">conc. H<tspan dy="4.2" font-size="9.1">2</tspan><tspan dy="-4.2">SO</tspan><tspan dy="4.2" font-size="9.1">4</tspan><tspan dy="-4.2"></tspan></text>
+<path d="M 312.0 250.0 L 312.0 250.0 L 398.0 250.0 L 398.0 250.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 312.0 250.0 L 312.0 250.0 L 398.0 250.0 L 398.0 250.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="548.0" y="230.0" width="64.0" height="170.0" rx="4" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="548.0" y="340.0" width="64.0" height="58.0" rx="0" fill="#bbf7d0" stroke="none" stroke-width="0" opacity="0.8"/>
+<text x="580.0" y="370.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cl<tspan dy="5.1" font-size="11.2">2</tspan><tspan dy="-5.1"></tspan></text>
+<text x="580.0" y="420.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">downward delivery</text>
+<text x="580.0" y="436.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(gas denser than air)</text>
+<path d="M 422.0 250.0 L 580.0 250.0 L 580.0 380.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 422.0 250.0 L 580.0 250.0 L 580.0 380.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="400.0" y="28.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">MnO₂ + 4HCl → MnCl₂ + 2H₂O + Cl₂ (fume cupboard)</text>
+</svg>
