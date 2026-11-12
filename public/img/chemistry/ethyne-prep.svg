@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Laboratory preparation of ethyne</title>
+<desc id="d">Water is dripped from a dropping funnel onto calcium carbide in a flask. Ethyne is given off and collected over water.</desc>
+<defs></defs>
+<rect width="800" height="460" rx="20" fill="#f8fafc"/>
+<polygon points="61.8,359.5 158.2,359.5 173.0,398.0 47.0,398.0" fill="#e2e8f0" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+<path d="M 93.1 230 L 93.1 284.4 L 45.0 400 L 175.0 400 L 126.9 284.4 L 126.9 230" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="90.0" y="224.0" width="40.0" height="12.0" rx="3" fill="#a16207" stroke="#0f172a" stroke-width="1.5"/>
+<path d="M 88 160 L 112 160 L 106 190 L 106 290 M 102 190 L 102 290" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="76.0,110.0 124.0,110.0 104.0,160.0 96.0,160.0" fill="#ffffff" stroke="#0f172a" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="96.0" y="172.0" width="16.0" height="6.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="1.2"/>
+<text x="110.0" y="420.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">CaC<tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5"> + water (dropwise)</tspan></text>
+<rect x="270.0" y="330.0" width="180.0" height="70.0" rx="4" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="272.0" y="348.0" width="176.0" height="50.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0"/>
+<rect x="332.0" y="210.0" width="56.0" height="160.0" rx="4" fill="#bfdbfe" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="334.0" y="212.0" width="52.0" height="70.0" rx="0" fill="#ffffff" stroke="none" stroke-width="0"/>
+<rect x="326.0" y="366.0" width="68.0" height="8.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="1.5"/>
+<text x="360.0" y="246.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C<tspan dy="5.4" font-size="11.9">2</tspan><tspan dy="-5.4">H</tspan><tspan dy="5.4" font-size="11.9">2</tspan><tspan dy="-5.4"></tspan></text>
+<text x="360.0" y="420.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">collected over water</text>
+<path d="M 118.0 234.0 L 138.0 234.0 L 290.0 234.0 L 290.0 360.0 L 360.0 360.0 L 360.0 300.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 118.0 234.0 L 138.0 234.0 L 290.0 234.0 L 290.0 360.0 L 360.0 360.0 L 360.0 300.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="400.0" y="28.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">CaC₂ + 2H₂O → Ca(OH)₂ + C₂H₂</text>
+</svg>

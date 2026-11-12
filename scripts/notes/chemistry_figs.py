@@ -2137,6 +2137,177 @@ def brewing_flow():
     return s
 
 
+# ═══ Group 6: organic chemistry ══════════════════════════════════════════════
+
+def _bond(s: Svg, x1, y1, x2, y2, order=1, color=INK, trim=13):
+    d = math.hypot(x2 - x1, y2 - y1)
+    ux, uy = (x2 - x1) / d, (y2 - y1) / d
+    ax, ay, bx, by = x1 + ux * trim, y1 + uy * trim, x2 - ux * trim, y2 - uy * trim
+    nx, ny = -uy, ux
+    offs = {1: [0], 2: [-3.5, 3.5], 3: [-5, 0, 5]}[order]
+    for o in offs:
+        s.line(ax + nx * o, ay + ny * o, bx + nx * o, by + ny * o, color=color, width=2.4)
+
+
+def disp(s: Svg, x0, y0, row, gap=62, arm=44, size=18, color=INK, hl=None):
+    """Displayed formula of a chain drawn left to right.
+
+    row: list of atoms, each a dict with keys
+      atom  - label (default "C")
+      up, down, left, right - substituent label; a leading "=" means a double bond, "#" a triple bond
+      next  - bond order to the next atom in the row (default 1)
+    hl: set of substituent labels to colour (e.g. {"OH"})."""
+    hl = hl or set()
+    pos = []
+    for i, a in enumerate(row):
+        x = x0 + i * gap
+        pos.append((x, y0))
+        lab = a.get("atom", "C")
+        chem(s, x, y0, lab, size=size, weight="bold", color=PURPLE if lab in hl else color)
+        for key, dx, dy in (("up", 0, -arm), ("down", 0, arm), ("left", -arm, 0), ("right", arm, 0)):
+            sub = a.get(key)
+            if not sub:
+                continue
+            order = 1
+            if sub[0] in "=#":
+                order = 2 if sub[0] == "=" else 3
+                sub = sub[1:]
+            sx, sy = x + dx, y0 + dy
+            wide = len(sub.replace("_", "")) > 1
+            if key in ("left", "right") and wide:
+                sx += (dx / arm) * 10 * (len(sub) - 1)
+            _bond(s, x, y0, sx, sy, order, trim=12 if not wide or key in ("up", "down") else 12)
+            col = PURPLE if sub in hl else color
+            chem(s, sx, sy, sub, size=size - 1, weight="bold", color=col,
+                 anchor="middle")
+    for i in range(len(row) - 1):
+        _bond(s, pos[i][0], y0, pos[i + 1][0], y0, row[i].get("next", 1), color=RED if row[i].get("next", 1) > 1 else INK)
+    return pos
+
+
+def CH(up="H", down="H", **kw):
+    return {"atom": "C", "up": up, "down": down, **kw}
+
+
+@fig
+def homologous_series():
+    s = Svg(800, 640, "First members of six homologous series",
+            "Displayed formulas with their functional groups: methane (alkane, C–C single bonds only), ethene (alkene, C=C), ethyne "
+            "(alkyne, C≡C), ethanol (alkanol, –OH), ethanoic acid (alkanoic acid, –COOH) and methyl ethanoate (alkanoate or ester, "
+            "–COO–).")
+    cells = [(200, 140, "Alkanes, CₙH₂ₙ₊₂", "methane, CH₄", [CH(left="H", right="H")], set()),
+             (600, 140, "Alkenes, CₙH₂ₙ", "ethene, C₂H₄", [CH(next=2), CH()], set()),
+             (200, 320, "Alkynes, CₙH₂ₙ₋₂", "ethyne, C₂H₂", [{"atom": "C", "left": "H", "next": 3}, {"atom": "C", "right": "H"}], set()),
+             (600, 320, "Alkanols, CₙH₂ₙ₊₁OH", "ethanol, C₂H₅OH", [CH(left="H"), CH(right="OH")], {"OH"}),
+             (200, 500, "Alkanoic acids, CₙH₂ₙ₊₁COOH", "ethanoic acid, CH₃COOH", [CH(left="H"), {"atom": "C", "up": "=O", "right": "OH"}], {"OH", "O"}),
+             (600, 500, "Esters (alkanoates)", "methyl ethanoate, CH₃COOCH₃", [CH(left="H"), {"atom": "C", "up": "=O"}, {"atom": "O"}, CH(right="H")], {"O"})]
+    for cx, cy, head, name, row, hl in cells:
+        s.rect(cx - 190, cy - 82, 380, 168, fill="#ffffff", stroke=MUTED, width=1.5, rx=10)
+        s.text(cx, cy - 64, head, size=15, weight="bold", color=BLUE)
+        n = len(row)
+        disp(s, cx - (n - 1) * 31, cy + 2, row, hl=hl)
+        s.text(cx, cy + 72, name, size=14, color=MUTED)
+    title(s, "Each series has its own functional group (purple) and general formula", y=30, size=16)
+    return s
+
+
+@fig
+def isomers():
+    s = Svg(800, 590, "Structural isomers",
+            "Chain isomers: butane (a straight chain) and 2-methylpropane (a branched chain) are both C4H10. Position isomers: "
+            "but-1-ene and but-2-ene are both C4H8. Functional group isomers: ethanol and methoxymethane are both C2H6O.")
+    s.text(400, 30, "Same molecular formula, different structures", size=16, color=MUTED)
+    s.text(40, 70, "Chain isomers, C₄H₁₀", size=16, weight="bold", color=BLUE, anchor="start")
+    disp(s, 90, 140, [CH(left="H"), CH(), CH(), CH(right="H")])
+    s.text(184, 210, "butane (bp −0.5 °C)", size=14, color=MUTED)
+    disp(s, 500, 150, [CH(left="H"), CH(up=None), CH(right="H")])
+    disp(s, 562, 88, [CH(up="H", left="H", right="H", down=None)])
+    s.line(562, 102, 562, 136, width=2.4)
+    s.text(562, 214, "2-methylpropane (bp −12 °C)", size=14, color=MUTED)
+    s.text(40, 260, "Position isomers, C₄H₈", size=16, weight="bold", color=BLUE, anchor="start")
+    disp(s, 90, 330, [CH(left="H", down=None, next=2), CH(down=None), CH(), CH(right="H")])
+    s.text(184, 400, "but-1-ene", size=14, color=MUTED)
+    disp(s, 500, 330, [CH(left="H"), CH(down=None, next=2), CH(down=None), CH(right="H")])
+    s.text(594, 400, "but-2-ene", size=14, color=MUTED)
+    s.text(40, 440, "Functional group isomers, C₂H₆O", size=16, weight="bold", color=BLUE, anchor="start")
+    disp(s, 110, 500, [CH(left="H"), CH(right="OH")], hl={"OH"})
+    s.text(150, 572, "ethanol (an alkanol)", size=14, color=MUTED)
+    disp(s, 500, 500, [CH(left="H"), {"atom": "O"}, CH(right="H")], hl={"O"})
+    s.text(562, 572, "methoxymethane (an ether)", size=14, color=MUTED)
+    return s
+
+
+@fig
+def alkane_boiling():
+    s = Svg(760, 420, "Boiling points of the first eight alkanes",
+            "Boiling point rises steadily with the number of carbon atoms: methane −162 °C, ethane −89, propane −42, butane −0.5, "
+            "pentane 36, hexane 69, heptane 98, octane 126 °C. The first four are gases at room temperature.")
+    bp = [-162, -89, -42, -0.5, 36, 69, 98, 126]
+    names = ["CH₄", "C₂H₆", "C₃H₈", "C₄H₁₀", "C₅H₁₂", "C₆H₁₄", "C₇H₁₆", "C₈H₁₈"]
+    p = Plot(s, 100, 330, 560, 260, (0, 9), (-180, 150))
+    p.axes("number of carbon atoms", "boiling point (°C)", xticks=list(range(1, 9)), yticks=[(-150, "−150"), (-100, "−100"),
+           (-50, "−50"), (0, "0"), (50, "50"), (100, "100")], zero=False)
+    s.line(p.X(0), p.Y(25), p.X(9), p.Y(25), color=GREEN, width=1.6, dash="6 5")
+    p.text(8.8, 25, "room temperature (25 °C)", dy=-12, size=13, color=GREEN, anchor="end")
+    pts = list(zip(range(1, 9), bp))
+    p.poly(pts, color=BLUE, width=3)
+    for (n, b), nm in zip(pts, names):
+        p.dot(n, b, color=BLUE)
+        p.text(n, b, nm, dx=-8, dy=-14, size=13, anchor="end", color=INK)
+    p.text(2, -150, "gases", size=15, weight="bold", color=RED)
+    p.text(5, 112, "liquids", size=15, weight="bold", color=BLUE)
+    title(s, "Larger molecules: stronger van der Waals forces", y=30)
+    return s
+
+
+@fig
+def methane_prep():
+    return gas_rig("methane-prep", "Laboratory preparation of methane",
+                   "A mixture of anhydrous sodium ethanoate and soda lime is heated in a hard-glass test tube. Methane is given off and "
+                   "collected over water, as it is insoluble.",
+                   "tube", "CH_3COONa + soda lime", [], "water", "CH_4", "CH₃COONa + NaOH → CH₄ + Na₂CO₃ (soda lime, heat)")
+
+
+@fig
+def ethene_prep():
+    return gas_rig("ethene-prep", "Laboratory preparation of ethene",
+                   "Ethanol is heated with excess concentrated sulphuric acid at about 170 °C. The gas is passed through sodium hydroxide "
+                   "solution to remove sulphur(IV) oxide and carbon(IV) oxide impurities, and collected over water.",
+                   "heated", "C_2H_5OH + excess conc. H_2SO_4", [("wash", "NaOH(aq)", "#e2e8f0")], "water", "C_2H_4",
+                   "C₂H₅OH → C₂H₄ + H₂O (conc. H₂SO₄, 170 °C)")
+
+
+@fig
+def ethyne_prep():
+    return gas_rig("ethyne-prep", "Laboratory preparation of ethyne",
+                   "Water is dripped from a dropping funnel onto calcium carbide in a flask. Ethyne is given off and collected over "
+                   "water.", "thistle", "CaC_2 + water (dropwise)", [], "water", "C_2H_2", "CaC₂ + 2H₂O → Ca(OH)₂ + C₂H₂",
+                   dropping=True, liquid="#e2e8f0")
+
+
+@fig
+def ethene_additions():
+    s = Svg(800, 560, "Addition reactions of ethene",
+            "Ethene in the centre. With hydrogen (nickel catalyst, 150 °C) it gives ethane; with bromine it gives 1,2-dibromoethane "
+            "and the bromine is decolourised; with steam (phosphoric acid catalyst, 300 °C, 60 atm) it gives ethanol; with hydrogen "
+            "bromide it gives bromoethane.")
+    disp(s, 369, 280, [CH(left="H", down="H", up="H", next=2), CH(right="H", up="H", down="H")])
+    s.rect(300, 220, 200, 120, fill="none", stroke=RED, width=2, rx=12, dash="6 5")
+    s.text(512, 286, "ethene", size=15, weight="bold", color=RED, anchor="start")
+    targets = [(160, 100, "+ H₂ (Ni, 150 °C)", "ethane", [CH(left="H"), CH(right="H")], set()),
+               (640, 100, "+ Br₂ (room temperature)", "1,2-dibromoethane", [CH(left="H", up="Br"), CH(right="H", up="Br")], {"Br"}),
+               (160, 460, "+ H₂O (steam, H₃PO₄, 300 °C)", "ethanol", [CH(left="H"), CH(right="OH")], {"OH"}),
+               (640, 460, "+ HBr", "bromoethane", [CH(left="H"), CH(right="Br")], {"Br"})]
+    for cx, cy, lab, name, row, hl in targets:
+        disp(s, cx - 31, cy, row, hl=hl)
+        s.text(cx, cy + 74, name, size=14, weight="bold")
+        tx, ty = (cx + 400) / 2, (cy + 280) / 2
+        s.arrow(400 + (cx - 400) * 0.28, 280 + (cy - 280) * 0.38, cx + (400 - cx) * 0.3, cy + (280 - cy) * 0.34, color=BLUE, width=2.5)
+        s.label(tx, ty, lab, size=13, color=BLUE, weight="bold")
+    s.text(400, 30, "The C=C double bond opens and new atoms add on", size=16, color=MUTED)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:

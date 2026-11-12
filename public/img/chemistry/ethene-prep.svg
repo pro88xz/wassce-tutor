@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Laboratory preparation of ethene</title>
+<desc id="d">Ethanol is heated with excess concentrated sulphuric acid at about 170 °C. The gas is passed through sodium hydroxide solution to remove sulphur(IV) oxide and carbon(IV) oxide impurities, and collected over water.</desc>
+<defs></defs>
+<rect width="800" height="460" rx="20" fill="#f8fafc"/>
+<path d="M 58.3 255.2 A 50 50 0 0 0 161.7 255.2 Z" stroke="none" stroke-width="0" fill="#fde68a" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 99.1 153.2 L 99.1 199.2 A 52 52 0 1 0 120.9 199.2 L 120.9 153.2" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="94.0" y="147.2" width="32.0" height="12.0" rx="3" fill="#a16207" stroke="#0f172a" stroke-width="1.5"/>
+<path d="M 104 93.15952793295483 L 104 280" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 104 93.15952793295483 m -16 -22 a 16 12 0 1 0 32 0 a 16 12 0 1 0 -32 0" stroke="#0f172a" stroke-width="2.5" fill="#ffffff" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="55.0" y1="306.0" x2="165.0" y2="306.0" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+<line x1="63.0" y1="306.0" x2="49.0" y2="400.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="157.0" y1="306.0" x2="171.0" y2="400.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="82.0" y="390.0" width="56.0" height="10.0" rx="3" fill="#cbd5e1" stroke="#0f172a" stroke-width="2"/>
+<rect x="102.0" y="330.0" width="16.0" height="60.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="2"/>
+<path d="M 110 288 C 126 308, 122 326, 110 328 C 98 326, 94 308, 110 288 Z" stroke="#f97316" stroke-width="2" fill="#fed7aa" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 110 304 C 117 314, 115 324, 110 326 C 105 324, 103 314, 110 304 Z" stroke="#2563eb" stroke-width="1.5" fill="#dbeafe" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="110.0" y="420.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">C<tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5">H</tspan><tspan dy="4.5" font-size="9.8">5</tspan><tspan dy="-4.5">OH + excess conc. H</tspan><tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5">SO</tspan><tspan dy="4.5" font-size="9.8">4</tspan><tspan dy="-4.5"></tspan></text>
+<rect x="268.0" y="280.0" width="64.0" height="120.0" rx="8" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="270.0" y="334.0" width="60.0" height="64.0" rx="0" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<path d="M 288.0 250.0 L 288.0 380.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 288.0 250.0 L 288.0 380.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 312.0 290.0 L 312.0 250.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 312.0 290.0 L 312.0 250.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="300.0" y="418.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">NaOH(aq)</text>
+<path d="M 118.0 157.2 L 118.0 157.2 L 288.0 157.2 L 288.0 250.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 118.0 157.2 L 118.0 157.2 L 288.0 157.2 L 288.0 250.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="380.0" y="330.0" width="180.0" height="70.0" rx="4" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="382.0" y="348.0" width="176.0" height="50.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0"/>
+<rect x="442.0" y="210.0" width="56.0" height="160.0" rx="4" fill="#bfdbfe" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="444.0" y="212.0" width="52.0" height="70.0" rx="0" fill="#ffffff" stroke="none" stroke-width="0"/>
+<rect x="436.0" y="366.0" width="68.0" height="8.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="1.5"/>
+<text x="470.0" y="246.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C<tspan dy="5.4" font-size="11.9">2</tspan><tspan dy="-5.4">H</tspan><tspan dy="5.4" font-size="11.9">4</tspan><tspan dy="-5.4"></tspan></text>
+<text x="470.0" y="420.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">collected over water</text>
+<path d="M 312.0 250.0 L 332.0 250.0 L 400.0 250.0 L 400.0 360.0 L 470.0 360.0 L 470.0 300.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 312.0 250.0 L 332.0 250.0 L 400.0 250.0 L 400.0 360.0 L 470.0 360.0 L 470.0 300.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="400.0" y="28.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">C₂H₅OH → C₂H₄ + H₂O (conc. H₂SO₄, 170 °C)</text>
+</svg>
