@@ -5330,6 +5330,84 @@
       "title": "The 1991 Constitution and the return to multi-party democracy",
       "est_minutes": 6,
       "sort_order": 2
+    },
+    {
+      "file": "government-sl-parties-1.md",
+      "subject": "Government",
+      "topic": "major-political-parties-in-sierra-leone",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "The SLPP and the APC: formation, aims and record",
+      "est_minutes": 6,
+      "sort_order": 1
+    },
+    {
+      "file": "government-sl-parties-2.md",
+      "subject": "Government",
+      "topic": "major-political-parties-in-sierra-leone",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Other parties and the party system in Sierra Leone",
+      "est_minutes": 6,
+      "sort_order": 2
+    },
+    {
+      "file": "government-military-1.md",
+      "subject": "Government",
+      "topic": "military-regimes-and-the-civil-war-in-sierra-leone",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Military rule in Sierra Leone: NRC, NPRC and AFRC",
+      "est_minutes": 7,
+      "sort_order": 1
+    },
+    {
+      "file": "government-military-2.md",
+      "subject": "Government",
+      "topic": "military-regimes-and-the-civil-war-in-sierra-leone",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "The civil war, 1991 to 2002: causes, course and peace-building",
+      "est_minutes": 7,
+      "sort_order": 2
+    },
+    {
+      "file": "government-chiefdoms-1.md",
+      "subject": "Government",
+      "topic": "traditional-authority-and-local-government-in-sierra-leone",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Paramount chiefs and chiefdom administration",
+      "est_minutes": 6,
+      "sort_order": 1
+    },
+    {
+      "file": "government-chiefdoms-2.md",
+      "subject": "Government",
+      "topic": "traditional-authority-and-local-government-in-sierra-leone",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Local councils and decentralisation in Sierra Leone",
+      "est_minutes": 6,
+      "sort_order": 2
     }
   ]
 }
