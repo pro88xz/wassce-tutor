@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Hire purchase and credit sale compared</title>
+<desc id="d">Under hire purchase the buyer pays a deposit and instalments, and ownership passes only when the last instalment is paid; until then the seller can repossess the goods. Under a credit sale, ownership passes to the buyer at once, and the instalments are a debt.</desc>
+<defs></defs>
+<rect width="780" height="400" rx="20" fill="#f8fafc"/>
+<text x="120.0" y="68.0" font-size="19" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">Hire purchase</text>
+<line x1="120.0" y1="120.0" x2="700.0" y2="120.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="120.0" y1="112.0" x2="120.0" y2="128.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="216.7" y1="112.0" x2="216.7" y2="128.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="313.3" y1="112.0" x2="313.3" y2="128.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="410.0" y1="112.0" x2="410.0" y2="128.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="506.7" y1="112.0" x2="506.7" y2="128.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="603.3" y1="112.0" x2="603.3" y2="128.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="700.0" y1="112.0" x2="700.0" y2="128.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="120.0" y="138.0" width="580.0" height="34.0" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="410.0" y="155.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">seller still owns the goods: can repossess</text>
+<text x="120.0" y="98.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">deposit</text>
+<text x="700.0" y="98.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">last instalment</text>
+<circle cx="700.0" cy="120.0" r="8.0" fill="#15803d" stroke="#15803d" stroke-width="1"/>
+<text x="700.0" y="194.0" font-size="15" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">ownership passes here</text>
+<text x="120.0" y="238.0" font-size="19" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">Credit sale</text>
+<line x1="120.0" y1="290.0" x2="700.0" y2="290.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="120.0" y1="282.0" x2="120.0" y2="298.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="216.7" y1="282.0" x2="216.7" y2="298.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="313.3" y1="282.0" x2="313.3" y2="298.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="410.0" y1="282.0" x2="410.0" y2="298.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="506.7" y1="282.0" x2="506.7" y2="298.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="603.3" y1="282.0" x2="603.3" y2="298.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="700.0" y1="282.0" x2="700.0" y2="298.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="120.0" y="308.0" width="580.0" height="34.0" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="410.0" y="325.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">buyer owns the goods from the start</text>
+<text x="120.0" y="268.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">first payment</text>
+<text x="700.0" y="268.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">last instalment</text>
+<circle cx="120.0" cy="290.0" r="8.0" fill="#15803d" stroke="#15803d" stroke-width="1"/>
+<text x="390.0" y="384.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">ticks = instalments over time</text>
+</svg>

@@ -683,6 +683,95 @@ def redenomination():
     return s
 
 
+@fig
+def average_clause():
+    s = Svg(780, 420, "The average clause",
+            "A shop worth NLe 100,000 is insured for only NLe 60,000. A fire causes a loss of NLe 40,000. Because the shop was "
+            "insured for 60% of its value, the insurer pays 60% of the loss: NLe 24,000. The owner bears the other NLe 16,000.")
+    x0, k, h = 230, 4.0, 46
+    rows = [("Value of shop", 100, "NLe 100,000", MUTED, F_GREY), ("Sum insured", 60, "NLe 60,000", BLUE, F_BLUE),
+            ("Loss from fire", 40, "NLe 40,000", RED, "#fee2e2"), ("Claim paid", 24, "NLe 24,000", GREEN, F_GREEN)]
+    for i, (name, v, lab, col, fill) in enumerate(rows):
+        y = 80 + i * 70
+        s.text(x0 - 14, y + h / 2, name, size=17, weight="bold", color=col, anchor="end")
+        s.rect(x0, y, v * k, h, fill=fill, stroke=col, width=2.5, rx=6)
+        s.text(x0 + v * k + 10, y + h / 2, lab, size=16, weight="bold", color=col, anchor="start")
+    s.text(390, 372, "claim = (sum insured ÷ value) × loss = (60,000 ÷ 100,000) × 40,000 = NLe 24,000", size=15,
+           weight="bold", color=INK)
+    s.text(390, 400, "the owner bears the remaining NLe 16,000 for under-insuring", size=14, color=MUTED, italic=True)
+    title(s, "Under-insurance: the insurer pays only its share of the loss", y=36)
+    return s
+
+
+@fig
+def hire_purchase():
+    s = Svg(780, 400, "Hire purchase and credit sale compared",
+            "Under hire purchase the buyer pays a deposit and instalments, and ownership passes only when the last instalment is "
+            "paid; until then the seller can repossess the goods. Under a credit sale, ownership passes to the buyer at once, "
+            "and the instalments are a debt.")
+    x0, x1 = 120, 700
+    for row, (y, name, col) in enumerate([(120, "Hire purchase", BLUE), (290, "Credit sale", GREEN)]):
+        s.text(x0, y - 52, name, size=19, weight="bold", color=col, anchor="start")
+        s.line(x0, y, x1, y, color=INK, width=2.5)
+        for i in range(7):
+            x = x0 + i * (x1 - x0) / 6
+            s.line(x, y - 8, x, y + 8, color=INK, width=2.5)
+        if row == 0:
+            s.rect(x0, y + 18, x1 - x0, 34, fill="#fee2e2", stroke=RED, width=2, rx=6)
+            s.text((x0 + x1) / 2, y + 35, "seller still owns the goods: can repossess", size=15, weight="bold", color=RED)
+            s.text(x0, y - 22, "deposit", size=14, color=MUTED)
+            s.text(x1, y - 22, "last instalment", size=14, color=MUTED)
+            s.dot(x1, y, r=8, color=GREEN)
+            s.text(x1, y + 74, "ownership passes here", size=15, weight="bold", color=GREEN, anchor="end")
+        else:
+            s.rect(x0, y + 18, x1 - x0, 34, fill=F_GREEN, stroke=GREEN, width=2, rx=6)
+            s.text((x0 + x1) / 2, y + 35, "buyer owns the goods from the start", size=15, weight="bold", color=GREEN)
+            s.text(x0, y - 22, "first payment", size=14, color=MUTED)
+            s.text(x1, y - 22, "last instalment", size=14, color=MUTED)
+            s.dot(x0, y, r=8, color=GREEN)
+    s.text(390, 384, "ticks = instalments over time", size=14, color=MUTED, italic=True)
+    return s
+
+
+@fig
+def consumer_protection():
+    s = Svg(760, 500, "Who protects the consumer",
+            "Consumers are protected by government (laws, agencies and courts), consumer associations, producers' self-regulation, "
+            "the media, and consumers themselves.")
+    c = box(s, 380, 255, 200, 70, ["The", "consumer"], INK, F_GREY, size=19, bold_first=False)
+    items = [(380, 78, "Government", "laws, agencies, courts", BLUE, F_BLUE),
+             (130, 200, "Consumer", "associations", GREEN, F_GREEN),
+             (630, 200, "Producers", "self-regulation, codes", ORANGE, F_AMBER),
+             (175, 420, "The media", "exposes bad practice", PURPLE, F_PURPLE),
+             (585, 420, "Consumers", "themselves: care, receipts", TEAL, F_TEAL)]
+    for x, y, a, b, col, fill in items:
+        bx = box(s, x, y, 228, 74, [a, b], col, fill, size=17)
+        link(s, bx, c, color=col)
+    return s
+
+
+@fig
+def ownership_spectrum():
+    s = Svg(780, 420, "Public and private ownership",
+            "Nationalisation moves a business from private to government ownership; privatisation moves it from government to "
+            "private owners. Commercialisation keeps it in government ownership but runs it on commercial lines for profit. "
+            "Indigenisation transfers ownership from foreigners to citizens.")
+    pub = box(s, 120, 130, 210, 84, ["Public sector", "owned by government"], BLUE, F_BLUE, size=17)
+    pri = box(s, 660, 130, 210, 84, ["Private sector", "owned by individuals"], GREEN, F_GREEN, size=17)
+    s.arrow(548, 100, 232, 100, color=BLUE, width=3)
+    s.label(390, 100, "nationalisation", size=16, weight="bold", color=BLUE)
+    s.arrow(232, 160, 548, 160, color=GREEN, width=3)
+    s.label(390, 160, "privatisation", size=16, weight="bold", color=GREEN)
+    box(s, 140, 262, 236, 70, ["Commercialisation", "state-owned, run for profit"], ORANGE, F_AMBER, size=16)
+    s.line(130, 172, 130, 227, color=ORANGE, width=2.5, dash="6 5")
+    f = box(s, 470, 300, 170, 64, ["Foreign", "owners"], MUTED, F_GREY, size=16)
+    c = box(s, 690, 300, 150, 64, ["Citizens"], GREEN, F_GREEN, size=17)
+    link(s, f, c, color=PURPLE)
+    s.text(580, 360, "indigenisation", size=16, weight="bold", color=PURPLE)
+    title(s, "Moving businesses between owners", y=36)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:

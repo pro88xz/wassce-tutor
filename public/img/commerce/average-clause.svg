@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The average clause</title>
+<desc id="d">A shop worth NLe 100,000 is insured for only NLe 60,000. A fire causes a loss of NLe 40,000. Because the shop was insured for 60% of its value, the insurer pays 60% of the loss: NLe 24,000. The owner bears the other NLe 16,000.</desc>
+<defs></defs>
+<rect width="780" height="420" rx="20" fill="#f8fafc"/>
+<text x="216.0" y="103.0" font-size="17" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="bold">Value of shop</text>
+<rect x="230.0" y="80.0" width="400.0" height="46.0" rx="6" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="640.0" y="103.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="bold">NLe 100,000</text>
+<text x="216.0" y="173.0" font-size="17" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">Sum insured</text>
+<rect x="230.0" y="150.0" width="240.0" height="46.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="480.0" y="173.0" font-size="16" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">NLe 60,000</text>
+<text x="216.0" y="243.0" font-size="17" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">Loss from fire</text>
+<rect x="230.0" y="220.0" width="160.0" height="46.0" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="400.0" y="243.0" font-size="16" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">NLe 40,000</text>
+<text x="216.0" y="313.0" font-size="17" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">Claim paid</text>
+<rect x="230.0" y="290.0" width="96.0" height="46.0" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="336.0" y="313.0" font-size="16" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">NLe 24,000</text>
+<text x="390.0" y="372.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">claim = (sum insured ÷ value) × loss = (60,000 ÷ 100,000) × 40,000 = NLe 24,000</text>
+<text x="390.0" y="400.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">the owner bears the remaining NLe 16,000 for under-insuring</text>
+<text x="390.0" y="36.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Under-insurance: the insurer pays only its share of the loss</text>
+</svg>
