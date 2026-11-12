@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A three-set Venn diagram with eight regions</title>
+<desc id="d">Three overlapping circles A, B and C inside the universal set divide it into eight regions: A only, B only, C only, A and B only, A and C only, B and C only, all three, and none. Fill the centre first, then the two-set overlaps, then the single-set regions.</desc>
+<defs></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Three sets: fill from the centre outwards</text>
+<rect x="110.0" y="62.0" width="580.0" height="400.0" rx="8" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="130.0" y="84.0" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">U</text>
+<circle cx="330.0" cy="215.0" r="110.0" fill="none" stroke="#2563eb" stroke-width="3"/>
+<text x="245.0" y="120.0" font-size="21" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<circle cx="470.0" cy="215.0" r="110.0" fill="none" stroke="#15803d" stroke-width="3"/>
+<text x="555.0" y="120.0" font-size="21" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B</text>
+<circle cx="400.0" cy="330.0" r="110.0" fill="none" stroke="#7c3aed" stroke-width="3"/>
+<text x="282.0" y="410.0" font-size="21" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C</text>
+<text x="285.0" y="200.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A only</text>
+<text x="515.0" y="200.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B only</text>
+<text x="400.0" y="380.0" font-size="14" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C only</text>
+<text x="400.0" y="175.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A∩B only</text>
+<text x="335.0" y="300.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A∩C only</text>
+<text x="465.0" y="300.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B∩C only</text>
+<text x="400.0" y="250.0" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">all 3</text>
+<text x="630.0" y="420.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">none</text>
+<text x="400.0" y="486.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Order: all three → each pair only → each single only → none</text>
+</svg>

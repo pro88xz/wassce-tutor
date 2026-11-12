@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">An arithmetic progression and a geometric progression compared</title>
+<desc id="d">The arithmetic progression 3, 7, 11, 15, 19 increases by a common difference of 4 each time, so its bars rise in equal steps. The geometric progression 1, 2, 4, 8, 16 is multiplied by a common ratio of 2 each time, so its bars grow faster and faster.</desc>
+<defs></defs>
+<rect width="800" height="440" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Add the same each time, or multiply by the same</text>
+<rect x="90.0" y="321.0" width="40.0" height="39.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="110.0" y="307.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3</text>
+<rect x="150.0" y="269.0" width="40.0" height="91.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="170.0" y="255.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7</text>
+<rect x="210.0" y="217.0" width="40.0" height="143.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="230.0" y="203.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">11</text>
+<rect x="270.0" y="165.0" width="40.0" height="195.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="290.0" y="151.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">15</text>
+<rect x="330.0" y="113.0" width="40.0" height="247.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="350.0" y="99.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">19</text>
+<rect x="470.0" y="345.0" width="40.0" height="15.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="490.0" y="331.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<rect x="530.0" y="330.0" width="40.0" height="30.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="550.0" y="316.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2</text>
+<rect x="590.0" y="300.0" width="40.0" height="60.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="610.0" y="286.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4</text>
+<rect x="650.0" y="240.0" width="40.0" height="120.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="670.0" y="226.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">8</text>
+<rect x="710.0" y="120.0" width="40.0" height="240.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="730.0" y="106.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">16</text>
+<line x1="70.0" y1="360.0" x2="380.0" y2="360.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<line x1="450.0" y1="360.0" x2="760.0" y2="360.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="225.0" y="392.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">AP: common difference d = 4</text>
+<text x="605.0" y="392.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">GP: common ratio r = 2</text>
+<text x="225.0" y="418.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Tₙ = a + (n − 1)d</text>
+<text x="605.0" y="418.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Tₙ = arⁿ⁻¹</text>
+</svg>

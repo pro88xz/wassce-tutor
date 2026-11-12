@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Arithmetic modulo 12 on a clock and modulo 7 on the days of the week</title>
+<desc id="d">On a 12-hour clock, 9 o&#x27;clock plus 5 hours is 2 o&#x27;clock, because 14 is 2 more than 12: 14 ≡ 2 (mod 12). The days of the week work modulo 7: 10 days after Monday is Thursday, because 10 = 7 + 3.</desc>
+<defs><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="800" height="420" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Counting that wraps around</text>
+<circle cx="215.0" cy="225.0" r="135.0" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+<text x="215.0" y="117.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">12</text>
+<text x="269.5" y="131.6" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="309.4" y="171.5" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2</text>
+<text x="324.0" y="226.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3</text>
+<text x="309.4" y="280.5" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4</text>
+<text x="269.5" y="320.4" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5</text>
+<text x="215.0" y="335.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6</text>
+<text x="160.5" y="320.4" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7</text>
+<text x="120.6" y="280.5" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">8</text>
+<text x="106.0" y="226.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">9</text>
+<text x="120.6" y="171.5" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">10</text>
+<text x="160.5" y="131.6" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">11</text>
+<path d="M 132.0 225.0 A 83 83 0 0 1 286.9 183.5" stroke="#dc2626" stroke-width="3.5" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="215.0" y="225.0" font-size="17" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+5 h</text>
+<text x="215.0" y="390.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">9 + 5 = 14 ≡ 2 (mod 12)</text>
+<circle cx="590.0" cy="105.0" r="28.0" fill="#dcfce7" stroke="#15803d" stroke-width="2.2"/>
+<text x="590.0" y="106.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Mon</text>
+<circle cx="683.8" cy="150.2" r="28.0" fill="#ffffff" stroke="#0f172a" stroke-width="2.2"/>
+<text x="683.8" y="151.2" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Tue</text>
+<circle cx="707.0" cy="251.7" r="28.0" fill="#ffffff" stroke="#0f172a" stroke-width="2.2"/>
+<text x="707.0" y="252.7" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Wed</text>
+<circle cx="642.1" cy="333.1" r="28.0" fill="#dcfce7" stroke="#15803d" stroke-width="2.2"/>
+<text x="642.1" y="334.1" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Thu</text>
+<circle cx="537.9" cy="333.1" r="28.0" fill="#ffffff" stroke="#0f172a" stroke-width="2.2"/>
+<text x="537.9" y="334.1" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Fri</text>
+<circle cx="473.0" cy="251.7" r="28.0" fill="#ffffff" stroke="#0f172a" stroke-width="2.2"/>
+<text x="473.0" y="252.7" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sat</text>
+<circle cx="496.2" cy="150.2" r="28.0" fill="#ffffff" stroke="#0f172a" stroke-width="2.2"/>
+<text x="496.2" y="151.2" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sun</text>
+<text x="590.0" y="217.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">10 days after</text>
+<text x="590.0" y="239.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Monday</text>
+<text x="590.0" y="406.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">10 ≡ 3 (mod 7): Thursday</text>
+</svg>

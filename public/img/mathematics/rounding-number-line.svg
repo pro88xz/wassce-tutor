@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Rounding 3.47 to one decimal place</title>
+<desc id="d">On a number line from 3.4 to 3.5, the number 3.47 lies closer to 3.5 than to 3.4, because it is past the halfway mark 3.45. So 3.47 rounded to one decimal place is 3.5.</desc>
+<defs><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="800" height="300" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Round to the nearer mark</text>
+<line x1="90.0" y1="150.0" x2="710.0" y2="150.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="120.0" y1="132.0" x2="120.0" y2="168.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<line x1="176.0" y1="140.0" x2="176.0" y2="160.0" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+<line x1="232.0" y1="140.0" x2="232.0" y2="160.0" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+<line x1="288.0" y1="140.0" x2="288.0" y2="160.0" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+<line x1="344.0" y1="140.0" x2="344.0" y2="160.0" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+<line x1="400.0" y1="132.0" x2="400.0" y2="168.0" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+<line x1="456.0" y1="140.0" x2="456.0" y2="160.0" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+<line x1="512.0" y1="140.0" x2="512.0" y2="160.0" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+<line x1="568.0" y1="140.0" x2="568.0" y2="160.0" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+<line x1="624.0" y1="140.0" x2="624.0" y2="160.0" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+<line x1="680.0" y1="132.0" x2="680.0" y2="168.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="120.0" y="190.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3.4</text>
+<text x="400.0" y="190.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3.45</text>
+<text x="680.0" y="190.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3.5</text>
+<circle cx="512.0" cy="150.0" r="9.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="512.0" y="112.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3.47</text>
+<line x1="524.0" y1="128.0" x2="674.0" y2="128.0" stroke="#dc2626" stroke-width="2.6" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="400.0" y="228.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">halfway</text>
+<text x="400.0" y="272.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">3.47 is past halfway, so it rounds up to 3.5 (1 d.p.)</text>
+</svg>

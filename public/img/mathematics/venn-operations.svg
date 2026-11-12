@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Union, intersection and complement on Venn diagrams</title>
+<desc id="d">Three Venn diagrams of sets A and B inside a universal set U. The first shades the intersection A ∩ B, the overlap. The second shades the union A ∪ B, everything in A or B or both. The third shades the complement A′, everything in U that is not in A.</desc>
+<defs></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Shading set operations</text>
+<rect x="20.0" y="80.0" width="240.0" height="230.0" rx="6" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<text x="36.0" y="98.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">U</text>
+<path d="M 140 148.2 A 62 62 0 0 1 140 251.8 A 62 62 0 0 1 140 148.2 Z" stroke="none" stroke-width="0" fill="#fef3c7" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="106.0" cy="200.0" r="62.0" fill="none" stroke="#2563eb" stroke-width="3"/>
+<circle cx="174.0" cy="200.0" r="62.0" fill="none" stroke="#15803d" stroke-width="3"/>
+<text x="76.0" y="144.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<text x="204.0" y="144.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B</text>
+<text x="140.0" y="345.0" font-size="22" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A ∩ B</text>
+<text x="140.0" y="375.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">in both</text>
+<rect x="280.0" y="80.0" width="240.0" height="230.0" rx="6" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<text x="296.0" y="98.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">U</text>
+<circle cx="366.0" cy="200.0" r="62.0" fill="#fef3c7" stroke="none" stroke-width="0"/>
+<circle cx="434.0" cy="200.0" r="62.0" fill="#fef3c7" stroke="none" stroke-width="0"/>
+<circle cx="366.0" cy="200.0" r="62.0" fill="none" stroke="#2563eb" stroke-width="3"/>
+<circle cx="434.0" cy="200.0" r="62.0" fill="none" stroke="#15803d" stroke-width="3"/>
+<text x="336.0" y="144.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<text x="464.0" y="144.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B</text>
+<text x="400.0" y="345.0" font-size="22" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A ∪ B</text>
+<text x="400.0" y="375.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">in A or B or both</text>
+<rect x="540.0" y="80.0" width="240.0" height="230.0" rx="6" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<text x="556.0" y="98.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">U</text>
+<rect x="540.0" y="80.0" width="240.0" height="230.0" rx="6" fill="#fef3c7" stroke="#0f172a" stroke-width="2"/>
+<text x="556.0" y="98.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">U</text>
+<circle cx="626.0" cy="200.0" r="62.0" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="694.0" cy="200.0" r="62.0" fill="none" stroke="#15803d" stroke-width="3"/>
+<text x="596.0" y="144.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<text x="724.0" y="144.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B</text>
+<text x="660.0" y="345.0" font-size="22" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A′</text>
+<text x="660.0" y="375.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">not in A</text>
+<text x="400.0" y="430.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">n(A ∪ B) = n(A) + n(B) − n(A ∩ B)</text>
+</svg>
