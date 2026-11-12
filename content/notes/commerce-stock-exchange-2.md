@@ -82,6 +82,10 @@ Profit **before** debenture interest is NLe 56,000. The directors keep NLe 12,00
 5. Ordinary dividend per share $= 30000 \div 200000 = $ **NLe 0.15** (a 15% dividend on a NLe 1 share)
 :::
 
+![A bar of NLe 56,000 profit divided in order: debenture interest NLe 6,000, preference dividend NLe 8,000, reserves NLe 12,000 and ordinary dividend NLe 30,000](https://wasscetutor.com/img/commerce/profit-distribution.svg)
+
+*Figure 1. How the profit in the example is shared: creditors first, ordinary shareholders last. WASSCE Tutor diagram.*
+
 **Dividend yield** compares the dividend with the **market price** an investor pays:
 
 $$\text{dividend yield} = \dfrac{\text{dividend per share}}{\text{market price per share}} \times 100$$

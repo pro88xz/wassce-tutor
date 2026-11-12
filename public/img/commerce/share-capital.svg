@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Authorised, issued, called-up and paid-up capital</title>
+<desc id="d">A company is authorised to issue NLe 1,000,000 of shares. It issues NLe 600,000, calls up NLe 450,000 and shareholders have paid NLe 420,000. Unissued capital is NLe 400,000, uncalled capital NLe 150,000 and calls in arrear NLe 30,000.</desc>
+<defs></defs>
+<rect width="780" height="420" rx="20" fill="#f8fafc"/>
+<text x="186.0" y="102.0" font-size="17" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="bold">Authorised</text>
+<rect x="200.0" y="80.0" width="480.0" height="44.0" rx="6" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="210.0" y="102.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="bold">NLe 1,000,000</text>
+<text x="186.0" y="168.0" font-size="17" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">Issued</text>
+<rect x="200.0" y="146.0" width="288.0" height="44.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="210.0" y="168.0" font-size="15" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">NLe 600,000</text>
+<text x="186.0" y="234.0" font-size="17" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">Called-up</text>
+<rect x="200.0" y="212.0" width="216.0" height="44.0" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="210.0" y="234.0" font-size="15" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">NLe 450,000</text>
+<text x="186.0" y="300.0" font-size="17" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">Paid-up</text>
+<rect x="200.0" y="278.0" width="201.6" height="44.0" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="210.0" y="300.0" font-size="15" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">NLe 420,000</text>
+<rect x="488.0" y="146.0" width="192.0" height="44.0" rx="6" fill="#ffffff" stroke="#475569" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="584.0" y="168.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">unissued 400,000</text>
+<rect x="416.0" y="212.0" width="72.0" height="44.0" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="452.0" y="234.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">uncalled 150,000</text>
+<rect x="401.6" y="278.0" width="14.4" height="44.0" rx="6" fill="#ffffff" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="426.0" y="300.0" font-size="14" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">calls in arrear 30,000</text>
+<text x="390.0" y="390.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">each bar is part of the one above it</text>
+<text x="390.0" y="36.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Share capital of a company (NLe)</text>
+</svg>

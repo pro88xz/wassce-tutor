@@ -48,6 +48,10 @@ By the end of this lesson you should be able to:
 - Uncalled capital $= 600000 - 450000 = $ NLe 150,000
 :::
 
+![Bars for authorised capital NLe 1,000,000, issued NLe 600,000, called-up NLe 450,000 and paid-up NLe 420,000, with unissued NLe 400,000, uncalled NLe 150,000 and calls in arrear NLe 30,000 shown as dashed gaps](https://wasscetutor.com/img/commerce/share-capital.svg)
+
+*Figure 1. Each kind of share capital is part of the one above it. WASSCE Tutor diagram.*
+
 ## Sources of business capital
 
 ### Internal sources (from within the business)

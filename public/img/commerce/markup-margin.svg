@@ -9,7 +9,7 @@
 <text x="565.0" y="180.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">25</text>
 <text x="565.0" y="134.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">profit</text>
 <line x1="70.0" y1="236.0" x2="620.0" y2="236.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
-<polygon points="67.3,232.4 79.0,240.3 71.5,245.9" fill="#0f172a"/>
+<polygon points="65.5,236.0 78.8,231.3 78.8,240.7" fill="#0f172a"/>
 <polygon points="624.5,236.0 611.2,240.7 611.2,231.3" fill="#0f172a"/>
 <rect x="245.9" y="223.0" width="198.2" height="26.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
 <text x="345.0" y="236.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">selling price NLe 125</text>

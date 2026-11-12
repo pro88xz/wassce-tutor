@@ -126,7 +126,7 @@ def title(s: Svg, t, y=30, size=19):
 def hbracket(s, x1, x2, y, label, color=RED, size=15, above=True):
     """A double-headed horizontal arrow with a label."""
     s.line(x1, y, x2, y, color=color, width=2.5)
-    s.head(x1, y, 180, color=color, size=10)
+    s.head(x1, y, math.pi, color=color, size=10)
     s.head(x2, y, 0, color=color, size=10)
     s.label((x1 + x2) / 2, y + (-16 if above else 18), label, size=size, color=color, weight="bold")
 
@@ -824,8 +824,8 @@ def total_cost_curves():
     p.text(6.3, 100, "FC", dx=10, dy=4, size=17, weight="bold", color=GREEN, anchor="start")
     x = p.X(5)
     s.line(x, p.Y(170), x, p.Y(270), color=GREEN, width=2.5)
-    s.head(x, p.Y(170), 270, color=GREEN, size=10)
-    s.head(x, p.Y(270), 90, color=GREEN, size=10)
+    s.head(x, p.Y(170), math.pi / 2, color=GREEN, size=10)
+    s.head(x, p.Y(270), -math.pi / 2, color=GREEN, size=10)
     s.text(x - 8, p.Y(220), "FC = 100", size=14, color=GREEN, weight="bold", anchor="end")
     title(s, "TC = FC + VC", y=32)
     return s

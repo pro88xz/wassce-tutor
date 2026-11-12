@@ -33,7 +33,7 @@
 <text x="450.0" y="226.2" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">W</text>
 <line x1="460.0" y1="186.6" x2="726.7" y2="186.6" stroke="#dc2626" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 6"/>
 <line x1="540.0" y1="164.6" x2="646.7" y2="164.6" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/>
-<polygon points="537.3,161.0 549.0,168.8 541.5,174.5" fill="#dc2626"/>
+<polygon points="535.5,164.6 548.8,159.9 548.8,169.3" fill="#dc2626"/>
 <polygon points="651.2,164.6 637.8,169.3 637.8,159.9" fill="#dc2626"/>
 <rect x="541.3" y="136.6" width="104.1" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
 <text x="593.3" y="148.6" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">unemployment</text>

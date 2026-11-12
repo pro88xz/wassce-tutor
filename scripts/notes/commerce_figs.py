@@ -283,7 +283,7 @@ def markup_margin():
     s.text(x0 + 112.5 * k, y + 30, "25", size=17, weight="bold", color=GREEN)
     s.text(x0 + 112.5 * k, y - 16, "profit", size=14, color=GREEN)
     s.line(x0, y + 86, x0 + 125 * k, y + 86, color=INK, width=2)
-    s.head(x0, y + 86, 180, size=10)
+    s.head(x0, y + 86, math.pi, size=10)
     s.head(x0 + 125 * k, y + 86, 0, size=10)
     s.label(x0 + 62.5 * k, y + 86, "selling price NLe 125", size=16, weight="bold")
     s.text(350, 280, "mark-up = 25 ÷ 100 × 100% = 25%   (profit on cost)", size=16, weight="bold", color=BLUE)
@@ -769,6 +769,139 @@ def ownership_spectrum():
     link(s, f, c, color=PURPLE)
     s.text(580, 360, "indigenisation", size=16, weight="bold", color=PURPLE)
     title(s, "Moving businesses between owners", y=36)
+    return s
+
+
+@fig
+def business_units():
+    s = Svg(760, 500, "Forms of business units",
+            "Business units are in the private sector (sole proprietorships, partnerships, private and public limited companies, "
+            "and cooperative societies) or the public sector (government departments, public corporations and local council enterprises).")
+    root = box(s, 380, 60, 240, 54, "Business units", INK, F_GREY, size=20)
+    cols = [(200, "Private sector", "owned by individuals; aim: profit", GREEN, F_GREEN,
+             ["Sole proprietorship", "Partnership", "Limited companies (Ltd, Plc)", "Cooperative societies"]),
+            (565, "Public sector", "owned by government; aim: service", BLUE, F_BLUE,
+             ["Government departments", "Public corporations", "Local council enterprises"])]
+    for x, head, sub, col, fill, items in cols:
+        h = box(s, x, 160, 300, 64, [head, sub], col, fill, size=18)
+        link(s, root, h, color=MUTED)
+        s.line(x - 130, 192, x - 130, 238 + (len(items) - 1) * 66, color=col, width=2.5)
+        for i, it in enumerate(items):
+            y = 238 + i * 66
+            s.arrow(x - 130, y, x - 112, y, color=col, width=2.5)
+            box(s, x + 20, y, 252, 50, it, col, "#ffffff", size=16, rx=10)
+    return s
+
+
+@fig
+def business_combinations():
+    s = Svg(780, 520, "Types of business combination",
+            "Stages in the rice trade run from rice farms to a rice mill, a wholesaler and retail shops. A rice mill joining a farm "
+            "is backward vertical integration; joining a wholesaler or shops is forward vertical integration; joining another rice "
+            "mill is horizontal integration; joining an unrelated firm such as a soap factory is lateral (conglomerate) integration.")
+    xs, ys = 300, [70, 190, 310, 430]
+    names = [("Rice farms", "raw materials"), ("Rice mill", "our firm"), ("Rice wholesaler", "distribution"),
+             ("Retail shops", "to consumers")]
+    boxes = []
+    for (a, b), y in zip(names, ys):
+        hi = a == "Rice mill"
+        boxes.append(box(s, xs, y, 210, 64, [a, b], BLUE if hi else MUTED, F_BLUE if hi else F_GREY, size=17))
+    for a, b in zip(boxes, boxes[1:]):
+        link(s, a, b, color=MUTED, width=2)
+    s.path("M 190 182 C 120 160, 120 90, 190 78", color=ORANGE, width=3, arrow="end")
+    s.text(96, 128, "backward", size=15, weight="bold", color=ORANGE)
+    s.text(96, 148, "vertical", size=15, weight="bold", color=ORANGE)
+    s.path("M 190 200 C 110 240, 110 400, 190 432", color=GREEN, width=3, arrow="end")
+    s.text(84, 318, "forward", size=15, weight="bold", color=GREEN)
+    s.text(84, 338, "vertical", size=15, weight="bold", color=GREEN)
+    other = box(s, 620, 190, 200, 64, ["Another rice mill", "same stage"], PURPLE, F_PURPLE, size=17)
+    s.arrow(411, 190, 514, 190, color=PURPLE, width=3)
+    s.text(462, 172, "horizontal", size=15, weight="bold", color=PURPLE)
+    soap = box(s, 620, 360, 200, 64, ["Soap factory", "unrelated industry"], TEAL, F_TEAL, size=17)
+    s.path("M 405 214 C 470 260, 540 300, 600 326", color=TEAL, width=3, dash="8 6", arrow="end")
+    s.text(560, 272, "lateral", size=15, weight="bold", color=TEAL)
+    return s
+
+
+@fig
+def share_capital():
+    s = Svg(780, 420, "Authorised, issued, called-up and paid-up capital",
+            "A company is authorised to issue NLe 1,000,000 of shares. It issues NLe 600,000, calls up NLe 450,000 and shareholders "
+            "have paid NLe 420,000. Unissued capital is NLe 400,000, uncalled capital NLe 150,000 and calls in arrear NLe 30,000.")
+    x0, k, h = 200, 0.00048, 44
+    rows = [("Authorised", 1_000_000, "NLe 1,000,000", MUTED, F_GREY), ("Issued", 600_000, "NLe 600,000", BLUE, F_BLUE),
+            ("Called-up", 450_000, "NLe 450,000", PURPLE, F_PURPLE), ("Paid-up", 420_000, "NLe 420,000", GREEN, F_GREEN)]
+    for i, (name, v, lab, col, fill) in enumerate(rows):
+        y = 80 + i * 66
+        s.text(x0 - 14, y + h / 2, name, size=17, weight="bold", color=col, anchor="end")
+        s.rect(x0, y, v * k, h, fill=fill, stroke=col, width=2.5, rx=6)
+        s.text(x0 + 10, y + h / 2, lab, size=15, weight="bold", color=col, anchor="start")
+    def missing(row, a, b, text, col, inside=True):
+        y = 80 + row * 66
+        s.rect(x0 + a * k, y, (b - a) * k, h, fill="#ffffff", stroke=col, width=2, rx=6, dash="6 5")
+        if inside:
+            s.text(x0 + (a + b) / 2 * k, y + h / 2, text, size=14, weight="bold", color=col)
+        else:
+            s.text(x0 + b * k + 10, y + h / 2, text, size=14, weight="bold", color=col, anchor="start")
+    missing(1, 600_000, 1_000_000, "unissued 400,000", MUTED)
+    missing(2, 450_000, 600_000, "uncalled 150,000", BLUE)
+    missing(3, 420_000, 450_000, "calls in arrear 30,000", RED, inside=False)
+    s.text(390, 390, "each bar is part of the one above it", size=14, color=MUTED, italic=True)
+    title(s, "Share capital of a company (NLe)", y=36)
+    return s
+
+
+@fig
+def balance_of_trade():
+    s = Svg(760, 440, "Visible and invisible trade balances",
+            "Visible exports are NLe 9,000 million and visible imports NLe 13,000 million, a visible deficit of NLe 4,000 million. "
+            "Invisible exports are NLe 1,500 million and invisible imports NLe 3,500 million, an invisible deficit of NLe 2,000 million.")
+    y0, k, bw = 360, 0.022, 90
+    s.line(60, y0, 720, y0, color=INK, width=2.5)
+    groups = [(200, "Visible trade (goods)", 9000, 13000, "deficit 4,000"),
+              (530, "Invisible trade (services)", 1500, 3500, "deficit 2,000")]
+    for cx, name, ex, im, gap in groups:
+        for dx, v, lab, col, fill in [(-55, ex, "exports", GREEN, F_GREEN), (55, im, "imports", RED, "#fee2e2")]:
+            x = cx + dx - bw / 2
+            s.rect(x, y0 - v * k, bw, v * k, fill=fill, stroke=col, width=2.5)
+            s.text(x + bw / 2, y0 - v * k - 14, f"{v:,}", size=15, weight="bold", color=col)
+            s.text(x + bw / 2, y0 + 20, lab, size=15, color=col)
+        s.text(cx, y0 + 50, name, size=16, weight="bold", color=INK)
+        top_ex, top_im = y0 - ex * k, y0 - im * k
+        s.line(cx - 10, top_ex, cx + 10 + bw, top_ex, color=MUTED, width=1.5, dash="4 4")
+        xr = cx + 55 + bw / 2
+        s.line(xr + 8, top_im, xr + 8, top_ex, color=RED, width=2)
+        s.head(xr + 8, top_im, -math.pi / 2, color=RED, size=8)
+        s.head(xr + 8, top_ex, math.pi / 2, color=RED, size=8)
+        s.text(xr + 16, (top_ex + top_im) / 2, gap, size=14, weight="bold", color=RED, anchor="start")
+    title(s, "Both balances are in deficit (NLe million)", y=36)
+    return s
+
+
+@fig
+def profit_distribution():
+    s = Svg(780, 340, "The order in which company profit is paid out",
+            "Out of a profit of NLe 56,000: first debenture interest of NLe 6,000, then the preference dividend of NLe 8,000, then "
+            "NLe 12,000 kept as reserves, leaving NLe 30,000 for the ordinary dividend.")
+    x0, k, y, h = 60, 660 / 56000, 140, 60
+    parts = [("1 Debenture interest", 6000, ORANGE, F_AMBER, -1), ("2 Preference dividend", 8000, PURPLE, F_PURPLE, 1),
+             ("3 Reserves", 12000, MUTED, F_GREY, -1), ("4 Ordinary dividend", 30000, GREEN, F_GREEN, 1)]
+    x = x0
+    for name, v, col, fill, side in parts:
+        w = v * k
+        s.rect(x, y, w, h, fill=fill, stroke=col, width=2.5)
+        cx = x + w / 2
+        if side < 0:
+            s.line(cx, y, cx, y - 22, color=col, width=2)
+            s.text(cx, y - 52, name, size=15, weight="bold", color=col)
+            s.text(cx, y - 32, f"NLe {v:,}", size=14, color=col)
+        else:
+            s.line(cx, y + h, cx, y + h + 22, color=col, width=2)
+            s.text(cx, y + h + 36, name, size=15, weight="bold", color=col)
+            s.text(cx, y + h + 56, f"NLe {v:,}", size=14, color=col)
+        x += w
+    s.text(390, 300, "profit NLe 56,000: creditors are paid first, ordinary shareholders last", size=15, color=MUTED, italic=True)
+    title(s, "Creditors first, owners last", y=30)
     return s
 
 

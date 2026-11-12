@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Types of business combination</title>
+<desc id="d">Stages in the rice trade run from rice farms to a rice mill, a wholesaler and retail shops. A rice mill joining a farm is backward vertical integration; joining a wholesaler or shops is forward vertical integration; joining another rice mill is horizontal integration; joining an unrelated firm such as a soap factory is lateral (conglomerate) integration.</desc>
+<defs><marker id="a0f766e" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f766e"/></marker><marker id="a0f766es" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f766e"/></marker><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7c3aed"/></marker><marker id="a7c3aeds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#7c3aed"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="780" height="520" rx="20" fill="#f8fafc"/>
+<rect x="195.0" y="38.0" width="210.0" height="64.0" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="300.0" y="58.5" font-size="17" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Rice farms</text>
+<text x="300.0" y="81.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">raw materials</text>
+<rect x="195.0" y="158.0" width="210.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="300.0" y="178.5" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Rice mill</text>
+<text x="300.0" y="201.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">our firm</text>
+<rect x="195.0" y="278.0" width="210.0" height="64.0" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="300.0" y="298.5" font-size="17" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Rice wholesaler</text>
+<text x="300.0" y="321.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">distribution</text>
+<rect x="195.0" y="398.0" width="210.0" height="64.0" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="300.0" y="418.5" font-size="17" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Retail shops</text>
+<text x="300.0" y="441.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">to consumers</text>
+<line x1="300.0" y1="108.0" x2="300.0" y2="152.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="300.0" y1="228.0" x2="300.0" y2="272.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="300.0" y1="348.0" x2="300.0" y2="392.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<path d="M 190 182 C 120 160, 120 90, 190 78" stroke="#ea580c" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<text x="96.0" y="128.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">backward</text>
+<text x="96.0" y="148.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">vertical</text>
+<path d="M 190 200 C 110 240, 110 400, 190 432" stroke="#15803d" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<text x="84.0" y="318.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">forward</text>
+<text x="84.0" y="338.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">vertical</text>
+<rect x="520.0" y="158.0" width="200.0" height="64.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="620.0" y="178.5" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Another rice mill</text>
+<text x="620.0" y="201.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">same stage</text>
+<line x1="411.0" y1="190.0" x2="514.0" y2="190.0" stroke="#7c3aed" stroke-width="3" stroke-linecap="round" marker-end="url(#a7c3aed)"/>
+<text x="462.0" y="172.0" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">horizontal</text>
+<rect x="520.0" y="328.0" width="200.0" height="64.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="620.0" y="348.5" font-size="17" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Soap factory</text>
+<text x="620.0" y="371.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">unrelated industry</text>
+<path d="M 405 214 C 470 260, 540 300, 600 326" stroke="#0f766e" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6" marker-end="url(#a0f766e)"/>
+<text x="560.0" y="272.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">lateral</text>
+</svg>

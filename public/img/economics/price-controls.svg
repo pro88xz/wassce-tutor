@@ -31,7 +31,7 @@
 <text x="195.4" y="223.8" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">E</text>
 <line x1="75.0" y1="271.2" x2="348.3" y2="271.2" stroke="#dc2626" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 6"/>
 <line x1="164.6" y1="293.2" x2="254.2" y2="293.2" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/>
-<polygon points="161.9,289.6 173.6,297.5 166.1,303.1" fill="#dc2626"/>
+<polygon points="160.1,293.2 173.4,288.5 173.4,297.9" fill="#dc2626"/>
 <polygon points="258.7,293.2 245.4,297.9 245.4,288.5" fill="#dc2626"/>
 <rect x="161.3" y="299.2" width="96.2" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
 <text x="209.4" y="311.2" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">shortage 40</text>
@@ -67,7 +67,7 @@
 <text x="580.4" y="223.8" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">E</text>
 <line x1="460.0" y1="192.4" x2="733.3" y2="192.4" stroke="#ea580c" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 6"/>
 <line x1="549.6" y1="170.4" x2="639.2" y2="170.4" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round"/>
-<polygon points="546.9,166.8 558.6,174.7 551.1,180.3" fill="#ea580c"/>
+<polygon points="545.1,170.4 558.4,165.7 558.4,175.1" fill="#ea580c"/>
 <polygon points="643.7,170.4 630.4,175.1 630.4,165.7" fill="#ea580c"/>
 <rect x="550.2" y="142.4" width="88.4" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
 <text x="594.4" y="154.4" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">surplus 40</text>

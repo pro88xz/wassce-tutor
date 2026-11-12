@@ -3249,7 +3249,7 @@
       "original_author": "WASSCE Tutor editorial team",
       "auto_sync": true,
       "title": "Shares, debentures, dividends and investors",
-      "est_minutes": 8,
+      "est_minutes": 9,
       "sort_order": 2
     },
     {
@@ -3280,6 +3280,84 @@
       "auto_sync": true,
       "title": "Agency, sale of goods and hire purchase",
       "est_minutes": 10,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-consumer-1.md",
+      "subject": "Commerce",
+      "topic": "consumer-protection",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Consumer protection: why consumers need it",
+      "est_minutes": 7,
+      "sort_order": 1
+    },
+    {
+      "file": "commerce-consumer-2.md",
+      "subject": "Commerce",
+      "topic": "consumer-protection",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "How consumers are protected",
+      "est_minutes": 8,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-government-1.md",
+      "subject": "Commerce",
+      "topic": "government-policies-and-business",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Government and business: regulation and support",
+      "est_minutes": 8,
+      "sort_order": 1
+    },
+    {
+      "file": "commerce-government-2.md",
+      "subject": "Commerce",
+      "topic": "government-policies-and-business",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Nationalisation, privatisation, commercialisation and indigenisation",
+      "est_minutes": 8,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-ecommerce-1.md",
+      "subject": "Commerce",
+      "topic": "e-commerce-and-modern-trends-in-commerce",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "E-commerce: meaning, types and how it works",
+      "est_minutes": 8,
+      "sort_order": 1
+    },
+    {
+      "file": "commerce-ecommerce-2.md",
+      "subject": "Commerce",
+      "topic": "e-commerce-and-modern-trends-in-commerce",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Modern trends in commerce",
+      "est_minutes": 9,
       "sort_order": 2
     },
     {

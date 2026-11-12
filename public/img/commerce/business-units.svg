@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Forms of business units</title>
+<desc id="d">Business units are in the private sector (sole proprietorships, partnerships, private and public limited companies, and cooperative societies) or the public sector (government departments, public corporations and local council enterprises).</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="760" height="500" rx="20" fill="#f8fafc"/>
+<rect x="260.0" y="33.0" width="240.0" height="54.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="380.0" y="60.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Business units</text>
+<rect x="50.0" y="128.0" width="300.0" height="64.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="200.0" y="148.0" font-size="18" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Private sector</text>
+<text x="200.0" y="172.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">owned by individuals; aim: profit</text>
+<line x1="380.0" y1="93.0" x2="200.0" y2="122.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="70.0" y1="192.0" x2="70.0" y2="436.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="70.0" y1="238.0" x2="88.0" y2="238.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="94.0" y="213.0" width="252.0" height="50.0" rx="10" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="220.0" y="238.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sole proprietorship</text>
+<line x1="70.0" y1="304.0" x2="88.0" y2="304.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="94.0" y="279.0" width="252.0" height="50.0" rx="10" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="220.0" y="304.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Partnership</text>
+<line x1="70.0" y1="370.0" x2="88.0" y2="370.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="94.0" y="345.0" width="252.0" height="50.0" rx="10" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="220.0" y="370.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Limited companies (Ltd, Plc)</text>
+<line x1="70.0" y1="436.0" x2="88.0" y2="436.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="94.0" y="411.0" width="252.0" height="50.0" rx="10" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="220.0" y="436.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cooperative societies</text>
+<rect x="415.0" y="128.0" width="300.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="565.0" y="148.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Public sector</text>
+<text x="565.0" y="172.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">owned by government; aim: service</text>
+<line x1="380.0" y1="93.0" x2="565.0" y2="122.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="435.0" y1="192.0" x2="435.0" y2="370.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="435.0" y1="238.0" x2="453.0" y2="238.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="459.0" y="213.0" width="252.0" height="50.0" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="585.0" y="238.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Government departments</text>
+<line x1="435.0" y1="304.0" x2="453.0" y2="304.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="459.0" y="279.0" width="252.0" height="50.0" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="585.0" y="304.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Public corporations</text>
+<line x1="435.0" y1="370.0" x2="453.0" y2="370.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="459.0" y="345.0" width="252.0" height="50.0" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="585.0" y="370.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Local council enterprises</text>
+</svg>

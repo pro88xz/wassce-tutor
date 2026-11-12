@@ -20,6 +20,10 @@ A **business unit** is an organisation set up to produce or distribute goods and
 | Sole proprietorships, partnerships, companies, cooperatives | Government departments, public corporations |
 | Main aim: profit | Main aim: service to the public |
 
+![Business units: the private sector (sole proprietorship, partnership, limited companies, cooperative societies) and the public sector (government departments, public corporations, local council enterprises)](https://wasscetutor.com/img/commerce/business-units.svg)
+
+*Figure 1. Forms of business units in the private and public sectors. WASSCE Tutor diagram.*
+
 ## The sole proprietorship (sole trader)
 
 :::callout{type=definition}

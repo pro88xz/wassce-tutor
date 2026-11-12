@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Visible and invisible trade balances</title>
+<desc id="d">Visible exports are NLe 9,000 million and visible imports NLe 13,000 million, a visible deficit of NLe 4,000 million. Invisible exports are NLe 1,500 million and invisible imports NLe 3,500 million, an invisible deficit of NLe 2,000 million.</desc>
+<defs></defs>
+<rect width="760" height="440" rx="20" fill="#f8fafc"/>
+<line x1="60.0" y1="360.0" x2="720.0" y2="360.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="100.0" y="162.0" width="90.0" height="198.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="145.0" y="148.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">9,000</text>
+<text x="145.0" y="380.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">exports</text>
+<rect x="210.0" y="74.0" width="90.0" height="286.0" rx="0" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="255.0" y="60.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">13,000</text>
+<text x="255.0" y="380.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">imports</text>
+<text x="200.0" y="410.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Visible trade (goods)</text>
+<line x1="190.0" y1="162.0" x2="300.0" y2="162.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+<line x1="308.0" y1="74.0" x2="308.0" y2="162.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+<polygon points="308.0,70.4 311.8,81.1 304.2,81.1" fill="#dc2626"/>
+<polygon points="308.0,165.6 304.2,154.9 311.8,154.9" fill="#dc2626"/>
+<text x="316.0" y="118.0" font-size="14" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">deficit 4,000</text>
+<rect x="430.0" y="327.0" width="90.0" height="33.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="475.0" y="313.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1,500</text>
+<text x="475.0" y="380.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">exports</text>
+<rect x="540.0" y="283.0" width="90.0" height="77.0" rx="0" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="585.0" y="269.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3,500</text>
+<text x="585.0" y="380.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">imports</text>
+<text x="530.0" y="410.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Invisible trade (services)</text>
+<line x1="520.0" y1="327.0" x2="630.0" y2="327.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+<line x1="638.0" y1="283.0" x2="638.0" y2="327.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+<polygon points="638.0,279.4 641.8,290.1 634.2,290.1" fill="#dc2626"/>
+<polygon points="638.0,330.6 634.2,319.9 641.8,319.9" fill="#dc2626"/>
+<text x="646.0" y="305.0" font-size="14" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">deficit 2,000</text>
+<text x="380.0" y="36.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Both balances are in deficit (NLe million)</text>
+</svg>

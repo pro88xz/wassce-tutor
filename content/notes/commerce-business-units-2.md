@@ -90,6 +90,10 @@ Firms join together to grow, cut costs or reduce competition.
 | **Holding company** | A company that owns enough shares to control other companies (subsidiaries) |
 | **Cartel** | Independent firms agree to fix prices or share markets |
 
+![A rice mill and the stages of the rice trade: joining rice farms is backward vertical integration, joining a wholesaler or retail shops is forward vertical integration, joining another rice mill is horizontal integration, and joining a soap factory is lateral integration](https://wasscetutor.com/img/commerce/business-combinations.svg)
+
+*Figure 1. Horizontal, vertical and lateral integration, seen from a rice mill. WASSCE Tutor diagram.*
+
 **Reasons:** economies of scale; reduced competition; secure supplies or outlets; diversification. **Dangers:** monopoly power, higher prices, job losses.
 
 :::callout{type=common-mistake}

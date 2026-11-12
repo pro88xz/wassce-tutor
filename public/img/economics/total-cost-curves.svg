@@ -35,8 +35,8 @@
 <text x="527.3" y="184.0" font-size="17" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">VC</text>
 <text x="548.6" y="300.7" font-size="17" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">FC</text>
 <line x1="446.1" y1="238.3" x2="446.1" y2="155.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round"/>
-<polygon points="450.5,237.5 438.2,244.5 436.5,235.3" fill="#15803d"/>
-<polygon points="444.0,159.0 445.8,145.0 454.2,149.2" fill="#15803d"/>
+<polygon points="446.1,242.8 441.4,229.5 450.8,229.5" fill="#15803d"/>
+<polygon points="446.1,150.5 450.8,163.8 441.4,163.8" fill="#15803d"/>
 <text x="438.1" y="196.7" font-size="14" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">FC = 100</text>
 <text x="330.0" y="32.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">TC = FC + VC</text>
 </svg>

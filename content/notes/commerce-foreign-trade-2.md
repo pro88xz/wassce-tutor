@@ -42,6 +42,10 @@ By the end of this lesson you should be able to:
 - **Balance on goods and services** $= -4000 + (-2000) = -6000$ (NLe million).
 :::
 
+![Bar chart: visible exports 9,000 and imports 13,000 give a deficit of 4,000; invisible exports 1,500 and imports 3,500 give a deficit of 2,000 (NLe million)](https://wasscetutor.com/img/commerce/balance-of-trade.svg)
+
+*Figure 1. The worked example as a chart: both balances are in deficit. WASSCE Tutor diagram.*
+
 **Ways to correct an unfavourable balance:** increase and diversify exports; reduce imports (tariffs, quotas, import substitution); encourage tourism and other invisible exports; attract foreign investment; borrow in the short term; devalue the currency (making exports cheaper and imports dearer).
 
 ## The terms of trade
