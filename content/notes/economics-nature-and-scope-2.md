@@ -1,3 +1,5 @@
+"The price of rice rose last month" and "the government should control the price of rice" sound alike, but only one can be checked against the facts. This lesson shows how economists divide the subject and how to tell fact from opinion, a distinction WASSCE tests every year.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -5,6 +7,7 @@ By the end of this lesson you should be able to:
 - tell microeconomics and macroeconomics apart, with examples
 - distinguish positive statements from normative statements
 - explain the main reasons for studying economics
+- explain how economics is related to other subjects
 
 ## Two branches: micro and macro
 
@@ -16,7 +19,7 @@ Economics is usually divided into two branches. The difference is the size of wh
 **Macroeconomics** studies the economy as a whole: total output, the general price level, unemployment, the money supply and the balance of payments.
 :::
 
-| Microeconomics asks… | Macroeconomics asks… |
+| Micro asks… | Macro asks… |
 |---|---|
 | How does a cassava farmer decide how much to plant? | What is the total output (national income) of Sierra Leone this year? |
 | Why does the price of palm oil rise in the dry season? | Why are prices in general rising (inflation)? |
@@ -24,6 +27,10 @@ Economics is usually divided into two branches. The difference is the size of wh
 | How does a family share its income between food and school fees? | How should the government finance its budget? |
 
 A simple way to remember: **micro** looks at the trees; **macro** looks at the whole forest.
+
+![Two boxes: microeconomics, the trees, covering one household's spending, one firm's costs and output, the price of palm oil and wages in one occupation; macroeconomics, the forest, covering national income, inflation, unemployment and the balance of payments](https://wasscetutor.com/img/economics/micro-macro.svg)
+
+*Figure 1. The two branches of economics. WASSCE Tutor diagram.*
 
 :::callout{type=common-mistake}
 Some students think microeconomics means "small businesses" and macroeconomics means "big companies". It does not. A very large firm is still a *micro* topic, because it is one unit. *Macro* is about totals and averages for the whole economy.
@@ -53,6 +60,19 @@ A **normative statement** says what *ought to be*. It depends on values and opin
 This is **positive**. It may be right or wrong, but it can be tested by looking at what firms actually do. Note that a positive statement does not have to be true: it only has to be *checkable*.
 :::
 
+## Economics and other subjects
+
+Economics borrows from, and contributes to, many other subjects:
+
+| Subject | The link with economics |
+|---|---|
+| **Mathematics and Statistics** | Economists use graphs, equations, averages and index numbers to measure and analyse prices, output and incomes |
+| **Government (Political Science)** | Economic policy (taxes, spending, price controls) is made by governments; politics shapes economic decisions |
+| **Geography** | The location of resources, climate and population affect what a country can produce and trade |
+| **History** | Past events, such as the colonial economy or the civil war, explain today's economic structure |
+| **Commerce and Accounting** | Trade, banking and business records are the practical side of economic activity |
+| **Sociology** | Customs, family size and social attitudes influence saving, spending and the supply of labour |
+
 ## Why study economics?
 
 Studying economics helps:
@@ -72,6 +92,7 @@ When the leone falls against the US dollar, imported goods such as rice, fuel an
 - **Microeconomics**: individual units (a consumer, a firm, one market).
 - **Macroeconomics**: the whole economy (national income, inflation, unemployment).
 - **Positive** statements can be tested against facts; **normative** statements are value judgements.
+- Economics is linked to mathematics, government, geography, history, commerce and sociology.
 - Economics helps individuals, businesses and governments make better choices.
 
 ## WASSCE examination focus

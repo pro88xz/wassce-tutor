@@ -1,3 +1,5 @@
+After a good rainy season, markets fill with rice and pepper at every price. A rise in fuel prices does the opposite. Factors other than price move the whole supply curve, and WASSCE expects you to show exactly how.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -27,6 +29,10 @@ A **change in quantity supplied** is caused **only by a change in the good's own
 A **change in supply** is caused by a change in **any other factor**. It is a **shift of the whole supply curve**: to the **right** for an increase, to the **left** for a decrease.
 :::
 
+![Two graphs: on the left, a rise in price from P1 to P2 moves sellers along one supply curve from A to B; on the right, the whole supply curve shifts right from S1 to S2 for an increase in supply, or left to S3 for a decrease](https://wasscetutor.com/img/economics/supply-shift.svg)
+
+*Figure 1. A movement along the supply curve (left) and a shift of the curve (right). WASSCE Tutor diagram.*
+
 :::callout{type=worked-example}
 **Which is it?**
 
@@ -55,6 +61,10 @@ In some cases the supply curve does not slope upwards:
 2. **Perishable goods.** Fresh fish or ripe tomatoes must be sold quickly. If the price falls late in the day, traders may sell **more**, not less, rather than let the goods spoil.
 3. **Fixed supply.** Goods such as land, or antiques, cannot be increased however high the price goes: the supply curve is **vertical**.
 4. **Expectations of falling prices.** Producers who expect prices to fall further may sell more now, even at a lower price.
+
+![Two graphs: on the left, the backward-bending supply curve of labour, where hours offered rise with the wage and then fall at high wages; on the right, a vertical supply curve for a good in fixed supply such as land](https://wasscetutor.com/img/economics/exceptional-supply.svg)
+
+*Figure 2. Two exceptional supply curves. WASSCE Tutor diagram.*
 
 :::callout{type=common-mistake}
 "Joint supply" and "joint demand" are different. **Joint supply**: one production process gives two goods (beef and hides). **Joint demand**: two goods are wanted together (cars and fuel).

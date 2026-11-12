@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Household sizes in a survey of 25 households</title>
+<desc id="d">Frequency of household sizes: 2 people, 3 households; 3 people, 5; 4 people, 8; 5 people, 6; 6 people, 2; 7 people, 1. The mode and the median are 4 people; the mean is about 4.1.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="640" height="440" rx="20" fill="#f8fafc"/>
+<line x1="90.0" y1="350.0" x2="576.0" y2="350.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="90.0" y1="350.0" x2="90.0" y2="72.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="576.0" y="386.0" font-size="16" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">Household size (people)</text>
+<text x="98.0" y="64.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Number of households</text>
+<line x1="84.0" y1="350.0" x2="90.0" y2="350.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="350.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">0</text>
+<line x1="84.0" y1="298.0" x2="90.0" y2="298.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="298.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">2</text>
+<line x1="84.0" y1="246.0" x2="90.0" y2="246.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="246.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">4</text>
+<line x1="84.0" y1="194.0" x2="90.0" y2="194.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="194.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">6</text>
+<line x1="84.0" y1="142.0" x2="90.0" y2="142.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="142.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">8</text>
+<line x1="84.0" y1="90.0" x2="90.0" y2="90.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="90.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">10</text>
+<rect x="137.0" y="272.0" width="40.3" height="78.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="157.1" y="260.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3</text>
+<text x="157.1" y="370.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2</text>
+<rect x="204.1" y="220.0" width="40.3" height="130.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="224.3" y="208.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5</text>
+<text x="224.3" y="370.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">3</text>
+<rect x="271.3" y="142.0" width="40.3" height="208.0" rx="0" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="291.4" y="130.0" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">8</text>
+<text x="291.4" y="370.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">4</text>
+<rect x="338.4" y="194.0" width="40.3" height="156.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="358.6" y="182.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6</text>
+<text x="358.6" y="370.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">5</text>
+<rect x="405.6" y="298.0" width="40.3" height="52.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="425.7" y="286.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2</text>
+<text x="425.7" y="370.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">6</text>
+<rect x="472.7" y="324.0" width="40.3" height="26.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="492.9" y="312.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="492.9" y="370.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">7</text>
+<line x1="296.8" y1="152.4" x2="296.8" y2="350.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="8 6"/>
+<line x1="296.8" y1="412.0" x2="296.8" y2="380.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="306.8" y="406.0" font-size="15" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">mean ≈ 4.1</text>
+<text x="261.4" y="108.0" font-size="15" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">mode = median = 4</text>
+<text x="320.0" y="34.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Mean = Σfx ÷ Σf = 102 ÷ 25</text>
+</svg>

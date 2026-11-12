@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Bar chart of rice sold by a shop in one week</title>
+<desc id="d">Bags of rice sold: Monday 12, Tuesday 8, Wednesday 10, Thursday 6, Friday 14.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="640" height="420" rx="20" fill="#f8fafc"/>
+<line x1="90.0" y1="350.0" x2="576.0" y2="350.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="90.0" y1="350.0" x2="90.0" y2="72.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="576.0" y="386.0" font-size="16" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">Day</text>
+<text x="98.0" y="64.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Bags sold</text>
+<text x="81.0" y="365.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">0</text>
+<line x1="84.0" y1="350.0" x2="90.0" y2="350.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="84.0" y1="285.0" x2="90.0" y2="285.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="285.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">4</text>
+<line x1="84.0" y1="220.0" x2="90.0" y2="220.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="220.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">8</text>
+<line x1="84.0" y1="155.0" x2="90.0" y2="155.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="155.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">12</text>
+<line x1="84.0" y1="90.0" x2="90.0" y2="90.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="90.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">16</text>
+<rect x="108.8" y="155.0" width="56.4" height="195.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="137.0" y="143.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">12</text>
+<text x="137.0" y="370.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Mon</text>
+<rect x="202.8" y="220.0" width="56.4" height="130.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="231.0" y="208.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">8</text>
+<text x="231.0" y="370.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Tue</text>
+<rect x="296.8" y="187.5" width="56.4" height="162.5" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="325.0" y="175.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">10</text>
+<text x="325.0" y="370.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Wed</text>
+<rect x="390.8" y="252.5" width="56.4" height="97.5" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="419.0" y="240.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6</text>
+<text x="419.0" y="370.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Thu</text>
+<rect x="484.8" y="122.5" width="56.4" height="227.5" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="513.0" y="110.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">14</text>
+<text x="513.0" y="370.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Fri</text>
+<text x="320.0" y="34.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Equal bar widths, equal gaps, value axis from zero</text>
+</svg>

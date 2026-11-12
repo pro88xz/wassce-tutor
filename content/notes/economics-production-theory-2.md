@@ -1,3 +1,5 @@
+A farmer adds workers to a fixed plot. The second worker helps a lot, the fifth much less, and the seventh just gets in the way. This pattern, the law of diminishing returns, explains why costs eventually rise and why land and capital limit what extra labour can achieve.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -29,7 +31,7 @@ When more of the variable factor is added to the fixed factor:
 :::callout{type=worked-example}
 A farmer has **one acre of land** (fixed) and adds workers one at a time. Output is measured in bags of groundnuts.
 
-| Workers ($L$) | Total product (TP) | Marginal product (MP) | Average product (AP) |
+| Workers ($L$) | TP | MP | AP |
 |---|---|---|---|
 | 1 | 10 | 10 | 10 |
 | 2 | 24 | 14 | 12 |
@@ -45,6 +47,10 @@ How the columns are worked out:
 - AP with 5 workers $= \dfrac{48}{5} = 9.6$
 - AP with 7 workers $= \dfrac{45}{7} \approx 6.4$
 :::
+
+![Two graphs from the table: total product rises to 48 with 5 and 6 workers and then falls; marginal product rises to 14 with the second worker then falls below zero, while average product peaks at 12 and then falls more slowly](https://wasscetutor.com/img/economics/product-curves.svg)
+
+*Figure 1. Total, average and marginal product. WASSCE Tutor diagram.*
 
 ## The law of diminishing returns
 

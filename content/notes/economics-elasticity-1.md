@@ -1,3 +1,5 @@
+If the price of salt doubled, would your family stop buying it? Probably not. If the price of one brand of biscuit doubled, you would switch at once. Elasticity measures that difference, and it decides who pays taxes, what firms charge and how farm incomes behave.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -14,7 +16,9 @@ The law of demand tells us that quantity demanded falls when price rises. It doe
 **Price elasticity of demand (PED)** measures the **degree of responsiveness** of the quantity demanded of a good to a change in its own price.
 :::
 
-$$\text{PED} = \dfrac{\%\ \text{change in quantity demanded}}{\%\ \text{change in price}}$$
+$$\text{PED} = \dfrac{\%\ \text{change in qty demanded}}{\%\ \text{change in price}}$$
+
+(*qty* is short for quantity.)
 
 An equivalent form, using the original price $P$ and original quantity $Q$:
 
@@ -53,6 +57,10 @@ Since 2 is **greater than 1**, demand is **elastic**: buyers respond strongly.
 | Exactly 1 | **Unitary** | Quantity changes by the same % as price | A rectangular hyperbola |
 | Greater than 1 | **Elastic** | Quantity changes by a larger % than price | Flat |
 | Infinity ($\infty$) | **Perfectly elastic** | Any rise in price makes quantity demanded fall to zero | Horizontal |
+
+![Five small demand graphs: a vertical line for perfectly inelastic demand, a steep line for inelastic, a curved rectangular hyperbola for unitary, a flat line for elastic and a horizontal line for perfectly elastic demand](https://wasscetutor.com/img/economics/ped-types.svg)
+
+*Figure 1. The five degrees of price elasticity of demand. WASSCE Tutor diagram.*
 
 :::callout{type=common-mistake}
 Do not judge elasticity from the **slope** of a curve drawn on a page. A curve can look steep or flat depending on the scale of the axes. Calculate the coefficient from the figures.

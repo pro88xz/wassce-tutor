@@ -1,3 +1,5 @@
+Sierra Leone's buses are run by private owners, its roads by the government, and its mines by private firms under government licence. Neither the market nor the state does everything. That is a mixed economy, the system almost every country uses today.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -13,6 +15,10 @@ A **mixed economy** is an economic system in which both the **private sector** a
 :::
 
 In practice, almost every country in the world today has a mixed economy. They differ only in the **balance** between the private and public sectors.
+
+![A horizontal scale from capitalism, where the market decides and ownership is private, through the mixed economy, where market and state share decisions, to socialism, where the state plans and owns resources; Sierra Leone is marked as a mixed economy](https://wasscetutor.com/img/economics/economic-systems.svg)
+
+*Figure 1. Economic systems on a scale from market to state. WASSCE Tutor diagram.*
 
 :::callout{type=local-example}
 Sierra Leone has a mixed economy. Private individuals and firms run most farms, shops, transport, mining operations and banks, while the government provides public services such as roads, state schools and government hospitals, and regulates businesses through laws and taxes.

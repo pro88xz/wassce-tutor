@@ -1,3 +1,5 @@
+There is only one supplier of piped water to your street and only a few mobile networks in the whole country. When sellers are few, they can influence the price. This lesson covers monopoly, monopolistic competition and oligopoly, and compares all four market structures.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -41,6 +43,10 @@ A monopolist has the same costs as the firm in the previous lesson (total cost 1
 - The monopolist produces **4 units** and charges **NLe 70**.
 - Maximum profit: $280 - 220 = \text{NLe } 60$.
 :::
+
+![Monopoly diagram: the downward-sloping demand curve AR, the steeper marginal revenue curve MR, and U-shaped MC and ATC curves; output Q is where MC equals MR, price P is read from the demand curve above it, and the shaded rectangle between P and average cost is abnormal profit](https://wasscetutor.com/img/economics/monopoly.svg)
+
+*Figure 1. Monopoly equilibrium: output where MC = MR, price from the demand curve. WASSCE Tutor diagram.*
 
 Because entry is blocked, the monopolist can keep **abnormal profit in the long run**. Compared with perfect competition, it usually produces **less** and charges a **higher price**.
 
@@ -90,6 +96,10 @@ Mobile phone services in Sierra Leone are supplied by a small number of large ne
 :::
 
 ## Comparing the four structures
+
+![Four boxes in a row: perfect competition with very many firms and identical products, monopolistic competition with many firms and differentiated products, oligopoly with a few large firms, and monopoly with one firm; an arrow underneath shows fewer firms and more control over price](https://wasscetutor.com/img/economics/market-structures-spectrum.svg)
+
+*Figure 2. The four market structures, from most to least competitive. WASSCE Tutor diagram.*
 
 | Feature | Perfect competition | Monopolistic competition | Oligopoly | Monopoly |
 |---|---|---|---|---|

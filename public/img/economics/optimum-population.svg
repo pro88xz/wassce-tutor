@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 430" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The optimum population</title>
+<desc id="d">Output per head rises as population grows towards the optimum, where it is highest, and falls beyond it. To the left of the optimum the country is underpopulated; to the right it is overpopulated.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="660" height="430" rx="20" fill="#f8fafc"/>
+<line x1="90.0" y1="350.0" x2="576.0" y2="350.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="90.0" y1="350.0" x2="90.0" y2="62.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="576.0" y="386.0" font-size="16" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">Size of population</text>
+<text x="98.0" y="54.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Output (income) per head</text>
+<line x1="325.0" y1="350.0" x2="325.0" y2="356.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="325.0" y="369.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">optimum</text>
+<polygon points="118.2,350.0 118.2,280.4 325.0,134.0 325.0,350.0" fill="#dcfce7" stroke="none" stroke-width="0" stroke-linejoin="round" opacity="0.35"/>
+<polygon points="325.0,350.0 325.0,134.0 531.8,280.4 531.8,350.0" fill="#fee2e2" stroke="none" stroke-width="0" stroke-linejoin="round" opacity="0.35"/>
+<path d="M 118.2 280.4 L 125.1 270.8 L 132.0 261.5 L 138.9 252.6 L 145.8 243.9 L 152.7 235.6 L 159.6 227.7 L 166.5 220.0 L 173.3 212.7 L 180.2 205.7 L 187.1 199.0 L 194.0 192.7 L 200.9 186.7 L 207.8 181.0 L 214.7 175.6 L 221.6 170.6 L 228.5 165.9 L 235.4 161.5 L 242.3 157.4 L 249.2 153.7 L 256.1 150.3 L 263.0 147.2 L 269.9 144.4 L 276.7 142.0 L 283.6 139.9 L 290.5 138.1 L 297.4 136.6 L 304.3 135.5 L 311.2 134.7 L 318.1 134.2 L 325.0 134.0 L 331.9 134.2 L 338.8 134.7 L 345.7 135.5 L 352.6 136.6 L 359.5 138.1 L 366.4 139.9 L 373.3 142.0 L 380.1 144.4 L 387.0 147.2 L 393.9 150.3 L 400.8 153.7 L 407.7 157.4 L 414.6 161.5 L 421.5 165.9 L 428.4 170.6 L 435.3 175.6 L 442.2 181.0 L 449.1 186.7 L 456.0 192.7 L 462.9 199.0 L 469.8 205.7 L 476.7 212.7 L 483.5 220.0 L 490.4 227.7 L 497.3 235.6 L 504.2 243.9 L 511.1 252.6 L 518.0 261.5 L 524.9 270.8 L 531.8 280.4" stroke="#2563eb" stroke-width="4.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="325.0" y1="134.0" x2="325.0" y2="350.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="6 5"/>
+<circle cx="325.0" cy="134.0" r="7.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="325.0" y="116.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">highest output per head</text>
+<text x="221.6" y="306.8" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">underpopulation</text>
+<text x="433.1" y="306.8" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">overpopulation</text>
+<text x="330.0" y="32.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Optimum population: output per head is greatest</text>
+</svg>

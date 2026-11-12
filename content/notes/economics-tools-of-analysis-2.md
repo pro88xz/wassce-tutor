@@ -1,8 +1,10 @@
+"The average trader earns NLe 120 a day" can hide a lot: one trader might earn NLe 40 and another NLe 400. Averages tell you the centre of a set of figures; measures of dispersion tell you how spread out they are. WASSCE tests both.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
 
-- calculate the mean, median and mode of a set of data
+- calculate the mean, median and mode of a set of data, including from a frequency table
 - state an advantage and a disadvantage of each
 - calculate the range and the standard deviation, and say what they show
 
@@ -63,6 +65,33 @@ NLe 15 appears twice; every other value appears once, so the mode is **NLe 15**.
 
 :::callout{type=common-mistake}
 Do not give the *frequency* as the mode. In the kiosk data the mode is **15** (the value), not **2** (the number of times it occurs).
+:::
+
+### Averages from a frequency table
+
+When data is given as a **frequency table**, each value $x$ occurs $f$ times. Then:
+
+$$\bar{x} = \dfrac{\sum fx}{\sum f}$$
+
+:::callout{type=worked-example}
+**A survey records the size of 25 households in a village near Bo.**
+
+| Household size ($x$) | 2 | 3 | 4 | 5 | 6 | 7 | Total |
+|---|---|---|---|---|---|---|---|
+| Number of households ($f$) | 3 | 5 | 8 | 6 | 2 | 1 | 25 |
+| $fx$ | 6 | 15 | 32 | 30 | 12 | 7 | 102 |
+
+- **Mean:** $\bar{x} = \dfrac{102}{25} = 4.08$, about 4 people.
+- **Mode:** the value with the highest frequency, **4** (8 households).
+- **Median:** the middle (13th) household. Counting up the frequencies, 3, 8, 16: the 13th household lies in the size-4 group, so the median is **4**.
+
+![Bar chart of household sizes from 2 to 7 people with frequencies 3, 5, 8, 6, 2 and 1; the size-4 bar is highlighted as the mode and median, and a dashed line marks the mean at about 4.1](https://wasscetutor.com/img/economics/tools-frequency.svg)
+
+*Figure 1. The household survey, with its mean, median and mode. WASSCE Tutor diagram.*
+:::
+
+:::callout{type=common-mistake}
+In a frequency table, do **not** divide $\sum fx$ by the number of different values (6 here). Divide by the **total frequency**, $\sum f = 25$.
 :::
 
 ## Measures of dispersion

@@ -1,3 +1,5 @@
+With limited pocket money, how do you decide how much to spend on bread and how much on phone credit? Economists answer with one simple rule, and the same reasoning explains why the demand curve slopes downwards and why most purchases feel like a bargain.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -81,6 +83,20 @@ Aminata is willing to pay up to NLe 50 for a pair of school sandals, because she
 :::
 
 On a demand curve, consumer surplus is the **area below the demand curve and above the price line**. When the price falls, consumer surplus **increases**.
+
+![Plantain demand curve with a market price of NLe 15: the triangle above the price line and below the demand curve is consumer surplus; the rectangle below the price line, up to 60 bunches, is the amount spent](https://wasscetutor.com/img/economics/consumer-surplus.svg)
+
+*Figure 1. Consumer surplus on the plantain demand curve. WASSCE Tutor diagram.*
+
+:::callout{type=worked-example}
+**Using Figure 1, find the consumer surplus when plantain sells at NLe 15.**
+
+At NLe 15, buyers purchase 60 bunches. The highest price anyone would pay is NLe 30 (where the demand curve meets the price axis). Consumer surplus is the triangle:
+
+$$	ext{CS} = 	frac{1}{2} 	imes 60 	imes (30 - 15) = 	ext{NLe } 450$$
+
+Buyers actually spend $15 	imes 60 = 	ext{NLe } 900$ but value what they buy at $900 + 450 = 	ext{NLe } 1350$.
+:::
 
 ## Limitations of utility analysis
 

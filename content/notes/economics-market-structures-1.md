@@ -1,3 +1,5 @@
+In a big pepper market, no single trader can raise her price: buyers simply walk to the next stall. That is the world of perfect competition, the benchmark against which every other market structure is judged.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -89,6 +91,10 @@ The firm should **keep producing** as long as **price covers average variable co
 ## Long-run equilibrium
 
 Abnormal profit in case A attracts **new firms** (entry is free). Industry supply increases, so the market price falls. This continues until price falls to **minimum ATC** (case B), where only normal profit is earned. Losses in case C drive some firms **out**, supply falls and price rises back to the same point.
+
+![Two graphs of a perfectly competitive firm: in the short run the price line AR = MR lies above average cost at the output where MC = MR, giving a shaded area of abnormal profit; in the long run the price line touches the lowest point of ATC, giving normal profit only](https://wasscetutor.com/img/economics/perfect-competition.svg)
+
+*Figure 1. The perfectly competitive firm: abnormal profit in the short run (left) and normal profit in the long run (right). WASSCE Tutor diagram.*
 
 In the long run, a perfectly competitive firm is in equilibrium where:
 

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Leakages and injections in the circular flow</title>
+<desc id="d">Saving, taxes and imports leak out of the circular flow of income; investment, government spending and exports are injected back into it. National income rises when injections exceed leakages and falls when leakages exceed injections.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="750" height="440" rx="20" fill="#f8fafc"/>
+<rect x="230.0" y="170.0" width="260.0" height="100.0" rx="50" fill="#fff7ed" stroke="#ea580c" stroke-width="3"/>
+<text x="360.0" y="210.0" font-size="20" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Circular flow</text>
+<text x="360.0" y="238.0" font-size="20" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">of income</text>
+<rect x="20.0" y="64.0" width="170.0" height="52.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="105.0" y="90.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Saving (S)</text>
+<line x1="230.0" y1="187.5" x2="194.0" y2="90.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<rect x="530.0" y="64.0" width="205.0" height="52.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="632.0" y="90.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Investment (I)</text>
+<line x1="526.0" y1="90.0" x2="490.0" y2="187.5" stroke="#15803d" stroke-width="3" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="20.0" y="194.0" width="170.0" height="52.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="105.0" y="220.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Taxes (T)</text>
+<line x1="230.0" y1="220.0" x2="194.0" y2="220.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<rect x="530.0" y="194.0" width="205.0" height="52.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="632.0" y="220.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Government spending (G)</text>
+<line x1="526.0" y1="220.0" x2="490.0" y2="220.0" stroke="#15803d" stroke-width="3" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="20.0" y="324.0" width="170.0" height="52.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="105.0" y="350.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Imports (M)</text>
+<line x1="230.0" y1="252.5" x2="194.0" y2="350.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<rect x="530.0" y="324.0" width="205.0" height="52.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="632.0" y="350.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Exports (X)</text>
+<line x1="526.0" y1="350.0" x2="490.0" y2="252.5" stroke="#15803d" stroke-width="3" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<text x="105.0" y="410.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">leakages (withdrawals)</text>
+<text x="632.0" y="410.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">injections</text>
+<text x="375.0" y="34.0" font-size="17" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Income grows when I + G + X is greater than S + T + M</text>
+</svg>

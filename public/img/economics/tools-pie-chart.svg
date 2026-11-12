@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Pie chart of a household&#x27;s monthly spending</title>
+<desc id="d">A household spends NLe 600: food 300 (180 degrees), rent 150 (90 degrees), transport 90 (54 degrees) and school fees 60 (36 degrees).</desc>
+<defs></defs>
+<rect width="640" height="420" rx="20" fill="#f8fafc"/>
+<path d="M 230 220 L 230.0 70.0 A 150 150 0 0 1 230.0 370.0 Z" stroke="#15803d" stroke-width="2.5" fill="#dcfce7" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="323.0" y="220.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">180°</text>
+<path d="M 230 220 L 230.0 370.0 A 150 150 0 0 1 80.0 220.0 Z" stroke="#2563eb" stroke-width="2.5" fill="#dbeafe" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="164.2" y="285.8" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">90°</text>
+<path d="M 230 220 L 80.0 220.0 A 150 150 0 0 1 141.8 98.6 Z" stroke="#ea580c" stroke-width="2.5" fill="#fef3c7" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="147.1" y="177.8" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">54°</text>
+<path d="M 230 220 L 141.8 98.6 A 150 150 0 0 1 230.0 70.0 Z" stroke="#7c3aed" stroke-width="2.5" fill="#ede9fe" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="201.3" y="131.6" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">36°</text>
+<rect x="430.0" y="128.0" width="24.0" height="24.0" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="464.0" y="140.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Food</text>
+<text x="464.0" y="162.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">NLe 300</text>
+<rect x="430.0" y="186.0" width="24.0" height="24.0" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="464.0" y="198.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Rent</text>
+<text x="464.0" y="220.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">NLe 150</text>
+<rect x="430.0" y="244.0" width="24.0" height="24.0" rx="4" fill="#fef3c7" stroke="#ea580c" stroke-width="2"/>
+<text x="464.0" y="256.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Transport</text>
+<text x="464.0" y="278.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">NLe 90</text>
+<rect x="430.0" y="302.0" width="24.0" height="24.0" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="464.0" y="314.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">School fees</text>
+<text x="464.0" y="336.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">NLe 60</text>
+<text x="320.0" y="36.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">angle = value ÷ total × 360°</text>
+</svg>

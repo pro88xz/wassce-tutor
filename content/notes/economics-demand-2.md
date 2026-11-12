@@ -1,3 +1,5 @@
+When civil servants get a pay rise, market women sell more of almost everything, even though their prices have not changed. Something other than price has moved demand. This lesson explains what, and how to show it correctly on a graph.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -31,6 +33,10 @@ A **change in quantity demanded** is caused **only by a change in the good's own
 A **change in demand** is caused by a change in **any other factor** (income, tastes, prices of other goods and so on). It is shown by a **shift of the whole demand curve**: to the **right** for an increase, to the **left** for a decrease.
 :::
 
+![Two graphs: on the left, a fall in price from P1 to P2 moves buyers along one demand curve from A to B; on the right, the whole demand curve shifts right from D1 to D2 for an increase in demand, or left to D3 for a decrease](https://wasscetutor.com/img/economics/demand-shift.svg)
+
+*Figure 1. A movement along the demand curve (left) and a shift of the curve (right). WASSCE Tutor diagram.*
+
 :::callout{type=worked-example}
 **Which is it?**
 
@@ -51,6 +57,10 @@ Sometimes more is bought when the price **rises**, so the demand curve slopes **
 2. **Goods of ostentation (Veblen goods)**: luxury items bought to show off wealth, such as expensive jewellery. A higher price makes them more attractive to some buyers.
 3. **Expectations of further price rises**: when prices are rising and people expect them to keep rising, they may buy more now, even at the higher price.
 4. **Ignorance**: some buyers believe a higher price means better quality.
+
+![An upward-sloping demand curve: when the price rises from P1 to P2, the quantity demanded rises from Q1 to Q2](https://wasscetutor.com/img/economics/exceptional-demand.svg)
+
+*Figure 2. An exceptional demand curve slopes upwards. WASSCE Tutor diagram.*
 
 ## Types of demand
 

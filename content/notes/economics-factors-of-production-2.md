@@ -1,3 +1,5 @@
+A fishing canoe, an outboard engine and a cold room are all capital: things made by people to produce more. Someone still has to decide to buy them and risk the money. That person is the entrepreneur, and this lesson covers both.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -5,6 +7,7 @@ By the end of this lesson you should be able to:
 - define capital and describe its types
 - explain capital formation and why it matters
 - describe the functions of the entrepreneur
+- distinguish labour-intensive from capital-intensive production
 
 ## Capital
 
@@ -40,6 +43,10 @@ In everyday speech, "capital" often means money. In economics, **money is not ca
 **Capital formation** (or capital accumulation) is the process of increasing the stock of capital goods in an economy. It requires **saving** (giving up some consumption today) and **investment** (using those savings to buy capital goods).
 :::
 
+![A cycle of five linked steps: income, saving, banks lend, investment in capital goods, more output, and back to income](https://wasscetutor.com/img/economics/capital-formation.svg)
+
+*Figure 1. The cycle of capital formation. WASSCE Tutor diagram.*
+
 Capital formation matters because more and better capital raises the productivity of labour, increases output and helps the economy grow. In many developing countries it is held back by low incomes (so little can be saved), poor banking services and political instability.
 
 ## The entrepreneur
@@ -73,12 +80,28 @@ Some risks can be insured against (fire, theft, accidents), but others cannot, s
 | Capital | Yes (saving and investment) | Interest |
 | Entrepreneur | Yes (training, a better business climate) | Profit |
 
+## Combining the factors
+
+Firms choose how much of each factor to use.
+
+| Method | Meaning | Example | Suits |
+|---|---|---|---|
+| **Labour-intensive** | Uses a lot of labour relative to capital | Hand-harvesting rice; tailoring with hand machines | Countries with plenty of cheap labour and little capital |
+| **Capital-intensive** | Uses a lot of machinery relative to labour | Mechanised rice farming with tractors and combine harvesters; a bottling plant | Large outputs and high wages |
+
+A firm chooses the combination that produces its output at the **lowest cost**, given the prices of the factors. In Sierra Leone, where labour is plentiful and capital scarce, many farms and workshops are labour-intensive; as capital grows, more production becomes capital-intensive.
+
+:::callout{type=common-mistake}
+**Capital is not the same as money.** Money is used to *buy* capital (machines, tools, buildings), but money itself produces nothing. In economics, "capital" means the real, man-made means of production.
+:::
+
 ## Key points
 
 - **Capital** is man-made goods used in production; its reward is **interest**.
 - Types: **fixed**, **working (circulating)** and **social** capital.
 - **Capital formation** needs saving and investment.
 - The **entrepreneur** organises production, makes decisions and bears **uninsurable risks**; the reward is **profit**.
+- Production can be **labour-intensive** or **capital-intensive**; firms choose the least-cost combination.
 
 ## WASSCE examination focus
 

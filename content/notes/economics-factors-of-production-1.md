@@ -1,3 +1,5 @@
+Every product you buy, from a bag of cement to a haircut, needs land, labour, capital and someone to organise them. These are the factors of production, and each earns its own kind of income.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -18,6 +20,10 @@ By the end of this lesson you should be able to:
 | Labour | Human effort, physical and mental | **Wages** (or salaries) |
 | Capital | Man-made goods used to produce other goods | **Interest** |
 | Entrepreneur | The person who organises the other factors and bears the risk | **Profit** |
+
+![Four factors of production each linked by an arrow to its reward: land earns rent, labour earns wages, capital earns interest and the entrepreneur earns profit](https://wasscetutor.com/img/economics/factor-rewards.svg)
+
+*Figure 1. The factors of production and their rewards. WASSCE Tutor diagram.*
 
 This lesson covers land and labour; capital and the entrepreneur follow in the next lesson.
 

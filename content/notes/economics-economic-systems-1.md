@@ -1,8 +1,11 @@
+Who decides how much rice is grown, what it sells for and who gets to eat it? In some countries the market decides; in others the state plans; in a farming village, custom may decide. Those answers define an economic system.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
 
 - define an economic system
+- describe the traditional (subsistence) economy
 - describe the features of capitalism and socialism
 - state the advantages and disadvantages of each
 
@@ -12,7 +15,23 @@ By the end of this lesson you should be able to:
 An **economic system** is the way a society organises the ownership and use of its resources to answer the basic economic problems: **what** to produce, **how** to produce and **for whom** to produce.
 :::
 
-The main systems are **capitalism** (the free market economy), **socialism** (the command or planned economy) and the **mixed economy**. This lesson covers the first two; the mixed economy is in the next lesson.
+The main systems are **capitalism** (the free market economy), **socialism** (the command or planned economy) and the **mixed economy**. This lesson covers capitalism and socialism, after a look at the oldest system of all; the mixed economy is in the next lesson.
+
+## The traditional (subsistence) economy
+
+In a **traditional economy**, the basic economic questions are answered by **custom and tradition**: people produce what their parents produced, in the same way, mainly for their own use.
+
+**Features:**
+
+1. Production is mainly for **own consumption** (subsistence), with little left over to sell.
+2. **Simple tools** (hoes, cutlasses, canoes) and family labour; little capital.
+3. **Custom** decides who does which work and how output is shared.
+4. Exchange is often by **barter** or within the extended family.
+5. **Low output and low incomes**, and slow change.
+
+:::callout{type=local-example}
+Many farming households in rural Sierra Leone still grow upland rice and cassava mainly to feed themselves, using family labour and hand tools, and sell only a small surplus at the weekly lumo. These are features of a traditional economy existing inside the national mixed economy.
+:::
 
 ## Capitalism (the free market economy)
 

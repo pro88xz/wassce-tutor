@@ -1,3 +1,5 @@
+When incomes rise, people buy more meat but less of the cheapest rice. When the price of tea rises, sugar sales fall too. Two more elasticities measure these links, and a third measures how fast farmers and firms can respond to price.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -12,7 +14,7 @@ By the end of this lesson you should be able to:
 **Income elasticity of demand (YED)** measures how responsive the quantity demanded of a good is to a change in **consumers' income**.
 :::
 
-$$\text{YED} = \dfrac{\%\ \text{change in quantity demanded}}{\%\ \text{change in income}}$$
+$$\text{YED} = \dfrac{\%\ \text{change in qty demanded}}{\%\ \text{change in income}}$$
 
 Here the **sign matters**:
 
@@ -36,7 +38,9 @@ A family's monthly income rises from NLe 2,000 to NLe 2,500 (a rise of 25%).
 **Cross elasticity of demand (XED)** measures how responsive the quantity demanded of **one good (A)** is to a change in the price of **another good (B)**.
 :::
 
-$$\text{XED} = \dfrac{\%\ \text{change in quantity demanded of A}}{\%\ \text{change in price of B}}$$
+$$\text{XED} = \dfrac{\%\ \text{change in } Q_A}{\%\ \text{change in } P_B}$$
+
+where $Q_A$ is the quantity of good A demanded and $P_B$ is the price of good B.
 
 | XED | Relationship | Example |
 |---|---|---|
@@ -64,6 +68,12 @@ The price of a basket of tomatoes rises from NLe 10 to NLe 12 (20%). Farmers inc
 
 $\text{PES} = \dfrac{10}{20} = 0.5$: supply is **inelastic**. Farmers cannot grow more tomatoes overnight.
 :::
+
+![Three straight-line supply graphs: one starting on the price axis (elastic, PES greater than 1), one through the origin (unitary, PES equal to 1) and one starting on the quantity axis (inelastic, PES less than 1)](https://wasscetutor.com/img/economics/pes-types.svg)
+
+*Figure 1. Reading elasticity of supply from a straight-line supply curve. WASSCE Tutor diagram.*
+
+A straight supply line through the origin has PES = 1 all along its length, however steep it looks. A vertical supply line (fixed supply, such as land) is **perfectly inelastic**; a horizontal one is **perfectly elastic**.
 
 ### Determinants of elasticity of supply
 

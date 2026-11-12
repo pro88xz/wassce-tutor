@@ -1,3 +1,5 @@
+Why does a bag of rice cost more this year? Why do some school leavers find jobs and others not? Why does the leone lose value? Economics asks these questions about everyday life in Sierra Leone, and this lesson starts with what the subject is.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -5,6 +7,7 @@ By the end of this lesson you should be able to:
 - give at least two definitions of economics and name the economists behind them
 - explain why Lionel Robbins's scarcity definition is the one most widely used
 - describe economics as a social science and say what it studies
+- distinguish the deductive and inductive methods of economic reasoning
 
 ## Why economics matters to you
 
@@ -61,6 +64,18 @@ Economic laws are less exact than the laws of physics. People do not always beha
 :::callout{type=local-example}
 If the price of a cup of rice at the market rises, most families buy less of it. But if the harvest has failed everywhere and there is nothing else to eat, they may still buy the same amount. That is why the law of demand only holds *ceteris paribus*.
 :::
+
+### How economists reason: deductive and inductive methods
+
+| | Deductive method | Inductive method |
+|---|---|---|
+| Starts from | General assumptions or principles | Particular facts and observations |
+| Moves to | Particular conclusions, by logic | A general law, by collecting and studying many cases |
+| Example | "Consumers try to get the most satisfaction from their money, so they buy less of a good when its price rises" | Recording prices and sales in many markets and finding that sales fall whenever prices rise |
+| Strength | Quick and clear; does not need large data | Grounded in real evidence |
+| Weakness | Conclusions are only as good as the assumptions | Collecting data is slow and costly; the cases may not be typical |
+
+In practice economists use **both**: theories built by deduction are tested with facts gathered by induction.
 
 ## What economics studies
 

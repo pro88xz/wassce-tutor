@@ -1,3 +1,5 @@
+The first cold drink on a hot afternoon in Kenema is wonderful; the fourth, much less so. That everyday experience is one of the most useful laws in economics, and it explains why demand curves slope downwards.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -25,7 +27,7 @@ Utility is personal: a cold drink gives great satisfaction to a thirsty football
 :::callout{type=worked-example}
 **Fatmata eats oranges on a hot afternoon**
 
-| Oranges eaten | Total utility (utils) | Average utility | Marginal utility |
+| Oranges | TU (utils) | AU | MU |
 |---|---|---|---|
 | 1 | 10 | 10 | 10 |
 | 2 | 18 | 9 | 8 |
@@ -48,6 +50,12 @@ Plot TU and MU against the number of oranges:
 3. **When MU is negative, TU falls.** The 7th orange makes her feel worse (*disutility*).
 
 The MU curve slopes **downwards** and crosses the quantity axis where TU is at its peak.
+
+![Two graphs from the oranges table: total utility rises to a maximum of 30 utils and then falls; marginal utility falls steadily, reaching zero at the 6th orange and minus 2 at the 7th](https://wasscetutor.com/img/economics/utility-curves.svg)
+
+*Figure 1. Total and marginal utility of oranges. WASSCE Tutor diagram.*
+
+Utility here is measured in imaginary units called **utils**, as if satisfaction could be counted. This is the **cardinal** approach to utility. In reality satisfaction cannot be measured exactly, but consumers can still **rank** what they prefer, which is the **ordinal** approach. WASSCE questions use utils, as in this table.
 
 :::callout{type=common-mistake}
 "Diminishing marginal utility" does not mean total utility falls. Total utility keeps **rising** as long as marginal utility is positive; it is only the **addition** to satisfaction that gets smaller.

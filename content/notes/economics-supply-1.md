@@ -1,10 +1,14 @@
+When the price of pepper doubles, farmers who had been selling to neighbours start hiring transport to Freetown. Higher prices call out more goods. This lesson turns that behaviour into the supply schedule, the supply curve and the law of supply.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
 
 - define supply and distinguish it from stock
 - draw a supply schedule and a supply curve
+- build a market supply schedule from individual schedules
 - state the law of supply and explain why the supply curve slopes upwards
+- explain how supply responds over time
 
 ## What is supply?
 
@@ -43,9 +47,27 @@ As the price rises, farmers bring more bunches to market.
 
 The **market supply schedule** adds up the quantities offered by all producers at each price.
 
+:::callout{type=worked-example}
+**From individual to market supply.** Two farmers sell plantain at a weekly market:
+
+| Price (NLe) | Farmer A | Farmer B | Market supply |
+|---|---|---|---|
+| 10 | 15 | 25 | 40 |
+| 15 | 25 | 35 | 60 |
+| 20 | 35 | 45 | 80 |
+
+At NLe 15 the market supply is $25 + 35 = 60$ bunches. Like market demand, market supply is the **horizontal sum** of the individual curves.
+:::
+
 ## The supply curve
 
 With **price on the vertical axis** and **quantity supplied on the horizontal axis**, plot the schedule and join the points. The result is the **supply curve**, labelled **S**. It slopes **upwards from left to right**.
+
+![Supply curve for plantain plotted from the schedule: 20 bunches at NLe 5 rising to 120 bunches at NLe 30](https://wasscetutor.com/img/economics/supply-curve.svg)
+
+*Figure 1. The supply curve for plantain, drawn from the schedule. WASSCE Tutor diagram.*
+
+A rise in price from NLe 10 to NLe 25 moves sellers up the curve from 40 to 100 bunches: an **extension of supply**. A fall in price causes a **contraction of supply**.
 
 ## The law of supply
 
@@ -70,6 +92,18 @@ When the price of palm oil rises, farmers harvest more of their palm trees, wome
 :::callout{type=common-mistake}
 Do not write that "supply increases when price rises". A rise in the good's own price increases the **quantity supplied**: a movement **along** the supply curve. "Supply increases" means the whole curve shifts to the right, which needs another cause (see the next lesson).
 :::
+
+## Supply over time
+
+How much supply can respond to a price change depends on the time producers have:
+
+| Period | What can change | Supply |
+|---|---|---|
+| **Momentary (market) period** | Nothing: only goods already on hand can be sold | Fixed; the curve is vertical. Fish landed at Tombo this morning cannot be increased today |
+| **Short run** | Variable factors (labour, fertiliser, hours) can be increased; land and machinery cannot | Rises a little; the curve is steep |
+| **Long run** | All factors can change; new firms can enter and new land can be cleared | Rises a lot; the curve is flatter |
+
+This is why a sudden rise in the price of a farm crop brings only a small increase in supply at first, and a much larger one after the next planting season.
 
 ## Key points
 

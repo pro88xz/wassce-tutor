@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The structure of the balance of payments</title>
+<desc id="d">The balance of payments has a current account (trade in goods, trade in services, primary income and secondary income or transfers), a capital and financial account (investment and loans), and official reserves that settle the overall balance.</desc>
+<defs></defs>
+<rect width="720" height="460" rx="20" fill="#f8fafc"/>
+<rect x="20.0" y="80.0" width="215.0" height="300.0" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="127.0" y="118.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Current account</text>
+<text x="36.0" y="180.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">•  Goods (visible trade)</text>
+<text x="36.0" y="226.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">•  Services (invisible trade)</text>
+<text x="36.0" y="272.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">•  Primary income</text>
+<text x="36.0" y="318.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">•  Secondary income (transfers)</text>
+<rect x="255.0" y="80.0" width="215.0" height="300.0" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="362.0" y="112.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Capital and</text>
+<text x="362.0" y="134.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">financial account</text>
+<text x="271.0" y="180.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">•  Direct investment</text>
+<text x="271.0" y="226.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">•  Portfolio investment</text>
+<text x="271.0" y="272.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">•  Loans</text>
+<rect x="490.0" y="80.0" width="215.0" height="300.0" rx="14" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="597.0" y="118.0" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Official reserves</text>
+<text x="506.0" y="180.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">•  Foreign currency and gold</text>
+<text x="506.0" y="226.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">•  held by the central bank</text>
+<text x="360.0" y="420.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Current + capital and financial + reserves (+ errors) = 0: the accounts always balance</text>
+<text x="360.0" y="40.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Three parts of the balance of payments</text>
+</svg>

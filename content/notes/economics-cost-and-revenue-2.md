@@ -1,3 +1,5 @@
+A sandal maker can sell more pairs only by cutting her price. Should she? Revenue, cost and one simple rule, MC = MR, tell any firm the output that makes the most profit. This lesson puts them together.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -5,6 +7,7 @@ By the end of this lesson you should be able to:
 - define total, average and marginal revenue and calculate them
 - explain how revenue behaves when price is constant and when it falls
 - find the profit-maximising output using the rule MC = MR
+- read a break-even chart
 
 ## Revenue
 
@@ -55,6 +58,12 @@ A sandal maker in Bo finds that to sell more pairs she must lower her price:
 TR is at its **maximum when MR = 0** (5 or 6 pairs, NLe 60).
 :::
 
+![Two graphs: on the left, a constant price of NLe 15 gives one horizontal line for price, AR and MR; on the right, AR falls from 20 to 10 as more is sold and MR falls twice as fast, reaching 0 at 6 units](https://wasscetutor.com/img/economics/revenue-curves.svg)
+
+*Figure 1. Average and marginal revenue: constant price (left) and falling price (right). WASSCE Tutor diagram.*
+
+When the price falls as more is sold, the AR curve **is the firm's demand curve**, and MR lies **below** it, falling twice as steeply for a straight-line demand curve.
+
 ## Profit and the profit-maximising rule
 
 :::callout{type=definition}
@@ -83,6 +92,12 @@ Use the cost table from the previous lesson with a **constant price of NLe 60** 
 ### Break-even
 
 A firm **breaks even** when $TR = TC$: it makes neither profit nor loss. In the table, the firm moves from a loss at 3 units to a profit at 4 units, so it breaks even between 3 and 4 units.
+
+![Break-even chart: the total revenue line rises at NLe 60 a unit and the total cost curve starts at NLe 100; they cross between 3 and 4 units, with a loss before that point and a profit after it](https://wasscetutor.com/img/economics/break-even.svg)
+
+*Figure 2. Break-even chart for the firm in the table. WASSCE Tutor diagram.*
+
+On a **break-even chart**, the gap between TR and TC shows the profit (TR above TC) or loss (TC above TR) at each output. Here the profit gap is widest at 5 units (NLe 30), which agrees with the MC = MR rule.
 
 :::callout{type=common-mistake}
 The profit-maximising output is **not** where TR is highest, nor where average cost is lowest. It is where **MC = MR**. In the sandal example, TR is highest at 5 or 6 pairs, but that tells you nothing about profit until you know the costs.

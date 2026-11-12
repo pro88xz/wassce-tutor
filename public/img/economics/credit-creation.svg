@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">How banks create credit</title>
+<desc id="d">With a cash reserve ratio of 20%, a new deposit of NLe 1,000 lets the first bank lend 800, the next 640, then 512 and so on. Total deposits rise to NLe 5,000: the original deposit times 1 divided by the reserve ratio.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="720" height="440" rx="20" fill="#f8fafc"/>
+<line x1="90.0" y1="360.0" x2="666.0" y2="360.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="90.0" y1="360.0" x2="90.0" y2="72.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="666.0" y="396.0" font-size="16" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">Round of deposits</text>
+<text x="98.0" y="64.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">NLe</text>
+<text x="81.0" y="375.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">0</text>
+<line x1="84.0" y1="360.0" x2="90.0" y2="360.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="84.0" y1="310.9" x2="90.0" y2="310.9" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="310.9" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">200</text>
+<line x1="84.0" y1="261.8" x2="90.0" y2="261.8" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="261.8" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">400</text>
+<line x1="84.0" y1="212.7" x2="90.0" y2="212.7" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="212.7" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">600</text>
+<line x1="84.0" y1="163.6" x2="90.0" y2="163.6" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="163.6" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">800</text>
+<line x1="84.0" y1="114.5" x2="90.0" y2="114.5" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="114.5" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">1000</text>
+<rect x="110.0" y="114.5" width="56.0" height="245.5" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<rect x="110.0" y="310.9" width="56.0" height="49.1" rx="0" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+<text x="138.0" y="102.5" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1,000</text>
+<text x="138.0" y="380.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Bank 1</text>
+<rect x="190.0" y="163.6" width="56.0" height="196.4" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<rect x="190.0" y="320.7" width="56.0" height="39.3" rx="0" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+<text x="218.0" y="151.6" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">800</text>
+<text x="218.0" y="380.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Bank 2</text>
+<rect x="270.0" y="202.9" width="56.0" height="157.1" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<rect x="270.0" y="328.6" width="56.0" height="31.4" rx="0" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+<text x="298.0" y="190.9" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">640</text>
+<text x="298.0" y="380.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Bank 3</text>
+<rect x="350.0" y="234.3" width="56.0" height="125.7" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<rect x="350.0" y="334.9" width="56.0" height="25.1" rx="0" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+<text x="378.0" y="222.3" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">512</text>
+<text x="378.0" y="380.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Bank 4</text>
+<rect x="430.0" y="259.5" width="56.0" height="100.5" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<rect x="430.0" y="339.9" width="56.0" height="20.1" rx="0" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+<text x="458.0" y="247.5" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">410</text>
+<text x="458.0" y="380.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Bank 5</text>
+<rect x="510.0" y="279.6" width="56.0" height="80.4" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<rect x="510.0" y="343.9" width="56.0" height="16.1" rx="0" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+<text x="538.0" y="267.6" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">328</text>
+<text x="538.0" y="380.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Bank 6</text>
+<text x="600.0" y="237.3" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">… total</text>
+<text x="600.0" y="264.3" font-size="16" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">NLe 5,000</text>
+<rect x="330.0" y="58.0" width="22.0" height="16.0" rx="0" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+<text x="360.0" y="66.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">kept as reserve (20%)</text>
+<rect x="330.0" y="82.0" width="22.0" height="16.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="360.0" y="90.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">the rest is lent on (80%)</text>
+<text x="360.0" y="36.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Credit multiplier = 1 ÷ reserve ratio = 1 ÷ 0.2 = 5</text>
+</svg>

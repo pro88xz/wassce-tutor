@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Gains from specialisation and trade</title>
+<desc id="d">Before specialisation the two countries together produce 30 tonnes of rice and 30 of cloth. When each specialises in the good it produces at lower opportunity cost, total output rises to 40 of rice and 40 of cloth.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="720" height="440" rx="20" fill="#f8fafc"/>
+<line x1="90.0" y1="340.0" x2="646.0" y2="340.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="90.0" y1="340.0" x2="90.0" y2="72.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="646.0" y="376.0" font-size="16" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal"></text>
+<text x="98.0" y="64.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Tonnes</text>
+<text x="81.0" y="355.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">0</text>
+<line x1="84.0" y1="340.0" x2="90.0" y2="340.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="84.0" y1="285.7" x2="90.0" y2="285.7" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="285.7" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">10</text>
+<line x1="84.0" y1="231.3" x2="90.0" y2="231.3" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="231.3" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">20</text>
+<line x1="84.0" y1="177.0" x2="90.0" y2="177.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="177.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">30</text>
+<line x1="84.0" y1="122.6" x2="90.0" y2="122.6" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="122.6" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">40</text>
+<rect x="139.1" y="177.0" width="85.9" height="163.0" rx="0" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="182.0" y="165.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">30</text>
+<text x="182.0" y="360.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">before</text>
+<rect x="237.3" y="122.6" width="85.9" height="217.4" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="280.2" y="110.6" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">40</text>
+<text x="280.2" y="360.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">after</text>
+<text x="231.1" y="386.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Rice</text>
+<rect x="409.1" y="177.0" width="85.9" height="163.0" rx="0" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="452.0" y="165.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">30</text>
+<text x="452.0" y="360.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">before</text>
+<rect x="507.3" y="122.6" width="85.9" height="217.4" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="550.2" y="110.6" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">40</text>
+<text x="550.2" y="360.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">after</text>
+<text x="501.1" y="386.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cloth</text>
+<text x="360.0" y="34.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">World output of both goods rises when countries specialise</text>
+</svg>

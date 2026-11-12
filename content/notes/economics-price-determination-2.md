@@ -1,3 +1,5 @@
+A bumper rice harvest, a fuel-price rise, a government price cap, a new tax on a good: each one moves the market to a new price. WASSCE expects you to show every one of these on a demand and supply diagram and explain the result.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -5,6 +7,7 @@ By the end of this lesson you should be able to:
 - explain how shifts in demand or supply change the equilibrium
 - explain maximum (ceiling) and minimum (floor) price controls
 - state the effects of price controls, including black markets and surpluses
+- show how a tax or a subsidy on a good changes its price and quantity, and who bears a tax
 
 ## When demand or supply shifts
 
@@ -25,6 +28,10 @@ A market stays at equilibrium only until something other than price changes. The
 - As the price falls, buyers take more (an extension of demand).
 - **New equilibrium:** a **lower price** and a **larger quantity** bought and sold.
 :::
+
+![Two graphs: on the left, demand shifts right from D1 to D2 and the equilibrium moves from E1 to E2 at a higher price and quantity; on the right, supply shifts right from S1 to S2 and the equilibrium moves to a lower price and higher quantity](https://wasscetutor.com/img/economics/equilibrium-shifts.svg)
+
+*Figure 1. An increase in demand (left) and an increase in supply (right). WASSCE Tutor diagram.*
 
 :::callout{type=common-mistake}
 When supply increases, do not say "demand increases too". Demand (the curve) has not changed; only the **quantity demanded** rises as the price falls, a movement along the same demand curve.
@@ -73,15 +80,46 @@ Suppose the government fixes a minimum price of **NLe 20** for plantain:
 4. Consumers **pay more** than the market price.
 5. For a **minimum wage**, a wage above equilibrium may reduce the number of workers employed.
 
+![Two graphs of the plantain market: on the left, a maximum price of NLe 10 below equilibrium gives a shortage of 40 bunches; on the right, a minimum price of NLe 20 above equilibrium gives a surplus of 40 bunches](https://wasscetutor.com/img/economics/price-controls.svg)
+
+*Figure 2. A maximum price causes a shortage; a minimum price causes a surplus. WASSCE Tutor diagram.*
+
 :::callout{type=local-example}
 A minimum wage is a minimum price for labour. It is meant to give workers a fairer income; economists debate how far a high minimum wage reduces jobs, especially in small businesses.
 :::
+
+## Taxes and subsidies on a good
+
+### An indirect tax
+
+An **indirect tax** (such as a sales tax or excise duty) is paid by the seller to the government on each unit sold. To the seller it is like a rise in cost, so **supply decreases**: the supply curve shifts **upwards (to the left) by the amount of the tax**.
+
+![Demand curve D with supply S1 and a higher supply curve S2 equal to S1 plus the tax: the price paid by consumers rises from P1 to P2, quantity falls from Q1 to Q2, and the tax per unit is shared between the consumers' share above P1 and the producers' share below it](https://wasscetutor.com/img/economics/tax-incidence.svg)
+
+*Figure 3. The effect of a tax on a good, and who bears it. WASSCE Tutor diagram.*
+
+- The **price** consumers pay **rises** from $P_1$ to $P_2$, but by **less than the tax**.
+- The **quantity** bought and sold **falls** from $Q_1$ to $Q_2$.
+- The **incidence** (burden) of the tax is **shared**: consumers pay $P_2 - P_1$ of each unit's tax; producers absorb the rest, because they now keep only $P_2 - 	ext{tax}$.
+
+:::callout{type=definition}
+The **incidence of a tax** is who finally bears its burden. The **more inelastic the demand**, the larger the share paid by consumers; the **more elastic the demand**, the larger the share borne by producers.
+:::
+
+:::callout{type=worked-example}
+**A tax of NLe 4 a carton is placed on cigarettes.** Demand for cigarettes is very inelastic (smokers keep buying), so most of the tax is **passed on to consumers**: the price might rise by about NLe 3.50, with producers bearing only NLe 0.50. The quantity sold falls only a little, which is why governments raise large, steady revenue from taxes on tobacco, alcohol and fuel.
+:::
+
+### A subsidy
+
+A **subsidy** is a payment by the government to producers for each unit produced. It works the opposite way: **supply increases** (the curve shifts **down** by the subsidy), the **price falls** and the **quantity rises**. Subsidies on fertiliser or seed rice are meant to cut farmers' costs and lower food prices.
 
 ## Key points
 
 - Shifts in demand or supply create a **new equilibrium price and quantity**.
 - **Maximum price**: below equilibrium, protects consumers, causes **shortages** and **black markets**.
 - **Minimum price**: above equilibrium, protects producers or workers, causes **surpluses**.
+- A **tax** shifts supply up: price rises by less than the tax and quantity falls; consumers bear more of it when demand is inelastic. A **subsidy** shifts supply down: price falls and quantity rises.
 
 ## WASSCE examination focus
 
@@ -94,5 +132,6 @@ Expect diagram questions: **show the effect of an increase in demand (or supply)
 1. What happens to equilibrium price and quantity when demand increases?
 2. A maximum price is set below the equilibrium. What problem appears?
 3. Why might a government set a minimum price for a farm product?
+4. A tax is placed on a good with very inelastic demand. Who bears most of it?
 
-**Answers:** 1. Both rise. 2. A shortage (excess demand), often with queues and black markets. 3. To protect farmers' incomes by guaranteeing them a price above the market price.
+**Answers:** 1. Both rise. 2. A shortage (excess demand), often with queues and black markets. 3. To protect farmers' incomes by guaranteeing them a price above the market price. 4. Consumers: they keep buying, so sellers can pass most of the tax on in a higher price.

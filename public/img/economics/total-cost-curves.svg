@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 460" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Total, fixed and variable cost</title>
+<desc id="d">From the cost table: fixed cost is NLe 100 at every output; variable cost rises from 0 to 240; total cost rises from 100 to 340. The gap between TC and VC is always the fixed cost.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="660" height="460" rx="20" fill="#f8fafc"/>
+<line x1="90.0" y1="380.0" x2="576.0" y2="380.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="90.0" y1="380.0" x2="90.0" y2="62.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="576.0" y="416.0" font-size="16" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">Output (Q)</text>
+<text x="98.0" y="54.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Cost (NLe)</text>
+<text x="81.0" y="395.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">0</text>
+<line x1="90.0" y1="380.0" x2="90.0" y2="386.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="161.2" y1="380.0" x2="161.2" y2="386.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="161.2" y="399.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1</text>
+<line x1="232.4" y1="380.0" x2="232.4" y2="386.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="232.4" y="399.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2</text>
+<line x1="303.6" y1="380.0" x2="303.6" y2="386.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="303.6" y="399.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">3</text>
+<line x1="374.8" y1="380.0" x2="374.8" y2="386.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="374.8" y="399.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">4</text>
+<line x1="446.1" y1="380.0" x2="446.1" y2="386.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="446.1" y="399.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">5</text>
+<line x1="517.3" y1="380.0" x2="517.3" y2="386.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="517.3" y="399.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">6</text>
+<line x1="84.0" y1="380.0" x2="90.0" y2="380.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="84.0" y1="296.7" x2="90.0" y2="296.7" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="296.7" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">100</text>
+<line x1="84.0" y1="213.3" x2="90.0" y2="213.3" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="213.3" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">200</text>
+<line x1="84.0" y1="130.0" x2="90.0" y2="130.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="80.0" y="130.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">300</text>
+<path d="M 90.0 296.7 C 101.9 291.1 137.5 273.1 161.2 263.3 C 184.9 253.6 208.7 245.3 232.4 238.3 C 256.2 231.4 279.9 228.6 303.6 221.7 C 327.4 214.7 351.1 207.8 374.8 196.7 C 398.6 185.6 422.3 171.7 446.1 155.0 C 469.8 138.3 505.4 106.4 517.3 96.7" stroke="#dc2626" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 90.0 380.0 C 101.9 374.4 137.5 356.4 161.2 346.7 C 184.9 336.9 208.7 328.6 232.4 321.7 C 256.2 314.7 279.9 311.9 303.6 305.0 C 327.4 298.1 351.1 291.1 374.8 280.0 C 398.6 268.9 422.3 255.0 446.1 238.3 C 469.8 221.7 505.4 189.7 517.3 180.0" stroke="#2563eb" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 90.0 296.7 L 538.6 296.7" stroke="#15803d" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="527.3" y="100.7" font-size="17" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">TC</text>
+<text x="527.3" y="184.0" font-size="17" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">VC</text>
+<text x="548.6" y="300.7" font-size="17" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">FC</text>
+<line x1="446.1" y1="238.3" x2="446.1" y2="155.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round"/>
+<polygon points="450.5,237.5 438.2,244.5 436.5,235.3" fill="#15803d"/>
+<polygon points="444.0,159.0 445.8,145.0 454.2,149.2" fill="#15803d"/>
+<text x="438.1" y="196.7" font-size="14" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">FC = 100</text>
+<text x="330.0" y="32.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">TC = FC + VC</text>
+</svg>

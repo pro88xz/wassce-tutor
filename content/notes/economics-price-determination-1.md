@@ -1,3 +1,5 @@
+Nobody sets the price of plantain at a weekly lumo. Buyers and sellers bargain, and within an hour the price settles where the quantity people want to buy matches the quantity offered. That settling point is equilibrium, and it is found exactly where two curves cross.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -22,14 +24,14 @@ The **equilibrium price** is the price at which the **quantity demanded equals t
 
 Putting the demand and supply schedules for plantain side by side:
 
-| Price (NLe) | Demanded | Supplied | Result |
+| Price (NLe) | Qty demanded | Qty supplied | Result |
 |---|---|---|---|
-| 30 | 0 | 120 | Surplus of 120 |
-| 25 | 20 | 100 | Surplus of 80 |
-| 20 | 40 | 80 | Surplus of 40 |
+| 30 | 0 | 120 | Surplus 120 |
+| 25 | 20 | 100 | Surplus 80 |
+| 20 | 40 | 80 | Surplus 40 |
 | **15** | **60** | **60** | **Equilibrium** |
-| 10 | 80 | 40 | Shortage of 40 |
-| 5 | 100 | 20 | Shortage of 80 |
+| 10 | 80 | 40 | Shortage 40 |
+| 5 | 100 | 20 | Shortage 80 |
 
 :::callout{type=worked-example}
 Reading the table:
@@ -40,6 +42,10 @@ Reading the table:
 :::
 
 On a graph, the equilibrium is where the **demand curve crosses the supply curve**. Mark the price on the vertical axis ($P_e$) and the quantity on the horizontal axis ($Q_e$), with dotted lines from the crossing point.
+
+![Demand and supply curves for plantain crossing at E, price NLe 15 and quantity 60 bunches; at NLe 25 a double arrow shows a surplus of 80 bunches and at NLe 10 a shortage of 40 bunches](https://wasscetutor.com/img/economics/equilibrium.svg)
+
+*Figure 1. Equilibrium in the plantain market, with a surplus above and a shortage below the equilibrium price. WASSCE Tutor diagram.*
 
 ## Excess supply and excess demand
 

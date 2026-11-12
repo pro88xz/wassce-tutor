@@ -1,3 +1,5 @@
+A bag of rice passes through many hands before it reaches your pot: a farmer, a miller, a lorry driver, a trader. Each adds value, and each is part of production. This lesson explains the stages of production and why splitting work into small tasks makes everyone more productive.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -5,6 +7,7 @@ By the end of this lesson you should be able to:
 - define production and describe the three types (stages) of production
 - explain division of labour and specialisation
 - state their advantages, disadvantages and limits
+- define productivity and explain how it can be raised
 
 ## What is production?
 
@@ -30,6 +33,10 @@ Tertiary production is often split into:
 :::callout{type=worked-example}
 **Following a bag of rice.** A farmer in Torma Bum grows the paddy (**primary**). A mill dries and husks it (**secondary**). A lorry carries it to Freetown and a trader sells it at Dove Cut market (**tertiary**). Only when the rice reaches the family who will eat it is production complete.
 :::
+
+![Three linked boxes: primary production (fishing at Tombo), secondary production (smoking and packing fish) and tertiary production (transport, trade and banking), leading to the consumer buying smoked fish in a Freetown market](https://wasscetutor.com/img/economics/production-chain.svg)
+
+*Figure 1. The three stages of production, following fish from Tombo to a Freetown market. WASSCE Tutor diagram.*
 
 ## Division of labour
 
@@ -70,6 +77,20 @@ Division of labour cannot be used everywhere. It is limited by:
 :::callout{type=common-mistake}
 Do not write that division of labour "always reduces cost". It reduces cost only when output is large enough. A village tailor making a few shirts a week gains little from splitting the work among five people: the market is too small.
 :::
+
+## Productivity
+
+:::callout{type=definition}
+**Productivity** is output per unit of input over a period. **Labour productivity** is output per worker (or per hour worked).
+:::
+
+:::callout{type=worked-example}
+A tailoring shop with 4 tailors makes 60 school uniforms a week. After buying electric sewing machines, the same 4 tailors make 100 uniforms.
+
+Labour productivity rises from $\dfrac{60}{4} = 15$ to $\dfrac{100}{4} = 25$ uniforms per tailor per week, an increase of $\dfrac{10}{15} \times 100 \approx 67\%$.
+:::
+
+Productivity can be raised by **division of labour and specialisation**, better **tools and machinery**, **education and training**, better **management**, good **health and nutrition** of workers, and reliable **power and transport**. Higher productivity lowers the cost of each unit and is the main source of rising living standards.
 
 ## Key points
 

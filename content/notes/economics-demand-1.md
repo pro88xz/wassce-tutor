@@ -1,9 +1,12 @@
+Watch a plantain seller at Dove Cut market cut her price late in the afternoon, and the crowd at her stall grows. That pattern, more bought at a lower price, is the law of demand, and its graph is the most drawn diagram in WASSCE Economics.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
 
 - define demand and effective demand
 - draw a demand schedule and a demand curve
+- build a market demand schedule from individual schedules
 - state the law of demand and explain why the demand curve slopes downwards
 
 ## What is demand?
@@ -45,9 +48,27 @@ As the price falls, more bunches are demanded.
 
 An **individual demand schedule** shows one buyer's demand. The **market demand schedule** adds up the quantities demanded by all buyers at each price.
 
+:::callout{type=worked-example}
+**From individual to market demand.** Three households, A, B and C, buy plantain each week:
+
+| Price (NLe) | A | B | C | Market demand |
+|---|---|---|---|---|
+| 20 | 2 | 1 | 0 | 3 |
+| 15 | 3 | 2 | 1 | 6 |
+| 10 | 5 | 3 | 2 | 10 |
+
+At each price, **add across the row**: at NLe 15 the market demand is $3 + 2 + 1 = 6$ bunches. The market demand curve is the **horizontal sum** of the individual demand curves.
+:::
+
 ## The demand curve
 
 Plot the schedule on a graph with **price on the vertical axis** and **quantity demanded on the horizontal axis**, then join the points. The result is the **demand curve**, labelled **D**. It slopes **downwards from left to right**.
+
+![Demand curve for plantain plotted from the schedule: price from NLe 30 down to NLe 5 on the vertical axis, quantity from 0 to 100 bunches on the horizontal axis; point A is 40 bunches at NLe 20 and point B is 80 bunches at NLe 10](https://wasscetutor.com/img/economics/demand-curve.svg)
+
+*Figure 1. The demand curve for plantain, drawn from the schedule. WASSCE Tutor diagram.*
+
+Moving from A to B, the price falls and the quantity demanded rises: an **extension of demand**. Moving from B to A is a **contraction of demand**.
 
 :::callout{type=common-mistake}
 In economics, **price always goes on the vertical (y) axis** and quantity on the horizontal (x) axis, even though price is the cause. Swapping the axes is a common way to lose marks.

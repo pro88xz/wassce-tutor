@@ -1,3 +1,5 @@
+A woman frying akara at a roadside stall and a mobile-phone company with millions of customers are both firms. They differ in who owns them, who bears the risk and how they raise money. This lesson compares the main types of business organisation tested in WASSCE.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -5,6 +7,7 @@ By the end of this lesson you should be able to:
 - define a firm, a plant and an industry
 - state the objectives of firms
 - compare the main types of business organisation and their advantages and disadvantages
+- explain privatisation and commercialisation, with their merits and demerits
 
 ## Firm, plant and industry
 
@@ -100,11 +103,57 @@ A **public corporation** is a business **owned and controlled by the government*
 A **public limited company (Plc)** is **privately owned** by shareholders: "public" means its shares are sold to the public. A **public corporation** is **owned by the government**. Do not mix them up.
 :::
 
+## The types compared
+
+| Type | Owners | Liability | Capital from | Continuity | Example |
+|---|---|---|---|---|---|
+| **Sole proprietorship** | One person | Unlimited | Owner's savings, loans | Ends with the owner | A provision shop |
+| **Partnership** | 2 to 20 partners | Unlimited (except limited partners) | Partners' contributions | Ends if a partner dies or leaves, unless agreed | A law or accounting firm |
+| **Private limited company (Ltd)** | Shareholders (shares not sold to the public) | Limited | Sale of shares to members, loans | Continues | A family transport firm |
+| **Public limited company (Plc)** | Shareholders (shares sold to the public) | Limited | Sale of shares to the public, debentures | Continues | A bank listed on the stock exchange |
+| **Cooperative** | Members (one member, one vote) | Usually limited | Members' contributions | Continues | A farmers' or traders' cooperative |
+| **Public corporation** | The government | Not applicable | Government funds, borrowing | Continues | A state water or electricity company |
+
+## Privatisation and commercialisation
+
+:::callout{type=definition}
+- **Privatisation** is the **transfer of ownership** of a public enterprise, wholly or partly, from the government to private individuals or firms, usually by selling its shares.
+- **Commercialisation** keeps the enterprise **in government ownership** but requires it to be **run like a business**: charge prices that cover its costs, make a profit where possible and stop relying on government subsidies.
+:::
+
+| | Privatisation | Commercialisation |
+|---|---|---|
+| Who owns it afterwards | Private shareholders | The government |
+| Main aim | Efficiency through private ownership and competition | Efficiency and self-financing under public ownership |
+| Source of funds | Private capital | Its own revenue |
+
+**Reasons (merits):**
+
+1. To **improve efficiency** and the quality of service, since private owners and commercial managers face pressure to cut waste.
+2. To **reduce the burden on the government budget**, which no longer has to cover losses.
+3. To **raise revenue** for the government from the sale of shares.
+4. To **reduce political interference** in day-to-day management.
+5. To **widen ownership** by letting citizens buy shares.
+6. To **attract private and foreign investment** and new technology.
+
+**Demerits:**
+
+1. **Higher prices**, as the enterprise starts charging the full cost of its service.
+2. **Job losses**, as new owners cut staff to reduce costs.
+3. A public monopoly may become a **private monopoly** that exploits consumers.
+4. Essential services may be **withdrawn from poor or remote areas** where they do not pay.
+5. Key enterprises may pass to **foreign owners**.
+
+:::callout{type=local-example}
+Sierra Leone set up the **National Commission for Privatisation (NCP)** in 2002 to manage the reform of its public enterprises, including selling some and commercialising others. Debates about water and electricity tariffs are, at heart, debates about how commercially these services should be run.
+:::
+
 ## Key points
 
 - **Firm** = business unit; **plant** = place of production; **industry** = group of firms making similar goods.
 - Sole traders and partners have **unlimited liability**; company shareholders have **limited liability**.
 - **Cooperatives**: one member, one vote, mutual benefit. **Public corporations**: government-owned, service-oriented.
+- **Privatisation** transfers ownership to the private sector; **commercialisation** keeps public ownership but runs the enterprise on business lines.
 
 ## WASSCE examination focus
 
@@ -117,5 +166,6 @@ Expect to **distinguish a firm from an industry**, to **compare two types of bus
 1. What is the difference between a firm and an industry?
 2. Why do shareholders of a limited company not lose their houses if the company fails?
 3. Is a Plc owned by the government? Explain.
+4. Give two reasons why a government might privatise a public corporation.
 
-**Answers:** 1. A firm is a single business unit; an industry is all the firms producing similar goods. 2. They have limited liability: they can lose only the amount paid for their shares. 3. No. A Plc is owned by private shareholders; "public" means its shares can be bought by the public.
+**Answers:** 1. A firm is a single business unit; an industry is all the firms producing similar goods. 2. They have limited liability: they can lose only the amount paid for their shares. 3. No. A Plc is owned by private shareholders; "public" means its shares can be bought by the public. 4. Any two: to improve efficiency, to reduce the burden of losses on the budget, to raise revenue from selling shares, to reduce political interference, to attract investment.

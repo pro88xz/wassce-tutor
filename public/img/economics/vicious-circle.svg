@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The vicious circle of poverty</title>
+<desc id="d">Low income leads to low saving, which leads to low investment, low capital, low productivity and so low income again. Breaking any link, for example with foreign investment or education, can turn it into a virtuous circle.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="700" height="500" rx="20" fill="#f8fafc"/>
+<path d="M 404.1 98.6 A 175 175 0 0 1 491.6 162.1" stroke="#475569" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a475569)"/>
+<path d="M 525.0 265.0 A 175 175 0 0 1 491.6 367.9" stroke="#475569" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a475569)"/>
+<path d="M 404.1 431.4 A 175 175 0 0 1 295.9 431.4" stroke="#475569" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a475569)"/>
+<path d="M 208.4 367.9 A 175 175 0 0 1 175.0 265.0" stroke="#475569" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a475569)"/>
+<path d="M 208.4 162.1 A 175 175 0 0 1 295.9 98.6" stroke="#475569" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="265.0" y="66.0" width="170.0" height="48.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="350.0" y="90.0" font-size="17" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Low income</text>
+<rect x="431.4" y="186.9" width="170.0" height="48.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="516.4" y="210.9" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Low saving</text>
+<rect x="367.9" y="382.6" width="170.0" height="48.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="452.9" y="406.6" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Low investment</text>
+<rect x="162.1" y="382.6" width="170.0" height="48.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="247.1" y="406.6" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Little capital</text>
+<rect x="98.6" y="186.9" width="170.0" height="48.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="183.6" y="210.9" font-size="17" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Low productivity</text>
+<text x="350.0" y="255.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">the vicious circle</text>
+<text x="350.0" y="281.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">of poverty</text>
+</svg>

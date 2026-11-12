@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 640" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The five kinds of price elasticity of demand</title>
+<desc id="d">Perfectly inelastic demand is a vertical line (PED 0); inelastic demand is steep (PED below 1); unitary demand is a rectangular hyperbola (PED 1); elastic demand is flat (PED above 1); perfectly elastic demand is horizontal (PED infinite).</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="720" height="640" rx="20" fill="#f8fafc"/>
+<line x1="70.0" y1="270.0" x2="246.0" y2="270.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="70.0" y1="270.0" x2="70.0" y2="92.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="246.0" y="306.0" font-size="15" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">Q</text>
+<text x="78.0" y="84.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">P</text>
+<line x1="150.0" y1="260.4" x2="150.0" y2="119.6" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+<text x="150.0" y="70.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Perfectly inelastic</text>
+<text x="150.0" y="302.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">PED = 0</text>
+<line x1="300.0" y1="270.0" x2="476.0" y2="270.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="300.0" y1="270.0" x2="300.0" y2="92.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="476.0" y="306.0" font-size="15" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">Q</text>
+<text x="308.0" y="84.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">P</text>
+<path d="M 316.0 118.0 L 317.1 120.3 L 318.3 122.6 L 319.4 124.9 L 320.6 127.2 L 321.7 129.5 L 322.9 131.8 L 324.0 134.1 L 325.2 136.3 L 326.3 138.6 L 327.5 140.9 L 328.6 143.2 L 329.8 145.5 L 330.9 147.8 L 332.1 150.1 L 333.2 152.4 L 334.3 154.7 L 335.5 157.0 L 336.6 159.3 L 337.8 161.6 L 338.9 163.9 L 340.1 166.2 L 341.2 168.5 L 342.4 170.7 L 343.5 173.0 L 344.7 175.3 L 345.8 177.6 L 347.0 179.9 L 348.1 182.2 L 349.3 184.5 L 350.4 186.8 L 351.5 189.1 L 352.7 191.4 L 353.8 193.7 L 355.0 196.0 L 356.1 198.3 L 357.3 200.6 L 358.4 202.9 L 359.6 205.1 L 360.7 207.4 L 361.9 209.7 L 363.0 212.0 L 364.2 214.3 L 365.3 216.6 L 366.5 218.9 L 367.6 221.2 L 368.7 223.5 L 369.9 225.8 L 371.0 228.1 L 372.2 230.4 L 373.3 232.7 L 374.5 235.0 L 375.6 237.3 L 376.8 239.5 L 377.9 241.8 L 379.1 244.1 L 380.2 246.4 L 381.4 248.7 L 382.5 251.0 L 383.7 253.3 L 384.8 255.6" stroke="#2563eb" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="380.0" y="70.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Inelastic</text>
+<text x="380.0" y="302.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">PED &lt; 1</text>
+<line x1="530.0" y1="270.0" x2="706.0" y2="270.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="530.0" y1="270.0" x2="530.0" y2="92.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="706.0" y="306.0" font-size="15" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">Q</text>
+<text x="538.0" y="84.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">P</text>
+<path d="M 550.8 122.3 L 553.0 136.2 L 555.1 147.7 L 557.3 157.4 L 559.4 165.7 L 561.6 172.8 L 563.8 179.0 L 565.9 184.5 L 568.1 189.3 L 570.2 193.7 L 572.4 197.5 L 574.6 201.1 L 576.7 204.2 L 578.9 207.2 L 581.0 209.8 L 583.2 212.3 L 585.4 214.5 L 587.5 216.6 L 589.7 218.5 L 591.8 220.3 L 594.0 222.0 L 596.2 223.6 L 598.3 225.0 L 600.5 226.4 L 602.6 227.7 L 604.8 228.9 L 607.0 230.1 L 609.1 231.2 L 611.3 232.2 L 613.4 233.2 L 615.6 234.1 L 617.8 235.0 L 619.9 235.8 L 622.1 236.6 L 624.2 237.4 L 626.4 238.1 L 628.6 238.8 L 630.7 239.5 L 632.9 240.1 L 635.0 240.8 L 637.2 241.3 L 639.4 241.9 L 641.5 242.5 L 643.7 243.0 L 645.8 243.5 L 648.0 244.0 L 650.2 244.4 L 652.3 244.9 L 654.5 245.3 L 656.6 245.7 L 658.8 246.1 L 661.0 246.5 L 663.1 246.9 L 665.3 247.3 L 667.4 247.6 L 669.6 248.0 L 671.8 248.3 L 673.9 248.7 L 676.1 249.0 L 678.2 249.3 L 680.4 249.6" stroke="#2563eb" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="610.0" y="70.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Unitary</text>
+<text x="610.0" y="302.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">PED = 1</text>
+<line x1="185.0" y1="570.0" x2="361.0" y2="570.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="185.0" y1="570.0" x2="185.0" y2="392.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="361.0" y="606.0" font-size="15" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">Q</text>
+<text x="193.0" y="384.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">P</text>
+<path d="M 194.6 462.3 L 196.9 463.4 L 199.3 464.4 L 201.6 465.5 L 204.0 466.5 L 206.3 467.6 L 208.7 468.7 L 211.0 469.7 L 213.4 470.8 L 215.7 471.8 L 218.1 472.9 L 220.4 473.9 L 222.8 475.0 L 225.1 476.0 L 227.5 477.1 L 229.8 478.2 L 232.1 479.2 L 234.5 480.3 L 236.8 481.3 L 239.2 482.4 L 241.5 483.4 L 243.9 484.5 L 246.2 485.6 L 248.6 486.6 L 250.9 487.7 L 253.3 488.7 L 255.6 489.8 L 258.0 490.8 L 260.3 491.9 L 262.7 492.9 L 265.0 494.0 L 267.3 495.1 L 269.7 496.1 L 272.0 497.2 L 274.4 498.2 L 276.7 499.3 L 279.1 500.3 L 281.4 501.4 L 283.8 502.4 L 286.1 503.5 L 288.5 504.6 L 290.8 505.6 L 293.2 506.7 L 295.5 507.7 L 297.9 508.8 L 300.2 509.8 L 302.5 510.9 L 304.9 512.0 L 307.2 513.0 L 309.6 514.1 L 311.9 515.1 L 314.3 516.2 L 316.6 517.2 L 319.0 518.3 L 321.3 519.3 L 323.7 520.4 L 326.0 521.5 L 328.4 522.5 L 330.7 523.6 L 333.1 524.6 L 335.4 525.7" stroke="#2563eb" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="265.0" y="370.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Elastic</text>
+<text x="265.0" y="602.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">PED &gt; 1</text>
+<line x1="415.0" y1="570.0" x2="591.0" y2="570.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="415.0" y1="570.0" x2="415.0" y2="392.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="591.0" y="606.0" font-size="15" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">Q</text>
+<text x="423.0" y="384.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">P</text>
+<line x1="421.4" y1="490.0" x2="565.4" y2="490.0" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+<text x="495.0" y="370.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Perfectly elastic</text>
+<text x="495.0" y="602.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">PED = ∞</text>
+</svg>

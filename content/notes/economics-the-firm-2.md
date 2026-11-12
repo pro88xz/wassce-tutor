@@ -1,3 +1,5 @@
+Why can a large bakery sell bread more cheaply than a home baker, and why do some huge firms become slow and wasteful? The answer lies in economies and diseconomies of scale, and in the shape of one U-shaped curve.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
@@ -69,6 +71,12 @@ Internal economies come from the growth of **the firm itself**. External economi
 :::callout{type=definition}
 **Diseconomies of scale** are the **disadvantages** that cause **average cost to rise** when a firm grows too large.
 :::
+
+![U-shaped long-run average cost curve: average cost falls while the firm enjoys economies of scale, reaches its lowest point at the optimum size, then rises as diseconomies of scale set in](https://wasscetutor.com/img/economics/lrac.svg)
+
+*Figure 1. Economies and diseconomies of scale on the long-run average cost curve. WASSCE Tutor diagram.*
+
+The **optimum size** of a firm is the scale at which long-run average cost is **lowest**. A firm smaller than this can cut costs by growing; a firm larger than this would cut costs by becoming smaller.
 
 **Internal diseconomies:**
 

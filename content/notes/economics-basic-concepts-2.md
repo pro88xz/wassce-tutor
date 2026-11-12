@@ -1,10 +1,13 @@
+A farming community cannot grow unlimited rice and unlimited cassava on the same land. One curve shows every choice open to it, what each choice costs, and what happens when resources are wasted or grow. It is the production possibility curve, one of the most examined diagrams in WASSCE Economics.
+
 ## Learning objectives
 
 By the end of this lesson you should be able to:
 
 - state the basic economic problems every society faces
-- draw and explain a production possibility curve (PPC)
-- use a PPC to show opportunity cost, unemployment and economic growth
+- state the assumptions behind a production possibility curve (PPC)
+- draw and explain a PPC from a table
+- use a PPC to show opportunity cost, unemployment, economic growth and an inward shift
 
 ## The basic economic problems
 
@@ -53,6 +56,40 @@ Plotted on a graph (rice on the horizontal axis, cassava on the vertical axis), 
 
 **6. Economic growth.** If the community gets better seeds, more land or more skilled workers, it can produce more of both crops. The whole curve **shifts outwards**.
 
+![Production possibility curve through points A to E, with point X inside the curve where resources are idle and point Y outside the curve, which cannot be reached](https://wasscetutor.com/img/economics/ppc.svg)
+
+*Figure 1. The PPC from the table, with a point inside (X) and a point outside (Y). WASSCE Tutor diagram.*
+
+![Two production possibility curves: PPC2 lies outside PPC1, showing economic growth](https://wasscetutor.com/img/economics/ppc-growth.svg)
+
+*Figure 2. Economic growth: the whole curve shifts outwards. WASSCE Tutor diagram.*
+
+### Assumptions of the PPC
+
+1. Only **two goods** are produced.
+2. The quantity of resources (land, labour, capital) is **fixed**.
+3. The **state of technology** is fixed.
+4. All resources are **fully and efficiently employed**.
+5. Resources can be moved from one good to the other, but they are **not equally suited** to both (which is why the curve bends outwards).
+
+### An inward shift
+
+The curve can also shift **inwards**, when the economy's capacity to produce falls:
+
+- a **war** or civil conflict that destroys farms, roads and factories
+- a **natural disaster** such as flooding or a landslide
+- an **epidemic**, which cuts the number of people able to work
+- the **emigration of skilled workers** (brain drain)
+- the **exhaustion** of a natural resource, such as a mine that runs out
+
+:::callout{type=local-example}
+During the 2014–2015 Ebola outbreak, farms were abandoned, markets closed and many workers could not travel, so Sierra Leone could produce less of almost everything. Its PPC shifted **inwards**; recovery afterwards moved it back out.
+:::
+
+### Uses of the PPC
+
+The PPC is a simple model, but it shows clearly: **scarcity** (points outside are unreachable), **choice** (the society must pick a point), **opportunity cost** (moving along the curve), **efficiency** (points on the curve), **unemployment** (points inside) and **growth or decline** (shifts of the whole curve).
+
 :::callout{type=common-mistake}
 A point inside the curve is **possible** but wasteful. A point outside the curve is **impossible** with present resources. Do not confuse the two. And remember that growth is shown by the *whole curve* shifting out, not by a movement along it.
 :::
@@ -64,9 +101,9 @@ If a new irrigation scheme lets farmers grow rice in the dry season as well as t
 ## Key points
 
 - Every society must decide **what**, **how** and **for whom** to produce.
-- A PPC shows the maximum combinations of two goods with full use of resources.
+- A PPC shows the maximum combinations of two goods with full use of fixed resources and fixed technology.
 - Points **on** the curve: efficient. **Inside**: unemployment or waste. **Outside**: unattainable.
-- Moving along the curve shows **opportunity cost**; an outward shift shows **economic growth**.
+- Moving along the curve shows **opportunity cost**; an outward shift shows **economic growth**; an inward shift shows a fall in productive capacity (war, disaster, epidemic, brain drain).
 
 ## WASSCE examination focus
 
@@ -79,5 +116,7 @@ You may be given a PPC table and asked to **draw the curve**, **calculate the op
 1. Using the table above, what is the opportunity cost of moving from C to D?
 2. What does a point inside the PPC show?
 3. Name one thing that would shift the whole PPC outwards.
+4. Give two events that would shift a country's PPC inwards.
+5. Why does the PPC bend outwards from the origin?
 
-**Answers:** 1. 6 bags of cassava (cassava falls from 14 to 8). 2. Unemployed or inefficiently used resources. 3. For example: more land or workers, better technology, better seeds or more training.
+**Answers:** 1. 6 bags of cassava (cassava falls from 14 to 8). 2. Unemployed or inefficiently used resources. 3. For example: more land or workers, better technology, better seeds or more training. 4. Any two: war, a natural disaster, an epidemic, emigration of skilled workers, a mine running out. 5. Because resources are not equally good at producing both goods, so the opportunity cost of each extra unit rises (increasing opportunity cost).
