@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The parts of a matrix</title>
+<desc id="d">A matrix with 2 rows and 3 columns has order 2 by 3. Rows run across and columns run down. The element in row 2, column 3 is called a23; here it is 7.</desc>
+<defs></defs>
+<rect width="800" height="400" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A 2 × 3 matrix: 2 rows, 3 columns</text>
+<path d="M 285 100 Q 261 175.0 285 250" stroke="#0f172a" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 535 100 Q 559 175.0 535 250" stroke="#0f172a" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="320.0" y="140.0" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4</text>
+<text x="410.0" y="140.0" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">−1</text>
+<text x="500.0" y="140.0" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">0</text>
+<text x="320.0" y="210.0" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3</text>
+<text x="410.0" y="210.0" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5</text>
+<circle cx="500.0" cy="210.0" r="26.0" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="500.0" y="210.0" font-size="26" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7</text>
+<rect x="292.0" y="182.0" width="236.0" height="56.0" rx="8" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="250.0" y="210.0" font-size="16" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">row 2</text>
+<rect x="474.0" y="106.0" width="52.0" height="138.0" rx="8" fill="none" stroke="#15803d" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="575.0" y="110.0" font-size="16" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">column 3</text>
+<text x="575.0" y="214.0" font-size="18" fill="#ea580c" text-anchor="start" dominant-baseline="middle" font-weight="bold">a₂₃ = 7</text>
+<text x="400.0" y="330.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Order = (number of rows) × (number of columns) = 2 × 3</text>
+<text x="400.0" y="362.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">aᵢⱼ is the element in row i, column j</text>
+</svg>

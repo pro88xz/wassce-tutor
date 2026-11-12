@@ -379,6 +379,149 @@ def truth_table_card():
     return s
 
 
+# ═══ M2: matrices, ratio, percentages, financial arithmetic, variation ═══════
+
+@fig
+def matrix_anatomy():
+    s = Svg(800, 400, "The parts of a matrix",
+            "A matrix with 2 rows and 3 columns has order 2 by 3. Rows run across and columns run down. The element in "
+            "row 2, column 3 is called a23; here it is 7.")
+    heading(s, "A 2 × 3 matrix: 2 rows, 3 columns")
+    vals = [[4, -1, 0], [3, 5, 7]]
+    xs, y0, rh = [320, 410, 500], 140, 70
+    s.path(f"M 285 {y0 - 40} Q 261 {y0 + rh / 2} 285 {y0 + rh + 40}", color=INK, width=3)
+    s.path(f"M 535 {y0 - 40} Q 559 {y0 + rh / 2} 535 {y0 + rh + 40}", color=INK, width=3)
+    for i, row in enumerate(vals):
+        for j, v in enumerate(row):
+            x, y = xs[j], y0 + i * rh
+            hi = (i, j) == (1, 2)
+            if hi:
+                s.circle(x, y, 26, fill=F_AMBER, stroke=ORANGE, width=2.5)
+            s.text(x, y, str(v) if v >= 0 else f"−{-v}", size=26, weight="bold", color=ORANGE if hi else INK)
+    s.rect(292, y0 + rh - 28, 236, 56, fill="none", stroke=BLUE, width=2, rx=8, dash="6 5")
+    s.text(250, y0 + rh, "row 2", size=16, weight="bold", color=BLUE, anchor="end")
+    s.rect(474, y0 - 34, 52, rh + 68, fill="none", stroke=GREEN, width=2, rx=8, dash="6 5")
+    s.text(575, y0 - 30, "column 3", size=16, weight="bold", color=GREEN, anchor="start")
+    s.text(575, y0 + rh + 4, "a₂₃ = 7", size=18, weight="bold", color=ORANGE, anchor="start")
+    note(s, "Order = (number of rows) × (number of columns) = 2 × 3", 330, size=17, color=INK)
+    note(s, "aᵢⱼ is the element in row i, column j", 362, size=15)
+    return s
+
+
+@fig
+def determinant_cross():
+    s = Svg(800, 360, "The determinant of a 2 by 2 matrix",
+            "For the matrix with rows (a, b) and (c, d), the determinant is ad minus bc: multiply down the leading diagonal, "
+            "then subtract the product of the other diagonal. For rows (3, 2) and (4, 5), the determinant is 15 − 8 = 7.")
+    heading(s, "Determinant = ad − bc")
+    def mat(x0, a, b, c, d, label=True):
+        s.path(f"M {x0} 100 Q {x0 - 20} 175 {x0} 250", color=INK, width=3)
+        s.path(f"M {x0 + 170} 100 Q {x0 + 190} 175 {x0 + 170} 250", color=INK, width=3)
+        for (t, x, y) in ((a, x0 + 45, 135), (b, x0 + 125, 135), (c, x0 + 45, 215), (d, x0 + 125, 215)):
+            s.text(x, y, t, size=30, weight="bold", italic=label)
+        s.line(x0 + 58, 148, x0 + 112, 202, color=GREEN, width=3)
+        s.line(x0 + 112, 148, x0 + 58, 202, color=RED, width=3)
+    mat(110, "a", "b", "c", "d")
+    s.text(195, 290, "ad − bc", size=24, weight="bold", color=INK)
+    mat(480, "3", "2", "4", "5", label=False)
+    s.text(565, 290, "3×5 − 2×4 = 7", size=22, weight="bold", color=INK)
+    s.text(195, 330, "green product minus red product", size=15, color=MUTED)
+    s.text(565, 330, "determinant = 7", size=15, color=MUTED)
+    return s
+
+
+@fig
+def ratio_sharing_bars():
+    s = Svg(800, 360, "Sharing NLe 600 in the ratio 2 : 3",
+            "Draw 2 equal boxes for Fatmata and 3 for Musa: 5 equal parts in all. Each part is 600 ÷ 5 = 120. Fatmata gets 2 × "
+            "120 = NLe 240 and Musa gets 3 × 120 = NLe 360.")
+    heading(s, "Share NLe 600 in the ratio 2 : 3")
+    for k in range(2):
+        s.rect(220 + k * 95, 90, 90, 64, fill=F_BLUE, stroke=BLUE, width=2.5, rx=6)
+        s.text(265 + k * 95, 122, "120", size=20, weight="bold", color=BLUE)
+    for k in range(3):
+        s.rect(220 + k * 95, 200, 90, 64, fill=F_GREEN, stroke=GREEN, width=2.5, rx=6)
+        s.text(265 + k * 95, 232, "120", size=20, weight="bold", color=GREEN)
+    s.text(200, 122, "Fatmata (2)", size=17, weight="bold", color=BLUE, anchor="end")
+    s.text(200, 232, "Musa (3)", size=17, weight="bold", color=GREEN, anchor="end")
+    s.text(430, 122, "= NLe 240", size=20, weight="bold", color=BLUE, anchor="start")
+    s.text(525, 232, "= NLe 360", size=20, weight="bold", color=GREEN, anchor="start")
+    note(s, "5 parts = NLe 600, so 1 part = NLe 120", 320, size=18, color=INK)
+    return s
+
+
+@fig
+def percent_multipliers():
+    s = Svg(800, 380, "Percentage increase and decrease as multipliers",
+            "A 15% increase takes 100% to 115%, so multiply by 1.15. A 20% decrease takes 100% to 80%, so multiply by 0.80. "
+            "For example, NLe 400 increased by 15% is NLe 460, and NLe 400 decreased by 20% is NLe 320.")
+    heading(s, "Increase or decrease = multiply")
+    def bar(y, pct, col, fill, lab, val):
+        w = pct * 4
+        s.rect(150, y, w, 48, fill=fill, stroke=col, width=2.5, rx=6)
+        s.text(140, y + 24, lab, size=16, weight="bold", color=col, anchor="end")
+        s.text(160 + w, y + 24, val, size=17, weight="bold", color=col, anchor="start")
+    bar(80, 100, INK, F_GREY, "original", "100%  NLe 400")
+    bar(160, 115, GREEN, F_GREEN, "+15%", "115%  × 1.15 = NLe 460")
+    bar(240, 80, RED, F_RED, "−20%", "80%  × 0.80 = NLe 320")
+    s.line(550, 70, 550, 300, color=MUTED, width=1.5, dash="6 5")
+    s.text(550, 320, "100% mark", size=14, color=MUTED)
+    note(s, "New amount = original × (100 ± r)/100", 358, size=17, color=INK)
+    return s
+
+
+@fig
+def simple_vs_compound():
+    s = Svg(800, 470, "Simple and compound interest compared",
+            "NLe 10,000 invested at 10% per year. With simple interest the amount grows by NLe 1,000 each year, a straight "
+            "line, reaching NLe 20,000 after 10 years. With compound interest it grows by 10% of the current amount, a "
+            "curve, reaching about NLe 25,937 after 10 years.")
+    heading(s, "NLe 10,000 at 10% a year")
+    ox, oy = 120, 400
+    def X(t):
+        return ox + t * 58
+    def Y(a):
+        return oy - (a - 10000) * 0.02
+    s.arrow(ox, oy, X(10.6), oy, color=INK, width=2)
+    s.arrow(ox, oy, ox, Y(27500), color=INK, width=2)
+    for t in range(0, 11, 2):
+        s.line(X(t), oy, X(t), oy + 6, color=INK, width=1.5)
+        s.text(X(t), oy + 22, str(t), size=14, color=MUTED)
+    for a in range(10000, 27000, 5000):
+        s.line(ox - 6, Y(a), ox, Y(a), color=INK, width=1.5)
+        s.text(ox - 10, Y(a), f"{a // 1000}k", size=14, color=MUTED, anchor="end")
+    s.text(X(5), oy + 46, "years", size=15, color=INK)
+    plot(s, lambda t: 10000 + 1000 * t, 0, 10, X, Y, color=BLUE, width=3)
+    plot(s, lambda t: 10000 * 1.1 ** t, 0, 10, X, Y, color=GREEN, width=3.5)
+    s.dot(X(10), Y(20000), r=6, color=BLUE)
+    s.dot(X(10), Y(25937), r=6, color=GREEN)
+    s.label(X(10) - 6, Y(20000) + 22, "simple: 20,000", size=15, color=BLUE, weight="bold", anchor="end")
+    s.label(X(10) - 6, Y(25937) - 4, "compound: 25,937", size=15, color=GREEN, weight="bold", anchor="end")
+    return s
+
+
+@fig
+def variation_graphs():
+    s = Svg(800, 520, "Graphs of the four kinds of variation",
+            "Direct variation y = kx is a straight line through the origin. Inverse variation y = k/x is a curve that falls as x "
+            "rises and never meets the axes. Partial variation y = a + kx is a straight line that cuts the y-axis above the "
+            "origin. y varies as the square of x, y = kx², is a parabola through the origin.")
+    heading(s, "What each kind of variation looks like")
+    panels = [(200, 140, "y ∝ x", "y = kx", lambda x: 0.8 * x, BLUE),
+              (600, 140, "y ∝ 1/x", "y = k/x", lambda x: 2.4 / x, GREEN),
+              (200, 370, "partial", "y = a + kx", lambda x: 1 + 0.5 * x, ORANGE),
+              (600, 370, "y ∝ x²", "y = kx²", lambda x: 0.28 * x * x, PURPLE)]
+    for cx, cy, t1, t2, fn, col in panels:
+        ox, oy, u = cx - 110, cy + 80, 36
+        s.arrow(ox, oy, ox + 6 * u, oy, color=INK, width=1.8)
+        s.arrow(ox, oy, ox, oy - 4.6 * u, color=INK, width=1.8)
+        lo = 0.55 if t1 == "y ∝ 1/x" else 0
+        plot(s, fn, lo, 5.4, lambda x: ox + x * u, lambda y: oy - y * u, color=col, width=3.2, ymax=4.3)
+        s.text(cx - 10, oy + 26, t1 + ":  " + t2, size=17, weight="bold", color=col)
+        s.text(ox - 8, oy + 14, "0", size=13, color=MUTED, anchor="end")
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:

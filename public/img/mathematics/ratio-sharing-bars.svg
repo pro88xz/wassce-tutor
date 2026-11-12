@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Sharing NLe 600 in the ratio 2 : 3</title>
+<desc id="d">Draw 2 equal boxes for Fatmata and 3 for Musa: 5 equal parts in all. Each part is 600 ÷ 5 = 120. Fatmata gets 2 × 120 = NLe 240 and Musa gets 3 × 120 = NLe 360.</desc>
+<defs></defs>
+<rect width="800" height="360" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Share NLe 600 in the ratio 2 : 3</text>
+<rect x="220.0" y="90.0" width="90.0" height="64.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="265.0" y="122.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">120</text>
+<rect x="315.0" y="90.0" width="90.0" height="64.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="360.0" y="122.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">120</text>
+<rect x="220.0" y="200.0" width="90.0" height="64.0" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="265.0" y="232.0" font-size="20" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">120</text>
+<rect x="315.0" y="200.0" width="90.0" height="64.0" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="360.0" y="232.0" font-size="20" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">120</text>
+<rect x="410.0" y="200.0" width="90.0" height="64.0" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="455.0" y="232.0" font-size="20" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">120</text>
+<text x="200.0" y="122.0" font-size="17" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">Fatmata (2)</text>
+<text x="200.0" y="232.0" font-size="17" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">Musa (3)</text>
+<text x="430.0" y="122.0" font-size="20" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">= NLe 240</text>
+<text x="525.0" y="232.0" font-size="20" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">= NLe 360</text>
+<text x="400.0" y="320.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">5 parts = NLe 600, so 1 part = NLe 120</text>
+</svg>
