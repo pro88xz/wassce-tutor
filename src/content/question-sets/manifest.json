@@ -243,5 +243,67 @@
    "d7f3a892-f39f-59a6-954c-015bc6567df5"
   ],
   "questions": 136
+ },
+ {
+  "name": "economics_set1_p1",
+  "label": "Economics: set 1 (foundations and production)",
+  "subject_slug": "economics",
+  "version": "0369901f5321",
+  "papers": [
+   "eb473f2b-9879-5007-9f03-11e7bac225ff",
+   "09e7f588-aed8-5dfd-8370-d5c10220c002",
+   "17ac9e67-c671-5339-a07b-9f492de306b5",
+   "4732872b-930b-5020-aee3-fb705c3d5bea",
+   "e7d0a7af-c305-5f79-a152-a0d566d9850b",
+   "e8208333-2b5d-5ec5-a5f5-79f0d80ad345",
+   "f64321e3-60a3-5d5e-8fbd-993476e42aa7"
+  ],
+  "questions": 56
+ },
+ {
+  "name": "economics_set2_p1",
+  "label": "Economics: set 2 (markets)",
+  "subject_slug": "economics",
+  "version": "d2d96f520472",
+  "papers": [
+   "65009ca2-7d1c-5f65-af43-67dc59d485fc",
+   "105130f1-b388-54ff-b9a8-222daf494ad3",
+   "f40920d0-f634-5df5-8e86-ddb1047380db",
+   "7383ffdb-e149-58b3-868a-3df3b4b7047c",
+   "ac571253-4238-5943-8997-f4813f44baba",
+   "27eb13cd-1a3d-5dbc-9544-1f82fd2f1a8b",
+   "6da67ae2-8b49-5beb-853f-9a9d4002ed4b"
+  ],
+  "questions": 56
+ },
+ {
+  "name": "economics_set3_p1",
+  "label": "Economics: set 3 (labour, population, sectors and the macroeconomy)",
+  "subject_slug": "economics",
+  "version": "9a7926735a50",
+  "papers": [
+   "c2b76be5-13b0-564b-b600-98559e0c479d",
+   "61a437b3-4f41-5c79-866a-a409126536ce",
+   "47cc78f2-65f3-54e0-9dc8-4a0cba19c9c1",
+   "22d9c7cd-667c-52aa-932c-ed29d26d67a5",
+   "03cea3ed-ec49-5055-b09d-0d7f427693ae",
+   "3e2a991e-4495-5480-8fb3-3302dd182b6e",
+   "ba612c11-dbcf-523b-ac60-312bb12be890",
+   "03687376-6190-5a00-8381-e98f7f6b11b5"
+  ],
+  "questions": 64
+ },
+ {
+  "name": "economics_set4_p1",
+  "label": "Economics: set 4 (trade and development)",
+  "subject_slug": "economics",
+  "version": "3e192243ca40",
+  "papers": [
+   "44953a9f-9434-514e-88ac-cf900bdeecd6",
+   "f1133a61-df5a-5f74-ac0f-2e3328075430",
+   "7fbf6a12-c8e9-51f6-a327-f86b4c5ff438",
+   "d12aae33-9ce5-5dca-9f72-4931d7e2bfa3"
+  ],
+  "questions": 32
  }
 ]

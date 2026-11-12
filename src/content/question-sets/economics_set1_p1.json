@@ -1,0 +1,2206 @@
+{
+ "name": "economics_set1_p1",
+ "label": "Economics: set 1 (foundations and production)",
+ "subject_slug": "economics",
+ "papers": [
+  {
+   "id": "eb473f2b-9879-5007-9f03-11e7bac225ff",
+   "topic": "Nature and Scope of Economics",
+   "title": "Nature and Scope of Economics: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on nature and scope of economics, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 100,
+   "questions": [
+    {
+     "id": "ed99cbb8-8a6a-5476-8e8e-62160a591ab0",
+     "key": "eco-nat-01",
+     "stem": "Economics as \"a science which studies human behaviour as a relationship between ends and scarce means which have alternative uses\" was defined by",
+     "image_url": null,
+     "explanation": "Robbins's scarcity definition (1932) is the one most widely used today.\n\n**Why the other options are wrong**\n\n- Adam Smith: Adam Smith gave the wealth definition.\n- Alfred Marshall: Alfred Marshall gave the welfare definition.\n- John Maynard Keynes: Keynes is known for macroeconomics, not this definition.",
+     "position": 1,
+     "options": [
+      {
+       "id": "52ebf6a6-5a39-595d-b9a6-d9c2111aedaf",
+       "label": "A",
+       "content": "Adam Smith",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "55e7ba2e-8ce1-5698-b7df-c57af0d1162d",
+       "label": "B",
+       "content": "Alfred Marshall",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "11961791-989d-57fb-a428-3e536764fc37",
+       "label": "C",
+       "content": "John Maynard Keynes",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "02c3cde4-a66d-5e40-9ae5-327f0e99e8ab",
+       "label": "D",
+       "content": "Lionel Robbins",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "63bce849-38f0-54cb-8ed1-77780fb17a76",
+     "key": "eco-nat-02",
+     "stem": "Which of the following is a normative statement?",
+     "image_url": null,
+     "explanation": "Normative statements say what ought to be; the word 'should' is the clue.\n\n**Why the other options are wrong**\n\n- The price of fuel rose by 10% last year.  \n  This can be checked against the facts, so it is positive.\n- A rise in price reduces the quantity demanded.  \n  This can be tested, so it is positive.\n- Sierra Leone held a census in 2015.  \n  This is a checkable fact, so it is positive.",
+     "position": 2,
+     "options": [
+      {
+       "id": "de2777b2-e51d-5e87-885d-10d5489d3b9f",
+       "label": "A",
+       "content": "The price of fuel rose by 10% last year.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "68b6eb09-c561-578e-b386-bd8cd852bd70",
+       "label": "B",
+       "content": "A rise in price reduces the quantity demanded.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1db38717-cbdd-530e-b1bf-28c8ce206c1e",
+       "label": "C",
+       "content": "Sierra Leone held a census in 2015.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "eacde8a1-65ee-560e-b2dc-cdb14ce5b56d",
+       "label": "D",
+       "content": "The government should reduce the price of fuel.",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "319edaa3-5972-5529-90ac-c92cfc4a35fe",
+     "key": "eco-nat-03",
+     "stem": "Which of these is studied in microeconomics?",
+     "image_url": null,
+     "explanation": "Microeconomics studies individual units: one consumer, one firm, one market.\n\n**Why the other options are wrong**\n\n- The level of national income: National income is a macroeconomic total.\n- The general rate of inflation: The general price level is a macroeconomic topic.\n- The national unemployment rate: Unemployment for the whole economy is macroeconomics.",
+     "position": 3,
+     "options": [
+      {
+       "id": "693dd31d-54e9-596b-a994-4d2c6a6647f4",
+       "label": "A",
+       "content": "The level of national income",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d875ed8a-f470-5d3d-8222-902387bb394b",
+       "label": "B",
+       "content": "The general rate of inflation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "78a767f7-b27b-58b2-9d57-0741c9121d0c",
+       "label": "C",
+       "content": "The national unemployment rate",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6338668c-e446-537f-ada6-cf97396fd661",
+       "label": "D",
+       "content": "How a firm decides how much to produce",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3ef86c3c-bd8c-54a8-9cb5-3b62499368b1",
+     "key": "eco-nat-04",
+     "stem": "Economics is described as a social science because it",
+     "image_url": null,
+     "explanation": "Like sociology and political science, economics studies people's behaviour in society.\n\n**Why the other options are wrong**\n\n- relies on laboratory experiments: Economists rarely use laboratory experiments.\n- deals only with money: Economics deals with choices and resources, not only money.\n- produces laws as exact as those of physics: Economic laws are tendencies that hold ceteris paribus.",
+     "position": 4,
+     "options": [
+      {
+       "id": "49b168c3-3e9e-5d38-9e42-e4d8817dd9d0",
+       "label": "A",
+       "content": "relies on laboratory experiments",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "95bedf3d-b80b-516a-a4db-7366e02e7990",
+       "label": "B",
+       "content": "deals only with money",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "756c3318-f73b-5d66-a920-6d75509aa103",
+       "label": "C",
+       "content": "produces laws as exact as those of physics",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "53721646-9f7d-540c-b665-322b66a9331f",
+       "label": "D",
+       "content": "studies human behaviour in society",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c7ea9d3d-108f-54f8-8f39-c4b262b82e11",
+     "key": "eco-nat-05",
+     "stem": "The phrase *ceteris paribus* means",
+     "image_url": null,
+     "explanation": "Economic laws hold only if other influences do not change at the same time.\n\n**Why the other options are wrong**\n\n- all things change together: It means the opposite: other influences are held constant.\n- in the long run: It is not about time.\n- by definition: It is a condition, not a definition.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d88f53ef-b386-5577-99ac-dde73ec86c04",
+       "label": "A",
+       "content": "other things being equal",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e6d7eba7-6bf8-5d10-95ec-9e48608bc011",
+       "label": "B",
+       "content": "all things change together",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f53c345f-780c-520d-8621-35a485575909",
+       "label": "C",
+       "content": "in the long run",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cd30ee89-d7be-56e3-bcb3-ec429d487500",
+       "label": "D",
+       "content": "by definition",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1e1520f4-4749-58e3-a0ef-ca5eae8828d0",
+     "key": "eco-nat-06",
+     "stem": "The deductive method of economic reasoning moves from",
+     "image_url": null,
+     "explanation": "Deduction starts with general principles and reasons logically to specific conclusions.\n\n**Why the other options are wrong**\n\n- particular facts to general laws: That is the inductive method.\n- opinions to facts: Reasoning does not turn opinions into facts.\n- graphs to tables: This describes presenting data, not reasoning.",
+     "position": 6,
+     "options": [
+      {
+       "id": "ed95ccc8-1026-5869-8e2b-15bbdc974c9b",
+       "label": "A",
+       "content": "particular facts to general laws",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ea7b9c13-0173-5fbf-a3d5-169fc4bf53ed",
+       "label": "B",
+       "content": "opinions to facts",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7ee11435-a930-5e3e-b155-265ecfd28afa",
+       "label": "C",
+       "content": "general assumptions to particular conclusions",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "41640e21-0a24-5350-97b0-9a1a8863bb77",
+       "label": "D",
+       "content": "graphs to tables",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b6bcb34e-9c5f-5a23-b700-bcce878fa5f0",
+     "key": "eco-nat-07",
+     "stem": "Adam Smith's definition of economics emphasised",
+     "image_url": null,
+     "explanation": "Adam Smith described economics as the science of wealth.\n\n**Why the other options are wrong**\n\n- welfare: Welfare was Alfred Marshall's emphasis.\n- scarcity and choice: That was Lionel Robbins's emphasis.\n- economic growth and development: This was not the focus of Smith's definition.",
+     "position": 7,
+     "options": [
+      {
+       "id": "efc908fd-b6df-57a4-a66b-f9f46b34e1fe",
+       "label": "A",
+       "content": "welfare",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4c57aa7a-64a0-59c4-b639-68ec011e5587",
+       "label": "B",
+       "content": "scarcity and choice",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "87fcbb07-15d6-561e-bc94-9ccb27ac96d1",
+       "label": "C",
+       "content": "economic growth and development",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5016696e-d9b3-500f-857a-3329f6823918",
+       "label": "D",
+       "content": "wealth",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9340fcf7-0a7c-555e-8035-5e15696a0ff2",
+     "key": "eco-nat-08",
+     "stem": "Which of these is a macroeconomic variable?",
+     "image_url": null,
+     "explanation": "Macroeconomics deals with totals and averages for the whole economy.\n\n**Why the other options are wrong**\n\n- the price of a bag of rice: One price in one market is microeconomic.\n- the wage of a teacher: One occupation's wage is microeconomic.\n- the output of one bakery: One firm's output is microeconomic.",
+     "position": 8,
+     "options": [
+      {
+       "id": "422861bb-33ab-5335-a830-1be33885e905",
+       "label": "A",
+       "content": "the general price level",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c07171f9-7212-550c-9464-f614498374f9",
+       "label": "B",
+       "content": "the price of a bag of rice",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "41caaf90-b8f6-5cda-866b-83f2b6cebd16",
+       "label": "C",
+       "content": "the wage of a teacher",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "815bfa4b-16b1-5fa2-8eda-a12c024ac08a",
+       "label": "D",
+       "content": "the output of one bakery",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "09e7f588-aed8-5dfd-8370-d5c10220c002",
+   "topic": "Basic Concepts of Economics",
+   "title": "Basic Concepts of Economics: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on basic concepts of economics, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 101,
+   "questions": [
+    {
+     "id": "582954b1-977f-5dbf-a111-a3b189c4c35f",
+     "key": "eco-bc-01",
+     "stem": "Scarcity in economics means that",
+     "image_url": null,
+     "explanation": "Scarcity is relative: wants are unlimited while the means to satisfy them are limited.\n\n**Why the other options are wrong**\n\n- goods are rare: Rice is common but still scarce in the economic sense.\n- goods are expensive: High prices are a result of scarcity, not its meaning.\n- a country has no resources: Every country has resources; they are limited relative to wants.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8ac01f0c-46e5-50d3-937e-1f02b0b1d65b",
+       "label": "A",
+       "content": "goods are rare",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "419477e9-72f6-58e8-a673-5bfcda5e06ec",
+       "label": "B",
+       "content": "goods are expensive",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5fc1da2c-759b-5d75-995a-a63a5646c4b1",
+       "label": "C",
+       "content": "resources are limited in relation to human wants",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "22ea279c-0b15-5dbc-8b50-c618c40ee2f4",
+       "label": "D",
+       "content": "a country has no resources",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "df31fc16-6bc7-5723-8c58-44e92fa9c5cf",
+     "key": "eco-bc-02",
+     "stem": "The opportunity cost of a choice is",
+     "image_url": null,
+     "explanation": "Opportunity (real) cost is the value of the next best alternative forgone.\n\n**Why the other options are wrong**\n\n- the money price paid: That is the money cost.\n- all the alternatives given up: Only the next best alternative counts.\n- the cost of producing the good: That is the production cost.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f9b6e31c-d505-5454-bcf0-d11f5c934bdb",
+       "label": "A",
+       "content": "the money price paid",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b5a90514-42a0-5fec-a9f0-8bb296c7f0a6",
+       "label": "B",
+       "content": "all the alternatives given up",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5af83780-e200-5cd8-9f0b-c49316ec358c",
+       "label": "C",
+       "content": "the cost of producing the good",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4a0d2032-c99e-5395-bbbf-b2a2d8a8db56",
+       "label": "D",
+       "content": "the next best alternative given up",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eba71713-caab-5270-8c88-b7b377bed63c",
+     "key": "eco-bc-03",
+     "stem": "Which of the following is a free good?",
+     "image_url": null,
+     "explanation": "A free good is so plentiful that it has no price and no one gives anything up to get it.\n\n**Why the other options are wrong**\n\n- treated pipe-borne water: Resources are used to treat and pipe it, so it is scarce and priced.\n- rice: Rice is scarce and has a price.\n- electricity: Electricity is produced at a cost and sold.",
+     "position": 3,
+     "options": [
+      {
+       "id": "eedfb9c9-3f6e-536b-91b7-03492b677f54",
+       "label": "A",
+       "content": "air",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6e471354-28c4-5f48-bab0-76c6e6a46652",
+       "label": "B",
+       "content": "treated pipe-borne water",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "75d26a72-3bd1-5d5b-8033-35f1ca04c630",
+       "label": "C",
+       "content": "rice",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bcbca7c4-518b-5c42-b61c-5af42a015965",
+       "label": "D",
+       "content": "electricity",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d49f95a2-aa84-5726-a813-d060fa44e48d",
+     "key": "eco-bc-04",
+     "stem": "A community's PPC passes through C (4 bags of rice, 14 of cassava) and D (6 bags of rice, 8 of cassava). What is the opportunity cost of moving from C to D?",
+     "image_url": null,
+     "explanation": "Cassava falls from 14 to 8, so 6 bags of cassava are given up for 2 more bags of rice.\n\n**Why the other options are wrong**\n\n- 2 bags of cassava: That is the extra rice gained, not the cassava given up.\n- 8 bags of cassava: That is the cassava produced at D.\n- 14 bags of cassava: That is the cassava produced at C.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c888c5c1-67b9-53d1-85cc-767675c5de7c",
+       "label": "A",
+       "content": "2 bags of cassava",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "57b192dc-57c0-5a5f-91de-47ff53744684",
+       "label": "B",
+       "content": "6 bags of cassava",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2f07f357-67cf-588e-a2a6-fd975136529b",
+       "label": "C",
+       "content": "8 bags of cassava",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1b610cf8-b20b-5155-8c3e-2b379fcb00b0",
+       "label": "D",
+       "content": "14 bags of cassava",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dbdeda82-e0d9-50fb-8df2-db28a9d3bb04",
+     "key": "eco-bc-05",
+     "stem": "A point inside a production possibility curve shows",
+     "image_url": null,
+     "explanation": "Inside the curve, more of both goods could be produced with the same resources.\n\n**Why the other options are wrong**\n\n- economic growth: Growth is shown by the whole curve shifting outwards.\n- an output that cannot be reached: That is a point outside the curve.\n- full employment of resources: Full employment is shown by points on the curve.",
+     "position": 5,
+     "options": [
+      {
+       "id": "893677b8-edda-5e2e-8178-8bd57e14139c",
+       "label": "A",
+       "content": "economic growth",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "251efda2-2df2-58ef-92e2-8c378eca2b5a",
+       "label": "B",
+       "content": "an output that cannot be reached",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9f219daa-50e8-5f90-a52e-3136ba0d8a50",
+       "label": "C",
+       "content": "unemployed or inefficiently used resources",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "10fe834a-9b62-554b-babf-4f64a2b96ec5",
+       "label": "D",
+       "content": "full employment of resources",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1a2559b6-0651-58a0-a297-49905dd6ed22",
+     "key": "eco-bc-06",
+     "stem": "An outward shift of the whole production possibility curve shows",
+     "image_url": null,
+     "explanation": "More resources or better technology let the economy produce more of both goods.\n\n**Why the other options are wrong**\n\n- rising opportunity cost: Opportunity cost is shown by movement along the curve.\n- unemployment: Unemployment is a point inside the curve.\n- a movement along the curve: A shift of the curve is not a movement along it.",
+     "position": 6,
+     "options": [
+      {
+       "id": "48ad2cf7-33b6-5cf7-bb50-2e9274e6b20a",
+       "label": "A",
+       "content": "rising opportunity cost",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c78dc307-ba5f-5d5b-aff5-e0dceaf90efd",
+       "label": "B",
+       "content": "unemployment",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8e3d7121-ee76-5c22-ba23-08c73ceb8372",
+       "label": "C",
+       "content": "a movement along the curve",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6ef77cbb-c859-5e81-afb0-4ca3e706261b",
+       "label": "D",
+       "content": "economic growth",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a65f95e8-6b92-54a3-853e-78d74158b5b3",
+     "key": "eco-bc-07",
+     "stem": "Fatu has NLe 50. Her wants, in order, are a book, a dress and a bag, each costing NLe 50. She buys the book. Her opportunity cost is",
+     "image_url": null,
+     "explanation": "The dress is her next best alternative, so it is the opportunity cost of the book.\n\n**Why the other options are wrong**\n\n- the bag: The bag is her third choice, not the next best.\n- the dress and the bag: Only the next best alternative counts.\n- NLe 50: That is the money cost, not the opportunity cost.",
+     "position": 7,
+     "options": [
+      {
+       "id": "9d9035cb-36da-5a42-b578-9fcfbc539b35",
+       "label": "A",
+       "content": "the dress",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c3b0fec4-b845-5d47-bc0d-f55bf7940b6b",
+       "label": "B",
+       "content": "the bag",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7d042c85-9d8d-5feb-b278-d67ca6291c79",
+       "label": "C",
+       "content": "the dress and the bag",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "558d0fd1-2fa9-5ac5-b6bb-1bd1b1ee639a",
+       "label": "D",
+       "content": "NLe 50",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "43552bd2-f748-584d-810b-28b419d2a59d",
+     "key": "eco-bc-08",
+     "stem": "A scale of preference is",
+     "image_url": null,
+     "explanation": "Ranking wants helps a person satisfy the most pressing ones first.\n\n**Why the other options are wrong**\n\n- a list of the prices of goods: Prices are not a ranking of wants.\n- a table of opportunity costs: It ranks wants; opportunity cost follows from it.\n- a graph of demand: A demand curve is something else.",
+     "position": 8,
+     "options": [
+      {
+       "id": "40630a72-b2e1-53df-9bf9-ae247c2a6ced",
+       "label": "A",
+       "content": "a list of the prices of goods",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5c67efed-5805-5e65-b255-a5de472ec32e",
+       "label": "B",
+       "content": "a table of opportunity costs",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d1c45a86-7776-50ce-9b59-43e0552fa0d2",
+       "label": "C",
+       "content": "a list of wants arranged in order of importance",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f4d20017-e082-508f-b297-3f0c4b4e8130",
+       "label": "D",
+       "content": "a graph of demand",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "17ac9e67-c671-5339-a07b-9f492de306b5",
+   "topic": "Tools of Economic Analysis",
+   "title": "Tools of Economic Analysis: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on tools of economic analysis, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 102,
+   "questions": [
+    {
+     "id": "a4329768-365c-5c4e-8958-4c87576563cb",
+     "key": "eco-tl-01",
+     "stem": "A kiosk sells 12, 15, 15, 18 and 20 bags of rice on five days. What is the mean daily sale?",
+     "image_url": null,
+     "explanation": "$\\bar{x} = \\dfrac{12 + 15 + 15 + 18 + 20}{5} = \\dfrac{80}{5} = 16$ bags.\n\n**Why the other options are wrong**\n\n- 15 bags: That is the mode (and the median), not the mean.\n- 80 bags: That is the total; divide by the number of days.\n- 20 bags: You divided by 4 instead of 5.",
+     "position": 1,
+     "options": [
+      {
+       "id": "33930ff3-762a-5226-91a1-4dc7bab63504",
+       "label": "A",
+       "content": "15 bags",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bde7b3b0-d72c-5a72-a2e4-1e677b945be2",
+       "label": "B",
+       "content": "16 bags",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "63be3645-cfd8-503f-942f-103ff3ca60c8",
+       "label": "C",
+       "content": "20 bags",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4d44b4e3-539c-532a-92d8-ca7873d9743c",
+       "label": "D",
+       "content": "80 bags",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2dde4b16-46b3-5c8f-88a2-4729c13f33f2",
+     "key": "eco-tl-02",
+     "stem": "What is the median of 7, 3, 9, 4 and 6?",
+     "image_url": null,
+     "explanation": "In order: 3, 4, 6, 7, 9. The middle (3rd) value is 6.\n\n**Why the other options are wrong**\n\n- 9: You took the middle of the unsorted list; arrange the values in order first.\n- 5.8: That is the mean.\n- 3: That is the position of the median (the 3rd value), not its value.",
+     "position": 2,
+     "options": [
+      {
+       "id": "66ee8bca-1ad3-589f-8f94-7b7b0366273d",
+       "label": "A",
+       "content": "3",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6e43e64f-ba20-5ce6-8751-8fc739b0fdaf",
+       "label": "B",
+       "content": "5.8",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "428d67f9-bc55-50f5-b45a-4440a2b554c2",
+       "label": "C",
+       "content": "6",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1372f876-c8f6-55be-b80d-58959b043e23",
+       "label": "D",
+       "content": "9",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9ac7c276-a784-5823-bd67-6cc1daeaabfe",
+     "key": "eco-tl-03",
+     "stem": "The ages of nine pupils are 15, 16, 16, 16, 17, 17, 18, 19 and 20. What is the modal age?",
+     "image_url": null,
+     "explanation": "16 occurs three times, more than any other age, so the mode is 16.\n\n**Why the other options are wrong**\n\n- 3 years: That is how often 16 occurs (its frequency), not the mode itself.\n- 17 years: That is the median (the 5th value).\n- 17.11 years: That is the mean.",
+     "position": 3,
+     "options": [
+      {
+       "id": "a36a7393-7b0e-5605-9d8f-c70b312172a4",
+       "label": "A",
+       "content": "3 years",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bcdc6e16-05b9-54e3-9827-8bcaa677a6ab",
+       "label": "B",
+       "content": "16 years",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d642ada3-6ce6-54c6-bc06-55c201201a51",
+       "label": "C",
+       "content": "17 years",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a5493ddd-0dde-5f8e-8be5-3c4388efe084",
+       "label": "D",
+       "content": "17.11 years",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ece87b0d-0e32-5cb8-8320-8d61622faca2",
+     "key": "eco-tl-04",
+     "stem": "A household spends NLe 150 of its NLe 600 monthly budget on rent. What angle represents rent on a pie chart?",
+     "image_url": null,
+     "explanation": "Angle $= \\dfrac{150}{600} \\times 360^\\circ = 90^\\circ$.\n\n**Why the other options are wrong**\n\n- 25 degrees: That is the percentage of the budget, not the angle.\n- 150 degrees: That is the amount spent, not the angle.\n- 4 degrees: You divided the total by the item.",
+     "position": 4,
+     "options": [
+      {
+       "id": "1d9602f7-5ba9-5f76-847c-e51c25524e41",
+       "label": "A",
+       "content": "4 degrees",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "78bbfafe-e5a9-5304-ae21-ef3ccc9c1675",
+       "label": "B",
+       "content": "25 degrees",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "40083478-7687-58fa-a390-8678bbca22dc",
+       "label": "C",
+       "content": "90 degrees",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fc74da23-bd50-5fba-a527-7abc742b5a59",
+       "label": "D",
+       "content": "150 degrees",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c86a361d-05a0-58fa-b588-5c1faddf2c9d",
+     "key": "eco-tl-05",
+     "stem": "A cup of rice costs NLe 9, 12, 10, 14 and 11 in five markets. What is the range of prices?",
+     "image_url": null,
+     "explanation": "Range = highest − lowest = 14 − 9 = NLe 5.\n\n**Why the other options are wrong**\n\n- 11.2 NLe: That is the mean.\n- 23 NLe: You added the highest and lowest; the range is their difference.\n- 11 NLe: That is the median.",
+     "position": 5,
+     "options": [
+      {
+       "id": "3a32dc8b-e229-5da2-b4c1-519dc2f59830",
+       "label": "A",
+       "content": "5 NLe",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ba8f3033-24bd-5780-88e0-1f71ae3d7c92",
+       "label": "B",
+       "content": "11 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "24d2d66f-e00c-5aa5-a763-ac1b76280237",
+       "label": "C",
+       "content": "11.2 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2c815e30-921f-5eb1-88d3-fb45217b1ae4",
+       "label": "D",
+       "content": "23 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bb65654c-626d-558e-b6de-10909c4db1d3",
+     "key": "eco-tl-06",
+     "stem": "Which is the most suitable way to show how a household's spending is shared between food, rent and transport?",
+     "image_url": null,
+     "explanation": "A pie chart shows each item's share of a whole.\n\n**Why the other options are wrong**\n\n- a line graph: Line graphs show changes over time.\n- a histogram: Histograms show grouped frequency data.\n- a scatter diagram: Scatter diagrams show the relationship between two variables.",
+     "position": 6,
+     "options": [
+      {
+       "id": "3e32f693-81d8-59a8-b903-9ff442242ebb",
+       "label": "A",
+       "content": "a line graph",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "226cb1cd-9955-50c1-8eb0-b81ef527a929",
+       "label": "B",
+       "content": "a histogram",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "db4e2cc0-7936-5d84-aff9-515417268a05",
+       "label": "C",
+       "content": "a scatter diagram",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b4734585-8110-56d3-ae6b-d55a66a4d61e",
+       "label": "D",
+       "content": "a pie chart",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3993f035-a61c-5ab6-b755-c3c9131a4d15",
+     "key": "eco-tl-07",
+     "stem": "In a histogram, the bars",
+     "image_url": null,
+     "explanation": "A histogram shows a frequency distribution of continuous, grouped data.\n\n**Why the other options are wrong**\n\n- are separated by equal gaps: Gaps are used in bar charts, not histograms.\n- must all be the same height: Heights show different frequencies.\n- show changes over time: Line graphs show changes over time.",
+     "position": 7,
+     "options": [
+      {
+       "id": "4b516871-425a-5494-8aca-1447e714a444",
+       "label": "A",
+       "content": "touch each other because the classes are continuous",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "080b81a5-c08b-5251-8df4-8d6f527c7537",
+       "label": "B",
+       "content": "are separated by equal gaps",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f1cedfe2-4aa7-577e-bdc5-372cfca8ef0d",
+       "label": "C",
+       "content": "must all be the same height",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4a55d2e1-4aa9-5034-8a1d-5ddc6cfb9eea",
+       "label": "D",
+       "content": "show changes over time",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "35e57707-a59d-5cee-930d-1af0b16738bb",
+     "key": "eco-tl-08",
+     "stem": "In a survey, 3 households have 2 members, 5 have 3 members and 2 have 4 members. What is the mean household size?",
+     "image_url": null,
+     "explanation": "$\\bar{x} = \\dfrac{\\sum fx}{\\sum f} = \\dfrac{6 + 15 + 8}{10} = \\dfrac{29}{10} = 2.9$.\n\n**Why the other options are wrong**\n\n- 9.67 members: You divided Σfx by the number of different sizes (3), not by Σf (10).\n- 3 members: That is the mode.\n- 29 members: That is Σfx; divide by the total frequency.",
+     "position": 8,
+     "options": [
+      {
+       "id": "169c852a-f07d-5b53-afdd-4488a36d5a74",
+       "label": "A",
+       "content": "2.9 members",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c1b3f07d-720b-55f2-967e-e5fb092074ea",
+       "label": "B",
+       "content": "3 members",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f7da9688-bd21-5fc2-b059-e97b9ee666ae",
+       "label": "C",
+       "content": "9.67 members",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "27b112b4-16c4-53f9-9630-48c4596204d6",
+       "label": "D",
+       "content": "29 members",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "4732872b-930b-5020-aee3-fb705c3d5bea",
+   "topic": "Economic Systems",
+   "title": "Economic Systems: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on economic systems, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 103,
+   "questions": [
+    {
+     "id": "77289db6-ec3f-5f3a-b0a8-b6a4455eac8c",
+     "key": "eco-es-01",
+     "stem": "In a capitalist economy, most productive resources are owned by",
+     "image_url": null,
+     "explanation": "Private ownership of the means of production is the basic feature of capitalism.\n\n**Why the other options are wrong**\n\n- the state: State ownership is a feature of socialism.\n- the community as a whole: Communal ownership is typical of traditional or socialist systems.\n- foreign governments: Ownership by foreign governments is not a feature of capitalism.",
+     "position": 1,
+     "options": [
+      {
+       "id": "50a1f151-e64f-50d8-8a91-f4030cd348fc",
+       "label": "A",
+       "content": "the state",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "64a642d3-8ada-5caf-b5d9-e6c965edc69c",
+       "label": "B",
+       "content": "private individuals and firms",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0e46d5cd-0c23-5ee8-a3d6-b16b8374600d",
+       "label": "C",
+       "content": "the community as a whole",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a79435e9-7e14-55e9-981f-47260398026a",
+       "label": "D",
+       "content": "foreign governments",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0bfdda04-ddc1-5013-b06e-e6e884824c31",
+     "key": "eco-es-02",
+     "stem": "Resources are allocated mainly by the price mechanism in",
+     "image_url": null,
+     "explanation": "In a free market, prices set by demand and supply decide what is produced.\n\n**Why the other options are wrong**\n\n- a socialist economy: Socialism allocates resources by central planning.\n- a traditional economy: A traditional economy relies on custom.\n- a command economy: A command economy is another name for a planned economy.",
+     "position": 2,
+     "options": [
+      {
+       "id": "af174ce7-c39b-5c2e-bb82-47dfb50f6512",
+       "label": "A",
+       "content": "a socialist economy",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1c0e14af-135f-57ca-bbfa-4d0eb1e565d2",
+       "label": "B",
+       "content": "a traditional economy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ea248dc1-49df-55f9-841d-c699b4fa77a4",
+       "label": "C",
+       "content": "a capitalist (free market) economy",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "bd075c00-ac9f-5cec-a998-6709177316cb",
+       "label": "D",
+       "content": "a command economy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4c26d4ea-6348-593f-84a4-4798a6b1474b",
+     "key": "eco-es-03",
+     "stem": "A main feature of a socialist economy is",
+     "image_url": null,
+     "explanation": "In socialism, planners decide what, how and for whom to produce.\n\n**Why the other options are wrong**\n\n- consumer sovereignty: Consumer sovereignty is a feature of capitalism.\n- the profit motive: Profit is the main motive in capitalism.\n- free enterprise: Free enterprise belongs to capitalism.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ce178430-d331-58a3-99bc-db4a06c8420d",
+       "label": "A",
+       "content": "consumer sovereignty",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3a740169-bdbe-5d0c-88cd-79440c5d2800",
+       "label": "B",
+       "content": "the profit motive",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "741edb86-c5a4-5d3c-93a2-99f437f7b806",
+       "label": "C",
+       "content": "free enterprise",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cd4411ea-9b1d-56e3-b3dd-2afe162b7cf2",
+       "label": "D",
+       "content": "central planning by the state",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1f71537c-88a2-5de6-a574-fe6a4f36c7f6",
+     "key": "eco-es-04",
+     "stem": "The economic system of Sierra Leone is best described as",
+     "image_url": null,
+     "explanation": "Both the private sector and the government own resources and produce goods and services.\n\n**Why the other options are wrong**\n\n- pure capitalism: The government also owns enterprises and provides services.\n- pure socialism: Most farms, shops and transport are privately run.\n- a traditional economy only: Traditional features exist, but the economy as a whole is mixed.",
+     "position": 4,
+     "options": [
+      {
+       "id": "08e80ca6-32d3-5b0c-8441-ae9dd7c3b46c",
+       "label": "A",
+       "content": "a mixed economy",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "31eda404-d642-5ea3-a209-cc903b2af6e6",
+       "label": "B",
+       "content": "pure capitalism",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "10b07cf9-2f0d-57c8-b255-5078f0c42850",
+       "label": "C",
+       "content": "pure socialism",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "13040c90-0363-56ae-a3df-2fc6132e644b",
+       "label": "D",
+       "content": "a traditional economy only",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c49184db-95bf-5c52-9d77-c6e26a774541",
+     "key": "eco-es-05",
+     "stem": "In a traditional economy, the basic economic questions are answered mainly by",
+     "image_url": null,
+     "explanation": "People produce what earlier generations produced, in the same way, mainly for their own use.\n\n**Why the other options are wrong**\n\n- the price mechanism: Prices decide in a market economy.\n- central planners: Planners decide in a command economy.\n- parliament: Parliament makes laws but does not decide production in a traditional economy.",
+     "position": 5,
+     "options": [
+      {
+       "id": "54b5fb63-074c-5fbe-87c2-71af2d78ff63",
+       "label": "A",
+       "content": "the price mechanism",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b8fd5009-9eb5-5641-b3c1-6bcfecc0f8dd",
+       "label": "B",
+       "content": "custom and tradition",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "79476e3f-e7a9-5017-ae4a-67b7aeb7b5ee",
+       "label": "C",
+       "content": "central planners",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bac53f28-7cba-5572-99fa-0d4555e233dd",
+       "label": "D",
+       "content": "parliament",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cfe2bf15-b2de-583d-bc47-67a08e48e4c8",
+     "key": "eco-es-06",
+     "stem": "A disadvantage of capitalism is",
+     "image_url": null,
+     "explanation": "Those who own property and capital earn far more, so inequality tends to grow.\n\n**Why the other options are wrong**\n\n- limited consumer choice: Limited choice is a disadvantage of socialism.\n- absence of the profit motive: Capitalism is driven by the profit motive.\n- slow decisions by central planners: Capitalism has no central planners.",
+     "position": 6,
+     "options": [
+      {
+       "id": "5a74f552-6eb6-5eaa-8dc3-6d0e8e4bb20e",
+       "label": "A",
+       "content": "limited consumer choice",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ec6b615b-3e3a-5f90-855a-f3dd8ac80bc8",
+       "label": "B",
+       "content": "absence of the profit motive",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "05f34865-3d87-588e-bf0f-5dcbb21e5da5",
+       "label": "C",
+       "content": "unequal distribution of income and wealth",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7d294645-5029-51de-91d2-7b2281b3134c",
+       "label": "D",
+       "content": "slow decisions by central planners",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "09686102-c319-5c39-9bec-f1a4c7f51622",
+     "key": "eco-es-07",
+     "stem": "Consumer sovereignty means that",
+     "image_url": null,
+     "explanation": "Firms produce what consumers are willing to buy; consumers 'vote' with their money.\n\n**Why the other options are wrong**\n\n- the government decides what is produced: That describes a planned economy.\n- consumers own the factories: Ownership is not what consumer sovereignty means.\n- firms can charge any price they like: Prices are set by demand and supply.",
+     "position": 7,
+     "options": [
+      {
+       "id": "aa7f76d9-f498-5daf-bd38-a5d9bd4fe47e",
+       "label": "A",
+       "content": "the government decides what is produced",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "af61dca6-68f4-5ed5-b8fc-843af775b766",
+       "label": "B",
+       "content": "consumers own the factories",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "96a59d25-ba50-5bff-980b-d5e44d29b255",
+       "label": "C",
+       "content": "firms can charge any price they like",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "320108c9-b854-53d1-8ce0-538282e604ed",
+       "label": "D",
+       "content": "consumers' spending decides what is produced",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "14ff98f4-edf5-599d-a526-577697525262",
+     "key": "eco-es-08",
+     "stem": "An advantage of socialism is",
+     "image_url": null,
+     "explanation": "The state can share income and provide services so that differences are smaller.\n\n**Why the other options are wrong**\n\n- a wide variety of consumer goods: Wide choice is an advantage of capitalism.\n- efficiency through competition: Competition is a feature of capitalism.\n- rapid innovation driven by profit: The profit motive belongs to capitalism.",
+     "position": 8,
+     "options": [
+      {
+       "id": "27eee471-c291-5a55-a461-e4e40973f9e8",
+       "label": "A",
+       "content": "a more equal distribution of income",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1d74d683-00a2-5aa4-b181-242294168649",
+       "label": "B",
+       "content": "a wide variety of consumer goods",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8c2ade1b-3ab5-5e88-833b-d7c8f8eebf9b",
+       "label": "C",
+       "content": "efficiency through competition",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c64e10de-ab13-5e2c-afdd-83a0ee670bfb",
+       "label": "D",
+       "content": "rapid innovation driven by profit",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e7d0a7af-c305-5f79-a152-a0d566d9850b",
+   "topic": "Factors of Production",
+   "title": "Factors of Production: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on factors of production, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 104,
+   "questions": [
+    {
+     "id": "4237776a-c414-54e3-93e6-90771cffc67c",
+     "key": "eco-fp-01",
+     "stem": "The reward for capital as a factor of production is",
+     "image_url": null,
+     "explanation": "Land earns rent, labour wages, capital interest and the entrepreneur profit.\n\n**Why the other options are wrong**\n\n- rent: Rent is the reward for land.\n- wages: Wages are the reward for labour.\n- profit: Profit is the reward for the entrepreneur.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a2b37451-7241-5bca-b065-c33894a13e80",
+       "label": "A",
+       "content": "rent",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5c7e95db-158c-502a-8f8b-d46fb58a4441",
+       "label": "B",
+       "content": "interest",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a3d14451-2e27-52cc-8bc4-b31a64a24788",
+       "label": "C",
+       "content": "wages",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8211451e-6323-5fac-be8d-157afa1dbfe2",
+       "label": "D",
+       "content": "profit",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ae5c2c47-69c3-50bf-936d-619d52185802",
+     "key": "eco-fp-02",
+     "stem": "Which factor of production bears uninsurable risks?",
+     "image_url": null,
+     "explanation": "The entrepreneur bears risks such as a fall in demand, and is rewarded with profit.\n\n**Why the other options are wrong**\n\n- the landlord: The landlord receives rent and does not bear the business risk.\n- the worker: Workers receive agreed wages.\n- the insurance company: Uninsurable risks, by definition, cannot be insured.",
+     "position": 2,
+     "options": [
+      {
+       "id": "2185d10a-2eba-5ce7-8756-6fea7b132200",
+       "label": "A",
+       "content": "the landlord",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "21a5cd41-8f4d-5185-9821-970da8d791c0",
+       "label": "B",
+       "content": "the worker",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d2c8ccff-0583-5a2a-83ee-05320da98d91",
+       "label": "C",
+       "content": "the entrepreneur",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4c2c6a69-5a18-537e-957f-600c06bb1c90",
+       "label": "D",
+       "content": "the insurance company",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d04b207e-62c6-517b-a11d-be7dd62c8351",
+     "key": "eco-fp-03",
+     "stem": "A main characteristic of land is that it is",
+     "image_url": null,
+     "explanation": "The total quantity of land cannot be increased, though it can be improved.\n\n**Why the other options are wrong**\n\n- made by people: Land is a gift of nature.\n- geographically mobile: Land cannot be moved from place to place.\n- without a reward: Land earns rent.",
+     "position": 3,
+     "options": [
+      {
+       "id": "017dd356-7470-51ab-89df-c68c706c4e39",
+       "label": "A",
+       "content": "made by people",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7366b845-452e-56c2-9911-31b8086e37c0",
+       "label": "B",
+       "content": "geographically mobile",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "351129fe-350a-52b2-960f-2f278d762056",
+       "label": "C",
+       "content": "without a reward",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "18a8aa6b-165c-5a51-a31c-634ba974f552",
+       "label": "D",
+       "content": "fixed in supply",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8e756c62-f259-538b-aeb1-b855e9e09747",
+     "key": "eco-fp-04",
+     "stem": "Which of these is an example of capital?",
+     "image_url": null,
+     "explanation": "Capital is man-made goods used to produce other goods.\n\n**Why the other options are wrong**\n\n- money saved in a bank: Money buys capital, but money itself is not capital.\n- a piece of farmland: Land is a separate factor of production.\n- a farmer's labour: Human effort is labour.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e3e2622a-ad09-568a-8a3b-4fcf4a348ea1",
+       "label": "A",
+       "content": "a fishing canoe used to catch fish",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3d655740-a0df-5344-a05d-b1bc65ccb8b4",
+       "label": "B",
+       "content": "money saved in a bank",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c9c3fad7-f0b0-5e70-9f7e-9126ac9663cd",
+       "label": "C",
+       "content": "a piece of farmland",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e2bff27a-ed9e-52c5-a906-75f9d2c5fd24",
+       "label": "D",
+       "content": "a farmer's labour",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f38be29d-6e6a-501f-ae28-6b93bb2b249b",
+     "key": "eco-fp-05",
+     "stem": "Capital formation requires",
+     "image_url": null,
+     "explanation": "Saving releases resources; investment turns them into capital goods.\n\n**Why the other options are wrong**\n\n- printing more money: Printing money does not create real capital goods.\n- higher consumption: More consumption leaves less to save.\n- importing more consumer goods: Consumer goods are not capital.",
+     "position": 5,
+     "options": [
+      {
+       "id": "3eb51478-df49-5b90-984d-9160772e26cb",
+       "label": "A",
+       "content": "printing more money",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1b12b8b3-1421-5e7d-be4a-d9cf3064d856",
+       "label": "B",
+       "content": "saving and investment",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a4c95ba1-7c1f-566c-86c5-3df64482324a",
+       "label": "C",
+       "content": "higher consumption",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "86e8f32e-54f7-5724-a9cf-a677bb8ab8c9",
+       "label": "D",
+       "content": "importing more consumer goods",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d8ea812d-f20f-5508-af83-d9ca96f4af46",
+     "key": "eco-fp-06",
+     "stem": "Geographical mobility of labour is",
+     "image_url": null,
+     "explanation": "Housing costs, family ties and lack of information reduce geographical mobility.\n\n**Why the other options are wrong**\n\n- the ease with which workers change occupation: That is occupational mobility.\n- the movement of capital between countries: That concerns capital, not labour.\n- the movement of land between owners: Land is a separate factor.",
+     "position": 6,
+     "options": [
+      {
+       "id": "b4df2eda-717b-541e-b66f-90d4ec2bdc56",
+       "label": "A",
+       "content": "the ease with which workers change occupation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "822137fa-40f1-59c0-afe2-96b74edc9ef7",
+       "label": "B",
+       "content": "the movement of capital between countries",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6efb25e6-034d-5aa1-aaa7-78254bbb6342",
+       "label": "C",
+       "content": "the ease with which workers move from one place to another",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f94ea830-a3a0-5640-aca1-2358bc43d633",
+       "label": "D",
+       "content": "the movement of land between owners",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2458b20a-bbb7-5075-af8b-4a89c315a444",
+     "key": "eco-fp-07",
+     "stem": "Labour-intensive methods of production are most suitable where",
+     "image_url": null,
+     "explanation": "Firms choose the least-cost combination of factors, given their prices.\n\n**Why the other options are wrong**\n\n- wages are very high: High wages favour capital-intensive methods.\n- machines are cheap and plentiful: Cheap machines favour capital-intensive methods.\n- output is very large and standardised: Large standardised output favours machinery.",
+     "position": 7,
+     "options": [
+      {
+       "id": "c0c5c3d2-408a-55d9-84b9-802b2d3ef36b",
+       "label": "A",
+       "content": "wages are very high",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3ed1dcba-2dc6-50d7-8a79-dbe54501b1ee",
+       "label": "B",
+       "content": "machines are cheap and plentiful",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "886042e3-fdcd-56b8-b5c7-3419ee158460",
+       "label": "C",
+       "content": "output is very large and standardised",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "455c267c-50ac-59af-b4c8-b892240b1fbf",
+       "label": "D",
+       "content": "labour is plentiful and capital is scarce",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "89be9686-4e7f-5a63-b5b9-d81c4f12dd5d",
+     "key": "eco-fp-08",
+     "stem": "Which of the following is a function of the entrepreneur?",
+     "image_url": null,
+     "explanation": "The entrepreneur combines land, labour and capital, makes decisions and bears risk.\n\n**Why the other options are wrong**\n\n- paying the rent of land to the government: This is not a defining function of the entrepreneur.\n- supplying only physical labour: That is the role of labour.\n- guaranteeing a fixed income to investors: The entrepreneur bears risk; income is not guaranteed.",
+     "position": 8,
+     "options": [
+      {
+       "id": "07dd37ab-7e69-564f-9871-bbed2a61f924",
+       "label": "A",
+       "content": "organising the other factors of production",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5fb31922-fbeb-531c-ae14-5ba11c7a37ef",
+       "label": "B",
+       "content": "paying the rent of land to the government",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "445d8e99-c772-5897-9e83-c17573326415",
+       "label": "C",
+       "content": "supplying only physical labour",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a8715bf8-a439-5b6b-aef5-fd9e4d74eb29",
+       "label": "D",
+       "content": "guaranteeing a fixed income to investors",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e8208333-2b5d-5ec5-a5f5-79f0d80ad345",
+   "topic": "Production Theory",
+   "title": "Production Theory: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on production theory, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 105,
+   "questions": [
+    {
+     "id": "b8f0ff0d-e0e7-51f6-a29b-559d038d04b3",
+     "key": "eco-pt-01",
+     "stem": "Total product rises from 36 units with 3 workers to 44 units with 4 workers. What is the marginal product of the 4th worker?",
+     "image_url": null,
+     "explanation": "MP = change in TP = 44 − 36 = 8 units.\n\n**Why the other options are wrong**\n\n- 11 units: That is the average product of 4 workers.\n- 44 units: That is the total product, not the extra output.\n- 80 units: You added the two totals; subtract instead.",
+     "position": 1,
+     "options": [
+      {
+       "id": "5870232b-4372-5c0c-a20e-fc71014d10a0",
+       "label": "A",
+       "content": "8 units",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b52d0120-f714-5009-8c73-5150c8029e59",
+       "label": "B",
+       "content": "11 units",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5db1b6d0-f783-5b85-ada2-4c767f3d846c",
+       "label": "C",
+       "content": "44 units",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9a0b589c-d1bd-5206-8353-decc9d13be4a",
+       "label": "D",
+       "content": "80 units",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "baaf4a8a-f01a-5f99-84bf-4432f68a7d40",
+     "key": "eco-pt-02",
+     "stem": "Five workers produce a total of 48 units. What is the average product?",
+     "image_url": null,
+     "explanation": "$AP = \\dfrac{TP}{L} = \\dfrac{48}{5} = 9.6$ units per worker.\n\n**Why the other options are wrong**\n\n- 240 units per worker: You multiplied instead of dividing.\n- 43 units per worker: You subtracted the number of workers.\n- 0.1 units per worker: You divided workers by output.",
+     "position": 2,
+     "options": [
+      {
+       "id": "7ea86582-9cb4-5c1a-9115-a33b1fe6d53a",
+       "label": "A",
+       "content": "0.1 units per worker",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cd8c0923-45df-5cd5-8506-f4e6c7671bf4",
+       "label": "B",
+       "content": "9.6 units per worker",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "652644f4-0307-5495-92c7-bbc934782225",
+       "label": "C",
+       "content": "43 units per worker",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3d089d23-8afc-5495-9998-2ba7220b8c92",
+       "label": "D",
+       "content": "240 units per worker",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d6089063-8cef-5092-9683-dea2e7009976",
+     "key": "eco-pt-03",
+     "stem": "The law of diminishing returns begins to operate when",
+     "image_url": null,
+     "explanation": "As more variable factors are added to a fixed factor, the extra output from each eventually falls.\n\n**Why the other options are wrong**\n\n- total product starts to fall: TP falls only later, when MP becomes negative.\n- average product becomes zero: AP does not become zero in the normal range.\n- marginal product becomes negative: That happens after diminishing returns have set in.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1273067e-8e36-5b80-bd97-7307ea0ed16a",
+       "label": "A",
+       "content": "total product starts to fall",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "82469ea8-f0d0-53d1-b0bf-c297fdd891e5",
+       "label": "B",
+       "content": "marginal product starts to fall",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5df0b6f4-2095-5673-be01-9311b0eddb42",
+       "label": "C",
+       "content": "average product becomes zero",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "16a3fd5d-4564-5fb8-824f-cd163eaf5f51",
+       "label": "D",
+       "content": "marginal product becomes negative",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "db708998-4ce0-5987-a6c2-2d612ea19d39",
+     "key": "eco-pt-04",
+     "stem": "When marginal product is zero, total product is",
+     "image_url": null,
+     "explanation": "TP rises while MP is positive, peaks when MP = 0 and falls when MP is negative.\n\n**Why the other options are wrong**\n\n- zero: TP is at its highest when MP is zero.\n- rising: TP rises only while MP is positive.\n- at its minimum: TP is at its peak, not its lowest.",
+     "position": 4,
+     "options": [
+      {
+       "id": "cdb78c41-6fe3-5d77-ab1d-9a06d96739a0",
+       "label": "A",
+       "content": "zero",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e900bcf7-1832-5cdc-bdc5-c75df2c8c6f2",
+       "label": "B",
+       "content": "rising",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4decfc69-35d3-5389-90e2-4a9ae601bd09",
+       "label": "C",
+       "content": "at its maximum",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f09c4cca-639d-58c4-b8c9-32dbd79508ba",
+       "label": "D",
+       "content": "at its minimum",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "59770d15-416b-53ae-9b20-31de7810c847",
+     "key": "eco-pt-05",
+     "stem": "Mining iron ore is an example of",
+     "image_url": null,
+     "explanation": "Primary (extractive) production takes resources from nature.\n\n**Why the other options are wrong**\n\n- secondary production: Secondary production processes raw materials.\n- tertiary production: Tertiary production provides services.\n- a direct service: Direct services are given to people, such as teaching.",
+     "position": 5,
+     "options": [
+      {
+       "id": "bbc082ce-66c0-52fc-9038-d3b34a1b406f",
+       "label": "A",
+       "content": "secondary production",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8e608742-1532-548f-8f27-ee450a985874",
+       "label": "B",
+       "content": "tertiary production",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5cca6445-ab88-5244-a35a-0b23f1d74846",
+       "label": "C",
+       "content": "a direct service",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "53936133-323c-5e62-b4e3-b66b88c00ee7",
+       "label": "D",
+       "content": "primary production",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dad027ad-367c-5225-b686-78374a287ada",
+     "key": "eco-pt-06",
+     "stem": "The most important limit to the division of labour is",
+     "image_url": null,
+     "explanation": "If few goods can be sold, there is no point splitting production into many tasks.\n\n**Why the other options are wrong**\n\n- the climate: Climate is not the main limit.\n- the price of raw materials: Raw material prices do not decide how far tasks can be split.\n- the number of trade unions: Trade unions are not the main limit.",
+     "position": 6,
+     "options": [
+      {
+       "id": "7bcbc596-3f9f-52ba-97ce-5591a85ebe8f",
+       "label": "A",
+       "content": "the size of the market",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "42e4f282-8b1f-578c-b685-4569c8a59073",
+       "label": "B",
+       "content": "the climate",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "881b695d-e4a3-5415-98fd-41069128d671",
+       "label": "C",
+       "content": "the price of raw materials",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a5cd708f-b2f5-5ce6-89dd-133ec51ada1e",
+       "label": "D",
+       "content": "the number of trade unions",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0c63c889-62b0-5cec-a16d-be3bb8a65b59",
+     "key": "eco-pt-07",
+     "stem": "A tailoring shop with 4 tailors makes 100 school uniforms a week. What is the labour productivity?",
+     "image_url": null,
+     "explanation": "Productivity $= \\dfrac{100}{4} = 25$ uniforms per tailor per week.\n\n**Why the other options are wrong**\n\n- 400 uniforms per tailor: You multiplied instead of dividing.\n- 96 uniforms per tailor: You subtracted the number of tailors.\n- 0.04 uniforms per tailor: You divided tailors by output.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b4952305-a068-5f65-92be-0b873baf33ba",
+       "label": "A",
+       "content": "0.04 uniforms per tailor",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "026a61a9-14df-5804-b591-564074316048",
+       "label": "B",
+       "content": "25 uniforms per tailor",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5ba17e43-f819-5ed6-88b2-8e4bae825d9d",
+       "label": "C",
+       "content": "96 uniforms per tailor",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "63c01762-8379-51c2-af90-8f52e798ca61",
+       "label": "D",
+       "content": "400 uniforms per tailor",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4945c7d6-34e4-5c4a-b774-00e994dee91a",
+     "key": "eco-pt-08",
+     "stem": "A teacher giving lessons is engaged in",
+     "image_url": null,
+     "explanation": "Services given directly to people, such as teaching and nursing, are tertiary production.\n\n**Why the other options are wrong**\n\n- primary production: Primary production extracts natural resources.\n- secondary production: Secondary production manufactures goods.\n- extractive production: Extractive is another name for primary production.",
+     "position": 8,
+     "options": [
+      {
+       "id": "33c83d77-914d-51b3-9a60-171f208a9608",
+       "label": "A",
+       "content": "primary production",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "67f5aa0a-5da9-5776-a581-f7c277a148a2",
+       "label": "B",
+       "content": "tertiary production (a direct service)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9da7d972-81d1-587e-bb3d-6114fd5db725",
+       "label": "C",
+       "content": "secondary production",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b3323bf7-8546-5083-9403-afa554eac82f",
+       "label": "D",
+       "content": "extractive production",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f64321e3-60a3-5d5e-8fbd-993476e42aa7",
+   "topic": "Concepts of Cost and Revenue",
+   "title": "Concepts of Cost and Revenue: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on concepts of cost and revenue, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 106,
+   "questions": [
+    {
+     "id": "69e2cf88-04b5-5a04-900f-9b1af5e01649",
+     "key": "eco-cr-01",
+     "stem": "A firm's fixed cost is NLe 100 and its variable cost at 3 units of output is NLe 90. What is its total cost?",
+     "image_url": null,
+     "explanation": "TC = FC + VC = 100 + 90 = NLe 190.\n\n**Why the other options are wrong**\n\n- 10 NLe: You subtracted; total cost is FC + VC.\n- 30 NLe: That is average variable cost.\n- 9000 NLe: You multiplied FC by VC.",
+     "position": 1,
+     "options": [
+      {
+       "id": "16a4884e-508e-5324-a1eb-9c55430beaa4",
+       "label": "A",
+       "content": "10 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "19bf5835-6ebf-5801-bad8-df717480f232",
+       "label": "B",
+       "content": "30 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3d4e99b3-7492-56d2-b5ad-367de5df9cd8",
+       "label": "C",
+       "content": "190 NLe",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7847c0b1-ec74-587d-8b4e-5bb3551d437e",
+       "label": "D",
+       "content": "9000 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "863a431a-029c-530e-bb87-565383e706d7",
+     "key": "eco-cr-02",
+     "stem": "The total cost of producing 4 units is NLe 220. What is the average total cost?",
+     "image_url": null,
+     "explanation": "$ATC = \\dfrac{TC}{Q} = \\dfrac{220}{4} = $ NLe 55.\n\n**Why the other options are wrong**\n\n- 880 NLe: You multiplied instead of dividing.\n- 216 NLe: You subtracted the output.\n- 30 NLe: That is the marginal cost of the 4th unit (220 − 190).",
+     "position": 2,
+     "options": [
+      {
+       "id": "991999b4-dd78-5444-9d42-2f28bbe80f57",
+       "label": "A",
+       "content": "30 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c0fb7c51-c2f0-5632-a98e-0c3ebf91ab39",
+       "label": "B",
+       "content": "55 NLe",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8795e11e-ca35-5e3b-a4b3-39b2e25582fc",
+       "label": "C",
+       "content": "216 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d949b930-54ea-5ff6-8a75-b1648a8d2c38",
+       "label": "D",
+       "content": "880 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cfb127e9-8ab2-5ec6-a234-8c169b9c4877",
+     "key": "eco-cr-03",
+     "stem": "Total cost is NLe 220 at 4 units and NLe 270 at 5 units. What is the marginal cost of the 5th unit?",
+     "image_url": null,
+     "explanation": "MC = TC₅ − TC₄ = 270 − 220 = NLe 50.\n\n**Why the other options are wrong**\n\n- 54 NLe: That is the average total cost at 5 units.\n- 270 NLe: That is the total cost, not the extra cost.\n- 490 NLe: You added the totals.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8bbe7bb1-e20e-5609-af08-b1497b129ca5",
+       "label": "A",
+       "content": "50 NLe",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "16eae27b-d2c8-5ee8-8aa1-2b068041db8f",
+       "label": "B",
+       "content": "54 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ccd3f9cc-a5c0-52f3-a724-261c6e09df57",
+       "label": "C",
+       "content": "270 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0888f570-b1af-5752-afb2-3e3a75a49be3",
+       "label": "D",
+       "content": "490 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e70dc54c-855b-582c-a591-acc305ad075f",
+     "key": "eco-cr-04",
+     "stem": "A firm's fixed cost is NLe 100. What is its average fixed cost when it produces 4 units?",
+     "image_url": null,
+     "explanation": "$AFC = \\dfrac{FC}{Q} = \\dfrac{100}{4} = $ NLe 25.\n\n**Why the other options are wrong**\n\n- 400 NLe: You multiplied instead of dividing.\n- 96 NLe: You subtracted the output.\n- 0.04 NLe: You divided the output by the fixed cost.",
+     "position": 4,
+     "options": [
+      {
+       "id": "624b7473-8eab-55d9-8351-737f539d0ab9",
+       "label": "A",
+       "content": "0.04 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b9ebd0a8-804e-5fa1-8235-2203653e7e30",
+       "label": "B",
+       "content": "25 NLe",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "63062b63-a179-53c4-a937-d4fe73899da1",
+       "label": "C",
+       "content": "96 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e31f9db5-7fe2-53a9-a39d-50312b04a3e7",
+       "label": "D",
+       "content": "400 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "34e546bd-7871-5eb5-82d3-5fa3ac133b87",
+     "key": "eco-cr-05",
+     "stem": "A sandal maker sells 3 pairs at NLe 16 each, or 4 pairs at NLe 14 each. What is the marginal revenue of the 4th pair?",
+     "image_url": null,
+     "explanation": "TR₃ = 3 × 16 = 48; TR₄ = 4 × 14 = 56; MR = 56 − 48 = NLe 8.\n\n**Why the other options are wrong**\n\n- 14 NLe: That is the price of the 4th pair; MR is the change in total revenue.\n- 56 NLe: That is total revenue from 4 pairs.\n- 2 NLe: That is the fall in price, not the change in revenue.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e4e39198-3a40-57cf-94e6-bb84778a1dbe",
+       "label": "A",
+       "content": "2 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ff29df23-ee14-5473-8f40-9a918920287b",
+       "label": "B",
+       "content": "8 NLe",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4bc4a0a6-bd58-59e6-892d-7b4da4586506",
+       "label": "C",
+       "content": "14 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0d72846f-53af-5f0b-b0f2-835e9e023eb1",
+       "label": "D",
+       "content": "56 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "87452027-427d-58ab-8025-885308d96b8c",
+     "key": "eco-cr-06",
+     "stem": "A firm maximises its profit at the output where",
+     "image_url": null,
+     "explanation": "Profit rises while MR > MC and falls once MC > MR, so it is greatest where MC = MR.\n\n**Why the other options are wrong**\n\n- total revenue is at its maximum: Highest revenue is not highest profit.\n- average cost is at its minimum: Lowest average cost is not necessarily the most profitable output.\n- price equals average fixed cost: This has no special meaning for profit.",
+     "position": 6,
+     "options": [
+      {
+       "id": "df887c6e-e527-54f9-ab13-709b96213cee",
+       "label": "A",
+       "content": "total revenue is at its maximum",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5bbdc370-5eb1-5eef-add0-02cbda247bf0",
+       "label": "B",
+       "content": "average cost is at its minimum",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eb9f0221-09be-57da-8c08-e8edcc4480a7",
+       "label": "C",
+       "content": "marginal cost equals marginal revenue",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7de6245c-f386-5cb2-ad51-1c3f2d831628",
+       "label": "D",
+       "content": "price equals average fixed cost",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3a8f7c6c-b258-556d-b7bf-9e7cefdf8598",
+     "key": "eco-cr-07",
+     "stem": "When a firm can sell any quantity at a constant price,",
+     "image_url": null,
+     "explanation": "Every unit sells for the same price, so P = AR = MR.\n\n**Why the other options are wrong**\n\n- marginal revenue is greater than average revenue: With a constant price, MR equals AR.\n- marginal revenue is always zero: Each unit adds its price to revenue.\n- average revenue is less than marginal revenue: They are equal at a constant price.",
+     "position": 7,
+     "options": [
+      {
+       "id": "4f4e299d-67cf-5d05-a010-2d8ba2aec9f8",
+       "label": "A",
+       "content": "marginal revenue is greater than average revenue",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7ede686e-e12b-55e8-9e5c-dfb957b52d43",
+       "label": "B",
+       "content": "marginal revenue is always zero",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f6546308-694f-590f-9668-f44a84020a5d",
+       "label": "C",
+       "content": "average revenue is less than marginal revenue",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "31baa386-0c51-539d-adda-be5047b04881",
+       "label": "D",
+       "content": "price, average revenue and marginal revenue are equal",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a640e1e4-41ee-5cd7-841f-4f8438c6699b",
+     "key": "eco-cr-08",
+     "stem": "A firm's total revenue is NLe 300 and its total cost is NLe 270. What is its profit?",
+     "image_url": null,
+     "explanation": "Profit = TR − TC = 300 − 270 = NLe 30.\n\n**Why the other options are wrong**\n\n- 570 NLe: You added revenue and cost.\n- -30 NLe: You subtracted revenue from cost; profit = TR − TC.\n- 1.11 NLe: You divided revenue by cost.",
+     "position": 8,
+     "options": [
+      {
+       "id": "97e52b14-a99b-5456-b845-6e30f82bb4fc",
+       "label": "A",
+       "content": "-30 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9ceb6118-ba9e-5382-83bb-ecfbdfbaa04f",
+       "label": "B",
+       "content": "1.11 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a6b8064f-cf53-5ece-94ad-e9a8bbfeff29",
+       "label": "C",
+       "content": "30 NLe",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "14d16ac2-c4e7-5d86-aed5-ce3f1515fae2",
+       "label": "D",
+       "content": "570 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "0369901f5321"
+}

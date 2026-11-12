@@ -1,0 +1,1264 @@
+{
+ "name": "economics_set4_p1",
+ "label": "Economics: set 4 (trade and development)",
+ "subject_slug": "economics",
+ "papers": [
+  {
+   "id": "44953a9f-9434-514e-88ac-cf900bdeecd6",
+   "topic": "International Trade",
+   "title": "International Trade: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on international trade, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 160,
+   "questions": [
+    {
+     "id": "f1e275dc-dbc8-5006-9262-1979b11a0b25",
+     "key": "eco-tr-01",
+     "stem": "A country has a comparative advantage in a good when it can produce it",
+     "image_url": null,
+     "explanation": "Comparative advantage compares opportunity costs, not total output.\n\n**Why the other options are wrong**\n\n- in larger quantities with the same resources: That is absolute advantage.\n- and export it in the largest quantity: Export volume is not the test.\n- and sell it at the highest world price: Price is not the test.",
+     "position": 1,
+     "options": [
+      {
+       "id": "9a8b98df-8a36-5e3a-b382-da12d5d58ce2",
+       "label": "A",
+       "content": "in larger quantities with the same resources",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b49d8a30-afdd-5ad9-b054-b09d858b10ba",
+       "label": "B",
+       "content": "and export it in the largest quantity",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f3d7e959-76e4-5473-ae46-9b8e8b1640cf",
+       "label": "C",
+       "content": "at a lower opportunity cost than another country",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "edcd8ae8-8e85-531d-be33-2700ba7d8eac",
+       "label": "D",
+       "content": "and sell it at the highest world price",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "00784656-1757-5485-aede-c0e21b5e06a6",
+     "key": "eco-tr-02",
+     "stem": "With the same resources, country A can produce 20 tonnes of rice or 10 bales of cloth. What is the opportunity cost of 1 tonne of rice in A?",
+     "image_url": null,
+     "explanation": "1 tonne of rice costs $\\dfrac{10}{20} = 0.5$ bales of cloth.\n\n**Why the other options are wrong**\n\n- 2 bales of cloth: That is the opportunity cost of 1 bale of cloth in tonnes of rice.\n- 10 bales of cloth: That is the total cloth A could make.\n- 30 bales of cloth: You added the two outputs.",
+     "position": 2,
+     "options": [
+      {
+       "id": "bc333605-d7de-5a26-bf93-e316fcdb2fca",
+       "label": "A",
+       "content": "0.5 bales of cloth",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "36d241d7-696a-570e-80d1-53dc655a0f42",
+       "label": "B",
+       "content": "2 bales of cloth",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d26d2bea-7967-57e4-9161-373eb2b324b8",
+       "label": "C",
+       "content": "10 bales of cloth",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "654940e6-c9ae-53b5-9593-3f6829e7777b",
+       "label": "D",
+       "content": "30 bales of cloth",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a305588d-c636-5219-b088-ac5d8e822219",
+     "key": "eco-tr-03",
+     "stem": "A country's export price index is 120 and its import price index is 150 (base year = 100). What are its terms of trade?",
+     "image_url": null,
+     "explanation": "Terms of trade $= \\dfrac{120}{150} \\times 100 = 80$: they have worsened by 20%.\n\n**Why the other options are wrong**\n\n- 125: You divided import prices by export prices.\n- 30: You subtracted the indices.\n- 270: You added the indices.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b54c68b0-c4f6-5bd6-9684-6503766e1f19",
+       "label": "A",
+       "content": "30",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6d113692-7cde-5107-93c2-7a7fcea6020c",
+       "label": "B",
+       "content": "80",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e7ad8cc9-920a-524d-9dc0-313bebe10600",
+       "label": "C",
+       "content": "125",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b3d5e3c0-bea3-530c-8425-38bff31c8ade",
+       "label": "D",
+       "content": "270",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1773482f-e4ed-5070-9c87-a5cb6be769ec",
+     "key": "eco-tr-04",
+     "stem": "A tariff is",
+     "image_url": null,
+     "explanation": "Tariffs raise the price of imports and earn revenue for the government.\n\n**Why the other options are wrong**\n\n- a limit on the quantity of a good that may be imported: That is a quota.\n- a complete ban on imports: That is an embargo.\n- a payment to local producers: That is a subsidy.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b9975591-2465-5ab0-92b7-340575e43128",
+       "label": "A",
+       "content": "a limit on the quantity of a good that may be imported",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "94e216cc-3129-516f-b543-2c211237bc4a",
+       "label": "B",
+       "content": "a complete ban on imports",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ed3731ad-c421-5c8c-b383-2b4dfa7eeb46",
+       "label": "C",
+       "content": "a tax on imported goods",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "879821e5-2955-52f7-aa49-33a0524c7c68",
+       "label": "D",
+       "content": "a payment to local producers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "358d33a0-7bd8-5918-ae06-c63931576b4a",
+     "key": "eco-tr-05",
+     "stem": "The infant industry argument for protection says that",
+     "image_url": null,
+     "explanation": "Once the industry grows large and efficient, protection should be removed.\n\n**Why the other options are wrong**\n\n- old industries should be protected for ever: The argument is for temporary protection of new industries.\n- all exports should be banned: It is about imports competing with new industries.\n- wages should be raised in new industries: It is about competition, not wages.",
+     "position": 5,
+     "options": [
+      {
+       "id": "07c93ed0-6301-5b25-ae2f-7214a6e1433e",
+       "label": "A",
+       "content": "new industries need temporary protection until they can compete",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d25205ed-f6d4-5168-9e86-bb1c6380ba7a",
+       "label": "B",
+       "content": "old industries should be protected for ever",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0cd42737-aa4a-5c1d-be40-9d8e2c247f00",
+       "label": "C",
+       "content": "all exports should be banned",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5215fe88-5cc3-5fab-96a4-9747ddc7728d",
+       "label": "D",
+       "content": "wages should be raised in new industries",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6ec38aae-3596-5c87-8ef1-91647c6728bd",
+     "key": "eco-tr-06",
+     "stem": "International trade differs from internal trade because international trade",
+     "image_url": null,
+     "explanation": "Currencies must be exchanged, and payments recorded in the balance of payments.\n\n**Why the other options are wrong**\n\n- never involves transport costs: International trade usually has higher transport costs.\n- faces no tariffs or quotas: Tariffs and quotas apply to international trade.\n- uses only one legal system: Each country has its own laws.",
+     "position": 6,
+     "options": [
+      {
+       "id": "6e595adf-a601-559e-b841-6a67eb487b7a",
+       "label": "A",
+       "content": "never involves transport costs",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d4b016b2-f284-5107-9e1c-1ddf4db3c3c2",
+       "label": "B",
+       "content": "faces no tariffs or quotas",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f9966b4a-3025-5d3d-85d8-2e5e2d6058f2",
+       "label": "C",
+       "content": "involves different currencies",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9ea36a73-89b1-5f60-8797-9dc34bf60fb1",
+       "label": "D",
+       "content": "uses only one legal system",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cf238c46-0b14-5121-a0a1-8dcd3537525f",
+     "key": "eco-tr-07",
+     "stem": "A bag of imported rice costs NLe 600 when it lands. What is its price after a 20% import tariff?",
+     "image_url": null,
+     "explanation": "Price = 600 + 20% of 600 = 600 + 120 = NLe 720.\n\n**Why the other options are wrong**\n\n- 620 NLe: You added NLe 20 instead of 20%.\n- 120 NLe: That is the tariff only.\n- 480 NLe: You subtracted the tariff.",
+     "position": 7,
+     "options": [
+      {
+       "id": "96728037-e151-578c-af15-b938fecb57e2",
+       "label": "A",
+       "content": "120 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "765fb2ae-7012-5bf2-a876-ff740a989b53",
+       "label": "B",
+       "content": "480 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "18c4b5f3-71b5-534e-88f9-931d891d449b",
+       "label": "C",
+       "content": "620 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8058adb7-5e91-5287-8b5c-6b4086fcb9e5",
+       "label": "D",
+       "content": "720 NLe",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1c6bf8f1-1d77-5645-89e0-8ffce9ca8039",
+     "key": "eco-tr-08",
+     "stem": "Sierra Leone's main exports are",
+     "image_url": null,
+     "explanation": "Minerals earn most of the country's export income; cocoa and coffee are important cash crops.\n\n**Why the other options are wrong**\n\n- petroleum products: Sierra Leone imports most of its fuel.\n- rice: Sierra Leone imports much of its rice.\n- machinery and vehicles: These are major imports.",
+     "position": 8,
+     "options": [
+      {
+       "id": "0adf51c2-1761-5edf-ad48-d784533ba65e",
+       "label": "A",
+       "content": "petroleum products",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9850b006-a783-5c2a-9a68-6ef059012b42",
+       "label": "B",
+       "content": "rice",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "464e0dff-462c-58dc-b78e-f25e2a4cbe92",
+       "label": "C",
+       "content": "machinery and vehicles",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "57c422b6-1603-5918-8e50-d056b28395cb",
+       "label": "D",
+       "content": "minerals such as iron ore, rutile and diamonds",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f1133a61-df5a-5f74-ac0f-2e3328075430",
+   "topic": "Balance of Payments and Exchange Rates",
+   "title": "Balance of Payments and Exchange Rates: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on balance of payments and exchange rates, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 161,
+   "questions": [
+    {
+     "id": "5116e663-1e01-5189-97d8-d0d39c29e8c7",
+     "key": "eco-bp-01",
+     "stem": "A country exports goods worth US$900 million and imports goods worth US$1,300 million. What is its balance of trade?",
+     "image_url": null,
+     "explanation": "Balance of trade = exports − imports of goods = 900 − 1,300 = −US$400 million (a deficit).\n\n**Why the other options are wrong**\n\n- 400 US$ million: Imports are larger than exports, so the balance is negative (a deficit).\n- 2200 US$ million: You added exports and imports.\n- 1300 US$ million: That is the value of imports.",
+     "position": 1,
+     "options": [
+      {
+       "id": "856850f3-7eb6-503e-ae6f-da5bf1535758",
+       "label": "A",
+       "content": "-400 US$ million",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b0e160a8-2dba-527d-ac4d-98d47c03c3ef",
+       "label": "B",
+       "content": "400 US$ million",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "75addda1-88ba-593c-b223-703e12d898f7",
+       "label": "C",
+       "content": "1300 US$ million",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "84cb3512-bc7d-5dea-b25d-e463aa043805",
+       "label": "D",
+       "content": "2200 US$ million",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d57ea4aa-1fcc-525d-b4b5-04a5b1d4a704",
+     "key": "eco-bp-02",
+     "stem": "The balance of trade records",
+     "image_url": null,
+     "explanation": "The balance of trade is the visible part of the current account.\n\n**Why the other options are wrong**\n\n- all transactions with the rest of the world: That is the balance of payments.\n- trade in services only: Services are invisible trade, part of the current account.\n- flows of investment and loans: Those are in the capital and financial account.",
+     "position": 2,
+     "options": [
+      {
+       "id": "30ba6d64-98e7-5d33-8086-c22192fc839c",
+       "label": "A",
+       "content": "exports and imports of goods only",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "57d1838d-6114-5da1-8d1d-5e4595beb73b",
+       "label": "B",
+       "content": "all transactions with the rest of the world",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c6e434da-df45-5715-8f66-d8c84ccd000a",
+       "label": "C",
+       "content": "trade in services only",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f0c1db53-4cb3-55d5-bac8-82faa9a2c4fc",
+       "label": "D",
+       "content": "flows of investment and loans",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f793f156-318c-5bd5-956e-298c862b928a",
+     "key": "eco-bp-03",
+     "stem": "Money sent home by Sierra Leoneans working abroad is recorded in the",
+     "image_url": null,
+     "explanation": "Remittances are one-way transfers with nothing given in return.\n\n**Why the other options are wrong**\n\n- capital and financial account: That records investment and loans.\n- official reserves: Reserves are held by the central bank.\n- balance of trade: The balance of trade covers goods only.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b8beac5a-952c-50a5-b97d-8b734a974959",
+       "label": "A",
+       "content": "capital and financial account",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9edf0267-37e6-573f-86bb-16f532133516",
+       "label": "B",
+       "content": "current account (as secondary income or transfers)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c3d955a8-5b81-5c13-b59d-7a47fc6a0bd6",
+       "label": "C",
+       "content": "official reserves",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dbfca2ce-d2a6-561e-9c68-777bd53c5ec7",
+       "label": "D",
+       "content": "balance of trade",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d099220e-51bb-5455-9730-e0ed779e3cdf",
+     "key": "eco-bp-04",
+     "stem": "The exchange rate is NLe 24 = US$1. How many leones does US$500 cost?",
+     "image_url": null,
+     "explanation": "500 × 24 = NLe 12,000.\n\n**Why the other options are wrong**\n\n- 20.83 NLe: You divided instead of multiplying.\n- 524 NLe: You added the numbers.\n- 476 NLe: You subtracted the numbers.",
+     "position": 4,
+     "options": [
+      {
+       "id": "9d2fd058-4062-5b6a-b777-11900b2a6850",
+       "label": "A",
+       "content": "20.83 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a197b758-63af-56f6-ad2c-c65d6f168c29",
+       "label": "B",
+       "content": "476 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2e41075b-6a57-56c0-b8f9-2d11214ec143",
+       "label": "C",
+       "content": "524 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1630ba20-23bb-5540-965c-e645e824e44c",
+       "label": "D",
+       "content": "12000 NLe",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f748ac76-1ec9-5a79-98a9-8ab1523c40b4",
+     "key": "eco-bp-05",
+     "stem": "Devaluation is",
+     "image_url": null,
+     "explanation": "Devaluation is a government or central bank decision; depreciation happens in the market.\n\n**Why the other options are wrong**\n\n- a fall in a currency's value caused by market forces: That is depreciation.\n- an official increase in the value of a currency: That is revaluation.\n- a cut in the central bank's interest rate: That is a monetary policy action.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ead3a912-3244-5403-b8b4-4b6a123b7005",
+       "label": "A",
+       "content": "a fall in a currency's value caused by market forces",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a8576a65-fa39-5a20-bb61-eda4fbcd03c5",
+       "label": "B",
+       "content": "an official increase in the value of a currency",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "09b7dea1-7256-5a9e-8ae9-b5a1969a01bf",
+       "label": "C",
+       "content": "an official reduction in the value of a currency under a fixed exchange rate",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0e01b37e-656a-5cfc-8571-8d5453b5e679",
+       "label": "D",
+       "content": "a cut in the central bank's interest rate",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e4a26a9a-5167-5517-b375-830af36847f2",
+     "key": "eco-bp-06",
+     "stem": "A depreciation of the leone against the US dollar makes",
+     "image_url": null,
+     "explanation": "More leones are needed per dollar, so imports cost more at home.\n\n**Why the other options are wrong**\n\n- imports cheaper in leones: Each dollar of imports now costs more leones.\n- exports dearer to foreign buyers: Exports become cheaper in foreign currency.\n- no difference to trade: Prices of traded goods change.",
+     "position": 6,
+     "options": [
+      {
+       "id": "561de52f-7c52-51f0-bb83-a7981e2aa643",
+       "label": "A",
+       "content": "imports cheaper in leones",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6fcbfa33-2891-574d-8a72-336c3a071618",
+       "label": "B",
+       "content": "exports dearer to foreign buyers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d22438c1-215e-5022-819c-7bc65cfbd38a",
+       "label": "C",
+       "content": "no difference to trade",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "be710f70-74a1-5913-b0a2-7f0a5dd68513",
+       "label": "D",
+       "content": "imports dearer in leones and exports cheaper to foreign buyers",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "98463d7d-50c8-5337-ba19-108f89471a0e",
+     "key": "eco-bp-07",
+     "stem": "A main function of the International Monetary Fund (IMF) is to",
+     "image_url": null,
+     "explanation": "The IMF also promotes exchange rate stability and advises on economic policy.\n\n**Why the other options are wrong**\n\n- give long-term loans for development projects: That is the World Bank's role.\n- issue the leone: The Bank of Sierra Leone issues the leone.\n- run the ECOWAS free trade scheme: That is an ECOWAS institution's role.",
+     "position": 7,
+     "options": [
+      {
+       "id": "d2dc1159-981e-5137-886b-05e69225acae",
+       "label": "A",
+       "content": "give short- and medium-term loans to countries with balance of payments problems",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "316eb4e8-f770-5890-95fe-e197631d473b",
+       "label": "B",
+       "content": "give long-term loans for development projects",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eb1175b2-f656-5369-929c-c8ff2d639ab7",
+       "label": "C",
+       "content": "issue the leone",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e800fe69-cbfd-5970-a28b-c4fd72f5de08",
+       "label": "D",
+       "content": "run the ECOWAS free trade scheme",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1fc9ed08-1517-5e48-842c-2216ef756701",
+     "key": "eco-bp-08",
+     "stem": "A country has a visible balance of −400, a services balance of −200, net primary income of −120 and net transfers of +420 (US$ million). What is its current account balance?",
+     "image_url": null,
+     "explanation": "Current account = −400 − 200 − 120 + 420 = −US$300 million (a deficit).\n\n**Why the other options are wrong**\n\n- -720 US$ million: You left out the transfers.\n- 300 US$ million: The current account is in deficit, so the balance is negative.\n- 1140 US$ million: You added all the figures as if they were positive.",
+     "position": 8,
+     "options": [
+      {
+       "id": "2e28d2cc-19e3-5a85-81c0-c07e4feb4df2",
+       "label": "A",
+       "content": "-720 US$ million",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "35e23989-5a2a-5897-a884-5ea1809f4536",
+       "label": "B",
+       "content": "-300 US$ million",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "40e81ebb-bbd0-55ea-a76e-c4b98b8e4d58",
+       "label": "C",
+       "content": "300 US$ million",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5911c780-c98c-5f37-ac7e-359857610887",
+       "label": "D",
+       "content": "1140 US$ million",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7fbf6a12-c8e9-51f6-a327-f86b4c5ff438",
+   "topic": "Economic Growth, Development, and Planning",
+   "title": "Economic Growth, Development, and Planning: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on economic growth, development, and planning, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 162,
+   "questions": [
+    {
+     "id": "3feb3ef9-c32a-52b5-b310-9fa8a62d64e7",
+     "key": "eco-dv-01",
+     "stem": "Economic development differs from economic growth because development",
+     "image_url": null,
+     "explanation": "Growth is quantitative (more output); development is qualitative as well (better lives).\n\n**Why the other options are wrong**\n\n- means only a rise in real GDP: That is economic growth.\n- means only a rise in population: Population growth is not development.\n- refers only to the short run: Development is a long-term process.",
+     "position": 1,
+     "options": [
+      {
+       "id": "956af27f-dc04-50d6-86a5-ce1c9dd561cd",
+       "label": "A",
+       "content": "means only a rise in real GDP",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a2654a86-f212-582f-9f51-5dde57dc6b70",
+       "label": "B",
+       "content": "includes improvements in welfare such as health, education and less poverty",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ebbaa15e-6c50-5292-9cca-3728aadb4ba2",
+       "label": "C",
+       "content": "means only a rise in population",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "889303c1-4976-5a46-8a98-a24a58c67ca3",
+       "label": "D",
+       "content": "refers only to the short run",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ca0a14b9-ca8d-5260-afeb-9a2d722dc062",
+     "key": "eco-dv-02",
+     "stem": "The Human Development Index (HDI) combines measures of",
+     "image_url": null,
+     "explanation": "The HDI measures a long and healthy life, knowledge and a decent standard of living.\n\n**Why the other options are wrong**\n\n- GDP, inflation and unemployment: These are not the HDI's three dimensions.\n- population, exports and imports: These are not part of the HDI.\n- birth rate, death rate and migration: These are population measures.",
+     "position": 2,
+     "options": [
+      {
+       "id": "2bcd7efd-7e14-50e4-ad54-63d4d43d19ca",
+       "label": "A",
+       "content": "GDP, inflation and unemployment",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1a196138-68fc-56d9-afb9-6eb965ab6369",
+       "label": "B",
+       "content": "population, exports and imports",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1d6f11e8-3d53-5195-9666-3006023b09c0",
+       "label": "C",
+       "content": "life expectancy, education and income per head",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "51e52652-b3d4-5b63-a3e7-af57131d3e8b",
+       "label": "D",
+       "content": "birth rate, death rate and migration",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ad0a8ef9-d134-5627-9b17-c6f79e896e51",
+     "key": "eco-dv-03",
+     "stem": "In the vicious circle of poverty, low income leads directly to",
+     "image_url": null,
+     "explanation": "Low income → low saving → low investment → little capital → low productivity → low income.\n\n**Why the other options are wrong**\n\n- high investment: Low saving means low investment.\n- high productivity: Productivity stays low.\n- high saving: People with low incomes can save little.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1bef1c45-5a61-5e3f-80b8-65d8845d32c1",
+       "label": "A",
+       "content": "high investment",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d95eb0bd-3f03-5c6c-aa89-d9560bba9435",
+       "label": "B",
+       "content": "high productivity",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fc9ea603-67d5-5408-b60e-0cccc5b78ca1",
+       "label": "C",
+       "content": "high saving",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fb11a6d2-4ef6-547d-8e36-f53f4183f9ba",
+       "label": "D",
+       "content": "low saving",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c624ca57-a4ff-5e7f-a6ff-53d0ce59e1cb",
+     "key": "eco-dv-04",
+     "stem": "A common characteristic of developing countries is",
+     "image_url": null,
+     "explanation": "Most workers are in agriculture, and exports are mainly minerals and cash crops.\n\n**Why the other options are wrong**\n\n- high income per head: Income per head is low.\n- slow population growth: Population usually grows fast.\n- a large manufacturing sector: Manufacturing is usually small.",
+     "position": 4,
+     "options": [
+      {
+       "id": "0e54aa57-f22a-5cb8-a8a5-ea4f52e40680",
+       "label": "A",
+       "content": "heavy dependence on primary production",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d264cfd8-634c-5b90-8cc5-91b9e681c94b",
+       "label": "B",
+       "content": "high income per head",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a5e8db04-e4ca-5095-92c2-f18acf22df52",
+       "label": "C",
+       "content": "slow population growth",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "16a210b4-c9d3-5d37-a69d-2ab150a85a2e",
+       "label": "D",
+       "content": "a large manufacturing sector",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4a4ebf6d-654d-53cb-8c2c-611d0fb1bfce",
+     "key": "eco-dv-05",
+     "stem": "A rolling plan is a development plan that is",
+     "image_url": null,
+     "explanation": "Rolling plans adapt to changing conditions.\n\n**Why the other options are wrong**\n\n- fixed for twenty years without change: That describes a rigid long-term plan.\n- made up only of compulsory targets: That describes imperative planning.\n- limited to a single sector: That is a partial (sectoral) plan.",
+     "position": 5,
+     "options": [
+      {
+       "id": "888aabb6-cbe5-560c-8f91-71d04abea52d",
+       "label": "A",
+       "content": "fixed for twenty years without change",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4a55df4d-5e46-5a70-862d-f5d4cd2eb85f",
+       "label": "B",
+       "content": "revised every year, with a new year added as each year ends",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "95e663e8-bd04-526d-9605-ff637e759599",
+       "label": "C",
+       "content": "made up only of compulsory targets",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "da5325dc-a48b-50bd-b7e9-0c54ebe2a899",
+       "label": "D",
+       "content": "limited to a single sector",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6d23f6ab-4bd0-5aae-9800-e9103ea7fefd",
+     "key": "eco-dv-06",
+     "stem": "Tied aid is aid that",
+     "image_url": null,
+     "explanation": "Tied aid may be dearer or less suitable than goods bought elsewhere.\n\n**Why the other options are wrong**\n\n- is a grant with no conditions: That is untied aid.\n- is a short-term loan from the IMF: IMF loans are not what tied aid means.\n- can be spent only within ECOWAS: Tied aid is tied to the donor country.",
+     "position": 6,
+     "options": [
+      {
+       "id": "e6be21a7-d5e3-5338-be9d-78074937b0d5",
+       "label": "A",
+       "content": "is a grant with no conditions",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2a368966-3b7e-5807-b53a-e6bab9f41197",
+       "label": "B",
+       "content": "is a short-term loan from the IMF",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ee91f466-1e16-5d94-a128-03143577db11",
+       "label": "C",
+       "content": "must be spent on goods and services from the donor country",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "718c7642-cf75-5f4c-a591-d4a056ccf318",
+       "label": "D",
+       "content": "can be spent only within ECOWAS",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "36135e9e-7034-5d41-8861-d123d58e6e15",
+     "key": "eco-dv-07",
+     "stem": "A country's real GDP rises from NLe 25,000 million to NLe 26,000 million in a year. What is its rate of economic growth?",
+     "image_url": null,
+     "explanation": "Growth rate $= \\dfrac{26000 - 25000}{25000} \\times 100 = 4\\%$.\n\n**Why the other options are wrong**\n\n- 1000 %: That is the increase in NLe million, not the percentage.\n- 3.85 %: You divided by the new GDP; divide by last year's.\n- 104 %: That is the new GDP as a percentage of the old.",
+     "position": 7,
+     "options": [
+      {
+       "id": "30f141af-0916-5274-800c-0552d73fb5a8",
+       "label": "A",
+       "content": "3.85 %",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b114e842-654d-5283-8768-62bad0f21dd0",
+       "label": "B",
+       "content": "4 %",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2c3aa8b8-6253-5526-88c5-5cfd6781d5e0",
+       "label": "C",
+       "content": "104 %",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "629b957d-46dc-5452-9a87-d2b5bfc1c52d",
+       "label": "D",
+       "content": "1000 %",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "882736d0-7b80-565c-938c-eedd1a5f4af1",
+     "key": "eco-dv-08",
+     "stem": "\"Brain drain\" refers to",
+     "image_url": null,
+     "explanation": "The country loses doctors, engineers and teachers it trained at great cost.\n\n**Why the other options are wrong**\n\n- the movement of unskilled workers from villages to towns: That is rural–urban migration.\n- the transfer of money out of the country: That is capital flight.\n- a fall in school enrolment: That is not what brain drain means.",
+     "position": 8,
+     "options": [
+      {
+       "id": "ca31b414-d3c5-554d-b0ca-802e6c7fd5ae",
+       "label": "A",
+       "content": "the movement of unskilled workers from villages to towns",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0247a99c-93b0-5ee7-a0f8-c94159db246f",
+       "label": "B",
+       "content": "the transfer of money out of the country",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "61424238-b07a-5dfb-a1cc-111a1055a184",
+       "label": "C",
+       "content": "a fall in school enrolment",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "82177a13-5765-5522-8ddb-c3c31cce0ad1",
+       "label": "D",
+       "content": "the emigration of skilled and educated people",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d12aae33-9ce5-5dca-9f72-4931d7e2bfa3",
+   "topic": "Economic Integration in West Africa",
+   "title": "Economic Integration in West Africa: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on economic integration in west africa, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 163,
+   "questions": [
+    {
+     "id": "8a9d6228-25a6-56a9-a47d-c3c0df11549d",
+     "key": "eco-it-01",
+     "stem": "A customs union differs from a free trade area because a customs union has",
+     "image_url": null,
+     "explanation": "In a free trade area each member keeps its own tariffs on outsiders.\n\n**Why the other options are wrong**\n\n- free movement of labour and capital: That is added in a common market.\n- a single currency: That belongs to an economic union.\n- a single government: That is political union.",
+     "position": 1,
+     "options": [
+      {
+       "id": "38d81f1f-cf4f-5c95-8b88-80130ccc6d76",
+       "label": "A",
+       "content": "a common external tariff",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3bd215c2-a8b8-5041-b554-d7de24ee5555",
+       "label": "B",
+       "content": "free movement of labour and capital",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8aa2ed67-8706-5ba0-b80f-4606559c8570",
+       "label": "C",
+       "content": "a single currency",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "245e8e56-8f68-5ce3-87c6-14ae8ec64d93",
+       "label": "D",
+       "content": "a single government",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8dea14b2-acd4-5736-acd0-5bfb368079ac",
+     "key": "eco-it-02",
+     "stem": "A common market adds to a customs union",
+     "image_url": null,
+     "explanation": "Workers and capital can move freely to where they are most productive.\n\n**Why the other options are wrong**\n\n- a common external tariff: A customs union already has this.\n- the removal of tariffs between members: A free trade area already does this.\n- a single government: That is political union.",
+     "position": 2,
+     "options": [
+      {
+       "id": "18251e6b-e09c-51d4-9d14-52467c7d15d9",
+       "label": "A",
+       "content": "a common external tariff",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dd2de18e-5894-53c1-a303-647c62c847a9",
+       "label": "B",
+       "content": "free movement of labour and capital between members",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9a3f8c20-e693-5c1d-b2df-6c60eb635e34",
+       "label": "C",
+       "content": "the removal of tariffs between members",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "689df3a4-30d2-568e-8a17-171dbe7243ec",
+       "label": "D",
+       "content": "a single government",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9c3a2d84-26cb-563e-8511-9878d7575666",
+     "key": "eco-it-03",
+     "stem": "ECOWAS was established in",
+     "image_url": null,
+     "explanation": "ECOWAS was founded on 28 May 1975.\n\n**Why the other options are wrong**\n\n- 1963 by the OAU Charter: The OAU was founded in 1963, but ECOWAS was not.\n- 1973 by the Mano River Declaration: That founded the Mano River Union.\n- 2002 by the African Union: The AU was founded in 2002.",
+     "position": 3,
+     "options": [
+      {
+       "id": "52e9da0a-0dfb-5ac5-be15-42164c1d6df4",
+       "label": "A",
+       "content": "1963 by the OAU Charter",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4fab60b6-ef74-5315-a09b-2d24fef1386d",
+       "label": "B",
+       "content": "1973 by the Mano River Declaration",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5ffb3f84-8dc8-5a42-a108-5317f2208ce8",
+       "label": "C",
+       "content": "1975 by the Treaty of Lagos",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6e8dedd1-068f-5cd5-abce-884c9539e81b",
+       "label": "D",
+       "content": "2002 by the African Union",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e0cc55ad-f192-5e8b-87e6-8a567287b2a7",
+     "key": "eco-it-04",
+     "stem": "The headquarters of the ECOWAS Commission is in",
+     "image_url": null,
+     "explanation": "The ECOWAS Commission is based in Abuja, Nigeria.\n\n**Why the other options are wrong**\n\n- Freetown: Freetown is not the ECOWAS headquarters.\n- Accra: Accra hosts the AfCFTA secretariat.\n- Lagos: The treaty was signed in Lagos, but the headquarters is in Abuja.",
+     "position": 4,
+     "options": [
+      {
+       "id": "64167ca8-70da-57a4-ae05-8f3680e518f0",
+       "label": "A",
+       "content": "Freetown",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e1365ab2-ed5c-5331-85bc-1d1c816e24cd",
+       "label": "B",
+       "content": "Accra",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0e23207f-ea98-50a2-bb81-4e84c4cd21a0",
+       "label": "C",
+       "content": "Lagos",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "932301a1-4201-51a4-901e-6a08db1930f9",
+       "label": "D",
+       "content": "Abuja",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3ca6f361-4428-5885-8a16-875606d89c25",
+     "key": "eco-it-05",
+     "stem": "The founding members of the Mano River Union in 1973 were",
+     "image_url": null,
+     "explanation": "The union is named after the Mano River on the Liberia–Sierra Leone border.\n\n**Why the other options are wrong**\n\n- Guinea and Sierra Leone: Guinea joined in 1980.\n- Ghana and Nigeria: They are not MRU members.\n- Côte d'Ivoire and Liberia: Côte d'Ivoire joined in 2008.",
+     "position": 5,
+     "options": [
+      {
+       "id": "65e5b19b-6599-5ca9-9232-bfd8ca4e481f",
+       "label": "A",
+       "content": "Liberia and Sierra Leone",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9f3574b7-2471-51eb-afc8-38eb6d895b6d",
+       "label": "B",
+       "content": "Guinea and Sierra Leone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7cdb2b5d-ce9b-5dfb-848f-cc41815ce1d4",
+       "label": "C",
+       "content": "Ghana and Nigeria",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9d7f6334-d333-5bac-b438-e8216ccf3e3e",
+       "label": "D",
+       "content": "Côte d'Ivoire and Liberia",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ac068710-2e8e-5164-b7a9-e4153381248d",
+     "key": "eco-it-06",
+     "stem": "A major problem of economic integration in West Africa is that member countries",
+     "image_url": null,
+     "explanation": "With similar exports, members have little to sell to each other.\n\n**Why the other options are wrong**\n\n- produce very different manufactured goods: Most produce similar primary goods, not varied manufactures.\n- already share one currency: Most members have their own currencies.\n- have excellent transport links: Poor transport links are a problem.",
+     "position": 6,
+     "options": [
+      {
+       "id": "495dead0-ecf4-5abf-a8c4-f738a39f13f6",
+       "label": "A",
+       "content": "produce very different manufactured goods",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b774035c-c359-5f66-8461-7464b6776637",
+       "label": "B",
+       "content": "produce similar primary products",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4d57777d-89e7-5a03-b9cb-cae7a4c9aed7",
+       "label": "C",
+       "content": "already share one currency",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1c11f98a-ef1a-534b-8115-9a14c9e170cc",
+       "label": "D",
+       "content": "have excellent transport links",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "48d88842-9fa2-5c8e-99bd-8b1352515a00",
+     "key": "eco-it-07",
+     "stem": "The ECOWAS protocol on free movement allows citizens of member states to",
+     "image_url": null,
+     "explanation": "Visa-free travel helps traders and workers move across the region.\n\n**Why the other options are wrong**\n\n- vote in other member states' elections: Voting rights are not included.\n- avoid paying any taxes: Taxes still apply.\n- settle permanently anywhere without any permit: Longer stays still need permits.",
+     "position": 7,
+     "options": [
+      {
+       "id": "4418f9eb-c295-556a-9379-e01cbd8d6099",
+       "label": "A",
+       "content": "vote in other member states' elections",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ab2545cc-adf9-5ea0-8ef2-3d19b7223bd2",
+       "label": "B",
+       "content": "avoid paying any taxes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "043a3ea4-1be7-50e6-8c44-194a0c90a7df",
+       "label": "C",
+       "content": "travel and stay in other member states without a visa for up to 90 days",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0dfd0bcf-f66c-56d1-8bf1-09a33db95217",
+       "label": "D",
+       "content": "settle permanently anywhere without any permit",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "00d38cdd-aa0e-5693-87ec-39ce8c9b39f7",
+     "key": "eco-it-08",
+     "stem": "The African Continental Free Trade Area (AfCFTA) aims to",
+     "image_url": null,
+     "explanation": "Trading under the AfCFTA began in 2021, with its secretariat in Accra.\n\n**Why the other options are wrong**\n\n- introduce a single currency for West Africa: That is the aim of the West African Monetary Zone.\n- provide peacekeeping forces: Peacekeeping is not its purpose.\n- lend money for development projects: That is the role of development banks.",
+     "position": 8,
+     "options": [
+      {
+       "id": "56081dd2-43d6-5f95-aa2a-08693fd8f39e",
+       "label": "A",
+       "content": "introduce a single currency for West Africa",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1c039cff-d194-50fd-8a06-96eddb064bd2",
+       "label": "B",
+       "content": "provide peacekeeping forces",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9f7288ec-2429-5da9-8698-bf1746706036",
+       "label": "C",
+       "content": "lend money for development projects",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0e9d4668-136d-5554-b712-ee54cf7f24a3",
+       "label": "D",
+       "content": "create a single continental market for goods and services",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "3e192243ca40"
+}

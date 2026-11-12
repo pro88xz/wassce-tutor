@@ -158,6 +158,42 @@ SETS += [
         "sort_from": 160,
         "checked": "mixed",
     },
+    {
+        "module": ROOT / "content/questions/economics/set1_p1.py",
+        "subject_slug": "economics",
+        "name": "economics_set1_p1",
+        "label": "Economics: set 1 (foundations and production)",
+        "review": ROOT / "content/questions/economics/set1_p1.review.md",
+        "sort_from": 100,
+        "checked": "mixed",
+    },
+    {
+        "module": ROOT / "content/questions/economics/set2_p1.py",
+        "subject_slug": "economics",
+        "name": "economics_set2_p1",
+        "label": "Economics: set 2 (markets)",
+        "review": ROOT / "content/questions/economics/set2_p1.review.md",
+        "sort_from": 120,
+        "checked": "mixed",
+    },
+    {
+        "module": ROOT / "content/questions/economics/set3_p1.py",
+        "subject_slug": "economics",
+        "name": "economics_set3_p1",
+        "label": "Economics: set 3 (labour, population, sectors and the macroeconomy)",
+        "review": ROOT / "content/questions/economics/set3_p1.review.md",
+        "sort_from": 140,
+        "checked": "mixed",
+    },
+    {
+        "module": ROOT / "content/questions/economics/set4_p1.py",
+        "subject_slug": "economics",
+        "name": "economics_set4_p1",
+        "label": "Economics: set 4 (trade and development)",
+        "review": ROOT / "content/questions/economics/set4_p1.review.md",
+        "sort_from": 160,
+        "checked": "mixed",
+    },
 ]
 
 OUT = ROOT / "src/content/question-sets"

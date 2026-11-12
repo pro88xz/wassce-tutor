@@ -1,0 +1,2206 @@
+{
+ "name": "economics_set2_p1",
+ "label": "Economics: set 2 (markets)",
+ "subject_slug": "economics",
+ "papers": [
+  {
+   "id": "65009ca2-7d1c-5f65-af43-67dc59d485fc",
+   "topic": "Demand",
+   "title": "Demand: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on demand, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 120,
+   "questions": [
+    {
+     "id": "88a4d83e-ec6f-5e4a-a67e-e7ac26089943",
+     "key": "eco-dm-01",
+     "stem": "Effective demand is",
+     "image_url": null,
+     "explanation": "Demand in economics means wanting a good and being able and willing to pay its price.\n\n**Why the other options are wrong**\n\n- any desire for a good: A desire without the means to pay is only a want.\n- the quantity of a good offered for sale: That is supply.\n- the need for basic goods such as food: Need alone is not effective demand.",
+     "position": 1,
+     "options": [
+      {
+       "id": "dc278925-0507-593c-a043-3308cf5994be",
+       "label": "A",
+       "content": "any desire for a good",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4fbc043f-32c2-527b-981e-e4ce13cb82da",
+       "label": "B",
+       "content": "the quantity of a good offered for sale",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e3cdf50f-dc67-518b-8bc4-e415066d7e8f",
+       "label": "C",
+       "content": "the need for basic goods such as food",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "55df24c1-6b95-5b88-b11b-145294ab3227",
+       "label": "D",
+       "content": "a desire for a good backed by the ability and willingness to pay for it",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "138f3b11-6b91-52e8-9701-42de20126235",
+     "key": "eco-dm-02",
+     "stem": "The law of demand states that, other things being equal,",
+     "image_url": null,
+     "explanation": "Price and quantity demanded are inversely related.\n\n**Why the other options are wrong**\n\n- the lower the price, the further the demand curve shifts right: A change in price moves along the curve; it does not shift it.\n- the higher the income, the smaller the quantity demanded: The law is about price, not income.\n- price and quantity demanded move in the same direction: They move in opposite directions.",
+     "position": 2,
+     "options": [
+      {
+       "id": "3f010da0-0e08-5a8f-93ea-18d8cb69db1b",
+       "label": "A",
+       "content": "the lower the price, the further the demand curve shifts right",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "458058fd-5702-5de6-b8f3-4165897bd5ef",
+       "label": "B",
+       "content": "the higher the income, the smaller the quantity demanded",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "269696c0-f292-5d1c-beb4-10124024b40f",
+       "label": "C",
+       "content": "price and quantity demanded move in the same direction",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "954e7ef0-ef9b-5af8-9810-9d07cb3ff4e5",
+       "label": "D",
+       "content": "the lower the price, the greater the quantity demanded",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "65753c80-f260-51da-96a4-2b508d6b9dd8",
+     "key": "eco-dm-03",
+     "stem": "A rise in consumers' incomes causes the demand curve for a normal good to",
+     "image_url": null,
+     "explanation": "More income means more is demanded at every price: an increase in demand.\n\n**Why the other options are wrong**\n\n- shift to the left: Higher income increases demand for normal goods.\n- stay the same, with a movement along it: A change in income shifts the curve; only a price change moves along it.\n- become vertical: Income changes do not change the curve's shape in this way.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8e606ac3-d2f9-5c13-94fa-0152cab50639",
+       "label": "A",
+       "content": "shift to the left",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b4381d68-b363-5551-8fb2-c905f1d54ac5",
+       "label": "B",
+       "content": "stay the same, with a movement along it",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3c58f210-4a56-55d1-b954-d2a22b8b2745",
+       "label": "C",
+       "content": "shift to the right",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2a75ae37-8cd8-53bc-a878-d67ff8df4a25",
+       "label": "D",
+       "content": "become vertical",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "897749fd-d29e-5b60-9fe6-e8bbc0af6881",
+     "key": "eco-dm-04",
+     "stem": "A fall in the price of a good, other things being equal, causes",
+     "image_url": null,
+     "explanation": "A change in the good's own price moves buyers along the same demand curve.\n\n**Why the other options are wrong**\n\n- an increase in demand (a shift to the right): A shift needs a change in something other than the good's own price.\n- a decrease in demand (a shift to the left): A fall in price does not reduce demand.\n- a contraction of demand: A contraction follows a rise in price.",
+     "position": 4,
+     "options": [
+      {
+       "id": "1f58676a-ddff-52f4-a32e-620c6dfc1e06",
+       "label": "A",
+       "content": "an increase in demand (a shift to the right)",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4619f07e-50c6-570b-82a0-dacabac4dae5",
+       "label": "B",
+       "content": "a decrease in demand (a shift to the left)",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9c955777-324f-5585-b1d6-b329e0e760fb",
+       "label": "C",
+       "content": "a contraction of demand",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b0d73858-cd1f-5912-bdfe-043ced295c7e",
+       "label": "D",
+       "content": "an extension of demand (a movement down the demand curve)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "83241a54-0c52-55a3-b5bd-33a1a0e64fb1",
+     "key": "eco-dm-05",
+     "stem": "A cheap staple food whose quantity demanded rises when its price rises, because very poor households can no longer afford better foods, is called",
+     "image_url": null,
+     "explanation": "Giffen goods are an exception to the law of demand.\n\n**Why the other options are wrong**\n\n- a good of ostentation: Goods of ostentation are luxuries bought to show off wealth.\n- a complementary good: Complements are demanded together with another good.\n- a normal good: Demand for a normal good falls when its price rises.",
+     "position": 5,
+     "options": [
+      {
+       "id": "58580a98-fcc1-5fde-9de5-f59c0153fc4e",
+       "label": "A",
+       "content": "a good of ostentation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2ffae660-acf7-5490-a36b-9e828f49d582",
+       "label": "B",
+       "content": "a complementary good",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "06bd1376-3a30-5d91-bd1f-96389d61e54e",
+       "label": "C",
+       "content": "a Giffen good",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "32b11153-4119-5ea7-b844-5f51afa5093f",
+       "label": "D",
+       "content": "a normal good",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bcb25698-f619-5b59-8c67-7e16d954b83d",
+     "key": "eco-dm-06",
+     "stem": "The demand for cement arising from the demand for new houses is an example of",
+     "image_url": null,
+     "explanation": "Cement is wanted for the houses it helps to build.\n\n**Why the other options are wrong**\n\n- joint (complementary) demand: Joint demand is for goods used together, like cars and fuel.\n- composite demand: Composite demand is a good wanted for several uses.\n- competitive demand: Competitive demand is for substitutes.",
+     "position": 6,
+     "options": [
+      {
+       "id": "02e1eba1-af2b-5dd1-9841-57a8f1bfa3af",
+       "label": "A",
+       "content": "joint (complementary) demand",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "64d0e1b5-6e83-52a6-a3ee-abeb3243e773",
+       "label": "B",
+       "content": "composite demand",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7472e62a-01f2-5d58-a8e2-200dee17f41d",
+       "label": "C",
+       "content": "competitive demand",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "057a6fcc-2a33-5096-a0c6-189e26719a72",
+       "label": "D",
+       "content": "derived demand",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aeabc208-23f5-516f-a4be-bf0aa9bfd40d",
+     "key": "eco-dm-07",
+     "stem": "At a price of NLe 15, three households demand 3, 2 and 1 bunches of plantain. What is the market demand at this price?",
+     "image_url": null,
+     "explanation": "Market demand is the sum of individual demands at that price: 3 + 2 + 1 = 6 bunches.\n\n**Why the other options are wrong**\n\n- 2 bunches: That is the average household demand, not the market total.\n- 1 bunches: That is only the smallest household's demand.\n- 90 bunches: That is the amount spent (6 × 15), not the quantity.",
+     "position": 7,
+     "options": [
+      {
+       "id": "31cb999f-bdc6-5e34-98e5-05a133db5a74",
+       "label": "A",
+       "content": "1 bunches",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "09aa11fe-55e4-512c-94d5-ac1105885745",
+       "label": "B",
+       "content": "2 bunches",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5a3a496c-c6e2-523a-8bff-594731be7aa0",
+       "label": "C",
+       "content": "6 bunches",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c051176c-1244-58e2-bc25-f13d903fbe6a",
+       "label": "D",
+       "content": "90 bunches",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "02b51dde-ff11-5f3a-bc02-f49941531690",
+     "key": "eco-dm-08",
+     "stem": "Cars and petrol are an example of",
+     "image_url": null,
+     "explanation": "Goods used together are in joint demand: more cars means more petrol is wanted.\n\n**Why the other options are wrong**\n\n- competitive demand: Competitive demand is for substitutes.\n- composite demand: Composite demand is one good wanted for several uses.\n- derived demand: Derived demand is for a factor or input used to make another good.",
+     "position": 8,
+     "options": [
+      {
+       "id": "d247732e-afb2-52b9-aab8-dbe4c9a26ccc",
+       "label": "A",
+       "content": "joint (complementary) demand",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e9669a31-e845-5323-98de-563ef6d40739",
+       "label": "B",
+       "content": "competitive demand",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ffd51ebb-b5f3-5166-9fc2-3775172c99da",
+       "label": "C",
+       "content": "composite demand",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0a3a3a01-f4de-500e-91b3-e30d8a153519",
+       "label": "D",
+       "content": "derived demand",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "105130f1-b388-54ff-b9a8-222daf494ad3",
+   "topic": "Supply",
+   "title": "Supply: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on supply, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 121,
+   "questions": [
+    {
+     "id": "bc279f3b-687b-5aed-95b4-04dd0ec061e2",
+     "key": "eco-sp-01",
+     "stem": "Supply in economics is",
+     "image_url": null,
+     "explanation": "Supply is always related to a price and a period of time.\n\n**Why the other options are wrong**\n\n- the total stock of a good held in warehouses: Stock is what exists; supply is what is offered at a price.\n- the quantity of a good bought by consumers: That is quantity demanded.\n- the total quantity produced in a year: Not all output is necessarily offered for sale at a given price.",
+     "position": 1,
+     "options": [
+      {
+       "id": "3e2eb1ef-cee9-5d54-9208-66806b08d93a",
+       "label": "A",
+       "content": "the total stock of a good held in warehouses",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "577b309d-5fd3-59bf-bf39-7d793a8cad3c",
+       "label": "B",
+       "content": "the quantity of a good bought by consumers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fcd665f0-70ec-5519-83a2-f608a1079436",
+       "label": "C",
+       "content": "the quantity of a good producers are willing and able to offer for sale at each price in a period",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1b5ea0ca-faff-5c83-b341-9d7dac92d4ea",
+       "label": "D",
+       "content": "the total quantity produced in a year",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e6029777-52f0-545b-8df1-459912bd8ff9",
+     "key": "eco-sp-02",
+     "stem": "According to the law of supply, other things being equal,",
+     "image_url": null,
+     "explanation": "A higher price makes supplying more profitable, so more is offered.\n\n**Why the other options are wrong**\n\n- the higher the price, the smaller the quantity supplied: That describes demand.\n- a rise in price shifts the supply curve to the right: A price change moves along the supply curve.\n- price and quantity supplied are inversely related: They are directly related.",
+     "position": 2,
+     "options": [
+      {
+       "id": "3e31b5b2-f0ed-5860-af01-94337bdd555b",
+       "label": "A",
+       "content": "the higher the price, the smaller the quantity supplied",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9b4c3b3d-ed54-52e0-834e-455b113f6d7c",
+       "label": "B",
+       "content": "a rise in price shifts the supply curve to the right",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c87592d9-7251-513f-91f4-7a91b3547cac",
+       "label": "C",
+       "content": "price and quantity supplied are inversely related",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f1de759a-792f-5c9d-9c97-83d3c2aed393",
+       "label": "D",
+       "content": "the higher the price, the greater the quantity supplied",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2ba146c4-4be8-58c9-b914-f7585efbbcc5",
+     "key": "eco-sp-03",
+     "stem": "An improvement in the technology used to produce a good will",
+     "image_url": null,
+     "explanation": "Lower costs mean more is offered at every price: an increase in supply.\n\n**Why the other options are wrong**\n\n- shift the supply curve to the left: Better technology lowers costs and increases supply.\n- cause a movement along the supply curve: Only the good's own price causes a movement along the curve.\n- shift the demand curve to the right: Technology in production affects supply.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1ace94e2-df5b-58aa-bb71-eb1d78ea6f25",
+       "label": "A",
+       "content": "shift the supply curve to the right",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1f752611-5d5c-5e36-b204-d3993b61edcf",
+       "label": "B",
+       "content": "shift the supply curve to the left",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "547d30ad-c007-5b69-9edc-49bf03182371",
+       "label": "C",
+       "content": "cause a movement along the supply curve",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "04fb6fe2-0b67-5ba6-b8fe-c1c5e1397b87",
+       "label": "D",
+       "content": "shift the demand curve to the right",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3aa0140f-aa8f-5a0c-afea-72fdf451a0cd",
+     "key": "eco-sp-04",
+     "stem": "Beef and hides are an example of",
+     "image_url": null,
+     "explanation": "Slaughtering cattle for beef automatically produces hides.\n\n**Why the other options are wrong**\n\n- competitive supply: Competitive supply is when resources must be shared between goods.\n- composite supply: Composite supply is a want met from several sources.\n- joint demand: Joint demand is goods wanted together.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b8d149b4-a4a4-5d9d-96e5-10f721f46d05",
+       "label": "A",
+       "content": "competitive supply",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "81e50a18-ee97-5d92-9f96-b0a6702232eb",
+       "label": "B",
+       "content": "composite supply",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "695f2c0f-fe40-5f75-bb7c-ce2d301ab559",
+       "label": "C",
+       "content": "joint supply",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a08431e9-bcc7-5729-bece-bb1cfea006f8",
+       "label": "D",
+       "content": "joint demand",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1b52cd5a-5586-5989-9eba-3464b8ff4482",
+     "key": "eco-sp-05",
+     "stem": "The supply curve of labour may bend backwards at high wage rates because",
+     "image_url": null,
+     "explanation": "Above a certain wage, people choose to work fewer hours and enjoy more leisure.\n\n**Why the other options are wrong**\n\n- wage rates begin to fall: The curve bends back while wages are rising.\n- firms demand less labour: That concerns demand, not supply.\n- the prices of goods fall: Prices of goods do not explain the bend.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e873c043-843c-598e-ad65-039e828313ce",
+       "label": "A",
+       "content": "wage rates begin to fall",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ec7754c7-3d0f-5085-a439-1471a3d5e5c1",
+       "label": "B",
+       "content": "firms demand less labour",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1834ea8d-eab2-5d63-9205-f30a00bcda34",
+       "label": "C",
+       "content": "the prices of goods fall",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a1bbce73-566a-5e2c-a63a-0412659f2b5a",
+       "label": "D",
+       "content": "workers prefer more leisure once their income is high",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "65695367-baf5-57eb-8c08-bf1a12c657c7",
+     "key": "eco-sp-06",
+     "stem": "A vertical supply curve shows that supply is",
+     "image_url": null,
+     "explanation": "The same quantity is supplied whatever the price, as with land.\n\n**Why the other options are wrong**\n\n- perfectly elastic: A perfectly elastic supply curve is horizontal.\n- unitary elastic: A straight line through the origin is unitary elastic.\n- in joint supply: Joint supply is not shown by the curve's shape.",
+     "position": 6,
+     "options": [
+      {
+       "id": "db0fa332-a501-561a-8a60-a74a5a3fc87c",
+       "label": "A",
+       "content": "fixed (perfectly inelastic)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6fe6cad2-8d1d-58d6-869f-77cd52d678fb",
+       "label": "B",
+       "content": "perfectly elastic",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "64f31f35-f15a-57a3-806d-847f01d9d305",
+       "label": "C",
+       "content": "unitary elastic",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "37ae4be4-636f-5ba9-924d-4a589016bbdc",
+       "label": "D",
+       "content": "in joint supply",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2fa3e0bc-a247-5c32-8911-a90784da4ead",
+     "key": "eco-sp-07",
+     "stem": "At NLe 15, farmer A offers 25 bunches of plantain and farmer B offers 35. What is the market supply at this price?",
+     "image_url": null,
+     "explanation": "Market supply = 25 + 35 = 60 bunches.\n\n**Why the other options are wrong**\n\n- 30 bunches: That is the average, not the market total.\n- 10 bunches: You subtracted; market supply is the sum.\n- 900 bunches: That is the value of the supply (60 × 15), not the quantity.",
+     "position": 7,
+     "options": [
+      {
+       "id": "9ded1af8-f43c-5244-8829-d10f91028b29",
+       "label": "A",
+       "content": "10 bunches",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e128c467-b1e2-588d-b059-2cf1ccb2859a",
+       "label": "B",
+       "content": "30 bunches",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ae1f4d64-d537-5388-8a24-ae8c5baef234",
+       "label": "C",
+       "content": "60 bunches",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "743f7f6e-b261-5a81-a466-04c9641ad6b1",
+       "label": "D",
+       "content": "900 bunches",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7cc835ca-8406-568e-bf73-1dc0382e4d4e",
+     "key": "eco-sp-08",
+     "stem": "A rise in the price of fertiliser used by rice farmers will cause",
+     "image_url": null,
+     "explanation": "Higher costs mean less is offered at every price.\n\n**Why the other options are wrong**\n\n- an increase in the supply of rice: Higher costs reduce supply.\n- an extension of the supply of rice: A change in costs shifts the curve; it is not a movement along it.\n- an increase in the demand for rice: Fertiliser costs affect supply, not demand.",
+     "position": 8,
+     "options": [
+      {
+       "id": "c5e0c6ed-9965-5772-a6a0-f2465b168bd3",
+       "label": "A",
+       "content": "an increase in the supply of rice",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7b7fd52d-b55b-5926-a47e-78478d13e98a",
+       "label": "B",
+       "content": "an extension of the supply of rice",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d378a091-79af-509f-b006-96268deb67c6",
+       "label": "C",
+       "content": "a decrease in the supply of rice (a shift to the left)",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "04514c6f-fcb4-51ca-b39d-a63d31749335",
+       "label": "D",
+       "content": "an increase in the demand for rice",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f40920d0-f634-5df5-8e86-ddb1047380db",
+   "topic": "Price Determination and Market Equilibrium",
+   "title": "Price Determination and Market Equilibrium: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on price determination and market equilibrium, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 122,
+   "questions": [
+    {
+     "id": "ad785d8d-9c00-5482-b18e-f788d688d196",
+     "key": "eco-pd-01",
+     "stem": "At a price of NLe 10, 80 bunches of plantain are demanded and 40 are supplied. What is the shortage?",
+     "image_url": null,
+     "explanation": "Shortage (excess demand) = 80 − 40 = 40 bunches.\n\n**Why the other options are wrong**\n\n- 120 bunches: You added the quantities; the shortage is the difference.\n- 2 bunches: You divided the quantities.\n- 80 bunches: That is the quantity demanded, not the shortage.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e368708d-a541-5383-a95b-7053129670d1",
+       "label": "A",
+       "content": "2 bunches",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "42c2f91d-5e10-536e-8741-5116cd319b1e",
+       "label": "B",
+       "content": "40 bunches",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b2175012-ee51-5263-a809-b97331dd6575",
+       "label": "C",
+       "content": "80 bunches",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b9b91fa2-ab9c-517a-bf9e-8383f8c3497d",
+       "label": "D",
+       "content": "120 bunches",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "32eb9062-546e-5e82-be9f-1fdc21644960",
+     "key": "eco-pd-02",
+     "stem": "The equilibrium price of a good is the price at which",
+     "image_url": null,
+     "explanation": "At equilibrium there is no shortage or surplus, so the price has no tendency to change.\n\n**Why the other options are wrong**\n\n- quantity demanded is greatest: Demand is greatest at the lowest price, which is not equilibrium.\n- quantity supplied is greatest: Supply is greatest at the highest price.\n- the government fixes the price: That is a controlled price.",
+     "position": 2,
+     "options": [
+      {
+       "id": "ee5ed2a9-f6c8-52aa-8e8f-6de317d7278a",
+       "label": "A",
+       "content": "quantity demanded is greatest",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0a80e4a1-df42-5f6f-b1d8-16889031290a",
+       "label": "B",
+       "content": "quantity supplied is greatest",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5411b448-00ca-578e-9125-74e5de340deb",
+       "label": "C",
+       "content": "the government fixes the price",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b484771e-75ab-5a08-9a96-ebd7e9305d4e",
+       "label": "D",
+       "content": "quantity demanded equals quantity supplied",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8196c2be-797d-51e4-83f0-d3a6367c22e4",
+     "key": "eco-pd-03",
+     "stem": "A maximum price fixed below the equilibrium price is likely to cause",
+     "image_url": null,
+     "explanation": "At the low price, quantity demanded exceeds quantity supplied, and some goods are sold illegally above it.\n\n**Why the other options are wrong**\n\n- a surplus of the good: A surplus follows a minimum price above equilibrium.\n- a rise in the market price: The legal price is held below equilibrium.\n- no change in the market: A binding price control always changes the market.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c00fc470-579e-520e-9703-7dc8c24eb157",
+       "label": "A",
+       "content": "a shortage and a black market",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ecb54751-d88a-5b86-93b9-0eb64539be49",
+       "label": "B",
+       "content": "a surplus of the good",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e4838b1d-8dd8-5a38-9e21-ea3423d6fb27",
+       "label": "C",
+       "content": "a rise in the market price",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "52989abb-a672-54ac-b1ef-98ceb4ee47dd",
+       "label": "D",
+       "content": "no change in the market",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "03d71d39-484b-56e5-8907-d132d568a7fc",
+     "key": "eco-pd-04",
+     "stem": "A minimum price fixed above the equilibrium price for a farm product will cause",
+     "image_url": null,
+     "explanation": "At the high price, quantity supplied exceeds quantity demanded.\n\n**Why the other options are wrong**\n\n- a shortage of the product: A shortage follows a maximum price below equilibrium.\n- queues and rationing: Queues are typical of a maximum price.\n- a fall in the price paid by consumers: Consumers pay more, not less.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e94bf643-d0cf-59f0-8fe4-d3f33a885813",
+       "label": "A",
+       "content": "a shortage of the product",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "04da3109-c0ba-54bb-8dac-2b1cf3254e58",
+       "label": "B",
+       "content": "a surplus of the product",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2d2df26c-a911-5ec1-9e1b-2ed836eb3cc3",
+       "label": "C",
+       "content": "queues and rationing",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "057c6022-fe12-5b17-aa88-dd060acdf84e",
+       "label": "D",
+       "content": "a fall in the price paid by consumers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c5c3c680-f427-5d1b-8332-9a2363f7aedd",
+     "key": "eco-pd-05",
+     "stem": "If demand for a good increases while supply is unchanged, the equilibrium",
+     "image_url": null,
+     "explanation": "The demand curve shifts right along the unchanged supply curve.\n\n**Why the other options are wrong**\n\n- price falls and quantity rises: That follows an increase in supply.\n- price rises and quantity falls: That follows a decrease in supply.\n- price and quantity both fall: That follows a decrease in demand.",
+     "position": 5,
+     "options": [
+      {
+       "id": "1cda40f2-84ac-529a-b0c6-ba9514e23e75",
+       "label": "A",
+       "content": "price falls and quantity rises",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c4d9cda6-ef85-5ea3-b078-b895a42ff6c2",
+       "label": "B",
+       "content": "price rises and quantity falls",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ad548682-832c-5944-af31-925bd4afb63f",
+       "label": "C",
+       "content": "price and quantity both rise",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9a7a84e7-7654-59db-9c6f-8567fbd28108",
+       "label": "D",
+       "content": "price and quantity both fall",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2d779980-2f58-5cbf-ac69-640d8faef3d4",
+     "key": "eco-pd-06",
+     "stem": "A bumper harvest of rice, with demand unchanged, will cause the equilibrium",
+     "image_url": null,
+     "explanation": "Supply shifts right along the unchanged demand curve.\n\n**Why the other options are wrong**\n\n- price and quantity both to rise: That follows an increase in demand.\n- price to rise and quantity to fall: That follows a decrease in supply.\n- price and quantity both to fall: That follows a decrease in demand.",
+     "position": 6,
+     "options": [
+      {
+       "id": "da5ec385-26bc-51e4-8302-81c64732af19",
+       "label": "A",
+       "content": "price and quantity both to rise",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "50d83207-bd74-54b4-862e-4000cce0b010",
+       "label": "B",
+       "content": "price to rise and quantity to fall",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "233ef340-ab07-52df-9b0a-7dd9b2ad9e3b",
+       "label": "C",
+       "content": "price and quantity both to fall",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "213634e8-364a-5c5f-b4f0-168105c2de64",
+       "label": "D",
+       "content": "price to fall and quantity to rise",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "81ff4437-97ac-5311-82b4-e6c8cf6292f6",
+     "key": "eco-pd-07",
+     "stem": "An indirect tax on a good with very inelastic demand is borne mostly by",
+     "image_url": null,
+     "explanation": "Buyers keep buying when demand is inelastic, so sellers can pass most of the tax on in a higher price.\n\n**Why the other options are wrong**\n\n- producers: Producers bear more when demand is elastic.\n- the government: The government receives the tax; it does not bear it.\n- retailers and consumers in equal shares: The shares depend on elasticity; they are not fixed at half each.",
+     "position": 7,
+     "options": [
+      {
+       "id": "76301cc1-5844-5955-8a2f-60b557d35bb9",
+       "label": "A",
+       "content": "consumers",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c5040c23-52a9-5545-9555-aa663abea0e6",
+       "label": "B",
+       "content": "producers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3876e006-431c-550d-8c40-6470dbc2e5c0",
+       "label": "C",
+       "content": "the government",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0faf5697-d820-52c7-90ae-cccc194ea846",
+       "label": "D",
+       "content": "retailers and consumers in equal shares",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "69fadcda-6f8a-5d25-913a-3de4e98c4c54",
+     "key": "eco-pd-08",
+     "stem": "After a tax of NLe 4 per unit is placed on a good, its price rises from NLe 50 to NLe 53. How much of the tax per unit is borne by producers?",
+     "image_url": null,
+     "explanation": "Consumers pay 53 − 50 = NLe 3 more; producers bear the rest: 4 − 3 = NLe 1.\n\n**Why the other options are wrong**\n\n- 3 NLe: That is the consumers' share (the rise in price).\n- 4 NLe: That is the whole tax; part of it is passed on to consumers.\n- 7 NLe: You added the price rise to the tax.",
+     "position": 8,
+     "options": [
+      {
+       "id": "08d0cf57-2ad1-58d7-b2be-d335b2173cd2",
+       "label": "A",
+       "content": "1 NLe",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a2e92d13-6a9e-59a1-8a97-5b50a0cc114a",
+       "label": "B",
+       "content": "3 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "92e89883-1330-5c53-93a5-13f3102b4001",
+       "label": "C",
+       "content": "4 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "64e49f7d-97a4-5bcf-bc62-77f4cff06486",
+       "label": "D",
+       "content": "7 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7383ffdb-e149-58b3-868a-3df3b4b7047c",
+   "topic": "Elasticity of Demand and Supply",
+   "title": "Elasticity of Demand and Supply: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on elasticity of demand and supply, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 123,
+   "questions": [
+    {
+     "id": "c18863c3-5ef7-54ad-be84-0ad6931a73e6",
+     "key": "eco-el-01",
+     "stem": "The price of a bag of sugar rises from NLe 20 to NLe 25 and the quantity demanded falls from 100 to 90 bags. What is the price elasticity of demand (ignore the sign)?",
+     "image_url": null,
+     "explanation": "% change in Q $= \\dfrac{10}{100} \\times 100 = 10\\%$; % change in P $= \\dfrac{5}{20} \\times 100 = 25\\%$; PED $= \\dfrac{10}{25} = 0.4$.\n\n**Why the other options are wrong**\n\n- 2.5: You divided the % change in price by the % change in quantity.\n- 10: That is the % change in quantity demanded.\n- 25: That is the % change in price.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a4ecb0b5-34c3-5f26-a2cb-a2fec60042a9",
+       "label": "A",
+       "content": "0.4",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0df700c5-e6e2-5e44-bbcd-719f4e377ff8",
+       "label": "B",
+       "content": "2.5",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "86f1e2c3-3d13-5ac6-8cc8-65a62894e999",
+       "label": "C",
+       "content": "10",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "778110b0-caa7-51b7-bcc3-df418efbd2d6",
+       "label": "D",
+       "content": "25",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cf8f2921-6923-5b0a-b627-acb7c0f77def",
+     "key": "eco-el-02",
+     "stem": "The price of a soft drink falls from NLe 10 to NLe 8 and daily sales rise from 50 to 70 bottles. What is the price elasticity of demand (ignore the sign)?",
+     "image_url": null,
+     "explanation": "% change in Q $= \\dfrac{20}{50} \\times 100 = 40\\%$; % change in P $= \\dfrac{2}{10} \\times 100 = 20\\%$; PED $= \\dfrac{40}{20} = 2$.\n\n**Why the other options are wrong**\n\n- 0.5: You divided the % change in price by the % change in quantity.\n- 40: That is the % change in quantity demanded.\n- 20: That is the % change in price.",
+     "position": 2,
+     "options": [
+      {
+       "id": "afc7ddba-b261-53ab-acf7-0a1312500897",
+       "label": "A",
+       "content": "0.5",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7f39b548-842b-5dcb-b8be-39480b11c5fd",
+       "label": "B",
+       "content": "2",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "183f929b-00e8-5567-9553-cdb487fe9753",
+       "label": "C",
+       "content": "20",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0b47d10c-6f59-5f64-b4d3-1c0570a04e47",
+       "label": "D",
+       "content": "40",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2cb129c6-8f26-5255-823e-be77a802f6bd",
+     "key": "eco-el-03",
+     "stem": "If the price elasticity of demand for a good is 0.3, demand is",
+     "image_url": null,
+     "explanation": "A coefficient between 0 and 1 means quantity changes by a smaller percentage than price.\n\n**Why the other options are wrong**\n\n- elastic: Demand is elastic when the coefficient is greater than 1.\n- unitary: Unitary elasticity is exactly 1.\n- perfectly elastic: Perfectly elastic demand has an infinite coefficient.",
+     "position": 3,
+     "options": [
+      {
+       "id": "84e3fdc9-60aa-5202-993f-2392a4c87d57",
+       "label": "A",
+       "content": "elastic",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7b22e344-2aca-5791-b7c8-67fcd2f402dd",
+       "label": "B",
+       "content": "inelastic",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "196ac4ef-4564-56f3-9ee6-d28b72a2a40b",
+       "label": "C",
+       "content": "unitary",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dba482be-8c39-507b-8a36-facdf9607595",
+       "label": "D",
+       "content": "perfectly elastic",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cf009581-36de-56f8-b9cd-3414d9798492",
+     "key": "eco-el-04",
+     "stem": "If demand for a good is inelastic, a rise in its price will cause total revenue to",
+     "image_url": null,
+     "explanation": "Quantity falls by a smaller percentage than price rises, so P × Q rises.\n\n**Why the other options are wrong**\n\n- fall: Revenue falls after a price rise only when demand is elastic.\n- stay the same: Revenue is unchanged only with unitary elasticity.\n- fall to zero: Buyers still buy most of the good.",
+     "position": 4,
+     "options": [
+      {
+       "id": "3f02ac54-2c83-5e90-bbde-272504449610",
+       "label": "A",
+       "content": "fall",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8a2aa563-6a33-5118-aede-912d01b54bbb",
+       "label": "B",
+       "content": "stay the same",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f3cad4ad-fa9c-54d7-adc5-9347e8e880ca",
+       "label": "C",
+       "content": "rise",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "22dbbd7b-9d3c-50b2-bcac-195dc2e79e9b",
+       "label": "D",
+       "content": "fall to zero",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "36500037-4381-5d07-98f5-e1901df4047b",
+     "key": "eco-el-05",
+     "stem": "Incomes rise by 20% and the quantity demanded of beef rises by 30%. What is the income elasticity of demand?",
+     "image_url": null,
+     "explanation": "YED $= \\dfrac{30\\%}{20\\%} = 1.5$: beef is a normal good (a luxury, since YED > 1).\n\n**Why the other options are wrong**\n\n- 0.67: You divided the % change in income by the % change in quantity.\n- 10: You subtracted the percentages.\n- 50: You added the percentages.",
+     "position": 5,
+     "options": [
+      {
+       "id": "5f7281f0-2bbc-593d-beaf-440e08c22fc1",
+       "label": "A",
+       "content": "0.67",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1a077b3f-a1cf-5e27-830d-b10c01252cdc",
+       "label": "B",
+       "content": "1.5",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "3351dabf-eff3-554c-ba67-d67eec4b90f5",
+       "label": "C",
+       "content": "10",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a786521a-963c-5a34-bccf-d68d2278beae",
+       "label": "D",
+       "content": "50",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ca273796-5ef4-51a3-addc-f19f82fa6c68",
+     "key": "eco-el-06",
+     "stem": "A good with a negative income elasticity of demand is",
+     "image_url": null,
+     "explanation": "As incomes rise, people buy less of an inferior good, switching to better alternatives.\n\n**Why the other options are wrong**\n\n- a normal good: Normal goods have positive income elasticity.\n- a luxury good: Luxuries have income elasticity greater than 1.\n- a complementary good: Complementarity is measured by cross elasticity.",
+     "position": 6,
+     "options": [
+      {
+       "id": "67a01d2b-8e80-5951-8267-5dc7d5109344",
+       "label": "A",
+       "content": "a normal good",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "69407941-ffcc-5273-a459-b792211e4fb0",
+       "label": "B",
+       "content": "a luxury good",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "96aa2e8d-7e66-5964-98b2-425ce2d4ef94",
+       "label": "C",
+       "content": "a complementary good",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1527c410-49f6-56e0-a342-b4261fb47d4b",
+       "label": "D",
+       "content": "an inferior good",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "adda9b1a-8cab-51f4-b781-895d868bd1b5",
+     "key": "eco-el-07",
+     "stem": "A positive cross elasticity of demand between two goods shows that they are",
+     "image_url": null,
+     "explanation": "When the price of one rises, people buy more of the other.\n\n**Why the other options are wrong**\n\n- complements: Complements have negative cross elasticity.\n- unrelated: Unrelated goods have zero cross elasticity.\n- inferior goods: Inferior goods are identified by income elasticity.",
+     "position": 7,
+     "options": [
+      {
+       "id": "22841b62-e589-59c4-977a-695221edfff3",
+       "label": "A",
+       "content": "substitutes",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "88c84a32-e239-5448-8e76-70454a271213",
+       "label": "B",
+       "content": "complements",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "58cca6b9-6c4c-525b-b7af-12c5693273fd",
+       "label": "C",
+       "content": "unrelated",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "636f4146-2815-555a-8ab7-d6e472715d22",
+       "label": "D",
+       "content": "inferior goods",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a9286e59-2f24-570e-848f-a64af1deb83c",
+     "key": "eco-el-08",
+     "stem": "The price of tomatoes rises by 20% and the quantity supplied rises by 10%. What is the price elasticity of supply?",
+     "image_url": null,
+     "explanation": "PES $= \\dfrac{10\\%}{20\\%} = 0.5$: supply is inelastic.\n\n**Why the other options are wrong**\n\n- 2: You divided the % change in price by the % change in quantity.\n- 10: That is the % change in quantity supplied.\n- 30: You added the percentages.",
+     "position": 8,
+     "options": [
+      {
+       "id": "f330ed9d-26d4-5507-a873-62835199620d",
+       "label": "A",
+       "content": "0.5",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "f4f34e88-c6bb-54b9-ba55-fe7c6fd870cd",
+       "label": "B",
+       "content": "2",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dbc1c3c8-8922-5a6f-8a48-64b71d90aa11",
+       "label": "C",
+       "content": "10",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c8c8bdb9-5958-502f-b4b2-7b822b8fdf34",
+       "label": "D",
+       "content": "30",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ac571253-4238-5943-8997-f4813f44baba",
+   "topic": "Consumer Behaviour",
+   "title": "Consumer Behaviour: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on consumer behaviour, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 124,
+   "questions": [
+    {
+     "id": "fd839c38-b9f9-54a9-a55c-b4716f8f571a",
+     "key": "eco-cb-01",
+     "stem": "Total utility is 24 utils from 3 oranges and 28 utils from 4 oranges. What is the marginal utility of the 4th orange?",
+     "image_url": null,
+     "explanation": "MU = 28 − 24 = 4 utils.\n\n**Why the other options are wrong**\n\n- 7 utils: That is the average utility of 4 oranges.\n- 28 utils: That is the total utility, not the extra utility.\n- 52 utils: You added the totals.",
+     "position": 1,
+     "options": [
+      {
+       "id": "c182cbb2-655a-5e06-a075-33040596af16",
+       "label": "A",
+       "content": "4 utils",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "55b1f6b3-4b8d-5737-a7a7-ac792b540092",
+       "label": "B",
+       "content": "7 utils",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b079fb20-22b6-5781-a4a7-c324e6281ac1",
+       "label": "C",
+       "content": "28 utils",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e88edc34-789b-5de9-ba8e-2dceeddbe584",
+       "label": "D",
+       "content": "52 utils",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ce57ebb4-26e8-5d1b-b9df-f3af1568f466",
+     "key": "eco-cb-02",
+     "stem": "Total utility is 28 utils from 4 oranges and 30 utils from 5 oranges. What is the average utility of 5 oranges?",
+     "image_url": null,
+     "explanation": "AU $= \\dfrac{TU}{Q} = \\dfrac{30}{5} = 6$ utils.\n\n**Why the other options are wrong**\n\n- 2 utils: That is the marginal utility of the 5th orange.\n- 150 utils: You multiplied instead of dividing.\n- 25 utils: You subtracted the number of oranges.",
+     "position": 2,
+     "options": [
+      {
+       "id": "4c180ce8-5184-5bbc-a050-cd5fda48aef9",
+       "label": "A",
+       "content": "2 utils",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "475be620-3e2b-5497-94c0-7f076b849326",
+       "label": "B",
+       "content": "6 utils",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8db3781a-80bb-5b75-a4f4-600a01209cab",
+       "label": "C",
+       "content": "25 utils",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6e556f2e-3d1b-5112-b81c-cdfd2bbe0dde",
+       "label": "D",
+       "content": "150 utils",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cf54a97c-d936-529e-970a-22bcc4febbd7",
+     "key": "eco-cb-03",
+     "stem": "When marginal utility is zero, total utility is",
+     "image_url": null,
+     "explanation": "This is the point of satiety: the consumer is fully satisfied.\n\n**Why the other options are wrong**\n\n- zero: TU is at its highest when MU is zero.\n- falling: TU falls only when MU is negative.\n- rising fast: TU rises only while MU is positive.",
+     "position": 3,
+     "options": [
+      {
+       "id": "f6ddd43c-d53f-5662-9ffc-96d98b22f91d",
+       "label": "A",
+       "content": "zero",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0f3d31a7-22c0-5cd0-833b-cd86ff67be69",
+       "label": "B",
+       "content": "at its maximum",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d93619d8-654b-5464-b2f7-27b9400075f7",
+       "label": "C",
+       "content": "falling",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "91198db0-1c49-5f20-806e-5355195cdeb5",
+       "label": "D",
+       "content": "rising fast",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "245be326-44b8-5849-b807-c4952f09ff98",
+     "key": "eco-cb-04",
+     "stem": "The law of diminishing marginal utility states that, as a consumer takes more units of a good,",
+     "image_url": null,
+     "explanation": "Each extra unit adds less satisfaction than the one before.\n\n**Why the other options are wrong**\n\n- total satisfaction falls immediately: Total utility keeps rising while marginal utility is positive.\n- the price of the good falls: The law is about satisfaction, not price.\n- the consumer stops buying the good: The law does not say consumption stops.",
+     "position": 4,
+     "options": [
+      {
+       "id": "8df283e1-e23a-5aac-ae54-710be28594c9",
+       "label": "A",
+       "content": "total satisfaction falls immediately",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "790f657e-803d-58b9-a0ce-2f7e50e6ea58",
+       "label": "B",
+       "content": "the price of the good falls",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a35df8e9-7732-5d2d-a91d-bbf6927b17d4",
+       "label": "C",
+       "content": "the extra satisfaction from each additional unit eventually falls",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "dff9f979-ff18-512c-bbbd-5c87974b1b89",
+       "label": "D",
+       "content": "the consumer stops buying the good",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1999c9c6-350d-5cd0-a4fe-388444ee71a3",
+     "key": "eco-cb-05",
+     "stem": "A consumer spending income on goods A and B is in equilibrium when",
+     "image_url": null,
+     "explanation": "Equilibrium: $\\dfrac{MU_A}{P_A} = \\dfrac{MU_B}{P_B}$, so no switch of spending can raise satisfaction.\n\n**Why the other options are wrong**\n\n- the marginal utilities of A and B are equal: MU must be compared per leone of price.\n- the prices of A and B are equal: Prices need not be equal.\n- the total utilities of A and B are equal: Total utilities are not compared.",
+     "position": 5,
+     "options": [
+      {
+       "id": "061bdf05-d852-5baf-8422-9c6ce982ea78",
+       "label": "A",
+       "content": "the marginal utilities of A and B are equal",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "07ecad80-3bf5-57eb-9ae2-2e95434b38a7",
+       "label": "B",
+       "content": "the prices of A and B are equal",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "97d0012d-ea67-5131-92c7-6bc5033f1478",
+       "label": "C",
+       "content": "the total utilities of A and B are equal",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e7104066-d3e0-5ea9-a5dc-28fb4ca3390d",
+       "label": "D",
+       "content": "the marginal utility per leone spent is the same on both goods",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "51ae051e-dfae-533f-9125-e2bd2c89d938",
+     "key": "eco-cb-06",
+     "stem": "Aminata is willing to pay up to NLe 50 for a pair of sandals, but buys them for NLe 35. What is her consumer surplus?",
+     "image_url": null,
+     "explanation": "Consumer surplus = what she would pay − what she pays = 50 − 35 = NLe 15.\n\n**Why the other options are wrong**\n\n- 85 NLe: You added the two amounts.\n- 35 NLe: That is the price paid.\n- 1.43 NLe: You divided the amounts.",
+     "position": 6,
+     "options": [
+      {
+       "id": "c6f9fdf6-d306-56f9-98ac-6fd0f29da87b",
+       "label": "A",
+       "content": "1.43 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "40a6d891-9f01-59b3-b4cf-9a2d2658cf1a",
+       "label": "B",
+       "content": "15 NLe",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f043d703-8066-5ef3-9b9d-ac3ae55e5b38",
+       "label": "C",
+       "content": "35 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b869d9de-07a9-55af-9670-d04ead71653d",
+       "label": "D",
+       "content": "85 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e009aee3-afce-571e-a8c2-1044743e7529",
+     "key": "eco-cb-07",
+     "stem": "Water is essential for life but cheap, while diamonds are not essential but expensive. This paradox of value is explained by the difference in",
+     "image_url": null,
+     "explanation": "Water is plentiful, so the marginal unit adds little utility; diamonds are scarce, so their marginal utility is high.\n\n**Why the other options are wrong**\n\n- total utility alone: Water has greater total utility, yet a lower price.\n- the colour of the goods: Colour is irrelevant.\n- government price controls: Prices here are set by the market.",
+     "position": 7,
+     "options": [
+      {
+       "id": "946bf410-ba74-54d0-b383-88ef7acad76d",
+       "label": "A",
+       "content": "marginal utility",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "fe769c3c-092a-5b9b-aad2-6687a1b1a241",
+       "label": "B",
+       "content": "total utility alone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e439b699-1b11-59c9-9232-f7173a593316",
+       "label": "C",
+       "content": "the colour of the goods",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f3bfa23e-f317-5646-a902-7346fac831c9",
+       "label": "D",
+       "content": "government price controls",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "27ee0317-8fc5-5c65-9150-304daf74360b",
+     "key": "eco-cb-08",
+     "stem": "Bread costs NLe 5 and tea costs NLe 2. The marginal utility of the last loaf bought is 20 utils. For the consumer to be in equilibrium, what must the marginal utility of the last cup of tea be?",
+     "image_url": null,
+     "explanation": "$\\dfrac{20}{5} = \\dfrac{MU_T}{2}$, so $MU_T = 4 \\times 2 = 8$ utils.\n\n**Why the other options are wrong**\n\n- 20 utils: MU need not be equal; MU per leone must be equal.\n- 50 utils: You inverted the price ratio.\n- 4 utils: That is the MU per leone, not the MU of tea.",
+     "position": 8,
+     "options": [
+      {
+       "id": "0d1400c5-3130-5fb2-98ec-6cd5a3e0693a",
+       "label": "A",
+       "content": "4 utils",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "65304af5-b577-55e8-b80e-1810de1ef37f",
+       "label": "B",
+       "content": "8 utils",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8b7ae96e-9afb-5eb5-8ab6-f86533556bef",
+       "label": "C",
+       "content": "20 utils",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f0a746fb-49b6-5cdf-879d-acbd57c85aec",
+       "label": "D",
+       "content": "50 utils",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "27eb13cd-1a3d-5dbc-9544-1f82fd2f1a8b",
+   "topic": "The Firm",
+   "title": "The Firm: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on the firm, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 125,
+   "questions": [
+    {
+     "id": "f424b8fd-3d2c-56a3-8ca8-77e404e8391e",
+     "key": "eco-fm-01",
+     "stem": "An industry is",
+     "image_url": null,
+     "explanation": "For example, all the firms making soft drinks form the soft-drinks industry.\n\n**Why the other options are wrong**\n\n- a single business unit: That is a firm.\n- a single factory or workshop: That is a plant.\n- a government ministry: A ministry is not an industry.",
+     "position": 1,
+     "options": [
+      {
+       "id": "15f1da01-4bc6-594d-acc6-0172129f9f14",
+       "label": "A",
+       "content": "a single business unit",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "35267632-2102-56a1-b3be-0de7c2f8619b",
+       "label": "B",
+       "content": "a group of firms producing similar goods",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f60687a4-bdd0-5a74-ae8b-898968ba8e42",
+       "label": "C",
+       "content": "a single factory or workshop",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b8c75332-f5b7-5719-95c6-a87c71aa0655",
+       "label": "D",
+       "content": "a government ministry",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0e165194-5744-5df3-ada7-a44fd8df8d4f",
+     "key": "eco-fm-02",
+     "stem": "Which business owner has unlimited liability?",
+     "image_url": null,
+     "explanation": "A sole proprietor's personal property can be taken to pay the business's debts.\n\n**Why the other options are wrong**\n\n- a shareholder in a public limited company: Shareholders have limited liability.\n- a shareholder in a private limited company: Shareholders have limited liability.\n- a member of a registered cooperative: Cooperative members usually have limited liability.",
+     "position": 2,
+     "options": [
+      {
+       "id": "52b4a532-babc-5d3b-b817-d1362bdb1281",
+       "label": "A",
+       "content": "a shareholder in a public limited company",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "aaa772d8-f6a1-5657-b508-fe0afb36dfa8",
+       "label": "B",
+       "content": "a shareholder in a private limited company",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "21724126-6139-537d-a301-cfbf4361669b",
+       "label": "C",
+       "content": "a sole proprietor",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "744bdcb4-1a99-5e7c-bb4a-3d6916355f9c",
+       "label": "D",
+       "content": "a member of a registered cooperative",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "723e91ab-06e4-59bf-9cd2-3695d784e5ba",
+     "key": "eco-fm-03",
+     "stem": "A public corporation is owned by",
+     "image_url": null,
+     "explanation": "Public corporations are set up by law and owned and controlled by the state.\n\n**Why the other options are wrong**\n\n- shareholders who bought shares on the stock exchange: That describes a public limited company.\n- partners: Partnerships are privately owned.\n- its customers as members: That describes a cooperative.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1c020d16-4f38-5592-9078-4195f8ef070d",
+       "label": "A",
+       "content": "shareholders who bought shares on the stock exchange",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "557e85af-d6f3-5013-905d-eb42c92c9041",
+       "label": "B",
+       "content": "partners",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "132cc7de-df71-5e17-bfcf-230087292dc5",
+       "label": "C",
+       "content": "its customers as members",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7bb38037-a556-52ad-9d08-0c65de1ee400",
+       "label": "D",
+       "content": "the government",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2eacc0be-33cf-56d9-ab9f-ee4abd222d20",
+     "key": "eco-fm-04",
+     "stem": "Privatisation is",
+     "image_url": null,
+     "explanation": "Ownership passes, wholly or partly, from the government to private individuals or firms.\n\n**Why the other options are wrong**\n\n- running a public enterprise on commercial lines while the government keeps it: That is commercialisation.\n- the government taking over private firms: That is nationalisation.\n- two private firms joining together: That is a merger.",
+     "position": 4,
+     "options": [
+      {
+       "id": "6c090820-9bad-5489-acac-4c0f29eb9069",
+       "label": "A",
+       "content": "the transfer of ownership of public enterprises to the private sector",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a8e1352c-c0e3-58e1-8220-5daff53517c9",
+       "label": "B",
+       "content": "running a public enterprise on commercial lines while the government keeps it",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "304b99de-2025-588f-9aac-4a5c9e20d7c3",
+       "label": "C",
+       "content": "the government taking over private firms",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "35cd8d11-7a07-58de-8797-aa3fcbbb986b",
+       "label": "D",
+       "content": "two private firms joining together",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d4a829a4-f9e0-5859-9f0f-f84cccc2f1b6",
+     "key": "eco-fm-05",
+     "stem": "Economies of scale cause a firm's",
+     "image_url": null,
+     "explanation": "Large firms gain advantages such as bulk buying that lower cost per unit.\n\n**Why the other options are wrong**\n\n- average cost to rise as it grows: Rising average cost is caused by diseconomies of scale.\n- prices to rise: Lower costs tend to lower, not raise, prices.\n- output to fall: Economies of scale come with larger output.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d10bbd86-9919-537b-921a-a9f666c3d69d",
+       "label": "A",
+       "content": "average cost to rise as it grows",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e2bd5ca0-8550-5ffc-8487-58bb5ca543cb",
+       "label": "B",
+       "content": "average cost to fall as it grows",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "090cae7f-70c3-5bde-a377-60035c3d91c7",
+       "label": "C",
+       "content": "prices to rise",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d315a746-38f4-5a7b-82ff-f3b4d6f6d8ab",
+       "label": "D",
+       "content": "output to fall",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eac6fbcf-1815-52b7-b874-2c89ca9771a7",
+     "key": "eco-fm-06",
+     "stem": "Which of these is an internal economy of scale?",
+     "image_url": null,
+     "explanation": "Internal economies come from the growth of the firm itself.\n\n**Why the other options are wrong**\n\n- better roads built in the area by the government: This is an external economy, shared by all firms in the area.\n- a pool of skilled workers in the region: This is an external economy.\n- research institutes near the industry: This is an external economy.",
+     "position": 6,
+     "options": [
+      {
+       "id": "38eb2de7-5b86-5ed0-a431-2e6082f912ef",
+       "label": "A",
+       "content": "better roads built in the area by the government",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a5bf9f99-8404-51a5-9065-65132533263d",
+       "label": "B",
+       "content": "a pool of skilled workers in the region",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9a9b7142-b5ce-5055-b879-a877dad5541f",
+       "label": "C",
+       "content": "buying raw materials in bulk at a discount",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "246b59f2-1456-50f2-9075-8c51b288744f",
+       "label": "D",
+       "content": "research institutes near the industry",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "809c824b-a224-58ec-a6a1-555995a6d11f",
+     "key": "eco-fm-07",
+     "stem": "In a cooperative society, decisions are made on the basis of",
+     "image_url": null,
+     "explanation": "Cooperatives are democratic: each member has an equal vote.\n\n**Why the other options are wrong**\n\n- one vote per share held: Voting by shares is a feature of companies.\n- instructions from the government: Cooperatives are run by their members.\n- the managers' wishes alone: Members, not managers, control a cooperative.",
+     "position": 7,
+     "options": [
+      {
+       "id": "e8fe9000-c66c-57e2-ae44-a7f6bedbeea8",
+       "label": "A",
+       "content": "one vote per share held",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d5cdc1b3-7086-50c3-b08d-a62a4c458bcd",
+       "label": "B",
+       "content": "instructions from the government",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c14a2510-14d3-5e3d-891f-2a10611ca35c",
+       "label": "C",
+       "content": "the managers' wishes alone",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0828c96d-1a62-5f0c-9864-23263921146d",
+       "label": "D",
+       "content": "one member, one vote",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5e1e2edb-9fca-5424-9f45-e9f0f17b9e72",
+     "key": "eco-fm-08",
+     "stem": "Commercialisation of a public enterprise means that",
+     "image_url": null,
+     "explanation": "A commercialised enterprise charges economic prices and aims to make a profit.\n\n**Why the other options are wrong**\n\n- it is sold to private shareholders: That is privatisation.\n- it is closed down: Commercialisation keeps it running.\n- it receives larger government subsidies: It must reduce its reliance on subsidies.",
+     "position": 8,
+     "options": [
+      {
+       "id": "0c702dc9-a793-5130-8ed9-3b349d453a01",
+       "label": "A",
+       "content": "it stays in government ownership but must cover its costs and run like a business",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "fc5f8bd5-d851-5da1-95fc-c22f9a90d696",
+       "label": "B",
+       "content": "it is sold to private shareholders",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "479219b1-4e4c-5405-b908-be3416267f72",
+       "label": "C",
+       "content": "it is closed down",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9b5d35e7-4ef1-5ee3-a792-db26d351c77d",
+       "label": "D",
+       "content": "it receives larger government subsidies",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6da67ae2-8b49-5beb-853f-9a9d4002ed4b",
+   "topic": "Market Structures",
+   "title": "Market Structures: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on market structures, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 126,
+   "questions": [
+    {
+     "id": "d0878d7c-37ba-5af8-bee3-81db06027e3b",
+     "key": "eco-ms-01",
+     "stem": "A firm in perfect competition is described as",
+     "image_url": null,
+     "explanation": "It must accept the market price; it is too small to influence it.\n\n**Why the other options are wrong**\n\n- a price maker: A monopolist is a price maker.\n- a monopolist: A monopolist is the only seller.\n- an oligopolist: Oligopolists are few large firms.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7e1ed6aa-ff75-5bb9-82f1-249ac4e7bc0f",
+       "label": "A",
+       "content": "a price maker",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "81aeedc4-31e5-537d-9858-f05f10e464b1",
+       "label": "B",
+       "content": "a price taker",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ef48ab8d-423a-5639-b464-1c6d7bca3dae",
+       "label": "C",
+       "content": "a monopolist",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d4be9a0f-ec09-5445-b9f0-79c179f6dc79",
+       "label": "D",
+       "content": "an oligopolist",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8362be3a-6132-5d12-846b-5028fc737e5c",
+     "key": "eco-ms-02",
+     "stem": "Which is a feature of perfect competition?",
+     "image_url": null,
+     "explanation": "Identical products, many firms, free entry and perfect knowledge define perfect competition.\n\n**Why the other options are wrong**\n\n- a single seller: That is monopoly.\n- a few large sellers: That is oligopoly.\n- differentiated products with heavy advertising: That is monopolistic competition.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d6ba6f65-64b1-5603-81ba-41739ed58fa1",
+       "label": "A",
+       "content": "a single seller",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "78d7081c-8b4c-5799-ba46-548d1b88c4e5",
+       "label": "B",
+       "content": "a few large sellers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b6cc01db-d9f4-5331-bbb8-64c386e50b01",
+       "label": "C",
+       "content": "many buyers and sellers of an identical product",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "86f06809-f25e-565b-80f8-cfa1bfe265a3",
+       "label": "D",
+       "content": "differentiated products with heavy advertising",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "475b301c-f235-5c4d-9b65-f81fdb727af3",
+     "key": "eco-ms-03",
+     "stem": "In the long run, a firm in perfect competition earns",
+     "image_url": null,
+     "explanation": "Free entry and exit push price to the lowest point of average cost.\n\n**Why the other options are wrong**\n\n- abnormal profit: Abnormal profit attracts new firms until it disappears.\n- a loss: Loss-making firms leave until losses disappear.\n- no revenue: The firm still earns revenue.",
+     "position": 3,
+     "options": [
+      {
+       "id": "3bc95193-8901-5600-87ad-b7da0e212e45",
+       "label": "A",
+       "content": "abnormal profit",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cf24b26d-f5f6-5d14-87c4-03dcd9de7ca2",
+       "label": "B",
+       "content": "a loss",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d0f49350-512f-508f-8de2-0cb64cc60bee",
+       "label": "C",
+       "content": "no revenue",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "91037b20-5875-5ad4-8a62-7752aa188b6d",
+       "label": "D",
+       "content": "normal profit only",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "027241bd-2842-5ca9-9a52-ea91dcbbf046",
+     "key": "eco-ms-04",
+     "stem": "In the short run, a firm making a loss should continue to produce as long as price covers",
+     "image_url": null,
+     "explanation": "If price covers AVC, producing loses less than closing down, which loses all the fixed cost.\n\n**Why the other options are wrong**\n\n- average total cost: If price covered ATC, the firm would not be making a loss.\n- total fixed cost: Fixed costs must be paid whether or not the firm produces.\n- marginal revenue: In perfect competition price equals MR anyway.",
+     "position": 4,
+     "options": [
+      {
+       "id": "10a8abef-921b-58ce-9847-20aa4d50afaa",
+       "label": "A",
+       "content": "average variable cost",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ffbc3847-b643-5d04-af6e-2b3d58405fcb",
+       "label": "B",
+       "content": "average total cost",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "818e1950-a870-5193-90fb-f4e66fd90d9e",
+       "label": "C",
+       "content": "total fixed cost",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b6849895-854c-5896-a2c5-a06ea6f4c8cc",
+       "label": "D",
+       "content": "marginal revenue",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "10171278-4d34-5dc5-bf4b-4c60d78ba827",
+     "key": "eco-ms-05",
+     "stem": "A monopolist sells 4 units at NLe 70 each. Its total cost is NLe 220. What is its profit?",
+     "image_url": null,
+     "explanation": "TR = 70 × 4 = 280; profit = 280 − 220 = NLe 60.\n\n**Why the other options are wrong**\n\n- 280 NLe: That is total revenue, not profit.\n- 500 NLe: You added revenue and cost.\n- 15 NLe: That is the profit per unit (70 − 55).",
+     "position": 5,
+     "options": [
+      {
+       "id": "0cf7bad1-3856-5b29-b3e5-4fdfe963572c",
+       "label": "A",
+       "content": "15 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1894ab07-cb7f-51a2-95d5-42c23209dd9c",
+       "label": "B",
+       "content": "60 NLe",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d7450bd0-a241-579c-b4d6-5c940543c2c3",
+       "label": "C",
+       "content": "280 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "46817aa3-1b14-553b-886f-47afbc431df8",
+       "label": "D",
+       "content": "500 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7fece4ba-a6c7-5bd6-9a81-b07c429c3296",
+     "key": "eco-ms-06",
+     "stem": "Price discrimination is possible only if",
+     "image_url": null,
+     "explanation": "The seller charges more where demand is inelastic and less where it is elastic.\n\n**Why the other options are wrong**\n\n- the market is perfectly competitive: Price discrimination needs monopoly power.\n- all buyers have the same elasticity of demand: Different elasticities make different prices profitable.\n- buyers can easily resell the good: Resale would undo the price differences.",
+     "position": 6,
+     "options": [
+      {
+       "id": "4e980fed-7f04-504b-9465-9e9c6edd5e02",
+       "label": "A",
+       "content": "the market is perfectly competitive",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "15a3fb48-30f5-5223-ac5d-67f69a38cad6",
+       "label": "B",
+       "content": "the markets can be kept separate and have different elasticities of demand",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "125f48c8-06a5-5c6d-a81c-33f215030f92",
+       "label": "C",
+       "content": "all buyers have the same elasticity of demand",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2a94630d-fd7c-5761-b3f3-b3dfed999213",
+       "label": "D",
+       "content": "buyers can easily resell the good",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "81ea3448-337e-5480-801f-5cabed12f254",
+     "key": "eco-ms-07",
+     "stem": "A market dominated by a few large firms is called",
+     "image_url": null,
+     "explanation": "Mobile phone networks in many countries are an example of oligopoly.\n\n**Why the other options are wrong**\n\n- a monopoly: A monopoly has one seller.\n- perfect competition: Perfect competition has very many small firms.\n- monopolistic competition: Monopolistic competition has many firms.",
+     "position": 7,
+     "options": [
+      {
+       "id": "c45bf6fb-289f-533e-9f08-2ecbe2dee692",
+       "label": "A",
+       "content": "a monopoly",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1c9691ea-24e0-5530-b33a-cc57f0a946b1",
+       "label": "B",
+       "content": "perfect competition",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2aaa9aa8-55a7-50c9-9a92-07ebcc83f5bb",
+       "label": "C",
+       "content": "an oligopoly",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a94c29cb-fe49-5038-b791-0aa74619f490",
+       "label": "D",
+       "content": "monopolistic competition",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "58ce1767-5827-5e37-9b26-97c80eff2b1e",
+     "key": "eco-ms-08",
+     "stem": "A monopolist's marginal revenue curve",
+     "image_url": null,
+     "explanation": "To sell more, the monopolist must lower the price on all units, so MR is less than price.\n\n**Why the other options are wrong**\n\n- is the same as its demand curve: MR equals AR only when price is constant.\n- lies above its demand curve: MR is less than price for a monopolist.\n- is horizontal: A horizontal MR belongs to the perfectly competitive firm.",
+     "position": 8,
+     "options": [
+      {
+       "id": "6a31ae1b-0266-597b-a70b-6b4d5e5b8ffb",
+       "label": "A",
+       "content": "is the same as its demand curve",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "eb664960-373f-50df-a2a8-3b32884c3a49",
+       "label": "B",
+       "content": "lies above its demand curve",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d30ca181-4dc1-5edb-bb0b-7480efe5295d",
+       "label": "C",
+       "content": "is horizontal",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4826eab3-9d81-5b36-8adb-5c0fd006ef01",
+       "label": "D",
+       "content": "lies below its demand (average revenue) curve",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "d2d96f520472"
+}

@@ -1,0 +1,2520 @@
+{
+ "name": "economics_set3_p1",
+ "label": "Economics: set 3 (labour, population, sectors and the macroeconomy)",
+ "subject_slug": "economics",
+ "papers": [
+  {
+   "id": "c2b76be5-13b0-564b-b600-98559e0c479d",
+   "topic": "Labour and Wages",
+   "title": "Labour and Wages: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on labour and wages, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 140,
+   "questions": [
+    {
+     "id": "67c95f0c-91d1-5d83-8605-cb7ae4cac630",
+     "key": "eco-lb-01",
+     "stem": "The demand for labour is called a derived demand because",
+     "image_url": null,
+     "explanation": "Firms hire workers because consumers demand the products those workers make.\n\n**Why the other options are wrong**\n\n- labour is supplied by households: That describes supply, not why demand is derived.\n- wages are derived from the prices of goods: This is not the meaning of derived demand.\n- trade unions decide how many workers are employed: Unions bargain over wages; they do not create derived demand.",
+     "position": 1,
+     "options": [
+      {
+       "id": "93bbc6b9-f9e3-5266-906d-7e38b6ac2eb2",
+       "label": "A",
+       "content": "labour is supplied by households",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0b8fe485-4343-5a69-aee0-99a4de2991ea",
+       "label": "B",
+       "content": "wages are derived from the prices of goods",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9785b6d0-ba7f-5211-bed3-50d94bdef075",
+       "label": "C",
+       "content": "trade unions decide how many workers are employed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c697a33a-fced-544e-ae84-4dc2d49197c6",
+       "label": "D",
+       "content": "labour is wanted for the goods and services it helps to produce",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d37ab598-1603-5402-85c8-240af8ba5ebd",
+     "key": "eco-lb-02",
+     "stem": "A worker's money wage index rises to 120 while the price index rises to 150 (base year = 100). What is the real wage index?",
+     "image_url": null,
+     "explanation": "Real wage index $= \\dfrac{120}{150} \\times 100 = 80$: real wages have fallen by 20%.\n\n**Why the other options are wrong**\n\n- 125: You divided the price index by the wage index.\n- 30: You subtracted the indices.\n- 270: You added the indices.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d1198037-263e-50e4-8fa0-330f2ae152c5",
+       "label": "A",
+       "content": "30",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "684560cc-a78b-507f-936c-fbbf74fb5e24",
+       "label": "B",
+       "content": "80",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d9325395-cb4a-562e-b6f4-ca5259b729cb",
+       "label": "C",
+       "content": "125",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ac745404-ce4d-5dcd-b1ad-fc192519231f",
+       "label": "D",
+       "content": "270",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1a77520e-0859-5e19-8eef-3d9e2889755e",
+     "key": "eco-lb-03",
+     "stem": "Unemployment of people who are between jobs or searching for their first job is called",
+     "image_url": null,
+     "explanation": "Frictional unemployment is usually short-term, while people move between jobs.\n\n**Why the other options are wrong**\n\n- seasonal unemployment: Seasonal unemployment follows the seasons, as in farming.\n- structural unemployment: Structural unemployment follows the decline of an industry or a skills mismatch.\n- cyclical unemployment: Cyclical unemployment follows a general fall in demand.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ad46ef6a-4774-54a7-8136-a34c9c2cbe56",
+       "label": "A",
+       "content": "seasonal unemployment",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0f4dcc4e-5eb1-5962-84e5-88ac70e2561a",
+       "label": "B",
+       "content": "structural unemployment",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "14ef7938-7ae6-54cd-bc89-a86aa16b4661",
+       "label": "C",
+       "content": "cyclical unemployment",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a020184c-5970-5a6c-8309-037fa4842aa0",
+       "label": "D",
+       "content": "frictional unemployment",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5bc7a955-e7c4-5a4e-a967-24a4e42bedc3",
+     "key": "eco-lb-04",
+     "stem": "A piece rate is a method of paying wages according to",
+     "image_url": null,
+     "explanation": "Piece rates suit work that is easy to count, such as tailoring or harvesting.\n\n**Why the other options are wrong**\n\n- the time spent at work: That is a time rate.\n- the number of overtime hours worked: Overtime is paid by time.\n- the minimum wage set by law: A minimum wage is a legal floor, not a method of payment.",
+     "position": 4,
+     "options": [
+      {
+       "id": "1a809adf-2396-5837-a1f9-b86e39551d52",
+       "label": "A",
+       "content": "the time spent at work",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "286a9f84-6f41-50c8-ad4f-d98194136a43",
+       "label": "B",
+       "content": "the number of overtime hours worked",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cf55d50f-7c74-5b48-ae3b-61c7d383559a",
+       "label": "C",
+       "content": "the minimum wage set by law",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e2a1bdb8-8f5c-536f-87e9-7f4ded49590e",
+       "label": "D",
+       "content": "the quantity of output produced",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ba7aef7f-ddf2-5c9d-a4d1-96aa168f831d",
+     "key": "eco-lb-05",
+     "stem": "A country's labour force is 2,500,000 and 200,000 people are unemployed. What is the unemployment rate?",
+     "image_url": null,
+     "explanation": "Unemployment rate $= \\dfrac{200000}{2500000} \\times 100 = 8\\%$.\n\n**Why the other options are wrong**\n\n- 12.5 %: You divided the labour force by the number unemployed.\n- 0.08 %: You did not multiply by 100.\n- 8.70 %: You divided by the number employed; divide by the whole labour force.",
+     "position": 5,
+     "options": [
+      {
+       "id": "092ff50d-8b99-55b5-a51d-d6dcd6a51ad6",
+       "label": "A",
+       "content": "0.08 %",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7962efee-ef81-5d9c-8b20-e0cf4b9c8464",
+       "label": "B",
+       "content": "8 %",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e50e7fc5-9d05-5c1d-be37-ae182f0ab883",
+       "label": "C",
+       "content": "8.70 %",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "46ada886-3225-5718-bb5e-95376ddfe22c",
+       "label": "D",
+       "content": "12.5 %",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aad1ba3e-7155-5771-85c4-521995382dc9",
+     "key": "eco-lb-06",
+     "stem": "A minimum wage fixed above the equilibrium wage is likely to",
+     "image_url": null,
+     "explanation": "More people offer to work at the higher wage, but firms want fewer workers.\n\n**Why the other options are wrong**\n\n- lower the wages of all workers: It raises the wages of those who keep their jobs.\n- increase the number of workers firms want to hire: At a higher wage, firms hire fewer workers.\n- create a shortage of labour: It creates a surplus of labour.",
+     "position": 6,
+     "options": [
+      {
+       "id": "67309036-0e84-576a-b34c-09fbe13782e1",
+       "label": "A",
+       "content": "cause some unemployment",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6016d3fd-766c-5d53-a987-7160538d2da7",
+       "label": "B",
+       "content": "lower the wages of all workers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d32c2f10-5bdb-5518-ae42-43bc4ca1fd90",
+       "label": "C",
+       "content": "increase the number of workers firms want to hire",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "47b2d62c-341b-582b-b18f-2387267d4f4e",
+       "label": "D",
+       "content": "create a shortage of labour",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "916982a6-9efe-5c41-ab3d-b729f71b5f94",
+     "key": "eco-lb-07",
+     "stem": "Which of these is a method used by trade unions to press for higher wages?",
+     "image_url": null,
+     "explanation": "Unions negotiate on behalf of all their members with employers.\n\n**Why the other options are wrong**\n\n- price discrimination: Price discrimination is used by monopolists.\n- open market operations: These are used by the central bank.\n- devaluation: Devaluation is an exchange rate policy.",
+     "position": 7,
+     "options": [
+      {
+       "id": "8aca4e00-602e-52e4-84b1-8f1a073869d5",
+       "label": "A",
+       "content": "price discrimination",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0cd417e5-f4ba-5460-9f71-709e56fa0288",
+       "label": "B",
+       "content": "open market operations",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e5a7fa88-7875-56ed-8ac4-fbc5381feea8",
+       "label": "C",
+       "content": "collective bargaining",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3d0266f9-7926-53f7-8ad1-897e4fa2b1a3",
+       "label": "D",
+       "content": "devaluation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1eccf8e3-245e-5110-b7d9-8aaad7766e1c",
+     "key": "eco-lb-08",
+     "stem": "Miners who lose their jobs because the mine has closed permanently suffer from",
+     "image_url": null,
+     "explanation": "The decline of an industry leaves workers whose skills no longer match the jobs available.\n\n**Why the other options are wrong**\n\n- seasonal unemployment: Seasonal unemployment returns with the seasons.\n- frictional unemployment: Frictional unemployment is short-term, between jobs.\n- disguised unemployment: Disguised unemployment is when extra workers add nothing to output.",
+     "position": 8,
+     "options": [
+      {
+       "id": "e427b446-17a2-5a94-a5aa-5705498f38b8",
+       "label": "A",
+       "content": "seasonal unemployment",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "03065079-4ad6-566e-a702-affeca0065fd",
+       "label": "B",
+       "content": "frictional unemployment",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "531bf7c1-d3ee-53ba-8bf4-6c4079414770",
+       "label": "C",
+       "content": "disguised unemployment",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a27382ef-ead0-5a6f-8fb5-64e558620b11",
+       "label": "D",
+       "content": "structural unemployment",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "61a437b3-4f41-5c79-866a-a409126536ce",
+   "topic": "Population",
+   "title": "Population: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on population, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 141,
+   "questions": [
+    {
+     "id": "1c5b0172-eec0-5536-927f-a862543237fe",
+     "key": "eco-pp-01",
+     "stem": "A district of 400,000 people records 14,000 live births in a year. What is the crude birth rate?",
+     "image_url": null,
+     "explanation": "Birth rate $= \\dfrac{14000}{400000} \\times 1000 = 35$ per 1,000.\n\n**Why the other options are wrong**\n\n- 3.5 per 1,000: That is per 100 people; birth rates are given per 1,000.\n- 28.57 per 1,000: You divided the population by the births.\n- 14 per 1,000: That is the number of births in thousands.",
+     "position": 1,
+     "options": [
+      {
+       "id": "5458d8f5-297f-5c26-96de-7fd2ca1a23b3",
+       "label": "A",
+       "content": "3.5 per 1,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0cf6bd80-965f-5b05-abae-c28c541a536a",
+       "label": "B",
+       "content": "14 per 1,000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7a146ca2-2ff6-5527-ba74-819d1f396707",
+       "label": "C",
+       "content": "28.57 per 1,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "855c639d-1ba5-51fd-9fcf-9cfa6cc74f3a",
+       "label": "D",
+       "content": "35 per 1,000",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6352b0fe-6143-5b4f-9aa3-94fa126cb651",
+     "key": "eco-pp-02",
+     "stem": "A town has 42,000 people under 15, 4,000 over 64 and 54,000 aged 15 to 64. What is the dependency ratio?",
+     "image_url": null,
+     "explanation": "Dependency ratio $= \\dfrac{42000 + 4000}{54000} \\times 100 \\approx 85.19$.\n\n**Why the other options are wrong**\n\n- 77.78: You left out the people over 64.\n- 117.39: You divided workers by dependants.\n- 46: That is the number of dependants in thousands.",
+     "position": 2,
+     "options": [
+      {
+       "id": "37f60583-900d-51ad-ba24-221bf1eb3717",
+       "label": "A",
+       "content": "46",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "569a5b88-6ca6-54f6-9843-d5ebaa7bc56d",
+       "label": "B",
+       "content": "77.78",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ea964a90-13c4-580f-95b8-39ba7e0fa002",
+       "label": "C",
+       "content": "85.19",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "af8926f3-8ffb-5956-8011-c51709eeff3c",
+       "label": "D",
+       "content": "117.39",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7a2441b9-e6d0-5e3f-936e-163ce75dcf94",
+     "key": "eco-pp-03",
+     "stem": "According to Malthus, population tends to grow",
+     "image_url": null,
+     "explanation": "Population doubles (1, 2, 4, 8…) while food rises by equal steps (1, 2, 3, 4…).\n\n**Why the other options are wrong**\n\n- in an arithmetic progression: Malthus said food supply grows arithmetically.\n- by a constant number each year: That would be arithmetic growth.\n- more slowly than the food supply: He argued the opposite.",
+     "position": 3,
+     "options": [
+      {
+       "id": "fa5dbb32-fd3f-59df-8e12-9b17c6da1e27",
+       "label": "A",
+       "content": "in a geometric progression",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c1514d5a-fc5e-5134-83e9-367bdbd4b50f",
+       "label": "B",
+       "content": "in an arithmetic progression",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6266375c-5a61-59b9-b75b-536e268988d0",
+       "label": "C",
+       "content": "by a constant number each year",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2e4daa0c-d196-5070-ae45-d338c83f53e8",
+       "label": "D",
+       "content": "more slowly than the food supply",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "71fc38a1-c5bb-5630-9b7f-f0203b2a81fc",
+     "key": "eco-pp-04",
+     "stem": "The optimum population is the population at which",
+     "image_url": null,
+     "explanation": "With given resources and technology, output per head is greatest at the optimum.\n\n**Why the other options are wrong**\n\n- the population is largest: A larger population is not necessarily better off.\n- the birth rate is highest: The optimum is defined by output per head.\n- the death rate is lowest: Death rates do not define the optimum.",
+     "position": 4,
+     "options": [
+      {
+       "id": "15eab862-b620-596f-9d5e-9d0faaa990b9",
+       "label": "A",
+       "content": "the population is largest",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "950531a5-cfc3-57fd-b09e-a531972cc3f8",
+       "label": "B",
+       "content": "the birth rate is highest",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bb348f59-68c6-5b09-9648-d5c94a1a15a8",
+       "label": "C",
+       "content": "output per head is highest",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "919a3418-ada6-5adb-9bc8-c906bf942c9d",
+       "label": "D",
+       "content": "the death rate is lowest",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ebe98b19-8ee1-5349-a041-5f07ede55a9a",
+     "key": "eco-pp-05",
+     "stem": "A population pyramid with a very broad base shows",
+     "image_url": null,
+     "explanation": "Many children in the youngest age groups make the base wide.\n\n**Why the other options are wrong**\n\n- an ageing population: An ageing population has a narrow base.\n- a low birth rate: A low birth rate gives a narrow base.\n- a high life expectancy: Long lives give a broad top, not a broad base.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d09e52e0-b2c7-55e3-9aaf-710660bd0c94",
+       "label": "A",
+       "content": "an ageing population",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1ce4aa1f-a04e-5e1b-99da-25712a011e08",
+       "label": "B",
+       "content": "a low birth rate",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a9ed8574-1353-5ac3-a4b0-c38acb57fa37",
+       "label": "C",
+       "content": "a high life expectancy",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "aefaf5ff-f926-5fa0-972d-b54c4ca3fb1c",
+       "label": "D",
+       "content": "a high birth rate",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1a903ad1-12f1-5f6d-890a-bd93ab4f201d",
+     "key": "eco-pp-06",
+     "stem": "A country's birth rate is 35 per 1,000 and its death rate is 13 per 1,000. What is its rate of natural increase?",
+     "image_url": null,
+     "explanation": "Natural increase = 35 − 13 = 22 per 1,000 (2.2%).\n\n**Why the other options are wrong**\n\n- 48 per 1,000: You added the rates; natural increase is births minus deaths.\n- 2.69 per 1,000: You divided the rates.\n- 13 per 1,000: That is the death rate.",
+     "position": 6,
+     "options": [
+      {
+       "id": "1d3254f1-d77a-545a-ac88-d027a6868e11",
+       "label": "A",
+       "content": "2.69 per 1,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b2fa34f6-73e1-5b81-9fd4-287115b4a173",
+       "label": "B",
+       "content": "13 per 1,000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d292b9bc-e698-5d44-a7d1-c74916aec745",
+       "label": "C",
+       "content": "22 per 1,000",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ce963d5a-85b7-581e-bfd4-8640baf7eceb",
+       "label": "D",
+       "content": "48 per 1,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c3ebc010-593c-58dd-a1d3-caf891097234",
+     "key": "eco-pp-07",
+     "stem": "A major cause of rural–urban migration in Sierra Leone is",
+     "image_url": null,
+     "explanation": "Jobs, schools, hospitals, electricity and water draw young people to towns.\n\n**Why the other options are wrong**\n\n- cheaper housing in towns: Housing is usually dearer in towns.\n- more farmland in towns: Farmland is in rural areas.\n- a lower cost of living in towns: Towns usually cost more to live in.",
+     "position": 7,
+     "options": [
+      {
+       "id": "900b420a-fa05-5f75-924e-e9e85b286ff8",
+       "label": "A",
+       "content": "better job opportunities and amenities in towns",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "940e0766-cb22-5bfa-b1e3-e9bdea272a86",
+       "label": "B",
+       "content": "cheaper housing in towns",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "09e50d0f-bc74-51f8-8024-41bb14dc7c9d",
+       "label": "C",
+       "content": "more farmland in towns",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2da2b8be-774e-58f1-aaf8-a5b846cf7495",
+       "label": "D",
+       "content": "a lower cost of living in towns",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "47a26db6-d6db-5e3a-89d6-38cae340e0ff",
+     "key": "eco-pp-08",
+     "stem": "A country is overpopulated when",
+     "image_url": null,
+     "explanation": "Beyond the optimum, more people reduce output per head.\n\n**Why the other options are wrong**\n\n- its population is over 10 million: Overpopulation depends on resources, not a fixed number.\n- its birth rate is higher than its death rate: That only means the population is growing.\n- there are more women than men: That is about the sex ratio.",
+     "position": 8,
+     "options": [
+      {
+       "id": "e14d6fd3-f475-5960-9585-1bba6aeb410b",
+       "label": "A",
+       "content": "its population is over 10 million",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1410891f-049f-53ee-86cd-b1518c8cbf23",
+       "label": "B",
+       "content": "there are too many people for its resources, so output per head falls",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d29feecf-a2e5-50a9-bad4-1c32c46aa1af",
+       "label": "C",
+       "content": "its birth rate is higher than its death rate",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "23789529-b03c-541a-8d49-e45ee67451f0",
+       "label": "D",
+       "content": "there are more women than men",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "47cc78f2-65f3-54e0-9dc8-4a0cba19c9c1",
+   "topic": "Agriculture in West Africa",
+   "title": "Agriculture in West Africa: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on agriculture in west africa, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 142,
+   "questions": [
+    {
+     "id": "e55ab1e7-bf22-56c0-a2be-92793be87775",
+     "key": "eco-ag-01",
+     "stem": "The demand for staple foods such as rice is usually",
+     "image_url": null,
+     "explanation": "Staples are necessities with few substitutes, so quantity changes little with price.\n\n**Why the other options are wrong**\n\n- price elastic: People do not cut their staple food much when its price rises.\n- perfectly elastic: Perfectly elastic demand would collapse at any price rise.\n- upward sloping: Only exceptional goods have upward-sloping demand.",
+     "position": 1,
+     "options": [
+      {
+       "id": "ce7cff8a-2082-5624-bfaa-9684daf91620",
+       "label": "A",
+       "content": "price elastic",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b474a82b-1008-5129-b950-bc038d559818",
+       "label": "B",
+       "content": "perfectly elastic",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "44dbc387-9fc2-54ea-acb8-1414f1248d4b",
+       "label": "C",
+       "content": "price inelastic",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9bbf5f04-7de1-5435-b84d-05cca061658a",
+       "label": "D",
+       "content": "upward sloping",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8d7fbc1f-3af3-56b7-8e04-e7d189e1418f",
+     "key": "eco-ag-02",
+     "stem": "A buffer stock scheme stabilises the price of a crop by",
+     "image_url": null,
+     "explanation": "Buying in good years and selling in poor years keeps the price within a band.\n\n**Why the other options are wrong**\n\n- fixing a maximum price by law: A maximum price is a price control, not a buffer stock.\n- destroying any surplus crop: Buffer stocks store the surplus to sell later.\n- importing more of the crop when prices are low: That would push prices down further.",
+     "position": 2,
+     "options": [
+      {
+       "id": "7fbba699-05d3-5239-a621-1ac2efc1f650",
+       "label": "A",
+       "content": "fixing a maximum price by law",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "182326fc-7822-5882-a852-0784f593ec6f",
+       "label": "B",
+       "content": "destroying any surplus crop",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "407db8b9-8f3f-5ea6-8630-52f18f54048b",
+       "label": "C",
+       "content": "importing more of the crop when prices are low",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f7bd00bb-d3bd-5e13-b1ec-c0f9f622ecd5",
+       "label": "D",
+       "content": "buying and storing the crop when prices are low and selling it when prices are high",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8f569d48-d278-5389-9cd2-c1924421844d",
+     "key": "eco-ag-03",
+     "stem": "A problem of communal land tenure for farmers is that",
+     "image_url": null,
+     "explanation": "Without individual title, banks will not accept the land as collateral.\n\n**Why the other options are wrong**\n\n- land is too cheap to farm: Low cost is not the problem.\n- each farmer owns too much land: Communal tenure often gives small, fragmented plots.\n- nobody is allowed to farm: Members of the community are allocated land.",
+     "position": 3,
+     "options": [
+      {
+       "id": "433df69f-0360-5bc5-87ea-8ad6d60b649e",
+       "label": "A",
+       "content": "land cannot easily be used as security for loans",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ca21b1ee-5896-5c60-bc6f-064f73ff6e3f",
+       "label": "B",
+       "content": "land is too cheap to farm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ee3058b9-d874-5452-9ffc-bc53dff1ddec",
+       "label": "C",
+       "content": "each farmer owns too much land",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5c1588d8-1a98-5453-8c05-900f8cc4f3f9",
+       "label": "D",
+       "content": "nobody is allowed to farm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ef00f8de-6b7c-5a28-b7ab-2687abaae05e",
+     "key": "eco-ag-04",
+     "stem": "Shifting cultivation is a farming system in which",
+     "image_url": null,
+     "explanation": "The fallow period restores the soil, but the system needs a lot of land.\n\n**Why the other options are wrong**\n\n- crops and animals are raised together: That is mixed farming.\n- a single cash crop is grown on a large estate: That is plantation agriculture.\n- crops are watered from canals all year: That is irrigated farming.",
+     "position": 4,
+     "options": [
+      {
+       "id": "af337fb9-fb2f-5b1c-97f0-6a6ea70997f9",
+       "label": "A",
+       "content": "crops and animals are raised together",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f2fd8b9d-a666-5a98-a456-91ace775d5e9",
+       "label": "B",
+       "content": "a plot is farmed for a few years and then left to recover its fertility",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "aad73524-566a-54c3-b99a-33e6cab6baa3",
+       "label": "C",
+       "content": "a single cash crop is grown on a large estate",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b09b83d2-abfc-5df7-939b-41e78318e487",
+       "label": "D",
+       "content": "crops are watered from canals all year",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "68aed363-4e35-555e-8c1e-72c3e56c7fd6",
+     "key": "eco-ag-05",
+     "stem": "Farmers sell 100 bags of rice at NLe 600 a bag. After a bumper harvest they sell 110 bags, but the price falls to NLe 450. By how much does their total revenue change?",
+     "image_url": null,
+     "explanation": "TR before = 100 × 600 = 60,000; TR after = 110 × 450 = 49,500; change = −NLe 10,500. With inelastic demand, a bigger harvest lowers farm income.\n\n**Why the other options are wrong**\n\n- 10500 NLe: Revenue falls, so the change is negative.\n- 49500 NLe: That is the new total revenue, not the change.\n- 4500 NLe: That is only the revenue from the extra 10 bags.",
+     "position": 5,
+     "options": [
+      {
+       "id": "72ac9074-67e6-531f-8608-6abdbd86924a",
+       "label": "A",
+       "content": "-10500 NLe",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "96dfcc92-6ef2-579d-870f-ad6002a297c0",
+       "label": "B",
+       "content": "4500 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b2c43212-4f0e-55c1-9803-34987e289701",
+       "label": "C",
+       "content": "10500 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "18b316f8-9032-5cef-b13a-09cd98d6a91b",
+       "label": "D",
+       "content": "49500 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "55161d18-3a86-5d97-a748-c90f1c6e7cce",
+     "key": "eco-ag-06",
+     "stem": "Farmers' cooperatives help their members by",
+     "image_url": null,
+     "explanation": "Pooling produce and purchases gives small farmers more bargaining power.\n\n**Why the other options are wrong**\n\n- fixing the national minimum wage: That is done by the government.\n- issuing the national currency: That is the central bank's job.\n- collecting taxes for the government: That is the revenue authority's job.",
+     "position": 6,
+     "options": [
+      {
+       "id": "0878efed-6d81-5e4b-b48d-62858085f7ae",
+       "label": "A",
+       "content": "fixing the national minimum wage",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1a07a85d-11d4-5579-8b4a-7ab9c7c23576",
+       "label": "B",
+       "content": "issuing the national currency",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "db3c273e-5268-58dd-9194-bc34d940c971",
+       "label": "C",
+       "content": "buying inputs in bulk and bargaining together for better prices",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "87329ca3-a196-5642-9d02-b76f1e647bc2",
+       "label": "D",
+       "content": "collecting taxes for the government",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "87cf8208-d8b1-54fb-bf71-396667856920",
+     "key": "eco-ag-07",
+     "stem": "Agriculture contributes to industrial development by",
+     "image_url": null,
+     "explanation": "Palm fruit, rice, cocoa and timber are processed by industry.\n\n**Why the other options are wrong**\n\n- importing machinery for factories: Agriculture does not import machinery for industry.\n- lending money to factories: Banks, not farms, lend money.\n- collecting import duties: Customs authorities collect import duties.",
+     "position": 7,
+     "options": [
+      {
+       "id": "711d1128-7afb-54ad-9ed6-a83de30f70c7",
+       "label": "A",
+       "content": "importing machinery for factories",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8e809428-bde6-5fbf-91af-55a7ad66d3a5",
+       "label": "B",
+       "content": "lending money to factories",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "40558ecb-0e7d-50c5-ad94-2aead4b77433",
+       "label": "C",
+       "content": "collecting import duties",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b6f956c0-c0a7-5133-9814-516578da2d45",
+       "label": "D",
+       "content": "supplying raw materials to factories",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "71a3baa1-a6b1-5361-9b57-ea2b1aea684c",
+     "key": "eco-ag-08",
+     "stem": "The main function of the produce marketing boards set up in West Africa was to",
+     "image_url": null,
+     "explanation": "Boards were meant to stabilise farmers' prices and handle export marketing.\n\n**Why the other options are wrong**\n\n- grow export crops on government farms: They bought crops; they did not grow them.\n- build feeder roads in farming areas: Road building is not their main function.\n- lend money to commercial banks: They did not act as lenders to banks.",
+     "position": 8,
+     "options": [
+      {
+       "id": "89ab610a-d129-5a55-bb76-50d5a4c01382",
+       "label": "A",
+       "content": "buy export crops from farmers at fixed prices and sell them abroad",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4cb69926-fcd2-5af0-b6fa-fccdc89409f9",
+       "label": "B",
+       "content": "grow export crops on government farms",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "08a1997d-2845-5083-a8be-664ea25cac2e",
+       "label": "C",
+       "content": "build feeder roads in farming areas",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "55935a72-039a-5334-82c4-d380ceed92bc",
+       "label": "D",
+       "content": "lend money to commercial banks",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "22d9c7cd-667c-52aa-932c-ed29d26d67a5",
+   "topic": "Industrialization",
+   "title": "Industrialization: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on industrialization, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 143,
+   "questions": [
+    {
+     "id": "d9a4088a-f6db-563c-b25e-bb6079af11aa",
+     "key": "eco-in-01",
+     "stem": "Bakeries are usually located near their customers because",
+     "image_url": null,
+     "explanation": "Market-oriented industries locate near buyers when the product is perishable or bulky.\n\n**Why the other options are wrong**\n\n- flour is very heavy to transport: The product, not the raw material, decides here.\n- land is cheaper near customers: Land in towns is usually dearer.\n- power is cheaper near customers: Power cost is not the main reason.",
+     "position": 1,
+     "options": [
+      {
+       "id": "3f2c4e43-3e65-56c5-9f6e-7e844f4b2c3a",
+       "label": "A",
+       "content": "flour is very heavy to transport",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "54f64813-1d7b-5364-8fde-8f322db3d193",
+       "label": "B",
+       "content": "bread is perishable and bought daily",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1f10d6f7-3fe8-5f84-8c67-f55138c457a3",
+       "label": "C",
+       "content": "land is cheaper near customers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a8402970-ca44-5160-a6ac-6da843dad528",
+       "label": "D",
+       "content": "power is cheaper near customers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d3ae1992-c478-5377-8b83-92ccf179a91a",
+     "key": "eco-in-02",
+     "stem": "Import substitution industrialisation means",
+     "image_url": null,
+     "explanation": "New local industries replace imports, usually behind tariffs or quotas.\n\n**Why the other options are wrong**\n\n- exporting more raw materials: That is not industrialisation.\n- importing more capital goods: Importing machinery is not the strategy itself.\n- banning all exports: The strategy concerns imports, not exports.",
+     "position": 2,
+     "options": [
+      {
+       "id": "29a8e094-002f-5167-a9d7-7cdb2c4a0806",
+       "label": "A",
+       "content": "exporting more raw materials",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "07a8ffd6-a1ae-5fab-a30d-66856a395955",
+       "label": "B",
+       "content": "importing more capital goods",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0a18a255-d45a-54ef-b7a0-d4e522f2fe06",
+       "label": "C",
+       "content": "producing at home goods that were previously imported",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "059336c8-f1ed-5ef7-bcd5-ce92d5ffc6f4",
+       "label": "D",
+       "content": "banning all exports",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d6f3d324-87e8-586c-ac42-6ab78c4baa82",
+     "key": "eco-in-03",
+     "stem": "The localisation of industry refers to",
+     "image_url": null,
+     "explanation": "Localised industries share skilled labour, suppliers and services.\n\n**Why the other options are wrong**\n\n- the choice of a site for a single factory: That is the location of industry.\n- the spreading of industries across the country: That is dispersal.\n- the movement of firms abroad: That is relocation, not localisation.",
+     "position": 3,
+     "options": [
+      {
+       "id": "fead1d32-7add-5b5d-9658-8f459e7e55d2",
+       "label": "A",
+       "content": "the choice of a site for a single factory",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cb212696-cfcd-5a65-ab4a-ad1a52faf863",
+       "label": "B",
+       "content": "the spreading of industries across the country",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e8cb01ea-6b32-5218-b3b6-ee14cc06cc53",
+       "label": "C",
+       "content": "the movement of firms abroad",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1051ac40-c40e-537d-8d53-c394ce21b209",
+       "label": "D",
+       "content": "the concentration of firms in one industry in a particular area",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0d01afc0-d63a-5e80-996e-1dc1cab12f7b",
+     "key": "eco-in-04",
+     "stem": "A major problem facing industries in Sierra Leone is",
+     "image_url": null,
+     "explanation": "Frequent outages force firms to run costly generators, raising costs.\n\n**Why the other options are wrong**\n\n- too much capital: Capital is scarce, not plentiful.\n- too many skilled workers: Skilled labour is in short supply.\n- a very large home market: The home market is small.",
+     "position": 4,
+     "options": [
+      {
+       "id": "bd87bbd1-2314-5151-8184-cb453a101a14",
+       "label": "A",
+       "content": "unreliable power supply",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b41c76be-b537-5dc4-894f-c79a1338acc5",
+       "label": "B",
+       "content": "too much capital",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "90ee99c3-c854-5fce-84f2-dbe174461ae8",
+       "label": "C",
+       "content": "too many skilled workers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c5fe5479-86c8-561f-b047-6e457a647f22",
+       "label": "D",
+       "content": "a very large home market",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b09c4e5e-e7ad-5fb8-ad79-ca908388f308",
+     "key": "eco-in-05",
+     "stem": "An advantage of foreign direct investment to a developing country is that it",
+     "image_url": null,
+     "explanation": "FDI fills the shortage of capital and brings skills and technology.\n\n**Why the other options are wrong**\n\n- sends profits abroad: Profit repatriation is a disadvantage.\n- crowds out local firms: Crowding out is a disadvantage.\n- increases foreign control of key sectors: Foreign control is a disadvantage.",
+     "position": 5,
+     "options": [
+      {
+       "id": "c3eecae7-66d2-5661-bce0-aeff6c4906d4",
+       "label": "A",
+       "content": "sends profits abroad",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fec58ee5-5353-51e5-9aa0-72227144c7c2",
+       "label": "B",
+       "content": "brings in capital and technology",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "47faea20-9775-5f6c-b2c6-b8180d1ccb1a",
+       "label": "C",
+       "content": "crowds out local firms",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "30d45e6f-6396-518c-84fb-8e1edf6aa27a",
+       "label": "D",
+       "content": "increases foreign control of key sectors",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "49b18f4b-7008-5dd8-b667-7e5b9234b974",
+     "key": "eco-in-06",
+     "stem": "An industry whose raw material loses much of its weight in processing is likely to locate",
+     "image_url": null,
+     "explanation": "Processing near the source avoids paying to transport waste material.\n\n**Why the other options are wrong**\n\n- near its market: Carrying heavy raw material to the market would be costly.\n- always at a seaport: A port is not always the cheapest site.\n- in the capital city: The capital is not necessarily near the raw material.",
+     "position": 6,
+     "options": [
+      {
+       "id": "d2667e9c-50eb-543c-8513-200ade60efc1",
+       "label": "A",
+       "content": "near its market",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4ff983cd-f93e-507f-8e05-e9c5fb18c6a6",
+       "label": "B",
+       "content": "always at a seaport",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "46db22e1-4ae8-5d12-8e7a-545a5f2a398d",
+       "label": "C",
+       "content": "near its source of raw materials",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e6559f65-6ef8-50c6-8723-7bf1afcdb7d8",
+       "label": "D",
+       "content": "in the capital city",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f7341bce-e9ac-58e9-898d-183fa7687e2d",
+     "key": "eco-in-07",
+     "stem": "Small-scale industries are important in West Africa mainly because they",
+     "image_url": null,
+     "explanation": "Tailoring, carpentry and food processing employ many people cheaply.\n\n**Why the other options are wrong**\n\n- need large amounts of capital: They need little capital.\n- use very advanced technology: They usually use simple technology.\n- export most of their output: Most serve local markets.",
+     "position": 7,
+     "options": [
+      {
+       "id": "1425bab7-73bc-5ef0-8c58-2760176fe05f",
+       "label": "A",
+       "content": "need large amounts of capital",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "89a6237a-8c2b-5404-b0db-ced5ea83c4b8",
+       "label": "B",
+       "content": "use very advanced technology",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bc7bd0f8-9336-53a9-a294-9db3ed6a63b7",
+       "label": "C",
+       "content": "export most of their output",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f2d41f5a-2ce0-53b4-8181-fa2086682f77",
+       "label": "D",
+       "content": "create many jobs with little capital",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c36e0c7e-e7f6-5fad-94f0-bb7554a06d59",
+     "key": "eco-in-08",
+     "stem": "Which of these is an external economy of scale?",
+     "image_url": null,
+     "explanation": "External economies benefit all firms in an area or industry.\n\n**Why the other options are wrong**\n\n- bulk buying of raw materials by a firm: That is an internal economy.\n- better management within a firm: That is an internal economy.\n- a firm's own research laboratory: That is an internal economy.",
+     "position": 8,
+     "options": [
+      {
+       "id": "03984f73-c32f-5a50-9053-249f9ec2d881",
+       "label": "A",
+       "content": "a pool of skilled labour in an industrial area",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c1c0098a-3a3f-53e0-a945-732cab30c0b7",
+       "label": "B",
+       "content": "bulk buying of raw materials by a firm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "98835643-cfcc-5876-98e5-ca558626ca37",
+       "label": "C",
+       "content": "better management within a firm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "117c4767-c9ea-58d0-9f17-7ca8b7799b59",
+       "label": "D",
+       "content": "a firm's own research laboratory",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "03cea3ed-ec49-5055-b09d-0d7f427693ae",
+   "topic": "National Income",
+   "title": "National Income: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on national income, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 144,
+   "questions": [
+    {
+     "id": "4b10fca7-fe48-5c3a-b3b8-fa96983b7d0b",
+     "key": "eco-ni-01",
+     "stem": "A country's GDP is NLe 20,000 million and its net factor income from abroad is −NLe 1,500 million. What is its GNP?",
+     "image_url": null,
+     "explanation": "GNP = GDP + NFIA = 20,000 + (−1,500) = NLe 18,500 million.\n\n**Why the other options are wrong**\n\n- 21500 NLe million: Net income from abroad is negative, so it is subtracted.\n- 20000 NLe million: You left out net income from abroad.\n- 1500 NLe million: That is net factor income from abroad.",
+     "position": 1,
+     "options": [
+      {
+       "id": "40ee7b56-9d0a-5cce-b35b-3d0df37a0f76",
+       "label": "A",
+       "content": "1500 NLe million",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2fda4ca8-19d9-5e43-858b-89fc7573ce0a",
+       "label": "B",
+       "content": "18500 NLe million",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d6210131-d7ec-5e2e-a786-2d67dd609f0c",
+       "label": "C",
+       "content": "20000 NLe million",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7e44e5b8-adf0-5304-b36c-50649794b15c",
+       "label": "D",
+       "content": "21500 NLe million",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7121d25b-5240-5d55-816d-201304f875c8",
+     "key": "eco-ni-02",
+     "stem": "Consumption is 18,000, investment 4,000, government spending 5,000, exports 6,000 and imports 8,000 (NLe million). What is GDP by the expenditure method?",
+     "image_url": null,
+     "explanation": "GDP = C + I + G + (X − M) = 18,000 + 4,000 + 5,000 + (6,000 − 8,000) = NLe 25,000 million.\n\n**Why the other options are wrong**\n\n- 41000 NLe million: Imports must be subtracted, not added.\n- 33000 NLe million: You left out imports.\n- 29000 NLe million: You used M − X instead of X − M.",
+     "position": 2,
+     "options": [
+      {
+       "id": "7dc27e85-7922-567c-a0e0-074a26e7de82",
+       "label": "A",
+       "content": "25000 NLe million",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4fd0fa71-a08a-58e7-b6fb-495974e5b65f",
+       "label": "B",
+       "content": "29000 NLe million",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4a6efbf0-8f05-5976-bd04-7da3ddbe9e5f",
+       "label": "C",
+       "content": "33000 NLe million",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a701c3f7-530c-5fc9-add1-20636d7b68c2",
+       "label": "D",
+       "content": "41000 NLe million",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1196763a-974f-5aa2-8a66-390f6005a476",
+     "key": "eco-ni-03",
+     "stem": "GNP is NLe 18,500 million and depreciation (capital consumption) is NLe 1,500 million. What is NNP?",
+     "image_url": null,
+     "explanation": "NNP = GNP − depreciation = 18,500 − 1,500 = NLe 17,000 million.\n\n**Why the other options are wrong**\n\n- 20000 NLe million: Depreciation is subtracted, not added.\n- 18500 NLe million: You did not subtract depreciation.\n- 1500 NLe million: That is the depreciation.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1d5acf90-7a09-580c-992d-7b24dc2a541d",
+       "label": "A",
+       "content": "1500 NLe million",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0d6021df-59aa-56e6-af61-cf6ff97c1f49",
+       "label": "B",
+       "content": "17000 NLe million",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f53907c1-24d9-5600-a0f9-8771c199d02b",
+       "label": "C",
+       "content": "18500 NLe million",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "80fc1800-82f3-50a7-ba49-4f67f496f720",
+       "label": "D",
+       "content": "20000 NLe million",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "60108d72-2c70-5b21-938e-19ecd3699729",
+     "key": "eco-ni-04",
+     "stem": "A country's national income is NLe 24,000 million and its population is 8 million. What is its income per head?",
+     "image_url": null,
+     "explanation": "Income per head $= \\dfrac{24000 \\text{ million}}{8 \\text{ million}} = $ NLe 3,000.\n\n**Why the other options are wrong**\n\n- 192000 NLe: You multiplied instead of dividing.\n- 300 NLe: Check the units: 24,000 million ÷ 8 million = 3,000.\n- 24008 NLe: You added the population.",
+     "position": 4,
+     "options": [
+      {
+       "id": "606ebeb2-e16e-54cc-8e7a-cd32c3eedf29",
+       "label": "A",
+       "content": "300 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "08e943c8-3123-541c-aae7-d91537601b40",
+       "label": "B",
+       "content": "3000 NLe",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "29e2a1be-63e7-51ab-939e-d2de5a32b0ac",
+       "label": "C",
+       "content": "24008 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cca56227-8874-5727-95c8-95bc9a71e036",
+       "label": "D",
+       "content": "192000 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "717f8e11-ee2a-58d9-8b04-62efb9f5a4b3",
+     "key": "eco-ni-05",
+     "stem": "Transfer payments such as pensions are excluded from national income because",
+     "image_url": null,
+     "explanation": "Including them would count income that matches no current production.\n\n**Why the other options are wrong**\n\n- they are taxed: Being taxed is not the reason.\n- they are too small to matter: Size is not the reason.\n- they are paid by the government: Government salaries are included, so that is not the reason.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d92a430a-93dd-5e5d-9a1a-45b51663df4e",
+       "label": "A",
+       "content": "they are taxed",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f0441c4f-7c6e-57e2-8da5-b286777f0c93",
+       "label": "B",
+       "content": "no goods or services are produced in return for them",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2ce27247-6232-5156-bc60-f80404dc4242",
+       "label": "C",
+       "content": "they are too small to matter",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3e33849a-1463-5006-8d45-a285f5c34337",
+       "label": "D",
+       "content": "they are paid by the government",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bf73e157-ff15-5e62-9bfe-0ae87c9516d2",
+     "key": "eco-ni-06",
+     "stem": "A shop buys goods for NLe 50 and sells them for NLe 65. What value does the shop add to GDP?",
+     "image_url": null,
+     "explanation": "Value added = 65 − 50 = NLe 15. Counting only value added avoids double counting.\n\n**Why the other options are wrong**\n\n- 115 NLe: You added the buying and selling prices.\n- 65 NLe: That is the whole selling price, which includes the value added earlier.\n- 50 NLe: That is the value of the goods bought in.",
+     "position": 6,
+     "options": [
+      {
+       "id": "df08e4e6-2e3e-5531-b0f5-6a3ba80d1ed6",
+       "label": "A",
+       "content": "15 NLe",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "05105558-5441-5f34-a768-be30836d6868",
+       "label": "B",
+       "content": "50 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3f6a85b3-5b63-5245-9b44-fd818869fbe5",
+       "label": "C",
+       "content": "65 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "89f78f1e-f310-5fbc-8c0b-9e8cff9f0890",
+       "label": "D",
+       "content": "115 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1ba5bf4e-4881-5aeb-80f5-4c1eb164c18c",
+     "key": "eco-ni-07",
+     "stem": "Households spend 80% of any extra income on home-produced goods. What is the value of the multiplier?",
+     "image_url": null,
+     "explanation": "Multiplier $= \\dfrac{1}{1 - 0.8} = \\dfrac{1}{0.2} = 5$.\n\n**Why the other options are wrong**\n\n- 1.25: You divided 1 by the fraction spent instead of the fraction leaked.\n- 0.2: That is the fraction leaked, not the multiplier.\n- 80: That is the percentage spent.",
+     "position": 7,
+     "options": [
+      {
+       "id": "ef1884c3-2be4-56df-92de-f77e59ed8bef",
+       "label": "A",
+       "content": "0.2",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6aa68c35-1ca1-5f98-b7f3-ef0ca7149ec6",
+       "label": "B",
+       "content": "1.25",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d39f5001-eac0-5c50-a9ce-208b1258cb08",
+       "label": "C",
+       "content": "5",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0f631a00-24b8-57ca-b31b-e9b1375c18bd",
+       "label": "D",
+       "content": "80",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "76b2af2d-3ba9-5818-ae15-ac5dbc58ef5a",
+     "key": "eco-ni-08",
+     "stem": "Which of these is a leakage from the circular flow of income?",
+     "image_url": null,
+     "explanation": "Saving, taxes and imports leak out; investment, government spending and exports flow in.\n\n**Why the other options are wrong**\n\n- investment: Investment is an injection.\n- exports: Exports are an injection.\n- government spending: Government spending is an injection.",
+     "position": 8,
+     "options": [
+      {
+       "id": "64e6869a-5271-5a3d-8b38-4be63ee4a987",
+       "label": "A",
+       "content": "investment",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0ac6b373-0edf-5f59-ad4c-02ca7caf3410",
+       "label": "B",
+       "content": "exports",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fae03afb-730d-5104-ab3a-acdb01f54baa",
+       "label": "C",
+       "content": "saving",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "562fa79c-5d8f-5c3d-bcc2-b08acee329c3",
+       "label": "D",
+       "content": "government spending",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "3e2a991e-4495-5480-8fb3-3302dd182b6e",
+   "topic": "Money and Banking",
+   "title": "Money and Banking: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on money and banking, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 145,
+   "questions": [
+    {
+     "id": "b6f45d60-9c0a-5c72-a0f6-051b3dcdf2e5",
+     "key": "eco-mb-01",
+     "stem": "The need for a double coincidence of wants is a problem of",
+     "image_url": null,
+     "explanation": "In barter, each trader must want exactly what the other offers.\n\n**Why the other options are wrong**\n\n- a money economy: Money removes the need for a double coincidence.\n- credit creation: Credit creation is unrelated.\n- the central bank: The central bank is unrelated.",
+     "position": 1,
+     "options": [
+      {
+       "id": "33ac0f2e-3b6a-5df3-83e8-ca0e2ea5c390",
+       "label": "A",
+       "content": "a money economy",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cd65940a-09bf-5914-98e6-b07705f516ac",
+       "label": "B",
+       "content": "credit creation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b0f38d93-60cb-58f4-8b1c-a4d639472a33",
+       "label": "C",
+       "content": "the central bank",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a6c6a0be-8a68-50bc-a068-ab67843c6c88",
+       "label": "D",
+       "content": "barter",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "483b36db-5fd5-5560-98e8-982375657cb2",
+     "key": "eco-mb-02",
+     "stem": "When a loan is to be repaid in instalments over a year, money serves as a",
+     "image_url": null,
+     "explanation": "Future payments are agreed in money terms.\n\n**Why the other options are wrong**\n\n- medium of exchange: That is its use in everyday buying and selling.\n- store of value: That is its use in saving.\n- measure of value: That is its use in stating prices.",
+     "position": 2,
+     "options": [
+      {
+       "id": "ef70f2b3-e9a4-5b89-80cf-a30d83d56364",
+       "label": "A",
+       "content": "standard of deferred payment",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "87c5722e-91e5-5ea7-b3fc-f922475c24c8",
+       "label": "B",
+       "content": "medium of exchange",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ccfe1ea0-f0cf-5c84-a3cd-ec4a8773887b",
+       "label": "C",
+       "content": "store of value",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "405fd336-be97-55b2-a460-02af676d9cc0",
+       "label": "D",
+       "content": "measure of value",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "225e06d2-fa3b-5f96-a1c7-ee6d03f5139c",
+     "key": "eco-mb-03",
+     "stem": "A new deposit of NLe 2,000 is made into the banking system and the cash reserve ratio is 25%. What is the maximum total of deposits that can be created?",
+     "image_url": null,
+     "explanation": "Multiplier $= \\dfrac{1}{0.25} = 4$; total deposits $= 2000 \\times 4 = $ NLe 8,000.\n\n**Why the other options are wrong**\n\n- 500 NLe: That is the reserve kept on the first deposit.\n- 2500 NLe: You multiplied by 1.25 instead of by 1 ÷ 0.25.\n- 6000 NLe: That is the new credit (loans) created, not total deposits.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2ec86402-2321-5e2b-bb7b-7684b9303df9",
+       "label": "A",
+       "content": "500 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c0c4541e-4e32-5bc1-8c28-9b8f6cf3fcbd",
+       "label": "B",
+       "content": "2500 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "34238ac7-8e16-577a-92b2-f2e0c76bdb24",
+       "label": "C",
+       "content": "6000 NLe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2a6d6e2a-149d-5ae6-b8f2-44e0f040a545",
+       "label": "D",
+       "content": "8000 NLe",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7898be11-dda8-5c4f-bef4-975d08333eac",
+     "key": "eco-mb-04",
+     "stem": "Which of these is a function of a central bank?",
+     "image_url": null,
+     "explanation": "The Bank of Sierra Leone issues the leone notes and coins.\n\n**Why the other options are wrong**\n\n- accepting deposits from the general public: This is a function of commercial banks.\n- lending to market traders: Commercial banks and microfinance institutions do this.\n- selling insurance policies: Insurance companies do this.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ea6c1b90-19dc-5ca0-8a9c-b215f5bc82bc",
+       "label": "A",
+       "content": "accepting deposits from the general public",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8a137380-eaed-5683-8858-d0ef4a80fcf2",
+       "label": "B",
+       "content": "issuing the national currency",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b8b0ae68-57a4-5d22-b3da-44ad0d07714f",
+       "label": "C",
+       "content": "lending to market traders",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "aa3b17b3-447e-5559-b7d8-93390d5940a1",
+       "label": "D",
+       "content": "selling insurance policies",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2229362e-425e-5a81-bf47-3727a6c10ae8",
+     "key": "eco-mb-05",
+     "stem": "Using MV = PT, find the price level P when M = 600, V = 4 and T = 300.",
+     "image_url": null,
+     "explanation": "$P = \\dfrac{MV}{T} = \\dfrac{600 \\times 4}{300} = 8$.\n\n**Why the other options are wrong**\n\n- 2400: That is MV; divide by T.\n- 0.125: You divided T by MV.\n- 2: You left out V.",
+     "position": 5,
+     "options": [
+      {
+       "id": "8d0744a7-8151-56c3-b9f0-db8cab8e6a72",
+       "label": "A",
+       "content": "0.125",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "54235c9e-6209-5ea5-aa52-1539fee5dda0",
+       "label": "B",
+       "content": "2",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "97d9ba20-a522-549f-a707-34c15b22e4ac",
+       "label": "C",
+       "content": "8",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a5ca9a1d-ad2b-568d-bd8f-ae93e459c258",
+       "label": "D",
+       "content": "2400",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b40e3e1b-aba3-5048-845b-e776bbf8a488",
+     "key": "eco-mb-06",
+     "stem": "To reduce the amount of credit banks can create, the central bank can",
+     "image_url": null,
+     "explanation": "Banks must keep more of each deposit as reserves, so they can lend less.\n\n**Why the other options are wrong**\n\n- lower the policy interest rate: Lower rates encourage borrowing.\n- buy government securities from banks: Buying securities adds money to the banks.\n- lower the cash reserve ratio: A lower ratio lets banks lend more.",
+     "position": 6,
+     "options": [
+      {
+       "id": "5f989fd5-4d01-5353-a2c4-f2518dbcc884",
+       "label": "A",
+       "content": "lower the policy interest rate",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a702fc89-7d90-562f-8af7-1bc6b462ddbc",
+       "label": "B",
+       "content": "buy government securities from banks",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ac3f1325-3e78-5558-b54e-e8e8df2b5efa",
+       "label": "C",
+       "content": "raise the cash reserve ratio",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "da504063-5ccc-5e15-9ad0-e2ee3a2ca6b3",
+       "label": "D",
+       "content": "lower the cash reserve ratio",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d0de841d-dff1-56f6-87cd-ade280adf1a7",
+     "key": "eco-mb-07",
+     "stem": "Holding money in order to take advantage of future changes in interest rates or bond prices is the",
+     "image_url": null,
+     "explanation": "People hold more money when interest rates are low and expected to rise.\n\n**Why the other options are wrong**\n\n- transactions motive: That is for everyday purchases.\n- precautionary motive: That is for unexpected needs.\n- profit motive: This is not one of Keynes's motives for holding money.",
+     "position": 7,
+     "options": [
+      {
+       "id": "285c295d-b826-5603-9faa-ed4dcf40edb4",
+       "label": "A",
+       "content": "transactions motive",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "159c2a21-7eb9-593e-a561-111089280f74",
+       "label": "B",
+       "content": "precautionary motive",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "401cc5b3-1e04-5bf3-815d-c6a5a88e3189",
+       "label": "C",
+       "content": "profit motive",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d3d29557-4fc8-542f-9b9f-9c698493a5bc",
+       "label": "D",
+       "content": "speculative motive",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ea21df82-7fc1-527f-8e8f-de36f7dbefb4",
+     "key": "eco-mb-08",
+     "stem": "The capital market deals mainly in",
+     "image_url": null,
+     "explanation": "Firms and governments raise long-term capital there, for example on the stock exchange.\n\n**Why the other options are wrong**\n\n- short-term loans of up to a year: That is the money market.\n- foreign currency only: That is the foreign exchange market.\n- insurance policies only: Insurance is a separate service.",
+     "position": 8,
+     "options": [
+      {
+       "id": "45ca1849-3d13-506c-9195-a5e68d52e9ac",
+       "label": "A",
+       "content": "long-term funds such as shares and bonds",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1b50477a-11a9-5db5-a999-67798230b6b0",
+       "label": "B",
+       "content": "short-term loans of up to a year",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "390d7bf5-8b85-5f1d-916d-cc58f3417fee",
+       "label": "C",
+       "content": "foreign currency only",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7a8ef254-07c6-5035-ae38-c486110dec5f",
+       "label": "D",
+       "content": "insurance policies only",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ba612c11-dbcf-523b-ac60-312bb12be890",
+   "topic": "Inflation and Deflation",
+   "title": "Inflation and Deflation: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on inflation and deflation, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 146,
+   "questions": [
+    {
+     "id": "ada625cd-5d71-5414-bac7-49bc39f94c7b",
+     "key": "eco-if-01",
+     "stem": "Inflation is best defined as",
+     "image_url": null,
+     "explanation": "Inflation means prices in general keep rising, so the value of money falls.\n\n**Why the other options are wrong**\n\n- a rise in the price of one good: One price rising is not inflation.\n- a fall in the general price level: That is deflation.\n- an increase in the money supply only: Money growth may cause inflation, but is not its definition.",
+     "position": 1,
+     "options": [
+      {
+       "id": "88ef77b4-6449-5da5-ada0-0e254d4ec4a0",
+       "label": "A",
+       "content": "a rise in the price of one good",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dad923c0-ced8-5808-a3cc-77829e01ad5e",
+       "label": "B",
+       "content": "a persistent rise in the general price level",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ddb0a622-afbf-5f6c-9286-0a780b3021f2",
+       "label": "C",
+       "content": "a fall in the general price level",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3b71a459-14b4-50c0-86df-0dd177fabeb6",
+       "label": "D",
+       "content": "an increase in the money supply only",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "697ce92a-cf25-5a0a-9a1f-d6e688c4d4d9",
+     "key": "eco-if-02",
+     "stem": "A consumer price index rises from 150 to 165 in a year. What is the rate of inflation?",
+     "image_url": null,
+     "explanation": "Inflation $= \\dfrac{165 - 150}{150} \\times 100 = 10\\%$.\n\n**Why the other options are wrong**\n\n- 15 %: That is the rise in index points, not the percentage.\n- 9.09 %: You divided by this year's index; divide by last year's.\n- 110 %: That is the new index as a percentage of the old one.",
+     "position": 2,
+     "options": [
+      {
+       "id": "b3f3869e-7b78-5af8-a689-4da674bf23a5",
+       "label": "A",
+       "content": "9.09 %",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "27336961-460f-56fc-a10c-e611009a95ad",
+       "label": "B",
+       "content": "10 %",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "56a89de3-f773-54e2-9502-46ff407df2d7",
+       "label": "C",
+       "content": "15 %",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "059e90f7-2687-5257-9f07-eac96256d4b8",
+       "label": "D",
+       "content": "110 %",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "97e4446f-5778-5bc6-ba8a-edddd87f97d0",
+     "key": "eco-if-03",
+     "stem": "Rice (weight 5), fuel (weight 3) and transport (weight 2) have price relatives of 120, 120 and 140. What is the weighted price index?",
+     "image_url": null,
+     "explanation": "Index $= \\dfrac{120 \\times 5 + 120 \\times 3 + 140 \\times 2}{10} = \\dfrac{1240}{10} = 124$.\n\n**Why the other options are wrong**\n\n- 126.67: You took a simple average and ignored the weights.\n- 1240: You did not divide by the sum of the weights.\n- 380: You added the price relatives.",
+     "position": 3,
+     "options": [
+      {
+       "id": "eedcfc89-6363-5459-ac94-48c9362ba1a5",
+       "label": "A",
+       "content": "124",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "861b48f7-d487-531c-a16a-7773f9b67fd1",
+       "label": "B",
+       "content": "126.67",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "acff0b82-f372-5642-9645-e11ff570c08f",
+       "label": "C",
+       "content": "380",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f14bcb51-8b30-5f18-94c0-fe54691c92d1",
+       "label": "D",
+       "content": "1240",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ace1db43-e1f3-5ace-8a1c-3ab78c934054",
+     "key": "eco-if-04",
+     "stem": "Demand-pull inflation occurs when",
+     "image_url": null,
+     "explanation": "Too much money chases too few goods.\n\n**Why the other options are wrong**\n\n- costs of production rise: That is cost-push inflation.\n- import prices rise: That is imported inflation.\n- the general price level falls: That is deflation.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f7d5f297-cd3b-5ccb-8b62-452f280c3618",
+       "label": "A",
+       "content": "costs of production rise",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "25055348-aebc-555c-944f-82f30e5a8cad",
+       "label": "B",
+       "content": "import prices rise",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dcbe805e-1989-5357-82ac-c7e223983117",
+       "label": "C",
+       "content": "total demand rises faster than total supply",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "dd11472b-67f3-5beb-b445-5d5dc7aeb86a",
+       "label": "D",
+       "content": "the general price level falls",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "78aedc4f-ff15-5e0f-8777-1d22690a4f7d",
+     "key": "eco-if-05",
+     "stem": "Which group generally gains from inflation?",
+     "image_url": null,
+     "explanation": "Debtors repay loans with money that buys less than when they borrowed it.\n\n**Why the other options are wrong**\n\n- creditors: Creditors are repaid in money worth less.\n- people on fixed incomes: Their real income falls.\n- savers: Savings lose purchasing power.",
+     "position": 5,
+     "options": [
+      {
+       "id": "63d6bd2d-c4d2-5751-9c1e-2b8cd8d70c73",
+       "label": "A",
+       "content": "creditors",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6654ef8c-0544-5d7d-9c68-342b21709c26",
+       "label": "B",
+       "content": "people on fixed incomes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cf5b0c95-dd45-5d2e-8800-7aaa67f12932",
+       "label": "C",
+       "content": "savers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4ad15091-3e55-558b-aeed-44eb9682d11d",
+       "label": "D",
+       "content": "debtors",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "46c52224-5431-5349-850d-54e46bdd6dc4",
+     "key": "eco-if-06",
+     "stem": "A bank pays 10% interest on savings while inflation is 15%. Approximately what is the real rate of interest?",
+     "image_url": null,
+     "explanation": "Real interest ≈ nominal interest − inflation = 10% − 15% = −5%.\n\n**Why the other options are wrong**\n\n- 25 %: You added the rates; subtract inflation from the interest rate.\n- 5 %: The real rate is negative because inflation is higher than interest.\n- 1.5 %: You divided the rates.",
+     "position": 6,
+     "options": [
+      {
+       "id": "cf887730-4c94-522e-a47e-30ae4f670cdb",
+       "label": "A",
+       "content": "-5 %",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "04377dcd-dfd0-52b4-94c4-84fa806419cb",
+       "label": "B",
+       "content": "1.5 %",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7c280df9-9480-53c2-9df1-10e670a9c3b4",
+       "label": "C",
+       "content": "5 %",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a93be930-e620-5afb-ad0b-378b49a4d0bd",
+       "label": "D",
+       "content": "25 %",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "098dbf0a-52d8-5724-a236-3dafd629b425",
+     "key": "eco-if-07",
+     "stem": "A monetary measure to reduce inflation is to",
+     "image_url": null,
+     "explanation": "Higher interest rates make borrowing dearer and reduce spending.\n\n**Why the other options are wrong**\n\n- cut income taxes: Tax cuts are fiscal and raise spending.\n- increase government spending: This is fiscal and raises demand.\n- lower the cash reserve ratio: This lets banks lend more.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b5c8c960-e858-552f-96c9-ae29f42fc2eb",
+       "label": "A",
+       "content": "raise the policy interest rate",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6351907d-2124-553a-8064-32c8deb379dc",
+       "label": "B",
+       "content": "cut income taxes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5c324427-9872-5524-9814-52c4d1186002",
+       "label": "C",
+       "content": "increase government spending",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "40cf6d8e-f7bd-55ba-b1a5-fc4c1c543ed7",
+       "label": "D",
+       "content": "lower the cash reserve ratio",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1afbb6ea-95fb-52e9-8172-9da23f2f08cd",
+     "key": "eco-if-08",
+     "stem": "Deflation is",
+     "image_url": null,
+     "explanation": "When prices keep falling, each leone buys more.\n\n**Why the other options are wrong**\n\n- a fall in the rate of inflation: That is disinflation.\n- rising prices together with high unemployment: That is stagflation.\n- a fall in the value of money: Deflation raises the value of money.",
+     "position": 8,
+     "options": [
+      {
+       "id": "03681a14-5237-518f-8d4f-48c18f376a0f",
+       "label": "A",
+       "content": "a fall in the rate of inflation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f0280b5b-acc7-5c39-96c2-576cee588c00",
+       "label": "B",
+       "content": "a persistent fall in the general price level",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "081004b0-7368-5c33-b62d-0ff67c2efddb",
+       "label": "C",
+       "content": "rising prices together with high unemployment",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dbe2a2a8-a29e-5380-a53e-dedb88e57f48",
+       "label": "D",
+       "content": "a fall in the value of money",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "03687376-6190-5a00-8381-e98f7f6b11b5",
+   "topic": "Public Finance and Taxation",
+   "title": "Public Finance and Taxation: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on public finance and taxation, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 147,
+   "questions": [
+    {
+     "id": "5dd0390b-aed7-577d-8e6a-e098669e4126",
+     "key": "eco-pf-01",
+     "stem": "Which of these is recurrent government expenditure?",
+     "image_url": null,
+     "explanation": "Recurrent spending is day-to-day spending that comes back every year.\n\n**Why the other options are wrong**\n\n- building a new bridge: Bridges are capital expenditure.\n- constructing a hospital: New buildings are capital expenditure.\n- building a hydro-electric dam: Dams are capital expenditure.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7169b394-5b20-5284-98ab-0b3a6fe5baa3",
+       "label": "A",
+       "content": "building a new bridge",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "07ea676c-ce19-5c21-b3b4-d310a2447462",
+       "label": "B",
+       "content": "constructing a hospital",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1f382d84-15d0-5feb-a53e-8fdfc2d17642",
+       "label": "C",
+       "content": "salaries of government teachers",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e0b692b5-d9c8-5cd8-b2f3-b5719189b312",
+       "label": "D",
+       "content": "building a hydro-electric dam",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3557514e-23d2-518d-9b16-a3c9f0126954",
+     "key": "eco-pf-02",
+     "stem": "A government plans to spend NLe 18,000 million and expects revenue of NLe 15,000 million. What is its budget deficit?",
+     "image_url": null,
+     "explanation": "Deficit = expenditure − revenue = 18,000 − 15,000 = NLe 3,000 million.\n\n**Why the other options are wrong**\n\n- 33000 NLe million: You added spending and revenue.\n- 1.2 NLe million: You divided spending by revenue.\n- 15000 NLe million: That is the revenue.",
+     "position": 2,
+     "options": [
+      {
+       "id": "7f38d805-e934-5cf0-a18d-45081ebacf94",
+       "label": "A",
+       "content": "1.2 NLe million",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "83489763-86c6-5f1f-80e4-c65e113166fe",
+       "label": "B",
+       "content": "3000 NLe million",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a4dc02b4-ed81-562e-9676-2d824e740117",
+       "label": "C",
+       "content": "15000 NLe million",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "38466a25-8591-5620-9249-f408631edf41",
+       "label": "D",
+       "content": "33000 NLe million",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "15e0384a-3395-597f-8b33-2892c09fdb5a",
+     "key": "eco-pf-03",
+     "stem": "Deducting income tax from workers' salaries before they are paid (PAYE) best satisfies the canon of",
+     "image_url": null,
+     "explanation": "PAYE is collected at a time and in a way convenient to the taxpayer.\n\n**Why the other options are wrong**\n\n- equity: Equity concerns ability to pay.\n- certainty: Certainty concerns knowing the amount and time of payment.\n- economy: Economy concerns the cost of collection.",
+     "position": 3,
+     "options": [
+      {
+       "id": "85890151-2c5c-5c01-9946-7913b5cb3b4c",
+       "label": "A",
+       "content": "equity",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e39032a7-3bfe-53dc-a59f-82930d182c95",
+       "label": "B",
+       "content": "certainty",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8a0d2e8d-76de-5716-96ef-336df5a7a964",
+       "label": "C",
+       "content": "economy",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c2d4f5af-a39c-5adf-88ab-4098fa46f4a6",
+       "label": "D",
+       "content": "convenience",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7ac10740-0edf-5659-a89c-4a17a8a391b5",
+     "key": "eco-pf-04",
+     "stem": "Which of these is a direct tax?",
+     "image_url": null,
+     "explanation": "A direct tax is paid by the person on whom it is imposed and cannot easily be passed on.\n\n**Why the other options are wrong**\n\n- the Goods and Services Tax (GST): GST is charged on goods and services, so it is indirect.\n- import duty: Import duty is indirect.\n- excise duty: Excise duty is indirect.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7557c0ad-7d0b-5e40-b841-c45e226bb3e4",
+       "label": "A",
+       "content": "personal income tax",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "454b93e6-8fba-5630-b6fb-755e6deca2ab",
+       "label": "B",
+       "content": "the Goods and Services Tax (GST)",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "869e8106-8eff-55cc-8673-84593ee1f1a1",
+       "label": "C",
+       "content": "import duty",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a3550993-6e03-5700-97e7-eefd8e35bd24",
+       "label": "D",
+       "content": "excise duty",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "39f8f166-7543-5d58-b818-c4fba498a8e6",
+     "key": "eco-pf-05",
+     "stem": "Incomes of NLe 1,000 and NLe 4,000 pay taxes of NLe 50 and NLe 400. This tax is",
+     "image_url": null,
+     "explanation": "The rate rises from 5% to 10% as income rises.\n\n**Why the other options are wrong**\n\n- proportional: The rates differ: 5% and 10%.\n- regressive: The rate rises with income, not falls.\n- an indirect tax: A tax on income is direct.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a47f7305-f993-5fb3-b318-8c9954ebecfc",
+       "label": "A",
+       "content": "proportional",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a59d48c2-6b04-56ab-af6e-d3805faa9fa0",
+       "label": "B",
+       "content": "progressive",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9b892678-8faf-5c9c-8b95-2e23e683f006",
+       "label": "C",
+       "content": "regressive",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1bd562de-3049-509d-8096-aab13dccae27",
+       "label": "D",
+       "content": "an indirect tax",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "78841948-921a-5114-9fc0-517b62b35fa8",
+     "key": "eco-pf-06",
+     "stem": "A regressive tax is one that",
+     "image_url": null,
+     "explanation": "Taxes on essentials take a bigger share of a poor family's income.\n\n**Why the other options are wrong**\n\n- takes the same percentage of income from everyone: That is a proportional tax.\n- takes a larger percentage of income from the rich: That is a progressive tax.\n- is paid only by firms: Who pays does not decide whether a tax is regressive.",
+     "position": 6,
+     "options": [
+      {
+       "id": "c75c1807-a643-5756-bdc8-78ccae439abd",
+       "label": "A",
+       "content": "takes the same percentage of income from everyone",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5e901539-2fa3-565f-9461-0de3b8acd306",
+       "label": "B",
+       "content": "takes a larger percentage of income from the rich",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "60872ba4-0ebc-5ca9-88f1-ddc79815930c",
+       "label": "C",
+       "content": "takes a larger percentage of income from the poor than from the rich",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4514eadc-0102-5cb0-8487-7c25c20183df",
+       "label": "D",
+       "content": "is paid only by firms",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c3934dfc-df33-54ca-967c-6c9bc2970ad2",
+     "key": "eco-pf-07",
+     "stem": "A surplus budget is most suitable when the government wants to",
+     "image_url": null,
+     "explanation": "Taking in more than it spends reduces total spending in the economy.\n\n**Why the other options are wrong**\n\n- reduce unemployment: A deficit budget raises demand to cut unemployment.\n- finance development by borrowing: Borrowing finances a deficit.\n- increase total demand: A surplus reduces demand.",
+     "position": 7,
+     "options": [
+      {
+       "id": "58e683cb-6ee4-5509-95bd-6029c7b27e09",
+       "label": "A",
+       "content": "reduce unemployment",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ef1e836f-c66f-5dfa-9a62-78513d0bb34d",
+       "label": "B",
+       "content": "finance development by borrowing",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "89c0ab41-1047-58ec-8643-2c16248fc437",
+       "label": "C",
+       "content": "increase total demand",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e3158902-f531-5c69-a9ef-b5db0c42ba32",
+       "label": "D",
+       "content": "reduce inflation",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b8a28d59-b72d-55e8-8a54-ca9081debb0b",
+     "key": "eco-pf-08",
+     "stem": "A shop's taxable sales for a month are NLe 20,000 and the Goods and Services Tax rate is 15%. How much GST is due?",
+     "image_url": null,
+     "explanation": "GST = 15% of 20,000 = 0.15 × 20,000 = NLe 3,000.\n\n**Why the other options are wrong**\n\n- 1333.33 NLe: You divided by 15 instead of taking 15%.\n- 23000 NLe: That is the sales value including tax.\n- 300 NLe: You took 1.5% instead of 15%.",
+     "position": 8,
+     "options": [
+      {
+       "id": "69d4150b-6293-5ecf-8913-18f5a694e9ee",
+       "label": "A",
+       "content": "300 NLe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9d7c976f-ec61-5f65-8561-9c8ed795cf20",
+       "label": "B",
+       "content": "1333.33 NLe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ea939548-2856-55a6-9701-3a80484d5f78",
+       "label": "C",
+       "content": "3000 NLe",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2a1a7409-a242-5d7c-850c-0ed669ade3d4",
+       "label": "D",
+       "content": "23000 NLe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "9a7926735a50"
+}
