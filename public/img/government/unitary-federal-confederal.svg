@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Unitary, federal and confederal systems</title>
+<desc id="d">Unitary: all power lies with the central government, which delegates some to local units and can take it back (Sierra Leone, Ghana, Britain). Federal: the constitution divides power between a central government and state governments, each supreme in its own field (Nigeria, USA). Confederal: sovereign member states give limited powers to a weak central body and can leave (the Senegambia Confederation, 1982 to 1989).</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7c3aed"/></marker><marker id="a7c3aeds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#7c3aed"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Where does power sit?</text>
+<rect x="15.0" y="60.0" width="250.0" height="400.0" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+<text x="140.0" y="86.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Unitary</text>
+<rect x="275.0" y="60.0" width="250.0" height="400.0" rx="14" fill="#ffffff" stroke="#15803d" stroke-width="2"/>
+<text x="400.0" y="86.0" font-size="20" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Federal</text>
+<rect x="535.0" y="60.0" width="250.0" height="400.0" rx="14" fill="#ffffff" stroke="#ea580c" stroke-width="2"/>
+<text x="660.0" y="86.0" font-size="20" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Confederal</text>
+<rect x="40.0" y="128.0" width="200.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="140.0" y="148.5" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Central</text>
+<text x="140.0" y="171.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">government</text>
+<rect x="53.0" y="276.0" width="54.0" height="48.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="80.0" y="300.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">L</text>
+<line x1="122.0" y1="194.0" x2="80.0" y2="274.0" stroke="#2563eb" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="113.0" y="276.0" width="54.0" height="48.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="140.0" y="300.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">L</text>
+<line x1="140.0" y1="194.0" x2="140.0" y2="274.0" stroke="#2563eb" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="173.0" y="276.0" width="54.0" height="48.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="200.0" y="300.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">L</text>
+<line x1="158.0" y1="194.0" x2="200.0" y2="274.0" stroke="#2563eb" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<text x="140.0" y="360.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">local units get power</text>
+<text x="140.0" y="378.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">from the centre, which</text>
+<text x="140.0" y="396.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">can take it back</text>
+<text x="140.0" y="432.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sierra Leone, Ghana</text>
+<rect x="300.0" y="115.0" width="200.0" height="50.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="140.0" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Constitution</text>
+<rect x="315.0" y="208.0" width="170.0" height="54.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="224.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Federal</text>
+<text x="400.0" y="245.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">government</text>
+<rect x="314.0" y="297.0" width="52.0" height="46.0" rx="12" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="340.0" y="320.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">S</text>
+<rect x="374.0" y="297.0" width="52.0" height="46.0" rx="12" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="320.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">S</text>
+<rect x="434.0" y="297.0" width="52.0" height="46.0" rx="12" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="460.0" y="320.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">S</text>
+<line x1="400.0" y1="166.0" x2="400.0" y2="205.0" stroke="#7c3aed" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a7c3aed)"/>
+<line x1="300.0" y1="150.0" x2="318.0" y2="296.0" stroke="#7c3aed" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a7c3aed)"/>
+<text x="400.0" y="365.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the constitution divides</text>
+<text x="400.0" y="383.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">power; each level is</text>
+<text x="400.0" y="401.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">supreme in its own field</text>
+<text x="400.0" y="432.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Nigeria, USA</text>
+<rect x="573.0" y="275.0" width="54.0" height="50.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="600.0" y="300.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">M</text>
+<line x1="600.0" y1="274.0" x2="642.0" y2="196.0" stroke="#ea580c" stroke-width="2.6" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<rect x="633.0" y="275.0" width="54.0" height="50.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="660.0" y="300.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">M</text>
+<line x1="660.0" y1="274.0" x2="660.0" y2="196.0" stroke="#ea580c" stroke-width="2.6" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<rect x="693.0" y="275.0" width="54.0" height="50.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="720.0" y="300.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">M</text>
+<line x1="720.0" y1="274.0" x2="678.0" y2="196.0" stroke="#ea580c" stroke-width="2.6" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<rect x="575.0" y="138.0" width="170.0" height="54.0" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="660.0" y="154.5" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Weak central</text>
+<text x="660.0" y="175.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">body</text>
+<text x="660.0" y="360.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sovereign members lend</text>
+<text x="660.0" y="378.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">limited powers and</text>
+<text x="660.0" y="396.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">may leave</text>
+<text x="660.0" y="432.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Senegambia, 1982–89</text>
+<text x="400.0" y="482.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">L = local unit   S = state or region   M = member state</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Ideologies and the role of the state in the economy</title>
+<desc id="d">A line from the most state control of the economy to the least: communism (the state owns the means of production), socialism, the mixed economy or welfare state, and capitalism (private ownership and free markets). Fascism and Nazism are shown apart: they kept private property but the state controlled every part of life.</desc>
+<defs></defs>
+<rect width="800" height="380" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">How much does the state own and control?</text>
+<line x1="70.0" y1="170.0" x2="730.0" y2="170.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<polygon points="736.3,170.0 717.6,176.6 717.6,163.4" fill="#0f172a"/>
+<polygon points="63.7,170.0 82.4,163.4 82.4,176.6" fill="#0f172a"/>
+<text x="70.0" y="205.0" font-size="14" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">most state control</text>
+<text x="730.0" y="205.0" font-size="14" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">least state control</text>
+<circle cx="110.0" cy="170.0" r="9.0" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<rect x="25.0" y="58.0" width="170.0" height="84.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="110.0" y="79.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Communism</text>
+<text x="110.0" y="100.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">state owns</text>
+<text x="110.0" y="121.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">everything</text>
+<circle cx="290.0" cy="170.0" r="9.0" fill="#ea580c" stroke="#ffffff" stroke-width="2"/>
+<rect x="205.0" y="58.0" width="170.0" height="84.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="290.0" y="79.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Socialism</text>
+<text x="290.0" y="100.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">state owns key</text>
+<text x="290.0" y="121.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">industries</text>
+<circle cx="480.0" cy="170.0" r="9.0" fill="#7c3aed" stroke="#ffffff" stroke-width="2"/>
+<rect x="395.0" y="58.0" width="170.0" height="84.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="480.0" y="79.0" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Mixed economy</text>
+<text x="480.0" y="100.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">public and</text>
+<text x="480.0" y="121.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">private sectors</text>
+<circle cx="665.0" cy="170.0" r="9.0" fill="#15803d" stroke="#ffffff" stroke-width="2"/>
+<rect x="580.0" y="58.0" width="170.0" height="84.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="665.0" y="79.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Capitalism</text>
+<text x="665.0" y="100.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">private ownership,</text>
+<text x="665.0" y="121.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">free markets</text>
+<rect x="165.0" y="258.0" width="470.0" height="84.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="400.0" y="279.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Fascism / Nazism (totalitarian)</text>
+<text x="400.0" y="300.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">private property kept, but the state</text>
+<text x="400.0" y="321.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">controls every part of life</text>
+<text x="480.0" y="236.0" font-size="14" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sierra Leone today: a mixed economy</text>
+</svg>

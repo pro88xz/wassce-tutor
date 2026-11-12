@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Three meanings of government</title>
+<desc id="d">Government can mean an institution (the body that makes, carries out and interprets laws, such as the Government of Sierra Leone), a process (the activity of ruling a society), or an academic subject (the study of the state, its organs and how power is used).</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="760" height="430" rx="20" fill="#f8fafc"/>
+<text x="380.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">One word, three meanings</text>
+<rect x="230.0" y="78.0" width="300.0" height="64.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="380.0" y="110.0" font-size="22" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">GOVERNMENT</text>
+<rect x="20.0" y="215.0" width="220.0" height="150.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="130.0" y="255.5" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">As an institution</text>
+<text x="130.0" y="278.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the organs that make,</text>
+<text x="130.0" y="301.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">carry out and interpret</text>
+<text x="130.0" y="324.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the laws of a state</text>
+<line x1="380.0" y1="148.0" x2="130.0" y2="209.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="270.0" y="215.0" width="220.0" height="150.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="380.0" y="255.5" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">As a process</text>
+<text x="380.0" y="278.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the activity of ruling:</text>
+<text x="380.0" y="301.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">making and enforcing</text>
+<text x="380.0" y="324.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">decisions for society</text>
+<line x1="380.0" y1="148.0" x2="380.0" y2="209.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="520.0" y="215.0" width="220.0" height="150.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="630.0" y="255.5" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">As a subject</text>
+<text x="630.0" y="278.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the academic study of</text>
+<text x="630.0" y="301.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the state, its organs</text>
+<text x="630.0" y="324.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">and the use of power</text>
+<line x1="380.0" y1="148.0" x2="630.0" y2="209.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="380.0" y="405.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. &#x27;The Government of Sierra Leone&#x27; uses the first meaning.</text>
+</svg>

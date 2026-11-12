@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The four elements of a state</title>
+<desc id="d">A state has four essential elements: a population, a defined territory, a government, and sovereignty. Sierra Leone has all four and became a sovereign state on 27 April 1961.</desc>
+<defs></defs>
+<rect width="760" height="470" rx="20" fill="#f8fafc"/>
+<text x="380.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">No state without all four elements</text>
+<circle cx="380.0" cy="240.0" r="78.0" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/>
+<text x="380.0" y="240.0" font-size="26" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">STATE</text>
+<rect x="30.0" y="72.0" width="240.0" height="96.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="150.0" y="97.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Population</text>
+<text x="150.0" y="120.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">a body of people</text>
+<text x="150.0" y="143.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">living together</text>
+<line x1="317.9" y1="165.6" x2="246.6" y2="162.0" stroke="#475569" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="490.0" y="72.0" width="240.0" height="96.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="610.0" y="97.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Territory</text>
+<text x="610.0" y="120.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">defined land, waters</text>
+<text x="610.0" y="143.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">and airspace</text>
+<line x1="442.1" y1="165.6" x2="513.4" y2="162.0" stroke="#475569" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="30.0" y="312.0" width="240.0" height="96.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="150.0" y="337.0" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Government</text>
+<text x="150.0" y="360.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the machinery that</text>
+<text x="150.0" y="383.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">makes and enforces laws</text>
+<line x1="317.9" y1="314.4" x2="246.6" y2="318.0" stroke="#475569" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="490.0" y="312.0" width="240.0" height="96.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="610.0" y="337.0" font-size="17" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sovereignty</text>
+<text x="610.0" y="360.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">supreme power inside;</text>
+<text x="610.0" y="383.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">independence outside</text>
+<line x1="442.1" y1="314.4" x2="513.4" y2="318.0" stroke="#475569" stroke-width="2.4" stroke-linecap="round"/>
+<text x="380.0" y="448.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Sierra Leone: all four since independence on 27 April 1961.</text>
+</svg>

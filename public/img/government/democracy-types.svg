@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Direct and representative democracy</title>
+<desc id="d">In direct democracy the citizens themselves meet and decide public matters, as in ancient Athens or in a referendum. In representative (indirect) democracy the citizens elect representatives who make decisions for them, as in Sierra Leone&#x27;s Parliament.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="760" height="420" rx="20" fill="#f8fafc"/>
+<text x="380.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Two ways the people rule</text>
+<rect x="30.0" y="56.0" width="340.0" height="330.0" rx="14" fill="#ffffff" stroke="#ea580c" stroke-width="2"/>
+<text x="200.0" y="84.0" font-size="20" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Direct</text>
+<rect x="390.0" y="56.0" width="340.0" height="330.0" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+<text x="560.0" y="84.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Representative</text>
+<circle cx="110.0" cy="150.0" r="16.0" fill="#fef3c7" stroke="#ea580c" stroke-width="2"/>
+<circle cx="155.0" cy="150.0" r="16.0" fill="#fef3c7" stroke="#ea580c" stroke-width="2"/>
+<circle cx="200.0" cy="150.0" r="16.0" fill="#fef3c7" stroke="#ea580c" stroke-width="2"/>
+<circle cx="245.0" cy="150.0" r="16.0" fill="#fef3c7" stroke="#ea580c" stroke-width="2"/>
+<circle cx="290.0" cy="150.0" r="16.0" fill="#fef3c7" stroke="#ea580c" stroke-width="2"/>
+<rect x="85.0" y="238.0" width="230.0" height="64.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="200.0" y="259.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Decision</text>
+<text x="200.0" y="281.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">made by all citizens</text>
+<line x1="110.0" y1="168.0" x2="140.0" y2="236.0" stroke="#ea580c" stroke-width="2" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<line x1="155.0" y1="168.0" x2="170.0" y2="236.0" stroke="#ea580c" stroke-width="2" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<line x1="200.0" y1="168.0" x2="200.0" y2="236.0" stroke="#ea580c" stroke-width="2" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<line x1="245.0" y1="168.0" x2="230.0" y2="236.0" stroke="#ea580c" stroke-width="2" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<line x1="290.0" y1="168.0" x2="260.0" y2="236.0" stroke="#ea580c" stroke-width="2" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<text x="200.0" y="345.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Athens; referendums</text>
+<circle cx="470.0" cy="140.0" r="16.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="515.0" cy="140.0" r="16.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="560.0" cy="140.0" r="16.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="605.0" cy="140.0" r="16.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="650.0" cy="140.0" r="16.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<rect x="450.0" y="190.0" width="220.0" height="50.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="560.0" y="215.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Elected representatives</text>
+<line x1="470.0" y1="158.0" x2="510.0" y2="188.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="515.0" y1="158.0" x2="535.0" y2="188.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="560.0" y1="158.0" x2="560.0" y2="188.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="605.0" y1="158.0" x2="585.0" y2="188.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="650.0" y1="158.0" x2="610.0" y2="188.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="450.0" y="275.0" width="220.0" height="50.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="560.0" y="300.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Laws and decisions</text>
+<line x1="560.0" y1="246.0" x2="560.0" y2="269.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<text x="560.0" y="362.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sierra Leone&#x27;s Parliament</text>
+<text x="380.0" y="405.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Large modern states use representatives; direct votes survive in referendums.</text>
+</svg>

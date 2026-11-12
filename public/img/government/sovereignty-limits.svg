@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Sovereignty and its limits</title>
+<desc id="d">Internal sovereignty is supreme power over all people and bodies inside the state; external sovereignty is independence from other states. In practice sovereignty is limited by the constitution, international law and treaties, public opinion, pressure groups, customs and religion, and membership of bodies such as the UN and ECOWAS.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="760" height="470" rx="20" fill="#f8fafc"/>
+<text x="380.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sovereignty: supreme in theory, limited in practice</text>
+<rect x="250.0" y="80.0" width="260.0" height="60.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="380.0" y="110.0" font-size="22" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sovereignty</text>
+<rect x="55.0" y="62.0" width="190.0" height="96.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="150.0" y="88.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Internal</text>
+<text x="150.0" y="110.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">supreme over all</text>
+<text x="150.0" y="132.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">inside the state</text>
+<rect x="515.0" y="62.0" width="190.0" height="96.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="610.0" y="88.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">External</text>
+<text x="610.0" y="110.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">independent of</text>
+<text x="610.0" y="132.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">other states</text>
+<line x1="244.0" y1="110.0" x2="251.0" y2="110.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="516.0" y1="110.0" x2="509.0" y2="110.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="380.0" y="215.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">What limits it</text>
+<line x1="380.0" y1="200.0" x2="380.0" y2="146.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<rect x="28.0" y="258.0" width="224.0" height="64.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="140.0" y="290.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">The constitution</text>
+<rect x="268.0" y="258.0" width="224.0" height="64.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="380.0" y="290.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">International law, treaties</text>
+<rect x="508.0" y="258.0" width="224.0" height="64.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="620.0" y="290.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Public opinion</text>
+<rect x="28.0" y="344.0" width="224.0" height="64.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="140.0" y="376.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Pressure groups</text>
+<rect x="268.0" y="344.0" width="224.0" height="64.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="380.0" y="376.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Customs and religion</text>
+<rect x="508.0" y="344.0" width="224.0" height="64.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="620.0" y="376.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">UN, AU and ECOWAS</text>
+</svg>

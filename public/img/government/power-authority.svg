@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Power, legitimacy and authority</title>
+<desc id="d">Power is the ability to make others act as you wish. When the people accept that power as rightful, it has legitimacy, and power with legitimacy is authority. Max Weber described three sources of authority: traditional, charismatic and legal-rational.</desc>
+<defs></defs>
+<rect width="760" height="470" rx="20" fill="#f8fafc"/>
+<text x="380.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Power + legitimacy = authority</text>
+<rect x="20.0" y="75.0" width="200.0" height="110.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="120.0" y="107.0" font-size="17" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Power</text>
+<text x="120.0" y="130.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the ability to make</text>
+<text x="120.0" y="153.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">others obey</text>
+<rect x="280.0" y="75.0" width="200.0" height="110.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="380.0" y="107.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Legitimacy</text>
+<text x="380.0" y="130.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">people accept the</text>
+<text x="380.0" y="153.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">right to rule</text>
+<rect x="540.0" y="75.0" width="200.0" height="110.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="640.0" y="107.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Authority</text>
+<text x="640.0" y="130.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">power accepted</text>
+<text x="640.0" y="153.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">as rightful</text>
+<text x="250.0" y="130.0" font-size="40" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+</text>
+<text x="510.0" y="130.0" font-size="40" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">=</text>
+<text x="380.0" y="232.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Three sources of authority (Max Weber)</text>
+<rect x="20.0" y="280.0" width="220.0" height="120.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="130.0" y="318.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Traditional</text>
+<text x="130.0" y="340.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">custom and history</text>
+<text x="130.0" y="362.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. a paramount chief</text>
+<rect x="270.0" y="280.0" width="220.0" height="120.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="380.0" y="318.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Charismatic</text>
+<text x="380.0" y="340.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">a leader&#x27;s personal</text>
+<text x="380.0" y="362.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">qualities and appeal</text>
+<rect x="520.0" y="280.0" width="220.0" height="120.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="630.0" y="307.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Legal-rational</text>
+<text x="630.0" y="329.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">laws and offices</text>
+<text x="630.0" y="351.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. the President under</text>
+<text x="630.0" y="373.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the Constitution</text>
+<text x="380.0" y="445.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Force without legitimacy is power, not authority.</text>
+</svg>

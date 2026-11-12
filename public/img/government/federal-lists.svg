@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">How a federal constitution shares out power</title>
+<desc id="d">In a federation the constitution lists powers. The exclusive list belongs to the federal government only (defence, foreign affairs, currency). The concurrent list is shared by both levels (education, health, agriculture), with federal law prevailing in a conflict. Residual matters left unlisted belong to the states (for example chieftaincy matters and local markets). Nigeria is the West African example.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="440" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A federal constitution shares out power in lists</text>
+<rect x="250.0" y="67.0" width="300.0" height="56.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="95.0" font-size="19" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The constitution</text>
+<rect x="25.0" y="175.0" width="230.0" height="170.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="140.0" y="216.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Exclusive list</text>
+<text x="140.0" y="238.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">federal only</text>
+<text x="140.0" y="260.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">defence, armed forces</text>
+<text x="140.0" y="282.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">foreign affairs</text>
+<text x="140.0" y="304.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">currency, customs</text>
+<line x1="400.0" y1="129.0" x2="140.0" y2="169.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="285.0" y="175.0" width="230.0" height="170.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="216.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Concurrent list</text>
+<text x="400.0" y="238.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">shared by both</text>
+<text x="400.0" y="260.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">education</text>
+<text x="400.0" y="282.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">health, agriculture</text>
+<text x="400.0" y="304.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(federal law prevails)</text>
+<line x1="400.0" y1="129.0" x2="400.0" y2="169.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="545.0" y="175.0" width="230.0" height="170.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="660.0" y="216.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Residual matters</text>
+<text x="660.0" y="238.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">states only</text>
+<text x="660.0" y="260.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">anything not listed,</text>
+<text x="660.0" y="282.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. chieftaincy,</text>
+<text x="660.0" y="304.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">local markets</text>
+<line x1="400.0" y1="129.0" x2="660.0" y2="169.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="400.0" y="410.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Example: Nigeria. Sierra Leone is unitary, so it has no such lists.</text>
+</svg>
