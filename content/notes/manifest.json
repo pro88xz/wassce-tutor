@@ -266,6 +266,160 @@
       "sort_order": 2
     },
     {
+      "file": "chemistry-states-1.md",
+      "subject": "Chemistry",
+      "topic": "states-of-matter",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "The kinetic theory and the three states of matter",
+      "est_minutes": 7,
+      "sort_order": 1,
+      "retire": [
+        "evidence-for-the-kinetic-model",
+        "states-of-matter",
+        "the-solid-state"
+      ]
+    },
+    {
+      "file": "chemistry-states-2.md",
+      "subject": "Chemistry",
+      "topic": "states-of-matter",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Changes of state, heating curves and diffusion",
+      "est_minutes": 8,
+      "sort_order": 2
+    },
+    {
+      "file": "chemistry-gas-laws-1.md",
+      "subject": "Chemistry",
+      "topic": "gas-laws",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Boyle's law, Charles' law and the general gas equation",
+      "est_minutes": 8,
+      "sort_order": 1,
+      "retire": [
+        "advanced-gas-stoichiometry",
+        "gas-laws-and-gas-calculations",
+        "gay-lussac's-law-of-combining-volumes-&-avogadro's-law",
+        "kinetic-explanation"
+      ]
+    },
+    {
+      "file": "chemistry-gas-laws-2.md",
+      "subject": "Chemistry",
+      "topic": "gas-laws",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Gases in reactions: Gay-Lussac, Avogadro, Graham and Dalton",
+      "est_minutes": 8,
+      "sort_order": 2
+    },
+    {
+      "file": "chemistry-mole-1.md",
+      "subject": "Chemistry",
+      "topic": "the-mole-concept",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "The mole, molar mass and the Avogadro constant",
+      "est_minutes": 7,
+      "sort_order": 1,
+      "retire": [
+        "relative-masses-and-the-mole-bridge",
+        "the-mole-concept"
+      ]
+    },
+    {
+      "file": "chemistry-mole-2.md",
+      "subject": "Chemistry",
+      "topic": "the-mole-concept",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Molar volume of gases and concentration of solutions",
+      "est_minutes": 8,
+      "sort_order": 2
+    },
+    {
+      "file": "chemistry-equations-1.md",
+      "subject": "Chemistry",
+      "topic": "chemical-equations-and-stoichiometry",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Chemical equations and the laws of chemical combination",
+      "est_minutes": 8,
+      "sort_order": 1,
+      "retire": [
+        "chemical-combination",
+        "chemical-equations-and-balancing-mechanics",
+        "chemical-equations-and-stoichiometry",
+        "percentage-purity"
+      ]
+    },
+    {
+      "file": "chemistry-equations-2.md",
+      "subject": "Chemistry",
+      "topic": "chemical-equations-and-stoichiometry",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Reacting masses, gas volumes and percentage yield",
+      "est_minutes": 8,
+      "sort_order": 2
+    },
+    {
+      "file": "chemistry-formulas-1.md",
+      "subject": "Chemistry",
+      "topic": "empirical-and-molecular-formulas",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Empirical formulas from experimental data",
+      "est_minutes": 7,
+      "sort_order": 1,
+      "retire": [
+        "empirical-and-molecular-formulas"
+      ]
+    },
+    {
+      "file": "chemistry-formulas-2.md",
+      "subject": "Chemistry",
+      "topic": "empirical-and-molecular-formulas",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Molecular formulas, percentage composition and water of crystallisation",
+      "est_minutes": 7,
+      "sort_order": 2
+    },
+    {
       "file": "english-language-nouns.md",
       "subject": "English Language",
       "topic": "nouns",

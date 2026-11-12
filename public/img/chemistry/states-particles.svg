@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 340" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Particles in solids, liquids and gases</title>
+<desc id="d">In a solid, particles are closely packed in a regular pattern and only vibrate. In a liquid, particles are close together but irregular and can slide past each other. In a gas, particles are far apart and move quickly in all directions.</desc>
+<defs><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="780" height="340" rx="20" fill="#f8fafc"/>
+<rect x="30.0" y="50.0" width="220.0" height="200.0" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2.5"/>
+<text x="140.0" y="276.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Solid</text>
+<text x="140.0" y="300.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">packed, regular; vibrate</text>
+<rect x="280.0" y="50.0" width="220.0" height="200.0" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2.5"/>
+<text x="390.0" y="276.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Liquid</text>
+<text x="390.0" y="300.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">close, irregular; slide</text>
+<rect x="530.0" y="50.0" width="220.0" height="200.0" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2.5"/>
+<text x="640.0" y="276.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Gas</text>
+<text x="640.0" y="300.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">far apart; move fast</text>
+<circle cx="55.0" cy="85.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<path d="M 34 85 q 3 -5 6 0 M 70 85 q 3 -5 6 0" stroke="#475569" stroke-width="1.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="89.0" cy="85.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="123.0" cy="85.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="157.0" cy="85.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="191.0" cy="85.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<path d="M 170 85 q 3 -5 6 0 M 206 85 q 3 -5 6 0" stroke="#475569" stroke-width="1.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="225.0" cy="85.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="55.0" cy="119.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="89.0" cy="119.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="123.0" cy="119.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="157.0" cy="119.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<path d="M 136 119 q 3 -5 6 0 M 172 119 q 3 -5 6 0" stroke="#475569" stroke-width="1.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="191.0" cy="119.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="225.0" cy="119.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="55.0" cy="153.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="89.0" cy="153.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="123.0" cy="153.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<path d="M 102 153 q 3 -5 6 0 M 138 153 q 3 -5 6 0" stroke="#475569" stroke-width="1.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="157.0" cy="153.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="191.0" cy="153.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="225.0" cy="153.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="55.0" cy="187.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="89.0" cy="187.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<path d="M 68 187 q 3 -5 6 0 M 104 187 q 3 -5 6 0" stroke="#475569" stroke-width="1.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="123.0" cy="187.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="157.0" cy="187.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="191.0" cy="187.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="225.0" cy="187.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<path d="M 204 187 q 3 -5 6 0 M 240 187 q 3 -5 6 0" stroke="#475569" stroke-width="1.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="55.0" cy="221.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<path d="M 34 221 q 3 -5 6 0 M 70 221 q 3 -5 6 0" stroke="#475569" stroke-width="1.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="89.0" cy="221.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="123.0" cy="221.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="157.0" cy="221.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="191.0" cy="221.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<path d="M 170 221 q 3 -5 6 0 M 206 221 q 3 -5 6 0" stroke="#475569" stroke-width="1.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="225.0" cy="221.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="381.2" cy="180.3" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="468.1" cy="168.8" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="332.0" cy="174.5" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="413.9" cy="208.7" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="314.7" cy="210.8" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="425.6" cy="117.1" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="478.7" cy="229.7" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="327.0" cy="113.8" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="379.1" cy="214.8" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="382.1" cy="145.9" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="452.6" cy="198.4" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="298.1" cy="137.6" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="441.2" cy="144.9" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="337.2" cy="143.5" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="413.0" cy="158.6" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="458.6" cy="117.1" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="446.6" cy="228.9" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<circle cx="560.0" cy="90.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<line x1="552.8" y1="73.5" x2="542.4" y2="49.7" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<circle cx="640.0" cy="120.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<line x1="645.6" y1="137.1" x2="653.8" y2="161.8" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<circle cx="710.0" cy="80.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<line x1="692.2" y1="82.8" x2="666.5" y2="86.8" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<circle cx="590.0" cy="190.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<line x1="597.8" y1="206.2" x2="609.1" y2="229.7" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<circle cx="700.0" cy="200.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<line x1="718.0" y1="201.2" x2="743.9" y2="203.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<circle cx="650.0" cy="230.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<line x1="632.3" y1="233.1" x2="606.7" y2="237.6" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<circle cx="560.0" cy="230.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<line x1="556.0" y1="212.5" x2="550.2" y2="187.1" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<circle cx="690.0" cy="150.0" r="15.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<line x1="697.8" y1="166.2" x2="709.0" y2="189.7" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="390.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Increasing energy and movement →</text>
+</svg>

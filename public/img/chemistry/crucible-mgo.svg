@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Finding the formula of magnesium oxide</title>
+<desc id="d">Magnesium ribbon is heated strongly in a crucible with a lid on a pipe-clay triangle. The lid is lifted from time to time to let air in. The crucible and contents are weighed before and after heating to find the masses of magnesium and oxygen that combined.</desc>
+<defs></defs>
+<rect width="760" height="380" rx="20" fill="#f8fafc"/>
+<line x1="125.0" y1="230.0" x2="275.0" y2="230.0" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+<line x1="133.0" y1="230.0" x2="119.0" y2="350.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="267.0" y1="230.0" x2="281.0" y2="350.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<polygon points="140.0,228.0 260.0,228.0 200.0,236.0" fill="none" stroke="#475569" stroke-width="3" stroke-linejoin="round"/>
+<path d="M 160 170 L 168 228 L 232 228 L 240 170 Z" stroke="#0f172a" stroke-width="2.5" fill="#ffffff" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 152 166 L 248 166 L 244 156 L 156 156 Z" stroke="#0f172a" stroke-width="2.5" fill="#ffffff" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 176 214 q 10 -12 20 0 q 10 12 20 0" stroke="#475569" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="292.0" y="150.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">lid (lift slightly at times)</text>
+<text x="292.0" y="200.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">crucible with Mg ribbon</text>
+<text x="292.0" y="236.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">pipe-clay triangle on tripod</text>
+<rect x="172.0" y="340.0" width="56.0" height="10.0" rx="3" fill="#cbd5e1" stroke="#0f172a" stroke-width="2"/>
+<rect x="192.0" y="280.0" width="16.0" height="60.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="2"/>
+<path d="M 200 238 C 216 258, 212 276, 200 278 C 188 276, 184 258, 200 238 Z" stroke="#f97316" stroke-width="2" fill="#fed7aa" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 200 254 C 207 264, 205 274, 200 276 C 195 274, 193 264, 200 254 Z" stroke="#2563eb" stroke-width="1.5" fill="#dbeafe" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="600.0" y="70.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Results</text>
+<text x="470.0" y="105.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">mass of crucible + lid</text>
+<text x="740.0" y="105.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">20.10 g</text>
+<text x="470.0" y="135.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">+ magnesium</text>
+<text x="740.0" y="135.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">20.34 g</text>
+<text x="470.0" y="165.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">+ magnesium oxide</text>
+<text x="740.0" y="165.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">20.50 g</text>
+<text x="470.0" y="215.0" font-size="15" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="normal">Mg = 0.24 g → 0.24 ÷ 24 = 0.01 mol</text>
+<text x="470.0" y="243.0" font-size="15" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="normal">O = 0.16 g → 0.16 ÷ 16 = 0.01 mol</text>
+<text x="470.0" y="280.0" font-size="17" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">ratio 1 : 1, so MgO</text>
+</svg>

@@ -928,6 +928,179 @@ def metallic_hydrogen_bonds():
     return s
 
 
+# ═══ Group 2: states of matter, gas laws, chemical calculations ══════════════
+
+@fig
+def states_particles():
+    s = Svg(780, 340, "Particles in solids, liquids and gases",
+            "In a solid, particles are closely packed in a regular pattern and only vibrate. In a liquid, particles are close "
+            "together but irregular and can slide past each other. In a gas, particles are far apart and move quickly in all "
+            "directions.")
+    import random
+    rnd = random.Random(11)
+    panels = [(140, "Solid", "packed, regular; vibrate"), (390, "Liquid", "close, irregular; slide"),
+              (640, "Gas", "far apart; move fast")]
+    for x, a, b in panels:
+        s.rect(x - 110, 50, 220, 200, fill="#ffffff", stroke=MUTED, width=2.5, rx=8)
+        s.text(x, 276, a, size=18, weight="bold")
+        s.text(x, 300, b, size=15, color=MUTED)
+    for r in range(5):
+        for c in range(6):
+            x, y = 55 + c * 34, 85 + r * 34
+            s.circle(x, y, 15, fill=F_BLUE, stroke=BLUE, width=2)
+            if (r + c) % 4 == 0:
+                s.path(f"M {x - 21} {y} q 3 -5 6 0 M {x + 15} {y} q 3 -5 6 0", color=MUTED, width=1.5)
+    placed = []
+    tries = 0
+    while len(placed) < 17 and tries < 20000:
+        tries += 1
+        x, y = rnd.uniform(298, 482), rnd.uniform(112, 234)
+        if all((x - a) ** 2 + (y - b) ** 2 > 31 ** 2 for a, b in placed):
+            placed.append((x, y))
+    for x, y in placed:
+        s.circle(x, y, 15, fill=F_BLUE, stroke=BLUE, width=2)
+    gas = [(560, 90), (640, 120), (710, 80), (590, 190), (700, 200), (650, 230), (560, 230), (690, 150)]
+    for x, y in gas:
+        s.circle(x, y, 15, fill=F_BLUE, stroke=BLUE, width=2)
+        a = rnd.uniform(0, 2 * math.pi)
+        s.arrow(x + 18 * math.cos(a), y + 18 * math.sin(a), x + 44 * math.cos(a), y + 44 * math.sin(a), color=RED, width=2)
+    title(s, "Increasing energy and movement →", y=30)
+    return s
+
+
+@fig
+def heating_curve():
+    s = Svg(760, 420, "Heating curve of water",
+            "Ice at −20 °C is heated steadily. Its temperature rises to 0 °C, stays constant while it melts, rises to 100 °C, "
+            "stays constant while it boils, then rises again as steam. The flat parts are where latent heat is absorbed.")
+    p = Plot(s, 90, 340, 590, 270, (0, 10), (-30, 130))
+    p.axes("time (heating at a steady rate)", "temperature (°C)", yticks=[(-20, "−20"), (0, "0"), (50, "50"), (100, "100")],
+           zero=False, xaxis_at=-30)
+    pts = [(0, -20), (1, 0), (2.6, 0), (4.4, 100), (8.2, 100), (9.6, 125)]
+    p.poly(pts, color=RED, width=3.5)
+    p.guide(1, 0, to_x=False)
+    p.guide(4.4, 100, to_x=False)
+    for (x1, y1), (x2, y2), t, col in [((0, -20), (1, 0), "ice warms", BLUE), ((1, 0), (2.6, 0), "melting", PURPLE),
+                                         ((2.6, 0), (4.4, 100), "water warms", BLUE), ((4.4, 100), (8.2, 100), "boiling", PURPLE),
+                                         ((8.2, 100), (9.6, 125), "steam", BLUE)]:
+        mx, my = (x1 + x2) / 2, (y1 + y2) / 2
+        left = t == "ice warms"
+        p.text(mx, my, t, dy=-18 if y1 == y2 else 0, dx=0 if y1 == y2 else (-14 if left else 18), size=15, weight="bold",
+               color=col, anchor="middle" if y1 == y2 else ("end" if left else "start"))
+    p.text(1.8, 0, "solid + liquid", dy=20, size=13, color=MUTED)
+    p.text(6.3, 100, "liquid + gas", dy=20, size=13, color=MUTED)
+    title(s, "Temperature is constant while the state changes", y=28)
+    return s
+
+
+@fig
+def diffusion_tube():
+    s = Svg(780, 300, "Diffusion of ammonia and hydrogen chloride",
+            "Cotton wool soaked in concentrated ammonia is placed at one end of a long glass tube and cotton wool soaked in "
+            "concentrated hydrochloric acid at the other. A white ring of ammonium chloride forms nearer the hydrochloric acid "
+            "end, because ammonia molecules are lighter and diffuse faster.")
+    s.rect(80, 120, 620, 50, fill=GLASS, stroke=INK, width=2.5, rx=24)
+    s.rect(80, 120, 60, 50, fill="#ffffff", stroke=BLUE, width=2, rx=20)
+    s.rect(640, 120, 60, 50, fill="#ffffff", stroke=RED, width=2, rx=20)
+    chem(s, 110, 96, "NH_3(aq)", size=16, weight="bold", color=BLUE)
+    chem(s, 670, 96, "HCl(aq)", size=16, weight="bold", color=RED)
+    xr = 140 + 500 * 0.6
+    s.rect(xr - 8, 122, 16, 46, fill="#ffffff", stroke=MUTED, width=1.5)
+    s.text(xr, 196, "white ring of", size=15, weight="bold")
+    chem(s, xr, 216, "NH_4Cl", size=15, weight="bold")
+    s.arrow(150, 145, xr - 14, 145, color=BLUE, width=3)
+    s.arrow(630, 145, xr + 14, 145, color=RED, width=3)
+    s.line(140, 250, xr, 250, color=BLUE, width=2)
+    s.line(xr, 250, 640, 250, color=RED, width=2)
+    s.text((140 + xr) / 2, 270, "NH₃ travels further (M = 17)", size=14, color=BLUE)
+    s.text((xr + 640) / 2, 270, "HCl travels less (M = 36.5)", size=14, color=RED)
+    title(s, "Lighter molecules diffuse faster", y=34)
+    return s
+
+
+@fig
+def boyle_charles():
+    s = Svg(800, 380, "Boyle's law and Charles' law graphs",
+            "Left: at constant temperature, pressure against volume is a curve: doubling the pressure halves the volume "
+            "(Boyle's law). Right: at constant pressure, volume against kelvin temperature is a straight line "
+            "through the origin (Charles' law); extended, it reaches zero volume at −273 °C (0 K).")
+    p = Plot(s, 60, 300, 280, 220, (0, 10), (0, 10))
+    p.axes("volume V", "pressure P", zero=True)
+    p.fn(lambda v: 9 / v, 0.95, 9.5, color=BLUE, width=3.5)
+    s.text(200, 30, "Boyle's law (T constant)", size=16, weight="bold", color=BLUE)
+    s.text(200, 52, "PV = constant", size=15, color=BLUE)
+    q = Plot(s, 450, 300, 300, 220, (-300, 400), (0, 10))
+    q.axes("temperature (°C)", "volume V", xticks=[(-273, "−273"), (0, "0"), (100, "100"), (300, "300")], zero=False)
+    q.fn(lambda t: (t + 273) / 70, 0, 380, color=RED, width=3.5)
+    q.fn(lambda t: (t + 273) / 70, -273, 0, color=RED, width=2.2, dash="7 6")
+    q.dot(-273, 0, color=RED)
+    q.text(-273, 0, "0 K", dy=-16, dx=10, size=14, weight="bold", color=RED, anchor="start")
+    s.text(600, 30, "Charles' law (P constant)", size=16, weight="bold", color=RED)
+    s.text(600, 52, "V ∝ T (in kelvin)", size=15, color=RED)
+    s.text(600, 350, "dashed: extended to absolute zero", size=14, color=MUTED, italic=True)
+    return s
+
+
+@fig
+def mole_bridge():
+    s = Svg(780, 420, "Converting to and from moles",
+            "The mole is the bridge between quantities. Mass in grams divided by molar mass gives moles; moles times molar mass "
+            "gives mass. Moles times the Avogadro constant gives the number of particles. Gas volume divided by 22.4 dm3 at s.t.p. "
+            "gives moles. Concentration times volume in dm3 gives moles.")
+    c = box(s, 390, 210, 170, 76, ["moles", "n"], BLUE, F_BLUE, size=22)
+    items = [(390, 60, ["mass (g)", "m"], GREEN, F_GREEN, "÷ M", "× M"),
+             (110, 210, ["particles", "N"], PURPLE, F_PURPLE, "÷ 6.02 × 10²³", "× 6.02 × 10²³"),
+             (670, 210, ["gas volume", "V (dm³)"], ORANGE, F_AMBER, "÷ 22.4", "× 22.4"),
+             (390, 360, ["solution", "C × V (dm³)"], TEAL, F_TEAL, "C × V", "n ÷ V")]
+    for x, y, lines, col, fill, to_n, from_n in items:
+        b = box(s, x, y, 190, 64, lines, col, fill, size=17)
+        dx, dy = c[0] - x, c[1] - y
+        if abs(dx) > abs(dy):
+            sx = x + math.copysign(100, dx)
+            ex = c[0] - math.copysign(90, dx)
+            s.arrow(sx, y - 10, ex, y - 10, color=col, width=2.5)
+            s.arrow(ex, y + 10, sx, y + 10, color=col, width=2.5)
+            s.text((sx + ex) / 2, y - 26, to_n, size=14, weight="bold", color=col)
+            s.text((sx + ex) / 2, y + 30, from_n, size=14, weight="bold", color=col)
+        else:
+            sy = y + math.copysign(37, dy)
+            ey = c[1] - math.copysign(43, dy)
+            s.arrow(x - 12, sy, x - 12, ey, color=col, width=2.5)
+            s.arrow(x + 12, ey, x + 12, sy, color=col, width=2.5)
+            s.text(x - 24, (sy + ey) / 2, to_n, size=14, weight="bold", color=col, anchor="end")
+            s.text(x + 24, (sy + ey) / 2, from_n, size=14, weight="bold", color=col, anchor="start")
+    s.text(130, 390, "M = molar mass (g/mol)", size=14, color=MUTED)
+    s.text(660, 390, "22.4 dm³ per mole at s.t.p.", size=14, color=MUTED)
+    return s
+
+
+@fig
+def crucible_mgo():
+    s = Svg(760, 380, "Finding the formula of magnesium oxide",
+            "Magnesium ribbon is heated strongly in a crucible with a lid on a pipe-clay triangle. The lid is lifted from time to "
+            "time to let air in. The crucible and contents are weighed before and after heating to find the masses of magnesium "
+            "and oxygen that combined.")
+    tripod(s, 200, 230, 350, w=150)
+    s.polygon([(140, 228), (260, 228), (200, 236)], fill="none", stroke=MUTED, width=3)
+    s.path("M 160 170 L 168 228 L 232 228 L 240 170 Z", color=INK, width=2.5, fill="#ffffff")
+    s.path("M 152 166 L 248 166 L 244 156 L 156 156 Z", color=INK, width=2.5, fill="#ffffff")
+    s.path("M 176 214 q 10 -12 20 0 q 10 12 20 0", color=MUTED, width=3)
+    s.text(292, 150, "lid (lift slightly at times)", size=14, anchor="start")
+    s.text(292, 200, "crucible with Mg ribbon", size=14, anchor="start")
+    s.text(292, 236, "pipe-clay triangle on tripod", size=14, anchor="start")
+    burner(s, 200, 350)
+    x0 = 470
+    rows = [("mass of crucible + lid", "20.10 g"), ("+ magnesium", "20.34 g"), ("+ magnesium oxide", "20.50 g")]
+    s.text(x0 + 130, 70, "Results", size=17, weight="bold")
+    for i, (a, b) in enumerate(rows):
+        s.text(x0, 105 + i * 30, a, size=15, anchor="start")
+        s.text(x0 + 270, 105 + i * 30, b, size=15, anchor="end", weight="bold")
+    s.text(x0, 215, "Mg = 0.24 g → 0.24 ÷ 24 = 0.01 mol", size=15, anchor="start", color=BLUE)
+    s.text(x0, 243, "O = 0.16 g → 0.16 ÷ 16 = 0.01 mol", size=15, anchor="start", color=RED)
+    s.text(x0, 280, "ratio 1 : 1, so MgO", size=17, anchor="start", weight="bold", color=GREEN)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:
