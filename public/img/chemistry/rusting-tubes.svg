@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Investigating the conditions for rusting</title>
+<desc id="d">Three iron nails: in tube A with air and water the nail rusts; in tube B with dry air (anhydrous calcium chloride) it does not rust; in tube C with boiled water under a layer of oil (no air) it does not rust. Rusting needs both water and oxygen.</desc>
+<defs></defs>
+<rect width="780" height="380" rx="20" fill="#f8fafc"/>
+<path d="M 116 70 L 116 256.0 A 34.0 34.0 0 0 0 184 256.0 L 184 70" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="150.0" y="50.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<text x="150.0" y="316.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">air + water</text>
+<text x="150.0" y="340.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">rusts</text>
+<rect x="146.0" y="120.0" width="8.0" height="120.0" rx="0" fill="#b45309" stroke="#0f172a" stroke-width="1.2"/>
+<rect x="140.0" y="116.0" width="20.0" height="6.0" rx="0" fill="#b45309" stroke="#0f172a" stroke-width="1.2"/>
+<path d="M 356 70 L 356 256.0 A 34.0 34.0 0 0 0 424 256.0 L 424 70" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="390.0" y="50.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B</text>
+<text x="390.0" y="316.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">dry air only</text>
+<text x="390.0" y="340.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">no rust</text>
+<rect x="386.0" y="120.0" width="8.0" height="120.0" rx="0" fill="#64748b" stroke="#0f172a" stroke-width="1.2"/>
+<rect x="380.0" y="116.0" width="20.0" height="6.0" rx="0" fill="#64748b" stroke="#0f172a" stroke-width="1.2"/>
+<path d="M 596 70 L 596 256.0 A 34.0 34.0 0 0 0 664 256.0 L 664 70" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="630.0" y="50.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C</text>
+<text x="630.0" y="316.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">boiled water, no air</text>
+<text x="630.0" y="340.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">no rust</text>
+<rect x="626.0" y="120.0" width="8.0" height="120.0" rx="0" fill="#64748b" stroke="#0f172a" stroke-width="1.2"/>
+<rect x="620.0" y="116.0" width="20.0" height="6.0" rx="0" fill="#64748b" stroke="#0f172a" stroke-width="1.2"/>
+<rect x="118.0" y="200.0" width="64.0" height="50.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0" opacity="0.8"/>
+<rect x="358.0" y="250.0" width="64.0" height="30.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="390.0" y="266.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">CaCl₂</text>
+<rect x="380.0" y="66.0" width="20.0" height="14.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="598.0" y="130.0" width="64.0" height="140.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0" opacity="0.8"/>
+<rect x="598.0" y="116.0" width="64.0" height="16.0" rx="0" fill="#fde68a" stroke="#ea580c" stroke-width="1.5"/>
+<text x="690.0" y="124.0" font-size="13" fill="#ea580c" text-anchor="start" dominant-baseline="middle" font-weight="normal">oil layer</text>
+<text x="470.0" y="260.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">drying agent</text>
+<text x="390.0" y="26.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Rusting needs both water and oxygen (air)</text>
+</svg>

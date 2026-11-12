@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Purifying copper by electrolysis</title>
+<desc id="d">Impure copper is the anode and a thin sheet of pure copper is the cathode, in copper(II) sulphate solution. Copper atoms at the anode lose electrons and go into solution as Cu2+ ions; Cu2+ ions gain electrons at the cathode and deposit as pure copper. Impurities fall as anode sludge.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="760" height="400" rx="20" fill="#f8fafc"/>
+<line x1="372.0" y1="42.0" x2="372.0" y2="78.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="388.0" y1="50.0" x2="388.0" y2="70.0" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+<text x="372.0" y="30.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+</text>
+<text x="388.0" y="30.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">−</text>
+<text x="380.0" y="94.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">d.c. supply</text>
+<line x1="372.0" y1="60.0" x2="240.0" y2="60.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="240.0" y1="60.0" x2="240.0" y2="130.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="388.0" y1="60.0" x2="520.0" y2="60.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="520.0" y1="60.0" x2="520.0" y2="130.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="162.0" y="173.0" width="436.0" height="185.0" rx="0" fill="#dbeafe" stroke="none" stroke-width="0"/>
+<path d="M 154 140 L 160 146 L 160 360 L 600 360 L 600 140" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="214.0" y="130.0" width="52.0" height="200.0" rx="0" fill="#d97706" stroke="#0f172a" stroke-width="2"/>
+<rect x="512.0" y="130.0" width="16.0" height="200.0" rx="0" fill="#f97316" stroke="#0f172a" stroke-width="2"/>
+<text x="240.0" y="112.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">impure copper</text>
+<text x="240.0" y="94.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">anode (+)</text>
+<text x="530.0" y="112.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">pure copper</text>
+<text x="530.0" y="94.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">cathode (−)</text>
+<line x1="280.0" y1="190.0" x2="500.0" y2="190.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<text x="390.0" y="176.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cu<tspan dy="-6.3" font-size="10.5">2+</tspan><tspan dy="6.3"></tspan></text>
+<line x1="280.0" y1="250.0" x2="500.0" y2="250.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<text x="390.0" y="236.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cu<tspan dy="-6.3" font-size="10.5">2+</tspan><tspan dy="6.3"></tspan></text>
+<circle cx="221.4" cy="348.5" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="233.3" cy="349.2" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="256.3" cy="342.8" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="201.2" cy="352.0" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="223.3" cy="344.8" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="289.6" cy="347.6" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="275.3" cy="347.7" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="257.5" cy="343.8" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="257.1" cy="352.4" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="247.1" cy="350.9" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="260.4" cy="342.8" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="268.2" cy="349.1" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="227.1" cy="342.4" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="277.9" cy="347.7" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="264.7" cy="352.5" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="264.3" cy="353.1" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="235.5" cy="351.6" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<circle cx="240.0" cy="353.2" r="3.5" fill="#475569" stroke="#475569" stroke-width="1"/>
+<text x="250.0" y="384.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">anode sludge (Ag, Au)</text>
+<text x="616.0" y="200.0" font-size="15" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="normal">Cu → Cu<tspan dy="-6.3" font-size="10.5">2+</tspan><tspan dy="6.3"> + 2e</tspan><tspan dy="-6.3" font-size="10.5">−</tspan><tspan dy="6.3"></tspan></text>
+<text x="616.0" y="182.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">at the anode:</text>
+<text x="616.0" y="262.0" font-size="15" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="normal">Cu<tspan dy="-6.3" font-size="10.5">2+</tspan><tspan dy="6.3"> + 2e</tspan><tspan dy="-6.3" font-size="10.5">−</tspan><tspan dy="6.3"> → Cu</tspan></text>
+<text x="616.0" y="244.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">at the cathode:</text>
+<text x="380.0" y="392.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">electrolyte: copper(II) sulphate solution</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Electrolysis of acidified water</title>
+<desc id="d">In a Hofmann voltameter, acidified water is electrolysed with platinum electrodes. Hydrogen collects above the cathode and oxygen above the anode. The volume of hydrogen is twice the volume of oxygen.</desc>
+<defs></defs>
+<rect width="700" height="440" rx="20" fill="#f8fafc"/>
+<path d="M 200 70 L 200 330 L 500 330 L 500 70" stroke="#0f172a" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 240 70 L 240 290 L 330 290 L 330 120 L 370 120 L 370 290 L 460 290 L 460 70" stroke="#0f172a" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="202.0" y="190.0" width="36.0" height="138.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0"/>
+<rect x="240.0" y="292.0" width="220.0" height="36.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0"/>
+<rect x="462.0" y="130.0" width="36.0" height="198.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0"/>
+<rect x="332.0" y="150.0" width="36.0" height="140.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0"/>
+<rect x="202.0" y="72.0" width="36.0" height="118.0" rx="0" fill="#ffffff" stroke="none" stroke-width="0"/>
+<rect x="462.0" y="72.0" width="36.0" height="58.0" rx="0" fill="#ffffff" stroke="none" stroke-width="0"/>
+<circle cx="350.0" cy="110.0" r="30.0" fill="#e0f2fe" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="212.0" y="300.0" width="16.0" height="26.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="472.0" y="300.0" width="16.0" height="26.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="192.0" y="56.0" width="16.0" height="14.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="492.0" y="56.0" width="16.0" height="14.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="1.5"/>
+<text x="220.0" y="130.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">H₂</text>
+<text x="480.0" y="100.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O₂</text>
+<text x="150.0" y="130.0" font-size="15" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="normal">2 volumes</text>
+<text x="550.0" y="100.0" font-size="15" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="normal">1 volume</text>
+<line x1="220.0" y1="330.0" x2="220.0" y2="380.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="480.0" y1="330.0" x2="480.0" y2="380.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="220.0" y1="380.0" x2="340.0" y2="380.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="360.0" y1="380.0" x2="480.0" y2="380.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="342.0" y1="368.0" x2="342.0" y2="392.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="358.0" y1="374.0" x2="358.0" y2="386.0" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+<text x="220.0" y="404.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">cathode (−)</text>
+<text x="480.0" y="404.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">anode (+)</text>
+<text x="350.0" y="60.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">acidified water</text>
+<text x="350.0" y="26.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Hydrogen : oxygen = 2 : 1 by volume</text>
+</svg>

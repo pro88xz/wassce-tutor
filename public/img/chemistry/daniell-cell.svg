@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 480" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The Daniell cell</title>
+<desc id="d">A zinc electrode in zinc sulphate solution is connected through a voltmeter to a copper electrode in copper(II) sulphate solution. A salt bridge joins the two solutions. Zinc is oxidised and loses electrons, which flow through the wire to the copper, where Cu2+ ions are reduced. The voltage is about 1.10 V.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker></defs>
+<rect width="780" height="480" rx="20" fill="#f8fafc"/>
+<rect x="62.0" y="230.0" width="226.0" height="148.0" rx="0" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<path d="M 54 180 L 60 186 L 60 380 L 290 380 L 290 180" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="492.0" y="230.0" width="226.0" height="148.0" rx="0" fill="#dbeafe" stroke="none" stroke-width="0"/>
+<path d="M 484 180 L 490 186 L 490 380 L 720 380 L 720 180" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="150.0" y="140.0" width="30.0" height="220.0" rx="0" fill="#94a3b8" stroke="#0f172a" stroke-width="2"/>
+<rect x="600.0" y="140.0" width="30.0" height="220.0" rx="0" fill="#f97316" stroke="#0f172a" stroke-width="2"/>
+<text x="165.0" y="122.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">zinc (−)</text>
+<text x="615.0" y="122.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">copper (+)</text>
+<text x="175.0" y="400.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ZnSO<tspan dy="4.8" font-size="10.5">4</tspan><tspan dy="-4.8">(aq)</tspan></text>
+<text x="605.0" y="400.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">CuSO<tspan dy="4.8" font-size="10.5">4</tspan><tspan dy="-4.8">(aq)</tspan></text>
+<path d="M 250 280 L 250 190 L 530 190 L 530 280" stroke="#cbd5e1" stroke-width="26" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 250 280 L 250 190 L 530 190 L 530 280" stroke="#0f172a" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="2 0"/>
+<text x="390.0" y="176.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">salt bridge (KNO₃)</text>
+<line x1="165.0" y1="140.0" x2="165.0" y2="70.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="165.0" y1="70.0" x2="365.0" y2="70.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="415.0" y1="70.0" x2="615.0" y2="70.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="615.0" y1="70.0" x2="615.0" y2="140.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="390.0" cy="70.0" r="24.0" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="390.0" y="71.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">V</text>
+<line x1="220.0" y1="50.0" x2="330.0" y2="50.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<text x="275.0" y="36.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">electrons</text>
+<text x="175.0" y="452.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">oxidation: Zn → Zn<tspan dy="-6.3" font-size="10.5">2+</tspan><tspan dy="6.3"> + 2e</tspan><tspan dy="-6.3" font-size="10.5">−</tspan><tspan dy="6.3"></tspan></text>
+<text x="605.0" y="452.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">reduction: Cu<tspan dy="-6.3" font-size="10.5">2+</tspan><tspan dy="6.3"> + 2e</tspan><tspan dy="-6.3" font-size="10.5">−</tspan><tspan dy="6.3"> → Cu</tspan></text>
+<text x="390.0" y="110.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">about 1.10 V</text>
+</svg>

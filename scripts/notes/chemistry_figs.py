@@ -1319,6 +1319,277 @@ def tyndall_effect():
     return s
 
 
+# ═══ Group 4: reactions and energy ═══════════════════════════════════════════
+
+def _battery(s: Svg, x, y, label="d.c. supply"):
+    s.line(x - 8, y - 18, x - 8, y + 18, width=3)
+    s.line(x + 8, y - 10, x + 8, y + 10, width=5)
+    s.text(x - 8, y - 30, "+", size=16, weight="bold", color=RED)
+    s.text(x + 8, y - 30, "−", size=16, weight="bold", color=BLUE)
+    s.text(x, y + 34, label, size=14, color=MUTED)
+
+
+@fig
+def electrolysis_cell():
+    s = Svg(780, 440, "An electrolytic cell",
+            "A d.c. supply is connected to two electrodes dipping into an electrolyte. The anode is joined to the positive "
+            "terminal and the cathode to the negative terminal. Positive ions (cations) move to the cathode and gain electrons; "
+            "negative ions (anions) move to the anode and lose electrons. Electrons flow in the external wire from anode to cathode.")
+    _battery(s, 390, 70)
+    s.line(382, 70, 250, 70, width=2.5)
+    s.line(250, 70, 250, 150, width=2.5)
+    s.line(398, 70, 530, 70, width=2.5)
+    s.line(530, 70, 530, 150, width=2.5)
+    beaker(s, 170, 400, 440, 230, 0.8, liquid=F_BLUE)
+    s.rect(236, 150, 28, 200, fill=METAL, stroke=INK, width=2)
+    s.rect(516, 150, 28, 200, fill=METAL, stroke=INK, width=2)
+    s.text(250, 132, "anode (+)", size=16, weight="bold", color=RED)
+    s.text(530, 132, "cathode (−)", size=16, weight="bold", color=BLUE)
+    for i, y in enumerate((230, 290)):
+        s.circle(450, y, 15, fill="#ffffff", stroke=BLUE, width=2)
+        s.text(450, y + 1, "+", size=16, weight="bold", color=BLUE)
+        s.arrow(468, y, 506, y, color=BLUE, width=2.5)
+        s.circle(330, y + 20, 15, fill="#ffffff", stroke=RED, width=2)
+        s.text(330, y + 21, "−", size=18, weight="bold", color=RED)
+        s.arrow(312, y + 20, 274, y + 20, color=RED, width=2.5)
+    s.text(470, 340, "cations → cathode", size=15, weight="bold", color=BLUE)
+    s.text(320, 375, "anions → anode", size=15, weight="bold", color=RED)
+    s.path("M 300 60 C 330 40, 360 40, 372 52", color=GREEN, width=2, arrow="end")
+    s.path("M 410 52 C 430 40, 460 40, 480 60", color=GREEN, width=2, arrow="end")
+    s.text(650, 60, "electrons flow", size=14, color=GREEN, anchor="middle")
+    s.text(650, 78, "anode → cathode", size=14, color=GREEN, anchor="middle")
+    s.text(650, 210, "cathode: reduction", size=14, color=BLUE, anchor="start")
+    s.text(650, 232, "(gain of electrons)", size=14, color=BLUE, anchor="start")
+    s.text(30, 210, "anode: oxidation", size=14, color=RED, anchor="start")
+    s.text(30, 232, "(loss of electrons)", size=14, color=RED, anchor="start")
+    s.text(390, 425, "electrolyte (ions free to move)", size=15, color=MUTED)
+    return s
+
+
+@fig
+def hofmann_voltameter():
+    s = Svg(700, 440, "Electrolysis of acidified water",
+            "In a Hofmann voltameter, acidified water is electrolysed with platinum electrodes. Hydrogen collects above the "
+            "cathode and oxygen above the anode. The volume of hydrogen is twice the volume of oxygen.")
+    s.path("M 200 70 L 200 330 L 500 330 L 500 70", color=INK, width=3)
+    s.path("M 240 70 L 240 290 L 330 290 L 330 120 L 370 120 L 370 290 L 460 290 L 460 70", color=INK, width=3)
+    s.rect(202, 190, 36, 138, fill=WATER, stroke="none", width=0)
+    s.rect(240, 292, 220, 36, fill=WATER, stroke="none", width=0)
+    s.rect(462, 130, 36, 198, fill=WATER, stroke="none", width=0)
+    s.rect(332, 150, 36, 140, fill=WATER, stroke="none", width=0)
+    s.rect(202, 72, 36, 118, fill="#ffffff", stroke="none", width=0)
+    s.rect(462, 72, 36, 58, fill="#ffffff", stroke="none", width=0)
+    s.circle(350, 110, 30, fill=GLASS, stroke=INK, width=2.5)
+    s.rect(212, 300, 16, 26, fill=METAL, stroke=INK, width=1.5)
+    s.rect(472, 300, 16, 26, fill=METAL, stroke=INK, width=1.5)
+    for x in (200, 500):
+        s.rect(x - 8, 56, 16, 14, fill=METAL, stroke=INK, width=1.5)
+    s.text(220, 130, "H₂", size=20, weight="bold", color=BLUE)
+    s.text(480, 100, "O₂", size=20, weight="bold", color=RED)
+    s.text(150, 130, "2 volumes", size=15, color=BLUE, anchor="end")
+    s.text(550, 100, "1 volume", size=15, color=RED, anchor="start")
+    s.line(220, 330, 220, 380, width=2.5)
+    s.line(480, 330, 480, 380, width=2.5)
+    s.line(220, 380, 340, 380, width=2.5)
+    s.line(360, 380, 480, 380, width=2.5)
+    s.line(342, 368, 342, 392, width=3)
+    s.line(358, 374, 358, 386, width=5)
+    s.text(220, 404, "cathode (−)", size=15, color=BLUE, weight="bold")
+    s.text(480, 404, "anode (+)", size=15, color=RED, weight="bold")
+    s.text(350, 60, "acidified water", size=15, color=MUTED)
+    title(s, "Hydrogen : oxygen = 2 : 1 by volume", y=26)
+    return s
+
+
+@fig
+def copper_refining():
+    s = Svg(760, 400, "Purifying copper by electrolysis",
+            "Impure copper is the anode and a thin sheet of pure copper is the cathode, in copper(II) sulphate solution. Copper "
+            "atoms at the anode lose electrons and go into solution as Cu2+ ions; Cu2+ ions gain electrons at the cathode and "
+            "deposit as pure copper. Impurities fall as anode sludge.")
+    _battery(s, 380, 60)
+    s.line(372, 60, 240, 60, width=2.5)
+    s.line(240, 60, 240, 130, width=2.5)
+    s.line(388, 60, 520, 60, width=2.5)
+    s.line(520, 60, 520, 130, width=2.5)
+    beaker(s, 160, 360, 440, 220, 0.85, liquid=F_BLUE)
+    s.rect(214, 130, 52, 200, fill="#d97706", stroke=INK, width=2)
+    s.rect(512, 130, 16, 200, fill="#f97316", stroke=INK, width=2)
+    s.text(240, 112, "impure copper", size=15, weight="bold", color=RED)
+    s.text(240, 94, "anode (+)", size=15, weight="bold", color=RED)
+    s.text(530, 112, "pure copper", size=15, weight="bold", color=BLUE)
+    s.text(530, 94, "cathode (−)", size=15, weight="bold", color=BLUE)
+    for y in (190, 250):
+        s.arrow(280, y, 500, y, color=BLUE, width=2.5)
+        chem(s, 390, y - 14, "Cu^{2+}", size=15, weight="bold", color=BLUE)
+    import random
+    rnd = random.Random(3)
+    for _ in range(18):
+        s.circle(rnd.uniform(200, 290), rnd.uniform(342, 354), 3.5, fill=MUTED, stroke=MUTED, width=1)
+    s.text(250, 384, "anode sludge (Ag, Au)", size=14, color=MUTED)
+    chem(s, 616, 200, "Cu → Cu^{2+} + 2e^−", size=15, color=RED, anchor="start")
+    s.text(616, 182, "at the anode:", size=14, color=MUTED, anchor="start")
+    chem(s, 616, 262, "Cu^{2+} + 2e^− → Cu", size=15, color=BLUE, anchor="start")
+    s.text(616, 244, "at the cathode:", size=14, color=MUTED, anchor="start")
+    s.text(380, 392, "electrolyte: copper(II) sulphate solution", size=14, color=MUTED, anchor="start")
+    return s
+
+
+@fig
+def daniell_cell():
+    s = Svg(780, 480, "The Daniell cell",
+            "A zinc electrode in zinc sulphate solution is connected through a voltmeter to a copper electrode in copper(II) "
+            "sulphate solution. A salt bridge joins the two solutions. Zinc is oxidised and loses electrons, which flow through the "
+            "wire to the copper, where Cu2+ ions are reduced. The voltage is about 1.10 V.")
+    beaker(s, 60, 380, 230, 200, 0.75, liquid="#e2e8f0")
+    beaker(s, 490, 380, 230, 200, 0.75, liquid=F_BLUE)
+    s.rect(150, 140, 30, 220, fill="#94a3b8", stroke=INK, width=2)
+    s.rect(600, 140, 30, 220, fill="#f97316", stroke=INK, width=2)
+    s.text(165, 122, "zinc (−)", size=16, weight="bold")
+    s.text(615, 122, "copper (+)", size=16, weight="bold")
+    chem(s, 175, 400, "ZnSO_4(aq)", size=15, color=MUTED)
+    chem(s, 605, 400, "CuSO_4(aq)", size=15, color=BLUE)
+    s.path("M 250 280 L 250 190 L 530 190 L 530 280", color="#cbd5e1", width=26)
+    s.path("M 250 280 L 250 190 L 530 190 L 530 280", color=INK, width=2, fill="none", dash="2 0")
+    s.text(390, 176, "salt bridge (KNO₃)", size=15, weight="bold", color=MUTED)
+    s.line(165, 140, 165, 70, width=2.5)
+    s.line(165, 70, 365, 70, width=2.5)
+    s.line(415, 70, 615, 70, width=2.5)
+    s.line(615, 70, 615, 140, width=2.5)
+    s.circle(390, 70, 24, fill="#ffffff", stroke=INK, width=2.5)
+    s.text(390, 71, "V", size=18, weight="bold")
+    s.arrow(220, 50, 330, 50, color=GREEN, width=2.5)
+    s.text(275, 36, "electrons", size=14, color=GREEN, weight="bold")
+    chem(s, 175, 452, "oxidation: Zn → Zn^{2+} + 2e^−", size=15, color=RED, anchor="middle")
+    chem(s, 605, 452, "reduction: Cu^{2+} + 2e^− → Cu", size=15, color=BLUE, anchor="middle")
+    s.text(390, 110, "about 1.10 V", size=16, weight="bold")
+    return s
+
+
+@fig
+def rusting_tubes():
+    s = Svg(780, 380, "Investigating the conditions for rusting",
+            "Three iron nails: in tube A with air and water the nail rusts; in tube B with dry air (anhydrous calcium chloride) it "
+            "does not rust; in tube C with boiled water under a layer of oil (no air) it does not rust. Rusting needs both water "
+            "and oxygen.")
+    tubes = [(150, "A", "air + water", "rusts", RED), (390, "B", "dry air only", "no rust", GREEN),
+             (630, "C", "boiled water, no air", "no rust", GREEN)]
+    for x, lab, cond, res, col in tubes:
+        test_tube(s, x - 34, 70, 68, 220, 0.0)
+        s.text(x, 50, lab, size=20, weight="bold")
+        s.text(x, 316, cond, size=15)
+        s.text(x, 340, res, size=16, weight="bold", color=col)
+        nail_col = "#b45309" if lab == "A" else "#64748b"
+        s.rect(x - 4, 120, 8, 120, fill=nail_col, stroke=INK, width=1.2)
+        s.rect(x - 10, 116, 20, 6, fill=nail_col, stroke=INK, width=1.2)
+    s.rect(118, 200, 64, 50, fill=WATER, stroke="none", width=0, opacity=0.8)
+    s.rect(358, 250, 64, 30, fill="#ffffff", stroke=MUTED, width=1.5)
+    s.text(390, 266, "CaCl₂", size=12, color=MUTED)
+    s.rect(380, 66, 20, 14, fill=METAL, stroke=INK, width=1.5)
+    s.rect(598, 130, 64, 140, fill=WATER, stroke="none", width=0, opacity=0.8)
+    s.rect(598, 116, 64, 16, fill="#fde68a", stroke=ORANGE, width=1.5)
+    s.text(690, 124, "oil layer", size=13, color=ORANGE, anchor="start")
+    s.text(470, 260, "drying agent", size=13, color=MUTED, anchor="start")
+    title(s, "Rusting needs both water and oxygen (air)", y=26)
+    return s
+
+
+@fig
+def energy_profiles():
+    s = Svg(800, 400, "Energy profiles of exothermic and endothermic reactions",
+            "Left: in an exothermic reaction the products are lower in energy than the reactants; energy is given out and ΔH is "
+            "negative. Right: in an endothermic reaction the products are higher; energy is taken in and ΔH is positive. In both, "
+            "the reactants must first gain the activation energy Ea.")
+    for k, (x0, exo) in enumerate([(60, True), (450, False)]):
+        p = Plot(s, x0, 330, 290, 250, (0, 10), (0, 10))
+        p.axes("progress of reaction", "energy", zero=False)
+        r, pr, top = (6, 2.5, 9) if exo else (3, 6.5, 9)
+        def prof(x, r=r, pr=pr, top=top):
+            base = r + (pr - r) / (1 + math.exp(-(x - 5) * 2.4))
+            return base + (top - (r + pr) / 2) * math.exp(-((x - 5) / 1.05) ** 2)
+        p.fn(prof, 0.3, 9.7, color=RED if exo else BLUE, width=3.5, n=120)
+        p.text(1.2, r, "reactants", dy=-16, size=14, weight="bold")
+        p.text(8.8, pr, "products", dy=-16, size=14, weight="bold")
+        xg, _ = p.P(5, 0)
+        s.line(p.X(0.3), p.Y(r), p.X(9.7), p.Y(r), color=MUTED, width=1.5, dash="5 4")
+        if not exo:
+            s.line(p.X(6.5), p.Y(pr), p.X(9.7), p.Y(pr), color=MUTED, width=1.5, dash="5 4")
+        xa = p.X(4.2)
+        s.line(xa, p.Y(r), xa, p.Y(top) + 3, color=PURPLE, width=2)
+        s.head(xa, p.Y(top) + 3, -math.pi / 2, color=PURPLE, size=9)
+        s.text(xa - 8, (p.Y(r) + p.Y(top)) / 2, "Ea", size=15, weight="bold", color=PURPLE, anchor="end")
+        xd = p.X(9.2)
+        s.line(xd, p.Y(r), xd, p.Y(pr), color=GREEN, width=2.5)
+        s.head(xd, p.Y(pr), math.pi / 2 if exo else -math.pi / 2, color=GREEN, size=9)
+        s.text(xd + 8, (p.Y(r) + p.Y(pr)) / 2, "ΔH < 0" if exo else "ΔH > 0", size=15, weight="bold", color=GREEN, anchor="start")
+        s.text(x0 + 145, 36, "Exothermic" if exo else "Endothermic", size=18, weight="bold", color=RED if exo else BLUE)
+        s.text(x0 + 145, 58, "heat given out" if exo else "heat taken in", size=14, color=MUTED)
+    return s
+
+
+@fig
+def rate_curves():
+    s = Svg(760, 420, "Volume of gas produced against time",
+            "Marble chips react with hydrochloric acid. With more concentrated acid (or warmer acid, or powdered marble) the curve "
+            "is steeper at the start, showing a faster rate, but with the same amount of limiting reactant the same final volume "
+            "of carbon(IV) oxide is reached. The rate is the gradient of the curve.")
+    p = Plot(s, 90, 350, 580, 270, (0, 10), (0, 80))
+    p.axes("time (minutes)", "volume of CO₂ (cm³)", xticks=[2, 4, 6, 8, 10], yticks=[0, 20, 40, 60, 80], zero=False)
+    p.fn(lambda t: 60 * (1 - math.exp(-t / 0.9)), 0, 10, color=RED, width=3.5)
+    p.fn(lambda t: 60 * (1 - math.exp(-t / 2.6)), 0, 10, color=BLUE, width=3.5)
+    p.text(3.0, 62, "faster: more concentrated acid", dx=6, dy=-10, size=14, weight="bold", color=RED, anchor="start")
+    p.text(5, 52, "slower: dilute acid", dx=10, dy=22, size=14, weight="bold", color=BLUE, anchor="start")
+    s.line(p.X(0), p.Y(60), p.X(10), p.Y(60), color=MUTED, width=1.5, dash="6 5")
+    p.text(9.8, 60, "same final volume", dy=-14, size=13, color=MUTED, anchor="end")
+    s.line(p.X(0), p.Y(0), p.X(1.4), p.Y(60 / 0.9 * 1.4 * 0.62), color=PURPLE, width=2, dash="4 4")
+    p.text(0.15, 75, "dashed tangent: gradient = rate", size=13, color=PURPLE, weight="bold", anchor="start")
+    return s
+
+
+@fig
+def energy_distribution():
+    s = Svg(760, 400, "Distribution of particle energies at two temperatures",
+            "The number of particles with each kinetic energy at a lower temperature T1 and a higher temperature T2. At T2 the "
+            "curve is flatter and shifted to the right, so many more particles have energy equal to or greater than the activation "
+            "energy Ea (shaded). A catalyst lowers Ea, which also increases the number of particles able to react.")
+    p = Plot(s, 80, 330, 600, 260, (0, 10), (0, 10))
+    p.axes("kinetic energy of particles", "number of particles", zero=False)
+    def mb(e, a):
+        return 9.6 * (e / a) ** 1.0 * math.exp(1 - e / a)
+    ea, eac = 6.2, 4.6
+    pts2 = [(e / 20, mb(e / 20, 2.4) * 0.72) for e in range(0, 200)]
+    p.shade([(ea, 0)] + [pt for pt in pts2 if pt[0] >= ea] + [(9.95, 0)], fill="#fecaca", opacity=0.9)
+    p.fn(lambda e: mb(e, 1.5), 0, 9.95, color=BLUE, width=3.2)
+    p.fn(lambda e: mb(e, 2.4) * 0.72, 0, 9.95, color=RED, width=3.2)
+    p.text(1.5, 9.6, "T₁ (lower)", dx=10, dy=-6, size=14, weight="bold", color=BLUE, anchor="start")
+    p.text(7.2, 3.4, "T₂ (higher)", dx=6, dy=-14, size=14, weight="bold", color=RED, anchor="start")
+    p.guide(ea, 7.5, to_y=False)
+    p.text(ea, 7.5, "Ea", dy=-10, size=15, weight="bold", color=PURPLE)
+    p.guide(eac, 7.5, to_y=False, color=GREEN)
+    p.text(eac, 7.5, "Ea with catalyst", dy=-10, size=14, weight="bold", color=GREEN)
+    p.text(8.2, 1.6, "particles able to react at T₂", dy=-24, size=13, color=RED, anchor="middle")
+    return s
+
+
+@fig
+def equilibrium_time():
+    s = Svg(760, 400, "Approaching dynamic equilibrium",
+            "For A + B ⇌ C + D started with only A and B, the concentrations of reactants fall and of products rise until, at "
+            "equilibrium, all concentrations stay constant. The forward rate falls and the backward rate rises until they are equal.")
+    p = Plot(s, 90, 330, 560, 250, (0, 10), (0, 10))
+    p.axes("time", "concentration", zero=False)
+    p.fn(lambda t: 3.6 + 5.4 * math.exp(-t / 1.6), 0, 10, color=BLUE, width=3.5)
+    p.fn(lambda t: 5.4 * (1 - math.exp(-t / 1.6)), 0, 10, color=RED, width=3.5)
+    p.text(0.3, 9, "reactants", dx=10, size=15, weight="bold", color=BLUE, anchor="start")
+    p.text(1.6, 3, "products", dx=10, dy=6, size=15, weight="bold", color=RED, anchor="start")
+    x = p.X(6.2)
+    s.line(x, p.Y(0), x, p.Y(9.8), color=MUTED, width=1.8, dash="6 5")
+    p.text(8.1, 8.8, "equilibrium:", size=15, weight="bold", color=GREEN)
+    p.text(8.1, 7.6, "concentrations constant", size=14, color=GREEN)
+    p.text(8.1, 6.6, "(not necessarily equal)", size=13, color=MUTED)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:

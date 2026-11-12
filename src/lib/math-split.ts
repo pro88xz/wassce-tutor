@@ -15,8 +15,9 @@
 
 // Steps within a line break before these: "= ...", "≈ ...".
 const RELATIONS = ['=', '\\approx']
-// A new line starts at these and keeps them: "⇒ sin φ = 0.75", "→ Ba + Kr + 3n".
-const ARROWS = ['\\Longrightarrow', '\\Rightarrow', '\\longrightarrow', '\\rightarrow', '\\to']
+// A new line starts at these and keeps them: "⇒ sin φ = 0.75", "→ Ba + Kr + 3n",
+// "⇌ 2NH₃" (chemical equilibria).
+const ARROWS = ['\\Longrightarrow', '\\Rightarrow', '\\longrightarrow', '\\rightleftharpoons', '\\rightarrow', '\\to']
 // A new line starts here and the spacing itself is dropped.
 const GAPS = ['\\qquad', '\\quad']
 

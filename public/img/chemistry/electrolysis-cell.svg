@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">An electrolytic cell</title>
+<desc id="d">A d.c. supply is connected to two electrodes dipping into an electrolyte. The anode is joined to the positive terminal and the cathode to the negative terminal. Positive ions (cations) move to the cathode and gain electrons; negative ions (anions) move to the anode and lose electrons. Electrons flow in the external wire from anode to cathode.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="780" height="440" rx="20" fill="#f8fafc"/>
+<line x1="382.0" y1="52.0" x2="382.0" y2="88.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="398.0" y1="60.0" x2="398.0" y2="80.0" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+<text x="382.0" y="40.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+</text>
+<text x="398.0" y="40.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">−</text>
+<text x="390.0" y="104.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">d.c. supply</text>
+<line x1="382.0" y1="70.0" x2="250.0" y2="70.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="250.0" y1="70.0" x2="250.0" y2="150.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="398.0" y1="70.0" x2="530.0" y2="70.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="530.0" y1="70.0" x2="530.0" y2="150.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="172.0" y="216.0" width="436.0" height="182.0" rx="0" fill="#dbeafe" stroke="none" stroke-width="0"/>
+<path d="M 164 170 L 170 176 L 170 400 L 610 400 L 610 170" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="236.0" y="150.0" width="28.0" height="200.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="2"/>
+<rect x="516.0" y="150.0" width="28.0" height="200.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="2"/>
+<text x="250.0" y="132.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">anode (+)</text>
+<text x="530.0" y="132.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">cathode (−)</text>
+<circle cx="450.0" cy="230.0" r="15.0" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+<text x="450.0" y="231.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+</text>
+<line x1="468.0" y1="230.0" x2="506.0" y2="230.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<circle cx="330.0" cy="250.0" r="15.0" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
+<text x="330.0" y="251.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">−</text>
+<line x1="312.0" y1="250.0" x2="274.0" y2="250.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<circle cx="450.0" cy="290.0" r="15.0" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+<text x="450.0" y="291.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+</text>
+<line x1="468.0" y1="290.0" x2="506.0" y2="290.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<circle cx="330.0" cy="310.0" r="15.0" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
+<text x="330.0" y="311.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">−</text>
+<line x1="312.0" y1="310.0" x2="274.0" y2="310.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="470.0" y="340.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">cations → cathode</text>
+<text x="320.0" y="375.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">anions → anode</text>
+<path d="M 300 60 C 330 40, 360 40, 372 52" stroke="#15803d" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<path d="M 410 52 C 430 40, 460 40, 480 60" stroke="#15803d" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<text x="650.0" y="60.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">electrons flow</text>
+<text x="650.0" y="78.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">anode → cathode</text>
+<text x="650.0" y="210.0" font-size="14" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="normal">cathode: reduction</text>
+<text x="650.0" y="232.0" font-size="14" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="normal">(gain of electrons)</text>
+<text x="30.0" y="210.0" font-size="14" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="normal">anode: oxidation</text>
+<text x="30.0" y="232.0" font-size="14" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="normal">(loss of electrons)</text>
+<text x="390.0" y="425.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">electrolyte (ions free to move)</text>
+</svg>
