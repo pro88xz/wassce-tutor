@@ -26,7 +26,8 @@ type PaymentRow = {
   user_name?: string
 }
 
-const PLAN_LABEL: Record<string, string> = { term: 'Term pass', year: 'Academic year', monthly: 'Monthly (old)', quarterly: 'Quarterly (old)', yearly: 'Yearly (old)' }
+// 'term' and 'year' were the Term pass and Academic year before 8 November 2026.
+const PLAN_LABEL: Record<string, string> = { term: 'Monthly (was Term pass)', year: 'Yearly (was Academic year)', monthly: 'Monthly (old)', quarterly: 'Quarterly (old)', yearly: 'Yearly (old)' }
 
 function relativeTime(iso: string): string {
   const diff = Date.now() - new Date(iso).getTime()

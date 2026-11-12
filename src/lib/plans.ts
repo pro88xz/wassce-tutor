@@ -46,7 +46,7 @@ export const ONLINE_CHECKOUT = true
 
 export const planById = (id: string | null | undefined) => PLANS.find((p) => p.id === id)
 
-/** Cheapest way in, for "from 10 NLe" copy. */
+/** Cheapest way in, for "from 25 NLe" copy. */
 export const FROM_PRICE = Math.min(...PLANS.map((p) => p.priceNle))
 
 // What the free account includes is in src/lib/free-plan.ts: it is written from

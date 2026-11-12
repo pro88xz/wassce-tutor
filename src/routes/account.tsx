@@ -237,13 +237,22 @@ type HistoryRow = {
   reference_code?: string
 }
 
-const PLAN_NAMES: Record<string, string> = {
-  term: 'Term pass',
-  year: 'Academic year',
-  // plans sold before November 2026
+// Plans sold before the current ones, kept for payment history.
+const OLD_PLAN_NAMES: Record<string, string> = {
   monthly: 'Monthly',
   quarterly: 'Quarterly',
   yearly: 'Yearly',
+}
+
+/**
+ * A plan's name. The IDs 'term' and 'year' were kept when prices changed on
+ * 8 November 2026 (migration 09): NLe 10 'term' was the 4-month Term pass and
+ * NLe 25 'year' the Academic year; now they are Monthly (NLe 25) and Yearly (NLe 75).
+ */
+function planName(plan: string, amountNle?: number | null): string {
+  if (plan === 'term') return amountNle === 10 ? 'Term pass' : 'Monthly'
+  if (plan === 'year') return amountNle === 25 ? 'Academic year' : 'Yearly'
+  return OLD_PLAN_NAMES[plan] ?? plan
 }
 
 const STATUS: Record<string, { label: string; tone: string }> = {
@@ -294,7 +303,12 @@ function SubscriptionSection({ profile, userId }: { profile: Profile; userId: st
       break
     case 'subscribed':
       status = {
-        pill: PLAN_NAMES[profile.subscription_plan ?? ''] ?? 'Active plan',
+        // A 'term' plan with more than a month left is an old 4-month Term pass.
+        pill: !profile.subscription_plan
+          ? 'Active plan'
+          : profile.subscription_plan === 'term' && access.subscriptionDaysLeft > 31
+            ? 'Term pass'
+            : planName(profile.subscription_plan),
         tone: 'bg-success/10 text-success',
         line: (
           <>
@@ -351,7 +365,7 @@ function SubscriptionSection({ profile, userId }: { profile: Profile; userId: st
             <li key={p.id} className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 px-4 py-3">
               <div className="min-w-0">
                 <p className="text-sm font-semibold">
-                  {PLAN_NAMES[p.plan] ?? p.plan} · {p.amount_nle} NLe
+                  {planName(p.plan, p.amount_nle)} · {p.amount_nle} NLe
                 </p>
                 <p className="text-xs text-muted-foreground">
                   {formatDate(p.created_at)} · {p.via === 'monime' ? 'Online' : <>WhatsApp · Ref <span className="font-mono">{p.reference_code}</span></>}

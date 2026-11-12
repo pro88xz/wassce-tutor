@@ -52,7 +52,10 @@ function fail(what: string, error: { message: string } | null): never {
   throw new Error(`Could not load ${what}: ${error?.message ?? 'unknown error'}`)
 }
 
-const byOrder = <T extends { sort_order: number }>(a: T, b: T) => a.sort_order - b.sort_order
+// Ties are broken by id, the same rule the database uses to pick each topic's
+// free first lesson (wassce_lesson_index), so the lesson listed first is the free one.
+const byOrder = <T extends { sort_order: number; id: string }>(a: T, b: T) =>
+  a.sort_order - b.sort_order || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0)
 
 // During the build every prerendered page needs the same few tables; fetch
 // them once per build process. In the browser, always fetch fresh.
