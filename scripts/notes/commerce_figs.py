@@ -514,6 +514,82 @@ def ecommerce_flow():
     return s
 
 
+def _tree3(s: Svg, root, cols, top=60, y1=165, y0=262, step=86, w=232):
+    """A root box over three category columns, each listing items as (name, example) boxes."""
+    r = box(s, s.w / 2, top, 260, 52, root, INK, F_GREY, size=19)
+    xs = [s.w / 2 - 256, s.w / 2, s.w / 2 + 256]
+    for x, (head, col, fill, items) in zip(xs, cols):
+        h = box(s, x, y1, w, 50, head, col, fill, size=18)
+        link(s, r, h, color=MUTED)
+        prev = h
+        for i, (name, ex) in enumerate(items):
+            b = box(s, x, y0 + i * step, w, 64, [name, ex], col, "#ffffff", size=16, rx=10)
+            if i == 0:
+                link(s, prev, b, color=col)
+            else:
+                s.line(x, y0 + (i - 1) * step + 32, x, y0 + i * step - 32, color=col, width=2.5)
+            prev = b
+
+
+@fig
+def transport_modes():
+    s = Svg(780, 520, "Modes of transport",
+            "Transport is by land (road, rail and pipeline), by water (inland waterways, coastal shipping and ocean shipping by "
+            "liners and tramps) and by air (scheduled passenger and cargo flights, and charter flights).")
+    _tree3(s, "Modes of transport", [
+        ("Land", GREEN, F_GREEN, [("Road", "lorries, buses, keke, okada"), ("Rail", "iron ore to the coast"),
+                                  ("Pipeline", "fuel, water, gas")]),
+        ("Water", BLUE, F_BLUE, [("Inland waterways", "rivers, creeks, ferries"), ("Coastal shipping", "port to port"),
+                                 ("Ocean shipping", "liners and tramps")]),
+        ("Air", ORANGE, F_AMBER, [("Scheduled flights", "fixed routes and times"), ("Air cargo", "urgent, light, valuable"),
+                                  ("Charter flights", "hired for one trip")]),
+    ])
+    s.text(390, 500, "Each mode suits different goods, distances and budgets", size=15, color=MUTED, italic=True)
+    return s
+
+
+@fig
+def container_journey():
+    s = Svg(780, 420, "A container's journey, door to door",
+            "The exporter packs and seals a container at the factory. A lorry or train takes it to the port, where a crane "
+            "loads it onto a ship. At Queen Elizabeth II Quay in Freetown it is unloaded and cleared by customs, and a lorry "
+            "carries it to the importer's warehouse, where the seal is opened. The goods are handled only at the two ends.")
+    row1 = [("1 Factory", "packed and sealed", GREEN, F_GREEN), ("2 Lorry or train", "to the port", TEAL, F_TEAL),
+            ("3 Port of loading", "crane onto ship", BLUE, F_BLUE)]
+    row2 = [("6 Importer", "seal opened", GREEN, F_GREEN), ("5 Lorry", "to the warehouse", TEAL, F_TEAL),
+            ("4 Freetown port", "unloaded, customs", BLUE, F_BLUE)]
+    xs = [130, 390, 650]
+    top = [box(s, x, 130, 210, 72, [n, d], c, f, size=17) for x, (n, d, c, f) in zip(xs, row1)]
+    bot = [box(s, x, 310, 210, 72, [n, d], c, f, size=17) for x, (n, d, c, f) in zip(xs, row2)]
+    link(s, top[0], top[1], color=INK)
+    link(s, top[1], top[2], color=INK)
+    link(s, top[2], bot[2], color=INK)
+    s.label(650, 220, "ship at sea", size=15, weight="bold", color=BLUE)
+    link(s, bot[2], bot[1], color=INK)
+    link(s, bot[1], bot[0], color=INK)
+    s.text(390, 392, "the same sealed box all the way: less handling, theft and damage", size=15, color=MUTED, italic=True)
+    title(s, "Containerisation: one box from door to door", y=40)
+    return s
+
+
+@fig
+def communication_services():
+    s = Svg(780, 520, "Communication services",
+            "Postal services carry letters and parcels, with registered post, post office boxes and express mail. Courier "
+            "companies give fast, tracked door-to-door delivery. Telecommunication covers mobile calls and SMS, the internet "
+            "and email, and radio and television.")
+    _tree3(s, "Communication services", [
+        ("Postal (SALPOST)", BLUE, F_BLUE, [("Letters and parcels", "ordinary and registered"), ("Post office boxes", "private mail address"),
+                                            ("Express mail", "faster, tracked")]),
+        ("Courier services", ORANGE, F_AMBER, [("Door to door", "collected and delivered"), ("Tracked", "progress online"),
+                                               ("Fast", "documents, small parcels")]),
+        ("Telecommunication", PURPLE, F_PURPLE, [("Mobile phones", "calls, SMS, money"), ("Internet", "email, web, WhatsApp"),
+                                                 ("Radio and TV", "news, advertising")]),
+    ])
+    s.text(390, 500, "Business chooses by speed, cost, distance and need for a record", size=15, color=MUTED, italic=True)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:

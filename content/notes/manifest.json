@@ -2714,58 +2714,6 @@
       "auto_sync": true
     },
     {
-      "file": "commerce-foreign-trade.md",
-      "subject": "Commerce",
-      "topic": "foreign-trade",
-      "title": "Foreign trade",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 15,
-      "sort_order": 9,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-documents-and-terms-in-foreign-trade.md",
-      "subject": "Commerce",
-      "topic": "documents-and-terms-in-foreign-trade",
-      "title": "Documents and terms in foreign trade",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 15,
-      "sort_order": 10,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-transportation.md",
-      "subject": "Commerce",
-      "topic": "transportation",
-      "title": "Transportation in commerce",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 14,
-      "sort_order": 11,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-communication.md",
-      "subject": "Commerce",
-      "topic": "communication",
-      "title": "Communication in commerce",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 13,
-      "sort_order": 12,
-      "auto_sync": true
-    },
-    {
       "file": "commerce-warehousing.md",
       "subject": "Commerce",
       "topic": "warehousing",
@@ -2854,58 +2802,6 @@
       "original_author": "WASSCE Tutor editorial team",
       "est_minutes": 15,
       "sort_order": 19,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-foreign-trade-2.md",
-      "subject": "Commerce",
-      "topic": "foreign-trade",
-      "title": "Balance of trade, exchange rates and trade restrictions",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 15,
-      "sort_order": 2,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-documents-and-terms-in-foreign-trade-2.md",
-      "subject": "Commerce",
-      "topic": "documents-and-terms-in-foreign-trade",
-      "title": "International trade documentation: payment, risk and delivery terms",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 15,
-      "sort_order": 2,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-transportation-2.md",
-      "subject": "Commerce",
-      "topic": "transportation",
-      "title": "Transport selection, freight costs and logistics performance",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 14,
-      "sort_order": 2,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-communication-2.md",
-      "subject": "Commerce",
-      "topic": "communication",
-      "title": "Business communication: channels, records and effective messages",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 14,
-      "sort_order": 2,
       "auto_sync": true
     },
     {
@@ -3237,6 +3133,125 @@
       "auto_sync": true,
       "title": "Agents, middlemen and the case for eliminating the wholesaler",
       "est_minutes": 6,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-foreign-trade-1.md",
+      "subject": "Commerce",
+      "topic": "foreign-trade",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Foreign trade: imports, exports and entrepôt trade",
+      "est_minutes": 6,
+      "sort_order": 1,
+      "retire": [
+        "balance-of-trade-exchange-rates-and-trade-restrictions",
+        "foreign-trade"
+      ]
+    },
+    {
+      "file": "commerce-foreign-trade-2.md",
+      "subject": "Commerce",
+      "topic": "foreign-trade",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Balance of trade, balance of payments and trade restrictions",
+      "est_minutes": 7,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-documents-1.md",
+      "subject": "Commerce",
+      "topic": "documents-and-terms-in-foreign-trade",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Documents and terms in home trade",
+      "est_minutes": 7,
+      "sort_order": 1,
+      "retire": [
+        "international-trade-documentation-payment-risk-and-delivery-terms"
+      ]
+    },
+    {
+      "file": "commerce-documents-2.md",
+      "subject": "Commerce",
+      "topic": "documents-and-terms-in-foreign-trade",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Documents and terms in foreign trade",
+      "est_minutes": 9,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-transport-1.md",
+      "subject": "Commerce",
+      "topic": "transportation",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Transport: importance and modes",
+      "est_minutes": 9,
+      "sort_order": 1,
+      "retire": [
+        "transport-selection-freight-costs-and-logistics-performance",
+        "transportation-in-commerce"
+      ]
+    },
+    {
+      "file": "commerce-transport-2.md",
+      "subject": "Commerce",
+      "topic": "transportation",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Choosing transport, containerisation and transport documents",
+      "est_minutes": 9,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-communication-1.md",
+      "subject": "Commerce",
+      "topic": "communication",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Communication in business",
+      "est_minutes": 7,
+      "sort_order": 1,
+      "retire": [
+        "business-communication-channels-records-and-effective-messages",
+        "communication-in-commerce"
+      ]
+    },
+    {
+      "file": "commerce-communication-2.md",
+      "subject": "Commerce",
+      "topic": "communication",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Postal, telecommunication and digital services",
+      "est_minutes": 7,
       "sort_order": 2
     },
     {

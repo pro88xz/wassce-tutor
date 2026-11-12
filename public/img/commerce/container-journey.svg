@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A container&#x27;s journey, door to door</title>
+<desc id="d">The exporter packs and seals a container at the factory. A lorry or train takes it to the port, where a crane loads it onto a ship. At Queen Elizabeth II Quay in Freetown it is unloaded and cleared by customs, and a lorry carries it to the importer&#x27;s warehouse, where the seal is opened. The goods are handled only at the two ends.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="780" height="420" rx="20" fill="#f8fafc"/>
+<rect x="25.0" y="94.0" width="210.0" height="72.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="130.0" y="118.5" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1 Factory</text>
+<text x="130.0" y="141.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">packed and sealed</text>
+<rect x="285.0" y="94.0" width="210.0" height="72.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="390.0" y="118.5" font-size="17" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2 Lorry or train</text>
+<text x="390.0" y="141.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">to the port</text>
+<rect x="545.0" y="94.0" width="210.0" height="72.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="650.0" y="118.5" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3 Port of loading</text>
+<text x="650.0" y="141.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">crane onto ship</text>
+<rect x="25.0" y="274.0" width="210.0" height="72.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="130.0" y="298.5" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6 Importer</text>
+<text x="130.0" y="321.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">seal opened</text>
+<rect x="285.0" y="274.0" width="210.0" height="72.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="390.0" y="298.5" font-size="17" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5 Lorry</text>
+<text x="390.0" y="321.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">to the warehouse</text>
+<rect x="545.0" y="274.0" width="210.0" height="72.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="650.0" y="298.5" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4 Freetown port</text>
+<text x="650.0" y="321.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">unloaded, customs</text>
+<line x1="241.0" y1="130.0" x2="279.0" y2="130.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="501.0" y1="130.0" x2="539.0" y2="130.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="650.0" y1="172.0" x2="650.0" y2="268.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="598.8" y="207.5" width="102.4" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="650.0" y="220.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">ship at sea</text>
+<line x1="539.0" y1="310.0" x2="501.0" y2="310.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="279.0" y1="310.0" x2="241.0" y2="310.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="390.0" y="392.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">the same sealed box all the way: less handling, theft and damage</text>
+<text x="390.0" y="40.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Containerisation: one box from door to door</text>
+</svg>
