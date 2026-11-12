@@ -78,17 +78,66 @@ const relationAt = (s: string, i: number) => {
   return null
 }
 
+/**
+ * Split a long step at its top-level + and − signs (never inside {...} or
+ * (...)), so "= market price − indirect taxes + subsidies" can wrap.
+ * Returns the pieces, each still starting with its sign except the first.
+ */
+function breakSums(step: string): string[] {
+  const pieces: string[] = []
+  let depth = 0
+  let start = 0
+  for (let i = 0; i < step.length; i++) {
+    const c = step[i]
+    if (c === '\\') {
+      i += 1
+      continue
+    }
+    if (c === '{' || c === '(' || c === '[') depth += 1
+    else if (c === '}' || c === ')' || c === ']') depth = Math.max(0, depth - 1)
+    else if ((c === '+' || c === '-') && depth === 0) {
+      const before = step.slice(start, i).trim()
+      // a sign right after the relation ("= -4") is unary, not a break point
+      if (before && !/[=+\-]$/.test(before)) {
+        pieces.push(step.slice(start, i).trim())
+        start = i
+      }
+    }
+  }
+  pieces.push(step.slice(start).trim())
+  return pieces.filter(Boolean)
+}
+
+const LONG_STEP = 24
+
 function stackRow(row: string): string | null {
   const { parts, seps } = splitTop(row, relationAt)
   if (seps.length === 0) return null
   const lhs = parts[0].trim()
   const steps = seps.map((r, k) => `${r} ${parts[k + 1].trim()}`)
+  // A long step (a sum of words or terms) continues on further lines: "&\quad + subsidies".
+  const expand = (step: string, first: string): string[] => {
+    if (visibleLength(step) <= LONG_STEP) return [`${first}${step}`]
+    const pieces = breakSums(step)
+    if (pieces.length < 2) return [`${first}${step}`]
+    const lines: string[] = []
+    let cur = pieces[0]
+    for (const piece of pieces.slice(1)) {
+      if (visibleLength(cur + piece) <= LONG_STEP) cur = `${cur} ${piece}`
+      else {
+        lines.push(cur)
+        cur = piece
+      }
+    }
+    lines.push(cur)
+    return [`${first}${lines[0]}`, ...lines.slice(1).map((l) => `&\\quad ${l}`)]
+  }
   // A short left side (v, L, \rho) stays on the first line: "v = ...".
-  const lines =
+  const out =
     lhs && visibleLength(lhs) <= 4
-      ? [`${lhs} &${steps[0]}`, ...steps.slice(1).map((s) => `&${s}`)]
-      : [...(lhs ? [`&${lhs}`] : []), ...steps.map((s) => `&${s}`)]
-  return `\\begin{aligned}${lines.join(' \\\\ ')}\\end{aligned}`
+      ? [...expand(steps[0], `${lhs} &`), ...steps.slice(1).flatMap((st) => expand(st, '&'))]
+      : [...(lhs ? [`&${lhs}`] : []), ...steps.flatMap((st) => expand(st, '&'))]
+  return `\\begin{aligned}${out.join(' \\\\ ')}\\end{aligned}`
 }
 
 /** Break a formula into lines at \\quad / \\qquad gaps and before arrows. */

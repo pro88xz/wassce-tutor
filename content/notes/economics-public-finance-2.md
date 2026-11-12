@@ -65,9 +65,9 @@ Sierra Leone's **Goods and Services Tax (GST)** is charged at **15%** on most go
 
 | Person | Income (NLe) | Tax A (NLe) | Tax B (NLe) | Tax C (NLe) |
 |---|---|---|---|---|
-| Kadi | 2,000 | 100 (5%) | 200 (10%) | 100 (5%) |
-| Sorie | 5,000 | 500 (10%) | 500 (10%) | 150 (3%) |
-| Mariama | 10,000 | 2,000 (20%) | 1,000 (10%) | 200 (2%) |
+| Kadi, a seamstress | 2,000 | 100 (5%) | 200 (10%) | 100 (5%) |
+| Sorie, a mechanic | 5,000 | 500 (10%) | 500 (10%) | 150 (3%) |
+| Mariama, a bank manager | 10,000 | 2,000 (20%) | 1,000 (10%) | 200 (2%) |
 
 - **Tax A is progressive**: the rate rises from 5% to 20%.
 - **Tax B is proportional**: the rate is 10% for everyone.

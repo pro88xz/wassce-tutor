@@ -39,9 +39,9 @@ $$\text{price index} = \dfrac{\sum (\text{price relative} \times \text{weight})}
 
 | Item | Weight | Price 2024 (NLe) | Price 2025 (NLe) | Price relative | Relative × weight |
 |---|---|---|---|---|---|
-| Rice (cup) | 5 | 10 | 12 | 120 | 600 |
-| Fuel (litre) | 3 | 25 | 30 | 120 | 360 |
-| Transport (fare) | 2 | 5 | 7 | 140 | 280 |
+| Rice (one cup) | 5 | 10 | 12 | 120 | 600 |
+| Fuel (one litre) | 3 | 25 | 30 | 120 | 360 |
+| Transport (one bus fare) | 2 | 5 | 7 | 140 | 280 |
 | **Total** | **10** | | | | **1,240** |
 
 $$\text{price index} = \dfrac{1240}{10} = 124$$
@@ -49,7 +49,9 @@ $$\text{price index} = \dfrac{1240}{10} = 124$$
 Prices rose by **24%** between 2024 and 2025.
 :::
 
-$$\text{rate of inflation} = \dfrac{\text{index this year} - \text{index last year}}{\text{index last year}} \times 100$$
+$$\text{rate of inflation} = \dfrac{I_1 - I_0}{I_0} \times 100$$
+
+where $I_1$ is this year's price index and $I_0$ is last year's.
 
 If the index rises from 124 to 136.4, inflation $= \dfrac{12.4}{124} \times 100 = 10\%$.
 

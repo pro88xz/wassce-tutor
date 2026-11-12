@@ -19,7 +19,9 @@ By the end of this lesson you should be able to:
 - **National income (NI)**: NNP measured at **factor cost**.
 :::
 
-$$\text{GNP} = \text{GDP} + \text{net income from abroad}$$
+$$\text{GNP} = \text{GDP} + \text{NFIA}$$
+
+where **NFIA** is **net factor income from abroad**: income earned abroad by citizens minus income earned at home by foreigners.
 
 $$\text{NNP} = \text{GNP} - \text{depreciation}$$
 
