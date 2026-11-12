@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Making ethanol by fermentation</title>
+<desc id="d">A conical flask of glucose solution and yeast stands in a warm water bath at about 30 °C. A delivery tube leads from the flask into a test tube of lime water, which turns milky as carbon(IV) oxide bubbles through. Air is kept out. The yeast enzyme zymase converts glucose into ethanol and carbon(IV) oxide.</desc>
+<defs></defs>
+<rect width="800" height="450" rx="20" fill="#f8fafc"/>
+<rect x="92.0" y="292.0" width="226.0" height="76.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0"/>
+<path d="M 84 240 L 90 246 L 90 370 L 320 370 L 320 240" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="157.8,294.0 252.2,294.0 278.0,360.0 132.0,360.0" fill="#fde68a" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+<path d="M 185.5 162 L 185.5 226.0 L 130.0 362 L 280.0 362 L 224.5 226.0 L 224.5 162" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="189.1" cy="307.8" r="3.0" fill="#a16207" stroke="none" stroke-width="0"/>
+<circle cx="218.6" cy="303.8" r="3.0" fill="#a16207" stroke="none" stroke-width="0"/>
+<circle cx="208.2" cy="319.0" r="3.0" fill="#a16207" stroke="none" stroke-width="0"/>
+<circle cx="165.2" cy="326.4" r="3.0" fill="#a16207" stroke="none" stroke-width="0"/>
+<circle cx="163.4" cy="322.5" r="3.0" fill="#a16207" stroke="none" stroke-width="0"/>
+<circle cx="166.3" cy="304.7" r="3.0" fill="#a16207" stroke="none" stroke-width="0"/>
+<circle cx="198.2" cy="343.0" r="3.0" fill="#a16207" stroke="none" stroke-width="0"/>
+<circle cx="171.1" cy="311.6" r="3.0" fill="#a16207" stroke="none" stroke-width="0"/>
+<circle cx="216.5" cy="349.3" r="3.0" fill="#a16207" stroke="none" stroke-width="0"/>
+<circle cx="211.9" cy="320.6" r="3.0" fill="#a16207" stroke="none" stroke-width="0"/>
+<circle cx="247.9" cy="302.4" r="3.0" fill="#a16207" stroke="none" stroke-width="0"/>
+<circle cx="237.3" cy="315.1" r="3.0" fill="#a16207" stroke="none" stroke-width="0"/>
+<circle cx="173.0" cy="306.1" r="3.0" fill="#a16207" stroke="none" stroke-width="0"/>
+<circle cx="187.8" cy="342.4" r="3.0" fill="#a16207" stroke="none" stroke-width="0"/>
+<rect x="185.0" y="156.0" width="40.0" height="14.0" rx="3" fill="#a16207" stroke="#0f172a" stroke-width="1.5"/>
+<path d="M 500 268.0 L 500 348.0 A 20.0 20.0 0 0 0 540 348.0 L 540 268.0 Z" stroke="none" stroke-width="0" fill="#f1f5f9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 498 200 L 498 348.0 A 22.0 22.0 0 0 0 542 348.0 L 542 200" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="518.0" cy="340.0" r="4.0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<circle cx="524.0" cy="318.0" r="4.0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<circle cx="518.0" cy="296.0" r="4.0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<circle cx="524.0" cy="274.0" r="4.0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<circle cx="518.0" cy="252.0" r="4.0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<path d="M 205.0 156.0 L 205.0 110.0 L 516.0 110.0 L 516.0 350.0" stroke="#0f172a" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 205.0 156.0 L 205.0 110.0 L 516.0 110.0 L 516.0 350.0" stroke="#e0f2fe" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="205.0" y="392.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">warm water bath, about 30 °C</text>
+<text x="60.0" y="250.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">glucose</text>
+<text x="60.0" y="268.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">solution</text>
+<text x="60.0" y="286.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">+ yeast</text>
+<line x1="110.0" y1="296.0" x2="168.0" y2="322.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<text x="560.0" y="250.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">lime water</text>
+<text x="560.0" y="268.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">turns milky:</text>
+<text x="560.0" y="286.0" font-size="14" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">CO<tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5"> given off</tspan></text>
+<text x="370.0" y="98.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">air kept out</text>
+<text x="400.0" y="424.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C<tspan dy="5.1" font-size="11.2">6</tspan><tspan dy="-5.1">H</tspan><tspan dy="5.1" font-size="11.2">12</tspan><tspan dy="-5.1">O</tspan><tspan dy="5.1" font-size="11.2">6</tspan><tspan dy="-5.1"> → 2C</tspan><tspan dy="5.1" font-size="11.2">2</tspan><tspan dy="-5.1">H</tspan><tspan dy="5.1" font-size="11.2">5</tspan><tspan dy="-5.1">OH + 2CO</tspan><tspan dy="5.1" font-size="11.2">2</tspan><tspan dy="-5.1">   (zymase in yeast)</tspan></text>
+<text x="400.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Yeast turns sugar into ethanol and carbon(IV) oxide</text>
+</svg>

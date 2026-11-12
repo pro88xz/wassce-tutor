@@ -2308,6 +2308,291 @@ def ethene_additions():
     return s
 
 
+@fig
+def fractionating_column():
+    s = Svg(800, 590, "Fractional distillation of crude oil",
+            "Crude oil is heated in a furnace to about 400 °C and the vapour enters near the bottom of a tall column. The column is "
+            "hot at the bottom and cool at the top. Vapours rise and condense at the level where the temperature falls below their "
+            "boiling point. From top to bottom: refinery gas, petrol, naphtha, kerosene, diesel, lubricating oil and wax, fuel oil, "
+            "and bitumen as the residue.")
+    fr = [("Refinery gas", "C_1–C_4 · below 40 °C · LPG cooking gas, fuel gas"),
+          ("Petrol (gasoline)", "C_5–C_{10} · 40–175 °C · fuel for cars and motorbikes"),
+          ("Naphtha", "C_7–C_{14} · 90–200 °C · raw material for chemicals"),
+          ("Kerosene (paraffin)", "C_{10}–C_{16} · 175–250 °C · jet fuel, lamps, stoves"),
+          ("Diesel (gas oil)", "C_{14}–C_{20} · 250–350 °C · lorries, generators"),
+          ("Lubricating oil and wax", "C_{20}–C_{35} · 350–400 °C · lubricants, candles"),
+          ("Fuel oil", "C_{30}–C_{40} · above 400 °C · ships, power stations"),
+          ("Bitumen (residue)", "above C_{40} · roads and roofing")]
+    x0, x1, ytop, ybot = 250, 350, 70, 550
+    s.raw('<defs><linearGradient id="colgrad" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fecaca"/>'
+          '<stop offset="1" stop-color="#dbeafe"/></linearGradient></defs>')
+    s.path(f"M {x0} {ybot} L {x0} {ytop + 20} Q {(x0 + x1) / 2} {ytop - 14} {x1} {ytop + 20} L {x1} {ybot} Z",
+           color=INK, width=3, fill="url(#colgrad)")
+    ys = [96 + i * 60 for i in range(8)]
+    for i, (name, info) in enumerate(fr):
+        y = ys[i]
+        if i < 7:
+            ty = y + 26
+            s.line(x0 + 4, ty, x1 - 4, ty, color=MUTED, width=2)
+            for bx in (x0 + 26, x0 + 50, x0 + 74):
+                s.path(f"M {bx - 9} {ty} A 9 7 0 0 1 {bx + 9} {ty}", color=MUTED, width=1.6)
+        s.line(x1, y, x1 + 26, y, color=INK, width=6)
+        s.line(x1, y, x1 + 26, y, color=GLASS, width=2.5)
+        s.head(x1 + 34, y, 0, color=INK, size=11)
+        s.text(x1 + 44, y - 9, name, size=15, weight="bold", color=BLUE, anchor="start")
+        chem(s, x1 + 44, y + 11, info, size=13, color=MUTED, anchor="start")
+    # furnace and inlet
+    yin = 486
+    s.rect(50, 440, 120, 90, fill=F_AMBER, stroke=INK, width=2.5, rx=8)
+    s.text(110, 466, "furnace", size=15, weight="bold")
+    s.text(110, 486, "about 400 °C", size=13, color=MUTED)
+    for fx in (80, 110, 140):
+        s.path(f"M {fx} 524 C {fx + 9} 512, {fx + 6} 504, {fx} 498 C {fx - 6} 504, {fx - 9} 512, {fx} 524 Z",
+               color=FLAME, width=1.5, fill="#fed7aa")
+    s.arrow(14, 560, 60, 528, color=INK, width=2.5)
+    s.text(14, 578, "crude oil in", size=13, color=MUTED, anchor="start")
+    s.line(170, yin, x0, yin, color=INK, width=7)
+    s.line(170, yin, x0, yin, color="#fde68a", width=3)
+    s.text(210, yin - 14, "vapour", size=13, color=ORANGE, weight="bold")
+    # temperature and rising arrows
+    s.arrow(215, 420, 215, 110, color=RED, width=2.5)
+    s.text(232, 92, "cool, about 25 °C", size=13, color=BLUE, anchor="end")
+    s.text(232, 410, "hot", size=13, color=RED, anchor="end", weight="bold")
+    s.text(205, 300, "vapours", size=13, color=MUTED, anchor="end")
+    s.text(205, 316, "rise", size=13, color=MUTED, anchor="end")
+    s.text(205, 332, "and cool", size=13, color=MUTED, anchor="end")
+    title(s, "Each fraction condenses at its own level (approximate ranges)", y=26, size=16)
+    return s
+
+
+@fig
+def cracking_lab():
+    s = Svg(800, 470, "Cracking liquid paraffin in the laboratory",
+            "Mineral wool soaked in liquid paraffin sits at the closed end of a horizontal boiling tube, with broken porcelain in "
+            "the middle. The porcelain is heated strongly and the paraffin gently, so its vapour passes over the hot porcelain "
+            "and cracks. The gaseous alkenes, mainly ethene, are collected over water. The delivery tube must be removed from "
+            "the water before heating stops.")
+    x0, x1, y = 60, 340, 266
+    s.path(f"M {x1} {y - 22} L {x0 + 22} {y - 22} A 22 22 0 0 0 {x0 + 22} {y + 22} L {x1} {y + 22}", color=INK, width=2.5,
+           fill="#ffffff")
+    s.rect(x0 + 4, y - 18, 72, 36, fill="#fde68a", stroke="none", width=0, rx=12)
+    for k in range(6):
+        s.path(f"M {x0 + 10 + k * 11} {y - 14} q 6 14 0 28", color="#a16207", width=1.2)
+    import random
+    rnd = random.Random(4)
+    for _ in range(16):
+        cx, cy = rnd.uniform(178, 262), rnd.uniform(y - 14, y + 14)
+        r = rnd.uniform(5, 8)
+        s.polygon([(cx - r, cy), (cx - r * 0.3, cy - r), (cx + r, cy - r * 0.4), (cx + r * 0.6, cy + r), (cx - r * 0.5, cy + r * 0.8)],
+                  fill="#f8fafc", stroke=MUTED, width=1.2)
+    s.rect(x1, y - 18, 18, 36, fill="#a16207", stroke=INK, width=1.5, rx=3)
+    burner(s, 220, 400)
+    s.text(220, 196, "broken porcelain (catalyst),", size=14, color=INK)
+    s.text(220, 214, "heated strongly", size=14, color=INK)
+    s.line(220, 224, 220, 242, color=MUTED, width=1.5)
+    s.text(98, 318, "mineral wool soaked", size=14, color=INK)
+    s.text(98, 336, "in liquid paraffin", size=14, color=INK)
+    s.line(98, 306, 98, 290, color=MUTED, width=1.5)
+    s.text(98, 354, "(warmed gently)", size=13, color=MUTED)
+    cx = 620
+    target = _collect(s, cx, 400, "water", "C_2H_4")
+    tube(s, [(x1 + 18, y), (x1 + 38, y), (target[0][0], y), target[0], target[1], target[2]])
+    s.text(cx + 40, 236, "gaseous alkenes,", size=13, color=MUTED, anchor="start")
+    s.text(cx + 40, 252, "mainly ethene", size=13, color=MUTED, anchor="start")
+    s.text(400, 452, "Remove the delivery tube from the water before you stop heating, to prevent suck-back.", size=13, color=RED)
+    chem(s, 400, 62, "C_{10}H_{22} → C_8H_{18} + C_2H_4", size=17, weight="bold", color=BLUE)
+    title(s, "Paraffin vapour cracks over hot porcelain", y=28)
+    return s
+
+
+@fig
+def alkanol_classes():
+    s = Svg(800, 430, "Primary, secondary and tertiary alkanols",
+            "Propan-1-ol is a primary alkanol: the carbon carrying the OH group is joined to one other carbon. Propan-2-ol is "
+            "secondary: that carbon is joined to two other carbons. 2-Methylpropan-2-ol is tertiary: it is joined to three. "
+            "Primary alkanols are oxidised to alkanals and then alkanoic acids, secondary ones to alkanones, and tertiary ones "
+            "are not easily oxidised.")
+    y0 = 200
+    cols = [(140, "Primary (1°)", "propan-1-ol", "joined to 1 other carbon", "→ alkanal → alkanoic acid", "orange → green", 2),
+            (400, "Secondary (2°)", "propan-2-ol", "joined to 2 other carbons", "→ alkanone (ketone)", "orange → green", 1),
+            (660, "Tertiary (3°)", "2-methylpropan-2-ol", "joined to 3 other carbons", "not easily oxidised", "stays orange", 1)]
+    for i, (cx, head, name, joined, ox, dich, cpos) in enumerate(cols):
+        s.rect(cx - 125, 52, 250, 360, fill="#ffffff", stroke=MUTED, width=1.5, rx=10)
+        s.text(cx, 76, head, size=16, weight="bold", color=BLUE)
+        x0 = cx - 62
+        if i == 0:
+            x0 = cx - 72
+            disp(s, x0, y0, [CH(left="H"), CH(), CH(right="OH")], hl={"OH"})
+        elif i == 1:
+            disp(s, x0, y0, [CH(left="H"), CH(up="H", down="OH"), CH(right="H")], hl={"OH"})
+        else:
+            disp(s, x0, y0, [CH(left="H"), CH(up=None, down="OH"), CH(right="H")], hl={"OH"})
+            disp(s, x0 + 62, y0 - 62, [CH(up="H", left="H", right="H", down=None)])
+            s.line(x0 + 62, y0 - 48, x0 + 62, y0 - 14, width=2.4)
+        s.circle(x0 + cpos * 62, y0, 17, stroke=ORANGE, width=2.5)
+        s.text(cx, 290, name, size=15, weight="bold")
+        s.text(cx, 314, "C–OH carbon " + joined, size=13, color=ORANGE)
+        s.text(cx, 346, "oxidation:", size=13, color=MUTED)
+        s.text(cx, 364, ox, size=14, weight="bold", color=PURPLE)
+        chem(s, cx, 392, "K_2Cr_2O_7/H^+: " + dich, size=13, color=MUTED)
+    title(s, "Count the carbons joined to the carbon that carries –OH (circled)", y=26, size=16)
+    return s
+
+
+@fig
+def fermentation_setup():
+    s = Svg(800, 450, "Making ethanol by fermentation",
+            "A conical flask of glucose solution and yeast stands in a warm water bath at about 30 °C. A delivery tube leads from "
+            "the flask into a test tube of lime water, which turns milky as carbon(IV) oxide bubbles through. Air is kept out. "
+            "The yeast enzyme zymase converts glucose into ethanol and carbon(IV) oxide.")
+    beaker(s, 90, 370, 230, 130, frac=0.6, liquid="#bfdbfe")
+    top = conical(s, 205, 362, 150, 200, 0.5, liquid="#fde68a")
+    import random
+    rnd = random.Random(7)
+    for _ in range(14):
+        s.circle(rnd.uniform(160, 250), rnd.uniform(300, 352), 3, fill="#a16207", stroke="none", width=0)
+    s.rect(top[0] - 20, top[1] - 6, 40, 14, fill="#a16207", stroke=INK, width=1.5, rx=3)
+    tx = 520
+    test_tube(s, tx - 22, 200, 44, 170, frac=0.6, liquid="#f1f5f9")
+    for k in range(5):
+        s.circle(tx - 2 + (k % 2) * 6, 340 - k * 22, 4, fill="#ffffff", stroke=MUTED, width=1.2)
+    tube(s, [(top[0], top[1] - 6), (top[0], 110), (tx - 4, 110), (tx - 4, 350)])
+    s.text(205, 392, "warm water bath, about 30 °C", size=14, color=BLUE)
+    s.text(60, 250, "glucose", size=14, color=INK, anchor="start")
+    s.text(60, 268, "solution", size=14, color=INK, anchor="start")
+    s.text(60, 286, "+ yeast", size=14, color=INK, anchor="start")
+    s.line(110, 296, 168, 322, color=MUTED, width=1.5)
+    s.text(560, 250, "lime water", size=14, color=INK, anchor="start")
+    s.text(560, 268, "turns milky:", size=14, color=INK, anchor="start")
+    chem(s, 560, 286, "CO_2 given off", size=14, color=RED, anchor="start", weight="bold")
+    s.text(370, 98, "air kept out", size=13, color=MUTED)
+    chem(s, 400, 424, "C_6H_{12}O_6 → 2C_2H_5OH + 2CO_2   (zymase in yeast)", size=16, weight="bold", color=PURPLE)
+    title(s, "Yeast turns sugar into ethanol and carbon(IV) oxide", y=30)
+    return s
+
+
+def _hub(s: Svg, cx, cy, spokes, rw=200, rh=130):
+    """Reaction map: products in four corner boxes, arrows from the central reactant box."""
+    for bx, by, cond, name, formula, col, fill in spokes:
+        w, h = 240, 92
+        s.rect(bx - w / 2, by - h / 2, w, h, fill=fill, stroke=col, width=2.5, rx=12)
+        chem(s, bx, by - 26, cond, size=13, color=col, weight="bold")
+        s.text(bx, by, name, size=15, weight="bold")
+        chem(s, bx, by + 24, formula, size=14)
+        sx = cx + math.copysign(rw / 2 - 30, bx - cx)
+        sy = cy + math.copysign(rh / 2 + 6, by - cy)
+        ex = bx - math.copysign(w / 2 - 50, bx - cx)
+        ey = by - math.copysign(h / 2 + 8, by - cy)
+        s.arrow(sx, sy, ex, ey, color=col, width=3)
+
+
+@fig
+def ethanol_reactions():
+    s = Svg(800, 520, "Reactions of ethanol",
+            "Ethanol in the centre. With sodium it gives sodium ethoxide and hydrogen. Acidified potassium dichromate(VI) oxidises "
+            "it to ethanoic acid, turning from orange to green. Excess concentrated sulphuric acid at 170 °C dehydrates it to "
+            "ethene. With ethanoic acid and a little concentrated sulphuric acid it forms the ester ethyl ethanoate.")
+    s.rect(300, 192, 200, 156, fill="#ffffff", stroke=RED, width=2, rx=12, dash="6 5")
+    disp(s, 369, 256, [CH(left="H"), CH(right="OH")], hl={"OH"})
+    s.text(400, 330, "ethanol", size=15, weight="bold", color=RED)
+    _hub(s, 400, 270, [
+        (140, 92, "+ sodium", "Sodium ethoxide", "C_2H_5ONa + H_2 (fizzing)", BLUE, F_BLUE),
+        (660, 92, "K_2Cr_2O_7/H^+, heat", "Ethanoic acid", "CH_3COOH (orange → green)", GREEN, F_GREEN),
+        (140, 440, "excess conc. H_2SO_4, 170 °C", "Ethene", "C_2H_4 + H_2O", ORANGE, F_AMBER),
+        (660, 440, "+ CH_3COOH, conc. H_2SO_4", "Ethyl ethanoate (ester)", "CH_3COOC_2H_5 + H_2O", PURPLE, F_PURPLE)], rh=156)
+    title(s, "Most reactions involve the –OH group", y=26)
+    return s
+
+
+@fig
+def alkanoic_acids():
+    s = Svg(800, 400, "The first three alkanoic acids",
+            "Displayed formulas of methanoic acid HCOOH, ethanoic acid CH3COOH and propanoic acid CH3CH2COOH. Each contains the "
+            "carboxyl group –COOH, made of a C=O group and an –OH group on the same carbon.")
+    y0 = 190
+    cells = [(140, "methanoic acid", "HCOOH", [{"atom": "C", "left": "H", "up": "=O", "right": "OH"}]),
+             (400, "ethanoic acid", "CH₃COOH", [CH(left="H"), {"atom": "C", "up": "=O", "right": "OH"}]),
+             (660, "propanoic acid", "CH₃CH₂COOH", [CH(left="H"), CH(), {"atom": "C", "up": "=O", "right": "OH"}])]
+    for cx, name, f, row in cells:
+        n = len(row)
+        x0 = cx - (n - 1) * 31 - 4
+        pos = disp(s, x0, y0, row, hl={"O", "OH"})
+        px = pos[-1][0]
+        s.rect(px - 20, y0 - 62, 84, 86, fill="none", stroke=PURPLE, width=2, rx=10, dash="5 4")
+        s.text(cx, 290, name, size=16, weight="bold")
+        s.text(cx, 312, f, size=14, color=MUTED)
+    s.text(400, 356, "–COOH = C=O and –OH on the same carbon (the carboxyl group, dashed)", size=15, color=PURPLE, weight="bold")
+    title(s, "General formula CₙH₂ₙ₊₁COOH (n = 0, 1, 2 …)", y=30)
+    return s
+
+
+@fig
+def ethanoic_acid_reactions():
+    s = Svg(800, 520, "Reactions of ethanoic acid",
+            "Ethanoic acid in the centre. With sodium carbonate it fizzes, giving sodium ethanoate, water and carbon(IV) oxide. "
+            "With magnesium it gives magnesium ethanoate and hydrogen. With sodium hydroxide it is neutralised to sodium ethanoate "
+            "and water. With ethanol and a little concentrated sulphuric acid it forms ethyl ethanoate.")
+    s.rect(300, 190, 200, 160, fill="#ffffff", stroke=RED, width=2, rx=12, dash="6 5")
+    disp(s, 369, 262, [CH(left="H"), {"atom": "C", "up": "=O", "right": "OH"}], hl={"O", "OH"})
+    s.text(400, 334, "ethanoic acid", size=15, weight="bold", color=RED)
+    _hub(s, 400, 270, [
+        (140, 92, "+ Na_2CO_3 (or NaHCO_3)", "Effervescence", "CH_3COONa + H_2O + CO_2", BLUE, F_BLUE),
+        (660, 92, "+ magnesium", "Magnesium ethanoate", "(CH_3COO)_2Mg + H_2", GREEN, F_GREEN),
+        (140, 440, "+ NaOH (neutralisation)", "Sodium ethanoate", "CH_3COONa + H_2O", ORANGE, F_AMBER),
+        (660, 440, "+ C_2H_5OH, conc. H_2SO_4", "Ethyl ethanoate (ester)", "CH_3COOC_2H_5 + H_2O", PURPLE, F_PURPLE)], rh=160)
+    title(s, "A weak acid with all the typical acid reactions, plus esterification", y=26, size=16)
+    return s
+
+
+@fig
+def esterification():
+    s = Svg(800, 420, "Esterification: ethanoic acid and ethanol",
+            "Ethanoic acid reacts with ethanol, with a little concentrated sulphuric acid as catalyst, to form ethyl ethanoate and "
+            "water. The OH from the acid and the H from the alcohol's OH group leave as water. The reaction is reversible.")
+    y1 = 130
+    disp(s, 70, y1, [CH(left="H"), {"atom": "C", "up": "=O"}], hl={"O"})
+    chem(s, 202, y1, "OH", size=17, weight="bold", color=RED)
+    _bond(s, 132, y1, 190, y1)
+    s.text(270, y1, "+", size=26, weight="bold")
+    chem(s, 336, y1, "H", size=17, weight="bold", color=RED)
+    disp(s, 380, y1, [{"atom": "O", "up": None, "down": None}, CH(), CH(right="H")], hl={"O"})
+    _bond(s, 344, y1, 380, y1)
+    s.rect(180, y1 - 20, 168, 40, fill="none", stroke=RED, width=2, rx=10, dash="5 4")
+    s.text(264, y1 + 40, "→ H₂O", size=15, weight="bold", color=RED)
+    s.text(110, 210, "ethanoic acid", size=14, color=MUTED)
+    s.text(470, 210, "ethanol", size=14, color=MUTED)
+    s.text(400, 246, "⇌   (conc. H₂SO₄ catalyst, warm)", size=16, weight="bold", color=BLUE)
+    y2 = 320
+    disp(s, 110, y2, [CH(left="H"), {"atom": "C", "up": "=O"}, {"atom": "O", "up": None, "down": None}, CH(), CH(right="H")],
+         hl={"O"})
+    s.text(234, y2 + 66, "ethyl ethanoate (an ester)", size=14, color=MUTED)
+    s.text(530, y2, "+", size=26, weight="bold")
+    chem(s, 610, y2, "H_2O", size=20, weight="bold", color=RED)
+    s.text(610, y2 + 66, "water", size=14, color=MUTED)
+    title(s, "acid + alcohol ⇌ ester + water", y=28)
+    return s
+
+
+@fig
+def ester_hydrolysis():
+    s = Svg(800, 380, "Two ways to hydrolyse an ester",
+            "Ethyl ethanoate can be hydrolysed by boiling with dilute acid, which gives ethanoic acid and ethanol and is reversible, "
+            "or by boiling with sodium hydroxide solution, which gives sodium ethanoate and ethanol and goes to completion. "
+            "Alkaline hydrolysis of fats is saponification.")
+    a = box(s, 400, 80, 300, 70, ["Ethyl ethanoate", "CH_3COOC_2H_5"], col=PURPLE, fill=F_PURPLE, size=16)
+    b = box(s, 190, 270, 330, 96, ["Acid hydrolysis", "CH_3COOH + C_2H_5OH", "reversible (equilibrium)"], col=BLUE,
+            fill=F_BLUE, size=16)
+    c = box(s, 610, 270, 330, 96, ["Alkaline hydrolysis", "CH_3COONa + C_2H_5OH", "goes to completion"], col=GREEN,
+            fill=F_GREEN, size=16)
+    link(s, a, b, color=BLUE)
+    link(s, a, c, color=GREEN)
+    s.label(250, 160, "+ H₂O, dilute H⁺, heat", size=14, color=BLUE, weight="bold")
+    s.label(560, 160, "+ NaOH(aq), heat", size=14, color=GREEN, weight="bold")
+    s.text(610, 344, "With fats and oils this is saponification (soap)", size=13, color=MUTED)
+    title(s, "Hydrolysis splits an ester back into acid (or its salt) and alcohol", y=26, size=16)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:

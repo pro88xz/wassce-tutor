@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Two ways to hydrolyse an ester</title>
+<desc id="d">Ethyl ethanoate can be hydrolysed by boiling with dilute acid, which gives ethanoic acid and ethanol and is reversible, or by boiling with sodium hydroxide solution, which gives sodium ethanoate and ethanol and goes to completion. Alkaline hydrolysis of fats is saponification.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="800" height="380" rx="20" fill="#f8fafc"/>
+<rect x="250.0" y="45.0" width="300.0" height="70.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="69.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ethyl ethanoate</text>
+<text x="400.0" y="91.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">CH<tspan dy="4.5" font-size="9.8">3</tspan><tspan dy="-4.5">COOC</tspan><tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5">H</tspan><tspan dy="4.5" font-size="9.8">5</tspan><tspan dy="-4.5"></tspan></text>
+<rect x="25.0" y="222.0" width="330.0" height="96.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="190.0" y="248.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Acid hydrolysis</text>
+<text x="190.0" y="270.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">CH<tspan dy="4.5" font-size="9.8">3</tspan><tspan dy="-4.5">COOH + C</tspan><tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5">H</tspan><tspan dy="4.5" font-size="9.8">5</tspan><tspan dy="-4.5">OH</tspan></text>
+<text x="190.0" y="292.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">reversible (equilibrium)</text>
+<rect x="445.0" y="222.0" width="330.0" height="96.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="610.0" y="248.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Alkaline hydrolysis</text>
+<text x="610.0" y="270.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">CH<tspan dy="4.5" font-size="9.8">3</tspan><tspan dy="-4.5">COONa + C</tspan><tspan dy="4.5" font-size="9.8">2</tspan><tspan dy="-4.5">H</tspan><tspan dy="4.5" font-size="9.8">5</tspan><tspan dy="-4.5">OH</tspan></text>
+<text x="610.0" y="292.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">goes to completion</text>
+<line x1="400.0" y1="121.0" x2="190.0" y2="216.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="400.0" y1="121.0" x2="610.0" y2="216.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="158.8" y="148.0" width="182.5" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="250.0" y="160.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+ H₂O, dilute H⁺, heat</text>
+<rect x="492.3" y="148.0" width="135.4" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="560.0" y="160.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+ NaOH(aq), heat</text>
+<text x="610.0" y="344.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">With fats and oils this is saponification (soap)</text>
+<text x="400.0" y="26.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Hydrolysis splits an ester back into acid (or its salt) and alcohol</text>
+</svg>
