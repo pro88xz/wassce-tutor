@@ -93,9 +93,9 @@ On a demand curve, consumer surplus is the **area below the demand curve and abo
 
 At NLe 15, buyers purchase 60 bunches. The highest price anyone would pay is NLe 30 (where the demand curve meets the price axis). Consumer surplus is the triangle:
 
-$$	ext{CS} = 	frac{1}{2} 	imes 60 	imes (30 - 15) = 	ext{NLe } 450$$
+$$\text{CS} = \tfrac{1}{2} \times 60 \times (30 - 15) = \text{NLe } 450$$
 
-Buyers actually spend $15 	imes 60 = 	ext{NLe } 900$ but value what they buy at $900 + 450 = 	ext{NLe } 1350$.
+Buyers actually spend $15 \times 60 = \text{NLe } 900$ but value what they buy at $900 + 450 = \text{NLe } 1350$.
 :::
 
 ## Limitations of utility analysis

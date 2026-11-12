@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The banking system in Sierra Leone</title>
+<desc id="d">The Bank of Sierra Leone is the central bank. It regulates and supervises commercial banks, community banks, development and other specialised banks, and microfinance and mobile money providers. These take deposits from and lend to households, businesses and government.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<rect x="235.0" y="38.0" width="330.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="57.5" font-size="19" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Bank of Sierra Leone</text>
+<text x="400.0" y="82.5" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">central bank</text>
+<text x="400.0" y="132.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">issues currency, regulates and supervises</text>
+<rect x="13.0" y="200.0" width="182.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="104.0" y="224.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Commercial</text>
+<text x="104.0" y="246.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">banks</text>
+<rect x="211.0" y="200.0" width="182.0" height="70.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="302.0" y="224.0" font-size="16" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Community</text>
+<text x="302.0" y="246.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">banks</text>
+<rect x="407.0" y="200.0" width="182.0" height="70.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="498.0" y="224.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Development and</text>
+<text x="498.0" y="246.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">specialised banks</text>
+<rect x="605.0" y="200.0" width="182.0" height="70.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="696.0" y="224.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Microfinance and</text>
+<text x="696.0" y="246.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">mobile money</text>
+<line x1="400.0" y1="144.0" x2="400.0" y2="172.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="104.0" y1="172.0" x2="696.0" y2="172.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="104.0" y1="172.0" x2="104.0" y2="194.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="302.0" y1="172.0" x2="302.0" y2="194.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="498.0" y1="172.0" x2="498.0" y2="194.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="696.0" y1="172.0" x2="696.0" y2="194.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="140.0" y="363.0" width="520.0" height="64.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="400.0" y="395.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Households, businesses and government</text>
+<line x1="86.0" y1="276.0" x2="86.0" y2="357.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<line x1="122.0" y1="357.0" x2="122.0" y2="276.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="284.0" y1="276.0" x2="284.0" y2="357.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<line x1="320.0" y1="357.0" x2="320.0" y2="276.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="480.0" y1="276.0" x2="480.0" y2="357.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<line x1="516.0" y1="357.0" x2="516.0" y2="276.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="678.0" y1="276.0" x2="678.0" y2="357.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<line x1="714.0" y1="357.0" x2="714.0" y2="276.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="127.4" y="306.0" width="151.1" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="203.0" y="318.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">loans and services</text>
+<rect x="560.6" y="306.0" width="72.7" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="597.0" y="318.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">deposits</text>
+</svg>

@@ -100,7 +100,7 @@ An **indirect tax** (such as a sales tax or excise duty) is paid by the seller t
 
 - The **price** consumers pay **rises** from $P_1$ to $P_2$, but by **less than the tax**.
 - The **quantity** bought and sold **falls** from $Q_1$ to $Q_2$.
-- The **incidence** (burden) of the tax is **shared**: consumers pay $P_2 - P_1$ of each unit's tax; producers absorb the rest, because they now keep only $P_2 - 	ext{tax}$.
+- The **incidence** (burden) of the tax is **shared**: consumers pay $P_2 - P_1$ of each unit's tax; producers absorb the rest, because they now keep only $P_2 - \text{tax}$.
 
 :::callout{type=definition}
 The **incidence of a tax** is who finally bears its burden. The **more inelastic the demand**, the larger the share paid by consumers; the **more elastic the demand**, the larger the share borne by producers.

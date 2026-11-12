@@ -76,7 +76,7 @@ The letter of credit protects **both** sides: the exporter is sure of payment wh
 | **Franco (free delivered, delivered duty paid)** | All costs to the buyer's premises, including duty |
 
 :::callout{type=worked-example}
-**Calculating a CIF price.** A trader in Freetown buys goods costing US$10,000 FOB. Freight to Freetown is US$800 and insurance is US$200.
+**Calculating a CIF price.** A trader in Freetown buys goods costing US\$10,000 FOB. Freight to Freetown is US\$800 and insurance is US\$200.
 
 $$\text{CIF} = \text{cost} + \text{insurance} + \text{freight} = 10000 + 200 + 800 = \text{US\$}11{,}000$$
 
@@ -109,7 +109,7 @@ Expect to **describe the procedure for importing or exporting**, to **explain th
 
 1. Give the three uses of a bill of lading.
 2. What is the difference between an open indent and a closed indent?
-3. Goods cost US$5,000 FOB; freight is US$600 and insurance US$100. Find the CIF price.
+3. Goods cost US\$5,000 FOB; freight is US\$600 and insurance US\$100. Find the CIF price.
 4. Who issues a certificate of origin, and why is it needed?
 
-**Answers:** 1. A receipt for the goods, evidence of the contract of carriage, and a document of title. 2. An open indent lets the agent buy from any supplier; a closed indent names the supplier or brand. 3. $5000 + 100 + 600 = $ US$5,700. 4. A chamber of commerce (or an authorised body); it shows where the goods were made, so the correct duties and trade preferences apply.
+**Answers:** 1. A receipt for the goods, evidence of the contract of carriage, and a document of title. 2. An open indent lets the agent buy from any supplier; a closed indent names the supplier or brand. 3. $5000 + 100 + 600 = $ US\$5,700. 4. A chamber of commerce (or an authorised body); it shows where the goods were made, so the correct duties and trade preferences apply.

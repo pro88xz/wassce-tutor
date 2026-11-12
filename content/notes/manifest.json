@@ -2714,58 +2714,6 @@
       "auto_sync": true
     },
     {
-      "file": "commerce-warehousing.md",
-      "subject": "Commerce",
-      "topic": "warehousing",
-      "title": "Warehousing",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 14,
-      "sort_order": 13,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-marketing-and-advertising.md",
-      "subject": "Commerce",
-      "topic": "marketing-and-advertising",
-      "title": "Marketing and advertising",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 15,
-      "sort_order": 14,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-banking.md",
-      "subject": "Commerce",
-      "topic": "banking",
-      "title": "Banking",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 15,
-      "sort_order": 15,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-money-and-currency.md",
-      "subject": "Commerce",
-      "topic": "money-and-currency",
-      "title": "Money and currency",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 14,
-      "sort_order": 16,
-      "auto_sync": true
-    },
-    {
       "file": "commerce-insurance.md",
       "subject": "Commerce",
       "topic": "insurance",
@@ -2802,58 +2750,6 @@
       "original_author": "WASSCE Tutor editorial team",
       "est_minutes": 15,
       "sort_order": 19,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-warehousing-2.md",
-      "subject": "Commerce",
-      "topic": "warehousing",
-      "title": "Warehouse management, stock rotation and inventory costs",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 14,
-      "sort_order": 2,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-marketing-and-advertising-2.md",
-      "subject": "Commerce",
-      "topic": "marketing-and-advertising",
-      "title": "Market research, segmentation and the marketing mix",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 15,
-      "sort_order": 2,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-banking-2.md",
-      "subject": "Commerce",
-      "topic": "banking",
-      "title": "Bank accounts, credit facilities and safe business payments",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 15,
-      "sort_order": 2,
-      "auto_sync": true
-    },
-    {
-      "file": "commerce-money-and-currency-2.md",
-      "subject": "Commerce",
-      "topic": "money-and-currency",
-      "title": "Inflation, purchasing power and the monetary system",
-      "license": "ORIGINAL",
-      "rights_holder": "WASSCE Tutor",
-      "rights_verified": true,
-      "original_author": "WASSCE Tutor editorial team",
-      "est_minutes": 14,
-      "sort_order": 2,
       "auto_sync": true
     },
     {
@@ -3252,6 +3148,126 @@
       "auto_sync": true,
       "title": "Postal, telecommunication and digital services",
       "est_minutes": 7,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-warehousing-1.md",
+      "subject": "Commerce",
+      "topic": "warehousing",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Warehousing: functions and importance",
+      "est_minutes": 8,
+      "sort_order": 1,
+      "retire": [
+        "warehouse-management-stock-rotation-and-inventory-costs",
+        "warehousing"
+      ]
+    },
+    {
+      "file": "commerce-warehousing-2.md",
+      "subject": "Commerce",
+      "topic": "warehousing",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Types of warehouses, stock control and warehouse documents",
+      "est_minutes": 9,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-marketing-1.md",
+      "subject": "Commerce",
+      "topic": "marketing-and-advertising",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Marketing: concept, functions and the marketing mix",
+      "est_minutes": 7,
+      "sort_order": 1,
+      "retire": [
+        "market-research-segmentation-and-the-marketing-mix",
+        "marketing-and-advertising"
+      ]
+    },
+    {
+      "file": "commerce-marketing-2.md",
+      "subject": "Commerce",
+      "topic": "marketing-and-advertising",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Advertising, sales promotion and public relations",
+      "est_minutes": 8,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-banking-1.md",
+      "subject": "Commerce",
+      "topic": "banking",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Banks and their services",
+      "est_minutes": 10,
+      "sort_order": 1,
+      "retire": [
+        "bank-accounts-credit-facilities-and-safe-business-payments",
+        "banking"
+      ]
+    },
+    {
+      "file": "commerce-banking-2.md",
+      "subject": "Commerce",
+      "topic": "banking",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Cheques and other means of payment",
+      "est_minutes": 10,
+      "sort_order": 2
+    },
+    {
+      "file": "commerce-money-1.md",
+      "subject": "Commerce",
+      "topic": "money-and-currency",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Money: evolution, functions and qualities",
+      "est_minutes": 7,
+      "sort_order": 1,
+      "retire": [
+        "inflation-purchasing-power-and-the-monetary-system",
+        "money-and-currency"
+      ]
+    },
+    {
+      "file": "commerce-money-2.md",
+      "subject": "Commerce",
+      "topic": "money-and-currency",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Legal tender, the leone and the value of money",
+      "est_minutes": 9,
       "sort_order": 2
     },
     {

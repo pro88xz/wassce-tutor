@@ -590,6 +590,99 @@ def communication_services():
     return s
 
 
+@fig
+def warehouse_seasons():
+    s = Svg(780, 440, "Warehousing bridges the gap between production and consumption",
+            "Rice is harvested mainly from September to December, but people eat it every month. In the harvest months "
+            "production is above consumption and the surplus is stored; in the other months consumption is met from the warehouse.")
+    x0, y0, bw, k = 100, 350, 46, 5.4
+    prod = [0, 0, 0, 0, 0, 0, 0, 0, 20, 45, 40, 15]
+    use = 10
+    months = "J F M A M J J A S O N D".split()
+    s.line(x0 - 10, y0, x0 + 12 * 54 + 4, y0, color=INK, width=2.5)
+    s.line(x0 - 10, y0, x0 - 10, y0 - 50 * k, color=INK, width=2.5)
+    s.text(x0 - 10, y0 - 50 * k - 16, "tonnes", size=15, color=MUTED)
+    for i, (v, m) in enumerate(zip(prod, months)):
+        x = x0 + i * 54
+        if v:
+            s.rect(x, y0 - v * k, bw, v * k, fill=F_BLUE, stroke=BLUE, width=2)
+        else:
+            s.rect(x, y0 - use * k, bw, use * k, fill=F_AMBER, stroke=ORANGE, width=2, dash="5 4")
+        s.text(x + bw / 2, y0 + 20, m, size=15, color=INK)
+    s.line(x0 - 10, y0 - use * k, x0 + 12 * 54 + 4, y0 - use * k, color=RED, width=3, dash="10 6")
+    s.label(x0 + 3.5 * 54, y0 - use * k - 22, "consumption: steady all year", size=15, weight="bold", color=RED)
+    s.label(x0 + 7.2 * 54, y0 - 38 * k, "harvest: surplus stored", size=15, weight="bold", color=BLUE)
+    s.label(x0 + 3.5 * 54, y0 - use * k - 54, "months without harvest: drawn from store", size=14, color=ORANGE)
+    s.text(390, 412, "blue bars = production; dashed orange bars = supplied from the warehouse", size=14, color=MUTED, italic=True)
+    title(s, "Storage removes the hindrance of time", y=34)
+    return s
+
+
+@fig
+def bonded_warehouse():
+    s = Svg(780, 400, "How a bonded warehouse works",
+            "Imported goods on which duty has not been paid are stored in a bonded warehouse under customs control. The importer "
+            "may sample, repack or blend them there. Goods for the home market are released in batches when duty is paid; goods "
+            "re-exported leave without paying import duty.")
+    a = box(s, 120, 200, 190, 80, ["Imported goods", "arrive at port"], BLUE, F_BLUE, size=17)
+    b = box(s, 390, 200, 240, 110, ["Bonded warehouse", "duty not yet paid", "customs control"], PURPLE, F_PURPLE, size=17)
+    c = box(s, 660, 105, 210, 80, ["Duty paid", "released in batches"], GREEN, F_GREEN, size=17)
+    d = box(s, 660, 295, 210, 80, ["Re-exported", "no import duty"], ORANGE, F_AMBER, size=17)
+    link(s, a, b, color=INK)
+    s.arrow(512, 170, 553, 130, color=GREEN, width=2.5)
+    s.arrow(512, 230, 553, 270, color=ORANGE, width=2.5)
+    s.text(390, 300, "may be sampled, repacked or blended in bond", size=14, color=MUTED, italic=True)
+    title(s, "Duty is paid only when goods leave for the home market", y=36)
+    return s
+
+
+@fig
+def banking_system():
+    s = Svg(800, 470, "The banking system in Sierra Leone",
+            "The Bank of Sierra Leone is the central bank. It regulates and supervises commercial banks, community banks, "
+            "development and other specialised banks, and microfinance and mobile money providers. These take deposits from and "
+            "lend to households, businesses and government.")
+    cb = box(s, 400, 70, 330, 64, ["Bank of Sierra Leone", "central bank"], BLUE, F_BLUE, size=19)
+    s.text(400, 132, "issues currency, regulates and supervises", size=14, color=MUTED, italic=True)
+    xs = [104, 302, 498, 696]
+    cols = [("Commercial", "banks", GREEN, F_GREEN), ("Community", "banks", TEAL, F_TEAL),
+            ("Development and", "specialised banks", ORANGE, F_AMBER), ("Microfinance and", "mobile money", PURPLE, F_PURPLE)]
+    kids = []
+    for x, (a, b, col, fill) in zip(xs, cols):
+        kids.append(box(s, x, 235, 182, 70, [a, b], col, fill, size=16, bold_first=False))
+    s.line(400, 144, 400, 172, color=MUTED, width=2.5)
+    s.line(xs[0], 172, xs[-1], 172, color=MUTED, width=2.5)
+    for x in xs:
+        s.arrow(x, 172, x, 194, color=MUTED, width=2.5)
+    cust = box(s, 400, 395, 520, 64, ["Households, businesses and government"], INK, F_GREY, size=18)
+    for x in xs:
+        s.arrow(x - 18, 276, x - 18, 357, color=GREEN, width=2.5)
+        s.arrow(x + 18, 357, x + 18, 276, color=BLUE, width=2.5)
+    s.label(203, 318, "loans and services", size=14, weight="bold", color=GREEN)
+    s.label(597, 318, "deposits", size=14, weight="bold", color=BLUE)
+    return s
+
+
+@fig
+def redenomination():
+    s = Svg(760, 420, "The 2022 redenomination of the leone",
+            "On 1 July 2022 three zeros were removed from the leone: 1,000 old leones became 1 new leone. Le 1,000 became NLe 1, "
+            "Le 50,000 became NLe 50 and Le 2,000,000 became NLe 2,000. Prices, wages and savings were all divided by 1,000, "
+            "so their purchasing power did not change.")
+    s.text(200, 92, "Old leone (Le)", size=18, weight="bold", color=MUTED)
+    s.text(560, 92, "New leone (NLe)", size=18, weight="bold", color=GREEN)
+    rows = [("Le 1,000", "NLe 1"), ("Le 50,000", "NLe 50"), ("Le 2,000,000", "NLe 2,000")]
+    for i, (o, n) in enumerate(rows):
+        y = 150 + i * 76
+        a = box(s, 200, y, 240, 54, o, MUTED, F_GREY, size=19)
+        b = box(s, 560, y, 240, 54, n, GREEN, F_GREEN, size=19)
+        link(s, a, b, color=INK)
+        s.label(380, y - 18, "÷ 1,000", size=14, weight="bold", color=BLUE)
+    s.text(380, 378, "prices, wages and savings all divided by 1,000: purchasing power unchanged", size=15, color=MUTED, italic=True)
+    title(s, "Three zeros removed on 1 July 2022", y=40)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> int:

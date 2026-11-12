@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The 2022 redenomination of the leone</title>
+<desc id="d">On 1 July 2022 three zeros were removed from the leone: 1,000 old leones became 1 new leone. Le 1,000 became NLe 1, Le 50,000 became NLe 50 and Le 2,000,000 became NLe 2,000. Prices, wages and savings were all divided by 1,000, so their purchasing power did not change.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="760" height="420" rx="20" fill="#f8fafc"/>
+<text x="200.0" y="92.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Old leone (Le)</text>
+<text x="560.0" y="92.0" font-size="18" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">New leone (NLe)</text>
+<rect x="80.0" y="123.0" width="240.0" height="54.0" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="200.0" y="150.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Le 1,000</text>
+<rect x="440.0" y="123.0" width="240.0" height="54.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="560.0" y="150.0" font-size="19" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">NLe 1</text>
+<line x1="326.0" y1="150.0" x2="434.0" y2="150.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="347.6" y="120.0" width="64.9" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="380.0" y="132.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">÷ 1,000</text>
+<rect x="80.0" y="199.0" width="240.0" height="54.0" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="200.0" y="226.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Le 50,000</text>
+<rect x="440.0" y="199.0" width="240.0" height="54.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="560.0" y="226.0" font-size="19" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">NLe 50</text>
+<line x1="326.0" y1="226.0" x2="434.0" y2="226.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="347.6" y="196.0" width="64.9" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="380.0" y="208.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">÷ 1,000</text>
+<rect x="80.0" y="275.0" width="240.0" height="54.0" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="200.0" y="302.0" font-size="19" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Le 2,000,000</text>
+<rect x="440.0" y="275.0" width="240.0" height="54.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="560.0" y="302.0" font-size="19" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">NLe 2,000</text>
+<line x1="326.0" y1="302.0" x2="434.0" y2="302.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="347.6" y="272.0" width="64.9" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="380.0" y="284.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">÷ 1,000</text>
+<text x="380.0" y="378.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">prices, wages and savings all divided by 1,000: purchasing power unchanged</text>
+<text x="380.0" y="40.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Three zeros removed on 1 July 2022</text>
+</svg>

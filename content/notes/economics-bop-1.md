@@ -40,7 +40,7 @@ Because every transaction is recorded twice (as a credit and a debit), the balan
 ## Calculating the balances
 
 :::callout{type=worked-example}
-**A country's transactions in a year (US$ million):**
+**A country's transactions in a year (US\$ million):**
 
 | Item | Value |
 |---|---|
