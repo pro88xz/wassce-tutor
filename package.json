@@ -19,7 +19,9 @@
     "notes:build": "node scripts/notes-ingestion.mjs build",
     "notes:acquire": "node scripts/source-acquisition.mjs",
     "notes:test": "node --test scripts/notes-ingestion.test.mjs",
-    "notes:catalog": "node scripts/validate-topic-catalog.mjs"
+    "notes:catalog": "node scripts/validate-topic-catalog.mjs",
+    "email:test": "node --test scripts/email/engine.test.mjs",
+    "email:preview": "node scripts/email/preview.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.3.4",

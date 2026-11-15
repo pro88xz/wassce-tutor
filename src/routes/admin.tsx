@@ -1,5 +1,5 @@
 import { createFileRoute, Link, Outlet, useLocation } from '@tanstack/react-router'
-import { BadgeCheck, BadgePercent, BookOpen, Download, FileText, FileUp, GraduationCap, Layers, Library, ListChecks, ShieldCheck, Upload, UserRound, Wallet } from 'lucide-react'
+import { BadgeCheck, BadgePercent, BookOpen, Download, FileText, FileUp, GraduationCap, Layers, Library, ListChecks, Mail, ShieldCheck, Upload, UserRound, Wallet } from 'lucide-react'
 import { useQuery } from '@tanstack/react-query'
 import { supabase } from '@/lib/supabase'
 import { privateHead } from '@/lib/seo'
@@ -191,6 +191,15 @@ function AdminPage() {
           <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><BadgePercent className="h-5 w-5" aria-hidden /></span>
           <h2 className="font-bold">Affiliates{waiting.affiliates > 0 && <span className="ml-2 rounded-full bg-amber-100 px-2 py-0.5 align-middle text-xs font-bold text-amber-800">{waiting.affiliates} waiting</span>}</h2>
           <p className="mt-1 text-sm text-muted-foreground">Approve affiliates, review commissions, settle payout requests.</p>
+          <p className="mt-3 text-xs text-primary">Open →</p>
+        </Link>
+        <Link
+          to="/admin/emails"
+          className="rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md"
+        >
+          <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><Mail className="h-5 w-5" aria-hidden /></span>
+          <h2 className="font-bold">Emails</h2>
+          <p className="mt-1 text-sm text-muted-foreground">Study reminders and payment nudges: results, test sends, pause switch.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
         </Link>
         <Link
