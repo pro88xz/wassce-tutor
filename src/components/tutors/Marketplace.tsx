@@ -16,8 +16,8 @@ import { monthlyFee } from '@/lib/tutors'
 import { lessonsText, listText, nle, paymentText, quote, type TutorOffer } from '@/lib/tutor-pricing'
 import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
 
-type Rate = { subject_id: string; price_nle: number; lessons_per_week: number | null; subject: { id: string; name: string } | null }
-type Tutor = {
+export type Rate = { subject_id: string; price_nle: number; lessons_per_week: number | null; subject: { id: string; name: string } | null }
+export type Tutor = {
   id: string
   avatar_path: string | null
   full_name: string
@@ -78,6 +78,7 @@ export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: strin
         .from('tutors')
         .select('id,avatar_path,full_name,bio,qualifications,experience_years,location,verified_at,multi_subject_discount_pct,group_max,group_discount_pct,payment_methods,tutor_subjects(subject_id,price_nle,lessons_per_week,subject:subjects(id,name)),tutor_booking_reviews(rating)')
         .eq('status', 'active')
+        .eq('listed', true)
         .order('verified_at', { ascending: false }),
       subjectId ? Promise.resolve({ data: [], error: null }) : supabase.from('subjects').select('id,name').order('name'),
     ]).then(([tutorResult, subjectResult]) => {
@@ -193,16 +194,18 @@ function OfferChips({ tutor }: { tutor: Tutor }) {
   )
 }
 
-function TutorCard({ tutor, subjectId, onBook }: { tutor: Tutor; subjectId?: string; onBook: () => void }) {
+/** A tutor's card. With `preview`, it is the tutor's own preview on their dashboard: same look, nothing to tap. */
+export function TutorCard({ tutor, subjectId, onBook, preview = false, photoSrc }: { tutor: Tutor; subjectId?: string; onBook?: () => void; preview?: boolean; photoSrc?: string | null }) {
+  const photo = photoSrc ?? (tutor.avatar_path ? photoUrl(tutor.avatar_path) : null)
   const reviews = tutor.tutor_booking_reviews
   const rating = reviews.length ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length : null
   // The chosen subject first, then the rest.
   const rates = [...tutor.tutor_subjects].sort((a, b) => Number(b.subject_id === subjectId) - Number(a.subject_id === subjectId) || byName(a, b))
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-3xl border bg-card shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/10">
+    <article className={`group flex h-full flex-col overflow-hidden rounded-3xl border bg-card shadow-sm ${preview ? '' : 'transition duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/10'}`}>
       <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-violet-500 to-violet-800">
-        {tutor.avatar_path ? (
-          <img src={photoUrl(tutor.avatar_path)} alt={`${tutor.full_name}, WASSCE tutor`} className="h-full w-full object-cover object-top transition duration-300 group-hover:scale-[1.02]" loading="lazy" decoding="async" />
+        {photo ? (
+          <img src={photo} alt={`${tutor.full_name}, WASSCE tutor`} className="h-full w-full object-cover object-top transition duration-300 group-hover:scale-[1.02]" loading="lazy" decoding="async" />
         ) : (
           <span className="flex h-full w-full items-center justify-center text-5xl font-extrabold tracking-tight text-white/90" aria-hidden>{initials(tutor.full_name)}</span>
         )}
@@ -240,9 +243,15 @@ function TutorCard({ tutor, subjectId, onBook }: { tutor: Tutor; subjectId?: str
           {rates.length > 4 && <li className="px-3 text-xs text-muted-foreground">+ {rates.length - 4} more {rates.length - 4 === 1 ? 'subject' : 'subjects'}</li>}
         </ul>
         <div className="mt-auto pt-5">
-          <button type="button" onClick={onBook} className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-primary px-4 text-[15px] font-bold text-primary-foreground transition hover:bg-brand-strong">
-            Book this tutor
-          </button>
+          {preview ? (
+            <span className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-primary px-4 text-[15px] font-bold text-primary-foreground" aria-hidden>
+              Book this tutor
+            </span>
+          ) : (
+            <button type="button" onClick={onBook} className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-primary px-4 text-[15px] font-bold text-primary-foreground transition hover:bg-brand-strong">
+              Book this tutor
+            </button>
+          )}
         </div>
       </div>
     </article>
