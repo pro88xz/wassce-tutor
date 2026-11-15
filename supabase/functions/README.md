@@ -24,7 +24,9 @@ The function source is:
 
 `supabase/functions/send-notification-email/index.ts`
 
-Deploy through the GitHub Actions workflow `.github/workflows/deploy-notification-email.yml` on branch `feature/tutor-affiliate-platform`.
+Deploy through the GitHub Actions workflow `.github/workflows/deploy-notification-email.yml` It runs by itself when the function changes on `main`, and can be started by hand from the Actions tab.
+
+The wording of each email and the branded HTML shell are in `supabase/functions/send-notification-email/email.ts` (tests: `npm run email:test`).
 
 Add these GitHub Actions repository secrets before running it:
 - `SUPABASE_ACCESS_TOKEN`: a Supabase personal access token.
