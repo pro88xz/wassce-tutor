@@ -20,11 +20,11 @@ type Application = {
   id: string; user_id: string; full_name: string; phone: string; bio: string; qualifications: string
   experience_years: number; location: string; teaching_mode: string; document_path: string | null
   avatar_path: string | null; status: string; review_note: string | null; created_at: string; reviewed_at: string | null
-  tutor_application_subjects: { price_nle: number; subject: { name: string } | null }[]
+  tutor_application_subjects: { price_nle: number; lessons_per_week: number | null; subject: { name: string } | null }[]
 }
 type TutorRow = {
   id: string; user_id: string; full_name: string; location: string; teaching_mode: string; status: string; verified_at: string
-  tutor_subjects: { price_nle: number; subject: { name: string } | null }[]
+  tutor_subjects: { price_nle: number; lessons_per_week: number | null; subject: { name: string } | null }[]
   tutor_availability: { weekday: number; starts_at: string; ends_at: string }[]
 }
 type BookingRow = {
@@ -63,7 +63,7 @@ function AdminTutors() {
     queryKey: ['admin-tutor-applications'],
     queryFn: async (): Promise<Application[]> => {
       const { data, error } = await supabase.from('tutor_applications')
-        .select('id,user_id,full_name,phone,bio,qualifications,experience_years,location,teaching_mode,document_path,avatar_path,status,review_note,created_at,reviewed_at,tutor_application_subjects(price_nle,subject:subjects(name))')
+        .select('id,user_id,full_name,phone,bio,qualifications,experience_years,location,teaching_mode,document_path,avatar_path,status,review_note,created_at,reviewed_at,tutor_application_subjects(price_nle,lessons_per_week,subject:subjects(name))')
         .order('created_at', { ascending: false }).limit(300)
       if (error) throw error
       return (data ?? []) as unknown as Application[]
@@ -73,7 +73,7 @@ function AdminTutors() {
     queryKey: ['admin-tutors'],
     queryFn: async (): Promise<TutorRow[]> => {
       const { data, error } = await supabase.from('tutors')
-        .select('id,user_id,full_name,location,teaching_mode,status,verified_at,tutor_subjects(price_nle,subject:subjects(name)),tutor_availability(weekday,starts_at,ends_at)')
+        .select('id,user_id,full_name,location,teaching_mode,status,verified_at,tutor_subjects(price_nle,lessons_per_week,subject:subjects(name)),tutor_availability(weekday,starts_at,ends_at)')
         .order('verified_at', { ascending: false })
       if (error) throw error
       return (data ?? []) as unknown as TutorRow[]
@@ -190,7 +190,7 @@ function AdminTutors() {
                   </div>
                   <p className="whitespace-pre-wrap text-sm">{a.bio}</p>
                   <p className="whitespace-pre-wrap text-sm text-muted-foreground"><span className="font-semibold text-foreground">Qualifications:</span> {a.qualifications}</p>
-                  <div className="flex flex-wrap gap-2">{a.tutor_application_subjects.map((s, i) => <span key={i} className="rounded-lg bg-muted px-2.5 py-1 text-xs">{s.subject?.name} · {monthlyFee(s.price_nle)}</span>)}</div>
+                  <div className="flex flex-wrap gap-2">{a.tutor_application_subjects.map((s, i) => <span key={i} className="rounded-lg bg-muted px-2.5 py-1 text-xs">{s.subject?.name} · {monthlyFee(s.price_nle)}{s.lessons_per_week ? ` · ${s.lessons_per_week} a week` : ''}</span>)}</div>
                   <div className="flex flex-wrap gap-2">
                     <Button asChild size="sm" variant="outline"><a href={`https://wa.me/${waNumber(a.phone)}`} target="_blank" rel="noopener"><MessageCircle className="h-4 w-4" aria-hidden /> {a.phone}</a></Button>
                     {a.document_path && <Button size="sm" variant="outline" onClick={() => void openDocument(a.document_path!)}><FileText className="h-4 w-4" aria-hidden /> Supporting document</Button>}
@@ -235,7 +235,7 @@ function AdminTutors() {
                     </div>
                     <Pill className={t.status === 'active' ? 'bg-emerald-50 text-emerald-700' : 'bg-red-50 text-red-700'}>{t.status === 'active' ? 'Listed' : 'Paused'}</Pill>
                   </div>
-                  <div className="flex flex-wrap gap-2">{t.tutor_subjects.map((s, i) => <span key={i} className="rounded-lg bg-muted px-2.5 py-1 text-xs">{s.subject?.name} · {monthlyFee(s.price_nle)}</span>)}</div>
+                  <div className="flex flex-wrap gap-2">{t.tutor_subjects.map((s, i) => <span key={i} className="rounded-lg bg-muted px-2.5 py-1 text-xs">{s.subject?.name} · {monthlyFee(s.price_nle)}{s.lessons_per_week ? ` · ${s.lessons_per_week} a week` : ''}</span>)}</div>
                   <p className="text-xs text-muted-foreground">{t.tutor_availability.length === 0 ? 'No weekly availability published yet, so students cannot send requests.' : `Available: ${[...t.tutor_availability].sort((a, b) => a.weekday - b.weekday).map((s) => `${WEEKDAYS_SHORT[s.weekday]} ${String(s.starts_at).slice(0, 5)}–${String(s.ends_at).slice(0, 5)}`).join(', ')}`}</p>
                   <div className="flex flex-wrap gap-2">
                     {phone && <Button asChild size="sm" variant="outline"><a href={`https://wa.me/${waNumber(phone)}`} target="_blank" rel="noopener"><MessageCircle className="h-4 w-4" aria-hidden /> {phone}</a></Button>}
