@@ -57,7 +57,7 @@ test('pending payment: first nudge after 2 hours, with the plan and checkout lin
   const { email } = plan(pending(3 * HOUR))
   assert.equal(email.programme, 'pending_payment')
   assert.equal(email.templateKey, 'pending_payment_1')
-  assert.equal(email.idempotencyKey, 'pending_payment:1:pay1')
+  assert.equal(email.idempotencyKey, `pending_payment:1:${UID}:pay1`)
   assert.equal(email.payload.links.cta, '/subscribe?plan=term')
   assert.equal(email.payload.firstName, 'Ama')
 })
@@ -87,7 +87,7 @@ test('pending payment needs marketing consent; account emails do not', () => {
 
 test('access started: once per payment, within 3 days', () => {
   const paid = { paid_payment_id: 'pay9', paid_plan: 'term', paid_amount: 25, paid_at: ago(1 * DAY), access_active: true, access_until: ahead(29 * DAY), access_plan: 'term' }
-  assert.equal(plan(paid).email.idempotencyKey, 'access_started:1:pay9')
+  assert.equal(plan(paid).email.idempotencyKey, `access_started:1:${UID}:pay9`)
   assert.notEqual(plan({ ...paid, history: [sentItem('access_started', 1, 'pay9', 25 * HOUR, 'service')] }).email?.programme, 'access_started')
   assert.notEqual(plan({ ...paid, paid_at: ago(4 * DAY) }).email?.programme, 'access_started')
 })
@@ -348,7 +348,7 @@ test('engine: a live run queues, sends with one-click unsubscribe, and records e
   assert.match(musa.headers['List-Unsubscribe'], /^<https:\/\/wasscetutor\.com\/api\/email\/unsubscribe\?t=/)
   assert.equal(musa.headers['List-Unsubscribe-Post'], 'List-Unsubscribe=One-Click')
   assert.match(musa.html, /api\/email\/c\?j=/)
-  assert.equal(musa.idempotencyKey, 'wassce-email-pending_payment:1:pay1')
+  assert.equal(musa.idempotencyKey, 'wassce-email-pending_payment:1:00000000-0000-0000-0000-0000000000a1:pay1')
   assert.equal(client.log.updates.filter((u) => u.v.status === 'sent').length, 2)
 })
 
@@ -388,4 +388,28 @@ test('settings come from the database; a Vercel EMAIL_MODE can only switch the e
   assert.equal(unreadable.mode, 'off', 'no settings: the engine stays off')
   assert.equal(unreadable.settingsError, 'PGRST202')
   assert.deepEqual(unreadable.cronSecrets, [])
+})
+
+test('regression: students due the same email get their own keys, and every one is sent', async () => {
+  const fresh = (n) =>
+    row({ user_id: `00000000-0000-0000-0000-0000000001${String(n).padStart(2, '0')}`, email: `new${n}@example.com`, created_at: ago(2 * DAY), last_sign_in_at: ago(2 * DAY), last_study_at: null, lessons_completed: 0, practice_attempts: 0 })
+  const away = (n) =>
+    row({ user_id: `00000000-0000-0000-0000-0000000002${String(n).padStart(2, '0')}`, email: `away${n}@example.com`, last_study_at: ago(10 * DAY), last_sign_in_at: ago(10 * DAY) })
+  const group = [fresh(1), fresh(2), fresh(3), away(1), away(2)]
+  const keys = group.map((r) => planForStudent(snapshotFromRow(r), NOW).email.idempotencyKey)
+  assert.equal(new Set(keys).size, group.length, 'same programme and same day must still give different keys')
+
+  // The stand-in database refuses a second live job with the same key, like the real unique index.
+  const client = fakeDb(group)
+  const queueRpc = client.rpc.bind(client)
+  const seen = new Set()
+  client.rpc = (name, args = {}) => {
+    if (name === 'queue_email_jobs') args = { p_jobs: args.p_jobs.filter((j) => !seen.has(j.idempotency_key) && seen.add(j.idempotency_key)) }
+    return queueRpc(name, args)
+  }
+  const sent = []
+  const result = await runEngine({ client, env: env(), now: NOW, send: async (m) => (sent.push(m.to[0]), { ok: true, id: `em_${sent.length}` }), sleep: async () => {} })
+  assert.equal(result.queued, 5)
+  assert.equal(result.sent, 5)
+  assert.deepEqual(sent.sort(), ['away1@example.com', 'away2@example.com', 'new1@example.com', 'new2@example.com', 'new3@example.com'])
 })
