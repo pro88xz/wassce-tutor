@@ -1,18 +1,22 @@
 // The tutor marketplace on /tutors and /tutors/{subject}: verified tutors, each
-// with their photo, subjects and the monthly fee they set. "Book this tutor"
-// shows the fee for the chosen subject; if the student agrees, the database
-// (contact_tutor(), migration 18) records the contact and returns the tutor's
-// WhatsApp number, and WhatsApp opens with a message ready to send. Lessons are
-// in person, arranged and paid directly with the tutor.
+// with their photo, subjects, lessons a week and the monthly fee they set.
+// "Book this tutor" lets the student pick one or more subjects and, if the
+// tutor takes small groups, how many are learning together. The price adds up
+// as they choose, with the tutor's own discounts. If the student agrees, the
+// database (request_tutor(), migration 19) works out the same price, records
+// the request, tells the tutor, and returns the tutor's WhatsApp number; then
+// WhatsApp opens with a message ready to send. Lessons are in person, arranged
+// and paid directly with the tutor.
 import { useEffect, useMemo, useState } from 'react'
-import { BadgeCheck, GraduationCap, MapPin, Search, Star, X } from 'lucide-react'
+import { BadgeCheck, GraduationCap, MapPin, Search, Star, Tag, Users, X } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { monthlyFee } from '@/lib/tutors'
+import { lessonsText, listText, nle, paymentText, quote, type TutorOffer } from '@/lib/tutor-pricing'
 import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
 
-type Rate = { subject_id: string; price_nle: number; subject: { id: string; name: string } | null }
+type Rate = { subject_id: string; price_nle: number; lessons_per_week: number | null; subject: { id: string; name: string } | null }
 type Tutor = {
   id: string
   avatar_path: string | null
@@ -22,14 +26,32 @@ type Tutor = {
   experience_years: number
   location: string
   verified_at: string
+  multi_subject_discount_pct: number
+  group_max: number | null
+  group_discount_pct: number
+  payment_methods: string[]
   tutor_subjects: Rate[]
   tutor_booking_reviews: { rating: number }[]
+}
+type Request = {
+  whatsapp: string
+  tutor_name: string
+  location: string
+  subjects: { id: string; name: string; price_nle: number; lessons_per_week: number | null }[]
+  students: number
+  subtotal: number
+  subject_discount_pct: number
+  group_discount_pct: number
+  per_student: number
+  total: number
 }
 
 const photoUrl = (path: string) => supabase.storage.from('tutor-profile-images').getPublicUrl(path).data.publicUrl
 const firstName = (name: string) => name.trim().split(/\s+/)[0] ?? name
 const initials = (name: string) => name.trim().split(/\s+/).slice(0, 2).map((p) => p[0]?.toUpperCase() ?? '').join('')
 const experience = (years: number) => (years === 0 ? 'New tutor' : `${years} ${years === 1 ? "year's" : "years'"} experience`)
+const offerOf = (t: Tutor): TutorOffer => ({ multiSubjectDiscountPct: t.multi_subject_discount_pct ?? 0, groupMax: t.group_max, groupDiscountPct: t.group_discount_pct ?? 0 })
+const byName = (a: Rate, b: Rate) => (a.subject?.name ?? '').localeCompare(b.subject?.name ?? '')
 
 /** The blue verified tick: the tutor was reviewed and approved by WASSCE Tutor. */
 export function VerifiedBadge({ className = 'h-5 w-5' }: { className?: string }) {
@@ -54,7 +76,7 @@ export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: strin
     void Promise.all([
       supabase
         .from('tutors')
-        .select('id,avatar_path,full_name,bio,qualifications,experience_years,location,verified_at,tutor_subjects(subject_id,price_nle,subject:subjects(id,name)),tutor_booking_reviews(rating)')
+        .select('id,avatar_path,full_name,bio,qualifications,experience_years,location,verified_at,multi_subject_discount_pct,group_max,group_discount_pct,payment_methods,tutor_subjects(subject_id,price_nle,lessons_per_week,subject:subjects(id,name)),tutor_booking_reviews(rating)')
         .eq('status', 'active')
         .order('verified_at', { ascending: false }),
       subjectId ? Promise.resolve({ data: [], error: null }) : supabase.from('subjects').select('id,name').order('name'),
@@ -109,7 +131,7 @@ export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: strin
             <VerifiedBadge className="h-4 w-4" /> Verified tutors · in-person lessons
           </p>
           <h2 id="tutors-list" className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">{subjectName ? `${subjectName} tutors` : 'Choose your tutor'}</h2>
-          <p className="mt-1 text-sm text-muted-foreground">Each tutor sets their own monthly fee. You see it before you message them.</p>
+          <p className="mt-1 text-sm text-muted-foreground">Each tutor sets their own monthly fee. Take several subjects or learn with friends, and see the price before you message them.</p>
         </div>
         {!subjectId && (
           <div className="grid gap-2 sm:grid-cols-[minmax(220px,1fr)_200px]">
@@ -150,16 +172,37 @@ export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: strin
   )
 }
 
+/** The tutor's own offers: a discount for several subjects, small groups. */
+function OfferChips({ tutor }: { tutor: Tutor }) {
+  const multi = tutor.multi_subject_discount_pct > 0 && tutor.tutor_subjects.length > 1
+  if (!multi && !tutor.group_max) return null
+  return (
+    <ul className="mt-3 flex flex-wrap gap-1.5 text-xs font-semibold" aria-label="Offers">
+      {multi && (
+        <li className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2.5 py-1 text-emerald-800">
+          <Tag className="h-3.5 w-3.5" aria-hidden /> {tutor.multi_subject_discount_pct}% off 2+ subjects
+        </li>
+      )}
+      {tutor.group_max && (
+        <li className="inline-flex items-center gap-1 rounded-full bg-sky-50 px-2.5 py-1 text-sky-800">
+          <Users className="h-3.5 w-3.5" aria-hidden /> Groups up to {tutor.group_max}
+          {tutor.group_discount_pct > 0 && ` · ${tutor.group_discount_pct}% off each`}
+        </li>
+      )}
+    </ul>
+  )
+}
+
 function TutorCard({ tutor, subjectId, onBook }: { tutor: Tutor; subjectId?: string; onBook: () => void }) {
   const reviews = tutor.tutor_booking_reviews
   const rating = reviews.length ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length : null
   // The chosen subject first, then the rest.
-  const rates = [...tutor.tutor_subjects].sort((a, b) => Number(b.subject_id === subjectId) - Number(a.subject_id === subjectId) || (a.subject?.name ?? '').localeCompare(b.subject?.name ?? ''))
+  const rates = [...tutor.tutor_subjects].sort((a, b) => Number(b.subject_id === subjectId) - Number(a.subject_id === subjectId) || byName(a, b))
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-3xl border bg-card shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/10">
       <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-violet-500 to-violet-800">
         {tutor.avatar_path ? (
-          <img src={photoUrl(tutor.avatar_path)} alt={`${tutor.full_name}, WASSCE tutor`} className="h-full w-full object-cover object-top transition duration-300 group-hover:scale-[1.02]" loading="lazy" />
+          <img src={photoUrl(tutor.avatar_path)} alt={`${tutor.full_name}, WASSCE tutor`} className="h-full w-full object-cover object-top transition duration-300 group-hover:scale-[1.02]" loading="lazy" decoding="async" />
         ) : (
           <span className="flex h-full w-full items-center justify-center text-5xl font-extrabold tracking-tight text-white/90" aria-hidden>{initials(tutor.full_name)}</span>
         )}
@@ -183,10 +226,14 @@ function TutorCard({ tutor, subjectId, onBook }: { tutor: Tutor; subjectId?: str
           )}
         </p>
         <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-muted-foreground">{tutor.bio}</p>
+        <OfferChips tutor={tutor} />
         <ul className="mt-4 space-y-1.5" aria-label="Subjects and monthly fees">
           {rates.slice(0, 4).map((r) => (
             <li key={r.subject_id} className={`flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-sm ${r.subject_id === subjectId ? 'bg-primary/10' : 'bg-muted/60'}`}>
-              <span className="truncate font-medium">{r.subject?.name}</span>
+              <span className="min-w-0">
+                <span className="block truncate font-medium">{r.subject?.name}</span>
+                {r.lessons_per_week && <span className="block text-xs text-muted-foreground">{lessonsText(r.lessons_per_week)}</span>}
+              </span>
               <span className="shrink-0 font-semibold">{monthlyFee(r.price_nle)}</span>
             </li>
           ))}
@@ -202,16 +249,42 @@ function TutorCard({ tutor, subjectId, onBook }: { tutor: Tutor; subjectId?: str
   )
 }
 
+/** The message the student sends, from the price the database worked out. */
+function whatsappMessage(tutorFirstName: string, r: Request, student: string | null): string {
+  const names = listText(r.subjects.map((s) => s.name))
+  const discounts = [
+    r.subject_discount_pct > 0 ? `${r.subject_discount_pct}% discount for ${r.subjects.length} subjects` : null,
+    r.group_discount_pct > 0 ? `${r.group_discount_pct}% group discount` : null,
+  ].filter((d): d is string => !!d)
+  const fee = r.students > 1 ? `${nle(Number(r.per_student))} a month each (${nle(Number(r.total))} in total)` : `${nle(Number(r.per_student))} a month`
+  return [
+    `Hello ${tutorFirstName}, I found you on WASSCE Tutor.`,
+    r.students > 1
+      ? `We are ${r.students} students and would like in-person lessons in ${names} together, at your fee of ${fee}${discounts.length ? `, with your ${listText(discounts)}` : ''}.`
+      : `I would like in-person lessons in ${names} at your fee of ${fee}${discounts.length ? `, with your ${listText(discounts)}` : ''}.`,
+    student ? `My name is ${student}. When could we start?` : 'When could we start?',
+  ].join(' ')
+}
+
 function BookDialog({ tutor, preferredSubject, onClose }: { tutor: Tutor; preferredSubject?: string; onClose: () => void }) {
   const { user } = useAuth()
   const { data: profile } = useProfile(user?.id ?? null)
-  const offered = tutor.tutor_subjects
-  const [subjectId, setSubjectId] = useState(offered.find((s) => s.subject_id === preferredSubject)?.subject_id ?? offered[0]?.subject_id ?? '')
+  const offered = useMemo(() => [...tutor.tutor_subjects].sort((a, b) => Number(b.subject_id === preferredSubject) - Number(a.subject_id === preferredSubject) || byName(a, b)), [tutor, preferredSubject])
+  const [chosen, setChosen] = useState<string[]>(() => (offered[0] ? [offered[0].subject_id] : []))
+  const [students, setStudents] = useState(1)
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [whatsappUrl, setWhatsappUrl] = useState<string | null>(null)
-  const rate = offered.find((s) => s.subject_id === subjectId)
   const name = firstName(tutor.full_name)
+  const offer = offerOf(tutor)
+  const picked = offered.filter((s) => chosen.includes(s.subject_id))
+  const q = quote(picked.map((s) => ({ price: Number(s.price_nle), lessonsPerWeek: s.lessons_per_week })), offer, students)
+  // The discount lines add up exactly to the price shown: any rounding goes
+  // into the last discount.
+  const subjectSaving = q.groupDiscountPct > 0 ? Math.round((q.subtotal * q.subjectDiscountPct) / 100) : Math.max(0, q.subtotal - q.perStudent)
+  const groupSaving = Math.round((q.subtotal - subjectSaving - q.perStudent) * 100) / 100
+  const pays = paymentText(tutor.payment_methods ?? [])
+  const toggle = (id: string) => setChosen((now) => (now.includes(id) ? (now.length > 1 ? now.filter((x) => x !== id) : now) : [...now, id]))
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose()
@@ -224,23 +297,17 @@ function BookDialog({ tutor, preferredSubject, onClose }: { tutor: Tutor; prefer
       window.location.href = `/auth?next=${encodeURIComponent(window.location.pathname)}`
       return
     }
-    if (!rate) return
+    if (picked.length === 0) return
     setBusy(true)
     setError(null)
-    const { data, error: contactError } = await supabase.rpc('contact_tutor', { p_tutor: tutor.id, p_subject: subjectId })
-    const row = Array.isArray(data) ? data[0] : data
-    if (contactError || !row?.whatsapp) {
-      setError(contactError?.message ?? 'Could not reach this tutor right now. Please try again.')
+    const { data, error: requestError } = await supabase.rpc('request_tutor', { p_tutor: tutor.id, p_subjects: chosen, p_students: students })
+    const row = (Array.isArray(data) ? data[0] : data) as Request | undefined
+    if (requestError || !row?.whatsapp) {
+      setError(requestError?.message ?? 'Could not reach this tutor right now. Please try again.')
       setBusy(false)
       return
     }
-    const student = firstName(profile?.full_name ?? '') || null
-    const text = [
-      `Hello ${name}, I found you on WASSCE Tutor.`,
-      `I would like in-person ${row.subject_name} lessons at your fee of NLe ${Number(row.price_nle).toLocaleString('en-GB')} per month.`,
-      student ? `My name is ${student}. When could we start?` : 'When could we start?',
-    ].join(' ')
-    const url = `https://wa.me/${row.whatsapp}?text=${encodeURIComponent(text)}`
+    const url = `https://wa.me/${row.whatsapp}?text=${encodeURIComponent(whatsappMessage(name, row, firstName(profile?.full_name ?? '') || null))}`
     setWhatsappUrl(url)
     setBusy(false)
     window.location.assign(url)
@@ -248,7 +315,7 @@ function BookDialog({ tutor, preferredSubject, onClose }: { tutor: Tutor; prefer
 
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center bg-slate-950/60 p-0 backdrop-blur-sm sm:items-center sm:p-4" role="presentation" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
-      <section role="dialog" aria-modal="true" aria-labelledby="book-title" className="max-h-[92vh] w-full max-w-md overflow-y-auto rounded-t-3xl bg-white text-slate-900 shadow-2xl sm:rounded-3xl">
+      <section role="dialog" aria-modal="true" aria-labelledby="book-title" className="flex max-h-[92vh] w-full max-w-md flex-col overflow-hidden rounded-t-3xl bg-white text-slate-900 shadow-2xl sm:rounded-3xl">
         <div className="flex items-center gap-4 border-b p-5">
           <div className="h-16 w-16 shrink-0 overflow-hidden rounded-2xl bg-gradient-to-br from-violet-500 to-violet-800">
             {tutor.avatar_path ? (
@@ -269,42 +336,97 @@ function BookDialog({ tutor, preferredSubject, onClose }: { tutor: Tutor; prefer
           </button>
         </div>
 
-        <div className="space-y-5 p-5">
+        <div className="flex-1 space-y-5 overflow-y-auto p-5">
           {offered.length > 1 && (
             <fieldset>
-              <legend className="mb-2 text-sm font-semibold">Subject</legend>
+              <legend className="text-sm font-semibold">Subjects</legend>
+              <p className="mb-2 text-xs text-slate-500">
+                Choose all you want with {name}.
+                {offer.multiSubjectDiscountPct > 0 && <strong className="font-semibold text-emerald-700"> 2 or more: {offer.multiSubjectDiscountPct}% off.</strong>}
+              </p>
               <div className="space-y-2">
-                {offered.map((s) => (
-                  <label key={s.subject_id} className={`flex cursor-pointer items-center justify-between gap-3 rounded-xl border px-3.5 py-3 text-sm ${s.subject_id === subjectId ? 'border-violet-500 bg-violet-50' : ''}`}>
-                    <span className="flex items-center gap-2.5">
-                      <input type="radio" name="subject" checked={s.subject_id === subjectId} onChange={() => setSubjectId(s.subject_id)} className="accent-[#6438d8]" />
-                      <span className="font-medium">{s.subject?.name}</span>
-                    </span>
-                    <span className="font-semibold">{monthlyFee(s.price_nle)}</span>
-                  </label>
-                ))}
+                {offered.map((s) => {
+                  const on = chosen.includes(s.subject_id)
+                  return (
+                    <label key={s.subject_id} className={`flex cursor-pointer items-center justify-between gap-3 rounded-xl border px-3.5 py-3 text-sm ${on ? 'border-violet-500 bg-violet-50' : ''}`}>
+                      <span className="flex min-w-0 items-center gap-2.5">
+                        <input type="checkbox" checked={on} onChange={() => toggle(s.subject_id)} className="h-4 w-4 shrink-0 accent-[#6438d8]" />
+                        <span className="min-w-0">
+                          <span className="block font-medium">{s.subject?.name}</span>
+                          {s.lessons_per_week && <span className="block text-xs text-slate-500">{lessonsText(s.lessons_per_week)}</span>}
+                        </span>
+                      </span>
+                      <span className="shrink-0 font-semibold">{nle(Number(s.price_nle))}</span>
+                    </label>
+                  )
+                })}
               </div>
             </fieldset>
           )}
 
-          {rate && (
-            <div className="rounded-2xl bg-violet-50 p-4">
-              <p className="text-sm text-slate-700">
-                {name}’s fee for {rate.subject?.name} is
+          {tutor.group_max && (
+            <fieldset>
+              <legend className="text-sm font-semibold">Who is learning?</legend>
+              <p className="mb-2 text-xs text-slate-500">
+                Learn with friends, classmates or brothers and sisters.
+                {offer.groupDiscountPct > 0 && <strong className="font-semibold text-emerald-700"> In a group, each of you pays {offer.groupDiscountPct}% less.</strong>}
               </p>
-              <p className="mt-0.5 text-2xl font-extrabold tracking-tight text-slate-900">
-                NLe {Number(rate.price_nle).toLocaleString('en-GB')} <span className="text-base font-semibold text-slate-600">per month</span>
-              </p>
-              <ul className="mt-3 space-y-1.5 text-sm text-slate-700">
-                <li>• Lessons are in person, in or near {tutor.location}.</li>
-                <li>• You agree the days, times, place and payment directly with {name}.</li>
-                <li>• WASSCE Tutor does not take payment for tutoring.</li>
-              </ul>
-            </div>
+              <div className="flex gap-2" role="group" aria-label="Number of students">
+                {Array.from({ length: tutor.group_max }, (_, i) => i + 1).map((n) => (
+                  <button
+                    key={n}
+                    type="button"
+                    aria-pressed={students === n}
+                    aria-label={n === 1 ? 'Just me' : `${n} students`}
+                    onClick={() => setStudents(n)}
+                    className={`min-h-11 min-w-11 rounded-xl border text-sm font-semibold transition ${n === 1 ? 'px-4' : 'flex-1 px-2'} ${students === n ? 'border-violet-500 bg-violet-50 text-violet-800' : 'hover:border-violet-300'}`}
+                  >
+                    {n === 1 ? 'Just me' : n}
+                  </button>
+                ))}
+              </div>
+              {students > 1 && <p className="mt-1.5 text-xs text-slate-500">{students} students learning together</p>}
+            </fieldset>
           )}
 
-          {error && <p role="alert" className="rounded-xl bg-red-50 p-3 text-sm text-red-700">{error}</p>}
+          <div className="rounded-2xl bg-violet-50 p-4">
+            {picked.length === 1 && students === 1 ? (
+              <p className="text-sm text-slate-700">{name}’s fee for {picked[0].subject?.name} is</p>
+            ) : (
+              <dl className="space-y-1 text-sm text-slate-700">
+                {picked.map((s) => (
+                  <div key={s.subject_id} className="flex justify-between gap-3"><dt>{s.subject?.name}</dt><dd>{nle(Number(s.price_nle))}</dd></div>
+                ))}
+                {subjectSaving > 0 && (
+                  <div className="flex justify-between gap-3 font-semibold text-emerald-700"><dt>{q.subjectDiscountPct}% off for {q.subjects} subjects</dt><dd>−{nle(subjectSaving)}</dd></div>
+                )}
+                {groupSaving > 0 && (
+                  <div className="flex justify-between gap-3 font-semibold text-emerald-700"><dt>{q.groupDiscountPct}% off each, group of {students}</dt><dd>−{nle(groupSaving)}</dd></div>
+                )}
+                <div className="!mt-2 border-t border-violet-200/80" aria-hidden />
+              </dl>
+            )}
+            <p className="mt-1 text-2xl font-extrabold tracking-tight text-slate-900">
+              {nle(q.perStudent)} <span className="text-base font-semibold text-slate-600">a month{students > 1 ? ' each' : ''}</span>
+            </p>
+            {students > 1 && <p className="text-sm font-semibold text-slate-700">{nle(q.total)} a month for all {students} of you</p>}
+            {q.perLesson !== null && q.lessonsPerWeek !== null && (
+              <p className="mt-0.5 text-xs text-slate-500">About {nle(q.perLesson)} a lesson{students > 1 ? ' each' : ''} · {lessonsText(q.lessonsPerWeek)}</p>
+            )}
+            {offer.multiSubjectDiscountPct > 0 && picked.length === 1 && offered.length > 1 && (
+              <p className="mt-2 text-xs font-semibold text-emerald-700">Add another subject and {name} takes {offer.multiSubjectDiscountPct}% off.</p>
+            )}
+            <ul className="mt-3 space-y-1.5 text-sm text-slate-700">
+              <li>• Lessons are in person, in or near {tutor.location}.</li>
+              <li>• You agree the days, times and place with {name}.</li>
+              <li>• Pay {name} directly{pays ? ` (${pays})` : ''}. WASSCE Tutor does not take payment for tutoring.</li>
+            </ul>
+          </div>
 
+          {error && <p role="alert" className="rounded-xl bg-red-50 p-3 text-sm text-red-700">{error}</p>}
+        </div>
+
+        <div className="border-t bg-white p-4 sm:px-5">
           {whatsappUrl ? (
             <div className="space-y-2 text-center">
               <p className="text-sm text-slate-600">Opening WhatsApp…</p>
@@ -314,8 +436,8 @@ function BookDialog({ tutor, preferredSubject, onClose }: { tutor: Tutor; prefer
             </div>
           ) : (
             <div className="space-y-2">
-              <p className="text-center text-sm font-semibold">Do you agree to this fee?</p>
-              <button type="button" disabled={busy || !rate} onClick={() => void agree()} className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-4 font-bold text-white transition hover:brightness-95 disabled:opacity-60">
+              <p className="text-center text-sm font-semibold">Do you agree to {students > 1 ? `${nle(q.perStudent)} a month each` : `${nle(q.perStudent)} a month`}?</p>
+              <button type="button" disabled={busy || picked.length === 0} onClick={() => void agree()} className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-4 font-bold text-white transition hover:brightness-95 disabled:opacity-60">
                 <WhatsAppGlyph /> {busy ? 'Opening WhatsApp…' : user ? `Yes, message ${name} on WhatsApp` : `Sign in to message ${name}`}
               </button>
               <button type="button" onClick={onClose} className="inline-flex min-h-11 w-full items-center justify-center rounded-2xl px-4 text-sm font-semibold text-slate-600 hover:bg-slate-100">

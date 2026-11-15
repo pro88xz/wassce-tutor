@@ -4,11 +4,12 @@ import { ArrowLeft, CheckCircle2, FileUp, ShieldCheck } from 'lucide-react'
 import { publicHead } from '@/lib/seo'
 import { supabase } from '@/lib/supabase'
 import { useAuth } from '@/lib/auth'
-import { PhotoPicker, photoProblem } from '@/components/tutors/PhotoPicker'
+import { PhotoPicker } from '@/components/tutors/PhotoPicker'
+import { photoProblem } from '@/lib/photo'
 import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
 
 type Subject = { id: string; name: string }
-type SelectedSubject = { subject_id: string; price_nle: string }
+type SelectedSubject = { subject_id: string; price_nle: string; lessons: string }
 
 export const Route = createFileRoute('/become-a-tutor')({
   ssr: true,
@@ -51,9 +52,9 @@ function BecomeTutor() {
     return () => { active = false }
   }, [user])
 
-  const toggleSubject = (id: string) => setSelected((current) => current.some((s) => s.subject_id===id) ? current.filter((s) => s.subject_id!==id) : [...current,{subject_id:id,price_nle:''}])
+  const toggleSubject = (id: string) => setSelected((current) => current.some((s) => s.subject_id===id) ? current.filter((s) => s.subject_id!==id) : [...current,{subject_id:id,price_nle:'',lessons:''}])
   const priceOk = (v: string) => Number(v) > 0 && Number(v) <= 999999
-  const pricesOk = selected.length > 0 && selected.every((s) => priceOk(s.price_nle))
+  const pricesOk = selected.length > 0 && selected.every((s) => priceOk(s.price_nle) && Number(s.lessons) >= 1)
 
   const submit = async () => {
     if (!user) return
@@ -77,11 +78,11 @@ function BecomeTutor() {
         const { error: avatarError } = await supabase.storage.from('tutor-profile-images').upload(avatarPath,avatar,{upsert:false,contentType:avatar.type})
         if (avatarError) throw avatarError
       }
-      if (!pricesOk) throw new Error('Enter a monthly fee above NLe 0 for each subject you selected.')
+      if (!pricesOk) throw new Error('Enter a monthly fee and lessons a week for each subject you selected.')
       const { data: applicationId, error: submitError } = await supabase.rpc('submit_tutor_application',{
         p_full_name:fullName.trim(),p_phone:phone.trim(),p_bio:bio.trim(),p_qualifications:qualifications.trim(),
         p_experience_years:Number(experience),p_location:location.trim(),p_teaching_mode:'in_person',p_document_path:documentPath,p_avatar_path:avatarPath,
-        p_subjects:selected.map((s)=>({subject_id:s.subject_id,price_nle:Number(s.price_nle)})),
+        p_subjects:selected.map((s)=>({subject_id:s.subject_id,price_nle:Number(s.price_nle),lessons_per_week:Number(s.lessons)})),
       })
       if (submitError) throw submitError
       // Tell the admins by email too (best effort; the admin inbox row is already saved).
@@ -116,9 +117,9 @@ function BecomeTutor() {
       </div></section>
       <section className="rounded-2xl border bg-card p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-wider text-primary">02 / Qualifications</p><h2 className="mt-1 text-xl font-bold">Your academic background</h2><textarea required minLength={10} maxLength={2000} rows={3} className="mt-4 w-full rounded-xl border border-slate-200 bg-white p-3 text-sm outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-100" value={qualifications} onChange={(e)=>setQualifications(e.target.value)} placeholder="List qualifications, institutions and relevant teaching credentials."/><label className="mt-4 flex cursor-pointer items-center gap-3 rounded-xl border border-dashed p-4 text-sm"><FileUp className="h-5 w-5 text-primary"/><span className="min-w-0 flex-1"><strong className="block">Supporting document (optional)</strong><span className="text-xs text-muted-foreground">PDF, JPG or PNG · maximum 10 MB · private to reviewers</span>{document && <span className="mt-1 block truncate text-primary">{document.name}</span>}</span><input type="file" accept=".pdf,image/jpeg,image/png" className="sr-only" onChange={(e)=>setDocument(e.target.files?.[0]??null)}/></label></section>
       <section className="rounded-2xl border bg-card p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-wider text-primary">03 / How students reach you</p><h2 className="mt-1 text-xl font-bold">In-person lessons, arranged on WhatsApp</h2><ul className="mt-4 space-y-2 text-sm text-muted-foreground"><li>• Lessons are in person, in or near the area you gave above. WASSCE Tutor does not run online lessons.</li><li>• A student sees your monthly fee and taps Book. If they agree to it, WhatsApp opens with a message to you.</li><li>• You agree the days, times, place and payment directly with the student.</li></ul><label className="mt-5 flex cursor-pointer items-start gap-3 rounded-xl border p-4 text-sm"><input type="checkbox" checked={whatsappConsent} onChange={(e)=>setWhatsappConsent(e.target.checked)} className="mt-0.5 h-4 w-4 shrink-0 accent-violet-700"/><span><span className="inline-flex items-center gap-1.5 font-semibold"><WhatsAppGlyph className="h-4 w-4 text-[#25D366]"/> Students can message me on WhatsApp</span><span className="mt-0.5 block text-muted-foreground">I agree that students who accept my fee can contact me at the WhatsApp number above. My number is never shown publicly.</span></span></label></section>
-      <section className="rounded-2xl border bg-card p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-wider text-primary">04 / Subjects and rates</p><h2 className="mt-1 text-xl font-bold">Choose what you teach</h2><p className="mt-1 text-sm text-muted-foreground">Set your monthly fee for each subject, in NLe. You choose the amount.</p><div className="mt-5 grid gap-3 sm:grid-cols-2">{subjects.map((s)=><div key={s.id} className="flex items-center gap-3 rounded-xl border p-3"><input type="checkbox" checked={selected.some((x)=>x.subject_id===s.id)} onChange={()=>toggleSubject(s.id)} aria-label={`Teach ${s.name}`} className="h-4 w-4 accent-violet-700"/><span className="min-w-0 flex-1 text-sm font-medium">{s.name}</span>{selected.some((x)=>x.subject_id===s.id)&&<span className="flex items-center gap-1.5 text-xs text-muted-foreground">NLe<input aria-label={`${s.name} monthly fee in NLe`} type="number" inputMode="numeric" required min="1" max="999999" step="1" placeholder="Fee" value={selected.find((x)=>x.subject_id===s.id)?.price_nle??''} onChange={(e)=>setSelected((prev)=>prev.map((x)=>x.subject_id===s.id?{...x,price_nle:e.target.value}:x))} className="h-10 w-24 rounded-lg border px-2 text-sm text-foreground" />/ month</span>}</div>)}</div><p className="mt-3 text-xs text-muted-foreground">{selected.length} {selected.length===1?'subject':'subjects'} selected · fees are per month</p></section>
+      <section className="rounded-2xl border bg-card p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-wider text-primary">04 / Subjects and rates</p><h2 className="mt-1 text-xl font-bold">Choose what you teach</h2><p className="mt-1 text-sm text-muted-foreground">For each subject, set your monthly fee in NLe and how many lessons a week it includes. You choose both. Once approved, you can also give a discount for several subjects, take small groups, and show how students can pay you (Orange Money, Afrimoney or cash).</p><div className="mt-5 grid gap-3 sm:grid-cols-2">{subjects.map((s)=><div key={s.id} className="flex flex-wrap items-center gap-3 rounded-xl border p-3"><input type="checkbox" checked={selected.some((x)=>x.subject_id===s.id)} onChange={()=>toggleSubject(s.id)} aria-label={`Teach ${s.name}`} className="h-4 w-4 accent-violet-700"/><span className="min-w-0 flex-1 text-sm font-medium">{s.name}</span>{selected.some((x)=>x.subject_id===s.id)&&<span className="flex w-full flex-wrap items-center gap-1.5 pl-7 text-xs text-muted-foreground">NLe<input aria-label={`${s.name} monthly fee in NLe`} type="number" inputMode="numeric" required min="1" max="999999" step="1" placeholder="Fee" value={selected.find((x)=>x.subject_id===s.id)?.price_nle??''} onChange={(e)=>setSelected((prev)=>prev.map((x)=>x.subject_id===s.id?{...x,price_nle:e.target.value}:x))} className="h-10 w-24 rounded-lg border px-2 text-sm text-foreground" />/ month<select aria-label={`${s.name}: lessons a week`} required value={selected.find((x)=>x.subject_id===s.id)?.lessons??''} onChange={(e)=>setSelected((prev)=>prev.map((x)=>x.subject_id===s.id?{...x,lessons:e.target.value}:x))} className="ml-auto h-10 rounded-lg border bg-white px-2 text-sm text-foreground"><option value="">Lessons a week</option>{[1,2,3,4,5,6,7].map((n)=><option key={n} value={n}>{n} a week</option>)}</select></span>}</div>)}</div><p className="mt-3 text-xs text-muted-foreground">{selected.length} {selected.length===1?'subject':'subjects'} selected · fees are per month</p></section>
       {error && <p role="alert" className="rounded-xl bg-red-50 p-4 text-sm text-red-700">{error}</p>}
-      <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-center"><p className="text-xs text-muted-foreground">{!avatar?'Add your profile photo to submit. ':''}{!whatsappConsent?'Confirm WhatsApp contact to submit. ':''}Submitting confirms that your information is accurate and may be reviewed by WASSCE Tutor.</p><button disabled={busy||!pricesOk||!avatar||!whatsappConsent} className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[#6438d8] px-7 font-bold text-white disabled:opacity-50">{busy?'Submitting application…':'Submit tutor application'}</button></div>
+      <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-center"><p className="text-xs text-muted-foreground">{!avatar?'Add your profile photo to submit. ':''}{!whatsappConsent?'Confirm WhatsApp contact to submit. ':''}{selected.length>0&&!pricesOk?'Add a fee and lessons a week for each subject. ':''}Submitting confirms that your information is accurate and may be reviewed by WASSCE Tutor.</p><button disabled={busy||!pricesOk||!avatar||!whatsappConsent} className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[#6438d8] px-7 font-bold text-white disabled:opacity-50">{busy?'Submitting application…':'Submit tutor application'}</button></div>
     </form>}
   </div>
 }

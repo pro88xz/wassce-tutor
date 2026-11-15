@@ -98,3 +98,18 @@ jobs:
             (select count(*) from public.tutors where teaching_mode <> 'in_person'));" | tr -d '[:space:]')"
           echo "students can contact, visitors can contact, visitors read phones, students read phones, tutors not in person: $RESULT"
           test "$RESULT" = "t,f,f,f,0" || { echo "Checks did not match t,f,f,f,0"; exit 1; }
+
+      - name: Verify (19) several subjects, groups and payment methods
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            has_function_privilege('authenticated','public.request_tutor(uuid,uuid[],integer)','execute'),
+            has_function_privilege('anon','public.request_tutor(uuid,uuid[],integer)','execute'),
+            has_function_privilege('authenticated','public.update_tutor_offer(jsonb,integer,integer,integer,text[])','execute'),
+            has_column_privilege('anon','public.tutors','group_max','select'),
+            has_column_privilege('anon','public.tutors','phone','select'));" | tr -d '[:space:]')"
+          echo "students can request, visitors can request, tutors can set offers, visitors read offers, visitors read phones: $RESULT"
+          test "$RESULT" = "t,f,t,t,f" || { echo "Checks did not match t,f,t,t,f"; exit 1; }
