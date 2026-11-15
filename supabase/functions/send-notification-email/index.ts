@@ -1,4 +1,5 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { notificationCopy, renderNotification } from "./email.ts";
 
 const appOrigin = Deno.env.get("APP_ORIGIN") ?? "https://wasscetutor.com"
 const allowedOrigins = new Set([
@@ -61,15 +62,17 @@ Deno.serve(async (req) => {
     const { data: recipient } = await admin.auth.admin.getUserById(event.recipient_id);
     const email = recipient.user?.email;
     if (!email) return { id: event.id, sent: false, reason: "No email address" };
+    const { data: profile } = await admin.from("profiles").select("full_name").eq("id", event.recipient_id).maybeSingle();
+    const isTutor = event.event_type.startsWith("booking_")
+      ? Boolean((await admin.from("tutors").select("id").eq("user_id", event.recipient_id).maybeSingle()).data)
+      : false;
+    const firstName = String(profile?.full_name ?? "").trim().split(/\s+/)[0];
+    const copy = notificationCopy(event, { firstName, isTutor });
+    const { html, text } = renderNotification(copy, appOrigin.replace(/\/$/, ""));
     const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: { Authorization: `Bearer ${resendKey}`, "Content-Type": "application/json", "Idempotency-Key": `wassce-notification-${event.id}` },
-      body: JSON.stringify({
-        from,
-        to: [email],
-        subject: event.title,
-        text: `${event.title}\n\n${event.body}\n\nOpen WASSCE Tutor: https://wasscetutor.com`,
-      }),
+      body: JSON.stringify({ from, to: [email], subject: copy.subject, html, text }),
     });
     if (!response.ok) return { id: event.id, sent: false, reason: "Email provider rejected delivery" };
     return { id: event.id, sent: true };
