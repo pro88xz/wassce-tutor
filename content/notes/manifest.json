@@ -6155,6 +6155,97 @@
       "title": "Listening comprehension: a method for the test",
       "est_minutes": 11,
       "sort_order": 1
+    },
+    {
+      "file": "english-language-confusable-words.md",
+      "subject": "English Language",
+      "topic": "common-confusable-words",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Commonly confused words: the pairs that cost marks",
+      "est_minutes": 9,
+      "sort_order": 1
+    },
+    {
+      "file": "english-language-synonyms-antonyms.md",
+      "subject": "English Language",
+      "topic": "synonyms-and-antonyms",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Synonyms and antonyms: nearest and opposite in meaning",
+      "est_minutes": 10,
+      "sort_order": 1
+    },
+    {
+      "file": "english-language-homonyms-homophones.md",
+      "subject": "English Language",
+      "topic": "homonyms-and-homophones",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Homophones, homonyms and homographs",
+      "est_minutes": 9,
+      "sort_order": 1
+    },
+    {
+      "file": "english-language-idioms.md",
+      "subject": "English Language",
+      "topic": "idioms-and-idiomatic-expressions",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Idioms: what they mean and how to answer the questions",
+      "est_minutes": 11,
+      "sort_order": 1
+    },
+    {
+      "file": "english-language-figures-of-speech.md",
+      "subject": "English Language",
+      "topic": "figures-of-speech",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Figures of speech: naming them, explaining them, using them",
+      "est_minutes": 10,
+      "sort_order": 1
+    },
+    {
+      "file": "english-language-word-formation.md",
+      "subject": "English Language",
+      "topic": "word-formation",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Word formation: prefixes, suffixes and word families",
+      "est_minutes": 9,
+      "sort_order": 1
+    },
+    {
+      "file": "english-language-vocabulary-in-context.md",
+      "subject": "English Language",
+      "topic": "vocabulary-in-context",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Vocabulary in context: working out the meaning",
+      "est_minutes": 9,
+      "sort_order": 1
     }
   ]
 }
