@@ -1,6 +1,6 @@
 // Email engine settings. Normally everything comes from Supabase: the mode,
 // pilot addresses and daily limit from Admin → Emails (email_settings), and
-// the secrets from Supabase Vault, where the "Set up email engine (16)"
+// the secrets from Supabase Vault, where the "Set up email engine"
 // workflow copies the Resend key and sender from GitHub secrets. Nothing has
 // to be copied into Vercel. See docs/email-engine.md.
 //

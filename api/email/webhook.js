@@ -1,6 +1,6 @@
 // POST /api/email/webhook: delivery events from Resend (set the webhook up in
 // Resend → Webhooks; put its signing secret in the GitHub secret
-// RESEND_WEBHOOK_SECRET and run the "Set up email engine (16)" workflow).
+// RESEND_WEBHOOK_SECRET and run the "Set up email engine" workflow).
 // Every event is signed (Svix scheme) and checked before it is trusted; an
 // event delivered twice is stored once. A permanent bounce or a spam complaint
 // stops all future email to that address.

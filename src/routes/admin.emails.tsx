@@ -38,6 +38,7 @@ const PROGRAMME_NAMES: Record<string, string> = {
   access_ending: 'Access ending (account)',
   pending_payment: 'Unfinished payment',
   activation: 'First study session',
+  weekly_digest: 'Weekly progress',
   reengage: 'Come back to studying',
 }
 const MODES: { id: Mode; label: string; help: string }[] = [
@@ -129,7 +130,7 @@ function AdminEmails() {
       </div>
 
       {missing ? (
-        <p className="rounded-2xl border bg-card p-4 text-sm">The email engine's database tables are not set up yet. In GitHub → Actions, run the “Set up email engine (16)” workflow first.</p>
+        <p className="rounded-2xl border bg-card p-4 text-sm">The email engine's database tables are not set up yet. In GitHub → Actions, run the “Set up email engine” workflow first.</p>
       ) : (
         <>
           {status && <Settings key={`${status.mode}|${status.daily_limit}|${status.pilot_addresses.join(',')}`} status={status} config={config} onSaved={load} />}
@@ -246,7 +247,7 @@ function Settings({ status, config, onSaved }: { status: Status; config: Config 
         <li>{status.has_resend ? '✓' : '✗'} Resend key and sender {status.has_resend ? '' : '(run the setup workflow)'}</li>
         <li>{status.has_webhook ? '✓' : '–'} Bounce and complaint webhook {status.has_webhook ? '' : '(optional, see the guide)'}</li>
       </ul>
-      {blocked && <p className="text-danger">Pilot and Live need the Resend key and sender: run the “Set up email engine (16)” workflow.</p>}
+      {blocked && <p className="text-danger">Pilot and Live need the Resend key and sender: run the “Set up email engine” workflow.</p>}
       {mode === 'pilot' && addresses.length === 0 && <p className="text-danger">Add at least one pilot address.</p>}
       <div className="flex items-center gap-3">
         <Button disabled={saving || blocked || (mode === 'pilot' && addresses.length === 0)} onClick={save}>{saving ? 'Saving…' : 'Save settings'}</Button>

@@ -17,6 +17,7 @@ highest priority first:
 | Access ending | Access ends within 3 days | The end date and what stays free | No (account email) |
 | Unfinished payment | Started a checkout 2 hours to 30 days ago, did not pay, no access | The plan's benefits with real counts and price; a second one 3 days later | Yes |
 | First study session | Account 1–14 days old, never studied | Make a first start; a second one 4 days later | Yes |
+| Weekly progress | Studied in the last 7 days; sent Sunday (Monday or Tuesday if the daily limit was reached) | Their real week: lessons, practice and average score, progress in their subject, new lessons, and the next lesson | Yes |
 | Come back to studying | No study and no sign-in for 7 days (up to a year) | Their last subject, or their paid access; a second one a week later | Yes |
 
 Limits: one engine email per student per day; at most 2 marketing emails in 7
@@ -45,7 +46,7 @@ them into Supabase Vault, where the website reads them with the Supabase key
 it already has. The link-signing and schedule secrets are made inside the
 database by the migration.
 
-1. GitHub → **Actions** → **Set up email engine (16)** → *Run workflow* (on
+1. GitHub → **Actions** → **Set up email engine** → *Run workflow* (on
    `main`). It applies migration 16 once, stores the secrets, and connects
    Resend's bounce and complaint webhook through the Resend API (if the Resend
    key is allowed to manage webhooks; otherwise it warns and you can add the
