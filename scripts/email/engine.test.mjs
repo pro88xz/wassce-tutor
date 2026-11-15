@@ -71,9 +71,10 @@ test('pending payment: second nudge 3 days after the first, then nothing', () =>
   assert.equal(plan(pending(9 * DAY, { history: both })).email?.programme === 'pending_payment', false)
 })
 
-test('pending payment: stops when paid, when access is active, and after 14 days', () => {
+test('pending payment: stops when paid, when access is active, and after 30 days', () => {
   assert.equal(plan(pending(3 * HOUR, { access_active: true, access_until: ahead(20 * DAY) })).email?.programme === 'pending_payment', false)
-  assert.equal(plan(pending(15 * DAY)).email?.programme === 'pending_payment', false)
+  assert.equal(plan(pending(20 * DAY)).email?.programme, 'pending_payment', 'a 20-day-old checkout still gets its nudge')
+  assert.equal(plan(pending(31 * DAY)).email?.programme === 'pending_payment', false)
 })
 
 test('pending payment needs marketing consent; account emails do not', () => {

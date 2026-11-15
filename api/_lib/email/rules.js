@@ -25,7 +25,7 @@ export const RULES = {
   maxFailures: 3,
   accessStarted: { withinDays: 3 },
   accessEnding: { withinDays: 3 },
-  pendingPayment: { firstAfterHours: 2, secondAfterDays: 3, maxAgeDays: 14, cooldownDays: 3, perFortnight: 2 },
+  pendingPayment: { firstAfterHours: 2, secondAfterDays: 3, maxAgeDays: 30, cooldownDays: 3, perFortnight: 2 },
   activation: { firstAfterHours: 24, secondAfterDays: 4, maxAccountAgeDays: 14 },
   reengage: { afterDays: 7, secondAfterDays: 7, maxInactiveDays: 365, newAccountDays: 14, perMonth: 2 },
 }

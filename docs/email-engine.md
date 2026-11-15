@@ -15,7 +15,7 @@ highest priority first:
 |---|---|---|---|
 | Access started | Paid in the last 3 days | What is now unlocked and how to use it | No (account email) |
 | Access ending | Access ends within 3 days | The end date and what stays free | No (account email) |
-| Unfinished payment | Started a checkout 2+ hours ago, did not pay, no access | The plan's benefits with real counts and price; a second one 3 days later | Yes |
+| Unfinished payment | Started a checkout 2 hours to 30 days ago, did not pay, no access | The plan's benefits with real counts and price; a second one 3 days later | Yes |
 | First study session | Account 1–14 days old, never studied | Make a first start; a second one 4 days later | Yes |
 | Come back to studying | No study and no sign-in for 7 days (up to a year) | Their last subject, or their paid access; a second one a week later | Yes |
 
