@@ -7,6 +7,10 @@
 // the request, tells the tutor, and returns the tutor's WhatsApp number; then
 // WhatsApp opens with a message ready to send. Lessons are in person, arranged
 // and paid directly with the tutor.
+//
+// Anyone can browse. A signed-out visitor who taps "Book this tutor" is sent
+// to sign up or sign in, and comes straight back here with that booking open
+// (src/lib/book-return.ts, src/lib/return-to.ts).
 import { useEffect, useMemo, useState } from 'react'
 import { BadgeCheck, GraduationCap, MapPin, Search, Star, Tag, Users, X } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
@@ -15,6 +19,8 @@ import { useProfile } from '@/lib/queries'
 import { monthlyFee } from '@/lib/tutors'
 import { lessonsText, listText, nle, paymentText, quote, type TutorOffer } from '@/lib/tutor-pricing'
 import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
+import { useSendToSignIn } from '@/components/auth/SignInLink'
+import { bookingReturnPath, readBookIntent, type BookIntent } from '@/lib/book-return'
 
 export type Rate = { subject_id: string; price_nle: number; lessons_per_week: number | null; subject: { id: string; name: string } | null }
 export type Tutor = {
@@ -70,6 +76,21 @@ export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: strin
   const [query, setQuery] = useState('')
   const [subjectFilter, setSubjectFilter] = useState(subjectId ?? 'all')
   const [booking, setBooking] = useState<Tutor | null>(null)
+  const [reopened, setReopened] = useState<BookIntent | null>(null)
+  const { user } = useAuth()
+  const sendToSignIn = useSendToSignIn()
+  const preferredSubject = subjectFilter === 'all' ? subjectId : subjectFilter
+
+  /** Signed in: open the booking. Signed out: sign up or sign in first, then back here with it open. */
+  const book = (tutor: Tutor, subjects?: string[], students = 1) => {
+    if (user) {
+      setReopened(null)
+      setBooking(tutor)
+      return
+    }
+    const chosen = subjects ?? (preferredSubject && tutor.tutor_subjects.some((s) => s.subject_id === preferredSubject) ? [preferredSubject] : [])
+    sendToSignIn(bookingReturnPath(window.location.pathname, { tutor: tutor.id, subjects: chosen, students }), { forName: firstName(tutor.full_name) })
+  }
 
   useEffect(() => {
     let active = true
@@ -83,7 +104,19 @@ export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: strin
       subjectId ? Promise.resolve({ data: [], error: null }) : supabase.from('subjects').select('id,name').order('name'),
     ]).then(([tutorResult, subjectResult]) => {
       if (!active) return
-      if (!tutorResult.error) setTutors((tutorResult.data ?? []) as unknown as Tutor[])
+      const list = tutorResult.error ? [] : ((tutorResult.data ?? []) as unknown as Tutor[])
+      if (!tutorResult.error) setTutors(list)
+      // Back from signing in to book a tutor: open that booking, once (a
+      // refresh, or coming back to this page later, does not reopen it).
+      const intent = readBookIntent(window.location.search)
+      if (intent) {
+        window.history.replaceState(window.history.state, '', `${window.location.pathname}${window.location.hash}`)
+        const tutor = list.find((t) => t.id === intent.tutor)
+        if (tutor) {
+          setReopened(intent)
+          setBooking(tutor)
+        }
+      }
       if (!subjectResult.error) setSubjects((subjectResult.data ?? []) as { id: string; name: string }[])
       setLoading(false)
     })
@@ -162,13 +195,22 @@ export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: strin
         <ul className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
           {visible.map((tutor) => (
             <li key={tutor.id}>
-              <TutorCard tutor={tutor} subjectId={subjectFilter === 'all' ? subjectId : subjectFilter} onBook={() => setBooking(tutor)} />
+              <TutorCard tutor={tutor} subjectId={preferredSubject} onBook={() => book(tutor)} />
             </li>
           ))}
         </ul>
       )}
 
-      {booking && <BookDialog tutor={booking} preferredSubject={subjectFilter === 'all' ? subjectId : subjectFilter} onClose={() => setBooking(null)} />}
+      {booking && (
+        <BookDialog
+          tutor={booking}
+          preferredSubject={preferredSubject}
+          initialSubjects={reopened?.tutor === booking.id ? reopened.subjects : undefined}
+          initialStudents={reopened?.tutor === booking.id ? reopened.students : undefined}
+          onSignIn={(subjects, students) => book(booking, subjects, students)}
+          onClose={() => setBooking(null)}
+        />
+      )}
     </section>
   )
 }
@@ -275,12 +317,30 @@ function whatsappMessage(tutorFirstName: string, r: Request, student: string | n
   ].join(' ')
 }
 
-function BookDialog({ tutor, preferredSubject, onClose }: { tutor: Tutor; preferredSubject?: string; onClose: () => void }) {
+function BookDialog({
+  tutor,
+  preferredSubject,
+  initialSubjects,
+  initialStudents,
+  onSignIn,
+  onClose,
+}: {
+  tutor: Tutor
+  preferredSubject?: string
+  /** What they had chosen before signing in, to carry on where they left off. */
+  initialSubjects?: string[]
+  initialStudents?: number
+  onSignIn: (subjects: string[], students: number) => void
+  onClose: () => void
+}) {
   const { user } = useAuth()
   const { data: profile } = useProfile(user?.id ?? null)
   const offered = useMemo(() => [...tutor.tutor_subjects].sort((a, b) => Number(b.subject_id === preferredSubject) - Number(a.subject_id === preferredSubject) || byName(a, b)), [tutor, preferredSubject])
-  const [chosen, setChosen] = useState<string[]>(() => (offered[0] ? [offered[0].subject_id] : []))
-  const [students, setStudents] = useState(1)
+  const [chosen, setChosen] = useState<string[]>(() => {
+    const before = (initialSubjects ?? []).filter((id) => offered.some((s) => s.subject_id === id))
+    return before.length ? before : offered[0] ? [offered[0].subject_id] : []
+  })
+  const [students, setStudents] = useState(() => Math.max(1, Math.min(initialStudents ?? 1, tutor.group_max ?? 1)))
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [whatsappUrl, setWhatsappUrl] = useState<string | null>(null)
@@ -303,7 +363,7 @@ function BookDialog({ tutor, preferredSubject, onClose }: { tutor: Tutor; prefer
 
   const agree = async () => {
     if (!user) {
-      window.location.href = `/auth?next=${encodeURIComponent(window.location.pathname)}`
+      onSignIn(chosen, students)
       return
     }
     if (picked.length === 0) return
