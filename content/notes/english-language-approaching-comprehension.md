@@ -1,119 +1,158 @@
-The comprehension passage in Paper 2 rewards students who read with a plan. Strong readers still lose marks when they rush, answer from memory of the passage instead of the words on the page, or copy whole sentences when the question wants one idea. This lesson gives you a method you can use on exam day, step by step, for any WASSCE passage.
+Every year, students who read well in class lose easy marks in the comprehension section, not because the passage is hard, but because they meet it without a plan. They read it once, start answering from memory, copy whole sentences, and run short of time. This lesson gives you a method you can use on exam day for **any** WASSCE passage, and then walks through a complete passage, question by question, so you can see the method working.
 
 ## Learning objectives
 
 By the end of this lesson you should be able to:
 
-- describe what the comprehension section tests and how it is marked
-- use a three-reading method to understand a passage quickly
-- mark up a passage so that answers are easy to find
-- read the questions in the right order and budget your time
-- avoid the habits that cost marks
+- describe what the comprehension section tests and how many marks it carries
+- read a passage with the three-reading method
+- mark up a passage so every answer is easy to find again
+- answer each question from the right lines, in the right form
+- manage your time so the comprehension does not eat into the essay
 
-## What the comprehension section tests
+## What the section tests
 
-In Paper 2, the comprehension section gives you one passage, usually a few paragraphs of narrative, description or argument, followed by questions worth **20 marks**. The questions test whether you can:
+The comprehension section of Paper 2 gives you **one passage** of several paragraphs and a set of questions worth **20 marks**. The passage may tell a story, describe a place or person, explain an issue, or argue a point. The questions always test a mixture of skills:
 
-- find **facts** stated in the passage (literal questions)
-- work out what the writer **suggests but does not say** (inferential questions)
-- explain **figurative expressions** and identify **figures of speech**
-- give the **grammatical name and function** of a phrase or clause
-- replace words with **another word or phrase** that means the same in context
+| Question type | What it asks | Typical wording |
+|---|---|---|
+| **Literal** | a fact stated in the passage | *What…? Where…? When…? State two…* |
+| **Inferential** | something suggested, not stated | *What does … suggest? Why do you think…?* |
+| **Figurative** | the meaning of an image or expression | *What does the writer mean by…?* |
+| **Grammatical** | the name and function of a phrase or clause | *What is the grammatical name of…? What is its function?* |
+| **Vocabulary** | a word that could replace one in the passage | *Find another word or phrase which means the same…* |
 
 :::callout{type=definition}
-**Comprehension** is understanding a written text: what it says, what it means, and how its language works. In the examination, it means answering questions **from the passage**, not from general knowledge.
+**Comprehension** means understanding what a text **says**, what it **means**, and how its **language works**. In the examination, every answer must come **from the passage**: your general knowledge, however good, earns nothing if the passage says something different.
 :::
 
 ## The three-reading method
 
-### First reading: the big picture
+### Reading 1: the big picture (fast)
 
-Read the whole passage once, at a normal speed, without stopping. Ask yourself:
+Read the whole passage once at normal speed. Do not stop at difficult words. When you finish, say to yourself in one sentence what it is about: *"A girl from a fishing village wins a scholarship but is afraid to leave her mother."* If you can do that, you have understood the passage well enough to start.
 
-- What is it **about**? (one sentence in your head)
-- Who is speaking, and to whom?
-- Is it telling a **story**, **describing**, **explaining** or **arguing**?
+### Then: read the questions (all of them)
 
-Do not answer anything yet.
+Now read **every question** before you read the passage again. Underline the key word in each:
 
-### Read the questions next
+- *why* (needs a reason), *how* (a manner or method), *what two* (exactly two points)
+- *in your own words* (no copying)
+- *paragraph 3*, *the last paragraph* (where to look)
 
-Before reading the passage a second time, read **all the questions**. Now you know what to look for. Underline the key word in each question: *why*, *how*, *what two*, *in your own words*, *grammatical name*.
+### Reading 2: the hunt (slow, with a pencil)
 
-### Second reading: mark it up
+Read the passage again, slowly. Each time you meet the lines that answer a question, write the **question number in the margin**. Circle words the vocabulary question lists. Underline the expression the grammar question quotes.
 
-Read again, slowly, with a pencil. As you meet the part that answers a question, write the question number in the margin. Mark:
+### Reading 3: the answer (one question at a time)
 
-- the **topic sentence** of each paragraph
-- names, numbers, dates and reasons
-- any word or expression that a question quotes
+Go to the lines you marked for question (a). Read them once more, then write the answer. Then (b), then (c). You are now answering from the **text**, not from memory.
 
-### Third reading: answer, one question at a time
-
-Go to the lines you marked for question 1, read them again carefully, then write the answer. Repeat for each question. Most answers come from **one or two sentences**, not the whole passage.
-
-:::callout{type=worked-example}
-**Using the margin numbers.** A passage describes a fishing family in Tombo. Question (c) asks: *"Why did Pa Kamara stop taking the boat out at night?"*
-
-On the second reading you wrote **(c)** beside the sentence: *"Since the storm that took his brother's canoe, Pa Kamara would only fish when he could see the shore."*
-
-Answer: **He was afraid of the sea at night after a storm destroyed his brother's canoe.** One clear sentence, taken from the marked lines, in your own words.
+:::callout{type=tip}
+Most questions follow the order of the passage: question (a) usually comes from the first paragraph, the last question from the last. If question (d) seems to have no answer, look **between** the lines you used for (c) and (e).
 :::
 
-## Budgeting your time
+## A complete walk-through
 
-The essay carries the most marks in Paper 2, so do not let the comprehension take more than its share. A good plan:
+Read this passage using the method. Then try the questions before you open the answers.
 
-| Step | Time |
-|---|---|
-| First reading | short: one quick read |
-| Read the questions | a few minutes |
-| Second reading with marking | the longest step |
-| Answering | steady, one question at a time |
-| Checking | a few minutes at the end |
+::::model{title="The Scholarship" label="Practice passage"}
+Isatu had always known the sea. She was born in Tombo, where the morning begins with the shouts of men pushing their boats into the water and ends with the women bargaining over the catch on the sand. By the age of ten she could gut a bonga fish faster than her mother, and by fifteen she was keeping the accounts for three of the smokehouses along the shore, because she was the only one who never made a mistake with the figures.
 
-If you are stuck on one question, leave a space, move on, and come back.
+So when the headteacher came to the house one evening, holding a brown envelope as carefully as if it were an egg, her mother assumed that Isatu was in trouble. The envelope contained a letter from a school in Freetown. Isatu had won a scholarship, fees, books and a place in the boarding house, for the best results in mathematics in the whole district.
+
+Her mother read it twice, folded it, and said nothing for a long time. The smokehouses needed Isatu's figures. The fish did not wait for anybody, and neither did the traders who came from Waterloo at dawn. *"Who will count for us,"* she said at last, *"when you are counting for strangers?"*
+
+Isatu went down to the water that night. The boats were dark shapes on the sand, and the tide was coming in slowly, the way it always did, without hurry and without asking permission. She thought about the classrooms she had seen in pictures, with real laboratories and libraries where the books did not have their covers missing. She thought about her mother's hands, cracked from the salt.
+
+In the morning, she found her mother already at the smokehouse. Before Isatu could speak, her mother pushed a small exercise book into her hands. On the first page, in large, careful letters, she had written the prices of the week's fish. *"Teach me,"* she said. *"You have one month."*
+::::
+
+**Questions**
+
+- (a) What two things did Isatu do well before she was fifteen?
+- (b) Why did her mother think Isatu was in trouble?
+- (c) What does the writer mean by *"holding a brown envelope as carefully as if it were an egg"*?
+- (d) What can you infer about the mother's feelings in paragraph 3?
+- (e) *"when you are counting for strangers"*: what is the grammatical name of this expression, and what is its function?
+- (f) What does the last paragraph suggest the mother has decided?
+- (g) For each of the following words, give another word or phrase that means the same and can replace it in the passage: (i) *assumed* (ii) *cracked*
+
+:::reveal{title="Model answers, with the reason each one scores"}
+**(a)** She could gut a bonga fish faster than her mother, and she kept the accounts for three smokehouses.
+*Two points, exactly as asked, from paragraph 1.*
+
+**(b)** Because the headteacher had come to their house in the evening holding an envelope.
+*A reason (the question says "why"). An unexpected visit from a headteacher usually means bad news.*
+
+**(c)** He held it very carefully, as if it were fragile and precious and might break.
+*The image is explained in plain words, not repeated.*
+
+**(d)** She was worried and unhappy about losing Isatu's help, and perhaps afraid of being left alone.
+*An inference supported by her long silence and her question, "Who will count for us…?"*
+
+**(e)** It is an adverbial clause of time. It modifies the verb *"will count"*.
+*Name and function, clearly labelled, naming the exact word it modifies.*
+
+**(f)** She has decided to let Isatu take the scholarship, and to learn the accounts herself so that the business can manage without her.
+*The exercise book and "Teach me… You have one month" show it; the passage never says it directly.*
+
+**(g)** (i) **supposed** (or *took it for granted*) (ii) **split** (or *broken*)
+*Each replacement fits the sentence: "her mother **supposed** that Isatu was in trouble"; "her mother's hands, **split** from the salt".*
+:::
+
+## Managing your time
+
+The essay carries **50 marks** and the summary **30**. The comprehension is worth **20**, so it should take roughly a fifth of your writing time, not a third. A sensible order on exam day:
+
+1. **Essay first**, while your mind is fresh, unless you are much stronger at comprehension.
+2. Then the **comprehension** and **summary**, in whichever order you prefer.
+3. Keep a few minutes at the end to check.
+
+If a single question has you stuck, leave a space and move on. A blank costs you one or two marks; a quarter of an hour lost costs far more.
 
 :::callout{type=local-example}
-Many WASSCE passages are set in West Africa: a market day in Bo, a family moving to Freetown, a debate about mining in Kono, a story about a school sports day. You may know the setting well. **Do not answer from what you know about Bo or Kono; answer from what the passage says.** If the passage says the market opens at dawn, that is the answer, even if your local market opens later.
+Passages are often set somewhere familiar: a fishing village like Tombo, a market in Bo, a family moving to Freetown, a mining town in Kono. Familiarity helps you picture the scene, but **answer from the passage, not from what you know**. If the passage says the traders came from Waterloo at dawn, that is the answer, even if you know traders who come from somewhere else.
 :::
 
 ## Habits that cost marks
 
 :::callout{type=common-mistake}
-**Copying long stretches of the passage.** If a question asks *"What two things did the villagers do?"*, write two short points, not a whole paragraph that hides them. Copying lifts may get no marks when the question says **"in your own words"**.
+**Copying a whole paragraph to answer a two-point question.** The examiner should not have to search your answer for the points. Give exactly the points asked, clearly.
 :::
 
 :::callout{type=common-mistake}
-**Answering a different question.** *"Why"* needs a reason. *"How"* needs a manner or method. *"What does the writer mean by…"* needs an explanation, not a repeat of the words.
+**Answering the wrong question word.** *Why* needs a reason; *how* needs a manner; *what does … mean* needs an explanation. Read the question word twice.
 :::
 
-Other habits to avoid:
-
-- writing in note form when the question asks for a sentence
-- giving **three** points when the question asks for **two** (extra points do not earn extra marks, and a wrong one can cost you)
-- spelling the passage's own words wrongly when you use them
-- leaving a question blank: a careful attempt can still earn a mark
+:::callout{type=common-mistake}
+**Giving more than you are asked for.** If the question asks for two reasons and you give four, the examiner may mark only the first two, and a wrong extra point can cost you.
+:::
 
 ## Key points
 
-- The comprehension section is worth **20 marks** and tests facts, inference, figurative language, grammar and vocabulary.
-- Read the passage once for the big picture, **read the questions**, then read again with a pencil.
-- Write question numbers in the margin beside the lines that answer them.
-- Answer from **the passage**, not from your own knowledge.
-- Keep answers short, complete and **in your own words** when asked.
+- The section is worth **20 marks** and mixes literal, inferential, figurative, grammatical and vocabulary questions.
+- Use the **three-reading method**: big picture, read the questions, hunt with a pencil, then answer one question at a time.
+- **Number the margin** beside the lines that answer each question.
+- Answer **from the passage**, in the **form** the question asks for.
+- Give comprehension about **a fifth** of your Paper 2 writing time.
 
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-Expect a mixture of **literal** and **inferential** questions, at least one question on a **figurative expression**, one on the **grammatical name and function** of a phrase or clause, and a set of **words to replace** with words that mean the same in context. Each question tests a different skill, so the method matters more than speed.
+Examiners reward answers that are **precise**, **complete** and **taken from the passage**. Each type of question has its own way of scoring: the next two lessons take literal, inferential and vocabulary questions, then grammatical and figurative questions, one at a time.
 :::
 
 ## Quick check
 
-1. Why should you read the questions before your second reading?
-2. A question says *"in your own words"*. What will happen if you copy the sentence from the passage?
-3. A question asks for two reasons. You can find four. What should you write?
-4. The passage says the bus left Kenema at noon, but you know that bus leaves at 8 a.m. Which time do you give?
+:::reveal{title="1. Why read the questions before your second reading?"}
+So you know exactly what to look for, and can mark each answer in the margin as you meet it.
+:::
 
-**Answers:** 1. So that you know what to look for and can mark the answers as you read. 2. You may lose the mark, because the examiner is testing understanding, not copying. 3. Two reasons only, the two the passage makes clearest. 4. Noon: the answer always comes from the passage.
+:::reveal{title="2. The question says 'in your own words'. What happens if you copy?"}
+You may lose the mark. The examiner is testing whether you understood, and copying does not show that.
+:::
+
+:::reveal{title="3. Where in the passage is question (b) usually answered?"}
+Usually soon after the lines that answered question (a): questions tend to follow the order of the passage.
+:::

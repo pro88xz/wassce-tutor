@@ -59,15 +59,17 @@ Bo.]{n=3}
 
 :mark[**REQUEST FOR STREETLIGHTS ON THE ROAD TO GOVERNMENT SECONDARY SCHOOL, BO**]{n=5}
 
-I am writing, on behalf of the students of Government Secondary School, Bo, to request streetlights on the stretch of road between Bo Main Motor Park and our school gate. The road has been unlit for over two years, and it has become dangerous for students who attend evening classes.
+I am writing, on behalf of the twelve hundred students of Government Secondary School, Bo, to request streetlights on the stretch of road between Bo Main Motor Park and our school gate. The two lights that once stood there were knocked down by a lorry over two years ago and have never been replaced, and the road has since become dangerous for students who attend evening classes.
 
-First, the darkness puts our safety at risk. Students who leave the library and the science laboratory after seven o'clock walk almost a kilometre in complete darkness. Last term, two girls had their phones and bags snatched near the motor park, and a Form Five student was knocked down by an okada rider who did not see him until it was too late.
+First, the darkness puts our safety at risk. Students who leave the library and the science laboratory after seven o'clock walk almost a kilometre in complete darkness, sharing the road with lorries, cars and okadas. Last term, two girls had their phones and bags snatched near the motor park, and a Form Five student was knocked down by an okada rider who did not see him until it was too late. He spent three weeks in hospital and missed his mock examinations. Since then, many students walk home in large groups or run the whole way, which is no way to end a day of study.
 
-Secondly, the lack of light is affecting our studies. Many parents now refuse to let their children stay for evening lessons, even in the months before the WASSCE, because they fear for their safety on the way home. Our evening study programme, which helped many students pass last year, has fewer than half its usual numbers.
+Secondly, the lack of light is affecting our studies. Many parents now refuse to let their children stay for evening lessons, even in the months before the WASSCE, because they fear for their safety on the way home. Our evening study programme, which helped many students pass last year, now has fewer than half its usual numbers, and the students who miss it are often those who need it most, because they have no electricity to study by at home.
 
-Finally, streetlights would benefit the whole community, not only students. Traders at the motor park would be able to work later and more safely, and the road would be safer for everyone who uses it at night.
+Finally, streetlights would benefit the whole community, not only students. Traders at the motor park would be able to work later and more safely, travellers arriving on night buses would not have to walk into darkness, and the road would be safer for everyone who uses it after sunset. Solar-powered lights, which several other councils have installed, would also spare the Council the cost of electricity.
 
-We therefore appeal to the Council to install streetlights along this road before the end of the rainy season, when the evenings are darkest. The students' union is willing to help by keeping the area around the lights clean and reporting any damage at once.
+We are aware that the Council has many demands on its budget, and we do not ask for the whole town to be lit at once. Six or seven lights along this one kilometre would be enough to make it safe, and the road is used every day by students from at least three schools, so few projects could protect so many young people at so little cost.
+
+We therefore appeal to the Council to install streetlights along this road before the end of the rainy season, when the evenings are darkest. The students' union is willing to help by keeping the area around the lights clean, reporting any damage at once, and organising a fund-raising day towards the cost if that would speed up the work.
 
 Thank you for your kind consideration of this request.
 
@@ -81,7 +83,7 @@ Thank you for your kind consideration of this request.
 :::
 ::::
 
-Now each part, in detail.
+This is a complete examination answer: about 460 words in the body, comfortably above the minimum length, with three developed points, an answer to the obvious objection (cost) and a clear request. Now each part of the format, in detail.
 
 ### 1. The writer's address
 

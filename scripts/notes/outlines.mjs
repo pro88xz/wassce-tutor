@@ -11,7 +11,7 @@
 // s: the teaching sections (level-2 headings), each with its position among all
 //    level-2 headings in the lesson, which is the number LessonView puts in the
 //    heading's id ("section-2"), so a topic page can link straight to it.
-// w: worked examples. f: diagrams.
+// w: worked examples (including model answers). f: diagrams.
 //
 // Topic pages show this so a student can see what each lesson covers before
 // opening it. Lessons that are not in the manifest simply have no outline.
@@ -55,7 +55,10 @@ export function outline(md) {
     if (!ROUTINE.test(title)) sections.push([n, title])
   }
   const worked =
-    (md.match(/:::callout\{type=worked-example\}/g) ?? []).length + (md.match(/^\*\*Worked example\b/gim) ?? []).length
+    (md.match(/:::callout\{type=worked-example\}/g) ?? []).length +
+    (md.match(/^\*\*Worked example\b/gim) ?? []).length +
+    // Model answers in writing lessons (a letter, a summary, a passage worked through).
+    (md.match(/^::::model\b/gm) ?? []).length
   const figures = (md.match(/!\[[^\]]*\]\([^)]+\)/g) ?? []).length
   return { s: sections, w: worked, f: figures }
 }

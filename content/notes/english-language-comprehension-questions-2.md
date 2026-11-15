@@ -1,126 +1,181 @@
-Two comprehension questions appear in almost every WASSCE paper and frighten many students: *"What is the grammatical name and function of the expression…?"* and *"…is an example of what figure of speech?"* Both follow fixed patterns. Learn the patterns and they become some of the easiest marks in the section.
+Two questions appear under almost every WASSCE passage and frighten more students than any others: *"What is the grammatical name of the expression…, and what is its function?"* and *"What does the writer mean by…?"* Both follow fixed patterns. Once you know the patterns, they stop being frightening and become some of the most reliable marks in the paper. This lesson teaches both, with a decision chart, many examples from the kind of sentences WAEC uses, and practice.
 
 ## Learning objectives
 
 By the end of this lesson you should be able to:
 
-- give the grammatical name of a phrase or clause from a passage
-- state its function in the sentence
-- explain the meaning of a figurative expression in context
-- name common figures of speech used in passages
+- tell a phrase from a clause
+- give the grammatical name of a noun, adjectival or adverbial clause, and of the common phrases
+- state the function of each, naming the exact word it relates to
+- explain a figurative expression in plain, literal English
+- name the common figures of speech used in passages
 
-## Grammatical name and function
+## Part 1: grammatical name and function
 
-The question quotes an expression and asks for two things:
-
-- its **name**: what kind of structure it is (a phrase or a clause, and which kind)
-- its **function**: what job it does in its sentence
+### Phrase or clause?
 
 :::callout{type=definition}
-A **phrase** is a group of words **without** a subject and finite verb (*"in the morning"*, *"the old fisherman"*). A **clause** **has** a subject and a finite verb (*"when the rain stopped"*, *"that she was tired"*).
+- A **phrase** is a group of words **without** a subject and a finite verb: *in the morning*, *the old fisherman*, *to save money*, *running for the bus*.
+- A **clause** is a group of words **with** a subject and a finite verb: *when **the rain stopped***, *that **she was** tired*, *who **won** the race*.
 :::
 
-### The names you will use most
+**Quick test:** can you find *someone or something doing* (subject) and a verb with a tense? Then it is a clause.
 
-| Name | Begins with / looks like | Example |
-|---|---|---|
-| **Noun clause** | *that, what, whether, how, why…* | *"**that the bridge was unsafe**"* |
-| **Adjectival (relative) clause** | *who, which, that, whose, whom* after a noun | *"the boy **who won the race**"* |
-| **Adverbial clause** of time, reason, condition, concession, purpose… | *when, because, if, although, so that…* | *"**because the road was flooded**"* |
-| **Noun phrase** | a noun and the words around it | *"**the tired market women**"* |
-| **Prepositional phrase** | a preposition and its object | *"**across the river**"* |
-| **Infinitive phrase** | *to* + verb | *"**to save money**"* |
+### The three clauses WAEC asks about most
 
-### The functions to match them
+| Name | Usually begins with | Function | Example |
+|---|---|---|---|
+| **Noun clause** | *that, what, whether, if, how, why, who, when* | **subject**, **object** or **complement** of a verb; **object of a preposition** | *She said **that she was tired**.* |
+| **Adjectival (relative) clause** | *who, whom, whose, which, that, where, when*, coming **right after a noun** | **qualifies** that noun or pronoun | *The man **who sold us the fish** has gone.* |
+| **Adverbial clause** | *when, before, after, because, since, if, unless, although, so that, as…* | **modifies** the verb in the main clause, telling **time, reason, condition, concession, purpose, manner, place** | ***Because the road was flooded**, the bus turned back.* |
 
-| Name | Common functions |
-|---|---|
-| Noun clause / noun phrase | **subject** of the verb, **object** of the verb, **complement**, object of a preposition |
-| Adjectival clause | **qualifies** (describes) the noun or pronoun before it |
-| Adverbial clause | **modifies** the verb (or the main clause), telling time, reason, condition… |
-| Prepositional phrase | adverbial (modifies a verb) or adjectival (qualifies a noun) |
+### Name it, then find its job
 
 :::callout{type=worked-example}
-**Sentence:** *"The teacher announced **that the examination had been postponed**."*
+**1.** *"The teacher announced **that the examination had been postponed**."*
 
-- **Name:** noun clause
-- **Function:** object of the verb *"announced"*
+- Replace it with *"something"*: *The teacher announced something.* It works, so it is a **noun clause**.
+- What job? It is what the teacher announced: the **object of the verb "announced"**.
 
-**Sentence:** *"**When the generator stopped**, the whole street went dark."*
+**Answer:** Noun clause; object of the verb *"announced"*.
 
-- **Name:** adverbial clause of time
-- **Function:** modifies the verb *"went"*
+**2.** *"**What the chief decided** surprised everyone."*
 
-**Sentence:** *"The nurse **who treated my sister** comes from Makeni."*
+- *Something surprised everyone.* Noun clause again.
+- It comes before the verb and does the surprising: the **subject of the verb "surprised"**.
 
-- **Name:** adjectival (relative) clause
-- **Function:** qualifies the noun *"nurse"*
+**Answer:** Noun clause; subject of the verb *"surprised"*.
+
+**3.** *"The nurse **who treated my sister** comes from Makeni."*
+
+- It comes straight after the noun *nurse* and tells us **which** nurse: **adjectival clause**.
+
+**Answer:** Adjectival (relative) clause; qualifies the noun *"nurse"*.
+
+**4.** *"**Although he had studied hard**, Musa failed the test."*
+
+- It answers *in spite of what?* It shows **concession** (a contrast). **Adverbial clause of concession**.
+
+**Answer:** Adverbial clause of concession; modifies the verb *"failed"*.
 :::
+
+### Types of adverbial clause
+
+| Type | Linking words | Example |
+|---|---|---|
+| **Time** | when, while, before, after, as soon as, until | ***As soon as the bell rang**, the pupils rushed out.* |
+| **Reason** | because, since, as | *We stayed indoors **because it was raining**.* |
+| **Condition** | if, unless, provided that | ***If you study daily**, you will pass.* |
+| **Concession** | although, though, even though, even if | ***Though she was tired**, she finished the work.* |
+| **Purpose** | so that, in order that | *He saved money **so that he could buy a bicycle**.* |
+| **Result** | so … that, such … that | *It was so hot **that the tar melted**.* |
+| **Place** | where, wherever | *Sit **where you can see the board**.* |
+| **Manner / comparison** | as, as if, than | *She sang **as if her life depended on it**.* |
+
+### The phrases you also need
+
+| Name | Example | Function |
+|---|---|---|
+| **Noun phrase** | ***The tired market women** went home.* | subject of *went* |
+| **Prepositional (adverbial) phrase** | *He swam **across the river**.* | modifies the verb *swam* |
+| **Prepositional (adjectival) phrase** | *The house **on the hill** is ours.* | qualifies the noun *house* |
+| **Infinitive phrase** | *She came **to see the doctor**.* | adverbial of purpose, modifying *came* |
+| **Participial phrase** | ***Running for the bus**, he dropped his phone.* | qualifies the pronoun *he* |
 
 :::callout{type=common-mistake}
-Give **both** parts, clearly labelled: *"Name: …  Function: …"*. An answer with only the name, or with *"it describes the sentence"*, usually earns half the marks or none. Name the **exact word** it modifies, qualifies or is the object of.
+The three answers that score nothing:
+
+1. **Name without function** (*"adverbial clause"* and nothing else): half marks at best.
+2. **A vague function** (*"it describes the sentence"*, *"it gives more information"*): name the **exact word** it modifies, qualifies, or is the subject/object of.
+3. **"Adverbial clause"** without the type: say **of time**, **of reason**, **of condition**…
 :::
 
-### A quick way to find the function
+:::callout{type=tip}
+Set the answer out in two labelled lines. It is clearer for you and for the examiner:
 
-- Can you replace the clause with **"something"** or **"it"**? Then it is a **noun** clause. Ask: is it the subject, object or complement?
-- Does it come straight after a **noun** and describe it? **Adjectival** clause, qualifying that noun.
-- Does it answer **when, why, where, how, on what condition**? **Adverbial** clause, modifying the verb.
+**Grammatical name:** adverbial clause of reason\
+**Function:** modifies the verb *"stayed"*
+:::
 
-## Figurative expressions
+## Part 2: figurative expressions
 
-A question may say: *"…the town was **a sleeping giant**…  What does the writer mean by this?"* The examiner wants the **meaning in plain words**, in context.
+A question quotes an image from the passage and asks what it means:
+
+> *"…Koidu had become a sleeping giant." What does the writer mean by this?*
+
+### The three steps
+
+1. **What is compared to what?** (the town → a giant)
+2. **What do they share?** (a giant is huge and powerful; a sleeping one is not using its power)
+3. **Say it literally, in context.**
 
 :::callout{type=worked-example}
-**Passage:** *"After the mine closed, Koidu became a sleeping giant."*
-
-**Weak answer:** The town was a giant that was sleeping. *(It repeats the words.)*
-
-**Good answer:** The town still had great wealth and potential, but it was inactive: very little work or trade was going on.
+| Expression | Weak answer | Strong answer |
+|---|---|---|
+| *"After the mine closed, Koidu became a sleeping giant."* | Koidu was a giant that slept. | Koidu still had great wealth and potential, but very little work or trade was happening there. |
+| *"The news spread like a bush fire."* | It spread like fire in the bush. | The news spread very fast and to many people. |
+| *"Her mother's face was a closed door."* | Her face was like a door. | Her mother showed no feelings and would not discuss the matter. |
+| *"The classroom was an oven."* | The class was hot like an oven. | The classroom was extremely and uncomfortably hot. |
 :::
 
-How to answer:
+### Naming the figure of speech
 
-1. Ask what is being **compared** to what.
-2. Ask what the two have **in common** (a giant is big and powerful; sleeping means inactive).
-3. Write the meaning in **literal** language, linked to the passage.
-
-## Naming figures of speech
-
-| Figure | What it does | Example |
+| Figure | How to recognise it | Example |
 |---|---|---|
-| **Simile** | compares using *like* or *as* | *"The crowd moved like a slow river."* |
-| **Metaphor** | says one thing **is** another | *"The classroom was an oven."* |
-| **Personification** | gives human qualities to things | *"The wind whispered through the palm trees."* |
-| **Hyperbole** | exaggerates for effect | *"I have told you a thousand times."* |
-| **Irony** | says the opposite of what is meant, or the result is the opposite of what is expected | *"What a lovely day,"* he said, as the rain poured. |
-| **Euphemism** | a gentle way to say something unpleasant | *"He passed away."* |
-| **Alliteration** | repeats the first consonant sound | *"busy, bustling Bo"* |
-| **Oxymoron** | puts opposite words together | *"a deafening silence"* |
-| **Rhetorical question** | a question asked for effect, not for an answer | *"Who does not love a good wedding?"* |
+| **Simile** | a comparison with *like* or *as* | *The crowd moved **like a slow river**.* |
+| **Metaphor** | says one thing **is** another | *The classroom **was an oven**.* |
+| **Personification** | a thing given human actions or feelings | *The wind **whispered** through the palm trees.* |
+| **Hyperbole** | deliberate exaggeration | *I have told you **a thousand times**.* |
+| **Irony** | the opposite of what is meant, or of what is expected | *"What lovely weather," he said, as the rain poured.* |
+| **Euphemism** | a gentle way of saying something unpleasant | *He **passed on** last year.* |
+| **Oxymoron** | two opposite words together | *a **deafening silence*** |
+| **Alliteration** | the same first consonant sound repeated | ***b**usy, **b**ustling **B**o* |
+| **Onomatopoeia** | a word that sounds like its meaning | *the **hiss** of the frying pan* |
+| **Rhetorical question** | a question asked for effect | *Who does not love a good wedding?* |
 
 :::callout{type=local-example}
-Sierra Leonean speech and Krio proverbs are full of figures of speech. *"Monkey work, baboon chop"* (one person works, another enjoys the reward) is a **proverb** that uses metaphor: the monkey and baboon stand for people. If a passage quotes a proverb, explain its **meaning** in plain English, just as you would a metaphor.
+Krio proverbs are figures of speech too. *"Monkey work, baboon chop"* (one person works, another enjoys the reward) is a **metaphor**: the monkey and the baboon stand for people. *"Cockroach no get right na fowl yard"* (the weak have no rights among the powerful) works the same way. If a passage quotes a proverb, explain its **meaning** in plain English.
+:::
+
+## Practice
+
+:::reveal{title="1. Name and function: 'I do not know why she left early.'"}
+**Name:** noun clause\
+**Function:** object of the verb *"know"*
+:::
+
+:::reveal{title="2. Name and function: 'The house that we rented in Bo had no water.'"}
+**Name:** adjectival (relative) clause\
+**Function:** qualifies the noun *"house"*
+:::
+
+:::reveal{title="3. Name and function: 'We will start the meeting when the chairman arrives.'"}
+**Name:** adverbial clause of time\
+**Function:** modifies the verb *"will start"*
+:::
+
+:::reveal{title="4. Name and function: 'His fear was that the bridge would collapse.'"}
+**Name:** noun clause\
+**Function:** complement of the verb *"was"*
+:::
+
+:::reveal{title="5. Explain: 'Her words were a knife in his heart.' Name the figure of speech."}
+Her words hurt him deeply and caused him great emotional pain. It is a **metaphor**.
+:::
+
+:::reveal{title="6. Explain: 'The old lorry groaned up the hill.' Name the figure of speech."}
+The lorry moved up the hill slowly and with great difficulty, making a heavy, straining noise. It is **personification** (the lorry *groans* like a person).
 :::
 
 ## Key points
 
-- For **grammatical name and function**, give the **kind** of phrase or clause and the **job** it does, naming the word it relates to.
-- Noun clauses act as **subject, object or complement**; adjectival clauses **qualify** a noun; adverbial clauses **modify** a verb.
-- For **figurative expressions**, explain the meaning in **plain, literal** words, in the context of the passage.
-- Know the common figures: simile, metaphor, personification, hyperbole, irony, euphemism, alliteration, oxymoron, rhetorical question.
+- **Phrase**: no subject-and-finite-verb. **Clause**: has both.
+- **Noun clause**: subject, object or complement. **Adjectival clause**: qualifies a noun. **Adverbial clause**: modifies a verb, and has a **type** (time, reason, condition…).
+- Always give **name and function**, naming the **exact word** it relates to.
+- Explain figurative language in **plain, literal words**, in the **context** of the passage.
 
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-Expect **one grammatical name-and-function question** (often split into two marks) and **one or two figurative-language questions** per passage. Examiners reject answers that repeat the expression or that give a name without a function. Label both parts and be specific.
+Expect **one grammatical name-and-function question** (usually two marks: one for the name, one for the function) and **one or two figurative-expression questions** per passage. Examiners reject answers that repeat the expression, give a name without a function, or describe the function vaguely.
 :::
-
-## Quick check
-
-1. Name and function: *"I do not know **why she left early**."*
-2. Name and function: *"The house **that we rented in Bo** had no water."*
-3. What figure of speech is *"The sun smiled down on the farmers"*?
-4. Explain *"Her words were a knife in his heart."*
-
-**Answers:** 1. Noun clause; object of the verb *"know"*. 2. Adjectival (relative) clause; qualifies the noun *"house"*. 3. Personification. 4. Her words hurt him deeply: they caused him great emotional pain (a metaphor).
