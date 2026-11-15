@@ -21,7 +21,9 @@ export const Route = createFileRoute('/auth')({
 function AuthPage() {
   const navigate = useNavigate()
   const { user } = useAuth()
-  const params = new URLSearchParams(typeof window === 'undefined' ? '' : window.location.search)
+  // Read once, when the page opens: after signing in the address changes to
+  // the destination while this page is still on screen for a moment.
+  const [params] = useState(() => new URLSearchParams(typeof window === 'undefined' ? '' : window.location.search))
   const intent = params.get('intent') === 'tutor' ? 'tutor' : params.get('intent') === 'affiliate' ? 'affiliate' : 'student'
   const referralCode = params.get('ref')?.trim().toUpperCase() ?? ''
   // Where they were going before being asked to sign in (src/lib/return-to.ts):

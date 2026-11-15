@@ -19,7 +19,7 @@ import { useProfile } from '@/lib/queries'
 import { monthlyFee } from '@/lib/tutors'
 import { lessonsText, listText, nle, paymentText, quote, type TutorOffer } from '@/lib/tutor-pricing'
 import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
-import { useSendToSignIn } from '@/components/auth/SignInLink'
+import { useSendToSignIn } from '@/lib/use-send-to-sign-in'
 import { bookingReturnPath, readBookIntent, type BookIntent } from '@/lib/book-return'
 
 export type Rate = { subject_id: string; price_nle: number; lessons_per_week: number | null; subject: { id: string; name: string } | null }

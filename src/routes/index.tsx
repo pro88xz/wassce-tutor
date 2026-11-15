@@ -27,7 +27,7 @@ function Index() {
 
   useEffect(() => {
     if (!loading && user && profile && !profile.onboarded) {
-      navigate({ to: '/onboarding' })
+      navigate({ to: '/onboarding', replace: true }) // replace: back from set-up must not land here and bounce again
     }
   }, [loading, user, profile, navigate])
 
