@@ -2,6 +2,7 @@
 import assert from 'node:assert/strict'
 import crypto from 'node:crypto'
 import { test } from 'node:test'
+import { mergeConfig } from '../../api/_lib/email/config.js'
 import { runEngine } from '../../api/_lib/email/engine.js'
 import { renderEmail } from '../../api/_lib/email/layout.js'
 import { sendViaResend } from '../../api/_lib/email/resend.js'
@@ -365,4 +366,22 @@ test('engine: a refused address is suppressed so it is never tried again', async
   assert.equal(result.failed, 1)
   assert.equal(client.log.upserts[0].table, 'email_suppressions')
   assert.equal(client.log.upserts[0].v.reason, 'invalid')
+})
+
+// ── Settings: from Supabase, environment variables only override ───────────
+test('settings come from the database; environment variables override when set', () => {
+  const row = { mode: 'pilot', pilot_addresses: ['Me@Example.com'], daily_limit: 50, paused: false, resend_api_key: 're_db', email_from: 'WASSCE Tutor <a@b.c>', token_secret: 't'.repeat(64), cron_secret: 'c'.repeat(64) }
+  const none = { mode: null, resendKey: null, from: null, replyTo: null, tokenSecret: null, cronSecret: null, webhookSecret: null, onlyTo: null, dailyLimit: null, site: 'https://wasscetutor.com' }
+  const fromDb = mergeConfig(row, none)
+  assert.equal(fromDb.mode, 'pilot')
+  assert.deepEqual(fromDb.onlyTo, ['me@example.com'])
+  assert.equal(fromDb.dailyLimit, 50)
+  assert.equal(fromDb.resendKey, 're_db')
+  assert.equal(fromDb.modeFromEnv, false)
+  const overridden = mergeConfig(row, { ...none, mode: 'off', resendKey: 're_env' })
+  assert.equal(overridden.mode, 'off')
+  assert.equal(overridden.modeFromEnv, true)
+  assert.equal(overridden.resendKey, 're_env')
+  assert.equal(mergeConfig(null, none).mode, 'off', 'no database row: the engine stays off')
+  assert.equal(mergeConfig({ ...row, mode: 'loud' }, none).mode, 'off', 'an unknown mode is treated as off')
 })

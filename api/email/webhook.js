@@ -1,16 +1,18 @@
 // POST /api/email/webhook: delivery events from Resend (set the webhook up in
-// Resend → Webhooks; its signing secret goes in RESEND_WEBHOOK_SECRET).
+// Resend → Webhooks; put its signing secret in the GitHub secret
+// RESEND_WEBHOOK_SECRET and run the "Set up email engine (16)" workflow).
 // Every event is signed (Svix scheme) and checked before it is trusted; an
 // event delivered twice is stored once. A permanent bounce or a spam complaint
 // stops all future email to that address.
-import { emailEnv } from '../_lib/email/config.js'
+import { loadEmailConfig } from '../_lib/email/config.js'
 import { verifyResendSignature } from '../_lib/email/webhook-signature.js'
 import { db } from '../_lib/server.js'
 
 const reply = (body, status = 200) => new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } })
 
 export async function POST(request) {
-  const env = emailEnv()
+  const client = db()
+  const env = await loadEmailConfig(client)
   const raw = await request.text()
   if (!verifyResendSignature(raw, request.headers, env.webhookSecret)) return reply({ error: 'invalid signature' }, 401)
 
@@ -23,7 +25,6 @@ export async function POST(request) {
   const type = String(event?.type ?? '')
   const data = event?.data ?? {}
   const messageId = typeof data.email_id === 'string' ? data.email_id : null
-  const client = db()
 
   const { data: job } = messageId
     ? await client.from('email_send_jobs').select('id, user_id').eq('provider_message_id', messageId).maybeSingle()

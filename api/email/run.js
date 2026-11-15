@@ -1,8 +1,9 @@
-// GET /api/email/run: one run of the email engine. Called by Vercel Cron
-// (vercel.json → crons) with "Authorization: Bearer <CRON_SECRET>"; any other
-// caller is refused. What it does is decided by EMAIL_MODE (off, dry-run,
-// pilot, live). See docs/email-engine.md.
-import { emailEnv } from '../_lib/email/config.js'
+// GET /api/email/run: one run of the email engine. Started once a day by the
+// GitHub workflow "Email engine daily run", which sends the schedule secret
+// kept in Supabase Vault ("Authorization: Bearer <secret>"); any other caller
+// is refused. What it does is decided by the mode set in Admin → Emails
+// (off, dry-run, pilot, live). See docs/email-engine.md.
+import { loadEmailConfig } from '../_lib/email/config.js'
 import { runEngine } from '../_lib/email/engine.js'
 import { sendViaResend } from '../_lib/email/resend.js'
 import { db } from '../_lib/server.js'
@@ -19,13 +20,14 @@ function authorised(request, secret) {
 }
 
 export async function GET(request) {
-  const env = emailEnv()
-  if (!authorised(request, env.cronSecret)) return reply({ error: 'unauthorised' }, 401)
+  const client = db()
+  const config = await loadEmailConfig(client, { fresh: true })
+  if (!authorised(request, config.cronSecret)) return reply({ error: 'unauthorised' }, 401)
   try {
     const summary = await runEngine({
-      client: db(),
-      env,
-      send: (message) => sendViaResend({ apiKey: env.resendKey, ...message }),
+      client,
+      env: config,
+      send: (message) => sendViaResend({ apiKey: config.resendKey, ...message }),
     })
     console.log(`[email] run: ${JSON.stringify(summary)}`)
     return reply(summary)

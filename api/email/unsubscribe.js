@@ -6,7 +6,7 @@
 //         button on the result page subscribes again.
 // Only marketing emails stop; account emails (payment confirmations, access
 // ending) still arrive.
-import { emailEnv } from '../_lib/email/config.js'
+import { loadEmailConfig } from '../_lib/email/config.js'
 import { verifyUnsubscribeToken } from '../_lib/email/tokens.js'
 import { db } from '../_lib/server.js'
 
@@ -39,7 +39,7 @@ function form(token, action, label, quiet = false) {
 }
 
 export async function GET(request) {
-  const env = emailEnv()
+  const env = await loadEmailConfig(db())
   const token = new URL(request.url).searchParams.get('t') ?? ''
   if (!verifyUnsubscribeToken(env.tokenSecret, token)) return invalid()
   return page(
@@ -49,7 +49,8 @@ export async function GET(request) {
 }
 
 export async function POST(request) {
-  const env = emailEnv()
+  const client = db()
+  const env = await loadEmailConfig(client)
   const token = new URL(request.url).searchParams.get('t') ?? ''
   const userId = verifyUnsubscribeToken(env.tokenSecret, token)
   const params = new URLSearchParams(await request.text().catch(() => ''))
@@ -58,7 +59,6 @@ export async function POST(request) {
 
   const resubscribe = !oneClick && params.get('action') === 'resubscribe'
   const now = new Date().toISOString()
-  const client = db()
   const { error } = await client.from('email_preferences').upsert(
     resubscribe
       ? { user_id: userId, marketing_status: 'subscribed', consent_source: 'email_link', subscribed_at: now, updated_at: now }

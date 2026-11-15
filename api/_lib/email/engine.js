@@ -60,14 +60,14 @@ export function composeMessage(env, job, stats) {
 }
 
 /**
- * @param deps { client: Supabase (secret key), env: emailEnv(), now, send(message) → { ok, id, error, permanent }, sleep }
+ * @param deps { client: Supabase (secret key), env: loadEmailConfig(), now, send(message) → { ok, id, error, permanent }, sleep }
  */
 export async function runEngine({ client, env, now = Date.now(), send, sleep = (ms) => new Promise((r) => setTimeout(r, ms)) }) {
   const started = Date.now()
   const summary = { mode: env.mode, considered: 0, due: 0, queued: 0, sent: 0, failed: 0, skipped: {}, byProgramme: {} }
-  if (env.mode === 'off') return { ...summary, stopped: 'EMAIL_MODE is off' }
+  if (env.mode === 'off') return { ...summary, stopped: 'mode is off' }
   if (env.mode !== 'dry-run' && !canSend(env)) return { ...summary, stopped: 'Resend or token secret not configured' }
-  if (env.mode === 'pilot' && env.onlyTo.length === 0) return { ...summary, stopped: 'pilot mode needs EMAIL_ONLY_TO' }
+  if (env.mode === 'pilot' && env.onlyTo.length === 0) return { ...summary, stopped: 'pilot mode needs pilot addresses' }
 
   const { data: settings, error: settingsError } = await client.from('email_settings').select('paused').eq('id', true).maybeSingle()
   if (settingsError) throw new Error(`email_settings: ${settingsError.message}`)

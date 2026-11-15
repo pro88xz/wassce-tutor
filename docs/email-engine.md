@@ -6,8 +6,9 @@ repository.
 
 ## What it sends
 
-The engine runs once a day at 10:00 Freetown time (Vercel Cron →
-`/api/email/run`). For every account it decides whether one email is due,
+The engine runs once a day at 10:00 Freetown time: the GitHub workflow
+**Email engine daily run** calls `/api/email/run` on the website (you can also
+start it by hand from the Actions tab, and each run's summary is in its log). For every account it decides whether one email is due,
 highest priority first:
 
 | Programme | Who | Emails | Needs marketing consent |
@@ -38,37 +39,33 @@ reminders. The rules are in `api/_lib/email/rules.js`, with tests in
 
 ## Setting it up
 
-1. **Database.** In GitHub → Actions, run **Apply email engine migration (16)**
-   on `main`.
-2. **Vercel environment variables** (Settings → Environment Variables,
-   Production):
+Nothing has to be copied into Vercel. The Resend key and sender already exist
+as GitHub secrets (`RESEND_API_KEY`, `EMAIL_FROM`); the setup workflow copies
+them into Supabase Vault, where the website reads them with the Supabase key
+it already has. The link-signing and schedule secrets are made inside the
+database by the migration.
 
-   | Name | Value |
-   |---|---|
-   | `RESEND_API_KEY` | The same Resend key used by the tutor notification function |
-   | `EMAIL_FROM` | The same verified sender, e.g. `WASSCE Tutor <hello@wasscetutor.com>` |
-   | `EMAIL_TOKEN_SECRET` | 32+ random characters (signs unsubscribe and click links). Generate with `openssl rand -base64 48`. Never change it casually: old unsubscribe links stop working. |
-   | `CRON_SECRET` | Another random string; Vercel Cron sends it automatically |
-   | `EMAIL_MODE` | `dry-run` to start (see below) |
-   | `EMAIL_ONLY_TO` | For pilot mode: your own addresses, comma-separated |
-   | `EMAIL_DAILY_LIMIT` | Optional, default 80. Resend's free plan allows 100 a day. |
-   | `EMAIL_REPLY_TO` | Optional reply-to address |
-
-3. **Resend webhook** (bounces and complaints): Resend → Webhooks → add
+1. GitHub → **Actions** → **Set up email engine (16)** → *Run workflow* (on
+   `main`). It applies migration 16 once and stores the secrets. Run it again
+   whenever you change one of those GitHub secrets.
+2. Optional, for bounces and complaints: Resend → Webhooks → add
    `https://wasscetutor.com/api/email/webhook` with the events *email.sent,
-   email.delivered, email.bounced, email.complained*. Put its signing secret
-   (`whsec_…`) in `RESEND_WEBHOOK_SECRET`.
-4. Redeploy so the variables take effect.
+   email.delivered, email.bounced, email.complained*. Save its signing secret
+   (`whsec_…`) as the GitHub secret `RESEND_WEBHOOK_SECRET`, then run the setup
+   workflow again. (Optional too: `EMAIL_REPLY_TO`.)
 
 ## Launching safely
 
-1. `EMAIL_MODE=dry-run`. Each daily run decides who is due and logs it in
-   Vercel → Logs (`[email] run: …`), but sends nothing.
-2. Admin → **Emails** → **Send me test emails**: one of each email to your own
-   inbox. Check it on a phone.
-3. `EMAIL_MODE=pilot` with `EMAIL_ONLY_TO` set: real rules, but only those
-   addresses can receive email.
-4. `EMAIL_MODE=live`.
+Everything below is in the website's **Admin → Emails** page.
+
+1. **Send me test emails**: one of each email to your own inbox. Check them
+   on a phone.
+2. Mode **Dry run**, save. The next daily run decides who is due and prints
+   it in the workflow log, but sends nothing. (Actions → Email engine daily
+   run → *Run workflow* to try it straight away.)
+3. Mode **Pilot** with your own addresses, save: real rules, but only those
+   addresses receive email.
+4. Mode **Live**.
 
 Admin → **Emails** shows the mode, consent totals, emails sent today, and per
 programme: sent, failed, skipped, clicked, and how many students studied or
@@ -77,6 +74,10 @@ cancels anything queued.
 
 ## How it stays safe
 
+- Settings can be overridden by Vercel environment variables of the same
+  meaning (`EMAIL_MODE`, `EMAIL_DAILY_LIMIT`, `EMAIL_ONLY_TO`,
+  `RESEND_API_KEY`, `EMAIL_FROM`, …): setting `EMAIL_MODE=off` in Vercel is an
+  emergency stop that does not depend on the database. None are needed.
 - Each email has a unique key (`programme:step:anchor`); the database refuses a
   second live job with the same key, and Resend gets the same key as its
   Idempotency-Key. Concurrent runs claim jobs with `FOR UPDATE SKIP LOCKED`.
@@ -105,5 +106,5 @@ cancels anything queued.
 - Weekly digest and new-lesson announcements.
 - Automatic clean-up of old event rows.
 
-Rollback: the migration file ends with the SQL that removes the engine. Set
-`EMAIL_MODE=off` first.
+Rollback: set the mode to Off, then run the SQL at the end of the migration
+file, which removes the engine and its Vault secrets.

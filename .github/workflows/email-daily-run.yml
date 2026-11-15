@@ -1,0 +1,47 @@
+name: Email engine daily run
+
+# Starts the email engine once a day at 10:00 Freetown time (GMT), and on
+# demand from the Actions tab. The engine itself runs on the website
+# (api/email/run.js); this only knocks on the door with the schedule secret
+# kept in Supabase Vault. What happens is decided by the mode in
+# Admin → Emails. The run's summary is printed below each run.
+on:
+  schedule:
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wassce-tutor-email-engine-run
+  cancel-in-progress: false
+
+jobs:
+  run:
+    name: Run the email engine
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    environment: production
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Install PostgreSQL client
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes postgresql-client
+
+      - name: Start the run on wasscetutor.com
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          test -n "$SUPABASE_DB_URL" || { echo "Missing SUPABASE_DB_URL"; exit 1; }
+          SECRET="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align \
+            --command "select decrypted_secret from vault.decrypted_secrets where name = 'email_cron_secret';" | tr -d '[:space:]')"
+          test -n "$SECRET" || { echo "No schedule secret yet: run the 'Set up email engine (16)' workflow first."; exit 1; }
+          echo "::add-mask::$SECRET"
+          curl --fail-with-body --silent --show-error --max-time 120 \
+            --header "Authorization: Bearer $SECRET" \
+            https://wasscetutor.com/api/email/run
+          echo

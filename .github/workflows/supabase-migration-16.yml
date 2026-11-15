@@ -1,9 +1,13 @@
-name: Apply email engine migration (16)
+name: Set up email engine (16)
 
-# Run by hand from the Actions tab, on main. Adds the email engine's tables
-# (consent, suppressions, send jobs, events), subscribes existing accounts by
-# default, and records the sign-up page choice for new accounts. Sign-up keeps
-# working even if the new trigger fails. See docs/email-engine.md.
+# Run by hand from the Actions tab, on main. Safe to run again at any time.
+#  1. Applies migration 16 once: the email engine's tables, consent (existing
+#     accounts subscribed by default), and two secrets made inside the database.
+#  2. Every run: copies RESEND_API_KEY and EMAIL_FROM (and, if set,
+#     RESEND_WEBHOOK_SECRET and EMAIL_REPLY_TO) from this repository's secrets
+#     into Supabase Vault, where the website reads them. Nothing has to be
+#     copied into Vercel. Run it again after changing any of those secrets.
+# See docs/email-engine.md.
 on:
   workflow_dispatch:
 
@@ -16,7 +20,7 @@ concurrency:
 
 jobs:
   apply-email-engine:
-    name: Apply email engine migration
+    name: Set up the email engine
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     environment: production
@@ -25,13 +29,17 @@ jobs:
       - name: Check out main
         uses: actions/checkout@v5
 
-      - name: Validate target migration and database secret
+      - name: Validate target migration and secrets
         shell: bash
         env:
           SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
         run: |
           set -euo pipefail
           test -n "$SUPABASE_DB_URL" || { echo "Missing SUPABASE_DB_URL"; exit 1; }
+          test -n "$RESEND_API_KEY" || { echo "Missing RESEND_API_KEY"; exit 1; }
+          test -n "$EMAIL_FROM" || { echo "Missing EMAIL_FROM"; exit 1; }
           test -s "supabase/migrations/20261115_16_email_engine.sql" || { echo "Migration file missing"; exit 1; }
           grep -qiE '^[[:space:]]*begin;' supabase/migrations/20261115_16_email_engine.sql
           grep -qiE '^[[:space:]]*commit;' supabase/migrations/20261115_16_email_engine.sql
@@ -61,7 +69,7 @@ jobs:
 
           APPLIED="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select exists (select 1 from wassce_internal.deployed_migrations where version = '$MIGRATION_VERSION');" | tr -d '[:space:]')"
           if [[ "$APPLIED" == "t" ]]; then
-            echo "Migration $MIGRATION_VERSION is already recorded; nothing to do."
+            echo "Migration $MIGRATION_VERSION is already recorded; nothing to apply."
             exit 0
           fi
 
@@ -76,6 +84,27 @@ jobs:
 
           echo "Migration applied and recorded successfully."
 
+      - name: Store the Resend key and sender in Supabase Vault
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          RESEND_WEBHOOK_SECRET: ${{ secrets.RESEND_WEBHOOK_SECRET }}
+          EMAIL_REPLY_TO: ${{ secrets.EMAIL_REPLY_TO }}
+        run: |
+          set -euo pipefail
+          # Values go in as psql variables (:'name' quotes them safely) and are never printed.
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --quiet \
+            --set=resend="$RESEND_API_KEY" --set=sender="$EMAIL_FROM" \
+            --set=webhook="${RESEND_WEBHOOK_SECRET:-}" --set=reply="${EMAIL_REPLY_TO:-}" <<'SQL' > /dev/null
+          select public.email_store_secret('email_resend_api_key', :'resend');
+          select public.email_store_secret('email_from', :'sender');
+          select public.email_store_secret('email_webhook_secret', nullif(:'webhook', ''));
+          select public.email_store_secret('email_reply_to', nullif(:'reply', ''));
+          SQL
+          echo "Stored. Webhook secret provided: $([ -n "${RESEND_WEBHOOK_SECRET:-}" ] && echo yes || echo no)"
+
       - name: Verify the migration took effect
         shell: bash
         env:
@@ -87,7 +116,8 @@ jobs:
             has_function_privilege('authenticated','public.set_my_marketing_preference(boolean,text,text)','execute'),
             has_function_privilege('authenticated','public.email_audience(uuid,integer)','execute'),
             has_function_privilege('anon','public.set_my_marketing_preference(boolean,text,text)','execute'),
-            (select count(*) from pg_trigger where tgname = 'on_auth_user_created_email_preferences'));" | tr -d '[:space:]')"
-          echo "tables, students can set their choice, students can read audience, anon can set, sign-up trigger: $RESULT"
-          test "$RESULT" = "7,t,f,f,1" || { echo "Migration 16 checks did not match 7,t,f,f,1"; exit 1; }
+            (select count(*) from pg_trigger where tgname = 'on_auth_user_created_email_preferences'),
+            (select count(*) from vault.secrets where name in ('email_resend_api_key','email_from','email_token_secret','email_cron_secret')));" | tr -d '[:space:]')"
+          echo "tables, students can set their choice, students can read audience, anon can set, sign-up trigger, secrets: $RESULT"
+          test "$RESULT" = "7,t,f,f,1,4" || { echo "Email engine checks did not match 7,t,f,f,1,4"; exit 1; }
           psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --command "select consent_source, marketing_status, count(*) from public.email_preferences group by 1, 2 order by 1, 2;"

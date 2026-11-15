@@ -1,36 +1,67 @@
-// Email engine settings. Secrets come from Vercel environment variables and
-// are never logged or sent to the browser. See docs/email-engine.md.
+// Email engine settings. Normally everything comes from Supabase: the mode,
+// pilot addresses and daily limit from Admin → Emails (email_settings), and
+// the secrets from Supabase Vault, where the "Set up email engine (16)"
+// workflow copies the Resend key and sender from GitHub secrets. Nothing has
+// to be copied into Vercel. See docs/email-engine.md.
 //
-//   EMAIL_MODE            off (default) | dry-run | pilot | live
-//   RESEND_API_KEY        the existing Resend account's API key
-//   EMAIL_FROM            the verified sender, e.g. "WASSCE Tutor <hello@wasscetutor.com>"
-//   EMAIL_REPLY_TO        optional reply-to address
-//   EMAIL_TOKEN_SECRET    32+ random characters; signs unsubscribe and click links
-//   CRON_SECRET           Vercel Cron sends it; the run endpoint rejects anything else
-//   RESEND_WEBHOOK_SECRET the signing secret of the Resend webhook (whsec_…)
-//   EMAIL_ONLY_TO         pilot mode: comma-separated addresses that may receive email
-//   EMAIL_DAILY_LIMIT     most engine emails per UTC day (default 80; Resend's free plan allows 100)
+// Optional Vercel environment variables override the database, e.g. to switch
+// the engine off in an emergency: EMAIL_MODE, RESEND_API_KEY, EMAIL_FROM,
+// EMAIL_REPLY_TO, EMAIL_TOKEN_SECRET, CRON_SECRET, RESEND_WEBHOOK_SECRET,
+// EMAIL_ONLY_TO, EMAIL_DAILY_LIMIT.
 
 export const MODES = ['off', 'dry-run', 'pilot', 'live']
 
+const list = (v) =>
+  (Array.isArray(v) ? v : String(v ?? '').split(','))
+    .map((a) => String(a).trim().toLowerCase())
+    .filter(Boolean)
+
+/** Settings from Vercel environment variables only (each one optional). */
 export function emailEnv() {
-  const mode = (process.env.EMAIL_MODE || 'off').trim().toLowerCase()
-  const limit = Number.parseInt(process.env.EMAIL_DAILY_LIMIT || '', 10)
+  const e = process.env
+  return {
+    mode: e.EMAIL_MODE?.trim().toLowerCase() || null,
+    resendKey: e.RESEND_API_KEY || null,
+    from: e.EMAIL_FROM || null,
+    replyTo: e.EMAIL_REPLY_TO || null,
+    tokenSecret: e.EMAIL_TOKEN_SECRET || null,
+    cronSecret: e.CRON_SECRET || null,
+    webhookSecret: e.RESEND_WEBHOOK_SECRET || null,
+    onlyTo: e.EMAIL_ONLY_TO ? list(e.EMAIL_ONLY_TO) : null,
+    dailyLimit: e.EMAIL_DAILY_LIMIT ? Number.parseInt(e.EMAIL_DAILY_LIMIT, 10) : null,
+    site: (e.SITE_URL || 'https://wasscetutor.com').replace(/\/$/, ''),
+  }
+}
+
+/** Combines the database settings (row from email_engine_config()) with any environment overrides. */
+export function mergeConfig(row, env = emailEnv()) {
+  const mode = env.mode ?? row?.mode ?? 'off'
+  const limit = env.dailyLimit ?? row?.daily_limit
   return {
     mode: MODES.includes(mode) ? mode : 'off',
-    resendKey: process.env.RESEND_API_KEY || '',
-    from: process.env.EMAIL_FROM || '',
-    replyTo: process.env.EMAIL_REPLY_TO || '',
-    tokenSecret: process.env.EMAIL_TOKEN_SECRET || '',
-    cronSecret: process.env.CRON_SECRET || '',
-    webhookSecret: process.env.RESEND_WEBHOOK_SECRET || '',
-    onlyTo: (process.env.EMAIL_ONLY_TO || '')
-      .split(',')
-      .map((s) => s.trim().toLowerCase())
-      .filter(Boolean),
+    modeFromEnv: env.mode != null,
+    paused: Boolean(row?.paused),
+    resendKey: env.resendKey ?? row?.resend_api_key ?? '',
+    from: env.from ?? row?.email_from ?? '',
+    replyTo: env.replyTo ?? row?.reply_to ?? '',
+    tokenSecret: env.tokenSecret ?? row?.token_secret ?? '',
+    cronSecret: env.cronSecret ?? row?.cron_secret ?? '',
+    webhookSecret: env.webhookSecret ?? row?.webhook_secret ?? '',
+    onlyTo: env.onlyTo ?? list(row?.pilot_addresses ?? []),
     dailyLimit: Number.isFinite(limit) && limit >= 0 ? Math.min(limit, 5000) : 80,
-    site: (process.env.SITE_URL || 'https://wasscetutor.com').replace(/\/$/, ''),
+    site: env.site,
   }
+}
+
+let cached = null
+/** The engine's settings, read from Supabase (cached for a minute per server instance). */
+export async function loadEmailConfig(client, { fresh = false } = {}) {
+  if (!fresh && cached && Date.now() - cached.at < 60_000) return cached.config
+  const { data, error } = await client.rpc('email_engine_config').maybeSingle()
+  if (error) console.error(`[email] settings not readable: ${error.message}`)
+  const config = mergeConfig(error ? null : data)
+  cached = { at: Date.now(), config }
+  return config
 }
 
 /** Whether sending can work at all. Dry runs need only the database. */

@@ -2,7 +2,7 @@
 //   GET   the engine's configuration: mode, what is set up, the daily limit
 //   POST  { action: "test" } sends one example of every email to the admin's
 //         own address, marked [Test], so the templates can be checked in a real inbox
-import { canSend, emailEnv } from '../_lib/email/config.js'
+import { canSend, loadEmailConfig } from '../_lib/email/config.js'
 import { composeMessage } from '../_lib/email/engine.js'
 import { sendViaResend } from '../_lib/email/resend.js'
 import { SAMPLES, TEMPLATES } from '../_lib/email/templates.js'
@@ -22,9 +22,10 @@ async function admin(request) {
 export async function GET(request) {
   const who = await admin(request)
   if (who.error) return json(request, { error: 'Admins only' }, who.error)
-  const env = emailEnv()
+  const env = await loadEmailConfig(who.client, { fresh: true })
   return json(request, {
     mode: env.mode,
+    modeFromEnv: env.modeFromEnv,
     dailyLimit: env.dailyLimit,
     pilotRecipients: env.onlyTo.length,
     configured: {
@@ -41,8 +42,8 @@ export async function POST(request) {
   if (who.error) return json(request, { error: 'Admins only' }, who.error)
   const body = await request.json().catch(() => ({}))
   if (body?.action !== 'test') return json(request, { error: 'Unknown action' }, 400)
-  const env = emailEnv()
-  if (!canSend(env)) return json(request, { error: 'Set RESEND_API_KEY, EMAIL_FROM and EMAIL_TOKEN_SECRET first.' }, 503)
+  const env = await loadEmailConfig(who.client, { fresh: true })
+  if (!canSend(env)) return json(request, { error: 'The Resend key and sender are not set up yet: run the "Set up email engine (16)" workflow.' }, 503)
 
   const { data: stats } = await who.client.rpc('email_content_stats').maybeSingle()
   const results = []

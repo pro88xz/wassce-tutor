@@ -3,13 +3,17 @@
 -- WASSCE Tutor's own lifecycle email engine. Supabase holds consent,
 -- suppressions and every send; the existing Resend account delivers. The rules
 -- that decide who gets which email live in api/_lib/email/rules.js and run in
--- a Vercel function once a day (api/email/run.js). See docs/email-engine.md.
+-- a Vercel function (api/email/run.js), started once a day by the GitHub
+-- workflow "Email engine daily run". See docs/email-engine.md.
 --
 -- What this migration adds
 --   email_preferences     one row per account: marketing consent and where it came from
 --   email_consent_log     every consent change, for audit (written by a trigger)
 --   email_suppressions    addresses never to email: unsubscribed-by-complaint, hard bounces
---   email_settings        one row: the engine's pause switch and launch time
+--   email_settings        one row: mode (off, dry-run, pilot, live), pilot addresses,
+--                         daily limit, pause switch; set from Admin → Emails
+--   Vault secrets         the Resend key and sender (copied from GitHub secrets by the
+--                         "Set up email engine (16)" workflow) and two secrets made here
 --   email_send_jobs       every email the engine decided to send, with a unique key
 --   email_message_events  delivery events reported by Resend (webhook)
 --   email_click_events    clicks on links in engine emails
@@ -164,12 +168,63 @@ create table if not exists public.email_suppressions (
 
 create table if not exists public.email_settings (
   id boolean primary key default true check (id),
+  -- off: nothing happens · dry-run: decide and log only · pilot: send only to
+  -- pilot_addresses · live: send to every student who is due an email
+  mode text not null default 'off' check (mode in ('off', 'dry-run', 'pilot', 'live')),
+  pilot_addresses text[] not null default '{}',
+  daily_limit integer not null default 80 check (daily_limit between 0 and 5000),
   paused boolean not null default false,
-  -- Welcome-style emails only go to accounts created after the engine started.
   launched_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
 insert into public.email_settings (id) values (true) on conflict (id) do nothing;
+
+-- Secrets live in Supabase Vault (encrypted), never in the repository or the
+-- browser. The Resend key and sender are copied in from GitHub secrets by the
+-- setup workflow; the link-signing and schedule secrets are made right here.
+create or replace function public.email_store_secret(p_name text, p_value text)
+returns void language plpgsql security definer set search_path = '' as $$
+declare v_id uuid;
+begin
+  if p_name is null or p_name not in
+     ('email_resend_api_key', 'email_from', 'email_reply_to', 'email_webhook_secret', 'email_token_secret', 'email_cron_secret') then
+    raise exception 'Unknown email secret';
+  end if;
+  if p_value is null or btrim(p_value) = '' then return; end if;
+  select id into v_id from vault.secrets where name = p_name;
+  if v_id is null then
+    perform vault.create_secret(btrim(p_value), p_name, 'WASSCE Tutor email engine');
+  else
+    perform vault.update_secret(v_id, btrim(p_value));
+  end if;
+end $$;
+
+do $$
+begin
+  if not exists (select 1 from vault.secrets where name = 'email_token_secret') then
+    perform public.email_store_secret('email_token_secret', replace(gen_random_uuid()::text || gen_random_uuid()::text, '-', ''));
+  end if;
+  if not exists (select 1 from vault.secrets where name = 'email_cron_secret') then
+    perform public.email_store_secret('email_cron_secret', replace(gen_random_uuid()::text || gen_random_uuid()::text, '-', ''));
+  end if;
+end $$;
+
+-- Everything the Vercel functions need, in one call (server key only).
+create or replace function public.email_engine_config()
+returns table (
+  mode text, paused boolean, pilot_addresses text[], daily_limit integer,
+  resend_api_key text, email_from text, reply_to text, token_secret text, cron_secret text, webhook_secret text
+)
+language sql stable security definer set search_path = '' as $$
+  select s.mode, s.paused, s.pilot_addresses, s.daily_limit,
+    (select v.decrypted_secret from vault.decrypted_secrets v where v.name = 'email_resend_api_key'),
+    (select v.decrypted_secret from vault.decrypted_secrets v where v.name = 'email_from'),
+    (select v.decrypted_secret from vault.decrypted_secrets v where v.name = 'email_reply_to'),
+    (select v.decrypted_secret from vault.decrypted_secrets v where v.name = 'email_token_secret'),
+    (select v.decrypted_secret from vault.decrypted_secrets v where v.name = 'email_cron_secret'),
+    (select v.decrypted_secret from vault.decrypted_secrets v where v.name = 'email_webhook_secret')
+  from public.email_settings s where s.id
+$$;
 
 -- 3 · Send jobs, provider events, clicks ───────────────────────────────────
 create table if not exists public.email_send_jobs (
@@ -479,18 +534,40 @@ begin
 end $$;
 
 create or replace function public.email_engine_status()
-returns table (paused boolean, launched_at timestamptz, subscribed bigint, unsubscribed bigint, not_subscribed bigint, suppressed bigint, sent_today bigint)
+returns table (
+  mode text, pilot_addresses text[], daily_limit integer, paused boolean, launched_at timestamptz,
+  has_resend boolean, has_webhook boolean,
+  subscribed bigint, unsubscribed bigint, not_subscribed bigint, suppressed bigint, sent_today bigint
+)
 language plpgsql stable security definer set search_path = '' as $$
 begin
   if not public.is_admin() then raise exception 'Not authorised'; end if;
   return query
-  select s.paused, s.launched_at,
+  select s.mode, s.pilot_addresses, s.daily_limit, s.paused, s.launched_at,
+    exists (select 1 from vault.secrets v where v.name = 'email_resend_api_key')
+      and exists (select 1 from vault.secrets v where v.name = 'email_from'),
+    exists (select 1 from vault.secrets v where v.name = 'email_webhook_secret'),
     (select count(*) from public.email_preferences where marketing_status = 'subscribed'),
     (select count(*) from public.email_preferences where marketing_status = 'unsubscribed'),
     (select count(*) from public.email_preferences where marketing_status = 'not_subscribed'),
     (select count(*) from public.email_suppressions),
     (select count(*) from public.email_send_jobs where sent_at >= date_trunc('day', now()))
   from public.email_settings s where s.id;
+end $$;
+
+-- Admin → Emails: mode, pilot addresses and daily limit.
+create or replace function public.set_email_engine_settings(p_mode text, p_pilot_addresses text[], p_daily_limit integer)
+returns void language plpgsql security definer set search_path = '' as $$
+begin
+  if not public.is_admin() then raise exception 'Not authorised'; end if;
+  if p_mode is not null and p_mode not in ('off', 'dry-run', 'pilot', 'live') then raise exception 'Unknown mode'; end if;
+  update public.email_settings
+     set mode = coalesce(p_mode, mode),
+         pilot_addresses = case when p_pilot_addresses is null then pilot_addresses else
+           (select coalesce(array_agg(distinct lower(btrim(a))), '{}') from unnest(p_pilot_addresses) a where btrim(a) like '%_@_%') end,
+         daily_limit = case when p_daily_limit is null then daily_limit else least(greatest(p_daily_limit, 0), 5000) end,
+         updated_at = now()
+   where id;
 end $$;
 
 create or replace function public.set_email_engine_paused(p_paused boolean)
@@ -522,6 +599,11 @@ grant execute on function public.claim_email_jobs(integer) to service_role;
 revoke all on function public.email_engine_report(integer) from public, anon;
 revoke all on function public.email_engine_status() from public, anon;
 revoke all on function public.set_email_engine_paused(boolean) from public, anon;
+revoke all on function public.set_email_engine_settings(text, text[], integer) from public, anon;
+grant execute on function public.set_email_engine_settings(text, text[], integer) to authenticated;
+revoke all on function public.email_store_secret(text, text) from public, anon, authenticated, service_role;
+revoke all on function public.email_engine_config() from public, anon, authenticated;
+grant execute on function public.email_engine_config() to service_role;
 grant execute on function public.email_engine_report(integer) to authenticated;
 grant execute on function public.email_engine_status() to authenticated;
 grant execute on function public.set_email_engine_paused(boolean) to authenticated;
@@ -540,4 +622,6 @@ commit;
 --   drop function if exists email_audience(uuid, integer), email_content_stats(), queue_email_jobs(jsonb),
 --     claim_email_jobs(integer), email_engine_report(integer), email_engine_status(),
 --     set_email_engine_paused(boolean), set_my_marketing_preference(boolean, text, text),
---     email_preferences_on_signup(), email_log_consent();
+--     email_preferences_on_signup(), email_log_consent(), email_store_secret(text, text),
+--     email_engine_config(), set_email_engine_settings(text, text[], integer);
+--   delete from vault.secrets where name like 'email\_%';
