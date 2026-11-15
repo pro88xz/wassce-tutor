@@ -7,9 +7,27 @@ name: Set up email engine (16)
 #     RESEND_WEBHOOK_SECRET and EMAIL_REPLY_TO) from this repository's secrets
 #     into Supabase Vault, where the website reads them. Nothing has to be
 #     copied into Vercel. Run it again after changing any of those secrets.
+#  3. Connects Resend's bounce and complaint webhook through the Resend API
+#     (once), and stores its signing secret in Vault.
+#  4. Applies the mode, pilot addresses and daily limit chosen when starting
+#     the run (the same settings as Admin → Emails).
 # See docs/email-engine.md.
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Engine mode (keep = leave as it is)'
+        type: choice
+        options: ['keep', 'off', 'dry-run', 'pilot', 'live']
+        default: 'keep'
+      pilot_addresses:
+        description: 'Pilot addresses, comma-separated (blank = leave as they are)'
+        required: false
+        default: ''
+      daily_limit:
+        description: 'Most emails per day, 0-5000 (blank = leave as it is)'
+        required: false
+        default: ''
 
 permissions:
   contents: read
@@ -104,6 +122,62 @@ jobs:
           select public.email_store_secret('email_reply_to', nullif(:'reply', ''));
           SQL
           echo "Stored. Webhook secret provided: $([ -n "${RESEND_WEBHOOK_SECRET:-}" ] && echo yes || echo no)"
+
+      - name: Connect Resend's bounce and complaint webhook
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          set -euo pipefail
+          HAVE="$(psql "$SUPABASE_DB_URL" --no-psqlrc --tuples-only --no-align --command "select count(*) from vault.secrets where name = 'email_webhook_secret';" | tr -d '[:space:]')"
+          if [ "$HAVE" != "0" ]; then echo "Webhook secret already stored; nothing to do."; exit 0; fi
+          URL="https://wasscetutor.com/api/email/webhook"
+          api() { curl --silent --show-error --max-time 30 --write-out $'\n%{http_code}' --header "Authorization: Bearer $RESEND_API_KEY" --header 'Content-Type: application/json' "$@" || true; }
+          LIST="$(api https://api.resend.com/webhooks)"
+          CODE="${LIST##*$'\n'}"; BODY="${LIST%$'\n'*}"
+          if [ "$CODE" != "200" ]; then
+            echo "::warning::Resend did not allow listing webhooks (HTTP $CODE); the API key may be send-only. Add the webhook in Resend by hand: see docs/email-engine.md."
+            exit 0
+          fi
+          ID="$(jq -r --arg u "$URL" '[.data[]? | select(.endpoint == $u)][0].id // empty' <<<"$BODY" 2>/dev/null || true)"
+          if [ -n "$ID" ]; then
+            RES="$(api --request POST "https://api.resend.com/webhooks/$ID/signing-secret/rotate")"
+          else
+            RES="$(api --request POST https://api.resend.com/webhooks --data "$(jq -n --arg u "$URL" '{endpoint: $u, events: ["email.sent", "email.delivered", "email.bounced", "email.complained"]}')")"
+          fi
+          CODE="${RES##*$'\n'}"; BODY="${RES%$'\n'*}"
+          SECRET="$(jq -r '.signing_secret // empty' <<<"$BODY" 2>/dev/null || true)"
+          if [[ "$SECRET" != whsec_* ]]; then
+            echo "::warning::Could not connect the Resend webhook (HTTP $CODE): $(jq -r '.message // .name // empty' <<<"$BODY" 2>/dev/null || true). Add it in Resend by hand: see docs/email-engine.md."
+            exit 0
+          fi
+          echo "::add-mask::$SECRET"
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --quiet --set=webhook="$SECRET" <<'SQL' > /dev/null
+          select public.email_store_secret('email_webhook_secret', :'webhook');
+          SQL
+          echo "Resend webhook connected to $URL"
+
+      - name: Apply engine settings
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          MODE: ${{ inputs.mode }}
+          PILOT: ${{ inputs.pilot_addresses }}
+          LIMIT: ${{ inputs.daily_limit }}
+        run: |
+          set -euo pipefail
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 \
+            --set=mode="${MODE:-keep}" --set=pilot="${PILOT:-}" --set=lim="${LIMIT:-}" <<'SQL'
+          update public.email_settings set
+            mode = case when :'mode' in ('off', 'dry-run', 'pilot', 'live') then :'mode' else mode end,
+            pilot_addresses = case when btrim(:'pilot') = '' then pilot_addresses else
+              (select coalesce(array_agg(distinct lower(btrim(a))), '{}') from unnest(string_to_array(:'pilot', ',')) a where btrim(a) like '%_@_%') end,
+            daily_limit = case when btrim(:'lim') ~ '^[0-9]{1,4}$' then least(btrim(:'lim')::integer, 5000) else daily_limit end,
+            updated_at = now()
+          where id;
+          select mode, cardinality(pilot_addresses) as pilot_addresses, daily_limit, paused from public.email_settings;
+          SQL
 
       - name: Verify the migration took effect
         shell: bash

@@ -46,9 +46,14 @@ it already has. The link-signing and schedule secrets are made inside the
 database by the migration.
 
 1. GitHub → **Actions** → **Set up email engine (16)** → *Run workflow* (on
-   `main`). It applies migration 16 once and stores the secrets. Run it again
-   whenever you change one of those GitHub secrets.
-2. Optional, for bounces and complaints: Resend → Webhooks → add
+   `main`). It applies migration 16 once, stores the secrets, and connects
+   Resend's bounce and complaint webhook through the Resend API (if the Resend
+   key is allowed to manage webhooks; otherwise it warns and you can add the
+   webhook by hand, below). Run it again whenever you change one of those
+   GitHub secrets.
+   When starting the run you can also choose the **mode**, **pilot
+   addresses** and **daily limit** (the same settings as Admin → Emails).
+2. Only if the workflow warned about the webhook: Resend → Webhooks → add
    `https://wasscetutor.com/api/email/webhook` with the events *email.sent,
    email.delivered, email.bounced, email.complained*. Save its signing secret
    (`whsec_…`) as the GitHub secret `RESEND_WEBHOOK_SECRET`, then run the setup
