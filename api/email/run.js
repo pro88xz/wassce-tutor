@@ -12,17 +12,25 @@ import crypto from 'node:crypto'
 const reply = (body, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' } })
 
-function authorised(request, secret) {
-  if (!secret) return false
+function authorised(request, secrets) {
   const given = Buffer.from(request.headers.get('authorization') ?? '')
-  const expected = Buffer.from(`Bearer ${secret}`)
-  return given.length === expected.length && crypto.timingSafeEqual(given, expected)
+  return secrets.some((secret) => {
+    const expected = Buffer.from(`Bearer ${secret}`)
+    return given.length === expected.length && crypto.timingSafeEqual(given, expected)
+  })
+}
+
+/** Why a run was refused, without revealing anything secret. */
+function refusal(config) {
+  if (config.settingsError) return `settings_unreadable:${config.settingsError}`
+  if (config.cronSecrets.length === 0) return 'no_schedule_secret'
+  return 'schedule_secret_mismatch'
 }
 
 export async function GET(request) {
   const client = db()
   const config = await loadEmailConfig(client, { fresh: true })
-  if (!authorised(request, config.cronSecret)) return reply({ error: 'unauthorised' }, 401)
+  if (!authorised(request, config.cronSecrets)) return reply({ error: 'unauthorised', why: refusal(config) }, 401)
   try {
     const summary = await runEngine({
       client,

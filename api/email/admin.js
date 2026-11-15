@@ -28,10 +28,11 @@ export async function GET(request) {
     modeFromEnv: env.modeFromEnv,
     dailyLimit: env.dailyLimit,
     pilotRecipients: env.onlyTo.length,
+    settingsError: env.settingsError,
     configured: {
       resend: Boolean(env.resendKey && env.from),
       tokenSecret: env.tokenSecret.length >= 32,
-      cron: Boolean(env.cronSecret),
+      cron: env.cronSecrets.length > 0,
       webhook: Boolean(env.webhookSecret),
     },
   })
