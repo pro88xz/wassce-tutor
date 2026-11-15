@@ -1,5 +1,6 @@
-// LessonView — Markdown renderer for lesson content with biology directives.
-// Supports :::callout{type=...} and :::diagram{name=...} blocks
+// LessonView — Markdown renderer for lesson content with lesson directives.
+// Supports :::callout{type=...} and :::diagram{name=...} blocks, and for
+// writing skills ::::model, :::right, :::reveal and :mark[...]{n=...}
 // alongside standard Markdown + KaTeX math.
 //
 // Used by lesson pages and the admin preview pane.
@@ -13,6 +14,7 @@ import 'katex/dist/katex.min.css'
 import remarkDirective from 'remark-directive'
 import { Callout } from './lesson/Callout'
 import { Diagram } from './lesson/Diagram'
+import { Marked, ModelAnswer, Reveal, RightAligned } from './lesson/WritingBlocks'
 import { MdTable } from './MdTable'
 import { fitLongMath, splitForNarrow } from '@/lib/math-split'
 
@@ -30,6 +32,11 @@ import { fitLongMath, splitForNarrow } from '@/lib/math-split'
 const DIRECTIVES: Record<string, string[]> = {
   callout: ['type', 'title'],
   diagram: ['name'],
+  // Writing skills (src/components/lesson/WritingBlocks.tsx).
+  model: ['title', 'label'],
+  right: [],
+  reveal: ['title'],
+  mark: ['n'],
 }
 
 function directiveTransformer() {
@@ -44,7 +51,11 @@ function directiveTransformer() {
     ) {
       const data = node.data || (node.data = {})
       const allowed = Object.hasOwn(DIRECTIVES, node.name) ? DIRECTIVES[node.name] : null
-      if (allowed) {
+      if (allowed && node.name === 'mark' && node.type !== 'textDirective') {
+        // :mark[...] is only for words inside a line.
+        data.hName = 'div'
+        data.hProperties = {}
+      } else if (allowed) {
         const attributes: Record<string, string> = {}
         for (const key of allowed) {
           const value = node.attributes?.[key]
@@ -152,6 +163,10 @@ const MD_COMPONENTS = {
     </Callout>
   ),
   diagram: ({ name }: any) => <Diagram name={name} />,
+  model: ({ title, label, children }: any) => <ModelAnswer title={title} label={label}>{children}</ModelAnswer>,
+  right: ({ children }: any) => <RightAligned>{children}</RightAligned>,
+  reveal: ({ title, children }: any) => <Reveal title={title}>{children}</Reveal>,
+  mark: ({ n, children }: any) => <Marked n={n}>{children}</Marked>,
   // Wide tables scroll sideways on phones; short-cell tables fit the screen.
   table: MdTable,
   // Diagrams sit on a white card, so line drawings stay readable in dark mode.
