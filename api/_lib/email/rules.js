@@ -114,7 +114,8 @@ export function planForStudent(s, now) {
       category,
       priority,
       templateKey: programme === 'access_started' || programme === 'access_ending' ? programme : `${programme}_${step}`,
-      idempotencyKey: `${programme}:${step}:${anchor}`,
+      // The student is part of the key: the database allows one live job per key, across everyone.
+      idempotencyKey: `${programme}:${step}:${s.userId}:${anchor}`,
       payload: { firstName: s.firstName, ...payload },
       sortAt,
     }
