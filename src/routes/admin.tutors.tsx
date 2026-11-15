@@ -3,12 +3,12 @@ import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { useState } from 'react'
 import { Check, FileText, MessageCircle, X } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
-import { monthlyFee, WEEKDAYS_SHORT } from '@/lib/tutors'
+import { monthlyFee } from '@/lib/tutors'
 import { Button } from '@/components/ui/button'
 import { EmptyState, Pill } from '@/components/ds/Primitives'
 
-// Admin · Tutors: review applications, pause or restore approved tutors, and
-// see every booking. The admin layout (admin.tsx) has already checked that the
+// Admin · Tutors: review applications, remove tutors from the marketplace (with
+// a reason the tutor is told) or put them back, and see every booking. The admin layout (admin.tsx) has already checked that the
 // user is an admin with an unlocked session.
 export const Route = createFileRoute('/admin/tutors')({
   component: AdminTutors,
@@ -23,9 +23,12 @@ type Application = {
   tutor_application_subjects: { price_nle: number; lessons_per_week: number | null; subject: { name: string } | null }[]
 }
 type TutorRow = {
-  id: string; user_id: string; full_name: string; location: string; teaching_mode: string; status: string; verified_at: string
+  id: string; user_id: string; full_name: string; location: string; status: string; listed: boolean; verified_at: string
+  avatar_path: string | null; qualifications: string; experience_years: number
   tutor_subjects: { price_nle: number; lessons_per_week: number | null; subject: { name: string } | null }[]
-  tutor_availability: { weekday: number; starts_at: string; ends_at: string }[]
+  tutor_contacts: { created_at: string }[]
+  /** Students who contacted the tutor in the last 30 days (worked out when loaded). */
+  recent_contacts: number
 }
 type BookingRow = {
   id: string; starts_at: string; duration_minutes: number; price_nle: number; status: string; student_id: string
@@ -46,7 +49,7 @@ function waNumber(phone: string): string {
 
 function friendly(err: unknown): string {
   const msg = err instanceof Error ? err.message : String((err as { message?: string })?.message ?? err)
-  if (/set_tutor_status|schema cache/i.test(msg)) return 'This needs the latest database update: run supabase/migrations/20261112_14_tutor_monthly_pricing_and_admin.sql in the Supabase SQL editor.'
+  if (/set_tutor_status|listed|schema cache/i.test(msg)) return 'This needs the latest database update: run the "Apply database migrations" workflow on GitHub (Actions tab).'
   return msg
 }
 
@@ -55,6 +58,8 @@ function AdminTutors() {
   const [tab, setTab] = useState<Tab>('applications')
   const [showReviewed, setShowReviewed] = useState(false)
   const [notes, setNotes] = useState<Record<string, string>>({})
+  const [removing, setRemoving] = useState<string | null>(null)
+  const [reason, setReason] = useState('')
   const [busy, setBusy] = useState(false)
   const [message, setMessage] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -73,10 +78,25 @@ function AdminTutors() {
     queryKey: ['admin-tutors'],
     queryFn: async (): Promise<TutorRow[]> => {
       const { data, error } = await supabase.from('tutors')
-        .select('id,user_id,full_name,location,teaching_mode,status,verified_at,tutor_subjects(price_nle,lessons_per_week,subject:subjects(name)),tutor_availability(weekday,starts_at,ends_at)')
+        .select('id,user_id,full_name,location,status,listed,verified_at,avatar_path,qualifications,experience_years,tutor_subjects(price_nle,lessons_per_week,subject:subjects(name)),tutor_contacts(created_at)')
         .order('verified_at', { ascending: false })
       if (error) throw error
-      return (data ?? []) as unknown as TutorRow[]
+      const since = Date.now() - 30 * 86_400_000
+      return ((data ?? []) as unknown as Omit<TutorRow, 'recent_contacts'>[]).map((t) => ({
+        ...t,
+        recent_contacts: (t.tutor_contacts ?? []).filter((c) => new Date(c.created_at).getTime() > since).length,
+      }))
+    },
+  })
+  // Tutors can edit their card; a change to their qualifications is sent to
+  // admins (update_tutor_card(), migration 20) to check here.
+  const changes = useQuery({
+    queryKey: ['admin-tutor-changes'],
+    queryFn: async (): Promise<{ id: string; body: string; created_at: string }[]> => {
+      const { data, error } = await supabase.from('user_notifications').select('id,body,created_at')
+        .eq('event_type', 'tutor_profile_changed').is('read_at', null).order('created_at', { ascending: false }).limit(20)
+      if (error) throw error
+      return data ?? []
     },
   })
   const bookings = useQuery({
@@ -97,7 +117,7 @@ function AdminTutors() {
     },
   })
 
-  const refresh = () => Promise.all(['admin-tutor-applications', 'admin-tutors', 'admin-tutor-bookings', 'admin-pending-counts'].map((k) => qc.invalidateQueries({ queryKey: [k] })))
+  const refresh = () => Promise.all(['admin-tutor-applications', 'admin-tutors', 'admin-tutor-changes', 'admin-tutor-bookings', 'admin-pending-counts'].map((k) => qc.invalidateQueries({ queryKey: [k] })))
 
   const act = async (label: string, fn: () => Promise<void>) => {
     setBusy(true); setError(null); setMessage(null)
@@ -115,11 +135,13 @@ function AdminTutors() {
     },
   )
 
-  const setStatus = (t: TutorRow, status: 'active' | 'suspended') => act(
-    status === 'active' ? `${t.full_name} is visible again.` : `${t.full_name} is paused and hidden from the marketplace.`,
+  const setStatus = (t: TutorRow, status: 'active' | 'suspended', why?: string) => act(
+    status === 'active' ? `${t.full_name} is back on the marketplace.` : `${t.full_name} was removed from the marketplace and has been told why.`,
     async () => {
-      const { error } = await supabase.rpc('set_tutor_status', { p_tutor_id: t.id, p_status: status })
+      const { error } = await supabase.rpc('set_tutor_status', { p_tutor_id: t.id, p_status: status, p_reason: why?.trim() || null })
       if (error) throw error
+      setRemoving(null)
+      setReason('')
     },
   )
 
@@ -219,30 +241,67 @@ function AdminTutors() {
           )
       )}
 
+      {tab === 'tutors' && (changes.data?.length ?? 0) > 0 && (
+        <section className="space-y-2 rounded-2xl border border-amber-200 bg-amber-50 p-4" aria-label="Changes to check">
+          <h2 className="text-sm font-bold text-amber-900">Check these changes</h2>
+          <ul className="space-y-2">{changes.data?.map((c) => (
+            <li key={c.id} className="flex flex-wrap items-start justify-between gap-2 rounded-xl bg-white p-3 text-sm">
+              <span className="min-w-0 flex-1">{c.body} <span className="text-xs text-muted-foreground">{when(c.created_at)}</span></span>
+              <Button size="sm" variant="outline" disabled={busy} onClick={() => void act('Marked as checked.', async () => {
+                const { error } = await supabase.from('user_notifications').update({ read_at: new Date().toISOString() }).eq('id', c.id)
+                if (error) throw error
+              })}>Checked</Button>
+            </li>
+          ))}</ul>
+        </section>
+      )}
+
       {tab === 'tutors' && (
         tutors.isLoading ? <p className="text-muted-foreground">Loading…</p>
           : tutors.error ? <EmptyState title="Could not load tutors" body={friendly(tutors.error)} />
           : tutorRows.length === 0 ? <EmptyState title="No approved tutors yet" body="Approve an application and the tutor appears here and in the marketplace." />
           : (
             <ul className="space-y-3">{tutorRows.map((t) => {
-              const phone = phoneFor(t.user_id)
               return (
-                <li key={t.id} className="space-y-2 rounded-2xl border bg-card p-4">
-                  <div className="flex flex-wrap items-start justify-between gap-2">
-                    <div>
-                      <p className="font-bold">{t.full_name}</p>
-                      <p className="text-xs text-muted-foreground">{t.location} · {MODE[t.teaching_mode] ?? t.teaching_mode} · approved {new Date(t.verified_at).toLocaleDateString('en-GB')}</p>
+                <li key={t.id} className="space-y-3 rounded-2xl border bg-card p-4">
+                  <div className="flex flex-wrap items-start justify-between gap-3">
+                    <div className="flex min-w-0 items-center gap-3">
+                      <div className="h-12 w-12 shrink-0 overflow-hidden rounded-xl bg-violet-100">
+                        {t.avatar_path && <img src={supabase.storage.from('tutor-profile-images').getPublicUrl(t.avatar_path).data.publicUrl} alt="" className="h-full w-full object-cover object-top" loading="lazy" />}
+                      </div>
+                      <div className="min-w-0">
+                        <p className="font-bold">{t.full_name}</p>
+                        <p className="text-xs text-muted-foreground">{t.location} · {t.experience_years} years · approved {new Date(t.verified_at).toLocaleDateString('en-GB')}</p>
+                        <p className="line-clamp-1 text-xs text-muted-foreground">{t.qualifications}</p>
+                      </div>
                     </div>
-                    <Pill className={t.status === 'active' ? 'bg-emerald-50 text-emerald-700' : 'bg-red-50 text-red-700'}>{t.status === 'active' ? 'Listed' : 'Paused'}</Pill>
+                    {t.status !== 'active'
+                      ? <Pill className="bg-red-50 text-red-700">Removed by admin</Pill>
+                      : t.listed
+                        ? <Pill className="bg-emerald-50 text-emerald-700">On the marketplace</Pill>
+                        : <Pill className="bg-amber-50 text-amber-800">Hidden by the tutor</Pill>}
                   </div>
                   <div className="flex flex-wrap gap-2">{t.tutor_subjects.map((s, i) => <span key={i} className="rounded-lg bg-muted px-2.5 py-1 text-xs">{s.subject?.name} · {monthlyFee(s.price_nle)}{s.lessons_per_week ? ` · ${s.lessons_per_week} a week` : ''}</span>)}</div>
-                  <p className="text-xs text-muted-foreground">{t.tutor_availability.length === 0 ? 'No weekly availability published yet, so students cannot send requests.' : `Available: ${[...t.tutor_availability].sort((a, b) => a.weekday - b.weekday).map((s) => `${WEEKDAYS_SHORT[s.weekday]} ${String(s.starts_at).slice(0, 5)}–${String(s.ends_at).slice(0, 5)}`).join(', ')}`}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {phone && <Button asChild size="sm" variant="outline"><a href={`https://wa.me/${waNumber(phone)}`} target="_blank" rel="noopener"><MessageCircle className="h-4 w-4" aria-hidden /> {phone}</a></Button>}
-                    {t.status === 'active'
-                      ? <Button size="sm" variant="outline" disabled={busy} onClick={() => void setStatus(t, 'suspended')} className="border-red-200 text-red-700">Pause listing</Button>
-                      : <Button size="sm" disabled={busy} onClick={() => void setStatus(t, 'active')}>Restore listing</Button>}
-                  </div>
+                  <p className="text-xs text-muted-foreground">{t.recent_contacts} {t.recent_contacts === 1 ? 'student' : 'students'} contacted this tutor in the last 30 days · {t.tutor_contacts.length} in all</p>
+                  {removing === t.id ? (
+                    <div className="space-y-2 rounded-xl border border-red-200 bg-red-50/60 p-3">
+                      <label className="block space-y-1 text-sm font-semibold text-red-900">
+                        Why are you removing {t.full_name}? The tutor is told this.
+                        <textarea value={reason} onChange={(e) => setReason(e.target.value)} rows={2} maxLength={500} placeholder="e.g. Students reported that lessons did not happen." className="w-full rounded-lg border bg-white p-2.5 text-sm font-normal text-foreground" />
+                      </label>
+                      <div className="flex flex-wrap gap-2">
+                        <Button size="sm" disabled={busy} onClick={() => void setStatus(t, 'suspended', reason)} className="bg-red-600 text-white hover:bg-red-700">Remove from marketplace</Button>
+                        <Button size="sm" variant="outline" disabled={busy} onClick={() => { setRemoving(null); setReason('') }}>Cancel</Button>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="flex flex-wrap gap-2">
+                      {phoneFor(t.user_id) && <Button asChild size="sm" variant="outline"><a href={`https://wa.me/${waNumber(phoneFor(t.user_id) ?? '')}`} target="_blank" rel="noopener"><MessageCircle className="h-4 w-4" aria-hidden /> {phoneFor(t.user_id)}</a></Button>}
+                      {t.status === 'active'
+                        ? <Button size="sm" variant="outline" disabled={busy} onClick={() => { setRemoving(t.id); setReason('') }} className="border-red-200 text-red-700">Remove from marketplace</Button>
+                        : <Button size="sm" disabled={busy} onClick={() => void setStatus(t, 'active')}>Put back on the marketplace</Button>}
+                    </div>
+                  )}
                 </li>
               )
             })}</ul>

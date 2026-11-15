@@ -1,20 +1,18 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
-import { Bell, GraduationCap, MessageCircle, ShieldCheck } from 'lucide-react'
+import { Bell, MessageCircle, ShieldCheck } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { supabase } from '@/lib/supabase'
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { monthlyFee } from '@/lib/tutors'
-import { PhotoPicker } from '@/components/tutors/PhotoPicker'
-import { VerifiedBadge } from '@/components/tutors/Marketplace'
+import { TutorCardEditor, type EditableTutor } from '@/components/tutors/TutorCardEditor'
 import { TutorOfferForm } from '@/components/tutors/TutorOfferForm'
 import { nle } from '@/lib/tutor-pricing'
 
 type Booking = { id:string; starts_at:string; duration_minutes:number; price_nle:number; status:string; student_id:string; tutor_id:string; student_message:string|null; subject:{name:string}|null; tutor:{user_id:string;full_name:string}|null }
 type Notification = { id:string; title:string; body:string; created_at:string; read_at:string|null; event_type:string }
 type Contact = { contacted_at:string; student_first_name:string|null; subjects:string|null; students:number; per_student_nle:number; total_nle:number }
-const photoUrl = (path:string) => supabase.storage.from('tutor-profile-images').getPublicUrl(path).data.publicUrl
 
 export const Route = createFileRoute('/tutor-dashboard')({
   head: privateHead('Tutor dashboard'),
@@ -26,24 +24,20 @@ const dateLabel = (value:string) => new Date(value).toLocaleString('en-GB',{date
 function TutorDashboard() {
   const { user, loading } = useAuth()
   const { data: profile } = useProfile(user?.id ?? null)
-  const [tutor,setTutor] = useState<any>(null)
+  const [tutor,setTutor] = useState<EditableTutor|null>(null)
   const [bookings,setBookings] = useState<Booking[]>([])
   const [notifications,setNotifications] = useState<Notification[]>([])
   const [application,setApplication] = useState<{status:string;review_note:string|null}|null>(null)
   const [contacts,setContacts] = useState<Contact[]>([])
   const [recentContacts,setRecentContacts] = useState(0)
-  const [photo,setPhoto] = useState<File|null>(null)
-  const [photoError,setPhotoError] = useState<string|null>(null)
-  const [tutorBio,setTutorBio] = useState('')
-  const [tutorLocation,setTutorLocation] = useState('')
   const [busy,setBusy] = useState(false)
   const [message,setMessage] = useState<string|null>(null)
   const [error,setError] = useState<string|null>(null)
 
   const load = async () => {
     if (!user) return
-    const tutorResult = await supabase.from('tutors').select('id,user_id,full_name,bio,qualifications,experience_years,location,teaching_mode,avatar_path,status,multi_subject_discount_pct,group_max,group_discount_pct,payment_methods').eq('user_id',user.id).maybeSingle()
-    const tutorRecord = tutorResult.error ? null : tutorResult.data
+    const tutorResult = await supabase.from('tutors').select('id,user_id,full_name,bio,qualifications,experience_years,location,avatar_path,status,listed,verified_at,multi_subject_discount_pct,group_max,group_discount_pct,payment_methods,tutor_subjects(subject_id,price_nle,lessons_per_week,subject:subjects(id,name)),tutor_booking_reviews(rating)').eq('user_id',user.id).maybeSingle()
+    const tutorRecord = tutorResult.error ? null : (tutorResult.data as unknown as EditableTutor|null)
     const [b,n,ct,app] = await Promise.all([
       supabase.from('tutor_bookings').select('id,starts_at,duration_minutes,price_nle,status,student_id,tutor_id,student_message,subject:subjects(name),tutor:tutors(user_id,full_name)').eq('tutor_id',tutorRecord?.id ?? '00000000-0000-0000-0000-000000000000').order('starts_at',{ascending:false}).limit(50),
       supabase.from('user_notifications').select('id,title,body,created_at,read_at,event_type').eq('recipient_id',user.id).in('event_type',['tutor_contacted','booking_requested','booking_request_sent','booking_accepted','booking_declined','booking_confirmed','booking_completed','booking_cancelled','booking_no_show','tutor_approved','tutor_rejected','tutor_suspended','tutor_reactivated']).order('created_at',{ascending:false}).limit(30),
@@ -51,7 +45,6 @@ function TutorDashboard() {
       supabase.from('tutor_applications').select('status,review_note').eq('user_id',user.id).order('created_at',{ascending:false}).limit(1).maybeSingle(),
     ])
     setTutor(tutorRecord)
-    if(tutorRecord){setTutorBio(tutorRecord.bio);setTutorLocation(tutorRecord.location)}
     if (!b.error) setBookings((b.data??[]) as unknown as Booking[])
     if (!n.error) setNotifications((n.data??[]) as Notification[])
     if (!app.error) setApplication(app.data)
@@ -85,21 +78,6 @@ function TutorDashboard() {
     finally {setBusy(false)}
   }
 
-  const savePhoto = async () => {
-    if(!user||!photo) return
-    setBusy(true);setError(null);setMessage(null)
-    const path=`${user.id}/${crypto.randomUUID()}-${photo.name.toLowerCase().replace(/[^a-z0-9._-]/g,'-')}`
-    try {
-      const {error:uploadError}=await supabase.storage.from('tutor-profile-images').upload(path,photo,{upsert:false,contentType:photo.type})
-      if(uploadError) throw uploadError
-      const {error:rpcError}=await supabase.rpc('update_tutor_avatar',{p_avatar_path:path})
-      if(rpcError){await supabase.storage.from('tutor-profile-images').remove([path]);throw rpcError}
-      setPhoto(null);setMessage('Your new photo is on your tutor card.')
-      await load()
-    } catch(err) {setError(err instanceof Error?err.message:'Could not save your photo.')}
-    finally {setBusy(false)}
-  }
-
   const markRead = async (id:string) => {
     await supabase.from('user_notifications').update({read_at:new Date().toISOString()}).eq('id',id)
     setNotifications((current)=>current.map((n)=>n.id===id?{...n,read_at:new Date().toISOString()}:n))
@@ -119,7 +97,7 @@ function TutorDashboard() {
 
     {profile?.is_admin&&<section className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border bg-card p-5 sm:p-6"><div className="flex items-center gap-3"><ShieldCheck className="h-5 w-5 text-primary"/><div><h2 className="font-bold">Reviewing tutor applications?</h2><p className="text-sm text-muted-foreground">Applications, approved tutors and all bookings are in the admin area.</p></div></div><Link to="/admin/tutors" className="inline-flex min-h-10 items-center rounded-xl bg-primary px-4 text-sm font-semibold text-white">Open Admin · Tutors</Link></section>}
 
-    {tutor&&<section className="space-y-5 rounded-2xl border bg-card p-5 sm:p-7"><div className="flex items-center gap-3"><div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl bg-violet-100 text-violet-800">{tutor.avatar_path?<img src={photoUrl(tutor.avatar_path)} alt="" className="h-full w-full object-cover object-top"/>:<GraduationCap/>}</div><div><h2 className="flex items-center gap-1.5 text-xl font-bold">{tutor.full_name}{tutor.status!=='suspended'&&<VerifiedBadge/>}</h2><p className="text-sm text-muted-foreground">{tutor.status==='suspended'?'Profile paused':'Verified tutor'} · In person · {tutor.location}</p></div></div>{tutor.status==='suspended'&&<p role="status" className="rounded-xl bg-amber-50 p-4 text-sm text-amber-900">Your profile is paused and hidden from the marketplace. Contact support to restore it.</p>}<div className="grid gap-5 lg:grid-cols-[.9fr_1.1fr]"><div className="space-y-4"><h3 className="font-bold">Public profile</h3><PhotoPicker file={photo} currentUrl={tutor.avatar_path?photoUrl(tutor.avatar_path):null} error={photoError} onPick={(file,problem)=>{setPhotoError(problem);if(file)setPhoto(file)}}/>{photo&&<button disabled={busy} onClick={()=>void savePhoto()} className="min-h-10 rounded-lg bg-primary px-4 text-sm font-semibold text-white disabled:opacity-50">{busy?'Saving photo…':'Save new photo'}</button>}<label className="block space-y-1 text-sm font-semibold">Teaching biography<textarea value={tutorBio} onChange={(e)=>setTutorBio(e.target.value)} minLength={80} maxLength={2000} rows={4} className="w-full rounded-xl border p-3 text-sm font-normal"/></label><label className="block space-y-1 text-sm font-semibold">Location<input value={tutorLocation} onChange={(e)=>setTutorLocation(e.target.value)} className="h-10 w-full rounded-lg border px-3 text-sm font-normal"/></label><p className="text-xs text-muted-foreground">Lessons are in person. Students who agree to your fee message you on WhatsApp.</p><button disabled={busy} onClick={async()=>{setBusy(true);setError(null);try{const {error:e}=await supabase.rpc('update_tutor_profile',{p_bio:tutorBio,p_location:tutorLocation,p_teaching_mode:'in_person'});if(e)throw e;setMessage('Tutor profile updated.')}catch(e){setError(e instanceof Error?e.message:'Could not update profile.')}finally{setBusy(false)}}} className="min-h-10 rounded-lg bg-primary px-4 text-sm font-semibold text-white">Save profile</button><div className="border-t pt-4"><TutorOfferForm tutor={tutor} onSaved={(m)=>{setError(null);setMessage(m)}} onError={(m)=>{setMessage(null);setError(m)}}/></div></div><div><h3 className="flex items-center gap-2 font-bold"><MessageCircle className="h-4 w-4 text-primary"/> Students who contacted you</h3><p className="mt-1 text-xs text-muted-foreground">Each student agreed to your fee, then opened WhatsApp to message you. Reply to them there.</p><ul className="mt-3 space-y-2">{contacts.length===0?<li className="rounded-xl bg-muted/50 p-4 text-sm text-muted-foreground">No students yet. A clear photo, a friendly biography and a fair fee help students choose you.</li>:contacts.map((c,i)=><li key={`${c.contacted_at}-${i}`} className="rounded-xl border p-3 text-sm"><div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1"><span><strong>{c.student_first_name??'A student'}</strong>{c.students>1&&<span className="ml-1.5 rounded-full bg-sky-50 px-2 py-0.5 text-xs font-semibold text-sky-800">group of {c.students}</span>}</span><span className="text-xs text-muted-foreground">{dateLabel(c.contacted_at)}</span></div><p className="mt-1 text-muted-foreground">{c.subjects??'Subject'}</p><p className="mt-1 text-xs font-semibold">{nle(Number(c.per_student_nle))} a month{c.students>1?` each · ${nle(Number(c.total_nle))} in total`:''}</p></li>)}</ul></div>{incoming.length>0&&<div><h3 className="font-bold">Earlier booking requests</h3><div className="mt-3 space-y-3">{incoming.map((b)=><BookingCard key={b.id} booking={b} perspective="tutor" busy={busy} onUpdate={updateBooking}/>)}</div></div>}</div></section>}
+    {tutor&&<><TutorCardEditor key={tutor.id} tutor={tutor} onChanged={load} onMessage={(m)=>{setError(null);setMessage(m)}} onError={(m)=>{setMessage(null);setError(m)}}/><div className="grid gap-5 lg:grid-cols-[1.1fr_.9fr]"><section className="rounded-2xl border bg-card p-5 sm:p-7"><TutorOfferForm tutor={tutor} onSaved={(m)=>{setError(null);setMessage(m);void load()}} onError={(m)=>{setMessage(null);setError(m)}}/></section><section className="space-y-6 rounded-2xl border bg-card p-5 sm:p-7"><div><h2 className="flex items-center gap-2 text-lg font-bold"><MessageCircle className="h-4 w-4 text-primary"/> Students who contacted you</h2><p className="mt-1 text-xs text-muted-foreground">Each student agreed to your fee, then opened WhatsApp to message you. Reply to them there.</p><ul className="mt-3 space-y-2">{contacts.length===0?<li className="rounded-xl bg-muted/50 p-4 text-sm text-muted-foreground">No students yet. A clear photo, a friendly biography and a fair fee help students choose you.</li>:contacts.map((c,i)=><li key={`${c.contacted_at}-${i}`} className="rounded-xl border p-3 text-sm"><div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1"><span><strong>{c.student_first_name??'A student'}</strong>{c.students>1&&<span className="ml-1.5 rounded-full bg-sky-50 px-2 py-0.5 text-xs font-semibold text-sky-800">group of {c.students}</span>}</span><span className="text-xs text-muted-foreground">{dateLabel(c.contacted_at)}</span></div><p className="mt-1 text-muted-foreground">{c.subjects??'Subject'}</p><p className="mt-1 text-xs font-semibold">{nle(Number(c.per_student_nle))} a month{c.students>1?` each · ${nle(Number(c.total_nle))} in total`:''}</p></li>)}</ul></div>{incoming.length>0&&<div><h2 className="text-lg font-bold">Earlier booking requests</h2><div className="mt-3 space-y-3">{incoming.map((b)=><BookingCard key={b.id} booking={b} perspective="tutor" busy={busy} onUpdate={updateBooking}/>)}</div></div>}</section></div></>}
 
     {!tutor&&!profile?.is_admin&&<section className="rounded-2xl border bg-card p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-wider text-primary">Tutor onboarding</p><h2 className="mt-2 text-2xl font-bold">{application ? 'Your application' : 'Start teaching on WASSCE Tutor'}</h2>{application ? <><p className="mt-2 text-sm font-semibold capitalize">Status: {application.status.replace('_',' ')}</p><p className="mt-2 text-sm text-muted-foreground">{application.review_note ?? (application.status==='rejected'?'Your application was not approved. Review the feedback before submitting again.':'Your tutor application is being reviewed. We will notify you when its status changes.')}</p>{application.status==='rejected'&&<Link to="/become-a-tutor" className="mt-5 inline-flex min-h-11 items-center rounded-xl bg-primary px-5 text-sm font-bold text-white">Update application</Link>}</> : <><p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">Create your teaching profile, choose subjects and set your monthly fee. Your profile becomes visible after verification.</p><Link to="/become-a-tutor" className="mt-5 inline-flex min-h-11 items-center rounded-xl bg-primary px-5 text-sm font-bold text-white">Complete tutor application</Link></>}</section>}
 
