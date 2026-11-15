@@ -27,7 +27,11 @@ function Index() {
 
   useEffect(() => {
     if (!loading && user && profile && !profile.onboarded) {
-      navigate({ to: '/onboarding', replace: true }) // replace: back from set-up must not land here and bounce again
+      // Replace, so "back" from there does not land here and bounce again.
+      // Tutor and affiliate accounts that never set up as a student go to
+      // their own workspace, not the student set-up.
+      const intent = user.user_metadata?.account_intent
+      navigate({ to: intent === 'affiliate' ? '/affiliate-dashboard' : intent === 'tutor' ? '/tutor-dashboard' : '/onboarding', replace: true })
     }
   }, [loading, user, profile, navigate])
 
