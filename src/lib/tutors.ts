@@ -1,6 +1,7 @@
-// Book a tutor: one-to-one lessons with a real teacher, arranged on WhatsApp.
-// Requests are saved to tutor_requests (migration 06) when that table exists,
-// and always handed to WhatsApp, where the team confirms tutor, times and price.
+// Book a tutor: in-person lessons with a verified teacher, arranged on WhatsApp.
+// Students normally pick a tutor in the marketplace (components/tutors/Marketplace).
+// The request form here is the fallback: "find me a tutor". Requests are saved
+// to tutor_requests (migration 06) and handed to the business WhatsApp.
 import { supabase } from '@/lib/supabase'
 import type { SubjectPhoto } from '@/lib/subject-photos'
 import { CONTACT } from '@/lib/contact'
@@ -11,10 +12,11 @@ export const TUTOR_WHATSAPP = CONTACT.whatsapp
 export const LEVELS = ['SSS1', 'SSS2', 'SSS3', 'Private candidate'] as const
 export type Level = (typeof LEVELS)[number]
 
+// Lessons are in person only: there is no online lesson service.
+// ('home' and 'either' are the values tutor_requests.mode accepts.)
 export const MODES = [
-  { id: 'online', label: 'Online', hint: 'Video or voice call on your phone' },
-  { id: 'home', label: 'At home', hint: 'The tutor comes to you, where available' },
-  { id: 'either', label: 'Either', hint: 'Whichever works best' },
+  { id: 'home', label: 'At my home', hint: 'The tutor comes to you' },
+  { id: 'either', label: 'Anywhere convenient', hint: 'Your home, the tutor’s place or another spot nearby' },
 ] as const
 export type Mode = (typeof MODES)[number]['id']
 

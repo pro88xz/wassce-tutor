@@ -1,0 +1,100 @@
+name: Apply database migrations
+
+# Run by hand from the Actions tab, on main. Applies every migration numbered 18
+# or later (supabase/migrations/<date>_<number>_<name>.sql) that has not been
+# applied yet, once, in order, and records each one with its checksum. Safe to
+# run again: anything already recorded is skipped. Migrations up to 17 have
+# their own workflows (the email ones: "Set up email engine").
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wassce-tutor-database-migrations
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    name: Apply new database migrations
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    environment: production
+    if: github.ref == 'refs/heads/main'
+    env:
+      FIRST: '18'
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v5
+
+      - name: Validate migrations and database secret
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          test -n "$SUPABASE_DB_URL" || { echo "Missing SUPABASE_DB_URL"; exit 1; }
+          for FILE in supabase/migrations/*.sql; do
+            NUM="$(basename "$FILE" | cut -d_ -f2)"
+            [[ "$NUM" =~ ^[0-9]+$ ]] && (( 10#$NUM >= FIRST )) || continue
+            grep -qiE '^[[:space:]]*begin;' "$FILE" || { echo "$FILE has no begin;"; exit 1; }
+            grep -qiE '^[[:space:]]*commit;' "$FILE" || { echo "$FILE has no commit;"; exit 1; }
+          done
+
+      - name: Install PostgreSQL client
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes postgresql-client
+
+      - name: Apply each new migration once and record its checksum
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --quiet <<'SQL'
+          create schema if not exists wassce_internal;
+          revoke all on schema wassce_internal from public, anon, authenticated;
+          create table if not exists wassce_internal.deployed_migrations (
+            version text primary key,
+            sha256 text not null,
+            applied_at timestamptz not null default now()
+          );
+          revoke all on all tables in schema wassce_internal from public, anon, authenticated;
+          SQL
+
+          for FILE in $(ls supabase/migrations/*.sql | sort); do
+            NUM="$(basename "$FILE" | cut -d_ -f2)"
+            [[ "$NUM" =~ ^[0-9]+$ ]] && (( 10#$NUM >= FIRST )) || continue
+            VERSION="$(basename "$FILE" .sql)"
+            APPLIED="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select exists (select 1 from wassce_internal.deployed_migrations where version = '$VERSION');" | tr -d '[:space:]')"
+            if [[ "$APPLIED" == "t" ]]; then
+              echo "$VERSION: already applied"
+              continue
+            fi
+            CHECKSUM="$(sha256sum "$FILE" | cut -d ' ' -f 1)"
+            {
+              echo "begin;"
+              echo "do \$\$ begin if exists (select 1 from wassce_internal.deployed_migrations where version = '$VERSION') then raise exception 'Migration already applied'; end if; end \$\$;"
+              sed '/^[[:space:]]*begin;[[:space:]]*$/Id; /^[[:space:]]*commit;[[:space:]]*$/Id;' "$FILE"
+              printf "insert into wassce_internal.deployed_migrations(version, sha256) values ('%s', '%s');\n" "$VERSION" "$CHECKSUM"
+              echo "commit;"
+            } | psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --quiet
+            echo "$VERSION: applied"
+          done
+
+      - name: Verify (18) tutor booking on WhatsApp
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            has_function_privilege('authenticated','public.contact_tutor(uuid,uuid)','execute'),
+            has_function_privilege('anon','public.contact_tutor(uuid,uuid)','execute'),
+            has_column_privilege('anon','public.tutors','phone','select'),
+            has_column_privilege('authenticated','public.tutors','phone','select'),
+            (select count(*) from public.tutors where teaching_mode <> 'in_person'));" | tr -d '[:space:]')"
+          echo "students can contact, visitors can contact, visitors read phones, students read phones, tutors not in person: $RESULT"
+          test "$RESULT" = "t,f,f,f,0" || { echo "Checks did not match t,f,f,f,0"; exit 1; }

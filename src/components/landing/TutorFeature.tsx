@@ -3,7 +3,7 @@ import { ArrowRight, Check, UserRound } from 'lucide-react'
 import { TUTOR_PHOTO } from '@/lib/tutors'
 import { Band } from '@/components/public/Section'
 
-const POINTS = ['Help with exactly the topics you find hard', 'Online or at home, for any WASSCE subject', 'Price confirmed before you pay anything']
+const POINTS = ['Help with exactly the topics you find hard', 'In-person lessons with a verified tutor', 'Monthly fee shown before you message them']
 
 export function TutorFeature() {
   return (
