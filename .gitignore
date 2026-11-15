@@ -34,3 +34,4 @@ android/keystores/
 android/key.properties
 public/wassce-tutor.apk
 __pycache__/
+email-preview/

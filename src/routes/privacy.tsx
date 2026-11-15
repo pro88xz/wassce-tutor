@@ -14,7 +14,7 @@ function Privacy() {
       <header className="space-y-3 pb-4 pt-2">
         <p className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">Legal</p>
         <h1 className="text-4xl font-bold tracking-tight text-balance">Privacy Policy</h1>
-        <p className="text-sm text-muted-foreground">Last updated: 8 June 2026</p>
+        <p className="text-sm text-muted-foreground">Last updated: 15 November 2026</p>
       </header>
 
       <section className="space-y-3 rounded-2xl border bg-card p-6">
@@ -46,6 +46,19 @@ function Privacy() {
         </p>
         <p className="text-muted-foreground">
           Questions you submit to the study tutor are sent to Groq, an external response-generation provider. Groq states that it does not retain your questions for model training. Your questions are tied to your account in our database so you can view your history.
+        </p>
+      </section>
+
+      <section className="space-y-3 rounded-2xl border bg-card p-6">
+        <h2 className="text-xl font-bold tracking-tight">Emails we send</h2>
+        <p className="text-muted-foreground">
+          We send account emails about your plan, such as a confirmation when your access starts and a reminder before it ends. These are part of the service.
+        </p>
+        <p className="text-muted-foreground">
+          If you agree to study tips and reminders, we also send occasional emails based on how you use WASSCE Tutor: for example, a reminder after a week without studying, or a note if a payment you started was not completed. To choose who to email, we look at when you last signed in or studied, which subject you studied last, and your plan and payment status. We send at most two of these emails in any week, and we record when a link in them is clicked so we can tell which emails help.
+        </p>
+        <p className="text-muted-foreground">
+          Every one of these emails has an unsubscribe link, and you can turn them off at any time under Account &rarr; Preferences. Emails are delivered by Resend, an email delivery provider, which receives your email address and the message only to deliver it.
         </p>
       </section>
 

@@ -1,0 +1,93 @@
+name: Apply email engine migration (16)
+
+# Run by hand from the Actions tab, on main. Adds the email engine's tables
+# (consent, suppressions, send jobs, events), subscribes existing accounts by
+# default, and records the sign-up page choice for new accounts. Sign-up keeps
+# working even if the new trigger fails. See docs/email-engine.md.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wassce-tutor-email-engine-migration
+  cancel-in-progress: false
+
+jobs:
+  apply-email-engine:
+    name: Apply email engine migration
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    environment: production
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v5
+
+      - name: Validate target migration and database secret
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          test -n "$SUPABASE_DB_URL" || { echo "Missing SUPABASE_DB_URL"; exit 1; }
+          test -s "supabase/migrations/20261115_16_email_engine.sql" || { echo "Migration file missing"; exit 1; }
+          grep -qiE '^[[:space:]]*begin;' supabase/migrations/20261115_16_email_engine.sql
+          grep -qiE '^[[:space:]]*commit;' supabase/migrations/20261115_16_email_engine.sql
+
+      - name: Install PostgreSQL client
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes postgresql-client
+
+      - name: Apply migration once and record checksum
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          MIGRATION_VERSION: "20261115_16_email_engine"
+        run: |
+          set -euo pipefail
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 <<'SQL'
+          create schema if not exists wassce_internal;
+          revoke all on schema wassce_internal from public, anon, authenticated;
+          create table if not exists wassce_internal.deployed_migrations (
+            version text primary key,
+            sha256 text not null,
+            applied_at timestamptz not null default now()
+          );
+          revoke all on all tables in schema wassce_internal from public, anon, authenticated;
+          SQL
+
+          APPLIED="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select exists (select 1 from wassce_internal.deployed_migrations where version = '$MIGRATION_VERSION');" | tr -d '[:space:]')"
+          if [[ "$APPLIED" == "t" ]]; then
+            echo "Migration $MIGRATION_VERSION is already recorded; nothing to do."
+            exit 0
+          fi
+
+          CHECKSUM="$(sha256sum supabase/migrations/20261115_16_email_engine.sql | cut -d ' ' -f 1)"
+          {
+            echo "begin;"
+            echo "do \$\$ begin if exists (select 1 from wassce_internal.deployed_migrations where version = '$MIGRATION_VERSION') then raise exception 'Migration already applied'; end if; end \$\$;"
+            sed '/^[[:space:]]*begin;[[:space:]]*$/Id; /^[[:space:]]*commit;[[:space:]]*$/Id;' supabase/migrations/20261115_16_email_engine.sql
+            printf "insert into wassce_internal.deployed_migrations(version, sha256) values ('%s', '%s');\\n" "$MIGRATION_VERSION" "$CHECKSUM"
+            echo "commit;"
+          } | psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1
+
+          echo "Migration applied and recorded successfully."
+
+      - name: Verify the migration took effect
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            (select count(*) from information_schema.tables where table_schema='public' and table_name in ('email_preferences','email_consent_log','email_suppressions','email_settings','email_send_jobs','email_message_events','email_click_events')),
+            has_function_privilege('authenticated','public.set_my_marketing_preference(boolean,text,text)','execute'),
+            has_function_privilege('authenticated','public.email_audience(uuid,integer)','execute'),
+            has_function_privilege('anon','public.set_my_marketing_preference(boolean,text,text)','execute'),
+            (select count(*) from pg_trigger where tgname = 'on_auth_user_created_email_preferences'));" | tr -d '[:space:]')"
+          echo "tables, students can set their choice, students can read audience, anon can set, sign-up trigger: $RESULT"
+          test "$RESULT" = "7,t,f,f,1" || { echo "Migration 16 checks did not match 7,t,f,f,1"; exit 1; }
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --command "select consent_source, marketing_status, count(*) from public.email_preferences group by 1, 2 order by 1, 2;"

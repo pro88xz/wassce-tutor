@@ -463,9 +463,64 @@ function PreferencesSection() {
             </span>
           </button>
         </li>
+        <EmailPreference />
       </Rows>
       {native && <AppUpdates />}
     </SectionCard>
+  )
+}
+
+/** Study tips and reminders by email (the email engine, migration 16). Hidden until the database has it. */
+function EmailPreference() {
+  const { user } = useAuth()
+  const queryClient = useQueryClient()
+  const key = ['email-preference', user?.id]
+  const { data: status } = useQuery({
+    queryKey: key,
+    enabled: !!user,
+    queryFn: async () => {
+      const { data, error } = await supabase.from('email_preferences').select('marketing_status').eq('user_id', user!.id).maybeSingle()
+      if (error) return 'unavailable' as const
+      return (data?.marketing_status ?? 'not_subscribed') as 'subscribed' | 'unsubscribed' | 'not_subscribed'
+    },
+  })
+  const [saving, setSaving] = useState(false)
+  const [failed, setFailed] = useState(false)
+  if (!status || status === 'unavailable') return null
+  const on = status === 'subscribed'
+
+  const toggle = async () => {
+    setSaving(true)
+    setFailed(false)
+    const { data, error } = await supabase.rpc('set_my_marketing_preference', { p_subscribed: !on, p_source: 'account_settings' })
+    if (error) setFailed(true)
+    else queryClient.setQueryData(key, data)
+    setSaving(false)
+  }
+
+  return (
+    <li>
+      <button
+        type="button"
+        role="switch"
+        aria-checked={on}
+        aria-busy={saving}
+        disabled={saving}
+        onClick={toggle}
+        className="flex min-h-14 w-full items-center gap-4 px-4 py-3 text-left transition-colors hover:bg-muted/50 disabled:opacity-60"
+      >
+        <Mail className="h-5 w-5 text-muted-foreground" aria-hidden />
+        <span className="flex-1">
+          <span className="block font-semibold">Study tips by email</span>
+          <span className="block text-xs text-muted-foreground">
+            {failed ? 'Could not save. Please try again.' : 'Reminders, tips and news. Payment emails always arrive.'}
+          </span>
+        </span>
+        <span className={`relative h-7 w-12 shrink-0 rounded-full transition-colors ${on ? 'bg-primary' : 'bg-input'}`} aria-hidden>
+          <span className={`absolute top-0.5 h-6 w-6 rounded-full bg-white shadow-sm transition-all ${on ? 'left-5' : 'left-0.5'}`} />
+        </span>
+      </button>
+    </li>
   )
 }
 

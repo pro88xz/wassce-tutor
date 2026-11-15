@@ -8,6 +8,17 @@
   },
   "buildCommand": "npm run build",
   "outputDirectory": "dist/client",
+  "functions": {
+    "api/email/run.js": {
+      "maxDuration": 60
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/email/run",
+      "schedule": "0 10 * * *"
+    }
+  ],
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [

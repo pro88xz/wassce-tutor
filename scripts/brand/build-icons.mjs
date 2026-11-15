@@ -13,6 +13,7 @@
 //   public/apple-touch-icon.png       180 px "WASSCE / TUTOR" square (iOS home screen)
 //   public/logo.png                   512 px "WASSCE / TUTOR" square (search results, schema.org logo)
 //   public/brand/*.svg                the wordmark and square as vector files
+//   public/brand/email-logo.png       the wordmark on the email header band (shown at 190 x 20)
 //   assets/google-logo-120.png        the 120 x 120 logo for Google Auth Platform → Branding
 //   assets/icon.png                   1024 px source for the Android app icon
 //   assets/icon-foreground.png        adaptive-icon foreground (the stacked name, inside the safe zone)
@@ -37,6 +38,7 @@ const VIOLET = '#6438d8' // --primary
 const LILAC = '#c4b1ff' // "Tutor" on dark surfaces
 const CANVAS = '#fafbff' // capacitor.config.ts backgroundColor
 const NIGHT = '#15102b'
+const BAND = '#4720b5' // --brand-strong: the band at the top of every email
 
 const gradient = `<defs><linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${TILE_FROM}"/><stop offset="1" stop-color="${TILE_TO}"/></linearGradient></defs>`
 const svg = (viewBox, body) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}">${body}</svg>\n`
@@ -119,6 +121,13 @@ await write('public/logo.png', await opaque(SQUARE, 512))
 await write('public/brand/wordmark.svg', LINE_LIGHT)
 await write('public/brand/wordmark-on-dark.svg', LINE_DARK)
 await write('public/brand/logo-square.svg', SQUARE)
+{
+  // PNG, not SVG: most email apps do not show SVG. The band colour is baked in
+  // so the logo stays readable when an email app switches to dark mode.
+  const [x, y, w, h] = WORDMARK_LINE.viewBox.split(' ').map(Number)
+  const art = svg(WORDMARK_LINE.viewBox, `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${BAND}"/>${LINE_DARK.replace(/^<svg[^>]*>|<\/svg>\n$/g, '')}`)
+  await write('public/brand/email-logo.png', await sharp(Buffer.from(art), { density: 216 }).resize(570, 60, { fit: 'fill' }).png({ compressionLevel: 9 }).toBuffer())
+}
 
 await write('assets/google-logo-120.png', await opaque(SQUARE, 120))
 await write('assets/icon.png', await opaque(SQUARE, 1024))

@@ -1,6 +1,6 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { privateHead } from '@/lib/seo'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { campaignMetadata } from '@/lib/attribution'
 import { useAuth } from '@/lib/auth'
@@ -10,6 +10,7 @@ import { GoogleSignInButton } from '@/components/auth/GoogleSignInButton'
 import { BrandMark } from '@/components/BrandMark'
 import { FROM_PRICE } from '@/lib/plans'
 import { MIN_PASSWORD_LENGTH } from '@/lib/password'
+import { MARKETING_CONSENT_DEFAULT, MARKETING_CONSENT_LABEL, MARKETING_CONSENT_VERSION } from '@/lib/email-consent'
 
 export const Route = createFileRoute('/auth')({
   head: privateHead('Sign in'),
@@ -34,6 +35,14 @@ function AuthPage() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
+  // Study tips and reminders by email: only students are asked (see src/lib/email-consent.ts).
+  const askMarketing = intent === 'student'
+  const [marketingOptIn, setMarketingOptIn] = useState(MARKETING_CONSENT_DEFAULT)
+  // Read by the Google callback, so ticking the box does not reload the Google button.
+  const marketingOptInRef = useRef(MARKETING_CONSENT_DEFAULT)
+  useEffect(() => {
+    marketingOptInRef.current = marketingOptIn
+  }, [marketingOptIn])
 
   useEffect(() => {
     if (user) navigate({ to: destination as '/' | '/tutor-dashboard' | '/affiliate-dashboard' | '/onboarding' | '/subjects' | '/practice' | '/progress' | '/account' })
@@ -57,7 +66,14 @@ function AuthPage() {
           password,
           options: {
             emailRedirectTo: `${window.location.origin}/auth?intent=${intent}${referralCode ? `&ref=${encodeURIComponent(referralCode)}` : ''}`,
-            data: { full_name: fullName.trim(), account_intent: intent, ...campaignMetadata(), ...(referralCode ? { affiliate_code: referralCode } : {}) },
+            data: {
+              full_name: fullName.trim(),
+              account_intent: intent,
+              ...campaignMetadata(),
+              ...(referralCode ? { affiliate_code: referralCode } : {}),
+              // Read by the database when the account is created (migration 16).
+              ...(askMarketing ? { marketing_opt_in: marketingOptIn, marketing_consent_version: MARKETING_CONSENT_VERSION } : {}),
+            },
           },
         })
         if (error) throw error
@@ -80,6 +96,15 @@ function AuthPage() {
   }
 
   const handleGoogleAuthenticated = useCallback(async () => {
+    // A Google sign-up records the email choice made on this page. The
+    // database ignores it for accounts that already existed or already chose.
+    if (mode === 'signup' && askMarketing) {
+      try {
+        await supabase.rpc('set_my_marketing_preference', { p_subscribed: marketingOptInRef.current, p_source: 'google_signup', p_text_version: MARKETING_CONSENT_VERSION })
+      } catch {
+        // Never block sign-in on this.
+      }
+    }
     try {
       if (referralCode) {
         const { error: referralError } = await supabase.rpc('claim_affiliate_referral', { p_code: referralCode })
@@ -89,7 +114,7 @@ function AuthPage() {
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Your account was created, but the referral could not be applied.')
     }
-  }, [destination, navigate, referralCode])
+  }, [askMarketing, destination, mode, navigate, referralCode])
 
   const switchMode = (next: 'signin' | 'signup' | 'forgot') => {
     setMode(next)
@@ -158,6 +183,18 @@ function AuthPage() {
                 </button>
               ))}
             </div>
+          )}
+
+          {mode === 'signup' && askMarketing && (
+            <label className="flex cursor-pointer items-start gap-3 rounded-xl border bg-card px-3.5 py-3 text-sm leading-snug">
+              <input
+                type="checkbox"
+                checked={marketingOptIn}
+                onChange={(e) => setMarketingOptIn(e.target.checked)}
+                className="mt-0.5 h-4 w-4 shrink-0 accent-[var(--primary)]"
+              />
+              <span>{MARKETING_CONSENT_LABEL}</span>
+            </label>
           )}
 
           {mode !== 'forgot' && googleAvailable && (
