@@ -6246,6 +6246,97 @@
       "title": "Vocabulary in context: working out the meaning",
       "est_minutes": 9,
       "sort_order": 1
+    },
+    {
+      "file": "english-language-reported-speech.md",
+      "subject": "English Language",
+      "topic": "direct-and-reported-speech",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Direct and reported speech: every rule, with the exceptions",
+      "est_minutes": 10,
+      "sort_order": 1
+    },
+    {
+      "file": "english-language-question-tags.md",
+      "subject": "English Language",
+      "topic": "question-tags",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Question tags: the rules and the special cases",
+      "est_minutes": 8,
+      "sort_order": 1
+    },
+    {
+      "file": "english-language-modal-verbs.md",
+      "subject": "English Language",
+      "topic": "modal-verbs",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Modal verbs: ability, permission, obligation, advice and certainty",
+      "est_minutes": 9,
+      "sort_order": 1
+    },
+    {
+      "file": "english-language-conditionals.md",
+      "subject": "English Language",
+      "topic": "conditionals",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Conditionals: zero, first, second, third and mixed",
+      "est_minutes": 9,
+      "sort_order": 1
+    },
+    {
+      "file": "english-language-phrases-clauses.md",
+      "subject": "English Language",
+      "topic": "phrases-and-clauses",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Phrases and clauses: names and functions",
+      "est_minutes": 11,
+      "sort_order": 1
+    },
+    {
+      "file": "english-language-sentence-types.md",
+      "subject": "English Language",
+      "topic": "sentence-types",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Sentence types: structure, function and variety",
+      "est_minutes": 10,
+      "sort_order": 1
+    },
+    {
+      "file": "english-language-punctuation.md",
+      "subject": "English Language",
+      "topic": "punctuation",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Punctuation: every mark, with the errors that cost marks",
+      "est_minutes": 11,
+      "sort_order": 1
     }
   ]
 }
