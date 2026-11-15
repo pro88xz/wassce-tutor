@@ -6090,6 +6090,71 @@
       "title": "Creative writing: one strong idea, well told",
       "est_minutes": 13,
       "sort_order": 1
+    },
+    {
+      "file": "english-language-consonants.md",
+      "subject": "English Language",
+      "topic": "consonants-and-consonant-clusters",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Consonants: the 24 sounds, -ed and -s endings, clusters and silent letters",
+      "est_minutes": 11,
+      "sort_order": 1
+    },
+    {
+      "file": "english-language-vowels.md",
+      "subject": "English Language",
+      "topic": "vowels-and-diphthongs",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Vowels and diphthongs: the 20 vowel sounds of English",
+      "est_minutes": 11,
+      "sort_order": 1
+    },
+    {
+      "file": "english-language-word-stress.md",
+      "subject": "English Language",
+      "topic": "word-stress",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Word stress: the patterns behind the right syllable",
+      "est_minutes": 10,
+      "sort_order": 1
+    },
+    {
+      "file": "english-language-sentence-stress-intonation.md",
+      "subject": "English Language",
+      "topic": "sentence-stress-and-intonation",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Sentence stress, emphatic stress and intonation",
+      "est_minutes": 10,
+      "sort_order": 1
+    },
+    {
+      "file": "english-language-listening-comprehension.md",
+      "subject": "English Language",
+      "topic": "listening-comprehension-skills",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Listening comprehension: a method for the test",
+      "est_minutes": 11,
+      "sort_order": 1
     }
   ]
 }
