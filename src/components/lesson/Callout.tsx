@@ -1,4 +1,4 @@
-// Visual callout boxes for biology lessons.
+// Visual callout boxes for lessons.
 // Each variant has its own colour, icon, and label to make different
 // types of pedagogical content visually distinct from body prose.
 
@@ -10,6 +10,7 @@ type CalloutType =
   | 'waec-tests'
   | 'common-mistake'
   | 'local-example'
+  | 'tip'
 
 const VARIANTS: Record<
   CalloutType,
@@ -56,6 +57,13 @@ const VARIANTS: Record<
     bg: 'bg-emerald-50 dark:bg-emerald-950/40',
     accent: 'text-emerald-700 dark:text-emerald-300',
   },
+  tip: {
+    label: 'Exam tip',
+    icon: '💡',
+    border: 'border-sky-400 dark:border-sky-500',
+    bg: 'bg-sky-50 dark:bg-sky-950/40',
+    accent: 'text-sky-700 dark:text-sky-300',
+  },
 }
 
 export function Callout({
@@ -78,7 +86,7 @@ export function Callout({
         <span aria-hidden>{v.icon}</span>
         <span>{title ?? v.label}</span>
       </div>
-      <div className="prose prose-sm dark:prose-invert max-w-none text-foreground prose-p:my-2 prose-li:my-0.5">
+      <div className="max-w-none text-sm leading-relaxed text-foreground [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:my-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:my-2 [&_li]:my-0.5 [&_li]:pl-0.5 [&_p]:my-2 [&_strong]:font-semibold [&_strong]:text-foreground [&_code]:rounded [&_code]:bg-black/5 [&_code]:px-1">
         {children}
       </div>
     </div>

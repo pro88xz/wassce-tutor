@@ -214,7 +214,7 @@ function SubjectHubPage() {
         <img src="/img/tutors-session-640.webp" alt="Two students going through their notes with a tutor" loading="lazy" decoding="async" width={640} height={427} className="h-16 w-24 shrink-0 rounded-xl object-cover sm:h-20 sm:w-32" />
         <span className="min-w-0 flex-1">
           <span className="site-h3 block">Need one-to-one help with {subject.name}?</span>
-          <span className="mt-1 block text-[15px] text-muted-foreground">Book a real {subject.name} tutor, online or at home. Asking is free.</span>
+          <span className="mt-1 block text-[15px] text-muted-foreground">Book a verified {subject.name} tutor for in-person lessons near you. Browsing is free.</span>
         </span>
         <ArrowRight className="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-1" aria-hidden />
       </a>
