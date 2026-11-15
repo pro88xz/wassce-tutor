@@ -2,6 +2,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { privateHead } from '@/lib/seo'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { supabase } from '@/lib/supabase'
+import { returnLabel, safeReturn } from '@/lib/return-to'
 import { campaignMetadata } from '@/lib/attribution'
 import { useAuth } from '@/lib/auth'
 import { Capacitor } from '@capacitor/core'
@@ -20,13 +21,19 @@ export const Route = createFileRoute('/auth')({
 function AuthPage() {
   const navigate = useNavigate()
   const { user } = useAuth()
-  const params = new URLSearchParams(typeof window === 'undefined' ? '' : window.location.search)
+  // Read once, when the page opens: after signing in the address changes to
+  // the destination while this page is still on screen for a moment.
+  const [params] = useState(() => new URLSearchParams(typeof window === 'undefined' ? '' : window.location.search))
   const intent = params.get('intent') === 'tutor' ? 'tutor' : params.get('intent') === 'affiliate' ? 'affiliate' : 'student'
-  const requestedNext = params.get('next') ?? ''
   const referralCode = params.get('ref')?.trim().toUpperCase() ?? ''
-  // Only same-site paths we know, so ?next= cannot send people elsewhere.
-  const safeNext = ['/onboarding','/subjects','/practice','/progress','/account','/','/tutors'].includes(requestedNext) || /^\/tutors\/[a-z0-9-]+$/.test(requestedNext)
-  const destination = intent === 'tutor' ? '/tutor-dashboard' : intent === 'affiliate' ? '/affiliate-dashboard' : safeNext ? requestedNext : '/'
+  // Where they were going before being asked to sign in (src/lib/return-to.ts):
+  // after signing in, or creating an account, they land exactly there.
+  const next = safeReturn(params.get('next'))
+  const forName = params.get('for')?.trim().slice(0, 40) || null
+  const reason = returnLabel(next, forName)
+  const destination = next ?? (intent === 'tutor' ? '/tutor-dashboard' : intent === 'affiliate' ? '/affiliate-dashboard' : '/')
+  // Replace the sign-in page, so "back" goes to the page before it, not here.
+  const goOn = useCallback(() => navigate({ href: destination, replace: true }), [destination, navigate])
   const [mode, setMode] = useState<'signin' | 'signup' | 'forgot'>('signup')
   const [resetSent, setResetSent] = useState(false)
   const [confirmationSent, setConfirmationSent] = useState(false)
@@ -45,8 +52,8 @@ function AuthPage() {
   }, [marketingOptIn])
 
   useEffect(() => {
-    if (user) navigate({ to: destination as '/' | '/tutor-dashboard' | '/affiliate-dashboard' | '/onboarding' | '/subjects' | '/practice' | '/progress' | '/account' })
-  }, [user, destination, navigate])
+    if (user) void goOn()
+  }, [user, goOn])
 
   const handleSubmit = async () => {
     const referralCode = params.get('ref')?.trim().toUpperCase() ?? ''
@@ -65,7 +72,7 @@ function AuthPage() {
           email,
           password,
           options: {
-            emailRedirectTo: `${window.location.origin}/auth?intent=${intent}${referralCode ? `&ref=${encodeURIComponent(referralCode)}` : ''}`,
+            emailRedirectTo: `${window.location.origin}/auth?intent=${intent}${referralCode ? `&ref=${encodeURIComponent(referralCode)}` : ''}${next ? `&next=${encodeURIComponent(next)}` : ''}${forName ? `&for=${encodeURIComponent(forName)}` : ''}`,
             data: {
               full_name: fullName.trim(),
               account_intent: intent,
@@ -77,7 +84,7 @@ function AuthPage() {
           },
         })
         if (error) throw error
-        if (data.session) navigate({ to: destination as '/tutor-dashboard' | '/affiliate-dashboard' | '/' })
+        if (data.session) void goOn()
         else setConfirmationSent(true)
       } else {
         const { error } = await supabase.auth.signInWithPassword({ email, password })
@@ -86,7 +93,7 @@ function AuthPage() {
           const { error: referralError } = await supabase.rpc('claim_affiliate_referral', { p_code: referralCode })
           if (referralError && !/already|before first payment/i.test(referralError.message)) throw referralError
         }
-        navigate({ to: destination as '/tutor-dashboard' | '/affiliate-dashboard' | '/' })
+        void goOn()
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong')
@@ -110,11 +117,11 @@ function AuthPage() {
         const { error: referralError } = await supabase.rpc('claim_affiliate_referral', { p_code: referralCode })
         if (referralError && !/already|before first payment/i.test(referralError.message)) throw referralError
       }
-      navigate({ to: destination as '/tutor-dashboard' | '/affiliate-dashboard' | '/' | '/onboarding' | '/subjects' | '/practice' | '/progress' | '/account' })
+      void goOn()
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Your account was created, but the referral could not be applied.')
     }
-  }, [askMarketing, destination, mode, navigate, referralCode])
+  }, [askMarketing, goOn, mode, referralCode])
 
   const switchMode = (next: 'signin' | 'signup' | 'forgot') => {
     setMode(next)
@@ -161,10 +168,10 @@ function AuthPage() {
             </h1>
             <p className="text-[15px] text-muted-foreground">
               {mode === 'signup'
-                ? intent === 'tutor' ? 'Create your account and continue to your tutor workspace.' : intent === 'affiliate' ? 'Create your account and continue to your affiliate workspace.' : `Free to start, no card needed. Unlock everything later from ${FROM_PRICE} NLe.`
+                ? reason ? `Create a free account ${reason}. You go straight back there.` : intent === 'tutor' ? 'Create your account and continue to your tutor workspace.' : intent === 'affiliate' ? 'Create your account and continue to your affiliate workspace.' : `Free to start, no card needed. Unlock everything later from ${FROM_PRICE} NLe.`
                 : mode === 'forgot'
                   ? "Enter your email and we'll send you a reset link."
-                  : intent === 'tutor' ? 'Sign in to continue to your tutor workspace.' : intent === 'affiliate' ? 'Sign in to continue to your affiliate workspace.' : 'Sign in to keep studying.'}
+                  : reason ? `Sign in ${reason}. You go straight back there.` : intent === 'tutor' ? 'Sign in to continue to your tutor workspace.' : intent === 'affiliate' ? 'Sign in to continue to your affiliate workspace.' : 'Sign in to keep studying.'}
             </p>
           </div>
 

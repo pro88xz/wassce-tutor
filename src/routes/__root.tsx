@@ -1,5 +1,5 @@
 import { createRootRoute, HeadContent, Outlet, Scripts, useRouterState } from '@tanstack/react-router'
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useEffect, useRef } from 'react'
 import type { ReactNode } from 'react'
 import { useIsFetching } from '@tanstack/react-query'
 import { BottomNav } from '@/components/BottomNav'
@@ -10,6 +10,8 @@ import { showsStudentNav } from '@/lib/nav'
 import { Footer } from '@/components/Footer'
 import { NotFoundPage } from '@/components/NotFoundPage'
 import { PublicHeader } from '@/components/public/PublicHeader'
+import { useSendToSignIn } from '@/lib/use-send-to-sign-in'
+import { needsAccount } from '@/lib/return-to'
 import { SITE } from '@/lib/seo'
 import appCss from '@/index.css?url'
 import nativeCss from '@/native.css?url'
@@ -103,6 +105,31 @@ function RootDocument({ children }: { children: ReactNode }) {
   )
 }
 
+/**
+ * A signed-out visitor who opens a page that needs an account (Practice, a
+ * lesson, Progress…) is sent to sign in, and lands back on that page after
+ * (src/lib/return-to.ts). Signing out on such a page is left to the sign-out
+ * flow, which goes to the homepage.
+ */
+function useSignInForAppPages() {
+  const { user, loading } = useAuth()
+  const location = useRouterState({ select: (st) => st.location })
+  const sendToSignIn = useSendToSignIn()
+  const hadUser = useRef(false)
+  useEffect(() => {
+    if (loading) return
+    if (user) {
+      hadUser.current = true
+      return
+    }
+    if (hadUser.current) {
+      hadUser.current = false // just signed out: not a visitor arriving
+      return
+    }
+    if (needsAccount(location.pathname)) sendToSignIn(`${location.pathname}${location.searchStr ?? ''}`)
+  }, [loading, user, location.pathname, location.searchStr, sendToSignIn])
+}
+
 function GlobalLoadingBar() {
   const fetching = useIsFetching()
   if (!fetching) return null
@@ -116,6 +143,7 @@ function GlobalLoadingBar() {
 function RootComponent() {
   const { user } = useAuth()
   const pathname = useRouterState({ select: (st) => st.location.pathname })
+  useSignInForAppPages()
   const studentNav = !!user && showsStudentNav(pathname)
   const roleWorkspace = pathname === '/tutor-dashboard' || pathname === '/affiliate-dashboard'
   return (

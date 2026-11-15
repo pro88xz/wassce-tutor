@@ -1,4 +1,4 @@
-import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
+import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { ArrowRight, Check, CircleCheck, Clock, Loader2, Lock, ShieldCheck, Sparkles, XCircle } from 'lucide-react'
@@ -11,6 +11,7 @@ import { ONLINE_CHECKOUT, PAID_FEATURES, PLANS, planById, type PlanId } from '@/
 import { FREE_FEATURES } from '@/lib/free-plan'
 import { confirmPayment, forgetCheckout, pendingCheckout, rememberCheckout, startUssdPayment, type PaymentStatus } from '@/lib/payments'
 import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
+import { SignInLink } from '@/components/auth/SignInLink'
 
 type Search = { plan?: PlanId; payment?: string; cancelled?: boolean }
 
@@ -46,7 +47,7 @@ function SignedOut({ returning }: { returning: boolean }) {
         <p className="text-muted-foreground">
           Go back to the WASSCE Tutor app. Your plan switches on there as soon as the payment is confirmed, usually within a minute.
         </p>
-        <Link to="/auth" className="inline-flex min-h-11 items-center font-semibold text-primary hover:underline">Or sign in here</Link>
+        <SignInLink className="inline-flex min-h-11 items-center font-semibold text-primary hover:underline">Or sign in here</SignInLink>
       </div>
     )
   }
@@ -57,9 +58,9 @@ function SignedOut({ returning }: { returning: boolean }) {
         <p className="text-muted-foreground">Create a free account first. You can unlock everything whenever you are ready.</p>
       </header>
       <PlanCards selected="year" onSelect={() => {}} interactive={false} />
-      <Link to="/auth" className="flex min-h-12 w-full items-center justify-center rounded-xl bg-primary px-5 py-2 text-base font-semibold text-primary-foreground hover:bg-brand-strong">
+      <SignInLink className="flex min-h-12 w-full items-center justify-center rounded-xl bg-primary px-5 py-2 text-base font-semibold text-primary-foreground hover:bg-brand-strong">
         Create a free account
-      </Link>
+      </SignInLink>
     </div>
   )
 }

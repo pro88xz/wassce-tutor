@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { BrandMark } from '@/components/BrandMark'
 import { useAuth } from '@/lib/auth'
+import { SignInLink } from '@/components/auth/SignInLink'
 
 const isPublicPath = (p: string) =>
   ['/', '/about', '/contact', '/privacy', '/terms'].includes(p) || p === '/wassce' || p.startsWith('/wassce/') || p === '/tutors' || p.startsWith('/tutors/') || p === '/affiliate' || p === '/become-a-tutor' || p === '/blog' || p.startsWith('/blog/') || p === '/universities' || p.startsWith('/universities/')
@@ -40,9 +41,9 @@ export function PublicHeader() {
           ))}
         </nav>
         <div className="ml-auto flex shrink-0 items-center gap-2 sm:gap-3">
-          <Link to="/auth" className="hidden min-h-11 items-center whitespace-nowrap rounded-xl px-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-accent hover:text-accent-foreground sm:inline-flex">
+          <SignInLink className="hidden min-h-11 items-center whitespace-nowrap rounded-xl px-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-accent hover:text-accent-foreground sm:inline-flex">
             Sign in
-          </Link>
+          </SignInLink>
           <Link to="/auth" className="site-btn site-btn-primary min-h-11 px-5 text-sm">
             Start free
           </Link>
@@ -67,7 +68,7 @@ export function PublicHeader() {
               </li>
             ))}
             <li>
-              <Link to="/auth" onClick={() => setOpen(false)} className="flex min-h-12 items-center text-[15px] font-bold text-primary">Sign in</Link>
+              <SignInLink onClick={() => setOpen(false)} className="flex min-h-12 items-center text-[15px] font-bold text-primary">Sign in</SignInLink>
             </li>
           </ul>
         </nav>

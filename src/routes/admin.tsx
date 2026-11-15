@@ -8,6 +8,7 @@ import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { Button } from '@/components/ui/button'
 import { isUnlockedThisSession, tryUnlock } from '@/lib/adminGate'
+import { SignInLink } from '@/components/auth/SignInLink'
 
 export const Route = createFileRoute('/admin')({
   head: privateHead('Admin'),
@@ -76,7 +77,7 @@ function AdminPage() {
     return (
       <div className="mx-auto max-w-md space-y-3 text-center">
         <p>You must be signed in.</p>
-        <Link to="/auth"><Button>Sign in</Button></Link>
+        <Button asChild><SignInLink>Sign in</SignInLink></Button>
       </div>
     )
   }

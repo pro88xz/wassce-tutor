@@ -31,6 +31,7 @@ import { initialsOf } from '@/lib/nav'
 import { EmptyState, PageHeader, Pill, SectionCard, Skeleton } from '@/components/ds/Primitives'
 import { Button } from '@/components/ui/button'
 import type { Profile } from '@/lib/types'
+import { SignInLink } from '@/components/auth/SignInLink'
 
 export const Route = createFileRoute('/account')({
   head: privateHead('Account'),
@@ -61,7 +62,7 @@ function AccountPage() {
         <EmptyState
           title="Sign in to see your account"
           body="Your profile, plan and settings appear here once you're signed in."
-          action={<Button asChild><Link to="/auth">Sign in</Link></Button>}
+          action={<Button asChild><SignInLink>Sign in</SignInLink></Button>}
         />
       </div>
     )
