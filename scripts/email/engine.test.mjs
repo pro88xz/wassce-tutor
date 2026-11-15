@@ -369,19 +369,22 @@ test('engine: a refused address is suppressed so it is never tried again', async
 })
 
 // ── Settings: from Supabase, environment variables only override ───────────
-test('settings come from the database; environment variables override when set', () => {
-  const row = { mode: 'pilot', pilot_addresses: ['Me@Example.com'], daily_limit: 50, paused: false, resend_api_key: 're_db', email_from: 'WASSCE Tutor <a@b.c>', token_secret: 't'.repeat(64), cron_secret: 'c'.repeat(64) }
+test('settings come from the database; a Vercel EMAIL_MODE can only switch the engine off', () => {
+  const row = { mode: 'live', pilot_addresses: ['Me@Example.com'], daily_limit: 50, paused: false, resend_api_key: 're_db', email_from: 'WASSCE Tutor <a@b.c>', token_secret: 't'.repeat(64), cron_secret: 'c'.repeat(64) }
   const none = { mode: null, resendKey: null, from: null, replyTo: null, tokenSecret: null, cronSecret: null, webhookSecret: null, onlyTo: null, dailyLimit: null, site: 'https://wasscetutor.com' }
   const fromDb = mergeConfig(row, none)
-  assert.equal(fromDb.mode, 'pilot')
+  assert.equal(fromDb.mode, 'live')
   assert.deepEqual(fromDb.onlyTo, ['me@example.com'])
   assert.equal(fromDb.dailyLimit, 50)
   assert.equal(fromDb.resendKey, 're_db')
-  assert.equal(fromDb.modeFromEnv, false)
-  const overridden = mergeConfig(row, { ...none, mode: 'off', resendKey: 're_env' })
-  assert.equal(overridden.mode, 'off')
-  assert.equal(overridden.modeFromEnv, true)
-  assert.equal(overridden.resendKey, 're_env')
-  assert.equal(mergeConfig(null, none).mode, 'off', 'no database row: the engine stays off')
-  assert.equal(mergeConfig({ ...row, mode: 'loud' }, none).mode, 'off', 'an unknown mode is treated as off')
+  assert.deepEqual(fromDb.cronSecrets, ['c'.repeat(64)])
+  assert.equal(fromDb.settingsError, null)
+  assert.equal(mergeConfig(row, { ...none, mode: 'off' }).mode, 'off', 'EMAIL_MODE=off is an emergency stop')
+  assert.equal(mergeConfig(row, { ...none, mode: 'dry-run' }).mode, 'live', 'a stale EMAIL_MODE cannot hold the engine back')
+  assert.equal(mergeConfig(row, { ...none, resendKey: 're_env' }).resendKey, 're_env')
+  assert.deepEqual(mergeConfig(row, { ...none, cronSecret: 'e'.repeat(32) }).cronSecrets, ['c'.repeat(64), 'e'.repeat(32)], 'both schedule secrets are accepted')
+  const unreadable = mergeConfig(null, none, 'PGRST202')
+  assert.equal(unreadable.mode, 'off', 'no settings: the engine stays off')
+  assert.equal(unreadable.settingsError, 'PGRST202')
+  assert.deepEqual(unreadable.cronSecrets, [])
 })

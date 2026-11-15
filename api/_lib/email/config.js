@@ -4,10 +4,13 @@
 // workflow copies the Resend key and sender from GitHub secrets. Nothing has
 // to be copied into Vercel. See docs/email-engine.md.
 //
-// Optional Vercel environment variables override the database, e.g. to switch
-// the engine off in an emergency: EMAIL_MODE, RESEND_API_KEY, EMAIL_FROM,
-// EMAIL_REPLY_TO, EMAIL_TOKEN_SECRET, CRON_SECRET, RESEND_WEBHOOK_SECRET,
-// EMAIL_ONLY_TO, EMAIL_DAILY_LIMIT.
+// Optional Vercel environment variables: EMAIL_MODE=off is an emergency stop
+// that does not depend on the database (any other EMAIL_MODE value is ignored,
+// so a stale variable can never hold the engine back). RESEND_API_KEY,
+// EMAIL_FROM, EMAIL_REPLY_TO, EMAIL_TOKEN_SECRET and RESEND_WEBHOOK_SECRET
+// replace the stored values if set. A CRON_SECRET is accepted in addition to
+// the stored schedule secret. Mode, pilot addresses and the daily limit come
+// only from the database.
 
 export const MODES = ['off', 'dry-run', 'pilot', 'live']
 
@@ -34,22 +37,25 @@ export function emailEnv() {
 }
 
 /** Combines the database settings (row from email_engine_config()) with any environment overrides. */
-export function mergeConfig(row, env = emailEnv()) {
-  const mode = env.mode ?? row?.mode ?? 'off'
-  const limit = env.dailyLimit ?? row?.daily_limit
+export function mergeConfig(row, env = emailEnv(), settingsError = null) {
+  const stored = MODES.includes(row?.mode) ? row.mode : 'off'
+  const limit = row?.daily_limit
   return {
-    mode: MODES.includes(mode) ? mode : 'off',
-    modeFromEnv: env.mode != null,
+    mode: env.mode === 'off' ? 'off' : stored,
+    modeFromEnv: env.mode === 'off',
     paused: Boolean(row?.paused),
     resendKey: env.resendKey ?? row?.resend_api_key ?? '',
     from: env.from ?? row?.email_from ?? '',
     replyTo: env.replyTo ?? row?.reply_to ?? '',
     tokenSecret: env.tokenSecret ?? row?.token_secret ?? '',
-    cronSecret: env.cronSecret ?? row?.cron_secret ?? '',
+    /** The daily-run workflow sends the stored secret; a Vercel CRON_SECRET also works. */
+    cronSecrets: [row?.cron_secret, env.cronSecret].filter((v) => typeof v === 'string' && v.length >= 16),
     webhookSecret: env.webhookSecret ?? row?.webhook_secret ?? '',
-    onlyTo: env.onlyTo ?? list(row?.pilot_addresses ?? []),
+    onlyTo: list(row?.pilot_addresses ?? []),
     dailyLimit: Number.isFinite(limit) && limit >= 0 ? Math.min(limit, 5000) : 80,
     site: env.site,
+    /** Why the stored settings could not be read (an error code, never a secret), or null. */
+    settingsError,
   }
 }
 
@@ -58,8 +64,8 @@ let cached = null
 export async function loadEmailConfig(client, { fresh = false } = {}) {
   if (!fresh && cached && Date.now() - cached.at < 60_000) return cached.config
   const { data, error } = await client.rpc('email_engine_config').maybeSingle()
-  if (error) console.error(`[email] settings not readable: ${error.message}`)
-  const config = mergeConfig(error ? null : data)
+  if (error) console.error(`[email] settings not readable: ${error.code ?? ''} ${error.message}`)
+  const config = mergeConfig(error ? null : data, emailEnv(), error ? String(error.code || 'unknown') : data ? null : 'no_settings_row')
   cached = { at: Date.now(), config }
   return config
 }
