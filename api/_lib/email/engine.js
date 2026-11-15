@@ -60,6 +60,44 @@ export function composeMessage(env, job, stats) {
 }
 
 /**
+ * Fills each weekly email with the student's real week (email_student_week()).
+ * Students with no study to report are dropped, never sent made-up numbers.
+ */
+export async function addWeekData(client, chosen, summary) {
+  const digests = chosen.filter((c) => c.programme === 'weekly_digest')
+  if (!digests.length) return chosen
+  const { data, error } = await client.rpc('email_student_week', { p_users: digests.map((c) => c.userId) })
+  if (error) console.error(`[email] weekly data unavailable, weekly emails skipped: ${error.message}`)
+  const byUser = new Map((error ? [] : (data ?? [])).map((w) => [w.user_id, w]))
+  return chosen.filter((c) => {
+    if (c.programme !== 'weekly_digest') return true
+    const w = byUser.get(c.userId)
+    if (!w || !w.focus_subject_id || (w.lessons_week ?? 0) + (w.practice_week ?? 0) === 0) {
+      summary.skipped.no_week_activity = (summary.skipped.no_week_activity ?? 0) + 1
+      return false
+    }
+    const next = w.next_lesson_id ? { title: w.next_lesson_title, topic: w.next_topic_name, free: Boolean(w.next_lesson_free) } : null
+    const open = next && (next.free || c.payload.access)
+    c.payload = {
+      ...c.payload,
+      week: {
+        lessons: w.lessons_week ?? 0,
+        practice: w.practice_week ?? 0,
+        score: w.score_week ?? null,
+        subjects: w.subjects_week ?? [],
+        focusSubject: w.focus_subject_name,
+        done: w.focus_done ?? 0,
+        total: w.focus_total ?? 0,
+        newLessons: w.new_lessons_week ?? 0,
+        next,
+      },
+      links: { cta: open ? `/lesson/${w.next_lesson_id}` : `/subject/${w.focus_subject_id}` },
+    }
+    return true
+  })
+}
+
+/**
  * @param deps { client: Supabase (secret key), env: loadEmailConfig(), now, send(message) → { ok, id, error, permanent }, sleep }
  */
 export async function runEngine({ client, env, now = Date.now(), send, sleep = (ms) => new Promise((r) => setTimeout(r, ms)) }) {
@@ -102,7 +140,7 @@ export async function runEngine({ client, env, now = Date.now(), send, sleep = (
     after = rows[rows.length - 1].user_id
   }
   summary.due = due.length
-  const chosen = rankCandidates(due).slice(0, allowance)
+  const chosen = await addWeekData(client, rankCandidates(due).slice(0, allowance), summary)
   for (const c of chosen) summary.byProgramme[c.programme] = (summary.byProgramme[c.programme] ?? 0) + 1
   if (env.mode === 'dry-run') return { ...summary, wouldSend: chosen.length }
   if (chosen.length === 0) return summary

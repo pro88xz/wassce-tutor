@@ -39,7 +39,7 @@ jobs:
           test -n "$SUPABASE_DB_URL" || { echo "Missing SUPABASE_DB_URL"; exit 1; }
           SECRET="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align \
             --command "select decrypted_secret from vault.decrypted_secrets where name = 'email_cron_secret';" | tr -d '[:space:]')"
-          test -n "$SECRET" || { echo "No schedule secret yet: run the 'Set up email engine (16)' workflow first."; exit 1; }
+          test -n "$SECRET" || { echo "No schedule secret yet: run the 'Set up email engine' workflow first."; exit 1; }
           echo "::add-mask::$SECRET"
           curl --fail-with-body --silent --show-error --max-time 120 \
             --header "Authorization: Bearer $SECRET" \

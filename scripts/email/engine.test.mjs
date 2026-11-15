@@ -3,17 +3,18 @@ import assert from 'node:assert/strict'
 import crypto from 'node:crypto'
 import { test } from 'node:test'
 import { mergeConfig } from '../../api/_lib/email/config.js'
-import { runEngine } from '../../api/_lib/email/engine.js'
+import { addWeekData, runEngine } from '../../api/_lib/email/engine.js'
 import { renderEmail } from '../../api/_lib/email/layout.js'
 import { sendViaResend } from '../../api/_lib/email/resend.js'
-import { firstName, planForStudent, rankCandidates, snapshotFromRow } from '../../api/_lib/email/rules.js'
+import { firstName, planForStudent, rankCandidates, snapshotFromRow, weekOf } from '../../api/_lib/email/rules.js'
 import { SAMPLES, TEMPLATES } from '../../api/_lib/email/templates.js'
 import { clickSignature, safePath, unsubscribeToken, verifyClick, verifyUnsubscribeToken } from '../../api/_lib/email/tokens.js'
 import { verifyResendSignature } from '../../api/_lib/email/webhook-signature.js'
 
 const HOUR = 3_600_000
 const DAY = 24 * HOUR
-const NOW = Date.parse('2026-11-16T10:00:00Z')
+// A Wednesday: outside the weekly email's Sunday–Tuesday window, so other rules are tested on their own.
+const NOW = Date.parse('2026-11-18T10:00:00Z')
 const ago = (ms) => new Date(NOW - ms).toISOString()
 const ahead = (ms) => new Date(NOW + ms).toISOString()
 const SECRET = 'x'.repeat(40)
@@ -412,4 +413,70 @@ test('regression: students due the same email get their own keys, and every one 
   assert.equal(result.queued, 5)
   assert.equal(result.sent, 5)
   assert.deepEqual(sent.sort(), ['away1@example.com', 'away2@example.com', 'new1@example.com', 'new2@example.com', 'new3@example.com'])
+})
+
+// ── Weekly progress email ──────────────────────────────────────────────────
+const SUNDAY = Date.parse('2026-11-22T10:00:00Z')
+const MONDAY = Date.parse('2026-11-23T10:00:00Z')
+const WEDNESDAY = Date.parse('2026-11-25T10:00:00Z')
+const active = (now) => row({ last_study_at: new Date(now - 2 * DAY).toISOString(), last_sign_in_at: new Date(now - 2 * DAY).toISOString(), created_at: new Date(now - 60 * DAY).toISOString() })
+
+test('weekly email: Sunday to Tuesday, to students who studied this week, once a week', () => {
+  assert.equal(weekOf(SUNDAY), '2026-11-22')
+  assert.equal(weekOf(MONDAY), '2026-11-22', 'Monday belongs to the week that started on Sunday')
+  const { email } = planForStudent(snapshotFromRow(active(SUNDAY)), SUNDAY)
+  assert.equal(email.programme, 'weekly_digest')
+  assert.equal(email.templateKey, 'weekly_digest')
+  assert.equal(email.anchor, '2026-11-22')
+  assert.equal(planForStudent(snapshotFromRow(active(WEDNESDAY)), WEDNESDAY).skip, 'nothing_due', 'not mid-week')
+  const sentSunday = { programme: 'weekly_digest', step: 1, anchor: '2026-11-22', category: 'marketing', status: 'sent', at: new Date(SUNDAY).toISOString() }
+  assert.notEqual(planForStudent(snapshotFromRow({ ...active(MONDAY), history: [sentSunday] }), MONDAY + 3 * DAY).email?.programme, 'weekly_digest', 'not twice in one week')
+  const away = row({ last_study_at: new Date(SUNDAY - 10 * DAY).toISOString(), last_sign_in_at: new Date(SUNDAY - 10 * DAY).toISOString() })
+  assert.equal(planForStudent(snapshotFromRow(away), SUNDAY).email.programme, 'reengage', 'inactive students get the come-back email instead')
+  assert.equal(planForStudent(snapshotFromRow({ ...active(SUNDAY), marketing_status: 'unsubscribed' }), SUNDAY).skip, 'not_subscribed')
+})
+
+const weekRow = (over = {}) => ({
+  user_id: UID, lessons_week: 5, practice_week: 2, score_week: 68, subjects_week: ['Biology', 'Chemistry'],
+  focus_subject_id: 'b1', focus_subject_name: 'Biology', focus_done: 12, focus_total: 40, new_lessons_week: 4,
+  next_lesson_id: 'l9', next_lesson_title: 'Cell division', next_topic_name: 'Cells', next_lesson_free: false, ...over,
+})
+const weekClient = (rows) => ({ rpc: (name, args) => Promise.resolve(name === 'email_student_week' ? { data: rows.filter((r) => args.p_users.includes(r.user_id)), error: null } : { data: null, error: { message: 'x' } }) })
+const digestCandidate = (access = null) => ({ programme: 'weekly_digest', userId: UID, payload: { firstName: 'Ama', access, links: { cta: '/subject/b1' } } })
+
+test('weekly email: real numbers are added; a locked next lesson links to the subject, an open one to the lesson', async () => {
+  const summary = { skipped: {} }
+  const [free] = await addWeekData(weekClient([weekRow()]), [digestCandidate()], summary)
+  assert.equal(free.payload.week.lessons, 5)
+  assert.equal(free.payload.week.next.title, 'Cell division')
+  assert.equal(free.payload.links.cta, '/subject/b1', 'locked for a free student: go to the subject page')
+  const [paid] = await addWeekData(weekClient([weekRow()]), [digestCandidate({ plan: 'term', until: '2026-12-20T00:00:00Z' })], summary)
+  assert.equal(paid.payload.links.cta, '/lesson/l9', 'open for a paying student: straight to the lesson')
+  const [freeLesson] = await addWeekData(weekClient([weekRow({ next_lesson_free: true })]), [digestCandidate()], summary)
+  assert.equal(freeLesson.payload.links.cta, '/lesson/l9')
+})
+
+test('weekly email: nobody gets one with nothing real to report, or when the data is unavailable', async () => {
+  const summary = { skipped: {} }
+  const other = { programme: 'reengage', userId: 'someone', payload: {} }
+  const kept = await addWeekData(weekClient([weekRow({ lessons_week: 0, practice_week: 0 })]), [digestCandidate(), other], summary)
+  assert.deepEqual(kept.map((c) => c.programme), ['reengage'])
+  assert.equal(summary.skipped.no_week_activity, 1)
+  const broken = { rpc: () => Promise.resolve({ data: null, error: { message: 'function does not exist' } }) }
+  assert.deepEqual((await addWeekData(broken, [digestCandidate(), other], { skipped: {} })).map((c) => c.programme), ['reengage'], 'other emails still go out')
+})
+
+test('weekly email copy: only what happened, plurals right, price from the plan list', () => {
+  const content = TEMPLATES.weekly_digest(SAMPLES.weekly_digest, { stats: STATS })
+  assert.equal(content.subject, 'Your WASSCE week: 5 lessons and 2 practice sets')
+  assert.ok(content.lists[0].items.includes('Practice sets: 2 (average score 68%)'))
+  assert.ok(content.lists[1].items.includes('12 of 40 lessons done (30%)'))
+  assert.ok(content.lists[1].items.includes('4 new lessons added this week'))
+  assert.ok(content.after[0].includes('part of full access (Monthly: NLe 25 for 1 month)'))
+  assert.equal(content.cta.label, 'Continue Biology')
+  const one = TEMPLATES.weekly_digest({ ...SAMPLES.weekly_digest, access: { plan: 'term' }, week: { ...SAMPLES.weekly_digest.week, lessons: 1, practice: 0, score: null, subjects: ['Biology'], newLessons: 0 } }, {})
+  assert.equal(one.subject, 'Your WASSCE week: 1 lesson')
+  assert.ok(!one.lists[0].items.some((i) => i.startsWith('Practice')), 'no practice line when there was no practice')
+  assert.ok(!one.after.some((t) => t.includes('full access')), 'no plan line for a paying student')
+  assert.equal(one.cta.label, 'Start the next lesson')
 })

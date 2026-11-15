@@ -1,8 +1,10 @@
-name: Set up email engine (16)
+name: Set up email engine
 
 # Run by hand from the Actions tab, on main. Safe to run again at any time.
-#  1. Applies migration 16 once: the email engine's tables, consent (existing
-#     accounts subscribed by default), and two secrets made inside the database.
+#  1. Applies each email migration (supabase/migrations/*_email_*.sql) once, in
+#     order: 16 the engine's tables, consent (existing accounts subscribed by
+#     default) and two secrets made inside the database; 17 the weekly
+#     progress email's data.
 #  2. Every run: copies RESEND_API_KEY and EMAIL_FROM (and, if set,
 #     RESEND_WEBHOOK_SECRET and EMAIL_REPLY_TO) from this repository's secrets
 #     into Supabase Vault, where the website reads them. Nothing has to be
@@ -58,23 +60,24 @@ jobs:
           test -n "$SUPABASE_DB_URL" || { echo "Missing SUPABASE_DB_URL"; exit 1; }
           test -n "$RESEND_API_KEY" || { echo "Missing RESEND_API_KEY"; exit 1; }
           test -n "$EMAIL_FROM" || { echo "Missing EMAIL_FROM"; exit 1; }
-          test -s "supabase/migrations/20261115_16_email_engine.sql" || { echo "Migration file missing"; exit 1; }
-          grep -qiE '^[[:space:]]*begin;' supabase/migrations/20261115_16_email_engine.sql
-          grep -qiE '^[[:space:]]*commit;' supabase/migrations/20261115_16_email_engine.sql
+          ls supabase/migrations/*_email_*.sql > /dev/null || { echo "No email migrations found"; exit 1; }
+          for FILE in supabase/migrations/*_email_*.sql; do
+            grep -qiE '^[[:space:]]*begin;' "$FILE" || { echo "$FILE has no begin;"; exit 1; }
+            grep -qiE '^[[:space:]]*commit;' "$FILE" || { echo "$FILE has no commit;"; exit 1; }
+          done
 
       - name: Install PostgreSQL client
         run: |
           sudo apt-get update
           sudo apt-get install --yes postgresql-client
 
-      - name: Apply migration once and record checksum
+      - name: Apply each email migration once and record its checksum
         shell: bash
         env:
           SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
-          MIGRATION_VERSION: "20261115_16_email_engine"
         run: |
           set -euo pipefail
-          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 <<'SQL'
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --quiet <<'SQL'
           create schema if not exists wassce_internal;
           revoke all on schema wassce_internal from public, anon, authenticated;
           create table if not exists wassce_internal.deployed_migrations (
@@ -85,22 +88,23 @@ jobs:
           revoke all on all tables in schema wassce_internal from public, anon, authenticated;
           SQL
 
-          APPLIED="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select exists (select 1 from wassce_internal.deployed_migrations where version = '$MIGRATION_VERSION');" | tr -d '[:space:]')"
-          if [[ "$APPLIED" == "t" ]]; then
-            echo "Migration $MIGRATION_VERSION is already recorded; nothing to apply."
-            exit 0
-          fi
-
-          CHECKSUM="$(sha256sum supabase/migrations/20261115_16_email_engine.sql | cut -d ' ' -f 1)"
-          {
-            echo "begin;"
-            echo "do \$\$ begin if exists (select 1 from wassce_internal.deployed_migrations where version = '$MIGRATION_VERSION') then raise exception 'Migration already applied'; end if; end \$\$;"
-            sed '/^[[:space:]]*begin;[[:space:]]*$/Id; /^[[:space:]]*commit;[[:space:]]*$/Id;' supabase/migrations/20261115_16_email_engine.sql
-            printf "insert into wassce_internal.deployed_migrations(version, sha256) values ('%s', '%s');\\n" "$MIGRATION_VERSION" "$CHECKSUM"
-            echo "commit;"
-          } | psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1
-
-          echo "Migration applied and recorded successfully."
+          for FILE in $(ls supabase/migrations/*_email_*.sql | sort); do
+            VERSION="$(basename "$FILE" .sql)"
+            APPLIED="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select exists (select 1 from wassce_internal.deployed_migrations where version = '$VERSION');" | tr -d '[:space:]')"
+            if [[ "$APPLIED" == "t" ]]; then
+              echo "$VERSION: already applied"
+              continue
+            fi
+            CHECKSUM="$(sha256sum "$FILE" | cut -d ' ' -f 1)"
+            {
+              echo "begin;"
+              echo "do \$\$ begin if exists (select 1 from wassce_internal.deployed_migrations where version = '$VERSION') then raise exception 'Migration already applied'; end if; end \$\$;"
+              sed '/^[[:space:]]*begin;[[:space:]]*$/Id; /^[[:space:]]*commit;[[:space:]]*$/Id;' "$FILE"
+              printf "insert into wassce_internal.deployed_migrations(version, sha256) values ('%s', '%s');\n" "$VERSION" "$CHECKSUM"
+              echo "commit;"
+            } | psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --quiet
+            echo "$VERSION: applied"
+          done
 
       - name: Store the Resend key and sender in Supabase Vault
         shell: bash
@@ -191,7 +195,8 @@ jobs:
             has_function_privilege('authenticated','public.email_audience(uuid,integer)','execute'),
             has_function_privilege('anon','public.set_my_marketing_preference(boolean,text,text)','execute'),
             (select count(*) from pg_trigger where tgname = 'on_auth_user_created_email_preferences'),
-            (select count(*) from vault.secrets where name in ('email_resend_api_key','email_from','email_token_secret','email_cron_secret')));" | tr -d '[:space:]')"
-          echo "tables, students can set their choice, students can read audience, anon can set, sign-up trigger, secrets: $RESULT"
-          test "$RESULT" = "7,t,f,f,1,4" || { echo "Email engine checks did not match 7,t,f,f,1,4"; exit 1; }
+            (select count(*) from vault.secrets where name in ('email_resend_api_key','email_from','email_token_secret','email_cron_secret')),
+            has_function_privilege('authenticated','public.email_student_week(uuid[])','execute'));" | tr -d '[:space:]')"
+          echo "tables, students can set their choice, students can read audience, anon can set, sign-up trigger, secrets, students can read week data: $RESULT"
+          test "$RESULT" = "7,t,f,f,1,4,f" || { echo "Email engine checks did not match 7,t,f,f,1,4,f"; exit 1; }
           psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --command "select consent_source, marketing_status, count(*) from public.email_preferences group by 1, 2 order by 1, 2;"

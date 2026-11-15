@@ -44,7 +44,7 @@ export async function POST(request) {
   const body = await request.json().catch(() => ({}))
   if (body?.action !== 'test') return json(request, { error: 'Unknown action' }, 400)
   const env = await loadEmailConfig(who.client, { fresh: true })
-  if (!canSend(env)) return json(request, { error: 'The Resend key and sender are not set up yet: run the "Set up email engine (16)" workflow.' }, 503)
+  if (!canSend(env)) return json(request, { error: 'The Resend key and sender are not set up yet: run the "Set up email engine" workflow.' }, 503)
 
   const { data: stats } = await who.client.rpc('email_content_stats').maybeSingle()
   const results = []

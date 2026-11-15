@@ -7,6 +7,7 @@
 //   access_ending    service    access ends within 3 days: when, and what stays free
 //   pending_payment  marketing  started a checkout but did not pay: the plan's benefits, finish paying
 //   activation       marketing  new account, never studied: make a first start
+//   weekly_digest    marketing  studied this week: their real week, progress and next lesson (Sun–Tue)
 //   reengage         marketing  no study or sign-in for 7 days: come back to one topic
 //
 // Marketing emails also need consent and respect the weekly cap. Every
@@ -28,6 +29,8 @@ export const RULES = {
   pendingPayment: { firstAfterHours: 2, secondAfterDays: 3, maxAgeDays: 30, cooldownDays: 3, perFortnight: 2 },
   activation: { firstAfterHours: 24, secondAfterDays: 4, maxAccountAgeDays: 14 },
   reengage: { afterDays: 7, secondAfterDays: 7, maxInactiveDays: 365, newAccountDays: 14, perMonth: 2 },
+  /** Sunday (0) to Tuesday (2), UTC = Freetown time: Sunday normally, later only if the daily limit was reached. */
+  weeklyDigest: { weekdays: [0, 1, 2], activeWithinDays: 7 },
 }
 
 export const PROGRAMMES = {
@@ -35,7 +38,8 @@ export const PROGRAMMES = {
   access_ending: { category: 'service', priority: 2 },
   pending_payment: { category: 'marketing', priority: 3 },
   activation: { category: 'marketing', priority: 4 },
-  reengage: { category: 'marketing', priority: 5 },
+  weekly_digest: { category: 'marketing', priority: 5 },
+  reengage: { category: 'marketing', priority: 6 },
 }
 
 /** Statuses that mean an email went out, is going out, or may have. */
@@ -77,6 +81,16 @@ export function snapshotFromRow(r) {
 
 const iso = (t) => new Date(t).toISOString()
 
+/** The Sunday (UTC) that starts the week containing `now`, as YYYY-MM-DD: one weekly email per student per week. */
+export function weekOf(now) {
+  const d = new Date(now)
+  d.setUTCHours(0, 0, 0, 0)
+  d.setUTCDate(d.getUTCDate() - d.getUTCDay())
+  return d.toISOString().slice(0, 10)
+}
+
+const SINGLE_TEMPLATE = new Set(['access_started', 'access_ending', 'weekly_digest'])
+
 /**
  * Decides the one email this student should get now, if any.
  * Returns { email } or { skip: reason }.
@@ -113,7 +127,7 @@ export function planForStudent(s, now) {
       anchor,
       category,
       priority,
-      templateKey: programme === 'access_started' || programme === 'access_ending' ? programme : `${programme}_${step}`,
+      templateKey: SINGLE_TEMPLATE.has(programme) ? programme : `${programme}_${step}`,
       // The student is part of the key: the database allows one live job per key, across everyone.
       idempotencyKey: `${programme}:${step}:${s.userId}:${anchor}`,
       payload: { firstName: s.firstName, ...payload },
@@ -177,6 +191,30 @@ export function planForStudent(s, now) {
         if (why) blocked ??= why
         else candidates.push(make('activation', step, 'account', { links: { cta: '/subjects' } }, s.createdAt))
       }
+    }
+  }
+
+  // ── weekly_digest: studied this week ─────────────────────────────────────
+  // The engine adds the week's real numbers from email_student_week(); a
+  // student with nothing to report is dropped there.
+  if (studyAccount && s.lastStudyAt && now - s.lastStudyAt <= RULES.weeklyDigest.activeWithinDays * DAY) {
+    const anchor = weekOf(now)
+    if (RULES.weeklyDigest.weekdays.includes(new Date(now).getUTCDay()) && !sent('weekly_digest', 1, anchor)) {
+      const why = marketingAllowed()
+      if (why) blocked ??= why
+      else
+        candidates.push(
+          make(
+            'weekly_digest',
+            1,
+            anchor,
+            {
+              access: s.access.active ? { plan: s.access.plan, until: iso(s.access.until) } : null,
+              links: { cta: s.lastSubject ? `/subject/${s.lastSubject.id}` : '/subjects' },
+            },
+            s.lastStudyAt,
+          ),
+        )
     }
   }
 

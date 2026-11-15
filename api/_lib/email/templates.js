@@ -9,6 +9,7 @@ const n = (v) => Number(v).toLocaleString('en-US')
 const dateFmt = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Africa/Freetown' })
 const day = (isoString) => dateFmt.format(new Date(isoString))
 const hello = (p) => (p.firstName ? `Hello ${p.firstName},` : 'Hello,')
+const plural = (count, word) => `${n(count)} ${word}${count === 1 ? '' : 's'}`
 
 function plan(id) {
   const known = PLANS[id] ?? PLANS.term
@@ -167,6 +168,41 @@ export const TEMPLATES = {
     }
   },
 
+  // ── Weekly progress: only real numbers from this week ────────────────────
+  weekly_digest: (p) => {
+    const w = p.week
+    const focus = w.focusSubject
+    const did = [w.lessons ? plural(w.lessons, 'lesson') : null, w.practice ? plural(w.practice, 'practice set') : null].filter(Boolean)
+    const thisWeek = [
+      w.lessons ? `Lessons completed: ${n(w.lessons)}` : null,
+      w.practice ? `Practice sets: ${n(w.practice)}${w.score != null ? ` (average score ${w.score}%)` : ''}` : null,
+      w.subjects.length > 1 ? `Subjects: ${w.subjects.join(', ')}` : null,
+    ].filter(Boolean)
+    const locked = w.next && !w.next.free && !p.access
+    const progress = [
+      w.total ? `${n(w.done)} of ${n(w.total)} lessons done (${Math.round((100 * w.done) / w.total)}%)` : null,
+      w.newLessons > 0 ? `${plural(w.newLessons, 'new lesson')} added this week` : null,
+      w.next ? `Next up: ${w.next.title} (${w.next.topic})` : null,
+    ].filter(Boolean)
+    const monthly = plan('term')
+    return {
+      category: 'marketing',
+      subject: `Your WASSCE week: ${did.join(' and ')}`,
+      preheader: w.total ? `${focus}: ${n(w.done)} of ${n(w.total)} lessons done. Here's what's next.` : "Here's your week, and what's next.",
+      headline: 'Your week on WASSCE Tutor',
+      paragraphs: [hello(p), 'Here is what you did in the last 7 days.'],
+      lists: [
+        { title: 'This week', items: thisWeek },
+        { title: focus, items: progress },
+      ].filter((l) => l.items.length),
+      after: [
+        locked ? `"${w.next.title}" is part of full access (${monthly.name}: NLe ${monthly.priceNle} for ${monthly.length}).` : null,
+        'Small, steady sessions add up before the exam.',
+      ].filter(Boolean),
+      cta: { label: w.next && !locked ? 'Start the next lesson' : `Continue ${focus}`, link: 'cta' },
+    }
+  },
+
   // ── Service: plan started / ending ───────────────────────────────────────
   access_started: (p, ctx) => {
     const pl = plan(p.plan)
@@ -218,6 +254,21 @@ export const SAMPLES = {
   activation_2: { firstName: null },
   reengage_1: { firstName: 'Aminata', studied: true, subject: { id: 'x', name: 'Biology' }, access: null },
   reengage_2: { firstName: 'Aminata', studied: true, subject: { id: 'x', name: 'Biology' }, access: null },
+  weekly_digest: {
+    firstName: 'Aminata',
+    access: null,
+    week: {
+      lessons: 5,
+      practice: 2,
+      score: 68,
+      subjects: ['Biology', 'Chemistry'],
+      focusSubject: 'Biology',
+      done: 12,
+      total: 40,
+      newLessons: 4,
+      next: { title: 'Cell division', topic: 'Cells and their structure', free: false },
+    },
+  },
   access_started: { firstName: 'Isata', plan: 'term', amount: 25, until: '2026-12-15T10:00:00Z' },
   access_ending: { firstName: 'Isata', plan: 'term', until: '2026-12-15T10:00:00Z' },
 }
