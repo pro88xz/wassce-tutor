@@ -19,7 +19,7 @@ const trail = (hub: SubjectHub): [string, string][] => [
 ]
 
 function describe(hub: SubjectHub): string {
-  return `Book a WASSCE ${hub.subject.name} tutor in Sierra Leone: one-to-one lessons online or at home, covering all ${hub.topicCount} syllabus topics. Tell us what you need and we match you.`
+  return `Book a verified WASSCE ${hub.subject.name} tutor in Sierra Leone for in-person lessons covering all ${hub.topicCount} syllabus topics. See their monthly fee, then message them on WhatsApp.`
 }
 
 // The subject FAQ leads with a subject-specific answer, then the shared ones.
@@ -69,19 +69,20 @@ function SubjectTutorPage() {
       <div className="space-y-5">
         <Breadcrumbs trail={trail(hub)} />
         <SubjectBanner slug={subject.slug} eyebrow="Book a tutor" title={`${subject.name} tutor`} />
+        <TutorMarketplace subjectId={subject.id} subjectName={subject.name} />
         <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] md:gap-10">
           <div className="space-y-4">
             <p className="text-[17px] text-muted-foreground">
-              One-to-one help with WASSCE {subject.name} from a real teacher, online or at home. Tell us the topics you find hard and we match you with a tutor.
+              In-person help with WASSCE {subject.name} from a verified teacher. See each tutor’s monthly fee, then message them on WhatsApp to arrange lessons near you.
             </p>
             <ul className="space-y-2 text-[15px]">
-              {[`All ${hub.topicCount} topics in the WASSCE ${subject.name} syllabus`, 'Online lessons anywhere, home lessons where available', 'Price confirmed on WhatsApp before you pay anything'].map((t) => (
+              {[`All ${hub.topicCount} topics in the WASSCE ${subject.name} syllabus`, 'In-person lessons, arranged directly with your tutor', 'Monthly fee shown upfront: you agree before you message'].map((t) => (
                 <li key={t} className="flex gap-2"><Check className="mt-0.5 h-5 w-5 shrink-0 text-success" aria-hidden /> {t}</li>
               ))}
             </ul>
 
-            <a href="#book" className="inline-flex min-h-12 py-2 w-full items-center justify-center rounded-xl bg-primary px-6 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong md:hidden text-center">
-              Request a {subject.name} tutor
+            <a href="#tutors" className="inline-flex min-h-12 py-2 w-full items-center justify-center rounded-xl bg-primary px-6 font-semibold text-primary-foreground transition-colors hover:bg-brand-strong md:hidden text-center">
+              See {subject.name} tutors
             </a>
 
             <section className="space-y-3 pt-2" aria-labelledby="covers">
@@ -107,15 +108,13 @@ function SubjectTutorPage() {
 
           <section id="book" className="scroll-mt-20" aria-labelledby="book-heading">
             <div className="rounded-2xl border bg-card p-5 shadow-sm sm:p-6 md:sticky md:top-20">
-              <h2 id="book-heading" className="mb-1 text-xl font-bold tracking-tight">Request a {subject.name} tutor</h2>
-              <p className="mb-5 text-[15px] text-muted-foreground">Free to ask. We confirm the tutor, times and price with you on WhatsApp.</p>
+              <h2 id="book-heading" className="mb-1 text-xl font-bold tracking-tight">Can’t find a {subject.name} tutor?</h2>
+              <p className="mb-5 text-[15px] text-muted-foreground">Tell us your area and we’ll find one for in-person lessons, and tell you their monthly fee on WhatsApp.</p>
               <BookingForm subjects={subjects.map((s) => s.name)} defaultSubject={subject.name} />
             </div>
           </section>
         </div>
       </div>
-
-      <TutorMarketplace subjectId={subject.id} subjectName={subject.name} />
 
       <TutorHowItWorks />
 

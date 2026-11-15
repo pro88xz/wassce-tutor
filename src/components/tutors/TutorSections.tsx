@@ -5,25 +5,25 @@ import { tutorsPath } from '@/lib/public-rules'
 import { SubjectCover } from '@/components/ds/SubjectCover'
 
 export const TUTOR_FAQ: [question: string, answer: string][] = [
-  ['Is this a real person or the AI tutor?', 'A real person. Book a tutor arranges one-to-one lessons with a human teacher. It is separate from the AI tutor inside the WASSCE Tutor app.'],
-  ['How much does a tutor cost?', 'Each approved tutor sets their own monthly fee for each subject, shown on their profile before you send a request. If we match you on WhatsApp instead, we tell you the monthly fee before you agree to anything, and you pay nothing to ask.'],
-  ['Can the tutor come to my home?', 'Home lessons depend on where you live. Tell us your town or area and we will let you know whether a tutor can come to you. Online lessons work anywhere with a phone and data.'],
-  ['How do online lessons work?', 'Your tutor calls you on a video or voice call at the times you agree, and shares working and past questions as you go. A phone is enough.'],
-  ['Do I need a WASSCE Tutor account?', 'No. Anyone can request a tutor. Between lessons, the app is there for lessons, exam-style practice and the AI tutor if you want them.'],
-  ['What happens after I send a request?', 'We reply on WhatsApp to confirm the tutor, the days and times, and the price. Nothing is booked or paid until you agree.'],
+  ['Is this a real person or the study tutor in the app?', 'A real person. Every tutor listed is a teacher verified by WASSCE Tutor. It is separate from the study tutor inside the WASSCE Tutor app.'],
+  ['How much does a tutor cost?', 'Each tutor sets their own monthly fee for each subject. You see it on their card, and you confirm it before WhatsApp opens.'],
+  ['Where do lessons happen?', 'In person. You agree the place with the tutor: your home, the tutor’s place or somewhere convenient for you both. WASSCE Tutor does not run online lessons.'],
+  ['How do I pay the tutor?', 'You pay the tutor directly, in the way you agree together. WASSCE Tutor does not take payment for tutoring.'],
+  ['What does the blue tick mean?', 'The tutor is verified: they applied with their qualifications and experience, and our team reviewed them before listing. A tutor can be paused if a problem is reported.'],
+  ['Do I need a WASSCE Tutor account?', 'To message a tutor directly, yes: a free account keeps tutors’ numbers private and shows them the message comes from a real student. To ask us to find a tutor for you, no account is needed.'],
 ]
 
 export function TutorHowItWorks() {
   const steps = [
-    ['Tell us what you need', 'Your subject, your class, online or at home, and when you are free. It takes a minute and costs nothing.'],
-    ['We match you with a tutor', 'We reply on WhatsApp with a tutor for your subject and confirm the times and the price before anything is paid.'],
-    ['Learn one to one', 'Work through the topics you find hard with someone who explains them your way, until you are ready for the exam.'],
+    ['Choose a verified tutor', 'Compare tutors by subject, experience, area and monthly fee. Every tutor is reviewed before they are listed.'],
+    ['Agree to the fee', 'Tap Book this tutor. You see the tutor’s monthly fee for your subject, and continue only if it works for you.'],
+    ['Message them on WhatsApp', 'WhatsApp opens with your message ready. Agree your days, times and place for in-person lessons directly with the tutor.'],
   ]
   return (
     <section className="tutor-how-section space-y-5" aria-labelledby="tutor-how">
       <div className="tutor-section-heading">
-        <div><p className="tutor-booking-eyebrow"><span /> A SIMPLE, CLEAR PROCESS</p><h2 id="tutor-how">From request to your first lesson.</h2></div>
-        <p>No payment to enquire. You decide once the tutor, schedule and price are clear.</p>
+        <div><p className="tutor-booking-eyebrow"><span /> A SIMPLE, CLEAR PROCESS</p><h2 id="tutor-how">From choosing a tutor to your first lesson.</h2></div>
+        <p>Free to contact. You see the fee first, and you pay the tutor directly.</p>
       </div>
       <ol className="tutor-how-grid">
         {steps.map(([title, body], i) => (

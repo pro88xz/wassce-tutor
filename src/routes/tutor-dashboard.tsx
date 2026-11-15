@@ -1,14 +1,18 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
-import { Bell, GraduationCap, ShieldCheck } from 'lucide-react'
+import { Bell, GraduationCap, MessageCircle, ShieldCheck } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { supabase } from '@/lib/supabase'
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { monthlyFee } from '@/lib/tutors'
+import { PhotoPicker } from '@/components/tutors/PhotoPicker'
+import { VerifiedBadge } from '@/components/tutors/Marketplace'
 
 type Booking = { id:string; starts_at:string; duration_minutes:number; price_nle:number; status:string; student_id:string; tutor_id:string; student_message:string|null; subject:{name:string}|null; tutor:{user_id:string;full_name:string}|null }
 type Notification = { id:string; title:string; body:string; created_at:string; read_at:string|null; event_type:string }
+type Contact = { contacted_at:string; student_first_name:string|null; subject_name:string|null; price_nle:number }
+const photoUrl = (path:string) => supabase.storage.from('tutor-profile-images').getPublicUrl(path).data.publicUrl
 
 export const Route = createFileRoute('/tutor-dashboard')({
   head: privateHead('Tutor dashboard'),
@@ -16,7 +20,6 @@ export const Route = createFileRoute('/tutor-dashboard')({
 })
 
 const dateLabel = (value:string) => new Date(value).toLocaleString('en-GB',{dateStyle:'medium',timeStyle:'short'})
-const weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
 
 function TutorDashboard() {
   const { user, loading } = useAuth()
@@ -25,10 +28,12 @@ function TutorDashboard() {
   const [bookings,setBookings] = useState<Booking[]>([])
   const [notifications,setNotifications] = useState<Notification[]>([])
   const [application,setApplication] = useState<{status:string;review_note:string|null}|null>(null)
-  const [slots,setSlots] = useState<{weekday:number;starts_at:string;ends_at:string}[]>([])
+  const [contacts,setContacts] = useState<Contact[]>([])
+  const [recentContacts,setRecentContacts] = useState(0)
+  const [photo,setPhoto] = useState<File|null>(null)
+  const [photoError,setPhotoError] = useState<string|null>(null)
   const [tutorBio,setTutorBio] = useState('')
   const [tutorLocation,setTutorLocation] = useState('')
-  const [teachingMode,setTeachingMode] = useState<'online'|'in_person'|'both'>('both')
   const [subjectRates,setSubjectRates] = useState<{subject_id:string;name:string;price_nle:number}[]>([])
   const [busy,setBusy] = useState(false)
   const [message,setMessage] = useState<string|null>(null)
@@ -38,19 +43,24 @@ function TutorDashboard() {
     if (!user) return
     const tutorResult = await supabase.from('tutors').select('id,user_id,full_name,bio,qualifications,experience_years,location,teaching_mode,avatar_path,status').eq('user_id',user.id).maybeSingle()
     const tutorRecord = tutorResult.error ? null : tutorResult.data
-    const [b,n,av,ts,app] = await Promise.all([
+    const [b,n,ct,ts,app] = await Promise.all([
       supabase.from('tutor_bookings').select('id,starts_at,duration_minutes,price_nle,status,student_id,tutor_id,student_message,subject:subjects(name),tutor:tutors(user_id,full_name)').eq('tutor_id',tutorRecord?.id ?? '00000000-0000-0000-0000-000000000000').order('starts_at',{ascending:false}).limit(50),
-      supabase.from('user_notifications').select('id,title,body,created_at,read_at,event_type').eq('recipient_id',user.id).in('event_type',['booking_requested','booking_request_sent','booking_accepted','booking_declined','booking_confirmed','booking_completed','booking_cancelled','booking_no_show','tutor_approved','tutor_rejected','tutor_suspended','tutor_reactivated']).order('created_at',{ascending:false}).limit(30),
-      tutorRecord ? supabase.from('tutor_availability').select('weekday,starts_at,ends_at').eq('tutor_id',tutorRecord.id).eq('active',true) : Promise.resolve({data:[],error:null}),
+      supabase.from('user_notifications').select('id,title,body,created_at,read_at,event_type').eq('recipient_id',user.id).in('event_type',['tutor_contacted','booking_requested','booking_request_sent','booking_accepted','booking_declined','booking_confirmed','booking_completed','booking_cancelled','booking_no_show','tutor_approved','tutor_rejected','tutor_suspended','tutor_reactivated']).order('created_at',{ascending:false}).limit(30),
+      tutorRecord ? supabase.rpc('my_tutor_contacts') : Promise.resolve({data:[],error:null}),
       tutorRecord ? supabase.from('tutor_subjects').select('subject_id,price_nle,subject:subjects(name)').eq('tutor_id',tutorRecord.id) : Promise.resolve({data:[],error:null}),
       supabase.from('tutor_applications').select('status,review_note').eq('user_id',user.id).order('created_at',{ascending:false}).limit(1).maybeSingle(),
     ])
     setTutor(tutorRecord)
-    if(tutorRecord){setTutorBio(tutorRecord.bio);setTutorLocation(tutorRecord.location);setTeachingMode(tutorRecord.teaching_mode)}
+    if(tutorRecord){setTutorBio(tutorRecord.bio);setTutorLocation(tutorRecord.location)}
     if (!b.error) setBookings((b.data??[]) as unknown as Booking[])
     if (!n.error) setNotifications((n.data??[]) as Notification[])
     if (!app.error) setApplication(app.data)
-    if (!av.error) setSlots((av.data??[]).map((s:any)=>({weekday:s.weekday,starts_at:String(s.starts_at).slice(0,5),ends_at:String(s.ends_at).slice(0,5)})))
+    if (!ct.error) {
+      const list=(ct.data??[]) as Contact[]
+      const since=Date.now()-30*86400000
+      setContacts(list)
+      setRecentContacts(list.filter((c)=>new Date(c.contacted_at).getTime()>since).length)
+    }
     if (!ts.error) setSubjectRates((ts.data??[]).map((s:any)=>({subject_id:s.subject_id,name:s.subject?.name??'Subject',price_nle:Number(s.price_nle)})))
   }
 
@@ -76,13 +86,18 @@ function TutorDashboard() {
     finally {setBusy(false)}
   }
 
-  const saveAvailability = async () => {
+  const savePhoto = async () => {
+    if(!user||!photo) return
     setBusy(true);setError(null);setMessage(null)
+    const path=`${user.id}/${crypto.randomUUID()}-${photo.name.toLowerCase().replace(/[^a-z0-9._-]/g,'-')}`
     try {
-      const {error:rpcError}=await supabase.rpc('set_tutor_availability',{p_slots:slots})
-      if(rpcError) throw rpcError
-      setMessage('Your weekly availability has been saved.')
-    } catch(err) {setError(err instanceof Error?err.message:'Could not save availability.')}
+      const {error:uploadError}=await supabase.storage.from('tutor-profile-images').upload(path,photo,{upsert:false,contentType:photo.type})
+      if(uploadError) throw uploadError
+      const {error:rpcError}=await supabase.rpc('update_tutor_avatar',{p_avatar_path:path})
+      if(rpcError){await supabase.storage.from('tutor-profile-images').remove([path]);throw rpcError}
+      setPhoto(null);setMessage('Your new photo is on your tutor card.')
+      await load()
+    } catch(err) {setError(err instanceof Error?err.message:'Could not save your photo.')}
     finally {setBusy(false)}
   }
 
@@ -98,14 +113,14 @@ function TutorDashboard() {
   const unread=notifications.filter((n)=>!n.read_at).length
 
   return <div className="mx-auto w-full max-w-7xl space-y-8 pb-16">
-    <header className="rounded-[2rem] bg-[#21134d] p-7 text-white sm:p-9"><p className="text-xs font-bold uppercase tracking-[.16em] text-violet-200">WASSCE Tutor network</p><h1 className="mt-2 text-3xl font-bold sm:text-4xl">Tutor workspace</h1><p className="mt-2 text-sm text-white/65">Manage your tutor application, teaching profile, incoming bookings and notifications.</p><div className="mt-5 flex flex-wrap gap-3"><Link to="/tutors" className="inline-flex min-h-10 items-center rounded-xl bg-white px-4 text-sm font-bold text-[#21134d]">View marketplace</Link><Link to="/become-a-tutor" className="inline-flex min-h-10 items-center rounded-xl border border-white/25 px-4 text-sm font-semibold text-white">Tutor application</Link></div></header>
+    <header className="rounded-[2rem] bg-[#21134d] p-7 text-white sm:p-9"><p className="text-xs font-bold uppercase tracking-[.16em] text-violet-200">WASSCE Tutor network</p><h1 className="mt-2 text-3xl font-bold sm:text-4xl">Tutor workspace</h1><p className="mt-2 text-sm text-white/65">Your tutor card, monthly fees, and the students who contact you on WhatsApp.</p><div className="mt-5 flex flex-wrap gap-3"><Link to="/tutors" className="inline-flex min-h-10 items-center rounded-xl bg-white px-4 text-sm font-bold text-[#21134d]">View marketplace</Link><Link to="/become-a-tutor" className="inline-flex min-h-10 items-center rounded-xl border border-white/25 px-4 text-sm font-semibold text-white">Tutor application</Link></div></header>
     {message&&<p role="status" className="rounded-xl bg-emerald-50 p-4 text-sm text-emerald-800">{message}</p>}
     {error&&<p role="alert" className="rounded-xl bg-red-50 p-4 text-sm text-red-700">{error}</p>}
-    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4"><Metric label="Incoming requests" value={incoming.filter((b)=>b.status==='requested').length}/><Metric label="Upcoming sessions" value={incoming.filter((b)=>['accepted','confirmed'].includes(b.status)&&new Date(b.starts_at)>new Date()).length}/><Metric label="Completed sessions" value={incoming.filter((b)=>b.status==='completed').length}/><Metric label="Unread notifications" value={unread}/></div>
+    <div className="grid gap-3 sm:grid-cols-3"><Metric label="Students in the last 30 days" value={recentContacts}/><Metric label="Students who contacted you" value={contacts.length}/><Metric label="Unread notifications" value={unread}/></div>
 
     {profile?.is_admin&&<section className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border bg-card p-5 sm:p-6"><div className="flex items-center gap-3"><ShieldCheck className="h-5 w-5 text-primary"/><div><h2 className="font-bold">Reviewing tutor applications?</h2><p className="text-sm text-muted-foreground">Applications, approved tutors and all bookings are in the admin area.</p></div></div><Link to="/admin/tutors" className="inline-flex min-h-10 items-center rounded-xl bg-primary px-4 text-sm font-semibold text-white">Open Admin · Tutors</Link></section>}
 
-    {tutor&&<section className="space-y-5 rounded-2xl border bg-card p-5 sm:p-7"><div className="flex items-center gap-3"><div className="flex h-11 w-11 items-center justify-center rounded-xl bg-violet-100 text-violet-800"><GraduationCap/></div><div><h2 className="text-xl font-bold">{tutor.full_name}</h2><p className="text-sm text-muted-foreground">{tutor.status==='suspended'?'Profile paused':'Approved tutor'} · {tutor.location}</p></div></div>{tutor.status==='suspended'&&<p role="status" className="rounded-xl bg-amber-50 p-4 text-sm text-amber-900">Your profile is paused and hidden from the marketplace. Contact support to restore it.</p>}<div className="grid gap-5 lg:grid-cols-[.9fr_1.1fr]"><div className="space-y-4"><h3 className="font-bold">Public profile</h3><label className="block space-y-1 text-sm font-semibold">Teaching biography<textarea value={tutorBio} onChange={(e)=>setTutorBio(e.target.value)} minLength={80} maxLength={2000} rows={4} className="w-full rounded-xl border p-3 text-sm font-normal"/></label><label className="block space-y-1 text-sm font-semibold">Location<input value={tutorLocation} onChange={(e)=>setTutorLocation(e.target.value)} className="h-10 w-full rounded-lg border px-3 text-sm font-normal"/></label><label className="block space-y-1 text-sm font-semibold">Teaching format<select value={teachingMode} onChange={(e)=>setTeachingMode(e.target.value as 'online'|'in_person'|'both')} className="h-10 w-full rounded-lg border px-3 text-sm font-normal"><option value="online">Online</option><option value="in_person">In person</option><option value="both">Both</option></select></label><button disabled={busy} onClick={async()=>{setBusy(true);setError(null);try{const {error:e}=await supabase.rpc('update_tutor_profile',{p_bio:tutorBio,p_location:tutorLocation,p_teaching_mode:teachingMode});if(e)throw e;setMessage('Tutor profile updated.')}catch(e){setError(e instanceof Error?e.message:'Could not update profile.')}finally{setBusy(false)}}} className="min-h-10 rounded-lg bg-primary px-4 text-sm font-semibold text-white">Save profile</button><div className="border-t pt-4"><h3 className="font-bold">Monthly fees</h3><p className="mt-1 text-xs text-muted-foreground">Your fee per month for each subject. New requests use the fee shown here.</p><div className="mt-2 space-y-2">{subjectRates.map((s)=><label key={s.subject_id} className="flex items-center justify-between gap-3 text-sm"><span>{s.name}</span><span className="flex items-center gap-1.5 text-xs text-muted-foreground">NLe<input aria-label={`${s.name} monthly fee in NLe`} type="number" inputMode="numeric" min="1" max="999999" step="1" value={s.price_nle} onChange={(e)=>setSubjectRates((v)=>v.map((x)=>x.subject_id===s.subject_id?{...x,price_nle:Number(e.target.value)}:x))} className="h-10 w-24 rounded-lg border px-2 text-sm text-foreground"/>/ month</span></label>)}</div><button disabled={busy||subjectRates.length===0||subjectRates.some(s=>!(s.price_nle>0)||s.price_nle>999999)} onClick={async()=>{setBusy(true);setError(null);try{const {error:e}=await supabase.rpc('update_tutor_subject_prices',{p_subjects:subjectRates.map(s=>({subject_id:s.subject_id,price_nle:s.price_nle}))});if(e)throw e;setMessage('Monthly fees updated.')}catch(e){setError(e instanceof Error?e.message:'Could not update your fees.')}finally{setBusy(false)}}} className="mt-3 min-h-10 rounded-lg border px-4 text-sm font-semibold">Save monthly fees</button></div></div><div><h3 className="font-bold">Weekly availability</h3><p className="mt-1 text-xs text-muted-foreground">Add recurring windows when students can request a session. Times use your local timezone.</p><div className="mt-3 space-y-2">{weekdays.map((day,index)=>{const slot=slots.find((s)=>s.weekday===index);return <div key={day} className="grid grid-cols-[1fr_1fr_1fr] items-center gap-2"><span className="text-sm font-medium">{day}</span><input aria-label={`${day} start time`} type="time" value={slot?.starts_at??''} className="h-10 min-w-0 rounded-lg border px-2 text-sm" onChange={(e)=>setSlots((v)=>{const rest=v.filter((s)=>s.weekday!==index);return e.target.value?[...rest,{weekday:index,starts_at:e.target.value,ends_at:slot?.ends_at??'17:00'}]:rest})}/><input aria-label={`${day} end time`} type="time" value={slot?.ends_at??''} className="h-10 min-w-0 rounded-lg border px-2 text-sm" onChange={(e)=>setSlots((v)=>{const current=v.find((s)=>s.weekday===index);if(!current)return e.target.value?[...v,{weekday:index,starts_at:'09:00',ends_at:e.target.value}]:v;return v.map((s)=>s.weekday===index?{...s,ends_at:e.target.value}:s)})}/></div>})}</div><button disabled={busy||slots.length===0} onClick={()=>void saveAvailability()} className="mt-4 min-h-11 rounded-xl bg-primary px-4 text-sm font-semibold text-white disabled:opacity-50">Save availability</button></div><div><h3 className="font-bold">Booking requests and sessions</h3><div className="mt-3 space-y-3">{incoming.length===0?<p className="rounded-xl bg-muted/50 p-4 text-sm text-muted-foreground">No booking requests yet.</p>:incoming.map((b)=><BookingCard key={b.id} booking={b} perspective="tutor" busy={busy} onUpdate={updateBooking}/>)}</div></div></div></section>}
+    {tutor&&<section className="space-y-5 rounded-2xl border bg-card p-5 sm:p-7"><div className="flex items-center gap-3"><div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl bg-violet-100 text-violet-800">{tutor.avatar_path?<img src={photoUrl(tutor.avatar_path)} alt="" className="h-full w-full object-cover object-top"/>:<GraduationCap/>}</div><div><h2 className="flex items-center gap-1.5 text-xl font-bold">{tutor.full_name}{tutor.status!=='suspended'&&<VerifiedBadge/>}</h2><p className="text-sm text-muted-foreground">{tutor.status==='suspended'?'Profile paused':'Verified tutor'} · In person · {tutor.location}</p></div></div>{tutor.status==='suspended'&&<p role="status" className="rounded-xl bg-amber-50 p-4 text-sm text-amber-900">Your profile is paused and hidden from the marketplace. Contact support to restore it.</p>}<div className="grid gap-5 lg:grid-cols-[.9fr_1.1fr]"><div className="space-y-4"><h3 className="font-bold">Public profile</h3><PhotoPicker file={photo} currentUrl={tutor.avatar_path?photoUrl(tutor.avatar_path):null} error={photoError} onPick={(file,problem)=>{setPhotoError(problem);if(file)setPhoto(file)}}/>{photo&&<button disabled={busy} onClick={()=>void savePhoto()} className="min-h-10 rounded-lg bg-primary px-4 text-sm font-semibold text-white disabled:opacity-50">{busy?'Saving photo…':'Save new photo'}</button>}<label className="block space-y-1 text-sm font-semibold">Teaching biography<textarea value={tutorBio} onChange={(e)=>setTutorBio(e.target.value)} minLength={80} maxLength={2000} rows={4} className="w-full rounded-xl border p-3 text-sm font-normal"/></label><label className="block space-y-1 text-sm font-semibold">Location<input value={tutorLocation} onChange={(e)=>setTutorLocation(e.target.value)} className="h-10 w-full rounded-lg border px-3 text-sm font-normal"/></label><p className="text-xs text-muted-foreground">Lessons are in person. Students who agree to your fee message you on WhatsApp.</p><button disabled={busy} onClick={async()=>{setBusy(true);setError(null);try{const {error:e}=await supabase.rpc('update_tutor_profile',{p_bio:tutorBio,p_location:tutorLocation,p_teaching_mode:'in_person'});if(e)throw e;setMessage('Tutor profile updated.')}catch(e){setError(e instanceof Error?e.message:'Could not update profile.')}finally{setBusy(false)}}} className="min-h-10 rounded-lg bg-primary px-4 text-sm font-semibold text-white">Save profile</button><div className="border-t pt-4"><h3 className="font-bold">Monthly fees</h3><p className="mt-1 text-xs text-muted-foreground">Your fee per month for each subject. Students see it and agree to it before they message you.</p><div className="mt-2 space-y-2">{subjectRates.map((s)=><label key={s.subject_id} className="flex items-center justify-between gap-3 text-sm"><span>{s.name}</span><span className="flex items-center gap-1.5 text-xs text-muted-foreground">NLe<input aria-label={`${s.name} monthly fee in NLe`} type="number" inputMode="numeric" min="1" max="999999" step="1" value={s.price_nle} onChange={(e)=>setSubjectRates((v)=>v.map((x)=>x.subject_id===s.subject_id?{...x,price_nle:Number(e.target.value)}:x))} className="h-10 w-24 rounded-lg border px-2 text-sm text-foreground"/>/ month</span></label>)}</div><button disabled={busy||subjectRates.length===0||subjectRates.some(s=>!(s.price_nle>0)||s.price_nle>999999)} onClick={async()=>{setBusy(true);setError(null);try{const {error:e}=await supabase.rpc('update_tutor_subject_prices',{p_subjects:subjectRates.map(s=>({subject_id:s.subject_id,price_nle:s.price_nle}))});if(e)throw e;setMessage('Monthly fees updated.')}catch(e){setError(e instanceof Error?e.message:'Could not update your fees.')}finally{setBusy(false)}}} className="mt-3 min-h-10 rounded-lg border px-4 text-sm font-semibold">Save monthly fees</button></div></div><div><h3 className="flex items-center gap-2 font-bold"><MessageCircle className="h-4 w-4 text-primary"/> Students who contacted you</h3><p className="mt-1 text-xs text-muted-foreground">Each student agreed to your fee, then opened WhatsApp to message you. Reply to them there.</p><ul className="mt-3 space-y-2">{contacts.length===0?<li className="rounded-xl bg-muted/50 p-4 text-sm text-muted-foreground">No students yet. A clear photo, a friendly biography and a fair fee help students choose you.</li>:contacts.map((c,i)=><li key={`${c.contacted_at}-${i}`} className="flex items-center justify-between gap-3 rounded-xl border p-3 text-sm"><span><strong>{c.student_first_name??'A student'}</strong> · {c.subject_name??'Subject'}</span><span className="text-xs text-muted-foreground">{monthlyFee(c.price_nle)} · {dateLabel(c.contacted_at)}</span></li>)}</ul></div>{incoming.length>0&&<div><h3 className="font-bold">Earlier booking requests</h3><div className="mt-3 space-y-3">{incoming.map((b)=><BookingCard key={b.id} booking={b} perspective="tutor" busy={busy} onUpdate={updateBooking}/>)}</div></div>}</div></section>}
 
     {!tutor&&!profile?.is_admin&&<section className="rounded-2xl border bg-card p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-wider text-primary">Tutor onboarding</p><h2 className="mt-2 text-2xl font-bold">{application ? 'Your application' : 'Start teaching on WASSCE Tutor'}</h2>{application ? <><p className="mt-2 text-sm font-semibold capitalize">Status: {application.status.replace('_',' ')}</p><p className="mt-2 text-sm text-muted-foreground">{application.review_note ?? (application.status==='rejected'?'Your application was not approved. Review the feedback before submitting again.':'Your tutor application is being reviewed. We will notify you when its status changes.')}</p>{application.status==='rejected'&&<Link to="/become-a-tutor" className="mt-5 inline-flex min-h-11 items-center rounded-xl bg-primary px-5 text-sm font-bold text-white">Update application</Link>}</> : <><p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">Create your teaching profile, choose subjects and set your monthly fee. Your profile becomes visible after verification.</p><Link to="/become-a-tutor" className="mt-5 inline-flex min-h-11 items-center rounded-xl bg-primary px-5 text-sm font-bold text-white">Complete tutor application</Link></>}</section>}
 

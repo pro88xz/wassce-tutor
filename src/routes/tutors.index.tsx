@@ -13,9 +13,9 @@ const TRAIL: [string, string][] = [
   ['Book a tutor', '/tutors'],
 ]
 
-const TITLE = 'Book a WASSCE Tutor in Sierra Leone: Online or Home | WASSCE Tutor'
+const TITLE = 'Book a WASSCE Tutor in Sierra Leone: Verified, In Person | WASSCE Tutor'
 const DESCRIPTION =
-  'One-to-one WASSCE lessons with a real tutor, online or at home in Sierra Leone. Choose your subject, tell us what you need, and we match you on WhatsApp.'
+  'Choose a verified WASSCE tutor in Sierra Leone, see their monthly fee upfront, and message them on WhatsApp to arrange in-person lessons near you.'
 
 export const Route = createFileRoute('/tutors/')({
   ssr: true,
@@ -25,7 +25,7 @@ export const Route = createFileRoute('/tutors/')({
     indexablePageTags({
       path: '/tutors',
       title: TITLE,
-      ogTitle: 'Book a real WASSCE tutor: online or at home',
+      ogTitle: 'Book a verified WASSCE tutor for in-person lessons',
       description: DESCRIPTION,
       jsonLd: [
         tutoringServiceJsonLd({ name: 'WASSCE tutoring in Sierra Leone', description: DESCRIPTION, path: '/tutors' }),
@@ -44,25 +44,25 @@ function TutorsPage() {
         <Breadcrumbs trail={TRAIL} />
         <header className="tutor-booking-hero">
           <div className="tutor-booking-hero-copy">
-            <p className="tutor-booking-eyebrow"><span /> PERSONAL WASSCE SUPPORT</p>
+            <p className="tutor-booking-eyebrow"><span /> VERIFIED TUTORS · IN PERSON</p>
             <h1>A real tutor.<br /><em>Focused on your progress.</em></h1>
             <p className="tutor-booking-lede">
-              One-to-one help from a teacher who knows the WASSCE syllabus. Learn online or at home, with lessons built around the subjects and topics you need help with.
+              Choose a verified teacher who knows the WASSCE syllabus, see their monthly fee upfront, and message them on WhatsApp to arrange in-person lessons near you.
             </p>
             <ul className="tutor-booking-points">
               {[
-                'Any WASSCE subject, from SSS1 to SSS3 or as a private candidate',
-                'Online lessons anywhere; home lessons where available',
-                'Price confirmed on WhatsApp before you pay anything',
+                'Every tutor reviewed by WASSCE Tutor before they are listed',
+                'In-person lessons, arranged directly with your tutor',
+                'Monthly fee shown upfront: you agree before you message',
               ].map((t) => (
                 <li key={t}><Check aria-hidden /> <span>{t}</span></li>
               ))}
             </ul>
             <div className="tutor-booking-actions">
-              <a href="#book" className="tutor-book-primary">Request a tutor <span aria-hidden>↗</span></a>
+              <a href="#tutors" className="tutor-book-primary">See tutors <span aria-hidden>↓</span></a>
               <a href="#tutor-how" className="tutor-book-secondary">How it works</a>
             </div>
-            <p className="tutor-booking-reassurance"><span /> Free to enquire · No payment until you agree</p>
+            <p className="tutor-booking-reassurance"><span /> Free to contact · You pay the tutor directly</p>
           </div>
           <div className="tutor-booking-visual">
             <img
@@ -76,7 +76,7 @@ function TutorsPage() {
             />
             <div className="tutor-photo-caption">
               <span className="tutor-photo-icon"><UserRound aria-hidden /></span>
-              <span><strong>One-to-one teaching</strong><small>Personal one-to-one teaching</small></span>
+              <span><strong>In-person lessons</strong><small>One to one, near you</small></span>
             </div>
             <div className="tutor-visual-index"><span>PERSONAL SUPPORT</span><strong>01 / 03</strong></div>
           </div>
@@ -89,12 +89,12 @@ function TutorsPage() {
 
       <section id="book" className="tutor-request-section scroll-mt-24" aria-labelledby="book-heading">
         <div className="tutor-request-intro">
-          <p className="tutor-booking-eyebrow"><span /> START WITH A REQUEST</p>
-          <h2 id="book-heading">Tell us what<br /><em>you want to work on.</em></h2>
-          <p>Share a few details. We’ll follow up on WhatsApp, help find the right tutor and confirm the schedule and price with you.</p>
+          <p className="tutor-booking-eyebrow"><span /> CAN’T FIND THE RIGHT TUTOR?</p>
+          <h2 id="book-heading">Tell us what you need.<br /><em>We’ll find a tutor.</em></h2>
+          <p>Share your subject and area. We’ll reply on WhatsApp with a tutor for in-person lessons near you, and their monthly fee.</p>
           <div className="tutor-request-assurances">
             <div><span className="tutor-assurance-icon"><MessageCircle aria-hidden /></span><span><strong>Direct WhatsApp follow-up</strong><small>No app or account needed to enquire.</small></span></div>
-            <div><span className="tutor-assurance-icon"><ClipboardCheck aria-hidden /></span><span><strong>Clear before you commit</strong><small>Agree the tutor, times and price first.</small></span></div>
+            <div><span className="tutor-assurance-icon"><ClipboardCheck aria-hidden /></span><span><strong>Clear before you commit</strong><small>You hear the fee before anything is arranged.</small></span></div>
           </div>
           <div className="tutor-request-side-note">
             <span>BETWEEN LESSONS</span>
@@ -103,7 +103,7 @@ function TutorsPage() {
           </div>
         </div>
         <div className="tutor-form-shell">
-          <div className="tutor-form-heading"><span>YOUR TUTOR REQUEST</span><strong>Let’s get started.</strong><p>Complete the details below. It takes about a minute.</p></div>
+          <div className="tutor-form-heading"><span>FIND ME A TUTOR</span><strong>Let’s get started.</strong><p>Complete the details below. It takes about a minute.</p></div>
           <BookingForm subjects={subjects.map((s) => s.name)} />
         </div>
       </section>

@@ -72,8 +72,8 @@ export const PUBLIC_PAGES = {
     lastmod: '2026-11-08',
   },
   '/become-a-tutor': {
-    title: 'Become a WASSCE Tutor in Sierra Leone | Teach Online or In Person',
-    description: 'Apply to teach WASSCE students in Sierra Leone. Create a tutor profile, list your subjects and rates, and manage verified bookings in a dedicated tutor workspace.',
+    title: 'Become a WASSCE Tutor in Sierra Leone | Teach In Person',
+    description: 'Apply to teach WASSCE students in Sierra Leone. Create a verified tutor profile with your photo, subjects and monthly fees, and get WhatsApp messages from students who agree to your fee.',
     lastmod: '2026-11-08',
   },
   '/affiliate': {

@@ -13,7 +13,7 @@ export function BookingForm({ subjects, defaultSubject }: { subjects: string[]; 
   const [r, setR] = useState<TutorRequest>({
     subject: defaultSubject ?? '',
     level: 'SSS3',
-    mode: 'online',
+    mode: 'home',
     town: '',
     availability: '',
     message: '',
@@ -30,7 +30,7 @@ export function BookingForm({ subjects, defaultSubject }: { subjects: string[]; 
     e.preventDefault()
     const next: typeof errors = {}
     if (!r.subject) next.subject = 'Choose a subject.'
-    if (r.mode !== 'online' && !r.town.trim()) next.town = 'Tell us your town or area for home lessons.'
+    if (!r.town.trim()) next.town = 'Tell us your town or area, so we can find a tutor near you.'
     if (r.name.trim().length < 2) next.name = 'Enter your name.'
     if (r.phone.replace(/\D/g, '').length < 8) next.phone = 'Enter a WhatsApp number we can reach you on.'
     setErrors(next)
@@ -89,8 +89,8 @@ export function BookingForm({ subjects, defaultSubject }: { subjects: string[]; 
       </fieldset>
 
       <fieldset className="space-y-1.5">
-        <legend className={label}>Lessons</legend>
-        <div className="grid grid-cols-3 gap-2">
+        <legend className={label}>In-person lessons</legend>
+        <div className="grid grid-cols-2 gap-2">
           {MODES.map((m) => (
             <button key={m.id} type="button" aria-pressed={r.mode === m.id} onClick={() => set('mode', m.id as Mode)}
               className={`min-h-11 rounded-xl border px-2 text-sm font-semibold transition-colors ${r.mode === m.id ? 'border-primary bg-brand-soft text-primary' : 'bg-card hover:border-primary/40'}`}>
@@ -101,13 +101,11 @@ export function BookingForm({ subjects, defaultSubject }: { subjects: string[]; 
         <p className="text-[13px] text-muted-foreground">{MODES.find((m) => m.id === r.mode)?.hint}</p>
       </fieldset>
 
-      {r.mode !== 'online' && (
-        <div className="space-y-1.5">
-          <label htmlFor="bt-town" className={label}>Town or area</label>
-          <input id="bt-town" value={r.town} onChange={(e) => set('town', e.target.value)} placeholder="e.g. Kissy, Freetown" maxLength={60} className={field} aria-invalid={!!errors.town} />
-          {errors.town && <p className="text-sm text-danger">{errors.town}</p>}
-        </div>
-      )}
+      <div className="space-y-1.5">
+        <label htmlFor="bt-town" className={label}>Town or area</label>
+        <input id="bt-town" value={r.town} onChange={(e) => set('town', e.target.value)} placeholder="e.g. Kissy, Freetown" maxLength={60} className={field} aria-invalid={!!errors.town} />
+        {errors.town && <p className="text-sm text-danger">{errors.town}</p>}
+      </div>
 
       <div className="space-y-1.5">
         <label htmlFor="bt-when" className={label}>When are you free? <span className="font-normal text-muted-foreground">(optional)</span></label>
