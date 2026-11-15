@@ -29,7 +29,7 @@ export function BrandMark({
       <path d={LINE.wassce} fill={name} />
       <path d={LINE.tutor} fill={tutor} />
       <path d={LINE.ring} fill={tutor} fillRule="evenodd" />
-      <path d={LINE.shade} fill="#6ee7b7" />
+      <path d={LINE.shade} fill={tutor} />
     </svg>
   )
 }

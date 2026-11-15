@@ -43,7 +43,7 @@ for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);if(k&&/^sb-.+-a
 }catch(e){}})();`
 
 /** Bump when the icon files change, so returning visitors see the new one. */
-const ICON_VERSION = '4'
+const ICON_VERSION = '5'
 
 export const Route = createRootRoute({
   head: () => ({

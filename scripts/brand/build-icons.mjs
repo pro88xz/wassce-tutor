@@ -6,7 +6,7 @@
 //
 // The logo is the name. Its one drawn detail is the "o" of Tutor: a shaded answer bubble, as on
 // the WASSCE objective paper. Where the name is too small to read (the browser tab), the icon is
-// its initials, WT, coloured like the stacked logo: W white, T mint.
+// its initials, WT, coloured like the stacked logo: W white, T lilac.
 //
 // Writes:
 //   public/favicon.svg, favicon-{16,32,48,192,512}.png, favicon.ico   "WT" (browser tabs)
@@ -32,7 +32,6 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..')
 // ---- Colours (src/index.css) ----
 const TILE_FROM = '#7a4cea'
 const TILE_TO = '#4420a6'
-const MINT = '#6ee7b7'
 const INK = '#171c2b' // --foreground
 const VIOLET = '#6438d8' // --primary
 const LILAC = '#c4b1ff' // "Tutor" on dark surfaces
@@ -43,7 +42,7 @@ const gradient = `<defs><linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><s
 const svg = (viewBox, body) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}">${body}</svg>\n`
 
 /** The wordmark's four layers, coloured. */
-const art = (g, { name, tutor, ring = tutor, shade = MINT }) =>
+const art = (g, { name, tutor, ring = tutor, shade = tutor }) =>
   `<path d="${g.wassce}" fill="${name}"/><path d="${g.tutor}" fill="${tutor}"/><path d="${g.ring}" fill="${ring}" fill-rule="evenodd"/><path d="${g.shade}" fill="${shade}"/>`
 
 /** Places `g` centred in a `side` square, `width` wide (a share of the side). */
@@ -56,7 +55,7 @@ function place(g, side, width, colours) {
 }
 
 // ---- The pieces ----
-const ON_TILE = { name: '#fff', tutor: MINT }
+const ON_TILE = { name: '#fff', tutor: LILAC }
 /** "WASSCE / TUTOR" on the violet square, full bleed: platforms that round the corners themselves. */
 const SQUARE = svg('0 0 1000 1000', `${gradient}<rect width="1000" height="1000" fill="url(#tile)"/>${place(WORDMARK_STACK, 1000, 0.72, ON_TILE)}`)
 /** "WT" on the rounded tile: the browser tab. */
@@ -65,7 +64,7 @@ const TAB = (() => {
   const s = (64 * 0.7) / w
   const tx = (64 - w * s) / 2 - x * s
   const ty = (64 - h * s) / 2 - y * s
-  return svg('0 0 64 64', `${gradient}<rect width="64" height="64" rx="15" fill="url(#tile)"/><g transform="translate(${tx.toFixed(2)} ${ty.toFixed(2)}) scale(${s.toFixed(5)})"><path d="${MONOGRAM.w}" fill="#fff"/><path d="${MONOGRAM.t}" fill="${MINT}"/></g>`)
+  return svg('0 0 64 64', `${gradient}<rect width="64" height="64" rx="15" fill="url(#tile)"/><g transform="translate(${tx.toFixed(2)} ${ty.toFixed(2)}) scale(${s.toFixed(5)})"><path d="${MONOGRAM.w}" fill="#fff"/><path d="${MONOGRAM.t}" fill="${LILAC}"/></g>`)
 })()
 /** Android adaptive icon. The launcher crops to a circle of about 61% of the layer, so the name sits inside it. */
 const FOREGROUND = svg('0 0 1000 1000', place(WORDMARK_STACK, 1000, 0.54, ON_TILE))
