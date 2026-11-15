@@ -1,60 +1,81 @@
-// Builds every icon the product ships from one drawing of the WASSCE Tutor
-// mark, so the browser tab, the phone home screen, search results, the
-// Android app and the site header can never drift apart again.
+// Builds every logo file the product ships from the one drawing of the WASSCE Tutor wordmark
+// (src/components/brand-geometry.ts), so the site header, the browser tab, the phone home screen,
+// the Android app, search results and the logo uploaded to Google can never drift apart.
 //
 //   npm run brand:icons
 //
-// The mark: a "W" whose second half is a tick. White W stroke, green tick,
-// on the brand's violet tile. The same geometry is drawn inline by
-// src/components/BrandMark.tsx for the site header and footer: if you change
-// the paths here, change them there, then run this script.
+// The logo is the name. Its one drawn detail is the "o" of Tutor: a shaded answer bubble, as on
+// the WASSCE objective paper. Where the name is too small to read (the browser tab), the icon is
+// its initials, WT, coloured like the stacked logo: W white, T mint.
 //
 // Writes:
-//   public/favicon.svg                 the tile, vector (browser tabs)
-//   public/favicon-{16,32,48,192,512}.png
-//   public/favicon.ico                 16, 32 and 48 px
-//   public/apple-touch-icon.png        180 px, square (iOS rounds it)
-//   assets/icon.png                    1024 px source for the Android app icon
-//   assets/icon-foreground.png         adaptive-icon foreground (mark only)
-//   assets/icon-background.png         adaptive-icon background (tile colour)
-//   assets/favicon-source.png          512 px tile
-//   assets/splash.png                  app launch screen
+//   public/favicon.svg, favicon-{16,32,48,192,512}.png, favicon.ico   "WT" (browser tabs)
+//   public/apple-touch-icon.png       180 px "WASSCE / TUTOR" square (iOS home screen)
+//   public/logo.png                   512 px "WASSCE / TUTOR" square (search results, schema.org logo)
+//   public/brand/*.svg                the wordmark and square as vector files
+//   assets/google-logo-120.png        the 120 x 120 logo for Google Auth Platform → Branding
+//   assets/icon.png                   1024 px source for the Android app icon
+//   assets/icon-foreground.png        adaptive-icon foreground (the stacked name, inside the safe zone)
+//   assets/icon-background.png        adaptive-icon background (tile colour)
+//   assets/favicon-source.png         512 px "WT" tile
+//   assets/splash.png, splash-dark.png  app launch screen
 // After changing the assets/ files, run `npx capacitor-assets generate --android`
 // to rebuild the Android resources from them.
 import { mkdir, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'
+import { MONOGRAM, WORDMARK_LINE, WORDMARK_STACK } from '../../src/components/brand-geometry.ts'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..')
 
-// ---- The mark (64 x 64 grid) ----
+// ---- Colours (src/index.css) ----
 const TILE_FROM = '#7a4cea'
 const TILE_TO = '#4420a6'
-const TICK = '#6ee7b7'
-const W_PATH = 'M12.5 24.5 21.6 45 30.6 29.2'
-const TICK_PATH = 'M30.6 29.2 39.6 45 52 18.5'
-const STROKE = 6.6
+const MINT = '#6ee7b7'
+const INK = '#171c2b' // --foreground
+const VIOLET = '#6438d8' // --primary
+const LILAC = '#c4b1ff' // "Tutor" on dark surfaces
+const CANVAS = '#fafbff' // capacitor.config.ts backgroundColor
+const NIGHT = '#15102b'
 
 const gradient = `<defs><linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${TILE_FROM}"/><stop offset="1" stop-color="${TILE_TO}"/></linearGradient></defs>`
+const svg = (viewBox, body) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}">${body}</svg>\n`
 
-/** The W and its tick, optionally scaled about the centre of the grid. */
-const glyph = (scale = 1) =>
-  `<g fill="none" stroke-width="${STROKE}" stroke-linecap="round" stroke-linejoin="round"${
-    scale === 1 ? '' : ` transform="translate(32 32) scale(${scale}) translate(-32 -32)"`
-  }><path d="${W_PATH}" stroke="#fff"/><path d="${TICK_PATH}" stroke="${TICK}"/></g>`
+/** The wordmark's four layers, coloured. */
+const art = (g, { name, tutor, ring = tutor, shade = MINT }) =>
+  `<path d="${g.wassce}" fill="${name}"/><path d="${g.tutor}" fill="${tutor}"/><path d="${g.ring}" fill="${ring}" fill-rule="evenodd"/><path d="${g.shade}" fill="${shade}"/>`
 
-const svg = (body) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">${body}</svg>\n`
+/** Places `g` centred in a `side` square, `width` wide (a share of the side). */
+function place(g, side, width, colours) {
+  const [x, y, w, h] = g.viewBox.split(' ').map(Number)
+  const s = (side * width) / w
+  const tx = (side - w * s) / 2 - x * s
+  const ty = (side - h * s) / 2 - y * s
+  return `<g transform="translate(${tx.toFixed(2)} ${ty.toFixed(2)}) scale(${s.toFixed(5)})">${art(g, colours)}</g>`
+}
 
-/** Rounded tile: the favicon and anything shown on its own. */
-const TILE = svg(`${gradient}<rect width="64" height="64" rx="15" fill="url(#tile)"/>${glyph()}`)
-/** Square, full bleed: for platforms that apply their own mask (iOS, legacy Android). */
-const SQUARE = svg(`${gradient}<rect width="64" height="64" fill="url(#tile)"/>${glyph(0.9)}`)
-/** Android adaptive icon layers. The launcher crops to a circle or squircle, so the mark stays well inside. */
-const FOREGROUND = svg(glyph(0.72))
-const BACKGROUND = svg(`${gradient}<rect width="64" height="64" fill="url(#tile)"/>`)
+// ---- The pieces ----
+const ON_TILE = { name: '#fff', tutor: MINT }
+/** "WASSCE / TUTOR" on the violet square, full bleed: platforms that round the corners themselves. */
+const SQUARE = svg('0 0 1000 1000', `${gradient}<rect width="1000" height="1000" fill="url(#tile)"/>${place(WORDMARK_STACK, 1000, 0.72, ON_TILE)}`)
+/** "WT" on the rounded tile: the browser tab. */
+const TAB = (() => {
+  const [x, y, w, h] = MONOGRAM.viewBox.split(' ').map(Number)
+  const s = (64 * 0.7) / w
+  const tx = (64 - w * s) / 2 - x * s
+  const ty = (64 - h * s) / 2 - y * s
+  return svg('0 0 64 64', `${gradient}<rect width="64" height="64" rx="15" fill="url(#tile)"/><g transform="translate(${tx.toFixed(2)} ${ty.toFixed(2)}) scale(${s.toFixed(5)})"><path d="${MONOGRAM.w}" fill="#fff"/><path d="${MONOGRAM.t}" fill="${MINT}"/></g>`)
+})()
+/** Android adaptive icon. The launcher crops to a circle of about 61% of the layer, so the name sits inside it. */
+const FOREGROUND = svg('0 0 1000 1000', place(WORDMARK_STACK, 1000, 0.54, ON_TILE))
+const BACKGROUND = svg('0 0 1000 1000', `${gradient}<rect width="1000" height="1000" fill="url(#tile)"/>`)
+/** Vector files for anyone who needs the logo (press, partners, the share image). */
+const LINE_LIGHT = svg(WORDMARK_LINE.viewBox, art(WORDMARK_LINE, { name: INK, tutor: VIOLET }))
+const LINE_DARK = svg(WORDMARK_LINE.viewBox, art(WORDMARK_LINE, { name: '#fff', tutor: LILAC }))
 
-const png = (source, size) => sharp(Buffer.from(source), { density: (72 * size) / 64 }).resize(size, size).png({ compressionLevel: 9 }).toBuffer()
+const png = (source, size) => sharp(Buffer.from(source), { density: Math.max(72, (72 * size) / 64) }).resize(size, size).png({ compressionLevel: 9 }).toBuffer()
+const opaque = async (source, size) => sharp(await png(source, size)).flatten({ background: TILE_TO }).png().toBuffer()
 
 /** A .ico file holding PNG images (supported by every current browser). */
 function ico(images) {
@@ -83,25 +104,28 @@ async function write(path, data) {
   console.log(`  ${path}`)
 }
 
-console.log('WASSCE Tutor brand icons')
-await write('public/favicon.svg', TILE)
-for (const size of [16, 32, 48, 192, 512]) await write(`public/favicon-${size}.png`, await png(TILE, size))
-await write('public/favicon.ico', ico(await Promise.all([16, 32, 48].map(async (size) => ({ size, data: await png(TILE, size) })))))
-await write('public/apple-touch-icon.png', await sharp(await png(SQUARE, 180)).flatten({ background: TILE_TO }).png().toBuffer())
+/** The one-line wordmark centred on a plain launch screen. */
+async function splash(colours, background) {
+  const SIDE = 2732
+  const art = svg(`0 0 ${SIDE} ${SIDE}`, `<rect width="${SIDE}" height="${SIDE}" fill="${background}"/>${place(WORDMARK_LINE, SIDE, 0.36, colours)}`)
+  return sharp(Buffer.from(art)).png({ compressionLevel: 9 }).toBuffer()
+}
 
-await write('assets/icon.png', await sharp(await png(SQUARE, 1024)).flatten({ background: TILE_TO }).png().toBuffer())
+console.log('WASSCE Tutor logo files')
+await write('public/favicon.svg', TAB)
+for (const size of [16, 32, 48, 192, 512]) await write(`public/favicon-${size}.png`, await png(TAB, size))
+await write('public/favicon.ico', ico(await Promise.all([16, 32, 48].map(async (size) => ({ size, data: await png(TAB, size) })))))
+await write('public/apple-touch-icon.png', await opaque(SQUARE, 180))
+await write('public/logo.png', await opaque(SQUARE, 512))
+await write('public/brand/wordmark.svg', LINE_LIGHT)
+await write('public/brand/wordmark-on-dark.svg', LINE_DARK)
+await write('public/brand/logo-square.svg', SQUARE)
+
+await write('assets/google-logo-120.png', await opaque(SQUARE, 120))
+await write('assets/icon.png', await opaque(SQUARE, 1024))
 await write('assets/icon-foreground.png', await png(FOREGROUND, 1024))
-await write('assets/icon-background.png', await sharp(await png(BACKGROUND, 1024)).flatten({ background: TILE_TO }).png().toBuffer())
-await write('assets/favicon-source.png', await png(TILE, 512))
-
-// Launch screen: the tile centred on the app's background colour (capacitor.config.ts).
-const SPLASH = 2732
-const TILE_ON_SPLASH = 440
-await write(
-  'assets/splash.png',
-  await sharp({ create: { width: SPLASH, height: SPLASH, channels: 3, background: '#fafbff' } })
-    .composite([{ input: await png(TILE, TILE_ON_SPLASH), left: (SPLASH - TILE_ON_SPLASH) / 2, top: (SPLASH - TILE_ON_SPLASH) / 2 }])
-    .png({ compressionLevel: 9 })
-    .toBuffer(),
-)
+await write('assets/icon-background.png', await opaque(BACKGROUND, 1024))
+await write('assets/favicon-source.png', await png(TAB, 512))
+await write('assets/splash.png', await splash({ name: INK, tutor: VIOLET }, CANVAS))
+await write('assets/splash-dark.png', await splash({ name: '#fff', tutor: LILAC }, NIGHT))
 console.log('Done. Next: npx capacitor-assets generate --android')

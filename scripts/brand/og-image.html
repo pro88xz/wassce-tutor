@@ -3,7 +3,8 @@
   Share image (public/og-image.jpg, 1200 x 630): what WhatsApp, Facebook and
   other apps show when someone shares a WASSCE Tutor link.
 
-  It uses the same mark, colours and type as the site. To rebuild it after a
+  It uses the same logo (public/brand/wordmark-on-dark.svg, from npm run brand:icons),
+  colours and type as the site. To rebuild it after a
   change, open this file in a Chromium browser at 1200 x 630 and save a
   screenshot as public/og-image.jpg, for example:
 
@@ -33,8 +34,7 @@
     background-size: 60px 60px;
     -webkit-mask-image: radial-gradient(ellipse 85% 80% at 50% 40%, #000 20%, transparent 80%); }
   .row, h1, p, .foot { position: relative; }
-  .brand { display: flex; align-items: center; gap: 20px; font-size: 38px; font-weight: 800; letter-spacing: -.035em; }
-  .brand b { color: #c4b1ff; font-weight: 800; }
+  .brand { display: flex; align-items: center; height: 76px; }
   h1 { font-size: 92px; font-weight: 800; letter-spacing: -.045em; line-height: 1.02; max-width: 900px; }
   h1 span { background: linear-gradient(90deg, #e3d7ff, #b9a2ff 55%, #8fdcf5); -webkit-background-clip: text; background-clip: text; color: transparent; }
   p.sub { margin-top: 22px; font-size: 34px; font-weight: 500; color: rgb(255 255 255 / 74%); letter-spacing: -.01em; }
@@ -46,12 +46,7 @@
 <body>
   <div class="glow"></div><div class="grid"></div>
   <div class="row brand">
-    <svg viewBox="0 0 64 64" width="76" height="76" aria-hidden="true">
-      <defs><linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7a4cea"/><stop offset="1" stop-color="#4420a6"/></linearGradient></defs>
-      <rect width="64" height="64" rx="15" fill="url(#tile)"/>
-      <g fill="none" stroke-width="6.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12.5 24.5 21.6 45 30.6 29.2" stroke="#fff"/><path d="M30.6 29.2 39.6 45 52 18.5" stroke="#6ee7b7"/></g>
-    </svg>
-    <span>WASSCE <b>Tutor</b></span>
+    <img src="../../public/brand/wordmark-on-dark.svg" alt="WASSCE Tutor" height="42">
   </div>
   <div class="row">
     <h1>Pass WASSCE <span>with confidence.</span></h1>

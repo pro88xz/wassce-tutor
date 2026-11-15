@@ -32,7 +32,7 @@ export function PublicHeader() {
     <header className="public-site-header site-bleed sticky top-0 z-30 -mt-4 mb-6 sm:-mt-6">
       <div className="site-container flex h-[4.25rem] items-center gap-4 sm:gap-6">
         <a href="/" aria-label="WASSCE Tutor home" className="shrink-0">
-          <BrandMark compact wordmarkClassName="max-[359px]:sr-only" />
+          <BrandMark compact />
         </a>
         <nav aria-label="Main" className="ml-3 hidden min-w-0 items-center gap-0.5 text-sm font-semibold text-muted-foreground min-[1100px]:flex">
           {NAV.map((n) => (

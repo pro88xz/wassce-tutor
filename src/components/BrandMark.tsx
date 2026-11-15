@@ -1,50 +1,35 @@
-import { useId } from 'react'
+import { WORDMARK_LINE as LINE } from './brand-geometry'
 
 /**
- * The WASSCE Tutor mark: a "W" whose second half is a tick, on the brand's
- * violet tile. It is the product's own drawing (not an icon from a library),
- * and it is the same drawing everywhere: the paths below match
- * scripts/brand/build-icons.mjs, which renders the browser-tab, home-screen
- * and Android icons from them. Change one, change the other.
+ * The WASSCE Tutor logo. The name is the logo: the letters are Inter Display, and the "o" of
+ * Tutor is a shaded answer bubble, as on the WASSCE objective paper.
+ *
+ * The outlines come from src/components/brand-geometry.ts (written by
+ * scripts/brand/build-wordmark.mjs). scripts/brand/build-icons.mjs draws the browser-tab,
+ * home-screen and Android icons from the same file, so the header, the icons and the logo
+ * uploaded to Google always match.
  */
-export function BrandGlyph({ className = 'h-9 w-9' }: { className?: string }) {
-  // Several marks can be on one page (header, menu, footer): each needs its own gradient id.
-  const gradient = useId()
-  return (
-    <svg viewBox="0 0 64 64" className={`shrink-0 ${className}`} aria-hidden="true" focusable="false">
-      <defs>
-        <linearGradient id={gradient} x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#7a4cea" />
-          <stop offset="1" stopColor="#4420a6" />
-        </linearGradient>
-      </defs>
-      <rect width="64" height="64" rx="15" fill={`url(#${gradient})`} />
-      <g fill="none" strokeWidth="6.6" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12.5 24.5 21.6 45 30.6 29.2" stroke="#fff" />
-        <path d="M30.6 29.2 39.6 45 52 18.5" stroke="#6ee7b7" />
-      </g>
-    </svg>
-  )
-}
-
-/** The mark with the wordmark, as used in the public header, the app shell and the footer. */
 export function BrandMark({
   compact = false,
   tone = 'dark',
-  wordmarkClassName = '',
+  className = '',
 }: {
+  /** Headers on phones: about as wide as the old mark, so the header still fits at 320 px. */
   compact?: boolean
   /** 'light' is for dark surfaces such as the footer */
   tone?: 'dark' | 'light'
-  wordmarkClassName?: string
+  className?: string
 }) {
   const light = tone === 'light'
+  const name = light ? '#ffffff' : 'var(--foreground)'
+  const tutor = light ? '#c4b1ff' : 'var(--primary)'
+  const size = compact ? 'h-[14px] min-[360px]:h-4 sm:h-5' : 'h-5 sm:h-[22px]'
   return (
-    <span className="inline-flex items-center gap-2.5">
-      <BrandGlyph className="h-9 w-9 drop-shadow-[0_4px_8px_rgba(68,32,166,.32)]" />
-      <span className={`whitespace-nowrap font-extrabold tracking-[-.035em] ${light ? 'text-white' : 'text-foreground'} ${compact ? 'text-[15px]' : 'text-base'} ${wordmarkClassName}`}>
-        WASSCE <span className={light ? 'text-[#c4b1ff]' : 'text-primary'}>Tutor</span>
-      </span>
-    </span>
+    <svg viewBox={LINE.viewBox} role="img" aria-label="WASSCE Tutor" className={`block w-auto shrink-0 ${size} ${className}`}>
+      <path d={LINE.wassce} fill={name} />
+      <path d={LINE.tutor} fill={tutor} />
+      <path d={LINE.ring} fill={tutor} fillRule="evenodd" />
+      <path d={LINE.shade} fill="#6ee7b7" />
+    </svg>
   )
 }
