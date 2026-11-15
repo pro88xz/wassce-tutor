@@ -125,7 +125,7 @@ const ORGANIZATION = {
   '@id': ORG_ID,
   name: SITE.name,
   url: `${SITE.origin}/`,
-  logo: `${SITE.origin}/favicon-512.png`,
+  logo: `${SITE.origin}/logo.png`,
   image: `${SITE.origin}/og-image.jpg`,
   description:
     'WASSCE preparation for Sierra Leone students, built in Freetown: syllabus lessons, original exam-style practice questions and one-to-one tutors.',
