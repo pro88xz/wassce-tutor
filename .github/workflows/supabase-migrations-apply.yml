@@ -128,3 +128,29 @@ jobs:
             (select count(*) from pg_proc where proname = 'set_tutor_status' and pronamespace = 'public'::regnamespace));" | tr -d '[:space:]')"
           echo "tutors can hide, visitors can hide, tutors can publish, visitors read listed, set_tutor_status versions: $RESULT"
           test "$RESULT" = "t,f,t,t,1" || { echo "Checks did not match t,f,t,t,1"; exit 1; }
+
+      - name: Verify (21) the database starts the email run at 10:00 GMT
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            (select count(*) from cron.job where jobname = 'email-engine-daily' and schedule = '0 10 * * *' and active),
+            has_function_privilege('anon','public.email_engine_kick()','execute'),
+            has_function_privilege('authenticated','public.email_engine_kick()','execute'),
+            (select count(*) from vault.decrypted_secrets where name = 'email_cron_secret' and length(decrypted_secret) >= 16));" | tr -d '[:space:]')"
+          echo "daily job at 10:00, visitors can start it, students can start it, schedule secret present: $RESULT"
+          test "$RESULT" = "1,f,f,1" || { echo "Checks did not match 1,f,f,1"; exit 1; }
+
+          # Can the database reach the website? An unsigned request is refused
+          # with 401 and does nothing, so this proves the route without a run.
+          ID="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select net.http_get(url := 'https://wasscetutor.com/api/email/run', timeout_milliseconds := 30000);" | tr -d '[:space:]')"
+          STATUS=""
+          for i in $(seq 1 20); do
+            sleep 3
+            STATUS="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select coalesce(status_code::text, 'error:' || coalesce(error_msg, '')) from net._http_response where id = $ID;" | tr -d '[:space:]')"
+            [ -n "$STATUS" ] && break
+          done
+          echo "database → wasscetutor.com/api/email/run without the secret: ${STATUS:-no reply}"
+          test "$STATUS" = "401" || { echo "Expected 401 (route reachable, unsigned call refused)"; exit 1; }

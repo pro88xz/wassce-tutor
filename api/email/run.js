@@ -1,7 +1,9 @@
-// GET /api/email/run: one run of the email engine. Started once a day by the
-// GitHub workflow "Email engine daily run", which sends the schedule secret
-// kept in Supabase Vault ("Authorization: Bearer <secret>"); any other caller
-// is refused. What it does is decided by the mode set in Admin → Emails
+// GET /api/email/run: one run of the email engine. Started at 10:00 GMT every
+// day by pg_cron in Supabase (public.email_engine_kick, migration 21), with
+// the GitHub workflow "Email engine daily run" as a backup at 10:37. Both send
+// the schedule secret kept in Supabase Vault ("Authorization: Bearer <secret>");
+// any other caller is refused. A second run in a day only sends what is still
+// due. What it does is decided by the mode set in Admin → Emails
 // (off, dry-run, pilot, live). See docs/email-engine.md.
 import { loadEmailConfig } from '../_lib/email/config.js'
 import { runEngine } from '../_lib/email/engine.js'

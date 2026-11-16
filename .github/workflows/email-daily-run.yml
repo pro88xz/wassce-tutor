@@ -1,13 +1,21 @@
 name: Email engine daily run
 
-# Starts the email engine once a day at 10:00 Freetown time (GMT), and on
-# demand from the Actions tab. The engine itself runs on the website
-# (api/email/run.js); this only knocks on the door with the schedule secret
-# kept in Supabase Vault. What happens is decided by the mode in
-# Admin → Emails. The run's summary is printed below each run.
+# Backup starter for the email engine, and a way to run it by hand from the
+# Actions tab. The main clock is now in the database: pg_cron in Supabase
+# starts the run at 10:00 Freetown time (GMT) every day (migration 21).
+# GitHub's scheduler sometimes delays or drops jobs, especially on the hour
+# (on 16 November 2026 its 10:00 run never started), so this backup runs at
+# 10:37, off the busy top of the hour. Running twice is safe: each email has
+# its own key per student and the daily limit counts what was already sent,
+# so the backup only sends what the 10:00 run missed.
+#
+# The engine itself runs on the website (api/email/run.js); this only knocks
+# on the door with the schedule secret kept in Supabase Vault. What happens is
+# decided by the mode in Admin → Emails. The run's summary is printed below
+# each run.
 on:
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '37 10 * * *'
   workflow_dispatch:
 
 permissions:
