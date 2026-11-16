@@ -6948,6 +6948,84 @@
       "title": "Applied biology in agriculture and industry",
       "est_minutes": 12,
       "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-farm-tools.md",
+      "subject": "Agricultural Science",
+      "topic": "farm-tools-and-implements",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Farm tools and implements: uses, maintenance and safety",
+      "est_minutes": 12,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-farm-machinery.md",
+      "subject": "Agricultural Science",
+      "topic": "farm-machinery-and-mechanization",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Farm machinery and mechanization",
+      "est_minutes": 12,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-soil-formation.md",
+      "subject": "Agricultural Science",
+      "topic": "soil-formation-and-composition",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Soil formation, the soil profile and soil composition",
+      "est_minutes": 12,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-soil-properties.md",
+      "subject": "Agricultural Science",
+      "topic": "soil-properties-and-types",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Soil properties and types: sandy, clay and loam",
+      "est_minutes": 13,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-soil-fertility.md",
+      "subject": "Agricultural Science",
+      "topic": "soil-fertility-and-fertilizers",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Soil fertility, manures and fertilisers",
+      "est_minutes": 15,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-soil-conservation.md",
+      "subject": "Agricultural Science",
+      "topic": "soil-conservation-and-erosion",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Soil erosion and conservation",
+      "est_minutes": 12,
+      "sort_order": 1
     }
   ]
 }
