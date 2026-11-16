@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Continuous and discontinuous variation</title>
+<desc id="d">Left: the heights of students form a smooth bell-shaped distribution with many intermediate values: continuous variation. Right: ABO blood groups fall into four separate categories, A, B, AB and O, with no values in between: discontinuous variation.</desc>
+<defs></defs>
+<rect width="780" height="400" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Continuous vs discontinuous variation</text>
+<rect x="70.0" y="304.8" width="34.0" height="15.2" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+<rect x="104.0" y="282.0" width="34.0" height="38.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+<rect x="138.0" y="236.4" width="34.0" height="83.6" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+<rect x="172.0" y="175.6" width="34.0" height="144.4" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+<rect x="206.0" y="130.0" width="34.0" height="190.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+<rect x="240.0" y="160.4" width="34.0" height="159.6" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+<rect x="274.0" y="221.2" width="34.0" height="98.8" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+<rect x="308.0" y="274.4" width="34.0" height="45.6" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+<rect x="342.0" y="297.2" width="34.0" height="22.8" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+<path d="M 87.0 304.8 L 121.0 282.0 L 155.0 236.4 L 189.0 175.6 L 223.0 130.0 L 257.0 160.4 L 291.0 221.2 L 325.0 274.4 L 359.0 297.2" stroke="#dc2626" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="70.0" y1="320.0" x2="386.0" y2="320.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<line x1="70.0" y1="320.0" x2="70.0" y2="70.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="87.0" y="338.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">140</text>
+<text x="155.0" y="338.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">150</text>
+<text x="223.0" y="338.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">160</text>
+<text x="291.0" y="338.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">170</text>
+<text x="359.0" y="338.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">180</text>
+<text x="225.0" y="362.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">height (cm)</text>
+<text x="225.0" y="70.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Continuous: height</text>
+<text x="225.0" y="92.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">any value in a range</text>
+<line x1="470.0" y1="320.0" x2="740.0" y2="320.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<line x1="470.0" y1="320.0" x2="470.0" y2="70.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<rect x="488.0" y="176.0" width="44.0" height="144.0" rx="0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="510.0" y="338.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<rect x="552.0" y="224.0" width="44.0" height="96.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="574.0" y="338.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B</text>
+<rect x="616.0" y="284.0" width="44.0" height="36.0" rx="0" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="638.0" y="338.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">AB</text>
+<rect x="680.0" y="116.0" width="44.0" height="204.0" rx="0" fill="#fef3c7" stroke="#ea580c" stroke-width="2"/>
+<text x="702.0" y="338.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<text x="605.0" y="362.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">blood group</text>
+<text x="605.0" y="70.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Discontinuous: blood group</text>
+<text x="605.0" y="92.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">separate categories, no in-between</text>
+</svg>
