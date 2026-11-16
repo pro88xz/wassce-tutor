@@ -605,6 +605,185 @@ def mangrove_adaptations():
     return s
 
 
+# ═══ B3: microorganisms, health and applied biology ═════════════════════════
+
+def callout_label(s, px, py, tx, ty, t, anchor="start", size=13):
+    s.line(px, py, tx, ty, color=MUTED, width=1.2)
+    s.dot(px, py, r=2.5, color=INK)
+    s.text(tx + (4 if anchor == "start" else -4), ty, t, size=size, anchor=anchor)
+
+
+@fig
+def microbe_types():
+    s = Svg(800, 560, "Four groups of microorganisms",
+            "A bacterium: a single cell with a cell wall, cytoplasm, a loop of DNA with no nucleus, and a flagellum. A "
+            "virus: not a cell; genetic material inside a protein coat; it can only reproduce inside a host cell. A "
+            "fungus (bread mould): thread-like hyphae forming a mycelium, with sporangia releasing spores. A protozoan "
+            "(Amoeba): a single cell with a nucleus, cytoplasm, a contractile vacuole and pseudopodia.")
+    heading(s, "Four kinds of microorganism (not to the same scale)")
+    for x, y, t, col in ((200, 66, "Bacterium", BLUE), (600, 66, "Virus", RED), (200, 306, "Fungus (bread mould)", GREEN),
+                         (600, 318, "Protozoan (Amoeba)", PURPLE)):
+        s.text(x, y, t, size=16, weight="bold", color=col)
+    # bacterium
+    s.rect(110, 120, 170, 70, fill=F_BLUE, stroke=BLUE, width=3, rx=35)
+    s.rect(118, 128, 154, 54, fill="none", stroke=BLUE, width=1.4, rx=27)
+    s.path("M 150 155 C 170 135, 190 175, 210 150 C 225 135, 245 170, 235 160", color=INK, width=2)
+    s.path("M 280 155 C 300 140, 315 175, 335 150 C 350 135, 360 160, 370 150", color=BLUE, width=2.2)
+    callout_label(s, 115, 150, 40, 230, "cell wall", anchor="start")
+    callout_label(s, 200, 152, 150, 250, "DNA loop (no nucleus)")
+    callout_label(s, 330, 152, 300, 230, "flagellum")
+    s.text(200, 285, "cocci, bacilli, spirilla", size=13, color=MUTED)
+    # virus
+    cx, cy = 600, 160
+    pts = [(cx + 52 * math.cos(math.radians(a)), cy + 52 * math.sin(math.radians(a))) for a in range(0, 360, 60)]
+    s.polygon(pts, fill=F_RED, stroke=RED, width=3)
+    s.path(f"M {cx - 22} {cy} C {cx - 10} {cy - 22}, {cx + 4} {cy + 22}, {cx + 22} {cy}", color=INK, width=2.4)
+    for a in range(0, 360, 60):
+        x1, y1 = cx + 52 * math.cos(math.radians(a)), cy + 52 * math.sin(math.radians(a))
+        x2, y2 = cx + 70 * math.cos(math.radians(a)), cy + 70 * math.sin(math.radians(a))
+        s.line(x1, y1, x2, y2, color=RED, width=2.4)
+        s.dot(x2, y2, r=4, color=RED)
+    callout_label(s, cx + 46, cy - 20, 700, 110, "protein coat")
+    callout_label(s, cx + 10, cy + 6, 700, 230, "DNA or RNA")
+    s.text(600, 268, "not a cell; reproduces only", size=13, color=MUTED)
+    s.text(600, 286, "inside a host cell", size=13, color=MUTED)
+    # fungus
+    s.path("M 60 470 C 120 460, 180 480, 340 468", color=GREEN, width=2.4)
+    s.path("M 90 470 C 110 490, 140 500, 170 505", color=GREEN, width=2)
+    s.path("M 250 472 C 270 495, 300 500, 330 506", color=GREEN, width=2)
+    for x, h in ((120, 70), (200, 88), (280, 62)):
+        s.line(x, 468, x, 468 - h, color=GREEN, width=2.4)
+        s.circle(x, 468 - h - 14, 14, fill="#334155", stroke=INK, width=1.6)
+        for k in range(5):
+            s.dot(x - 20 + k * 10, 468 - h - 34 - (k % 2) * 6, r=2.2, color=INK)
+    callout_label(s, 214, 366, 300, 372, "sporangium (spores)")
+    callout_label(s, 160, 468, 60, 530, "hyphae (mycelium)")
+    s.text(270, 530, "also yeast, mushrooms", size=13, color=MUTED, anchor="start")
+    # amoeba
+    s.path("M 520 420 C 540 370, 600 380, 620 395 C 650 370, 700 390, 690 430 C 720 450, 700 500, 650 490 "
+           "C 620 520, 560 510, 545 480 C 500 480, 495 440, 520 420 Z", color=PURPLE, width=3, fill=F_PURPLE)
+    s.circle(610, 445, 20, fill="#ffffff", stroke=PURPLE, width=2.4)
+    s.dot(610, 445, r=6, color=PURPLE)
+    s.circle(660, 425, 11, fill="#ffffff", stroke=BLUE, width=2)
+    callout_label(s, 610, 445, 560, 540, "nucleus", anchor="end")
+    callout_label(s, 668, 420, 740, 380, "contractile vacuole", anchor="end")
+    callout_label(s, 505, 445, 470, 420, "pseudopodium", anchor="end")
+    return s
+
+
+@fig
+def malaria_cycle():
+    s = Svg(800, 470, "The life cycle of the malaria parasite",
+            "An infected female Anopheles mosquito bites a person and injects Plasmodium sporozoites from its saliva. "
+            "They travel to the liver and multiply. Merozoites burst out and invade red blood cells, multiplying and "
+            "bursting the cells every 48 to 72 hours, which causes fever. Some become gametocytes, which are sucked up "
+            "by another mosquito. In the mosquito they fuse and develop into new sporozoites in its salivary glands.")
+    heading(s, "Malaria: Plasmodium passes between mosquito and human")
+    s.text(200, 76, "IN THE HUMAN", size=14, weight="bold", color=RED)
+    s.text(600, 76, "IN THE MOSQUITO", size=14, weight="bold", color=GREEN)
+    s.line(400, 66, 400, 420, color=MUTED, width=1.6, dash="6 6")
+    a = box(s, 200, 140, 250, 64, ["1  Bite injects sporozoites", "from the mosquito's saliva"], col=RED, fill=F_RED, size=14)
+    b = box(s, 200, 250, 250, 64, ["2  Liver", "sporozoites multiply"], col=RED, fill=F_RED, size=14)
+    c = box(s, 200, 360, 250, 70, ["3  Red blood cells", "burst every 2–3 days: fever"], col=RED, fill=F_RED, size=14)
+    d = box(s, 600, 360, 250, 64, ["4  Bite takes up", "gametocytes from blood"], col=GREEN, fill=F_GREEN, size=14)
+    e = box(s, 600, 250, 250, 64, ["5  Gut of mosquito", "gametes fuse; parasite grows"], col=GREEN, fill=F_GREEN, size=14)
+    f = box(s, 600, 140, 250, 64, ["6  Salivary glands", "fill with sporozoites"], col=GREEN, fill=F_GREEN, size=14)
+    for p, q in ((a, b), (b, c), (c, d), (d, e), (e, f), (f, a)):
+        link(s, p, q, color=INK, width=2.6)
+    note(s, "The female Anopheles mosquito is the vector; Plasmodium is the pathogen.", 448, size=14, color=INK)
+    return s
+
+
+@fig
+def water_treatment():
+    s = Svg(800, 300, "Stages in treating water for a town",
+            "River or reservoir water is screened to remove large objects, left in sedimentation tanks so that mud "
+            "settles (helped by alum), filtered through beds of sand and gravel, and chlorinated to kill microorganisms "
+            "before being stored and piped to homes.")
+    heading(s, "From river to tap: treating a town's water")
+    steps = [("Screening", "removes leaves,", "sticks, rubbish", F_GREY, INK), ("Sedimentation", "mud settles;", "alum helps", F_AMBER, ORANGE),
+             ("Filtration", "sand and gravel", "beds trap particles", F_BLUE, BLUE), ("Chlorination", "chlorine kills", "microorganisms", F_GREEN, GREEN),
+             ("Storage", "covered tanks,", "then pipes", F_PURPLE, PURPLE)]
+    prev = None
+    for k, (t, a, b, fill, col) in enumerate(steps):
+        bb = box(s, 85 + k * 157, 150, 140, 96, [t, a, b], col=col, fill=fill, size=15)
+        if prev:
+            link(s, prev, bb, color=INK, width=2.6)
+        prev = bb
+    note(s, "At home: boil water for at least one minute, or treat it with chlorine tablets or bleach.", 250, size=14, color=INK)
+    return s
+
+
+@fig
+def vip_latrine():
+    s = Svg(780, 470, "A ventilated improved pit (VIP) latrine",
+            "A deep pit lined at the top, covered by a concrete slab with a squat hole. A shelter is built over it and "
+            "kept dark inside. A vent pipe runs from the pit to above the roof, with a fly screen on top. Air flows down "
+            "through the hole and up the pipe, carrying smells away. Flies are attracted to the light at the top of the "
+            "pipe and are trapped by the screen.")
+    heading(s, "The VIP latrine: no smell, fewer flies")
+    s.rect(20, 300, 740, 150, fill=F_BROWN, stroke="none", width=0, opacity=0.6)
+    s.rect(200, 300, 220, 140, fill="#78350f", stroke=BROWN, width=2, opacity=0.35)
+    s.text(310, 400, "deep pit", size=15, weight="bold", color=BROWN)
+    s.rect(180, 290, 260, 14, fill=METAL, stroke=INK, width=2)
+    s.rect(290, 290, 30, 14, fill="#1e293b", stroke=INK, width=1)
+    s.polygon([(180, 290), (180, 140), (310, 110), (440, 140), (440, 290)], fill="#f1f5f9", stroke=INK, width=2.4)
+    s.text(250, 240, "dark shelter", size=14, weight="bold", color=MUTED)
+    s.rect(440, 60, 24, 240, fill=F_GREY, stroke=INK, width=2.2)
+    s.rect(436, 52, 32, 10, fill="#ffffff", stroke=INK, width=1.6, dash="2 2")
+    s.line(452, 280, 452, 80, color=BLUE, width=2.2, arrow="end")
+    s.line(300, 200, 305, 286, color=BLUE, width=2.2, arrow="end")
+    callout_label(s, 452, 56, 520, 70, "fly screen traps flies", size=14)
+    callout_label(s, 462, 160, 520, 160, "vent pipe: smells rise", size=14)
+    s.text(524, 182, "and leave above the roof", size=14, anchor="start")
+    callout_label(s, 420, 296, 520, 300, "concrete slab", size=14)
+    callout_label(s, 305, 296, 520, 330, "squat hole (left open for airflow)", size=14)
+    s.text(140, 170, "air in", size=14, color=BLUE, anchor="end", weight="bold")
+    s.arrow(110, 185, 290, 230, color=BLUE, width=1.8)
+    s.text(600, 420, "site at least 30 m from wells", size=14, color=INK, weight="bold")
+    return s
+
+
+@fig
+def pest_control_methods():
+    s = Svg(800, 470, "Methods of controlling crop pests and diseases",
+            "Integrated pest management in the centre combines five kinds of control: cultural (crop rotation, resistant "
+            "varieties, clean planting material, weeding, field sanitation), biological (natural enemies such as "
+            "parasitic wasps), chemical (pesticides used safely and correctly), mechanical or physical (hand-picking, "
+            "traps, scaring birds, drying grain), and legislative (quarantine laws).")
+    heading(s, "Integrated pest management combines several methods")
+    c = box(s, 400, 250, 210, 80, ["Integrated pest", "management (IPM)"], col=INK, fill="#ffffff", size=16)
+    items = [((150, 120), ["Cultural", "rotation, resistant", "varieties, clean seed"], F_GREEN, GREEN),
+             ((650, 120), ["Biological", "natural enemies,", "e.g. parasitic wasps"], F_TEAL, TEAL),
+             ((130, 360), ["Chemical", "pesticides used", "safely, last resort"], F_RED, RED),
+             ((670, 360), ["Mechanical", "hand-picking, traps,", "scaring, drying grain"], F_AMBER, ORANGE),
+             ((400, 420), ["Legislative", "quarantine laws"], F_PURPLE, PURPLE)]
+    for (x, y), lines, fill, col in items:
+        b = box(s, x, y, 200, 86 if len(lines) == 3 else 64, lines, col=col, fill=fill, size=15)
+        link(s, c, b, color=MUTED, width=2.2)
+    return s
+
+
+@fig
+def fermentation_uses():
+    s = Svg(800, 470, "Fermentation by microorganisms and its uses",
+            "Yeast respires sugar anaerobically to ethanol and carbon dioxide: used in bread (the gas makes dough rise) "
+            "and in palm wine and beer (the ethanol). Lactic acid bacteria ferment sugars to lactic acid: used in "
+            "yoghurt, cheese and in fermenting cassava for gari and fufu, which also removes much of the cyanide.")
+    heading(s, "Fermentation: microorganisms at work")
+    rows = [(130, ["Yeast", "(a fungus)"], ["sugar → ethanol", "+ carbon dioxide"], [["Bread", "CO₂ makes dough rise"], ["Palm wine, beer", "ethanol"]], ORANGE, F_AMBER),
+            (330, ["Lactic acid", "bacteria"], ["sugar →", "lactic acid"], [["Yoghurt, cheese", "milk sours, thickens"], ["Gari, fufu", "cassava: less cyanide"]], BLUE, F_BLUE)]
+    for y, who, eq, uses, col, fill in rows:
+        a = box(s, 120, y, 180, 70, who, col=col, fill=fill, size=16)
+        e = box(s, 380, y, 220, 70, eq, col=INK, fill="#ffffff", size=15)
+        link(s, a, e, color=INK, width=2.4)
+        for k, u in enumerate(uses):
+            ub = box(s, 650, y - 42 + k * 84, 220, 60, u, col=col, fill="#ffffff", size=14)
+            link(s, e, ub, color=MUTED, width=2)
+    note(s, "Fermentation is anaerobic respiration: it releases energy without oxygen.", 445, size=14, color=INK)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:

@@ -6883,6 +6883,71 @@
       "title": "Adaptation in plants and animals",
       "est_minutes": 14,
       "sort_order": 1
+    },
+    {
+      "file": "biology-microorganisms.md",
+      "subject": "Biology",
+      "topic": "microorganisms",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Microorganisms: bacteria, viruses, fungi and protozoa",
+      "est_minutes": 12,
+      "sort_order": 1
+    },
+    {
+      "file": "biology-diseases.md",
+      "subject": "Biology",
+      "topic": "diseases-and-their-causes",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Diseases and their causes",
+      "est_minutes": 15,
+      "sort_order": 1
+    },
+    {
+      "file": "biology-public-health.md",
+      "subject": "Biology",
+      "topic": "public-health-and-disease-prevention",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Public health and disease prevention",
+      "est_minutes": 14,
+      "sort_order": 1
+    },
+    {
+      "file": "biology-crop-pests-diseases.md",
+      "subject": "Biology",
+      "topic": "pests-and-diseases-of-crops",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Pests and diseases of crops",
+      "est_minutes": 14,
+      "sort_order": 1
+    },
+    {
+      "file": "biology-applied-biology.md",
+      "subject": "Biology",
+      "topic": "applied-biology-in-agriculture-and-industry",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Applied biology in agriculture and industry",
+      "est_minutes": 12,
+      "sort_order": 1
     }
   ]
 }

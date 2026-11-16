@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Four groups of microorganisms</title>
+<desc id="d">A bacterium: a single cell with a cell wall, cytoplasm, a loop of DNA with no nucleus, and a flagellum. A virus: not a cell; genetic material inside a protein coat; it can only reproduce inside a host cell. A fungus (bread mould): thread-like hyphae forming a mycelium, with sporangia releasing spores. A protozoan (Amoeba): a single cell with a nucleus, cytoplasm, a contractile vacuole and pseudopodia.</desc>
+<defs></defs>
+<rect width="800" height="560" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Four kinds of microorganism (not to the same scale)</text>
+<text x="200.0" y="66.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Bacterium</text>
+<text x="600.0" y="66.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Virus</text>
+<text x="200.0" y="306.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Fungus (bread mould)</text>
+<text x="600.0" y="318.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Protozoan (Amoeba)</text>
+<rect x="110.0" y="120.0" width="170.0" height="70.0" rx="35" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+<rect x="118.0" y="128.0" width="154.0" height="54.0" rx="27" fill="none" stroke="#2563eb" stroke-width="1.4"/>
+<path d="M 150 155 C 170 135, 190 175, 210 150 C 225 135, 245 170, 235 160" stroke="#0f172a" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 280 155 C 300 140, 315 175, 335 150 C 350 135, 360 160, 370 150" stroke="#2563eb" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="115.0" y1="150.0" x2="40.0" y2="230.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="115.0" cy="150.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="44.0" y="230.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">cell wall</text>
+<line x1="200.0" y1="152.0" x2="150.0" y2="250.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="200.0" cy="152.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="154.0" y="250.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">DNA loop (no nucleus)</text>
+<line x1="330.0" y1="152.0" x2="300.0" y2="230.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="330.0" cy="152.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="304.0" y="230.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">flagellum</text>
+<text x="200.0" y="285.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cocci, bacilli, spirilla</text>
+<polygon points="652.0,160.0 626.0,205.0 574.0,205.0 548.0,160.0 574.0,115.0 626.0,115.0" fill="#fee2e2" stroke="#dc2626" stroke-width="3" stroke-linejoin="round"/>
+<path d="M 578 160 C 590 138, 604 182, 622 160" stroke="#0f172a" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="652.0" y1="160.0" x2="670.0" y2="160.0" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="670.0" cy="160.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<line x1="626.0" y1="205.0" x2="635.0" y2="220.6" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="635.0" cy="220.6" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<line x1="574.0" y1="205.0" x2="565.0" y2="220.6" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="565.0" cy="220.6" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<line x1="548.0" y1="160.0" x2="530.0" y2="160.0" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="530.0" cy="160.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<line x1="574.0" y1="115.0" x2="565.0" y2="99.4" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="565.0" cy="99.4" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<line x1="626.0" y1="115.0" x2="635.0" y2="99.4" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="635.0" cy="99.4" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<line x1="646.0" y1="140.0" x2="700.0" y2="110.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="646.0" cy="140.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="704.0" y="110.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">protein coat</text>
+<line x1="610.0" y1="166.0" x2="700.0" y2="230.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="610.0" cy="166.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="704.0" y="230.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">DNA or RNA</text>
+<text x="600.0" y="268.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">not a cell; reproduces only</text>
+<text x="600.0" y="286.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">inside a host cell</text>
+<path d="M 60 470 C 120 460, 180 480, 340 468" stroke="#15803d" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 90 470 C 110 490, 140 500, 170 505" stroke="#15803d" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 250 472 C 270 495, 300 500, 330 506" stroke="#15803d" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="120.0" y1="468.0" x2="120.0" y2="398.0" stroke="#15803d" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="120.0" cy="384.0" r="14.0" fill="#334155" stroke="#0f172a" stroke-width="1.6"/>
+<circle cx="100.0" cy="364.0" r="2.2" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="110.0" cy="358.0" r="2.2" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="120.0" cy="364.0" r="2.2" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="130.0" cy="358.0" r="2.2" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="140.0" cy="364.0" r="2.2" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<line x1="200.0" y1="468.0" x2="200.0" y2="380.0" stroke="#15803d" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="200.0" cy="366.0" r="14.0" fill="#334155" stroke="#0f172a" stroke-width="1.6"/>
+<circle cx="180.0" cy="346.0" r="2.2" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="190.0" cy="340.0" r="2.2" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="200.0" cy="346.0" r="2.2" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="210.0" cy="340.0" r="2.2" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="220.0" cy="346.0" r="2.2" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<line x1="280.0" y1="468.0" x2="280.0" y2="406.0" stroke="#15803d" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="280.0" cy="392.0" r="14.0" fill="#334155" stroke="#0f172a" stroke-width="1.6"/>
+<circle cx="260.0" cy="372.0" r="2.2" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="270.0" cy="366.0" r="2.2" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="280.0" cy="372.0" r="2.2" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="290.0" cy="366.0" r="2.2" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="300.0" cy="372.0" r="2.2" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<line x1="214.0" y1="366.0" x2="300.0" y2="372.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="214.0" cy="366.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="304.0" y="372.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">sporangium (spores)</text>
+<line x1="160.0" y1="468.0" x2="60.0" y2="530.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="160.0" cy="468.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="64.0" y="530.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">hyphae (mycelium)</text>
+<text x="270.0" y="530.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">also yeast, mushrooms</text>
+<path d="M 520 420 C 540 370, 600 380, 620 395 C 650 370, 700 390, 690 430 C 720 450, 700 500, 650 490 C 620 520, 560 510, 545 480 C 500 480, 495 440, 520 420 Z" stroke="#7c3aed" stroke-width="3" fill="#ede9fe" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="610.0" cy="445.0" r="20.0" fill="#ffffff" stroke="#7c3aed" stroke-width="2.4"/>
+<circle cx="610.0" cy="445.0" r="6.0" fill="#7c3aed" stroke="#7c3aed" stroke-width="1"/>
+<circle cx="660.0" cy="425.0" r="11.0" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+<line x1="610.0" y1="445.0" x2="560.0" y2="540.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="610.0" cy="445.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="556.0" y="540.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">nucleus</text>
+<line x1="668.0" y1="420.0" x2="740.0" y2="380.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="668.0" cy="420.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="736.0" y="380.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">contractile vacuole</text>
+<line x1="505.0" y1="445.0" x2="470.0" y2="420.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="505.0" cy="445.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="466.0" y="420.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">pseudopodium</text>
+</svg>
