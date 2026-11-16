@@ -59,3 +59,39 @@ export function topicsToReview(
   }
   return out
 }
+
+/** A practised topic and its latest practice-set score. */
+export type TopicScore = {
+  subject: { id: string; name: string; slug: string }
+  topic: { id: string; name: string }
+  paperId: string
+  score: number
+  total: number
+  /** latest score as a percentage */
+  pct: number
+}
+
+/** Below this, a topic is worth revising before moving on. */
+export const STRONG_PCT = 70
+
+/**
+ * Every topic whose practice set the student has taken, scored by the latest
+ * attempt, weakest first, across all their subjects.
+ */
+export function topicScores(
+  papers: PaperRow[],
+  attempts: ScoredAttempt[],
+  subjects: { subject: { id: string; name: string; slug: string }; topics: { topic: { id: string; name: string; subject_id: string } }[] }[],
+): TopicScore[] {
+  const latest = latestByPaper(attempts)
+  const out: TopicScore[] = []
+  for (const s of subjects) {
+    for (const { topic } of s.topics) {
+      const set = setForTopic(papers, topic)
+      const a = set && latest.get(set.id)
+      if (!set || !a || a.total <= 0) continue
+      out.push({ subject: s.subject, topic: { id: topic.id, name: topic.name }, paperId: set.id, score: a.score, total: a.total, pct: Math.round(ratio(a) * 100) })
+    }
+  }
+  return out.sort((x, y) => x.pct - y.pct || x.topic.name.localeCompare(y.topic.name))
+}

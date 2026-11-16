@@ -29,7 +29,7 @@ export async function POST(request) {
   if (recent?.[0]?.payment_code_id) {
     const current = await monime('GET', `/v1/payment-codes/${encodeURIComponent(recent[0].payment_code_id)}`)
     if (current.ok && current.result?.status === 'pending' && current.result?.ussdCode) {
-      return json(request, { paymentId: recent[0].id, ussdCode: current.result.ussdCode })
+      return json(request, { paymentId: recent[0].id, ussdCode: current.result.ussdCode, expireTime: current.result.expireTime ?? null })
     }
   }
 
@@ -77,5 +77,5 @@ export async function POST(request) {
     console.error(`[pay] could not persist payment code for ${payment.id}: ${updateError.message}`)
     return json(request, { code: 'server_error', error: 'Could not prepare the payment safely. Please try again.' }, 500)
   }
-  return json(request, { paymentId: payment.id, ussdCode })
+  return json(request, { paymentId: payment.id, ussdCode, expireTime: typeof code.result?.expireTime === 'string' ? code.result.expireTime : null })
 }

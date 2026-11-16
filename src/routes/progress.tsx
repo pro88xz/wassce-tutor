@@ -6,7 +6,7 @@ import { useAuth } from '@/lib/auth'
 import { usePapersForSubjects, useStudentSubjects, type PaperRow } from '@/lib/queries'
 import { localDay, useProgress } from '@/lib/progress'
 import type { ProgressSummary, SubjectProgress } from '@/lib/progress'
-import { topicsToReview } from '@/lib/papers'
+import { STRONG_PCT, topicScores, topicsToReview } from '@/lib/papers'
 import { subjectTheme } from '@/lib/subject-theme'
 import { TopicGroups } from '@/components/ds/TopicGroups'
 import { ProgressBar, percent } from '@/components/ds/Progress'
@@ -59,6 +59,7 @@ function ProgressPage() {
       ) : (
         <>
           <Overview summary={summary} />
+          <FocusNext summary={summary} papers={papers.data ?? []} />
           <section className="space-y-3">
             <SectionHeader title="By subject" />
             <SubjectList subjects={summary.subjects} papers={papers.data ?? []} />
@@ -169,6 +170,57 @@ function SubjectPanel({ s, papers, open, onToggle }: { s: SubjectProgress; paper
         </div>
       )}
     </div>
+  )
+}
+
+/**
+ * The topics to work on next: every practised topic scored by its latest
+ * practice set, weakest first, with the lesson and the set one tap away.
+ */
+function FocusNext({ summary, papers }: { summary: ProgressSummary; papers: PaperRow[] }) {
+  const scores = useMemo(
+    () => topicScores(papers, summary.subjects.flatMap((s) => s.attempts), summary.subjects.map((s) => ({ subject: s.subject, topics: s.topics }))),
+    [papers, summary],
+  )
+  if (scores.length === 0) return null
+  const weak = scores.filter((t) => t.pct < STRONG_PCT).slice(0, 5)
+  const strong = scores.filter((t) => t.pct >= STRONG_PCT)
+  return (
+    <section className="space-y-3" aria-labelledby="focus-title">
+      <div>
+        <h2 id="focus-title" className="text-lg font-bold tracking-tight">Focus next: your weakest topics</h2>
+        <p className="text-sm text-muted-foreground">From your latest practice score in each topic. Revise the lesson, then try the set again.</p>
+      </div>
+      {weak.length === 0 ? (
+        <div className="rounded-2xl border border-success/30 bg-success/5 p-4 text-sm">
+          <p className="font-semibold">No weak topics right now.</p>
+          <p className="text-muted-foreground">
+            Every topic you have practised scored {STRONG_PCT}% or more on your latest try ({strong.length} {strong.length === 1 ? 'topic' : 'topics'}). Practise a new topic to keep it that way.
+          </p>
+        </div>
+      ) : (
+        <ul className="divide-y rounded-2xl border bg-card">
+          {weak.map((t) => (
+            <li key={t.topic.id} className="flex flex-wrap items-center gap-3 px-4 py-3">
+              <SubjectCover slug={t.subject.slug} shape="thumb" className="h-11 w-14 shrink-0" rounded="rounded-md" />
+              <span className="min-w-0 flex-1">
+                <span className="block truncate text-sm font-semibold">{t.topic.name}</span>
+                <span className="block text-xs text-muted-foreground">{t.subject.name} · latest {t.score}/{t.total}</span>
+              </span>
+              <ScorePill score={t.score} total={t.total} />
+              <span className="flex w-full gap-2 sm:w-auto">
+                <Link to="/topic/$topicId" params={{ topicId: t.topic.id }} className="flex min-h-10 flex-1 items-center justify-center rounded-lg border px-3 text-sm font-semibold hover:border-primary/40 sm:flex-none">
+                  Revise
+                </Link>
+                <Link to="/paper/$paperId" params={{ paperId: t.paperId }} className="flex min-h-10 flex-1 items-center justify-center rounded-lg bg-primary px-3 text-sm font-semibold text-primary-foreground hover:bg-brand-strong sm:flex-none">
+                  Practise again
+                </Link>
+              </span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
   )
 }
 
