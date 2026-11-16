@@ -6,9 +6,14 @@ repository.
 
 ## What it sends
 
-The engine runs once a day at 10:00 Freetown time: the GitHub workflow
-**Email engine daily run** calls `/api/email/run` on the website (you can also
-start it by hand from the Actions tab, and each run's summary is in its log). For every account it decides whether one email is due,
+The engine runs once a day at 10:00 Freetown time (GMT). The clock is in the
+database: **pg_cron** in Supabase calls `/api/email/run` on the website with the
+schedule secret from Vault (`public.email_engine_kick()`, migration 21; the
+reply is kept for a few hours in `net._http_response`). The GitHub workflow
+**Email engine daily run** is a backup at 10:37, because GitHub's scheduler can
+delay or drop jobs on the hour; it only sends what the 10:00 run missed. You
+can also start a run by hand from the Actions tab, and each GitHub run's
+summary is in its log. For every account it decides whether one email is due,
 highest priority first:
 
 | Programme | Who | Emails | Needs marketing consent |
