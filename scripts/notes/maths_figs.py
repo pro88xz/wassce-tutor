@@ -1450,6 +1450,294 @@ def transformations_panels():
     return s
 
 
+# ═══ M5: statistics, probability and calculus ═══════════════════════════════
+
+TRANSPORT = [("Walk", 18, BLUE, F_BLUE), ("Okada", 10, GREEN, F_GREEN), ("Poda-poda", 8, ORANGE, F_AMBER), ("Keke", 4, PURPLE, F_PURPLE)]
+
+
+@fig
+def stats_bar_pie():
+    s = Svg(800, 420, "The same data as a bar chart and a pie chart",
+            "How 40 students travel to school: walk 18, okada 10, poda-poda 8, keke 4. The bar chart shows each frequency "
+            "as the height of a bar. The pie chart shows each as a sector: walk 162°, okada 90°, poda-poda 72°, keke 36°.")
+    heading(s, "How 40 students travel to school")
+    ox, oy, u = 80, 350, 13
+    s.line(ox, oy, ox + 330, oy, color=INK, width=2)
+    s.line(ox, oy, ox, oy - 20 * u - 10, color=INK, width=2)
+    for f in range(0, 21, 5):
+        s.line(ox, oy - f * u, ox + 330, oy - f * u, color="#e5e7eb", width=1)
+        s.text(ox - 10, oy - f * u, str(f), size=13, color=MUTED, anchor="end")
+    s.text(ox - 30, oy - 20 * u - 26, "frequency", size=13, color=MUTED, anchor="start")
+    for k, (name, f, col, fill) in enumerate(TRANSPORT):
+        x = ox + 20 + k * 78
+        s.rect(x, oy - f * u, 56, f * u, fill=fill, stroke=col, width=2.4)
+        s.text(x + 28, oy - f * u - 12, str(f), size=14, weight="bold", color=col)
+        s.text(x + 28, oy + 18, name, size=13, color=INK)
+    cx, cy, r = 600, 220, 130
+    a = 90.0
+    for name, f, col, fill in TRANSPORT:
+        sweep = f / 40 * 360
+        a2 = a - sweep
+        x1, y1 = _pt(cx, cy, r, a)
+        x2, y2 = _pt(cx, cy, r, a2)
+        large = 1 if sweep > 180 else 0
+        s.path(f"M {cx} {cy} L {x1:.1f} {y1:.1f} A {r} {r} 0 {large} 1 {x2:.1f} {y2:.1f} Z", color=col, width=2.4, fill=fill)
+        lx, ly = _pt(cx, cy, r * 0.6, a - sweep / 2)
+        s.text(lx, ly - 9, name, size=13, weight="bold", color=col)
+        s.text(lx, ly + 9, f"{sweep:.0f}°", size=13, color=INK)
+        a = a2
+    note(s, "angle = frequency ÷ total × 360°", 395, size=15, color=INK)
+    return s
+
+
+MARKS = [(1, 10, 3), (11, 20, 7), (21, 30, 12), (31, 40, 10), (41, 50, 6), (51, 60, 2)]
+
+
+@fig
+def histogram_polygon():
+    s = Svg(780, 420, "A histogram with its frequency polygon",
+            "Marks of 40 students grouped in classes 1–10 to 51–60 with frequencies 3, 7, 12, 10, 6 and 2. Each bar runs "
+            "between the class boundaries, from 0.5 to 60.5, with no gaps. The frequency polygon joins the midpoints of the "
+            "tops of the bars.")
+    heading(s, "Marks of 40 students: histogram and frequency polygon")
+    ox, oy, ux, uy = 90, 360, 9.5, 22
+    X = lambda m: ox + m * ux
+    Y = lambda f: oy - f * uy
+    for f in range(0, 13, 2):
+        s.line(X(0), Y(f), X(70), Y(f), color="#e5e7eb", width=1)
+        s.text(X(0) - 10, Y(f), str(f), size=13, color=MUTED, anchor="end")
+    for lo, hi, f in MARKS:
+        s.rect(X(lo - 0.5), Y(f), (hi - lo + 1) * ux, f * uy, fill=F_BLUE, stroke=BLUE, width=2)
+    for b in [0.5, 10.5, 20.5, 30.5, 40.5, 50.5, 60.5]:
+        s.text(X(b), oy + 18, f"{b}", size=12, color=MUTED)
+    mids = [(-4.5, 0)] + [((lo + hi) / 2, f) for lo, hi, f in MARKS] + [(65.5, 0)]
+    s.polyline([(X(m), Y(f)) for m, f in mids], color=RED, width=3)
+    for m, f in mids:
+        s.dot(X(m), Y(f), r=4.5, color=RED)
+    s.line(X(-5), oy, X(70), oy, color=INK, width=2)
+    s.line(X(0), oy, X(0), Y(13), color=INK, width=2)
+    s.text(X(30), oy + 42, "marks (class boundaries)", size=14, color=MUTED)
+    s.text(X(0) - 40, Y(13) - 10, "frequency", size=13, color=MUTED, anchor="start")
+    s.label(X(57), Y(8), "frequency polygon", size=14, color=RED, weight="bold")
+    return s
+
+
+def _pchip(xs, ys):
+    """Monotone cubic interpolation; returns f(x)."""
+    n = len(xs)
+    h = [xs[i + 1] - xs[i] for i in range(n - 1)]
+    d = [(ys[i + 1] - ys[i]) / h[i] for i in range(n - 1)]
+    m = [0.0] * n
+    m[0], m[-1] = d[0], d[-1]
+    for i in range(1, n - 1):
+        if d[i - 1] * d[i] <= 0:
+            m[i] = 0.0
+        else:
+            w1, w2 = 2 * h[i] + h[i - 1], h[i] + 2 * h[i - 1]
+            m[i] = (w1 + w2) / (w1 / d[i - 1] + w2 / d[i])
+
+    def f(x):
+        i = max(0, min(n - 2, next((k for k in range(n - 1) if x <= xs[k + 1]), n - 2)))
+        t = (x - xs[i]) / h[i]
+        h00, h10, h01, h11 = 2 * t**3 - 3 * t**2 + 1, t**3 - 2 * t**2 + t, -2 * t**3 + 3 * t**2, t**3 - t**2
+        return h00 * ys[i] + h10 * h[i] * m[i] + h01 * ys[i + 1] + h11 * h[i] * m[i + 1]
+    return f
+
+
+OGIVE_X = [0.5, 10.5, 20.5, 30.5, 40.5, 50.5, 60.5]
+OGIVE_Y = [0, 3, 10, 22, 32, 38, 40]
+
+
+def ogive_reading(target):
+    f = _pchip(OGIVE_X, OGIVE_Y)
+    lo, hi = 0.5, 60.5
+    for _ in range(60):
+        mid = (lo + hi) / 2
+        lo, hi = (mid, hi) if f(mid) < target else (lo, mid)
+    return (lo + hi) / 2
+
+
+@fig
+def ogive():
+    q1, med, q3 = ogive_reading(10), ogive_reading(20), ogive_reading(30)
+    s = Svg(780, 470, "A cumulative frequency curve (ogive) with the median and quartiles",
+            "Cumulative frequencies 0, 3, 10, 22, 32, 38 and 40 are plotted at the upper class boundaries 0.5 to 60.5 "
+            "and joined with a smooth S-shaped curve. Reading across from 10, 20 and 30 gives the lower quartile 20.5, "
+            "the median about 29 and the upper quartile about 38.")
+    heading(s, "Ogive: plot cumulative frequency at the upper class boundary")
+    ox, oy, ux, uy = 90, 400, 9.5, 8
+    X = lambda m: ox + m * ux
+    Y = lambda c: oy - c * uy
+    for c in range(0, 41, 5):
+        s.line(X(0), Y(c), X(62), Y(c), color="#e5e7eb", width=1)
+        s.text(X(0) - 10, Y(c), str(c), size=13, color=MUTED, anchor="end")
+    for b in range(0, 61, 10):
+        s.line(X(b), Y(0), X(b), Y(40), color="#e5e7eb", width=1)
+        s.text(X(b), oy + 18, str(b), size=13, color=MUTED)
+    s.line(X(0), oy, X(63), oy, color=INK, width=2)
+    s.line(X(0), oy, X(0), Y(42), color=INK, width=2)
+    f = _pchip(OGIVE_X, OGIVE_Y)
+    plot(s, f, 0.5, 60.5, X, Y, color=BLUE, width=3.2)
+    for x, y in zip(OGIVE_X, OGIVE_Y):
+        s.dot(X(x), Y(y), r=4.5, color=BLUE)
+    for c, v, name, col in ((10, q1, "Q₁ = 20.5", GREEN), (20, med, "median ≈ 29", RED), (30, q3, "Q₃ ≈ 38", PURPLE)):
+        s.line(X(0), Y(c), X(v), Y(c), color=col, width=2, dash="7 5")
+        s.line(X(v), Y(c), X(v), oy, color=col, width=2, dash="7 5", arrow="end")
+        s.label(X(v) - 52, Y(c) - 14, name, size=14, color=col, weight="bold")
+    s.text(X(30), oy + 42, "marks (upper class boundaries)", size=14, color=MUTED)
+    s.text(X(0) - 56, Y(42) - 12, "cumulative frequency", size=13, color=MUTED, anchor="start")
+    s.text(X(46), Y(14), "N = 40", size=15, weight="bold", anchor="start")
+    s.text(X(46), Y(10), "median at N/2 = 20", size=14, anchor="start")
+    s.text(X(46), Y(6), "quartiles at 10 and 30", size=14, anchor="start")
+    return s
+
+
+@fig
+def dispersion_dotplots():
+    s = Svg(780, 400, "Two data sets with the same mean but different spread",
+            "Set A: 4, 5, 5, 6, 6, 6, 7, 7, 8. Set B: 1, 2, 4, 6, 6, 6, 8, 10, 11. Both have mean 6, but set A has a range of "
+            "4 while set B has a range of 10, so set B is more spread out.")
+    heading(s, "Same mean, different spread")
+    A = [4, 5, 5, 6, 6, 6, 7, 7, 8]
+    B = [1, 2, 4, 6, 6, 6, 8, 10, 11]
+    X = lambda v: 120 + v * 50
+    for row, data, col, y, name in ((0, A, BLUE, 190, "Set A"), (1, B, GREEN, 340, "Set B")):
+        s.line(X(0), y, X(12), y, color=INK, width=2)
+        for v in range(0, 13):
+            s.line(X(v), y, X(v), y + 7, color=INK, width=1.6)
+            s.text(X(v), y + 22, str(v), size=13, color=MUTED)
+        count = {}
+        for v in data:
+            count[v] = count.get(v, 0) + 1
+            s.dot(X(v), y - 14 - (count[v] - 1) * 20, r=8, color=col)
+        s.text(60, y - 20, name, size=16, weight="bold", color=col)
+        lo, hi = min(data), max(data)
+        s.line(X(lo), y - 92, X(hi), y - 92, color=col, width=2, arrow="both")
+        s.label(X(hi) + 46, y - 92, f"range {hi - lo}", size=13, color=col, weight="bold")
+    s.line(X(6), 70, X(6), 350, color=RED, width=2, dash="7 5")
+    s.label(X(6), 66, "mean 6", size=14, color=RED, weight="bold")
+    return s
+
+
+@fig
+def probability_tree():
+    s = Svg(780, 450, "A tree diagram for picking two balls without replacement",
+            "A bag holds 5 red and 3 blue balls. The first pick is red with probability 5/8 or blue with 3/8. After a red, "
+            "the second pick is red 4/7 or blue 3/7; after a blue, red 5/7 or blue 2/7. Multiplying along the branches: "
+            "RR 20/56, RB 15/56, BR 15/56, BB 6/56.")
+    heading(s, "5 red, 3 blue: two picks without replacement")
+    O = (70, 240)
+    first = [("R", "5/8", (300, 145), RED), ("B", "3/8", (300, 335), BLUE)]
+    second = {"R": [("R", "4/7", RED, "20/56"), ("B", "3/7", BLUE, "15/56")], "B": [("R", "5/7", RED, "15/56"), ("B", "2/7", BLUE, "6/56")]}
+    s.text(300, 62, "1st pick", size=15, color=MUTED, weight="bold")
+    s.text(520, 62, "2nd pick", size=15, color=MUTED, weight="bold")
+    s.text(680, 62, "probability", size=15, color=MUTED, weight="bold")
+    s.dot(*O, r=5)
+    for name, p, P, col in first:
+        s.line(*O, P[0] - 18, P[1], color=INK, width=2.4)
+        s.label((O[0] + P[0]) / 2 - 6, (O[1] + P[1]) / 2 - 14 if P[1] < O[1] else (O[1] + P[1]) / 2 + 14, p, size=16, weight="bold")
+        s.text(*P, name, size=20, weight="bold", color=col)
+        for k, (n2, p2, c2, res) in enumerate(second[name]):
+            Q = (520, P[1] - 45 + k * 90)
+            s.line(P[0] + 16, P[1], Q[0] - 18, Q[1], color=INK, width=2.4)
+            s.label((P[0] + Q[0]) / 2, (P[1] + Q[1]) / 2 + (-14 if k == 0 else 14), p2, size=15, weight="bold")
+            s.text(*Q, n2, size=20, weight="bold", color=c2)
+            s.text(680, Q[1], f"{name}{n2}: {res}", size=16, weight="bold", color=INK)
+    note(s, "Multiply along the branches; add the outcomes you want.", 425, size=15, color=INK)
+    return s
+
+
+@fig
+def dice_sample_space():
+    s = Svg(720, 470, "The sample space for the sum of two dice",
+            "A six by six grid shows every outcome when two dice are thrown, with the sum in each cell. There are 36 "
+            "equally likely outcomes. The six cells with a sum of 7 lie on a diagonal, so the probability of a sum of 7 "
+            "is 6/36 = 1/6.")
+    heading(s, "Two dice: 36 equally likely outcomes")
+    c, x0, y0 = 52, 200, 104
+    s.text(x0 + 3 * c, y0 - 38, "first die", size=14, color=MUTED, weight="bold")
+    s.text(x0 - 70, y0 + 3 * c, "second die", size=14, color=MUTED, weight="bold")
+    for i in range(6):
+        s.text(x0 + i * c + c / 2, y0 - 2, str(i + 1), size=15, weight="bold", baseline="auto")
+        s.text(x0 - 14, y0 + i * c + c / 2, str(i + 1), size=15, weight="bold")
+    for r in range(6):
+        for k in range(6):
+            total = r + k + 2
+            hit = total == 7
+            s.rect(x0 + k * c, y0 + r * c, c, c, fill=F_RED if hit else "#ffffff", stroke=MUTED, width=1.2)
+            s.text(x0 + k * c + c / 2, y0 + r * c + c / 2, str(total), size=16, weight="bold" if hit else "normal",
+                   color=RED if hit else INK)
+    s.text(560, 200, "sum of 7:", size=16, weight="bold", color=RED, anchor="start")
+    s.text(560, 228, "6 outcomes", size=16, anchor="start")
+    s.text(560, 268, "P(7) = 6/36", size=17, weight="bold", anchor="start")
+    s.text(560, 296, "= 1/6", size=17, weight="bold", anchor="start")
+    return s
+
+
+@fig
+def tangent_gradient():
+    s = Svg(780, 440, "The gradient of a curve is the gradient of its tangent",
+            "The curve y = x² with a tangent touching it at the point (2, 4). The tangent has gradient 4, which matches "
+            "dy/dx = 2x at x = 2. A small triangle on the tangent shows a rise of 4 for a run of 1.")
+    heading(s, "y = x²: the tangent at (2, 4) has gradient dy/dx = 2x = 4")
+    ox, oy, ux, uy = 330, 400, 70, 30
+    X = lambda x: ox + x * ux
+    Y = lambda y: oy - y * uy
+    for gx in range(-4, 6):
+        s.line(X(gx), Y(-1), X(gx), Y(10), color="#e5e7eb", width=1)
+    for gy in range(-1, 11):
+        s.line(X(-4), Y(gy), X(5), Y(gy), color="#e5e7eb", width=1)
+    s.arrow(X(-4), Y(0), X(5) + 14, Y(0), color=INK, width=2)
+    s.arrow(X(0), Y(-1), X(0), Y(10) - 14, color=INK, width=2)
+    s.text(X(5) + 24, Y(0) + 4, "x", size=16, italic=True)
+    s.text(X(0) + 6, Y(10) - 24, "y", size=16, italic=True, anchor="start")
+    for gx in (-3, -2, -1, 1, 2, 3, 4):
+        s.text(X(gx), Y(0) + 18, str(gx).replace("-", "−"), size=13, color=MUTED)
+    for gy in (2, 4, 6, 8):
+        s.text(X(0) - 8, Y(gy), str(gy), size=13, color=MUTED, anchor="end")
+    plot(s, lambda x: x * x, -3.15, 3.15, X, Y, color=BLUE, width=3.2)
+    plot(s, lambda x: 4 * x - 4, 0.75, 3.5, X, Y, color=RED, width=3)
+    s.dot(X(2), Y(4), r=6, color=INK)
+    s.label(X(2) - 50, Y(4) + 2, "(2, 4)", size=15, weight="bold")
+    s.polyline([(X(2.5), Y(6)), (X(3.5), Y(6)), (X(3.5), Y(10))], color=ORANGE, width=2.4, dash="6 5")
+    s.text(X(3), Y(6) + 16, "1", size=15, weight="bold", color=ORANGE)
+    s.text(X(3.5) + 14, Y(8), "4", size=15, weight="bold", color=ORANGE, anchor="start")
+    s.label(X(-2.4), Y(7.6), "y = x²", size=16, color=BLUE, weight="bold")
+    s.label(X(3.9), Y(4.5), "tangent", size=15, color=RED, weight="bold")
+    return s
+
+
+@fig
+def area_under_curve():
+    s = Svg(780, 420, "The area under a curve found by integration",
+            "The curve y = 4x − x² rises from 0 at x = 0 to a maximum of 4 at x = 2 and returns to 0 at x = 4. The region "
+            "between the curve and the x-axis is shaded. Its area is the integral of 4x − x² from 0 to 4, which is 32/3, "
+            "about 10.7 square units.")
+    heading(s, "Area between y = 4x − x² and the x-axis")
+    ox, oy, ux, uy = 140, 350, 95, 62
+    X = lambda x: ox + x * ux
+    Y = lambda y: oy - y * uy
+    for gx in range(0, 6):
+        s.line(X(gx), Y(-0.5), X(gx), Y(4.5), color="#e5e7eb", width=1)
+    for gy in range(0, 5):
+        s.line(X(-0.5), Y(gy), X(5), Y(gy), color="#e5e7eb", width=1)
+    pts = [(X(0), Y(0))] + [(X(4 * i / 80), Y(4 * (4 * i / 80) - (4 * i / 80) ** 2)) for i in range(81)] + [(X(4), Y(0))]
+    s.polygon(pts, fill=F_GREEN, stroke="none", width=0)
+    s.arrow(X(-0.5), Y(0), X(5) + 14, Y(0), color=INK, width=2)
+    s.arrow(X(0), Y(-0.5), X(0), Y(4.5) - 10, color=INK, width=2)
+    s.text(X(5) + 24, Y(0) + 4, "x", size=16, italic=True)
+    s.text(X(0) + 6, Y(4.5) - 20, "y", size=16, italic=True, anchor="start")
+    for gx in range(1, 5):
+        s.text(X(gx), Y(0) + 18, str(gx), size=13, color=MUTED)
+    for gy in range(1, 5):
+        s.text(X(0) - 8, Y(gy), str(gy), size=13, color=MUTED, anchor="end")
+    plot(s, lambda x: 4 * x - x * x, -0.3, 4.3, X, Y, color=BLUE, width=3.2)
+    s.text(X(2), Y(1.5), "area = 32/3", size=18, weight="bold", color=GREEN)
+    s.text(X(2), Y(1.5) + 26, "≈ 10.7 units²", size=15, weight="bold", color=GREEN)
+    s.label(X(3.9), Y(3.3), "y = 4x − x²", size=16, color=BLUE, weight="bold")
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:
