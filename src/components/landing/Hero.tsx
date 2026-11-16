@@ -16,17 +16,17 @@ export function Hero({ data }: { data: LandingData }) {
   return (
     <section className="site-band-ink relative isolate overflow-hidden" aria-labelledby="hero-heading">
       <div aria-hidden className="site-hero-backdrop" />
-      <div className="site-container relative grid grid-cols-[minmax(0,1fr)] items-center gap-8 pb-8 pt-8 sm:pt-12 md:grid-cols-[minmax(0,1.05fr)_minmax(0,.95fr)] md:gap-10 md:pb-14 lg:gap-16 lg:pb-16 lg:pt-16">
-        <div className="max-w-xl">
+      <div className="site-container relative grid grid-cols-[minmax(0,1fr)] items-center gap-10 pb-10 pt-8 sm:pt-12 lg:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)] lg:gap-14 lg:pb-20 lg:pt-16">
+        <div className="max-w-2xl">
           <p className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.06] py-1.5 pl-2.5 pr-3.5 text-[13px] font-semibold text-violet-100">
             <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_0_4px_rgba(52,211,153,.18)]" aria-hidden />
             Built for the Sierra Leone WASSCE syllabus
           </p>
-          <h1 id="hero-heading" className="site-display mt-5 md:max-lg:text-[2.75rem]">
+          <h1 id="hero-heading" className="site-display mt-5">
             Your next grade starts{' '}
             <span className="bg-gradient-to-r from-[#e3d7ff] via-[#b9a2ff] to-[#8fdcf5] bg-clip-text text-transparent">with one topic.</span>
           </h1>
-          <p className="mt-4 max-w-md text-base leading-relaxed text-white/75 sm:text-lg">
+          <p className="mt-4 max-w-lg text-base leading-relaxed text-white/75 sm:text-lg">
             Syllabus lessons, instant marking that explains every answer, and real tutors.
           </p>
           <div className="mt-7 flex flex-wrap gap-2.5 sm:gap-3">
@@ -57,35 +57,45 @@ export function Hero({ data }: { data: LandingData }) {
 const MARKED = SAMPLE_QUESTIONS.find((q) => q.key === 'eng-prep-03')!
 
 /**
- * Two students working through a book together, with one real question from
- * the bank laid over it, marked: the answer filled in and the reason the
- * usual wrong answer is wrong. No device frame: the photo is the classroom,
- * the card is the product.
+ * A large classroom photograph with two real pieces of the product laid over
+ * it: a question from the bank, marked, and a diagram from a Mathematics
+ * lesson. No device frame: the photo is the classroom, the cards are the
+ * product. Below 1024 px the photo runs the full width under the text.
  */
 function HeroPhoto() {
   const right = MARKED.options.find((o) => o.label === MARKED.answer)!
   const wrong = MARKED.options.find((o) => o.label === 'A')!
   const [before, after] = MARKED.stem.split('____')
   return (
-    <div className="relative mx-auto w-full max-w-xl pb-16 md:max-w-none md:pb-0">
-      <div aria-hidden className="absolute -inset-8 -z-10 rounded-full bg-[radial-gradient(closest-side,rgba(139,92,246,.45),transparent)] blur-2xl" />
-      <div className="overflow-hidden rounded-[1.75rem] shadow-[0_50px_100px_-40px_rgba(0,0,0,.9)] ring-1 ring-white/15 sm:rounded-[2rem]">
+    <div className="relative w-full pb-24 sm:pb-0">
+      <div aria-hidden className="absolute -inset-10 -z-10 rounded-full bg-[radial-gradient(closest-side,rgba(139,92,246,.5),transparent)] blur-2xl" />
+      <span aria-hidden className="absolute -right-5 -top-5 -z-10 hidden h-36 w-36 rounded-full border-[16px] border-[#ffd166] sm:block lg:-right-8 lg:-top-8 lg:h-44 lg:w-44" />
+      <span aria-hidden className="absolute -bottom-6 -left-6 -z-10 hidden h-28 w-28 rounded-[2rem] bg-[#8fdcf5]/25 sm:block" />
+
+      <div className="overflow-hidden rounded-[1.75rem] shadow-[0_50px_100px_-40px_rgba(0,0,0,.9)] ring-1 ring-white/15 sm:rounded-[2.25rem]">
         <img
           src="/img/home/students-studying-1200.webp"
           srcSet="/img/home/students-studying-720.webp 720w, /img/home/students-studying-1200.webp 1200w"
-          sizes="(min-width: 768px) 45vw, 100vw"
+          sizes="(min-width: 1024px) 50vw, 100vw"
           width={1200}
           height={960}
           alt="Two students in school uniform working through a book together at their desk"
           fetchPriority="high"
-          className="aspect-[5/4] w-full object-cover"
+          className="aspect-[5/4] w-full object-cover sm:aspect-[16/10] lg:aspect-[1/1] xl:aspect-[20/19]"
         />
       </div>
 
-      {/* A marked question from the bank, hanging off the photo. */}
+      {/* A diagram from a real Mathematics lesson. */}
+      <div aria-hidden className="absolute bottom-6 right-6 hidden w-52 rotate-2 rounded-2xl bg-white p-3 text-slate-900 shadow-[0_30px_60px_-24px_rgba(15,5,40,.8)] sm:block lg:-bottom-8 lg:-right-8 lg:w-56">
+        <p className="px-1 text-[10px] font-bold uppercase tracking-[.12em] text-violet-700">Mathematics · Lesson</p>
+        <p className="px-1 text-[13px] font-bold">Quadratic graphs</p>
+        <img src="/img/mathematics/quadratic-graph.svg" alt="" width={240} height={180} loading="lazy" decoding="async" className="mt-1.5 aspect-[4/3] w-full rounded-lg bg-slate-50 object-cover object-top" />
+      </div>
+
+      {/* A marked question from the bank. */}
       <figure
         aria-label={`A marked question: ${before}${right.text}${after} Answer ${right.label} is correct.`}
-        className="absolute inset-x-4 bottom-0 rounded-2xl bg-white p-4 text-slate-900 shadow-[0_30px_60px_-24px_rgba(15,5,40,.75)] sm:inset-x-auto sm:left-6 sm:w-[21rem] md:-left-10 md:bottom-8 lg:-left-16"
+        className="absolute inset-x-3 bottom-0 rounded-2xl bg-white p-4 text-slate-900 shadow-[0_30px_60px_-24px_rgba(15,5,40,.8)] sm:inset-x-auto sm:bottom-6 sm:left-6 sm:w-[22rem] lg:-left-14 lg:bottom-12"
       >
         <div className="flex items-center justify-between gap-3">
           <p className="text-[11px] font-bold uppercase tracking-[.12em] text-violet-700">English · {MARKED.topic}</p>
