@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The Pearson square for mixing a feed</title>
+<desc id="d">To make a ration with 18% crude protein from maize (9% protein) and groundnut cake (45% protein), write 18 in the centre, 9 and 45 at the left corners, and subtract diagonally ignoring signs: 45 minus 18 gives 27 parts of maize; 18 minus 9 gives 9 parts of groundnut cake. Total 36 parts, so the ration is 75% maize and 25% groundnut cake.</desc>
+<defs></defs>
+<rect width="780" height="400" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Pearson square: 18% protein from maize and groundnut cake</text>
+<rect x="180.0" y="90.0" width="220.0" height="220.0" rx="0" fill="none" stroke="#0f172a" stroke-width="2.4"/>
+<line x1="180.0" y1="90.0" x2="400.0" y2="310.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="6 5"/>
+<line x1="400.0" y1="90.0" x2="180.0" y2="310.0" stroke="#475569" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="6 5"/>
+<circle cx="290.0" cy="200.0" r="32.0" fill="#ffffff" stroke="#dc2626" stroke-width="2.6"/>
+<text x="290.0" y="200.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">18%</text>
+<text x="166.0" y="90.0" font-size="15" fill="#ea580c" text-anchor="end" dominant-baseline="middle" font-weight="bold">Maize 9%</text>
+<text x="166.0" y="310.0" font-size="15" fill="#92400e" text-anchor="end" dominant-baseline="middle" font-weight="bold">GN cake 45%</text>
+<text x="414.0" y="90.0" font-size="15" fill="#ea580c" text-anchor="start" dominant-baseline="middle" font-weight="bold">45 − 18 = 27 parts maize</text>
+<text x="414.0" y="310.0" font-size="15" fill="#92400e" text-anchor="start" dominant-baseline="middle" font-weight="bold">18 − 9 = 9 parts GN cake</text>
+<text x="414.0" y="188.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">total = 36 parts</text>
+<text x="414.0" y="212.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">maize 27/36 = 75%; cake 9/36 = 25%</text>
+<text x="390.0" y="370.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Subtract diagonally (ignore signs); each answer belongs to the feed on its row.</text>
+</svg>

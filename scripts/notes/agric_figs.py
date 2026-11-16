@@ -634,6 +634,223 @@ def alley_cropping():
     return s
 
 
+# ═══ A4: farm animals ═══════════════════════════════════════════════════════
+
+@fig
+def farm_animal_classes():
+    s = Svg(800, 400, "Classification of farm animals",
+            "Farm animals are classified by digestive system and by use. Ruminants, with a four-chambered stomach, include "
+            "cattle, sheep and goats. Non-ruminants (monogastrics) include pigs and rabbits; poultry such as chickens, "
+            "ducks and turkeys have a crop and gizzard. By use: meat (cattle, goats, pigs, broilers), milk (cattle, "
+            "goats), eggs (layers), draught power (oxen, donkeys), and wool or skins (sheep, goats).")
+    heading(s, "Farm animals: by digestive system and by use")
+    top = box(s, 400, 80, 200, 46, ["Farm animals"], col=INK, fill="#ffffff", size=16)
+    a = box(s, 140, 190, 230, 80, ["Ruminants", "four-chambered stomach", "cattle, sheep, goats"], col=GREEN, fill=F_GREEN, size=14)
+    b = box(s, 400, 190, 230, 80, ["Non-ruminants", "simple stomach", "pigs, rabbits"], col=ORANGE, fill=F_AMBER, size=14)
+    c = box(s, 660, 190, 230, 80, ["Poultry", "crop and gizzard", "chickens, ducks, turkeys"], col=PURPLE, fill=F_PURPLE, size=14)
+    for x in (a, b, c):
+        link(s, top, x, color=MUTED, width=2.2)
+    uses = [("Meat", "cattle, goats, pigs, broilers"), ("Milk", "cattle, goats"), ("Eggs", "layers, ducks"),
+            ("Draught", "oxen, donkeys"), ("Skins, wool", "goats, sheep")]
+    s.text(400, 288, "By use", size=15, weight="bold", color=MUTED)
+    for k, (t, ex) in enumerate(uses):
+        box(s, 85 + k * 157, 345, 145, 62, [t, ex], col=BLUE, fill=F_BLUE, size=13)
+    return s
+
+
+@fig
+def ruminant_stomach():
+    s = Svg(800, 440, "The four-chambered stomach of a ruminant",
+            "Food swallowed by a cow passes down the oesophagus into the rumen, the largest chamber, where microbes "
+            "ferment cellulose. The reticulum, with a honeycomb lining, forms the cud, which is brought back up to be "
+            "chewed again (rumination). Re-swallowed food passes to the omasum, which absorbs water, and then to the "
+            "abomasum, the true stomach, which secretes digestive enzymes and acid, before going to the small intestine.")
+    heading(s, "The ruminant stomach: four chambers")
+    s.path("M 120 170 C 120 100, 360 90, 380 170 C 400 250, 380 340, 250 350 C 130 360, 110 260, 120 170 Z",
+           color=GREEN, width=3, fill=F_GREEN)
+    s.text(250, 230, "RUMEN", size=18, weight="bold", color=GREEN)
+    s.text(250, 254, "microbes ferment", size=13)
+    s.text(250, 272, "cellulose", size=13)
+    s.circle(430, 160, 52, fill=F_AMBER, stroke=ORANGE, width=3)
+    s.text(430, 154, "RETICULUM", size=13, weight="bold", color=ORANGE)
+    s.text(430, 172, "forms the cud", size=12)
+    s.ellipse(500, 280, 60, 45, fill=F_BLUE, stroke=BLUE, width=3)
+    s.text(500, 274, "OMASUM", size=13, weight="bold", color=BLUE)
+    s.text(500, 292, "absorbs water", size=12)
+    s.path("M 560 280 C 640 260, 700 300, 690 350 C 680 400, 600 390, 560 330 Z", color=PURPLE, width=3, fill=F_PURPLE)
+    s.text(630, 330, "ABOMASUM", size=13, weight="bold", color=PURPLE)
+    s.text(630, 348, "true stomach", size=12)
+    s.line(300, 60, 380, 120, color=INK, width=6)
+    s.text(270, 56, "oesophagus", size=13, anchor="end")
+    s.arrow(372, 108, 338, 150, color=RED, width=2.4)
+    s.arrow(420, 110, 380, 70, color=RED, width=2.4)
+    s.text(392, 64, "cud up for", size=12, color=RED, anchor="start")
+    s.text(392, 80, "rechewing", size=12, color=RED, anchor="start")
+    s.line(690, 350, 760, 360, color=INK, width=6)
+    s.text(760, 384, "to small intestine", size=12, anchor="end")
+    return s
+
+
+@fig
+def fowl_digestive():
+    s = Svg(800, 300, "The digestive system of the domestic fowl",
+            "Food passes from the beak down the oesophagus to the crop, where it is stored and softened; to the "
+            "proventriculus, which secretes enzymes and acid; to the gizzard, which grinds food with grit; then through "
+            "the small intestine, where digestion and absorption take place, to the caeca and large intestine, and out "
+            "through the cloaca.")
+    heading(s, "The fowl's digestive system")
+    parts = [("Beak", "picks food", F_GREY, INK), ("Crop", "stores, softens", F_AMBER, ORANGE),
+             ("Proventriculus", "enzymes, acid", F_RED, RED), ("Gizzard", "grinds with grit", F_PURPLE, PURPLE),
+             ("Small intestine", "digests, absorbs", F_GREEN, GREEN), ("Caeca, large int.", "water absorbed", F_BLUE, BLUE),
+             ("Cloaca", "droppings out", F_GREY, MUTED)]
+    prev = None
+    for k, (t, sub, fill, col) in enumerate(parts):
+        x = 60 + k * 113
+        b = box(s, x, 150, 104, 80, [t, sub], col=col, fill=fill, size=12)
+        if prev:
+            link(s, prev, b, color=INK, width=2.2, gap=2)
+        prev = b
+    note(s, "No teeth: the gizzard does the grinding, helped by grit the bird swallows.", 250, size=14, color=INK)
+    return s
+
+
+@fig
+def gestation_periods():
+    s = Svg(800, 360, "Gestation and incubation periods of farm animals",
+            "Approximate gestation periods: cow 283 days (about 9 months), goat 150 days, sheep 147 days, sow 114 days "
+            "(3 months, 3 weeks and 3 days), rabbit 31 days. Hen's eggs hatch after 21 days of incubation.")
+    heading(s, "Gestation (and incubation) periods")
+    rows = [("Cow", 283, "about 9 months", GREEN), ("Goat", 150, "about 5 months", ORANGE), ("Ewe (sheep)", 147, "about 5 months", ORANGE),
+            ("Sow (pig)", 114, "3 months, 3 weeks, 3 days", PURPLE), ("Doe (rabbit)", 31, "about 1 month", BLUE),
+            ("Hen's egg", 21, "incubation", RED)]
+    x0, scale = 160, 1.6
+    for k, (name, days, note_t, col) in enumerate(rows):
+        y = 85 + k * 44
+        s.text(x0 - 12, y, name, size=14, weight="bold", anchor="end")
+        s.rect(x0, y - 13, days * scale, 26, fill=col, stroke=col, width=1, rx=5, opacity=0.85)
+        s.text(x0 + days * scale + 8, y, f"{days} days  ({note_t})", size=13, anchor="start")
+    return s
+
+
+@fig
+def pearson_square():
+    s = Svg(780, 400, "The Pearson square for mixing a feed",
+            "To make a ration with 18% crude protein from maize (9% protein) and groundnut cake (45% protein), write 18 in "
+            "the centre, 9 and 45 at the left corners, and subtract diagonally ignoring signs: 45 minus 18 gives 27 parts "
+            "of maize; 18 minus 9 gives 9 parts of groundnut cake. Total 36 parts, so the ration is 75% maize and 25% "
+            "groundnut cake.")
+    heading(s, "Pearson square: 18% protein from maize and groundnut cake")
+    x0, y0, w = 180, 90, 220
+    s.rect(x0, y0, w, w, fill="none", stroke=INK, width=2.4)
+    s.line(x0, y0, x0 + w, y0 + w, color=MUTED, width=1.6, dash="6 5")
+    s.line(x0 + w, y0, x0, y0 + w, color=MUTED, width=1.6, dash="6 5")
+    s.circle(x0 + w / 2, y0 + w / 2, 32, fill="#ffffff", stroke=RED, width=2.6)
+    s.text(x0 + w / 2, y0 + w / 2, "18%", size=18, weight="bold", color=RED)
+    s.text(x0 - 14, y0, "Maize 9%", size=15, weight="bold", anchor="end", color=ORANGE)
+    s.text(x0 - 14, y0 + w, "GN cake 45%", size=15, weight="bold", anchor="end", color=BROWN)
+    s.text(x0 + w + 14, y0, "45 − 18 = 27 parts maize", size=15, weight="bold", anchor="start", color=ORANGE)
+    s.text(x0 + w + 14, y0 + w, "18 − 9 = 9 parts GN cake", size=15, weight="bold", anchor="start", color=BROWN)
+    s.text(x0 + w + 14, y0 + w / 2 - 12, "total = 36 parts", size=14, anchor="start")
+    s.text(x0 + w + 14, y0 + w / 2 + 12, "maize 27/36 = 75%; cake 9/36 = 25%", size=14, anchor="start")
+    note(s, "Subtract diagonally (ignore signs); each answer belongs to the feed on its row.", 370, size=14, color=INK)
+    return s
+
+
+@fig
+def poultry_house():
+    s = Svg(800, 420, "A deep litter poultry house",
+            "A cross-section of a deep litter house. A wide overhanging roof keeps out sun and rain. Each long side has a "
+            "low wall with wire mesh above it for ventilation. The concrete floor is covered with a deep layer of dry "
+            "litter such as wood shavings or rice husks. Feeders and drinkers stand on the litter, with a perch and nest "
+            "boxes for layers.")
+    heading(s, "A deep litter house (cross-section)")
+    L, R = 90, 530
+    s.polygon([(L - 50, 150), ((L + R) / 2, 70), (R + 50, 150)], fill="#a16207", stroke=INK, width=2.4)
+    for x in (L, R):
+        s.rect(x - 8, 150, 16, 110, fill="#ffffff", stroke=INK, width=1.6)
+        for y in range(156, 260, 10):
+            s.line(x - 8, y, x + 8, y + 6, color="#94a3b8", width=1)
+            s.line(x + 8, y, x - 8, y + 6, color="#94a3b8", width=1)
+        s.rect(x - 8, 260, 16, 70, fill=F_GREY, stroke=INK, width=1.8)
+    s.rect(L - 8, 330, R - L + 16, 10, fill="#cbd5e1", stroke=INK, width=1.4)
+    s.rect(L + 8, 312, R - L - 16, 18, fill="#fde68a", stroke=BROWN, width=1.4)
+    s.rect(170, 282, 40, 30, fill=METAL, stroke=INK, width=1.6)
+    s.rect(290, 286, 28, 26, fill="#bfdbfe", stroke=BLUE, width=1.6)
+    s.line(360, 250, 430, 250, color=BROWN, width=4)
+    s.rect(450, 232, 60, 40, fill="#fef3c7", stroke=BROWN, width=1.6)
+    labels = [((420, 112), "overhanging roof", 100), ((R + 8, 200), "wire mesh: ventilation", 160), ((R + 8, 295), "low wall", 200),
+              ((480, 252), "nest box", 240), ((400, 250), "perch", 280), ((300, 300), "drinker", 320),
+              ((190, 296), "feeder", 360), ((460, 322), "deep dry litter (shavings, husks)", 390)]
+    for (px, py), txt, ty in labels:
+        s.line(px, py, 590, ty, color=MUTED, width=1.2)
+        s.dot(px, py, r=2.5, color=INK)
+        s.text(596, ty, txt, size=13, anchor="start")
+    return s
+
+
+@fig
+def egg_structure():
+    s = Svg(780, 400, "The structure of a hen's egg",
+            "A longitudinal section of an egg. The hard shell is lined by two shell membranes, which separate at the blunt "
+            "end to form the air cell. Inside is the albumen (egg white), the yolk with the germinal disc on its surface, "
+            "and twisted chalazae that hold the yolk in the centre.")
+    heading(s, "Inside a hen's egg")
+    cx, cy = 300, 220
+    s.ellipse(cx, cy, 190, 140, fill="#fef3c7", stroke=BROWN, width=5)
+    s.ellipse(cx, cy, 182, 132, fill="none", stroke=MUTED, width=1.4)
+    s.path(f"M {cx - 182} {cy - 30} Q {cx - 150} {cy} {cx - 182} {cy + 30}", color=MUTED, width=1.6, fill="#e0f2fe")
+    s.ellipse(cx, cy, 150, 105, fill="#f8fafc", stroke="#cbd5e1", width=1.4)
+    s.circle(cx + 10, cy, 58, fill="#facc15", stroke=ORANGE, width=2.4)
+    s.ellipse(cx + 10, cy - 50, 10, 4, fill="#ffffff", stroke=ORANGE, width=1.4)
+    s.path(f"M {cx - 48} {cy} C {cx - 70} {cy - 12}, {cx - 90} {cy + 12}, {cx - 120} {cy}", color=MUTED, width=2.4)
+    s.path(f"M {cx + 68} {cy} C {cx + 90} {cy - 12}, {cx + 110} {cy + 12}, {cx + 140} {cy}", color=MUTED, width=2.4)
+    labels = [((cx + 160, cy - 80), "shell (calcium carbonate)", 90), ((cx + 10, cy - 52), "germinal disc", 140),
+              ((cx + 120, cy + 2), "chalaza", 190), ((cx + 40, cy + 30), "yolk", 240),
+              ((cx + 172, cy + 40), "shell membranes", 290), ((cx + 120, cy + 60), "albumen (white)", 340)]
+    for (px, py), txt, ty in labels:
+        s.line(px, py, 554, ty, color=MUTED, width=1.2)
+        s.dot(px, py, r=2.5, color=INK)
+        s.text(560, ty, txt, size=14, anchor="start")
+    s.line(cx - 168, cy, 90, 372, color=MUTED, width=1.2)
+    s.dot(cx - 168, cy, r=2.5, color=INK)
+    s.text(84, 384, "air cell (blunt end)", size=14, anchor="start")
+    return s
+
+
+@fig
+def fish_pond():
+    s = Svg(800, 380, "Cross-section of an earthen fish pond",
+            "An earthen fish pond dug on a gentle slope with clay soil. Water enters through an inlet pipe with a screen to "
+            "keep out wild fish. The pond is shallow at the inlet end and deeper (about 1.5 m) at the outlet end, where a "
+            "drain pipe or monk lets the pond be emptied for harvesting. Dykes (banks) around the pond are planted with "
+            "grass to stop erosion.")
+    heading(s, "An earthen fish pond (cross-section)")
+    s.polygon([(20, 160), (120, 160), (180, 260), (600, 300), (660, 160), (780, 160), (780, 360), (20, 360)],
+              fill="#fde68a", stroke=BROWN, width=2.4)
+    s.polygon([(130, 176), (640, 176), (600, 300), (180, 260)], fill="#93c5fd", stroke="none", width=0, opacity=0.85)
+    s.line(130, 176, 640, 176, color=BLUE, width=2, dash="6 4")
+    s.rect(30, 150, 110, 10, fill=METAL, stroke=INK, width=1.6)
+    s.line(140, 150, 140, 172, color=INK, width=2)
+    s.rect(560, 170, 18, 150, fill=METAL, stroke=INK, width=1.6)
+    s.rect(560, 320, 200, 10, fill=METAL, stroke=INK, width=1.6)
+    for x in range(30, 120, 12):
+        s.line(x, 160, x + 4, 146, color=GREEN, width=2)
+    for x in range(670, 780, 12):
+        s.line(x, 160, x + 4, 146, color=GREEN, width=2)
+    for x, y in ((300, 215), (380, 240), (460, 225)):
+        s.path(f"M {x} {y} q 14 -10 28 0 q -14 10 -28 0 Z", color=INK, width=1.4, fill="#cbd5e1")
+        s.polygon([(x, y), (x - 8, y - 6), (x - 8, y + 6)], fill="#cbd5e1", stroke=INK, width=1)
+    s.text(85, 128, "inlet with screen", size=13, weight="bold")
+    s.text(680, 342, "outlet / drain pipe", size=13, weight="bold", anchor="end")
+    s.text(390, 196, "water", size=13, color=BLUE, weight="bold")
+    s.text(220, 300, "shallow end", size=13, color=MUTED)
+    s.text(620, 120, "dyke planted", size=13, weight="bold", anchor="start")
+    s.text(620, 138, "with grass", size=13, weight="bold", anchor="start")
+    s.line(612, 176, 612, 300, color=INK, width=1.4, arrow="both")
+    s.text(606, 240, "~1.5 m", size=12, anchor="end", weight="bold")
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:

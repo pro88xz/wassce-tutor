@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The digestive system of the domestic fowl</title>
+<desc id="d">Food passes from the beak down the oesophagus to the crop, where it is stored and softened; to the proventriculus, which secretes enzymes and acid; to the gizzard, which grinds food with grit; then through the small intestine, where digestion and absorption take place, to the caeca and large intestine, and out through the cloaca.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="800" height="300" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The fowl&#x27;s digestive system</text>
+<rect x="8.0" y="110.0" width="104.0" height="80.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="60.0" y="141.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Beak</text>
+<text x="60.0" y="159.0" font-size="10" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">picks food</text>
+<rect x="121.0" y="110.0" width="104.0" height="80.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="173.0" y="141.0" font-size="12" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Crop</text>
+<text x="173.0" y="159.0" font-size="10" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">stores, softens</text>
+<line x1="114.0" y1="150.0" x2="119.0" y2="150.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="234.0" y="110.0" width="104.0" height="80.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="286.0" y="141.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Proventriculus</text>
+<text x="286.0" y="159.0" font-size="10" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">enzymes, acid</text>
+<line x1="227.0" y1="150.0" x2="232.0" y2="150.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="347.0" y="110.0" width="104.0" height="80.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="399.0" y="141.0" font-size="12" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Gizzard</text>
+<text x="399.0" y="159.0" font-size="10" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">grinds with grit</text>
+<line x1="340.0" y1="150.0" x2="345.0" y2="150.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="460.0" y="110.0" width="104.0" height="80.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="512.0" y="141.0" font-size="12" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Small intestine</text>
+<text x="512.0" y="159.0" font-size="10" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">digests, absorbs</text>
+<line x1="453.0" y1="150.0" x2="458.0" y2="150.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="573.0" y="110.0" width="104.0" height="80.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="625.0" y="141.0" font-size="12" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Caeca, large int.</text>
+<text x="625.0" y="159.0" font-size="10" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">water absorbed</text>
+<line x1="566.0" y1="150.0" x2="571.0" y2="150.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="686.0" y="110.0" width="104.0" height="80.0" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="738.0" y="141.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cloaca</text>
+<text x="738.0" y="159.0" font-size="10" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">droppings out</text>
+<line x1="679.0" y1="150.0" x2="684.0" y2="150.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="400.0" y="250.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">No teeth: the gizzard does the grinding, helped by grit the bird swallows.</text>
+</svg>

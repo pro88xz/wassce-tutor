@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Gestation and incubation periods of farm animals</title>
+<desc id="d">Approximate gestation periods: cow 283 days (about 9 months), goat 150 days, sheep 147 days, sow 114 days (3 months, 3 weeks and 3 days), rabbit 31 days. Hen&#x27;s eggs hatch after 21 days of incubation.</desc>
+<defs></defs>
+<rect width="800" height="360" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Gestation (and incubation) periods</text>
+<text x="148.0" y="85.0" font-size="14" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">Cow</text>
+<rect x="160.0" y="72.0" width="452.8" height="26.0" rx="5" fill="#15803d" stroke="#15803d" stroke-width="1" opacity="0.85"/>
+<text x="620.8" y="85.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">283 days  (about 9 months)</text>
+<text x="148.0" y="129.0" font-size="14" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">Goat</text>
+<rect x="160.0" y="116.0" width="240.0" height="26.0" rx="5" fill="#ea580c" stroke="#ea580c" stroke-width="1" opacity="0.85"/>
+<text x="408.0" y="129.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">150 days  (about 5 months)</text>
+<text x="148.0" y="173.0" font-size="14" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">Ewe (sheep)</text>
+<rect x="160.0" y="160.0" width="235.2" height="26.0" rx="5" fill="#ea580c" stroke="#ea580c" stroke-width="1" opacity="0.85"/>
+<text x="403.2" y="173.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">147 days  (about 5 months)</text>
+<text x="148.0" y="217.0" font-size="14" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">Sow (pig)</text>
+<rect x="160.0" y="204.0" width="182.4" height="26.0" rx="5" fill="#7c3aed" stroke="#7c3aed" stroke-width="1" opacity="0.85"/>
+<text x="350.4" y="217.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">114 days  (3 months, 3 weeks, 3 days)</text>
+<text x="148.0" y="261.0" font-size="14" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">Doe (rabbit)</text>
+<rect x="160.0" y="248.0" width="49.6" height="26.0" rx="5" fill="#2563eb" stroke="#2563eb" stroke-width="1" opacity="0.85"/>
+<text x="217.6" y="261.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">31 days  (about 1 month)</text>
+<text x="148.0" y="305.0" font-size="14" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">Hen&#x27;s egg</text>
+<rect x="160.0" y="292.0" width="33.6" height="26.0" rx="5" fill="#dc2626" stroke="#dc2626" stroke-width="1" opacity="0.85"/>
+<text x="201.6" y="305.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">21 days  (incubation)</text>
+</svg>
