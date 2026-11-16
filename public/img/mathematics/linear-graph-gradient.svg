@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 600" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Graph of y = 2x + 1 with its gradient and intercept</title>
+<desc id="d">The straight line y = 2x + 1 crosses the y-axis at (0, 1), the intercept. A right-angled triangle drawn from (0, 1) to (2, 1) to (2, 5) shows a run of 2 and a rise of 4, so the gradient is 4 divided by 2, which is 2.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="720" height="600" rx="20" fill="#f8fafc"/>
+<text x="360.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">y = mx + c:  gradient m, intercept c</text>
+<line x1="146.0" y1="532.0" x2="146.0" y2="118.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="192.0" y1="532.0" x2="192.0" y2="118.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="238.0" y1="532.0" x2="238.0" y2="118.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="284.0" y1="532.0" x2="284.0" y2="118.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="330.0" y1="532.0" x2="330.0" y2="118.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="376.0" y1="532.0" x2="376.0" y2="118.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="422.0" y1="532.0" x2="422.0" y2="118.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="468.0" y1="532.0" x2="468.0" y2="118.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="514.0" y1="532.0" x2="514.0" y2="118.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="146.0" y1="532.0" x2="514.0" y2="532.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="146.0" y1="486.0" x2="514.0" y2="486.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="146.0" y1="440.0" x2="514.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="146.0" y1="394.0" x2="514.0" y2="394.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="146.0" y1="348.0" x2="514.0" y2="348.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="146.0" y1="302.0" x2="514.0" y2="302.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="146.0" y1="256.0" x2="514.0" y2="256.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="146.0" y1="210.0" x2="514.0" y2="210.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="146.0" y1="164.0" x2="514.0" y2="164.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="146.0" y1="118.0" x2="514.0" y2="118.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="146.0" y1="440.0" x2="528.0" y2="440.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="330.0" y1="532.0" x2="330.0" y2="104.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="536.0" y="444.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">x</text>
+<text x="334.0" y="94.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal" font-style="italic">y</text>
+<text x="146.0" y="458.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">-4</text>
+<text x="192.0" y="458.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">-3</text>
+<text x="238.0" y="458.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">-2</text>
+<text x="284.0" y="458.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">-1</text>
+<text x="376.0" y="458.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1</text>
+<text x="422.0" y="458.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2</text>
+<text x="468.0" y="458.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">3</text>
+<text x="514.0" y="458.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">4</text>
+<text x="322.0" y="533.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">-2</text>
+<text x="322.0" y="487.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">-1</text>
+<text x="322.0" y="395.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">1</text>
+<text x="322.0" y="349.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">2</text>
+<text x="322.0" y="303.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">3</text>
+<text x="322.0" y="257.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">4</text>
+<text x="322.0" y="211.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">5</text>
+<text x="322.0" y="165.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">6</text>
+<text x="322.0" y="119.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">7</text>
+<text x="322.0" y="458.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">0</text>
+<path d="M 261.0 532.0 L 262.0 529.9 L 263.1 527.9 L 264.1 525.8 L 265.1 523.7 L 266.2 521.6 L 267.2 519.6 L 268.2 517.5 L 269.3 515.4 L 270.3 513.4 L 271.4 511.3 L 272.4 509.2 L 273.4 507.2 L 274.5 505.1 L 275.5 503.0 L 276.5 500.9 L 277.6 498.9 L 278.6 496.8 L 279.6 494.7 L 280.7 492.7 L 281.7 490.6 L 282.7 488.5 L 283.8 486.5 L 284.8 484.4 L 285.8 482.3 L 286.9 480.2 L 287.9 478.2 L 288.9 476.1 L 290.0 474.0 L 291.0 472.0 L 292.1 469.9 L 293.1 467.8 L 294.1 465.8 L 295.2 463.7 L 296.2 461.6 L 297.2 459.6 L 298.3 457.5 L 299.3 455.4 L 300.3 453.3 L 301.4 451.3 L 302.4 449.2 L 303.4 447.1 L 304.5 445.1 L 305.5 443.0 L 306.5 440.9 L 307.6 438.9 L 308.6 436.8 L 309.6 434.7 L 310.7 432.6 L 311.7 430.6 L 312.8 428.5 L 313.8 426.4 L 314.8 424.4 L 315.9 422.3 L 316.9 420.2 L 317.9 418.1 L 319.0 416.1 L 320.0 414.0 L 321.0 411.9 L 322.1 409.9 L 323.1 407.8 L 324.1 405.7 L 325.2 403.7 L 326.2 401.6 L 327.2 399.5 L 328.3 397.4 L 329.3 395.4 L 330.3 393.3 L 331.4 391.2 L 332.4 389.2 L 333.4 387.1 L 334.5 385.0 L 335.5 383.0 L 336.6 380.9 L 337.6 378.8 L 338.6 376.8 L 339.7 374.7 L 340.7 372.6 L 341.7 370.5 L 342.8 368.5 L 343.8 366.4 L 344.8 364.3 L 345.9 362.3 L 346.9 360.2 L 347.9 358.1 L 349.0 356.1 L 350.0 354.0 L 351.0 351.9 L 352.1 349.8 L 353.1 347.8 L 354.1 345.7 L 355.2 343.6 L 356.2 341.6 L 357.3 339.5 L 358.3 337.4 L 359.3 335.3 L 360.4 333.3 L 361.4 331.2 L 362.4 329.1 L 363.5 327.1 L 364.5 325.0 L 365.5 322.9 L 366.6 320.9 L 367.6 318.8 L 368.6 316.7 L 369.7 314.7 L 370.7 312.6 L 371.7 310.5 L 372.8 308.4 L 373.8 306.4 L 374.9 304.3 L 375.9 302.2 L 376.9 300.2 L 378.0 298.1 L 379.0 296.0 L 380.0 294.0 L 381.1 291.9 L 382.1 289.8 L 383.1 287.7 L 384.2 285.7 L 385.2 283.6 L 386.2 281.5 L 387.3 279.5 L 388.3 277.4 L 389.3 275.3 L 390.4 273.2 L 391.4 271.2 L 392.4 269.1 L 393.5 267.0 L 394.5 265.0 L 395.6 262.9 L 396.6 260.8 L 397.6 258.8 L 398.7 256.7 L 399.7 254.6 L 400.7 252.5 L 401.8 250.5 L 402.8 248.4 L 403.8 246.3 L 404.9 244.3 L 405.9 242.2 L 406.9 240.1 L 408.0 238.1 L 409.0 236.0 L 410.0 233.9 L 411.1 231.8 L 412.1 229.8 L 413.1 227.7 L 414.2 225.6 L 415.2 223.6 L 416.2 221.5 L 417.3 219.4 L 418.3 217.4 L 419.4 215.3 L 420.4 213.2 L 421.4 211.2 L 422.5 209.1 L 423.5 207.0 L 424.5 204.9 L 425.6 202.9 L 426.6 200.8 L 427.6 198.7 L 428.7 196.7 L 429.7 194.6 L 430.7 192.5 L 431.8 190.5 L 432.8 188.4 L 433.8 186.3 L 434.9 184.2 L 435.9 182.2 L 436.9 180.1 L 438.0 178.0 L 439.0 176.0 L 440.1 173.9 L 441.1 171.8 L 442.1 169.8 L 443.2 167.7 L 444.2 165.6 L 445.2 163.5 L 446.3 161.5 L 447.3 159.4 L 448.3 157.3 L 449.4 155.3 L 450.4 153.2 L 451.4 151.1 L 452.5 149.1 L 453.5 147.0 L 454.5 144.9 L 455.6 142.8 L 456.6 140.8 L 457.7 138.7 L 458.7 136.6 L 459.7 134.6 L 460.8 132.5 L 461.8 130.4 L 462.8 128.3 L 463.9 126.3 L 464.9 124.2 L 465.9 122.1 L 467.0 120.1 L 468.0 118.0" stroke="#2563eb" stroke-width="3.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 330.0 394.0 L 422.0 394.0 L 422.0 210.0" stroke="#ea580c" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<rect x="339.6" y="403.0" width="72.7" height="26.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="376.0" y="416.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">run = 2</text>
+<rect x="435.2" y="289.0" width="81.7" height="26.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="476.0" y="302.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">rise = 4</text>
+<circle cx="330.0" cy="394.0" r="7.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<rect x="187.8" y="377.5" width="144.4" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="260.0" y="390.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">intercept (0, 1)</text>
+<rect x="201.0" y="168.4" width="110.8" height="28.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="256.4" y="182.4" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">y = 2x + 1</text>
+<text x="360.0" y="580.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">gradient = rise ÷ run = 4 ÷ 2 = 2</text>
+</svg>

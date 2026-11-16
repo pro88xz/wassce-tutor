@@ -522,6 +522,132 @@ def variation_graphs():
     return s
 
 
+# ═══ M2: algebra ════════════════════════════════════════════════════════════
+
+@fig
+def linear_graph_gradient():
+    s = Svg(720, 600, "Graph of y = 2x + 1 with its gradient and intercept",
+            "The straight line y = 2x + 1 crosses the y-axis at (0, 1), the intercept. A right-angled triangle drawn from "
+            "(0, 1) to (2, 1) to (2, 5) shows a run of 2 and a rise of 4, so the gradient is 4 divided by 2, which is 2.")
+    heading(s, "y = mx + c:  gradient m, intercept c")
+    ox, oy, u = 330, 440, 46
+    X = lambda x: ox + x * u
+    Y = lambda y: oy - y * u
+    grid_axes(s, X, Y, (-4, 4), (-2, 7))
+    plot(s, lambda x: 2 * x + 1, -1.5, 3, X, Y, color=BLUE, width=3.5)
+    s.polyline([(X(0), Y(1)), (X(2), Y(1)), (X(2), Y(5))], color=ORANGE, width=3, dash="7 5")
+    s.label(X(1), Y(1) + 22, "run = 2", size=16, color=ORANGE, weight="bold")
+    s.label(X(2) + 54, Y(3), "rise = 4", size=16, color=ORANGE, weight="bold")
+    s.dot(X(0), Y(1), r=7, color=RED)
+    s.label(X(0) - 70, Y(1) - 4, "intercept (0, 1)", size=15, color=RED, weight="bold")
+    s.label(X(-1.6), Y(5.6), "y = 2x + 1", size=18, color=BLUE, weight="bold")
+    note(s, "gradient = rise ÷ run = 4 ÷ 2 = 2", 580, size=17, color=INK)
+    return s
+
+
+@fig
+def quadratic_graph():
+    s = Svg(720, 650, "Graph of y = x squared minus 2x minus 3",
+            "The parabola y = x² − 2x − 3 crosses the x-axis at x = −1 and x = 3, the roots of x² − 2x − 3 = 0. It crosses "
+            "the y-axis at (0, −3). Its lowest point, the minimum or vertex, is (1, −4), and the dashed vertical line x = 1 "
+            "is its line of symmetry.")
+    heading(s, "The parabola y = x² − 2x − 3")
+    ox, oy, u = 300, 356, 44
+    X = lambda x: ox + x * u
+    Y = lambda y: oy - y * u
+    grid_axes(s, X, Y, (-3, 5), (-5, 6))
+    s.line(X(1), Y(5.6), X(1), Y(-4.8), color=PURPLE, width=2, dash="7 6")
+    plot(s, lambda x: x * x - 2 * x - 3, -2.2, 4.2, X, Y, color=BLUE, width=3.5, ymax=6)
+    for (px, py) in ((-1, 0), (3, 0)):
+        s.dot(X(px), Y(py), r=7, color=RED)
+    s.label(X(-1) - 36, Y(0) - 22, "root x = −1", size=15, color=RED, weight="bold")
+    s.label(X(3) + 52, Y(0) - 22, "root x = 3", size=15, color=RED, weight="bold")
+    s.dot(X(0), Y(-3), r=6, color=ORANGE)
+    s.label(X(0) - 72, Y(-3), "(0, −3)", size=15, color=ORANGE, weight="bold")
+    s.dot(X(1), Y(-4), r=7, color=GREEN)
+    s.label(X(1) + 92, Y(-4), "minimum (1, −4)", size=15, color=GREEN, weight="bold")
+    s.label(X(1) + 60, Y(5.2), "x = 1", size=15, color=PURPLE, weight="bold")
+    note(s, "roots where the curve meets the x-axis; symmetric about x = 1", 632, size=16, color=INK)
+    return s
+
+
+@fig
+def quadratic_read_solutions():
+    s = Svg(720, 640, "Using the graph of y = x squared minus 2x minus 3 to solve x squared minus 2x minus 5 = 0",
+            "The line y = 2 cuts the parabola y = x² − 2x − 3 at about x = −1.4 and x = 3.4. These x-values solve "
+            "x² − 2x − 3 = 2, which is x² − 2x − 5 = 0.")
+    heading(s, "Reading solutions: where y = x² − 2x − 3 meets y = 2")
+    ox, oy, u = 300, 350, 44
+    X = lambda x: ox + x * u
+    Y = lambda y: oy - y * u
+    grid_axes(s, X, Y, (-3, 5), (-5, 6))
+    plot(s, lambda x: x * x - 2 * x - 3, -2.2, 4.2, X, Y, color=BLUE, width=3.5, ymax=6)
+    s.line(X(-3), Y(2), X(5), Y(2), color=ORANGE, width=3)
+    s.label(X(4.3), Y(2) - 20, "y = 2", size=16, color=ORANGE, weight="bold")
+    for xr in (1 - 6 ** 0.5, 1 + 6 ** 0.5):
+        s.line(X(xr), Y(2), X(xr), Y(0), color=RED, width=2.2, dash="6 5")
+        s.dot(X(xr), Y(2), r=7, color=RED)
+        s.dot(X(xr), Y(0), r=5, color=RED)
+    s.label(X(-1.45) - 44, Y(0) - 22, "x ≈ −1.4", size=15, color=RED, weight="bold")
+    s.label(X(3.45) + 44, Y(0) - 22, "x ≈ 3.4", size=15, color=RED, weight="bold")
+    note(s, "x² − 2x − 3 = 2  is the same as  x² − 2x − 5 = 0", 620, size=17, color=INK)
+    return s
+
+
+@fig
+def inequality_number_lines():
+    s = Svg(760, 430, "Inequalities on number lines",
+            "Three number lines. x > 2 has an open circle at 2 and an arrow to the right. x ≤ −1 has a filled circle at "
+            "−1 and an arrow to the left. −2 ≤ x < 3 has a filled circle at −2, an open circle at 3, and the segment "
+            "between them shaded.")
+    heading(s, "Open circle: not included.  Filled circle: included.")
+    rows = [(110, "x > 2"), (220, "x ≤ −1"), (330, "−2 ≤ x < 3")]
+    x0, u = 190, 52
+    X = lambda v: x0 + (v + 4) * u
+    for y, lab in rows:
+        s.arrow(X(-4.4), y, X(5.4), y, color=INK, width=2)
+        s.arrow(X(5.4), y, X(-4.6), y, color=INK, width=2)
+        for v in range(-4, 6):
+            s.line(X(v), y - 8, X(v), y + 8, color=INK, width=2)
+            s.text(X(v), y + 28, str(v).replace("-", "−"), size=15, color=MUTED)
+        s.text(18, y - 22, lab, size=18, weight="bold", color=BLUE, anchor="start")
+    y = rows[0][0]
+    s.line(X(2), y - 22, X(5.2), y - 22, color=BLUE, width=5, arrow="end")
+    s.circle(X(2), y - 22, 8, fill="#ffffff", stroke=BLUE, width=3.5)
+    y = rows[1][0]
+    s.line(X(-1), y - 22, X(-4.2), y - 22, color=BLUE, width=5, arrow="end")
+    s.circle(X(-1), y - 22, 8, fill=BLUE, stroke=BLUE, width=3.5)
+    y = rows[2][0]
+    s.line(X(-2), y - 22, X(3), y - 22, color=BLUE, width=5)
+    s.circle(X(-2), y - 22, 8, fill=BLUE, stroke=BLUE, width=3.5)
+    s.circle(X(3), y - 22, 8, fill="#ffffff", stroke=BLUE, width=3.5)
+    note(s, "< or >  →  open circle   ·   ≤ or ≥  →  filled circle", 405, size=16, color=INK)
+    return s
+
+
+@fig
+def inequality_region():
+    s = Svg(720, 600, "The region where x ≥ 0, y ≥ 0, x + y ≤ 4 and y < x + 1",
+            "The line x + y = 4 is drawn solid because the inequality includes it. The line y = x + 1 is drawn dashed "
+            "because the inequality is strict. The shaded region below both lines and above the x-axis, to the right of "
+            "the y-axis, has corners at (0, 0), (4, 0), (1.5, 2.5) and (0, 1).")
+    heading(s, "Solid line: ≤ or ≥.  Dashed line: < or >.")
+    ox, oy, u = 170, 470, 78
+    X = lambda x: ox + x * u
+    Y = lambda y: oy - y * u
+    grid_axes(s, X, Y, (-1, 5), (-1, 5))
+    s.polygon([(X(0), Y(0)), (X(4), Y(0)), (X(1.5), Y(2.5)), (X(0), Y(1))], fill=F_GREEN, stroke=GREEN, width=0, opacity=0.85)
+    plot(s, lambda x: 4 - x, -0.5, 4.8, X, Y, color=BLUE, width=3.2)
+    s.line(X(-0.8), Y(0.2), X(3.8), Y(4.8), color=RED, width=3.2, dash="10 7")
+    s.label(X(4.1), Y(1.3), "x + y = 4", size=16, color=BLUE, weight="bold")
+    s.label(X(3.3), Y(4.6), "y = x + 1", size=16, color=RED, weight="bold")
+    s.dot(X(1.5), Y(2.5), r=6, color=INK)
+    s.label(X(1.5) + 70, Y(2.5) - 6, "(1.5, 2.5)", size=15, weight="bold")
+    s.label(X(1.6), Y(1.0), "required region", size=16, color=GREEN, weight="bold")
+    note(s, "test a point such as (1, 1): 1 + 1 ≤ 4 ✓ and 1 < 1 + 1 ✓", 575, size=16, color=INK)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:
