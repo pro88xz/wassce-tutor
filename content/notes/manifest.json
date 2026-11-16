@@ -7286,6 +7286,84 @@
       "title": "Animal products and processing: meat, milk, eggs, fish, hides and skins",
       "est_minutes": 13,
       "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-agricultural-economics.md",
+      "subject": "Agricultural Science",
+      "topic": "agricultural-economics",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Agricultural economics: factors of production, diminishing returns, costs and prices",
+      "est_minutes": 15,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-farm-planning-records.md",
+      "subject": "Agricultural Science",
+      "topic": "farm-planning-records-and-management",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Farm planning, records and management",
+      "est_minutes": 13,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-marketing-cooperatives.md",
+      "subject": "Agricultural Science",
+      "topic": "agricultural-marketing-and-cooperatives",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Agricultural marketing and cooperatives",
+      "est_minutes": 12,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-finance-credit.md",
+      "subject": "Agricultural Science",
+      "topic": "agricultural-finance-and-credit",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Agricultural finance and credit",
+      "est_minutes": 13,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-extension-policy.md",
+      "subject": "Agricultural Science",
+      "topic": "agricultural-extension-and-government-policy",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Agricultural extension and government policy",
+      "est_minutes": 13,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-practical-skills.md",
+      "subject": "Agricultural Science",
+      "topic": "practical-agricultural-skills",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Practical agricultural skills: measuring, calculating and identifying specimens",
+      "est_minutes": 13,
+      "sort_order": 1
     }
   ]
 }
