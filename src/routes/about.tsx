@@ -6,6 +6,7 @@ import { TUTOR_PHOTO } from '@/lib/tutors'
 import { TOPIC_PHOTOS } from '@/lib/topic-photos'
 import { HOME_PHOTO_CREDITS } from '@/lib/home-photos'
 import { GUIDE_POSTS } from '@/content/editorial-guides'
+import { UNIVERSITY_GUIDES } from '@/content/editorial'
 import { publicHead } from '@/lib/seo'
 import { CONTACT } from '@/lib/contact'
 import { fetchLandingData } from '@/lib/public-content'
@@ -26,7 +27,8 @@ const PHOTO_CREDITS = [
   ...Object.entries(TOPIC_PHOTOS)
     .sort((a, b) => a[1].topic.localeCompare(b[1].topic))
     .map(([key, p]) => [key, { subject: `${p.topic} (topic)`, caption: p.caption, credit: p.credit }] as const),
-  ...GUIDE_POSTS.filter((post) => post.imageSourceLabel === 'Pexels').map((post) => [
+  // Blog and university photos carry no caption on their pages: their credits are listed here.
+  ...GUIDE_POSTS.map((post) => [
     `blog-${post.slug}`,
     {
       subject: `${post.title.split(':')[0]} (blog)`,
@@ -37,10 +39,32 @@ const PHOTO_CREDITS = [
         source: 'Pexels',
         sourceUrl: post.imageSourceUrl ?? 'https://www.pexels.com/',
         license: 'Pexels License',
-        licenseUrl: 'https://www.pexels.com/license/',
+        licenseUrl: 'https://www.pexels.com/license/' as string | undefined,
       },
     },
   ] as const),
+  // University photos (the older blog articles reuse these). "Name via Source — Licence" for openly
+  // licensed photos, "Publisher — where" for photos credited to the institution that published them.
+  ...UNIVERSITY_GUIDES.map((guide) => {
+    const [who, licence] = guide.imageCredit.split(' — ')
+    const [creator, source] = who.includes(' via ') ? who.split(' via ') : [who, licence ?? 'official website']
+    const open = who.includes(' via ') && licence
+    return [
+      `university-${guide.slug}`,
+      {
+        subject: `${guide.name} (university guide)`,
+        caption: guide.imageAlt,
+        credit: {
+          creator,
+          creatorUrl: undefined as string | undefined,
+          source,
+          sourceUrl: guide.imageSourceUrl ?? guide.officialUrl,
+          license: open ? licence : 'rights remain with the publisher',
+          licenseUrl: (licence === 'CC BY 2.0' ? 'https://creativecommons.org/licenses/by/2.0/' : undefined) as string | undefined,
+        },
+      },
+    ] as const
+  }),
 ]
 
 const COVER_ROW = ['english-language', 'mathematics', 'biology', 'chemistry', 'government', 'economics']
@@ -173,7 +197,7 @@ function About() {
 
       {PHOTO_CREDITS.length > 0 && (
         <section id="photo-credits" className="about-credits scroll-mt-20">
-          <div><p className="about-eyebrow">IMAGE SOURCES</p><h2>Photo credits</h2><p>Subject photos are used under open licences that allow commercial use. They have been cropped and compressed for the web.</p></div>
+          <div><p className="about-eyebrow">IMAGE SOURCES</p><h2>Photo credits</h2><p>Every photo on the site is credited here. Photos are used under open licences that allow commercial use, or with credit to the institution that published them. They have been cropped and compressed for the web.</p></div>
           <details className="about-credits-details">
             <summary>View image credits <span aria-hidden>＋</span></summary>
             <ul>
@@ -182,7 +206,7 @@ function About() {
                   <span className="font-semibold text-foreground">{p.subject}:</span> {p.caption}, by{' '}
                   {p.credit.creatorUrl ? <a href={p.credit.creatorUrl} rel="noopener">{p.credit.creator}</a> : p.credit.creator}
                   {' '}via <a href={p.credit.sourceUrl} rel="noopener">{p.credit.source}</a>,{' '}
-                  <a href={p.credit.licenseUrl} rel="noopener license">{p.credit.license}</a>
+                  {p.credit.licenseUrl ? <a href={p.credit.licenseUrl} rel="noopener license">{p.credit.license}</a> : p.credit.license}
                 </li>
               ))}
             </ul>
