@@ -34,7 +34,7 @@ function BlogIndexPage() {
           <p className="text-xs font-bold uppercase tracking-[.2em] text-violet-200">WASSCE Tutor · Editorial</p>
           <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight sm:text-5xl">Clear guidance for the next step.</h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">Research-backed WASSCE advice, university admission guides and practical study resources for students and families across Sierra Leone.</p>
-          <div className="mt-7 flex flex-wrap gap-2 text-xs font-semibold text-white/80"><span className="rounded-full border border-white/20 px-3 py-2">University admissions</span><span className="rounded-full border border-white/20 px-3 py-2">WASSCE results</span><span className="rounded-full border border-white/20 px-3 py-2">Subject planning</span></div>
+          <div className="mt-7 flex flex-wrap gap-2 text-xs font-semibold text-white/80"><span className="rounded-full border border-white/20 px-3 py-2">University admissions</span><span className="rounded-full border border-white/20 px-3 py-2">WASSCE results</span><span className="rounded-full border border-white/20 px-3 py-2">Subject planning</span><span className="rounded-full border border-white/20 px-3 py-2">Study guides</span></div>
         </div>
       </header>
       <section className="grid gap-6 lg:grid-cols-[1.45fr_.85fr]">
