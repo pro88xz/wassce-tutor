@@ -562,6 +562,49 @@ def greenhouse_effect():
     return s
 
 
+@fig
+def mangrove_adaptations():
+    s = Svg(780, 470, "Adaptations of mangrove trees to salty, waterlogged mud",
+            "Two mangrove trees on soft mud with salty tidal water. The red mangrove on the left stands on arching stilt "
+            "roots that prop it up in the soft mud. The white mangrove on the right sends up pencil-like breathing roots "
+            "(pneumatophores) from the mud to take in air at low tide. A seedling grows while still on the parent tree "
+            "(vivipary) and drops into the mud. Leaves have thick waxy cuticles and some excrete salt.")
+    heading(s, "Mangroves: living in salty, airless mud")
+    s.rect(20, 330, 740, 110, fill=F_BROWN, stroke="none", width=0, opacity=0.8)
+    s.text(740, 420, "soft, airless mud", size=13, color=BROWN, anchor="end", weight="bold")
+    s.rect(20, 270, 740, 60, fill="#bfdbfe", stroke="none", width=0, opacity=0.8)
+    s.line(20, 270, 760, 270, color=BLUE, width=2, dash="8 6")
+    s.text(740, 262, "high tide: salty water", size=13, color=BLUE, anchor="end", weight="bold")
+    # red mangrove with stilt roots
+    tx = 200
+    s.rect(tx - 10, 150, 20, 140, fill="#a16207", stroke=BROWN, width=2)
+    s.ellipse(tx, 140, 120, 58, fill=F_GREEN, stroke=GREEN, width=2.6)
+    for dx in (-110, -70, -30, 30, 70, 110):
+        s.path(f"M {tx + (dx * 0.15):.0f} 240 Q {tx + dx * 0.7:.0f} 230 {tx + dx:.0f} 345", color=BROWN, width=5)
+    s.line(tx + 60, 180, tx + 63, 236, color=GREEN, width=5)
+    s.text(tx - 150, 205, "stilt (prop) roots", size=14, weight="bold", anchor="start")
+    s.line(tx - 92, 214, tx - 80, 268, color=INK, width=1.3)
+    s.text(tx + 76, 212, "seedling grows", size=13, weight="bold", anchor="start")
+    s.text(tx + 76, 229, "on the parent", size=13, weight="bold", anchor="start")
+    s.text(tx, 66, "red mangrove", size=15, weight="bold", color=GREEN)
+    # white mangrove with pneumatophores
+    ux = 560
+    s.rect(ux - 11, 150, 22, 190, fill="#a16207", stroke=BROWN, width=2)
+    s.ellipse(ux, 140, 120, 58, fill=F_GREEN, stroke=GREEN, width=2.6)
+    s.line(ux - 160, 375, ux + 160, 375, color=BROWN, width=4)
+    for k in range(-7, 8):
+        if k == 0:
+            continue
+        x = ux + k * 21
+        s.line(x, 375, x, 300 + (abs(k) % 3) * 8, color=BROWN, width=4)
+    s.text(ux, 66, "white mangrove", size=15, weight="bold", color=GREEN)
+    s.text(ux + 100, 190, "pneumatophores", size=14, weight="bold", anchor="start")
+    s.text(ux + 100, 208, "(breathing roots)", size=13, anchor="start")
+    s.line(ux + 112, 216, ux + 126, 298, color=INK, width=1.3)
+    s.text(390, 452, "thick waxy leaves; some species excrete salt from their leaves", size=13, color=INK)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:

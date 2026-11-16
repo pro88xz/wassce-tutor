@@ -6792,6 +6792,97 @@
       "title": "Practical biology: microscope, drawing, food tests and experiments",
       "est_minutes": 16,
       "sort_order": 1
+    },
+    {
+      "file": "biology-ecology-introduction.md",
+      "subject": "Biology",
+      "topic": "introduction-to-ecology",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Introduction to ecology: habitats, abiotic and biotic factors",
+      "est_minutes": 13,
+      "sort_order": 1
+    },
+    {
+      "file": "biology-ecosystems.md",
+      "subject": "Biology",
+      "topic": "ecosystems",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Ecosystems: components, nutrient cycles, associations and succession",
+      "est_minutes": 13,
+      "sort_order": 1
+    },
+    {
+      "file": "biology-food-chains-webs.md",
+      "subject": "Biology",
+      "topic": "food-chains-and-food-webs",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Food chains, food webs, pyramids and energy flow",
+      "est_minutes": 14,
+      "sort_order": 1
+    },
+    {
+      "file": "biology-population-ecology.md",
+      "subject": "Biology",
+      "topic": "population-ecology",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Population ecology: size, growth and regulation",
+      "est_minutes": 13,
+      "sort_order": 1
+    },
+    {
+      "file": "biology-conservation.md",
+      "subject": "Biology",
+      "topic": "conservation-of-natural-resources",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Conservation of natural resources",
+      "est_minutes": 13,
+      "sort_order": 1
+    },
+    {
+      "file": "biology-pollution.md",
+      "subject": "Biology",
+      "topic": "pollution-and-environmental-issues",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Pollution and environmental issues",
+      "est_minutes": 15,
+      "sort_order": 1
+    },
+    {
+      "file": "biology-adaptation.md",
+      "subject": "Biology",
+      "topic": "adaptation-in-plants-and-animals",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Adaptation in plants and animals",
+      "est_minutes": 14,
+      "sort_order": 1
     }
   ]
 }
