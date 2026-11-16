@@ -311,6 +311,257 @@ def microscope_parts():
     return s
 
 
+# ═══ B2: ecology ════════════════════════════════════════════════════════════
+
+def bx(s, cx, cy, w, h, lines, col, fill, size=15):
+    """A box; returns its edges for arrow placement."""
+    box(s, cx, cy, w, h, lines, col=col, fill=fill, size=size)
+    return {"l": cx - w / 2, "r": cx + w / 2, "t": cy - h / 2, "b": cy + h / 2, "x": cx, "y": cy}
+
+
+def tag(s, x, y, t, color=MUTED, size=13, anchor="middle"):
+    s.label(x, y, t, size=size, color=color, weight="bold", anchor=anchor)
+
+
+@fig
+def ecology_levels():
+    s = Svg(800, 300, "Levels of organisation in ecology",
+            "Five levels from small to large: an organism (one living thing); a population (all the members of one species "
+            "in an area); a community (all the populations in an area); an ecosystem (the community and its non-living "
+            "environment); and the biosphere (all the ecosystems on Earth).")
+    heading(s, "From one organism to the whole biosphere")
+    items = [("Organism", "one individual", F_BLUE, BLUE), ("Population", "one species,", F_GREEN, GREEN),
+             ("Community", "all populations", F_AMBER, ORANGE), ("Ecosystem", "community +", F_PURPLE, PURPLE),
+             ("Biosphere", "all ecosystems", F_TEAL, TEAL)]
+    sub2 = ["e.g. one weaver bird", "one area", "in one area", "non-living factors", "on Earth"]
+    prev = None
+    for k, ((t, sub, fill, col), s2) in enumerate(zip(items, sub2)):
+        x = 85 + k * 157
+        b = box(s, x, 150, 138, 96, [t, sub, s2], col=col, fill=fill, size=15)
+        if prev:
+            link(s, prev, b, color=MUTED, width=2.4)
+        prev = b
+    note(s, "Each level includes all the levels before it.", 250, size=15, color=INK)
+    return s
+
+
+@fig
+def food_web():
+    s = Svg(800, 560, "A food web on farmland in Sierra Leone",
+            "Producers: grass and maize. Primary consumers: grasshopper, caterpillar, rat and weaver bird. Secondary "
+            "consumers: lizard. Tertiary consumers: snake. The hawk is the top consumer, eating snakes, lizards, rats and "
+            "weaver birds. Arrows point from the food to the feeder, the direction energy flows.")
+    heading(s, "A farmland food web: arrows show the flow of energy")
+    N = {
+        "hawk": (420, 90, "hawk", F_RED, RED),
+        "snake": (300, 200, "snake", F_PURPLE, PURPLE),
+        "lizard": (150, 300, "lizard", F_PURPLE, PURPLE),
+        "grasshopper": (90, 410, "grasshopper", F_AMBER, ORANGE),
+        "caterpillar": (255, 410, "caterpillar", F_AMBER, ORANGE),
+        "rat": (420, 410, "rat", F_AMBER, ORANGE),
+        "bird": (590, 410, "weaver bird", F_AMBER, ORANGE),
+        "grass": (200, 510, "grass", F_GREEN, GREEN),
+        "maize": (560, 510, "maize", F_GREEN, GREEN),
+    }
+    W, H = 128, 40
+    edges = [("grass", "grasshopper"), ("grass", "rat"), ("maize", "caterpillar"), ("maize", "rat"), ("maize", "bird"),
+             ("grasshopper", "lizard"), ("caterpillar", "lizard"), ("lizard", "snake"), ("rat", "snake"),
+             ("bird", "snake"), ("rat", "hawk"), ("lizard", "hawk"), ("snake", "hawk"), ("bird", "hawk")]
+
+    def edge_pt(a, b):
+        ax, ay = N[a][:2]
+        bx_, by = N[b][:2]
+        dx, dy = bx_ - ax, by - ay
+        t = min((W / 2 + 4) / abs(dx) if dx else 1e9, (H / 2 + 4) / abs(dy) if dy else 1e9)
+        return ax + dx * t, ay + dy * t
+    for a, b in edges:
+        p, q = edge_pt(a, b), edge_pt(b, a)
+        s.arrow(*p, *q, color=MUTED, width=2.2)
+    for x, y, t, fill, col in N.values():
+        s.rect(x - W / 2, y - H / 2, W, H, fill=fill, stroke=col, width=2.4, rx=10)
+        s.text(x, y + 1, t, size=16, weight="bold", color=col)
+    for y, t, col in ((90, "top consumer", RED), (200, "tertiary", PURPLE), (300, "secondary", PURPLE),
+                      (410, "primary", ORANGE), (510, "producers", GREEN)):
+        s.text(790, y, t, size=13, color=col, anchor="end", weight="bold")
+    return s
+
+
+@fig
+def ecological_pyramids():
+    s = Svg(800, 400, "Pyramids of numbers and energy",
+            "Left: a pyramid of numbers for grass, grasshoppers, frogs and a snake, wide at the base and narrow at the "
+            "top. Middle: a pyramid of numbers for one mango tree, many caterpillars and fewer birds, narrow at the "
+            "base because one tree feeds many caterpillars. Right: a pyramid of energy, always upright, with about 10% "
+            "of the energy passed on at each level.")
+    heading(s, "Ecological pyramids")
+
+    def pyr(cx, title, rows, col, fill):
+        s.text(cx, 72, title, size=15, weight="bold", color=col)
+        y = 320
+        for w, t in rows:
+            s.rect(cx - w / 2, y - 44, w, 44, fill=fill, stroke=col, width=2)
+            s.text(cx, y - 21, t, size=13, weight="bold")
+            y -= 44
+    pyr(140, "Numbers", [(240, "grass 5000"), (170, "grasshoppers 300"), (110, "frogs 20"), (70, "snake 1")], GREEN, F_GREEN)
+    pyr(400, "Numbers: one tree", [(46, "tree 1"), (230, "caterpillars 200"), (120, "birds 10")], ORANGE, F_AMBER)
+    pyr(660, "Energy (kJ)", [(230, "producers 10 000"), (150, "herbivores 1000"), (90, "carnivores 100"),
+                             (44, "10")], BLUE, F_BLUE)
+    s.text(140, 344, "upright", size=13, color=MUTED)
+    s.text(400, 344, "not a true pyramid", size=13, color=MUTED)
+    s.text(660, 344, "always upright", size=13, color=MUTED)
+    note(s, "Only about 10% of the energy at one level reaches the next.", 380, size=15, color=INK)
+    return s
+
+
+@fig
+def energy_flow():
+    s = Svg(800, 400, "Energy flow along a food chain",
+            "Sunlight energy is trapped by producers. At each step along the chain to primary, secondary and tertiary "
+            "consumers, only about 10% of the energy is passed on. The rest is lost as heat from respiration, in "
+            "movement, and in uneaten parts, faeces and urine that go to decomposers.")
+    heading(s, "Energy flows one way, and most is lost at each step")
+    items = [("Sun", "", F_AMBER, ORANGE, 120), ("Producers", "10 000 kJ", F_GREEN, GREEN, 120),
+             ("Primary", "1000 kJ", F_AMBER, ORANGE, 104), ("Secondary", "100 kJ", F_PURPLE, PURPLE, 90),
+             ("Tertiary", "10 kJ", F_RED, RED, 80)]
+    prev = None
+    for k, (t, e, fill, col, w) in enumerate(items):
+        x = 80 + k * 160
+        lines = [t, e] if e else [t]
+        b = box(s, x, 150, w + 10, 70, lines, col=col, fill=fill, size=15)
+        if prev:
+            link(s, prev, b, color=INK, width=3)
+        if k >= 1:
+            s.arrow(x, 188, x, 270, color=RED, width=2.4)
+            s.text(x, 290, "lost as heat,", size=12, color=RED)
+            s.text(x, 306, "waste, uneaten", size=12, color=RED)
+        prev = b
+    s.text(80, 214, "light energy", size=12, color=MUTED)
+    note(s, "about 10% passed on at each step", 350, size=16, color=INK)
+    return s
+
+
+@fig
+def carbon_cycle():
+    s = Svg(800, 540, "The carbon cycle",
+            "Carbon dioxide in the air is taken in by green plants in photosynthesis. Carbon passes to animals by "
+            "feeding. Plants, animals and decomposers return carbon dioxide to the air by respiration. Dead remains and "
+            "wastes are broken down by decomposers. Over millions of years some remains become fossil fuels, and burning "
+            "fossil fuels and wood (combustion) releases carbon dioxide.")
+    heading(s, "The carbon cycle")
+    air = bx(s, 400, 96, 230, 56, ["Carbon dioxide", "in the air"], BLUE, F_BLUE)
+    pl = bx(s, 170, 262, 180, 56, ["Green plants"], GREEN, F_GREEN)
+    an = bx(s, 170, 452, 180, 56, ["Animals"], ORANGE, F_AMBER)
+    de = bx(s, 430, 452, 180, 64, ["Decomposers", "in dead remains"], PURPLE, F_PURPLE)
+    fo = bx(s, 680, 452, 170, 64, ["Fossil fuels", "coal, oil, gas"], INK, F_GREY)
+    s.arrow(330, air["b"], 210, pl["t"], color=GREEN, width=2.6)
+    tag(s, 300, 186, "photosynthesis", GREEN)
+    s.arrow(140, pl["t"], air["l"], 112, color=RED, width=2.4)
+    tag(s, 150, 160, "respiration", RED)
+    s.arrow(170, pl["b"], 170, an["t"], color=ORANGE, width=2.4)
+    tag(s, 170, 356, "feeding", ORANGE)
+    s.polyline([(an["l"], 452), (40, 452), (40, 82), (air["l"], 82)], color=RED, width=2.4, arrow="end")
+    tag(s, 40, 330, "respiration", RED)
+    s.arrow(pl["r"], 280, 380, de["t"], color=PURPLE, width=2.2)
+    tag(s, 330, 330, "death", PURPLE)
+    s.arrow(an["r"], 452, de["l"], 452, color=PURPLE, width=2.2)
+    tag(s, 288, 474, "death, waste", PURPLE, size=12)
+    s.arrow(470, de["t"], 470, air["b"], color=RED, width=2.4)
+    tag(s, 470, 300, "respiration (decay)", RED)
+    s.arrow(de["r"], 452, fo["l"], 452, color=INK, width=2.2)
+    tag(s, 557, 408, "millions of years", MUTED, size=12)
+    s.arrow(fo["x"], fo["t"], air["r"], 100, color=ORANGE, width=2.6)
+    tag(s, 640, 260, "combustion (burning)", ORANGE)
+    return s
+
+
+@fig
+def nitrogen_cycle():
+    s = Svg(800, 560, "The nitrogen cycle",
+            "Nitrogen gas in the air is fixed by nitrogen-fixing bacteria, many in the root nodules of legumes, and by "
+            "lightning. Plants absorb nitrates through their roots and make proteins; animals get proteins by feeding. "
+            "Decomposers turn dead remains and wastes into ammonium compounds. Nitrifying bacteria turn ammonium into "
+            "nitrites and then nitrates. Denitrifying bacteria turn nitrates back into nitrogen gas.")
+    heading(s, "The nitrogen cycle")
+    air = bx(s, 400, 96, 250, 56, ["Nitrogen gas (N₂)", "in the air (78%)"], BLUE, F_BLUE)
+    pl = bx(s, 150, 262, 180, 56, ["Plant proteins"], GREEN, F_GREEN)
+    an = bx(s, 150, 470, 180, 56, ["Animal proteins"], ORANGE, F_AMBER)
+    am = bx(s, 400, 470, 170, 56, ["Ammonium", "compounds"], PURPLE, F_PURPLE)
+    ni = bx(s, 650, 470, 150, 56, ["Nitrites"], TEAL, F_TEAL)
+    na = bx(s, 650, 262, 170, 56, ["Nitrates", "in the soil"], TEAL, F_TEAL)
+    s.arrow(air["l"], 104, 170, pl["t"], color=GREEN, width=2.4)
+    tag(s, 175, 150, "nitrogen-fixing bacteria", GREEN, size=12)
+    tag(s, 175, 168, "(root nodules of legumes)", GREEN, size=12)
+    s.arrow(500, air["b"], 610, na["t"], color=ORANGE, width=2.2)
+    tag(s, 520, 180, "lightning", ORANGE)
+    s.polyline([(na["r"], 262), (765, 262), (765, 86), (air["r"], 86)], color=RED, width=2.2, arrow="end")
+    tag(s, 655, 86, "denitrifying bacteria", RED, size=12)
+    s.arrow(na["l"], 262, pl["r"], 262, color=GREEN, width=2.4)
+    tag(s, 400, 244, "absorbed by roots", GREEN)
+    s.arrow(150, pl["b"], 150, an["t"], color=ORANGE, width=2.4)
+    tag(s, 150, 366, "feeding", ORANGE)
+    s.arrow(pl["r"], 282, 360, am["t"], color=PURPLE, width=2.2)
+    tag(s, 330, 350, "death (decomposers)", PURPLE, size=12)
+    s.arrow(an["r"], 470, am["l"], 470, color=PURPLE, width=2.2)
+    tag(s, 268, 492, "waste, death", PURPLE, size=12)
+    s.arrow(am["r"], 470, ni["l"], 470, color=TEAL, width=2.4)
+    s.text(530, 504, "nitrifying", size=12, color=TEAL, weight="bold")
+    s.text(530, 520, "bacteria", size=12, color=TEAL, weight="bold")
+    s.arrow(650, ni["t"], 650, na["b"], color=TEAL, width=2.4)
+    tag(s, 650, 366, "nitrifying bacteria", TEAL, size=12)
+    return s
+
+
+@fig
+def population_growth():
+    s = Svg(780, 420, "The S-shaped growth curve of a population",
+            "A population introduced to a new habitat grows slowly at first (lag phase), then rapidly (exponential "
+            "phase), then levels off at the carrying capacity of the environment (stationary phase) as food, space and "
+            "other resources run short.")
+    heading(s, "Population growth: an S-shaped (sigmoid) curve")
+    ox, oy, W, Hh = 90, 350, 600, 250
+    K = 1.0
+    f = lambda t: K / (1 + math.exp(-(t - 5) * 1.1))
+    X = lambda t: ox + t / 10 * W
+    Y = lambda v: oy - v * Hh
+    s.line(ox, oy, ox + W + 20, oy, color=INK, width=2.2)
+    s.line(ox, oy, ox, oy - Hh - 30, color=INK, width=2.2)
+    s.line(ox, Y(K), ox + W, Y(K), color=RED, width=2, dash="8 6")
+    s.text(ox + W + 6, Y(K) - 18, "carrying capacity", size=13, color=RED, weight="bold", anchor="end")
+    pts = [(X(t / 20), Y(f(t / 20))) for t in range(0, 201)]
+    s.polyline(pts, color=BLUE, width=3.4)
+    for t0, t1, name in ((0, 2.9, "lag"), (2.9, 7.1, "exponential (log)"), (7.1, 10, "stationary")):
+        s.line(X(t1), oy, X(t1), Y(0) - Hh - 10, color="#cbd5e1", width=1.4, dash="4 4")
+        s.text((X(t0) + X(t1)) / 2, oy + 22, name, size=14, weight="bold", color=PURPLE)
+    s.text(ox + W / 2, oy + 50, "time", size=14, color=MUTED)
+    s.text(ox - 12, oy - Hh - 40, "number in population", size=13, color=MUTED, anchor="start")
+    return s
+
+
+@fig
+def greenhouse_effect():
+    s = Svg(780, 420, "The greenhouse effect",
+            "Sunlight passes through the atmosphere and warms the Earth's surface. The warm surface gives off infrared "
+            "heat. Greenhouse gases such as carbon dioxide and methane absorb some of this heat and send it back towards "
+            "the surface, keeping the Earth warm. More greenhouse gases trap more heat: global warming.")
+    heading(s, "The greenhouse effect")
+    s.circle(90, 100, 40, fill="#fde68a", stroke=ORANGE, width=3)
+    s.text(90, 101, "Sun", size=15, weight="bold", color=ORANGE)
+    s.rect(20, 170, 740, 70, fill="#e0f2fe", stroke="none", width=0, opacity=0.9)
+    s.text(740, 186, "atmosphere with CO₂, CH₄, water vapour", size=13, color=BLUE, anchor="end", weight="bold")
+    for x in (260, 380, 500, 620):
+        s.circle(x, 212, 9, fill="#ffffff", stroke=BLUE, width=2)
+    s.rect(20, 340, 740, 60, fill=F_GREEN, stroke=GREEN, width=2.4)
+    s.text(390, 372, "Earth's surface", size=15, weight="bold", color=GREEN)
+    s.arrow(130, 130, 300, 336, color=ORANGE, width=3.2)
+    s.text(150, 260, "sunlight in", size=14, weight="bold", color=ORANGE, anchor="start")
+    s.arrow(400, 336, 470, 120, color=RED, width=2.6)
+    s.text(478, 112, "some heat escapes", size=13, color=RED, anchor="start")
+    s.polyline([(560, 336), (600, 222), (640, 336)], color=RED, width=2.6, arrow="end")
+    s.text(650, 300, "heat trapped and", size=13, color=RED, anchor="start", weight="bold")
+    s.text(650, 318, "sent back down", size=13, color=RED, anchor="start", weight="bold")
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Levels of organisation in ecology</title>
+<desc id="d">Five levels from small to large: an organism (one living thing); a population (all the members of one species in an area); a community (all the populations in an area); an ecosystem (the community and its non-living environment); and the biosphere (all the ecosystems on Earth).</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="300" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">From one organism to the whole biosphere</text>
+<rect x="16.0" y="102.0" width="138.0" height="96.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="85.0" y="129.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Organism</text>
+<text x="85.0" y="150.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">one individual</text>
+<text x="85.0" y="171.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. one weaver bird</text>
+<rect x="173.0" y="102.0" width="138.0" height="96.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="242.0" y="129.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Population</text>
+<text x="242.0" y="150.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">one species,</text>
+<text x="242.0" y="171.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">one area</text>
+<line x1="160.0" y1="150.0" x2="167.0" y2="150.0" stroke="#475569" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="330.0" y="102.0" width="138.0" height="96.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="399.0" y="129.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Community</text>
+<text x="399.0" y="150.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">all populations</text>
+<text x="399.0" y="171.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">in one area</text>
+<line x1="317.0" y1="150.0" x2="324.0" y2="150.0" stroke="#475569" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="487.0" y="102.0" width="138.0" height="96.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="556.0" y="129.0" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ecosystem</text>
+<text x="556.0" y="150.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">community +</text>
+<text x="556.0" y="171.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">non-living factors</text>
+<line x1="474.0" y1="150.0" x2="481.0" y2="150.0" stroke="#475569" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="644.0" y="102.0" width="138.0" height="96.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="713.0" y="129.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Biosphere</text>
+<text x="713.0" y="150.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">all ecosystems</text>
+<text x="713.0" y="171.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">on Earth</text>
+<line x1="631.0" y1="150.0" x2="638.0" y2="150.0" stroke="#475569" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="400.0" y="250.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Each level includes all the levels before it.</text>
+</svg>
