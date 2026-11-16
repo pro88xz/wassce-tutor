@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Arc length and area of a sector</title>
+<desc id="d">A sector of a circle with radius r and angle theta at the centre. Its arc length is theta over 360 times 2 pi r, and its area is theta over 360 times pi r squared.</desc>
+<defs></defs>
+<rect width="720" height="380" rx="20" fill="#f8fafc"/>
+<text x="360.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A sector is a fraction θ/360 of the whole circle</text>
+<circle cx="220.0" cy="230.0" r="150.0" fill="none" stroke="#475569" stroke-width="2" stroke-dasharray="6 6"/>
+<path d="M 220 230 L 370.0 230.0 A 150 150 0 0 0 271.3 89.0 Z" stroke="#2563eb" stroke-width="3" fill="#dbeafe" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 370.0 230.0 A 150 150 0 0 0 271.3 89.0" stroke="#dc2626" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 250.0 230.0 A 30 30 0 0 0 230.3 201.8" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="261.0" y="201.3" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">θ</text>
+<rect x="285.0" y="234.0" width="20.1" height="28.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="295.0" y="248.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">r</text>
+<rect x="345.7" y="116.1" width="36.9" height="26.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="364.2" y="129.1" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">arc</text>
+<text x="560.0" y="170.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">arc length = (θ/360) × 2πr</text>
+<text x="560.0" y="230.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">sector area = (θ/360) × πr²</text>
+<text x="560.0" y="290.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">perimeter = arc + 2r</text>
+</svg>

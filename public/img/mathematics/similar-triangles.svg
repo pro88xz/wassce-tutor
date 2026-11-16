@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Two similar triangles with scale factor 2</title>
+<desc id="d">Triangle ABC has sides 3, 4 and 5. Triangle PQR has sides 6, 8 and 10, each twice as long. Corresponding angles are equal, so the triangles are similar with a scale factor of 2.</desc>
+<defs></defs>
+<rect width="720" height="380" rx="20" fill="#f8fafc"/>
+<text x="360.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Similar triangles: same angles, sides in the same ratio</text>
+<polygon points="90.0,320.0 210.0,320.0 90.0,230.0" fill="#dbeafe" stroke="#2563eb" stroke-width="3" stroke-linejoin="round"/>
+<path d="M 102.0 320.0 L 102.0 308.0 L 90.0 308.0" stroke="#2563eb" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="140.5" y="327.0" width="19.0" height="26.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="150.0" y="340.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4</text>
+<rect x="60.5" y="262.0" width="19.0" height="26.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="70.0" y="275.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3</text>
+<rect x="158.5" y="250.0" width="19.0" height="26.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="168.0" y="263.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5</text>
+<path d="M 189.2 304.4 A 26 26 0 0 0 184.0 320.0" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="76.0" y="336.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<text x="224.0" y="334.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B</text>
+<text x="76.0" y="220.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C</text>
+<polygon points="330.0,330.0 570.0,330.0 330.0,150.0" fill="#dcfce7" stroke="#15803d" stroke-width="3" stroke-linejoin="round"/>
+<path d="M 342.0 330.0 L 342.0 318.0 L 330.0 318.0" stroke="#15803d" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="440.5" y="337.0" width="19.0" height="26.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="450.0" y="350.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">8</text>
+<rect x="300.5" y="227.0" width="19.0" height="26.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="310.0" y="240.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6</text>
+<rect x="454.0" y="215.0" width="27.9" height="26.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="468.0" y="228.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">10</text>
+<path d="M 549.2 314.4 A 26 26 0 0 0 544.0 330.0" stroke="#15803d" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="316.0" y="346.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">P</text>
+<text x="584.0" y="344.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Q</text>
+<text x="316.0" y="140.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">R</text>
+<text x="600.0" y="120.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">scale factor</text>
+<text x="600.0" y="150.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6/3 = 8/4 = 10/5 = 2</text>
+<text x="600.0" y="200.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">areas scale by</text>
+<text x="600.0" y="228.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2² = 4</text>
+</svg>

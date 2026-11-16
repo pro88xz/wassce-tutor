@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Angles formed when a transversal cuts two parallel lines</title>
+<desc id="d">Three panels. Corresponding angles, in an F shape, are equal. Alternate angles, in a Z shape, are equal. Co-interior angles, in a C shape, add up to 180 degrees.</desc>
+<defs></defs>
+<rect width="780" height="420" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A line crossing two parallel lines</text>
+<line x1="26.0" y1="150.0" x2="254.0" y2="150.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="26.0" y1="290.0" x2="254.0" y2="290.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<path d="M 52.0 143.0 L 61.0 150.0 L 52.0 157.0" stroke="#0f172a" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 52.0 283.0 L 61.0 290.0 L 52.0 297.0" stroke="#0f172a" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="88.0" y1="360.0" x2="208.0" y2="80.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<path d="M 208.0 150.0 A 30 30 0 0 0 189.8 122.4" stroke="#2563eb" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="221.4" y="121.4" font-size="19" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">a</text>
+<path d="M 148.0 290.0 A 30 30 0 0 0 129.8 262.4" stroke="#2563eb" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="161.4" y="261.4" font-size="19" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">a</text>
+<text x="140.0" y="385.0" font-size="14.5" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Corresponding: equal (F)</text>
+<line x1="280.0" y1="150.0" x2="508.0" y2="150.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="280.0" y1="290.0" x2="508.0" y2="290.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<path d="M 306.0 143.0 L 315.0 150.0 L 306.0 157.0" stroke="#0f172a" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 306.0 283.0 L 315.0 290.0 L 306.0 297.0" stroke="#0f172a" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="342.0" y1="360.0" x2="462.0" y2="80.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<path d="M 402.0 150.0 A 30 30 0 0 0 420.2 177.6" stroke="#15803d" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="388.6" y="178.6" font-size="19" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">a</text>
+<path d="M 402.0 290.0 A 30 30 0 0 0 383.8 262.4" stroke="#15803d" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="415.4" y="261.4" font-size="19" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">a</text>
+<text x="394.0" y="385.0" font-size="14.5" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Alternate: equal (Z)</text>
+<line x1="534.0" y1="150.0" x2="762.0" y2="150.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="534.0" y1="290.0" x2="762.0" y2="290.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<path d="M 560.0 143.0 L 569.0 150.0 L 560.0 157.0" stroke="#0f172a" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 560.0 283.0 L 569.0 290.0 L 560.0 297.0" stroke="#0f172a" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="596.0" y1="360.0" x2="716.0" y2="80.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<path d="M 674.2 177.6 A 30 30 0 0 0 716.0 150.0" stroke="#ea580c" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="714.6" y="193.4" font-size="19" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">b</text>
+<path d="M 656.0 290.0 A 30 30 0 0 0 637.8 262.4" stroke="#ea580c" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="669.4" y="261.4" font-size="19" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">a</text>
+<text x="648.0" y="385.0" font-size="14.5" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Co-interior: a + b = 180° (C)</text>
+</svg>
