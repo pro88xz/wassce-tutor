@@ -1,0 +1,1608 @@
+{
+ "name": "biology_set1_p1",
+ "label": "Biology: set 1 (cells, nutrition, respiration, transport, ecology and genetics)",
+ "subject_slug": "biology",
+ "papers": [
+  {
+   "id": "1d59867f-eb88-59a5-aedc-346263f6ffa0",
+   "topic": "Characteristics of Living Things",
+   "title": "Characteristics of Living Things: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on characteristics of living things, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 100,
+   "questions": [
+    {
+     "id": "70cfe6a3-5db1-570b-9093-fe17214e71c5",
+     "key": "bio-cl-01",
+     "stem": "A seedling on a windowsill bends towards the light. Which characteristic of living things does this show?",
+     "image_url": null,
+     "explanation": "Bending towards light is a response to a stimulus (light), so it shows irritability, also called sensitivity.\n\n**Why the other options are wrong**\n\n- Growth: Growth is a permanent increase in size; bending towards light is a response to a stimulus.\n- Reproduction: Reproduction is producing new individuals, which is not happening here.\n- Excretion: Excretion is removing the waste products of metabolism.",
+     "position": 1,
+     "options": [
+      {
+       "id": "80f2c8b9-0c38-522c-97e2-2c16b9e7fe15",
+       "label": "A",
+       "content": "Irritability (sensitivity)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c5ecbd1f-e39e-5053-8275-bfb2b32837ee",
+       "label": "B",
+       "content": "Growth",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "52e8d7b3-ca51-5588-81a9-e28a925a5e00",
+       "label": "C",
+       "content": "Reproduction",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5c7e0f9b-4852-529e-a734-72b8d1eea901",
+       "label": "D",
+       "content": "Excretion",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5cf75591-3702-5323-870c-20a77902955f",
+     "key": "bio-cl-02",
+     "stem": "The removal of the waste products of metabolism from the body of an organism is called",
+     "image_url": null,
+     "explanation": "Excretion removes waste made by the body's own chemical reactions, such as carbon dioxide and urea.\n\n**Why the other options are wrong**\n\n- egestion: Egestion removes undigested food, which was never part of the body's metabolism.\n- secretion: Secretion releases useful substances such as enzymes and hormones, not wastes.\n- respiration: Respiration releases energy from food; its waste, carbon dioxide, is then excreted.",
+     "position": 2,
+     "options": [
+      {
+       "id": "1b494f31-514c-514d-8f1f-c161165a7937",
+       "label": "A",
+       "content": "egestion",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d525636a-f344-519c-9fe9-c1caf94070fa",
+       "label": "B",
+       "content": "excretion",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "82ff21f1-fdef-550c-895e-9b044ac930ed",
+       "label": "C",
+       "content": "secretion",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c7b95c02-85d6-5b93-aa31-52893fa3e79a",
+       "label": "D",
+       "content": "respiration",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a0d07508-e534-5ab1-b348-b24fb4f9e081",
+     "key": "bio-cl-03",
+     "stem": "Which of the following is a characteristic of living things but NOT of a burning candle?",
+     "image_url": null,
+     "explanation": "A flame uses oxygen and gives out energy and carbon dioxide, much like respiration, but it cannot produce offspring.\n\n**Why the other options are wrong**\n\n- Use of oxygen: A burning candle also uses oxygen.\n- Release of energy: A burning candle also releases energy, as heat and light.\n- Production of carbon dioxide: Burning wax also produces carbon dioxide.",
+     "position": 3,
+     "options": [
+      {
+       "id": "7b99872a-12a5-5643-9724-c3fef9886693",
+       "label": "A",
+       "content": "Use of oxygen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4e2f549c-6d0f-5a4a-8e52-bf7684488bd8",
+       "label": "B",
+       "content": "Release of energy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "542e12ad-36d7-5cad-802c-00eaf67d7564",
+       "label": "C",
+       "content": "Reproduction",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c086dd90-878c-5518-828b-bb16da666591",
+       "label": "D",
+       "content": "Production of carbon dioxide",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2631d203-5c97-5af6-a7c0-b0d3abc073a7",
+     "key": "bio-cl-04",
+     "stem": "In the memory aid MRS GREN for the characteristics of living things, the letter N stands for",
+     "image_url": null,
+     "explanation": "MRS GREN: Movement, Respiration, Sensitivity, Growth, Reproduction, Excretion, Nutrition.\n\n**Why the other options are wrong**\n\n- nervous system: Not every living thing has nerves; MRS GREN lists features shared by all living things.\n- nitrogen fixation: Only some bacteria fix nitrogen, so it is not a feature of all living things.\n- natural selection: Natural selection is a process of evolution, not a feature of a single organism.",
+     "position": 4,
+     "options": [
+      {
+       "id": "760e02a4-2560-569a-8cfd-4b7696a594e0",
+       "label": "A",
+       "content": "nervous system",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "028913c8-dc68-5005-854e-a44cab6f15e7",
+       "label": "B",
+       "content": "nitrogen fixation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bce7813c-86f8-5f18-9a4f-c174f7c5dedf",
+       "label": "C",
+       "content": "natural selection",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "63f9728c-d45a-5b2f-b3da-faa527410e29",
+       "label": "D",
+       "content": "nutrition",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a70c3955-80af-578e-b05c-2144f37398a0",
+     "key": "bio-cl-05",
+     "stem": "Growth in living things is best described as",
+     "image_url": null,
+     "explanation": "Growth is an irreversible increase in size and dry mass, as new materials are built into the body.\n\n**Why the other options are wrong**\n\n- a temporary swelling caused by taking in water: Swelling from water can be reversed; growth is permanent.\n- an increase in the number of offspring: Producing offspring is reproduction.\n- a change in the position of the whole organism: A change of position is locomotion.",
+     "position": 5,
+     "options": [
+      {
+       "id": "57d64587-b2c7-58d5-9f60-71b079a1c907",
+       "label": "A",
+       "content": "a permanent increase in size and dry mass",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "af464041-4b4c-5a96-b016-835efe9c46ae",
+       "label": "B",
+       "content": "a temporary swelling caused by taking in water",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "437bb686-ac1b-5c89-820d-4736524a7a6a",
+       "label": "C",
+       "content": "an increase in the number of offspring",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dd97c76f-0c54-5b9a-943c-67c3632869b2",
+       "label": "D",
+       "content": "a change in the position of the whole organism",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c61ff0e2-1a01-5501-b736-2f6caa1617e1",
+   "topic": "Cell Structure",
+   "title": "Cell Structure: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on cell structure, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 101,
+   "questions": [
+    {
+     "id": "99e59c00-a68e-543e-808c-c6c5c96fb963",
+     "key": "bio-cs-01",
+     "stem": "Which structure is found in a plant cell but NOT in an animal cell?",
+     "image_url": null,
+     "explanation": "Plant cells have a cellulose cell wall, chloroplasts and a large permanent vacuole; animal cells have none of these.\n\n**Why the other options are wrong**\n\n- Cell membrane: Both plant and animal cells have a cell membrane.\n- Nucleus: Both plant and animal cells have a nucleus.\n- Mitochondrion: Both plant and animal cells have mitochondria for respiration.",
+     "position": 1,
+     "options": [
+      {
+       "id": "0c59d188-9590-553d-9587-b96cfe66ef42",
+       "label": "A",
+       "content": "Cell membrane",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2be9a3ea-5806-5db5-a7df-2b26d0809adc",
+       "label": "B",
+       "content": "Cell wall",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "aa339243-c922-5920-a6c9-dfdf7c9fc064",
+       "label": "C",
+       "content": "Nucleus",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b10139e5-7dd3-5088-aeb7-8732113d7c32",
+       "label": "D",
+       "content": "Mitochondrion",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "108d7152-cf72-58cb-a6c1-12c86b1e5f8f",
+     "key": "bio-cs-02",
+     "stem": "The part of a cell that controls its activities and contains the chromosomes is the",
+     "image_url": null,
+     "explanation": "The nucleus holds the chromosomes, which carry the genes that control the cell's activities.\n\n**Why the other options are wrong**\n\n- cytoplasm: Cytoplasm is the jelly-like medium where most chemical reactions take place.\n- vacuole: The vacuole stores cell sap and keeps a plant cell firm.\n- chloroplast: Chloroplasts carry out photosynthesis.",
+     "position": 2,
+     "options": [
+      {
+       "id": "281cb888-a73e-551f-867b-6355d0a1a6cc",
+       "label": "A",
+       "content": "cytoplasm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2d7f8299-bf28-55dc-a472-6b59a39ff02d",
+       "label": "B",
+       "content": "vacuole",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "aecee187-fbee-5249-a12f-7693abf05e7a",
+       "label": "C",
+       "content": "nucleus",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "44ad3b60-2a0c-5370-a3fe-b278371cee6b",
+       "label": "D",
+       "content": "chloroplast",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0be11dc9-f139-5420-bde9-431fe0b4a8f0",
+     "key": "bio-cs-03",
+     "stem": "The cell wall of a plant cell is made mainly of",
+     "image_url": null,
+     "explanation": "Plant cell walls are made of cellulose, which is strong and fully permeable.\n\n**Why the other options are wrong**\n\n- chitin: Chitin is found in the cell walls of fungi and the outer skeleton of insects.\n- starch: Starch is stored food, not the material of the wall.\n- protein: Protein is part of the cell membrane, not the main material of the wall.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c86eb1b4-86d2-5de7-a7c3-c61e91c89e26",
+       "label": "A",
+       "content": "chitin",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "29a056fe-ecd6-5a39-8715-2c65f50246c6",
+       "label": "B",
+       "content": "starch",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "997d737d-5d28-5fcb-b095-f8d184aceb8c",
+       "label": "C",
+       "content": "protein",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4e69ad62-5019-5ed7-b2dd-dab29b47ba72",
+       "label": "D",
+       "content": "cellulose",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e592b178-6f4c-552e-9a33-fa6a497d6313",
+     "key": "bio-cs-04",
+     "stem": "Which organelle is the site of aerobic respiration in a cell?",
+     "image_url": null,
+     "explanation": "Mitochondria release energy from food by aerobic respiration, so active cells have many of them.\n\n**Why the other options are wrong**\n\n- Ribosome: Ribosomes make proteins.\n- Chloroplast: Chloroplasts carry out photosynthesis.\n- Golgi body: The Golgi body packages and secretes substances made in the cell.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e0150175-25c9-5f9f-8eef-0bfe4a22dcdc",
+       "label": "A",
+       "content": "Mitochondrion",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6c4ca2d1-c765-5af6-8add-5c6212b33578",
+       "label": "B",
+       "content": "Ribosome",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4c480be3-fe04-57e5-acce-331786aa2aef",
+       "label": "C",
+       "content": "Chloroplast",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "128ce657-ab52-5170-b16e-8498bf67f182",
+       "label": "D",
+       "content": "Golgi body",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c6325b1e-3f78-521c-bf73-205f3edca9d5",
+     "key": "bio-cs-05",
+     "stem": "Which of the following organisms consists of only one cell?",
+     "image_url": null,
+     "explanation": "Amoeba is unicellular: one cell carries out every life process.\n\n**Why the other options are wrong**\n\n- Spirogyra: Spirogyra is a filament made of many cells joined end to end.\n- Hydra: Hydra is a small animal made of many cells.\n- Mushroom: A mushroom is a fungus made of many threads (hyphae) of cells.",
+     "position": 5,
+     "options": [
+      {
+       "id": "7c1776c1-41b0-5a08-a2d7-4f9e3964600e",
+       "label": "A",
+       "content": "Spirogyra",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0fc990bc-5756-56b6-a739-7841afef6783",
+       "label": "B",
+       "content": "Amoeba",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5bfc1c6a-ca63-51b5-9dd2-3bf8759d9e73",
+       "label": "C",
+       "content": "Hydra",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "930dea5f-5149-54e5-a181-418e03a0e2c3",
+       "label": "D",
+       "content": "Mushroom",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2e42e1b2-5595-5a67-82dc-09aeae2926d9",
+   "topic": "Photosynthesis and Plant Nutrition",
+   "title": "Photosynthesis and Plant Nutrition: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on photosynthesis and plant nutrition, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 102,
+   "questions": [
+    {
+     "id": "271ef218-1a9b-5eba-87c8-61c51726a507",
+     "key": "bio-ps-01",
+     "stem": "Which of the following is a product of photosynthesis?",
+     "image_url": null,
+     "explanation": "Carbon dioxide + water → glucose + oxygen, using light energy trapped by chlorophyll.\n\n**Why the other options are wrong**\n\n- Carbon dioxide: Carbon dioxide is a raw material, taken in through the stomata.\n- Water: Water is a raw material, absorbed by the roots.\n- Chlorophyll: Chlorophyll traps light energy; it is needed for photosynthesis but is not a product of it.",
+     "position": 1,
+     "options": [
+      {
+       "id": "1fd48e38-b6ba-52d2-b683-86535a724410",
+       "label": "A",
+       "content": "Carbon dioxide",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8df1b75c-8e69-5644-9ce7-26bc59c3503b",
+       "label": "B",
+       "content": "Water",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f923d683-3324-54c4-9335-301349563fc6",
+       "label": "C",
+       "content": "Oxygen",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "261b8e49-ce5b-5b18-b98d-c860b0de6db9",
+       "label": "D",
+       "content": "Chlorophyll",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0a2e5796-98c9-5bd3-bf4d-39226e4c1609",
+     "key": "bio-ps-02",
+     "stem": "The green pigment that absorbs light energy for photosynthesis is",
+     "image_url": null,
+     "explanation": "Chlorophyll, in the chloroplasts, absorbs light energy and makes it available for photosynthesis.\n\n**Why the other options are wrong**\n\n- haemoglobin: Haemoglobin is the red pigment in blood that carries oxygen.\n- melanin: Melanin is the dark pigment in the skin of animals.\n- starch: Starch is the food a plant stores; it is not a pigment.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8a7a7bab-7ccd-5af6-9c64-b722cbb5406e",
+       "label": "A",
+       "content": "haemoglobin",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e7371b85-9c87-5a45-88d6-6df2ebdb535b",
+       "label": "B",
+       "content": "melanin",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ab67cd0d-f49b-5bde-8b8d-40391c9f8f50",
+       "label": "C",
+       "content": "starch",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2f51187f-ea95-5b07-9704-c2146713f6fa",
+       "label": "D",
+       "content": "chlorophyll",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "383e85a8-57fd-5857-8a41-8a2aff8d6103",
+     "key": "bio-ps-03",
+     "stem": "When a leaf is tested for starch, it is placed in boiling alcohol (ethanol) in order to",
+     "image_url": null,
+     "explanation": "Boil in water (kill the cells), boil in alcohol (remove the chlorophyll), rinse in warm water (soften), add iodine: blue-black shows starch.\n\n**Why the other options are wrong**\n\n- kill the cells and stop all chemical reactions: Boiling the leaf in water first does that.\n- soften the leaf so the iodine can soak in: Dipping the leaf in warm water afterwards softens it; alcohol makes it brittle.\n- change the starch into sugar: Alcohol does not change starch.",
+     "position": 3,
+     "options": [
+      {
+       "id": "38596478-4bca-52de-ad76-6d8f7df1a3a9",
+       "label": "A",
+       "content": "remove the chlorophyll so the colour change can be seen",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "389bb779-a082-55ef-bbbf-b9a93c7f4da4",
+       "label": "B",
+       "content": "kill the cells and stop all chemical reactions",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6190c77f-7c4d-5a79-95b7-8b7fb17b4b59",
+       "label": "C",
+       "content": "soften the leaf so the iodine can soak in",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "18eee3eb-d426-596c-b57d-a72db8d7caae",
+       "label": "D",
+       "content": "change the starch into sugar",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "adc397fd-2900-5a3a-bcc4-5d99cd405e2e",
+     "key": "bio-ps-04",
+     "stem": "A plant takes in most of the carbon dioxide it uses for photosynthesis through the",
+     "image_url": null,
+     "explanation": "Carbon dioxide diffuses from the air into the leaf through the stomata, mostly on the lower surface.\n\n**Why the other options are wrong**\n\n- root hairs: Root hairs absorb water and mineral salts from the soil.\n- xylem vessels: Xylem carries water and minerals up from the roots.\n- phloem sieve tubes: Phloem carries food made in the leaves to other parts of the plant.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e0ebb1a4-44db-56ad-9236-5e01d660d33c",
+       "label": "A",
+       "content": "root hairs",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7417ccd7-c996-5691-8306-460cce135fa5",
+       "label": "B",
+       "content": "stomata of its leaves",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "cc3ae83b-04e6-5abb-a0d9-e4135d6ee5b8",
+       "label": "C",
+       "content": "xylem vessels",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0e7b411a-8bf4-5d75-9eac-51fe9bc49384",
+       "label": "D",
+       "content": "phloem sieve tubes",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e7ad1c59-6be4-5144-8bf1-c819e15d47f6",
+     "key": "bio-ps-05",
+     "stem": "Plants need magnesium because it is part of the molecule of",
+     "image_url": null,
+     "explanation": "Magnesium sits at the centre of each chlorophyll molecule, so a plant short of magnesium turns yellow.\n\n**Why the other options are wrong**\n\n- protein: Proteins need nitrogen and sulphur, not magnesium.\n- starch: Starch is made of carbon, hydrogen and oxygen only.\n- cellulose: Cellulose is also made of carbon, hydrogen and oxygen only.",
+     "position": 5,
+     "options": [
+      {
+       "id": "1271fe35-1a33-5849-b062-258803b135cf",
+       "label": "A",
+       "content": "protein",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "86e28bef-fb41-5666-b83f-f6143ae999bd",
+       "label": "B",
+       "content": "starch",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "00529a06-c03b-5ff4-bcb7-c38b156bdf0b",
+       "label": "C",
+       "content": "chlorophyll",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ac261cab-21b7-50c7-8d51-511a1b1be8a2",
+       "label": "D",
+       "content": "cellulose",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a65891ca-4324-52b0-95ed-d6548d5d67e0",
+   "topic": "Food, Nutrition, and the Digestive System",
+   "title": "Food, Nutrition, and the Digestive System: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on food, nutrition, and the digestive system, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 103,
+   "questions": [
+    {
+     "id": "2bace535-107f-5c6d-9843-2858e4517ced",
+     "key": "bio-fn-01",
+     "stem": "Which food test gives a blue-black colour when the food is present?",
+     "image_url": null,
+     "explanation": "Iodine solution turns from brown to blue-black when starch is present.\n\n**Why the other options are wrong**\n\n- Benedict's solution with glucose: Glucose with Benedict's solution gives a brick-red precipitate on heating.\n- Biuret reagent with protein: Protein with Biuret reagent gives a purple (violet) colour.\n- Ethanol with fat: Fat shaken with ethanol and then water gives a cloudy white emulsion.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8bfe5efc-34e0-5778-913f-a193b570c107",
+       "label": "A",
+       "content": "Benedict's solution with glucose",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f0a39b07-b4c3-57ff-8d20-108178c5ee16",
+       "label": "B",
+       "content": "Biuret reagent with protein",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "991ec255-2450-5520-bf1d-2e6f4663c912",
+       "label": "C",
+       "content": "Ethanol with fat",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f2ee73de-7128-5ce7-bcbf-5842c560f2eb",
+       "label": "D",
+       "content": "Iodine solution with starch",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eb6febde-8f8e-5215-be03-66e89930959d",
+     "key": "bio-fn-02",
+     "stem": "A shortage of vitamin C in the diet causes",
+     "image_url": null,
+     "explanation": "Without vitamin C, gums bleed and wounds heal slowly: the signs of scurvy. Fresh fruit such as oranges prevents it.\n\n**Why the other options are wrong**\n\n- rickets: Rickets is caused by a lack of vitamin D (or calcium).\n- night blindness: Night blindness is caused by a lack of vitamin A.\n- beriberi: Beriberi is caused by a lack of vitamin B1 (thiamine).",
+     "position": 2,
+     "options": [
+      {
+       "id": "f8b0f6b6-3da0-55cd-a4c6-e55178077896",
+       "label": "A",
+       "content": "scurvy",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "bbed5833-01cb-51e1-844f-f30baed107dd",
+       "label": "B",
+       "content": "rickets",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3434c391-0f2f-5a2e-8298-8adcf7330b8d",
+       "label": "C",
+       "content": "night blindness",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "21ba917c-c8ee-5bbc-ad93-95f8270bcc24",
+       "label": "D",
+       "content": "beriberi",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aab83ae4-962a-52e6-b0d3-77983cc3eba9",
+     "key": "bio-fn-03",
+     "stem": "Digestion of protein begins in the",
+     "image_url": null,
+     "explanation": "Pepsin in the gastric juice of the stomach begins the digestion of proteins, in acid conditions.\n\n**Why the other options are wrong**\n\n- mouth: Starch digestion begins in the mouth, with salivary amylase; protein is not digested there.\n- small intestine: Protein digestion continues in the small intestine, but it has already begun in the stomach.\n- large intestine: The large intestine mainly absorbs water and salts.",
+     "position": 3,
+     "options": [
+      {
+       "id": "6baac1e5-b6e9-5e88-b66c-78b5661db750",
+       "label": "A",
+       "content": "mouth",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f98c7ef0-6980-5e9d-9fb5-8644b43ce477",
+       "label": "B",
+       "content": "stomach",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f5ef18de-900c-5c45-8108-d13161cc7017",
+       "label": "C",
+       "content": "small intestine",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "54df3749-7ee6-5477-a3e1-beaa841c6d66",
+       "label": "D",
+       "content": "large intestine",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "383c5b8d-8a0d-5106-98a2-3f8f8ee660d6",
+     "key": "bio-fn-04",
+     "stem": "Bile, which emulsifies fats, is made by the",
+     "image_url": null,
+     "explanation": "The liver makes bile; it is stored in the gall bladder and released into the duodenum.\n\n**Why the other options are wrong**\n\n- gall bladder: The gall bladder stores bile, but does not make it.\n- pancreas: The pancreas makes pancreatic juice containing digestive enzymes.\n- stomach: The stomach makes gastric juice.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d5d1e340-43e2-5947-afc3-54e889ad5303",
+       "label": "A",
+       "content": "gall bladder",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c0c39581-41a7-5f19-ad38-b11821ef5238",
+       "label": "B",
+       "content": "pancreas",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "024c052e-37f0-5049-9790-68cde41c4ff6",
+       "label": "C",
+       "content": "liver",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e5893aff-556e-52fd-be41-994de9e5c22b",
+       "label": "D",
+       "content": "stomach",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8e318415-4fb6-56a4-83c8-71bd132e6eab",
+     "key": "bio-fn-05",
+     "stem": "Most digested food is absorbed into the blood in the",
+     "image_url": null,
+     "explanation": "The ileum is long and lined with villi, which give a huge surface for absorbing digested food.\n\n**Why the other options are wrong**\n\n- stomach: Very little is absorbed in the stomach.\n- colon: The colon absorbs mainly water and salts.\n- oesophagus: The oesophagus only carries food to the stomach by peristalsis.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a9527db6-5bc6-5da1-be2b-8c05c704ad27",
+       "label": "A",
+       "content": "stomach",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "04ac84e8-f486-5ff3-b8db-998c7eb5e81b",
+       "label": "B",
+       "content": "colon",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "89b773ab-8a91-5964-b3ad-177f4542f507",
+       "label": "C",
+       "content": "oesophagus",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bcfa2fc0-09ee-5181-86ff-45b874109563",
+       "label": "D",
+       "content": "ileum (small intestine)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7749a9e3-ec33-59ec-822b-ec031822f319",
+   "topic": "Cellular Respiration",
+   "title": "Cellular Respiration: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on cellular respiration, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 104,
+   "questions": [
+    {
+     "id": "a8b2addc-3663-59a1-ba71-8bca603267e8",
+     "key": "bio-cr-01",
+     "stem": "Which word equation shows aerobic respiration?",
+     "image_url": null,
+     "explanation": "Aerobic respiration uses oxygen to break glucose down completely to carbon dioxide and water, releasing energy.\n\n**Why the other options are wrong**\n\n- carbon dioxide + water → glucose + oxygen: That is photosynthesis.\n- glucose → lactic acid + energy: That is anaerobic respiration in muscle.\n- glucose → ethanol + carbon dioxide + energy: That is anaerobic respiration in yeast.",
+     "position": 1,
+     "options": [
+      {
+       "id": "ec2b420c-5259-5ff2-a583-56601e9bd070",
+       "label": "A",
+       "content": "glucose + oxygen → carbon dioxide + water + energy",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "f76254c5-1a91-5534-bbb6-b58fd8b97227",
+       "label": "B",
+       "content": "carbon dioxide + water → glucose + oxygen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "631b405e-ff63-5708-bafc-fc88ee3f6b39",
+       "label": "C",
+       "content": "glucose → lactic acid + energy",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "78eba065-8b0b-51b1-a84c-f3fe667db0d6",
+       "label": "D",
+       "content": "glucose → ethanol + carbon dioxide + energy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "09d06694-450d-5d75-8139-599bc790b380",
+     "key": "bio-cr-02",
+     "stem": "During hard exercise, which substance builds up in the muscles and causes fatigue and cramp?",
+     "image_url": null,
+     "explanation": "When oxygen runs short, muscle respires anaerobically and lactic acid builds up; it is removed later, using oxygen.\n\n**Why the other options are wrong**\n\n- Ethanol: Ethanol is made by yeast and plants in anaerobic respiration, not by human muscle.\n- Carbon dioxide: Carbon dioxide is carried away in the blood and breathed out.\n- Glycogen: Glycogen is a stored carbohydrate used as fuel, not a waste.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c875c73a-5724-536a-81a0-41644ccde184",
+       "label": "A",
+       "content": "Ethanol",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c242d04c-7959-531b-8624-182b6e5c90bd",
+       "label": "B",
+       "content": "Lactic acid",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0d2ef43d-0814-5dbb-b8b4-4099fa4fa594",
+       "label": "C",
+       "content": "Carbon dioxide",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b394fbe2-1918-5945-86f4-23286e5f49df",
+       "label": "D",
+       "content": "Glycogen",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "db164fbb-eee8-5393-b8fc-ea3763d94d67",
+     "key": "bio-cr-03",
+     "stem": "Which gas turns lime water milky?",
+     "image_url": null,
+     "explanation": "Lime water turns milky with carbon dioxide, which is how the gas given off in respiration is shown.\n\n**Why the other options are wrong**\n\n- Oxygen: Oxygen relights a glowing splint.\n- Hydrogen: Hydrogen burns with a squeaky pop.\n- Nitrogen: Nitrogen has no effect on lime water.",
+     "position": 3,
+     "options": [
+      {
+       "id": "15f34179-d78e-5181-aa77-a0a5f126e87c",
+       "label": "A",
+       "content": "Oxygen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5f108a3b-cbb7-5f7a-8ca1-4495c278a702",
+       "label": "B",
+       "content": "Hydrogen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6e6fcbc5-7290-5c82-bb7a-5f90e08d5fae",
+       "label": "C",
+       "content": "Carbon dioxide",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ea77857b-d14b-5370-a221-f2d46fd017ea",
+       "label": "D",
+       "content": "Nitrogen",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "310dc8dd-8670-5b20-80d5-dd8bf4ee9bf0",
+     "key": "bio-cr-04",
+     "stem": "Anaerobic respiration in yeast is used in",
+     "image_url": null,
+     "explanation": "Yeast gives carbon dioxide, which makes dough rise, and ethanol, which is the alcohol in brewing.\n\n**Why the other options are wrong**\n\n- making yoghurt: Yoghurt is made by bacteria that produce lactic acid.\n- smoking fish: Smoking preserves fish by drying it; yeast plays no part.\n- producing antibiotics: Antibiotics such as penicillin come from the mould Penicillium, not from yeast fermentation.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a04aa234-3972-5436-a8a8-1a79d0b7a81d",
+       "label": "A",
+       "content": "making yoghurt",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6ab561d7-55bb-5f44-aead-19b1798d9d5f",
+       "label": "B",
+       "content": "smoking fish",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d350e7fc-b1ed-5a10-93d2-81f1142bec85",
+       "label": "C",
+       "content": "producing antibiotics",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a19c9fb3-d1a5-5580-9a31-5c696c60cd27",
+       "label": "D",
+       "content": "making bread and brewing",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6b348ac8-e9c6-57d0-af4f-8a8615bc952e",
+     "key": "bio-cr-05",
+     "stem": "Compared with anaerobic respiration, aerobic respiration of the same amount of glucose",
+     "image_url": null,
+     "explanation": "Aerobic respiration breaks glucose down completely, so it releases far more energy than anaerobic respiration.\n\n**Why the other options are wrong**\n\n- does not need oxygen: Aerobic respiration needs oxygen; anaerobic does not.\n- produces lactic acid: Lactic acid is made in anaerobic respiration in muscle.\n- takes place only in plants: Aerobic respiration takes place in all living cells that have oxygen.",
+     "position": 5,
+     "options": [
+      {
+       "id": "4ef4dd32-a640-5f5f-bf42-3d61c5bdfd43",
+       "label": "A",
+       "content": "releases much more energy",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "498d2388-680c-52aa-bd43-28c12129caa8",
+       "label": "B",
+       "content": "does not need oxygen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "98f5627e-4a57-50e2-a31b-484e68f23cb8",
+       "label": "C",
+       "content": "produces lactic acid",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "74f2b11b-c1e4-5e55-921f-48c145742053",
+       "label": "D",
+       "content": "takes place only in plants",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "25a5b387-5f53-5b3c-9416-b0e8d1a77e47",
+   "topic": "Transport in Plants",
+   "title": "Transport in Plants: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on transport in plants, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 105,
+   "questions": [
+    {
+     "id": "bf4493ca-5312-5d0d-bb71-a924d0d28ea9",
+     "key": "bio-tp-01",
+     "stem": "Water and mineral salts are carried up the stem of a plant in the",
+     "image_url": null,
+     "explanation": "Xylem vessels are long, dead, hollow tubes that carry water and mineral salts from the roots to the leaves.\n\n**Why the other options are wrong**\n\n- phloem: Phloem carries food made in the leaves.\n- cambium: Cambium is a layer of dividing cells that makes the stem thicker.\n- cortex: The cortex is a packing and storage tissue.",
+     "position": 1,
+     "options": [
+      {
+       "id": "4dccdfc7-0e7f-59ad-b9f3-c7d9d91b9b87",
+       "label": "A",
+       "content": "phloem",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ece9e36e-a351-5095-b614-cda3ec11b335",
+       "label": "B",
+       "content": "xylem",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "3732b9f8-1475-5035-a02e-ee40542b04e6",
+       "label": "C",
+       "content": "cambium",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "62ff2e65-f674-53ca-a6d9-90bedded28bc",
+       "label": "D",
+       "content": "cortex",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d9c21d98-dcc1-55ac-914f-411e0a11680a",
+     "key": "bio-tp-02",
+     "stem": "The loss of water vapour from the leaves of a plant is called",
+     "image_url": null,
+     "explanation": "Transpiration is the evaporation of water from the leaf cells and its loss as vapour through the stomata.\n\n**Why the other options are wrong**\n\n- translocation: Translocation is the movement of food in the phloem.\n- guttation: Guttation is the loss of liquid water droplets, not vapour.\n- osmosis: Osmosis is the movement of water from cell to cell across a membrane.",
+     "position": 2,
+     "options": [
+      {
+       "id": "851145ad-40c7-5859-9294-4fff1998e700",
+       "label": "A",
+       "content": "translocation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a9760d7d-b64b-5948-beaf-f2b957f94243",
+       "label": "B",
+       "content": "guttation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9c9d18a7-7599-5977-9b04-d0ce4bac3008",
+       "label": "C",
+       "content": "transpiration",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "46627870-4f83-5f52-855d-e576eb6b7001",
+       "label": "D",
+       "content": "osmosis",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "26c3d223-0a82-56d0-8508-c365fe2dbbad",
+     "key": "bio-tp-03",
+     "stem": "Which conditions would make a plant transpire fastest?",
+     "image_url": null,
+     "explanation": "Heat speeds evaporation, dry air keeps a steep gradient, and wind carries away the moist air around the leaf.\n\n**Why the other options are wrong**\n\n- Cold, humid and still: Cold, moist, still air slows evaporation.\n- Warm but very humid: Humid air reduces the difference in water vapour between leaf and air.\n- Dark, with the stomata closed: With the stomata closed, very little water vapour escapes.",
+     "position": 3,
+     "options": [
+      {
+       "id": "6b5aaf9a-2192-570e-92b1-77d373db9a3a",
+       "label": "A",
+       "content": "Cold, humid and still",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9b9e24e3-95e2-5a6c-a941-2a7004202c47",
+       "label": "B",
+       "content": "Warm but very humid",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5a9f2d18-151d-513b-bc7c-d80adab2dba0",
+       "label": "C",
+       "content": "Dark, with the stomata closed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a3f24ccc-c8e1-58c5-9a7a-5eaff47901f2",
+       "label": "D",
+       "content": "Hot, dry and windy",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "25dd77ec-8c7a-5578-ab25-908f244b0596",
+     "key": "bio-tp-04",
+     "stem": "Water enters the root hairs from the soil mainly by",
+     "image_url": null,
+     "explanation": "The cell sap of a root hair is more concentrated than soil water, so water moves in by osmosis.\n\n**Why the other options are wrong**\n\n- active transport: Active transport takes in mineral ions against a gradient, not water.\n- transpiration: Transpiration is water loss from the leaves.\n- phagocytosis: Phagocytosis is the engulfing of particles, as by white blood cells.",
+     "position": 4,
+     "options": [
+      {
+       "id": "14e56e68-1496-5ec6-a582-0e1ca72892fe",
+       "label": "A",
+       "content": "osmosis",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9556bbfa-7491-55a5-b0f1-dbe53c69f757",
+       "label": "B",
+       "content": "active transport",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "250853fe-6821-507c-957d-1147fd152e85",
+       "label": "C",
+       "content": "transpiration",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a1331ad0-2c02-5d49-9074-9a36bc06622f",
+       "label": "D",
+       "content": "phagocytosis",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a5434a64-be36-5160-a99c-12691e43fb92",
+     "key": "bio-tp-05",
+     "stem": "A ring of bark, including the phloem, is removed from a woody stem. Weeks later the bark just above the ring has swollen. This is because",
+     "image_url": null,
+     "explanation": "This ringing experiment shows that food travels down the stem in the phloem.\n\n**Why the other options are wrong**\n\n- water moving up in the xylem collects above the ring: The xylem lies deeper and was not removed, so water still passes upwards.\n- the xylem was removed with the bark: Only the bark and phloem were removed; the xylem is in the wood.\n- the cells above the ring divide faster in the light: Light plays no part: the swelling is food that cannot move further down.",
+     "position": 5,
+     "options": [
+      {
+       "id": "07d7094a-6975-5d83-8bf9-1bad7f3cba3e",
+       "label": "A",
+       "content": "water moving up in the xylem collects above the ring",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c23f338c-8ae0-5f53-a401-4aa1b3f2a591",
+       "label": "B",
+       "content": "food moving down in the phloem collects above the ring",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a58c96c8-04cd-51dd-8aa7-a25147d17de6",
+       "label": "C",
+       "content": "the xylem was removed with the bark",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f685ab14-5631-5d4b-9700-f3fe0fd9c349",
+       "label": "D",
+       "content": "the cells above the ring divide faster in the light",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2cf51f42-d6eb-51ec-a915-730b5b422ee4",
+   "topic": "Ecosystems",
+   "title": "Ecosystems: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on ecosystems, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 106,
+   "questions": [
+    {
+     "id": "56fed9ca-f19f-5992-ac9e-bf367a096c06",
+     "key": "bio-ec-01",
+     "stem": "Which of the following is an abiotic factor in an ecosystem?",
+     "image_url": null,
+     "explanation": "Abiotic factors are the non-living parts of the environment, such as rainfall, temperature, light and soil.\n\n**Why the other options are wrong**\n\n- Predators: Predators are living organisms, so they are biotic factors.\n- Decomposers: Decomposers are living organisms, so they are biotic factors.\n- Parasites: Parasites are living organisms, so they are biotic factors.",
+     "position": 1,
+     "options": [
+      {
+       "id": "98251ce9-3710-5dd9-b9bd-05e0cc2d3c86",
+       "label": "A",
+       "content": "Predators",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "08caba01-2944-5326-9f55-482236863684",
+       "label": "B",
+       "content": "Decomposers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "53078681-e9b7-55d2-ae48-993ed25fbedc",
+       "label": "C",
+       "content": "Rainfall",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "148e0aae-4014-5e8f-8e81-b85307b5908c",
+       "label": "D",
+       "content": "Parasites",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c489c206-2ca1-5eb0-a851-f6d26ef48730",
+     "key": "bio-ec-02",
+     "stem": "In the nitrogen cycle, the bacteria that change ammonium compounds into nitrates are",
+     "image_url": null,
+     "explanation": "Nitrifying bacteria (Nitrosomonas, then Nitrobacter) turn ammonium into nitrites and then nitrates that plants can absorb.\n\n**Why the other options are wrong**\n\n- denitrifying bacteria: Denitrifying bacteria change nitrates back into nitrogen gas.\n- nitrogen-fixing bacteria: Nitrogen-fixing bacteria change nitrogen gas into nitrogen compounds.\n- putrefying bacteria: Putrefying bacteria break down dead matter and release ammonia.",
+     "position": 2,
+     "options": [
+      {
+       "id": "79381780-d435-51ee-81fd-b107a7fb1a10",
+       "label": "A",
+       "content": "denitrifying bacteria",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1b101222-396b-5164-b36f-2f1cdb7f0f5c",
+       "label": "B",
+       "content": "nitrogen-fixing bacteria",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2e6f14ec-1bac-5f0a-a76e-ad426763f20a",
+       "label": "C",
+       "content": "putrefying bacteria",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0cd3d469-3f01-585a-b39c-658be536b2d2",
+       "label": "D",
+       "content": "nitrifying bacteria",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d6de67a0-cea6-50ab-85b5-4d5bf16f21c9",
+     "key": "bio-ec-03",
+     "stem": "Organisms that break down dead plants and animals and return nutrients to the soil are called",
+     "image_url": null,
+     "explanation": "Decomposers, mainly bacteria and fungi, break down dead matter and release minerals for plants to use again.\n\n**Why the other options are wrong**\n\n- producers: Producers make food by photosynthesis.\n- herbivores: Herbivores feed on living plants.\n- parasites: Parasites feed on living hosts.",
+     "position": 3,
+     "options": [
+      {
+       "id": "e013f36e-0733-517c-ba9c-015ea108334e",
+       "label": "A",
+       "content": "decomposers",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b2725d59-8d1a-5538-b23e-d6ab9cf71b6b",
+       "label": "B",
+       "content": "producers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "35ba4e42-1e6e-5b53-924d-d26d84b3b858",
+       "label": "C",
+       "content": "herbivores",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9be7adc0-1a79-53bc-8b04-6fbe1bc85abe",
+       "label": "D",
+       "content": "parasites",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "55ab7d1d-b98d-5e83-8f1c-a505e382b335",
+     "key": "bio-ec-04",
+     "stem": "Carbon dioxide is returned to the atmosphere by all of the following EXCEPT",
+     "image_url": null,
+     "explanation": "Photosynthesis removes carbon dioxide from the air; respiration, burning and decay return it.\n\n**Why the other options are wrong**\n\n- respiration: Respiration releases carbon dioxide.\n- burning of fuels: Burning (combustion) releases carbon dioxide.\n- decay of dead organisms: Decomposers respire as they break down dead matter, releasing carbon dioxide.",
+     "position": 4,
+     "options": [
+      {
+       "id": "00b4e9d4-e315-5fb1-aca7-40d0c748510d",
+       "label": "A",
+       "content": "respiration",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ecbf4884-ba80-5607-9b3c-af0c0b88283a",
+       "label": "B",
+       "content": "photosynthesis",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1eec364a-a63b-52c7-8216-18174a0fede3",
+       "label": "C",
+       "content": "burning of fuels",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a7355671-f91c-5bd7-901f-b3e637266b8d",
+       "label": "D",
+       "content": "decay of dead organisms",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9ef8fe01-49ca-5299-ad0b-946db9e04f26",
+     "key": "bio-ec-05",
+     "stem": "The flow of energy through an ecosystem begins with",
+     "image_url": null,
+     "explanation": "Green plants trap light energy in photosynthesis; it then passes along food chains, with some lost at each step.\n\n**Why the other options are wrong**\n\n- decomposers breaking down dead matter: Decomposers receive energy at the end of food chains.\n- herbivores eating plants: Herbivores are the second step: they eat what plants have made.\n- carnivores eating herbivores: Carnivores come later still in the chain.",
+     "position": 5,
+     "options": [
+      {
+       "id": "4e5d3793-6020-52e8-bfa5-b1514d24905c",
+       "label": "A",
+       "content": "decomposers breaking down dead matter",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "03b0f3c4-27f1-5978-bdb5-4e91aa651b72",
+       "label": "B",
+       "content": "herbivores eating plants",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "90eb17e7-914f-5a83-bafc-bfb2a02bb029",
+       "label": "C",
+       "content": "the sun's energy trapped by green plants",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fa6b36f3-3cde-532c-a5dc-8cabc5b30550",
+       "label": "D",
+       "content": "carnivores eating herbivores",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "df29e685-20c5-5fc0-a825-1f07c6fd783d",
+   "topic": "Mendelian Genetics",
+   "title": "Mendelian Genetics: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on mendelian genetics, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 107,
+   "questions": [
+    {
+     "id": "b91ff570-e254-5fed-a4ae-0cbc1e5db13f",
+     "key": "bio-mg-01",
+     "stem": "Two tall pea plants, both heterozygous (Tt), are crossed. What ratio of tall to short plants is expected among the offspring?",
+     "image_url": null,
+     "explanation": "Tt × Tt gives TT, Tt, Tt and tt. Three have the dominant T, so 3 tall : 1 short.\n\n**Why the other options are wrong**\n\n- 1 tall : 1 short: A 1 : 1 ratio comes from crossing Tt with tt.\n- 1 TT : 2 Tt : 1 tt: That is the ratio of genotypes, not of tall to short plants.\n- All tall: All tall offspring would come from crossing TT with any plant.",
+     "position": 1,
+     "options": [
+      {
+       "id": "1de80988-d4fd-5e61-ac77-d4153296defb",
+       "label": "A",
+       "content": "1 tall : 1 short",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "41e2f055-2c97-5402-8c38-4abf6fbd67bd",
+       "label": "B",
+       "content": "1 TT : 2 Tt : 1 tt",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d599c8d1-abee-54a7-ae10-47f236864e34",
+       "label": "C",
+       "content": "All tall",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b5d65084-5fb5-5437-be33-688bf36f2e58",
+       "label": "D",
+       "content": "3 tall : 1 short",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "48af13e3-5d55-5788-b6c5-5696ea8d91d8",
+     "key": "bio-mg-02",
+     "stem": "An organism with two identical alleles of a gene is said to be",
+     "image_url": null,
+     "explanation": "Homozygous: two identical alleles, such as TT or tt.\n\n**Why the other options are wrong**\n\n- heterozygous: Heterozygous means having two different alleles.\n- dominant: Dominant describes an allele that shows its effect even with one copy.\n- recessive: Recessive describes an allele that is hidden when a dominant allele is present.",
+     "position": 2,
+     "options": [
+      {
+       "id": "b1e55ad1-7a8e-5087-808d-dfabc13ce0a6",
+       "label": "A",
+       "content": "homozygous",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "77609d87-1c95-52db-8e42-14321c16aba4",
+       "label": "B",
+       "content": "heterozygous",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "12eea523-68b6-5a79-ba04-39b58e047a42",
+       "label": "C",
+       "content": "dominant",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0a03a047-dd9a-5380-bda4-be18b9e89903",
+       "label": "D",
+       "content": "recessive",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6259e524-715b-56c6-9114-53aa001d9566",
+     "key": "bio-mg-03",
+     "stem": "The observable characteristics of an organism, produced by its genes and its environment, are called its",
+     "image_url": null,
+     "explanation": "The phenotype is what can be seen or measured, such as height or blood group.\n\n**Why the other options are wrong**\n\n- genotype: The genotype is the genetic make-up, such as Tt.\n- allele: An allele is one form of a gene.\n- chromosome: A chromosome is a thread of DNA that carries genes.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1063ecfa-45ca-5a71-8355-1e5a6f02c3d9",
+       "label": "A",
+       "content": "genotype",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "772065ba-bac8-5505-8eeb-6c5e744c1351",
+       "label": "B",
+       "content": "phenotype",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "21c2b067-57ec-5b39-8575-0bb3d542a21d",
+       "label": "C",
+       "content": "allele",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f48f44c6-71fb-5569-86a1-de830e06569c",
+       "label": "D",
+       "content": "chromosome",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f0dde045-0771-5bb5-a6ba-2326109901e4",
+     "key": "bio-mg-04",
+     "stem": "In humans, the sex of a baby is decided by",
+     "image_url": null,
+     "explanation": "Half the sperm carry X and half carry Y: an X sperm gives a girl (XX), a Y sperm gives a boy (XY).\n\n**Why the other options are wrong**\n\n- the sex chromosome carried by the mother's egg: Every egg carries an X chromosome, so the egg cannot decide.\n- the number of eggs released: The number of eggs affects twins, not sex.\n- the mother's diet during pregnancy: Diet does not decide the sex of a baby.",
+     "position": 4,
+     "options": [
+      {
+       "id": "05ce5993-62a7-56a9-9256-6c52d1649d47",
+       "label": "A",
+       "content": "the sex chromosome carried by the mother's egg",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "74ae26c1-49b7-5b5b-8d50-7cccf6500887",
+       "label": "B",
+       "content": "the number of eggs released",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3081aa12-7585-5723-9707-e2a408ed661e",
+       "label": "C",
+       "content": "the sex chromosome carried by the father's sperm",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "19c1561c-0bcb-5bbb-bade-e8bfc07218e3",
+       "label": "D",
+       "content": "the mother's diet during pregnancy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "95038752-f1dd-56ec-8d3a-7f84f9f0ab4d",
+     "key": "bio-mg-05",
+     "stem": "A man of blood group AB and a woman of blood group O have a child. Which blood groups could the child have?",
+     "image_url": null,
+     "explanation": "The father gives A or B; the mother gives O. The child is AO (group A) or BO (group B).\n\n**Why the other options are wrong**\n\n- AB or O: AB needs an A and a B allele, but the mother can give only O; O needs O from both parents, but the father gives A or B.\n- O only: The father always passes on A or B, so the child cannot be group O.\n- A, B, AB or O: All four groups are possible only when the parents are, for example, AO and BO.",
+     "position": 5,
+     "options": [
+      {
+       "id": "1a6a1df4-4d24-563a-806e-02c033884a0d",
+       "label": "A",
+       "content": "AB or O",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6d913a62-ac0f-5ddf-b84d-3ce6bb95b93f",
+       "label": "B",
+       "content": "O only",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e770ff64-74ed-5ec1-ac35-09e1ada20e19",
+       "label": "C",
+       "content": "A, B, AB or O",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e5f85fc9-2a8b-568a-9032-8fc7715c7a70",
+       "label": "D",
+       "content": "A or B only",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "3f574f9399e1"
+}
