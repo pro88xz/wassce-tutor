@@ -123,7 +123,7 @@ function PublicLessonPage() {
 
       <StartCta
         heading={`Keep going with ${topic.name.toLowerCase()}`}
-        body={`This is one of ${topic.lessons.length} lessons in ${topic.name}. Start free with the first lesson of every topic, then unlock them all${hasPractice(subject.slug) ? ', plus exam-style practice marked instantly' : ''} and guided learning tools, from ${FROM_PRICE} NLe.`}
+        body={`${topic.lessons.length === 1 ? `This is the lesson for ${topic.name}, free to read.` : `This is one of ${topic.lessons.length} lessons in ${topic.name}.`} Start free with the first lesson of every topic, then unlock every lesson in every subject${hasPractice(subject.slug) ? ', plus exam-style practice with the working behind every answer' : ''} and guided learning tools, from ${FROM_PRICE} NLe.`}
         appHref={`/lesson/${lesson.id}`}
       />
 

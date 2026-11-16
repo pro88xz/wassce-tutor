@@ -46,7 +46,7 @@ export function Hero({ data }: { data: LandingData }) {
             <span className="bg-gradient-to-r from-[#e3d7ff] via-[#b9a2ff] to-[#8fdcf5] bg-clip-text text-transparent">with one topic.</span>
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/72 sm:text-lg sm:leading-[1.65]">
-            Clear lessons that follow the syllabus, WASSCE-style practice marked instantly, and a real tutor when you need one.
+            Clear lessons that follow the syllabus, practice that shows the working behind every answer, and a real tutor when you need one.
             {/* On a phone the line is worth more than the sentence. */}
             <span className="hidden sm:inline"> Start with the topic you find hardest.</span>
           </p>

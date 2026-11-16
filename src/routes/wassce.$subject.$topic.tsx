@@ -207,7 +207,13 @@ function TopicPage() {
 
       <StartCta
         heading={`Learn ${topic.name.toLowerCase()} step by step`}
-        body={`Unlock ${count === 1 ? 'this lesson' : count === 2 ? 'both lessons' : `all ${count} lessons`} on ${topic.name.toLowerCase()}, plus every other WASSCE ${subject.name} topic${hasPractice(subject.slug) ? ', exam-style practice marked instantly' : ''} and guided learning tools.`}
+        body={
+          count === 0
+            ? `Lessons for ${topic.name.toLowerCase()} are being written. Meanwhile, unlock every published WASSCE ${subject.name} lesson${hasPractice(subject.slug) ? ', exam-style practice with the working behind every answer' : ''} and guided learning tools.`
+            : count > 0 && freeCount >= count
+            ? `${count === 1 ? 'The lesson in this topic is' : 'Every lesson in this topic is'} free to read. Unlock every other WASSCE ${subject.name} topic${hasPractice(subject.slug) ? ', exam-style practice with the working behind every answer' : ''} and guided learning tools.`
+            : `Unlock ${count === 2 ? 'both lessons' : `all ${count} lessons`} on ${topic.name.toLowerCase()}, plus every other WASSCE ${subject.name} topic${hasPractice(subject.slug) ? ', exam-style practice with the working behind every answer' : ''} and guided learning tools.`
+        }
         appHref={`/topic/${topic.id}`}
       />
 
