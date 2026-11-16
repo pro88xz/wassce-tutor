@@ -402,10 +402,8 @@ export type BlogPost = {
   sections: EditorialSection[]
   sources: EditorialSource[]
   related: string[]
-  /** Where the photo comes from, for the caption (default: the institution's own website). */
+  /** Where the photo comes from, for the About page's photo credits (default: the institution's own website). */
   imageSourceLabel?: string
-  /** Rights line under the photo (default: rights remain with the original publisher). */
-  imageRights?: string
   /** The study call to action beside the article (default: browse all subjects). */
   action?: { heading: string; label: string; href: string }
 }
