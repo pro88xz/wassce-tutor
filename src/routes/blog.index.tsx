@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { ArrowRight, BookOpen, Clock3 } from 'lucide-react'
-import { BLOG_POSTS } from '@/content/editorial'
+import { BLOG_POSTS, UNIVERSITY_GUIDES } from '@/content/editorial'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { EditorialPhoto } from '@/components/public/EditorialPhoto'
 import { editorialImage } from '@/lib/editorial-images'
@@ -44,6 +44,11 @@ function BlogIndexPage() {
         </a>
         <aside className="flex flex-col justify-between rounded-3xl border bg-[#f7f5ff] p-6 sm:p-8">
           <div><span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-violet-800 shadow-sm"><BookOpen className="h-6 w-6"/></span><p className="mt-6 text-xs font-bold uppercase tracking-[.16em] text-violet-700">University directory</p><h2 className="mt-2 text-2xl font-bold leading-tight text-slate-950">Compare Sierra Leone universities before you apply.</h2><p className="mt-3 text-sm leading-relaxed text-slate-600">Explore programmes, WASSCE entry rules, application links and the official sources behind each guide.</p></div>
+          <ul className="mt-6 flex flex-wrap gap-2" aria-label="University guides">
+            {UNIVERSITY_GUIDES.map((u) => (
+              <li key={u.slug}><a href={`/universities/${u.slug}`} className="inline-flex min-h-9 items-center rounded-full border border-violet-200 bg-white px-3.5 text-[13px] font-semibold text-slate-800 transition hover:border-violet-400 hover:text-violet-800">{u.shortName}</a></li>
+            ))}
+          </ul>
           <a href="/universities" className="mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[#21134d] px-5 text-sm font-bold text-white">Explore universities <ArrowRight className="h-4 w-4"/></a>
         </aside>
       </section>

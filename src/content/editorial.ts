@@ -418,10 +418,11 @@ const UNIVERSITY_POSTS: BlogPost[] = [
     publishedAt: '2026-11-08',
     updatedAt: '2026-11-09',
     readMinutes: 12,
-    image: '/img/universities/njala-university.webp',
-    imageAlt: 'Njala University building shown in the university’s official LinkedIn cover image',
-    imageCredit: 'Njala University — official LinkedIn page',
-    imageSourceUrl: 'https://sl.linkedin.com/school/njalauniversity/',
+    image: '/img/blog/students-reading-outdoors.webp',
+    imageAlt: 'Four students in school uniform reading a book together outside their school',
+    imageCredit: 'Mickael Ange Konan via Pexels',
+    imageSourceUrl: 'https://www.pexels.com/photo/group-of-students-studying-outdoors-at-school-34526424/',
+    imageSourceLabel: 'Pexels',
     intro: 'A WASSCE result is not a universal university admission ticket. Most degree routes start with five credits, but the subjects, grade thresholds, sittings, professional qualifications and application windows differ by institution and programme. This guide compares what the universities currently publish—and clearly flags information that is contradictory or out of date.',
     sections: [
       {
@@ -512,10 +513,11 @@ const UNIVERSITY_POSTS: BlogPost[] = [
     publishedAt: '2026-11-08',
     updatedAt: '2026-11-08',
     readMinutes: 7,
-    image: '/img/universities/university-of-sierra-leone.webp',
-    imageAlt: 'Historic Fourah Bay College building in Cline Town, part of the University of Sierra Leone',
-    imageCredit: 'Jared & Melanie & Huxley Ponchot via Wikimedia Commons — CC BY 2.0',
-    imageSourceUrl: 'https://commons.wikimedia.org/wiki/File:Old_building_of_Fourah_Bay_College._Cline_Town,_Freetown,_Sierra_Leone.jpg',
+    image: '/img/blog/classroom-students-writing.webp',
+    imageAlt: 'A full classroom of students in school uniform writing at their desks',
+    imageCredit: 'Tosin Olowoleni via Pexels',
+    imageSourceUrl: 'https://www.pexels.com/photo/diverse-classroom-of-students-concentrating-34162713/',
+    imageSourceLabel: 'Pexels',
     intro: 'When a university asks for five WASSCE credits, the number alone is not enough. You must check which grades it accepts, which subjects count for your programme, whether results from two sittings can be combined and whether additional qualifications are recognised.',
     sections: [
       {
@@ -575,10 +577,11 @@ const UNIVERSITY_POSTS: BlogPost[] = [
     publishedAt: '2026-11-08',
     updatedAt: '2026-11-08',
     readMinutes: 8,
-    image: '/img/universities/eastern-technical-university.webp',
-    imageAlt: 'ETU-SL community gathered at an official university event',
-    imageCredit: 'Eastern Technical University of Sierra Leone — official website',
-    imageSourceUrl: 'https://etusl.edu.sl/',
+    image: '/img/blog/senior-students-seated.webp',
+    imageAlt: 'Senior secondary students in school uniform seated and listening',
+    imageCredit: 'Jax pexels via Pexels',
+    imageSourceUrl: 'https://www.pexels.com/photo/students-in-classroom-setting-wearing-uniforms-37898351/',
+    imageSourceLabel: 'Pexels',
     intro: 'The safest time to check university subject requirements is before you finalise your WASSCE subject choices. A course title can sound familiar while its admission rules require a particular combination of Mathematics, English, Chemistry, Biology, Physics or another subject.',
     sections: [
       {
@@ -638,10 +641,11 @@ const UNIVERSITY_POSTS: BlogPost[] = [
     publishedAt: '2026-11-08',
     updatedAt: '2026-11-08',
     readMinutes: 6,
-    image: '/img/universities/ernest-bai-koroma-university.webp',
-    imageAlt: 'University research and student activity featured on EBKUST official website',
-    imageCredit: 'Ernest Bai Koroma University of Science and Technology — official website',
-    imageSourceUrl: 'https://ebkustsl.edu.sl/',
+    image: '/img/blog/classroom-lesson-listening.webp',
+    imageAlt: 'Students in school uniform listening during a classroom lesson',
+    imageCredit: 'Tosin Olowoleni via Pexels',
+    imageSourceUrl: 'https://www.pexels.com/photo/group-of-students-attending-classroom-lecture-34211747/',
+    imageSourceLabel: 'Pexels',
     intro: 'University applications are easier to manage when you prepare your documents before opening the portal. Requirements vary, but official admissions instructions from Sierra Leone universities show a recurring set of records students should have ready.',
     sections: [
       {

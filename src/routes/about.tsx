@@ -4,8 +4,7 @@ import { SubjectCover } from '@/components/ds/SubjectCover'
 import { SUBJECT_PHOTOS } from '@/lib/subject-photos'
 import { TUTOR_PHOTO } from '@/lib/tutors'
 import { TOPIC_PHOTOS } from '@/lib/topic-photos'
-import { GUIDE_POSTS } from '@/content/editorial-guides'
-import { UNIVERSITY_GUIDES } from '@/content/editorial'
+import { BLOG_POSTS, UNIVERSITY_GUIDES } from '@/content/editorial'
 import { publicHead } from '@/lib/seo'
 import { CONTACT } from '@/lib/contact'
 import { fetchLandingData } from '@/lib/public-content'
@@ -25,8 +24,24 @@ const PHOTO_CREDITS = [
   ...Object.entries(TOPIC_PHOTOS)
     .sort((a, b) => a[1].topic.localeCompare(b[1].topic))
     .map(([key, p]) => [key, { subject: `${p.topic} (topic)`, caption: p.caption, credit: p.credit }] as const),
-  // Blog and university photos carry no caption on their pages: their credits are listed here.
-  ...GUIDE_POSTS.map((post) => [
+  // The homepage photo, and the blog and university photos, carry no caption
+  // on their pages: their credits are listed here.
+  [
+    'home',
+    {
+      subject: 'Home page',
+      caption: 'Two students in school uniform working through a book together at their desk',
+      credit: {
+        creator: 'Tosin Olowoleni',
+        creatorUrl: undefined as string | undefined,
+        source: 'Pexels',
+        sourceUrl: 'https://www.pexels.com/photo/african-students-focused-on-classroom-studies-34162714/',
+        license: 'Pexels License',
+        licenseUrl: 'https://www.pexels.com/license/' as string | undefined,
+      },
+    },
+  ] as const,
+  ...BLOG_POSTS.filter((post) => post.imageSourceLabel === 'Pexels').map((post) => [
     `blog-${post.slug}`,
     {
       subject: `${post.title.split(':')[0]} (blog)`,
@@ -41,7 +56,7 @@ const PHOTO_CREDITS = [
       },
     },
   ] as const),
-  // University photos (the older blog articles reuse these). "Name via Source — Licence" for openly
+  // University photos. "Name via Source — Licence" for openly
   // licensed photos, "Publisher — where" for photos credited to the institution that published them.
   ...UNIVERSITY_GUIDES.map((guide) => {
     const [who, licence] = guide.imageCredit.split(' — ')

@@ -1,33 +1,18 @@
-// The learning method as four steps, beside a real excerpt from a free lesson,
-// so the page shows what studying here looks like instead of describing it.
-import { ArrowRight, BookOpen, CircleCheck, MessageCircleQuestion, TrendingUp } from 'lucide-react'
+// The learning method as three product snapshots: a lesson, a marked practice
+// set, and the weakest-topics view. Each is a small copy of the real screen,
+// so the section shows what studying here looks like instead of describing
+// it. The lesson snippet is from a real free lesson; the scores in the other
+// two are examples and say so.
+import { ArrowRight, Check, CircleCheck, CircleX } from 'lucide-react'
 import { Band, SectionHeading } from '@/components/public/Section'
 
+/** The free lesson the first snapshot comes from. */
+const LESSON_HREF = '/wassce/mathematics/quadratic-equations/quadratic-equations-factorisation-completing-the-square-and-the-formula'
+
 const STEPS = [
-  {
-    label: 'Understand',
-    title: 'Learn each topic in clear steps.',
-    body: 'Syllabus-led lessons with explanations, worked examples, diagrams and properly typeset mathematics.',
-    Icon: BookOpen,
-  },
-  {
-    label: 'Apply',
-    title: 'Practise what you have learned.',
-    body: 'Original WASSCE-style questions, marked at once, with the reasoning behind every answer.',
-    Icon: CircleCheck,
-  },
-  {
-    label: 'Get support',
-    title: 'Ask when a concept is unclear.',
-    body: 'Use study tutor support for a step-by-step explanation, or book a teacher for one-to-one help.',
-    Icon: MessageCircleQuestion,
-  },
-  {
-    label: 'Build momentum',
-    title: 'Keep track of your preparation.',
-    body: 'See your completed lessons and practice, so you know what to study next and where to revise.',
-    Icon: TrendingUp,
-  },
+  { title: 'Learn the topic', body: 'Clear lessons with worked examples, diagrams and exam tips.', Shot: LessonShot, example: false },
+  { title: 'Practise and see why', body: 'Questions marked instantly, with the reason behind every answer.', Shot: PracticeShot, example: true },
+  { title: 'Fix your weak topics', body: 'Your progress shows exactly what to revise next.', Shot: FocusShot, example: true },
 ]
 
 export function HowItWorks() {
@@ -36,81 +21,100 @@ export function HowItWorks() {
       <SectionHeading
         id="method-heading"
         eyebrow="How it works"
-        title="From first lesson to exam confidence, in four steps."
-        lede="Good preparation is more than reading notes. Learn a concept, apply it, get help when you are stuck, and let your progress decide the next session."
+        title="Learn it. Practise it. Master it."
         action={
-          <a href="/wassce/subjects" className="site-link">
-            Explore the syllabus <ArrowRight className="h-4 w-4" aria-hidden />
+          <a href={LESSON_HREF} className="site-link">
+            Read a free lesson <ArrowRight className="h-4 w-4" aria-hidden />
           </a>
         }
       />
-      <div className="mt-10 grid gap-10 lg:mt-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,.8fr)] lg:items-start lg:gap-14">
-        <ol className="grid gap-x-10 gap-y-8 sm:grid-cols-2">
-          {STEPS.map(({ label, title, body, Icon }, i) => (
-            <li key={label} data-reveal={i} className="grid grid-cols-[3rem_minmax(0,1fr)] items-start gap-x-4">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary text-primary-foreground shadow-[0_10px_22px_-12px_rgba(100,56,216,.8)]">
-                <Icon className="h-5 w-5" strokeWidth={2} aria-hidden />
-              </span>
-              <div>
-                <p className="text-xs font-bold uppercase tracking-[.14em] text-primary">
-                  <span className="tabular-nums text-muted-foreground">{String(i + 1).padStart(2, '0')}</span>
-                  <span className="mx-2 text-border" aria-hidden>/</span>
-                  {label}
-                </p>
-                <h3 className="site-h3 mt-1.5">{title}</h3>
-                <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">{body}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
-        <LessonExcerpt />
-      </div>
+      <ol className="site-rail -mx-[var(--site-gutter)] mt-9 scroll-px-[var(--site-gutter)] px-[var(--site-gutter)] pb-2 md:mx-0 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0 lg:mt-12">
+        {STEPS.map(({ title, body, Shot, example }, i) => (
+          <li key={title} data-reveal={i} className="site-card w-[84%] shrink-0 overflow-hidden md:w-auto">
+            <div aria-hidden className="relative h-52 overflow-hidden bg-gradient-to-b from-brand-soft/70 to-brand-soft/20 px-5 pt-5">
+              {example && <span className="absolute right-3 top-3 z-10 rounded-full bg-white/90 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-slate-500 shadow-sm">Example</span>}
+              <Shot />
+            </div>
+            <div className="p-5">
+              <p className="text-xs font-bold uppercase tracking-[.14em] text-primary">Step {i + 1}</p>
+              <h3 className="site-h3 mt-1.5">{title}</h3>
+              <p className="mt-1.5 text-[15px] leading-relaxed text-muted-foreground">{body}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
     </Band>
   )
 }
 
-/** The free lesson the excerpt below comes from. */
-const LESSON_HREF = '/wassce/mathematics/quadratic-equations/quadratic-equations-factorisation-completing-the-square-and-the-formula'
+/** A screen card that rises out of the bottom of the snapshot area. */
+function Screen({ children }: { children: React.ReactNode }) {
+  return <div className="rounded-t-2xl bg-white p-4 text-slate-900 shadow-[0_18px_40px_-18px_rgba(76,29,149,.45)] ring-1 ring-slate-200">{children}</div>
+}
 
-/**
- * A real excerpt from a free lesson, set out as the lesson sets it out: a worked
- * example, the mistake examiners see most, and an exam tip. Plain text, so the
- * homepage does not load the maths renderer.
- */
-function LessonExcerpt() {
+function LessonShot() {
   return (
-    <figure data-reveal="2" className="site-card overflow-hidden">
-      <div className="flex items-center justify-between gap-3 border-b px-5 py-4">
-        <div className="min-w-0">
-          <p className="text-[11px] font-bold uppercase tracking-[.12em] text-primary">Mathematics · free lesson</p>
-          <p className="mt-0.5 truncate font-bold tracking-tight">Quadratic equations</p>
-        </div>
-        <span className="shrink-0 rounded-full bg-success/10 px-2.5 py-1 text-[11px] font-bold uppercase tracking-[.08em] text-success">Real lesson</span>
+    <Screen>
+      <p className="text-[10px] font-bold uppercase tracking-[.12em] text-violet-700">Mathematics · Lesson</p>
+      <p className="mt-0.5 text-[15px] font-bold tracking-tight">Quadratic equations</p>
+      <div className="mt-3 rounded-lg border-l-4 border-amber-400 bg-amber-50 px-3 py-2">
+        <p className="text-[10px] font-bold uppercase tracking-wider text-amber-700">Worked example</p>
+        <p className="mt-1 font-mono text-[12px] leading-5">x² − 5x + 6 = 0<br />(x − 2)(x − 3) = 0<br /><span className="font-bold">x = 2 or x = 3</span></p>
       </div>
-      <div className="space-y-3 p-5 text-[15px]">
-        <div className="rounded-xl border-l-4 border-amber-400 bg-amber-50 p-4 dark:bg-amber-500/10">
-          <p className="text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-300">Worked example</p>
-          <p className="mt-1.5 font-semibold">Solve x² − 5x + 6 = 0.</p>
-          <p className="mt-1 font-mono text-[14px] leading-7 text-muted-foreground">
-            Factorise: (x − 2)(x − 3) = 0
-            <br />So x − 2 = 0 or x − 3 = 0
-            <br /><span className="font-semibold text-foreground">x = 2 or x = 3</span>
-          </p>
-        </div>
-        <div className="rounded-xl border-l-4 border-rose-400 bg-rose-50 p-4 dark:bg-rose-500/10">
-          <p className="text-xs font-bold uppercase tracking-wider text-rose-700 dark:text-rose-300">Common mistake</p>
-          <p className="mt-1.5 leading-relaxed text-muted-foreground">
-            From x² = 7x, dividing both sides by x gives only x = 7 and <span className="font-semibold text-foreground">loses the root x = 0</span>. Never divide by something that could be zero: factorise instead.
-          </p>
-        </div>
-        <div className="rounded-xl border-l-4 border-sky-400 bg-sky-50 p-4 dark:bg-sky-500/10">
-          <p className="text-xs font-bold uppercase tracking-wider text-sky-700 dark:text-sky-300">Exam tip</p>
-          <p className="mt-1.5 leading-relaxed text-muted-foreground">Write down a, b and c with their signs before you use the formula. Most formula errors come from −b when b is already negative.</p>
-        </div>
+      <div className="mt-2 rounded-lg border-l-4 border-sky-400 bg-sky-50 px-3 py-2">
+        <p className="text-[10px] font-bold uppercase tracking-wider text-sky-700">Exam tip</p>
       </div>
-      <a href={LESSON_HREF} className="flex items-center justify-between gap-2 border-t px-5 py-3.5 text-sm font-bold text-primary hover:bg-brand-soft/40">
-        Read the whole lesson free <ArrowRight className="h-4 w-4" aria-hidden />
-      </a>
-    </figure>
+    </Screen>
+  )
+}
+
+function PracticeShot() {
+  const rows = [
+    { topic: 'Percentages', score: 5, right: true },
+    { topic: 'Quadratic equations', score: 4, right: true },
+    { topic: 'Circles', score: 2, right: false },
+  ]
+  return (
+    <Screen>
+      <p className="text-[10px] font-bold uppercase tracking-[.12em] text-violet-700">Practice · marked</p>
+      <ul className="mt-2.5 space-y-2">
+        {rows.map((r) => (
+          <li key={r.topic} className="flex items-center gap-2.5 rounded-lg bg-slate-50 px-3 py-2 text-[12px] font-semibold">
+            {r.right ? <CircleCheck className="h-4 w-4 shrink-0 text-emerald-600" /> : <CircleX className="h-4 w-4 shrink-0 text-rose-600" />}
+            <span className="flex-1 truncate">{r.topic}</span>
+            <span className={`rounded-full px-2 py-0.5 text-[11px] font-bold tabular-nums ${r.score >= 4 ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-700'}`}>{r.score}/5</span>
+          </li>
+        ))}
+      </ul>
+      <p className="mt-2.5 rounded-lg bg-rose-50 px-3 py-2 text-[11px] leading-4 text-slate-700"><span className="font-bold text-rose-700">Why B is wrong:</span> that is the arc length, not the area.</p>
+    </Screen>
+  )
+}
+
+function FocusShot() {
+  const rows = [
+    { topic: 'Circles', pct: 40 },
+    { topic: 'Indices', pct: 60 },
+  ]
+  return (
+    <Screen>
+      <p className="text-[10px] font-bold uppercase tracking-[.12em] text-violet-700">Focus next</p>
+      <ul className="mt-2.5 space-y-3">
+        {rows.map((r) => (
+          <li key={r.topic}>
+            <div className="flex items-center justify-between text-[12px] font-semibold">
+              <span>{r.topic}</span>
+              <span className="tabular-nums text-rose-700">{r.pct}%</span>
+            </div>
+            <span className="mt-1 block h-2 overflow-hidden rounded-full bg-slate-200"><span className="block h-full rounded-full bg-rose-500" style={{ width: `${r.pct}%` }} /></span>
+            <span className="mt-1.5 flex gap-1.5">
+              <span className="rounded-md border border-slate-200 px-2 py-0.5 text-[10px] font-bold">Revise</span>
+              <span className="rounded-md bg-violet-600 px-2 py-0.5 text-[10px] font-bold text-white">Practise again</span>
+            </span>
+          </li>
+        ))}
+      </ul>
+      <p className="mt-3 flex items-center gap-1.5 text-[11px] font-semibold text-emerald-700"><Check className="h-3.5 w-3.5" /> Percentages: 100%</p>
+    </Screen>
   )
 }

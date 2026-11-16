@@ -3,7 +3,7 @@ import { ArrowRight, Check, UserRound } from 'lucide-react'
 import { TUTOR_PHOTO } from '@/lib/tutors'
 import { Band } from '@/components/public/Section'
 
-const POINTS = ['Help with exactly the topics you find hard', 'In-person lessons with a verified tutor', 'Monthly fee shown before you message them']
+const POINTS = ['Help with the topics you find hard', 'In-person lessons, verified tutors', 'Message them on WhatsApp']
 
 export function TutorFeature() {
   return (
@@ -27,8 +27,8 @@ export function TutorFeature() {
         </div>
         <div data-reveal="1" className="max-w-xl">
           <p className="site-eyebrow">Book a tutor</p>
-          <h2 id="tutor-heading" className="site-h2 mt-3">Want a real WASSCE tutor, one to one?</h2>
-          <p className="site-lede mt-4">Tell us the subject and what you need. We match you with a tutor on WhatsApp, and asking is free.</p>
+          <h2 id="tutor-heading" className="site-h2 mt-3">Need a real tutor?</h2>
+          <p className="site-lede mt-4">Verified WASSCE tutors near you, with the fee shown up front.</p>
           <ul className="mt-6 space-y-3">
             {POINTS.map((t) => (
               <li key={t} className="flex gap-3 text-[15px] font-medium">

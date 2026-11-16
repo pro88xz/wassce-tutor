@@ -44,7 +44,7 @@ export function Landing({ data }: { data: LandingData }) {
     <div ref={root} className="site-bleed -mb-16 -mt-6">
       <Hero data={data} />
       <TryQuestion />
-      <SubjectShowcase subjects={data.subjects} />
+      <SubjectShowcase subjects={data.subjects} popular={data.popular} />
       <PopularTopics data={data} />
       <HowItWorks />
       <LocalBand />

@@ -1,42 +1,23 @@
-// Homepage hero: the promise, the primary action, topic search, and proof.
-//
-// Height is the constraint. On a phone the hero ends, with its proof row, in
-// about one screen, so the subject catalogue is the next thing a visitor
-// meets. The lesson preview therefore appears only from tablet width up,
-// beside the copy; on a phone the same topic leads the "Popular topics" rail
-// below. The marked practice question that used to sit here is now a section
-// visitors can answer themselves (TryQuestion).
+// Homepage hero: the promise, two actions, and a real classroom photo with a
+// marked question from the bank laid over it. Below it, the live counts and
+// what the content is (and is not). Topic search lives with the subject
+// catalogue further down.
 import { Link } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
-import { ArrowRight, Check, CircleCheck, PenLine, ScrollText, ShieldCheck } from 'lucide-react'
-import type { LandingData, PopularTopic } from '@/lib/public-content'
-import { topicPath } from '@/lib/public-content'
-import { topicPhoto, topicPhotoSrcSet } from '@/lib/topic-photos'
+import { ArrowDown, ArrowRight, Check, CircleCheck, PenLine, ScrollText, ShieldCheck } from 'lucide-react'
+import type { LandingData } from '@/lib/public-content'
 import { PRACTICE_TOTAL } from '@/lib/practice-counts'
 import { supabase } from '@/lib/supabase'
-import { SubjectCover } from '@/components/ds/SubjectCover'
-import { TopicSearch, type TopicShortcut } from '@/components/landing/TopicSearch'
+import { SAMPLE_QUESTIONS } from '@/content/sample-questions'
 
-const ASSURANCES = ['Free account, no card', 'Pay once, no auto-renewal', 'Works on any phone']
-
-/** Hero buttons: compact enough to share one row from 360 px, the large size from 1024 px. */
-const CTA_SIZE = 'px-3.5 text-sm sm:flex-none sm:px-5 lg:min-h-[3.375rem] lg:px-7 lg:text-base'
-
-/** Shortcut chips: popular topics that have lessons, short enough to read as a chip. */
-function shortcutsFrom(popular: PopularTopic[]): TopicShortcut[] {
-  return popular
-    .filter((t) => t.lessons > 0 && t.topicName.length <= 22)
-    .slice(0, 3)
-    .map((t) => ({ label: t.topicName, href: topicPath(t.subjectSlug, t.topicSlug) }))
-}
+const ASSURANCES = ['Free to start', 'No card needed', 'Works on any phone']
 
 export function Hero({ data }: { data: LandingData }) {
-  const lead = data.popular[0]
   return (
     <section className="site-band-ink relative isolate overflow-hidden" aria-labelledby="hero-heading">
       <div aria-hidden className="site-hero-backdrop" />
-      <div className="site-container relative grid grid-cols-[minmax(0,1fr)] items-center gap-10 pb-7 pt-7 sm:pb-12 sm:pt-12 md:grid-cols-[minmax(0,1.08fr)_minmax(0,.92fr)] lg:gap-14 lg:pb-16 lg:pt-16">
-        <div className="max-w-2xl">
+      <div className="site-container relative grid grid-cols-[minmax(0,1fr)] items-center gap-8 pb-8 pt-8 sm:pt-12 md:grid-cols-[minmax(0,1.05fr)_minmax(0,.95fr)] md:gap-10 md:pb-14 lg:gap-16 lg:pb-16 lg:pt-16">
+        <div className="max-w-xl">
           <p className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.06] py-1.5 pl-2.5 pr-3.5 text-[13px] font-semibold text-violet-100">
             <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_0_4px_rgba(52,211,153,.18)]" aria-hidden />
             Built for the Sierra Leone WASSCE syllabus
@@ -45,107 +26,82 @@ export function Hero({ data }: { data: LandingData }) {
             Your next grade starts{' '}
             <span className="bg-gradient-to-r from-[#e3d7ff] via-[#b9a2ff] to-[#8fdcf5] bg-clip-text text-transparent">with one topic.</span>
           </h1>
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/72 sm:text-lg sm:leading-[1.65]">
-            Clear lessons that follow the syllabus, practice that shows the working behind every answer, and a real tutor when you need one.
-            {/* On a phone the line is worth more than the sentence. */}
-            <span className="hidden sm:inline"> Start with the topic you find hardest.</span>
+          <p className="mt-4 max-w-md text-base leading-relaxed text-white/75 sm:text-lg">
+            Syllabus lessons, instant marking that explains every answer, and real tutors.
           </p>
-          <div className="mt-6 flex flex-wrap gap-2.5 sm:mt-8 sm:gap-3">
-            <Link to="/auth" className={`site-btn site-btn-light flex-1 ${CTA_SIZE}`}>
+          <div className="mt-7 flex flex-wrap gap-2.5 sm:gap-3">
+            <Link to="/auth" className="site-btn site-btn-light flex-1 px-4 text-[15px] sm:flex-none sm:px-6 lg:min-h-[3.375rem] lg:px-7 lg:text-base">
               Start learning free <ArrowRight className="h-4 w-4" aria-hidden />
             </Link>
-            <Link to="/tutors" className={`site-btn site-btn-glass flex-1 ${CTA_SIZE}`}>
-              Book a tutor
-            </Link>
+            <a href="#try-a-question" className="site-btn site-btn-glass flex-1 px-4 text-[15px] sm:flex-none sm:px-6 lg:min-h-[3.375rem] lg:px-7 lg:text-base">
+              Try a question <ArrowDown className="h-4 w-4" aria-hidden />
+            </a>
           </div>
-          <div className="mt-6 max-w-xl sm:mt-8">
-            <TopicSearch shortcuts={shortcutsFrom(data.popular)} />
-          </div>
-          <ul className="mt-5 flex flex-wrap gap-x-4 gap-y-1.5 text-xs font-medium text-white/70 sm:mt-7 sm:gap-x-5 sm:text-sm">
-            {ASSURANCES.map((t, i) => (
-              // The third is self-evident to someone already on a phone.
-              <li key={t} className={`items-center gap-1.5 ${i === 2 ? 'hidden sm:inline-flex' : 'inline-flex'}`}>
+          <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-1.5 text-[13px] font-medium text-white/65 sm:text-sm">
+            {ASSURANCES.map((t) => (
+              <li key={t} className="inline-flex items-center gap-1.5">
                 <Check className="h-4 w-4 shrink-0 text-emerald-300" aria-hidden /> {t}
               </li>
             ))}
           </ul>
         </div>
 
-        {lead && <LessonPreview topic={lead} />}
+        <HeroPhoto />
       </div>
       <ProofRow initial={data.totals} />
     </section>
   )
 }
 
+/** The bank's prepositions question, shown marked on the photo. */
+const MARKED = SAMPLE_QUESTIONS.find((q) => q.key === 'eng-prep-03')!
+
 /**
- * One preview, from tablet width up: a live topic with its first lesson
- * titles, exactly as listed on the topic page. Nothing overlaps it.
+ * Two students working through a book together, with one real question from
+ * the bank laid over it, marked: the answer filled in and the reason the
+ * usual wrong answer is wrong. No device frame: the photo is the classroom,
+ * the card is the product.
  */
-function LessonPreview({ topic }: { topic: PopularTopic }) {
-  const photo = topicPhoto(topic.subjectSlug, topic.topicSlug)
+function HeroPhoto() {
+  const right = MARKED.options.find((o) => o.label === MARKED.answer)!
+  const wrong = MARKED.options.find((o) => o.label === 'A')!
+  const [before, after] = MARKED.stem.split('____')
   return (
-    <div className="hidden w-full max-w-[27rem] md:ml-auto md:block">
-      <a
-        href={topicPath(topic.subjectSlug, topic.topicSlug)}
-        aria-label={`${topic.topicName}, ${topic.subjectName}: open this topic`}
-        className="group block overflow-hidden rounded-2xl bg-white text-slate-900 shadow-[0_44px_90px_-36px_rgba(0,0,0,.85)] ring-1 ring-white/10 transition-transform duration-300 ease-out hover:-translate-y-1"
+    <div className="relative mx-auto w-full max-w-xl pb-16 md:max-w-none md:pb-0">
+      <div aria-hidden className="absolute -inset-8 -z-10 rounded-full bg-[radial-gradient(closest-side,rgba(139,92,246,.45),transparent)] blur-2xl" />
+      <div className="overflow-hidden rounded-[1.75rem] shadow-[0_50px_100px_-40px_rgba(0,0,0,.9)] ring-1 ring-white/15 sm:rounded-[2rem]">
+        <img
+          src="/img/home/students-studying-1200.webp"
+          srcSet="/img/home/students-studying-720.webp 720w, /img/home/students-studying-1200.webp 1200w"
+          sizes="(min-width: 768px) 45vw, 100vw"
+          width={1200}
+          height={960}
+          alt="Two students in school uniform working through a book together at their desk"
+          fetchPriority="high"
+          className="aspect-[5/4] w-full object-cover"
+        />
+      </div>
+
+      {/* A marked question from the bank, hanging off the photo. */}
+      <figure
+        aria-label={`A marked question: ${before}${right.text}${after} Answer ${right.label} is correct.`}
+        className="absolute inset-x-4 bottom-0 rounded-2xl bg-white p-4 text-slate-900 shadow-[0_30px_60px_-24px_rgba(15,5,40,.75)] sm:inset-x-auto sm:left-6 sm:w-[21rem] md:-left-10 md:bottom-8 lg:-left-16"
       >
-        <span className="relative block aspect-[16/8] overflow-hidden bg-slate-200">
-          {photo ? (
-            <img
-              src={photo.src}
-              srcSet={topicPhotoSrcSet(photo)}
-              sizes="(min-width: 768px) 432px, 1px"
-              alt={photo.caption}
-              width={960}
-              height={600}
-              loading="lazy"
-              decoding="async"
-              className={`h-full w-full object-cover ${photo.position ?? ''}`}
-            />
-          ) : (
-            <SubjectCover slug={topic.subjectSlug} shape="wide" rounded="rounded-none" className="h-full w-full" />
-          )}
-          <span aria-hidden className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
-          <span className="absolute inset-x-4 bottom-3 flex items-end justify-between gap-3">
-            <span className="min-w-0">
-              <span className="block text-[11px] font-bold uppercase tracking-[.14em] text-white/85">{topic.subjectName}</span>
-              <span className="mt-0.5 block truncate text-xl font-extrabold tracking-tight text-white">{topic.topicName}</span>
-            </span>
-            <span className="shrink-0 rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-bold text-slate-900">
-              {topic.lessons} {topic.lessons === 1 ? 'lesson' : 'lessons'}
-            </span>
+        <div className="flex items-center justify-between gap-3">
+          <p className="text-[11px] font-bold uppercase tracking-[.12em] text-violet-700">English · {MARKED.topic}</p>
+          <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2 py-0.5 text-[11px] font-bold text-emerald-700 ring-1 ring-emerald-200">
+            <CircleCheck className="h-3.5 w-3.5" aria-hidden /> Correct
           </span>
-        </span>
-        <ol className="divide-y divide-slate-100 px-5">
-          {topic.firstLessons.map((lesson, i) => (
-            <li key={lesson.title} className="flex items-center gap-3 py-3">
-              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-violet-50 text-xs font-bold tabular-nums text-violet-700">{i + 1}</span>
-              <span className="min-w-0 flex-1 truncate text-sm font-semibold">{lesson.title}</span>
-              {lesson.free ? (
-                <span className="shrink-0 rounded-full bg-emerald-50 px-2 py-0.5 text-[11px] font-bold text-emerald-700">Free</span>
-              ) : lesson.minutes ? (
-                <span className="shrink-0 text-xs font-medium tabular-nums text-slate-500">{lesson.minutes} min</span>
-              ) : null}
-            </li>
-          ))}
-        </ol>
-        <span className="flex items-center justify-between gap-2 border-t border-slate-100 px-5 py-3.5 text-sm font-bold text-violet-700">
-          Open this topic
-          <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden />
-        </span>
-      </a>
-      <a
-        href="#try-a-question"
-        className="mt-3 flex items-center gap-3 rounded-2xl border border-white/15 bg-white/[0.06] px-4 py-3 text-sm text-white/80 transition hover:border-white/35 hover:bg-white/[0.1]"
-      >
-        <CircleCheck className="h-5 w-5 shrink-0 text-emerald-300" aria-hidden />
-        <span className="min-w-0 flex-1">
-          <span className="font-bold text-white">Practice is marked instantly.</span> Try a question below.
-        </span>
-        <ArrowRight className="h-4 w-4 shrink-0 rotate-90" aria-hidden />
-      </a>
+        </div>
+        <p className="mt-2 text-[15px] font-semibold leading-snug">
+          {before}
+          <span className="rounded-md bg-emerald-100 px-1.5 py-0.5 font-bold text-emerald-800">{right.text}</span>
+          {after}
+        </p>
+        <p className="mt-2.5 border-t border-slate-100 pt-2.5 text-[13px] leading-snug text-slate-600">
+          <span className="font-bold text-slate-900">Why not &ldquo;{wrong.text}&rdquo;?</span> {wrong.why}
+        </p>
+      </figure>
     </div>
   )
 }

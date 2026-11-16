@@ -5,7 +5,7 @@
 // Nothing is saved: this is a taste, not a practice set.
 import { Link } from '@tanstack/react-router'
 import { useState } from 'react'
-import { ArrowRight, Check, CircleCheck, CircleX, RotateCcw } from 'lucide-react'
+import { ArrowRight, CircleCheck, CircleX, RotateCcw } from 'lucide-react'
 import { SAMPLE_QUESTIONS, type SampleOption } from '@/content/sample-questions'
 import { PRACTICE_SUBJECTS_PHRASE, PRACTICE_TOTAL } from '@/lib/practice-counts'
 import { Band } from '@/components/public/Section'
@@ -18,8 +18,6 @@ const OPTION_STYLE: Record<OptionState, string> = {
   'chosen-wrong': 'border-danger bg-danger/10',
   other: 'border-border bg-card opacity-60',
 }
-
-const POINTS = ['Marked the moment you answer', 'Full working for every question', 'The reason each wrong option is wrong']
 
 export function TryQuestion() {
   const [index, setIndex] = useState(0)
@@ -39,23 +37,13 @@ export function TryQuestion() {
 
   return (
     <Band tone="tint" id="try-a-question" labelledBy="try-heading" className="scroll-mt-20">
-      <div className="grid items-center gap-9 lg:grid-cols-[minmax(0,.85fr)_minmax(0,1.15fr)] lg:gap-16">
-        <div data-reveal>
-          <p className="site-eyebrow">Try it now: no account needed</p>
-          <h2 id="try-heading" className="site-h2 mt-3">Don&rsquo;t just find out you&rsquo;re wrong. Learn why.</h2>
-          <p className="site-lede mt-4">Most practice apps only mark an answer right or wrong. Here every question shows the full working, and each wrong option names the mistake that leads to it, so you fix the habit and not just the question. Answer one now and see.</p>
-          <ul className="mt-6 space-y-3">
-            {POINTS.map((t) => (
-              <li key={t} className="flex gap-3 text-[15px] font-medium">
-                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-success/12 text-success">
-                  <Check className="h-3.5 w-3.5" strokeWidth={3} aria-hidden />
-                </span>
-                {t}
-              </li>
-            ))}
-          </ul>
-          <p className="mt-6 text-sm text-muted-foreground">
-            {PRACTICE_TOTAL.toLocaleString('en')} original questions so far, in {PRACTICE_SUBJECTS_PHRASE}, written by WASSCE Tutor to the syllabus. They are not WAEC past papers.
+      <div className="grid items-center gap-7 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.2fr)] lg:gap-16">
+        <div data-reveal className="max-w-md">
+          <p className="site-eyebrow">Try it: no account needed</p>
+          <h2 id="try-heading" className="site-h2 mt-3">Every answer explained.</h2>
+          <p className="site-lede mt-4">Pick an answer. See the working, and the mistake behind each wrong option.</p>
+          <p className="mt-5 hidden text-sm text-muted-foreground lg:block">
+            {PRACTICE_TOTAL.toLocaleString('en')} original questions in {PRACTICE_SUBJECTS_PHRASE}, written to the syllabus. Not WAEC past papers.
           </p>
         </div>
 
