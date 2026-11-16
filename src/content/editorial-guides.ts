@@ -8,6 +8,111 @@ const PEXELS = { imageSourceLabel: 'Pexels', imageRights: 'Used under the Pexels
 
 export const GUIDE_POSTS: BlogPost[] = [
   {
+    slug: 'wassce-exam-day-guide-sierra-leone',
+    seoTitle: 'WASSCE Exam Day Checklist: What to Bring and What Is Banned | WASSCE Tutor',
+    title: 'WASSCE Exam Day in Sierra Leone: What to Bring, What Is Banned, and How to Use Your Time',
+    description: 'A checklist for every WASSCE paper: the equipment and calculators WAEC allows, the items that can cost you your results, how to fill in your answer sheets, and what to do if something goes wrong.',
+    category: 'WASSCE exams',
+    publishedAt: '2026-11-16',
+    updatedAt: '2026-11-16',
+    readMinutes: 7,
+    image: '/img/blog/wassce-exam-day.webp',
+    imageAlt: 'A young man studying at his desk, writing in a notebook',
+    imageCredit: 'Oladimeji Ajegbile via Pexels',
+    imageSourceUrl: 'https://www.pexels.com/photo/photo-of-man-writing-on-notebook-2989397/',
+    ...PEXELS,
+    intro: 'Months of revision can be undone in a few minutes on the day: a phone left in a pocket, a borrowed protractor, an index number written wrongly, or a compulsory question missed. This checklist covers what WAEC allows, what it does not, and the habits that protect your marks in every paper.',
+    sections: [
+      {
+        heading: 'Before the examination starts',
+        bullets: [
+          'Get your timetable from your school (or WAEC, if you are a private candidate) and mark every paper, with its date and time, on one sheet you can see every day.',
+          'Ask your school which curriculum each of your subjects is examined on. The Ministry of Basic and Senior Secondary Education has said the 2026 WASSCE examines some subjects on the new senior secondary curriculum and others on the old one.',
+          'Learn your index number by heart, and keep a copy with your examination documents.',
+          'If you are a private candidate, visit your centre before the first paper so you know how long the journey takes.',
+          'In the last weeks, do at least one full paper in every subject under the real time limit.'
+        ]
+      },
+      {
+        heading: 'What to bring',
+        bullets: [
+          'Several pens that work, pencils, a sharpener and a clean eraser for the objective answer sheet.',
+          'For Mathematics and the sciences: your own ruler, pair of compasses, protractor and set squares. The WAEC Mathematics syllabus says candidates will not be allowed to borrow instruments or any other material from other candidates in the hall.',
+          'A calculator, if it is allowed: the syllabus permits only non-programmable, silent and cordless calculators that cannot print, send or receive information.',
+          'WAEC-approved mathematical tables, which the syllabus allows in the examination room. Graph paper is provided when a paper needs it.',
+          'Any identification or examination documents your school or WAEC gives you.'
+        ],
+        paragraphs: ['Pack the bag the night before, and check it against your timetable so you have the instruments the next day’s papers need.']
+      },
+      {
+        heading: 'What can cost you your results',
+        bullets: [
+          'A mobile phone. The WAEC Mathematics syllabus states that phones are not allowed, with or without a calculator. In Ghana, WAEC cancelled the entire results of 861 candidates in 2026 for having a phone in the hall, whether or not they used it. Leave yours at home or with someone outside.',
+          'Other electronic devices, including smartwatches and calculators that are programmable or can communicate.',
+          'Notes, “leaked” questions or any material you were not given in the hall. Sierra Leone’s Anti-Corruption Commission lists possessing foreign materials and using mobile phones during the WASSCE among the malpractice it will investigate, arrest and prosecute.',
+          'Paying anyone for help. The Commission warns that school authorities, invigilators and examination officials must not demand or accept any advantage or bribe from candidates or parents, and that corruption in examinations is an offence under the Anti-Corruption (Amendment) Act 2019.'
+        ],
+        paragraphs: ['People who sell “leaked” papers are almost always selling fakes. Even when they are not, buying them puts your whole result at risk.']
+      },
+      {
+        heading: 'Arrive early',
+        paragraphs: [
+          'Plan to be at the centre well before the paper starts, with time to find your seat and settle before the paper begins. Do not count on being let in after it has started, and remember that any time you lose cannot be given back.',
+          'Eat before you leave and bring water if your centre allows it. A paper of two hours or more is a long time to work on an empty stomach.'
+        ]
+      },
+      {
+        heading: 'In the hall: the first five minutes',
+        bullets: [
+          'Listen to the supervisor’s instructions and do what they say, including when to start and stop writing.',
+          'Write your name and index number exactly as instructed on every answer sheet and booklet, and check every digit. A wrong index number can separate you from your script.',
+          'On the objective answer sheet, shade one box per question, firmly and neatly. If you change an answer, erase the old mark completely.',
+          'Read the instructions on the question paper before you answer anything: how many questions to answer, which are compulsory, and how long you have. The commonest avoidable mistake is answering too many or too few questions.'
+        ]
+      },
+      {
+        heading: 'Use the time the paper gives you',
+        bullets: [
+          'Work out the minutes per question before you start, and write your target finishing time for each section at the top of the paper.',
+          'In objective papers, answer every question. A blank cannot score, and you lose nothing by choosing your best answer.',
+          'In essay papers, start with the questions you know best, so a hard question cannot eat the time for an easy one.',
+          'In English Language, the listening comprehension test is played from a recording, so be ready before it starts and keep still and silent while it plays.',
+          'Keep the last five minutes to check your index number, the question numbers on your answers, and your working.'
+        ],
+        paragraphs: ['Our subject guides give the exact time and marks for each paper in Mathematics, English Language, Biology, Chemistry and Physics.']
+      },
+      {
+        heading: 'Practicals',
+        paragraphs: [
+          'Bring every instrument the paper might need, because you may not borrow. Follow the supervisor’s instructions on apparatus and safety, record what you actually observe rather than what you expected to see, and write units with every reading.'
+        ]
+      },
+      {
+        heading: 'If something goes wrong',
+        bullets: [
+          'If you receive the wrong paper, a page is missing or printed badly, or your name is not on the list, tell the supervisor at once, before you leave the hall.',
+          'If you are ill on the day, tell the supervisor and your school as soon as you can.',
+          'If anyone asks you or your parents for money to “help” in the examination, refuse and report it to the Anti-Corruption Commission on its hotlines, 077-985-985 or 077-986-986.'
+        ]
+      },
+      {
+        heading: 'Between papers',
+        paragraphs: [
+          'Do not spend the evening going over the paper you have just sat with friends; it cannot change your marks. Check the timetable for the next paper, pack your bag for it, revise the topics it covers, and sleep. A rested mind recalls more than a tired one that studied an extra hour.'
+        ]
+      }
+    ],
+    sources: [
+      { label: 'Anti-Corruption Commission: warning against malpractice, mobile phone use and extortion in the WASSCE', url: 'https://www.anticorruption.gov.sl/blog/anti-corruption-commission-sl-news-room-1/post/acc-warns-against-malpractices-wanton-use-of-mobile-phones-and-extortion-in-the-on-going-west-african-senior-school-certificate-examination-wassce-1039' },
+      { label: 'Premier Media: education stakeholders approve dual curricula for the 2026 WASSCE', url: 'https://www.premiermedia-sl.com/?p=26293' },
+      { label: 'WAEC General Mathematics syllabus: calculators, tables and instruments (PDF, reproduced by waecsyllabus.com)', url: 'https://waecsyllabus.com/files/ssce/GENERAL%20MATHEMATICS%20OR%20MATHEMATICS%20(CORE).pdf' },
+      { label: 'WAEC English Language syllabus: listening comprehension test (PDF, reproduced by waecsyllabus.com)', url: 'https://waecsyllabus.com/files/ssce/ENGLISH%20LANGUAGE.pdf' },
+      { label: 'MyJoyOnline (Ghana): WAEC cancels results of candidates found with mobile phones', url: 'https://www.myjoyonline.com/waec-questions-effectiveness-of-searches-after-phones-found-on-candidates/' }
+    ],
+    related: ['how-to-pass-wassce-mathematics', 'how-to-check-wassce-result-sierra-leone'],
+    action: { heading: 'Practise every subject under exam timing before the day.', label: 'Explore subjects', href: '/wassce/subjects' }
+  },
+  {
     slug: 'how-to-check-wassce-result-sierra-leone',
     seoTitle: 'How to Check Your WASSCE Result Online in Sierra Leone | WASSCE Tutor',
     title: 'How to Check Your WASSCE Result Online in Sierra Leone, Step by Step',
