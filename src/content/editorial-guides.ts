@@ -312,5 +312,243 @@ export const GUIDE_POSTS: BlogPost[] = [
     ],
     related: ['how-to-pass-wassce-mathematics', 'what-counts-as-a-wassce-credit-for-university-admission'],
     action: { heading: 'Lessons for every essay type, grammar topic and listening skill in the syllabus.', label: 'Open English Language', href: '/wassce/english-language' }
+  },
+  {
+    slug: 'how-to-pass-wassce-biology',
+    seoTitle: 'How to Pass WASSCE Biology: Papers, Practical and Study Plan | WASSCE Tutor',
+    title: 'How to Pass WASSCE Biology: The Three Papers, the Practical, and How to Revise',
+    description: 'How WASSCE Biology is examined for Sierra Leone candidates, why the practical carries 40% of the marks, how to answer essay questions, and a revision plan.',
+    category: 'Study guides',
+    publishedAt: '2026-11-16',
+    updatedAt: '2026-11-16',
+    readMinutes: 8,
+    image: '/img/blog/pass-wassce-biology.webp',
+    imageAlt: 'A scientist at a microscope',
+    imageCredit: 'Artem Podrez via Pexels',
+    imageSourceUrl: 'https://www.pexels.com/photo/a-man-looking-at-the-camera-while-holding-the-eyepiece-of-the-microscope-5726797/',
+    ...PEXELS,
+    intro: 'Biology is the science most WASSCE candidates take, and it is required for medicine, nursing, pharmacy, agriculture and many other courses. It also has a trap: many candidates revise only the theory, while the practical paper carries a large share of the marks. This guide follows the WAEC Biology syllabus, including the parts set only for candidates in Sierra Leone, Nigeria, The Gambia and Liberia.',
+    sections: [
+      {
+        heading: 'How the examination is set',
+        paragraphs: ['There are three papers and you must take all of them. Papers 1 and 2 are taken together at one sitting.'],
+        bullets: [
+          'Paper 1: 50 multiple-choice questions in 50 minutes, for 50 marks, from the part of the syllabus common to all countries.',
+          'Paper 2: essays in 1 hour 40 minutes, for 70 marks. In Section A you answer two of four questions (20 marks each). In Section C, set for candidates in Sierra Leone, Nigeria, The Gambia and Liberia, you answer all the short structured questions (30 marks).',
+          'Paper 3: the practical, 2 hours, for 80 marks. School candidates take a practical test; private candidates take a test of practical work. Section A has two compulsory questions (25 marks each) and Section C has one question for Sierra Leone candidates (30 marks).'
+        ]
+      },
+      {
+        heading: 'The practical is 40% of your marks',
+        paragraphs: [
+          'Add the papers up: 50 + 70 + 80 = 200 marks, and the practical is 80 of them. No other part of the examination is worth as much. A candidate who has only read notes and never handled a specimen or drawn one is giving away marks before the theory papers even begin.',
+          'Throughout the syllabus, candidates are expected to observe, draw and label: cells, tissues, organs, flowers, fruits, seeds, and the structures of plants and animals. That is what the practical tests.'
+        ],
+        bullets: [
+          'Draw in pencil, with clean single lines and no shading.',
+          'Make the drawing large enough to show the parts clearly, and give it a title.',
+          'Label with straight lines that do not cross, and print the labels neatly.',
+          'Learn the food tests and the simple experiments in the syllabus (for example on osmosis, transpiration and reflex actions) well enough to describe the method, the observation and the conclusion.'
+        ]
+      },
+      {
+        heading: 'What the syllabus covers',
+        paragraphs: [
+          'The common part of the syllabus, which Paper 1 and Section A of Paper 2 are drawn from, is grouped under: Concept of Living; Plant and Animal Nutrition; Basic Ecological Concepts; Conservation of Natural Resources; Variation in Population; Biology of Heredity (Genetics); and Adaptation for Survival and Evolution.',
+          'The section for Sierra Leone, Nigeria, The Gambia and Liberia goes deeper into some of these: cell theory, irritability, excretory systems and reproduction; the nitrogen cycle and the alimentary system; habitats; applications of variation such as crime detection and blood transfusion; and evolution. Section C of Paper 2 and Section C of Paper 3 come from this part, so it cannot be skipped.'
+        ]
+      },
+      {
+        heading: 'Pacing Paper 1 and Paper 2',
+        bullets: [
+          'Paper 1: 50 minutes for 50 questions is one minute each. Answer every question; a blank cannot score.',
+          'Paper 2: about 30 minutes on each of your two Section A essays and about 40 minutes on the Section C questions, which carry the most marks.',
+          'Read all four Section A questions before you choose. Pick the two where you can answer every part, not the two whose first part looks easiest.'
+        ]
+      },
+      {
+        heading: 'Writing answers that score',
+        bullets: [
+          'Answer with the exact term the question asks for. “Describe” wants a sequence of steps or features; “explain” wants the reason; “state” wants a short fact.',
+          'Use the number of marks as a guide: a 4-mark question usually needs four separate points.',
+          'Draw and label a diagram wherever it shows the answer faster than words, for example the structure of the kidney, the heart, a flower or a food web.',
+          'Spell biological terms correctly. Many terms differ by a few letters (meiosis and mitosis, ureter and urethra) and a misspelt word can be marked as the wrong one.'
+        ]
+      },
+      {
+        heading: 'A revision plan',
+        bullets: [
+          'Start with cells and life processes: cell structure, movement of substances into and out of cells, nutrition, respiration, transport and excretion. Later topics build on them.',
+          'Then ecology and conservation, which are full of definitions and examples. Learn local examples: crops, animals and habitats in Sierra Leone.',
+          'Then genetics, variation and evolution. Practise genetic crosses on paper until you can set out a cross and its ratios without help.',
+          'Every week: one practical-style task. Draw a real specimen (a leaf, a flower, an insect, a seed) with a title and labels.',
+          'In the last month: full papers under examination timing.'
+        ]
+      }
+    ],
+    sources: [
+      { label: 'WAEC Biology syllabus and examination scheme (PDF, reproduced by waecsyllabus.com)', url: 'https://waecsyllabus.com/files/ssce/BIOLOGY.pdf' },
+      { label: 'WAEC Biology syllabus summary (waecsyllabus.com, an independent guide)', url: 'https://waecsyllabus.com/biology/' }
+    ],
+    related: ['how-to-pass-wassce-chemistry', 'how-to-choose-wassce-subjects-for-your-university-course'],
+    action: { heading: 'Study WASSCE Biology topic by topic, with diagrams in every lesson.', label: 'Open Biology', href: '/wassce/biology' }
+  },
+  {
+    slug: 'how-to-pass-wassce-chemistry',
+    seoTitle: 'How to Pass WASSCE Chemistry: Papers, Practical and Study Plan | WASSCE Tutor',
+    title: 'How to Pass WASSCE Chemistry: The Three Papers, Titrations, Salt Analysis and a Plan',
+    description: 'How WASSCE Chemistry is examined, what the practical tests (titration and qualitative analysis), the rules on units and significant figures, and how to revise.',
+    category: 'Study guides',
+    publishedAt: '2026-11-16',
+    updatedAt: '2026-11-16',
+    readMinutes: 8,
+    image: '/img/blog/pass-wassce-chemistry.webp',
+    imageAlt: 'A researcher running a titration',
+    imageCredit: 'RF._.studio via Pexels',
+    imageSourceUrl: 'https://www.pexels.com/photo/focused-african-american-researcher-conducting-biochemical-experiment-in-clinic-3825434/',
+    ...PEXELS,
+    intro: 'Chemistry is required for medicine, pharmacy, engineering and most science degrees. It rewards steady practice more than memorising: the calculations, the equations and the practical skills all improve with repetition. This guide follows the WAEC Chemistry syllabus and its examination scheme.',
+    sections: [
+      {
+        heading: 'How the examination is set',
+        paragraphs: ['There are three papers and you must take all of them. Papers 1 and 2 are taken together at one sitting.'],
+        bullets: [
+          'Paper 1: 50 multiple-choice questions in 1 hour, for 50 marks, from the part of the syllabus common to all candidates.',
+          'Paper 2: essays in 2 hours, for 100 marks. Section A has ten short structured questions; answer all of them, for 25 marks. Section B has four questions, two on the common syllabus and two on your country’s section; answer any three, at 25 marks each.',
+          'Paper 3: the practical, for 50 marks. School candidates take a 2-hour practical test; private candidates take a 1 hour 30 minute alternative to practical. Both have three compulsory questions.'
+        ]
+      },
+      {
+        heading: 'What the practical tests',
+        paragraphs: ['The syllabus says the three practical questions are always: one on quantitative analysis, one on qualitative analysis, and one on the practical activities in your teaching syllabus.'],
+        bullets: [
+          'Quantitative analysis means titration. You use standard solutions of acids and alkalis with methyl orange, methyl red or phenolphthalein to find concentrations, molar masses, percentage purity or the water of crystallisation. The syllabus also lists redox titrations, such as acidified permanganate with iron(II).',
+          'Qualitative analysis means identifying ions and gases from your observations. The syllabus lists tests for the cations NH₄⁺, Ca²⁺, Pb²⁺, Cu²⁺, Fe²⁺, Fe³⁺, Al³⁺ and Zn²⁺ with sodium hydroxide and aqueous ammonia; the anions Cl⁻, SO₃²⁻, CO₃²⁻, NO₃⁻ and SO₄²⁻; and the gases H₂, NH₃, CO₂, HCl and SO₂.',
+          'The syllabus says no formal scheme of analysis is required. What earns marks is recording what you actually see (colour, precipitate, whether it dissolves in excess, gas given off) and the inference that follows from it.'
+        ]
+      },
+      {
+        heading: 'Titration: where marks are won and lost',
+        bullets: [
+          'Record every burette reading to two decimal places, in a neat table with initial reading, final reading and volume used.',
+          'Take an average only of titres that agree closely, and say which ones you used.',
+          'In the calculation, write the balanced equation first and use its mole ratio. Most wrong answers come from skipping this step.',
+          'Show every step: moles from concentration and volume, the mole ratio, then the quantity asked for, with units.'
+        ]
+      },
+      {
+        heading: 'Units, significant figures and names',
+        paragraphs: [
+          'The syllabus states that candidates must know significant figures, SI units and the conventional and IUPAC systems of naming compounds. Examiners expect answers given to a sensible number of significant figures, with correct units, and compounds named by their systematic names where the question asks for them.'
+        ]
+      },
+      {
+        heading: 'What the syllabus covers',
+        paragraphs: [
+          'The common part of the syllabus covers: the structure of the atom; separation techniques; periodic chemistry; chemical bonds; stoichiometry and chemical reactions; states of matter; energy changes; acids, bases and salts; solubility; rates of reaction and equilibrium; redox reactions; the chemistry of carbon (organic chemistry); chemistry, industry and the environment; and basic biochemistry.',
+          'The section for Sierra Leone, Nigeria, Liberia and The Gambia adds non-metals and their compounds, and metals and their compounds. Two of the four Section B questions in Paper 2 come from your country’s section, so revise it.'
+        ]
+      },
+      {
+        heading: 'A revision plan',
+        bullets: [
+          'First: atomic structure, bonding and the periodic table. Everything else is explained in terms of them.',
+          'Second: the mole and stoichiometry. Practise calculations every day until the steps are automatic; they appear in every paper.',
+          'Third: acids, bases and salts, redox and electrolysis, then rates and equilibrium.',
+          'Fourth: organic chemistry: the homologous series, their reactions, and the tests for functional groups.',
+          'Every week: one titration calculation and one set of qualitative analysis observations to interpret, written out as in Paper 3.',
+          'In the last month: full papers under examination timing.'
+        ]
+      }
+    ],
+    sources: [
+      { label: 'WAEC Chemistry syllabus and examination scheme (PDF, reproduced by waecsyllabus.com)', url: 'https://waecsyllabus.com/files/ssce/CHEMISTRY.pdf' },
+      { label: 'WAEC Chemistry syllabus summary (waecsyllabus.com, an independent guide)', url: 'https://waecsyllabus.com/chemistry/' }
+    ],
+    related: ['how-to-pass-wassce-physics', 'how-to-pass-wassce-biology'],
+    action: { heading: 'Study WASSCE Chemistry topic by topic, with worked calculations.', label: 'Open Chemistry', href: '/wassce/chemistry' }
+  },
+  {
+    slug: 'how-to-pass-wassce-physics',
+    seoTitle: 'How to Pass WASSCE Physics: Papers, Practical and Study Plan | WASSCE Tutor',
+    title: 'How to Pass WASSCE Physics: The Three Papers, Calculations and the Practical',
+    description: 'How WASSCE Physics is examined, how to pace each paper, how to set out calculations and practical reports, and a revision plan through the five parts of the syllabus.',
+    category: 'Study guides',
+    publishedAt: '2026-11-16',
+    updatedAt: '2026-11-16',
+    readMinutes: 8,
+    image: '/img/blog/pass-wassce-physics.webp',
+    imageAlt: 'A student soldering an electrical circuit',
+    imageCredit: 'ThisIsEngineering via Pexels',
+    imageSourceUrl: 'https://www.pexels.com/photo/woman-soldering-pcb-in-school-19895844/',
+    ...PEXELS,
+    intro: 'Physics is required for engineering and many science courses, and it has a reputation for being hard. Much of that reputation comes from calculations set out badly and practicals done in a hurry. Both can be fixed with method and practice. This guide follows the WAEC Physics syllabus and its examination scheme.',
+    sections: [
+      {
+        heading: 'How the examination is set',
+        paragraphs: ['There are three papers and you must take all of them. Papers 1 and 2 are taken together at one sitting.'],
+        bullets: [
+          'Paper 1: 50 multiple-choice questions in 1¼ hours, for 50 marks.',
+          'Paper 2: 1½ hours, 60 marks. Section A has seven short structured questions; answer any five, for 15 marks in total. Section B has five essay questions; answer any three, for 45 marks.',
+          'Paper 3: the practical, 50 marks. School candidates take a practical test and private candidates an alternative to practical. Three questions are set; answer any two in 2¾ hours.'
+        ]
+      },
+      {
+        heading: 'Pace yourself',
+        bullets: [
+          'Paper 1: 75 minutes for 50 questions is a minute and a half each. Answer every question.',
+          'Paper 2: about 20 minutes for your five Section A answers, then about 22 minutes for each of the three Section B questions. Section B carries three times the marks of Section A, so give it the time.',
+          'Paper 3: you answer two questions in 2¾ hours, so roughly 80 minutes each. Use it to take careful readings, not to rush.',
+          'Wherever you have a choice, read every question first and choose the ones you can finish.'
+        ]
+      },
+      {
+        heading: 'Set out every calculation the same way',
+        paragraphs: ['The syllabus says questions are set in SI units. Most lost marks in calculations come from missing steps and units, not from wrong physics.'],
+        bullets: [
+          'Write down what you are given, with units, and what you need to find.',
+          'Write the formula in symbols before putting numbers in.',
+          'Convert everything to SI units first: metres, kilograms, seconds, amperes, kelvin.',
+          'Substitute, then calculate, one step per line.',
+          'Give the answer with its unit and a sensible number of significant figures.'
+        ]
+      },
+      {
+        heading: 'The practical: readings, graph and precautions',
+        paragraphs: ['The syllabus lists what the practical assesses: following instructions, using apparatus, recording observations and measurements with attention to precision, accuracy and units, interpreting the results, and stating the precautions taken to get accurate results. In practice most questions follow the same shape.'],
+        bullets: [
+          'Record readings in a table with a unit in each column heading, and to the precision of the instrument.',
+          'Take enough readings across the range you are given.',
+          'Plot the graph with a sensible scale that uses most of the paper, labelled axes with units, and a line of best fit.',
+          'Work out the slope with a large triangle, and show the values you read off.',
+          'State precautions as specific actions, for example “I avoided parallax by reading the scale at eye level” or “I switched off the circuit between readings so the wire did not heat up”, not “I was careful”.'
+        ]
+      },
+      {
+        heading: 'What the syllabus covers',
+        paragraphs: [
+          'The syllabus is organised in five parts: interaction of matter, space and time (including motion and forces); energy, both mechanical and heat; waves (including light and sound); fields (gravitational, electric and magnetic, and electricity); and atomic and nuclear physics.',
+          'It also lists harmonised topics for short structured questions, set for every country, such as derived quantities and dimensions, projectile motion, satellites, elasticity, fibre optics, lasers and semiconductors. The syllabus lists them for short structured questions, which is the format of Section A of Paper 2, so give each one a quick revision.'
+        ]
+      },
+      {
+        heading: 'A revision plan',
+        bullets: [
+          'First: units, measurement and motion: speed, velocity, acceleration, the equations of motion and motion graphs. They underpin most of the course.',
+          'Second: forces, energy, work, power, machines and heat.',
+          'Third: waves, light and sound.',
+          'Fourth: electricity and magnetism, which carry a large share of the calculations.',
+          'Fifth: atomic and nuclear physics and the harmonised short-answer topics.',
+          'Every week: one practical write-up with a table, a graph and precautions, and a timed set of calculations.',
+          'In the last month: full papers under examination timing.'
+        ]
+      }
+    ],
+    sources: [
+      { label: 'WAEC Physics syllabus and examination scheme (PDF, reproduced by waecsyllabus.com)', url: 'https://waecsyllabus.com/files/ssce/PHYSICS.pdf' },
+      { label: 'WAEC Physics syllabus summary (waecsyllabus.com, an independent guide)', url: 'https://waecsyllabus.com/physics/' }
+    ],
+    related: ['how-to-pass-wassce-chemistry', 'how-to-pass-wassce-mathematics'],
+    action: { heading: 'Study WASSCE Physics topic by topic, with worked examples and practice.', label: 'Open Physics', href: '/wassce/physics' }
   }
 ]
