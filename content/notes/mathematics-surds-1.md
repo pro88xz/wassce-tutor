@@ -237,6 +237,8 @@ Master the definitions and the product/quotient properties; simplification comes
 
 ## Practice problems
 
+Try each question first, then open the answer to check your working.
+
 **1.** Which of the following are surds?
 (a) $\sqrt{36}$
 (b) $\sqrt{50}$
@@ -246,45 +248,63 @@ Master the definitions and the product/quotient properties; simplification comes
 (f) $\sqrt{0.16}$
 (g) $\sqrt{17}$
 
+:::reveal{title="Show the answer"}
+(b) $\sqrt{50}$, (d) $\sqrt[3]{20}$, (g) $\sqrt{17}$. The others reduce to rationals.
+:::
+
 **2.** Compute $\sqrt{12} \times \sqrt{3}$.
+
+:::reveal{title="Show the answer"}
+$\sqrt{12 \times 3} = \sqrt{36} = 6$.
+:::
 
 **3.** Compute $\sqrt{50} \div \sqrt{2}$.
 
+:::reveal{title="Show the answer"}
+$\sqrt{50/2} = \sqrt{25} = 5$.
+:::
+
 **4.** Compute $(\sqrt{6})^2$.
+
+:::reveal{title="Show the answer"}
+$6$.
+:::
 
 **5.** Compute $\sqrt{9} + \sqrt{16}$.
 
+:::reveal{title="Show the answer"}
+$3 + 4 = 7$.
+:::
+
 **6.** Estimate $\sqrt{30}$ (state between which two integers).
+
+:::reveal{title="Show the answer"}
+$25 < 30 < 36$, so $5 < \sqrt{30} < 6$.
+:::
 
 **7.** Compute $\sqrt{2} \times \sqrt{8}$.
 
+:::reveal{title="Show the answer"}
+$\sqrt{16} = 4$.
+:::
+
 **8.** Compute $\sqrt{45} \div \sqrt{5}$.
+
+:::reveal{title="Show the answer"}
+$\sqrt{9} = 3$.
+:::
 
 **9.** Is $\sqrt{-4}$ defined in the real numbers?
 
+:::reveal{title="Show the answer"}
+No, $\sqrt{-4}$ is undefined in real numbers.
+:::
+
 **10.** True or False: $\sqrt{4 + 9} = \sqrt{4} + \sqrt{9}$.
 
-### Worked solutions
-
-**1.** (b) $\sqrt{50}$, (d) $\sqrt[3]{20}$, (g) $\sqrt{17}$. The others reduce to rationals.
-
-**2.** $\sqrt{12 \times 3} = \sqrt{36} = 6$.
-
-**3.** $\sqrt{50/2} = \sqrt{25} = 5$.
-
-**4.** $6$.
-
-**5.** $3 + 4 = 7$.
-
-**6.** $25 < 30 < 36$, so $5 < \sqrt{30} < 6$.
-
-**7.** $\sqrt{16} = 4$.
-
-**8.** $\sqrt{9} = 3$.
-
-**9.** No, $\sqrt{-4}$ is undefined in real numbers.
-
-**10.** False. $\sqrt{4 + 9} = \sqrt{13} \neq 7$.
+:::reveal{title="Show the answer"}
+False. $\sqrt{4 + 9} = \sqrt{13} \neq 7$.
+:::
 
 ## What's next
 

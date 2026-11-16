@@ -234,12 +234,18 @@ Familiarity with notation is the key. After this lesson, truth tables (next less
 
 ## Practice problems
 
+Try each question first, then open the answer to check your working.
+
 **1.** Which of the following are propositions?
 (a) The sky is blue.
 (b) What time is it?
 (c) $7 \times 8 = 56$.
 (d) Please close the door.
 (e) $x + 5 > 10$.
+
+:::reveal{title="Show the answer"}
+(a) Proposition. (b) Question — not a proposition. (c) Proposition. (d) Command — not a proposition. (e) Predicate — depends on $x$. Not a proposition.
+:::
 
 **2.** Let $p$ = "It is raining," $q$ = "It is cold." Translate each into logical notation.
 (a) It is not raining.
@@ -248,6 +254,10 @@ Familiarity with notation is the key. After this lesson, truth tables (next less
 (d) It is raining but not cold.
 (e) It is neither raining nor cold.
 
+:::reveal{title="Show the answer"}
+(a) $\neg p$. (b) $p \wedge q$. (c) $p \vee q$. (d) $p \wedge \neg q$. (e) $\neg p \wedge \neg q$.
+:::
+
 **3.** Translate each logical statement into English (using $p, q$ from above):
 (a) $\neg p$
 (b) $p \wedge q$
@@ -255,25 +265,27 @@ Familiarity with notation is the key. After this lesson, truth tables (next less
 (d) $\neg(p \wedge q)$
 (e) $p \to q$
 
+:::reveal{title="Show the answer"}
+(a) "It is not raining." (b) "It is raining and cold." (c) "It is raining or it is cold." (d) "It is not the case that it is raining and cold." / "It is not raining, or it is not cold." (e) "If it is raining, then it is cold."
+:::
+
 **4.** Let $p$ = "Tomorrow is Friday," $q$ = "It is a school day." Translate: "If tomorrow is Friday, then it is a school day."
+
+:::reveal{title="Show the answer"}
+$p \to q$.
+:::
 
 **5.** What is the truth value of $p \vee \neg p$? (Hint: always true regardless of $p$.)
 
+:::reveal{title="Show the answer"}
+Always TRUE. (This is a tautology.)
+:::
+
 **6.** What is the truth value of $p \wedge \neg p$? (Hint: always false.)
 
-### Worked solutions
-
-**1.** (a) Proposition. (b) Question — not a proposition. (c) Proposition. (d) Command — not a proposition. (e) Predicate — depends on $x$. Not a proposition.
-
-**2.** (a) $\neg p$. (b) $p \wedge q$. (c) $p \vee q$. (d) $p \wedge \neg q$. (e) $\neg p \wedge \neg q$.
-
-**3.** (a) "It is not raining." (b) "It is raining and cold." (c) "It is raining or it is cold." (d) "It is not the case that it is raining and cold." / "It is not raining, or it is not cold." (e) "If it is raining, then it is cold."
-
-**4.** $p \to q$.
-
-**5.** Always TRUE. (This is a tautology.)
-
-**6.** Always FALSE. (This is a contradiction.)
+:::reveal{title="Show the answer"}
+Always FALSE. (This is a contradiction.)
+:::
 
 ## What's next
 

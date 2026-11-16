@@ -127,18 +127,37 @@ A Bo market trader who packs groundnuts in bags of 5, crates of 5 bags and boxes
 Expect **addition and subtraction in bases 2, 5 and 8**, **multiplication in small bases**, and **"find the base"** equations, often giving a quadratic in the base. State the reason for rejecting negative or too-small values of the base.
 :::
 
-## Quick check
+## Practice
 
-1. Add $1101_2 + 1011_2$.
-2. Subtract $302_5 - 143_5$.
-3. Find $14_5 \times 3_5$, giving your answer in base five.
-4. Find $b$ if $52_b = 37$.
-5. Find $x$ if $144_x = 64$.
+Try each question first, then open the answer to check your working.
 
-**Answers:**
+**1.** Add $1101_2 + 1011_2$.
 
-1. $13 + 11 = 24 = 11000_2$.
-2. $77 - 48 = 29 = 104_5$ (check: $25 + 0 + 4 = 29$).
-3. $9 \times 3 = 27 = 102_5$ (check: $25 + 2 = 27$).
-4. $5b + 2 = 37$, so $b = 7$.
-5. $x^2 + 4x + 4 = 64$, so $(x + 2)^2 = 64$, $x + 2 = 8$ and $x = 6$.
+:::reveal{title="Show the answer"}
+$13 + 11 = 24 = 11000_2$.
+:::
+
+**2.** Subtract $302_5 - 143_5$.
+
+:::reveal{title="Show the answer"}
+$77 - 48 = 29 = 104_5$ (check: $25 + 0 + 4 = 29$).
+:::
+
+**3.** Find $14_5 \times 3_5$, giving your answer in base five.
+
+:::reveal{title="Show the answer"}
+$9 \times 3 = 27 = 102_5$ (check: $25 + 2 = 27$).
+:::
+
+**4.** Find $b$ if $52_b = 37$.
+
+:::reveal{title="Show the answer"}
+$5b + 2 = 37$, so $b = 7$.
+:::
+
+**5.** Find $x$ if $144_x = 64$.
+
+:::reveal{title="Show the answer"}
+$x^2 + 4x + 4 = 64$, so $(x + 2)^2 = 64$, $x + 2 = 8$ and $x = 6$.
+:::
+

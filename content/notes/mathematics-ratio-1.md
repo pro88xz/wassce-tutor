@@ -313,10 +313,9 @@ Check: $16 + 12 + 8 = 36$. ✓
 :::callout{type=worked-example}
 **Solve each ratio problem.**
 
-**(a)** A class has students in ratio $boys : girls = 5 : 7$. If there are $40$ girls, how many boys? Total students? 
-$5 : 7 = x : 40$. $7x = 200$, $x = 28.57$. Hmm, not integer. Let me reread. Probably $5 : 7 = b : 40$ should give an integer. $b = 200/7$, not integer. Let me change: assume $40$ is total instead. 
-If the ratio is $5 : 7$ and total is $40$, each part is $40/12$, not integer. 
-Let me use a cleaner example: ratio $5 : 7$ and $35$ girls. $5 : 7 = x : 35$. $7x = 175$. $x = 25$ boys. Total $= 60$.
+**(a)** In a class the ratio of boys to girls is $5 : 7$. There are $35$ girls. How many boys are there, and how many students in total? 
+$5 : 7 = x : 35$, so $7x = 175$ and $x = 25$ boys. Total $= 25 + 35 = 60$ students. 
+Check: $25 : 35 = 5 : 7$ ✓
 
 **(b)** Two friends shared $4500$ NLe in ratio $2 : 3$. How much did each receive? 
 Total parts $= 5$. Each part $= 4500/5 = 900$. 
@@ -389,6 +388,8 @@ Master the basics — simplification, equivalence, conversion — before tacklin
 
 ## Practice problems
 
+Try each question first, then open the answer to check your working.
+
 **1.** Simplify each ratio.
 (a) $36 : 24$
 (b) $45 : 90$
@@ -397,74 +398,103 @@ Master the basics — simplification, equivalence, conversion — before tacklin
 (e) $0.8 : 1.6$
 (f) $1\dfrac{1}{2} : 3$
 
+:::reveal{title="Show the answer"}
+(a) GCD $= 12$. $3 : 2$. (b) GCD $= 45$. $1 : 2$. (c) GCD $= 12$. $4 : 5 : 7$. (d) LCD $= 4$. $2 : 1$. (e) ×10: $8 : 16 = 1 : 2$. (f) $\dfrac{3}{2} : 3 = 3 : 6 = 1 : 2$.
+:::
+
 **2.** Express each as a ratio in simplest form.
 (a) $30$ minutes to $2$ hours.
 (b) $400$ g to $1$ kg.
 (c) $50$ cm to $1.5$ m.
 (d) $20\%$ to $40\%$.
 
+:::reveal{title="Show the answer"}
+(a) $30 : 120 = 1 : 4$. (b) $400 : 1000 = 2 : 5$. (c) $50 : 150 = 1 : 3$. (d) Cancel %: $20 : 40 = 1 : 2$.
+:::
+
 **3.** Find the missing value.
 (a) $4 : 5 = x : 25$.
 (b) $7 : 3 = 28 : x$.
 (c) $1 : 2 = x : 10 = 7 : y$.
 
+:::reveal{title="Show the answer"}
+(a) $4x = 100$, $x = 20$. (b) $3 \times 28 = 84$, $7x = 84$, $x = 12$. (c) From $1 : 2 = x : 10$: $x = 5$. From $1 : 2 = 7 : y$: $y = 14$.
+:::
+
 **4.** Are these ratios equivalent? Show your working.
 (a) $6 : 8$ and $15 : 20$.
 (b) $3 : 4$ and $9 : 13$.
 
+:::reveal{title="Show the answer"}
+(a) Simplify: $6 : 8 = 3 : 4$. $15 : 20 = 3 : 4$. Equivalent ✓. (b) $3 : 4$ already simplest. $9 : 13$ — cross-multiply: $3 \times 13 = 39$, $4 \times 9 = 36$. Not equivalent.
+:::
+
 **5.** A class has $24$ boys and $36$ girls. What is the ratio of boys to girls in simplest form?
+
+:::reveal{title="Show the answer"}
+$24 : 36$. GCD $= 12$. $2 : 3$.
+:::
 
 **6.** A school spends $30000$ NLe in the ratio $5 : 7$ between equipment and salaries. How much for each?
 
+:::reveal{title="Show the answer"}
+Total $= 12$ parts. Each part $= 30000/12 = 2500$. Equipment: $5 \times 2500 = 12500$ NLe. Salaries: $7 \times 2500 = 17500$ NLe.
+:::
+
 **7.** Aminata, Mohamed, and Foday split a $48000$ NLe inheritance in the ratio $3 : 4 : 5$. How much does each receive?
+
+:::reveal{title="Show the answer"}
+Total parts $= 12$. Each part $= 48000/12 = 4000$. Aminata: $12000$, Mohamed: $16000$, Foday: $20000$ NLe.
+:::
 
 **8.** A recipe uses sugar, flour, and butter in ratio $1 : 3 : 2$. If you use $300$ g of flour, how much sugar and butter?
 
+:::reveal{title="Show the answer"}
+Flour is $3$ parts $= 300$ g. So $1$ part $= 100$ g. Sugar = $100$ g. Butter = $2 \times 100 = 200$ g.
+:::
+
 **9.** A bonus of $12000$ NLe is shared between two people. The first receives $2000$ NLe more than the second. In what ratio is the bonus shared?
+
+:::reveal{title="Show the answer"}
+Let the first share be $a$ and the second $b$. Then $a + b = 12000$ and $a - b = 2000$.
+
+Adding: $2a = 14000$, so $a = 7000$ and $b = 5000$.
+
+Ratio: $7000 : 5000 = 7 : 5$.
+:::
 
 **10.** Two roads have lengths in ratio $2 : 5$. If the shorter is $40$ km, find the longer.
 
-**11.** Convert each ratio to a fraction and a percentage.
+:::reveal{title="Show the answer"}
+$2 : 5 = 40 : x$. $2x = 200$, $x = 100$ km.
+:::
+
+**11.** For each ratio, write the first part as a fraction and as a percentage of the whole.
 (a) $3 : 7$.
 (b) $1 : 4$.
 (c) $4 : 6$.
 
+:::reveal{title="Show the answer"}
+(a) $3 + 7 = 10$ parts: $\dfrac{3}{10} = 30\%$. (b) $\dfrac{1}{5} = 20\%$. (c) $\dfrac{4}{10} = \dfrac{2}{5} = 40\%$.
+:::
+
 **12.** Which is larger: $2 : 5$ or $3 : 8$?
+
+:::reveal{title="Show the answer"}
+Cross-multiply: $2 \times 8 = 16$, $5 \times 3 = 15$. $16 > 15$, so $2 : 5 > 3 : 8$.
+:::
 
 **13.** Arrange in decreasing order: $1 : 4, 2 : 9, 1 : 5$.
 
+:::reveal{title="Show the answer"}
+Decimal: $\dfrac{1}{4} = 0.25$, $\dfrac{2}{9} \approx 0.222$, $\dfrac{1}{5} = 0.2$. Decreasing: $1 : 4, 2 : 9, 1 : 5$.
+:::
+
 **14.** A mixture of palm wine and water is in ratio $4 : 1$. If the mixture is $25$ litres, how much palm wine and how much water?
 
-### Worked solutions
-
-**1.** (a) GCD $= 12$. $3 : 2$. (b) GCD $= 45$. $1 : 2$. (c) GCD $= 12$. $4 : 5 : 7$. (d) LCD $= 4$. $2 : 1$. (e) ×10: $8 : 16 = 1 : 2$. (f) $\dfrac{3}{2} : 3 = 3 : 6 = 1 : 2$.
-
-**2.** (a) $30 : 120 = 1 : 4$. (b) $400 : 1000 = 2 : 5$. (c) $50 : 150 = 1 : 3$. (d) Cancel %: $20 : 40 = 1 : 2$.
-
-**3.** (a) $4x = 100$, $x = 20$. (b) $3 \times 28 = 84$, $7x = 84$, $x = 12$. (c) From $1 : 2 = x : 10$: $x = 5$. From $1 : 2 = 7 : y$: $y = 14$.
-
-**4.** (a) Simplify: $6 : 8 = 3 : 4$. $15 : 20 = 3 : 4$. Equivalent ✓. (b) $3 : 4$ already simplest. $9 : 13$ — cross-multiply: $3 \times 13 = 39$, $4 \times 9 = 36$. Not equivalent.
-
-**5.** $24 : 36$. GCD $= 12$. $2 : 3$.
-
-**6.** Total $= 12$ parts. Each part $= 30000/12 = 2500$. Equipment: $5 \times 2500 = 12500$ NLe. Salaries: $7 \times 2500 = 17500$ NLe.
-
-**7.** Total parts $= 12$. Each part $= 48000/12 = 4000$. Aminata: $12000$, Mohamed: $16000$, Foday: $20000$ NLe.
-
-**8.** Flour is $3$ parts $= 300$ g. So $1$ part $= 100$ g. Sugar = $100$ g. Butter = $2 \times 100 = 200$ g.
-
-**9.** Let parts be $5k$ and $3k$ (first vs second). Total $5k + 3k = 8k = 12000$, $k = 1500$. First $= 7500$, second $= 4500$. Difference $= 3000$. Doesn't match. Let me redo. 
-Let first $= a$, second $= b$, $a + b = 12000$, $a - b = 2000$. Solve: $a = 7000$, $b = 5000$. Ratio: $7000 : 5000 = 7 : 5$.
-
-**10.** $2 : 5 = 40 : x$. $2x = 200$, $x = 100$ km.
-
-**11.** (a) $\dfrac{3}{10}$ of $30\%$. (b) $\dfrac{1}{5} = 20\%$. (c) $\dfrac{4}{10} = 40\%$.
-
-**12.** Cross-multiply: $2 \times 8 = 16$, $5 \times 3 = 15$. $16 > 15$, so $2 : 5 > 3 : 8$.
-
-**13.** Decimal: $\dfrac{1}{4} = 0.25$, $\dfrac{2}{9} \approx 0.222$, $\dfrac{1}{5} = 0.2$. Decreasing: $1 : 4, 2 : 9, 1 : 5$.
-
-**14.** Total parts $= 5$. Each part $= 25/5 = 5$ litres. Palm wine: $4 \times 5 = 20$ litres. Water: $5$ litres.
+:::reveal{title="Show the answer"}
+Total parts $= 5$. Each part $= 25/5 = 5$ litres. Palm wine: $4 \times 5 = 20$ litres. Water: $5$ litres.
+:::
 
 ## What's next
 

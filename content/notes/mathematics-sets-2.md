@@ -109,18 +109,37 @@ So $100 - 96 = 4$ take none.
 Expect to **list unions, intersections and complements**, to **shade regions** such as $(A \cup B)'$ or $A \cap B'$, and to **solve two- and three-set word problems**, often with an unknown $x$ in one region. Draw and label the Venn diagram; it earns method marks.
 :::
 
-## Quick check
+## Practice
 
-1. If $n(A) = 12$, $n(B) = 9$ and $n(A \cup B) = 17$, find $n(A \cap B)$.
-2. $U = \{a, b, c, d, e, f\}$, $P = \{a, b, c\}$, $Q = \{c, d\}$. Find $P' \cap Q$.
-3. In a group of 30, 18 like football, 15 like volleyball and $x$ like both; everyone likes at least one. Find $x$.
-4. In question 3, how many like football only?
-5. Which region does $A \cap B'$ describe in words?
+Try each question first, then open the answer to check your working.
 
-**Answers:**
+**1.** If $n(A) = 12$, $n(B) = 9$ and $n(A \cup B) = 17$, find $n(A \cap B)$.
 
-1. $12 + 9 - 17 = 4$.
-2. $P' = \{d, e, f\}$, so $P' \cap Q = \{d\}$.
-3. $18 + 15 - x = 30$, so $x = 3$.
-4. $18 - 3 = 15$.
-5. Elements in $A$ but not in $B$ ("A only").
+:::reveal{title="Show the answer"}
+$12 + 9 - 17 = 4$.
+:::
+
+**2.** $U = \{a, b, c, d, e, f\}$, $P = \{a, b, c\}$, $Q = \{c, d\}$. Find $P' \cap Q$.
+
+:::reveal{title="Show the answer"}
+$P' = \{d, e, f\}$, so $P' \cap Q = \{d\}$.
+:::
+
+**3.** In a group of 30, 18 like football, 15 like volleyball and $x$ like both; everyone likes at least one. Find $x$.
+
+:::reveal{title="Show the answer"}
+$18 + 15 - x = 30$, so $x = 3$.
+:::
+
+**4.** In question 3, how many like football only?
+
+:::reveal{title="Show the answer"}
+$18 - 3 = 15$.
+:::
+
+**5.** Which region does $A \cap B'$ describe in words?
+
+:::reveal{title="Show the answer"}
+Elements in $A$ but not in $B$ ("A only").
+:::
+

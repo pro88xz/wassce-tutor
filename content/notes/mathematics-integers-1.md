@@ -267,6 +267,8 @@ Master the vocabulary and ordering. Operations come next.
 
 ## Practice problems
 
+Try each question first, then open the answer to check your working.
+
 **1.** Which sets does each number belong to (natural, whole, integer, rational, real)?
 (a) $7$
 (b) $-4$
@@ -274,51 +276,68 @@ Master the vocabulary and ordering. Operations come next.
 (d) $0$
 (e) $\sqrt{5}$
 
-**2.** Arrange in ascending order: $-2, 4, 0, -8, 3, -1$.
-
-**3.** Arrange in ascending order: $\dfrac{1}{2}, -\dfrac{2}{3}, \dfrac{3}{4}, -\dfrac{1}{3}, 0$.
-
-**4.** Find the distance between $-7$ and $5$ on the number line.
-
-**5.** Find $|-12|$, $|6|$, $|0|$.
-
-**6.** Find the additive inverse of: (a) $7$, (b) $-3$, (c) $0$, (d) $\dfrac{1}{2}$.
-
-**7.** Find the reciprocal of: (a) $5$, (b) $\dfrac{3}{4}$, (c) $-2$.
-
-**8.** Is $0.\overline{6}$ rational or irrational? If rational, give the fraction.
-
-**9.** Is $\sqrt{9}$ rational? If so, write it as a fraction.
-
-**10.** Find three rational numbers between $\dfrac{1}{4}$ and $\dfrac{1}{2}$.
-
-### Worked solutions
-
-**1.** 
+:::reveal{title="Show the answer"}
 (a) Natural, whole, integer, rational, real. 
 (b) Integer, rational, real. 
 (c) Rational, real. 
 (d) Whole, integer, rational, real. 
 (e) Real (not rational).
+:::
 
-**2.** $-8, -2, -1, 0, 3, 4$.
+**2.** Arrange in ascending order: $-2, 4, 0, -8, 3, -1$.
 
-**3.** Convert: $\dfrac{1}{2} = 0.5$, $-\dfrac{2}{3} \approx -0.667$, $\dfrac{3}{4} = 0.75$, $-\dfrac{1}{3} \approx -0.333$, $0$. 
+:::reveal{title="Show the answer"}
+$-8, -2, -1, 0, 3, 4$.
+:::
+
+**3.** Arrange in ascending order: $\dfrac{1}{2}, -\dfrac{2}{3}, \dfrac{3}{4}, -\dfrac{1}{3}, 0$.
+
+:::reveal{title="Show the answer"}
+Convert: $\dfrac{1}{2} = 0.5$, $-\dfrac{2}{3} \approx -0.667$, $\dfrac{3}{4} = 0.75$, $-\dfrac{1}{3} \approx -0.333$, $0$. 
 Ascending: $-\dfrac{2}{3}, -\dfrac{1}{3}, 0, \dfrac{1}{2}, \dfrac{3}{4}$.
+:::
 
-**4.** $|5 - (-7)| = 12$.
+**4.** Find the distance between $-7$ and $5$ on the number line.
 
-**5.** $12, 6, 0$.
+:::reveal{title="Show the answer"}
+$|5 - (-7)| = 12$.
+:::
 
-**6.** (a) $-7$. (b) $3$. (c) $0$. (d) $-\dfrac{1}{2}$.
+**5.** Find $|-12|$, $|6|$, $|0|$.
 
-**7.** (a) $\dfrac{1}{5}$. (b) $\dfrac{4}{3}$. (c) $-\dfrac{1}{2}$.
+:::reveal{title="Show the answer"}
+$12, 6, 0$.
+:::
 
-**8.** Rational: $0.\overline{6} = \dfrac{2}{3}$.
+**6.** Find the additive inverse of: (a) $7$, (b) $-3$, (c) $0$, (d) $\dfrac{1}{2}$.
 
-**9.** $\sqrt{9} = 3 = \dfrac{3}{1}$, so yes.
+:::reveal{title="Show the answer"}
+(a) $-7$. (b) $3$. (c) $0$. (d) $-\dfrac{1}{2}$.
+:::
 
-**10.** Many possible. For example: $\dfrac{3}{10}, \dfrac{2}{5}, \dfrac{7}{20}$ all lie between $\dfrac{1}{4} = 0.25$ and $\dfrac{1}{2} = 0.5$.
+**7.** Find the reciprocal of: (a) $5$, (b) $\dfrac{3}{4}$, (c) $-2$.
+
+:::reveal{title="Show the answer"}
+(a) $\dfrac{1}{5}$. (b) $\dfrac{4}{3}$. (c) $-\dfrac{1}{2}$.
+:::
+
+**8.** Is $0.\overline{6}$ rational or irrational? If rational, give the fraction.
+
+:::reveal{title="Show the answer"}
+Rational: $0.\overline{6} = \dfrac{2}{3}$.
+:::
+
+**9.** Is $\sqrt{9}$ rational? If so, write it as a fraction.
+
+:::reveal{title="Show the answer"}
+$\sqrt{9} = 3 = \dfrac{3}{1}$, so yes.
+:::
+
+**10.** Find three rational numbers between $\dfrac{1}{4}$ and $\dfrac{1}{2}$.
+
+:::reveal{title="Show the answer"}
+Many possible. For example: $\dfrac{3}{10}, \dfrac{2}{5}, \dfrac{7}{20}$ all lie between $\dfrac{1}{4} = 0.25$ and $\dfrac{1}{2} = 0.5$.
+:::
 
 ## What's next
 

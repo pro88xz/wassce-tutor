@@ -98,18 +98,37 @@ $2^x = 4$ gives $x = 2$. $2^x = -1$ has no solution, because a power of 2 is alw
 Expect to **evaluate expressions with fractional and negative indices without a calculator**, to **simplify algebraic expressions**, and to **solve indicial equations**, including those that reduce to quadratics. Show each law you use; method marks depend on it.
 :::
 
-## Quick check
+## Practice
 
-1. Evaluate $16^{\frac{3}{4}}$.
-2. Evaluate $\left(\tfrac{8}{27}\right)^{-\frac{2}{3}}$.
-3. Simplify $\dfrac{6x^5y^2}{2x^2y^{-1}}$.
-4. Solve $3^{2x-1} = 81$.
-5. Solve $9^x - 4 \times 3^x + 3 = 0$.
+Try each question first, then open the answer to check your working.
 
-**Answers:**
+**1.** Evaluate $16^{\frac{3}{4}}$.
 
-1. $(\sqrt[4]{16})^3 = 2^3 = 8$.
-2. $\left(\tfrac{27}{8}\right)^{\frac{2}{3}} = \left(\tfrac{3}{2}\right)^2 = \tfrac{9}{4}$.
-3. $3x^3y^3$.
-4. $3^{2x-1} = 3^4$, so $2x - 1 = 4$ and $x = \tfrac{5}{2}$.
-5. Let $y = 3^x$: $y^2 - 4y + 3 = 0$, $(y - 1)(y - 3) = 0$, so $3^x = 1$ or $3$, giving $x = 0$ or $x = 1$.
+:::reveal{title="Show the answer"}
+$(\sqrt[4]{16})^3 = 2^3 = 8$.
+:::
+
+**2.** Evaluate $\left(\tfrac{8}{27}\right)^{-\frac{2}{3}}$.
+
+:::reveal{title="Show the answer"}
+$\left(\tfrac{27}{8}\right)^{\frac{2}{3}} = \left(\tfrac{3}{2}\right)^2 = \tfrac{9}{4}$.
+:::
+
+**3.** Simplify $\dfrac{6x^5y^2}{2x^2y^{-1}}$.
+
+:::reveal{title="Show the answer"}
+$3x^3y^3$.
+:::
+
+**4.** Solve $3^{2x-1} = 81$.
+
+:::reveal{title="Show the answer"}
+$3^{2x-1} = 3^4$, so $2x - 1 = 4$ and $x = \tfrac{5}{2}$.
+:::
+
+**5.** Solve $9^x - 4 \times 3^x + 3 = 0$.
+
+:::reveal{title="Show the answer"}
+Let $y = 3^x$: $y^2 - 4y + 3 = 0$, $(y - 1)(y - 3) = 0$, so $3^x = 1$ or $3$, giving $x = 0$ or $x = 1$.
+:::
+

@@ -344,55 +344,79 @@ The key skill is **converting between log and index form**. Once you can do that
 
 ## Practice problems
 
+Try each question first, then open the answer to check your working.
+
 **1.** Find $\log_3 27$.
+
+:::reveal{title="Show the answer"}
+$3^3 = 27$. Answer: $3$.
+:::
 
 **2.** Find $\log_{10} 1000$.
 
+:::reveal{title="Show the answer"}
+$10^3 = 1000$. Answer: $3$.
+:::
+
 **3.** Find $\log_2 64$.
+
+:::reveal{title="Show the answer"}
+$2^6 = 64$. Answer: $6$.
+:::
 
 **4.** Find $\log_5 \dfrac{1}{25}$.
 
+:::reveal{title="Show the answer"}
+$5^{-2} = \dfrac{1}{25}$. Answer: $-2$.
+:::
+
 **5.** Find $\log_4 64$.
+
+:::reveal{title="Show the answer"}
+$4^3 = 64$. Answer: $3$.
+:::
 
 **6.** Find $\log_{10} 0.01$.
 
+:::reveal{title="Show the answer"}
+$10^{-2} = 0.01$. Answer: $-2$.
+:::
+
 **7.** Find $\log_3 \sqrt{3}$.
+
+:::reveal{title="Show the answer"}
+$\sqrt{3} = 3^{1/2}$. So $\log_3 3^{1/2} = \dfrac{1}{2}$.
+:::
 
 **8.** Express $7^2 = 49$ in log form.
 
+:::reveal{title="Show the answer"}
+$\log_7 49 = 2$.
+:::
+
 **9.** Express $\log_5 125 = 3$ in index form.
+
+:::reveal{title="Show the answer"}
+$5^3 = 125$.
+:::
 
 **10.** Find $\log_8 16$.
 
+:::reveal{title="Show the answer"}
+$8 = 2^3$, $16 = 2^4$. $\log_8 16 = x$ means $8^x = 16$, i.e. $2^{3x} = 2^4$, so $x = \dfrac{4}{3}$.
+:::
+
 **11.** Find $\log_2 1$.
+
+:::reveal{title="Show the answer"}
+$\log_2 1 = 0$ (any base to power $0$ is $1$).
+:::
 
 **12.** Find $\log_{10} 10^7$.
 
-### Worked solutions
-
-**1.** $3^3 = 27$. Answer: $3$.
-
-**2.** $10^3 = 1000$. Answer: $3$.
-
-**3.** $2^6 = 64$. Answer: $6$.
-
-**4.** $5^{-2} = \dfrac{1}{25}$. Answer: $-2$.
-
-**5.** $4^3 = 64$. Answer: $3$.
-
-**6.** $10^{-2} = 0.01$. Answer: $-2$.
-
-**7.** $\sqrt{3} = 3^{1/2}$. So $\log_3 3^{1/2} = \dfrac{1}{2}$.
-
-**8.** $\log_7 49 = 2$.
-
-**9.** $5^3 = 125$.
-
-**10.** $8 = 2^3$, $16 = 2^4$. $\log_8 16 = x$ means $8^x = 16$, i.e. $2^{3x} = 2^4$, so $x = \dfrac{4}{3}$.
-
-**11.** $\log_2 1 = 0$ (any base to power $0$ is $1$).
-
-**12.** $\log_{10} 10^7 = 7$ (using Fact 3).
+:::reveal{title="Show the answer"}
+$\log_{10} 10^7 = 7$ (using Fact 3).
+:::
 
 ## What's next
 

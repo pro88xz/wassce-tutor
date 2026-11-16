@@ -106,18 +106,37 @@ Rationalising turns a hard division by $1.414$ into an easy division by 2.
 Expect to **simplify expressions such as $\sqrt{48} - \sqrt{27} + \sqrt{12}$**, to **expand brackets with surds**, and to **rationalise denominators**, often giving the answer in the form $a + b\sqrt{c}$. Questions may ask you to find the values of $a$ and $b$ after rationalising.
 :::
 
-## Quick check
+## Practice
 
-1. Simplify $\sqrt{48} - \sqrt{27} + \sqrt{12}$.
-2. Expand $(3 - \sqrt{2})^2$.
-3. Rationalise $\dfrac{10}{\sqrt{5}}$.
-4. Rationalise $\dfrac{4}{3 - \sqrt{5}}$.
-5. Express $\dfrac{1 + \sqrt{3}}{1 - \sqrt{3}}$ in the form $a + b\sqrt{3}$.
+Try each question first, then open the answer to check your working.
 
-**Answers:**
+**1.** Simplify $\sqrt{48} - \sqrt{27} + \sqrt{12}$.
 
-1. $4\sqrt{3} - 3\sqrt{3} + 2\sqrt{3} = 3\sqrt{3}$.
-2. $9 - 6\sqrt{2} + 2 = 11 - 6\sqrt{2}$.
-3. $\dfrac{10\sqrt{5}}{5} = 2\sqrt{5}$.
-4. $\dfrac{4(3 + \sqrt{5})}{9 - 5} = 3 + \sqrt{5}$.
-5. $\dfrac{(1 + \sqrt{3})^2}{1 - 3} = \dfrac{4 + 2\sqrt{3}}{-2} = -2 - \sqrt{3}$, so $a = -2$, $b = -1$.
+:::reveal{title="Show the answer"}
+$4\sqrt{3} - 3\sqrt{3} + 2\sqrt{3} = 3\sqrt{3}$.
+:::
+
+**2.** Expand $(3 - \sqrt{2})^2$.
+
+:::reveal{title="Show the answer"}
+$9 - 6\sqrt{2} + 2 = 11 - 6\sqrt{2}$.
+:::
+
+**3.** Rationalise $\dfrac{10}{\sqrt{5}}$.
+
+:::reveal{title="Show the answer"}
+$\dfrac{10\sqrt{5}}{5} = 2\sqrt{5}$.
+:::
+
+**4.** Rationalise $\dfrac{4}{3 - \sqrt{5}}$.
+
+:::reveal{title="Show the answer"}
+$\dfrac{4(3 + \sqrt{5})}{9 - 5} = 3 + \sqrt{5}$.
+:::
+
+**5.** Express $\dfrac{1 + \sqrt{3}}{1 - \sqrt{3}}$ in the form $a + b\sqrt{3}$.
+
+:::reveal{title="Show the answer"}
+$\dfrac{(1 + \sqrt{3})^2}{1 - 3} = \dfrac{4 + 2\sqrt{3}}{-2} = -2 - \sqrt{3}$, so $a = -2$, $b = -1$.
+:::
+

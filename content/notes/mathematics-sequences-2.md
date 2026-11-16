@@ -134,18 +134,37 @@ Each year's value is $0.8$ of the year before: a GP with $a = 80\,000$, $r = 0.8
 Expect to **find a particular term or the sum of terms**, to **find $a$, $d$ or $r$ from two given terms**, to **use the middle-term conditions** for three consecutive terms, and to **solve salary, savings and depreciation problems**. State clearly whether you are using an AP or a GP.
 :::
 
-## Quick check
+## Practice
 
-1. Find the 15th term of the AP $-4, -1, 2, \ldots$
-2. Find the sum of the first 12 terms of the AP $2, 5, 8, \ldots$
-3. Find the 6th term of the GP $81, 27, 9, \ldots$
-4. Find the sum to infinity of $27 + 9 + 3 + \cdots$
-5. If $x$, 12 and 48 are consecutive terms of a GP, find $x$.
+Try each question first, then open the answer to check your working.
 
-**Answers:**
+**1.** Find the 15th term of the AP $-4, -1, 2, \ldots$
 
-1. $-4 + 14 \times 3 = 38$.
-2. $\tfrac{12}{2}(4 + 11 \times 3) = 6 \times 37 = 222$.
-3. $81 \times \left(\tfrac{1}{3}\right)^5 = \tfrac{81}{243} = \tfrac{1}{3}$.
-4. $\dfrac{27}{1 - \frac{1}{3}} = 40.5$.
-5. $12^2 = 48x$, so $x = 3$.
+:::reveal{title="Show the answer"}
+$-4 + 14 \times 3 = 38$.
+:::
+
+**2.** Find the sum of the first 12 terms of the AP $2, 5, 8, \ldots$
+
+:::reveal{title="Show the answer"}
+$\tfrac{12}{2}(4 + 11 \times 3) = 6 \times 37 = 222$.
+:::
+
+**3.** Find the 6th term of the GP $81, 27, 9, \ldots$
+
+:::reveal{title="Show the answer"}
+$81 \times \left(\tfrac{1}{3}\right)^5 = \tfrac{81}{243} = \tfrac{1}{3}$.
+:::
+
+**4.** Find the sum to infinity of $27 + 9 + 3 + \cdots$
+
+:::reveal{title="Show the answer"}
+$\dfrac{27}{1 - \frac{1}{3}} = 40.5$.
+:::
+
+**5.** If $x$, 12 and 48 are consecutive terms of a GP, find $x$.
+
+:::reveal{title="Show the answer"}
+$12^2 = 48x$, so $x = 3$.
+:::
+

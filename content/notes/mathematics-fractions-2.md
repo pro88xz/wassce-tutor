@@ -125,18 +125,37 @@ Round each number to one significant figure to check whether an answer is sensib
 Expect **mixed-number arithmetic with BODMAS**, **fraction word problems** (sharing land, money or time), **converting recurring decimals to fractions**, and **rounding to decimal places and significant figures**, often as the final step of a longer calculation. Read carefully whether the question asks for d.p. or s.f.
 :::
 
-## Quick check
+## Practice
 
-1. Simplify $1\tfrac{2}{3} + 2\tfrac{1}{4}$.
-2. Simplify $4\tfrac{1}{2} \div 1\tfrac{1}{8}$.
-3. Express $0.\dot{2}\dot{7}$ as a fraction in its lowest terms.
-4. Round 0.070 49 to 3 significant figures.
-5. Write 0.000 307 in standard form.
+Try each question first, then open the answer to check your working.
 
-**Answers:**
+**1.** Simplify $1\tfrac{2}{3} + 2\tfrac{1}{4}$.
 
-1. $\tfrac{20}{12} + \tfrac{27}{12} = \tfrac{47}{12} = 3\tfrac{11}{12}$.
-2. $\tfrac{9}{2} \times \tfrac{8}{9} = 4$.
-3. $\tfrac{27}{99} = \tfrac{3}{11}$.
-4. 0.0705.
-5. $3.07 \times 10^{-4}$.
+:::reveal{title="Show the answer"}
+$\tfrac{20}{12} + \tfrac{27}{12} = \tfrac{47}{12} = 3\tfrac{11}{12}$.
+:::
+
+**2.** Simplify $4\tfrac{1}{2} \div 1\tfrac{1}{8}$.
+
+:::reveal{title="Show the answer"}
+$\tfrac{9}{2} \times \tfrac{8}{9} = 4$.
+:::
+
+**3.** Express $0.\dot{2}\dot{7}$ as a fraction in its lowest terms.
+
+:::reveal{title="Show the answer"}
+$\tfrac{27}{99} = \tfrac{3}{11}$.
+:::
+
+**4.** Round 0.070 49 to 3 significant figures.
+
+:::reveal{title="Show the answer"}
+0.0705.
+:::
+
+**5.** Write 0.000 307 in standard form.
+
+:::reveal{title="Show the answer"}
+$3.07 \times 10^{-4}$.
+:::
+

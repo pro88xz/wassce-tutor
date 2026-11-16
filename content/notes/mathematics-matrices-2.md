@@ -129,18 +129,37 @@ A shop in Kenema sells 2 bags of rice and 1 tin of oil for NLe 700, and 3 bags o
 Expect to **add and multiply matrices**, to **find determinants and inverses of $2 \times 2$ matrices**, to **find an unknown from a given determinant**, and to **solve simultaneous equations by the matrix method**. Show the inverse step by step; a wrong sign in the adjoint is the most common loss of marks.
 :::
 
-## Quick check
+## Practice
 
-1. Find $\begin{pmatrix} 1 & 2 \\ 0 & 3 \end{pmatrix}\begin{pmatrix} 4 \\ 5 \end{pmatrix}$.
-2. Find the determinant of $\begin{pmatrix} 5 & 3 \\ 2 & 2 \end{pmatrix}$.
-3. Find the inverse of $\begin{pmatrix} 5 & 3 \\ 2 & 2 \end{pmatrix}$.
-4. For what value of $k$ is $\begin{pmatrix} k & 6 \\ 2 & 4 \end{pmatrix}$ singular?
-5. Can a $2 \times 3$ matrix be multiplied by a $2 \times 2$ matrix (in that order)?
+Try each question first, then open the answer to check your working.
 
-**Answers:**
+**1.** Find $\begin{pmatrix} 1 & 2 \\ 0 & 3 \end{pmatrix}\begin{pmatrix} 4 \\ 5 \end{pmatrix}$.
 
-1. $\begin{pmatrix} 14 \\ 15 \end{pmatrix}$.
-2. $10 - 6 = 4$.
-3. $\dfrac{1}{4}\begin{pmatrix} 2 & -3 \\ -2 & 5 \end{pmatrix}$.
-4. $4k - 12 = 0$, so $k = 3$.
-5. No: the first has 3 columns but the second has only 2 rows.
+:::reveal{title="Show the answer"}
+$\begin{pmatrix} 14 \\ 15 \end{pmatrix}$.
+:::
+
+**2.** Find the determinant of $\begin{pmatrix} 5 & 3 \\ 2 & 2 \end{pmatrix}$.
+
+:::reveal{title="Show the answer"}
+$10 - 6 = 4$.
+:::
+
+**3.** Find the inverse of $\begin{pmatrix} 5 & 3 \\ 2 & 2 \end{pmatrix}$.
+
+:::reveal{title="Show the answer"}
+$\dfrac{1}{4}\begin{pmatrix} 2 & -3 \\ -2 & 5 \end{pmatrix}$.
+:::
+
+**4.** For what value of $k$ is $\begin{pmatrix} k & 6 \\ 2 & 4 \end{pmatrix}$ singular?
+
+:::reveal{title="Show the answer"}
+$4k - 12 = 0$, so $k = 3$.
+:::
+
+**5.** Can a $2 \times 3$ matrix be multiplied by a $2 \times 2$ matrix (in that order)?
+
+:::reveal{title="Show the answer"}
+No: the first has 3 columns but the second has only 2 rows.
+:::
+

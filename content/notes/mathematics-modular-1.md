@@ -317,47 +317,67 @@ Master the remainder operation before moving on to modular addition and multipli
 
 ## Practice problems
 
+Try each question first, then open the answer to check your working.
+
 **1.** Find $43 \bmod 6$.
+
+:::reveal{title="Show the answer"}
+$43 \div 6 = 7$ remainder $1$ (because $7 \times 6 = 42$, and $43 - 42 = 1$). So $43 \bmod 6 = 1$.
+:::
 
 **2.** Find $100 \bmod 8$.
 
+:::reveal{title="Show the answer"}
+$100 \div 8 = 12$ remainder $4$ (because $12 \times 8 = 96$, and $100 - 96 = 4$). So $100 \bmod 8 = 4$.
+:::
+
 **3.** Find $77 \bmod 11$.
+
+:::reveal{title="Show the answer"}
+$77 \div 11 = 7$ remainder $0$ (because $7 \times 11 = 77$). So $77 \bmod 11 = 0$.
+:::
 
 **4.** Find $5 \bmod 12$.
 
+:::reveal{title="Show the answer"}
+$5 < 12$, so $5 \bmod 12 = 5$.
+:::
+
 **5.** Find $84 \bmod 12$.
+
+:::reveal{title="Show the answer"}
+$84 \div 12 = 7$ remainder $0$ (because $7 \times 12 = 84$). So $84 \bmod 12 = 0$.
+:::
 
 **6.** *Today is Sunday. What day will it be $25$ days from now?*
 
+:::reveal{title="Show the answer"}
+$25 \bmod 7$: largest multiple of $7$ up to $25$ is $21$. So $25 - 21 = 4$. Four days after Sunday: Monday, Tuesday, Wednesday, **Thursday**.
+:::
+
 **7.** *It is $4$ p.m. on a 12-hour clock. What time will it be in $20$ hours?*
+
+:::reveal{title="Show the answer"}
+$4 + 20 = 24$ on a 12-hour clock. $24 \bmod 12 = 0$, which on a clock face is **12 o'clock**. (a.m. or p.m.? $20$ hours from $4$ p.m. is $12$ p.m. — i.e., noon the next day.)
+:::
 
 **8.** Find $250 \bmod 9$.
 
+:::reveal{title="Show the answer"}
+$250 \div 9$: $9 \times 27 = 243$, so $250 - 243 = 7$. Answer: $250 \bmod 9 = 7$.
+:::
+
 **9.** Find $-5 \bmod 7$.
+
+:::reveal{title="Show the answer"}
+$-5 + 7 = 2$ (adding the modulus brings us into the positive range). So $-5 \bmod 7 = 2$. Check: $-5 = -1 \times 7 + 2$. ✓
+:::
 
 **10.** *Find the smallest positive value of $x$ such that $x \equiv 23 \pmod{6}$.*
 
-### Worked solutions
-
-**1.** $43 \div 6 = 7$ remainder $1$ (because $7 \times 6 = 42$, and $43 - 42 = 1$). So $43 \bmod 6 = 1$.
-
-**2.** $100 \div 8 = 12$ remainder $4$ (because $12 \times 8 = 96$, and $100 - 96 = 4$). So $100 \bmod 8 = 4$.
-
-**3.** $77 \div 11 = 7$ remainder $0$ (because $7 \times 11 = 77$). So $77 \bmod 11 = 0$.
-
-**4.** $5 < 12$, so $5 \bmod 12 = 5$.
-
-**5.** $84 \div 12 = 7$ remainder $0$ (because $7 \times 12 = 84$). So $84 \bmod 12 = 0$.
-
-**6.** $25 \bmod 7$: largest multiple of $7$ up to $25$ is $21$. So $25 - 21 = 4$. Four days after Sunday: Monday, Tuesday, Wednesday, **Thursday**.
-
-**7.** $4 + 20 = 24$ on a 12-hour clock. $24 \bmod 12 = 0$, which on a clock face is **12 o'clock**. (a.m. or p.m.? $20$ hours from $4$ p.m. is $12$ p.m. — i.e., noon the next day.)
-
-**8.** $250 \div 9$: $9 \times 27 = 243$, so $250 - 243 = 7$. Answer: $250 \bmod 9 = 7$.
-
-**9.** $-5 + 7 = 2$ (adding the modulus brings us into the positive range). So $-5 \bmod 7 = 2$. Check: $-5 = -1 \times 7 + 2$. ✓
-
-**10.** $23 \bmod 6 = ?$ Largest multiple of $6$ up to $23$ is $18$. So $23 - 18 = 5$. Therefore $23 \equiv 5 \pmod 6$, and the smallest positive $x$ is $x = 5$.
+:::reveal{title="Show the answer"}
+$23 \bmod 6 = ?$ Largest multiple of $6$ up to $23$ is $18$. So $23 - 18 = 5$. Therefore $23 \equiv 5 \pmod 6$, and the smallest positive $x$ is $x = 5$.
+:::
 
 ## What's next
 

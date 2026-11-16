@@ -347,55 +347,79 @@ The key foundational skill is the **sign convention** and the **memorisation of 
 
 ## Practice problems
 
+Try each question first, then open the answer to check your working.
+
 **1.** Compute $4^3$.
+
+:::reveal{title="Show the answer"}
+$4^3 = 4 \times 4 \times 4 = 16 \times 4 = 64$.
+:::
 
 **2.** Compute $7^2$.
 
+:::reveal{title="Show the answer"}
+$7^2 = 49$.
+:::
+
 **3.** Compute $2^8$.
+
+:::reveal{title="Show the answer"}
+$2^8 = 256$.
+:::
 
 **4.** Compute $(-3)^4$.
 
+:::reveal{title="Show the answer"}
+$(-3)^4 = 81$ (even exponent → positive).
+:::
+
 **5.** Compute $-3^4$.
+
+:::reveal{title="Show the answer"}
+$-3^4 = -(81) = -81$ (minus outside, applied after the power).
+:::
 
 **6.** Compute $\left(\dfrac{1}{4}\right)^2$.
 
+:::reveal{title="Show the answer"}
+$\left(\dfrac{1}{4}\right)^2 = \dfrac{1}{16}$.
+:::
+
 **7.** Compute $\left(\dfrac{2}{5}\right)^3$.
+
+:::reveal{title="Show the answer"}
+$\left(\dfrac{2}{5}\right)^3 = \dfrac{8}{125}$.
+:::
 
 **8.** Find the value of $2^5 - 3^2$.
 
+:::reveal{title="Show the answer"}
+$2^5 - 3^2 = 32 - 9 = 23$.
+:::
+
 **9.** Find the value of $5^3 + 4^3$.
+
+:::reveal{title="Show the answer"}
+$5^3 + 4^3 = 125 + 64 = 189$.
+:::
 
 **10.** Find $(-1)^{15} + (-1)^{20}$.
 
+:::reveal{title="Show the answer"}
+$(-1)^{15} = -1$ (odd). $(-1)^{20} = 1$ (even). Sum: $-1 + 1 = 0$.
+:::
+
 **11.** *A square has side $12$ cm. What is its area?*
+
+:::reveal{title="Show the answer"}
+Area = $12^2 = 144$ cm².
+:::
 
 **12.** *A cube has side $5$ cm. What is its volume?*
 
-### Worked solutions
-
-**1.** $4^3 = 4 \times 4 \times 4 = 16 \times 4 = 64$.
-
-**2.** $7^2 = 49$.
-
-**3.** $2^8 = 256$.
-
-**4.** $(-3)^4 = 81$ (even exponent → positive).
-
-**5.** $-3^4 = -(81) = -81$ (minus outside, applied after the power).
-
-**6.** $\left(\dfrac{1}{4}\right)^2 = \dfrac{1}{16}$.
-
-**7.** $\left(\dfrac{2}{5}\right)^3 = \dfrac{8}{125}$.
-
-**8.** $2^5 - 3^2 = 32 - 9 = 23$.
-
-**9.** $5^3 + 4^3 = 125 + 64 = 189$.
-
-**10.** $(-1)^{15} = -1$ (odd). $(-1)^{20} = 1$ (even). Sum: $-1 + 1 = 0$.
-
-**11.** Area = $12^2 = 144$ cm². 
-
-**12.** Volume = $5^3 = 125$ cm³.
+:::reveal{title="Show the answer"}
+Volume = $5^3 = 125$ cm³.
+:::
 
 ## What's next
 
