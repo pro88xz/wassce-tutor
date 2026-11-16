@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The alternate segment theorem</title>
+<desc id="d">A tangent touches the circle at T. A chord TA is drawn from T. The angle between the tangent and the chord equals the angle in the alternate segment, the angle TBA at a point B on the circle on the other side of the chord.</desc>
+<defs></defs>
+<rect width="720" height="420" rx="20" fill="#f8fafc"/>
+<text x="360.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Alternate segment: tangent–chord angle = angle in the other segment</text>
+<circle cx="360.0" cy="210.0" r="130.0" fill="none" stroke="#0f172a" stroke-width="3"/>
+<line x1="140.0" y1="340.0" x2="580.0" y2="340.0" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
+<line x1="360.0" y1="340.0" x2="482.2" y2="165.5" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="260.4" y1="126.4" x2="360.0" y2="340.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="260.4" y1="126.4" x2="482.2" y2="165.5" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<path d="M 394.0 340.0 A 34 34 0 0 0 379.5 312.1" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="409.7" y="314.1" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">z</text>
+<path d="M 272.2 151.8 A 28 28 0 0 0 288.0 131.3" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="300.1" y="156.9" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">z</text>
+<text x="360.0" y="366.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">T</text>
+<text x="498.2" y="159.5" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<text x="244.4" y="116.4" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B</text>
+</svg>

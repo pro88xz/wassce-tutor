@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">An L-shaped plot of land with its measurements</title>
+<desc id="d">An L-shaped plot made of two rectangles. The whole plot is 20 m wide along the bottom and 15 m high on the left. A corner 8 m by 6 m is missing at the top right. Dimensions are marked in metres.</desc>
+<defs></defs>
+<rect width="720" height="420" rx="20" fill="#f8fafc"/>
+<text x="360.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">An L-shaped plot (all lengths in metres)</text>
+<polygon points="170.0,360.0 530.0,360.0 530.0,198.0 386.0,198.0 386.0,90.0 170.0,90.0" fill="#dcfce7" stroke="#0f172a" stroke-width="3" stroke-linejoin="round"/>
+<line x1="386.0" y1="198.0" x2="386.0" y2="360.0" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 6"/>
+<rect x="335.5" y="368.5" width="29.0" height="27.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="350.0" y="382.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">20</text>
+<rect x="131.5" y="211.5" width="29.0" height="27.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="146.0" y="225.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">15</text>
+<rect x="263.5" y="58.5" width="29.0" height="27.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="278.0" y="72.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">12</text>
+<rect x="542.2" y="265.5" width="19.5" height="27.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="552.0" y="279.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">9</text>
+<rect x="448.2" y="166.5" width="19.5" height="27.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="458.0" y="180.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">8</text>
+<rect x="398.2" y="130.5" width="19.5" height="27.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="408.0" y="144.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6</text>
+<text x="278.0" y="225.0" font-size="22" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<text x="458.0" y="279.0" font-size="22" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B</text>
+</svg>

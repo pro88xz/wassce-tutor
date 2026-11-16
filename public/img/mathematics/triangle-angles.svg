@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Angles of a triangle and its exterior angle</title>
+<desc id="d">Triangle ABC with interior angles a at A, b at B and c at C. The side BC is extended past C. The exterior angle at C equals a plus b, the sum of the two interior opposite angles, and a + b + c = 180 degrees.</desc>
+<defs></defs>
+<rect width="720" height="380" rx="20" fill="#f8fafc"/>
+<text x="360.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Interior angles add to 180°; exterior angle = a + b</text>
+<polygon points="230.0,90.0 110.0,300.0 430.0,300.0" fill="#dbeafe" stroke="#0f172a" stroke-width="3" stroke-linejoin="round"/>
+<line x1="430.0" y1="300.0" x2="640.0" y2="300.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round" stroke-dasharray="9 6"/>
+<path d="M 215.1 116.0 A 30 30 0 0 0 250.7 111.7" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="236.3" y="141.6" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">a</text>
+<path d="M 140.0 300.0 A 30 30 0 0 0 124.9 274.0" stroke="#15803d" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="155.0" y="273.9" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">b</text>
+<path d="M 412.1 281.2 A 26 26 0 0 0 404.0 300.0" stroke="#ea580c" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="387.7" y="281.9" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">c</text>
+<path d="M 470.0 300.0 A 40 40 0 0 0 402.4 271.0" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="462.3" y="224.6" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">a + b</text>
+<text x="230.0" y="72.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<text x="94.0" y="314.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B</text>
+<text x="434.0" y="322.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C</text>
+<text x="360.0" y="360.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">a + b + c = 180°     exterior angle at C = a + b</text>
+</svg>

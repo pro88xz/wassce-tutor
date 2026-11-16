@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Parts of a circle</title>
+<desc id="d">A circle with centre O showing a radius, a diameter, a chord, the minor arc and minor segment cut off by the chord, a shaded sector between two radii, and a tangent touching the circle at one point.</desc>
+<defs></defs>
+<rect width="720" height="440" rx="20" fill="#f8fafc"/>
+<text x="360.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Parts of a circle</text>
+<path d="M 300 240 L 441.0 188.7 A 150 150 0 0 0 351.3 99.0 Z" stroke="#2563eb" stroke-width="2" fill="#dbeafe" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 159.0 291.3 A 150 150 0 0 0 248.7 381.0 Z" stroke="#ea580c" stroke-width="2" fill="#fef3c7" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="300.0" cy="240.0" r="150.0" fill="none" stroke="#0f172a" stroke-width="3"/>
+<circle cx="300.0" cy="240.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="286.0" y="244.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<line x1="159.0" y1="188.7" x2="441.0" y2="291.3" stroke="#15803d" stroke-width="3" stroke-linecap="round"/>
+<rect x="184.4" y="191.6" width="77.2" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="223.0" y="204.1" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">diameter</text>
+<rect x="346.2" y="151.1" width="60.4" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="376.4" y="163.6" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">sector</text>
+<line x1="159.0" y1="291.3" x2="248.7" y2="381.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+<rect x="177.1" y="318.5" width="64.9" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="209.5" y="330.5" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">segment</text>
+<rect x="229.0" y="281.1" width="52.0" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="255.0" y="293.6" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">chord</text>
+<line x1="262.4" y1="434.9" x2="487.6" y2="304.9" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
+<line x1="300.0" y1="240.0" x2="375.0" y2="369.9" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5"/>
+<path d="M 368.0 357.8 L 380.1 350.8 L 387.1 362.9" stroke="#7c3aed" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="500.5" y="282.4" width="68.8" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="534.9" y="294.9" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">tangent</text>
+<rect x="306.5" y="288.6" width="57.0" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="335.0" y="300.6" font-size="14" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">radius</text>
+<rect x="406.9" y="103.0" width="35.2" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="424.5" y="115.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">arc</text>
+</svg>

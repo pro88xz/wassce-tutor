@@ -648,6 +648,525 @@ def inequality_region():
     return s
 
 
+# ═══ M3: geometry and mensuration ═══════════════════════════════════════════
+
+def _pt(cx, cy, r, deg):
+    """A point on a circle, angle in degrees (0 = +x, counter-clockwise, y up)."""
+    return cx + r * math.cos(math.radians(deg)), cy - r * math.sin(math.radians(deg))
+
+
+def _dir(vx, vy, px, py):
+    """Direction from V to P in degrees, maths convention (y up)."""
+    return math.degrees(math.atan2(-(py - vy), px - vx)) % 360
+
+
+def angle_mark(s, vx, vy, p1, p2, r=26, color=RED, label=None, lr=None, size=16, width=2.5):
+    """Arc for the smaller angle at V between the directions to p1 and p2, with an optional label."""
+    a1, a2 = _dir(vx, vy, *p1), _dir(vx, vy, *p2)
+    d = (a2 - a1) % 360
+    if d > 180:
+        a1, d = a2, 360 - d
+    s.arc(vx, vy, r, a1, a1 + d, color=color, width=width)
+    if label:
+        lx, ly = _pt(vx, vy, lr or r + 20, a1 + d / 2)
+        s.text(lx, ly, label, size=size, color=color, weight="bold")
+
+
+def right_mark(s, vx, vy, p1, p2, k=14, color=INK):
+    a1, a2 = math.radians(_dir(vx, vy, *p1)), math.radians(_dir(vx, vy, *p2))
+    u = (math.cos(a1), -math.sin(a1))
+    v = (math.cos(a2), -math.sin(a2))
+    pts = [(vx + k * u[0], vy + k * u[1]), (vx + k * (u[0] + v[0]), vy + k * (u[1] + v[1])), (vx + k * v[0], vy + k * v[1])]
+    s.polyline(pts, color=color, width=2)
+
+
+def chevron(s, x, y, color=INK):
+    s.polyline([(x - 6, y - 7), (x + 3, y), (x - 6, y + 7)], color=color, width=2.4)
+
+
+@fig
+def angles_parallel_lines():
+    s = Svg(780, 420, "Angles formed when a transversal cuts two parallel lines",
+            "Three panels. Corresponding angles, in an F shape, are equal. Alternate angles, in a Z shape, are equal. "
+            "Co-interior angles, in a C shape, add up to 180 degrees.")
+    heading(s, "A line crossing two parallel lines")
+    panels = [("Corresponding: equal (F)", [("T", 1, "a"), ("B", 1, "a")], BLUE),
+              ("Alternate: equal (Z)", [("T", 3, "a"), ("B", 1, "a")], GREEN),
+              ("Co-interior: a + b = 180° (C)", [("T", 4, "b"), ("B", 1, "a")], ORANGE)]
+    for i, (title, marks, col) in enumerate(panels):
+        ox = 18 + i * 254
+        yt, yb = 150, 290
+        s.line(ox + 8, yt, ox + 236, yt, color=INK, width=3)
+        s.line(ox + 8, yb, ox + 236, yb, color=INK, width=3)
+        chevron(s, ox + 40, yt); chevron(s, ox + 40, yb)
+        x0, y0, x1, y1 = ox + 70, 360, ox + 190, 80
+        s.line(x0, y0, x1, y1, color=INK, width=3)
+        th = math.degrees(math.atan2(y0 - y1, x1 - x0))
+        pts = {}
+        for key, yy in (("T", yt), ("B", yb)):
+            t = (yy - y0) / (y1 - y0)
+            pts[key] = (x0 + t * (x1 - x0), yy)
+        ranges = {1: (0, th), 2: (th, 180), 3: (180, 180 + th), 4: (180 + th, 360)}
+        for key, q, lab in marks:
+            vx, vy = pts[key]
+            a1, a2 = ranges[q]
+            s.arc(vx, vy, 30, a1, a2, color=col, width=4)
+            lx, ly = _pt(vx, vy, 52, (a1 + a2) / 2)
+            s.text(lx, ly, lab, size=19, color=col, weight="bold")
+        s.text(ox + 122, 385, title, size=14.5, weight="bold", color=col)
+    return s
+
+
+@fig
+def angle_facts():
+    s = Svg(780, 330, "Angles on a straight line, at a point, and vertically opposite angles",
+            "Angles on a straight line add up to 180 degrees. Angles at a point add up to 360 degrees. Vertically opposite "
+            "angles, formed where two straight lines cross, are equal.")
+    heading(s, "Three angle facts")
+    # straight line
+    ox, oy = 140, 200
+    s.line(ox - 110, oy, ox + 110, oy, width=3)
+    q = _pt(ox, oy, 100, 60)
+    s.line(ox, oy, *q, width=3)
+    angle_mark(s, ox, oy, (ox + 100, oy), q, r=28, color=BLUE, label="a", lr=48)
+    angle_mark(s, ox, oy, q, (ox - 100, oy), r=24, color=GREEN, label="b", lr=46)
+    s.text(ox, 290, "a + b = 180°", size=17, weight="bold")
+    # point
+    cx, cy = 390, 190
+    rays = [20, 140, 250]
+    ends = [_pt(cx, cy, 95, d) for d in rays]
+    for e in ends:
+        s.line(cx, cy, *e, width=3)
+    cols = [BLUE, GREEN, ORANGE]
+    labs = ["p", "q", "r"]
+    for k in range(3):
+        angle_mark(s, cx, cy, ends[k], ends[(k + 1) % 3], r=24 + 4 * k, color=cols[k], label=labs[k], lr=50)
+    s.text(cx, 290, "p + q + r = 360°", size=17, weight="bold")
+    # vertically opposite
+    vx, vy = 640, 190
+    a, b = _pt(vx, vy, 100, 35), _pt(vx, vy, 100, 145)
+    c, d = _pt(vx, vy, 100, 215), _pt(vx, vy, 100, 325)
+    s.line(*a, *c, width=3); s.line(*b, *d, width=3)
+    angle_mark(s, vx, vy, a, b, r=26, color=BLUE, label="x", lr=46)
+    angle_mark(s, vx, vy, c, d, r=26, color=BLUE, label="x", lr=46)
+    angle_mark(s, vx, vy, b, c, r=22, color=GREEN, label="y", lr=42)
+    angle_mark(s, vx, vy, d, a, r=22, color=GREEN, label="y", lr=42)
+    s.text(vx, 290, "opposite angles equal", size=17, weight="bold")
+    return s
+
+
+@fig
+def triangle_angles():
+    s = Svg(720, 380, "Angles of a triangle and its exterior angle",
+            "Triangle ABC with interior angles a at A, b at B and c at C. The side BC is extended past C. The exterior "
+            "angle at C equals a plus b, the sum of the two interior opposite angles, and a + b + c = 180 degrees.")
+    heading(s, "Interior angles add to 180°; exterior angle = a + b")
+    A, B, C = (230, 90), (110, 300), (430, 300)
+    D = (640, 300)
+    s.polygon([A, B, C], fill=F_BLUE, stroke=INK, width=3)
+    s.line(*C, *D, width=3, dash="9 6")
+    angle_mark(s, *A, B, C, r=30, color=BLUE, label="a", lr=52)
+    angle_mark(s, *B, A, C, r=30, color=GREEN, label="b", lr=52)
+    angle_mark(s, *C, A, B, r=26, color=ORANGE, label="c", lr=46)
+    angle_mark(s, *C, A, D, r=40, color=RED, label="a + b", lr=82)
+    for (x, y, t, dx, dy) in ((*A, "A", 0, -18), (*B, "B", -16, 14), (*C, "C", 4, 22)):
+        s.text(x + dx, y + dy, t, size=19, weight="bold")
+    note(s, "a + b + c = 180°     exterior angle at C = a + b", 360, size=16, color=INK)
+    return s
+
+
+@fig
+def polygon_angles():
+    s = Svg(720, 400, "Sum of the interior angles of a hexagon",
+            "A regular hexagon is divided into four triangles by diagonals from one vertex. Each triangle has angles "
+            "adding to 180 degrees, so the interior angles of the hexagon add to 4 × 180 = 720 degrees. One side is "
+            "extended to show an exterior angle of 60 degrees.")
+    heading(s, "A hexagon = 4 triangles, so its angles add to 4 × 180° = 720°")
+    cx, cy, r = 300, 215, 140
+    V = [_pt(cx, cy, r, 90 + 60 * k) for k in range(6)]
+    s.polygon(V, fill=F_GREEN, stroke=INK, width=3)
+    for k in (2, 3, 4):
+        s.line(*V[0], *V[k], color=GREEN, width=2.5, dash="8 6")
+    for k, t in zip(range(1, 5), ("1", "2", "3", "4")):
+        gx = (V[0][0] + V[k][0] + V[k + 1][0]) / 3
+        gy = (V[0][1] + V[k][1] + V[k + 1][1]) / 3
+        s.text(gx, gy, t, size=20, weight="bold", color=GREEN)
+    # exterior angle at V[5] (side V4->V5 extended)
+    v4, v5 = V[4], V[5]
+    ext = (v5[0] + (v5[0] - v4[0]) * 0.7, v5[1] + (v5[1] - v4[1]) * 0.7)
+    s.line(*v5, *ext, width=3, dash="8 6")
+    angle_mark(s, *v5, ext, V[0], r=30, color=RED, label="60°", lr=58)
+    s.text(600, 150, "interior sum", size=16, color=MUTED)
+    s.text(600, 178, "(n − 2) × 180°", size=19, weight="bold")
+    s.text(600, 250, "exterior angles", size=16, color=MUTED)
+    s.text(600, 278, "always add to 360°", size=19, weight="bold")
+    return s
+
+
+@fig
+def circle_parts():
+    s = Svg(720, 440, "Parts of a circle",
+            "A circle with centre O showing a radius, a diameter, a chord, the minor arc and minor segment cut off by the "
+            "chord, a shaded sector between two radii, and a tangent touching the circle at one point.")
+    heading(s, "Parts of a circle")
+    cx, cy, r = 300, 240, 150
+    # sector
+    p1, p2 = _pt(cx, cy, r, 20), _pt(cx, cy, r, 70)
+    s.path(f"M {cx} {cy} L {p1[0]:.1f} {p1[1]:.1f} A {r} {r} 0 0 0 {p2[0]:.1f} {p2[1]:.1f} Z", color=BLUE, width=2, fill=F_BLUE)
+    # segment under a chord
+    c1, c2 = _pt(cx, cy, r, 200), _pt(cx, cy, r, 250)
+    s.path(f"M {c1[0]:.1f} {c1[1]:.1f} A {r} {r} 0 0 0 {c2[0]:.1f} {c2[1]:.1f} Z", color=ORANGE, width=2, fill=F_AMBER)
+    s.circle(cx, cy, r, width=3)
+    s.dot(cx, cy, r=5)
+    s.text(cx - 14, cy + 4, "O", size=18, weight="bold")
+    # diameter
+    d1, d2 = _pt(cx, cy, r, 160), _pt(cx, cy, r, 340)
+    s.line(*d1, *d2, color=GREEN, width=3)
+    s.label(*_pt(cx, cy, 85, 155), "diameter", size=15, color=GREEN, weight="bold")
+    s.label(*_pt(cx, cy, 108, 45), "sector", size=15, color=BLUE, weight="bold")
+    s.line(*c1, *c2, color=ORANGE, width=3)
+    s.label(*_pt(cx, cy, 128, 225), "segment", size=14, color=ORANGE, weight="bold")
+    s.label(*_pt(cx, cy, 70, 230), "chord", size=15, color=ORANGE, weight="bold")
+    # tangent at 300 degrees
+    t = _pt(cx, cy, r, 300)
+    dx, dy = math.cos(math.radians(30)), -math.sin(math.radians(30))
+    s.line(t[0] - 130 * dx, t[1] - 130 * dy, t[0] + 130 * dx, t[1] + 130 * dy, color=PURPLE, width=3)
+    s.line(cx, cy, *t, color=PURPLE, width=2, dash="6 5")
+    right_mark(s, *t, (cx, cy), (t[0] + 50 * dx, t[1] + 50 * dy), color=PURPLE)
+    s.label(t[0] + 150 * dx + 30, t[1] + 150 * dy, "tangent", size=15, color=PURPLE, weight="bold")
+    s.label(*_pt(cx, cy, 70, 300), "radius", size=14, color=PURPLE, weight="bold")
+    s.label(*_pt(cx, cy, r + 26, 45), "arc", size=15, color=BLUE, weight="bold")
+    return s
+
+
+def _panel_circle(s, cx, cy, r, title, col=INK):
+    s.circle(cx, cy, r, width=2.6)
+    s.text(cx, cy + r + 32, title, size=14.5, weight="bold", color=col)
+
+
+@fig
+def circle_theorems():
+    s = Svg(780, 640, "Six circle theorems",
+            "Six panels. 1: the angle at the centre is twice the angle at the circumference. 2: angles in the same "
+            "segment are equal. 3: the angle in a semicircle is 90 degrees. 4: opposite angles of a cyclic quadrilateral "
+            "add to 180 degrees. 5: a tangent is perpendicular to the radius at the point of contact. 6: the two "
+            "tangents from an external point are equal in length.")
+    heading(s, "Circle theorems")
+    r = 78
+    centres = [(140, 160), (390, 160), (640, 160), (140, 440), (390, 440), (640, 440)]
+    # 1 centre twice circumference
+    cx, cy = centres[0]
+    A, B, P, O = _pt(cx, cy, r, 210), _pt(cx, cy, r, 330), _pt(cx, cy, r, 95), (cx, cy)
+    for q in (A, B):
+        s.line(*P, *q, color=BLUE, width=2.6); s.line(*O, *q, color=RED, width=2.6)
+    s.dot(cx, cy, r=4)
+    angle_mark(s, *P, A, B, r=20, color=BLUE, label="x", lr=36, size=15)
+    angle_mark(s, cx, cy, A, B, r=18, color=RED, label="2x", lr=34, size=15)
+    _panel_circle(s, cx, cy, r, "1. Centre angle = 2 × x")
+    # 2 same segment
+    cx, cy = centres[1]
+    A, B = _pt(cx, cy, r, 200), _pt(cx, cy, r, 340)
+    P, Q = _pt(cx, cy, r, 70), _pt(cx, cy, r, 125)
+    for v, col in ((P, BLUE), (Q, GREEN)):
+        s.line(*v, *A, color=col, width=2.6); s.line(*v, *B, color=col, width=2.6)
+        angle_mark(s, *v, A, B, r=20, color=col, label="y", lr=36, size=15)
+    s.line(*A, *B, color=MUTED, width=2)
+    _panel_circle(s, cx, cy, r, "2. Same segment: equal")
+    # 3 semicircle
+    cx, cy = centres[2]
+    A, B, P = _pt(cx, cy, r, 180), _pt(cx, cy, r, 0), _pt(cx, cy, r, 110)
+    s.line(*A, *B, color=GREEN, width=2.6)
+    s.line(*P, *A, color=BLUE, width=2.6); s.line(*P, *B, color=BLUE, width=2.6)
+    right_mark(s, *P, A, B, k=13, color=RED)
+    s.dot(cx, cy, r=4)
+    _panel_circle(s, cx, cy, r, "3. Angle in a semicircle = 90°")
+    # 4 cyclic quadrilateral
+    cx, cy = centres[3]
+    Q4 = [_pt(cx, cy, r, d) for d in (100, 200, 290, 20)]
+    s.polygon(Q4, fill=F_BLUE, stroke=BLUE, width=2.6)
+    angle_mark(s, *Q4[0], Q4[3], Q4[1], r=18, color=RED, label="p", lr=33, size=15)
+    angle_mark(s, *Q4[2], Q4[1], Q4[3], r=18, color=RED, label="q", lr=33, size=15)
+    _panel_circle(s, cx, cy, r, "4. Cyclic quad: p + q = 180°")
+    # 5 tangent perpendicular to radius
+    cx, cy = centres[4]
+    T = _pt(cx, cy, r, 270)
+    s.line(T[0] - 100, T[1], T[0] + 100, T[1], color=PURPLE, width=2.6)
+    s.line(cx, cy, *T, color=RED, width=2.6)
+    right_mark(s, *T, (cx, cy), (T[0] + 40, T[1]), k=13, color=RED)
+    s.dot(cx, cy, r=4)
+    _panel_circle(s, cx, cy, r, "5. Tangent ⟂ radius")
+    # 6 two tangents from an external point P
+    cx, cy = centres[5]
+    cx -= 45
+    Px, Py = cx + 140, cy
+    ang = math.degrees(math.acos(r / 140))
+    T1, T2 = _pt(cx, cy, r, ang), _pt(cx, cy, r, -ang)
+    s.line(Px, Py, *T1, color=GREEN, width=2.6); s.line(Px, Py, *T2, color=GREEN, width=2.6)
+    s.line(cx, cy, *T1, color=MUTED, width=1.8, dash="5 4"); s.line(cx, cy, *T2, color=MUTED, width=1.8, dash="5 4")
+    s.dot(Px, Py, r=4); s.dot(cx, cy, r=4)
+    s.text(Px + 10, Py, "P", size=15, weight="bold", anchor="start")
+    s.circle(cx, cy, r, width=2.6)
+    s.text(cx + 45, cy + r + 32, "6. Tangents from P are equal", size=14.5, weight="bold")
+    return s
+
+
+@fig
+def circle_alternate_segment():
+    s = Svg(720, 420, "The alternate segment theorem",
+            "A tangent touches the circle at T. A chord TA is drawn from T. The angle between the tangent and the chord "
+            "equals the angle in the alternate segment, the angle TBA at a point B on the circle on the other side of "
+            "the chord.")
+    heading(s, "Alternate segment: tangent–chord angle = angle in the other segment")
+    cx, cy, r = 360, 210, 130
+    T = _pt(cx, cy, r, 270)
+    A = _pt(cx, cy, r, 20)
+    B = _pt(cx, cy, r, 140)
+    s.circle(cx, cy, r, width=3)
+    s.line(T[0] - 220, T[1], T[0] + 220, T[1], color=PURPLE, width=3)
+    s.line(*T, *A, color=INK, width=3)
+    s.line(*B, *T, color=BLUE, width=3); s.line(*B, *A, color=BLUE, width=3)
+    angle_mark(s, *T, (T[0] + 120, T[1]), A, r=34, color=RED, label="z", lr=56, size=18)
+    angle_mark(s, *B, T, A, r=28, color=RED, label="z", lr=50, size=18)
+    for P, t, dx, dy in ((T, "T", 0, 26), (A, "A", 16, -6), (B, "B", -16, -10)):
+        s.text(P[0] + dx, P[1] + dy, t, size=18, weight="bold")
+    return s
+
+
+@fig
+def sector_arc():
+    s = Svg(720, 380, "Arc length and area of a sector",
+            "A sector of a circle with radius r and angle theta at the centre. Its arc length is theta over 360 times "
+            "2 pi r, and its area is theta over 360 times pi r squared.")
+    heading(s, "A sector is a fraction θ/360 of the whole circle")
+    cx, cy, r = 220, 230, 150
+    p1, p2 = _pt(cx, cy, r, 0), _pt(cx, cy, r, 70)
+    s.circle(cx, cy, r, width=2, stroke=GRID if False else MUTED, dash="6 6")
+    s.path(f"M {cx} {cy} L {p1[0]:.1f} {p1[1]:.1f} A {r} {r} 0 0 0 {p2[0]:.1f} {p2[1]:.1f} Z", color=BLUE, width=3, fill=F_BLUE)
+    s.arc(cx, cy, r, 0, 70, color=RED, width=5)
+    angle_mark(s, cx, cy, p1, p2, r=30, color=INK, label="θ", lr=50, size=19)
+    s.label((cx + p1[0]) / 2, cy + 18, "r", size=18, weight="bold")
+    s.label(*_pt(cx, cy, r + 26, 35), "arc", size=16, color=RED, weight="bold")
+    s.text(560, 170, "arc length = (θ/360) × 2πr", size=18, weight="bold", color=RED)
+    s.text(560, 230, "sector area = (θ/360) × πr²", size=18, weight="bold", color=BLUE)
+    s.text(560, 290, "perimeter = arc + 2r", size=17, color=INK)
+    return s
+
+
+@fig
+def solids_formulas():
+    s = Svg(780, 560, "Volume and surface area of common solids",
+            "Five solids with their volume formulas. Cuboid: length times breadth times height. Cylinder: pi r squared h. "
+            "Cone: one third pi r squared h. Sphere: four thirds pi r cubed. Pyramid: one third times base area times height.")
+    heading(s, "Volumes of solids")
+    # cuboid
+    x, y = 60, 120
+    w, h, dpx, dpy = 120, 90, 50, 35
+    s.polygon([(x, y + dpy), (x + w, y + dpy), (x + w, y + dpy + h), (x, y + dpy + h)], fill=F_BLUE, stroke=INK, width=2.6)
+    s.polygon([(x, y + dpy), (x + dpx, y), (x + dpx + w, y), (x + w, y + dpy)], fill="#eef2ff", stroke=INK, width=2.6)
+    s.polygon([(x + w, y + dpy), (x + dpx + w, y), (x + dpx + w, y + h), (x + w, y + dpy + h)], fill="#c7d2fe", stroke=INK, width=2.6)
+    s.text(x + w / 2, y + dpy + h + 22, "l", size=16, italic=True); s.text(x + w + dpx / 2 + 14, y + dpy + h - 10, "b", size=16, italic=True)
+    s.text(x - 14, y + dpy + h / 2, "h", size=16, italic=True)
+    s.text(140, 290, "Cuboid  V = lbh", size=16, weight="bold")
+    # cylinder
+    cx, top, rx, ry, hh = 390, 130, 60, 18, 110
+    s.rect(cx - rx, top, 2 * rx, hh, fill=F_GREEN, stroke="none", width=0)
+    s.line(cx - rx, top, cx - rx, top + hh, width=2.6); s.line(cx + rx, top, cx + rx, top + hh, width=2.6)
+    s.ellipse(cx, top + hh, rx, ry, fill=F_GREEN, width=2.6)
+    s.ellipse(cx, top, rx, ry, fill="#bbf7d0", width=2.6)
+    s.line(cx, top, cx + rx, top, color=RED, width=2.2); s.text(cx + rx / 2, top - 10, "r", size=16, italic=True, color=RED)
+    s.text(cx + rx + 14, top + hh / 2, "h", size=16, italic=True)
+    s.text(cx, 290, "Cylinder  V = πr²h", size=16, weight="bold")
+    # cone
+    cx, base, rx, ry, hh = 640, 250, 60, 18, 140
+    s.polygon([(cx - rx, base), (cx, base - hh), (cx + rx, base)], fill=F_AMBER, stroke=INK, width=2.6)
+    s.ellipse(cx, base, rx, ry, fill=F_AMBER, width=2.6)
+    s.line(cx, base - hh, cx, base, color=MUTED, width=2, dash="6 5"); s.line(cx, base, cx + rx, base, color=RED, width=2.2)
+    s.text(cx - 12, base - hh / 2, "h", size=16, italic=True); s.text(cx + rx / 2, base + 4 + ry, "r", size=16, italic=True, color=RED)
+    s.text(cx, 290, "Cone  V = ⅓πr²h", size=16, weight="bold")
+    # sphere
+    cx, cy, rr = 230, 420, 70
+    s.circle(cx, cy, rr, fill=F_PURPLE, stroke=INK, width=2.6)
+    s.ellipse(cx, cy, rr, 20, width=1.8, dash="5 5")
+    s.line(cx, cy, cx + rr, cy, color=RED, width=2.2); s.text(cx + rr / 2, cy - 12, "r", size=16, italic=True, color=RED)
+    s.text(cx, 525, "Sphere  V = ⁴⁄₃πr³", size=16, weight="bold")
+    # pyramid
+    bx, by = 470, 470
+    P = (575, 345)
+    base = [(bx, by), (bx + 150, by), (bx + 190, by - 40), (bx + 40, by - 40)]
+    s.polygon(base, fill=F_GREY, stroke=INK, width=2.4)
+    for q in base:
+        s.line(*P, *q, width=2.4)
+    s.line(P[0], P[1], P[0], by - 20, color=MUTED, width=2, dash="6 5")
+    s.text(P[0] + 12, (P[1] + by - 20) / 2, "h", size=16, italic=True, anchor="start")
+    s.text(575, 525, "Pyramid  V = ⅓ × base area × h", size=16, weight="bold")
+    return s
+
+
+@fig
+def composite_plot():
+    s = Svg(720, 420, "An L-shaped plot of land with its measurements",
+            "An L-shaped plot made of two rectangles. The whole plot is 20 m wide along the bottom and 15 m high on the "
+            "left. A corner 8 m by 6 m is missing at the top right. Dimensions are marked in metres.")
+    heading(s, "An L-shaped plot (all lengths in metres)")
+    u = 18
+    ox, oy = 170, 360
+    X = lambda x: ox + x * u
+    Y = lambda y: oy - y * u
+    pts = [(0, 0), (20, 0), (20, 9), (12, 9), (12, 15), (0, 15)]
+    s.polygon([(X(a), Y(b)) for a, b in pts], fill=F_GREEN, stroke=INK, width=3)
+    s.line(X(12), Y(9), X(12), Y(0), color=GREEN, width=2, dash="7 6")
+    s.label(X(10), Y(0) + 22, "20", size=17, weight="bold")
+    s.label(X(0) - 24, Y(7.5), "15", size=17, weight="bold")
+    s.label(X(6), Y(15) - 18, "12", size=17, weight="bold")
+    s.label(X(20) + 22, Y(4.5), "9", size=17, weight="bold")
+    s.label(X(16), Y(9) - 18, "8", size=17, weight="bold")
+    s.label(X(12) + 22, Y(12), "6", size=17, weight="bold")
+    s.text(X(6), Y(7.5), "A", size=22, weight="bold", color=GREEN)
+    s.text(X(16), Y(4.5), "B", size=22, weight="bold", color=GREEN)
+    return s
+
+
+@fig
+def similar_triangles():
+    s = Svg(720, 380, "Two similar triangles with scale factor 2",
+            "Triangle ABC has sides 3, 4 and 5. Triangle PQR has sides 6, 8 and 10, each twice as long. Corresponding "
+            "angles are equal, so the triangles are similar with a scale factor of 2.")
+    heading(s, "Similar triangles: same angles, sides in the same ratio")
+    def tri(ox, oy, k, names, col, fill):
+        A, B, C = (ox, oy), (ox + 4 * k, oy), (ox, oy - 3 * k)
+        s.polygon([A, B, C], fill=fill, stroke=col, width=3)
+        right_mark(s, *A, B, C, k=12, color=col)
+        s.label((A[0] + B[0]) / 2, oy + 20, str(4 * (k // 30)), size=16, weight="bold")
+        s.label(ox - 20, (A[1] + C[1]) / 2, str(3 * (k // 30)), size=16, weight="bold")
+        s.label((B[0] + C[0]) / 2 + 18, (B[1] + C[1]) / 2 - 12, str(5 * (k // 30)), size=16, weight="bold")
+        angle_mark(s, *B, A, C, r=26, color=col)
+        for P, t, dx, dy in ((A, names[0], -14, 16), (B, names[1], 14, 14), (C, names[2], -14, -10)):
+            s.text(P[0] + dx, P[1] + dy, t, size=17, weight="bold")
+    tri(90, 320, 30, "ABC", BLUE, F_BLUE)
+    tri(330, 330, 60, "PQR", GREEN, F_GREEN)
+    s.text(600, 120, "scale factor", size=16, color=MUTED, anchor="middle")
+    s.text(600, 150, "6/3 = 8/4 = 10/5 = 2", size=17, weight="bold")
+    s.text(600, 200, "areas scale by", size=16, color=MUTED)
+    s.text(600, 228, "2² = 4", size=17, weight="bold")
+    return s
+
+
+@fig
+def loci_panels():
+    s = Svg(780, 620, "Four basic loci",
+            "Four panels. Points a fixed distance from a point form a circle. Points equidistant from two points lie on "
+            "the perpendicular bisector of the line joining them. Points equidistant from two intersecting lines lie on "
+            "the bisector of the angle between them. Points a fixed distance from a straight line lie on two parallel lines.")
+    heading(s, "Four basic loci")
+    # 1 circle
+    cx, cy = 200, 190
+    s.dot(cx, cy, r=6); s.text(cx - 14, cy + 4, "O", size=16, weight="bold")
+    s.circle(cx, cy, 90, stroke=RED, width=3, dash="9 6")
+    s.line(cx, cy, cx + 90, cy, color=INK, width=2); s.label(cx + 45, cy - 14, "3 cm", size=14)
+    s.text(cx, 310, "fixed distance from a point", size=15, weight="bold", color=RED)
+    # 2 perpendicular bisector
+    ax, ay, bx, by = 470, 220, 690, 160
+    s.dot(ax, ay, r=6); s.dot(bx, by, r=6)
+    s.text(ax - 14, ay + 6, "A", size=16, weight="bold"); s.text(bx + 14, by, "B", size=16, weight="bold")
+    s.line(ax, ay, bx, by, color=MUTED, width=2)
+    mx, my = (ax + bx) / 2, (ay + by) / 2
+    dx, dy = bx - ax, by - ay
+    L = math.hypot(dx, dy); nx, ny = -dy / L, dx / L
+    s.line(mx - 110 * nx, my - 110 * ny, mx + 110 * nx, my + 110 * ny, color=RED, width=3, dash="9 6")
+    right_mark(s, mx, my, (bx, by), (mx + 40 * nx, my + 40 * ny), k=12, color=RED)
+    s.text(580, 310, "equidistant from A and B", size=15, weight="bold", color=RED)
+    # 3 angle bisector
+    vx, vy = 90, 540
+    p1, p2 = _pt(vx, vy, 230, 0), _pt(vx, vy, 230, 50)
+    s.line(vx, vy, *p1, width=3); s.line(vx, vy, *p2, width=3)
+    b = _pt(vx, vy, 240, 25)
+    s.line(vx, vy, *b, color=RED, width=3, dash="9 6")
+    angle_mark(s, vx, vy, p1, b, r=60, color=BLUE)
+    angle_mark(s, vx, vy, b, p2, r=66, color=BLUE)
+    s.text(200, 600, "equidistant from two lines", size=15, weight="bold", color=RED)
+    # 4 parallel lines
+    s.line(450, 470, 710, 470, width=3)
+    s.line(450, 410, 710, 410, color=RED, width=3, dash="9 6")
+    s.line(450, 530, 710, 530, color=RED, width=3, dash="9 6")
+    s.line(560, 470, 560, 410, width=2); s.label(586, 440, "2 cm", size=14)
+    s.line(620, 470, 620, 530, width=2); s.label(646, 500, "2 cm", size=14)
+    s.text(580, 600, "fixed distance from a line", size=15, weight="bold", color=RED)
+    return s
+
+
+@fig
+def construction_panels():
+    s = Svg(780, 380, "Three constructions with ruler and compasses",
+            "Panel 1: the perpendicular bisector of a line AB, drawn through the two points where equal arcs from A and B "
+            "cross. Panel 2: the bisector of an angle, drawn from the vertex through the point where two equal arcs "
+            "cross. Panel 3: an angle of 60 degrees, made by an equilateral triangle of arcs with the same radius.")
+    heading(s, "Ruler-and-compasses constructions")
+    # 1 perpendicular bisector
+    ax, bx, y = 40, 220, 220
+    s.line(ax, y, bx, y, width=3); s.dot(ax, y, r=5); s.dot(bx, y, r=5)
+    s.text(ax, y + 22, "A", size=16, weight="bold"); s.text(bx, y + 22, "B", size=16, weight="bold")
+    R = 120
+    for (cx, a1, a2) in ((ax, 25, 75), (ax, -75, -25), (bx, 105, 155), (bx, 205, 255)):
+        s.arc(cx, y, R, a1, a2, color=BLUE, width=2)
+    m = (ax + bx) / 2
+    h = math.sqrt(R * R - ((bx - ax) / 2) ** 2)
+    s.dot(m, y - h, r=4, color=BLUE); s.dot(m, y + h, r=4, color=BLUE)
+    s.line(m, y - h - 20, m, y + h + 20, color=RED, width=3)
+    s.text(130, 350, "perpendicular bisector", size=15, weight="bold", color=RED)
+    # 2 angle bisector
+    vx, vy = 300, 300
+    p1, p2 = _pt(vx, vy, 200, 0), _pt(vx, vy, 200, 60)
+    s.line(vx, vy, *p1, width=3); s.line(vx, vy, *p2, width=3)
+    s.arc(vx, vy, 90, -5, 65, color=BLUE, width=2)
+    q1, q2 = _pt(vx, vy, 90, 0), _pt(vx, vy, 90, 60)
+    s.dot(*q1, r=4, color=BLUE); s.dot(*q2, r=4, color=BLUE)
+    meet = _pt(vx, vy, 90 * math.sqrt(3), 30)
+    s.arc(q1[0], q1[1], 90, 70, 110, color=BLUE, width=2)
+    s.arc(q2[0], q2[1], 90, -50, -10, color=BLUE, width=2)
+    s.line(vx, vy, *_pt(vx, vy, 210, 30), color=RED, width=3)
+    s.dot(*meet, r=4, color=BLUE)
+    s.text(395, 350, "angle bisector", size=15, weight="bold", color=RED)
+    # 3 sixty degrees
+    vx, vy, R = 570, 300, 130
+    s.line(vx, vy, vx + 190, vy, width=3)
+    s.arc(vx, vy, R, -5, 75, color=BLUE, width=2)
+    q1 = (vx + R, vy)
+    s.arc(q1[0], q1[1], R, 105, 135, color=BLUE, width=2)
+    top = _pt(vx, vy, R, 60)
+    s.dot(*q1, r=4, color=BLUE); s.dot(*top, r=4, color=BLUE)
+    s.line(vx, vy, *_pt(vx, vy, 190, 60), color=RED, width=3)
+    angle_mark(s, vx, vy, (vx + 50, vy), top, r=34, color=RED, label="60°", lr=58, size=15)
+    s.text(660, 350, "an angle of 60°", size=15, weight="bold", color=RED)
+    return s
+
+
+@fig
+def coordinate_distance_midpoint():
+    s = Svg(720, 560, "Distance, midpoint and gradient between A(1, 2) and B(7, 10)",
+            "Points A(1, 2) and B(7, 10) are joined. A right-angled triangle has a horizontal side of 6 and a vertical "
+            "side of 8, so AB = 10 by Pythagoras. The midpoint M is (4, 6) and the gradient of AB is 8 over 6, which is "
+            "4 over 3.")
+    heading(s, "A(1, 2) to B(7, 10): distance, midpoint, gradient")
+    ox, oy, u = 110, 480, 40
+    X = lambda x: ox + x * u
+    Y = lambda y: oy - y * u
+    grid_axes(s, X, Y, (0, 9), (0, 11))
+    A, B, C = (X(1), Y(2)), (X(7), Y(10)), (X(7), Y(2))
+    s.polyline([A, C, B], color=ORANGE, width=2.6, dash="7 5")
+    s.line(*A, *B, color=BLUE, width=3.5)
+    right_mark(s, *C, A, B, k=12, color=ORANGE)
+    s.dot(*A, r=6, color=BLUE); s.dot(*B, r=6, color=BLUE)
+    s.label(A[0] - 50, A[1] + 4, "A(1, 2)", size=15, color=BLUE, weight="bold")
+    s.label(B[0] - 56, B[1] - 4, "B(7, 10)", size=15, color=BLUE, weight="bold")
+    M = (X(4), Y(6))
+    s.dot(*M, r=6, color=RED); s.label(M[0] - 52, M[1] - 6, "M(4, 6)", size=15, color=RED, weight="bold")
+    s.label((A[0] + C[0]) / 2, A[1] + 20, "6", size=16, color=ORANGE, weight="bold")
+    s.label(C[0] + 18, (C[1] + B[1]) / 2, "8", size=16, color=ORANGE, weight="bold")
+    s.text(455, 300, "AB = √(6² + 8²) = 10", size=17, weight="bold", anchor="start")
+    s.text(455, 332, "gradient = 8/6 = 4/3", size=17, weight="bold", anchor="start")
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:
