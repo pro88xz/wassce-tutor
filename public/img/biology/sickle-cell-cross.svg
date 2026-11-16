@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Inheritance of sickle cell between two carriers</title>
+<desc id="d">Two parents with the sickle cell trait, genotype AS, each pass on A or S. Their children can be AA (normal), AS (carrier, sickle cell trait) or SS (sickle cell disease) in the ratio 1 : 2 : 1. Each child has a 1 in 4 chance of sickle cell disease.</desc>
+<defs></defs>
+<rect width="780" height="440" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">AS × AS: each child has a 1 in 4 chance of SS</text>
+<text x="70.0" y="84.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="bold">Parents</text>
+<text x="190.0" y="84.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">AS (carrier)  ×  AS (carrier)</text>
+<circle cx="210.0" cy="136.0" r="22.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="210.0" y="137.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<circle cx="310.0" cy="136.0" r="22.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="310.0" y="137.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">S</text>
+<circle cx="126.0" cy="220.0" r="22.0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="126.0" y="221.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<circle cx="126.0" cy="320.0" r="22.0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="126.0" y="321.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">S</text>
+<rect x="160.0" y="170.0" width="100.0" height="100.0" rx="0" fill="#dcfce7" stroke="#0f172a" stroke-width="2"/>
+<text x="210.0" y="221.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">AA</text>
+<rect x="260.0" y="170.0" width="100.0" height="100.0" rx="0" fill="#fef3c7" stroke="#0f172a" stroke-width="2"/>
+<text x="310.0" y="221.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">AS</text>
+<rect x="160.0" y="270.0" width="100.0" height="100.0" rx="0" fill="#fef3c7" stroke="#0f172a" stroke-width="2"/>
+<text x="210.0" y="321.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">AS</text>
+<rect x="260.0" y="270.0" width="100.0" height="100.0" rx="0" fill="#fee2e2" stroke="#0f172a" stroke-width="2"/>
+<text x="310.0" y="321.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">SS</text>
+<rect x="470.0" y="188.0" width="24.0" height="24.0" rx="0" fill="#dcfce7" stroke="#0f172a" stroke-width="1.5"/>
+<text x="504.0" y="200.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">AA: normal haemoglobin</text>
+<text x="504.0" y="222.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">1 in 4</text>
+<rect x="470.0" y="244.0" width="24.0" height="24.0" rx="0" fill="#fef3c7" stroke="#0f172a" stroke-width="1.5"/>
+<text x="504.0" y="256.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">AS: carrier (trait), healthy</text>
+<text x="504.0" y="278.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">2 in 4</text>
+<rect x="470.0" y="300.0" width="24.0" height="24.0" rx="0" fill="#fee2e2" stroke="#0f172a" stroke-width="1.5"/>
+<text x="504.0" y="312.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">SS: sickle cell disease</text>
+<text x="504.0" y="334.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">1 in 4</text>
+<text x="470.0" y="392.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">A and S are codominant:</text>
+<text x="470.0" y="412.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">AS makes both kinds of haemoglobin</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A monohybrid cross between two heterozygous tall plants</title>
+<desc id="d">Parents Tt crossed with Tt each produce gametes T and t. The Punnett square gives offspring TT, Tt, Tt and tt: genotype ratio 1 TT : 2 Tt : 1 tt, phenotype ratio 3 tall : 1 dwarf.</desc>
+<defs></defs>
+<rect width="780" height="470" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Tt × Tt: the 3 : 1 ratio</text>
+<text x="70.0" y="80.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="bold">Parents</text>
+<text x="190.0" y="80.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Tt (tall)  ×  Tt (tall)</text>
+<text x="70.0" y="116.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="bold">Gametes</text>
+<text x="190.0" y="116.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">T or t</text>
+<text x="330.0" y="116.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">T or t</text>
+<circle cx="210.0" cy="166.0" r="22.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="210.0" y="167.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">T</text>
+<circle cx="310.0" cy="166.0" r="22.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="310.0" y="167.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">t</text>
+<circle cx="126.0" cy="250.0" r="22.0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="126.0" y="251.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">T</text>
+<circle cx="126.0" cy="350.0" r="22.0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="126.0" y="351.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">t</text>
+<rect x="160.0" y="200.0" width="100.0" height="100.0" rx="0" fill="#dcfce7" stroke="#0f172a" stroke-width="2"/>
+<text x="210.0" y="251.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">TT</text>
+<rect x="260.0" y="200.0" width="100.0" height="100.0" rx="0" fill="#dcfce7" stroke="#0f172a" stroke-width="2"/>
+<text x="310.0" y="251.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Tt</text>
+<rect x="160.0" y="300.0" width="100.0" height="100.0" rx="0" fill="#dcfce7" stroke="#0f172a" stroke-width="2"/>
+<text x="210.0" y="351.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Tt</text>
+<rect x="260.0" y="300.0" width="100.0" height="100.0" rx="0" fill="#fef3c7" stroke="#0f172a" stroke-width="2"/>
+<text x="310.0" y="351.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">tt</text>
+<text x="470.0" y="230.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Genotypes</text>
+<text x="470.0" y="258.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">1 TT : 2 Tt : 1 tt</text>
+<text x="470.0" y="312.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Phenotypes</text>
+<rect x="470.0" y="328.0" width="22.0" height="22.0" rx="0" fill="#dcfce7" stroke="#0f172a" stroke-width="1.5"/>
+<text x="502.0" y="340.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">3 tall (75%)</text>
+<rect x="470.0" y="362.0" width="22.0" height="22.0" rx="0" fill="#fef3c7" stroke="#0f172a" stroke-width="1.5"/>
+<text x="502.0" y="374.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">1 dwarf (25%)</text>
+<text x="470.0" y="422.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">T = tall (dominant)</text>
+<text x="470.0" y="444.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">t = dwarf (recessive)</text>
+</svg>

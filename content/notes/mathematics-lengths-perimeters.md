@@ -12,10 +12,10 @@ By the end of this lesson you should be able to:
 
 ## Units of length
 
-| | |
-|---|---|
-| $10$ mm $= 1$ cm | $100$ cm $= 1$ m |
-| $1000$ mm $= 1$ m | $1000$ m $= 1$ km |
+- $10$ mm $= 1$ cm
+- $100$ cm $= 1$ m
+- $1000$ mm $= 1$ m
+- $1000$ m $= 1$ km
 
 :::callout{type=common-mistake}
 **Mixing units.** A rectangle $2$ m by $50$ cm has perimeter $2(2 + 0.5) = 5$ m, **not** $2(2 + 50) = 104$. Convert everything to the same unit **first**.

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Sex determination in humans</title>
+<desc id="d">The mother (XX) makes only X eggs. The father (XY) makes X or Y sperm in equal numbers. The Punnett square gives XX, XX, XY, XY: half the children are expected to be girls and half boys. The sperm decides the sex.</desc>
+<defs></defs>
+<rect width="780" height="420" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">XX × XY: the sperm decides the sex</text>
+<text x="70.0" y="84.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="bold">Parents</text>
+<text x="190.0" y="84.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">mother XX  ×  father XY</text>
+<circle cx="210.0" cy="136.0" r="22.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="210.0" y="137.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">X</text>
+<circle cx="310.0" cy="136.0" r="22.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="310.0" y="137.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Y</text>
+<circle cx="126.0" cy="220.0" r="22.0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="126.0" y="221.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">X</text>
+<circle cx="126.0" cy="320.0" r="22.0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="126.0" y="321.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">X</text>
+<rect x="160.0" y="170.0" width="100.0" height="100.0" rx="0" fill="#ede9fe" stroke="#0f172a" stroke-width="2"/>
+<text x="210.0" y="221.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">XX</text>
+<rect x="260.0" y="170.0" width="100.0" height="100.0" rx="0" fill="#ccfbf1" stroke="#0f172a" stroke-width="2"/>
+<text x="310.0" y="221.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">XY</text>
+<rect x="160.0" y="270.0" width="100.0" height="100.0" rx="0" fill="#ede9fe" stroke="#0f172a" stroke-width="2"/>
+<text x="210.0" y="321.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">XX</text>
+<rect x="260.0" y="270.0" width="100.0" height="100.0" rx="0" fill="#ccfbf1" stroke="#0f172a" stroke-width="2"/>
+<text x="310.0" y="321.0" font-size="22" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">XY</text>
+<text x="150.0" y="120.0" font-size="14" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="normal">sperm</text>
+<text x="100.0" y="290.0" font-size="14" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="normal">eggs</text>
+<rect x="470.0" y="200.0" width="24.0" height="24.0" rx="0" fill="#ede9fe" stroke="#0f172a" stroke-width="1.5"/>
+<text x="504.0" y="212.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">XX: girl (50%)</text>
+<rect x="470.0" y="248.0" width="24.0" height="24.0" rx="0" fill="#ccfbf1" stroke="#0f172a" stroke-width="1.5"/>
+<text x="504.0" y="260.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">XY: boy (50%)</text>
+<text x="470.0" y="320.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Eggs always carry X.</text>
+<text x="470.0" y="342.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">Half of sperm carry X, half carry Y.</text>
+</svg>

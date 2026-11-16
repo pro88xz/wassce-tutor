@@ -11,10 +11,10 @@ By the end of this lesson you should be able to:
 
 ## Units of volume and capacity
 
-| | |
-|---|---|
-| $1$ cm³ $= 1$ ml | $1000$ cm³ $= 1$ litre |
-| $1$ m³ $= 1\,000\,000$ cm³ | $1$ m³ $= 1000$ litres |
+- $1$ cm³ $= 1$ ml
+- $1000$ cm³ $= 1$ litre
+- $1$ m³ $= 1\,000\,000$ cm³
+- $1$ m³ $= 1000$ litres
 
 :::callout{type=common-mistake}
 **Cubing conversions.** $1$ m $= 100$ cm, so $1$ m³ $= 100^3 = 1\,000\,000$ cm³, not $100$ or $10\,000$.
