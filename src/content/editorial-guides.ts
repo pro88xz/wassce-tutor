@@ -47,7 +47,7 @@ export const GUIDE_POSTS: BlogPost[] = [
       {
         heading: 'What can cost you your results',
         bullets: [
-          'A mobile phone. The WAEC Mathematics syllabus states that phones are not allowed, with or without a calculator. In Ghana, WAEC cancelled the entire results of 861 candidates in 2026 for having a phone in the hall, whether or not they used it. Leave yours at home or with someone outside.',
+          'A mobile phone. The WAEC Mathematics syllabus states that phones are not allowed, with or without a calculator. In Sierra Leone, a candidate found with a phone in the examination hall has their results cancelled, even if the phone was never used. Leave yours at home or with someone outside.',
           'Other electronic devices, including smartwatches and calculators that are programmable or can communicate.',
           'Notes, “leaked” questions or any material you were not given in the hall. Sierra Leone’s Anti-Corruption Commission lists possessing foreign materials and using mobile phones during the WASSCE among the malpractice it will investigate, arrest and prosecute.',
           'Paying anyone for help. The Commission warns that school authorities, invigilators and examination officials must not demand or accept any advantage or bribe from candidates or parents, and that corruption in examinations is an offence under the Anti-Corruption (Amendment) Act 2019.'
@@ -106,8 +106,7 @@ export const GUIDE_POSTS: BlogPost[] = [
       { label: 'Anti-Corruption Commission: warning against malpractice, mobile phone use and extortion in the WASSCE', url: 'https://www.anticorruption.gov.sl/blog/anti-corruption-commission-sl-news-room-1/post/acc-warns-against-malpractices-wanton-use-of-mobile-phones-and-extortion-in-the-on-going-west-african-senior-school-certificate-examination-wassce-1039' },
       { label: 'Premier Media: education stakeholders approve dual curricula for the 2026 WASSCE', url: 'https://www.premiermedia-sl.com/?p=26293' },
       { label: 'WAEC General Mathematics syllabus: calculators, tables and instruments (PDF, reproduced by waecsyllabus.com)', url: 'https://waecsyllabus.com/files/ssce/GENERAL%20MATHEMATICS%20OR%20MATHEMATICS%20(CORE).pdf' },
-      { label: 'WAEC English Language syllabus: listening comprehension test (PDF, reproduced by waecsyllabus.com)', url: 'https://waecsyllabus.com/files/ssce/ENGLISH%20LANGUAGE.pdf' },
-      { label: 'MyJoyOnline (Ghana): WAEC cancels results of candidates found with mobile phones', url: 'https://www.myjoyonline.com/waec-questions-effectiveness-of-searches-after-phones-found-on-candidates/' }
+      { label: 'WAEC English Language syllabus: listening comprehension test (PDF, reproduced by waecsyllabus.com)', url: 'https://waecsyllabus.com/files/ssce/ENGLISH%20LANGUAGE.pdf' }
     ],
     related: ['how-to-pass-wassce-mathematics', 'how-to-check-wassce-result-sierra-leone'],
     action: { heading: 'Practise every subject under exam timing before the day.', label: 'Explore subjects', href: '/wassce/subjects' }
@@ -432,15 +431,15 @@ export const GUIDE_POSTS: BlogPost[] = [
     imageCredit: 'Artem Podrez via Pexels',
     imageSourceUrl: 'https://www.pexels.com/photo/a-man-looking-at-the-camera-while-holding-the-eyepiece-of-the-microscope-5726797/',
     ...PEXELS,
-    intro: 'Biology is the science most WASSCE candidates take, and it is required for medicine, nursing, pharmacy, agriculture and many other courses. It also has a trap: many candidates revise only the theory, while the practical paper carries a large share of the marks. This guide follows the WAEC Biology syllabus, including the parts set only for candidates in Sierra Leone, Nigeria, The Gambia and Liberia.',
+    intro: 'Biology is the science most WASSCE candidates take, and it is required for medicine, nursing, pharmacy, agriculture and many other courses. It also has a trap: many candidates revise only the theory, while the practical paper carries a large share of the marks. This guide follows the WAEC Biology syllabus, including the extra section that Sierra Leone candidates are examined on.',
     sections: [
       {
         heading: 'How the examination is set',
         paragraphs: ['There are three papers and you must take all of them. Papers 1 and 2 are taken together at one sitting.'],
         bullets: [
-          'Paper 1: 50 multiple-choice questions in 50 minutes, for 50 marks, from the part of the syllabus common to all countries.',
-          'Paper 2: essays in 1 hour 40 minutes, for 70 marks. In Section A you answer two of four questions (20 marks each). In Section C, set for candidates in Sierra Leone, Nigeria, The Gambia and Liberia, you answer all the short structured questions (30 marks).',
-          'Paper 3: the practical, 2 hours, for 80 marks. School candidates take a practical test; private candidates take a test of practical work. Section A has two compulsory questions (25 marks each) and Section C has one question for Sierra Leone candidates (30 marks).'
+          'Paper 1: 50 multiple-choice questions in 50 minutes, for 50 marks, from the core part of the syllabus.',
+          'Paper 2: essays in 1 hour 40 minutes, for 70 marks. In Section A you answer two of four questions (20 marks each). In Section C, the section set for Sierra Leone candidates, you answer all the short structured questions (30 marks).',
+          'Paper 3: the practical, 2 hours, for 80 marks. School candidates take a practical test; private candidates take a test of practical work. Section A has two compulsory questions (25 marks each) and Section C has one question set for Sierra Leone candidates (30 marks).'
         ]
       },
       {
@@ -459,8 +458,8 @@ export const GUIDE_POSTS: BlogPost[] = [
       {
         heading: 'What the syllabus covers',
         paragraphs: [
-          'The common part of the syllabus, which Paper 1 and Section A of Paper 2 are drawn from, is grouped under: Concept of Living; Plant and Animal Nutrition; Basic Ecological Concepts; Conservation of Natural Resources; Variation in Population; Biology of Heredity (Genetics); and Adaptation for Survival and Evolution.',
-          'The section for Sierra Leone, Nigeria, The Gambia and Liberia goes deeper into some of these: cell theory, irritability, excretory systems and reproduction; the nitrogen cycle and the alimentary system; habitats; applications of variation such as crime detection and blood transfusion; and evolution. Section C of Paper 2 and Section C of Paper 3 come from this part, so it cannot be skipped.'
+          'The core part of the syllabus, which Paper 1 and Section A of Paper 2 are drawn from, is grouped under: Concept of Living; Plant and Animal Nutrition; Basic Ecological Concepts; Conservation of Natural Resources; Variation in Population; Biology of Heredity (Genetics); and Adaptation for Survival and Evolution.',
+          'The section set for Sierra Leone candidates goes deeper into some of these: cell theory, irritability, excretory systems and reproduction; the nitrogen cycle and the alimentary system; habitats; applications of variation such as crime detection and blood transfusion; and evolution. Section C of Paper 2 and Section C of Paper 3 come from this part, so it cannot be skipped.'
         ]
       },
       {
@@ -518,8 +517,8 @@ export const GUIDE_POSTS: BlogPost[] = [
         heading: 'How the examination is set',
         paragraphs: ['There are three papers and you must take all of them. Papers 1 and 2 are taken together at one sitting.'],
         bullets: [
-          'Paper 1: 50 multiple-choice questions in 1 hour, for 50 marks, from the part of the syllabus common to all candidates.',
-          'Paper 2: essays in 2 hours, for 100 marks. Section A has ten short structured questions; answer all of them, for 25 marks. Section B has four questions, two on the common syllabus and two on your country’s section; answer any three, at 25 marks each.',
+          'Paper 1: 50 multiple-choice questions in 1 hour, for 50 marks, from the core part of the syllabus.',
+          'Paper 2: essays in 2 hours, for 100 marks. Section A has ten short structured questions; answer all of them, for 25 marks. Section B has four questions, two on the core syllabus and two on the section set for Sierra Leone candidates; answer any three, at 25 marks each.',
           'Paper 3: the practical, for 50 marks. School candidates take a 2-hour practical test; private candidates take a 1 hour 30 minute alternative to practical. Both have three compulsory questions.'
         ]
       },
@@ -550,8 +549,8 @@ export const GUIDE_POSTS: BlogPost[] = [
       {
         heading: 'What the syllabus covers',
         paragraphs: [
-          'The common part of the syllabus covers: the structure of the atom; separation techniques; periodic chemistry; chemical bonds; stoichiometry and chemical reactions; states of matter; energy changes; acids, bases and salts; solubility; rates of reaction and equilibrium; redox reactions; the chemistry of carbon (organic chemistry); chemistry, industry and the environment; and basic biochemistry.',
-          'The section for Sierra Leone, Nigeria, Liberia and The Gambia adds non-metals and their compounds, and metals and their compounds. Two of the four Section B questions in Paper 2 come from your country’s section, so revise it.'
+          'The core part of the syllabus covers: the structure of the atom; separation techniques; periodic chemistry; chemical bonds; stoichiometry and chemical reactions; states of matter; energy changes; acids, bases and salts; solubility; rates of reaction and equilibrium; redox reactions; the chemistry of carbon (organic chemistry); chemistry, industry and the environment; and basic biochemistry.',
+          'The section set for Sierra Leone candidates adds non-metals and their compounds, and metals and their compounds. Two of the four Section B questions in Paper 2 come from this section, so revise it.'
         ]
       },
       {
@@ -633,7 +632,7 @@ export const GUIDE_POSTS: BlogPost[] = [
         heading: 'What the syllabus covers',
         paragraphs: [
           'The syllabus is organised in five parts: interaction of matter, space and time (including motion and forces); energy, both mechanical and heat; waves (including light and sound); fields (gravitational, electric and magnetic, and electricity); and atomic and nuclear physics.',
-          'It also lists harmonised topics for short structured questions, set for every country, such as derived quantities and dimensions, projectile motion, satellites, elasticity, fibre optics, lasers and semiconductors. The syllabus lists them for short structured questions, which is the format of Section A of Paper 2, so give each one a quick revision.'
+          'It also lists harmonised topics for short structured questions, such as derived quantities and dimensions, projectile motion, satellites, elasticity, fibre optics, lasers and semiconductors. The syllabus lists them for short structured questions, which is the format of Section A of Paper 2, so give each one a quick revision.'
         ]
       },
       {
