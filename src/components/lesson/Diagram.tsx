@@ -103,7 +103,7 @@ function Leader({ x1, y1, x2, y2 }: { x1: number; y1: number; x2: number; y2: nu
 // ---------- ANIMAL CELL ----------
 function AnimalCell() {
   return (
-    <svg viewBox="0 0 500 420" className="w-full h-auto max-w-[500px] mx-auto block">
+    <svg viewBox="-37 20 576 340" className="w-full h-auto max-w-[576px] mx-auto block">
       {/* Cell membrane - irregular blob */}
       <path
         d="M 100 210 C 90 130, 170 80, 240 90 C 320 70, 410 110, 420 200 C 430 280, 380 340, 290 345 C 200 360, 110 320, 100 210 Z"
@@ -178,7 +178,7 @@ function AnimalCell() {
 // ---------- PLANT CELL ----------
 function PlantCell() {
   return (
-    <svg viewBox="0 0 500 420" className="w-full h-auto max-w-[500px] mx-auto block">
+    <svg viewBox="-62 10 641 400" className="w-full h-auto max-w-[641px] mx-auto block">
       {/* Cell wall - thick outer rectangle */}
       <rect
         x="90"
@@ -267,7 +267,7 @@ function PlantCell() {
 // ---------- CELL MEMBRANE (phospholipid bilayer) ----------
 function CellMembrane() {
   return (
-    <svg viewBox="0 0 500 320" className="w-full h-auto max-w-[500px] mx-auto block">
+    <svg viewBox="-59 -12 588 344" className="w-full h-auto max-w-[588px] mx-auto block">
       {/* Outside region */}
       <rect x="0" y="0" width="500" height="100" fill="#dbeafe" />
       {/* Inside region */}
@@ -320,7 +320,7 @@ function CellMembrane() {
 // ---------- MITOCHONDRION (detailed cross-section) ----------
 function MitochondrionDetailed() {
   return (
-    <svg viewBox="0 0 500 320" className="w-full h-auto max-w-[500px] mx-auto block">
+    <svg viewBox="-93 40 612 280" className="w-full h-auto max-w-[612px] mx-auto block">
       {/* Outer membrane */}
       <ellipse cx="250" cy="160" rx="180" ry="100" fill="#fee2e2" stroke="#b91c1c" strokeWidth="3" />
       {/* Inner membrane with cristae */}
@@ -369,7 +369,7 @@ function MitochondrionDetailed() {
 // ---------- ENDOPLASMIC RETICULUM + RIBOSOMES ----------
 function ErAndRibosomes() {
   return (
-    <svg viewBox="0 0 500 320" className="w-full h-auto max-w-[500px] mx-auto block">
+    <svg viewBox="-148 10 654 300" className="w-full h-auto max-w-[654px] mx-auto block">
       {/* Nucleus on left for context */}
       <circle cx="80" cy="160" r="50" fill="#c4b5fd" stroke="#6d28d9" strokeWidth="2.5" />
       <circle cx="88" cy="155" r="12" fill="#7c3aed" />
@@ -426,7 +426,7 @@ function ErAndRibosomes() {
 // ---------- MITOSIS STAGES (4-panel) ----------
 function MitosisStages() {
   return (
-    <svg viewBox="0 0 600 540" className="w-full h-auto max-w-[600px] mx-auto block">
+    <svg viewBox="-15 8 607 524" className="w-full h-auto max-w-[607px] mx-auto block">
       {/* Panel borders - 2x2 grid */}
       <line x1="300" y1="20" x2="300" y2="520" stroke="#cbd5e1" strokeWidth="1" />
       <line x1="20" y1="270" x2="580" y2="270" stroke="#cbd5e1" strokeWidth="1" />
@@ -594,7 +594,7 @@ function MeiosisOverview() {
 // ---------- LEAF CROSS-SECTION (the most important biology diagram) ----------
 function LeafCrossSection() {
   return (
-    <svg viewBox="0 0 600 420" className="w-full h-auto max-w-[600px] mx-auto block">
+    <svg viewBox="-99 7 813 403" className="w-full h-auto max-w-[813px] mx-auto block">
       {/* Waxy cuticle - thin yellow line on top */}
       <rect x="80" y="60" width="440" height="8" fill="#fde68a" stroke="#a16207" strokeWidth="1" />
 
@@ -765,7 +765,7 @@ function LeafCrossSection() {
 // ---------- CHLOROPLAST (detailed cross-section) ----------
 function ChloroplastDetailed() {
   return (
-    <svg viewBox="0 0 500 320" className="w-full h-auto max-w-[500px] mx-auto block">
+    <svg viewBox="-93 30 617 290" className="w-full h-auto max-w-[617px] mx-auto block">
       {/* Outer membrane */}
       <ellipse cx="250" cy="160" rx="180" ry="95" fill="#dcfce7" stroke="#15803d" strokeWidth="3" />
       {/* Inner membrane */}
@@ -905,7 +905,7 @@ function LimitingFactorsGraph() {
 // ---------- DESTARCHING EXPERIMENT (variegated leaf + foil + iodine result) ----------
 function DestarchingExperiment() {
   return (
-    <svg viewBox="0 0 600 460" className="w-full h-auto max-w-[600px] mx-auto block">
+    <svg viewBox="28 -1 678 443" className="w-full h-auto max-w-[678px] mx-auto block">
       {/* Title */}
       <text x="300" y="25" textAnchor="middle" fontSize="14" fontWeight="700" fill="#1e293b" fontFamily="system-ui, sans-serif">Showing that light and chlorophyll are needed for photosynthesis</text>
 
