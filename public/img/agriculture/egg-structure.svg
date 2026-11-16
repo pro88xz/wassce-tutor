@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The structure of a hen&#x27;s egg</title>
+<desc id="d">A longitudinal section of an egg. The hard shell is lined by two shell membranes, which separate at the blunt end to form the air cell. Inside is the albumen (egg white), the yolk with the germinal disc on its surface, and twisted chalazae that hold the yolk in the centre.</desc>
+<defs></defs>
+<rect width="780" height="400" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Inside a hen&#x27;s egg</text>
+<ellipse cx="300.0" cy="220.0" rx="190.0" ry="140.0" fill="#fef3c7" stroke="#92400e" stroke-width="5"/>
+<ellipse cx="300.0" cy="220.0" rx="182.0" ry="132.0" fill="none" stroke="#475569" stroke-width="1.4"/>
+<path d="M 118 190 Q 150 220 118 250" stroke="#475569" stroke-width="1.6" fill="#e0f2fe" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="300.0" cy="220.0" rx="150.0" ry="105.0" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+<circle cx="310.0" cy="220.0" r="58.0" fill="#facc15" stroke="#ea580c" stroke-width="2.4"/>
+<ellipse cx="310.0" cy="170.0" rx="10.0" ry="4.0" fill="#ffffff" stroke="#ea580c" stroke-width="1.4"/>
+<path d="M 252 220 C 230 208, 210 232, 180 220" stroke="#475569" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 368 220 C 390 208, 410 232, 440 220" stroke="#475569" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="460.0" y1="140.0" x2="554.0" y2="90.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="460.0" cy="140.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="560.0" y="90.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">shell (calcium carbonate)</text>
+<line x1="310.0" y1="168.0" x2="554.0" y2="140.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="310.0" cy="168.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="560.0" y="140.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">germinal disc</text>
+<line x1="420.0" y1="222.0" x2="554.0" y2="190.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="420.0" cy="222.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="560.0" y="190.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">chalaza</text>
+<line x1="340.0" y1="250.0" x2="554.0" y2="240.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="340.0" cy="250.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="560.0" y="240.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">yolk</text>
+<line x1="472.0" y1="260.0" x2="554.0" y2="290.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="472.0" cy="260.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="560.0" y="290.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">shell membranes</text>
+<line x1="420.0" y1="280.0" x2="554.0" y2="340.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="420.0" cy="280.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="560.0" y="340.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">albumen (white)</text>
+<line x1="132.0" y1="220.0" x2="90.0" y2="372.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="132.0" cy="220.0" r="2.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="84.0" y="384.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">air cell (blunt end)</text>
+</svg>

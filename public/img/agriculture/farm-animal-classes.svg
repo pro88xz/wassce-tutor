@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Classification of farm animals</title>
+<desc id="d">Farm animals are classified by digestive system and by use. Ruminants, with a four-chambered stomach, include cattle, sheep and goats. Non-ruminants (monogastrics) include pigs and rabbits; poultry such as chickens, ducks and turkeys have a crop and gizzard. By use: meat (cattle, goats, pigs, broilers), milk (cattle, goats), eggs (layers), draught power (oxen, donkeys), and wool or skins (sheep, goats).</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="400" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Farm animals: by digestive system and by use</text>
+<rect x="300.0" y="57.0" width="200.0" height="46.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="400.0" y="80.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Farm animals</text>
+<rect x="25.0" y="150.0" width="230.0" height="80.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="140.0" y="170.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ruminants</text>
+<text x="140.0" y="190.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">four-chambered stomach</text>
+<text x="140.0" y="210.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cattle, sheep, goats</text>
+<rect x="285.0" y="150.0" width="230.0" height="80.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="400.0" y="170.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Non-ruminants</text>
+<text x="400.0" y="190.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">simple stomach</text>
+<text x="400.0" y="210.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">pigs, rabbits</text>
+<rect x="545.0" y="150.0" width="230.0" height="80.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="660.0" y="170.0" font-size="14" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Poultry</text>
+<text x="660.0" y="190.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">crop and gizzard</text>
+<text x="660.0" y="210.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">chickens, ducks, turkeys</text>
+<line x1="400.0" y1="109.0" x2="140.0" y2="144.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="400.0" y1="109.0" x2="400.0" y2="144.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="400.0" y1="109.0" x2="660.0" y2="144.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="400.0" y="288.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">By use</text>
+<rect x="12.5" y="314.0" width="145.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="85.0" y="335.5" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Meat</text>
+<text x="85.0" y="354.5" font-size="11" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cattle, goats, pigs, broilers</text>
+<rect x="169.5" y="314.0" width="145.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="242.0" y="335.5" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Milk</text>
+<text x="242.0" y="354.5" font-size="11" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cattle, goats</text>
+<rect x="326.5" y="314.0" width="145.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="399.0" y="335.5" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Eggs</text>
+<text x="399.0" y="354.5" font-size="11" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">layers, ducks</text>
+<rect x="483.5" y="314.0" width="145.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="556.0" y="335.5" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Draught</text>
+<text x="556.0" y="354.5" font-size="11" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">oxen, donkeys</text>
+<rect x="640.5" y="314.0" width="145.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="713.0" y="335.5" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Skins, wool</text>
+<text x="713.0" y="354.5" font-size="11" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">goats, sheep</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The four-chambered stomach of a ruminant</title>
+<desc id="d">Food swallowed by a cow passes down the oesophagus into the rumen, the largest chamber, where microbes ferment cellulose. The reticulum, with a honeycomb lining, forms the cud, which is brought back up to be chewed again (rumination). Re-swallowed food passes to the omasum, which absorbs water, and then to the abomasum, the true stomach, which secretes digestive enzymes and acid, before going to the small intestine.</desc>
+<defs><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="800" height="440" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The ruminant stomach: four chambers</text>
+<path d="M 120 170 C 120 100, 360 90, 380 170 C 400 250, 380 340, 250 350 C 130 360, 110 260, 120 170 Z" stroke="#15803d" stroke-width="3" fill="#dcfce7" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="250.0" y="230.0" font-size="18" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">RUMEN</text>
+<text x="250.0" y="254.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">microbes ferment</text>
+<text x="250.0" y="272.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cellulose</text>
+<circle cx="430.0" cy="160.0" r="52.0" fill="#fef3c7" stroke="#ea580c" stroke-width="3"/>
+<text x="430.0" y="154.0" font-size="13" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">RETICULUM</text>
+<text x="430.0" y="172.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">forms the cud</text>
+<ellipse cx="500.0" cy="280.0" rx="60.0" ry="45.0" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+<text x="500.0" y="274.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">OMASUM</text>
+<text x="500.0" y="292.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">absorbs water</text>
+<path d="M 560 280 C 640 260, 700 300, 690 350 C 680 400, 600 390, 560 330 Z" stroke="#7c3aed" stroke-width="3" fill="#ede9fe" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="630.0" y="330.0" font-size="13" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">ABOMASUM</text>
+<text x="630.0" y="348.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">true stomach</text>
+<line x1="300.0" y1="60.0" x2="380.0" y2="120.0" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+<text x="270.0" y="56.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">oesophagus</text>
+<line x1="372.0" y1="108.0" x2="338.0" y2="150.0" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<line x1="420.0" y1="110.0" x2="380.0" y2="70.0" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="392.0" y="64.0" font-size="12" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="normal">cud up for</text>
+<text x="392.0" y="80.0" font-size="12" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="normal">rechewing</text>
+<line x1="690.0" y1="350.0" x2="760.0" y2="360.0" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+<text x="760.0" y="384.0" font-size="12" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">to small intestine</text>
+</svg>
