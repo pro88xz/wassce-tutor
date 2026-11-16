@@ -22,8 +22,9 @@ export function PracticeSetRow({ paper, best, accent, access }: { paper: PaperRo
           </span>
         </span>
         {access === 'locked' ? (
-          <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-muted px-2.5 py-1 text-xs font-semibold text-muted-foreground">
-            <Lock className="h-3 w-3" aria-hidden /> Plan
+          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-muted text-muted-foreground" title="Opens with a plan">
+            <Lock className="h-3.5 w-3.5" aria-hidden />
+            <span className="sr-only">Opens with a plan</span>
           </span>
         ) : best ? (
           <span className="flex shrink-0 flex-col items-end gap-0.5">
