@@ -20,7 +20,7 @@ export const Route = createFileRoute('/auth')({
 
 function AuthPage() {
   const navigate = useNavigate()
-  const { user } = useAuth()
+  const { user, loading: authLoading } = useAuth()
   // Read once, when the page opens: after signing in the address changes to
   // the destination while this page is still on screen for a moment.
   const [params] = useState(() => new URLSearchParams(typeof window === 'undefined' ? '' : window.location.search))
@@ -42,6 +42,13 @@ function AuthPage() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
+  // Google has returned an account and the server is confirming it.
+  const [googlePending, setGooglePending] = useState(false)
+  const handleGoogleStart = useCallback(() => setGooglePending(true), [])
+  const handleGoogleError = useCallback((message: string) => {
+    setGooglePending(false)
+    setError(message)
+  }, [])
   // Study tips and reminders by email: only students are asked (see src/lib/email-consent.ts).
   const askMarketing = intent === 'student'
   const [marketingOptIn, setMarketingOptIn] = useState(MARKETING_CONSENT_DEFAULT)
@@ -134,6 +141,19 @@ function AuthPage() {
   // Google sign-in needs a client id on the web; without one there is nothing to offer.
   const googleAvailable = Capacitor.isNativePlatform() || !!import.meta.env.VITE_GOOGLE_CLIENT_ID
 
+  // Signed in already (just now with Google or a password, or from an earlier
+  // visit), Google sign-in being confirmed, or the saved sign-in still being
+  // checked: the page is about to move on, so never show the form meanwhile. It used
+  // to flash on screen between signing in and arriving at the destination.
+  if (user || authLoading || googlePending) {
+    return (
+      <div className="flex min-h-[70vh] flex-col items-center justify-center gap-4" role="status" aria-live="polite">
+        <div className="h-10 w-10 animate-spin rounded-full border-4 border-muted border-t-primary motion-reduce:animate-none" aria-hidden />
+        <p className="text-sm font-medium text-muted-foreground">{user || googlePending ? 'Signing you in…' : 'Checking your account…'}</p>
+      </div>
+    )
+  }
+
   return (
     // Full-bleed: cancels the app wrapper's padding so the two panels meet the screen edges.
     <div className="site-bleed -mb-12 -mt-4 grid min-h-dvh sm:-mt-6 lg:grid-cols-2">
@@ -210,8 +230,9 @@ function AuthPage() {
                 intent={intent}
                 referralCode={referralCode}
                 mode={mode}
+                onStart={handleGoogleStart}
                 onAuthenticated={handleGoogleAuthenticated}
-                onError={setError}
+                onError={handleGoogleError}
               />
               <div className="flex items-center gap-3 text-xs font-medium text-muted-foreground">
                 <span className="h-px flex-1 bg-border" />
