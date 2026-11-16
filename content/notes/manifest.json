@@ -7234,6 +7234,58 @@
       "title": "Animal health: diseases, parasites and their control",
       "est_minutes": 13,
       "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-livestock-production.md",
+      "subject": "Agricultural Science",
+      "topic": "livestock-production",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Livestock production: cattle, goats, sheep and pigs",
+      "est_minutes": 13,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-poultry-production.md",
+      "subject": "Agricultural Science",
+      "topic": "poultry-production",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Poultry production: broilers and layers",
+      "est_minutes": 14,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-other-animal-enterprises.md",
+      "subject": "Agricultural Science",
+      "topic": "other-animal-enterprises",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Other animal enterprises: fish farming, bee-keeping, rabbits, snails and grasscutters",
+      "est_minutes": 13,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-animal-products.md",
+      "subject": "Agricultural Science",
+      "topic": "animal-products-and-processing",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Animal products and processing: meat, milk, eggs, fish, hides and skins",
+      "est_minutes": 13,
+      "sort_order": 1
     }
   ]
 }
