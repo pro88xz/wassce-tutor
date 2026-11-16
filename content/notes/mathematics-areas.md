@@ -12,10 +12,10 @@ By the end of this lesson you should be able to:
 
 ## Units of area
 
-| | |
-|---|---|
-| $1$ cm² $= 100$ mm² | $1$ m² $= 10\,000$ cm² |
-| $1$ hectare $= 10\,000$ m² | $1$ km² $= 100$ hectares |
+- $1$ cm² $= 100$ mm²
+- $1$ m² $= 10\,000$ cm²
+- $1$ hectare $= 10\,000$ m²
+- $1$ km² $= 100$ hectares
 
 :::callout{type=common-mistake}
 **Converting area like length.** $1$ m $= 100$ cm, but $1$ m² $= 100 \times 100 = 10\,000$ cm², not $100$ cm². Square the conversion factor.

@@ -6740,6 +6740,58 @@
       "title": "Integration: the reverse of differentiation, definite integrals and areas",
       "est_minutes": 13,
       "sort_order": 1
+    },
+    {
+      "file": "biology-variation-heredity-dna.md",
+      "subject": "Biology",
+      "topic": "variation-heredity-and-dna",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Variation, heredity and DNA",
+      "est_minutes": 15,
+      "sort_order": 1
+    },
+    {
+      "file": "biology-mendelian-genetics.md",
+      "subject": "Biology",
+      "topic": "mendelian-genetics",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Mendelian genetics: crosses, sickle cell, blood groups and sex linkage",
+      "est_minutes": 17,
+      "sort_order": 1
+    },
+    {
+      "file": "biology-evolution.md",
+      "subject": "Biology",
+      "topic": "evolution-and-natural-selection",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Evolution and natural selection",
+      "est_minutes": 14,
+      "sort_order": 1
+    },
+    {
+      "file": "biology-practical-skills.md",
+      "subject": "Biology",
+      "topic": "practical-biology-skills",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Practical biology: microscope, drawing, food tests and experiments",
+      "est_minutes": 16,
+      "sort_order": 1
     }
   ]
 }
