@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Methods of controlling crop pests and diseases</title>
+<desc id="d">Integrated pest management in the centre combines five kinds of control: cultural (crop rotation, resistant varieties, clean planting material, weeding, field sanitation), biological (natural enemies such as parasitic wasps), chemical (pesticides used safely and correctly), mechanical or physical (hand-picking, traps, scaring birds, drying grain), and legislative (quarantine laws).</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Integrated pest management combines several methods</text>
+<rect x="295.0" y="210.0" width="210.0" height="80.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="400.0" y="239.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Integrated pest</text>
+<text x="400.0" y="261.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">management (IPM)</text>
+<rect x="50.0" y="77.0" width="200.0" height="86.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="150.0" y="99.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cultural</text>
+<text x="150.0" y="120.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rotation, resistant</text>
+<text x="150.0" y="141.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">varieties, clean seed</text>
+<line x1="400.0" y1="204.0" x2="150.0" y2="169.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="550.0" y="77.0" width="200.0" height="86.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="650.0" y="99.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Biological</text>
+<text x="650.0" y="120.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">natural enemies,</text>
+<text x="650.0" y="141.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. parasitic wasps</text>
+<line x1="400.0" y1="204.0" x2="650.0" y2="169.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="30.0" y="317.0" width="200.0" height="86.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="130.0" y="339.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Chemical</text>
+<text x="130.0" y="360.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">pesticides used</text>
+<text x="130.0" y="381.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">safely, last resort</text>
+<line x1="400.0" y1="296.0" x2="130.0" y2="311.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="570.0" y="317.0" width="200.0" height="86.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="670.0" y="339.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Mechanical</text>
+<text x="670.0" y="360.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">hand-picking, traps,</text>
+<text x="670.0" y="381.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">scaring, drying grain</text>
+<line x1="400.0" y1="296.0" x2="670.0" y2="311.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="300.0" y="388.0" width="200.0" height="64.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="409.5" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Legislative</text>
+<text x="400.0" y="430.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">quarantine laws</text>
+<line x1="400.0" y1="296.0" x2="400.0" y2="382.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Fermentation by microorganisms and its uses</title>
+<desc id="d">Yeast respires sugar anaerobically to ethanol and carbon dioxide: used in bread (the gas makes dough rise) and in palm wine and beer (the ethanol). Lactic acid bacteria ferment sugars to lactic acid: used in yoghurt, cheese and in fermenting cassava for gari and fufu, which also removes much of the cyanide.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Fermentation: microorganisms at work</text>
+<rect x="30.0" y="95.0" width="180.0" height="70.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="120.0" y="119.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Yeast</text>
+<text x="120.0" y="141.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(a fungus)</text>
+<rect x="270.0" y="95.0" width="220.0" height="70.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="380.0" y="119.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">sugar → ethanol</text>
+<text x="380.0" y="140.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+ carbon dioxide</text>
+<line x1="216.0" y1="130.0" x2="264.0" y2="130.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="540.0" y="58.0" width="220.0" height="60.0" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="650.0" y="78.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Bread</text>
+<text x="650.0" y="98.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">CO₂ makes dough rise</text>
+<line x1="496.0" y1="130.0" x2="534.0" y2="88.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="540.0" y="142.0" width="220.0" height="60.0" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="650.0" y="162.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Palm wine, beer</text>
+<text x="650.0" y="182.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ethanol</text>
+<line x1="496.0" y1="130.0" x2="534.0" y2="172.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="30.0" y="295.0" width="180.0" height="70.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="120.0" y="319.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Lactic acid</text>
+<text x="120.0" y="341.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">bacteria</text>
+<rect x="270.0" y="295.0" width="220.0" height="70.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="380.0" y="319.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">sugar →</text>
+<text x="380.0" y="340.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">lactic acid</text>
+<line x1="216.0" y1="330.0" x2="264.0" y2="330.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="540.0" y="258.0" width="220.0" height="60.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="650.0" y="278.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Yoghurt, cheese</text>
+<text x="650.0" y="298.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">milk sours, thickens</text>
+<line x1="496.0" y1="330.0" x2="534.0" y2="288.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="540.0" y="342.0" width="220.0" height="60.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="650.0" y="362.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Gari, fufu</text>
+<text x="650.0" y="382.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cassava: less cyanide</text>
+<line x1="496.0" y1="330.0" x2="534.0" y2="372.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="400.0" y="445.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Fermentation is anaerobic respiration: it releases energy without oxygen.</text>
+</svg>
