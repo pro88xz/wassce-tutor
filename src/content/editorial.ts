@@ -1,3 +1,5 @@
+import { GUIDE_POSTS } from './editorial-guides'
+
 export type EditorialSection = {
   heading: string
   paragraphs?: string[]
@@ -400,9 +402,15 @@ export type BlogPost = {
   sections: EditorialSection[]
   sources: EditorialSource[]
   related: string[]
+  /** Where the photo comes from, for the caption (default: the institution's own website). */
+  imageSourceLabel?: string
+  /** Rights line under the photo (default: rights remain with the original publisher). */
+  imageRights?: string
+  /** The study call to action beside the article (default: browse all subjects). */
+  action?: { heading: string; label: string; href: string }
 }
 
-export const BLOG_POSTS: BlogPost[] = [
+const UNIVERSITY_POSTS: BlogPost[] = [
   {
     slug: 'sierra-leone-university-admission-requirements-2026-2027',
     seoTitle: 'Sierra Leone University Entry Requirements 2026/27 | WASSCE Tutor',
@@ -679,6 +687,10 @@ export const BLOG_POSTS: BlogPost[] = [
     related: ['sierra-leone-university-admission-requirements-2026-2027', 'what-counts-as-a-wassce-credit-for-university-admission']
   }
 ]
+
+// The admissions guide stays first (it is the featured article); the exam
+// guides follow it so they appear at the top of the article grid.
+export const BLOG_POSTS: BlogPost[] = [UNIVERSITY_POSTS[0], ...GUIDE_POSTS, ...UNIVERSITY_POSTS.slice(1)]
 
 export const EDITORIAL_PUBLIC_PAGES = [
   ...BLOG_POSTS.map((post) => ({ path: `/blog/${post.slug}`, lastmod: post.updatedAt })),
