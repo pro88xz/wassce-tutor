@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Pyramids of numbers and energy</title>
+<desc id="d">Left: a pyramid of numbers for grass, grasshoppers, frogs and a snake, wide at the base and narrow at the top. Middle: a pyramid of numbers for one mango tree, many caterpillars and fewer birds, narrow at the base because one tree feeds many caterpillars. Right: a pyramid of energy, always upright, with about 10% of the energy passed on at each level.</desc>
+<defs></defs>
+<rect width="800" height="400" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ecological pyramids</text>
+<text x="140.0" y="72.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Numbers</text>
+<rect x="20.0" y="276.0" width="240.0" height="44.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="140.0" y="299.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">grass 5000</text>
+<rect x="55.0" y="232.0" width="170.0" height="44.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="140.0" y="255.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">grasshoppers 300</text>
+<rect x="85.0" y="188.0" width="110.0" height="44.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="140.0" y="211.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">frogs 20</text>
+<rect x="105.0" y="144.0" width="70.0" height="44.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="140.0" y="167.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">snake 1</text>
+<text x="400.0" y="72.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Numbers: one tree</text>
+<rect x="377.0" y="276.0" width="46.0" height="44.0" rx="0" fill="#fef3c7" stroke="#ea580c" stroke-width="2"/>
+<text x="400.0" y="299.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">tree 1</text>
+<rect x="285.0" y="232.0" width="230.0" height="44.0" rx="0" fill="#fef3c7" stroke="#ea580c" stroke-width="2"/>
+<text x="400.0" y="255.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">caterpillars 200</text>
+<rect x="340.0" y="188.0" width="120.0" height="44.0" rx="0" fill="#fef3c7" stroke="#ea580c" stroke-width="2"/>
+<text x="400.0" y="211.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">birds 10</text>
+<text x="660.0" y="72.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Energy (kJ)</text>
+<rect x="545.0" y="276.0" width="230.0" height="44.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="660.0" y="299.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">producers 10 000</text>
+<rect x="585.0" y="232.0" width="150.0" height="44.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="660.0" y="255.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">herbivores 1000</text>
+<rect x="615.0" y="188.0" width="90.0" height="44.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="660.0" y="211.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">carnivores 100</text>
+<rect x="638.0" y="144.0" width="44.0" height="44.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="660.0" y="167.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">10</text>
+<text x="140.0" y="344.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">upright</text>
+<text x="400.0" y="344.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">not a true pyramid</text>
+<text x="660.0" y="344.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">always upright</text>
+<text x="400.0" y="380.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Only about 10% of the energy at one level reaches the next.</text>
+</svg>

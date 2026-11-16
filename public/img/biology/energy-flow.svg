@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Energy flow along a food chain</title>
+<desc id="d">Sunlight energy is trapped by producers. At each step along the chain to primary, secondary and tertiary consumers, only about 10% of the energy is passed on. The rest is lost as heat from respiration, in movement, and in uneaten parts, faeces and urine that go to decomposers.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="800" height="400" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Energy flows one way, and most is lost at each step</text>
+<rect x="15.0" y="115.0" width="130.0" height="70.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="80.0" y="150.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sun</text>
+<rect x="175.0" y="115.0" width="130.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="240.0" y="139.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Producers</text>
+<text x="240.0" y="160.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">10 000 kJ</text>
+<line x1="151.0" y1="150.0" x2="169.0" y2="150.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="240.0" y1="188.0" x2="240.0" y2="270.0" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="240.0" y="290.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">lost as heat,</text>
+<text x="240.0" y="306.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">waste, uneaten</text>
+<rect x="343.0" y="115.0" width="114.0" height="70.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="400.0" y="139.5" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Primary</text>
+<text x="400.0" y="160.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1000 kJ</text>
+<line x1="311.0" y1="150.0" x2="337.0" y2="150.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="400.0" y1="188.0" x2="400.0" y2="270.0" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="400.0" y="290.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">lost as heat,</text>
+<text x="400.0" y="306.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">waste, uneaten</text>
+<rect x="510.0" y="115.0" width="100.0" height="70.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="560.0" y="139.5" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Secondary</text>
+<text x="560.0" y="160.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">100 kJ</text>
+<line x1="463.0" y1="150.0" x2="504.0" y2="150.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="560.0" y1="188.0" x2="560.0" y2="270.0" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="560.0" y="290.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">lost as heat,</text>
+<text x="560.0" y="306.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">waste, uneaten</text>
+<rect x="675.0" y="115.0" width="90.0" height="70.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="720.0" y="139.5" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Tertiary</text>
+<text x="720.0" y="160.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">10 kJ</text>
+<line x1="616.0" y1="150.0" x2="669.0" y2="150.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="720.0" y1="188.0" x2="720.0" y2="270.0" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="720.0" y="290.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">lost as heat,</text>
+<text x="720.0" y="306.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">waste, uneaten</text>
+<text x="80.0" y="214.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">light energy</text>
+<text x="400.0" y="350.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">about 10% passed on at each step</text>
+</svg>

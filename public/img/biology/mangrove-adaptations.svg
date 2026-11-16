@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Adaptations of mangrove trees to salty, waterlogged mud</title>
+<desc id="d">Two mangrove trees on soft mud with salty tidal water. The red mangrove on the left stands on arching stilt roots that prop it up in the soft mud. The white mangrove on the right sends up pencil-like breathing roots (pneumatophores) from the mud to take in air at low tide. A seedling grows while still on the parent tree (vivipary) and drops into the mud. Leaves have thick waxy cuticles and some excrete salt.</desc>
+<defs></defs>
+<rect width="780" height="470" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Mangroves: living in salty, airless mud</text>
+<rect x="20.0" y="330.0" width="740.0" height="110.0" rx="0" fill="#fde68a" stroke="none" stroke-width="0" opacity="0.8"/>
+<text x="740.0" y="420.0" font-size="13" fill="#92400e" text-anchor="end" dominant-baseline="middle" font-weight="bold">soft, airless mud</text>
+<rect x="20.0" y="270.0" width="740.0" height="60.0" rx="0" fill="#bfdbfe" stroke="none" stroke-width="0" opacity="0.8"/>
+<line x1="20.0" y1="270.0" x2="760.0" y2="270.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-dasharray="8 6"/>
+<text x="740.0" y="262.0" font-size="13" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">high tide: salty water</text>
+<rect x="190.0" y="150.0" width="20.0" height="140.0" rx="0" fill="#a16207" stroke="#92400e" stroke-width="2"/>
+<ellipse cx="200.0" cy="140.0" rx="120.0" ry="58.0" fill="#dcfce7" stroke="#15803d" stroke-width="2.6"/>
+<path d="M 184 240 Q 123 230 90 345" stroke="#92400e" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 190 240 Q 151 230 130 345" stroke="#92400e" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 196 240 Q 179 230 170 345" stroke="#92400e" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 204 240 Q 221 230 230 345" stroke="#92400e" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 210 240 Q 249 230 270 345" stroke="#92400e" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 216 240 Q 277 230 310 345" stroke="#92400e" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="260.0" y1="180.0" x2="263.0" y2="236.0" stroke="#15803d" stroke-width="5" stroke-linecap="round"/>
+<text x="50.0" y="205.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">stilt (prop) roots</text>
+<line x1="108.0" y1="214.0" x2="120.0" y2="268.0" stroke="#0f172a" stroke-width="1.3" stroke-linecap="round"/>
+<text x="276.0" y="212.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">seedling grows</text>
+<text x="276.0" y="229.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">on the parent</text>
+<text x="200.0" y="66.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">red mangrove</text>
+<rect x="549.0" y="150.0" width="22.0" height="190.0" rx="0" fill="#a16207" stroke="#92400e" stroke-width="2"/>
+<ellipse cx="560.0" cy="140.0" rx="120.0" ry="58.0" fill="#dcfce7" stroke="#15803d" stroke-width="2.6"/>
+<line x1="400.0" y1="375.0" x2="720.0" y2="375.0" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+<line x1="413.0" y1="375.0" x2="413.0" y2="308.0" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+<line x1="434.0" y1="375.0" x2="434.0" y2="300.0" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+<line x1="455.0" y1="375.0" x2="455.0" y2="316.0" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+<line x1="476.0" y1="375.0" x2="476.0" y2="308.0" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+<line x1="497.0" y1="375.0" x2="497.0" y2="300.0" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+<line x1="518.0" y1="375.0" x2="518.0" y2="316.0" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+<line x1="539.0" y1="375.0" x2="539.0" y2="308.0" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+<line x1="581.0" y1="375.0" x2="581.0" y2="308.0" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+<line x1="602.0" y1="375.0" x2="602.0" y2="316.0" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+<line x1="623.0" y1="375.0" x2="623.0" y2="300.0" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+<line x1="644.0" y1="375.0" x2="644.0" y2="308.0" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+<line x1="665.0" y1="375.0" x2="665.0" y2="316.0" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+<line x1="686.0" y1="375.0" x2="686.0" y2="300.0" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+<line x1="707.0" y1="375.0" x2="707.0" y2="308.0" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+<text x="560.0" y="66.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">white mangrove</text>
+<text x="660.0" y="190.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">pneumatophores</text>
+<text x="660.0" y="208.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">(breathing roots)</text>
+<line x1="672.0" y1="216.0" x2="686.0" y2="298.0" stroke="#0f172a" stroke-width="1.3" stroke-linecap="round"/>
+<text x="390.0" y="452.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">thick waxy leaves; some species excrete salt from their leaves</text>
+</svg>
