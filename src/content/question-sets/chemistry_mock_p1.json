@@ -1,0 +1,1968 @@
+{
+ "name": "chemistry_mock_p1",
+ "label": "Chemistry: timed mock exam, Paper 1",
+ "subject_slug": "chemistry",
+ "papers": [
+  {
+   "id": "ca8ac526-289a-5837-a5ec-e0c9b43fcf28",
+   "topic": null,
+   "title": "Timed mock exam: Paper 1 (50 questions, 1 h)",
+   "paper_type": "Mock",
+   "description": "A timed WASSCE-style Chemistry Paper 1: 50 objective questions from across the syllabus, in 1 h, the time WAEC gives for Paper 1. Every question comes from the WASSCE Tutor practice bank, with the working and the reason behind every wrong option.",
+   "sort_order": 900,
+   "questions": [
+    {
+     "key": "chem-in-02",
+     "stem": "Which of the following is the correct order of steps in the scientific method?",
+     "image_url": null,
+     "explanation": "A scientist observes, proposes a hypothesis to explain the observation, tests it by experiment and then draws a conclusion.\n\n**Why the other options are wrong**\n\n- Hypothesis, observation, conclusion, experiment: A conclusion cannot come before the experiment that tests it.\n- Experiment, conclusion, observation, hypothesis: A hypothesis is made before it is tested, not after.\n- Conclusion, experiment, hypothesis, observation: This reverses the whole method.",
+     "id": "c7b48b2c-8a04-53be-a979-18781421959e",
+     "topic": "Introduction to Chemistry",
+     "position": 1,
+     "options": [
+      {
+       "id": "a189971a-1e83-5300-a054-f6158040388c",
+       "label": "A",
+       "content": "Observation, hypothesis, experiment, conclusion",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a6736cdd-e8e6-5084-ac56-3cde335d7ab9",
+       "label": "B",
+       "content": "Hypothesis, observation, conclusion, experiment",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c320e9eb-5e3d-5106-af3f-9737e356caa2",
+       "label": "C",
+       "content": "Experiment, conclusion, observation, hypothesis",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "28a99084-41e4-5ea6-bf6d-466523e15a62",
+       "label": "D",
+       "content": "Conclusion, experiment, hypothesis, observation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-pm-01",
+     "stem": "Which of the following is a compound?",
+     "image_url": null,
+     "explanation": "A compound contains two or more elements chemically combined in a fixed ratio: NaCl is always 1 Na to 1 Cl.\n\n**Why the other options are wrong**\n\n- Air: Air is a mixture of gases in no fixed proportion.\n- Brass: Brass is an alloy, a mixture of copper and zinc.\n- Sea water: Sea water is a mixture of water and dissolved salts.",
+     "id": "ee2a4085-cc2b-53c1-963d-d4ae14961a37",
+     "topic": "Particulate Nature of Matter",
+     "position": 2,
+     "options": [
+      {
+       "id": "4f7082bc-7916-56fb-9604-ae1e38aa9b52",
+       "label": "A",
+       "content": "Sodium chloride",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "57a90a3f-da98-5679-9a9e-f5a5fc0cb151",
+       "label": "B",
+       "content": "Air",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "86ef9777-d2f2-5299-9624-33925dc79803",
+       "label": "C",
+       "content": "Brass",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1e2a5b6d-d9c8-5942-a078-686d92bae205",
+       "label": "D",
+       "content": "Sea water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-as-04",
+     "stem": "Which radiation is the most penetrating and is not deflected by an electric field?",
+     "image_url": null,
+     "explanation": "Gamma rays are electromagnetic waves with no charge and no mass; they are stopped only by thick lead or concrete.\n\n**Why the other options are wrong**\n\n- Alpha particles: Alpha particles are the least penetrating and are deflected towards the negative plate.\n- Beta particles: Beta particles are deflected strongly towards the positive plate.\n- Protons: Protons are charged, so they would be deflected.",
+     "id": "f9d97ead-0b85-59b6-b61d-fd70fcd25381",
+     "topic": "Atomic Structure",
+     "position": 3,
+     "options": [
+      {
+       "id": "95118633-6d90-501b-b9a8-5a3359280f30",
+       "label": "A",
+       "content": "Alpha particles",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cab6160b-3250-5843-9e36-67fa69a59975",
+       "label": "B",
+       "content": "Beta particles",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "22d7d9e8-4c9b-5fda-940e-0662d4b1cf87",
+       "label": "C",
+       "content": "Protons",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a7881c74-9bc1-50c5-b45e-509252c0dde3",
+       "label": "D",
+       "content": "Gamma rays",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-ec-02",
+     "stem": "What is the maximum number of electrons that the third shell (n = 3) can hold?",
+     "image_url": null,
+     "explanation": "Maximum $= 2n^2 = 2 \\times 3^2 = 18$ (3s holds 2, 3p holds 6 and 3d holds 10).\n\n**Why the other options are wrong**\n\n- 8: Eight is the number in the outer shell of a noble gas, not the capacity of the third shell.\n- 9: That is n², the number of orbitals; each orbital holds two electrons.\n- 6: That is 2n.",
+     "id": "2e90a421-30a9-52d5-9cf6-7aee62e0fa1c",
+     "topic": "Electronic Configuration",
+     "position": 4,
+     "options": [
+      {
+       "id": "9c8a14c7-4c45-5853-b825-b7a82b556a1a",
+       "label": "A",
+       "content": "6",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "058e5f4b-56b9-5b37-a3b6-0cc4d08e51be",
+       "label": "B",
+       "content": "8",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "04440343-c17a-54cd-9bf8-a99207e49262",
+       "label": "C",
+       "content": "9",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4af0f25a-27b4-519c-af2d-629d7c326433",
+       "label": "D",
+       "content": "18",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-pt-04",
+     "stem": "The most electronegative element in the periodic table is",
+     "image_url": null,
+     "explanation": "Electronegativity increases across a period and decreases down a group, so fluorine (top right, excluding noble gases) is highest.\n\n**Why the other options are wrong**\n\n- oxygen: Oxygen is second; fluorine has a higher nuclear charge in the same shell.\n- chlorine: Chlorine's outer shell is further from the nucleus than fluorine's.\n- caesium: Caesium is one of the least electronegative elements.",
+     "id": "d21ffd47-7b75-5b2d-94cf-bde015fa032c",
+     "topic": "The Periodic Table and Periodicity",
+     "position": 5,
+     "options": [
+      {
+       "id": "9ba91310-231e-5477-a5d8-72e02228bd5f",
+       "label": "A",
+       "content": "oxygen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "eaa6ef5f-a209-560f-8196-bd65ad74f0e2",
+       "label": "B",
+       "content": "chlorine",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "04ee5f89-57e9-5c18-83a1-b9614f294acc",
+       "label": "C",
+       "content": "caesium",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "558a1f7a-96a0-53d3-9204-dd8a8094109d",
+       "label": "D",
+       "content": "fluorine",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-cb-05",
+     "stem": "Metals conduct electricity in the solid state because they contain",
+     "image_url": null,
+     "explanation": "Metallic bonding is a lattice of positive ions in a 'sea' of delocalised electrons, which move when a voltage is applied.\n\n**Why the other options are wrong**\n\n- mobile ions: The metal ions are fixed in the lattice; ions move only in molten or dissolved ionic compounds.\n- shared pairs of electrons between two atoms: Localised shared pairs cannot move through the solid.\n- lone pairs of electrons: Metals in the solid state have no lone pairs to carry charge.",
+     "id": "7c8c18da-a98f-5cf6-8a18-01fe93fd96c0",
+     "topic": "Chemical Bonding",
+     "position": 6,
+     "options": [
+      {
+       "id": "35507bec-03e3-5d96-a9dd-1fa5b520029b",
+       "label": "A",
+       "content": "mobile ions",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a346c5f3-14c4-57ea-bcee-ae85051010de",
+       "label": "B",
+       "content": "delocalised (mobile) electrons",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "87cf2021-71ea-52dc-b38d-d1d1db381747",
+       "label": "C",
+       "content": "shared pairs of electrons between two atoms",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cf7a588d-76f4-5bd8-bba9-35eeca4520f5",
+       "label": "D",
+       "content": "lone pairs of electrons",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-sm-04",
+     "stem": "How many times faster does hydrogen (Mᵣ = 2) diffuse than oxygen (Mᵣ = 32) under the same conditions?",
+     "image_url": null,
+     "explanation": "Graham's law: $\\dfrac{r_{H_2}}{r_{O_2}} = \\sqrt{\\dfrac{M_{O_2}}{M_{H_2}}} = \\sqrt{\\dfrac{32}{2}} = \\sqrt{16} = 4$\n\n**Why the other options are wrong**\n\n- 16: You forgot to take the square root of the ratio of molar masses.\n- 0.25: You inverted the ratio; the lighter gas diffuses faster.\n- 0.0625: You inverted the ratio and forgot the square root.",
+     "id": "0d841d81-c25b-5405-b961-6a8d5c1fd619",
+     "topic": "States of Matter",
+     "position": 7,
+     "options": [
+      {
+       "id": "7cee3ebc-b9cf-5739-8ec6-a5a2563b1c0b",
+       "label": "A",
+       "content": "0.0625",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "75e2c0e8-b903-5c14-91e0-bc3ed5fffd05",
+       "label": "B",
+       "content": "0.25",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c0f7e730-85f3-5276-ade3-84ad13a0949b",
+       "label": "C",
+       "content": "4",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1095de41-69e3-5883-ac1d-e9a7e9a68496",
+       "label": "D",
+       "content": "16",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-gl-03",
+     "stem": "Equal volumes of all gases at the same temperature and pressure contain equal numbers of molecules. This is",
+     "image_url": null,
+     "explanation": "Avogadro's law is why gas volumes in an equation are in the same ratio as the numbers of moles.\n\n**Why the other options are wrong**\n\n- Boyle's law: Boyle's law relates pressure and volume at constant temperature.\n- Charles' law: Charles' law relates volume and temperature at constant pressure.\n- Graham's law: Graham's law concerns rates of diffusion.",
+     "id": "0ae91b6d-2bb7-552d-bb1d-b11471d98a24",
+     "topic": "Gas Laws",
+     "position": 8,
+     "options": [
+      {
+       "id": "26e29b2b-5b72-55e3-9c45-0db444de67cf",
+       "label": "A",
+       "content": "Boyle's law",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2ef6316d-3894-55ab-b471-171acb06cc2a",
+       "label": "B",
+       "content": "Charles' law",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9d28083f-be93-5761-b501-ee342445fa5e",
+       "label": "C",
+       "content": "Avogadro's law",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "46a74d8e-f157-5e48-86a4-7d37474a48e9",
+       "label": "D",
+       "content": "Graham's law",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-mo-01",
+     "stem": "How many moles are there in 4.4 g of carbon(IV) oxide, CO₂?",
+     "image_url": null,
+     "explanation": "$M_r(\\text{CO}_2) = 12 + 32 = 44$; moles $= \\dfrac{4.4}{44} = 0.1$ mol\n\n**Why the other options are wrong**\n\n- 10 mol: You divided the molar mass by the mass.\n- 0.157 mol: You used the molar mass of carbon(II) oxide, CO (28).\n- 0.275 mol: You used the molar mass of oxygen atoms (16).",
+     "id": "66be587d-3d6a-5d90-814f-433b59fce966",
+     "topic": "The Mole Concept",
+     "position": 9,
+     "options": [
+      {
+       "id": "6478ffbe-c10f-5628-923e-d1e7d0e149c8",
+       "label": "A",
+       "content": "0.1 mol",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4d656dd9-3cc1-56f9-bb2b-828e9e2cd71c",
+       "label": "B",
+       "content": "0.157 mol",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "653e56f4-fa7b-5b91-8297-a1126a71dea0",
+       "label": "C",
+       "content": "0.275 mol",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5ad156ae-d17a-51ff-8d83-1d2ce467de28",
+       "label": "D",
+       "content": "10 mol",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-eq-01",
+     "stem": "Which equation for the burning of aluminium is correctly balanced?",
+     "image_url": null,
+     "explanation": "Left: 4 Al and 6 O. Right: 2 × Al₂O₃ = 4 Al and 6 O. Both elements balance.\n\n**Why the other options are wrong**\n\n- 2Al + O₂ → Al₂O₃: Oxygen is not balanced: 2 atoms on the left, 3 on the right.\n- 4Al + 6O₂ → 2Al₂O₃: Oxygen is not balanced: 12 atoms on the left, 6 on the right.\n- 2Al + 3O₂ → 2Al₂O₃: Aluminium is not balanced: 2 atoms on the left, 4 on the right.",
+     "id": "63d27bd1-7997-5172-8ba5-3c26e8efe451",
+     "topic": "Chemical Equations and Stoichiometry",
+     "position": 10,
+     "options": [
+      {
+       "id": "8493a302-ff28-5cf1-b3d6-b9a0939c23d3",
+       "label": "A",
+       "content": "2Al + O₂ → Al₂O₃",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "85e719f0-6429-5472-8c9a-ac44f0464bc0",
+       "label": "B",
+       "content": "4Al + 6O₂ → 2Al₂O₃",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "872298b7-26fa-510a-ab7f-2e0aeb55e675",
+       "label": "C",
+       "content": "2Al + 3O₂ → 2Al₂O₃",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "39d8ed4e-bdce-5bde-8021-c7d4f88cd431",
+       "label": "D",
+       "content": "4Al + 3O₂ → 2Al₂O₃",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-ef-05",
+     "stem": "The empirical formula of a compound shows",
+     "image_url": null,
+     "explanation": "Glucose, C₆H₁₂O₆, and ethanoic acid, C₂H₄O₂, share the empirical formula CH₂O.\n\n**Why the other options are wrong**\n\n- the actual number of atoms of each element in one molecule: That is the molecular formula.\n- how the atoms are joined together: That is the structural formula.\n- the percentage by mass of each element: That is the percentage composition.",
+     "id": "882cd7e7-daf1-56a6-90e1-47e2e5ef43b4",
+     "topic": "Empirical and Molecular Formulas",
+     "position": 11,
+     "options": [
+      {
+       "id": "05671332-bbc3-59e6-905b-9c945f8ef3a8",
+       "label": "A",
+       "content": "the actual number of atoms of each element in one molecule",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0d9f2c9b-fde2-50f7-9947-c702c3f0a364",
+       "label": "B",
+       "content": "how the atoms are joined together",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "63986a52-ff2a-56ff-ad2d-61d3397c491e",
+       "label": "C",
+       "content": "the simplest whole-number ratio of the atoms of each element in it",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6613760c-f7e0-59d7-b973-2f84e77d45f3",
+       "label": "D",
+       "content": "the percentage by mass of each element",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-ab-05",
+     "stem": "Which of the following is an amphoteric oxide?",
+     "image_url": null,
+     "explanation": "An amphoteric oxide reacts with both acids and alkalis: ZnO + 2HCl → ZnCl₂ + H₂O and ZnO + 2NaOH → Na₂ZnO₂ + H₂O.\n\n**Why the other options are wrong**\n\n- Sodium oxide: Sodium oxide is basic: it reacts only with acids.\n- Sulphur(IV) oxide: Sulphur(IV) oxide is acidic: it reacts with alkalis.\n- Carbon(II) oxide: Carbon(II) oxide is neutral: it reacts with neither acids nor alkalis.",
+     "id": "9778899b-1107-56a5-8edb-df3f3b21f83a",
+     "topic": "Acids, Bases, and pH",
+     "position": 12,
+     "options": [
+      {
+       "id": "f5638280-7935-59e9-b31f-f1a6b1c57aca",
+       "label": "A",
+       "content": "Zinc oxide",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "63875bee-94bb-5bf7-8be7-a3a93900a97d",
+       "label": "B",
+       "content": "Sodium oxide",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "59cd999b-8bc3-556f-83ee-ca2438a5fb68",
+       "label": "C",
+       "content": "Sulphur(IV) oxide",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ce6243ee-700c-5b17-9876-ea15cb3ac78d",
+       "label": "D",
+       "content": "Carbon(II) oxide",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-sa-03",
+     "stem": "Solid sodium hydroxide left in an open dish absorbs water from the air and dissolves in it. It is described as",
+     "image_url": null,
+     "explanation": "Deliquescent substances (NaOH, CaCl₂, MgCl₂) absorb so much water that they form a solution.\n\n**Why the other options are wrong**\n\n- efflorescent: Efflorescent crystals lose water of crystallisation to the air.\n- hygroscopic: Hygroscopic substances absorb water but do not dissolve in it.\n- hydrated: Hydrated means containing water of crystallisation.",
+     "id": "bc0220f9-abdf-518c-b042-208fb34f3bb0",
+     "topic": "Salts and Their Preparation",
+     "position": 13,
+     "options": [
+      {
+       "id": "8d2431d2-8abf-561c-9e49-f59b793b85ef",
+       "label": "A",
+       "content": "efflorescent",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "82594960-9555-5892-a232-53776d65b54c",
+       "label": "B",
+       "content": "hygroscopic",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ac1ac517-bda4-5824-a8b5-1f92089e82d4",
+       "label": "C",
+       "content": "deliquescent",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "59e9ec96-4992-58b8-8676-73616b66fec2",
+       "label": "D",
+       "content": "hydrated",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-ti-02",
+     "stem": "25.0 cm³ of sodium carbonate solution needs 20.0 cm³ of 0.100 mol/dm³ HCl for complete reaction: Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂. What is the concentration of the sodium carbonate?",
+     "image_url": null,
+     "explanation": "Moles HCl $= 0.00200$; moles Na₂CO₃ $= \\dfrac{0.00200}{2} = 0.00100$; concentration $= \\dfrac{0.00100}{0.0250} = 0.0400$ mol/dm³\n\n**Why the other options are wrong**\n\n- 0.08 mol/dm³: You used a 1 : 1 ratio; 1 mol Na₂CO₃ reacts with 2 mol HCl.\n- 0.16 mol/dm³: You multiplied by 2 instead of dividing by 2.\n- 0.001 mol/dm³: That is the number of moles of Na₂CO₃, not its concentration.",
+     "id": "66f8d539-71ac-5daa-90b1-88d79849ed5c",
+     "topic": "Acid-Base Titration",
+     "position": 14,
+     "options": [
+      {
+       "id": "96c72fc6-1e65-5424-94e9-64d074860105",
+       "label": "A",
+       "content": "0.001 mol/dm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "92db233d-4ea6-5ff9-9726-916acf3f8995",
+       "label": "B",
+       "content": "0.04 mol/dm³",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7349a3cf-a5c5-5261-9297-aa3f6c9ca882",
+       "label": "C",
+       "content": "0.08 mol/dm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cca1fd72-62e1-5e20-af3d-9f9a551ed7d1",
+       "label": "D",
+       "content": "0.16 mol/dm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-wa-02",
+     "stem": "Permanent hardness of water can be removed by",
+     "image_url": null,
+     "explanation": "Carbonate ions precipitate the hardness ions: Ca²⁺ + CO₃²⁻ → CaCO₃(s). Ion exchange and distillation also work.\n\n**Why the other options are wrong**\n\n- boiling: Boiling removes only temporary hardness.\n- filtration: The hardness ions are dissolved, so they pass through a filter.\n- adding chlorine: Chlorine kills germs; it does not remove calcium or magnesium ions.",
+     "id": "ee24c1e3-0927-566c-a791-c1dc088b03cb",
+     "topic": "Water and Its Properties",
+     "position": 15,
+     "options": [
+      {
+       "id": "9569e0bf-3732-525b-99c2-85c381f0f78e",
+       "label": "A",
+       "content": "boiling",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "90eb761a-7834-5ba2-a69a-4f7143a0ccd5",
+       "label": "B",
+       "content": "filtration",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0f95f8f0-f74f-5bdf-9444-0e84f537a5d4",
+       "label": "C",
+       "content": "adding chlorine",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d997487d-22f1-59a7-ba15-e231abddefca",
+       "label": "D",
+       "content": "adding washing soda (sodium carbonate)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-so-04",
+     "stem": "A saturated solution is one that",
+     "image_url": null,
+     "explanation": "At a given temperature, no more solute will dissolve in a saturated solution; extra solid stays undissolved.\n\n**Why the other options are wrong**\n\n- contains a very large amount of solute: A solution of a sparingly soluble salt can be saturated yet very dilute.\n- has been heated to its boiling point: Saturation has nothing to do with boiling.\n- contains two or more solutes: Saturation refers to one solute reaching its limit.",
+     "id": "9d78d2ba-ebcf-518d-ad08-fa98f8911b25",
+     "topic": "Solutions and Solubility",
+     "position": 16,
+     "options": [
+      {
+       "id": "5ea0b58c-809a-5cef-b5be-b3f05a4f55dc",
+       "label": "A",
+       "content": "contains as much solute as can dissolve at that temperature",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ca36a14d-a3bc-5fe1-a60b-02fa5639f741",
+       "label": "B",
+       "content": "contains a very large amount of solute",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6f9361b1-123d-5c7a-a80d-ebeae1f29765",
+       "label": "C",
+       "content": "has been heated to its boiling point",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "51b8cb99-175c-57ef-a4d6-788b5a1e4597",
+       "label": "D",
+       "content": "contains two or more solutes",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-rd-05",
+     "stem": "Which observation shows that a gas is a reducing agent?",
+     "image_url": null,
+     "explanation": "The gas reduces orange Cr₂O₇²⁻ (Cr +6) to green Cr³⁺ (Cr +3); sulphur(IV) oxide and hydrogen sulphide do this.\n\n**Why the other options are wrong**\n\n- It turns lime water milky: That is the test for carbon(IV) oxide, which is not acting as a reducing agent.\n- It relights a glowing splint: That shows oxygen, which supports burning.\n- It turns damp red litmus paper blue: That shows an alkaline gas (ammonia).",
+     "id": "3ea7d4b5-ab08-54c8-b5e0-f3eb46e101f3",
+     "topic": "Oxidation and Reduction Reactions",
+     "position": 17,
+     "options": [
+      {
+       "id": "16338c0e-e5c8-5aa8-9f1f-7ee4227863a1",
+       "label": "A",
+       "content": "It turns lime water milky",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "64f479c5-4171-5ae9-aa5d-afbe4f52f59d",
+       "label": "B",
+       "content": "It turns acidified potassium dichromate(VI) from orange to green",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e80a1c76-b965-5524-8440-9a049de710f1",
+       "label": "C",
+       "content": "It relights a glowing splint",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "754e5bf5-630d-5458-9530-46c4f99c5236",
+       "label": "D",
+       "content": "It turns damp red litmus paper blue",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-el-03",
+     "stem": "In the electrolysis of dilute sulphuric acid, oxygen forms at the anode: 4OH⁻ → 2H₂O + O₂ + 4e⁻. What volume of oxygen at s.t.p. is produced by 0.4 mol of electrons?",
+     "image_url": null,
+     "explanation": "Moles O₂ $= \\dfrac{0.4}{4} = 0.1$; volume $= 0.1 \\times 22.4 = 2.24$ dm³\n\n**Why the other options are wrong**\n\n- 4.48 dm³: You used two electrons per O₂; four are needed.\n- 8.96 dm³: You assumed one mole of O₂ per mole of electrons.\n- 2.4 dm³: You used 24 dm³, the molar volume at room conditions.",
+     "id": "c9702410-df51-5cea-af4b-bfca256fd5a2",
+     "topic": "Electrolysis",
+     "position": 18,
+     "options": [
+      {
+       "id": "6481b40b-8b4a-58c6-8182-4a17fd404859",
+       "label": "A",
+       "content": "2.24 dm³",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "185be79b-5bc7-57f6-8c90-3e852cd1432d",
+       "label": "B",
+       "content": "2.4 dm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7e6c5b68-69a4-58b1-98dd-a95dcf28ec9a",
+       "label": "C",
+       "content": "4.48 dm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "11f3f918-ca1e-5b5d-ae2b-ef4cebea0ae6",
+       "label": "D",
+       "content": "8.96 dm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-ce-03",
+     "stem": "The function of the salt bridge in a cell is to",
+     "image_url": null,
+     "explanation": "Ions in the salt bridge keep each solution electrically neutral, so current can continue to flow.\n\n**Why the other options are wrong**\n\n- carry electrons between the electrodes: Electrons flow through the external wire, not the salt bridge.\n- increase the e.m.f. of the cell: The salt bridge does not change the e.m.f.\n- supply the metal ions that are reduced: The metal ions come from the electrolyte in each half-cell.",
+     "id": "056eab80-74f3-5ed9-8ca7-148be5cfc4ac",
+     "topic": "Electrochemical Cells",
+     "position": 19,
+     "options": [
+      {
+       "id": "02fdd4d0-f79c-5850-957d-ca2bd175a4a8",
+       "label": "A",
+       "content": "carry electrons between the electrodes",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e61fba66-11b4-593a-a116-d1da397ed367",
+       "label": "B",
+       "content": "increase the e.m.f. of the cell",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "be584d7a-6531-5f3d-8240-c69b8bc5274b",
+       "label": "C",
+       "content": "complete the circuit by allowing ions to move between the half-cells",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b1caf593-55c8-5b4a-b0c8-122e10d16122",
+       "label": "D",
+       "content": "supply the metal ions that are reduced",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-en-05",
+     "stem": "Which of the following is an endothermic process?",
+     "image_url": null,
+     "explanation": "The solution gets colder as ammonium nitrate dissolves, because heat is taken in from the surroundings.\n\n**Why the other options are wrong**\n\n- Burning methane: Combustion always gives out heat.\n- Neutralising an acid with an alkali: Neutralisation is exothermic (about −57 kJ/mol).\n- Respiration: Respiration releases energy from glucose.",
+     "id": "53c82eee-3779-521b-8571-0789d0d1b43c",
+     "topic": "Energy Changes in Reactions",
+     "position": 20,
+     "options": [
+      {
+       "id": "810922bf-2908-5107-9709-ab9e4462ea9e",
+       "label": "A",
+       "content": "Burning methane",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9623580e-22e5-5740-ba2b-f7d4b296557e",
+       "label": "B",
+       "content": "Neutralising an acid with an alkali",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "25cfacd1-69d5-51d2-9bca-863ccc57f9bf",
+       "label": "C",
+       "content": "Dissolving ammonium nitrate in water",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "775996b0-45af-5162-8440-6f441a11bc9f",
+       "label": "D",
+       "content": "Respiration",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-rr-03",
+     "stem": "A catalyst increases the rate of a reaction by",
+     "image_url": null,
+     "explanation": "With a lower activation energy, a greater fraction of collisions are successful at the same temperature.\n\n**Why the other options are wrong**\n\n- increasing the energy of the reacting particles: A catalyst does not heat the reactants.\n- shifting the equilibrium towards the products: A catalyst does not change the position of equilibrium.\n- being used up in the reaction: A catalyst is unchanged chemically at the end.",
+     "id": "eae60bfc-aa38-5f17-b220-3df6586a4d35",
+     "topic": "Rate of Reaction",
+     "position": 21,
+     "options": [
+      {
+       "id": "89b8b3f2-89e1-503d-a5b2-855592efe7ed",
+       "label": "A",
+       "content": "increasing the energy of the reacting particles",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a4e83068-01cf-5262-ba82-62170405e007",
+       "label": "B",
+       "content": "providing an alternative pathway with a lower activation energy",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "29a34402-1bf7-52f6-b7d5-71e0b1942d9f",
+       "label": "C",
+       "content": "shifting the equilibrium towards the products",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "523593b2-ed23-5168-8da2-af556d2247ca",
+       "label": "D",
+       "content": "being used up in the reaction",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-eqm-05",
+     "stem": "For H₂(g) + I₂(g) ⇌ 2HI(g), the equilibrium concentrations are [H₂] = 0.1, [I₂] = 0.1 and [HI] = 0.8 mol/dm³. What is Kc?",
+     "image_url": null,
+     "explanation": "$K_c = \\dfrac{[\\text{HI}]^2}{[\\text{H}_2][\\text{I}_2]} = \\dfrac{0.8^2}{0.1 \\times 0.1} = \\dfrac{0.64}{0.01} = 64$\n\n**Why the other options are wrong**\n\n- 80: You did not square [HI]; its coefficient is 2.\n- 8: You divided by only one of the reactant concentrations and did not square [HI].\n- 0.015625: You put the reactants over the products.",
+     "id": "65b6f98e-fc17-5287-8d42-943b20ff8136",
+     "topic": "Chemical Equilibrium",
+     "position": 22,
+     "options": [
+      {
+       "id": "d9cad087-b65b-5b7f-84e0-11a3250100b0",
+       "label": "A",
+       "content": "0.015625",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "76bc364c-b31a-58d0-ad62-87a16b267d6f",
+       "label": "B",
+       "content": "8",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "00324e85-994d-5a30-a098-46b6d1cc3d5e",
+       "label": "C",
+       "content": "64",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a4830306-7cf2-5be5-befe-630ec5822349",
+       "label": "D",
+       "content": "80",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-hy-02",
+     "stem": "Hydrogen can be collected over water because it is",
+     "image_url": null,
+     "explanation": "A gas is collected over water if it does not dissolve in or react with water.\n\n**Why the other options are wrong**\n\n- lighter than air: Being lighter than air allows upward delivery, not collection over water.\n- a reducing agent: Reducing power has nothing to do with the collection method.\n- colourless: Colour does not decide the collection method.",
+     "id": "eacbf125-79b3-5d48-8c3f-e5f899f75a83",
+     "topic": "Hydrogen",
+     "position": 23,
+     "options": [
+      {
+       "id": "2e4f3940-5ebe-523d-bd05-7000c1cf74c8",
+       "label": "A",
+       "content": "lighter than air",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ce543053-a67a-596d-bbb3-38d0949955a6",
+       "label": "B",
+       "content": "almost insoluble in water",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c31f0d72-405c-51b3-9f4f-29389b1f61c2",
+       "label": "C",
+       "content": "a reducing agent",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "23d87add-53f5-596c-95b4-58bb91e67a0a",
+       "label": "D",
+       "content": "colourless",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-ox-04",
+     "stem": "Iron rusts only when it is in contact with",
+     "image_url": null,
+     "explanation": "Rust is hydrated iron(III) oxide, Fe₂O₃·xH₂O; salt water and acids speed up rusting.\n\n**Why the other options are wrong**\n\n- oxygen alone: Iron in dry air does not rust.\n- water alone: Iron in boiled water under oil (no oxygen) does not rust.\n- carbon(IV) oxide alone: Carbon(IV) oxide is not needed for rusting.",
+     "id": "b59f0343-f4db-537f-a7b9-fb97d9c06b24",
+     "topic": "Oxygen and Air",
+     "position": 24,
+     "options": [
+      {
+       "id": "3841e6ac-44dd-5384-9c42-74b84cce298e",
+       "label": "A",
+       "content": "oxygen alone",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "486c7fda-44b9-5aa2-a03a-447b9aad4f49",
+       "label": "B",
+       "content": "water alone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fcafdcf6-f063-5d3b-a41c-d36be5389ea3",
+       "label": "C",
+       "content": "carbon(IV) oxide alone",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e25d4cd2-309a-5624-a110-44e303e4bc41",
+       "label": "D",
+       "content": "both oxygen and water",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-ha-05",
+     "stem": "Dry chlorine does not bleach dry litmus paper, but moist chlorine does, because",
+     "image_url": null,
+     "explanation": "Cl₂ + H₂O → HCl + HOCl; HOCl releases oxygen that oxidises the dye to a colourless substance.\n\n**Why the other options are wrong**\n\n- dry chlorine is not acidic: The bleaching is by oxidation, not acidity.\n- water makes the chlorine more concentrated: Water does not concentrate chlorine.\n- dry litmus paper is not coloured: Dry litmus is coloured; the chlorine needs water to bleach it.",
+     "id": "ba104d62-4848-5a49-bda1-a701a8e0a239",
+     "topic": "The Halogens",
+     "position": 25,
+     "options": [
+      {
+       "id": "dc81c22c-7b14-5553-a467-1045fd71af1a",
+       "label": "A",
+       "content": "dry chlorine is not acidic",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a116cf52-357c-5b19-90cf-90397fcec59b",
+       "label": "B",
+       "content": "water reacts with chlorine to form chloric(I) acid, which bleaches",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "3d62d316-a059-5456-9d32-87f202d437fb",
+       "label": "C",
+       "content": "water makes the chlorine more concentrated",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bb914cc2-1eaf-592b-9226-7ed1d3eda576",
+       "label": "D",
+       "content": "dry litmus paper is not coloured",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-ni-04",
+     "stem": "What is the percentage by mass of nitrogen in urea, CO(NH₂)₂? (Mᵣ = 60)",
+     "image_url": null,
+     "explanation": "Mass of N $= 2 \\times 14 = 28$; $\\% \\text{N} = \\dfrac{28}{60} \\times 100 = 46.7\\%$\n\n**Why the other options are wrong**\n\n- 23.33%: You counted only one nitrogen atom; urea has two.\n- 28%: 28 is the mass of nitrogen in one molecule, not a percentage.\n- 35%: 35% is the nitrogen content of ammonium nitrate, not urea.",
+     "id": "26073a4c-cc30-5ee9-8763-f968d7a1fecb",
+     "topic": "Nitrogen and Its Compounds",
+     "position": 26,
+     "options": [
+      {
+       "id": "1db8258f-6682-55b1-b469-8758c0dd1266",
+       "label": "A",
+       "content": "23.33%",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cb7002b9-5365-5c7b-8841-f44974a1cab6",
+       "label": "B",
+       "content": "28%",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c4d19dc8-064a-574b-a181-6a7b879a6c4b",
+       "label": "C",
+       "content": "35%",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "14c79bac-896d-5b91-b183-34e897792a7e",
+       "label": "D",
+       "content": "46.67%",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-su-05",
+     "stem": "In the Contact process each sulphur atom ends up in one H₂SO₄ molecule. What mass of sulphuric(VI) acid can be made from 32 g of sulphur? (H₂SO₄ = 98)",
+     "image_url": null,
+     "explanation": "S → SO₂ → SO₃ → H₂SO₄: 1 mol S (32 g) gives 1 mol H₂SO₄ $= 98$ g.\n\n**Why the other options are wrong**\n\n- 32 g: That is the mass of sulphur, not of the acid.\n- 64 g: That is the mass of SO₂ formed in the first step.\n- 80 g: That is the mass of SO₃, before it is converted into acid.",
+     "id": "1c1e809d-86fa-5ecf-9c9f-3ead31f980e9",
+     "topic": "Sulphur and Its Compounds",
+     "position": 27,
+     "options": [
+      {
+       "id": "f0697374-8a4f-5a13-a291-6d15a586602f",
+       "label": "A",
+       "content": "32 g",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "620f3b44-8d14-5136-abbd-6224e1fec18a",
+       "label": "B",
+       "content": "64 g",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a33222e2-bdae-5228-a6d7-18d837ee52cc",
+       "label": "C",
+       "content": "80 g",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5f2eea9a-2696-5d41-b85d-a18be50dbe09",
+       "label": "D",
+       "content": "98 g",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-ca-03",
+     "stem": "Dilute sulphuric acid is not used with marble chips to prepare carbon(IV) oxide because",
+     "image_url": null,
+     "explanation": "Dilute hydrochloric acid is used instead: CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂; calcium chloride is soluble.\n\n**Why the other options are wrong**\n\n- sulphuric acid does not react with carbonates: It does react at first, until the coating forms.\n- the gas produced is sulphur(IV) oxide: The gas would still be carbon(IV) oxide.\n- the reaction is too violent: The reaction quickly slows and stops.",
+     "id": "7a290b39-f8a7-5ce4-b228-9f5b206f7d06",
+     "topic": "Carbon and Its Inorganic Compounds",
+     "position": 28,
+     "options": [
+      {
+       "id": "ebba5ade-dfcd-5b09-bdc6-f933fed597b1",
+       "label": "A",
+       "content": "insoluble calcium sulphate coats the marble and stops the reaction",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3b21127f-ea9a-5682-8c2d-32f8d2667747",
+       "label": "B",
+       "content": "sulphuric acid does not react with carbonates",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c6405c3e-3b43-5373-b761-f14b5fcde640",
+       "label": "C",
+       "content": "the gas produced is sulphur(IV) oxide",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "18de52f6-862b-5b33-bfb3-056de6fb6bac",
+       "label": "D",
+       "content": "the reaction is too violent",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-rx-02",
+     "stem": "The main reducing agent in the blast furnace is",
+     "image_url": null,
+     "explanation": "Fe₂O₃ + 3CO → 2Fe + 3CO₂. The CO is formed when coke burns and the CO₂ reacts with more coke.\n\n**Why the other options are wrong**\n\n- limestone: Limestone removes impurities as slag.\n- hot air: Hot air burns the coke to provide heat and carbon(II) oxide.\n- carbon(IV) oxide: Carbon(IV) oxide is reduced to carbon(II) oxide by coke; it does not reduce the ore.",
+     "id": "4efb5bff-1964-54e2-8b18-f599dc696046",
+     "topic": "Reactivity Series and Extraction of Metals",
+     "position": 29,
+     "options": [
+      {
+       "id": "a2016730-22e2-5749-a68d-765d28c47aef",
+       "label": "A",
+       "content": "limestone",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "621af647-bee2-52ee-b059-a103ecedf260",
+       "label": "B",
+       "content": "hot air",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "041655ad-872b-512a-9007-1879fd45e7ec",
+       "label": "C",
+       "content": "carbon(IV) oxide",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9d7a7205-68b4-5e94-8080-835b22fc049c",
+       "label": "D",
+       "content": "carbon(II) oxide",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-am-04",
+     "stem": "What volume of hydrogen at s.t.p. is produced when 2.3 g of sodium reacts completely with water? 2Na + 2H₂O → 2NaOH + H₂",
+     "image_url": null,
+     "explanation": "Moles Na $= \\dfrac{2.3}{23} = 0.1$; moles H₂ $= 0.05$; volume $= 0.05 \\times 22.4 = 1.12$ dm³\n\n**Why the other options are wrong**\n\n- 2.24 dm³: You used a 1 : 1 ratio; 2 mol Na give 1 mol H₂.\n- 4.48 dm³: You doubled the moles instead of halving them.\n- 1.2 dm³: You used 24 dm³, the molar volume at room conditions.",
+     "id": "9c414e1a-281e-524f-91ed-fba1e3bce9c9",
+     "topic": "Alkali Metals",
+     "position": 30,
+     "options": [
+      {
+       "id": "f3dd654d-0810-5ed7-818f-50c90f605078",
+       "label": "A",
+       "content": "1.12 dm³",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "dfb21145-ba87-5e7c-b273-49ce111ab939",
+       "label": "B",
+       "content": "1.2 dm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "00de2810-ce07-5524-b1ed-88228c2af64a",
+       "label": "C",
+       "content": "2.24 dm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5b1e9492-b735-5ae0-ad19-b1f93cbd9062",
+       "label": "D",
+       "content": "4.48 dm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-ae-04",
+     "stem": "Farmers add slaked lime, Ca(OH)₂, to soil in order to",
+     "image_url": null,
+     "explanation": "Calcium hydroxide neutralises acids in the soil, raising the pH so that crops grow better.\n\n**Why the other options are wrong**\n\n- increase the nitrogen content: Slaked lime contains no nitrogen.\n- make the soil more acidic: Slaked lime is a base; it neutralises acids.\n- kill all insects: Liming is not a pesticide treatment.",
+     "id": "a30eb2f3-7abc-5b16-bf59-1c25141abe88",
+     "topic": "Alkaline Earth Metals",
+     "position": 31,
+     "options": [
+      {
+       "id": "4bcad3f2-8ec9-551a-a678-b603a8daaa32",
+       "label": "A",
+       "content": "increase the nitrogen content",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2118e267-bbf2-5718-90ee-ae4e89eae4a0",
+       "label": "B",
+       "content": "reduce the acidity of the soil",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bb1cd646-334c-57d0-bb91-0c3bb2cea1b0",
+       "label": "C",
+       "content": "make the soil more acidic",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "115a14ae-bfb7-5ae7-9cae-5fed7fa04398",
+       "label": "D",
+       "content": "kill all insects",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-al-02",
+     "stem": "Cryolite is added in the electrolytic extraction of aluminium in order to",
+     "image_url": null,
+     "explanation": "Pure Al₂O₃ melts at about 2050 °C; dissolved in molten cryolite it can be electrolysed at about 950 °C.\n\n**Why the other options are wrong**\n\n- act as the anode: The anodes are made of carbon.\n- reduce the aluminium ions: Aluminium ions are reduced by electrons at the cathode.\n- increase the amount of oxygen produced: Cryolite does not change the products.",
+     "id": "4d98cd50-f001-59b0-b928-6f5919e1b8f8",
+     "topic": "Aluminium and Group III Metals",
+     "position": 32,
+     "options": [
+      {
+       "id": "3d345911-c47e-58bb-bf64-0e113f5e09c7",
+       "label": "A",
+       "content": "lower the melting point of the electrolyte and save energy",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1351fd8f-c6fc-59df-aa20-8fea5e272869",
+       "label": "B",
+       "content": "act as the anode",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "813add21-ba4a-5432-8fbe-36d56cdd3ae9",
+       "label": "C",
+       "content": "reduce the aluminium ions",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "36e7543a-b179-52e4-b7f3-6bdc945ce2a9",
+       "label": "D",
+       "content": "increase the amount of oxygen produced",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-tm-01",
+     "stem": "A solution containing iron(II) ions gives, with sodium hydroxide solution,",
+     "image_url": null,
+     "explanation": "Fe²⁺ + 2OH⁻ → Fe(OH)₂(s); the green precipitate slowly turns brown in air as it is oxidised.\n\n**Why the other options are wrong**\n\n- a red-brown precipitate: That is iron(III) hydroxide, from Fe³⁺ ions.\n- a blue precipitate: That is copper(II) hydroxide.\n- a white precipitate that dissolves in excess: That is zinc, aluminium or lead hydroxide.",
+     "id": "29e264cf-bc34-5c62-9be5-ca74d0753016",
+     "topic": "Iron and Other Transition Metals",
+     "position": 33,
+     "options": [
+      {
+       "id": "e11d6b8d-2b0c-5bc1-bd2c-e329964b1dfd",
+       "label": "A",
+       "content": "a red-brown precipitate",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "051ef5c1-1f2c-57fd-ae2d-cd512b588527",
+       "label": "B",
+       "content": "a blue precipitate",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "89feb717-c9a7-52e4-a3f6-0e62749e34e0",
+       "label": "C",
+       "content": "a white precipitate that dissolves in excess",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2a6bc449-747a-5059-a1be-5facfe94a36f",
+       "label": "D",
+       "content": "a dirty green precipitate",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-ip-05",
+     "stem": "The Haber process is run at about 450 °C, although a lower temperature would give a higher equilibrium yield of ammonia, because at a lower temperature",
+     "image_url": null,
+     "explanation": "450 °C is a compromise between a reasonable yield and a fast enough rate.\n\n**Why the other options are wrong**\n\n- the catalyst would be poisoned: Catalyst poisoning is caused by impurities, not low temperature.\n- ammonia would decompose: Ammonia is more stable at lower temperatures.\n- the pressure would fall to zero: Pressure is set by the compressors, not by the temperature.",
+     "id": "0cdf20fa-fe3f-5b93-b31a-46aea4018f60",
+     "topic": "Industrial Chemical Processes",
+     "position": 34,
+     "options": [
+      {
+       "id": "ceb7331b-f7d4-52d2-b0dc-349ee202fd09",
+       "label": "A",
+       "content": "the catalyst would be poisoned",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dc6eab04-9847-50e5-af93-220f5fa4c379",
+       "label": "B",
+       "content": "ammonia would decompose",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "67bbf684-aab6-5e03-bda6-5b0989bc5f8c",
+       "label": "C",
+       "content": "the pressure would fall to zero",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "54bbf180-6b39-5a34-9754-eec0b8d8dae2",
+       "label": "D",
+       "content": "the reaction would be too slow",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-oi-02",
+     "stem": "Which statement about the members of a homologous series is correct?",
+     "image_url": null,
+     "explanation": "A homologous series has one general formula and functional group; members differ by CH₂ (Mᵣ 14).\n\n**Why the other options are wrong**\n\n- They all have the same physical properties: Physical properties change gradually along the series.\n- They all have the same molecular formula: Compounds with the same molecular formula are isomers.\n- They have different general formulas: All members share one general formula.",
+     "id": "02859bef-93a7-5df7-a514-6227499369f4",
+     "topic": "Introduction to Organic Chemistry",
+     "position": 35,
+     "options": [
+      {
+       "id": "b509c364-7776-5cf5-ab85-9a2ccf245cff",
+       "label": "A",
+       "content": "They all have the same physical properties",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c79e91ac-384f-555c-82ef-50a5928343bc",
+       "label": "B",
+       "content": "They all have the same molecular formula",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a7db0f6f-584c-53e8-ab8a-962587cc1852",
+       "label": "C",
+       "content": "They have different general formulas",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8dffe402-6ce1-5dad-b682-d8da5098af3e",
+       "label": "D",
+       "content": "Successive members differ by a CH₂ group",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-ak-02",
+     "stem": "An alkane has a relative molecular mass of 72. What is its molecular formula?",
+     "image_url": null,
+     "explanation": "For CₙH₂ₙ₊₂, Mᵣ = 14n + 2 = 72, so n = 5: C₅H₁₂ (pentane).\n\n**Why the other options are wrong**\n\n- C₆H₁₄: C₆H₁₄ has Mᵣ 86.\n- C₅H₁₀: C₅H₁₀ (Mᵣ 70) is an alkene, not an alkane.\n- C₄H₁₀: C₄H₁₀ has Mᵣ 58.",
+     "id": "2522d7f6-2ec2-5863-83f5-0d163f54c4d2",
+     "topic": "Alkanes",
+     "position": 36,
+     "options": [
+      {
+       "id": "af69953f-3f8c-5128-a9ba-85a975bc7b99",
+       "label": "A",
+       "content": "C₆H₁₄",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4db479e3-a6e5-5bb7-985f-d8302b96c700",
+       "label": "B",
+       "content": "C₅H₁₀",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "93426edf-e5bd-5d6a-9f25-6ee254493133",
+       "label": "C",
+       "content": "C₄H₁₀",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b3f304d4-1c4f-5195-a415-0081137252cb",
+       "label": "D",
+       "content": "C₅H₁₂",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-ke-04",
+     "stem": "What is the main product when hydrogen bromide adds to propene, CH₃CH=CH₂?",
+     "image_url": null,
+     "explanation": "By Markovnikov's rule, the H of HBr goes to the CH₂ end and Br to the middle carbon: 2-bromopropane.\n\n**Why the other options are wrong**\n\n- CH₃CH₂CH₂Br: This is the minor product; H adds to the carbon that already has more hydrogens.\n- CH₂BrCHBrCH₃: That would be the product of adding Br₂, not HBr.\n- CH₃CH=CHBr: Addition removes the double bond; this still has one.",
+     "id": "81696614-ef6e-578f-9b57-282d139de63a",
+     "topic": "Alkenes",
+     "position": 37,
+     "options": [
+      {
+       "id": "5b223cbc-e74a-5d14-ab10-4e9403410068",
+       "label": "A",
+       "content": "CH₃CHBrCH₃",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e5775e11-27bc-5014-8d51-e992a178f65d",
+       "label": "B",
+       "content": "CH₃CH₂CH₂Br",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d2d63f29-0266-52ee-9e2f-37f6bb50d4a8",
+       "label": "C",
+       "content": "CH₂BrCHBrCH₃",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "978b8f6a-e78a-5a78-9896-56458276d93c",
+       "label": "D",
+       "content": "CH₃CH=CHBr",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-ky-04",
+     "stem": "What volume of hydrogen is needed to convert 50 cm³ of ethyne completely into ethane (same conditions)? C₂H₂ + 2H₂ → C₂H₆",
+     "image_url": null,
+     "explanation": "1 volume of ethyne needs 2 volumes of hydrogen: $2 \\times 50 = 100$ cm³\n\n**Why the other options are wrong**\n\n- 50 cm³: That converts ethyne only to ethene; two molecules of H₂ are needed to reach ethane.\n- 25 cm³: You halved instead of doubling.\n- 150 cm³: Ethyne adds two molecules of hydrogen, not three.",
+     "id": "990f7ebd-7c3c-502e-81be-1f809ae733ab",
+     "topic": "Alkynes",
+     "position": 38,
+     "options": [
+      {
+       "id": "22b2eb7d-7a11-50c5-b3ff-e15b19a53a19",
+       "label": "A",
+       "content": "25 cm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "51c7201b-376d-578e-85c4-b41c2b9670ae",
+       "label": "B",
+       "content": "50 cm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "95bc809d-df98-5cca-b6b1-78b7a75e6bfc",
+       "label": "C",
+       "content": "100 cm³",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "230a0d01-396f-5bc9-9bcf-d21ea111a93f",
+       "label": "D",
+       "content": "150 cm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-pe-03",
+     "stem": "Cracking is the process of",
+     "image_url": null,
+     "explanation": "Cracking uses heat and often a catalyst (Al₂O₃/SiO₂); it gives smaller alkanes and alkenes such as ethene.\n\n**Why the other options are wrong**\n\n- separating crude oil into fractions: That is fractional distillation.\n- joining small molecules into polymers: That is polymerisation.\n- removing sulphur from crude oil: That is desulphurisation.",
+     "id": "dbabf35c-7f57-5b8e-8dcd-047eb9e270e3",
+     "topic": "Petroleum and Petrochemicals",
+     "position": 39,
+     "options": [
+      {
+       "id": "3d99c850-8d26-5a8f-9bf1-fbe7524d1ceb",
+       "label": "A",
+       "content": "breaking large hydrocarbon molecules into smaller, more useful ones",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6b75ab06-dcbd-5daf-b81c-35bc196053ec",
+       "label": "B",
+       "content": "separating crude oil into fractions",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "69b71d09-731e-582f-8f2f-38c10641640b",
+       "label": "C",
+       "content": "joining small molecules into polymers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "24f26794-5f5f-5767-8e55-e886d2e5b0ca",
+       "label": "D",
+       "content": "removing sulphur from crude oil",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-an-03",
+     "stem": "When ethanol is warmed with acidified potassium dichromate(VI), the colour changes from",
+     "image_url": null,
+     "explanation": "Ethanol is oxidised to ethanal and then ethanoic acid; Cr₂O₇²⁻ is reduced to Cr³⁺.\n\n**Why the other options are wrong**\n\n- purple to colourless: That is the change with acidified potassium manganate(VII).\n- green to orange: Dichromate(VI) is orange; it is reduced to green Cr³⁺.\n- colourless to pink: That is phenolphthalein turning alkaline.",
+     "id": "bd99c823-d05d-58d9-a6e2-4edd5e8aa4a8",
+     "topic": "Alkanols",
+     "position": 40,
+     "options": [
+      {
+       "id": "a1793c70-e93b-54ff-b6db-7ebbcbedd9e1",
+       "label": "A",
+       "content": "purple to colourless",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c6d4b6a3-3dd4-514b-82a1-c8392fd20415",
+       "label": "B",
+       "content": "orange to green",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7bb3e4b2-720c-5a2f-8474-cb71fa5b8c32",
+       "label": "C",
+       "content": "green to orange",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b903b714-6048-5905-b223-0f7a8861feca",
+       "label": "D",
+       "content": "colourless to pink",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-ac-01",
+     "stem": "The functional group of the alkanoic acids is",
+     "image_url": null,
+     "explanation": "The carboxyl group, –COOH, contains a C=O and an –OH on the same carbon.\n\n**Why the other options are wrong**\n\n- –OH: –OH is the hydroxyl group of the alkanols.\n- –CHO: –CHO is the aldehyde (alkanal) group.\n- –NH₂: –NH₂ is the amino group.",
+     "id": "ed2dcfd8-3731-5d9f-8640-fab3e2acce7a",
+     "topic": "Alkanoic Acids",
+     "position": 41,
+     "options": [
+      {
+       "id": "30edd600-5f11-5762-ad3f-10c544bef880",
+       "label": "A",
+       "content": "–OH",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "74d36373-8059-5d94-af9e-f6d1eaefe554",
+       "label": "B",
+       "content": "–CHO",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "22722e0a-95c9-57cf-b6f7-1f868fbbc069",
+       "label": "C",
+       "content": "–NH₂",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3a35e100-2a63-5222-a71f-2cf32c1603b2",
+       "label": "D",
+       "content": "–COOH",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-es-04",
+     "stem": "12 g of ethanoic acid is warmed with excess ethanol and gives 11.44 g of ethyl ethanoate. What is the percentage yield? (CH₃COOH = 60; CH₃COOC₂H₅ = 88)",
+     "image_url": null,
+     "explanation": "Moles acid $= \\dfrac{12}{60} = 0.2$; theoretical ester $= 0.2 \\times 88 = 17.6$ g; yield $= \\dfrac{11.44}{17.6} \\times 100 = 65\\%$\n\n**Why the other options are wrong**\n\n- 95.33%: You compared the mass of ester with the mass of acid used.\n- 35%: That is the percentage that was not obtained.\n- 153.85%: You divided the theoretical mass by the actual mass.",
+     "id": "ef1a44b2-07ec-5240-8fc9-f77abd0866f2",
+     "topic": "Alkanoates and Esters",
+     "position": 42,
+     "options": [
+      {
+       "id": "dab3c693-a956-52b4-a853-1b6faf7d9fbd",
+       "label": "A",
+       "content": "35%",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5a818e8b-43ef-54dc-9faa-ea9c403a7921",
+       "label": "B",
+       "content": "65%",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "cc419b1c-a052-5c23-885f-33484c3b62a1",
+       "label": "C",
+       "content": "95.33%",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4ede72e0-075c-5ff0-829b-5b0e3d9af469",
+       "label": "D",
+       "content": "153.85%",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-sd-04",
+     "stem": "Vegetable oils are liquid at room temperature while animal fats are solid because oils contain",
+     "image_url": null,
+     "explanation": "Kinks at C=C bonds stop the chains packing closely, so the forces between molecules are weaker.\n\n**Why the other options are wrong**\n\n- more saturated fatty acid chains: Saturated chains pack closely and make fats solid.\n- no glycerol: Both fats and oils are esters of glycerol.\n- water: Oils are not liquid because of water.",
+     "id": "8338a16f-01c2-58d4-ae76-8137ea936805",
+     "topic": "Soaps, Detergents, and Oils",
+     "position": 43,
+     "options": [
+      {
+       "id": "f047e4df-119c-56ee-8211-db1957c39f0b",
+       "label": "A",
+       "content": "more saturated fatty acid chains",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ab883cfb-0638-5fc5-a82b-c94852af4ad3",
+       "label": "B",
+       "content": "no glycerol",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4207111c-c87b-5a7f-9042-3cdf39e5dd44",
+       "label": "C",
+       "content": "more unsaturated (C=C) fatty acid chains",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ad1abf88-e6c3-5edf-b2c2-1cfe57a7e95c",
+       "label": "D",
+       "content": "water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-cr-03",
+     "stem": "The products of the acid hydrolysis of sucrose are",
+     "image_url": null,
+     "explanation": "C₁₂H₂₂O₁₁ + H₂O → C₆H₁₂O₆ (glucose) + C₆H₁₂O₆ (fructose).\n\n**Why the other options are wrong**\n\n- glucose only: Maltose, not sucrose, gives glucose only.\n- glucose and galactose: Lactose gives glucose and galactose.\n- ethanol and carbon(IV) oxide: Those are products of fermentation.",
+     "id": "c2def80d-2378-562d-bea3-ba1d730db1d4",
+     "topic": "Carbohydrates",
+     "position": 44,
+     "options": [
+      {
+       "id": "4848ff1c-df70-54a0-8346-6504dfe3ab25",
+       "label": "A",
+       "content": "glucose only",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "57da7552-71da-5dda-9a75-47addc35155e",
+       "label": "B",
+       "content": "glucose and galactose",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "80260a7c-1e39-5417-923b-0bb39a9d8670",
+       "label": "C",
+       "content": "glucose and fructose",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f05b382f-e6d8-55f9-91c6-3361d9264da5",
+       "label": "D",
+       "content": "ethanol and carbon(IV) oxide",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-pr-04",
+     "stem": "When egg white is heated it becomes a white solid. During this denaturation,",
+     "image_url": null,
+     "explanation": "Heat breaks the hydrogen bonds that hold the folded shape; the chain unfolds and the protein coagulates.\n\n**Why the other options are wrong**\n\n- the protein is hydrolysed to amino acids: Hydrolysis breaks peptide bonds; heating an egg does not.\n- new peptide bonds form between the chains: Denaturation does not make new peptide bonds.\n- the protein is converted into starch: Proteins do not turn into carbohydrates on heating.",
+     "id": "70c0d1d4-59ac-599d-be12-184c803caf57",
+     "topic": "Proteins and Amino Acids",
+     "position": 45,
+     "options": [
+      {
+       "id": "30c9f77b-e040-534f-882e-4edb663d897b",
+       "label": "A",
+       "content": "the protein is hydrolysed to amino acids",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "da8bd672-2118-5c1a-883c-665fc5253066",
+       "label": "B",
+       "content": "new peptide bonds form between the chains",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "15187b30-753a-5f4e-a2a2-a904d563a1ef",
+       "label": "C",
+       "content": "the protein is converted into starch",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "44c9ccb2-60ac-5849-9c84-ed37ee46fe3c",
+       "label": "D",
+       "content": "the 3-D shape of the protein changes but the peptide bonds are not broken",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-po-04",
+     "stem": "A sample of poly(ethene) has a relative molecular mass of 42 000. How many ethene units does each chain contain? (C₂H₄ = 28)",
+     "image_url": null,
+     "explanation": "$n = \\dfrac{M_r(\\text{polymer})}{M_r(\\text{monomer})} = \\dfrac{42\\,000}{28} = 1500$\n\n**Why the other options are wrong**\n\n- 3000: You used 14 (CH₂) as the mass of the monomer; the monomer is C₂H₄.\n- 750: You used 56 as the molar mass of ethene.\n- 42,000: That is the relative molecular mass, not the number of units.",
+     "id": "e7d25359-ca31-5508-89fe-5dd0a1d47df9",
+     "topic": "Polymers and Plastics",
+     "position": 46,
+     "options": [
+      {
+       "id": "430aff52-5eef-5410-a8d0-d5e6dd3c3efc",
+       "label": "A",
+       "content": "750",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "128db228-52ff-5dfd-a13d-75eb8b574365",
+       "label": "B",
+       "content": "1500",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "475b9cf2-3900-5713-9c54-ecb3b6c8ebe9",
+       "label": "C",
+       "content": "3000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8def42a8-20d1-5f54-afb8-a93ae169a020",
+       "label": "D",
+       "content": "42,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-ev-01",
+     "stem": "Which gas is the main cause of acid rain from burning coal and fuel oil?",
+     "image_url": null,
+     "explanation": "SO₂ dissolves in rain and is oxidised to sulphuric(VI) acid: 2SO₂ + O₂ + 2H₂O → 2H₂SO₄.\n\n**Why the other options are wrong**\n\n- Carbon(II) oxide: Carbon(II) oxide is poisonous but does not form acid rain.\n- Methane: Methane is a greenhouse gas, not a cause of acid rain.\n- Nitrogen: Nitrogen gas itself is unreactive; its oxides (NOₓ) contribute.",
+     "id": "8e144b7a-c23a-5648-ae4a-325b73b93488",
+     "topic": "Chemistry and the Environment",
+     "position": 47,
+     "options": [
+      {
+       "id": "337936cb-e414-573f-b9e9-4e50658113e7",
+       "label": "A",
+       "content": "Sulphur(IV) oxide",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3fe93ae7-5f5c-5e11-bb7e-45c83b6752a6",
+       "label": "B",
+       "content": "Carbon(II) oxide",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e5b034f8-eb53-5c51-a7a7-e2bdcf759b07",
+       "label": "C",
+       "content": "Methane",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f81bbb35-8255-533c-ba3d-146d3713cf87",
+       "label": "D",
+       "content": "Nitrogen",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-px-03",
+     "stem": "A solution gives a white precipitate with NaOH(aq) that dissolves in excess, and a white precipitate with NH₃(aq) that also dissolves in excess. The cation is",
+     "image_url": null,
+     "explanation": "Only zinc hydroxide dissolves in excess of both reagents (zincate with NaOH, a complex ion with NH₃).\n\n**Why the other options are wrong**\n\n- Al³⁺: Aluminium hydroxide does not dissolve in excess ammonia.\n- Pb²⁺: Lead(II) hydroxide does not dissolve in excess ammonia.\n- Ca²⁺: Calcium hydroxide does not dissolve in excess NaOH, and ammonia gives no precipitate.",
+     "id": "3c1a3147-a5e5-5c63-8346-01880a80f8d1",
+     "topic": "Practical Chemistry Skills",
+     "position": 48,
+     "options": [
+      {
+       "id": "374dbdd2-bb85-5c7a-b238-ace694db34eb",
+       "label": "A",
+       "content": "Al³⁺",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b72f9f8f-110f-5ed5-acbf-b2a6d5f1c7a8",
+       "label": "B",
+       "content": "Pb²⁺",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ea561b57-1032-519b-86db-ebe5fcfec055",
+       "label": "C",
+       "content": "Ca²⁺",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "57bf9f30-ebfb-5172-bb35-00a55c9e5fc3",
+       "label": "D",
+       "content": "Zn²⁺",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-in-03",
+     "stem": "Which apparatus measures exactly 25.0 cm³ of a solution most accurately?",
+     "image_url": null,
+     "explanation": "A 25.0 cm³ pipette delivers one fixed volume to about ±0.05 cm³; it is used for the aliquot in titrations.\n\n**Why the other options are wrong**\n\n- Measuring cylinder: A measuring cylinder is much less accurate (about ±0.5 cm³).\n- Beaker: Beaker markings are only rough guides.\n- Conical flask: A conical flask holds the solution during a titration; it does not measure volume accurately.",
+     "id": "6f67bc4f-a559-5af0-a5f8-59de4d7a4b8a",
+     "topic": "Introduction to Chemistry",
+     "position": 49,
+     "options": [
+      {
+       "id": "e4f5dbb3-078f-5cad-b466-8604e4634bf2",
+       "label": "A",
+       "content": "Measuring cylinder",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "344b902e-0469-5220-b698-247dbea1b37a",
+       "label": "B",
+       "content": "Beaker",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "447d9d54-8f58-5cdd-9eae-c85cb1b8ccb8",
+       "label": "C",
+       "content": "Conical flask",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a1b8fd8d-615b-5a51-a63a-b816f313360b",
+       "label": "D",
+       "content": "Pipette",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "chem-pm-02",
+     "stem": "The coloured dyes in a sample of black ink are best separated by",
+     "image_url": null,
+     "explanation": "Dyes move up the paper at different rates because they differ in solubility in the solvent and attraction to the paper.\n\n**Why the other options are wrong**\n\n- simple distillation: Distillation separates a liquid solvent from dissolved solids, not dyes from each other.\n- filtration: The dyes are dissolved, so they pass through filter paper.\n- sublimation: Dyes in ink do not sublime.",
+     "id": "9096a3c6-cfb1-5c1d-a153-13ac43deac5a",
+     "topic": "Particulate Nature of Matter",
+     "position": 50,
+     "options": [
+      {
+       "id": "4e0f38dd-b96a-55e6-a97b-ab340262c9c2",
+       "label": "A",
+       "content": "simple distillation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "051fce4d-80e4-511d-b548-281ed41cd174",
+       "label": "B",
+       "content": "paper chromatography",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "49aee9d7-1c91-519a-95d0-9b0356bd8b40",
+       "label": "C",
+       "content": "filtration",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b1f99b97-1e8d-5dc9-b4ae-83aaf2333286",
+       "label": "D",
+       "content": "sublimation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "f8fe27c3eab1"
+}

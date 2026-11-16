@@ -95,6 +95,8 @@ export type OptionRow = {
 export type QuestionRow = {
   id: string
   paper_id: string
+  /** the syllabus topic the question tests (a mock exam spans many) */
+  topic_id?: string | null
   stem: string
   image_url: string | null
   explanation: string | null
