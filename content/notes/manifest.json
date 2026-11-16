@@ -7026,6 +7026,97 @@
       "title": "Soil erosion and conservation",
       "est_minutes": 12,
       "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-crop-production-principles.md",
+      "subject": "Agricultural Science",
+      "topic": "principles-of-crop-production",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Principles of crop production: planting, spacing and cropping systems",
+      "est_minutes": 15,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-propagation-nursery.md",
+      "subject": "Agricultural Science",
+      "topic": "plant-propagation-and-nursery-management",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Plant propagation and nursery management",
+      "est_minutes": 14,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-cereal-crops.md",
+      "subject": "Agricultural Science",
+      "topic": "cereal-crops",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Cereal crops: rice, maize, sorghum and millet",
+      "est_minutes": 14,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-legumes-roots-tubers.md",
+      "subject": "Agricultural Science",
+      "topic": "legumes-roots-and-tubers",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Legumes, roots and tubers: groundnut, cowpea, cassava, sweet potato and yam",
+      "est_minutes": 14,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-cash-crops.md",
+      "subject": "Agricultural Science",
+      "topic": "plantation-and-cash-crops",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Plantation and cash crops: cocoa, oil palm and others",
+      "est_minutes": 15,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-vegetables-fruits.md",
+      "subject": "Agricultural Science",
+      "topic": "vegetable-and-fruit-production",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Vegetable and fruit production",
+      "est_minutes": 13,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-weed-control.md",
+      "subject": "Agricultural Science",
+      "topic": "weed-control",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Weeds and weed control",
+      "est_minutes": 14,
+      "sort_order": 1
     }
   ]
 }

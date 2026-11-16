@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Dura, Pisifera and Tenera oil palm fruits</title>
+<desc id="d">Cross-sections of oil palm fruits. Dura has a thick shell and thin mesocarp (less oil). Pisifera has no shell, but its female flowers are usually sterile so it gives few bunches. Tenera, the hybrid of Dura and Pisifera, has a thin shell and a thick, oily mesocarp, so it is the type planted for high oil yield.</desc>
+<defs></defs>
+<rect width="800" height="380" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Oil palm fruit types: Dura × Pisifera = Tenera</text>
+<circle cx="140.0" cy="190.0" r="68.0" fill="#fdba74" stroke="#ea580c" stroke-width="2.4"/>
+<circle cx="140.0" cy="190.0" r="46.0" fill="#57534e" stroke="#0f172a" stroke-width="2"/>
+<circle cx="140.0" cy="190.0" r="26.0" fill="#f5f5f4" stroke="#0f172a" stroke-width="2"/>
+<text x="140.0" y="80.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Dura (D)</text>
+<text x="140.0" y="300.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">thick shell, thin pulp</text>
+<circle cx="400.0" cy="190.0" r="78.0" fill="#fdba74" stroke="#ea580c" stroke-width="2.4"/>
+<circle cx="400.0" cy="190.0" r="26.0" fill="#f5f5f4" stroke="#0f172a" stroke-width="2"/>
+<text x="400.0" y="80.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Pisifera (P)</text>
+<text x="400.0" y="300.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">no shell; mostly sterile</text>
+<circle cx="660.0" cy="190.0" r="75.0" fill="#fdba74" stroke="#ea580c" stroke-width="2.4"/>
+<circle cx="660.0" cy="190.0" r="33.0" fill="#57534e" stroke="#0f172a" stroke-width="2"/>
+<circle cx="660.0" cy="190.0" r="26.0" fill="#f5f5f4" stroke="#0f172a" stroke-width="2"/>
+<text x="660.0" y="80.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Tenera (D × P)</text>
+<text x="660.0" y="300.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">thin shell, thick oily pulp</text>
+<text x="140.0" y="330.0" font-size="12" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">kernel (white) · shell (dark) · mesocarp/pulp (orange)</text>
+<text x="660.0" y="330.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">planted for high oil yield</text>
+</svg>
