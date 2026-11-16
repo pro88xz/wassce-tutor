@@ -31,6 +31,8 @@ type Props = {
   intent: 'student' | 'tutor' | 'affiliate'
   referralCode?: string
   mode: 'signup' | 'signin'
+  /** Google has returned an account and it is being confirmed with the server. */
+  onStart?: () => void
   onAuthenticated: () => void
   onError: (message: string) => void
 }
@@ -78,7 +80,7 @@ function loadGoogleIdentityScript(): Promise<void> {
   })
 }
 
-export function GoogleSignInButton({ intent, referralCode, mode, onAuthenticated, onError }: Props) {
+export function GoogleSignInButton({ intent, referralCode, mode, onStart, onAuthenticated, onError }: Props) {
   const buttonRef = useRef<HTMLDivElement>(null)
   const [busy, setBusy] = useState(false)
   const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID as string | undefined
@@ -100,6 +102,7 @@ export function GoogleSignInButton({ intent, referralCode, mode, onAuthenticated
           callback: async (response) => {
             if (!active || !response.credential) return
             setBusy(true)
+            onStart?.()
             try {
               const { error } = await supabase.auth.signInWithIdToken({
                 provider: 'google',
@@ -132,7 +135,7 @@ export function GoogleSignInButton({ intent, referralCode, mode, onAuthenticated
     }
     void initialize()
     return () => { active = false }
-  }, [clientId, intent, referralCode, mode, onAuthenticated, onError])
+  }, [clientId, intent, referralCode, mode, onStart, onAuthenticated, onError])
 
   const handleNativeGoogleSignIn = async () => {
     if (!clientId) {
@@ -159,6 +162,7 @@ export function GoogleSignInButton({ intent, referralCode, mode, onAuthenticated
         provider: 'google',
         options: { nonce: hashedNonce },
       })
+      onStart?.()
       if (result.provider !== 'google' || result.result.responseType !== 'online' || !result.result.idToken) {
         throw new Error('Google did not return a valid identity token. Please try another account.')
       }
