@@ -1,0 +1,1968 @@
+{
+ "name": "physics_mock_p1",
+ "label": "Physics: timed mock exam, Paper 1",
+ "subject_slug": "physics",
+ "papers": [
+  {
+   "id": "4a15373f-da8c-575d-99c7-a4d130c68afc",
+   "topic": null,
+   "title": "Timed mock exam: Paper 1 (50 questions, 1 h 15 min)",
+   "paper_type": "Mock",
+   "description": "A timed WASSCE-style Physics Paper 1: 50 objective questions from across the syllabus, in 1 h 15 min, the time WAEC gives for Paper 1. Every question comes from the WASSCE Tutor practice bank, with the working and the reason behind every wrong option.",
+   "sort_order": 900,
+   "questions": [
+    {
+     "key": "phy-units-06",
+     "stem": "The dimensions of pressure are",
+     "image_url": null,
+     "explanation": "$[p] = \\dfrac{[F]}{[A]} = \\dfrac{\\text{M L T}^{-2}}{\\text{L}^2} = \\text{M L}^{-1}\\text{T}^{-2}$.\n\n**Why the other options are wrong**\n\n- M L T⁻²: Those are the dimensions of force. Pressure is force divided by area (L²).\n- M L² T⁻²: Those are the dimensions of energy.\n- M L⁻³: Those are the dimensions of density.",
+     "id": "9288627d-989c-5f04-bddd-d372a7f4ffea",
+     "topic": "Physical Quantities and Units",
+     "position": 1,
+     "options": [
+      {
+       "id": "380c8944-e37b-5ebe-ad30-e07c9b537ca4",
+       "label": "A",
+       "content": "M L⁻¹ T⁻²",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e03deb84-149c-555d-a4e7-71e6e44ae325",
+       "label": "B",
+       "content": "M L T⁻²",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a49f1534-c26c-59bc-9531-b9f98c714579",
+       "label": "C",
+       "content": "M L² T⁻²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6cf1907e-23fc-528f-886b-42f073b0a762",
+       "label": "D",
+       "content": "M L⁻³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-vec-01",
+     "stem": "Which of the following is a vector quantity?",
+     "image_url": null,
+     "explanation": "Displacement has both magnitude and direction, so it is a vector.\n\n**Why the other options are wrong**\n\n- speed: Speed has magnitude only. Velocity is its vector partner.\n- energy: Energy has no direction: it is a scalar.\n- density: Density is mass per unit volume, a scalar.",
+     "id": "dc1c0b2f-c9e0-5535-9848-6ca279713d66",
+     "topic": "Scalars and Vectors",
+     "position": 2,
+     "options": [
+      {
+       "id": "484f5e22-8a5e-5be3-8851-45d8567a11d3",
+       "label": "A",
+       "content": "speed",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "45cc05df-0ed0-5f0d-bcae-584b5aeaec8f",
+       "label": "B",
+       "content": "energy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f0408191-5e7c-591f-9ce9-201067574fcf",
+       "label": "C",
+       "content": "density",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1f521614-1651-5cf1-a2a3-e015e260bc95",
+       "label": "D",
+       "content": "displacement",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-meas-02",
+     "stem": "On a vernier caliper the main scale reading is 2.3 cm and the 7th vernier division coincides with a main scale division. If the vernier constant is 0.01 cm, what is the reading?",
+     "image_url": null,
+     "explanation": "Reading $= 2.3 + 7 \\times 0.01 = 2.37\\ \\text{cm}$.\n\n**Why the other options are wrong**\n\n- 2.307 cm: Each vernier division is worth 0.01 cm, so 7 divisions add 0.07 cm, not 0.007 cm.\n- 3.0 cm: You added 0.7 cm. Seven vernier divisions add 7 × 0.01 = 0.07 cm.\n- 2.23 cm: The vernier reading is added to, not subtracted from, the main scale reading.",
+     "id": "865eb090-c84c-527d-9726-58d2607caac7",
+     "topic": "Measurement and Errors",
+     "position": 3,
+     "options": [
+      {
+       "id": "ce7c12a9-985f-5b8a-94a6-70bf83573f8e",
+       "label": "A",
+       "content": "2.23 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "932761c9-8df9-5765-87fa-c30724c5687d",
+       "label": "B",
+       "content": "2.307 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bff3cc94-c1e2-536f-8a29-4b337f79ef53",
+       "label": "C",
+       "content": "2.37 cm",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d7ff6d61-7dfe-5f27-9443-a652b978b8a2",
+       "label": "D",
+       "content": "3.0 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-lin-03",
+     "stem": "A runner covers 400 m in 50 s and then 200 m in 30 s. What is her average speed for the whole run?",
+     "image_url": null,
+     "explanation": "Average speed $= \\dfrac{400 + 200}{50 + 30} = \\dfrac{600}{80} = 7.5\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 7.33 m s⁻¹: You averaged the two speeds. Average speed is total distance ÷ total time.\n- 8 m s⁻¹: That is the speed for the first part only.\n- 12 m s⁻¹: You divided total distance by the first time only.",
+     "id": "148e2c37-4ace-5ef0-8d31-53a28ca04755",
+     "topic": "Motion in a Straight Line",
+     "position": 4,
+     "options": [
+      {
+       "id": "8c5089bd-183b-5688-9b2f-0129270d487f",
+       "label": "A",
+       "content": "7.33 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "72fdb6a5-dd2d-55aa-b1b4-864f95278537",
+       "label": "B",
+       "content": "7.5 m s⁻¹",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1fbd3b05-7e49-5e67-9ca1-0070e22999f7",
+       "label": "C",
+       "content": "8 m s⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "13b58f55-742f-5a37-8638-f4da952c46a4",
+       "label": "D",
+       "content": "12 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-eqm-01",
+     "stem": "A car starts from rest and accelerates uniformly at 3 m s⁻² for 10 s. How far does it travel?",
+     "image_url": null,
+     "explanation": "$s = ut + \\tfrac{1}{2}at^2 = 0 + \\tfrac{1}{2}(3)(10)^2 = 150\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 300 m: You forgot the ½ in $s = ut + \\tfrac{1}{2}at^2$.\n- 30 m: That is the final velocity, $v = at$, not the distance.\n- 15 m: You used $t$ instead of $t^2$.",
+     "id": "382d63e2-7707-5425-9919-ee63b4ce9d1e",
+     "topic": "Equations of Motion",
+     "position": 5,
+     "options": [
+      {
+       "id": "0949028e-f6c3-5c7b-af0a-827c456b874a",
+       "label": "A",
+       "content": "15 m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4ddcdf3a-cfd1-5d0f-a381-61b8ee801132",
+       "label": "B",
+       "content": "30 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c79d7aed-1195-5c2d-890f-e2b62e0f7a97",
+       "label": "C",
+       "content": "150 m",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "420dd032-76d8-50a6-a6ba-88b152adcdec",
+       "label": "D",
+       "content": "300 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-grav-07",
+     "stem": "A body falls freely from rest. What is its speed after falling 20 m? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "$v^2 = 2gh = 2(10)(20) = 400 \\Rightarrow v = 20\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 400 m s⁻¹: That is $v^2$. Take the square root.\n- 14.1 m s⁻¹: You forgot the 2 in $v^2 = 2gh$.\n- 200 m s⁻¹: You multiplied g by h without the 2 or the square root.",
+     "id": "9732b220-e093-5899-b806-c3bbe619cff6",
+     "topic": "Motion under Gravity",
+     "position": 6,
+     "options": [
+      {
+       "id": "6c3360ac-242f-5bea-a7d1-2e06ccbe4633",
+       "label": "A",
+       "content": "14.1 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b9e19b99-4060-58d9-aeb4-cd7df10ee1d6",
+       "label": "B",
+       "content": "20 m s⁻¹",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b717bda5-dfbf-5fc5-90e0-7b399369a12a",
+       "label": "C",
+       "content": "200 m s⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "27449b49-a3f0-5386-8914-0dd5146c71d0",
+       "label": "D",
+       "content": "400 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-proj-06",
+     "stem": "A projectile is launched at 40 m s⁻¹ at 30° to the horizontal. What is its maximum height? (g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "$H = \\dfrac{(u\\sin\\theta)^2}{2g} = \\dfrac{(40 \\times 0.5)^2}{20} = \\dfrac{400}{20} = 20\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 80 m: You used the full speed instead of the vertical component $u\\sin\\theta$.\n- 40 m: You forgot the 2 in $H = \\dfrac{(u\\sin\\theta)^2}{2g}$.\n- 60 m: You used cos 30° instead of sin 30°.",
+     "id": "5a21b58c-7971-56d8-b910-8422b2003d06",
+     "topic": "Projectile Motion",
+     "position": 7,
+     "options": [
+      {
+       "id": "6f35edb3-7610-564f-bdc4-27912341d9f1",
+       "label": "A",
+       "content": "20 m",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2f89c325-4d93-5255-90d4-50cfbe844e95",
+       "label": "B",
+       "content": "40 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f4af2b77-cfa5-5c8b-bd0e-75cc829dc99e",
+       "label": "C",
+       "content": "60 m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d63b2311-5a30-585a-aa2b-2ac7a994965c",
+       "label": "D",
+       "content": "80 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-newt-08",
+     "stem": "A book rests on a table. The reaction to the weight of the book is",
+     "image_url": null,
+     "explanation": "The weight is the Earth pulling the book. Its third-law partner is the book pulling the Earth, equal and opposite.\n\n**Why the other options are wrong**\n\n- the upward push of the table on the book: That force acts on the same body (the book); action and reaction act on different bodies.\n- the downward push of the book on the table: That is the reaction to the table's push on the book.\n- the friction between the book and the table: No friction acts on a book resting on a level table.",
+     "id": "5483c767-f815-5129-a07b-69140779dd2b",
+     "topic": "Newton's Laws of Motion",
+     "position": 8,
+     "options": [
+      {
+       "id": "240e267e-b8d0-5f9b-8fd3-3787cf70a7b6",
+       "label": "A",
+       "content": "the upward pull of the book on the Earth",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "76138f59-ee92-503e-b3de-826c691d791f",
+       "label": "B",
+       "content": "the upward push of the table on the book",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9d43fb58-0f52-5e85-903e-ac198f9f0eb7",
+       "label": "C",
+       "content": "the downward push of the book on the table",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "77bba3f8-2a6a-5719-ac82-67b68a3776c4",
+       "label": "D",
+       "content": "the friction between the book and the table",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-equi-01",
+     "stem": "A body acted on by several concurrent forces is in equilibrium when",
+     "image_url": null,
+     "explanation": "Equilibrium requires zero resultant force, so that the body has no acceleration.\n\n**Why the other options are wrong**\n\n- all the forces are equal in magnitude: Unequal forces can balance, and equal ones need not.\n- the forces all act in the same direction: Forces in one direction cannot balance.\n- the body is moving with uniform acceleration: Equilibrium means zero acceleration.",
+     "id": "0cfe53db-80f0-5c71-9081-9b41b076e002",
+     "topic": "Equilibrium of Forces",
+     "position": 9,
+     "options": [
+      {
+       "id": "0160652e-2046-53c2-bf1b-c8029b569b3d",
+       "label": "A",
+       "content": "all the forces are equal in magnitude",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "be2e4669-07fc-5eec-8a06-0b56424e9f82",
+       "label": "B",
+       "content": "the forces all act in the same direction",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4f2493e5-b9cb-53de-b6dd-b4c36e83e1f1",
+       "label": "C",
+       "content": "the body is moving with uniform acceleration",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2d920100-4b76-595e-a09a-e0d502bb97d6",
+       "label": "D",
+       "content": "the resultant of the forces is zero",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-mom-08",
+     "stem": "Two equal and opposite parallel forces of 15 N act on the rim of a steering wheel of diameter 0.4 m. What is the moment of the couple?",
+     "image_url": null,
+     "explanation": "Moment of couple $= F \\times d = 15 \\times 0.4 = 6\\ \\text{N m}$.\n\n**Why the other options are wrong**\n\n- 3 N m: You used the radius. The moment of a couple uses the distance between the forces (the diameter).\n- 12 N m: You doubled the force; use one force × the distance between them.\n- 37.5 N m: You divided by the diameter.",
+     "id": "3ff80647-fc56-5486-8643-7c84d9dc2958",
+     "topic": "Moments and Turning Effects",
+     "position": 10,
+     "options": [
+      {
+       "id": "e5b73de8-1c55-5b02-b84e-7b6c2342897d",
+       "label": "A",
+       "content": "3 N m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "070b23e4-257a-5f46-b9d8-2afc8111828a",
+       "label": "B",
+       "content": "6 N m",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "75f7c0c5-7115-5189-a811-bf77f7017ec8",
+       "label": "C",
+       "content": "12 N m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f1eb1091-a3cb-5b00-8ce9-415a94c232c4",
+       "label": "D",
+       "content": "37.5 N m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-fric-05",
+     "stem": "Ball bearings are used in machines mainly to",
+     "image_url": null,
+     "explanation": "Rolling friction is much smaller than sliding friction, so ball bearings reduce wear and wasted energy.\n\n**Why the other options are wrong**\n\n- increase friction so parts grip: Bearings are fitted to reduce friction.\n- increase the weight of the machine: Their purpose has nothing to do with weight.\n- conduct heat away from the machine: That is not their main purpose.",
+     "id": "580e95d8-3b92-5ef5-9aac-75571b3778d6",
+     "topic": "Friction",
+     "position": 11,
+     "options": [
+      {
+       "id": "d34426ed-da94-5381-8dbe-54f9daa4c58d",
+       "label": "A",
+       "content": "reduce friction by replacing sliding with rolling",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "95fd2ffe-ca0e-5449-ac65-ed4cad89f045",
+       "label": "B",
+       "content": "increase friction so parts grip",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a0d5764d-2400-5bf7-b087-c5152c5b914a",
+       "label": "C",
+       "content": "increase the weight of the machine",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9f4e6083-bb91-5087-9030-c05668c634ee",
+       "label": "D",
+       "content": "conduct heat away from the machine",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-circ-02",
+     "stem": "A wheel turns at 300 revolutions per minute. What is its angular velocity?",
+     "image_url": null,
+     "explanation": "$f = 300 \\div 60 = 5$ Hz; $\\omega = 2\\pi f = 10\\pi = 31.4\\ \\text{rad s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 5 rad s⁻¹: That is the frequency in revolutions per second. Multiply by $2\\pi$.\n- 1885 rad s⁻¹: You forgot to change minutes to seconds.\n- 15.7 rad s⁻¹: One revolution is $2\\pi$ radians, not $\\pi$.",
+     "id": "82428a20-a95f-55cf-be91-d39decfc55a7",
+     "topic": "Circular Motion",
+     "position": 12,
+     "options": [
+      {
+       "id": "c7116d9d-6d1f-524f-8033-345f451cef61",
+       "label": "A",
+       "content": "5 rad s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d57805c2-05c0-5c59-8e93-8a43df7467fa",
+       "label": "B",
+       "content": "15.7 rad s⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "29d17d22-8ab9-5f43-9353-5596e6f6be4e",
+       "label": "C",
+       "content": "31.4 rad s⁻¹",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "13042c5b-d311-5ef8-9241-4b5928160aa8",
+       "label": "D",
+       "content": "1885 rad s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-shm-08",
+     "stem": "A body performs SHM with amplitude 0.2 m and angular frequency 5 rad s⁻¹. What is its maximum speed?",
+     "image_url": null,
+     "explanation": "$v_{max} = A\\omega = 0.2 \\times 5 = 1\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 5 m s⁻¹: That is the maximum acceleration, $A\\omega^2$.\n- 0.04 m s⁻¹: You divided the amplitude by ω.\n- 25 m s⁻¹: You squared ω without the amplitude.",
+     "id": "4aac9e28-1076-5077-96e0-4b89f8120568",
+     "topic": "Simple Harmonic Motion",
+     "position": 13,
+     "options": [
+      {
+       "id": "10daa454-7e58-5cf1-90f8-98bdf408dcf8",
+       "label": "A",
+       "content": "0.04 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "011c07bf-6c08-5ff7-867f-2ee02aeb5993",
+       "label": "B",
+       "content": "1 m s⁻¹",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "443a31db-5914-55db-a714-67c9dc04c27d",
+       "label": "C",
+       "content": "5 m s⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9a715682-665a-5f55-ae08-3c3affcc0952",
+       "label": "D",
+       "content": "25 m s⁻¹",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-wep-02",
+     "stem": "A 2 kg ball moves at 6 m s⁻¹. What is its kinetic energy?",
+     "image_url": null,
+     "explanation": "$E_k = \\tfrac{1}{2}mv^2 = \\tfrac{1}{2}(2)(36) = 36\\ \\text{J}$.\n\n**Why the other options are wrong**\n\n- 72 J: You forgot the ½.\n- 12 J: You used $mv$ (momentum), not $\\tfrac{1}{2}mv^2$.\n- 6 J: You forgot to square the speed.",
+     "id": "20e59d6f-7025-5f9b-8bfc-ee67e756845e",
+     "topic": "Work, Energy, and Power",
+     "position": 14,
+     "options": [
+      {
+       "id": "1b7ee639-80bc-5055-888e-5f08049a5c81",
+       "label": "A",
+       "content": "6 J",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "12c4ef7c-0a1e-5a8e-a5c1-e4e7fcd29a24",
+       "label": "B",
+       "content": "12 J",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "beffdc87-78a6-5206-8ceb-12442861c7a9",
+       "label": "C",
+       "content": "36 J",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1c3c4851-4d45-50ee-8aa5-b3b7641f7dca",
+       "label": "D",
+       "content": "72 J",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-mach-03",
+     "stem": "The efficiency of a real machine is always less than 100% because",
+     "image_url": null,
+     "explanation": "Part of the input work goes into friction (heat) and lifting parts of the machine, so useful output is less than input.\n\n**Why the other options are wrong**\n\n- the effort is always smaller than the load: Many machines have effort smaller than load, yet that is not why efficiency is below 100%.\n- the velocity ratio is always less than 1: Most machines have a VR greater than 1.\n- machines create extra energy: Machines cannot create energy.",
+     "id": "1253b66d-145a-5872-86f4-e083ba5d0f4c",
+     "topic": "Simple Machines",
+     "position": 15,
+     "options": [
+      {
+       "id": "4ea9c091-4b9a-59ff-917c-ac4c6791b2f0",
+       "label": "A",
+       "content": "the effort is always smaller than the load",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "14a4d4cd-563b-507e-ae9e-d38666a28d2a",
+       "label": "B",
+       "content": "some work is wasted overcoming friction and lifting moving parts",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f4511ff9-ee28-5d17-94c4-1f088470c320",
+       "label": "C",
+       "content": "the velocity ratio is always less than 1",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bf7e1393-ec37-5943-8758-b4d5432593c3",
+       "label": "D",
+       "content": "machines create extra energy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-kin-01",
+     "stem": "In the smoke-cell experiment, the smoke particles are seen to move randomly because",
+     "image_url": null,
+     "explanation": "Brownian motion: invisible air molecules bombard each smoke particle unevenly, pushing it first one way and then another.\n\n**Why the other options are wrong**\n\n- they are alive: Smoke particles are not living; the motion is caused by collisions.\n- convection currents carry them about: The motion is a random jiggle in all directions, not a steady current.\n- they are attracted by the light: Light is used only to make the particles visible.",
+     "id": "3dc25718-e930-5c39-bba4-ce41806ccd23",
+     "topic": "States of Matter and Kinetic Theory",
+     "position": 16,
+     "options": [
+      {
+       "id": "71ab43f0-1ce3-55ce-b387-98ddf575ef6c",
+       "label": "A",
+       "content": "they are struck unevenly by fast-moving air molecules",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6c76e0f7-1b50-523c-ba0f-6df8c387b753",
+       "label": "B",
+       "content": "they are alive",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6150d0ff-65c8-54a0-848d-995a81bdaecf",
+       "label": "C",
+       "content": "convection currents carry them about",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "494af075-f537-5706-b8ed-fb95d79dbda4",
+       "label": "D",
+       "content": "they are attracted by the light",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-ela-06",
+     "stem": "The unit of tensile strain is",
+     "image_url": null,
+     "explanation": "Strain = extension ÷ original length, a ratio of two lengths, so it has no unit.\n\n**Why the other options are wrong**\n\n- N m⁻²: That is the unit of stress.\n- N m⁻¹: That is the unit of the spring constant.\n- m: Strain is extension divided by original length: the metres cancel.",
+     "id": "83f6d63f-68ea-5411-afb9-7a5aacd405c2",
+     "topic": "Elasticity and Hooke's Law",
+     "position": 17,
+     "options": [
+      {
+       "id": "26d01664-99ba-5be4-b4a2-12f0312e4b8d",
+       "label": "A",
+       "content": "N m⁻²",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7c9763d6-c225-5829-8100-4109374a3b9f",
+       "label": "B",
+       "content": "N m⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d8f0a16f-6810-5852-94eb-14f9b8ba16bf",
+       "label": "C",
+       "content": "m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "14104bc1-f96d-53fb-ad22-0593cfb7fa7a",
+       "label": "D",
+       "content": "it has no unit",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-sur-07",
+     "stem": "When engine oil is warmed, its viscosity",
+     "image_url": null,
+     "explanation": "The viscosity of liquids falls as temperature rises.\n\n**Why the other options are wrong**\n\n- increases: Liquids flow more easily when warm; it is gases whose viscosity rises with temperature.\n- stays the same: Temperature strongly affects the viscosity of liquids.\n- becomes zero: Warm oil still has some viscosity.",
+     "id": "494341a4-1c9e-5ae9-936b-c9b3ced01fd3",
+     "topic": "Surface Tension, Capillarity, and Viscosity",
+     "position": 18,
+     "options": [
+      {
+       "id": "990516ca-5ac2-53ab-aed6-c2fbee077f92",
+       "label": "A",
+       "content": "increases",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "94344c63-78de-571d-b456-cf0452394a21",
+       "label": "B",
+       "content": "decreases",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "64715b2c-ac56-5b68-81a7-b64210d5953c",
+       "label": "C",
+       "content": "stays the same",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a0b721aa-14bb-500f-ba92-028cd241d83d",
+       "label": "D",
+       "content": "becomes zero",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-flu-01",
+     "stem": "What is the pressure due to water at a depth of 8 m? (density of water = 1000 kg m⁻³, g = 10 m s⁻²)",
+     "image_url": null,
+     "explanation": "$p = h\\rho g = 8 \\times 1000 \\times 10 = 80\\,000\\ \\text{Pa}$.\n\n**Why the other options are wrong**\n\n- 8000 Pa: You left out g (or the density of 1000 kg m⁻³ was used as 100).\n- 800 Pa: You used the depth × 100.\n- 180000 Pa: You added atmospheric pressure (100 000 Pa); the question asks for the pressure due to the water.",
+     "id": "86f195f6-718f-5bc4-bb56-81bb5735cb3d",
+     "topic": "Density and Pressure in Fluids",
+     "position": 19,
+     "options": [
+      {
+       "id": "27ccc1f9-3bd3-5065-88eb-b7fbe5a078df",
+       "label": "A",
+       "content": "800 Pa",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2e6c5f5b-ab17-5c10-ab7d-f825b33a3d02",
+       "label": "B",
+       "content": "8000 Pa",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "833ce6b2-3eea-5be3-b5a8-fbdd22ee97a9",
+       "label": "C",
+       "content": "80000 Pa",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "eff898d4-e632-54cb-a000-99f1f1fe3e27",
+       "label": "D",
+       "content": "180000 Pa",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-temp-08",
+     "stem": "Which thermometer is most suitable for measuring the temperature of a furnace?",
+     "image_url": null,
+     "explanation": "A thermocouple works up to about 1500 °C and responds quickly.\n\n**Why the other options are wrong**\n\n- clinical thermometer: It has a range of only about 35–43 °C.\n- alcohol-in-glass thermometer: Alcohol boils at 78 °C.\n- mercury-in-glass thermometer: Mercury boils at 357 °C and glass softens far below furnace temperatures.",
+     "id": "85a64554-95a4-5a63-9138-e42b9149ee2e",
+     "topic": "Temperature and Thermometers",
+     "position": 20,
+     "options": [
+      {
+       "id": "02f02172-9ffd-53bd-94f8-469f3d71cc8e",
+       "label": "A",
+       "content": "clinical thermometer",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a4552e04-6eab-5a47-b2b9-8ddfc2b3c53d",
+       "label": "B",
+       "content": "alcohol-in-glass thermometer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a038602d-3c5c-59b6-b71f-f4f91a5d946c",
+       "label": "C",
+       "content": "thermocouple",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9324b3ef-679f-5270-88b9-c780a183ce5e",
+       "label": "D",
+       "content": "mercury-in-glass thermometer",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-exp-06",
+     "stem": "Fish survive in a frozen lake because",
+     "image_url": null,
+     "explanation": "Ice floats and insulates the water below, which remains liquid at about 4 °C.\n\n**Why the other options are wrong**\n\n- water is densest at 0 °C and sinks: Water is densest at 4 °C; the water at 0 °C stays on top and freezes.\n- ice conducts heat well and warms the water: Ice is a poor conductor; that is why it insulates.\n- the whole lake stays at 0 °C: The bottom water stays near 4 °C.",
+     "id": "913606cd-20f5-527b-bbf7-fc2fb44bfe38",
+     "topic": "Thermal Expansion",
+     "position": 21,
+     "options": [
+      {
+       "id": "2fe03c7f-7cc8-5a4b-99f5-2ffb00eb5ea9",
+       "label": "A",
+       "content": "water is densest at 0 °C and sinks",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b42af4b5-b565-5c63-a39e-adc703f490a1",
+       "label": "B",
+       "content": "ice conducts heat well and warms the water",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4d150a77-202b-544b-a179-0b91f5a017d0",
+       "label": "C",
+       "content": "ice is less dense than water and forms an insulating layer on top",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8436f75e-2a82-5863-b52e-670d27463f72",
+       "label": "D",
+       "content": "the whole lake stays at 0 °C",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-cal-02",
+     "stem": "The SI unit of specific heat capacity is",
+     "image_url": null,
+     "explanation": "Specific heat capacity = heat ÷ (mass × temperature change): J kg⁻¹ K⁻¹.\n\n**Why the other options are wrong**\n\n- J K⁻¹: That is the unit of heat capacity (of a whole object).\n- J kg⁻¹: That is the unit of specific latent heat.\n- J: That is the unit of heat (energy).",
+     "id": "a7ca9d25-7cb8-580f-87c3-3175af03883c",
+     "topic": "Quantity of Heat and Calorimetry",
+     "position": 22,
+     "options": [
+      {
+       "id": "4dffb9dd-9897-5298-b460-492080a5507a",
+       "label": "A",
+       "content": "J kg⁻¹ K⁻¹",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "174182e9-90f4-5cd2-9e9f-c5d774f2fee9",
+       "label": "B",
+       "content": "J K⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "92d7b2e3-11ea-5309-91ba-f445e88871ad",
+       "label": "C",
+       "content": "J kg⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e34feb29-8448-5987-bc6f-bbe951fe5932",
+       "label": "D",
+       "content": "J",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-cs-08",
+     "stem": "The temperature at which air becomes saturated with water vapour and dew begins to form is called the",
+     "image_url": null,
+     "explanation": "Cooling air to its dew point makes the water vapour condense as dew, mist or fog.\n\n**Why the other options are wrong**\n\n- boiling point: Boiling point is where a liquid's vapour pressure equals the external pressure.\n- melting point: Melting point concerns solid to liquid.\n- ice point: The ice point is 0 °C, the melting point of ice.",
+     "id": "118da7d4-0efa-5c28-95c3-b7f21cda868a",
+     "topic": "Change of State",
+     "position": 23,
+     "options": [
+      {
+       "id": "969fa489-5b16-5c05-94ea-cdcba81ae26e",
+       "label": "A",
+       "content": "boiling point",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6455c6ac-6bf1-5df9-97e1-55567da9e7ae",
+       "label": "B",
+       "content": "melting point",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "78e19530-9a1b-5601-b1bd-2eb41c9efa5e",
+       "label": "C",
+       "content": "ice point",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2a37a930-5708-5ca6-9de8-922c14995125",
+       "label": "D",
+       "content": "dew point",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-ht-02",
+     "stem": "Which surface is the best absorber of radiant heat?",
+     "image_url": null,
+     "explanation": "Dull black surfaces are the best absorbers and the best emitters of radiation.\n\n**Why the other options are wrong**\n\n- shiny white: Shiny white surfaces reflect most radiation.\n- polished silver: Silvered surfaces are the worst absorbers.\n- shiny black: A shiny surface reflects more than a dull one of the same colour.",
+     "id": "e5f799ac-aaf2-5c95-b64d-43ed42b241ce",
+     "topic": "Heat Transfer",
+     "position": 24,
+     "options": [
+      {
+       "id": "844b87c2-1244-5358-9f4e-d6e5f3b0ba6c",
+       "label": "A",
+       "content": "shiny white",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "31ea92cd-d8ee-5e66-9228-cf311291f2d5",
+       "label": "B",
+       "content": "dull black",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6e65454e-352d-5e62-a427-07c72d3cc53c",
+       "label": "C",
+       "content": "polished silver",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "65a9e879-3abf-563e-888a-d83990b7a507",
+       "label": "D",
+       "content": "shiny black",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-gas-07",
+     "stem": "According to the kinetic theory, the pressure of a gas in a closed container rises when it is heated because the molecules",
+     "image_url": null,
+     "explanation": "Faster molecules collide with the walls more frequently and with more force, raising the pressure.\n\n**Why the other options are wrong**\n\n- become larger: Molecules do not grow when heated.\n- increase in number: The number of molecules in a sealed container is fixed.\n- move more slowly and stick to the walls: Heating makes molecules move faster.",
+     "id": "280885e2-49c6-5f12-b246-8017cb7f55bd",
+     "topic": "Gas Laws",
+     "position": 25,
+     "options": [
+      {
+       "id": "ececfb39-e820-5de1-ad9c-f002f5644328",
+       "label": "A",
+       "content": "become larger",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c6eacc0a-8390-509b-9e81-aca699ddd030",
+       "label": "B",
+       "content": "increase in number",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "33bbdc6e-1a60-5ec0-a2dc-07331b7e9866",
+       "label": "C",
+       "content": "move faster and hit the walls more often and harder",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "975b01b7-a5dc-53d9-a506-44e2dba8aec8",
+       "label": "D",
+       "content": "move more slowly and stick to the walls",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-wav-01",
+     "stem": "A wave has a frequency of 50 Hz and a wavelength of 4 m. What is its speed?",
+     "image_url": null,
+     "explanation": "$v = f\\lambda = 50 \\times 4 = 200\\ \\text{m s}^{-1}$.\n\n**Why the other options are wrong**\n\n- 12.5 m s⁻¹: You divided the frequency by the wavelength; $v = f\\lambda$.\n- 0.08 m s⁻¹: You divided the wavelength by the frequency.\n- 54 m s⁻¹: You added the frequency and the wavelength.",
+     "id": "80a9c14c-e577-50c1-855e-e48b57f1cceb",
+     "topic": "Wave Motion and Properties",
+     "position": 26,
+     "options": [
+      {
+       "id": "093557ac-2861-5783-a1ef-58603843d53c",
+       "label": "A",
+       "content": "0.08 m s⁻¹",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "531d2bc5-3c20-5d38-86e5-10130a394709",
+       "label": "B",
+       "content": "12.5 m s⁻¹",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f720e782-3eae-5891-8b5d-e4f456432a51",
+       "label": "C",
+       "content": "54 m s⁻¹",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "553246f0-b451-532a-8305-37a2adf83479",
+       "label": "D",
+       "content": "200 m s⁻¹",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-wph-02",
+     "stem": "Diffraction of waves through a gap is greatest when the width of the gap is",
+     "image_url": null,
+     "explanation": "Spreading is greatest when the gap is comparable with the wavelength.\n\n**Why the other options are wrong**\n\n- much larger than the wavelength: A wide gap lets waves through with little spreading.\n- twice the amplitude: Amplitude does not decide diffraction.\n- zero: With no gap, no waves pass through.",
+     "id": "7874d6e3-28cb-5523-8843-8affcf41df3e",
+     "topic": "Wave Phenomena",
+     "position": 27,
+     "options": [
+      {
+       "id": "a928dfe0-ea4b-5ab3-9fc2-3da41712055e",
+       "label": "A",
+       "content": "much larger than the wavelength",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1452d0eb-d907-562c-a5b1-f6fd7f28f5ab",
+       "label": "B",
+       "content": "twice the amplitude",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eff03c20-cf57-5d20-8e33-31ad13202494",
+       "label": "C",
+       "content": "zero",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2b812ed0-c056-5b58-a3e4-ff083eb8a7a7",
+       "label": "D",
+       "content": "about the same as the wavelength",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-snd-04",
+     "stem": "The pitch of a note depends on its",
+     "image_url": null,
+     "explanation": "Higher frequency means higher pitch.\n\n**Why the other options are wrong**\n\n- amplitude: Amplitude decides loudness.\n- overtones: Overtones decide quality (timbre).\n- speed: All sounds in the same air travel at the same speed.",
+     "id": "e6f7ab30-e51a-57bb-9977-c0437240c61f",
+     "topic": "Sound Waves",
+     "position": 28,
+     "options": [
+      {
+       "id": "08635aed-6c21-5679-9f30-e22a213d5b41",
+       "label": "A",
+       "content": "frequency",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "26ecdc8f-7bc6-56e3-a3d2-f2a21fa6924b",
+       "label": "B",
+       "content": "amplitude",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "14e93503-62aa-5cea-9f68-e6e8005dfd89",
+       "label": "C",
+       "content": "overtones",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b123de02-200e-55a9-926a-a1efd277862b",
+       "label": "D",
+       "content": "speed",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-res-02",
+     "stem": "A stretched string vibrates at 200 Hz. What is its frequency if its tension is increased to four times the original, with length unchanged?",
+     "image_url": null,
+     "explanation": "$f \\propto \\sqrt{T}$: $f = 200 \\times \\sqrt{4} = 400\\ \\text{Hz}$.\n\n**Why the other options are wrong**\n\n- 800 Hz: Frequency is proportional to the square root of tension, not the tension.\n- 100 Hz: Increasing tension raises the frequency.\n- 50 Hz: Increasing tension raises the frequency.",
+     "id": "798a2fc5-5198-524e-9403-0e080125a906",
+     "topic": "Resonance and Musical Acoustics",
+     "position": 29,
+     "options": [
+      {
+       "id": "19b823d9-840d-5491-b592-ba2624bfe453",
+       "label": "A",
+       "content": "50 Hz",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "97154602-ce59-503b-a7bb-cfafe88496d3",
+       "label": "B",
+       "content": "100 Hz",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e4855a45-193a-56b2-9710-43557fcb7a4d",
+       "label": "C",
+       "content": "400 Hz",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fd397cfc-9ea8-5d2f-b6f6-5532097665dc",
+       "label": "D",
+       "content": "800 Hz",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-lit-01",
+     "stem": "The formation of shadows is evidence that light",
+     "image_url": null,
+     "explanation": "An opaque object blocks the straight-line paths of light, leaving a shadow.\n\n**Why the other options are wrong**\n\n- is a transverse wave: Shadows say nothing about the type of wave.\n- can be polarised: Polarisation is shown with Polaroid filters.\n- travels faster than sound: Shadows do not compare speeds.",
+     "id": "4dac41e7-d63c-5591-abd0-ffa4c852970e",
+     "topic": "Light as a Wave",
+     "position": 30,
+     "options": [
+      {
+       "id": "cbdda34e-8162-50a7-85a7-0d9472d90658",
+       "label": "A",
+       "content": "is a transverse wave",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f8857486-abcc-5a5d-ae2f-7cce904967fc",
+       "label": "B",
+       "content": "can be polarised",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8c665ce5-abc2-5e8f-8b6e-8c1f7304ce28",
+       "label": "C",
+       "content": "travels faster than sound",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c81b610e-adca-5059-b4a7-af4ca1118094",
+       "label": "D",
+       "content": "travels in straight lines",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-rfl-05",
+     "stem": "An object is placed 30 cm in front of a concave mirror of focal length 10 cm. How far from the mirror is the image?",
+     "image_url": null,
+     "explanation": "$\\dfrac{1}{v} = \\dfrac{1}{10} - \\dfrac{1}{30} = \\dfrac{2}{30} \\Rightarrow v = 15\\ \\text{cm}$ (real, in front of the mirror).\n\n**Why the other options are wrong**\n\n- 20 cm: You subtracted f from u.\n- 7.5 cm: You added 1/u and 1/f instead of subtracting.\n- 40 cm: You added u and f.",
+     "id": "d3e0a6da-2640-5ee3-b4da-b30cc2183f90",
+     "topic": "Reflection of Light",
+     "position": 31,
+     "options": [
+      {
+       "id": "0bacb293-82b7-5d1f-895f-831a4466712d",
+       "label": "A",
+       "content": "7.5 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8f363a9e-a354-500f-934e-02eb65b22d65",
+       "label": "B",
+       "content": "15 cm",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "05d59c95-abc9-5637-b128-e9ad6059af81",
+       "label": "C",
+       "content": "20 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5c81ec6f-ede9-533f-b065-04e886457434",
+       "label": "D",
+       "content": "40 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-rfr-05",
+     "stem": "Total internal reflection can occur when light travels from",
+     "image_url": null,
+     "explanation": "TIR needs a denser-to-less-dense boundary and an angle of incidence above the critical angle.\n\n**Why the other options are wrong**\n\n- air to glass at any angle: TIR needs light going from a denser to a less dense medium.\n- glass to air at an angle less than the critical angle: Below the critical angle the light refracts out.\n- air to water at a large angle: Air is less dense than water; TIR cannot happen this way.",
+     "id": "e820781a-379e-51b2-8e70-7e78be8ce04a",
+     "topic": "Refraction and Total Internal Reflection",
+     "position": 32,
+     "options": [
+      {
+       "id": "1ef181f0-edbc-5336-ab5a-c7ee4d3e6bb5",
+       "label": "A",
+       "content": "air to glass at any angle",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a2be950e-a75d-5d2b-863c-7006dfde0752",
+       "label": "B",
+       "content": "glass to air at an angle of incidence greater than the critical angle",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d7660199-5d6c-5534-8e4a-7d9f977f4543",
+       "label": "C",
+       "content": "glass to air at an angle less than the critical angle",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5855370e-4aba-5705-91c0-19cc01e2d980",
+       "label": "D",
+       "content": "air to water at a large angle",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-lns-07",
+     "stem": "In a camera, the object is usually placed",
+     "image_url": null,
+     "explanation": "A camera forms a real, inverted, diminished image of distant objects (beyond 2F).\n\n**Why the other options are wrong**\n\n- between F and the lens: That gives a virtual image, which cannot be recorded on film.\n- at F: Then no image forms on the film.\n- between F and 2F: That gives a magnified image, as in a projector.",
+     "id": "7de3f09e-3875-5377-b20d-9792573c9a01",
+     "topic": "Lenses and Image Formation",
+     "position": 33,
+     "options": [
+      {
+       "id": "240f52d6-a067-5f45-91f7-1eeacf879043",
+       "label": "A",
+       "content": "between F and the lens",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4870de8f-6a7f-5a6a-a1d9-e19341629e91",
+       "label": "B",
+       "content": "at F",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "56e0523e-995e-56e2-9748-5192d9e96b1a",
+       "label": "C",
+       "content": "beyond 2F of the lens",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c1080ff6-025f-5292-9bb1-32d321043623",
+       "label": "D",
+       "content": "between F and 2F",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-ins-01",
+     "stem": "Short sight (myopia) is corrected by using a",
+     "image_url": null,
+     "explanation": "A diverging lens spreads the rays so they focus on the retina instead of in front of it.\n\n**Why the other options are wrong**\n\n- converging (convex) lens: That corrects long sight.\n- cylindrical lens: That corrects astigmatism.\n- plane glass: Plane glass does not change focus.",
+     "id": "f1a9ddee-3501-5925-b80a-2324f94cf8fa",
+     "topic": "Optical Instruments",
+     "position": 34,
+     "options": [
+      {
+       "id": "0b520bf1-9393-5830-af58-6512c795e823",
+       "label": "A",
+       "content": "converging (convex) lens",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fc7852ba-7bad-5c33-b7a9-2d879928dc9f",
+       "label": "B",
+       "content": "cylindrical lens",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "36071a02-cbfc-57ab-8137-467b966ec310",
+       "label": "C",
+       "content": "plane glass",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "03bdcd3b-b425-56e5-9b5e-d9002f4535ae",
+       "label": "D",
+       "content": "diverging (concave) lens",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-spc-06",
+     "stem": "Microwaves used by a mobile phone have a frequency of 1.5 × 10⁹ Hz. What is their wavelength? (c = 3.0 × 10⁸ m s⁻¹)",
+     "image_url": null,
+     "explanation": "$\\lambda = \\dfrac{c}{f} = \\dfrac{3.0 \\times 10^{8}}{1.5 \\times 10^{9}} = 0.2\\ \\text{m}$.\n\n**Why the other options are wrong**\n\n- 5 m: You divided the frequency by the speed.\n- 2 m: Check the powers of ten: 3 × 10⁸ ÷ 1.5 × 10⁹ = 0.2.\n- 4.5 m: You multiplied instead of dividing (and dropped powers of ten).",
+     "id": "f73c6114-8185-5c6f-bf58-8f4dda683353",
+     "topic": "Dispersion and the Electromagnetic Spectrum",
+     "position": 35,
+     "options": [
+      {
+       "id": "067d5e11-d1be-5aa0-bdba-8154857f186f",
+       "label": "A",
+       "content": "0.2 m",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6c560d28-cd26-5f30-8f07-0c693d35fb4b",
+       "label": "B",
+       "content": "2 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1d08250a-c4b8-5292-98fa-bef5dd36c0c5",
+       "label": "C",
+       "content": "4.5 m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "79f4dddd-17e8-501f-959a-62ad9d2fc58d",
+       "label": "D",
+       "content": "5 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-est-05",
+     "stem": "If the distance between two point charges is doubled, the force between them",
+     "image_url": null,
+     "explanation": "$F \\propto 1/r^2$: doubling $r$ divides $F$ by 4.\n\n**Why the other options are wrong**\n\n- is halved: Coulomb's law is an inverse-square law.\n- is doubled: Increasing distance weakens the force.\n- is unchanged: The force depends on the distance.",
+     "id": "6f765672-d512-5b1a-a780-c65248ad8708",
+     "topic": "Electrostatics",
+     "position": 36,
+     "options": [
+      {
+       "id": "26595984-17bc-5550-81bb-3890d2052c95",
+       "label": "A",
+       "content": "becomes one quarter as large",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "165f838d-c7ab-5a39-a35e-6247277118ba",
+       "label": "B",
+       "content": "is halved",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f8c3c336-196f-5920-b2af-d1cc9481f835",
+       "label": "C",
+       "content": "is doubled",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c62273bd-f2a5-5e2a-a904-43641c957a26",
+       "label": "D",
+       "content": "is unchanged",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-cap-06",
+     "stem": "The SI unit of capacitance is the",
+     "image_url": null,
+     "explanation": "Capacitance = charge ÷ p.d.; 1 farad = 1 coulomb per volt.\n\n**Why the other options are wrong**\n\n- coulomb: The coulomb is the unit of charge.\n- henry: The henry is the unit of inductance.\n- ohm: The ohm is the unit of resistance.",
+     "id": "eba58f38-bab3-514e-be86-b3a9d410ca02",
+     "topic": "Capacitors",
+     "position": 37,
+     "options": [
+      {
+       "id": "4fcca6e3-0cab-5780-8394-b40661688500",
+       "label": "A",
+       "content": "farad",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "97652dc6-4308-5920-8893-5421485226cb",
+       "label": "B",
+       "content": "coulomb",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "18e399d6-0bfd-5603-ad0a-c71f8bea603a",
+       "label": "C",
+       "content": "henry",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ea50a354-d338-5f54-b8b4-3c778a505a60",
+       "label": "D",
+       "content": "ohm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-cur-06",
+     "stem": "A cell of e.m.f. 3.0 V and internal resistance 1 Ω is connected to a 5 Ω resistor. What current flows?",
+     "image_url": null,
+     "explanation": "$I = \\dfrac{E}{R + r} = \\dfrac{3.0}{5 + 1} = 0.5\\ \\text{A}$.\n\n**Why the other options are wrong**\n\n- 0.6 A: You ignored the internal resistance.\n- 3 A: You divided by the internal resistance only.\n- 0.75 A: You subtracted the resistances.",
+     "id": "59bdcbbc-ae62-5acd-adb4-9da5bd5003f5",
+     "topic": "Current Electricity and Ohm's Law",
+     "position": 38,
+     "options": [
+      {
+       "id": "9cd561c4-736b-5212-8216-bf07cdb09041",
+       "label": "A",
+       "content": "0.5 A",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ac1e387b-0073-57ea-ab1c-f3c862a7b823",
+       "label": "B",
+       "content": "0.6 A",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a00e8020-a2f0-5526-9d7d-3b64c8b5b0c0",
+       "label": "C",
+       "content": "0.75 A",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7b2ab210-aaef-5d60-9b13-9afdef805292",
+       "label": "D",
+       "content": "3 A",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-ckt-05",
+     "stem": "In a metre bridge, a known resistance of 10 Ω is in the right-hand gap and the balance point is 40 cm from the left end. What is the unknown resistance in the left gap?",
+     "image_url": null,
+     "explanation": "$\\dfrac{X}{10} = \\dfrac{40}{60} \\Rightarrow X = 6.67\\ \\Omega$.\n\n**Why the other options are wrong**\n\n- 15 Ω: You inverted the ratio: X/R = l/(100 − l).\n- 4 Ω: Use the ratio of the two lengths, 40/60, not 40/100.\n- 25 Ω: You divided 10 by 0.4.",
+     "id": "cd1b2067-a59a-522d-a05a-994f331b5691",
+     "topic": "Resistors and Circuit Analysis",
+     "position": 39,
+     "options": [
+      {
+       "id": "5ef310fe-bc81-5bc4-8bd0-3d8e555a4b9c",
+       "label": "A",
+       "content": "4 Ω",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ef53fbdf-4fdc-5aa8-a12c-4de5b4a929bb",
+       "label": "B",
+       "content": "6.67 Ω",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "34b8b2a5-45f5-56a1-9fd5-63fa0dfe3ef5",
+       "label": "C",
+       "content": "15 Ω",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "570722ff-4966-536d-be0d-19975a06396a",
+       "label": "D",
+       "content": "25 Ω",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-pow-08",
+     "stem": "Nichrome is used for the heating elements of electric kettles because it has",
+     "image_url": null,
+     "explanation": "High resistivity gives the needed resistance; a high melting point and resistance to oxidation let it glow red hot.\n\n**Why the other options are wrong**\n\n- a low resistivity and a low melting point: A low melting point would make it melt.\n- a low resistivity: High resistivity is needed for heating with a reasonable length of wire.\n- magnetic properties: Magnetism is irrelevant to heating elements.",
+     "id": "64fab02a-a42b-5d5d-8b81-3cc5f7dbd240",
+     "topic": "Electric Energy and Power",
+     "position": 40,
+     "options": [
+      {
+       "id": "3a6ea7bf-e016-5916-9770-fde055ef2eb8",
+       "label": "A",
+       "content": "a high resistivity and a high melting point",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "bc814f2d-5dd5-5afe-8e7b-9baad145082b",
+       "label": "B",
+       "content": "a low resistivity and a low melting point",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "52e6cd88-33d1-5b2b-8a97-3e5da6f8cc59",
+       "label": "C",
+       "content": "a low resistivity",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "03f207e4-e8ae-5926-a603-eb47b85cad9c",
+       "label": "D",
+       "content": "magnetic properties",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-ely-06",
+     "stem": "Which of the following is a secondary (rechargeable) cell?",
+     "image_url": null,
+     "explanation": "A lead–acid accumulator can be recharged by passing current through it in the reverse direction.\n\n**Why the other options are wrong**\n\n- Leclanché dry cell: Dry cells are primary cells; they cannot be recharged.\n- simple voltaic cell: This is a primary cell.\n- Daniell cell: This is a primary cell.",
+     "id": "b5d92990-77ab-56c4-ba61-0ae1f8d7ef94",
+     "topic": "Electrolysis",
+     "position": 41,
+     "options": [
+      {
+       "id": "2e663b0a-cbdb-59d8-8e4a-9fb38c71bf3f",
+       "label": "A",
+       "content": "Leclanché dry cell",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "134c2b32-6db5-52e4-8342-484ea8f3efd7",
+       "label": "B",
+       "content": "simple voltaic cell",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9d7f0b40-4230-56b0-bed1-653c26c6f8ff",
+       "label": "C",
+       "content": "Daniell cell",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c24ef61a-0210-5f50-8cb1-c30fc7945b6f",
+       "label": "D",
+       "content": "lead–acid accumulator",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-mag-02",
+     "stem": "According to the domain theory, a magnet is saturated when",
+     "image_url": null,
+     "explanation": "Once every domain is aligned, the magnet cannot be made any stronger.\n\n**Why the other options are wrong**\n\n- its domains point in random directions: That describes an unmagnetised material.\n- it has been heated strongly: Heating destroys the alignment.\n- half its domains are aligned: Saturation means all of them are aligned.",
+     "id": "25aa2d4d-d747-5955-bdab-a8556507d76b",
+     "topic": "Magnets and Magnetic Fields",
+     "position": 42,
+     "options": [
+      {
+       "id": "4d57116a-6ec4-5de0-90ee-f87fd46d6fe6",
+       "label": "A",
+       "content": "all its domains are aligned in the same direction",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8f48b293-b8db-5d68-af01-d9fa9d33dd70",
+       "label": "B",
+       "content": "its domains point in random directions",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "96104c97-40c2-5479-b8a3-6a6461e991ba",
+       "label": "C",
+       "content": "it has been heated strongly",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0cb453fd-96e1-5988-9bf8-ac50e755dacc",
+       "label": "D",
+       "content": "half its domains are aligned",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-mfx-06",
+     "stem": "Two long parallel wires carry currents in the same direction. The wires",
+     "image_url": null,
+     "explanation": "Parallel currents in the same direction attract; in opposite directions they repel.\n\n**Why the other options are wrong**\n\n- repel each other: Currents in opposite directions repel.\n- exert no force on each other: Each wire is in the other's magnetic field.\n- rotate: They are pulled together, not rotated.",
+     "id": "2f6d2d53-926c-520d-9136-3f57d0392cd8",
+     "topic": "Magnetic Effects of Current",
+     "position": 43,
+     "options": [
+      {
+       "id": "6e461a37-31b4-59f1-9a78-2fb73f07c6a4",
+       "label": "A",
+       "content": "repel each other",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "20382d00-60e0-56b0-8fd0-487daaef5c74",
+       "label": "B",
+       "content": "exert no force on each other",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8718b445-b19b-5021-8b5e-4b9cc83a3512",
+       "label": "C",
+       "content": "rotate",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1a1122b5-7590-5f0f-820a-0524f5e35f08",
+       "label": "D",
+       "content": "attract each other",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-ind-03",
+     "stem": "The magnetic flux through a coil of 100 turns changes by 0.05 Wb in 0.25 s. What is the average induced e.m.f.?",
+     "image_url": null,
+     "explanation": "$E = N\\dfrac{\\Delta\\Phi}{\\Delta t} = 100 \\times \\dfrac{0.05}{0.25} = 20\\ \\text{V}$.\n\n**Why the other options are wrong**\n\n- 0.2 V: You forgot to multiply by the 100 turns.\n- 1.25 V: You multiplied by the time instead of dividing.\n- 500 V: You divided the time by the flux change.",
+     "id": "7a08eb84-3557-5242-8ff6-673bd02eca3e",
+     "topic": "Electromagnetic Induction",
+     "position": 44,
+     "options": [
+      {
+       "id": "fbeeeb8a-38ea-587d-acd4-e3fe828ac6e6",
+       "label": "A",
+       "content": "0.2 V",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e8cb0f38-ad52-561e-9eda-dc0c3a242694",
+       "label": "B",
+       "content": "1.25 V",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e6061fb1-dd04-585b-a6ee-dcb07e6f6b4c",
+       "label": "C",
+       "content": "20 V",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "aebaefca-6e10-5648-a825-867df7939788",
+       "label": "D",
+       "content": "500 V",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-ac-07",
+     "stem": "The r.m.s. value of an alternating current is defined as the",
+     "image_url": null,
+     "explanation": "The r.m.s. value is the 'effective' value: the d.c. with the same heating effect.\n\n**Why the other options are wrong**\n\n- average of all the values over a cycle: The simple average over a whole cycle is zero.\n- maximum value of the current: That is the peak value.\n- value at the start of the cycle: That value is zero for a sine wave starting at 0.",
+     "id": "71a3972d-9de6-5ce3-ad55-3caa390a6e70",
+     "topic": "Alternating Current and Transformers",
+     "position": 45,
+     "options": [
+      {
+       "id": "f1ceda45-9a4a-5fff-8815-ac197d2462cb",
+       "label": "A",
+       "content": "average of all the values over a cycle",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "306b2b88-6afc-5616-a4a4-6e80d3dd4513",
+       "label": "B",
+       "content": "steady direct current that produces the same heating effect in a resistor",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "de15580b-f73b-5de4-a443-33a7b2ed698a",
+       "label": "C",
+       "content": "maximum value of the current",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e0c63c78-915a-5d71-b41d-db5afeef00d3",
+       "label": "D",
+       "content": "value at the start of the cycle",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-dom-05",
+     "stem": "Appliances in a house are connected in parallel so that",
+     "image_url": null,
+     "explanation": "In parallel, every appliance has the full supply voltage and its own switch.\n\n**Why the other options are wrong**\n\n- they share the mains voltage equally: That would happen in series, not parallel.\n- the same current flows through each: That happens in series.\n- one fuse can protect them all from a shock: Parallel wiring is about voltage and independent switching.",
+     "id": "d87a9bc1-64da-5e45-96e7-40c2ea2c9410",
+     "topic": "Domestic Electricity and Safety",
+     "position": 46,
+     "options": [
+      {
+       "id": "f590c283-88ad-5457-911f-25faa6776d52",
+       "label": "A",
+       "content": "they share the mains voltage equally",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bf8d2722-33ec-5448-8b56-3d3e6d599567",
+       "label": "B",
+       "content": "each gets the full mains voltage and can be switched independently",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "935a8bee-ac6e-506f-8fee-a3c991dda513",
+       "label": "C",
+       "content": "the same current flows through each",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2a0870a7-3e94-5904-aad3-39f57518cc2a",
+       "label": "D",
+       "content": "one fuse can protect them all from a shock",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-atm-02",
+     "stem": "How many neutrons are there in the nucleus of ²³⁸₉₂U?",
+     "image_url": null,
+     "explanation": "Neutrons $= A - Z = 238 - 92 = 146$.\n\n**Why the other options are wrong**\n\n- 92: That is the number of protons.\n- 238: That is the total number of nucleons.\n- 330: You added A and Z.",
+     "id": "ee7c1bf9-7199-5d25-b69c-d16d93ce312f",
+     "topic": "Atomic Structure and Spectra",
+     "position": 47,
+     "options": [
+      {
+       "id": "3a98ccd4-90dd-52b6-8527-b41ef1c99554",
+       "label": "A",
+       "content": "92",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "737962fc-7431-5ce8-8ba8-f8891a19c417",
+       "label": "B",
+       "content": "146",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7d42f240-33d5-5d36-b236-e3b1feeb475c",
+       "label": "C",
+       "content": "238",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "941665f8-f09e-561d-a9fe-a6ab41657daa",
+       "label": "D",
+       "content": "330",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-phe-04",
+     "stem": "The photoelectric effect provides evidence that light",
+     "image_url": null,
+     "explanation": "Each photon gives its energy to one electron: evidence for the particle nature of light.\n\n**Why the other options are wrong**\n\n- is a transverse wave: Polarisation shows that.\n- can be diffracted: Diffraction shows wave behaviour.\n- travels in straight lines: Shadows show that.",
+     "id": "d8ad9576-3593-586d-bca0-4530d671ea92",
+     "topic": "Photoelectric Effect and Wave-Particle Duality",
+     "position": 48,
+     "options": [
+      {
+       "id": "057a8257-f64e-5692-946f-7f1cab6f00c1",
+       "label": "A",
+       "content": "is a transverse wave",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fd05df49-703d-5756-a718-3c8d104fa4e7",
+       "label": "B",
+       "content": "can be diffracted",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4cca4e85-005f-5f09-afe2-820b7f79ae93",
+       "label": "C",
+       "content": "travels in straight lines",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "72ecda21-18e6-5596-893c-c3b412802e75",
+       "label": "D",
+       "content": "consists of particles (photons)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-xry-06",
+     "stem": "In a cathode-ray oscilloscope, the brightness of the spot is controlled by the",
+     "image_url": null,
+     "explanation": "The grid's negative potential controls how many electrons pass, and so the brightness.\n\n**Why the other options are wrong**\n\n- Y-plates: Y-plates deflect the beam vertically.\n- X-plates: X-plates deflect the beam horizontally.\n- fluorescent screen: The screen only glows where the beam hits.",
+     "id": "aa6e6b27-7728-5721-8c7b-70a3af5961d5",
+     "topic": "X-rays and Cathode Rays",
+     "position": 49,
+     "options": [
+      {
+       "id": "2688c0e6-4c1e-50bc-aa8a-9243420c318d",
+       "label": "A",
+       "content": "Y-plates",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "39fceb56-c72b-5a33-a3a6-76f80e42273f",
+       "label": "B",
+       "content": "X-plates",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "081acd09-dd16-57ff-9b86-34501111f710",
+       "label": "C",
+       "content": "grid",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e18c6e1d-c722-542e-98c4-212152a06213",
+       "label": "D",
+       "content": "fluorescent screen",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "phy-rad-03",
+     "stem": "A radioactive sample has a half-life of 4 days. What fraction of it remains after 12 days?",
+     "image_url": null,
+     "explanation": "$\\dfrac{12}{4} = 3$ half-lives; fraction $= \\left(\\tfrac{1}{2}\\right)^3 = \\tfrac{1}{8}$.\n\n**Why the other options are wrong**\n\n- 0.333: 12 days is three half-lives: (1/2)³ = 1/8, not 1/3.\n- 0.25: That is the fraction after two half-lives (8 days).\n- 0.167: You divided by 2 × 3 instead of 2³.",
+     "id": "2b239d99-166c-560e-a4e6-66937f98de26",
+     "topic": "Radioactivity and Nuclear Physics",
+     "position": 50,
+     "options": [
+      {
+       "id": "4d9e0821-f7a9-5336-a94c-46dfb8309a92",
+       "label": "A",
+       "content": "0.125",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "33e5ba46-fc11-5e64-a5ae-45ed9b415a9f",
+       "label": "B",
+       "content": "0.167",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7358db2d-3a74-5f8f-8fb3-6f519cadf460",
+       "label": "C",
+       "content": "0.25",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fdc9d963-52fe-58cd-9e33-026c85532948",
+       "label": "D",
+       "content": "0.333",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "8100489f208c"
+}

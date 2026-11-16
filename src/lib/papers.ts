@@ -8,6 +8,7 @@ import type { ScoredAttempt } from '@/lib/progress'
 export function paperKind(p: Pick<PaperRow, 'paper_type' | 'year'>): string {
   if (!p.paper_type || p.paper_type.toLowerCase() === 'practice') return 'Practice set'
   if (p.paper_type.toLowerCase() === 'comprehension') return 'Comprehension passage'
+  if (p.paper_type.toLowerCase() === 'mock') return 'Timed mock exam'
   return [p.paper_type, p.year].filter(Boolean).join(' · ')
 }
 

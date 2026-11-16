@@ -82,7 +82,8 @@ async function syncSet(db, set) {
   if (sErr) throw new Error(`subjects: ${sErr.message}`)
   if (!subject) throw new Error(`subject "${set.subject_slug}" not found`)
 
-  const names = [...new Set(set.papers.map((p) => p.topic))]
+  // A topic set has one topic; a mock exam's questions each carry their own.
+  const names = [...new Set(set.papers.flatMap((p) => (p.topic ? [p.topic] : p.questions.map((q) => q.topic))))]
   const { data: topics, error: tErr } = await db.from('topics').select('id,name').eq('subject_id', subject.id).in('name', names)
   if (tErr) throw new Error(`topics: ${tErr.message}`)
   const topicId = new Map(topics.map((t) => [t.name, t.id]))
@@ -90,7 +91,7 @@ async function syncSet(db, set) {
   if (missing.length) throw new Error(`topics missing from ${set.subject_slug}: ${missing.join(', ')}`)
 
   const papers = set.papers.map((p) => pick({ ...p, subject_id: subject.id, question_count: p.questions.length }, PAPER_COLS))
-  const questions = set.papers.flatMap((p) => p.questions.map((q) => pick({ ...q, paper_id: p.id, topic_id: topicId.get(p.topic) }, QUESTION_COLS)))
+  const questions = set.papers.flatMap((p) => p.questions.map((q) => pick({ ...q, paper_id: p.id, topic_id: topicId.get(q.topic ?? p.topic) }, QUESTION_COLS)))
   const options = set.papers.flatMap((p) => p.questions.flatMap((q) => q.options.map((o) => pick({ ...o, question_id: q.id }, OPTION_COLS))))
 
   const P = await changedRows(db, 'papers', PAPER_COLS, papers)

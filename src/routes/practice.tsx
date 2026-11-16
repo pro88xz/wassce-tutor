@@ -113,8 +113,10 @@ function SubjectSets({ subject, papers, best }: { subject: Subject; papers: Pape
   const { access } = useAccess()
   const [all, setAll] = useState(false)
   const [q, setQ] = useState('')
-  // On a free account the open starter set comes first.
-  const ordered = access.hasAccess ? papers : [...papers].sort((a, b) => Number(!a.is_free) - Number(!b.is_free))
+  // A timed mock exam leads the list, so it is easy to find; on a free
+  // account the open starter set still comes first.
+  const isMock = (p: PaperRow) => p.paper_type?.toLowerCase() === 'mock'
+  const ordered = [...papers].sort((a, b) => (access.hasAccess ? 0 : Number(!a.is_free) - Number(!b.is_free)) || Number(!isMock(a)) - Number(!isMock(b)))
   const filtered = q.trim() ? ordered.filter((p) => p.title.toLowerCase().includes(q.trim().toLowerCase())) : ordered
   const shown = all || q.trim() ? filtered : filtered.slice(0, PREVIEW)
   const taken = papers.filter((p) => best.has(p.id)).length

@@ -294,6 +294,17 @@ SETS += [
     },
 ]
 
+# Timed mock exams: a full Paper 1 drawn from a subject's practice sets, with the
+# number of questions and the time the WAEC syllabus gives for that paper.
+# Each mock question is a copy of a practice question (new ids, its own topic),
+# so a mock never takes questions away from the topic sets.
+MOCKS = [
+    {"subject_slug": "mathematics", "subject": "Mathematics", "name": "maths_mock_p1", "count": 50, "minutes": 90},
+    {"subject_slug": "physics", "subject": "Physics", "name": "physics_mock_p1", "count": 50, "minutes": 75},
+    {"subject_slug": "chemistry", "subject": "Chemistry", "name": "chemistry_mock_p1", "count": 50, "minutes": 60},
+]
+MOCK_SORT = 900  # after every practice set, so a mock is never chosen as the free starter set
+
 OUT = ROOT / "src/content/question-sets"
 SITE = "https://wasscetutor.com"  # diagrams are served from the website so old app builds can show them too
 LABELS = "ABCD"
@@ -551,8 +562,80 @@ def main() -> int:
                 diagram_path(cfg, q).write_text(svgs[q.id])
         print(f"  wrote {(OUT / (cfg['name'] + '.json')).relative_to(ROOT)}, {cfg['review'].relative_to(ROOT)}"
               + (f" and {len(svgs)} diagrams" if svgs else ""))
+    bodies: dict[str, list[dict]] = {}
+    for cfg, mod, questions, ordered, svgs in built:
+        bodies.setdefault(cfg["subject_slug"], []).append(json.loads((OUT / f"{cfg['name']}.json").read_text()))
+    for mcfg in MOCKS:
+        body = build_mock(mcfg, bodies.get(mcfg["subject_slug"], []))
+        (OUT / f"{mcfg['name']}.json").write_text(json.dumps(body, ensure_ascii=False, indent=1) + "\n")
+        paper = body["papers"][0]
+        manifest.append({
+            "name": mcfg["name"],
+            "label": body["label"],
+            "subject_slug": mcfg["subject_slug"],
+            "version": body["version"],
+            "papers": [paper["id"]],
+            "questions": len(paper["questions"]),
+            # Copies of practice questions: not counted again in the site's totals.
+            "mock": True,
+            "minutes": mcfg["minutes"],
+        })
+        topics = len({q["topic"] for q in paper["questions"]})
+        print(f"  wrote {(OUT / (mcfg['name'] + '.json')).relative_to(ROOT)}: {len(paper['questions'])} questions from {topics} topics, {duration(mcfg['minutes'])}")
     (OUT / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1) + "\n")
     return 0
+
+
+def duration(minutes: int) -> str:
+    h, m = divmod(minutes, 60)
+    return " ".join(p for p in (f"{h} h" if h else "", f"{m} min" if m else "") if p)
+
+
+def build_mock(mcfg: dict, bodies: list[dict]) -> dict:
+    """Pick questions across every topic in turn, so the mock covers the whole syllabus."""
+    topics: OrderedDict[str, list[dict]] = OrderedDict()
+    for body in bodies:
+        for paper in body["papers"]:
+            if paper["paper_type"] == "Practice":
+                topics.setdefault(paper["topic"], []).extend(paper["questions"])
+    # A fixed starting point per topic, so the mock is stable from build to build
+    # but does not always take each topic's first (usually easiest) question.
+    start = {t: int(hashlib.sha1(f"{mcfg['name']}/{t}".encode()).hexdigest(), 16) % len(qs) for t, qs in topics.items()}
+    picked: list[tuple[str, dict]] = []
+    rnd = 0
+    while len(picked) < mcfg["count"] and any(rnd < len(qs) for qs in topics.values()):
+        for t, qs in topics.items():
+            if rnd < len(qs) and len(picked) < mcfg["count"]:
+                picked.append((t, qs[(start[t] + rnd) % len(qs)]))
+        rnd += 1
+    if len(picked) < mcfg["count"]:
+        raise SystemExit(f"{mcfg['name']}: only {len(picked)} questions available, {mcfg['count']} needed")
+    name, n, length = mcfg["name"], mcfg["count"], duration(mcfg["minutes"])
+    paper = {
+        "id": uid(name, "paper", "mock"),
+        "topic": None,
+        "title": f"Timed mock exam: Paper 1 ({n} questions, {length})",
+        "paper_type": "Mock",
+        "description": (
+            f"A timed WASSCE-style {mcfg['subject']} Paper 1: {n} objective questions from across the syllabus, "
+            f"in {length}, the time WAEC gives for Paper 1. Every question comes from the WASSCE Tutor practice bank, "
+            "with the working and the reason behind every wrong option."
+        ),
+        "sort_order": MOCK_SORT,
+        "questions": [
+            {
+                **{k: v for k, v in q.items() if k not in ("id", "position", "options")},
+                "id": uid(name, "question", q["key"]),
+                "topic": t,
+                "position": pos,
+                "options": [{**o, "id": uid(name, "option", q["key"], str(k))} for k, o in enumerate(q["options"])],
+            }
+            for pos, (t, q) in enumerate(picked, start=1)
+        ],
+    }
+    body = {"name": name, "label": f"{mcfg['subject']}: timed mock exam, Paper 1", "subject_slug": mcfg["subject_slug"], "papers": [paper]}
+    body["version"] = hashlib.sha1(json.dumps(body, sort_keys=True).encode()).hexdigest()[:12]
+    return body
 
 
 if __name__ == "__main__":
