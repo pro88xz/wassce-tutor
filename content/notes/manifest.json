@@ -6649,6 +6649,97 @@
       "title": "Transformations: reflection, rotation, translation and enlargement",
       "est_minutes": 13,
       "sort_order": 1
+    },
+    {
+      "file": "mathematics-statistics-data.md",
+      "subject": "Mathematics",
+      "topic": "statistics",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Statistics: frequency tables, bar charts, pie charts and histograms",
+      "est_minutes": 13,
+      "sort_order": 1
+    },
+    {
+      "file": "mathematics-central-tendency.md",
+      "subject": "Mathematics",
+      "topic": "measures-of-central-tendency",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Mean, median and mode, including grouped data and the assumed mean",
+      "est_minutes": 14,
+      "sort_order": 1
+    },
+    {
+      "file": "mathematics-dispersion.md",
+      "subject": "Mathematics",
+      "topic": "measures-of-dispersion",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Measures of dispersion: range, mean deviation and standard deviation",
+      "est_minutes": 13,
+      "sort_order": 1
+    },
+    {
+      "file": "mathematics-cumulative-frequency.md",
+      "subject": "Mathematics",
+      "topic": "cumulative-frequency",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Cumulative frequency: the ogive, median, quartiles and percentiles",
+      "est_minutes": 12,
+      "sort_order": 1
+    },
+    {
+      "file": "mathematics-probability.md",
+      "subject": "Mathematics",
+      "topic": "probability",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Probability: sample spaces, combined events and tree diagrams",
+      "est_minutes": 15,
+      "sort_order": 1
+    },
+    {
+      "file": "mathematics-differentiation.md",
+      "subject": "Mathematics",
+      "topic": "differentiation",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Differentiation: gradients, tangents, maxima and minima",
+      "est_minutes": 14,
+      "sort_order": 1
+    },
+    {
+      "file": "mathematics-integration.md",
+      "subject": "Mathematics",
+      "topic": "integration",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Integration: the reverse of differentiation, definite integrals and areas",
+      "est_minutes": 13,
+      "sort_order": 1
     }
   ]
 }
