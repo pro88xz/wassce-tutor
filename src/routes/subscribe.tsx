@@ -1,7 +1,7 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { ArrowRight, Check, CircleCheck, Clock, Loader2, Lock, ShieldCheck, Sparkles, XCircle } from 'lucide-react'
+import { ArrowRight, Check, CircleCheck, Clock, Copy, Loader2, Lock, Phone, ShieldCheck, Smartphone, Sparkles, XCircle } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { useAuth } from '@/lib/auth'
 import { supabase } from '@/lib/supabase'
@@ -9,7 +9,7 @@ import { useAccess } from '@/lib/useAccess'
 import { CONTACT, whatsappChatLink } from '@/lib/contact'
 import { ONLINE_CHECKOUT, PAID_FEATURES, PLANS, planById, type PlanId } from '@/lib/plans'
 import { FREE_FEATURES } from '@/lib/free-plan'
-import { confirmPayment, forgetCheckout, pendingCheckout, rememberCheckout, startUssdPayment, type PaymentStatus } from '@/lib/payments'
+import { canDial, confirmPayment, forgetCheckout, openDialler, pendingCheckout, rememberCheckout, startUssdPayment, type PaymentStatus } from '@/lib/payments'
 import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
 import { SignInLink } from '@/components/auth/SignInLink'
 
@@ -67,10 +67,13 @@ function SignedOut({ returning }: { returning: boolean }) {
 
 type View =
   | { kind: 'choose' }
-  | { kind: 'confirming'; paymentId: string; plan?: PlanId; status: PaymentStatus; slow: boolean; ussdCode?: string }
+  | { kind: 'confirming'; paymentId: string; plan?: PlanId; status: PaymentStatus; ussdCode?: string; expiresAt: number }
   | { kind: 'done'; plan?: PlanId }
   | { kind: 'cancelled' }
   | { kind: 'whatsapp'; plan: PlanId; reference: string }
+
+/** A Monime payment code lasts 10 minutes. */
+const CODE_LIFETIME_MS = 10 * 60 * 1000
 
 function Plans({ userId, email, search }: { userId: string; email: string; search: Search }) {
   const navigate = useNavigate()
@@ -83,42 +86,43 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
     if (search.cancelled) return { kind: 'cancelled' }
     const pending = pendingCheckout(userId)
     const paymentId = search.payment ?? pending?.paymentId
-    return paymentId ? { kind: 'confirming', paymentId, plan: pending?.plan, status: 'pending', slow: false, ussdCode: pending?.ussdCode } : { kind: 'choose' }
+    if (!paymentId) return { kind: 'choose' }
+    const expiresAt = pending?.expiresAt ?? (pending ? pending.startedAt + CODE_LIFETIME_MS : Date.now() + CODE_LIFETIME_MS)
+    return { kind: 'confirming', paymentId, plan: pending?.plan, status: 'pending', ussdCode: pending?.ussdCode, expiresAt }
   })
 
   useEffect(() => {
     if (search.cancelled) forgetCheckout(userId)
   }, [search.cancelled, userId])
 
-  // While confirming: ask our server every few seconds, then less often, and
-  // again whenever the student comes back to the tab or app.
+  // While a code is live: ask our server every few seconds, then less often,
+  // and again whenever the student comes back from the dialler.
   const checking = useRef(false)
   const check = useCallback(async () => {
     if (view.kind !== 'confirming' || checking.current) return
     checking.current = true
-    const status = await confirmPayment(view.paymentId)
+    const { status, expiresAt } = await confirmPayment(view.paymentId)
     checking.current = false
     if (status === 'completed') {
       forgetCheckout(userId)
       await qc.invalidateQueries({ queryKey: ['profile'] })
       setView({ kind: 'done', plan: view.plan })
-    } else if (status === 'cancelled' || status === 'expired' || status === 'failed') {
+    } else if (status === 'cancelled' || status === 'failed') {
       forgetCheckout(userId)
       setView({ kind: 'cancelled' })
     } else {
-      setView((v) => (v.kind === 'confirming' ? { ...v, status } : v))
+      setView((v) => (v.kind === 'confirming' ? { ...v, status, expiresAt: expiresAt ?? v.expiresAt } : v))
     }
   }, [view, userId, qc])
 
+  const live = view.kind === 'confirming' && view.status !== 'expired'
   useEffect(() => {
-    if (view.kind !== 'confirming') return
+    if (!live) return
     const started = Date.now()
     let timer: ReturnType<typeof setTimeout>
     const tick = () => {
       void check()
-      const elapsed = Date.now() - started
-      if (elapsed > 60_000) setView((v) => (v.kind === 'confirming' && !v.slow ? { ...v, slow: true } : v))
-      timer = setTimeout(tick, elapsed < 60_000 ? 3000 : 15_000)
+      timer = setTimeout(tick, Date.now() - started < 120_000 ? 3000 : 10_000)
     }
     tick()
     const onVisible = () => document.visibilityState === 'visible' && void check()
@@ -127,39 +131,48 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
       clearTimeout(timer)
       document.removeEventListener('visibilitychange', onVisible)
     }
-    // Restart only when a different payment is being confirmed.
+    // Restart only when a different payment is being confirmed, or it stops being live.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [view.kind === 'confirming' ? view.paymentId : null])
+  }, [view.kind === 'confirming' ? view.paymentId : null, live])
 
   const pending = usePendingRequest(userId)
 
-  const payOnWhatsApp = async () => {
+  const payOnWhatsApp = async (plan: PlanId) => {
     setBusy(true)
     setError(null)
-    const ref = await requestOnWhatsApp(userId, selected)
+    const ref = await requestOnWhatsApp(userId, plan)
     await qc.invalidateQueries({ queryKey: ['pending-request', userId] })
-    setView({ kind: 'whatsapp', plan: selected, reference: ref })
+    setView({ kind: 'whatsapp', plan, reference: ref })
     setBusy(false)
-    window.location.href = whatsappChatLink(whatsappText(selected, email, ref))
+    window.location.href = whatsappChatLink(whatsappText(plan, email, ref))
   }
 
-  const pay = async () => {
-    if (!ONLINE_CHECKOUT) return payOnWhatsApp()
+  const pay = async (plan: PlanId = selected) => {
+    if (!ONLINE_CHECKOUT) return payOnWhatsApp(plan)
+    setSelected(plan)
     setBusy(true)
     setError(null)
-    const result = await startUssdPayment(selected)
+    const result = await startUssdPayment(plan)
     if (result.kind === 'ussd') {
-      rememberCheckout(userId, { paymentId: result.paymentId, plan: selected, startedAt: Date.now(), ussdCode: result.ussdCode })
-      setView({ kind: 'confirming', paymentId: result.paymentId, plan: selected, status: 'pending', slow: false, ussdCode: result.ussdCode })
-      window.location.href = `tel:${encodeURIComponent(result.ussdCode)}`
+      rememberCheckout(userId, { paymentId: result.paymentId, plan, startedAt: Date.now(), ussdCode: result.ussdCode, expiresAt: result.expiresAt })
+      setView({ kind: 'confirming', paymentId: result.paymentId, plan, status: 'pending', ussdCode: result.ussdCode, expiresAt: result.expiresAt })
+      setBusy(false)
+      // On a phone the dialler opens with the code; the steps stay on screen for when they come back.
+      if (canDial()) openDialler(result.ussdCode)
       return
     }
     if (result.kind === 'whatsapp') {
-      setView({ kind: 'whatsapp', plan: selected, reference: await requestOnWhatsApp(userId, selected) })
+      setView({ kind: 'whatsapp', plan, reference: await requestOnWhatsApp(userId, plan) })
     } else {
       setError(result.message)
     }
     setBusy(false)
+  }
+
+  const choosePlanAgain = () => {
+    forgetCheckout(userId)
+    setView({ kind: 'choose' })
+    navigate({ to: '/subscribe', search: {}, replace: true })
   }
 
   if (view.kind === 'done') {
@@ -181,44 +194,14 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
 
   if (view.kind === 'confirming') {
     return (
-      <div className="mx-auto max-w-md space-y-5 pt-8 text-center">
-        <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-soft text-primary"><Loader2 className="h-8 w-8 animate-spin motion-reduce:animate-none" aria-hidden /></span>
-        <h1 className="text-2xl font-bold tracking-tight" role="status">Confirming your payment…</h1>
-        <p className="text-muted-foreground">
-          {view.slow
-            ? 'This is taking longer than usual. If you paid, your plan switches on automatically once Monime confirms it. You can leave this page.'
-            : 'Complete the Monime payment in the phone dialler. Your plan activates automatically after Monime confirms the payment.'}
-        </p>
-        <div className="space-y-2">
-          {view.ussdCode && (
-            <div className="space-y-2 rounded-2xl border bg-card p-4 text-left">
-              <p className="text-sm font-semibold">Your one-time USSD payment code</p>
-              <p className="font-mono text-lg font-bold tracking-wide text-foreground">{view.ussdCode}</p>
-              <button type="button" onClick={() => { window.location.href = `tel:${encodeURIComponent(view.ussdCode!)}` }} className="flex min-h-11 w-full items-center justify-center rounded-xl bg-primary px-4 font-semibold text-primary-foreground">Open mobile money dialler</button>
-              <p className="text-xs text-muted-foreground">This code is unique to this order, expires after 10 minutes and charges only the selected plan amount. Do not share it.</p>
-            </div>
-          )}
-          <button type="button" onClick={() => void check()} className="flex min-h-12 w-full items-center justify-center rounded-xl border bg-card px-5 py-2 font-semibold hover:border-primary/40">
-            Check again
-          </button>
-          {view.slow && (
-            <a href={whatsappChatLink(`Hello WASSCE Tutor, I paid for a plan but it is not active yet. Payment: ${view.paymentId}`)} target="_blank" rel="noopener" className="flex min-h-11 items-center justify-center gap-2 text-sm font-semibold text-[#1a8d4a] hover:underline">
-              <WhatsAppGlyph className="h-4 w-4" /> Message us on WhatsApp
-            </a>
-          )}
-          <button
-            type="button"
-            onClick={() => {
-              forgetCheckout(userId)
-              setView({ kind: 'choose' })
-              navigate({ to: '/subscribe', search: {}, replace: true })
-            }}
-            className="flex min-h-11 w-full items-center justify-center text-sm text-muted-foreground hover:text-foreground"
-          >
-            Choose a plan again
-          </button>
-        </div>
-      </div>
+      <PayWithCode
+        view={view}
+        busy={busy}
+        error={error}
+        onCheck={() => void check()}
+        onNewCode={(plan) => void pay(plan)}
+        onChoosePlan={choosePlanAgain}
+      />
     )
   }
 
@@ -275,7 +258,7 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
         <div className="space-y-3">
           <button
             type="button"
-            onClick={pay}
+            onClick={() => void pay()}
             disabled={busy}
             className="flex min-h-14 w-full items-center justify-center gap-2 rounded-2xl bg-primary px-5 py-3 text-lg font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition-colors hover:bg-brand-strong disabled:opacity-60"
           >
@@ -283,14 +266,15 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
             {busy ? 'Preparing secure USSD payment…' : `Pay ${plan.priceNle} NLe`}
           </button>
           <p className="flex items-center justify-center gap-1.5 text-center text-sm text-muted-foreground">
-            <ShieldCheck className="h-4 w-4 shrink-0 text-success" aria-hidden /> One-time Monime USSD payment. No automatic renewal. Access starts after confirmation.
+            <ShieldCheck className="h-4 w-4 shrink-0 text-success" aria-hidden /> Secure one-time payment through Monime. No automatic renewal.
           </p>
+          <UssdSteps amount={plan.priceNle} />
         </div>
       ) : (
         <div className="space-y-4">
           <button
             type="button"
-            onClick={pay}
+            onClick={() => void pay()}
             disabled={busy}
             className="flex min-h-14 w-full items-center justify-center gap-2 rounded-2xl bg-[#1a8d4a] px-5 py-3 text-lg font-semibold text-white shadow-lg shadow-[#1a8d4a]/30 transition-colors hover:bg-[#157a3f] disabled:opacity-60"
           >
@@ -458,5 +442,175 @@ function RequestSent({ plan, reference, email, sentAt }: { plan: PlanId; referen
         <WhatsAppGlyph className="h-4 w-4" /> Open WhatsApp again
       </a>
     </div>
+  )
+}
+
+/** What paying by USSD involves, shown before the dialler opens so nothing comes as a surprise. */
+function UssdSteps({ amount }: { amount: number }) {
+  const steps = [
+    <>Tap <span className="font-semibold text-foreground">Pay</span>. {canDial() ? 'Your phone dialler opens' : 'You get'} a one-time code starting <span className="font-mono font-semibold text-foreground">*715*</span>.</>,
+    <>{canDial() ? 'Press call' : 'Dial it on your phone'}, choose Orange Money or AfriMoney, and check the amount: <span className="font-semibold text-foreground">{amount} NLe</span>.</>,
+    <>Enter your mobile money PIN, then come back here. Your plan switches on by itself.</>,
+  ]
+  return (
+    <div className="space-y-3 rounded-2xl border bg-card p-5 text-sm">
+      <p className="flex items-center gap-2 font-bold"><Smartphone className="h-4 w-4 text-primary" aria-hidden /> How paying works</p>
+      <ol className="space-y-2.5">
+        {steps.map((step, i) => (
+          <li key={i} className="flex gap-3 text-muted-foreground">
+            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary">{i + 1}</span>
+            <span>{step}</span>
+          </li>
+        ))}
+      </ol>
+      <p className="text-xs text-muted-foreground">Make sure you have {amount} NLe in your mobile money account first. The code works once, for this amount only, for 10 minutes.</p>
+    </div>
+  )
+}
+
+/** Minutes and seconds left until the code expires, updated every second. */
+function useCountdown(expiresAt: number) {
+  const [now, setNow] = useState(() => Date.now())
+  useEffect(() => {
+    const t = setInterval(() => setNow(Date.now()), 1000)
+    return () => clearInterval(t)
+  }, [])
+  const left = Math.max(0, expiresAt - now)
+  return { left, label: `${Math.floor(left / 60000)}:${String(Math.floor((left % 60000) / 1000)).padStart(2, '0')}` }
+}
+
+/** The live payment: the code, the steps, a countdown, and what to do if it runs out. */
+function PayWithCode({
+  view,
+  busy,
+  error,
+  onCheck,
+  onNewCode,
+  onChoosePlan,
+}: {
+  view: Extract<View, { kind: 'confirming' }>
+  busy: boolean
+  error: string | null
+  onCheck: () => void
+  onNewCode: (plan: PlanId) => void
+  onChoosePlan: () => void
+}) {
+  const plan = planById(view.plan)
+  const { left, label } = useCountdown(view.expiresAt)
+  const expired = view.status === 'expired' || (left === 0 && view.status !== 'processing')
+  const processing = view.status === 'processing'
+  const [copied, setCopied] = useState(false)
+  const copy = async () => {
+    if (!view.ussdCode) return
+    try {
+      await navigator.clipboard.writeText(view.ussdCode)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch {
+      /* the code is on screen to type in */
+    }
+  }
+
+  if (expired) {
+    return (
+      <div className="mx-auto max-w-md space-y-5 pt-8 text-center">
+        <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-warning/10 text-warning"><Clock className="h-8 w-8" aria-hidden /></span>
+        <h1 className="text-2xl font-bold tracking-tight">This payment code has expired</h1>
+        <p className="text-muted-foreground">Codes last 10 minutes. <span className="font-semibold text-foreground">No money was taken.</span> Get a new code and pay straight away.</p>
+        {error && <p className="text-sm text-danger" role="alert">{error}</p>}
+        <div className="space-y-2">
+          {plan && (
+            <button type="button" disabled={busy} onClick={() => onNewCode(plan.id)} className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary px-5 py-2 text-base font-semibold text-primary-foreground hover:bg-brand-strong disabled:opacity-60">
+              {busy ? <Loader2 className="h-5 w-5 animate-spin motion-reduce:animate-none" aria-hidden /> : <Phone className="h-5 w-5" aria-hidden />}
+              {busy ? 'Getting a new code…' : `Get a new code: ${plan.priceNle} NLe`}
+            </button>
+          )}
+          {plan?.id === 'year' && (
+            <button type="button" disabled={busy} onClick={() => onNewCode('term')} className="flex min-h-11 w-full items-center justify-center rounded-xl border bg-card px-4 text-sm font-semibold hover:border-primary/40 disabled:opacity-60">
+              Short of balance? Pay monthly instead: {planById('term')!.priceNle} NLe
+            </button>
+          )}
+          <button type="button" onClick={onChoosePlan} className="flex min-h-11 w-full items-center justify-center text-sm text-muted-foreground hover:text-foreground">
+            Choose a plan again
+          </button>
+        </div>
+        <HelpOnWhatsApp paymentId={view.paymentId} />
+      </div>
+    )
+  }
+
+  return (
+    <div className="mx-auto max-w-md space-y-5 pt-6">
+      <header className="space-y-2 text-center">
+        <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-soft text-primary">
+          {processing ? <Loader2 className="h-7 w-7 animate-spin motion-reduce:animate-none" aria-hidden /> : <Phone className="h-7 w-7" aria-hidden />}
+        </span>
+        <h1 className="text-2xl font-bold tracking-tight" role="status">{processing ? 'Approve the payment on your phone' : 'Dial this code to pay'}</h1>
+        <p className="text-muted-foreground">
+          {processing
+            ? 'Monime has your payment. Finish it with your mobile money PIN; your plan switches on as soon as it is confirmed.'
+            : plan ? `${plan.name}: ${plan.priceNle} NLe for ${plan.length}. Pay with Orange Money or AfriMoney.` : 'Pay with Orange Money or AfriMoney.'}
+        </p>
+      </header>
+
+      {view.ussdCode && (
+        <div className="space-y-3 rounded-2xl border-2 border-primary/30 bg-card p-5 text-center shadow-[0_18px_40px_-28px_rgba(76,29,149,0.6)]">
+          <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Your one-time payment code</p>
+          <p className="font-mono text-3xl font-bold tracking-wider text-foreground">{view.ussdCode}</p>
+          <p className="text-sm text-muted-foreground" aria-live="off">Expires in <span className="font-semibold tabular-nums text-foreground">{label}</span></p>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {canDial() && (
+              <button type="button" onClick={() => openDialler(view.ussdCode!)} className="flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary px-4 font-semibold text-primary-foreground hover:bg-brand-strong sm:col-span-2">
+                <Phone className="h-5 w-5" aria-hidden /> Open the dialler
+              </button>
+            )}
+            <button type="button" onClick={() => void copy()} className={`flex min-h-11 items-center justify-center gap-2 rounded-xl border px-4 text-sm font-semibold hover:border-primary/40 ${canDial() ? 'sm:col-span-2' : 'sm:col-span-2'}`}>
+              {copied ? <Check className="h-4 w-4 text-success" aria-hidden /> : <Copy className="h-4 w-4" aria-hidden />} {copied ? 'Copied' : 'Copy the code'}
+            </button>
+          </div>
+        </div>
+      )}
+
+      <ol className="space-y-2.5 rounded-2xl border bg-card p-5 text-sm">
+        {[
+          canDial() ? <>Tap <span className="font-semibold text-foreground">Open the dialler</span> and press call.</> : <>Dial the code on the phone that has your mobile money.</>,
+          <>Choose Orange Money or AfriMoney and check the amount{plan ? <>: <span className="font-semibold text-foreground">{plan.priceNle} NLe</span></> : null}.</>,
+          <>Enter your PIN to approve, then come back to this page.</>,
+        ].map((step, i) => (
+          <li key={i} className="flex gap-3 text-muted-foreground">
+            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary">{i + 1}</span>
+            <span>{step}</span>
+          </li>
+        ))}
+      </ol>
+
+      <p className="flex items-center justify-center gap-2 text-sm text-muted-foreground" role="status">
+        <Loader2 className="h-4 w-4 animate-spin motion-reduce:animate-none" aria-hidden />
+        {processing ? 'Confirming your payment…' : 'Waiting for your payment. This page updates by itself.'}
+      </p>
+
+      <div className="space-y-2">
+        <button type="button" onClick={onCheck} className="flex min-h-12 w-full items-center justify-center rounded-xl border bg-card px-5 py-2 font-semibold hover:border-primary/40">
+          I have paid: check now
+        </button>
+        <button type="button" onClick={onChoosePlan} className="flex min-h-11 w-full items-center justify-center text-sm text-muted-foreground hover:text-foreground">
+          Choose a different plan
+        </button>
+      </div>
+      <HelpOnWhatsApp paymentId={view.paymentId} />
+    </div>
+  )
+}
+
+function HelpOnWhatsApp({ paymentId }: { paymentId: string }) {
+  return (
+    <a
+      href={whatsappChatLink(`Hello WASSCE Tutor, I need help paying for a plan. Payment: ${paymentId}`)}
+      target="_blank"
+      rel="noopener"
+      className="flex min-h-11 items-center justify-center gap-2 text-sm font-semibold text-[#1a8d4a] hover:underline"
+    >
+      <WhatsAppGlyph className="h-4 w-4" /> Stuck or already paid? WhatsApp us
+    </a>
   )
 }
