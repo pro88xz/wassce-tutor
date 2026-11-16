@@ -161,6 +161,8 @@ const HOME_JSON_LD = {
       '@type': 'WebSite',
       '@id': `${SITE.origin}/#website`,
       name: SITE.name,
+      // Helps Google show "WASSCE Tutor" above results instead of the bare domain.
+      alternateName: ['WASSCETutor', 'wasscetutor.com'],
       url: `${SITE.origin}/`,
       inLanguage: 'en',
       publisher: { '@id': `${SITE.origin}/#organization` },
