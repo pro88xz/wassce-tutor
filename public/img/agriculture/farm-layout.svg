@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A simple layout plan for a mixed farm</title>
+<desc id="d">A plan of a mixed farm. The farmhouse, store and office are near the road entrance. Poultry house and pig pens are downwind of the house, near the store. Crop plots are divided for rotation. An orchard and the fish pond are near the stream, and the swamp rice field lies in the valley bottom. Paths link all parts.</desc>
+<defs></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Planning the layout of a mixed farm</text>
+<rect x="30.0" y="60.0" width="740.0" height="380.0" rx="6" fill="#f0fdf4" stroke="#15803d" stroke-width="2.4"/>
+<rect x="30.0" y="400.0" width="740.0" height="40.0" rx="0" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<text x="400.0" y="422.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">main road</text>
+<path d="M 700 60 C 680 160, 720 260, 690 400" stroke="#2563eb" stroke-width="8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="735.0" y="230.0" font-size="12" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">stream</text>
+<rect x="60.0" y="300.0" width="150.0" height="80.0" rx="6" fill="#e2e8f0" stroke="#0f172a" stroke-width="2"/>
+<text x="135.0" y="332.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">House, store,</text>
+<text x="135.0" y="352.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">office</text>
+<rect x="230.0" y="300.0" width="110.0" height="80.0" rx="6" fill="#fef3c7" stroke="#ea580c" stroke-width="2"/>
+<text x="285.0" y="332.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Poultry</text>
+<text x="285.0" y="352.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">house</text>
+<rect x="360.0" y="300.0" width="90.0" height="80.0" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="405.0" y="332.0" font-size="14" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Pig</text>
+<text x="405.0" y="352.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">pens</text>
+<rect x="60.0" y="80.0" width="130.0" height="190.0" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="125.0" y="167.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Plot A</text>
+<text x="125.0" y="187.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">maize</text>
+<rect x="200.0" y="80.0" width="130.0" height="190.0" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="265.0" y="167.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Plot B</text>
+<text x="265.0" y="187.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">groundnut</text>
+<rect x="340.0" y="80.0" width="130.0" height="190.0" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="405.0" y="167.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Plot C</text>
+<text x="405.0" y="187.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cassava</text>
+<rect x="480.0" y="80.0" width="180.0" height="120.0" rx="6" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+<text x="570.0" y="132.0" font-size="14" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Orchard</text>
+<text x="570.0" y="152.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">citrus, mango</text>
+<rect x="480.0" y="215.0" width="180.0" height="70.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="570.0" y="250.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Fish pond</text>
+<rect x="470.0" y="300.0" width="200.0" height="80.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="570.0" y="332.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Swamp rice</text>
+<text x="570.0" y="352.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">valley bottom</text>
+<line x1="135.0" y1="380.0" x2="135.0" y2="400.0" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+</svg>

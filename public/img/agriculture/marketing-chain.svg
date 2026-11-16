@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A marketing channel for farm produce</title>
+<desc id="d">Produce moves from the farmer to an assembler or middleman who buys in villages, then to a wholesaler, a retailer and finally the consumer. Sometimes a processor adds value along the way, and some farmers sell directly to consumers in local markets, or through a cooperative.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="330" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">From farm gate to consumer: a marketing channel</text>
+<rect x="16.0" y="108.0" width="138.0" height="64.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="85.0" y="130.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Farmer</text>
+<text x="85.0" y="150.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">produces</text>
+<rect x="173.0" y="108.0" width="138.0" height="64.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="242.0" y="130.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Assembler /</text>
+<text x="242.0" y="150.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">middleman</text>
+<line x1="160.0" y1="140.0" x2="167.0" y2="140.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="330.0" y="108.0" width="138.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="399.0" y="130.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Wholesaler</text>
+<text x="399.0" y="150.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">buys in bulk</text>
+<line x1="317.0" y1="140.0" x2="324.0" y2="140.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="487.0" y="108.0" width="138.0" height="64.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="556.0" y="130.0" font-size="14" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Retailer</text>
+<text x="556.0" y="150.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sells small lots</text>
+<line x1="474.0" y1="140.0" x2="481.0" y2="140.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="644.0" y="108.0" width="138.0" height="64.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="713.0" y="130.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Consumer</text>
+<text x="713.0" y="150.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">buys to use</text>
+<line x1="631.0" y1="140.0" x2="638.0" y2="140.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="240.0" y="234.0" width="160.0" height="52.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="320.0" y="250.0" font-size="14" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Processor</text>
+<text x="320.0" y="270.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">adds value</text>
+<line x1="242.0" y1="178.0" x2="320.0" y2="228.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="320.0" y1="228.0" x2="399.0" y2="178.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<path d="M 85 108 C 200 70, 600 70, 713 108" stroke="#15803d" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5" marker-end="url(#a15803d)"/>
+<text x="400.0" y="62.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">direct sale or cooperative: fewer middlemen, more for the farmer</text>
+</svg>
