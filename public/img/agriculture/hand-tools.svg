@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Common farm hand tools</title>
+<desc id="d">Eight hand tools: the cutlass for clearing and weeding; the hoe for tilling, ridging and weeding; the shovel for digging and moving soil; the rake for levelling and collecting trash; the sickle for harvesting rice and grass; the pickaxe for breaking hard ground; the watering can for watering nurseries; and the knapsack sprayer for applying pesticides.</desc>
+<defs></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Common hand tools and their uses</text>
+<rect x="10.0" y="60.0" width="180.0" height="186.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+<rect x="30.0" y="134.0" width="34.0" height="12.0" rx="4" fill="#b45309" stroke="#0f172a" stroke-width="1.6"/>
+<path d="M 64 133 L 150 126 Q 172 128 166 142 L 64 147 Z" stroke="#0f172a" stroke-width="1.8" fill="#cbd5e1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="100.0" y="216.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cutlass</text>
+<text x="100.0" y="236.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">clearing, weeding</text>
+<rect x="210.0" y="60.0" width="180.0" height="186.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+<line x1="230.0" y1="170.0" x2="340.0" y2="110.0" stroke="#b45309" stroke-width="7" stroke-linecap="round"/>
+<polygon points="334.0,106.0 348.0,100.0 372.0,148.0 344.0,156.0" fill="#cbd5e1" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="300.0" y="216.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Hoe</text>
+<text x="300.0" y="236.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">tilling, ridging</text>
+<rect x="410.0" y="60.0" width="180.0" height="186.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+<line x1="500.0" y1="80.0" x2="500.0" y2="160.0" stroke="#b45309" stroke-width="7" stroke-linecap="round"/>
+<rect x="486.0" y="70.0" width="28.0" height="12.0" rx="4" fill="#b45309" stroke="#0f172a" stroke-width="1.4"/>
+<path d="M 476 158 L 524 158 L 520 192 Q 500 206 480 192 Z" stroke="#0f172a" stroke-width="1.8" fill="#cbd5e1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="500.0" y="216.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Shovel</text>
+<text x="500.0" y="236.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">digging, moving soil</text>
+<rect x="610.0" y="60.0" width="180.0" height="186.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+<line x1="700.0" y1="80.0" x2="700.0" y2="170.0" stroke="#b45309" stroke-width="6" stroke-linecap="round"/>
+<rect x="660.0" y="168.0" width="80.0" height="8.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="1.6"/>
+<line x1="664.0" y1="176.0" x2="664.0" y2="192.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="673.0" y1="176.0" x2="673.0" y2="192.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="682.0" y1="176.0" x2="682.0" y2="192.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="691.0" y1="176.0" x2="691.0" y2="192.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="700.0" y1="176.0" x2="700.0" y2="192.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="709.0" y1="176.0" x2="709.0" y2="192.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="718.0" y1="176.0" x2="718.0" y2="192.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="727.0" y1="176.0" x2="727.0" y2="192.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="736.0" y1="176.0" x2="736.0" y2="192.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+<text x="700.0" y="216.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Rake</text>
+<text x="700.0" y="236.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">levelling, gathering</text>
+<rect x="10.0" y="260.0" width="180.0" height="186.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+<rect x="94.0" y="350.0" width="12.0" height="44.0" rx="4" fill="#b45309" stroke="#0f172a" stroke-width="1.6"/>
+<path d="M 100 350 C 90 300, 160 280, 156 334 C 146 304, 110 310, 100 350 Z" stroke="#0f172a" stroke-width="1.8" fill="#cbd5e1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="100.0" y="416.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sickle</text>
+<text x="100.0" y="436.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">harvesting rice</text>
+<rect x="210.0" y="260.0" width="180.0" height="186.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+<line x1="300.0" y1="320.0" x2="300.0" y2="400.0" stroke="#b45309" stroke-width="7" stroke-linecap="round"/>
+<path d="M 240 336 Q 300 300 360 336 L 356 342 Q 300 314 244 342 Z" stroke="#0f172a" stroke-width="1.8" fill="#cbd5e1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="300.0" y="416.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Pickaxe</text>
+<text x="300.0" y="436.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">breaking hard ground</text>
+<rect x="410.0" y="260.0" width="180.0" height="186.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+<rect x="466.0" y="320.0" width="56.0" height="50.0" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2.2"/>
+<line x1="520.0" y1="360.0" x2="564.0" y2="318.0" stroke="#15803d" stroke-width="6" stroke-linecap="round"/>
+<ellipse cx="568.0" cy="314.0" rx="10.0" ry="6.0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<path d="M 470 322 Q 494 284 518 322" stroke="#15803d" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="500.0" y="416.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Watering can</text>
+<text x="500.0" y="436.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">watering nurseries</text>
+<rect x="610.0" y="260.0" width="180.0" height="186.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+<rect x="670.0" y="300.0" width="50.0" height="76.0" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.2"/>
+<line x1="670.0" y1="320.0" x2="650.0" y2="300.0" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+<path d="M 710 370 C 740 390, 750 350, 746 330 L 772 310" stroke="#0f172a" stroke-width="2.6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="775.0" cy="308.0" r="4.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="700.0" y="416.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Knapsack sprayer</text>
+<text x="700.0" y="436.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">applying pesticides</text>
+</svg>

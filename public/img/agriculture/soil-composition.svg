@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The composition of a good loam soil by volume</title>
+<desc id="d">A pie chart of an ideal loam soil by volume: about 45% mineral matter, 25% water, 25% air and 5% organic matter, which includes humus and living organisms.</desc>
+<defs></defs>
+<rect width="780" height="420" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">What a good soil is made of (by volume)</text>
+<path d="M 230 240 L 230.0 90.0 A 150 150 0 0 1 276.4 382.7 Z" stroke="#ea580c" stroke-width="2.2" fill="#fef3c7" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="321.9" y="217.5" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Mineral</text>
+<text x="321.9" y="234.5" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">matter 45%</text>
+<path d="M 230 240 L 276.4 382.7 A 150 150 0 0 1 87.3 286.4 Z" stroke="#2563eb" stroke-width="2.2" fill="#dbeafe" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="187.8" y="314.9" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Water</text>
+<text x="187.8" y="331.9" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">25%</text>
+<path d="M 230 240 L 87.3 286.4 A 150 150 0 0 1 183.6 97.3 Z" stroke="#475569" stroke-width="2.2" fill="#f1f5f9" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="147.1" y="189.8" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Air</text>
+<text x="147.1" y="206.8" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">25%</text>
+<path d="M 230 240 L 183.6 97.3 A 150 150 0 0 1 230.0 90.0 Z" stroke="#15803d" stroke-width="2.2" fill="#dcfce7" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="215.5" y="140.1" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold"></text>
+<text x="215.5" y="157.1" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<line x1="214.0" y1="94.0" x2="290.0" y2="66.0" stroke="#15803d" stroke-width="1.4" stroke-linecap="round"/>
+<text x="296.0" y="66.0" font-size="14" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">organic matter 5%</text>
+<text x="430.0" y="120.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Mineral matter</text>
+<text x="430.0" y="141.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">sand, silt and clay from weathered rock</text>
+<text x="430.0" y="178.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Water</text>
+<text x="430.0" y="199.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">the soil solution, carrying dissolved nutrients</text>
+<text x="430.0" y="236.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Air</text>
+<text x="430.0" y="257.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">oxygen for roots and soil organisms</text>
+<text x="430.0" y="294.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Organic matter</text>
+<text x="430.0" y="315.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">humus and living organisms</text>
+<text x="390.0" y="408.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Water and air share the pore spaces: when one goes up, the other goes down.</text>
+</svg>

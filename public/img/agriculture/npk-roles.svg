@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Roles of nitrogen, phosphorus and potassium in plants</title>
+<desc id="d">Nitrogen: leaf and stem growth and dark green colour; lack causes yellowing of older leaves and stunting. Phosphorus: root growth, flowering, fruit and seed formation and early maturity; lack causes purplish leaves and poor roots. Potassium: strong stems, disease resistance, fruit and tuber quality; lack causes scorched leaf edges and weak stems.</desc>
+<defs></defs>
+<rect width="800" height="380" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">N, P and K: what each nutrient does</text>
+<rect x="25.0" y="60.0" width="230.0" height="300.0" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="2.4"/>
+<circle cx="140.0" cy="104.0" r="30.0" fill="#ffffff" stroke="#15803d" stroke-width="3"/>
+<text x="140.0" y="105.0" font-size="26" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">N</text>
+<text x="140.0" y="154.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Nitrogen</text>
+<text x="140.0" y="186.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">leaf and stem growth</text>
+<text x="140.0" y="208.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">dark green colour</text>
+<text x="140.0" y="230.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">protein making</text>
+<text x="140.0" y="268.0" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">If lacking:</text>
+<text x="140.0" y="292.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">older leaves turn yellow</text>
+<text x="140.0" y="314.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">stunted, spindly growth</text>
+<rect x="285.0" y="60.0" width="230.0" height="300.0" rx="14" fill="#fef3c7" stroke="#ea580c" stroke-width="2.4"/>
+<circle cx="400.0" cy="104.0" r="30.0" fill="#ffffff" stroke="#ea580c" stroke-width="3"/>
+<text x="400.0" y="105.0" font-size="26" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">P</text>
+<text x="400.0" y="154.0" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Phosphorus</text>
+<text x="400.0" y="186.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">root growth</text>
+<text x="400.0" y="208.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">flowering, seeds, fruits</text>
+<text x="400.0" y="230.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">early maturity</text>
+<text x="400.0" y="268.0" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">If lacking:</text>
+<text x="400.0" y="292.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">purplish leaves</text>
+<text x="400.0" y="314.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">poor roots, late maturity</text>
+<rect x="545.0" y="60.0" width="230.0" height="300.0" rx="14" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.4"/>
+<circle cx="660.0" cy="104.0" r="30.0" fill="#ffffff" stroke="#7c3aed" stroke-width="3"/>
+<text x="660.0" y="105.0" font-size="26" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">K</text>
+<text x="660.0" y="154.0" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Potassium</text>
+<text x="660.0" y="186.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">strong stems</text>
+<text x="660.0" y="208.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">disease resistance</text>
+<text x="660.0" y="230.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">fruit and tuber quality</text>
+<text x="660.0" y="268.0" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">If lacking:</text>
+<text x="660.0" y="292.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">scorched leaf edges</text>
+<text x="660.0" y="314.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">weak stems, lodging</text>
+</svg>
