@@ -935,6 +935,14 @@ html.app-boot [data-public-footer] { display: none; }
     box-shadow: var(--site-shadow-raised);
   }
 
+  /* The one coloured panel on light pages (calls to action, page banners):
+     the brand violet, never the near-black ink, which is kept for the footer. */
+  .site-brand-panel {
+    background: linear-gradient(135deg, #6d3fe6, #5530cf 55%, #3a1d9e);
+    color: #fff;
+    box-shadow: 0 30px 60px -36px rgb(58 29 158 / 70%);
+  }
+
   /* ---- Actions ---- */
   .site-btn {
     display: inline-flex;

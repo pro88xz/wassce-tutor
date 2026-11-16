@@ -98,21 +98,21 @@ function TopicPage() {
           actions={
             <>
               {freeLesson && (
-                <a href={lessonPath(subject.slug, topic.slug, freeLesson.slug)} className={`site-btn site-btn-light ${HERO_BTN}`}>
+                <a href={lessonPath(subject.slug, topic.slug, freeLesson.slug)} className={`site-btn site-btn-primary ${HERO_BTN}`}>
                   Read the first lesson free <ArrowRight className="h-4 w-4" aria-hidden />
                 </a>
               )}
               {user ? (
-                <a href={`/topic/${topic.id}`} className={`site-btn ${HERO_BTN} ${freeLesson ? 'site-btn-glass' : 'site-btn-light'}`}>Open in WASSCE Tutor</a>
+                <a href={`/topic/${topic.id}`} className={`site-btn ${HERO_BTN} ${freeLesson ? 'site-btn-secondary' : 'site-btn-primary'}`}>Open in WASSCE Tutor</a>
               ) : (
-                <Link to="/auth" className={`site-btn ${HERO_BTN} ${freeLesson ? 'site-btn-glass' : 'site-btn-light'}`}>Start free</Link>
+                <Link to="/auth" className={`site-btn ${HERO_BTN} ${freeLesson ? 'site-btn-secondary' : 'site-btn-primary'}`}>Start free</Link>
               )}
             </>
           }
           note={covered.length > 0 ? `Across the topic: ${covered.join(' · ')}` : undefined}
           media={
             photo ? (
-              <span className="relative block aspect-[5/2] w-full overflow-hidden rounded-2xl bg-white/5 shadow-[0_30px_60px_-30px_rgba(0,0,0,.7)] ring-1 ring-white/10 sm:aspect-[3/1] lg:aspect-[4/3]">
+              <span className="relative block aspect-[5/2] w-full overflow-hidden rounded-2xl bg-muted shadow-[0_24px_48px_-28px_rgba(30,20,80,.45)] sm:aspect-[3/1] lg:aspect-[4/3]">
                 <img
                   src={photo.src}
                   srcSet={topicPhotoSrcSet(photo)}
@@ -132,7 +132,7 @@ function TopicPage() {
                 priority
                 rounded="rounded-2xl"
                 sizes="(min-width: 1024px) 480px, 100vw"
-                className="aspect-[5/2] w-full shadow-[0_30px_60px_-30px_rgba(0,0,0,.7)] ring-1 ring-white/10 sm:aspect-[3/1] lg:aspect-[4/3]"
+                className="aspect-[5/2] w-full shadow-[0_24px_48px_-28px_rgba(30,20,80,.45)] sm:aspect-[3/1] lg:aspect-[4/3]"
               />
             )
           }
