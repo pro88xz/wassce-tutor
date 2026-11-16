@@ -5,6 +5,7 @@ import { SUBJECT_PHOTOS } from '@/lib/subject-photos'
 import { TUTOR_PHOTO } from '@/lib/tutors'
 import { TOPIC_PHOTOS } from '@/lib/topic-photos'
 import { HOME_PHOTO_CREDITS } from '@/lib/home-photos'
+import { GUIDE_POSTS } from '@/content/editorial-guides'
 import { publicHead } from '@/lib/seo'
 import { CONTACT } from '@/lib/contact'
 import { fetchLandingData } from '@/lib/public-content'
@@ -25,6 +26,21 @@ const PHOTO_CREDITS = [
   ...Object.entries(TOPIC_PHOTOS)
     .sort((a, b) => a[1].topic.localeCompare(b[1].topic))
     .map(([key, p]) => [key, { subject: `${p.topic} (topic)`, caption: p.caption, credit: p.credit }] as const),
+  ...GUIDE_POSTS.filter((post) => post.imageSourceLabel === 'Pexels').map((post) => [
+    `blog-${post.slug}`,
+    {
+      subject: `${post.title.split(':')[0]} (blog)`,
+      caption: post.imageAlt,
+      credit: {
+        creator: post.imageCredit.replace(/ via Pexels$/, ''),
+        creatorUrl: undefined as string | undefined,
+        source: 'Pexels',
+        sourceUrl: post.imageSourceUrl ?? 'https://www.pexels.com/',
+        license: 'Pexels License',
+        licenseUrl: 'https://www.pexels.com/license/',
+      },
+    },
+  ] as const),
 ]
 
 const COVER_ROW = ['english-language', 'mathematics', 'biology', 'chemistry', 'government', 'economics']
