@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Methods of plant propagation</title>
+<desc id="d">Plants are propagated sexually by seeds, or asexually (vegetatively). Natural vegetative organs include stem tubers (yam, Irish potato), rhizomes (ginger), bulbs (onion), corms (cocoyam), suckers (plantain, pineapple) and runners (grasses). Artificial methods include cuttings (cassava, sugarcane, sweet potato vines), layering, budding (citrus), grafting (mango) and tissue culture.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="430" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Plant propagation: by seed or vegetatively</text>
+<rect x="290.0" y="55.0" width="220.0" height="50.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="400.0" y="80.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Plant propagation</text>
+<rect x="40.0" y="145.0" width="260.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="170.0" y="169.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sexual: seeds</text>
+<text x="170.0" y="190.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">maize, rice, cocoa, tomato</text>
+<rect x="450.0" y="145.0" width="300.0" height="70.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="600.0" y="169.5" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Asexual (vegetative)</text>
+<text x="600.0" y="190.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">a part of the parent plant</text>
+<line x1="400.0" y1="111.0" x2="170.0" y2="139.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="400.0" y1="111.0" x2="600.0" y2="139.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="330.0" y="265.0" width="250.0" height="130.0" rx="12" fill="#fef3c7" stroke="#92400e" stroke-width="2.5"/>
+<text x="455.0" y="290.0" font-size="14" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Natural organs</text>
+<text x="455.0" y="310.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">tubers: yam</text>
+<text x="455.0" y="330.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rhizomes: ginger</text>
+<text x="455.0" y="350.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">corms: cocoyam</text>
+<text x="455.0" y="370.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">suckers: plantain, pineapple</text>
+<rect x="590.0" y="265.0" width="200.0" height="130.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="690.0" y="290.0" font-size="14" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Artificial</text>
+<text x="690.0" y="310.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cuttings: cassava</text>
+<text x="690.0" y="330.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">layering</text>
+<text x="690.0" y="350.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">budding: citrus</text>
+<text x="690.0" y="370.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">grafting: mango</text>
+<line x1="600.0" y1="221.0" x2="455.0" y2="259.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="600.0" y1="221.0" x2="690.0" y2="259.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="170.0" y="262.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+ seeds are cheap, easy to</text>
+<text x="170.0" y="280.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">store and transport</text>
+<text x="170.0" y="312.0" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">− offspring may differ from</text>
+<text x="170.0" y="330.0" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the parents; slower to mature</text>
+</svg>

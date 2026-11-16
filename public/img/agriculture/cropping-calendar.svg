@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A cropping calendar for upland rice in Sierra Leone</title>
+<desc id="d">A timeline across the year. The dry season runs from about November to April and the rainy season from about May to October. Brushing and felling take place from January to March, clearing and land preparation in March and April, planting in May and June at the start of the rains, weeding in June to August, bird scaring in August and September, and harvesting from September to November.</desc>
+<defs></defs>
+<rect width="800" height="360" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cropping calendar: upland rice</text>
+<text x="195.0" y="70.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">J</text>
+<text x="245.0" y="70.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">F</text>
+<text x="295.0" y="70.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">M</text>
+<text x="345.0" y="70.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<text x="395.0" y="70.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">M</text>
+<text x="445.0" y="70.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">J</text>
+<text x="495.0" y="70.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">J</text>
+<text x="545.0" y="70.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<text x="595.0" y="70.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">S</text>
+<text x="645.0" y="70.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<text x="695.0" y="70.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">N</text>
+<text x="745.0" y="70.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">D</text>
+<rect x="170.0" y="82.0" width="200.0" height="14.0" rx="0" fill="#fef3c7" stroke="none" stroke-width="0"/>
+<rect x="370.0" y="82.0" width="300.0" height="14.0" rx="0" fill="#dbeafe" stroke="none" stroke-width="0"/>
+<rect x="670.0" y="82.0" width="100.0" height="14.0" rx="0" fill="#fef3c7" stroke="none" stroke-width="0"/>
+<text x="270.0" y="105.0" font-size="12" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">dry season</text>
+<text x="520.0" y="105.0" font-size="12" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rainy season</text>
+<text x="160.0" y="140.0" font-size="13" fill="#92400e" text-anchor="end" dominant-baseline="middle" font-weight="bold">Brushing, felling</text>
+<rect x="172.0" y="129.0" width="146.0" height="22.0" rx="6" fill="#92400e" stroke="#92400e" stroke-width="1" opacity="0.85"/>
+<text x="160.0" y="174.0" font-size="13" fill="#ea580c" text-anchor="end" dominant-baseline="middle" font-weight="bold">Land preparation</text>
+<rect x="272.0" y="163.0" width="96.0" height="22.0" rx="6" fill="#ea580c" stroke="#ea580c" stroke-width="1" opacity="0.85"/>
+<text x="160.0" y="208.0" font-size="13" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">Planting</text>
+<rect x="372.0" y="197.0" width="96.0" height="22.0" rx="6" fill="#15803d" stroke="#15803d" stroke-width="1" opacity="0.85"/>
+<text x="160.0" y="242.0" font-size="13" fill="#0f766e" text-anchor="end" dominant-baseline="middle" font-weight="bold">Weeding</text>
+<rect x="422.0" y="231.0" width="146.0" height="22.0" rx="6" fill="#0f766e" stroke="#0f766e" stroke-width="1" opacity="0.85"/>
+<text x="160.0" y="276.0" font-size="13" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">Bird scaring</text>
+<rect x="522.0" y="265.0" width="96.0" height="22.0" rx="6" fill="#7c3aed" stroke="#7c3aed" stroke-width="1" opacity="0.85"/>
+<text x="160.0" y="310.0" font-size="13" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">Harvesting</text>
+<rect x="572.0" y="299.0" width="146.0" height="22.0" rx="6" fill="#dc2626" stroke="#dc2626" stroke-width="1" opacity="0.85"/>
+<line x1="170.0" y1="120.0" x2="170.0" y2="345.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<line x1="220.0" y1="120.0" x2="220.0" y2="345.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<line x1="270.0" y1="120.0" x2="270.0" y2="345.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<line x1="320.0" y1="120.0" x2="320.0" y2="345.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<line x1="370.0" y1="120.0" x2="370.0" y2="345.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<line x1="420.0" y1="120.0" x2="420.0" y2="345.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<line x1="470.0" y1="120.0" x2="470.0" y2="345.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<line x1="520.0" y1="120.0" x2="520.0" y2="345.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<line x1="570.0" y1="120.0" x2="570.0" y2="345.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<line x1="620.0" y1="120.0" x2="620.0" y2="345.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<line x1="670.0" y1="120.0" x2="670.0" y2="345.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<line x1="720.0" y1="120.0" x2="720.0" y2="345.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<line x1="770.0" y1="120.0" x2="770.0" y2="345.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+</svg>

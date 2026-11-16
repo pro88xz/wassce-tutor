@@ -298,6 +298,198 @@ def hand_tools():
     return s
 
 
+# ═══ A2: crop production ════════════════════════════════════════════════════
+
+@fig
+def crop_classification():
+    s = Svg(800, 470, "Classification of crops by use",
+            "Ten groups of crops with Sierra Leone examples: cereals (rice, maize, sorghum, millet); legumes (groundnut, "
+            "cowpea, soya bean); roots and tubers (cassava, sweet potato, yam, cocoyam); vegetables (pepper, okra, garden "
+            "egg, krain-krain, potato leaves); fruits (mango, orange, pineapple, plantain); beverages (cocoa, coffee); oil "
+            "crops (oil palm, coconut); spices (ginger, pepper); fibre (cotton); latex (rubber).")
+    heading(s, "Crops grouped by use, with local examples")
+    groups = [("Cereals", "rice, maize, sorghum, millet", F_AMBER, ORANGE), ("Legumes", "groundnut, cowpea, soya bean", F_GREEN, GREEN),
+              ("Roots and tubers", "cassava, sweet potato, yam", F_RED, RED), ("Vegetables", "pepper, okra, garden egg, krain-krain", F_GREEN, TEAL),
+              ("Fruits", "mango, orange, pineapple, plantain", F_AMBER, ORANGE), ("Beverages", "cocoa, coffee", F_PURPLE, PURPLE),
+              ("Oil crops", "oil palm, coconut", F_AMBER, BROWN), ("Spices", "ginger, pepper", F_RED, RED),
+              ("Fibre", "cotton", F_GREY, MUTED), ("Latex", "rubber", F_BLUE, BLUE)]
+    for k, (name, ex, fill, col) in enumerate(groups):
+        c, r = k % 2, k // 2
+        x, y = 205 + c * 390, 100 + r * 76
+        box(s, x, y, 360, 62, [name, ex], col=col, fill=fill, size=15)
+    return s
+
+
+@fig
+def propagation_methods():
+    s = Svg(800, 430, "Methods of plant propagation",
+            "Plants are propagated sexually by seeds, or asexually (vegetatively). Natural vegetative organs include "
+            "stem tubers (yam, Irish potato), rhizomes (ginger), bulbs (onion), corms (cocoyam), suckers (plantain, "
+            "pineapple) and runners (grasses). Artificial methods include cuttings (cassava, sugarcane, sweet potato vines), "
+            "layering, budding (citrus), grafting (mango) and tissue culture.")
+    heading(s, "Plant propagation: by seed or vegetatively")
+    top = box(s, 400, 80, 220, 50, ["Plant propagation"], col=INK, fill="#ffffff", size=16)
+    sex = box(s, 170, 180, 260, 70, ["Sexual: seeds", "maize, rice, cocoa, tomato"], col=GREEN, fill=F_GREEN, size=15)
+    asx = box(s, 600, 180, 300, 70, ["Asexual (vegetative)", "a part of the parent plant"], col=ORANGE, fill=F_AMBER, size=15)
+    link(s, top, sex, color=MUTED, width=2.2)
+    link(s, top, asx, color=MUTED, width=2.2)
+    nat = box(s, 455, 330, 250, 130, ["Natural organs", "tubers: yam", "rhizomes: ginger", "corms: cocoyam", "suckers: plantain, pineapple"], col=BROWN, fill="#fef3c7", size=14)
+    art = box(s, 690, 330, 200, 130, ["Artificial", "cuttings: cassava", "layering", "budding: citrus", "grafting: mango"], col=PURPLE, fill=F_PURPLE, size=14)
+    link(s, asx, nat, color=MUTED, width=2.2)
+    link(s, asx, art, color=MUTED, width=2.2)
+    s.text(170, 262, "+ seeds are cheap, easy to", size=13, color=GREEN)
+    s.text(170, 280, "store and transport", size=13, color=GREEN)
+    s.text(170, 312, "− offspring may differ from", size=13, color=RED)
+    s.text(170, 330, "the parents; slower to mature", size=13, color=RED)
+    return s
+
+
+@fig
+def budding_grafting():
+    s = Svg(800, 440, "Budding and grafting",
+            "Left, T-budding: a T-shaped cut is made in the bark of the rootstock, a bud with a shield of bark is cut "
+            "from the scion plant, slipped under the bark, and tied firmly with budding tape. Right, cleft grafting: the "
+            "rootstock is cut off and split down the middle, a scion shoot is cut to a wedge, inserted in the cleft so "
+            "the cambium layers meet, and tied and sealed.")
+    heading(s, "Budding (citrus) and grafting (mango)")
+    # budding panel
+    s.text(200, 70, "T-budding", size=16, weight="bold", color=GREEN)
+    s.rect(75, 120, 30, 260, fill="#a16207", stroke=BROWN, width=2)
+    s.line(80, 200, 100, 200, color=INK, width=2.4)
+    s.line(90, 200, 90, 240, color=INK, width=2.4)
+    s.text(90, 400, "1. T-cut in", size=12)
+    s.text(90, 418, "the bark", size=12)
+    s.path("M 200 170 Q 216 205 200 240 Q 184 205 200 170 Z", color=GREEN, width=2, fill=F_GREEN)
+    s.circle(200, 205, 5, fill=GREEN, stroke=GREEN, width=1)
+    s.text(200, 400, "2. bud cut with", size=12)
+    s.text(200, 418, "a bark shield", size=12)
+    s.rect(295, 120, 30, 260, fill="#a16207", stroke=BROWN, width=2)
+    for y in range(190, 252, 9):
+        s.line(293, y, 327, y + 4, color=PURPLE, width=3)
+    s.circle(310, 218, 5, fill=GREEN, stroke=GREEN, width=1)
+    s.text(310, 400, "3. inserted,", size=12)
+    s.text(310, 418, "tied with tape", size=12)
+    s.line(400, 70, 400, 420, color="#cbd5e1", width=1.4, dash="6 6")
+    # grafting panel
+    s.text(600, 70, "Cleft grafting", size=16, weight="bold", color=ORANGE)
+    s.rect(470, 200, 40, 180, fill="#a16207", stroke=BROWN, width=2)
+    s.line(490, 200, 490, 250, color=INK, width=2.4)
+    s.text(490, 400, "1. stock cut", size=13)
+    s.text(490, 418, "and split", size=13)
+    s.polygon([(580, 120), (600, 120), (600, 230), (590, 270), (580, 230)], fill=F_GREEN, stroke=GREEN, width=2)
+    for y in (140, 170):
+        s.line(600, y, 618, y - 10, color=GREEN, width=2)
+    s.text(590, 400, "2. scion cut", size=13)
+    s.text(590, 418, "to a wedge", size=13)
+    s.rect(670, 230, 40, 150, fill="#a16207", stroke=BROWN, width=2)
+    s.polygon([(680, 110), (700, 110), (700, 250), (690, 285), (680, 250)], fill=F_GREEN, stroke=GREEN, width=2)
+    for y in range(232, 262, 8):
+        s.line(668, y, 712, y + 3, color=PURPLE, width=3)
+    s.text(690, 400, "3. inserted,", size=13)
+    s.text(690, 418, "tied, sealed", size=13)
+    s.text(790, 160, "scion", size=13, color=GREEN, anchor="end")
+    s.text(790, 330, "rootstock", size=13, color=BROWN, anchor="end")
+    return s
+
+
+@fig
+def rice_ecologies():
+    s = Svg(800, 400, "Rice-growing ecologies of Sierra Leone from hill to coast",
+            "A cross-section of the landscape. Upland rice is grown on free-draining slopes, depending on rain. Inland "
+            "valley swamps lie in the valley bottoms between hills and stay wet. Bolilands and riverine grasslands are "
+            "flat plains flooded in the rainy season. Mangrove swamps are on the coast, flooded by tides.")
+    heading(s, "Where rice grows: upland to mangrove")
+    pts = [(20, 330), (20, 150), (90, 120), (170, 150), (230, 260), (280, 280), (330, 260), (380, 190), (420, 210), (450, 280),
+           (600, 290), (640, 300), (700, 305), (780, 310), (780, 330)]
+    s.polygon(pts, fill="#fde68a", stroke=BROWN, width=2.4)
+    s.rect(230, 268, 100, 12, fill="#93c5fd", stroke="none", width=0, opacity=0.9)
+    s.rect(450, 278, 190, 10, fill="#93c5fd", stroke="none", width=0, opacity=0.7)
+    s.rect(640, 290, 140, 14, fill="#60a5fa", stroke="none", width=0, opacity=0.7)
+    for x, y in ((60, 132), (110, 128), (150, 142)):
+        s.line(x, y, x, y - 18, color=GREEN, width=2.4)
+    labels = [(100, 90, "Upland", "rain-fed slopes", ORANGE), (280, 220, "Inland valley", "swamp", BLUE),
+              (545, 240, "Boliland /", "riverine grassland", TEAL), (710, 250, "Mangrove", "swamp", PURPLE)]
+    for x, y, a, b, col in labels:
+        s.text(x, y, a, size=15, weight="bold", color=col)
+        s.text(x, y + 18, b, size=13, color=col)
+    s.text(780, 360, "sea", size=13, color=BLUE, anchor="end")
+    note(s, "Upland: low yields, needs fallow. Swamps: wetter, more fertile, cropped every year.", 385, size=14, color=INK)
+    return s
+
+
+@fig
+def cropping_calendar():
+    s = Svg(800, 360, "A cropping calendar for upland rice in Sierra Leone",
+            "A timeline across the year. The dry season runs from about November to April and the rainy season from "
+            "about May to October. Brushing and felling take place from January to March, clearing and land preparation "
+            "in March and April, planting in May and June at the start of the rains, weeding in June to August, bird "
+            "scaring in August and September, and harvesting from September to November.")
+    heading(s, "Cropping calendar: upland rice")
+    months = "J F M A M J J A S O N D".split()
+    x0, w = 170, 50
+    for k, m in enumerate(months):
+        s.text(x0 + k * w + w / 2, 70, m, size=14, weight="bold")
+    s.rect(x0, 82, 4 * w, 14, fill=F_AMBER, stroke="none", width=0)
+    s.rect(x0 + 4 * w, 82, 6 * w, 14, fill=F_BLUE, stroke="none", width=0)
+    s.rect(x0 + 10 * w, 82, 2 * w, 14, fill=F_AMBER, stroke="none", width=0)
+    s.text(x0 + 2 * w, 105, "dry season", size=12, color=ORANGE)
+    s.text(x0 + 7 * w, 105, "rainy season", size=12, color=BLUE)
+    ops = [("Brushing, felling", 0, 3, BROWN), ("Land preparation", 2, 4, ORANGE), ("Planting", 4, 6, GREEN),
+           ("Weeding", 5, 8, TEAL), ("Bird scaring", 7, 9, PURPLE), ("Harvesting", 8, 11, RED)]
+    for k, (name, a, b, col) in enumerate(ops):
+        y = 140 + k * 34
+        s.text(x0 - 10, y, name, size=13, anchor="end", weight="bold", color=col)
+        s.rect(x0 + a * w + 2, y - 11, (b - a) * w - 4, 22, fill=col, stroke=col, width=1, rx=6, opacity=0.85)
+    for k in range(13):
+        s.line(x0 + k * w, 120, x0 + k * w, 345, color="#e2e8f0", width=1)
+    return s
+
+
+@fig
+def oil_palm_types():
+    s = Svg(800, 380, "Dura, Pisifera and Tenera oil palm fruits",
+            "Cross-sections of oil palm fruits. Dura has a thick shell and thin mesocarp (less oil). Pisifera has no "
+            "shell, but its female flowers are usually sterile so it gives few bunches. Tenera, the hybrid of Dura and "
+            "Pisifera, has a thin shell and a thick, oily mesocarp, so it is the type planted for high oil yield.")
+    heading(s, "Oil palm fruit types: Dura × Pisifera = Tenera")
+    items = [(140, "Dura (D)", 20, 22, "thick shell, thin pulp"), (400, "Pisifera (P)", 0, 52, "no shell; mostly sterile"),
+             (660, "Tenera (D × P)", 7, 42, "thin shell, thick oily pulp")]
+    for x, name, shell, pulp, note_t in items:
+        cy = 190
+        r_k = 26
+        r_s = r_k + shell
+        r_p = r_s + pulp
+        s.circle(x, cy, r_p, fill="#fdba74", stroke=ORANGE, width=2.4)
+        if shell:
+            s.circle(x, cy, r_s, fill="#57534e", stroke=INK, width=2)
+        s.circle(x, cy, r_k, fill="#f5f5f4", stroke=INK, width=2)
+        s.text(x, 80, name, size=16, weight="bold")
+        s.text(x, 300, note_t, size=14)
+    s.text(140, 330, "kernel (white) · shell (dark) · mesocarp/pulp (orange)", size=12, color=MUTED, anchor="start")
+    s.text(660, 330, "planted for high oil yield", size=13, weight="bold", color=GREEN)
+    return s
+
+
+@fig
+def weed_control_methods():
+    s = Svg(800, 440, "Methods of weed control",
+            "Integrated weed management in the centre, linked to five methods: preventive (clean seed and tools), cultural "
+            "(correct spacing, cover crops, mulching, rotation, flooding rice), mechanical (hand pulling, hoeing, slashing, "
+            "tillage), chemical (herbicides, selective or non-selective, pre- or post-emergence) and biological (insects, "
+            "grazing animals, fungi).")
+    heading(s, "Weed control: combine methods for best results")
+    c = box(s, 400, 240, 220, 70, ["Integrated weed", "management"], col=INK, fill="#ffffff", size=16)
+    items = [((150, 110), ["Preventive", "clean seed, clean tools,", "weed-free manure"], F_BLUE, BLUE),
+             ((650, 110), ["Cultural", "spacing, cover crops,", "mulch, rotation, flooding"], F_GREEN, GREEN),
+             ((130, 370), ["Mechanical", "hand pulling, hoeing,", "slashing, tillage"], F_AMBER, ORANGE),
+             ((670, 370), ["Chemical", "herbicides: selective", "or non-selective"], F_RED, RED),
+             ((400, 400), ["Biological", "insects, grazing, fungi"], F_PURPLE, PURPLE)]
+    for (x, y), lines, fill, col in items:
+        b = box(s, x, y, 230, 86 if len(lines) == 3 else 62, lines, col=col, fill=fill, size=14)
+        link(s, c, b, color=MUTED, width=2.2)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:

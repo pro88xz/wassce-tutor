@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Classification of crops by use</title>
+<desc id="d">Ten groups of crops with Sierra Leone examples: cereals (rice, maize, sorghum, millet); legumes (groundnut, cowpea, soya bean); roots and tubers (cassava, sweet potato, yam, cocoyam); vegetables (pepper, okra, garden egg, krain-krain, potato leaves); fruits (mango, orange, pineapple, plantain); beverages (cocoa, coffee); oil crops (oil palm, coconut); spices (ginger, pepper); fibre (cotton); latex (rubber).</desc>
+<defs></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Crops grouped by use, with local examples</text>
+<rect x="25.0" y="69.0" width="360.0" height="62.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="205.0" y="89.5" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cereals</text>
+<text x="205.0" y="110.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rice, maize, sorghum, millet</text>
+<rect x="415.0" y="69.0" width="360.0" height="62.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="595.0" y="89.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Legumes</text>
+<text x="595.0" y="110.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">groundnut, cowpea, soya bean</text>
+<rect x="25.0" y="145.0" width="360.0" height="62.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="205.0" y="165.5" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Roots and tubers</text>
+<text x="205.0" y="186.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cassava, sweet potato, yam</text>
+<rect x="415.0" y="145.0" width="360.0" height="62.0" rx="12" fill="#dcfce7" stroke="#0f766e" stroke-width="2.5"/>
+<text x="595.0" y="165.5" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Vegetables</text>
+<text x="595.0" y="186.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">pepper, okra, garden egg, krain-krain</text>
+<rect x="25.0" y="221.0" width="360.0" height="62.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="205.0" y="241.5" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Fruits</text>
+<text x="205.0" y="262.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">mango, orange, pineapple, plantain</text>
+<rect x="415.0" y="221.0" width="360.0" height="62.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="595.0" y="241.5" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Beverages</text>
+<text x="595.0" y="262.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cocoa, coffee</text>
+<rect x="25.0" y="297.0" width="360.0" height="62.0" rx="12" fill="#fef3c7" stroke="#92400e" stroke-width="2.5"/>
+<text x="205.0" y="317.5" font-size="15" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Oil crops</text>
+<text x="205.0" y="338.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">oil palm, coconut</text>
+<rect x="415.0" y="297.0" width="360.0" height="62.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="595.0" y="317.5" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Spices</text>
+<text x="595.0" y="338.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ginger, pepper</text>
+<rect x="25.0" y="373.0" width="360.0" height="62.0" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="205.0" y="393.5" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Fibre</text>
+<text x="205.0" y="414.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cotton</text>
+<rect x="415.0" y="373.0" width="360.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="595.0" y="393.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Latex</text>
+<text x="595.0" y="414.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rubber</text>
+</svg>
