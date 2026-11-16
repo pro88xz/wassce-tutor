@@ -6,6 +6,8 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { Capacitor } from '@capacitor/core'
 import { App as CapApp } from '@capacitor/app'
 import { AuthProvider } from '@/lib/auth'
+import { ErrorPage } from '@/components/ErrorPage'
+import { reloadOnce } from '@/lib/reload'
 import { routeTree } from './routeTree.gen'
 
 export function getRouter() {
@@ -25,12 +27,21 @@ export function getRouter() {
 
   const router = createRouter({
     routeTree,
+    defaultErrorComponent: ErrorPage,
     Wrap: ({ children }) => (
       <QueryClientProvider client={queryClient}>
         <AuthProvider>{children}</AuthProvider>
       </QueryClientProvider>
     ),
   })
+
+  // A page opened before a site update asks for script files that no longer
+  // exist. Load the current version instead of showing an error.
+  if (typeof window !== 'undefined') {
+    window.addEventListener('vite:preloadError', (event) => {
+      if (reloadOnce()) event.preventDefault()
+    })
+  }
 
   // Android hardware back button: navigate within app, or exit at root.
   if (typeof window !== 'undefined' && Capacitor.isNativePlatform()) {
