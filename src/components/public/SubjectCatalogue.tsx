@@ -77,16 +77,17 @@ function GuideTile({ count }: { count: number }) {
   return (
     <a
       href="/wassce"
-      className={`group relative isolate flex-col justify-between gap-6 overflow-hidden rounded-2xl bg-[var(--site-ink)] p-4 text-white transition-transform duration-300 hover:-translate-y-[3px] sm:p-6 ${FILL_2[count % 2]} ${FILL_3[count % 3]} ${FILL_4[count % 4]}`}
+      className={`group relative isolate flex-col justify-between gap-6 overflow-hidden rounded-2xl bg-gradient-to-br from-[#6d3fe6] via-[#5530cf] to-[#3a1d9e] p-4 text-white shadow-[0_24px_48px_-28px_rgba(58,29,158,.7)] transition-transform duration-300 hover:-translate-y-[3px] sm:p-6 ${FILL_2[count % 2]} ${FILL_3[count % 3]} ${FILL_4[count % 4]}`}
     >
-      <span aria-hidden className="site-hero-backdrop -z-10" />
+      <span aria-hidden className="absolute -right-10 -top-10 -z-10 h-40 w-40 rounded-full border-[20px] border-white/10" />
+      <span aria-hidden className="absolute -bottom-8 -right-8 -z-10 h-24 w-24 rounded-full bg-[#ffd166]/85" />
       <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 ring-1 ring-white/20">
-        <Compass className="h-5 w-5 text-violet-200" aria-hidden />
+        <Compass className="h-5 w-5 text-white" aria-hidden />
       </span>
       <span>
         <span className="block text-[15px] font-bold leading-snug tracking-tight sm:text-xl">Not sure which subjects you sit?</span>
-        <span className="mt-2 hidden text-sm leading-relaxed text-white/70 sm:block">The WASSCE guide explains each faculty, the core subjects and how the exam is graded.</span>
-        <span className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-bold text-violet-200 sm:mt-4 sm:text-sm">
+        <span className="mt-2 hidden text-sm leading-relaxed text-white/80 sm:block">The WASSCE guide explains each faculty, the core subjects and how the exam is graded.</span>
+        <span className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-bold text-[#ffd166] sm:mt-4 sm:text-sm">
           Read the guide <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden />
         </span>
       </span>
