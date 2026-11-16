@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Two data sets with the same mean but different spread</title>
+<desc id="d">Set A: 4, 5, 5, 6, 6, 6, 7, 7, 8. Set B: 1, 2, 4, 6, 6, 6, 8, 10, 11. Both have mean 6, but set A has a range of 4 while set B has a range of 10, so set B is more spread out.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="780" height="400" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Same mean, different spread</text>
+<line x1="120.0" y1="190.0" x2="720.0" y2="190.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<line x1="120.0" y1="190.0" x2="120.0" y2="197.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="120.0" y="212.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">0</text>
+<line x1="170.0" y1="190.0" x2="170.0" y2="197.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="170.0" y="212.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1</text>
+<line x1="220.0" y1="190.0" x2="220.0" y2="197.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="220.0" y="212.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2</text>
+<line x1="270.0" y1="190.0" x2="270.0" y2="197.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="270.0" y="212.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">3</text>
+<line x1="320.0" y1="190.0" x2="320.0" y2="197.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="320.0" y="212.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">4</text>
+<line x1="370.0" y1="190.0" x2="370.0" y2="197.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="370.0" y="212.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">5</text>
+<line x1="420.0" y1="190.0" x2="420.0" y2="197.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="420.0" y="212.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">6</text>
+<line x1="470.0" y1="190.0" x2="470.0" y2="197.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="470.0" y="212.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">7</text>
+<line x1="520.0" y1="190.0" x2="520.0" y2="197.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="520.0" y="212.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">8</text>
+<line x1="570.0" y1="190.0" x2="570.0" y2="197.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="570.0" y="212.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">9</text>
+<line x1="620.0" y1="190.0" x2="620.0" y2="197.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="620.0" y="212.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">10</text>
+<line x1="670.0" y1="190.0" x2="670.0" y2="197.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="670.0" y="212.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">11</text>
+<line x1="720.0" y1="190.0" x2="720.0" y2="197.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="720.0" y="212.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">12</text>
+<circle cx="320.0" cy="176.0" r="8.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<circle cx="370.0" cy="176.0" r="8.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<circle cx="370.0" cy="156.0" r="8.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<circle cx="420.0" cy="176.0" r="8.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<circle cx="420.0" cy="156.0" r="8.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<circle cx="420.0" cy="136.0" r="8.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<circle cx="470.0" cy="176.0" r="8.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<circle cx="470.0" cy="156.0" r="8.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<circle cx="520.0" cy="176.0" r="8.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<text x="60.0" y="170.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Set A</text>
+<line x1="320.0" y1="98.0" x2="520.0" y2="98.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" marker-end="url(#a2563eb)" marker-start="url(#a2563ebs)"/>
+<rect x="535.5" y="86.5" width="61.0" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="566.0" y="98.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">range 4</text>
+<line x1="120.0" y1="340.0" x2="720.0" y2="340.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<line x1="120.0" y1="340.0" x2="120.0" y2="347.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="120.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">0</text>
+<line x1="170.0" y1="340.0" x2="170.0" y2="347.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="170.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1</text>
+<line x1="220.0" y1="340.0" x2="220.0" y2="347.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="220.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2</text>
+<line x1="270.0" y1="340.0" x2="270.0" y2="347.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="270.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">3</text>
+<line x1="320.0" y1="340.0" x2="320.0" y2="347.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="320.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">4</text>
+<line x1="370.0" y1="340.0" x2="370.0" y2="347.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="370.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">5</text>
+<line x1="420.0" y1="340.0" x2="420.0" y2="347.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="420.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">6</text>
+<line x1="470.0" y1="340.0" x2="470.0" y2="347.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="470.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">7</text>
+<line x1="520.0" y1="340.0" x2="520.0" y2="347.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="520.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">8</text>
+<line x1="570.0" y1="340.0" x2="570.0" y2="347.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="570.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">9</text>
+<line x1="620.0" y1="340.0" x2="620.0" y2="347.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="620.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">10</text>
+<line x1="670.0" y1="340.0" x2="670.0" y2="347.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="670.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">11</text>
+<line x1="720.0" y1="340.0" x2="720.0" y2="347.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="720.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">12</text>
+<circle cx="170.0" cy="326.0" r="8.0" fill="#15803d" stroke="#15803d" stroke-width="1"/>
+<circle cx="220.0" cy="326.0" r="8.0" fill="#15803d" stroke="#15803d" stroke-width="1"/>
+<circle cx="320.0" cy="326.0" r="8.0" fill="#15803d" stroke="#15803d" stroke-width="1"/>
+<circle cx="420.0" cy="326.0" r="8.0" fill="#15803d" stroke="#15803d" stroke-width="1"/>
+<circle cx="420.0" cy="306.0" r="8.0" fill="#15803d" stroke="#15803d" stroke-width="1"/>
+<circle cx="420.0" cy="286.0" r="8.0" fill="#15803d" stroke="#15803d" stroke-width="1"/>
+<circle cx="520.0" cy="326.0" r="8.0" fill="#15803d" stroke="#15803d" stroke-width="1"/>
+<circle cx="620.0" cy="326.0" r="8.0" fill="#15803d" stroke="#15803d" stroke-width="1"/>
+<circle cx="670.0" cy="326.0" r="8.0" fill="#15803d" stroke="#15803d" stroke-width="1"/>
+<text x="60.0" y="320.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Set B</text>
+<line x1="170.0" y1="248.0" x2="670.0" y2="248.0" stroke="#15803d" stroke-width="2" stroke-linecap="round" marker-end="url(#a15803d)" marker-start="url(#a15803ds)"/>
+<rect x="681.9" y="236.5" width="68.2" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="716.0" y="248.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">range 10</text>
+<line x1="420.0" y1="70.0" x2="420.0" y2="350.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 5"/>
+<rect x="391.5" y="54.0" width="57.0" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="420.0" y="66.0" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">mean 6</text>
+</svg>

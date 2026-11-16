@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The sample space for the sum of two dice</title>
+<desc id="d">A six by six grid shows every outcome when two dice are thrown, with the sum in each cell. There are 36 equally likely outcomes. The six cells with a sum of 7 lie on a diagonal, so the probability of a sum of 7 is 6/36 = 1/6.</desc>
+<defs></defs>
+<rect width="720" height="470" rx="20" fill="#f8fafc"/>
+<text x="360.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Two dice: 36 equally likely outcomes</text>
+<text x="356.0" y="66.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">first die</text>
+<text x="130.0" y="260.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">second die</text>
+<text x="226.0" y="102.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="auto" font-weight="bold">1</text>
+<text x="186.0" y="130.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="278.0" y="102.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="auto" font-weight="bold">2</text>
+<text x="186.0" y="182.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2</text>
+<text x="330.0" y="102.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="auto" font-weight="bold">3</text>
+<text x="186.0" y="234.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3</text>
+<text x="382.0" y="102.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="auto" font-weight="bold">4</text>
+<text x="186.0" y="286.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4</text>
+<text x="434.0" y="102.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="auto" font-weight="bold">5</text>
+<text x="186.0" y="338.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5</text>
+<text x="486.0" y="102.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="auto" font-weight="bold">6</text>
+<text x="186.0" y="390.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6</text>
+<rect x="200.0" y="104.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="226.0" y="130.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2</text>
+<rect x="252.0" y="104.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="278.0" y="130.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">3</text>
+<rect x="304.0" y="104.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="330.0" y="130.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">4</text>
+<rect x="356.0" y="104.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="382.0" y="130.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">5</text>
+<rect x="408.0" y="104.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="434.0" y="130.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">6</text>
+<rect x="460.0" y="104.0" width="52.0" height="52.0" rx="0" fill="#fee2e2" stroke="#475569" stroke-width="1.2"/>
+<text x="486.0" y="130.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7</text>
+<rect x="200.0" y="156.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="226.0" y="182.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">3</text>
+<rect x="252.0" y="156.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="278.0" y="182.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">4</text>
+<rect x="304.0" y="156.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="330.0" y="182.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">5</text>
+<rect x="356.0" y="156.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="382.0" y="182.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">6</text>
+<rect x="408.0" y="156.0" width="52.0" height="52.0" rx="0" fill="#fee2e2" stroke="#475569" stroke-width="1.2"/>
+<text x="434.0" y="182.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7</text>
+<rect x="460.0" y="156.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="486.0" y="182.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">8</text>
+<rect x="200.0" y="208.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="226.0" y="234.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">4</text>
+<rect x="252.0" y="208.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="278.0" y="234.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">5</text>
+<rect x="304.0" y="208.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="330.0" y="234.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">6</text>
+<rect x="356.0" y="208.0" width="52.0" height="52.0" rx="0" fill="#fee2e2" stroke="#475569" stroke-width="1.2"/>
+<text x="382.0" y="234.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7</text>
+<rect x="408.0" y="208.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="434.0" y="234.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">8</text>
+<rect x="460.0" y="208.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="486.0" y="234.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">9</text>
+<rect x="200.0" y="260.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="226.0" y="286.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">5</text>
+<rect x="252.0" y="260.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="278.0" y="286.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">6</text>
+<rect x="304.0" y="260.0" width="52.0" height="52.0" rx="0" fill="#fee2e2" stroke="#475569" stroke-width="1.2"/>
+<text x="330.0" y="286.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7</text>
+<rect x="356.0" y="260.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="382.0" y="286.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">8</text>
+<rect x="408.0" y="260.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="434.0" y="286.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">9</text>
+<rect x="460.0" y="260.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="486.0" y="286.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">10</text>
+<rect x="200.0" y="312.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="226.0" y="338.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">6</text>
+<rect x="252.0" y="312.0" width="52.0" height="52.0" rx="0" fill="#fee2e2" stroke="#475569" stroke-width="1.2"/>
+<text x="278.0" y="338.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7</text>
+<rect x="304.0" y="312.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="330.0" y="338.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">8</text>
+<rect x="356.0" y="312.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="382.0" y="338.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">9</text>
+<rect x="408.0" y="312.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="434.0" y="338.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">10</text>
+<rect x="460.0" y="312.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="486.0" y="338.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">11</text>
+<rect x="200.0" y="364.0" width="52.0" height="52.0" rx="0" fill="#fee2e2" stroke="#475569" stroke-width="1.2"/>
+<text x="226.0" y="390.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7</text>
+<rect x="252.0" y="364.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="278.0" y="390.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">8</text>
+<rect x="304.0" y="364.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="330.0" y="390.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">9</text>
+<rect x="356.0" y="364.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="382.0" y="390.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">10</text>
+<rect x="408.0" y="364.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="434.0" y="390.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">11</text>
+<rect x="460.0" y="364.0" width="52.0" height="52.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<text x="486.0" y="390.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">12</text>
+<text x="560.0" y="200.0" font-size="16" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">sum of 7:</text>
+<text x="560.0" y="228.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">6 outcomes</text>
+<text x="560.0" y="268.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">P(7) = 6/36</text>
+<text x="560.0" y="296.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">= 1/6</text>
+</svg>

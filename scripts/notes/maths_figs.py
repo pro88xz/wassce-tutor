@@ -1167,6 +1167,577 @@ def coordinate_distance_midpoint():
     return s
 
 
+# ═══ M4: trigonometry, vectors and transformations ══════════════════════════
+
+@fig
+def trig_ratios():
+    s = Svg(780, 400, "The three trigonometric ratios in a right-angled triangle",
+            "A right-angled triangle with an angle θ at A. The hypotenuse is the longest side, opposite the right angle. "
+            "The opposite side is across from θ and the adjacent side is next to θ. sin θ = opposite over hypotenuse, "
+            "cos θ = adjacent over hypotenuse, tan θ = opposite over adjacent: SOH CAH TOA.")
+    heading(s, "Naming the sides from the angle θ")
+    A, B, C = (70, 330), (400, 330), (400, 110)
+    s.polygon([A, B, C], fill=F_BLUE, stroke=BLUE, width=3)
+    right_mark(s, *B, A, C, k=16, color=BLUE)
+    angle_mark(s, *A, B, C, r=52, color=RED, label="θ", lr=74, size=20)
+    s.text(190, 182, "hypotenuse", size=17, color=PURPLE, weight="bold")
+    s.text(416, 220, "opposite", size=17, color=GREEN, weight="bold", anchor="start")
+    s.text(235, 358, "adjacent", size=17, color=ORANGE, weight="bold")
+    s.text(A[0] - 6, A[1] + 20, "A", size=16, weight="bold")
+    s.text(B[0] + 12, B[1] + 18, "B", size=16, weight="bold")
+    s.text(C[0] + 4, C[1] - 16, "C", size=16, weight="bold")
+    s.rect(530, 100, 230, 230, fill="#ffffff", stroke=INK, width=2, rx=12)
+    rows = [("SOH", "sin θ = opp / hyp", GREEN), ("CAH", "cos θ = adj / hyp", ORANGE), ("TOA", "tan θ = opp / adj", RED)]
+    for k, (w, f, col) in enumerate(rows):
+        y = 140 + k * 72
+        s.text(645, y, w, size=22, weight="bold", color=col)
+        s.text(645, y + 26, f, size=16, color=INK)
+    return s
+
+
+@fig
+def special_angles():
+    s = Svg(780, 400, "Exact values from two special triangles",
+            "Left: half of an equilateral triangle of side 2 gives a right-angled triangle with sides 1, root 3 and 2, "
+            "and angles 30, 60 and 90 degrees. Right: an isosceles right-angled triangle with equal sides 1 has "
+            "hypotenuse root 2 and two angles of 45 degrees.")
+    heading(s, "Two triangles give every exact value")
+    u = 110
+    P, Q = (90, 330), (90 + u, 330)
+    R = (90 + u, 330 - u * math.sqrt(3))
+    s.polyline([R, (90 + 2 * u, 330), Q], color=MUTED, width=2, dash="7 6")
+    s.polygon([P, Q, R], fill=F_BLUE, stroke=BLUE, width=3)
+    right_mark(s, *Q, P, R, k=14, color=BLUE)
+    angle_mark(s, *P, Q, R, r=34, color=RED, label="60°", lr=56, size=15)
+    angle_mark(s, *R, P, Q, r=40, color=RED, label="30°", lr=62, size=15)
+    s.text((P[0] + Q[0]) / 2, 354, "1", size=18, weight="bold")
+    s.text(Q[0] + 18, (Q[1] + R[1]) / 2, "√3", size=18, weight="bold", anchor="start")
+    s.label((P[0] + R[0]) / 2 - 18, (P[1] + R[1]) / 2, "2", size=18, weight="bold")
+    s.text(200, 380, "half an equilateral triangle", size=14, color=MUTED)
+    v = 160
+    P2, Q2 = (470, 330), (470 + v, 330)
+    R2 = (470 + v, 330 - v)
+    s.polygon([P2, Q2, R2], fill=F_GREEN, stroke=GREEN, width=3)
+    right_mark(s, *Q2, P2, R2, k=14, color=GREEN)
+    angle_mark(s, *P2, Q2, R2, r=40, color=RED, label="45°", lr=64, size=15)
+    angle_mark(s, *R2, P2, Q2, r=34, color=RED, label="45°", lr=56, size=15)
+    s.text((P2[0] + Q2[0]) / 2, 354, "1", size=18, weight="bold")
+    s.text(Q2[0] + 16, (Q2[1] + R2[1]) / 2, "1", size=18, weight="bold", anchor="start")
+    s.label((P2[0] + R2[0]) / 2 - 20, (P2[1] + R2[1]) / 2 - 8, "√2", size=18, weight="bold")
+    s.text(560, 380, "half a square", size=14, color=MUTED)
+    return s
+
+
+@fig
+def sine_cosine_graphs():
+    s = Svg(780, 400, "Graphs of y = sin x and y = cos x for 0° to 360°",
+            "Both graphs are waves between −1 and 1. y = sin x starts at 0, rises to 1 at 90°, falls to 0 at 180°, "
+            "reaches −1 at 270° and returns to 0 at 360°. y = cos x starts at 1, is 0 at 90°, −1 at 180°, 0 at 270° "
+            "and 1 again at 360°.")
+    heading(s, "y = sin x and y = cos x, 0° ≤ x ≤ 360°")
+    X = lambda x: 90 + x * 1.75
+    Y = lambda y: 210 - y * 120
+    for gx in range(0, 361, 90):
+        s.line(X(gx), Y(-1), X(gx), Y(1), color="#e5e7eb", width=1)
+        s.text(X(gx), Y(-1) + 22, f"{gx}°", size=14, color=MUTED)
+    for gy in (-1, -0.5, 0.5, 1):
+        s.line(X(0), Y(gy), X(360), Y(gy), color="#e5e7eb", width=1)
+        s.text(X(0) - 10, Y(gy), str(gy).replace("-", "−"), size=14, color=MUTED, anchor="end")
+    s.arrow(X(0), Y(0), X(360) + 24, Y(0), color=INK, width=2)
+    s.arrow(X(0), Y(-1) + 10, X(0), Y(1) - 24, color=INK, width=2)
+    s.text(X(360) + 34, Y(0) + 4, "x", size=16, italic=True)
+    s.text(X(0), Y(1) - 34, "y", size=16, italic=True)
+    plot(s, lambda x: math.sin(math.radians(x)), 0, 360, X, Y, color=BLUE, width=3.2)
+    plot(s, lambda x: math.cos(math.radians(x)), 0, 360, X, Y, color=RED, width=3.2)
+    s.label(X(90), Y(1) - 16, "y = sin x", size=15, color=BLUE, weight="bold")
+    s.label(X(16), Y(1) - 16, "y = cos x", size=15, color=RED, weight="bold", anchor="start")
+    note(s, "Both repeat every 360°, and both stay between −1 and 1.", 375, size=15)
+    return s
+
+
+@fig
+def elevation_depression():
+    s = Svg(780, 420, "Angles of elevation and depression",
+            "An observer at A on level ground looks up at the top T of a tower of height h, a distance d away. The angle "
+            "of elevation at A is measured up from the horizontal. From T, the angle of depression to A is measured down "
+            "from the horizontal. The two angles are equal because the horizontals are parallel (alternate angles), and "
+            "tan α = h / d.")
+    heading(s, "Elevation looks up, depression looks down: both from the horizontal")
+    A, B, T = (110, 340), (600, 340), (600, 110)
+    s.rect(582, 110, 36, 230, fill=F_GREY, stroke=INK, width=2.5)
+    s.hatch_ground(60, 700, 340)
+    s.line(*T, 300, 110, color=MUTED, width=2.2, dash="8 6")
+    s.text(290, 110, "horizontal", size=14, color=MUTED, anchor="end")
+    s.line(*A, *T, color=BLUE, width=3)
+    s.dot(*A, r=6, color=BLUE)
+    s.text(A[0] - 4, A[1] - 22, "A", size=17, weight="bold")
+    s.text(T[0] + 30, T[1] - 4, "T", size=17, weight="bold")
+    angle_mark(s, *A, B, T, r=70, color=RED, label="α", lr=92, size=19)
+    angle_mark(s, *T, (300, 110), A, r=70, color=GREEN, label="α", lr=92, size=19)
+    s.label(230, 372, "angle of elevation at A", size=15, color=RED, weight="bold")
+    s.text(440, 86, "angle of depression from T", size=15, color=GREEN, weight="bold")
+    s.text(640, 225, "h", size=19, italic=True, weight="bold", anchor="start")
+    s.line(A[0], 392, B[0], 392, color=INK, width=1.6, arrow="both")
+    s.label(355, 392, "d", size=18, italic=True, weight="bold")
+    s.text(765, 290, "tan α = h / d", size=17, weight="bold", anchor="end")
+    return s
+
+
+def _north(s, x, y, length=120, color=INK):
+    s.arrow(x, y, x, y - length, color=color, width=2.4)
+    s.text(x, y - length - 14, "N", size=16, weight="bold", color=color)
+
+
+@fig
+def bearings_compass():
+    s = Svg(780, 400, "Three-figure bearings and a back bearing",
+            "Left: from P, the bearing of Q is 060°, measured clockwise from north. Right: from Q, the bearing of P is "
+            "240°, measured clockwise from north at Q. The back bearing differs from the bearing by 180°.")
+    heading(s, "Bearings: from north, clockwise, three figures")
+    P = (180, 270)
+    _north(s, *P)
+    Q = _pt(*P, 190, 30)
+    s.arrow(*P, *Q, color=BLUE, width=3)
+    s.dot(*P, r=6)
+    s.text(P[0] - 16, P[1] + 16, "P", size=17, weight="bold")
+    s.text(Q[0] + 14, Q[1], "Q", size=17, weight="bold", anchor="start")
+    s.arc(*P, 58, 90, 30, color=RED, width=2.6, arrow="end")
+    s.text(*_pt(*P, 84, 60), "060°", size=17, weight="bold", color=RED)
+    s.text(200, 365, "bearing of Q from P = 060°", size=15, weight="bold", color=BLUE)
+    Q2 = (600, 190)
+    _north(s, *Q2, length=110)
+    P2 = _pt(*Q2, 190, -150)
+    s.arrow(*Q2, *P2, color=GREEN, width=3)
+    s.dot(*Q2, r=6)
+    s.text(Q2[0] + 16, Q2[1] - 6, "Q", size=17, weight="bold", anchor="start")
+    s.text(P2[0] - 8, P2[1] + 20, "P", size=17, weight="bold")
+    s.arc(*Q2, 52, 90, -150, color=RED, width=2.6, arrow="end")
+    s.text(*_pt(*Q2, 80, -30), "240°", size=17, weight="bold", color=RED)
+    s.text(590, 365, "bearing of P from Q = 060° + 180° = 240°", size=15, weight="bold", color=GREEN)
+    return s
+
+
+@fig
+def bearings_journey():
+    s = Svg(780, 430, "A two-stage journey on bearings 060° and 150°",
+            "A boat sails 8 km from A to B on a bearing of 060°, then 6 km from B to C on a bearing of 150°. The angle at "
+            "B is 90°, so AC = 10 km by Pythagoras, and the bearing of C from A is about 097°.")
+    heading(s, "8 km on 060°, then 6 km on 150°")
+    u = 34
+    A = (110, 300)
+    B = _pt(*A, 8 * u, 30)
+    C = _pt(*B, 6 * u, -60)
+    _north(s, *A, length=110, color=MUTED)
+    _north(s, *B, length=100, color=MUTED)
+    s.line(*A, *C, color=RED, width=2.6, dash="9 6")
+    s.line(*A, *B, color=BLUE, width=3.2)
+    s.line(*B, *C, color=GREEN, width=3.2)
+    s.arc(*A, 48, 90, 30, color=BLUE, width=2.4)
+    s.text(*_pt(*A, 72, 62), "60°", size=15, weight="bold", color=BLUE)
+    s.arc(*B, 34, 90, -60, color=GREEN, width=2.4)
+    s.text(*_pt(*B, 56, 30), "150°", size=15, weight="bold", color=GREEN)
+    right_mark(s, *B, A, C, k=14, color=INK)
+    for P, t, dx, dy in ((A, "A", -16, 14), (B, "B", -20, -12), (C, "C", 14, 10)):
+        s.dot(*P, r=5)
+        s.text(P[0] + dx, P[1] + dy, t, size=17, weight="bold")
+    s.label((A[0] + B[0]) / 2 - 14, (A[1] + B[1]) / 2 - 16, "8 km", size=15, color=BLUE, weight="bold")
+    s.label((B[0] + C[0]) / 2 + 34, (B[1] + C[1]) / 2, "6 km", size=15, color=GREEN, weight="bold")
+    s.label((A[0] + C[0]) / 2, (A[1] + C[1]) / 2 + 22, "10 km", size=15, color=RED, weight="bold")
+    s.text(560, 150, "∠ABC = 150° − 60° = 90°", size=16, weight="bold", anchor="start")
+    s.text(560, 190, "AC = √(8² + 6²) = 10 km", size=16, weight="bold", anchor="start")
+    s.text(560, 230, "∠BAC = tan⁻¹(6/8) ≈ 36.9°", size=16, weight="bold", anchor="start")
+    s.text(560, 270, "bearing of C from A", size=16, color=MUTED, anchor="start")
+    s.text(560, 296, "≈ 060° + 36.9° ≈ 097°", size=16, weight="bold", color=RED, anchor="start")
+    return s
+
+
+def colvec(s, x, y, top, bottom, color=INK, size=18):
+    s.path(f"M {x - 16} {y - 26} Q {x - 28} {y} {x - 16} {y + 26}", color=color, width=2)
+    s.path(f"M {x + 16} {y - 26} Q {x + 28} {y} {x + 16} {y + 26}", color=color, width=2)
+    s.text(x, y - 12, top, size=size, weight="bold", color=color)
+    s.text(x, y + 13, bottom, size=size, weight="bold", color=color)
+
+
+@fig
+def vector_triangle():
+    s = Svg(780, 440, "Adding vectors with the triangle law",
+            "On a grid, vector a goes 4 right and 1 up. Vector b, drawn from the end of a, goes 1 right and 3 up. The "
+            "resultant a + b goes from the start of a to the end of b: 5 right and 4 up.")
+    heading(s, "The triangle law: a + b goes from start to finish")
+    u = 54
+    ox, oy = 70, 380
+    X = lambda x: ox + x * u
+    Y = lambda y: oy - y * u
+    for gx in range(0, 8):
+        s.line(X(gx), Y(0), X(gx), Y(6), color="#e5e7eb", width=1)
+    for gy in range(0, 7):
+        s.line(X(0), Y(gy), X(7), Y(gy), color="#e5e7eb", width=1)
+    O, Pa, Pb = (X(0), Y(0)), (X(4), Y(1)), (X(5), Y(4))
+    s.line(*O, *Pb, color=RED, width=3.4, arrow="end")
+    s.line(*O, *Pa, color=BLUE, width=3.4, arrow="end")
+    s.line(*Pa, *Pb, color=GREEN, width=3.4, arrow="end")
+    s.label(X(2), Y(0.5) + 20, "a", size=20, color=BLUE, weight="bold", italic=True)
+    s.label(X(4.5) + 22, Y(2.5), "b", size=20, color=GREEN, weight="bold", italic=True)
+    s.text(150, 236, "a + b", size=18, color=RED, weight="bold", italic=True)
+    s.text(500, 120, "a =", size=19, weight="bold", color=BLUE, anchor="end")
+    colvec(s, 530, 120, "4", "1", color=BLUE)
+    s.text(660, 120, "b =", size=19, weight="bold", color=GREEN, anchor="end")
+    colvec(s, 690, 120, "1", "3", color=GREEN)
+    s.text(585, 220, "a + b =", size=19, weight="bold", color=RED, anchor="end")
+    colvec(s, 618, 220, "5", "4", color=RED)
+    s.text(600, 300, "|a + b| = √(5² + 4²) = √41", size=16, weight="bold")
+    s.text(600, 328, "≈ 6.4 units", size=16, weight="bold")
+    return s
+
+
+def _tgrid(s, px, py, title):
+    u = 30
+    X = lambda x: px + 40 + (x + 5) * u
+    Y = lambda y: py + 260 - (y + 1) * u
+    s.text(px + 190, py + 56, title, size=16, weight="bold")
+    for gx in range(-5, 6):
+        s.line(X(gx), Y(-1), X(gx), Y(5), color="#e5e7eb", width=1)
+    for gy in range(-1, 6):
+        s.line(X(-5), Y(gy), X(5), Y(gy), color="#e5e7eb", width=1)
+    s.line(X(-5), Y(0), X(5), Y(0), color=INK, width=1.8)
+    s.line(X(0), Y(-1), X(0), Y(5), color=INK, width=1.8)
+    s.text(X(0) - 9, Y(0) + 13, "O", size=13, color=MUTED)
+    return X, Y
+
+
+def _shape(s, X, Y, pts, image=False, name="A"):
+    col, fill = (GREEN, F_GREEN) if image else (BLUE, F_BLUE)
+    scr = [(X(x), Y(y)) for x, y in pts]
+    s.polygon(scr, fill=fill, stroke=col, width=2.6)
+    cx = sum(p[0] for p in scr) / len(scr)
+    cy = sum(p[1] for p in scr) / len(scr)
+    s.text(cx, cy + 1, name + ("′" if image else ""), size=14, weight="bold", color=col)
+
+
+@fig
+def transformations_panels():
+    s = Svg(790, 700, "Four transformations of a triangle",
+            "Four grids. Reflection in the y-axis: the triangle flips to the other side of the mirror line. Rotation of "
+            "90° anticlockwise about the origin: each point (x, y) goes to (−y, x). Translation by the vector (6, 1): "
+            "every point moves 6 right and 1 up. Enlargement with scale factor 2, centre O: every distance from O "
+            "doubles.")
+    heading(s, "Reflection, rotation, translation and enlargement")
+    obj = [(1, 1), (3, 1), (1, 3)]
+    X, Y = _tgrid(s, 5, 30, "Reflection in the y-axis")
+    s.line(X(0), Y(-1), X(0), Y(5), color=RED, width=3, dash="8 6")
+    _shape(s, X, Y, obj)
+    _shape(s, X, Y, [(-x, y) for x, y in obj], image=True)
+    s.text(195, 315, "(x, y) → (−x, y)", size=15, color=MUTED)
+    X, Y = _tgrid(s, 395, 30, "Rotation 90° anticlockwise about O")
+    o2 = [(1, 1), (4, 1), (1, 3)]
+    _shape(s, X, Y, o2)
+    _shape(s, X, Y, [(-y, x) for x, y in o2], image=True)
+    s.arc(X(0), Y(0), 66, 15, 105, color=RED, width=2.6, arrow="end")
+    s.text(585, 315, "(x, y) → (−y, x)", size=15, color=MUTED)
+    X, Y = _tgrid(s, 5, 360, "Translation by the vector (6, 1)")
+    o3 = [(-4, 2), (-2, 2), (-4, 4)]
+    _shape(s, X, Y, o3)
+    _shape(s, X, Y, [(x + 6, y + 1) for x, y in o3], image=True)
+    s.line(X(-2), Y(2), X(4), Y(3), color=RED, width=2.6, arrow="end")
+    s.text(195, 645, "(x, y) → (x + 6, y + 1)", size=15, color=MUTED)
+    X, Y = _tgrid(s, 395, 360, "Enlargement, scale factor 2, centre O")
+    o4 = [(1, 1), (2, 1), (1, 2)]
+    for x, y in [(2, 1), (1, 2), (1, 1)]:
+        s.line(X(0), Y(0), X(2 * x), Y(2 * y), color=RED, width=1.8, dash="6 5")
+    _shape(s, X, Y, [(2 * x, 2 * y) for x, y in o4], image=True)
+    _shape(s, X, Y, o4)
+    s.text(585, 645, "(x, y) → (2x, 2y)", size=15, color=MUTED)
+    return s
+
+
+# ═══ M5: statistics, probability and calculus ═══════════════════════════════
+
+TRANSPORT = [("Walk", 18, BLUE, F_BLUE), ("Okada", 10, GREEN, F_GREEN), ("Poda-poda", 8, ORANGE, F_AMBER), ("Keke", 4, PURPLE, F_PURPLE)]
+
+
+@fig
+def stats_bar_pie():
+    s = Svg(800, 420, "The same data as a bar chart and a pie chart",
+            "How 40 students travel to school: walk 18, okada 10, poda-poda 8, keke 4. The bar chart shows each frequency "
+            "as the height of a bar. The pie chart shows each as a sector: walk 162°, okada 90°, poda-poda 72°, keke 36°.")
+    heading(s, "How 40 students travel to school")
+    ox, oy, u = 80, 350, 13
+    s.line(ox, oy, ox + 330, oy, color=INK, width=2)
+    s.line(ox, oy, ox, oy - 20 * u - 10, color=INK, width=2)
+    for f in range(0, 21, 5):
+        s.line(ox, oy - f * u, ox + 330, oy - f * u, color="#e5e7eb", width=1)
+        s.text(ox - 10, oy - f * u, str(f), size=13, color=MUTED, anchor="end")
+    s.text(ox - 30, oy - 20 * u - 26, "frequency", size=13, color=MUTED, anchor="start")
+    for k, (name, f, col, fill) in enumerate(TRANSPORT):
+        x = ox + 20 + k * 78
+        s.rect(x, oy - f * u, 56, f * u, fill=fill, stroke=col, width=2.4)
+        s.text(x + 28, oy - f * u - 12, str(f), size=14, weight="bold", color=col)
+        s.text(x + 28, oy + 18, name, size=13, color=INK)
+    cx, cy, r = 600, 220, 130
+    a = 90.0
+    for name, f, col, fill in TRANSPORT:
+        sweep = f / 40 * 360
+        a2 = a - sweep
+        x1, y1 = _pt(cx, cy, r, a)
+        x2, y2 = _pt(cx, cy, r, a2)
+        large = 1 if sweep > 180 else 0
+        s.path(f"M {cx} {cy} L {x1:.1f} {y1:.1f} A {r} {r} 0 {large} 1 {x2:.1f} {y2:.1f} Z", color=col, width=2.4, fill=fill)
+        lx, ly = _pt(cx, cy, r * 0.6, a - sweep / 2)
+        s.text(lx, ly - 9, name, size=13, weight="bold", color=col)
+        s.text(lx, ly + 9, f"{sweep:.0f}°", size=13, color=INK)
+        a = a2
+    note(s, "angle = frequency ÷ total × 360°", 395, size=15, color=INK)
+    return s
+
+
+MARKS = [(1, 10, 3), (11, 20, 7), (21, 30, 12), (31, 40, 10), (41, 50, 6), (51, 60, 2)]
+
+
+@fig
+def histogram_polygon():
+    s = Svg(780, 420, "A histogram with its frequency polygon",
+            "Marks of 40 students grouped in classes 1–10 to 51–60 with frequencies 3, 7, 12, 10, 6 and 2. Each bar runs "
+            "between the class boundaries, from 0.5 to 60.5, with no gaps. The frequency polygon joins the midpoints of the "
+            "tops of the bars.")
+    heading(s, "Marks of 40 students: histogram and frequency polygon")
+    ox, oy, ux, uy = 90, 360, 9.5, 22
+    X = lambda m: ox + m * ux
+    Y = lambda f: oy - f * uy
+    for f in range(0, 13, 2):
+        s.line(X(0), Y(f), X(70), Y(f), color="#e5e7eb", width=1)
+        s.text(X(0) - 10, Y(f), str(f), size=13, color=MUTED, anchor="end")
+    for lo, hi, f in MARKS:
+        s.rect(X(lo - 0.5), Y(f), (hi - lo + 1) * ux, f * uy, fill=F_BLUE, stroke=BLUE, width=2)
+    for b in [0.5, 10.5, 20.5, 30.5, 40.5, 50.5, 60.5]:
+        s.text(X(b), oy + 18, f"{b}", size=12, color=MUTED)
+    mids = [(-4.5, 0)] + [((lo + hi) / 2, f) for lo, hi, f in MARKS] + [(65.5, 0)]
+    s.polyline([(X(m), Y(f)) for m, f in mids], color=RED, width=3)
+    for m, f in mids:
+        s.dot(X(m), Y(f), r=4.5, color=RED)
+    s.line(X(-5), oy, X(70), oy, color=INK, width=2)
+    s.line(X(0), oy, X(0), Y(13), color=INK, width=2)
+    s.text(X(30), oy + 42, "marks (class boundaries)", size=14, color=MUTED)
+    s.text(X(0) - 40, Y(13) - 10, "frequency", size=13, color=MUTED, anchor="start")
+    s.label(X(57), Y(8), "frequency polygon", size=14, color=RED, weight="bold")
+    return s
+
+
+def _pchip(xs, ys):
+    """Monotone cubic interpolation; returns f(x)."""
+    n = len(xs)
+    h = [xs[i + 1] - xs[i] for i in range(n - 1)]
+    d = [(ys[i + 1] - ys[i]) / h[i] for i in range(n - 1)]
+    m = [0.0] * n
+    m[0], m[-1] = d[0], d[-1]
+    for i in range(1, n - 1):
+        if d[i - 1] * d[i] <= 0:
+            m[i] = 0.0
+        else:
+            w1, w2 = 2 * h[i] + h[i - 1], h[i] + 2 * h[i - 1]
+            m[i] = (w1 + w2) / (w1 / d[i - 1] + w2 / d[i])
+
+    def f(x):
+        i = max(0, min(n - 2, next((k for k in range(n - 1) if x <= xs[k + 1]), n - 2)))
+        t = (x - xs[i]) / h[i]
+        h00, h10, h01, h11 = 2 * t**3 - 3 * t**2 + 1, t**3 - 2 * t**2 + t, -2 * t**3 + 3 * t**2, t**3 - t**2
+        return h00 * ys[i] + h10 * h[i] * m[i] + h01 * ys[i + 1] + h11 * h[i] * m[i + 1]
+    return f
+
+
+OGIVE_X = [0.5, 10.5, 20.5, 30.5, 40.5, 50.5, 60.5]
+OGIVE_Y = [0, 3, 10, 22, 32, 38, 40]
+
+
+def ogive_reading(target):
+    f = _pchip(OGIVE_X, OGIVE_Y)
+    lo, hi = 0.5, 60.5
+    for _ in range(60):
+        mid = (lo + hi) / 2
+        lo, hi = (mid, hi) if f(mid) < target else (lo, mid)
+    return (lo + hi) / 2
+
+
+@fig
+def ogive():
+    q1, med, q3 = ogive_reading(10), ogive_reading(20), ogive_reading(30)
+    s = Svg(780, 470, "A cumulative frequency curve (ogive) with the median and quartiles",
+            "Cumulative frequencies 0, 3, 10, 22, 32, 38 and 40 are plotted at the upper class boundaries 0.5 to 60.5 "
+            "and joined with a smooth S-shaped curve. Reading across from 10, 20 and 30 gives the lower quartile 20.5, "
+            "the median about 29 and the upper quartile about 38.")
+    heading(s, "Ogive: plot cumulative frequency at the upper class boundary")
+    ox, oy, ux, uy = 90, 400, 9.5, 8
+    X = lambda m: ox + m * ux
+    Y = lambda c: oy - c * uy
+    for c in range(0, 41, 5):
+        s.line(X(0), Y(c), X(62), Y(c), color="#e5e7eb", width=1)
+        s.text(X(0) - 10, Y(c), str(c), size=13, color=MUTED, anchor="end")
+    for b in range(0, 61, 10):
+        s.line(X(b), Y(0), X(b), Y(40), color="#e5e7eb", width=1)
+        s.text(X(b), oy + 18, str(b), size=13, color=MUTED)
+    s.line(X(0), oy, X(63), oy, color=INK, width=2)
+    s.line(X(0), oy, X(0), Y(42), color=INK, width=2)
+    f = _pchip(OGIVE_X, OGIVE_Y)
+    plot(s, f, 0.5, 60.5, X, Y, color=BLUE, width=3.2)
+    for x, y in zip(OGIVE_X, OGIVE_Y):
+        s.dot(X(x), Y(y), r=4.5, color=BLUE)
+    for c, v, name, col in ((10, q1, "Q₁ = 20.5", GREEN), (20, med, "median ≈ 29", RED), (30, q3, "Q₃ ≈ 38", PURPLE)):
+        s.line(X(0), Y(c), X(v), Y(c), color=col, width=2, dash="7 5")
+        s.line(X(v), Y(c), X(v), oy, color=col, width=2, dash="7 5", arrow="end")
+        s.label(X(v) - 52, Y(c) - 14, name, size=14, color=col, weight="bold")
+    s.text(X(30), oy + 42, "marks (upper class boundaries)", size=14, color=MUTED)
+    s.text(X(0) - 56, Y(42) - 12, "cumulative frequency", size=13, color=MUTED, anchor="start")
+    s.text(X(46), Y(14), "N = 40", size=15, weight="bold", anchor="start")
+    s.text(X(46), Y(10), "median at N/2 = 20", size=14, anchor="start")
+    s.text(X(46), Y(6), "quartiles at 10 and 30", size=14, anchor="start")
+    return s
+
+
+@fig
+def dispersion_dotplots():
+    s = Svg(780, 400, "Two data sets with the same mean but different spread",
+            "Set A: 4, 5, 5, 6, 6, 6, 7, 7, 8. Set B: 1, 2, 4, 6, 6, 6, 8, 10, 11. Both have mean 6, but set A has a range of "
+            "4 while set B has a range of 10, so set B is more spread out.")
+    heading(s, "Same mean, different spread")
+    A = [4, 5, 5, 6, 6, 6, 7, 7, 8]
+    B = [1, 2, 4, 6, 6, 6, 8, 10, 11]
+    X = lambda v: 120 + v * 50
+    for row, data, col, y, name in ((0, A, BLUE, 190, "Set A"), (1, B, GREEN, 340, "Set B")):
+        s.line(X(0), y, X(12), y, color=INK, width=2)
+        for v in range(0, 13):
+            s.line(X(v), y, X(v), y + 7, color=INK, width=1.6)
+            s.text(X(v), y + 22, str(v), size=13, color=MUTED)
+        count = {}
+        for v in data:
+            count[v] = count.get(v, 0) + 1
+            s.dot(X(v), y - 14 - (count[v] - 1) * 20, r=8, color=col)
+        s.text(60, y - 20, name, size=16, weight="bold", color=col)
+        lo, hi = min(data), max(data)
+        s.line(X(lo), y - 92, X(hi), y - 92, color=col, width=2, arrow="both")
+        s.label(X(hi) + 46, y - 92, f"range {hi - lo}", size=13, color=col, weight="bold")
+    s.line(X(6), 70, X(6), 350, color=RED, width=2, dash="7 5")
+    s.label(X(6), 66, "mean 6", size=14, color=RED, weight="bold")
+    return s
+
+
+@fig
+def probability_tree():
+    s = Svg(780, 450, "A tree diagram for picking two balls without replacement",
+            "A bag holds 5 red and 3 blue balls. The first pick is red with probability 5/8 or blue with 3/8. After a red, "
+            "the second pick is red 4/7 or blue 3/7; after a blue, red 5/7 or blue 2/7. Multiplying along the branches: "
+            "RR 20/56, RB 15/56, BR 15/56, BB 6/56.")
+    heading(s, "5 red, 3 blue: two picks without replacement")
+    O = (70, 240)
+    first = [("R", "5/8", (300, 145), RED), ("B", "3/8", (300, 335), BLUE)]
+    second = {"R": [("R", "4/7", RED, "20/56"), ("B", "3/7", BLUE, "15/56")], "B": [("R", "5/7", RED, "15/56"), ("B", "2/7", BLUE, "6/56")]}
+    s.text(300, 62, "1st pick", size=15, color=MUTED, weight="bold")
+    s.text(520, 62, "2nd pick", size=15, color=MUTED, weight="bold")
+    s.text(680, 62, "probability", size=15, color=MUTED, weight="bold")
+    s.dot(*O, r=5)
+    for name, p, P, col in first:
+        s.line(*O, P[0] - 18, P[1], color=INK, width=2.4)
+        s.label((O[0] + P[0]) / 2 - 6, (O[1] + P[1]) / 2 - 14 if P[1] < O[1] else (O[1] + P[1]) / 2 + 14, p, size=16, weight="bold")
+        s.text(*P, name, size=20, weight="bold", color=col)
+        for k, (n2, p2, c2, res) in enumerate(second[name]):
+            Q = (520, P[1] - 45 + k * 90)
+            s.line(P[0] + 16, P[1], Q[0] - 18, Q[1], color=INK, width=2.4)
+            s.label((P[0] + Q[0]) / 2, (P[1] + Q[1]) / 2 + (-14 if k == 0 else 14), p2, size=15, weight="bold")
+            s.text(*Q, n2, size=20, weight="bold", color=c2)
+            s.text(680, Q[1], f"{name}{n2}: {res}", size=16, weight="bold", color=INK)
+    note(s, "Multiply along the branches; add the outcomes you want.", 425, size=15, color=INK)
+    return s
+
+
+@fig
+def dice_sample_space():
+    s = Svg(720, 470, "The sample space for the sum of two dice",
+            "A six by six grid shows every outcome when two dice are thrown, with the sum in each cell. There are 36 "
+            "equally likely outcomes. The six cells with a sum of 7 lie on a diagonal, so the probability of a sum of 7 "
+            "is 6/36 = 1/6.")
+    heading(s, "Two dice: 36 equally likely outcomes")
+    c, x0, y0 = 52, 200, 104
+    s.text(x0 + 3 * c, y0 - 38, "first die", size=14, color=MUTED, weight="bold")
+    s.text(x0 - 70, y0 + 3 * c, "second die", size=14, color=MUTED, weight="bold")
+    for i in range(6):
+        s.text(x0 + i * c + c / 2, y0 - 2, str(i + 1), size=15, weight="bold", baseline="auto")
+        s.text(x0 - 14, y0 + i * c + c / 2, str(i + 1), size=15, weight="bold")
+    for r in range(6):
+        for k in range(6):
+            total = r + k + 2
+            hit = total == 7
+            s.rect(x0 + k * c, y0 + r * c, c, c, fill=F_RED if hit else "#ffffff", stroke=MUTED, width=1.2)
+            s.text(x0 + k * c + c / 2, y0 + r * c + c / 2, str(total), size=16, weight="bold" if hit else "normal",
+                   color=RED if hit else INK)
+    s.text(560, 200, "sum of 7:", size=16, weight="bold", color=RED, anchor="start")
+    s.text(560, 228, "6 outcomes", size=16, anchor="start")
+    s.text(560, 268, "P(7) = 6/36", size=17, weight="bold", anchor="start")
+    s.text(560, 296, "= 1/6", size=17, weight="bold", anchor="start")
+    return s
+
+
+@fig
+def tangent_gradient():
+    s = Svg(780, 440, "The gradient of a curve is the gradient of its tangent",
+            "The curve y = x² with a tangent touching it at the point (2, 4). The tangent has gradient 4, which matches "
+            "dy/dx = 2x at x = 2. A small triangle on the tangent shows a rise of 4 for a run of 1.")
+    heading(s, "y = x²: the tangent at (2, 4) has gradient dy/dx = 2x = 4")
+    ox, oy, ux, uy = 330, 400, 70, 30
+    X = lambda x: ox + x * ux
+    Y = lambda y: oy - y * uy
+    for gx in range(-4, 6):
+        s.line(X(gx), Y(-1), X(gx), Y(10), color="#e5e7eb", width=1)
+    for gy in range(-1, 11):
+        s.line(X(-4), Y(gy), X(5), Y(gy), color="#e5e7eb", width=1)
+    s.arrow(X(-4), Y(0), X(5) + 14, Y(0), color=INK, width=2)
+    s.arrow(X(0), Y(-1), X(0), Y(10) - 14, color=INK, width=2)
+    s.text(X(5) + 24, Y(0) + 4, "x", size=16, italic=True)
+    s.text(X(0) + 6, Y(10) - 24, "y", size=16, italic=True, anchor="start")
+    for gx in (-3, -2, -1, 1, 2, 3, 4):
+        s.text(X(gx), Y(0) + 18, str(gx).replace("-", "−"), size=13, color=MUTED)
+    for gy in (2, 4, 6, 8):
+        s.text(X(0) - 8, Y(gy), str(gy), size=13, color=MUTED, anchor="end")
+    plot(s, lambda x: x * x, -3.15, 3.15, X, Y, color=BLUE, width=3.2)
+    plot(s, lambda x: 4 * x - 4, 0.75, 3.5, X, Y, color=RED, width=3)
+    s.dot(X(2), Y(4), r=6, color=INK)
+    s.label(X(2) - 50, Y(4) + 2, "(2, 4)", size=15, weight="bold")
+    s.polyline([(X(2.5), Y(6)), (X(3.5), Y(6)), (X(3.5), Y(10))], color=ORANGE, width=2.4, dash="6 5")
+    s.text(X(3), Y(6) + 16, "1", size=15, weight="bold", color=ORANGE)
+    s.text(X(3.5) + 14, Y(8), "4", size=15, weight="bold", color=ORANGE, anchor="start")
+    s.label(X(-2.4), Y(7.6), "y = x²", size=16, color=BLUE, weight="bold")
+    s.label(X(3.9), Y(4.5), "tangent", size=15, color=RED, weight="bold")
+    return s
+
+
+@fig
+def area_under_curve():
+    s = Svg(780, 420, "The area under a curve found by integration",
+            "The curve y = 4x − x² rises from 0 at x = 0 to a maximum of 4 at x = 2 and returns to 0 at x = 4. The region "
+            "between the curve and the x-axis is shaded. Its area is the integral of 4x − x² from 0 to 4, which is 32/3, "
+            "about 10.7 square units.")
+    heading(s, "Area between y = 4x − x² and the x-axis")
+    ox, oy, ux, uy = 140, 350, 95, 62
+    X = lambda x: ox + x * ux
+    Y = lambda y: oy - y * uy
+    for gx in range(0, 6):
+        s.line(X(gx), Y(-0.5), X(gx), Y(4.5), color="#e5e7eb", width=1)
+    for gy in range(0, 5):
+        s.line(X(-0.5), Y(gy), X(5), Y(gy), color="#e5e7eb", width=1)
+    pts = [(X(0), Y(0))] + [(X(4 * i / 80), Y(4 * (4 * i / 80) - (4 * i / 80) ** 2)) for i in range(81)] + [(X(4), Y(0))]
+    s.polygon(pts, fill=F_GREEN, stroke="none", width=0)
+    s.arrow(X(-0.5), Y(0), X(5) + 14, Y(0), color=INK, width=2)
+    s.arrow(X(0), Y(-0.5), X(0), Y(4.5) - 10, color=INK, width=2)
+    s.text(X(5) + 24, Y(0) + 4, "x", size=16, italic=True)
+    s.text(X(0) + 6, Y(4.5) - 20, "y", size=16, italic=True, anchor="start")
+    for gx in range(1, 5):
+        s.text(X(gx), Y(0) + 18, str(gx), size=13, color=MUTED)
+    for gy in range(1, 5):
+        s.text(X(0) - 8, Y(gy), str(gy), size=13, color=MUTED, anchor="end")
+    plot(s, lambda x: 4 * x - x * x, -0.3, 4.3, X, Y, color=BLUE, width=3.2)
+    s.text(X(2), Y(1.5), "area = 32/3", size=18, weight="bold", color=GREEN)
+    s.text(X(2), Y(1.5) + 26, "≈ 10.7 units²", size=15, weight="bold", color=GREEN)
+    s.label(X(3.9), Y(3.3), "y = 4x − x²", size=16, color=BLUE, weight="bold")
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:

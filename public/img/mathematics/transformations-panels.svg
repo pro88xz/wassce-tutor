@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 700" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Four transformations of a triangle</title>
+<desc id="d">Four grids. Reflection in the y-axis: the triangle flips to the other side of the mirror line. Rotation of 90° anticlockwise about the origin: each point (x, y) goes to (−y, x). Translation by the vector (6, 1): every point moves 6 right and 1 up. Enlargement with scale factor 2, centre O: every distance from O doubles.</desc>
+<defs><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="790" height="700" rx="20" fill="#f8fafc"/>
+<text x="395.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Reflection, rotation, translation and enlargement</text>
+<text x="195.0" y="86.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Reflection in the y-axis</text>
+<line x1="45.0" y1="290.0" x2="45.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="75.0" y1="290.0" x2="75.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="105.0" y1="290.0" x2="105.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="135.0" y1="290.0" x2="135.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="165.0" y1="290.0" x2="165.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="195.0" y1="290.0" x2="195.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="225.0" y1="290.0" x2="225.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="255.0" y1="290.0" x2="255.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="285.0" y1="290.0" x2="285.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="315.0" y1="290.0" x2="315.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="345.0" y1="290.0" x2="345.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="45.0" y1="290.0" x2="345.0" y2="290.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="45.0" y1="260.0" x2="345.0" y2="260.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="45.0" y1="230.0" x2="345.0" y2="230.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="45.0" y1="200.0" x2="345.0" y2="200.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="45.0" y1="170.0" x2="345.0" y2="170.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="45.0" y1="140.0" x2="345.0" y2="140.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="45.0" y1="110.0" x2="345.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="45.0" y1="260.0" x2="345.0" y2="260.0" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="195.0" y1="290.0" x2="195.0" y2="110.0" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+<text x="186.0" y="273.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">O</text>
+<line x1="195.0" y1="290.0" x2="195.0" y2="110.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 6"/>
+<polygon points="225.0,230.0 285.0,230.0 225.0,170.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="245.0" y="211.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<polygon points="165.0,230.0 105.0,230.0 165.0,170.0" fill="#dcfce7" stroke="#15803d" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="145.0" y="211.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A′</text>
+<text x="195.0" y="315.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(x, y) → (−x, y)</text>
+<text x="585.0" y="86.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Rotation 90° anticlockwise about O</text>
+<line x1="435.0" y1="290.0" x2="435.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="465.0" y1="290.0" x2="465.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="495.0" y1="290.0" x2="495.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="525.0" y1="290.0" x2="525.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="555.0" y1="290.0" x2="555.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="585.0" y1="290.0" x2="585.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="615.0" y1="290.0" x2="615.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="645.0" y1="290.0" x2="645.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="675.0" y1="290.0" x2="675.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="705.0" y1="290.0" x2="705.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="735.0" y1="290.0" x2="735.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="435.0" y1="290.0" x2="735.0" y2="290.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="435.0" y1="260.0" x2="735.0" y2="260.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="435.0" y1="230.0" x2="735.0" y2="230.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="435.0" y1="200.0" x2="735.0" y2="200.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="435.0" y1="170.0" x2="735.0" y2="170.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="435.0" y1="140.0" x2="735.0" y2="140.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="435.0" y1="110.0" x2="735.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="435.0" y1="260.0" x2="735.0" y2="260.0" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="585.0" y1="290.0" x2="585.0" y2="110.0" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+<text x="576.0" y="273.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">O</text>
+<polygon points="615.0,230.0 705.0,230.0 615.0,170.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="645.0" y="211.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<polygon points="555.0,230.0 555.0,140.0 495.0,230.0" fill="#dcfce7" stroke="#15803d" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="535.0" y="201.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A′</text>
+<path d="M 648.8 242.9 A 66 66 0 0 0 567.9 196.2" stroke="#dc2626" stroke-width="2.6" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="585.0" y="315.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(x, y) → (−y, x)</text>
+<text x="195.0" y="416.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Translation by the vector (6, 1)</text>
+<line x1="45.0" y1="620.0" x2="45.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="75.0" y1="620.0" x2="75.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="105.0" y1="620.0" x2="105.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="135.0" y1="620.0" x2="135.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="165.0" y1="620.0" x2="165.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="195.0" y1="620.0" x2="195.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="225.0" y1="620.0" x2="225.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="255.0" y1="620.0" x2="255.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="285.0" y1="620.0" x2="285.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="315.0" y1="620.0" x2="315.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="345.0" y1="620.0" x2="345.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="45.0" y1="620.0" x2="345.0" y2="620.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="45.0" y1="590.0" x2="345.0" y2="590.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="45.0" y1="560.0" x2="345.0" y2="560.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="45.0" y1="530.0" x2="345.0" y2="530.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="45.0" y1="500.0" x2="345.0" y2="500.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="45.0" y1="470.0" x2="345.0" y2="470.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="45.0" y1="440.0" x2="345.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="45.0" y1="590.0" x2="345.0" y2="590.0" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="195.0" y1="620.0" x2="195.0" y2="440.0" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+<text x="186.0" y="603.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">O</text>
+<polygon points="75.0,530.0 135.0,530.0 75.0,470.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="95.0" y="511.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<polygon points="255.0,500.0 315.0,500.0 255.0,440.0" fill="#dcfce7" stroke="#15803d" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="275.0" y="481.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A′</text>
+<line x1="135.0" y1="530.0" x2="315.0" y2="500.0" stroke="#dc2626" stroke-width="2.6" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="195.0" y="645.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(x, y) → (x + 6, y + 1)</text>
+<text x="585.0" y="416.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Enlargement, scale factor 2, centre O</text>
+<line x1="435.0" y1="620.0" x2="435.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="465.0" y1="620.0" x2="465.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="495.0" y1="620.0" x2="495.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="525.0" y1="620.0" x2="525.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="555.0" y1="620.0" x2="555.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="585.0" y1="620.0" x2="585.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="615.0" y1="620.0" x2="615.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="645.0" y1="620.0" x2="645.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="675.0" y1="620.0" x2="675.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="705.0" y1="620.0" x2="705.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="735.0" y1="620.0" x2="735.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="435.0" y1="620.0" x2="735.0" y2="620.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="435.0" y1="590.0" x2="735.0" y2="590.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="435.0" y1="560.0" x2="735.0" y2="560.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="435.0" y1="530.0" x2="735.0" y2="530.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="435.0" y1="500.0" x2="735.0" y2="500.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="435.0" y1="470.0" x2="735.0" y2="470.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="435.0" y1="440.0" x2="735.0" y2="440.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="435.0" y1="590.0" x2="735.0" y2="590.0" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="585.0" y1="620.0" x2="585.0" y2="440.0" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+<text x="576.0" y="603.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">O</text>
+<line x1="585.0" y1="590.0" x2="705.0" y2="530.0" stroke="#dc2626" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="6 5"/>
+<line x1="585.0" y1="590.0" x2="645.0" y2="470.0" stroke="#dc2626" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="6 5"/>
+<line x1="585.0" y1="590.0" x2="645.0" y2="530.0" stroke="#dc2626" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="6 5"/>
+<polygon points="645.0,530.0 705.0,530.0 645.0,470.0" fill="#dcfce7" stroke="#15803d" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="665.0" y="511.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A′</text>
+<polygon points="615.0,560.0 645.0,560.0 615.0,530.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="625.0" y="551.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<text x="585.0" y="645.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(x, y) → (2x, 2y)</text>
+</svg>

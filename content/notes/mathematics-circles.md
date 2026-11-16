@@ -60,13 +60,18 @@ Radii are all equal, so **any triangle with two radii as sides is isosceles**. T
 :::callout{type=worked-example}
 **O is the centre of the circle. A, B and C are on the circle, and $\angle AOB = 130°$. Find $\angle ACB$ (C on the major arc).**
 
-$$\angle ACB = \tfrac12 \times 130° = 65° \quad\text{(angle at the centre is twice the angle at the circumference)}$$
+$$\angle ACB = \tfrac12 \times 130° = 65°$$
+
+(The angle at the centre is twice the angle at the circumference.)
 :::
 
 :::callout{type=worked-example}
 **PQRS is a cyclic quadrilateral with $\angle P = 3x + 10°$ and $\angle R = 2x - 5°$. Find $x$ and the angles.**
 
-$$3x + 10 + 2x - 5 = 180 \quad\text{(opposite angles of a cyclic quadrilateral)}$$
+$$3x + 10 + 2x - 5 = 180$$
+
+(Opposite angles of a cyclic quadrilateral add up to $180°$.)
+
 $$5x = 175 \;\Rightarrow\; x = 35$$
 
 **$\angle P = 115°$, $\angle R = 65°$.**

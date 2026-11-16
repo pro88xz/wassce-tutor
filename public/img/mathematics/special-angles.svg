@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Exact values from two special triangles</title>
+<desc id="d">Left: half of an equilateral triangle of side 2 gives a right-angled triangle with sides 1, root 3 and 2, and angles 30, 60 and 90 degrees. Right: an isosceles right-angled triangle with equal sides 1 has hypotenuse root 2 and two angles of 45 degrees.</desc>
+<defs></defs>
+<rect width="780" height="400" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Two triangles give every exact value</text>
+<path d="M 200.0 139.5 L 310.0 330.0 L 200.0 330.0" stroke="#475569" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6"/>
+<polygon points="90.0,330.0 200.0,330.0 200.0,139.5" fill="#dbeafe" stroke="#2563eb" stroke-width="3" stroke-linejoin="round"/>
+<path d="M 186.0 330.0 L 186.0 316.0 L 200.0 316.0" stroke="#2563eb" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 124.0 330.0 A 34 34 0 0 0 107.0 300.6" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="138.5" y="302.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">60°</text>
+<path d="M 180.0 174.1 A 40 40 0 0 0 200.0 179.5" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="184.0" y="199.4" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">30°</text>
+<text x="145.0" y="354.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="218.0" y="234.7" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">√3</text>
+<rect x="117.0" y="220.7" width="20.1" height="28.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="127.0" y="234.7" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2</text>
+<text x="200.0" y="380.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">half an equilateral triangle</text>
+<polygon points="470.0,330.0 630.0,330.0 630.0,170.0" fill="#dcfce7" stroke="#15803d" stroke-width="3" stroke-linejoin="round"/>
+<path d="M 616.0 330.0 L 616.0 316.0 L 630.0 316.0" stroke="#15803d" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 510.0 330.0 A 40 40 0 0 0 498.3 301.7" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="529.1" y="305.5" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">45°</text>
+<path d="M 606.0 194.0 A 34 34 0 0 0 630.0 204.0" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="608.6" y="221.7" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">45°</text>
+<text x="550.0" y="354.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="646.0" y="250.0" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">1</text>
+<rect x="514.9" y="228.0" width="30.2" height="28.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="530.0" y="242.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">√2</text>
+<text x="560.0" y="380.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">half a square</text>
+</svg>

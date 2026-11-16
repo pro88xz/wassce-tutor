@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 430" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A two-stage journey on bearings 060° and 150°</title>
+<desc id="d">A boat sails 8 km from A to B on a bearing of 060°, then 6 km from B to C on a bearing of 150°. The angle at B is 90°, so AC = 10 km by Pythagoras, and the bearing of C from A is about 097°.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="780" height="430" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">8 km on 060°, then 6 km on 150°</text>
+<line x1="110.0" y1="300.0" x2="110.0" y2="190.0" stroke="#475569" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="110.0" y="176.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">N</text>
+<line x1="345.6" y1="164.0" x2="345.6" y2="64.0" stroke="#475569" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="345.6" y="50.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">N</text>
+<line x1="110.0" y1="300.0" x2="447.6" y2="340.7" stroke="#dc2626" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="9 6"/>
+<line x1="110.0" y1="300.0" x2="345.6" y2="164.0" stroke="#2563eb" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="345.6" y1="164.0" x2="447.6" y2="340.7" stroke="#15803d" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M 110.0 252.0 A 48 48 0 0 1 151.6 276.0" stroke="#2563eb" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="143.8" y="236.4" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">60°</text>
+<path d="M 345.6 130.0 A 34 34 0 0 1 362.6 193.4" stroke="#15803d" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="394.1" y="136.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">150°</text>
+<path d="M 333.4 171.0 L 340.4 183.1 L 352.6 176.1" stroke="#0f172a" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="110.0" cy="300.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="94.0" y="314.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<circle cx="345.6" cy="164.0" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="325.6" y="152.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B</text>
+<circle cx="447.6" cy="340.7" r="5.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="461.6" y="350.7" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C</text>
+<rect x="192.0" y="203.5" width="43.6" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="213.8" y="216.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">8 km</text>
+<rect x="408.8" y="239.8" width="43.6" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="430.6" y="252.3" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6 km</text>
+<rect x="252.8" y="329.8" width="52.0" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="278.8" y="342.3" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">10 km</text>
+<text x="560.0" y="150.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">∠ABC = 150° − 60° = 90°</text>
+<text x="560.0" y="190.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">AC = √(8² + 6²) = 10 km</text>
+<text x="560.0" y="230.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">∠BAC = tan⁻¹(6/8) ≈ 36.9°</text>
+<text x="560.0" y="270.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">bearing of C from A</text>
+<text x="560.0" y="296.0" font-size="16" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">≈ 060° + 36.9° ≈ 097°</text>
+</svg>
