@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Complete and incomplete metamorphosis in insect pests</title>
+<desc id="d">Left: complete metamorphosis, as in the stem borer moth, beetles and armyworm: egg, larva (caterpillar or grub), pupa and adult. The larva usually does the damage. Right: incomplete metamorphosis, as in the grasshopper, aphids and bugs: egg, nymph (a small wingless adult) and adult. Nymphs and adults both feed on crops.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="800" height="420" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Insect life cycles: where the damage is done</text>
+<text x="200.0" y="70.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Complete metamorphosis</text>
+<text x="200.0" y="92.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">moths, beetles, armyworm</text>
+<rect x="135.0" y="115.0" width="130.0" height="50.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="200.0" y="140.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Egg</text>
+<rect x="245.0" y="225.0" width="130.0" height="50.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="310.0" y="240.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Larva</text>
+<text x="310.0" y="260.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">feeds: damage!</text>
+<rect x="135.0" y="335.0" width="130.0" height="50.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="200.0" y="360.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Pupa</text>
+<rect x="25.0" y="225.0" width="130.0" height="50.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="90.0" y="250.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Adult</text>
+<line x1="200.0" y1="171.0" x2="310.0" y2="219.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="310.0" y1="281.0" x2="200.0" y2="329.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="200.0" y1="329.0" x2="90.0" y2="281.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="90.0" y1="219.0" x2="200.0" y2="171.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="600.0" y="70.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Incomplete metamorphosis</text>
+<text x="600.0" y="92.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">grasshoppers, aphids, bugs</text>
+<rect x="540.0" y="125.0" width="120.0" height="50.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="600.0" y="150.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Egg</text>
+<rect x="626.6" y="275.0" width="120.0" height="50.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="686.6" y="290.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Nymph</text>
+<text x="686.6" y="310.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">feeds</text>
+<rect x="453.4" y="275.0" width="120.0" height="50.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="513.4" y="290.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Adult</text>
+<text x="513.4" y="310.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">feeds</text>
+<line x1="600.0" y1="181.0" x2="686.6" y2="269.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="620.6" y1="300.0" x2="579.4" y2="300.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="513.4" y1="269.0" x2="600.0" y2="181.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="400.0" y="405.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Control is easiest at the stage that does the damage, while it is young.</text>
+</svg>
