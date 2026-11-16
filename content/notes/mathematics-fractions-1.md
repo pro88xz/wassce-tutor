@@ -348,47 +348,67 @@ The foundational skill is **always simplifying to lowest terms**. WAEC examiners
 
 ## Practice problems
 
+Try each question first, then open the answer to check your working.
+
 **1.** Simplify $\dfrac{24}{36}$.
+
+:::reveal{title="Show the answer"}
+GCF$(24, 36) = 12$. So $\dfrac{24}{36} = \dfrac{2}{3}$.
+:::
 
 **2.** Simplify $\dfrac{90}{135}$.
 
+:::reveal{title="Show the answer"}
+GCF$(90, 135) = 45$. So $\dfrac{90}{135} = \dfrac{2}{3}$.
+:::
+
 **3.** Convert $4\tfrac{2}{5}$ to an improper fraction.
+
+:::reveal{title="Show the answer"}
+$4\tfrac{2}{5} = \dfrac{(4 \times 5) + 2}{5} = \dfrac{22}{5}$.
+:::
 
 **4.** Convert $\dfrac{29}{7}$ to a mixed number.
 
+:::reveal{title="Show the answer"}
+$29 \div 7 = 4$ remainder $1$. So $\dfrac{29}{7} = 4\tfrac{1}{7}$.
+:::
+
 **5.** Compare: which is greater, $\dfrac{5}{8}$ or $\dfrac{7}{12}$?
+
+:::reveal{title="Show the answer"}
+Cross-multiply: $5 \times 12 = 60$; $8 \times 7 = 56$. $60 > 56$, so $\dfrac{5}{8} > \dfrac{7}{12}$.
+:::
 
 **6.** Compare: $\dfrac{4}{9}$ vs $\dfrac{5}{11}$.
 
+:::reveal{title="Show the answer"}
+Cross-multiply: $4 \times 11 = 44$; $9 \times 5 = 45$. $44 < 45$, so $\dfrac{4}{9} < \dfrac{5}{11}$.
+:::
+
 **7.** Are $\dfrac{8}{12}$ and $\dfrac{14}{21}$ equivalent?
+
+:::reveal{title="Show the answer"}
+Cross-multiply: $8 \times 21 = 168$; $12 \times 14 = 168$. Equal, so **yes** they are equivalent. (Both simplify to $\dfrac{2}{3}$.)
+:::
 
 **8.** Arrange in ascending order: $\dfrac{3}{4}, \dfrac{5}{6}, \dfrac{7}{12}, \dfrac{2}{3}$.
 
+:::reveal{title="Show the answer"}
+Common denominator: LCM$(4, 6, 12, 3) = 12$. Convert: $\dfrac{3}{4} = \dfrac{9}{12}$; $\dfrac{5}{6} = \dfrac{10}{12}$; $\dfrac{7}{12} = \dfrac{7}{12}$; $\dfrac{2}{3} = \dfrac{8}{12}$. Order: $7 < 8 < 9 < 10$. Answer: $\dfrac{7}{12} < \dfrac{2}{3} < \dfrac{3}{4} < \dfrac{5}{6}$.
+:::
+
 **9.** A bag contains $\dfrac{3}{5}$ kg of rice. If $\dfrac{1}{4}$ kg is used, what fraction of the original bag is left?
+
+:::reveal{title="Show the answer"}
+This requires subtraction (covered fully in the next lesson). Common denominator: LCM$(5, 4) = 20$. $\dfrac{3}{5} = \dfrac{12}{20}$. $\dfrac{1}{4} = \dfrac{5}{20}$. Difference: $\dfrac{12 - 5}{20} = \dfrac{7}{20}$ kg left. As a fraction of the original $\dfrac{3}{5}$ kg bag: $\dfrac{7/20}{3/5} = \dfrac{7}{20} \times \dfrac{5}{3} = \dfrac{35}{60} = \dfrac{7}{12}$ of the bag is left.
+:::
 
 **10.** Find a fraction equivalent to $\dfrac{3}{8}$ with a denominator of $40$.
 
-### Worked solutions
-
-**1.** GCF$(24, 36) = 12$. So $\dfrac{24}{36} = \dfrac{2}{3}$.
-
-**2.** GCF$(90, 135) = 45$. So $\dfrac{90}{135} = \dfrac{2}{3}$.
-
-**3.** $4\tfrac{2}{5} = \dfrac{(4 \times 5) + 2}{5} = \dfrac{22}{5}$.
-
-**4.** $29 \div 7 = 4$ remainder $1$. So $\dfrac{29}{7} = 4\tfrac{1}{7}$.
-
-**5.** Cross-multiply: $5 \times 12 = 60$; $8 \times 7 = 56$. $60 > 56$, so $\dfrac{5}{8} > \dfrac{7}{12}$.
-
-**6.** Cross-multiply: $4 \times 11 = 44$; $9 \times 5 = 45$. $44 < 45$, so $\dfrac{4}{9} < \dfrac{5}{11}$.
-
-**7.** Cross-multiply: $8 \times 21 = 168$; $12 \times 14 = 168$. Equal, so **yes** they are equivalent. (Both simplify to $\dfrac{2}{3}$.)
-
-**8.** Common denominator: LCM$(4, 6, 12, 3) = 12$. Convert: $\dfrac{3}{4} = \dfrac{9}{12}$; $\dfrac{5}{6} = \dfrac{10}{12}$; $\dfrac{7}{12} = \dfrac{7}{12}$; $\dfrac{2}{3} = \dfrac{8}{12}$. Order: $7 < 8 < 9 < 10$. Answer: $\dfrac{7}{12} < \dfrac{2}{3} < \dfrac{3}{4} < \dfrac{5}{6}$.
-
-**9.** This requires subtraction (covered fully in the next lesson). Common denominator: LCM$(5, 4) = 20$. $\dfrac{3}{5} = \dfrac{12}{20}$. $\dfrac{1}{4} = \dfrac{5}{20}$. Difference: $\dfrac{12 - 5}{20} = \dfrac{7}{20}$ kg left. As a fraction of the original $\dfrac{3}{5}$ kg bag: $\dfrac{7/20}{3/5} = \dfrac{7}{20} \times \dfrac{5}{3} = \dfrac{35}{60} = \dfrac{7}{12}$ of the bag is left.
-
-**10.** $\dfrac{3}{8} = \dfrac{?}{40}$. Multiply both by $5$: $\dfrac{3 \times 5}{8 \times 5} = \dfrac{15}{40}$.
+:::reveal{title="Show the answer"}
+$\dfrac{3}{8} = \dfrac{?}{40}$. Multiply both by $5$: $\dfrac{3 \times 5}{8 \times 5} = \dfrac{15}{40}$.
+:::
 
 ## What's next
 

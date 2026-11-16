@@ -100,18 +100,37 @@ $y = k\sqrt{x}$: $6 = 3k$, so $k = 2$. Then $y = 2 \times 5 = 10$.
 Expect to **find the constant and the equation** of a variation and use it, especially **joint variation with an inverse square**, **partial variation from two pairs of values**, and **inverse variation in speed–time or workers–days contexts**. Always write the equation connecting the variables; it carries marks.
 :::
 
-## Quick check
+## Practice
 
-1. $p$ varies inversely as $q$; $p = 10$ when $q = 3$. Find $p$ when $q = 5$.
-2. $y \propto x^2$ and $y = 50$ when $x = 5$. Find $y$ when $x = 3$.
-3. $m$ varies jointly as $n$ and the square root of $t$; $m = 24$ when $n = 3$ and $t = 4$. Find $m$ when $n = 5$ and $t = 9$.
-4. $C = a + bn$; $C = 900$ when $n = 10$ and $C = 1\,400$ when $n = 20$. Find $a$ and $b$.
-5. Which graph is a straight line that does not pass through the origin?
+Try each question first, then open the answer to check your working.
 
-**Answers:**
+**1.** $p$ varies inversely as $q$; $p = 10$ when $q = 3$. Find $p$ when $q = 5$.
 
-1. $k = 30$, so $p = 6$.
-2. $k = 2$, so $y = 18$.
-3. $24 = k(3)(2)$, $k = 4$; $m = 4(5)(3) = 60$.
-4. $10b = 500$, $b = 50$; $a = 900 - 500 = 400$.
-5. Partial variation ($y = a + kx$ with $a \ne 0$).
+:::reveal{title="Show the answer"}
+$k = 30$, so $p = 6$.
+:::
+
+**2.** $y \propto x^2$ and $y = 50$ when $x = 5$. Find $y$ when $x = 3$.
+
+:::reveal{title="Show the answer"}
+$k = 2$, so $y = 18$.
+:::
+
+**3.** $m$ varies jointly as $n$ and the square root of $t$; $m = 24$ when $n = 3$ and $t = 4$. Find $m$ when $n = 5$ and $t = 9$.
+
+:::reveal{title="Show the answer"}
+$24 = k(3)(2)$, $k = 4$; $m = 4(5)(3) = 60$.
+:::
+
+**4.** $C = a + bn$; $C = 900$ when $n = 10$ and $C = 1\,400$ when $n = 20$. Find $a$ and $b$.
+
+:::reveal{title="Show the answer"}
+$10b = 500$, $b = 50$; $a = 900 - 500 = 400$.
+:::
+
+**5.** Which graph is a straight line that does not pass through the origin?
+
+:::reveal{title="Show the answer"}
+Partial variation ($y = a + kx$ with $a \ne 0$).
+:::
+

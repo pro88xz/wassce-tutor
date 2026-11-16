@@ -247,11 +247,25 @@ Master the vocabulary and notation before moving to operations.
 
 ## Practice problems
 
+Try each question first, then open the answer to check your working.
+
 **1.** List the elements of $A$ $= \{x : x$  is a positive multiple of  $3$  less than  $20\}$.
+
+:::reveal{title="Show the answer"}
+$A = \{3, 6, 9, 12, 15, 18\}$.
+:::
 
 **2.** Find $n(A)$ where $A = \{a, b, c, d, e, f, g, h\}$.
 
+:::reveal{title="Show the answer"}
+$n(A) = 8$.
+:::
+
 **3.** Find $n(B)$ where $B$ $= \{x : x$  is a vowel in the word "SIERRA LEONE"$\}$.
+
+:::reveal{title="Show the answer"}
+Vowels in "SIERRA LEONE": $I, E, A, O$ (each listed once). $n(B) = 4$.
+:::
 
 **4.** State whether each is True or False.
 (a) $5 \in \{1, 2, 3, 4, 5, 6\}$
@@ -259,39 +273,45 @@ Master the vocabulary and notation before moving to operations.
 (c) $\{2, 4\} \subseteq \{2, 4, 6, 8\}$
 (d) $\emptyset \subseteq \{a, b\}$
 
+:::reveal{title="Show the answer"}
+(a) True. (b) False. (c) True. (d) True.
+:::
+
 **5.** How many subsets does a set with $6$ elements have?
+
+:::reveal{title="Show the answer"}
+$2^6 = 64$.
+:::
 
 **6.** Are $\{1, 2, 3\}$ and $\{x, y, z\}$ equal? Equivalent?
 
+:::reveal{title="Show the answer"}
+Equal: no (different elements). Equivalent: yes (both have $3$ elements).
+:::
+
 **7.** What is $n(\{1, 2, 3, 2, 1\})$?
+
+:::reveal{title="Show the answer"}
+$n = 3$ (only $\{1, 2, 3\}$ distinct).
+:::
 
 **8.** List all subsets of $\{a, b, c\}$.
 
+:::reveal{title="Show the answer"}
+$\emptyset$, $\{a\}$, $\{b\}$, $\{c\}$, $\{a, b\}$, $\{a, c\}$, $\{b, c\}$, $\{a, b, c\}$. Total: $8 = 2^3$.
+:::
+
 **9.** Is $\emptyset = \{0\}$?
+
+:::reveal{title="Show the answer"}
+No. $\emptyset$ has $0$ elements; $\{0\}$ has $1$ element (the element being $0$).
+:::
 
 **10.** How many proper subsets does a set with $4$ elements have?
 
-### Worked solutions
-
-**1.** $A = \{3, 6, 9, 12, 15, 18\}$.
-
-**2.** $n(A) = 8$.
-
-**3.** Vowels in "SIERRA LEONE": $I, E, A, O$ (each listed once). $n(B) = 4$.
-
-**4.** (a) True. (b) False. (c) True. (d) True.
-
-**5.** $2^6 = 64$.
-
-**6.** Equal: no (different elements). Equivalent: yes (both have $3$ elements).
-
-**7.** $n = 3$ (only $\{1, 2, 3\}$ distinct).
-
-**8.** $\emptyset$, $\{a\}$, $\{b\}$, $\{c\}$, $\{a, b\}$, $\{a, c\}$, $\{b, c\}$, $\{a, b, c\}$. Total: $8 = 2^3$.
-
-**9.** No. $\emptyset$ has $0$ elements; $\{0\}$ has $1$ element (the element being $0$).
-
-**10.** $2^4 - 1 = 15$ (all subsets minus the set itself).
+:::reveal{title="Show the answer"}
+$2^4 - 1 = 15$ (all subsets minus the set itself).
+:::
 
 ## What's next
 

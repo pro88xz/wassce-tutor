@@ -121,18 +121,37 @@ To convert **into leones**, multiply by the rate; to convert **out of leones**, 
 Expect **sharing problems** (including given one share or a difference), **three-part ratios**, **workers-and-days inverse proportion**, **average speed over two stages**, and **currency conversion**. Write down the value of one part or one unit clearly before finishing.
 :::
 
-## Quick check
+## Practice
 
-1. Share NLe 2,400 in the ratio 5 : 7.
-2. In the ratio 4 : 9, the larger share is NLe 450. Find the smaller share.
-3. 8 men dig a trench in 6 days. How long would 12 men take?
-4. Convert 72 km/h to m/s.
-5. If $p : q = 3 : 4$ and $q : r = 6 : 5$, find $p : q : r$.
+Try each question first, then open the answer to check your working.
 
-**Answers:**
+**1.** Share NLe 2,400 in the ratio 5 : 7.
 
-1. One part $= 200$: NLe 1,000 and NLe 1,400.
-2. One part $= 50$, so the smaller share is NLe 200.
-3. $48 \div 12 = 4$ days.
-4. $72 \times \tfrac{5}{18} = 20$ m/s.
-5. $9 : 12 : 10$.
+:::reveal{title="Show the answer"}
+One part $= 200$: NLe 1,000 and NLe 1,400.
+:::
+
+**2.** In the ratio 4 : 9, the larger share is NLe 450. Find the smaller share.
+
+:::reveal{title="Show the answer"}
+One part $= 50$, so the smaller share is NLe 200.
+:::
+
+**3.** 8 men dig a trench in 6 days. How long would 12 men take?
+
+:::reveal{title="Show the answer"}
+$48 \div 12 = 4$ days.
+:::
+
+**4.** Convert 72 km/h to m/s.
+
+:::reveal{title="Show the answer"}
+$72 \times \tfrac{5}{18} = 20$ m/s.
+:::
+
+**5.** If $p : q = 3 : 4$ and $q : r = 6 : 5$, find $p : q : r$.
+
+:::reveal{title="Show the answer"}
+$9 : 12 : 10$.
+:::
+

@@ -108,18 +108,37 @@ Check: $\tfrac{1}{3} = \tfrac{4}{12}$ and $\tfrac{1}{2} = \tfrac{6}{12}$, so $\t
 Expect **expressions mixing negative numbers, fractions and BODMAS**, **temperature and money problems** with negatives, and questions on **ordering and classifying numbers**. Show each step; a single sign error loses the answer mark but not the method marks.
 :::
 
-## Quick check
+## Practice
 
-1. Evaluate $-15 - (-7) + 3$.
-2. Evaluate $(-48) \div (-6) \times (-2)$.
-3. Evaluate $-\tfrac{3}{5} - \tfrac{1}{4}$.
-4. Evaluate $-2^4 + (-2)^4$.
-5. The temperature at night is $-3\,°\text{C}$ and rises by $11\,°\text{C}$ by noon. Find the noon temperature.
+Try each question first, then open the answer to check your working.
 
-**Answers:**
+**1.** Evaluate $-15 - (-7) + 3$.
 
-1. $-15 + 7 + 3 = -5$.
-2. $8 \times (-2) = -16$.
-3. $-\tfrac{12}{20} - \tfrac{5}{20} = -\tfrac{17}{20}$.
-4. $-16 + 16 = 0$.
-5. $-3 + 11 = 8\,°\text{C}$.
+:::reveal{title="Show the answer"}
+$-15 + 7 + 3 = -5$.
+:::
+
+**2.** Evaluate $(-48) \div (-6) \times (-2)$.
+
+:::reveal{title="Show the answer"}
+$8 \times (-2) = -16$.
+:::
+
+**3.** Evaluate $-\tfrac{3}{5} - \tfrac{1}{4}$.
+
+:::reveal{title="Show the answer"}
+$-\tfrac{12}{20} - \tfrac{5}{20} = -\tfrac{17}{20}$.
+:::
+
+**4.** Evaluate $-2^4 + (-2)^4$.
+
+:::reveal{title="Show the answer"}
+$-16 + 16 = 0$.
+:::
+
+**5.** The temperature at night is $-3\,°\text{C}$ and rises by $11\,°\text{C}$ by noon. Find the noon temperature.
+
+:::reveal{title="Show the answer"}
+$-3 + 11 = 8\,°\text{C}$.
+:::
+

@@ -309,55 +309,79 @@ The foundational skill is **recognizing the pattern** and **identifying the para
 
 For each sequence, identify whether it is AP, GP, both, or neither. If it is AP, give the common difference. If it is GP, give the common ratio.
 
+Try each question first, then open the answer to check your working.
+
 **1.** $4, 9, 14, 19, 24$
+
+:::reveal{title="Show the answer"}
+Differences: $5, 5, 5, 5$. AP, $d = 5$.
+:::
 
 **2.** $1, 5, 25, 125$
 
+:::reveal{title="Show the answer"}
+Ratios: $5, 5, 5$. GP, $r = 5$.
+:::
+
 **3.** $8, 4, 2, 1$
+
+:::reveal{title="Show the answer"}
+Ratios: $\dfrac{1}{2}, \dfrac{1}{2}, \dfrac{1}{2}$. GP, $r = \dfrac{1}{2}$. (Differences: $-4, -2, -1$ — not constant.)
+:::
 
 **4.** $-2, 1, 4, 7, 10$
 
+:::reveal{title="Show the answer"}
+Differences: $3, 3, 3, 3$. AP, $d = 3$.
+:::
+
 **5.** $3, 3, 3, 3, 3$
+
+:::reveal{title="Show the answer"}
+Constant sequence. Both AP ($d = 0$) and GP ($r = 1$).
+:::
 
 **6.** $1, 2, 4, 7, 11$
 
+:::reveal{title="Show the answer"}
+Differences: $1, 2, 3, 4$ — not constant. Ratios: $2, 2, 1.75, \ldots$ — not constant. Neither.
+:::
+
 **7.** $-1, 3, -9, 27, -81$
+
+:::reveal{title="Show the answer"}
+Ratios: $-3, -3, -3, -3$. GP, $r = -3$.
+:::
 
 **8.** $100, 95, 90, 85$
 
+:::reveal{title="Show the answer"}
+Differences: $-5, -5, -5$. AP, $d = -5$.
+:::
+
 **9.** Find the next two terms of $5, 8, 11, 14, \ldots$
+
+:::reveal{title="Show the answer"}
+AP with $a = 5, d = 3$. Next two: $17, 20$.
+:::
 
 **10.** Find the next two terms of $\dfrac{1}{2}, 1, 2, 4, \ldots$
 
+:::reveal{title="Show the answer"}
+GP with $a = \dfrac{1}{2}, r = 2$. Next two: $8, 16$.
+:::
+
 **11.** *A small business sells $100$ units in month $1$. Each month, sales grow by $10\%$. Identify the type of sequence.*
+
+:::reveal{title="Show the answer"}
+GP (constant percentage growth = constant ratio).
+:::
 
 **12.** *Aminata saves $20$ NLe in week $1$, then $5$ NLe more each subsequent week. Identify the type.*
 
-### Worked solutions
-
-**1.** Differences: $5, 5, 5, 5$. AP, $d = 5$.
-
-**2.** Ratios: $5, 5, 5$. GP, $r = 5$.
-
-**3.** Ratios: $\dfrac{1}{2}, \dfrac{1}{2}, \dfrac{1}{2}$. GP, $r = \dfrac{1}{2}$. (Differences: $-4, -2, -1$ — not constant.)
-
-**4.** Differences: $3, 3, 3, 3$. AP, $d = 3$.
-
-**5.** Constant sequence. Both AP ($d = 0$) and GP ($r = 1$).
-
-**6.** Differences: $1, 2, 3, 4$ — not constant. Ratios: $2, 2, 1.75, \ldots$ — not constant. Neither.
-
-**7.** Ratios: $-3, -3, -3, -3$. GP, $r = -3$.
-
-**8.** Differences: $-5, -5, -5$. AP, $d = -5$.
-
-**9.** AP with $a = 5, d = 3$. Next two: $17, 20$.
-
-**10.** GP with $a = \dfrac{1}{2}, r = 2$. Next two: $8, 16$.
-
-**11.** GP (constant percentage growth = constant ratio).
-
-**12.** AP (constant addition each week).
+:::reveal{title="Show the answer"}
+AP (constant addition each week).
+:::
 
 ## What's next
 

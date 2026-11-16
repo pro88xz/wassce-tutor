@@ -111,18 +111,37 @@ An argument is **valid** if the conclusion must be true whenever all the premise
 Expect to **complete truth tables**, to **identify tautologies**, to **write the converse or contrapositive** of a statement, to **translate sentences into symbols**, and to **choose the valid conclusion** from given premises. Lay out truth tables in full; partial tables lose marks.
 :::
 
-## Quick check
+## Practice
 
-1. When is $p \to q$ false?
-2. How many rows does a truth table for $p$, $q$ and $r$ need?
-3. Write the contrapositive of "If $x = 3$, then $x^2 = 9$."
-4. Is $p \wedge \sim p$ a tautology or a contradiction?
-5. "If Musa studies, he passes. Musa passed. So Musa studied." Is this valid?
+Try each question first, then open the answer to check your working.
 
-**Answers:**
+**1.** When is $p \to q$ false?
 
-1. Only when $p$ is true and $q$ is false.
-2. $2^3 = 8$.
-3. "If $x^2 \ne 9$, then $x \ne 3$."
-4. A contradiction.
-5. Not valid: it affirms the consequent (he may have passed for another reason).
+:::reveal{title="Show the answer"}
+Only when $p$ is true and $q$ is false.
+:::
+
+**2.** How many rows does a truth table for $p$, $q$ and $r$ need?
+
+:::reveal{title="Show the answer"}
+$2^3 = 8$.
+:::
+
+**3.** Write the contrapositive of "If $x = 3$, then $x^2 = 9$."
+
+:::reveal{title="Show the answer"}
+"If $x^2 \ne 9$, then $x \ne 3$."
+:::
+
+**4.** Is $p \wedge \sim p$ a tautology or a contradiction?
+
+:::reveal{title="Show the answer"}
+A contradiction.
+:::
+
+**5.** "If Musa studies, he passes. Musa passed. So Musa studied." Is this valid?
+
+:::reveal{title="Show the answer"}
+Not valid: it affirms the consequent (he may have passed for another reason).
+:::
+

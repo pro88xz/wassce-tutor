@@ -122,18 +122,37 @@ The mantissa 0.2466 is the log of 1.765, and the characteristic $\bar{1}$ places
 Expect to **simplify expressions using the laws**, to **evaluate logs from given values** of $\log 2$ and $\log 3$, to **solve logarithmic equations** (often reducing to quadratics), and to **use tables** in Paper 2 calculations. Never write $\log(a + b) = \log a + \log b$.
 :::
 
-## Quick check
+## Practice
 
-1. Evaluate $\log_3 54 - \log_3 2$.
-2. Simplify $\log 5 + \log 20$.
-3. Given $\log 2 = 0.3010$, find $\log 0.8$.
-4. Solve $\log_3 (2x - 1) = 2$.
-5. Solve $\log_2 x + \log_2 (x + 2) = 3$.
+Try each question first, then open the answer to check your working.
 
-**Answers:**
+**1.** Evaluate $\log_3 54 - \log_3 2$.
 
-1. $\log_3 27 = 3$.
-2. $\log 100 = 2$.
-3. $\log \tfrac{8}{10} = 3(0.3010) - 1 = -0.0970$ (or $\bar{1}.9030$).
-4. $2x - 1 = 9$, so $x = 5$.
-5. $x(x + 2) = 8$, $x^2 + 2x - 8 = 0$, $(x + 4)(x - 2) = 0$; reject $-4$, so $x = 2$.
+:::reveal{title="Show the answer"}
+$\log_3 27 = 3$.
+:::
+
+**2.** Simplify $\log 5 + \log 20$.
+
+:::reveal{title="Show the answer"}
+$\log 100 = 2$.
+:::
+
+**3.** Given $\log 2 = 0.3010$, find $\log 0.8$.
+
+:::reveal{title="Show the answer"}
+$\log \tfrac{8}{10} = 3(0.3010) - 1 = -0.0970$ (or $\bar{1}.9030$).
+:::
+
+**4.** Solve $\log_3 (2x - 1) = 2$.
+
+:::reveal{title="Show the answer"}
+$2x - 1 = 9$, so $x = 5$.
+:::
+
+**5.** Solve $\log_2 x + \log_2 (x + 2) = 3$.
+
+:::reveal{title="Show the answer"}
+$x(x + 2) = 8$, $x^2 + 2x - 8 = 0$, $(x + 4)(x - 2) = 0$; reject $-4$, so $x = 2$.
+:::
+

@@ -347,12 +347,18 @@ Master the conversions; the rest of the topic builds on this.
 
 ## Practice problems
 
+Try each question first, then open the answer to check your working.
+
 **1.** Convert to a fraction in simplest form.
 (a) $40\%$
 (b) $75\%$
 (c) $35\%$
 (d) $87\dfrac{1}{2}\%$
 (e) $150\%$
+
+:::reveal{title="Show the answer"}
+(a) $\dfrac{2}{5}$. (b) $\dfrac{3}{4}$. (c) $\dfrac{7}{20}$. (d) $\dfrac{7}{8}$. (e) $\dfrac{3}{2} = 1.5$.
+:::
 
 **2.** Convert to a decimal.
 (a) $25\%$
@@ -361,12 +367,20 @@ Master the conversions; the rest of the topic builds on this.
 (d) $0.2\%$
 (e) $200\%$
 
+:::reveal{title="Show the answer"}
+(a) $0.25$. (b) $0.875$. (c) $0.05$. (d) $0.002$. (e) $2$.
+:::
+
 **3.** Convert to a percentage.
 (a) $\dfrac{3}{8}$
 (b) $0.85$
 (c) $\dfrac{5}{6}$
 (d) $1.4$
 (e) $\dfrac{17}{20}$
+
+:::reveal{title="Show the answer"}
+(a) $37.5\%$. (b) $85\%$. (c) $83\dfrac{1}{3}\%$. (d) $140\%$. (e) $85\%$.
+:::
 
 **4.** Express the first as a percentage of the second.
 (a) $15$ out of $25$.
@@ -375,55 +389,69 @@ Master the conversions; the rest of the topic builds on this.
 (d) $45$ minutes out of $3$ hours.
 (e) $150$ NLe out of $400$ NLe.
 
+:::reveal{title="Show the answer"}
+(a) $60\%$. (b) $75\%$. (c) $\dfrac{250}{4000} \times 100 = 6.25\%$. (d) $\dfrac{45}{180} \times 100 = 25\%$. (e) $\dfrac{150}{400} \times 100 = 37.5\%$.
+:::
+
 **5.** Aminata scored $48$ out of $75$ on a test. What percentage did she score?
+
+:::reveal{title="Show the answer"}
+$\dfrac{48}{75} \times 100 = 64\%$.
+:::
 
 **6.** Mohamed earned $6000$ NLe and spent $4500$ NLe. What percentage of his earnings did he spend? What percentage did he save?
 
+:::reveal{title="Show the answer"}
+Spent: $\dfrac{4500}{6000} \times 100 = 75\%$. Saved: $25\%$.
+:::
+
 **7.** Out of $200$ candidates, $35$ scored distinctions. What percentage scored distinctions?
+
+:::reveal{title="Show the answer"}
+$\dfrac{35}{200} \times 100 = 17.5\%$.
+:::
 
 **8.** A class has $50$ students. $30$ are girls. What percentage are girls? boys?
 
+:::reveal{title="Show the answer"}
+Girls: $60\%$. Boys: $40\%$.
+:::
+
 **9.** A factory produced $480$ items, of which $24$ were defective. Percentage defective? Percentage good?
+
+:::reveal{title="Show the answer"}
+Defective: $\dfrac{24}{480} \times 100 = 5\%$. Good: $95\%$.
+:::
 
 **10.** Foday's earnings rose from $4000$ NLe to $5000$ NLe. Express the new earnings as a percentage of the old.
 
+:::reveal{title="Show the answer"}
+$\dfrac{5000}{4000} \times 100 = 125\%$.
+:::
+
 **11.** Which is larger: $\dfrac{3}{5}$, $0.55$, or $58\%$?
+
+:::reveal{title="Show the answer"}
+Convert all to decimals: $\dfrac{3}{5} = 0.6, 0.55, 0.58$. Largest: $0.6 = \dfrac{3}{5}$.
+:::
 
 **12.** Of $150$ products, $30$ were sold. What percentage were sold? What percentage are unsold?
 
+:::reveal{title="Show the answer"}
+Sold: $\dfrac{30}{150} \times 100 = 20\%$. Unsold: $80\%$.
+:::
+
 **13.** A water tank is $60\%$ full. If the tank holds $250$ litres, how much water is in it?
+
+:::reveal{title="Show the answer"}
+$60\% \times 250 = 150$ litres.
+:::
 
 **14.** In a survey, $36\%$ of $250$ people preferred tea. How many preferred tea?
 
-### Worked solutions
-
-**1.** (a) $\dfrac{2}{5}$. (b) $\dfrac{3}{4}$. (c) $\dfrac{7}{20}$. (d) $\dfrac{7}{8}$. (e) $\dfrac{3}{2} = 1.5$.
-
-**2.** (a) $0.25$. (b) $0.875$. (c) $0.05$. (d) $0.002$. (e) $2$.
-
-**3.** (a) $37.5\%$. (b) $85\%$. (c) $83\dfrac{1}{3}\%$. (d) $140\%$. (e) $85\%$.
-
-**4.** (a) $60\%$. (b) $75\%$. (c) $\dfrac{250}{4000} \times 100 = 6.25\%$. (d) $\dfrac{45}{180} \times 100 = 25\%$. (e) $\dfrac{150}{400} \times 100 = 37.5\%$.
-
-**5.** $\dfrac{48}{75} \times 100 = 64\%$.
-
-**6.** Spent: $\dfrac{4500}{6000} \times 100 = 75\%$. Saved: $25\%$.
-
-**7.** $\dfrac{35}{200} \times 100 = 17.5\%$.
-
-**8.** Girls: $60\%$. Boys: $40\%$.
-
-**9.** Defective: $\dfrac{24}{480} \times 100 = 5\%$. Good: $95\%$.
-
-**10.** $\dfrac{5000}{4000} \times 100 = 125\%$.
-
-**11.** Convert all to decimals: $\dfrac{3}{5} = 0.6, 0.55, 0.58$. Largest: $0.6 = \dfrac{3}{5}$.
-
-**12.** Sold: $\dfrac{30}{150} \times 100 = 20\%$. Unsold: $80\%$.
-
-**13.** $60\% \times 250 = 150$ litres.
-
-**14.** $36\% \times 250 = 90$ people.
+:::reveal{title="Show the answer"}
+$36\% \times 250 = 90$ people.
+:::
 
 ## What's next
 

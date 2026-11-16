@@ -112,18 +112,37 @@ Many Sierra Leonean communities hold a weekly market (*luma*) on the same day ea
 Expect to **evaluate sums, differences and products in a given modulus**, to **complete an operation table** and find the identity and inverses, and to **solve congruences** such as $2x + 1 \equiv 4 \pmod 5$. Calendar and clock problems are common in Paper 2.
 :::
 
-## Quick check
+## Practice
 
-1. Evaluate $(47 \times 23) \bmod 5$.
-2. Evaluate $2 - 5$ in modulo 6.
-3. In multiplication modulo 7, find the inverse of 3.
-4. Solve $2x + 1 \equiv 4 \pmod 5$.
-5. If 1 January is a Monday, on what day is 1 February?
+Try each question first, then open the answer to check your working.
 
-**Answers:**
+**1.** Evaluate $(47 \times 23) \bmod 5$.
 
-1. $47 \equiv 2$ and $23 \equiv 3$, so the product $\equiv 6 \equiv 1 \pmod 5$.
-2. $-3 + 6 = 3$.
-3. 5, because $3 \times 5 = 15 = 2 \times 7 + 1$.
-4. $2x \equiv 3$; trying values, $2 \times 4 = 8 \equiv 3$, so $x = 4$.
-5. January has 31 days; $31 \equiv 3 \pmod 7$, so 1 February is 3 days after Monday: **Thursday**.
+:::reveal{title="Show the answer"}
+$47 \equiv 2$ and $23 \equiv 3$, so the product $\equiv 6 \equiv 1 \pmod 5$.
+:::
+
+**2.** Evaluate $2 - 5$ in modulo 6.
+
+:::reveal{title="Show the answer"}
+$-3 + 6 = 3$.
+:::
+
+**3.** In multiplication modulo 7, find the inverse of 3.
+
+:::reveal{title="Show the answer"}
+5, because $3 \times 5 = 15 = 2 \times 7 + 1$.
+:::
+
+**4.** Solve $2x + 1 \equiv 4 \pmod 5$.
+
+:::reveal{title="Show the answer"}
+$2x \equiv 3$; trying values, $2 \times 4 = 8 \equiv 3$, so $x = 4$.
+:::
+
+**5.** If 1 January is a Monday, on what day is 1 February?
+
+:::reveal{title="Show the answer"}
+January has 31 days; $31 \equiv 3 \pmod 7$, so 1 February is 3 days after Monday: **Thursday**.
+:::
+

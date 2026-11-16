@@ -319,63 +319,91 @@ Write $y = kx^n$, find $k$, apply.
 
 ## Practice problems
 
+Try each question first, then open the answer to check your working.
+
 **1.** $y \propto x$. $y = 24$ when $x = 6$. Find $y$ when $x = 11$.
+
+:::reveal{title="Show the answer"}
+$k = 4$. $y = 44$.
+:::
 
 **2.** $P \propto Q$. $P = 150$ when $Q = 5$. Find $Q$ when $P = 300$.
 
+:::reveal{title="Show the answer"}
+$k = 30$. $Q = 10$.
+:::
+
 **3.** $C \propto t$. $C = 100$ at $t = 4$. Find $C$ when $t = 7$.
+
+:::reveal{title="Show the answer"}
+$k = 25$. $C = 175$.
+:::
 
 **4.** A car travels $250$ km in $5$ hours at constant speed. How far in $8$ hours?
 
+:::reveal{title="Show the answer"}
+$k = 50$. $d = 400$ km.
+:::
+
 **5.** A worker earns NLe 3,000 in $8$ hours. How much in $12$ hours?
+
+:::reveal{title="Show the answer"}
+$k = 375$. $4500$ NLe.
+:::
 
 **6.** $y \propto x^2$. $y = 18$ when $x = 3$. Find $y$ when $x = 5$.
 
+:::reveal{title="Show the answer"}
+$k = 2$. $y = 50$.
+:::
+
 **7.** $y \propto x^3$. $y = 16$ when $x = 2$. Find $y$ when $x = 5$.
+
+:::reveal{title="Show the answer"}
+$k = 2$. $y = 250$.
+:::
 
 **8.** $A \propto r^2$. Circle of radius $3$ has area $28.27$. Find area when radius is $5$.
 
+:::reveal{title="Show the answer"}
+$k \approx 3.14$ ($= \pi$). $A = 78.54$.
+:::
+
 **9.** $V \propto r^3$. Sphere of radius $2$ has volume $33.5$. Find volume when radius is $5$.
+
+:::reveal{title="Show the answer"}
+$V = kr^3$: $k = \dfrac{33.5}{2^3} = \dfrac{33.5}{8} \approx 4.19$ (close to $\tfrac43\pi$, as the sphere formula predicts). $V \approx 4.19 \times 5^3 = 4.19 \times 125 \approx 524$.
+:::
 
 **10.** $y \propto \sqrt{x}$. $y = 4$ when $x = 16$. Find $y$ when $x = 36$.
 
+:::reveal{title="Show the answer"}
+$k = 1$. $y = 6$.
+:::
+
 **11.** The cost of fabric varies directly as length. $3$ metres costs NLe 45. Find the cost of $7$ metres.
+
+:::reveal{title="Show the answer"}
+$k = 15$. $C = 105$ NLe.
+:::
 
 **12.** A water tank's volume varies as the cube of its radius. A radius $2$ m tank holds $33.5$ m³. Find tank volume when radius is $4$ m.
 
+:::reveal{title="Show the answer"}
+$V = kr^3$. $k = 33.5/8 \approx 4.19$. $V \approx 4.19 \times 64 = 268$ m³.
+:::
+
 **13.** Are these in direct variation? $(2, 6), (5, 15), (8, 24), (10, 30)$.
+
+:::reveal{title="Show the answer"}
+$y/x$ ratios: $3, 3, 3, 3$. Yes, direct variation with $k = 3$.
+:::
 
 **14.** Are these in direct variation as $x^2$? $(2, 12), (3, 27), (4, 48)$.
 
-### Worked solutions
-
-**1.** $k = 4$. $y = 44$.
-
-**2.** $k = 30$. $Q = 10$.
-
-**3.** $k = 25$. $C = 175$.
-
-**4.** $k = 50$. $d = 400$ km.
-
-**5.** $k = 375$. $4500$ NLe.
-
-**6.** $k = 2$. $y = 50$.
-
-**7.** $k = 2$. $y = 250$.
-
-**8.** $k \approx 3.14$ ($= \pi$). $A = 78.54$.
-
-**9.** $V = (4/3)\pi r^3$. $k = 33.5/8 = 4.19$. $V = 4.19 \times 125 = 523.6$ m³.
-
-**10.** $k = 1$. $y = 6$.
-
-**11.** $k = 15$. $C = 105$ NLe.
-
-**12.** $V = kr^3$. $k = 33.5/8 \approx 4.19$. $V \approx 4.19 \times 64 = 268$ m³.
-
-**13.** $y/x$ ratios: $3, 3, 3, 3$. Yes, direct variation with $k = 3$.
-
-**14.** $y/x^2$ ratios: $12/4 = 3$, $27/9 = 3$, $48/16 = 3$. Yes, $y = 3x^2$.
+:::reveal{title="Show the answer"}
+$y/x^2$ ratios: $12/4 = 3$, $27/9 = 3$, $48/16 = 3$. Yes, $y = 3x^2$.
+:::
 
 ## What's next
 

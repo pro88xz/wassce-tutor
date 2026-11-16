@@ -101,18 +101,37 @@ Extra cost $= 13\,200 - 12\,000 = $ NLe 1,200, which is 10% of the cash price.
 Expect **compound interest and depreciation over 2 or 3 years**, **comparisons of simple and compound interest**, **percentage profit and loss**, and **hire purchase and commission** problems. Give money answers to the nearest leone (or as the question requires) and state the units.
 :::
 
-## Quick check
+## Practice
 
-1. Find the amount after 2 years when NLe 8,000 is invested at 5% compound interest.
-2. A machine worth NLe 50,000 depreciates by 10% a year. Find its value after 2 years.
-3. A bag bought for NLe 600 is sold at a 15% loss. Find the selling price.
-4. An agent earns 4% commission. Find the commission on sales of NLe 75,000.
-5. A phone is marked NLe 3,000 and sold at a 12% discount. Find the selling price.
+Try each question first, then open the answer to check your working.
 
-**Answers:**
+**1.** Find the amount after 2 years when NLe 8,000 is invested at 5% compound interest.
 
-1. $8\,000 \times 1.05^2 = 8\,000 \times 1.1025 = $ NLe 8,820.
-2. $50\,000 \times 0.9^2 = $ NLe 40,500.
-3. $600 \times 0.85 = $ NLe 510.
-4. NLe 3,000.
-5. $3\,000 \times 0.88 = $ NLe 2,640.
+:::reveal{title="Show the answer"}
+$8\,000 \times 1.05^2 = 8\,000 \times 1.1025 = $ NLe 8,820.
+:::
+
+**2.** A machine worth NLe 50,000 depreciates by 10% a year. Find its value after 2 years.
+
+:::reveal{title="Show the answer"}
+$50\,000 \times 0.9^2 = $ NLe 40,500.
+:::
+
+**3.** A bag bought for NLe 600 is sold at a 15% loss. Find the selling price.
+
+:::reveal{title="Show the answer"}
+$600 \times 0.85 = $ NLe 510.
+:::
+
+**4.** An agent earns 4% commission. Find the commission on sales of NLe 75,000.
+
+:::reveal{title="Show the answer"}
+NLe 3,000.
+:::
+
+**5.** A phone is marked NLe 3,000 and sold at a 12% discount. Find the selling price.
+
+:::reveal{title="Show the answer"}
+$3\,000 \times 0.88 = $ NLe 2,640.
+:::
+

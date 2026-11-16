@@ -101,18 +101,37 @@ Error $= 5 - 4.8 = 0.2$ cm. Percentage error $= \dfrac{0.2}{5} \times 100 = 4\%$
 Expect **percentage increase and decrease**, **reverse percentage** questions (prices before tax or discount), **successive percentage changes**, and **percentage error** in measurement. Read carefully which value the percentage is "of".
 :::
 
-## Quick check
+## Practice
 
-1. Find 12.5% of NLe 6,400.
-2. Express 18 cm as a percentage of 1.2 m.
-3. Decrease NLe 2,500 by 8%.
-4. After a 25% increase, a price is NLe 1,500. Find the original price.
-5. The true mass of a bag is 50 kg but a scale reads 51.5 kg. Find the percentage error.
+Try each question first, then open the answer to check your working.
 
-**Answers:**
+**1.** Find 12.5% of NLe 6,400.
 
-1. NLe 800.
-2. $\tfrac{18}{120} \times 100 = 15\%$.
-3. $2\,500 \times 0.92 = $ NLe 2,300.
-4. $1\,500 \div 1.25 = $ NLe 1,200.
-5. $\tfrac{1.5}{50} \times 100 = 3\%$.
+:::reveal{title="Show the answer"}
+NLe 800.
+:::
+
+**2.** Express 18 cm as a percentage of 1.2 m.
+
+:::reveal{title="Show the answer"}
+$\tfrac{18}{120} \times 100 = 15\%$.
+:::
+
+**3.** Decrease NLe 2,500 by 8%.
+
+:::reveal{title="Show the answer"}
+$2\,500 \times 0.92 = $ NLe 2,300.
+:::
+
+**4.** After a 25% increase, a price is NLe 1,500. Find the original price.
+
+:::reveal{title="Show the answer"}
+$1\,500 \div 1.25 = $ NLe 1,200.
+:::
+
+**5.** The true mass of a bag is 50 kg but a scale reads 51.5 kg. Find the percentage error.
+
+:::reveal{title="Show the answer"}
+$\tfrac{1.5}{50} \times 100 = 3\%$.
+:::
+

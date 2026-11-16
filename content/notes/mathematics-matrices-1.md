@@ -268,35 +268,50 @@ Vocabulary and notation are the key foundation.
 
 ## Practice problems
 
+Try each question first, then open the answer to check your working.
+
 **1.** State the order of each matrix.
 (a) $\begin{pmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{pmatrix}$
 (b) $\begin{pmatrix} 7 & -2 & 0 & 3 \end{pmatrix}$
 (c) $\begin{pmatrix} 5 \end{pmatrix}$
 
+:::reveal{title="Show the answer"}
+(a) $3 \times 2$. (b) $1 \times 4$. (c) $1 \times 1$.
+:::
+
 **2.** For $A = \begin{pmatrix} 1 & -2 & 5 \\ 0 & 3 & 4 \end{pmatrix}$, find $a_{11}, a_{13}, a_{22}, a_{23}$.
+
+:::reveal{title="Show the answer"}
+$a_{11} = 1, a_{13} = 5, a_{22} = 3, a_{23} = 4$.
+:::
 
 **3.** Write down the $3 \times 3$ identity matrix.
 
+:::reveal{title="Show the answer"}
+$\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$.
+:::
+
 **4.** Find $x$ and $y$ if $\begin{pmatrix} x + 2 & 5 \\ 7 & y - 3 \end{pmatrix} = \begin{pmatrix} 8 & 5 \\ 7 & 4 \end{pmatrix}$.
+
+:::reveal{title="Show the answer"}
+$x + 2 = 8 \to x = 6$. $y - 3 = 4 \to y = 7$.
+:::
 
 **5.** Find the transpose of $A = \begin{pmatrix} 1 & 0 & 2 \\ 3 & -1 & 4 \end{pmatrix}$.
 
+:::reveal{title="Show the answer"}
+$\begin{pmatrix} 1 & 3 \\ 0 & -1 \\ 2 & 4 \end{pmatrix}$.
+:::
+
 **6.** Is the matrix $\begin{pmatrix} 5 & 0 \\ 0 & 5 \end{pmatrix}$ a diagonal matrix? An identity matrix?
+
+:::reveal{title="Show the answer"}
+Diagonal matrix: yes (zeros off the diagonal). Identity: no (entries on diagonal are $5$, not $1$).
+:::
 
 **7.** Find $a, b, c$ if $\begin{pmatrix} 2a + 1 \\ b - 4 \\ 3c \end{pmatrix} = \begin{pmatrix} 7 \\ 2 \\ -9 \end{pmatrix}$.
 
-### Worked solutions
+:::reveal{title="Show the answer"}
+$2a + 1 = 7 \to a = 3$. $b - 4 = 2 \to b = 6$. $3c = -9 \to c = -3$.
+:::
 
-**1.** (a) $3 \times 2$. (b) $1 \times 4$. (c) $1 \times 1$.
-
-**2.** $a_{11} = 1, a_{13} = 5, a_{22} = 3, a_{23} = 4$.
-
-**3.** $\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$.
-
-**4.** $x + 2 = 8 \to x = 6$. $y - 3 = 4 \to y = 7$.
-
-**5.** $\begin{pmatrix} 1 & 3 \\ 0 & -1 \\ 2 & 4 \end{pmatrix}$.
-
-**6.** Diagonal matrix: yes (zeros off the diagonal). Identity: no (entries on diagonal are $5$, not $1$).
-
-**7.** $2a + 1 = 7 \to a = 3$. $b - 4 = 2 \to b = 6$. $3c = -9 \to c = -3$.

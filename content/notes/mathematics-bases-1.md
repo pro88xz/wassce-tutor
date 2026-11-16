@@ -128,18 +128,37 @@ Mobile money, ATMs and the phones Sierra Leoneans use every day store every numb
 Expect to **convert numbers between bases** (most often 2, 5, 8 and 10), to **spot impossible digits**, and to combine conversion with operations such as addition. Show the division ladder or the place-value working; marks are given for method.
 :::
 
-## Quick check
+## Practice
 
-1. Convert $1101_2$ to base ten.
-2. Convert $312_4$ to base ten.
-3. Convert 58 to base two.
-4. Convert 87 to base five.
-5. Why can $274_7$ not be a base-seven number?
+Try each question first, then open the answer to check your working.
 
-**Answers:**
+**1.** Convert $1101_2$ to base ten.
 
-1. $8 + 4 + 0 + 1 = 13$.
-2. $3 \times 16 + 1 \times 4 + 2 = 54$.
-3. $58 = 111010_2$ (check: $32 + 16 + 8 + 2 = 58$).
-4. $87 = 322_5$ (check: $3 \times 25 + 2 \times 5 + 2 = 87$).
-5. The digit 7 is not allowed in base seven; the digits are 0 to 6.
+:::reveal{title="Show the answer"}
+$8 + 4 + 0 + 1 = 13$.
+:::
+
+**2.** Convert $312_4$ to base ten.
+
+:::reveal{title="Show the answer"}
+$3 \times 16 + 1 \times 4 + 2 = 54$.
+:::
+
+**3.** Convert 58 to base two.
+
+:::reveal{title="Show the answer"}
+$58 = 111010_2$ (check: $32 + 16 + 8 + 2 = 58$).
+:::
+
+**4.** Convert 87 to base five.
+
+:::reveal{title="Show the answer"}
+$87 = 322_5$ (check: $3 \times 25 + 2 \times 5 + 2 = 87$).
+:::
+
+**5.** Why can $274_7$ not be a base-seven number?
+
+:::reveal{title="Show the answer"}
+The digit 7 is not allowed in base seven; the digits are 0 to 6.
+:::
+

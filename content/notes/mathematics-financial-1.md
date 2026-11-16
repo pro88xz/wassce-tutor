@@ -335,71 +335,105 @@ Apply the formula directly; rearrange for the unknown variable.
 
 ## Practice problems
 
+Try each question first, then open the answer to check your working.
+
 **1.** Find SI on $3000$ NLe at $6\%$ for $4$ years.
+
+:::reveal{title="Show the answer"}
+$3000 \times 6 \times 4/100 = 720$ NLe.
+:::
 
 **2.** Find SI on $4500$ NLe at $5\%$ for $3$ years.
 
+:::reveal{title="Show the answer"}
+$4500 \times 5 \times 3/100 = 675$ NLe.
+:::
+
 **3.** Find SI on $2000$ NLe at $7.5\%$ for $2.5$ years.
+
+:::reveal{title="Show the answer"}
+$2000 \times 7.5 \times 2.5/100 = 375$ NLe.
+:::
 
 **4.** Find SI on $1200$ NLe at $8\%$ for $9$ months.
 
+:::reveal{title="Show the answer"}
+$T = 0.75$. $1200 \times 8 \times 0.75/100 = 72$ NLe.
+:::
+
 **5.** Find the principal yielding $480$ NLe in $4$ years at $6\%$.
+
+:::reveal{title="Show the answer"}
+$P = 100 \times 480 / (6 \times 4) = 2000$ NLe.
+:::
 
 **6.** Find the principal yielding $750$ NLe in $5$ years at $5\%$.
 
+:::reveal{title="Show the answer"}
+$P = 100 \times 750 / (5 \times 5) = 3000$ NLe.
+:::
+
 **7.** At what rate must $5000$ NLe be invested to earn $1200$ NLe in $3$ years?
+
+:::reveal{title="Show the answer"}
+$R = 100 \times 1200 / (5000 \times 3) = 8\%$.
+:::
 
 **8.** $10000$ NLe earned $1800$ NLe in $4$ years. Find the rate.
 
+:::reveal{title="Show the answer"}
+$R = 100 \times 1800 / (10000 \times 4) = 4.5\%$.
+:::
+
 **9.** At $4\%$, how long for $3000$ NLe to earn $480$ NLe?
+
+:::reveal{title="Show the answer"}
+$T = 100 \times 480 / (3000 \times 4) = 4$ years.
+:::
 
 **10.** At $7\%$, how long for $2000$ NLe to grow to $2800$ NLe?
 
+:::reveal{title="Show the answer"}
+Interest $= 800$. $T = 100 \times 800 / (2000 \times 7) = 80000/14000 \approx 5.71$ years.
+:::
+
 **11.** A man invested $7500$ NLe. After $5$ years, his total is $9750$ NLe. Find the rate.
+
+:::reveal{title="Show the answer"}
+Interest = $2250$. $R = 100 \times 2250/(7500 \times 5) = 225000/37500 = 6\%$.
+:::
 
 **12.** A woman wants to triple her $3000$ NLe at $10\%$ simple interest. How long?
 
+:::reveal{title="Show the answer"}
+Final amount $= 9000$. Interest = $6000$. $T = 100 \times 6000/(3000 \times 10) = 20$ years.
+:::
+
 **13.** Aminata took a $15000$ NLe loan at $9\%$ simple interest for $3$ years. Repay in equal monthly instalments. Each instalment?
+
+:::reveal{title="Show the answer"}
+$I = 15000 \times 9 \times 3/100 = 4050$. Total = $19050$. Months = $36$. Each = $529.17$ NLe.
+:::
 
 **14.** A bank pays $4\%$ per year. Foday deposits $2000$ NLe and after $T$ years has $2360$ NLe. Find $T$.
 
-**15.** An investor splits $10000$ NLe: $X$ NLe at $5\%$ and $(10000 - X)$ NLe at $8\%$. After $4$ years, total interest is $2640$ NLe. Find $X$.
+:::reveal{title="Show the answer"}
+Interest = $360$. $T = 100 \times 360/(2000 \times 4) = 4.5$ years.
+:::
 
-### Worked solutions
+**15.** An investor splits $10000$ NLe: $X$ NLe at $5\%$ and $(10000 - X)$ NLe at $8\%$. After $4$ years, total interest is $2720$ NLe. Find $X$.
 
-**1.** $3000 \times 6 \times 4/100 = 720$ NLe.
+:::reveal{title="Show the answer"}
+Set up: $\dfrac{X \cdot 5 \cdot 4}{100} + \dfrac{(10000 - X) \cdot 8 \cdot 4}{100} = 2720$.
 
-**2.** $4500 \times 5 \times 3/100 = 675$ NLe.
+$0.2X + 0.32(10000 - X) = 2720$
 
-**3.** $2000 \times 7.5 \times 2.5/100 = 375$ NLe.
+$0.2X + 3200 - 0.32X = 2720$
 
-**4.** $T = 0.75$. $1200 \times 8 \times 0.75/100 = 72$ NLe.
+$-0.12X = -480$, so $X = 4000$.
 
-**5.** $P = 100 \times 480 / (6 \times 4) = 2000$ NLe.
-
-**6.** $P = 100 \times 750 / (5 \times 5) = 3000$ NLe.
-
-**7.** $R = 100 \times 1200 / (5000 \times 3) = 8\%$.
-
-**8.** $R = 100 \times 1800 / (10000 \times 4) = 4.5\%$.
-
-**9.** $T = 100 \times 480 / (3000 \times 4) = 4$ years.
-
-**10.** Interest $= 800$. $T = 100 \times 800 / (2000 \times 7) = 80000/14000 \approx 5.71$ years.
-
-**11.** Interest = $2250$. $R = 100 \times 2250/(7500 \times 5) = 225000/37500 = 6\%$.
-
-**12.** Final amount $= 9000$. Interest = $6000$. $T = 100 \times 6000/(3000 \times 10) = 20$ years.
-
-**13.** $I = 15000 \times 9 \times 3/100 = 4050$. Total = $19050$. Months = $36$. Each = $529.17$ NLe.
-
-**14.** Interest = $360$. $T = 100 \times 360/(2000 \times 4) = 4.5$ years.
-
-**15.** Set up: $\dfrac{X \cdot 5 \cdot 4}{100} + \dfrac{(10000 - X) \cdot 8 \cdot 4}{100} = 2640$. 
-$0.2X + 0.32(10000 - X) = 2640$. 
-$0.2X + 3200 - 0.32X = 2640$. 
-$-0.12X = -560$. 
-$X = 4666.67$ NLe. Not integer — adjust problem in WAEC.
+She invests **NLe 4000 at 5%** and **NLe 6000 at 8%**. Check: $800 + 1920 = 2720$ ✓
+:::
 
 ## What's next
 
