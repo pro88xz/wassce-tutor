@@ -5,12 +5,12 @@
 //   npm run brand:icons
 //
 // The logo is the name. Its one drawn detail is the "o" of Tutor: a shaded answer bubble, as on
-// the WASSCE objective paper. The browser tab shows the stacked name too, drawn larger on the tile
-// than in the square logo so it stays as legible as it can at 16-48 px. (It used to be the
-// initials, WT; the owner chose the full name instead.)
+// the WASSCE objective paper. The browser tab uses the same square logo, with the same space
+// around the name as on the Google sign-in screen. (It used to be the initials, WT; the owner
+// chose the full logo instead, and preferred this spacing to a larger, tighter name.)
 //
 // Writes:
-//   public/favicon.svg, favicon-{16,32,48,192,512}.png, favicon.ico   "WASSCE / TUTOR", large (browser tabs, search results)
+//   public/favicon.svg, favicon-{16,32,48,192,512}.png, favicon.ico   the square logo (browser tabs, search results)
 //   public/apple-touch-icon.png       180 px "WASSCE / TUTOR" square (iOS home screen)
 //   public/logo.png                   512 px "WASSCE / TUTOR" square (search results, schema.org logo)
 //   public/brand/*.svg                the wordmark and square as vector files
@@ -61,8 +61,8 @@ function place(g, side, width, colours) {
 const ON_TILE = { name: '#fff', tutor: LILAC }
 /** "WASSCE / TUTOR" on the violet square, full bleed: platforms that round the corners themselves. */
 const SQUARE = svg('0 0 1000 1000', `${gradient}<rect width="1000" height="1000" fill="url(#tile)"/>${place(WORDMARK_STACK, 1000, 0.72, ON_TILE)}`)
-/** The favicon: the same square, with the name filling more of the tile so it reads at tab size. */
-const TAB = svg('0 0 1000 1000', `${gradient}<rect width="1000" height="1000" fill="url(#tile)"/>${place(WORDMARK_STACK, 1000, 0.88, ON_TILE)}`)
+/** The favicon: the square logo itself. */
+const TAB = SQUARE
 /** Android adaptive icon. The launcher crops to a circle of about 61% of the layer, so the name sits inside it. */
 const FOREGROUND = svg('0 0 1000 1000', place(WORDMARK_STACK, 1000, 0.54, ON_TILE))
 const BACKGROUND = svg('0 0 1000 1000', `${gradient}<rect width="1000" height="1000" fill="url(#tile)"/>`)
