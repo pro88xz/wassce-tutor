@@ -70,7 +70,6 @@ function HeroPhoto() {
     <div className="relative w-full pb-24 sm:pb-0">
       <div aria-hidden className="absolute -inset-10 -z-10 rounded-full bg-[radial-gradient(closest-side,rgba(139,92,246,.5),transparent)] blur-2xl" />
       <span aria-hidden className="absolute -right-5 -top-5 -z-10 hidden h-36 w-36 rounded-full border-[16px] border-[#ffd166] sm:block lg:-right-8 lg:-top-8 lg:h-44 lg:w-44" />
-      <span aria-hidden className="absolute -bottom-6 -left-6 -z-10 hidden h-28 w-28 rounded-[2rem] bg-[#8fdcf5]/25 sm:block" />
 
       <div className="overflow-hidden rounded-[1.75rem] shadow-[0_50px_100px_-40px_rgba(0,0,0,.9)] ring-1 ring-white/15 sm:rounded-[2.25rem]">
         <img
