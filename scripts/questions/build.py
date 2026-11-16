@@ -281,6 +281,19 @@ SETS += [
     )
 ]
 
+SETS += [
+    {
+        "module": ROOT / "content/questions/biology/set1_p1.py",
+        "subject_slug": "biology",
+        "name": "biology_set1_p1",
+        "label": "Biology: set 1 (cells, nutrition, respiration, transport, ecology and genetics)",
+        "review": ROOT / "content/questions/biology/set1_p1.review.md",
+        "sort_from": 100,
+        # Factual answers cannot be recomputed by code: each was checked against the syllabus.
+        "checked": "facts",
+    },
+]
+
 OUT = ROOT / "src/content/question-sets"
 SITE = "https://wasscetutor.com"  # diagrams are served from the website so old app builds can show them too
 LABELS = "ABCD"
@@ -437,7 +450,11 @@ def build_review(cfg: dict, questions: list[Q], ordered: dict, scope_note: str, 
             if cfg.get("checked") == "editor"
             else [
                 "These are factual questions, so the answers cannot be recomputed by code. An editor checked each answer",
-                "against the WASSCE Tutor notes and the 1991 Constitution of Sierra Leone, and checked that exactly one",
+                (
+                    "against the WASSCE Tutor notes and the 1991 Constitution of Sierra Leone, and checked that exactly one"
+                    if cfg["subject_slug"] == "government"
+                    else "against the WAEC syllabus and the WASSCE Tutor notes, and checked that exactly one"
+                ),
                 "option is correct. A teacher should still read each item before it is used in class.",
             ]
             if cfg.get("checked") == "facts"
