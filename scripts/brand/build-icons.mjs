@@ -5,11 +5,12 @@
 //   npm run brand:icons
 //
 // The logo is the name. Its one drawn detail is the "o" of Tutor: a shaded answer bubble, as on
-// the WASSCE objective paper. Where the name is too small to read (the browser tab), the icon is
-// its initials, WT, coloured like the stacked logo: W white, T lilac.
+// the WASSCE objective paper. The browser tab shows the stacked name too, drawn larger on the tile
+// than in the square logo so it stays as legible as it can at 16-48 px. (It used to be the
+// initials, WT; the owner chose the full name instead.)
 //
 // Writes:
-//   public/favicon.svg, favicon-{16,32,48,192,512}.png, favicon.ico   "WT" (browser tabs)
+//   public/favicon.svg, favicon-{16,32,48,192,512}.png, favicon.ico   "WASSCE / TUTOR", large (browser tabs, search results)
 //   public/apple-touch-icon.png       180 px "WASSCE / TUTOR" square (iOS home screen)
 //   public/logo.png                   512 px "WASSCE / TUTOR" square (search results, schema.org logo)
 //   public/brand/*.svg                the wordmark and square as vector files
@@ -18,7 +19,7 @@
 //   assets/icon.png                   1024 px source for the Android app icon
 //   assets/icon-foreground.png        adaptive-icon foreground (the stacked name, inside the safe zone)
 //   assets/icon-background.png        adaptive-icon background (tile colour)
-//   assets/favicon-source.png         512 px "WT" tile
+//   assets/favicon-source.png         512 px favicon tile
 //   assets/splash.png, splash-dark.png  app launch screen
 // After changing the assets/ files, run `npx capacitor-assets generate --android`
 // to rebuild the Android resources from them.
@@ -26,7 +27,7 @@ import { mkdir, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'
-import { MONOGRAM, WORDMARK_LINE, WORDMARK_STACK } from '../../src/components/brand-geometry.ts'
+import { WORDMARK_LINE, WORDMARK_STACK } from '../../src/components/brand-geometry.ts'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..')
 
@@ -60,14 +61,8 @@ function place(g, side, width, colours) {
 const ON_TILE = { name: '#fff', tutor: LILAC }
 /** "WASSCE / TUTOR" on the violet square, full bleed: platforms that round the corners themselves. */
 const SQUARE = svg('0 0 1000 1000', `${gradient}<rect width="1000" height="1000" fill="url(#tile)"/>${place(WORDMARK_STACK, 1000, 0.72, ON_TILE)}`)
-/** "WT" on the rounded tile: the browser tab. */
-const TAB = (() => {
-  const [x, y, w, h] = MONOGRAM.viewBox.split(' ').map(Number)
-  const s = (64 * 0.7) / w
-  const tx = (64 - w * s) / 2 - x * s
-  const ty = (64 - h * s) / 2 - y * s
-  return svg('0 0 64 64', `${gradient}<rect width="64" height="64" rx="15" fill="url(#tile)"/><g transform="translate(${tx.toFixed(2)} ${ty.toFixed(2)}) scale(${s.toFixed(5)})"><path d="${MONOGRAM.w}" fill="#fff"/><path d="${MONOGRAM.t}" fill="${LILAC}"/></g>`)
-})()
+/** The favicon: the same square, with the name filling more of the tile so it reads at tab size. */
+const TAB = svg('0 0 1000 1000', `${gradient}<rect width="1000" height="1000" fill="url(#tile)"/>${place(WORDMARK_STACK, 1000, 0.88, ON_TILE)}`)
 /** Android adaptive icon. The launcher crops to a circle of about 61% of the layer, so the name sits inside it. */
 const FOREGROUND = svg('0 0 1000 1000', place(WORDMARK_STACK, 1000, 0.54, ON_TILE))
 const BACKGROUND = svg('0 0 1000 1000', `${gradient}<rect width="1000" height="1000" fill="url(#tile)"/>`)
