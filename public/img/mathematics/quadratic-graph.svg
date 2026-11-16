@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 650" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Graph of y = x squared minus 2x minus 3</title>
+<desc id="d">The parabola y = x² − 2x − 3 crosses the x-axis at x = −1 and x = 3, the roots of x² − 2x − 3 = 0. It crosses the y-axis at (0, −3). Its lowest point, the minimum or vertex, is (1, −4), and the dashed vertical line x = 1 is its line of symmetry.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="720" height="650" rx="20" fill="#f8fafc"/>
+<text x="360.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The parabola y = x² − 2x − 3</text>
+<line x1="168.0" y1="576.0" x2="168.0" y2="92.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="212.0" y1="576.0" x2="212.0" y2="92.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="256.0" y1="576.0" x2="256.0" y2="92.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="300.0" y1="576.0" x2="300.0" y2="92.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="344.0" y1="576.0" x2="344.0" y2="92.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="388.0" y1="576.0" x2="388.0" y2="92.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="432.0" y1="576.0" x2="432.0" y2="92.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="476.0" y1="576.0" x2="476.0" y2="92.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="520.0" y1="576.0" x2="520.0" y2="92.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="168.0" y1="576.0" x2="520.0" y2="576.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="168.0" y1="532.0" x2="520.0" y2="532.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="168.0" y1="488.0" x2="520.0" y2="488.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="168.0" y1="444.0" x2="520.0" y2="444.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="168.0" y1="400.0" x2="520.0" y2="400.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="168.0" y1="356.0" x2="520.0" y2="356.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="168.0" y1="312.0" x2="520.0" y2="312.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="168.0" y1="268.0" x2="520.0" y2="268.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="168.0" y1="224.0" x2="520.0" y2="224.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="168.0" y1="180.0" x2="520.0" y2="180.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="168.0" y1="136.0" x2="520.0" y2="136.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="168.0" y1="92.0" x2="520.0" y2="92.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="168.0" y1="356.0" x2="534.0" y2="356.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="300.0" y1="576.0" x2="300.0" y2="78.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="542.0" y="360.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic">x</text>
+<text x="304.0" y="68.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal" font-style="italic">y</text>
+<text x="168.0" y="374.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">-3</text>
+<text x="212.0" y="374.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">-2</text>
+<text x="256.0" y="374.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">-1</text>
+<text x="344.0" y="374.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1</text>
+<text x="388.0" y="374.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2</text>
+<text x="432.0" y="374.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">3</text>
+<text x="476.0" y="374.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">4</text>
+<text x="520.0" y="374.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">5</text>
+<text x="292.0" y="577.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">-5</text>
+<text x="292.0" y="533.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">-4</text>
+<text x="292.0" y="489.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">-3</text>
+<text x="292.0" y="445.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">-2</text>
+<text x="292.0" y="401.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">-1</text>
+<text x="292.0" y="313.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">1</text>
+<text x="292.0" y="269.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">2</text>
+<text x="292.0" y="225.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">3</text>
+<text x="292.0" y="181.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">4</text>
+<text x="292.0" y="137.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">5</text>
+<text x="292.0" y="93.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">6</text>
+<text x="292.0" y="374.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">0</text>
+<line x1="344.0" y1="109.6" x2="344.0" y2="567.2" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 6"/>
+<path d="M 206.0 99.3 L 207.4 108.1 L 208.8 116.8 L 210.2 125.4 L 211.6 133.9 L 213.1 142.3 L 214.5 150.6 L 215.9 158.9 L 217.3 167.0 L 218.7 175.1 L 220.1 183.1 L 221.5 191.0 L 222.9 198.8 L 224.3 206.5 L 225.7 214.1 L 227.1 221.6 L 228.5 229.0 L 230.0 236.4 L 231.4 243.6 L 232.8 250.8 L 234.2 257.9 L 235.6 264.9 L 237.0 271.8 L 238.4 278.6 L 239.8 285.3 L 241.2 291.9 L 242.6 298.4 L 244.0 304.9 L 245.4 311.2 L 246.8 317.5 L 248.3 323.7 L 249.7 329.7 L 251.1 335.7 L 252.5 341.6 L 253.9 347.5 L 255.3 353.2 L 256.7 358.8 L 258.1 364.3 L 259.5 369.8 L 260.9 375.2 L 262.3 380.4 L 263.7 385.6 L 265.2 390.7 L 266.6 395.7 L 268.0 400.6 L 269.4 405.4 L 270.8 410.2 L 272.2 414.8 L 273.6 419.4 L 275.0 423.8 L 276.4 428.2 L 277.8 432.5 L 279.2 436.7 L 280.6 440.8 L 282.0 444.8 L 283.5 448.7 L 284.9 452.5 L 286.3 456.3 L 287.7 459.9 L 289.1 463.5 L 290.5 466.9 L 291.9 470.3 L 293.3 473.6 L 294.7 476.8 L 296.1 479.9 L 297.5 482.9 L 298.9 485.9 L 300.4 488.7 L 301.8 491.4 L 303.2 494.1 L 304.6 496.7 L 306.0 499.2 L 307.4 501.5 L 308.8 503.8 L 310.2 506.0 L 311.6 508.2 L 313.0 510.2 L 314.4 512.1 L 315.8 514.0 L 317.2 515.7 L 318.7 517.4 L 320.1 519.0 L 321.5 520.5 L 322.9 521.9 L 324.3 523.2 L 325.7 524.4 L 327.1 525.5 L 328.5 526.5 L 329.9 527.5 L 331.3 528.4 L 332.7 529.1 L 334.1 529.8 L 335.6 530.4 L 337.0 530.9 L 338.4 531.3 L 339.8 531.6 L 341.2 531.8 L 342.6 532.0 L 344.0 532.0 L 345.4 532.0 L 346.8 531.8 L 348.2 531.6 L 349.6 531.3 L 351.0 530.9 L 352.4 530.4 L 353.9 529.8 L 355.3 529.1 L 356.7 528.4 L 358.1 527.5 L 359.5 526.5 L 360.9 525.5 L 362.3 524.4 L 363.7 523.2 L 365.1 521.9 L 366.5 520.5 L 367.9 519.0 L 369.3 517.4 L 370.8 515.7 L 372.2 514.0 L 373.6 512.1 L 375.0 510.2 L 376.4 508.2 L 377.8 506.0 L 379.2 503.8 L 380.6 501.5 L 382.0 499.2 L 383.4 496.7 L 384.8 494.1 L 386.2 491.4 L 387.6 488.7 L 389.1 485.9 L 390.5 482.9 L 391.9 479.9 L 393.3 476.8 L 394.7 473.6 L 396.1 470.3 L 397.5 466.9 L 398.9 463.5 L 400.3 459.9 L 401.7 456.3 L 403.1 452.5 L 404.5 448.7 L 406.0 444.8 L 407.4 440.8 L 408.8 436.7 L 410.2 432.5 L 411.6 428.2 L 413.0 423.8 L 414.4 419.4 L 415.8 414.8 L 417.2 410.2 L 418.6 405.4 L 420.0 400.6 L 421.4 395.7 L 422.8 390.7 L 424.3 385.6 L 425.7 380.4 L 427.1 375.2 L 428.5 369.8 L 429.9 364.3 L 431.3 358.8 L 432.7 353.2 L 434.1 347.5 L 435.5 341.6 L 436.9 335.7 L 438.3 329.7 L 439.7 323.7 L 441.2 317.5 L 442.6 311.2 L 444.0 304.9 L 445.4 298.4 L 446.8 291.9 L 448.2 285.3 L 449.6 278.6 L 451.0 271.8 L 452.4 264.9 L 453.8 257.9 L 455.2 250.8 L 456.6 243.6 L 458.0 236.4 L 459.5 229.0 L 460.9 221.6 L 462.3 214.1 L 463.7 206.5 L 465.1 198.8 L 466.5 191.0 L 467.9 183.1 L 469.3 175.1 L 470.7 167.0 L 472.1 158.9 L 473.5 150.6 L 474.9 142.3 L 476.4 133.9 L 477.8 125.4 L 479.2 116.8 L 480.6 108.1 L 482.0 99.3" stroke="#2563eb" stroke-width="3.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="256.0" cy="356.0" r="7.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<circle cx="432.0" cy="356.0" r="7.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<rect x="168.8" y="321.5" width="102.4" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="220.0" y="334.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">root x = −1</text>
+<rect x="437.0" y="321.5" width="94.0" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="484.0" y="334.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">root x = 3</text>
+<circle cx="300.0" cy="488.0" r="6.0" fill="#ea580c" stroke="#ea580c" stroke-width="1"/>
+<rect x="193.6" y="475.5" width="68.8" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="228.0" y="488.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">(0, −3)</text>
+<circle cx="344.0" cy="532.0" r="7.0" fill="#15803d" stroke="#15803d" stroke-width="1"/>
+<rect x="368.0" y="519.5" width="136.0" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="436.0" y="532.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">minimum (1, −4)</text>
+<rect x="378.0" y="114.7" width="52.0" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="404.0" y="127.2" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">x = 1</text>
+<text x="360.0" y="632.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">roots where the curve meets the x-axis; symmetric about x = 1</text>
+</svg>
