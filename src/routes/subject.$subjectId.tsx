@@ -129,7 +129,7 @@ function SubjectPage() {
             <EmptyState title="We couldn't load this subject's topics" body="Check your connection and try again. Your progress is saved." />
           ) : sp ? (
             groups.length > 0 ? (
-              <TopicGroups groups={groups} palette={palette} showDescription review={review} />
+              <TopicGroups key={needle ? 'search' : 'all'} groups={groups} palette={palette} showDescription review={review} collapsible={!needle} openFirst={sp.next?.topic.group_name ?? undefined} />
             ) : (
               <p className="rounded-2xl border bg-card p-4 text-sm text-muted-foreground">No topic matches “{q}”.</p>
             )

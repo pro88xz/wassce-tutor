@@ -1,7 +1,7 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { ArrowRight, Check, CircleCheck, Clock, Copy, Loader2, Lock, Phone, ShieldCheck, Smartphone, Sparkles, XCircle } from 'lucide-react'
+import { ArrowRight, Check, CircleCheck, Clock, Copy, Loader2, Lock, Phone, ShieldCheck, Smartphone, XCircle } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { useAuth } from '@/lib/auth'
 import { supabase } from '@/lib/supabase'
@@ -9,6 +9,7 @@ import { useAccess } from '@/lib/useAccess'
 import { CONTACT, whatsappChatLink } from '@/lib/contact'
 import { ONLINE_CHECKOUT, PAID_FEATURES, PLANS, planById, type PlanId } from '@/lib/plans'
 import { FREE_FEATURES } from '@/lib/free-plan'
+import { PRACTICE_TOTAL } from '@/lib/practice-counts'
 import { canDial, confirmPayment, forgetCheckout, openDialler, pendingCheckout, rememberCheckout, startUssdPayment, type PaymentStatus } from '@/lib/payments'
 import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
 import { SignInLink } from '@/components/auth/SignInLink'
@@ -220,112 +221,161 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
   const active = access.reason === 'subscribed' && profile?.subscription_expires_at
 
   return (
-    <div className="app-page checkout-page mx-auto w-full max-w-4xl space-y-6 pb-8">
-      <header className="space-y-3 text-center">
-        <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-brand-strong text-white shadow-lg shadow-primary/30">
-          <Sparkles className="h-7 w-7" aria-hidden />
-        </span>
-        <h1 className="text-3xl font-bold tracking-tight">{active ? 'Add more time' : 'Unlock everything'}</h1>
-        <p className="text-[15px] text-muted-foreground">
-          {active ? (
-            <>Your {planById(profile?.subscription_plan)?.name ?? 'plan'} runs until <strong className="text-foreground">{formatDate(profile!.subscription_expires_at!)}</strong>. A new plan adds its time on top.</>
-          ) : (
-            'Unlock every lesson, every practice set and study tutor support. Choose monthly flexibility or save with yearly access.'
+    <div className="app-page checkout-page mx-auto w-full space-y-6 pb-8">
+      <div className="grid gap-5 lg:grid-cols-[minmax(0,.95fr)_minmax(0,1.05fr)] lg:items-start lg:gap-8">
+        <ValuePanel
+          title={active ? 'Add more time' : 'Unlock everything'}
+          intro={
+            active ? (
+              <>Your {planById(profile?.subscription_plan)?.name ?? 'plan'} runs until <strong className="text-white">{formatDate(profile!.subscription_expires_at!)}</strong>. A new plan adds its time on top.</>
+            ) : (
+              'Every lesson, every practice set and study tutor support, in every subject.'
+            )
+          }
+        />
+
+        <div className="space-y-4">
+          {view.kind === 'cancelled' && (
+            <div className="flex gap-3 rounded-2xl border border-warning/30 bg-warning/5 p-4 text-sm" role="status">
+              <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-warning" aria-hidden />
+              <p><span className="font-semibold">The payment was not completed.</span> <span className="text-muted-foreground">No money was taken. You can try again below.</span></p>
+            </div>
           )}
-        </p>
-      </header>
 
-      {view.kind === 'cancelled' && (
-        <div className="flex gap-3 rounded-2xl border border-warning/30 bg-warning/5 p-4 text-sm" role="status">
-          <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-warning" aria-hidden />
-          <p><span className="font-semibold">The payment was not completed.</span> <span className="text-muted-foreground">No money was taken. You can try again below.</span></p>
+          {pending && <RequestSent plan={pending.plan} reference={pending.reference_code} email={email} sentAt={pending.created_at} />}
+
+          <h2 className="text-lg font-bold tracking-tight">Choose your plan</h2>
+          <PlanCards selected={selected} onSelect={setSelected} />
+          <p className={`rounded-xl px-3.5 py-2.5 text-center text-sm font-medium ${plan.savings ? 'bg-success/10 text-success' : 'bg-muted/60 text-muted-foreground'}`}>
+            {plan.savings ?? plan.blurb}
+          </p>
+
+          {error && <p className="text-center text-sm text-danger" role="alert">{error}</p>}
+
+          {ONLINE_CHECKOUT ? (
+            <div className="space-y-3">
+              <button
+                type="button"
+                onClick={() => void pay()}
+                disabled={busy}
+                className="flex min-h-14 w-full items-center justify-center gap-2 rounded-2xl bg-primary px-5 py-3 text-lg font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition-colors hover:bg-brand-strong disabled:opacity-60"
+              >
+                {busy ? <Loader2 className="h-5 w-5 animate-spin motion-reduce:animate-none" aria-hidden /> : <Lock className="h-5 w-5" aria-hidden />}
+                {busy ? 'Preparing secure USSD payment…' : `Pay ${plan.priceNle} NLe`}
+              </button>
+              <p className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 text-center text-sm text-muted-foreground">
+                <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-full bg-[#ff7900]" aria-hidden /> Orange Money</span>
+                <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-full bg-[#e4002b]" aria-hidden /> AfriMoney</span>
+                <span className="inline-flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 shrink-0 text-success" aria-hidden /> Secure, through Monime</span>
+              </p>
+              <UssdSteps amount={plan.priceNle} />
+            </div>
+          ) : (
+            <div className="space-y-4">
+              <button
+                type="button"
+                onClick={() => void pay()}
+                disabled={busy}
+                className="flex min-h-14 w-full items-center justify-center gap-2 rounded-2xl bg-[#1a8d4a] px-5 py-3 text-lg font-semibold text-white shadow-lg shadow-[#1a8d4a]/30 transition-colors hover:bg-[#157a3f] disabled:opacity-60"
+              >
+                {busy ? <Loader2 className="h-5 w-5 animate-spin motion-reduce:animate-none" aria-hidden /> : <WhatsAppGlyph className="h-5 w-5" />}
+                {busy ? 'Opening WhatsApp…' : `Pay ${plan.priceNle} NLe on WhatsApp`}
+              </button>
+              <div className="space-y-3 rounded-2xl border bg-card p-5 text-sm">
+                <p className="font-bold">How paying works</p>
+                <ol className="space-y-2.5">
+                  {[
+                    <>Tap <span className="font-semibold text-foreground">Pay on WhatsApp</span>. WhatsApp opens with your plan and reference filled in: just tap send.</>,
+                    <>We reply with the Orange Money or AfriMoney number to pay.</>,
+                    <>Send the payment. We switch your plan on as soon as it arrives, usually within an hour.</>,
+                  ].map((step, i) => (
+                    <li key={i} className="flex gap-3 text-muted-foreground">
+                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary">{i + 1}</span>
+                      <span>{step}</span>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </div>
+          )}
+
+          <div className="space-y-2 rounded-2xl bg-muted/50 p-4 text-sm text-muted-foreground">
+            <p className="flex gap-2"><Clock className="mt-0.5 h-4 w-4 shrink-0" aria-hidden /> No automatic renewal. When your plan ends you go back to the free account, and your progress is kept.</p>
+            <p>
+              Trouble paying? <a href={whatsappChatLink('Hello WASSCE Tutor, I need help paying for a plan.')} target="_blank" rel="noopener" className="font-semibold text-primary hover:underline">WhatsApp {CONTACT.phoneDisplay}</a>
+            </p>
+          </div>
+
+          {!access.hasAccess && (
+            <div className="space-y-2 border-t pt-5">
+              <p className="text-sm font-semibold">Not ready yet? Your free account keeps</p>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
+                {FREE_FEATURES.map((f) => (
+                  <li key={f} className="flex gap-2"><Check className="mt-0.5 h-4 w-4 shrink-0 text-success" aria-hidden /> {f}</li>
+                ))}
+              </ul>
+              <button type="button" onClick={() => navigate({ to: '/' })} className="inline-flex min-h-11 items-center text-sm font-semibold text-primary hover:underline">
+                Keep studying for free
+              </button>
+            </div>
+          )}
         </div>
-      )}
+      </div>
+    </div>
+  )
+}
 
-      {pending && <RequestSent plan={pending.plan} reference={pending.reference_code} email={email} sentAt={pending.created_at} />}
+/** Live count of published lessons, for the value panel. */
+function useLessonCount() {
+  const { data } = useQuery({
+    queryKey: ['lesson-count'],
+    staleTime: 60 * 60 * 1000,
+    queryFn: async () => {
+      const { count, error } = await supabase.from('wassce_lesson_index').select('id', { count: 'exact', head: true })
+      if (error) throw error
+      return count ?? 0
+    },
+  })
+  return data ?? null
+}
 
-      <PlanCards selected={selected} onSelect={setSelected} />
+/** What a plan opens: the headline, the features and the size of the library. */
+function ValuePanel({ title, intro }: { title: string; intro: React.ReactNode }) {
+  const lessons = useLessonCount()
+  return (
+    <section aria-labelledby="plans-title" className="relative isolate overflow-hidden rounded-3xl bg-[#1b1240] p-5 text-white shadow-[0_30px_60px_-30px_rgba(27,18,64,.8)] sm:p-7 lg:sticky lg:top-6 lg:p-8">
+      <span aria-hidden className="absolute -right-16 -top-16 -z-10 h-56 w-56 rounded-full bg-primary/50 blur-3xl" />
+      <span aria-hidden className="absolute -bottom-20 -left-10 -z-10 h-48 w-48 rounded-full bg-[#ffd166]/15 blur-3xl" />
+      <p className="text-xs font-bold uppercase tracking-[.14em] text-violet-200">WASSCE Tutor plans</p>
+      <h1 id="plans-title" className="mt-2 text-[1.9rem] font-bold leading-tight tracking-tight sm:text-4xl">{title}</h1>
+      <p className="mt-2 text-[15px] leading-relaxed text-white/75">{intro}</p>
 
-      <ul className="grid gap-2 rounded-2xl border bg-card p-4 text-[15px] sm:grid-cols-2">
+      <ul className="mt-5 grid gap-2.5 text-[15px] sm:grid-cols-2 lg:grid-cols-1">
         {PAID_FEATURES.map((f) => (
-          <li key={f} className="flex gap-2"><CircleCheck className="mt-0.5 h-5 w-5 shrink-0 text-success" aria-hidden /> {f}</li>
+          <li key={f} className="flex gap-2.5">
+            <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#ffd166] text-[#1b1240]"><Check className="h-3.5 w-3.5" strokeWidth={3} aria-hidden /></span>
+            {f}
+          </li>
         ))}
       </ul>
 
-      {error && <p className="text-center text-sm text-danger" role="alert">{error}</p>}
-
-      {ONLINE_CHECKOUT ? (
-        <div className="space-y-3">
-          <button
-            type="button"
-            onClick={() => void pay()}
-            disabled={busy}
-            className="flex min-h-14 w-full items-center justify-center gap-2 rounded-2xl bg-primary px-5 py-3 text-lg font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition-colors hover:bg-brand-strong disabled:opacity-60"
-          >
-            {busy ? <Loader2 className="h-5 w-5 animate-spin motion-reduce:animate-none" aria-hidden /> : <Lock className="h-5 w-5" aria-hidden />}
-            {busy ? 'Preparing secure USSD payment…' : `Pay ${plan.priceNle} NLe`}
-          </button>
-          <p className="flex items-center justify-center gap-1.5 text-center text-sm text-muted-foreground">
-            <ShieldCheck className="h-4 w-4 shrink-0 text-success" aria-hidden /> Secure one-time payment through Monime. No automatic renewal.
-          </p>
-          <UssdSteps amount={plan.priceNle} />
+      <dl className="mt-6 hidden grid-cols-2 gap-3 sm:grid">
+        <div className="rounded-2xl bg-white/[0.07] p-4 ring-1 ring-white/10">
+          <dt className="text-xs font-medium text-white/65">Lessons</dt>
+          <dd className="mt-0.5 text-2xl font-extrabold tabular-nums">{lessons ? lessons.toLocaleString('en') : 'Every one'}</dd>
         </div>
-      ) : (
-        <div className="space-y-4">
-          <button
-            type="button"
-            onClick={() => void pay()}
-            disabled={busy}
-            className="flex min-h-14 w-full items-center justify-center gap-2 rounded-2xl bg-[#1a8d4a] px-5 py-3 text-lg font-semibold text-white shadow-lg shadow-[#1a8d4a]/30 transition-colors hover:bg-[#157a3f] disabled:opacity-60"
-          >
-            {busy ? <Loader2 className="h-5 w-5 animate-spin motion-reduce:animate-none" aria-hidden /> : <WhatsAppGlyph className="h-5 w-5" />}
-            {busy ? 'Opening WhatsApp…' : `Pay ${plan.priceNle} NLe on WhatsApp`}
-          </button>
-          <div className="space-y-3 rounded-2xl border bg-card p-5 text-sm">
-            <p className="font-bold">How paying works</p>
-            <ol className="space-y-2.5">
-              {[
-                <>Tap <span className="font-semibold text-foreground">Pay on WhatsApp</span>. WhatsApp opens with your plan and reference filled in: just tap send.</>,
-                <>We reply with the Orange Money or AfriMoney number to pay.</>,
-                <>Send the payment. We switch your plan on as soon as it arrives, usually within an hour.</>,
-              ].map((step, i) => (
-                <li key={i} className="flex gap-3 text-muted-foreground">
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary">{i + 1}</span>
-                  <span>{step}</span>
-                </li>
-              ))}
-            </ol>
-          </div>
+        <div className="rounded-2xl bg-white/[0.07] p-4 ring-1 ring-white/10">
+          <dt className="text-xs font-medium text-white/65">Practice questions</dt>
+          <dd className="mt-0.5 text-2xl font-extrabold tabular-nums">{PRACTICE_TOTAL.toLocaleString('en')}</dd>
         </div>
-      )}
-
-      <div className="space-y-2 rounded-2xl bg-muted/50 p-4 text-sm text-muted-foreground">
-        <p className="flex gap-2"><Clock className="mt-0.5 h-4 w-4 shrink-0" aria-hidden /> No automatic renewal. When your plan ends you go back to the free account, and your progress is kept.</p>
-        <p>
-          Trouble paying? <a href={whatsappChatLink('Hello WASSCE Tutor, I need help paying for a plan.')} target="_blank" rel="noopener" className="font-semibold text-primary hover:underline">WhatsApp {CONTACT.phoneDisplay}</a>
-        </p>
-      </div>
-
-      {!access.hasAccess && (
-        <div className="space-y-2 border-t pt-5">
-          <p className="text-sm font-semibold">Not ready yet? Your free account keeps</p>
-          <ul className="space-y-1.5 text-sm text-muted-foreground">
-            {FREE_FEATURES.map((f) => (
-              <li key={f} className="flex gap-2"><Check className="mt-0.5 h-4 w-4 shrink-0 text-success" aria-hidden /> {f}</li>
-            ))}
-          </ul>
-          <button type="button" onClick={() => navigate({ to: '/' })} className="inline-flex min-h-11 items-center text-sm font-semibold text-primary hover:underline">
-            Keep studying for free
-          </button>
-        </div>
-      )}
-    </div>
+      </dl>
+    </section>
   )
 }
 
 function PlanCards({ selected, onSelect, interactive = true }: { selected: PlanId; onSelect: (p: PlanId) => void; interactive?: boolean }) {
   return (
-    <div role={interactive ? 'radiogroup' : undefined} aria-label="Plans" className="grid gap-3 sm:grid-cols-2">
+    <div role={interactive ? 'radiogroup' : undefined} aria-label="Plans" className="grid grid-cols-2 gap-3">
       {PLANS.map((p) => {
         const on = interactive && selected === p.id
         const Tag = interactive ? 'button' : 'div'
@@ -333,27 +383,27 @@ function PlanCards({ selected, onSelect, interactive = true }: { selected: PlanI
           <Tag
             key={p.id}
             {...(interactive ? { type: 'button' as const, role: 'radio', 'aria-checked': on, onClick: () => onSelect(p.id) } : {})}
-            className={`relative flex flex-col rounded-2xl bg-card p-5 text-left transition ${
+            className={`relative flex flex-col rounded-2xl bg-card p-4 text-left transition sm:p-5 ${
               on ? 'ring-2 ring-primary shadow-[0_16px_32px_-20px_rgba(76,29,149,0.6)]' : 'ring-1 ring-border hover:ring-primary/40'
             }`}
           >
-            {p.best && <span className="absolute -top-2.5 left-5 rounded-full bg-primary px-2.5 py-0.5 text-xs font-bold text-primary-foreground">Save 75%</span>}
+            {p.best && <span className="absolute -top-2.5 right-3 rounded-full bg-primary px-2.5 py-0.5 text-[11px] font-bold text-primary-foreground sm:right-4">Save 75%</span>}
             <span className="flex items-center justify-between gap-2">
               <span className="font-bold">{p.name}</span>
               {interactive && (
-                <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 ${on ? 'border-primary bg-primary text-primary-foreground' : 'border-muted-foreground/30'}`} aria-hidden>
-                  {on && <Check className="h-4 w-4" />}
+                <span className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full border-2 ${on ? 'border-primary bg-primary text-primary-foreground' : 'border-muted-foreground/30'}`} aria-hidden>
+                  {on && <Check className="h-3.5 w-3.5" strokeWidth={3} />}
                 </span>
               )}
             </span>
-            <span className="mt-3 flex items-baseline gap-1.5 tabular-nums">
-              <span className="text-4xl font-bold tracking-tight">{p.priceNle}</span>
-              <span className="text-base font-semibold text-muted-foreground">NLe</span>
-              <span className="text-sm font-medium text-muted-foreground">/ {p.id === 'term' ? 'month' : 'year'}</span>
+            <span className="mt-2 flex items-baseline gap-1 tabular-nums">
+              <span className="text-[2rem] font-extrabold leading-none tracking-tight sm:text-4xl">{p.priceNle}</span>
+              <span className="text-sm font-semibold text-muted-foreground">NLe</span>
             </span>
-            <span className="text-sm font-semibold text-muted-foreground">{p.billing}</span>
-            <span className="mt-2 text-sm text-muted-foreground">{p.blurb}</span>
-            {p.savings && <span className="mt-2 rounded-xl bg-success/10 px-3 py-2 text-sm font-semibold text-success">{p.savings}</span>}
+            <span className="mt-1.5 text-[13px] text-muted-foreground">
+              {p.length}
+              {p.months > 1 && <span className="block font-semibold text-foreground">{(p.priceNle / p.months).toFixed(2)} NLe a month</span>}
+            </span>
           </Tag>
         )
       })}
@@ -455,15 +505,16 @@ function UssdSteps({ amount }: { amount: number }) {
   return (
     <div className="space-y-3 rounded-2xl border bg-card p-5 text-sm">
       <p className="flex items-center gap-2 font-bold"><Smartphone className="h-4 w-4 text-primary" aria-hidden /> How paying works</p>
-      <ol className="space-y-2.5">
+      <ol className="relative space-y-3">
+        <span aria-hidden className="absolute bottom-3 left-[13px] top-3 w-px bg-border" />
         {steps.map((step, i) => (
-          <li key={i} className="flex gap-3 text-muted-foreground">
-            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary">{i + 1}</span>
-            <span>{step}</span>
+          <li key={i} className="relative flex gap-3 text-muted-foreground">
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground ring-4 ring-card">{i + 1}</span>
+            <span className="pt-1">{step}</span>
           </li>
         ))}
       </ol>
-      <p className="text-xs text-muted-foreground">Make sure you have {amount} NLe in your mobile money account first. The code works once, for this amount only, for 10 minutes.</p>
+      <p className="rounded-xl bg-muted/60 px-3 py-2 text-xs text-muted-foreground">Have {amount} NLe in your mobile money account first. The code works once, for this amount only, for 10 minutes.</p>
     </div>
   )
 }
