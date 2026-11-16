@@ -7169,6 +7169,71 @@
       "title": "Forestry and agroforestry",
       "est_minutes": 13,
       "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-farm-animals-intro.md",
+      "subject": "Agricultural Science",
+      "topic": "introduction-to-farm-animals",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Introduction to farm animals: classes, breeds and management systems",
+      "est_minutes": 12,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-animal-anatomy.md",
+      "subject": "Agricultural Science",
+      "topic": "animal-anatomy-and-physiology",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Animal anatomy and physiology: digestion and reproduction",
+      "est_minutes": 13,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-animal-nutrition.md",
+      "subject": "Agricultural Science",
+      "topic": "animal-nutrition-and-feeding",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Animal nutrition, feeds and pasture",
+      "est_minutes": 14,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-animal-reproduction.md",
+      "subject": "Agricultural Science",
+      "topic": "animal-reproduction-and-breeding",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Animal reproduction, breeding and incubation",
+      "est_minutes": 14,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-animal-health.md",
+      "subject": "Agricultural Science",
+      "topic": "animal-health-and-disease-management",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Animal health: diseases, parasites and their control",
+      "est_minutes": 13,
+      "sort_order": 1
     }
   ]
 }
