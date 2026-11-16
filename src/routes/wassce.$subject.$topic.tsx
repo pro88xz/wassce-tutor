@@ -49,7 +49,7 @@ export const Route = createFileRoute('/wassce/$subject/$topic')({
     data
       ? indexablePageTags({
           path: topicPath(data.subject.slug, data.topic.slug),
-          title: `${data.topic.name}: WASSCE ${data.subject.name} Lessons | WASSCE Tutor`,
+          title: `WASSCE ${data.subject.name}: ${data.topic.name} Lessons | WASSCE Tutor`,
           ogTitle: `${data.topic.name} (WASSCE ${data.subject.name})`,
           description: describe(data),
           jsonLd: [breadcrumbJsonLd(trail(data))],

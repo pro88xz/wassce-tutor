@@ -62,7 +62,8 @@ export const Route = createFileRoute('/wassce/$subject/$topic_/$lesson')({
     data
       ? indexablePageTags({
           path: lessonPath(data.subject.slug, data.topic.slug, data.lesson.slug),
-          title: `${data.lesson.title}: WASSCE ${data.subject.name} | WASSCE Tutor`,
+          // Subject first: Google cuts titles at about 60 characters, and long lesson names used to push "WASSCE" out of view.
+          title: `WASSCE ${data.subject.name}: ${data.lesson.title} | WASSCE Tutor`,
           ogTitle: `${data.lesson.title} (WASSCE ${data.subject.name})`,
           description: lessonSummary(data.lesson.content),
           jsonLd: [lessonJsonLd(data), breadcrumbJsonLd(trail(data))],
