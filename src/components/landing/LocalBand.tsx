@@ -1,14 +1,16 @@
 // Local fit: the four ways the product is shaped around studying in Sierra
-// Leone, as icon cards (no stock photographs). Two columns on phones, four above.
-// The band ends with who builds it: the founder, by name, as on the About page.
-import { ArrowRight, BookOpen, Moon, Smartphone, Wallet } from 'lucide-react'
+// Leone. Each card shows the thing instead of describing it: slow-data
+// signal, the mobile-money USSD code, the reading theme in light and dark,
+// and the syllabus order. The band ends with who builds it: the founder, by
+// name, as on the About page.
+import { ArrowRight, Check, Moon, Sun } from 'lucide-react'
 import { Band, SectionHeading } from '@/components/public/Section'
 
 const FEATURES = [
-  { icon: Smartphone, title: 'Built for your phone', body: 'Works in any phone browser, on lower-cost Android devices and on patchy data.' },
-  { icon: Wallet, title: 'Pay the local way', body: 'Pay with Orange Money or AfriMoney through a one-time Monime code. No card, no bank account, no renewal.' },
-  { icon: Moon, title: 'Reading mode for late nights', body: 'A warm, low-glare theme for studying after dark.' },
-  { icon: BookOpen, title: 'Written to the WASSCE syllabus', body: 'Topics follow the syllabus, grouped the way you will study them.' },
+  { title: 'Built for your phone', body: 'Any phone browser, low-cost Androids, patchy data.', Visual: PhoneVisual },
+  { title: 'Pay the local way', body: 'Orange Money or AfriMoney. No card, no renewal.', Visual: PayVisual },
+  { title: 'Late-night reading mode', body: 'A low-glare theme for studying after dark.', Visual: NightVisual },
+  { title: 'Written to the syllabus', body: 'Every topic, in the order you will study it.', Visual: SyllabusVisual },
 ]
 
 export function LocalBand() {
@@ -16,20 +18,17 @@ export function LocalBand() {
     <Band tone="deep" labelledBy="local-heading" className="overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute -right-40 -top-40 h-[30rem] w-[30rem] rounded-full bg-primary/45 blur-[110px]" />
       <div className="relative">
-        <SectionHeading
-          id="local-heading"
-          eyebrow="Made in Freetown"
-          title="A learning platform shaped around how students here actually study."
-          lede="Study on the devices you already use, follow the subjects you sit, and pay through a phone-based checkout. Every decision starts from the realities of preparing for WASSCE in Sierra Leone."
-        />
-        <ul className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-5 lg:mt-12 lg:grid-cols-4">
-          {FEATURES.map(({ icon: Icon, title, body }, i) => (
-            <li key={title} data-reveal={i} className="rounded-2xl bg-white/[0.06] p-5 ring-1 ring-white/12">
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#ffd166]/15 ring-1 ring-[#ffd166]/30">
-                <Icon className="h-5 w-5 text-[#ffd166]" aria-hidden />
-              </span>
-              <h3 className="site-h3 mt-4 text-white">{title}</h3>
-              <p className="mt-1.5 text-sm leading-relaxed text-white/75">{body}</p>
+        <SectionHeading id="local-heading" eyebrow="Made in Freetown" title="Built for how students here study." />
+        <ul className="mt-9 grid grid-cols-2 gap-3 sm:gap-5 lg:mt-12 lg:grid-cols-4">
+          {FEATURES.map(({ title, body, Visual }, i) => (
+            <li key={title} data-reveal={i} className="flex flex-col overflow-hidden rounded-2xl bg-white/[0.06] ring-1 ring-white/12">
+              <div aria-hidden className="flex h-28 items-center justify-center border-b border-white/10 bg-white/[0.04] px-3 sm:h-36">
+                <Visual />
+              </div>
+              <div className="p-4 sm:p-5">
+                <h3 className="text-[15px] font-bold leading-snug text-white sm:text-lg">{title}</h3>
+                <p className="mt-1 text-[13px] leading-relaxed text-white/70 sm:text-sm">{body}</p>
+              </div>
             </li>
           ))}
         </ul>
@@ -46,10 +45,7 @@ export function LocalBand() {
             className="h-16 w-16 shrink-0 rounded-full object-cover object-[50%_22%] ring-2 ring-white/25"
           />
           <div className="min-w-0 flex-1">
-            <p className="text-[15px] leading-relaxed text-white/85">
-              WASSCE Tutor is built and maintained in Freetown by a Sierra Leonean developer, to make structured, locally relevant WASSCE preparation
-              accessible to students across the country.
-            </p>
+            <p className="text-[15px] leading-relaxed text-white/85">Built and run in Freetown, for students across Sierra Leone.</p>
             <p className="mt-2 text-sm">
               <span className="font-bold text-white">Mohamed Bangura</span>
               <span className="text-white/70"> · Founder and developer</span>
@@ -61,5 +57,80 @@ export function LocalBand() {
         </div>
       </div>
     </Band>
+  )
+}
+
+/** Signal bars with two of four lit: it still works on a weak signal. */
+function PhoneVisual() {
+  return (
+    <div className="flex flex-col items-center gap-2.5">
+      <span className="flex items-end gap-1.5">
+        {[10, 16, 22, 28].map((h, i) => (
+          <span key={h} className={`w-2.5 rounded-sm ${i < 2 ? 'bg-[#ffd166]' : 'bg-white/20'}`} style={{ height: h }} />
+        ))}
+      </span>
+      <span className="rounded-full bg-white/10 px-2.5 py-1 text-[11px] font-bold text-white/85 ring-1 ring-white/15">Weak signal? Still loads</span>
+    </div>
+  )
+}
+
+/** The USSD code a student dials, and the two wallets it works with. */
+function PayVisual() {
+  return (
+    <div className="flex flex-col items-center gap-2">
+      <span className="rounded-lg bg-white px-3 py-1.5 font-mono text-[15px] font-bold tracking-wide text-slate-900 shadow-lg sm:text-base">*715*•••#</span>
+      <span className="flex flex-wrap justify-center gap-1.5">
+        <span className="inline-flex items-center gap-1 rounded-full bg-white/10 px-2 py-0.5 text-[10px] font-bold text-white/85 ring-1 ring-white/15 sm:text-[11px]">
+          <span className="h-2 w-2 rounded-full bg-[#ff7900]" /> Orange Money
+        </span>
+        <span className="inline-flex items-center gap-1 rounded-full bg-white/10 px-2 py-0.5 text-[10px] font-bold text-white/85 ring-1 ring-white/15 sm:text-[11px]">
+          <span className="h-2 w-2 rounded-full bg-[#e4002b]" /> AfriMoney
+        </span>
+      </span>
+    </div>
+  )
+}
+
+/** One lesson line in the day theme and in the low-glare night theme. */
+function NightVisual() {
+  const lines = (tone: string) => (
+    <>
+      <span className={`block h-1.5 w-12 rounded-full ${tone}`} />
+      <span className={`mt-1.5 block h-1.5 w-16 rounded-full ${tone}`} />
+      <span className={`mt-1.5 block h-1.5 w-10 rounded-full ${tone}`} />
+    </>
+  )
+  return (
+    <div className="flex overflow-hidden rounded-xl shadow-lg ring-1 ring-white/15">
+      <div className="bg-white px-3 py-2.5">
+        <Sun className="mb-2 h-3.5 w-3.5 text-amber-500" />
+        {lines('bg-slate-300')}
+      </div>
+      <div className="bg-[#14121f] px-3 py-2.5">
+        <Moon className="mb-2 h-3.5 w-3.5 text-[#ffd166]" />
+        {lines('bg-[#d8cfa8]/45')}
+      </div>
+    </div>
+  )
+}
+
+/** The first Mathematics topics, in syllabus order. */
+function SyllabusVisual() {
+  const rows = [
+    { n: 1, t: 'Number bases', done: true },
+    { n: 2, t: 'Modular arithmetic', done: true },
+    { n: 3, t: 'Fractions', done: false },
+  ]
+  return (
+    <ol className="w-full max-w-[11rem] space-y-1.5">
+      {rows.map(({ n, t, done }) => (
+        <li key={n} className={`flex items-center gap-2 rounded-lg px-2 py-1 text-[11px] font-semibold ${done ? 'bg-white/10 text-white/85' : 'bg-white text-slate-900'}`}>
+          <span className={`flex h-4 w-4 shrink-0 items-center justify-center rounded-full text-[9px] font-bold ${done ? 'bg-emerald-400 text-emerald-950' : 'bg-violet-600 text-white'}`}>
+            {done ? <Check className="h-2.5 w-2.5" strokeWidth={3} /> : n}
+          </span>
+          {t}
+        </li>
+      ))}
+    </ol>
   )
 }

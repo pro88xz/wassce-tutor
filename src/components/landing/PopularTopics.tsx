@@ -45,7 +45,7 @@ export function PopularTopics({ data }: { data: LandingData }) {
         id="popular-heading"
         eyebrow="Start here"
         title="Popular WASSCE topics"
-        lede="The topics with the most lessons so far, drawn from across the syllabus. A good place to see how a topic is taught."
+        lede="Where most students begin."
         action={
           <div className="hidden items-center gap-2 md:flex">
             <button type="button" onClick={() => move(-1)} disabled={position.index === 0} aria-label="Previous topics" className={arrow}>

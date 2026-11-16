@@ -14,7 +14,8 @@ export type TopicShortcut = { label: string; href: string }
  * `shortcuts` are links to real topics that already have lessons, so a
  * shortcut never leads to a page with no lessons.
  */
-export function TopicSearch({ shortcuts = [] }: { shortcuts?: TopicShortcut[] }) {
+/** `light` for a pale background (the subject catalogue), `dark` for the ink hero. */
+export function TopicSearch({ shortcuts = [], tone = 'dark' }: { shortcuts?: TopicShortcut[]; tone?: 'dark' | 'light' }) {
   const [query, setQuery] = useState('')
   const [index, setIndex] = useState<SearchEntry[] | null>(null)
   const [open, setOpen] = useState(false)
@@ -46,7 +47,7 @@ export function TopicSearch({ shortcuts = [] }: { shortcuts?: TopicShortcut[] })
   return (
     <div className="relative w-full text-left">
       <label htmlFor="topic-search" className="sr-only">Search WASSCE subjects and topics</label>
-      <div className="flex items-center gap-3 rounded-xl bg-white px-4 shadow-[0_18px_40px_-22px_rgba(0,0,0,.7)] ring-1 ring-white/30 transition-shadow focus-within:ring-2 focus-within:ring-violet-300">
+      <div className={`flex items-center gap-3 rounded-xl bg-white px-4 transition-shadow focus-within:ring-2 focus-within:ring-violet-300 ${tone === 'light' ? 'shadow-[0_14px_32px_-24px_rgba(23,28,43,.45)] ring-1 ring-slate-200' : 'shadow-[0_18px_40px_-22px_rgba(0,0,0,.7)] ring-1 ring-white/30'}`}>
         <Search className="h-5 w-5 shrink-0 text-slate-400" aria-hidden />
         <input
           id="topic-search"
@@ -95,12 +96,12 @@ export function TopicSearch({ shortcuts = [] }: { shortcuts?: TopicShortcut[] })
 
       {shortcuts.length > 0 && (
         <div className="mt-3 flex flex-wrap items-center gap-2">
-          <span className="text-xs font-medium text-white/55">Popular topics:</span>
+          <span className={`text-xs font-medium ${tone === 'light' ? 'text-muted-foreground' : 'text-white/55'}`}>Popular topics:</span>
           {shortcuts.map((s) => (
             <a
               key={s.href}
               href={s.href}
-              className="inline-flex min-h-8 items-center rounded-full bg-white/10 px-3 text-xs font-semibold text-white/90 ring-1 ring-white/20 transition hover:bg-white/20"
+              className={`inline-flex min-h-8 items-center rounded-full px-3 text-xs font-semibold ring-1 transition ${tone === 'light' ? 'bg-card text-foreground ring-border hover:ring-primary/40' : 'bg-white/10 text-white/90 ring-white/20 hover:bg-white/20'}`}
             >
               {s.label}
             </a>
