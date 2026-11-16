@@ -4,8 +4,9 @@
 // source (prices, payment channels), the post says so instead of guessing.
 import type { BlogPost } from './editorial'
 
-// Every guide has its own photograph, chosen for the article and not used anywhere else on the site.
-const PEXELS = { imageSourceLabel: 'Pexels', imageRights: 'Used under the Pexels License.' }
+// Every guide has its own photograph of West African students, chosen for the article and not used
+// anywhere else on the site. Credits are listed on the About page, not under the photo.
+const PEXELS = { imageSourceLabel: 'Pexels' }
 
 export const GUIDE_POSTS: BlogPost[] = [
   {
@@ -17,10 +18,10 @@ export const GUIDE_POSTS: BlogPost[] = [
     publishedAt: '2026-11-16',
     updatedAt: '2026-11-16',
     readMinutes: 7,
-    image: '/img/blog/guide-exam-day.webp',
-    imageAlt: 'Students writing an examination at desks in a classroom',
-    imageCredit: 'Andy Barbour via Pexels',
-    imageSourceUrl: 'https://www.pexels.com/photo/students-sitting-in-the-room-6683887/',
+    image: '/img/blog/wassce-exam-hall.webp',
+    imageAlt: 'Students in school uniform writing an examination in a classroom',
+    imageCredit: 'Gabriel Joe Amuzu via Pexels',
+    imageSourceUrl: 'https://www.pexels.com/photo/students-in-classroom-during-exam-37456293/',
     ...PEXELS,
     intro: 'Months of revision can be undone in a few minutes on the day: a phone left in a pocket, a borrowed protractor, an index number written wrongly, or a compulsory question missed. This checklist covers what WAEC allows, what it does not, and the habits that protect your marks in every paper.',
     sections: [
@@ -121,10 +122,10 @@ export const GUIDE_POSTS: BlogPost[] = [
     publishedAt: '2026-11-16',
     updatedAt: '2026-11-16',
     readMinutes: 6,
-    image: '/img/blog/guide-check-result.webp',
-    imageAlt: 'A young man celebrating as he reads good news on his phone',
-    imageCredit: 'Adeniji Abdullahi A via Pexels',
-    imageSourceUrl: 'https://www.pexels.com/photo/a-happy-man-looking-at-a-cellphone-10843136/',
+    image: '/img/blog/wassce-results-day.webp',
+    imageAlt: 'Students in school uniform smiling together',
+    imageCredit: 'Tosin Olowoleni via Pexels',
+    imageSourceUrl: 'https://www.pexels.com/photo/smiling-schoolchildren-in-uniform-share-a-moment-34162710/',
     ...PEXELS,
     intro: 'WAEC publishes Sierra Leone results on its own online checker. You need three things: your index number, the year you sat the exam and an e-PIN. This guide follows the instructions on the official checker and its help page, and is clear about the details WAEC does not publish there.',
     sections: [
@@ -208,10 +209,10 @@ export const GUIDE_POSTS: BlogPost[] = [
     publishedAt: '2026-11-16',
     updatedAt: '2026-11-16',
     readMinutes: 8,
-    image: '/img/blog/guide-mathematics.webp',
-    imageAlt: 'A calculator and pages of mathematical working',
-    imageCredit: 'cottonbro studio via Pexels',
-    imageSourceUrl: 'https://www.pexels.com/photo/person-using-a-calculator-5184955/',
+    image: '/img/blog/wassce-maths-classwork.webp',
+    imageAlt: 'A student in school uniform working at her desk',
+    imageCredit: 'Mickael Ange Konan via Pexels',
+    imageSourceUrl: 'https://www.pexels.com/photo/diverse-classroom-of-focused-students-learning-34526411/',
     ...PEXELS,
     intro: 'Mathematics is a core subject, and most university courses in Sierra Leone want a credit in it. Passing is less about talent than about knowing how the two papers work and practising the right things in the right order. This guide starts from the examination scheme in the WAEC syllabus and turns it into a plan.',
     sections: [
@@ -315,10 +316,10 @@ export const GUIDE_POSTS: BlogPost[] = [
     publishedAt: '2026-11-16',
     updatedAt: '2026-11-16',
     readMinutes: 9,
-    image: '/img/blog/guide-english.webp',
-    imageAlt: 'A student with a notebook, thinking about what to write',
-    imageCredit: 'Ketut Subiyanto via Pexels',
-    imageSourceUrl: 'https://www.pexels.com/photo/young-thoughtful-black-male-student-with-notebook-in-city-park-4559775/',
+    image: '/img/blog/wassce-english-reading.webp',
+    imageAlt: 'Three students in school uniform reading a book together',
+    imageCredit: 'Mickael Ange Konan via Pexels',
+    imageSourceUrl: 'https://www.pexels.com/photo/three-students-reading-school-book-outdoors-34526425/',
     ...PEXELS,
     intro: 'Almost every university programme in Sierra Leone requires a credit in English Language, so this is the one subject no candidate can afford to leave to chance. The WAEC syllabus says exactly what each paper tests and how the essay is marked. Prepare for those things and the paper stops being a mystery.',
     sections: [
@@ -427,10 +428,10 @@ export const GUIDE_POSTS: BlogPost[] = [
     publishedAt: '2026-11-16',
     updatedAt: '2026-11-16',
     readMinutes: 8,
-    image: '/img/blog/guide-biology.webp',
-    imageAlt: 'A student examining a plant leaf under a microscope',
-    imageCredit: 'RF._.studio via Pexels',
-    imageSourceUrl: 'https://www.pexels.com/photo/focused-biologist-studying-plant-leaf-with-microscope-3825541/',
+    image: '/img/blog/wassce-biology-classwork.webp',
+    imageAlt: 'A teacher checking students’ notes during a lesson',
+    imageCredit: 'Theo Lordson via Pexels',
+    imageSourceUrl: 'https://www.pexels.com/photo/teacher-assisting-students-in-classroom-setting-40807445/',
     ...PEXELS,
     intro: 'Biology is the science most WASSCE candidates take, and it is required for medicine, nursing, pharmacy, agriculture and many other courses. It also has a trap: many candidates revise only the theory, while the practical paper carries a large share of the marks. This guide follows the WAEC Biology syllabus, including the extra section that Sierra Leone candidates are examined on.',
     sections: [
@@ -507,10 +508,10 @@ export const GUIDE_POSTS: BlogPost[] = [
     publishedAt: '2026-11-16',
     updatedAt: '2026-11-16',
     readMinutes: 8,
-    image: '/img/blog/guide-chemistry.webp',
-    imageAlt: 'A student in a lab coat working through a chemical formula',
-    imageCredit: 'RF._.studio via Pexels',
-    imageSourceUrl: 'https://www.pexels.com/photo/focused-african-american-teenage-chemist-working-on-formula-in-scientific-center-3825461/',
+    image: '/img/blog/wassce-chemistry-lesson.webp',
+    imageAlt: 'A teacher writing chemical equations on a classroom whiteboard',
+    imageCredit: 'Unique Digitals via Pexels',
+    imageSourceUrl: 'https://www.pexels.com/photo/a-teacher-writing-on-a-whiteboard-10614243/',
     ...PEXELS,
     intro: 'Chemistry is required for medicine, pharmacy, engineering and most science degrees. It rewards steady practice more than memorising: the calculations, the equations and the practical skills all improve with repetition. This guide follows the WAEC Chemistry syllabus and its examination scheme.',
     sections: [
@@ -582,10 +583,10 @@ export const GUIDE_POSTS: BlogPost[] = [
     publishedAt: '2026-11-16',
     updatedAt: '2026-11-16',
     readMinutes: 8,
-    image: '/img/blog/guide-physics.webp',
-    imageAlt: 'A student working with physics apparatus in a school laboratory',
-    imageCredit: 'cottonbro studio via Pexels',
-    imageSourceUrl: 'https://www.pexels.com/photo/a-high-school-student-in-white-top-looking-at-camera-6208713/',
+    image: '/img/blog/wassce-physics-classwork.webp',
+    imageAlt: 'Students in school uniform working through problems at their desks',
+    imageCredit: 'Mickael Ange Konan via Pexels',
+    imageSourceUrl: 'https://www.pexels.com/photo/engaged-students-in-a-classroom-setting-34526416/',
     ...PEXELS,
     intro: 'Physics is required for engineering and many science courses, and it has a reputation for being hard. Much of that reputation comes from calculations set out badly and practicals done in a hurry. Both can be fixed with method and practice. This guide follows the WAEC Physics syllabus and its examination scheme.',
     sections: [
