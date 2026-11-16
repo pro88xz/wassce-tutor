@@ -3,8 +3,10 @@ import type { ErrorComponentProps } from '@tanstack/react-router'
 import { isStaleBuildError, reloadOnce } from '@/lib/reload'
 
 // The router's error screen for every route. Replaces the library's bare
-// "Something went wrong! Show Error", which Google once indexed as a page's
-// description. The robots tag keeps a failed render out of search results.
+// "Something went wrong! Show Error", which Google once indexed as the
+// homepage's description. No noindex tag here on purpose: if Google's renderer
+// ever hits an error on an important page, a poor description is far better
+// than that page being dropped from search.
 export function ErrorPage({ error }: ErrorComponentProps) {
   useEffect(() => {
     console.error(error)
@@ -13,7 +15,6 @@ export function ErrorPage({ error }: ErrorComponentProps) {
 
   return (
     <div className="mx-auto max-w-3xl space-y-4 pt-12 pb-12 text-center">
-      <meta name="robots" content="noindex" />
       <h1 className="text-4xl font-bold tracking-tight">This page did not load</h1>
       <p className="text-muted-foreground">
         It is usually a weak connection, or the site was updated while this page was open. Reloading fixes it.
