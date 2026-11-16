@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Agricultural extension methods</title>
+<desc id="d">Three groups of extension methods. Individual methods: farm and home visits, office calls, phone calls. Group methods: method and result demonstrations, farmer field schools, field days, meetings, tours. Mass methods: radio, television, posters, leaflets, text messages.</desc>
+<defs></defs>
+<rect width="800" height="360" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Reaching farmers: extension methods</text>
+<rect x="25.0" y="70.0" width="230.0" height="230.0" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2.4"/>
+<text x="140.0" y="104.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Individual</text>
+<text x="140.0" y="148.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">farm and home visits</text>
+<text x="140.0" y="182.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">office calls</text>
+<text x="140.0" y="216.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">phone calls</text>
+<text x="140.0" y="274.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">personal, but reaches few</text>
+<rect x="285.0" y="70.0" width="230.0" height="230.0" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="2.4"/>
+<text x="400.0" y="104.0" font-size="18" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Group</text>
+<text x="400.0" y="148.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">demonstrations</text>
+<text x="400.0" y="182.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">farmer field schools</text>
+<text x="400.0" y="216.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">field days, tours</text>
+<text x="400.0" y="274.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">learning by doing</text>
+<rect x="545.0" y="70.0" width="230.0" height="230.0" rx="14" fill="#fef3c7" stroke="#ea580c" stroke-width="2.4"/>
+<text x="660.0" y="104.0" font-size="18" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Mass</text>
+<text x="660.0" y="148.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">radio, television</text>
+<text x="660.0" y="182.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">posters, leaflets</text>
+<text x="660.0" y="216.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">text messages</text>
+<text x="660.0" y="274.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">reaches many, quickly</text>
+<text x="400.0" y="335.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Good extension combines methods: hear it on radio, see it at a demonstration, try it with a visit.</text>
+</svg>

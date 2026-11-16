@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The four factors of production and their rewards</title>
+<desc id="d">Land is rewarded with rent, labour with wages, capital with interest, and management or entrepreneurship with profit.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="300" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Factors of production and their rewards</text>
+<rect x="25.0" y="75.0" width="170.0" height="90.0" rx="12" fill="#fef3c7" stroke="#92400e" stroke-width="2.5"/>
+<text x="110.0" y="99.0" font-size="15" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Land</text>
+<text x="110.0" y="120.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">soil, water, natural</text>
+<text x="110.0" y="141.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">resources</text>
+<rect x="50.0" y="217.0" width="120.0" height="46.0" rx="12" fill="#ffffff" stroke="#92400e" stroke-width="2.5"/>
+<text x="110.0" y="240.0" font-size="16" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Rent</text>
+<line x1="110.0" y1="171.0" x2="110.0" y2="211.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="218.0" y="75.0" width="170.0" height="90.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="303.0" y="99.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Labour</text>
+<text x="303.0" y="120.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">human effort,</text>
+<text x="303.0" y="141.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">family or hired</text>
+<rect x="243.0" y="217.0" width="120.0" height="46.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="303.0" y="240.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Wages</text>
+<line x1="303.0" y1="171.0" x2="303.0" y2="211.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="411.0" y="75.0" width="170.0" height="90.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="496.0" y="99.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Capital</text>
+<text x="496.0" y="120.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">tools, machines,</text>
+<text x="496.0" y="141.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">money, buildings</text>
+<rect x="436.0" y="217.0" width="120.0" height="46.0" rx="12" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="496.0" y="240.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Interest</text>
+<line x1="496.0" y1="171.0" x2="496.0" y2="211.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="604.0" y="75.0" width="170.0" height="90.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="689.0" y="99.0" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Management</text>
+<text x="689.0" y="120.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">organising and</text>
+<text x="689.0" y="141.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">taking risks</text>
+<rect x="629.0" y="217.0" width="120.0" height="46.0" rx="12" fill="#ffffff" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="689.0" y="240.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Profit</text>
+<line x1="689.0" y1="171.0" x2="689.0" y2="211.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+</svg>

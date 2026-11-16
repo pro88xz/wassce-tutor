@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Demand, supply and the market price</title>
+<desc id="d">A graph of price against quantity. The demand curve slopes down: buyers want more at lower prices. The supply curve slopes up: farmers offer more at higher prices. Where they cross is the equilibrium price and quantity. At harvest time supply increases, the supply curve shifts right, and the price falls.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="780" height="420" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Demand, supply and price</text>
+<line x1="100.0" y1="360.0" x2="640.0" y2="360.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="100.0" y1="360.0" x2="100.0" y2="60.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="644.0" y="364.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">quantity</text>
+<text x="92.0" y="50.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">price</text>
+<line x1="152.0" y1="108.0" x2="568.0" y2="332.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="152.0" y1="332.0" x2="568.0" y2="108.0" stroke="#15803d" stroke-width="3" stroke-linecap="round"/>
+<line x1="282.0" y1="332.0" x2="620.0" y2="150.0" stroke="#15803d" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="8 6"/>
+<text x="576.0" y="332.0" font-size="14" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">D (demand)</text>
+<text x="564.0" y="96.0" font-size="14" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">S</text>
+<text x="626.0" y="150.0" font-size="14" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">S₁ (harvest)</text>
+<line x1="100.0" y1="220.0" x2="360.0" y2="220.0" stroke="#dc2626" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<line x1="360.0" y1="360.0" x2="360.0" y2="220.0" stroke="#dc2626" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<circle cx="360.0" cy="220.0" r="6.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<line x1="100.0" y1="255.0" x2="425.0" y2="255.0" stroke="#ea580c" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<line x1="425.0" y1="360.0" x2="425.0" y2="255.0" stroke="#ea580c" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 4"/>
+<circle cx="425.0" cy="255.0" r="6.0" fill="#ea580c" stroke="#ea580c" stroke-width="1"/>
+<text x="92.0" y="220.0" font-size="14" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">P</text>
+<text x="92.0" y="255.0" font-size="14" fill="#ea580c" text-anchor="end" dominant-baseline="middle" font-weight="bold">P₁</text>
+<text x="360.0" y="378.0" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Q</text>
+<text x="425.0" y="378.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Q₁</text>
+<text x="350.0" y="200.0" font-size="13" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">equilibrium</text>
+<text x="390.0" y="405.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">More supply at harvest → lower price; scarcity in the lean season → higher price.</text>
+</svg>

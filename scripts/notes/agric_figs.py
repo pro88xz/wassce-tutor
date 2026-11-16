@@ -851,6 +851,169 @@ def fish_pond():
     return s
 
 
+# ═══ A5: economics, management, extension and practical skills ═════════════
+
+PF_TABLE = [(0, 0), (1, 8), (2, 22), (3, 36), (4, 46), (5, 52), (6, 55), (7, 55), (8, 52)]
+
+
+@fig
+def production_function():
+    s = Svg(800, 460, "The law of diminishing returns: total, average and marginal product",
+            "As more units of a variable input such as labour are added to a fixed amount of land, total product first "
+            "rises quickly, then more slowly, reaches a maximum and then falls. Marginal product rises, then falls, and "
+            "becomes zero where total product is greatest. Stage I lasts until average product is at its maximum, stage "
+            "II until marginal product reaches zero, and stage III, where marginal product is negative, follows.")
+    heading(s, "Diminishing returns: total, average and marginal product")
+    ox, oy, ux, uy = 90, 400, 72, 5.4
+    X = lambda x: ox + x * ux
+    Y = lambda y: oy - y * uy
+    for k in range(0, 9):
+        s.line(X(k), Y(0), X(k), Y(60), color="#e5e7eb", width=1)
+        s.text(X(k), oy + 18, str(k), size=13, color=MUTED)
+    for v in range(0, 61, 10):
+        s.line(X(0), Y(v), X(8), Y(v), color="#e5e7eb", width=1)
+        s.text(X(0) - 8, Y(v), str(v), size=13, color=MUTED, anchor="end")
+    s.line(X(0), oy, X(8) + 10, oy, color=INK, width=2)
+    s.line(X(0), oy, X(0), Y(62), color=INK, width=2)
+    s.text(X(4), oy + 42, "units of labour (variable input)", size=14, color=MUTED)
+    s.text(X(0) - 40, Y(62) - 10, "output (bags)", size=13, color=MUTED, anchor="start")
+    s.polyline([(X(x), Y(y)) for x, y in PF_TABLE], color=BLUE, width=3.2)
+    ap = [(x, y / x) for x, y in PF_TABLE if x > 0]
+    mp = [(x - 0.5, PF_TABLE[x][1] - PF_TABLE[x - 1][1]) for x in range(1, 9)]
+    s.polyline([(X(x), Y(y)) for x, y in ap], color=GREEN, width=2.6)
+    s.polyline([(X(x), Y(y)) for x, y in mp], color=RED, width=2.6, dash="7 5")
+    s.label(X(5.6), Y(57), "total product", size=14, color=BLUE, weight="bold")
+    s.label(X(7.3), Y(11), "average", size=13, color=GREEN, weight="bold")
+    s.label(X(5.9), Y(-3) - 2, "marginal", size=13, color=RED, weight="bold")
+    for x, name in ((3, "Stage I"), (6.5, "Stage II")):
+        s.line(X(x), Y(0), X(x), Y(60), color=PURPLE, width=1.6, dash="4 4")
+    s.text(X(1.5), Y(60) + 4, "Stage I", size=14, weight="bold", color=PURPLE)
+    s.text(X(4.75), Y(60) + 4, "Stage II", size=14, weight="bold", color=PURPLE)
+    s.text(X(7.4), Y(60) + 4, "Stage III", size=14, weight="bold", color=PURPLE)
+    return s
+
+
+@fig
+def factors_of_production():
+    s = Svg(800, 300, "The four factors of production and their rewards",
+            "Land is rewarded with rent, labour with wages, capital with interest, and management or entrepreneurship "
+            "with profit.")
+    heading(s, "Factors of production and their rewards")
+    items = [("Land", "soil, water, natural", "resources", "Rent", F_AMBER, BROWN), ("Labour", "human effort,", "family or hired", "Wages", F_BLUE, BLUE),
+             ("Capital", "tools, machines,", "money, buildings", "Interest", F_GREEN, GREEN), ("Management", "organising and", "taking risks", "Profit", F_PURPLE, PURPLE)]
+    for k, (name, a, b, reward, fill, col) in enumerate(items):
+        x = 110 + k * 193
+        top = box(s, x, 120, 170, 90, [name, a, b], col=col, fill=fill, size=15)
+        bot = box(s, x, 240, 120, 46, [reward], col=col, fill="#ffffff", size=16)
+        link(s, top, bot, color=MUTED, width=2.2)
+    return s
+
+
+@fig
+def marketing_chain():
+    s = Svg(800, 330, "A marketing channel for farm produce",
+            "Produce moves from the farmer to an assembler or middleman who buys in villages, then to a wholesaler, a "
+            "retailer and finally the consumer. Sometimes a processor adds value along the way, and some farmers sell "
+            "directly to consumers in local markets, or through a cooperative.")
+    heading(s, "From farm gate to consumer: a marketing channel")
+    steps = [("Farmer", F_GREEN, GREEN), ("Assembler /", F_AMBER, ORANGE), ("Wholesaler", F_BLUE, BLUE), ("Retailer", F_PURPLE, PURPLE), ("Consumer", F_GREY, INK)]
+    subs = ["produces", "middleman", "buys in bulk", "sells small lots", "buys to use"]
+    boxes = []
+    prev = None
+    for k, ((t, fill, col), sub) in enumerate(zip(steps, subs)):
+        b = box(s, 85 + k * 157, 140, 138, 64, [t, sub], col=col, fill=fill, size=14)
+        if prev:
+            link(s, prev, b, color=INK, width=2.4)
+        boxes.append(b)
+        prev = b
+    p = box(s, 320, 260, 160, 52, ["Processor", "adds value"], col=TEAL, fill=F_TEAL, size=14)
+    link(s, boxes[1], p, color=MUTED, width=2)
+    link(s, p, boxes[2], color=MUTED, width=2)
+    s.path("M 85 108 C 200 70, 600 70, 713 108", color=GREEN, width=2.2, dash="7 5", arrow="end")
+    s.text(400, 62, "direct sale or cooperative: fewer middlemen, more for the farmer", size=13, color=GREEN, weight="bold")
+    return s
+
+
+@fig
+def supply_demand():
+    s = Svg(780, 420, "Demand, supply and the market price",
+            "A graph of price against quantity. The demand curve slopes down: buyers want more at lower prices. The supply "
+            "curve slopes up: farmers offer more at higher prices. Where they cross is the equilibrium price and quantity. "
+            "At harvest time supply increases, the supply curve shifts right, and the price falls.")
+    heading(s, "Demand, supply and price")
+    ox, oy, W, H = 100, 360, 520, 280
+    X = lambda q: ox + q * W
+    Y = lambda p: oy - p * H
+    s.arrow(ox, oy, ox + W + 20, oy, color=INK, width=2)
+    s.arrow(ox, oy, ox, oy - H - 20, color=INK, width=2)
+    s.text(ox + W + 24, oy + 4, "quantity", size=14, anchor="start", color=MUTED)
+    s.text(ox - 8, oy - H - 30, "price", size=14, anchor="start", color=MUTED)
+    s.line(X(0.1), Y(0.9), X(0.9), Y(0.1), color=BLUE, width=3)
+    s.line(X(0.1), Y(0.1), X(0.9), Y(0.9), color=GREEN, width=3)
+    s.line(X(0.35), Y(0.1), X(1.0), Y(0.75), color=GREEN, width=2.6, dash="8 6")
+    s.text(X(0.9) + 8, Y(0.1), "D (demand)", size=14, weight="bold", color=BLUE, anchor="start")
+    s.text(X(0.9) - 4, Y(0.9) - 12, "S", size=14, weight="bold", color=GREEN, anchor="start")
+    s.text(X(1.0) + 6, Y(0.75), "S₁ (harvest)", size=14, weight="bold", color=GREEN, anchor="start")
+    for q, p, col in ((0.5, 0.5, RED), (0.625, 0.375, ORANGE)):
+        s.line(X(0), Y(p), X(q), Y(p), color=col, width=1.6, dash="5 4")
+        s.line(X(q), Y(0), X(q), Y(p), color=col, width=1.6, dash="5 4")
+        s.dot(X(q), Y(p), r=6, color=col)
+    s.text(X(0) - 8, Y(0.5), "P", size=14, weight="bold", color=RED, anchor="end")
+    s.text(X(0) - 8, Y(0.375), "P₁", size=14, weight="bold", color=ORANGE, anchor="end")
+    s.text(X(0.5), oy + 18, "Q", size=14, weight="bold", color=RED)
+    s.text(X(0.625), oy + 18, "Q₁", size=14, weight="bold", color=ORANGE)
+    s.text(X(0.5) - 10, Y(0.5) - 20, "equilibrium", size=13, color=RED, weight="bold", anchor="end")
+    note(s, "More supply at harvest → lower price; scarcity in the lean season → higher price.", 405, size=14, color=INK)
+    return s
+
+
+@fig
+def extension_methods():
+    s = Svg(800, 360, "Agricultural extension methods",
+            "Three groups of extension methods. Individual methods: farm and home visits, office calls, phone calls. Group "
+            "methods: method and result demonstrations, farmer field schools, field days, meetings, tours. Mass methods: "
+            "radio, television, posters, leaflets, text messages.")
+    heading(s, "Reaching farmers: extension methods")
+    groups = [("Individual", ["farm and home visits", "office calls", "phone calls"], "personal, but reaches few", F_BLUE, BLUE),
+              ("Group", ["demonstrations", "farmer field schools", "field days, tours"], "learning by doing", F_GREEN, GREEN),
+              ("Mass", ["radio, television", "posters, leaflets", "text messages"], "reaches many, quickly", F_AMBER, ORANGE)]
+    for k, (name, items, note_t, fill, col) in enumerate(groups):
+        x = 140 + k * 260
+        s.rect(x - 115, 70, 230, 230, fill=fill, stroke=col, width=2.4, rx=14)
+        s.text(x, 104, name, size=18, weight="bold", color=col)
+        for j, it in enumerate(items):
+            s.text(x, 148 + j * 34, it, size=14)
+        s.text(x, 274, note_t, size=13, color=MUTED, weight="bold")
+    note(s, "Good extension combines methods: hear it on radio, see it at a demonstration, try it with a visit.", 335, size=13, color=INK)
+    return s
+
+
+@fig
+def farm_layout():
+    s = Svg(800, 470, "A simple layout plan for a mixed farm",
+            "A plan of a mixed farm. The farmhouse, store and office are near the road entrance. Poultry house and pig "
+            "pens are downwind of the house, near the store. Crop plots are divided for rotation. An orchard and the "
+            "fish pond are near the stream, and the swamp rice field lies in the valley bottom. Paths link all parts.")
+    heading(s, "Planning the layout of a mixed farm")
+    s.rect(30, 60, 740, 380, fill="#f0fdf4", stroke=GREEN, width=2.4, rx=6)
+    s.rect(30, 400, 740, 40, fill="#e5e7eb", stroke="none", width=0)
+    s.text(400, 422, "main road", size=13, color=MUTED, weight="bold")
+    s.path("M 700 60 C 680 160, 720 260, 690 400", color=BLUE, width=8, fill="none")
+    s.text(735, 230, "stream", size=12, color=BLUE, weight="bold")
+    items = [((60, 300, 150, 80), "House, store,", "office", F_GREY, INK), ((230, 300, 110, 80), "Poultry", "house", F_AMBER, ORANGE),
+             ((360, 300, 90, 80), "Pig", "pens", F_PURPLE, PURPLE), ((60, 80, 130, 190), "Plot A", "maize", F_GREEN, GREEN),
+             ((200, 80, 130, 190), "Plot B", "groundnut", F_GREEN, GREEN), ((340, 80, 130, 190), "Plot C", "cassava", F_GREEN, GREEN),
+             ((480, 80, 180, 120), "Orchard", "citrus, mango", F_TEAL, TEAL), ((480, 215, 180, 70), "Fish pond", "", F_BLUE, BLUE),
+             ((470, 300, 200, 80), "Swamp rice", "valley bottom", "#dbeafe", BLUE)]
+    for (x, y, w, h), a, b, fill, col in items:
+        s.rect(x, y, w, h, fill=fill, stroke=col, width=2, rx=6)
+        s.text(x + w / 2, y + h / 2 - (8 if b else 0), a, size=14, weight="bold", color=col)
+        if b:
+            s.text(x + w / 2, y + h / 2 + 12, b, size=12)
+    s.line(135, 380, 135, 400, color=BROWN, width=4)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:
