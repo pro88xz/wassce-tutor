@@ -3,6 +3,7 @@
 // Use via :::diagram{name=animal-cell} in lesson Markdown.
 
 import type { ReactElement } from 'react'
+import { Zoomable } from './Zoomable'
 
 type DiagramName =
   | 'animal-cell'
@@ -55,15 +56,14 @@ export function Diagram({ name }: { name: string }) {
       </div>
     )
   }
+  const label = DIAGRAM_LABELS[name as DiagramName]
   return (
     <figure className="my-6 not-prose">
-      <div
-        role="img"
-        aria-label={DIAGRAM_LABELS[name as DiagramName]}
-        className="rounded-2xl border bg-white p-4 dark:bg-slate-50"
-      >
-        <D />
-      </div>
+      <Zoomable label={label} large={<div role="img" aria-label={label}><D /></div>}>
+        <div role="img" aria-label={label} className="rounded-2xl border bg-white p-4 dark:bg-slate-50">
+          <D />
+        </div>
+      </Zoomable>
     </figure>
   )
 }

@@ -14,6 +14,7 @@ import 'katex/dist/katex.min.css'
 import remarkDirective from 'remark-directive'
 import { Callout } from './lesson/Callout'
 import { Diagram } from './lesson/Diagram'
+import { Zoomable } from './lesson/Zoomable'
 import { Marked, ModelAnswer, Reveal, RightAligned } from './lesson/WritingBlocks'
 import { MdTable } from './MdTable'
 import { fitLongMath, splitForNarrow } from '@/lib/math-split'
@@ -170,14 +171,22 @@ const MD_COMPONENTS = {
   // Wide tables scroll sideways on phones; short-cell tables fit the screen.
   table: MdTable,
   // Diagrams sit on a white card, so line drawings stay readable in dark mode.
+  // Tapping one opens it full screen (Zoomable), where its labels are readable on a phone.
   img: ({ node: _node, src, alt }: any) => (
-    <img
-      src={src}
-      alt={alt ?? ''}
-      loading="lazy"
-      decoding="async"
-      className="not-prose mx-auto my-5 block h-auto max-h-[32rem] w-full max-w-2xl rounded-xl border bg-white object-contain p-1.5"
-    />
+    <span className="not-prose mx-auto my-5 block w-full max-w-2xl">
+      <Zoomable
+        label={alt || 'Lesson diagram'}
+        large={<img src={src} alt={alt ?? ''} decoding="async" className="block h-auto w-full rounded-xl bg-white" />}
+      >
+        <img
+          src={src}
+          alt={alt ?? ''}
+          loading="lazy"
+          decoding="async"
+          className="block h-auto max-h-[32rem] w-full rounded-xl border bg-white object-contain p-1.5"
+        />
+      </Zoomable>
+    </span>
   ),
 } as any
 
