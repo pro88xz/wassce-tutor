@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Soil particle sizes: sand, silt and clay</title>
+<desc id="d">Three circles drawn to show relative size. Sand particles are the largest, 0.02 to 2 mm, gritty, with large pores: fast drainage, poor water holding. Silt is 0.002 to 0.02 mm, smooth and floury. Clay is smaller than 0.002 mm, sticky when wet, with tiny pores: holds water and nutrients but drains slowly.</desc>
+<defs></defs>
+<rect width="780" height="400" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sand, silt and clay (not to scale)</text>
+<circle cx="150.0" cy="150.0" r="70.0" fill="#fef3c7" stroke="#ea580c" stroke-width="2.6"/>
+<text x="150.0" y="72.0" font-size="18" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sand</text>
+<text x="150.0" y="240.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">0.02–2 mm</text>
+<text x="150.0" y="272.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">gritty to touch</text>
+<text x="150.0" y="294.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">large pores</text>
+<text x="150.0" y="316.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">drains fast, dries fast</text>
+<text x="150.0" y="338.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">holds few nutrients</text>
+<circle cx="400.0" cy="150.0" r="34.0" fill="#e2e8f0" stroke="#475569" stroke-width="2.6"/>
+<text x="400.0" y="72.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Silt</text>
+<text x="400.0" y="240.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">0.002–0.02 mm</text>
+<text x="400.0" y="272.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">smooth, floury</text>
+<text x="400.0" y="294.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">medium pores</text>
+<text x="400.0" y="316.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">medium drainage</text>
+<text x="400.0" y="338.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">can form crusts</text>
+<circle cx="630.0" cy="150.0" r="12.0" fill="#fee2e2" stroke="#dc2626" stroke-width="2.6"/>
+<text x="630.0" y="72.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Clay</text>
+<text x="630.0" y="240.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">below 0.002 mm</text>
+<text x="630.0" y="272.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sticky when wet</text>
+<text x="630.0" y="294.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">tiny pores</text>
+<text x="630.0" y="316.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">holds water and</text>
+<text x="630.0" y="338.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">nutrients; drains slowly</text>
+<text x="390.0" y="380.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Loam, a mixture of all three with humus, is the best soil for most crops.</text>
+</svg>

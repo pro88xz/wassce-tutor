@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The order of land preparation and crop operations, with tools and implements</title>
+<desc id="d">Clearing with cutlass, axe or bulldozer; ploughing (primary tillage) with hoe or disc plough; harrowing (secondary tillage) with rake or harrow; ridging or making beds with hoe or ridger; planting with planting stick or planter; weeding with hoe or herbicide sprayer; harvesting with sickle, cutlass or combine harvester.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="800" height="330" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">From bush to harvest: operations and the tools for each</text>
+<rect x="10.0" y="115.0" width="100.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="60.0" y="150.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Clearing</text>
+<text x="60.0" y="212.0" font-size="12" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cutlass, axe</text>
+<text x="60.0" y="250.0" font-size="12" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">bulldozer</text>
+<rect x="123.0" y="115.0" width="100.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="173.0" y="150.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ploughing</text>
+<line x1="113.0" y1="150.0" x2="120.0" y2="150.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="173.0" y="212.0" font-size="12" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="normal">hoe, mattock</text>
+<text x="173.0" y="250.0" font-size="12" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">disc plough</text>
+<rect x="236.0" y="115.0" width="100.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="286.0" y="150.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Harrowing</text>
+<line x1="226.0" y1="150.0" x2="233.0" y2="150.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="286.0" y="212.0" font-size="12" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rake</text>
+<text x="286.0" y="250.0" font-size="12" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">disc harrow</text>
+<rect x="349.0" y="115.0" width="100.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="399.0" y="150.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ridging</text>
+<line x1="339.0" y1="150.0" x2="346.0" y2="150.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="399.0" y="212.0" font-size="12" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="normal">hoe</text>
+<text x="399.0" y="250.0" font-size="12" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ridger</text>
+<rect x="462.0" y="115.0" width="100.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="512.0" y="150.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Planting</text>
+<line x1="452.0" y1="150.0" x2="459.0" y2="150.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="512.0" y="212.0" font-size="12" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="normal">dibber, stick</text>
+<text x="512.0" y="250.0" font-size="12" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">planter, drill</text>
+<rect x="575.0" y="115.0" width="100.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="625.0" y="150.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Weeding</text>
+<line x1="565.0" y1="150.0" x2="572.0" y2="150.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="625.0" y="212.0" font-size="12" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="normal">hoe, cutlass</text>
+<text x="625.0" y="250.0" font-size="12" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sprayer</text>
+<rect x="688.0" y="115.0" width="100.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="738.0" y="150.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Harvesting</text>
+<line x1="678.0" y1="150.0" x2="685.0" y2="150.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="738.0" y="212.0" font-size="12" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sickle, cutlass</text>
+<text x="738.0" y="250.0" font-size="12" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">combine</text>
+<text x="20.0" y="212.0" font-size="1" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<rect x="240.0" y="280.0" width="14.0" height="14.0" rx="0" fill="#92400e" stroke="#92400e" stroke-width="1"/>
+<text x="262.0" y="288.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">hand tool</text>
+<rect x="420.0" y="280.0" width="14.0" height="14.0" rx="0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<text x="442.0" y="288.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">machine / implement</text>
+<text x="400.0" y="92.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">primary tillage = ploughing;  secondary tillage = harrowing, ridging</text>
+</svg>
