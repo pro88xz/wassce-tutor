@@ -100,22 +100,22 @@ function SubjectHubPage() {
           stats={stats}
           actions={
             user ? (
-              <a href={`/subject/${subject.id}`} className={`site-btn site-btn-light ${HERO_BTN}`}>
+              <a href={`/subject/${subject.id}`} className={`site-btn site-btn-primary ${HERO_BTN}`}>
                 Open in WASSCE Tutor <ArrowRight className="h-4 w-4" aria-hidden />
               </a>
             ) : hasLessons ? (
               <>
-                <Link to="/auth" className={`site-btn site-btn-light ${HERO_BTN}`}>
+                <Link to="/auth" className={`site-btn site-btn-primary ${HERO_BTN}`}>
                   Start {subject.name} free <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
-                <a href={tutorsPath(subject.slug)} className={`site-btn site-btn-glass ${HERO_BTN}`}>Book a tutor</a>
+                <a href={tutorsPath(subject.slug)} className={`site-btn site-btn-secondary ${HERO_BTN}`}>Book a tutor</a>
               </>
             ) : (
               <>
-                <a href={tutorsPath(subject.slug)} className={`site-btn site-btn-light ${HERO_BTN}`}>
+                <a href={tutorsPath(subject.slug)} className={`site-btn site-btn-primary ${HERO_BTN}`}>
                   Book a tutor <ArrowRight className="h-4 w-4" aria-hidden />
                 </a>
-                <a href="/wassce/subjects" className={`site-btn site-btn-glass ${HERO_BTN}`}>Subjects with lessons</a>
+                <a href="/wassce/subjects" className={`site-btn site-btn-secondary ${HERO_BTN}`}>Subjects with lessons</a>
               </>
             )
           }
@@ -127,7 +127,7 @@ function SubjectHubPage() {
               priority
               rounded="rounded-2xl"
               sizes="(min-width: 1024px) 480px, 100vw"
-              className="aspect-[5/2] w-full shadow-[0_30px_60px_-30px_rgba(0,0,0,.7)] ring-1 ring-white/10 sm:aspect-[3/1] lg:aspect-[4/3]"
+              className="aspect-[5/2] w-full shadow-[0_24px_48px_-28px_rgba(30,20,80,.45)] sm:aspect-[3/1] lg:aspect-[4/3]"
             />
           }
         />

@@ -28,8 +28,8 @@ function BlogIndexPage() {
   return (
     <main className="site-page space-y-10 pb-16 sm:space-y-14">
       <Breadcrumbs trail={[['Home', '/'], ['Blog', '/blog']]} />
-      <header className="relative overflow-hidden rounded-[2rem] bg-[#21134d] px-6 py-10 text-white sm:px-10 sm:py-14">
-        <div className="absolute -right-20 -top-24 h-80 w-80 rounded-full bg-violet-500/25 blur-3xl" />
+      <header className="site-brand-panel relative overflow-hidden rounded-[2rem] px-6 py-10 text-white sm:px-10 sm:py-14">
+        <div className="absolute -right-16 -top-20 h-72 w-72 rounded-full border-[32px] border-white/10" /><div className="absolute -bottom-12 right-24 h-28 w-28 rounded-full bg-[#ffd166]/85" />
         <div className="relative max-w-3xl">
           <p className="text-xs font-bold uppercase tracking-[.2em] text-violet-200">WASSCE Tutor · Editorial</p>
           <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight sm:text-5xl">Clear guidance for the next step.</h1>
@@ -49,7 +49,7 @@ function BlogIndexPage() {
               <li key={u.slug}><a href={`/universities/${u.slug}`} className="inline-flex min-h-9 items-center rounded-full border border-violet-200 bg-white px-3.5 text-[13px] font-semibold text-slate-800 transition hover:border-violet-400 hover:text-violet-800">{u.shortName}</a></li>
             ))}
           </ul>
-          <a href="/universities" className="mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[#21134d] px-5 text-sm font-bold text-white">Explore universities <ArrowRight className="h-4 w-4"/></a>
+          <a href="/universities" className="mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary px-5 text-sm font-bold text-primary-foreground hover:bg-brand-strong">Explore universities <ArrowRight className="h-4 w-4"/></a>
         </aside>
       </section>
       <section className="space-y-6">

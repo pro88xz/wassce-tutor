@@ -13,7 +13,7 @@ export const Route = createFileRoute('/affiliate')({
 function AffiliateLanding() {
   return (
     <main className="site-page space-y-10 pb-16">
-      <section className="relative overflow-hidden rounded-[2rem] bg-[#21134d] px-6 py-12 text-white sm:px-10 sm:py-16">
+      <section className="relative site-brand-panel overflow-hidden rounded-[2rem] px-6 py-12 text-white sm:px-10 sm:py-16">
         <div className="absolute -right-20 -top-20 h-80 w-80 rounded-full bg-violet-500/20 blur-3xl" />
         <div className="relative max-w-3xl">
           <p className="text-xs font-bold uppercase tracking-[.18em] text-violet-200">WASSCE Tutor partner programme</p>
