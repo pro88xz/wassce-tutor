@@ -5,26 +5,23 @@
 // every section is a Band on the shared grid (src/components/public/Section):
 //
 //   01 Hero            What is this, and what do I do first?   (+ live proof and provenance)
-//   02 SubjectShowcase Is my subject here?                     (course catalogue)
-//   03 PopularTopics   What does a topic look like?
-//   04 TryQuestion     What is practice like?                  (answerable, no account)
-//   05 HowItWorks      How will I actually study?              (+ example progress view)
-//   06 LocalBand       Was this made for someone like me?
-//   07 Audiences       Where do I start?
-//   08 TutorFeature    Can I get a person to help?
-//   09 GradeGuide      How is the exam graded?
-//   10 AfterWassce     What comes after the exam?
-//   11 Plans           What does it cost?
-//   12 Faq             What else should I know?
-//   13 FinalCta        Start.
+//   02 TryQuestion     Why this, not a past-paper app?         (answerable, no account: every answer explained)
+//   03 SubjectShowcase Is my subject here?                     (course catalogue)
+//   04 PopularTopics   What does a topic look like?
+//   05 HowItWorks      How will I actually study?              (+ a real excerpt from a free lesson)
+//   06 LocalBand       Was this made for someone like me?      (+ who builds it)
+//   07 TutorFeature    Can I get a person to help?
+//   08 Plans           What does it cost?
+//   09 Faq             What else should I know?
+//   10 FinalCta        Start.
 //
-// The first three are what a phone visitor must reach quickly: the hero and
-// its proof row end in about one screen so the catalogue follows at once.
+// Proof comes before the catalogue: a visitor sees what makes practice here
+// different within one scroll of the hero. The grading guide and university
+// planning live on /wassce and /universities, linked from the header.
 //
-// Numbers come from the database and the question-set manifest, and the
-// sample questions are from the practice bank. The one exception is the
-// progress example in HowItWorks, which uses sample figures and is labelled
-// as an example.
+// Numbers come from the database and the question-set manifest, the sample
+// questions are from the practice bank, and the lesson excerpt is from a free
+// lesson. Nothing on the page is invented.
 import { useRef } from 'react'
 import type { LandingData } from '@/lib/public-content'
 import { useReveal } from '@/components/ds/useReveal'
@@ -34,10 +31,7 @@ import { PopularTopics } from '@/components/landing/PopularTopics'
 import { TryQuestion } from '@/components/landing/TryQuestion'
 import { HowItWorks } from '@/components/landing/HowItWorks'
 import { LocalBand } from '@/components/landing/LocalBand'
-import { Audiences } from '@/components/landing/Audiences'
 import { TutorFeature } from '@/components/landing/TutorFeature'
-import { GradeGuide } from '@/components/landing/GradeGuide'
-import { AfterWassce } from '@/components/landing/AfterWassce'
 import { Plans } from '@/components/landing/Plans'
 import { Faq } from '@/components/landing/Faq'
 import { FinalCta } from '@/components/landing/FinalCta'
@@ -49,15 +43,12 @@ export function Landing({ data }: { data: LandingData }) {
     // Full-bleed: cancels the app wrapper's padding and the header/footer gaps.
     <div ref={root} className="site-bleed -mb-16 -mt-6">
       <Hero data={data} />
+      <TryQuestion />
       <SubjectShowcase subjects={data.subjects} />
       <PopularTopics data={data} />
-      <TryQuestion />
-      <HowItWorks topic={data.popular[0]} />
+      <HowItWorks />
       <LocalBand />
-      <Audiences />
       <TutorFeature />
-      <GradeGuide />
-      <AfterWassce />
       <Plans />
       <Faq subjects={data.subjects} />
       <FinalCta />

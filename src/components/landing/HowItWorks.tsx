@@ -1,9 +1,6 @@
-// The learning method as four steps, beside an example of the progress view
-// a student builds up. The example uses a real topic and its real lesson
-// titles; the figures in it are sample values and the card says so. It is the
-// only place on the homepage that is not live data.
-import { ArrowRight, BookOpen, CircleCheck, ClipboardList, MessageCircleQuestion, TrendingUp } from 'lucide-react'
-import type { PopularTopic } from '@/lib/public-content'
+// The learning method as four steps, beside a real excerpt from a free lesson,
+// so the page shows what studying here looks like instead of describing it.
+import { ArrowRight, BookOpen, CircleCheck, MessageCircleQuestion, TrendingUp } from 'lucide-react'
 import { Band, SectionHeading } from '@/components/public/Section'
 
 const STEPS = [
@@ -33,7 +30,7 @@ const STEPS = [
   },
 ]
 
-export function HowItWorks({ topic }: { topic?: PopularTopic }) {
+export function HowItWorks() {
   return (
     <Band tone="white" labelledBy="method-heading">
       <SectionHeading
@@ -66,82 +63,54 @@ export function HowItWorks({ topic }: { topic?: PopularTopic }) {
             </li>
           ))}
         </ol>
-        <ProgressExample topic={topic} />
+        <LessonExcerpt />
       </div>
     </Band>
   )
 }
 
-/** Sample values for the example below. Not anyone's real results. */
-const EXAMPLE = { lessonsDone: 12, practiceScore: 80, activeDays: [true, true, false, true, true, false, false] }
-const WEEKDAYS = ['M', 'T', 'W', 'T', 'F', 'S', 'S']
+/** The free lesson the excerpt below comes from. */
+const LESSON_HREF = '/wassce/mathematics/quadratic-equations/quadratic-equations-factorisation-completing-the-square-and-the-formula'
 
-/** What the progress view looks like after a week of study, clearly marked as an example. */
-function ProgressExample({ topic }: { topic?: PopularTopic }) {
-  const days = EXAMPLE.activeDays.filter(Boolean).length
+/**
+ * A real excerpt from a free lesson, set out as the lesson sets it out: a worked
+ * example, the mistake examiners see most, and an exam tip. Plain text, so the
+ * homepage does not load the maths renderer.
+ */
+function LessonExcerpt() {
   return (
     <figure data-reveal="2" className="site-card overflow-hidden">
       <div className="flex items-center justify-between gap-3 border-b px-5 py-4">
-        <p className="site-h3">Your progress</p>
-        <span className="rounded-full bg-warning/12 px-2.5 py-1 text-[11px] font-bold uppercase tracking-[.08em] text-warning">Example</span>
+        <div className="min-w-0">
+          <p className="text-[11px] font-bold uppercase tracking-[.12em] text-primary">Mathematics · free lesson</p>
+          <p className="mt-0.5 truncate font-bold tracking-tight">Quadratic equations</p>
+        </div>
+        <span className="shrink-0 rounded-full bg-success/10 px-2.5 py-1 text-[11px] font-bold uppercase tracking-[.08em] text-success">Real lesson</span>
       </div>
-
-      {topic && (
-        <div className="px-5 pt-4">
-          <p className="text-[11px] font-bold uppercase tracking-[.12em] text-primary">{topic.subjectName}</p>
-          <p className="mt-0.5 font-bold tracking-tight">{topic.topicName}</p>
-          <ol className="mt-3 space-y-2.5">
-            {topic.firstLessons.map((lesson, i) => {
-              const done = i < topic.firstLessons.length - 1
-              return (
-                <li key={lesson.title} className="flex items-center gap-3 text-sm">
-                  {done ? (
-                    <CircleCheck className="h-5 w-5 shrink-0 text-success" aria-hidden />
-                  ) : (
-                    <span className="h-5 w-5 shrink-0 rounded-full border-2 border-primary" aria-hidden />
-                  )}
-                  <span className={`min-w-0 flex-1 truncate ${done ? 'text-muted-foreground' : 'font-semibold'}`}>{lesson.title}</span>
-                  <span className={`shrink-0 text-[11px] font-bold ${done ? 'text-success' : 'text-primary'}`}>{done ? 'Done' : 'Next'}</span>
-                </li>
-              )
-            })}
-            <li className="flex items-center gap-3 border-t pt-2.5 text-sm">
-              <ClipboardList className="h-5 w-5 shrink-0 text-muted-foreground" aria-hidden />
-              <span className="min-w-0 flex-1 truncate text-muted-foreground">Practice set</span>
-              <span className="shrink-0 rounded-full bg-success/10 px-2 py-0.5 text-xs font-bold tabular-nums text-success">4/5</span>
-            </li>
-          </ol>
+      <div className="space-y-3 p-5 text-[15px]">
+        <div className="rounded-xl border-l-4 border-amber-400 bg-amber-50 p-4 dark:bg-amber-500/10">
+          <p className="text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-300">Worked example</p>
+          <p className="mt-1.5 font-semibold">Solve x² − 5x + 6 = 0.</p>
+          <p className="mt-1 font-mono text-[14px] leading-7 text-muted-foreground">
+            Factorise: (x − 2)(x − 3) = 0
+            <br />So x − 2 = 0 or x − 3 = 0
+            <br /><span className="font-semibold text-foreground">x = 2 or x = 3</span>
+          </p>
         </div>
-      )}
-
-      <dl className="mt-4 grid grid-cols-3 border-t text-center">
-        <div className="flex flex-col-reverse gap-0.5 px-2 py-4">
-          <dt className="text-[11px] font-medium leading-tight text-muted-foreground">lessons completed</dt>
-          <dd className="text-2xl font-extrabold tracking-tight tabular-nums">{EXAMPLE.lessonsDone}</dd>
+        <div className="rounded-xl border-l-4 border-rose-400 bg-rose-50 p-4 dark:bg-rose-500/10">
+          <p className="text-xs font-bold uppercase tracking-wider text-rose-700 dark:text-rose-300">Common mistake</p>
+          <p className="mt-1.5 leading-relaxed text-muted-foreground">
+            From x² = 7x, dividing both sides by x gives only x = 7 and <span className="font-semibold text-foreground">loses the root x = 0</span>. Never divide by something that could be zero: factorise instead.
+          </p>
         </div>
-        <div className="flex flex-col-reverse gap-0.5 border-l px-2 py-4">
-          <dt className="text-[11px] font-medium leading-tight text-muted-foreground">practice score</dt>
-          <dd className="text-2xl font-extrabold tracking-tight tabular-nums">{EXAMPLE.practiceScore}%</dd>
+        <div className="rounded-xl border-l-4 border-sky-400 bg-sky-50 p-4 dark:bg-sky-500/10">
+          <p className="text-xs font-bold uppercase tracking-wider text-sky-700 dark:text-sky-300">Exam tip</p>
+          <p className="mt-1.5 leading-relaxed text-muted-foreground">Write down a, b and c with their signs before you use the formula. Most formula errors come from −b when b is already negative.</p>
         </div>
-        <div className="flex flex-col-reverse gap-0.5 border-l px-2 py-4">
-          <dt className="text-[11px] font-medium leading-tight text-muted-foreground">days this week</dt>
-          <dd className="text-2xl font-extrabold tracking-tight tabular-nums">
-            {days}
-            <span className="text-sm font-semibold text-muted-foreground"> of 7</span>
-          </dd>
-        </div>
-      </dl>
-      <ol className="flex justify-between gap-1 border-t px-5 py-3.5" aria-label={`Example week: studied on ${days} of 7 days`}>
-        {EXAMPLE.activeDays.map((active, i) => (
-          <li key={i} className="flex flex-col items-center gap-1.5">
-            <span className={`h-2.5 w-2.5 rounded-full ${active ? 'bg-primary' : 'bg-muted'}`} aria-hidden />
-            <span className="text-[10px] font-semibold text-muted-foreground" aria-hidden>{WEEKDAYS[i]}</span>
-          </li>
-        ))}
-      </ol>
-      <figcaption className="border-t bg-muted/50 px-5 py-3 text-xs leading-relaxed text-muted-foreground">
-        Sample figures to show the layout. Your own lessons, scores and study days appear here as you work, and stay saved if a plan ends.
-      </figcaption>
+      </div>
+      <a href={LESSON_HREF} className="flex items-center justify-between gap-2 border-t px-5 py-3.5 text-sm font-bold text-primary hover:bg-brand-soft/40">
+        Read the whole lesson free <ArrowRight className="h-4 w-4" aria-hidden />
+      </a>
     </figure>
   )
 }

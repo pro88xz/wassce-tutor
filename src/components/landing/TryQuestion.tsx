@@ -41,9 +41,9 @@ export function TryQuestion() {
     <Band tone="tint" id="try-a-question" labelledBy="try-heading" className="scroll-mt-20">
       <div className="grid items-center gap-9 lg:grid-cols-[minmax(0,.85fr)_minmax(0,1.15fr)] lg:gap-16">
         <div data-reveal>
-          <p className="site-eyebrow">Try it now</p>
-          <h2 id="try-heading" className="site-h2 mt-3">Answer a real WASSCE-style question.</h2>
-          <p className="site-lede mt-4">No account needed. This is how every practice set works: pick an answer and see at once whether it is right, and why.</p>
+          <p className="site-eyebrow">Try it now: no account needed</p>
+          <h2 id="try-heading" className="site-h2 mt-3">Don&rsquo;t just find out you&rsquo;re wrong. Learn why.</h2>
+          <p className="site-lede mt-4">Most practice apps only mark an answer right or wrong. Here every question shows the full working, and each wrong option names the mistake that leads to it, so you fix the habit and not just the question. Answer one now and see.</p>
           <ul className="mt-6 space-y-3">
             {POINTS.map((t) => (
               <li key={t} className="flex gap-3 text-[15px] font-medium">
