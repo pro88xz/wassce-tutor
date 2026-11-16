@@ -21,7 +21,7 @@ export function SubjectShowcase({ subjects, popular }: { subjects: SubjectSummar
   const listed = subjects.filter((s) => s.topicCount > 0)
   const withLessons = listed.filter((s) => s.lessonCount > 0).length
   return (
-    <Band labelledBy="subjects-heading">
+    <Band tone="white" labelledBy="subjects-heading">
       <SectionHeading
         id="subjects-heading"
         eyebrow="Subjects"

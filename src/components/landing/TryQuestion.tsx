@@ -42,32 +42,31 @@ export function TryQuestion() {
     chosen === null ? 'open' : o.label === question.answer ? 'correct' : o.label === chosen ? 'chosen-wrong' : 'other'
 
   return (
-    <section id="try-a-question" aria-labelledby="try-heading" className="site-band relative isolate scroll-mt-20 overflow-hidden bg-[#4a25c4] text-white">
-      <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(60rem_30rem_at_85%_-10%,rgba(143,220,245,.35),transparent),radial-gradient(40rem_30rem_at_-10%_110%,rgba(255,209,102,.28),transparent)]" />
-      <div aria-hidden className="absolute inset-0 -z-10 opacity-[.12] [background-image:linear-gradient(rgba(255,255,255,.6)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.6)_1px,transparent_1px)] [background-size:44px_44px] [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)]" />
+    <section id="try-a-question" aria-labelledby="try-heading" className="site-band relative isolate scroll-mt-20 overflow-hidden">
       <div className="site-container grid items-center gap-8 lg:grid-cols-[minmax(0,.85fr)_minmax(0,1.15fr)] lg:gap-16">
         <div data-reveal className="max-w-2xl lg:max-w-lg">
-          <p className="text-xs font-bold uppercase tracking-[.14em] text-[#ffd166]">Try it: no account needed</p>
-          <h2 id="try-heading" className="mt-3 text-[2.25rem] font-extrabold leading-[1.05] tracking-[-.04em] sm:text-5xl">
-            Every answer <span className="relative whitespace-nowrap"><span className="relative z-10">explained.</span><span aria-hidden className="absolute inset-x-0 bottom-1 -z-0 h-3 rounded-sm bg-[#ffd166]/45 sm:h-4" /></span>
+          <p className="site-eyebrow">Try it: no account needed</p>
+          <h2 id="try-heading" className="site-h2 mt-3">
+            Every answer <span className="relative whitespace-nowrap"><span className="relative z-10">explained.</span><span aria-hidden className="absolute inset-x-0 bottom-1 h-3 rounded-sm bg-[#ffd166]/70 sm:h-3.5" /></span>
           </h2>
-          <p className="mt-4 text-[17px] leading-relaxed text-white/80">Pick an answer and see why it is right or wrong.</p>
+          <p className="site-lede mt-4">Pick an answer and see why it is right or wrong.</p>
           <ul className="mt-6 grid grid-cols-3 gap-2 sm:gap-3 lg:grid-cols-1">
             {FEATURES.map(({ Icon, text }) => (
-              <li key={text} className="flex flex-col items-start gap-2 rounded-2xl bg-white/[0.08] p-3 text-[13px] font-semibold leading-snug ring-1 ring-white/15 sm:text-[15px] lg:flex-row lg:items-center lg:gap-3 lg:px-3.5">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#ffd166] text-[#2a1670]"><Icon className="h-[18px] w-[18px]" aria-hidden /></span>
+              <li key={text} className="site-card flex flex-col items-start gap-2 p-3 text-[13px] font-semibold leading-snug sm:text-[15px] lg:flex-row lg:items-center lg:gap-3 lg:px-3.5">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[var(--brand-soft)] text-[var(--primary)]"><Icon className="h-[18px] w-[18px]" aria-hidden /></span>
                 {text}
               </li>
             ))}
           </ul>
-          <p className="mt-5 hidden text-sm text-white/65 lg:block">
+          <p className="mt-5 hidden text-sm text-muted-foreground lg:block">
             {PRACTICE_TOTAL.toLocaleString('en')} original questions in {PRACTICE_SUBJECTS_PHRASE}, written to the syllabus. Not WAEC past papers.
           </p>
         </div>
 
         <div data-reveal="1" className="relative">
-          <span aria-hidden className="absolute -right-3 -top-3 -z-10 h-full w-full rotate-2 rounded-[1.75rem] bg-white/15" />
-          <div className="rounded-[1.75rem] bg-white p-5 text-slate-900 shadow-[0_40px_80px_-30px_rgba(20,8,60,.75)] sm:p-7">
+          <span aria-hidden className="absolute -right-3 -top-3 -z-10 h-[92%] w-[92%] rounded-[2rem] bg-gradient-to-br from-[#7c4dff] to-[#4a25c4] sm:-right-5 sm:-top-5" />
+          <span aria-hidden className="absolute -bottom-4 -left-4 -z-10 h-16 w-16 rounded-full bg-[#ffd166] sm:h-20 sm:w-20" />
+          <div className="rounded-[1.75rem] bg-white p-5 text-slate-900 ring-1 ring-slate-900/5 shadow-[0_30px_60px_-28px_rgba(30,20,80,.5)] sm:p-7">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <span className="inline-flex items-center gap-2 rounded-full bg-violet-50 px-3 py-1 text-xs font-bold text-violet-800 ring-1 ring-violet-100">
                 <span className="h-2 w-2 rounded-full bg-violet-600" aria-hidden />

@@ -47,7 +47,7 @@ export function Plans() {
   ]
 
   return (
-    <Band tone="tint" id="plans" labelledBy="plans-heading" className="scroll-mt-20">
+    <Band id="plans" labelledBy="plans-heading" className="scroll-mt-20">
       <SectionHeading
         id="plans-heading"
         eyebrow="Plans"

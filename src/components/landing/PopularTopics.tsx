@@ -40,7 +40,7 @@ export function PopularTopics({ data }: { data: LandingData }) {
   const arrow = 'flex h-11 w-11 items-center justify-center rounded-full border border-input bg-card text-foreground transition hover:border-primary/50 hover:text-primary disabled:cursor-not-allowed disabled:opacity-35'
 
   return (
-    <Band tone="white" labelledBy="popular-heading">
+    <Band labelledBy="popular-heading">
       <SectionHeading
         id="popular-heading"
         eyebrow="Start here"
