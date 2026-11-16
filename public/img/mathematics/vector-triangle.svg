@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Adding vectors with the triangle law</title>
+<desc id="d">On a grid, vector a goes 4 right and 1 up. Vector b, drawn from the end of a, goes 1 right and 3 up. The resultant a + b goes from the start of a to the end of b: 5 right and 4 up.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="780" height="440" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The triangle law: a + b goes from start to finish</text>
+<line x1="70.0" y1="380.0" x2="70.0" y2="56.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="124.0" y1="380.0" x2="124.0" y2="56.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="178.0" y1="380.0" x2="178.0" y2="56.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="232.0" y1="380.0" x2="232.0" y2="56.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="286.0" y1="380.0" x2="286.0" y2="56.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="340.0" y1="380.0" x2="340.0" y2="56.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="394.0" y1="380.0" x2="394.0" y2="56.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="448.0" y1="380.0" x2="448.0" y2="56.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="70.0" y1="380.0" x2="448.0" y2="380.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="70.0" y1="326.0" x2="448.0" y2="326.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="70.0" y1="272.0" x2="448.0" y2="272.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="70.0" y1="218.0" x2="448.0" y2="218.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="70.0" y1="164.0" x2="448.0" y2="164.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="70.0" y1="110.0" x2="448.0" y2="110.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="70.0" y1="56.0" x2="448.0" y2="56.0" stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"/>
+<line x1="70.0" y1="380.0" x2="340.0" y2="164.0" stroke="#dc2626" stroke-width="3.4" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<line x1="70.0" y1="380.0" x2="286.0" y2="326.0" stroke="#2563eb" stroke-width="3.4" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="286.0" y1="326.0" x2="340.0" y2="164.0" stroke="#15803d" stroke-width="3.4" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="167.4" y="358.0" width="21.2" height="30.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="178.0" y="373.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold" font-style="italic">a</text>
+<rect x="324.4" y="230.0" width="21.2" height="30.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="335.0" y="245.0" font-size="20" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold" font-style="italic">b</text>
+<text x="150.0" y="236.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold" font-style="italic">a + b</text>
+<text x="500.0" y="120.0" font-size="19" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">a =</text>
+<path d="M 514 94 Q 502 120 514 146" stroke="#2563eb" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 546 94 Q 558 120 546 146" stroke="#2563eb" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="530.0" y="108.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4</text>
+<text x="530.0" y="133.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="660.0" y="120.0" font-size="19" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">b =</text>
+<path d="M 674 94 Q 662 120 674 146" stroke="#15803d" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 706 94 Q 718 120 706 146" stroke="#15803d" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="690.0" y="108.0" font-size="18" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="690.0" y="133.0" font-size="18" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3</text>
+<text x="585.0" y="220.0" font-size="19" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">a + b =</text>
+<path d="M 602 194 Q 590 220 602 246" stroke="#dc2626" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 634 194 Q 646 220 634 246" stroke="#dc2626" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="618.0" y="208.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5</text>
+<text x="618.0" y="233.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4</text>
+<text x="600.0" y="300.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">|a + b| = √(5² + 4²) = √41</text>
+<text x="600.0" y="328.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">≈ 6.4 units</text>
+</svg>

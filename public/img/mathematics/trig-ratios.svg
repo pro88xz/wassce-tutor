@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The three trigonometric ratios in a right-angled triangle</title>
+<desc id="d">A right-angled triangle with an angle θ at A. The hypotenuse is the longest side, opposite the right angle. The opposite side is across from θ and the adjacent side is next to θ. sin θ = opposite over hypotenuse, cos θ = adjacent over hypotenuse, tan θ = opposite over adjacent: SOH CAH TOA.</desc>
+<defs></defs>
+<rect width="780" height="400" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Naming the sides from the angle θ</text>
+<polygon points="70.0,330.0 400.0,330.0 400.0,110.0" fill="#dbeafe" stroke="#2563eb" stroke-width="3" stroke-linejoin="round"/>
+<path d="M 384.0 330.0 L 384.0 314.0 L 400.0 314.0" stroke="#2563eb" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 122.0 330.0 A 52 52 0 0 0 113.3 301.2" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="140.8" y="308.6" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">θ</text>
+<text x="190.0" y="182.0" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">hypotenuse</text>
+<text x="416.0" y="220.0" font-size="17" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">opposite</text>
+<text x="235.0" y="358.0" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">adjacent</text>
+<text x="64.0" y="350.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<text x="412.0" y="348.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B</text>
+<text x="404.0" y="94.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C</text>
+<rect x="530.0" y="100.0" width="230.0" height="230.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<text x="645.0" y="140.0" font-size="22" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">SOH</text>
+<text x="645.0" y="166.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sin θ = opp / hyp</text>
+<text x="645.0" y="212.0" font-size="22" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">CAH</text>
+<text x="645.0" y="238.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cos θ = adj / hyp</text>
+<text x="645.0" y="284.0" font-size="22" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">TOA</text>
+<text x="645.0" y="310.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">tan θ = opp / adj</text>
+</svg>
