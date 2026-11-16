@@ -293,12 +293,16 @@ function OnlinePayments() {
     },
   })
   const paid = (q.data ?? []).filter((r) => r.status === 'completed')
+  // A USSD code lasts 10 minutes: a checkout still "pending" after 15 was never paid.
+  // The row keeps its status so the "finish your payment" emails still reach the student.
+  const unpaid = (q.data ?? []).filter((r) => notPaid(r))
   return (
     <section className="space-y-3">
       <div>
         <h2 className="text-lg font-bold">Online payments (Monime)</h2>
         <p className="text-sm text-muted-foreground">
           These switch plans on by themselves. {paid.length > 0 && `${paid.length} paid, ${paid.reduce((n, r) => n + r.amount_nle, 0)} NLe in the last 50.`}
+          {unpaid.length > 0 && ` ${unpaid.length} started but never paid (the code ran out); they get the "finish your payment" emails.`}
         </p>
       </div>
       {q.isLoading ? (
@@ -321,11 +325,16 @@ function OnlinePayments() {
                   {r.checkout_session_id && <> · <span className="font-mono">{r.checkout_session_id}</span></>}
                 </p>
               </div>
-              <span className={`rounded-full px-2 py-0.5 text-xs font-bold uppercase ${ONLINE_TONE[r.status] ?? 'bg-muted text-muted-foreground'}`}>{r.status}</span>
+              <span className={`rounded-full px-2 py-0.5 text-xs font-bold uppercase ${notPaid(r) ? 'bg-muted text-muted-foreground' : ONLINE_TONE[r.status] ?? 'bg-muted text-muted-foreground'}`}>{notPaid(r) ? 'not paid' : r.status}</span>
             </li>
           ))}
         </ul>
       )}
     </section>
   )
+}
+
+/** Started a USSD payment more than 15 minutes ago and never paid: its code has expired. */
+function notPaid(r: { status: string; created_at: string }) {
+  return r.status === 'pending' && Date.now() - Date.parse(r.created_at) > 15 * 60 * 1000
 }
