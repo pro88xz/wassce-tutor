@@ -490,6 +490,150 @@ def weed_control_methods():
     return s
 
 
+# ═══ A3: crop protection, improvement, storage and forestry ════════════════
+
+def cycle(s, cx, cy, r, stages, col, fill, w=120, h=50):
+    n = len(stages)
+    pts = []
+    for k, t in enumerate(stages):
+        a = math.radians(90 - k * 360 / n)
+        x, y = cx + r * math.cos(a), cy - r * math.sin(a)
+        pts.append(box(s, x, y, w, h, t if isinstance(t, list) else [t], col=col, fill=fill, size=14))
+    for k in range(n):
+        link(s, pts[k], pts[(k + 1) % n], color=INK, width=2.2)
+
+
+@fig
+def insect_life_cycles():
+    s = Svg(800, 420, "Complete and incomplete metamorphosis in insect pests",
+            "Left: complete metamorphosis, as in the stem borer moth, beetles and armyworm: egg, larva (caterpillar or "
+            "grub), pupa and adult. The larva usually does the damage. Right: incomplete metamorphosis, as in the "
+            "grasshopper, aphids and bugs: egg, nymph (a small wingless adult) and adult. Nymphs and adults both feed on "
+            "crops.")
+    heading(s, "Insect life cycles: where the damage is done")
+    s.text(200, 70, "Complete metamorphosis", size=16, weight="bold", color=ORANGE)
+    s.text(200, 92, "moths, beetles, armyworm", size=13, color=MUTED)
+    cycle(s, 200, 250, 110, ["Egg", ["Larva", "feeds: damage!"], "Pupa", "Adult"], ORANGE, F_AMBER, w=130)
+    s.text(600, 70, "Incomplete metamorphosis", size=16, weight="bold", color=GREEN)
+    s.text(600, 92, "grasshoppers, aphids, bugs", size=13, color=MUTED)
+    cycle(s, 600, 250, 100, ["Egg", ["Nymph", "feeds"], ["Adult", "feeds"]], GREEN, F_GREEN, w=120)
+    note(s, "Control is easiest at the stage that does the damage, while it is young.", 405, size=14, color=INK)
+    return s
+
+
+@fig
+def seed_multiplication():
+    s = Svg(800, 300, "From plant breeding to the farmer's field: classes of seed",
+            "A breeder develops and tests a new variety. Breeder seed, produced in small amounts by the breeding "
+            "institute, is multiplied to foundation seed, then to certified seed by approved seed growers under "
+            "inspection. Certified seed is sold to farmers, who grow the crop for food and sale.")
+    heading(s, "Seed classes: from breeder to farmer")
+    steps = [("New variety", "bred and tested", F_PURPLE, PURPLE), ("Breeder seed", "small amount, pure", F_BLUE, BLUE),
+             ("Foundation seed", "multiplied", F_TEAL, TEAL), ("Certified seed", "inspected, labelled", F_GREEN, GREEN),
+             ("Farmers", "grow the crop", F_AMBER, ORANGE)]
+    prev = None
+    for k, (t, sub, fill, col) in enumerate(steps):
+        b = box(s, 85 + k * 157, 150, 140, 80, [t, sub], col=col, fill=fill, size=14)
+        if prev:
+            link(s, prev, b, color=INK, width=2.4)
+        prev = b
+    note(s, "Each step is checked for purity, germination and freedom from disease.", 250, size=14, color=INK)
+    return s
+
+
+@fig
+def postharvest_chain():
+    s = Svg(800, 330, "Post-harvest operations for grain and where losses happen",
+            "Harvesting, threshing, cleaning and winnowing, drying, grading and packaging, storage, and transport and "
+            "marketing. Losses occur at each step: shattering and birds at harvest, spillage and broken grains in "
+            "threshing, mould if drying is poor, insects and rats in storage, and damage in transport.")
+    heading(s, "Post-harvest operations and the losses at each step")
+    steps = [("Harvest", "shattering, birds"), ("Thresh", "spillage, breakage"), ("Clean", "chaff, stones"),
+             ("Dry", "mould if damp"), ("Grade, pack", "poor bags"), ("Store", "insects, rats"), ("Market", "transport damage")]
+    prev = None
+    for k, (t, loss) in enumerate(steps):
+        x = 60 + k * 113
+        b = box(s, x, 140, 100, 60, [t], col=GREEN, fill=F_GREEN, size=14)
+        if prev:
+            link(s, prev, b, color=INK, width=2.2, gap=3)
+        s.arrow(x, 172, x, 214, color=RED, width=2)
+        s.text(x, 232, loss.split(",")[0], size=12, color=RED)
+        if "," in loss:
+            s.text(x, 248, loss.split(",")[1].strip(), size=12, color=RED)
+        prev = b
+    note(s, "Safe moisture for storing most grain: about 12–14%.", 300, size=15, color=INK)
+    return s
+
+
+@fig
+def storage_structures():
+    s = Svg(800, 450, "Grain storage structures",
+            "Three ways to store grain. A crib for maize cobs: a narrow, raised, slatted store with a roof, standing on "
+            "legs fitted with metal rat guards, letting air dry the cobs. A hermetic bag: two airtight plastic liners "
+            "inside a woven bag; insects inside die from lack of oxygen. A metal or concrete silo with a sealed lid for "
+            "larger quantities.")
+    heading(s, "Storage structures: keep grain dry, cool and pest-free")
+    # crib
+    s.polygon([(70, 120), (150, 80), (230, 120)], fill="#a16207", stroke=INK, width=2)
+    s.rect(90, 120, 120, 170, fill="#fef3c7", stroke=BROWN, width=2.4)
+    for x in range(100, 210, 14):
+        s.line(x, 120, x, 290, color=BROWN, width=2)
+    for y in range(140, 290, 22):
+        for x in range(104, 200, 28):
+            s.ellipse(x + 8, y, 12, 7, fill="#facc15", stroke=ORANGE, width=1.2)
+    for x in (100, 200):
+        s.line(x, 290, x, 360, color=BROWN, width=6)
+        s.polygon([(x - 22, 326), (x + 22, 326), (x + 10, 312), (x - 10, 312)], fill=METAL, stroke=INK, width=1.6)
+    s.text(150, 70, "Maize crib", size=15, weight="bold", color=ORANGE)
+    s.text(150, 402, "raised, airy, roofed;", size=13)
+    s.text(150, 420, "metal rat guards on legs", size=13)
+    # hermetic bag
+    s.path("M 330 150 L 470 150 L 480 350 Q 400 370 320 350 Z", color=MUTED, width=2.6, fill="#e2e8f0")
+    s.path("M 342 162 L 458 162 L 466 340 Q 400 356 334 340 Z", color=BLUE, width=2, fill="#dbeafe")
+    s.path("M 352 174 L 448 174 L 454 330 Q 400 344 346 330 Z", color=BLUE, width=2, fill="#fef9c3")
+    s.line(350, 150, 450, 150, color=INK, width=3)
+    s.text(400, 250, "grain", size=14, weight="bold", color=BROWN)
+    s.text(400, 120, "Hermetic bag", size=15, weight="bold", color=BLUE)
+    s.text(400, 402, "two airtight liners:", size=13)
+    s.text(400, 420, "insects die without oxygen", size=13)
+    # silo
+    s.rect(580, 150, 140, 200, fill=F_GREY, stroke=INK, width=2.4)
+    s.path("M 580 150 Q 650 90 720 150", color=INK, width=2.4, fill=F_GREY)
+    s.rect(640, 108, 20, 12, fill=METAL, stroke=INK, width=1.6)
+    s.polygon([(620, 350), (680, 350), (660, 380), (640, 380)], fill=METAL, stroke=INK, width=1.6)
+    s.text(650, 80, "Silo", size=15, weight="bold", color=MUTED)
+    s.text(650, 402, "sealed metal or concrete;", size=13)
+    s.text(650, 420, "large quantities", size=13)
+    return s
+
+
+@fig
+def alley_cropping():
+    s = Svg(800, 430, "Alley cropping: crops grown between rows of leguminous trees",
+            "A plan view of a field. Rows of leguminous trees such as Gliricidia or Leucaena run along the contour, about "
+            "4 to 6 metres apart. Food crops such as maize and cassava grow in the alleys between them. The trees are "
+            "pruned regularly; the prunings are spread as mulch and green manure, adding nitrogen and organic matter.")
+    heading(s, "Alley cropping (an agroforestry system)")
+    s.circle(150, 68, 10, fill=F_GREEN, stroke=GREEN, width=2)
+    s.text(168, 68, "leguminous trees (Gliricidia, Leucaena)", size=13, anchor="start")
+    s.line(520, 60, 520, 78, color="#ca8a04", width=3)
+    s.line(520, 66, 527, 60, color=GREEN, width=2)
+    s.text(536, 68, "food crops in the alleys", size=13, anchor="start")
+    for k in range(4):
+        y = 110 + k * 84
+        for x in range(60, 760, 34):
+            s.circle(x, y, 12, fill=F_GREEN, stroke=GREEN, width=2)
+        if k < 3:
+            for x in range(80, 740, 28):
+                s.line(x, y + 28, x, y + 56, color="#ca8a04", width=3)
+                s.line(x, y + 36, x + 7, y + 30, color=GREEN, width=2)
+                s.line(x, y + 44, x - 7, y + 38, color=GREEN, width=2)
+    s.line(780, 110, 780, 194, color=INK, width=1.4, arrow="both")
+    s.text(774, 152, "4–6 m", size=12, anchor="end", weight="bold")
+    note(s, "Prunings are spread in the alleys as mulch and green manure.", 418, size=14, color=INK)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:

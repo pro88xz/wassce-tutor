@@ -7117,6 +7117,58 @@
       "title": "Weeds and weed control",
       "est_minutes": 14,
       "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-crop-pests-diseases.md",
+      "subject": "Agricultural Science",
+      "topic": "pests-and-diseases-of-crops",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Pests and diseases of crops: recognition, life cycles and control",
+      "est_minutes": 14,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-crop-improvement.md",
+      "subject": "Agricultural Science",
+      "topic": "crop-improvement-and-breeding",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Crop improvement and plant breeding",
+      "est_minutes": 13,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-crop-processing-storage.md",
+      "subject": "Agricultural Science",
+      "topic": "crop-processing-and-storage",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Crop processing and storage",
+      "est_minutes": 14,
+      "sort_order": 1
+    },
+    {
+      "file": "agricultural-science-forestry-agroforestry.md",
+      "subject": "Agricultural Science",
+      "topic": "forestry-and-agroforestry",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Forestry and agroforestry",
+      "est_minutes": 13,
+      "sort_order": 1
     }
   ]
 }

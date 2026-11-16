@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Post-harvest operations for grain and where losses happen</title>
+<desc id="d">Harvesting, threshing, cleaning and winnowing, drying, grading and packaging, storage, and transport and marketing. Losses occur at each step: shattering and birds at harvest, spillage and broken grains in threshing, mould if drying is poor, insects and rats in storage, and damage in transport.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="800" height="330" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Post-harvest operations and the losses at each step</text>
+<rect x="10.0" y="110.0" width="100.0" height="60.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="60.0" y="140.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Harvest</text>
+<line x1="60.0" y1="172.0" x2="60.0" y2="214.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="60.0" y="232.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">shattering</text>
+<text x="60.0" y="248.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">birds</text>
+<rect x="123.0" y="110.0" width="100.0" height="60.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="173.0" y="140.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Thresh</text>
+<line x1="113.0" y1="140.0" x2="120.0" y2="140.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="173.0" y1="172.0" x2="173.0" y2="214.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="173.0" y="232.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">spillage</text>
+<text x="173.0" y="248.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">breakage</text>
+<rect x="236.0" y="110.0" width="100.0" height="60.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="286.0" y="140.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Clean</text>
+<line x1="226.0" y1="140.0" x2="233.0" y2="140.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="286.0" y1="172.0" x2="286.0" y2="214.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="286.0" y="232.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">chaff</text>
+<text x="286.0" y="248.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">stones</text>
+<rect x="349.0" y="110.0" width="100.0" height="60.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="399.0" y="140.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Dry</text>
+<line x1="339.0" y1="140.0" x2="346.0" y2="140.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="399.0" y1="172.0" x2="399.0" y2="214.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="399.0" y="232.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">mould if damp</text>
+<rect x="462.0" y="110.0" width="100.0" height="60.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="512.0" y="140.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Grade, pack</text>
+<line x1="452.0" y1="140.0" x2="459.0" y2="140.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="512.0" y1="172.0" x2="512.0" y2="214.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="512.0" y="232.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">poor bags</text>
+<rect x="575.0" y="110.0" width="100.0" height="60.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="625.0" y="140.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Store</text>
+<line x1="565.0" y1="140.0" x2="572.0" y2="140.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="625.0" y1="172.0" x2="625.0" y2="214.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="625.0" y="232.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">insects</text>
+<text x="625.0" y="248.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rats</text>
+<rect x="688.0" y="110.0" width="100.0" height="60.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="738.0" y="140.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Market</text>
+<line x1="678.0" y1="140.0" x2="685.0" y2="140.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="738.0" y1="172.0" x2="738.0" y2="214.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="738.0" y="232.0" font-size="12" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">transport damage</text>
+<text x="400.0" y="300.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Safe moisture for storing most grain: about 12–14%.</text>
+</svg>
