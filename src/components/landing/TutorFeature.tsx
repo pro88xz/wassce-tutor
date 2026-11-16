@@ -8,12 +8,12 @@ const POINTS = ['Help with the topics you find hard', 'In-person lessons, verifi
 export function TutorFeature() {
   return (
     <Band tone="white" labelledBy="tutor-heading">
-      <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+      <div className="grid items-center gap-8 md:grid-cols-2 md:gap-10 lg:gap-16">
         <div data-reveal className="relative">
           <img
             src={TUTOR_PHOTO.small}
             srcSet={`${TUTOR_PHOTO.small} 640w, ${TUTOR_PHOTO.src} 1280w`}
-            sizes="(min-width: 1024px) 560px, 100vw"
+            sizes="(min-width: 768px) 50vw, 100vw"
             alt="A tutor and a student going through notes together"
             loading="lazy"
             decoding="async"
