@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Longitude and local time</title>
+<desc id="d">The Earth turns 360° in 24 hours, so 15° of longitude equals one hour and 1° equals 4 minutes. Places east of Greenwich are ahead in time; places west are behind. If it is 12 noon at 30° E, it is 7 a.m. at 45° W, because the difference is 75°, which is 5 hours.</desc>
+<defs><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="800" height="360" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">15° of longitude = 1 hour; 1° = 4 minutes</text>
+<line x1="80.0" y1="170.0" x2="720.0" y2="170.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<line x1="80.0" y1="160.0" x2="80.0" y2="180.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="80.0" y="202.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">60°W</text>
+<line x1="160.0" y1="160.0" x2="160.0" y2="180.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="160.0" y="202.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">45°W</text>
+<line x1="240.0" y1="160.0" x2="240.0" y2="180.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="240.0" y="202.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">30°W</text>
+<line x1="320.0" y1="160.0" x2="320.0" y2="180.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="320.0" y="202.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">15°W</text>
+<line x1="400.0" y1="160.0" x2="400.0" y2="180.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="400.0" y="202.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">0°</text>
+<line x1="480.0" y1="160.0" x2="480.0" y2="180.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="480.0" y="202.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">15°E</text>
+<line x1="560.0" y1="160.0" x2="560.0" y2="180.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="560.0" y="202.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">30°E</text>
+<line x1="640.0" y1="160.0" x2="640.0" y2="180.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="640.0" y="202.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">45°E</text>
+<line x1="720.0" y1="160.0" x2="720.0" y2="180.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="720.0" y="202.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">60°E</text>
+<circle cx="560.0" cy="170.0" r="9.0" fill="#ea580c" stroke="#ea580c" stroke-width="1"/>
+<circle cx="160.0" cy="170.0" r="9.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<text x="560.0" y="120.0" font-size="18" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">12 noon</text>
+<text x="560.0" y="142.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">at 30° E</text>
+<text x="160.0" y="120.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7:00 a.m.</text>
+<text x="160.0" y="142.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">at 45° W</text>
+<path d="M 560.0 228 C 453.33333333333337 280, 266.6666666666667 280, 160.0 228" stroke="#dc2626" stroke-width="2.6" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="360.0" y="290.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">75° difference = 75 ÷ 15 = 5 hours (west is behind)</text>
+<text x="400.0" y="236.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Greenwich</text>
+<text x="400.0" y="338.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Going east: add time. Going west: subtract time.</text>
+</svg>

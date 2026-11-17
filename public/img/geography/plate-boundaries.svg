@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The three types of plate boundary</title>
+<desc id="d">At a constructive (divergent) boundary plates move apart and magma rises to form new crust, as at the Mid-Atlantic Ridge. At a destructive (convergent) boundary an oceanic plate sinks beneath a continental plate, causing earthquakes, volcanoes and fold mountains, as along the Andes. At a conservative (transform) boundary plates slide past each other, causing earthquakes, as on the San Andreas Fault.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Plates move apart, together or past each other</text>
+<polygon points="40.0,150.0 190.0,150.0 190.0,200.0 40.0,200.0" fill="#94a3b8" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="210.0,150.0 360.0,150.0 360.0,200.0 210.0,200.0" fill="#94a3b8" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="190.0,150.0 210.0,150.0 215.0,200.0 185.0,200.0" fill="#ef4444" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="185.0,150.0 200.0,120.0 215.0,150.0" fill="#ef4444" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/>
+<line x1="150.0" y1="175.0" x2="70.0" y2="175.0" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="250.0" y1="175.0" x2="330.0" y2="175.0" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="200.0" y="100.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Constructive (divergent)</text>
+<text x="200.0" y="230.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">plates move apart; new crust</text>
+<text x="200.0" y="250.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. Mid-Atlantic Ridge,</text>
+<text x="200.0" y="268.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">East African Rift</text>
+<polygon points="430.0,160.0 600.0,160.0 640.0,220.0 430.0,220.0" fill="#60a5fa" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="610.0,130.0 760.0,130.0 760.0,220.0 670.0,220.0 620.0,162.0" fill="#d9c49a" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="630.0,130.0 650.0,90.0 670.0,130.0" fill="#78716c" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/>
+<line x1="650.0" y1="130.0" x2="640.0" y2="190.0" stroke="#ef4444" stroke-width="3" stroke-linecap="round"/>
+<line x1="470.0" y1="190.0" x2="560.0" y2="190.0" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="740.0" y1="170.0" x2="690.0" y2="170.0" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="595.0" y="70.0" font-size="17" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Destructive (convergent)</text>
+<text x="595.0" y="250.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ocean plate sinks; volcanoes,</text>
+<text x="595.0" y="268.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">earthquakes, fold mountains (Andes)</text>
+<polygon points="220.0,360.0 400.0,360.0 400.0,420.0 220.0,420.0" fill="#cbd5e1" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="400.0,360.0 580.0,360.0 580.0,420.0 400.0,420.0" fill="#e2e8f0" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<line x1="400.0" y1="350.0" x2="400.0" y2="430.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 5"/>
+<line x1="330.0" y1="390.0" x2="330.0" y2="358.0" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="470.0" y1="390.0" x2="470.0" y2="422.0" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="400.0" y="334.0" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Conservative (transform), seen from above</text>
+<text x="400.0" y="452.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">plates slide past each other; earthquakes but no volcanoes</text>
+<text x="400.0" y="472.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. San Andreas Fault, California</text>
+</svg>

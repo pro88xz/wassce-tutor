@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Lines of latitude and longitude on the globe</title>
+<desc id="d">Lines of latitude run east to west and measure distance north or south of the Equator (0°), up to 90° at the poles; the Tropics of Cancer and Capricorn are at 23½° N and S. Lines of longitude run from pole to pole and measure distance east or west of the Prime (Greenwich) Meridian (0°), up to 180°. Freetown is at about 8½° N, 13° W.</desc>
+<defs></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Latitude: north–south. Longitude: east–west</text>
+<circle cx="220.0" cy="260.0" r="160.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<ellipse cx="220.0" cy="260.0" rx="160.0" ry="19.2" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+<rect x="178.6" y="248.5" width="82.8" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="220.0" y="260.0" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Equator 0°</text>
+<ellipse cx="220.0" cy="196.2" rx="146.7" ry="17.6" fill="none" stroke="#ea580c" stroke-width="1.8"/>
+<rect x="137.7" y="185.2" width="164.6" height="22.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="220.0" y="196.2" font-size="12" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Tropic of Cancer 23½° N</text>
+<ellipse cx="220.0" cy="323.8" rx="146.7" ry="17.6" fill="none" stroke="#ea580c" stroke-width="1.8"/>
+<rect x="127.6" y="312.8" width="184.7" height="22.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="220.0" y="323.8" font-size="12" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Tropic of Capricorn 23½° S</text>
+<ellipse cx="220.0" cy="113.3" rx="63.8" ry="7.7" fill="none" stroke="#0f766e" stroke-width="1.8"/>
+<rect x="147.8" y="102.3" width="144.4" height="22.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="220.0" y="113.3" font-size="12" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Arctic Circle 66½° N</text>
+<ellipse cx="220.0" cy="406.7" rx="63.8" ry="7.7" fill="none" stroke="#0f766e" stroke-width="1.8"/>
+<rect x="137.7" y="395.7" width="164.6" height="22.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="220.0" y="406.7" font-size="12" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Antarctic Circle 66½° S</text>
+<text x="220.0" y="86.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">90° N (North Pole)</text>
+<text x="220.0" y="442.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">90° S (South Pole)</text>
+<text x="220.0" y="60.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Latitude (parallels)</text>
+<circle cx="580.0" cy="260.0" r="160.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<ellipse cx="580.0" cy="260.0" rx="138.6" ry="160.0" fill="none" stroke="#7c3aed" stroke-width="1.6"/>
+<ellipse cx="580.0" cy="260.0" rx="80.0" ry="160.0" fill="none" stroke="#7c3aed" stroke-width="1.6"/>
+<line x1="580.0" y1="100.0" x2="580.0" y2="420.0" stroke="#dc2626" stroke-width="2.6" stroke-linecap="round"/>
+<ellipse cx="580.0" cy="260.0" rx="80.0" ry="160.0" fill="none" stroke="#7c3aed" stroke-width="1.6"/>
+<ellipse cx="580.0" cy="260.0" rx="138.6" ry="160.0" fill="none" stroke="#7c3aed" stroke-width="1.6"/>
+<rect x="513.1" y="208.5" width="133.8" height="23.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="580.0" y="220.0" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Prime Meridian 0°</text>
+<rect x="478.5" y="287.0" width="19.0" height="26.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="488.0" y="300.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">W</text>
+<rect x="662.5" y="287.0" width="19.0" height="26.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="672.0" y="300.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">E</text>
+<text x="580.0" y="60.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Longitude (meridians)</text>
+<text x="580.0" y="442.0" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Greenwich, London</text>
+</svg>

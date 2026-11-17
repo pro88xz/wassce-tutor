@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Cross-section of a volcano and intrusive features</title>
+<desc id="d">Magma rises from a magma chamber through a pipe to the vent and crater, building a cone of layers of lava and ash. Magma that cools underground forms intrusive features: a dyke cuts across the rock layers, a sill lies between them, a laccolith bulges them upwards, and a batholith is a huge mass deep below.</desc>
+<defs></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Extrusive and intrusive volcanic features</text>
+<rect x="0.0" y="300.0" width="800.0" height="200.0" rx="0" fill="#d9c49a" stroke="none" stroke-width="0"/>
+<line x1="0.0" y1="330.0" x2="800.0" y2="330.0" stroke="#b8a272" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="0.0" y1="360.0" x2="800.0" y2="360.0" stroke="#b8a272" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="0.0" y1="390.0" x2="800.0" y2="390.0" stroke="#b8a272" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="0.0" y1="420.0" x2="800.0" y2="420.0" stroke="#b8a272" stroke-width="1.5" stroke-linecap="round"/>
+<polygon points="240.0,300.0 380.0,110.0 420.0,110.0 560.0,300.0" fill="#78716c" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="270.0,296.0 384.0,138.0 416.0,138.0 530.0,296.0" fill="none" stroke="#57534e" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="300.0,292.0 388.0,166.0 412.0,166.0 500.0,292.0" fill="none" stroke="#57534e" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="330.0,288.0 392.0,194.0 408.0,194.0 470.0,288.0" fill="none" stroke="#57534e" stroke-width="1" stroke-linejoin="round"/>
+<rect x="392.0" y="112.0" width="16.0" height="360.0" rx="0" fill="#ef4444" stroke="none" stroke-width="0"/>
+<ellipse cx="400.0" cy="470.0" rx="120.0" ry="34.0" fill="#ef4444" stroke="#0f172a" stroke-width="2"/>
+<text x="400.0" y="474.0" font-size="15" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">magma chamber</text>
+<polygon points="380.0,110.0 400.0,125.0 420.0,110.0" fill="#fde68a" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="380.0" cy="80.0" r="13.0" fill="#d6d3d1" stroke="#475569" stroke-width="1.2"/>
+<circle cx="393.0" cy="64.0" r="13.0" fill="#d6d3d1" stroke="#475569" stroke-width="1.2"/>
+<circle cx="406.0" cy="80.0" r="13.0" fill="#d6d3d1" stroke="#475569" stroke-width="1.2"/>
+<circle cx="419.0" cy="64.0" r="13.0" fill="#d6d3d1" stroke="#475569" stroke-width="1.2"/>
+<rect x="178.4" y="78.0" width="143.3" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="250.0" y="90.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">ash and gas cloud</text>
+<rect x="496.2" y="108.0" width="127.6" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="560.0" y="120.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">crater and vent</text>
+<line x1="505.0" y1="125.0" x2="420.0" y2="115.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<rect x="536.6" y="208.0" width="166.8" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="620.0" y="220.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">cone of lava and ash</text>
+<line x1="570.0" y1="230.0" x2="500.0" y2="250.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="408.0" y1="380.0" x2="600.0" y2="330.0" stroke="#ef4444" stroke-width="8" stroke-linecap="round"/>
+<rect x="638.2" y="317.5" width="43.6" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="660.0" y="330.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">dyke</text>
+<rect x="130.0" y="386.0" width="262.0" height="9.0" rx="0" fill="#ef4444" stroke="none" stroke-width="0"/>
+<rect x="78.2" y="379.5" width="43.6" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="100.0" y="392.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">sill</text>
+<path d="M 600 420 Q 680 380 760 420 Z" stroke="#0f172a" stroke-width="1.5" fill="#ef4444" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="657.2" y="437.5" width="85.6" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="700.0" y="450.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">laccolith</text>
+<rect x="379.3" y="288.0" width="41.4" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="400.0" y="300.0" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">pipe</text>
+</svg>

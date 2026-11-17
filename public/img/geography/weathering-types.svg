@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The three types of weathering</title>
+<desc id="d">Physical (mechanical) weathering breaks rock without changing its minerals, for example exfoliation when rock heats by day and cools by night and its outer layers peel off. Chemical weathering changes the minerals, for example oxidation turning iron-rich rock red. Biological weathering is caused by living things, such as roots widening cracks.</desc>
+<defs></defs>
+<rect width="800" height="420" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Physical, chemical and biological weathering</text>
+<path d="M 40 300 Q 140 120 240 300 Z" stroke="#0f172a" stroke-width="2" fill="#a8a29e" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 60 300 Q 140 150 220 300" stroke="#475569" stroke-width="1.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 52 270 Q 70 230 92 214" stroke="#0f172a" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="220.0" cy="90.0" r="22.0" fill="#fde68a" stroke="#ea580c" stroke-width="2"/>
+<text x="140.0" y="330.0" font-size="19" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Physical</text>
+<text x="140.0" y="356.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">exfoliation: outer layers</text>
+<text x="140.0" y="375.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">peel like an onion</text>
+<rect x="320.0" y="170.0" width="160.0" height="130.0" rx="10" fill="#a8a29e" stroke="#0f172a" stroke-width="2"/>
+<rect x="320.0" y="170.0" width="160.0" height="40.0" rx="10" fill="#b45309" stroke="#0f172a" stroke-width="2"/>
+<line x1="330.0" y1="150.0" x2="336.0" y2="135.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="356.0" y1="150.0" x2="362.0" y2="135.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="382.0" y1="150.0" x2="388.0" y2="135.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="408.0" y1="150.0" x2="414.0" y2="135.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="434.0" y1="150.0" x2="440.0" y2="135.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="460.0" y1="150.0" x2="466.0" y2="135.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="400.0" y="120.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">rain + oxygen</text>
+<text x="400.0" y="330.0" font-size="19" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Chemical</text>
+<text x="400.0" y="356.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">oxidation, solution, hydrolysis,</text>
+<text x="400.0" y="375.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">carbonation change the minerals</text>
+<rect x="580.0" y="200.0" width="180.0" height="100.0" rx="0" fill="#a8a29e" stroke="#0f172a" stroke-width="2"/>
+<line x1="670.0" y1="200.0" x2="655.0" y2="300.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<path d="M 672 120 L 668 200 M 668 200 Q 660 240 657 290" stroke="#92400e" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="672.0" cy="105.0" r="38.0" fill="#86efac" stroke="#15803d" stroke-width="2"/>
+<text x="670.0" y="330.0" font-size="19" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Biological</text>
+<text x="670.0" y="356.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">roots widen cracks; animals</text>
+<text x="670.0" y="375.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">burrow; lichens release acids</text>
+</svg>

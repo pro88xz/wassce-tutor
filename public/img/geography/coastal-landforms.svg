@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Coastal landforms of erosion and deposition</title>
+<desc id="d">Waves erode a headland: hydraulic action and abrasion enlarge a crack into a cave, the cave cuts through into an arch, the arch roof collapses to leave a stack, and the stack is worn down to a stump. Between headlands, sheltered bays collect sand as beaches, and longshore drift can build a spit across a bay or river mouth.</desc>
+<defs><marker id="a1e40af" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1e40af"/></marker><marker id="a1e40afs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#1e40af"/></marker></defs>
+<rect width="800" height="460" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cave → arch → stack → stump; beaches and spits</text>
+<rect x="0.0" y="60.0" width="800.0" height="400.0" rx="0" fill="#93c5fd" stroke="none" stroke-width="0"/>
+<polygon points="0.0,60.0 800.0,60.0 800.0,180.0 520.0,180.0 470.0,260.0 380.0,270.0 330.0,180.0 0.0,180.0" fill="#d9c49a" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="380.0,270.0 470.0,260.0 470.0,300.0 380.0,300.0" fill="#d9c49a" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="425.0" cy="295.0" rx="24.0" ry="10.0" fill="#1e3a8a" stroke="#0f172a" stroke-width="1.5"/>
+<text x="425.0" y="330.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">cave</text>
+<path d="M 520 300 L 520 250 Q 560 220 600 250 L 600 300 L 585 300 L 585 262 Q 560 245 535 262 L 535 300 Z" stroke="#0f172a" stroke-width="2" fill="#d9c49a" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="560.0" y="330.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">arch</text>
+<rect x="640.0" y="250.0" width="34.0" height="54.0" rx="0" fill="#d9c49a" stroke="#0f172a" stroke-width="2"/>
+<text x="657.0" y="330.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">stack</text>
+<rect x="710.0" y="286.0" width="34.0" height="18.0" rx="0" fill="#d9c49a" stroke="#0f172a" stroke-width="2"/>
+<text x="727.0" y="330.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">stump</text>
+<path d="M 0 180 Q 60 240 160 230 Q 260 220 330 180" stroke="#0f172a" stroke-width="2" fill="#fde68a" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="165.0" y="210.0" font-size="14" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">bay with sandy beach</text>
+<path d="M 60 250 Q 130 270 230 300 Q 250 306 260 300" stroke="#92400e" stroke-width="10" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="160.0" y="335.0" font-size="14" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">spit built by longshore drift</text>
+<line x1="40.0" y1="400.0" x2="80.0" y2="380.0" stroke="#1e40af" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a1e40af)"/>
+<line x1="100.0" y1="400.0" x2="140.0" y2="380.0" stroke="#1e40af" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a1e40af)"/>
+<line x1="160.0" y1="400.0" x2="200.0" y2="380.0" stroke="#1e40af" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a1e40af)"/>
+<line x1="220.0" y1="400.0" x2="260.0" y2="380.0" stroke="#1e40af" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a1e40af)"/>
+<text x="140.0" y="425.0" font-size="14" fill="#1e40af" text-anchor="middle" dominant-baseline="middle" font-weight="bold">longshore drift</text>
+<text x="400.0" y="120.0" font-size="20" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">LAND</text>
+<text x="650.0" y="420.0" font-size="20" fill="#1e3a8a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">SEA</text>
+<text x="425.0" y="200.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">headland</text>
+</svg>

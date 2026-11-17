@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Common drainage patterns</title>
+<desc id="d">Dendritic drainage branches like a tree on rocks of even resistance. Trellis drainage has parallel main streams joined at right angles by tributaries, on alternating hard and soft rock. Radial drainage flows outwards from a central high point such as a volcano. Centripetal drainage flows inwards to a central basin or lake. Rectangular drainage follows right-angled joints. Parallel drainage forms on a uniform slope.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Six drainage patterns</text>
+<rect x="30.0" y="70.0" width="220.0" height="150.0" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="140.0" y="242.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Dendritic</text>
+<path d="M 140 215 L 140 140" stroke="#2563eb" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="140.0" y1="180.0" x2="80.0" y2="120.0" stroke="#2563eb" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="140.0" y1="160.0" x2="200.0" y2="100.0" stroke="#2563eb" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="140.0" y1="140.0" x2="110.0" y2="80.0" stroke="#2563eb" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="140.0" y1="140.0" x2="165.0" y2="80.0" stroke="#2563eb" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="105.0" y1="145.0" x2="60.0" y2="130.0" stroke="#2563eb" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="175.0" y1="130.0" x2="225.0" y2="135.0" stroke="#2563eb" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="290.0" y="70.0" width="220.0" height="150.0" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="400.0" y="242.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Trellis</text>
+<line x1="350.0" y1="80.0" x2="350.0" y2="215.0" stroke="#2563eb" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="400.0" y1="80.0" x2="400.0" y2="215.0" stroke="#2563eb" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="450.0" y1="80.0" x2="450.0" y2="215.0" stroke="#2563eb" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="305.0" y1="105.0" x2="350.0" y2="105.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="450.0" y1="120.0" x2="495.0" y2="120.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="400.0" y1="105.0" x2="450.0" y2="105.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="305.0" y1="140.0" x2="350.0" y2="140.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="450.0" y1="155.0" x2="495.0" y2="155.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="400.0" y1="140.0" x2="450.0" y2="140.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="305.0" y1="175.0" x2="350.0" y2="175.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="450.0" y1="190.0" x2="495.0" y2="190.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="400.0" y1="175.0" x2="450.0" y2="175.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<rect x="550.0" y="70.0" width="220.0" height="150.0" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="660.0" y="242.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Radial</text>
+<circle cx="660.0" cy="145.0" r="14.0" fill="#a8a29e" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="676.0" y1="145.0" x2="750.0" y2="145.0" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="671.3" y1="156.3" x2="723.6" y2="194.5" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="660.0" y1="161.0" x2="660.0" y2="215.0" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="648.7" y1="156.3" x2="596.4" y2="194.5" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="644.0" y1="145.0" x2="570.0" y2="145.0" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="648.7" y1="133.7" x2="596.4" y2="95.5" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="660.0" y1="129.0" x2="660.0" y2="75.0" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="671.3" y1="133.7" x2="723.6" y2="95.5" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="30.0" y="280.0" width="220.0" height="150.0" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="140.0" y="452.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Centripetal</text>
+<ellipse cx="140.0" cy="355.0" rx="26.0" ry="18.0" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
+<line x1="235.0" y1="355.0" x2="170.0" y2="355.0" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="207.2" y1="404.5" x2="161.2" y2="370.6" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="140.0" y1="425.0" x2="140.0" y2="377.0" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="72.8" y1="404.5" x2="118.8" y2="370.6" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="45.0" y1="355.0" x2="110.0" y2="355.0" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="72.8" y1="305.5" x2="118.8" y2="339.4" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="140.0" y1="285.0" x2="140.0" y2="333.0" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="207.2" y1="305.5" x2="161.2" y2="339.4" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="290.0" y="280.0" width="220.0" height="150.0" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="400.0" y="452.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Rectangular</text>
+<path d="M 310 300 L 380 300 L 380 360 L 440 360 L 440 420 L 495 420" stroke="#2563eb" stroke-width="3.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 380 330 L 320 330 M 440 390 L 490 390 M 440 360 L 440 300" stroke="#2563eb" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="550.0" y="280.0" width="220.0" height="150.0" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="660.0" y="452.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Parallel</text>
+<line x1="585.0" y1="290.0" x2="605.0" y2="425.0" stroke="#2563eb" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="620.0" y1="290.0" x2="640.0" y2="425.0" stroke="#2563eb" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="655.0" y1="290.0" x2="675.0" y2="425.0" stroke="#2563eb" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="690.0" y1="290.0" x2="710.0" y2="425.0" stroke="#2563eb" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="725.0" y1="290.0" x2="745.0" y2="425.0" stroke="#2563eb" stroke-width="2.6" stroke-linecap="round"/>
+</svg>

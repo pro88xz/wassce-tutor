@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The long profile of a river from source to mouth</title>
+<desc id="d">In the upper course the river is steep and fast, eroding downwards to form a V-shaped valley, waterfalls, rapids and interlocking spurs. In the middle course it erodes sideways and forms meanders. In the lower course the gradient is gentle and the river deposits load, forming a floodplain, levees, ox-bow lakes and a delta or estuary at the mouth.</desc>
+<defs></defs>
+<rect width="800" height="480" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Upper, middle and lower course</text>
+<path d="M 40 110 C 180 150, 260 300, 420 330 S 680 380, 770 385" stroke="#2563eb" stroke-width="6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="40.0" y1="400.0" x2="770.0" y2="400.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+<text x="780.0" y="418.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">sea level</text>
+<text x="40.0" y="92.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">source</text>
+<text x="770.0" y="368.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">mouth</text>
+<line x1="250.0" y1="70.0" x2="250.0" y2="440.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="4 6"/>
+<line x1="520.0" y1="70.0" x2="520.0" y2="440.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="4 6"/>
+<text x="140.0" y="450.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Upper course</text>
+<text x="140.0" y="285.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">steep, fast, narrow</text>
+<text x="140.0" y="305.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">vertical erosion</text>
+<text x="140.0" y="325.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">V-shaped valley,</text>
+<text x="140.0" y="345.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">waterfalls, rapids,</text>
+<text x="140.0" y="365.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">interlocking spurs</text>
+<text x="385.0" y="450.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Middle course</text>
+<text x="385.0" y="165.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">gentler, wider</text>
+<text x="385.0" y="185.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">lateral erosion</text>
+<text x="385.0" y="205.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">meanders, river</text>
+<text x="385.0" y="225.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cliffs, slip-off</text>
+<text x="385.0" y="245.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">slopes</text>
+<text x="645.0" y="450.0" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Lower course</text>
+<text x="645.0" y="165.0" font-size="13" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">gentle, slow, wide</text>
+<text x="645.0" y="185.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">deposition</text>
+<text x="645.0" y="205.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">floodplain, levees,</text>
+<text x="645.0" y="225.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ox-bow lakes,</text>
+<text x="645.0" y="245.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">delta or estuary</text>
+</svg>

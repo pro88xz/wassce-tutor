@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Types of mass movement on slopes</title>
+<desc id="d">Soil creep is very slow movement of soil down a slope, shown by tilted fences, poles and trees. A landslide is a sudden slide of a mass of rock and soil along a slip plane. A mudflow is a fast flow of soil saturated with water. A rockfall is the free fall of rock from a cliff or steep face.</desc>
+<defs><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="800" height="440" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Slow to very fast movement under gravity</text>
+<polygon points="20.0,120.0 200.0,300.0 20.0,300.0" fill="#d9c49a" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<text x="110.0" y="340.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Soil creep</text>
+<text x="110.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">very slow; tilted poles,</text>
+<text x="110.0" y="380.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">fences and trees</text>
+<polygon points="210.0,120.0 390.0,300.0 210.0,300.0" fill="#d9c49a" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<text x="300.0" y="340.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Landslide</text>
+<text x="300.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sudden slide along a</text>
+<text x="300.0" y="380.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">slip plane</text>
+<polygon points="410.0,120.0 590.0,300.0 410.0,300.0" fill="#d9c49a" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<text x="500.0" y="340.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Mudflow</text>
+<text x="500.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">fast flow of soil</text>
+<text x="500.0" y="380.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">soaked with water</text>
+<polygon points="600.0,120.0 780.0,300.0 600.0,300.0" fill="#d9c49a" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<text x="690.0" y="340.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Rockfall</text>
+<text x="690.0" y="362.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rock falls freely</text>
+<text x="690.0" y="380.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">from a steep face</text>
+<line x1="50.0" y1="150.0" x2="64.0" y2="110.0" stroke="#92400e" stroke-width="3" stroke-linecap="round"/>
+<line x1="95.0" y1="195.0" x2="109.0" y2="155.0" stroke="#92400e" stroke-width="3" stroke-linecap="round"/>
+<line x1="140.0" y1="240.0" x2="154.0" y2="200.0" stroke="#92400e" stroke-width="3" stroke-linecap="round"/>
+<line x1="70.0" y1="190.0" x2="130.0" y2="250.0" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<path d="M 250 170 Q 310 200 330 270" stroke="#dc2626" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 4"/>
+<polygon points="250.0,170.0 330.0,270.0 360.0,285.0 280.0,190.0" fill="#c2a46b" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/>
+<line x1="290.0" y1="205.0" x2="340.0" y2="262.0" stroke="#dc2626" stroke-width="2.6" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<path d="M 430 140 Q 490 220 540 260 Q 580 290 610 300" stroke="#78350f" stroke-width="16" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="460.0" y1="100.0" x2="454.0" y2="125.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="490.0" y1="100.0" x2="484.0" y2="125.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="520.0" y1="100.0" x2="514.0" y2="125.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="550.0" y1="100.0" x2="544.0" y2="125.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<polygon points="600.0,120.0 660.0,120.0 660.0,300.0 600.0,300.0" fill="#a8a29e" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<rect x="670.0" y="170.0" width="18.0" height="14.0" rx="0" fill="#78716c" stroke="#0f172a" stroke-width="1.2"/>
+<rect x="690.0" y="230.0" width="18.0" height="14.0" rx="0" fill="#78716c" stroke="#0f172a" stroke-width="1.2"/>
+<rect x="710.0" y="285.0" width="18.0" height="14.0" rx="0" fill="#78716c" stroke="#0f172a" stroke-width="1.2"/>
+<text x="400.0" y="420.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Freetown, 14 August 2017: a mudslide on Sugar Loaf Mountain after heavy rain killed or buried over 1,000 people.</text>
+</svg>

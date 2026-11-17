@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Landforms produced by wind in hot deserts</title>
+<desc id="d">A barchan is a crescent-shaped sand dune with its horns pointing downwind; a seif is a long ridge of sand parallel to the wind. A mushroom rock (rock pedestal) forms where sand carried near the ground wears away the base of a rock faster than its top. A zeugen is a ridge of hard rock capping softer rock.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="800" height="420" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Wind erosion and deposition in hot deserts</text>
+<rect x="0.0" y="320.0" width="800.0" height="100.0" rx="0" fill="#fde68a" stroke="none" stroke-width="0"/>
+<path d="M 60 320 Q 110 220 200 230 Q 150 270 170 320 Z" stroke="#0f172a" stroke-width="2" fill="#fbbf24" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="140.0" y="360.0" font-size="15" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">barchan dune</text>
+<text x="140.0" y="380.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">horns point downwind</text>
+<path d="M 300 320 L 320 220 L 360 220 L 380 320 Z" stroke="#0f172a" stroke-width="2" fill="#d6d3d1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 290 220 Q 340 160 390 220 Z" stroke="#0f172a" stroke-width="2" fill="#a8a29e" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="330.0" y="250.0" width="20.0" height="70.0" rx="0" fill="#d6d3d1" stroke="none" stroke-width="0"/>
+<path d="M 285 222 Q 340 180 395 222 L 360 222 L 350 320 L 330 320 L 320 222 Z" stroke="#0f172a" stroke-width="2" fill="#a8a29e" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="340.0" y="360.0" font-size="15" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">mushroom rock</text>
+<text x="340.0" y="380.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">base worn by blown sand</text>
+<rect x="470.0" y="220.0" width="200.0" height="40.0" rx="0" fill="#57534e" stroke="#0f172a" stroke-width="2"/>
+<rect x="500.0" y="260.0" width="140.0" height="60.0" rx="0" fill="#d6d3d1" stroke="#0f172a" stroke-width="2"/>
+<text x="570.0" y="360.0" font-size="15" fill="#92400e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">zeugen</text>
+<text x="570.0" y="380.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">hard cap over softer rock</text>
+<line x1="40.0" y1="110.0" x2="120.0" y2="110.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="300.0" y1="110.0" x2="380.0" y2="110.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="560.0" y1="110.0" x2="640.0" y2="110.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<text x="400.0" y="80.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">prevailing wind</text>
+<text x="790.0" y="160.0" font-size="14" fill="#92400e" text-anchor="end" dominant-baseline="middle" font-weight="bold">seif dunes</text>
+<text x="790.0" y="180.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">lie along the wind</text>
+</svg>
