@@ -207,6 +207,9 @@ html.native-app [data-landing] { display: none; }
  * replaced by the app's own navigation, so they wait out the session check. */
 html.app-boot .public-site-header,
 html.app-boot [data-public-footer] { display: none; }
+/* App banner (src/components/AppPromoBanner.tsx): closed, or the visitor
+ * can't install it. Set before first paint so it never flashes. */
+html.promo-hidden [data-app-promo] { display: none; }
 
 /* ============================================================
  * Biology lesson content styling
