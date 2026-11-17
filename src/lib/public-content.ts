@@ -5,6 +5,7 @@
 import { supabase } from '@/lib/supabase'
 import { hasSubjectPage, hasTopicPageByCount, subjectPath, topicPath } from '@/lib/public-rules'
 import { topicPhoto } from '@/lib/topic-photos'
+import { mathToText } from '@/lib/math-text'
 
 export { hasSubjectPage, lessonPath, subjectPath, topicPath } from '@/lib/public-rules'
 
@@ -259,11 +260,12 @@ export async function fetchPublicLessonPage(
 
 /** Markdown to plain text for a summary. */
 function plainText(markdown: string): string {
-  return markdown
+  const prose = markdown
     .replace(/^:::.*$/gm, ' ') // directive fences (:::callout, :::diagram)
-    .replace(/\$\$[\s\S]*?\$\$/g, ' ') // display math
-    .replace(/\$([^$\n\\{}^_]+)\$/g, '$1') // plain inline math ($3 : 5$, $24$) reads as text
-    .replace(/\$[^$\n]+\$/g, ' ') // other inline math
+    .replace(/\$\$[\s\S]*?\$\$|\\\[[\s\S]*?\\\]/g, ' ') // display math: a whole equation is too long for a snippet
+  // Inline maths is written out ("When you write 2³, ..."), not deleted: a
+  // deleted formula leaves a hole in the sentence Google shows.
+  return mathToText(prose)
     .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ') // images
     .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1') // links -> text
     .replace(/^#{1,6}\s+/gm, '') // heading marks
