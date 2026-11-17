@@ -12,9 +12,10 @@
 //   06 MockExams       Can I rehearse the real paper?          (on a dark band, for contrast mid-page)
 //   07 LocalBand       Was this made for someone like me?      (+ who builds it)
 //   08 TutorFeature    Can I get a person to help?
-//   09 Plans           What does it cost?
-//   10 Faq             What else should I know?
-//   11 FinalCta        Start.
+//   09 Reviews         What do other students think?           (real Google reviews, or an invitation to write one)
+//   10 Plans           What does it cost?
+//   11 Faq             What else should I know?
+//   12 FinalCta        Start.
 //
 // Like a course marketplace, the page leads with the courses themselves:
 // search in the hero, then real topics as course cards, then proof. The grading guide and university
@@ -34,6 +35,7 @@ import { HowItWorks } from '@/components/landing/HowItWorks'
 import { MockExams } from '@/components/landing/MockExams'
 import { LocalBand } from '@/components/landing/LocalBand'
 import { TutorFeature } from '@/components/landing/TutorFeature'
+import { Reviews } from '@/components/landing/Reviews'
 import { Plans } from '@/components/landing/Plans'
 import { Faq } from '@/components/landing/Faq'
 import { FinalCta } from '@/components/landing/FinalCta'
@@ -52,6 +54,7 @@ export function Landing({ data }: { data: LandingData }) {
       <MockExams subjects={data.subjects} />
       <LocalBand />
       <TutorFeature />
+      <Reviews />
       <Plans />
       <Faq subjects={data.subjects} />
       <FinalCta />
