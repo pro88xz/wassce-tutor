@@ -9,9 +9,11 @@ import { coverColours } from '@/components/public/cover-colours'
 import { LessonCard, TopicStep } from '@/components/public/TopicPageParts'
 import { subjectArt } from '@/components/ds/SubjectCover'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
+import { QuestionMarkdown } from '@/components/QuestionMarkdown'
+import { QuestionCard } from '@/components/public/QuestionCard'
 import { useAuth } from '@/lib/auth'
 import { PRACTICE_QUESTIONS, hasPractice } from '@/lib/practice-counts'
-import { fetchTopicPage, hasTopicPage, lessonMinutes, lessonPath, questionsPath, subjectPath, topicPath, topicQuestionCount } from '@/lib/public-content'
+import { fetchTopicExtras, fetchTopicPage, hasTopicPage, lessonMinutes, lessonPath, questionsPath, subjectPath, topicPath, topicQuestionCount } from '@/lib/public-content'
 import type { TopicPageData, TopicWithLessons } from '@/lib/public-content'
 import { SEARCH_COPY, brandedTitle, breadcrumbJsonLd, fitDescription, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { studyTime } from '@/lib/study-time'
@@ -51,7 +53,9 @@ export const Route = createFileRoute('/wassce/$subject/$topic')({
     }
     // Practice questions with answers: the topic's own questions page, when it has one.
     const questionCount = await topicQuestionCount(data.topic.id)
-    return { ...data, outlines, questionCount }
+    // What WASSCE asks (the lessons' exam-focus notes) and two questions to try, with answers.
+    const extras = await fetchTopicExtras(data.topic)
+    return { ...data, outlines, questionCount, ...extras }
   },
   head: ({ loaderData: data }) => {
     if (!data) return privatePageTags('Page not found')
@@ -92,7 +96,7 @@ const asCourse = (t: TopicWithLessons) => ({
 // as the homepage's course cards. Every number comes from the lessons.
 function TopicPage() {
   const data = Route.useLoaderData()
-  const { subject, topic, group, previous, next, outlines, coverIndex, questionCount } = data
+  const { subject, topic, group, previous, next, outlines, coverIndex, questionCount, examFocus, sampleQuestions } = data
   const { user } = useAuth()
   const art = subjectArt(subject.slug)
   const cover = { subjectSlug: subject.slug, subjectName: subject.name, topicSlug: topic.slug, topicName: topic.name, index: coverIndex[topic.id] ?? 0 }
@@ -266,6 +270,39 @@ function TopicPage() {
             </ol>
           </section>
 
+          {examFocus.length > 0 && (
+            <section aria-labelledby="exam">
+              <p className="site-eyebrow">In the exam</p>
+              <h2 id="exam" className="mt-2 text-[1.625rem] font-extrabold tracking-[-.03em] sm:text-[2rem]">What WASSCE asks on {topic.name.toLowerCase()}</h2>
+              <div className="mt-6 space-y-4">
+                {examFocus.map((f) => {
+                  const n = lessons.findIndex((l) => l.slug === f.slug) + 1
+                  return (
+                    <div key={f.slug} className="site-card p-5 sm:p-6">
+                      <QuestionMarkdown content={f.markdown} className="question-md text-[15px] leading-relaxed" />
+                      <a href={lessonPath(subject.slug, topic.slug, f.slug)} className="site-link mt-3 text-sm">
+                        Lesson {n}: {f.title} <ArrowRight className="h-4 w-4" aria-hidden />
+                      </a>
+                    </div>
+                  )
+                })}
+              </div>
+            </section>
+          )}
+
+          {sampleQuestions.length > 0 && (
+            <section aria-labelledby="try">
+              <p className="site-eyebrow">Practise this topic</p>
+              <h2 id="try" className="mt-2 text-[1.625rem] font-extrabold tracking-[-.03em] sm:text-[2rem]">Try {sampleQuestions.length === 1 ? 'a WASSCE question' : `${sampleQuestions.length} WASSCE questions`}</h2>
+              <p className="mt-2 text-[15px] text-muted-foreground">Pick an answer, then open the working to check it.</p>
+              <ol className="mt-6 space-y-4">
+                {sampleQuestions.map((q, i) => (
+                  <QuestionCard key={q.id} q={q} n={i + 1} topic={topic.name} heading="h3" />
+                ))}
+              </ol>
+            </section>
+          )}
+
           {questionsHref && (
             <a href={questionsHref} className="site-card site-card-link group flex items-center gap-4 p-5 sm:gap-5 sm:p-6">
               <span
@@ -276,7 +313,7 @@ function TopicPage() {
                 <ListChecks className="h-7 w-7" />
               </span>
               <span className="min-w-0 flex-1">
-                <span className="block text-[11px] font-bold uppercase tracking-[.14em] text-muted-foreground">Practise this topic</span>
+                <span className="block text-[11px] font-bold uppercase tracking-[.14em] text-muted-foreground">{sampleQuestions.length > 0 ? 'Every question on this topic' : 'Practise this topic'}</span>
                 <span className="mt-1 block text-lg font-bold leading-snug tracking-tight group-hover:text-[var(--brand-strong)]">
                   {topic.name}: {questionCount} WASSCE questions with answers
                 </span>
