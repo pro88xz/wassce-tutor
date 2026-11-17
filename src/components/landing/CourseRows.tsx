@@ -13,6 +13,7 @@ import { subjectPath, topicPath } from '@/lib/public-content'
 import { topicPhoto, topicPhotoSrcSet } from '@/lib/topic-photos'
 import { PRACTICE_QUESTIONS } from '@/lib/practice-counts'
 import { subjectArt } from '@/components/ds/SubjectCover'
+import { topicArt } from '@/components/landing/TopicArt'
 import { Band, SectionHeading } from '@/components/public/Section'
 
 /** "45 min", "2 h", "3 h 20 min", rounded to five minutes. */
@@ -213,8 +214,10 @@ const COVERS = [
  * large, so every card in a row is different without stock imagery.
  */
 function CourseCover({ subjectSlug, subjectName, course: c, index }: { subjectSlug: string; subjectName: string; course: Course; index: number }) {
-  const photo = topicPhoto(subjectSlug, c.topicSlug)
   const art = subjectArt(subjectSlug)
+  const drawing = topicArt(subjectSlug, c.topicSlug, art.accent)
+  // A drawing of the topic wins over a photograph, so a row reads as one set of covers.
+  const photo = drawing ? undefined : topicPhoto(subjectSlug, c.topicSlug)
   // Start the cycle at the subject's own colour family.
   const offset = Math.max(0, COVERS.findIndex(([c]) => c.toLowerCase() === art.bg.toLowerCase()))
   const [from, to] = COVERS[(offset + index) % COVERS.length]
@@ -239,17 +242,23 @@ function CourseCover({ subjectSlug, subjectName, course: c, index }: { subjectSl
       ) : (
         <span aria-hidden className="absolute inset-0 flex flex-col justify-between p-3.5" style={{ background: `linear-gradient(135deg, ${from}, ${to})` }}>
           <span
-            className="absolute inset-0 opacity-60"
-            style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,.22) 1px, transparent 1px)', backgroundSize: '14px 14px' }}
+            className="absolute inset-0 opacity-50"
+            style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,.2) 1px, transparent 1px)', backgroundSize: '14px 14px' }}
           />
-          <span className="absolute -bottom-3 right-2 select-none whitespace-nowrap text-[64px] font-black leading-none tracking-tighter text-white/[0.13]">
-            {art.glyphs[index % 3]}
-          </span>
+          {drawing ? (
+            <svg viewBox="0 0 120 110" className="absolute bottom-[10%] right-[4%] h-[78%] w-auto transition-transform duration-500 group-hover:scale-[1.05]">
+              {drawing}
+            </svg>
+          ) : (
+            <span className="absolute -bottom-3 right-2 select-none whitespace-nowrap text-[64px] font-black leading-none tracking-tighter text-white/[0.13]">
+              {art.glyphs[index % 3]}
+            </span>
+          )}
           <span className="relative flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[.14em] text-white/80">
             <span className="h-1.5 w-1.5 rounded-full" style={{ background: art.accent }} />
             {subjectName}
           </span>
-          <span className="relative line-clamp-3 max-w-[90%] text-[19px] font-extrabold leading-[1.12] tracking-tight text-white">{c.topicName}</span>
+          <span className={`relative line-clamp-3 text-[17px] font-extrabold leading-[1.12] tracking-tight text-white ${drawing ? 'max-w-[50%]' : 'max-w-[90%] text-[19px]'}`}>{c.topicName}</span>
         </span>
       )}
     </span>
