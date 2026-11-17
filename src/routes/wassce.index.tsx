@@ -2,7 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { FacultySubjects } from '@/components/public/FacultySubjects'
 import { StartCta } from '@/components/public/StartCta'
-import { fetchSubjectSummaries } from '@/lib/public-content'
+import { fetchQuestionSubjects, fetchSubjectSummaries, questionsPath } from '@/lib/public-content'
 import { breadcrumbJsonLd, indexablePageTags } from '@/lib/seo'
 
 const TRAIL: [string, string][] = [
@@ -24,7 +24,12 @@ const GRADES: [grade: string, meaning: string, kind: string][] = [
 
 export const Route = createFileRoute('/wassce/')({
   ssr: true,
-  loader: () => fetchSubjectSummaries(),
+  loader: async () => {
+    const [subjects, questions] = await Promise.all([fetchSubjectSummaries(), fetchQuestionSubjects()])
+    // Subjects with a questions-and-answers page, in the directory's order, with how many questions each has.
+    const questionSubjects = subjects.filter((s) => questions.has(s.slug)).map((s) => ({ slug: s.slug, name: s.name, questions: questions.get(s.slug)! }))
+    return { subjects, questionSubjects }
+  },
   head: () =>
     indexablePageTags({
       path: '/wassce',
@@ -38,7 +43,7 @@ export const Route = createFileRoute('/wassce/')({
 })
 
 function WasscePillarPage() {
-  const subjects = Route.useLoaderData()
+  const { subjects, questionSubjects } = Route.useLoaderData()
   return (
     <article className="wassce-guide site-page space-y-14 pb-12 sm:space-y-20">
       <header className="guide-hero">
@@ -139,6 +144,32 @@ function WasscePillarPage() {
           </aside>
         </div>
       </section>
+
+      {questionSubjects.length > 0 && (
+        <section id="guide-questions" className="scroll-mt-24 space-y-6" aria-labelledby="guide-questions-title">
+          <div className="guide-section-heading">
+            <p className="guide-eyebrow">04 / PRACTICE QUESTIONS</p>
+            <h2 id="guide-questions-title">WASSCE questions and answers</h2>
+            <p>
+              Original WASSCE-style objective questions, topic by topic, each with the answer, the full working and why every other option is
+              wrong. Free to read. They are not WAEC past papers.
+            </p>
+          </div>
+          <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {questionSubjects.map((s) => (
+              <li key={s.slug}>
+                <a href={questionsPath(s.slug)} className="site-card group flex h-full items-center justify-between gap-3 p-4 transition-colors hover:border-primary/40">
+                  <span>
+                    <span className="block font-bold leading-snug group-hover:text-primary">{s.name}</span>
+                    <span className="mt-0.5 block text-sm text-muted-foreground">{s.questions} questions with answers</span>
+                  </span>
+                  <span className="text-primary" aria-hidden>→</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <StartCta
         heading="Prepare for WASSCE with WASSCE Tutor"

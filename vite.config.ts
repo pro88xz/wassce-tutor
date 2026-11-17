@@ -8,6 +8,17 @@ import { PUBLIC_PAGES, SITE } from './src/lib/seo'
 import { EDITORIAL_PUBLIC_PAGES } from './src/content/editorial'
 import { publicPageList } from './scripts/public-page-list'
 
+/** One entry per path, in first-seen order, with the latest date: /tutors is both a fixed page and a data page. */
+function uniquePages<T extends { path: string; lastmod?: string }>(pages: T[]): T[] {
+  const byPath = new Map<string, T>()
+  for (const p of pages) {
+    const seen = byPath.get(p.path)
+    if (!seen) byPath.set(p.path, p)
+    else if ((p.lastmod ?? '') > (seen.lastmod ?? '')) byPath.set(p.path, { ...seen, lastmod: p.lastmod })
+  }
+  return [...byPath.values()]
+}
+
 export default defineConfig(async ({ command, mode }) => {
   // Data-driven public pages (/wassce/...) to prerender, fetched from Supabase
   // at build time. Skipped for the dev server, which renders on demand.
@@ -38,7 +49,7 @@ export default defineConfig(async ({ command, mode }) => {
           autoSubfolderIndex: false, // /about -> about.html (vercel.json cleanUrls)
           failOnError: true,
         },
-        pages: [...fixedPages, ...dataPages].map(({ path, lastmod }) => ({
+        pages: uniquePages([...fixedPages, ...dataPages]).map(({ path, lastmod }) => ({
           path,
           prerender: { enabled: true },
           sitemap: { lastmod },

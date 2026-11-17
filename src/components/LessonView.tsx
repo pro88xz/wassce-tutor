@@ -5,7 +5,7 @@
 //
 // Used by lesson pages and the admin preview pane.
 // MarkdownView (sibling) stays simpler for tutor/papers/question previews.
-import { useEffect } from 'react'
+import { memo, useEffect } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
@@ -89,6 +89,15 @@ const INLINE_MATH = /\\\(([\s\S]+?)\\\)/g
 // reads it as inline maths (no centring, and a long one widens the page on a
 // phone). Put the $$ on their own lines so it renders as a display block.
 const ONE_LINE_DISPLAY = /^[ \t]*\$\$([^\n$]+?)\$\$[ \t]*$/gm
+/**
+ * Some lessons open with their own title as "# Title". The page shows the
+ * title already (its <h1>), so that first line is left out instead of
+ * showing the title twice.
+ */
+export function withoutTitleHeading(md: string): string {
+  return md.replace(/^\s*#[ \t]+[^\n]*(\n+|$)/, '')
+}
+
 export function normalizeMath(md: string): string {
   return md
     .replace(DISPLAY_MATH, (_m, tex: string) => ['', '$$', tex.trim(), '$$', ''].join('\n'))
@@ -156,6 +165,9 @@ function rehypeNarrowMath() {
 const REMARK_PLUGINS = [[remarkGfm, { singleTilde: false }], remarkMath, remarkDirective, directiveTransformer]
 const REHYPE_PLUGINS = [rehypeSectionIds, rehypeNarrowMath, rehypeKatex]
 const MD_COMPONENTS = {
+  // The page already has the lesson's title as its one <h1>; a "#" heading
+  // inside a lesson is a section, like "##".
+  h1: ({ node: _node, ...props }: any) => <h2 {...props} />,
   // Map our custom directive elements to React components.
   // react-markdown passes attribute props as lowercase HTML-style props.
   callout: ({ type, title, children }: any) => (
@@ -190,7 +202,11 @@ const MD_COMPONENTS = {
   ),
 } as any
 
-export function LessonView({ content }: { content: string }) {
+// Memoised: a lesson is thousands of DOM nodes (KaTeX), and re-parsing it
+// costs about a second on a mid-range phone. Without memo, any re-render of
+// the page around it (the signed-in state arriving, a header menu) rendered
+// the whole lesson again. It only needs to render again when its text changes.
+export const LessonView = memo(function LessonView({ content }: { content: string }) {
   // Show the stacked form of a long equation wherever the one-line form would
   // need sideways scrolling: after every render, when fonts load, and when the
   // screen size changes (a phone turned sideways).
@@ -220,7 +236,7 @@ export function LessonView({ content }: { content: string }) {
       rehypePlugins={REHYPE_PLUGINS as any}
       components={MD_COMPONENTS}
     >
-      {normalizeMath(content)}
+      {normalizeMath(withoutTitleHeading(content))}
     </ReactMarkdown>
   )
-}
+})

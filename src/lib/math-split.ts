@@ -175,8 +175,14 @@ export function splitForNarrow(tex: string): string | null {
 
 /** Show the stacked form of each long equation only where the one-line form overflows. */
 export function fitLongMath(root: ParentNode = document) {
-  root.querySelectorAll<HTMLElement>('.math-split').forEach((wrap) => {
+  // Measure every equation first, then change classes: alternating the two
+  // forces the browser to lay out the whole lesson again for each equation.
+  const wraps = [...root.querySelectorAll<HTMLElement>('.math-split')]
+  const narrow = wraps.map((wrap) => {
     const k = wrap.querySelector<HTMLElement>('.math-wide .katex-display')
-    if (k) wrap.classList.toggle('is-narrow', k.scrollWidth > k.clientWidth + 1)
+    return k ? k.scrollWidth > k.clientWidth + 1 : null
+  })
+  wraps.forEach((wrap, i) => {
+    if (narrow[i] !== null) wrap.classList.toggle('is-narrow', narrow[i])
   })
 }

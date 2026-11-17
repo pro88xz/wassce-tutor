@@ -4,7 +4,7 @@ import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { StartCta } from '@/components/public/StartCta'
 import { FROM_PRICE } from '@/lib/plans'
 import { hasPractice } from '@/lib/practice-counts'
-import { LessonView } from '@/components/LessonView'
+import { PrerenderedLesson } from '@/components/lesson/PrerenderedLesson'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { fetchPublicLessonPage, lessonPath, lessonSummary, questionsPath, subjectPath, topicPath, topicQuestionCount } from '@/lib/public-content'
 import type { PublicLessonPageData } from '@/lib/public-content'
@@ -123,9 +123,11 @@ function PublicLessonPage() {
         </div>
       </header>
 
-      <div className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-bold prose-h2:text-xl prose-h2:mt-6 prose-h2:mb-3 prose-p:leading-relaxed prose-li:my-1 prose-strong:text-foreground">
-        <LessonView content={lesson.content} />
-      </div>
+      <PrerenderedLesson
+        id={`lesson-${lesson.id}`}
+        content={lesson.content}
+        className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-bold prose-h2:text-xl prose-h2:mt-6 prose-h2:mb-3 prose-p:leading-relaxed prose-li:my-1 prose-strong:text-foreground"
+      />
 
       {questionCount > 0 && (
         <a href={questionsPath(subject.slug, topic.slug)} className="group flex items-center gap-4 rounded-2xl border border-primary/25 bg-brand-soft/50 p-4 transition-colors hover:border-primary/50 sm:p-5">
