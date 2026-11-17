@@ -13,6 +13,7 @@ import type { LandingData } from '@/lib/public-content'
 import { PRACTICE_TOTAL } from '@/lib/practice-counts'
 import { TopicSearch, type TopicShortcut } from '@/components/landing/TopicSearch'
 import { AnswerSheet } from '@/components/landing/AnswerSheet'
+import { coverColours } from '@/components/public/cover-colours'
 import { topicPath, type PopularTopic } from '@/lib/public-content'
 
 /** Shortcut chips: popular topics that have lessons, short enough to read as a chip. */
@@ -20,7 +21,7 @@ function shortcutsFrom(popular: PopularTopic[]): TopicShortcut[] {
   return popular
     .filter((t) => t.lessons > 0 && t.topicName.length <= 22)
     .slice(0, 4)
-    .map((t) => ({ label: t.topicName, href: topicPath(t.subjectSlug, t.topicSlug) }))
+    .map((t) => ({ label: t.topicName, href: topicPath(t.subjectSlug, t.topicSlug), subject: t.subjectName, color: coverColours(t.subjectSlug, 0)[0] }))
 }
 
 const ASSURANCES = ['Every lesson free', 'No card needed', 'Works on any phone']

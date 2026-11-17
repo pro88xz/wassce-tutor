@@ -1116,8 +1116,8 @@ html, body {
 
 /* ============================================================
  * Homepage signature (src/components/landing): the answer sheet in the
- * hero and the syllabus wall. Static and complete without JavaScript or
- * with reduced motion; the motion below only adds to it.
+ * hero. Static and complete without JavaScript or with reduced motion; the
+ * motion below only adds to it.
  * ============================================================ */
 
 /* The display serif: a few words in a heading, set in italic. */
@@ -1192,68 +1192,3 @@ html, body {
   0%, 100% { translate: 0 0; }
   50% { translate: 0 -9px; }
 }
-
-/* Syllabus wall: one bubble per topic. Shaded bubbles fill in, in reading
-   order, as the wall scrolls into view (useReveal arms it). */
-.wall-bubble {
-  position: relative;
-  display: block;
-  width: var(--bubble, 14px);
-  height: var(--bubble, 14px);
-  border-radius: 9999px;
-  flex: none;
-}
-.wall-bubble.is-open { box-shadow: inset 0 0 0 1.5px rgb(255 255 255 / 22%); }
-.wall-bubble.is-shaded {
-  background: var(--fill);
-  box-shadow: 0 0 0 0 transparent, 0 0 14px -2px color-mix(in srgb, var(--fill) 70%, transparent);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-a.wall-bubble:hover,
-a.wall-bubble:focus-visible {
-  transform: scale(1.45);
-  box-shadow: 0 0 0 3px rgb(255 255 255 / 85%), 0 0 22px 0 var(--fill);
-  z-index: 2;
-  outline: none;
-}
-/* The topic's name above a bubble on hover or keyboard focus. */
-a.wall-bubble::after {
-  content: attr(data-name);
-  position: absolute;
-  bottom: calc(100% + 10px);
-  left: 50%;
-  translate: -50% 4px;
-  width: max-content;
-  max-width: 14rem;
-  padding: 0.4rem 0.6rem;
-  border-radius: 0.5rem;
-  background: #fff;
-  color: #1a1530;
-  font-size: 0.75rem;
-  font-weight: 700;
-  line-height: 1.25;
-  white-space: normal;
-  text-align: center;
-  box-shadow: 0 12px 30px -10px rgb(0 0 0 / 55%);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.15s ease, translate 0.15s ease;
-  /* Counter the bubble's hover scale so the label stays its size. */
-  scale: calc(1 / 1.45);
-  transform-origin: bottom center;
-}
-a.wall-bubble:hover::after,
-a.wall-bubble:focus-visible::after { opacity: 1; translate: -50% 0; }
-@media (prefers-reduced-motion: no-preference) {
-  .reveal-armed .syllabus-wall .wall-bubble.is-shaded {
-    transition: background-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s cubic-bezier(0.2, 1.4, 0.4, 1);
-    transition-delay: calc(var(--row, 0) * 70ms + var(--i, 0) * 9ms);
-  }
-  .reveal-armed .syllabus-wall:not(.is-revealed) .wall-bubble.is-shaded {
-    background: transparent;
-    box-shadow: inset 0 0 0 1.5px rgb(255 255 255 / 22%);
-    transform: scale(0.7);
-  }
-  .reveal-armed .syllabus-wall.is-revealed a.wall-bubble:hover { transition-delay: 0ms; }
-}
-

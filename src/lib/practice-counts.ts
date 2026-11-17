@@ -30,6 +30,12 @@ const NAMES: Record<string, string> = { 'ict-computer-studies': 'ICT / Computer 
 const nameOf = (slug: string) =>
   NAMES[slug] ?? slug.split('-').map((w) => w[0].toUpperCase() + w.slice(1)).join(' ')
 
+/** Each subject with practice questions today, with its name and count, most questions first. */
+export const PRACTICE_BY_SUBJECT: { slug: string; name: string; questions: number }[] = Object.entries(PRACTICE_QUESTIONS)
+  .filter(([, n]) => n > 0)
+  .map(([slug, questions]) => ({ slug, name: nameOf(slug), questions }))
+  .sort((a, b) => b.questions - a.questions)
+
 /** Names of the subjects that have practice questions today, in alphabetical order. */
 export const PRACTICE_SUBJECTS: string[] = Object.keys(PRACTICE_QUESTIONS)
   .filter((slug) => PRACTICE_QUESTIONS[slug] > 0)
