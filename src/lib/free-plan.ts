@@ -4,19 +4,18 @@
 import { PRACTICE_SUBJECTS_PHRASE } from '@/lib/practice-counts'
 
 /**
- * Where the free starter practice sets are: the subjects that have practice
- * questions today, by name. Written from the question bank, so it never
- * promises a set that does not exist.
+ * Where the practice sets are: the subjects that have practice questions
+ * today, by name. Written from the question bank, so it never promises a set
+ * that does not exist. Every set is free (migration 22).
  */
-export const FREE_PRACTICE = `A starter practice set in ${PRACTICE_SUBJECTS_PHRASE}`
+export const FREE_PRACTICE = `Every practice set in ${PRACTICE_SUBJECTS_PHRASE}, with the full working`
 
 /** The same line for the middle of a sentence. */
-export const FREE_PRACTICE_INLINE = FREE_PRACTICE.replace(/^A/, 'a')
+export const FREE_PRACTICE_INLINE = FREE_PRACTICE.replace(/^Every/, 'every')
 
-/** What every free account gets, forever. */
+/** What everyone gets for free, forever. Keep in step with FREE_SUMMARY in api/_lib/plans.js. */
 export const FREE_FEATURES = [
-  'Every subject and its full syllabus',
-  'The first lesson of every topic',
+  'Every lesson in every subject',
   FREE_PRACTICE,
   'Your progress, saved',
 ]

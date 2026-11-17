@@ -16,14 +16,16 @@ function plan(id) {
   return { ...known, once: id === 'year' ? 'Paid once for the whole year.' : 'Pay once; there is no automatic renewal.' }
 }
 
-/** The paid benefits, with real counts where the database gave them. */
-function unlocked(stats) {
+/** What a plan adds. Lessons and practice are free for everyone (migration 22). */
+const unlocked = () => PAID_FEATURES
+
+/** What every account has for free, with real counts where the database gave them. */
+function free(stats) {
   const ok = stats && stats.lessons > 0 && stats.subjects > 0
   return [
-    ok ? `All ${n(stats.lessons)} lessons across ${n(stats.subjects)} subjects, not only the first lesson of each topic` : PAID_FEATURES[0],
-    stats?.questions > 0 ? `Every practice set (${n(stats.questions)} questions), with the full working` : PAID_FEATURES[1],
-    PAID_FEATURES[2],
-    PAID_FEATURES[3],
+    ok ? `All ${n(stats.lessons)} lessons across ${n(stats.subjects)} subjects` : FREE_SUMMARY[0],
+    stats?.questions > 0 ? `Every practice set (${n(stats.questions)} questions), with the full working` : FREE_SUMMARY[1],
+    FREE_SUMMARY[2],
   ]
 }
 
@@ -36,13 +38,13 @@ export const TEMPLATES = {
     return {
       category: 'marketing',
       subject: `Your ${pl.name} access is one step away`,
-      preheader: `Finish paying NLe ${pl.priceNle} to unlock every lesson and practice set.`,
-      headline: 'Finish unlocking WASSCE Tutor',
+      preheader: `Finish paying NLe ${pl.priceNle} to add the AI study tutor and mock exams.`,
+      headline: 'Finish getting full access',
       paragraphs: [
         hello(p),
         `On ${day(p.startedAt)} you started getting ${pl.name} access, but the payment wasn't completed, so your account is still on the free plan.`,
       ],
-      lists: [{ title: `What ${pl.name} access unlocks`, items: unlocked(ctx.stats) }],
+      lists: [{ title: `What ${pl.name} access adds`, items: unlocked() }],
       after: [`${pl.name}: NLe ${pl.priceNle} for ${pl.length}. ${pl.once}`],
       cta: { label: 'Finish getting access', link: 'cta' },
       note: helpNote,
@@ -58,10 +60,10 @@ export const TEMPLATES = {
       headline: 'Your free account, and what full access adds',
       paragraphs: [hello(p), `A few days ago you started a ${pl.name} payment that wasn't completed. If you still want full access, it takes a minute to finish.`],
       lists: [
-        { title: 'Free, and yours to keep', items: FREE_SUMMARY },
-        { title: `Added with ${pl.name} (NLe ${pl.priceNle} for ${pl.length})`, items: unlocked(ctx.stats) },
+        { title: 'Free for everyone', items: free(ctx.stats) },
+        { title: `Added with ${pl.name} (NLe ${pl.priceNle} for ${pl.length})`, items: unlocked() },
       ],
-      after: ["If the free plan is enough for now, that's fine: your free lessons stay open."],
+      after: ["If the free account is enough for now, that's fine: every lesson and practice set stays open."],
       cta: { label: 'See plans and pay', link: 'cta' },
       note: helpNote,
     }
@@ -79,8 +81,8 @@ export const TEMPLATES = {
         title: 'A good first session',
         items: [
           "Choose a subject you're preparing for",
-          'Open a topic you find hard and read its first lesson (it is free)',
-          'Try a starter practice set and read the working for anything you miss',
+          'Open a topic you find hard and read its first lesson (every lesson is free)',
+          "Try the topic's practice set and read the working for anything you miss",
         ],
       },
     ],
@@ -91,13 +93,13 @@ export const TEMPLATES = {
   activation_2: (p, ctx) => ({
     category: 'marketing',
     subject: 'Start with one free lesson today',
-    preheader: 'The first lesson of every topic is free.',
+    preheader: 'Every lesson and practice set is free.',
     headline: 'One lesson is a good start',
     paragraphs: [
       hello(p),
       ctx.stats?.subjects > 0
-        ? `Your account is ready, and the first lesson of every topic is free, across ${n(ctx.stats.subjects)} subjects.`
-        : 'Your account is ready, and the first lesson of every topic is free.',
+        ? `Your account is ready, and every lesson is free, across ${n(ctx.stats.subjects)} subjects.`
+        : 'Your account is ready, and every lesson is free.',
       'WASSCE preparation is built through steady practice. Start small today and come back tomorrow.',
     ],
     cta: { label: 'Open a free lesson', link: 'cta' },
@@ -139,11 +141,11 @@ export const TEMPLATES = {
     return {
       category: 'marketing',
       subject: 'Your WASSCE preparation is waiting',
-      preheader: 'The first lesson of every topic is free.',
+      preheader: 'Every lesson and practice set is free.',
       headline: 'Start with one topic',
       paragraphs: [
         hello(p),
-        "You haven't started a study session on WASSCE Tutor yet. The first lesson of every topic is free, so you can try it today.",
+        "You haven't started a study session on WASSCE Tutor yet. Every lesson and practice set is free, so you can try one today.",
         'Choose the subject you find hardest and read one lesson. That is a real start.',
       ],
       cta: { label: 'Choose a subject', link: 'cta' },
@@ -178,13 +180,14 @@ export const TEMPLATES = {
       w.practice ? `Practice sets: ${n(w.practice)}${w.score != null ? ` (average score ${w.score}%)` : ''}` : null,
       w.subjects.length > 1 ? `Subjects: ${w.subjects.join(', ')}` : null,
     ].filter(Boolean)
+    // Every lesson is free (migration 22); a lesson marked otherwise still
+    // gets no button straight to it, as before.
     const locked = w.next && !w.next.free && !p.access
     const progress = [
       w.total ? `${n(w.done)} of ${n(w.total)} lessons done (${Math.round((100 * w.done) / w.total)}%)` : null,
       w.newLessons > 0 ? `${plural(w.newLessons, 'new lesson')} added this week` : null,
       w.next ? `Next up: ${w.next.title} (${w.next.topic})` : null,
     ].filter(Boolean)
-    const monthly = plan('term')
     return {
       category: 'marketing',
       subject: `Your WASSCE week: ${did.join(' and ')}`,
@@ -196,7 +199,6 @@ export const TEMPLATES = {
         { title: focus, items: progress },
       ].filter((l) => l.items.length),
       after: [
-        locked ? `"${w.next.title}" is part of full access (${monthly.name}: NLe ${monthly.priceNle} for ${monthly.length}).` : null,
         'Small, steady sessions add up before the exam.',
       ].filter(Boolean),
       cta: { label: w.next && !locked ? 'Start the next lesson' : `Continue ${focus}`, link: 'cta' },
@@ -209,11 +211,11 @@ export const TEMPLATES = {
     return {
       category: 'service',
       subject: `Your ${pl.name} access is active`,
-      preheader: `Everything is unlocked until ${day(p.until)}.`,
+      preheader: `The AI study tutor and mock exams are yours until ${day(p.until)}.`,
       headline: `You have full access until ${day(p.until)}`,
       paragraphs: [hello(p), `Thank you for your payment of NLe ${n(p.amount)}. Your ${pl.name} access is active until ${day(p.until)}.`],
       lists: [
-        { title: 'Now unlocked', items: unlocked(ctx.stats) },
+        { title: 'Now added to your account', items: unlocked() },
         {
           title: 'Getting the most from it',
           items: [
@@ -237,8 +239,8 @@ export const TEMPLATES = {
       headline: `Your access ends on ${day(p.until)}`,
       paragraphs: [
         hello(p),
-        `Your ${pl.name} access to WASSCE Tutor ends on ${day(p.until)}. After that you keep the free lessons and starter practice sets, and your progress stays saved.`,
-        'To keep every lesson, practice set and the study tutor open, renew before then.',
+        `Your ${pl.name} access to WASSCE Tutor ends on ${day(p.until)}. After that every lesson and practice set stays free, and your progress stays saved.`,
+        'To keep the study tutor and the mock exams, renew before then.',
       ],
       after: ['Plans are paid once and never renew automatically, so nothing is charged unless you choose to renew.'],
       cta: { label: 'Renew access', link: 'cta' },

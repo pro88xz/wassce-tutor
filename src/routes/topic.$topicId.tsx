@@ -1,11 +1,9 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
 import { useQuery } from '@tanstack/react-query'
-import { ArrowRight, ChevronRight, CircleCheck, Clock, Lock, RotateCcw } from 'lucide-react'
+import { ArrowRight, ChevronRight, CircleCheck, Clock, RotateCcw } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
-import { FreePlanBanner } from '@/components/FreePlanBanner'
 import { useAccess } from '@/lib/useAccess'
-import { lessonLocked, paperLocked } from '@/lib/access'
-import { FROM_PRICE } from '@/lib/plans'
+import { paperLocked } from '@/lib/access'
 import { useAuth } from '@/lib/auth'
 import { usePapers, useSubject, useTopic } from '@/lib/queries'
 import { useCompletedLessons, useScoredAttempts } from '@/lib/progress'
@@ -61,8 +59,6 @@ function TopicPage() {
   const practice = papers ? setForTopic(papers, { name: topic.name, subject_id: topic.subject_id }) : undefined
   const best = bestByPaper(attempts ?? [])
   const last = practice ? latestByPaper(attempts ?? []).get(practice.id) : undefined
-  const isLocked = (l: { is_free?: boolean }) => lessonLocked(access, l)
-  const anyLocked = lessons.some(isLocked)
   const outlineOf = (l: { slug: string }) => outlines?.[outlineKey(topic.slug, l.slug)]
   const covered = describeTotals(totals(lessons.map(outlineOf)))
 
@@ -105,13 +101,7 @@ function TopicPage() {
               </p>
             </div>
           )}
-          {cta && isLocked(cta) ? (
-            <Button asChild size="lg" className="w-full sm:w-auto">
-              <Link to="/subscribe" search={{ plan: 'year' }}>
-                <Lock className="h-4 w-4" aria-hidden /> Unlock this topic · from {FROM_PRICE} NLe
-              </Link>
-            </Button>
-          ) : cta && (
+          {cta && (
             <Button asChild variant={allDone ? 'outline' : 'default'} size="lg" className="w-full sm:w-auto">
               <Link to="/lesson/$lessonId" params={{ lessonId: cta.id }}>
                 {allDone ? <><RotateCcw className="h-4 w-4" aria-hidden /> Review from lesson 1</> : <>{doneCount === 0 ? 'Start lesson 1' : 'Continue'} <ArrowRight className="h-4 w-4" aria-hidden /></>}
@@ -119,8 +109,6 @@ function TopicPage() {
             </Button>
           )}
         </header>
-
-        {anyLocked && <FreePlanBanner what="The first lesson of every topic is free." />}
 
         <section className="space-y-3" aria-labelledby="lessons-title">
           <h2 id="lessons-title" className="text-lg font-bold tracking-tight">Lessons</h2>
@@ -130,8 +118,7 @@ function TopicPage() {
             <ol className="divide-y rounded-2xl border bg-card">
               {lessons.map((l, i) => {
                 const done = isDone(l.id)
-                const locked = isLocked(l)
-                const upNext = !allDone && next?.id === l.id && !locked
+                const upNext = !allDone && next?.id === l.id
                 const outline = outlineOf(l)
                 return (
                   <li key={l.id}>
@@ -143,10 +130,6 @@ function TopicPage() {
                     >
                       {done ? (
                         <CircleCheck className="h-7 w-7 shrink-0 text-success" aria-hidden />
-                      ) : locked ? (
-                        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-muted text-muted-foreground" aria-hidden>
-                          <Lock className="h-3.5 w-3.5" />
-                        </span>
                       ) : (
                         <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-sm font-bold ${upNext ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground'}`} aria-hidden>
                           {i + 1}
@@ -157,10 +140,8 @@ function TopicPage() {
                         <span className="block text-xs text-muted-foreground">
                           {done ? (
                             <span className="font-semibold text-success">Completed</span>
-                          ) : locked ? (
-                            'Included in a plan'
                           ) : upNext ? (
-                            <span className="font-semibold text-primary">Up next{!access.hasAccess && l.is_free ? ' · Free' : ''}</span>
+                            <span className="font-semibold text-primary">Up next</span>
                           ) : (
                             'Not started'
                           )}
@@ -173,7 +154,7 @@ function TopicPage() {
                       <LessonOutlineList
                         outline={outline}
                         className="-mt-1 pb-4 pl-14 pr-4"
-                        link={locked ? undefined : (n, body) => (
+                        link={(n, body) => (
                           <Link to="/lesson/$lessonId" params={{ lessonId: l.id }} hash={sectionId(n)} className={outlineLinkClass}>
                             {body}
                           </Link>
@@ -204,7 +185,7 @@ function TopicPage() {
                 paper={practice}
                 best={best.get(practice.id)}
                 accent={palette.bar}
-                access={access.hasAccess ? undefined : paperLocked(access, practice) ? 'locked' : 'free'}
+                locked={paperLocked(access, practice)}
               />
             </ul>
           </section>

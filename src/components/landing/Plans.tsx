@@ -27,7 +27,7 @@ export function Plans() {
       name: 'Free account',
       price: 0,
       cadence: 'No time limit',
-      blurb: 'Try every subject before you pay.',
+      blurb: 'Every lesson and practice set, free for good.',
       note: undefined as string | undefined,
       features: FREE_FEATURES,
       cta: 'Create a free account',
@@ -40,7 +40,7 @@ export function Plans() {
       cadence: `for ${p.length}`,
       blurb: p.blurb,
       note: p.savings,
-      features: PAID_FEATURES,
+      features: ['Everything in the free account', ...PAID_FEATURES],
       cta: `Get ${p.name.toLowerCase()} access`,
       best: !!p.best,
     })),
@@ -51,8 +51,8 @@ export function Plans() {
       <SectionHeading
         id="plans-heading"
         eyebrow="Plans"
-        title="Start free. Unlock everything for one small payment."
-        lede={`A free account opens the first lesson of every topic. A plan opens every lesson and every practice set, from ${FROM_PRICE} NLe.`}
+        title="Every lesson is free. Add the study tutor when you want it."
+        lede={`Every lesson and practice set is free, with the full working. A plan adds the AI study tutor and timed mock exams, from ${FROM_PRICE} NLe.`}
       />
 
       <div className="mt-10 grid gap-5 md:grid-cols-3 lg:mt-12">

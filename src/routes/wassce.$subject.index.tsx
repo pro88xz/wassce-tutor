@@ -126,7 +126,7 @@ function SubjectHubPage() {
               </>
             )
           }
-          note={hasLessons && !user ? 'The first lesson of every topic is free. No card needed.' : undefined}
+          note={hasLessons && !user ? 'Every lesson is free to read. No account or card needed.' : undefined}
           media={
             <SubjectCover
               slug={subject.slug}
@@ -230,8 +230,8 @@ function SubjectHubPage() {
         heading={`Study WASSCE ${subject.name} with WASSCE Tutor`}
         body={
           hasLessons
-            ? `Get all ${lessonCount} ${subject.name} lessons${practice > 0 ? ', exam-style practice marked instantly' : ''} and guided learning tools that help you prepare with confidence.`
-            : `Lessons for ${subject.name} are being written. A free account opens the first lesson of every topic in the subjects that already have them.`
+            ? `All ${lessonCount} ${subject.name} lessons are free${practice > 0 ? ', and so is exam-style practice marked instantly, with the working' : ''}. A free account saves your progress.`
+            : `Lessons for ${subject.name} are being written. Every lesson is free in the subjects that already have them.`
         }
         appHref={`/subject/${subject.id}`}
       />

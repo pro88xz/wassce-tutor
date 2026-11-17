@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
-import { ArrowLeft, ArrowRight, Lock } from 'lucide-react'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { CourseHero, type HeroStat } from '@/components/public/CourseHero'
 import { HERO_BTN, studyTime } from '@/lib/study-time'
@@ -31,7 +31,7 @@ function describe({ subject, topic }: TopicPageData): string {
   return fitDescription([
     topic.description ? topic.description.replace(/\.?$/, '.') : `${topic.name} for WASSCE ${subject.name}.`,
     // The title already names the subject, so this line stays short enough to fit.
-    `${n} lesson${n === 1 ? '' : 's'}${minutes > 0 ? `, about ${minutes} min` : ''}${topic.lessons[0]?.is_public ? ', the first free' : ''}.`,
+    `${n} lesson${n === 1 ? '' : 's'}${minutes > 0 ? `, about ${minutes} min` : ''}${n > 0 ? ', all free' : ''}.`,
     'For Sierra Leone students.',
   ])
 }
@@ -75,8 +75,7 @@ function TopicPage() {
   const { palette } = subjectTheme(subject.slug)
   const minutes = lessonMinutes(topic.lessons)
   const count = topic.lessons.length
-  const freeLesson = topic.lessons.find((l) => l.is_public)
-  const freeCount = topic.lessons.filter((l) => l.is_public).length
+  const firstLesson = topic.lessons.find((l) => l.is_public)
   const covered = describeTotals(totals(topic.lessons.map((l) => outlines[l.slug])))
 
   // Other topics in the section that can be opened: the ones after this topic first, then back round.
@@ -89,7 +88,7 @@ function TopicPage() {
   const stats: HeroStat[] = [
     { value: String(count), label: count === 1 ? 'lesson' : 'lessons' },
     ...(minutes > 0 ? [{ value: studyTime(minutes), label: 'of study' }] : []),
-    ...(freeCount > 0 ? [{ value: String(freeCount), label: 'free to read' }] : []),
+    ...(count > 0 ? [{ value: 'Free', label: 'every lesson' }] : []),
   ]
 
   return (
@@ -103,15 +102,15 @@ function TopicPage() {
           stats={stats}
           actions={
             <>
-              {freeLesson && (
-                <a href={lessonPath(subject.slug, topic.slug, freeLesson.slug)} className={`site-btn site-btn-primary ${HERO_BTN}`}>
-                  Read the first lesson free <ArrowRight className="h-4 w-4" aria-hidden />
+              {firstLesson && (
+                <a href={lessonPath(subject.slug, topic.slug, firstLesson.slug)} className={`site-btn site-btn-primary ${HERO_BTN}`}>
+                  Start the first lesson <ArrowRight className="h-4 w-4" aria-hidden />
                 </a>
               )}
               {user ? (
-                <a href={`/topic/${topic.id}`} className={`site-btn ${HERO_BTN} ${freeLesson ? 'site-btn-secondary' : 'site-btn-primary'}`}>Open in WASSCE Tutor</a>
+                <a href={`/topic/${topic.id}`} className={`site-btn ${HERO_BTN} ${firstLesson ? 'site-btn-secondary' : 'site-btn-primary'}`}>Open in WASSCE Tutor</a>
               ) : (
-                <Link to="/auth" className={`site-btn ${HERO_BTN} ${freeLesson ? 'site-btn-secondary' : 'site-btn-primary'}`}>Start free</Link>
+                <Link to="/auth" className={`site-btn ${HERO_BTN} ${firstLesson ? 'site-btn-secondary' : 'site-btn-primary'}`}>Save your progress</Link>
               )}
             </>
           }
@@ -140,7 +139,7 @@ function TopicPage() {
             {minutes > 0 ? ` · ${studyTime(minutes)}` : ''}
           </p>
         </div>
-        {/* One list, as a course outline: the free lesson opens here, the rest come with a plan. */}
+        {/* One list, as a course outline: every lesson opens its own public page. */}
         <ol className="site-card divide-y overflow-hidden">
           {topic.lessons.map((lesson, i) => {
             const href = lesson.is_public ? lessonPath(subject.slug, topic.slug, lesson.slug) : user ? `/lesson/${lesson.id}` : null
@@ -148,15 +147,7 @@ function TopicPage() {
             const meta = (
               <>
                 {lesson.est_minutes ? <span className="tabular-nums">{lesson.est_minutes} min</span> : null}
-                {lesson.is_public ? (
-                  <span className="rounded-full bg-success/10 px-2 py-0.5 font-bold text-success">Free</span>
-                ) : (
-                  !user && (
-                    <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 font-semibold">
-                      <Lock className="h-3 w-3" aria-hidden /> Plan
-                    </span>
-                  )
-                )}
+
               </>
             )
             const body = (
@@ -199,10 +190,8 @@ function TopicPage() {
         heading={`Learn ${topic.name.toLowerCase()} step by step`}
         body={
           count === 0
-            ? `Lessons for ${topic.name.toLowerCase()} are being written. Meanwhile, unlock every published WASSCE ${subject.name} lesson${hasPractice(subject.slug) ? ', exam-style practice with the working behind every answer' : ''} and guided learning tools.`
-            : count > 0 && freeCount >= count
-            ? `${count === 1 ? 'The lesson in this topic is' : 'Every lesson in this topic is'} free to read. Unlock every other WASSCE ${subject.name} topic${hasPractice(subject.slug) ? ', exam-style practice with the working behind every answer' : ''} and guided learning tools.`
-            : `Unlock ${count === 2 ? 'both lessons' : `all ${count} lessons`} on ${topic.name.toLowerCase()}, plus every other WASSCE ${subject.name} topic${hasPractice(subject.slug) ? ', exam-style practice with the working behind every answer' : ''} and guided learning tools.`
+            ? `Lessons for ${topic.name.toLowerCase()} are being written. Meanwhile, every published WASSCE ${subject.name} lesson is free${hasPractice(subject.slug) ? ', and so is exam-style practice with the working behind every answer' : ''}.`
+            : `${count === 1 ? 'The lesson in this topic is' : `All ${count} lessons in this topic are`} free${hasPractice(subject.slug) ? ', and so is exam-style practice with the working behind every answer' : ''}. A free account saves your progress as you go.`
         }
         appHref={`/topic/${topic.id}`}
       />

@@ -324,7 +324,7 @@ function SubscriptionSection({ profile, userId }: { profile: Profile; userId: st
         tone: 'bg-info/10 text-info',
         line: (
           <>
-            {days(access.trialDaysLeft)} left{ends && <>, ending <strong className="font-semibold text-foreground">{formatDate(ends)}</strong></>}. After that your free account keeps the first lesson of every topic and {FREE_PRACTICE_INLINE}. Your progress is kept.
+            {days(access.trialDaysLeft)} left{ends && <>, ending <strong className="font-semibold text-foreground">{formatDate(ends)}</strong></>}. After that every lesson and practice set stays free. Your progress is kept.
           </>
         ),
       }
@@ -333,7 +333,7 @@ function SubscriptionSection({ profile, userId }: { profile: Profile; userId: st
       status = {
         pill: profile.subscription_expires_at ? 'Plan ended' : 'Free account',
         tone: 'bg-muted text-muted-foreground',
-        line: `The first lesson of every topic is open, and so is ${FREE_PRACTICE_INLINE}. A plan opens everything, from ${FROM_PRICE} NLe.`,
+        line: `Every lesson and ${FREE_PRACTICE_INLINE} are open. A plan adds the AI study tutor and timed mock exams, from ${FROM_PRICE} NLe.`,
       }
   }
 

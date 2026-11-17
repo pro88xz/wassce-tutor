@@ -56,7 +56,7 @@ function SignedOut({ returning }: { returning: boolean }) {
     <div className="mx-auto max-w-md space-y-6 pt-6">
       <header className="space-y-2 text-center">
         <h1 className="text-3xl font-bold tracking-tight">Plans</h1>
-        <p className="text-muted-foreground">Create a free account first. You can unlock everything whenever you are ready.</p>
+        <p className="text-muted-foreground">Create a free account first. Every lesson and practice set is free; add a plan whenever you want the study tutor and mock exams.</p>
       </header>
       <PlanCards selected="year" onSelect={() => {}} interactive={false} />
       <SignInLink className="flex min-h-12 w-full items-center justify-center rounded-xl bg-primary px-5 py-2 text-base font-semibold text-primary-foreground hover:bg-brand-strong">
@@ -224,12 +224,12 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
     <div className="app-page checkout-page mx-auto w-full space-y-6 pb-8">
       <div className="grid gap-5 lg:grid-cols-[minmax(0,.95fr)_minmax(0,1.05fr)] lg:items-start lg:gap-8">
         <ValuePanel
-          title={active ? 'Add more time' : 'Unlock everything'}
+          title={active ? 'Add more time' : 'Add the study tutor and mock exams'}
           intro={
             active ? (
               <>Your {planById(profile?.subscription_plan)?.name ?? 'plan'} runs until <strong className="text-white">{formatDate(profile!.subscription_expires_at!)}</strong>. A new plan adds its time on top.</>
             ) : (
-              'Every lesson, every practice set and study tutor support, in every subject.'
+              'Every lesson and practice set is already free. A plan adds help when you are stuck, and the exam under exam conditions.'
             )
           }
         />
@@ -300,7 +300,7 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
           )}
 
           <div className="space-y-2 rounded-2xl bg-muted/50 p-4 text-sm text-muted-foreground">
-            <p className="flex gap-2"><Clock className="mt-0.5 h-4 w-4 shrink-0" aria-hidden /> No automatic renewal. When your plan ends you go back to the free account, and your progress is kept.</p>
+            <p className="flex gap-2"><Clock className="mt-0.5 h-4 w-4 shrink-0" aria-hidden /> No automatic renewal. When your plan ends you go back to the free account: every lesson and practice set stays open, and your progress is kept.</p>
             <p>
               Trouble paying? <a href={whatsappChatLink('Hello WASSCE Tutor, I need help paying for a plan.')} target="_blank" rel="noopener" className="font-semibold text-primary hover:underline">WhatsApp {CONTACT.phoneDisplay}</a>
             </p>
@@ -308,7 +308,7 @@ function Plans({ userId, email, search }: { userId: string; email: string; searc
 
           {!access.hasAccess && (
             <div className="space-y-2 border-t pt-5">
-              <p className="text-sm font-semibold">Not ready yet? Your free account keeps</p>
+              <p className="text-sm font-semibold">Free on every account, with or without a plan</p>
               <ul className="space-y-1.5 text-sm text-muted-foreground">
                 {FREE_FEATURES.map((f) => (
                   <li key={f} className="flex gap-2"><Check className="mt-0.5 h-4 w-4 shrink-0 text-success" aria-hidden /> {f}</li>
@@ -339,7 +339,7 @@ function useLessonCount() {
   return data ?? null
 }
 
-/** What a plan opens: the headline, the features and the size of the library. */
+/** What a plan adds, and the free library it sits on top of. */
 function ValuePanel({ title, intro }: { title: string; intro: React.ReactNode }) {
   const lessons = useLessonCount()
   return (
@@ -359,7 +359,8 @@ function ValuePanel({ title, intro }: { title: string; intro: React.ReactNode })
         ))}
       </ul>
 
-      <dl className="mt-6 hidden grid-cols-2 gap-3 sm:grid">
+      <p className="mt-6 hidden text-xs font-bold uppercase tracking-[.14em] text-violet-200 sm:block">Free for everyone</p>
+      <dl className="mt-2 hidden grid-cols-2 gap-3 sm:grid">
         <div className="rounded-2xl bg-white/[0.07] p-4 ring-1 ring-white/10">
           <dt className="text-xs font-medium text-white/65">Lessons</dt>
           <dd className="mt-0.5 text-2xl font-extrabold tabular-nums">{lessons ? lessons.toLocaleString('en') : 'Every one'}</dd>

@@ -32,7 +32,7 @@ export function CourseRows({ rows }: { rows: CourseRow[] }) {
         id="courses-heading"
         eyebrow="Courses"
         title="Every topic is a short course."
-        lede="Lessons in syllabus order, worked examples and practice. The first lesson of every topic is free."
+        lede="Lessons in syllabus order, worked examples and practice questions with the full working. Every lesson is free."
         action={
           <a href="/wassce/subjects" className="site-link">
             All subjects <ArrowRight className="h-4 w-4" aria-hidden />
@@ -164,7 +164,7 @@ function CourseCardView({ subjectSlug, subjectName, course: c, index }: { subjec
         </span>
         {c.freeLessons > 0 && (
           <span className="mt-2.5 inline-flex w-fit items-center gap-1 rounded bg-[#eceb98] px-2 py-0.5 text-[12px] font-bold text-[#3d3c0a]">
-            <Gift className="h-3.5 w-3.5" aria-hidden /> Free lesson
+            <Gift className="h-3.5 w-3.5" aria-hidden /> Free
           </span>
         )}
       </span>
@@ -187,7 +187,7 @@ function CourseCardView({ subjectSlug, subjectName, course: c, index }: { subjec
           ))}
         </span>
         <span className="mt-auto inline-flex min-h-11 w-full items-center justify-center gap-1.5 rounded-xl bg-[var(--primary)] text-sm font-bold text-white">
-          {c.freeLessons > 0 ? 'Start the free lesson' : 'Open the topic'} <ArrowRight className="h-4 w-4" />
+          {c.freeLessons > 0 ? 'Start the first lesson' : 'Open the topic'} <ArrowRight className="h-4 w-4" />
         </span>
       </span>
     </a>

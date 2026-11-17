@@ -7,10 +7,10 @@ import { Pill, ScorePill } from '@/components/ds/Primitives'
 
 /**
  * One practice set or paper in a list: name, kind and size, then best score
- * or "Not started". On a free account, `access` marks the starter set "Free"
- * and the rest with a lock (they open the plans screen).
+ * or "Not started". `locked` (a mock exam without a plan) shows a lock; the
+ * paper screen then offers the plans.
  */
-export function PracticeSetRow({ paper, best, accent, access }: { paper: PaperRow; best?: ScoredAttempt; accent: string; access?: 'free' | 'locked' }) {
+export function PracticeSetRow({ paper, best, accent, locked = false }: { paper: PaperRow; best?: ScoredAttempt; accent: string; locked?: boolean }) {
   return (
     <li>
       <Link to="/paper/$paperId" params={{ paperId: paper.id }} className="flex min-h-16 items-center gap-3 px-4 py-3 transition-colors hover:bg-muted/50">
@@ -21,7 +21,7 @@ export function PracticeSetRow({ paper, best, accent, access }: { paper: PaperRo
             {paperKind(paper)} · {paper.question_count} questions
           </span>
         </span>
-        {access === 'locked' ? (
+        {locked ? (
           <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-muted text-muted-foreground" title="Opens with a plan">
             <Lock className="h-3.5 w-3.5" aria-hidden />
             <span className="sr-only">Opens with a plan</span>
@@ -31,8 +31,6 @@ export function PracticeSetRow({ paper, best, accent, access }: { paper: PaperRo
             <ScorePill score={best.score} total={best.total} />
             <span className="text-[11px] text-muted-foreground">Best</span>
           </span>
-        ) : access === 'free' ? (
-          <Pill className="bg-success/10 text-success">Free</Pill>
         ) : (
           <Pill>Not started</Pill>
         )}

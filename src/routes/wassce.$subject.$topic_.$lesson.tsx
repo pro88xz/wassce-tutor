@@ -1,4 +1,5 @@
 import { createFileRoute, notFound } from '@tanstack/react-router'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { StartCta } from '@/components/public/StartCta'
 import { FROM_PRICE } from '@/lib/plans'
@@ -77,6 +78,10 @@ function PublicLessonPage() {
   const data = Route.useLoaderData()
   const { subject, topic, lesson } = data
   const others = topic.lessons.filter((l) => l.id !== lesson.id)
+  // The lessons either side, in syllabus order: every lesson has a public page (migration 22).
+  const at = topic.lessons.findIndex((l) => l.id === lesson.id)
+  const previous = at > 0 ? topic.lessons[at - 1] : null
+  const next = at >= 0 ? topic.lessons[at + 1] ?? null : null
   const { palette } = subjectTheme(subject.slug)
 
   return (
@@ -120,11 +125,30 @@ function PublicLessonPage() {
         <LessonView content={lesson.content} />
       </div>
 
+      {(previous || next) && (
+        <nav aria-label="Lessons in this topic" className="grid gap-3 sm:grid-cols-2">
+          {previous ? (
+            <a href={lessonPath(subject.slug, topic.slug, previous.slug)} rel="prev" className="group rounded-xl border p-4 transition-colors hover:border-primary/50 hover:bg-muted/40">
+              <span className="flex items-center gap-1 text-xs font-semibold text-muted-foreground"><ArrowLeft className="h-3.5 w-3.5" aria-hidden /> Previous lesson</span>
+              <span className="mt-1 block font-semibold leading-snug group-hover:text-primary">{previous.title}</span>
+            </a>
+          ) : (
+            <span className="hidden sm:block" />
+          )}
+          {next && (
+            <a href={lessonPath(subject.slug, topic.slug, next.slug)} rel="next" className="group rounded-xl border p-4 text-right transition-colors hover:border-primary/50 hover:bg-muted/40">
+              <span className="flex items-center justify-end gap-1 text-xs font-semibold text-muted-foreground">Next lesson <ArrowRight className="h-3.5 w-3.5" aria-hidden /></span>
+              <span className="mt-1 block font-semibold leading-snug group-hover:text-primary">{next.title}</span>
+            </a>
+          )}
+        </nav>
+      )}
+
       <WaecPastPapers subjectSlug={subject.slug} subjectName={subject.name} />
 
       <StartCta
         heading={`Keep going with ${topic.name.toLowerCase()}`}
-        body={`${topic.lessons.length === 1 ? `This is the lesson for ${topic.name}, free to read.` : `This is one of ${topic.lessons.length} lessons in ${topic.name}.`} Start free with the first lesson of every topic, then unlock every lesson in every subject${hasPractice(subject.slug) ? ', plus exam-style practice with the working behind every answer' : ''} and guided learning tools, from ${FROM_PRICE} NLe.`}
+        body={`${topic.lessons.length === 1 ? `This is the lesson for ${topic.name}.` : `This is one of ${topic.lessons.length} lessons in ${topic.name}, all free.`} Every lesson in every subject is free${hasPractice(subject.slug) ? ', and so is exam-style practice with the working behind every answer' : ''}. A free account saves your progress; a plan adds the AI study tutor and timed mock exams, from ${FROM_PRICE} NLe.`}
         appHref={`/lesson/${lesson.id}`}
       />
 
@@ -139,7 +163,7 @@ function PublicLessonPage() {
                 ) : (
                   <span className="font-medium">{l.title}</span>
                 )}
-                <span className="shrink-0 text-xs text-muted-foreground">{l.is_public ? 'Free' : '🔒'}</span>
+                {l.est_minutes ? <span className="shrink-0 text-xs text-muted-foreground">{l.est_minutes} min</span> : null}
               </li>
             ))}
           </ol>

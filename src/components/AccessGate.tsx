@@ -3,18 +3,16 @@ import { Link } from '@tanstack/react-router'
 import { ArrowRight, Check, Lock } from 'lucide-react'
 import { useAccess } from '@/lib/useAccess'
 import { PLANS } from '@/lib/plans'
-import { FREE_FEATURES, FREE_PRACTICE_INLINE } from '@/lib/free-plan'
+import { FREE_FEATURES } from '@/lib/free-plan'
 
-type Kind = 'lesson' | 'practice' | 'tutor'
+// Lessons and practice sets are free (migration 22): a plan is only needed
+// for the timed mock exams and the AI study tutor.
+type Kind = 'mock' | 'tutor'
 
 const COPY: Record<Kind, { title: (name?: string) => string; body: string }> = {
-  lesson: {
-    title: (name) => (name ? `Unlock “${name}”` : 'Unlock this lesson'),
-    body: 'Your free account opens the first lesson of every topic. A plan opens every lesson in every subject.',
-  },
-  practice: {
-    title: (name) => (name ? `Unlock “${name}”` : 'Unlock this practice set'),
-    body: `Your free account includes ${FREE_PRACTICE_INLINE}. A plan opens every set, with the full working.`,
+  mock: {
+    title: () => 'Timed mock exams come with a plan',
+    body: 'Sit a full WASSCE Paper 1 against the clock, then see your score and the topics to revise. Every question in it is also in the free practice sets.',
   },
   tutor: {
     title: () => 'The AI tutor comes with a plan',

@@ -27,7 +27,7 @@ export function StartCta({
           <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-brand-strong sm:text-base">{body}</p>
           {!user && (
             <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-1.5 text-sm font-medium text-brand-strong">
-              {['Free account, no card needed', `Everything from ${FROM_PRICE} NLe`, 'No automatic renewal'].map((t) => (
+              {['Every lesson free', 'Progress saved on a free account', `Study tutor and mock exams from ${FROM_PRICE} NLe`].map((t) => (
                 <li key={t} className="inline-flex items-center gap-1.5">
                   <CircleCheck className="h-4 w-4 shrink-0" aria-hidden /> {t}
                 </li>

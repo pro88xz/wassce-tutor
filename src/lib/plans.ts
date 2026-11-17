@@ -26,7 +26,7 @@ export const PLANS: Plan[] = [
     months: 1,
     length: '1 month',
     billing: 'Billed monthly',
-    blurb: 'Full access for one month. Pay once; no automatic renewal.',
+    blurb: 'The study tutor and mock exams for one month. Pay once; no automatic renewal.',
   },
   {
     id: 'year',
@@ -52,10 +52,11 @@ export const FROM_PRICE = Math.min(...PLANS.map((p) => p.priceNle))
 // What the free account includes is in src/lib/free-plan.ts: it is written from
 // the question bank, which this file cannot import (vite.config.ts loads it in Node).
 
-/** What a plan adds. */
+/**
+ * What a plan adds. Lessons and practice sets are free for everyone
+ * (migration 22). Keep in step with api/_lib/plans.js.
+ */
 export const PAID_FEATURES = [
-  'Every lesson in every subject',
-  'Every practice set, with the full working',
-  'Study tutor support, 20 questions a day',
-  'Your progress, saved',
+  'The AI study tutor: ask any WASSCE question, up to 20 a day',
+  'Timed WASSCE mock exams, with your score and the topics to revise',
 ]

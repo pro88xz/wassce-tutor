@@ -205,9 +205,13 @@ for (const key of Object.keys(TEMPLATES)) {
 
 test('templates use live counts and real prices', () => {
   const c = TEMPLATES.pending_payment_1(SAMPLES.pending_payment_1, { stats: STATS })
-  assert.ok(c.lists[0].items[0].includes('673 lessons across 18 subjects'))
-  assert.ok(c.lists[0].items[1].includes('1,568 questions'))
+  assert.ok(c.lists[0].items[0].includes('AI study tutor'), 'a plan adds the study tutor')
+  assert.ok(c.lists[0].items.some((i) => i.includes('mock exams')), 'and the mock exams')
+  assert.ok(!c.lists[0].items.some((i) => /every lesson/i.test(i)), 'lessons are free, not sold')
   assert.ok(c.after[0].includes('NLe 25 for 1 month'))
+  const both = TEMPLATES.pending_payment_2(SAMPLES.pending_payment_2, { stats: STATS })
+  assert.ok(both.lists[0].items[0].includes('673 lessons across 18 subjects'), 'free list has the live lesson count')
+  assert.ok(both.lists[0].items[1].includes('1,568 questions'), 'and the live question count')
   assert.equal(TEMPLATES.pending_payment_1({ ...SAMPLES.pending_payment_1, plan: 'year' }, { stats: STATS }).subject, 'Your Yearly access is one step away')
 })
 
@@ -466,13 +470,13 @@ test('weekly email: nobody gets one with nothing real to report, or when the dat
   assert.deepEqual((await addWeekData(broken, [digestCandidate(), other], { skipped: {} })).map((c) => c.programme), ['reengage'], 'other emails still go out')
 })
 
-test('weekly email copy: only what happened, plurals right, price from the plan list', () => {
+test('weekly email copy: only what happened, plurals right, no plan pitch for lessons', () => {
   const content = TEMPLATES.weekly_digest(SAMPLES.weekly_digest, { stats: STATS })
   assert.equal(content.subject, 'Your WASSCE week: 5 lessons and 2 practice sets')
   assert.ok(content.lists[0].items.includes('Practice sets: 2 (average score 68%)'))
   assert.ok(content.lists[1].items.includes('12 of 40 lessons done (30%)'))
   assert.ok(content.lists[1].items.includes('4 new lessons added this week'))
-  assert.ok(content.after[0].includes('part of full access (Monthly: NLe 25 for 1 month)'))
+  assert.ok(!content.after.some((t) => t.includes('full access')), 'lessons are free: no plan line')
   assert.equal(content.cta.label, 'Continue Biology')
   const one = TEMPLATES.weekly_digest({ ...SAMPLES.weekly_digest, access: { plan: 'term' }, week: { ...SAMPLES.weekly_digest.week, lessons: 1, practice: 0, score: null, subjects: ['Biology'], newLessons: 0 } }, {})
   assert.equal(one.subject, 'Your WASSCE week: 1 lesson')

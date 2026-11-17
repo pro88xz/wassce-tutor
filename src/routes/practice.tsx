@@ -12,7 +12,7 @@ import { FROM_PRICE } from '@/lib/plans'
 import { PRACTICE_TOTAL } from '@/lib/practice-counts'
 import { formatMinutes, mockMinutes } from '@/lib/mock-exams'
 import { useAccess } from '@/lib/useAccess'
-import { paperLocked } from '@/lib/access'
+import { isMockPaper, paperLocked } from '@/lib/access'
 import { EmptyState, PageHeader, ScorePill, SectionHeader, Skeleton } from '@/components/ds/Primitives'
 import { Button } from '@/components/ui/button'
 import type { Subject } from '@/lib/types'
@@ -94,23 +94,10 @@ function Browser({ subjects, of, best, attempts }: { subjects: Subject[]; of: (i
   const mock = of(active.id).find(isMock)
   const papers = of(active.id).filter((p) => !isMock(p))
 
-  // Up next: the first open topic set not yet taken in this subject (never
-  // the mock: a 50-question exam is not a first step). On a free account
-  // whose free set here is done, another subject's free set first.
-  const openIn = (id: string) => of(id).filter((p) => !isMock(p) && (access.hasAccess || !paperLocked(access, p)))
-  const open = openIn(active.id)
-  let next = open.find((p) => !best.has(p.id))
-  let nextSubject = active
-  if (!next && !access.hasAccess) {
-    for (const s of subjects) {
-      const free = openIn(s.id).find((p) => !best.has(p.id))
-      if (free) {
-        next = free
-        nextSubject = s
-        break
-      }
-    }
-  }
+  // Up next: the first topic set not yet taken in this subject (never the
+  // mock: a 50-question exam is not a first step). Every set is free.
+  const next = papers.find((p) => !best.has(p.id))
+  const nextSubject = active
   const theme = subjectTheme(active.slug)
 
   // Keep the chosen tab in view in the sideways rail on phones (without
@@ -134,29 +121,15 @@ function Browser({ subjects, of, best, attempts }: { subjects: Subject[]; of: (i
             {next ? (
               <>
                 <p className="text-xs font-bold uppercase tracking-[.14em] text-violet-200">
-                  {access.hasAccess ? (best.size === 0 ? 'Start here' : 'Up next') : 'Your free set'} · {nextSubject.name}
+                  {best.size === 0 ? 'Start here' : 'Up next'} · {nextSubject.name}
                 </p>
                 <h2 id="up-next-title" className="mt-1.5 text-2xl font-bold leading-tight tracking-tight">{setName(next.title)}</h2>
-                <p className="mt-1 text-sm text-white/70">{next.question_count} questions · marked as you go, with the working</p>
+                <p className="mt-1 text-sm text-white/70">{next.question_count} questions · free · marked as you go, with the working</p>
                 <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">
                   <Button asChild size="lg" className="w-full bg-white text-[#1b1240] hover:bg-white/90 sm:w-auto">
                     <Link to="/paper/$paperId" params={{ paperId: next.id }}>Start set <ArrowRight className="h-4 w-4" aria-hidden /></Link>
                   </Button>
-                  {!access.hasAccess && (
-                    <Link to="/subscribe" search={{ plan: 'year' }} className="text-center text-sm font-semibold text-[#ffd166] hover:underline sm:text-left">
-                      Or unlock every set · from {FROM_PRICE} NLe
-                    </Link>
-                  )}
                 </div>
-              </>
-            ) : !access.hasAccess ? (
-              <>
-                <p className="text-xs font-bold uppercase tracking-[.14em] text-violet-200">{active.name}</p>
-                <h2 id="up-next-title" className="mt-1.5 text-2xl font-bold leading-tight tracking-tight">You have done every free set. {papers.length - open.length} more {active.name} sets are waiting.</h2>
-                <p className="mt-1 text-sm text-white/70">A plan opens every practice set, in every subject.</p>
-                <Button asChild size="lg" className="mt-5 w-full bg-[#ffd166] text-[#1b1240] hover:bg-[#ffd166]/90 sm:w-auto">
-                  <Link to="/subscribe" search={{ plan: 'year' }}><Lock className="h-4 w-4" aria-hidden /> Unlock every set · from {FROM_PRICE} NLe</Link>
-                </Button>
               </>
             ) : (
               <>
@@ -195,20 +168,14 @@ function Browser({ subjects, of, best, attempts }: { subjects: Subject[]; of: (i
       )}
 
       <div role="tabpanel" aria-label={active.name} className="space-y-6">
-        {mock && <MockCard paper={mock} subject={active.name} best={best.get(mock.id)} locked={!access.hasAccess && paperLocked(access, mock)} />}
+        {mock && <MockCard paper={mock} subject={active.name} best={best.get(mock.id)} locked={paperLocked(access, mock)} />}
         <SubjectSets key={active.id} subject={active} papers={papers} best={best} accent={theme.palette.bar} />
-        {!access.hasAccess && (
-          <Link to="/subscribe" search={{ plan: 'year' }} className="-mt-3 flex items-center justify-between gap-3 rounded-2xl border border-primary/20 bg-brand-soft/50 px-4 py-3 text-sm transition-colors hover:border-primary/40">
-            <span><span className="font-semibold">Free account:</span> <span className="text-muted-foreground">the first set in each subject is open. Unlock the rest from {FROM_PRICE} NLe.</span></span>
-            <ArrowRight className="h-4 w-4 shrink-0 text-primary" aria-hidden />
-          </Link>
-        )}
       </div>
     </>
   )
 }
 
-const isMock = (p: PaperRow) => p.paper_type?.toLowerCase() === 'mock'
+const isMock = isMockPaper
 
 /** A subject's timed WASSCE Paper 1: the length, the clock, and the best score so far. */
 function MockCard({ paper, subject, best, locked }: { paper: PaperRow; subject: string; best?: ScoredAttempt; locked: boolean }) {
@@ -275,12 +242,9 @@ function Recent({ attempts, subjects }: { attempts: ScoredAttempt[]; subjects: S
 }
 
 function SubjectSets({ subject, papers, best, accent }: { subject: Subject; papers: PaperRow[]; best: Map<string, ScoredAttempt>; accent: string }) {
-  const { access } = useAccess()
   const [all, setAll] = useState(false)
   const [q, setQ] = useState('')
-  // On a free account the open starter set comes first.
-  const ordered = access.hasAccess ? papers : [...papers].sort((a, b) => Number(!a.is_free) - Number(!b.is_free))
-  const filtered = q.trim() ? ordered.filter((p) => p.title.toLowerCase().includes(q.trim().toLowerCase())) : ordered
+  const filtered = q.trim() ? papers.filter((p) => p.title.toLowerCase().includes(q.trim().toLowerCase())) : papers
   const shown = all || q.trim() ? filtered : filtered.slice(0, PREVIEW)
   const taken = papers.filter((p) => best.has(p.id)).length
 
@@ -311,7 +275,7 @@ function SubjectSets({ subject, papers, best, accent }: { subject: Subject; pape
           )}
           <ul className="divide-y rounded-2xl border bg-card">
             {shown.map((p) => (
-              <PracticeSetRow key={p.id} paper={p} best={best.get(p.id)} accent={accent} access={access.hasAccess ? undefined : paperLocked(access, p) ? 'locked' : 'free'} />
+              <PracticeSetRow key={p.id} paper={p} best={best.get(p.id)} accent={accent} />
             ))}
             {shown.length === 0 && <li className="px-4 py-3 text-sm text-muted-foreground">No topic matches “{q}”.</li>}
           </ul>
