@@ -11,8 +11,7 @@ import { fetchTopicPage, hasTopicPage, lessonMinutes, lessonPath, subjectPath, t
 import type { TopicPageData } from '@/lib/public-content'
 import { breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { subjectTheme } from '@/lib/subject-theme'
-import { topicPhoto, topicPhotoSrcSet } from '@/lib/topic-photos'
-import { SubjectCover } from '@/components/ds/SubjectCover'
+import { TopicCover } from '@/components/public/TopicCover'
 import { LessonOutlineList, outlineLinkClass } from '@/components/LessonOutline'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { describeTotals, loadOutlines, outlineKey, sectionId, totals } from '@/lib/lesson-outlines'
@@ -71,7 +70,6 @@ function TopicPage() {
   const freeLesson = topic.lessons.find((l) => l.is_public)
   const freeCount = topic.lessons.filter((l) => l.is_public).length
   const covered = describeTotals(totals(topic.lessons.map((l) => outlines[l.slug])))
-  const photo = topicPhoto(subject.slug, topic.slug)
 
   // Other topics in the section that can be opened: the ones after this topic first, then back round.
   const at = group.topics.findIndex((t) => t.id === topic.id)
@@ -111,30 +109,14 @@ function TopicPage() {
           }
           note={covered.length > 0 ? `Across the topic: ${covered.join(' · ')}` : undefined}
           media={
-            photo ? (
-              <span className="relative block aspect-[5/2] w-full overflow-hidden rounded-2xl bg-muted shadow-[0_24px_48px_-28px_rgba(30,20,80,.45)] sm:aspect-[3/1] lg:aspect-[4/3]">
-                <img
-                  src={photo.src}
-                  srcSet={topicPhotoSrcSet(photo)}
-                  sizes="(min-width: 1024px) 480px, 100vw"
-                  alt={photo.caption}
-                  width={960}
-                  height={600}
-                  fetchPriority="high"
-                  decoding="async"
-                  className={`absolute inset-0 h-full w-full object-cover ${photo.position ?? ''}`}
-                />
-              </span>
-            ) : (
-              <SubjectCover
-                slug={subject.slug}
-                shape="wide"
-                priority
-                rounded="rounded-2xl"
-                sizes="(min-width: 1024px) 480px, 100vw"
-                className="aspect-[5/2] w-full shadow-[0_24px_48px_-28px_rgba(30,20,80,.45)] sm:aspect-[3/1] lg:aspect-[4/3]"
-              />
-            )
+            <TopicCover
+              subjectSlug={subject.slug}
+              subjectName={subject.name}
+              topicSlug={topic.slug}
+              topicName={topic.name}
+              variant="hero"
+              className="aspect-[5/2] w-full rounded-2xl shadow-[0_24px_48px_-28px_rgba(30,20,80,.45)] sm:aspect-[3/1] lg:aspect-[4/3]"
+            />
           }
         />
       </div>

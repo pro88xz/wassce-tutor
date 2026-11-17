@@ -1,0 +1,77 @@
+// A topic's cover, drawn rather than photographed: the subject's colour, a
+// faint dot grid, and a white line drawing of the topic's own idea
+// (TopicArt), or of the subject's when the topic has no drawing yet. Used by
+// the homepage course cards and the header of every topic page, so a topic
+// looks the same wherever it appears. Pure SVG: sharp at any size, nothing
+// to download.
+//
+//   card  the topic's name set on the cover, the drawing to the right
+//   hero  the drawing large and centred; the page's own heading names the topic
+import { subjectArt } from '@/components/ds/SubjectCover'
+import { topicArt } from '@/components/landing/TopicArt'
+
+/** Cover colours, cycled along a row so neighbouring cards never match. */
+const COVERS = [
+  ['#5b34d6', '#3a1d9e'],
+  ['#1f6fd1', '#173f8f'],
+  ['#0f8a7e', '#0b5b5f'],
+  ['#c2410c', '#8a2a07'],
+  ['#be185d', '#7e1242'],
+  ['#2f3a8f', '#161c4f'],
+  ['#15803d', '#0d5129'],
+  ['#7c3aed', '#4c1d95'],
+]
+
+export function TopicCover({
+  subjectSlug,
+  subjectName,
+  topicSlug,
+  topicName,
+  index = 0,
+  variant = 'card',
+  className = '',
+}: {
+  subjectSlug: string
+  subjectName: string
+  topicSlug: string
+  topicName: string
+  /** Position in a row: shifts the colour so neighbours differ. */
+  index?: number
+  variant?: 'card' | 'hero'
+  className?: string
+}) {
+  const art = subjectArt(subjectSlug)
+  // Subject motifs are drawn around (0, 0) within about ±60; TopicArt fills a 120 x 110 box.
+  const drawing = topicArt(subjectSlug, topicSlug, art.accent) ?? <g transform="translate(60 55) scale(.8)">{art.motif(art.accent)}</g>
+  // Start the cycle at the subject's own colour family, when it is one of the cover colours.
+  const own = COVERS.findIndex(([c]) => c.toLowerCase() === art.bg.toLowerCase())
+  const [from, to] = own < 0 && index === 0 ? [art.bg, art.shade] : COVERS[(Math.max(0, own) + index) % COVERS.length]
+  const hero = variant === 'hero'
+
+  return (
+    <span aria-hidden className={`relative block overflow-hidden ${className}`} style={{ background: `linear-gradient(135deg, ${from}, ${to})` }}>
+      <span
+        className="absolute inset-0 opacity-50"
+        style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,.2) 1px, transparent 1px)', backgroundSize: hero ? '18px 18px' : '14px 14px' }}
+      />
+      {hero && <span className="absolute left-1/2 top-1/2 aspect-square h-[88%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/[0.07] ring-1 ring-white/10" />}
+      <svg
+        viewBox="0 0 120 110"
+        className={
+          hero
+            ? 'absolute left-1/2 top-1/2 h-[64%] w-auto -translate-x-1/2 -translate-y-1/2'
+            : 'absolute bottom-[10%] right-[4%] h-[78%] w-auto transition-transform duration-500 group-hover:scale-[1.05]'
+        }
+      >
+        {drawing}
+      </svg>
+      <span className={`absolute flex items-center gap-1.5 font-bold uppercase text-white/80 ${hero ? 'left-5 top-5 text-[11px] tracking-[.16em]' : 'left-3.5 top-3.5 text-[10px] tracking-[.14em]'}`}>
+        <span className="h-1.5 w-1.5 rounded-full" style={{ background: art.accent }} />
+        {subjectName}
+      </span>
+      {!hero && (
+        <span className="absolute bottom-3.5 left-3.5 line-clamp-3 max-w-[50%] text-[17px] font-extrabold leading-[1.12] tracking-tight text-white">{topicName}</span>
+      )}
+    </span>
+  )
+}

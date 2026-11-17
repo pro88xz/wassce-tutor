@@ -9,6 +9,7 @@
 // faint white fill for areas, and the subject's accent colour (passed in
 // as `a`) for the one thing the eye should land on.
 import type { ReactNode } from 'react'
+import { topicSymbol, type TopicSymbol } from '@/components/landing/topic-symbols'
 
 const W = '#fff'
 const T = 'rgba(255,255,255,.16)'
@@ -21,13 +22,16 @@ function chips(a: string, words: string[], hi = 0) {
   return (
     <>
       {words.map((w, i) => {
-        const width = Math.max(40, w.length * 8.6 + 20)
-        const x = 60 - width / 2 + (i % 2 ? 10 : -10)
+        // Long phrases shrink to fit the 120-wide box.
+        const natural = w.length * 7.4 + 20
+        const width = Math.min(116, Math.max(40, natural))
+        const size = natural > 116 ? Math.max(8, 12 * (96 / (natural - 20))) : 12
+        const x = Math.min(118 - width, Math.max(2, 60 - width / 2 + (i % 2 ? 10 : -10)))
         const y = 55 - (words.length * 26) / 2 + i * 26
         return (
           <g key={w}>
             <rect x={x} y={y} width={width} height={20} rx={10} fill={i === hi ? a : T} stroke={i === hi ? 'none' : W} strokeWidth={1.5} />
-            <text x={x + width / 2} y={y + 14.5} {...text(12, 700)} fill={i === hi ? '#1b1240' : W}>{w}</text>
+            <text x={x + width / 2} y={y + 10 + size * 0.37} {...text(size, 700)} fill={i === hi ? '#1b1240' : W}>{w}</text>
           </g>
         )
       })}
@@ -455,8 +459,36 @@ const ART: Record<string, (a: string) => ReactNode> = {
   ),
 }
 
-/** The drawing for a topic, or null when there is none. */
+/** A topic's symbol, equation or key words, set to fill the box (see topic-symbols.ts). */
+function symbolArt(spec: TopicSymbol, a: string): ReactNode {
+  if (spec.kind === 'words') return chips(a, spec.words, 0)
+  if (spec.kind === 'symbol') {
+    const len = [...spec.text].length + (spec.sup ? [...spec.sup].length * 0.5 : 0)
+    const size = Math.min(len <= 1.5 ? 64 : 46, 100 / (len * 0.66))
+    return (
+      <text x={60} y={55 + size * 0.36} {...text(size)}>
+        {spec.text}
+        {spec.sup && <tspan fontSize={size * 0.45} dy={-size * 0.42} fill={a}>{spec.sup}</tspan>}
+      </text>
+    )
+  }
+  const longest = Math.max(...spec.lines.map((l) => [...l].length))
+  const size = Math.min(21, 108 / (longest * 0.62))
+  const gap = size * 1.5
+  const top = 55 - ((spec.lines.length - 1) * gap) / 2 + size * 0.36
+  return (
+    <>
+      {spec.lines.map((l, i) => (
+        <text key={l} x={60} y={top + i * gap} {...text(size)} fill={i === 1 ? a : W}>{l}</text>
+      ))}
+    </>
+  )
+}
+
+/** The cover drawing for a topic: hand-drawn, else its symbol or key words, else null. */
 export function topicArt(subjectSlug: string, topicSlug: string, accent: string): ReactNode | null {
   const draw = ART[`${subjectSlug}/${topicSlug}`]
-  return draw ? draw(accent) : null
+  if (draw) return draw(accent)
+  const spec = topicSymbol(subjectSlug, topicSlug)
+  return spec ? symbolArt(spec, accent) : null
 }

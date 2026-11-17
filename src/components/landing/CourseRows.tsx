@@ -10,10 +10,8 @@ import { useRef, useState } from 'react'
 import { ArrowRight, BookOpen, Check, ChevronLeft, ChevronRight, Clock, Gift } from 'lucide-react'
 import type { CourseCard as Course, CourseRow } from '@/lib/public-content'
 import { subjectPath, topicPath } from '@/lib/public-content'
-import { topicPhoto, topicPhotoSrcSet } from '@/lib/topic-photos'
 import { PRACTICE_QUESTIONS } from '@/lib/practice-counts'
-import { subjectArt } from '@/components/ds/SubjectCover'
-import { topicArt } from '@/components/landing/TopicArt'
+import { TopicCover } from '@/components/public/TopicCover'
 import { Band, SectionHeading } from '@/components/public/Section'
 
 /** "45 min", "2 h", "3 h 20 min", rounded to five minutes. */
@@ -150,7 +148,7 @@ function CourseCardView({ subjectSlug, subjectName, course: c, index }: { subjec
       href={topicPath(subjectSlug, c.topicSlug)}
       className="group relative flex w-[74%] flex-col rounded-xl outline-none sm:w-[calc((100%-1.25rem)/2)] md:w-[calc((100%-2.5rem)/3)] lg:w-[calc((100%-3.75rem)/4)]"
     >
-      <CourseCover subjectSlug={subjectSlug} subjectName={subjectName} course={c} index={index} />
+      <TopicCover subjectSlug={subjectSlug} subjectName={subjectName} topicSlug={c.topicSlug} topicName={c.topicName} index={index} className="aspect-[16/9] rounded-xl ring-1 ring-slate-900/[0.07]" />
       <span className="flex flex-1 flex-col pt-3">
         <span className="line-clamp-2 text-[16px] font-bold leading-snug tracking-tight text-foreground group-hover:text-[var(--brand-strong)]">{c.topicName}</span>
         <span className="mt-1 text-[13px] text-muted-foreground">WASSCE {subjectName}</span>
@@ -193,74 +191,5 @@ function CourseCardView({ subjectSlug, subjectName, course: c, index }: { subjec
         </span>
       </span>
     </a>
-  )
-}
-
-/** Cover colours, cycled along a row so neighbouring cards never match. */
-const COVERS = [
-  ['#5b34d6', '#3a1d9e'],
-  ['#1f6fd1', '#173f8f'],
-  ['#0f8a7e', '#0b5b5f'],
-  ['#c2410c', '#8a2a07'],
-  ['#be185d', '#7e1242'],
-  ['#2f3a8f', '#161c4f'],
-  ['#15803d', '#0d5129'],
-  ['#7c3aed', '#4c1d95'],
-]
-
-/**
- * The card's cover: the topic's own photograph when there is one, otherwise
- * a typographic cover on the subject's colour with the topic's name set
- * large, so every card in a row is different without stock imagery.
- */
-function CourseCover({ subjectSlug, subjectName, course: c, index }: { subjectSlug: string; subjectName: string; course: Course; index: number }) {
-  const art = subjectArt(subjectSlug)
-  const drawing = topicArt(subjectSlug, c.topicSlug, art.accent)
-  // A drawing of the topic wins over a photograph, so a row reads as one set of covers.
-  const photo = drawing ? undefined : topicPhoto(subjectSlug, c.topicSlug)
-  // Start the cycle at the subject's own colour family.
-  const offset = Math.max(0, COVERS.findIndex(([c]) => c.toLowerCase() === art.bg.toLowerCase()))
-  const [from, to] = COVERS[(offset + index) % COVERS.length]
-  return (
-    <span className="relative block aspect-[16/9] overflow-hidden rounded-xl bg-muted ring-1 ring-slate-900/[0.07]">
-      {photo ? (
-        <>
-          <img
-            src={photo.small}
-            srcSet={topicPhotoSrcSet(photo)}
-            sizes="(min-width: 1024px) 290px, (min-width: 640px) 46vw, 74vw"
-            alt=""
-            loading="lazy"
-            decoding="async"
-            width={960}
-            height={600}
-            className={`h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04] ${photo.position ?? ''}`}
-          />
-          <span aria-hidden className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/0 to-black/0" />
-          <span aria-hidden className="absolute bottom-2.5 left-3 right-3 line-clamp-1 text-[13px] font-bold text-white drop-shadow">{subjectName}</span>
-        </>
-      ) : (
-        <span aria-hidden className="absolute inset-0 flex flex-col justify-between p-3.5" style={{ background: `linear-gradient(135deg, ${from}, ${to})` }}>
-          <span
-            className="absolute inset-0 opacity-50"
-            style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,.2) 1px, transparent 1px)', backgroundSize: '14px 14px' }}
-          />
-          {drawing ? (
-            <svg viewBox="0 0 120 110" className="absolute bottom-[10%] right-[4%] h-[78%] w-auto transition-transform duration-500 group-hover:scale-[1.05]">
-              {drawing}
-            </svg>
-          ) : (
-            <span className="absolute -bottom-3 right-2 select-none whitespace-nowrap text-[64px] font-black leading-none tracking-tighter text-white/[0.13]">
-              {art.glyphs[index % 3]}
-            </span>
-          )}
-          <span className="relative flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[.14em] text-white/80">
-            <span className="h-1.5 w-1.5 rounded-full" style={{ background: art.accent }} />
-            {subjectName}
-          </span>
-          <span className={`relative line-clamp-3 text-[17px] font-extrabold leading-[1.12] tracking-tight text-white ${drawing ? 'max-w-[50%]' : 'max-w-[90%] text-[19px]'}`}>{c.topicName}</span>
-        </span>
-      )}
-    </span>
   )
 }
