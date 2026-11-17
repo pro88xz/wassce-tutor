@@ -34,7 +34,7 @@ function faq(subjects: SubjectSummary[]): [question: string, answer: string][] {
 
 export function Faq({ subjects }: { subjects: SubjectSummary[] }) {
   return (
-    <Band tone="white" labelledBy="faq-heading">
+    <Band labelledBy="faq-heading">
       <div className="grid gap-10 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.2fr)] lg:gap-16">
         <div data-reveal>
           <p className="site-eyebrow">Questions</p>

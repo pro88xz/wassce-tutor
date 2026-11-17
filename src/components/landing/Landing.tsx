@@ -9,7 +9,7 @@
 //   03 SubjectShowcase Is my subject here?                     (course catalogue)
 //   04 PopularTopics   What does a topic look like?
 //   05 HowItWorks      How will I actually study?              (+ a real excerpt from a free lesson)
-//   06 MockExams       Can I rehearse the real paper?          (the one full-width brand band)
+//   06 MockExams       Can I rehearse the real paper?          (on the violet slab, light like the rest)
 //   07 LocalBand       Was this made for someone like me?      (+ who builds it)
 //   08 TutorFeature    Can I get a person to help?
 //   09 Plans           What does it cost?
