@@ -14,6 +14,7 @@ import { WorkspaceBar } from '@/components/shell/WorkspaceBar'
 import { useSendToSignIn } from '@/lib/use-send-to-sign-in'
 import { needsAccount } from '@/lib/return-to'
 import { SITE } from '@/lib/seo'
+import { analyticsScript, GA_MEASUREMENT_ID } from '@/lib/analytics'
 import appCss from '@/index.css?url'
 import nativeCss from '@/native.css?url'
 
@@ -80,7 +81,7 @@ export const Route = createRootRoute({
       { rel: 'icon', type: 'image/png', sizes: '192x192', href: `/favicon-192.png?v=${ICON_VERSION}` },
       { rel: 'apple-touch-icon', href: `/apple-touch-icon.png?v=${ICON_VERSION}` },
     ],
-    scripts: [{ children: BOOT_SCRIPT }],
+    scripts: [{ children: BOOT_SCRIPT }, ...(GA_MEASUREMENT_ID ? [{ children: analyticsScript(GA_MEASUREMENT_ID) }] : [])],
   }),
   // The root must render on the server for any child route to (Start's
   // defaultSsr: false would otherwise apply here too). Children stay

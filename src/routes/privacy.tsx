@@ -14,7 +14,7 @@ function Privacy() {
       <header className="space-y-3 pb-4 pt-2">
         <p className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">Legal</p>
         <h1 className="text-4xl font-bold tracking-tight text-balance">Privacy Policy</h1>
-        <p className="text-sm text-muted-foreground">Last updated: 15 November 2026</p>
+        <p className="text-sm text-muted-foreground">Last updated: 17 November 2026</p>
       </header>
 
       <section className="space-y-3 rounded-2xl border bg-card p-6">
@@ -85,7 +85,13 @@ function Privacy() {
       <section className="space-y-3 rounded-2xl border bg-card p-6">
         <h2 className="text-xl font-bold tracking-tight">Cookies and tracking</h2>
         <p className="text-muted-foreground">
-          We use a single first-party cookie to keep you signed in across sessions. We do not use third-party tracking cookies, advertising pixels, or analytics that follow you across other websites.
+          We use a first-party cookie to keep you signed in across sessions.
+        </p>
+        <p className="text-muted-foreground">
+          We use Google Analytics to count visitors and see which pages, subjects and lessons are used, so we can improve WASSCE Tutor. It sets its own cookies on this site and sends Google the pages you view, how you arrived, your device and browser type, and your approximate location (country or city). It does not receive your name, email address, answers or scores. You can block it with your browser&rsquo;s tracking protection or Google&rsquo;s opt-out browser add-on.
+        </p>
+        <p className="text-muted-foreground">
+          We do not use advertising pixels or analytics that follow you across other websites.
         </p>
       </section>
 
