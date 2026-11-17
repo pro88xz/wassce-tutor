@@ -7,7 +7,7 @@ import type { LandingData } from '@/lib/public-content'
 import { topicPath } from '@/lib/public-content'
 import { topicPhoto, topicPhotoSrcSet } from '@/lib/topic-photos'
 import { SubjectCover } from '@/components/ds/SubjectCover'
-import { Band, Mark, SectionHeading } from '@/components/public/Section'
+import { Band, SectionHeading } from '@/components/public/Section'
 
 export function PopularTopics({ data }: { data: LandingData }) {
   const rail = useRef<HTMLDivElement>(null)
@@ -44,7 +44,7 @@ export function PopularTopics({ data }: { data: LandingData }) {
       <SectionHeading
         id="popular-heading"
         eyebrow="Start here"
-        title={<>Popular <Mark>WASSCE topics</Mark></>}
+        title="Popular WASSCE topics"
         lede="Where most students begin."
         action={
           <div className="hidden items-center gap-2 md:flex">

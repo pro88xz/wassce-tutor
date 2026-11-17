@@ -4,7 +4,7 @@
 // it. The lesson snippet is from a real free lesson; the scores in the other
 // two are examples and say so.
 import { ArrowRight, Check, CircleCheck, CircleX } from 'lucide-react'
-import { Band, Mark, SectionHeading } from '@/components/public/Section'
+import { Band, SectionHeading } from '@/components/public/Section'
 
 /** The free lesson the first snapshot comes from. */
 const LESSON_HREF = '/wassce/mathematics/quadratic-equations/quadratic-equations-factorisation-completing-the-square-and-the-formula'
@@ -21,7 +21,7 @@ export function HowItWorks() {
       <SectionHeading
         id="method-heading"
         eyebrow="How it works"
-        title={<>Learn it. Practise it. <Mark>Master it.</Mark></>}
+        title="Learn it. Practise it. Master it."
         action={
           <a href={LESSON_HREF} className="site-link">
             Read a free lesson <ArrowRight className="h-4 w-4" aria-hidden />
