@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
-import { ArrowRight, BookOpen, Check, ClipboardCheck, Clock, Gift, ListChecks, PencilLine, Shapes, Smartphone } from 'lucide-react'
+import { ArrowRight, BookOpen, Check, ClipboardCheck, Clock, Gift, Layers, ListChecks, PencilLine, Shapes, Smartphone } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { CourseCard } from '@/components/public/CourseCard'
@@ -11,13 +11,14 @@ import { subjectArt } from '@/components/ds/SubjectCover'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { QuestionMarkdown } from '@/components/QuestionMarkdown'
 import { QuestionCard } from '@/components/public/QuestionCard'
+import { KeyTermCard } from '@/components/public/KeyTermCard'
 import { useAuth } from '@/lib/auth'
 import { PRACTICE_QUESTIONS, hasPractice } from '@/lib/practice-counts'
-import { fetchTopicExtras, fetchTopicPage, hasTopicPage, lessonMinutes, lessonPath, questionsPath, subjectPath, topicPath, topicQuestionCount } from '@/lib/public-content'
+import { fetchKeyTermPreview, fetchTopicExtras, fetchTopicPage, hasTopicPage, keyTermsPath, lessonMinutes, lessonPath, questionsPath, subjectPath, topicPath, topicQuestionCount } from '@/lib/public-content'
 import type { TopicPageData, TopicWithLessons } from '@/lib/public-content'
 import { SEARCH_COPY, brandedTitle, breadcrumbJsonLd, fitDescription, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { studyTime } from '@/lib/study-time'
-import { NOT_TAUGHT, loadOutlines, outlineKey, plural, totals } from '@/lib/lesson-outlines'
+import { NOT_TAUGHT, loadOutlines, outlineKey, plural, sectionId, totals } from '@/lib/lesson-outlines'
 import type { LessonOutline } from '@/lib/lesson-outlines'
 
 const trail = ({ subject, topic }: TopicPageData): [string, string][] => [
@@ -55,7 +56,9 @@ export const Route = createFileRoute('/wassce/$subject/$topic')({
     const questionCount = await topicQuestionCount(data.topic.id)
     // What WASSCE asks (the lessons' exam-focus notes) and two questions to try, with answers.
     const extras = await fetchTopicExtras(data.topic)
-    return { ...data, outlines, questionCount, ...extras }
+    // Key terms: the lessons' definitions as cards; the first few here, all on the topic's key terms page.
+    const keyTerms = await fetchKeyTermPreview(data.topic)
+    return { ...data, outlines, questionCount, ...extras, keyTerms }
   },
   head: ({ loaderData: data }) => {
     if (!data) return privatePageTags('Page not found')
@@ -96,7 +99,7 @@ const asCourse = (t: TopicWithLessons) => ({
 // as the homepage's course cards. Every number comes from the lessons.
 function TopicPage() {
   const data = Route.useLoaderData()
-  const { subject, topic, group, previous, next, outlines, coverIndex, questionCount, examFocus, sampleQuestions } = data
+  const { subject, topic, group, previous, next, outlines, coverIndex, questionCount, examFocus, sampleQuestions, keyTerms } = data
   const { user } = useAuth()
   const art = subjectArt(subject.slug)
   const cover = { subjectSlug: subject.slug, subjectName: subject.name, topicSlug: topic.slug, topicName: topic.name, index: coverIndex[topic.id] ?? 0 }
@@ -132,6 +135,7 @@ function TopicPage() {
     ...(minutes > 0 ? [{ icon: <Clock className="h-[18px] w-[18px]" />, text: `${studyTime(minutes)} of study` }] : []),
     ...(worked > 0 ? [{ icon: <PencilLine className="h-[18px] w-[18px]" />, text: plural(worked, 'worked example') }] : []),
     ...(figures > 0 ? [{ icon: <Shapes className="h-[18px] w-[18px]" />, text: plural(figures, 'diagram') }] : []),
+    ...(keyTerms.total > 0 ? [{ icon: <Layers className="h-[18px] w-[18px]" />, text: plural(keyTerms.total, 'key term') }] : []),
     ...(questionCount > 0 ? [{ icon: <ListChecks className="h-[18px] w-[18px]" />, text: plural(questionCount, 'practice question') }] : []),
     ...(freeCount > 0 ? [{ icon: <Gift className="h-[18px] w-[18px]" />, text: allFree ? (count === 1 ? 'Free' : 'Every lesson free') : `${freeCount} free` }] : []),
   ]
@@ -269,6 +273,33 @@ function TopicPage() {
               ))}
             </ol>
           </section>
+
+          {keyTerms.total > 0 && (
+            <section aria-labelledby="terms">
+              <div className="flex flex-col gap-1.5 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
+                <div>
+                  <p className="site-eyebrow">Remember</p>
+                  <h2 id="terms" className="mt-2 text-[1.625rem] font-extrabold tracking-[-.03em] sm:text-[2rem]">{plural(keyTerms.total, 'key term')} to know</h2>
+                </div>
+                <p className="text-sm font-medium text-muted-foreground">From the lessons&rsquo; definitions. Say the meaning, then check.</p>
+              </div>
+              <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+                {keyTerms.terms.map((t) => (
+                  <li key={t.id}>
+                    <KeyTermCard
+                      term={t}
+                      lessonNumber={lessons.findIndex((l) => l.slug === t.lessonSlug) + 1}
+                      lessonHref={`${lessonPath(subject.slug, topic.slug, t.lessonSlug)}${t.section ? `#${sectionId(t.section)}` : ''}`}
+                      colours={[tone, toneDeep]}
+                    />
+                  </li>
+                ))}
+              </ul>
+              <a href={keyTermsPath(subject.slug, topic.slug)} className="site-btn site-btn-secondary mt-5">
+                <Layers className="h-4 w-4" aria-hidden /> {keyTerms.total > keyTerms.terms.length ? `All ${keyTerms.total} key terms` : 'Revise the key terms'} <ArrowRight className="h-4 w-4" aria-hidden />
+              </a>
+            </section>
+          )}
 
           {examFocus.length > 0 && (
             <section aria-labelledby="exam">

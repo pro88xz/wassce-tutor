@@ -5,8 +5,9 @@ import { StartCta } from '@/components/public/StartCta'
 import { FROM_PRICE } from '@/lib/plans'
 import { hasPractice } from '@/lib/practice-counts'
 import { PrerenderedLesson } from '@/components/lesson/PrerenderedLesson'
+import { KeyTermsLink } from '@/components/lesson/key-terms-link'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
-import { fetchPublicLessonPage, lessonPath, lessonSummary, questionsPath, subjectPath, topicPath, topicQuestionCount } from '@/lib/public-content'
+import { fetchPublicLessonPage, keyTermsPath, lessonPath, lessonSummary, questionsPath, subjectPath, topicKeyTermCount, topicPath, topicQuestionCount } from '@/lib/public-content'
 import type { PublicLessonPageData } from '@/lib/public-content'
 import { SEARCH_COPY, SITE, absoluteUrl, brandedTitle, breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
@@ -57,7 +58,7 @@ export const Route = createFileRoute('/wassce/$subject/$topic_/$lesson')({
   loader: async ({ params }) => {
     const data = await fetchPublicLessonPage(params.subject, params.topic, params.lesson)
     if (!data) throw notFound()
-    return { ...data, questionCount: await topicQuestionCount(data.topic.id) }
+    return { ...data, questionCount: await topicQuestionCount(data.topic.id), keyTermCount: await topicKeyTermCount(data.topic) }
   },
   head: ({ loaderData: data }) => {
     if (!data) return privatePageTags('Page not found')
@@ -78,7 +79,7 @@ export const Route = createFileRoute('/wassce/$subject/$topic_/$lesson')({
 
 function PublicLessonPage() {
   const data = Route.useLoaderData()
-  const { subject, topic, lesson, questionCount } = data
+  const { subject, topic, lesson, questionCount, keyTermCount } = data
   const others = topic.lessons.filter((l) => l.id !== lesson.id)
   // The lessons either side, in syllabus order: every lesson has a public page (migration 22).
   const at = topic.lessons.findIndex((l) => l.id === lesson.id)
@@ -123,11 +124,14 @@ function PublicLessonPage() {
         </div>
       </header>
 
-      <PrerenderedLesson
-        id={`lesson-${lesson.id}`}
-        content={lesson.content}
-        className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-bold prose-h2:text-xl prose-h2:mt-6 prose-h2:mb-3 prose-p:leading-relaxed prose-li:my-1 prose-strong:text-foreground"
-      />
+      {/* Definition boxes link to the topic's key terms (made from them), when it has a page. */}
+      <KeyTermsLink.Provider value={keyTermCount > 0 ? keyTermsPath(subject.slug, topic.slug) : null}>
+        <PrerenderedLesson
+          id={`lesson-${lesson.id}`}
+          content={lesson.content}
+          className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-bold prose-h2:text-xl prose-h2:mt-6 prose-h2:mb-3 prose-p:leading-relaxed prose-li:my-1 prose-strong:text-foreground"
+        />
+      </KeyTermsLink.Provider>
 
       {questionCount > 0 && (
         <a href={questionsPath(subject.slug, topic.slug)} className="group flex items-center gap-4 rounded-2xl border border-primary/25 bg-brand-soft/50 p-4 transition-colors hover:border-primary/50 sm:p-5">

@@ -4,11 +4,12 @@
 // lesson content). Runs at build time (prerendering) and in the browser.
 import { supabase } from '@/lib/supabase'
 import { hasQuestionsPageByCount, hasSubjectPage, hasTopicPageByCount, subjectPath, topicPath } from '@/lib/public-rules'
+import { hasKeyTermsByCount, topicKeyTerms, type KeyTerm } from '@/lib/key-terms'
 import { topicPhoto } from '@/lib/topic-photos'
 import { mathToText } from '@/lib/math-text'
 import { examFocus } from '@/lib/lesson-sections'
 
-export { hasSubjectPage, lessonPath, questionsPath, subjectPath, topicPath } from '@/lib/public-rules'
+export { hasSubjectPage, keyTermsPath, lessonPath, questionsPath, subjectPath, topicPath } from '@/lib/public-rules'
 
 export type FacultyRole = 'core' | 'faculty' | 'elective'
 
@@ -538,6 +539,8 @@ export async function topicQuestionCount(topicId: string): Promise<number> {
 
 export type TopicQuestionsPageData = TopicPageData & {
   questions: PublicQuestion[]
+  /** The topic's key terms (0 when it has no key terms page) */
+  keyTermCount: number
   /** Neighbouring topics in syllabus order that have a questions page of their own. */
   previousQuestions: TopicWithLessons | null
   nextQuestions: TopicWithLessons | null
@@ -552,7 +555,13 @@ export async function fetchTopicQuestionsPage(subjectSlug: string, topicSlug: st
   const groups = groupTopics(await loadTopics([page.subject.id]))
   const withQuestions = groups.flatMap((g) => g.topics).filter((t) => hasTopicPage(t) && hasQuestionsPageByCount(counts.get(t.id) ?? 0))
   const at = withQuestions.findIndex((t) => t.id === page.topic.id)
-  return { ...page, questions, previousQuestions: withQuestions[at - 1] ?? null, nextQuestions: withQuestions[at + 1] ?? null }
+  return {
+    ...page,
+    questions,
+    keyTermCount: await topicKeyTermCount(page.topic),
+    previousQuestions: withQuestions[at - 1] ?? null,
+    nextQuestions: withQuestions[at + 1] ?? null,
+  }
 }
 
 export type SubjectQuestionsHub = {
@@ -599,7 +608,7 @@ export async function fetchQuestionSubjects(): Promise<Map<string, number>> {
 
 export type ExamFocusNote = { slug: string; title: string; markdown: string }
 
-type LessonBody = { topic_id: string; slug: string; title: string; content: string }
+type LessonBody = { id: string; topic_id: string; slug: string; title: string; content: string }
 
 /** Every public lesson's text, a page at a time. Build time only (a few MB, read once). */
 function loadAllLessonBodies(): Promise<LessonBody[]> {
@@ -617,7 +626,7 @@ function loadAllLessonBodies(): Promise<LessonBody[]> {
 
 async function loadTopicLessonBodies(topicId: string): Promise<LessonBody[]> {
   if (isServer) return (await loadAllLessonBodies()).filter((l) => l.topic_id === topicId)
-  const { data, error } = await supabase.from('wassce_public_lessons').select('topic_id, slug, title, content').eq('topic_id', topicId)
+  const { data, error } = await supabase.from('wassce_public_lessons').select('id, topic_id, slug, title, content').eq('topic_id', topicId)
   if (error || !data) fail('lessons', error)
   return data as LessonBody[]
 }
@@ -644,5 +653,55 @@ export async function fetchTopicExtras(topic: TopicWithLessons): Promise<{ examF
   return {
     examFocus: examFocusNotes,
     sampleQuestions: hasQuestionsPageByCount(questions.length) ? questions.slice(0, SAMPLE_QUESTIONS) : [],
+  }
+}
+
+// ── Key terms: the lessons' definitions as cards (src/lib/key-terms.ts) ─────
+
+/** A topic's key terms, its lessons in syllabus order. */
+async function loadTopicKeyTerms(topic: TopicWithLessons): Promise<KeyTerm[]> {
+  const bodies = await loadTopicLessonBodies(topic.id)
+  const bySlug = new Map(bodies.map((b) => [b.slug, b]))
+  return topicKeyTerms(topic.lessons.flatMap((l) => bySlug.get(l.slug) ?? []))
+}
+
+/** How many key terms a topic has (0 when too few for a page of their own). */
+export async function topicKeyTermCount(topic: TopicWithLessons): Promise<number> {
+  const n = (await loadTopicKeyTerms(topic)).length
+  return hasKeyTermsByCount(n) ? n : 0
+}
+
+/** The first few key terms, for the topic page; none when the topic has too few for a page. */
+export async function fetchKeyTermPreview(topic: TopicWithLessons, count = 6): Promise<{ total: number; terms: KeyTerm[] }> {
+  const terms = await loadTopicKeyTerms(topic)
+  return hasKeyTermsByCount(terms.length) ? { total: terms.length, terms: terms.slice(0, count) } : { total: 0, terms: [] }
+}
+
+export type KeyTermsPageData = TopicPageData & {
+  terms: KeyTerm[]
+  questionCount: number
+  /** Neighbouring topics in syllabus order with a key terms page of their own. */
+  previousTerms: TopicWithLessons | null
+  nextTerms: TopicWithLessons | null
+}
+
+/** Everything for /wassce/{subject}/{topic}/key-terms; null unless the topic has enough key terms. */
+export async function fetchKeyTermsPage(subjectSlug: string, topicSlug: string): Promise<KeyTermsPageData | null> {
+  const page = await fetchTopicPage(subjectSlug, topicSlug)
+  if (!page) return null
+  const terms = await loadTopicKeyTerms(page.topic)
+  if (!hasKeyTermsByCount(terms.length)) return null
+  // Neighbours with their own key terms page (the build has every lesson's text in memory; in the browser, none are offered).
+  const groups = groupTopics(await loadTopics([page.subject.id]))
+  const ordered = groups.flatMap((g) => g.topics).filter(hasTopicPage)
+  const withTerms: TopicWithLessons[] = []
+  if (isServer) for (const t of ordered) if (hasKeyTermsByCount((await loadTopicKeyTerms(t)).length)) withTerms.push(t)
+  const at = withTerms.findIndex((t) => t.id === page.topic.id)
+  return {
+    ...page,
+    terms,
+    questionCount: await topicQuestionCount(page.topic.id),
+    previousTerms: at > 0 ? withTerms[at - 1] : null,
+    nextTerms: at >= 0 ? (withTerms[at + 1] ?? null) : null,
   }
 }

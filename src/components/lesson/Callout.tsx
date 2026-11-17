@@ -2,7 +2,8 @@
 // Each variant has its own colour, icon, and label to make different
 // types of pedagogical content visually distinct from body prose.
 
-import type { ReactNode } from 'react'
+import { useContext, type ReactNode } from 'react'
+import { KeyTermsLink } from './key-terms-link'
 
 type CalloutType =
   | 'definition'
@@ -76,6 +77,8 @@ export function Callout({
   children: ReactNode
 }) {
   const v = VARIANTS[type] ?? VARIANTS.definition
+  // A definition is also a key term card for the topic: link to them, when the page says where they are.
+  const keyTerms = useContext(KeyTermsLink)
   return (
     <div
       className={`my-5 rounded-xl border-l-4 ${v.border} ${v.bg} p-4 pl-5 not-prose`}
@@ -89,6 +92,11 @@ export function Callout({
       <div className="max-w-none text-sm leading-relaxed text-foreground [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:my-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:my-2 [&_li]:my-0.5 [&_li]:pl-0.5 [&_p]:my-2 [&_strong]:font-semibold [&_strong]:text-foreground [&_code]:rounded [&_code]:bg-black/5 [&_code]:px-1">
         {children}
       </div>
+      {type === 'definition' && keyTerms && (
+        <a href={keyTerms} className={`mt-3 inline-flex min-h-9 items-center gap-1 text-xs font-bold ${v.accent} hover:underline`}>
+          Revise it with the topic&rsquo;s key terms <span aria-hidden>→</span>
+        </a>
+      )}
     </div>
   )
 }

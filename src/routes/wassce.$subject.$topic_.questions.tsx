@@ -6,13 +6,13 @@
 // elements with sizes and descriptive alt text, so they can appear in image
 // search. Prerendered at build time.
 import { createFileRoute, notFound } from '@tanstack/react-router'
-import { ArrowLeft, ArrowRight, BookOpen } from 'lucide-react'
+import { ArrowLeft, ArrowRight, BookOpen, Layers } from 'lucide-react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { StartCta } from '@/components/public/StartCta'
 import { QuestionCard } from '@/components/public/QuestionCard'
 import { plainText as plain } from '@/lib/question-text'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
-import { fetchTopicQuestionsPage, lessonPath, questionsPath, subjectPath, topicPath } from '@/lib/public-content'
+import { fetchTopicQuestionsPage, keyTermsPath, lessonPath, questionsPath, subjectPath, topicPath } from '@/lib/public-content'
 import type { TopicQuestionsPageData } from '@/lib/public-content'
 import { brandedTitle, breadcrumbJsonLd, fitDescription, indexablePageTags, privatePageTags, quizJsonLd } from '@/lib/seo'
 import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
@@ -96,6 +96,11 @@ function TopicQuestionsPage() {
           {firstLesson && (
             <a href={lessonPath(subject.slug, topic.slug, firstLesson.slug)} className="site-btn site-btn-secondary">
               <BookOpen className="h-4 w-4" aria-hidden /> Revise the lessons first
+            </a>
+          )}
+          {data.keyTermCount > 0 && (
+            <a href={keyTermsPath(subject.slug, topic.slug)} className="site-btn site-btn-secondary">
+              <Layers className="h-4 w-4" aria-hidden /> {data.keyTermCount} key terms
             </a>
           )}
           <a href={questionsPath(subject.slug)} className="site-btn site-btn-secondary">All {subject.name} questions</a>
