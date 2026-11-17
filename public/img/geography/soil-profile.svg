@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A soil profile and its horizons</title>
+<desc id="d">A soil profile is a vertical section through the soil from the surface to the bedrock. The O horizon is leaf litter and humus; the A horizon (topsoil) is dark, rich in humus and leached; the B horizon (subsoil) collects minerals washed down from above; the C horizon is weathered parent rock; and the R horizon is unweathered bedrock.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="800" height="520" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">From leaf litter to bedrock</text>
+<rect x="140.0" y="70.0" width="240.0" height="40.0" rx="0" fill="#3f2d1d" stroke="#0f172a" stroke-width="1.5"/>
+<text x="110.0" y="90.0" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">O</text>
+<text x="410.0" y="90.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Organic layer: leaf litter, humus</text>
+<rect x="140.0" y="110.0" width="240.0" height="90.0" rx="0" fill="#6b4423" stroke="#0f172a" stroke-width="1.5"/>
+<text x="110.0" y="155.0" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<text x="410.0" y="155.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Topsoil: dark, humus-rich, roots; leached</text>
+<rect x="140.0" y="200.0" width="240.0" height="100.0" rx="0" fill="#b45309" stroke="#0f172a" stroke-width="1.5"/>
+<text x="110.0" y="250.0" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B</text>
+<text x="410.0" y="250.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Subsoil: minerals washed in (clay, iron)</text>
+<rect x="140.0" y="300.0" width="240.0" height="90.0" rx="0" fill="#d6a76a" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="155.0" y="320.0" width="22.0" height="16.0" rx="0" fill="#a8a29e" stroke="#0f172a" stroke-width="1"/>
+<rect x="187.0" y="350.0" width="22.0" height="16.0" rx="0" fill="#a8a29e" stroke="#0f172a" stroke-width="1"/>
+<rect x="219.0" y="320.0" width="22.0" height="16.0" rx="0" fill="#a8a29e" stroke="#0f172a" stroke-width="1"/>
+<rect x="251.0" y="350.0" width="22.0" height="16.0" rx="0" fill="#a8a29e" stroke="#0f172a" stroke-width="1"/>
+<rect x="283.0" y="320.0" width="22.0" height="16.0" rx="0" fill="#a8a29e" stroke="#0f172a" stroke-width="1"/>
+<rect x="315.0" y="350.0" width="22.0" height="16.0" rx="0" fill="#a8a29e" stroke="#0f172a" stroke-width="1"/>
+<rect x="347.0" y="320.0" width="22.0" height="16.0" rx="0" fill="#a8a29e" stroke="#0f172a" stroke-width="1"/>
+<text x="110.0" y="345.0" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C</text>
+<text x="410.0" y="345.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Weathered parent rock</text>
+<rect x="140.0" y="390.0" width="240.0" height="80.0" rx="0" fill="#78716c" stroke="#0f172a" stroke-width="1.5"/>
+<text x="110.0" y="430.0" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">R</text>
+<text x="410.0" y="430.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Bedrock (unweathered)</text>
+<path d="M 200 110 Q 192 160 204 210" stroke="#fef3c7" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 260 110 Q 252 160 264 210" stroke="#fef3c7" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 320 110 Q 312 160 324 210" stroke="#fef3c7" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="40.0" y1="120.0" x2="40.0" y2="250.0" stroke="#2563eb" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<text x="30.0" y="270.0" font-size="13" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">leaching:</text>
+<text x="30.0" y="288.0" font-size="12" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="normal">water carries</text>
+<text x="30.0" y="304.0" font-size="12" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="normal">minerals down</text>
+<text x="400.0" y="505.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Tropical soils such as Sierra Leone&#x27;s are deep, red and heavily leached.</text>
+</svg>

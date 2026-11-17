@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Types of rainfall: convectional, relief and frontal</title>
+<desc id="d">Convectional rain: the ground is strongly heated, warm moist air rises, cools and condenses into tall clouds that give heavy afternoon storms. Relief (orographic) rain: moist wind is forced to rise over mountains and rains on the windward side, leaving a dry rain shadow on the leeward side. Frontal (cyclonic) rain: warm air rises over a wedge of cold air along a front.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">How air is made to rise and rain</text>
+<rect x="30.0" y="330.0" width="220.0" height="20.0" rx="0" fill="#86efac" stroke="#0f172a" stroke-width="1.5"/>
+<circle cx="60.0" cy="90.0" r="22.0" fill="#fde68a" stroke="#ea580c" stroke-width="2"/>
+<line x1="90.0" y1="320.0" x2="100.0" y2="190.0" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<line x1="135.0" y1="320.0" x2="145.0" y2="190.0" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<line x1="180.0" y1="320.0" x2="190.0" y2="190.0" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<ellipse cx="150.0" cy="160.0" rx="80.0" ry="34.0" fill="#e5e7eb" stroke="#475569" stroke-width="2"/>
+<line x1="110.0" y1="200.0" x2="104.0" y2="236.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="132.0" y1="200.0" x2="126.0" y2="236.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="154.0" y1="200.0" x2="148.0" y2="236.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="176.0" y1="200.0" x2="170.0" y2="236.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="140.0" y="380.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Convectional</text>
+<text x="140.0" y="402.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">strong heating; afternoon</text>
+<text x="140.0" y="420.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">storms (equatorial regions)</text>
+<polygon points="290.0,350.0 400.0,180.0 440.0,180.0 540.0,350.0" fill="#a8a29e" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<line x1="280.0" y1="320.0" x2="360.0" y2="240.0" stroke="#2563eb" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<ellipse cx="375.0" cy="170.0" rx="55.0" ry="24.0" fill="#e5e7eb" stroke="#475569" stroke-width="2"/>
+<line x1="355.0" y1="196.0" x2="349.0" y2="228.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="373.0" y1="196.0" x2="367.0" y2="228.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="391.0" y1="196.0" x2="385.0" y2="228.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="450.0" y1="200.0" x2="530.0" y2="300.0" stroke="#ea580c" stroke-width="2.4" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<text x="320.0" y="300.0" font-size="12" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">windward:</text>
+<text x="320.0" y="316.0" font-size="12" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">wet</text>
+<text x="462.0" y="316.0" font-size="12" fill="#ffffff" text-anchor="start" dominant-baseline="middle" font-weight="bold">leeward: dry</text>
+<text x="462.0" y="332.0" font-size="12" fill="#ffffff" text-anchor="start" dominant-baseline="middle" font-weight="bold">rain shadow</text>
+<text x="415.0" y="380.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Relief (orographic)</text>
+<text x="415.0" y="402.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">moist wind forced over</text>
+<text x="415.0" y="420.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">mountains</text>
+<path d="M 580 350 L 780 350 L 780 240 Q 700 300 580 350 Z" stroke="#2563eb" stroke-width="2" fill="#dbeafe" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="735.0" y="320.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">cold air</text>
+<line x1="600.0" y1="330.0" x2="720.0" y2="220.0" stroke="#dc2626" stroke-width="2.6" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="640.0" y="240.0" font-size="13" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">warm air</text>
+<ellipse cx="720.0" cy="180.0" rx="60.0" ry="24.0" fill="#e5e7eb" stroke="#475569" stroke-width="2"/>
+<line x1="700.0" y1="206.0" x2="694.0" y2="236.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="718.0" y1="206.0" x2="712.0" y2="236.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="736.0" y1="206.0" x2="730.0" y2="236.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="680.0" y="380.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Frontal (cyclonic)</text>
+<text x="680.0" y="402.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">warm air rises over</text>
+<text x="680.0" y="420.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cold air (temperate lands)</text>
+<text x="400.0" y="455.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">In every case: air rises → cools → water vapour condenses → clouds → rain</text>
+</svg>

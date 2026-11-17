@@ -631,6 +631,249 @@ def relief_features():
     return s
 
 
+
+# ═══ G2: climate, vegetation and soils ═══════════════════════════════════════
+
+MONTHS = "JFMAMJJASOND"
+
+
+def climate_graph(s: Svg, x0, y0, w, h, rain, temp, title, sub, rmax=900, tmin=15, tmax=35):
+    """Bars for rainfall (mm, left axis) and a line for temperature (°C, right axis)."""
+    s.text(x0 + w / 2, y0 - 34, title, size=17, weight="bold", color=INK)
+    s.text(x0 + w / 2, y0 - 14, sub, size=13, color=MUTED)
+    s.line(x0, y0, x0, y0 + h, color=INK, width=2)
+    s.line(x0, y0 + h, x0 + w, y0 + h, color=INK, width=2)
+    s.line(x0 + w, y0, x0 + w, y0 + h, color=INK, width=2)
+    bw = w / 12
+    for k, r in enumerate(rain):
+        bh = h * r / rmax
+        s.rect(x0 + k * bw + 3, y0 + h - bh, bw - 6, bh, fill="#93c5fd", stroke=BLUE, width=1.2)
+        s.text(x0 + k * bw + bw / 2, y0 + h + 16, MONTHS[k], size=12, color=MUTED)
+    for v in range(0, rmax + 1, 300):
+        s.text(x0 - 6, y0 + h - h * v / rmax, str(v), size=11, color=BLUE, anchor="end")
+    for v in range(tmin, tmax + 1, 5):
+        s.text(x0 + w + 6, y0 + h - h * (v - tmin) / (tmax - tmin), str(v), size=11, color=RED, anchor="start")
+    pts = [(x0 + k * bw + bw / 2, y0 + h - h * (t - tmin) / (tmax - tmin)) for k, t in enumerate(temp)]
+    s.polyline(pts, color=RED, width=3)
+    for x, y in pts:
+        s.dot(x, y, r=3.5, color=RED)
+    s.text(x0 - 26, y0 + h / 2, "mm", size=12, color=BLUE)
+    s.text(x0 + w + 30, y0 + h / 2, "°C", size=12, color=RED)
+
+
+@fig
+def climate_graphs_wa():
+    s = Svg(800, 460, "Climate graphs for Freetown and Kano",
+            "Freetown (tropical monsoon, coast of Sierra Leone) has very heavy rain from May to October, peaking at about "
+            "800 to 900 mm in July and August, and almost none from December to March; temperatures stay about 26 to 28 °C. "
+            "Kano (savanna, northern Nigeria) has much less rain, about 800 mm a year, mostly from June to September, and a "
+            "larger temperature range, about 22 to 31 °C. Values are approximate long-term averages.")
+    heading(s, "Two West African climates (approximate averages)")
+    fr_rain = [8, 3, 14, 55, 160, 380, 800, 840, 600, 300, 130, 30]
+    fr_temp = [27, 27.5, 28, 28, 27.5, 26.5, 25.5, 25.5, 26, 26.5, 27, 27]
+    kn_rain = [0, 0, 2, 8, 55, 110, 210, 300, 125, 15, 0, 0]
+    kn_temp = [22, 25, 29, 31, 31, 29, 27, 26, 27, 27.5, 25, 22.5]
+    climate_graph(s, 70, 130, 280, 250, fr_rain, fr_temp, "Freetown, Sierra Leone", "about 3,300 mm a year · tropical monsoon")
+    climate_graph(s, 460, 130, 280, 250, kn_rain, kn_temp, "Kano, northern Nigeria", "about 830 mm a year · tropical continental (savanna)")
+    note(s, "Blue bars: rainfall (mm, left). Red line: temperature (°C, right).", 440, size=14)
+    return s
+
+
+@fig
+def rainfall_types():
+    s = Svg(800, 470, "Types of rainfall: convectional, relief and frontal",
+            "Convectional rain: the ground is strongly heated, warm moist air rises, cools and condenses into tall clouds "
+            "that give heavy afternoon storms. Relief (orographic) rain: moist wind is forced to rise over mountains and "
+            "rains on the windward side, leaving a dry rain shadow on the leeward side. Frontal (cyclonic) rain: warm air "
+            "rises over a wedge of cold air along a front.")
+    heading(s, "How air is made to rise and rain")
+    # convectional
+    s.rect(30, 330, 220, 20, fill=GRASS, stroke=INK, width=1.5)
+    s.circle(60, 90, 22, fill="#fde68a", stroke=ORANGE, width=2)
+    for k in range(3):
+        arrow(s, 90 + k * 45, 320, 100 + k * 45, 190, color=RED, width=2.4)
+    s.ellipse(150, 160, 80, 34, fill="#e5e7eb", stroke=MUTED, width=2)
+    for k in range(4):
+        s.line(110 + k * 22, 200, 104 + k * 22, 236, color=BLUE, width=2)
+    s.text(140, 380, "Convectional", size=17, weight="bold", color=INK)
+    s.text(140, 402, "strong heating; afternoon", size=13, color=MUTED)
+    s.text(140, 420, "storms (equatorial regions)", size=13, color=MUTED)
+    # relief
+    s.polygon([(290, 350), (400, 180), (440, 180), (540, 350)], fill="#a8a29e", stroke=INK, width=2)
+    arrow(s, 280, 320, 360, 240, color=BLUE, width=2.6)
+    s.ellipse(375, 170, 55, 24, fill="#e5e7eb", stroke=MUTED, width=2)
+    for k in range(3):
+        s.line(355 + k * 18, 196, 349 + k * 18, 228, color=BLUE, width=2)
+    arrow(s, 450, 200, 530, 300, color=ORANGE, width=2.4)
+    s.text(320, 300, "windward:", size=12, weight="bold", color=BLUE, anchor="end")
+    s.text(320, 316, "wet", size=12, weight="bold", color=BLUE, anchor="end")
+    s.text(462, 316, "leeward: dry", size=12, weight="bold", color="#ffffff", anchor="start")
+    s.text(462, 332, "rain shadow", size=12, weight="bold", color="#ffffff", anchor="start")
+    s.text(415, 380, "Relief (orographic)", size=17, weight="bold", color=INK)
+    s.text(415, 402, "moist wind forced over", size=13, color=MUTED)
+    s.text(415, 420, "mountains", size=13, color=MUTED)
+    # frontal
+    s.path("M 580 350 L 780 350 L 780 240 Q 700 300 580 350 Z", color=BLUE, width=2, fill="#dbeafe")
+    s.text(735, 320, "cold air", size=13, weight="bold", color=BLUE)
+    arrow(s, 600, 330, 720, 220, color=RED, width=2.6)
+    s.text(640, 240, "warm air", size=13, weight="bold", color=RED, anchor="end")
+    s.ellipse(720, 180, 60, 24, fill="#e5e7eb", stroke=MUTED, width=2)
+    for k in range(3):
+        s.line(700 + k * 18, 206, 694 + k * 18, 236, color=BLUE, width=2)
+    s.text(680, 380, "Frontal (cyclonic)", size=17, weight="bold", color=INK)
+    s.text(680, 402, "warm air rises over", size=13, color=MUTED)
+    s.text(680, 420, "cold air (temperate lands)", size=13, color=MUTED)
+    note(s, "In every case: air rises → cools → water vapour condenses → clouds → rain", 455, size=14, color=INK)
+    return s
+
+
+@fig
+def weather_instruments():
+    s = Svg(800, 500, "Weather instruments in a weather station",
+            "A weather station has a Stevenson screen, a white louvred box that shades thermometers (maximum and minimum, "
+            "and wet- and dry-bulb for humidity). Outside are a rain gauge for rainfall, a wind vane for wind direction, a "
+            "cup anemometer for wind speed and a sunshine recorder. A barometer indoors measures air pressure.")
+    heading(s, "What each instrument measures")
+    items = [(110, 160, "Stevenson screen", "houses thermometers", "and hygrometer"),
+             (300, 160, "Rain gauge", "rainfall (mm)", ""),
+             (500, 160, "Wind vane", "wind direction", ""),
+             (690, 160, "Cup anemometer", "wind speed", "(km/h or knots)"),
+             (110, 380, "Max–min thermometer", "highest and lowest", "temperature (°C)"),
+             (300, 380, "Wet- and dry-bulb", "relative humidity (%)", "(hygrometer)"),
+             (500, 380, "Barometer", "air pressure", "(millibars)"),
+             (690, 380, "Sunshine recorder", "hours of sunshine", "")]
+    for x, y, a, b, c in items:
+        s.rect(x - 80, y - 70, 160, 104, fill="#f8fafc", stroke=MUTED, width=1.5, rx=8)
+        s.text(x, y + 58, a, size=14, weight="bold", color=INK)
+        s.text(x, y + 76, b, size=12, color=MUTED)
+        if c:
+            s.text(x, y + 92, c, size=12, color=MUTED)
+    # icons
+    s.rect(80, 100, 60, 50, fill="#ffffff", stroke=INK, width=2)
+    for k in range(4):
+        s.line(84, 108 + k * 10, 136, 108 + k * 10, color=MUTED, width=1.5)
+    s.line(95, 150, 95, 175, color=INK, width=2)
+    s.line(125, 150, 125, 175, color=INK, width=2)
+    s.polygon([(282, 100), (318, 100), (310, 125), (290, 125)], fill="#dbeafe", stroke=INK, width=2)
+    s.rect(290, 125, 20, 45, fill="#dbeafe", stroke=INK, width=2)
+    s.line(500, 175, 500, 110, color=INK, width=2.5)
+    s.polygon([(470, 110), (530, 110), (540, 100), (530, 120)], fill=RED, stroke=INK, width=1.5)
+    s.text(470, 100, "N", size=12, weight="bold")
+    s.line(690, 175, 690, 120, color=INK, width=2.5)
+    for dx in (-30, 30):
+        s.line(690, 120, 690 + dx, 115, color=INK, width=2)
+        s.circle(690 + dx, 115, 9, fill="#e5e7eb", stroke=INK, width=1.5)
+    s.rect(80, 315, 14, 70, fill="#ffffff", stroke=INK, width=2, rx=6)
+    s.rect(126, 315, 14, 70, fill="#ffffff", stroke=INK, width=2, rx=6)
+    s.path("M 87 385 Q 110 410 133 385", color=INK, width=2)
+    s.rect(84, 340, 6, 40, fill=RED, stroke="none", width=0)
+    s.rect(130, 330, 6, 50, fill=RED, stroke="none", width=0)
+    s.rect(282, 315, 12, 70, fill="#ffffff", stroke=INK, width=2, rx=6)
+    s.rect(306, 315, 12, 70, fill="#ffffff", stroke=INK, width=2, rx=6)
+    s.rect(302, 380, 20, 12, fill="#bfdbfe", stroke=BLUE, width=1.5)
+    s.circle(500, 345, 38, fill="#ffffff", stroke=INK, width=2.5)
+    s.line(500, 345, 520, 322, color=RED, width=3)
+    s.circle(690, 345, 26, fill="#e0f2fe", stroke=INK, width=2)
+    s.path("M 664 365 Q 690 395 716 365", color=INK, width=2)
+    return s
+
+
+@fig
+def vegetation_belts_wa():
+    s = Svg(800, 500, "Vegetation belts of West Africa from the coast to the Sahara",
+            "Going north from the Gulf of Guinea coast, rainfall falls and the dry season lengthens, so vegetation changes in "
+            "belts: mangrove swamps on the coast, tropical rainforest, Guinea savanna (tall grass with trees), Sudan savanna "
+            "(shorter grass, fewer trees), Sahel savanna (thorn bushes and short grass) and finally the Sahara desert.")
+    heading(s, "Rainfall falls northwards, and vegetation changes in belts")
+    belts = [("Sahara desert", "under 250 mm", "#fde68a"),
+             ("Sahel savanna", "250–500 mm; thorn scrub", "#fcd9a3"),
+             ("Sudan savanna", "500–1,000 mm; short grass", "#d9f99d"),
+             ("Guinea savanna", "1,000–1,500 mm; tall grass, trees", "#a3e635"),
+             ("Tropical rainforest", "over 1,500 mm; tall evergreen trees", "#22c55e"),
+             ("Mangrove swamp", "tidal coast and estuaries", "#0f766e")]
+    y = 70
+    for k, (name, desc, col) in enumerate(belts):
+        h = 58
+        s.rect(60, y, 470, h, fill=col, stroke=INK, width=1.2)
+        s.text(80, y + 22, name, size=17, weight="bold", color="#ffffff" if k >= 4 else INK, anchor="start")
+        s.text(80, y + 42, desc, size=13, color="#ffffff" if k >= 4 else INK, anchor="start")
+        y += h
+    s.rect(60, y, 470, 40, fill=SEA, stroke=INK, width=1.2)
+    s.text(295, y + 20, "Atlantic Ocean (Gulf of Guinea)", size=15, weight="bold", color="#1e3a8a")
+    arrow(s, 600, 400, 600, 90, color=MUTED, width=3)
+    s.text(615, 120, "north", size=15, weight="bold", color=INK, anchor="start")
+    s.text(615, 160, "less rain,", size=14, color=ORANGE, anchor="start")
+    s.text(615, 180, "longer dry season,", size=14, color=ORANGE, anchor="start")
+    s.text(615, 200, "fewer trees", size=14, color=ORANGE, anchor="start")
+    s.text(615, 330, "more rain,", size=14, color=GREEN, anchor="start")
+    s.text(615, 350, "denser forest", size=14, color=GREEN, anchor="start")
+    s.text(615, 400, "coast", size=15, weight="bold", color=INK, anchor="start")
+    note(s, "Simplified: belts are wider or narrower in different countries, and much forest has been cleared.", 480, size=13)
+    return s
+
+
+@fig
+def rainforest_layers():
+    s = Svg(800, 480, "Layers (stratification) of the tropical rainforest",
+            "The tropical rainforest has layers: scattered emergent trees over 40 m tall; a continuous canopy at about 25 to "
+            "35 m; an under-canopy of smaller trees; a shrub layer; and a dark forest floor with little undergrowth, covered "
+            "in leaf litter. Lianas (climbers) and epiphytes grow on the trees.")
+    heading(s, "Emergents, canopy, under-canopy, shrubs, floor")
+    s.rect(0, 420, 800, 60, fill="#a16207", stroke="none", width=0)
+    def tree(x, top, crown, col):
+        s.rect(x - 5, top, 10, 420 - top, fill=BROWN, stroke="none", width=0)
+        s.ellipse(x, top, crown, crown * 0.55, fill=col, stroke="#14532d", width=1.5)
+    for x in (230, 520):
+        tree(x, 80, 50, "#15803d")
+    for x in (120, 300, 390, 460, 600, 680):
+        tree(x, 170, 58, "#22c55e")
+    for x in (170, 350, 560, 640):
+        tree(x, 270, 34, "#4ade80")
+    for x in range(80, 720, 70):
+        s.ellipse(x, 380, 26, 14, fill="#86efac", stroke="#15803d", width=1)
+    s.path("M 300 170 Q 320 260 305 330 Q 290 380 310 420", color="#65a30d", width=3)
+    labels = [(770, 80, "Emergents (over 40 m)"), (770, 170, "Canopy (25–35 m)"), (770, 270, "Under-canopy"),
+              (770, 380, "Shrub layer"), (770, 445, "Forest floor: leaf litter")]
+    for x, y, t in labels:
+        s.label(x, y, t, size=15, color=INK, weight="bold", anchor="end")
+    s.label(330, 300, "liana", size=13, color="#3f6212", weight="bold")
+    return s
+
+
+@fig
+def soil_profile():
+    s = Svg(800, 520, "A soil profile and its horizons",
+            "A soil profile is a vertical section through the soil from the surface to the bedrock. The O horizon is leaf "
+            "litter and humus; the A horizon (topsoil) is dark, rich in humus and leached; the B horizon (subsoil) collects "
+            "minerals washed down from above; the C horizon is weathered parent rock; and the R horizon is unweathered "
+            "bedrock.")
+    heading(s, "From leaf litter to bedrock")
+    layers = [("O", "Organic layer: leaf litter, humus", 40, "#3f2d1d", "#ffffff"),
+              ("A", "Topsoil: dark, humus-rich, roots; leached", 90, "#6b4423", "#ffffff"),
+              ("B", "Subsoil: minerals washed in (clay, iron)", 100, "#b45309", "#ffffff"),
+              ("C", "Weathered parent rock", 90, "#d6a76a", INK),
+              ("R", "Bedrock (unweathered)", 80, "#78716c", "#ffffff")]
+    y = 70
+    for k, (h_, desc, hh, col, tc) in enumerate(layers):
+        if h_ == "C":
+            s.rect(140, y, 240, hh, fill=col, stroke=INK, width=1.5)
+            for j in range(7):
+                s.rect(155 + j * 32, y + 20 + (j % 2) * 30, 22, 16, fill="#a8a29e", stroke=INK, width=1)
+        else:
+            s.rect(140, y, 240, hh, fill=col, stroke=INK, width=1.5)
+        s.text(110, y + hh / 2, h_, size=26, weight="bold", color=INK)
+        s.text(410, y + hh / 2, desc, size=15, weight="bold" if k in (1, 2) else "normal", color=INK, anchor="start")
+        y += hh
+    for x in (200, 260, 320):
+        s.path(f"M {x} 110 Q {x - 8} 160 {x + 4} 210", color="#fef3c7", width=2)
+    arrow(s, 40, 120, 40, 250, color=BLUE, width=2.6)
+    s.text(30, 270, "leaching:", size=13, weight="bold", color=BLUE, anchor="start")
+    s.text(30, 288, "water carries", size=12, color=BLUE, anchor="start")
+    s.text(30, 304, "minerals down", size=12, color=BLUE, anchor="start")
+    note(s, "Tropical soils such as Sierra Leone's are deep, red and heavily leached.", 505, size=14)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:

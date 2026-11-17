@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Weather instruments in a weather station</title>
+<desc id="d">A weather station has a Stevenson screen, a white louvred box that shades thermometers (maximum and minimum, and wet- and dry-bulb for humidity). Outside are a rain gauge for rainfall, a wind vane for wind direction, a cup anemometer for wind speed and a sunshine recorder. A barometer indoors measures air pressure.</desc>
+<defs></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">What each instrument measures</text>
+<rect x="30.0" y="90.0" width="160.0" height="104.0" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="110.0" y="218.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Stevenson screen</text>
+<text x="110.0" y="236.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">houses thermometers</text>
+<text x="110.0" y="252.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">and hygrometer</text>
+<rect x="220.0" y="90.0" width="160.0" height="104.0" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="300.0" y="218.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Rain gauge</text>
+<text x="300.0" y="236.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rainfall (mm)</text>
+<rect x="420.0" y="90.0" width="160.0" height="104.0" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="500.0" y="218.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Wind vane</text>
+<text x="500.0" y="236.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">wind direction</text>
+<rect x="610.0" y="90.0" width="160.0" height="104.0" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="690.0" y="218.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cup anemometer</text>
+<text x="690.0" y="236.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">wind speed</text>
+<text x="690.0" y="252.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(km/h or knots)</text>
+<rect x="30.0" y="310.0" width="160.0" height="104.0" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="110.0" y="438.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Max–min thermometer</text>
+<text x="110.0" y="456.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">highest and lowest</text>
+<text x="110.0" y="472.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">temperature (°C)</text>
+<rect x="220.0" y="310.0" width="160.0" height="104.0" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="300.0" y="438.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Wet- and dry-bulb</text>
+<text x="300.0" y="456.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">relative humidity (%)</text>
+<text x="300.0" y="472.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(hygrometer)</text>
+<rect x="420.0" y="310.0" width="160.0" height="104.0" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="500.0" y="438.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Barometer</text>
+<text x="500.0" y="456.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">air pressure</text>
+<text x="500.0" y="472.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(millibars)</text>
+<rect x="610.0" y="310.0" width="160.0" height="104.0" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="690.0" y="438.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sunshine recorder</text>
+<text x="690.0" y="456.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">hours of sunshine</text>
+<rect x="80.0" y="100.0" width="60.0" height="50.0" rx="0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<line x1="84.0" y1="108.0" x2="136.0" y2="108.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="84.0" y1="118.0" x2="136.0" y2="118.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="84.0" y1="128.0" x2="136.0" y2="128.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="84.0" y1="138.0" x2="136.0" y2="138.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="95.0" y1="150.0" x2="95.0" y2="175.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<line x1="125.0" y1="150.0" x2="125.0" y2="175.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<polygon points="282.0,100.0 318.0,100.0 310.0,125.0 290.0,125.0" fill="#dbeafe" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<rect x="290.0" y="125.0" width="20.0" height="45.0" rx="0" fill="#dbeafe" stroke="#0f172a" stroke-width="2"/>
+<line x1="500.0" y1="175.0" x2="500.0" y2="110.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<polygon points="470.0,110.0 530.0,110.0 540.0,100.0 530.0,120.0" fill="#dc2626" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="470.0" y="100.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">N</text>
+<line x1="690.0" y1="175.0" x2="690.0" y2="120.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="690.0" y1="120.0" x2="660.0" y2="115.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<circle cx="660.0" cy="115.0" r="9.0" fill="#e5e7eb" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="690.0" y1="120.0" x2="720.0" y2="115.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<circle cx="720.0" cy="115.0" r="9.0" fill="#e5e7eb" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="80.0" y="315.0" width="14.0" height="70.0" rx="6" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<rect x="126.0" y="315.0" width="14.0" height="70.0" rx="6" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<path d="M 87 385 Q 110 410 133 385" stroke="#0f172a" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="84.0" y="340.0" width="6.0" height="40.0" rx="0" fill="#dc2626" stroke="none" stroke-width="0"/>
+<rect x="130.0" y="330.0" width="6.0" height="50.0" rx="0" fill="#dc2626" stroke="none" stroke-width="0"/>
+<rect x="282.0" y="315.0" width="12.0" height="70.0" rx="6" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<rect x="306.0" y="315.0" width="12.0" height="70.0" rx="6" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<rect x="302.0" y="380.0" width="20.0" height="12.0" rx="0" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.5"/>
+<circle cx="500.0" cy="345.0" r="38.0" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<line x1="500.0" y1="345.0" x2="520.0" y2="322.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<circle cx="690.0" cy="345.0" r="26.0" fill="#e0f2fe" stroke="#0f172a" stroke-width="2"/>
+<path d="M 664 365 Q 690 395 716 365" stroke="#0f172a" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
