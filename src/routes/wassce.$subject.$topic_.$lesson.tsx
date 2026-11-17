@@ -1,12 +1,12 @@
 import { createFileRoute, notFound } from '@tanstack/react-router'
-import { ArrowLeft, ArrowRight } from 'lucide-react'
+import { ArrowLeft, ArrowRight, ListChecks } from 'lucide-react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { StartCta } from '@/components/public/StartCta'
 import { FROM_PRICE } from '@/lib/plans'
 import { hasPractice } from '@/lib/practice-counts'
 import { LessonView } from '@/components/LessonView'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
-import { fetchPublicLessonPage, lessonPath, lessonSummary, subjectPath, topicPath } from '@/lib/public-content'
+import { fetchPublicLessonPage, lessonPath, lessonSummary, questionsPath, subjectPath, topicPath, topicQuestionCount } from '@/lib/public-content'
 import type { PublicLessonPageData } from '@/lib/public-content'
 import { SEARCH_COPY, SITE, absoluteUrl, brandedTitle, breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
@@ -57,7 +57,7 @@ export const Route = createFileRoute('/wassce/$subject/$topic_/$lesson')({
   loader: async ({ params }) => {
     const data = await fetchPublicLessonPage(params.subject, params.topic, params.lesson)
     if (!data) throw notFound()
-    return data
+    return { ...data, questionCount: await topicQuestionCount(data.topic.id) }
   },
   head: ({ loaderData: data }) => {
     if (!data) return privatePageTags('Page not found')
@@ -78,7 +78,7 @@ export const Route = createFileRoute('/wassce/$subject/$topic_/$lesson')({
 
 function PublicLessonPage() {
   const data = Route.useLoaderData()
-  const { subject, topic, lesson } = data
+  const { subject, topic, lesson, questionCount } = data
   const others = topic.lessons.filter((l) => l.id !== lesson.id)
   // The lessons either side, in syllabus order: every lesson has a public page (migration 22).
   const at = topic.lessons.findIndex((l) => l.id === lesson.id)
@@ -126,6 +126,19 @@ function PublicLessonPage() {
       <div className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-bold prose-h2:text-xl prose-h2:mt-6 prose-h2:mb-3 prose-p:leading-relaxed prose-li:my-1 prose-strong:text-foreground">
         <LessonView content={lesson.content} />
       </div>
+
+      {questionCount > 0 && (
+        <a href={questionsPath(subject.slug, topic.slug)} className="group flex items-center gap-4 rounded-2xl border border-primary/25 bg-brand-soft/50 p-4 transition-colors hover:border-primary/50 sm:p-5">
+          <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${palette.soft} ${palette.text}`}>
+            <ListChecks className="h-5 w-5" aria-hidden />
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block font-bold leading-snug group-hover:text-primary">Test yourself: {questionCount} WASSCE questions on {topic.name.toLowerCase()}</span>
+            <span className="mt-0.5 block text-sm text-muted-foreground">With the answers, the full working and why each wrong option is wrong.</span>
+          </span>
+          <ArrowRight className="h-5 w-5 shrink-0 text-primary transition-transform group-hover:translate-x-1" aria-hidden />
+        </a>
+      )}
 
       {(previous || next) && (
         <nav aria-label="Lessons in this topic" className="grid gap-3 sm:grid-cols-2">

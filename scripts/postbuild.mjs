@@ -93,6 +93,15 @@ console.log('[postbuild] updated _shell.html and wrote 404.html')
     }
   }
 
+  // Plan names, prices and lengths from src/lib/plans.ts, so this never quotes an old price.
+  const plansSrc = fs.readFileSync(path.join(root, 'src/lib/plans.ts'), 'utf8')
+  const plans = [...plansSrc.matchAll(/name: '([^']+)',\s*priceNle: (\d+),[\s\S]*?length: '([^']+)'/g)].map((m) => `${m[1]} ${m[2]} NLe for ${m[3]}`)
+  if (plans.length < 2) {
+    console.error('[postbuild] llms.txt: could not read the plans from src/lib/plans.ts')
+    process.exit(1)
+  }
+  const planLine = plans.join(', ')
+
   const unescape = (s) =>
     s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#x27;|&#39;/g, "'")
   const sitemap = fs.readFileSync(path.join(client, 'sitemap.xml'), 'utf8')
@@ -117,8 +126,10 @@ console.log('[postbuild] updated _shell.html and wrote 404.html')
   const sections = [
     ['Start here', pick((p) => MAIN.includes(p)).sort((a, b) => MAIN.indexOf(a.path) - MAIN.indexOf(b.path))],
     ['WASSCE subjects', pick((p) => p.startsWith('/wassce/') && p !== '/wassce/subjects' && depth(p) === 2)],
-    ['WASSCE topics', pick((p) => p.startsWith('/wassce/') && depth(p) === 3)],
-    ['Free lessons', pick((p) => p.startsWith('/wassce/') && depth(p) === 4)],
+    ['WASSCE questions and answers by subject', pick((p) => /^\/wassce\/[^/]+\/questions$/.test(p))],
+    ['WASSCE topics', pick((p) => p.startsWith('/wassce/') && depth(p) === 3 && !p.endsWith('/questions'))],
+    ['Free lessons', pick((p) => p.startsWith('/wassce/') && depth(p) === 4 && !p.endsWith('/questions'))],
+    ['WASSCE questions and answers by topic', pick((p) => /^\/wassce\/[^/]+\/[^/]+\/questions$/.test(p))],
     ['Book a tutor by subject', pick((p) => p.startsWith('/tutors/'))],
     ['Sierra Leone university profiles', pick((p) => p.startsWith('/universities/'))],
     ['WASSCE Tutor editorial articles', pick((p) => p.startsWith('/blog/'))],
@@ -134,8 +145,8 @@ console.log('[postbuild] updated _shell.html and wrote 404.html')
     '',
     '- Who it is for: SSS1 to SSS3 students, private candidates, and the parents and teachers who support them, preparing for the West African Senior School Certificate Examination (WASSCE) in Sierra Leone.',
     '- Practice questions are original WASSCE-style questions written by WASSCE Tutor to match the syllabus and exam format. They are not WAEC past papers, and WASSCE Tutor is not affiliated with WAEC.',
-    '- AI tutor answers are labelled as AI. Book a tutor connects students with real teachers for lessons online or at home, arranged on WhatsApp.',
-    `- A free account (no time limit) opens every subject's syllabus, the first lesson of every topic and a starter practice set in every subject. Paid plans unlock everything: Term pass 10 NLe for 4 months, Academic year 25 NLe for 12 months, paid with Orange Money or AfriMoney and arranged on WhatsApp. No automatic renewal: ${SITE}/#plans`,
+    '- AI tutor answers are labelled as AI. Book a tutor connects students with verified teachers for lessons in person, arranged on WhatsApp.',
+    `- Every lesson in every subject and every practice set (with answers and full working) is free, with no account needed to read them. A free account saves progress. Paid plans add the AI study tutor and timed mock exams: ${planLine}, paid once through a Monime USSD code with Orange Money or AfriMoney. No automatic renewal: ${SITE}/#plans`,
     `- Contact: WhatsApp ${contact.phoneDisplay} (https://wa.me/${contact.whatsapp}), email ${contact.email}. Based in ${contact.locality}, ${contact.country}; serves students across the country online.`,
     `- WhatsApp group: ${contact.whatsappGroup}`,
     '',
@@ -143,4 +154,33 @@ console.log('[postbuild] updated _shell.html and wrote 404.html')
   ]
   fs.writeFileSync(path.join(client, 'llms.txt'), out.join('\n'))
   console.log(`[postbuild] wrote llms.txt (${pages.length} pages)`)
+}
+
+// Question diagrams in the sitemap (Google image sitemap extension), so the
+// diagrams on /wassce/{subject}/{topic}/questions can be found in image search.
+// The urlset already declares the image namespace (TanStack Start writes it).
+{
+  const SITE = 'https://wasscetutor.com'
+  const sitemapPath = path.join(client, 'sitemap.xml')
+  const xml = fs.readFileSync(sitemapPath, 'utf8')
+  if (!xml.includes('xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"')) {
+    console.error('[postbuild] sitemap.xml no longer declares the image namespace; add it before adding image entries')
+    process.exit(1)
+  }
+  const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+  let images = 0
+  const out = xml.replace(/<url>\s*<loc>([^<]+)<\/loc>([\s\S]*?)<\/url>/g, (whole, loc, rest) => {
+    const p = loc.replace(SITE, '')
+    if (!/\/questions$/.test(p) || rest.includes('<image:image>')) return whole
+    const file = path.join(client, `${p.slice(1)}.html`)
+    if (!fs.existsSync(file)) return whole
+    const html = fs.readFileSync(file, 'utf8')
+    const srcs = [...new Set([...html.matchAll(/<img [^>]*src="(https:\/\/wasscetutor\.com\/questions\/[^"]+)"/g)].map((m) => m[1].replace(/&amp;/g, '&')))]
+    if (srcs.length === 0) return whole
+    images += srcs.length
+    const entries = srcs.map((s) => `\n    <image:image>\n      <image:loc>${esc(s)}</image:loc>\n    </image:image>`).join('')
+    return `<url>\n    <loc>${loc}</loc>${rest.replace(/\s+$/, '')}${entries}\n  </url>`
+  })
+  fs.writeFileSync(sitemapPath, out)
+  console.log(`[postbuild] sitemap.xml: ${images} question diagrams listed for image search`)
 }

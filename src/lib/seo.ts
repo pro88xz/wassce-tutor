@@ -405,3 +405,56 @@ export function faqJsonLd(items: [question: string, answer: string][]): Record<s
     mainEntity: items.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })),
   }
 }
+
+export type QuizQuestion = {
+  /** Plain text: the question as written, maths spelled out (no LaTeX). */
+  text: string
+  /** Plain text of each option, with its letter. */
+  options: { label: string; text: string; correct: boolean }[]
+  /** Plain text of the worked solution. */
+  explanation?: string
+  image?: string | null
+}
+
+/**
+ * schema.org Quiz for a page of multiple-choice questions with their answers
+ * and working (all visible on the page). Not marked as flashcards: Google's
+ * Education Q&A carousel is for flashcard pages only, and these are not.
+ */
+export function quizJsonLd({ name, path, about, subject, questions }: { name: string; path: string; about: string; subject: string; questions: QuizQuestion[] }): Record<string, unknown> {
+  const url = absoluteUrl(path)
+  const answer = (o: QuizQuestion['options'][number], explanation?: string) => ({
+    '@type': 'Answer',
+    text: `${o.label}. ${o.text}`,
+    ...(explanation ? { answerExplanation: { '@type': 'Comment', text: explanation } } : {}),
+  })
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Quiz',
+    '@id': `${url}#quiz`,
+    url,
+    name,
+    about: { '@type': 'Thing', name: about },
+    educationalLevel: 'Senior secondary (WASSCE)',
+    educationalAlignment: { '@type': 'AlignmentObject', alignmentType: 'educationalSubject', targetName: subject },
+    learningResourceType: 'Practice problems',
+    assesses: about,
+    isAccessibleForFree: true,
+    inLanguage: 'en',
+    audience: { '@type': 'EducationalAudience', educationalRole: 'student', audienceType: 'WASSCE candidates' },
+    provider: { '@id': ORG_ID },
+    hasPart: questions.map((q, i) => {
+      const correct = q.options.find((o) => o.correct)
+      return {
+        '@type': 'Question',
+        '@id': `${url}#q${i + 1}`,
+        name: `Question ${i + 1}`,
+        text: q.text,
+        eduQuestionType: 'Multiple choice',
+        ...(q.image ? { image: q.image } : {}),
+        ...(correct ? { acceptedAnswer: answer(correct, q.explanation) } : {}),
+        suggestedAnswer: q.options.filter((o) => !o.correct).map((o) => answer(o)),
+      }
+    }),
+  }
+}

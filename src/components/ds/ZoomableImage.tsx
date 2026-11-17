@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Maximize2, X } from 'lucide-react'
 
 /** A diagram that opens full screen on tap, so labels stay readable on small phones. */
-export function ZoomableImage({ src, alt, className = '' }: { src: string; alt: string; className?: string }) {
+export function ZoomableImage({ src, alt, className = '', width, height }: { src: string; alt: string; className?: string; width?: number; height?: number }) {
   const [open, setOpen] = useState(false)
   useEffect(() => {
     if (!open) return
@@ -14,7 +14,7 @@ export function ZoomableImage({ src, alt, className = '' }: { src: string; alt: 
   return (
     <>
       <button type="button" onClick={() => setOpen(true)} className="relative mx-auto mt-4 block w-full max-w-sm rounded-xl" aria-label={`Enlarge diagram: ${alt}`}>
-        <img src={src} alt={alt} loading="lazy" className={`block h-auto w-full rounded-xl border bg-white ${className}`} />
+        <img src={src} alt={alt} width={width} height={height} loading="lazy" decoding="async" className={`block h-auto w-full rounded-xl border bg-white ${className}`} />
         <span className="absolute bottom-2 right-2 inline-flex items-center gap-1 rounded-full bg-black/60 px-2.5 py-1 text-xs font-medium text-white">
           <Maximize2 className="h-3.5 w-3.5" aria-hidden /> Enlarge
         </span>

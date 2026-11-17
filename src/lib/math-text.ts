@@ -179,6 +179,8 @@ export function latexToText(tex: string): string {
   }
   return out
     .replace(/\s+/g, ' ')
+    // a prefix symbol sits against what follows: "∠AOB", "√2", "ΔH", "¬p"
+    .replace(/([∠△√∛∜¬Δ]) +(?=[\w(])/gu, '$1')
     .replace(/ +([,.;)])/g, '$1')
     .replace(/\( +/g, '(')
     .trim()
