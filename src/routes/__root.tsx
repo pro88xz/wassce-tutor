@@ -15,6 +15,8 @@ import { useSendToSignIn } from '@/lib/use-send-to-sign-in'
 import { needsAccount } from '@/lib/return-to'
 import { SITE } from '@/lib/seo'
 import { analyticsScript, GA_MEASUREMENT_ID } from '@/lib/analytics'
+import { PROMO_HIDDEN_UNTIL_KEY } from '@/lib/app-promo'
+import { AppPromoBanner } from '@/components/AppPromoBanner'
 import appCss from '@/index.css?url'
 import nativeCss from '@/native.css?url'
 
@@ -36,6 +38,8 @@ const ReactQueryDevtools = import.meta.env.PROD
 //    ("app-boot", a stored Supabase session) so CSS shows a spinner instead of
 //    the prerendered marketing page while the session is restored.
 //    AuthProvider removes "app-boot" once the session check finishes.
+//  - hides the app banner ("promo-hidden") for visitors who closed it or are
+//    on iPhone/iPad (src/lib/app-promo.ts)
 // It must act only once per document. The router re-inserts head scripts when
 // it renders a route in the browser, which runs this again; without the guard
 // that second run put "app-boot" back for anyone signed in, and after signing
@@ -44,6 +48,7 @@ const BOOT_SCRIPT = `(function(){try{if(window.__wtBooted)return;window.__wtBoot
 if(localStorage.getItem('wassce_theme')==='sepia')d.classList.add('dark');
 var C=window.Capacitor;if(C&&C.isNativePlatform&&C.isNativePlatform())d.classList.add('native-app');
 for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);if(k&&/^sb-.+-auth-token$/.test(k)){d.classList.add('app-boot');break}}
+if(+localStorage.getItem('${PROMO_HIDDEN_UNTIL_KEY}')>Date.now()||/iPhone|iPad|iPod/.test(navigator.userAgent))d.classList.add('promo-hidden');
 }catch(e){}})();`
 
 /** Bump when the icon files change, so returning visitors see the new one. */
@@ -153,6 +158,7 @@ function RootComponent() {
       <SideNav />
       <div className="flex min-w-0 flex-1 flex-col">
         <main id="main" className="flex-1 overflow-y-auto pt-[env(safe-area-inset-top)]">
+          <AppPromoBanner />
           <TopBar />
           {/* Bottom padding clears the fixed mobile navigation bar when it is shown. */}
           <div className={`px-4 pt-4 sm:px-6 sm:pt-6 ${studentNav ? 'pb-28 lg:pb-12' : 'pb-12'}`}>

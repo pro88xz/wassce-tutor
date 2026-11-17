@@ -29,3 +29,18 @@ export function analyticsScript(id: string) {
 w.gtag('js',new Date());w.gtag('config','${id}');
 var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=${id}';document.head.appendChild(s)})();`
 }
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void
+  }
+}
+
+/** Sends a Google Analytics event; does nothing where analytics is off (dev, previews). */
+export function track(event: string, params: Record<string, unknown> = {}) {
+  try {
+    window.gtag?.('event', event, params)
+  } catch {
+    /* analytics must never break the page */
+  }
+}
