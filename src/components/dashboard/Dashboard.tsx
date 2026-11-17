@@ -51,6 +51,7 @@ import { Button } from '@/components/ui/button'
 import { UpdateBanner } from '@/components/UpdateBanner'
 import { SubjectCover } from '@/components/ds/SubjectCover'
 import { StudentTutorBookings } from '@/components/dashboard/StudentTutorBookings'
+import { ReviewPrompt } from '@/components/dashboard/ReviewPrompt'
 
 type Located = { lesson: CurriculumLesson; topic: CurriculumTopic; subject: SubjectRef }
 
@@ -189,6 +190,7 @@ export function Dashboard({ user, profile }: { user: User; profile: Profile | nu
           <div className={`order-5 ${SLOT}`}><UpgradeCard /></div>
           {started && <div className={`order-7 ${SLOT}`}><RecentActivity summary={summary} completed={completed} where={where} /></div>}
           <div className={`order-9 ${SLOT}`}><QuickAccess topic={summary.next?.topic.name ?? null} /></div>
+          {completed.size >= 3 && <div className={`order-10 ${SLOT}`}><ReviewPrompt lessonsDone={completed.size} /></div>}
         </div>
       </div>
     </div>

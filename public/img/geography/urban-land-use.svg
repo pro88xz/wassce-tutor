@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Land-use zones in a city</title>
+<desc id="d">A simple model of a city has the central business district (CBD) at the centre, with shops, offices and banks; around it a zone of mixed land use and older, crowded housing; then residential zones, with low-cost housing and informal settlements in some places and high-cost housing in others; industry along transport routes and at the port; and the rural–urban fringe at the edge.</desc>
+<defs></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">From the CBD to the rural–urban fringe</text>
+<circle cx="300.0" cy="260.0" r="190.0" fill="#dcfce7" stroke="#0f172a" stroke-width="1.5"/>
+<circle cx="300.0" cy="260.0" r="150.0" fill="#e0e7ff" stroke="#0f172a" stroke-width="1.5"/>
+<circle cx="300.0" cy="260.0" r="105.0" fill="#fef3c7" stroke="#0f172a" stroke-width="1.5"/>
+<circle cx="300.0" cy="260.0" r="60.0" fill="#fed7aa" stroke="#0f172a" stroke-width="1.5"/>
+<circle cx="300.0" cy="260.0" r="28.0" fill="#fca5a5" stroke="#0f172a" stroke-width="1.5"/>
+<text x="300.0" y="260.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">CBD</text>
+<rect x="340.0" y="70.0" width="34.0" height="380.0" rx="0" fill="#cbd5e1" stroke="none" stroke-width="0"/>
+<text x="357.0" y="110.0" font-size="11" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">industry</text>
+<rect x="510.0" y="96.0" width="26.0" height="26.0" rx="0" fill="#fca5a5" stroke="#0f172a" stroke-width="1.2"/>
+<text x="546.0" y="106.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">CBD</text>
+<text x="546.0" y="124.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">shops, offices, banks; dearest land</text>
+<rect x="510.0" y="150.0" width="26.0" height="26.0" rx="0" fill="#fed7aa" stroke="#0f172a" stroke-width="1.2"/>
+<text x="546.0" y="160.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Transition zone</text>
+<text x="546.0" y="178.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">workshops, warehouses, old houses</text>
+<rect x="510.0" y="204.0" width="26.0" height="26.0" rx="0" fill="#fef3c7" stroke="#0f172a" stroke-width="1.2"/>
+<text x="546.0" y="214.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Inner residential</text>
+<text x="546.0" y="232.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">crowded and informal housing</text>
+<rect x="510.0" y="258.0" width="26.0" height="26.0" rx="0" fill="#e0e7ff" stroke="#0f172a" stroke-width="1.2"/>
+<text x="546.0" y="268.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Outer residential</text>
+<text x="546.0" y="286.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">newer housing; high-cost estates</text>
+<rect x="510.0" y="312.0" width="26.0" height="26.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="1.2"/>
+<text x="546.0" y="322.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Industrial zone</text>
+<text x="546.0" y="340.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">along roads, rail and the port</text>
+<rect x="510.0" y="366.0" width="26.0" height="26.0" rx="0" fill="#dcfce7" stroke="#0f172a" stroke-width="1.2"/>
+<text x="546.0" y="376.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Rural–urban fringe</text>
+<text x="546.0" y="394.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">farms, new building, sprawl</text>
+<text x="400.0" y="458.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Real cities, like Freetown squeezed between sea and mountains, bend this model to their site.</text>
+</svg>

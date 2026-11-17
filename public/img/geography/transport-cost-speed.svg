@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Comparing transport modes by speed and cost</title>
+<desc id="d">Air transport is the fastest but most expensive per tonne. Road transport is flexible and fairly fast over short distances. Rail is cheaper for heavy, bulky goods over long distances. Water (sea and river) transport is the slowest but the cheapest for bulky goods. Pipelines carry liquids and gas cheaply once built.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="800" height="440" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Fast and dear, or slow and cheap?</text>
+<line x1="120.0" y1="380.0" x2="740.0" y2="380.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="120.0" y1="380.0" x2="120.0" y2="70.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="680.0" y="402.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">speed →</text>
+<text x="60.0" y="225.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">cost per</text>
+<text x="60.0" y="245.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">tonne →</text>
+<circle cx="170.0" cy="350.0" r="18.0" fill="#2563eb" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="150.0" y="287.5" width="161.2" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="150.0" y="300.0" font-size="15" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">Water (sea, river)</text>
+<circle cx="260.0" cy="330.0" r="18.0" fill="#0f766e" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="290.0" y="337.5" width="77.2" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="290.0" y="350.0" font-size="15" fill="#0f766e" text-anchor="start" dominant-baseline="middle" font-weight="bold">Pipeline</text>
+<circle cx="330.0" cy="280.0" r="18.0" fill="#7c3aed" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="354.0" y="243.5" width="43.6" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="354.0" y="256.0" font-size="15" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">Rail</text>
+<circle cx="470.0" cy="220.0" r="18.0" fill="#ea580c" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="494.0" y="183.5" width="43.6" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="494.0" y="196.0" font-size="15" fill="#ea580c" text-anchor="start" dominant-baseline="middle" font-weight="bold">Road</text>
+<circle cx="660.0" cy="110.0" r="18.0" fill="#dc2626" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="684.0" y="73.5" width="35.2" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="684.0" y="86.0" font-size="15" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">Air</text>
+<text x="400.0" y="425.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Bulky goods (iron ore, bauxite) go by rail and sea; urgent, light goods go by air.</text>
+</svg>

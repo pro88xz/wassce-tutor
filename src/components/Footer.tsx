@@ -3,6 +3,7 @@ import { ChevronDown, Mail, MapPin } from 'lucide-react'
 import { useAuth } from '@/lib/auth'
 import { ADDRESS_LINE, CONTACT, whatsappChatLink } from '@/lib/contact'
 import { BrandMark } from '@/components/BrandMark'
+import { GOOGLE_REVIEW_URL } from '@/lib/reviews'
 import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
 
 const SHOW_ON = ['/', '/about', '/contact', '/privacy', '/terms']
@@ -45,6 +46,7 @@ const GROUPS: Group[] = [
     links: [
       { label: 'Contact us', href: '/contact' },
       { label: 'WhatsApp group', href: CONTACT.whatsappGroup },
+      { label: 'Review us on Google', href: GOOGLE_REVIEW_URL },
       { label: 'Report a problem', href: `mailto:${CONTACT.email}?subject=${encodeURIComponent('Problem report: WASSCE Tutor')}` },
     ],
   },

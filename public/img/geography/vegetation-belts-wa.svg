@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Vegetation belts of West Africa from the coast to the Sahara</title>
+<desc id="d">Going north from the Gulf of Guinea coast, rainfall falls and the dry season lengthens, so vegetation changes in belts: mangrove swamps on the coast, tropical rainforest, Guinea savanna (tall grass with trees), Sudan savanna (shorter grass, fewer trees), Sahel savanna (thorn bushes and short grass) and finally the Sahara desert.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Rainfall falls northwards, and vegetation changes in belts</text>
+<rect x="60.0" y="70.0" width="470.0" height="58.0" rx="0" fill="#fde68a" stroke="#0f172a" stroke-width="1.2"/>
+<text x="80.0" y="92.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Sahara desert</text>
+<text x="80.0" y="112.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">under 250 mm</text>
+<rect x="60.0" y="128.0" width="470.0" height="58.0" rx="0" fill="#fcd9a3" stroke="#0f172a" stroke-width="1.2"/>
+<text x="80.0" y="150.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Sahel savanna</text>
+<text x="80.0" y="170.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">250–500 mm; thorn scrub</text>
+<rect x="60.0" y="186.0" width="470.0" height="58.0" rx="0" fill="#d9f99d" stroke="#0f172a" stroke-width="1.2"/>
+<text x="80.0" y="208.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Sudan savanna</text>
+<text x="80.0" y="228.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">500–1,000 mm; short grass</text>
+<rect x="60.0" y="244.0" width="470.0" height="58.0" rx="0" fill="#a3e635" stroke="#0f172a" stroke-width="1.2"/>
+<text x="80.0" y="266.0" font-size="17" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Guinea savanna</text>
+<text x="80.0" y="286.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">1,000–1,500 mm; tall grass, trees</text>
+<rect x="60.0" y="302.0" width="470.0" height="58.0" rx="0" fill="#22c55e" stroke="#0f172a" stroke-width="1.2"/>
+<text x="80.0" y="324.0" font-size="17" fill="#ffffff" text-anchor="start" dominant-baseline="middle" font-weight="bold">Tropical rainforest</text>
+<text x="80.0" y="344.0" font-size="13" fill="#ffffff" text-anchor="start" dominant-baseline="middle" font-weight="normal">over 1,500 mm; tall evergreen trees</text>
+<rect x="60.0" y="360.0" width="470.0" height="58.0" rx="0" fill="#0f766e" stroke="#0f172a" stroke-width="1.2"/>
+<text x="80.0" y="382.0" font-size="17" fill="#ffffff" text-anchor="start" dominant-baseline="middle" font-weight="bold">Mangrove swamp</text>
+<text x="80.0" y="402.0" font-size="13" fill="#ffffff" text-anchor="start" dominant-baseline="middle" font-weight="normal">tidal coast and estuaries</text>
+<rect x="60.0" y="418.0" width="470.0" height="40.0" rx="0" fill="#93c5fd" stroke="#0f172a" stroke-width="1.2"/>
+<text x="295.0" y="438.0" font-size="15" fill="#1e3a8a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Atlantic Ocean (Gulf of Guinea)</text>
+<line x1="600.0" y1="400.0" x2="600.0" y2="90.0" stroke="#475569" stroke-width="3" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="615.0" y="120.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">north</text>
+<text x="615.0" y="160.0" font-size="14" fill="#ea580c" text-anchor="start" dominant-baseline="middle" font-weight="normal">less rain,</text>
+<text x="615.0" y="180.0" font-size="14" fill="#ea580c" text-anchor="start" dominant-baseline="middle" font-weight="normal">longer dry season,</text>
+<text x="615.0" y="200.0" font-size="14" fill="#ea580c" text-anchor="start" dominant-baseline="middle" font-weight="normal">fewer trees</text>
+<text x="615.0" y="330.0" font-size="14" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="normal">more rain,</text>
+<text x="615.0" y="350.0" font-size="14" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="normal">denser forest</text>
+<text x="615.0" y="400.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">coast</text>
+<text x="400.0" y="480.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Simplified: belts are wider or narrower in different countries, and much forest has been cleared.</text>
+</svg>

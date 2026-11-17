@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The greenhouse effect and global warming</title>
+<desc id="d">Sunlight passes through the atmosphere and warms the Earth. The Earth gives off heat (infrared), and greenhouse gases such as carbon dioxide, methane and water vapour trap some of it, keeping the planet warm. Burning fossil fuels and cutting forests add more greenhouse gases, trapping more heat and causing global warming.</desc>
+<defs><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker><marker id="af97316" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#f97316"/></marker><marker id="af97316s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#f97316"/></marker></defs>
+<rect width="800" height="440" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">More greenhouse gases trap more heat</text>
+<circle cx="80.0" cy="100.0" r="40.0" fill="#fde68a" stroke="#ea580c" stroke-width="3"/>
+<text x="80.0" y="100.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sun</text>
+<path d="M 0 330 Q 400 280 800 330 L 800 440 L 0 440 Z" stroke="#0f172a" stroke-width="2" fill="#86efac" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 0 170 Q 400 110 800 170" stroke="#94a3b8" stroke-width="14" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="620.0" y="125.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">greenhouse gases (CO₂, methane)</text>
+<line x1="120.0" y1="130.0" x2="330.0" y2="300.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<text x="200.0" y="250.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">sunlight in</text>
+<line x1="380.0" y1="300.0" x2="450.0" y2="175.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<line x1="450.0" y1="175.0" x2="510.0" y2="290.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="530.0" y="240.0" font-size="14" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">heat trapped and</text>
+<text x="530.0" y="258.0" font-size="14" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">sent back down</text>
+<line x1="300.0" y1="290.0" x2="260.0" y2="60.0" stroke="#f97316" stroke-width="2" stroke-linecap="round" marker-end="url(#af97316)"/>
+<text x="272.0" y="52.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">some heat escapes</text>
+<rect x="640.0" y="300.0" width="30.0" height="40.0" rx="0" fill="#6b7280" stroke="#0f172a" stroke-width="1.5"/>
+<circle cx="655.0" cy="285.0" r="8.0" fill="#d1d5db" stroke="#475569" stroke-width="1"/>
+<circle cx="663.0" cy="271.0" r="10.0" fill="#d1d5db" stroke="#475569" stroke-width="1"/>
+<circle cx="671.0" cy="257.0" r="12.0" fill="#d1d5db" stroke="#475569" stroke-width="1"/>
+<text x="655.0" y="380.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">burning fuel</text>
+<text x="140.0" y="380.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">deforestation adds CO₂</text>
+</svg>
