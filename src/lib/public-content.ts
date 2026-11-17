@@ -287,10 +287,66 @@ export type PopularTopic = {
   firstLessons: { title: string; minutes: number | null; free: boolean }[]
 }
 
+/** One topic shown as a course card in the homepage course rows. */
+export type CourseCard = {
+  topicSlug: string
+  topicName: string
+  /** The topic's syllabus description, shortened for the card's preview. */
+  summary: string | null
+  lessons: number
+  /** Sum of the lessons' estimated reading times. */
+  minutes: number
+  freeLessons: number
+  firstLessons: string[]
+}
+
+/** A subject's row of course cards on the homepage. */
+export type CourseRow = { subjectSlug: string; subjectName: string; topicCount: number; lessonCount: number; courses: CourseCard[] }
+
 export type LandingData = {
   subjects: SubjectSummary[]
   totals: { subjects: number; topics: number; lessons: number }
   popular: PopularTopic[]
+  courseRows: CourseRow[]
+}
+
+const shorten = (text: string | null, max = 150) => {
+  if (!text) return null
+  const t = text.replace(/\s+/g, ' ').trim()
+  if (t.length <= max) return t
+  const cut = t.slice(0, max)
+  return cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:.\s]+$/, '') + '…'
+}
+
+/**
+ * Course rows: the subjects with the most lessons, each with up to eight of
+ * its topics that have lessons, in syllabus order (where a student starts).
+ */
+function courseRowsFrom(subjects: SubjectSummary[], topics: TopicWithLessons[]): CourseRow[] {
+  return subjects
+    .filter((s) => s.lessonCount > 0)
+    .sort((a, b) => b.lessonCount - a.lessonCount)
+    .slice(0, 6)
+    .map((s) => ({
+      subjectSlug: s.slug,
+      subjectName: s.name,
+      topicCount: s.topicCount,
+      lessonCount: s.lessonCount,
+      courses: topics
+        .filter((t) => t.subject_id === s.id && hasTopicPage(t) && t.lessons.length > 0)
+        .sort((a, b) => (a.group_order ?? 0) - (b.group_order ?? 0) || a.sort_order - b.sort_order)
+        .slice(0, 8)
+        .map((t) => ({
+          topicSlug: t.slug,
+          topicName: t.name,
+          summary: shorten(t.description),
+          lessons: t.lessons.length,
+          minutes: t.lessons.reduce((n, l) => n + (l.est_minutes ?? 0), 0),
+          freeLessons: t.lessons.filter((l) => l.is_public).length,
+          firstLessons: [...t.lessons].sort((a, b) => a.sort_order - b.sort_order).slice(0, 3).map((l) => l.title),
+        })),
+    }))
+    .filter((r) => r.courses.length > 0)
 }
 
 /** Homepage data: subjects with counts, totals for the proof strip, and the topics with the most lessons. */
@@ -332,6 +388,7 @@ export async function fetchLandingData(): Promise<LandingData> {
       lessons: subjects.reduce((n, s) => n + s.lessonCount, 0),
     },
     popular,
+    courseRows: courseRowsFrom(subjects, topics),
   }
 }
 

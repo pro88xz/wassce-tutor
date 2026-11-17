@@ -15,7 +15,7 @@ export type TopicShortcut = { label: string; href: string }
  * shortcut never leads to a page with no lessons.
  */
 /** `light` for a pale background (the subject catalogue), `dark` for the ink hero. */
-export function TopicSearch({ shortcuts = [], tone = 'dark' }: { shortcuts?: TopicShortcut[]; tone?: 'dark' | 'light' }) {
+export function TopicSearch({ shortcuts = [], tone = 'dark', size = 'md' }: { shortcuts?: TopicShortcut[]; tone?: 'dark' | 'light'; size?: 'md' | 'lg' }) {
   const [query, setQuery] = useState('')
   const [index, setIndex] = useState<SearchEntry[] | null>(null)
   const [open, setOpen] = useState(false)
@@ -47,7 +47,7 @@ export function TopicSearch({ shortcuts = [], tone = 'dark' }: { shortcuts?: Top
   return (
     <div className="relative w-full text-left">
       <label htmlFor="topic-search" className="sr-only">Search WASSCE subjects and topics</label>
-      <div className={`flex items-center gap-3 rounded-xl bg-white px-4 transition-shadow focus-within:ring-2 focus-within:ring-violet-300 ${tone === 'light' ? 'shadow-[0_14px_32px_-24px_rgba(23,28,43,.45)] ring-1 ring-slate-200' : 'shadow-[0_18px_40px_-22px_rgba(0,0,0,.7)] ring-1 ring-white/30'}`}>
+      <div className={`flex items-center gap-3 bg-white transition-shadow ${size === 'lg' ? 'rounded-2xl pl-5 pr-2' : 'rounded-xl px-4'} focus-within:ring-2 focus-within:ring-violet-300 ${tone === 'light' ? 'shadow-[0_18px_40px_-24px_rgba(30,20,80,.45)] ring-1 ring-slate-300/80' : 'shadow-[0_18px_40px_-22px_rgba(0,0,0,.7)] ring-1 ring-white/30'}`}>
         <Search className="h-5 w-5 shrink-0 text-slate-400" aria-hidden />
         <input
           id="topic-search"
@@ -56,10 +56,15 @@ export function TopicSearch({ shortcuts = [], tone = 'dark' }: { shortcuts?: Top
           onChange={(e) => { setQuery(e.target.value); setOpen(true) }}
           onFocus={() => { load(); setOpen(true) }}
           onBlur={() => setTimeout(() => setOpen(false), 150)}
-          placeholder="Search a subject or topic, e.g. photosynthesis"
+          placeholder={size === 'lg' ? 'Search topics, e.g. indices' : 'Search a subject or topic, e.g. photosynthesis'}
           autoComplete="off"
-          className="h-14 w-full bg-transparent text-base text-slate-900 placeholder:text-slate-400 focus:outline-none"
+          className={`${size === 'lg' ? 'h-16' : 'h-14'} w-full min-w-0 bg-transparent text-base text-slate-900 placeholder:text-slate-400 focus:outline-none`}
         />
+        {size === 'lg' && (
+          <label htmlFor="topic-search" aria-hidden className="hidden h-12 shrink-0 cursor-pointer items-center rounded-xl bg-[var(--primary)] px-5 text-sm font-bold text-white transition-colors hover:bg-[var(--brand-strong)] sm:flex">
+            Search
+          </label>
+        )}
       </div>
 
       {open && query.trim().length >= 2 && (

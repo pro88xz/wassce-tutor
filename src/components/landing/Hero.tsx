@@ -2,7 +2,7 @@
 // actions on the left; on the right a classroom photograph on the violet
 // brand slab (BrandPhoto) with two real pieces of the product on it. Below,
 // a light strip with the live counts and what the content is (and is not).
-// Topic search lives with the subject catalogue further down.
+// Topic search sits under the promise, as on a course catalogue.
 import { Link } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
 import { ArrowDown, ArrowRight, BookOpen, Check, CircleCheck, ClipboardCheck, Layers, Library, PenLine, ScrollText, ShieldCheck, Users } from 'lucide-react'
@@ -11,6 +11,16 @@ import { PRACTICE_TOTAL } from '@/lib/practice-counts'
 import { supabase } from '@/lib/supabase'
 import { SAMPLE_QUESTIONS } from '@/content/sample-questions'
 import { BrandPhoto } from '@/components/public/BrandPhoto'
+import { TopicSearch, type TopicShortcut } from '@/components/landing/TopicSearch'
+import { topicPath, type PopularTopic } from '@/lib/public-content'
+
+/** Shortcut chips: popular topics that have lessons, short enough to read as a chip. */
+function shortcutsFrom(popular: PopularTopic[]): TopicShortcut[] {
+  return popular
+    .filter((t) => t.lessons > 0 && t.topicName.length <= 22)
+    .slice(0, 4)
+    .map((t) => ({ label: t.topicName, href: topicPath(t.subjectSlug, t.topicSlug) }))
+}
 
 const ASSURANCES = ['Free to start', 'No card needed', 'Works on any phone']
 
@@ -31,12 +41,17 @@ export function Hero({ data }: { data: LandingData }) {
           <p className="mt-5 max-w-lg text-[17px] leading-relaxed text-muted-foreground sm:text-lg">
             Syllabus lessons, instant marking that explains every answer, and real tutors.
           </p>
-          <div className="mt-8 flex flex-wrap gap-2.5 sm:gap-3">
-            <Link to="/auth" className="site-btn site-btn-lg site-btn-primary flex-1 px-5 sm:flex-none">
+          {/* Search first, as on a course catalogue: most visitors arrive knowing their subject or topic. */}
+          <div className="mt-7 max-w-xl">
+            <p className="mb-2.5 text-sm font-bold text-foreground">What do you want to study?</p>
+            <TopicSearch shortcuts={shortcutsFrom(data.popular)} tone="light" size="lg" />
+          </div>
+          <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+            <Link to="/auth" className="site-btn site-btn-lg site-btn-primary px-6">
               Start learning free <ArrowRight className="h-4 w-4" aria-hidden />
             </Link>
-            <a href="#try-a-question" className="site-btn site-btn-lg site-btn-secondary flex-1 px-5 sm:flex-none">
-              Try a question <ArrowDown className="h-4 w-4" aria-hidden />
+            <a href="#try-a-question" className="site-link">
+              or try a question <ArrowDown className="h-4 w-4" aria-hidden />
             </a>
           </div>
           <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-1.5 text-[13px] font-medium text-muted-foreground sm:text-sm">
