@@ -29,6 +29,7 @@ import { useReveal } from '@/components/ds/useReveal'
 import { Hero } from '@/components/landing/Hero'
 import { SubjectShowcase } from '@/components/landing/SubjectShowcase'
 import { CourseRows } from '@/components/landing/CourseRows'
+import { SyllabusWall } from '@/components/landing/SyllabusWall'
 import { TryQuestion } from '@/components/landing/TryQuestion'
 import { HowItWorks } from '@/components/landing/HowItWorks'
 import { MockExams } from '@/components/landing/MockExams'
@@ -45,6 +46,7 @@ export function Landing({ data }: { data: LandingData }) {
     // Full-bleed: cancels the app wrapper's padding and the header/footer gaps.
     <div ref={root} className="site-bleed -mb-16 -mt-6">
       <Hero data={data} />
+      <SyllabusWall data={data} />
       <CourseRows rows={data.courseRows} />
       <TryQuestion />
       <SubjectShowcase subjects={data.subjects} />

@@ -22,7 +22,7 @@ export function CourseRows({ rows }: { rows: CourseRow[] }) {
       <SectionHeading
         id="courses-heading"
         eyebrow="Courses"
-        title="Every topic is a short course."
+        title={<>Every topic is a <span className="site-accent text-[var(--primary)]">short course.</span></>}
         lede="Lessons in syllabus order, worked examples and practice questions with the full working. Every lesson is free."
         action={
           <a href="/wassce/subjects" className="site-link">

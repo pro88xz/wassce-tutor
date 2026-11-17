@@ -21,7 +21,7 @@ export function HowItWorks() {
       <SectionHeading
         id="method-heading"
         eyebrow="How it works"
-        title="Learn it. Practise it. Master it."
+        title={<>Learn it. Practise it. <span className="site-accent text-[var(--primary)]">Master it.</span></>}
         action={
           <a href={LESSON_HREF} className="site-link">
             Read a free lesson <ArrowRight className="h-4 w-4" aria-hidden />

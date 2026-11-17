@@ -20,7 +20,7 @@ export function MockExams({ subjects }: { subjects: SubjectSummary[] }) {
       <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-16">
         <div data-reveal className="max-w-xl">
           <p className="site-eyebrow">New: timed mock exams</p>
-          <h2 id="mock-heading" className="site-h2 mt-3">Sit a full Paper 1 before the real one.</h2>
+          <h2 id="mock-heading" className="site-h2 mt-3">Sit a full Paper 1 <span className="site-accent text-[#cdbcff]">before the real one.</span></h2>
           <p className="site-lede mt-4">
             {first.questions} questions from across the syllabus, in the time WAEC gives. When the clock stops, see your score, the working, and exactly which topics to revise.
           </p>

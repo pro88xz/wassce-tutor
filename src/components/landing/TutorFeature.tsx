@@ -26,7 +26,7 @@ export function TutorFeature() {
         </div>
         <div data-reveal="1" className="max-w-xl">
           <p className="site-eyebrow">Book a tutor</p>
-          <h2 id="tutor-heading" className="site-h2 mt-3">Need a real tutor?</h2>
+          <h2 id="tutor-heading" className="site-h2 mt-3">Need a <span className="site-accent text-[var(--primary)]">real</span> tutor?</h2>
           <p className="site-lede mt-4">Verified WASSCE tutors near you, with the fee shown up front.</p>
           <ul className="mt-6 space-y-3">
             {POINTS.map((t) => (

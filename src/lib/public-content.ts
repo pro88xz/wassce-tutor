@@ -337,11 +337,19 @@ export type CourseCard = {
 /** A subject's row of course cards on the homepage. */
 export type CourseRow = { subjectSlug: string; subjectName: string; topicCount: number; lessonCount: number; courses: CourseCard[] }
 
+/**
+ * One subject's row on the homepage syllabus wall: its topics with lessons
+ * (in syllabus order) and how many syllabus topics are still to come. Only
+ * the number of those is sent, to keep the homepage light.
+ */
+export type SyllabusRow = { slug: string; name: string; topics: { slug: string; name: string; lessons: number }[]; planned: number }
+
 export type LandingData = {
   subjects: SubjectSummary[]
   totals: { subjects: number; topics: number; lessons: number }
   popular: PopularTopic[]
   courseRows: CourseRow[]
+  syllabus: SyllabusRow[]
 }
 
 const shorten = (text: string | null, max = 150) => {
@@ -423,7 +431,27 @@ export async function fetchLandingData(): Promise<LandingData> {
     },
     popular,
     courseRows: courseRowsFrom(subjects, topics),
+    syllabus: syllabusFrom(subjects, topics),
   }
+}
+
+/** Every subject with a syllabus page, fullest first, each with all its topics in syllabus order. */
+function syllabusFrom(subjects: SubjectSummary[], topics: TopicWithLessons[]): SyllabusRow[] {
+  const rows = subjects
+    .filter((s) => hasSubjectPage(s.topicCount))
+    .map((s) => {
+      const own = topics
+        .filter((t) => t.subject_id === s.id)
+        .sort((a, b) => (a.group_order ?? 0) - (b.group_order ?? 0) || a.sort_order - b.sort_order)
+      const taught = own.filter(hasTopicPage)
+      return {
+        slug: s.slug,
+        name: s.name,
+        topics: taught.map((t) => ({ slug: t.slug, name: t.name, lessons: t.lessons.length })),
+        planned: own.length - taught.length,
+      }
+    })
+  return rows.sort((a, b) => b.topics.length - a.topics.length || a.name.localeCompare(b.name))
 }
 
 export type SearchEntry = { kind: 'subject' | 'topic'; name: string; subjectName: string; href: string; lessons: number }
