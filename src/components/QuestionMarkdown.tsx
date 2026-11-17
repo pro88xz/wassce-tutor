@@ -4,6 +4,7 @@
 // not raw $...$ text. The same plugins as the app's question screen, without
 // LessonView's lesson directives and per-instance listeners (a questions page
 // renders dozens of these).
+import { memo } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
@@ -17,7 +18,8 @@ const REHYPE = [[rehypeKatex, { strict: 'ignore' }]] as const
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const COMPONENTS = { table: (props: any) => <MdTable className="not-prose my-3" {...props} /> }
 
-export function QuestionMarkdown({ content, className }: { content: string; className?: string }) {
+// Memoised, like LessonView: re-parsing dozens of formulas on every re-render of the page costs real time on a phone.
+export const QuestionMarkdown = memo(function QuestionMarkdown({ content, className }: { content: string; className?: string }) {
   return (
     <div className={className}>
       {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
@@ -26,4 +28,4 @@ export function QuestionMarkdown({ content, className }: { content: string; clas
       </ReactMarkdown>
     </div>
   )
-}
+})
