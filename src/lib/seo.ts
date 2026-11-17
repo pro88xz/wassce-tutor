@@ -117,6 +117,19 @@ export const SEARCH_COPY: Partial<Record<string, { title: string; description: s
     description:
       'Learn what literature is, why we read it and its three genres, prose, drama and poetry, then every topic of the WASSCE Literature in English syllabus.',
   },
+  // Nov 2026: 221 impressions, 0 clicks, mostly "difference between reflection,
+  // refraction and diffraction" (often "with examples" or "and interference").
+  '/wassce/physics/wave-phenomena/reflection-refraction-and-diffraction-of-waves': {
+    title: 'Reflection, Refraction and Diffraction: Differences & Examples',
+    description:
+      'The difference between reflection, refraction and diffraction: waves bounce, bend or spread. Table of water, sound and light examples, plus interference.',
+  },
+  // Nov 2026: position 5 to 7 for "what is agriculture", 0 clicks.
+  '/wassce/agricultural-science/introduction-to-agriculture/defining-agriculture-and-its-importance': {
+    title: 'What Is Agriculture? Meaning, Importance and Branches',
+    description:
+      'Agriculture is growing crops and rearing animals for food, raw materials and income. Its meaning, branches, types and importance, with Sierra Leone examples.',
+  },
 }
 
 /** Google shows about 60 characters of a title: add the brand only when it still fits. */
