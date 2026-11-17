@@ -26,5 +26,17 @@ export const topicPath = (subjectSlug: string, topicSlug: string) => `/wassce/${
 export const lessonPath = (subjectSlug: string, topicSlug: string, lessonSlug: string) =>
   `/wassce/${subjectSlug}/${topicSlug}/${lessonSlug}`
 
+/**
+ * A topic gets a questions page (/wassce/{subject}/{topic}/questions) when it
+ * has a topic page and at least this many practice questions: enough to be
+ * worth a page of its own, never a near-empty one.
+ */
+export const MIN_TOPIC_QUESTIONS = 3
+export const hasQuestionsPageByCount = (questionCount: number) => questionCount >= MIN_TOPIC_QUESTIONS
+
+/** WASSCE questions and answers: a topic's (/wassce/{subject}/{topic}/questions) or the subject's index of them. */
+export const questionsPath = (subjectSlug: string, topicSlug?: string) =>
+  topicSlug ? `/wassce/${subjectSlug}/${topicSlug}/questions` : `/wassce/${subjectSlug}/questions`
+
 /** Book a tutor pages: /tutors and /tutors/{subject} (one per subject with a syllabus page). */
 export const tutorsPath = (subjectSlug?: string) => (subjectSlug ? `/tutors/${subjectSlug}` : '/tutors')

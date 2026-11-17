@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
-import { ArrowRight, BookOpen, Check, ClipboardCheck, Clock, Gift, PencilLine, Shapes, Smartphone } from 'lucide-react'
+import { ArrowRight, BookOpen, Check, ClipboardCheck, Clock, Gift, ListChecks, PencilLine, Shapes, Smartphone } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { CourseCard } from '@/components/public/CourseCard'
@@ -11,7 +11,7 @@ import { subjectArt } from '@/components/ds/SubjectCover'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { useAuth } from '@/lib/auth'
 import { PRACTICE_QUESTIONS, hasPractice } from '@/lib/practice-counts'
-import { fetchTopicPage, hasTopicPage, lessonMinutes, lessonPath, subjectPath, topicPath } from '@/lib/public-content'
+import { fetchTopicPage, hasTopicPage, lessonMinutes, lessonPath, questionsPath, subjectPath, topicPath, topicQuestionCount } from '@/lib/public-content'
 import type { TopicPageData, TopicWithLessons } from '@/lib/public-content'
 import { SEARCH_COPY, brandedTitle, breadcrumbJsonLd, fitDescription, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { studyTime } from '@/lib/study-time'
@@ -49,7 +49,9 @@ export const Route = createFileRoute('/wassce/$subject/$topic')({
       const o = all[outlineKey(data.topic.slug, l.slug)]
       if (o) outlines[l.slug] = o
     }
-    return { ...data, outlines }
+    // Practice questions with answers: the topic's own questions page, when it has one.
+    const questionCount = await topicQuestionCount(data.topic.id)
+    return { ...data, outlines, questionCount }
   },
   head: ({ loaderData: data }) => {
     if (!data) return privatePageTags('Page not found')
@@ -90,7 +92,7 @@ const asCourse = (t: TopicWithLessons) => ({
 // as the homepage's course cards. Every number comes from the lessons.
 function TopicPage() {
   const data = Route.useLoaderData()
-  const { subject, topic, group, previous, next, outlines, coverIndex } = data
+  const { subject, topic, group, previous, next, outlines, coverIndex, questionCount } = data
   const { user } = useAuth()
   const art = subjectArt(subject.slug)
   const cover = { subjectSlug: subject.slug, subjectName: subject.name, topicSlug: topic.slug, topicName: topic.name, index: coverIndex[topic.id] ?? 0 }
@@ -105,6 +107,7 @@ function TopicPage() {
   const firstLesson = lessons.find((l) => l.is_public)
   const { worked, figures } = totals(lessons.map((l) => outlines[l.slug]))
   const practice = hasPractice(subject.slug) ? (PRACTICE_QUESTIONS[subject.slug] ?? 0) : 0
+  const questionsHref = questionCount > 0 ? questionsPath(subject.slug, topic.slug) : null
   const lessonHref = (l: (typeof lessons)[number]) => (l.is_public ? lessonPath(subject.slug, topic.slug, l.slug) : user ? `/lesson/${l.id}` : null)
 
   // Where the topic sits in its section of the syllabus.
@@ -125,6 +128,7 @@ function TopicPage() {
     ...(minutes > 0 ? [{ icon: <Clock className="h-[18px] w-[18px]" />, text: `${studyTime(minutes)} of study` }] : []),
     ...(worked > 0 ? [{ icon: <PencilLine className="h-[18px] w-[18px]" />, text: plural(worked, 'worked example') }] : []),
     ...(figures > 0 ? [{ icon: <Shapes className="h-[18px] w-[18px]" />, text: plural(figures, 'diagram') }] : []),
+    ...(questionCount > 0 ? [{ icon: <ListChecks className="h-[18px] w-[18px]" />, text: plural(questionCount, 'practice question') }] : []),
     ...(freeCount > 0 ? [{ icon: <Gift className="h-[18px] w-[18px]" />, text: allFree ? (count === 1 ? 'Free' : 'Every lesson free') : `${freeCount} free` }] : []),
   ]
 
@@ -184,7 +188,13 @@ function TopicPage() {
                     {primary.label} <ArrowRight className="h-4 w-4" aria-hidden />
                   </a>
                 )}
-                {secondaryButton(`site-btn site-btn-lg ${primary ? 'site-btn-glass' : 'site-btn-light'} max-sm:flex-1`)}
+                {questionsHref ? (
+                  <a href={questionsHref} className={`site-btn site-btn-lg ${primary ? 'site-btn-glass' : 'site-btn-light'} max-sm:flex-1`}>
+                    Try {plural(questionCount, 'question')}
+                  </a>
+                ) : (
+                  secondaryButton(`site-btn site-btn-lg ${primary ? 'site-btn-glass' : 'site-btn-light'} max-sm:flex-1`)
+                )}
               </div>
               <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-1.5 text-[13px] text-white/60">
                 {[...(allFree ? ['Free to read, no sign-up'] : []), 'Written to the WASSCE syllabus', 'Works on any phone'].map((t) => (
@@ -256,6 +266,26 @@ function TopicPage() {
             </ol>
           </section>
 
+          {questionsHref && (
+            <a href={questionsHref} className="site-card site-card-link group flex items-center gap-4 p-5 sm:gap-5 sm:p-6">
+              <span
+                className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-white shadow-[0_10px_20px_-10px_rgba(0,0,0,.45)]"
+                style={{ background: `linear-gradient(135deg, ${tone}, ${toneDeep})` }}
+                aria-hidden
+              >
+                <ListChecks className="h-7 w-7" />
+              </span>
+              <span className="min-w-0 flex-1">
+                <span className="block text-[11px] font-bold uppercase tracking-[.14em] text-muted-foreground">Practise this topic</span>
+                <span className="mt-1 block text-lg font-bold leading-snug tracking-tight group-hover:text-[var(--brand-strong)]">
+                  {topic.name}: {questionCount} WASSCE questions with answers
+                </span>
+                <span className="mt-1 block text-sm text-muted-foreground">Objective questions with the full working and why each wrong option is wrong. Free.</span>
+              </span>
+              <ArrowRight className="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-1" aria-hidden />
+            </a>
+          )}
+
           <WaecPastPapers subjectSlug={subject.slug} subjectName={subject.name} />
         </div>
 
@@ -288,7 +318,7 @@ function TopicPage() {
                       {f.text}
                     </li>
                   ))}
-                {practice > 0 && (
+                {questionCount === 0 && practice > 0 && (
                   <li className="flex items-center gap-2.5">
                     <span className="text-muted-foreground" aria-hidden><ClipboardCheck className="h-[18px] w-[18px]" /></span>
                     {practice.toLocaleString('en')} {subject.name} practice questions

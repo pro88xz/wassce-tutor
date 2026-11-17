@@ -10,7 +10,7 @@ import { OutlineTopics, TopicCard } from '@/components/public/TopicCard'
 import { SubjectCover } from '@/components/ds/SubjectCover'
 import { useAuth } from '@/lib/auth'
 import { PRACTICE_QUESTIONS, PRACTICE_SETS, hasPractice } from '@/lib/practice-counts'
-import { fetchSubjectHub, hasTopicPage, lessonMinutes, subjectPath } from '@/lib/public-content'
+import { fetchQuestionSubjects, fetchSubjectHub, hasTopicPage, lessonMinutes, questionsPath, subjectPath } from '@/lib/public-content'
 import type { SubjectHub } from '@/lib/public-content'
 import { tutorsPath } from '@/lib/public-rules'
 import { SEARCH_COPY, brandedTitle, breadcrumbJsonLd, fitDescription, indexablePageTags, privatePageTags } from '@/lib/seo'
@@ -39,7 +39,9 @@ export const Route = createFileRoute('/wassce/$subject/')({
   loader: async ({ params }) => {
     const hub = await fetchSubjectHub(params.subject)
     if (!hub) throw notFound()
-    return hub
+    // Public questions with answers (/wassce/{subject}/questions), when the subject has them.
+    const publicQuestions = (await fetchQuestionSubjects()).get(hub.subject.slug) ?? 0
+    return { ...hub, publicQuestions }
   },
   head: ({ loaderData: hub }) => {
     if (!hub) return privatePageTags('Page not found')
@@ -72,7 +74,7 @@ function roleLabel(hub: SubjectHub): string {
 
 function SubjectHubPage() {
   const hub = Route.useLoaderData()
-  const { subject, groups, topicCount, lessonCount, minutes, related } = hub
+  const { subject, groups, topicCount, lessonCount, minutes, related, publicQuestions } = hub
   const { user } = useAuth()
   const { palette } = subjectTheme(subject.slug)
   const hasLessons = lessonCount > 0
@@ -206,14 +208,21 @@ function SubjectHubPage() {
             <ClipboardCheck className="h-6 w-6" aria-hidden />
           </span>
           <div className="min-w-0 flex-1">
-            <h2 id="practice" className="site-h3">{practice} {subject.name} practice questions, marked instantly</h2>
+            <h2 id="practice" className="site-h3">{practice} {subject.name} practice questions, all free</h2>
             <p className="mt-1 text-[15px] leading-relaxed text-muted-foreground">
-              {PRACTICE_SETS[subject.slug]} sets of original WASSCE-style questions, each with the full working. They are not WAEC past papers.
+              {PRACTICE_SETS[subject.slug]} sets of original WASSCE-style questions, topic by topic, each with the answer and the full working. They are not WAEC
+              past papers.
             </p>
           </div>
-          <a href="/#try-a-question" className="site-btn site-btn-secondary shrink-0">
-            Try a question <ArrowRight className="h-4 w-4" aria-hidden />
-          </a>
+          {publicQuestions > 0 ? (
+            <a href={questionsPath(subject.slug)} className="site-btn site-btn-secondary shrink-0">
+              Questions and answers <ArrowRight className="h-4 w-4" aria-hidden />
+            </a>
+          ) : (
+            <a href="/#try-a-question" className="site-btn site-btn-secondary shrink-0">
+              Try a question <ArrowRight className="h-4 w-4" aria-hidden />
+            </a>
+          )}
         </section>
       )}
 
