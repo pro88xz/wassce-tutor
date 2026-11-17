@@ -14,6 +14,7 @@
 import type { AnyRouteMatch } from '@tanstack/react-router'
 import { CONTACT } from './contact'
 import { FROM_PRICE, PLANS } from './plans'
+import { GOOGLE_MAPS_URL } from './reviews'
 
 /** Dearest plan, for structured-data price ranges. */
 const TOP_PRICE = Math.max(...PLANS.map((p) => p.priceNle))
@@ -171,9 +172,9 @@ const ORG_ID = `${SITE.origin}/#organization`
 
 // The business itself: an education service based in Freetown that serves
 // the whole country online. Typed as both EducationalOrganization and
-// LocalBusiness so search engines can show it for local searches. Add
-// streetAddress, postalCode and sameAs (Google Business Profile, socials)
-// here when they exist; never guess them.
+// LocalBusiness so search engines can show it for local searches. sameAs is
+// the Google Business Profile (src/lib/reviews.ts). Add streetAddress,
+// postalCode and other profiles (socials) here when they exist; never guess them.
 const ORGANIZATION = {
   '@type': ['EducationalOrganization', 'LocalBusiness'],
   '@id': ORG_ID,
@@ -204,6 +205,7 @@ const ORGANIZATION = {
     },
   ],
   knowsAbout: ['WASSCE', 'West African Senior School Certificate Examination', 'Secondary education in Sierra Leone'],
+  sameAs: [GOOGLE_MAPS_URL],
 }
 
 // Organization + WebSite + app entity graph, on the homepage.
