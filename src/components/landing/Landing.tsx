@@ -4,10 +4,10 @@
 // Blueprint. Each section answers one visitor question, in this order, and
 // every section is a Band on the shared grid (src/components/public/Section):
 //
-//   01 Hero            What is this, and what do I do first?   (+ live proof and provenance)
-//   02 TryQuestion     Why this, not a past-paper app?         (answerable, no account: every answer explained)
-//   03 SubjectShowcase Is my subject here?                     (course catalogue)
-//   04 PopularTopics   What does a topic look like?
+//   01 Hero            What is this, and what do I do first?   (search first, + live proof and provenance)
+//   02 CourseRows      What can I study?                       (topics as course cards, a tab per subject)
+//   03 TryQuestion     Why this, not a past-paper app?         (answerable, no account: every answer explained)
+//   04 SubjectShowcase Is my subject here?                     (every subject, by faculty)
 //   05 HowItWorks      How will I actually study?              (+ a real excerpt from a free lesson)
 //   06 MockExams       Can I rehearse the real paper?          (on the violet slab, light like the rest)
 //   07 LocalBand       Was this made for someone like me?      (+ who builds it)
@@ -16,8 +16,8 @@
 //   10 Faq             What else should I know?
 //   11 FinalCta        Start.
 //
-// Proof comes before the catalogue: a visitor sees what makes practice here
-// different within one scroll of the hero. The grading guide and university
+// Like a course marketplace, the page leads with the courses themselves:
+// search in the hero, then real topics as course cards, then proof. The grading guide and university
 // planning live on /wassce and /universities, linked from the header.
 //
 // Numbers come from the database and the question-set manifest, the sample
@@ -28,7 +28,7 @@ import type { LandingData } from '@/lib/public-content'
 import { useReveal } from '@/components/ds/useReveal'
 import { Hero } from '@/components/landing/Hero'
 import { SubjectShowcase } from '@/components/landing/SubjectShowcase'
-import { PopularTopics } from '@/components/landing/PopularTopics'
+import { CourseRows } from '@/components/landing/CourseRows'
 import { TryQuestion } from '@/components/landing/TryQuestion'
 import { HowItWorks } from '@/components/landing/HowItWorks'
 import { MockExams } from '@/components/landing/MockExams'
@@ -45,9 +45,9 @@ export function Landing({ data }: { data: LandingData }) {
     // Full-bleed: cancels the app wrapper's padding and the header/footer gaps.
     <div ref={root} className="site-bleed -mb-16 -mt-6">
       <Hero data={data} />
+      <CourseRows rows={data.courseRows} />
       <TryQuestion />
-      <SubjectShowcase subjects={data.subjects} popular={data.popular} />
-      <PopularTopics data={data} />
+      <SubjectShowcase subjects={data.subjects} />
       <HowItWorks />
       <MockExams subjects={data.subjects} />
       <LocalBand />
