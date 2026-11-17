@@ -460,3 +460,32 @@ export function quizJsonLd({ name, path, about, subject, questions }: { name: st
     }),
   }
 }
+
+/**
+ * schema.org Quiz of flashcards (Google's Education Q&A): one card per key
+ * term, the term on the front (as the page shows it) and the lesson's
+ * definition as the answer. Only for a page where every card is a flashcard.
+ */
+export function flashcardsJsonLd({ name, path, about, subject, cards }: { name: string; path: string; about: string; subject: string; cards: { front: string; back: string }[] }): Record<string, unknown> {
+  const url = absoluteUrl(path)
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Quiz',
+    '@id': `${url}#flashcards`,
+    url,
+    name,
+    about: { '@type': 'Thing', name: about },
+    educationalLevel: 'Senior secondary (WASSCE)',
+    educationalAlignment: { '@type': 'AlignmentObject', alignmentType: 'educationalSubject', targetName: subject },
+    learningResourceType: 'Flashcard',
+    isAccessibleForFree: true,
+    inLanguage: 'en',
+    provider: { '@id': ORG_ID },
+    hasPart: cards.map((c) => ({
+      '@type': 'Question',
+      eduQuestionType: 'Flashcard',
+      text: c.front,
+      acceptedAnswer: { '@type': 'Answer', text: c.back },
+    })),
+  }
+}

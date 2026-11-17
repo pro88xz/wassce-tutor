@@ -38,5 +38,8 @@ export const hasQuestionsPageByCount = (questionCount: number) => questionCount 
 export const questionsPath = (subjectSlug: string, topicSlug?: string) =>
   topicSlug ? `/wassce/${subjectSlug}/${topicSlug}/questions` : `/wassce/${subjectSlug}/questions`
 
+/** A topic's key terms page (/wassce/{subject}/{topic}/key-terms): its lessons' definitions as cards (src/lib/key-terms.ts). */
+export const keyTermsPath = (subjectSlug: string, topicSlug: string) => `/wassce/${subjectSlug}/${topicSlug}/key-terms`
+
 /** Book a tutor pages: /tutors and /tutors/{subject} (one per subject with a syllabus page). */
 export const tutorsPath = (subjectSlug?: string) => (subjectSlug ? `/tutors/${subjectSlug}` : '/tutors')
