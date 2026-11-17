@@ -6,7 +6,7 @@
   {
    "id": "1fdea7d1-8c60-51ef-91cf-bfc3cbf035f7",
    "topic": null,
-   "title": "Timed mock exam: Paper 1 (50 questions, 1 h 30 min)",
+   "title": "Mathematics Paper 1 mock exam",
    "paper_type": "Mock",
    "description": "A timed WASSCE-style Mathematics Paper 1: 50 objective questions from across the syllabus, in 1 h 30 min, the time WAEC gives for Paper 1. Every question comes from the WASSCE Tutor practice bank, with the working and the reason behind every wrong option.",
    "sort_order": 900,
@@ -1964,5 +1964,5 @@
    ]
   }
  ],
- "version": "40bc200cc51b"
+ "version": "61af12175d23"
 }

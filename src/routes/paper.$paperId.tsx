@@ -228,6 +228,7 @@ function PaperPage() {
             saving={saveAttempt.isPending}
             saveFailed={saveAttempt.isError}
             onRetry={restart}
+            mock={!!minutes}
           />
         )}
 
@@ -419,7 +420,7 @@ function PaperPage() {
                   {meta?.subject ? `Back to ${meta.subject.name}` : 'Back to practice'}
                 </Link>
                 <Button size="lg" variant="outline" onClick={restart}>
-                  <RotateCcw className="h-4 w-4" aria-hidden /> Try again
+                  <RotateCcw className="h-4 w-4" aria-hidden /> {minutes ? 'Sit it again' : 'Try again'}
                 </Button>
               </div>
             )}
@@ -439,6 +440,7 @@ function Result({
   saving,
   saveFailed,
   onRetry,
+  mock = false,
 }: {
   score: number
   total: number
@@ -449,10 +451,19 @@ function Result({
   saving: boolean
   saveFailed: boolean
   onRetry: () => void
+  /** A timed mock exam: the reading talks about the paper, not one topic */
+  mock?: boolean
 }) {
   const p = percent(score, total)
-  const reading =
-    score === total
+  const reading = mock
+    ? score === total
+      ? { title: 'Every answer correct, under exam time', body: 'Keep sitting mocks every week or two before the exam to stay this sharp.' }
+      : p >= 70
+        ? { title: 'A strong paper', body: 'Read the working for the questions you missed, then revise the topics listed below.' }
+        : p >= 50
+          ? { title: 'A solid base to build on', body: 'Revise the topics below, starting with the ones you missed most, then sit the mock again.' }
+          : { title: 'Your revision list is ready', body: 'That is what a mock is for. Work through the topics below, missed most first, then sit the mock again.' }
+    : score === total
       ? { title: 'Every answer correct', body: 'You have a firm grip on this. Move on to the next topic and come back to this set before the exam.' }
       : p >= 70
         ? { title: 'A strong result', body: 'Read the working for the questions you missed so the same mistake does not cost marks in the exam.' }
@@ -502,7 +513,7 @@ function Result({
           </Button>
         ) : null}
         <Button variant={(score < total && topic) || (p >= 70 && subject) ? 'outline' : 'default'} onClick={onRetry}>
-          <RotateCcw className="h-4 w-4" aria-hidden /> Try again
+          <RotateCcw className="h-4 w-4" aria-hidden /> {mock ? 'Sit it again' : 'Try again'}
         </Button>
       </div>
 

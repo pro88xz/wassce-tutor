@@ -6,7 +6,7 @@
   {
    "id": "ca8ac526-289a-5837-a5ec-e0c9b43fcf28",
    "topic": null,
-   "title": "Timed mock exam: Paper 1 (50 questions, 1 h)",
+   "title": "Chemistry Paper 1 mock exam",
    "paper_type": "Mock",
    "description": "A timed WASSCE-style Chemistry Paper 1: 50 objective questions from across the syllabus, in 1 h, the time WAEC gives for Paper 1. Every question comes from the WASSCE Tutor practice bank, with the working and the reason behind every wrong option.",
    "sort_order": 900,
@@ -1964,5 +1964,5 @@
    ]
   }
  ],
- "version": "f8fe27c3eab1"
+ "version": "e612b75aff89"
 }

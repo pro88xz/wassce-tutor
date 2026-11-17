@@ -614,7 +614,7 @@ def build_mock(mcfg: dict, bodies: list[dict]) -> dict:
     paper = {
         "id": uid(name, "paper", "mock"),
         "topic": None,
-        "title": f"Timed mock exam: Paper 1 ({n} questions, {length})",
+        "title": f"{mcfg['subject']} Paper 1 mock exam",
         "paper_type": "Mock",
         "description": (
             f"A timed WASSCE-style {mcfg['subject']} Paper 1: {n} objective questions from across the syllabus, "

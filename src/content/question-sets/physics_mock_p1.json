@@ -6,7 +6,7 @@
   {
    "id": "4a15373f-da8c-575d-99c7-a4d130c68afc",
    "topic": null,
-   "title": "Timed mock exam: Paper 1 (50 questions, 1 h 15 min)",
+   "title": "Physics Paper 1 mock exam",
    "paper_type": "Mock",
    "description": "A timed WASSCE-style Physics Paper 1: 50 objective questions from across the syllabus, in 1 h 15 min, the time WAEC gives for Paper 1. Every question comes from the WASSCE Tutor practice bank, with the working and the reason behind every wrong option.",
    "sort_order": 900,
@@ -1964,5 +1964,5 @@
    ]
   }
  ],
- "version": "8100489f208c"
+ "version": "0ea0465257e4"
 }
