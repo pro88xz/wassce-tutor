@@ -35,10 +35,9 @@ export function HowItWorks() {
               {example && <span className="absolute right-3 top-3 z-10 rounded-full bg-white/90 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-slate-500 shadow-sm">Example</span>}
               <Shot />
             </div>
-            <div className="relative p-5 pt-9">
-              <span aria-hidden className="absolute -top-6 left-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#7c4dff] to-[#4a25c4] text-lg font-extrabold text-white shadow-[0_12px_24px_-10px_rgba(76,37,196,.8)] ring-4 ring-[var(--card)]">{i + 1}</span>
-              <p className="sr-only">Step {i + 1}</p>
-              <h3 className="site-h3">{title}</h3>
+            <div className="border-t border-border p-5">
+              <p className="text-[12px] font-bold uppercase tracking-[.14em] text-[var(--primary)]">Step {i + 1}</p>
+              <h3 className="site-h3 mt-1">{title}</h3>
               <p className="mt-1.5 text-[15px] leading-relaxed text-muted-foreground">{body}</p>
             </div>
           </li>

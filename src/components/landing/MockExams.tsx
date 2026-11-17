@@ -1,5 +1,5 @@
-// Timed mock exams, in the page's light style: text and the three papers on
-// the left; on the right, on the violet slab, a picture of the exam screen
+// Timed mock exams, on a dark band: text and the three papers on
+// the left; on the right, a picture of the exam screen
 // (the clock, the question count) with the topics-to-revise card that comes
 // after it. Lengths and times come from the question-set manifest, so the
 // band always matches the mocks that exist. The scores in the picture are an
@@ -16,7 +16,7 @@ export function MockExams({ subjects }: { subjects: SubjectSummary[] }) {
   if (mocks.length === 0) return null
   const first = mocks[0]
   return (
-    <Band labelledBy="mock-heading">
+    <Band tone="ink" labelledBy="mock-heading">
       <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-16">
         <div data-reveal className="max-w-xl">
           <p className="site-eyebrow">New: timed mock exams</p>
@@ -26,10 +26,10 @@ export function MockExams({ subjects }: { subjects: SubjectSummary[] }) {
           </p>
           <ul className="mt-7 grid grid-cols-3 gap-2.5 sm:gap-3">
             {mocks.map((m) => (
-              <li key={m.subjectSlug} className="site-card min-w-0 p-3 sm:p-4">
-                <Timer className="h-5 w-5 text-primary" aria-hidden />
+              <li key={m.subjectSlug} className="min-w-0 rounded-xl bg-white/[0.06] p-3 ring-1 ring-white/10 sm:p-4">
+                <Timer className="h-5 w-5 text-[#b9a4ff]" aria-hidden />
                 <span className="mt-2.5 block text-[13px] font-bold leading-tight tracking-tight sm:text-base">{m.name}</span>
-                <span className="mt-1 block text-[12px] leading-snug text-muted-foreground sm:text-[13px]">
+                <span className="mt-1 block text-[12px] leading-snug text-white/65 sm:text-[13px]">
                   {formatMinutes(m.minutes)}
                   <span className="hidden sm:inline"> · {m.questions} questions</span>
                 </span>
@@ -37,10 +37,10 @@ export function MockExams({ subjects }: { subjects: SubjectSummary[] }) {
             ))}
           </ul>
           <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-3">
-            <Link to="/auth" className="site-btn site-btn-lg site-btn-primary">
+            <Link to="/auth" className="site-btn site-btn-lg site-btn-light">
               Start free <ArrowRight className="h-4 w-4" aria-hidden />
             </Link>
-            <p className="inline-flex items-center gap-1.5 text-sm text-muted-foreground">
+            <p className="inline-flex items-center gap-1.5 text-sm text-white/70">
               <Lock className="h-4 w-4" aria-hidden /> Mock exams come with a plan, from {FROM_PRICE} NLe.
             </p>
           </div>
@@ -67,7 +67,6 @@ function ExamPicture({ subject, minutes, questions }: { subject: string; minutes
   ]
   return (
     <div data-reveal="1" aria-hidden className="relative isolate mx-auto w-full max-w-lg pb-20 sm:pb-16">
-      <span className="absolute -right-3 -top-3 -z-10 h-[78%] w-[92%] rounded-[2rem] bg-gradient-to-br from-[#7c4dff] to-[#4a25c4] sm:-right-5 sm:-top-5" />
       <div className="rounded-[1.75rem] bg-white p-5 text-slate-900 ring-1 ring-slate-900/5 shadow-[0_30px_60px_-28px_rgba(30,20,80,.5)] sm:p-6">
         <div className="flex items-center justify-between gap-4">
           <div className="min-w-0">

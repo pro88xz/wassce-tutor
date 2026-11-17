@@ -10,7 +10,7 @@ export function TutorFeature() {
   return (
     <Band labelledBy="tutor-heading">
       <div className="grid items-center gap-8 md:grid-cols-2 md:gap-10 lg:gap-16">
-        <div data-reveal className="px-3 pt-3 sm:px-5 sm:pt-5">
+        <div data-reveal>
           <BrandPhoto
             src={TUTOR_PHOTO.small}
             srcSet={`${TUTOR_PHOTO.small} 640w, ${TUTOR_PHOTO.src} 1280w`}
@@ -18,7 +18,6 @@ export function TutorFeature() {
             width={640}
             height={427}
             alt="A tutor and a student going through notes together"
-            slab="left"
           >
             <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white px-3.5 py-2 text-sm font-bold text-slate-900 shadow-lg">
               <UserRound className="h-4 w-4 text-violet-700" aria-hidden /> Learn with real teachers

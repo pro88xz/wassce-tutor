@@ -1,11 +1,12 @@
 // Homepage hero, in the public site's light language: the promise and two
-// actions on the left; on the right a classroom photograph on the violet
-// brand slab (BrandPhoto) with two real pieces of the product on it. Below,
-// a light strip with the live counts and what the content is (and is not).
+// actions on the left; on the right a classroom photograph (BrandPhoto) with
+// two real pieces of the product on it. Below, a full-width dark strip with
+// the live counts and what the content is (and is not), as course
+// marketplaces put their scale right under the fold.
 // Topic search sits under the promise, as on a course catalogue.
 import { Link } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
-import { ArrowDown, ArrowRight, BookOpen, Check, CircleCheck, ClipboardCheck, Layers, Library, PenLine, ScrollText, ShieldCheck, Users } from 'lucide-react'
+import { ArrowDown, ArrowRight, Check, CircleCheck, PenLine, ScrollText, ShieldCheck } from 'lucide-react'
 import type { LandingData } from '@/lib/public-content'
 import { PRACTICE_TOTAL } from '@/lib/practice-counts'
 import { supabase } from '@/lib/supabase'
@@ -28,7 +29,7 @@ export function Hero({ data }: { data: LandingData }) {
   return (
     <section className="relative isolate overflow-hidden bg-[var(--card)]" aria-labelledby="hero-heading">
       <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(52rem_32rem_at_100%_0%,color-mix(in_srgb,var(--primary)_14%,transparent),transparent_70%),radial-gradient(40rem_26rem_at_0%_100%,rgba(255,209,102,.16),transparent_70%)]" />
-      <div className="site-container grid grid-cols-[minmax(0,1fr)] items-center gap-12 pb-12 pt-10 sm:pt-14 lg:grid-cols-[minmax(0,.95fr)_minmax(0,1.05fr)] lg:gap-16 lg:pb-16 lg:pt-20">
+      <div className="site-container grid grid-cols-[minmax(0,1fr)] items-center gap-12 pb-14 pt-10 sm:pt-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-16 lg:pb-20 lg:pt-16">
         <div className="max-w-2xl">
           <p className="inline-flex items-center gap-2.5 rounded-full bg-[var(--brand-soft)] py-1.5 pl-2.5 pr-3.5 text-[13px] font-semibold text-[var(--brand-strong)]">
             <span className="h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_0_4px_rgba(16,185,129,.18)]" aria-hidden />
@@ -42,8 +43,7 @@ export function Hero({ data }: { data: LandingData }) {
             Syllabus lessons, instant marking that explains every answer, and real tutors.
           </p>
           {/* Search first, as on a course catalogue: most visitors arrive knowing their subject or topic. */}
-          <div className="mt-7 max-w-xl">
-            <p className="mb-2.5 text-sm font-bold text-foreground">What do you want to study?</p>
+          <div className="mt-8 max-w-xl">
             <TopicSearch shortcuts={shortcutsFrom(data.popular)} tone="light" size="lg" />
           </div>
           <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
@@ -95,7 +95,7 @@ function HeroPhoto() {
         height={960}
         alt="Two students in school uniform working through a book together at their desk"
         priority
-        aspect="aspect-[5/4] sm:aspect-[16/10] lg:aspect-[1/1] xl:aspect-[20/19]"
+        aspect="aspect-[5/4] sm:aspect-[16/10] lg:aspect-[6/5]"
       >
         {/* A diagram from a real Mathematics lesson. */}
         <div aria-hidden className={`absolute bottom-6 right-6 hidden w-52 rotate-2 p-3 sm:block lg:-bottom-8 lg:-right-8 lg:w-56 ${FLOAT}`}>
@@ -178,33 +178,26 @@ function ProofRow({ initial }: { initial: LandingData['totals'] }) {
       : { value: PRACTICE_TOTAL, label: 'worked practice questions', short: 'questions' },
   ]
 
-  const icons = [Library, Layers, BookOpen, students >= STUDENT_PROOF_THRESHOLD ? Users : ClipboardCheck]
   return (
-    <div className="site-container pb-12 lg:pb-16">
-      <dl className="grid grid-cols-2 overflow-hidden rounded-3xl bg-white ring-1 ring-slate-900/[0.06] shadow-[0_1px_2px_rgba(23,28,43,.04),0_18px_40px_-24px_rgba(30,20,80,.28)] lg:grid-cols-4">
-        {items.map(({ value, label }, i) => {
-          const Icon = icons[i]
-          return (
-            <div key={label} className={`flex items-center gap-3.5 px-4 py-5 sm:px-6 sm:py-6 ${i % 2 === 1 ? 'border-l border-slate-100' : ''} ${i >= 2 ? 'border-t border-slate-100 lg:border-t-0' : ''} ${i === 2 ? 'lg:border-l' : ''}`}>
-              <span className="hidden h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[var(--brand-soft)] text-[var(--primary)] sm:flex">
-                <Icon className="h-6 w-6" aria-hidden />
-              </span>
-              <div className="flex min-w-0 flex-col-reverse">
-                <dt className="text-[13px] font-medium leading-snug text-slate-500 sm:text-sm">{label}</dt>
-                <dd className="text-2xl font-extrabold leading-none tracking-tight tabular-nums text-slate-900 sm:text-3xl">{value.toLocaleString('en')}</dd>
-              </div>
+    <div className="bg-[var(--site-ink)] text-white">
+      <div className="site-container py-8 sm:py-10">
+        <dl className="grid grid-cols-2 gap-x-6 gap-y-7 lg:grid-cols-4 lg:gap-0">
+          {items.map(({ value, label }, i) => (
+            <div key={label} className={`flex flex-col-reverse gap-1.5 ${i > 0 ? 'lg:border-l lg:border-white/10 lg:pl-8' : ''}`}>
+              <dt className="text-[13px] font-medium leading-snug text-white/65 sm:text-[15px]">{label}</dt>
+              <dd className="text-[2rem] font-extrabold leading-none tracking-tight tabular-nums sm:text-[2.6rem]">{value.toLocaleString('en')}</dd>
             </div>
-          )
-        })}
-      </dl>
-      <ul className="mt-5 flex flex-col gap-2 text-[13px] text-muted-foreground sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-x-6 sm:text-sm">
-        {PROVENANCE.map(({ Icon, text }) => (
-          <li key={text} className="flex items-start gap-2 sm:items-center">
-            <Icon className="mt-px h-4 w-4 shrink-0 text-[var(--primary)] sm:mt-0" aria-hidden />
-            {text}
-          </li>
-        ))}
-      </ul>
+          ))}
+        </dl>
+        <ul className="mt-7 flex flex-col gap-2 border-t border-white/10 pt-6 text-[13px] text-white/70 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-8 sm:text-sm">
+          {PROVENANCE.map(({ Icon, text }) => (
+            <li key={text} className="flex items-start gap-2 sm:items-center">
+              <Icon className="mt-px h-4 w-4 shrink-0 text-[#b9a4ff] sm:mt-0" aria-hidden />
+              {text}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   )
 }

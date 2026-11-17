@@ -56,7 +56,7 @@ export function TopicSearch({ shortcuts = [], tone = 'dark', size = 'md' }: { sh
           onChange={(e) => { setQuery(e.target.value); setOpen(true) }}
           onFocus={() => { load(); setOpen(true) }}
           onBlur={() => setTimeout(() => setOpen(false), 150)}
-          placeholder={size === 'lg' ? 'Search topics, e.g. indices' : 'Search a subject or topic, e.g. photosynthesis'}
+          placeholder={size === 'lg' ? 'What do you want to study?' : 'Search a subject or topic, e.g. photosynthesis'}
           autoComplete="off"
           className={`${size === 'lg' ? 'h-16' : 'h-14'} w-full min-w-0 bg-transparent text-base text-slate-900 placeholder:text-slate-400 focus:outline-none`}
         />

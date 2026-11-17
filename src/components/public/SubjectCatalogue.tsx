@@ -79,8 +79,6 @@ function GuideTile({ count }: { count: number }) {
       href="/wassce"
       className={`group relative isolate flex-col justify-between gap-6 overflow-hidden rounded-2xl bg-gradient-to-br from-[#6d3fe6] via-[#5530cf] to-[#3a1d9e] p-4 text-white shadow-[0_24px_48px_-28px_rgba(58,29,158,.7)] transition-transform duration-300 hover:-translate-y-[3px] sm:p-6 ${FILL_2[count % 2]} ${FILL_3[count % 3]} ${FILL_4[count % 4]}`}
     >
-      <span aria-hidden className="absolute -right-10 -top-10 -z-10 h-40 w-40 rounded-full border-[20px] border-white/10" />
-      <span aria-hidden className="absolute -bottom-8 -right-8 -z-10 h-24 w-24 rounded-full bg-[#ffd166]/85" />
       <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 ring-1 ring-white/20">
         <Compass className="h-5 w-5 text-white" aria-hidden />
       </span>

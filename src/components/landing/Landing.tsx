@@ -4,12 +4,12 @@
 // Blueprint. Each section answers one visitor question, in this order, and
 // every section is a Band on the shared grid (src/components/public/Section):
 //
-//   01 Hero            What is this, and what do I do first?   (search first, + live proof and provenance)
+//   01 Hero            What is this, and what do I do first?   (search first, + a dark strip of live counts and provenance)
 //   02 CourseRows      What can I study?                       (topics as course cards, a tab per subject)
 //   03 TryQuestion     Why this, not a past-paper app?         (answerable, no account: every answer explained)
 //   04 SubjectShowcase Is my subject here?                     (every subject, by faculty)
 //   05 HowItWorks      How will I actually study?              (+ a real excerpt from a free lesson)
-//   06 MockExams       Can I rehearse the real paper?          (on the violet slab, light like the rest)
+//   06 MockExams       Can I rehearse the real paper?          (on a dark band, for contrast mid-page)
 //   07 LocalBand       Was this made for someone like me?      (+ who builds it)
 //   08 TutorFeature    Can I get a person to help?
 //   09 Plans           What does it cost?
