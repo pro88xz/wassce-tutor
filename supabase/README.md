@@ -27,16 +27,16 @@ etc.). Don't run them against the live project.
 | `20261107_07_plans_and_monime.sql` | Term and academic-year plans, free tier (first lesson per topic, one starter set per subject), payment records; removes the trial |
 | `20261107_08_public_without_review.sql` | Review is no longer a gate: each topic's free lesson and free-set questions are public automatically; `is_public` no longer requires `reviewed_at` |
 | `20261111_13_security_hardening.sql` | From the November security audit: tutor phone numbers are no longer readable through the API; students can update only five named profile columns; payment requests must be at today's price; students cannot write AI tutor history (no injected "system" messages); the AI tutor's daily limit is taken atomically (`consume_tutor_question`); unpublished lessons are admin-only; logged-out visitors have no write privileges except the download counter and the tutor request form. Apply with the "Apply security hardening migration (13)" workflow |
+| `20261117_22_everything_free.sql` | Every published lesson and every practice set is free for everyone, signed in or not, and public (`wassce_public_lessons`, `wassce_public_questions`). Plans still give the AI study tutor and the timed mock exams (`papers.paper_type = 'Mock'`). Apply with the "Apply database migrations" workflow |
 
 Each was tested against a local Postgres copy of the live schema (logged-out
 visitor, student on trial, expired student, admin) before being committed.
 
 ## Publishing a lesson or question publicly
 
-Review is not a gate (migration 08). The free lesson of every topic (its first
-published lesson) has a public page at `/wassce/{subject}/{topic}/{lesson}`
-automatically, reviewed or not, and the questions of free starter sets are
-public the same way. Paid lessons stay locked unless an admin marks one public.
+Every published lesson has a public page at `/wassce/{subject}/{topic}/{lesson}`
+and every practice question is public (migration 22), reviewed or not. Mock
+exams stay with a plan; their questions repeat practice questions.
 
 Review is an optional quality mark: in the app (Admin → Review lessons and
 questions) a reviewer can edit a lesson and mark it reviewed, which adds their
