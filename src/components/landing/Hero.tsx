@@ -1,19 +1,19 @@
 // Homepage hero. On the left, the promise in the candidate's own terms (the
 // answer sheet they will shade on exam day), the real size of the library,
 // topic search and the two actions. On the right, the product instead of a
-// stock photograph: a WASSCE-style answer sheet shaded question by question
-// (AnswerSheet), with a real lesson and a real "why not" explanation from
-// the bank floating around it. On desktop the group tilts a little towards
-// the pointer. The live counts sit just below, on the syllabus wall.
+// classroom alone: a WASSCE-style answer sheet shaded question by question
+// (AnswerSheet), laid over the photograph of students at their desk, with the
+// bank's own "why not" explanation beside it. On desktop the group tilts a
+// little towards the pointer. The live counts sit just below, on the
+// syllabus wall.
 import { Link } from '@tanstack/react-router'
 import { useEffect, useRef } from 'react'
-import { ArrowDown, ArrowRight, BookOpen, Check, Clock } from 'lucide-react'
+import { ArrowDown, ArrowRight, Check } from 'lucide-react'
 import type { LandingData } from '@/lib/public-content'
 import { PRACTICE_TOTAL } from '@/lib/practice-counts'
 import { TopicSearch, type TopicShortcut } from '@/components/landing/TopicSearch'
 import { AnswerSheet } from '@/components/landing/AnswerSheet'
-import { TopicCover } from '@/components/public/TopicCover'
-import { lessonPath, topicPath, type PopularTopic } from '@/lib/public-content'
+import { topicPath, type PopularTopic } from '@/lib/public-content'
 
 /** Shortcut chips: popular topics that have lessons, short enough to read as a chip. */
 function shortcutsFrom(popular: PopularTopic[]): TopicShortcut[] {
@@ -32,8 +32,8 @@ export function Hero({ data }: { data: LandingData }) {
       <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(56rem_34rem_at_100%_0%,color-mix(in_srgb,var(--primary)_16%,transparent),transparent_70%),radial-gradient(40rem_26rem_at_0%_100%,rgba(255,209,102,.18),transparent_70%)]" />
       {/* Faint ruled lines, like the paper the sheet is printed on. */}
       <div aria-hidden className="absolute inset-0 -z-10 opacity-[.55] [background-image:linear-gradient(rgba(210,63,106,.07)_1px,transparent_1px)] [background-size:100%_34px] [mask-image:linear-gradient(90deg,transparent,#000_55%)]" />
-      <div className="site-container grid grid-cols-[minmax(0,1fr)] items-center gap-14 pb-16 pt-10 sm:pt-14 lg:grid-cols-[minmax(0,1.14fr)_minmax(0,.86fr)] lg:gap-12 lg:pb-28 lg:pt-20">
-        <div className="max-w-2xl">
+      <div className="site-container grid grid-cols-[minmax(0,1fr)] items-center gap-14 lg:items-start pb-16 pt-10 sm:pt-14 lg:grid-cols-[minmax(0,1.14fr)_minmax(0,.86fr)] lg:gap-12 lg:pb-28 lg:pt-20">
+        <div className="max-w-2xl lg:pt-14">
           <p className="hero-rise inline-flex items-center gap-2.5 rounded-full bg-[var(--brand-soft)] py-1.5 pl-2.5 pr-3.5 text-[13px] font-semibold text-[var(--brand-strong)]">
             <span className="h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_0_4px_rgba(16,185,129,.18)]" aria-hidden />
             Built for the Sierra Leone WASSCE syllabus
@@ -76,17 +76,6 @@ export function Hero({ data }: { data: LandingData }) {
       </div>
     </section>
   )
-}
-
-/** A real lesson, shown as it appears on its topic page. */
-const LESSON = {
-  subjectSlug: 'chemistry',
-  subjectName: 'Chemistry',
-  topicSlug: 'introduction-to-chemistry',
-  topicName: 'Introduction to Chemistry',
-  lessonSlug: 'what-chemistry-is-branches-importance-and-careers',
-  title: 'What chemistry is: branches, importance and careers',
-  minutes: 7,
 }
 
 /** A card floating over the hero: white, hairline border, long soft shadow. */
@@ -134,26 +123,28 @@ function HeroStage() {
 
   const layer = 'transition-transform duration-500 ease-out will-change-transform'
   return (
-    <div ref={stage} className="hero-rise relative mx-auto w-full max-w-[33rem] [perspective:1600px] sm:mb-24 lg:mx-0 lg:mb-0 lg:ml-auto lg:mt-10" style={{ ['--rise-delay' as string]: '200ms' }}>
-      {/* A real lesson, behind the sheet's top-left corner. */}
-      <a
-        href={lessonPath(LESSON.subjectSlug, LESSON.topicSlug, LESSON.lessonSlug)}
-        tabIndex={-1}
-        aria-hidden
-        className={`absolute -right-8 -top-[5.5rem] z-0 hidden w-56 p-2.5 lg:block ${FLOAT} ${layer}`}
-        style={{ transform: 'translate3d(calc(var(--px, 0) * 18px), calc(var(--py, 0) * -16px), 0) rotate(6deg)' }}
-      >
-        <span className="hero-float block" style={{ ['--float-time' as string]: '8s' }}>
-          <TopicCover subjectSlug={LESSON.subjectSlug} subjectName={LESSON.subjectName} topicSlug={LESSON.topicSlug} topicName={LESSON.topicName} className="aspect-[16/9] rounded-xl" />
-          <span className="mt-2.5 flex items-center gap-2 px-1 text-[10px] font-bold uppercase tracking-[.12em] text-slate-500">
-            <BookOpen className="h-3.5 w-3.5" aria-hidden /> Lesson 1 <Clock className="ml-1 h-3.5 w-3.5" aria-hidden /> {LESSON.minutes} min
-          </span>
-          <span className="mt-1 block px-1 pb-1 text-[13px] font-bold leading-snug">{LESSON.title}</span>
-        </span>
-      </a>
+    <div ref={stage} className="hero-rise relative mx-auto w-full max-w-[34rem] [perspective:1600px] sm:mb-24 lg:mx-0 lg:mb-0 lg:ml-auto" style={{ ['--rise-delay' as string]: '200ms' }}>
+      {/* Real students, behind the sheet: the setting it is all for. The same file and alt text
+          as before, so the photo keeps its place in Google Images. The sheet covers only the desk. */}
+      <div className={`relative z-0 w-[78%] sm:w-[60%] ${layer}`} style={{ transform: 'translate3d(calc(var(--px, 0) * -16px), calc(var(--py, 0) * -12px), 0) rotate(-3deg)' }}>
+        <div className="hero-float" style={{ ['--float-time' as string]: '9s' }}>
+          <img
+            src="/img/home/students-studying-1200.webp"
+            srcSet="/img/home/students-studying-720.webp 720w, /img/home/students-studying-1200.webp 1200w"
+            sizes="(min-width: 1024px) 21rem, (min-width: 640px) 60vw, 78vw"
+            width={1200}
+            height={960}
+            alt="Two students in school uniform working through a book together at their desk"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            className="aspect-[5/4] w-full rounded-[20px] object-cover shadow-[0_30px_60px_-28px_rgba(30,20,80,.5)] ring-1 ring-slate-900/10"
+          />
+        </div>
+      </div>
 
       {/* The sheet: tilts towards the pointer. */}
-      <div className={`relative z-10 ${layer}`} style={{ transform: 'rotateY(calc(var(--px, 0) * 5deg)) rotateX(calc(var(--py, 0) * -4deg))' }}>
+      <div className={`relative z-10 -mt-[17%] ml-auto w-[94%] sm:w-[92%] ${layer}`} style={{ transform: 'rotateY(calc(var(--px, 0) * 5deg)) rotateX(calc(var(--py, 0) * -4deg))' }}>
         <AnswerSheet />
       </div>
 
