@@ -1,5 +1,6 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { supabase } from '@/lib/supabase'
+import { toSlug } from '@/lib/public-rules'
 
 type SaveOnboardingArgs = {
   profileId: string
@@ -112,7 +113,7 @@ export function useCreateTopic() {
         .from('topics')
         .insert({
           subject_id: args.subject_id,
-          slug: args.slug.trim().toLowerCase().replace(/\s+/g, '-'),
+          slug: toSlug(args.slug),
           name: args.name.trim(),
           description: args.description?.trim() || null,
           sort_order: args.sort_order ?? 0,
@@ -142,7 +143,7 @@ export function useUpdateTopic() {
   return useMutation({
     mutationFn: async (args: UpdateTopicArgs) => {
       const patch: Record<string, unknown> = {}
-      if (args.slug !== undefined) patch.slug = args.slug.trim().toLowerCase().replace(/\s+/g, '-')
+      if (args.slug !== undefined) patch.slug = toSlug(args.slug)
       if (args.name !== undefined) patch.name = args.name.trim()
       if (args.description !== undefined) patch.description = args.description?.trim() || null
       if (args.sort_order !== undefined) patch.sort_order = args.sort_order
@@ -185,7 +186,7 @@ export function useCreateLesson() {
         .from('lessons')
         .insert({
           topic_id: args.topic_id,
-          slug: args.slug.trim().toLowerCase().replace(/\s+/g, '-'),
+          slug: toSlug(args.slug),
           title: args.title.trim(),
           content: args.content,
           est_minutes: args.est_minutes ?? null,

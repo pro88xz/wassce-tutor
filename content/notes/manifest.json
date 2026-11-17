@@ -7364,6 +7364,45 @@
       "title": "Practical agricultural skills: measuring, calculating and identifying specimens",
       "est_minutes": 13,
       "sort_order": 1
+    },
+    {
+      "file": "literature-in-english-what-is-literature.md",
+      "subject": "Literature in English",
+      "topic": "what-is-literature",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "What is literature? Meaning, features and oral and written forms",
+      "est_minutes": 9,
+      "sort_order": 1
+    },
+    {
+      "file": "literature-in-english-functions-of-literature.md",
+      "subject": "Literature in English",
+      "topic": "functions-and-purposes-of-literature",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "Functions of literature: why we read and study it",
+      "est_minutes": 8,
+      "sort_order": 1
+    },
+    {
+      "file": "literature-in-english-three-genres.md",
+      "subject": "Literature in English",
+      "topic": "the-three-genres-of-literature",
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true,
+      "title": "The three genres of literature: prose, drama and poetry",
+      "est_minutes": 10,
+      "sort_order": 1
     }
   ]
 }

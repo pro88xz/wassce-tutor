@@ -7,7 +7,7 @@ import { LessonView } from '@/components/LessonView'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { fetchPublicLessonPage, lessonPath, lessonSummary, subjectPath, topicPath } from '@/lib/public-content'
 import type { PublicLessonPageData } from '@/lib/public-content'
-import { SITE, absoluteUrl, breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
+import { SITE, absoluteUrl, brandedTitle, breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
 
 const trail = ({ subject, topic, lesson }: PublicLessonPageData): [string, string][] => [
@@ -63,7 +63,8 @@ export const Route = createFileRoute('/wassce/$subject/$topic_/$lesson')({
       ? indexablePageTags({
           path: lessonPath(data.subject.slug, data.topic.slug, data.lesson.slug),
           // Subject first: Google cuts titles at about 60 characters, and long lesson names used to push "WASSCE" out of view.
-          title: `WASSCE ${data.subject.name}: ${data.lesson.title} | WASSCE Tutor`,
+          // The brand goes too when it would be cut off anyway.
+          title: brandedTitle(`WASSCE ${data.subject.name}: ${data.lesson.title}`),
           ogTitle: `${data.lesson.title} (WASSCE ${data.subject.name})`,
           description: lessonSummary(data.lesson.content),
           jsonLd: [lessonJsonLd(data), breadcrumbJsonLd(trail(data))],

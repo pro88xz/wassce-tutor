@@ -342,6 +342,11 @@ const BY_SUBJECT: Record<string, Record<string, TopicSymbol>> = {
   geography: {
     'introduction-to-geography': W('physical', 'human', 'maps'),
   },
+  'literature-in-english': {
+    'what-is-literature': W('imagination', 'language', 'life'),
+    'functions-and-purposes-of-literature': W('entertain', 'educate', 'reform'),
+    'the-three-genres-of-literature': W('prose', 'drama', 'poetry'),
+  },
 }
 
 /** The cover spec for a topic, if it has one. */

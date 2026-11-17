@@ -13,7 +13,7 @@ import { PRACTICE_QUESTIONS, PRACTICE_SETS, hasPractice } from '@/lib/practice-c
 import { fetchSubjectHub, hasTopicPage, lessonMinutes, subjectPath } from '@/lib/public-content'
 import type { SubjectHub } from '@/lib/public-content'
 import { tutorsPath } from '@/lib/public-rules'
-import { breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
+import { SEARCH_COPY, brandedTitle, breadcrumbJsonLd, fitDescription, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { subjectTheme } from '@/lib/subject-theme'
 
 const trail = (hub: SubjectHub): [string, string][] => [
@@ -27,8 +27,11 @@ const hours = (minutes: number) => (minutes >= 90 ? `${Math.round(minutes / 60)}
 
 function describe(hub: SubjectHub): string {
   const sections = hub.groups.map((g) => g.name).slice(0, 3).join(', ')
-  const lessons = hub.lessonCount ? ` ${hub.lessonCount} lessons (about ${hours(hub.minutes)}).` : ''
-  return `All ${hub.topicCount} WASSCE ${hub.subject.name} syllabus topics in ${hub.groups.length} sections, including ${sections}.${lessons} For Sierra Leone students.`
+  return fitDescription([
+    `All ${hub.topicCount} WASSCE ${hub.subject.name} syllabus topics in ${hub.groups.length} sections, including ${sections}.`,
+    hub.lessonCount ? `${hub.lessonCount} lessons (about ${hours(hub.minutes)}).` : '',
+    'For Sierra Leone students.',
+  ])
 }
 
 export const Route = createFileRoute('/wassce/$subject/')({
@@ -38,16 +41,20 @@ export const Route = createFileRoute('/wassce/$subject/')({
     if (!hub) throw notFound()
     return hub
   },
-  head: ({ loaderData: hub }) =>
-    hub
-      ? indexablePageTags({
-          path: subjectPath(hub.subject.slug),
-          title: `WASSCE ${hub.subject.name} Syllabus: All ${hub.topicCount} Topics & Lessons | WASSCE Tutor`,
-          ogTitle: `WASSCE ${hub.subject.name}: syllabus topics and lessons`,
-          description: describe(hub),
-          jsonLd: [breadcrumbJsonLd(trail(hub))],
-        })
-      : privatePageTags('Page not found'),
+  head: ({ loaderData: hub }) => {
+    if (!hub) return privatePageTags('Page not found')
+    const path = subjectPath(hub.subject.slug)
+    const copy = SEARCH_COPY[path]
+    // "& Lessons" only when the subject has some: the title must not promise what the page lacks.
+    const lessons = hub.lessonCount > 0
+    return indexablePageTags({
+      path,
+      title: brandedTitle(copy?.title ?? `WASSCE ${hub.subject.name} Syllabus: All ${hub.topicCount} Topics${lessons ? ' & Lessons' : ''}`),
+      ogTitle: `WASSCE ${hub.subject.name}: syllabus topics${lessons ? ' and lessons' : ''}`,
+      description: copy?.description ?? describe(hub),
+      jsonLd: [breadcrumbJsonLd(trail(hub))],
+    })
+  },
   component: SubjectHubPage,
 })
 

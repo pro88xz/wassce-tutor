@@ -26,6 +26,8 @@ on:
       - '.github/workflows/notes-acquisition.yml'
       - 'scripts/source-acquisition.mjs'
       - 'scripts/notes-ingestion.test.mjs'
+      - 'scripts/notes/redirects.mjs'
+      - 'vercel.json'
       - 'package.json'
       - 'package-lock.json'
       - '.github/workflows/notes-engine.yml'
@@ -52,6 +54,8 @@ jobs:
       - run: npm run notes:validate
       - run: npm run notes:test
       - run: npm run notes:build
+      - name: Every retired lesson redirects (npm run notes:redirects)
+        run: node scripts/notes/redirects.mjs --check
       - name: Check autonomous engine serverless function syntax
         run: node --check api/notes-engine/ingest.js
       - name: Check open-licence acquisition script syntax
