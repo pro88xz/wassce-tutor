@@ -6,7 +6,7 @@
 // to download.
 //
 //   card  the topic's name set on the cover, the drawing to the right
-//   hero  the drawing large and centred; the page's own heading names the topic
+//   hero  the same layout at topic-page size
 import { subjectArt } from '@/components/ds/SubjectCover'
 import { topicArt } from '@/components/landing/TopicArt'
 
@@ -54,24 +54,27 @@ export function TopicCover({
         className="absolute inset-0 opacity-50"
         style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,.2) 1px, transparent 1px)', backgroundSize: hero ? '18px 18px' : '14px 14px' }}
       />
-      {hero && <span className="absolute left-1/2 top-1/2 aspect-square h-[88%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/[0.07] ring-1 ring-white/10" />}
       <svg
         viewBox="0 0 120 110"
         className={
           hero
-            ? 'absolute left-1/2 top-1/2 h-[64%] w-auto -translate-x-1/2 -translate-y-1/2'
+            ? 'absolute bottom-[12%] right-[5%] h-[72%] w-auto'
             : 'absolute bottom-[10%] right-[4%] h-[78%] w-auto transition-transform duration-500 group-hover:scale-[1.05]'
         }
       >
         {drawing}
       </svg>
-      <span className={`absolute flex items-center gap-1.5 font-bold uppercase text-white/80 ${hero ? 'left-5 top-5 text-[11px] tracking-[.16em]' : 'left-3.5 top-3.5 text-[10px] tracking-[.14em]'}`}>
+      <span className={`absolute flex items-center gap-1.5 font-bold uppercase text-white/80 ${hero ? 'left-5 top-4 text-[11px] tracking-[.16em] sm:left-6 sm:top-6' : 'left-3.5 top-3.5 text-[10px] tracking-[.14em]'}`}>
         <span className="h-1.5 w-1.5 rounded-full" style={{ background: art.accent }} />
         {subjectName}
       </span>
-      {!hero && (
-        <span className="absolute bottom-3.5 left-3.5 line-clamp-3 max-w-[50%] text-[17px] font-extrabold leading-[1.12] tracking-tight text-white">{topicName}</span>
-      )}
+      <span
+        className={`absolute line-clamp-3 max-w-[50%] font-extrabold leading-[1.1] tracking-tight text-white ${
+          hero ? 'bottom-4 left-5 text-lg sm:bottom-6 sm:left-6 sm:text-2xl lg:text-[1.75rem]' : 'bottom-3.5 left-3.5 text-[17px]'
+        }`}
+      >
+        {topicName}
+      </span>
     </span>
   )
 }
