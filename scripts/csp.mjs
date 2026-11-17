@@ -17,11 +17,14 @@ import crypto from 'node:crypto'
 const SUPABASE = 'cfclkwugbexrihloqofc.supabase.co'
 /** Google sign-in on the web loads Google Identity Services from here. */
 const GOOGLE = 'https://accounts.google.com'
+/** Google Analytics (src/lib/analytics.ts): gtag.js, and the hosts it reports to. */
+const GA_SCRIPT = 'https://www.googletagmanager.com'
+const GA_CONNECT = ['https://*.google-analytics.com', 'https://*.analytics.google.com', 'https://*.googletagmanager.com']
 
 const BASE = {
   'default-src': ["'self'"],
   // The site's API when the page is served from the Android app (https://localhost).
-  'connect-src': ["'self'", 'https://wasscetutor.com', `https://${SUPABASE}`, `wss://${SUPABASE}`, GOOGLE, 'https://www.googleapis.com', 'https://oauth2.googleapis.com'],
+  'connect-src': ["'self'", 'https://wasscetutor.com', `https://${SUPABASE}`, `wss://${SUPABASE}`, GOOGLE, 'https://www.googleapis.com', 'https://oauth2.googleapis.com', ...GA_CONNECT],
   // Photographs and question images may be on any https host; never http.
   'img-src': ["'self'", 'data:', 'blob:', 'https:'],
   'font-src': ["'self'", 'data:'],
@@ -45,7 +48,7 @@ const serialise = (directives) =>
 export function headerPolicy() {
   return serialise({
     ...BASE,
-    'script-src': ["'self'", "'unsafe-inline'", GOOGLE],
+    'script-src': ["'self'", "'unsafe-inline'", GOOGLE, GA_SCRIPT],
     // Header-only directives: a <meta> policy cannot carry these.
     'frame-ancestors': ["'none'"],
     'upgrade-insecure-requests': [],
@@ -65,7 +68,7 @@ export function pagePolicy(html) {
   for (const [, attrs, body] of html.matchAll(INLINE_SCRIPT)) {
     if (isExecutable(attrs) && body.length > 0) hashes.add(`'sha256-${crypto.createHash('sha256').update(body, 'utf8').digest('base64')}'`)
   }
-  return serialise({ ...BASE, 'script-src': ["'self'", ...hashes, GOOGLE] })
+  return serialise({ ...BASE, 'script-src': ["'self'", ...hashes, GOOGLE, GA_SCRIPT] })
 }
 
 const META = /<meta http-equiv="Content-Security-Policy"[^>]*>/i
