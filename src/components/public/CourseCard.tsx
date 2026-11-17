@@ -47,9 +47,12 @@ export function CourseCard({
   className?: string
 }) {
   return (
-    <a href={topicPath(subjectSlug, c.topicSlug)} className={`group relative flex flex-col rounded-xl outline-none ${className}`}>
-      <TopicCover subjectSlug={subjectSlug} subjectName={subjectName} topicSlug={c.topicSlug} topicName={c.topicName} index={index} className="aspect-[16/9] rounded-xl ring-1 ring-slate-900/[0.07]" />
-      <span className="flex flex-1 flex-col pt-3">
+    <a
+      href={topicPath(subjectSlug, c.topicSlug)}
+      className={`group relative flex flex-col rounded-2xl bg-card p-2 outline-none ring-1 ring-slate-900/[0.06] shadow-[var(--site-shadow-card)] transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[var(--site-shadow-raised)] focus-visible:ring-2 focus-visible:ring-[var(--primary)] ${className}`}
+    >
+      <TopicCover subjectSlug={subjectSlug} subjectName={subjectName} topicSlug={c.topicSlug} topicName={c.topicName} index={index} className="aspect-[16/9] rounded-xl" />
+      <span className="flex flex-1 flex-col px-2 pb-2 pt-3">
         <span className="line-clamp-2 text-[16px] font-bold leading-snug tracking-tight text-foreground group-hover:text-[var(--brand-strong)]">{c.topicName}</span>
         <span className="mt-1 text-[13px] text-muted-foreground">WASSCE {subjectName}</span>
         <span className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[13px] font-medium text-slate-600 dark:text-slate-300">
@@ -72,7 +75,7 @@ export function CourseCard({
       {preview && (
         <span
           aria-hidden
-          className="pointer-events-none absolute inset-0 z-10 hidden flex-col rounded-xl bg-white p-5 text-slate-900 opacity-0 shadow-[0_24px_60px_-20px_rgba(30,20,80,.45)] ring-1 ring-slate-900/10 transition duration-200 [@media(hover:hover)]:flex group-hover:opacity-100 group-focus-visible:opacity-100 group-focus-visible:ring-2 group-focus-visible:ring-[var(--primary)]"
+          className="pointer-events-none absolute inset-0 z-10 hidden flex-col rounded-2xl bg-white p-5 text-slate-900 opacity-0 shadow-[0_24px_60px_-20px_rgba(30,20,80,.45)] ring-1 ring-slate-900/10 transition duration-200 [@media(hover:hover)]:flex group-hover:opacity-100 group-focus-visible:opacity-100 group-focus-visible:ring-2 group-focus-visible:ring-[var(--primary)]"
         >
           <span className="text-[11px] font-bold uppercase tracking-[.12em] text-violet-700">{subjectName}</span>
           <span className="mt-1 line-clamp-2 text-[17px] font-bold leading-snug tracking-tight">{c.topicName}</span>

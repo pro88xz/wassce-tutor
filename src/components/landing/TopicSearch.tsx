@@ -4,7 +4,8 @@ import { fetchSearchIndex } from '@/lib/public-content'
 import type { SearchEntry } from '@/lib/public-content'
 import { matchEntries } from '@/lib/search'
 
-export type TopicShortcut = { label: string; href: string }
+/** A popular topic under the search box; `color` is its subject's cover colour (a dot before the name). */
+export type TopicShortcut = { label: string; href: string; subject?: string; color?: string }
 
 /**
  * Search box for subjects and syllabus topics. The index (subjects + 600
@@ -106,8 +107,10 @@ export function TopicSearch({ shortcuts = [], tone = 'dark', size = 'md' }: { sh
             <a
               key={s.href}
               href={s.href}
-              className={`inline-flex min-h-8 items-center rounded-full px-3 text-xs font-semibold ring-1 transition ${tone === 'light' ? 'bg-card text-foreground ring-border hover:ring-primary/40' : 'bg-white/10 text-white/90 ring-white/20 hover:bg-white/20'}`}
+              title={s.subject ? `${s.label} · ${s.subject}` : undefined}
+              className={`inline-flex min-h-9 items-center gap-2 rounded-full px-3.5 text-[13px] font-semibold ring-1 transition hover:-translate-y-px ${tone === 'light' ? 'bg-card text-foreground shadow-[0_6px_14px_-10px_rgba(30,20,80,.45)] ring-border hover:ring-primary/40' : 'bg-white/10 text-white/90 ring-white/20 hover:bg-white/20'}`}
             >
+              {s.color && <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: s.color }} aria-hidden />}
               {s.label}
             </a>
           ))}
