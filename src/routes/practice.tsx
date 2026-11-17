@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { ArrowRight, ChevronRight, ClipboardList, Lock, Search } from 'lucide-react'
+import { ArrowRight, ChevronRight, ClipboardList, Lock, Search, Timer } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { useAuth } from '@/lib/auth'
 import { usePapersForSubjects, useStudentSubjects, type PaperRow } from '@/lib/queries'
@@ -10,6 +10,7 @@ import { PracticeSetRow } from '@/components/ds/PracticeSetRow'
 import { subjectTheme } from '@/lib/subject-theme'
 import { FROM_PRICE } from '@/lib/plans'
 import { PRACTICE_TOTAL } from '@/lib/practice-counts'
+import { formatMinutes, mockMinutes } from '@/lib/mock-exams'
 import { useAccess } from '@/lib/useAccess'
 import { paperLocked } from '@/lib/access'
 import { EmptyState, PageHeader, ScorePill, SectionHeader, Skeleton } from '@/components/ds/Primitives'
@@ -89,11 +90,14 @@ function Browser({ subjects, of, best, attempts }: { subjects: Subject[]; of: (i
   const lastSubject = attempts.find((a) => a.paper && subjects.some((s) => s.id === a.paper!.subject_id))?.paper?.subject_id
   const [activeId, setActiveId] = useState(lastSubject ?? subjects[0].id)
   const active = subjects.find((s) => s.id === activeId) ?? subjects[0]
-  const papers = of(active.id)
+  // A subject's timed mock exam has its own card; the list below is its topic sets.
+  const mock = of(active.id).find(isMock)
+  const papers = of(active.id).filter((p) => !isMock(p))
 
-  // Up next: the first open set not yet taken in this subject. On a free
-  // account whose free set here is done, another subject's free set first.
-  const openIn = (id: string) => of(id).filter((p) => access.hasAccess || !paperLocked(access, p))
+  // Up next: the first open topic set not yet taken in this subject (never
+  // the mock: a 50-question exam is not a first step). On a free account
+  // whose free set here is done, another subject's free set first.
+  const openIn = (id: string) => of(id).filter((p) => !isMock(p) && (access.hasAccess || !paperLocked(access, p)))
   const open = openIn(active.id)
   let next = open.find((p) => !best.has(p.id))
   let nextSubject = active
@@ -183,23 +187,62 @@ function Browser({ subjects, of, best, attempts }: { subjects: Subject[]; of: (i
               >
                 <SubjectCover slug={s.slug} shape="square" className="h-8 w-8" rounded="rounded-full" />
                 {s.name}
-                <span className={`text-xs font-medium tabular-nums ${on ? 'text-background/70' : 'text-muted-foreground'}`}>{of(s.id).length}</span>
+                <span className={`text-xs font-medium tabular-nums ${on ? 'text-background/70' : 'text-muted-foreground'}`}>{of(s.id).filter((p) => !isMock(p)).length}</span>
               </button>
             )
           })}
         </div>
       )}
 
-      <div role="tabpanel" aria-label={active.name}>
+      <div role="tabpanel" aria-label={active.name} className="space-y-6">
+        {mock && <MockCard paper={mock} subject={active.name} best={best.get(mock.id)} locked={!access.hasAccess && paperLocked(access, mock)} />}
         <SubjectSets key={active.id} subject={active} papers={papers} best={best} accent={theme.palette.bar} />
         {!access.hasAccess && (
-          <Link to="/subscribe" search={{ plan: 'year' }} className="mt-3 flex items-center justify-between gap-3 rounded-2xl border border-primary/20 bg-brand-soft/50 px-4 py-3 text-sm transition-colors hover:border-primary/40">
+          <Link to="/subscribe" search={{ plan: 'year' }} className="-mt-3 flex items-center justify-between gap-3 rounded-2xl border border-primary/20 bg-brand-soft/50 px-4 py-3 text-sm transition-colors hover:border-primary/40">
             <span><span className="font-semibold">Free account:</span> <span className="text-muted-foreground">the first set in each subject is open. Unlock the rest from {FROM_PRICE} NLe.</span></span>
             <ArrowRight className="h-4 w-4 shrink-0 text-primary" aria-hidden />
           </Link>
         )}
       </div>
     </>
+  )
+}
+
+const isMock = (p: PaperRow) => p.paper_type?.toLowerCase() === 'mock'
+
+/** A subject's timed WASSCE Paper 1: the length, the clock, and the best score so far. */
+function MockCard({ paper, subject, best, locked }: { paper: PaperRow; subject: string; best?: ScoredAttempt; locked: boolean }) {
+  const minutes = mockMinutes(paper.id)
+  return (
+    <section aria-labelledby="mock-title" className="site-brand-panel relative isolate overflow-hidden rounded-3xl p-5 sm:p-7">
+      <span aria-hidden className="absolute -right-12 -top-12 -z-10 h-44 w-44 rounded-full border-[22px] border-white/10" />
+      <span aria-hidden className="absolute -bottom-10 right-16 -z-10 hidden h-24 w-24 rounded-full bg-[#ffd166]/85 sm:block" />
+      <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+        <div className="min-w-0">
+          <p className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[.14em] text-[#ffd166]">
+            <Timer className="h-4 w-4" aria-hidden /> Timed mock exam
+          </p>
+          <h2 id="mock-title" className="mt-1.5 text-2xl font-bold leading-tight tracking-tight">{subject} Paper 1</h2>
+          <p className="mt-1 text-sm text-white/80">
+            {paper.question_count} questions{minutes ? ` · ${formatMinutes(minutes)}, the time WAEC gives` : ''} · topics to revise when you finish
+          </p>
+          {best && (
+            <p className="mt-2 text-sm font-semibold">
+              Best so far: {best.score}/{best.total} ({Math.round((best.score / best.total) * 100)}%)
+            </p>
+          )}
+        </div>
+        {locked ? (
+          <Button asChild size="lg" className="w-full shrink-0 bg-[#ffd166] text-[#1b1240] hover:bg-[#ffd166]/90 sm:w-auto">
+            <Link to="/subscribe" search={{ plan: 'year' }}><Lock className="h-4 w-4" aria-hidden /> Unlock mock exams · from {FROM_PRICE} NLe</Link>
+          </Button>
+        ) : (
+          <Button asChild size="lg" className="w-full shrink-0 bg-white text-[#3a1d9e] hover:bg-white/90 sm:w-auto">
+            <Link to="/paper/$paperId" params={{ paperId: paper.id }}>{best ? 'Sit it again' : 'Start the mock'} <ArrowRight className="h-4 w-4" aria-hidden /></Link>
+          </Button>
+        )}
+      </div>
+    </section>
   )
 }
 

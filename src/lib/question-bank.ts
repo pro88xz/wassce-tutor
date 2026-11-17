@@ -21,13 +21,16 @@ type SetFile = {
   subject_slug: string
   papers: Array<{
     id: string
-    topic: string
+    /** null for a mock exam, whose questions each name their topic */
+    topic: string | null
     title: string
     paper_type: string
     description: string
     sort_order: number
     questions: Array<{
       id: string
+      /** set on a mock exam's questions */
+      topic?: string
       stem: string
       image_url: string | null
       explanation: string
@@ -84,7 +87,8 @@ export function useLoadQuestionSet() {
       if (sErr) throw sErr
       if (!subject) throw new Error(`Subject "${set.subject_slug}" not found.`)
 
-      const names = [...new Set(set.papers.map((p) => p.topic))]
+      // A topic set has one topic; a mock exam's questions each carry their own.
+      const names = [...new Set(set.papers.flatMap((p) => (p.topic ? [p.topic] : p.questions.map((q) => q.topic ?? ''))))].filter(Boolean)
       const { data: topics, error: tErr } = await supabase.from('topics').select('id, name').eq('subject_id', subject.id).in('name', names)
       if (tErr) throw tErr
       const topicId = new Map((topics ?? []).map((t) => [t.name as string, t.id as string]))
@@ -101,7 +105,7 @@ export function useLoadQuestionSet() {
         sort_order: p.sort_order,
         is_published: true,
       })))
-      const questions = set.papers.flatMap((p) => p.questions.map((q) => ({ q, paperId: p.id, topicId: topicId.get(p.topic)! })))
+      const questions = set.papers.flatMap((p) => p.questions.map((q) => ({ q, paperId: p.id, topicId: topicId.get(q.topic ?? p.topic ?? '')! })))
       await upsertInChunks('questions', questions.map(({ q, paperId, topicId }) => ({
         id: q.id,
         paper_id: paperId,

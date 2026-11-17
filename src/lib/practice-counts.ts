@@ -4,10 +4,11 @@
 //
 // Copy that says where practice exists is written from these counts
 // (PRACTICE_SUBJECTS_PHRASE), so it stays true as subjects gain question sets.
-type SetSummary = { subject_slug: string; questions: number }
+type SetSummary = { subject_slug: string; questions: number; mock?: boolean }
 
 const files = import.meta.glob<SetSummary[]>('../content/question-sets/manifest.json', { eager: true, import: 'default' })
-const sets = Object.values(files)[0] ?? []
+// Mock exams reuse practice questions, so they are not counted again.
+const sets = (Object.values(files)[0] ?? []).filter((s) => !s.mock)
 
 export const PRACTICE_QUESTIONS: Record<string, number> = sets.reduce<Record<string, number>>((acc, s) => {
   acc[s.subject_slug] = (acc[s.subject_slug] ?? 0) + s.questions

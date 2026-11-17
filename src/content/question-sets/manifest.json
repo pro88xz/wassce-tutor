@@ -520,5 +520,41 @@
    "df29e685-20c5-5fc0-a825-1f07c6fd783d"
   ],
   "questions": 40
+ },
+ {
+  "name": "maths_mock_p1",
+  "label": "Mathematics: timed mock exam, Paper 1",
+  "subject_slug": "mathematics",
+  "version": "61af12175d23",
+  "papers": [
+   "1fdea7d1-8c60-51ef-91cf-bfc3cbf035f7"
+  ],
+  "questions": 50,
+  "mock": true,
+  "minutes": 90
+ },
+ {
+  "name": "physics_mock_p1",
+  "label": "Physics: timed mock exam, Paper 1",
+  "subject_slug": "physics",
+  "version": "0ea0465257e4",
+  "papers": [
+   "4a15373f-da8c-575d-99c7-a4d130c68afc"
+  ],
+  "questions": 50,
+  "mock": true,
+  "minutes": 75
+ },
+ {
+  "name": "chemistry_mock_p1",
+  "label": "Chemistry: timed mock exam, Paper 1",
+  "subject_slug": "chemistry",
+  "version": "e612b75aff89",
+  "papers": [
+   "ca8ac526-289a-5837-a5ec-e0c9b43fcf28"
+  ],
+  "questions": 50,
+  "mock": true,
+  "minutes": 60
  }
 ]

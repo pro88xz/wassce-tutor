@@ -1,0 +1,1968 @@
+{
+ "name": "maths_mock_p1",
+ "label": "Mathematics: timed mock exam, Paper 1",
+ "subject_slug": "mathematics",
+ "papers": [
+  {
+   "id": "1fdea7d1-8c60-51ef-91cf-bfc3cbf035f7",
+   "topic": null,
+   "title": "Mathematics Paper 1 mock exam",
+   "paper_type": "Mock",
+   "description": "A timed WASSCE-style Mathematics Paper 1: 50 objective questions from across the syllabus, in 1 h 30 min, the time WAEC gives for Paper 1. Every question comes from the WASSCE Tutor practice bank, with the working and the reason behind every wrong option.",
+   "sort_order": 900,
+   "questions": [
+    {
+     "key": "maths-indices-03",
+     "stem": "A 25 kg bag of rice contains about $1.2 \\times 10^{6}$ grains. Find the average mass of one grain in grams, in standard form, correct to three significant figures.",
+     "image_url": null,
+     "explanation": "Change to grams: $25 \\text{ kg} = 25\\,000 \\text{ g} = 2.5 \\times 10^{4}$ g.\n\nMass of one grain $= \\dfrac{2.5 \\times 10^{4}}{1.2 \\times 10^{6}} = \\dfrac{2.5}{1.2} \\times 10^{4-6} = 2.0833 \\times 10^{-2}$ g\n\n$\\approx 2.08 \\times 10^{-2}$ g (3 s.f.). That is about 0.02 g, which is sensible for one grain of rice.\n\n**Why the other options are wrong**\n\n- $2.08 \\times 10^{-5}$ g: You did not change kilograms to grams. 25 kg = 25 000 g = $2.5 \\times 10^{4}$ g.\n- $4.80 \\times 10^{1}$ g: You divided the number of grains by the mass. Mass of one grain = total mass ÷ number of grains.\n- $2.08 \\times 10^{10}$ g: You added the powers of 10. When dividing, subtract them: $10^{4} \\div 10^{6} = 10^{-2}$.",
+     "id": "a53d7b78-c230-5f3b-8caf-3f00a2b60f83",
+     "topic": "Indices",
+     "position": 1,
+     "options": [
+      {
+       "id": "9a4a432f-95ff-5f10-bcf1-1cbae57e716f",
+       "label": "A",
+       "content": "$2.08 \\times 10^{-5}$ g",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6a17c37e-8d67-5d82-a5fd-4723875979e6",
+       "label": "B",
+       "content": "$2.08 \\times 10^{-2}$ g",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "693c98a8-b236-554c-a352-ee31e40b5e7f",
+       "label": "C",
+       "content": "$4.80 \\times 10^{1}$ g",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "189c3193-03c0-5656-bc61-b11ddca75ceb",
+       "label": "D",
+       "content": "$2.08 \\times 10^{10}$ g",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-bases-05",
+     "stem": "Evaluate $23_{\\text{four}} \\times 3_{\\text{four}}$, leaving your answer in base four.",
+     "image_url": null,
+     "explanation": "Units: $3 \\times 3 = 9 = 2 \\times 4 + 1$. Write 1, carry 2.\n\nFours: $2 \\times 3 + 2 = 8 = 2 \\times 4 + 0$. Write 0, carry 2.\n\nWrite the final carry: 2. Answer: $201_{\\text{four}}$.\n\nCheck in base ten: $23_{\\text{four}} = 11$, $11 \\times 3 = 33$, and $201_{\\text{four}} = 32 + 0 + 1 = 33$. ✓\n\n**Why the other options are wrong**\n\n- $33_{\\text{four}}$: You worked out $11 \\times 3 = 33$ in base ten but did not convert back to base four.\n- $102_{\\text{four}}$: You wrote the digits in reverse order. The first remainder is the units digit, on the right.\n- $121_{\\text{four}}$: You forgot the carry. $3 \\times 3 = 9 = 21_{\\text{four}}$: write 1 and carry 2 into the next column.",
+     "id": "e1610940-eb62-5e4d-b955-97d6226be2a2",
+     "topic": "Number Bases",
+     "position": 2,
+     "options": [
+      {
+       "id": "934c2540-987f-59dc-bdb7-ffec11c599eb",
+       "label": "A",
+       "content": "$201_{\\text{four}}$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8ce83831-37b4-5981-934d-f32d9a1fc563",
+       "label": "B",
+       "content": "$33_{\\text{four}}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2a50ca3b-8c6d-5825-af35-f476810db910",
+       "label": "C",
+       "content": "$102_{\\text{four}}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c401c1e0-3724-5e03-b271-a8646c585390",
+       "label": "D",
+       "content": "$121_{\\text{four}}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-surds-05",
+     "stem": "A square plot of land in Makeni has an area of 72 m². Find the length of its diagonal.",
+     "image_url": null,
+     "explanation": "Side $= \\sqrt{72} = \\sqrt{36 \\times 2} = 6\\sqrt{2}$ m.\n\nBy Pythagoras, diagonal$^{2} = (6\\sqrt{2})^{2} + (6\\sqrt{2})^{2} = 72 + 72 = 144$.\n\nSo the diagonal $= \\sqrt{144} = 12$ m.\n\n**Why the other options are wrong**\n\n- $6\\sqrt{2}$ m: That is the length of one side. The diagonal is longer: use Pythagoras.\n- $12\\sqrt{2}$ m: You took the diagonal as twice the side. Use Pythagoras: $d^{2} = s^{2} + s^{2}$.\n- 18 m: You treated 72 as the perimeter and divided by 4. 72 m² is the area, so each side is $\\sqrt{72}$ m.",
+     "id": "2b09e0cb-04da-5e54-b9a5-a92531f93030",
+     "topic": "Surds",
+     "position": 3,
+     "options": [
+      {
+       "id": "18ea35f9-12e3-55db-ae0a-b2e3a51d29b1",
+       "label": "A",
+       "content": "$6\\sqrt{2}$ m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c1cadc9d-8d16-54fa-b817-da6368d6ec15",
+       "label": "B",
+       "content": "12 m",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8a01067d-976b-5fef-a7ce-eb3d604b484b",
+       "label": "C",
+       "content": "$12\\sqrt{2}$ m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5d6f17ef-d1f5-5f8d-864e-1d9c489c3218",
+       "label": "D",
+       "content": "18 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-sequences-02",
+     "stem": "The third term of an arithmetic progression (A.P.) is 11 and the seventh term is 27. Find the first term.",
+     "image_url": null,
+     "explanation": "$a + 2d = 11$ and $a + 6d = 27$.\n\nSubtract: $4d = 16$, so $d = 4$.\n\nThen $a = 11 - 2(4) = 3$.\n\nCheck: 3, 7, 11, 15, 19, 23, 27 — the seventh term is 27. ✓\n\n**Why the other options are wrong**\n\n- $-1$: You used $a + 3d$ for the third term. The $n$th term is $a + (n - 1)d$, so the third term is $a + 2d$.\n- $4$: 4 is the common difference $d$, not the first term.\n- $7$: You went back only one step from the third term ($11 - 4$). The first term is two steps back: $11 - 2 \\times 4$.",
+     "id": "d9a474dd-b259-54d8-8d6d-b6ef52e1829a",
+     "topic": "Sequences and Series",
+     "position": 4,
+     "options": [
+      {
+       "id": "0bd8892e-e3a4-58f8-80bd-316c9cf5aa54",
+       "label": "A",
+       "content": "$-1$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "81dce163-460b-5f52-b83e-e2b1657a8730",
+       "label": "B",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c8a2fc54-6073-560b-8335-11cb06376d61",
+       "label": "C",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5deae048-b438-5b81-9542-ca7757ee8adb",
+       "label": "D",
+       "content": "$7$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-percentages-01",
+     "stem": "Mrs Kamara bought a bag of rice for Le 640 and sold it for Le 720. Find her percentage profit.",
+     "image_url": null,
+     "explanation": "Profit $= 720 - 640 = $ Le 80.\n\nPercentage profit $= \\dfrac{\\text{profit}}{\\text{cost price}} \\times 100\\% = \\dfrac{80}{640} \\times 100\\% = 12.5\\%$\n\n**Why the other options are wrong**\n\n- 11.1%: You divided the profit by the selling price. Percentage profit is worked out on the cost price.\n- 80%: Le 80 is the profit in Leones. Write it as a percentage of the cost price.\n- 112.5%: That is the selling price as a percentage of the cost price. Take away 100% to get the profit.",
+     "id": "e17eab59-a421-5cc1-8250-b5032355305e",
+     "topic": "Percentages",
+     "position": 5,
+     "options": [
+      {
+       "id": "4ff265c7-f557-5f78-b79d-d2294e9239c1",
+       "label": "A",
+       "content": "11.1%",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e9032bc6-56a3-5296-bc77-326bd791c9b5",
+       "label": "B",
+       "content": "12.5%",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "797aea84-056f-5daf-a915-6e3ab0521f1a",
+       "label": "C",
+       "content": "80%",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "75a165c9-dfcf-5b0d-a627-adc065a08033",
+       "label": "D",
+       "content": "112.5%",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-variation-01",
+     "stem": "$y$ varies directly as $x^{2}$. If $y = 12$ when $x = 2$, find $y$ when $x = 5$.",
+     "image_url": null,
+     "explanation": "$y = kx^{2}$. When $x = 2$, $y = 12$: $12 = k \\times 4$, so $k = 3$.\n\nWhen $x = 5$: $y = 3 \\times 25 = 75$.\n\n**Why the other options are wrong**\n\n- $1.92$: You used inverse variation. 'Varies directly' means $y = kx^{2}$.\n- $30$: You used $y = kx$. The question says $x^{2}$.\n- $150$: You found $k = \\dfrac{12}{2} = 6$ by dividing by $x$ instead of $x^{2}$.",
+     "id": "07e27525-ab27-51bf-8cd0-88cf2e697c69",
+     "topic": "Variation",
+     "position": 6,
+     "options": [
+      {
+       "id": "b672675e-3060-51c1-9dc5-dfec94ea2929",
+       "label": "A",
+       "content": "$1.92$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9badf4a6-8bae-5122-b379-947158e7465e",
+       "label": "B",
+       "content": "$30$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2077224a-ae94-559d-87fc-98bdbe4de289",
+       "label": "C",
+       "content": "$75$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0b5455e5-8565-571e-a49b-2a0b8cdb3f17",
+       "label": "D",
+       "content": "$150$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-subject-01",
+     "stem": "Make $r$ the subject of the formula $V = \\dfrac{1}{3}\\pi r^{2}h$.",
+     "image_url": null,
+     "explanation": "$V = \\dfrac{1}{3}\\pi r^{2}h$\n\nMultiply both sides by 3: $3V = \\pi r^{2}h$\n\nDivide by $\\pi h$: $r^{2} = \\dfrac{3V}{\\pi h}$\n\nTake the square root: $r = \\sqrt{\\dfrac{3V}{\\pi h}}$\n\n**Why the other options are wrong**\n\n- $r = \\sqrt{\\dfrac{V}{3\\pi h}}$: You divided by 3 instead of multiplying. Multiply both sides by 3 first: $3V = \\pi r^{2}h$.\n- $r = \\dfrac{3V}{\\pi h}$: That gives $r^{2}$. Take the square root to get $r$.\n- $r = \\dfrac{\\sqrt{3V}}{\\pi h}$: The square root must cover the whole fraction $\\dfrac{3V}{\\pi h}$.",
+     "id": "1e542129-571d-5a5a-93f6-aefc82f33340",
+     "topic": "Change of Subject",
+     "position": 7,
+     "options": [
+      {
+       "id": "dfd9eeed-9b1f-5bfd-881a-b0ce8ba096ce",
+       "label": "A",
+       "content": "$r = \\sqrt{\\dfrac{3V}{\\pi h}}$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4b87f83d-34db-51f8-882f-9ebad007cfe8",
+       "label": "B",
+       "content": "$r = \\sqrt{\\dfrac{V}{3\\pi h}}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "10f6d629-9f69-5770-9239-12ef3a429374",
+       "label": "C",
+       "content": "$r = \\dfrac{3V}{\\pi h}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a115c6d7-208b-5f99-9ba0-a8471c82484d",
+       "label": "D",
+       "content": "$r = \\dfrac{\\sqrt{3V}}{\\pi h}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-quadratics-04",
+     "stem": "The length of a rectangular garden is 3 m more than its width. Its area is 54 m². Find the width of the garden.",
+     "image_url": null,
+     "explanation": "Let the width be $w$ m. Then the length is $(w + 3)$ m.\n\n$w(w + 3) = 54$, so $w^{2} + 3w - 54 = 0$.\n\n$(w + 9)(w - 6) = 0$, so $w = 6$ or $w = -9$.\n\nA width cannot be negative, so the width is 6 m (and the length 9 m: $6 \\times 9 = 54$ ✓).\n\n**Why the other options are wrong**\n\n- 9 m: 9 m is the length. The question asks for the width.\n- 12 m: You used 54 as the perimeter: $2(w + w + 3) = 54$. 54 m² is the area: $w(w + 3) = 54$.\n- 18 m: You divided the area by 3. Form the equation $w(w + 3) = 54$ and solve it.",
+     "id": "d25a7a5d-cae9-51b6-b067-854a12f4df71",
+     "topic": "Quadratic Equations",
+     "position": 8,
+     "options": [
+      {
+       "id": "1ad60917-fb0d-5df2-a487-ce9265625a6f",
+       "label": "A",
+       "content": "6 m",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6b3dbd85-cb0e-5f80-8051-8e356930b688",
+       "label": "B",
+       "content": "9 m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4148ca0f-ac78-5381-a336-3b869561c79e",
+       "label": "C",
+       "content": "12 m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0f79582b-f1d1-5042-a970-cb3387ac6cd3",
+       "label": "D",
+       "content": "18 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-sets-05",
+     "stem": "How many subsets has the set $\\{p, q, r, s\\}$?",
+     "image_url": null,
+     "explanation": "A set with $n$ members has $2^{n}$ subsets. Here $n = 4$, so there are $2^{4} = 16$ subsets.\n\n(They include $\\varnothing$ and $\\{p, q, r, s\\}$ itself.)\n\n**Why the other options are wrong**\n\n- $4$: 4 is the number of members. A set with $n$ members has $2^{n}$ subsets.\n- $8$: $2^{4}$ means $2 \\times 2 \\times 2 \\times 2 = 16$, not $2 \\times 4$.\n- $15$: 15 is the number of proper subsets. 'Subsets' includes the set itself (and the empty set).",
+     "id": "c3ec5fa9-603a-5a12-ad04-972166fb9a50",
+     "topic": "Sets",
+     "position": 9,
+     "options": [
+      {
+       "id": "53761f0a-f611-5359-870b-294b59c3ff6a",
+       "label": "A",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8991f3be-97c6-5218-b168-5f822ff3e240",
+       "label": "B",
+       "content": "$8$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d2bdc53b-6f7d-59f2-a54e-8e92a7c765d2",
+       "label": "C",
+       "content": "$15$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "92137a59-77f5-58b1-ad67-efe3b809a89d",
+       "label": "D",
+       "content": "$16$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-probability-01",
+     "stem": "A bag contains 5 red, 3 blue and 4 green beads. A bead is picked at random. What is the probability that it is not blue?",
+     "image_url": null,
+     "explanation": "Total beads $= 5 + 3 + 4 = 12$. Beads that are not blue $= 5 + 4 = 9$.\n\n$P(\\text{not blue}) = \\dfrac{9}{12} = \\dfrac{3}{4}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{1}{4}$: That is the probability that it is blue.\n- $\\dfrac{1}{3}$: You divided the 3 blue beads by the 9 other beads. Divide by the total: 12 beads.\n- $\\dfrac{5}{12}$: That is the probability of red only. 'Not blue' means red or green: 9 beads.",
+     "id": "657c064d-3ffa-5d1b-99b5-49c1174170f0",
+     "topic": "Probability",
+     "position": 10,
+     "options": [
+      {
+       "id": "b7616c0d-de02-53f7-88e6-9f2ccaf0e67d",
+       "label": "A",
+       "content": "$\\dfrac{1}{4}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3e16f3d4-5a6c-5ec2-858d-f1188dbdb677",
+       "label": "B",
+       "content": "$\\dfrac{1}{3}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "68d47d80-64d9-536c-96b9-7b80604bee48",
+       "label": "C",
+       "content": "$\\dfrac{5}{12}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f4da98e1-b759-5619-9b5c-814ea961aea4",
+       "label": "D",
+       "content": "$\\dfrac{3}{4}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-circles-04",
+     "stem": "In the diagram, $PT$ is a tangent to the circle with centre $O$, touching it at $T$. The radius is 5 cm and $|OP| = 13$ cm. Find $|PT|$.",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-circles-04.svg?v=34512c8bf4",
+     "explanation": "A tangent is perpendicular to the radius at the point of contact, so $\\angle OTP = 90°$.\n\nBy Pythagoras: $|PT|^{2} = 13^{2} - 5^{2} = 169 - 25 = 144$, so $|PT| = 12$ cm.\n\n**Why the other options are wrong**\n\n- 13.9 cm: You added the squares. The radius meets the tangent at 90°, so $OP$ is the hypotenuse: subtract, $13^{2} - 5^{2}$.\n- 18 cm: $13 + 5$: lengths on different sides of a triangle don't add like that. Use Pythagoras in triangle $OTP$.\n- 144 cm: That is $|PT|^{2}$. Take the square root.",
+     "id": "a4d4c163-d330-5341-be39-f904acb4d425",
+     "topic": "Circles",
+     "position": 11,
+     "options": [
+      {
+       "id": "6d475e66-8597-5649-a83e-22d7d21735f7",
+       "label": "A",
+       "content": "12 cm",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0d9d1a99-5917-5456-8a15-1b594b7b0d7d",
+       "label": "B",
+       "content": "13.9 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3d1f4e56-1ceb-567c-a3e7-ab482aedc206",
+       "label": "C",
+       "content": "18 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d2ea8853-db48-5886-ae02-d1ea865c40f4",
+       "label": "D",
+       "content": "144 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-angles-02",
+     "stem": "Two straight lines cross at a point. One of the angles formed is $(3x - 20)°$ and the angle vertically opposite it is $(x + 40)°$. Find the value of $x$.",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-angles-02.svg?v=e1029e2003",
+     "explanation": "Vertically opposite angles are equal:\n\n$3x - 20 = x + 40$, so $2x = 60$ and $x = 30$.\n\nCheck: both angles are $70°$. ✓\n\n**Why the other options are wrong**\n\n- $10$: You changed $-20$ to $+20$: $3x + 20 = x + 40$. Copy the expression carefully.\n- $40$: Vertically opposite angles are equal. They don't add up to 180°.\n- $70$: 70° is the size of each angle. The question asks for $x$.",
+     "id": "3eef2273-b4e4-54fe-9084-00330b580d8b",
+     "topic": "Angles and Intersecting Lines",
+     "position": 12,
+     "options": [
+      {
+       "id": "2aaf557d-e5d9-58fc-ac32-21497a71c4b1",
+       "label": "A",
+       "content": "$10$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5e38a7e7-9475-5abd-9dbf-aa4c165cd041",
+       "label": "B",
+       "content": "$30$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "de667dc1-10fe-5eda-b067-1ba9411813b0",
+       "label": "C",
+       "content": "$40$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dead7403-831a-5256-af66-91ee51676baa",
+       "label": "D",
+       "content": "$70$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-trig-01",
+     "stem": "In triangle $PQR$, $\\angle PQR = 90°$, $|PQ| = 8$ cm and $|QR| = 15$ cm. Find $\\sin R$.",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-trig-01.svg?v=e6cefd9be5",
+     "explanation": "$|PR| = \\sqrt{8^{2} + 15^{2}} = \\sqrt{289} = 17$ cm.\n\n$\\sin R = \\dfrac{\\text{opposite}}{\\text{hypotenuse}} = \\dfrac{|PQ|}{|PR|} = \\dfrac{8}{17}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{8}{15}$: That is $\\tan R$ (opposite ÷ adjacent). Sine is opposite ÷ hypotenuse.\n- $\\dfrac{15}{17}$: That is $\\cos R$. For $\\sin R$ use the side opposite $R$, which is $PQ$.\n- $\\dfrac{15}{8}$: You divided the adjacent side by the opposite side.",
+     "id": "37c8dc54-03db-52a2-82ed-0a50ec72af95",
+     "topic": "Sine, Cosine and Tangent",
+     "position": 13,
+     "options": [
+      {
+       "id": "9f83627d-605f-5285-89cb-edcf781ab472",
+       "label": "A",
+       "content": "$\\dfrac{8}{17}$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "aae5c994-b109-5dfc-bcc3-510dffe89a50",
+       "label": "B",
+       "content": "$\\dfrac{8}{15}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "96bf8919-5f55-55fd-8759-4caee894679d",
+       "label": "C",
+       "content": "$\\dfrac{15}{17}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f5b04728-dc8a-5417-aaf3-66e9fcb0f231",
+       "label": "D",
+       "content": "$\\dfrac{15}{8}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-elevation-03",
+     "stem": "A kite is flying on a straight string 50 m long. The kite is 35 m above the hand holding the string. Find the angle of elevation of the kite from the hand, correct to the nearest degree.",
+     "image_url": null,
+     "explanation": "The string is the hypotenuse and the height is opposite the angle:\n\n$\\sin\\theta = \\dfrac{35}{50} = 0.7$, so $\\theta = \\sin^{-1} 0.7 = 44.4° \\approx 44°$.\n\n**Why the other options are wrong**\n\n- 35°: You used tan. The string, 50 m, is the hypotenuse, so use sin.\n- 46°: You used cos. The height is opposite the angle, so use sin.\n- 55°: You worked out $\\tan^{-1}\\dfrac{50}{35}$. The height is opposite the angle and the string is the hypotenuse.",
+     "id": "63fe3a2d-9a5a-58f3-b5de-8caf5e440073",
+     "topic": "Angles of Elevation and Depression",
+     "position": 14,
+     "options": [
+      {
+       "id": "705f9ec7-f285-5042-91c7-d69b6236ac39",
+       "label": "A",
+       "content": "35°",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "440104e6-585a-5f20-965c-3408912a3f52",
+       "label": "B",
+       "content": "44°",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "097e3712-c529-5c14-b3c6-e42316093806",
+       "label": "C",
+       "content": "46°",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6a137e1b-af54-52f6-ac6c-673547bd4f52",
+       "label": "D",
+       "content": "55°",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-bearings-05",
+     "stem": "Village $A$ is 10 km from a town $T$ on a bearing of 030°. Village $B$ is 10 km from $T$ on a bearing of 120°. Find $|AB|$, correct to one decimal place.",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-bearings-05.svg?v=7869b0f708",
+     "explanation": "$\\angle ATB = 120° - 30° = 90°$.\n\nBy Pythagoras: $|AB| = \\sqrt{10^{2} + 10^{2}} = \\sqrt{200} = 14.14 \\approx 14.1$ km.\n\n**Why the other options are wrong**\n\n- 5.2 km: You used 30° as the angle at $T$. The angle between the two directions is $120° - 30° = 90°$.\n- 17.3 km: You used 120° as the angle at $T$. Bearings are measured from north, so $\\angle ATB = 120° - 30° = 90°$.\n- 20.0 km: $10 + 10$: $A$, $T$ and $B$ are not in a straight line.",
+     "id": "8cadf4ae-4cb3-553b-badc-304901b459a7",
+     "topic": "Bearings",
+     "position": 15,
+     "options": [
+      {
+       "id": "2dea7ba8-785a-51af-abd3-18e9629aa058",
+       "label": "A",
+       "content": "5.2 km",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "855c2a94-70d2-5874-96be-76339ca1e210",
+       "label": "B",
+       "content": "14.1 km",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "abfb9c7a-6f40-5ed9-a951-3f5454e5beca",
+       "label": "C",
+       "content": "17.3 km",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cf6af33c-64c8-5f23-8b8e-ec29d3dcc0fb",
+       "label": "D",
+       "content": "20.0 km",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-volumes-05",
+     "stem": "A cylinder of radius 7 cm contains water to a depth of 10 cm. When a stone is placed in the water, the level rises by 1.5 cm. Find the volume of the stone. [Take $\\pi = \\dfrac{22}{7}$]",
+     "image_url": null,
+     "explanation": "The stone pushes up a cylinder of water of radius 7 cm and height 1.5 cm:\n\n$V = \\pi r^{2}h = \\dfrac{22}{7} \\times 49 \\times 1.5 = 231$ cm³\n\n**Why the other options are wrong**\n\n- 33 cm³: You used $r$ instead of $r^{2}$.\n- 1540 cm³: That is the volume of the water before the stone went in. The stone's volume is the rise only.\n- 1771 cm³: That is the volume of the water and the stone together.",
+     "id": "61141a0d-d8f7-53cc-b520-f14359a2fe66",
+     "topic": "Volumes",
+     "position": 16,
+     "options": [
+      {
+       "id": "da5ad6ad-0010-5639-8c99-044291fbeb87",
+       "label": "A",
+       "content": "33 cm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "300bd104-0d8b-59b3-8d45-5191ee1e7510",
+       "label": "B",
+       "content": "231 cm³",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1be5ef20-665e-5388-b86f-ba8ab829326f",
+       "label": "C",
+       "content": "1540 cm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "26f82eb7-f288-5d1c-8b0d-3c3f6a518abc",
+       "label": "D",
+       "content": "1771 cm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-averages-03",
+     "stem": "The table shows the shoe sizes of 36 pupils.\n\n$$\n\\begin{array}{l|ccccc}\n\\text{Shoe size} & 5 & 6 & 7 & 8 & 9 \\\\ \\hline\n\\text{Number of pupils} & 3 & 12 & 9 & 8 & 4\n\\end{array}\n$$\n\nWhat is the modal shoe size?",
+     "image_url": null,
+     "explanation": "The mode is the value with the highest frequency.\n\nSize 6 has the highest frequency (12 pupils), so the modal shoe size is 6.\n\n**Why the other options are wrong**\n\n- $6.9$: That is the mean shoe size. The mode is the most common size.\n- $7$: That is the median (the 18th and 19th sizes in order are both 7). The mode is the most common size.\n- $12$: 12 is how many pupils wear size 6. The mode is the shoe size, not the frequency.",
+     "id": "81ce741c-0d2d-5ae9-b448-ee2c0eeef554",
+     "topic": "Measures of Central Tendency",
+     "position": 17,
+     "options": [
+      {
+       "id": "2f5ecf5d-4a60-5561-9bb8-073234e0d7c3",
+       "label": "A",
+       "content": "$6$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a2fd0493-4547-5284-961e-b5a8256d4906",
+       "label": "B",
+       "content": "$6.9$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a659f977-9977-5a43-902f-53534f63a352",
+       "label": "C",
+       "content": "$7$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "32f7ac3e-ee66-5a8e-9a19-49083611a01b",
+       "label": "D",
+       "content": "$12$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-logs-05",
+     "stem": "Solve $2^{x} = 10$, giving your answer correct to two decimal places.",
+     "image_url": null,
+     "explanation": "Take logs of both sides: $x\\log 2 = \\log 10 = 1$.\n\n$x = \\dfrac{1}{\\log 2} = \\dfrac{1}{0.3010} = 3.32$ (2 d.p.)\n\n**Why the other options are wrong**\n\n- $0.30$: You divided the wrong way round. $x = \\dfrac{\\log 10}{\\log 2}$.\n- $0.70$: You worked out $\\log\\dfrac{10}{2}$. $\\dfrac{\\log 10}{\\log 2}$ is not $\\log\\dfrac{10}{2}$.\n- $5$: $2^{x} = 10$ does not mean $2x = 10$.",
+     "id": "7f9a59de-1cdb-5866-9ea4-56bfdae1c4d0",
+     "topic": "Logarithms",
+     "position": 18,
+     "options": [
+      {
+       "id": "8d3e07c4-f1a7-5ee8-a5b9-19d2668a55c1",
+       "label": "A",
+       "content": "$0.30$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9005d989-c7c0-5841-ba5c-4ddf8a02129a",
+       "label": "B",
+       "content": "$0.70$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6824e041-84d2-5c93-8777-6a8bf7d99678",
+       "label": "C",
+       "content": "$3.32$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "dc011b00-9ccc-5956-92de-9fa6edd6c812",
+       "label": "D",
+       "content": "$5$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-modular-02",
+     "stem": "Solve $3x \\equiv 2 \\pmod{7}$.",
+     "image_url": null,
+     "explanation": "Try $x = 0, 1, 2, \\ldots, 6$:\n\n$3 \\times 3 = 9 = 7 + 2$, so $3 \\times 3 \\equiv 2 \\pmod{7}$ and $x = 3$.\n\n**Why the other options are wrong**\n\n- $\\dfrac{2}{3}$: In modulo 7 the answer must be a whole number from 0 to 6. Try each one until $3x$ leaves remainder 2.\n- $5$: You added 3 to 2. Find $x$ so that $3x$ leaves remainder 2 when divided by 7.\n- $6$: You multiplied 2 by 3 instead of solving for $x$.",
+     "id": "c07efde9-5b11-52db-a82a-aff9bd10e313",
+     "topic": "Modular Arithmetic",
+     "position": 19,
+     "options": [
+      {
+       "id": "fdcb8bcd-513b-5c6a-b050-becf54099063",
+       "label": "A",
+       "content": "$\\dfrac{2}{3}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "577d8e2c-8c49-5f45-8922-d2db3b8e03cd",
+       "label": "B",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ec9509cb-a3c2-5e97-99e0-eea078ea32ae",
+       "label": "C",
+       "content": "$5$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "15deed2b-4ae4-5824-b50c-e85e58b36361",
+       "label": "D",
+       "content": "$6$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-vectors-03",
+     "stem": "$P$ is the point $(2, 3)$ and $Q$ is the point $(-4, 5)$. Find $\\overrightarrow{PQ}$.",
+     "image_url": null,
+     "explanation": "$\\overrightarrow{PQ} = \\mathbf{q} - \\mathbf{p} = \\begin{pmatrix} -4 - 2 \\\\ 5 - 3 \\end{pmatrix} = \\begin{pmatrix} -6 \\\\ 2 \\end{pmatrix}$\n\n**Why the other options are wrong**\n\n- $\\begin{pmatrix} 6 \\\\ -2 \\end{pmatrix}$: That is $\\overrightarrow{QP}$. $\\overrightarrow{PQ} = \\mathbf{q} - \\mathbf{p}$: end point minus starting point.\n- $\\begin{pmatrix} -2 \\\\ 8 \\end{pmatrix}$: You added the coordinates. $\\overrightarrow{PQ} = \\mathbf{q} - \\mathbf{p}$.\n- $\\begin{pmatrix} -6 \\\\ -2 \\end{pmatrix}$: Sign slip in the bottom number: $5 - 3 = 2$.",
+     "id": "f40e78f0-0bf1-5fad-9c7e-a2376b074ad3",
+     "topic": "Vectors",
+     "position": 20,
+     "options": [
+      {
+       "id": "ff6911fb-a75e-53dd-a4fd-4f4d5779a692",
+       "label": "A",
+       "content": "$\\begin{pmatrix} 6 \\\\ -2 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bd9d2dca-adc3-5cd2-9ca5-e54b05d83a48",
+       "label": "B",
+       "content": "$\\begin{pmatrix} -2 \\\\ 8 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "22dbcae7-efa7-5b58-9c70-482618252d4b",
+       "label": "C",
+       "content": "$\\begin{pmatrix} -6 \\\\ -2 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "661dacbb-8cb4-5f2a-a52f-ca587e6f4505",
+       "label": "D",
+       "content": "$\\begin{pmatrix} -6 \\\\ 2 \\end{pmatrix}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-areas-02",
+     "stem": "In triangle $PQR$, $|PQ| = 8$ cm, $|QR| = 10$ cm and $\\angle PQR = 150°$. Find the area of the triangle.",
+     "image_url": null,
+     "explanation": "Area $= \\dfrac{1}{2}ab\\sin C = \\dfrac{1}{2} \\times 8 \\times 10 \\times \\sin 150°$.\n\n$\\sin 150° = \\sin 30° = \\dfrac{1}{2}$, so the area $= 40 \\times \\dfrac{1}{2} = 20$ cm².\n\n**Why the other options are wrong**\n\n- 34.6 cm²: You used cos. The area formula is $\\dfrac{1}{2}ab\\sin C$.\n- 40 cm²: You forgot the $\\dfrac{1}{2}$.\n- 80 cm²: You multiplied the two sides. Area $= \\dfrac{1}{2} \\times 8 \\times 10 \\times \\sin 150°$.",
+     "id": "bf85e777-6c2c-57a8-9e2f-5b4212f0a47d",
+     "topic": "Areas",
+     "position": 21,
+     "options": [
+      {
+       "id": "b90d27e8-5178-5886-a4de-269e688f1aba",
+       "label": "A",
+       "content": "20 cm²",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "cbb20aae-d31f-534e-8a7a-3a4b1d3145d5",
+       "label": "B",
+       "content": "34.6 cm²",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dbe07faf-a311-5ab6-adb6-b0a47f7686ac",
+       "label": "C",
+       "content": "40 cm²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "64e2d95c-489a-5fd9-ad5f-a8e6eceff036",
+       "label": "D",
+       "content": "80 cm²",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-lengths-05",
+     "stem": "The shape is a rectangle 14 cm by 10 cm with a semicircle on its top side. Find the perimeter of the shape. [Take $\\pi = \\dfrac{22}{7}$]",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-lengths-05.svg?v=c7e6e0ed1a",
+     "explanation": "Curved edge (semicircle, $r = 7$ cm): $\\dfrac{1}{2} \\times 2\\pi r = \\dfrac{22}{7} \\times 7 = 22$ cm.\n\nStraight edges: $10 + 14 + 10 = 34$ cm (the dashed line is inside the shape).\n\nPerimeter $= 34 + 22 = 56$ cm\n\n**Why the other options are wrong**\n\n- 70 cm: You included the dashed line. It is inside the shape, not on its edge.\n- 78 cm: You used a whole circle (44 cm). The top edge is a semicircle: half of $2\\pi r$.\n- 92 cm: You added the whole rectangle's perimeter and a full circle.",
+     "id": "86cc6f51-d272-53e7-920e-e2cf4ad70d3b",
+     "topic": "Lengths and Perimeters",
+     "position": 22,
+     "options": [
+      {
+       "id": "c02525bd-ade3-5c93-a108-ca4a71ed349d",
+       "label": "A",
+       "content": "56 cm",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "49dac407-c2a4-5ec7-b44c-b77dae454b3e",
+       "label": "B",
+       "content": "70 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "aeb3f3dd-d998-51e2-9cc9-82b7b8171970",
+       "label": "C",
+       "content": "78 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6dd2ffdb-246f-591d-b20b-41c03225470e",
+       "label": "D",
+       "content": "92 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-polygons-04",
+     "stem": "The interior angles of a pentagon are $2x°$, $3x°$, 100°, 110° and 120°. Find the value of $x$.",
+     "image_url": null,
+     "explanation": "Sum of interior angles of a pentagon $= (5 - 2) \\times 180° = 540°$.\n\n$2x + 3x + 100 + 110 + 120 = 540$, so $5x + 330 = 540$, $5x = 210$ and $x = 42$.\n\n**Why the other options are wrong**\n\n- $6$: You used 360° for the angle sum. A pentagon's angles add up to $(5 - 2) \\times 180° = 540°$.\n- $78$: You used 720°, the angle sum of a hexagon. A pentagon has 5 sides: 540°.\n- $108$: You left out the three known angles: $5x = 540$.",
+     "id": "8557d078-696f-5210-b649-a6d2697dd9b3",
+     "topic": "Polygons",
+     "position": 23,
+     "options": [
+      {
+       "id": "75f0f63b-bbf3-56de-ae23-c810432ec042",
+       "label": "A",
+       "content": "$6$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ad2849a8-1895-5802-af43-14e6de649b07",
+       "label": "B",
+       "content": "$42$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f63bb153-2cd5-5586-9778-9e43d3deeaf5",
+       "label": "C",
+       "content": "$78$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "35697e0e-5eff-5944-8c29-c6057808c130",
+       "label": "D",
+       "content": "$108$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-matrices-02",
+     "stem": "Given that $A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$ and $B = \\begin{pmatrix} 2 & 0 \\\\ 1 & 3 \\end{pmatrix}$, find $AB$.",
+     "image_url": null,
+     "explanation": "Row 1 of $A$ × columns of $B$: $1(2) + 2(1) = 4$ and $1(0) + 2(3) = 6$.\n\nRow 2 of $A$ × columns of $B$: $3(2) + 4(1) = 10$ and $3(0) + 4(3) = 12$.\n\n$AB = \\begin{pmatrix} 4 & 6 \\\\ 10 & 12 \\end{pmatrix}$\n\n**Why the other options are wrong**\n\n- $\\begin{pmatrix} 2 & 0 \\\\ 3 & 12 \\end{pmatrix}$: You multiplied matching entries. Matrix multiplication is row × column.\n- $\\begin{pmatrix} 2 & 4 \\\\ 10 & 14 \\end{pmatrix}$: That is $BA$. Order matters: for $AB$, use the rows of $A$ with the columns of $B$.\n- $\\begin{pmatrix} 4 & 10 \\\\ 6 & 12 \\end{pmatrix}$: The entries are right but in the wrong places: row 1 of $A$ with column 2 of $B$ goes in row 1, column 2.",
+     "id": "20134166-3043-5c94-9f93-baf799da383c",
+     "topic": "Matrices and Determinants",
+     "position": 24,
+     "options": [
+      {
+       "id": "682490da-6313-5441-8f89-1023a631450f",
+       "label": "A",
+       "content": "$\\begin{pmatrix} 2 & 0 \\\\ 3 & 12 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "564b3392-e599-53f6-b0df-16a24b3e0da8",
+       "label": "B",
+       "content": "$\\begin{pmatrix} 2 & 4 \\\\ 10 & 14 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5c851b26-ea3a-5a55-b759-699fd8a5653d",
+       "label": "C",
+       "content": "$\\begin{pmatrix} 4 & 10 \\\\ 6 & 12 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5fb6300d-6237-55c1-af75-b03343a0b19d",
+       "label": "D",
+       "content": "$\\begin{pmatrix} 4 & 6 \\\\ 10 & 12 \\end{pmatrix}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-transformations-04",
+     "stem": "The point $P(3, 4)$ is enlarged with centre $(1, 1)$ and scale factor 2. Find its image.",
+     "image_url": null,
+     "explanation": "From the centre $(1, 1)$ to $P(3, 4)$ is $\\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix}$. Double it: $\\begin{pmatrix} 4 \\\\ 6 \\end{pmatrix}$.\n\nImage $= (1 + 4, 1 + 6) = (5, 7)$\n\n**Why the other options are wrong**\n\n- $(6, 8)$: That is an enlargement about the origin. The centre here is $(1, 1)$.\n- $(4, 6)$: You doubled the distance from the centre but forgot to add the centre back on.\n- $(7, 9)$: You doubled $P$ and then added the centre. Double the distance from the centre instead.",
+     "id": "a2f88ad9-c6ac-5067-9311-4384ea98fac1",
+     "topic": "Transformations",
+     "position": 25,
+     "options": [
+      {
+       "id": "3fda7f98-031e-5e15-9728-e9642b5ca733",
+       "label": "A",
+       "content": "$(5, 7)$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4a04b598-9500-5e42-95ae-ea7be5ae911c",
+       "label": "B",
+       "content": "$(6, 8)$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d3964fdc-983a-5c20-8a76-12c8aa2b578f",
+       "label": "C",
+       "content": "$(4, 6)$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c3451bf5-c168-56de-9749-01ed0d79fb53",
+       "label": "D",
+       "content": "$(7, 9)$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-cumfreq-04",
+     "stem": "The table shows the marks of 60 candidates in a test.\n\n$$\n\\begin{array}{l|cccccc}\n\\text{Marks} & \\text{10–19} & \\text{20–29} & \\text{30–39} & \\text{40–49} & \\text{50–59} & \\text{60–69} \\\\ \\hline\n\\text{Number of candidates} & 4 & 9 & 15 & 20 & 8 & 4\n\\end{array}\n$$\n\nHow many candidates scored 50 marks or more?",
+     "image_url": null,
+     "explanation": "Candidates in 50–59 and 60–69: $8 + 4 = 12$.\n\n(Or: $60 - 48 = 12$, using the cumulative frequency up to 49.)\n\n**Why the other options are wrong**\n\n- $4$: 4 is only the class 60–69. Include 50–59 as well.\n- $8$: 8 is only the class 50–59. Include 60–69 as well.\n- $48$: 48 candidates scored less than 50. The question asks for 50 or more.",
+     "id": "7ef963ea-fbf6-5b3d-93dd-f565f61c281e",
+     "topic": "Cumulative Frequency",
+     "position": 26,
+     "options": [
+      {
+       "id": "727a62fc-ee60-5cad-9a0f-146a06a98a12",
+       "label": "A",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9cba1d98-5756-5424-acc9-750af83350f2",
+       "label": "B",
+       "content": "$8$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fbf2946c-49fe-5827-a2f0-cb44cc308e66",
+       "label": "C",
+       "content": "$12$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3db89b72-2761-5980-989a-7ae4f10c0b60",
+       "label": "D",
+       "content": "$48$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-statistics-05",
+     "stem": "Find the class mark (mid-point) of the class 41–50.",
+     "image_url": null,
+     "explanation": "Class mark $= \\dfrac{\\text{lower limit} + \\text{upper limit}}{2} = \\dfrac{41 + 50}{2} = 45.5$\n\n**Why the other options are wrong**\n\n- $40.5$: That is the lower class boundary.\n- $50.5$: That is the upper class boundary.\n- $91$: You added 41 and 50 but did not halve.",
+     "id": "ec47498c-52cb-5b66-b493-3bd3f3bc40c8",
+     "topic": "Statistics",
+     "position": 27,
+     "options": [
+      {
+       "id": "736d83f0-ce8a-5599-ba42-9b8427bc1bc0",
+       "label": "A",
+       "content": "$40.5$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3d342bd0-160d-5a57-a9f0-7964ce940ee8",
+       "label": "B",
+       "content": "$45.5$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2d5a07e6-72dd-573b-a11d-495d652dfb77",
+       "label": "C",
+       "content": "$50.5$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "da9f1c2b-fc4e-5da5-9ef2-f87b131188cf",
+       "label": "D",
+       "content": "$91$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-dispersion-05",
+     "stem": "The standard deviation of a set of numbers is 4. If 5 is added to every number, what is the new standard deviation?",
+     "image_url": null,
+     "explanation": "Adding the same number to every value moves the whole set along without changing how spread out it is. The deviations from the mean stay the same, so the standard deviation is still 4.\n\n**Why the other options are wrong**\n\n- $9$: Adding 5 moves every number by the same amount, so the spread does not change.\n- $16$: 16 is the variance ($4^{2}$). Adding 5 to every number changes neither.\n- $20$: Multiplying is not involved. Adding the same number to every value leaves the spread unchanged.",
+     "id": "2b4dcb69-f642-5d12-a424-23a115829d99",
+     "topic": "Measures of Dispersion",
+     "position": 28,
+     "options": [
+      {
+       "id": "19feee6f-4adb-52c4-a286-9ad9e133814f",
+       "label": "A",
+       "content": "$4$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "923011fb-4cd2-5dfe-8361-872ee2522420",
+       "label": "B",
+       "content": "$9$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8a3405aa-c6e2-5ea1-9d15-2eb317d32d03",
+       "label": "C",
+       "content": "$16$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f708adb6-72fe-59f6-8bcd-c09621aa7091",
+       "label": "D",
+       "content": "$20$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-ratio-05",
+     "stem": "If 6 exercise books cost Le 45, how much do 10 of the same books cost?",
+     "image_url": null,
+     "explanation": "One book costs $45 \\div 6 = $ Le 7.50.\n\n10 books cost $10 \\times 7.50 = $ Le 75.\n\n**Why the other options are wrong**\n\n- Le 27: You used inverse proportion. More books cost more: this is direct proportion.\n- Le 49: You added 4 Leones for the 4 extra books. Find the cost of one book first.\n- Le 450: You multiplied Le 45 by 10. Le 45 is the price of 6 books, not one.",
+     "id": "513ec380-68d4-5355-a2d3-f40dbc832455",
+     "topic": "Ratio, Proportion and Rates",
+     "position": 29,
+     "options": [
+      {
+       "id": "143e8943-75e0-59fd-88f4-dde521421000",
+       "label": "A",
+       "content": "Le 27",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7507f515-6312-5aad-b9ba-2841be8d0429",
+       "label": "B",
+       "content": "Le 49",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f90a5601-8f69-5e63-b594-35d710487fff",
+       "label": "C",
+       "content": "Le 75",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7210dd07-52e2-5680-9ed6-455beda1d991",
+       "label": "D",
+       "content": "Le 450",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-inequalities-01",
+     "stem": "Solve the inequality $3x - 4 < 11$.",
+     "image_url": null,
+     "explanation": "$3x - 4 < 11$\n\nAdd 4: $3x < 15$\n\nDivide by 3: $x < 5$\n\n**Why the other options are wrong**\n\n- $x > 5$: You reversed the inequality sign. Reverse it only when you multiply or divide by a negative number.\n- $x < \\dfrac{7}{3}$: Sign slip: add 4 to both sides, $3x < 15$.\n- $x < 15$: You stopped at $3x < 15$. Divide both sides by 3.",
+     "id": "7853c305-7202-5242-83b8-80c648cf5970",
+     "topic": "Linear Inequalities",
+     "position": 30,
+     "options": [
+      {
+       "id": "1355a8da-9258-51d3-b171-974b7533ddbe",
+       "label": "A",
+       "content": "$x > 5$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a3b2a8d1-6b90-5422-ab83-c029fe119609",
+       "label": "B",
+       "content": "$x < \\dfrac{7}{3}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d968d24c-531a-538c-a964-e13095c9fec0",
+       "label": "C",
+       "content": "$x < 15$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "60a811ac-855c-5932-a163-05991698f096",
+       "label": "D",
+       "content": "$x < 5$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-fractions-03",
+     "stem": "Without using a calculator, evaluate $0.36 \\div 0.009$.",
+     "image_url": null,
+     "explanation": "Multiply both numbers by 1000 so the divisor is a whole number:\n\n$0.36 \\div 0.009 = 360 \\div 9 = 40$\n\n**Why the other options are wrong**\n\n- $0.04$: You divided the wrong way round.\n- $4$: Check the decimal point: multiply both numbers by 1000 to get $360 \\div 9 = 40$.\n- $400$: Check the decimal point: $0.36 \\div 0.009 = 360 \\div 9 = 40$.",
+     "id": "3976187f-1c26-5bf0-bd9e-cdf9d4653af3",
+     "topic": "Fractions, Decimals and Approximations",
+     "position": 31,
+     "options": [
+      {
+       "id": "a67e716e-9ec2-57dc-b8d0-0cfc9b7020ab",
+       "label": "A",
+       "content": "$0.04$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4c947605-410f-59a6-a245-12df55974615",
+       "label": "B",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "88a61de4-c52d-5704-b4f9-3851463f2d1a",
+       "label": "C",
+       "content": "$40$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "90f89e5f-7be1-5329-9910-5f8a1eace506",
+       "label": "D",
+       "content": "$400$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-integers-05",
+     "stem": "Evaluate $\\left(\\dfrac{2}{3} - \\dfrac{1}{4}\\right) \\div \\dfrac{5}{6}$.",
+     "image_url": null,
+     "explanation": "Brackets first: $\\dfrac{2}{3} - \\dfrac{1}{4} = \\dfrac{8 - 3}{12} = \\dfrac{5}{12}$.\n\nThen $\\dfrac{5}{12} \\div \\dfrac{5}{6} = \\dfrac{5}{12} \\times \\dfrac{6}{5} = \\dfrac{1}{2}$.\n\n**Why the other options are wrong**\n\n- $\\dfrac{25}{72}$: You multiplied by $\\dfrac{5}{6}$. To divide by a fraction, multiply by its reciprocal, $\\dfrac{6}{5}$.\n- $\\dfrac{11}{30}$: You ignored the brackets and divided $\\dfrac{1}{4}$ by $\\dfrac{5}{6}$ first.\n- $2$: You turned the answer upside down: $\\dfrac{5}{12} \\times \\dfrac{6}{5} = \\dfrac{1}{2}$.",
+     "id": "6762ba20-75be-5b9b-a036-8aeca79cdfa4",
+     "topic": "Integers and Rational Numbers",
+     "position": 32,
+     "options": [
+      {
+       "id": "fbec0964-5a90-5449-9948-72053ac2fec8",
+       "label": "A",
+       "content": "$\\dfrac{25}{72}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fbec1e87-3a33-52db-843a-d5d1b83a12eb",
+       "label": "B",
+       "content": "$\\dfrac{11}{30}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1f9cb384-9d62-51eb-bdc1-e97dd1103439",
+       "label": "C",
+       "content": "$\\dfrac{1}{2}$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "5c5e6879-9cca-51eb-b1bb-aac95f0bdca3",
+       "label": "D",
+       "content": "$2$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-logic-04",
+     "stem": "All doctors are graduates. Musa is not a graduate. Which conclusion is valid?",
+     "image_url": null,
+     "explanation": "Draw the set of doctors inside the set of graduates. Musa is outside the graduates' set, so he is also outside the doctors' set: Musa is not a doctor.\n\n**Why the other options are wrong**\n\n- Musa is a doctor: Every doctor is a graduate, and Musa is not a graduate, so he cannot be a doctor.\n- Musa may be a doctor: Every doctor is inside the set of graduates. Musa is outside that set, so he cannot be a doctor.\n- Some graduates are not doctors: That may be true in real life, but it does not follow from the two statements given.",
+     "id": "3375a3bf-0935-559c-ac6d-0ab2ba1a8732",
+     "topic": "Logical Reasoning",
+     "position": 33,
+     "options": [
+      {
+       "id": "b2d2b2d8-1ae4-516a-b81d-03e22acd2a78",
+       "label": "A",
+       "content": "Musa is not a doctor",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6e1265c7-2010-5b0c-929c-36b28f7d714f",
+       "label": "B",
+       "content": "Musa is a doctor",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f19fe86f-fdb3-5605-a6a6-0345930db53d",
+       "label": "C",
+       "content": "Musa may be a doctor",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f63e150b-ffa3-545f-8e34-c355e34603fc",
+       "label": "D",
+       "content": "Some graduates are not doctors",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-expressions-02",
+     "stem": "Evaluate $3a^{2}b - 2ab^{2}$ when $a = -2$ and $b = 3$.",
+     "image_url": null,
+     "explanation": "$3a^{2}b = 3 \\times 4 \\times 3 = 36$ and $2ab^{2} = 2 \\times (-2) \\times 9 = -36$.\n\n$36 - (-36) = 72$\n\n**Why the other options are wrong**\n\n- $0$: $a^{2} = (-2)^{2} = +4$, not $-4$.\n- $36$: You left out the second term. $-2ab^{2} = -2(-2)(9) = +36$.\n- $144$: You squared $3a$. In $3a^{2}b$ only $a$ is squared.",
+     "id": "fca9bd9a-f676-5260-a568-46221e84616a",
+     "topic": "Algebraic Expressions",
+     "position": 34,
+     "options": [
+      {
+       "id": "c90e6663-1b12-538d-b3df-162d108b5d97",
+       "label": "A",
+       "content": "$0$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "215923db-944b-52cd-af2d-670ca9df4a5d",
+       "label": "B",
+       "content": "$36$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "95519dd6-1775-5277-9bc7-73686149c3c1",
+       "label": "C",
+       "content": "$72$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d8c3d463-23fb-5b8f-bfb7-2c6472c5e91a",
+       "label": "D",
+       "content": "$144$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-operations-01",
+     "stem": "Expand $(2x - 3)(x + 5)$.",
+     "image_url": null,
+     "explanation": "$(2x - 3)(x + 5) = 2x^{2} + 10x - 3x - 15 = 2x^{2} + 7x - 15$\n\n**Why the other options are wrong**\n\n- $2x^{2} - 15$: You multiplied only the first terms and the last terms. Include $2x \\times 5$ and $-3 \\times x$.\n- $2x^{2} + 13x - 15$: Sign slip: $-3 \\times x = -3x$, so the middle term is $10x - 3x = 7x$.\n- $2x^{2} + 7x + 15$: Sign slip: $-3 \\times 5 = -15$.",
+     "id": "b7a4569f-cfc6-5d99-90e9-174f28043c52",
+     "topic": "Operations on Algebraic Expressions",
+     "position": 35,
+     "options": [
+      {
+       "id": "73e8af2d-1fc8-54ab-bd8c-719fa89bc579",
+       "label": "A",
+       "content": "$2x^{2} - 15$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0a8ec64b-9288-5c23-b2f8-09c34e1ecc29",
+       "label": "B",
+       "content": "$2x^{2} + 7x - 15$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b5f888e7-fa5d-52a4-97f2-ea6985d16e0f",
+       "label": "C",
+       "content": "$2x^{2} + 13x - 15$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7d93a097-d60a-5fd6-ab18-874f64c2b38f",
+       "label": "D",
+       "content": "$2x^{2} + 7x + 15$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-equations-03",
+     "stem": "The sum of three consecutive odd numbers is 63. Find the largest of the three numbers.",
+     "image_url": null,
+     "explanation": "Let the numbers be $x$, $x + 2$ and $x + 4$.\n\n$3x + 6 = 63$, so $x = 19$. The numbers are 19, 21 and 23; the largest is 23.\n\n**Why the other options are wrong**\n\n- $19$: 19 is the smallest of the three. The question asks for the largest.\n- $21$: 21 is the middle number. The question asks for the largest.\n- $22$: You used consecutive numbers ($x$, $x + 1$, $x + 2$). Consecutive odd numbers go up in 2s.",
+     "id": "6f0feb62-5f15-5912-8ed5-4f39486048ba",
+     "topic": "Linear Equations",
+     "position": 36,
+     "options": [
+      {
+       "id": "9637a9ed-12d4-5fe4-8f1b-de8da5d023b3",
+       "label": "A",
+       "content": "$19$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c18193db-c597-5192-8a79-842dbc64de3c",
+       "label": "B",
+       "content": "$21$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "69eb97d7-ed40-5544-8f51-5c1e19f1c92b",
+       "label": "C",
+       "content": "$22$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0d3e823c-72b1-53d7-937c-5a7a85273689",
+       "label": "D",
+       "content": "$23$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-graphs-03",
+     "stem": "The diagram shows the graph of $y = x^{2} - 2x - 3$ for $-2 \\leq x \\leq 4$. What is the equation of the line of symmetry of the curve?",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-graphs-03.svg?v=3f748c5d48",
+     "explanation": "The curve is symmetrical about the vertical line through its lowest point, $(1, -4)$: $x = 1$.\n\n(It is also halfway between the roots: $\\dfrac{-1 + 3}{2} = 1$.)\n\n**Why the other options are wrong**\n\n- $y = 1$: The line of symmetry of this curve is vertical, so its equation starts $x = \\ldots$\n- $x = -4$: $-4$ is the minimum $y$-value. The line of symmetry goes through the $x$-value of the lowest point.\n- $y = -4$: $y = -4$ is the horizontal line through the lowest point. The line of symmetry is vertical.",
+     "id": "4e9ce06e-2dab-5f66-97c9-e5b053d68cec",
+     "topic": "Graphs of Linear and Quadratic Functions",
+     "position": 37,
+     "options": [
+      {
+       "id": "12b1dc5d-4ab8-59e4-8dfc-2a69701d6688",
+       "label": "A",
+       "content": "$x = 1$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "57a97d7b-39cb-5f6d-9084-fcfb95fa1bd6",
+       "label": "B",
+       "content": "$y = 1$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fde2a28b-1fba-5ba9-b591-36ff0113d2fa",
+       "label": "C",
+       "content": "$x = -4$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "72c4c365-0e03-5eb0-b182-6af6744a352c",
+       "label": "D",
+       "content": "$y = -4$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-algfractions-05",
+     "stem": "Simplify $\\dfrac{1}{x - 1} - \\dfrac{1}{x + 1}$.",
+     "image_url": null,
+     "explanation": "Common denominator $(x - 1)(x + 1) = x^{2} - 1$:\n\n$\\dfrac{(x + 1) - (x - 1)}{x^{2} - 1} = \\dfrac{2}{x^{2} - 1}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{-2}{x^{2} - 1}$: Order matters: $(x + 1) - (x - 1) = 2$, not $-2$.\n- $\\dfrac{2x}{x^{2} - 1}$: You added the tops: $(x + 1) + (x - 1) = 2x$. The question subtracts.\n- $0$: You subtracted the tops and the bottoms separately. Use a common denominator, $(x - 1)(x + 1)$.",
+     "id": "f7765272-8dc5-5186-a465-75228cbe2990",
+     "topic": "Algebraic Fractions",
+     "position": 38,
+     "options": [
+      {
+       "id": "ba78a1dd-f8a3-504b-9776-fde18559c1da",
+       "label": "A",
+       "content": "$\\dfrac{2}{x^{2} - 1}$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "48f717d3-3864-5009-ab4a-f020c9fce45a",
+       "label": "B",
+       "content": "$\\dfrac{-2}{x^{2} - 1}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "43b2b96b-5d59-51eb-ac78-1637b065276e",
+       "label": "C",
+       "content": "$\\dfrac{2x}{x^{2} - 1}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b665b079-4026-5304-9680-a78706968392",
+       "label": "D",
+       "content": "$0$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-functions-02",
+     "stem": "What type of mapping is $\\{(1, 2), (2, 2), (3, 5)\\}$?",
+     "image_url": null,
+     "explanation": "Each input has exactly one output, but two inputs (1 and 2) share the output 2. So the mapping is many-to-one (and it is a function).\n\n**Why the other options are wrong**\n\n- one-to-one: Two different inputs (1 and 2) both map to 2, so it is not one-to-one.\n- one-to-many: No input maps to more than one output.\n- many-to-many: No input maps to more than one output, so it is not many-to-many.",
+     "id": "a8f4ef6d-1e06-547e-8cae-7aa5dcbe8c73",
+     "topic": "Functions and Relations",
+     "position": 39,
+     "options": [
+      {
+       "id": "16929362-b8c8-53bb-99c8-656552a2388b",
+       "label": "A",
+       "content": "one-to-one",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "815d4bf9-2647-5dc3-86f1-3e9422714807",
+       "label": "B",
+       "content": "one-to-many",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a554039d-321a-58d8-8493-a6c562657401",
+       "label": "C",
+       "content": "many-to-one",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7c7c2e6d-05fc-56ff-8f0a-152dc2d50fd4",
+       "label": "D",
+       "content": "many-to-many",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-coordinates-03",
+     "stem": "Find the gradient of the line through $(1, -2)$ and $(4, 7)$.",
+     "image_url": null,
+     "explanation": "Gradient $= \\dfrac{y_{2} - y_{1}}{x_{2} - x_{1}} = \\dfrac{7 - (-2)}{4 - 1} = \\dfrac{9}{3} = 3$\n\n**Why the other options are wrong**\n\n- $-3$: Sign slip: $7 - (-2) = 9$, not $-9$.\n- $\\dfrac{1}{3}$: You divided the change in $x$ by the change in $y$. Gradient = rise ÷ run.\n- $\\dfrac{5}{3}$: You added $7 + (-2)$. The rise is $7 - (-2) = 9$.",
+     "id": "5b0c89c8-244f-59ea-b66c-7661eeece557",
+     "topic": "Coordinate Geometry",
+     "position": 40,
+     "options": [
+      {
+       "id": "19b692a2-1a7d-5239-9d66-60c0888ee177",
+       "label": "A",
+       "content": "$-3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ef57659d-87ab-5e6f-9b7d-3bfdc22c9498",
+       "label": "B",
+       "content": "$\\dfrac{1}{3}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f6931297-c6b9-593a-8f1f-6cad0ce4a431",
+       "label": "C",
+       "content": "$\\dfrac{5}{3}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b0b12fa2-2f0b-5e3f-bb62-6cc98954a6ab",
+       "label": "D",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-similar-04",
+     "stem": "In triangle $ABC$, $DE$ is parallel to $BC$, with $D$ on $AB$ and $E$ on $AC$. If $|AD| = 4$ cm, $|DB| = 6$ cm and $|DE| = 5$ cm, find $|BC|$.",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-similar-04.svg?v=cd94b2d9e1",
+     "explanation": "$DE \\parallel BC$, so triangle $ADE$ is similar to triangle $ABC$.\n\n$|AB| = 4 + 6 = 10$ cm, so the scale factor is $\\dfrac{10}{4} = 2.5$.\n\n$|BC| = 2.5 \\times 5 = 12.5$ cm\n\n**Why the other options are wrong**\n\n- 2 cm: You used the scale factor the wrong way round. $BC$ is longer than $DE$.\n- 7.5 cm: You compared $DB$ with $AD$. Triangle $ABC$ matches triangle $ADE$, so compare $AB = 10$ with $AD = 4$.\n- 11 cm: You added $DB$ to $DE$. Similar triangles scale by multiplying.",
+     "id": "79df34fa-559c-5969-9e1b-6be71750ee0d",
+     "topic": "Similar and Congruent Figures",
+     "position": 41,
+     "options": [
+      {
+       "id": "45ccea66-fc01-5ce3-911c-80e2f061f29b",
+       "label": "A",
+       "content": "2 cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8f64480f-0a77-503d-b883-8c4644be7146",
+       "label": "B",
+       "content": "7.5 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ef6b0d90-3fd4-52d8-8caf-05142b88c5a4",
+       "label": "C",
+       "content": "11 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8ed4dbad-2f43-5ca7-999e-6b5d189cdfa0",
+       "label": "D",
+       "content": "12.5 cm",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-loci-04",
+     "stem": "In a plane, what is the locus of points 2 cm from a straight line $AB$ (extended in both directions)?",
+     "image_url": null,
+     "explanation": "Points 2 cm from the line lie on a line parallel to it, 2 cm away, and this happens on both sides. So the locus is a pair of parallel lines, one on each side of $AB$.\n\n**Why the other options are wrong**\n\n- One line parallel to $AB$, 2 cm away: Points 2 cm away can be on either side of $AB$, so there are two lines.\n- A circle of radius 2 cm: A circle is the locus for a fixed distance from a point, not from a line.\n- The perpendicular bisector of $AB$: That is the locus of points equidistant from $A$ and $B$.",
+     "id": "8c096ff0-1bd1-5f2f-86c6-ff71719a8b67",
+     "topic": "Loci",
+     "position": 42,
+     "options": [
+      {
+       "id": "c9e86485-8ae4-594e-ac62-8c5b8ddf97a9",
+       "label": "A",
+       "content": "One line parallel to $AB$, 2 cm away",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "826e3490-0ad6-5a2e-8aed-5ba11a8fafd8",
+       "label": "B",
+       "content": "A circle of radius 2 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "627c5246-2a2f-51a5-892a-8ed7dd5f69e4",
+       "label": "C",
+       "content": "A pair of lines parallel to $AB$, 2 cm on each side",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "5378c382-24f0-5c02-8ab6-d25e722b9d2b",
+       "label": "D",
+       "content": "The perpendicular bisector of $AB$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-construction-05",
+     "stem": "Which set of lengths can NOT be used to construct a triangle?",
+     "image_url": null,
+     "explanation": "Any two sides of a triangle must add up to more than the third. $2 + 3 = 5$, which is less than 6, so the two short sides cannot meet.\n\n**Why the other options are wrong**\n\n- 3 cm, 4 cm, 5 cm: $3 + 4 > 5$, so these make a triangle (a right-angled one).\n- 5 cm, 5 cm, 8 cm: $5 + 5 > 8$, so these make a triangle.\n- 6 cm, 6 cm, 6 cm: These make an equilateral triangle.",
+     "id": "aa7a36de-b43e-5df6-9db9-9bc4e4ed47e0",
+     "topic": "Construction",
+     "position": 43,
+     "options": [
+      {
+       "id": "7d15b92b-cd2c-5a2b-9dcc-8a2a1aadd9de",
+       "label": "A",
+       "content": "2 cm, 3 cm, 6 cm",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "922fddc8-115c-551f-bb6b-95f3197e57fd",
+       "label": "B",
+       "content": "3 cm, 4 cm, 5 cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "daad8561-9ea5-54e0-b22f-e67de4a13313",
+       "label": "C",
+       "content": "5 cm, 5 cm, 8 cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "03e2e6fb-1b30-5d29-a506-63dd20b4a150",
+       "label": "D",
+       "content": "6 cm, 6 cm, 6 cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-financial-01",
+     "stem": "A motorbike bought for Le 30,000 loses 20% of its value at the end of each year (reducing balance). What is it worth after 2 years?",
+     "image_url": null,
+     "explanation": "Each year it keeps 80% of its value:\n\nAfter 1 year: $0.8 \\times 30\\,000 = 24\\,000$. After 2 years: $0.8 \\times 24\\,000 = $ Le 19,200.\n\n**Why the other options are wrong**\n\n- Le 10,800: That is how much value it lost. The question asks what it is worth.\n- Le 18,000: You took 20% of Le 30,000 twice. In year 2 the 20% is of the new, lower value.\n- Le 24,000: That is its value after 1 year.",
+     "id": "d5edd2b7-864d-5999-bf03-3403368e0c99",
+     "topic": "Financial Arithmetic",
+     "position": 44,
+     "options": [
+      {
+       "id": "c736d56f-2bba-5919-826b-341d3384dee3",
+       "label": "A",
+       "content": "Le 10,800",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e84bde15-f4b7-5995-865b-1ef1d5ac87cd",
+       "label": "B",
+       "content": "Le 18,000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9213f60c-53e4-5ff2-ac07-16299934409f",
+       "label": "C",
+       "content": "Le 19,200",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ab62992f-3742-5a19-9246-4aa5d56d71df",
+       "label": "D",
+       "content": "Le 24,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-differentiation-05",
+     "stem": "The area of a circle is $A = \\pi r^{2}$. Find $\\dfrac{dA}{dr}$ when $r = 7$ cm. [Take $\\pi = \\dfrac{22}{7}$]",
+     "image_url": null,
+     "explanation": "$\\dfrac{dA}{dr} = 2\\pi r = 2 \\times \\dfrac{22}{7} \\times 7 = 44$ (cm² per cm).\n\n**Why the other options are wrong**\n\n- 22: You worked out $\\pi r$. $\\dfrac{d}{dr}(\\pi r^{2}) = 2\\pi r$.\n- 88: You used the diameter, 14, in $2\\pi r$.\n- 154: That is the area itself. Differentiate first: $\\dfrac{dA}{dr} = 2\\pi r$.",
+     "id": "2134af42-3d92-5fe8-94cb-0a84ef6e0b75",
+     "topic": "Differentiation",
+     "position": 45,
+     "options": [
+      {
+       "id": "a2e94ef2-4652-55a2-ab2c-4dd4390b0e9a",
+       "label": "A",
+       "content": "22",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c3187210-de47-59a2-88d9-d2f655fa67dd",
+       "label": "B",
+       "content": "44",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f7665534-8107-57ef-b587-ed3429373c4b",
+       "label": "C",
+       "content": "88",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5ad30619-8c9b-50e8-bb4e-aa6b35c6bb38",
+       "label": "D",
+       "content": "154",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-integration-04",
+     "stem": "Given that $\\dfrac{dy}{dx} = 4x - 3$ and $y = 5$ when $x = 2$, find $y$ in terms of $x$.",
+     "image_url": null,
+     "explanation": "$y = \\displaystyle\\int (4x - 3)\\,dx = 2x^{2} - 3x + C$.\n\nWhen $x = 2$, $y = 5$: $5 = 8 - 6 + C$, so $C = 3$. Therefore $y = 2x^{2} - 3x + 3$.\n\n**Why the other options are wrong**\n\n- $y = 2x^{2} - 3x$: You forgot the constant of integration. Use $y = 5$ when $x = 2$ to find it.\n- $y = 2x^{2} - 3x + 5$: You used 5 as the constant. Substitute $x = 2$, $y = 5$: $5 = 8 - 6 + C$, so $C = 3$.\n- $y = 2x^{2} - 3x - 3$: Sign slip: $5 = 2 + C$ gives $C = 3$, not $-3$.",
+     "id": "fe35ab04-2f06-5e34-bf0e-1d7fc20d9bce",
+     "topic": "Integration",
+     "position": 46,
+     "options": [
+      {
+       "id": "2b335cdc-2372-52c6-867d-9babe6f4e28b",
+       "label": "A",
+       "content": "$y = 2x^{2} - 3x + 3$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "20e8a225-66ef-57bc-8f40-d9a0150ae393",
+       "label": "B",
+       "content": "$y = 2x^{2} - 3x$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "575aae57-bab1-591f-b44f-8242e42aef50",
+       "label": "C",
+       "content": "$y = 2x^{2} - 3x + 5$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7e2d46a4-69c5-510a-942a-1b39cc1c3974",
+       "label": "D",
+       "content": "$y = 2x^{2} - 3x - 3$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-indices-04",
+     "stem": "Evaluate $\\left(\\dfrac{16}{81}\\right)^{-\\frac{3}{4}}$.",
+     "image_url": null,
+     "explanation": "The negative index turns the fraction upside down:\n\n$\\left(\\dfrac{16}{81}\\right)^{-\\frac{3}{4}} = \\left(\\dfrac{81}{16}\\right)^{\\frac{3}{4}} = \\left(\\sqrt[4]{\\dfrac{81}{16}}\\right)^{3} = \\left(\\dfrac{3}{2}\\right)^{3} = \\dfrac{27}{8}$\n\n**Why the other options are wrong**\n\n- $-\\dfrac{27}{8}$: A negative index does not make the answer negative. It means take the reciprocal: $\\left(\\dfrac{16}{81}\\right)^{-\\frac{3}{4}} = \\left(\\dfrac{81}{16}\\right)^{\\frac{3}{4}}$.\n- $\\dfrac{8}{27}$: You ignored the minus sign in the index, so you did not turn the fraction upside down.\n- $\\dfrac{9}{4}$: You squared instead of cubing. The fourth root of $\\dfrac{81}{16}$ is $\\dfrac{3}{2}$; then raise it to the power 3.",
+     "id": "309f04d1-dbf4-59b9-b8ce-b7ef77920df6",
+     "topic": "Indices",
+     "position": 47,
+     "options": [
+      {
+       "id": "0a05272f-a671-58af-a3d3-774199d798ca",
+       "label": "A",
+       "content": "$-\\dfrac{27}{8}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e79ad112-1bc1-59d9-b68f-f2d72cdedcbb",
+       "label": "B",
+       "content": "$\\dfrac{8}{27}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9c2e4b34-1931-560e-80b1-d9d69bbacdb1",
+       "label": "C",
+       "content": "$\\dfrac{9}{4}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "46fd587c-e1cb-5cb9-a4da-b92d9aa80f31",
+       "label": "D",
+       "content": "$\\dfrac{27}{8}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-bases-01",
+     "stem": "Express $10111_{\\text{two}}$ as a number in base ten.",
+     "image_url": null,
+     "explanation": "$10111_{\\text{two}} = 1 \\times 2^{4} + 0 \\times 2^{3} + 1 \\times 2^{2} + 1 \\times 2^{1} + 1 \\times 2^{0}$\n\n$= 16 + 0 + 4 + 2 + 1 = 23$\n\n**Why the other options are wrong**\n\n- $22$: You left out the units column. The last digit is worth $1 \\times 2^{0} = 1$.\n- $29$: You read the digits from the wrong end ($11101_{\\text{two}}$). The right-hand digit is the units.\n- $46$: You started the place values at $2^{1}$ instead of $2^{0}$.",
+     "id": "ced8321c-bb47-5892-9725-cf0f2f894877",
+     "topic": "Number Bases",
+     "position": 48,
+     "options": [
+      {
+       "id": "0e0ac53b-9250-5ef2-a70d-2c1f61a705ec",
+       "label": "A",
+       "content": "$22$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "99dd593c-107b-54fc-98e2-0b41105008cc",
+       "label": "B",
+       "content": "$23$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "374f51bf-41df-57b9-b773-370cb030d07e",
+       "label": "C",
+       "content": "$29$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b8d822df-714e-5142-bd5c-ecf4c72e50a8",
+       "label": "D",
+       "content": "$46$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-surds-01",
+     "stem": "Simplify $\\sqrt{75} - \\sqrt{27} + \\sqrt{12}$.",
+     "image_url": null,
+     "explanation": "$\\sqrt{75} = \\sqrt{25 \\times 3} = 5\\sqrt{3}$\n\n$\\sqrt{27} = \\sqrt{9 \\times 3} = 3\\sqrt{3}$\n\n$\\sqrt{12} = \\sqrt{4 \\times 3} = 2\\sqrt{3}$\n\nSo $5\\sqrt{3} - 3\\sqrt{3} + 2\\sqrt{3} = 4\\sqrt{3}$.\n\n**Why the other options are wrong**\n\n- $\\sqrt{60}$: Surds do not combine like that: $\\sqrt{75} - \\sqrt{27} + \\sqrt{12}$ is not $\\sqrt{75 - 27 + 12}$. Simplify each surd first.\n- $6\\sqrt{3}$: You took $\\sqrt{12}$ as $4\\sqrt{3}$. Only the square root of 4 comes out: $\\sqrt{12} = \\sqrt{4 \\times 3} = 2\\sqrt{3}$.\n- $10\\sqrt{3}$: You added all three terms. The middle one is subtracted.",
+     "id": "44d7ff45-36c3-5420-8721-f957f6b85fd0",
+     "topic": "Surds",
+     "position": 49,
+     "options": [
+      {
+       "id": "23a7fdf0-f978-5976-a4a4-54e717ff690f",
+       "label": "A",
+       "content": "$4\\sqrt{3}$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2608166a-fc6c-5372-bb26-56269622eadc",
+       "label": "B",
+       "content": "$\\sqrt{60}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d6a8132e-8e19-59bd-95a1-fce9394f3f13",
+       "label": "C",
+       "content": "$6\\sqrt{3}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2af2f10c-9a68-59eb-ad12-5f4d89e87e48",
+       "label": "D",
+       "content": "$10\\sqrt{3}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "key": "maths-sequences-03",
+     "stem": "Find the sum of the first 20 terms of the A.P. 5, 9, 13, …",
+     "image_url": null,
+     "explanation": "$a = 5$, $d = 4$, $n = 20$.\n\n$S_{20} = \\dfrac{20}{2}[2(5) + (20 - 1)(4)] = 10[10 + 76] = 10 \\times 86 = 860$\n\n**Why the other options are wrong**\n\n- $81$: 81 is the 20th term, not the sum of the first 20 terms.\n- $900$: You used $nd$ instead of $(n - 1)d$: $S_{n} = \\dfrac{n}{2}[2a + (n - 1)d]$.\n- $1720$: You forgot to divide by 2.",
+     "id": "cfab6256-3bef-557e-80b6-00a3f2b4a447",
+     "topic": "Sequences and Series",
+     "position": 50,
+     "options": [
+      {
+       "id": "af023d3e-44d0-59c6-9bc6-97ed492f1701",
+       "label": "A",
+       "content": "$81$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2df362cd-dae5-515f-be82-d9e7ce9a37ad",
+       "label": "B",
+       "content": "$860$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ee85406a-e099-57af-a604-939a32ad6b99",
+       "label": "C",
+       "content": "$900$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "738ca0a5-241d-5c06-a7b6-2b2aeb850b2b",
+       "label": "D",
+       "content": "$1720$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "61af12175d23"
+}
