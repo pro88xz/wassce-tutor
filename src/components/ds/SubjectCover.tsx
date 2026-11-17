@@ -365,8 +365,8 @@ function PatternLayer({ kind }: { kind: Pattern }) {
  */
 const photoAlt = (p: { subject: string; caption: string }) => `WASSCE ${p.subject}: ${p.caption.charAt(0).toLowerCase()}${p.caption.slice(1)}`
 
-export function subjectArt(slug: string | null | undefined): Art {
-  return (slug && ART[slug]) || FALLBACK
+export function subjectArt(slug: string | null | undefined): Art & { glyphs: [string, string, string] } {
+  return { ...((slug && ART[slug]) || FALLBACK), glyphs: (slug && GLYPHS[slug]) || ['§', '¶', '✦'] }
 }
 
 /**

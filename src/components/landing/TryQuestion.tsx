@@ -64,9 +64,7 @@ export function TryQuestion() {
         </div>
 
         <div data-reveal="1" className="relative">
-          <span aria-hidden className="absolute -right-3 -top-3 -z-10 h-[92%] w-[92%] rounded-[2rem] bg-gradient-to-br from-[#7c4dff] to-[#4a25c4] sm:-right-5 sm:-top-5" />
-          <span aria-hidden className="absolute -bottom-4 -left-4 -z-10 h-16 w-16 rounded-full bg-[#ffd166] sm:h-20 sm:w-20" />
-          <div className="rounded-[1.75rem] bg-white p-5 text-slate-900 ring-1 ring-slate-900/5 shadow-[0_30px_60px_-28px_rgba(30,20,80,.5)] sm:p-7">
+          <div className="rounded-2xl bg-white p-5 text-slate-900 ring-1 ring-slate-900/[0.07] shadow-[0_1px_2px_rgba(23,28,43,.05),0_24px_48px_-24px_rgba(30,20,80,.35)] sm:p-7">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <span className="inline-flex items-center gap-2 rounded-full bg-violet-50 px-3 py-1 text-xs font-bold text-violet-800 ring-1 ring-violet-100">
                 <span className="h-2 w-2 rounded-full bg-violet-600" aria-hidden />

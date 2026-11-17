@@ -44,10 +44,8 @@ export function CourseHero({
           <div className="mt-7 flex flex-wrap gap-3">{actions}</div>
           {note && <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{note}</p>}
         </div>
-        {/* The photograph on the violet brand slab, as on the homepage. */}
-        <div className="relative isolate order-first lg:order-none lg:mr-3 lg:mt-3">
-          <span aria-hidden className="absolute -right-3 -top-3 -z-10 hidden h-[90%] w-[90%] rounded-[1.75rem] bg-gradient-to-br from-[#7c4dff] to-[#4a25c4] lg:block" />
-          <span aria-hidden className="absolute -bottom-4 -left-4 -z-10 hidden h-16 w-16 rounded-full bg-[#ffd166] lg:block" />
+        {/* The photograph, framed as on the homepage. */}
+        <div className="relative isolate order-first lg:order-none">
           {media}
         </div>
       </div>

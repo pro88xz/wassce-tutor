@@ -147,7 +147,7 @@ function CourseCardView({ subjectSlug, subjectName, course: c, index }: { subjec
   return (
     <a
       href={topicPath(subjectSlug, c.topicSlug)}
-      className="group relative flex w-[74%] flex-col rounded-2xl outline-none sm:w-[calc((100%-1.25rem)/2)] md:w-[calc((100%-2.5rem)/3)] lg:w-[calc((100%-3.75rem)/4)]"
+      className="group relative flex w-[74%] flex-col rounded-xl outline-none sm:w-[calc((100%-1.25rem)/2)] md:w-[calc((100%-2.5rem)/3)] lg:w-[calc((100%-3.75rem)/4)]"
     >
       <CourseCover subjectSlug={subjectSlug} subjectName={subjectName} course={c} index={index} />
       <span className="flex flex-1 flex-col pt-3">
@@ -164,7 +164,7 @@ function CourseCardView({ subjectSlug, subjectName, course: c, index }: { subjec
           </span>
         </span>
         {c.freeLessons > 0 && (
-          <span className="mt-2.5 inline-flex w-fit items-center gap-1 rounded-md bg-emerald-50 px-2 py-1 text-[12px] font-bold text-emerald-800 ring-1 ring-emerald-200 dark:bg-emerald-950 dark:text-emerald-200 dark:ring-emerald-800">
+          <span className="mt-2.5 inline-flex w-fit items-center gap-1 rounded bg-[#eceb98] px-2 py-0.5 text-[12px] font-bold text-[#3d3c0a]">
             <Gift className="h-3.5 w-3.5" aria-hidden /> Free lesson
           </span>
         )}
@@ -173,7 +173,7 @@ function CourseCardView({ subjectSlug, subjectName, course: c, index }: { subjec
       {/* Preview on hover or keyboard focus (pointer devices only): what the topic covers. */}
       <span
         aria-hidden
-        className="pointer-events-none absolute inset-0 z-10 hidden flex-col rounded-2xl bg-white p-5 text-slate-900 opacity-0 shadow-[0_24px_60px_-20px_rgba(30,20,80,.45)] ring-1 ring-slate-900/10 transition duration-200 [@media(hover:hover)]:flex group-hover:opacity-100 group-focus-visible:opacity-100 group-focus-visible:ring-2 group-focus-visible:ring-[var(--primary)]"
+        className="pointer-events-none absolute inset-0 z-10 hidden flex-col rounded-xl bg-white p-5 text-slate-900 opacity-0 shadow-[0_24px_60px_-20px_rgba(30,20,80,.45)] ring-1 ring-slate-900/10 transition duration-200 [@media(hover:hover)]:flex group-hover:opacity-100 group-focus-visible:opacity-100 group-focus-visible:ring-2 group-focus-visible:ring-[var(--primary)]"
       >
         <span className="text-[11px] font-bold uppercase tracking-[.12em] text-violet-700">{subjectName}</span>
         <span className="mt-1 line-clamp-2 text-[17px] font-bold leading-snug tracking-tight">{c.topicName}</span>
@@ -219,7 +219,7 @@ function CourseCover({ subjectSlug, subjectName, course: c, index }: { subjectSl
   const offset = Math.max(0, COVERS.findIndex(([c]) => c.toLowerCase() === art.bg.toLowerCase()))
   const [from, to] = COVERS[(offset + index) % COVERS.length]
   return (
-    <span className="relative block aspect-[16/9] overflow-hidden rounded-2xl bg-muted ring-1 ring-slate-900/5 shadow-[0_1px_2px_rgba(23,28,43,.06),0_12px_24px_-16px_rgba(30,20,80,.35)]">
+    <span className="relative block aspect-[16/9] overflow-hidden rounded-xl bg-muted ring-1 ring-slate-900/[0.07]">
       {photo ? (
         <>
           <img
@@ -242,7 +242,9 @@ function CourseCover({ subjectSlug, subjectName, course: c, index }: { subjectSl
             className="absolute inset-0 opacity-60"
             style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,.22) 1px, transparent 1px)', backgroundSize: '14px 14px' }}
           />
-          <span className="absolute -right-8 -top-8 h-28 w-28 rounded-full border-[14px] border-white/10" />
+          <span className="absolute -bottom-3 right-2 select-none whitespace-nowrap text-[64px] font-black leading-none tracking-tighter text-white/[0.13]">
+            {art.glyphs[index % 3]}
+          </span>
           <span className="relative flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[.14em] text-white/80">
             <span className="h-1.5 w-1.5 rounded-full" style={{ background: art.accent }} />
             {subjectName}
