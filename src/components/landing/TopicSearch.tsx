@@ -48,6 +48,8 @@ export function TopicSearch({ shortcuts = [], tone = 'dark', size = 'md' }: { sh
   return (
     <div className="relative w-full text-left">
       <label htmlFor="topic-search" className="sr-only">Search WASSCE subjects and topics</label>
+      {/* The box and its results share this wrapper, so the results open right under the box (over the shortcuts), not below them. */}
+      <div className="relative">
       <div className={`flex items-center gap-3 bg-white transition-shadow ${size === 'lg' ? 'rounded-2xl pl-5 pr-2' : 'rounded-xl px-4'} focus-within:ring-2 focus-within:ring-violet-300 ${tone === 'light' ? 'shadow-[0_18px_40px_-24px_rgba(30,20,80,.45)] ring-1 ring-slate-300/80' : 'shadow-[0_18px_40px_-22px_rgba(0,0,0,.7)] ring-1 ring-white/30'}`}>
         <Search className="h-5 w-5 shrink-0 text-slate-400" aria-hidden />
         <input
@@ -69,7 +71,7 @@ export function TopicSearch({ shortcuts = [], tone = 'dark', size = 'md' }: { sh
       </div>
 
       {open && query.trim().length >= 2 && (
-        <div className="absolute inset-x-0 top-full z-20 mt-2 overflow-hidden rounded-2xl bg-white text-slate-900 shadow-2xl ring-1 ring-slate-200">
+        <div className="absolute inset-x-0 top-full z-30 mt-2 overflow-hidden rounded-2xl bg-white text-slate-900 shadow-2xl ring-1 ring-slate-200">
           {!index ? (
             <p className="px-4 py-3 text-sm text-slate-500">Searching…</p>
           ) : results.length === 0 ? (
@@ -99,6 +101,8 @@ export function TopicSearch({ shortcuts = [], tone = 'dark', size = 'md' }: { sh
           )}
         </div>
       )}
+
+      </div>
 
       {shortcuts.length > 0 && (
         <div className="mt-3 flex flex-wrap items-center gap-2">

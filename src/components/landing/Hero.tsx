@@ -53,7 +53,9 @@ export function Hero({ data }: { data: LandingData }) {
             {topics.toLocaleString('en')} topics of the WASSCE syllabus. Free on any phone.
           </p>
           {/* Search first, as on a course catalogue: most visitors arrive knowing their subject or topic. */}
-          <div className="hero-rise mt-8 max-w-xl" style={{ ['--rise-delay' as string]: '360ms' }}>
+          {/* z-30: the entrance animation makes each block its own layer, so the search results need this block
+              above the buttons and the photo that come after it. */}
+          <div className="hero-rise relative z-30 mt-8 max-w-xl" style={{ ['--rise-delay' as string]: '360ms' }}>
             <TopicSearch shortcuts={shortcutsFrom(data.popular)} tone="light" size="lg" />
           </div>
           <div className="hero-rise mt-7 flex flex-wrap items-center gap-x-5 gap-y-3" style={{ ['--rise-delay' as string]: '440ms' }}>
