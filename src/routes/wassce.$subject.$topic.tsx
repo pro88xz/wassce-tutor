@@ -28,10 +28,13 @@ const trail = ({ subject, topic }: TopicPageData): [string, string][] => [
 function describe({ subject, topic }: TopicPageData): string {
   const n = topic.lessons.length
   const minutes = lessonMinutes(topic.lessons)
+  // Say what is actually free: every lesson (migration 22), or only the first.
+  const allFree = n > 0 && topic.lessons.every((l) => l.is_public)
+  const free = allFree ? (n === 1 ? ', free' : ', all free') : topic.lessons[0]?.is_public ? ', the first free' : ''
   return fitDescription([
     topic.description ? topic.description.replace(/\.?$/, '.') : `${topic.name} for WASSCE ${subject.name}.`,
     // The title already names the subject, so this line stays short enough to fit.
-    `${n} lesson${n === 1 ? '' : 's'}${minutes > 0 ? `, about ${minutes} min` : ''}${topic.lessons[0]?.is_public ? ', the first free' : ''}.`,
+    `${n} lesson${n === 1 ? '' : 's'}${minutes > 0 ? `, about ${minutes} min` : ''}${free}.`,
     'For Sierra Leone students.',
   ])
 }

@@ -109,7 +109,7 @@ export const SEARCH_COPY: Partial<Record<string, { title: string; description: s
   '/wassce/chemistry/introduction-to-chemistry': {
     title: 'Introduction to Chemistry for Beginners | WASSCE Chemistry',
     description:
-      'Chemistry explained for beginners: what chemistry is, its branches and uses, the scientific method, measurement and lab safety. Short lessons, the first free.',
+      'Chemistry explained for beginners: what chemistry is, its branches and uses, the scientific method, measurement and lab safety. Short lessons; start free.',
   },
   // Nov 2026: about 270 impressions at position 5 for "learn about literature".
   '/wassce/literature-in-english': {
