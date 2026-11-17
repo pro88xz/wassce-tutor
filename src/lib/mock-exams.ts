@@ -1,7 +1,7 @@
 // Timed mock exams: full WASSCE Paper 1s built from the practice bank by
 // scripts/questions/build.py. The manifest marks them ("mock": true) with the
 // time WAEC gives for the paper; the practice screen runs the clock from it.
-type ManifestEntry = { papers: string[]; mock?: boolean; minutes?: number }
+type ManifestEntry = { papers: string[]; subject_slug: string; questions: number; mock?: boolean; minutes?: number }
 
 const files = import.meta.glob<ManifestEntry[]>('../content/question-sets/manifest.json', { eager: true, import: 'default' })
 
@@ -21,3 +21,8 @@ export function formatMinutes(minutes: number): string {
   const m = minutes % 60
   return [h ? `${h} h` : '', m ? `${m} min` : ''].filter(Boolean).join(' ')
 }
+
+/** Every mock exam: subject, length and time, for the homepage. */
+export const MOCK_EXAMS: { subjectSlug: string; questions: number; minutes: number }[] = (Object.values(files)[0] ?? [])
+  .filter((e) => e.mock && e.minutes)
+  .map((e) => ({ subjectSlug: e.subject_slug, questions: e.questions, minutes: e.minutes! }))

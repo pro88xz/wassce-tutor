@@ -9,11 +9,12 @@
 //   03 SubjectShowcase Is my subject here?                     (course catalogue)
 //   04 PopularTopics   What does a topic look like?
 //   05 HowItWorks      How will I actually study?              (+ a real excerpt from a free lesson)
-//   06 LocalBand       Was this made for someone like me?      (+ who builds it)
-//   07 TutorFeature    Can I get a person to help?
-//   08 Plans           What does it cost?
-//   09 Faq             What else should I know?
-//   10 FinalCta        Start.
+//   06 MockExams       Can I rehearse the real paper?          (the one full-width brand band)
+//   07 LocalBand       Was this made for someone like me?      (+ who builds it)
+//   08 TutorFeature    Can I get a person to help?
+//   09 Plans           What does it cost?
+//   10 Faq             What else should I know?
+//   11 FinalCta        Start.
 //
 // Proof comes before the catalogue: a visitor sees what makes practice here
 // different within one scroll of the hero. The grading guide and university
@@ -30,6 +31,7 @@ import { SubjectShowcase } from '@/components/landing/SubjectShowcase'
 import { PopularTopics } from '@/components/landing/PopularTopics'
 import { TryQuestion } from '@/components/landing/TryQuestion'
 import { HowItWorks } from '@/components/landing/HowItWorks'
+import { MockExams } from '@/components/landing/MockExams'
 import { LocalBand } from '@/components/landing/LocalBand'
 import { TutorFeature } from '@/components/landing/TutorFeature'
 import { Plans } from '@/components/landing/Plans'
@@ -47,6 +49,7 @@ export function Landing({ data }: { data: LandingData }) {
       <SubjectShowcase subjects={data.subjects} popular={data.popular} />
       <PopularTopics data={data} />
       <HowItWorks />
+      <MockExams subjects={data.subjects} />
       <LocalBand />
       <TutorFeature />
       <Plans />

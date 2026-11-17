@@ -943,6 +943,27 @@ html.app-boot [data-public-footer] { display: none; }
     box-shadow: 0 30px 60px -36px rgb(58 29 158 / 70%);
   }
 
+  /* A highlighter stroke behind a key word in a heading. */
+  .site-mark {
+    background: linear-gradient(transparent 60%, rgb(255 209 102 / 75%) 60%, rgb(255 209 102 / 75%) 92%, transparent 92%);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding-inline: .06em;
+  }
+  .site-brand-panel .site-mark { background: linear-gradient(transparent 62%, rgb(255 209 102 / 55%) 62%, rgb(255 209 102 / 55%) 92%, transparent 92%); }
+
+  /* An endless sideways strip (the homepage's subjects). The list is
+     rendered twice and slides by half its width; it pauses on hover and
+     becomes a plain scrolling row for people who prefer less motion. */
+  .site-marquee {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  }
+  .site-marquee-track { display: flex; width: max-content; animation: site-marquee 70s linear infinite; }
+  .site-marquee:hover .site-marquee-track,
+  .site-marquee:focus-within .site-marquee-track { animation-play-state: paused; }
+
   /* ---- Actions ---- */
   .site-btn {
     display: inline-flex;
@@ -1080,4 +1101,10 @@ html, body {
 @media (prefers-reduced-motion: reduce) {
   .site-card-link:hover,
   .site-btn:hover { transform: none; }
+}
+
+@keyframes site-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .site-marquee { overflow-x: auto; scrollbar-width: none; }
+  .site-marquee-track { animation: none; }
 }

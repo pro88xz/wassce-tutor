@@ -47,7 +47,7 @@ export function TryQuestion() {
         <div data-reveal className="max-w-2xl lg:max-w-lg">
           <p className="site-eyebrow">Try it: no account needed</p>
           <h2 id="try-heading" className="site-h2 mt-3">
-            Every answer <span className="relative whitespace-nowrap"><span className="relative z-10">explained.</span><span aria-hidden className="absolute inset-x-0 bottom-1 h-3 rounded-sm bg-[#ffd166]/70 sm:h-3.5" /></span>
+            Every answer <span className="site-mark">explained.</span>
           </h2>
           <p className="site-lede mt-4">Pick an answer and see why it is right or wrong.</p>
           <ul className="mt-6 grid grid-cols-3 gap-2 sm:gap-3 lg:grid-cols-1">

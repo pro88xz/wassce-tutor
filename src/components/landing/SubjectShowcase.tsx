@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react'
 import type { PopularTopic, SubjectSummary } from '@/lib/public-content'
 import { topicPath } from '@/lib/public-content'
 import { TopicSearch, type TopicShortcut } from '@/components/landing/TopicSearch'
-import { Band, SectionHeading } from '@/components/public/Section'
+import { Band, Mark, SectionHeading } from '@/components/public/Section'
 import { SubjectCatalogue } from '@/components/public/SubjectCatalogue'
 
 /** Shortcut chips: popular topics that have lessons, short enough to read as a chip. */
@@ -25,7 +25,7 @@ export function SubjectShowcase({ subjects, popular }: { subjects: SubjectSummar
       <SectionHeading
         id="subjects-heading"
         eyebrow="Subjects"
-        title="Find your subject. Start your topic."
+        title={<>Find your subject. <Mark>Start your topic.</Mark></>}
         lede={`${withLessons} of ${listed.length} subjects have full lessons; the rest show their syllabus.`}
         action={
           <a href="/wassce/subjects" className="site-link">
