@@ -23,7 +23,6 @@ import {
   ClipboardList,
   Flame,
   Lightbulb,
-  Lock,
   MessageCircleQuestion,
   PlayCircle,
   UserRound,
@@ -42,7 +41,7 @@ import {
   type SubjectProgress,
   type SubjectRef,
 } from '@/lib/progress'
-import { checkAccess, lessonLocked } from '@/lib/access'
+import { checkAccess } from '@/lib/access'
 import { useAccess } from '@/lib/useAccess'
 import { FROM_PRICE, PAID_FEATURES, planById } from '@/lib/plans'
 import { subjectTheme } from '@/lib/subject-theme'
@@ -217,11 +216,11 @@ function AccessNotice({ profile }: { profile: Profile | null | undefined }) {
   if (a.reason === 'subscribed') {
     if (a.subscriptionDaysLeft > 7) return null
     title = `Your plan ends ${day(a.subscriptionDaysLeft)}`
-    body = 'Add more time to keep every lesson, practice set and the AI tutor open without a break.'
+    body = 'Add more time to keep the AI study tutor and the mock exams without a break. Lessons and practice stay free either way.'
   } else {
     if (a.trialDaysLeft > 2) return null
     title = `Your free trial ends ${day(a.trialDaysLeft)}`
-    body = `After that your free account keeps the first lesson of every topic. A plan opens everything, from ${FROM_PRICE} NLe.`
+    body = `After that every lesson and practice set stays free. A plan adds the AI study tutor and the mock exams, from ${FROM_PRICE} NLe.`
   }
   return (
     <div className="flex flex-col gap-3 rounded-2xl border border-warning/30 bg-warning/5 p-4 sm:flex-row sm:items-center sm:justify-between" role="status">
@@ -240,9 +239,6 @@ function AccessNotice({ profile }: { profile: Profile | null | undefined }) {
 
 function ContinueCard({ summary, started }: { summary: ProgressSummary; started: boolean }) {
   const next = summary.next!
-  // On a free account the next lesson may be behind the plan: say so on the button.
-  const { access } = useAccess()
-  const locked = lessonLocked(access, next.lesson)
   const sp = summary.subjects.find((s) => s.subject.id === next.subject.id)
   const tp = sp?.topics.find((t) => t.topic.id === next.topic.id)
   const index = next.topic.lessons.findIndex((l) => l.id === next.lesson.id) + 1
@@ -277,22 +273,11 @@ function ContinueCard({ summary, started }: { summary: ProgressSummary; started:
             </div>
           </div>
 
-          {locked ? (
-            <div className="mt-6">
-              <Button asChild size="lg" className="w-full bg-[#ffd166] text-[#1b1240] hover:bg-[#ffd166]/90 sm:w-auto">
-                <Link to="/subscribe" search={{ plan: 'year' }}>
-                  <Lock className="h-4 w-4" aria-hidden /> Unlock to continue · from {FROM_PRICE} NLe
-                </Link>
-              </Button>
-              <p className="mt-2.5 text-center text-xs text-white/65 sm:text-left">Pay with Orange Money or AfriMoney. No card needed.</p>
-            </div>
-          ) : (
-            <Button asChild size="lg" className="mt-6 w-full bg-white text-[#1b1240] hover:bg-white/90 sm:w-auto">
-              <Link to="/lesson/$lessonId" params={{ lessonId: next.lesson.id }}>
-                {started ? 'Continue lesson' : 'Start lesson'} <ArrowRight className="h-4 w-4" aria-hidden />
-              </Link>
-            </Button>
-          )}
+          <Button asChild size="lg" className="mt-6 w-full bg-white text-[#1b1240] hover:bg-white/90 sm:w-auto">
+            <Link to="/lesson/$lessonId" params={{ lessonId: next.lesson.id }}>
+              {started ? 'Continue lesson' : 'Start lesson'} <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
@@ -654,7 +639,7 @@ function QuickAccess({ topic }: { topic: string | null }) {
   )
 }
 
-/* ── 8. Upgrade: a free account's one clear way to the rest ── */
+/* ── 8. Upgrade: what a plan adds to the free account ── */
 
 function UpgradeCard() {
   const { access, loading, profile } = useAccess()
@@ -665,7 +650,7 @@ function UpgradeCard() {
     <section aria-labelledby="upgrade-title" className="relative isolate overflow-hidden rounded-2xl bg-gradient-to-br from-[#5b34d6] via-[#4524b4] to-[#24135e] p-5 text-white shadow-[0_24px_50px_-28px_rgba(76,29,149,.9)] sm:p-6">
       <span aria-hidden className="absolute -right-12 -top-12 -z-10 h-40 w-40 rounded-full bg-[#ffd166]/25 blur-2xl" />
       <p className="text-xs font-bold uppercase tracking-[.14em] text-violet-200">{ended ? 'Your plan has ended' : 'Free account'}</p>
-      <h2 id="upgrade-title" className="mt-1.5 text-xl font-bold leading-snug">{ended ? 'Renew to open every lesson again' : 'Open every lesson and practice set'}</h2>
+      <h2 id="upgrade-title" className="mt-1.5 text-xl font-bold leading-snug">{ended ? 'Renew for the AI tutor and mock exams' : 'Add the AI study tutor and mock exams'}</h2>
       <ul className="mt-3.5 space-y-1.5 text-sm text-white/85">
         {PAID_FEATURES.slice(0, 3).map((f) => (
           <li key={f} className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 shrink-0 text-[#ffd166]" aria-hidden /> {f}</li>

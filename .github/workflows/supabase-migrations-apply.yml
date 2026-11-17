@@ -184,3 +184,13 @@ jobs:
           )"
           echo "visitor reads every lesson, visitor reads mock questions, visitor reads practice questions: $VISITOR"
           test "$VISITOR" = "t,0,t" || { echo "Checks did not match t,0,t"; exit 1; }
+
+      - name: Verify (23) no plain-text $ amounts left in the accounting lesson
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select count(*) from public.lessons where id = '5f81e3d3-be2f-42f7-8c47-c8ab937b95bd' and content ~ '(?<![\\\\\$])\\\$(?=[0-9])';" | tr -d '[:space:]')"
+          echo "accounting lesson with unescaped amounts: $RESULT"
+          test "$RESULT" = "0" || { echo "Expected 0"; exit 1; }

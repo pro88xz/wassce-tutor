@@ -79,7 +79,7 @@ export type PaperRow = {
   paper_type: string | null
   description: string | null
   question_count: number
-  /** The subject's free starter set (migration 07; missing before it) */
+  /** Open without a plan: every practice set since migration 22; mock exams only if an admin chose */
   is_free?: boolean
 }
 
@@ -267,7 +267,7 @@ export type LessonSummary = {
   title: string
   est_minutes: number | null
   sort_order: number
-  /** The first lesson of its topic, open on a free account (migration 07; missing before it) */
+  /** Free to read: every published lesson since migration 22 */
   is_free?: boolean
 }
 
@@ -298,8 +298,7 @@ export function useTopic(topicId: string | null) {
   })
 }
 
-// A single lesson by id, with its content. Null when the lesson is behind a
-// plan the student does not have (the database does not return it).
+// A single lesson by id, with its content. Null when it is not published.
 export function useLesson(lessonId: string | null) {
   return useQuery({
     queryKey: ['lesson', lessonId],
@@ -312,19 +311,6 @@ export function useLesson(lessonId: string | null) {
         .maybeSingle()
       if (error) throw error
       return (data as Lesson | null) ?? null
-    },
-  })
-}
-
-// A lesson's title and place, readable on any account (for the locked screen).
-export function useLessonSummary(lessonId: string | null) {
-  return useQuery({
-    queryKey: ['lesson-summary', lessonId],
-    enabled: !!lessonId,
-    queryFn: async (): Promise<LessonSummary | null> => {
-      const { data, error } = await supabase.from('wassce_lesson_index').select('*').eq('id', lessonId!).maybeSingle()
-      if (error) throw error
-      return (data as LessonSummary | null) ?? null
     },
   })
 }

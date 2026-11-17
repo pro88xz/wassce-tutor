@@ -35,23 +35,16 @@ function SubjectPage() {
   const { palette } = subjectTheme(subject?.slug)
   const [q, setQ] = useState('')
   const { access } = useAccess()
-  // A free account opens each subject's starter set; the others show a lock.
-  const setAccess = (p: { is_free?: boolean }) => (access.hasAccess ? undefined : paperLocked(access, p) ? ('locked' as const) : ('free' as const))
+  // Practice sets are free; only a mock exam can need a plan.
+  const isLocked = (p: { is_free?: boolean; paper_type?: string | null }) => paperLocked(access, p)
 
   const best = useMemo(() => bestByPaper(sp?.attempts ?? []), [sp])
   const review = useMemo(
     () => topicsToReview(papers ?? [], sp?.attempts ?? [], (sp?.topics ?? []).map((t) => ({ id: t.topic.id, name: t.topic.name, subject_id: t.topic.subject_id }))),
     [papers, sp],
   )
-  // Sets not yet tried come first, so the short list is always useful; on a
-  // free account the open starter set leads.
-  const sets = useMemo(
-    () =>
-      [...(papers ?? [])].sort(
-        (a, b) => (access.hasAccess ? 0 : Number(!a.is_free) - Number(!b.is_free)) || Number(best.has(a.id)) - Number(best.has(b.id)),
-      ),
-    [papers, best, access.hasAccess],
-  )
+  // Sets not yet tried come first, so the short list is always useful.
+  const sets = useMemo(() => [...(papers ?? [])].sort((a, b) => Number(best.has(a.id)) - Number(best.has(b.id))), [papers, best])
 
   const started = !!sp && sp.done > 0
   const needle = q.trim().toLowerCase()
@@ -147,7 +140,7 @@ function SubjectPage() {
             <EmptyState title="Practice is being written" body={`Practice sets for ${subject?.name ?? 'this subject'} are on the way. The lessons above are ready now.`} />
           ) : (
             <ul className="divide-y rounded-2xl border bg-card">
-              {sets.slice(0, SETS_SHOWN).map((p) => <PracticeSetRow key={p.id} paper={p} best={best.get(p.id)} accent={palette.bar} access={setAccess(p)} />)}
+              {sets.slice(0, SETS_SHOWN).map((p) => <PracticeSetRow key={p.id} paper={p} best={best.get(p.id)} accent={palette.bar} locked={isLocked(p)} />)}
             </ul>
           )}
         </section>

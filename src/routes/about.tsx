@@ -139,8 +139,8 @@ function About() {
             tutors that families can’t always afford.
           </p>
           <p>
-            We built WASSCE Tutor to change that. A free account opens every subject, and one small payment unlocks every practice set,
-            and clear study support that fits how Sierra Leonean students learn.
+            We built WASSCE Tutor to change that. Every lesson and practice set is free, for every student, and one small payment adds an
+            AI study tutor and timed mock exams, with study support that fits how Sierra Leonean students learn.
           </p>
         </div>
       </section>

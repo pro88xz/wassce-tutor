@@ -2,13 +2,13 @@ import { Link } from '@tanstack/react-router'
 import { ArrowRight, Sparkles } from 'lucide-react'
 import { useAccess } from '@/lib/useAccess'
 import { FROM_PRICE } from '@/lib/plans'
-import { FREE_PRACTICE_INLINE } from '@/lib/free-plan'
 
 /**
- * A slim note for free accounts: what is open, and the way to the rest.
- * Shows nothing with a plan (or a running trial), or before the profile loads.
+ * A slim note for free accounts: everything to study is open, and what a
+ * plan adds. Shows nothing with a plan (or a running trial), or before the
+ * profile loads.
  */
-export function FreePlanBanner({ what = `The first lesson of every topic is free, and so is ${FREE_PRACTICE_INLINE}.` }: { what?: string }) {
+export function FreePlanBanner({ what = 'Every lesson and practice set is free.' }: { what?: string }) {
   const { access, loading, profile } = useAccess()
   if (loading || !profile || access.hasAccess) return null
   return (
@@ -22,7 +22,7 @@ export function FreePlanBanner({ what = `The first lesson of every topic is free
       </span>
       <span className="min-w-0 flex-1 text-sm">
         <span className="block font-semibold">{profile.subscription_expires_at ? 'Your plan has ended' : 'You are on the free account'}</span>
-        <span className="block text-muted-foreground">{what} Unlock everything from {FROM_PRICE} NLe.</span>
+        <span className="block text-muted-foreground">{what} A plan adds the AI study tutor and mock exams, from {FROM_PRICE} NLe.</span>
       </span>
       <ArrowRight className="h-4 w-4 shrink-0 text-primary transition-transform group-hover:translate-x-0.5" aria-hidden />
     </Link>

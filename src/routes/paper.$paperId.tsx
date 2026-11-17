@@ -7,6 +7,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { AlarmClock, ArrowLeft, ArrowRight, BookOpen, Check, CircleCheck, CircleX, FileText, Info, RotateCcw, Timer, X } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { LockedPanel } from '@/components/AccessGate'
+import { paperLocked } from '@/lib/access'
 import { useAccess } from '@/lib/useAccess'
 import { usePaper, usePaperMeta, type PaperMeta, type QuestionRow } from '@/lib/queries'
 import { useSaveAttempt } from '@/lib/mutations'
@@ -67,13 +68,12 @@ function PaperPage() {
       </div>
     )
   }
-  // No questions came back and the account has no plan: the set is behind
-  // the plan (a free account opens each subject's starter set only).
-  if ((!questions || questions.length === 0) && !access.hasAccess) {
+  // No questions came back for a mock exam and the account has no plan:
+  // mock exams come with a plan (practice sets are free, migration 22).
+  if ((!questions || questions.length === 0) && meta && paperLocked(access, meta)) {
     return (
       <LockedPanel
-        kind="practice"
-        name={meta ? setName(meta.title) : undefined}
+        kind="mock"
         back={
           <Link {...exitTo} className="-ml-1 inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground">
             <ArrowLeft className="h-4 w-4" aria-hidden /> {meta?.subject?.name ?? 'Practice'}

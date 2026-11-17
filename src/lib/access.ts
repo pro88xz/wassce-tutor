@@ -1,8 +1,10 @@
-// Returns whether a user currently has full content access.
-// Access = a plan that has not ended OR admin OR a 7-day trial that started
-// before trials were retired (migration 07: new accounts get no trial).
-// Without access, a free account still opens the first lesson of every topic
-// and the starter practice set of every subject (lessonLocked, paperLocked).
+// Returns whether a user has a plan: what the AI study tutor and the timed
+// mock exams need. Access = a plan that has not ended OR admin OR a 7-day
+// trial that started before trials were retired (migration 07).
+//
+// Lessons and practice sets are free for everyone, with or without an
+// account (migration 22). Only mock exams (paperLocked) and the AI tutor
+// (AccessGate) look at access.
 
 import type { Profile } from '@/lib/types'
 
@@ -47,12 +49,13 @@ export function checkAccess(profile: Profile | null | undefined): AccessState {
   return { hasAccess: false, reason: 'expired', trialDaysLeft: 0, subscriptionDaysLeft: 0 }
 }
 
-/**
- * Whether a lesson is closed to this student. is_free comes from the lesson
- * index (migration 07); before that migration it is missing, and everything
- * stays behind the plan, which is what the database enforces then too.
- */
-export const lessonLocked = (access: AccessState, lesson: { is_free?: boolean | null }) => !access.hasAccess && lesson.is_free !== true
+/** A timed mock exam (papers.paper_type 'Mock'), as opposed to a practice set. */
+export const isMockPaper = (paper: { paper_type?: string | null }) => paper.paper_type?.toLowerCase() === 'mock'
 
-/** Whether a practice set is closed to this student (papers.is_free marks each subject's starter set). */
-export const paperLocked = (access: AccessState, paper: { is_free?: boolean | null }) => !access.hasAccess && paper.is_free !== true
+/**
+ * Whether a paper is closed to this student. Practice sets are always open
+ * (migration 22); a mock exam needs a plan unless an admin made it free.
+ * The database applies the same rule to the questions.
+ */
+export const paperLocked = (access: AccessState, paper: { is_free?: boolean | null; paper_type?: string | null }) =>
+  !access.hasAccess && isMockPaper(paper) && paper.is_free !== true

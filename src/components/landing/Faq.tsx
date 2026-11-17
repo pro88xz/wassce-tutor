@@ -21,7 +21,7 @@ function faq(subjects: SubjectSummary[]): [question: string, answer: string][] {
       ? `Every one of the ${listed.length} subjects has lessons.`
       : `Lessons are published for ${withLessons.length} of them so far: ${list(withLessons.map((s) => s.name))}. The others show their full syllabus outline while their lessons are written.`
   return [
-    ['Is WASSCE Tutor free?', `Yes, to start. A free account opens every subject’s syllabus, the first lesson of every topic and ${FREE_PRACTICE_INLINE}, with no time limit. To unlock everything, pay ${PRICES}.`],
+    ['Is WASSCE Tutor free?', `Yes. Every lesson in every subject and ${FREE_PRACTICE_INLINE} are free, with no time limit, and you can read the lessons without an account. A plan adds the AI study tutor and timed mock exams, for ${PRICES}.`],
     ['Which subjects are covered?', `The syllabus for ${listed.length} WASSCE subjects is here, topic by topic, for Science, Arts, Commercial and Technical students. ${covered}`],
     ['Are these real WAEC past papers?', 'No. Practice sets are original WASSCE-style questions written by WASSCE Tutor to match the syllabus and the exam format, each with the full working. We do not copy WAEC papers.'],
     ['How do I pay?', 'Choose a plan, complete the Monime USSD payment on your phone, and your access activates automatically after payment verification. Plans do not renew automatically.'],

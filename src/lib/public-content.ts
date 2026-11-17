@@ -40,7 +40,7 @@ export type LessonIndexItem = {
   title: string
   est_minutes: number | null
   sort_order: number
-  /** Has a public page: the topic's free lesson, or one an admin marked public (migration 08). */
+  /** Has a public page: every published lesson since migration 22. */
   is_public: boolean
   updated_at: string
 }
@@ -53,8 +53,8 @@ function fail(what: string, error: { message: string } | null): never {
   throw new Error(`Could not load ${what}: ${error?.message ?? 'unknown error'}`)
 }
 
-// Ties are broken by id, the same rule the database uses to pick each topic's
-// free first lesson (wassce_lesson_index), so the lesson listed first is the free one.
+// Ties are broken by id, the same rule the database uses to order a topic's
+// lessons (wassce_lesson_index), so pages and the app list them the same way.
 const byOrder = <T extends { sort_order: number; id: string }>(a: T, b: T) =>
   a.sort_order - b.sort_order || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0)
 
