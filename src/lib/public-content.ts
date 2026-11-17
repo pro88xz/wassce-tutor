@@ -6,6 +6,7 @@ import { supabase } from '@/lib/supabase'
 import { hasQuestionsPageByCount, hasSubjectPage, hasTopicPageByCount, subjectPath, topicPath } from '@/lib/public-rules'
 import { topicPhoto } from '@/lib/topic-photos'
 import { mathToText } from '@/lib/math-text'
+import { examFocus } from '@/lib/lesson-sections'
 
 export { hasSubjectPage, lessonPath, questionsPath, subjectPath, topicPath } from '@/lib/public-rules'
 
@@ -592,4 +593,56 @@ export async function fetchQuestionSubjects(): Promise<Map<string, number>> {
     if (slug) out.set(slug, (out.get(slug) ?? 0) + n)
   }
   return out
+}
+
+// ── Topic page extras: what WASSCE asks, and sample questions ───────────────
+
+export type ExamFocusNote = { slug: string; title: string; markdown: string }
+
+type LessonBody = { topic_id: string; slug: string; title: string; content: string }
+
+/** Every public lesson's text, a page at a time. Build time only (a few MB, read once). */
+function loadAllLessonBodies(): Promise<LessonBody[]> {
+  return once('lesson-bodies', async () => {
+    const rows: LessonBody[] = []
+    for (let from = 0; ; from += PAGE) {
+      const { data, error } = await supabase.from('wassce_public_lessons').select('id, topic_id, slug, title, content').order('id').range(from, from + PAGE - 1)
+      if (error || !data) fail('lessons', error)
+      rows.push(...(data as LessonBody[]))
+      if (data.length < PAGE) break
+    }
+    return rows
+  })
+}
+
+async function loadTopicLessonBodies(topicId: string): Promise<LessonBody[]> {
+  if (isServer) return (await loadAllLessonBodies()).filter((l) => l.topic_id === topicId)
+  const { data, error } = await supabase.from('wassce_public_lessons').select('topic_id, slug, title, content').eq('topic_id', topicId)
+  if (error || !data) fail('lessons', error)
+  return data as LessonBody[]
+}
+
+/** How many lessons' exam-focus notes a topic page shows, and how many sample questions. */
+const FOCUS_NOTES = 3
+const SAMPLE_QUESTIONS = 2
+
+/**
+ * For a topic page: the examination-focus notes of its first lessons (in
+ * syllabus order), and its first practice questions with their answers.
+ * Both come straight from the lessons and the question bank.
+ */
+export async function fetchTopicExtras(topic: TopicWithLessons): Promise<{ examFocus: ExamFocusNote[]; sampleQuestions: PublicQuestion[] }> {
+  const [bodies, questions] = await Promise.all([loadTopicLessonBodies(topic.id), loadTopicQuestions(topic.id)])
+  const bySlug = new Map(bodies.map((b) => [b.slug, b]))
+  const examFocusNotes: ExamFocusNote[] = []
+  for (const l of topic.lessons) {
+    const body = bySlug.get(l.slug)
+    const markdown = body ? examFocus(body.content) : null
+    if (markdown) examFocusNotes.push({ slug: l.slug, title: l.title, markdown })
+    if (examFocusNotes.length === FOCUS_NOTES) break
+  }
+  return {
+    examFocus: examFocusNotes,
+    sampleQuestions: hasQuestionsPageByCount(questions.length) ? questions.slice(0, SAMPLE_QUESTIONS) : [],
+  }
 }
