@@ -52,8 +52,9 @@ export function TryQuestion() {
       <div className="site-container">
         <div className="relative isolate overflow-hidden rounded-[2rem] bg-[linear-gradient(135deg,#f4f0ff,#ffffff_55%,#fff7e6)] px-5 py-10 ring-1 ring-[color-mix(in_srgb,var(--primary)_12%,transparent)] sm:px-10 sm:py-14 lg:px-14 lg:py-16 dark:bg-[linear-gradient(135deg,#221c3a,#1a1626_55%,#2a2216)]">
           <div aria-hidden className="absolute inset-0 -z-10 opacity-70 [background-image:radial-gradient(rgba(91,52,214,.10)_1px,transparent_1px)] [background-size:22px_22px] [mask-image:radial-gradient(70%_70%_at_75%_40%,#000,transparent)]" />
-          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)] lg:gap-14">
-            <div data-reveal className="max-w-xl">
+          {/* minmax(0, 1fr): the column never grows past the screen to fit a long line (the card header is one line). */}
+          <div className="grid grid-cols-[minmax(0,1fr)] items-center gap-10 lg:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)] lg:gap-14">
+            <div data-reveal className="min-w-0 max-w-xl">
               <p className="site-eyebrow">Try it: no account needed</p>
               <h2 id="try-heading" className="site-h2 mt-3">
                 Every answer <span className="site-accent text-[var(--primary)]">explained.</span>
@@ -93,7 +94,7 @@ export function TryQuestion() {
               </div>
             </div>
 
-            <div data-reveal="1" className="relative">
+            <div data-reveal="1" className="relative min-w-0">
               {/* The next questions, stacked behind the card. */}
               <div aria-hidden className="absolute inset-x-6 -bottom-3 top-3 -z-10 rotate-[2.5deg] rounded-[24px] bg-white/70 ring-1 ring-slate-900/[0.05] shadow-[0_20px_40px_-28px_rgba(30,20,80,.4)] sm:inset-x-10" />
               <div aria-hidden className="absolute inset-x-3 -bottom-1.5 top-1.5 -z-10 -rotate-[1.5deg] rounded-[24px] bg-white/85 ring-1 ring-slate-900/[0.05] sm:inset-x-5" />
@@ -102,7 +103,8 @@ export function TryQuestion() {
                 {/* The practice screen's header. */}
                 <div className="flex items-center justify-between gap-3 bg-[var(--site-ink)] px-5 py-3.5 text-white sm:px-7">
                   <span className="min-w-0 truncate text-[12px] font-bold uppercase tracking-[.14em] text-white/70">
-                    Practice · <span className="text-white">{question.subject}</span> · {question.topic}
+                    <span className="hidden sm:inline">Practice · </span>
+                    <span className="text-white">{question.subject}</span> · {question.topic}
                   </span>
                   <span className="flex shrink-0 items-center gap-2" role="img" aria-label={`Question ${index + 1} of ${SAMPLE_QUESTIONS.length}`}>
                     <span className="text-[12px] font-semibold tabular-nums text-white/70">

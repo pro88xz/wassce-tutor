@@ -164,7 +164,7 @@ function TopicPage() {
         />
         <div className="site-container pb-10 pt-6 sm:pb-14 sm:pt-8 lg:pb-16">
           <Breadcrumbs trail={trail(data)} tone="dark" />
-          <div className="mt-6 grid gap-7 lg:mt-10 lg:grid-cols-[minmax(0,1fr)_23rem] lg:gap-12">
+          <div className="mt-6 grid grid-cols-[minmax(0,1fr)] gap-7 lg:mt-10 lg:grid-cols-[minmax(0,1fr)_23rem] lg:gap-12">
             <div className="min-w-0">
               <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
                 <a
@@ -223,7 +223,7 @@ function TopicPage() {
         </div>
       </header>
 
-      <div className="site-container grid gap-10 pt-10 sm:pt-12 lg:grid-cols-[minmax(0,1fr)_23rem] lg:gap-12">
+      <div className="site-container grid grid-cols-[minmax(0,1fr)] gap-10 pt-10 sm:pt-12 lg:grid-cols-[minmax(0,1fr)_23rem] lg:gap-12">
         <div className="min-w-0 space-y-10 sm:space-y-12">
           {learn.length > 0 && (
             <section className="site-card p-6 sm:p-8" aria-labelledby="learn">
