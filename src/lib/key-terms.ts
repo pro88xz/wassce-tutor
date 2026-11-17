@@ -39,6 +39,8 @@ const BOX = /^:::callout\{type=definition[^}]*\}[ \t]*\n([\s\S]*?)\n:::[ \t]*$/g
 // inside the bold ("**Coulomb's law:** the force ..."); group 3: what follows
 // the term when it defines it (is, are, means, a colon or a dash).
 const DEFINES = /^(?:(?:A|An|The)\s+)?\*{2,3}([^*\n]{2,60}?)(:?)\*{2,3}\s*(?:\([^)\n]{1,40}\)\s*)?([:—–]|-\s|is\b|are\b|means\b|refers to\b|describes?\b|was\b)?/
+// Labels that open a line in a definition box without naming a term.
+const GENERIC = /^(verify|check|notation|note|notes|step \d+|method|rule|rules|formula|result|answer|example|examples|remember|tip|key idea|summary|definition|meaning|(first|second|third) law)$/i
 const slugOf = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 const words = (s: string) => s.replace(/\$[^$]*\$/g, ' x ').replace(/[*_`>#|]/g, ' ').split(/\s+/).filter(Boolean).length
 
@@ -84,6 +86,9 @@ export function lessonKeyTerms(lesson: LessonSource): KeyTerm[] {
       if (!m || (!m[2] && !m[3])) continue
       const raw = m[1].replace(/[:\s]+$/, '').trim()
       if (raw.includes('$') || /^\d/.test(raw)) continue
+      // A label for a step or a part of the working is not a term to learn ("**Verify:** the shares sum to Q",
+      // "**Notation:**", a bare "**First law:**" without whose law it is).
+      if (GENERIC.test(raw)) continue
       // The definition must say something: a few words after the term, not just a list heading.
       const rest = unit.slice(m[0].length)
       if (words(rest) < 4 || words(unit) > 90) continue
