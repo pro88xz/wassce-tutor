@@ -93,7 +93,15 @@ export function Callout({
         {children}
       </div>
       {type === 'definition' && keyTerms && (
-        <a href={keyTerms} className={`mt-3 inline-flex min-h-9 items-center gap-1 text-xs font-bold ${v.accent} hover:underline`}>
+        <a
+          href={keyTerms.href}
+          onClick={(e) => {
+            if (!keyTerms.go || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return
+            e.preventDefault()
+            keyTerms.go()
+          }}
+          className={`mt-3 inline-flex min-h-9 items-center gap-1 text-xs font-bold ${v.accent} hover:underline`}
+        >
           Revise it with the topic&rsquo;s key terms <span aria-hidden>→</span>
         </a>
       )}

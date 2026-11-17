@@ -129,9 +129,9 @@ function KeyTermsPage() {
       )}
 
       <StartCta
-        heading={`Learn ${topic.name.toLowerCase()} step by step`}
-        body={`Every lesson, key term and practice question is free. A free account saves your progress as you go.`}
-        appHref={`/topic/${topic.id}`}
+        heading="Revise them with your progress saved"
+        body={`In the app you mark each term "I know this" or "Not yet", and revision starts with the ones you do not know yet. Free, like every lesson and practice question.`}
+        appHref={`/topic/${topic.id}/terms`}
       />
     </article>
   )

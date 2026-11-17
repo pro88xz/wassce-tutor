@@ -194,3 +194,18 @@ jobs:
           RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select count(*) from public.lessons where id = '5f81e3d3-be2f-42f7-8c47-c8ab937b95bd' and content ~ '(?<![\\\\\$])\\\$(?=[0-9])';" | tr -d '[:space:]')"
           echo "accounting lesson with unescaped amounts: $RESULT"
           test "$RESULT" = "0" || { echo "Expected 0"; exit 1; }
+
+      - name: Verify (24) key term progress is each student's own
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            (select relrowsecurity from pg_class where oid = 'public.key_term_progress'::regclass),
+            (select count(*) from pg_policies where schemaname = 'public' and tablename = 'key_term_progress'),
+            has_table_privilege('anon', 'public.key_term_progress', 'select'),
+            has_table_privilege('authenticated', 'public.key_term_progress', 'insert'),
+            has_table_privilege('authenticated', 'public.key_term_progress', 'update'));" | tr -d '[:space:]')"
+          echo "row security on, policies, visitors read, students insert, students update: $RESULT"
+          test "$RESULT" = "t,4,f,t,t" || { echo "Checks did not match t,4,f,t,t"; exit 1; }

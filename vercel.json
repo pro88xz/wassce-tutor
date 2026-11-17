@@ -602,6 +602,10 @@
       "destination": "/_shell"
     },
     {
+      "source": "/topic/:id/terms",
+      "destination": "/_shell"
+    },
+    {
       "source": "/admin/:path*",
       "destination": "/_shell"
     }

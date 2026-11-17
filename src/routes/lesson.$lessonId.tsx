@@ -1,4 +1,4 @@
-import { createFileRoute, Link, useParams } from '@tanstack/react-router'
+import { createFileRoute, Link, useNavigate, useParams } from '@tanstack/react-router'
 import { CONTACT } from '@/lib/contact'
 import { ArrowLeft, ArrowRight, CircleCheck, Clock, Flag, MessageCircleQuestion, ShieldCheck } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
@@ -9,6 +9,8 @@ import { Button } from '@/components/ui/button'
 import { useCompletedLessons, useSetLessonComplete } from '@/lib/progress'
 import { subjectTheme } from '@/lib/subject-theme'
 import { LessonView } from '@/components/LessonView'
+import { KeyTermsLink } from '@/components/lesson/key-terms-link'
+import { useTopicKeyTerms } from '@/lib/key-term-progress'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { ProgressBar } from '@/components/ds/Progress'
 import { EmptyState, Skeleton } from '@/components/ds/Primitives'
@@ -32,6 +34,9 @@ function LessonPage() {
   const setComplete = useSetLessonComplete(user?.id ?? null)
   const { palette } = subjectTheme(subject?.slug)
   const { data: papers } = usePapers(topicData?.topic.subject_id ?? null)
+  // Definition boxes link to revising the topic's key terms (made from them), when it has enough.
+  const { data: keyTerms } = useTopicKeyTerms(lesson?.topic_id ?? null)
+  const navigate = useNavigate()
 
   if (isLoading) {
     return (
@@ -92,7 +97,15 @@ function LessonPage() {
         </header>
 
         <article className="prose prose-slate max-w-none text-base leading-[1.6] dark:prose-invert prose-headings:font-bold prose-headings:tracking-tight prose-h2:mb-3 prose-h2:mt-8 prose-h2:text-xl prose-p:leading-[1.6] prose-li:my-1 prose-strong:text-foreground prose-code:text-foreground">
-          <LessonView content={lesson.content} />
+          <KeyTermsLink.Provider
+            value={
+              keyTerms && keyTerms.length > 0
+                ? { href: `/topic/${lesson.topic_id}/terms`, go: () => navigate({ to: '/topic/$topicId/terms', params: { topicId: lesson.topic_id } }) }
+                : null
+            }
+          >
+            <LessonView content={lesson.content} />
+          </KeyTermsLink.Provider>
         </article>
 
         {/* HELP: tutor in context, and a way to report mistakes */}
