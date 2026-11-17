@@ -257,21 +257,44 @@ export async function fetchPublicLessonPage(
   return { ...page, lesson: data as PublicLesson }
 }
 
-/** Plain-text summary of lesson markdown, for meta descriptions. */
-export function lessonSummary(markdown: string, max = 155): string {
-  const text = markdown
+/** Markdown to plain text for a summary. */
+function plainText(markdown: string): string {
+  return markdown
     .replace(/^:::.*$/gm, ' ') // directive fences (:::callout, :::diagram)
     .replace(/\$\$[\s\S]*?\$\$/g, ' ') // display math
-    .replace(/\$[^$\n]+\$/g, ' ') // inline math
+    .replace(/\$([^$\n\\{}^_]+)\$/g, '$1') // plain inline math ($3 : 5$, $24$) reads as text
+    .replace(/\$[^$\n]+\$/g, ' ') // other inline math
     .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ') // images
     .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1') // links -> text
     .replace(/^#{1,6}\s+/gm, '') // heading marks
     .replace(/^\s*[-*+>]\s+/gm, '') // list / quote markers
     .replace(/[*_`|]/g, '') // emphasis, code, table pipes
     .replace(/\s+/g, ' ')
-    .replace(/\s+([.,;:!?])/g, '$1') // space left where math was removed
+    .replace(/\s+([.,;:!?])(?!\s?\d)/g, '$1') // space left where math was removed (but not in a ratio, 3 : 5)
     .replace(/[:;,]\./g, '.')
     .trim()
+}
+
+/**
+ * Is this Markdown block running prose? Headings, lists, tables, quotes,
+ * directives, images, display math and the "By the end of this lesson..."
+ * line that opens the learning objectives are not: as a search snippet they
+ * read as "Learning objectives By the end of this lesson, you should be able to:".
+ */
+const isProse = (block: string) =>
+  !/^(#|[-*+>|]|\d+[.)]\s|:::|!\[|\$\$)/.test(block) && !/^by the end of this (lesson|topic)/i.test(block)
+
+/** Meta description for a lesson: its opening prose, without headings or the objectives list. */
+export function lessonSummary(markdown: string, max = 155): string {
+  // Outside directives (:::callout ... :::), blocks of prose in order, until there is enough text.
+  const blocks = markdown.replace(/\r\n?/g, '\n').replace(/^:::[^\n]*\n[\s\S]*?^:::\s*$/gm, '').split(/\n\s*\n/)
+  let prose = ''
+  for (const block of blocks.map((b) => b.trim()).filter(isProse)) {
+    prose += ` ${plainText(block)}`
+    if (prose.length > max) break
+  }
+  // Lessons with no prose outside lists and callouts keep the old summary of everything.
+  const text = prose.trim().length >= 60 ? prose.trim() : plainText(markdown)
   if (text.length <= max) return text
   const cut = text.slice(0, max)
   return cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:.\s]+$/, '') + '…'

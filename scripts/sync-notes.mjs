@@ -10,6 +10,8 @@
 // and review fields (reviewed_by, reviewed_at, is_public) are never changed.
 // An entry may list "retire": [slugs] of older lessons in its topic that it
 // replaces; those are unpublished (is_published = false), never deleted.
+// Their public URLs then need a redirect: run "npm run notes:redirects"
+// (scripts/notes/redirects.mjs) and commit vercel.json; CI checks it.
 //
 // Needs SUPABASE_SECRET_KEY (Vercel, Production only), like the question sync.
 // Without it, it does nothing, so local builds never touch the real database.
