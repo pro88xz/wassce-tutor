@@ -17,15 +17,19 @@ const REMARK = [[remarkGfm, { singleTilde: false }], remarkMath] as const
 const REHYPE = [[rehypeKatex, { strict: 'ignore' }]] as const
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const COMPONENTS = { table: (props: any) => <MdTable className="not-prose my-3" {...props} /> }
+// Inline: paragraphs become block spans, so the markup is valid inside a button (an answer option).
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const INLINE_COMPONENTS = { ...COMPONENTS, p: ({ children }: any) => <span className="block">{children}</span> }
 
 // Memoised, like LessonView: re-parsing dozens of formulas on every re-render of the page costs real time on a phone.
-export const QuestionMarkdown = memo(function QuestionMarkdown({ content, className }: { content: string; className?: string }) {
+export const QuestionMarkdown = memo(function QuestionMarkdown({ content, className, inline = false }: { content: string; className?: string; inline?: boolean }) {
+  const Wrapper = inline ? 'span' : 'div'
   return (
-    <div className={className}>
+    <Wrapper className={inline ? `block ${className ?? ''}` : className}>
       {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-      <ReactMarkdown remarkPlugins={REMARK as any} rehypePlugins={REHYPE as any} components={COMPONENTS}>
+      <ReactMarkdown remarkPlugins={REMARK as any} rehypePlugins={REHYPE as any} components={inline ? INLINE_COMPONENTS : COMPONENTS}>
         {content}
       </ReactMarkdown>
-    </div>
+    </Wrapper>
   )
 })
