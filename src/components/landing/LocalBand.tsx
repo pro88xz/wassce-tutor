@@ -18,7 +18,7 @@ export function LocalBand() {
   return (
     <Band tone="white" labelledBy="local-heading">
       <div className="relative">
-        <SectionHeading id="local-heading" eyebrow="Made in Freetown" title="Built for how students here study." />
+        <SectionHeading id="local-heading" eyebrow="Made in Freetown" title={<>Built for how students <span className="site-accent text-[var(--primary)]">here</span> study.</>} />
         <ul className="mt-9 grid grid-cols-2 gap-3 sm:gap-5 lg:mt-12 lg:grid-cols-4">
           {FEATURES.map(({ title, body, Visual }, i) => (
             <li key={title} data-reveal={i} className="site-card flex flex-col overflow-hidden">

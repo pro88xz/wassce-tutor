@@ -51,7 +51,7 @@ export function Plans() {
       <SectionHeading
         id="plans-heading"
         eyebrow="Plans"
-        title="Every lesson is free. Add the study tutor when you want it."
+        title={<>Every lesson is <span className="site-accent text-[var(--primary)]">free.</span> Add the study tutor when you want it.</>}
         lede={`Every lesson and practice set is free, with the full working. A plan adds the AI study tutor and timed mock exams, from ${FROM_PRICE} NLe.`}
       />
 

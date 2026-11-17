@@ -15,7 +15,7 @@ export function SubjectShowcase({ subjects }: { subjects: SubjectSummary[] }) {
       <SectionHeading
         id="subjects-heading"
         eyebrow="Subjects"
-        title="Find your subject. Start your topic."
+        title={<>Find your subject. <span className="site-accent text-[var(--primary)]">Start your topic.</span></>}
         lede={`${withLessons} of ${listed.length} subjects have full lessons; the rest show their syllabus.`}
         action={
           <a href="/wassce/subjects" className="site-link">
