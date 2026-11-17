@@ -5,7 +5,7 @@ import { Link } from '@tanstack/react-router'
 import { BookOpenCheck, CalendarClock, Check, ShieldCheck, Zap } from 'lucide-react'
 import { FROM_PRICE, PAID_FEATURES, PLANS, type PlanId } from '@/lib/plans'
 import { FREE_FEATURES } from '@/lib/free-plan'
-import { Band, Mark, SectionHeading } from '@/components/public/Section'
+import { Band, SectionHeading } from '@/components/public/Section'
 
 const KICKER: Record<'free' | PlanId, string> = {
   free: 'Get started',
@@ -47,11 +47,11 @@ export function Plans() {
   ]
 
   return (
-    <Band id="plans" labelledBy="plans-heading" className="scroll-mt-20">
+    <Band tone="white" id="plans" labelledBy="plans-heading" className="scroll-mt-20">
       <SectionHeading
         id="plans-heading"
         eyebrow="Plans"
-        title={<>Start free. Unlock everything for <Mark>one small payment.</Mark></>}
+        title="Start free. Unlock everything for one small payment."
         lede={`A free account opens the first lesson of every topic. A plan opens every lesson and every practice set, from ${FROM_PRICE} NLe.`}
       />
 

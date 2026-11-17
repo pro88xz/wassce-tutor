@@ -1,14 +1,14 @@
 // Book a tutor: the human-tutor service, introduced with its photograph.
 import { ArrowRight, Check, UserRound } from 'lucide-react'
 import { TUTOR_PHOTO } from '@/lib/tutors'
-import { Band, Mark } from '@/components/public/Section'
+import { Band } from '@/components/public/Section'
 import { BrandPhoto } from '@/components/public/BrandPhoto'
 
 const POINTS = ['Help with the topics you find hard', 'In-person lessons, verified tutors', 'Message them on WhatsApp']
 
 export function TutorFeature() {
   return (
-    <Band tone="white" labelledBy="tutor-heading">
+    <Band labelledBy="tutor-heading">
       <div className="grid items-center gap-8 md:grid-cols-2 md:gap-10 lg:gap-16">
         <div data-reveal className="px-3 pt-3 sm:px-5 sm:pt-5">
           <BrandPhoto
@@ -27,7 +27,7 @@ export function TutorFeature() {
         </div>
         <div data-reveal="1" className="max-w-xl">
           <p className="site-eyebrow">Book a tutor</p>
-          <h2 id="tutor-heading" className="site-h2 mt-3">Need a <Mark>real tutor?</Mark></h2>
+          <h2 id="tutor-heading" className="site-h2 mt-3">Need a real tutor?</h2>
           <p className="site-lede mt-4">Verified WASSCE tutors near you, with the fee shown up front.</p>
           <ul className="mt-6 space-y-3">
             {POINTS.map((t) => (

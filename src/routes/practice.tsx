@@ -185,7 +185,7 @@ function Browser({ subjects, of, best, attempts }: { subjects: Subject[]; of: (i
                   on ? 'bg-foreground text-background shadow-md' : 'bg-card text-foreground ring-1 ring-border hover:ring-primary/40'
                 }`}
               >
-                <SubjectCover slug={s.slug} shape="square" className="h-8 w-8" rounded="rounded-full" />
+                <SubjectCover slug={s.slug} shape="thumb" className="h-8 w-8 shrink-0" rounded="rounded-full" />
                 {s.name}
                 <span className={`text-xs font-medium tabular-nums ${on ? 'text-background/70' : 'text-muted-foreground'}`}>{of(s.id).filter((p) => !isMock(p)).length}</span>
               </button>

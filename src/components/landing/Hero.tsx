@@ -11,7 +11,6 @@ import { PRACTICE_TOTAL } from '@/lib/practice-counts'
 import { supabase } from '@/lib/supabase'
 import { SAMPLE_QUESTIONS } from '@/content/sample-questions'
 import { BrandPhoto } from '@/components/public/BrandPhoto'
-import { SubjectCover } from '@/components/ds/SubjectCover'
 
 const ASSURANCES = ['Free to start', 'No card needed', 'Works on any phone']
 
@@ -52,35 +51,7 @@ export function Hero({ data }: { data: LandingData }) {
         <HeroPhoto />
       </div>
       <ProofRow initial={data.totals} />
-      <SubjectMarquee subjects={data.subjects.filter((s) => s.topicCount > 0)} />
     </section>
-  )
-}
-
-/** Every WASSCE subject, sliding past: each opens its syllabus page. */
-function SubjectMarquee({ subjects }: { subjects: LandingData['subjects'] }) {
-  if (subjects.length === 0) return null
-  const item = (s: LandingData['subjects'][number], copy: boolean) => (
-    <li key={`${copy ? 'b' : 'a'}-${s.slug}`} aria-hidden={copy || undefined}>
-      <a
-        href={`/wassce/${s.slug}`}
-        tabIndex={copy ? -1 : undefined}
-        className="mr-3 inline-flex items-center gap-2.5 rounded-full bg-white py-1.5 pl-1.5 pr-4 text-sm font-semibold text-slate-800 shadow-[0_1px_2px_rgba(23,28,43,.05)] ring-1 ring-slate-900/[0.07] transition hover:text-[var(--primary)] hover:ring-[var(--primary)]/40"
-      >
-        <SubjectCover slug={s.slug} shape="square" className="h-8 w-8 shrink-0" rounded="rounded-full" />
-        {s.name}
-      </a>
-    </li>
-  )
-  return (
-    <nav aria-label="WASSCE subjects" className="border-t border-slate-900/[0.06] bg-[color-mix(in_srgb,var(--brand-soft)_35%,var(--card))] py-5">
-      <div className="site-marquee">
-        <ul className="site-marquee-track">
-          {subjects.map((s) => item(s, false))}
-          {subjects.map((s) => item(s, true))}
-        </ul>
-      </div>
-    </nav>
   )
 }
 
