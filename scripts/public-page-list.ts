@@ -2,7 +2,8 @@
 // Used by vite.config.ts to tell TanStack Start what to prerender. Reads the
 // same public tables/views as src/lib/public-content.ts, over plain REST with
 // the publishable key, and applies the same rules (src/lib/public-rules.ts).
-import { hasQuestionsPageByCount, hasSubjectPage, hasTopicPageByCount, lessonPath, questionsPath, subjectPath, topicPath, tutorsPath } from '../src/lib/public-rules'
+import { hasQuestionsPageByCount, hasSubjectPage, hasTopicPageByCount, keyTermsPath, lessonPath, questionsPath, subjectPath, topicPath, tutorsPath } from '../src/lib/public-rules'
+import { hasKeyTermsByCount, topicKeyTerms } from '../src/lib/key-terms'
 
 export type PageEntry = { path: string; lastmod: string }
 
@@ -37,7 +38,7 @@ export async function publicPageList(supabaseUrl: string, publishableKey: string
     get(supabaseUrl, publishableKey, 'subjects', 'id,slug,updated_at'),
     get(supabaseUrl, publishableKey, 'topics', 'id,subject_id,slug,updated_at'),
     get(supabaseUrl, publishableKey, 'wassce_lesson_index', 'id,topic_id,updated_at'),
-    get(supabaseUrl, publishableKey, 'wassce_public_lessons', 'id,topic_id,slug,updated_at'),
+    get(supabaseUrl, publishableKey, 'wassce_public_lessons', 'id,topic_id,slug,title,content,sort_order,updated_at'),
     get(supabaseUrl, publishableKey, 'wassce_public_questions', 'id,topic_id,updated_at'),
   ])
 
@@ -72,8 +73,17 @@ export async function publicPageList(supabaseUrl: string, publishableKey: string
       pages.push({ path: topicPath(s.slug, t.slug), lastmod: day(latest([t.updated_at, ...dates])) })
       // Every published lesson has its own free page (migration 22).
       for (const l of publicLessons.filter((pl) => pl.topic_id === t.id)) {
-        if (l.slug === 'questions') throw new Error(`[public-page-list] a lesson in ${s.slug}/${t.slug} has the slug "questions", which is the topic's questions page`)
+        if (l.slug === 'questions' || l.slug === 'key-terms') throw new Error(`[public-page-list] a lesson in ${s.slug}/${t.slug} has the slug "${l.slug}", which is one of the topic's own pages`)
         pages.push({ path: lessonPath(s.slug, t.slug, l.slug), lastmod: day(l.updated_at) })
+      }
+      // The topic's key terms (its lessons' definitions as cards), when it has enough of them.
+      const topicLessons = publicLessons
+        .filter((pl) => pl.topic_id === t.id)
+        .sort((a, b) => Number(a.sort_order) - Number(b.sort_order) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))
+      const terms = topicKeyTerms(topicLessons.map((l) => ({ id: l.id, slug: l.slug, title: l.title, content: l.content })))
+      if (hasKeyTermsByCount(terms.length)) {
+        const used = new Set(terms.map((k) => k.lessonId))
+        pages.push({ path: keyTermsPath(s.slug, t.slug), lastmod: day(latest(topicLessons.filter((l) => used.has(l.id)).map((l) => l.updated_at))) })
       }
       // The topic's practice questions with answers, when it has enough of them.
       const qDates = questionDates.get(t.id) ?? []
