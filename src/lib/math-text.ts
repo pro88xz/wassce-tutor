@@ -190,6 +190,6 @@ export function latexToText(tex: string): string {
  */
 export function mathToText(markdown: string): string {
   return markdown
-    .replace(/\$\$([\s\S]*?)\$\$/g, (_, tex: string) => ` ${latexToText(tex)} `)
-    .replace(/\$([^$\n]+)\$/g, (_, tex: string) => latexToText(tex))
+    .replace(/\$\$([\s\S]*?)\$\$|\\\[([\s\S]*?)\\\]/g, (_, a?: string, b?: string) => ` ${latexToText(a ?? b ?? '')} `)
+    .replace(/\$([^$\n]+)\$|\\\((.+?)\\\)/g, (_, a?: string, b?: string) => latexToText(a ?? b ?? ''))
 }

@@ -97,6 +97,47 @@ export const PUBLIC_PAGES = {
 
 export type PublicPath = keyof typeof PUBLIC_PAGES
 
+// Titles and descriptions written for the words people actually search, for
+// data-driven pages where Search Console showed many impressions at a good
+// position but no clicks: the default template ("WASSCE Chemistry:
+// Introduction to Chemistry Lessons") did not answer searches such as
+// "chemistry for beginners" or "learn about literature". Keyed by path. Keep
+// each one true to what the page has; it replaces the template's text only.
+export const SEARCH_COPY: Partial<Record<string, { title: string; description: string }>> = {
+  // Nov 2026: about 1,500 impressions at position 5 for "chemistry for beginners",
+  // "chemistry explained", "learn about chemistry", "understanding chemistry".
+  '/wassce/chemistry/introduction-to-chemistry': {
+    title: 'Introduction to Chemistry for Beginners | WASSCE Chemistry',
+    description:
+      'Chemistry explained for beginners: what chemistry is, its branches and uses, the scientific method, measurement and lab safety. Short lessons, the first free.',
+  },
+  // Nov 2026: about 270 impressions at position 5 for "learn about literature".
+  '/wassce/literature-in-english': {
+    title: 'Learn About Literature: Prose, Drama & Poetry | WASSCE',
+    description:
+      'Learn what literature is, why we read it and its three genres, prose, drama and poetry, then every topic of the WASSCE Literature in English syllabus.',
+  },
+}
+
+/** Google shows about 60 characters of a title: add the brand only when it still fits. */
+export function brandedTitle(title: string, max = 65): string {
+  const full = `${title} | ${SITE.name}`
+  return full.length <= max ? full : title
+}
+
+/**
+ * A meta description from parts in order of importance: as many whole parts
+ * as fit in `max` characters (Google shows about 155-160); a part that does
+ * not fit is skipped. The first part is always kept, cut at a word if it alone
+ * is too long.
+ */
+export function fitDescription(parts: string[], max = 160): string {
+  const [first = '', ...rest] = parts.map((p) => p.trim()).filter(Boolean)
+  let out = first.length <= max ? first : `${first.slice(0, first.lastIndexOf(' ', max - 1)).replace(/[,;:.\s]+$/, '')}…`
+  for (const part of rest) if (out.length + 1 + part.length <= max) out += ` ${part}`
+  return out
+}
+
 // Same shapes the router's `head` option returns.
 export type HeadTags = {
   meta: NonNullable<AnyRouteMatch['meta']>

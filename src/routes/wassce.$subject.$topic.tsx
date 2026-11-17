@@ -9,7 +9,7 @@ import { useAuth } from '@/lib/auth'
 import { hasPractice } from '@/lib/practice-counts'
 import { fetchTopicPage, hasTopicPage, lessonMinutes, lessonPath, subjectPath, topicPath } from '@/lib/public-content'
 import type { TopicPageData } from '@/lib/public-content'
-import { breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
+import { SEARCH_COPY, brandedTitle, breadcrumbJsonLd, fitDescription, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { subjectTheme } from '@/lib/subject-theme'
 import { TopicCover } from '@/components/public/TopicCover'
 import { LessonOutlineList, outlineLinkClass } from '@/components/LessonOutline'
@@ -24,10 +24,16 @@ const trail = ({ subject, topic }: TopicPageData): [string, string][] => [
   [topic.name, topicPath(subject.slug, topic.slug)],
 ]
 
-function describe({ subject, topic, group }: TopicPageData): string {
+/** What the topic covers first, then the lessons; whole parts only, within the length Google shows. */
+function describe({ subject, topic }: TopicPageData): string {
   const n = topic.lessons.length
-  const intro = topic.description ? `${topic.description.replace(/\.?$/, '.')} ` : ''
-  return `${intro}${n} WASSCE ${subject.name} lesson${n === 1 ? '' : 's'} on ${topic.name.toLowerCase()} (about ${lessonMinutes(topic.lessons)} minutes), part of ${group.name}. For Sierra Leone students.`
+  const minutes = lessonMinutes(topic.lessons)
+  return fitDescription([
+    topic.description ? topic.description.replace(/\.?$/, '.') : `${topic.name} for WASSCE ${subject.name}.`,
+    // The title already names the subject, so this line stays short enough to fit.
+    `${n} lesson${n === 1 ? '' : 's'}${minutes > 0 ? `, about ${minutes} min` : ''}${topic.lessons[0]?.is_public ? ', the first free' : ''}.`,
+    'For Sierra Leone students.',
+  ])
 }
 
 export const Route = createFileRoute('/wassce/$subject/$topic')({
@@ -44,16 +50,18 @@ export const Route = createFileRoute('/wassce/$subject/$topic')({
     }
     return { ...data, outlines }
   },
-  head: ({ loaderData: data }) =>
-    data
-      ? indexablePageTags({
-          path: topicPath(data.subject.slug, data.topic.slug),
-          title: `WASSCE ${data.subject.name}: ${data.topic.name} Lessons | WASSCE Tutor`,
-          ogTitle: `${data.topic.name} (WASSCE ${data.subject.name})`,
-          description: describe(data),
-          jsonLd: [breadcrumbJsonLd(trail(data))],
-        })
-      : privatePageTags('Page not found'),
+  head: ({ loaderData: data }) => {
+    if (!data) return privatePageTags('Page not found')
+    const path = topicPath(data.subject.slug, data.topic.slug)
+    const copy = SEARCH_COPY[path]
+    return indexablePageTags({
+      path,
+      title: brandedTitle(copy?.title ?? `WASSCE ${data.subject.name}: ${data.topic.name} Lessons`),
+      ogTitle: `${data.topic.name} (WASSCE ${data.subject.name})`,
+      description: copy?.description ?? describe(data),
+      jsonLd: [breadcrumbJsonLd(trail(data))],
+    })
+  },
   component: TopicPage,
 })
 

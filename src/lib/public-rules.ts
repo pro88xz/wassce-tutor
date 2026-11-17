@@ -12,6 +12,15 @@ export const hasSubjectPage = (topicCount: number) => topicCount > 0
  */
 export const hasTopicPageByCount = (lessonCount: number) => lessonCount > 0
 
+/**
+ * A URL slug from a title or a typed slug: lowercase letters, digits and single
+ * hyphens. The same rule as import_lessons() and scripts/sync-notes.mjs, so
+ * "Topic 9: Equilibrium of Forces" becomes topic-9-equilibrium-of-forces, not
+ * topic-9:-equilibrium-of-forces (a URL Google indexed before this rule).
+ */
+export const toSlug = (text: string) =>
+  text.replace(/[^a-zA-Z0-9\s-]/g, '').replace(/\s+/g, '-').toLowerCase().replace(/-+/g, '-').replace(/^-|-$/g, '')
+
 export const subjectPath = (subjectSlug: string) => `/wassce/${subjectSlug}`
 export const topicPath = (subjectSlug: string, topicSlug: string) => `/wassce/${subjectSlug}/${topicSlug}`
 export const lessonPath = (subjectSlug: string, topicSlug: string, lessonSlug: string) =>

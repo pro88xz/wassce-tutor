@@ -16,6 +16,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { headerPolicy, withPagePolicy } from './csp.mjs'
+import { redirectProblems, sitemapPaths } from './notes/redirects.mjs'
 
 const root = path.resolve(import.meta.dirname, '..')
 const client = path.join(root, 'dist/client')
@@ -60,6 +61,21 @@ console.log('[postbuild] updated _shell.html and wrote 404.html')
     process.exit(1)
   }
   console.log(`[postbuild] wrote a Content-Security-Policy into ${pages.length} pages`)
+}
+
+// Retired-lesson redirects (scripts/notes/redirects.mjs) against this build's
+// pages. Which lessons are public comes from the database, so a problem here
+// is reported, not fatal: fix it with "npm run notes:redirects".
+{
+  const vercel = JSON.parse(fs.readFileSync(path.join(root, 'vercel.json'), 'utf8'))
+  const live = sitemapPaths(fs.readFileSync(path.join(client, 'sitemap.xml'), 'utf8'))
+  const problems = redirectProblems(vercel.redirects ?? [], live)
+  if (problems.length) {
+    console.warn(`[postbuild] WARNING: ${problems.length} retired-lesson redirect problem(s); run "npm run notes:redirects":`)
+    for (const p of problems) console.warn(`  ${p}`)
+  } else {
+    console.log('[postbuild] retired-lesson redirects all lead to live pages')
+  }
 }
 
 // /llms.txt (https://llmstxt.org): a plain-language map of the public site

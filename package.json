@@ -14,6 +14,7 @@
     "preview": "vite preview",
     "notes:validate": "node scripts/notes-ingestion.mjs validate",
     "notes:outlines": "node scripts/notes/outlines.mjs",
+    "notes:redirects": "node scripts/notes/redirects.mjs",
     "brand:icons": "node scripts/brand/build-icons.mjs",
     "images:variants": "node scripts/images/build-variants.mjs",
     "notes:build": "node scripts/notes-ingestion.mjs build",

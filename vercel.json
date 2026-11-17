@@ -20,6 +20,576 @@
       "source": "/tiktok",
       "destination": "/?utm_source=tiktok&utm_medium=social&utm_campaign=promo",
       "permanent": false
+    },
+    {
+      "source": "/wassce/chemistry/acid-base-titration/acid-base-titration",
+      "destination": "/wassce/chemistry/acid-base-titration/titration-apparatus-procedure-and-indicators",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/acids-bases-and-ph/acids(.*)-bases(.*)-and-ph",
+      "destination": "/wassce/chemistry/acids-bases-and-ph/acids-and-bases-definitions-properties-and-strength",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/atomic-structure/atomic-mass-unit-(.*)amu(.*)",
+      "destination": "/wassce/chemistry/atomic-structure/inside-the-atom-particles-atomic-number-and-isotopes",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/atomic-structure/atomic-parameters",
+      "destination": "/wassce/chemistry/atomic-structure/inside-the-atom-particles-atomic-number-and-isotopes",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/atomic-structure/atomic-structure-subatomic-particles-isotopes-and-electron-arrangement",
+      "destination": "/wassce/chemistry/atomic-structure/inside-the-atom-particles-atomic-number-and-isotopes",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/atomic-structure/dalton(.*)s-atomic-theory",
+      "destination": "/wassce/chemistry/atomic-structure/inside-the-atom-particles-atomic-number-and-isotopes",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/atomic-structure/particles",
+      "destination": "/wassce/chemistry/atomic-structure/inside-the-atom-particles-atomic-number-and-isotopes",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/atomic-structure/radioactivity",
+      "destination": "/wassce/chemistry/atomic-structure/inside-the-atom-particles-atomic-number-and-isotopes",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/atomic-structure/relative-atomic-mass",
+      "destination": "/wassce/chemistry/atomic-structure/inside-the-atom-particles-atomic-number-and-isotopes",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/chemical-bonding/chemical-bonding",
+      "destination": "/wassce/chemistry/chemical-bonding/ionic-covalent-and-dative-bonding",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/chemical-bonding/metallic-bonding",
+      "destination": "/wassce/chemistry/chemical-bonding/ionic-covalent-and-dative-bonding",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/chemical-bonding/molecular-geometry-and-hybridization",
+      "destination": "/wassce/chemistry/chemical-bonding/ionic-covalent-and-dative-bonding",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/chemical-bonding/sigma-and-pi-covalent-bonds",
+      "destination": "/wassce/chemistry/chemical-bonding/ionic-covalent-and-dative-bonding",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/chemical-bonding/types-of-chemical-bonds",
+      "destination": "/wassce/chemistry/chemical-bonding/ionic-covalent-and-dative-bonding",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/chemical-equations-and-stoichiometry/chemical-combination",
+      "destination": "/wassce/chemistry/chemical-equations-and-stoichiometry/chemical-equations-and-the-laws-of-chemical-combination",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/chemical-equations-and-stoichiometry/chemical-equations-and-balancing-mechanics",
+      "destination": "/wassce/chemistry/chemical-equations-and-stoichiometry/chemical-equations-and-the-laws-of-chemical-combination",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/chemical-equations-and-stoichiometry/chemical-equations-and-stoichiometry",
+      "destination": "/wassce/chemistry/chemical-equations-and-stoichiometry/chemical-equations-and-the-laws-of-chemical-combination",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/chemical-equations-and-stoichiometry/percentage-purity",
+      "destination": "/wassce/chemistry/chemical-equations-and-stoichiometry/chemical-equations-and-the-laws-of-chemical-combination",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/electrochemical-cells/electrochemical-cells",
+      "destination": "/wassce/chemistry/electrochemical-cells/electrochemical-cells-and-the-electrochemical-series",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/electrochemical-cells/notation-rules(.*)",
+      "destination": "/wassce/chemistry/electrochemical-cells/electrochemical-cells-and-the-electrochemical-series",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/electrolysis/electrolysis",
+      "destination": "/wassce/chemistry/electrolysis/electrolysis-electrolytes-electrodes-and-products",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/electronic-configuration/electrons-in-atoms",
+      "destination": "/wassce/chemistry/electronic-configuration/shells-sub-shells-and-orbitals",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/electronic-configuration/pauli(.*)s-exclusion-principle",
+      "destination": "/wassce/chemistry/electronic-configuration/shells-sub-shells-and-orbitals",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/empirical-and-molecular-formulas/empirical-and-molecular-formulas",
+      "destination": "/wassce/chemistry/empirical-and-molecular-formulas/empirical-formulas-from-experimental-data",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/gas-laws/advanced-gas-stoichiometry",
+      "destination": "/wassce/chemistry/gas-laws/boyles-law-charles-law-and-the-general-gas-equation",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/gas-laws/gas-laws-and-gas-calculations",
+      "destination": "/wassce/chemistry/gas-laws/boyles-law-charles-law-and-the-general-gas-equation",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/gas-laws/gay-lussac(.*)s-law-of-combining-volumes-(.*)-avogadro(.*)s-law",
+      "destination": "/wassce/chemistry/gas-laws/boyles-law-charles-law-and-the-general-gas-equation",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/gas-laws/kinetic-explanation",
+      "destination": "/wassce/chemistry/gas-laws/boyles-law-charles-law-and-the-general-gas-equation",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/introduction-to-chemistry/careers",
+      "destination": "/wassce/chemistry/introduction-to-chemistry/what-chemistry-is-branches-importance-and-careers",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/introduction-to-chemistry/laboratory-safety",
+      "destination": "/wassce/chemistry/introduction-to-chemistry/what-chemistry-is-branches-importance-and-careers",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/introduction-to-chemistry/meaning-and-branches-of-chemistry",
+      "destination": "/wassce/chemistry/introduction-to-chemistry/what-chemistry-is-branches-importance-and-careers",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/introduction-to-chemistry/scientific-method",
+      "destination": "/wassce/chemistry/introduction-to-chemistry/what-chemistry-is-branches-importance-and-careers",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/oxidation-and-reduction-reactions/oxidation-and-reduction-reactions",
+      "destination": "/wassce/chemistry/oxidation-and-reduction-reactions/oxidation-and-reduction-four-ways-to-see-them",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/particulate-nature-of-matter/chemical-purity",
+      "destination": "/wassce/chemistry/particulate-nature-of-matter/matter-particles-elements-compounds-and-mixtures",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/particulate-nature-of-matter/classification-of-matter",
+      "destination": "/wassce/chemistry/particulate-nature-of-matter/matter-particles-elements-compounds-and-mixtures",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/particulate-nature-of-matter/separation-techniques",
+      "destination": "/wassce/chemistry/particulate-nature-of-matter/matter-particles-elements-compounds-and-mixtures",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/particulate-nature-of-matter/the-concept-of-matter-and-its-components",
+      "destination": "/wassce/chemistry/particulate-nature-of-matter/matter-particles-elements-compounds-and-mixtures",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/salts-and-their-preparation/salts-and-their-preparation",
+      "destination": "/wassce/chemistry/salts-and-their-preparation/salts-types-solubility-and-uses",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/solutions-and-solubility/solutions-and-solubility",
+      "destination": "/wassce/chemistry/solutions-and-solubility/solutions-suspensions-and-colloids",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/states-of-matter/evidence-for-the-kinetic-model",
+      "destination": "/wassce/chemistry/states-of-matter/the-kinetic-theory-and-the-three-states-of-matter",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/states-of-matter/states-of-matter",
+      "destination": "/wassce/chemistry/states-of-matter/the-kinetic-theory-and-the-three-states-of-matter",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/states-of-matter/the-solid-state",
+      "destination": "/wassce/chemistry/states-of-matter/the-kinetic-theory-and-the-three-states-of-matter",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/the-mole-concept/relative-masses-and-the-mole-bridge",
+      "destination": "/wassce/chemistry/the-mole-concept/the-mole-molar-mass-and-the-avogadro-constant",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/the-mole-concept/the-mole-concept",
+      "destination": "/wassce/chemistry/the-mole-concept/the-mole-molar-mass-and-the-avogadro-constant",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/the-periodic-table-and-periodicity/the-modern-periodic-law",
+      "destination": "/wassce/chemistry/the-periodic-table-and-periodicity/the-periodic-table-development-groups-periods-and-blocks",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/water-and-its-properties/municipal-water-treatment-protocol",
+      "destination": "/wassce/chemistry/water-and-its-properties/water-composition-properties-and-hardness",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/chemistry/water-and-its-properties/water-and-its-properties",
+      "destination": "/wassce/chemistry/water-and-its-properties/water-composition-properties-and-hardness",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/aids-to-trade/aids-to-trade",
+      "destination": "/wassce/commerce/aids-to-trade/aids-to-trade-removing-the-hindrances-to-trade",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/aids-to-trade/how-aids-to-trade-work-together-in-a-modern-supply-chain",
+      "destination": "/wassce/commerce/aids-to-trade/aids-to-trade-removing-the-hindrances-to-trade",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/banking/bank-accounts-credit-facilities-and-safe-business-payments",
+      "destination": "/wassce/commerce/banking/banks-and-their-services",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/banking/banking",
+      "destination": "/wassce/commerce/banking/banks-and-their-services",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/communication/business-communication-channels-records-and-effective-messages",
+      "destination": "/wassce/commerce/communication/communication-in-business",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/communication/communication-in-commerce",
+      "destination": "/wassce/commerce/communication/communication-in-business",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/documents-and-terms-in-foreign-trade/international-trade-documentation-payment-risk-and-delivery-terms",
+      "destination": "/wassce/commerce/documents-and-terms-in-foreign-trade/documents-and-terms-in-home-trade",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/foreign-trade/balance-of-trade-exchange-rates-and-trade-restrictions",
+      "destination": "/wassce/commerce/foreign-trade/foreign-trade-imports-exports-and-entrept-trade",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/foreign-trade/foreign-trade",
+      "destination": "/wassce/commerce/foreign-trade/foreign-trade-imports-exports-and-entrept-trade",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/forms-of-business-units/choosing-a-form-of-business-liability-control-and-continuity",
+      "destination": "/wassce/commerce/forms-of-business-units/sole-proprietorship-and-partnership",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/forms-of-business-units/forms-of-business-units",
+      "destination": "/wassce/commerce/forms-of-business-units/sole-proprietorship-and-partnership",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/insurance/insurance",
+      "destination": "/wassce/commerce/insurance/insurance-meaning-and-principles",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/insurance/insurance-claims-policy-terms-and-risk-management",
+      "destination": "/wassce/commerce/insurance/insurance-meaning-and-principles",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/legal-aspects-of-business/consumer-protection-business-records-and-resolving-commercial-disputes",
+      "destination": "/wassce/commerce/legal-aspects-of-business/contracts-and-the-law-of-business",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/legal-aspects-of-business/legal-aspects-of-business",
+      "destination": "/wassce/commerce/legal-aspects-of-business/contracts-and-the-law-of-business",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/marketing-and-advertising/market-research-segmentation-and-the-marketing-mix",
+      "destination": "/wassce/commerce/marketing-and-advertising/marketing-concept-functions-and-the-marketing-mix",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/marketing-and-advertising/marketing-and-advertising",
+      "destination": "/wassce/commerce/marketing-and-advertising/marketing-concept-functions-and-the-marketing-mix",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/money-and-currency/inflation-purchasing-power-and-the-monetary-system",
+      "destination": "/wassce/commerce/money-and-currency/money-evolution-functions-and-qualities",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/money-and-currency/money-and-currency",
+      "destination": "/wassce/commerce/money-and-currency/money-evolution-functions-and-qualities",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/nature-and-scope-of-commerce/advanced-scope-of-commerce-distribution-channels-and-commercial-efficiency",
+      "destination": "/wassce/commerce/nature-and-scope-of-commerce/what-commerce-is-meaning-branches-and-scope",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/nature-and-scope-of-commerce/nature-and-scope-of-commerce",
+      "destination": "/wassce/commerce/nature-and-scope-of-commerce/what-commerce-is-meaning-branches-and-scope",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/production-and-occupations/production-and-occupations",
+      "destination": "/wassce/commerce/production-and-occupations/production-occupations-and-the-factors-of-production",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/production-and-occupations/specialisation-division-of-labour-and-productivity",
+      "destination": "/wassce/commerce/production-and-occupations/production-occupations-and-the-factors-of-production",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/retail-trade/retail-pricing-stock-control-and-customer-service",
+      "destination": "/wassce/commerce/retail-trade/retail-trade-functions-and-small-scale-retailers",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/retail-trade/retail-trade",
+      "destination": "/wassce/commerce/retail-trade/retail-trade-functions-and-small-scale-retailers",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/sources-of-business-capital/cost-of-capital-working-capital-and-financial-planning",
+      "destination": "/wassce/commerce/sources-of-business-capital/business-capital-types-and-sources",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/sources-of-business-capital/sources-of-business-capital",
+      "destination": "/wassce/commerce/sources-of-business-capital/business-capital-types-and-sources",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/the-stock-exchange-and-capital-market/securities-primary-and-secondary-markets-and-investor-risk",
+      "destination": "/wassce/commerce/the-stock-exchange-and-capital-market/the-stock-exchange-and-how-it-works",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/the-stock-exchange-and-capital-market/the-stock-exchange-and-capital-market",
+      "destination": "/wassce/commerce/the-stock-exchange-and-capital-market/the-stock-exchange-and-how-it-works",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/trade-associations/trade-associations",
+      "destination": "/wassce/commerce/trade-associations/trade-associations-and-chambers-of-commerce",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/trade-associations/trade-associations-chambers-of-commerce-and-consumer-representation",
+      "destination": "/wassce/commerce/trade-associations/trade-associations-and-chambers-of-commerce",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/transportation/transport-selection-freight-costs-and-logistics-performance",
+      "destination": "/wassce/commerce/transportation/transport-importance-and-modes",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/transportation/transportation-in-commerce",
+      "destination": "/wassce/commerce/transportation/transport-importance-and-modes",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/warehousing/warehouse-management-stock-rotation-and-inventory-costs",
+      "destination": "/wassce/commerce/warehousing/warehousing-functions-and-importance",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/warehousing/warehousing",
+      "destination": "/wassce/commerce/warehousing/warehousing-functions-and-importance",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/wholesale-trade/wholesale-operations-breaking-bulk-warehousing-and-distribution",
+      "destination": "/wassce/commerce/wholesale-trade/wholesale-trade-the-wholesalers-services",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/commerce/wholesale-trade/wholesale-trade",
+      "destination": "/wassce/commerce/wholesale-trade/wholesale-trade-the-wholesalers-services",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/mathematics/number-bases/number-bases",
+      "destination": "/wassce/mathematics/number-bases",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/equations-of-motion/advanced-applications(.*)-overtaking-and-chase-mechanics",
+      "destination": "/wassce/physics/equations-of-motion/the-equations-of-uniformly-accelerated-motion",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/equations-of-motion/equations-of-motion",
+      "destination": "/wassce/physics/equations-of-motion/the-equations-of-uniformly-accelerated-motion",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/equations-of-motion/graphical-derivations",
+      "destination": "/wassce/physics/equations-of-motion/the-equations-of-uniformly-accelerated-motion",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/equations-of-motion/the-displacement-average-velocity-equation",
+      "destination": "/wassce/physics/equations-of-motion/the-equations-of-uniformly-accelerated-motion",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/equations-of-motion/the-timeless-equation",
+      "destination": "/wassce/physics/equations-of-motion/the-equations-of-uniformly-accelerated-motion",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/equilibrium-of-forces/topic-9(.*)-equilibrium-of-forces",
+      "destination": "/wassce/physics/equilibrium-of-forces/equilibrium-of-forces-triangle-of-forces-and-lamis-theorem",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/measurement-and-errors/measurement-and-errors-instruments-accuracy-and-experimental-uncertainty",
+      "destination": "/wassce/physics/measurement-and-errors/measuring-length-metre-rule-vernier-calipers-and-micrometer-screw-gauge",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/motion-in-a-straight-line/acceleration",
+      "destination": "/wassce/physics/motion-in-a-straight-line/distance-displacement-speed-velocity-and-acceleration",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/motion-in-a-straight-line/graphical-analysis-of-linear-motion",
+      "destination": "/wassce/physics/motion-in-a-straight-line/distance-displacement-speed-velocity-and-acceleration",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/motion-in-a-straight-line/motion-in-a-straight-line-(.*)kinematics(.*)",
+      "destination": "/wassce/physics/motion-in-a-straight-line/distance-displacement-speed-velocity-and-acceleration",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/motion-in-a-straight-line/motion-in-a-straight-line-distance-displacement-speed-velocity-and-graphs",
+      "destination": "/wassce/physics/motion-in-a-straight-line/distance-displacement-speed-velocity-and-acceleration",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/motion-under-gravity/example-2(.*)-the-two-body-vertical-encounter-(.*)advanced-theory-section-b(.*)",
+      "destination": "/wassce/physics/motion-under-gravity/free-fall-bodies-dropped-and-thrown-upwards",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/motion-under-gravity/graphical-profiles-of-vertical-flight",
+      "destination": "/wassce/physics/motion-under-gravity/free-fall-bodies-dropped-and-thrown-upwards",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/motion-under-gravity/motion-under-gravity",
+      "destination": "/wassce/physics/motion-under-gravity/free-fall-bodies-dropped-and-thrown-upwards",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/newton-s-laws-of-motion/deeply-solved-multi-step-wassce-examples",
+      "destination": "/wassce/physics/newton-s-laws-of-motion/newtons-three-laws-of-motion-inertia-and-momentum",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/newton-s-laws-of-motion/newton(.*)s-laws-of-motion-(.*)dynamics(.*)",
+      "destination": "/wassce/physics/newton-s-laws-of-motion/newtons-three-laws-of-motion-inertia-and-momentum",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/physical-quantities-and-units/derived-quantities-and-units",
+      "destination": "/wassce/physics/physical-quantities-and-units/physical-quantities-si-units-and-prefixes",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/physical-quantities-and-units/dimensional-analysis",
+      "destination": "/wassce/physics/physical-quantities-and-units/physical-quantities-si-units-and-prefixes",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/physical-quantities-and-units/graphical-representation-and-notation",
+      "destination": "/wassce/physics/physical-quantities-and-units/physical-quantities-si-units-and-prefixes",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/physical-quantities-and-units/physical-quantities-and-units",
+      "destination": "/wassce/physics/physical-quantities-and-units/physical-quantities-si-units-and-prefixes",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/physical-quantities-and-units/prefix-multipliers-and-scientific-notation",
+      "destination": "/wassce/physics/physical-quantities-and-units/physical-quantities-si-units-and-prefixes",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/physical-quantities-and-units/standards-of-measurement-(.*)si-definitions(.*)",
+      "destination": "/wassce/physics/physical-quantities-and-units/physical-quantities-si-units-and-prefixes",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/projectile-motion/projectile-motion",
+      "destination": "/wassce/physics/projectile-motion/projectiles-horizontal-launch-time-of-flight-height-and-range",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/projectile-motion/the-mathematical-equation-of-the-trajectory",
+      "destination": "/wassce/physics/projectile-motion/projectiles-horizontal-launch-time-of-flight-height-and-range",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/scalars-and-vectors/relative-velocity",
+      "destination": "/wassce/physics/scalars-and-vectors/scalars-and-vectors-adding-and-resolving-vectors",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/scalars-and-vectors/scalar-quantities",
+      "destination": "/wassce/physics/scalars-and-vectors/scalars-and-vectors-adding-and-resolving-vectors",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/scalars-and-vectors/triangle-law-of-vector",
+      "destination": "/wassce/physics/scalars-and-vectors/scalars-and-vectors-adding-and-resolving-vectors",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/scalars-and-vectors/vector-addition-and-resolution",
+      "destination": "/wassce/physics/scalars-and-vectors/scalars-and-vectors-adding-and-resolving-vectors",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/physics/scalars-and-vectors/vector-quantities",
+      "destination": "/wassce/physics/scalars-and-vectors/scalars-and-vectors-adding-and-resolving-vectors",
+      "permanent": true
     }
   ],
   "rewrites": [
