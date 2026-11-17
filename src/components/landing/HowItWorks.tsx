@@ -4,7 +4,7 @@
 // it. The lesson snippet is from a real free lesson; the scores in the other
 // two are examples and say so.
 import { ArrowRight, Check, CircleCheck, CircleX } from 'lucide-react'
-import { Band, SectionHeading } from '@/components/public/Section'
+import { Band, Mark, SectionHeading } from '@/components/public/Section'
 
 /** The free lesson the first snapshot comes from. */
 const LESSON_HREF = '/wassce/mathematics/quadratic-equations/quadratic-equations-factorisation-completing-the-square-and-the-formula'
@@ -21,7 +21,7 @@ export function HowItWorks() {
       <SectionHeading
         id="method-heading"
         eyebrow="How it works"
-        title="Learn it. Practise it. Master it."
+        title={<>Learn it. Practise it. <Mark>Master it.</Mark></>}
         action={
           <a href={LESSON_HREF} className="site-link">
             Read a free lesson <ArrowRight className="h-4 w-4" aria-hidden />
@@ -31,13 +31,14 @@ export function HowItWorks() {
       <ol className="site-rail -mx-[var(--site-gutter)] mt-9 scroll-px-[var(--site-gutter)] px-[var(--site-gutter)] pb-2 md:mx-0 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0 lg:mt-12">
         {STEPS.map(({ title, body, Shot, example }, i) => (
           <li key={title} data-reveal={i} className="site-card w-[84%] shrink-0 overflow-hidden md:w-auto">
-            <div aria-hidden className="relative h-52 overflow-hidden bg-gradient-to-b from-brand-soft/70 to-brand-soft/20 px-5 pt-5">
+            <div aria-hidden className="relative h-52 overflow-hidden bg-gradient-to-b from-brand-soft to-brand-soft/30 px-5 pt-5 [background-image:radial-gradient(color-mix(in_srgb,var(--primary)_16%,transparent)_1px,transparent_1px)] [background-size:14px_14px]">
               {example && <span className="absolute right-3 top-3 z-10 rounded-full bg-white/90 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-slate-500 shadow-sm">Example</span>}
               <Shot />
             </div>
-            <div className="p-5">
-              <p className="text-xs font-bold uppercase tracking-[.14em] text-primary">Step {i + 1}</p>
-              <h3 className="site-h3 mt-1.5">{title}</h3>
+            <div className="relative p-5 pt-9">
+              <span aria-hidden className="absolute -top-6 left-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#7c4dff] to-[#4a25c4] text-lg font-extrabold text-white shadow-[0_12px_24px_-10px_rgba(76,37,196,.8)] ring-4 ring-[var(--card)]">{i + 1}</span>
+              <p className="sr-only">Step {i + 1}</p>
+              <h3 className="site-h3">{title}</h3>
               <p className="mt-1.5 text-[15px] leading-relaxed text-muted-foreground">{body}</p>
             </div>
           </li>

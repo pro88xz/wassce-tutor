@@ -66,3 +66,8 @@ export function SectionHeading({
     </div>
   )
 }
+
+/** A key word in a heading, with the highlighter stroke behind it. */
+export function Mark({ children }: { children: ReactNode }) {
+  return <span className="site-mark">{children}</span>
+}

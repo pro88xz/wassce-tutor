@@ -5,7 +5,7 @@
 // and the syllabus order. The band ends with who builds it: the founder, by
 // name, as on the About page.
 import { ArrowRight, Check, Moon, Sun } from 'lucide-react'
-import { Band, SectionHeading } from '@/components/public/Section'
+import { Band, Mark, SectionHeading } from '@/components/public/Section'
 
 const FEATURES = [
   { title: 'Built for your phone', body: 'Any phone browser, low-cost Androids, patchy data.', Visual: PhoneVisual },
@@ -18,7 +18,7 @@ export function LocalBand() {
   return (
     <Band labelledBy="local-heading">
       <div className="relative">
-        <SectionHeading id="local-heading" eyebrow="Made in Freetown" title="Built for how students here study." />
+        <SectionHeading id="local-heading" eyebrow="Made in Freetown" title={<>Built for how students <Mark>here study.</Mark></>} />
         <ul className="mt-9 grid grid-cols-2 gap-3 sm:gap-5 lg:mt-12 lg:grid-cols-4">
           {FEATURES.map(({ title, body, Visual }, i) => (
             <li key={title} data-reveal={i} className="site-card flex flex-col overflow-hidden">
