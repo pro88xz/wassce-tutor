@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Factors influencing the location of industries</title>
+<desc id="d">Industries are located where the best combination of factors is found: raw materials, power, labour, market, transport, capital, water supply, government policy, land and site, and early start (industrial inertia).</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="460" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Why industries are located where they are</text>
+<rect x="295.0" y="205.0" width="210.0" height="70.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="228.0" font-size="18" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">INDUSTRY</text>
+<text x="400.0" y="252.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">location</text>
+<rect x="25.0" y="59.0" width="210.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="130.0" y="79.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Raw materials</text>
+<text x="130.0" y="100.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">heavy, bulky inputs</text>
+<line x1="130.0" y1="127.0" x2="400.0" y2="199.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="295.0" y="49.0" width="210.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="69.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Power</text>
+<text x="400.0" y="90.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">electricity, fuel</text>
+<line x1="400.0" y1="117.0" x2="400.0" y2="199.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="565.0" y="59.0" width="210.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="670.0" y="79.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Labour</text>
+<text x="670.0" y="100.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">skilled and cheap</text>
+<line x1="670.0" y1="127.0" x2="400.0" y2="199.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="5.0" y="209.0" width="210.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="110.0" y="229.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Market</text>
+<text x="110.0" y="250.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">buyers nearby</text>
+<line x1="221.0" y1="240.0" x2="289.0" y2="240.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="585.0" y="209.0" width="210.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="690.0" y="229.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Transport</text>
+<text x="690.0" y="250.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ports, roads, rail</text>
+<line x1="579.0" y1="240.0" x2="511.0" y2="240.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="25.0" y="359.0" width="210.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="130.0" y="379.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Capital</text>
+<text x="130.0" y="400.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">money to invest</text>
+<line x1="130.0" y1="353.0" x2="400.0" y2="281.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="295.0" y="369.0" width="210.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="389.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Government policy</text>
+<text x="400.0" y="410.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">incentives, zones</text>
+<line x1="400.0" y1="363.0" x2="400.0" y2="281.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="565.0" y="359.0" width="210.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="670.0" y="379.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Water and land</text>
+<text x="670.0" y="400.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">flat, cheap sites</text>
+<line x1="670.0" y1="353.0" x2="400.0" y2="281.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+</svg>

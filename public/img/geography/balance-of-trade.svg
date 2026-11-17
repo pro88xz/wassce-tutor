@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Balance of trade</title>
+<desc id="d">The balance of trade is the difference between the value of a country&#x27;s visible exports and imports. When exports are worth more than imports, the country has a trade surplus (favourable balance); when imports are worth more, it has a trade deficit (unfavourable balance).</desc>
+<defs></defs>
+<rect width="800" height="400" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Balance of trade = value of exports − value of imports</text>
+<line x1="60.0" y1="330.0" x2="740.0" y2="330.0" stroke="#0f172a" stroke-width="1.5" stroke-linecap="round"/>
+<text x="220.0" y="80.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Exports &gt; imports</text>
+<rect x="130.0" y="110.0" width="70.0" height="220.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<rect x="240.0" y="180.0" width="70.0" height="150.0" rx="0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="165.0" y="350.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">exports</text>
+<text x="275.0" y="350.0" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">imports</text>
+<text x="220.0" y="380.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">trade surplus (favourable)</text>
+<text x="580.0" y="80.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Imports &gt; exports</text>
+<rect x="490.0" y="190.0" width="70.0" height="140.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<rect x="600.0" y="100.0" width="70.0" height="230.0" rx="0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="525.0" y="350.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">exports</text>
+<text x="635.0" y="350.0" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">imports</text>
+<text x="580.0" y="380.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">trade deficit (unfavourable)</text>
+</svg>

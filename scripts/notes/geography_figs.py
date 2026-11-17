@@ -874,6 +874,263 @@ def soil_profile():
     return s
 
 
+
+# ═══ G3: human and economic geography ════════════════════════════════════════
+
+@fig
+def population_pyramids():
+    s = Svg(800, 470, "Population pyramids of a developing and a developed country",
+            "A developing country's pyramid, like Sierra Leone's, has a wide base and narrow top: high birth rates, many "
+            "children and few old people. A developed country's pyramid has a narrow base and straighter sides: low birth "
+            "rates, long life expectancy and more old people.")
+    heading(s, "Wide base = young population; straight sides = ageing population")
+    groups = ["0–4", "5–9", "10–14", "15–19", "20–24", "25–29", "30–34", "35–39", "40–44", "45–49", "50–54", "55–59", "60–64", "65–69", "70–74", "75+"]
+    dev = [8.0, 7.2, 6.6, 6.0, 5.2, 4.4, 3.8, 3.2, 2.7, 2.2, 1.8, 1.4, 1.1, 0.8, 0.5, 0.4]
+    rich = [2.5, 2.6, 2.7, 2.8, 3.0, 3.2, 3.3, 3.4, 3.4, 3.4, 3.3, 3.2, 3.0, 2.8, 2.4, 3.6]
+    def pyramid(cx, data, title, sub):
+        s.text(cx, 74, title, size=17, weight="bold", color=INK)
+        s.text(cx, 94, sub, size=13, color=MUTED)
+        y0, bh, sc = 410, 19, 17
+        for k, v in enumerate(data):
+            y = y0 - (k + 1) * bh
+            s.rect(cx - v * sc, y, v * sc, bh - 2, fill="#93c5fd", stroke=BLUE, width=1)
+            s.rect(cx, y, v * sc, bh - 2, fill="#fbcfe8", stroke="#db2777", width=1)
+        s.line(cx, y0 - 16 * bh, cx, y0, color=INK, width=1.5)
+        s.text(cx - 70, y0 + 18, "males", size=13, color=BLUE)
+        s.text(cx + 70, y0 + 18, "females", size=13, color="#db2777")
+    pyramid(220, dev, "Developing country", "e.g. Sierra Leone: high births, young")
+    pyramid(600, rich, "Developed country", "e.g. Japan or Germany: low births, ageing")
+    for k, g in enumerate(groups):
+        if k % 3 == 0:
+            s.text(410, 410 - (k + 0.5) * 19, g, size=11, color=MUTED)
+    s.text(410, 120, "age", size=12, color=MUTED)
+    note(s, "Shapes are illustrative, not exact census data.", 455, size=13)
+    return s
+
+
+@fig
+def settlement_patterns():
+    s = Svg(800, 400, "Nucleated, dispersed and linear settlement patterns",
+            "In a nucleated settlement, houses are clustered closely around a centre such as a market, water point or "
+            "crossroads. In a dispersed settlement, houses are scattered far apart across farmland. In a linear settlement, "
+            "houses are built in a line along a road, river, railway or coast.")
+    heading(s, "How houses are arranged")
+    import random
+    rnd = random.Random(4)
+    def house(x, y, col=BROWN):
+        s.rect(x - 6, y - 4, 12, 9, fill="#fde68a", stroke=col, width=1.4)
+        s.polygon([(x - 8, y - 4), (x, y - 11), (x + 8, y - 4)], fill="#b45309", stroke=col, width=1)
+    for cx, title, sub in ((140, "Nucleated", "clustered around a centre"), (400, "Dispersed", "scattered over farmland"), (660, "Linear", "along a road, river or coast")):
+        s.rect(cx - 115, 70, 230, 230, fill="#ecfccb", stroke=MUTED, width=1.5, rx=8)
+        s.text(cx, 330, title, size=18, weight="bold", color=INK)
+        s.text(cx, 352, sub, size=13, color=MUTED)
+    s.line(25, 180, 255, 190, color="#a8a29e", width=5)
+    s.line(140, 70, 145, 300, color="#a8a29e", width=5)
+    s.circle(142, 185, 10, fill=F_AMBER, stroke=ORANGE, width=2)
+    for k in range(26):
+        a, r = rnd.uniform(0, 6.28), rnd.uniform(16, 60)
+        house(142 + r * math.cos(a), 185 + r * math.sin(a))
+    for k in range(9):
+        house(rnd.uniform(300, 500), rnd.uniform(90, 285))
+    s.line(545, 190, 775, 160, color="#a8a29e", width=6)
+    for k in range(12):
+        x = 560 + k * 18
+        y = 190 - (x - 545) * 30 / 230
+        house(x, y - 14)
+        house(x + 8, y + 14)
+    return s
+
+
+@fig
+def urban_land_use():
+    s = Svg(800, 470, "Land-use zones in a city",
+            "A simple model of a city has the central business district (CBD) at the centre, with shops, offices and banks; "
+            "around it a zone of mixed land use and older, crowded housing; then residential zones, with low-cost housing "
+            "and informal settlements in some places and high-cost housing in others; industry along transport routes and "
+            "at the port; and the rural–urban fringe at the edge.")
+    heading(s, "From the CBD to the rural–urban fringe")
+    cx, cy = 300, 260
+    zones = [(190, "#dcfce7", "rural–urban fringe"), (150, "#e0e7ff", "high- and low-cost housing"),
+             (105, "#fef3c7", "older, crowded housing; informal settlements"), (60, "#fed7aa", "transition: mixed use"),
+             (28, "#fca5a5", "CBD")]
+    for r, col, _ in zones:
+        s.circle(cx, cy, r, fill=col, stroke=INK, width=1.5)
+    s.text(cx, cy, "CBD", size=15, weight="bold", color=INK)
+    s.rect(cx + 40, cy - 190, 34, 380, fill="#cbd5e1", stroke="none", width=0)
+    s.text(cx + 57, cy - 150, "industry", size=11, color=INK)
+    keys = [("CBD", "#fca5a5", "shops, offices, banks; dearest land"),
+            ("Transition zone", "#fed7aa", "workshops, warehouses, old houses"),
+            ("Inner residential", "#fef3c7", "crowded and informal housing"),
+            ("Outer residential", "#e0e7ff", "newer housing; high-cost estates"),
+            ("Industrial zone", "#cbd5e1", "along roads, rail and the port"),
+            ("Rural–urban fringe", "#dcfce7", "farms, new building, sprawl")]
+    for k, (t, col, d) in enumerate(keys):
+        y = 110 + k * 54
+        s.rect(510, y - 14, 26, 26, fill=col, stroke=INK, width=1.2)
+        s.text(546, y - 4, t, size=15, weight="bold", color=INK, anchor="start")
+        s.text(546, y + 14, d, size=13, color=MUTED, anchor="start")
+    note(s, "Real cities, like Freetown squeezed between sea and mountains, bend this model to their site.", 458, size=13)
+    return s
+
+
+@fig
+def mining_methods():
+    s = Svg(800, 440, "Methods of mining",
+            "Open-cast (surface) mining removes the overburden and digs minerals from a large open pit, as for iron ore and "
+            "bauxite. Underground (shaft) mining reaches deep deposits through vertical shafts and horizontal tunnels, as "
+            "for gold and some diamonds. Alluvial (placer) mining recovers minerals from river gravels by digging, washing "
+            "and sieving, or by dredging, as for alluvial diamonds, gold and rutile.")
+    heading(s, "Open-cast, underground and alluvial mining")
+    # open cast
+    s.rect(20, 140, 240, 220, fill=LAND, stroke=INK, width=1.5)
+    s.polygon([(40, 140), (90, 200), (190, 200), (240, 140)], fill="#ffffff", stroke=INK, width=1.5)
+    s.polygon([(90, 200), (110, 230), (170, 230), (190, 200)], fill="#ffffff", stroke=INK, width=1.5)
+    s.rect(110, 230, 60, 30, fill="#b91c1c", stroke=INK, width=1.2)
+    s.text(140, 290, "ore body", size=12, color=INK)
+    s.text(140, 390, "Open-cast (surface)", size=16, weight="bold", color=INK)
+    s.text(140, 410, "iron ore, bauxite", size=13, color=MUTED)
+    # underground
+    s.rect(290, 140, 220, 220, fill=LAND, stroke=INK, width=1.5)
+    s.rect(330, 140, 16, 190, fill="#ffffff", stroke=INK, width=1.5)
+    s.rect(346, 220, 130, 14, fill="#ffffff", stroke=INK, width=1.5)
+    s.rect(346, 300, 150, 14, fill="#ffffff", stroke=INK, width=1.5)
+    s.rect(440, 250, 60, 40, fill="#facc15", stroke=INK, width=1.2)
+    s.polygon([(320, 140), (338, 100), (356, 140)], fill="#78716c", stroke=INK, width=1.5)
+    s.text(470, 274, "ore", size=12, color=INK)
+    s.text(400, 390, "Underground (shaft)", size=16, weight="bold", color=INK)
+    s.text(400, 410, "gold, deep diamonds", size=13, color=MUTED)
+    # alluvial
+    s.rect(540, 230, 240, 130, fill=LAND, stroke=INK, width=1.5)
+    s.path("M 540 230 Q 660 260 780 230 L 780 250 Q 660 280 540 250 Z", color=BLUE, width=1.5, fill=SEA)
+    for k in range(10):
+        s.dot(560 + k * 22, 300 + (k % 3) * 12, r=4, color="#78716c")
+    s.dot(620, 312, r=4, color="#ffffff")
+    s.circle(700, 180, 26, fill="#e5e7eb", stroke=INK, width=1.5)
+    s.text(700, 180, "sieve", size=11, color=INK)
+    s.text(660, 390, "Alluvial (placer)", size=16, weight="bold", color=INK)
+    s.text(660, 410, "diamonds, gold, rutile", size=13, color=MUTED)
+    s.text(660, 330, "gravel with minerals", size=12, color=INK)
+    return s
+
+
+@fig
+def industry_location():
+    s = Svg(800, 460, "Factors influencing the location of industries",
+            "Industries are located where the best combination of factors is found: raw materials, power, labour, market, "
+            "transport, capital, water supply, government policy, land and site, and early start (industrial inertia).")
+    heading(s, "Why industries are located where they are")
+    c = box(s, 400, 240, 210, 70, ["INDUSTRY", "location"], col=PURPLE, fill=F_PURPLE, size=18)
+    items = [(130, 90, "Raw materials", "heavy, bulky inputs"), (400, 80, "Power", "electricity, fuel"),
+             (670, 90, "Labour", "skilled and cheap"), (110, 240, "Market", "buyers nearby"),
+             (690, 240, "Transport", "ports, roads, rail"), (130, 390, "Capital", "money to invest"),
+             (400, 400, "Government policy", "incentives, zones"), (670, 390, "Water and land", "flat, cheap sites")]
+    for x, y, a, b in items:
+        bb = box(s, x, y, 210, 62, [a, b], col=BLUE, fill=F_BLUE, size=15)
+        link(s, bb, c, color=MUTED, width=1.8)
+    return s
+
+
+@fig
+def hydro_dam():
+    s = Svg(800, 420, "How a hydroelectric power station works",
+            "Water stored in a reservoir behind a dam flows down through a pipe (penstock), spinning a turbine connected to a "
+            "generator, which produces electricity. The electricity is stepped up by transformers and carried away on power "
+            "lines, and the water flows on downstream.")
+    heading(s, "Falling water → turbine → generator → electricity")
+    s.rect(0, 340, 800, 80, fill=LAND, stroke="none", width=0)
+    s.polygon([(0, 150), (300, 150), (300, 340), (0, 340)], fill=SEA, stroke="none", width=0)
+    s.polygon([(300, 110), (360, 110), (420, 340), (300, 340)], fill="#9ca3af", stroke=INK, width=2)
+    s.text(150, 200, "reservoir", size=17, weight="bold", color="#1e3a8a")
+    s.path("M 300 260 L 430 320", color=BLUE, width=14)
+    s.text(372, 270, "penstock", size=12, weight="bold", color="#ffffff")
+    s.rect(430, 290, 110, 50, fill="#e5e7eb", stroke=INK, width=2)
+    s.circle(462, 315, 16, fill="#fde68a", stroke=INK, width=1.5)
+    s.text(462, 315, "T", size=13, weight="bold")
+    s.circle(510, 315, 16, fill="#fca5a5", stroke=INK, width=1.5)
+    s.text(510, 315, "G", size=13, weight="bold")
+    s.text(485, 275, "power station", size=13, weight="bold", color=INK)
+    s.path("M 540 330 Q 650 345 800 335", color=BLUE, width=10)
+    s.text(690, 370, "river flows on", size=13, color="#1e3a8a")
+    s.line(600, 180, 600, 300, color=INK, width=3)
+    s.line(580, 190, 620, 190, color=INK, width=2.5)
+    s.line(700, 160, 700, 300, color=INK, width=3)
+    s.line(680, 170, 720, 170, color=INK, width=2.5)
+    s.path("M 580 190 Q 640 205 680 170 M 620 190 Q 660 205 720 170", color=ORANGE, width=1.5)
+    s.text(650, 140, "power lines", size=13, weight="bold", color=ORANGE)
+    s.text(462, 360, "T = turbine, G = generator", size=12, color=MUTED)
+    return s
+
+
+@fig
+def transport_cost_speed():
+    s = Svg(800, 440, "Comparing transport modes by speed and cost",
+            "Air transport is the fastest but most expensive per tonne. Road transport is flexible and fairly fast over short "
+            "distances. Rail is cheaper for heavy, bulky goods over long distances. Water (sea and river) transport is the "
+            "slowest but the cheapest for bulky goods. Pipelines carry liquids and gas cheaply once built.")
+    heading(s, "Fast and dear, or slow and cheap?")
+    ox, oy, w, h = 120, 380, 600, 290
+    s.arrow(ox, oy, ox + w + 20, oy, color=INK, width=2)
+    s.arrow(ox, oy, ox, oy - h - 20, color=INK, width=2)
+    s.text(ox + w - 40, oy + 22, "speed →", size=15, weight="bold", color=INK)
+    s.text(ox - 60, oy - h / 2 - 10, "cost per", size=14, weight="bold", color=INK)
+    s.text(ox - 60, oy - h / 2 + 10, "tonne →", size=14, weight="bold", color=INK)
+    pts = [(170, 350, "Water (sea, river)", BLUE, 150, 300), (260, 330, "Pipeline", TEAL, 290, 350), (330, 280, "Rail", PURPLE, 354, 256),
+           (470, 220, "Road", ORANGE, 494, 196), (660, 110, "Air", RED, 684, 86)]
+    for x, y, t, col, lx, ly in pts:
+        s.circle(x, y, 18, fill=col, stroke=INK, width=1.5)
+        s.label(lx, ly, t, size=15, color=col, weight="bold", anchor="start")
+    note(s, "Bulky goods (iron ore, bauxite) go by rail and sea; urgent, light goods go by air.", 425, size=14, color=INK)
+    return s
+
+
+@fig
+def balance_of_trade():
+    s = Svg(800, 400, "Balance of trade",
+            "The balance of trade is the difference between the value of a country's visible exports and imports. When "
+            "exports are worth more than imports, the country has a trade surplus (favourable balance); when imports are "
+            "worth more, it has a trade deficit (unfavourable balance).")
+    heading(s, "Balance of trade = value of exports − value of imports")
+    def pair(cx, ex, im, title, col, verdict):
+        s.text(cx, 80, title, size=17, weight="bold", color=INK)
+        s.rect(cx - 90, 330 - ex, 70, ex, fill=F_GREEN, stroke=GREEN, width=2)
+        s.rect(cx + 20, 330 - im, 70, im, fill=F_RED, stroke=RED, width=2)
+        s.text(cx - 55, 350, "exports", size=13, color=GREEN, weight="bold")
+        s.text(cx + 55, 350, "imports", size=13, color=RED, weight="bold")
+        s.text(cx, 380, verdict, size=16, weight="bold", color=col)
+    s.line(60, 330, 740, 330, color=INK, width=1.5)
+    pair(220, 220, 150, "Exports > imports", GREEN, "trade surplus (favourable)")
+    pair(580, 140, 230, "Imports > exports", RED, "trade deficit (unfavourable)")
+    return s
+
+
+@fig
+def greenhouse_effect():
+    s = Svg(800, 440, "The greenhouse effect and global warming",
+            "Sunlight passes through the atmosphere and warms the Earth. The Earth gives off heat (infrared), and greenhouse "
+            "gases such as carbon dioxide, methane and water vapour trap some of it, keeping the planet warm. Burning fossil "
+            "fuels and cutting forests add more greenhouse gases, trapping more heat and causing global warming.")
+    heading(s, "More greenhouse gases trap more heat")
+    s.circle(80, 100, 40, fill="#fde68a", stroke=ORANGE, width=3)
+    s.text(80, 100, "Sun", size=16, weight="bold", color=ORANGE)
+    s.path("M 0 330 Q 400 280 800 330 L 800 440 L 0 440 Z", color=INK, width=2, fill="#86efac")
+    s.path("M 0 170 Q 400 110 800 170", color="#94a3b8", width=14)
+    s.text(620, 125, "greenhouse gases (CO₂, methane)", size=14, weight="bold", color=MUTED)
+    arrow(s, 120, 130, 330, 300, color=ORANGE, width=3)
+    s.text(200, 250, "sunlight in", size=14, weight="bold", color=ORANGE)
+    arrow(s, 380, 300, 450, 175, color=RED, width=3)
+    arrow(s, 450, 175, 510, 290, color=RED, width=3)
+    s.text(530, 240, "heat trapped and", size=14, weight="bold", color=RED, anchor="start")
+    s.text(530, 258, "sent back down", size=14, weight="bold", color=RED, anchor="start")
+    arrow(s, 300, 290, 260, 60, color="#f97316", width=2)
+    s.text(272, 52, "some heat escapes", size=13, color=MUTED, anchor="start")
+    s.rect(640, 300, 30, 40, fill="#6b7280", stroke=INK, width=1.5)
+    for k in range(3):
+        s.circle(655 + k * 8, 285 - k * 14, 8 + k * 2, fill="#d1d5db", stroke=MUTED, width=1)
+    s.text(655, 380, "burning fuel", size=13, weight="bold", color=INK)
+    s.text(140, 380, "deforestation adds CO₂", size=13, weight="bold", color=INK)
+    return s
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:

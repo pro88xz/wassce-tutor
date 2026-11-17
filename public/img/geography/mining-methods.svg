@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Methods of mining</title>
+<desc id="d">Open-cast (surface) mining removes the overburden and digs minerals from a large open pit, as for iron ore and bauxite. Underground (shaft) mining reaches deep deposits through vertical shafts and horizontal tunnels, as for gold and some diamonds. Alluvial (placer) mining recovers minerals from river gravels by digging, washing and sieving, or by dredging, as for alluvial diamonds, gold and rutile.</desc>
+<defs></defs>
+<rect width="800" height="440" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Open-cast, underground and alluvial mining</text>
+<rect x="20.0" y="140.0" width="240.0" height="220.0" rx="0" fill="#d9c49a" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="40.0,140.0 90.0,200.0 190.0,200.0 240.0,140.0" fill="#ffffff" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="90.0,200.0 110.0,230.0 170.0,230.0 190.0,200.0" fill="#ffffff" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="110.0" y="230.0" width="60.0" height="30.0" rx="0" fill="#b91c1c" stroke="#0f172a" stroke-width="1.2"/>
+<text x="140.0" y="290.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ore body</text>
+<text x="140.0" y="390.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Open-cast (surface)</text>
+<text x="140.0" y="410.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">iron ore, bauxite</text>
+<rect x="290.0" y="140.0" width="220.0" height="220.0" rx="0" fill="#d9c49a" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="330.0" y="140.0" width="16.0" height="190.0" rx="0" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="346.0" y="220.0" width="130.0" height="14.0" rx="0" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="346.0" y="300.0" width="150.0" height="14.0" rx="0" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="440.0" y="250.0" width="60.0" height="40.0" rx="0" fill="#facc15" stroke="#0f172a" stroke-width="1.2"/>
+<polygon points="320.0,140.0 338.0,100.0 356.0,140.0" fill="#78716c" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="470.0" y="274.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ore</text>
+<text x="400.0" y="390.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Underground (shaft)</text>
+<text x="400.0" y="410.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">gold, deep diamonds</text>
+<rect x="540.0" y="230.0" width="240.0" height="130.0" rx="0" fill="#d9c49a" stroke="#0f172a" stroke-width="1.5"/>
+<path d="M 540 230 Q 660 260 780 230 L 780 250 Q 660 280 540 250 Z" stroke="#2563eb" stroke-width="1.5" fill="#93c5fd" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="560.0" cy="300.0" r="4.0" fill="#78716c" stroke="#78716c" stroke-width="1"/>
+<circle cx="582.0" cy="312.0" r="4.0" fill="#78716c" stroke="#78716c" stroke-width="1"/>
+<circle cx="604.0" cy="324.0" r="4.0" fill="#78716c" stroke="#78716c" stroke-width="1"/>
+<circle cx="626.0" cy="300.0" r="4.0" fill="#78716c" stroke="#78716c" stroke-width="1"/>
+<circle cx="648.0" cy="312.0" r="4.0" fill="#78716c" stroke="#78716c" stroke-width="1"/>
+<circle cx="670.0" cy="324.0" r="4.0" fill="#78716c" stroke="#78716c" stroke-width="1"/>
+<circle cx="692.0" cy="300.0" r="4.0" fill="#78716c" stroke="#78716c" stroke-width="1"/>
+<circle cx="714.0" cy="312.0" r="4.0" fill="#78716c" stroke="#78716c" stroke-width="1"/>
+<circle cx="736.0" cy="324.0" r="4.0" fill="#78716c" stroke="#78716c" stroke-width="1"/>
+<circle cx="758.0" cy="300.0" r="4.0" fill="#78716c" stroke="#78716c" stroke-width="1"/>
+<circle cx="620.0" cy="312.0" r="4.0" fill="#ffffff" stroke="#ffffff" stroke-width="1"/>
+<circle cx="700.0" cy="180.0" r="26.0" fill="#e5e7eb" stroke="#0f172a" stroke-width="1.5"/>
+<text x="700.0" y="180.0" font-size="11" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sieve</text>
+<text x="660.0" y="390.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Alluvial (placer)</text>
+<text x="660.0" y="410.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">diamonds, gold, rutile</text>
+<text x="660.0" y="330.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">gravel with minerals</text>
+</svg>
