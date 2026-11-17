@@ -27,7 +27,11 @@ export function totals(outlines: (LessonOutline | undefined)[]): OutlineTotals {
   )
 }
 
-const plural = (n: number, one: string, many = `${one}s`) => `${n} ${n === 1 ? one : many}`
+/** "1 diagram", "3 worked examples". */
+export const plural = (n: number, one: string, many = `${one}s`) => `${n} ${n === 1 ? one : many}`
+
+/** Lesson headings that are exercises or answers, not something a topic teaches ("What you'll learn" leaves them out). */
+export const NOT_TAUGHT = /^(practice|check your understanding|answers?\b|try it yourself|exercises?\b|test yourself|self-assessment)/i
 
 /** "5 sections · 3 worked examples · 2 diagrams", leaving out zeros. */
 export function describeTotals(t: OutlineTotals, withSections = true): string[] {

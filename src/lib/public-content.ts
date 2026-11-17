@@ -200,6 +200,12 @@ export type TopicPageData = {
   group: TopicGroup
   previous: TopicWithLessons | null
   next: TopicWithLessons | null
+  /**
+   * Each topic page's position in the subject, in syllabus order: the index
+   * TopicCover cycles its colour by, the same as on the homepage course rows,
+   * so a topic's cover is the same colour wherever it appears.
+   */
+  coverIndex: Record<string, number>
 }
 
 /** Everything for /wassce/{subject}/{topic}; null unless the topic exists and has lessons. */
@@ -220,6 +226,7 @@ export async function fetchTopicPage(subjectSlug: string, topicSlug: string): Pr
     group: groups.find((g) => g.topics.includes(topic))!,
     previous: withPages[pos - 1] ?? null,
     next: withPages[pos + 1] ?? null,
+    coverIndex: Object.fromEntries(withPages.map((t, i) => [t.id, i])),
   }
 }
 
