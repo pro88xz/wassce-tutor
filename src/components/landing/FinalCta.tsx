@@ -10,7 +10,7 @@ export function FinalCta() {
           <span aria-hidden className="absolute -right-16 -top-16 -z-10 h-64 w-64 rounded-full border-[28px] border-white/10" />
           <span aria-hidden className="absolute -bottom-10 -left-10 -z-10 h-40 w-40 rounded-full bg-[#ffd166]/90" />
           <div className="relative mx-auto max-w-2xl">
-            <h2 id="final-cta-heading" className="site-h2">Your WASSCE is closer than you think.</h2>
+            <h2 id="final-cta-heading" className="site-h2">Your WASSCE is <span className="site-mark">closer than you think.</span></h2>
             <p className="mx-auto mt-4 max-w-xl text-[17px] leading-relaxed text-white/80">Start with one topic today. It takes about a minute to set up your subjects and open your first lesson.</p>
             <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
               <Link to="/auth" className="site-btn site-btn-lg site-btn-light">
