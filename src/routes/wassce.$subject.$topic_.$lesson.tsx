@@ -125,7 +125,7 @@ function PublicLessonPage() {
       </header>
 
       {/* Definition boxes link to the topic's key terms (made from them), when it has a page. */}
-      <KeyTermsLink.Provider value={keyTermCount > 0 ? keyTermsPath(subject.slug, topic.slug) : null}>
+      <KeyTermsLink.Provider value={keyTermCount > 0 ? { href: keyTermsPath(subject.slug, topic.slug) } : null}>
         <PrerenderedLesson
           id={`lesson-${lesson.id}`}
           content={lesson.content}

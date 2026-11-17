@@ -51,6 +51,7 @@ import { Button } from '@/components/ui/button'
 import { UpdateBanner } from '@/components/UpdateBanner'
 import { SubjectCover } from '@/components/ds/SubjectCover'
 import { StudentTutorBookings } from '@/components/dashboard/StudentTutorBookings'
+import { KeyTermsNudge } from '@/components/dashboard/KeyTermsNudge'
 import { ReviewPrompt } from '@/components/dashboard/ReviewPrompt'
 
 type Located = { lesson: CurriculumLesson; topic: CurriculumTopic; subject: SubjectRef }
@@ -178,6 +179,12 @@ export function Dashboard({ user, profile }: { user: User; profile: Profile | nu
           {started && (
             <>
               <div className={`order-2 ${SLOT}`}><TodayPlan summary={summary} completed={completed} where={where} /></div>
+              {/* Key terms of the topic being studied, once a lesson in it is done. */}
+              {summary.next && (summary.subjects.find((x) => x.subject.id === summary.next!.subject.id)?.topics.find((t) => t.topic.id === summary.next!.topic.id)?.done ?? 0) > 0 && (
+                <div className={`order-4 ${SLOT}`}>
+                  <KeyTermsNudge userId={user.id} topic={summary.next.topic} subjectSlug={summary.next.subject.slug} />
+                </div>
+              )}
               <div className={`order-4 ${SLOT}`}><Recommended summary={summary} papers={papers.data ?? []} /></div>
             </>
           )}

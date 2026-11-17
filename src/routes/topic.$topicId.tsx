@@ -1,12 +1,13 @@
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
 import { useQuery } from '@tanstack/react-query'
-import { ArrowRight, ChevronRight, CircleCheck, Clock, RotateCcw } from 'lucide-react'
+import { ArrowRight, ChevronRight, CircleCheck, Clock, Layers, RotateCcw } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { useAccess } from '@/lib/useAccess'
 import { paperLocked } from '@/lib/access'
 import { useAuth } from '@/lib/auth'
 import { usePapers, useSubject, useTopic } from '@/lib/queries'
 import { useCompletedLessons, useScoredAttempts } from '@/lib/progress'
+import { knownCount, useKeyTermMarks, useTopicKeyTerms } from '@/lib/key-term-progress'
 import { bestByPaper, latestByPaper, setForTopic } from '@/lib/papers'
 import { PracticeSetRow } from '@/components/ds/PracticeSetRow'
 import { Button } from '@/components/ui/button'
@@ -31,6 +32,8 @@ function TopicPage() {
   const { palette } = subjectTheme(subject?.slug)
   const { data: papers } = usePapers(data?.topic.subject_id ?? null)
   const { data: attempts } = useScoredAttempts(user?.id ?? null)
+  const { data: keyTerms } = useTopicKeyTerms(topicId)
+  const { data: marks } = useKeyTermMarks(user?.id ?? null)
   const { access } = useAccess()
   const { data: outlines } = useQuery({
     queryKey: ['lesson-outlines', subject?.slug],
@@ -167,6 +170,37 @@ function TopicPage() {
             </ol>
           )}
         </section>
+
+        {keyTerms && keyTerms.length > 0 && (
+          <section className="space-y-3" aria-labelledby="terms-title">
+            <div>
+              <h2 id="terms-title" className="text-lg font-bold tracking-tight">Key terms</h2>
+              <p className="text-sm text-muted-foreground">The definitions from the lessons. Say what each one means, then check.</p>
+            </div>
+            <Link
+              to="/topic/$topicId/terms"
+              params={{ topicId }}
+              className="flex min-h-16 items-center gap-3 rounded-2xl border bg-card px-4 py-3 transition-colors hover:bg-muted/50"
+            >
+              <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl ${palette.soft} ${palette.text}`}>
+                <Layers className="h-5 w-5" aria-hidden />
+              </span>
+              <span className="min-w-0 flex-1">
+                <span className="block font-semibold">
+                  {knownCount(keyTerms, marks) === keyTerms.length
+                    ? `All ${keyTerms.length} key terms known`
+                    : knownCount(keyTerms, marks) > 0
+                      ? `${keyTerms.length - knownCount(keyTerms, marks)} of ${keyTerms.length} key terms to revise`
+                      : `Revise ${keyTerms.length} key terms`}
+                </span>
+                <span className="mt-1.5 block">
+                  <ProgressBar value={knownCount(keyTerms, marks)} max={keyTerms.length} fill={palette.bar} size="sm" label={`${knownCount(keyTerms, marks)} of ${keyTerms.length} key terms known`} />
+                </span>
+              </span>
+              <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground" aria-hidden />
+            </Link>
+          </section>
+        )}
 
         {practice && (
           <section className="space-y-3" aria-labelledby="practice-title">
