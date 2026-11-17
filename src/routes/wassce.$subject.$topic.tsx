@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
-import { ArrowLeft, ArrowRight } from 'lucide-react'
+import { ArrowLeft, ArrowRight, ListChecks } from 'lucide-react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { CourseHero, type HeroStat } from '@/components/public/CourseHero'
 import { HERO_BTN, studyTime } from '@/lib/study-time'
@@ -7,7 +7,7 @@ import { StartCta } from '@/components/public/StartCta'
 import { TopicCard } from '@/components/public/TopicCard'
 import { useAuth } from '@/lib/auth'
 import { hasPractice } from '@/lib/practice-counts'
-import { fetchTopicPage, hasTopicPage, lessonMinutes, lessonPath, subjectPath, topicPath } from '@/lib/public-content'
+import { fetchTopicPage, hasTopicPage, lessonMinutes, lessonPath, questionsPath, subjectPath, topicPath, topicQuestionCount } from '@/lib/public-content'
 import type { TopicPageData } from '@/lib/public-content'
 import { SEARCH_COPY, brandedTitle, breadcrumbJsonLd, fitDescription, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { subjectTheme } from '@/lib/subject-theme'
@@ -48,7 +48,9 @@ export const Route = createFileRoute('/wassce/$subject/$topic')({
       const o = all[outlineKey(data.topic.slug, l.slug)]
       if (o) outlines[l.slug] = o
     }
-    return { ...data, outlines }
+    // Practice questions with answers: the topic's own questions page, when it has one.
+    const questionCount = await topicQuestionCount(data.topic.id)
+    return { ...data, outlines, questionCount }
   },
   head: ({ loaderData: data }) => {
     if (!data) return privatePageTags('Page not found')
@@ -70,7 +72,7 @@ const MORE_TOPICS = 4
 
 function TopicPage() {
   const data = Route.useLoaderData()
-  const { subject, topic, group, previous, next, outlines } = data
+  const { subject, topic, group, previous, next, outlines, questionCount } = data
   const { user } = useAuth()
   const { palette } = subjectTheme(subject.slug)
   const minutes = lessonMinutes(topic.lessons)
@@ -88,7 +90,7 @@ function TopicPage() {
   const stats: HeroStat[] = [
     { value: String(count), label: count === 1 ? 'lesson' : 'lessons' },
     ...(minutes > 0 ? [{ value: studyTime(minutes), label: 'of study' }] : []),
-    ...(count > 0 ? [{ value: 'Free', label: 'every lesson' }] : []),
+    ...(questionCount > 0 ? [{ value: String(questionCount), label: 'practice questions' }] : count > 0 ? [{ value: 'Free', label: 'every lesson' }] : []),
   ]
 
   return (
@@ -183,6 +185,19 @@ function TopicPage() {
           })}
         </ol>
       </section>
+
+      {questionCount > 0 && (
+        <a href={questionsPath(subject.slug, topic.slug)} className="site-card group flex items-center gap-4 p-5 transition-colors hover:border-primary/40 sm:p-6">
+          <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl ${palette.soft} ${palette.text}`}>
+            <ListChecks className="h-6 w-6" aria-hidden />
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-lg font-bold leading-snug group-hover:text-primary">{topic.name}: {questionCount} WASSCE questions with answers</span>
+            <span className="mt-1 block text-sm text-muted-foreground">Objective questions with the full working and why each wrong option is wrong. Free.</span>
+          </span>
+          <ArrowRight className="h-5 w-5 shrink-0 text-primary transition-transform group-hover:translate-x-1" aria-hidden />
+        </a>
+      )}
 
       <WaecPastPapers subjectSlug={subject.slug} subjectName={subject.name} />
 

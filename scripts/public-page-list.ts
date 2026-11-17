@@ -2,18 +2,28 @@
 // Used by vite.config.ts to tell TanStack Start what to prerender. Reads the
 // same public tables/views as src/lib/public-content.ts, over plain REST with
 // the publishable key, and applies the same rules (src/lib/public-rules.ts).
-import { hasSubjectPage, hasTopicPageByCount, lessonPath, subjectPath, topicPath, tutorsPath } from '../src/lib/public-rules'
+import { hasQuestionsPageByCount, hasSubjectPage, hasTopicPageByCount, lessonPath, questionsPath, subjectPath, topicPath, tutorsPath } from '../src/lib/public-rules'
 
 export type PageEntry = { path: string; lastmod: string }
 
 type Row = Record<string, string>
 
+// The API returns at most 1,000 rows per request (Supabase's default), so
+// read every table a page at a time: more than 1,000 lessons or questions
+// must never silently drop pages from the sitemap.
+const PAGE = 1000
+
 async function get(url: string, key: string, table: string, select: string): Promise<Row[]> {
-  const res = await fetch(`${url}/rest/v1/${table}?select=${select}`, {
-    headers: { apikey: key, Authorization: `Bearer ${key}`, Range: '0-9999' },
-  })
-  if (!res.ok) throw new Error(`[public-page-list] ${table}: HTTP ${res.status} ${await res.text()}`)
-  return res.json() as Promise<Row[]>
+  const rows: Row[] = []
+  for (let from = 0; ; from += PAGE) {
+    const res = await fetch(`${url}/rest/v1/${table}?select=${select}&order=id`, {
+      headers: { apikey: key, Authorization: `Bearer ${key}`, Range: `${from}-${from + PAGE - 1}` },
+    })
+    if (!res.ok) throw new Error(`[public-page-list] ${table}: HTTP ${res.status} ${await res.text()}`)
+    const page = (await res.json()) as Row[]
+    rows.push(...page)
+    if (page.length < PAGE) return rows
+  }
 }
 
 const day = (iso: string) => iso.slice(0, 10)
@@ -23,12 +33,20 @@ export async function publicPageList(supabaseUrl: string, publishableKey: string
   if (!supabaseUrl || !publishableKey) {
     throw new Error('[public-page-list] VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY must be set to build the public pages')
   }
-  const [subjects, topics, lessons, publicLessons] = await Promise.all([
+  const [subjects, topics, lessons, publicLessons, questions] = await Promise.all([
     get(supabaseUrl, publishableKey, 'subjects', 'id,slug,updated_at'),
     get(supabaseUrl, publishableKey, 'topics', 'id,subject_id,slug,updated_at'),
-    get(supabaseUrl, publishableKey, 'wassce_lesson_index', 'topic_id,updated_at'),
-    get(supabaseUrl, publishableKey, 'wassce_public_lessons', 'topic_id,slug,updated_at'),
+    get(supabaseUrl, publishableKey, 'wassce_lesson_index', 'id,topic_id,updated_at'),
+    get(supabaseUrl, publishableKey, 'wassce_public_lessons', 'id,topic_id,slug,updated_at'),
+    get(supabaseUrl, publishableKey, 'wassce_public_questions', 'id,topic_id,updated_at'),
   ])
+
+  // Practice questions per topic (all public since migration 22).
+  const questionDates = new Map<string, string[]>()
+  for (const q of questions) {
+    if (!questionDates.has(q.topic_id)) questionDates.set(q.topic_id, [])
+    questionDates.get(q.topic_id)!.push(q.updated_at)
+  }
 
   const lessonDates = new Map<string, string[]>()
   for (const l of lessons) {
@@ -47,14 +65,23 @@ export async function publicPageList(supabaseUrl: string, publishableKey: string
     pages.push({ path: subjectPath(s.slug), lastmod: subjectLastmod })
     // Book a tutor page for the subject (its topic list comes from the syllabus).
     pages.push({ path: tutorsPath(s.slug), lastmod: subjectLastmod })
+    const questionPages: PageEntry[] = []
     for (const t of own) {
       const dates = lessonDates.get(t.id) ?? []
       if (!hasTopicPageByCount(dates.length)) continue
       pages.push({ path: topicPath(s.slug, t.slug), lastmod: day(latest([t.updated_at, ...dates])) })
-      // Reviewed lessons marked public get their own free page.
+      // Every published lesson has its own free page (migration 22).
       for (const l of publicLessons.filter((pl) => pl.topic_id === t.id)) {
+        if (l.slug === 'questions') throw new Error(`[public-page-list] a lesson in ${s.slug}/${t.slug} has the slug "questions", which is the topic's questions page`)
         pages.push({ path: lessonPath(s.slug, t.slug, l.slug), lastmod: day(l.updated_at) })
       }
+      // The topic's practice questions with answers, when it has enough of them.
+      const qDates = questionDates.get(t.id) ?? []
+      if (hasQuestionsPageByCount(qDates.length)) questionPages.push({ path: questionsPath(s.slug, t.slug), lastmod: day(latest(qDates)) })
+    }
+    if (own.some((t) => t.slug === 'questions')) throw new Error(`[public-page-list] ${s.slug} has a topic with the slug "questions", which is the subject's questions page`)
+    if (questionPages.length > 0) {
+      pages.push({ path: questionsPath(s.slug), lastmod: latest(questionPages.map((p) => p.lastmod)) }, ...questionPages)
     }
   }
   // The pillar and the subject index list every subject, so they change when any does.

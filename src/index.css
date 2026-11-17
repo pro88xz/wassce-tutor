@@ -343,6 +343,20 @@ html.app-boot [data-public-footer] { display: none; }
   }
 }
 
+/* Practice questions on public pages (QuestionMarkdown): stems, options and
+   worked solutions. Compact: an option is usually one short line. */
+.question-md > :first-child { margin-top: 0; }
+.question-md > :last-child { margin-bottom: 0; }
+.question-md p { margin-block: 0.6em; }
+.question-md ul,
+.question-md ol { margin-block: 0.6em; padding-left: 1.25rem; }
+.question-md ul { list-style: disc; }
+.question-md ol { list-style: decimal; }
+.question-md li { margin-block: 0.25em; }
+.question-md strong { font-weight: 700; color: var(--foreground); }
+.question-md .katex { font-size: 1.05em; }
+[id^='q'].scroll-mt-24 { scroll-margin-top: 6rem; }
+
 /* Markdown tables (lessons, AI tutor): readable on phones, scroll sideways when wide. */
 .md-table {
   margin: 0;

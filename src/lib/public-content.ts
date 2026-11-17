@@ -3,11 +3,11 @@
 // subjects, topics, and the wassce_lesson_index view (lesson titles, never
 // lesson content). Runs at build time (prerendering) and in the browser.
 import { supabase } from '@/lib/supabase'
-import { hasSubjectPage, hasTopicPageByCount, subjectPath, topicPath } from '@/lib/public-rules'
+import { hasQuestionsPageByCount, hasSubjectPage, hasTopicPageByCount, subjectPath, topicPath } from '@/lib/public-rules'
 import { topicPhoto } from '@/lib/topic-photos'
 import { mathToText } from '@/lib/math-text'
 
-export { hasSubjectPage, lessonPath, subjectPath, topicPath } from '@/lib/public-rules'
+export { hasSubjectPage, lessonPath, questionsPath, subjectPath, topicPath } from '@/lib/public-rules'
 
 export type FacultyRole = 'core' | 'faculty' | 'elective'
 
@@ -106,19 +106,20 @@ async function loadTopicsUncached(subjectIds: string[]): Promise<TopicWithLesson
   const topicIds = topics.data.map((t) => t.id)
   // Filter by topic in the query for one subject; for many subjects an
   // `in (...)` list of hundreds of ids makes the URL too long, so fetch all
-  // lesson titles (a few hundred rows) and filter here.
-  const lessonQuery = supabase
-    .from('wassce_lesson_index')
-    .select('id, topic_id, slug, title, est_minutes, sort_order, is_public, updated_at')
-    .range(0, 9999)
-  const lessons = topicIds.length === 0
-    ? { data: [] as LessonIndexItem[], error: null }
-    : topicIds.length <= 100
-      ? await lessonQuery.in('topic_id', topicIds)
-      : await lessonQuery
-  if (lessons.error || !lessons.data) fail('lesson titles', lessons.error)
+  // lesson titles and filter here. The API returns at most 1,000 rows per
+  // request, so read a page at a time.
+  const lessonRows: LessonIndexItem[] = []
+  if (topicIds.length > 0) {
+    for (let from = 0; ; from += 1000) {
+      const base = supabase.from('wassce_lesson_index').select('id, topic_id, slug, title, est_minutes, sort_order, is_public, updated_at')
+      const page = await (topicIds.length <= 100 ? base.in('topic_id', topicIds) : base).order('id').range(from, from + 999)
+      if (page.error || !page.data) fail('lesson titles', page.error)
+      lessonRows.push(...(page.data as LessonIndexItem[]))
+      if (page.data.length < 1000) break
+    }
+  }
   const byTopic = new Map<string, LessonIndexItem[]>()
-  for (const l of lessons.data as LessonIndexItem[]) {
+  for (const l of lessonRows) {
     if (!byTopic.has(l.topic_id)) byTopic.set(l.topic_id, [])
     byTopic.get(l.topic_id)!.push(l)
   }
@@ -445,4 +446,143 @@ export async function fetchSearchIndex(): Promise<SearchEntry[]> {
     })
   }
   return entries
+}
+
+// ── Practice questions ──────────────────────────────────────────────────────
+// Every question in a published practice set is public (migration 22,
+// wassce_public_questions), with its options, the answer and the working.
+
+export type PublicOption = { label: string; content: string; is_correct: boolean }
+
+export type PublicQuestion = {
+  id: string
+  paper_id: string
+  topic_id: string
+  stem: string
+  image_url: string | null
+  explanation: string | null
+  position: number
+  updated_at: string
+  options: PublicOption[]
+}
+
+const QUESTION_COLUMNS = 'id, paper_id, topic_id, stem, image_url, explanation, position, updated_at, options'
+const PAGE = 1000 // the most rows the API returns at once
+
+/** Every public question, a page at a time, in practice-set order. Build time only. */
+function loadAllQuestions(): Promise<PublicQuestion[]> {
+  return once('questions', async () => {
+    const rows: PublicQuestion[] = []
+    for (let from = 0; ; from += PAGE) {
+      const { data, error } = await supabase.from('wassce_public_questions').select(QUESTION_COLUMNS).order('id').range(from, from + PAGE - 1)
+      if (error || !data) fail('questions', error)
+      rows.push(...(data as PublicQuestion[]))
+      if (data.length < PAGE) break
+    }
+    return sortQuestions(rows)
+  })
+}
+
+/** Practice sets in their syllabus order (papers.sort_order), questions in their place in the set. */
+async function sortQuestions(rows: PublicQuestion[]): Promise<PublicQuestion[]> {
+  const ids = [...new Set(rows.map((q) => q.paper_id))]
+  const order = new Map<string, number>()
+  for (let i = 0; i < ids.length; i += 100) {
+    const { data, error } = await supabase.from('papers').select('id, sort_order').in('id', ids.slice(i, i + 100))
+    if (error || !data) fail('practice sets', error)
+    for (const p of data) order.set(p.id, p.sort_order ?? 0)
+  }
+  return [...rows].sort(
+    (a, b) => (order.get(a.paper_id) ?? 0) - (order.get(b.paper_id) ?? 0) || (a.paper_id < b.paper_id ? -1 : a.paper_id > b.paper_id ? 1 : 0) || a.position - b.position,
+  )
+}
+
+/** One topic's questions: from the build's single fetch, or (in the browser) just that topic's. */
+async function loadTopicQuestions(topicId: string): Promise<PublicQuestion[]> {
+  if (isServer) return (await loadAllQuestions()).filter((q) => q.topic_id === topicId)
+  const { data, error } = await supabase.from('wassce_public_questions').select(QUESTION_COLUMNS).eq('topic_id', topicId).range(0, PAGE - 1)
+  if (error || !data) fail('questions', error)
+  return sortQuestions(data as PublicQuestion[])
+}
+
+/** How many public questions each topic has. */
+async function loadQuestionCounts(): Promise<Map<string, number>> {
+  const counts = new Map<string, number>()
+  const add = (topicId: string) => counts.set(topicId, (counts.get(topicId) ?? 0) + 1)
+  if (isServer) {
+    for (const q of await loadAllQuestions()) add(q.topic_id)
+    return counts
+  }
+  for (let from = 0; ; from += PAGE) {
+    const { data, error } = await supabase.from('wassce_public_questions').select('topic_id').order('id').range(from, from + PAGE - 1)
+    if (error || !data) fail('question counts', error)
+    for (const q of data) add(q.topic_id as string)
+    if (data.length < PAGE) break
+  }
+  return counts
+}
+
+/** How many public questions a topic has (0 when it has no questions page). */
+export async function topicQuestionCount(topicId: string): Promise<number> {
+  const n = (await loadQuestionCounts()).get(topicId) ?? 0
+  return hasQuestionsPageByCount(n) ? n : 0
+}
+
+export type TopicQuestionsPageData = TopicPageData & {
+  questions: PublicQuestion[]
+  /** Neighbouring topics in syllabus order that have a questions page of their own. */
+  previousQuestions: TopicWithLessons | null
+  nextQuestions: TopicWithLessons | null
+}
+
+/** Everything for /wassce/{subject}/{topic}/questions; null unless the topic has a page and enough questions. */
+export async function fetchTopicQuestionsPage(subjectSlug: string, topicSlug: string): Promise<TopicQuestionsPageData | null> {
+  const page = await fetchTopicPage(subjectSlug, topicSlug)
+  if (!page) return null
+  const [questions, counts] = await Promise.all([loadTopicQuestions(page.topic.id), loadQuestionCounts()])
+  if (!hasQuestionsPageByCount(questions.length)) return null
+  const groups = groupTopics(await loadTopics([page.subject.id]))
+  const withQuestions = groups.flatMap((g) => g.topics).filter((t) => hasTopicPage(t) && hasQuestionsPageByCount(counts.get(t.id) ?? 0))
+  const at = withQuestions.findIndex((t) => t.id === page.topic.id)
+  return { ...page, questions, previousQuestions: withQuestions[at - 1] ?? null, nextQuestions: withQuestions[at + 1] ?? null }
+}
+
+export type SubjectQuestionsHub = {
+  subject: PublicSubject
+  /** Syllabus sections with the topics that have a questions page, and how many questions each has. */
+  groups: { name: string; topics: { topic: TopicWithLessons; questions: number; withDiagrams: number }[] }[]
+  questionCount: number
+}
+
+/** Everything for /wassce/{subject}/questions; null when no topic in the subject has a questions page. */
+export async function fetchSubjectQuestionsHub(subjectSlug: string): Promise<SubjectQuestionsHub | null> {
+  const subject = (await loadSubjects()).find((s) => s.slug === subjectSlug)
+  if (!subject) return null
+  const [topics, counts] = await Promise.all([loadTopics([subject.id]), loadQuestionCounts()])
+  const diagrams = new Map<string, number>()
+  if (isServer) for (const q of await loadAllQuestions()) if (q.image_url) diagrams.set(q.topic_id, (diagrams.get(q.topic_id) ?? 0) + 1)
+  const groups = groupTopics(topics)
+    .map((g) => ({
+      name: g.name,
+      topics: g.topics
+        .filter((t) => hasTopicPage(t) && hasQuestionsPageByCount(counts.get(t.id) ?? 0))
+        .map((t) => ({ topic: t, questions: counts.get(t.id)!, withDiagrams: diagrams.get(t.id) ?? 0 })),
+    }))
+    .filter((g) => g.topics.length > 0)
+  const questionCount = groups.reduce((n, g) => n + g.topics.reduce((m, t) => m + t.questions, 0), 0)
+  return groups.length ? { subject, groups, questionCount } : null
+}
+
+/** Subjects (by slug) with a questions index page, and how many questions it lists. */
+export async function fetchQuestionSubjects(): Promise<Map<string, number>> {
+  const [subjects, counts] = await Promise.all([loadSubjects(), loadQuestionCounts()])
+  const topics = await loadTopics(subjects.map((s) => s.id))
+  const out = new Map<string, number>()
+  for (const t of topics) {
+    const n = counts.get(t.id) ?? 0
+    if (!hasTopicPage(t) || !hasQuestionsPageByCount(n)) continue
+    const slug = subjects.find((s) => s.id === t.subject_id)?.slug
+    if (slug) out.set(slug, (out.get(slug) ?? 0) + n)
+  }
+  return out
 }
