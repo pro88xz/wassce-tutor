@@ -7,7 +7,7 @@ import { LessonView } from '@/components/LessonView'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { fetchPublicLessonPage, lessonPath, lessonSummary, subjectPath, topicPath } from '@/lib/public-content'
 import type { PublicLessonPageData } from '@/lib/public-content'
-import { SITE, absoluteUrl, brandedTitle, breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
+import { SEARCH_COPY, SITE, absoluteUrl, brandedTitle, breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
 
 const trail = ({ subject, topic, lesson }: PublicLessonPageData): [string, string][] => [
@@ -58,18 +58,20 @@ export const Route = createFileRoute('/wassce/$subject/$topic_/$lesson')({
     if (!data) throw notFound()
     return data
   },
-  head: ({ loaderData: data }) =>
-    data
-      ? indexablePageTags({
-          path: lessonPath(data.subject.slug, data.topic.slug, data.lesson.slug),
-          // Subject first: Google cuts titles at about 60 characters, and long lesson names used to push "WASSCE" out of view.
-          // The brand goes too when it would be cut off anyway.
-          title: brandedTitle(`WASSCE ${data.subject.name}: ${data.lesson.title}`),
-          ogTitle: `${data.lesson.title} (WASSCE ${data.subject.name})`,
-          description: lessonSummary(data.lesson.content),
-          jsonLd: [lessonJsonLd(data), breadcrumbJsonLd(trail(data))],
-        })
-      : privatePageTags('Page not found'),
+  head: ({ loaderData: data }) => {
+    if (!data) return privatePageTags('Page not found')
+    const path = lessonPath(data.subject.slug, data.topic.slug, data.lesson.slug)
+    const copy = SEARCH_COPY[path]
+    return indexablePageTags({
+      path,
+      // Subject first: Google cuts titles at about 60 characters, and long lesson names used to push "WASSCE" out of view.
+      // The brand goes too when it would be cut off anyway.
+      title: brandedTitle(copy?.title ?? `WASSCE ${data.subject.name}: ${data.lesson.title}`),
+      ogTitle: `${data.lesson.title} (WASSCE ${data.subject.name})`,
+      description: copy?.description ?? lessonSummary(data.lesson.content),
+      jsonLd: [lessonJsonLd(data), breadcrumbJsonLd(trail(data))],
+    })
+  },
   component: PublicLessonPage,
 })
 
