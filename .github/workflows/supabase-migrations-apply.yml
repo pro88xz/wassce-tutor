@@ -154,3 +154,33 @@ jobs:
           done
           echo "database → wasscetutor.com/api/email/run without the secret: ${STATUS:-no reply}"
           test "$STATUS" = "401" || { echo "Expected 401 (route reachable, unsigned call refused)"; exit 1; }
+
+      - name: Verify (22) every lesson and practice set is free; mock exams stay with a plan
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            (select count(*) from public.wassce_lesson_index where not is_free),
+            (select count(*) from public.lessons where is_published) = (select count(*) from public.wassce_public_lessons),
+            (select count(*) from public.papers where is_published and coalesce(paper_type, '') <> 'Mock' and not is_free),
+            has_function_privilege('anon','public.is_free_lesson(uuid)','execute'),
+            (select count(*) from pg_policies where schemaname = 'public' and tablename = 'lessons' and policyname = 'lessons readable by everyone when published'));" | tr -d '[:space:]')"
+          echo "locked lessons, every lesson public, locked practice sets, visitors check lessons, open lesson rule: $RESULT"
+          test "$RESULT" = "0,t,0,t,1" || { echo "Checks did not match 0,t,0,t,1"; exit 1; }
+
+          # As a signed-out visitor: every published lesson and practice
+          # question is readable, and no mock exam question is.
+          VISITOR="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --quiet <<'SQL' | tr -d '[:space:]'
+          begin;
+          set local role anon;
+          select concat_ws(',',
+            (select count(*) from public.lessons) = (select count(*) from public.wassce_public_lessons),
+            (select count(*) from public.questions q join public.papers p on p.id = q.paper_id where p.paper_type = 'Mock'),
+            (select count(*) from public.questions) > 0);
+          rollback;
+          SQL
+          )"
+          echo "visitor reads every lesson, visitor reads mock questions, visitor reads practice questions: $VISITOR"
+          test "$VISITOR" = "t,0,t" || { echo "Checks did not match t,0,t"; exit 1; }
