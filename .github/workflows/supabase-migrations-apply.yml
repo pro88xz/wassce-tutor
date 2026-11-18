@@ -209,3 +209,25 @@ jobs:
             has_table_privilege('authenticated', 'public.key_term_progress', 'update'));" | tr -d '[:space:]')"
           echo "row security on, policies, visitors read, students insert, students update: $RESULT"
           test "$RESULT" = "t,4,f,t,t" || { echo "Checks did not match t,4,f,t,t"; exit 1; }
+
+      - name: Verify (25) new tutors go live when they apply
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            (select count(*) from public.tutor_settings),
+            has_column_privilege('anon','public.tutor_settings','auto_approve','select'),
+            has_function_privilege('authenticated','public.approve_tutor_application(uuid,uuid,text)','execute'),
+            has_function_privilege('anon','public.set_tutor_auto_approve(boolean)','execute'),
+            has_function_privilege('authenticated','public.set_tutor_auto_approve(boolean)','execute'),
+            (select count(*) from pg_proc where pronamespace = 'public'::regnamespace
+               and proname in ('submit_tutor_application', 'review_tutor_application') and prosrc like '%approve_tutor_application%'));" | tr -d '[:space:]')"
+          echo "settings row, visitors read the setting, students approve directly, visitors switch it, admins switch it, functions that approve: $RESULT"
+          test "$RESULT" = "1,t,f,f,t,2" || { echo "Checks did not match 1,t,f,f,t,2"; exit 1; }
+          # For the record (these change as people use the site, so they are not checked).
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(', ',
+            'automatic approval ' || (select case when auto_approve then 'on' else 'off' end from public.tutor_settings),
+            (select count(*) from public.tutor_applications where status in ('submitted', 'under_review')) || ' applications waiting',
+            (select count(*) from public.tutors where status = 'active' and listed) || ' tutors in the marketplace');"

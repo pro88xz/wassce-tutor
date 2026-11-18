@@ -1,12 +1,14 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { useEffect, useState } from 'react'
 import { Check, ClipboardCheck, MessageCircle, UserRound } from 'lucide-react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { fetchSubjectSummaries, hasSubjectPage } from '@/lib/public-content'
 import { breadcrumbJsonLd, faqJsonLd, indexablePageTags, tutoringServiceJsonLd } from '@/lib/seo'
 import { TUTOR_PHOTO } from '@/lib/tutors'
+import { supabase } from '@/lib/supabase'
 import { BookingForm } from '@/components/tutors/BookingForm'
 import { TutorMarketplace } from '@/components/tutors/Marketplace'
-import { TUTOR_FAQ, TutorFaq, TutorHowItWorks, TutorSubjectGrid } from '@/components/tutors/TutorSections'
+import { TUTOR_FAQ, TutorFaq, TutorHowItWorks, TutorJoinBand, TutorSearch, TutorSubjectGrid } from '@/components/tutors/TutorSections'
 
 const TRAIL: [string, string][] = [
   ['Home', '/'],
@@ -39,50 +41,9 @@ export const Route = createFileRoute('/tutors/')({
 function TutorsPage() {
   const subjects = Route.useLoaderData()
   return (
-    <article className="tutor-booking-page site-page space-y-16 pb-12 sm:space-y-20">
-      <div className="space-y-6">
-        <Breadcrumbs trail={TRAIL} />
-        <header className="tutor-booking-hero">
-          <div className="tutor-booking-hero-copy">
-            <p className="tutor-booking-eyebrow"><span /> VERIFIED TUTORS · IN PERSON</p>
-            <h1>A real tutor.<br /><em>Focused on your progress.</em></h1>
-            <p className="tutor-booking-lede">
-              Choose a verified teacher who knows the WASSCE syllabus, see their monthly fee upfront, and message them on WhatsApp to arrange in-person lessons near you.
-            </p>
-            <ul className="tutor-booking-points">
-              {[
-                'Every tutor reviewed by WASSCE Tutor before they are listed',
-                'In-person lessons, arranged directly with your tutor',
-                'Monthly fee shown upfront: you agree before you message',
-              ].map((t) => (
-                <li key={t}><Check aria-hidden /> <span>{t}</span></li>
-              ))}
-            </ul>
-            <div className="tutor-booking-actions">
-              <a href="#tutors" className="tutor-book-primary">See tutors <span aria-hidden>↓</span></a>
-              <a href="#tutor-how" className="tutor-book-secondary">How it works</a>
-            </div>
-            <p className="tutor-booking-reassurance"><span /> Free to contact · You pay the tutor directly</p>
-          </div>
-          <div className="tutor-booking-visual">
-            <img
-              src={TUTOR_PHOTO.src}
-              srcSet={`${TUTOR_PHOTO.small} 640w, ${TUTOR_PHOTO.src} 1280w`}
-              sizes="(min-width: 768px) 560px, 100vw"
-              alt="A tutor and a student going through notes together"
-              width={1280}
-              height={853}
-              fetchPriority="high"
-            />
-            <div className="tutor-photo-caption">
-              <span className="tutor-photo-icon"><UserRound aria-hidden /></span>
-              <span><strong>In-person lessons</strong><small>One to one, near you</small></span>
-            </div>
-            <div className="tutor-visual-index"><span>PERSONAL SUPPORT</span><strong>01 / 03</strong></div>
-          </div>
-        </header>
-      </div>
-
+    <>
+      <TutorsHero subjects={subjects.map((s) => ({ name: s.name, slug: s.slug }))} />
+      <article className="tutor-booking-page site-page space-y-16 pb-12 pt-14 sm:space-y-20 sm:pt-20">
       <TutorMarketplace />
 
       <TutorHowItWorks />
@@ -116,7 +77,99 @@ function TutorsPage() {
         <TutorSubjectGrid subjects={subjects} />
       </section>
 
+      <TutorJoinBand />
+
       <TutorFaq />
     </article>
+    </>
+  )
+}
+
+/** How many tutors are in the marketplace now, for the hero (null until known, or if there are none). */
+function useTutorCount(): number | null {
+  const [count, setCount] = useState<number | null>(null)
+  useEffect(() => {
+    let active = true
+    void supabase
+      .from('tutors')
+      .select('id', { count: 'exact', head: true })
+      .eq('status', 'active')
+      .eq('listed', true)
+      .then(({ count: n, error }) => {
+        if (active && !error && n) setCount(n)
+      })
+    return () => {
+      active = false
+    }
+  }, [])
+  return count
+}
+
+function TutorsHero({ subjects }: { subjects: { name: string; slug: string }[] }) {
+  const count = useTutorCount()
+  return (
+    <section className="site-bleed relative isolate -mt-6 overflow-hidden bg-[var(--site-ink)] text-white" aria-labelledby="tutors-heading">
+      <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(60rem_32rem_at_100%_0%,rgba(124,92,255,.42),transparent_68%),radial-gradient(40rem_26rem_at_0%_110%,rgba(255,209,102,.16),transparent_70%)]" />
+      <div aria-hidden className="absolute inset-0 -z-10 opacity-[.07] [background-image:linear-gradient(#fff_1px,transparent_1px),linear-gradient(90deg,#fff_1px,transparent_1px)] [background-size:56px_56px] [mask-image:radial-gradient(70%_80%_at_70%_30%,#000,transparent)]" />
+      <div className="site-container pb-16 pt-6 sm:pb-20 lg:pb-24">
+        <Breadcrumbs trail={TRAIL} tone="dark" />
+        <div className="mt-10 grid grid-cols-[minmax(0,1fr)] items-center gap-14 lg:mt-14 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,.9fr)] lg:gap-16">
+          <div>
+            <p className="inline-flex items-center gap-2.5 rounded-full bg-white/10 py-1.5 pl-2.5 pr-3.5 text-[13px] font-semibold text-white/85 ring-1 ring-white/15">
+              <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_0_4px_rgba(52,211,153,.2)]" aria-hidden />
+              {count ? `${count} ${count === 1 ? 'tutor' : 'tutors'} in the marketplace` : 'In-person tutoring across Sierra Leone'}
+            </p>
+            <h1 id="tutors-heading" className="site-display mt-6">
+              Find a WASSCE tutor <span className="site-accent text-[#cdbcff]">near you.</span>
+            </h1>
+            <p className="mt-6 max-w-xl text-[17px] leading-relaxed text-white/72 sm:text-lg">
+              Real teachers for in-person lessons. See each tutor’s monthly fee upfront, then message them on WhatsApp to arrange lessons near you.
+            </p>
+            <div className="mt-8 max-w-2xl">
+              <TutorSearch subjects={subjects} />
+            </div>
+            <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-white/70">
+              {['Free to contact', 'Fee shown upfront', 'You pay the tutor directly'].map((t) => (
+                <li key={t} className="inline-flex items-center gap-1.5">
+                  <Check className="h-4 w-4 text-emerald-400" aria-hidden /> {t}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="relative mx-auto w-full max-w-[30rem] pb-8 lg:mx-0 lg:ml-auto">
+            <img
+              src={TUTOR_PHOTO.src}
+              srcSet={`${TUTOR_PHOTO.small} 640w, ${TUTOR_PHOTO.src} 1280w`}
+              sizes="(min-width: 1024px) 30rem, 92vw"
+              alt="A tutor and a student going through notes together"
+              width={1280}
+              height={853}
+              fetchPriority="high"
+              className="aspect-[4/4.3] w-full rounded-[1.75rem] object-cover shadow-[0_40px_80px_-40px_rgba(0,0,0,.8)] ring-1 ring-white/10"
+            />
+            <div className="hero-float absolute -left-3 bottom-0 w-64 rounded-2xl bg-white p-4 text-slate-900 shadow-[0_30px_60px_-24px_rgba(0,0,0,.55)] ring-1 ring-slate-900/5 sm:-left-10" style={{ ['--float-time' as string]: '9s' }}>
+              <p className="text-[10px] font-bold uppercase tracking-[.14em] text-slate-500">Three steps</p>
+              <ol className="mt-2.5 space-y-2.5">
+                {[
+                  [UserRound, 'Choose a tutor near you'],
+                  [ClipboardCheck, 'Agree to their monthly fee'],
+                  [MessageCircle, 'Message them on WhatsApp'],
+                ].map(([Icon, text], i) => {
+                  const I = Icon as typeof UserRound
+                  return (
+                    <li key={i} className="flex items-center gap-2.5 text-[13px] font-semibold">
+                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-[#efeaff] text-[#5b34d6]">
+                        <I className="h-3.5 w-3.5" aria-hidden />
+                      </span>
+                      {text as string}
+                    </li>
+                  )
+                })}
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }

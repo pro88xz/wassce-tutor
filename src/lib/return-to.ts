@@ -57,6 +57,7 @@ export function returnLabel(next: string | null, forName?: string | null): strin
     [/^\/(account|profile)/, 'to see your account'],
     [/^\/tutor$/, 'to ask the study tutor'],
     [/^\/tutors/, 'to continue to the tutors'],
+    [/^\/become-a-tutor/, 'to make your tutor card'],
   ]
   return labels.find(([re]) => re.test(page))?.[1] ?? null
 }

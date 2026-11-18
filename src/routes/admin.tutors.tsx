@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Check, FileText, MessageCircle, X } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
 import { monthlyFee } from '@/lib/tutors'
+import { fetchTutorAutoApprove } from '@/lib/tutor-settings'
 import { Button } from '@/components/ui/button'
 import { EmptyState, Pill } from '@/components/ds/Primitives'
 
@@ -29,6 +30,8 @@ type TutorRow = {
   tutor_contacts: { created_at: string }[]
   /** Students who contacted the tutor in the last 30 days (worked out when loaded). */
   recent_contacts: number
+  /** Joined in the last 7 days. */
+  is_new: boolean
 }
 type BookingRow = {
   id: string; starts_at: string; duration_minutes: number; price_nle: number; status: string; student_id: string
@@ -74,6 +77,8 @@ function AdminTutors() {
       return (data ?? []) as unknown as Application[]
     },
   })
+  // Automatic approval (migration 25): on, a tutor's card is live as soon as they apply.
+  const autoApprove = useQuery({ queryKey: ['tutor-auto-approve'], queryFn: fetchTutorAutoApprove })
   const tutors = useQuery({
     queryKey: ['admin-tutors'],
     queryFn: async (): Promise<TutorRow[]> => {
@@ -82,9 +87,10 @@ function AdminTutors() {
         .order('verified_at', { ascending: false })
       if (error) throw error
       const since = Date.now() - 30 * 86_400_000
-      return ((data ?? []) as unknown as Omit<TutorRow, 'recent_contacts'>[]).map((t) => ({
+      return ((data ?? []) as unknown as Omit<TutorRow, 'recent_contacts' | 'is_new'>[]).map((t) => ({
         ...t,
         recent_contacts: (t.tutor_contacts ?? []).filter((c) => new Date(c.created_at).getTime() > since).length,
+        is_new: Date.now() - new Date(t.verified_at).getTime() < 7 * 86_400_000,
       }))
     },
   })
@@ -117,12 +123,21 @@ function AdminTutors() {
     },
   })
 
-  const refresh = () => Promise.all(['admin-tutor-applications', 'admin-tutors', 'admin-tutor-changes', 'admin-tutor-bookings', 'admin-pending-counts'].map((k) => qc.invalidateQueries({ queryKey: [k] })))
+  const refresh = () => Promise.all(['admin-tutor-applications', 'admin-tutors', 'admin-tutor-changes', 'admin-tutor-bookings', 'admin-pending-counts', 'tutor-auto-approve'].map((k) => qc.invalidateQueries({ queryKey: [k] })))
 
   const act = async (label: string, fn: () => Promise<void>) => {
     setBusy(true); setError(null); setMessage(null)
     try { await fn(); setMessage(label); await refresh() } catch (err) { setError(friendly(err)) } finally { setBusy(false) }
   }
+
+  const setAutoApprove = (on: boolean) => act(
+    on ? 'Automatic approval is on: new tutors go live as soon as they apply.' : 'Automatic approval is off: new applications wait here for you.',
+    async () => {
+      const { error } = await supabase.rpc('set_tutor_auto_approve', { p_on: on })
+      if (error) throw error
+      await qc.invalidateQueries({ queryKey: ['tutor-auto-approve'] })
+    },
+  )
 
   const review = (a: Application, decision: 'approved' | 'rejected' | 'under_review') => act(
     decision === 'approved' ? `${a.full_name} approved. Their profile is now in the marketplace.` : decision === 'rejected' ? `${a.full_name}'s application was declined.` : `${a.full_name} marked as under review.`,
@@ -198,7 +213,30 @@ function AdminTutors() {
           : applications.error ? <EmptyState title="Could not load applications" body={friendly(applications.error)} />
           : (
             <div className="space-y-4">
-              {pending.length === 0 ? <EmptyState title="No applications waiting" body="New tutor applications appear here, and you get an email and an inbox alert when one arrives." /> : pending.map((a) => (
+              {autoApprove.data !== null && autoApprove.data !== undefined && (
+                <section className="flex items-center justify-between gap-4 rounded-2xl border bg-card p-4 sm:p-5">
+                  <div className="min-w-0">
+                    <h2 className="font-bold">Approve new tutors automatically</h2>
+                    <p className="mt-1 text-sm text-muted-foreground">
+                      {autoApprove.data
+                        ? 'On: a tutor’s card goes into the marketplace as soon as they apply. You get an email for each one: check them in the Tutors tab and remove any card that is wrong.'
+                        : 'Off: applications wait here until you approve them.'}
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    role="switch"
+                    aria-checked={autoApprove.data}
+                    aria-label="Approve new tutors automatically"
+                    disabled={busy}
+                    onClick={() => setAutoApprove(!autoApprove.data)}
+                    className={`relative inline-flex h-7 w-12 shrink-0 items-center rounded-full transition-colors disabled:opacity-60 ${autoApprove.data ? 'bg-emerald-500' : 'bg-muted-foreground/30'}`}
+                  >
+                    <span className={`inline-block h-5 w-5 rounded-full bg-white shadow transition-transform ${autoApprove.data ? 'translate-x-6' : 'translate-x-1'}`} />
+                  </button>
+                </section>
+              )}
+              {pending.length === 0 ? <EmptyState title="No applications waiting" body={autoApprove.data ? 'New tutors go live as soon as they apply, so nothing waits here. Check the newest ones in the Tutors tab.' : 'New tutor applications appear here, and you get an email and an inbox alert when one arrives.'} /> : pending.map((a) => (
                 <article key={a.id} className="space-y-3 rounded-2xl border bg-card p-4 sm:p-5">
                   <div className="flex flex-wrap items-start justify-between gap-3">
                     <div className="flex items-center gap-3">
@@ -270,7 +308,7 @@ function AdminTutors() {
                         {t.avatar_path && <img src={supabase.storage.from('tutor-profile-images').getPublicUrl(t.avatar_path).data.publicUrl} alt="" className="h-full w-full object-cover object-top" loading="lazy" />}
                       </div>
                       <div className="min-w-0">
-                        <p className="font-bold">{t.full_name}</p>
+                        <p className="font-bold">{t.full_name}{t.is_new && <Pill className="ml-2 bg-emerald-50 text-emerald-800">New</Pill>}</p>
                         <p className="text-xs text-muted-foreground">{t.location} · {t.experience_years} years · approved {new Date(t.verified_at).toLocaleDateString('en-GB')}</p>
                         <p className="line-clamp-1 text-xs text-muted-foreground">{t.qualifications}</p>
                       </div>
