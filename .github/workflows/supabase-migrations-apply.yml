@@ -260,3 +260,23 @@ jobs:
             (select count(*) from pg_trigger where not tgisinternal and tgname = 'practice_sets_stay_free'));" | tr -d '[:space:]')"
           echo "practice sets marked locked, trigger that keeps them free: $RESULT"
           test "$RESULT" = "0,1" || { echo "Checks did not match 0,1"; exit 1; }
+
+      - name: Verify (28) every tutor has their own page; reviewers review lessons in their subjects
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            (select count(*) from public.tutors where slug is null),
+            (select count(*) from public.tutors t join public.subjects s on s.slug = t.slug),
+            has_column_privilege('anon', 'public.tutors', 'slug', 'select'),
+            has_column_privilege('anon', 'public.tutors', 'phone', 'select'),
+            has_function_privilege('anon', 'public.tutor_review_lesson(uuid,text,text)', 'execute'),
+            has_function_privilege('authenticated', 'public.tutor_review_lesson(uuid,text,text)', 'execute'),
+            has_function_privilege('authenticated', 'public.set_tutor_reviewer(uuid,boolean)', 'execute'),
+            (select count(*) from information_schema.columns where table_schema = 'public' and table_name = 'wassce_public_lessons' and column_name = 'reviewer_tutor_slug'));" | tr -d '[:space:]')"
+          echo "tutors without a page, pages that clash with a subject, visitors read slugs, visitors read phones, visitors review, tutors review, admins switch reviewers, byline link: $RESULT"
+          test "$RESULT" = "0,0,t,f,f,t,t,1" || { echo "Checks did not match 0,0,t,f,f,t,t,1"; exit 1; }
+          # For the record: who reviews lessons, and their pages.
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select coalesce(string_agg(full_name || ' (/tutors/' || slug || ')', ', ' order by verified_at), 'none') from public.tutors where reviewer;"
