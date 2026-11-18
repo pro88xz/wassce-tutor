@@ -3,6 +3,7 @@ import { publicHead } from '@/lib/seo'
 import { useEffect } from 'react'
 import { Capacitor } from '@capacitor/core'
 import { useAuth } from '@/lib/auth'
+import { useAccountRole } from '@/lib/account-role'
 import { useProfile } from '@/lib/queries'
 import { Dashboard } from '@/components/dashboard/Dashboard'
 import { Landing } from '@/components/landing/Landing'
@@ -24,16 +25,16 @@ function Index() {
   const { user, loading } = useAuth()
   const landingData = Route.useLoaderData()
   const { data: profile, isLoading: profileLoading } = useProfile(user?.id ?? null)
+  const { role, isAdmin, loading: roleLoading } = useAccountRole()
+  // Tutors and affiliates have their own home (the root layout takes them there).
+  const elsewhere = !!role && role !== 'student' && !isAdmin
 
   useEffect(() => {
-    if (!loading && user && profile && !profile.onboarded) {
+    if (!loading && user && role === 'student' && profile && !profile.onboarded) {
       // Replace, so "back" from there does not land here and bounce again.
-      // Tutor and affiliate accounts that never set up as a student go to
-      // their own workspace, not the student set-up.
-      const intent = user.user_metadata?.account_intent
-      navigate({ to: intent === 'affiliate' ? '/affiliate-dashboard' : intent === 'tutor' ? '/tutor-dashboard' : '/onboarding', replace: true })
+      navigate({ to: '/onboarding', replace: true })
     }
-  }, [loading, user, profile, navigate])
+  }, [loading, user, role, profile, navigate])
 
   // Inside the APK, signed-out users go straight to sign-in (skip marketing page)
   useEffect(() => {
@@ -66,7 +67,7 @@ function Index() {
   // loads, and while a first-time student is being sent to onboarding, so the
   // screen changes once (spinner, then dashboard) instead of flickering
   // through a loading message or a dashboard that is about to be replaced.
-  if (profileLoading || (profile && !profile.onboarded)) {
+  if (profileLoading || roleLoading || !role || elsewhere || (profile && !profile.onboarded)) {
     return (
       <div className="flex min-h-[80vh] items-center justify-center" role="status" aria-label="Loading your dashboard">
         <Spinner />

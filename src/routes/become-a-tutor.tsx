@@ -8,6 +8,7 @@
 // While automatic approval is on (migration 25, switched in Admin, Tutors),
 // the card is in the marketplace the moment the tutor finishes.
 import { createFileRoute, Link } from '@tanstack/react-router'
+import { useQueryClient } from '@tanstack/react-query'
 import { useCallback, useEffect, useState } from 'react'
 import { ArrowRight, BadgeCheck, Check, CircleCheck, Clock, EyeOff, LayoutDashboard, MessageCircle, ShieldAlert, Wallet } from 'lucide-react'
 import { publicHead } from '@/lib/seo'
@@ -210,6 +211,7 @@ function SignedIn({ userId, defaultName, auto }: { userId: string; defaultName: 
     tutor: null,
   })
   const [done, setDone] = useState<ApplyResult | null>(null)
+  const queryClient = useQueryClient()
 
   const load = useCallback(() => {
     let active = true
@@ -251,7 +253,11 @@ function SignedIn({ userId, defaultName, auto }: { userId: string; defaultName: 
           defaultName={defaultName}
           auto={auto}
           previousNote={state.application?.status === 'rejected' ? state.application.review_note : undefined}
-          onDone={setDone}
+          onDone={(result) => {
+            setDone(result)
+            // They are a tutor now: their navigation and home follow (src/lib/account-role.ts).
+            void queryClient.invalidateQueries({ queryKey: ['account-role'] })
+          }}
           onAlreadyApplied={load}
         />
       )}

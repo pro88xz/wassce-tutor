@@ -5,6 +5,7 @@ import { supabase } from '@/lib/supabase'
 import { returnLabel, safeReturn } from '@/lib/return-to'
 import { campaignMetadata } from '@/lib/attribution'
 import { useAuth } from '@/lib/auth'
+import { homeAfterSignIn } from '@/lib/account-role'
 import { Capacitor } from '@capacitor/core'
 import { CircleCheck } from 'lucide-react'
 import { GoogleSignInButton } from '@/components/auth/GoogleSignInButton'
@@ -31,9 +32,11 @@ function AuthPage() {
   const next = safeReturn(params.get('next'))
   const forName = params.get('for')?.trim().slice(0, 40) || null
   const reason = returnLabel(next, forName)
-  const destination = next ?? (intent === 'tutor' ? '/tutor-dashboard' : intent === 'affiliate' ? '/affiliate-dashboard' : '/')
+  // On the way somewhere: go there. Otherwise the account decides (a tutor signing in from the
+  // ordinary sign-in still lands in the tutor dashboard), see src/lib/account-role.ts.
+  const destination = next ?? (intent === 'tutor' ? '/tutor-dashboard' : intent === 'affiliate' ? '/affiliate-dashboard' : null)
   // Replace the sign-in page, so "back" goes to the page before it, not here.
-  const goOn = useCallback(() => navigate({ href: destination, replace: true }), [destination, navigate])
+  const goOn = useCallback(async () => navigate({ href: destination ?? (await homeAfterSignIn()), replace: true }), [destination, navigate])
   const [mode, setMode] = useState<'signin' | 'signup' | 'forgot'>('signup')
   const [resetSent, setResetSent] = useState(false)
   const [confirmationSent, setConfirmationSent] = useState(false)

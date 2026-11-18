@@ -231,3 +231,20 @@ jobs:
             'automatic approval ' || (select case when auto_approve then 'on' else 'off' end from public.tutor_settings),
             (select count(*) from public.tutor_applications where status in ('submitted', 'under_review')) || ' applications waiting',
             (select count(*) from public.tutors where status = 'active' and listed) || ' tutors in the marketplace');"
+
+      - name: Verify (26) every account knows whether it is a student, tutor or affiliate
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            (select count(*) from information_schema.columns where table_schema = 'public' and table_name = 'profiles' and column_name = 'account_role'),
+            has_column_privilege('authenticated', 'public.profiles', 'account_role', 'UPDATE'),
+            (select count(*) from pg_trigger where not tgisinternal
+               and tgname in ('account_role_from_signup', 'tutor_application_marks_account', 'tutor_marks_account', 'affiliate_marks_account')),
+            (select count(*) from public.tutors t join public.profiles p on p.id = t.user_id where p.account_role <> 'tutor'));" | tr -d '[:space:]')"
+          echo "account_role column, accounts can change their own, role triggers, tutors not marked as tutors: $RESULT"
+          test "$RESULT" = "1,f,4,0" || { echo "Checks did not match 1,f,4,0"; exit 1; }
+          # For the record (changes as people sign up).
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select string_agg(account_role || ': ' || n, ', ' order by account_role) from (select account_role, count(*) n from public.profiles group by 1) r;"
