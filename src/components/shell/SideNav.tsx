@@ -5,7 +5,8 @@ import { ROLE_HOME, useAccountRole } from '@/lib/account-role'
 import { useProfile } from '@/lib/queries'
 import { checkAccess } from '@/lib/access'
 import { planById } from '@/lib/plans'
-import { AFFILIATE_NAV, STUDENT_NAV, TUTOR_NAV, initialsOf, showsRoleNav, showsStudentNav } from '@/lib/nav'
+import { AFFILIATE_NAV, STUDENT_NAV, TUTOR_NAV, initialsOf, roleNavItems, showsRoleNav, showsStudentNav } from '@/lib/nav'
+import { tutorPagePath } from '@/lib/tutor-profile'
 import { BrandMark } from '@/components/BrandMark'
 
 /**
@@ -97,7 +98,8 @@ function RoleSideNav({ role }: { role: 'tutor' | 'affiliate' }) {
   const { data: profile } = useProfile(user?.id ?? null)
   const navigate = useNavigate()
   const { pathname, hash } = useRouterState({ select: (s) => ({ pathname: s.location.pathname, hash: s.location.hash }) })
-  const items = role === 'tutor' ? TUTOR_NAV : AFFILIATE_NAV
+  const { tutorSlug } = useAccountRole()
+  const items = roleNavItems(role === 'tutor' ? TUTOR_NAV : AFFILIATE_NAV, tutorSlug ? tutorPagePath(tutorSlug) : null, pathname)
   return (
     <aside className="hidden w-64 shrink-0 flex-col border-r bg-card pt-[env(safe-area-inset-top)] lg:flex">
       <div className="flex h-16 items-center px-5">

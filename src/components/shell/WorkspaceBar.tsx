@@ -25,12 +25,12 @@ export function WorkspaceBar() {
   const { data: profile } = useProfile(user?.id ?? null)
   const navigate = useNavigate()
   const [leaving, setLeaving] = useState(false)
-  const workspace = WORKSPACES[pathname]
+  const workspace = WORKSPACES[pathname.startsWith('/tutor-dashboard/') ? '/tutor-dashboard' : pathname]
   const active = !!user && !!workspace
 
   const blocker = useBlocker({
     shouldBlockFn: ({ action, next }) =>
-      (action === 'BACK' || action === 'GO') && !inRoleArea(pathname === '/tutor-dashboard' ? 'tutor' : 'affiliate', next.pathname),
+      (action === 'BACK' || action === 'GO') && !inRoleArea(pathname.startsWith('/tutor-dashboard') ? 'tutor' : 'affiliate', next.pathname),
     withResolver: true,
     enableBeforeUnload: false,
     disabled: !active || leaving,
@@ -52,7 +52,10 @@ export function WorkspaceBar() {
     <>
       <header className="sticky top-0 z-30 -mx-4 -mt-4 mb-5 border-b bg-background/90 backdrop-blur-md sm:-mx-6 sm:-mt-6">
         <div className="mx-auto flex min-h-14 max-w-7xl items-center gap-3 px-4 py-2 sm:px-6">
-          <BrandMark compact />
+          {/* On computers the sidebar carries the brand. */}
+          <span className="lg:hidden">
+            <BrandMark compact />
+          </span>
           <span className="hidden rounded-full bg-primary/10 px-2.5 py-1 text-xs font-bold text-primary sm:inline">{workspace}</span>
           <div className="ml-auto flex min-w-0 items-center gap-2">
             <span className="flex min-w-0 items-center gap-2 text-sm">

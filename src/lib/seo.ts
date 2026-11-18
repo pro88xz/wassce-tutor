@@ -364,7 +364,7 @@ type IndexablePage = {
   /** JSON-LD objects, each emitted as its own <script type="application/ld+json">. */
   jsonLd?: Record<string, unknown>[]
   image?: string
-  type?: 'website' | 'article'
+  type?: 'website' | 'article' | 'profile'
   publishedAt?: string
   modifiedAt?: string
 }

@@ -32,6 +32,9 @@ type TutorRow = {
   recent_contacts: number
   /** Joined in the last 7 days. */
   is_new: boolean
+  /** Their page (/tutors/{slug}) and whether they review lessons (migration 28). */
+  slug?: string | null
+  reviewer?: boolean
 }
 type BookingRow = {
   id: string; starts_at: string; duration_minutes: number; price_nle: number; status: string; student_id: string
@@ -83,7 +86,7 @@ function AdminTutors() {
     queryKey: ['admin-tutors'],
     queryFn: async (): Promise<TutorRow[]> => {
       const { data, error } = await supabase.from('tutors')
-        .select('id,user_id,full_name,location,status,listed,verified_at,avatar_path,qualifications,experience_years,tutor_subjects(price_nle,lessons_per_week,subject:subjects(name)),tutor_contacts(created_at)')
+        .select('id,user_id,slug,reviewer,full_name,location,status,listed,verified_at,avatar_path,qualifications,experience_years,tutor_subjects(price_nle,lessons_per_week,subject:subjects(name)),tutor_contacts(created_at)')
         .order('verified_at', { ascending: false })
       if (error) throw error
       const since = Date.now() - 30 * 86_400_000
@@ -157,6 +160,15 @@ function AdminTutors() {
       if (error) throw error
       setRemoving(null)
       setReason('')
+    },
+  )
+
+  // Verified lesson reviewers (migration 28): their approved lessons say "Reviewed by" them, linking to their page.
+  const setReviewer = (t: TutorRow, on: boolean) => act(
+    on ? `${t.full_name} can now review lessons in the subjects they teach.` : `${t.full_name} no longer reviews lessons.`,
+    async () => {
+      const { error } = await supabase.rpc('set_tutor_reviewer', { p_tutor_id: t.id, p_on: on })
+      if (error) throw error
     },
   )
 
@@ -335,6 +347,12 @@ function AdminTutors() {
                   ) : (
                     <div className="flex flex-wrap gap-2">
                       {phoneFor(t.user_id) && <Button asChild size="sm" variant="outline"><a href={`https://wa.me/${waNumber(phoneFor(t.user_id) ?? '')}`} target="_blank" rel="noopener"><MessageCircle className="h-4 w-4" aria-hidden /> {phoneFor(t.user_id)}</a></Button>}
+                      {t.slug && <Button asChild size="sm" variant="outline"><a href={`/tutors/${t.slug}`} target="_blank" rel="noopener">Their page</a></Button>}
+                      {t.status === 'active' && (
+                        <Button size="sm" variant="outline" disabled={busy} onClick={() => void setReviewer(t, !t.reviewer)} aria-pressed={!!t.reviewer}>
+                          {t.reviewer ? 'Lesson reviewer: on' : 'Make lesson reviewer'}
+                        </Button>
+                      )}
                       {t.status === 'active'
                         ? <Button size="sm" variant="outline" disabled={busy} onClick={() => { setRemoving(t.id); setReason('') }} className="border-red-200 text-red-700">Remove from marketplace</Button>
                         : <Button size="sm" disabled={busy} onClick={() => void setStatus(t, 'active')}>Put back on the marketplace</Button>}
