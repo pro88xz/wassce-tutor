@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Four-figure and six-figure grid references</title>
+<desc id="d">A map grid with eastings 21 to 25 along the bottom and northings 46 to 49 up the side. The shaded square has the four-figure reference 2247, given by the easting and northing of its bottom left corner. Point A, a church, lies four-tenths of the way across and seven-tenths of the way up that square, so its six-figure reference is 224477. Eastings are always given before northings.</desc>
+<defs></defs>
+<rect width="800" height="520" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Read eastings first (along the corridor), then northings (up the stairs)</text>
+<rect x="250.0" y="210.0" width="110.0" height="110.0" rx="0" fill="#fef3c7" stroke="none" stroke-width="0"/>
+<line x1="140.0" y1="430.0" x2="140.0" y2="100.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/>
+<text x="140.0" y="452.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">21</text>
+<line x1="250.0" y1="430.0" x2="250.0" y2="100.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/>
+<text x="250.0" y="452.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">22</text>
+<line x1="360.0" y1="430.0" x2="360.0" y2="100.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/>
+<text x="360.0" y="452.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">23</text>
+<line x1="470.0" y1="430.0" x2="470.0" y2="100.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/>
+<text x="470.0" y="452.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">24</text>
+<line x1="580.0" y1="430.0" x2="580.0" y2="100.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/>
+<text x="580.0" y="452.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">25</text>
+<line x1="140.0" y1="430.0" x2="580.0" y2="430.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/>
+<text x="116.0" y="430.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">46</text>
+<line x1="140.0" y1="320.0" x2="580.0" y2="320.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/>
+<text x="116.0" y="320.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">47</text>
+<line x1="140.0" y1="210.0" x2="580.0" y2="210.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/>
+<text x="116.0" y="210.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">48</text>
+<line x1="140.0" y1="100.0" x2="580.0" y2="100.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/>
+<text x="116.0" y="100.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">49</text>
+<line x1="261.0" y1="320.0" x2="261.0" y2="310.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="250.0" y1="309.0" x2="260.0" y2="309.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="272.0" y1="320.0" x2="272.0" y2="310.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="250.0" y1="298.0" x2="260.0" y2="298.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="283.0" y1="320.0" x2="283.0" y2="310.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="250.0" y1="287.0" x2="260.0" y2="287.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="294.0" y1="320.0" x2="294.0" y2="310.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="250.0" y1="276.0" x2="260.0" y2="276.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="305.0" y1="320.0" x2="305.0" y2="304.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="250.0" y1="265.0" x2="266.0" y2="265.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="316.0" y1="320.0" x2="316.0" y2="310.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="250.0" y1="254.0" x2="260.0" y2="254.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="327.0" y1="320.0" x2="327.0" y2="310.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="250.0" y1="243.0" x2="260.0" y2="243.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="338.0" y1="320.0" x2="338.0" y2="310.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="250.0" y1="232.0" x2="260.0" y2="232.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="349.0" y1="320.0" x2="349.0" y2="310.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="250.0" y1="221.0" x2="260.0" y2="221.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<rect x="287.0" y="241.0" width="14.0" height="14.0" rx="0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<line x1="294.0" y1="241.0" x2="294.0" y2="227.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="288.0" y1="233.0" x2="300.0" y2="233.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="324.0" y="236.5" width="90.0" height="21.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="324.0" y="247.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">A (church)</text>
+<text x="360.0" y="480.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">eastings →</text>
+<text x="80.0" y="80.0" font-size="15" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">northings ↑</text>
+<rect x="620.0" y="120.0" width="170.0" height="200.0" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="705.0" y="145.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Shaded square</text>
+<text x="705.0" y="170.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4-figure: 2247</text>
+<text x="705.0" y="215.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Point A</text>
+<text x="705.0" y="240.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">22 + 4 tenths</text>
+<text x="705.0" y="260.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">47 + 7 tenths</text>
+<text x="705.0" y="292.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6-figure: 224477</text>
+</svg>

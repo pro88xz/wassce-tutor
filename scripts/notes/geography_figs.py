@@ -1732,6 +1732,351 @@ def mano_river_union_map():
     s.text(516, 530, "Côte d'Ivoire joined 2008", size=13, anchor="start")
     return s
 
+
+# ═══ G4: practical geography ═════════════════════════════════════════════════
+
+CONTOUR = "#a16207"
+
+
+@fig
+def grid_reference():
+    s = Svg(800, 520, "Four-figure and six-figure grid references",
+            "A map grid with eastings 21 to 25 along the bottom and northings 46 to 49 up the side. The shaded square has "
+            "the four-figure reference 2247, given by the easting and northing of its bottom left corner. Point A, a church, "
+            "lies four-tenths of the way across and seven-tenths of the way up that square, so its six-figure reference is "
+            "224477. Eastings are always given before northings.")
+    heading(s, "Read eastings first (along the corridor), then northings (up the stairs)")
+    x0, y0, sq = 140, 430, 110
+    s.rect(x0 + sq, y0 - 2 * sq, sq, sq, fill="#fef3c7", stroke="none", width=0)
+    for i in range(5):
+        s.line(x0 + i * sq, y0, x0 + i * sq, y0 - 3 * sq, color=BLUE, width=1.6)
+        s.text(x0 + i * sq, y0 + 22, str(21 + i), size=17, weight="bold", color=BLUE)
+    for j in range(4):
+        s.line(x0, y0 - j * sq, x0 + 4 * sq, y0 - j * sq, color=BLUE, width=1.6)
+        s.text(x0 - 24, y0 - j * sq, str(46 + j), size=17, weight="bold", color=BLUE)
+    for k in range(1, 10):
+        s.line(x0 + sq + k * sq / 10, y0 - sq, x0 + sq + k * sq / 10, y0 - sq - (10 if k != 5 else 16), color=MUTED, width=1)
+        s.line(x0 + sq, y0 - sq - k * sq / 10, x0 + sq + (10 if k != 5 else 16), y0 - sq - k * sq / 10, color=MUTED, width=1)
+    ax, ay = x0 + sq + 0.4 * sq, y0 - sq - 0.7 * sq
+    s.rect(ax - 7, ay - 2, 14, 14, fill=INK, stroke=INK, width=1)
+    s.line(ax, ay - 2, ax, ay - 16, color=INK, width=2.5)
+    s.line(ax - 6, ay - 10, ax + 6, ay - 10, color=INK, width=2.5)
+    s.label(ax + 30, ay + 4, "A (church)", size=15, anchor="start", weight="bold", pad=3)
+    s.text(x0 + 2 * sq, y0 + 50, "eastings →", size=15, color=BLUE, weight="bold")
+    s.text(x0 - 60, y0 - 3 * sq - 20, "northings ↑", size=15, color=BLUE, weight="bold", anchor="start")
+    bx = 640
+    s.rect(bx - 20, 120, 170, 200, fill="#ffffff", stroke="#94a3b8", width=1.2, rx=10)
+    s.text(bx + 65, 145, "Shaded square", size=15, weight="bold")
+    s.text(bx + 65, 170, "4-figure: 2247", size=16, color=ORANGE, weight="bold")
+    s.text(bx + 65, 215, "Point A", size=15, weight="bold")
+    s.text(bx + 65, 240, "22 + 4 tenths", size=14)
+    s.text(bx + 65, 260, "47 + 7 tenths", size=14)
+    s.text(bx + 65, 292, "6-figure: 224477", size=16, color=RED, weight="bold")
+    return s
+
+
+def _panel_title(s, x, y, t):
+    s.text(x, y, t, size=16, weight="bold", color=INK)
+
+
+@fig
+def contour_landforms():
+    s = Svg(800, 560, "Contour patterns of common landforms",
+            "Six contour patterns: a conical hill shown by roughly circular contours with the highest in the middle; a spur, "
+            "whose V-shaped contours point towards lower ground; a valley, whose V-shaped contours point upstream towards "
+            "higher ground with a river along the V; an escarpment with closely spaced contours on the steep scarp slope and "
+            "widely spaced contours on the gentle dip slope; a plateau with close contours at its edges and a large flat top; "
+            "and a saddle, a low col between two hills. Heights are in metres.")
+    heading(s, "Reading landforms from contours (heights in metres)")
+    cells = [(140, 160), (400, 160), (660, 160), (140, 400), (400, 400), (660, 400)]
+
+    def lab(x, y, t):
+        s.label(x, y, t, size=12, color=CONTOUR, weight="bold", pad=2)
+
+    # conical hill
+    cx, cy = cells[0]
+    _panel_title(s, cx, cy - 100, "Conical hill")
+    for r, h in [(80, "100"), (58, "200"), (38, "300"), (18, "400")]:
+        s.circle(cx, cy + 10, r, stroke=CONTOUR, width=2)
+        lab(cx + r * 0.71, cy + 10 - r * 0.71, h)
+    s.text(cx, cy + 10, "▲", size=12, color=BROWN)
+    # spur
+    cx, cy = cells[1]
+    _panel_title(s, cx, cy - 100, "Spur (V points downhill)")
+    for k, h in enumerate(["300", "200", "100"]):
+        yb = cy - 50 + k * 40
+        s.polyline([(cx - 110, yb), (cx, yb + 50), (cx + 110, yb)], color=CONTOUR, width=2)
+        lab(cx + 92, yb + 4, h)
+    s.text(cx, cy - 78, "high", size=13, color=MUTED)
+    s.text(cx, cy + 92, "low", size=13, color=MUTED)
+    # valley
+    cx, cy = cells[2]
+    _panel_title(s, cx, cy - 100, "Valley (V points uphill)")
+    for k, h in enumerate(["300", "200", "100"]):
+        yb = cy - 10 + k * 40
+        s.polyline([(cx - 110, yb), (cx, yb - 50), (cx + 110, yb)], color=CONTOUR, width=2)
+        lab(cx + 92, yb - 4, h)
+    s.path(f"M {cx} {cy - 58} Q {cx + 6} {cy + 20} {cx - 4} {cy + 90}", color=RIVER, width=3)
+    s.text(cx - 34, cy - 74, "high", size=13, color=MUTED)
+    s.label(cx + 22, cy + 70, "river", size=12, color=RIVER, italic=True, pad=2)
+    # escarpment
+    cx, cy = cells[3]
+    _panel_title(s, cx, cy - 100, "Escarpment")
+    for k, (x, h) in enumerate([(cx - 100, "100"), (cx - 82, "200"), (cx - 64, "300"), (cx - 10, "300"), (cx + 45, "200"), (cx + 100, "100")]):
+        s.path(f"M {x} {cy - 80} Q {x + 6} {cy} {x} {cy + 80}", color=CONTOUR, width=2)
+        lab(x + 3, cy + 90 if k % 2 == 0 else cy - 86, h)
+    s.text(cx - 86, cy + 112, "steep scarp", size=12, color=MUTED)
+    s.text(cx + 60, cy + 112, "gentle dip slope", size=12, color=MUTED)
+    # plateau
+    cx, cy = cells[4]
+    _panel_title(s, cx, cy - 100, "Plateau")
+    for d, h in [(0, "100"), (12, "200"), (24, "300")]:
+        s.rect(cx - 110 + d, cy - 75 + d, 220 - 2 * d, 150 - 2 * d, fill="none", stroke=CONTOUR, width=2, rx=40 - d)
+        lab(cx - 110 + d + 6, cy, h) if False else None
+    lab(cx - 104, cy + 30, "100")
+    lab(cx - 92, cy, "200")
+    lab(cx - 80, cy - 30, "300")
+    s.text(cx + 10, cy, "large flat top", size=13, color=MUTED, italic=True)
+    # saddle
+    cx, cy = cells[5]
+    _panel_title(s, cx, cy - 100, "Saddle (col) between hills")
+    s.ellipse(cx, cy, 115, 62, stroke=CONTOUR, width=2)
+    lab(cx, cy - 62, "100")
+    for hx in (cx - 55, cx + 55):
+        s.circle(hx, cy, 40, stroke=CONTOUR, width=2)
+        s.circle(hx, cy, 18, stroke=CONTOUR, width=2)
+        lab(hx, cy - 40, "200")
+        lab(hx, cy, "300")
+    s.label(cx, cy + 32, "col", size=13, weight="bold", color=RED, pad=2)
+    return s
+
+
+@fig
+def cross_section():
+    s = Svg(800, 560, "Drawing a cross-section from a contour map",
+            "Top: a line A–B drawn across contours from 100 m to 400 m. A strip of paper is laid along A–B and the points "
+            "where each contour crosses it are marked with their heights. Bottom: the marks are transferred to a graph with "
+            "a vertical scale, plotted at the right heights and joined with a smooth curve to show the shape of the land.")
+    heading(s, "From contour map to cross-section")
+    pts = [(80, 100), (160, 200), (220, 300), (270, 400), (420, 400), (480, 300), (570, 200), (690, 100)]
+    ty = 120
+    s.rect(50, 60, 700, 130, fill="#fefce8", stroke="#94a3b8", width=1.2, rx=8)
+    for x, h in pts:
+        s.path(f"M {x - 14} 68 Q {x + 10} {ty} {x - 8} 182", color=CONTOUR, width=2)
+        s.label(x - 6, 80, str(h), size=12, color=CONTOUR, weight="bold", pad=2)
+    s.line(60, ty, 740, ty, color=RED, width=2.5)
+    s.text(48, ty, "A", size=18, weight="bold", color=RED, anchor="end")
+    s.text(752, ty, "B", size=18, weight="bold", color=RED, anchor="start")
+    for x, _ in pts:
+        s.dot(x, ty, r=4, color=RED)
+    s.text(400, 208, "1. Mark where each contour crosses A–B on a paper strip.", size=14, color=MUTED)
+    gx0, gy0, gh = 90, 490, 220
+    s.line(gx0, gy0, 720, gy0, color=INK, width=2)
+    s.line(gx0, gy0, gx0, gy0 - gh - 10, color=INK, width=2)
+    for h in range(0, 501, 100):
+        y = gy0 - h * gh / 500
+        s.line(gx0 - 6, y, 720, y, color="#e2e8f0", width=1)
+        s.text(gx0 - 12, y, str(h), size=12, color=MUTED, anchor="end")
+    s.text(gx0 - 50, gy0 - gh / 2, "height (m)", size=13, color=MUTED)
+    prof = [(gx0 - 10, 70)] + pts[:4] + [(345, 440)] + pts[4:] + [(730, 70)]
+    xy = [(x if x > gx0 else gx0, gy0 - h * gh / 500) for x, h in prof]
+    d = f"M {xy[0][0]:.1f} {xy[0][1]:.1f} " + " ".join(
+        f"Q {xy[i][0]:.1f} {xy[i][1]:.1f} {(xy[i][0] + xy[i + 1][0]) / 2:.1f} {(xy[i][1] + xy[i + 1][1]) / 2:.1f}" for i in range(1, len(xy) - 1)
+    ) + f" L {xy[-1][0]:.1f} {xy[-1][1]:.1f} L {xy[-1][0]:.1f} {gy0} L {gx0} {gy0} Z"
+    s.path(d, color=INK, width=2.5, fill=LAND)
+    for x, h in pts:
+        s.dot(x, gy0 - h * gh / 500, r=4.5, color=RED)
+    s.text(gx0, gy0 + 20, "A", size=16, weight="bold", color=RED)
+    s.text(720, gy0 + 20, "B", size=16, weight="bold", color=RED)
+    s.text(400, gy0 + 40, "2. Plot each mark at its height and join the points with a smooth curve.", size=14, color=MUTED)
+    return s
+
+
+@fig
+def chain_survey():
+    s = Svg(800, 470, "A chain survey with offsets",
+            "A straight chain line runs from station A to station B, measured every 20 metres. Offsets are measured at right "
+            "angles from the chain line to features: two corners of a building, a tree, and the points where a path and a "
+            "stream cross. The chainage along the line and the offset distance fix the position of each feature.")
+    heading(s, "Chain survey: chain line plus right-angle offsets")
+    y = 260
+    x0, x1 = 80, 720
+    s.line(x0, y, x1, y, color=INK, width=3)
+    for m in range(0, 101, 20):
+        x = x0 + (x1 - x0) * m / 100
+        s.line(x, y - 8, x, y + 8, color=INK, width=2)
+        s.text(x, y + 26, f"{m} m", size=13, color=MUTED)
+    for x, t in [(x0, "A"), (x1, "B")]:
+        s.polygon([(x, y - 18), (x - 12, y + 4), (x + 12, y + 4)], fill="#ffffff", stroke=RED, width=2.5)
+        s.text(x, y - 32, t, size=18, weight="bold", color=RED)
+    def X(m):
+        return x0 + (x1 - x0) * m / 100
+    # building
+    bx1, bx2 = X(25), X(45)
+    s.rect(bx1, y - 160, bx2 - bx1, 70, fill=F_GREY, stroke=INK, width=2)
+    s.text((bx1 + bx2) / 2, y - 125, "building", size=14, weight="bold")
+    for x in (bx1, bx2):
+        s.line(x, y, x, y - 90, color=ORANGE, width=2, dash="6 4")
+        s.rect(x, y - 12, 10, 12, fill="none", stroke=ORANGE, width=1.2)
+    s.label(bx1 - 6, y - 50, "offset 18 m", size=12, anchor="end", color=ORANGE, weight="bold", pad=2)
+    # tree
+    tx = X(62)
+    s.line(tx, y, tx, y + 90, color=ORANGE, width=2, dash="6 4")
+    s.circle(tx, y + 104, 14, fill="#86efac", stroke=GREEN, width=2)
+    s.label(tx + 26, y + 70, "offset 12 m to tree", size=12, anchor="start", color=ORANGE, weight="bold", pad=2)
+    # path and stream
+    s.path(f"M {X(78)} {y - 170} L {X(84)} {y + 160}", color=BROWN, width=3, dash="10 5")
+    s.label(X(78) + 14, y - 150, "path", size=13, anchor="start", color=BROWN, pad=2)
+    s.path(f"M {X(8)} {y + 170} Q {X(14)} {y + 40} {X(12)} {y} Q {X(10)} {y - 80} {X(18)} {y - 180}", color=RIVER, width=3)
+    s.label(X(18) + 10, y - 170, "stream", size=13, anchor="start", color=RIVER, italic=True, pad=2)
+    note(s, "Each feature is fixed by its chainage along A–B and its offset at a right angle.", 450, size=14, color=INK)
+    return s
+
+
+@fig
+def compass_bearings():
+    s = Svg(800, 460, "Compass points and bearings",
+            "Left: the sixteen points of the compass from north through north-north-east, north-east and so on. Right: a "
+            "bearing is the angle measured clockwise from north, written with three figures. From X, the bearing of Y is "
+            "060°; the back bearing, from Y to X, is 060° + 180° = 240°.")
+    heading(s, "Sixteen compass points, and bearings measured clockwise from north")
+    cx, cy, r = 210, 250, 150
+    s.circle(cx, cy, r, fill="#ffffff", stroke="#94a3b8", width=1.5)
+    names = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"]
+    for i, n in enumerate(names):
+        a = math.radians(90 - i * 22.5)
+        main = i % 4 == 0
+        rr = r - (8 if main else 30)
+        s.line(cx, cy, cx + rr * math.cos(a), cy - rr * math.sin(a), color=INK if main else MUTED, width=2.2 if main else 1)
+        tr = r + 20
+        s.text(cx + tr * math.cos(a), cy - tr * math.sin(a), n, size=15 if main else 12, weight="bold" if main else "normal",
+               color=RED if n == "N" else INK)
+    px, py, pr = 560, 290, 140
+    s.line(px, py, px, py - pr - 10, color=INK, width=2.5)
+    s.text(px, py - pr - 24, "N", size=16, weight="bold", color=RED)
+    a = math.radians(90 - 60)
+    yx, yy = px + pr * math.cos(a), py - pr * math.sin(a)
+    s.line(px, py, yx, yy, color=BLUE, width=3)
+    s.arc(px, py, 60, 90, 30, color=ORANGE, width=2.5)
+    s.label(px + 36, py - 82, "60°", size=14, color=ORANGE, weight="bold", pad=2)
+    s.dot(px, py, r=6, color=INK)
+    s.text(px - 18, py + 4, "X", size=18, weight="bold", anchor="end")
+    s.dot(yx, yy, r=6, color=INK)
+    s.text(yx + 14, yy, "Y", size=18, weight="bold", anchor="start")
+    s.text(px + 20, py + 60, "bearing of Y from X = 060°", size=15, weight="bold", color=BLUE)
+    s.text(px + 20, py + 84, "back bearing (Y to X) = 240°", size=15, weight="bold", color=PURPLE)
+    s.text(px + 20, py + 108, "back bearing = bearing ± 180°", size=14, color=MUTED)
+    return s
+
+
+@fig
+def statistical_graphs():
+    s = Svg(800, 620, "Four statistical graphs drawn from geographical data",
+            "Four graphs of illustrative data: a simple bar graph of rice production over five years; a line graph of "
+            "monthly temperature; a pie chart of land use in a district (farming 45%, forest 25%, mining 12%, settlement 10%, "
+            "other 8%); and a divided (compound) bar showing the same land use as parts of one bar.")
+    heading(s, "Bar, line, pie and divided bar (illustrative data)")
+    # bar
+    _panel_title(s, 200, 70, "Simple bar graph")
+    bx, by = 70, 290
+    s.line(bx, by, 340, by, color=INK, width=1.8)
+    s.line(bx, by, bx, 90, color=INK, width=1.8)
+    for k, v in enumerate([60, 75, 70, 90, 110]):
+        x = bx + 18 + k * 52
+        s.rect(x, by - v * 1.6, 34, v * 1.6, fill=BLUE, stroke="none", width=0)
+        s.text(x + 17, by + 16, str(2019 + k), size=12, color=MUTED)
+    s.text(bx + 4, 100, "output", size=12, color=MUTED, anchor="start")
+    # line
+    _panel_title(s, 590, 70, "Line graph")
+    lx, ly = 460, 290
+    s.line(lx, ly, 740, ly, color=INK, width=1.8)
+    s.line(lx, ly, lx, 90, color=INK, width=1.8)
+    temps = [27, 28, 28.5, 28.5, 28, 26.5, 25.5, 25.5, 26, 26.5, 27, 27]
+    pts = [(lx + 14 + i * 23, ly - (t - 22) * 26) for i, t in enumerate(temps)]
+    s.polyline(pts, color=RED, width=3)
+    for i, (x, y) in enumerate(pts):
+        s.dot(x, y, r=3.5, color=RED)
+        s.text(x, ly + 16, "JFMAMJJASOND"[i], size=11, color=MUTED)
+    s.text(lx + 4, 100, "°C", size=12, color=MUTED, anchor="start")
+    # pie
+    _panel_title(s, 200, 350, "Pie chart")
+    data = [("farming", 45, GREEN), ("forest", 25, "#065f46"), ("mining", 12, ORANGE), ("settlement", 10, PURPLE), ("other", 8, "#94a3b8")]
+    pcx, pcy, pr = 150, 480, 95
+    a0 = 90.0
+    for name, v, col in data:
+        a1 = a0 - v * 3.6
+        large = 1 if v * 3.6 > 180 else 0
+        x0, y0 = pcx + pr * math.cos(math.radians(a0)), pcy - pr * math.sin(math.radians(a0))
+        x1, y1 = pcx + pr * math.cos(math.radians(a1)), pcy - pr * math.sin(math.radians(a1))
+        s.path(f"M {pcx} {pcy} L {x0:.1f} {y0:.1f} A {pr} {pr} 0 {large} 1 {x1:.1f} {y1:.1f} Z", color="#ffffff", width=2, fill=col)
+        a0 = a1
+    for k, (name, v, col) in enumerate(data):
+        y = 410 + k * 28
+        s.rect(262, y - 8, 16, 16, fill=col, stroke="none", width=0)
+        s.text(286, y, f"{name} {v}% ({v * 3.6:g}°)", size=13, anchor="start")
+    # divided bar
+    _panel_title(s, 590, 350, "Divided (compound) bar")
+    dx, dy, dw = 470, 420, 260
+    acc = 0
+    for name, v, col in data:
+        s.rect(dx + acc * dw / 100, dy, v * dw / 100, 70, fill=col, stroke="#ffffff", width=2)
+        if v >= 12:
+            s.text(dx + (acc + v / 2) * dw / 100, dy + 35, f"{v}%", size=13, color="#ffffff", weight="bold")
+        acc += v
+    s.text(dx + dw / 2, dy + 100, "same land-use data as the pie chart", size=13, color=MUTED)
+    return s
+
+
+@fig
+def statistical_maps():
+    s = Svg(800, 600, "Four kinds of statistical map",
+            "A dot map, where each dot stands for a fixed number of people; a choropleth map, where areas are shaded darker "
+            "for higher values such as population density; an isopleth map, where lines join places of equal value, such as "
+            "isohyets of equal rainfall; and a flow map, where arrows of different widths show the amount of movement between "
+            "places.")
+    heading(s, "Dot, choropleth, isopleth and flow maps (illustrative)")
+    import random
+    rng = random.Random(7)
+    # dot map
+    _panel_title(s, 200, 70, "Dot map")
+    outline = [(70, 110), (300, 95), (340, 180), (310, 280), (110, 290), (60, 200)]
+    poly(s, outline, "#ffffff", stroke=INK, width=2)
+    for _ in range(26):
+        s.dot(rng.uniform(220, 310), rng.uniform(120, 200), r=3.5, color=INK)
+    for _ in range(9):
+        s.dot(rng.uniform(90, 250), rng.uniform(170, 270), r=3.5, color=INK)
+    s.text(200, 310, "1 dot = 1,000 people", size=13, color=MUTED)
+    # choropleth
+    _panel_title(s, 590, 70, "Choropleth map")
+    shades = [["#fee2e2", "#fca5a5", "#ef4444"], ["#fca5a5", "#ef4444", "#b91c1c"], ["#fee2e2", "#fee2e2", "#fca5a5"]]
+    for i in range(3):
+        for j in range(3):
+            s.rect(470 + j * 70, 95 + i * 62, 70, 62, fill=shades[i][j], stroke=INK, width=1.5)
+    for k, (col, t) in enumerate([("#fee2e2", "low"), ("#fca5a5", "medium"), ("#ef4444", "high"), ("#b91c1c", "very high")]):
+        s.rect(690, 110 + k * 30, 18, 18, fill=col, stroke=INK, width=1)
+        s.text(716, 119 + k * 30, t, size=12, anchor="start")
+    s.text(590, 310, "shading by density class", size=13, color=MUTED)
+    # isopleth
+    _panel_title(s, 200, 360, "Isopleth map (isohyets)")
+    s.rect(70, 380, 260, 180, fill="#ffffff", stroke=INK, width=2)
+    for k, v in enumerate(["3,000", "2,500", "2,000", "1,500"]):
+        y = 410 + k * 42
+        s.path(f"M 70 {y + 20} Q 150 {y - 10} 220 {y + 8} T 330 {y - 6}", color=BLUE, width=2)
+        s.label(110 + k * 20, y + 8, v, size=12, color=BLUE, weight="bold", pad=2)
+    s.text(200, 580, "lines join places with equal rainfall (mm)", size=13, color=MUTED)
+    # flow
+    _panel_title(s, 590, 360, "Flow map")
+    hubs = {"Freetown": (500, 470), "Bo": (650, 530), "Makeni": (650, 410), "Kenema": (740, 470)}
+    for (a, b, w) in [("Makeni", "Freetown", 14), ("Bo", "Freetown", 10), ("Kenema", "Bo", 6)]:
+        (x1, y1), (x2, y2) = hubs[a], hubs[b]
+        s.line(x1, y1, x2, y2, color=ORANGE, width=w, cap="butt", opacity=0.8)
+        s.head(x2 + (x1 - x2) * 0.18, y2 + (y1 - y2) * 0.18, math.atan2(y2 - y1, x2 - x1), color=ORANGE, size=10 + w)
+    for n, (x, y) in hubs.items():
+        s.dot(x, y, r=6, color=INK)
+        s.label(x, y - 18, n, size=12, weight="bold", pad=2)
+    s.text(590, 580, "arrow width shows volume of movement", size=13, color=MUTED)
+    return s
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:
