@@ -248,3 +248,15 @@ jobs:
           test "$RESULT" = "1,f,4,0" || { echo "Checks did not match 1,f,4,0"; exit 1; }
           # For the record (changes as people sign up).
           psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select string_agg(account_role || ': ' || n, ', ' order by account_role) from (select account_role, count(*) n from public.profiles group by 1) r;"
+
+      - name: Verify (27) every practice set is free, now and when new ones are added
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            (select count(*) from public.papers where coalesce(paper_type, '') <> 'Mock' and not is_free),
+            (select count(*) from pg_trigger where not tgisinternal and tgname = 'practice_sets_stay_free'));" | tr -d '[:space:]')"
+          echo "practice sets marked locked, trigger that keeps them free: $RESULT"
+          test "$RESULT" = "0,1" || { echo "Checks did not match 0,1"; exit 1; }
