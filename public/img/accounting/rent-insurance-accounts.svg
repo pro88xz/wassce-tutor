@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Rent and insurance accounts with an accrual and a prepayment</title>
+<desc id="d">Rent account for 2026: debit bank 11,000 and accrued c/d 1,000, total 12,000; credit income statement 12,000; accrued b/d 1,000 on the credit side on 1 January 2027, a liability. Insurance account: debit bank 6,000; credit income statement 1,500 and prepaid c/d 4,500, total 6,000; prepaid b/d 4,500 on the debit side, an asset.</desc>
+<defs></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Year-end adjustments in the ledger (NLe)</text>
+<text x="400.0" y="66.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Rent account</text>
+<rect x="10.0" y="78.0" width="780.0" height="32.0" rx="0" fill="#ede9fe" stroke="none" stroke-width="0"/>
+<text x="16.0" y="94.0" font-size="15" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">2026</text>
+<text x="108.0" y="94.0" font-size="15" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">Details</text>
+<text x="394.0" y="94.0" font-size="15" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">NLe</text>
+<text x="406.0" y="94.0" font-size="15" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">2026</text>
+<text x="498.0" y="94.0" font-size="15" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">Details</text>
+<text x="784.0" y="94.0" font-size="15" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">NLe</text>
+<line x1="10.0" y1="110.0" x2="790.0" y2="110.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="108.0" y="126.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Bank</text>
+<text x="394.0" y="126.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">11,000</text>
+<text x="406.0" y="126.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Dec 31</text>
+<text x="498.0" y="126.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Income statement</text>
+<text x="784.0" y="126.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">12,000</text>
+<text x="16.0" y="154.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Dec 31</text>
+<text x="108.0" y="154.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Accrued c/d</text>
+<text x="394.0" y="154.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">1,000</text>
+<line x1="306.0" y1="168.0" x2="396.0" y2="168.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="696.0" y1="168.0" x2="786.0" y2="168.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<text x="394.0" y="182.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">12,000</text>
+<text x="784.0" y="182.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">12,000</text>
+<line x1="306.0" y1="192.0" x2="396.0" y2="192.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="306.0" y1="195.0" x2="396.0" y2="195.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="696.0" y1="192.0" x2="786.0" y2="192.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="696.0" y1="195.0" x2="786.0" y2="195.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<text x="406.0" y="210.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">2027 Jan 1</text>
+<text x="498.0" y="210.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Accrued b/d</text>
+<text x="784.0" y="210.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">1,000</text>
+<line x1="400.0" y1="78.0" x2="400.0" y2="222.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="10.0" y="78.0" width="780.0" height="144.0" rx="0" fill="none" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="400.0" y="270.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Insurance account</text>
+<rect x="10.0" y="282.0" width="780.0" height="32.0" rx="0" fill="#ede9fe" stroke="none" stroke-width="0"/>
+<text x="16.0" y="298.0" font-size="15" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">2026</text>
+<text x="108.0" y="298.0" font-size="15" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">Details</text>
+<text x="394.0" y="298.0" font-size="15" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">NLe</text>
+<text x="406.0" y="298.0" font-size="15" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">2026</text>
+<text x="498.0" y="298.0" font-size="15" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">Details</text>
+<text x="784.0" y="298.0" font-size="15" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">NLe</text>
+<line x1="10.0" y1="314.0" x2="790.0" y2="314.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="16.0" y="330.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Oct 1</text>
+<text x="108.0" y="330.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Bank</text>
+<text x="394.0" y="330.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">6,000</text>
+<text x="406.0" y="330.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Dec 31</text>
+<text x="498.0" y="330.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Income statement</text>
+<text x="784.0" y="330.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">1,500</text>
+<text x="406.0" y="358.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Dec 31</text>
+<text x="498.0" y="358.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Prepaid c/d</text>
+<text x="784.0" y="358.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">4,500</text>
+<line x1="306.0" y1="372.0" x2="396.0" y2="372.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="696.0" y1="372.0" x2="786.0" y2="372.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<text x="394.0" y="386.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">6,000</text>
+<text x="784.0" y="386.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">6,000</text>
+<line x1="306.0" y1="396.0" x2="396.0" y2="396.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="306.0" y1="399.0" x2="396.0" y2="399.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="696.0" y1="396.0" x2="786.0" y2="396.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="696.0" y1="399.0" x2="786.0" y2="399.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<text x="16.0" y="414.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">2027 Jan 1</text>
+<text x="108.0" y="414.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Prepaid b/d</text>
+<text x="394.0" y="414.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">4,500</text>
+<line x1="400.0" y1="282.0" x2="400.0" y2="426.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="10.0" y="282.0" width="780.0" height="144.0" rx="0" fill="none" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="400.0" y="455.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Accrued b/d on the credit side = liability.   Prepaid b/d on the debit side = asset.</text>
+</svg>

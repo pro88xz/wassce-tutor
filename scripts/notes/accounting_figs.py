@@ -323,6 +323,213 @@ def balancing_account():
     return s
 
 
+
+# ═══ FA2: trial balance to final accounts ════════════════════════════════════
+
+@fig
+def trial_balance_sides():
+    s = Svg(800, 470, "Which balances go on each side of the trial balance",
+            "Debit balances in a trial balance: assets (premises, vehicles, equipment, trade receivables, cash, bank), "
+            "expenses (wages, rent, carriage), purchases, returns inwards, discount allowed, opening inventory and drawings. "
+            "Credit balances: capital, liabilities (loans, trade payables, bank overdraft), sales, returns outwards, "
+            "discount received, other income such as rent or commission received, and provisions for depreciation and "
+            "doubtful debts. The two columns must have equal totals.")
+    heading(s, "Trial balance: debit balances and credit balances")
+    left = box(s, 205, 245, 350, 320, ["DEBIT (Dr) balances", "", "assets: premises, vehicles,", "equipment, receivables, cash, bank",
+                                       "expenses: wages, rent, carriage", "purchases", "returns inwards (sales returns)",
+                                       "discount allowed", "opening inventory (stock)", "drawings"], col=BLUE, fill=F_BLUE, size=17)
+    right = box(s, 595, 245, 350, 320, ["CREDIT (Cr) balances", "", "capital", "liabilities: loans, trade", "payables, bank overdraft",
+                                        "sales", "returns outwards (purchases ret.)", "discount received",
+                                        "other income: rent, commission", "provisions: depreciation, doubtful debts"],
+                col=ORANGE, fill=F_AMBER, size=17)
+    note(s, "Total of debit column  =  total of credit column", 448, size=16, color=INK)
+    return s
+
+
+@fig
+def errors_classification():
+    s = Svg(800, 500, "Classification of accounting errors",
+            "Errors that do not affect the agreement of the trial balance: omission, commission, principle, original entry, "
+            "complete reversal and compensating errors. Errors that do affect the agreement of the trial balance: an entry "
+            "on one side only, unequal amounts on the two sides, two debits or two credits, casting (addition) errors in "
+            "one account, and wrong extraction of a balance. Errors that affect the agreement cause a difference that is "
+            "placed in a suspense account until found.")
+    heading(s, "Two families of errors")
+    top = box(s, 400, 85, 220, 54, ["ERRORS"], col=PURPLE, fill=F_PURPLE, size=19)
+    a = box(s, 205, 290, 360, 300, ["Do NOT affect the", "trial balance totals", "", "omission (not recorded at all)",
+                                    "commission (wrong person's a/c)", "principle (wrong class of a/c)",
+                                    "original entry (wrong amount both sides)", "complete reversal (Dr and Cr swapped)",
+                                    "compensating (two errors cancel out)"], col=GREEN, fill=F_GREEN, size=17)
+    b = box(s, 595, 290, 360, 300, ["DO affect the", "trial balance totals", "", "single entry (one side only)",
+                                    "unequal amounts on the two sides", "two debits or two credits",
+                                    "casting error in one account", "balance extracted wrongly",
+                                    "→ difference to SUSPENSE a/c"], col=RED, fill=F_RED, size=17)
+    link(s, top, a, color=MUTED, width=2.2)
+    link(s, top, b, color=MUTED, width=2.2)
+    return s
+
+
+@fig
+def bank_reconciliation_reasons():
+    s = Svg(800, 520, "Why the cash book and the bank statement disagree",
+            "Items in the cash book but not yet on the bank statement (timing differences): unpresented cheques, which are "
+            "cheques paid out but not yet cleared, and uncredited lodgements, which are amounts paid in but not yet credited "
+            "by the bank. These go in the bank reconciliation statement. Items on the bank statement but not yet in the "
+            "cash book: bank charges, standing orders and direct debits, direct credits and credit transfers, interest, and "
+            "dishonoured cheques. These are entered in the cash book to update it. Errors in either record are corrected.")
+    heading(s, "Cash book vs bank statement: two kinds of difference")
+    a = box(s, 205, 245, 360, 290, ["In the CASH BOOK but not", "yet on the BANK STATEMENT", "",
+                                    "unpresented cheques", "(paid out, not yet cleared)", "",
+                                    "uncredited lodgements", "(paid in, not yet credited)", "",
+                                    "→ show in the BANK", "RECONCILIATION STATEMENT"], col=BLUE, fill=F_BLUE, size=17)
+    b = box(s, 595, 245, 360, 290, ["On the BANK STATEMENT but", "not yet in the CASH BOOK", "",
+                                    "bank charges, interest charged", "standing orders, direct debits",
+                                    "direct credits, transfers in", "interest received",
+                                    "dishonoured cheques", "",
+                                    "→ enter in the CASH BOOK", "(adjusted cash book)"], col=ORANGE, fill=F_AMBER, size=17)
+    note(s, "Step 1: update the cash book.   Step 2: reconcile its new balance with the bank statement.", 420 + 85, size=15, color=INK)
+    return s
+
+
+@fig
+def income_statement_flow():
+    s = Svg(800, 500, "How the income statement is built up",
+            "The income statement has two parts. In the trading section, net sales (sales less returns inwards) minus the "
+            "cost of sales gives gross profit; cost of sales is opening inventory plus net purchases plus carriage inwards "
+            "minus closing inventory. In the profit and loss section, gross profit plus other income (such as discount "
+            "received, rent or commission received) minus expenses (such as wages, rent, carriage outwards, depreciation "
+            "and discount allowed) gives net profit, which is added to the owner's capital.")
+    heading(s, "Income statement: trading section, then profit and loss section")
+    rows = [(110, "Net sales", "sales − returns inwards", BLUE, F_BLUE),
+            (190, "− Cost of sales", "opening inventory + net purchases + carriage in − closing inventory", ORANGE, F_AMBER),
+            (270, "= GROSS PROFIT", "trading section ends here", GREEN, F_GREEN),
+            (350, "+ Other income − Expenses", "discount received, rent received; wages, rent, depreciation, carriage out", PURPLE, F_PURPLE),
+            (430, "= NET PROFIT", "added to capital in the statement of financial position", GREEN, F_GREEN)]
+    prev = None
+    for y, a, b, col, fill in rows:
+        bb = box(s, 400, y, 680, 60, [a, b], col=col, fill=fill, size=17)
+        if prev:
+            link(s, prev, bb, color=MUTED, width=2)
+        prev = bb
+    return s
+
+
+@fig
+def depreciation_methods():
+    s = Svg(800, 470, "Straight-line and reducing-balance depreciation compared",
+            "Graph of the carrying amount of a machine costing NLe 100,000 over five years. Under the straight-line method "
+            "at 20% of cost a year, the carrying amount falls by the same NLe 20,000 each year: 100,000, 80,000, 60,000, "
+            "40,000, 20,000 and 0. Under the reducing-balance method at 30% a year, the charge is largest in the first year "
+            "and gets smaller: 100,000, 70,000, 49,000, 34,300, 24,010 and 16,807.")
+    heading(s, "Carrying amount of a NLe 100,000 machine")
+    ox, oy, w, h = 110, 400, 600, 300
+    s.line(ox, oy, ox + w + 10, oy, color=INK, width=2)
+    s.line(ox, oy, ox, oy - h - 10, color=INK, width=2)
+    for k in range(0, 6):
+        x = ox + k * w / 5
+        s.text(x, oy + 20, f"Year {k}" if k else "Start", size=13, color=MUTED)
+        s.line(x, oy, x, oy - h, color="#e2e8f0", width=1)
+    for v in range(0, 101, 20):
+        y = oy - v * h / 100
+        s.text(ox - 10, y, f"{v},000" if v else "0", size=12, color=MUTED, anchor="end")
+        s.line(ox, y, ox + w, y, color="#e2e8f0", width=1)
+    sl = [100, 80, 60, 40, 20, 0]
+    rb = [100, 70, 49, 34.3, 24.01, 16.807]
+    for data, col, lab, ly in ((sl, BLUE, "straight line, 20% of cost", 0), (rb, ORANGE, "reducing balance, 30%", 1)):
+        pts = [(ox + k * w / 5, oy - v * h / 100) for k, v in enumerate(data)]
+        s.polyline(pts, color=col, width=3.5)
+        for x, y in pts:
+            s.dot(x, y, r=5, color=col)
+    s.rect(470, 90, 250, 64, fill="#ffffff", stroke=RULE, width=1.2, rx=8)
+    s.line(484, 110, 514, 110, color=BLUE, width=3.5)
+    s.text(522, 110, "straight line, 20% of cost", size=13, anchor="start")
+    s.line(484, 136, 514, 136, color=ORANGE, width=3.5)
+    s.text(522, 136, "reducing balance, 30%", size=13, anchor="start")
+    note(s, "Straight line: equal charge each year.  Reducing balance: highest charge in year 1, never reaches zero.", 450, size=13, color=INK)
+    return s
+
+
+@fig
+def accruals_prepayments():
+    s = Svg(800, 430, "Accruals and prepayments on a timeline",
+            "A financial year from 1 January to 31 December 2026. Rent of NLe 1,000 a month: payments of NLe 11,000 cover "
+            "January to November, so December's NLe 1,000 is owing at the year end, an accrual; the charge for the year is "
+            "NLe 12,000. Insurance of NLe 6,000 paid on 1 October covers twelve months to 30 September 2027, so nine months, "
+            "NLe 4,500, is paid in advance, a prepayment; the charge for 2026 is NLe 1,500.")
+    heading(s, "Charge the expense for the year, not the cash paid")
+    x0, x1 = 80, 720
+    def X(m):
+        return x0 + (x1 - x0) * m / 12
+    for y, title in ((150, "Rent: NLe 1,000 a month"), (310, "Insurance: NLe 6,000 paid 1 Oct for 12 months")):
+        s.text(x0, y - 60, title, size=16, weight="bold", color=INK, anchor="start")
+        s.line(x0, y, x1 + 60, y, color=INK, width=2)
+        for m in range(13):
+            s.line(X(m), y - 6, X(m), y + 6, color=MUTED, width=1.2)
+        s.text(X(0), y + 22, "1 Jan", size=12, color=MUTED)
+        s.text(X(12), y + 22, "31 Dec", size=12, color=MUTED)
+        s.line(X(12), y - 40, X(12), y + 40, color=RED, width=2, dash="6 4")
+    s.rect(X(0), 122, X(11) - X(0), 22, fill=F_GREEN, stroke=GREEN, width=1.5)
+    s.text((X(0) + X(11)) / 2, 133, "paid Jan–Nov: 11,000", size=13, weight="bold", color=GREEN)
+    s.rect(X(11), 122, X(12) - X(11), 22, fill=F_RED, stroke=RED, width=1.5)
+    s.label(X(11.5), 182, "Dec owing: ACCRUAL 1,000", size=13, color=RED, weight="bold", pad=3)
+    s.rect(X(9), 282, X(12) - X(9), 22, fill=F_GREEN, stroke=GREEN, width=1.5)
+    s.text((X(9) + X(12)) / 2, 293, "Oct–Dec: 1,500", size=12, weight="bold", color=GREEN)
+    s.rect(X(12), 282, 60, 22, fill=F_BLUE, stroke=BLUE, width=1.5)
+    s.label(X(10.2), 342, "Jan–Sep 2027 paid early: PREPAYMENT 4,500", size=13, color=BLUE, weight="bold", pad=3)
+    note(s, "Rent charge 2026 = 11,000 + 1,000 = 12,000      Insurance charge 2026 = 6,000 − 4,500 = 1,500", 405, size=14, color=INK)
+    return s
+
+
+@fig
+def manufacturing_cost_flow():
+    s = Svg(800, 500, "Cost structure in a manufacturing account",
+            "Prime cost is direct materials consumed (opening raw materials plus purchases plus carriage inwards minus "
+            "closing raw materials) plus direct labour plus direct expenses. Adding factory overheads such as indirect "
+            "wages, factory rent, power and depreciation of machinery, and adjusting for opening and closing work in "
+            "progress, gives the production cost of goods completed, which is transferred to the trading account in place "
+            "of purchases.")
+    heading(s, "Manufacturing account: from raw materials to production cost")
+    rows = [(100, "Direct materials consumed", "opening raw materials + purchases + carriage in − closing raw materials", BLUE, F_BLUE),
+            (180, "+ Direct labour + Direct expenses", "wages of machine operators; royalties", BLUE, F_BLUE),
+            (260, "= PRIME COST", "", ORANGE, F_AMBER),
+            (340, "+ Factory overheads ± Work in progress", "indirect wages, factory rent, power, machine depreciation", PURPLE, F_PURPLE),
+            (420, "= PRODUCTION COST of goods completed", "→ transferred to the trading account", GREEN, F_GREEN)]
+    prev = None
+    for y, a, b, col, fill in rows:
+        bb = box(s, 400, y, 680, 58 if b else 46, [a, b] if b else [a], col=col, fill=fill, size=17)
+        if prev:
+            link(s, prev, bb, color=MUTED, width=2)
+        prev = bb
+    note(s, "Add opening WIP and deduct closing WIP to find the cost of goods completed.", 482, size=14, color=MUTED)
+    return s
+
+
+@fig
+def rent_insurance_accounts():
+    s = Svg(800, 470, "Rent and insurance accounts with an accrual and a prepayment",
+            "Rent account for 2026: debit bank 11,000 and accrued c/d 1,000, total 12,000; credit income statement 12,000; "
+            "accrued b/d 1,000 on the credit side on 1 January 2027, a liability. Insurance account: debit bank 6,000; "
+            "credit income statement 1,500 and prepaid c/d 4,500, total 6,000; prepaid b/d 4,500 on the debit side, an "
+            "asset.")
+    heading(s, "Year-end adjustments in the ledger (NLe)")
+    w = [92, 196, 102, 92, 196, 102]
+    hdr = ["2026", "Details", "NLe", "2026", "Details", "NLe"]
+    al = ["l", "l", "r", "l", "l", "r"]
+    s.text(400, 66, "Rent account", size=16, weight="bold", color=INK)
+    rows = [["", "Bank", "11,000", "Dec 31", "Income statement", "12,000"],
+            ["Dec 31", "Accrued c/d", "1,000", "", "", ""],
+            ["", "", "12,000", "", "", "12,000"],
+            ["", "", "", "2027 Jan 1", "Accrued b/d", "1,000"]]
+    ledger_table(s, 10, 78, w, hdr, rows, size=15, row_h=28, bold_rows={2}, rule_rows={2}, split_after=2, align=al)
+    s.text(400, 270, "Insurance account", size=16, weight="bold", color=INK)
+    rows2 = [["Oct 1", "Bank", "6,000", "Dec 31", "Income statement", "1,500"],
+             ["", "", "", "Dec 31", "Prepaid c/d", "4,500"],
+             ["", "", "6,000", "", "", "6,000"],
+             ["2027 Jan 1", "Prepaid b/d", "4,500", "", "", ""]]
+    ledger_table(s, 10, 282, w, hdr, rows2, size=15, row_h=28, bold_rows={2}, rule_rows={2}, split_after=2, align=al)
+    note(s, "Accrued b/d on the credit side = liability.   Prepaid b/d on the debit side = asset.", 455, size=14, color=INK)
+    return s
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:
