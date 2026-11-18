@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
-import { Check, ClipboardCheck, MessageCircle, UserRound } from 'lucide-react'
+import { ArrowRight, Check, ClipboardCheck, MessageCircle, UserRound } from 'lucide-react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { fetchSubjectSummaries, hasSubjectPage } from '@/lib/public-content'
 import { breadcrumbJsonLd, faqJsonLd, indexablePageTags, tutoringServiceJsonLd } from '@/lib/seo'
@@ -8,16 +8,16 @@ import { TUTOR_PHOTO } from '@/lib/tutors'
 import { supabase } from '@/lib/supabase'
 import { BookingForm } from '@/components/tutors/BookingForm'
 import { TutorMarketplace } from '@/components/tutors/Marketplace'
-import { TUTOR_FAQ, TutorFaq, TutorHowItWorks, TutorJoinBand, TutorSearch, TutorSubjectGrid } from '@/components/tutors/TutorSections'
+import { TUTOR_FAQ, TutorFaq, TutorHowItWorks, TutorJoinBand, TutorSubjectGrid } from '@/components/tutors/TutorSections'
 
 const TRAIL: [string, string][] = [
   ['Home', '/'],
   ['Book a tutor', '/tutors'],
 ]
 
-const TITLE = 'Book a WASSCE Tutor in Sierra Leone: Verified, In Person | WASSCE Tutor'
+const TITLE = 'Book a Private WASSCE Tutor in Sierra Leone | WASSCE Tutor'
 const DESCRIPTION =
-  'Choose a verified WASSCE tutor in Sierra Leone, see their monthly fee upfront, and message them on WhatsApp to arrange in-person lessons near you.'
+  'Book a private WASSCE tutor in Sierra Leone for one-to-one lessons in person. See each tutor’s monthly fee upfront, then message them on WhatsApp.'
 
 export const Route = createFileRoute('/tutors/')({
   ssr: true,
@@ -27,7 +27,7 @@ export const Route = createFileRoute('/tutors/')({
     indexablePageTags({
       path: '/tutors',
       title: TITLE,
-      ogTitle: 'Book a verified WASSCE tutor for in-person lessons',
+      ogTitle: 'Book a private WASSCE tutor for in-person lessons',
       description: DESCRIPTION,
       jsonLd: [
         tutoringServiceJsonLd({ name: 'WASSCE tutoring in Sierra Leone', description: DESCRIPTION, path: '/tutors' }),
@@ -42,7 +42,7 @@ function TutorsPage() {
   const subjects = Route.useLoaderData()
   return (
     <>
-      <TutorsHero subjects={subjects.map((s) => ({ name: s.name, slug: s.slug }))} />
+      <TutorsHero />
       <article className="tutor-booking-page site-page space-y-16 pb-12 pt-14 sm:space-y-20 sm:pt-20">
       <TutorMarketplace />
 
@@ -105,7 +105,7 @@ function useTutorCount(): number | null {
   return count
 }
 
-function TutorsHero({ subjects }: { subjects: { name: string; slug: string }[] }) {
+function TutorsHero() {
   const count = useTutorCount()
   return (
     <section className="site-bleed relative isolate -mt-6 overflow-hidden bg-[var(--site-ink)] text-white" aria-labelledby="tutors-heading">
@@ -120,15 +120,23 @@ function TutorsHero({ subjects }: { subjects: { name: string; slug: string }[] }
               {count ? `${count} ${count === 1 ? 'tutor' : 'tutors'} in the marketplace` : 'In-person tutoring across Sierra Leone'}
             </p>
             <h1 id="tutors-heading" className="site-display mt-6">
-              Find a WASSCE tutor <span className="site-accent text-[#cdbcff]">near you.</span>
+              Private WASSCE tutors, <span className="site-accent text-[#cdbcff]">near you.</span>
             </h1>
             <p className="mt-6 max-w-xl text-[17px] leading-relaxed text-white/72 sm:text-lg">
-              Real teachers for in-person lessons. See each tutor’s monthly fee upfront, then message them on WhatsApp to arrange lessons near you.
+              One-to-one lessons in person with a real teacher. See each tutor’s monthly fee upfront, then message them on WhatsApp to arrange lessons near you.
             </p>
-            <div className="mt-8 max-w-2xl">
-              <TutorSearch subjects={subjects} />
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
+              <a href="#tutors" className="site-btn site-btn-premium">
+                Book a private tutor
+                <span className="site-btn-premium-badge" aria-hidden>
+                  <ArrowRight className="h-5 w-5" />
+                </span>
+              </a>
+              <a href="#tutor-how" className="inline-flex min-h-11 items-center gap-1.5 text-[15px] font-semibold text-white/80 underline-offset-4 transition hover:text-white hover:underline">
+                How it works
+              </a>
             </div>
-            <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-white/70">
+            <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-white/70">
               {['Free to contact', 'Fee shown upfront', 'You pay the tutor directly'].map((t) => (
                 <li key={t} className="inline-flex items-center gap-1.5">
                   <Check className="h-4 w-4 text-emerald-400" aria-hidden /> {t}
@@ -147,11 +155,11 @@ function TutorsHero({ subjects }: { subjects: { name: string; slug: string }[] }
               fetchPriority="high"
               className="aspect-[4/4.3] w-full rounded-[1.75rem] object-cover shadow-[0_40px_80px_-40px_rgba(0,0,0,.8)] ring-1 ring-white/10"
             />
-            <div className="hero-float absolute -left-3 bottom-0 w-64 rounded-2xl bg-white p-4 text-slate-900 shadow-[0_30px_60px_-24px_rgba(0,0,0,.55)] ring-1 ring-slate-900/5 sm:-left-10" style={{ ['--float-time' as string]: '9s' }}>
+            <div className="hero-float absolute -left-3 bottom-0 w-[17.5rem] rounded-2xl bg-white p-4 text-slate-900 shadow-[0_30px_60px_-24px_rgba(0,0,0,.55)] ring-1 ring-slate-900/5 sm:-left-10" style={{ ['--float-time' as string]: '9s' }}>
               <p className="text-[10px] font-bold uppercase tracking-[.14em] text-slate-500">Three steps</p>
               <ol className="mt-2.5 space-y-2.5">
                 {[
-                  [UserRound, 'Choose a tutor near you'],
+                  [UserRound, 'Choose a private tutor near you'],
                   [ClipboardCheck, 'Agree to their monthly fee'],
                   [MessageCircle, 'Message them on WhatsApp'],
                 ].map(([Icon, text], i) => {
