@@ -1,7 +1,7 @@
 // One source of truth for the signed-in student's navigation (Blueprint v2,
 // section 03). The mobile bottom bar and the desktop sidebar both render this
 // list, so destination names, order and active states can never drift apart.
-import { BookOpen, CircleUser, ClipboardList, House, TrendingUp } from 'lucide-react'
+import { BadgePercent, BookOpen, CircleUser, ClipboardList, House, IdCard, LifeBuoy, MessageCircle, Store, TrendingUp, Wallet } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 
 export type NavItem = {
@@ -21,6 +21,45 @@ export const STUDENT_NAV: NavItem[] = [
   { to: '/progress', label: 'Progress', icon: TrendingUp, match: (p) => under(p, '/progress') },
   { to: '/account', label: 'Account', icon: CircleUser, match: (p) => under(p, '/account', '/profile') },
 ]
+
+/**
+ * Tutors and affiliates have their own navigation (never the student one):
+ * their home, the parts of it they use most, and the public pages that belong
+ * to their work. A link with a hash opens that section of their home.
+ */
+export type RoleNavItem = {
+  to: string
+  hash?: string
+  label: string
+  icon: LucideIcon
+  match: (pathname: string, hash: string) => boolean
+}
+
+export const TUTOR_NAV: RoleNavItem[] = [
+  { to: '/tutor-dashboard', label: 'Home', icon: House, match: (p, h) => p === '/tutor-dashboard' && !h },
+  { to: '/tutor-dashboard', hash: 'card', label: 'My card', icon: IdCard, match: (p, h) => p === '/tutor-dashboard' && h === 'card' },
+  { to: '/tutor-dashboard', hash: 'students', label: 'Students', icon: MessageCircle, match: (p, h) => p === '/tutor-dashboard' && h === 'students' },
+  { to: '/tutors', label: 'Marketplace', icon: Store, match: (p) => under(p, '/tutors', '/become-a-tutor') },
+]
+
+export const AFFILIATE_NAV: RoleNavItem[] = [
+  { to: '/affiliate-dashboard', label: 'Home', icon: House, match: (p, h) => p === '/affiliate-dashboard' && !h },
+  { to: '/affiliate-dashboard', hash: 'payouts', label: 'Payouts', icon: Wallet, match: (p, h) => p === '/affiliate-dashboard' && h === 'payouts' },
+  { to: '/affiliate', label: 'Programme', icon: BadgePercent, match: (p) => under(p, '/affiliate') },
+  { to: '/contact', label: 'Help', icon: LifeBuoy, match: (p) => under(p, '/contact') },
+]
+
+/** The pages that belong to a tutor's or affiliate's work: "back" within them is ordinary navigation. */
+export function inRoleArea(role: 'tutor' | 'affiliate', pathname: string): boolean {
+  return role === 'tutor'
+    ? under(pathname, '/tutor-dashboard', '/tutors', '/become-a-tutor', '/contact')
+    : under(pathname, '/affiliate-dashboard', '/affiliate', '/contact')
+}
+
+/** Screens with a tutor's or affiliate's navigation: everywhere but sign-in and the admin area. */
+export function showsRoleNav(pathname: string): boolean {
+  return !under(pathname, '/auth', '/reset-password', '/admin')
+}
 
 /**
  * Screens without the student navigation: sign-in and set-up flows, focused

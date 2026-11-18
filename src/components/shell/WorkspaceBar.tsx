@@ -2,15 +2,16 @@
 // navigation, so this bar carries what they need: where you are, who is
 // signed in, and Sign out.
 //
-// "Back" from a workspace does not drop the person into the student app (or
-// its first-time set-up): it asks whether to sign out, or stay. People who
-// also study can go to their student home from there.
+// "Back" within the tutor's or affiliate's own pages (their dashboard, the
+// marketplace, their programme page) is ordinary navigation. "Back" out of
+// them never drops the person into the student app: it asks whether to sign
+// out, or stay.
 import { useState } from 'react'
 import { useBlocker, useNavigate, useRouterState } from '@tanstack/react-router'
 import { LogOut } from 'lucide-react'
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
-import { initialsOf } from '@/lib/nav'
+import { inRoleArea, initialsOf } from '@/lib/nav'
 import { BrandMark } from '@/components/BrandMark'
 
 const WORKSPACES: Record<string, string> = {
@@ -28,7 +29,8 @@ export function WorkspaceBar() {
   const active = !!user && !!workspace
 
   const blocker = useBlocker({
-    shouldBlockFn: ({ action }) => action === 'BACK' || action === 'GO',
+    shouldBlockFn: ({ action, next }) =>
+      (action === 'BACK' || action === 'GO') && !inRoleArea(pathname === '/tutor-dashboard' ? 'tutor' : 'affiliate', next.pathname),
     withResolver: true,
     enableBeforeUnload: false,
     disabled: !active || leaving,
@@ -43,10 +45,6 @@ export function WorkspaceBar() {
     // Replace: "back" must not return to a workspace with nobody signed in.
     await navigate({ to: '/', replace: true })
     setLeaving(false)
-  }
-  const studentHome = () => {
-    blocker.reset?.()
-    void navigate({ to: '/' })
   }
   const name = profile?.full_name?.trim() || user?.email || 'Your account'
 
@@ -87,11 +85,6 @@ export function WorkspaceBar() {
               <button type="button" onClick={() => blocker.reset?.()} className="inline-flex min-h-11 w-full items-center justify-center rounded-2xl border px-4 text-sm font-semibold">
                 Stay here
               </button>
-              {profile?.onboarded && (
-                <button type="button" onClick={studentHome} className="inline-flex min-h-11 w-full items-center justify-center rounded-2xl px-4 text-sm font-semibold text-slate-600 hover:bg-slate-100">
-                  Open my student home
-                </button>
-              )}
             </div>
           </section>
         </div>

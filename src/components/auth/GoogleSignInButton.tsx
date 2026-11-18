@@ -3,6 +3,16 @@ import { Capacitor } from '@capacitor/core'
 import { SocialLogin } from '@capgo/capacitor-social-login'
 import { supabase } from '@/lib/supabase'
 
+/**
+ * The account type to keep after a Google sign-in. Signing in from the
+ * ordinary page (intent "student") never turns a tutor or affiliate account
+ * back into a student one; signing up from the tutor or affiliate page sets it.
+ */
+function keptIntent(metadata: Record<string, unknown> | undefined, intent: string): string {
+  const current = typeof metadata?.account_intent === 'string' ? metadata.account_intent : null
+  return intent === 'student' && current ? current : intent
+}
+
 type GoogleCredentialResponse = { credential: string }
 type GoogleIdentity = {
   initialize: (options: {
@@ -104,13 +114,13 @@ export function GoogleSignInButton({ intent, referralCode, mode, onStart, onAuth
             setBusy(true)
             onStart?.()
             try {
-              const { error } = await supabase.auth.signInWithIdToken({
+              const { data: signedIn, error } = await supabase.auth.signInWithIdToken({
                 provider: 'google',
                 token: response.credential,
                 nonce,
               })
               if (error) throw error
-              const { error: metadataError } = await supabase.auth.updateUser({ data: { full_name: googleProfileName(response.credential), account_intent: intent, ...(referralCode ? { affiliate_code: referralCode } : {}) } })
+              const { error: metadataError } = await supabase.auth.updateUser({ data: { full_name: googleProfileName(response.credential), account_intent: keptIntent(signedIn.user?.user_metadata, intent), ...(referralCode ? { affiliate_code: referralCode } : {}) } })
               if (metadataError) throw metadataError
               onAuthenticated()
             } catch (error) {
@@ -166,13 +176,13 @@ export function GoogleSignInButton({ intent, referralCode, mode, onStart, onAuth
       if (result.provider !== 'google' || result.result.responseType !== 'online' || !result.result.idToken) {
         throw new Error('Google did not return a valid identity token. Please try another account.')
       }
-      const { error } = await supabase.auth.signInWithIdToken({
+      const { data: signedIn, error } = await supabase.auth.signInWithIdToken({
         provider: 'google',
         token: result.result.idToken,
         nonce,
       })
       if (error) throw error
-      const { error: metadataError } = await supabase.auth.updateUser({ data: { full_name: result.result.profile.name ?? '', account_intent: intent, ...(referralCode ? { affiliate_code: referralCode } : {}) } })
+      const { error: metadataError } = await supabase.auth.updateUser({ data: { full_name: result.result.profile.name ?? '', account_intent: keptIntent(signedIn.user?.user_metadata, intent), ...(referralCode ? { affiliate_code: referralCode } : {}) } })
       if (metadataError) throw metadataError
       onAuthenticated()
     } catch (error) {

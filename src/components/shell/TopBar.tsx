@@ -1,8 +1,9 @@
 import { Link, useRouterState } from '@tanstack/react-router'
 import { MessageCircleQuestion } from 'lucide-react'
 import { useAuth } from '@/lib/auth'
+import { ROLE_HOME, useAccountRole } from '@/lib/account-role'
 import { useProfile } from '@/lib/queries'
-import { initialsOf, showsStudentNav } from '@/lib/nav'
+import { initialsOf, showsRoleNav, showsStudentNav } from '@/lib/nav'
 import { BrandMark } from '@/components/BrandMark'
 
 /**
@@ -15,7 +16,29 @@ export function TopBar() {
   const { user } = useAuth()
   const pathname = useRouterState({ select: (s) => s.location.pathname })
   const { data: profile } = useProfile(user?.id ?? null)
-  if (!user || !showsStudentNav(pathname)) return null
+  const { role } = useAccountRole()
+  if (!user || !role) return null
+  // Tutors and affiliates: their brand link goes to their own home; no study tutor shortcut.
+  // Their workspace screens have the workspace bar instead.
+  if (role !== 'student') {
+    if (!showsRoleNav(pathname) || pathname === ROLE_HOME[role]) return null
+    return (
+      <header className="sticky top-0 z-30 border-b bg-background/90 backdrop-blur-md lg:hidden">
+        <div className="mx-auto flex min-h-14 max-w-[79rem] items-center gap-3 px-4 py-2 sm:px-6">
+          <Link to={ROLE_HOME[role]} aria-label="Your dashboard">
+            <BrandMark compact />
+          </Link>
+          <Link
+            to={ROLE_HOME[role]}
+            className="ml-auto inline-flex min-h-10 items-center rounded-xl border bg-card px-3 text-sm font-semibold transition-colors hover:border-primary/40"
+          >
+            {role === 'tutor' ? 'Tutor dashboard' : 'Affiliate dashboard'}
+          </Link>
+        </div>
+      </header>
+    )
+  }
+  if (!showsStudentNav(pathname)) return null
 
   const onTutor = pathname === '/tutor' || pathname.startsWith('/tutor/')
   return (

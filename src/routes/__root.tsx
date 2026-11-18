@@ -1,12 +1,12 @@
-import { createRootRoute, HeadContent, Outlet, Scripts, useRouterState } from '@tanstack/react-router'
+import { createRootRoute, HeadContent, Outlet, Scripts, useNavigate, useRouterState } from '@tanstack/react-router'
 import { lazy, Suspense, useEffect, useRef } from 'react'
 import type { ReactNode } from 'react'
 import { useIsFetching } from '@tanstack/react-query'
-import { BottomNav } from '@/components/BottomNav'
+import { BottomNav, useHasBottomNav } from '@/components/BottomNav'
+import { ROLE_HOME, isStudentOnlyPath, useAccountRole } from '@/lib/account-role'
 import { SideNav } from '@/components/shell/SideNav'
 import { TopBar } from '@/components/shell/TopBar'
 import { useAuth } from '@/lib/auth'
-import { showsStudentNav } from '@/lib/nav'
 import { Footer } from '@/components/Footer'
 import { NotFoundPage } from '@/components/NotFoundPage'
 import { PublicHeader } from '@/components/public/PublicHeader'
@@ -147,11 +147,25 @@ function GlobalLoadingBar() {
   )
 }
 
+/**
+ * Tutors and affiliates never land in the student app: on a student-only
+ * screen (the student home, set-up, subjects, practice, progress, the study
+ * tutor) they are taken to their own dashboard instead. Admins are not moved.
+ */
+function useRoleHome(pathname: string) {
+  const navigate = useNavigate()
+  const { role, isAdmin } = useAccountRole()
+  useEffect(() => {
+    if (!role || role === 'student' || isAdmin) return
+    if (isStudentOnlyPath(pathname)) void navigate({ to: ROLE_HOME[role], replace: true })
+  }, [role, isAdmin, pathname, navigate])
+}
+
 function RootComponent() {
-  const { user } = useAuth()
   const pathname = useRouterState({ select: (st) => st.location.pathname })
   useSignInForAppPages()
-  const studentNav = !!user && showsStudentNav(pathname)
+  useRoleHome(pathname)
+  const studentNav = useHasBottomNav(pathname)
   const roleWorkspace = pathname === '/tutor-dashboard' || pathname === '/affiliate-dashboard'
   return (
     <div className="app-frame flex bg-background text-foreground">
