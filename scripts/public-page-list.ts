@@ -119,5 +119,17 @@ export async function publicPageList(supabaseUrl: string, publishableKey: string
   // The pillar and the subject index list every subject, so they change when any does.
   const all = latest(subjectLastmods)
   pages.unshift({ path: '/wassce', lastmod: all }, { path: '/wassce/subjects', lastmod: all }, { path: tutorsPath(), lastmod: all })
+
+  // Every listed tutor's own page, /tutors/{slug} (migration 28). Visitors can
+  // only read active, listed tutors. Before migration 28 there is no slug:
+  // the pages are then left out (they still open in the app) rather than
+  // failing the build.
+  try {
+    for (const t of await get(supabaseUrl, publishableKey, 'tutors', 'slug,verified_at')) {
+      if (t.slug) pages.push({ path: tutorsPath(t.slug), lastmod: day(t.verified_at) })
+    }
+  } catch (e) {
+    console.warn(`[public-page-list] tutor pages left out: ${e instanceof Error ? e.message : e}`)
+  }
   return pages
 }

@@ -1,5 +1,5 @@
 import { createFileRoute, notFound } from '@tanstack/react-router'
-import { ArrowLeft, ArrowRight, ListChecks } from 'lucide-react'
+import { ArrowLeft, ArrowRight, ListChecks, ShieldCheck } from 'lucide-react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { StartCta } from '@/components/public/StartCta'
 import { FROM_PRICE } from '@/lib/plans'
@@ -11,6 +11,7 @@ import { fetchPublicLessonPage, keyTermsPath, lessonPath, lessonSummary, questio
 import type { PublicLessonPageData } from '@/lib/public-content'
 import { SEARCH_COPY, SITE, absoluteUrl, brandedTitle, breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
+import { displayName, tutorPagePath } from '@/lib/tutor-profile'
 
 const trail = ({ subject, topic, lesson }: PublicLessonPageData): [string, string][] => [
   ['Home', '/'],
@@ -36,7 +37,7 @@ function lessonJsonLd(data: PublicLessonPageData): Record<string, unknown> {
     inLanguage: 'en',
     ...(lesson.reviewed_at ? { lastReviewed: lesson.reviewed_at } : {}),
     ...(lesson.reviewed_at && lesson.reviewer_name
-      ? { reviewedBy: { '@type': 'Person', name: lesson.reviewer_name, ...(lesson.reviewer_bio ? { description: lesson.reviewer_bio } : {}) } }
+      ? { reviewedBy: { '@type': 'Person', name: displayName(lesson.reviewer_name), ...(lesson.reviewer_bio ? { description: lesson.reviewer_bio } : {}), ...(lesson.reviewer_tutor_slug ? { url: absoluteUrl(tutorPagePath(lesson.reviewer_tutor_slug)) } : {}) } }
       : {}),
     mainEntity: {
       '@type': 'Article',
@@ -100,7 +101,13 @@ function PublicLessonPage() {
             <>
               <p>
                 <span className="text-muted-foreground">Reviewed by </span>
-                <span className="font-semibold">{lesson.reviewer_name ?? 'the WASSCE Tutor team'}</span>
+                {lesson.reviewer_tutor_slug && lesson.reviewer_name ? (
+                  <a href={tutorPagePath(lesson.reviewer_tutor_slug)} className="font-semibold text-primary hover:underline">
+                    {displayName(lesson.reviewer_name)}
+                  </a>
+                ) : (
+                  <span className="font-semibold">{lesson.reviewer_name ? displayName(lesson.reviewer_name) : 'the WASSCE Tutor team'}</span>
+                )}
                 {lesson.reviewer_bio && <span className="text-muted-foreground">, {lesson.reviewer_bio}</span>}
               </p>
               <p className="text-xs text-muted-foreground">
@@ -165,6 +172,10 @@ function PublicLessonPage() {
         </nav>
       )}
 
+      {lesson.reviewed_at && lesson.reviewer_tutor_slug && lesson.reviewer_name && (
+        <ReviewerTutor name={displayName(lesson.reviewer_name)} slug={lesson.reviewer_tutor_slug} bio={lesson.reviewer_bio} subject={subject.name} />
+      )}
+
       <WaecPastPapers subjectSlug={subject.slug} subjectName={subject.name} />
 
       <StartCta
@@ -194,5 +205,24 @@ function PublicLessonPage() {
         </section>
       )}
     </article>
+  )
+}
+
+/** The lesson was checked by a tutor: learn with them in person. */
+function ReviewerTutor({ name, slug, bio, subject }: { name: string; slug: string; bio: string | null; subject: string }) {
+  const first = name.split(' ')[0]
+  return (
+    <aside className="flex flex-col gap-4 rounded-2xl border border-[color-mix(in_srgb,var(--primary)_20%,var(--border))] bg-[linear-gradient(135deg,#f4f0ff,#ffffff_60%)] p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6 dark:bg-[linear-gradient(135deg,#221c3a,#1a1626_60%)]" aria-label={`Reviewed by ${name}`}>
+      <div className="flex items-start gap-3">
+        <ShieldCheck className="mt-0.5 h-6 w-6 shrink-0 text-emerald-600" aria-hidden />
+        <div>
+          <p className="text-[15px] font-bold">Checked by {name}{bio ? `, ${bio}` : ''}</p>
+          <p className="mt-0.5 text-[14px] text-muted-foreground">Want help with {subject} in person? {first} gives private lessons.</p>
+        </div>
+      </div>
+      <a href={tutorPagePath(slug)} className="site-btn site-btn-primary shrink-0">
+        Learn with {first} <ArrowRight className="h-4 w-4" aria-hidden />
+      </a>
+    </aside>
   )
 }

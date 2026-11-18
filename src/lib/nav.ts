@@ -1,7 +1,7 @@
 // One source of truth for the signed-in student's navigation (Blueprint v2,
 // section 03). The mobile bottom bar and the desktop sidebar both render this
 // list, so destination names, order and active states can never drift apart.
-import { BadgePercent, BookOpen, CircleUser, ClipboardList, House, IdCard, LifeBuoy, MessageCircle, Store, TrendingUp, Wallet } from 'lucide-react'
+import { BadgePercent, BookOpen, CircleUser, ClipboardList, House, IdCard, LifeBuoy, MessageCircle, ShieldCheck, Store, TrendingUp, Wallet } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 
 export type NavItem = {
@@ -33,14 +33,25 @@ export type RoleNavItem = {
   label: string
   icon: LucideIcon
   match: (pathname: string, hash: string) => boolean
+  /** The tutor's own page: `to` is filled in with /tutors/{their slug} (hidden until known). */
+  ownPage?: true
 }
 
 export const TUTOR_NAV: RoleNavItem[] = [
   { to: '/tutor-dashboard', label: 'Home', icon: House, match: (p, h) => p === '/tutor-dashboard' && !h },
-  { to: '/tutor-dashboard', hash: 'card', label: 'My card', icon: IdCard, match: (p, h) => p === '/tutor-dashboard' && h === 'card' },
+  { to: '/tutor-dashboard/review', label: 'Review', icon: ShieldCheck, match: (p) => under(p, '/tutor-dashboard/review') },
   { to: '/tutor-dashboard', hash: 'students', label: 'Students', icon: MessageCircle, match: (p, h) => p === '/tutor-dashboard' && h === 'students' },
-  { to: '/tutors', label: 'Marketplace', icon: Store, match: (p) => under(p, '/tutors', '/become-a-tutor') },
+  { to: '/tutors', label: 'My page', icon: IdCard, ownPage: true, match: () => false },
+  { to: '/tutors', label: 'Marketplace', icon: Store, match: (p) => p === '/tutors' || under(p, '/become-a-tutor') },
 ]
+
+/** A role's navigation with the tutor's own page filled in (or left out until it is known). */
+export function roleNavItems(items: RoleNavItem[], ownPage: string | null, pathname: string): RoleNavItem[] {
+  return items.flatMap((n) => (n.ownPage ? (ownPage ? [{ ...n, to: ownPage, match: (p: string) => p === ownPage }] : []) : [n])).map((n) =>
+    // The marketplace tab is not lit on the tutor's own page.
+    n.label === 'Marketplace' && ownPage && pathname === ownPage ? { ...n, match: () => false } : n,
+  )
+}
 
 export const AFFILIATE_NAV: RoleNavItem[] = [
   { to: '/affiliate-dashboard', label: 'Home', icon: House, match: (p, h) => p === '/affiliate-dashboard' && !h },

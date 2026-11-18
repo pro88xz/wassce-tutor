@@ -10,8 +10,20 @@ import { SubjectBanner } from '@/components/ds/SubjectCover'
 import { BookingForm } from '@/components/tutors/BookingForm'
 import { TutorMarketplace } from '@/components/tutors/Marketplace'
 import { TUTOR_FAQ, TutorFaq, TutorHowItWorks, TutorSubjectGrid, TutorJoinBand } from '@/components/tutors/TutorSections'
+import { TutorProfile } from '@/components/tutors/TutorProfile'
+import { displayName, fetchTutorPage, tutorJsonLd, tutorPageDescription, tutorPagePath, tutorPageTitle, tutorPhoto, type TutorPageData } from '@/lib/tutor-profile'
 
-type Data = { hub: SubjectHub; subjects: SubjectSummary[] }
+// /tutors/{x}: a subject's tutor page when x is a subject, otherwise a tutor's
+// own page (src/lib/tutor-profile.ts; a tutor's slug never equals a subject's).
+type Data =
+  | { kind: 'subject'; hub: SubjectHub; subjects: SubjectSummary[] }
+  | ({ kind: 'tutor' } & TutorPageData)
+
+const tutorTrail = (name: string, slug: string): [string, string][] => [
+  ['Home', '/'],
+  ['Private tutors', '/tutors'],
+  [name, tutorPagePath(slug)],
+]
 
 const trail = (hub: SubjectHub): [string, string][] => [
   ['Home', '/'],
@@ -36,12 +48,27 @@ export const Route = createFileRoute('/tutors/$subject')({
   ssr: true, // prerendered to static HTML at build time
   loader: async ({ params }): Promise<Data> => {
     const [hub, all] = await Promise.all([fetchSubjectHub(params.subject), fetchSubjectSummaries()])
-    if (!hub) throw notFound()
-    return { hub, subjects: all.filter((s) => hasSubjectPage(s.topicCount)) }
+    if (hub) return { kind: 'subject', hub, subjects: all.filter((s) => hasSubjectPage(s.topicCount)) }
+    const tutor = await fetchTutorPage(params.subject)
+    if (tutor) return { kind: 'tutor', ...tutor }
+    throw notFound()
   },
   staleTime: Infinity,
   head: ({ loaderData }) =>
-    loaderData
+    loaderData?.kind === 'tutor'
+      ? indexablePageTags({
+          path: tutorPagePath(loaderData.tutor.slug!),
+          title: tutorPageTitle(loaderData.tutor),
+          ogTitle: `${displayName(loaderData.tutor.full_name)}: private WASSCE tutor in ${loaderData.tutor.location}`,
+          description: tutorPageDescription(loaderData.tutor),
+          type: 'profile',
+          image: tutorPhoto(loaderData.tutor) ?? undefined,
+          jsonLd: [
+            tutorJsonLd(loaderData.tutor, `https://wasscetutor.com${tutorPagePath(loaderData.tutor.slug!)}`),
+            breadcrumbJsonLd(tutorTrail(displayName(loaderData.tutor.full_name), loaderData.tutor.slug!)),
+          ],
+        })
+      : loaderData
       ? indexablePageTags({
           path: tutorsPath(loaderData.hub.subject.slug),
           title: subjectTutorTitle(loaderData.hub.subject.name),
@@ -63,7 +90,13 @@ export const Route = createFileRoute('/tutors/$subject')({
 })
 
 function SubjectTutorPage() {
-  const { hub, subjects } = Route.useLoaderData()
+  const data = Route.useLoaderData()
+  if (data.kind === 'tutor')
+    return <TutorProfile tutor={data.tutor} reviewed={data.reviewed} others={data.others} trail={tutorTrail(displayName(data.tutor.full_name), data.tutor.slug!)} />
+  return <SubjectTutors hub={data.hub} subjects={data.subjects} />
+}
+
+function SubjectTutors({ hub, subjects }: { hub: SubjectHub; subjects: SubjectSummary[] }) {
   const { subject, groups } = hub
   return (
     <article className="app-page site-page space-y-12 pb-8 sm:space-y-14">

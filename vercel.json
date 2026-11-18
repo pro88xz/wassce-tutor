@@ -608,6 +608,14 @@
     {
       "source": "/admin/:path*",
       "destination": "/_shell"
+    },
+    {
+      "source": "/tutor-dashboard/:path*",
+      "destination": "/_shell"
+    },
+    {
+      "source": "/tutors/:slug",
+      "destination": "/_shell"
     }
   ],
   "headers": [
