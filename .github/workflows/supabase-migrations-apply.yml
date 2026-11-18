@@ -280,3 +280,18 @@ jobs:
           test "$RESULT" = "0,0,t,f,f,t,t,1" || { echo "Checks did not match 0,0,t,f,f,t,t,1"; exit 1; }
           # For the record: who reviews lessons, and their pages.
           psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select coalesce(string_agg(full_name || ' (/tutors/' || slug || ')', ', ' order by verified_at), 'none') from public.tutors where reviewer;"
+
+      - name: Verify (29) no listed tutor has a numbered address while a hidden tutor holds the plain one
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            (select count(*) from public.tutors pub join public.tutors hid on pub.slug ~ ('^' || hid.slug || '-[0-9]+\$')
+              where pub.status = 'active' and pub.listed and not (hid.status = 'active' and hid.listed)
+                and hid.slug = btrim(regexp_replace(lower(hid.full_name), '[^a-z0-9]+', '-', 'g'), '-')),
+            (select count(*) from pg_trigger where not tgisinternal and tgname = 'tutors_set_slug' and tgenabled = 'O'));" | tr -d '[:space:]')"
+          echo "listed tutors on a numbered address behind a hidden one, address trigger on: $RESULT"
+          test "$RESULT" = "0,1" || { echo "Checks did not match 0,1"; exit 1; }
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select string_agg(full_name || ' /tutors/' || slug, ', ' order by verified_at) from public.tutors where status = 'active' and listed;"
