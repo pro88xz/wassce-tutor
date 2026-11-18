@@ -131,6 +131,61 @@ export const SEARCH_COPY: Partial<Record<string, { title: string; description: s
     description:
       'Agriculture is growing crops and rearing animals for food, raw materials and income. Its meaning, branches, types and importance, with Sierra Leone examples.',
   },
+  // Search Console to 16 Nov 2026: each page shows for the searches below but
+  // its title did not use their words, so it got no clicks.
+  // "what is calorimetry" (position 1.8), "calorimetry", "heat and temperature".
+  '/wassce/physics/quantity-of-heat-and-calorimetry': {
+    title: 'What Is Calorimetry? Heat Capacity & Specific Heat | WASSCE',
+    description:
+      'Calorimetry is measuring heat: heat lost by hot bodies equals heat gained by cold ones. Heat capacity, specific heat capacity and WASSCE calorimetry problems.',
+  },
+  // "endocrine" (position 5), "endocrine meaning" (4.3), "what is endocrine", "endocrine system".
+  '/wassce/biology/the-endocrine-system': {
+    title: 'Endocrine System: Meaning, Glands and Hormones | WASSCE Biology',
+    description:
+      'Endocrine meaning: ductless glands that release hormones into the blood. The major endocrine glands, their hormones, feedback and blood glucose control.',
+  },
+  // "urinary system" (51 impressions), "urinary system organs" (position 9), "kidney and urinary tract anatomy".
+  '/wassce/biology/the-kidney-and-urinary-system': {
+    title: 'Urinary System: Organs, Kidney Structure & Nephron | WASSCE',
+    description:
+      'The urinary system and its organs: kidneys, ureters, bladder and urethra. Kidney structure, the nephron, how urine forms and urinary disorders. All free.',
+  },
+  '/wassce/biology/the-kidney-and-urinary-system/the-kidney-and-urinary-system-structure-and-organisation': {
+    title: 'Urinary System Organs and Kidney Structure, with the Nephron',
+    description:
+      'The organs of the urinary system and the route of urine, the external and internal structure of the kidney, and the nephron, its functional unit.',
+  },
+  // "gas exchange", "where does gas exchange occur", "gaseous exchange in lungs" (216 impressions, position 22).
+  '/wassce/biology/respiratory-systems-and-gas-exchange': {
+    title: 'Gas Exchange: Where It Occurs in Humans, Fish, Insects, Plants',
+    description:
+      'Where gas exchange occurs: alveoli in the lungs, gills in fish, tracheae in insects and stomata in plants. The human respiratory system and breathing. Free.',
+  },
+  // "mrs gren", "mrs gren biology", "what is mrs gren", "mrs gren meaning", "what does mrs gren stand for".
+  '/wassce/biology/characteristics-of-living-things/what-makes-something-alive-introducing-mrs-gren': {
+    title: 'MRS GREN Meaning: 7 Characteristics of Living Things',
+    description:
+      'What MRS GREN stands for: Movement, Respiration, Sensitivity, Growth, Reproduction, Excretion and Nutrition, the seven characteristics of living things.',
+  },
+  // "what is the main purpose of biological classification?" (41 impressions), "why do we classify living things".
+  '/wassce/biology/classification-of-living-things/why-we-classify-living-things': {
+    title: 'Why We Classify Living Things: Purpose of Classification',
+    description:
+      'The main purpose of biological classification: to sort millions of organisms into groups so they can be named, identified and studied. Features and examples.',
+  },
+  // "what is economics" (23 impressions, position 14.5), "definition of economics".
+  '/wassce/economics/nature-and-scope-of-economics/what-economics-is-definitions-and-subject-matter': {
+    title: 'What Is Economics? Definitions by Smith, Marshall & Robbins',
+    description:
+      'Economics is the study of how people use scarce resources to satisfy unlimited wants. The wealth, welfare and scarcity definitions, and what economics studies.',
+  },
+  // "distance displacement speed velocity acceleration" and "... definition" (positions 4 to 8).
+  '/wassce/physics/motion-in-a-straight-line/distance-displacement-speed-velocity-and-acceleration': {
+    title: 'Distance, Displacement, Speed, Velocity & Acceleration Defined',
+    description:
+      'Definitions of distance, displacement, speed, velocity and acceleration, with their units, converting km/h to m/s, and WASSCE examples to practise.',
+  },
 }
 
 /** Google shows about 60 characters of a title: add the brand only when it still fits. */
