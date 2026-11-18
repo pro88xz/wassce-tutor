@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">How public money flows in Sierra Leone</title>
+<desc id="d">Government revenue from taxes collected by the National Revenue Authority, non-tax revenue, grants and loans is paid into the Consolidated Revenue Fund. Parliament approves spending through the budget and the Appropriation Act. The Ministry of Finance releases funds to ministries, departments and agencies, which spend them and account for them through the Accountant-General. The Auditor-General audits the accounts and reports to Parliament, whose Public Accounts Committee examines the report.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">From revenue to audit: the public funds cycle</text>
+<rect x="25.0" y="80.0" width="230.0" height="100.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="140.0" y="107.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Revenue</text>
+<text x="140.0" y="130.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">taxes (NRA), fees,</text>
+<text x="140.0" y="153.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">royalties, grants, loans</text>
+<rect x="285.0" y="80.0" width="230.0" height="100.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="107.0" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Consolidated</text>
+<text x="400.0" y="130.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Revenue Fund</text>
+<text x="400.0" y="153.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">all public money</text>
+<rect x="545.0" y="80.0" width="230.0" height="100.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="660.0" y="107.0" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Budget approved</text>
+<text x="660.0" y="130.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">by Parliament</text>
+<text x="660.0" y="153.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(Appropriation Act)</text>
+<rect x="545.0" y="280.0" width="230.0" height="100.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="660.0" y="307.0" font-size="17" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Funds released</text>
+<text x="660.0" y="330.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">by the Ministry</text>
+<text x="660.0" y="353.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">of Finance to MDAs</text>
+<rect x="285.0" y="280.0" width="230.0" height="100.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="307.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Spending and</text>
+<text x="400.0" y="330.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">accounts</text>
+<text x="400.0" y="353.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(Accountant-General)</text>
+<rect x="25.0" y="280.0" width="230.0" height="100.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="140.0" y="307.0" font-size="17" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Audit</text>
+<text x="140.0" y="330.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Auditor-General reports</text>
+<text x="140.0" y="353.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">to Parliament (PAC)</text>
+<line x1="261.0" y1="130.0" x2="279.0" y2="130.0" stroke="#475569" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="521.0" y1="130.0" x2="539.0" y2="130.0" stroke="#475569" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="660.0" y1="186.0" x2="660.0" y2="274.0" stroke="#475569" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="539.0" y1="330.0" x2="521.0" y2="330.0" stroke="#475569" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="279.0" y1="330.0" x2="261.0" y2="330.0" stroke="#475569" stroke-width="2.4" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="400.0" y="450.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">MDAs = ministries, departments and agencies; PAC = Public Accounts Committee.</text>
+</svg>

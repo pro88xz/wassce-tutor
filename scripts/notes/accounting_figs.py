@@ -725,6 +725,93 @@ def partnership_appropriation():
     note(s, "Salaries, interest and shares are credited to each partner's current account.", 470, size=15, color=INK)
     return s
 
+
+# ═══ FA4: companies, public sector and ICT ═══════════════════════════════════
+
+@fig
+def share_capital_levels():
+    s = Svg(800, 470, "Levels of share capital",
+            "Authorised share capital is the maximum the company may issue under its constitution. Issued share capital is "
+            "the part actually issued to shareholders. Called-up capital is the part of the issued capital the company has "
+            "asked shareholders to pay so far, and paid-up capital is the part actually received. Each level is equal to "
+            "or smaller than the one above it.")
+    heading(s, "Authorised ≥ issued ≥ called-up ≥ paid-up")
+    levels = [("Authorised capital", "the most the company may issue", 680, PURPLE, F_PURPLE),
+              ("Issued capital", "shares actually issued to shareholders", 560, BLUE, F_BLUE),
+              ("Called-up capital", "amount shareholders have been asked to pay", 440, TEAL, F_TEAL),
+              ("Paid-up capital", "amount actually received", 320, GREEN, F_GREEN)]
+    for k, (a, b, w, col, fill) in enumerate(levels):
+        y = 110 + k * 88
+        s.rect(400 - w / 2, y - 34, w, 68, fill=fill, stroke=col, width=2.5, rx=12)
+        s.text(400, y - 9, a, size=18, weight="bold", color=col)
+        s.text(400, y + 15, b, size=15, color=INK)
+    note(s, "Only issued (called-up) capital appears in the statement of financial position.", 455, size=14, color=INK)
+    return s
+
+
+@fig
+def company_equity():
+    s = Svg(800, 470, "Equity and liabilities of a limited company",
+            "The capital side of a company's statement of financial position. Equity is made up of share capital (ordinary "
+            "and preference shares) and reserves: capital reserves such as share premium and revaluation reserve, which "
+            "cannot normally be paid out as dividends, and revenue reserves such as the general reserve and retained "
+            "earnings, which can. Below equity come non-current liabilities, such as debentures and long-term loans, and "
+            "current liabilities, such as trade payables, tax payable and accrued expenses.")
+    heading(s, "Equity and liabilities of a limited company")
+    eq = box(s, 400, 85, 300, 52, ["EQUITY (owners' interest)"], col=PURPLE, fill=F_PURPLE, size=18)
+    sc = box(s, 150, 200, 240, 110, ["Share capital", "ordinary shares", "preference shares"], col=BLUE, fill=F_BLUE, size=17)
+    cr = box(s, 400, 200, 220, 110, ["Capital reserves", "share premium", "revaluation reserve"], col=TEAL, fill=F_TEAL, size=17)
+    rr = box(s, 640, 200, 240, 110, ["Revenue reserves", "general reserve", "retained earnings"], col=GREEN, fill=F_GREEN, size=17)
+    for b in (sc, cr, rr):
+        link(s, eq, b, color=MUTED, width=2)
+    box(s, 245, 370, 330, 90, ["Non-current liabilities", "debentures, long-term loans"], col=ORANGE, fill=F_AMBER, size=17)
+    box(s, 590, 370, 330, 90, ["Current liabilities", "payables, tax payable, accruals"], col=RED, fill=F_RED, size=17)
+    note(s, "Capital reserves cannot normally be paid out as dividends; revenue reserves can.", 450, size=14, color=INK)
+    return s
+
+
+@fig
+def public_funds_flow():
+    s = Svg(800, 470, "How public money flows in Sierra Leone",
+            "Government revenue from taxes collected by the National Revenue Authority, non-tax revenue, grants and loans is "
+            "paid into the Consolidated Revenue Fund. Parliament approves spending through the budget and the Appropriation "
+            "Act. The Ministry of Finance releases funds to ministries, departments and agencies, which spend them and "
+            "account for them through the Accountant-General. The Auditor-General audits the accounts and reports to "
+            "Parliament, whose Public Accounts Committee examines the report.")
+    heading(s, "From revenue to audit: the public funds cycle")
+    steps = [(140, 130, "Revenue", "taxes (NRA), fees,", "royalties, grants, loans", BLUE, F_BLUE),
+             (400, 130, "Consolidated", "Revenue Fund", "all public money", PURPLE, F_PURPLE),
+             (660, 130, "Budget approved", "by Parliament", "(Appropriation Act)", ORANGE, F_AMBER),
+             (660, 330, "Funds released", "by the Ministry", "of Finance to MDAs", TEAL, F_TEAL),
+             (400, 330, "Spending and", "accounts", "(Accountant-General)", GREEN, F_GREEN),
+             (140, 330, "Audit", "Auditor-General reports", "to Parliament (PAC)", RED, F_RED)]
+    bs = [box(s, x, y, 230, 100, [a, b, c], col=col, fill=fill, size=17) for x, y, a, b, c, col, fill in steps]
+    for i in range(5):
+        link(s, bs[i], bs[i + 1], color=MUTED, width=2.4)
+    note(s, "MDAs = ministries, departments and agencies; PAC = Public Accounts Committee.", 450, size=14, color=MUTED)
+    return s
+
+
+@fig
+def computerised_accounting():
+    s = Svg(800, 470, "A computerised accounting system",
+            "Input: source documents such as invoices, receipts and payroll data are keyed in or imported. Processing: the "
+            "accounting software posts each entry to the sales ledger, purchases ledger, general ledger, inventory and payroll "
+            "modules automatically by double entry. Output: reports such as the trial balance, income statement, statement "
+            "of financial position, aged receivables and VAT or GST returns, produced instantly. Controls include passwords, "
+            "user access levels, backups and an audit trail.")
+    heading(s, "Input → processing → output")
+    a = box(s, 140, 230, 220, 230, ["INPUT", "", "invoices", "receipts", "credit notes", "payroll data", "bank feeds"], col=BLUE, fill=F_BLUE, size=17)
+    b = box(s, 400, 230, 240, 230, ["PROCESSING", "(accounting software)", "", "sales ledger", "purchases ledger", "general ledger",
+                                    "inventory, payroll"], col=PURPLE, fill=F_PURPLE, size=17)
+    c = box(s, 660, 230, 220, 230, ["OUTPUT", "", "trial balance", "income statement", "financial position", "aged receivables",
+                                    "tax returns"], col=GREEN, fill=F_GREEN, size=17)
+    link(s, a, b, color=MUTED, width=2.6)
+    link(s, b, c, color=MUTED, width=2.6)
+    s.rect(110, 382, 580, 50, fill="#ffffff", stroke=RULE, width=1.2, rx=10)
+    s.text(400, 407, "Controls: passwords • access levels • backups • audit trail", size=15, weight="bold", color=RED)
+    return s
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:

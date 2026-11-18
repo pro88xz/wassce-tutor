@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Equity and liabilities of a limited company</title>
+<desc id="d">The capital side of a company&#x27;s statement of financial position. Equity is made up of share capital (ordinary and preference shares) and reserves: capital reserves such as share premium and revaluation reserve, which cannot normally be paid out as dividends, and revenue reserves such as the general reserve and retained earnings, which can. Below equity come non-current liabilities, such as debentures and long-term loans, and current liabilities, such as trade payables, tax payable and accrued expenses.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Equity and liabilities of a limited company</text>
+<rect x="250.0" y="59.0" width="300.0" height="52.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="85.0" font-size="18" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">EQUITY (owners&#x27; interest)</text>
+<rect x="30.0" y="145.0" width="240.0" height="110.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="150.0" y="177.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Share capital</text>
+<text x="150.0" y="200.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ordinary shares</text>
+<text x="150.0" y="223.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">preference shares</text>
+<rect x="290.0" y="145.0" width="220.0" height="110.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="400.0" y="177.0" font-size="17" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Capital reserves</text>
+<text x="400.0" y="200.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">share premium</text>
+<text x="400.0" y="223.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">revaluation reserve</text>
+<rect x="520.0" y="145.0" width="240.0" height="110.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="640.0" y="177.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Revenue reserves</text>
+<text x="640.0" y="200.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">general reserve</text>
+<text x="640.0" y="223.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">retained earnings</text>
+<line x1="400.0" y1="117.0" x2="150.0" y2="139.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="400.0" y1="117.0" x2="400.0" y2="139.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="400.0" y1="117.0" x2="640.0" y2="139.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="80.0" y="325.0" width="330.0" height="90.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="245.0" y="358.5" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Non-current liabilities</text>
+<text x="245.0" y="381.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">debentures, long-term loans</text>
+<rect x="425.0" y="325.0" width="330.0" height="90.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="590.0" y="358.5" font-size="17" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Current liabilities</text>
+<text x="590.0" y="381.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">payables, tax payable, accruals</text>
+<text x="400.0" y="450.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Capital reserves cannot normally be paid out as dividends; revenue reserves can.</text>
+</svg>

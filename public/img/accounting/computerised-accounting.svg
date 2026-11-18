@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A computerised accounting system</title>
+<desc id="d">Input: source documents such as invoices, receipts and payroll data are keyed in or imported. Processing: the accounting software posts each entry to the sales ledger, purchases ledger, general ledger, inventory and payroll modules automatically by double entry. Output: reports such as the trial balance, income statement, statement of financial position, aged receivables and VAT or GST returns, produced instantly. Controls include passwords, user access levels, backups and an audit trail.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Input → processing → output</text>
+<rect x="30.0" y="115.0" width="220.0" height="230.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="140.0" y="161.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">INPUT</text>
+<text x="140.0" y="184.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="140.0" y="207.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">invoices</text>
+<text x="140.0" y="230.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">receipts</text>
+<text x="140.0" y="253.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">credit notes</text>
+<text x="140.0" y="276.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">payroll data</text>
+<text x="140.0" y="299.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">bank feeds</text>
+<rect x="280.0" y="115.0" width="240.0" height="230.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="161.0" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">PROCESSING</text>
+<text x="400.0" y="184.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(accounting software)</text>
+<text x="400.0" y="207.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="400.0" y="230.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sales ledger</text>
+<text x="400.0" y="253.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">purchases ledger</text>
+<text x="400.0" y="276.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">general ledger</text>
+<text x="400.0" y="299.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">inventory, payroll</text>
+<rect x="550.0" y="115.0" width="220.0" height="230.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="660.0" y="161.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">OUTPUT</text>
+<text x="660.0" y="184.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="660.0" y="207.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">trial balance</text>
+<text x="660.0" y="230.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">income statement</text>
+<text x="660.0" y="253.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">financial position</text>
+<text x="660.0" y="276.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">aged receivables</text>
+<text x="660.0" y="299.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">tax returns</text>
+<line x1="256.0" y1="230.0" x2="274.0" y2="230.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="526.0" y1="230.0" x2="544.0" y2="230.0" stroke="#475569" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="110.0" y="382.0" width="580.0" height="50.0" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="400.0" y="407.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Controls: passwords • access levels • backups • audit trail</text>
+</svg>
