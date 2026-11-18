@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Climate and vegetation belts of Africa on either side of the Equator</title>
+<desc id="d">A simplified north–south diagram of Africa&#x27;s climate and vegetation belts: Mediterranean at the northern and southern tips, hot deserts near the tropics (Sahara in the north, Kalahari and Namib in the south), savanna on either side of the equatorial belt, and equatorial rainforest around the Equator. Highlands in East Africa are cooler than their latitude suggests.</desc>
+<defs></defs>
+<rect width="800" height="520" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Belts repeat north and south of the Equator (simplified)</text>
+<rect x="40.0" y="60.0" width="720.0" height="56.0" rx="8" fill="#c7d2fe" stroke="#64748b" stroke-width="1.2"/>
+<text x="60.0" y="79.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Mediterranean</text>
+<text x="60.0" y="100.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">about 30–37°N</text>
+<text x="330.0" y="79.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">hot dry summer, mild wet winter</text>
+<text x="330.0" y="100.0" font-size="14" fill="#166534" text-anchor="start" dominant-baseline="middle" font-weight="normal" font-style="italic">evergreen shrubs, olives</text>
+<rect x="40.0" y="122.0" width="720.0" height="56.0" rx="8" fill="#fde68a" stroke="#64748b" stroke-width="1.2"/>
+<text x="60.0" y="141.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Hot desert (Sahara)</text>
+<text x="60.0" y="162.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">about 15–30°N</text>
+<text x="330.0" y="141.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">very dry; hot days, cold nights</text>
+<text x="330.0" y="162.0" font-size="14" fill="#166534" text-anchor="start" dominant-baseline="middle" font-weight="normal" font-style="italic">little or none</text>
+<rect x="40.0" y="184.0" width="720.0" height="56.0" rx="8" fill="#d9f99d" stroke="#64748b" stroke-width="1.2"/>
+<text x="60.0" y="203.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Savanna (wet-and-dry)</text>
+<text x="60.0" y="224.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">about 5–15°N</text>
+<text x="330.0" y="203.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">summer rain, winter drought</text>
+<text x="330.0" y="224.0" font-size="14" fill="#166534" text-anchor="start" dominant-baseline="middle" font-weight="normal" font-style="italic">grassland with trees</text>
+<rect x="40.0" y="246.0" width="720.0" height="56.0" rx="8" fill="#86efac" stroke="#64748b" stroke-width="1.2"/>
+<text x="60.0" y="265.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Equatorial</text>
+<text x="60.0" y="286.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">about 5°N–5°S</text>
+<text x="330.0" y="265.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">hot and wet all year</text>
+<text x="330.0" y="286.0" font-size="14" fill="#166534" text-anchor="start" dominant-baseline="middle" font-weight="normal" font-style="italic">tropical rainforest</text>
+<rect x="40.0" y="308.0" width="720.0" height="56.0" rx="8" fill="#d9f99d" stroke="#64748b" stroke-width="1.2"/>
+<text x="60.0" y="327.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Savanna (wet-and-dry)</text>
+<text x="60.0" y="348.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">about 5–20°S</text>
+<text x="330.0" y="327.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">summer rain, winter drought</text>
+<text x="330.0" y="348.0" font-size="14" fill="#166534" text-anchor="start" dominant-baseline="middle" font-weight="normal" font-style="italic">grassland with trees</text>
+<rect x="40.0" y="370.0" width="720.0" height="56.0" rx="8" fill="#fde68a" stroke="#64748b" stroke-width="1.2"/>
+<text x="60.0" y="389.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Desert (Kalahari, Namib)</text>
+<text x="60.0" y="410.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">about 20–30°S</text>
+<text x="330.0" y="389.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">very dry</text>
+<text x="330.0" y="410.0" font-size="14" fill="#166534" text-anchor="start" dominant-baseline="middle" font-weight="normal" font-style="italic">scrub, little vegetation</text>
+<rect x="40.0" y="432.0" width="720.0" height="56.0" rx="8" fill="#c7d2fe" stroke="#64748b" stroke-width="1.2"/>
+<text x="60.0" y="451.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Mediterranean (Cape)</text>
+<text x="60.0" y="472.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">about 33–35°S</text>
+<text x="330.0" y="451.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">hot dry summer, mild wet winter</text>
+<text x="330.0" y="472.0" font-size="14" fill="#166534" text-anchor="start" dominant-baseline="middle" font-weight="normal" font-style="italic">evergreen shrubs</text>
+<line x1="20.0" y1="274.0" x2="780.0" y2="274.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" stroke-dasharray="8 5"/>
+<rect x="669.6" y="286.0" width="60.9" height="20.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="700.0" y="296.0" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Equator</text>
+</svg>

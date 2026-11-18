@@ -13,6 +13,7 @@ with large labels so that they stay readable on a phone.
 
 from __future__ import annotations
 
+import json
 import math
 import sys
 from pathlib import Path
@@ -1130,6 +1131,951 @@ def greenhouse_effect():
     s.text(140, 380, "deforestation adds CO₂", size=13, weight="bold", color=INK)
     return s
 
+
+
+@fig
+def optimum_population():
+    s = Svg(800, 440, "Under-population, optimum population and over-population",
+            "As population grows, output (income) per head first rises because there are more people to use the resources. "
+            "It reaches a peak at the optimum population. Beyond that point, there are too many people for the resources and "
+            "technology available, so output per head falls: the area is over-populated.")
+    heading(s, "Optimum population gives the highest output per head")
+    ox, oy, w, h = 110, 370, 620, 290
+    s.arrow(ox, oy, ox + w + 20, oy, color=INK, width=2)
+    s.arrow(ox, oy, ox, oy - h - 20, color=INK, width=2)
+    s.text(ox + w - 60, oy + 24, "population →", size=15, weight="bold", color=INK)
+    s.text(ox - 58, oy - h / 2 - 10, "output", size=14, weight="bold", color=INK)
+    s.text(ox - 58, oy - h / 2 + 10, "per head", size=14, weight="bold", color=INK)
+    s.path(f"M {ox + 20} {oy - 40} C {ox + 200} {oy - 330} {ox + 380} {oy - 330} {ox + w - 20} {oy - 60}", color=BLUE, width=4)
+    px = ox + 300
+    s.line(px, oy, px, oy - 260, color=GREEN, width=2, dash="6 5")
+    s.label(px, oy - 270, "optimum", size=15, color=GREEN, weight="bold")
+    s.text(ox + 150, oy - 30, "UNDER-", size=15, weight="bold", color=ORANGE)
+    s.text(ox + 150, oy - 12, "POPULATION", size=15, weight="bold", color=ORANGE)
+    s.text(ox + 470, oy - 30, "OVER-", size=15, weight="bold", color=RED)
+    s.text(ox + 470, oy - 12, "POPULATION", size=15, weight="bold", color=RED)
+    note(s, "Resources and technology decide where the optimum lies.", 420, size=14, color=MUTED)
+    return s
+
+
+@fig
+def settlement_hierarchy():
+    s = Svg(800, 470, "The settlement hierarchy",
+            "Settlements ranked by size and importance, from many small isolated dwellings and hamlets at the bottom to a "
+            "few large cities and conurbations at the top. Higher settlements are fewer, larger, further apart and provide "
+            "more and higher-order services.")
+    heading(s, "Fewer, larger settlements with more services towards the top")
+    levels = [("Conurbation", "Lagos, Greater Accra", "#fecaca"), ("City", "Freetown, Bo, Kenema", "#fed7aa"),
+              ("Town", "district headquarters", "#fde68a"), ("Village", "primary school, market", "#d9f99d"),
+              ("Hamlet", "a few houses", "#bbf7d0"), ("Isolated dwelling", "one farm household", "#a7f3d0")]
+    top, step, cx = 66, 58, 290
+    for i, (name, ex, col) in enumerate(levels):
+        y0, y1 = top + i * step, top + (i + 1) * step
+        hw0, hw1 = 40 + i * 38, 40 + (i + 1) * 38
+        poly(s, [(cx - hw0, y0), (cx + hw0, y0), (cx + hw1, y1), (cx - hw1, y1)], col, width=1.5)
+        s.text(cx, (y0 + y1) / 2, name, size=15 if i else 14, weight="bold", color=INK)
+        s.text(560, (y0 + y1) / 2, ex, size=14, color=INK, anchor="start")
+        s.line(cx + (hw0 + hw1) / 2 + 8, (y0 + y1) / 2, 550, (y0 + y1) / 2, color="#cbd5e1", width=1.2, dash="3 4")
+    s.arrow(40, 410, 40, 80, color=PURPLE, width=2.5)
+    s.text(40, 445, "↑ fewer, larger, more services, wider sphere of influence", size=14, weight="bold", color=PURPLE, anchor="start")
+    return s
+
+
+@fig
+def rural_urban_migration():
+    s = Svg(800, 440, "Push and pull factors of rural–urban migration",
+            "Push factors in rural areas, such as poverty, unemployment, poor amenities, land shortage and insecurity, drive "
+            "people away. Pull factors in towns, such as jobs, better amenities, education, security and relatives already "
+            "there, attract them. Obstacles such as cost, distance and family ties may slow migration.")
+    heading(s, "Rural–urban migration: pushed out, pulled in")
+    a = box(s, 160, 225, 270, 260, ["RURAL AREA", "push factors:", "poverty, low farm income", "unemployment",
+                                    "no electricity, water,", "hospitals, schools", "land shortage, poor harvests",
+                                    "insecurity, disasters"], col=ORANGE, fill=F_AMBER, size=17)
+    b = box(s, 640, 225, 270, 260, ["TOWN", "pull factors:", "jobs, higher wages", "schools and colleges",
+                                    "hospitals, electricity,", "pipe-borne water", "security",
+                                    "relatives, city life"], col=BLUE, fill=F_BLUE, size=17)
+    s.arrow(305, 225, 495, 225, color=INK, width=5)
+    s.text(400, 200, "migration", size=16, weight="bold", color=INK)
+    s.text(400, 300, "obstacles:", size=13, weight="bold", color=MUTED)
+    s.text(400, 318, "cost, distance,", size=13, color=MUTED)
+    s.text(400, 336, "family ties", size=13, color=MUTED)
+    note(s, "Most migrants are young adults looking for work or education.", 415, size=14, color=INK)
+    return s
+
+
+@fig
+def bush_fallow_cycle():
+    s = Svg(800, 460, "The bush fallowing cycle",
+            "A farmer clears bush, burns the cut vegetation so the ash adds nutrients, plants crops such as rice and cassava "
+            "for two or three years until yields fall, then leaves the land to fallow so bush regrows and the soil recovers "
+            "before the plot is cleared again. When population grows, fallow periods become too short for the soil to recover.")
+    heading(s, "Bush fallowing: farm, rest, return")
+    cx, cy, rx, ry = 400, 240, 255, 145
+    stages = [("1. Clear the bush", "cutlass and axe", F_AMBER, ORANGE), ("2. Burn", "ash adds nutrients", F_RED, RED),
+              ("3. Plant crops", "rice, cassava: 2–3 yrs", F_GREEN, GREEN), ("4. Soil exhausted", "yields fall", F_GREY, INK),
+              ("5. Fallow", "bush regrows, soil recovers", F_TEAL, TEAL)]
+    boxes = []
+    for i, (a, b, fill, col) in enumerate(stages):
+        ang = math.radians(-90 + i * 72)
+        boxes.append(box(s, cx + rx * math.cos(ang), cy + ry * math.sin(ang), 210, 62, [a, b], col=col, fill=fill, size=15))
+    for i in range(5):
+        link(s, boxes[i], boxes[(i + 1) % 5], color=MUTED, width=2.2)
+    s.text(cx, cy - 8, "same plot,", size=15, color=MUTED)
+    s.text(cx, cy + 12, "permanent village", size=15, color=MUTED)
+    note(s, "Fallow cut from 10–15 years to 3–5 years → soil cannot recover → lower yields.", 440, size=14, color=RED)
+    return s
+
+
+@fig
+def industry_sectors():
+    s = Svg(800, 450, "Primary, secondary and tertiary industries",
+            "Primary industries extract raw materials (farming, fishing, mining, logging). Secondary industries process them "
+            "into manufactured goods. Tertiary industries provide services such as transport, trade, banking and teaching. "
+            "Examples: cocoa farming, a chocolate factory, shops selling chocolate.")
+    heading(s, "From raw material to customer")
+    cols = [(140, "PRIMARY", "extracts raw materials", GREEN, F_GREEN), (400, "SECONDARY", "manufactures goods", PURPLE, F_PURPLE),
+            (660, "TERTIARY", "provides services", BLUE, F_BLUE)]
+    for x, a, b, col, fill in cols:
+        box(s, x, 95, 220, 66, [a, b], col=col, fill=fill, size=16)
+    rows = [("cocoa farming", "chocolate factory", "shops sell chocolate"),
+            ("logging", "sawmill, furniture", "transport and sale"),
+            ("fishing", "smoking, canning", "market traders"),
+            ("mining iron ore", "steel making", "banks, insurance")]
+    for r, row in enumerate(rows):
+        y = 185 + r * 66
+        bs = [box(s, x, y, 200, 46, [t], col=INK, fill="#ffffff", size=15) for (x, *_), t in zip(cols, row)]
+        link(s, bs[0], bs[1], color=MUTED, width=2)
+        link(s, bs[1], bs[2], color=MUTED, width=2)
+    note(s, "A fourth, quaternary sector provides information and research.", 438, size=14, color=MUTED)
+    return s
+
+
+@fig
+def energy_sources():
+    s = Svg(800, 450, "Renewable and non-renewable sources of energy",
+            "Renewable sources are replaced naturally and will not run out: solar, hydroelectric, wind, biomass (firewood "
+            "and charcoal), geothermal and tidal or wave energy. Non-renewable sources are fossil fuels and nuclear fuel, "
+            "formed over millions of years, which will run out: coal, petroleum, natural gas and uranium.")
+    heading(s, "Sources of energy")
+    top = box(s, 400, 80, 260, 50, ["ENERGY SOURCES"], col=INK, fill=F_GREY, size=17)
+    r = box(s, 205, 275, 340, 290, ["RENEWABLE", "replaced naturally", "", "solar (sun)", "hydroelectric (water)",
+                                     "wind", "biomass: firewood, charcoal", "geothermal (earth heat)", "tides and waves"],
+            col=GREEN, fill=F_GREEN, size=18)
+    n = box(s, 595, 275, 340, 290, ["NON-RENEWABLE", "will run out", "", "coal", "petroleum (crude oil)",
+                                     "natural gas", "nuclear (uranium)", "", "fossil fuels pollute"],
+            col=RED, fill=F_RED, size=18)
+    link(s, top, r, color=MUTED, width=2.2)
+    link(s, top, n, color=MUTED, width=2.2)
+    return s
+
+
+@fig
+def desertification_cycle():
+    s = Svg(800, 470, "Causes and effects of desertification",
+            "Desertification is the spread of desert-like conditions into dry lands such as the Sahel. Its causes are "
+            "overgrazing, over-cultivation, cutting trees for fuel, bush burning and drought. Its effects include loss of "
+            "farmland and pasture, food shortages, migration, dust storms and conflict over land and water.")
+    heading(s, "Desertification in the Sahel")
+    centre = box(s, 400, 250, 200, 100, ["DESERTIFICATION", "dry land turns", "desert-like"], col=BROWN, fill="#fde68a", size=17)
+    causes = ["overgrazing", "over-cultivation", "cutting trees for fuel", "bush burning", "drought"]
+    effects = ["loss of farmland, pasture", "food shortage, famine", "migration to towns", "dust storms", "conflict over land"]
+    s.text(130, 72, "CAUSES", size=16, weight="bold", color=RED)
+    s.text(670, 72, "EFFECTS", size=16, weight="bold", color=BLUE)
+    for i, (c, e) in enumerate(zip(causes, effects)):
+        y = 110 + i * 72
+        a = box(s, 130, y, 220, 52, [c], col=RED, fill=F_RED, size=15)
+        b = box(s, 670, y, 220, 52, [e], col=BLUE, fill=F_BLUE, size=15)
+        s.arrow(a[0] + 116, y, centre[0] - 106, 250 + (y - 254) * 0.35, color=MUTED, width=1.8)
+        s.arrow(centre[0] + 106, 250 + (y - 254) * 0.35, b[0] - 116, y, color=MUTED, width=1.8)
+    return s
+
+
+# ═══ G4: regional geography and maps ═════════════════════════════════════════
+# Outlines are Natural Earth (public domain), simplified into data/geography-maps.json.
+
+MAPS = json.loads((Path(__file__).resolve().parent / "data/geography-maps.json").read_text())
+SEA_FILL = "#dbeafe"
+NEIGHBOUR = "#eef2f7"
+RIVER = "#2563eb"
+
+
+class Proj:
+    """Equirectangular projection of a lon/lat box into a pixel frame, keeping the aspect ratio."""
+
+    def __init__(self, box, x0, y0, w, h):
+        lon0, lat0, lon1, lat1 = box
+        self.c = math.cos(math.radians((lat0 + lat1) / 2))
+        self.k = min(w / ((lon1 - lon0) * self.c), h / (lat1 - lat0))
+        self.cx, self.cy = x0 + w / 2, y0 + h / 2
+        self.lonc, self.latc = (lon0 + lon1) / 2, (lat0 + lat1) / 2
+
+    def __call__(self, lon, lat):
+        return self.cx + (lon - self.lonc) * self.c * self.k, self.cy - (lat - self.latc) * self.k
+
+
+def ring_d(P, ring, close=True):
+    pts = [P(x, y) for x, y in ring]
+    return "M " + " L ".join(f"{x:.1f} {y:.1f}" for x, y in pts) + (" Z" if close else "")
+
+
+def country(s, P, rings, fill, stroke="#64748b", width=1.2):
+    s.path(" ".join(ring_d(P, r) for r in rings), color=stroke, width=width, fill=fill)
+
+
+def town(s, P, lon, lat, name, dx=8, dy=0, anchor="start", size=14, capital=False, color=INK):
+    x, y = P(lon, lat)
+    if capital:
+        s.circle(x, y, 7, fill="#ffffff", stroke=RED, width=3)
+        s.circle(x, y, 2.5, fill=RED, stroke=RED, width=1)
+    else:
+        s.circle(x, y, 4.5, fill=INK, stroke="#ffffff", width=1.5)
+    s.label(x + dx, y + dy, name, size=size, anchor=anchor, weight="bold" if capital else "normal", color=color, pad=3)
+
+
+def graticule(s, P, lons, lats, box, fmt_lon, fmt_lat, size=12):
+    lon0, lat0, lon1, lat1 = box
+    for lo in lons:
+        x1, y1 = P(lo, lat0); x2, y2 = P(lo, lat1)
+        s.line(x1, y1, x2, y2, color="#94a3b8", width=0.8, dash="4 5")
+        s.label(x2, y2 + 14, fmt_lon(lo), size=size, color=MUTED, pad=2)
+    for la in lats:
+        x1, y1 = P(lon0, la); x2, y2 = P(lon1, la)
+        s.line(x1, y1, x2, y2, color="#94a3b8", width=0.8, dash="4 5")
+        s.label(x1 + 6, y1, fmt_lat(la), size=size, color=MUTED, anchor="start", pad=2)
+
+
+def north_arrow(s, x, y):
+    s.polygon([(x, y - 26), (x - 10, y + 6), (x, y), (x + 10, y + 6)], fill=INK, stroke=INK, width=1)
+    s.text(x, y - 38, "N", size=16, weight="bold")
+
+
+def scale_bar(s, P, lon, lat, km, label):
+    x1, y1 = P(lon, lat)
+    x2, _ = P(lon + km / (111.32 * math.cos(math.radians(lat))), lat)
+    s.rect(x1, y1 - 4, (x2 - x1) / 2, 8, fill=INK, stroke=INK, width=1)
+    s.rect(x1 + (x2 - x1) / 2, y1 - 4, (x2 - x1) / 2, 8, fill="#ffffff", stroke=INK, width=1)
+    s.text(x1, y1 + 18, "0", size=12, color=INK)
+    s.text(x2, y1 + 18, label, size=12, color=INK)
+
+
+SL_BOX = (-13.75, 6.75, -10.1, 10.15)
+SL_TOWNS = [(-13.23, 8.48, "Freetown"), (-11.74, 7.96, "Bo"), (-11.19, 7.88, "Kenema"), (-12.05, 8.88, "Makeni"),
+            (-10.97, 8.64, "Koidu"), (-12.79, 8.77, "Port Loko"), (-11.55, 9.59, "Kabala"), (-10.57, 8.28, "Kailahun"),
+            (-12.50, 7.53, "Bonthe"), (-12.43, 8.16, "Moyamba"), (-12.92, 9.12, "Kambia"), (-11.72, 7.35, "Pujehun")]
+
+
+def sl_base(s, P, fill="#fef9c3"):
+    s.rect(0, 0, s.w, s.h, fill=SEA_FILL, stroke="none", width=0, rx=20)
+    for n in ("Guinea", "Liberia"):
+        country(s, P, MAPS["sl_countries"][n], NEIGHBOUR)
+    country(s, P, MAPS["sl_countries"]["Sierra Leone"], fill, stroke=INK, width=2)
+    graticule(s, P, [-13, -12, -11], [7, 8, 9, 10], SL_BOX, lambda v: f"{-v}°W", lambda v: f"{v}°N")
+    gx, gy = P(-12.2, 9.95)
+    s.text(gx, gy, "GUINEA", size=18, weight="bold", color=MUTED)
+    lx, ly = P(-10.55, 7.05)
+    s.text(lx, ly, "LIBERIA", size=18, weight="bold", color=MUTED)
+    ox, oy = P(-13.15, 7.35)
+    s.text(ox, oy, "ATLANTIC", size=17, weight="bold", color="#1d4ed8", italic=True)
+    s.text(ox, oy + 22, "OCEAN", size=17, weight="bold", color="#1d4ed8", italic=True)
+
+
+@fig
+def sierra_leone_map():
+    s = Svg(800, 760, "Map of Sierra Leone: location, neighbours, towns and highlands",
+            "Sierra Leone lies on the Atlantic coast of West Africa between about 7°N and 10°N and 10°W and 13°W. Guinea "
+            "borders it to the north and east and Liberia to the south-east. The map shows Freetown, the regional cities "
+            "Bo, Kenema, Makeni and Port Loko, other towns, the Freetown Peninsula, Sherbro Island, the Loma Mountains "
+            "with Bintumani, the Tingi Hills and the Gola Forest.")
+    P = Proj(SL_BOX, 10, 10, 780, 740)
+    sl_base(s, P)
+    for lon, lat, n, col in [(-11.12, 9.17, "Bintumani 1,945 m", BROWN), (-10.78, 8.92, "Tingi Hills", BROWN)]:
+        x, y = P(lon, lat)
+        s.polygon([(x, y - 11), (x - 10, y + 7), (x + 10, y + 7)], fill=BROWN, stroke=INK, width=1)
+        s.label(x + 14, y - 2, n, size=14, anchor="start", color=col, weight="bold", pad=3)
+    lx, ly = P(-11.35, 9.32)
+    s.text(lx, ly - 4, "Loma Mountains", size=14, color=BROWN, italic=True)
+    for lon, lat, n, anchor, dx in [(-13.2, 8.3, "Freetown Peninsula", "end", -6), (-12.75, 7.47, "Sherbro Island", "end", -10)]:
+        x, y = P(lon, lat)
+        s.label(x + dx, y, n, size=13, anchor=anchor, color="#065f46", italic=True, pad=3)
+    gx, gy = P(-10.85, 7.45)
+    s.label(gx, gy, "Gola Forest", size=13, color="#065f46", italic=True, pad=3)
+    for lon, lat, n in SL_TOWNS:
+        cap = n == "Freetown"
+        dx, anchor = (10, "start")
+        if n in ("Kailahun", "Koidu"):
+            dx, anchor = (-10, "end")
+        town(s, P, lon, lat, n, dx=dx, anchor=anchor, capital=cap, size=15 if cap else 14)
+    north_arrow(s, 740, 80)
+    scale_bar(s, P, -13.6, 6.95, 100, "100 km")
+    return s
+
+
+@fig
+def sierra_leone_resources_map():
+    s = Svg(800, 760, "Map of Sierra Leone's main mineral and economic resources",
+            "Sketch map of Sierra Leone showing diamonds in Kono and around Tongo, iron ore at Tonkolili and Marampa with "
+            "the railway to the port of Pepel, rutile in Moyamba and Bonthe districts, bauxite at Mokanji, gold at "
+            "Baomahun, the Bumbuna hydroelectric dam, the port of Freetown, the cocoa and coffee belt in the east and "
+            "the main rice and oil palm areas. Positions are approximate.")
+    P = Proj(SL_BOX, 10, 10, 780, 740)
+    sl_base(s, P, fill="#fefce8")
+    # cash-crop and farming zones (labels only; areas are broad)
+    for lon, lat, t, col in [(-10.75, 8.05, "cocoa and coffee", "#7c2d12"), (-12.05, 7.45, "oil palm", "#166534"),
+                             (-12.4, 9.45, "swamp rice (bolilands)", "#166534")]:
+        x, y = P(lon, lat)
+        s.text(x, y, t, size=14, italic=True, color=col, weight="bold")
+    rail = [P(-11.5, 9.1), P(-11.9, 9.0), P(-12.35, 8.82), P(-12.75, 8.7), P(-13.05, 8.59)]
+    s.polyline(rail, color=INK, width=3, dash="8 5")
+    for lon, lat in [(-12.48, 8.69)]:
+        pass
+    sym = {
+        "diamond": lambda x, y: s.polygon([(x, y - 11), (x + 9, y), (x, y + 11), (x - 9, y)], fill="#38bdf8", stroke=INK, width=1.5),
+        "iron": lambda x, y: s.rect(x - 8, y - 8, 16, 16, fill="#7f1d1d", stroke=INK, width=1.5),
+        "rutile": lambda x, y: s.circle(x, y, 8, fill="#a3a3a3", stroke=INK, width=1.5),
+        "bauxite": lambda x, y: s.polygon([(x, y - 10), (x - 9, y + 7), (x + 9, y + 7)], fill="#f97316", stroke=INK, width=1.5),
+        "gold": lambda x, y: s.circle(x, y, 8, fill="#facc15", stroke=INK, width=1.5),
+        "hep": lambda x, y: s.rect(x - 9, y - 6, 18, 12, fill=RIVER, stroke=INK, width=1.5),
+        "port": lambda x, y: s.circle(x, y, 7, fill="#ffffff", stroke=BLUE, width=3),
+    }
+    items = [("diamond", -10.95, 8.68, "Kono diamonds", "end", -14), ("diamond", -11.07, 8.22, "Tongo diamonds", "start", 14),
+             ("iron", -11.5, 9.1, "Tonkolili iron ore", "start", 14), ("iron", -12.48, 8.69, "Marampa iron ore", "start", 12),
+             ("rutile", -12.25, 7.7, "rutile", "start", 13), ("bauxite", -12.2, 7.97, "Mokanji bauxite", "end", -13),
+             ("gold", -11.5, 8.25, "Baomahun gold", "end", -13), ("hep", -11.74, 9.04, "Bumbuna HEP", "end", -14),
+             ("port", -13.05, 8.59, "Pepel", "start", 11), ("port", -13.23, 8.48, "Freetown", "end", -12)]
+    for kind, lon, lat, name, anchor, dx in items:
+        x, y = P(lon, lat)
+        sym[kind](x, y)
+        s.label(x + dx, y, name, size=14, anchor=anchor, weight="bold", pad=3)
+    for lon, lat, n in [(-11.74, 7.96, "Bo"), (-11.19, 7.88, "Kenema"), (-12.05, 8.88, "Makeni")]:
+        town(s, P, lon, lat, n, size=13)
+    # key (over Guinea, top right)
+    kx, ky = 560, 52
+    s.rect(kx - 14, ky - 22, 236, 150, fill="#ffffff", stroke="#94a3b8", width=1.2, rx=10)
+    rows = [("diamond", "diamonds"), ("iron", "iron ore"), ("rutile", "rutile"), ("bauxite", "bauxite"), ("gold", "gold"),
+            ("hep", "hydroelectric dam")]
+    for i, (k, t) in enumerate(rows):
+        x = kx + (i % 2) * 112 + 6
+        y = ky + (i // 2) * 30
+        sym[k](x, y)
+        s.text(x + 16, y, t, size=13, anchor="start")
+    s.line(kx, ky + 96, kx + 30, ky + 96, color=INK, width=3, dash="8 5")
+    s.text(kx + 38, ky + 96, "iron-ore railway", size=13, anchor="start")
+    north_arrow(s, 46, 110)
+    scale_bar(s, P, -13.6, 6.95, 100, "100 km")
+    return s
+
+
+WA_BOX = (-21.5, 2.0, 16.0, 25.5)
+WEST_AFRICA = ["Mauritania", "Senegal", "Gambia", "Guinea-Bissau", "Guinea", "Sierra Leone", "Liberia", "Côte d'Ivoire",
+               "Mali", "Burkina Faso", "Ghana", "Togo", "Benin", "Niger", "Nigeria"]
+ECOWAS_NOW = ["Senegal", "Gambia", "Guinea-Bissau", "Guinea", "Sierra Leone", "Liberia", "Côte d'Ivoire", "Ghana", "Togo",
+              "Benin", "Nigeria"]
+AES = ["Mali", "Burkina Faso", "Niger"]
+
+
+def wa_base(s, P, fills):
+    s.rect(0, 0, s.w, s.h, fill=SEA_FILL, stroke="none", width=0, rx=20)
+    for n, rings in MAPS["wa_countries"].items():
+        if n == "Cabo Verde":
+            continue
+        country(s, P, rings, fills.get(n, NEIGHBOUR), stroke="#64748b", width=1.1)
+    for r in MAPS["wa_lakes"]:
+        s.path(ring_d(P, r), color=RIVER, width=1, fill="#93c5fd")
+
+
+WA_LABELS = {  # name: (lon, lat, label, leader-to or None)
+    "Mauritania": (-10.5, 20.6, "MAURITANIA", None), "Mali": (-3.0, 18.0, "MALI", None),
+    "Niger": (9.5, 17.8, "NIGER", None), "Senegal": (-14.6, 15.2, "SENEGAL", None),
+    "Gambia": (-21.2, 13.6, "THE GAMBIA", (-15.6, 13.45)), "Guinea-Bissau": (-21.2, 11.6, "GUINEA-BISSAU", (-15.0, 12.0)),
+    "Guinea": (-11.0, 10.9, "GUINEA", None), "Sierra Leone": (-21.2, 8.3, "SIERRA LEONE", (-12.2, 8.6)),
+    "Liberia": (-13.0, 5.3, "LIBERIA", (-9.6, 6.6)), "Côte d'Ivoire": (-5.6, 8.0, "CÔTE D'IVOIRE", None),
+    "Burkina Faso": (-1.7, 12.4, "BURKINA FASO", None), "Ghana": (-1.2, 7.6, "GHANA", None),
+    "Togo": (-0.6, 3.9, "TOGO", (1.0, 7.5)), "Benin": (3.2, 3.6, "BENIN", (2.3, 8.0)),
+    "Nigeria": (8.3, 9.7, "NIGERIA", None),
+}
+
+
+def wa_labels(s, P, size=13):
+    for n, (lon, lat, t, lead) in WA_LABELS.items():
+        x, y = P(lon, lat)
+        if lead:
+            lx, ly = P(*lead)
+            left = lon < -20
+            s.line(x + (len(t) * size * 0.6 if left else 0), y, lx, ly, color=INK, width=1.1)
+            s.circle(lx, ly, 2.5, fill=INK, stroke=INK, width=1)
+            s.label(x, y, t, size=size, weight="bold", pad=3, anchor="start" if left else "middle")
+        else:
+            s.text(x, y, t, size=size, weight="bold")
+
+
+@fig
+def west_africa_map():
+    s = Svg(800, 600, "Map of West Africa: countries, rivers and lakes",
+            "The sixteen countries of West Africa (Mauritania, Senegal, The Gambia, Guinea-Bissau, Guinea, Sierra Leone, "
+            "Liberia, Côte d'Ivoire, Mali, Burkina Faso, Ghana, Togo, Benin, Niger, Nigeria and the island state of Cabo "
+            "Verde), with the Rivers Niger, Benue, Volta and Senegal, Lake Volta, Kainji Lake and Lake Chad, the Atlantic "
+            "Ocean and the Gulf of Guinea.")
+    P = Proj(WA_BOX, 6, 6, 788, 588)
+    wa_base(s, P, {n: "#fef9c3" if n != "Sierra Leone" else "#bbf7d0" for n in WEST_AFRICA})
+    for r in MAPS["wa_rivers"]:
+        s.path(ring_d(P, r, close=False), color=RIVER, width=2.2)
+    wa_labels(s, P)
+    for lon, lat, t in [(-1.5, 16.9, "R. Niger"), (10.8, 8.0, "R. Benue"), (-12.9, 16.6, "R. Senegal"), (-0.4, 10.4, "R. Volta"),
+                        (0.6, 7.0, "L. Volta"), (14.0, 13.6, "L. Chad")]:
+        x, y = P(lon, lat)
+        s.label(x, y, t, size=12, color=RIVER, italic=True, weight="bold", pad=2)
+    x, y = P(-19.5, 17.5)
+    s.text(x, y, "ATLANTIC", size=16, italic=True, weight="bold", color="#1d4ed8")
+    s.text(x, y + 20, "OCEAN", size=16, italic=True, weight="bold", color="#1d4ed8")
+    x, y = P(4.5, 2.9)
+    s.text(x, y, "Gulf of Guinea", size=15, italic=True, weight="bold", color="#1d4ed8")
+    x, y = P(-21.0, 23.3)
+    s.label(x, y, "← Cabo Verde (islands, about 600 km west)", size=12, anchor="start", color=INK, pad=3)
+    return s
+
+
+@fig
+def ecowas_map():
+    s = Svg(800, 690, "Map of ECOWAS member states",
+            "ECOWAS member states in West Africa: Benin, Cabo Verde, Côte d'Ivoire, The Gambia, Ghana, Guinea, "
+            "Guinea-Bissau, Liberia, Nigeria, Senegal, Sierra Leone and Togo. Mali, Burkina Faso and Niger left ECOWAS in "
+            "January 2025 and formed the Alliance of Sahel States; Mauritania left in 2000. The ECOWAS Commission is in Abuja.")
+    P = Proj(WA_BOX, 6, 6, 788, 588)
+    fills = {n: F_GREEN for n in ECOWAS_NOW}
+    fills.update({n: "#fed7aa" for n in AES})
+    fills["Mauritania"] = "#e5e7eb"
+    wa_base(s, P, fills)
+    wa_labels(s, P)
+    x, y = P(7.4, 9.06)
+    s.polygon([(x + 9 * math.cos(math.radians(a)) * (1 if k % 2 == 0 else 0.45),
+                y - 9 * math.sin(math.radians(a)) * (1 if k % 2 == 0 else 0.45)) for k, a in enumerate(range(90, 450, 36))],
+              fill=RED, stroke=INK, width=1)
+    s.label(x + 12, y + 14, "Abuja (HQ)", size=13, anchor="start", weight="bold", color=RED, pad=3)
+    x, y = P(-21.0, 23.3)
+    s.label(x, y, "← Cabo Verde (member, islands)", size=12, anchor="start", color=INK, pad=3)
+    s.rect(10, 600, 780, 80, fill="#ffffff", stroke="#94a3b8", width=1.2, rx=12)
+    for i, (col, t, kx, ky) in enumerate([(F_GREEN, "ECOWAS member (12, with Cabo Verde)", 30, 625),
+                                          ("#fed7aa", "left in January 2025 (Alliance of Sahel States)", 30, 657),
+                                          ("#e5e7eb", "Mauritania: left in 2000", 470, 625)]):
+        s.rect(kx, ky - 9, 26, 18, fill=col, stroke="#64748b", width=1.2)
+        s.text(kx + 36, ky, t, size=15, anchor="start")
+    return s
+
+
+AF_BOX = (-19.0, -36.0, 53.0, 38.5)
+
+
+@fig
+def africa_physical_map():
+    s = Svg(800, 800, "Physical map of Africa: rivers, lakes, deserts and highlands",
+            "Outline of Africa showing the Equator and the Tropics, the Rivers Nile, Congo, Niger, Zambezi and Orange, "
+            "Lakes Victoria, Tanganyika, Malawi and Chad, the Sahara, Kalahari and Namib deserts, the Atlas Mountains, the "
+            "Ethiopian Highlands, Mount Kilimanjaro and the Drakensberg, and the surrounding seas and oceans.")
+    P = Proj(AF_BOX, 40, 40, 720, 740)
+    s.rect(0, 0, s.w, s.h, fill=SEA_FILL, stroke="none", width=0, rx=20)
+    for rings in MAPS["af_countries"].values():
+        country(s, P, rings, "#fef3c7", stroke="#cbd5e1", width=0.8)
+    for r in MAPS["af_lakes"]:
+        s.path(ring_d(P, r), color=RIVER, width=1, fill="#93c5fd")
+    for r in MAPS["af_rivers"]:
+        s.path(ring_d(P, r, close=False), color=RIVER, width=1.8)
+    for lat, t in [(0, "Equator 0°"), (23.44, "Tropic of Cancer 23½°N"), (-23.44, "Tropic of Capricorn 23½°S")]:
+        x1, y = P(AF_BOX[0], lat); x2, _ = P(AF_BOX[2], lat)
+        s.line(x1, y, x2, y, color=RED if lat == 0 else ORANGE, width=1.3, dash="7 5")
+        s.label(x2 - 6, y - 12, t, size=12, anchor="end", color=RED if lat == 0 else ORANGE, pad=2)
+    for lon, lat, t, sz in [(8, 24, "S A H A R A", 22), (22, -23, "KALAHARI", 15), (14.2, -22.0, "NAMIB", 12)]:
+        x, y = P(lon, lat)
+        s.text(x, y, t, size=sz, weight="bold", color="#92400e")
+    for lon, lat, t, anchor in [(-3.5, 32.3, "Atlas Mts", "middle"), (39.0, 10.5, "Ethiopian Highlands", "middle"),
+                                (37.35, -3.07, "Kilimanjaro 5,895 m", "start"), (29.5, -29.5, "Drakensberg", "start")]:
+        x, y = P(lon, lat)
+        s.polygon([(x, y - 9), (x - 8, y + 6), (x + 8, y + 6)], fill=BROWN, stroke=INK, width=1)
+        s.label(x + (12 if anchor == "start" else 0), y + (0 if anchor == "start" else 18), t, size=12, anchor=anchor,
+                color=BROWN, weight="bold", pad=2)
+    for lon, lat, t in [(31.0, 21.0, "R. Nile"), (19.5, 1.8, "R. Congo"), (-1.0, 15.6, "R. Niger"), (28.5, -15.0, "R. Zambezi"),
+                        (19.0, -27.4, "R. Orange"), (33.0, -1.0, "L. Victoria"), (25.7, -6.5, "L. Tanganyika"),
+                        (36.7, -12.4, "L. Malawi"), (14.0, 14.5, "L. Chad")]:
+        x, y = P(lon, lat)
+        s.label(x, y, t, size=12, color=RIVER, italic=True, weight="bold", pad=2)
+    for lon, lat, t in [(-12, 0, "ATLANTIC OCEAN"), (60 - 13, -12, "INDIAN"), (60 - 13, -14.5, "OCEAN"),
+                        (18, 35.8, "Mediterranean Sea"), (39.5, 20.0, "Red Sea")]:
+        x, y = P(lon, lat)
+        s.text(x, y, t, size=14, italic=True, weight="bold", color="#1d4ed8")
+    x, y = P(46.8, -19.5)
+    s.label(x, y, "Madagascar", size=12, pad=2)
+    return s
+
+
+@fig
+def sierra_leone_relief_section():
+    s = Svg(800, 430, "Relief regions of Sierra Leone: a west–east cross-section",
+            "A simplified cross-section from the Atlantic Ocean eastwards across Sierra Leone: the mountains of the Freetown "
+            "Peninsula (Picket Hill, 888 m), the low coastal plain with swamps and estuaries, the interior lowland plains "
+            "with isolated hills, the plateau of the north and east, and the Loma Mountains, where Bintumani (1,945 m) is "
+            "the highest point in Sierra Leone. Not to scale.")
+    heading(s, "From the coast to the mountains (west → east, not to scale)")
+    base = 340
+    prof = [(20, base), (60, base), (75, 250), (95, 170), (115, 230), (135, base - 5), (150, base), (170, base - 8),
+            (260, base - 15), (300, base - 30), (340, base - 45), (380, base - 40), (400, base - 90), (420, base - 45),
+            (470, base - 60), (510, base - 120), (580, base - 135), (620, base - 140), (650, base - 150), (690, base - 230),
+            (715, 70), (740, base - 210), (770, base - 160), (780, base - 160)]
+    s.rect(20, base - 4, 40, 16, fill=SEA, stroke="none", width=0)
+    s.polygon(prof + [(780, 352), (20, 352)], fill=LAND, stroke=INK, width=2.5)
+    s.rect(135, base - 4, 18, 8, fill=SEA, stroke="none", width=0)
+    regions = [(95, "Freetown", "Peninsula", "Picket Hill 888 m"), (215, "coastal plain", "swamps, estuaries", "below about 50 m"),
+               (350, "interior", "lowland plains", "with isolated hills"), (560, "plateau", "300–600 m", "north and east"),
+               (715, "Loma Mts", "Bintumani", "1,945 m")]
+    for x, a, b, c in regions:
+        s.text(x, 374, a, size=15, weight="bold", color=INK)
+        s.text(x, 394, b, size=14, color=INK)
+        s.text(x, 413, c, size=13, color=MUTED)
+    s.text(40, base - 16, "sea", size=13, color="#1e3a8a", weight="bold")
+    s.label(95, 150, "▲", size=14, color=BROWN, pad=1)
+    s.label(715, 52, "▲ highest point", size=13, color=BROWN, weight="bold", pad=2)
+    return s
+
+
+@fig
+def itcz_west_africa():
+    s = Svg(800, 600, "The ITCZ over West Africa in January and July",
+            "Map of West Africa showing the approximate position of the Inter-Tropical Convergence Zone near the coast, "
+            "about 5–8°N, in January and far inland, about 18–20°N, in July. South of the ITCZ the moist south-west monsoon "
+            "blows in from the Atlantic, bringing rain; north of it the dry north-east trade wind (harmattan) blows from "
+            "the Sahara.")
+    P = Proj(WA_BOX, 6, 6, 788, 588)
+    wa_base(s, P, {n: "#fefce8" for n in WEST_AFRICA})
+    def zone(lat_w, lat_e, col, label, ly):
+        pts = [P(lon, lat_w + (lat_e - lat_w) * (lon - WA_BOX[0]) / (WA_BOX[2] - WA_BOX[0])) for lon in range(-21, 17)]
+        s.polyline(pts, color=col, width=5, dash="14 8")
+        x, y = P(9.5, ly)
+        s.label(x, y, label, size=15, color=col, weight="bold", pad=4)
+    zone(19.0, 20.5, BLUE, "ITCZ in July (about 18–20°N)", 18.0)
+    zone(6.5, 7.5, ORANGE, "ITCZ in January (about 5–8°N)", 5.2)
+    for lon, lat in [(-15, 9.5), (-6, 11.5), (3, 13.5)]:
+        x, y = P(lon, lat)
+        s.arrow(x - 26, y + 26, x + 18, y - 18, color=BLUE, width=4)
+    x, y = P(-8.5, 14.2)
+    s.label(x, y, "moist south-west monsoon (July)", size=14, color=BLUE, weight="bold", pad=3)
+    for lon, lat in [(-2, 23.5), (6, 23.8), (13, 23.0)]:
+        x, y = P(lon, lat)
+        s.arrow(x + 22, y - 22, x - 18, y + 18, color=ORANGE, width=4)
+    x, y = P(-4.0, 9.5)
+    s.label(x, y, "dry NE trades / harmattan (January)", size=14, color=ORANGE, weight="bold", pad=3)
+    x, y = P(-19.5, 4.5)
+    s.text(x, y, "ATLANTIC", size=15, italic=True, weight="bold", color="#1d4ed8", anchor="start")
+    x, y = P(-12.0, 23.5)
+    s.text(x, y, "SAHARA", size=16, weight="bold", color="#92400e")
+    return s
+
+
+@fig
+def africa_climate_belts():
+    s = Svg(800, 520, "Climate and vegetation belts of Africa on either side of the Equator",
+            "A simplified north–south diagram of Africa's climate and vegetation belts: Mediterranean at the northern and "
+            "southern tips, hot deserts near the tropics (Sahara in the north, Kalahari and Namib in the south), savanna on "
+            "either side of the equatorial belt, and equatorial rainforest around the Equator. Highlands in East Africa are "
+            "cooler than their latitude suggests.")
+    heading(s, "Belts repeat north and south of the Equator (simplified)")
+    belts = [("Mediterranean", "hot dry summer, mild wet winter", "evergreen shrubs, olives", "#c7d2fe", "about 30–37°N"),
+             ("Hot desert (Sahara)", "very dry; hot days, cold nights", "little or none", "#fde68a", "about 15–30°N"),
+             ("Savanna (wet-and-dry)", "summer rain, winter drought", "grassland with trees", "#d9f99d", "about 5–15°N"),
+             ("Equatorial", "hot and wet all year", "tropical rainforest", "#86efac", "about 5°N–5°S"),
+             ("Savanna (wet-and-dry)", "summer rain, winter drought", "grassland with trees", "#d9f99d", "about 5–20°S"),
+             ("Desert (Kalahari, Namib)", "very dry", "scrub, little vegetation", "#fde68a", "about 20–30°S"),
+             ("Mediterranean (Cape)", "hot dry summer, mild wet winter", "evergreen shrubs", "#c7d2fe", "about 33–35°S")]
+    top, h = 60, 62
+    for i, (name, clim, veg, col, lat) in enumerate(belts):
+        y = top + i * h
+        s.rect(40, y, 720, h - 6, fill=col, stroke="#64748b", width=1.2, rx=8)
+        s.text(60, y + (h - 6) / 2 - 9, name, size=16, weight="bold", anchor="start")
+        s.text(60, y + (h - 6) / 2 + 12, lat, size=13, color=MUTED, anchor="start")
+        s.text(330, y + (h - 6) / 2 - 9, clim, size=14, anchor="start")
+        s.text(330, y + (h - 6) / 2 + 12, veg, size=14, color="#166534", anchor="start", italic=True)
+    ey = top + 3 * h + (h - 6) / 2
+    s.line(20, ey, 780, ey, color=RED, width=2, dash="8 5")
+    s.label(700, ey + 22, "Equator", size=14, color=RED, weight="bold", pad=3)
+    return s
+
+
+MRU = ["Guinea", "Sierra Leone", "Liberia", "Côte d'Ivoire"]
+
+
+@fig
+def mano_river_union_map():
+    s = Svg(800, 560, "Map of the Mano River Union",
+            "The Mano River Union countries, Sierra Leone, Liberia, Guinea and Côte d'Ivoire, highlighted in south-western "
+            "West Africa, with the union's headquarters at Freetown and the Mano River on the Sierra Leone–Liberia border.")
+    box = (-16.5, 3.8, -1.5, 13.5)
+    P = Proj(box, 6, 6, 788, 548)
+    s.rect(0, 0, s.w, s.h, fill=SEA_FILL, stroke="none", width=0, rx=20)
+    fills = {"Sierra Leone": "#86efac", "Liberia": "#bbf7d0", "Guinea": "#bbf7d0", "Côte d'Ivoire": "#bbf7d0"}
+    for n, rings in MAPS["wa_countries"].items():
+        if n == "Cabo Verde":
+            continue
+        country(s, P, rings, fills.get(n, NEIGHBOUR), stroke="#64748b", width=1.2)
+    for lon, lat, t, sz in [(-11.2, 10.9, "GUINEA", 17), (-12.0, 8.6, "SIERRA LEONE", 13), (-9.5, 6.5, "LIBERIA", 15),
+                            (-5.5, 7.6, "CÔTE D'IVOIRE", 16), (-14.6, 12.9, "SENEGAL", 13), (-4.5, 12.6, "MALI", 15),
+                            (-1.9, 11.2, "BURKINA", 12), (-15.0, 12.0, "G.-BISSAU", 11)]:
+        x, y = P(lon, lat)
+        s.text(x, y, t, size=sz, weight="bold", color=INK if t not in ("SENEGAL", "MALI", "BURKINA", "G.-BISSAU") else MUTED)
+    x, y = P(-13.23, 8.48)
+    s.circle(x, y, 8, fill="#ffffff", stroke=RED, width=3)
+    s.circle(x, y, 3, fill=RED, stroke=RED, width=1)
+    s.label(x - 12, y + 18, "Freetown (MRU HQ)", size=14, anchor="end", weight="bold", color=RED, pad=3)
+    x, y = P(-11.3, 7.0)
+    s.label(x - 6, y + 22, "Mano River", size=13, anchor="end", italic=True, color=RIVER, weight="bold", pad=3)
+    x, y = P(-14.8, 5.5)
+    s.text(x, y, "ATLANTIC OCEAN", size=16, italic=True, weight="bold", color="#1d4ed8")
+    s.rect(500, 470, 280, 70, fill="#ffffff", stroke="#94a3b8", width=1.2, rx=10)
+    s.text(516, 492, "Founded 1973: Sierra Leone, Liberia", size=13, anchor="start")
+    s.text(516, 512, "Guinea joined 1980", size=13, anchor="start")
+    s.text(516, 530, "Côte d'Ivoire joined 2008", size=13, anchor="start")
+    return s
+
+
+# ═══ G4: practical geography ═════════════════════════════════════════════════
+
+CONTOUR = "#a16207"
+
+
+@fig
+def grid_reference():
+    s = Svg(800, 520, "Four-figure and six-figure grid references",
+            "A map grid with eastings 21 to 25 along the bottom and northings 46 to 49 up the side. The shaded square has "
+            "the four-figure reference 2247, given by the easting and northing of its bottom left corner. Point A, a church, "
+            "lies four-tenths of the way across and seven-tenths of the way up that square, so its six-figure reference is "
+            "224477. Eastings are always given before northings.")
+    heading(s, "Read eastings first (along the corridor), then northings (up the stairs)")
+    x0, y0, sq = 140, 430, 110
+    s.rect(x0 + sq, y0 - 2 * sq, sq, sq, fill="#fef3c7", stroke="none", width=0)
+    for i in range(5):
+        s.line(x0 + i * sq, y0, x0 + i * sq, y0 - 3 * sq, color=BLUE, width=1.6)
+        s.text(x0 + i * sq, y0 + 22, str(21 + i), size=17, weight="bold", color=BLUE)
+    for j in range(4):
+        s.line(x0, y0 - j * sq, x0 + 4 * sq, y0 - j * sq, color=BLUE, width=1.6)
+        s.text(x0 - 24, y0 - j * sq, str(46 + j), size=17, weight="bold", color=BLUE)
+    for k in range(1, 10):
+        s.line(x0 + sq + k * sq / 10, y0 - sq, x0 + sq + k * sq / 10, y0 - sq - (10 if k != 5 else 16), color=MUTED, width=1)
+        s.line(x0 + sq, y0 - sq - k * sq / 10, x0 + sq + (10 if k != 5 else 16), y0 - sq - k * sq / 10, color=MUTED, width=1)
+    ax, ay = x0 + sq + 0.4 * sq, y0 - sq - 0.7 * sq
+    s.rect(ax - 7, ay - 2, 14, 14, fill=INK, stroke=INK, width=1)
+    s.line(ax, ay - 2, ax, ay - 16, color=INK, width=2.5)
+    s.line(ax - 6, ay - 10, ax + 6, ay - 10, color=INK, width=2.5)
+    s.label(ax + 30, ay + 4, "A (church)", size=15, anchor="start", weight="bold", pad=3)
+    s.text(x0 + 2 * sq, y0 + 50, "eastings →", size=15, color=BLUE, weight="bold")
+    s.text(x0 - 60, y0 - 3 * sq - 20, "northings ↑", size=15, color=BLUE, weight="bold", anchor="start")
+    bx = 640
+    s.rect(bx - 20, 120, 170, 200, fill="#ffffff", stroke="#94a3b8", width=1.2, rx=10)
+    s.text(bx + 65, 145, "Shaded square", size=15, weight="bold")
+    s.text(bx + 65, 170, "4-figure: 2247", size=16, color=ORANGE, weight="bold")
+    s.text(bx + 65, 215, "Point A", size=15, weight="bold")
+    s.text(bx + 65, 240, "22 + 4 tenths", size=14)
+    s.text(bx + 65, 260, "47 + 7 tenths", size=14)
+    s.text(bx + 65, 292, "6-figure: 224477", size=16, color=RED, weight="bold")
+    return s
+
+
+def _panel_title(s, x, y, t):
+    s.text(x, y, t, size=16, weight="bold", color=INK)
+
+
+@fig
+def contour_landforms():
+    s = Svg(800, 560, "Contour patterns of common landforms",
+            "Six contour patterns: a conical hill shown by roughly circular contours with the highest in the middle; a spur, "
+            "whose V-shaped contours point towards lower ground; a valley, whose V-shaped contours point upstream towards "
+            "higher ground with a river along the V; an escarpment with closely spaced contours on the steep scarp slope and "
+            "widely spaced contours on the gentle dip slope; a plateau with close contours at its edges and a large flat top; "
+            "and a saddle, a low col between two hills. Heights are in metres.")
+    heading(s, "Reading landforms from contours (heights in metres)")
+    cells = [(140, 160), (400, 160), (660, 160), (140, 400), (400, 400), (660, 400)]
+
+    def lab(x, y, t):
+        s.label(x, y, t, size=12, color=CONTOUR, weight="bold", pad=2)
+
+    # conical hill
+    cx, cy = cells[0]
+    _panel_title(s, cx, cy - 100, "Conical hill")
+    for r, h in [(80, "100"), (58, "200"), (38, "300"), (18, "400")]:
+        s.circle(cx, cy + 10, r, stroke=CONTOUR, width=2)
+        lab(cx + r * 0.71, cy + 10 - r * 0.71, h)
+    s.text(cx, cy + 10, "▲", size=12, color=BROWN)
+    # spur
+    cx, cy = cells[1]
+    _panel_title(s, cx, cy - 100, "Spur (V points downhill)")
+    for k, h in enumerate(["300", "200", "100"]):
+        yb = cy - 50 + k * 40
+        s.polyline([(cx - 110, yb), (cx, yb + 50), (cx + 110, yb)], color=CONTOUR, width=2)
+        lab(cx + 92, yb + 4, h)
+    s.text(cx, cy - 78, "high", size=13, color=MUTED)
+    s.text(cx, cy + 92, "low", size=13, color=MUTED)
+    # valley
+    cx, cy = cells[2]
+    _panel_title(s, cx, cy - 100, "Valley (V points uphill)")
+    for k, h in enumerate(["300", "200", "100"]):
+        yb = cy - 10 + k * 40
+        s.polyline([(cx - 110, yb), (cx, yb - 50), (cx + 110, yb)], color=CONTOUR, width=2)
+        lab(cx + 92, yb - 4, h)
+    s.path(f"M {cx} {cy - 58} Q {cx + 6} {cy + 20} {cx - 4} {cy + 90}", color=RIVER, width=3)
+    s.text(cx - 34, cy - 74, "high", size=13, color=MUTED)
+    s.label(cx + 22, cy + 70, "river", size=12, color=RIVER, italic=True, pad=2)
+    # escarpment
+    cx, cy = cells[3]
+    _panel_title(s, cx, cy - 100, "Escarpment")
+    for k, (x, h) in enumerate([(cx - 100, "100"), (cx - 82, "200"), (cx - 64, "300"), (cx - 10, "300"), (cx + 45, "200"), (cx + 100, "100")]):
+        s.path(f"M {x} {cy - 80} Q {x + 6} {cy} {x} {cy + 80}", color=CONTOUR, width=2)
+        lab(x + 3, cy + 90 if k % 2 == 0 else cy - 86, h)
+    s.text(cx - 86, cy + 112, "steep scarp", size=12, color=MUTED)
+    s.text(cx + 60, cy + 112, "gentle dip slope", size=12, color=MUTED)
+    # plateau
+    cx, cy = cells[4]
+    _panel_title(s, cx, cy - 100, "Plateau")
+    for d, h in [(0, "100"), (12, "200"), (24, "300")]:
+        s.rect(cx - 110 + d, cy - 75 + d, 220 - 2 * d, 150 - 2 * d, fill="none", stroke=CONTOUR, width=2, rx=40 - d)
+        lab(cx - 110 + d + 6, cy, h) if False else None
+    lab(cx - 104, cy + 30, "100")
+    lab(cx - 92, cy, "200")
+    lab(cx - 80, cy - 30, "300")
+    s.text(cx + 10, cy, "large flat top", size=13, color=MUTED, italic=True)
+    # saddle
+    cx, cy = cells[5]
+    _panel_title(s, cx, cy - 100, "Saddle (col) between hills")
+    s.ellipse(cx, cy, 115, 62, stroke=CONTOUR, width=2)
+    lab(cx, cy - 62, "100")
+    for hx in (cx - 55, cx + 55):
+        s.circle(hx, cy, 40, stroke=CONTOUR, width=2)
+        s.circle(hx, cy, 18, stroke=CONTOUR, width=2)
+        lab(hx, cy - 40, "200")
+        lab(hx, cy, "300")
+    s.label(cx, cy + 32, "col", size=13, weight="bold", color=RED, pad=2)
+    return s
+
+
+@fig
+def cross_section():
+    s = Svg(800, 560, "Drawing a cross-section from a contour map",
+            "Top: a line A–B drawn across contours from 100 m to 400 m. A strip of paper is laid along A–B and the points "
+            "where each contour crosses it are marked with their heights. Bottom: the marks are transferred to a graph with "
+            "a vertical scale, plotted at the right heights and joined with a smooth curve to show the shape of the land.")
+    heading(s, "From contour map to cross-section")
+    pts = [(80, 100), (160, 200), (220, 300), (270, 400), (420, 400), (480, 300), (570, 200), (690, 100)]
+    ty = 120
+    s.rect(50, 60, 700, 130, fill="#fefce8", stroke="#94a3b8", width=1.2, rx=8)
+    for x, h in pts:
+        s.path(f"M {x - 14} 68 Q {x + 10} {ty} {x - 8} 182", color=CONTOUR, width=2)
+        s.label(x - 6, 80, str(h), size=12, color=CONTOUR, weight="bold", pad=2)
+    s.line(60, ty, 740, ty, color=RED, width=2.5)
+    s.text(48, ty, "A", size=18, weight="bold", color=RED, anchor="end")
+    s.text(752, ty, "B", size=18, weight="bold", color=RED, anchor="start")
+    for x, _ in pts:
+        s.dot(x, ty, r=4, color=RED)
+    s.text(400, 208, "1. Mark where each contour crosses A–B on a paper strip.", size=14, color=MUTED)
+    gx0, gy0, gh = 90, 490, 220
+    s.line(gx0, gy0, 720, gy0, color=INK, width=2)
+    s.line(gx0, gy0, gx0, gy0 - gh - 10, color=INK, width=2)
+    for h in range(0, 501, 100):
+        y = gy0 - h * gh / 500
+        s.line(gx0 - 6, y, 720, y, color="#e2e8f0", width=1)
+        s.text(gx0 - 12, y, str(h), size=12, color=MUTED, anchor="end")
+    s.text(gx0 - 50, gy0 - gh / 2, "height (m)", size=13, color=MUTED)
+    prof = [(gx0 - 10, 70)] + pts[:4] + [(345, 440)] + pts[4:] + [(730, 70)]
+    xy = [(x if x > gx0 else gx0, gy0 - h * gh / 500) for x, h in prof]
+    d = f"M {xy[0][0]:.1f} {xy[0][1]:.1f} " + " ".join(
+        f"Q {xy[i][0]:.1f} {xy[i][1]:.1f} {(xy[i][0] + xy[i + 1][0]) / 2:.1f} {(xy[i][1] + xy[i + 1][1]) / 2:.1f}" for i in range(1, len(xy) - 1)
+    ) + f" L {xy[-1][0]:.1f} {xy[-1][1]:.1f} L {xy[-1][0]:.1f} {gy0} L {gx0} {gy0} Z"
+    s.path(d, color=INK, width=2.5, fill=LAND)
+    for x, h in pts:
+        s.dot(x, gy0 - h * gh / 500, r=4.5, color=RED)
+    s.text(gx0, gy0 + 20, "A", size=16, weight="bold", color=RED)
+    s.text(720, gy0 + 20, "B", size=16, weight="bold", color=RED)
+    s.text(400, gy0 + 40, "2. Plot each mark at its height and join the points with a smooth curve.", size=14, color=MUTED)
+    return s
+
+
+@fig
+def chain_survey():
+    s = Svg(800, 470, "A chain survey with offsets",
+            "A straight chain line runs from station A to station B, measured every 20 metres. Offsets are measured at right "
+            "angles from the chain line to features: two corners of a building, a tree, and the points where a path and a "
+            "stream cross. The chainage along the line and the offset distance fix the position of each feature.")
+    heading(s, "Chain survey: chain line plus right-angle offsets")
+    y = 260
+    x0, x1 = 80, 720
+    s.line(x0, y, x1, y, color=INK, width=3)
+    for m in range(0, 101, 20):
+        x = x0 + (x1 - x0) * m / 100
+        s.line(x, y - 8, x, y + 8, color=INK, width=2)
+        s.text(x, y + 26, f"{m} m", size=13, color=MUTED)
+    for x, t in [(x0, "A"), (x1, "B")]:
+        s.polygon([(x, y - 18), (x - 12, y + 4), (x + 12, y + 4)], fill="#ffffff", stroke=RED, width=2.5)
+        s.text(x, y - 32, t, size=18, weight="bold", color=RED)
+    def X(m):
+        return x0 + (x1 - x0) * m / 100
+    # building
+    bx1, bx2 = X(25), X(45)
+    s.rect(bx1, y - 160, bx2 - bx1, 70, fill=F_GREY, stroke=INK, width=2)
+    s.text((bx1 + bx2) / 2, y - 125, "building", size=14, weight="bold")
+    for x in (bx1, bx2):
+        s.line(x, y, x, y - 90, color=ORANGE, width=2, dash="6 4")
+        s.rect(x, y - 12, 10, 12, fill="none", stroke=ORANGE, width=1.2)
+    s.label(bx1 - 6, y - 50, "offset 18 m", size=12, anchor="end", color=ORANGE, weight="bold", pad=2)
+    # tree
+    tx = X(62)
+    s.line(tx, y, tx, y + 90, color=ORANGE, width=2, dash="6 4")
+    s.circle(tx, y + 104, 14, fill="#86efac", stroke=GREEN, width=2)
+    s.label(tx + 26, y + 70, "offset 12 m to tree", size=12, anchor="start", color=ORANGE, weight="bold", pad=2)
+    # path and stream
+    s.path(f"M {X(78)} {y - 170} L {X(84)} {y + 160}", color=BROWN, width=3, dash="10 5")
+    s.label(X(78) + 14, y - 150, "path", size=13, anchor="start", color=BROWN, pad=2)
+    s.path(f"M {X(8)} {y + 170} Q {X(14)} {y + 40} {X(12)} {y} Q {X(10)} {y - 80} {X(18)} {y - 180}", color=RIVER, width=3)
+    s.label(X(18) + 10, y - 170, "stream", size=13, anchor="start", color=RIVER, italic=True, pad=2)
+    note(s, "Each feature is fixed by its chainage along A–B and its offset at a right angle.", 450, size=14, color=INK)
+    return s
+
+
+@fig
+def compass_bearings():
+    s = Svg(800, 460, "Compass points and bearings",
+            "Left: the sixteen points of the compass from north through north-north-east, north-east and so on. Right: a "
+            "bearing is the angle measured clockwise from north, written with three figures. From X, the bearing of Y is "
+            "060°; the back bearing, from Y to X, is 060° + 180° = 240°.")
+    heading(s, "Sixteen compass points, and bearings measured clockwise from north")
+    cx, cy, r = 210, 250, 150
+    s.circle(cx, cy, r, fill="#ffffff", stroke="#94a3b8", width=1.5)
+    names = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"]
+    for i, n in enumerate(names):
+        a = math.radians(90 - i * 22.5)
+        main = i % 4 == 0
+        rr = r - (8 if main else 30)
+        s.line(cx, cy, cx + rr * math.cos(a), cy - rr * math.sin(a), color=INK if main else MUTED, width=2.2 if main else 1)
+        tr = r + 20
+        s.text(cx + tr * math.cos(a), cy - tr * math.sin(a), n, size=15 if main else 12, weight="bold" if main else "normal",
+               color=RED if n == "N" else INK)
+    px, py, pr = 560, 290, 140
+    s.line(px, py, px, py - pr - 10, color=INK, width=2.5)
+    s.text(px, py - pr - 24, "N", size=16, weight="bold", color=RED)
+    a = math.radians(90 - 60)
+    yx, yy = px + pr * math.cos(a), py - pr * math.sin(a)
+    s.line(px, py, yx, yy, color=BLUE, width=3)
+    s.arc(px, py, 60, 90, 30, color=ORANGE, width=2.5)
+    s.label(px + 36, py - 82, "60°", size=14, color=ORANGE, weight="bold", pad=2)
+    s.dot(px, py, r=6, color=INK)
+    s.text(px - 18, py + 4, "X", size=18, weight="bold", anchor="end")
+    s.dot(yx, yy, r=6, color=INK)
+    s.text(yx + 14, yy, "Y", size=18, weight="bold", anchor="start")
+    s.text(px + 20, py + 60, "bearing of Y from X = 060°", size=15, weight="bold", color=BLUE)
+    s.text(px + 20, py + 84, "back bearing (Y to X) = 240°", size=15, weight="bold", color=PURPLE)
+    s.text(px + 20, py + 108, "back bearing = bearing ± 180°", size=14, color=MUTED)
+    return s
+
+
+@fig
+def statistical_graphs():
+    s = Svg(800, 620, "Four statistical graphs drawn from geographical data",
+            "Four graphs of illustrative data: a simple bar graph of rice production over five years; a line graph of "
+            "monthly temperature; a pie chart of land use in a district (farming 45%, forest 25%, mining 12%, settlement 10%, "
+            "other 8%); and a divided (compound) bar showing the same land use as parts of one bar.")
+    heading(s, "Bar, line, pie and divided bar (illustrative data)")
+    # bar
+    _panel_title(s, 200, 70, "Simple bar graph")
+    bx, by = 70, 290
+    s.line(bx, by, 340, by, color=INK, width=1.8)
+    s.line(bx, by, bx, 90, color=INK, width=1.8)
+    for k, v in enumerate([60, 75, 70, 90, 110]):
+        x = bx + 18 + k * 52
+        s.rect(x, by - v * 1.6, 34, v * 1.6, fill=BLUE, stroke="none", width=0)
+        s.text(x + 17, by + 16, str(2019 + k), size=12, color=MUTED)
+    s.text(bx + 4, 100, "output", size=12, color=MUTED, anchor="start")
+    # line
+    _panel_title(s, 590, 70, "Line graph")
+    lx, ly = 460, 290
+    s.line(lx, ly, 740, ly, color=INK, width=1.8)
+    s.line(lx, ly, lx, 90, color=INK, width=1.8)
+    temps = [27, 28, 28.5, 28.5, 28, 26.5, 25.5, 25.5, 26, 26.5, 27, 27]
+    pts = [(lx + 14 + i * 23, ly - (t - 22) * 26) for i, t in enumerate(temps)]
+    s.polyline(pts, color=RED, width=3)
+    for i, (x, y) in enumerate(pts):
+        s.dot(x, y, r=3.5, color=RED)
+        s.text(x, ly + 16, "JFMAMJJASOND"[i], size=11, color=MUTED)
+    s.text(lx + 4, 100, "°C", size=12, color=MUTED, anchor="start")
+    # pie
+    _panel_title(s, 200, 350, "Pie chart")
+    data = [("farming", 45, GREEN), ("forest", 25, "#065f46"), ("mining", 12, ORANGE), ("settlement", 10, PURPLE), ("other", 8, "#94a3b8")]
+    pcx, pcy, pr = 150, 480, 95
+    a0 = 90.0
+    for name, v, col in data:
+        a1 = a0 - v * 3.6
+        large = 1 if v * 3.6 > 180 else 0
+        x0, y0 = pcx + pr * math.cos(math.radians(a0)), pcy - pr * math.sin(math.radians(a0))
+        x1, y1 = pcx + pr * math.cos(math.radians(a1)), pcy - pr * math.sin(math.radians(a1))
+        s.path(f"M {pcx} {pcy} L {x0:.1f} {y0:.1f} A {pr} {pr} 0 {large} 1 {x1:.1f} {y1:.1f} Z", color="#ffffff", width=2, fill=col)
+        a0 = a1
+    for k, (name, v, col) in enumerate(data):
+        y = 410 + k * 28
+        s.rect(262, y - 8, 16, 16, fill=col, stroke="none", width=0)
+        s.text(286, y, f"{name} {v}% ({v * 3.6:g}°)", size=13, anchor="start")
+    # divided bar
+    _panel_title(s, 590, 350, "Divided (compound) bar")
+    dx, dy, dw = 470, 420, 260
+    acc = 0
+    for name, v, col in data:
+        s.rect(dx + acc * dw / 100, dy, v * dw / 100, 70, fill=col, stroke="#ffffff", width=2)
+        if v >= 12:
+            s.text(dx + (acc + v / 2) * dw / 100, dy + 35, f"{v}%", size=13, color="#ffffff", weight="bold")
+        acc += v
+    s.text(dx + dw / 2, dy + 100, "same land-use data as the pie chart", size=13, color=MUTED)
+    return s
+
+
+@fig
+def statistical_maps():
+    s = Svg(800, 600, "Four kinds of statistical map",
+            "A dot map, where each dot stands for a fixed number of people; a choropleth map, where areas are shaded darker "
+            "for higher values such as population density; an isopleth map, where lines join places of equal value, such as "
+            "isohyets of equal rainfall; and a flow map, where arrows of different widths show the amount of movement between "
+            "places.")
+    heading(s, "Dot, choropleth, isopleth and flow maps (illustrative)")
+    import random
+    rng = random.Random(7)
+    # dot map
+    _panel_title(s, 200, 70, "Dot map")
+    outline = [(70, 110), (300, 95), (340, 180), (310, 280), (110, 290), (60, 200)]
+    poly(s, outline, "#ffffff", stroke=INK, width=2)
+    for _ in range(26):
+        s.dot(rng.uniform(220, 310), rng.uniform(120, 200), r=3.5, color=INK)
+    for _ in range(9):
+        s.dot(rng.uniform(90, 250), rng.uniform(170, 270), r=3.5, color=INK)
+    s.text(200, 310, "1 dot = 1,000 people", size=13, color=MUTED)
+    # choropleth
+    _panel_title(s, 590, 70, "Choropleth map")
+    shades = [["#fee2e2", "#fca5a5", "#ef4444"], ["#fca5a5", "#ef4444", "#b91c1c"], ["#fee2e2", "#fee2e2", "#fca5a5"]]
+    for i in range(3):
+        for j in range(3):
+            s.rect(470 + j * 70, 95 + i * 62, 70, 62, fill=shades[i][j], stroke=INK, width=1.5)
+    for k, (col, t) in enumerate([("#fee2e2", "low"), ("#fca5a5", "medium"), ("#ef4444", "high"), ("#b91c1c", "very high")]):
+        s.rect(690, 110 + k * 30, 18, 18, fill=col, stroke=INK, width=1)
+        s.text(716, 119 + k * 30, t, size=12, anchor="start")
+    s.text(590, 310, "shading by density class", size=13, color=MUTED)
+    # isopleth
+    _panel_title(s, 200, 360, "Isopleth map (isohyets)")
+    s.rect(70, 380, 260, 180, fill="#ffffff", stroke=INK, width=2)
+    for k, v in enumerate(["3,000", "2,500", "2,000", "1,500"]):
+        y = 410 + k * 42
+        s.path(f"M 70 {y + 20} Q 150 {y - 10} 220 {y + 8} T 330 {y - 6}", color=BLUE, width=2)
+        s.label(110 + k * 20, y + 8, v, size=12, color=BLUE, weight="bold", pad=2)
+    s.text(200, 580, "lines join places with equal rainfall (mm)", size=13, color=MUTED)
+    # flow
+    _panel_title(s, 590, 360, "Flow map")
+    hubs = {"Freetown": (500, 470), "Bo": (650, 530), "Makeni": (650, 410), "Kenema": (740, 470)}
+    for (a, b, w) in [("Makeni", "Freetown", 14), ("Bo", "Freetown", 10), ("Kenema", "Bo", 6)]:
+        (x1, y1), (x2, y2) = hubs[a], hubs[b]
+        s.line(x1, y1, x2, y2, color=ORANGE, width=w, cap="butt", opacity=0.8)
+        s.head(x2 + (x1 - x2) * 0.18, y2 + (y1 - y2) * 0.18, math.atan2(y2 - y1, x2 - x1), color=ORANGE, size=10 + w)
+    for n, (x, y) in hubs.items():
+        s.dot(x, y, r=6, color=INK)
+        s.label(x, y - 18, n, size=12, weight="bold", pad=2)
+    s.text(590, 580, "arrow width shows volume of movement", size=13, color=MUTED)
+    return s
 
 # ─────────────────────────────────────────────────────────────────────────────
 

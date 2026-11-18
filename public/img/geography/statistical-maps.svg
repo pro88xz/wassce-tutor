@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Four kinds of statistical map</title>
+<desc id="d">A dot map, where each dot stands for a fixed number of people; a choropleth map, where areas are shaded darker for higher values such as population density; an isopleth map, where lines join places of equal value, such as isohyets of equal rainfall; and a flow map, where arrows of different widths show the amount of movement between places.</desc>
+<defs></defs>
+<rect width="800" height="600" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Dot, choropleth, isopleth and flow maps (illustrative)</text>
+<text x="200.0" y="70.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Dot map</text>
+<polygon points="70.0,110.0 300.0,95.0 340.0,180.0 310.0,280.0 110.0,290.0 60.0,200.0" fill="#ffffff" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="249.1" cy="132.1" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="278.6" cy="125.8" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="268.2" cy="149.3" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="225.2" cy="160.6" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="223.4" cy="154.7" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="226.3" cy="127.3" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="258.2" cy="186.1" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="231.1" cy="137.9" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="276.5" cy="195.8" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="271.9" cy="151.7" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="307.9" cy="123.7" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="297.3" cy="143.2" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="233.0" cy="129.4" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="247.8" cy="185.3" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="236.3" cy="166.5" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="277.5" cy="149.8" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="269.3" cy="125.0" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="225.4" cy="136.5" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="281.2" cy="154.2" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="248.3" cy="166.8" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="260.8" cy="144.0" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="291.5" cy="175.9" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="242.0" cy="166.0" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="267.3" cy="190.0" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="285.7" cy="143.0" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="308.2" cy="129.4" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="156.9" cy="245.7" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="114.3" cy="218.9" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="96.3" cy="236.8" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="212.3" cy="227.3" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="230.1" cy="201.4" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="201.2" cy="229.4" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="182.8" cy="215.6" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="224.4" cy="264.5" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="165.9" cy="236.4" r="3.5" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="200.0" y="310.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1 dot = 1,000 people</text>
+<text x="590.0" y="70.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Choropleth map</text>
+<rect x="470.0" y="95.0" width="70.0" height="62.0" rx="0" fill="#fee2e2" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="540.0" y="95.0" width="70.0" height="62.0" rx="0" fill="#fca5a5" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="610.0" y="95.0" width="70.0" height="62.0" rx="0" fill="#ef4444" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="470.0" y="157.0" width="70.0" height="62.0" rx="0" fill="#fca5a5" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="540.0" y="157.0" width="70.0" height="62.0" rx="0" fill="#ef4444" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="610.0" y="157.0" width="70.0" height="62.0" rx="0" fill="#b91c1c" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="470.0" y="219.0" width="70.0" height="62.0" rx="0" fill="#fee2e2" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="540.0" y="219.0" width="70.0" height="62.0" rx="0" fill="#fee2e2" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="610.0" y="219.0" width="70.0" height="62.0" rx="0" fill="#fca5a5" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="690.0" y="110.0" width="18.0" height="18.0" rx="0" fill="#fee2e2" stroke="#0f172a" stroke-width="1"/>
+<text x="716.0" y="119.0" font-size="12" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">low</text>
+<rect x="690.0" y="140.0" width="18.0" height="18.0" rx="0" fill="#fca5a5" stroke="#0f172a" stroke-width="1"/>
+<text x="716.0" y="149.0" font-size="12" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">medium</text>
+<rect x="690.0" y="170.0" width="18.0" height="18.0" rx="0" fill="#ef4444" stroke="#0f172a" stroke-width="1"/>
+<text x="716.0" y="179.0" font-size="12" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">high</text>
+<rect x="690.0" y="200.0" width="18.0" height="18.0" rx="0" fill="#b91c1c" stroke="#0f172a" stroke-width="1"/>
+<text x="716.0" y="209.0" font-size="12" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">very high</text>
+<text x="590.0" y="310.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">shading by density class</text>
+<text x="200.0" y="360.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Isopleth map (isohyets)</text>
+<rect x="70.0" y="380.0" width="260.0" height="180.0" rx="0" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<path d="M 70 430 Q 150 400 220 418 T 330 404" stroke="#2563eb" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="91.2" y="410.0" width="37.6" height="16.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="110.0" y="418.0" font-size="12" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3,000</text>
+<path d="M 70 472 Q 150 442 220 460 T 330 446" stroke="#2563eb" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="111.2" y="452.0" width="37.6" height="16.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="130.0" y="460.0" font-size="12" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2,500</text>
+<path d="M 70 514 Q 150 484 220 502 T 330 488" stroke="#2563eb" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="131.2" y="494.0" width="37.6" height="16.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="150.0" y="502.0" font-size="12" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2,000</text>
+<path d="M 70 556 Q 150 526 220 544 T 330 530" stroke="#2563eb" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="151.2" y="536.0" width="37.6" height="16.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="170.0" y="544.0" font-size="12" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1,500</text>
+<text x="200.0" y="580.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">lines join places with equal rainfall (mm)</text>
+<text x="590.0" y="360.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Flow map</text>
+<line x1="650.0" y1="410.0" x2="500.0" y2="470.0" stroke="#ea580c" stroke-width="14" stroke-linecap="butt" opacity="0.8"/>
+<polygon points="517.0,463.2 542.5,440.9 550.9,461.8" fill="#ea580c"/>
+<line x1="650.0" y1="530.0" x2="500.0" y2="470.0" stroke="#ea580c" stroke-width="10" stroke-linecap="butt" opacity="0.8"/>
+<polygon points="518.6,477.5 546.9,478.6 539.9,496.1" fill="#ea580c"/>
+<line x1="740.0" y1="470.0" x2="650.0" y2="530.0" stroke="#ea580c" stroke-width="6" stroke-linecap="butt" opacity="0.8"/>
+<polygon points="660.2,523.2 673.8,505.1 682.1,517.6" fill="#ea580c"/>
+<circle cx="500.0" cy="470.0" r="6.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<rect x="471.1" y="444.0" width="57.8" height="16.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="500.0" y="452.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Freetown</text>
+<circle cx="650.0" cy="530.0" r="6.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<rect x="641.3" y="504.0" width="17.4" height="16.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="650.0" y="512.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Bo</text>
+<circle cx="650.0" cy="410.0" r="6.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<rect x="627.8" y="384.0" width="44.3" height="16.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="650.0" y="392.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Makeni</text>
+<circle cx="740.0" cy="470.0" r="6.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<rect x="717.8" y="444.0" width="44.3" height="16.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="740.0" y="452.0" font-size="12" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Kenema</text>
+<text x="590.0" y="580.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">arrow width shows volume of movement</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The settlement hierarchy</title>
+<desc id="d">Settlements ranked by size and importance, from many small isolated dwellings and hamlets at the bottom to a few large cities and conurbations at the top. Higher settlements are fewer, larger, further apart and provide more and higher-order services.</desc>
+<defs><marker id="a7c3aed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7c3aed"/></marker><marker id="a7c3aeds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#7c3aed"/></marker></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Fewer, larger settlements with more services towards the top</text>
+<polygon points="250.0,66.0 330.0,66.0 368.0,124.0 212.0,124.0" fill="#fecaca" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="290.0" y="95.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Conurbation</text>
+<text x="560.0" y="95.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Lagos, Greater Accra</text>
+<line x1="357.0" y1="95.0" x2="550.0" y2="95.0" stroke="#cbd5e1" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+<polygon points="212.0,124.0 368.0,124.0 406.0,182.0 174.0,182.0" fill="#fed7aa" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="290.0" y="153.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">City</text>
+<text x="560.0" y="153.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Freetown, Bo, Kenema</text>
+<line x1="395.0" y1="153.0" x2="550.0" y2="153.0" stroke="#cbd5e1" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+<polygon points="174.0,182.0 406.0,182.0 444.0,240.0 136.0,240.0" fill="#fde68a" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="290.0" y="211.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Town</text>
+<text x="560.0" y="211.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">district headquarters</text>
+<line x1="433.0" y1="211.0" x2="550.0" y2="211.0" stroke="#cbd5e1" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+<polygon points="136.0,240.0 444.0,240.0 482.0,298.0 98.0,298.0" fill="#d9f99d" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="290.0" y="269.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Village</text>
+<text x="560.0" y="269.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">primary school, market</text>
+<line x1="471.0" y1="269.0" x2="550.0" y2="269.0" stroke="#cbd5e1" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+<polygon points="98.0,298.0 482.0,298.0 520.0,356.0 60.0,356.0" fill="#bbf7d0" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="290.0" y="327.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Hamlet</text>
+<text x="560.0" y="327.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">a few houses</text>
+<line x1="509.0" y1="327.0" x2="550.0" y2="327.0" stroke="#cbd5e1" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+<polygon points="60.0,356.0 520.0,356.0 558.0,414.0 22.0,414.0" fill="#a7f3d0" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="290.0" y="385.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Isolated dwelling</text>
+<text x="560.0" y="385.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">one farm household</text>
+<line x1="547.0" y1="385.0" x2="550.0" y2="385.0" stroke="#cbd5e1" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+<line x1="40.0" y1="410.0" x2="40.0" y2="80.0" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a7c3aed)"/>
+<text x="40.0" y="445.0" font-size="14" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">↑ fewer, larger, more services, wider sphere of influence</text>
+</svg>

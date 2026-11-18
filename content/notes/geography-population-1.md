@@ -66,6 +66,10 @@ In Sierra Leone, population is densest in the **Western Area** (Freetown and its
 
 ## Over-population, under-population and optimum population
 
+![Graph of output per head against population: output rises to a peak at the optimum population, with under-population to the left and over-population to the right](https://wasscetutor.com/img/geography/optimum-population.svg)
+
+*Figure 1. Under-population, optimum population and over-population. WASSCE Tutor diagram.*
+
 - **Over-population:** too many people for the resources available, with unemployment, poverty and pressure on land and services.
 - **Under-population:** too few people to make full use of the resources.
 - **Optimum population:** the number that gives the **highest standard of living** with the resources and technology available.

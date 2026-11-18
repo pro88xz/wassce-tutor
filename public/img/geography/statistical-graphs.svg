@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Four statistical graphs drawn from geographical data</title>
+<desc id="d">Four graphs of illustrative data: a simple bar graph of rice production over five years; a line graph of monthly temperature; a pie chart of land use in a district (farming 45%, forest 25%, mining 12%, settlement 10%, other 8%); and a divided (compound) bar showing the same land use as parts of one bar.</desc>
+<defs></defs>
+<rect width="800" height="620" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Bar, line, pie and divided bar (illustrative data)</text>
+<text x="200.0" y="70.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Simple bar graph</text>
+<line x1="70.0" y1="290.0" x2="340.0" y2="290.0" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="70.0" y1="290.0" x2="70.0" y2="90.0" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+<rect x="88.0" y="194.0" width="34.0" height="96.0" rx="0" fill="#2563eb" stroke="none" stroke-width="0"/>
+<text x="105.0" y="306.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2019</text>
+<rect x="140.0" y="170.0" width="34.0" height="120.0" rx="0" fill="#2563eb" stroke="none" stroke-width="0"/>
+<text x="157.0" y="306.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2020</text>
+<rect x="192.0" y="178.0" width="34.0" height="112.0" rx="0" fill="#2563eb" stroke="none" stroke-width="0"/>
+<text x="209.0" y="306.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2021</text>
+<rect x="244.0" y="146.0" width="34.0" height="144.0" rx="0" fill="#2563eb" stroke="none" stroke-width="0"/>
+<text x="261.0" y="306.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2022</text>
+<rect x="296.0" y="114.0" width="34.0" height="176.0" rx="0" fill="#2563eb" stroke="none" stroke-width="0"/>
+<text x="313.0" y="306.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2023</text>
+<text x="74.0" y="100.0" font-size="12" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">output</text>
+<text x="590.0" y="70.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Line graph</text>
+<line x1="460.0" y1="290.0" x2="740.0" y2="290.0" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="460.0" y1="290.0" x2="460.0" y2="90.0" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M 474.0 160.0 L 497.0 134.0 L 520.0 121.0 L 543.0 121.0 L 566.0 134.0 L 589.0 173.0 L 612.0 199.0 L 635.0 199.0 L 658.0 186.0 L 681.0 173.0 L 704.0 160.0 L 727.0 160.0" stroke="#dc2626" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="474.0" cy="160.0" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="474.0" y="306.0" font-size="11" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">J</text>
+<circle cx="497.0" cy="134.0" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="497.0" y="306.0" font-size="11" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">F</text>
+<circle cx="520.0" cy="121.0" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="520.0" y="306.0" font-size="11" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">M</text>
+<circle cx="543.0" cy="121.0" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="543.0" y="306.0" font-size="11" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">A</text>
+<circle cx="566.0" cy="134.0" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="566.0" y="306.0" font-size="11" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">M</text>
+<circle cx="589.0" cy="173.0" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="589.0" y="306.0" font-size="11" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">J</text>
+<circle cx="612.0" cy="199.0" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="612.0" y="306.0" font-size="11" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">J</text>
+<circle cx="635.0" cy="199.0" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="635.0" y="306.0" font-size="11" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">A</text>
+<circle cx="658.0" cy="186.0" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="658.0" y="306.0" font-size="11" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">S</text>
+<circle cx="681.0" cy="173.0" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="681.0" y="306.0" font-size="11" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">O</text>
+<circle cx="704.0" cy="160.0" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="704.0" y="306.0" font-size="11" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">N</text>
+<circle cx="727.0" cy="160.0" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="727.0" y="306.0" font-size="11" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">D</text>
+<text x="464.0" y="100.0" font-size="12" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">°C</text>
+<text x="200.0" y="350.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Pie chart</text>
+<path d="M 150 480 L 150.0 385.0 A 95 95 0 0 1 179.4 570.4 Z" stroke="#ffffff" stroke-width="2" fill="#15803d" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 150 480 L 179.4 570.4 A 95 95 0 0 1 59.6 509.4 Z" stroke="#ffffff" stroke-width="2" fill="#065f46" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 150 480 L 59.6 509.4 A 95 95 0 0 1 64.0 439.6 Z" stroke="#ffffff" stroke-width="2" fill="#ea580c" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 150 480 L 64.0 439.6 A 95 95 0 0 1 104.2 396.8 Z" stroke="#ffffff" stroke-width="2" fill="#7c3aed" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 150 480 L 104.2 396.8 A 95 95 0 0 1 150.0 385.0 Z" stroke="#ffffff" stroke-width="2" fill="#94a3b8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="262.0" y="402.0" width="16.0" height="16.0" rx="0" fill="#15803d" stroke="none" stroke-width="0"/>
+<text x="286.0" y="410.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">farming 45% (162°)</text>
+<rect x="262.0" y="430.0" width="16.0" height="16.0" rx="0" fill="#065f46" stroke="none" stroke-width="0"/>
+<text x="286.0" y="438.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">forest 25% (90°)</text>
+<rect x="262.0" y="458.0" width="16.0" height="16.0" rx="0" fill="#ea580c" stroke="none" stroke-width="0"/>
+<text x="286.0" y="466.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">mining 12% (43.2°)</text>
+<rect x="262.0" y="486.0" width="16.0" height="16.0" rx="0" fill="#7c3aed" stroke="none" stroke-width="0"/>
+<text x="286.0" y="494.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">settlement 10% (36°)</text>
+<rect x="262.0" y="514.0" width="16.0" height="16.0" rx="0" fill="#94a3b8" stroke="none" stroke-width="0"/>
+<text x="286.0" y="522.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">other 8% (28.8°)</text>
+<text x="590.0" y="350.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Divided (compound) bar</text>
+<rect x="470.0" y="420.0" width="117.0" height="70.0" rx="0" fill="#15803d" stroke="#ffffff" stroke-width="2"/>
+<text x="528.5" y="455.0" font-size="13" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">45%</text>
+<rect x="587.0" y="420.0" width="65.0" height="70.0" rx="0" fill="#065f46" stroke="#ffffff" stroke-width="2"/>
+<text x="619.5" y="455.0" font-size="13" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">25%</text>
+<rect x="652.0" y="420.0" width="31.2" height="70.0" rx="0" fill="#ea580c" stroke="#ffffff" stroke-width="2"/>
+<text x="667.6" y="455.0" font-size="13" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">12%</text>
+<rect x="683.2" y="420.0" width="26.0" height="70.0" rx="0" fill="#7c3aed" stroke="#ffffff" stroke-width="2"/>
+<rect x="709.2" y="420.0" width="20.8" height="70.0" rx="0" fill="#94a3b8" stroke="#ffffff" stroke-width="2"/>
+<text x="600.0" y="520.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">same land-use data as the pie chart</text>
+</svg>

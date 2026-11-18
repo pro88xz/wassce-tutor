@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The bush fallowing cycle</title>
+<desc id="d">A farmer clears bush, burns the cut vegetation so the ash adds nutrients, plants crops such as rice and cassava for two or three years until yields fall, then leaves the land to fallow so bush regrows and the soil recovers before the plot is cleared again. When population grows, fallow periods become too short for the soil to recover.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="460" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Bush fallowing: farm, rest, return</text>
+<rect x="295.0" y="64.0" width="210.0" height="62.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="400.0" y="84.5" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. Clear the bush</text>
+<text x="400.0" y="105.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cutlass and axe</text>
+<rect x="537.5" y="164.2" width="210.0" height="62.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="642.5" y="184.7" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2. Burn</text>
+<text x="642.5" y="205.7" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ash adds nutrients</text>
+<rect x="444.9" y="326.3" width="210.0" height="62.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="549.9" y="346.8" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3. Plant crops</text>
+<text x="549.9" y="367.8" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rice, cassava: 2–3 yrs</text>
+<rect x="145.1" y="326.3" width="210.0" height="62.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="250.1" y="346.8" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4. Soil exhausted</text>
+<text x="250.1" y="367.8" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">yields fall</text>
+<rect x="52.5" y="164.2" width="210.0" height="62.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="157.5" y="184.7" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5. Fallow</text>
+<text x="157.5" y="205.7" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">bush regrows, soil recovers</text>
+<line x1="400.0" y1="132.0" x2="642.5" y2="158.2" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="642.5" y1="232.2" x2="549.9" y2="320.3" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="438.9" y1="357.3" x2="361.1" y2="357.3" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="250.1" y1="320.3" x2="157.5" y2="232.2" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="157.5" y1="158.2" x2="400.0" y2="132.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="400.0" y="232.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">same plot,</text>
+<text x="400.0" y="252.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">permanent village</text>
+<text x="400.0" y="440.0" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Fallow cut from 10–15 years to 3–5 years → soil cannot recover → lower yields.</text>
+</svg>
