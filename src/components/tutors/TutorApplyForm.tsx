@@ -15,6 +15,7 @@ import { supabase } from '@/lib/supabase'
 import { photoProblem } from '@/lib/photo'
 import { LESSONS_PER_WEEK } from '@/lib/tutor-pricing'
 import { PhotoPicker } from '@/components/tutors/PhotoPicker'
+import { cardStrength } from '@/lib/tutor-strength'
 import { TutorCard, type Tutor } from '@/components/tutors/Marketplace'
 import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
 
@@ -26,7 +27,12 @@ type Draft = {
   location: string
   experience: number
   qualifications: string
+  /** "How do your lessons work?" (kept as `bio` so a saved draft from before still loads). */
   bio: string
+  /** Who they teach: SSS1 to SSS3, private candidates, JSS. */
+  classes: string[]
+  /** Optional: results their students have had. */
+  results: string
   chosen: Chosen[]
 }
 
@@ -39,7 +45,30 @@ const STEPS = [
 ] as const
 
 const TOWNS = ['Freetown', 'Bo', 'Kenema', 'Makeni', 'Koidu', 'Port Loko', 'Waterloo', 'Lunsar', 'Kabala', 'Magburaka', 'Kailahun', 'Bonthe', 'Moyamba', 'Pujehun', 'Kambia']
-const BIO_MIN = 80
+const LESSONS_MIN = 60
+
+/** Who the tutor teaches: becomes one sentence of their story (parents search for these words). */
+const CLASSES = [
+  { id: 'sss1', label: 'SSS1' },
+  { id: 'sss2', label: 'SSS2' },
+  { id: 'sss3', label: 'SSS3' },
+  { id: 'private', label: 'Private candidates' },
+  { id: 'jss', label: 'JSS (BECE)' },
+] as const
+
+const listOf = (items: string[]) => (items.length < 2 ? items.join('') : `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`)
+
+function classesSentence(classes: string[]): string {
+  const sss = CLASSES.filter((c) => c.id.startsWith('sss') && classes.includes(c.id)).map((c) => c.label)
+  const wassce = [sss.length ? `${listOf(sss)} students` : '', classes.includes('private') ? 'private candidates' : ''].filter(Boolean)
+  const groups = [wassce.length ? `${listOf(wassce)} preparing for WASSCE` : '', classes.includes('jss') ? 'JSS students preparing for BECE' : ''].filter(Boolean)
+  return groups.length ? `I teach ${listOf(groups)}.` : ''
+}
+
+/** The story on the card: how lessons work, who they teach, and results (when given). */
+function composeBio(d: Pick<Draft, 'bio' | 'classes' | 'results'>): string {
+  return [d.bio.trim(), classesSentence(d.classes), d.results.trim()].filter(Boolean).join('\n\n')
+}
 const DOC_TYPES = ['application/pdf', 'image/jpeg', 'image/png']
 
 const field =
@@ -95,6 +124,8 @@ export function TutorApplyForm({
     experience: initial.experience ?? 0,
     qualifications: initial.qualifications ?? '',
     bio: initial.bio ?? '',
+    classes: initial.classes ?? [],
+    results: initial.results ?? '',
     chosen: initial.chosen ?? [],
   })
   const [problem, setProblem] = useState<string | null>(null)
@@ -141,7 +172,7 @@ export function TutorApplyForm({
     id: 'preview',
     avatar_path: null,
     full_name: d.fullName.trim() || 'Your name',
-    bio: d.bio.trim() || 'A few lines about how you teach appear here, so students know what your lessons are like.',
+    bio: composeBio(d) || 'A few lines about how you teach appear here, so students know what your lessons are like.',
     qualifications: d.qualifications.trim() || 'Your qualifications',
     experience_years: d.experience,
     location: d.location.trim() || 'Your town',
@@ -177,7 +208,9 @@ export function TutorApplyForm({
     if (s === 2) {
       if (d.qualifications.trim().length < 10) return 'Enter your qualifications, for example "BSc Mathematics, Fourah Bay College".'
       const n = d.bio.trim().length
-      if (n < BIO_MIN) return `Write at least ${BIO_MIN} characters about how you teach (${n} so far).`
+      if (n < LESSONS_MIN) return `Say how your lessons work: at least ${LESSONS_MIN} characters (${n} so far).`
+      if (d.classes.length === 0) return 'Choose the classes you teach.'
+      if (composeBio(d).length > 2000) return 'Your story is too long: keep it under 2,000 characters.'
       if (documentFile && (!DOC_TYPES.includes(documentFile.type) || documentFile.size > 10 * 1024 * 1024))
         return 'The certificate must be a PDF, JPG or PNG no larger than 10 MB.'
     }
@@ -238,7 +271,7 @@ export function TutorApplyForm({
       const { data: applicationId, error } = await supabase.rpc('submit_tutor_application', {
         p_full_name: d.fullName.trim(),
         p_phone: d.phone.trim(),
-        p_bio: d.bio.trim(),
+        p_bio: composeBio(d),
         p_qualifications: d.qualifications.trim(),
         p_experience_years: d.experience,
         p_location: d.location.trim(),
@@ -277,6 +310,10 @@ export function TutorApplyForm({
   }
 
   const bioCount = d.bio.trim().length
+  // How findable the card will be (the photo counts once chosen; reviewing comes later).
+  const strength = cardStrength({ ...card, reviewer: false, hasPhoto: !!avatar })
+  const strengthTodo = strength.checks.filter((c) => !c.done && c.key !== 'reviewer')
+  const strengthDone = strength.checks.filter((c) => c.done && c.key !== 'reviewer').length
   const last = step === STEPS.length - 1
 
   return (
@@ -345,12 +382,12 @@ export function TutorApplyForm({
                       />
                     </span>
                   </Field>
-                  <Field label="Town or area" hint="Where you give lessons in person.">
+                  <Field label="Area and town" hint="Where you give lessons in person. Parents search by area, so add yours.">
                     <input
                       className={`${field} [&::-webkit-calendar-picker-indicator]:!hidden`}
                       list="tutor-towns"
                       maxLength={120}
-                      placeholder="e.g. Freetown, Kissy"
+                      placeholder="e.g. Kissy, Freetown"
                       value={d.location}
                       onChange={(e) => set('location', e.target.value)}
                     />
@@ -483,7 +520,7 @@ export function TutorApplyForm({
                 <div>
                   <div className="flex items-end justify-between gap-3">
                     <label htmlFor="tutor-bio" className="text-sm font-semibold">
-                      About your lessons
+                      How do your lessons work?
                     </label>
                     {d.bio.trim().length === 0 && (
                       <button
@@ -497,24 +534,87 @@ export function TutorApplyForm({
                   </div>
                   <textarea
                     id="tutor-bio"
-                    rows={5}
-                    maxLength={2000}
+                    rows={4}
+                    maxLength={1500}
                     className={`${field} mt-2 h-auto py-3 leading-relaxed`}
-                    placeholder="How do your lessons work? Who do you teach best? What results have your students had?"
+                    placeholder="What happens in a lesson? How do you explain hard topics? Do you give homework or practice questions?"
                     value={d.bio}
                     onChange={(e) => set('bio', e.target.value)}
                   />
                   <div className="mt-2 flex items-center gap-3">
                     <span className="h-1 flex-1 overflow-hidden rounded-full bg-muted" aria-hidden>
                       <span
-                        className={`block h-full rounded-full transition-all ${bioCount >= BIO_MIN ? 'bg-emerald-500' : 'bg-[var(--primary)]'}`}
-                        style={{ width: `${Math.min(100, (bioCount / BIO_MIN) * 100)}%` }}
+                        className={`block h-full rounded-full transition-all ${bioCount >= LESSONS_MIN ? 'bg-emerald-500' : 'bg-[var(--primary)]'}`}
+                        style={{ width: `${Math.min(100, (bioCount / LESSONS_MIN) * 100)}%` }}
                       />
                     </span>
-                    <span className={`text-[12px] font-semibold tabular-nums ${bioCount >= BIO_MIN ? 'text-emerald-600' : 'text-muted-foreground'}`}>
-                      {bioCount >= BIO_MIN ? 'Good length' : `${bioCount} / ${BIO_MIN} characters`}
+                    <span className={`text-[12px] font-semibold tabular-nums ${bioCount >= LESSONS_MIN ? 'text-emerald-600' : 'text-muted-foreground'}`}>
+                      {bioCount >= LESSONS_MIN ? 'Good' : `${bioCount} / ${LESSONS_MIN} characters`}
                     </span>
                   </div>
+                </div>
+
+                <fieldset>
+                  <legend className="text-sm font-semibold">Who do you teach?</legend>
+                  <ul className="mt-2.5 flex flex-wrap gap-2">
+                    {CLASSES.map((c) => {
+                      const on = d.classes.includes(c.id)
+                      return (
+                        <li key={c.id}>
+                          <button
+                            type="button"
+                            aria-pressed={on}
+                            onClick={() => set('classes', on ? d.classes.filter((x) => x !== c.id) : [...d.classes, c.id])}
+                            className={`inline-flex min-h-10 items-center gap-1.5 rounded-full border px-4 text-[14px] font-semibold transition ${
+                              on
+                                ? 'border-transparent bg-[var(--site-ink)] text-white dark:bg-white dark:text-[var(--site-ink)]'
+                                : 'border-border bg-[var(--card)] hover:border-[color-mix(in_srgb,var(--primary)_45%,var(--border))]'
+                            }`}
+                          >
+                            {on && <Check className="h-4 w-4" aria-hidden />}
+                            {c.label}
+                          </button>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </fieldset>
+
+                <Field label="What results have your students had? (optional)" hint="Real results only, e.g. “Eight of my SSS3 students got a credit in WASSCE Chemistry in 2025.”">
+                  <textarea
+                    rows={2}
+                    maxLength={400}
+                    className={`${field} h-auto py-3 leading-relaxed`}
+                    value={d.results}
+                    onChange={(e) => set('results', e.target.value)}
+                  />
+                </Field>
+
+                {/* How findable the card will be, with the next thing to add. */}
+                <div className="rounded-2xl border border-border bg-muted/30 p-4">
+                  <div className="flex items-center justify-between gap-3">
+                    <p className="text-sm font-semibold">How easy your page will be to find</p>
+                    <p className="text-sm font-bold tabular-nums">
+                      {strengthDone} of {strength.checks.length - 1}
+                    </p>
+                  </div>
+                  <span className="mt-2 block h-1.5 overflow-hidden rounded-full bg-muted" aria-hidden>
+                    <span
+                      className={`block h-full rounded-full transition-all ${strengthTodo.length === 0 ? 'bg-emerald-500' : strengthTodo.length <= 2 ? 'bg-amber-500' : 'bg-rose-500'}`}
+                      style={{ width: `${(strengthDone / (strength.checks.length - 1)) * 100}%` }}
+                    />
+                  </span>
+                  {strengthTodo.length > 0 ? (
+                    <ul className="mt-3 space-y-1.5 text-[13px] text-muted-foreground">
+                      {strengthTodo.slice(0, 2).map((c) => (
+                        <li key={c.key}>
+                          <span className="font-semibold text-foreground">{c.label}.</span> {c.tip}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="mt-2 text-[13px] font-semibold text-emerald-700 dark:text-emerald-300">Your card has everything parents search for.</p>
+                  )}
                 </div>
 
                 <label className="flex cursor-pointer items-center gap-3.5 rounded-2xl border border-dashed border-border bg-muted/30 p-4 transition hover:border-[color-mix(in_srgb,var(--primary)_45%,var(--border))]">
