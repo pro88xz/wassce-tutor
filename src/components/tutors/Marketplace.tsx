@@ -25,10 +25,15 @@ import { lessonsText, listText, nle, paymentText, quote, type TutorOffer } from 
 import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
 import { useSendToSignIn } from '@/lib/use-send-to-sign-in'
 import { bookingReturnPath, readBookIntent, type BookIntent } from '@/lib/book-return'
+import { TUTOR_COLUMNS, displayName, tutorPagePath } from '@/lib/tutor-profile'
 
-export type Rate = { subject_id: string; price_nle: number; lessons_per_week: number | null; subject: { id: string; name: string } | null }
+export type Rate = { subject_id: string; price_nle: number; lessons_per_week: number | null; subject: { id: string; name: string; slug?: string } | null }
 export type Tutor = {
   id: string
+  /** The tutor's page, /tutors/{slug} (migration 28). */
+  slug?: string
+  /** A verified lesson reviewer (migration 28). */
+  reviewer?: boolean
   avatar_path: string | null
   full_name: string
   bio: string
@@ -84,20 +89,17 @@ export function VerifiedBadge({ className = 'h-5 w-5' }: { className?: string })
   )
 }
 
-export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: string; subjectName?: string }) {
-  const [tutors, setTutors] = useState<Tutor[]>([])
-  const [loading, setLoading] = useState(true)
-  // ?area= lets a link open the marketplace already searching an area.
-  const [query, setQuery] = useState(() => (typeof window === 'undefined' ? '' : (new URLSearchParams(window.location.search).get('area') ?? '').slice(0, 60)))
-  const [subjectFilter, setSubjectFilter] = useState(subjectId ?? 'all')
-  const [sort, setSort] = useState<Sort>('newest')
+/**
+ * Booking a tutor, from the marketplace or a tutor's own page. Signed in: the
+ * booking opens. Signed out: sign up or sign in first, then back on the same
+ * page with the booking open (reopen() after the tutors have loaded).
+ */
+export function useTutorBooking(preferredSubject?: string) {
   const [booking, setBooking] = useState<Tutor | null>(null)
   const [reopened, setReopened] = useState<BookIntent | null>(null)
   const { user } = useAuth()
   const sendToSignIn = useSendToSignIn()
-  const preferredSubject = subjectFilter === 'all' ? subjectId : subjectFilter
 
-  /** Signed in: open the booking. Signed out: sign up or sign in first, then back here with it open. */
   const book = (tutor: Tutor, subjects?: string[], students = 1) => {
     if (user) {
       setReopened(null)
@@ -105,14 +107,50 @@ export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: strin
       return
     }
     const chosen = subjects ?? (preferredSubject && tutor.tutor_subjects.some((s) => s.subject_id === preferredSubject) ? [preferredSubject] : [])
-    sendToSignIn(bookingReturnPath(window.location.pathname, { tutor: tutor.id, subjects: chosen, students }), { forName: firstName(tutor.full_name) })
+    sendToSignIn(bookingReturnPath(window.location.pathname, { tutor: tutor.id, subjects: chosen, students }), { forName: firstName(displayName(tutor.full_name)) })
   }
+
+  /** Back from signing in to book a tutor: open that booking, once (a refresh, or coming back later, does not reopen it). */
+  const reopen = (list: Tutor[]) => {
+    const intent = readBookIntent(window.location.search)
+    if (!intent) return
+    window.history.replaceState(window.history.state, '', `${window.location.pathname}${window.location.hash}`)
+    const tutor = list.find((t) => t.id === intent.tutor)
+    if (tutor) {
+      setReopened(intent)
+      setBooking(tutor)
+    }
+  }
+
+  const dialog = booking ? (
+    <BookDialog
+      tutor={booking}
+      preferredSubject={preferredSubject}
+      initialSubjects={reopened?.tutor === booking.id ? reopened.subjects : undefined}
+      initialStudents={reopened?.tutor === booking.id ? reopened.students : undefined}
+      onSignIn={(subjects, students) => book(booking, subjects, students)}
+      onClose={() => setBooking(null)}
+    />
+  ) : null
+
+  return { book, reopen, dialog }
+}
+
+export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: string; subjectName?: string }) {
+  const [tutors, setTutors] = useState<Tutor[]>([])
+  const [loading, setLoading] = useState(true)
+  // ?area= lets a link open the marketplace already searching an area.
+  const [query, setQuery] = useState(() => (typeof window === 'undefined' ? '' : (new URLSearchParams(window.location.search).get('area') ?? '').slice(0, 60)))
+  const [subjectFilter, setSubjectFilter] = useState(subjectId ?? 'all')
+  const [sort, setSort] = useState<Sort>('newest')
+  const preferredSubject = subjectFilter === 'all' ? subjectId : subjectFilter
+  const { book, reopen, dialog } = useTutorBooking(preferredSubject)
 
   useEffect(() => {
     let active = true
     void supabase
       .from('tutors')
-      .select('id,avatar_path,full_name,bio,qualifications,experience_years,location,verified_at,multi_subject_discount_pct,group_max,group_discount_pct,payment_methods,tutor_subjects(subject_id,price_nle,lessons_per_week,subject:subjects(id,name)),tutor_booking_reviews(rating)')
+      .select(TUTOR_COLUMNS)
       .eq('status', 'active')
       .eq('listed', true)
       .order('verified_at', { ascending: false })
@@ -120,17 +158,7 @@ export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: strin
         if (!active) return
         const list = tutorResult.error ? [] : ((tutorResult.data ?? []) as unknown as Tutor[])
         if (!tutorResult.error) setTutors(list)
-        // Back from signing in to book a tutor: open that booking, once (a
-        // refresh, or coming back to this page later, does not reopen it).
-        const intent = readBookIntent(window.location.search)
-        if (intent) {
-          window.history.replaceState(window.history.state, '', `${window.location.pathname}${window.location.hash}`)
-          const tutor = list.find((t) => t.id === intent.tutor)
-          if (tutor) {
-            setReopened(intent)
-            setBooking(tutor)
-          }
-        }
+        reopen(list)
         setLoading(false)
       })
     return () => {
@@ -289,16 +317,7 @@ export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: strin
         </ul>
       )}
 
-      {booking && (
-        <BookDialog
-          tutor={booking}
-          preferredSubject={preferredSubject}
-          initialSubjects={reopened?.tutor === booking.id ? reopened.subjects : undefined}
-          initialStudents={reopened?.tutor === booking.id ? reopened.students : undefined}
-          onSignIn={(subjects, students) => book(booking, subjects, students)}
-          onClose={() => setBooking(null)}
-        />
-      )}
+      {dialog}
     </section>
   )
 }
@@ -385,6 +404,7 @@ export function TutorCard({ tutor, subjectId, onBook, preview = false, photoSrc 
   // The chosen subject first, then the rest.
   const rates = [...tutor.tutor_subjects].sort((a, b) => Number(b.subject_id === subjectId) - Number(a.subject_id === subjectId) || byName(a, b))
   const from = lowestFee(tutor, subjectId && rates.some((r) => r.subject_id === subjectId) ? subjectId : undefined)
+  const page = !preview && tutor.slug ? tutorPagePath(tutor.slug) : null
   const shown = 3
   return (
     <article
@@ -396,7 +416,7 @@ export function TutorCard({ tutor, subjectId, onBook, preview = false, photoSrc 
         {photo ? (
           <img
             src={photo}
-            alt={`${tutor.full_name}, WASSCE tutor`}
+            alt={`${displayName(tutor.full_name)}, WASSCE tutor`}
             className={`h-full w-full object-cover object-top ${preview ? '' : 'transition duration-700 ease-out group-hover:scale-[1.04]'}`}
             loading="lazy"
             decoding="async"
@@ -406,8 +426,10 @@ export function TutorCard({ tutor, subjectId, onBook, preview = false, photoSrc 
             {initials(tutor.full_name)}
           </span>
         )}
+        {/* The whole photo opens the tutor's page (the name below is the same link, for screen readers). */}
+        {page && <a href={page} tabIndex={-1} aria-hidden className="absolute inset-0 z-[1]" />}
         <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-[#130d2b]/90 via-[#130d2b]/10 via-55% to-transparent" />
-        <div className="absolute inset-x-3 top-3 flex items-start justify-between gap-2">
+        <div className="pointer-events-none absolute inset-x-3 top-3 z-[2] flex items-start justify-between gap-2">
           {rating !== null ? (
             <span className="inline-flex items-center gap-1 rounded-full bg-white/95 px-2.5 py-1 text-[12px] font-bold text-slate-900 shadow-sm">
               <Star className="h-3.5 w-3.5 fill-amber-400 text-amber-400" aria-hidden /> {rating.toFixed(1)}
@@ -422,9 +444,15 @@ export function TutorCard({ tutor, subjectId, onBook, preview = false, photoSrc 
             </span>
           )}
         </div>
-        <div className="absolute inset-x-4 bottom-3.5 text-white">
+        <div className="pointer-events-none absolute inset-x-4 bottom-3.5 z-[2] text-white">
           <h3 className="flex items-center gap-1.5 text-[1.3rem] font-bold leading-tight tracking-[-0.02em] [text-shadow:0_1px_12px_rgba(0,0,0,.35)]">
-            <span className="truncate">{tutor.full_name}</span>
+            {page ? (
+              <a href={page} className="pointer-events-auto truncate hover:underline">
+                {displayName(tutor.full_name)}
+              </a>
+            ) : (
+              <span className="truncate">{displayName(tutor.full_name)}</span>
+            )}
             <VerifiedBadge className="h-5 w-5" />
           </h3>
           <p className="mt-1 flex items-center gap-1.5 text-[13px] font-medium text-white/85">
@@ -467,9 +495,16 @@ export function TutorCard({ tutor, subjectId, onBook, preview = false, photoSrc 
               Book this tutor
             </span>
           ) : (
-            <button type="button" onClick={onBook} className="site-btn site-btn-primary w-full">
-              Book this tutor <ArrowRight className="h-4 w-4" aria-hidden />
-            </button>
+            <div className="flex items-center gap-2">
+              <button type="button" onClick={onBook} className="site-btn site-btn-primary flex-1">
+                Book this tutor <ArrowRight className="h-4 w-4" aria-hidden />
+              </button>
+              {page && (
+                <a href={page} className="site-btn site-btn-secondary px-4" aria-label={`See ${displayName(tutor.full_name)}’s page`}>
+                  Profile
+                </a>
+              )}
+            </div>
           )}
         </div>
       </div>
@@ -494,7 +529,7 @@ function whatsappMessage(tutorFirstName: string, r: Request, student: string | n
   ].join(' ')
 }
 
-function BookDialog({
+export function BookDialog({
   tutor,
   preferredSubject,
   initialSubjects,

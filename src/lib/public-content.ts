@@ -245,6 +245,8 @@ export type PublicLesson = {
   updated_at: string
   reviewer_name: string | null
   reviewer_bio: string | null
+  /** The reviewer's tutor page (/tutors/{slug}) when the reviewer is a listed tutor (migration 28). */
+  reviewer_tutor_slug?: string | null
 }
 
 export type PublicLessonPageData = TopicPageData & { lesson: PublicLesson }
@@ -257,15 +259,14 @@ export async function fetchPublicLessonPage(
 ): Promise<PublicLessonPageData | null> {
   const page = await fetchTopicPage(subjectSlug, topicSlug)
   if (!page) return null
-  const { data, error } = await supabase
-    .from('wassce_public_lessons')
-    .select('id, topic_id, slug, title, content, est_minutes, sort_order, reviewed_at, updated_at, reviewer_name, reviewer_bio')
-    .eq('topic_id', page.topic.id)
-    .eq('slug', lessonSlug)
-    .maybeSingle()
+  const columns = 'id, topic_id, slug, title, content, est_minutes, sort_order, reviewed_at, updated_at, reviewer_name, reviewer_bio'
+  const read = (cols: string) => supabase.from('wassce_public_lessons').select(cols).eq('topic_id', page.topic.id).eq('slug', lessonSlug).maybeSingle()
+  let { data, error } = await read(`${columns}, reviewer_tutor_slug`)
+  // Before migration 28 the view has no reviewer_tutor_slug.
+  if (error?.code === '42703') ({ data, error } = await read(columns))
   if (error) fail('lesson', error)
   if (!data) return null
-  return { ...page, lesson: data as PublicLesson }
+  return { ...page, lesson: data as unknown as PublicLesson }
 }
 
 /** Markdown to plain text for a summary. */

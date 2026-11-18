@@ -166,7 +166,7 @@ function RootComponent() {
   useSignInForAppPages()
   useRoleHome(pathname)
   const studentNav = useHasBottomNav(pathname)
-  const roleWorkspace = pathname === '/tutor-dashboard' || pathname === '/affiliate-dashboard'
+  const roleWorkspace = pathname === '/tutor-dashboard' || pathname.startsWith('/tutor-dashboard/') || pathname === '/affiliate-dashboard'
   return (
     <div className="app-frame flex bg-background text-foreground">
       <SideNav />

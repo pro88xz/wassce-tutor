@@ -25,14 +25,17 @@ export const ROLE_HOME = {
 export type AccountInfo = {
   role: AccountRole
   isAdmin: boolean
+  /** A tutor's own page, /tutors/{slug} (migration 28), once they have one. */
+  tutorSlug?: string | null
 }
 
 export async function fetchAccountInfo(user: Pick<User, 'id' | 'user_metadata'>): Promise<AccountInfo> {
   // The database keeps each account's type (profiles.account_role, migration 26).
   const stored = await supabase.from('profiles').select('account_role,is_admin').eq('id', user.id).maybeSingle()
   if (!stored.error && stored.data) {
-    const role = stored.data.account_role as AccountRole | null
-    return { role: role === 'tutor' || role === 'affiliate' ? role : 'student', isAdmin: Boolean(stored.data.is_admin) }
+    const stored_role = stored.data.account_role as AccountRole | null
+    const role: AccountRole = stored_role === 'tutor' || stored_role === 'affiliate' ? stored_role : 'student'
+    return { role, isAdmin: Boolean(stored.data.is_admin), tutorSlug: role === 'tutor' ? await ownTutorSlug(user.id) : null }
   }
   return inferAccountInfo(user)
 }
@@ -54,6 +57,11 @@ async function inferAccountInfo(user: Pick<User, 'id' | 'user_metadata'>): Promi
   return { role, isAdmin }
 }
 
+async function ownTutorSlug(userId: string): Promise<string | null> {
+  const { data, error } = await supabase.from('tutors').select('slug').eq('user_id', userId).maybeSingle()
+  return error ? null : ((data?.slug as string | undefined) ?? null)
+}
+
 /** Where to send someone after signing in when they were not on their way somewhere. */
 export async function homeAfterSignIn(): Promise<string> {
   const { data } = await supabase.auth.getUser()
@@ -66,7 +74,7 @@ export async function homeAfterSignIn(): Promise<string> {
 }
 
 /** The signed-in account's role (null while signed out or still loading). */
-export function useAccountRole(): { role: AccountRole | null; isAdmin: boolean; loading: boolean } {
+export function useAccountRole(): { role: AccountRole | null; isAdmin: boolean; loading: boolean; tutorSlug: string | null } {
   const { user, loading: authLoading } = useAuth()
   const query = useQuery({
     queryKey: ['account-role', user?.id ?? null],
@@ -74,8 +82,8 @@ export function useAccountRole(): { role: AccountRole | null; isAdmin: boolean; 
     staleTime: 5 * 60_000,
     queryFn: () => fetchAccountInfo(user!),
   })
-  if (!user) return { role: null, isAdmin: false, loading: authLoading }
-  return { role: query.data?.role ?? null, isAdmin: query.data?.isAdmin ?? false, loading: query.isLoading }
+  if (!user) return { role: null, isAdmin: false, loading: authLoading, tutorSlug: null }
+  return { role: query.data?.role ?? null, isAdmin: query.data?.isAdmin ?? false, loading: query.isLoading, tutorSlug: query.data?.tutorSlug ?? null }
 }
 
 const under = (pathname: string, ...prefixes: string[]) => prefixes.some((p) => pathname === p || pathname.startsWith(p + '/'))

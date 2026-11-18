@@ -2,7 +2,8 @@ import { Link, useRouterState } from '@tanstack/react-router'
 import type { LucideIcon } from 'lucide-react'
 import { useAuth } from '@/lib/auth'
 import { useAccountRole } from '@/lib/account-role'
-import { AFFILIATE_NAV, STUDENT_NAV, TUTOR_NAV, showsRoleNav, showsStudentNav } from '@/lib/nav'
+import { AFFILIATE_NAV, STUDENT_NAV, TUTOR_NAV, roleNavItems, showsRoleNav, showsStudentNav } from '@/lib/nav'
+import { tutorPagePath } from '@/lib/tutor-profile'
 
 /**
  * Signed-in mobile navigation, fixed to the bottom safe area. Students get
@@ -13,7 +14,7 @@ import { AFFILIATE_NAV, STUDENT_NAV, TUTOR_NAV, showsRoleNav, showsStudentNav } 
  */
 export function BottomNav() {
   const { user } = useAuth()
-  const { role } = useAccountRole()
+  const { role, tutorSlug } = useAccountRole()
   const { pathname, hash } = useRouterState({ select: (s) => ({ pathname: s.location.pathname, hash: s.location.hash }) })
   if (!user || !role) return null
 
@@ -23,7 +24,7 @@ export function BottomNav() {
         ? STUDENT_NAV.map((n) => ({ key: n.to, to: n.to, label: n.label, icon: n.icon, active: n.match(pathname) }))
         : []
       : showsRoleNav(pathname)
-        ? (role === 'tutor' ? TUTOR_NAV : AFFILIATE_NAV).map((n) => ({
+        ? roleNavItems(role === 'tutor' ? TUTOR_NAV : AFFILIATE_NAV, tutorSlug ? tutorPagePath(tutorSlug) : null, pathname).map((n) => ({
             key: `${n.to}#${n.hash ?? ''}`,
             to: n.to,
             hash: n.hash,
