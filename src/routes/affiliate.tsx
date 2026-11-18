@@ -1,11 +1,11 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { BadgePercent, Link2, Wallet } from 'lucide-react'
-import { absoluteUrl, breadcrumbJsonLd, indexablePageTags, SITE } from '@/lib/seo'
+import { absoluteUrl, breadcrumbJsonLd, indexablePageTags, PUBLIC_PAGES, SITE } from '@/lib/seo'
 
 export const Route = createFileRoute('/affiliate')({
   ssr: true, // prerendered, like every public page: its HTML had no heading or text until the app loaded
-  head: () => indexablePageTags({ path: '/affiliate', title: 'WASSCE Tutor Affiliate Programme | Earn from Student Referrals', description: 'Join the WASSCE Tutor affiliate programme. Share a tracked referral link and earn 50% of a referred student’s first verified subscription payment.', jsonLd: [
-    { '@context': 'https://schema.org', '@type': 'WebPage', name: 'WASSCE Tutor Affiliate Programme', url: absoluteUrl('/affiliate'), description: 'An approved referral partner programme for WASSCE Tutor.', mainEntity: { '@type': 'Service', name: 'WASSCE Tutor Partner Programme', serviceType: 'Affiliate referral programme', provider: { '@type': 'Organization', name: SITE.name, url: SITE.origin }, description: 'Approved partners receive 50% of a referred student’s first successfully verified subscription payment.' } },
+  head: () => indexablePageTags({ path: '/affiliate', title: PUBLIC_PAGES['/affiliate'].title, description: PUBLIC_PAGES['/affiliate'].description, jsonLd: [
+    { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Affiliate programme', url: absoluteUrl('/affiliate'), description: 'An approved referral partner programme for WASSCE Tutor.', mainEntity: { '@type': 'Service', name: 'WASSCE Tutor Partner Programme', serviceType: 'Affiliate referral programme', provider: { '@type': 'Organization', name: SITE.name, url: SITE.origin }, description: 'Approved partners receive 50% of a referred student’s first successfully verified subscription payment.' } },
     breadcrumbJsonLd([['Home','/'],['Affiliate programme','/affiliate']])
   ] }),
   component: AffiliateLanding,
