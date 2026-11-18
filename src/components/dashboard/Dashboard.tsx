@@ -632,7 +632,7 @@ function QuickAccess({ topic }: { topic: string | null }) {
         <a href="/tutors" className={tile}>
           <span className={`${icon} bg-[#5b34d6]`}><UserRound className="h-5 w-5" aria-hidden /></span>
           <span className="min-w-0">
-            <span className="block text-sm font-semibold">Book a tutor</span>
+            <span className="block text-sm font-semibold">Book a private tutor</span>
             <span className="block text-xs text-muted-foreground">Real teachers near you</span>
           </span>
         </a>

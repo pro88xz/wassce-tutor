@@ -33,7 +33,7 @@ const GROUPS: Group[] = [
     title: 'Product',
     links: [
       { label: 'Home', href: '/' },
-      { label: 'Book a tutor', href: '/tutors' },
+      { label: 'Private tutors', href: '/tutors' },
       { label: 'Become a tutor', href: '/become-a-tutor' },
       { label: 'Affiliate programme', href: '/affiliate' },
       { label: 'Plans', href: '/#plans' },

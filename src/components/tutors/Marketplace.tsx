@@ -571,7 +571,7 @@ function BookDialog({
             )}
           </div>
           <div className="min-w-0 flex-1">
-            <p className="text-xs font-bold uppercase tracking-wider text-violet-700">Book a tutor</p>
+            <p className="text-xs font-bold uppercase tracking-wider text-violet-700">Book a private tutor</p>
             <h2 id="book-title" className="flex items-center gap-1.5 text-lg font-bold">
               <span className="truncate">{tutor.full_name}</span>
               <VerifiedBadge />

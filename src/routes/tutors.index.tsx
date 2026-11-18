@@ -8,16 +8,16 @@ import { TUTOR_PHOTO } from '@/lib/tutors'
 import { supabase } from '@/lib/supabase'
 import { BookingForm } from '@/components/tutors/BookingForm'
 import { TutorMarketplace } from '@/components/tutors/Marketplace'
-import { TUTOR_FAQ, TutorFaq, TutorHowItWorks, TutorJoinBand, TutorSubjectGrid } from '@/components/tutors/TutorSections'
+import { PrivateLessonsGuide, TUTOR_FAQ, TutorFaq, TutorHowItWorks, TutorJoinBand, TutorSubjectGrid } from '@/components/tutors/TutorSections'
 
 const TRAIL: [string, string][] = [
   ['Home', '/'],
-  ['Book a tutor', '/tutors'],
+  ['Private tutors', '/tutors'],
 ]
 
-const TITLE = 'Book a Private WASSCE Tutor in Sierra Leone | WASSCE Tutor'
+const TITLE = 'Private WASSCE Tutors in Freetown & Sierra Leone | Home Lessons'
 const DESCRIPTION =
-  'Book a private WASSCE tutor in Sierra Leone for one-to-one lessons in person. See each tutor’s monthly fee upfront, then message them on WhatsApp.'
+  'Book a private tutor for WASSCE in Freetown, Bo, Kenema or Makeni. Home lessons and extra classes in maths, English and sciences, with the monthly fee upfront.'
 
 export const Route = createFileRoute('/tutors/')({
   ssr: true,
@@ -27,10 +27,10 @@ export const Route = createFileRoute('/tutors/')({
     indexablePageTags({
       path: '/tutors',
       title: TITLE,
-      ogTitle: 'Book a private WASSCE tutor for in-person lessons',
+      ogTitle: 'Book a private WASSCE tutor in Sierra Leone: home lessons near you',
       description: DESCRIPTION,
       jsonLd: [
-        tutoringServiceJsonLd({ name: 'WASSCE tutoring in Sierra Leone', description: DESCRIPTION, path: '/tutors' }),
+        tutoringServiceJsonLd({ name: 'Private WASSCE tutors in Sierra Leone', description: DESCRIPTION, path: '/tutors' }),
         faqJsonLd(TUTOR_FAQ),
         breadcrumbJsonLd(TRAIL),
       ],
@@ -69,9 +69,11 @@ function TutorsPage() {
         </div>
       </section>
 
+      <PrivateLessonsGuide />
+
       <section className="tutor-subject-section" aria-labelledby="by-subject">
         <div className="tutor-section-heading">
-          <div><p className="tutor-booking-eyebrow"><span /> SUBJECT SPECIALISATIONS</p><h2 id="by-subject">Find support by subject.</h2><p>Choose a subject to see its syllabus topics and tutoring information.</p></div>
+          <div><p className="tutor-booking-eyebrow"><span /> BY SUBJECT</p><h2 id="by-subject">Private tutors <em>by subject.</em></h2><p>A maths tutor, an English tutor, a physics or chemistry tutor: choose a subject to see its tutors and what they can cover.</p></div>
           <a href="/wassce/subjects">Browse all subjects <span aria-hidden>↗</span></a>
         </div>
         <TutorSubjectGrid subjects={subjects} />

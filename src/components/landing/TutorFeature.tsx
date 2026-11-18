@@ -1,10 +1,10 @@
-// Book a tutor: the human-tutor service, introduced with its photograph.
+// Private tutors: the human-tutor service, introduced with its photograph.
 import { ArrowRight, Check, UserRound } from 'lucide-react'
 import { TUTOR_PHOTO } from '@/lib/tutors'
 import { Band } from '@/components/public/Section'
 import { BrandPhoto } from '@/components/public/BrandPhoto'
 
-const POINTS = ['Help with the topics you find hard', 'In-person lessons, verified tutors', 'Message them on WhatsApp']
+const POINTS = ['Help with the topics you find hard', 'Home lessons or near you, one to one', 'See the fee, then message them on WhatsApp']
 
 export function TutorFeature() {
   return (
@@ -25,9 +25,9 @@ export function TutorFeature() {
           </BrandPhoto>
         </div>
         <div data-reveal="1" className="max-w-xl">
-          <p className="site-eyebrow">Book a tutor</p>
+          <p className="site-eyebrow">Private tutors</p>
           <h2 id="tutor-heading" className="site-h2 mt-3">Need a <span className="site-accent text-[var(--primary)]">real</span> tutor?</h2>
-          <p className="site-lede mt-4">Verified WASSCE tutors near you, with the fee shown up front.</p>
+          <p className="site-lede mt-4">Private WASSCE tutors near you, in Freetown and across Sierra Leone, with the monthly fee shown up front.</p>
           <ul className="mt-6 space-y-3">
             {POINTS.map((t) => (
               <li key={t} className="flex gap-3 text-[15px] font-medium">
@@ -39,7 +39,7 @@ export function TutorFeature() {
             ))}
           </ul>
           <a href="/tutors" className="site-btn site-btn-primary mt-8">
-            Book a tutor <ArrowRight className="h-4 w-4" aria-hidden />
+            Book a private tutor <ArrowRight className="h-4 w-4" aria-hidden />
           </a>
         </div>
       </div>

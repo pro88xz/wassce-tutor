@@ -58,9 +58,9 @@ export const PUBLIC_PAGES = {
     lastmod: '2026-11-06',
   },
   '/tutors': {
-    title: 'Find a WASSCE Tutor in Sierra Leone | WASSCE Tutor',
-    description: 'Find approved WASSCE tutors in Sierra Leone. Compare subjects, teaching formats and session rates, then request a one-to-one lesson.',
-    lastmod: '2026-11-08',
+    title: 'Private WASSCE Tutors in Freetown & Sierra Leone | Home Lessons',
+    description: 'Book a private tutor for WASSCE in Freetown, Bo, Kenema or Makeni. Home lessons and extra classes in maths, English and sciences, with the monthly fee upfront.',
+    lastmod: '2026-11-18',
   },
   '/blog': {
     title: 'WASSCE Tutor Blog: Study & University Guides',
@@ -278,7 +278,7 @@ const PAGE_JSON_LD: Partial<Record<PublicPath, Record<string, unknown>[]>> = {
   // breadcrumbJsonLd is a function declaration, so it is hoisted and usable here.
   '/about': [ABOUT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['About', '/about']])],
   '/contact': [CONTACT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['Contact', '/contact']])],
-  '/tutors': [breadcrumbJsonLd([['Home', '/'], ['Tutors', '/tutors']])],
+  '/tutors': [breadcrumbJsonLd([['Home', '/'], ['Private tutors', '/tutors']])],
   '/affiliate': [breadcrumbJsonLd([['Home', '/'], ['Affiliate programme', '/affiliate']])],
   '/become-a-tutor': [
     {
@@ -390,10 +390,13 @@ export function tutoringServiceJsonLd({ name, description, path, subject }: { na
     name,
     description,
     url: absoluteUrl(path),
-    serviceType: subject ? `${subject} tutoring` : 'Private tutoring',
+    serviceType: subject ? `Private ${subject} tutoring` : 'Private tutoring',
     category: 'Education',
     provider: { '@type': 'Organization', '@id': ORG_ID, name: SITE.name, url: `${SITE.origin}/`, telephone: CONTACT.phoneE164 },
-    areaServed: { '@type': 'Country', name: 'Sierra Leone' },
+    areaServed: [
+      { '@type': 'Country', name: 'Sierra Leone' },
+      ...['Freetown', 'Bo', 'Kenema', 'Makeni'].map((city) => ({ '@type': 'City', name: city, containedInPlace: { '@type': 'Country', name: 'Sierra Leone' } })),
+    ],
     audience: { '@type': 'EducationalAudience', educationalRole: 'student', audienceType: 'WASSCE candidates' },
     availableChannel: { '@type': 'ServiceChannel', serviceUrl: absoluteUrl(path), availableLanguage: 'en' },
   }
