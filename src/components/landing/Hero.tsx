@@ -37,7 +37,7 @@ export function Hero({ data }: { data: LandingData }) {
         <div className="max-w-2xl lg:pt-14">
           <p className="hero-rise inline-flex items-center gap-2.5 rounded-full bg-[var(--brand-soft)] py-1.5 pl-2.5 pr-3.5 text-[13px] font-semibold text-[var(--brand-strong)]">
             <span className="h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_0_4px_rgba(16,185,129,.18)]" aria-hidden />
-            Built for the Sierra Leone WASSCE syllabus
+            WASSCE Tutor · built for the Sierra Leone syllabus
           </p>
           <h1 id="hero-heading" className="site-display mt-5 text-foreground">
             <span className="hero-rise block" style={{ ['--rise-delay' as string]: '80ms' }}>

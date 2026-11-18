@@ -38,12 +38,16 @@ type PublicPage = {
 // Indexable pages. Every key here gets a self-referencing canonical, a static
 // HTML file at build time, and an entry in /sitemap.xml.
 export const PUBLIC_PAGES = {
+  // The brand's own page, so its title starts with the brand: someone who
+  // searches "wassce tutor" should land here. Nov 2026: Google showed the
+  // affiliate page for that search, whose title then started with
+  // "WASSCE Tutor" while this one only ended with it.
   '/': {
-    title: 'WASSCE Practice Questions & Lessons in Sierra Leone | WASSCE Tutor',
+    title: 'WASSCE Tutor: WASSCE Lessons & Practice Questions, Sierra Leone',
     ogTitle: 'WASSCE Tutor: Pass WASSCE with confidence',
     description:
-      `WASSCE lessons and practice questions for Sierra Leone students, with full working and one-to-one tutors. Free to start; everything from NLe ${FROM_PRICE}.`,
-    lastmod: '2026-11-07',
+      `WASSCE Tutor: WASSCE lessons and practice questions for Sierra Leone students, with full working and private tutors. Free to start; from NLe ${FROM_PRICE}.`,
+    lastmod: '2026-11-18',
   },
   '/about': {
     title: 'About WASSCE Tutor: WASSCE Prep Built in Sierra Leone',
@@ -77,10 +81,12 @@ export const PUBLIC_PAGES = {
     description: 'Become a WASSCE tutor in Sierra Leone in three steps: add your photo, subjects and monthly fee, go live in the tutor marketplace and get students on WhatsApp.',
     lastmod: '2026-11-18',
   },
+  // Not led by the bare brand, so a search for "wassce tutor" goes to the
+  // homepage rather than here.
   '/affiliate': {
-    title: 'WASSCE Tutor Affiliate Programme | Earn from Student Referrals',
-    description: 'Join the WASSCE Tutor affiliate programme. Share a tracked referral link and earn 50% of a referred student’s first verified subscription payment.',
-    lastmod: '2026-11-08',
+    title: 'Affiliate Programme: Earn 50% on Student Referrals | WASSCE Tutor',
+    description: 'Earn 50% of a referred student’s first verified subscription payment. Join our affiliate programme and share your own tracked referral link.',
+    lastmod: '2026-11-18',
   },
   '/privacy': {
     title: 'Privacy Policy | WASSCE Tutor',
