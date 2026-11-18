@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Accruals and prepayments on a timeline</title>
+<desc id="d">A financial year from 1 January to 31 December 2026. Rent of NLe 1,000 a month: payments of NLe 11,000 cover January to November, so December&#x27;s NLe 1,000 is owing at the year end, an accrual; the charge for the year is NLe 12,000. Insurance of NLe 6,000 paid on 1 October covers twelve months to 30 September 2027, so nine months, NLe 4,500, is paid in advance, a prepayment; the charge for 2026 is NLe 1,500.</desc>
+<defs></defs>
+<rect width="800" height="430" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Charge the expense for the year, not the cash paid</text>
+<text x="80.0" y="90.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Rent: NLe 1,000 a month</text>
+<line x1="80.0" y1="150.0" x2="780.0" y2="150.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<line x1="80.0" y1="144.0" x2="80.0" y2="156.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="133.3" y1="144.0" x2="133.3" y2="156.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="186.7" y1="144.0" x2="186.7" y2="156.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="240.0" y1="144.0" x2="240.0" y2="156.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="293.3" y1="144.0" x2="293.3" y2="156.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="346.7" y1="144.0" x2="346.7" y2="156.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="400.0" y1="144.0" x2="400.0" y2="156.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="453.3" y1="144.0" x2="453.3" y2="156.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="506.7" y1="144.0" x2="506.7" y2="156.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="560.0" y1="144.0" x2="560.0" y2="156.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="613.3" y1="144.0" x2="613.3" y2="156.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="666.7" y1="144.0" x2="666.7" y2="156.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="720.0" y1="144.0" x2="720.0" y2="156.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<text x="80.0" y="172.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1 Jan</text>
+<text x="720.0" y="172.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">31 Dec</text>
+<line x1="720.0" y1="110.0" x2="720.0" y2="190.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 4"/>
+<text x="80.0" y="250.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Insurance: NLe 6,000 paid 1 Oct for 12 months</text>
+<line x1="80.0" y1="310.0" x2="780.0" y2="310.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<line x1="80.0" y1="304.0" x2="80.0" y2="316.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="133.3" y1="304.0" x2="133.3" y2="316.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="186.7" y1="304.0" x2="186.7" y2="316.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="240.0" y1="304.0" x2="240.0" y2="316.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="293.3" y1="304.0" x2="293.3" y2="316.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="346.7" y1="304.0" x2="346.7" y2="316.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="400.0" y1="304.0" x2="400.0" y2="316.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="453.3" y1="304.0" x2="453.3" y2="316.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="506.7" y1="304.0" x2="506.7" y2="316.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="560.0" y1="304.0" x2="560.0" y2="316.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="613.3" y1="304.0" x2="613.3" y2="316.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="666.7" y1="304.0" x2="666.7" y2="316.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="720.0" y1="304.0" x2="720.0" y2="316.0" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+<text x="80.0" y="332.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1 Jan</text>
+<text x="720.0" y="332.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">31 Dec</text>
+<line x1="720.0" y1="270.0" x2="720.0" y2="350.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 4"/>
+<rect x="80.0" y="122.0" width="586.7" height="22.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="373.3" y="133.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">paid Jan–Nov: 11,000</text>
+<rect x="666.7" y="122.0" width="53.3" height="22.0" rx="0" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<rect x="603.0" y="172.5" width="180.7" height="19.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="693.3" y="182.0" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Dec owing: ACCRUAL 1,000</text>
+<rect x="560.0" y="282.0" width="160.0" height="22.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="640.0" y="293.0" font-size="12" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Oct–Dec: 1,500</text>
+<rect x="720.0" y="282.0" width="60.0" height="22.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<rect x="471.8" y="332.5" width="304.5" height="19.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="624.0" y="342.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Jan–Sep 2027 paid early: PREPAYMENT 4,500</text>
+<text x="400.0" y="405.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Rent charge 2026 = 11,000 + 1,000 = 12,000      Insurance charge 2026 = 6,000 − 4,500 = 1,500</text>
+</svg>

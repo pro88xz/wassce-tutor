@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Cost structure in a manufacturing account</title>
+<desc id="d">Prime cost is direct materials consumed (opening raw materials plus purchases plus carriage inwards minus closing raw materials) plus direct labour plus direct expenses. Adding factory overheads such as indirect wages, factory rent, power and depreciation of machinery, and adjusting for opening and closing work in progress, gives the production cost of goods completed, which is transferred to the trading account in place of purchases.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Manufacturing account: from raw materials to production cost</text>
+<rect x="60.0" y="71.0" width="680.0" height="58.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="88.5" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Direct materials consumed</text>
+<text x="400.0" y="111.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">opening raw materials + purchases + carriage in − closing raw materials</text>
+<rect x="60.0" y="151.0" width="680.0" height="58.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="168.5" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+ Direct labour + Direct expenses</text>
+<text x="400.0" y="191.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">wages of machine operators; royalties</text>
+<line x1="400.0" y1="135.0" x2="400.0" y2="145.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="60.0" y="237.0" width="680.0" height="46.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="400.0" y="260.0" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">= PRIME COST</text>
+<line x1="400.0" y1="215.0" x2="400.0" y2="231.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="60.0" y="311.0" width="680.0" height="58.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="328.5" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+ Factory overheads ± Work in progress</text>
+<text x="400.0" y="351.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">indirect wages, factory rent, power, machine depreciation</text>
+<line x1="400.0" y1="289.0" x2="400.0" y2="305.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="60.0" y="391.0" width="680.0" height="58.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="408.5" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">= PRODUCTION COST of goods completed</text>
+<text x="400.0" y="431.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">→ transferred to the trading account</text>
+<line x1="400.0" y1="375.0" x2="400.0" y2="385.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="400.0" y="482.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Add opening WIP and deduct closing WIP to find the cost of goods completed.</text>
+</svg>

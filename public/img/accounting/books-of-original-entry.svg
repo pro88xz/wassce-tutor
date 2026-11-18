@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Source documents and the books of original entry they are recorded in</title>
+<desc id="d">Each source document is first recorded in a book of original entry: purchase invoices received go to the purchases day book; sales invoices sent go to the sales day book; credit notes received go to the returns outwards book; credit notes sent go to the returns inwards book; receipts, cheque counterfoils and bank paying-in slips go to the cash book; petty cash vouchers go to the petty cash book; and other items such as credit purchases of assets and corrections go to the general journal.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="520" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Source document → book of original entry</text>
+<text x="190.0" y="70.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">SOURCE DOCUMENTS</text>
+<text x="610.0" y="70.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">BOOKS OF ORIGINAL ENTRY</text>
+<rect x="40.0" y="90.0" width="300.0" height="44.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="190.0" y="112.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Purchase invoice (received)</text>
+<rect x="480.0" y="90.0" width="260.0" height="44.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="610.0" y="112.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Purchases day book</text>
+<line x1="346.0" y1="112.0" x2="474.0" y2="112.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="40.0" y="146.0" width="300.0" height="44.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="190.0" y="168.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sales invoice (sent)</text>
+<rect x="480.0" y="146.0" width="260.0" height="44.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="610.0" y="168.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sales day book</text>
+<line x1="346.0" y1="168.0" x2="474.0" y2="168.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="40.0" y="202.0" width="300.0" height="44.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="190.0" y="224.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Credit note received</text>
+<rect x="480.0" y="202.0" width="260.0" height="44.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="610.0" y="224.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Returns outwards book</text>
+<line x1="346.0" y1="224.0" x2="474.0" y2="224.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="40.0" y="258.0" width="300.0" height="44.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="190.0" y="280.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Credit note sent</text>
+<rect x="480.0" y="258.0" width="260.0" height="44.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="610.0" y="280.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Returns inwards book</text>
+<line x1="346.0" y1="280.0" x2="474.0" y2="280.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="40.0" y="314.0" width="300.0" height="44.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="190.0" y="336.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Receipts, cheques, paying-in slips</text>
+<rect x="480.0" y="314.0" width="260.0" height="44.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="610.0" y="336.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cash book</text>
+<line x1="346.0" y1="336.0" x2="474.0" y2="336.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="40.0" y="370.0" width="300.0" height="44.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="190.0" y="392.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Petty cash voucher</text>
+<rect x="480.0" y="370.0" width="260.0" height="44.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="610.0" y="392.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Petty cash book</text>
+<line x1="346.0" y1="392.0" x2="474.0" y2="392.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="40.0" y="426.0" width="300.0" height="44.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="190.0" y="448.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Memo: asset bought on credit, errors</text>
+<rect x="480.0" y="426.0" width="260.0" height="44.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="610.0" y="448.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">General journal</text>
+<line x1="346.0" y1="448.0" x2="474.0" y2="448.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="400.0" y="505.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Totals from the books are then posted to the ledger by double entry.</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Why the cash book and the bank statement disagree</title>
+<desc id="d">Items in the cash book but not yet on the bank statement (timing differences): unpresented cheques, which are cheques paid out but not yet cleared, and uncredited lodgements, which are amounts paid in but not yet credited by the bank. These go in the bank reconciliation statement. Items on the bank statement but not yet in the cash book: bank charges, standing orders and direct debits, direct credits and credit transfers, interest, and dishonoured cheques. These are entered in the cash book to update it. Errors in either record are corrected.</desc>
+<defs></defs>
+<rect width="800" height="520" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cash book vs bank statement: two kinds of difference</text>
+<rect x="25.0" y="100.0" width="360.0" height="290.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="205.0" y="130.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">In the CASH BOOK but not</text>
+<text x="205.0" y="153.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">yet on the BANK STATEMENT</text>
+<text x="205.0" y="176.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="205.0" y="199.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">unpresented cheques</text>
+<text x="205.0" y="222.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(paid out, not yet cleared)</text>
+<text x="205.0" y="245.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="205.0" y="268.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">uncredited lodgements</text>
+<text x="205.0" y="291.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(paid in, not yet credited)</text>
+<text x="205.0" y="314.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="205.0" y="337.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">→ show in the BANK</text>
+<text x="205.0" y="360.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">RECONCILIATION STATEMENT</text>
+<rect x="415.0" y="100.0" width="360.0" height="290.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="595.0" y="130.0" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">On the BANK STATEMENT but</text>
+<text x="595.0" y="153.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">not yet in the CASH BOOK</text>
+<text x="595.0" y="176.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="595.0" y="199.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">bank charges, interest charged</text>
+<text x="595.0" y="222.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">standing orders, direct debits</text>
+<text x="595.0" y="245.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">direct credits, transfers in</text>
+<text x="595.0" y="268.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">interest received</text>
+<text x="595.0" y="291.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">dishonoured cheques</text>
+<text x="595.0" y="314.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="595.0" y="337.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">→ enter in the CASH BOOK</text>
+<text x="595.0" y="360.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(adjusted cash book)</text>
+<text x="400.0" y="505.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Step 1: update the cash book.   Step 2: reconcile its new balance with the bank statement.</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Which balances go on each side of the trial balance</title>
+<desc id="d">Debit balances in a trial balance: assets (premises, vehicles, equipment, trade receivables, cash, bank), expenses (wages, rent, carriage), purchases, returns inwards, discount allowed, opening inventory and drawings. Credit balances: capital, liabilities (loans, trade payables, bank overdraft), sales, returns outwards, discount received, other income such as rent or commission received, and provisions for depreciation and doubtful debts. The two columns must have equal totals.</desc>
+<defs></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Trial balance: debit balances and credit balances</text>
+<rect x="30.0" y="85.0" width="350.0" height="320.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="205.0" y="141.5" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">DEBIT (Dr) balances</text>
+<text x="205.0" y="164.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="205.0" y="187.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">assets: premises, vehicles,</text>
+<text x="205.0" y="210.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">equipment, receivables, cash, bank</text>
+<text x="205.0" y="233.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">expenses: wages, rent, carriage</text>
+<text x="205.0" y="256.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">purchases</text>
+<text x="205.0" y="279.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">returns inwards (sales returns)</text>
+<text x="205.0" y="302.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">discount allowed</text>
+<text x="205.0" y="325.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">opening inventory (stock)</text>
+<text x="205.0" y="348.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">drawings</text>
+<rect x="420.0" y="85.0" width="350.0" height="320.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="595.0" y="141.5" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">CREDIT (Cr) balances</text>
+<text x="595.0" y="164.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="595.0" y="187.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">capital</text>
+<text x="595.0" y="210.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">liabilities: loans, trade</text>
+<text x="595.0" y="233.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">payables, bank overdraft</text>
+<text x="595.0" y="256.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sales</text>
+<text x="595.0" y="279.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">returns outwards (purchases ret.)</text>
+<text x="595.0" y="302.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">discount received</text>
+<text x="595.0" y="325.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">other income: rent, commission</text>
+<text x="595.0" y="348.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">provisions: depreciation, doubtful debts</text>
+<text x="400.0" y="448.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Total of debit column  =  total of credit column</text>
+</svg>

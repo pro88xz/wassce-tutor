@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Divisions of the ledger</title>
+<desc id="d">The ledger is divided into the sales ledger, holding the personal accounts of credit customers (trade receivables); the purchases ledger, holding the personal accounts of credit suppliers (trade payables); the general or nominal ledger, holding accounts for income, expenses, assets and liabilities; and the private ledger, holding confidential accounts such as capital and drawings.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="420" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The ledger and its divisions</text>
+<rect x="270.0" y="65.0" width="260.0" height="60.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="83.5" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">THE LEDGER</text>
+<text x="400.0" y="106.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">all the accounts of the business</text>
+<rect x="20.0" y="205.0" width="180.0" height="150.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="110.0" y="247.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sales ledger</text>
+<text x="110.0" y="269.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">debtors (trade</text>
+<text x="110.0" y="291.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">receivables)</text>
+<text x="110.0" y="313.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. Kamara a/c</text>
+<line x1="400.0" y1="131.0" x2="110.0" y2="199.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="213.0" y="205.0" width="180.0" height="150.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="303.0" y="247.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Purchases ledger</text>
+<text x="303.0" y="269.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">creditors (trade</text>
+<text x="303.0" y="291.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">payables)</text>
+<text x="303.0" y="313.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. Sesay a/c</text>
+<line x1="400.0" y1="131.0" x2="303.0" y2="199.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="407.0" y="205.0" width="180.0" height="150.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="497.0" y="247.0" font-size="16" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">General ledger</text>
+<text x="497.0" y="269.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">nominal and real:</text>
+<text x="497.0" y="291.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sales, wages,</text>
+<text x="497.0" y="313.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rent, motor van</text>
+<line x1="400.0" y1="131.0" x2="497.0" y2="199.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="600.0" y="205.0" width="180.0" height="150.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="690.0" y="247.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Private ledger</text>
+<text x="690.0" y="269.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">confidential:</text>
+<text x="690.0" y="291.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">capital, drawings,</text>
+<text x="690.0" y="313.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">loans from owner</text>
+<line x1="400.0" y1="131.0" x2="690.0" y2="199.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="400.0" y="395.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Personal accounts (people) • Real accounts (things owned) • Nominal accounts (income and expenses)</text>
+</svg>

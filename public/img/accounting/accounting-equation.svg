@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The accounting equation as a balance</title>
+<desc id="d">A balance with assets of NLe 50,000 on the left pan and capital of NLe 35,000 plus liabilities of NLe 15,000 on the right pan. The two sides are always equal: assets equal capital plus liabilities. Every transaction changes at least two items but keeps the balance level.</desc>
+<defs></defs>
+<rect width="800" height="460" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Assets = Capital + Liabilities</text>
+<polygon points="400.0,250.0 370.0,390.0 430.0,390.0" fill="#cbd5e1" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<rect x="330.0" y="390.0" width="140.0" height="14.0" rx="0" fill="#94a3b8" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="140.0" y1="250.0" x2="665.0" y2="250.0" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+<circle cx="400.0" cy="250.0" r="9.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<line x1="190.0" y1="250.0" x2="120.0" y2="300.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="190.0" y1="250.0" x2="260.0" y2="300.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M 95 300 Q 190 330 285 300 Z" stroke="#0f172a" stroke-width="2" fill="#e2e8f0" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="615.0" y1="250.0" x2="545.0" y2="300.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="615.0" y1="250.0" x2="685.0" y2="300.0" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M 520 300 Q 615 330 710 300 Z" stroke="#0f172a" stroke-width="2" fill="#e2e8f0" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="80.0" y="165.0" width="220.0" height="80.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="190.0" y="182.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">ASSETS</text>
+<text x="190.0" y="205.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">what the business owns</text>
+<text x="190.0" y="228.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">NLe 50,000</text>
+<rect x="465.0" y="165.0" width="140.0" height="80.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="535.0" y="183.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">CAPITAL</text>
+<text x="535.0" y="205.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">owner&#x27;s stake</text>
+<text x="535.0" y="227.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">NLe 35,000</text>
+<rect x="625.0" y="165.0" width="150.0" height="80.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="700.0" y="183.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">LIABILITIES</text>
+<text x="700.0" y="205.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">owed to others</text>
+<text x="700.0" y="227.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">NLe 15,000</text>
+<text x="616.0" y="205.0" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+</text>
+<text x="400.0" y="440.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">50,000 = 35,000 + 15,000     so also: Capital = Assets − Liabilities</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Straight-line and reducing-balance depreciation compared</title>
+<desc id="d">Graph of the carrying amount of a machine costing NLe 100,000 over five years. Under the straight-line method at 20% of cost a year, the carrying amount falls by the same NLe 20,000 each year: 100,000, 80,000, 60,000, 40,000, 20,000 and 0. Under the reducing-balance method at 30% a year, the charge is largest in the first year and gets smaller: 100,000, 70,000, 49,000, 34,300, 24,010 and 16,807.</desc>
+<defs></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Carrying amount of a NLe 100,000 machine</text>
+<line x1="110.0" y1="400.0" x2="720.0" y2="400.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<line x1="110.0" y1="400.0" x2="110.0" y2="90.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<text x="110.0" y="420.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Start</text>
+<line x1="110.0" y1="400.0" x2="110.0" y2="100.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<text x="230.0" y="420.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Year 1</text>
+<line x1="230.0" y1="400.0" x2="230.0" y2="100.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<text x="350.0" y="420.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Year 2</text>
+<line x1="350.0" y1="400.0" x2="350.0" y2="100.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<text x="470.0" y="420.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Year 3</text>
+<line x1="470.0" y1="400.0" x2="470.0" y2="100.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<text x="590.0" y="420.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Year 4</text>
+<line x1="590.0" y1="400.0" x2="590.0" y2="100.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<text x="710.0" y="420.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Year 5</text>
+<line x1="710.0" y1="400.0" x2="710.0" y2="100.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<text x="100.0" y="400.0" font-size="12" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">0</text>
+<line x1="110.0" y1="400.0" x2="710.0" y2="400.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<text x="100.0" y="340.0" font-size="12" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">20,000</text>
+<line x1="110.0" y1="340.0" x2="710.0" y2="340.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<text x="100.0" y="280.0" font-size="12" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">40,000</text>
+<line x1="110.0" y1="280.0" x2="710.0" y2="280.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<text x="100.0" y="220.0" font-size="12" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">60,000</text>
+<line x1="110.0" y1="220.0" x2="710.0" y2="220.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<text x="100.0" y="160.0" font-size="12" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">80,000</text>
+<line x1="110.0" y1="160.0" x2="710.0" y2="160.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<text x="100.0" y="100.0" font-size="12" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">100,000</text>
+<line x1="110.0" y1="100.0" x2="710.0" y2="100.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+<path d="M 110.0 100.0 L 230.0 160.0 L 350.0 220.0 L 470.0 280.0 L 590.0 340.0 L 710.0 400.0" stroke="#2563eb" stroke-width="3.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="110.0" cy="100.0" r="5.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<circle cx="230.0" cy="160.0" r="5.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<circle cx="350.0" cy="220.0" r="5.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<circle cx="470.0" cy="280.0" r="5.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<circle cx="590.0" cy="340.0" r="5.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<circle cx="710.0" cy="400.0" r="5.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<path d="M 110.0 100.0 L 230.0 190.0 L 350.0 253.0 L 470.0 297.1 L 590.0 328.0 L 710.0 349.6" stroke="#ea580c" stroke-width="3.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="110.0" cy="100.0" r="5.0" fill="#ea580c" stroke="#ea580c" stroke-width="1"/>
+<circle cx="230.0" cy="190.0" r="5.0" fill="#ea580c" stroke="#ea580c" stroke-width="1"/>
+<circle cx="350.0" cy="253.0" r="5.0" fill="#ea580c" stroke="#ea580c" stroke-width="1"/>
+<circle cx="470.0" cy="297.1" r="5.0" fill="#ea580c" stroke="#ea580c" stroke-width="1"/>
+<circle cx="590.0" cy="328.0" r="5.0" fill="#ea580c" stroke="#ea580c" stroke-width="1"/>
+<circle cx="710.0" cy="349.6" r="5.0" fill="#ea580c" stroke="#ea580c" stroke-width="1"/>
+<rect x="470.0" y="90.0" width="250.0" height="64.0" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+<line x1="484.0" y1="110.0" x2="514.0" y2="110.0" stroke="#2563eb" stroke-width="3.5" stroke-linecap="round"/>
+<text x="522.0" y="110.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">straight line, 20% of cost</text>
+<line x1="484.0" y1="136.0" x2="514.0" y2="136.0" stroke="#ea580c" stroke-width="3.5" stroke-linecap="round"/>
+<text x="522.0" y="136.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">reducing balance, 30%</text>
+<text x="400.0" y="450.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Straight line: equal charge each year.  Reducing balance: highest charge in year 1, never reaches zero.</text>
+</svg>
