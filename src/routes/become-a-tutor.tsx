@@ -1,15 +1,23 @@
+// Become a tutor.
+//
+// Signed out: what teaching here involves, as easy as 1, 2, 3, with one
+// button that creates a tutor account and comes straight back here.
+// Signed in: the application in three short steps (TutorApplyForm), or where
+// the tutor stands: already live, hidden, removed, or waiting for review.
+//
+// While automatic approval is on (migration 25, switched in Admin, Tutors),
+// the card is in the marketplace the moment the tutor finishes.
 import { createFileRoute, Link } from '@tanstack/react-router'
-import { useEffect, useState } from 'react'
-import { ArrowLeft, CheckCircle2, FileUp, ShieldCheck } from 'lucide-react'
+import { useCallback, useEffect, useState } from 'react'
+import { ArrowRight, BadgeCheck, Check, CircleCheck, Clock, EyeOff, LayoutDashboard, MessageCircle, ShieldAlert, Wallet } from 'lucide-react'
 import { publicHead } from '@/lib/seo'
 import { supabase } from '@/lib/supabase'
 import { useAuth } from '@/lib/auth'
-import { PhotoPicker } from '@/components/tutors/PhotoPicker'
-import { photoProblem } from '@/lib/photo'
+import { useTutorAutoApprove } from '@/lib/tutor-settings'
+import { TUTOR_PHOTO } from '@/lib/tutors'
+import { TutorApplyForm, type ApplyResult } from '@/components/tutors/TutorApplyForm'
+import { TutorCard } from '@/components/tutors/Marketplace'
 import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
-
-type Subject = { id: string; name: string }
-type SelectedSubject = { subject_id: string; price_nle: string; lessons: string }
 
 export const Route = createFileRoute('/become-a-tutor')({
   ssr: true,
@@ -17,109 +25,375 @@ export const Route = createFileRoute('/become-a-tutor')({
   component: BecomeTutor,
 })
 
-const field = 'h-12 w-full rounded-xl border border-slate-200 bg-white px-3.5 text-sm text-slate-900 outline-none transition focus:border-violet-500 focus:ring-2 focus:ring-violet-100'
+/** Creates a tutor account, then comes back here to the application. */
+const SIGN_UP = { intent: 'tutor', next: '/become-a-tutor' } as never
 
 function BecomeTutor() {
   const { user } = useAuth()
-  const [subjects, setSubjects] = useState<Subject[]>([])
-  const [selected, setSelected] = useState<SelectedSubject[]>([])
-  const [fullName, setFullName] = useState(user?.user_metadata?.full_name ?? '')
-  const [phone, setPhone] = useState('')
-  const [bio, setBio] = useState('')
-  const [qualifications, setQualifications] = useState('')
-  const [experience, setExperience] = useState('0')
-  const [location, setLocation] = useState('Freetown')
-  const [document, setDocument] = useState<File | null>(null)
-  const [avatar, setAvatar] = useState<File | null>(null)
-  const [avatarError, setAvatarError] = useState<string | null>(null)
-  const [whatsappConsent, setWhatsappConsent] = useState(false)
-  const [busy, setBusy] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-  const [success, setSuccess] = useState(false)
-  const [existing, setExisting] = useState<{status:string;review_note:string|null}|null>(null)
+  const auto = useTutorAutoApprove()
+  if (!user) return <SignedOut auto={auto} />
+  const meta = (user.user_metadata ?? {}) as { full_name?: string; name?: string }
+  return <SignedIn userId={user.id} defaultName={(meta.full_name ?? meta.name ?? '').trim()} auto={auto} />
+}
 
-  useEffect(() => {
-    if (!user) return
+// ─── Signed out ─────────────────────────────────────────────────────────────
+
+function SignedOut({ auto }: { auto: boolean }) {
+  const steps: [string, string][] = [
+    ['Create your account', 'Your name, email and a password, or continue with Google. It takes a minute.'],
+    ['Make your tutor card', 'Add your photo, WhatsApp number, subjects and monthly fee, and a few lines about how you teach.'],
+    auto
+      ? ['Go live', 'Your card is in the marketplace the moment you finish. Students who agree to your fee message you on WhatsApp.']
+      : ['Go live', 'Our team checks your card, then it goes into the marketplace. Students who agree to your fee message you on WhatsApp.'],
+  ]
+  return (
+    <div className="site-bleed -mb-12 -mt-6">
+      {/* Hero */}
+      <section className="relative isolate overflow-hidden bg-[var(--site-ink)] text-white" aria-labelledby="teach-heading">
+        <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(60rem_32rem_at_100%_0%,rgba(124,92,255,.42),transparent_68%),radial-gradient(40rem_26rem_at_0%_110%,rgba(255,209,102,.16),transparent_70%)]" />
+        <div aria-hidden className="absolute inset-0 -z-10 opacity-[.07] [background-image:linear-gradient(#fff_1px,transparent_1px),linear-gradient(90deg,#fff_1px,transparent_1px)] [background-size:56px_56px] [mask-image:radial-gradient(70%_80%_at_70%_30%,#000,transparent)]" />
+        <div className="site-container grid grid-cols-[minmax(0,1fr)] items-center gap-14 py-16 sm:py-20 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,.95fr)] lg:gap-16 lg:py-28">
+          <div>
+            <p className="inline-flex items-center gap-2.5 rounded-full bg-white/10 py-1.5 pl-2.5 pr-3.5 text-[13px] font-semibold text-white/85 ring-1 ring-white/15">
+              <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_0_4px_rgba(52,211,153,.2)]" aria-hidden />
+              {auto ? 'New tutors go live the same day' : 'Teach WASSCE students near you'}
+            </p>
+            <h1 id="teach-heading" className="site-display mt-6">
+              Your students are <span className="site-accent text-[#cdbcff]">looking for you.</span>
+            </h1>
+            <p className="mt-6 max-w-xl text-[17px] leading-relaxed text-white/72 sm:text-lg">
+              Become a WASSCE tutor in Sierra Leone in three steps. Set your own monthly fee, and students who agree to it message you on WhatsApp to
+              arrange in-person lessons.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <Link to="/auth" search={SIGN_UP} className="site-btn site-btn-lg bg-white px-7 text-[var(--site-ink)] hover:bg-[#efeaff]">
+                Become a tutor <ArrowRight className="h-4 w-4" aria-hidden />
+              </Link>
+              <Link to="/tutors" className="site-btn site-btn-lg border border-white/20 bg-white/5 px-6 text-white hover:bg-white/10">
+                See the marketplace
+              </Link>
+            </div>
+            <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-white/70">
+              {['Free to join', 'You set your fee', 'Students pay you directly'].map((t) => (
+                <li key={t} className="inline-flex items-center gap-1.5">
+                  <Check className="h-4 w-4 text-emerald-400" aria-hidden /> {t}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <HeroVisual auto={auto} />
+        </div>
+      </section>
+
+      {/* 1, 2, 3 */}
+      <section className="site-band site-band-white" aria-labelledby="steps-heading">
+        <div className="site-container">
+          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="site-eyebrow">How it works</p>
+              <h2 id="steps-heading" className="site-h2 mt-3">
+                As easy as <span className="site-accent text-[var(--primary)]">one, two, three.</span>
+              </h2>
+            </div>
+            <p className="site-lede max-w-md">About five minutes from start to finish, on any phone.</p>
+          </div>
+          <ol className="mt-10 grid gap-4 md:grid-cols-3 md:gap-5">
+            {steps.map(([title, body], i) => (
+              <li key={title} className="site-card p-6 sm:p-7">
+                <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[var(--site-ink)] text-base font-bold text-white shadow-[0_10px_20px_-12px_rgba(19,13,43,.8)]">
+                  {i + 1}
+                </span>
+                <h3 className="site-h3 mt-6">{title}</h3>
+                <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">{body}</p>
+              </li>
+            ))}
+          </ol>
+          <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3">
+            <Link to="/auth" search={SIGN_UP} className="site-btn site-btn-lg site-btn-primary">
+              Start now: step 1 <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
+            <Link to="/auth" search={SIGN_UP} className="site-link">
+              Already have an account? Sign in
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* What tutors get */}
+      <section className="site-band" aria-labelledby="why-heading">
+        <div className="site-container">
+          <p className="site-eyebrow">Why tutors join</p>
+          <h2 id="why-heading" className="site-h2 mt-3 max-w-2xl">
+            Your fee, your students, <span className="site-accent text-[var(--primary)]">your way.</span>
+          </h2>
+          <ul className="mt-10 grid gap-4 md:grid-cols-3 md:gap-5">
+            {[
+              { Icon: Wallet, title: 'You set the fee', body: 'Choose a monthly fee and lessons a week for each subject. Students see it before they contact you, so there is no haggling.' },
+              { Icon: MessageCircle, title: 'Students come to you', body: 'A student who agrees to your fee opens WhatsApp with a message to you. Your number is never shown on your card.' },
+              { Icon: LayoutDashboard, title: 'Your own dashboard', body: 'Edit your card, hide it when you are full, add a discount for several subjects or take small groups.' },
+            ].map(({ Icon, title, body }) => (
+              <li key={title} className="rounded-[1.25rem] border border-border bg-[var(--card)] p-6 sm:p-7">
+                <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[var(--brand-soft)] text-[var(--brand-strong)]" aria-hidden>
+                  <Icon className="h-5 w-5" />
+                </span>
+                <h3 className="site-h3 mt-5">{title}</h3>
+                <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">{body}</p>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-10 max-w-3xl text-[13px] leading-relaxed text-muted-foreground">
+            WASSCE Tutor is an independent learning platform. Lessons are in person and arranged between you and the student; WASSCE Tutor does not take
+            payment for tutoring. We can remove a tutor card that is misleading or breaks our{' '}
+            <Link to="/terms" className="underline underline-offset-2 hover:text-foreground">
+              terms
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+/** The hero's picture: a real lesson, with what a tutor sees on it: their fee, a student's message, the card going live. */
+function HeroVisual({ auto }: { auto: boolean }) {
+  return (
+    <div className="relative mx-auto w-full max-w-[32rem] pb-10 lg:mx-0 lg:ml-auto" aria-hidden>
+      <img
+        src={TUTOR_PHOTO.src}
+        srcSet={`${TUTOR_PHOTO.small} 640w, ${TUTOR_PHOTO.src} 1280w`}
+        sizes="(min-width: 1024px) 30rem, 92vw"
+        alt=""
+        width={1280}
+        height={853}
+        fetchPriority="high"
+        className="aspect-[4/4.4] w-full rounded-[1.75rem] object-cover shadow-[0_40px_80px_-40px_rgba(0,0,0,.8)] ring-1 ring-white/10"
+      />
+      {/* The fee */}
+      <div className="hero-float absolute -left-3 top-8 w-[17rem] rounded-2xl bg-white p-4 text-slate-900 shadow-[0_30px_60px_-24px_rgba(0,0,0,.55)] ring-1 ring-slate-900/5 sm:-left-10" style={{ ['--float-time' as string]: '8s' }}>
+        <p className="text-[10px] font-bold uppercase tracking-[.14em] text-slate-500">Your fee</p>
+        <div className="mt-2 flex items-center justify-between gap-3 rounded-xl bg-slate-50 px-3 py-2.5">
+          <span>
+            <span className="block text-sm font-bold">Mathematics</span>
+            <span className="block text-[11px] text-slate-500">2 lessons a week</span>
+          </span>
+          <span className="whitespace-nowrap text-sm font-bold tabular-nums">NLe 300<span className="font-medium text-slate-500"> / month</span></span>
+        </div>
+      </div>
+      {/* A student's message */}
+      <div className="hero-float absolute -right-2 bottom-24 w-64 rounded-2xl bg-white p-3.5 text-slate-900 shadow-[0_30px_60px_-24px_rgba(0,0,0,.55)] ring-1 ring-slate-900/5 sm:-right-8" style={{ ['--float-time' as string]: '9s', ['--float-delay' as string]: '-3s' }}>
+        <p className="flex items-center gap-1.5 text-[11px] font-bold text-[#128C7E]">
+          <WhatsAppGlyph className="h-3.5 w-3.5 text-[#25D366]" /> New message
+        </p>
+        <p className="mt-2 rounded-xl rounded-tl-sm bg-[#e7fbe9] px-3 py-2 text-[12.5px] leading-snug text-slate-800">
+          Hello, I found you on WASSCE Tutor. I would like lessons in Mathematics at your fee of NLe 300 a month. When could we start?
+        </p>
+      </div>
+      {/* Live */}
+      <div className="absolute bottom-0 left-6 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2.5 text-[13px] font-bold text-slate-900 shadow-[0_20px_40px_-18px_rgba(0,0,0,.6)] sm:left-10">
+        <span className="h-2.5 w-2.5 rounded-full bg-emerald-500 shadow-[0_0_0_4px_rgba(16,185,129,.2)]" />
+        {auto ? 'Your card is live in the marketplace' : 'Your card in the marketplace'}
+      </div>
+    </div>
+  )
+}
+
+// ─── Signed in ──────────────────────────────────────────────────────────────
+
+type Application = { status: string; review_note: string | null }
+type TutorState = { status: string; listed: boolean }
+
+function SignedIn({ userId, defaultName, auto }: { userId: string; defaultName: string; auto: boolean }) {
+  const [state, setState] = useState<{ loaded: boolean; application: Application | null; tutor: TutorState | null }>({
+    loaded: false,
+    application: null,
+    tutor: null,
+  })
+  const [done, setDone] = useState<ApplyResult | null>(null)
+
+  const load = useCallback(() => {
     let active = true
     void Promise.all([
-      supabase.from('subjects').select('id,name').order('name'),
-      supabase.from('tutor_applications').select('status,review_note').eq('user_id',user.id).maybeSingle(),
-    ]).then(([s,a]) => {
+      // The latest application: there can be several after a declined one.
+      supabase.from('tutor_applications').select('status,review_note').eq('user_id', userId).order('created_at', { ascending: false }).limit(1).maybeSingle(),
+      supabase.from('tutors').select('status,listed').eq('user_id', userId).maybeSingle(),
+    ]).then(([a, t]) => {
       if (!active) return
-      if (!s.error) setSubjects(s.data ?? [])
-      if (!a.error && a.data) setExisting(a.data)
+      setState({ loaded: true, application: a.error ? null : (a.data as Application | null), tutor: t.error ? null : (t.data as TutorState | null) })
     })
-    return () => { active = false }
-  }, [user])
+    return () => {
+      active = false
+    }
+  }, [userId])
+  useEffect(() => load(), [load])
 
-  const toggleSubject = (id: string) => setSelected((current) => current.some((s) => s.subject_id===id) ? current.filter((s) => s.subject_id!==id) : [...current,{subject_id:id,price_nle:'',lessons:''}])
-  const priceOk = (v: string) => Number(v) > 0 && Number(v) <= 999999
-  const pricesOk = selected.length > 0 && selected.every((s) => priceOk(s.price_nle) && Number(s.lessons) >= 1)
+  return (
+    <div className="mx-auto w-full max-w-6xl pb-16">
+      {done ? (
+        <Done result={done} />
+      ) : !state.loaded ? (
+        <div className="space-y-6" aria-busy="true" aria-label="Loading">
+          <div className="h-56 animate-pulse rounded-[1.75rem] bg-muted" />
+          <div className="h-96 animate-pulse rounded-[1.25rem] bg-muted" />
+        </div>
+      ) : state.tutor ? (
+        <AlreadyTutor tutor={state.tutor} />
+      ) : state.application && (state.application.status === 'submitted' || state.application.status === 'under_review') ? (
+        <StatusPanel
+          Icon={Clock}
+          tone="amber"
+          title="Your application is with our team"
+          body="We check new tutor cards by hand at the moment. You will get a message here and by email as soon as your card is in the marketplace."
+        />
+      ) : (
+        <TutorApplyForm
+          userId={userId}
+          defaultName={defaultName}
+          auto={auto}
+          previousNote={state.application?.status === 'rejected' ? state.application.review_note : undefined}
+          onDone={setDone}
+          onAlreadyApplied={load}
+        />
+      )}
+    </div>
+  )
+}
 
-  const submit = async () => {
-    if (!user) return
-    setError(null); setBusy(true)
-    let documentPath: string | null = null
-    let avatarPath: string | null = null
-    try {
-      if (document) {
-        if (!['application/pdf','image/jpeg','image/png'].includes(document.type) || document.size > 10 * 1024 * 1024) throw new Error('Supporting document must be a PDF, JPG or PNG no larger than 10 MB.')
-        const safeName = document.name.toLowerCase().replace(/[^a-z0-9._-]/g,'-')
-        documentPath = `${user.id}/${crypto.randomUUID()}-${safeName}`
-        const { error: uploadError } = await supabase.storage.from('tutor-verification-docs').upload(documentPath,document,{upsert:false,contentType:document.type})
-        if (uploadError) throw uploadError
-      }
-      if (!avatar) throw new Error('Add a profile photo: students see it on your tutor card.')
-      if (!whatsappConsent) throw new Error('Confirm that students can message you on WhatsApp.')
-      {
-        const problem = photoProblem(avatar)
-        if (problem) throw new Error(problem)
-        avatarPath = `${user.id}/${crypto.randomUUID()}-${avatar.name.toLowerCase().replace(/[^a-z0-9._-]/g,'-')}`
-        const { error: avatarError } = await supabase.storage.from('tutor-profile-images').upload(avatarPath,avatar,{upsert:false,contentType:avatar.type})
-        if (avatarError) throw avatarError
-      }
-      if (!pricesOk) throw new Error('Enter a monthly fee and lessons a week for each subject you selected.')
-      const { data: applicationId, error: submitError } = await supabase.rpc('submit_tutor_application',{
-        p_full_name:fullName.trim(),p_phone:phone.trim(),p_bio:bio.trim(),p_qualifications:qualifications.trim(),
-        p_experience_years:Number(experience),p_location:location.trim(),p_teaching_mode:'in_person',p_document_path:documentPath,p_avatar_path:avatarPath,
-        p_subjects:selected.map((s)=>({subject_id:s.subject_id,price_nle:Number(s.price_nle),lessons_per_week:Number(s.lessons)})),
-      })
-      if (submitError) throw submitError
-      // Tell the admins by email too (best effort; the admin inbox row is already saved).
-      await supabase.functions.invoke('send-notification-email',{body:{entity_id:applicationId,event_type:'tutor_application_submitted'}}).catch(()=>undefined)
-      setSuccess(true)
-      setExisting({status:'submitted',review_note:null})
-    } catch (err) {
-      if (documentPath) await supabase.storage.from('tutor-verification-docs').remove([documentPath])
-      if (avatarPath) await supabase.storage.from('tutor-profile-images').remove([avatarPath])
-      setError(err instanceof Error ? err.message : 'Your application could not be submitted.')
-    } finally { setBusy(false) }
-  }
+function AlreadyTutor({ tutor }: { tutor: TutorState }) {
+  if (tutor.status === 'suspended')
+    return (
+      <StatusPanel
+        Icon={ShieldAlert}
+        tone="rose"
+        title="Your tutor card was removed"
+        body="WASSCE Tutor removed your card from the marketplace, so students cannot contact you. Contact support if you have questions."
+        action={{ to: '/contact', label: 'Contact support' }}
+      />
+    )
+  if (!tutor.listed)
+    return (
+      <StatusPanel
+        Icon={EyeOff}
+        tone="slate"
+        title="Your card is hidden"
+        body="You are a tutor, but you hid your card, so students cannot find you. Show it again from your tutor dashboard when you can take students."
+        action={{ to: '/tutor-dashboard', label: 'Open your tutor dashboard' }}
+      />
+    )
+  return (
+    <StatusPanel
+      Icon={BadgeCheck}
+      tone="emerald"
+      title="You are already a tutor"
+      body="Your card is in the marketplace. Edit it, change your fees or add offers from your tutor dashboard."
+      action={{ to: '/tutor-dashboard', label: 'Open your tutor dashboard' }}
+      secondary={{ to: '/tutors', label: 'See the marketplace' }}
+    />
+  )
+}
 
-  if (!user) return <main className="mx-auto w-full max-w-5xl space-y-8 pb-16"><section className="site-brand-panel overflow-hidden rounded-[2rem] p-7 text-white sm:p-10"><p className="text-xs font-bold uppercase tracking-[.18em] text-violet-200">Teach with WASSCE Tutor</p><h1 className="mt-3 max-w-3xl text-3xl font-bold tracking-tight sm:text-5xl">Become a WASSCE Tutor in Sierra Leone.</h1><p className="mt-4 max-w-2xl text-base leading-relaxed text-white/75">Reach students preparing for their WASSCE. Create a verified teaching profile with your photo, choose your subjects and set your own monthly fee. Students who agree to it message you on WhatsApp to arrange in-person lessons.</p><div className="mt-7 flex flex-wrap gap-3"><Link to="/auth" search={{ intent: 'tutor' } as never} className="inline-flex min-h-12 items-center rounded-xl bg-white px-5 text-sm font-bold text-[#21134d]">Create tutor account</Link><Link to="/tutors" className="inline-flex min-h-12 items-center rounded-xl border border-white/25 px-5 text-sm font-semibold text-white">View tutor marketplace</Link></div></section><section className="grid gap-4 sm:grid-cols-3"><article className="rounded-2xl border bg-card p-5"><h2 className="font-bold">Your teaching profile</h2><p className="mt-2 text-sm leading-relaxed text-muted-foreground">Submit your photo, qualifications, teaching biography and subjects for review. Approved tutors get the blue verified tick.</p></article><article className="rounded-2xl border bg-card p-5"><h2 className="font-bold">Your own workspace</h2><p className="mt-2 text-sm leading-relaxed text-muted-foreground">After account creation, continue in the tutor dashboard—not the student learning dashboard.</p></article><article className="rounded-2xl border bg-card p-5"><h2 className="font-bold">Students message you</h2><p className="mt-2 text-sm leading-relaxed text-muted-foreground">Students see your fee first and message you on WhatsApp. You arrange lessons and payment with them directly.</p></article></section><section className="rounded-2xl border bg-card p-6"><h2 className="text-xl font-bold">How tutor approval works</h2><ol className="mt-4 grid gap-4 sm:grid-cols-3">{[['01','Create your tutor account','Choose the tutor path from this page and create an account.'],['02','Submit your profile','Provide your academic background, subjects, teaching preferences and supporting details.'],['03','Wait for review','Profiles are reviewed before tutors appear in the public marketplace.']].map(([n,h,p])=><li key={n}><span className="text-xs font-bold text-primary">{n}</span><h3 className="mt-2 font-bold">{h}</h3><p className="mt-1 text-sm leading-relaxed text-muted-foreground">{p}</p></li>)}</ol></section><p className="text-center text-xs text-muted-foreground">WASSCE Tutor is an independent learning platform. Tutor applications are reviewed before public listing; submitting an application does not guarantee approval.</p></main>
+type Destination = '/contact' | '/tutor-dashboard' | '/tutors'
 
-  return <div className="mx-auto w-full max-w-5xl space-y-8 pb-16">
-    <Link to="/tutors" className="inline-flex min-h-10 items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-primary"><ArrowLeft className="h-4 w-4"/> Tutor marketplace</Link>
-    <section className="site-brand-panel overflow-hidden rounded-[2rem] p-7 text-white sm:p-10">
-      <p className="text-xs font-bold uppercase tracking-[.18em] text-violet-200">Tutor partner programme</p>
-      <h1 className="mt-3 max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl">Teach with purpose. Help students move forward.</h1>
-      <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/70 sm:text-base">Create a verified teaching profile, set your own monthly fee for each subject, and get WhatsApp messages from WASSCE students who agree to it. Lessons are in person.</p>
-      <div className="mt-6 flex flex-wrap gap-4 text-xs font-semibold text-white/80"><span className="inline-flex items-center gap-1.5"><ShieldCheck className="h-4 w-4"/> Profile reviewed before listing</span><span>You set your own monthly fee</span></div>
+const TONES = {
+  emerald: 'bg-emerald-500/15 text-emerald-300',
+  amber: 'bg-amber-400/15 text-amber-300',
+  rose: 'bg-rose-500/15 text-rose-300',
+  slate: 'bg-white/10 text-white/80',
+} as const
+
+function StatusPanel({
+  Icon,
+  tone,
+  title,
+  body,
+  action,
+  secondary,
+}: {
+  Icon: typeof Clock
+  tone: keyof typeof TONES
+  title: string
+  body: string
+  action?: { to: Destination; label: string }
+  secondary?: { to: Destination; label: string }
+}) {
+  return (
+    <section className="relative isolate overflow-hidden rounded-[1.75rem] bg-[var(--site-ink)] px-6 py-10 text-white sm:px-10 sm:py-14">
+      <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(40rem_20rem_at_100%_0%,rgba(124,92,255,.38),transparent_70%)]" />
+      <span className={`flex h-12 w-12 items-center justify-center rounded-2xl ${TONES[tone]}`} aria-hidden>
+        <Icon className="h-6 w-6" />
+      </span>
+      <h1 className="mt-6 text-[1.9rem] font-extrabold leading-[1.08] tracking-[-0.04em] sm:text-[2.5rem]">{title}</h1>
+      <p className="mt-3 max-w-xl text-[16px] leading-relaxed text-white/72">{body}</p>
+      {(action || secondary) && (
+        <div className="mt-8 flex flex-wrap gap-3">
+          {action && (
+            <Link to={action.to} className="site-btn site-btn-lg bg-white px-6 text-[var(--site-ink)] hover:bg-[#efeaff]">
+              {action.label} <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
+          )}
+          {secondary && (
+            <Link to={secondary.to} className="site-btn site-btn-lg border border-white/20 bg-white/5 px-6 text-white hover:bg-white/10">
+              {secondary.label}
+            </Link>
+          )}
+        </div>
+      )}
     </section>
-    {existing && existing.status !== 'rejected' && !success ? <section className="rounded-2xl border bg-card p-6"><p className="text-sm font-semibold text-primary">Your application status</p><h2 className="mt-1 text-xl font-bold capitalize">{existing.status.replace('_',' ')}</h2><p className="mt-2 text-sm text-muted-foreground">{existing.review_note ?? 'We will review your details and notify you when a decision is made.'}</p>{existing.status==='rejected' && <p className="mt-3 text-sm">Contact support if you need clarification before submitting a new application.</p>}</section> : success ? <section className="rounded-2xl border border-emerald-200 bg-emerald-50 p-7 text-emerald-950"><CheckCircle2 className="h-8 w-8"/><h2 className="mt-3 text-xl font-bold">Application submitted</h2><p className="mt-1 text-sm">Your application is in the review queue. You will be notified when its status changes.</p><Link to="/tutor-dashboard" className="mt-4 inline-flex min-h-11 items-center rounded-xl bg-emerald-700 px-4 font-semibold text-white">View tutor dashboard</Link></section> : <form className="space-y-7" onSubmit={(e)=>{e.preventDefault();void submit()}}>
-      <section className="rounded-2xl border bg-card p-6 sm:p-8"><div className="mb-6"><p className="text-xs font-bold uppercase tracking-wider text-primary">01 / Personal profile</p><h2 className="mt-1 text-xl font-bold">Introduce yourself</h2><p className="mt-1 text-sm text-muted-foreground">These details appear on your public tutor profile after approval.</p></div><div className="grid gap-4 sm:grid-cols-2">
-        <div className="sm:col-span-2"><PhotoPicker required file={avatar} error={avatarError} onPick={(file,problem)=>{setAvatarError(problem);if(file)setAvatar(file)}}/></div>
-        <label className="space-y-1.5 text-sm font-semibold">Full name<input required minLength={2} maxLength={120} className={field} value={fullName} onChange={(e)=>setFullName(e.target.value)}/></label>
-        <label className="space-y-1.5 text-sm font-semibold">WhatsApp number<input required type="tel" inputMode="tel" minLength={7} maxLength={30} className={field} value={phone} onChange={(e)=>setPhone(e.target.value)} placeholder="e.g. 077 123 456"/><span className="block text-xs font-normal text-muted-foreground">Students who agree to your fee message you here.</span></label>
-        <label className="space-y-1.5 text-sm font-semibold">Town / area<input required maxLength={120} className={field} value={location} onChange={(e)=>setLocation(e.target.value)}/></label>
-        <label className="space-y-1.5 text-sm font-semibold">Teaching experience<select className={field} value={experience} onChange={(e)=>setExperience(e.target.value)}>{Array.from({length:31},(_,i)=><option key={i} value={i}>{i===0?'New tutor':`${i} years`}</option>)}</select></label>
-        <label className="space-y-1.5 text-sm font-semibold sm:col-span-2">Teaching biography<textarea required minLength={80} maxLength={2000} rows={4} className="w-full rounded-xl border border-slate-200 bg-white p-3 text-sm outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-100" value={bio} onChange={(e)=>setBio(e.target.value)} placeholder="Describe your teaching approach and the students you support."/></label>
-      </div></section>
-      <section className="rounded-2xl border bg-card p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-wider text-primary">02 / Qualifications</p><h2 className="mt-1 text-xl font-bold">Your academic background</h2><textarea required minLength={10} maxLength={2000} rows={3} className="mt-4 w-full rounded-xl border border-slate-200 bg-white p-3 text-sm outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-100" value={qualifications} onChange={(e)=>setQualifications(e.target.value)} placeholder="List qualifications, institutions and relevant teaching credentials."/><label className="mt-4 flex cursor-pointer items-center gap-3 rounded-xl border border-dashed p-4 text-sm"><FileUp className="h-5 w-5 text-primary"/><span className="min-w-0 flex-1"><strong className="block">Supporting document (optional)</strong><span className="text-xs text-muted-foreground">PDF, JPG or PNG · maximum 10 MB · private to reviewers</span>{document && <span className="mt-1 block truncate text-primary">{document.name}</span>}</span><input type="file" accept=".pdf,image/jpeg,image/png" className="sr-only" onChange={(e)=>setDocument(e.target.files?.[0]??null)}/></label></section>
-      <section className="rounded-2xl border bg-card p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-wider text-primary">03 / How students reach you</p><h2 className="mt-1 text-xl font-bold">In-person lessons, arranged on WhatsApp</h2><ul className="mt-4 space-y-2 text-sm text-muted-foreground"><li>• Lessons are in person, in or near the area you gave above. WASSCE Tutor does not run online lessons.</li><li>• A student sees your monthly fee and taps Book. If they agree to it, WhatsApp opens with a message to you.</li><li>• You agree the days, times, place and payment directly with the student.</li></ul><label className="mt-5 flex cursor-pointer items-start gap-3 rounded-xl border p-4 text-sm"><input type="checkbox" checked={whatsappConsent} onChange={(e)=>setWhatsappConsent(e.target.checked)} className="mt-0.5 h-4 w-4 shrink-0 accent-violet-700"/><span><span className="inline-flex items-center gap-1.5 font-semibold"><WhatsAppGlyph className="h-4 w-4 text-[#25D366]"/> Students can message me on WhatsApp</span><span className="mt-0.5 block text-muted-foreground">I agree that students who accept my fee can contact me at the WhatsApp number above. My number is never shown publicly.</span></span></label></section>
-      <section className="rounded-2xl border bg-card p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-wider text-primary">04 / Subjects and rates</p><h2 className="mt-1 text-xl font-bold">Choose what you teach</h2><p className="mt-1 text-sm text-muted-foreground">For each subject, set your monthly fee in NLe and how many lessons a week it includes. You choose both. Once approved, you can also give a discount for several subjects, take small groups, and show how students can pay you (Orange Money, Afrimoney or cash).</p><div className="mt-5 grid gap-3 sm:grid-cols-2">{subjects.map((s)=><div key={s.id} className="flex flex-wrap items-center gap-3 rounded-xl border p-3"><input type="checkbox" checked={selected.some((x)=>x.subject_id===s.id)} onChange={()=>toggleSubject(s.id)} aria-label={`Teach ${s.name}`} className="h-4 w-4 accent-violet-700"/><span className="min-w-0 flex-1 text-sm font-medium">{s.name}</span>{selected.some((x)=>x.subject_id===s.id)&&<span className="flex w-full flex-wrap items-center gap-1.5 pl-7 text-xs text-muted-foreground">NLe<input aria-label={`${s.name} monthly fee in NLe`} type="number" inputMode="numeric" required min="1" max="999999" step="1" placeholder="Fee" value={selected.find((x)=>x.subject_id===s.id)?.price_nle??''} onChange={(e)=>setSelected((prev)=>prev.map((x)=>x.subject_id===s.id?{...x,price_nle:e.target.value}:x))} className="h-10 w-24 rounded-lg border px-2 text-sm text-foreground" />/ month<select aria-label={`${s.name}: lessons a week`} required value={selected.find((x)=>x.subject_id===s.id)?.lessons??''} onChange={(e)=>setSelected((prev)=>prev.map((x)=>x.subject_id===s.id?{...x,lessons:e.target.value}:x))} className="ml-auto h-10 rounded-lg border bg-white px-2 text-sm text-foreground"><option value="">Lessons a week</option>{[1,2,3,4,5,6,7].map((n)=><option key={n} value={n}>{n} a week</option>)}</select></span>}</div>)}</div><p className="mt-3 text-xs text-muted-foreground">{selected.length} {selected.length===1?'subject':'subjects'} selected · fees are per month</p></section>
-      {error && <p role="alert" className="rounded-xl bg-red-50 p-4 text-sm text-red-700">{error}</p>}
-      <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-center"><p className="text-xs text-muted-foreground">{!avatar?'Add your profile photo to submit. ':''}{!whatsappConsent?'Confirm WhatsApp contact to submit. ':''}{selected.length>0&&!pricesOk?'Add a fee and lessons a week for each subject. ':''}Submitting confirms that your information is accurate and may be reviewed by WASSCE Tutor.</p><button disabled={busy||!pricesOk||!avatar||!whatsappConsent} className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[#6438d8] px-7 font-bold text-white disabled:opacity-50">{busy?'Submitting application…':'Submit tutor application'}</button></div>
-    </form>}
-  </div>
+  )
+}
+
+/** After publishing: live now (or sent for review), with the card as students see it. */
+function Done({ result }: { result: ApplyResult }) {
+  const { live, card, photo, phone } = result
+  return (
+    <section className="relative isolate overflow-hidden rounded-[1.75rem] bg-[var(--site-ink)] text-white" aria-labelledby="done-heading">
+      <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(44rem_26rem_at_100%_0%,rgba(124,92,255,.42),transparent_70%),radial-gradient(34rem_20rem_at_0%_110%,rgba(16,185,129,.18),transparent_70%)]" />
+      <div className="grid grid-cols-[minmax(0,1fr)] items-center gap-10 px-6 py-10 sm:px-10 sm:py-14 lg:grid-cols-[minmax(0,1fr)_21rem] lg:gap-14">
+        <div>
+          <span className={`flex h-14 w-14 items-center justify-center rounded-2xl ${live ? 'bg-emerald-500 text-white shadow-[0_0_0_8px_rgba(16,185,129,.18)]' : 'bg-amber-400/15 text-amber-300'}`} aria-hidden>
+            {live ? <CircleCheck className="h-7 w-7" /> : <Clock className="h-7 w-7" />}
+          </span>
+          <h1 id="done-heading" className="mt-7 text-[2.1rem] font-extrabold leading-[1.05] tracking-[-0.04em] sm:text-[3rem]">
+            {live ? (
+              <>
+                You are live. <span className="site-accent text-[#cdbcff]">Welcome aboard.</span>
+              </>
+            ) : (
+              'Application sent.'
+            )}
+          </h1>
+          <p className="mt-4 max-w-xl text-[17px] leading-relaxed text-white/72">
+            {live
+              ? `Your tutor card is in the marketplace now. Students who agree to your fee will message you on WhatsApp${phone ? ` at ${phone}` : ''}.`
+              : 'Our team will check your card. You will get a message here and by email as soon as it is in the marketplace.'}
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            {live && (
+              <Link to="/tutors" className="site-btn site-btn-lg bg-white px-6 text-[var(--site-ink)] hover:bg-[#efeaff]">
+                See your card in the marketplace <ArrowRight className="h-4 w-4" aria-hidden />
+              </Link>
+            )}
+            <Link to="/tutor-dashboard" className="site-btn site-btn-lg border border-white/20 bg-white/5 px-6 text-white hover:bg-white/10">
+              Open your tutor dashboard
+            </Link>
+          </div>
+          {live && (
+            <div className="mt-10 border-t border-white/10 pt-6">
+              <p className="text-[12px] font-bold uppercase tracking-[.16em] text-[#cdbcff]">Get more students</p>
+              <ul className="mt-4 grid gap-3 text-[15px] text-white/80 sm:grid-cols-3">
+                {['Add a discount for students who take several subjects', 'Take small groups of friends, at a group fee', 'Show how students can pay: Orange Money, Afrimoney or cash'].map((t) => (
+                  <li key={t} className="flex gap-2.5">
+                    <Check className="mt-1 h-4 w-4 shrink-0 text-emerald-400" aria-hidden /> {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+        <div className="mx-auto w-full max-w-sm text-foreground lg:mx-0">
+          <TutorCard tutor={card} preview photoSrc={photo} />
+        </div>
+      </div>
+    </section>
+  )
 }

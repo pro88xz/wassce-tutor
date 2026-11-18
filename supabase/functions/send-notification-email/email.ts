@@ -30,9 +30,16 @@ const COPY: Record<string, (body: string, to: Recipient) => Omit<Copy, 'preheade
     paragraphs: [body.replace(/\s*Review it in Admin, Tutors\.$/, ''), 'Check their qualifications and subjects, then approve or decline. The applicant is emailed your decision.'],
     cta: { label: 'Review the application', path: '/admin/tutors' },
   }),
+  // A tutor joined while automatic approval is on (migration 25): their card is already live.
+  tutor_joined: (body) => ({
+    subject: 'A new tutor is in the marketplace',
+    headline: 'A new tutor just joined',
+    paragraphs: [body.replace(/\s*Check their card in Admin, Tutors, and remove it if anything is wrong\.$/, ''), 'Their card went live as soon as they applied. Check their photo, qualifications and fees, and remove the card if anything is wrong. The tutor is told why.'],
+    cta: { label: 'Check the new tutor', path: '/admin/tutors' },
+  }),
   tutor_approved: () => ({
-    subject: 'You are approved to teach on WASSCE Tutor',
-    headline: 'Your tutor application is approved',
+    subject: 'Your tutor card is live on WASSCE Tutor',
+    headline: 'You are in the tutor marketplace',
     paragraphs: [
       'Your tutor card is now in the marketplace, so students can find you and message you on WhatsApp about lessons.',
       'On your tutor dashboard you can edit your card, add a discount for several subjects, take small groups, and show how students can pay you.',

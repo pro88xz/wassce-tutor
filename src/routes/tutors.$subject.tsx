@@ -8,7 +8,7 @@ import { breadcrumbJsonLd, faqJsonLd, indexablePageTags, privatePageTags, tutori
 import { SubjectBanner } from '@/components/ds/SubjectCover'
 import { BookingForm } from '@/components/tutors/BookingForm'
 import { TutorMarketplace } from '@/components/tutors/Marketplace'
-import { TUTOR_FAQ, TutorFaq, TutorHowItWorks, TutorSubjectGrid } from '@/components/tutors/TutorSections'
+import { TUTOR_FAQ, TutorFaq, TutorHowItWorks, TutorSubjectGrid, TutorJoinBand } from '@/components/tutors/TutorSections'
 
 type Data = { hub: SubjectHub; subjects: SubjectSummary[] }
 
@@ -73,7 +73,7 @@ function SubjectTutorPage() {
         <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] md:gap-10">
           <div className="space-y-4">
             <p className="text-[17px] text-muted-foreground">
-              In-person help with WASSCE {subject.name} from a verified teacher. See each tutor’s monthly fee, then message them on WhatsApp to arrange lessons near you.
+              In-person help with WASSCE {subject.name} from a teacher near you. See each tutor’s monthly fee, then message them on WhatsApp to arrange lessons near you.
             </p>
             <ul className="space-y-2 text-[15px]">
               {[`All ${hub.topicCount} topics in the WASSCE ${subject.name} syllabus`, 'In-person lessons, arranged directly with your tutor', 'Monthly fee shown upfront: you agree before you message'].map((t) => (
@@ -122,6 +122,8 @@ function SubjectTutorPage() {
         <h2 id="other-subjects" className="text-2xl font-bold tracking-tight">Tutors for other subjects</h2>
         <TutorSubjectGrid subjects={subjects} exclude={subject.slug} />
       </section>
+
+      <TutorJoinBand subjectName={subject.name} />
 
       <TutorFaq items={subjectFaq(hub)} />
     </article>

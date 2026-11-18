@@ -74,8 +74,8 @@ export const PUBLIC_PAGES = {
   },
   '/become-a-tutor': {
     title: 'Become a WASSCE Tutor in Sierra Leone | Teach In Person',
-    description: 'Apply to teach WASSCE students in Sierra Leone. Create a verified tutor profile with your photo, subjects and monthly fees, and get WhatsApp messages from students who agree to your fee.',
-    lastmod: '2026-11-08',
+    description: 'Become a WASSCE tutor in Sierra Leone in three steps: add your photo, subjects and monthly fee, go live in the tutor marketplace and get students on WhatsApp.',
+    lastmod: '2026-11-18',
   },
   '/affiliate': {
     title: 'WASSCE Tutor Affiliate Programme | Earn from Student Referrals',
@@ -286,7 +286,7 @@ const PAGE_JSON_LD: Partial<Record<PublicPath, Record<string, unknown>[]>> = {
       '@type': 'WebPage',
       name: 'Become a WASSCE Tutor in Sierra Leone',
       url: `${SITE.origin}/become-a-tutor`,
-      description: 'Apply to teach WASSCE students in Sierra Leone, build a verified tutor profile and manage lesson bookings in a dedicated workspace.',
+      description: 'Become a WASSCE tutor in Sierra Leone in three steps: make a tutor card with your photo, subjects and monthly fee, and get messages from students on WhatsApp.',
       mainEntity: {
         '@type': 'Service',
         name: 'WASSCE Tutor teaching partner onboarding',
