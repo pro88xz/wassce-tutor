@@ -18,7 +18,7 @@ export const Route = createFileRoute('/universities/$slug')({
   head: ({ loaderData }) => loaderData ? indexablePageTags({
     path: `/universities/${loaderData.slug}`,
     title: loaderData.seoTitle,
-    description: `${loaderData.shortName}: programmes, WASSCE entry requirements and official admissions links for Sierra Leone applicants.`,
+    description: loaderData.seoDescription ?? `${loaderData.shortName}: programmes, WASSCE entry requirements and official admissions links for Sierra Leone applicants.`,
     image: editorialImage(loaderData.image).og,
     jsonLd: [
       {

@@ -5,6 +5,7 @@ import { fetchSubjectHub, fetchSubjectSummaries, hasSubjectPage, subjectPath } f
 import type { SubjectHub, SubjectSummary } from '@/lib/public-content'
 import { tutorsPath } from '@/lib/public-rules'
 import { breadcrumbJsonLd, faqJsonLd, indexablePageTags, privatePageTags, tutoringServiceJsonLd } from '@/lib/seo'
+import { shortSubject, subjectTutorDescription, subjectTutorTitle } from '@/lib/tutor-seo'
 import { SubjectBanner } from '@/components/ds/SubjectCover'
 import { BookingForm } from '@/components/tutors/BookingForm'
 import { TutorMarketplace } from '@/components/tutors/Marketplace'
@@ -14,18 +15,18 @@ type Data = { hub: SubjectHub; subjects: SubjectSummary[] }
 
 const trail = (hub: SubjectHub): [string, string][] => [
   ['Home', '/'],
-  ['Book a tutor', '/tutors'],
+  ['Private tutors', '/tutors'],
   [`${hub.subject.name} tutor`, tutorsPath(hub.subject.slug)],
 ]
 
 function describe(hub: SubjectHub): string {
-  return `Book a private WASSCE ${hub.subject.name} tutor in Sierra Leone for in-person lessons covering all ${hub.topicCount} syllabus topics. See their monthly fee, then message them on WhatsApp.`
+  return subjectTutorDescription(hub.subject.name, hub.topicCount)
 }
 
 // The subject FAQ leads with a subject-specific answer, then the shared ones.
 const subjectFaq = (hub: SubjectHub): [string, string][] => [
   [
-    `What can a ${hub.subject.name} tutor help with?`,
+    `What can a private ${shortSubject(hub.subject.name)} tutor help with?`,
     `Any part of the WASSCE ${hub.subject.name} syllabus: ${hub.groups.map((g) => g.name).slice(0, 4).join(', ')}${hub.groups.length > 4 ? ' and more' : ''}. Tell us the topics you find hard and the tutor starts there.`,
   ],
   ...TUTOR_FAQ.slice(1),
@@ -43,12 +44,12 @@ export const Route = createFileRoute('/tutors/$subject')({
     loaderData
       ? indexablePageTags({
           path: tutorsPath(loaderData.hub.subject.slug),
-          title: `WASSCE ${loaderData.hub.subject.name} Tutor in Sierra Leone | WASSCE Tutor`,
-          ogTitle: `Book a private WASSCE ${loaderData.hub.subject.name} tutor`,
+          title: subjectTutorTitle(loaderData.hub.subject.name),
+          ogTitle: `Book a private WASSCE ${shortSubject(loaderData.hub.subject.name)} tutor in Sierra Leone`,
           description: describe(loaderData.hub),
           jsonLd: [
             tutoringServiceJsonLd({
-              name: `WASSCE ${loaderData.hub.subject.name} tutoring`,
+              name: `Private WASSCE ${loaderData.hub.subject.name} tutoring`,
               description: describe(loaderData.hub),
               path: tutorsPath(loaderData.hub.subject.slug),
               subject: loaderData.hub.subject.name,
@@ -68,12 +69,12 @@ function SubjectTutorPage() {
     <article className="app-page site-page space-y-12 pb-8 sm:space-y-14">
       <div className="space-y-5">
         <Breadcrumbs trail={trail(hub)} />
-        <SubjectBanner slug={subject.slug} eyebrow="Book a private tutor" title={`${subject.name} tutor`} />
+        <SubjectBanner slug={subject.slug} eyebrow="Book a private tutor" title={`Private ${shortSubject(subject.name)} tutors`} />
         <TutorMarketplace subjectId={subject.id} subjectName={subject.name} />
         <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] md:gap-10">
           <div className="space-y-4">
             <p className="text-[17px] text-muted-foreground">
-              In-person help with WASSCE {subject.name} from a teacher near you. See each tutor’s monthly fee, then message them on WhatsApp to arrange lessons near you.
+              Private {subject.name} lessons for WASSCE, one to one at your home or near you, in Freetown, Bo, Kenema, Makeni or your own town. See each tutor’s monthly fee, then message them on WhatsApp to arrange lessons.
             </p>
             <ul className="space-y-2 text-[15px]">
               {[`All ${hub.topicCount} topics in the WASSCE ${subject.name} syllabus`, 'In-person lessons, arranged directly with your tutor', 'Monthly fee shown upfront: you agree before you message'].map((t) => (

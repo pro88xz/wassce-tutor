@@ -117,12 +117,12 @@ function SubjectHubPage() {
                 <Link to="/auth" className={`site-btn site-btn-primary ${HERO_BTN}`}>
                   Start {subject.name} free <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
-                <a href={tutorsPath(subject.slug)} className={`site-btn site-btn-secondary ${HERO_BTN}`}>Book a tutor</a>
+                <a href={tutorsPath(subject.slug)} className={`site-btn site-btn-secondary ${HERO_BTN}`}>Book a private tutor</a>
               </>
             ) : (
               <>
                 <a href={tutorsPath(subject.slug)} className={`site-btn site-btn-primary ${HERO_BTN}`}>
-                  Book a tutor <ArrowRight className="h-4 w-4" aria-hidden />
+                  Book a private tutor <ArrowRight className="h-4 w-4" aria-hidden />
                 </a>
                 <a href="/wassce/subjects" className={`site-btn site-btn-secondary ${HERO_BTN}`}>Subjects with lessons</a>
               </>

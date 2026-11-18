@@ -11,7 +11,7 @@ const isPublicPath = (p: string) =>
 const NAV = [
   { label: 'Subjects', href: '/wassce/subjects' },
   { label: 'WASSCE guide', href: '/wassce' },
-  { label: 'Book a tutor', href: '/tutors' },
+  { label: 'Private tutors', href: '/tutors' },
   { label: 'Universities', href: '/universities' },
   { label: 'Blog', href: '/blog' },
   { label: 'Plans', href: '/#plans' },

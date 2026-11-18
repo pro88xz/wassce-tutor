@@ -354,7 +354,7 @@ function TutorPage() {
         </div>
         <p className="mx-auto mt-1.5 max-w-3xl px-2 text-center text-[11px] leading-snug text-muted-foreground">
           Tutor responses may contain errors. Check important explanations against your lessons and the official syllabus. This is not an official WAEC marking scheme.{' '}
-          <a href="/tutors" className="font-semibold text-primary underline-offset-2 hover:underline">Prefer a real person? Book a tutor</a>
+          <a href="/tutors" className="font-semibold text-primary underline-offset-2 hover:underline">Prefer a real person? Book a private tutor</a>
         </p>
       </div>
     </div>

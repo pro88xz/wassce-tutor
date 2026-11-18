@@ -13,6 +13,8 @@ export type UniversityGuide = {
   name: string
   shortName: string
   seoTitle: string
+  /** The search snippet, when the default one does not use the words people search with. */
+  seoDescription?: string
   location: string
   summary: string
   entrySummary: string
@@ -84,7 +86,9 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     slug: 'comahs',
     name: 'College of Medicine and Allied Health Sciences (COMAHS)',
     shortName: 'COMAHS',
-    seoTitle: 'COMAHS Programmes & WASSCE Entry Requirements | WASSCE Tutor',
+    // Search Console to 16 Nov 2026: "comahs courses and requirements", "comahs requirements for pharmacy" (position 10 to 11).
+    seoTitle: 'COMAHS Courses & Entry Requirements: Pharmacy, Nursing, MBBS',
+    seoDescription: 'COMAHS courses and WASSCE entry requirements for pharmacy, nursing, medicine (MBBS), medical laboratory sciences and public health, with official links.',
     location: 'Connaught Hospital Complex, Freetown',
     summary: 'A constituent college of the University of Sierra Leone focused on medical education, clinical training, health-sciences research and community engagement.',
     entrySummary: 'Programme-specific: published pre-entry routes use C5+ WASSCE credits and science subject combinations; thresholds differ by course.',
@@ -222,7 +226,9 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     slug: 'milton-margai-technical-university',
     name: 'Milton Margai Technical University',
     shortName: 'MMTU',
-    seoTitle: 'MMTU Admissions & Requirements | WASSCE Tutor',
+    // Search Console to 16 Nov 2026: "milton margai diploma courses requirements", "... degree courses requirements" (position 7 to 11).
+    seoTitle: 'MMTU Courses & Entry Requirements: Degree, HND and Diploma',
+    seoDescription: 'Milton Margai Technical University (MMTU) degree, HND and diploma courses, WASSCE entry requirements, the official admissions portal and how to apply.',
     location: 'Goderich, Congo Cross and Brookfields, Freetown',
     summary: 'A technical university with programmes across education, engineering, science, business, hospitality, tourism, nutrition and vocational training, delivered across three Freetown campuses.',
     entrySummary: 'Varies by award: BSc/BSc Ed/BTech generally 5 credits including Mathematics and English.',

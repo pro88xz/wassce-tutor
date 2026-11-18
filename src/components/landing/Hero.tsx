@@ -8,7 +8,7 @@
 // syllabus wall.
 import { Link } from '@tanstack/react-router'
 import { useEffect, useRef } from 'react'
-import { ArrowDown, ArrowRight, Check } from 'lucide-react'
+import { ArrowDown, ArrowRight, Check, UserRound } from 'lucide-react'
 import type { LandingData } from '@/lib/public-content'
 import { PRACTICE_TOTAL } from '@/lib/practice-counts'
 import { TopicSearch, type TopicShortcut } from '@/components/landing/TopicSearch'
@@ -73,6 +73,22 @@ export function Hero({ data }: { data: LandingData }) {
               </li>
             ))}
           </ul>
+          {/* The other product: a teacher in person. Quieter than the main button, so it never competes with it. */}
+          <a
+            href="/tutors"
+            className="hero-rise group mt-7 inline-flex max-w-full items-center gap-3 rounded-2xl border border-[color-mix(in_srgb,var(--primary)_16%,var(--border))] bg-[var(--card)] py-2 pl-2 pr-4 shadow-[var(--site-shadow-card)] transition hover:-translate-y-0.5 hover:border-[color-mix(in_srgb,var(--primary)_40%,var(--border))]"
+            style={{ ['--rise-delay' as string]: '520ms' }}
+          >
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[var(--site-ink)] text-[#cdbcff]" aria-hidden>
+              <UserRound className="h-5 w-5" />
+            </span>
+            <span className="min-w-0">
+              <span className="block text-[12.5px] font-medium leading-tight text-muted-foreground">Want a teacher in person?</span>
+              <span className="mt-0.5 flex items-center gap-1 text-[15px] font-bold leading-tight text-foreground">
+                Book a private tutor <ArrowRight className="h-4 w-4 text-[var(--primary)] transition group-hover:translate-x-0.5" aria-hidden />
+              </span>
+            </span>
+          </a>
         </div>
 
         <HeroStage />

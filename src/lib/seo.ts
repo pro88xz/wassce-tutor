@@ -58,9 +58,9 @@ export const PUBLIC_PAGES = {
     lastmod: '2026-11-06',
   },
   '/tutors': {
-    title: 'Find a WASSCE Tutor in Sierra Leone | WASSCE Tutor',
-    description: 'Find approved WASSCE tutors in Sierra Leone. Compare subjects, teaching formats and session rates, then request a one-to-one lesson.',
-    lastmod: '2026-11-08',
+    title: 'Private WASSCE Tutors in Freetown & Sierra Leone | Home Lessons',
+    description: 'Book a private tutor for WASSCE in Freetown, Bo, Kenema or Makeni. Home lessons and extra classes in maths, English and sciences, with the monthly fee upfront.',
+    lastmod: '2026-11-18',
   },
   '/blog': {
     title: 'WASSCE Tutor Blog: Study & University Guides',
@@ -130,6 +130,61 @@ export const SEARCH_COPY: Partial<Record<string, { title: string; description: s
     title: 'What Is Agriculture? Meaning, Importance and Branches',
     description:
       'Agriculture is growing crops and rearing animals for food, raw materials and income. Its meaning, branches, types and importance, with Sierra Leone examples.',
+  },
+  // Search Console to 16 Nov 2026: each page shows for the searches below but
+  // its title did not use their words, so it got no clicks.
+  // "what is calorimetry" (position 1.8), "calorimetry", "heat and temperature".
+  '/wassce/physics/quantity-of-heat-and-calorimetry': {
+    title: 'What Is Calorimetry? Heat Capacity & Specific Heat | WASSCE',
+    description:
+      'Calorimetry is measuring heat: heat lost by hot bodies equals heat gained by cold ones. Heat capacity, specific heat capacity and WASSCE calorimetry problems.',
+  },
+  // "endocrine" (position 5), "endocrine meaning" (4.3), "what is endocrine", "endocrine system".
+  '/wassce/biology/the-endocrine-system': {
+    title: 'Endocrine System: Meaning, Glands and Hormones | WASSCE Biology',
+    description:
+      'Endocrine meaning: ductless glands that release hormones into the blood. The major endocrine glands, their hormones, feedback and blood glucose control.',
+  },
+  // "urinary system" (51 impressions), "urinary system organs" (position 9), "kidney and urinary tract anatomy".
+  '/wassce/biology/the-kidney-and-urinary-system': {
+    title: 'Urinary System: Organs, Kidney Structure & Nephron | WASSCE',
+    description:
+      'The urinary system and its organs: kidneys, ureters, bladder and urethra. Kidney structure, the nephron, how urine forms and urinary disorders. All free.',
+  },
+  '/wassce/biology/the-kidney-and-urinary-system/the-kidney-and-urinary-system-structure-and-organisation': {
+    title: 'Urinary System Organs and Kidney Structure, with the Nephron',
+    description:
+      'The organs of the urinary system and the route of urine, the external and internal structure of the kidney, and the nephron, its functional unit.',
+  },
+  // "gas exchange", "where does gas exchange occur", "gaseous exchange in lungs" (216 impressions, position 22).
+  '/wassce/biology/respiratory-systems-and-gas-exchange': {
+    title: 'Gas Exchange: Where It Occurs in Humans, Fish, Insects, Plants',
+    description:
+      'Where gas exchange occurs: alveoli in the lungs, gills in fish, tracheae in insects and stomata in plants. The human respiratory system and breathing. Free.',
+  },
+  // "mrs gren", "mrs gren biology", "what is mrs gren", "mrs gren meaning", "what does mrs gren stand for".
+  '/wassce/biology/characteristics-of-living-things/what-makes-something-alive-introducing-mrs-gren': {
+    title: 'MRS GREN Meaning: 7 Characteristics of Living Things',
+    description:
+      'What MRS GREN stands for: Movement, Respiration, Sensitivity, Growth, Reproduction, Excretion and Nutrition, the seven characteristics of living things.',
+  },
+  // "what is the main purpose of biological classification?" (41 impressions), "why do we classify living things".
+  '/wassce/biology/classification-of-living-things/why-we-classify-living-things': {
+    title: 'Why We Classify Living Things: Purpose of Classification',
+    description:
+      'The main purpose of biological classification: to sort millions of organisms into groups so they can be named, identified and studied. Features and examples.',
+  },
+  // "what is economics" (23 impressions, position 14.5), "definition of economics".
+  '/wassce/economics/nature-and-scope-of-economics/what-economics-is-definitions-and-subject-matter': {
+    title: 'What Is Economics? Definitions by Smith, Marshall & Robbins',
+    description:
+      'Economics is the study of how people use scarce resources to satisfy unlimited wants. The wealth, welfare and scarcity definitions, and what economics studies.',
+  },
+  // "distance displacement speed velocity acceleration" and "... definition" (positions 4 to 8).
+  '/wassce/physics/motion-in-a-straight-line/distance-displacement-speed-velocity-and-acceleration': {
+    title: 'Distance, Displacement, Speed, Velocity & Acceleration Defined',
+    description:
+      'Definitions of distance, displacement, speed, velocity and acceleration, with their units, converting km/h to m/s, and WASSCE examples to practise.',
   },
 }
 
@@ -278,7 +333,7 @@ const PAGE_JSON_LD: Partial<Record<PublicPath, Record<string, unknown>[]>> = {
   // breadcrumbJsonLd is a function declaration, so it is hoisted and usable here.
   '/about': [ABOUT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['About', '/about']])],
   '/contact': [CONTACT_JSON_LD, breadcrumbJsonLd([['Home', '/'], ['Contact', '/contact']])],
-  '/tutors': [breadcrumbJsonLd([['Home', '/'], ['Tutors', '/tutors']])],
+  '/tutors': [breadcrumbJsonLd([['Home', '/'], ['Private tutors', '/tutors']])],
   '/affiliate': [breadcrumbJsonLd([['Home', '/'], ['Affiliate programme', '/affiliate']])],
   '/become-a-tutor': [
     {
@@ -390,10 +445,13 @@ export function tutoringServiceJsonLd({ name, description, path, subject }: { na
     name,
     description,
     url: absoluteUrl(path),
-    serviceType: subject ? `${subject} tutoring` : 'Private tutoring',
+    serviceType: subject ? `Private ${subject} tutoring` : 'Private tutoring',
     category: 'Education',
     provider: { '@type': 'Organization', '@id': ORG_ID, name: SITE.name, url: `${SITE.origin}/`, telephone: CONTACT.phoneE164 },
-    areaServed: { '@type': 'Country', name: 'Sierra Leone' },
+    areaServed: [
+      { '@type': 'Country', name: 'Sierra Leone' },
+      ...['Freetown', 'Bo', 'Kenema', 'Makeni'].map((city) => ({ '@type': 'City', name: city, containedInPlace: { '@type': 'Country', name: 'Sierra Leone' } })),
+    ],
     audience: { '@type': 'EducationalAudience', educationalRole: 'student', audienceType: 'WASSCE candidates' },
     availableChannel: { '@type': 'ServiceChannel', serviceUrl: absoluteUrl(path), availableLanguage: 'en' },
   }
