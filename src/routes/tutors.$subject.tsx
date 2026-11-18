@@ -19,7 +19,7 @@ const trail = (hub: SubjectHub): [string, string][] => [
 ]
 
 function describe(hub: SubjectHub): string {
-  return `Book a verified WASSCE ${hub.subject.name} tutor in Sierra Leone for in-person lessons covering all ${hub.topicCount} syllabus topics. See their monthly fee, then message them on WhatsApp.`
+  return `Book a private WASSCE ${hub.subject.name} tutor in Sierra Leone for in-person lessons covering all ${hub.topicCount} syllabus topics. See their monthly fee, then message them on WhatsApp.`
 }
 
 // The subject FAQ leads with a subject-specific answer, then the shared ones.
@@ -44,7 +44,7 @@ export const Route = createFileRoute('/tutors/$subject')({
       ? indexablePageTags({
           path: tutorsPath(loaderData.hub.subject.slug),
           title: `WASSCE ${loaderData.hub.subject.name} Tutor in Sierra Leone | WASSCE Tutor`,
-          ogTitle: `Book a WASSCE ${loaderData.hub.subject.name} tutor`,
+          ogTitle: `Book a private WASSCE ${loaderData.hub.subject.name} tutor`,
           description: describe(loaderData.hub),
           jsonLd: [
             tutoringServiceJsonLd({
@@ -68,7 +68,7 @@ function SubjectTutorPage() {
     <article className="app-page site-page space-y-12 pb-8 sm:space-y-14">
       <div className="space-y-5">
         <Breadcrumbs trail={trail(hub)} />
-        <SubjectBanner slug={subject.slug} eyebrow="Book a tutor" title={`${subject.name} tutor`} />
+        <SubjectBanner slug={subject.slug} eyebrow="Book a private tutor" title={`${subject.name} tutor`} />
         <TutorMarketplace subjectId={subject.id} subjectName={subject.name} />
         <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] md:gap-10">
           <div className="space-y-4">

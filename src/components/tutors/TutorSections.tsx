@@ -1,7 +1,5 @@
 // Sections shared by /tutors and /tutors/{subject}.
-import { useState, type FormEvent } from 'react'
-import { useNavigate } from '@tanstack/react-router'
-import { ArrowRight, BookOpen, ChevronRight, MapPin, Search } from 'lucide-react'
+import { ArrowRight, ChevronRight } from 'lucide-react'
 import type { SubjectSummary } from '@/lib/public-content'
 import { tutorsPath } from '@/lib/public-rules'
 import { useTutorAutoApprove } from '@/lib/tutor-settings'
@@ -77,55 +75,6 @@ export function TutorSubjectGrid({ subjects, exclude }: { subjects: SubjectSumma
         </li>
       ))}
     </ul>
-  )
-}
-
-/**
- * The hero search: a subject (its own tutor page) and a town. On the same page
- * it filters the marketplace in place (TutorMarketplace listens for
- * "tutors:search"); otherwise it opens the subject's page with ?area=.
- */
-export function TutorSearch({ subjects, current }: { subjects: { name: string; slug: string }[]; current?: string }) {
-  const navigate = useNavigate()
-  const [subject, setSubject] = useState(current ?? '')
-  const [area, setArea] = useState('')
-  const submit = (e: FormEvent) => {
-    e.preventDefault()
-    const path = tutorsPath(subject || undefined)
-    const a = area.trim().slice(0, 60)
-    const url = `${path}${a ? `?area=${encodeURIComponent(a)}` : ''}`
-    if (path === window.location.pathname) {
-      window.history.replaceState(window.history.state, '', `${url}#tutors`)
-      window.dispatchEvent(new CustomEvent('tutors:search', { detail: a }))
-      document.getElementById('tutors')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      return
-    }
-    void navigate({ href: `${url}#tutors` })
-  }
-  const box = 'flex h-14 min-w-0 items-center gap-2.5 rounded-xl bg-slate-50 px-3.5 ring-1 ring-slate-900/[.06] transition focus-within:bg-white focus-within:ring-2 focus-within:ring-[#7c5cff]'
-  return (
-    <form onSubmit={submit} className="grid gap-2 rounded-2xl bg-white p-2 text-slate-900 shadow-[0_30px_60px_-30px_rgba(0,0,0,.65)] sm:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)_auto]" role="search" aria-label="Find a tutor">
-      <label className={box}>
-        <BookOpen className="h-[18px] w-[18px] shrink-0 text-[#6438d8]" aria-hidden />
-        <span className="sr-only">Subject</span>
-        <select value={subject} onChange={(e) => setSubject(e.target.value)} className="h-full w-full min-w-0 cursor-pointer bg-transparent text-[15px] font-semibold outline-none">
-          <option value="">Any subject</option>
-          {subjects.map((s) => (
-            <option key={s.slug} value={s.slug}>
-              {s.name}
-            </option>
-          ))}
-        </select>
-      </label>
-      <label className={box}>
-        <MapPin className="h-[18px] w-[18px] shrink-0 text-[#6438d8]" aria-hidden />
-        <span className="sr-only">Town or area</span>
-        <input value={area} onChange={(e) => setArea(e.target.value)} placeholder="Town or area, e.g. Bo" className="h-full w-full min-w-0 bg-transparent text-[15px] font-medium outline-none placeholder:text-slate-400" />
-      </label>
-      <button type="submit" className="site-btn site-btn-primary h-14 px-6">
-        <Search className="h-4 w-4" aria-hidden /> Find tutors
-      </button>
-    </form>
   )
 }
 

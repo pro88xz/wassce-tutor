@@ -1008,6 +1008,66 @@ html.promo-hidden [data-app-promo] { display: none; }
     color: var(--foreground);
   }
   .site-btn-secondary:hover { border-color: color-mix(in srgb, var(--primary) 45%, var(--input)); color: var(--brand-strong); }
+  /* The one action that matters most on a page (e.g. "Book a private tutor"):
+     a lit violet gradient with a soft glow, a highlight along the top edge,
+     and a sheen that passes over it on hover. Works on light and dark bands. */
+  .site-btn-premium {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-height: 3.75rem;
+    padding: .55rem .6rem .55rem 1.6rem;
+    gap: .9rem;
+    border: 1px solid rgb(255 255 255 / 16%);
+    border-radius: 1.125rem;
+    background: linear-gradient(135deg, #9a7bff 0%, #6c3ff0 48%, #4f22cf 100%);
+    color: #fff;
+    font-size: 1.0625rem;
+    font-weight: 800;
+    letter-spacing: -.01em;
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / 35%),
+      inset 0 -1px 0 rgb(20 6 70 / 35%),
+      0 18px 40px -14px rgb(108 63 240 / 85%),
+      0 0 0 6px rgb(124 92 255 / 12%);
+  }
+  .site-btn-premium::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(105deg, transparent 35%, rgb(255 255 255 / 28%) 50%, transparent 65%);
+    transform: translateX(-110%);
+    transition: transform .9s var(--site-ease);
+  }
+  .site-btn-premium:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / 40%),
+      inset 0 -1px 0 rgb(20 6 70 / 35%),
+      0 24px 48px -14px rgb(108 63 240 / 95%),
+      0 0 0 8px rgb(124 92 255 / 16%);
+  }
+  .site-btn-premium:hover::before { transform: translateX(110%); }
+  .site-btn-premium:focus-visible { outline: 3px solid #ffd166; outline-offset: 3px; }
+  /* The arrow in its own round badge at the end of the button. */
+  .site-btn-premium-badge {
+    display: inline-flex;
+    width: 2.6rem;
+    height: 2.6rem;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: .8rem;
+    background: rgb(255 255 255 / 16%);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 25%);
+    transition: transform .3s var(--site-ease), background-color .3s;
+  }
+  .site-btn-premium:hover .site-btn-premium-badge { transform: translateX(3px); background: rgb(255 255 255 / 24%); }
+  @media (prefers-reduced-motion: reduce) {
+    .site-btn-premium::before { display: none; }
+    .site-btn-premium:hover, .site-btn-premium:hover .site-btn-premium-badge { transform: none; }
+  }
   /* On dark bands: the solid light button and its quiet glass partner. */
   .site-btn-light {
     background: #fff;

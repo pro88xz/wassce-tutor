@@ -1,8 +1,8 @@
 // The tutor marketplace on /tutors and /tutors/{subject}: tutors with their
 // photo, subjects, lessons a week and the monthly fee they set. On /tutors the
 // subjects that tutors teach are chips with counts; a search finds a name or
-// an area (also filled from ?area=, set by the hero search), and tutors can
-// be sorted by newest, lowest fee or most experience.
+// an area (also filled from ?area=), and tutors can be sorted by newest,
+// lowest fee or most experience.
 //
 // "Book this tutor" lets the student pick one or more subjects and, if the
 // tutor takes small groups, how many are learning together. The price adds up
@@ -87,7 +87,7 @@ export function VerifiedBadge({ className = 'h-5 w-5' }: { className?: string })
 export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: string; subjectName?: string }) {
   const [tutors, setTutors] = useState<Tutor[]>([])
   const [loading, setLoading] = useState(true)
-  // ?area= comes from the hero search on /tutors.
+  // ?area= lets a link open the marketplace already searching an area.
   const [query, setQuery] = useState(() => (typeof window === 'undefined' ? '' : (new URLSearchParams(window.location.search).get('area') ?? '').slice(0, 60)))
   const [subjectFilter, setSubjectFilter] = useState(subjectId ?? 'all')
   const [sort, setSort] = useState<Sort>('newest')
@@ -136,16 +136,6 @@ export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: strin
     return () => {
       active = false
     }
-  }, [subjectId])
-
-  // The hero search on the same page sends the area here (TutorSearch).
-  useEffect(() => {
-    const onSearch = (e: Event) => {
-      setQuery(String((e as CustomEvent<string>).detail ?? '').slice(0, 60))
-      setSubjectFilter(subjectId ?? 'all')
-    }
-    window.addEventListener('tutors:search', onSearch)
-    return () => window.removeEventListener('tutors:search', onSearch)
   }, [subjectId])
 
   // On a subject's page only that subject's tutors count.
@@ -205,7 +195,7 @@ export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: strin
         <div className="min-w-0">
           <p className="site-eyebrow">{subjectName ? `${subjectName} · in person` : 'The marketplace'}</p>
           <h2 id="tutors-list" className="site-h2 mt-3">
-            {pool.length} {subjectName ? `${subjectName} ${pool.length === 1 ? 'tutor' : 'tutors'}` : pool.length === 1 ? 'tutor' : 'tutors'}{' '}
+            {pool.length} private {subjectName ? `${subjectName} ${pool.length === 1 ? 'tutor' : 'tutors'}` : pool.length === 1 ? 'tutor' : 'tutors'}{' '}
             <span className="site-accent text-[var(--primary)]">ready to teach.</span>
           </h2>
           <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-muted-foreground">
