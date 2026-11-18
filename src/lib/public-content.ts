@@ -477,16 +477,31 @@ export type PublicQuestion = {
 
 const QUESTION_COLUMNS = 'id, paper_id, topic_id, stem, image_url, explanation, position, updated_at, options'
 const PAGE = 1000 // the most rows the API returns at once
+// Public reads run under a short statement timeout, and full lesson text or
+// questions with their options make each row large, so the build-time bulk
+// reads use smaller pages and retry a page that times out.
+const LESSON_PAGE = 100
+const QUESTION_PAGE = 500
+
+async function withRetry<T>(what: string, read: () => PromiseLike<{ data: T | null; error: { message: string } | null }>): Promise<T> {
+  for (let attempt = 1; ; attempt++) {
+    const { data, error } = await read()
+    if (!error && data) return data
+    if (attempt >= 4) fail(what, error)
+    await new Promise((r) => setTimeout(r, 1000 * 2 ** (attempt - 1)))
+  }
+}
 
 /** Every public question, a page at a time, in practice-set order. Build time only. */
 function loadAllQuestions(): Promise<PublicQuestion[]> {
   return once('questions', async () => {
     const rows: PublicQuestion[] = []
-    for (let from = 0; ; from += PAGE) {
-      const { data, error } = await supabase.from('wassce_public_questions').select(QUESTION_COLUMNS).order('id').range(from, from + PAGE - 1)
-      if (error || !data) fail('questions', error)
+    for (let from = 0; ; from += QUESTION_PAGE) {
+      const data = await withRetry('questions', () =>
+        supabase.from('wassce_public_questions').select(QUESTION_COLUMNS).order('id').range(from, from + QUESTION_PAGE - 1),
+      )
       rows.push(...(data as PublicQuestion[]))
-      if (data.length < PAGE) break
+      if (data.length < QUESTION_PAGE) break
     }
     return sortQuestions(rows)
   })
@@ -614,11 +629,12 @@ type LessonBody = { id: string; topic_id: string; slug: string; title: string; c
 function loadAllLessonBodies(): Promise<LessonBody[]> {
   return once('lesson-bodies', async () => {
     const rows: LessonBody[] = []
-    for (let from = 0; ; from += PAGE) {
-      const { data, error } = await supabase.from('wassce_public_lessons').select('id, topic_id, slug, title, content').order('id').range(from, from + PAGE - 1)
-      if (error || !data) fail('lessons', error)
+    for (let from = 0; ; from += LESSON_PAGE) {
+      const data = await withRetry('lessons', () =>
+        supabase.from('wassce_public_lessons').select('id, topic_id, slug, title, content').order('id').range(from, from + LESSON_PAGE - 1),
+      )
       rows.push(...(data as LessonBody[]))
-      if (data.length < PAGE) break
+      if (data.length < LESSON_PAGE) break
     }
     return rows
   })

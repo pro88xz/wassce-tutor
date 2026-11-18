@@ -13,17 +13,39 @@ type Row = Record<string, string>
 // read every table a page at a time: more than 1,000 lessons or questions
 // must never silently drop pages from the sitemap.
 const PAGE = 1000
+// Public reads run under a short statement timeout. A page of full lesson
+// text is several megabytes (1,000 lessons took about 2 s and timed out a
+// build), so content-heavy views are read in small pages.
+const PAGE_SIZE: Record<string, number> = { wassce_public_lessons: 100, wassce_public_questions: 500 }
+const ATTEMPTS = 4
+
+async function fetchPage(url: string, key: string, table: string, select: string, from: number, size: number): Promise<Row[]> {
+  for (let attempt = 1; ; attempt++) {
+    let failure: string
+    try {
+      const res = await fetch(`${url}/rest/v1/${table}?select=${select}&order=id`, {
+        headers: { apikey: key, Authorization: `Bearer ${key}`, Range: `${from}-${from + size - 1}` },
+      })
+      if (res.ok) return (await res.json()) as Row[]
+      failure = `HTTP ${res.status} ${await res.text()}`
+      // A 4xx other than a rate limit will not succeed on a retry.
+      if (res.status < 500 && res.status !== 429) throw new Error(`[public-page-list] ${table}: ${failure}`)
+    } catch (e) {
+      if (e instanceof Error && e.message.startsWith('[public-page-list]')) throw e
+      failure = String(e)
+    }
+    if (attempt >= ATTEMPTS) throw new Error(`[public-page-list] ${table}: ${failure} (after ${ATTEMPTS} attempts)`)
+    await new Promise((r) => setTimeout(r, 1000 * 2 ** (attempt - 1)))
+  }
+}
 
 async function get(url: string, key: string, table: string, select: string): Promise<Row[]> {
+  const size = PAGE_SIZE[table] ?? PAGE
   const rows: Row[] = []
-  for (let from = 0; ; from += PAGE) {
-    const res = await fetch(`${url}/rest/v1/${table}?select=${select}&order=id`, {
-      headers: { apikey: key, Authorization: `Bearer ${key}`, Range: `${from}-${from + PAGE - 1}` },
-    })
-    if (!res.ok) throw new Error(`[public-page-list] ${table}: HTTP ${res.status} ${await res.text()}`)
-    const page = (await res.json()) as Row[]
+  for (let from = 0; ; from += size) {
+    const page = await fetchPage(url, key, table, select, from, size)
     rows.push(...page)
-    if (page.length < PAGE) return rows
+    if (page.length < size) return rows
   }
 }
 
