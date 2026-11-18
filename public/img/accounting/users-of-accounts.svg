@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Users of accounting information and what they want to know</title>
+<desc id="d">Accounting information is used by owners (profit and the value of their investment), managers (planning and control), lenders and banks (ability to repay), suppliers (ability to pay for goods on credit), employees (job security and wages), customers (whether the business will keep supplying them), government and the National Revenue Authority (tax), and investors and the public.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Who uses accounts, and why</text>
+<rect x="290.0" y="202.0" width="220.0" height="76.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="228.0" font-size="18" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">FINANCIAL</text>
+<text x="400.0" y="252.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">STATEMENTS</text>
+<rect x="20.0" y="64.0" width="220.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="130.0" y="84.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Owners</text>
+<text x="130.0" y="105.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">profit, value of capital</text>
+<line x1="400.0" y1="196.0" x2="130.0" y2="132.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="290.0" y="49.0" width="220.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="69.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Managers</text>
+<text x="400.0" y="90.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">planning and control</text>
+<line x1="400.0" y1="196.0" x2="400.0" y2="117.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="560.0" y="64.0" width="220.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="670.0" y="84.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Lenders and banks</text>
+<text x="670.0" y="105.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">can loans be repaid?</text>
+<line x1="400.0" y1="196.0" x2="670.0" y2="132.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="5.0" y="209.0" width="220.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="115.0" y="229.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Suppliers</text>
+<text x="115.0" y="250.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">can it pay on credit?</text>
+<line x1="284.0" y1="240.0" x2="231.0" y2="240.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="575.0" y="209.0" width="220.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="685.0" y="229.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Government (NRA)</text>
+<text x="685.0" y="250.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">tax due</text>
+<line x1="516.0" y1="240.0" x2="569.0" y2="240.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="20.0" y="354.0" width="220.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="130.0" y="374.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Employees</text>
+<text x="130.0" y="395.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">job security, wages</text>
+<line x1="400.0" y1="284.0" x2="130.0" y2="348.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="290.0" y="369.0" width="220.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="389.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Investors</text>
+<text x="400.0" y="410.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">return and risk</text>
+<line x1="400.0" y1="284.0" x2="400.0" y2="363.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="560.0" y="354.0" width="220.0" height="62.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="670.0" y="374.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Customers</text>
+<text x="670.0" y="395.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">will supply continue?</text>
+<line x1="400.0" y1="284.0" x2="670.0" y2="348.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round" marker-end="url(#a475569)"/>
+</svg>

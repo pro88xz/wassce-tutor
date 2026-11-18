@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A three-column cash book with discounts and contra entries</title>
+<desc id="d">Worked example of a three-column cash book for February 2026 in new leones. Debit side: balances brought down (cash 2,000, bank 15,000), a cheque of 4,750 from Kamara with 250 discount allowed, cash sales of 6,000, a contra of 4,000 cash paid into the bank, and a contra of 2,000 withdrawn from the bank for office use. Credit side: a cheque of 9,700 to Sesay with 300 discount received, cash wages 1,500, cash paid into bank 4,000, cash withdrawn from bank 2,000, rent by cheque 3,500, and balances carried down of cash 4,500 and bank 8,550. Both sides total discount, cash 10,000 and bank 23,750.</desc>
+<defs></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Three-column cash book, February 2026 (NLe)</text>
+<text x="42.0" y="66.0" font-size="16" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">Dr</text>
+<text x="758.0" y="66.0" font-size="16" fill="#ea580c" text-anchor="end" dominant-baseline="middle" font-weight="bold">Cr</text>
+<rect x="34.0" y="78.0" width="652.0" height="34.0" rx="0" fill="#ede9fe" stroke="none" stroke-width="0"/>
+<text x="40.0" y="95.0" font-size="13" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">Feb</text>
+<text x="76.0" y="95.0" font-size="13" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">Details</text>
+<text x="214.0" y="95.0" font-size="13" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">Disc</text>
+<text x="282.0" y="95.0" font-size="13" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">Cash</text>
+<text x="354.0" y="95.0" font-size="13" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">Bank</text>
+<text x="366.0" y="95.0" font-size="13" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">Feb</text>
+<text x="402.0" y="95.0" font-size="13" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">Details</text>
+<text x="540.0" y="95.0" font-size="13" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">Disc</text>
+<text x="608.0" y="95.0" font-size="13" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">Cash</text>
+<text x="680.0" y="95.0" font-size="13" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">Bank</text>
+<line x1="34.0" y1="112.0" x2="686.0" y2="112.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="40.0" y="129.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">1</text>
+<text x="76.0" y="129.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Balance b/d</text>
+<text x="282.0" y="129.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">2,000</text>
+<text x="354.0" y="129.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">15,000</text>
+<text x="366.0" y="129.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">5</text>
+<text x="402.0" y="129.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Sesay</text>
+<text x="540.0" y="129.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">300</text>
+<text x="680.0" y="129.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">9,700</text>
+<text x="40.0" y="159.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">3</text>
+<text x="76.0" y="159.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Kamara</text>
+<text x="214.0" y="159.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">250</text>
+<text x="354.0" y="159.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">4,750</text>
+<text x="366.0" y="159.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">12</text>
+<text x="402.0" y="159.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Wages</text>
+<text x="608.0" y="159.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">1,500</text>
+<text x="40.0" y="189.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">8</text>
+<text x="76.0" y="189.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Sales</text>
+<text x="282.0" y="189.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">6,000</text>
+<text x="366.0" y="189.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">15</text>
+<text x="402.0" y="189.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Bank  c</text>
+<text x="608.0" y="189.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">4,000</text>
+<text x="40.0" y="219.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">15</text>
+<text x="76.0" y="219.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Cash  c</text>
+<text x="354.0" y="219.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">4,000</text>
+<text x="366.0" y="219.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">20</text>
+<text x="402.0" y="219.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Cash  c</text>
+<text x="680.0" y="219.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">2,000</text>
+<text x="40.0" y="249.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">20</text>
+<text x="76.0" y="249.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Bank  c</text>
+<text x="282.0" y="249.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">2,000</text>
+<text x="366.0" y="249.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">26</text>
+<text x="402.0" y="249.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Rent</text>
+<text x="680.0" y="249.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">3,500</text>
+<text x="366.0" y="279.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">28</text>
+<text x="402.0" y="279.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Balance c/d</text>
+<text x="608.0" y="279.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">4,500</text>
+<text x="680.0" y="279.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">8,550</text>
+<line x1="174.0" y1="324.0" x2="216.0" y2="324.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="228.0" y1="324.0" x2="284.0" y2="324.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="296.0" y1="324.0" x2="356.0" y2="324.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="500.0" y1="324.0" x2="542.0" y2="324.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="554.0" y1="324.0" x2="610.0" y2="324.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="622.0" y1="324.0" x2="682.0" y2="324.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<text x="214.0" y="339.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">250</text>
+<text x="282.0" y="339.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">10,000</text>
+<text x="354.0" y="339.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">23,750</text>
+<text x="540.0" y="339.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">300</text>
+<text x="608.0" y="339.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">10,000</text>
+<text x="680.0" y="339.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">23,750</text>
+<line x1="174.0" y1="350.0" x2="216.0" y2="350.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="174.0" y1="353.0" x2="216.0" y2="353.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="228.0" y1="350.0" x2="284.0" y2="350.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="228.0" y1="353.0" x2="284.0" y2="353.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="296.0" y1="350.0" x2="356.0" y2="350.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="296.0" y1="353.0" x2="356.0" y2="353.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="500.0" y1="350.0" x2="542.0" y2="350.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="500.0" y1="353.0" x2="542.0" y2="353.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="554.0" y1="350.0" x2="610.0" y2="350.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="554.0" y1="353.0" x2="610.0" y2="353.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="622.0" y1="350.0" x2="682.0" y2="350.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="622.0" y1="353.0" x2="682.0" y2="353.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<text x="40.0" y="369.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Mar 1</text>
+<text x="76.0" y="369.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Balance b/d</text>
+<text x="282.0" y="369.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">4,500</text>
+<text x="354.0" y="369.0" font-size="13" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">8,550</text>
+<line x1="360.0" y1="78.0" x2="360.0" y2="382.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="34.0" y="78.0" width="652.0" height="304.0" rx="0" fill="none" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="400.0" y="438.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">c = contra entry: both sides of the transaction are in the cash book.</text>
+<text x="400.0" y="458.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Discount columns are totalled, not balanced, and posted to the ledger.</text>
+</svg>
