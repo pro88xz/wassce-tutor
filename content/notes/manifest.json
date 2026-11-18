@@ -7370,8 +7370,6 @@
       "sort_order": 1,
       "retire": [
         "introduction-to-financial-accounting",
-        "branches-and-scope-of-accounting",
-        "bookkeeping-vs-accounting-historical-evolution",
         "objectives-of-accounting-stakeholder-needs"
       ]
     },
@@ -7386,7 +7384,11 @@
       "auto_sync": true,
       "title": "Bookkeeping vs accounting, branches of accounting and the accounting cycle",
       "est_minutes": 7,
-      "sort_order": 2
+      "sort_order": 2,
+      "retire": [
+        "bookkeeping-vs-accounting-historical-evolution",
+        "branches-and-scope-of-accounting"
+      ]
     },
     {
       "file": "accounting-concepts-1.md",
@@ -7401,8 +7403,6 @@
       "est_minutes": 7,
       "sort_order": 1,
       "retire": [
-        "qualitative-characteristics-of-financial-information",
-        "accounting-bases-cash-basis-vs-accrual-basis",
         "accounting-conventions-and-regulatory-frameworks",
         "the-accrual-and-matching-principles",
         "prudence-consistency-and-materiality-concepts",
@@ -7421,7 +7421,11 @@
       "auto_sync": true,
       "title": "Qualitative characteristics of financial information; cash basis vs accrual basis",
       "est_minutes": 6,
-      "sort_order": 2
+      "sort_order": 2,
+      "retire": [
+        "qualitative-characteristics-of-financial-information",
+        "accounting-bases-cash-basis-vs-accrual-basis"
+      ]
     },
     {
       "file": "accounting-equation-1.md",

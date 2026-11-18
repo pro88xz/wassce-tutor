@@ -442,8 +442,63 @@
       "permanent": true
     },
     {
+      "source": "/wassce/financial-accounting/accounting-concepts-and-principles/accounting-bases-cash-basis-vs-accrual-basis",
+      "destination": "/wassce/financial-accounting/accounting-concepts-and-principles/qualitative-characteristics-of-financial-information-cash-basis-vs-accrual-basis",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/financial-accounting/accounting-concepts-and-principles/accounting-concepts-and-principles-foundations-of-reliable-records",
+      "destination": "/wassce/financial-accounting/accounting-concepts-and-principles/accounting-concepts-and-conventions-explained-with-examples",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/financial-accounting/accounting-concepts-and-principles/accounting-conventions-and-regulatory-frameworks",
+      "destination": "/wassce/financial-accounting/accounting-concepts-and-principles/accounting-concepts-and-conventions-explained-with-examples",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/financial-accounting/accounting-concepts-and-principles/prudence-consistency-and-materiality-concepts",
+      "destination": "/wassce/financial-accounting/accounting-concepts-and-principles/accounting-concepts-and-conventions-explained-with-examples",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/financial-accounting/accounting-concepts-and-principles/qualitative-characteristics-of-financial-information",
+      "destination": "/wassce/financial-accounting/accounting-concepts-and-principles/qualitative-characteristics-of-financial-information-cash-basis-vs-accrual-basis",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/financial-accounting/accounting-concepts-and-principles/the-accrual-and-matching-principles",
+      "destination": "/wassce/financial-accounting/accounting-concepts-and-principles/accounting-concepts-and-conventions-explained-with-examples",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/financial-accounting/accounting-concepts-and-principles/the-dual-aspect-concept-accounting-equation",
+      "destination": "/wassce/financial-accounting/accounting-concepts-and-principles/accounting-concepts-and-conventions-explained-with-examples",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/financial-accounting/introduction-to-financial-accounting/bookkeeping-vs-accounting-historical-evolution",
+      "destination": "/wassce/financial-accounting/introduction-to-financial-accounting/bookkeeping-vs-accounting-branches-of-accounting-and-the-accounting-cycle",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/financial-accounting/introduction-to-financial-accounting/branches-and-scope-of-accounting",
+      "destination": "/wassce/financial-accounting/introduction-to-financial-accounting/bookkeeping-vs-accounting-branches-of-accounting-and-the-accounting-cycle",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/financial-accounting/introduction-to-financial-accounting/introduction-to-financial-accounting",
+      "destination": "/wassce/financial-accounting/introduction-to-financial-accounting/what-is-financial-accounting-meaning-objectives-and-users-of-accounting-information",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/financial-accounting/introduction-to-financial-accounting/objectives-of-accounting-stakeholder-needs",
+      "destination": "/wassce/financial-accounting/introduction-to-financial-accounting/what-is-financial-accounting-meaning-objectives-and-users-of-accounting-information",
+      "permanent": true
+    },
+    {
       "source": "/wassce/mathematics/number-bases/number-bases",
-      "destination": "/wassce/mathematics/number-bases",
+      "destination": "/wassce/mathematics/number-bases/number-bases-place-value-and-converting-to-and-from-base-ten",
       "permanent": true
     },
     {
