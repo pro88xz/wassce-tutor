@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Primary, secondary and tertiary industries</title>
+<desc id="d">Primary industries extract raw materials (farming, fishing, mining, logging). Secondary industries process them into manufactured goods. Tertiary industries provide services such as transport, trade, banking and teaching. Examples: cocoa farming, a chocolate factory, shops selling chocolate.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="450" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">From raw material to customer</text>
+<rect x="30.0" y="62.0" width="220.0" height="66.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="140.0" y="84.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">PRIMARY</text>
+<text x="140.0" y="106.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">extracts raw materials</text>
+<rect x="290.0" y="62.0" width="220.0" height="66.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="84.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">SECONDARY</text>
+<text x="400.0" y="106.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">manufactures goods</text>
+<rect x="550.0" y="62.0" width="220.0" height="66.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="660.0" y="84.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">TERTIARY</text>
+<text x="660.0" y="106.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">provides services</text>
+<rect x="40.0" y="162.0" width="200.0" height="46.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="140.0" y="185.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">cocoa farming</text>
+<rect x="300.0" y="162.0" width="200.0" height="46.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="400.0" y="185.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">chocolate factory</text>
+<rect x="560.0" y="162.0" width="200.0" height="46.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="660.0" y="185.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">shops sell chocolate</text>
+<line x1="246.0" y1="185.0" x2="294.0" y2="185.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="506.0" y1="185.0" x2="554.0" y2="185.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="40.0" y="228.0" width="200.0" height="46.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="140.0" y="251.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">logging</text>
+<rect x="300.0" y="228.0" width="200.0" height="46.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="400.0" y="251.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">sawmill, furniture</text>
+<rect x="560.0" y="228.0" width="200.0" height="46.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="660.0" y="251.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">transport and sale</text>
+<line x1="246.0" y1="251.0" x2="294.0" y2="251.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="506.0" y1="251.0" x2="554.0" y2="251.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="40.0" y="294.0" width="200.0" height="46.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="140.0" y="317.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">fishing</text>
+<rect x="300.0" y="294.0" width="200.0" height="46.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="400.0" y="317.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">smoking, canning</text>
+<rect x="560.0" y="294.0" width="200.0" height="46.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="660.0" y="317.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">market traders</text>
+<line x1="246.0" y1="317.0" x2="294.0" y2="317.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="506.0" y1="317.0" x2="554.0" y2="317.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="40.0" y="360.0" width="200.0" height="46.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="140.0" y="383.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">mining iron ore</text>
+<rect x="300.0" y="360.0" width="200.0" height="46.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="400.0" y="383.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">steel making</text>
+<rect x="560.0" y="360.0" width="200.0" height="46.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="660.0" y="383.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">banks, insurance</text>
+<line x1="246.0" y1="383.0" x2="294.0" y2="383.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="506.0" y1="383.0" x2="554.0" y2="383.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="400.0" y="438.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">A fourth, quaternary sector provides information and research.</text>
+</svg>

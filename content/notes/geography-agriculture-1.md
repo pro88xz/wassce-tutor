@@ -33,6 +33,10 @@ The farmer clears a patch of forest or bush by **slash and burn**, farms it for 
 
 ### Bush fallowing (rotational bush fallow)
 
+![The bush fallowing cycle: clear the bush, burn, plant crops for two or three years, soil exhausted, fallow while the bush regrows, then clear again](https://wasscetutor.com/img/geography/bush-fallow-cycle.svg)
+
+*Figure 1. The bush fallowing cycle. WASSCE Tutor diagram.*
+
 The farmer stays in a **permanent village** but rotates the farm plots: a plot is cultivated for a few years and then left to **fallow** for several years before being cleared again. This is the main system in Sierra Leone.
 
 As population grows, **fallow periods are shortening** (from 10–15 years in the past to 3–5 years in many places), so soils have less time to recover and yields fall.

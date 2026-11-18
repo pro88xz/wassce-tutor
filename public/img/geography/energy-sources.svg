@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Renewable and non-renewable sources of energy</title>
+<desc id="d">Renewable sources are replaced naturally and will not run out: solar, hydroelectric, wind, biomass (firewood and charcoal), geothermal and tidal or wave energy. Non-renewable sources are fossil fuels and nuclear fuel, formed over millions of years, which will run out: coal, petroleum, natural gas and uranium.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="450" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sources of energy</text>
+<rect x="270.0" y="55.0" width="260.0" height="50.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="400.0" y="80.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">ENERGY SOURCES</text>
+<rect x="35.0" y="130.0" width="340.0" height="290.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="205.0" y="179.0" font-size="18" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">RENEWABLE</text>
+<text x="205.0" y="203.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">replaced naturally</text>
+<text x="205.0" y="227.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="205.0" y="251.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">solar (sun)</text>
+<text x="205.0" y="275.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">hydroelectric (water)</text>
+<text x="205.0" y="299.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">wind</text>
+<text x="205.0" y="323.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">biomass: firewood, charcoal</text>
+<text x="205.0" y="347.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">geothermal (earth heat)</text>
+<text x="205.0" y="371.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">tides and waves</text>
+<rect x="425.0" y="130.0" width="340.0" height="290.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="595.0" y="179.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">NON-RENEWABLE</text>
+<text x="595.0" y="203.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">will run out</text>
+<text x="595.0" y="227.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="595.0" y="251.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">coal</text>
+<text x="595.0" y="275.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">petroleum (crude oil)</text>
+<text x="595.0" y="299.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">natural gas</text>
+<text x="595.0" y="323.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">nuclear (uranium)</text>
+<text x="595.0" y="347.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="595.0" y="371.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">fossil fuels pollute</text>
+<line x1="400.0" y1="111.0" x2="205.0" y2="124.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="400.0" y1="111.0" x2="595.0" y2="124.0" stroke="#475569" stroke-width="2.2" stroke-linecap="round" marker-end="url(#a475569)"/>
+</svg>

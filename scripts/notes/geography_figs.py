@@ -1131,6 +1131,163 @@ def greenhouse_effect():
     return s
 
 
+
+@fig
+def optimum_population():
+    s = Svg(800, 440, "Under-population, optimum population and over-population",
+            "As population grows, output (income) per head first rises because there are more people to use the resources. "
+            "It reaches a peak at the optimum population. Beyond that point, there are too many people for the resources and "
+            "technology available, so output per head falls: the area is over-populated.")
+    heading(s, "Optimum population gives the highest output per head")
+    ox, oy, w, h = 110, 370, 620, 290
+    s.arrow(ox, oy, ox + w + 20, oy, color=INK, width=2)
+    s.arrow(ox, oy, ox, oy - h - 20, color=INK, width=2)
+    s.text(ox + w - 60, oy + 24, "population →", size=15, weight="bold", color=INK)
+    s.text(ox - 58, oy - h / 2 - 10, "output", size=14, weight="bold", color=INK)
+    s.text(ox - 58, oy - h / 2 + 10, "per head", size=14, weight="bold", color=INK)
+    s.path(f"M {ox + 20} {oy - 40} C {ox + 200} {oy - 330} {ox + 380} {oy - 330} {ox + w - 20} {oy - 60}", color=BLUE, width=4)
+    px = ox + 300
+    s.line(px, oy, px, oy - 260, color=GREEN, width=2, dash="6 5")
+    s.label(px, oy - 270, "optimum", size=15, color=GREEN, weight="bold")
+    s.text(ox + 150, oy - 30, "UNDER-", size=15, weight="bold", color=ORANGE)
+    s.text(ox + 150, oy - 12, "POPULATION", size=15, weight="bold", color=ORANGE)
+    s.text(ox + 470, oy - 30, "OVER-", size=15, weight="bold", color=RED)
+    s.text(ox + 470, oy - 12, "POPULATION", size=15, weight="bold", color=RED)
+    note(s, "Resources and technology decide where the optimum lies.", 420, size=14, color=MUTED)
+    return s
+
+
+@fig
+def settlement_hierarchy():
+    s = Svg(800, 470, "The settlement hierarchy",
+            "Settlements ranked by size and importance, from many small isolated dwellings and hamlets at the bottom to a "
+            "few large cities and conurbations at the top. Higher settlements are fewer, larger, further apart and provide "
+            "more and higher-order services.")
+    heading(s, "Fewer, larger settlements with more services towards the top")
+    levels = [("Conurbation", "Lagos, Greater Accra", "#fecaca"), ("City", "Freetown, Bo, Kenema", "#fed7aa"),
+              ("Town", "district headquarters", "#fde68a"), ("Village", "primary school, market", "#d9f99d"),
+              ("Hamlet", "a few houses", "#bbf7d0"), ("Isolated dwelling", "one farm household", "#a7f3d0")]
+    top, step, cx = 66, 58, 290
+    for i, (name, ex, col) in enumerate(levels):
+        y0, y1 = top + i * step, top + (i + 1) * step
+        hw0, hw1 = 40 + i * 38, 40 + (i + 1) * 38
+        poly(s, [(cx - hw0, y0), (cx + hw0, y0), (cx + hw1, y1), (cx - hw1, y1)], col, width=1.5)
+        s.text(cx, (y0 + y1) / 2, name, size=15 if i else 14, weight="bold", color=INK)
+        s.text(560, (y0 + y1) / 2, ex, size=14, color=INK, anchor="start")
+        s.line(cx + (hw0 + hw1) / 2 + 8, (y0 + y1) / 2, 550, (y0 + y1) / 2, color="#cbd5e1", width=1.2, dash="3 4")
+    s.arrow(40, 410, 40, 80, color=PURPLE, width=2.5)
+    s.text(40, 445, "↑ fewer, larger, more services, wider sphere of influence", size=14, weight="bold", color=PURPLE, anchor="start")
+    return s
+
+
+@fig
+def rural_urban_migration():
+    s = Svg(800, 440, "Push and pull factors of rural–urban migration",
+            "Push factors in rural areas, such as poverty, unemployment, poor amenities, land shortage and insecurity, drive "
+            "people away. Pull factors in towns, such as jobs, better amenities, education, security and relatives already "
+            "there, attract them. Obstacles such as cost, distance and family ties may slow migration.")
+    heading(s, "Rural–urban migration: pushed out, pulled in")
+    a = box(s, 160, 225, 270, 260, ["RURAL AREA", "push factors:", "poverty, low farm income", "unemployment",
+                                    "no electricity, water,", "hospitals, schools", "land shortage, poor harvests",
+                                    "insecurity, disasters"], col=ORANGE, fill=F_AMBER, size=17)
+    b = box(s, 640, 225, 270, 260, ["TOWN", "pull factors:", "jobs, higher wages", "schools and colleges",
+                                    "hospitals, electricity,", "pipe-borne water", "security",
+                                    "relatives, city life"], col=BLUE, fill=F_BLUE, size=17)
+    s.arrow(305, 225, 495, 225, color=INK, width=5)
+    s.text(400, 200, "migration", size=16, weight="bold", color=INK)
+    s.text(400, 300, "obstacles:", size=13, weight="bold", color=MUTED)
+    s.text(400, 318, "cost, distance,", size=13, color=MUTED)
+    s.text(400, 336, "family ties", size=13, color=MUTED)
+    note(s, "Most migrants are young adults looking for work or education.", 415, size=14, color=INK)
+    return s
+
+
+@fig
+def bush_fallow_cycle():
+    s = Svg(800, 460, "The bush fallowing cycle",
+            "A farmer clears bush, burns the cut vegetation so the ash adds nutrients, plants crops such as rice and cassava "
+            "for two or three years until yields fall, then leaves the land to fallow so bush regrows and the soil recovers "
+            "before the plot is cleared again. When population grows, fallow periods become too short for the soil to recover.")
+    heading(s, "Bush fallowing: farm, rest, return")
+    cx, cy, rx, ry = 400, 240, 255, 145
+    stages = [("1. Clear the bush", "cutlass and axe", F_AMBER, ORANGE), ("2. Burn", "ash adds nutrients", F_RED, RED),
+              ("3. Plant crops", "rice, cassava: 2–3 yrs", F_GREEN, GREEN), ("4. Soil exhausted", "yields fall", F_GREY, INK),
+              ("5. Fallow", "bush regrows, soil recovers", F_TEAL, TEAL)]
+    boxes = []
+    for i, (a, b, fill, col) in enumerate(stages):
+        ang = math.radians(-90 + i * 72)
+        boxes.append(box(s, cx + rx * math.cos(ang), cy + ry * math.sin(ang), 210, 62, [a, b], col=col, fill=fill, size=15))
+    for i in range(5):
+        link(s, boxes[i], boxes[(i + 1) % 5], color=MUTED, width=2.2)
+    s.text(cx, cy - 8, "same plot,", size=15, color=MUTED)
+    s.text(cx, cy + 12, "permanent village", size=15, color=MUTED)
+    note(s, "Fallow cut from 10–15 years to 3–5 years → soil cannot recover → lower yields.", 440, size=14, color=RED)
+    return s
+
+
+@fig
+def industry_sectors():
+    s = Svg(800, 450, "Primary, secondary and tertiary industries",
+            "Primary industries extract raw materials (farming, fishing, mining, logging). Secondary industries process them "
+            "into manufactured goods. Tertiary industries provide services such as transport, trade, banking and teaching. "
+            "Examples: cocoa farming, a chocolate factory, shops selling chocolate.")
+    heading(s, "From raw material to customer")
+    cols = [(140, "PRIMARY", "extracts raw materials", GREEN, F_GREEN), (400, "SECONDARY", "manufactures goods", PURPLE, F_PURPLE),
+            (660, "TERTIARY", "provides services", BLUE, F_BLUE)]
+    for x, a, b, col, fill in cols:
+        box(s, x, 95, 220, 66, [a, b], col=col, fill=fill, size=16)
+    rows = [("cocoa farming", "chocolate factory", "shops sell chocolate"),
+            ("logging", "sawmill, furniture", "transport and sale"),
+            ("fishing", "smoking, canning", "market traders"),
+            ("mining iron ore", "steel making", "banks, insurance")]
+    for r, row in enumerate(rows):
+        y = 185 + r * 66
+        bs = [box(s, x, y, 200, 46, [t], col=INK, fill="#ffffff", size=15) for (x, *_), t in zip(cols, row)]
+        link(s, bs[0], bs[1], color=MUTED, width=2)
+        link(s, bs[1], bs[2], color=MUTED, width=2)
+    note(s, "A fourth, quaternary sector provides information and research.", 438, size=14, color=MUTED)
+    return s
+
+
+@fig
+def energy_sources():
+    s = Svg(800, 450, "Renewable and non-renewable sources of energy",
+            "Renewable sources are replaced naturally and will not run out: solar, hydroelectric, wind, biomass (firewood "
+            "and charcoal), geothermal and tidal or wave energy. Non-renewable sources are fossil fuels and nuclear fuel, "
+            "formed over millions of years, which will run out: coal, petroleum, natural gas and uranium.")
+    heading(s, "Sources of energy")
+    top = box(s, 400, 80, 260, 50, ["ENERGY SOURCES"], col=INK, fill=F_GREY, size=17)
+    r = box(s, 205, 275, 340, 290, ["RENEWABLE", "replaced naturally", "", "solar (sun)", "hydroelectric (water)",
+                                     "wind", "biomass: firewood, charcoal", "geothermal (earth heat)", "tides and waves"],
+            col=GREEN, fill=F_GREEN, size=18)
+    n = box(s, 595, 275, 340, 290, ["NON-RENEWABLE", "will run out", "", "coal", "petroleum (crude oil)",
+                                     "natural gas", "nuclear (uranium)", "", "fossil fuels pollute"],
+            col=RED, fill=F_RED, size=18)
+    link(s, top, r, color=MUTED, width=2.2)
+    link(s, top, n, color=MUTED, width=2.2)
+    return s
+
+
+@fig
+def desertification_cycle():
+    s = Svg(800, 470, "Causes and effects of desertification",
+            "Desertification is the spread of desert-like conditions into dry lands such as the Sahel. Its causes are "
+            "overgrazing, over-cultivation, cutting trees for fuel, bush burning and drought. Its effects include loss of "
+            "farmland and pasture, food shortages, migration, dust storms and conflict over land and water.")
+    heading(s, "Desertification in the Sahel")
+    centre = box(s, 400, 250, 200, 100, ["DESERTIFICATION", "dry land turns", "desert-like"], col=BROWN, fill="#fde68a", size=17)
+    causes = ["overgrazing", "over-cultivation", "cutting trees for fuel", "bush burning", "drought"]
+    effects = ["loss of farmland, pasture", "food shortage, famine", "migration to towns", "dust storms", "conflict over land"]
+    s.text(130, 72, "CAUSES", size=16, weight="bold", color=RED)
+    s.text(670, 72, "EFFECTS", size=16, weight="bold", color=BLUE)
+    for i, (c, e) in enumerate(zip(causes, effects)):
+        y = 110 + i * 72
+        a = box(s, 130, y, 220, 52, [c], col=RED, fill=F_RED, size=15)
+        b = box(s, 670, y, 220, 52, [e], col=BLUE, fill=F_BLUE, size=15)
+        s.arrow(a[0] + 116, y, centre[0] - 106, 250 + (y - 254) * 0.35, color=MUTED, width=1.8)
+        s.arrow(centre[0] + 106, 250 + (y - 254) * 0.35, b[0] - 116, y, color=MUTED, width=1.8)
+    return s
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:

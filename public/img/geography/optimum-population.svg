@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Under-population, optimum population and over-population</title>
+<desc id="d">As population grows, output (income) per head first rises because there are more people to use the resources. It reaches a peak at the optimum population. Beyond that point, there are too many people for the resources and technology available, so output per head falls: the area is over-populated.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="800" height="440" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Optimum population gives the highest output per head</text>
+<line x1="110.0" y1="370.0" x2="750.0" y2="370.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="110.0" y1="370.0" x2="110.0" y2="60.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="670.0" y="394.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">population →</text>
+<text x="52.0" y="215.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">output</text>
+<text x="52.0" y="235.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">per head</text>
+<path d="M 130 330 C 310 40 490 40 710 310" stroke="#2563eb" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="410.0" y1="370.0" x2="410.0" y2="110.0" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5"/>
+<rect x="375.6" y="87.5" width="68.8" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="410.0" y="100.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">optimum</text>
+<text x="260.0" y="340.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">UNDER-</text>
+<text x="260.0" y="358.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">POPULATION</text>
+<text x="580.0" y="340.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">OVER-</text>
+<text x="580.0" y="358.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">POPULATION</text>
+<text x="400.0" y="420.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Resources and technology decide where the optimum lies.</text>
+</svg>

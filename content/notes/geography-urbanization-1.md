@@ -20,6 +20,10 @@ Since about **2007**, more than half of the world's people have lived in towns. 
 
 ## Causes of urbanization
 
+![Push factors in a rural area and pull factors in a town, with a migration arrow from the rural area to the town and obstacles such as cost, distance and family ties](https://wasscetutor.com/img/geography/rural-urban-migration.svg)
+
+*Figure 1. Push and pull factors of rural–urban migration. WASSCE Tutor diagram.*
+
 ### Push factors (from rural areas)
 
 1. **Poverty** and low farm incomes.

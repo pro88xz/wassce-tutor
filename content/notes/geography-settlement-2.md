@@ -12,6 +12,10 @@ By the end of this lesson you should be able to:
 
 ## The settlement hierarchy
 
+![A pyramid of settlements: isolated dwellings and hamlets at the wide base, then villages and towns, with cities and conurbations at the narrow top](https://wasscetutor.com/img/geography/settlement-hierarchy.svg)
+
+*Figure 1. The settlement hierarchy, with examples. WASSCE Tutor diagram.*
+
 | Level | Approximate size | Typical services |
 |---|---|---|
 | **Isolated dwelling** | one household | none |
