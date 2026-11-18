@@ -295,3 +295,15 @@ jobs:
           echo "listed tutors on a numbered address behind a hidden one, address trigger on: $RESULT"
           test "$RESULT" = "0,1" || { echo "Checks did not match 0,1"; exit 1; }
           psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select string_agg(full_name || ' /tutors/' || slug, ', ' order by verified_at) from public.tutors where status = 'active' and listed;"
+
+      - name: Verify (30) the lesson reviews given on WhatsApp are recorded
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select count(*) from public.lessons l join public.tutors t on t.user_id = l.reviewed_by where l.is_published and t.slug in ('john-kaitibie', 'mohamed-bangura', 'nicholas-norman');" | tr -d '[:space:]')"
+          echo "published lessons reviewed by the three reviewers: $RESULT"
+          test "$RESULT" -gt 0 || { echo "Expected reviewed lessons"; exit 1; }
+          # For the record: lessons per reviewer and subject.
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select string_agg(line, '; ') from (select t.full_name || ', ' || s.name || ': ' || count(*) as line from public.lessons l join public.tutors t on t.user_id = l.reviewed_by join public.topics tp on tp.id = l.topic_id join public.subjects s on s.id = tp.subject_id where l.is_published group by t.full_name, s.name order by t.full_name, s.name) r;"
