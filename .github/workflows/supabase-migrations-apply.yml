@@ -307,3 +307,12 @@ jobs:
           test "$RESULT" -gt 0 || { echo "Expected reviewed lessons"; exit 1; }
           # For the record: lessons per reviewer and subject.
           psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select string_agg(line, '; ') from (select t.full_name || ', ' || s.name || ': ' || count(*) as line from public.lessons l join public.tutors t on t.user_id = l.reviewed_by join public.topics tp on tp.id = l.topic_id join public.subjects s on s.id = tp.subject_id where l.is_published group by t.full_name, s.name order by t.full_name, s.name) r;"
+
+      - name: Verify (31) the fuller tutor cards (for the record)
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          # The update skips a card the tutor edited meanwhile, so this only reports.
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select string_agg(full_name || ': ' || array_length(regexp_split_to_array(btrim(bio), '\s+'), 1) || ' words, ' || location, '; ' order by verified_at) from public.tutors where status = 'active' and listed;"
