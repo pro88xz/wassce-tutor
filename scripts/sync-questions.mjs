@@ -160,10 +160,12 @@ async function retirePapers(db) {
 }
 
 /**
- * Free accounts get one starter set per subject (papers.is_free, migration 07).
- * Migration 07 chose them once; a subject whose first sets arrive later (e.g.
- * Physics) would otherwise have none. Give each such subject its first
- * published set. A choice an admin already made is never changed.
+ * Since migration 22 every practice set is free, and since migration 27 the
+ * database marks each new or changed practice set free itself (trigger
+ * practice_sets_stay_free), whatever this import sends. What follows dates
+ * from migration 07, when free accounts had one starter set per subject; it
+ * is now harmless (the trigger has already marked every set free) and kept
+ * only so older databases still get a starter set.
  */
 async function ensureStarterSets(db, subjectSlugs) {
   try {
