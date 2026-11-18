@@ -1,0 +1,1608 @@
+{
+ "name": "financial_accounting_set2_p1",
+ "label": "Financial Accounting: set 2 (trial balance, errors, suspense, bank reconciliation, final accounts)",
+ "subject_slug": "financial-accounting",
+ "papers": [
+  {
+   "id": "6b33c9f5-5b68-503b-a738-9f651b70d56d",
+   "topic": "The Trial Balance",
+   "title": "The Trial Balance: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the trial balance, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 120,
+   "questions": [
+    {
+     "id": "76f550e3-731f-5007-8c5f-51a07f909c84",
+     "key": "fa-tb-01",
+     "stem": "The main purpose of a trial balance is to",
+     "image_url": null,
+     "explanation": "Equal debit and credit totals show that the double entry is arithmetically correct.\n\n**Why the other options are wrong**\n\n- find the net profit of the business: Net profit is found in the income statement.\n- show the financial position on a date: That is the statement of financial position.\n- prove that the books contain no errors: Some errors are not revealed by the trial balance.",
+     "position": 1,
+     "options": [
+      {
+       "id": "d01109c9-468c-592b-9cbf-10148c16721d",
+       "label": "A",
+       "content": "check the arithmetical accuracy of the double entry",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "648c786b-1fb3-5337-8afd-941de9a1d0e1",
+       "label": "B",
+       "content": "find the net profit of the business",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "07afacf5-fc0a-5fb2-b092-5deaa5b3825a",
+       "label": "C",
+       "content": "show the financial position on a date",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4f59663b-dca6-5c5d-a932-701974b2a2f3",
+       "label": "D",
+       "content": "prove that the books contain no errors",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d416f65a-2c1c-5c1a-890d-e92ed0bef218",
+     "key": "fa-tb-02",
+     "stem": "Which balance appears on the credit side of a trial balance?",
+     "image_url": null,
+     "explanation": "Returns outwards (purchases returns) reduce purchases and are a credit balance.\n\n**Why the other options are wrong**\n\n- returns inwards: Returns inwards reduce sales: a debit balance.\n- discount allowed: Discount allowed is an expense: a debit balance.\n- drawings: Drawings are a debit balance.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d613d074-a412-5eec-a824-91d42ee9a2c2",
+       "label": "A",
+       "content": "returns inwards",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dca21a05-795b-55b4-b3b3-0a39b840853c",
+       "label": "B",
+       "content": "returns outwards",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8da89af2-064c-5d61-aac3-feb46f195198",
+       "label": "C",
+       "content": "discount allowed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "44a33dc1-fd6f-56b6-b7dc-3e392a92df0b",
+       "label": "D",
+       "content": "drawings",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8a50d37e-04c0-52ef-9a6a-5f1415181978",
+     "key": "fa-tb-03",
+     "stem": "Total debit balances are NLe 374,000 and credit balances other than capital are NLe 208,000. The capital is",
+     "image_url": null,
+     "explanation": "Capital = 374,000 − 208,000 = 166,000.\n\n**Why the other options are wrong**\n\n- NLe 582,000: The two totals have been added.\n- NLe 208,000: That is the credits other than capital.\n- NLe 374,000: That is the debit total.",
+     "position": 3,
+     "options": [
+      {
+       "id": "e9e85b0f-0617-5dc2-b504-1c4766fccd33",
+       "label": "A",
+       "content": "NLe 582,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c293c307-8d58-5b43-bc6f-a90f8407d887",
+       "label": "B",
+       "content": "NLe 208,000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "28d156bd-ec00-57df-86ea-103141885778",
+       "label": "C",
+       "content": "NLe 166,000",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "de814fa5-9c30-527d-8e0b-c41839f198be",
+       "label": "D",
+       "content": "NLe 374,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "240f28f8-2be1-553c-9a83-210b20f4b4ab",
+     "key": "fa-tb-04",
+     "stem": "A rent received balance of NLe 3,000 is wrongly listed on the debit side. The trial balance totals will differ by",
+     "image_url": null,
+     "explanation": "Debit total +3,000 and credit total −3,000, so the difference is 2 × 3,000 = 6,000.\n\n**Why the other options are wrong**\n\n- NLe 3,000: The debit is 3,000 too high and the credit 3,000 too low.\n- NLe 1,500: The difference is twice the amount, not half.\n- NLe 0: A misplaced balance always causes a difference.",
+     "position": 4,
+     "options": [
+      {
+       "id": "700dadf3-66c8-5e97-99c7-43149c2aaa3f",
+       "label": "A",
+       "content": "NLe 3,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8430f54e-5938-508f-9583-ed1cc27be58f",
+       "label": "B",
+       "content": "NLe 1,500",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "aae85777-c133-5964-8ef5-511f1890a79d",
+       "label": "C",
+       "content": "NLe 0",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ef238707-a5c1-56f8-a0d4-3a25c3def0e7",
+       "label": "D",
+       "content": "NLe 6,000",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "369466bb-9faa-5598-9520-68b4302c3a92",
+     "key": "fa-tb-05",
+     "stem": "The inventory figure in a trial balance is the",
+     "image_url": null,
+     "explanation": "Closing inventory is found by stocktaking after the trial balance and is not yet in the ledger.\n\n**Why the other options are wrong**\n\n- closing inventory: Closing inventory is usually given below the trial balance.\n- average inventory: The trial balance shows ledger balances, not averages.\n- inventory sold during the year: That is the cost of sales.",
+     "position": 5,
+     "options": [
+      {
+       "id": "60672d1f-5483-5761-8f48-47d881eaf39e",
+       "label": "A",
+       "content": "opening inventory",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "dc65a20a-e717-5740-9553-803aa291c3cd",
+       "label": "B",
+       "content": "closing inventory",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "56dc6a5e-d2bd-5c42-aea6-e2be37a95133",
+       "label": "C",
+       "content": "average inventory",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b08a0702-f069-5dfd-9f45-ce6962fc4e36",
+       "label": "D",
+       "content": "inventory sold during the year",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8fa9220c-26dc-5203-ad49-82714e442c28",
+   "topic": "Errors in Accounting",
+   "title": "Errors in Accounting: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on errors in accounting, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 121,
+   "questions": [
+    {
+     "id": "8863a914-0f61-53db-bed3-6cdf4dcbeb3d",
+     "key": "fa-er-01",
+     "stem": "A purchase of a computer was debited to the purchases account. This is an error of",
+     "image_url": null,
+     "explanation": "A non-current asset has been treated as an expense: the wrong class of account.\n\n**Why the other options are wrong**\n\n- commission: Commission is posting to the wrong account of the same class.\n- omission: Omission is leaving a transaction out completely.\n- original entry: Original entry is a wrong amount in the source book.",
+     "position": 1,
+     "options": [
+      {
+       "id": "0739d49f-c494-5fcc-84e3-ebacc60a1d4d",
+       "label": "A",
+       "content": "commission",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "370f27f7-d7c7-5d47-b5a9-0fa557d607e2",
+       "label": "B",
+       "content": "principle",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f17b270b-bc6c-556e-bb54-27364f6b4dfb",
+       "label": "C",
+       "content": "omission",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fbe98a8c-17a9-5906-b1ed-ecfb453f492d",
+       "label": "D",
+       "content": "original entry",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "65b65bd7-7689-5fa0-8ed9-9aa22e206068",
+     "key": "fa-er-02",
+     "stem": "Cash received from Bah was credited to Bai's account. This is an error of",
+     "image_url": null,
+     "explanation": "The correct amount was posted to the wrong personal account of the same class.\n\n**Why the other options are wrong**\n\n- principle: Principle is posting to the wrong class of account.\n- complete reversal: Complete reversal swaps debit and credit.\n- compensating: Compensating errors cancel each other out.",
+     "position": 2,
+     "options": [
+      {
+       "id": "00e1b55d-9bae-57df-8b52-e25be6969c7f",
+       "label": "A",
+       "content": "principle",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ba9b1756-9c46-5195-9334-46eb2f819d0f",
+       "label": "B",
+       "content": "complete reversal",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a74c00c6-d992-507f-8eee-a4029f286436",
+       "label": "C",
+       "content": "commission",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e47c59c1-5a38-514b-888e-b934afc8b3cd",
+       "label": "D",
+       "content": "compensating",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "17793d1c-ca2b-5b6c-9109-ee6cde790eb9",
+     "key": "fa-er-03",
+     "stem": "Which error will cause the trial balance totals to disagree?",
+     "image_url": null,
+     "explanation": "Only one side of the entry was made, so the debits are short.\n\n**Why the other options are wrong**\n\n- a sale omitted from the books entirely: Omission leaves both sides out.\n- a sale of 2,450 recorded as 2,540 in the day book: Original entry errors affect both sides equally.\n- a payment posted to the wrong supplier's account: Commission errors keep debits equal to credits.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5573b94e-0575-5a43-b0e4-00a962413caf",
+       "label": "A",
+       "content": "a sale omitted from the books entirely",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d28b4826-cf89-57b2-808f-4f02768d01a8",
+       "label": "B",
+       "content": "a sale of 2,450 recorded as 2,540 in the day book",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "92225475-cda1-5f8a-8cec-0a611831752d",
+       "label": "C",
+       "content": "a payment posted to the wrong supplier's account",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "477e9b40-9cc6-5e8b-92e4-5249d5f1d248",
+       "label": "D",
+       "content": "wages posted to the cash book but not to the wages account",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "360515a4-889e-5881-a833-b776493bf5c6",
+     "key": "fa-er-04",
+     "stem": "Cash of NLe 1,500 paid to Sesay was debited to cash and credited to Sesay. The correcting entry is",
+     "image_url": null,
+     "explanation": "The wrong entries must be cancelled and the right ones made: twice the amount.\n\n**Why the other options are wrong**\n\n- debit Sesay NLe 1,500, credit cash NLe 1,500: A complete reversal needs twice the amount.\n- debit cash NLe 3,000, credit Sesay NLe 3,000: That doubles the error.\n- debit suspense NLe 1,500, credit cash NLe 1,500: A complete reversal does not affect the suspense account.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c2344ac6-ea44-589e-8ca8-134315282c67",
+       "label": "A",
+       "content": "debit Sesay NLe 3,000, credit cash NLe 3,000",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "719bf7f9-92d6-50e2-b278-96c2e6acc22d",
+       "label": "B",
+       "content": "debit Sesay NLe 1,500, credit cash NLe 1,500",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0ea54e05-32b5-53b0-8c22-356f65fb1ce2",
+       "label": "C",
+       "content": "debit cash NLe 3,000, credit Sesay NLe 3,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "769286fe-ae29-5673-8222-ede527778a1b",
+       "label": "D",
+       "content": "debit suspense NLe 1,500, credit cash NLe 1,500",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8082d6ff-d3df-50bb-92c7-30fe002c4f35",
+     "key": "fa-er-05",
+     "stem": "A credit purchase of NLe 5,600 from Bangura was recorded as NLe 6,500. The correcting entry is",
+     "image_url": null,
+     "explanation": "Both purchases and Bangura were 900 too high (6,500 − 5,600), so both are reduced.\n\n**Why the other options are wrong**\n\n- debit purchases NLe 900, credit Bangura NLe 900: Both accounts are overstated and must be reduced.\n- debit Bangura NLe 6,500, credit purchases NLe 6,500: Only the difference needs correcting.\n- debit suspense NLe 900, credit purchases NLe 900: An original entry error does not go through suspense.",
+     "position": 5,
+     "options": [
+      {
+       "id": "2bfed4de-e90c-5714-a8b9-198d020ef521",
+       "label": "A",
+       "content": "debit purchases NLe 900, credit Bangura NLe 900",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "340e2cb0-0320-52b1-ae45-c0b599f4200c",
+       "label": "B",
+       "content": "debit Bangura NLe 900, credit purchases NLe 900",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d72e030c-62db-5f87-8c1d-73fbc13fe0b7",
+       "label": "C",
+       "content": "debit Bangura NLe 6,500, credit purchases NLe 6,500",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6b7a8ac3-adf8-5f62-bcce-f0feaac4fec5",
+       "label": "D",
+       "content": "debit suspense NLe 900, credit purchases NLe 900",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f70bca6e-c000-50e6-abdb-82b6fa28e4a0",
+   "topic": "The Suspense Account",
+   "title": "The Suspense Account: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the suspense account, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 122,
+   "questions": [
+    {
+     "id": "279a8e7f-e75b-5681-b5b4-a7fc6c653940",
+     "key": "fa-su-01",
+     "stem": "A trial balance shows debits of NLe 89,600 and credits of NLe 90,300. The suspense account will show",
+     "image_url": null,
+     "explanation": "Difference = 90,300 − 89,600 = 700, added to the short (debit) side.\n\n**Why the other options are wrong**\n\n- a credit balance of NLe 700: The debit side is short, so suspense is debited.\n- a debit balance of NLe 179,900: The totals have been added.\n- no balance: A difference must be placed in suspense.",
+     "position": 1,
+     "options": [
+      {
+       "id": "d4ba99b9-b0b6-5198-bbbd-2fdba8b9ec84",
+       "label": "A",
+       "content": "a credit balance of NLe 700",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9d13c711-0b1a-57a5-bc22-7e13c9ff1615",
+       "label": "B",
+       "content": "a debit balance of NLe 179,900",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dd9229b2-dc7c-51be-8a67-fe1e58d5ec82",
+       "label": "C",
+       "content": "a debit balance of NLe 700",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "45fd4e0b-f4ee-5cbf-811e-fc58470ed4f5",
+       "label": "D",
+       "content": "no balance",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d1e264f9-5fcb-5130-b81e-f9c544091ad3",
+     "key": "fa-su-02",
+     "stem": "The sales account was undercast by NLe 200. The correcting entry is",
+     "image_url": null,
+     "explanation": "Sales (a credit balance) needs 200 more; the other side goes to suspense.\n\n**Why the other options are wrong**\n\n- debit sales, credit suspense: Sales must be increased with a credit.\n- debit sales, credit cash: No cash is involved.\n- debit cash, credit sales: The cash book is already correct.",
+     "position": 2,
+     "options": [
+      {
+       "id": "99ebb282-502e-5e11-bc11-de398f686ae3",
+       "label": "A",
+       "content": "debit sales, credit suspense",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c254b9cb-df16-55d5-b351-4d8432bf9158",
+       "label": "B",
+       "content": "debit sales, credit cash",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "79973574-a93e-5b5a-9678-3262166ff06c",
+       "label": "C",
+       "content": "debit cash, credit sales",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "935cbdce-7052-5a64-aa78-11c2cd567efe",
+       "label": "D",
+       "content": "debit suspense, credit sales",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ed6ed547-46e3-50ee-bdb6-6115e04a9c06",
+     "key": "fa-su-03",
+     "stem": "Which error would NOT be corrected through the suspense account?",
+     "image_url": null,
+     "explanation": "Omission affects both debits and credits equally, so it never caused a difference.\n\n**Why the other options are wrong**\n\n- a casting error in the sales account: This affects one account and the trial balance.\n- wages entered in the cash book but not posted: This is a one-sided entry.\n- a balance extracted wrongly into the trial balance: This makes the trial balance disagree.",
+     "position": 3,
+     "options": [
+      {
+       "id": "3dc4e606-e17f-586c-b9a1-21801904157f",
+       "label": "A",
+       "content": "an error of omission",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0c9fdc95-3b41-5e87-8d73-b2463ad64704",
+       "label": "B",
+       "content": "a casting error in the sales account",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "880ea921-7f94-5e11-9a21-575d23ac9d52",
+       "label": "C",
+       "content": "wages entered in the cash book but not posted",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d9f07186-b58c-5f26-afae-7fff91693ffc",
+       "label": "D",
+       "content": "a balance extracted wrongly into the trial balance",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "429ece33-8597-5642-a6b5-69c462682175",
+     "key": "fa-su-04",
+     "stem": "Draft net profit is NLe 25,000. Sales were undercast by NLe 200 and wages of NLe 900 were not charged. Corrected net profit is",
+     "image_url": null,
+     "explanation": "25,000 + 200 − 900 = 24,300.\n\n**Why the other options are wrong**\n\n- NLe 26,100: The wages should be deducted, not added.\n- NLe 25,700: The sales should be added, not deducted, and the wages deducted.\n- NLe 23,900: The sales undercast should be added, not deducted.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4266c9e9-c425-5235-a04f-09e83e7e3f60",
+       "label": "A",
+       "content": "NLe 26,100",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3538ae85-f118-50ab-8d04-967faa816762",
+       "label": "B",
+       "content": "NLe 24,300",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "988856ec-dc23-5c22-9da8-149706c98361",
+       "label": "C",
+       "content": "NLe 25,700",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3bdae58c-fae9-5e78-a04f-69f728e0b0b5",
+       "label": "D",
+       "content": "NLe 23,900",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8fa23483-c02c-59df-b8a0-08c6e8249fe5",
+     "key": "fa-su-05",
+     "stem": "An uncleared debit balance on the suspense account at the year end appears in the",
+     "image_url": null,
+     "explanation": "A temporary debit balance is shown with the current assets until the errors are found.\n\n**Why the other options are wrong**\n\n- income statement as an expense: It is not an expense.\n- statement of financial position as a current liability: A credit balance would be a current liability.\n- trading account: The trading account deals with sales and cost of sales.",
+     "position": 5,
+     "options": [
+      {
+       "id": "db300178-fbfc-57a6-88de-482e26f22f12",
+       "label": "A",
+       "content": "income statement as an expense",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c03e1d45-7eef-5583-a4de-709b9ad6cf3f",
+       "label": "B",
+       "content": "statement of financial position as a current liability",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "52751e20-b70e-58f3-9e5a-b0602d1d157b",
+       "label": "C",
+       "content": "statement of financial position as a current asset",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "611a736c-8826-537d-9950-0c458ed3dbed",
+       "label": "D",
+       "content": "trading account",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f880a226-3882-52d6-acf2-9f98d25f7916",
+   "topic": "Bank Reconciliation",
+   "title": "Bank Reconciliation: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on bank reconciliation, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 123,
+   "questions": [
+    {
+     "id": "d1a686c4-3990-5088-bfa7-026c4e710b48",
+     "key": "fa-br-01",
+     "stem": "Cheques paid out and entered in the cash book but not yet presented to the bank are called",
+     "image_url": null,
+     "explanation": "Unpresented cheques are timing differences shown in the reconciliation statement.\n\n**Why the other options are wrong**\n\n- uncredited lodgements: Uncredited lodgements are money paid in but not yet credited.\n- dishonoured cheques: Dishonoured cheques are cheques the paying bank refused.\n- standing orders: Standing orders are regular payments made by the bank.",
+     "position": 1,
+     "options": [
+      {
+       "id": "b3f5a8c6-1ba2-5380-a03c-b09e35394adf",
+       "label": "A",
+       "content": "uncredited lodgements",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6fe967ee-474a-58d4-9e3a-520b5b6a32b5",
+       "label": "B",
+       "content": "dishonoured cheques",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f8a7cb3e-b7e0-5b08-b9b1-8fd8b69f3b84",
+       "label": "C",
+       "content": "standing orders",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0e6733c4-58e1-5588-8169-73bf20fe585d",
+       "label": "D",
+       "content": "unpresented cheques",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d9a2c47d-bce4-5c53-84f5-1dbead858ed1",
+     "key": "fa-br-02",
+     "stem": "Which item should be entered in the cash book when preparing an adjusted cash book?",
+     "image_url": null,
+     "explanation": "Items the business learns about only from the bank statement are entered in the cash book first.\n\n**Why the other options are wrong**\n\n- unpresented cheques: These are already in the cash book.\n- uncredited lodgements: These are already in the cash book.\n- the bank statement balance: The bank statement balance is the target of the reconciliation.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c7393532-f694-56cb-8244-81f48ab16871",
+       "label": "A",
+       "content": "bank charges shown only on the bank statement",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "cc06b5aa-b3da-573f-9558-f747d0cf71df",
+       "label": "B",
+       "content": "unpresented cheques",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c5117754-dd6f-5fee-a620-43d795ebaf71",
+       "label": "C",
+       "content": "uncredited lodgements",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3ce65c08-be4b-51cb-b1d0-e76ab2cdc72f",
+       "label": "D",
+       "content": "the bank statement balance",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b890c8be-3c17-5bd5-8a5b-f9c6469062d0",
+     "key": "fa-br-03",
+     "stem": "The cash book shows NLe 18,400. Bank charges are NLe 350, a standing order NLe 1,200, a direct credit NLe 2,400 and a dishonoured cheque NLe 1,000. The adjusted balance is",
+     "image_url": null,
+     "explanation": "18,400 + 2,400 − 350 − 1,200 − 1,000 = 18,250.\n\n**Why the other options are wrong**\n\n- NLe 23,350: Charges, standing order and dishonoured cheque must be deducted.\n- NLe 20,800: Only the direct credit has been adjusted.\n- NLe 13,450: The direct credit must be added, not deducted.",
+     "position": 3,
+     "options": [
+      {
+       "id": "fb375c4f-bfa6-54ef-8d35-43446c11d8a3",
+       "label": "A",
+       "content": "NLe 23,350",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1dfcd4b5-2f35-59ca-a998-baa467cce092",
+       "label": "B",
+       "content": "NLe 18,250",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "fb52fc16-b37a-5723-b218-3bfeef16b566",
+       "label": "C",
+       "content": "NLe 20,800",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3d8a73ac-c514-5fee-8c96-eac29219ec73",
+       "label": "D",
+       "content": "NLe 13,450",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cda3473e-5116-5272-8a99-a658be70f835",
+     "key": "fa-br-04",
+     "stem": "Starting from the adjusted cash book balance of NLe 18,250, add unpresented cheques of NLe 4,950 and deduct an uncredited lodgement of NLe 2,600. The bank statement balance is",
+     "image_url": null,
+     "explanation": "18,250 + 4,950 − 2,600 = 20,600.\n\n**Why the other options are wrong**\n\n- NLe 15,900: Unpresented cheques must be added, not deducted.\n- NLe 25,800: The uncredited lodgement must be deducted.\n- NLe 10,700: The signs have been reversed.",
+     "position": 4,
+     "options": [
+      {
+       "id": "035899c6-d14b-5686-aa5a-a7337b56a26f",
+       "label": "A",
+       "content": "NLe 15,900",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6be23771-e0eb-5be4-b918-5e8e17b308f6",
+       "label": "B",
+       "content": "NLe 25,800",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a6dd40f5-50ec-5367-b8a8-27f21fa5d856",
+       "label": "C",
+       "content": "NLe 20,600",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9b423290-b0fa-512c-8796-604a3ba8628d",
+       "label": "D",
+       "content": "NLe 10,700",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f596caa6-cd43-5da7-b06a-9f0dc26ab236",
+     "key": "fa-br-05",
+     "stem": "The bank balance shown in the statement of financial position is the",
+     "image_url": null,
+     "explanation": "The adjusted cash book includes every item the business has paid or received.\n\n**Why the other options are wrong**\n\n- bank statement balance: The bank statement has not caught up with unpresented items.\n- original cash book balance: It omits items such as bank charges.\n- average of the two balances: No averaging is used.",
+     "position": 5,
+     "options": [
+      {
+       "id": "089bca31-ae9d-5908-af51-01d2e131a68d",
+       "label": "A",
+       "content": "bank statement balance",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e45fb6dd-47cd-5604-90cf-5ba484fd80b9",
+       "label": "B",
+       "content": "original cash book balance",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e6e11dfb-e626-517e-8cd2-fbf466540220",
+       "label": "C",
+       "content": "average of the two balances",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "70d1fb99-d6b2-5507-a79b-28f2965d5a5c",
+       "label": "D",
+       "content": "adjusted cash book balance",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c46802b5-392d-541b-80f9-05d9faba9482",
+   "topic": "Final Accounts of Sole Proprietorship",
+   "title": "Final Accounts of Sole Proprietorship: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on final accounts of sole proprietorship, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 124,
+   "questions": [
+    {
+     "id": "1957e2a9-c743-5af9-91d2-43ddcffd834e",
+     "key": "fa-fa-01",
+     "stem": "Opening inventory NLe 18,000; net purchases NLe 93,000; carriage inwards NLe 1,500; closing inventory NLe 20,000. Cost of sales is",
+     "image_url": null,
+     "explanation": "18,000 + 93,000 + 1,500 − 20,000 = 92,500.\n\n**Why the other options are wrong**\n\n- NLe 112,500: Closing inventory has not been deducted.\n- NLe 89,500: Carriage inwards must be added, not deducted.\n- NLe 132,500: Closing inventory has been added instead of deducted.",
+     "position": 1,
+     "options": [
+      {
+       "id": "29b652b8-a64b-5a9d-a864-c2fd765b714e",
+       "label": "A",
+       "content": "NLe 92,500",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d4419fff-55c2-5d2b-91e1-6f7e183d1d34",
+       "label": "B",
+       "content": "NLe 112,500",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9af93fd7-b213-58bd-8a67-d1faff24d1cf",
+       "label": "C",
+       "content": "NLe 89,500",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7fb588bf-eb98-53c3-8fe1-75a037b65e0b",
+       "label": "D",
+       "content": "NLe 132,500",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "61906937-fb53-5135-9e8b-757862e9d324",
+     "key": "fa-fa-02",
+     "stem": "Carriage outwards is shown in the",
+     "image_url": null,
+     "explanation": "Carriage outwards is the cost of delivering goods to customers: a selling expense.\n\n**Why the other options are wrong**\n\n- trading section as part of cost of sales: That is where carriage inwards goes.\n- statement of financial position as a liability: It is an expense, not a liability.\n- trading section as a deduction from sales: Returns inwards are deducted from sales.",
+     "position": 2,
+     "options": [
+      {
+       "id": "7c42e7e5-8dca-5ae5-9ac1-fb063cbe336c",
+       "label": "A",
+       "content": "trading section as part of cost of sales",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a0b9d7c7-3544-5c5e-98d6-57f7729c4576",
+       "label": "B",
+       "content": "profit and loss section as an expense",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "467fd98f-562e-5a0c-9a1d-4f7b47ff438e",
+       "label": "C",
+       "content": "statement of financial position as a liability",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3b14812f-fcd7-5b70-9158-3200103d3c7e",
+       "label": "D",
+       "content": "trading section as a deduction from sales",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6d3330b1-181e-5e9a-824a-049cb36ce3c2",
+     "key": "fa-fa-03",
+     "stem": "Net sales are NLe 158,000 and gross profit is NLe 65,500. Expenses are NLe 41,500 and other income NLe 3,500. Net profit is",
+     "image_url": null,
+     "explanation": "65,500 + 3,500 − 41,500 = 27,500.\n\n**Why the other options are wrong**\n\n- NLe 24,000: Other income must be added.\n- NLe 65,500: That is the gross profit.\n- NLe 116,500: Net sales minus expenses is not net profit.",
+     "position": 3,
+     "options": [
+      {
+       "id": "fd199177-101d-5fe2-b82b-c1ea3f5a8991",
+       "label": "A",
+       "content": "NLe 24,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5fbde39a-2d12-5d08-9fe7-8fcd143427fa",
+       "label": "B",
+       "content": "NLe 65,500",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b96fcbf7-94a6-5f2f-9938-f0346c66bba2",
+       "label": "C",
+       "content": "NLe 27,500",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "928c9d6c-a10b-50dd-bb5b-f659e1513150",
+       "label": "D",
+       "content": "NLe 116,500",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2b68690b-c7ef-5976-8c28-afe6ccb50fb8",
+     "key": "fa-fa-04",
+     "stem": "Current assets are NLe 45,000 and current liabilities NLe 11,500. Working capital is",
+     "image_url": null,
+     "explanation": "Working capital = 45,000 − 11,500 = 33,500.\n\n**Why the other options are wrong**\n\n- NLe 56,500: Current liabilities must be deducted.\n- NLe 11,500: That is the current liabilities.\n- NLe 3,500: That is not the difference between the two figures.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f4d1320b-087a-513b-bbb1-06a4b8cb5767",
+       "label": "A",
+       "content": "NLe 56,500",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1697fca3-a75b-52cb-9925-1864ffc5e582",
+       "label": "B",
+       "content": "NLe 11,500",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "af458d98-db8e-57e6-adfd-82afd2b12611",
+       "label": "C",
+       "content": "NLe 3,500",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dd7aba91-fdbc-5f37-8274-1961d173215d",
+       "label": "D",
+       "content": "NLe 33,500",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7b9355f1-3a54-51a0-b698-fbebf4e2a9f6",
+     "key": "fa-fa-05",
+     "stem": "Drawings by the owner are shown in the",
+     "image_url": null,
+     "explanation": "Closing capital = opening capital + net profit − drawings.\n\n**Why the other options are wrong**\n\n- income statement as an expense: Drawings are not a business expense.\n- trading account as a deduction from purchases: Only goods taken affect purchases, through drawings.\n- statement of financial position as a current liability: Drawings reduce capital; they are not a liability.",
+     "position": 5,
+     "options": [
+      {
+       "id": "8eb976d4-687f-5b38-83b5-ec473c4155b8",
+       "label": "A",
+       "content": "statement of financial position as a deduction from capital",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "74d204de-8b22-5bcf-97d2-a90fcf9b3031",
+       "label": "B",
+       "content": "income statement as an expense",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "983a88cb-4d85-5fe6-86c7-71edc3e7c05c",
+       "label": "C",
+       "content": "trading account as a deduction from purchases",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "32928800-bc92-5992-81db-fa4d89b27cf8",
+       "label": "D",
+       "content": "statement of financial position as a current liability",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "55e09901-c6a9-5330-b341-3f05a6c3fd3f",
+   "topic": "Adjustments to Final Accounts",
+   "title": "Adjustments to Final Accounts: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on adjustments to final accounts, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 125,
+   "questions": [
+    {
+     "id": "2bb2776e-1b8e-50af-ab82-714475a5460b",
+     "key": "fa-ad-01",
+     "stem": "Rent paid during the year was NLe 11,000 and NLe 1,000 is owing at the year end. The rent charged in the income statement is",
+     "image_url": null,
+     "explanation": "Expense = paid + accrued = 11,000 + 1,000 = 12,000.\n\n**Why the other options are wrong**\n\n- NLe 11,000: The amount owing must be added.\n- NLe 10,000: An accrual is added, not deducted.\n- NLe 1,000: That is only the accrual.",
+     "position": 1,
+     "options": [
+      {
+       "id": "9c6b249c-8092-5211-93c3-8d68c3f3203a",
+       "label": "A",
+       "content": "NLe 11,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3f91b04b-5388-5060-8312-776f46158185",
+       "label": "B",
+       "content": "NLe 12,000",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "46bb4d5c-7bc4-5d0f-9684-1fa638913cf2",
+       "label": "C",
+       "content": "NLe 10,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6d57ecc0-a14c-5e5d-b04a-f22bd5315872",
+       "label": "D",
+       "content": "NLe 1,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0c8c9d75-f542-513f-bcf3-2f8e4ac1c495",
+     "key": "fa-ad-02",
+     "stem": "A prepaid expense at the year end is shown in the statement of financial position as",
+     "image_url": null,
+     "explanation": "The business has paid for a benefit it has not yet received.\n\n**Why the other options are wrong**\n\n- a current liability: An accrued expense is a current liability.\n- a non-current asset: Prepayments are short-term.\n- part of capital: Prepayments are not capital.",
+     "position": 2,
+     "options": [
+      {
+       "id": "237d59e0-47cf-508b-b18b-a4ac6dac46bb",
+       "label": "A",
+       "content": "a current liability",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c4927be5-3d81-56f9-b204-58cfe49b91fc",
+       "label": "B",
+       "content": "a non-current asset",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "207bd73c-0092-585e-bb90-992c9c0709ad",
+       "label": "C",
+       "content": "a current asset",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2efc564c-efec-5cd1-890a-37a25e41eb7f",
+       "label": "D",
+       "content": "part of capital",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1eb83d42-562d-574a-ac2d-4ade45448328",
+     "key": "fa-ad-03",
+     "stem": "A machine cost NLe 100,000. Depreciation is 30% a year on the reducing balance. The charge for year 2 is",
+     "image_url": null,
+     "explanation": "Year 1: 30,000, carrying amount 70,000. Year 2: 30% × 70,000 = 21,000.\n\n**Why the other options are wrong**\n\n- NLe 30,000: That is the year 1 charge.\n- NLe 20,000: That is 20% straight line.\n- NLe 49,000: That is the carrying amount after year 2.",
+     "position": 3,
+     "options": [
+      {
+       "id": "71c5eed9-c06c-5325-925f-594d849b636c",
+       "label": "A",
+       "content": "NLe 30,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "98f582c4-0ba5-5426-ac34-21396ceb034b",
+       "label": "B",
+       "content": "NLe 20,000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a4aca4c9-0beb-5c26-a7d4-139338184619",
+       "label": "C",
+       "content": "NLe 49,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7fa83f88-87c0-5e92-9613-1d125f0ae8f6",
+       "label": "D",
+       "content": "NLe 21,000",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "77b1daa9-5bed-5123-a6b9-99b30911072f",
+     "key": "fa-ad-04",
+     "stem": "Receivables are NLe 39,000 after bad debts. A 5% provision is required and the existing provision is NLe 1,500. The charge to the income statement is",
+     "image_url": null,
+     "explanation": "New provision 5% × 39,000 = 1,950; increase = 1,950 − 1,500 = 450.\n\n**Why the other options are wrong**\n\n- NLe 1,950: Only the increase is charged.\n- NLe 1,500: That is the old provision.\n- NLe 3,450: The old provision is deducted, not added.",
+     "position": 4,
+     "options": [
+      {
+       "id": "50af91e8-22e8-59aa-a69d-08ad392461b7",
+       "label": "A",
+       "content": "NLe 450",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c6b6dcde-ee62-5a31-9fac-a16d626fa351",
+       "label": "B",
+       "content": "NLe 1,950",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ce272b64-da3c-5c0d-aca3-83eb13aec6b0",
+       "label": "C",
+       "content": "NLe 1,500",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0ceade0f-d279-572b-805e-569e4f5d3ede",
+       "label": "D",
+       "content": "NLe 3,450",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1fa62671-64ba-5d4d-aefb-e8e278e80d15",
+     "key": "fa-ad-05",
+     "stem": "Under the straight-line method, depreciation each year is calculated as",
+     "image_url": null,
+     "explanation": "Straight line spreads the depreciable amount equally over the asset's useful life.\n\n**Why the other options are wrong**\n\n- a fixed percentage of the carrying amount: That is the reducing-balance method.\n- cost × useful life: That would exceed the cost.\n- residual value ÷ useful life: The depreciable amount is cost less residual value.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f1d3c5e0-b699-5c91-b3dd-9cf7937220ff",
+       "label": "A",
+       "content": "a fixed percentage of the carrying amount",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9316f8ca-43cb-5229-85f9-6126e981c59a",
+       "label": "B",
+       "content": "(cost − residual value) ÷ useful life",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "605a5a7a-ad74-5786-acd1-d3e98048748a",
+       "label": "C",
+       "content": "cost × useful life",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "81535e2d-8186-5aa2-9859-b3218f8ee031",
+       "label": "D",
+       "content": "residual value ÷ useful life",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "051e8650-cf3f-503b-9cca-b8c49f314b52",
+   "topic": "Stock Valuation",
+   "title": "Stock Valuation: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on stock valuation, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 126,
+   "questions": [
+    {
+     "id": "70bc8d93-53e5-560e-a044-dd8894d56a71",
+     "key": "fa-sv-01",
+     "stem": "Under FIFO, closing inventory is valued at",
+     "image_url": null,
+     "explanation": "The oldest goods are assumed sold first, so those left are the most recent purchases.\n\n**Why the other options are wrong**\n\n- the earliest purchase prices: That is LIFO.\n- the average purchase price: That is AVCO.\n- the selling price: Inventory is valued at cost, not selling price.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8c54d60a-a4ac-57f5-851a-26f169bb86e0",
+       "label": "A",
+       "content": "the earliest purchase prices",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c7146575-0fec-547d-b636-e2d66980bcb3",
+       "label": "B",
+       "content": "the average purchase price",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "706f6658-9325-577f-92cf-1a31cd9bbf60",
+       "label": "C",
+       "content": "the latest purchase prices",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ec0f4c72-b620-52a2-acd6-598fcfbbce43",
+       "label": "D",
+       "content": "the selling price",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5ff6cce5-2921-5b35-92b7-2d29b0e954cd",
+     "key": "fa-sv-02",
+     "stem": "When prices are rising, which method gives the highest gross profit?",
+     "image_url": null,
+     "explanation": "FIFO charges older, cheaper costs to cost of sales, so profit is highest.\n\n**Why the other options are wrong**\n\n- LIFO: LIFO gives the lowest profit when prices rise.\n- AVCO: AVCO gives a profit between FIFO and LIFO.\n- all give the same profit: The methods give different closing inventories.",
+     "position": 2,
+     "options": [
+      {
+       "id": "abfe7efa-54fb-5279-914d-ec26eed41128",
+       "label": "A",
+       "content": "LIFO",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7f5ce290-9f97-548d-b1aa-88b46325ce1a",
+       "label": "B",
+       "content": "AVCO",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "df9db411-7350-527f-a554-009da9aa8853",
+       "label": "C",
+       "content": "all give the same profit",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a4a73ea4-9c50-5262-a17e-5207cf789257",
+       "label": "D",
+       "content": "FIFO",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f9fcb634-ac41-5137-8427-25f63628f85c",
+     "key": "fa-sv-03",
+     "stem": "A business holds 50 units at NLe 50 and buys 50 more at NLe 62. Using AVCO, the average cost per unit is",
+     "image_url": null,
+     "explanation": "Total cost = 2,500 + 3,100 = 5,600 for 100 units, so 56 per unit.\n\n**Why the other options are wrong**\n\n- NLe 62: That is the latest price.\n- NLe 50: That is the earliest price.\n- NLe 112: That adds the two prices.",
+     "position": 3,
+     "options": [
+      {
+       "id": "bb00e8fb-421f-5f62-9ef1-036dbd0e67b7",
+       "label": "A",
+       "content": "NLe 56",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1e0a6bf6-9ccb-51b0-a237-0e6370df3999",
+       "label": "B",
+       "content": "NLe 62",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "44de8515-dc11-5dc5-a64d-d578dc6bcf2b",
+       "label": "C",
+       "content": "NLe 50",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5ef01316-83ed-54d9-ad19-60d106cf24b1",
+       "label": "D",
+       "content": "NLe 112",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "af3489ae-3ef7-5119-8f22-8f6b4e100964",
+     "key": "fa-sv-04",
+     "stem": "An item cost NLe 4,000. It can be sold for NLe 3,200 after repairs costing NLe 500. It should be valued at",
+     "image_url": null,
+     "explanation": "NRV = 3,200 − 500 = 2,700, which is below cost, so value = 2,700.\n\n**Why the other options are wrong**\n\n- NLe 4,000: Net realisable value is lower than cost.\n- NLe 3,200: Repair costs must be deducted.\n- NLe 3,700: Selling costs are deducted from the selling price, not from cost.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c0a045cc-68fa-50d7-ae20-33ed8e9c1caa",
+       "label": "A",
+       "content": "NLe 4,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ff1c033b-794a-5938-925b-0796c56e6dc0",
+       "label": "B",
+       "content": "NLe 2,700",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9975ee27-965d-5b24-bb85-6333d8a02292",
+       "label": "C",
+       "content": "NLe 3,200",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "81425daf-8ca6-58a1-a263-b7ed7556571c",
+       "label": "D",
+       "content": "NLe 3,700",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "359304dc-4ba7-51df-8ec5-2c8f07179d9c",
+     "key": "fa-sv-05",
+     "stem": "If closing inventory is overstated, gross profit for the year is",
+     "image_url": null,
+     "explanation": "Higher closing inventory → lower cost of sales → higher gross profit.\n\n**Why the other options are wrong**\n\n- understated: A higher closing inventory lowers cost of sales.\n- unaffected: Closing inventory affects cost of sales.\n- doubled: It changes by the amount of the error, not double.",
+     "position": 5,
+     "options": [
+      {
+       "id": "6c001c39-d243-5ad1-9eba-ddbf26d0b14b",
+       "label": "A",
+       "content": "understated",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6fe58320-2b65-580d-bad8-864557cc28e9",
+       "label": "B",
+       "content": "unaffected",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "12161c76-8e9f-53a6-81dd-84cfc7cc3205",
+       "label": "C",
+       "content": "overstated",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7d5198fa-7e9f-5966-9ae8-97c55e5512b0",
+       "label": "D",
+       "content": "doubled",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5e7f704e-06d1-5aa6-8957-cc610c1a99de",
+   "topic": "Manufacturing Accounts",
+   "title": "Manufacturing Accounts: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on manufacturing accounts, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 127,
+   "questions": [
+    {
+     "id": "ea575c96-73e9-5bde-bc46-41b0eb0dff49",
+     "key": "fa-ma-01",
+     "stem": "Prime cost is",
+     "image_url": null,
+     "explanation": "Prime cost is the total of the direct costs of production.\n\n**Why the other options are wrong**\n\n- direct materials + factory overheads: Factory overheads are added after prime cost.\n- production cost + office expenses: Office expenses go to the profit and loss section.\n- sales − cost of sales: That is gross profit.",
+     "position": 1,
+     "options": [
+      {
+       "id": "c804fd60-a53a-5cd1-8d51-ae8db7474b5f",
+       "label": "A",
+       "content": "direct materials + factory overheads",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "55898c93-cf73-52d6-9ee4-3ce2b2bfa361",
+       "label": "B",
+       "content": "production cost + office expenses",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6a0feda9-ff14-5ce3-ab90-7647bcb636d5",
+       "label": "C",
+       "content": "sales − cost of sales",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e88e2ef3-fd2d-5a1a-8c46-0e7deb21b1af",
+       "label": "D",
+       "content": "direct materials consumed + direct labour + direct expenses",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "da6ded69-a97d-5184-b085-5bc61cade8ca",
+     "key": "fa-ma-02",
+     "stem": "Which of the following is a factory overhead?",
+     "image_url": null,
+     "explanation": "Factory overheads are indirect manufacturing costs.\n\n**Why the other options are wrong**\n\n- wages of machine operators: These are direct labour.\n- raw materials used: These are direct materials.\n- office salaries: These are administration expenses.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8c0a7a57-4284-5088-b5b0-49adf5e30c8b",
+       "label": "A",
+       "content": "depreciation of factory machinery",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b7d71dc5-e06f-5e8a-99f6-3f8f2b1e42d6",
+       "label": "B",
+       "content": "wages of machine operators",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ee5f0d0f-6b3b-559c-a114-b972ea8a413f",
+       "label": "C",
+       "content": "raw materials used",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "11036625-cb3f-591e-b346-87603a9aea84",
+       "label": "D",
+       "content": "office salaries",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ed5c35ec-440d-5f28-95bb-48d3460a31e1",
+     "key": "fa-ma-03",
+     "stem": "Opening raw materials NLe 12,000; purchases NLe 80,000; carriage inwards NLe 2,000; closing raw materials NLe 15,000. Raw materials consumed is",
+     "image_url": null,
+     "explanation": "12,000 + 80,000 + 2,000 − 15,000 = 79,000.\n\n**Why the other options are wrong**\n\n- NLe 94,000: Closing raw materials must be deducted.\n- NLe 75,000: Carriage inwards must be added.\n- NLe 109,000: Closing raw materials must be deducted, not added.",
+     "position": 3,
+     "options": [
+      {
+       "id": "fd21f53e-52a4-5bab-b43b-1773dfef7947",
+       "label": "A",
+       "content": "NLe 94,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "958e2f8e-0f82-538b-ae2a-a8ab9d4a6e5d",
+       "label": "B",
+       "content": "NLe 79,000",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4be49cee-be58-5fc7-b96e-41f14240916f",
+       "label": "C",
+       "content": "NLe 75,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2dba428b-fe15-5fe4-a384-f473bf7c5ed2",
+       "label": "D",
+       "content": "NLe 109,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b6e7601c-d69e-5025-b692-257f1e4649cb",
+     "key": "fa-ma-04",
+     "stem": "Prime cost NLe 127,000; factory overheads NLe 35,000; opening WIP NLe 7,000; closing WIP NLe 9,000. Production cost is",
+     "image_url": null,
+     "explanation": "127,000 + 35,000 + 7,000 − 9,000 = 160,000.\n\n**Why the other options are wrong**\n\n- NLe 162,000: The work in progress adjustment is missing.\n- NLe 178,000: Closing WIP must be deducted, not added.\n- NLe 146,000: Opening WIP must be added, not deducted.",
+     "position": 4,
+     "options": [
+      {
+       "id": "619c1e14-3ea8-5513-a2bd-104de6606d31",
+       "label": "A",
+       "content": "NLe 162,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "579bddda-2da8-5abf-93a5-07d948ba7d71",
+       "label": "B",
+       "content": "NLe 178,000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7120dcac-a1f1-598a-9c8e-d5a8cc02a970",
+       "label": "C",
+       "content": "NLe 160,000",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "67b3118f-ad85-558f-a082-f528d08a9294",
+       "label": "D",
+       "content": "NLe 146,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8b40e601-4f28-574f-a54c-37444af54808",
+     "key": "fa-ma-05",
+     "stem": "The production cost of goods completed is transferred to the",
+     "image_url": null,
+     "explanation": "A manufacturer makes rather than buys its goods, so production cost replaces purchases.\n\n**Why the other options are wrong**\n\n- statement of financial position: It is a cost, not an asset.\n- profit and loss section as an expense: It belongs in cost of sales.\n- capital account: Capital is not involved.",
+     "position": 5,
+     "options": [
+      {
+       "id": "96908d5f-a619-5a47-ba91-dc0d376f25f2",
+       "label": "A",
+       "content": "statement of financial position",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f4f530d2-c3f2-5155-94e3-f438651242ed",
+       "label": "B",
+       "content": "profit and loss section as an expense",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9e9ff843-8cbe-5e62-9268-70f95d3c2d5b",
+       "label": "C",
+       "content": "capital account",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a94f6d22-24aa-5f26-bb97-1a3c5ce1d903",
+       "label": "D",
+       "content": "trading account, in place of purchases",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "b10eb0c72776"
+}

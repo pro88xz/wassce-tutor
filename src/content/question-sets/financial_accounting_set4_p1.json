@@ -1,0 +1,608 @@
+{
+ "name": "financial_accounting_set4_p1",
+ "label": "Financial Accounting: set 4 (company accounts, public sector accounting, ICT in accounting)",
+ "subject_slug": "financial-accounting",
+ "papers": [
+  {
+   "id": "fed73daf-17b2-5d56-a812-31c0e39f779f",
+   "topic": "Company Accounts",
+   "title": "Company Accounts: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on company accounts, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 160,
+   "questions": [
+    {
+     "id": "4f1f51f2-2cc2-5aa0-a65d-703769ab33b4",
+     "key": "fa-cp-01",
+     "stem": "Debenture holders of a company are its",
+     "image_url": null,
+     "explanation": "Debentures are loans to the company, so debenture holders are creditors.\n\n**Why the other options are wrong**\n\n- owners: Shareholders are the owners.\n- directors: Directors manage the company.\n- auditors: Auditors examine the accounts.",
+     "position": 1,
+     "options": [
+      {
+       "id": "081378de-458b-5bc8-a48d-a01b49e43769",
+       "label": "A",
+       "content": "creditors",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "55acee97-e675-5792-9205-acb8fd8fe573",
+       "label": "B",
+       "content": "owners",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8725e6ff-036b-50fa-9e2f-b2bc8588b553",
+       "label": "C",
+       "content": "directors",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f86f141a-3623-5ce9-985b-cb5b0e316647",
+       "label": "D",
+       "content": "auditors",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cbd20f77-48c3-5c6a-9201-e2f8f9872dc4",
+     "key": "fa-cp-02",
+     "stem": "100,000 ordinary shares of NLe 1 are issued at NLe 1.50 each. The share premium is",
+     "image_url": null,
+     "explanation": "Premium = 100,000 × (1.50 − 1.00) = 50,000.\n\n**Why the other options are wrong**\n\n- NLe 150,000: That is the total cash received.\n- NLe 100,000: That is the nominal share capital.\n- NLe 1.50: That is the issue price per share.",
+     "position": 2,
+     "options": [
+      {
+       "id": "5955784f-ef4b-5b64-a261-b9dedc9ccceb",
+       "label": "A",
+       "content": "NLe 150,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "17ceb1bf-3c84-5585-9770-36ab55f6181c",
+       "label": "B",
+       "content": "NLe 50,000",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "73d403e2-1545-5fea-b20c-c43fe5ab1277",
+       "label": "C",
+       "content": "NLe 100,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "898cadeb-1916-526d-a15b-9218def8fe48",
+       "label": "D",
+       "content": "NLe 1.50",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8ff91231-0506-5a5c-879f-3abf62399153",
+     "key": "fa-cp-03",
+     "stem": "Which of the following is a capital reserve?",
+     "image_url": null,
+     "explanation": "Capital reserves, such as share premium, cannot normally be paid out as dividends.\n\n**Why the other options are wrong**\n\n- general reserve: The general reserve is a revenue reserve.\n- retained earnings: Retained earnings are a revenue reserve.\n- debentures: Debentures are a liability, not a reserve.",
+     "position": 3,
+     "options": [
+      {
+       "id": "333ee895-72ff-54ec-b862-a6a8c55258dc",
+       "label": "A",
+       "content": "general reserve",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "56ec4e1c-6836-5abb-bd32-0f5e43c896d1",
+       "label": "B",
+       "content": "retained earnings",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c4c85865-0f28-520a-ae95-7ee8ea14aaf2",
+       "label": "C",
+       "content": "share premium",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "20d06fb4-40e0-5144-b9b9-8f4212fe182f",
+       "label": "D",
+       "content": "debentures",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "445ecce6-5f3d-5497-b6b1-a5a6bd70d906",
+     "key": "fa-cp-04",
+     "stem": "Retained earnings b/f NLe 30,000; profit after tax NLe 67,500; dividends NLe 24,000; transfer to general reserve NLe 15,000. Retained earnings c/f are",
+     "image_url": null,
+     "explanation": "30,000 + 67,500 − 24,000 − 15,000 = 58,500.\n\n**Why the other options are wrong**\n\n- NLe 97,500: Dividends and the transfer must be deducted.\n- NLe 73,500: The transfer to reserve must be deducted.\n- NLe 82,500: Dividends must be deducted.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b3821660-359c-5183-a11c-a31f76862fba",
+       "label": "A",
+       "content": "NLe 97,500",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "053ffbde-c6e2-5adc-8ec9-8fdc62911277",
+       "label": "B",
+       "content": "NLe 73,500",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "82e5400f-ee0c-50aa-be44-df7734b6428f",
+       "label": "C",
+       "content": "NLe 82,500",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "114c7db0-35aa-5b4d-919c-8140543ac5aa",
+       "label": "D",
+       "content": "NLe 58,500",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "14f1ec39-5b5c-59e5-93c2-17f0e0857d20",
+     "key": "fa-cp-05",
+     "stem": "Debenture interest is shown in a company's",
+     "image_url": null,
+     "explanation": "Debenture interest must be paid whether or not there is a profit, so it is an expense.\n\n**Why the other options are wrong**\n\n- statement of changes in equity as a dividend: It is interest on a loan, not a dividend.\n- statement of financial position as equity: Debentures are a liability.\n- appropriation of retained earnings: Interest is charged before profit.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f1396b3b-f108-5af6-b408-67ffaf97c6a7",
+       "label": "A",
+       "content": "income statement as an expense",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "bd88aa57-d13f-5d39-add9-69c82fe88ad0",
+       "label": "B",
+       "content": "statement of changes in equity as a dividend",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7818450f-8e8e-53a4-9627-658265dec56b",
+       "label": "C",
+       "content": "statement of financial position as equity",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "44e0a606-f393-5d0b-a944-523fd70c35ce",
+       "label": "D",
+       "content": "appropriation of retained earnings",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a3881482-5a74-5cf0-97a1-923d2b52260b",
+   "topic": "Public Sector Accounting",
+   "title": "Public Sector Accounting: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on public sector accounting, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 161,
+   "questions": [
+    {
+     "id": "428df4a4-6f79-55df-959d-deb7c3da9378",
+     "key": "fa-ps-01",
+     "stem": "The main aim of public sector accounting is to",
+     "image_url": null,
+     "explanation": "Public sector accounting provides accountability and stewardship of public money.\n\n**Why the other options are wrong**\n\n- maximise the government's profit: Government does not aim to make a profit.\n- pay dividends to citizens: Governments do not pay dividends.\n- value the shares of the government: Government has no share capital.",
+     "position": 1,
+     "options": [
+      {
+       "id": "871a8c04-7ceb-52d0-a021-843dc7ab9143",
+       "label": "A",
+       "content": "maximise the government's profit",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4479462e-0198-5147-9867-17fba0751e76",
+       "label": "B",
+       "content": "show that public funds were raised and spent according to law",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e2df72e5-817a-5551-8bc7-70efce67cca6",
+       "label": "C",
+       "content": "pay dividends to citizens",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "909f2e23-f0d9-5c69-a8b5-616892612045",
+       "label": "D",
+       "content": "value the shares of the government",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ed48156f-a140-5709-9cb5-bba74d16aec2",
+     "key": "fa-ps-02",
+     "stem": "All revenues of the Government of Sierra Leone are paid into the",
+     "image_url": null,
+     "explanation": "The 1991 Constitution establishes the Consolidated Revenue Fund for public revenue.\n\n**Why the other options are wrong**\n\n- Bank of England: Sierra Leone's government banker is the Bank of Sierra Leone.\n- National Revenue Authority's own account: The NRA collects revenue but pays it into the Fund.\n- Public Accounts Committee: The PAC is a committee of Parliament.",
+     "position": 2,
+     "options": [
+      {
+       "id": "b4857071-0ec4-5cb4-aced-dd05557764b5",
+       "label": "A",
+       "content": "Bank of England",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f8bc40e8-1783-5a01-a9ff-f97883a826f0",
+       "label": "B",
+       "content": "National Revenue Authority's own account",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ef40e99e-ec6d-5f60-9f20-3fd4a7decdd6",
+       "label": "C",
+       "content": "Consolidated Revenue Fund",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "21d6bbca-e314-5da2-9a17-ea47f399b17e",
+       "label": "D",
+       "content": "Public Accounts Committee",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "545ef6e9-cc42-5a47-88e6-712add45f0ac",
+     "key": "fa-ps-03",
+     "stem": "Building a new hospital is an example of",
+     "image_url": null,
+     "explanation": "Capital expenditure creates long-lasting assets.\n\n**Why the other options are wrong**\n\n- recurrent expenditure: Recurrent expenditure covers running costs such as salaries.\n- revenue receipts: Spending is not a receipt.\n- contingent liability: A hospital project is actual spending.",
+     "position": 3,
+     "options": [
+      {
+       "id": "3d2058a6-57dc-50d7-9b2a-dab991cc124d",
+       "label": "A",
+       "content": "recurrent expenditure",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bbf6f100-6ec6-5b30-a7d0-75a547f31953",
+       "label": "B",
+       "content": "revenue receipts",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c636ddfe-08ba-50af-b4e1-81ef6cc0661a",
+       "label": "C",
+       "content": "contingent liability",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3e18f092-30da-5346-9fcc-c69b84666822",
+       "label": "D",
+       "content": "capital (development) expenditure",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ce1047fa-533f-51c5-90e1-2a50e87cf8cc",
+     "key": "fa-ps-04",
+     "stem": "The law passed by Parliament approving the government's annual spending is the",
+     "image_url": null,
+     "explanation": "The Appropriation Act authorises withdrawals from the Consolidated Revenue Fund.\n\n**Why the other options are wrong**\n\n- Companies Act: The Companies Act governs companies.\n- Partnership Act: The Partnership Act governs partnerships.\n- Finance Act: A Finance Act deals mainly with taxes.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ae31c3f7-34cd-53e2-8931-7b5e1f72de80",
+       "label": "A",
+       "content": "Appropriation Act",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b08deb03-a330-5d41-9ac4-fc1a29987128",
+       "label": "B",
+       "content": "Companies Act",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9abe819b-c103-5b46-90e8-de4e8252ddfe",
+       "label": "C",
+       "content": "Partnership Act",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "97dcd2d3-444d-59d8-95f3-dd12fd886e71",
+       "label": "D",
+       "content": "Finance Act",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8fe58589-2ed5-597e-9246-e8696094bce8",
+     "key": "fa-ps-05",
+     "stem": "The accounts of government ministries in Sierra Leone are audited by the",
+     "image_url": null,
+     "explanation": "The Auditor-General audits public accounts and reports to Parliament.\n\n**Why the other options are wrong**\n\n- Accountant-General's Department: The Accountant-General keeps the accounts but does not audit them.\n- National Revenue Authority: The NRA collects revenue.\n- Bank of Sierra Leone: The central bank is the government's banker.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d7fdd3b2-c3c6-50d6-b02f-60689d525afd",
+       "label": "A",
+       "content": "Accountant-General's Department",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3407e394-a5f3-5b92-8872-6c253c0bef94",
+       "label": "B",
+       "content": "Audit Service Sierra Leone, headed by the Auditor-General",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2c6910a9-2b24-59ca-b373-517645b4eab5",
+       "label": "C",
+       "content": "National Revenue Authority",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5f2858fd-601e-571a-8584-3df03016ab0c",
+       "label": "D",
+       "content": "Bank of Sierra Leone",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "4db22f56-090b-5108-b523-81a5083d5d0e",
+   "topic": "ICT in Accounting",
+   "title": "ICT in Accounting: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on ict in accounting, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 162,
+   "questions": [
+    {
+     "id": "7c64faaf-f953-5df0-bebf-b6134cba784b",
+     "key": "fa-ic-01",
+     "stem": "Which of the following is an accounting software package?",
+     "image_url": null,
+     "explanation": "QuickBooks, Sage and Tally are accounting packages.\n\n**Why the other options are wrong**\n\n- PowerPoint: PowerPoint is presentation software.\n- Google Chrome: Chrome is a web browser.\n- WhatsApp: WhatsApp is a messaging app.",
+     "position": 1,
+     "options": [
+      {
+       "id": "69aac744-f376-5d02-a0ce-77fd1c30b492",
+       "label": "A",
+       "content": "PowerPoint",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "aac1bc8f-1dbb-5266-a6b4-865e92c1a668",
+       "label": "B",
+       "content": "Google Chrome",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b09b13a1-78c1-5dac-97da-c846c4f6a1ee",
+       "label": "C",
+       "content": "QuickBooks",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "82d9f92d-28f4-5b72-bc2e-07f0a2c349a7",
+       "label": "D",
+       "content": "WhatsApp",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d368ac77-8758-5e65-897c-71b6663e59f1",
+     "key": "fa-ic-02",
+     "stem": "A major advantage of computerised accounting is",
+     "image_url": null,
+     "explanation": "Software posts entries and calculates totals quickly and accurately.\n\n**Why the other options are wrong**\n\n- no need for electricity: Computers need reliable power.\n- no need for staff training: Staff must be trained.\n- no possibility of input errors: Wrong data still gives wrong results.",
+     "position": 2,
+     "options": [
+      {
+       "id": "19f13beb-8439-559d-9362-bd528c425355",
+       "label": "A",
+       "content": "no need for electricity",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "48027e32-950d-5926-bf8f-47fe3ccb1a18",
+       "label": "B",
+       "content": "no need for staff training",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b1236f54-3beb-598a-9549-1dc20207e040",
+       "label": "C",
+       "content": "no possibility of input errors",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "291b9e5a-e38e-5b08-bda9-c59d51d3215a",
+       "label": "D",
+       "content": "speed and accuracy of processing",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9f837dc6-2221-50d8-a261-6b39e71b0601",
+     "key": "fa-ic-03",
+     "stem": "A record of who entered or changed each transaction, and when, is called",
+     "image_url": null,
+     "explanation": "The audit trail lets every figure be traced to its source and user.\n\n**Why the other options are wrong**\n\n- a backup: A backup is a copy of the data.\n- a password: A password controls access.\n- a spreadsheet: A spreadsheet is a tool for calculations.",
+     "position": 3,
+     "options": [
+      {
+       "id": "541a1f9f-0559-5a36-8524-0f6772395fa5",
+       "label": "A",
+       "content": "an audit trail",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "75d50202-8c83-51fe-b31c-9c7a575f1c70",
+       "label": "B",
+       "content": "a backup",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3ae6d48f-e594-5010-ba96-f0876a2e6b2e",
+       "label": "C",
+       "content": "a password",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2151884f-f645-5acb-9a39-31ed8d9b22bf",
+       "label": "D",
+       "content": "a spreadsheet",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d8d3ffc9-8708-5a58-b8f9-9cb9117e0665",
+     "key": "fa-ic-04",
+     "stem": "In a spreadsheet, the formula =SUM(B2:B10)",
+     "image_url": null,
+     "explanation": "SUM adds every value in the range.\n\n**Why the other options are wrong**\n\n- multiplies cells B2 and B10: SUM adds a range.\n- finds the average of cells B2 to B10: AVERAGE would find the mean.\n- subtracts B10 from B2: Subtraction would use B2-B10.",
+     "position": 4,
+     "options": [
+      {
+       "id": "42ad7628-6134-5727-9ae6-9806df538ccc",
+       "label": "A",
+       "content": "multiplies cells B2 and B10",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e0831ac9-d08a-5fe4-a10e-b8688e334f16",
+       "label": "B",
+       "content": "adds the values in cells B2 to B10",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5f0fdd94-aeef-5010-a0c6-6feeaa913c78",
+       "label": "C",
+       "content": "finds the average of cells B2 to B10",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2e0d99bc-e5ba-557f-a994-880011822779",
+       "label": "D",
+       "content": "subtracts B10 from B2",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e3a15d13-e98a-5e2f-bc59-9dddd0b14120",
+     "key": "fa-ic-05",
+     "stem": "The best protection against losing accounting data when a computer is stolen is",
+     "image_url": null,
+     "explanation": "Backups stored elsewhere let the data be restored after theft or damage.\n\n**Why the other options are wrong**\n\n- using a longer password: A password does not recover lost data.\n- printing the trial balance once a year: This keeps very little of the data.\n- installing a faster processor: Speed does not protect data.",
+     "position": 5,
+     "options": [
+      {
+       "id": "c3a7deb4-fe35-51eb-8115-3fc3e1f6cf5a",
+       "label": "A",
+       "content": "using a longer password",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d7f5a4a6-622b-5b64-aae4-ac51ebdb577d",
+       "label": "B",
+       "content": "printing the trial balance once a year",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6b6e40af-174c-50db-bce7-bc4caf8b4878",
+       "label": "C",
+       "content": "keeping regular backups off site or in the cloud",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "945705cd-84fb-59a1-9cd6-9a32e8aabb50",
+       "label": "D",
+       "content": "installing a faster processor",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "4773ae8c551e"
+}

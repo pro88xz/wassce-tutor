@@ -1,0 +1,1608 @@
+{
+ "name": "financial_accounting_set3_p1",
+ "label": "Financial Accounting: set 3 (control, departmental, branch, incomplete records, partnerships)",
+ "subject_slug": "financial-accounting",
+ "papers": [
+  {
+   "id": "bdb021e1-eaa5-578c-a40b-854cf6848fae",
+   "topic": "Control Accounts",
+   "title": "Control Accounts: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on control accounts, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 140,
+   "questions": [
+    {
+     "id": "11281c56-f02f-5536-89be-b31a8772c90d",
+     "key": "fa-ct-01",
+     "stem": "The credit sales figure in a sales ledger control account is taken from the",
+     "image_url": null,
+     "explanation": "Control accounts are written up from totals in the books of original entry.\n\n**Why the other options are wrong**\n\n- cash book: The cash book gives receipts, not credit sales.\n- purchases day book: That gives credit purchases.\n- returns inwards book: That gives returns inwards.",
+     "position": 1,
+     "options": [
+      {
+       "id": "9ece795d-21c2-54e8-a08d-99f56e188265",
+       "label": "A",
+       "content": "sales day book",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c5b832f5-2177-5ce8-888d-4ea228a92659",
+       "label": "B",
+       "content": "cash book",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d9a5660d-ad61-5924-9119-f5561bab701d",
+       "label": "C",
+       "content": "purchases day book",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8f795dcc-0650-5c4b-bbb5-175703125bdd",
+       "label": "D",
+       "content": "returns inwards book",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ffe48ca5-1dcd-50b0-af26-62a0f6d72556",
+     "key": "fa-ct-02",
+     "stem": "Which item appears on the credit side of a sales ledger control account?",
+     "image_url": null,
+     "explanation": "Discount allowed reduces what customers owe, so it is credited.\n\n**Why the other options are wrong**\n\n- credit sales: Credit sales are a debit.\n- dishonoured cheques: Dishonoured cheques are a debit: the customer owes again.\n- discount received: Discount received belongs in the purchases ledger control account.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c280c903-71a4-5524-9255-b8e85b75631f",
+       "label": "A",
+       "content": "credit sales",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dade7332-4ba2-54c4-96cc-9e36f81daa16",
+       "label": "B",
+       "content": "discount allowed",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f826b0a2-ff0f-5555-acf8-9abcf6c8d1ba",
+       "label": "C",
+       "content": "dishonoured cheques",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "29c2bf3f-651c-5534-b6fa-8708670dc254",
+       "label": "D",
+       "content": "discount received",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "877a8702-f058-5ee9-a252-e46f5615ed29",
+     "key": "fa-ct-03",
+     "stem": "Debits in a sales ledger control account total NLe 166,800 and credits before the balance total NLe 107,800. The closing balance is",
+     "image_url": null,
+     "explanation": "166,800 − 107,800 = 59,000, a debit balance: total owed by customers.\n\n**Why the other options are wrong**\n\n- a credit balance of NLe 59,000: The debit side is larger.\n- a debit balance of NLe 274,600: The sides have been added.\n- a debit balance of NLe 107,800: That is the credit total.",
+     "position": 3,
+     "options": [
+      {
+       "id": "fffdc6bb-f493-5e59-a81e-1a7fd350d0d1",
+       "label": "A",
+       "content": "a credit balance of NLe 59,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "219536b6-a3ac-5521-abae-091523f9135f",
+       "label": "B",
+       "content": "a debit balance of NLe 274,600",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0db5f66d-a1dd-5511-afc6-306ea8304114",
+       "label": "C",
+       "content": "a debit balance of NLe 59,000",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0cc55414-d51e-5a23-9d3a-fb85f8683480",
+       "label": "D",
+       "content": "a debit balance of NLe 107,800",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2804195c-5b62-5e41-934b-30ab7f93e663",
+     "key": "fa-ct-04",
+     "stem": "A set-off of NLe 2,000 between the sales and purchases ledgers is recorded in the control accounts by",
+     "image_url": null,
+     "explanation": "The amount owed to the supplier (credit balance) falls with a debit; the amount owed by the customer (debit balance) falls with a credit.\n\n**Why the other options are wrong**\n\n- debiting sales ledger control and crediting purchases ledger control: That reverses the entry.\n- debiting both control accounts: A set-off reduces both balances: one debit and one credit.\n- crediting both control accounts: A set-off reduces both balances: one debit and one credit.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f6ce327c-fd4b-5d83-84be-c9b58df28265",
+       "label": "A",
+       "content": "debiting sales ledger control and crediting purchases ledger control",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "033c55ae-8718-5502-ad2c-7577d2daacd4",
+       "label": "B",
+       "content": "debiting both control accounts",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f11ec05b-b084-594a-8755-c05070290343",
+       "label": "C",
+       "content": "crediting both control accounts",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "864b490b-0176-5c61-80f9-ef8b152f0e96",
+       "label": "D",
+       "content": "debiting purchases ledger control and crediting sales ledger control",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "784062fe-cb2c-5115-b2a2-16b3eae4df34",
+     "key": "fa-ct-05",
+     "stem": "Which item is NOT entered in a sales ledger control account?",
+     "image_url": null,
+     "explanation": "Cash sales never pass through a customer's personal account.\n\n**Why the other options are wrong**\n\n- returns inwards: Returns inwards reduce customers' balances.\n- bad debts written off: Bad debts reduce customers' balances.\n- cash received from customers: Receipts reduce customers' balances.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9c842419-e7ed-5abf-8502-d3387a0c2916",
+       "label": "A",
+       "content": "cash sales",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "264c5f44-b122-52e1-9014-7ec5ad2436ee",
+       "label": "B",
+       "content": "returns inwards",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b266d5ca-4a13-5545-8216-e85431e83a08",
+       "label": "C",
+       "content": "bad debts written off",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "81d0d46f-4b0f-54fb-89af-5276a62967d2",
+       "label": "D",
+       "content": "cash received from customers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "80d09b16-9fb1-5c4d-9bf6-69a778e224c9",
+   "topic": "Departmental Accounts",
+   "title": "Departmental Accounts: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on departmental accounts, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 141,
+   "questions": [
+    {
+     "id": "a2ed0cc9-0d17-5e78-a9ad-bc515cf37edc",
+     "key": "fa-dp-01",
+     "stem": "The most suitable basis for apportioning rent between departments is",
+     "image_url": null,
+     "explanation": "Rent is paid for space, so floor area is the fairest basis.\n\n**Why the other options are wrong**\n\n- sales: Sales suit costs such as advertising.\n- number of employees: Staff numbers suit canteen costs.\n- value of equipment: Equipment value suits depreciation and insurance of equipment.",
+     "position": 1,
+     "options": [
+      {
+       "id": "43bc00bd-36cc-5d05-8fcf-f916d090bd40",
+       "label": "A",
+       "content": "sales",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e7949d28-2fa9-5c85-8361-72136fd64902",
+       "label": "B",
+       "content": "floor area",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "241cf362-3282-55fb-873d-69cc62edb94e",
+       "label": "C",
+       "content": "number of employees",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c2bbac3a-f8bc-5402-a622-2b7fd7e4795f",
+       "label": "D",
+       "content": "value of equipment",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "60f01551-92f4-5e28-8396-6ae148624e19",
+     "key": "fa-dp-02",
+     "stem": "Rent of NLe 36,000 is shared by floor area between departments occupying 300, 200 and 100 square metres. The largest department bears",
+     "image_url": null,
+     "explanation": "300 ÷ 600 × 36,000 = 18,000.\n\n**Why the other options are wrong**\n\n- NLe 12,000: That is the share of the 200 square-metre department.\n- NLe 12,000 each: The rent is shared by area, not equally.\n- NLe 6,000: That is the share of the smallest department.",
+     "position": 2,
+     "options": [
+      {
+       "id": "83cb2790-5b31-53bc-bc07-9ac6ee811004",
+       "label": "A",
+       "content": "NLe 12,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "eb52bb81-aa6a-58df-9f9e-6423bc55a8dc",
+       "label": "B",
+       "content": "NLe 12,000 each",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7619999f-4cd4-5318-9ad2-d6e159f9c0f0",
+       "label": "C",
+       "content": "NLe 18,000",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "53bcd950-dba9-537d-bf08-855ce3429327",
+       "label": "D",
+       "content": "NLe 6,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eb885757-1daa-5524-950d-9f1b7f88d09b",
+     "key": "fa-dp-03",
+     "stem": "Advertising of NLe 10,000 is apportioned on sales of NLe 120,000 and NLe 180,000. The first department bears",
+     "image_url": null,
+     "explanation": "Sales ratio 120 : 180 = 2 : 3; 2/5 × 10,000 = 4,000.\n\n**Why the other options are wrong**\n\n- NLe 6,000: That is the second department's share.\n- NLe 5,000: The cost is shared by sales, not equally.\n- NLe 1,200: That is not the correct proportion.",
+     "position": 3,
+     "options": [
+      {
+       "id": "9ad1442f-4878-51a9-89ac-95930b7443d1",
+       "label": "A",
+       "content": "NLe 6,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7c3c9fe0-71e0-57b7-8aad-d90252ef7611",
+       "label": "B",
+       "content": "NLe 5,000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "50c6da4a-90aa-557d-8b7e-72a4ac0c34f2",
+       "label": "C",
+       "content": "NLe 1,200",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "aaf72208-0057-5384-b832-a36242067508",
+       "label": "D",
+       "content": "NLe 4,000",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "858a796c-e97c-5315-ac04-4b05a2ae6a70",
+     "key": "fa-dp-04",
+     "stem": "Charging the wages of a department's own sales staff wholly to that department is called",
+     "image_url": null,
+     "explanation": "Direct expenses are allocated to the department that caused them.\n\n**Why the other options are wrong**\n\n- apportionment: Apportionment shares a cost between departments.\n- absorption: That is a costing term for charging overheads to products.\n- appropriation: Appropriation shares profit, as in partnerships.",
+     "position": 4,
+     "options": [
+      {
+       "id": "cfb6998d-7724-50bf-b587-149effd1efd6",
+       "label": "A",
+       "content": "allocation",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5ce5bf06-adeb-5ac0-8313-e646cf5a6e27",
+       "label": "B",
+       "content": "apportionment",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4cbbae83-899c-52c7-ae8d-2fd38e2ca495",
+       "label": "C",
+       "content": "absorption",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fbd0caee-2a91-5e57-bac8-8191f4181b66",
+       "label": "D",
+       "content": "appropriation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bd519f0b-558c-5146-b894-97868347d62e",
+     "key": "fa-dp-05",
+     "stem": "Department X had sales of NLe 120,000 and gross profit of NLe 53,000. Its gross profit margin is about",
+     "image_url": null,
+     "explanation": "53,000 ÷ 120,000 × 100% ≈ 44.2%.\n\n**Why the other options are wrong**\n\n- 53.0%: The margin divides gross profit by sales, not by 100,000.\n- 79.1%: That divides gross profit by cost of sales.\n- 226.4%: That divides sales by gross profit.",
+     "position": 5,
+     "options": [
+      {
+       "id": "34bb4161-c77b-551d-9fa1-7414fbb6e258",
+       "label": "A",
+       "content": "53.0%",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "47b2fd7f-e116-5e93-8e7a-7b8bcff179dd",
+       "label": "B",
+       "content": "44.2%",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ef4cba49-b6ae-5f54-8ae0-41157ab823ac",
+       "label": "C",
+       "content": "79.1%",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "101f5e00-cd25-58ff-ba8e-435e5b187053",
+       "label": "D",
+       "content": "226.4%",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "61e8bc68-a245-564e-af9b-158ccda4c2e4",
+   "topic": "Branch Accounts",
+   "title": "Branch Accounts: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on branch accounts, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 142,
+   "questions": [
+    {
+     "id": "1645ee15-d002-5cc9-9f5b-7b4627892d60",
+     "key": "fa-bn-01",
+     "stem": "A branch that receives its goods from head office and sends all its cash to head office is",
+     "image_url": null,
+     "explanation": "Head office supplies and controls a dependent branch and keeps its accounts.\n\n**Why the other options are wrong**\n\n- an independent branch: An independent branch keeps its own books.\n- a subsidiary company: A subsidiary is a separate company.\n- a joint venture: A joint venture is a temporary partnership.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a5526d23-d504-5b04-863b-c37c31ff02ed",
+       "label": "A",
+       "content": "an independent branch",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "97ef82c3-7b30-5140-8298-ef125f46d96d",
+       "label": "B",
+       "content": "a subsidiary company",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b32f1519-d095-5264-88bb-7d57c50517bd",
+       "label": "C",
+       "content": "a dependent branch",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "70e87696-80d4-5efa-b91f-350e1bd98ef2",
+       "label": "D",
+       "content": "a joint venture",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f4f7b2c1-8b3c-56c7-a6be-aaabfbf35214",
+     "key": "fa-bn-02",
+     "stem": "In a branch account kept by head office, goods sent to the branch at cost are",
+     "image_url": null,
+     "explanation": "Everything head office sends or pays for the branch is debited to the branch account.\n\n**Why the other options are wrong**\n\n- credited to the branch account: Goods sent increase what the branch is accountable for.\n- debited to sales: Goods sent to a branch are not sales.\n- credited to cash: No cash is paid.",
+     "position": 2,
+     "options": [
+      {
+       "id": "782093cb-bb9d-5d5e-b5cb-6a83c657db6b",
+       "label": "A",
+       "content": "credited to the branch account",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9b8dd18b-f350-5db7-a611-a6da656201ad",
+       "label": "B",
+       "content": "debited to sales",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f334256e-d5d4-5592-b67a-fe9a9f3f95d1",
+       "label": "C",
+       "content": "credited to cash",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "58d769c4-9699-5aa2-a89e-3ec5248dd4ff",
+       "label": "D",
+       "content": "debited to the branch account",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "28a62cc5-4f12-54bc-906c-02f6f66ca865",
+     "key": "fa-bn-03",
+     "stem": "Opening branch receivables NLe 3,000; cash from receivables NLe 25,000; closing receivables NLe 5,000. Branch credit sales are",
+     "image_url": null,
+     "explanation": "25,000 + 5,000 − 3,000 = 27,000.\n\n**Why the other options are wrong**\n\n- NLe 23,000: Closing receivables must be added and opening deducted.\n- NLe 33,000: Opening receivables must be deducted, not added.\n- NLe 25,000: That is only the cash collected.",
+     "position": 3,
+     "options": [
+      {
+       "id": "3aef972a-b02b-5838-a745-aa0859c9e2ac",
+       "label": "A",
+       "content": "NLe 27,000",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "f863abd5-0fdb-5ef6-9c3b-8cb235096a22",
+       "label": "B",
+       "content": "NLe 23,000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2acaf927-0cce-5e6c-baf3-aa4e1a487c2e",
+       "label": "C",
+       "content": "NLe 33,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fcc22518-5bf4-5ddd-8e58-6218e3f6ce94",
+       "label": "D",
+       "content": "NLe 25,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4e7493fb-914a-56fc-b5e3-03fc7cc6781a",
+     "key": "fa-bn-04",
+     "stem": "Goods are sent to a branch at cost plus 25%. The loading is what fraction of the selling price?",
+     "image_url": null,
+     "explanation": "Cost 100, selling price 125; loading 25 ÷ 125 = 1/5.\n\n**Why the other options are wrong**\n\n- one-quarter: 25% is the mark-up on cost, not on selling price.\n- one-third: That would be a 50% mark-up.\n- one-half: That would be a 100% mark-up.",
+     "position": 4,
+     "options": [
+      {
+       "id": "806b0db0-c2e7-5d4b-942e-455fa382ef53",
+       "label": "A",
+       "content": "one-quarter",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4acb6e40-003a-5fe0-81bc-d2adeefb91d5",
+       "label": "B",
+       "content": "one-fifth",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "22383c12-4dc6-5c9f-9701-52c55254cacf",
+       "label": "C",
+       "content": "one-third",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "72a05eda-2abf-5834-b2a8-45cf0d506a2f",
+       "label": "D",
+       "content": "one-half",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8c7c19e1-ca73-5fb2-a173-6d0d06b30591",
+     "key": "fa-bn-05",
+     "stem": "A difference on the branch stock account kept at selling price shows",
+     "image_url": null,
+     "explanation": "At selling price, opening stock plus goods sent should equal sales plus closing stock; any difference is a loss or surplus.\n\n**Why the other options are wrong**\n\n- the branch gross profit: Gross profit is found in the branch adjustment account.\n- the branch's expenses: Expenses are recorded separately.\n- the value of goods returned to head office: Returns are recorded as entries, not as the balancing difference.",
+     "position": 5,
+     "options": [
+      {
+       "id": "29a45537-6d35-56f9-9fb1-d8012f5308ad",
+       "label": "A",
+       "content": "the branch gross profit",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ad33035e-fa12-5542-83df-89b38ec7461e",
+       "label": "B",
+       "content": "the branch's expenses",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5e57b756-5a4d-5396-852f-b76ee97cf417",
+       "label": "C",
+       "content": "a shortage or surplus of goods or cash at the branch",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "bdb8c324-db81-5362-80b0-a30cfda36d44",
+       "label": "D",
+       "content": "the value of goods returned to head office",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cec1201c-1ae9-5817-b084-29c6f561ecec",
+   "topic": "Single Entry and Incomplete Records",
+   "title": "Single Entry and Incomplete Records: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on single entry and incomplete records, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 143,
+   "questions": [
+    {
+     "id": "7a40ec71-2cda-599a-848a-c1d8c8998399",
+     "key": "fa-ir-01",
+     "stem": "A statement of affairs is used to find a business's",
+     "image_url": null,
+     "explanation": "Capital = assets − liabilities, listed in the statement of affairs.\n\n**Why the other options are wrong**\n\n- gross profit for the year: Gross profit needs a trading account.\n- cash received during the year: That comes from cash records.\n- credit sales for the year: Credit sales come from a total receivables account.",
+     "position": 1,
+     "options": [
+      {
+       "id": "b8211da5-759a-5456-9b6f-0ee3d9232288",
+       "label": "A",
+       "content": "gross profit for the year",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "359f180a-f156-5f45-83f5-272abffc8db3",
+       "label": "B",
+       "content": "cash received during the year",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d740b330-8c87-56b2-8a4d-47f1f36ff003",
+       "label": "C",
+       "content": "credit sales for the year",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7085cea0-b805-5a13-91e1-680f1b9b9edb",
+       "label": "D",
+       "content": "capital on a given date",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7ff9e8cb-a098-50c1-bef2-892a004b4972",
+     "key": "fa-ir-02",
+     "stem": "Opening capital NLe 36,000; closing capital NLe 40,000; drawings NLe 14,000; capital introduced NLe 3,000. Profit is",
+     "image_url": null,
+     "explanation": "40,000 − 36,000 + 14,000 − 3,000 = 15,000.\n\n**Why the other options are wrong**\n\n- NLe 4,000: Drawings must be added and capital introduced deducted.\n- NLe 21,000: Capital introduced must be deducted, not added.\n- NLe 18,000: Capital introduced has not been deducted.",
+     "position": 2,
+     "options": [
+      {
+       "id": "fd431855-0ee1-58ee-b3de-a7202e0ef710",
+       "label": "A",
+       "content": "NLe 15,000",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "cb28f3d4-0492-5f1d-8e33-7c1833a544ce",
+       "label": "B",
+       "content": "NLe 4,000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "52cbb429-9e34-53cc-a84d-1dd9670f5dac",
+       "label": "C",
+       "content": "NLe 21,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e5d1cf15-490e-5e9a-bbe8-9bd0d98d69d7",
+       "label": "D",
+       "content": "NLe 18,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eb33ca3a-8648-5837-9a2a-78796de37a89",
+     "key": "fa-ir-03",
+     "stem": "Opening receivables NLe 5,000; closing NLe 7,000; cash received NLe 60,000; discount allowed NLe 1,000. Credit sales are",
+     "image_url": null,
+     "explanation": "60,000 + 1,000 + 7,000 − 5,000 = 63,000.\n\n**Why the other options are wrong**\n\n- NLe 59,000: Discount allowed and closing receivables must be added.\n- NLe 73,000: Opening receivables must be deducted, not added.\n- NLe 61,000: Closing receivables must be added and opening deducted.",
+     "position": 3,
+     "options": [
+      {
+       "id": "68fc8dbb-0cc9-5f5c-a39c-9e66ada91929",
+       "label": "A",
+       "content": "NLe 59,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ea5adbbc-1a5d-5d68-89ad-963675137851",
+       "label": "B",
+       "content": "NLe 63,000",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "545538d3-7fe3-5ef6-9037-68b7d9269a08",
+       "label": "C",
+       "content": "NLe 73,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c7835ede-61d6-5589-9509-c477dd2c2da1",
+       "label": "D",
+       "content": "NLe 61,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7f17fc45-b998-5fde-bb8e-ad6a7058c933",
+     "key": "fa-ir-04",
+     "stem": "A mark-up of 25% is equal to a margin of",
+     "image_url": null,
+     "explanation": "Cost 100, sales 125; margin = 25 ÷ 125 = 20%.\n\n**Why the other options are wrong**\n\n- 25%: Margin is based on sales, so it is smaller than the mark-up.\n- 33⅓%: That is the margin for a 50% mark-up.\n- 75%: Cost is 80% of sales, so the gross profit margin is 20%, not 75%.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ea34b8ec-1574-5760-ba5b-4e934c0dc8c7",
+       "label": "A",
+       "content": "25%",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0f9d6893-e166-5626-91e2-9ab16cf0b460",
+       "label": "B",
+       "content": "33⅓%",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "44248757-1ea1-5c8c-8b27-f9333d079665",
+       "label": "C",
+       "content": "20%",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "43449ecd-dd67-5664-8aa9-7095ca6a8b2b",
+       "label": "D",
+       "content": "75%",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2157e43b-57cd-5732-87b7-d0e889a42e00",
+     "key": "fa-ir-05",
+     "stem": "Opening inventory NLe 15,000; purchases NLe 70,000; sales NLe 90,000 at a mark-up of 25%. Goods worth NLe 4,000 at cost were saved from a fire. Inventory lost is",
+     "image_url": null,
+     "explanation": "Cost of sales = 90,000 × 100/125 = 72,000; expected inventory = 15,000 + 70,000 − 72,000 = 13,000; lost = 13,000 − 4,000 = 9,000.\n\n**Why the other options are wrong**\n\n- NLe 13,000: The goods saved must be deducted.\n- NLe 5,000: Cost of sales is 72,000, not 67,500.\n- NLe 17,000: The goods saved must be deducted, not added.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e4e602ce-9a3e-5da5-8693-3dd31ad32e67",
+       "label": "A",
+       "content": "NLe 13,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c55e5051-93cd-54b7-8cb5-9db62a7bf245",
+       "label": "B",
+       "content": "NLe 5,000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "034cface-8abd-501e-96c7-7504ba6e69f9",
+       "label": "C",
+       "content": "NLe 17,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7205cd18-40a9-5892-a89a-32b29011257c",
+       "label": "D",
+       "content": "NLe 9,000",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "386ba96f-9960-5fa1-b171-33a601c63094",
+   "topic": "Joint Venture and Consignment Accounts",
+   "title": "Joint Venture and Consignment Accounts: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on joint venture and consignment accounts, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 144,
+   "questions": [
+    {
+     "id": "7aabe325-98fb-5e2e-a277-01b67a2418c8",
+     "key": "fa-jv-01",
+     "stem": "A joint venture differs from a partnership because a joint venture",
+     "image_url": null,
+     "explanation": "A joint venture ends when its project is complete; a partnership is a continuing business.\n\n**Why the other options are wrong**\n\n- has unlimited liability: Ordinary partners also have unlimited liability.\n- shares profits between members: Partnerships also share profits.\n- must have more than twenty members: There is no such rule.",
+     "position": 1,
+     "options": [
+      {
+       "id": "2b797674-f0a8-58a0-abe7-1db5cf8fb723",
+       "label": "A",
+       "content": "is temporary and formed for a specific project",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d0f3848c-f73c-5fb2-88e3-b00a498cfeae",
+       "label": "B",
+       "content": "has unlimited liability",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "23d31897-cbc8-5bd7-bdbf-7fb48b0e22e8",
+       "label": "C",
+       "content": "shares profits between members",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b02fa986-659a-5e54-9034-45e03b69dab1",
+       "label": "D",
+       "content": "must have more than twenty members",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ac90f911-4dde-564e-8325-8e0d4e25dac1",
+     "key": "fa-jv-02",
+     "stem": "Costs of a joint venture total NLe 23,000 and sales NLe 30,000. Profit is shared equally. Each co-venturer's share is",
+     "image_url": null,
+     "explanation": "Profit = 30,000 − 23,000 = 7,000; each share = 3,500.\n\n**Why the other options are wrong**\n\n- NLe 7,000: That is the total profit.\n- NLe 15,000: That is half the sales.\n- NLe 11,500: That is half the costs.",
+     "position": 2,
+     "options": [
+      {
+       "id": "9424bd4b-54a9-53b3-b3b9-f5c6e0d93984",
+       "label": "A",
+       "content": "NLe 7,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b87dac78-e62c-53ae-a7e5-cba3ca731d2d",
+       "label": "B",
+       "content": "NLe 3,500",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0880ca79-d0e2-5d67-a980-cdaeb085cda9",
+       "label": "C",
+       "content": "NLe 15,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "833f2314-dfba-552d-8567-a8f16fd23385",
+       "label": "D",
+       "content": "NLe 11,500",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7a9300b2-83d5-5b10-91cb-bc2ac39646df",
+     "key": "fa-jv-03",
+     "stem": "The statement sent by a consignee to the consignor showing sales, expenses and commission is the",
+     "image_url": null,
+     "explanation": "The account sales reports the results of the consignment and the balance due.\n\n**Why the other options are wrong**\n\n- pro-forma invoice: The pro-forma invoice is sent by the consignor with the goods.\n- credit note: A credit note records returns or overcharges.\n- statement of affairs: A statement of affairs is used with incomplete records.",
+     "position": 3,
+     "options": [
+      {
+       "id": "f67ec1a4-2e34-51ce-a13f-ac2f1aa7027d",
+       "label": "A",
+       "content": "pro-forma invoice",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c70917b1-1b3c-5330-b588-1a6fcb1faf4f",
+       "label": "B",
+       "content": "credit note",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9164d75b-2beb-51cb-87a9-d1f946e547b1",
+       "label": "C",
+       "content": "account sales",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d1943bf9-cf41-57cd-bd56-7c5e4ea0832c",
+       "label": "D",
+       "content": "statement of affairs",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f946babe-45af-59be-b5ae-4bb52aa53a7b",
+     "key": "fa-jv-04",
+     "stem": "Commission paid to a consignee for bearing the risk of bad debts is called",
+     "image_url": null,
+     "explanation": "Del credere commission compensates the consignee for guaranteeing credit sales.\n\n**Why the other options are wrong**\n\n- ordinary commission: Ordinary commission is for selling the goods.\n- overriding commission: Overriding commission rewards extra effort or special sales.\n- trade discount: Trade discount is a reduction in list price.",
+     "position": 4,
+     "options": [
+      {
+       "id": "66652982-f638-51cb-978d-4eaee332f537",
+       "label": "A",
+       "content": "ordinary commission",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b8882472-ca21-5b40-9e4a-e814ccd4d5af",
+       "label": "B",
+       "content": "overriding commission",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "92f39c0a-46c2-593a-86fd-0c2e03563ef2",
+       "label": "C",
+       "content": "trade discount",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4c04040a-bb50-5944-9ef4-f647774149fc",
+       "label": "D",
+       "content": "del credere commission",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6bd3acf3-da14-5d87-ba24-70f990ef7a60",
+     "key": "fa-jv-05",
+     "stem": "100 bags costing NLe 600 each are consigned, with freight of NLe 3,000. 20 bags remain unsold. Their value is",
+     "image_url": null,
+     "explanation": "20 × 600 + 20/100 × 3,000 = 12,000 + 600 = 12,600.\n\n**Why the other options are wrong**\n\n- NLe 12,000: A share of the freight must be added.\n- NLe 15,000: Only 20% of the freight belongs to the unsold bags.\n- NLe 18,000: That values the bags at selling price.",
+     "position": 5,
+     "options": [
+      {
+       "id": "7fc4e1e2-1802-52ab-a60b-58b1f1d8c3e0",
+       "label": "A",
+       "content": "NLe 12,600",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "029c50ab-0c6b-5a1b-b596-8e560503486a",
+       "label": "B",
+       "content": "NLe 12,000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "428c8901-7966-5188-82d2-fc81b9179a56",
+       "label": "C",
+       "content": "NLe 15,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4a03f6bb-db23-59b5-bd21-87dfea57f2ed",
+       "label": "D",
+       "content": "NLe 18,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "339d0df6-bc3f-5e99-8928-0a546678dd4d",
+   "topic": "Bills of Exchange",
+   "title": "Bills of Exchange: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on bills of exchange, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 145,
+   "questions": [
+    {
+     "id": "c296f871-5297-5e13-9cb1-613a4b4da361",
+     "key": "fa-bx-01",
+     "stem": "The person who draws a bill of exchange is usually the",
+     "image_url": null,
+     "explanation": "The creditor (seller) draws the bill on the debtor (buyer).\n\n**Why the other options are wrong**\n\n- debtor: The debtor is the drawee who accepts the bill.\n- bank: A bank may discount a bill but does not usually draw it.\n- auditor: Auditors are not parties to a bill.",
+     "position": 1,
+     "options": [
+      {
+       "id": "70795430-1ba8-5dae-9a7f-125e69f2ad7a",
+       "label": "A",
+       "content": "debtor",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "66a2bbb6-1621-53a8-b16f-199634bab5ee",
+       "label": "B",
+       "content": "creditor",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ae63706e-92b0-5f8d-a4fd-12c41924fc20",
+       "label": "C",
+       "content": "bank",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4d0bf5a2-4457-5912-bec4-c17a582de53e",
+       "label": "D",
+       "content": "auditor",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b54c13d5-e4ed-5393-b969-2adb952f33a8",
+     "key": "fa-bx-02",
+     "stem": "A bill for NLe 10,000 with two months to run is discounted at 12% a year. The proceeds are",
+     "image_url": null,
+     "explanation": "Discount = 10,000 × 12% × 2/12 = 200; proceeds = 9,800.\n\n**Why the other options are wrong**\n\n- NLe 8,800: That uses the full annual rate instead of two months.\n- NLe 9,700: That uses three months instead of two.\n- NLe 10,200: Discount is deducted, not added.",
+     "position": 2,
+     "options": [
+      {
+       "id": "98f70db5-d915-5ed7-8359-b27f3085eabc",
+       "label": "A",
+       "content": "NLe 8,800",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "64ca51db-cff4-5a61-aa97-49bb2c07d5ba",
+       "label": "B",
+       "content": "NLe 9,700",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a19ae0d0-4c59-5bc2-8fc0-63c4ddb74963",
+       "label": "C",
+       "content": "NLe 9,800",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b5f8edb2-4322-588d-a7ac-2ebd17564514",
+       "label": "D",
+       "content": "NLe 10,200",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7390aa9a-3b67-5777-a981-5f3670decb67",
+     "key": "fa-bx-03",
+     "stem": "When a customer accepts a bill, the drawer records",
+     "image_url": null,
+     "explanation": "The debt moves from the customer's account to the bills receivable account.\n\n**Why the other options are wrong**\n\n- debit the customer, credit bills receivable: That reverses the entry.\n- debit bills payable, credit the customer: Bills payable are recorded by the acceptor.\n- debit bank, credit bills receivable: That records payment of the bill.",
+     "position": 3,
+     "options": [
+      {
+       "id": "511d4a08-befe-55bd-b1df-b5d329eae5f8",
+       "label": "A",
+       "content": "debit the customer, credit bills receivable",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "37cc6bd8-00f5-5746-a80c-f91208d9cbdc",
+       "label": "B",
+       "content": "debit bills payable, credit the customer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ed9c60bb-5e10-5b81-8343-c3f9d12220bb",
+       "label": "C",
+       "content": "debit bank, credit bills receivable",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e5423d48-958b-5304-8fe7-96f5335c91d5",
+       "label": "D",
+       "content": "debit bills receivable, credit the customer",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9878dbff-0ce0-54eb-aec1-bc41dd898cc6",
+     "key": "fa-bx-04",
+     "stem": "In the acceptor's books, bills payable are",
+     "image_url": null,
+     "explanation": "The acceptor must pay the bill on the due date: a short-term liability.\n\n**Why the other options are wrong**\n\n- a current asset: Bills receivable are a current asset.\n- an expense: Bills payable are amounts owed.\n- part of capital: They are owed to a supplier, not the owner.",
+     "position": 4,
+     "options": [
+      {
+       "id": "794e104c-ed7e-5ed7-9806-81e1e62a3fcb",
+       "label": "A",
+       "content": "a current liability",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e0e3d54f-3b65-59d4-8216-cf9c170249d6",
+       "label": "B",
+       "content": "a current asset",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "59080f7b-11f5-5a6d-99b5-9402bab32b7b",
+       "label": "C",
+       "content": "an expense",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7c88fd8b-6824-5e60-a773-1eafb1181c59",
+       "label": "D",
+       "content": "part of capital",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6b60fdaf-4959-51b9-9d7e-4066abb0f2b6",
+     "key": "fa-bx-05",
+     "stem": "A bill that the drawer has discounted is dishonoured on the due date. The drawer credits",
+     "image_url": null,
+     "explanation": "The bank reclaims the money, so the drawer credits the bank and debits the customer.\n\n**Why the other options are wrong**\n\n- bills receivable: Bills receivable was already cleared when the bill was discounted.\n- the customer: The customer is debited, because they owe again.\n- sales: No sale is reversed.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a085c5d3-7860-54b2-b499-f3bc4bba84b5",
+       "label": "A",
+       "content": "bills receivable",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c66113bb-34ae-5049-875a-68e4793953e3",
+       "label": "B",
+       "content": "the bank",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "73aa9586-0ec5-57ff-b188-5c5778ef2357",
+       "label": "C",
+       "content": "the customer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b888b21a-c583-5382-88a9-da504ccb7eee",
+       "label": "D",
+       "content": "sales",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b5ccab6f-0474-570c-ac31-d7bf53b1c1eb",
+   "topic": "Non-Profit Organisation Accounts",
+   "title": "Non-Profit Organisation Accounts: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on non-profit organisation accounts, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 146,
+   "questions": [
+    {
+     "id": "c0c9cf3e-3536-5204-87c8-26c8eb99d18c",
+     "key": "fa-np-01",
+     "stem": "The capital of a club is called the",
+     "image_url": null,
+     "explanation": "The accumulated fund equals the club's assets minus its liabilities.\n\n**Why the other options are wrong**\n\n- share capital: Share capital is the capital of a company.\n- general reserve: A general reserve is a company reserve.\n- current account: Current accounts belong to partners.",
+     "position": 1,
+     "options": [
+      {
+       "id": "b93de1d2-dd8c-554a-a862-578701f20a30",
+       "label": "A",
+       "content": "share capital",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2a4d626a-2fba-57ae-808a-020b24d5a75c",
+       "label": "B",
+       "content": "general reserve",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fe93d50a-29a3-56d3-ab6f-428da7460e67",
+       "label": "C",
+       "content": "accumulated fund",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "dae479c9-84da-5097-b2aa-9b437e0f7c8d",
+       "label": "D",
+       "content": "current account",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "19d355d0-331a-5c4a-8d39-b6973e8e8894",
+     "key": "fa-np-02",
+     "stem": "The balance of a receipts and payments account represents",
+     "image_url": null,
+     "explanation": "A receipts and payments account summarises the cash book.\n\n**Why the other options are wrong**\n\n- the surplus for the year: The surplus comes from the income and expenditure account.\n- the accumulated fund: The accumulated fund is assets minus liabilities.\n- subscriptions in arrears: Arrears are not shown in a receipts and payments account.",
+     "position": 2,
+     "options": [
+      {
+       "id": "72d9cbfc-daf4-5404-a3bf-1c62d9f3d856",
+       "label": "A",
+       "content": "the surplus for the year",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d9383604-d045-5806-9cd5-2286cb1b6c61",
+       "label": "B",
+       "content": "the accumulated fund",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "134cc5df-99fe-571e-8f6e-1bf783f78bf7",
+       "label": "C",
+       "content": "subscriptions in arrears",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c6cce0fb-103b-514e-a721-c223e795ae19",
+       "label": "D",
+       "content": "cash in hand and at bank",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5463812e-42fa-599d-be69-7a8850c802e3",
+     "key": "fa-np-03",
+     "stem": "Subscriptions received NLe 18,000; opening arrears NLe 1,000; opening in advance NLe 500; closing arrears NLe 1,500; closing in advance NLe 800. Subscription income is",
+     "image_url": null,
+     "explanation": "18,000 − 1,000 + 500 + 1,500 − 800 = 18,200.\n\n**Why the other options are wrong**\n\n- NLe 18,000: That is cash received, not income for the year.\n- NLe 17,800: The adjustments have been applied in the wrong direction.\n- NLe 21,800: All the adjustments have been added.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5c84488c-33e6-5b72-b428-1c297f529652",
+       "label": "A",
+       "content": "NLe 18,200",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7117636c-096b-5d38-a7cd-0fa7c9c12581",
+       "label": "B",
+       "content": "NLe 18,000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "80d2b96e-5284-5498-9f11-dcdfc3a3410b",
+       "label": "C",
+       "content": "NLe 17,800",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "88c6431f-1d61-5df7-92cb-3410fea545de",
+       "label": "D",
+       "content": "NLe 21,800",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cbd5d0cc-15fe-5d05-bdd2-72d26bdafa01",
+     "key": "fa-np-04",
+     "stem": "An excess of income over expenditure in a club's accounts is called a",
+     "image_url": null,
+     "explanation": "The income and expenditure account ends with a surplus or a deficit.\n\n**Why the other options are wrong**\n\n- net profit: Clubs do not aim to make profit; the term is surplus.\n- deficit: A deficit is an excess of expenditure over income.\n- gross profit: Gross profit belongs to trading activities.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e67bd1d0-ad02-567b-b8f0-a1b4ebcd4018",
+       "label": "A",
+       "content": "net profit",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6e7f2fd9-1607-56cf-a609-43fb5121703a",
+       "label": "B",
+       "content": "surplus",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "361432fc-9884-5c6d-82fa-572aacb33219",
+       "label": "C",
+       "content": "deficit",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f0a52bfd-be43-5c85-a9ba-86cd345d1c57",
+       "label": "D",
+       "content": "gross profit",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "27c4f076-694b-51b3-82f6-cb20b8412dd9",
+     "key": "fa-np-05",
+     "stem": "New sports equipment bought by a club is shown in the income and expenditure account as",
+     "image_url": null,
+     "explanation": "The equipment goes to the statement of financial position; only depreciation is charged as expenditure.\n\n**Why the other options are wrong**\n\n- its full cost: Equipment is a capital item.\n- income: It is an asset, not income.\n- nothing at all: Its depreciation is charged.",
+     "position": 5,
+     "options": [
+      {
+       "id": "0ce93aef-fad8-5923-a2ad-4f364bdb97c9",
+       "label": "A",
+       "content": "its full cost",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5bb6fae4-80ba-5b56-b36c-9e5269261a51",
+       "label": "B",
+       "content": "income",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b877b972-2c02-51da-ac26-ba74a3aa6e7d",
+       "label": "C",
+       "content": "depreciation only",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "97416130-e163-5c2c-857e-40027f0c823c",
+       "label": "D",
+       "content": "nothing at all",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "190bf771-2bb4-5db0-84ea-92ae17d30803",
+   "topic": "Partnership Accounts",
+   "title": "Partnership Accounts: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on partnership accounts, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 147,
+   "questions": [
+    {
+     "id": "22f7b67f-0e90-50fb-bf50-31357fe1dfd5",
+     "key": "fa-pa-01",
+     "stem": "In the absence of a partnership agreement, profits are shared",
+     "image_url": null,
+     "explanation": "The usual legal rule is equal sharing of profits and losses.\n\n**Why the other options are wrong**\n\n- in the ratio of capitals: Without agreement, capital does not decide shares.\n- in the ratio of hours worked: Hours worked do not decide shares.\n- according to the oldest partner: No such rule exists.",
+     "position": 1,
+     "options": [
+      {
+       "id": "5baf0319-0765-511c-9877-f98955d389f6",
+       "label": "A",
+       "content": "in the ratio of capitals",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2e375d33-893a-5000-9f4a-59ef65e6b2c8",
+       "label": "B",
+       "content": "in the ratio of hours worked",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "56a56767-5145-562f-8bfc-4bfe2aef3c05",
+       "label": "C",
+       "content": "according to the oldest partner",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2e011212-f917-5836-bebf-d586c9e9c9b6",
+       "label": "D",
+       "content": "equally",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8fa40a44-ec4c-5c9e-9d19-d991941dc508",
+     "key": "fa-pa-02",
+     "stem": "Without an agreement, interest on a partner's loan to the firm is allowed at",
+     "image_url": null,
+     "explanation": "The legal rule allows 5% a year on partners' loans beyond capital.\n\n**Why the other options are wrong**\n\n- 10% a year: The usual legal rate is 5%.\n- the bank's lending rate: A fixed legal rate applies.\n- nothing: Interest on partners' loans is allowed.",
+     "position": 2,
+     "options": [
+      {
+       "id": "3474ac30-f3bb-5060-be0a-68388ce53d45",
+       "label": "A",
+       "content": "5% a year",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5cb6cf25-a855-50e4-9201-8fc67cbfdee2",
+       "label": "B",
+       "content": "10% a year",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0a5c2648-7066-5083-b82c-26f2a96fd645",
+       "label": "C",
+       "content": "the bank's lending rate",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "026e365c-8e55-50bf-8c15-54403b930764",
+       "label": "D",
+       "content": "nothing",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "23b19c24-b3bf-51a0-b543-cbd12974ad36",
+     "key": "fa-pa-03",
+     "stem": "Net profit NLe 50,000; interest on drawings NLe 1,000; partner's salary NLe 8,000; interest on capital NLe 10,000. The residual profit is",
+     "image_url": null,
+     "explanation": "50,000 + 1,000 − 8,000 − 10,000 = 33,000.\n\n**Why the other options are wrong**\n\n- NLe 31,000: Interest on drawings must be added.\n- NLe 50,000: Salary and interest on capital must be deducted.\n- NLe 69,000: Salary and interest are deductions, not additions.",
+     "position": 3,
+     "options": [
+      {
+       "id": "034a1181-6c42-5edf-9ff0-4846e95ea84f",
+       "label": "A",
+       "content": "NLe 31,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dcc0af89-ecb8-5d09-82ba-fec553e3816a",
+       "label": "B",
+       "content": "NLe 33,000",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e1ee1ca1-76a6-5cbd-8b62-d4a7537b2958",
+       "label": "C",
+       "content": "NLe 50,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7e08ca70-f07f-5029-a540-df4c6ad0cd55",
+       "label": "D",
+       "content": "NLe 69,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fd8690cd-4e68-54a4-bc45-338d27a1c967",
+     "key": "fa-pa-04",
+     "stem": "A partner's salary is shown in the",
+     "image_url": null,
+     "explanation": "Salaries and interest on capital share out profit among partners.\n\n**Why the other options are wrong**\n\n- income statement as an expense: It is an appropriation of profit, not an expense.\n- statement of financial position as a liability: It is credited to the current account first.\n- trading account: The trading account finds gross profit.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7583d3bb-bd90-545a-a0cd-4067b79c0ba0",
+       "label": "A",
+       "content": "income statement as an expense",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ee3ab78b-c6f6-557e-b596-0974c739cdf9",
+       "label": "B",
+       "content": "statement of financial position as a liability",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c8c981ad-178b-512a-aac2-90652a38eea1",
+       "label": "C",
+       "content": "appropriation account",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d039fe6a-01ff-54cf-a07b-53ac4bd7abdc",
+       "label": "D",
+       "content": "trading account",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f0b24eba-4dc1-58a5-a5ee-a2bfa352ef32",
+     "key": "fa-pa-05",
+     "stem": "Average profits are NLe 40,000 and goodwill is two years' purchase. Goodwill is",
+     "image_url": null,
+     "explanation": "40,000 × 2 = 80,000.\n\n**Why the other options are wrong**\n\n- NLe 20,000: Goodwill is profit multiplied, not divided, by years.\n- NLe 40,000: That is one year's profit.\n- NLe 120,000: That is three years' purchase.",
+     "position": 5,
+     "options": [
+      {
+       "id": "8c10c00b-81e8-568d-aee9-2ec0d7e7a078",
+       "label": "A",
+       "content": "NLe 20,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "842b8a08-982d-5fda-9d53-21aaa9f43509",
+       "label": "B",
+       "content": "NLe 40,000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d7b6f91c-144f-562c-b145-7bfd001ea373",
+       "label": "C",
+       "content": "NLe 120,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "97fd9683-c291-5582-b968-f9c2350337ae",
+       "label": "D",
+       "content": "NLe 80,000",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "010eda8770e3"
+}

@@ -302,6 +302,25 @@ SETS += [
 
 SETS += [
     {
+        "module": ROOT / f"content/questions/financial-accounting/set{n}_p1.py",
+        "subject_slug": "financial-accounting",
+        "name": f"financial_accounting_set{n}_p1",
+        "label": label,
+        "review": ROOT / f"content/questions/financial-accounting/set{n}_p1.review.md",
+        "sort_from": 80 + 20 * n,
+        # Concepts are checked by an editor; every calculation is worked in full in its explanation.
+        "checked": "facts",
+    }
+    for n, label in (
+        (1, "Financial Accounting: set 1 (foundations, books of original entry, cash book, petty cash, ledger)"),
+        (2, "Financial Accounting: set 2 (trial balance, errors, suspense, bank reconciliation, final accounts)"),
+        (3, "Financial Accounting: set 3 (control, departmental, branch, incomplete records, partnerships)"),
+        (4, "Financial Accounting: set 4 (company accounts, public sector accounting, ICT in accounting)"),
+    )
+]
+
+SETS += [
+    {
         "module": ROOT / "content/questions/biology/set1_p1.py",
         "subject_slug": "biology",
         "name": "biology_set1_p1",

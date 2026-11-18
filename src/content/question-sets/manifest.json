@@ -572,6 +572,69 @@
   "questions": 35
  },
  {
+  "name": "financial_accounting_set1_p1",
+  "label": "Financial Accounting: set 1 (foundations, books of original entry, cash book, petty cash, ledger)",
+  "subject_slug": "financial-accounting",
+  "version": "c6f406fa5366",
+  "papers": [
+   "1ca37014-7cea-50a2-92a0-bc1793bb286f",
+   "e9a588c1-6f19-5cd6-a82d-90aedc09eba1",
+   "6f60b0b9-1c6f-5e43-ba2c-f41d6033a62a",
+   "277c27ba-eff3-5052-b2f1-34f272158603",
+   "06735fff-29df-5167-a746-3bbb5c9b0e6f",
+   "2341aff7-07fb-597c-b872-454a6b894185",
+   "06711d10-97bc-502e-8b77-8685f9462a9e",
+   "847a992a-a43d-579c-ab2c-8b4854a22500"
+  ],
+  "questions": 40
+ },
+ {
+  "name": "financial_accounting_set2_p1",
+  "label": "Financial Accounting: set 2 (trial balance, errors, suspense, bank reconciliation, final accounts)",
+  "subject_slug": "financial-accounting",
+  "version": "b10eb0c72776",
+  "papers": [
+   "6b33c9f5-5b68-503b-a738-9f651b70d56d",
+   "8fa9220c-26dc-5203-ad49-82714e442c28",
+   "f70bca6e-c000-50e6-abdb-82b6fa28e4a0",
+   "f880a226-3882-52d6-acf2-9f98d25f7916",
+   "c46802b5-392d-541b-80f9-05d9faba9482",
+   "55e09901-c6a9-5330-b341-3f05a6c3fd3f",
+   "051e8650-cf3f-503b-9cca-b8c49f314b52",
+   "5e7f704e-06d1-5aa6-8957-cc610c1a99de"
+  ],
+  "questions": 40
+ },
+ {
+  "name": "financial_accounting_set3_p1",
+  "label": "Financial Accounting: set 3 (control, departmental, branch, incomplete records, partnerships)",
+  "subject_slug": "financial-accounting",
+  "version": "010eda8770e3",
+  "papers": [
+   "bdb021e1-eaa5-578c-a40b-854cf6848fae",
+   "80d09b16-9fb1-5c4d-9bf6-69a778e224c9",
+   "61e8bc68-a245-564e-af9b-158ccda4c2e4",
+   "cec1201c-1ae9-5817-b084-29c6f561ecec",
+   "386ba96f-9960-5fa1-b171-33a601c63094",
+   "339d0df6-bc3f-5e99-8928-0a546678dd4d",
+   "b5ccab6f-0474-570c-ac31-d7bf53b1c1eb",
+   "190bf771-2bb4-5db0-84ea-92ae17d30803"
+  ],
+  "questions": 40
+ },
+ {
+  "name": "financial_accounting_set4_p1",
+  "label": "Financial Accounting: set 4 (company accounts, public sector accounting, ICT in accounting)",
+  "subject_slug": "financial-accounting",
+  "version": "4773ae8c551e",
+  "papers": [
+   "fed73daf-17b2-5d56-a812-31c0e39f779f",
+   "a3881482-5a74-5cf0-97a1-923d2b52260b",
+   "4db22f56-090b-5108-b523-81a5083d5d0e"
+  ],
+  "questions": 15
+ },
+ {
   "name": "biology_set1_p1",
   "label": "Biology: set 1 (cells, nutrition, respiration, transport, ecology and genetics)",
   "subject_slug": "biology",
