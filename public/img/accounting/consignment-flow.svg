@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">How a consignment works</title>
+<desc id="d">The consignor sends goods to the consignee, who sells them on the consignor&#x27;s behalf. The consignee pays any expenses at the selling end, deducts commission, and sends the consignor an account sales showing sales, expenses and commission, together with the balance due. Ownership stays with the consignor until the goods are sold.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="800" height="420" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Consignor → consignee → account sales</text>
+<rect x="45.0" y="140.0" width="230.0" height="120.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="160.0" y="176.0" font-size="18" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">CONSIGNOR</text>
+<text x="160.0" y="200.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">owner of the goods</text>
+<text x="160.0" y="224.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(principal)</text>
+<rect x="525.0" y="140.0" width="230.0" height="120.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="640.0" y="176.0" font-size="18" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">CONSIGNEE</text>
+<text x="640.0" y="200.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">selling agent</text>
+<text x="640.0" y="224.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">earns commission</text>
+<line x1="280.0" y1="160.0" x2="520.0" y2="160.0" stroke="#2563eb" stroke-width="3.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="267.6" y="130.0" width="264.7" height="20.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="400.0" y="140.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. goods sent (pro-forma invoice)</text>
+<line x1="520.0" y1="245.0" x2="280.0" y2="245.0" stroke="#15803d" stroke-width="3.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="279.4" y="258.0" width="241.2" height="20.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="400.0" y="268.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3. account sales + balance due</text>
+<rect x="327.7" y="305.5" width="464.6" height="19.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="560.0" y="315.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2. consignee sells the goods, pays expenses, deducts commission</text>
+<text x="400.0" y="395.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">The goods remain the consignor&#x27;s property until sold: unsold goods are the consignor&#x27;s inventory.</text>
+</svg>

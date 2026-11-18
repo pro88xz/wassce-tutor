@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Receipts and payments account compared with income and expenditure account</title>
+<desc id="d">A receipts and payments account is a summary of the cash book: it records all cash received and paid, of capital and revenue nature, for any period, and its balance is cash in hand. An income and expenditure account is like an income statement: it records only revenue income and expenditure belonging to the period, adjusted for accruals and prepayments, and its balance is a surplus or deficit.</desc>
+<defs></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Clubs and societies: two different accounts</text>
+<rect x="25.0" y="90.0" width="360.0" height="320.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="205.0" y="135.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">RECEIPTS AND PAYMENTS</text>
+<text x="205.0" y="158.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">account</text>
+<text x="205.0" y="181.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="205.0" y="204.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">summary of the cash book</text>
+<text x="205.0" y="227.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">all cash in and out</text>
+<text x="205.0" y="250.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">capital and revenue items</text>
+<text x="205.0" y="273.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">includes previous and next</text>
+<text x="205.0" y="296.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">year&#x27;s subscriptions</text>
+<text x="205.0" y="319.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">no depreciation, no accruals</text>
+<text x="205.0" y="342.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="205.0" y="365.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">balance = cash in hand / at bank</text>
+<rect x="415.0" y="90.0" width="360.0" height="320.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="595.0" y="135.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">INCOME AND EXPENDITURE</text>
+<text x="595.0" y="158.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">account</text>
+<text x="595.0" y="181.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="595.0" y="204.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">like an income statement</text>
+<text x="595.0" y="227.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">revenue items only</text>
+<text x="595.0" y="250.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">only items of this period</text>
+<text x="595.0" y="273.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">adjusted for accruals,</text>
+<text x="595.0" y="296.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">prepayments, depreciation</text>
+<text x="595.0" y="319.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="595.0" y="342.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="595.0" y="365.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">balance = surplus or deficit</text>
+</svg>

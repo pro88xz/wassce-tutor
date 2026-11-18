@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Transactions between head office and a dependent branch</title>
+<desc id="d">Head office sends goods to the branch, sometimes at cost and sometimes at selling (invoice) price, and may pay the branch&#x27;s expenses. The branch sells the goods for cash and on credit, and remits (sends) the cash it collects to head office. Head office keeps the branch accounts and finds the branch profit.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="800" height="380" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Head office and a dependent branch</text>
+<rect x="50.0" y="135.0" width="240.0" height="130.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="170.0" y="176.0" font-size="18" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">HEAD OFFICE</text>
+<text x="170.0" y="200.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">keeps the branch</text>
+<text x="170.0" y="224.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">accounts</text>
+<rect x="510.0" y="135.0" width="240.0" height="130.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="630.0" y="176.0" font-size="18" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">BRANCH</text>
+<text x="630.0" y="200.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sells goods,</text>
+<text x="630.0" y="224.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">collects cash</text>
+<line x1="292.0" y1="160.0" x2="508.0" y2="160.0" stroke="#2563eb" stroke-width="3.5" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="252.0" y="130.0" width="296.1" height="20.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="400.0" y="140.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">goods sent (at cost or invoice price)</text>
+<line x1="508.0" y1="240.0" x2="292.0" y2="240.0" stroke="#15803d" stroke-width="3.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="287.2" y="252.0" width="225.5" height="20.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="400.0" y="262.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">cash remitted to head office</text>
+<text x="400.0" y="355.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Branch profit = branch sales − cost of goods sold at the branch − branch expenses.</text>
+</svg>

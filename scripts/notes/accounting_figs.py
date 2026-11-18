@@ -530,6 +530,201 @@ def rent_insurance_accounts():
     note(s, "Accrued b/d on the credit side = liability.   Prepaid b/d on the debit side = asset.", 455, size=14, color=INK)
     return s
 
+
+# ═══ FA3: specialised accounts ═══════════════════════════════════════════════
+
+@fig
+def sales_ledger_control():
+    s = Svg(800, 420, "A sales ledger control account",
+            "Worked sales ledger control account for January 2026 in new leones. Debit side: balance brought down 45,000; "
+            "credit sales 120,000; dishonoured cheques 1,500; interest charged 300; total 166,800. Credit side: cash and "
+            "cheques received 98,000; discount allowed 2,400; returns inwards 3,600; bad debts 1,800; set-off against the "
+            "purchases ledger 2,000; balance carried down 59,000; total 166,800. The closing balance should equal the total "
+            "of the individual customer balances in the sales ledger.")
+    heading(s, "Sales ledger control account, January 2026 (NLe)")
+    w = [66, 210, 104, 66, 230, 104]
+    hdr = ["Jan", "Details", "NLe", "Jan", "Details", "NLe"]
+    al = ["l", "l", "r", "l", "l", "r"]
+    rows = [["1", "Balance b/d", "45,000", "31", "Cash and cheques", "98,000"],
+            ["31", "Credit sales", "120,000", "31", "Discount allowed", "2,400"],
+            ["31", "Dishonoured cheques", "1,500", "31", "Returns inwards", "3,600"],
+            ["31", "Interest charged", "300", "31", "Bad debts", "1,800"],
+            ["", "", "", "31", "Set-off (purchases ledger)", "2,000"],
+            ["", "", "", "31", "Balance c/d", "59,000"],
+            ["", "", "166,800", "", "", "166,800"],
+            ["Feb 1", "Balance b/d", "59,000", "", "", ""]]
+    s.text(14, 70, "Dr", size=16, weight="bold", color=BLUE, anchor="start")
+    s.text(786, 70, "Cr", size=16, weight="bold", color=ORANGE, anchor="end")
+    ledger_table(s, 10, 82, w, hdr, rows, size=15, row_h=32, bold_rows={6, 7}, rule_rows={6}, split_after=2, align=al)
+    note(s, "Source of each figure: day books, cash book and journal totals, never individual customer accounts.", 405, size=13, color=MUTED)
+    return s
+
+
+@fig
+def control_account_sources():
+    s = Svg(800, 470, "Where the figures in a sales ledger control account come from",
+            "The sales ledger control account is written up from totals in the books of original entry: credit sales from "
+            "the sales day book; returns inwards from the returns inwards book; cash and cheques received and discount "
+            "allowed from the cash book; bad debts, set-offs and interest from the general journal. Its balance is compared "
+            "with the total of the list of customers' balances in the sales ledger.")
+    heading(s, "Totals from the books → control account → check against the ledger")
+    books = [(110, "Sales day book", "credit sales (Dr)"), (195, "Returns inwards book", "returns inwards (Cr)"),
+             (280, "Cash book", "receipts, discount allowed (Cr)"), (365, "General journal", "bad debts, set-offs (Cr)")]
+    c = box(s, 540, 238, 210, 120, ["SALES LEDGER", "CONTROL", "ACCOUNT"], col=PURPLE, fill=F_PURPLE, size=18)
+    for y, a, b in books:
+        bb = box(s, 160, y, 270, 64, [a, b], col=BLUE, fill=F_BLUE, size=16)
+        link(s, bb, c, color=MUTED, width=2)
+    l = box(s, 540, 410, 280, 64, ["Sales ledger", "total of customers' balances"], col=GREEN, fill=F_GREEN, size=16)
+    s.line(540, 298, 540, 378, color=GREEN, width=2.5, dash="6 4")
+    s.label(650, 340, "should agree", size=14, color=GREEN, weight="bold", pad=3)
+    return s
+
+
+@fig
+def departmental_apportionment():
+    s = Svg(800, 400, "Apportioning a shared expense between departments",
+            "Rent of NLe 36,000 shared between three departments in proportion to floor area: Department A has 300 square "
+            "metres, B 200 and C 100, a total of 600. A is charged half, NLe 18,000; B a third, NLe 12,000; C a sixth, NLe "
+            "6,000.")
+    heading(s, "Rent NLe 36,000 shared by floor area (300 : 200 : 100 m²)")
+    x0, y0, w, h = 80, 120, 640, 90
+    parts = [("Dept A", 300, 18000, BLUE, F_BLUE), ("Dept B", 200, 12000, GREEN, F_GREEN), ("Dept C", 100, 6000, ORANGE, F_AMBER)]
+    x = x0
+    for name, area, amt, col, fill in parts:
+        ww = w * area / 600
+        s.rect(x, y0, ww, h, fill=fill, stroke=col, width=2.5)
+        s.text(x + ww / 2, y0 + 30, name, size=17, weight="bold", color=col)
+        s.text(x + ww / 2, y0 + 58, f"{area} m²", size=15, color=INK)
+        s.text(x + ww / 2, y0 + 130, f"{area}/600 × 36,000", size=14, color=MUTED)
+        s.text(x + ww / 2, y0 + 158, f"NLe {amt:,}", size=17, weight="bold", color=col)
+        x += ww
+    note(s, "Common bases: floor area (rent, rates), sales (advertising), staff numbers (canteen), value (insurance).", 370, size=14, color=INK)
+    return s
+
+
+@fig
+def branch_flows():
+    s = Svg(800, 380, "Transactions between head office and a dependent branch",
+            "Head office sends goods to the branch, sometimes at cost and sometimes at selling (invoice) price, and may pay "
+            "the branch's expenses. The branch sells the goods for cash and on credit, and remits (sends) the cash it "
+            "collects to head office. Head office keeps the branch accounts and finds the branch profit.")
+    heading(s, "Head office and a dependent branch")
+    ho = box(s, 170, 200, 240, 130, ["HEAD OFFICE", "keeps the branch", "accounts"], col=PURPLE, fill=F_PURPLE, size=18)
+    br = box(s, 630, 200, 240, 130, ["BRANCH", "sells goods,", "collects cash"], col=TEAL, fill=F_TEAL, size=18)
+    s.arrow(292, 160, 508, 160, color=BLUE, width=3.5)
+    s.label(400, 140, "goods sent (at cost or invoice price)", size=14, color=BLUE, weight="bold", pad=3)
+    s.arrow(508, 240, 292, 240, color=GREEN, width=3.5)
+    s.label(400, 262, "cash remitted to head office", size=14, color=GREEN, weight="bold", pad=3)
+    note(s, "Branch profit = branch sales − cost of goods sold at the branch − branch expenses.", 355, size=14, color=INK)
+    return s
+
+
+@fig
+def incomplete_records_methods():
+    s = Svg(800, 460, "Two ways of finding profit from incomplete records",
+            "Method 1, the statement of affairs or net worth method: find the capital at the start and end of the year from "
+            "statements of affairs (assets minus liabilities); profit equals closing capital minus opening capital plus "
+            "drawings minus any capital introduced. Method 2, conversion into double entry: rebuild sales and purchases "
+            "using total receivables and total payables accounts from the cash records, then prepare a full income "
+            "statement and statement of financial position.")
+    heading(s, "Profit from incomplete records: two methods")
+    a = box(s, 205, 240, 360, 300, ["1. Statement of affairs", "(net worth) method", "",
+                                    "capital = assets − liabilities", "at the start and at the end", "",
+                                    "profit = closing capital", "− opening capital", "+ drawings − new capital", "",
+                                    "quick, but no detail"], col=BLUE, fill=F_BLUE, size=17)
+    b = box(s, 595, 240, 360, 300, ["2. Conversion into", "double entry", "",
+                                    "rebuild sales and purchases with", "total receivables / payables accounts",
+                                    "summarise cash and bank", "", "prepare a full income statement",
+                                    "and statement of financial position", "", "more work, full detail"],
+            col=GREEN, fill=F_GREEN, size=17)
+    return s
+
+
+@fig
+def consignment_flow():
+    s = Svg(800, 420, "How a consignment works",
+            "The consignor sends goods to the consignee, who sells them on the consignor's behalf. The consignee pays any "
+            "expenses at the selling end, deducts commission, and sends the consignor an account sales showing sales, "
+            "expenses and commission, together with the balance due. Ownership stays with the consignor until the goods "
+            "are sold.")
+    heading(s, "Consignor → consignee → account sales")
+    c1 = box(s, 160, 200, 230, 120, ["CONSIGNOR", "owner of the goods", "(principal)"], col=PURPLE, fill=F_PURPLE, size=18)
+    c2 = box(s, 640, 200, 230, 120, ["CONSIGNEE", "selling agent", "earns commission"], col=TEAL, fill=F_TEAL, size=18)
+    s.arrow(280, 160, 520, 160, color=BLUE, width=3.5)
+    s.label(400, 140, "1. goods sent (pro-forma invoice)", size=14, color=BLUE, weight="bold", pad=3)
+    s.arrow(520, 245, 280, 245, color=GREEN, width=3.5)
+    s.label(400, 268, "3. account sales + balance due", size=14, color=GREEN, weight="bold", pad=3)
+    s.label(560, 315, "2. consignee sells the goods, pays expenses, deducts commission", size=13, color=INK, pad=3)
+    note(s, "The goods remain the consignor's property until sold: unsold goods are the consignor's inventory.", 395, size=14, color=MUTED)
+    return s
+
+
+@fig
+def bill_of_exchange_cycle():
+    s = Svg(800, 470, "The life of a bill of exchange",
+            "The drawer (creditor) draws a bill on the drawee (debtor), who accepts it by signing, becoming the acceptor. The "
+            "drawer then has three choices: hold the bill until it matures and present it for payment; discount it with a "
+            "bank for cash now, less a discount charge; or endorse it to a third party to settle a debt. On the due date "
+            "the acceptor pays (the bill is honoured) or fails to pay (the bill is dishonoured).")
+    heading(s, "Drawn → accepted → held, discounted or endorsed → honoured or dishonoured")
+    d = box(s, 150, 120, 230, 76, ["DRAWER", "the creditor who writes it"], col=PURPLE, fill=F_PURPLE, size=17)
+    a = box(s, 650, 120, 230, 76, ["DRAWEE → ACCEPTOR", "the debtor who signs it"], col=TEAL, fill=F_TEAL, size=17)
+    s.arrow(266, 108, 534, 108, color=BLUE, width=3)
+    s.label(400, 92, "1. drawn and sent", size=13, color=BLUE, weight="bold", pad=3)
+    s.arrow(534, 140, 266, 140, color=GREEN, width=3)
+    s.label(400, 158, "2. accepted and returned", size=13, color=GREEN, weight="bold", pad=3)
+    opts = [(150, "Hold to maturity", "present for payment"), (400, "Discount with a bank", "cash now, less discount"),
+            (650, "Endorse to a creditor", "to settle a debt")]
+    s.text(400, 222, "3. The drawer may then:", size=16, weight="bold", color=INK)
+    for x, t, u in opts:
+        box(s, x, 280, 220, 70, [t, u], col=BLUE, fill=F_BLUE, size=16)
+    s.text(400, 352, "4. On the due date the bill is either:", size=16, weight="bold", color=INK)
+    box(s, 260, 410, 260, 60, ["Honoured", "acceptor pays on due date"], col=GREEN, fill=F_GREEN, size=16)
+    box(s, 560, 410, 260, 60, ["Dishonoured", "acceptor fails to pay"], col=RED, fill=F_RED, size=16)
+    return s
+
+
+@fig
+def receipts_vs_income():
+    s = Svg(800, 470, "Receipts and payments account compared with income and expenditure account",
+            "A receipts and payments account is a summary of the cash book: it records all cash received and paid, of "
+            "capital and revenue nature, for any period, and its balance is cash in hand. An income and expenditure "
+            "account is like an income statement: it records only revenue income and expenditure belonging to the period, "
+            "adjusted for accruals and prepayments, and its balance is a surplus or deficit.")
+    heading(s, "Clubs and societies: two different accounts")
+    a = box(s, 205, 250, 360, 320, ["RECEIPTS AND PAYMENTS", "account", "", "summary of the cash book",
+                                    "all cash in and out", "capital and revenue items", "includes previous and next",
+                                    "year's subscriptions", "no depreciation, no accruals", "",
+                                    "balance = cash in hand / at bank"], col=BLUE, fill=F_BLUE, size=17)
+    b = box(s, 595, 250, 360, 320, ["INCOME AND EXPENDITURE", "account", "", "like an income statement",
+                                    "revenue items only", "only items of this period",
+                                    "adjusted for accruals,", "prepayments, depreciation", "", "",
+                                    "balance = surplus or deficit"], col=GREEN, fill=F_GREEN, size=17)
+    return s
+
+
+@fig
+def partnership_appropriation():
+    s = Svg(800, 500, "How partnership profit is appropriated",
+            "The partnership appropriation account starts with net profit, adds interest charged on partners' drawings, then "
+            "deducts partners' salaries and interest on capital. The remaining residual profit is shared between the "
+            "partners in their profit-sharing ratio. Each partner's share, salary and interest are credited to their "
+            "current accounts.")
+    heading(s, "Partnership appropriation account")
+    rows = [(100, "Net profit (from the income statement)", BLUE, F_BLUE),
+            (175, "+ Interest on drawings (charged to partners)", GREEN, F_GREEN),
+            (250, "− Partners' salaries", ORANGE, F_AMBER),
+            (325, "− Interest on capital", ORANGE, F_AMBER),
+            (400, "= Residual profit, shared in the profit-sharing ratio", PURPLE, F_PURPLE)]
+    prev = None
+    for y, t, col, fill in rows:
+        b = box(s, 400, y, 600, 54, [t], col=col, fill=fill, size=18)
+        if prev:
+            link(s, prev, b, color=MUTED, width=2)
+        prev = b
+    note(s, "Salaries, interest and shares are credited to each partner's current account.", 470, size=15, color=INK)
+    return s
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:

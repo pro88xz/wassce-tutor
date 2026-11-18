@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A sales ledger control account</title>
+<desc id="d">Worked sales ledger control account for January 2026 in new leones. Debit side: balance brought down 45,000; credit sales 120,000; dishonoured cheques 1,500; interest charged 300; total 166,800. Credit side: cash and cheques received 98,000; discount allowed 2,400; returns inwards 3,600; bad debts 1,800; set-off against the purchases ledger 2,000; balance carried down 59,000; total 166,800. The closing balance should equal the total of the individual customer balances in the sales ledger.</desc>
+<defs></defs>
+<rect width="800" height="420" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sales ledger control account, January 2026 (NLe)</text>
+<text x="14.0" y="70.0" font-size="16" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">Dr</text>
+<text x="786.0" y="70.0" font-size="16" fill="#ea580c" text-anchor="end" dominant-baseline="middle" font-weight="bold">Cr</text>
+<rect x="10.0" y="82.0" width="780.0" height="36.0" rx="0" fill="#ede9fe" stroke="none" stroke-width="0"/>
+<text x="16.0" y="100.0" font-size="15" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">Jan</text>
+<text x="82.0" y="100.0" font-size="15" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">Details</text>
+<text x="384.0" y="100.0" font-size="15" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">NLe</text>
+<text x="396.0" y="100.0" font-size="15" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">Jan</text>
+<text x="462.0" y="100.0" font-size="15" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">Details</text>
+<text x="784.0" y="100.0" font-size="15" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">NLe</text>
+<line x1="10.0" y1="118.0" x2="790.0" y2="118.0" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="16.0" y="136.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">1</text>
+<text x="82.0" y="136.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Balance b/d</text>
+<text x="384.0" y="136.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">45,000</text>
+<text x="396.0" y="136.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">31</text>
+<text x="462.0" y="136.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Cash and cheques</text>
+<text x="784.0" y="136.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">98,000</text>
+<text x="16.0" y="168.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">31</text>
+<text x="82.0" y="168.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Credit sales</text>
+<text x="384.0" y="168.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">120,000</text>
+<text x="396.0" y="168.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">31</text>
+<text x="462.0" y="168.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Discount allowed</text>
+<text x="784.0" y="168.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">2,400</text>
+<text x="16.0" y="200.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">31</text>
+<text x="82.0" y="200.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Dishonoured cheques</text>
+<text x="384.0" y="200.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">1,500</text>
+<text x="396.0" y="200.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">31</text>
+<text x="462.0" y="200.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Returns inwards</text>
+<text x="784.0" y="200.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">3,600</text>
+<text x="16.0" y="232.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">31</text>
+<text x="82.0" y="232.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Interest charged</text>
+<text x="384.0" y="232.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">300</text>
+<text x="396.0" y="232.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">31</text>
+<text x="462.0" y="232.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Bad debts</text>
+<text x="784.0" y="232.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">1,800</text>
+<text x="396.0" y="264.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">31</text>
+<text x="462.0" y="264.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Set-off (purchases ledger)</text>
+<text x="784.0" y="264.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">2,000</text>
+<text x="396.0" y="296.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">31</text>
+<text x="462.0" y="296.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Balance c/d</text>
+<text x="784.0" y="296.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">59,000</text>
+<line x1="294.0" y1="312.0" x2="386.0" y2="312.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="694.0" y1="312.0" x2="786.0" y2="312.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<text x="384.0" y="328.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">166,800</text>
+<text x="784.0" y="328.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">166,800</text>
+<line x1="294.0" y1="340.0" x2="386.0" y2="340.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="294.0" y1="343.0" x2="386.0" y2="343.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="694.0" y1="340.0" x2="786.0" y2="340.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="694.0" y1="343.0" x2="786.0" y2="343.0" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+<text x="16.0" y="360.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Feb 1</text>
+<text x="82.0" y="360.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Balance b/d</text>
+<text x="384.0" y="360.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="bold">59,000</text>
+<line x1="390.0" y1="82.0" x2="390.0" y2="374.0" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="10.0" y="82.0" width="780.0" height="292.0" rx="0" fill="none" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="400.0" y="405.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Source of each figure: day books, cash book and journal totals, never individual customer accounts.</text>
+</svg>

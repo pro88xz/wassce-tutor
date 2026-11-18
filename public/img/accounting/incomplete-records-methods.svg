@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Two ways of finding profit from incomplete records</title>
+<desc id="d">Method 1, the statement of affairs or net worth method: find the capital at the start and end of the year from statements of affairs (assets minus liabilities); profit equals closing capital minus opening capital plus drawings minus any capital introduced. Method 2, conversion into double entry: rebuild sales and purchases using total receivables and total payables accounts from the cash records, then prepare a full income statement and statement of financial position.</desc>
+<defs></defs>
+<rect width="800" height="460" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Profit from incomplete records: two methods</text>
+<rect x="25.0" y="90.0" width="360.0" height="300.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="205.0" y="125.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. Statement of affairs</text>
+<text x="205.0" y="148.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(net worth) method</text>
+<text x="205.0" y="171.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="205.0" y="194.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">capital = assets − liabilities</text>
+<text x="205.0" y="217.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">at the start and at the end</text>
+<text x="205.0" y="240.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="205.0" y="263.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">profit = closing capital</text>
+<text x="205.0" y="286.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">− opening capital</text>
+<text x="205.0" y="309.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">+ drawings − new capital</text>
+<text x="205.0" y="332.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="205.0" y="355.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">quick, but no detail</text>
+<rect x="415.0" y="90.0" width="360.0" height="300.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="595.0" y="125.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2. Conversion into</text>
+<text x="595.0" y="148.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">double entry</text>
+<text x="595.0" y="171.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="595.0" y="194.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rebuild sales and purchases with</text>
+<text x="595.0" y="217.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">total receivables / payables accounts</text>
+<text x="595.0" y="240.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">summarise cash and bank</text>
+<text x="595.0" y="263.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="595.0" y="286.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">prepare a full income statement</text>
+<text x="595.0" y="309.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">and statement of financial position</text>
+<text x="595.0" y="332.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal"></text>
+<text x="595.0" y="355.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">more work, full detail</text>
+</svg>

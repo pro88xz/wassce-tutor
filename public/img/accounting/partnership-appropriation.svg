@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">How partnership profit is appropriated</title>
+<desc id="d">The partnership appropriation account starts with net profit, adds interest charged on partners&#x27; drawings, then deducts partners&#x27; salaries and interest on capital. The remaining residual profit is shared between the partners in their profit-sharing ratio. Each partner&#x27;s share, salary and interest are credited to their current accounts.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="500" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Partnership appropriation account</text>
+<rect x="100.0" y="73.0" width="600.0" height="54.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="100.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Net profit (from the income statement)</text>
+<rect x="100.0" y="148.0" width="600.0" height="54.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="175.0" font-size="18" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">+ Interest on drawings (charged to partners)</text>
+<line x1="400.0" y1="133.0" x2="400.0" y2="142.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="100.0" y="223.0" width="600.0" height="54.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="400.0" y="250.0" font-size="18" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">− Partners&#x27; salaries</text>
+<line x1="400.0" y1="208.0" x2="400.0" y2="217.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="100.0" y="298.0" width="600.0" height="54.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="400.0" y="325.0" font-size="18" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">− Interest on capital</text>
+<line x1="400.0" y1="283.0" x2="400.0" y2="292.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="100.0" y="373.0" width="600.0" height="54.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="400.0" font-size="18" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">= Residual profit, shared in the profit-sharing ratio</text>
+<line x1="400.0" y1="358.0" x2="400.0" y2="367.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="400.0" y="470.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Salaries, interest and shares are credited to each partner&#x27;s current account.</text>
+</svg>

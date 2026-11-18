@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Where the figures in a sales ledger control account come from</title>
+<desc id="d">The sales ledger control account is written up from totals in the books of original entry: credit sales from the sales day book; returns inwards from the returns inwards book; cash and cheques received and discount allowed from the cash book; bad debts, set-offs and interest from the general journal. Its balance is compared with the total of the list of customers&#x27; balances in the sales ledger.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Totals from the books → control account → check against the ledger</text>
+<rect x="435.0" y="178.0" width="210.0" height="120.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="540.0" y="214.0" font-size="18" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">SALES LEDGER</text>
+<text x="540.0" y="238.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">CONTROL</text>
+<text x="540.0" y="262.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ACCOUNT</text>
+<rect x="25.0" y="78.0" width="270.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="160.0" y="99.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sales day book</text>
+<text x="160.0" y="121.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">credit sales (Dr)</text>
+<line x1="160.0" y1="148.0" x2="540.0" y2="172.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="25.0" y="163.0" width="270.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="160.0" y="184.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Returns inwards book</text>
+<text x="160.0" y="206.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">returns inwards (Cr)</text>
+<line x1="301.0" y1="195.0" x2="429.0" y2="238.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="25.0" y="248.0" width="270.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="160.0" y="269.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cash book</text>
+<text x="160.0" y="291.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">receipts, discount allowed (Cr)</text>
+<line x1="301.0" y1="280.0" x2="429.0" y2="238.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="25.0" y="333.0" width="270.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="160.0" y="354.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">General journal</text>
+<text x="160.0" y="376.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">bad debts, set-offs (Cr)</text>
+<line x1="160.0" y1="327.0" x2="540.0" y2="304.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="400.0" y="378.0" width="280.0" height="64.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="540.0" y="399.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sales ledger</text>
+<text x="540.0" y="421.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">total of customers&#x27; balances</text>
+<line x1="540.0" y1="298.0" x2="540.0" y2="378.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 4"/>
+<rect x="600.0" y="330.0" width="100.1" height="20.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="650.0" y="340.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">should agree</text>
+</svg>

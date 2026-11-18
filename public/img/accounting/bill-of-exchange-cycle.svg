@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The life of a bill of exchange</title>
+<desc id="d">The drawer (creditor) draws a bill on the drawee (debtor), who accepts it by signing, becoming the acceptor. The drawer then has three choices: hold the bill until it matures and present it for payment; discount it with a bank for cash now, less a discount charge; or endorse it to a third party to settle a debt. On the due date the acceptor pays (the bill is honoured) or fails to pay (the bill is dishonoured).</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Drawn → accepted → held, discounted or endorsed → honoured or dishonoured</text>
+<rect x="35.0" y="82.0" width="230.0" height="76.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="150.0" y="108.5" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">DRAWER</text>
+<text x="150.0" y="131.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the creditor who writes it</text>
+<rect x="535.0" y="82.0" width="230.0" height="76.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="650.0" y="108.5" font-size="17" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">DRAWEE → ACCEPTOR</text>
+<text x="650.0" y="131.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the debtor who signs it</text>
+<line x1="266.0" y1="108.0" x2="534.0" y2="108.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="335.1" y="82.5" width="129.8" height="19.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="400.0" y="92.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. drawn and sent</text>
+<line x1="534.0" y1="140.0" x2="266.0" y2="140.0" stroke="#15803d" stroke-width="3" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="309.6" y="148.5" width="180.7" height="19.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="400.0" y="158.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2. accepted and returned</text>
+<text x="400.0" y="222.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3. The drawer may then:</text>
+<rect x="40.0" y="245.0" width="220.0" height="70.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="150.0" y="269.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Hold to maturity</text>
+<text x="150.0" y="291.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">present for payment</text>
+<rect x="290.0" y="245.0" width="220.0" height="70.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="269.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Discount with a bank</text>
+<text x="400.0" y="291.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cash now, less discount</text>
+<rect x="540.0" y="245.0" width="220.0" height="70.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="650.0" y="269.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Endorse to a creditor</text>
+<text x="650.0" y="291.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">to settle a debt</text>
+<text x="400.0" y="352.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4. On the due date the bill is either:</text>
+<rect x="130.0" y="380.0" width="260.0" height="60.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="260.0" y="399.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Honoured</text>
+<text x="260.0" y="421.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">acceptor pays on due date</text>
+<rect x="430.0" y="380.0" width="260.0" height="60.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="560.0" y="399.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Dishonoured</text>
+<text x="560.0" y="421.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">acceptor fails to pay</text>
+</svg>
