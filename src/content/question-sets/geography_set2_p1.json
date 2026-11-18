@@ -1,0 +1,1608 @@
+{
+ "name": "geography_set2_p1",
+ "label": "Geography: set 2 (drainage, weather and climate, vegetation, soils, population and settlement)",
+ "subject_slug": "geography",
+ "papers": [
+  {
+   "id": "e50baad3-3638-5949-bf0a-3e61ac2dbaa8",
+   "topic": "Drainage Systems and Hydrology",
+   "title": "Drainage Systems and Hydrology: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on drainage systems and hydrology, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 120,
+   "questions": [
+    {
+     "id": "87379090-0607-59e8-baf5-f5a3bc0580b1",
+     "key": "geo-dr-01",
+     "stem": "The area of land drained by a river and its tributaries is called a",
+     "image_url": null,
+     "explanation": "A drainage basin (catchment) is all the land from which water flows into a river system.\n\n**Why the other options are wrong**\n\n- watershed: The watershed is the boundary of a drainage basin.\n- confluence: A confluence is where two rivers meet.\n- flood plain: A flood plain is flat land beside a river that floods.",
+     "position": 1,
+     "options": [
+      {
+       "id": "1f417d70-d931-5956-8799-c4159f75d602",
+       "label": "A",
+       "content": "drainage basin",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "66fc53f4-9ea7-5ef4-8129-42cd1b0c3023",
+       "label": "B",
+       "content": "watershed",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b27c50a3-0b5a-5ae3-b892-f4dc4d821583",
+       "label": "C",
+       "content": "confluence",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ef7979e9-11e4-5376-b1d1-f4347428d267",
+       "label": "D",
+       "content": "flood plain",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "35967a7b-14ad-5404-b515-df05ef6ecb22",
+     "key": "geo-dr-02",
+     "stem": "The high ground that separates two neighbouring drainage basins is the",
+     "image_url": null,
+     "explanation": "Rain falling on either side of a watershed flows into different river systems.\n\n**Why the other options are wrong**\n\n- source: The source is where a river begins.\n- mouth: The mouth is where a river ends.\n- tributary: A tributary is a smaller river that joins a main river.",
+     "position": 2,
+     "options": [
+      {
+       "id": "028fa2cf-9b2b-594e-8486-f1d02ed91c8c",
+       "label": "A",
+       "content": "source",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2e8053b0-afe5-5ac1-823f-d64330c007d0",
+       "label": "B",
+       "content": "watershed",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "58a69bd8-cfe9-5121-98c5-4aafcecfb791",
+       "label": "C",
+       "content": "mouth",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "edf828f0-66aa-56db-8eec-72b3b2ddb00a",
+       "label": "D",
+       "content": "tributary",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0df157c1-e452-5fc7-8439-87a31001a0a4",
+     "key": "geo-dr-03",
+     "stem": "A drainage pattern that looks like the branches of a tree is described as",
+     "image_url": null,
+     "explanation": "Dendritic patterns develop on rocks of uniform resistance, where tributaries join at acute angles.\n\n**Why the other options are wrong**\n\n- trellised: Trellised patterns meet at right angles on alternating hard and soft rocks.\n- radial: Radial streams flow outwards from a central high point.\n- centripetal: Centripetal streams flow inwards into a basin.",
+     "position": 3,
+     "options": [
+      {
+       "id": "14cfc0b8-ff6b-5fb5-8d9e-f3c0aea05305",
+       "label": "A",
+       "content": "trellised",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ecf8ab6c-2190-5bd7-9ab3-b361651aba4f",
+       "label": "B",
+       "content": "radial",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f3116fe7-ace6-5616-93da-afcfb75ca2c3",
+       "label": "C",
+       "content": "dendritic",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "bccc5c02-f043-5467-adaf-8d8c6d038660",
+       "label": "D",
+       "content": "centripetal",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f2b3f0b0-7021-5e17-b0d5-aca4b8e730eb",
+     "key": "geo-dr-04",
+     "stem": "A radial drainage pattern is most likely to develop on",
+     "image_url": null,
+     "explanation": "Streams flow outwards in all directions from a central high point such as a volcano.\n\n**Why the other options are wrong**\n\n- a basin surrounded by hills: A basin produces a centripetal pattern.\n- alternating bands of hard and soft rock: That produces a trellised pattern.\n- a flat plain of uniform rock: That usually produces a dendritic pattern.",
+     "position": 4,
+     "options": [
+      {
+       "id": "97adc51e-156a-51e1-beba-3b92f186ef49",
+       "label": "A",
+       "content": "a basin surrounded by hills",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3f7e72bb-09b8-5729-8b17-7a8ed468d392",
+       "label": "B",
+       "content": "alternating bands of hard and soft rock",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bdaa104e-9921-5cd9-850e-ddc0a42ad14f",
+       "label": "C",
+       "content": "a flat plain of uniform rock",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5d980d6a-28c5-5a9c-928e-f7c1277c4964",
+       "label": "D",
+       "content": "a volcanic cone or dome",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "418b6059-cf28-5974-b44e-0c84b78c11d3",
+     "key": "geo-dr-05",
+     "stem": "The process by which water soaks from the ground surface into the soil is",
+     "image_url": null,
+     "explanation": "Infiltration is one stage of the water cycle; water then moves through the soil and rocks as groundwater.\n\n**Why the other options are wrong**\n\n- evaporation: Evaporation turns water into water vapour.\n- transpiration: Transpiration is the loss of water vapour from plants.\n- condensation: Condensation turns water vapour into droplets.",
+     "position": 5,
+     "options": [
+      {
+       "id": "bfc51a91-2486-50e9-96a4-244b80b05e81",
+       "label": "A",
+       "content": "infiltration",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "74813b26-43ba-543d-8262-775e895f7733",
+       "label": "B",
+       "content": "evaporation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8bb1905b-1895-55a2-830c-be069c5a3422",
+       "label": "C",
+       "content": "transpiration",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ed1d36f1-b99f-5acb-80a7-6412b68d67fe",
+       "label": "D",
+       "content": "condensation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "36968c25-b5d3-5ff8-b0e6-8f371eb59db0",
+   "topic": "Weather and Climate",
+   "title": "Weather and Climate: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on weather and climate, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 121,
+   "questions": [
+    {
+     "id": "0e253176-ac9e-5d1d-8d62-cf9483fbc960",
+     "key": "geo-wc-01",
+     "stem": "Climate is best defined as",
+     "image_url": null,
+     "explanation": "Weather is short-term; climate is the long-term average of weather conditions.\n\n**Why the other options are wrong**\n\n- the state of the atmosphere at a place at a given time: That is weather.\n- the amount of rain that falls in one day: That is daily rainfall, one element of weather.\n- the study of rocks and landforms: That is geomorphology.",
+     "position": 1,
+     "options": [
+      {
+       "id": "fd1b0cd1-f2b2-59a8-b9ec-26d5ab3904eb",
+       "label": "A",
+       "content": "the state of the atmosphere at a place at a given time",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6e224461-ea5a-5197-bdf1-6d26b3b1b73d",
+       "label": "B",
+       "content": "the average weather conditions of an area over a long period, usually 30 years or more",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1d561e81-eca3-52b1-b1ca-5cc26c531074",
+       "label": "C",
+       "content": "the amount of rain that falls in one day",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "de411537-9e51-5254-9ff6-57f2d3317319",
+       "label": "D",
+       "content": "the study of rocks and landforms",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2690104f-75d4-5c43-9e08-02ba2927d0a1",
+     "key": "geo-wc-02",
+     "stem": "Relative humidity is measured with",
+     "image_url": null,
+     "explanation": "The difference between the wet-bulb and dry-bulb readings gives the relative humidity from tables.\n\n**Why the other options are wrong**\n\n- a barometer: A barometer measures air pressure.\n- an anemometer: An anemometer measures wind speed.\n- a rain gauge: A rain gauge measures rainfall.",
+     "position": 2,
+     "options": [
+      {
+       "id": "e7f62fb1-8840-5a19-b1cc-9be0015148bb",
+       "label": "A",
+       "content": "a barometer",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c48e1da8-b450-5125-ae71-7f4807f63c4b",
+       "label": "B",
+       "content": "an anemometer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "50c76eff-68fc-57dd-a11a-6c8010bb36aa",
+       "label": "C",
+       "content": "a hygrometer (wet-and-dry-bulb thermometer)",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d73ff516-f9b4-5550-a027-25c10e096b84",
+       "label": "D",
+       "content": "a rain gauge",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d344ab55-69b1-57b7-8ba1-eb9484db33c3",
+     "key": "geo-wc-03",
+     "stem": "Rainfall caused when moist air is forced to rise over a mountain barrier is called",
+     "image_url": null,
+     "explanation": "As air rises over high ground it cools, condenses and gives heavy rain on the windward side, as on the Freetown Peninsula.\n\n**Why the other options are wrong**\n\n- convectional rainfall: Convectional rain is caused by surface heating.\n- frontal (cyclonic) rainfall: Frontal rain forms where warm and cold air masses meet.\n- acid rain: Acid rain is polluted rain, not a type formed by rising air.",
+     "position": 3,
+     "options": [
+      {
+       "id": "69bfe1fd-3369-5bc7-80f3-d5e1d0d49c3c",
+       "label": "A",
+       "content": "convectional rainfall",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "916e572c-2e93-511f-8f14-cbfa0aea50fa",
+       "label": "B",
+       "content": "frontal (cyclonic) rainfall",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f95d50eb-0f05-5234-a7e8-22ad363ca2b7",
+       "label": "C",
+       "content": "acid rain",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5d08ccfb-af3e-52dd-a148-1f31c59b378c",
+       "label": "D",
+       "content": "relief (orographic) rainfall",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0d21facf-eb68-5cee-85e0-485c6c81e7be",
+     "key": "geo-wc-04",
+     "stem": "Lines drawn on a map to join places of equal atmospheric pressure are called",
+     "image_url": null,
+     "explanation": "Isobars show pressure patterns; winds blow from high to low pressure.\n\n**Why the other options are wrong**\n\n- isotherms: Isotherms join places of equal temperature.\n- isohyets: Isohyets join places of equal rainfall.\n- contours: Contours join places of equal height.",
+     "position": 4,
+     "options": [
+      {
+       "id": "dd207d07-e467-5e9a-a74f-e0384babbc44",
+       "label": "A",
+       "content": "isobars",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1ebc0c39-9bda-5187-98e7-60700509f820",
+       "label": "B",
+       "content": "isotherms",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f8b70f05-82e3-5404-817a-2a817abb297f",
+       "label": "C",
+       "content": "isohyets",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "596f0197-5063-5c56-a45f-c0b5e8265806",
+       "label": "D",
+       "content": "contours",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "527c7a66-5ed5-5830-8cf7-8234f21ad9f8",
+     "key": "geo-wc-05",
+     "stem": "A wind vane is used to show",
+     "image_url": null,
+     "explanation": "Winds are named after the direction they come from; the vane's arrow points into the wind.\n\n**Why the other options are wrong**\n\n- the speed of the wind: Wind speed is measured with an anemometer.\n- the amount of water vapour in the air: Humidity is measured with a hygrometer.\n- the pressure of the air: Pressure is measured with a barometer.",
+     "position": 5,
+     "options": [
+      {
+       "id": "5ef8d114-6287-5b5c-8d1f-5e3f3f4b4bbc",
+       "label": "A",
+       "content": "the speed of the wind",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "35bd081b-9768-54f3-9ca8-17fef39db3a6",
+       "label": "B",
+       "content": "the direction from which the wind blows",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "77c62256-c0f8-50dd-b918-01794e8c2f11",
+       "label": "C",
+       "content": "the amount of water vapour in the air",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a1dc6e3f-ba15-5288-a210-1a5a19d5c030",
+       "label": "D",
+       "content": "the pressure of the air",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "9bc1a82d-c1fa-5b7f-9268-d1b623bb2a77",
+   "topic": "Climate Types",
+   "title": "Climate Types: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on climate types, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 122,
+   "questions": [
+    {
+     "id": "5628208e-f966-5605-8262-ae6c28d0169d",
+     "key": "geo-ct-01",
+     "stem": "A climate with high temperatures and rain in every month of the year is",
+     "image_url": null,
+     "explanation": "Equatorial regions such as the Congo Basin are hot and wet all year, with a small annual temperature range.\n\n**Why the other options are wrong**\n\n- the Mediterranean climate: Mediterranean summers are dry.\n- the hot desert climate: Deserts have very little rain.\n- the tropical continental (savanna) climate: The savanna climate has a long dry season.",
+     "position": 1,
+     "options": [
+      {
+       "id": "ed770e2b-e2db-56a4-83c3-68a6a296ddcd",
+       "label": "A",
+       "content": "the Mediterranean climate",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a659e124-e447-5800-86f1-a9e8b2f4f406",
+       "label": "B",
+       "content": "the hot desert climate",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2cf24951-efa6-5a0a-a81c-b5573df17aab",
+       "label": "C",
+       "content": "the equatorial climate",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "611d194d-843b-5bd8-903f-55dc69c45b62",
+       "label": "D",
+       "content": "the tropical continental (savanna) climate",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "942e0aca-521a-51e4-8c33-7119afd1e432",
+     "key": "geo-ct-02",
+     "stem": "A characteristic of the hot desert climate is",
+     "image_url": null,
+     "explanation": "Clear skies let the ground heat strongly by day and lose heat quickly at night.\n\n**Why the other options are wrong**\n\n- heavy rainfall all year: Deserts receive under 250 mm a year.\n- high humidity: Desert air is very dry.\n- cool, cloudy days: Desert days are hot and clear.",
+     "position": 2,
+     "options": [
+      {
+       "id": "826bf51f-748b-58ed-bfca-63e5b5ef963a",
+       "label": "A",
+       "content": "heavy rainfall all year",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "57a6514b-a2ca-59cb-88c5-a09d3fb46d91",
+       "label": "B",
+       "content": "high humidity",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2c6b199b-9090-59cf-bb59-3fd0ecfa430e",
+       "label": "C",
+       "content": "cool, cloudy days",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9038af23-c340-5571-bd97-37d47d37fef8",
+       "label": "D",
+       "content": "a very large daily range of temperature",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "81d3e2fc-d76d-50c5-b190-e120ed9a3f14",
+     "key": "geo-ct-03",
+     "stem": "The Mediterranean climate is characterised by",
+     "image_url": null,
+     "explanation": "It is found at the northern and southern tips of Africa, around the Mediterranean and at the Cape.\n\n**Why the other options are wrong**\n\n- rain throughout the year: That describes the equatorial climate.\n- hot, wet summers and dry winters: That describes the tropical wet-and-dry climate.\n- very cold winters with snow: Mediterranean winters are mild.",
+     "position": 3,
+     "options": [
+      {
+       "id": "793c924a-c876-5497-beaa-95649843f799",
+       "label": "A",
+       "content": "hot, dry summers and mild, wet winters",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1878ed62-f4da-5de8-9303-133e83602e28",
+       "label": "B",
+       "content": "rain throughout the year",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f26b11e4-6a74-5c1a-a91f-c58dad7f24bc",
+       "label": "C",
+       "content": "hot, wet summers and dry winters",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "247c6fc2-f283-5329-8cea-a37b0cb5e166",
+       "label": "D",
+       "content": "very cold winters with snow",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b2f34fe8-86ce-50a9-9848-54f82a166ddf",
+     "key": "geo-ct-04",
+     "stem": "In the tropical wet-and-dry (savanna) climate, most rain falls",
+     "image_url": null,
+     "explanation": "As the overhead sun and the ITCZ move into the savanna, moist winds bring the rainy season.\n\n**Why the other options are wrong**\n\n- in winter, from the westerlies: Winter rain is typical of the Mediterranean climate.\n- evenly in every month: That describes the equatorial climate.\n- only during the harmattan: The harmattan is a dry wind.",
+     "position": 4,
+     "options": [
+      {
+       "id": "8e9af4a9-ae73-5e95-a713-2b39304ad2a8",
+       "label": "A",
+       "content": "in winter, from the westerlies",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "75636e6e-ce77-5655-9503-eebebac7830c",
+       "label": "B",
+       "content": "in summer, when the sun is overhead",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "57454d35-199d-508a-baaf-27ef02073cf1",
+       "label": "C",
+       "content": "evenly in every month",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6953e68e-8d30-5a17-94a1-b2933dcbb4c3",
+       "label": "D",
+       "content": "only during the harmattan",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ffaa9992-ce03-5866-9735-f1b76ceb4708",
+     "key": "geo-ct-05",
+     "stem": "The Jos Plateau is cooler than Lagos mainly because of its",
+     "image_url": null,
+     "explanation": "Temperature falls by about 6 °C for every 1,000 m of height, and the Jos Plateau is over 1,000 m high.\n\n**Why the other options are wrong**\n\n- distance from the Equator: Jos is not far enough north for latitude alone to explain the difference.\n- heavier rainfall: Rainfall does not explain the lower temperatures.\n- cold ocean current: Jos is far inland.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9c277d29-75cc-584a-9827-f239371a7713",
+       "label": "A",
+       "content": "distance from the Equator",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "328fd289-7fb4-508d-9e4d-6e05a1d2b628",
+       "label": "B",
+       "content": "heavier rainfall",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0dee9ccf-0fd7-5a8c-a29d-80c73054cc2b",
+       "label": "C",
+       "content": "higher altitude",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d6a6ba61-d2f8-5176-87b8-059850c78ffd",
+       "label": "D",
+       "content": "cold ocean current",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "68540163-3b9a-5b4f-8310-ac97cebdfeb2",
+   "topic": "Natural Vegetation",
+   "title": "Natural Vegetation: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on natural vegetation, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 123,
+   "questions": [
+    {
+     "id": "5c840e02-728c-54b6-bd57-8b662a2f4ccb",
+     "key": "geo-nv-01",
+     "stem": "Trees of the tropical rainforest are",
+     "image_url": null,
+     "explanation": "Heavy rain and high temperatures all year support dense, layered, evergreen forest.\n\n**Why the other options are wrong**\n\n- short and thorny with small leaves: That describes Sahel and desert vegetation.\n- deciduous, losing their leaves in a cold winter: There is no cold winter in the rainforest.\n- scattered among tall grasses: That describes the savanna.",
+     "position": 1,
+     "options": [
+      {
+       "id": "bdda7f1f-4cdf-502b-bb90-a37e7b69b8a6",
+       "label": "A",
+       "content": "short and thorny with small leaves",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "157bf4f9-9c80-5207-8379-94411fcccbbd",
+       "label": "B",
+       "content": "deciduous, losing their leaves in a cold winter",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6715eb0e-6a09-56b0-a643-7a9072bcb3f3",
+       "label": "C",
+       "content": "scattered among tall grasses",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4389ddc7-40f3-5af0-ab0b-8d0c2991c62b",
+       "label": "D",
+       "content": "tall, evergreen and arranged in layers",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6dd8d366-4dc0-5937-b6a0-b8c1bc7b1ec4",
+     "key": "geo-nv-02",
+     "stem": "Tall grass with scattered trees such as the shea and locust bean is typical of the",
+     "image_url": null,
+     "explanation": "The Guinea savanna lies north of the forest, with tall grass and scattered trees.\n\n**Why the other options are wrong**\n\n- Sahel savanna: The Sahel has short grass and thorny scrub.\n- mangrove swamp: Mangroves grow on tidal coasts.\n- tropical rainforest: The rainforest has dense trees, not open grassland.",
+     "position": 2,
+     "options": [
+      {
+       "id": "3c4633e9-79c7-5bcb-b61b-42394d015b73",
+       "label": "A",
+       "content": "Guinea savanna",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "01351c15-6457-5f39-a871-50a78990aa15",
+       "label": "B",
+       "content": "Sahel savanna",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "913f8b4f-4857-507c-8bea-af26247d39f3",
+       "label": "C",
+       "content": "mangrove swamp",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "307b3d96-aa1a-5c9c-bdef-0a136b2e0d6c",
+       "label": "D",
+       "content": "tropical rainforest",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1aa8d42e-9086-5a1a-b53c-1cdde651232a",
+     "key": "geo-nv-03",
+     "stem": "Mangrove trees are adapted to their environment by having",
+     "image_url": null,
+     "explanation": "Mangroves grow in tidal estuaries; stilt roots anchor them and breathing roots take in air.\n\n**Why the other options are wrong**\n\n- thick bark to resist frequent fires: Fire resistance is typical of savanna trees.\n- small, needle-like leaves to resist cold: Mangroves grow in hot tropical coasts.\n- very deep tap roots to reach groundwater in deserts: That describes desert plants.",
+     "position": 3,
+     "options": [
+      {
+       "id": "86073311-2631-54d5-a3fe-96d3c8307ea0",
+       "label": "A",
+       "content": "thick bark to resist frequent fires",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "639b66f9-7feb-56e1-80f1-65f6696ca30e",
+       "label": "B",
+       "content": "stilt roots and breathing roots in salty, waterlogged mud",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "26a8cbf6-006e-5d44-8ae8-4b0075e1f6be",
+       "label": "C",
+       "content": "small, needle-like leaves to resist cold",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2dd7148f-a720-5afb-9aa8-fde4140829b6",
+       "label": "D",
+       "content": "very deep tap roots to reach groundwater in deserts",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8b159bd0-285a-5799-81d8-db2c8ade05ba",
+     "key": "geo-nv-04",
+     "stem": "Short grass and thorny scrub along the southern edge of the Sahara form the",
+     "image_url": null,
+     "explanation": "The Sahel receives about 250–500 mm of rain, enough only for short grass and thorny bushes.\n\n**Why the other options are wrong**\n\n- Guinea savanna: The Guinea savanna has tall grass and more trees.\n- Sudan savanna: The Sudan savanna lies between the Guinea and Sahel savannas.\n- montane forest: Montane forest grows on high mountains.",
+     "position": 4,
+     "options": [
+      {
+       "id": "eb36288d-121b-5190-9b11-860a1760af9e",
+       "label": "A",
+       "content": "Guinea savanna",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "048672b0-493a-5379-bf79-041407946fb3",
+       "label": "B",
+       "content": "Sudan savanna",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "33015bcb-44f4-56ce-82c0-6eb8b0c81b19",
+       "label": "C",
+       "content": "Sahel savanna",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "04706a2d-a583-5272-aa1e-6f7bb28fb491",
+       "label": "D",
+       "content": "montane forest",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e16dda0b-e292-5f0d-a2c5-98e1549c323a",
+     "key": "geo-nv-05",
+     "stem": "Plants adapted to survive in very dry conditions are called",
+     "image_url": null,
+     "explanation": "Xerophytes have features such as deep roots, small or waxy leaves and water storage.\n\n**Why the other options are wrong**\n\n- hydrophytes: Hydrophytes grow in water.\n- halophytes: Halophytes are adapted to salty conditions.\n- epiphytes: Epiphytes grow on other plants, as in the rainforest.",
+     "position": 5,
+     "options": [
+      {
+       "id": "96bccc63-9ffc-51ce-955b-f66f74855d76",
+       "label": "A",
+       "content": "hydrophytes",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8d6142ee-0227-5dad-a348-f10430076fad",
+       "label": "B",
+       "content": "halophytes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "79ebd7e9-a4c1-559b-b0f1-2746548bc2f8",
+       "label": "C",
+       "content": "epiphytes",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "060dade2-a8cb-5526-9872-2c22fb12db9e",
+       "label": "D",
+       "content": "xerophytes",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f324126e-443a-50ee-a2c2-cb468005efac",
+   "topic": "Soils",
+   "title": "Soils: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on soils, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 124,
+   "questions": [
+    {
+     "id": "dabcb464-a9ba-5c87-a14b-12bf8906176b",
+     "key": "geo-so-01",
+     "stem": "In a soil profile, the horizon where materials washed down from the topsoil accumulate is the",
+     "image_url": null,
+     "explanation": "Leached minerals and clay are deposited in the subsoil, the B horizon.\n\n**Why the other options are wrong**\n\n- A horizon (topsoil): The A horizon is the zone that loses material by leaching.\n- C horizon: The C horizon is weathered parent rock.\n- O horizon: The O horizon is the layer of organic litter on top.",
+     "position": 1,
+     "options": [
+      {
+       "id": "ab05b5c0-7c9c-5d68-b1e2-587ec0eb680e",
+       "label": "A",
+       "content": "B horizon (subsoil)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ee40ded8-5e47-59b7-8f76-75179235e38f",
+       "label": "B",
+       "content": "A horizon (topsoil)",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ca926b14-8d49-51b1-92cc-f17fb146ea3c",
+       "label": "C",
+       "content": "C horizon",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4061e076-2225-5538-8e76-2378c19a9cc1",
+       "label": "D",
+       "content": "O horizon",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9516c257-5cd3-5dcb-9230-95a5ed755860",
+     "key": "geo-so-02",
+     "stem": "The removal of soluble minerals from the topsoil by water moving downwards is called",
+     "image_url": null,
+     "explanation": "Heavy tropical rainfall washes plant nutrients down out of reach of roots, lowering fertility.\n\n**Why the other options are wrong**\n\n- weathering: Weathering breaks down rock; it does not move minerals.\n- capillary action: Capillary action moves water upwards.\n- humification: Humification is the formation of humus from organic matter.",
+     "position": 2,
+     "options": [
+      {
+       "id": "2b87dc90-f57a-5846-91a4-d9db33f086b3",
+       "label": "A",
+       "content": "weathering",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a0eb448f-5720-53df-9311-16dc789c9631",
+       "label": "B",
+       "content": "leaching",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1ecfab8f-055d-5c1f-9903-92fc02c6b5fc",
+       "label": "C",
+       "content": "capillary action",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "64b7fa78-dfb0-5cfe-973a-2c5f099a1447",
+       "label": "D",
+       "content": "humification",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a4c3fa77-6f72-5b99-aaa4-6a27a7ab98c8",
+     "key": "geo-so-03",
+     "stem": "Lateritic soils in the tropics are formed mainly by",
+     "image_url": null,
+     "explanation": "Heavy rain and high temperatures remove silica and bases, leaving red iron-rich soils that can harden into laterite.\n\n**Why the other options are wrong**\n\n- deposition of fine material by the wind: Wind-blown deposits form loess.\n- deposition of silt by rivers: River deposits form alluvial soils.\n- freezing and thawing in cold climates: Laterites form in hot, wet climates.",
+     "position": 3,
+     "options": [
+      {
+       "id": "66186509-c808-5801-b8e6-869e6d77f400",
+       "label": "A",
+       "content": "deposition of fine material by the wind",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7ab33a47-4271-5eb1-b4a2-8d66eacae352",
+       "label": "B",
+       "content": "deposition of silt by rivers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b1fab614-b20a-5cf7-bf49-b101172a85e2",
+       "label": "C",
+       "content": "heavy leaching that leaves iron and aluminium oxides near the surface",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a9d7f4c4-0e41-580f-8a88-18fc7535896d",
+       "label": "D",
+       "content": "freezing and thawing in cold climates",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a139939a-4ca3-5921-ade3-676d89ea61fd",
+     "key": "geo-so-04",
+     "stem": "Soil formed from material deposited by rivers on flood plains is called",
+     "image_url": null,
+     "explanation": "Alluvial soils are fertile and are used for rice and vegetables in river valleys.\n\n**Why the other options are wrong**\n\n- lateritic soil: Lateritic soil forms by leaching on uplands.\n- loess: Loess is deposited by the wind.\n- sandy desert soil: Desert soils form in arid areas.",
+     "position": 4,
+     "options": [
+      {
+       "id": "fbb734e9-32cd-5e3d-86ca-1a5f771a5d47",
+       "label": "A",
+       "content": "lateritic soil",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8fa298ad-2b1f-5284-bcb2-b4ac0d823176",
+       "label": "B",
+       "content": "loess",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7fae736e-2a0d-5e63-b418-ed6df5978063",
+       "label": "C",
+       "content": "sandy desert soil",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "33f57f88-b1e5-5677-8db0-c612c43bc232",
+       "label": "D",
+       "content": "alluvial soil",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5622dee0-c674-5801-99fc-071308808832",
+     "key": "geo-so-05",
+     "stem": "Which method helps to control soil erosion on hillsides?",
+     "image_url": null,
+     "explanation": "Terraces and contour ridges slow runoff so that water soaks in instead of washing soil away.\n\n**Why the other options are wrong**\n\n- ploughing up and down the slope: Furrows down the slope channel water and speed erosion.\n- bush burning before planting: Burning exposes the soil to rain and wind.\n- overgrazing by cattle: Overgrazing removes the vegetation cover.",
+     "position": 5,
+     "options": [
+      {
+       "id": "5e2e4539-e828-56cd-81e7-76bdb5c79f5c",
+       "label": "A",
+       "content": "terracing and contour ploughing",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "24880841-6c38-5fe4-8277-ef15ab7fcf5b",
+       "label": "B",
+       "content": "ploughing up and down the slope",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "44fb65db-373e-5576-a982-1e7c80ed9e49",
+       "label": "C",
+       "content": "bush burning before planting",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b9d6e721-d66b-5abb-869c-be5dc4f0c9b6",
+       "label": "D",
+       "content": "overgrazing by cattle",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d6c090c0-5dfe-5656-98af-adee3cb4d8c7",
+   "topic": "Population",
+   "title": "Population: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on population, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 125,
+   "questions": [
+    {
+     "id": "f8232c4d-ad67-5014-8e0c-551d1437ec61",
+     "key": "geo-po-01",
+     "stem": "A country has an area of 72,000 km² and a population of 7.2 million. Its population density is",
+     "image_url": null,
+     "explanation": "Density = population ÷ area = 7,200,000 ÷ 72,000 = 100 persons per km².\n\n**Why the other options are wrong**\n\n- 10 persons per km²: That divides by 720,000 instead of 72,000.\n- 1,000 persons per km²: That divides by 7,200 instead of 72,000.\n- 0.01 persons per km²: That divides the area by the population.",
+     "position": 1,
+     "options": [
+      {
+       "id": "28863eed-1aed-5012-a038-5ff5e8a807eb",
+       "label": "A",
+       "content": "10 persons per km²",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a62d9459-ddb2-5f56-b82e-c6864c3ed24f",
+       "label": "B",
+       "content": "100 persons per km²",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a5e7ade5-4962-5a4a-b780-1e483ffecb8c",
+       "label": "C",
+       "content": "1,000 persons per km²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8d5afd05-8a4c-5ed0-91f7-a5343b48e798",
+       "label": "D",
+       "content": "0.01 persons per km²",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0c96194a-bf48-5dea-a6bb-d2095a8b3c13",
+     "key": "geo-po-02",
+     "stem": "A country's birth rate is 38 per 1,000 and its death rate is 11 per 1,000. Its rate of natural increase is",
+     "image_url": null,
+     "explanation": "Natural increase = 38 − 11 = 27 per 1,000 = 2.7% per year.\n\n**Why the other options are wrong**\n\n- 4.9%: That adds the death rate instead of subtracting it.\n- 27%: 27 per 1,000 is 2.7%, not 27%.\n- 0.27%: 27 per 1,000 is 2.7%, not 0.27%.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c5e61e06-0f3d-58ce-a96c-b390833e4e7c",
+       "label": "A",
+       "content": "4.9%",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bc0cb5f6-8787-5d5e-b42d-95c0bc84e463",
+       "label": "B",
+       "content": "27%",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2aea1505-fff0-534a-a79b-cf40fa986210",
+       "label": "C",
+       "content": "2.7%",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9b1c36cc-8832-5b8a-ac28-b204af2f50f9",
+       "label": "D",
+       "content": "0.27%",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "48cc987c-f2d0-5cd5-af7f-2e8f0e408e86",
+     "key": "geo-po-03",
+     "stem": "A population pyramid with a wide base and a narrow top shows",
+     "image_url": null,
+     "explanation": "Many children at the base and few old people at the top is typical of developing countries such as Sierra Leone.\n\n**Why the other options are wrong**\n\n- a low birth rate and an ageing population: That gives a narrow base.\n- more males than females: The sexes are shown on the two sides, not by the shape of the base.\n- a falling population: A wide base shows many births, so the population is growing.",
+     "position": 3,
+     "options": [
+      {
+       "id": "06c2a73b-bc3d-5c07-8fe0-9c692cce055d",
+       "label": "A",
+       "content": "a low birth rate and an ageing population",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "90d8b319-9bee-5831-9b17-85e3f709d7df",
+       "label": "B",
+       "content": "more males than females",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9bfd4fea-359f-5b27-87b2-ce854d3f9e99",
+       "label": "C",
+       "content": "a falling population",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bb254a4f-b7a4-5d38-8121-8c179ed51184",
+       "label": "D",
+       "content": "a high birth rate and a young population",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6e6b3290-8a63-5af2-b5cd-d4e6944b9103",
+     "key": "geo-po-04",
+     "stem": "Which of the following is a push factor of rural–urban migration?",
+     "image_url": null,
+     "explanation": "Push factors drive people away from their home area; pull factors attract them to towns.\n\n**Why the other options are wrong**\n\n- better schools and hospitals in towns: This attracts people, so it is a pull factor.\n- higher wages in towns: This is a pull factor.\n- relatives already living in the town: This is a pull factor.",
+     "position": 4,
+     "options": [
+      {
+       "id": "04e28b1f-6174-565b-8bf4-d3d402541e1e",
+       "label": "A",
+       "content": "lack of jobs and amenities in villages",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "15c4f7ff-1ba9-5c5f-9d9a-39766194798e",
+       "label": "B",
+       "content": "better schools and hospitals in towns",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b02d958c-7281-5c9b-9509-93d0fa2e575a",
+       "label": "C",
+       "content": "higher wages in towns",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0d6da664-40a5-57e7-8324-b9266ff08b0a",
+       "label": "D",
+       "content": "relatives already living in the town",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8f446f39-0d9c-5f0a-a573-dbe1c927002d",
+     "key": "geo-po-05",
+     "stem": "A population census is",
+     "image_url": null,
+     "explanation": "A census records the number, age, sex and other details of everyone in the country, usually every ten years.\n\n**Why the other options are wrong**\n\n- a survey of a sample of households: A sample survey does not count everyone.\n- the registration of births and deaths: That is vital registration.\n- a count of voters before an election: That is voter registration.",
+     "position": 5,
+     "options": [
+      {
+       "id": "efb3e1e0-a876-5976-94b4-bcdeb635c2fe",
+       "label": "A",
+       "content": "a survey of a sample of households",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1e6523c6-d840-50c7-aefa-5b73363c0e42",
+       "label": "B",
+       "content": "an official count of all the people in a country at a given time",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "171d0eec-5a42-596f-b58e-aa4ed502a110",
+       "label": "C",
+       "content": "the registration of births and deaths",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "46e48b91-da0d-557e-9c62-936292628f35",
+       "label": "D",
+       "content": "a count of voters before an election",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "9cbf5051-c11f-5fb6-ba9f-fc15d61e0c06",
+   "topic": "Settlement Patterns",
+   "title": "Settlement Patterns: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on settlement patterns, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 126,
+   "questions": [
+    {
+     "id": "00034f9a-e094-5b49-b364-9a2e71ea66a3",
+     "key": "geo-sp-01",
+     "stem": "A settlement in which the houses are clustered closely together is described as",
+     "image_url": null,
+     "explanation": "Nucleated settlements grow around a centre such as a chief's compound, market or water point.\n\n**Why the other options are wrong**\n\n- dispersed: Dispersed houses are scattered over the land.\n- linear: Linear settlements stretch along a road, river or coast.\n- isolated: An isolated dwelling stands alone.",
+     "position": 1,
+     "options": [
+      {
+       "id": "c7385a9d-0bdf-5cc2-8a99-1fc5f3c30798",
+       "label": "A",
+       "content": "dispersed",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "501db7ec-8a56-5866-ade4-d09c043921e4",
+       "label": "B",
+       "content": "linear",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ac1f8bd8-d4bc-5aff-b8bf-38e92e006c04",
+       "label": "C",
+       "content": "nucleated",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d8c619d9-0012-5486-81bf-b3c4c8155544",
+       "label": "D",
+       "content": "isolated",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3b37a715-b799-5a9b-ad82-09c641efbb35",
+     "key": "geo-sp-02",
+     "stem": "Linear settlements usually develop along",
+     "image_url": null,
+     "explanation": "People build along routes and water to gain access to transport, trade and water.\n\n**Why the other options are wrong**\n\n- the tops of steep mountains: Steep mountain tops discourage settlement.\n- swamps far from routes: Swamps far from routes are avoided.\n- the centre of large forests: Forest centres lack routes for a line of houses.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d0a326f0-524c-512d-9087-58ee47cab476",
+       "label": "A",
+       "content": "the tops of steep mountains",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "64f02e53-dcef-5639-a2df-b7d4da01ee0d",
+       "label": "B",
+       "content": "swamps far from routes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "56f88b80-f382-56a7-8647-18c2d9df00f8",
+       "label": "C",
+       "content": "the centre of large forests",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0eabfe30-3eb3-5c2d-8ca6-c570728abac2",
+       "label": "D",
+       "content": "roads, rivers and coastlines",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2523ec3a-2889-52a6-b7c6-ab5417cb7fab",
+     "key": "geo-sp-03",
+     "stem": "The actual land on which a settlement is built is its",
+     "image_url": null,
+     "explanation": "Site factors include water supply, dry land, defence and flat land.\n\n**Why the other options are wrong**\n\n- situation: Situation is its position in relation to the surrounding area.\n- hinterland: The hinterland is the area served by a settlement.\n- function: Function is the main activity of the settlement.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1df64b56-865a-5d87-8955-0d4a34636ee8",
+       "label": "A",
+       "content": "site",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ddc45d30-8ca2-5f6e-aea4-7ea674f1c72a",
+       "label": "B",
+       "content": "situation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3ad9aa08-d7a1-52cc-91a3-69fdcb177ede",
+       "label": "C",
+       "content": "hinterland",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6d2eed41-5197-50ae-bc34-2d6a4047786c",
+       "label": "D",
+       "content": "function",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "52f5a02b-35c4-5c99-8aa3-5199f73e56cc",
+     "key": "geo-sp-04",
+     "stem": "The minimum number of customers needed to keep a service in business is its",
+     "image_url": null,
+     "explanation": "High-order services such as universities need a large threshold population.\n\n**Why the other options are wrong**\n\n- range: Range is the maximum distance people will travel to use a service.\n- sphere of influence: The sphere of influence is the area a settlement serves.\n- hierarchy: Hierarchy is the ranking of settlements by size and importance.",
+     "position": 4,
+     "options": [
+      {
+       "id": "386f0e03-e420-5401-9a91-7c5fcb889e8f",
+       "label": "A",
+       "content": "range",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "32e8993b-67bd-5711-b60b-be0c863d20a4",
+       "label": "B",
+       "content": "threshold",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "dc89f41b-1cd9-59a7-8f5d-e8ed6055f8aa",
+       "label": "C",
+       "content": "sphere of influence",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cafc9522-6b0c-58a6-9e31-106db6fe080c",
+       "label": "D",
+       "content": "hierarchy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ca426402-55d3-5c84-a815-16905d894d91",
+     "key": "geo-sp-05",
+     "stem": "Koidu in Sierra Leone grew mainly as a",
+     "image_url": null,
+     "explanation": "Koidu, in Kono District, grew after diamonds were discovered there in the 1930s.\n\n**Why the other options are wrong**\n\n- port town: Koidu is far inland, not on the coast.\n- religious centre: Koidu did not grow around a religious centre.\n- national capital: Freetown is the national capital.",
+     "position": 5,
+     "options": [
+      {
+       "id": "7433a20d-e022-58c6-8443-43d5548651d8",
+       "label": "A",
+       "content": "port town",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "682b5695-d517-5243-9170-2806570a1e30",
+       "label": "B",
+       "content": "religious centre",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "048852b3-15b9-56de-95a9-9a79e15c918e",
+       "label": "C",
+       "content": "mining town",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "5955a365-fd0b-5a83-8f8d-8a5af9bb31f2",
+       "label": "D",
+       "content": "national capital",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d150ca95-f88e-5ca7-8bf7-07ff59e1dee0",
+   "topic": "Urbanization",
+   "title": "Urbanization: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on urbanization, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 127,
+   "questions": [
+    {
+     "id": "f231eaa2-4ba2-5df0-a1cc-a1ffaccfba7b",
+     "key": "geo-ur-01",
+     "stem": "Urbanization means",
+     "image_url": null,
+     "explanation": "A country urbanizes when the percentage of its people living in urban areas rises.\n\n**Why the other options are wrong**\n\n- the building of roads between towns: Road building is not urbanization.\n- the movement of people from towns to villages: That is counter-urbanization.\n- the growth of farming around towns: That is peri-urban agriculture.",
+     "position": 1,
+     "options": [
+      {
+       "id": "bc7dd7fb-be11-5609-ac27-ea6576ed3103",
+       "label": "A",
+       "content": "the building of roads between towns",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f19c1294-4bbd-5a5a-883c-1ec7beada9bd",
+       "label": "B",
+       "content": "the movement of people from towns to villages",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ab5d8579-b187-5fd8-943d-86bc72fd5216",
+       "label": "C",
+       "content": "the growth of farming around towns",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3bb38e8b-f4f2-580f-a08a-b7f5a83c6b21",
+       "label": "D",
+       "content": "an increase in the proportion of a country's population living in towns",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "12bd584d-a9a5-549a-97f7-32e3e662aa69",
+     "key": "geo-ur-02",
+     "stem": "Which of the following is a pull factor attracting migrants to towns?",
+     "image_url": null,
+     "explanation": "Pull factors are the attractions of towns: jobs, amenities, security and city life.\n\n**Why the other options are wrong**\n\n- poor harvests in rural areas: This pushes people out of rural areas.\n- land shortage in villages: This is a push factor.\n- insecurity in rural areas: This is a push factor.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c8fa9ec0-9372-57ce-af09-3dbf092dbd52",
+       "label": "A",
+       "content": "better social amenities such as schools, hospitals and electricity",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2169b343-3bc1-5101-a83a-05352ad2862b",
+       "label": "B",
+       "content": "poor harvests in rural areas",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eb1b53dd-468a-5a90-b46a-197798819ca1",
+       "label": "C",
+       "content": "land shortage in villages",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c39e60ab-86f4-5be6-a3b5-d77c9181525b",
+       "label": "D",
+       "content": "insecurity in rural areas",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "626cbdce-8540-53a9-b5f4-cd7f2102d0a7",
+     "key": "geo-ur-03",
+     "stem": "The part of a city with the highest land values, offices, banks and shops is the",
+     "image_url": null,
+     "explanation": "Competition for central, accessible land makes the CBD the most expensive part of a city.\n\n**Why the other options are wrong**\n\n- rural–urban fringe: The fringe is on the edge of the city where land is cheaper.\n- industrial zone: Industry usually lies along transport routes away from the centre.\n- outer residential zone: Outer suburbs are mainly housing.",
+     "position": 3,
+     "options": [
+      {
+       "id": "10d2341b-abdc-5eb0-9576-da526076d8f5",
+       "label": "A",
+       "content": "rural–urban fringe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "16abe276-2cbf-5030-a7aa-3a8063deeac1",
+       "label": "B",
+       "content": "central business district (CBD)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8f4733cc-00ad-5aa9-882a-4dc33cbcf4e6",
+       "label": "C",
+       "content": "industrial zone",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "58a56314-8090-505e-b090-65d49b0ae575",
+       "label": "D",
+       "content": "outer residential zone",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "733a08fc-9b91-5990-8f83-229a65661ddc",
+     "key": "geo-ur-04",
+     "stem": "A major problem caused by rapid urbanization in West African cities is",
+     "image_url": null,
+     "explanation": "Migrants who cannot afford housing build shacks on unplanned land, as at Kroo Bay and Susan's Bay in Freetown.\n\n**Why the other options are wrong**\n\n- a shortage of farm labour in towns: Towns do not depend on farm labour.\n- the decline of urban markets: Urban markets grow with population.\n- a fall in traffic: Traffic increases as cities grow.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c3ca5292-c70f-515f-b99c-a2fcb8c2b52f",
+       "label": "A",
+       "content": "a shortage of farm labour in towns",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "88e95505-8b21-5686-ab24-ea124e54ba5b",
+       "label": "B",
+       "content": "the decline of urban markets",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5a6dec06-16c7-5e73-9eaa-b759dc4bca2f",
+       "label": "C",
+       "content": "the growth of slums and informal settlements",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "58777a8e-cd2c-568a-a8cc-e790dc926e99",
+       "label": "D",
+       "content": "a fall in traffic",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "60f43a04-ab38-504f-93d4-daa33b8f4bdf",
+     "key": "geo-ur-05",
+     "stem": "Which measure would best reduce rural–urban migration?",
+     "image_url": null,
+     "explanation": "Rural development reduces push factors, so fewer people need to move to the cities.\n\n**Why the other options are wrong**\n\n- building more factories in the capital city: This attracts even more migrants to the capital.\n- raising wages only in towns: Higher urban wages pull more people to towns.\n- closing rural schools: This would push more people to towns.",
+     "position": 5,
+     "options": [
+      {
+       "id": "7e7f4e42-0282-5655-bc70-ee7ed18e8361",
+       "label": "A",
+       "content": "building more factories in the capital city",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e606a467-d764-55e1-a41a-ef55f75f4d08",
+       "label": "B",
+       "content": "raising wages only in towns",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8e358c71-ecfc-5c08-bf50-a876ca7d660d",
+       "label": "C",
+       "content": "closing rural schools",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "44c18fa4-200f-563a-bf99-5c0799beafe1",
+       "label": "D",
+       "content": "providing jobs and amenities in rural areas",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "aa0f46eb4edc"
+}

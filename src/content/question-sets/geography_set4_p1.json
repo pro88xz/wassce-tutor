@@ -1,0 +1,1408 @@
+{
+ "name": "geography_set4_p1",
+ "label": "Geography: set 4 (Sierra Leone's economy, West Africa, Africa, ECOWAS and practical geography)",
+ "subject_slug": "geography",
+ "papers": [
+  {
+   "id": "fda8c67b-3b91-5f6b-a580-ee8f707ede5c",
+   "topic": "Economic Geography of Sierra Leone",
+   "title": "Economic Geography of Sierra Leone: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on economic geography of sierra leone, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 160,
+   "questions": [
+    {
+     "id": "2e16da24-cba2-5a7f-8882-4e0ebaab25a2",
+     "key": "geo-se-01",
+     "stem": "Cocoa and coffee in Sierra Leone are grown mainly in",
+     "image_url": null,
+     "explanation": "The forest soils and heavy rainfall of the east suit cocoa and coffee.\n\n**Why the other options are wrong**\n\n- the Freetown Peninsula: The Peninsula is mostly urban and forested hills.\n- the dry savanna of Koinadugu: Cocoa needs heavy rain and forest soils.\n- the mangrove swamps of the coast: Mangrove swamps are salty and waterlogged.",
+     "position": 1,
+     "options": [
+      {
+       "id": "135f3462-c8ca-58f2-9d83-a6f40f434066",
+       "label": "A",
+       "content": "the east, in Kailahun, Kenema and Kono districts",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "063a3cdd-dfcf-594e-8021-a2661ec8c436",
+       "label": "B",
+       "content": "the Freetown Peninsula",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "72fb7cfb-71b8-5f45-9f86-5afb6efd029f",
+       "label": "C",
+       "content": "the dry savanna of Koinadugu",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "62c1c350-f218-5c7d-85f1-86024a86de70",
+       "label": "D",
+       "content": "the mangrove swamps of the coast",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f2a44314-4cc8-5646-ac69-5621dd841697",
+     "key": "geo-se-02",
+     "stem": "An advantage of swamp rice over upland rice in Sierra Leone is that swamp rice",
+     "image_url": null,
+     "explanation": "Swamps and bolilands keep their fertility and, with water control, can give two crops a year.\n\n**Why the other options are wrong**\n\n- needs no water: Swamp rice depends on water from rivers, floods or tides.\n- is grown only on steep slopes: Upland rice is grown on slopes.\n- requires the land to be cleared by burning every year: That describes upland bush fallowing.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8cac30c0-40d1-5e66-a2d2-897b114a166d",
+       "label": "A",
+       "content": "needs no water",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8e7909b8-54ce-5180-9e98-0e8db76b77f1",
+       "label": "B",
+       "content": "gives higher yields and the soil stays fertile",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "74bd0ee3-dcb3-5d19-9314-802cbcac1a03",
+       "label": "C",
+       "content": "is grown only on steep slopes",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1a502210-fd9e-56a9-aadb-872e4b05b41d",
+       "label": "D",
+       "content": "requires the land to be cleared by burning every year",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "28cb04f5-a27c-5ccf-9bf3-ca796e7263c9",
+     "key": "geo-se-03",
+     "stem": "N'Dama cattle are reared in northern Sierra Leone because they",
+     "image_url": null,
+     "explanation": "Tsetse flies spread sleeping sickness, which kills many other breeds.\n\n**Why the other options are wrong**\n\n- give the most milk of any breed: They are kept for their tolerance, not high milk yield.\n- need no grazing land: All cattle need pasture.\n- were brought from Europe: N'Dama is a West African breed.",
+     "position": 3,
+     "options": [
+      {
+       "id": "968727bd-74d0-5a2d-af82-989aa5860fe2",
+       "label": "A",
+       "content": "give the most milk of any breed",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "097bf3f5-723d-5515-87e4-2b7a7370e473",
+       "label": "B",
+       "content": "need no grazing land",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5e9fe28c-849c-5385-8278-eb7ac7ef76e4",
+       "label": "C",
+       "content": "were brought from Europe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bddd3cc7-489e-5e93-8cc9-7a92f127d397",
+       "label": "D",
+       "content": "can tolerate the tsetse fly",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "df9d6454-76b8-556a-b419-6febefe44c64",
+     "key": "geo-se-04",
+     "stem": "The sector that earns most of Sierra Leone's export revenue is",
+     "image_url": null,
+     "explanation": "Iron ore, diamonds, rutile, bauxite and gold provide most export earnings.\n\n**Why the other options are wrong**\n\n- agriculture: Agriculture employs most people but earns less export revenue.\n- manufacturing: Manufacturing is small and serves mainly the home market.\n- tourism: Tourism is still small.",
+     "position": 4,
+     "options": [
+      {
+       "id": "caf1e78a-616c-5966-a728-52dde1b3320b",
+       "label": "A",
+       "content": "mining",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "288ce193-37e2-502f-9b33-1f666dc53e01",
+       "label": "B",
+       "content": "agriculture",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d3fdccf2-6c77-5923-afe6-29a67f237bcb",
+       "label": "C",
+       "content": "manufacturing",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d55f1ead-16a8-581b-91ad-56b32b3c7249",
+       "label": "D",
+       "content": "tourism",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d628bb38-389f-584f-8a91-f45ce3e9f977",
+     "key": "geo-se-05",
+     "stem": "The Wellington Industrial Estate is located in",
+     "image_url": null,
+     "explanation": "Most of Sierra Leone's factories are in Freetown, near the port, market, power and labour.\n\n**Why the other options are wrong**\n\n- Bo: Bo is a commercial centre in the south.\n- Makeni: Makeni is the main town of the north.\n- Koidu: Koidu is a mining town in Kono.",
+     "position": 5,
+     "options": [
+      {
+       "id": "041b5137-4dd9-52d1-ab07-38a8424595a2",
+       "label": "A",
+       "content": "Bo",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b2828405-b7de-5e8f-9185-e72ab73ae41a",
+       "label": "B",
+       "content": "Freetown",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4206254c-ebae-50cc-9273-7fd9a674eecc",
+       "label": "C",
+       "content": "Makeni",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "17542827-f3da-5d4a-a9ae-201f3939875a",
+       "label": "D",
+       "content": "Koidu",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5629b25f-7b10-58a0-99ba-8ce03e4e29d3",
+   "topic": "Geography of West Africa",
+   "title": "Geography of West Africa: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on geography of west africa, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 161,
+   "questions": [
+    {
+     "id": "e9cc2486-b2a5-5ffb-9d25-35d98fe98d39",
+     "key": "geo-wa-01",
+     "stem": "Which of the following West African countries is landlocked?",
+     "image_url": null,
+     "explanation": "Mali, Burkina Faso and Niger are the landlocked countries of West Africa.\n\n**Why the other options are wrong**\n\n- Ghana: Ghana has a coast on the Gulf of Guinea.\n- Togo: Togo has a short coast on the Gulf of Guinea.\n- The Gambia: The Gambia has an Atlantic coast at Banjul.",
+     "position": 1,
+     "options": [
+      {
+       "id": "d9377c5a-4218-5fd0-9d38-0dae6049ebac",
+       "label": "A",
+       "content": "Ghana",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ee969514-36b0-5bfb-9232-fd9ae9b5ccf9",
+       "label": "B",
+       "content": "Togo",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "76c71c93-0cc7-5f8d-a55d-b8e6ec819c92",
+       "label": "C",
+       "content": "Burkina Faso",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "070d2411-76ba-5af7-bbb1-bdce53933a26",
+       "label": "D",
+       "content": "The Gambia",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "384d81f9-c881-5075-9d66-0e3cd890b74e",
+     "key": "geo-wa-02",
+     "stem": "The River Niger rises in",
+     "image_url": null,
+     "explanation": "The Niger rises in the Guinea Highlands close to the Sierra Leone border and flows north-east before turning south.\n\n**Why the other options are wrong**\n\n- the Jos Plateau: The Jos Plateau is in Nigeria, far downstream.\n- the Aïr Mountains: The Aïr Mountains are in the Sahara in northern Niger.\n- the Atlas Mountains: The Atlas Mountains are in north-west Africa.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d6695c85-aff1-5f79-a2ac-99b352b9c0e1",
+       "label": "A",
+       "content": "the Jos Plateau",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "57c6640f-1517-53d3-b165-1ae66b4c7bd0",
+       "label": "B",
+       "content": "the Aïr Mountains",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8aee9814-24c5-5487-9f70-25ad0acf280f",
+       "label": "C",
+       "content": "the Atlas Mountains",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "440fb509-0b6b-525d-b6a0-d6d875f81c0f",
+       "label": "D",
+       "content": "the Guinea Highlands",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e37593df-2ebb-5cc1-8a49-4b354f006165",
+     "key": "geo-wa-03",
+     "stem": "The Rivers Niger and Benue meet at",
+     "image_url": null,
+     "explanation": "The Benue joins the Niger at Lokoja in central Nigeria.\n\n**Why the other options are wrong**\n\n- Timbuktu: Timbuktu is on the Niger bend in Mali.\n- Kainji: Kainji is a dam upstream on the Niger.\n- Lagos: Lagos is on the coast, not on the Niger.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b175cd90-b94f-58ca-882d-1a95b0592f82",
+       "label": "A",
+       "content": "Lokoja",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7b5e97fe-820e-5b21-8989-08650606e29f",
+       "label": "B",
+       "content": "Timbuktu",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "041469d6-1001-5093-b557-3fb06561c0ab",
+       "label": "C",
+       "content": "Kainji",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1613be73-0117-50c1-83a3-60b6ae5ea4bd",
+       "label": "D",
+       "content": "Lagos",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "da9c17b9-6da1-5a24-8668-80345035c13a",
+     "key": "geo-wa-04",
+     "stem": "In July, the Inter-Tropical Convergence Zone (ITCZ) over West Africa lies at about",
+     "image_url": null,
+     "explanation": "The ITCZ follows the overhead sun north, reaching about 18–20°N in July and August.\n\n**Why the other options are wrong**\n\n- about 5 degrees north: That is near its January position.\n- the Equator: The ITCZ moves north of the Equator over West Africa in July.\n- about 30 degrees north: That is north of the Sahel, beyond the ITCZ's range.",
+     "position": 4,
+     "options": [
+      {
+       "id": "df3e838d-e65d-5444-b905-6e6ab472cee5",
+       "label": "A",
+       "content": "about 5 degrees north",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ace6b4f6-33a5-5874-aa2b-7ffdec3ccef0",
+       "label": "B",
+       "content": "about 20 degrees north",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6a66cdc2-f321-5ba8-8234-b792435db518",
+       "label": "C",
+       "content": "the Equator",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1ba8a531-b1e3-5dee-9f8f-afb631baea7a",
+       "label": "D",
+       "content": "about 30 degrees north",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5324a73a-8714-5d53-a64d-cdddd3cf6880",
+     "key": "geo-wa-05",
+     "stem": "Groundnuts and cotton are grown mainly in the",
+     "image_url": null,
+     "explanation": "The Sudan savanna of northern Nigeria and Senegal has a short rainy season suited to groundnuts and cotton.\n\n**Why the other options are wrong**\n\n- tropical rainforest: The forest is too wet; it suits cocoa and oil palm.\n- mangrove swamp: Mangrove swamps are salty and waterlogged.\n- Sahara desert: The desert is too dry without irrigation.",
+     "position": 5,
+     "options": [
+      {
+       "id": "993cb031-c530-5e60-800c-09a2a051b1a6",
+       "label": "A",
+       "content": "tropical rainforest",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "65a4135b-1a5a-59a5-a888-765a11a93d14",
+       "label": "B",
+       "content": "mangrove swamp",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "04b65a7d-b86c-5b40-8613-74f606a0abd3",
+       "label": "C",
+       "content": "Sudan savanna",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c356472e-87d4-5e33-8868-8b4993b77420",
+       "label": "D",
+       "content": "Sahara desert",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "444cc964-bf4e-5c9d-9ab4-f43f1488ef9a",
+   "topic": "Geography of Africa",
+   "title": "Geography of Africa: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on geography of africa, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 162,
+   "questions": [
+    {
+     "id": "20334d36-a4a0-5fac-819e-556e2b804c2b",
+     "key": "geo-af-01",
+     "stem": "The highest mountain in Africa is",
+     "image_url": null,
+     "explanation": "Kilimanjaro in Tanzania rises to 5,895 m.\n\n**Why the other options are wrong**\n\n- Mount Kenya: Mount Kenya (5,199 m) is the second highest.\n- Mount Cameroon: Mount Cameroon is much lower.\n- Toubkal: Toubkal (4,167 m) is the highest peak of the Atlas.",
+     "position": 1,
+     "options": [
+      {
+       "id": "74f711a0-e4d2-5e86-a35d-330912556f40",
+       "label": "A",
+       "content": "Mount Kenya",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dc208dcd-b43f-556d-8daf-f7ef4d0c894b",
+       "label": "B",
+       "content": "Mount Cameroon",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c6a372db-8b1f-549b-ba91-33682b37603e",
+       "label": "C",
+       "content": "Toubkal",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2332cc7d-1944-5e7e-8316-d0d1eb22c8ff",
+       "label": "D",
+       "content": "Mount Kilimanjaro",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a4d2437f-e7f5-51dd-8a10-72b942af4510",
+     "key": "geo-af-02",
+     "stem": "The longest river in Africa is the",
+     "image_url": null,
+     "explanation": "The Nile is about 6,650 km long and flows north into the Mediterranean.\n\n**Why the other options are wrong**\n\n- Congo: The Congo is the second longest and carries the most water.\n- Niger: The Niger is the third longest.\n- Zambezi: The Zambezi is much shorter.",
+     "position": 2,
+     "options": [
+      {
+       "id": "269b2652-74ce-5071-8e5c-8820ca9b81eb",
+       "label": "A",
+       "content": "Nile",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "64265df5-e387-51a8-808c-be05c3eae3be",
+       "label": "B",
+       "content": "Congo",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2a44aacb-8bef-5077-bdf3-0f62d402710f",
+       "label": "C",
+       "content": "Niger",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1790a659-2c96-5083-8893-37f69f436e3b",
+       "label": "D",
+       "content": "Zambezi",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "92b826fe-baf5-5815-8281-99ea61561e99",
+     "key": "geo-af-03",
+     "stem": "The Great Rift Valley of East Africa was formed by",
+     "image_url": null,
+     "explanation": "Tension pulled the crust apart and a block sank between parallel faults.\n\n**Why the other options are wrong**\n\n- river erosion over millions of years: Rivers did not carve the Rift Valley.\n- folding of rock layers: Folding forms fold mountains.\n- glacial erosion: Glaciers did not form it.",
+     "position": 3,
+     "options": [
+      {
+       "id": "4c98bf18-bd2a-56aa-a558-985431aa83ff",
+       "label": "A",
+       "content": "river erosion over millions of years",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f24d2f86-0623-5c15-a3d2-c02e160ee41d",
+       "label": "B",
+       "content": "faulting, as land sank between parallel faults",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4d84b1c9-5a69-5d1a-b627-c335a5f1f864",
+       "label": "C",
+       "content": "folding of rock layers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d19d0fe7-551d-5314-980a-57ccb496a53e",
+       "label": "D",
+       "content": "glacial erosion",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d09a67c8-6381-5854-bf2a-0c4499bc883b",
+     "key": "geo-af-04",
+     "stem": "The largest lake in Africa is",
+     "image_url": null,
+     "explanation": "Lake Victoria is shared by Uganda, Kenya and Tanzania and is the source of the White Nile.\n\n**Why the other options are wrong**\n\n- Lake Chad: Lake Chad is shallow and shrinking.\n- Lake Volta: Lake Volta is a man-made reservoir.\n- Lake Malawi: Lake Malawi is smaller than Lake Victoria.",
+     "position": 4,
+     "options": [
+      {
+       "id": "0e3e7e63-3ee4-5e3f-9d1b-da50980b3502",
+       "label": "A",
+       "content": "Lake Chad",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b5bb4557-064a-5cce-bb43-ecffe4e47ae0",
+       "label": "B",
+       "content": "Lake Volta",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f1fadd8e-fa8d-5ae1-9ef8-bbe560ea1bb5",
+       "label": "C",
+       "content": "Lake Victoria",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9c1afdb1-3890-5538-8ef1-bcc6ea7a2dff",
+       "label": "D",
+       "content": "Lake Malawi",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a3a1e5ca-ab91-570e-979b-17da281fc80f",
+     "key": "geo-af-05",
+     "stem": "The Mediterranean climate in Africa is found in",
+     "image_url": null,
+     "explanation": "Mediterranean climates lie at the northern and southern tips of the continent, about 30–37° from the Equator.\n\n**Why the other options are wrong**\n\n- the Congo Basin: The Congo Basin has an equatorial climate.\n- the Sahel: The Sahel is semi-arid.\n- the East African highlands: These have a cool highland climate.",
+     "position": 5,
+     "options": [
+      {
+       "id": "12af08f5-ad9c-57ea-8186-7adad7f9e1bd",
+       "label": "A",
+       "content": "the Congo Basin",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fd16413e-4705-564b-94a1-ac186b001bff",
+       "label": "B",
+       "content": "the Sahel",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "94930bd5-dbb8-573a-801c-2fd7b26b5680",
+       "label": "C",
+       "content": "the East African highlands",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "260502ea-f758-506a-9b23-2a577698b4f3",
+       "label": "D",
+       "content": "the far north-west and the far south-west (the Cape)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "88159356-ddaf-5c42-96b4-63d3a4b8dfcb",
+   "topic": "ECOWAS and Regional Cooperation",
+   "title": "ECOWAS and Regional Cooperation: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on ecowas and regional cooperation, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 163,
+   "questions": [
+    {
+     "id": "1f4bc582-063e-57a9-bd07-15bc316d01cd",
+     "key": "geo-ec-01",
+     "stem": "ECOWAS was established in",
+     "image_url": null,
+     "explanation": "The Treaty of Lagos was signed on 28 May 1975.\n\n**Why the other options are wrong**\n\n- 1963: 1963 is when the OAU was founded.\n- 1993: 1993 is when the ECOWAS treaty was revised.\n- 1973: 1973 is when the Mano River Union was founded.",
+     "position": 1,
+     "options": [
+      {
+       "id": "db017d99-8564-533d-ae9e-8b8f9f3289a9",
+       "label": "A",
+       "content": "1963",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1ea9751b-4092-5fd2-813e-1dcb73a22b1a",
+       "label": "B",
+       "content": "1973",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "391cf2e8-987f-540f-8007-ee43c3d9dbf8",
+       "label": "C",
+       "content": "1975",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "12769526-5656-5984-afba-d55c542fe1f8",
+       "label": "D",
+       "content": "1993",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1828824e-d779-5beb-b561-a4c14cf96352",
+     "key": "geo-ec-02",
+     "stem": "The headquarters of the ECOWAS Commission is in",
+     "image_url": null,
+     "explanation": "The ECOWAS Commission, Parliament and Court of Justice are in Abuja, Nigeria.\n\n**Why the other options are wrong**\n\n- Lagos: The treaty was signed in Lagos, but the Commission is in Abuja.\n- Freetown: Freetown is the headquarters of the Mano River Union.\n- Accra: Accra hosts the AfCFTA secretariat.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d3dd2114-95a9-5902-bfda-36a84e106e51",
+       "label": "A",
+       "content": "Abuja",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "74b3047b-56d9-5c41-9576-f82142e90ccb",
+       "label": "B",
+       "content": "Lagos",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a6abfed0-292e-5714-97f0-be6d1e6b675a",
+       "label": "C",
+       "content": "Freetown",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "643abd21-3169-50bb-8c63-8edb30452ab0",
+       "label": "D",
+       "content": "Accra",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4444493d-d5f6-56f6-b6b4-b4b32d065a46",
+     "key": "geo-ec-03",
+     "stem": "ECOMOG is",
+     "image_url": null,
+     "explanation": "ECOMOG intervened in Liberia and Sierra Leone, where it helped restore the elected government in 1998.\n\n**Why the other options are wrong**\n\n- the ECOWAS development bank: The bank is the ECOWAS Bank for Investment and Development.\n- the ECOWAS court of justice: The court is the Community Court of Justice.\n- the planned single currency of ECOWAS: The planned currency is the eco.",
+     "position": 3,
+     "options": [
+      {
+       "id": "9b18c10b-d20b-5fc3-93ea-e4892fd62052",
+       "label": "A",
+       "content": "the ECOWAS development bank",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d31ac707-4946-594f-b958-859480d08777",
+       "label": "B",
+       "content": "the ECOWAS ceasefire monitoring group (peacekeeping force)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "cc0bb59b-5986-535d-8785-a188f1e4b9ca",
+       "label": "C",
+       "content": "the ECOWAS court of justice",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e962cb12-06fd-5d03-8fd6-10825eabd2d8",
+       "label": "D",
+       "content": "the planned single currency of ECOWAS",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "534b5d51-ea85-5491-993d-d31f91af8365",
+     "key": "geo-ec-04",
+     "stem": "The three countries that left ECOWAS in January 2025 were",
+     "image_url": null,
+     "explanation": "After military coups, Mali, Burkina Faso and Niger formed the Alliance of Sahel States and left ECOWAS.\n\n**Why the other options are wrong**\n\n- Mauritania, Senegal and The Gambia: Mauritania left in 2000; Senegal and The Gambia are members.\n- Guinea, Liberia and Sierra Leone: These are members of both ECOWAS and the Mano River Union.\n- Ghana, Togo and Benin: These remain ECOWAS members.",
+     "position": 4,
+     "options": [
+      {
+       "id": "1330f2ae-e162-59eb-bae5-c4f1c7794b02",
+       "label": "A",
+       "content": "Mauritania, Senegal and The Gambia",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a7ce68e6-349d-5a8c-a2f6-9eacc27e07e5",
+       "label": "B",
+       "content": "Guinea, Liberia and Sierra Leone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d584b187-77a9-5c22-b931-e1112df56f2a",
+       "label": "C",
+       "content": "Mali, Burkina Faso and Niger",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8fa1b041-9cc7-50e1-b75a-36e9ffcfda3e",
+       "label": "D",
+       "content": "Ghana, Togo and Benin",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2a90a7d2-ad52-5b15-b00f-26c31affd5e6",
+     "key": "geo-ec-05",
+     "stem": "The Mano River Union was founded in 1973 by",
+     "image_url": null,
+     "explanation": "The union is named after the Mano River on the Sierra Leone–Liberia border; its headquarters is in Freetown.\n\n**Why the other options are wrong**\n\n- Guinea and Côte d'Ivoire: They joined later, in 1980 and 2008.\n- Nigeria and Ghana: They are not Mano River Union members.\n- Senegal and Mali: They are not Mano River Union members.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9c754a64-69f9-5205-b4fb-7a712bdec23f",
+       "label": "A",
+       "content": "Guinea and Côte d'Ivoire",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "289c721d-2db0-58d4-9fdd-feeccce66023",
+       "label": "B",
+       "content": "Nigeria and Ghana",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c5c00e9c-ca94-58a0-b04a-5661767c9708",
+       "label": "C",
+       "content": "Senegal and Mali",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "523830e9-c06d-5950-ac08-dabf9e1cec8a",
+       "label": "D",
+       "content": "Sierra Leone and Liberia",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "80a73d4c-dcd1-5ba5-bee5-ece956292ac2",
+   "topic": "Map Reading and Interpretation",
+   "title": "Map Reading and Interpretation: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on map reading and interpretation, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 164,
+   "questions": [
+    {
+     "id": "ad52a594-3e5f-565f-8cef-ff8d330d6285",
+     "key": "geo-mp-01",
+     "stem": "On a map with a scale of 1:50,000, 1 cm represents",
+     "image_url": null,
+     "explanation": "1 cm represents 50,000 cm = 500 m = 0.5 km.\n\n**Why the other options are wrong**\n\n- 5 km: 50,000 cm is 500 m, not 5 km.\n- 50 km: That confuses centimetres with metres.\n- 0.05 km: 50,000 cm is 0.5 km, not 0.05 km.",
+     "position": 1,
+     "options": [
+      {
+       "id": "fe7acf59-1617-5a4e-9d68-11b59c7340e2",
+       "label": "A",
+       "content": "0.5 km",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a2ee9fa2-ad8f-5f52-a1a4-8061510de83b",
+       "label": "B",
+       "content": "5 km",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "600a58e9-cad3-50b3-bf9f-5b07cb942c8e",
+       "label": "C",
+       "content": "50 km",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "05aa070f-a679-560a-8fab-14c47fa20428",
+       "label": "D",
+       "content": "0.05 km",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "845e97ea-c73f-56bc-b83b-0741299601c1",
+     "key": "geo-mp-02",
+     "stem": "On a 1:50,000 map, a straight road measures 6 cm. Its length on the ground is",
+     "image_url": null,
+     "explanation": "6 cm × 0.5 km = 3 km.\n\n**Why the other options are wrong**\n\n- 30 km: Each centimetre is 0.5 km, not 5 km.\n- 0.3 km: Each centimetre is 0.5 km, not 0.05 km.\n- 12 km: That multiplies by 2 instead of dividing.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c32c724a-bb12-582d-9f8f-c079f56232c9",
+       "label": "A",
+       "content": "30 km",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9a74c8bf-61d3-5d61-a900-83ca27fe1612",
+       "label": "B",
+       "content": "3 km",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9966e9b7-db2d-51a4-900d-8ae3bc01bdfe",
+       "label": "C",
+       "content": "0.3 km",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7d3e88f6-33cb-530b-b02a-722a09402af7",
+       "label": "D",
+       "content": "12 km",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a8f90cf9-2a42-5da0-a029-d9bea7132b5e",
+     "key": "geo-mp-03",
+     "stem": "The bearing of a school from a church is 070°. The bearing of the church from the school is",
+     "image_url": null,
+     "explanation": "Back bearing = 070° + 180° = 250°.\n\n**Why the other options are wrong**\n\n- 110°: That subtracts the bearing from 180°.\n- 290°: That subtracts the bearing from 360°.\n- 070°: The return direction is the opposite one.",
+     "position": 3,
+     "options": [
+      {
+       "id": "f86d1e26-c820-5960-889c-1948ccc3b1a6",
+       "label": "A",
+       "content": "110°",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f00f520d-050c-563a-96a7-1693c3740eab",
+       "label": "B",
+       "content": "290°",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4f48f7a0-74cb-546f-b412-bbdf94eb0540",
+       "label": "C",
+       "content": "250°",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "718091fb-83b8-5642-8944-fb2dd6fa9fb5",
+       "label": "D",
+       "content": "070°",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fba4a28b-6b83-55e8-94f3-150988e807fa",
+     "key": "geo-mp-04",
+     "stem": "Contour lines that are very close together on a map show",
+     "image_url": null,
+     "explanation": "Close contours mean a large change in height over a short distance.\n\n**Why the other options are wrong**\n\n- a gentle slope: Widely spaced contours show a gentle slope.\n- flat land: Flat land has few or no contours.\n- a river valley floor: Valley floors are usually gently sloping.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a2a0d05c-654f-5e85-8382-6c511d736875",
+       "label": "A",
+       "content": "a gentle slope",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ef187f04-e7c2-523d-bada-8e4eecd75a11",
+       "label": "B",
+       "content": "flat land",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "635d6d02-8247-5bf4-9829-66721dc8d8a0",
+       "label": "C",
+       "content": "a river valley floor",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "87fda233-bca5-5329-85e6-6537d1c4979e",
+       "label": "D",
+       "content": "a steep slope",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2768ec54-0bcf-5f20-83bc-556ea7b74885",
+     "key": "geo-mp-05",
+     "stem": "Two places differ in height by 100 m and are 2 km apart. The average gradient between them is",
+     "image_url": null,
+     "explanation": "Gradient = vertical interval ÷ horizontal equivalent = 100 m ÷ 2,000 m = 1/20, i.e. 1 in 20.\n\n**Why the other options are wrong**\n\n- 1 in 2: The distance must be in metres: 2 km is 2,000 m.\n- 1 in 200: 100 ÷ 2,000 is 1/20, not 1/200.\n- 1 in 50: That divides 100 into 5,000 instead of 2,000.",
+     "position": 5,
+     "options": [
+      {
+       "id": "fbe8bc8e-48cf-5ce3-825a-79ed727969a4",
+       "label": "A",
+       "content": "1 in 20",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1475c9f2-f48f-549b-b3ed-de412960c183",
+       "label": "B",
+       "content": "1 in 2",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "34b15bad-7a3b-5b2f-967e-7470a9e45ab3",
+       "label": "C",
+       "content": "1 in 200",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b72e4144-00c5-544f-bf5b-61b4257b9b54",
+       "label": "D",
+       "content": "1 in 50",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "77a0d056-fd6a-5b99-9cf8-eb028093381a",
+   "topic": "Geographical Field Work and Survey",
+   "title": "Geographical Field Work and Survey: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on geographical field work and survey, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 165,
+   "questions": [
+    {
+     "id": "9baead4b-96a8-575b-b2dd-c849c352201c",
+     "key": "geo-fw-01",
+     "stem": "A first visit to a study area to check access, safety and what can be studied is called",
+     "image_url": null,
+     "explanation": "Reconnaissance is an early planning step before the main fieldwork.\n\n**Why the other options are wrong**\n\n- a census: A census counts a whole population.\n- a traverse: A traverse is a series of survey lines.\n- a questionnaire: A questionnaire is a list of written questions.",
+     "position": 1,
+     "options": [
+      {
+       "id": "d1c67692-b1ee-57b9-bf2d-4c31497d158d",
+       "label": "A",
+       "content": "a census",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2e75674d-977a-57cb-887c-9ea64abd4558",
+       "label": "B",
+       "content": "a reconnaissance survey",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d2e79931-e288-5170-aef7-629dc2bb1681",
+       "label": "C",
+       "content": "a traverse",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "af42dcc2-fd12-5956-a356-4d4ae8a4be0b",
+       "label": "D",
+       "content": "a questionnaire",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "97687e34-1e0f-54e6-87df-626a7ee8f905",
+     "key": "geo-fw-02",
+     "stem": "In a chain survey, offsets are measured",
+     "image_url": null,
+     "explanation": "Each feature is fixed by its chainage along the line and its offset at a right angle.\n\n**Why the other options are wrong**\n\n- along the chain line from station to station: Distances along the line are chainages.\n- as bearings from magnetic north: Bearings are used in compass survey.\n- vertically to find heights: Heights are measured by levelling.",
+     "position": 2,
+     "options": [
+      {
+       "id": "dcd21483-a7b9-5c06-bc01-b3637d457d94",
+       "label": "A",
+       "content": "along the chain line from station to station",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "db533b49-2cf1-5c32-8d8e-bdde6926b3bf",
+       "label": "B",
+       "content": "as bearings from magnetic north",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9676f05d-3058-5dbe-b1ca-6030b0cb082e",
+       "label": "C",
+       "content": "at right angles from the chain line to features",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b7c92c0a-d2f2-5560-93f9-db32cfd747d3",
+       "label": "D",
+       "content": "vertically to find heights",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "32c1e01d-0dbb-5663-a641-278c43c320cd",
+     "key": "geo-fw-03",
+     "stem": "The instrument used to measure bearings in a traverse survey is the",
+     "image_url": null,
+     "explanation": "The prismatic compass gives forward and back bearings at each station.\n\n**Why the other options are wrong**\n\n- ranging pole: Ranging poles mark stations and keep lines straight.\n- rain gauge: A rain gauge measures rainfall.\n- clinometer: A clinometer measures slope angles.",
+     "position": 3,
+     "options": [
+      {
+       "id": "900bef80-e448-540d-bcfb-ad63ea5da4dd",
+       "label": "A",
+       "content": "ranging pole",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "53700590-b118-582d-a069-9fc9a2fe1b03",
+       "label": "B",
+       "content": "rain gauge",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5d81b1f1-7ea3-51ca-8b82-c773ab2b4943",
+       "label": "C",
+       "content": "clinometer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4add51d8-bb7a-51ac-9c62-65c06d492436",
+       "label": "D",
+       "content": "prismatic compass",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9ed7620f-220f-5615-a5cf-7f80bbdfd380",
+     "key": "geo-fw-04",
+     "stem": "Choosing every tenth house along a street for an interview is an example of",
+     "image_url": null,
+     "explanation": "Systematic sampling chooses items at regular intervals.\n\n**Why the other options are wrong**\n\n- random sampling: In random sampling every item has an equal chance, chosen without a pattern.\n- stratified sampling: Stratified sampling divides the population into groups first.\n- a census: A census includes every house.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c1d4162a-b0e3-59e0-aca3-9a81e323c496",
+       "label": "A",
+       "content": "systematic sampling",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "70fd1099-298d-523a-bdb8-a1a74bb999bf",
+       "label": "B",
+       "content": "random sampling",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "587ef94f-08d7-5b95-8291-dc1ba1c94604",
+       "label": "C",
+       "content": "stratified sampling",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "212e30c8-6010-5746-a01d-92e5390d2d91",
+       "label": "D",
+       "content": "a census",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2a88ca1b-f227-5f5e-8fc2-86394d2570ad",
+     "key": "geo-fw-05",
+     "stem": "Ranging poles are used in chain survey to",
+     "image_url": null,
+     "explanation": "Lining up the ranging poles keeps the chain line straight between stations.\n\n**Why the other options are wrong**\n\n- measure the length of offsets: Offsets are measured with an offset staff or tape.\n- measure the angle of a slope: Slopes are measured with a clinometer.\n- record measurements: Measurements are recorded in a field book.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ce77da1c-94ff-5604-b28f-4502e80053dd",
+       "label": "A",
+       "content": "measure the length of offsets",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "97044b69-7537-50f0-b7bc-127bf895017f",
+       "label": "B",
+       "content": "mark the stations and keep the chain line straight",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5697f530-eb78-56ed-896d-98a58f1c8b73",
+       "label": "C",
+       "content": "measure the angle of a slope",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "899b19a4-2ae5-56db-941c-d3c418452093",
+       "label": "D",
+       "content": "record measurements",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8d096477-a668-5206-bef1-7676cd5b506a",
+   "topic": "Statistical Geography",
+   "title": "Statistical Geography: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on statistical geography, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 166,
+   "questions": [
+    {
+     "id": "0ddc830b-91fe-53bc-a16d-98bd6f28f89b",
+     "key": "geo-st-01",
+     "stem": "In a pie chart, a part worth 100 out of a total of 400 is shown by a sector of",
+     "image_url": null,
+     "explanation": "Angle = 100 ÷ 400 × 360° = 90°.\n\n**Why the other options are wrong**\n\n- 100°: The angle is not the raw value.\n- 25°: 25 is the percentage, not the angle.\n- 45°: That divides by 800 instead of 400.",
+     "position": 1,
+     "options": [
+      {
+       "id": "37faeb27-42a5-576a-992e-fbf278abdc42",
+       "label": "A",
+       "content": "100°",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c77631f9-572c-586e-a760-d6e04d1067c1",
+       "label": "B",
+       "content": "25°",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "48eec164-9977-5744-be07-c3fc94a60aba",
+       "label": "C",
+       "content": "90°",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "057d2488-9b22-5a56-b874-2f7438ad12c8",
+       "label": "D",
+       "content": "45°",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cf8a5587-7275-5f66-a5c0-c842766e0f09",
+     "key": "geo-st-02",
+     "stem": "Which graph is best for showing how the population of a town changed over twenty years?",
+     "image_url": null,
+     "explanation": "Line graphs show trends in continuous data over time.\n\n**Why the other options are wrong**\n\n- a pie chart: A pie chart shows parts of a whole at one time.\n- a dot map: A dot map shows distribution in space, not change over time.\n- a divided bar: A divided bar shows parts of a total.",
+     "position": 2,
+     "options": [
+      {
+       "id": "21b49f89-a94b-59f8-bc83-7a41565bcd5d",
+       "label": "A",
+       "content": "a pie chart",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "205e37ee-e25a-5b8c-afe5-8328f2664067",
+       "label": "B",
+       "content": "a dot map",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "39957a31-8cb8-5cf0-bdf8-5e096d787cf7",
+       "label": "C",
+       "content": "a divided bar",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2fa1e8ab-b772-5cf0-8c57-364e49a3cd20",
+       "label": "D",
+       "content": "a line graph",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c4455c0a-2a2c-50aa-a97d-678606cf222c",
+     "key": "geo-st-03",
+     "stem": "Isohyets are lines on a map joining places with equal",
+     "image_url": null,
+     "explanation": "Isohyets show how rainfall varies across an area.\n\n**Why the other options are wrong**\n\n- temperature: Lines of equal temperature are isotherms.\n- pressure: Lines of equal pressure are isobars.\n- height: Lines of equal height are contours.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d709f5a4-a995-55da-b616-6a91f8c8ceeb",
+       "label": "A",
+       "content": "rainfall",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3be19c6a-2343-533b-98ee-e57c20781b08",
+       "label": "B",
+       "content": "temperature",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "665ca7fb-72f4-5950-867c-93e9a01d4b48",
+       "label": "C",
+       "content": "pressure",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1ff23892-22bb-54d2-9cd9-450033cb6750",
+       "label": "D",
+       "content": "height",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "64fcbbdd-f7a7-5477-96b6-db26301c7e78",
+     "key": "geo-st-04",
+     "stem": "A map on which areas are shaded darker for higher values, such as population density, is a",
+     "image_url": null,
+     "explanation": "Choropleth maps shade each area by class, using shades of one colour.\n\n**Why the other options are wrong**\n\n- dot map: Dot maps use dots of a fixed value.\n- flow map: Flow maps use arrows to show movement.\n- isopleth map: Isopleth maps join points of equal value with lines.",
+     "position": 4,
+     "options": [
+      {
+       "id": "08d0b582-88a2-54ba-9822-1844c78ce72f",
+       "label": "A",
+       "content": "dot map",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a034d9c4-60c7-5f98-a898-e76b4d37ce1f",
+       "label": "B",
+       "content": "choropleth map",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "97f49b69-3d49-5020-aaec-21be028ccb56",
+       "label": "C",
+       "content": "flow map",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "627c4fb8-4ab9-5eab-b37a-a7ea23576388",
+       "label": "D",
+       "content": "isopleth map",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6b3a8511-6e35-5e26-b432-7289aa2b709a",
+     "key": "geo-st-05",
+     "stem": "The median of the values 4, 9, 2, 7 and 5 is",
+     "image_url": null,
+     "explanation": "In order: 2, 4, 5, 7, 9. The middle value is 5.\n\n**Why the other options are wrong**\n\n- 5.4: 5.4 is the mean (27 ÷ 5).\n- 2: 2 is the middle value of the list before it is put in order.\n- 7: 7 is the range (9 − 2).",
+     "position": 5,
+     "options": [
+      {
+       "id": "a4c8456e-e77c-58d2-b2e1-f6eda14f539f",
+       "label": "A",
+       "content": "5.4",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a8005854-bd5b-58bc-bfcd-5999f8ea5c96",
+       "label": "B",
+       "content": "2",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b04ef17d-c6d5-571b-a611-c291812ccdcb",
+       "label": "C",
+       "content": "5",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "065c04e2-bcb9-59a3-8fe3-4d24fc2f7390",
+       "label": "D",
+       "content": "7",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "8ce0028f02fb"
+}

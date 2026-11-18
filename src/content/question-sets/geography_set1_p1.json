@@ -1,0 +1,1608 @@
+{
+ "name": "geography_set1_p1",
+ "label": "Geography: set 1 (the Earth, rocks, tectonics, weathering, rivers, coasts and landforms)",
+ "subject_slug": "geography",
+ "papers": [
+  {
+   "id": "84d0daea-ef59-520e-8b6b-614340c8df75",
+   "topic": "Introduction to Geography",
+   "title": "Introduction to Geography: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on introduction to geography, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 100,
+   "questions": [
+    {
+     "id": "18f2d39f-98f0-5e5a-a3e9-4a635dfa9d2d",
+     "key": "geo-in-01",
+     "stem": "Geography is best described as the study of",
+     "image_url": null,
+     "explanation": "Geography studies the Earth's surface, its physical features and human activities, and how people and the environment affect each other.\n\n**Why the other options are wrong**\n\n- past events and how human societies have changed over time: That is history.\n- rocks and minerals and how they were formed: That is geology, only one part of what geography uses.\n- the stars, planets and other bodies in space: That is astronomy.",
+     "position": 1,
+     "options": [
+      {
+       "id": "c22bbde4-2d7e-598d-b139-709ea7f24723",
+       "label": "A",
+       "content": "the Earth's surface and the relationship between people and their environment",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7123a1bf-8cda-5e3c-b054-1da811ff3727",
+       "label": "B",
+       "content": "past events and how human societies have changed over time",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eb242e4a-ede6-5a50-9a3d-ae591cd41dcc",
+       "label": "C",
+       "content": "rocks and minerals and how they were formed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f204f7da-2be7-514e-b903-e311a7ffc213",
+       "label": "D",
+       "content": "the stars, planets and other bodies in space",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fecd9032-763f-52ed-8936-e14eefd6a7cc",
+     "key": "geo-in-02",
+     "stem": "The study of landforms, climate, soils and vegetation belongs to",
+     "image_url": null,
+     "explanation": "Physical geography deals with the natural environment: relief, climate, soils, vegetation and drainage.\n\n**Why the other options are wrong**\n\n- human geography: Human geography studies people: population, settlement and economic activities.\n- economic geography: Economic geography is a branch of human geography about farming, industry and trade.\n- political geography: Political geography studies states, boundaries and government.",
+     "position": 2,
+     "options": [
+      {
+       "id": "50ec5104-c91a-5eae-a816-6a1ccb2e2679",
+       "label": "A",
+       "content": "human geography",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ce9d1609-5ede-5cbd-a8b2-1cc5956989cb",
+       "label": "B",
+       "content": "physical geography",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c8c618e6-931f-5270-9748-cbcf6e6236f8",
+       "label": "C",
+       "content": "economic geography",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "da79930d-5024-541b-887e-65aeaa98e683",
+       "label": "D",
+       "content": "political geography",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c9c6917f-b743-5248-a914-46f6b3a064ad",
+     "key": "geo-in-03",
+     "stem": "The study of all the physical and human features of one area, such as West Africa, is called",
+     "image_url": null,
+     "explanation": "Regional geography studies a region as a whole, bringing together its physical and human geography.\n\n**Why the other options are wrong**\n\n- systematic geography: Systematic geography studies one topic, such as climate, across the world.\n- biogeography: Biogeography studies the distribution of plants and animals.\n- cartography: Cartography is the art and science of making maps.",
+     "position": 3,
+     "options": [
+      {
+       "id": "97da17af-3e7e-5e0f-8cb9-c7081b762ab6",
+       "label": "A",
+       "content": "systematic geography",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3716b22c-d50e-5597-acf5-fd0eafc8ec67",
+       "label": "B",
+       "content": "biogeography",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "670c19ff-7538-5df1-a2a1-9f08711ea294",
+       "label": "C",
+       "content": "regional geography",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6c7483d5-0e06-5391-b957-75b1cd220976",
+       "label": "D",
+       "content": "cartography",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c88ea6f4-578f-5020-a93c-420dbc564e75",
+     "key": "geo-in-04",
+     "stem": "Which of the following is a human feature of the landscape?",
+     "image_url": null,
+     "explanation": "Human features are made or changed by people: towns, roads, farms, mines and ports.\n\n**Why the other options are wrong**\n\n- a river valley: A valley is formed by natural processes, so it is a physical feature.\n- a mangrove swamp: Mangrove swamps are natural vegetation, a physical feature.\n- a volcanic cone: A volcano is a physical landform.",
+     "position": 4,
+     "options": [
+      {
+       "id": "637e50d5-7c01-5355-93ef-cbece55b906b",
+       "label": "A",
+       "content": "a river valley",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6a77d50f-90e7-594f-b597-83e8f3fec2d8",
+       "label": "B",
+       "content": "a mangrove swamp",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "60c12b3c-b511-5d54-ae13-81b59e76fbe0",
+       "label": "C",
+       "content": "a volcanic cone",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "585dfd8f-3130-5fc3-8895-85c714eb8ad7",
+       "label": "D",
+       "content": "a market town",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ab5801b1-cf95-5faa-8d0c-9c6666b4ec34",
+     "key": "geo-in-05",
+     "stem": "A computer system for storing, analysing and displaying information about places is called",
+     "image_url": null,
+     "explanation": "A GIS combines maps and data on a computer so that geographers can analyse and display patterns.\n\n**Why the other options are wrong**\n\n- remote sensing: Remote sensing collects images of the Earth from satellites or aircraft; GIS stores and analyses data.\n- a census: A census is an official count of a population.\n- a weather station: A weather station measures weather elements.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e66084b6-1b09-5193-a451-13fc43e06fbe",
+       "label": "A",
+       "content": "a geographic information system (GIS)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "f395b481-4c57-5a37-8688-a0e4f5532635",
+       "label": "B",
+       "content": "remote sensing",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d2ea42da-681f-5125-92e2-f75dc70a4357",
+       "label": "C",
+       "content": "a census",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "930e3d6d-c82f-5366-9895-02d072e8b2dd",
+       "label": "D",
+       "content": "a weather station",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "65fac7eb-d65b-58e7-b5be-0e6caaf6c2e5",
+   "topic": "The Earth and the Solar System",
+   "title": "The Earth and the Solar System: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the earth and the solar system, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 101,
+   "questions": [
+    {
+     "id": "aa7655cd-a2f5-51cf-83a1-22559b77048b",
+     "key": "geo-es-01",
+     "stem": "Which planet is nearest to the Sun?",
+     "image_url": null,
+     "explanation": "The order outwards from the Sun begins Mercury, Venus, Earth, Mars.\n\n**Why the other options are wrong**\n\n- Venus: Venus is the second planet from the Sun.\n- Earth: Earth is the third planet from the Sun.\n- Mars: Mars is the fourth planet from the Sun.",
+     "position": 1,
+     "options": [
+      {
+       "id": "674e8617-83d4-5a28-9f4a-fbbceb3fea39",
+       "label": "A",
+       "content": "Venus",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "82062545-fa9c-5b9d-b875-f735a3185edb",
+       "label": "B",
+       "content": "Mercury",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d86409a3-2cf4-5432-9d3c-f57e59bbf085",
+       "label": "C",
+       "content": "Earth",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8b947210-5cba-5810-a2dd-222d086046c7",
+       "label": "D",
+       "content": "Mars",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d8acc12d-ac96-57d5-aa9e-16d8dc94cbd4",
+     "key": "geo-es-02",
+     "stem": "The Earth completes one rotation on its axis in about",
+     "image_url": null,
+     "explanation": "One rotation from west to east takes about 24 hours and causes day and night.\n\n**Why the other options are wrong**\n\n- 365¼ days: That is the time for one revolution around the Sun.\n- 29½ days: That is roughly the Moon's cycle of phases.\n- 12 hours: Twelve hours is only about half a rotation.",
+     "position": 2,
+     "options": [
+      {
+       "id": "be76a50d-6dee-58ea-b09e-7a8463587247",
+       "label": "A",
+       "content": "365¼ days",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "38061fd7-9c50-5c25-8324-5637ff1b7184",
+       "label": "B",
+       "content": "29½ days",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6b5df0b1-42b7-5cea-96f7-839c129363a1",
+       "label": "C",
+       "content": "24 hours",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4c3bd33c-1d35-524e-8f67-4a9b9a26562d",
+       "label": "D",
+       "content": "12 hours",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e09d1504-e5d2-5a06-912a-d29eb9fa6608",
+     "key": "geo-es-03",
+     "stem": "The changing seasons are caused mainly by",
+     "image_url": null,
+     "explanation": "Because the axis is tilted at about 23½°, the overhead sun moves between the tropics as the Earth revolves, giving seasons.\n\n**Why the other options are wrong**\n\n- the rotation of the Earth on its axis: Rotation causes day and night, not seasons.\n- the changing distance between the Earth and the Moon: The Moon causes tides, not seasons.\n- the movement of ocean currents: Currents affect coastal climates but do not cause seasons.",
+     "position": 3,
+     "options": [
+      {
+       "id": "3aafca41-68bb-5b41-a2e4-9046457566f7",
+       "label": "A",
+       "content": "the rotation of the Earth on its axis",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0dbf22f6-8736-5d68-a612-a86d86dfaa5d",
+       "label": "B",
+       "content": "the changing distance between the Earth and the Moon",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b94a101f-a5cc-5ac5-a717-91603f9875ef",
+       "label": "C",
+       "content": "the movement of ocean currents",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c87f69f9-afda-5df0-8719-20876c4093fe",
+       "label": "D",
+       "content": "the revolution of the Earth around the Sun with its axis tilted",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2c9fd145-b5d3-5a5f-9044-9cac4fc3aa1e",
+     "key": "geo-es-04",
+     "stem": "When it is 12.00 noon at Greenwich (0°), what is the local time at a place on longitude 30°E?",
+     "image_url": null,
+     "explanation": "15° of longitude = 1 hour. 30° = 2 hours, and east is ahead, so 12.00 noon + 2 hours = 2.00 p.m.\n\n**Why the other options are wrong**\n\n- 10.00 a.m.  \n  Places east of Greenwich are ahead; subtracting gives the time at 30°W.\n- 1.00 p.m.  \n  Each hour is 15° of longitude, so 30° is two hours, not one.\n- 12.30 p.m.  \n  That treats 1° as one minute; each degree is four minutes.",
+     "position": 4,
+     "options": [
+      {
+       "id": "6cef3c1d-1d7f-5f50-8d2e-f8dc09628a73",
+       "label": "A",
+       "content": "2.00 p.m.",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9d6d3d22-a439-58d4-b599-b628291fbbbe",
+       "label": "B",
+       "content": "10.00 a.m.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ebd02ee4-4486-503e-9b28-3fb1ea609ea9",
+       "label": "C",
+       "content": "1.00 p.m.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "49cf2848-df3d-5504-b722-57e18807ad49",
+       "label": "D",
+       "content": "12.30 p.m.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4749185f-b0ea-5380-b53c-939495eb69a3",
+     "key": "geo-es-05",
+     "stem": "The sun is overhead at the Equator at noon on",
+     "image_url": null,
+     "explanation": "At the equinoxes, about 21 March and 23 September, the noon sun is overhead at the Equator and day and night are equal everywhere.\n\n**Why the other options are wrong**\n\n- 21 June and 22 December: These are the solstices, when the sun is overhead at the tropics.\n- 21 June only: On 21 June the sun is overhead at the Tropic of Cancer.\n- 1 January and 1 July: These dates have no special position of the overhead sun.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e481fde5-a893-5bf8-bdc5-54b857250eb0",
+       "label": "A",
+       "content": "21 June and 22 December",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cdf6b70b-d13a-545c-87c8-21c027694289",
+       "label": "B",
+       "content": "21 March and 23 September",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "129df20d-9084-5e98-9f8b-68d21d5685a3",
+       "label": "C",
+       "content": "21 June only",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5b8962f5-ecf1-5479-ba00-0de3416b28d0",
+       "label": "D",
+       "content": "1 January and 1 July",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "23e61edb-6510-50f8-8a7f-0652de2c2db6",
+   "topic": "The Earth's Internal Structure and Rocks",
+   "title": "The Earth's Internal Structure and Rocks: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the earth's internal structure and rocks, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 102,
+   "questions": [
+    {
+     "id": "dbe355d3-ace9-5cef-bd86-17962af76478",
+     "key": "geo-ir-01",
+     "stem": "The outermost solid layer of the Earth is called the",
+     "image_url": null,
+     "explanation": "From the outside inwards the layers are the crust, mantle, outer core and inner core.\n\n**Why the other options are wrong**\n\n- mantle: The mantle lies beneath the crust.\n- outer core: The outer core is liquid and lies deep below the mantle.\n- inner core: The inner core is the solid centre of the Earth.",
+     "position": 1,
+     "options": [
+      {
+       "id": "b109cbb2-17e4-5672-b800-9899b01bffc6",
+       "label": "A",
+       "content": "mantle",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d4996bc9-166f-55b2-849c-0d90c61c0ea1",
+       "label": "B",
+       "content": "outer core",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "96359b92-38ce-5591-a571-af561c54ed1e",
+       "label": "C",
+       "content": "crust",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8cff934e-d19e-5fcb-adf2-915b3ddd4f93",
+       "label": "D",
+       "content": "inner core",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "29b4418b-2367-5748-9ed7-9e909d641481",
+     "key": "geo-ir-02",
+     "stem": "Rocks formed by the cooling and hardening of magma or lava are called",
+     "image_url": null,
+     "explanation": "Igneous rocks form when molten rock cools, either inside the crust (intrusive) or on the surface (extrusive).\n\n**Why the other options are wrong**\n\n- sedimentary rocks: Sedimentary rocks form from layers of deposited material.\n- metamorphic rocks: Metamorphic rocks are existing rocks changed by heat and pressure.\n- organic rocks: Organic rocks, such as coal, form from the remains of living things.",
+     "position": 2,
+     "options": [
+      {
+       "id": "58fd1bf5-e499-5bc0-b4a1-a38723d018d9",
+       "label": "A",
+       "content": "sedimentary rocks",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b426125d-1f47-5027-bcdc-1524f9865468",
+       "label": "B",
+       "content": "metamorphic rocks",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0ee1fd61-7cd8-52c1-a94d-da9c27363ee9",
+       "label": "C",
+       "content": "organic rocks",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "95a1d174-d4e0-5511-9157-decb805ccc53",
+       "label": "D",
+       "content": "igneous rocks",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1b1696b4-406b-5c5e-9464-50f853a32a36",
+     "key": "geo-ir-03",
+     "stem": "Granite is an example of",
+     "image_url": null,
+     "explanation": "Granite cools slowly deep in the crust, so it is intrusive and has large crystals.\n\n**Why the other options are wrong**\n\n- an extrusive igneous rock: Extrusive rocks such as basalt cool quickly on the surface and have small crystals.\n- a sedimentary rock: Granite is not formed from deposited layers.\n- a metamorphic rock: Granite is not a changed form of another rock; when changed it becomes gneiss.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d0518cfe-cff9-5e43-992d-ec76f79019ed",
+       "label": "A",
+       "content": "an intrusive igneous rock",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ba9ef8ed-6933-507c-a5b5-7828b43cd47a",
+       "label": "B",
+       "content": "an extrusive igneous rock",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3d150743-d7be-505a-bc1c-e9f159862d16",
+       "label": "C",
+       "content": "a sedimentary rock",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bc75dceb-e803-5931-bca4-bf61c493ce34",
+       "label": "D",
+       "content": "a metamorphic rock",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5d6d4190-fa70-59e5-b21c-d44b8df81b48",
+     "key": "geo-ir-04",
+     "stem": "Marble is formed by the metamorphism of",
+     "image_url": null,
+     "explanation": "Heat and pressure change limestone into marble.\n\n**Why the other options are wrong**\n\n- granite: Metamorphosed granite becomes gneiss.\n- shale: Metamorphosed shale (clay) becomes slate.\n- sandstone: Metamorphosed sandstone becomes quartzite.",
+     "position": 4,
+     "options": [
+      {
+       "id": "47c0ab5f-faab-524b-ac87-9e3f034f5c85",
+       "label": "A",
+       "content": "granite",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d1c5ee20-7aaf-545b-9ced-4bee6a94b5fb",
+       "label": "B",
+       "content": "limestone",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "fb27aead-aec8-5b41-8050-28d5bac16ca1",
+       "label": "C",
+       "content": "shale",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b2a52f71-7760-50d0-8dd5-ab63a9859d0b",
+       "label": "D",
+       "content": "sandstone",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "198120d4-d9d5-5ce9-bf62-7a918dfd1892",
+     "key": "geo-ir-05",
+     "stem": "Coal is an example of a sedimentary rock that is",
+     "image_url": null,
+     "explanation": "Coal forms from the compressed remains of plants, so it is an organically formed sedimentary rock.\n\n**Why the other options are wrong**\n\n- mechanically formed: Mechanically formed rocks, such as sandstone, are made of rock particles.\n- chemically formed: Chemically formed rocks, such as rock salt, come from precipitated minerals.\n- formed by cooling magma: That describes igneous rocks.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f13c456b-4827-5283-afe7-c7ed0d9f9928",
+       "label": "A",
+       "content": "mechanically formed",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1089b6fb-c981-57fe-8658-70ede9247b47",
+       "label": "B",
+       "content": "chemically formed",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3ec9d2bf-8877-5496-a97e-03faf002dfe8",
+       "label": "C",
+       "content": "organically formed",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "51e220ce-cdd9-5602-8411-95fdc714140b",
+       "label": "D",
+       "content": "formed by cooling magma",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "af0522c3-2d95-510e-9420-a4cd0830ab15",
+   "topic": "Plate Tectonics, Earthquakes, and Volcanoes",
+   "title": "Plate Tectonics, Earthquakes, and Volcanoes: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on plate tectonics, earthquakes, and volcanoes, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 103,
+   "questions": [
+    {
+     "id": "f5873d6b-36e0-5740-a017-cde1223bb442",
+     "key": "geo-pt-01",
+     "stem": "The Mid-Atlantic Ridge has formed at a",
+     "image_url": null,
+     "explanation": "Where plates move apart, magma rises and forms new crust and an ocean ridge.\n\n**Why the other options are wrong**\n\n- destructive (convergent) plate boundary: Destructive boundaries form trenches and fold mountains.\n- conservative plate boundary: At conservative boundaries plates slide past each other; no new crust forms.\n- collision boundary between two continents: Continental collisions form fold mountains such as the Himalayas.",
+     "position": 1,
+     "options": [
+      {
+       "id": "55db0016-ffcb-5383-9b28-7af25337cff6",
+       "label": "A",
+       "content": "destructive (convergent) plate boundary",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b650dfcd-7705-57ec-990e-0392cb5f5138",
+       "label": "B",
+       "content": "conservative plate boundary",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "abacbc4a-519c-539b-8b0d-e8adf04d4bf0",
+       "label": "C",
+       "content": "collision boundary between two continents",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a77b5e71-3a56-58e0-a3ef-86685956ea2a",
+       "label": "D",
+       "content": "constructive (divergent) plate boundary",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6a058e71-e833-5bcf-813b-c8b0d26eb970",
+     "key": "geo-pt-02",
+     "stem": "The point on the Earth's surface directly above the focus of an earthquake is the",
+     "image_url": null,
+     "explanation": "The epicentre lies directly above the focus; shaking is usually strongest there.\n\n**Why the other options are wrong**\n\n- focus: The focus is the point underground where the earthquake starts.\n- crater: A crater is the hollow at the top of a volcano.\n- fault: A fault is a crack along which rocks have moved.",
+     "position": 2,
+     "options": [
+      {
+       "id": "44a07292-15db-541e-bb37-887a9887d339",
+       "label": "A",
+       "content": "epicentre",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "98adf28e-1230-52c6-9242-ac9b99f5e390",
+       "label": "B",
+       "content": "focus",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ce34652e-b615-5bf8-974d-20541b3def40",
+       "label": "C",
+       "content": "crater",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "099ba2f8-5267-5753-9b8c-0589ff42949b",
+       "label": "D",
+       "content": "fault",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fdec1c20-c58b-5877-bb95-ca30a6bcf66d",
+     "key": "geo-pt-03",
+     "stem": "The instrument used to record earthquake waves is the",
+     "image_url": null,
+     "explanation": "A seismograph records the shaking of the ground during an earthquake.\n\n**Why the other options are wrong**\n\n- barometer: A barometer measures air pressure.\n- hygrometer: A hygrometer measures humidity.\n- anemometer: An anemometer measures wind speed.",
+     "position": 3,
+     "options": [
+      {
+       "id": "fdd63db2-d99e-5e03-9acf-e94abedc7ff4",
+       "label": "A",
+       "content": "barometer",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ef5dde3e-261d-5744-9975-d4ec164a89f7",
+       "label": "B",
+       "content": "seismograph",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "858866c4-d30e-5b23-85f4-bfcb0996383e",
+       "label": "C",
+       "content": "hygrometer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0edc8c21-b182-547a-98eb-92116960db5e",
+       "label": "D",
+       "content": "anemometer",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "998c221e-f3fa-57f5-9ab8-84206ae7ac0c",
+     "key": "geo-pt-04",
+     "stem": "Deep ocean trenches are formed where",
+     "image_url": null,
+     "explanation": "At destructive boundaries the denser oceanic plate sinks into the mantle, forming a deep trench.\n\n**Why the other options are wrong**\n\n- two plates move apart: Plates moving apart form ridges, not trenches.\n- two plates slide past each other: Sliding plates cause earthquakes but not trenches.\n- magma rises at a hot spot: Hot spots form volcanic islands.",
+     "position": 4,
+     "options": [
+      {
+       "id": "67ece11e-2860-5643-84f5-1164a18d3df0",
+       "label": "A",
+       "content": "two plates move apart",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b6901021-41fb-535e-8231-9d2a18d192bd",
+       "label": "B",
+       "content": "two plates slide past each other",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "066552ae-bf0a-55f1-9cf2-fb1272ed078a",
+       "label": "C",
+       "content": "an oceanic plate is subducted beneath another plate",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "89e1d8d0-f6f5-5ffc-a990-03f71e538443",
+       "label": "D",
+       "content": "magma rises at a hot spot",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5b08d915-c368-583e-a6a0-0ed4138f6e96",
+     "key": "geo-pt-05",
+     "stem": "A vertical sheet of igneous rock that cuts across the layers of other rocks is called a",
+     "image_url": null,
+     "explanation": "A dyke forms when magma rises through vertical cracks and cools across the bedding planes.\n\n**Why the other options are wrong**\n\n- sill: A sill lies horizontally, along the rock layers.\n- batholith: A batholith is a huge dome-shaped mass of intrusive rock.\n- laccolith: A laccolith is a dome-shaped intrusion that pushes up the rocks above it.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d2f841cc-6304-5d4e-8324-e385c8c0700f",
+       "label": "A",
+       "content": "sill",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "839f0ecc-56f7-500a-8644-ff1e66067a56",
+       "label": "B",
+       "content": "batholith",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d7f76a27-71a4-55ad-935c-9edd9c54c4a9",
+       "label": "C",
+       "content": "laccolith",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "37045216-8394-5c0f-b97a-961bfe1a9c94",
+       "label": "D",
+       "content": "dyke",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "85d4c539-4264-51dd-8889-ba45bb60f60b",
+   "topic": "Weathering and Mass Wasting",
+   "title": "Weathering and Mass Wasting: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on weathering and mass wasting, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 104,
+   "questions": [
+    {
+     "id": "dc85152d-af2e-5473-b0eb-8c375ff1637e",
+     "key": "geo-wm-01",
+     "stem": "The breaking down of rocks in their original place, without movement, is called",
+     "image_url": null,
+     "explanation": "Weathering happens in situ; erosion wears away and carries the material away.\n\n**Why the other options are wrong**\n\n- erosion: Erosion involves the removal and transport of material.\n- deposition: Deposition is the laying down of material.\n- transportation: Transportation is the carrying of material by agents.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f66078e3-81f0-5db4-af67-0870a61fb106",
+       "label": "A",
+       "content": "weathering",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c716c8c8-481d-56d6-95b8-7a1fe5c8ed1a",
+       "label": "B",
+       "content": "erosion",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6bd9130d-1e52-5fab-81c3-a770c41d247e",
+       "label": "C",
+       "content": "deposition",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7d7329b7-a06f-5d70-9fa3-54a12ded8287",
+       "label": "D",
+       "content": "transportation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "133a6163-3711-54d1-b5aa-812e7aadb180",
+     "key": "geo-wm-02",
+     "stem": "Exfoliation (onion weathering) is common in hot deserts mainly because of",
+     "image_url": null,
+     "explanation": "Rocks heat and expand by day and cool and contract at night, so the outer layers peel off.\n\n**Why the other options are wrong**\n\n- heavy rainfall throughout the year: Deserts have very little rain.\n- repeated freezing and thawing of water: Frost action is typical of cold regions.\n- the growth of plant roots: Deserts have few plants.",
+     "position": 2,
+     "options": [
+      {
+       "id": "326c2385-9d9c-5be3-868d-785c600125b5",
+       "label": "A",
+       "content": "heavy rainfall throughout the year",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ae01097f-443e-54ab-a8e1-f3b6c402135e",
+       "label": "B",
+       "content": "large daily ranges of temperature",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "dd333ac7-f634-5fbf-bdd6-42ce3df72e05",
+       "label": "C",
+       "content": "repeated freezing and thawing of water",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e34c0500-500f-5f6d-85b7-12c12dcfd65f",
+       "label": "D",
+       "content": "the growth of plant roots",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0d543230-70a6-5559-a681-95b63409170a",
+     "key": "geo-wm-03",
+     "stem": "Chemical weathering is most rapid in",
+     "image_url": null,
+     "explanation": "Heat and moisture speed up chemical reactions such as oxidation, hydrolysis and carbonation.\n\n**Why the other options are wrong**\n\n- hot, dry deserts: Chemical reactions need water, which deserts lack.\n- cold, dry polar regions: Cold and dryness slow chemical reactions.\n- temperate grasslands: These are cooler and drier than the humid tropics.",
+     "position": 3,
+     "options": [
+      {
+       "id": "bea759c4-bdc5-5e52-848d-f81d82ed9271",
+       "label": "A",
+       "content": "hot, dry deserts",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3b302456-d9fe-5cbd-8aab-58ec2058afcb",
+       "label": "B",
+       "content": "cold, dry polar regions",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2b3a3d43-73cd-55ab-80f4-26de6b73a63c",
+       "label": "C",
+       "content": "hot, wet climates",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b2c6a7d4-36fd-5b57-977c-aea96a77e5ea",
+       "label": "D",
+       "content": "temperate grasslands",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7107a8a8-a2ae-50a4-b48b-dc5ce197467f",
+     "key": "geo-wm-04",
+     "stem": "The slowest type of mass movement is",
+     "image_url": null,
+     "explanation": "Soil creep is a very slow downhill movement of soil, seen in bent trees and tilted posts.\n\n**Why the other options are wrong**\n\n- landslide: A landslide is a sudden, rapid movement.\n- mudflow: Mudflows move quickly after heavy rain.\n- rockfall: A rockfall is a sudden fall of rock from a cliff.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7def8100-fc7e-54eb-9c62-e8d8e757b7fa",
+       "label": "A",
+       "content": "landslide",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f7364aed-1a56-58a7-9200-377c50d6219e",
+       "label": "B",
+       "content": "mudflow",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c8836b30-a91e-5659-8814-d1e71e077815",
+       "label": "C",
+       "content": "rockfall",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4724844e-7df8-581f-9019-a4beb48ef16b",
+       "label": "D",
+       "content": "soil creep",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "835491b4-e168-540f-b54d-d39a80fef256",
+     "key": "geo-wm-05",
+     "stem": "Which human activity increases the risk of landslides on hillsides?",
+     "image_url": null,
+     "explanation": "Clearing vegetation and building on steep slopes, as on the hills above Freetown, loosens soil and increases water on the slope.\n\n**Why the other options are wrong**\n\n- planting trees on the slopes: Tree roots bind the soil and reduce landslides.\n- cutting terraces across the slopes: Terracing reduces runoff and soil movement.\n- building retaining walls: Retaining walls hold slopes in place.",
+     "position": 5,
+     "options": [
+      {
+       "id": "c38b8938-9b24-5872-bb22-592c7c465f75",
+       "label": "A",
+       "content": "removing vegetation and building on steep slopes",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "17f6ff51-a6b6-50b3-852d-a5bb6ad2a24e",
+       "label": "B",
+       "content": "planting trees on the slopes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "281311af-a834-595c-9149-0fbad59181b6",
+       "label": "C",
+       "content": "cutting terraces across the slopes",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c9ee6384-90e5-56df-a905-9dbdcbbafb0c",
+       "label": "D",
+       "content": "building retaining walls",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c29d6d01-cf82-56d6-acae-11b0a4de7087",
+   "topic": "Erosion and Deposition by Rivers",
+   "title": "Erosion and Deposition by Rivers: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on erosion and deposition by rivers, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 105,
+   "questions": [
+    {
+     "id": "8b8b283f-2b48-566d-9b9b-0f7816687fbc",
+     "key": "geo-rv-01",
+     "stem": "The wearing away of a river's bed and banks by the load it carries is called",
+     "image_url": null,
+     "explanation": "In corrasion, stones carried by the river grind against the bed and banks.\n\n**Why the other options are wrong**\n\n- attrition: Attrition is the load wearing itself down as particles knock together.\n- hydraulic action: Hydraulic action is the force of the water itself.\n- solution (corrosion): Solution is the dissolving of rocks by the water.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8d7b7b82-7e51-573f-bd92-68ba5f7a4d7e",
+       "label": "A",
+       "content": "attrition",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2bb813d9-bd5c-5366-9e72-0ccf8eea57b0",
+       "label": "B",
+       "content": "corrasion (abrasion)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5cc887f4-dc88-5756-afb9-8f05a294944d",
+       "label": "C",
+       "content": "hydraulic action",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "794b69c6-a1f0-52d6-a0e6-e6a91f074dff",
+       "label": "D",
+       "content": "solution (corrosion)",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "444da3ba-4eb4-5f7e-aa3b-e76cd6c408aa",
+     "key": "geo-rv-02",
+     "stem": "Which feature is typical of the upper course of a river?",
+     "image_url": null,
+     "explanation": "In the upper course, vertical erosion cuts a narrow V-shaped valley that winds between interlocking spurs.\n\n**Why the other options are wrong**\n\n- an oxbow lake: Oxbow lakes form in the lower course.\n- a delta: Deltas form at the mouth.\n- levees: Levees form along the lower course and flood plain.",
+     "position": 2,
+     "options": [
+      {
+       "id": "3d5cff29-8699-51c0-ab7c-f632c9d5dda8",
+       "label": "A",
+       "content": "an oxbow lake",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b542fea4-9dea-5eec-84f3-02b705a6b6bd",
+       "label": "B",
+       "content": "a delta",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a2f421d8-74ff-5513-bdc5-7668766cf3ce",
+       "label": "C",
+       "content": "a V-shaped valley with interlocking spurs",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ddaf3a11-2ed9-54cb-baf0-934d66735e78",
+       "label": "D",
+       "content": "levees",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "38ea3ef9-34e4-5c8e-bef6-a098b44a4113",
+     "key": "geo-rv-03",
+     "stem": "An oxbow lake is formed when",
+     "image_url": null,
+     "explanation": "Erosion narrows the meander neck; a flood cuts through it and deposition seals off the old loop.\n\n**Why the other options are wrong**\n\n- a river plunges over a band of hard rock: That forms a waterfall.\n- a river deposits sediment at its mouth: That forms a delta.\n- a landslide blocks a valley: That can form a lake but not an oxbow.",
+     "position": 3,
+     "options": [
+      {
+       "id": "697f5f4e-4a2b-5e57-b06e-ac0951939557",
+       "label": "A",
+       "content": "a river plunges over a band of hard rock",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6254d727-142a-5f7e-991a-f0b1dd4d0f32",
+       "label": "B",
+       "content": "a river deposits sediment at its mouth",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b939fc5d-16df-55dd-8de2-c53e3325ed59",
+       "label": "C",
+       "content": "a landslide blocks a valley",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "27b54ad9-4fd2-5924-8838-c9a67f31b34e",
+       "label": "D",
+       "content": "a river cuts through the narrow neck of a meander, usually during a flood",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "887826b6-d1a1-505e-95e4-7c12470f4493",
+     "key": "geo-rv-04",
+     "stem": "Large stones rolled along the bed of a river are transported by",
+     "image_url": null,
+     "explanation": "Traction is the rolling and dragging of the largest particles along the river bed.\n\n**Why the other options are wrong**\n\n- saltation: Saltation is the bouncing of smaller particles.\n- suspension: Fine particles carried within the water are in suspension.\n- solution: Dissolved minerals are carried in solution.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ceb035bd-7ea9-58ce-a7a0-9416750e3780",
+       "label": "A",
+       "content": "traction",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "49c769e6-73ae-5895-8027-ef929dc47c7c",
+       "label": "B",
+       "content": "saltation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4b227a32-e7a9-5f98-ba27-35a4c0a4b698",
+       "label": "C",
+       "content": "suspension",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "59aceb8f-0bf0-59a6-b7c1-a1957668a3b2",
+       "label": "D",
+       "content": "solution",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "edf7dd2b-639c-50de-9762-631116af821f",
+     "key": "geo-rv-05",
+     "stem": "A delta forms at a river mouth where",
+     "image_url": null,
+     "explanation": "A large load and calm water at the mouth allow sediment to build up, as in the Niger Delta.\n\n**Why the other options are wrong**\n\n- the river flows over hard rock: Hard rock leads to waterfalls and rapids, not deltas.\n- strong tides carry the sediment out to sea: Strong tides prevent deltas and form estuaries.\n- the river is in its upper course: Deltas form at the mouth, in the lower course.",
+     "position": 5,
+     "options": [
+      {
+       "id": "3bdfe544-fd4f-5d20-af3a-52d2e3926a59",
+       "label": "A",
+       "content": "the river flows over hard rock",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3ad5a1a7-0186-57b0-9f79-68c319bb7014",
+       "label": "B",
+       "content": "the river deposits sediment faster than waves and currents can remove it",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8af1fcca-95e7-506e-9ce5-7426eb284aed",
+       "label": "C",
+       "content": "strong tides carry the sediment out to sea",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e021d417-d5fb-58bd-a84d-2b21a692d9c4",
+       "label": "D",
+       "content": "the river is in its upper course",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2ecb1f35-4fa7-5698-9180-b67f3ac34fc2",
+   "topic": "Erosion by Wind, Ice, and Sea",
+   "title": "Erosion by Wind, Ice, and Sea: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on erosion by wind, ice, and sea, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 106,
+   "questions": [
+    {
+     "id": "b44d50c0-101e-5642-9e83-fca60fba858e",
+     "key": "geo-wi-01",
+     "stem": "A crescent-shaped sand dune with its horns pointing downwind is called a",
+     "image_url": null,
+     "explanation": "Barchans form where there is limited sand and wind from one direction.\n\n**Why the other options are wrong**\n\n- seif dune: Seif dunes are long, narrow ridges parallel to the wind.\n- yardang: A yardang is a ridge of rock carved by wind erosion.\n- zeugen: Zeugen are table-like ridges formed where hard rock overlies soft rock.",
+     "position": 1,
+     "options": [
+      {
+       "id": "59abbe84-bace-530d-ad6a-f361537d39c4",
+       "label": "A",
+       "content": "seif dune",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "97996e11-31da-5c11-bd40-b144147fd8f3",
+       "label": "B",
+       "content": "yardang",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a7a05347-893c-56b1-9657-0f5b2a6e9a89",
+       "label": "C",
+       "content": "barchan",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ef35f1b2-a6c2-511b-bc7a-df92521d2528",
+       "label": "D",
+       "content": "zeugen",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aba5850f-1d34-555b-a9af-9fc9cb2c90a1",
+     "key": "geo-wi-02",
+     "stem": "A mushroom-shaped rock in a desert is formed mainly by",
+     "image_url": null,
+     "explanation": "Wind carries sand close to the ground, so it wears away the base of the rock faster than the top, forming a rock pedestal.\n\n**Why the other options are wrong**\n\n- frost action: Frost action is rare in hot deserts.\n- river erosion: Rivers in deserts are seasonal and do not produce this shape.\n- deposition by glaciers: Glaciers do not occur in hot deserts.",
+     "position": 2,
+     "options": [
+      {
+       "id": "44e97a46-550c-57d7-827e-e812cd47d6b5",
+       "label": "A",
+       "content": "frost action",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2b083474-15eb-5abf-a89e-1266e346a10b",
+       "label": "B",
+       "content": "river erosion",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "312cb23d-747e-5779-8f8e-d190d6a4869c",
+       "label": "C",
+       "content": "deposition by glaciers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1b0391ba-ea8b-5efd-b0ad-f00513de8ef4",
+       "label": "D",
+       "content": "wind abrasion near the ground",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d8bccec7-dfc6-52ce-891e-46d516399c39",
+     "key": "geo-wi-03",
+     "stem": "The movement of sand and shingle along a coast by waves is called",
+     "image_url": null,
+     "explanation": "Waves approaching at an angle push material up the beach; backwash returns it straight down, so it zigzags along the coast.\n\n**Why the other options are wrong**\n\n- backwash: Backwash is the return of water down the beach.\n- hydraulic action: Hydraulic action is erosion by the force of water.\n- attrition: Attrition is the wearing down of particles against each other.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2a00b504-7c65-5693-81b8-26a827e70395",
+       "label": "A",
+       "content": "longshore drift",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "563fea90-8b45-5867-a177-5f80d287d6be",
+       "label": "B",
+       "content": "backwash",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6e116fde-000b-5274-ba14-41813af1da90",
+       "label": "C",
+       "content": "hydraulic action",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "73cd0f6b-de44-522e-b787-208895d2c2d1",
+       "label": "D",
+       "content": "attrition",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "150e2f03-1f5e-54c7-bc8a-e4e8988873d6",
+     "key": "geo-wi-04",
+     "stem": "A ridge of sand or shingle joined to the land at one end and ending in the sea is a",
+     "image_url": null,
+     "explanation": "Longshore drift builds a spit out from the coast where the coastline changes direction.\n\n**Why the other options are wrong**\n\n- tombolo: A tombolo links the mainland to an island.\n- stack: A stack is a pillar of rock left by erosion.\n- bar: A bar stretches across a bay, joining land at both ends.",
+     "position": 4,
+     "options": [
+      {
+       "id": "66553809-3d77-518d-b13b-6b13ee5ee58a",
+       "label": "A",
+       "content": "tombolo",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b82ebcba-602b-575a-bed6-f02698cff6de",
+       "label": "B",
+       "content": "spit",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "37269451-2d24-5570-a8e4-3ea9570bddb5",
+       "label": "C",
+       "content": "stack",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1f72f9a6-2b3c-5c98-bc51-1caf84e74ad4",
+       "label": "D",
+       "content": "bar",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "40134c02-5929-500a-a868-abebcaa416a7",
+     "key": "geo-wi-05",
+     "stem": "An armchair-shaped hollow on a mountainside, formed by glacial erosion, is a",
+     "image_url": null,
+     "explanation": "Ice plucks and abrades the back wall and floor of a hollow, deepening it into a cirque.\n\n**Why the other options are wrong**\n\n- arête: An arête is the sharp ridge between two cirques.\n- moraine: A moraine is material deposited by a glacier.\n- drumlin: A drumlin is an egg-shaped hill of glacial deposits.",
+     "position": 5,
+     "options": [
+      {
+       "id": "aa7baf7c-a60a-5588-9463-fd227336f72f",
+       "label": "A",
+       "content": "arête",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c9c76b57-9ced-57b8-8c72-e9467b8dc5d4",
+       "label": "B",
+       "content": "moraine",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d147c3d3-ddd0-5320-9688-f227fc4ad99c",
+       "label": "C",
+       "content": "cirque (corrie)",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a95c7e2a-9763-516c-ba89-e90627e480b5",
+       "label": "D",
+       "content": "drumlin",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f93fe341-9e7c-5fb5-b394-5d3ff7a81a27",
+   "topic": "Landforms",
+   "title": "Landforms: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on landforms, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 107,
+   "questions": [
+    {
+     "id": "e027220f-c6df-57ef-af7a-8b37c2825caf",
+     "key": "geo-lf-01",
+     "stem": "Fold mountains are formed mainly by",
+     "image_url": null,
+     "explanation": "When plates converge, the rock layers are squeezed and buckle into folds.\n\n**Why the other options are wrong**\n\n- tension that pulls the crust apart: Tension forms rift valleys and block mountains.\n- lava building up around a vent: That forms volcanic mountains.\n- erosion of a plateau: Erosion of a plateau leaves residual mountains.",
+     "position": 1,
+     "options": [
+      {
+       "id": "1d627fc3-914d-5fb0-a8b9-8d3394a430cd",
+       "label": "A",
+       "content": "tension that pulls the crust apart",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "171d49ef-158a-5d47-8fa4-c3d6cb859a72",
+       "label": "B",
+       "content": "lava building up around a vent",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c7acb0c2-027f-5431-94a1-ff5f4e507f8a",
+       "label": "C",
+       "content": "erosion of a plateau",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1c661917-f3e9-5101-98a7-77e43261648c",
+       "label": "D",
+       "content": "compression of rock layers as plates move towards each other",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f593df98-8bbb-50f9-b827-8ac640bd38e9",
+     "key": "geo-lf-02",
+     "stem": "Which of the following is an example of fold mountains in Africa?",
+     "image_url": null,
+     "explanation": "The Atlas Mountains of north-west Africa were formed by folding.\n\n**Why the other options are wrong**\n\n- Mount Kilimanjaro: Kilimanjaro is a volcanic mountain.\n- the Ruwenzori: The Ruwenzori are block mountains.\n- the Jos Plateau: The Jos Plateau is a plateau of old rocks.",
+     "position": 2,
+     "options": [
+      {
+       "id": "2507f71c-6055-560b-b5bd-83476345cb98",
+       "label": "A",
+       "content": "the Atlas Mountains",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6182727b-bd0e-5af7-bff4-de1c106a9b4c",
+       "label": "B",
+       "content": "Mount Kilimanjaro",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "435595ca-325b-5836-8cda-ecfba0aee2a9",
+       "label": "C",
+       "content": "the Ruwenzori",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "485ab8d6-7bfd-5007-95b1-e4e5bc36c9a9",
+       "label": "D",
+       "content": "the Jos Plateau",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1ed68169-c8ce-581e-acba-6b3f8107e0fd",
+     "key": "geo-lf-03",
+     "stem": "A block mountain (horst) is formed when",
+     "image_url": null,
+     "explanation": "Faulting can push up a block of land between parallel faults, forming a horst such as the Ruwenzori.\n\n**Why the other options are wrong**\n\n- a block of land sinks between two parallel faults: That forms a rift valley.\n- rock layers are squeezed into folds: That forms fold mountains.\n- lava piles up around a vent: That forms a volcano.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d3150488-6c97-51f3-8976-c4e726e5e8fb",
+       "label": "A",
+       "content": "a block of land sinks between two parallel faults",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "181085ba-697d-5b40-af3b-971a4800ffc6",
+       "label": "B",
+       "content": "a block of land is raised, or left standing, between two parallel faults",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "98e94704-f132-58de-a4f7-5ac4f56849be",
+       "label": "C",
+       "content": "rock layers are squeezed into folds",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "de7b1f5c-3c2b-5203-a577-cd571eb206d5",
+       "label": "D",
+       "content": "lava piles up around a vent",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b25f6d55-7250-5c7a-a75e-f49b11a4a40b",
+     "key": "geo-lf-04",
+     "stem": "An isolated, steep-sided, rounded hill rising abruptly from a tropical plain is called",
+     "image_url": null,
+     "explanation": "Inselbergs are resistant masses of rock, often granite, left standing above the surrounding plain.\n\n**Why the other options are wrong**\n\n- a mesa: A mesa is a large flat-topped hill of layered rock, typical of deserts.\n- a cuesta: A cuesta has a steep scarp slope and a gentle dip slope.\n- a delta: A delta is a depositional feature at a river mouth.",
+     "position": 4,
+     "options": [
+      {
+       "id": "24d49092-c9ce-5e51-83f0-8b61e91bc9e7",
+       "label": "A",
+       "content": "a mesa",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0f1b174b-413b-5813-891f-0c9c0ed741c4",
+       "label": "B",
+       "content": "a cuesta",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c52999e6-8e30-5ed0-bebb-5cf52b42bf50",
+       "label": "C",
+       "content": "an inselberg",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b531ea3a-8e6a-5a95-9dea-a53a0f16d6b1",
+       "label": "D",
+       "content": "a delta",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1835b115-2871-5800-9d05-a91f5ae92233",
+     "key": "geo-lf-05",
+     "stem": "An extensive area of high, fairly flat land with steep sides is a",
+     "image_url": null,
+     "explanation": "A plateau is a tableland: high, flat-topped land, often bounded by escarpments.\n\n**Why the other options are wrong**\n\n- plain: A plain is low, flat land.\n- valley: A valley is a long depression, usually with a river.\n- ridge: A ridge is a long, narrow area of high ground.",
+     "position": 5,
+     "options": [
+      {
+       "id": "4abe41b4-b603-5bff-aea0-6a00c21bc6a4",
+       "label": "A",
+       "content": "plain",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9b369c43-e271-5692-a660-3c1850170bd6",
+       "label": "B",
+       "content": "valley",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "db6e1ec9-48b2-53e4-9b5a-760ef88dc907",
+       "label": "C",
+       "content": "ridge",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "26bf329b-f0dd-51ab-bbd9-7d6bfc223d80",
+       "label": "D",
+       "content": "plateau",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "271e5bb49592"
+}

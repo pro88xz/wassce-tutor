@@ -505,6 +505,73 @@
   "questions": 25
  },
  {
+  "name": "geography_set1_p1",
+  "label": "Geography: set 1 (the Earth, rocks, tectonics, weathering, rivers, coasts and landforms)",
+  "subject_slug": "geography",
+  "version": "271e5bb49592",
+  "papers": [
+   "84d0daea-ef59-520e-8b6b-614340c8df75",
+   "65fac7eb-d65b-58e7-b5be-0e6caaf6c2e5",
+   "23e61edb-6510-50f8-8a7f-0652de2c2db6",
+   "af0522c3-2d95-510e-9420-a4cd0830ab15",
+   "85d4c539-4264-51dd-8889-ba45bb60f60b",
+   "c29d6d01-cf82-56d6-acae-11b0a4de7087",
+   "2ecb1f35-4fa7-5698-9180-b67f3ac34fc2",
+   "f93fe341-9e7c-5fb5-b394-5d3ff7a81a27"
+  ],
+  "questions": 40
+ },
+ {
+  "name": "geography_set2_p1",
+  "label": "Geography: set 2 (drainage, weather and climate, vegetation, soils, population and settlement)",
+  "subject_slug": "geography",
+  "version": "aa0f46eb4edc",
+  "papers": [
+   "e50baad3-3638-5949-bf0a-3e61ac2dbaa8",
+   "36968c25-b5d3-5ff8-b0e6-8f371eb59db0",
+   "9bc1a82d-c1fa-5b7f-9268-d1b623bb2a77",
+   "68540163-3b9a-5b4f-8310-ac97cebdfeb2",
+   "f324126e-443a-50ee-a2c2-cb468005efac",
+   "d6c090c0-5dfe-5656-98af-adee3cb4d8c7",
+   "9cbf5051-c11f-5fb6-ba9f-fc15d61e0c06",
+   "d150ca95-f88e-5ca7-8bf7-07ff59e1dee0"
+  ],
+  "questions": 40
+ },
+ {
+  "name": "geography_set3_p1",
+  "label": "Geography: set 3 (agriculture, mining, industry, energy, transport, trade, environment, Sierra Leone)",
+  "subject_slug": "geography",
+  "version": "b35242aefcd2",
+  "papers": [
+   "71aec147-a7ce-5717-bf6c-96305f60c46b",
+   "97558728-1a95-59ab-9686-ccc4c18ef8c9",
+   "77cb230d-a7ac-57e5-869d-7636bfff991d",
+   "ec001e9a-fb80-5d61-9cae-678f7de48d69",
+   "5212f53b-887b-5d74-8b86-fa316cb7ac82",
+   "2595d738-c208-522a-b810-00fe01343cd9",
+   "e62dacaf-0139-561c-9a5e-6784675871e5",
+   "e04fa3d2-1a4b-53ac-a46b-05d9bb1ab145"
+  ],
+  "questions": 40
+ },
+ {
+  "name": "geography_set4_p1",
+  "label": "Geography: set 4 (Sierra Leone's economy, West Africa, Africa, ECOWAS and practical geography)",
+  "subject_slug": "geography",
+  "version": "8ce0028f02fb",
+  "papers": [
+   "fda8c67b-3b91-5f6b-a580-ee8f707ede5c",
+   "5629b25f-7b10-58a0-99ba-8ce03e4e29d3",
+   "444cc964-bf4e-5c9d-9ab4-f43f1488ef9a",
+   "88159356-ddaf-5c42-96b4-63d3a4b8dfcb",
+   "80a73d4c-dcd1-5ba5-bee5-ece956292ac2",
+   "77a0d056-fd6a-5b99-9cf8-eb028093381a",
+   "8d096477-a668-5206-bef1-7676cd5b506a"
+  ],
+  "questions": 35
+ },
+ {
   "name": "biology_set1_p1",
   "label": "Biology: set 1 (cells, nutrition, respiration, transport, ecology and genetics)",
   "subject_slug": "biology",

@@ -1,0 +1,1608 @@
+{
+ "name": "geography_set3_p1",
+ "label": "Geography: set 3 (agriculture, mining, industry, energy, transport, trade, environment, Sierra Leone)",
+ "subject_slug": "geography",
+ "papers": [
+  {
+   "id": "71aec147-a7ce-5717-bf6c-96305f60c46b",
+   "topic": "Agriculture as an Economic Activity",
+   "title": "Agriculture as an Economic Activity: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on agriculture as an economic activity, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 140,
+   "questions": [
+    {
+     "id": "e5d037e2-1023-559e-9b78-05a254da2c9e",
+     "key": "geo-ag-01",
+     "stem": "In shifting cultivation, the farmer",
+     "image_url": null,
+     "explanation": "Land is cleared by slash and burn, farmed for two or three years, then abandoned for a new area.\n\n**Why the other options are wrong**\n\n- uses fertilisers to farm the same plot every year: That is permanent cultivation.\n- rears cattle in search of pasture: That is pastoral nomadism.\n- grows one cash crop on a large estate: That is plantation agriculture.",
+     "position": 1,
+     "options": [
+      {
+       "id": "3d454a4a-6460-5493-a56a-082f6df5a08b",
+       "label": "A",
+       "content": "moves to a new piece of land when the soil becomes exhausted",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c419dc96-ab5d-56b3-b611-8138cb2e4843",
+       "label": "B",
+       "content": "uses fertilisers to farm the same plot every year",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "88773ecd-c5a3-5cc7-85d9-512fbc61661b",
+       "label": "C",
+       "content": "rears cattle in search of pasture",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "db5bbde2-ac2a-5df1-a976-9096874bb518",
+       "label": "D",
+       "content": "grows one cash crop on a large estate",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "db8ac676-1182-5400-bc45-565931f6ee3b",
+     "key": "geo-ag-02",
+     "stem": "Bush fallowing differs from shifting cultivation because in bush fallowing",
+     "image_url": null,
+     "explanation": "Farmers stay in one village and return to plots after a fallow period.\n\n**Why the other options are wrong**\n\n- the land is never left to rest: Bush fallowing depends on resting the land.\n- crops are grown only for export: Bush fallowing is mainly for food.\n- machines are used to clear the land: Clearing is usually by cutlass and fire.",
+     "position": 2,
+     "options": [
+      {
+       "id": "2893434a-e5a6-52be-a7cb-eebb76684a9e",
+       "label": "A",
+       "content": "the land is never left to rest",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "18a2be8b-104e-5f2b-bcb8-16908c370cff",
+       "label": "B",
+       "content": "the village is permanent and only the farm plots are rotated",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7f7a0804-e5bf-5a2d-ba26-9d57fadce548",
+       "label": "C",
+       "content": "crops are grown only for export",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5ad55a51-c62a-5b5b-bed6-c5fa363fb210",
+       "label": "D",
+       "content": "machines are used to clear the land",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5c460646-e1d2-526c-a984-158c7edb240d",
+     "key": "geo-ag-03",
+     "stem": "Plantation agriculture is the",
+     "image_url": null,
+     "explanation": "Examples are rubber at Harbel in Liberia and oil palm estates in Pujehun District, Sierra Leone.\n\n**Why the other options are wrong**\n\n- growing of food crops by a family for its own use: That is subsistence farming.\n- rearing of animals by moving herds from place to place: That is pastoral nomadism.\n- growing of crops and rearing of animals on the same farm: That is mixed farming.",
+     "position": 3,
+     "options": [
+      {
+       "id": "95bf7615-6cc0-54b5-964e-96982881dfca",
+       "label": "A",
+       "content": "growing of food crops by a family for its own use",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7012946c-737a-542c-99ae-ce95f061ce8b",
+       "label": "B",
+       "content": "rearing of animals by moving herds from place to place",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3f6be9c2-de4e-5500-81ed-1eae77798a46",
+       "label": "C",
+       "content": "growing of a single cash crop on a large estate, mainly for export",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c56b7f52-5850-5ca8-a6fb-fe6b1e037314",
+       "label": "D",
+       "content": "growing of crops and rearing of animals on the same farm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5e7dc1c0-c4f1-5524-9315-07f3c2cd2d2f",
+     "key": "geo-ag-04",
+     "stem": "Pastoral nomadism in West Africa is practised mainly by the",
+     "image_url": null,
+     "explanation": "Fulani herders move cattle across the savanna and Sahel in search of water and pasture.\n\n**Why the other options are wrong**\n\n- Mende: The Mende are mainly crop farmers in southern Sierra Leone.\n- Ashanti: The Ashanti of Ghana are known for cocoa farming.\n- Igbo: The Igbo of south-eastern Nigeria are mainly crop farmers and traders.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a277c9cb-c1c8-5516-886f-d0e8f44b5843",
+       "label": "A",
+       "content": "Mende",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e3e00692-2b99-5039-ae74-1120d7aabd45",
+       "label": "B",
+       "content": "Ashanti",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "09a7a780-7f17-5d6c-ad53-02bbe4971132",
+       "label": "C",
+       "content": "Igbo",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0c0d033e-1651-5462-8cd2-19737b61baef",
+       "label": "D",
+       "content": "Fulani",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ac1c43a0-32bf-54e5-a9da-d2be7eb0b995",
+     "key": "geo-ag-05",
+     "stem": "The Office du Niger in Mali is an example of",
+     "image_url": null,
+     "explanation": "It uses water from the River Niger's inland delta to grow rice and sugar cane.\n\n**Why the other options are wrong**\n\n- a cocoa plantation: Cocoa does not grow in the dry Sahel of Mali.\n- a mining company: It is an agricultural scheme.\n- a fishing port: Mali is landlocked.",
+     "position": 5,
+     "options": [
+      {
+       "id": "4bd7261f-c3a8-57a4-81cd-f67a7a0d0924",
+       "label": "A",
+       "content": "an irrigation scheme",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5e78c80f-c3fe-5fa2-90d3-a85dcdcaf1ce",
+       "label": "B",
+       "content": "a cocoa plantation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f7b903e7-a72b-5513-8537-6c728735efc5",
+       "label": "C",
+       "content": "a mining company",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6a13e666-a076-5bbb-824c-c94098cfe5c7",
+       "label": "D",
+       "content": "a fishing port",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "97558728-1a95-59ab-9686-ccc4c18ef8c9",
+   "topic": "Mining and Mineral Resources",
+   "title": "Mining and Mineral Resources: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on mining and mineral resources, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 141,
+   "questions": [
+    {
+     "id": "22ed4ba8-409d-5fab-b736-6c34f7190ff8",
+     "key": "geo-mi-01",
+     "stem": "The method of mining in which the overburden is removed and the mineral is dug from a large pit is",
+     "image_url": null,
+     "explanation": "Open-cast mining is used for large deposits near the surface, such as iron ore at Tonkolili.\n\n**Why the other options are wrong**\n\n- shaft mining: Shaft mining reaches deep deposits through tunnels.\n- alluvial mining: Alluvial mining washes minerals from river gravels.\n- drilling: Drilling is used for oil and gas.",
+     "position": 1,
+     "options": [
+      {
+       "id": "91ff9a88-7613-5965-af85-cd1b1c114c51",
+       "label": "A",
+       "content": "shaft mining",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2c69622e-ce84-54f5-b79c-499926f9c580",
+       "label": "B",
+       "content": "open-cast mining",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b96bc08f-35ff-5abc-8531-a0573961f9d0",
+       "label": "C",
+       "content": "alluvial mining",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4ffb0a33-639f-559b-b037-bc9e89f16db9",
+       "label": "D",
+       "content": "drilling",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "76a20107-f651-5400-af2b-905a7e000003",
+     "key": "geo-mi-02",
+     "stem": "Alluvial mining is the recovery of minerals from",
+     "image_url": null,
+     "explanation": "Most of Sierra Leone's diamonds are dug, washed and sieved from river gravels.\n\n**Why the other options are wrong**\n\n- deep veins reached by shafts: That is underground mining.\n- oil wells beneath the sea: That is drilling.\n- the overburden of an open pit: Overburden is waste rock removed to reach a deposit.",
+     "position": 2,
+     "options": [
+      {
+       "id": "bd7ee0f8-9c84-549b-872c-669712faf08b",
+       "label": "A",
+       "content": "deep veins reached by shafts",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "260f8435-cff3-57f0-9939-2006d91829f1",
+       "label": "B",
+       "content": "oil wells beneath the sea",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fb6c16cf-900b-5a4d-b00a-3b0edc1dd336",
+       "label": "C",
+       "content": "sand and gravel deposited by rivers",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b8f86fb0-6038-5df5-9298-49f594e9a1c0",
+       "label": "D",
+       "content": "the overburden of an open pit",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "157a5e59-ede3-5b51-9a2f-84c09efe3984",
+     "key": "geo-mi-03",
+     "stem": "The West African country with some of the largest bauxite reserves in the world is",
+     "image_url": null,
+     "explanation": "Guinea's bauxite is mined around Boké and exported for aluminium production.\n\n**Why the other options are wrong**\n\n- Niger: Niger is known for uranium.\n- Nigeria: Nigeria is known for petroleum.\n- Mauritania: Mauritania is known for iron ore.",
+     "position": 3,
+     "options": [
+      {
+       "id": "bfdb9569-6def-5360-8f6d-a8d4078589be",
+       "label": "A",
+       "content": "Niger",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8d547460-2627-56f5-ad9a-613a91211b77",
+       "label": "B",
+       "content": "Nigeria",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4c3b9cc7-9776-5ddc-b75a-5ba572566529",
+       "label": "C",
+       "content": "Mauritania",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b0b3d639-951b-5974-8a77-99fb04e19f1f",
+       "label": "D",
+       "content": "Guinea",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "992a6f17-c347-5159-ba0e-706a21a4e6f5",
+     "key": "geo-mi-04",
+     "stem": "Iron ore from Tonkolili in Sierra Leone is exported through the port of",
+     "image_url": null,
+     "explanation": "A railway carries the ore from Tonkolili to Pepel on the Sierra Leone River estuary.\n\n**Why the other options are wrong**\n\n- Nitti: Nitti exports rutile.\n- Bonthe: Bonthe is a small island port in the south.\n- Kambia: Kambia is an inland town in the north-west.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b14cd1a7-0b36-5662-a56f-6d70bf301b93",
+       "label": "A",
+       "content": "Pepel",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b73e889e-6b99-5226-92a5-4699e84a23d4",
+       "label": "B",
+       "content": "Nitti",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f8b473cc-7f3d-5dcf-bcf9-d74c945b1f10",
+       "label": "C",
+       "content": "Bonthe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "65824df1-d304-582c-b03d-880a6eb99dcd",
+       "label": "D",
+       "content": "Kambia",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d4737469-8603-5321-9cd3-589eb02a752a",
+     "key": "geo-mi-05",
+     "stem": "The Kimberley Process Certification Scheme aims to",
+     "image_url": null,
+     "explanation": "Launched in 2003, it requires certificates showing that traded diamonds are not from conflict zones.\n\n**Why the other options are wrong**\n\n- increase the price of gold: It deals with diamonds, not gold prices.\n- train miners in Sierra Leone: It is a certification scheme, not training.\n- ban all diamond mining in Africa: It certifies diamonds; it does not ban mining.",
+     "position": 5,
+     "options": [
+      {
+       "id": "47f3dbd6-eb28-535b-9001-7dba2249bb3f",
+       "label": "A",
+       "content": "increase the price of gold",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2bbba64b-1c9e-5232-a5e7-18db477dcee1",
+       "label": "B",
+       "content": "stop the trade in conflict (blood) diamonds",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6802718c-043b-5095-b3e5-d1c609e04c80",
+       "label": "C",
+       "content": "train miners in Sierra Leone",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "900d2d0f-d204-563b-9dba-1a4b5619b3c8",
+       "label": "D",
+       "content": "ban all diamond mining in Africa",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "77cb230d-a7ac-57e5-869d-7636bfff991d",
+   "topic": "Manufacturing Industries",
+   "title": "Manufacturing Industries: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on manufacturing industries, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 142,
+   "questions": [
+    {
+     "id": "a49f25e0-f827-5fc0-aa77-10e070218ff3",
+     "key": "geo-ma-01",
+     "stem": "An industry whose raw materials lose much weight during processing is usually located",
+     "image_url": null,
+     "explanation": "Processing near the source, as with cement or sugar, avoids paying to transport waste.\n\n**Why the other options are wrong**\n\n- near its market: Market location suits industries that gain weight.\n- anywhere, as it is footloose: Footloose industries use light inputs.\n- only at a seaport: A port is not essential for weight-losing industries.",
+     "position": 1,
+     "options": [
+      {
+       "id": "c62c3ba1-9cf7-5e62-a0f7-21f7770cd417",
+       "label": "A",
+       "content": "near its market",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e6b7d91d-c50b-5c3e-ad45-cb5e717853f6",
+       "label": "B",
+       "content": "anywhere, as it is footloose",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9a5761f3-5e28-52a1-a6a1-2cc4260c7864",
+       "label": "C",
+       "content": "near its raw materials",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "dc6d9a56-a9bb-518c-8400-cfe8f13abade",
+       "label": "D",
+       "content": "only at a seaport",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8a894d08-78cc-5f98-ae5b-82a570093779",
+     "key": "geo-ma-02",
+     "stem": "Breweries are usually located near their markets because",
+     "image_url": null,
+     "explanation": "Brewing is weight-gaining, so it is cheapest to produce near customers, as at Wellington, Freetown.\n\n**Why the other options are wrong**\n\n- their raw materials are perishable: The raw materials (grain, hops) are not the main reason.\n- they need very large amounts of electricity: Brewing is not power-intensive like smelting.\n- they use imported machinery: Machinery does not decide location.",
+     "position": 2,
+     "options": [
+      {
+       "id": "36d5296e-f8c3-5982-825b-5feeb2be57e3",
+       "label": "A",
+       "content": "their raw materials are perishable",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4f2934d4-1b62-5505-8dfe-d7c59e43e39e",
+       "label": "B",
+       "content": "they need very large amounts of electricity",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d96e353a-7416-5a3d-a57d-1419751b0705",
+       "label": "C",
+       "content": "they use imported machinery",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4ad45444-d78d-5359-b060-d4029881b37a",
+       "label": "D",
+       "content": "the finished product is heavy and bulky, as water is added",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a1d2ed0d-6353-5e35-98f5-ca0d5ca4effa",
+     "key": "geo-ma-03",
+     "stem": "The aluminium smelter at Tema in Ghana was located there mainly because of",
+     "image_url": null,
+     "explanation": "Aluminium smelting needs huge amounts of electricity, supplied by the Akosombo scheme.\n\n**Why the other options are wrong**\n\n- local deposits of iron ore: Aluminium is made from bauxite, not iron ore.\n- a large local market for aluminium: The market was not the main factor.\n- cheap coal from Enugu: Enugu coal is in Nigeria, and smelting used hydroelectricity.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5b586114-356e-52c3-a786-89abdcc04654",
+       "label": "A",
+       "content": "cheap hydroelectric power from the Akosombo Dam",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8a7a1032-5632-5f7c-aad7-2b74da749a5a",
+       "label": "B",
+       "content": "local deposits of iron ore",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3142be57-ae76-5dd3-8254-d1b6c43e5ab2",
+       "label": "C",
+       "content": "a large local market for aluminium",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "01ec279e-08bd-5a1d-a9bb-88f29b63695e",
+       "label": "D",
+       "content": "cheap coal from Enugu",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6aa6488b-179a-513a-8e14-9ba35c38711e",
+     "key": "geo-ma-04",
+     "stem": "A footloose industry is one that",
+     "image_url": null,
+     "explanation": "Electronics and software, with light, valuable inputs and products, are footloose.\n\n**Why the other options are wrong**\n\n- must be located beside its raw materials: That is a raw-material-oriented industry.\n- moves its factory from town to town: Footloose does not mean the factory moves.\n- depends on heavy, bulky inputs: Heavy inputs tie an industry to its raw materials.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2a6d03f9-edc3-5e10-b113-a443e79dfc16",
+       "label": "A",
+       "content": "must be located beside its raw materials",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0d5470a4-3c7d-5194-93bc-7a5a97a0ed0f",
+       "label": "B",
+       "content": "is not tied to raw materials or markets and can locate almost anywhere",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a09c6b43-c210-5a8a-b39e-0997118a0216",
+       "label": "C",
+       "content": "moves its factory from town to town",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5b72d623-7267-5543-a421-e2f3dd616d83",
+       "label": "D",
+       "content": "depends on heavy, bulky inputs",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c4f869e3-359a-5aea-9cc1-36798ed541bd",
+     "key": "geo-ma-05",
+     "stem": "Import substitution means",
+     "image_url": null,
+     "explanation": "It saves foreign exchange and creates jobs in local industry.\n\n**Why the other options are wrong**\n\n- exporting manufactured goods: That is export promotion.\n- banning all imports: Import substitution does not mean banning all imports.\n- replacing local goods with imported ones: That is the opposite.",
+     "position": 5,
+     "options": [
+      {
+       "id": "45be9b9d-c70b-5443-863a-5995e8edf076",
+       "label": "A",
+       "content": "exporting manufactured goods",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a9168d79-efb3-5101-ba20-cd3742ea7628",
+       "label": "B",
+       "content": "banning all imports",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "de75c5dd-54ca-5431-97d7-e123a7196011",
+       "label": "C",
+       "content": "producing at home goods that were formerly imported",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "da84fd1d-4f38-572e-a7dc-d9742fa38436",
+       "label": "D",
+       "content": "replacing local goods with imported ones",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ec001e9a-fb80-5d61-9cae-678f7de48d69",
+   "topic": "Energy and Power",
+   "title": "Energy and Power: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on energy and power, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 143,
+   "questions": [
+    {
+     "id": "aa7dd1a1-3603-536f-a0c9-e79637819454",
+     "key": "geo-en-01",
+     "stem": "Which of the following is a renewable source of energy?",
+     "image_url": null,
+     "explanation": "Renewable sources such as sunlight, water and wind are replaced naturally.\n\n**Why the other options are wrong**\n\n- coal: Coal is a fossil fuel and will run out.\n- petroleum: Petroleum is non-renewable.\n- natural gas: Natural gas is non-renewable.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a9bd005b-d3f0-52b6-9810-d4ce0bdcd827",
+       "label": "A",
+       "content": "coal",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1cfc0d1e-5a2c-56ee-bd53-b3a84fd2f009",
+       "label": "B",
+       "content": "petroleum",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8559c0e0-ed1c-5824-87d7-494d9b77bcc2",
+       "label": "C",
+       "content": "natural gas",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c456f88a-4cdc-5d07-9ef0-a38eafa03e80",
+       "label": "D",
+       "content": "solar energy",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8381b323-4c21-55aa-ac70-2c9a205602a0",
+     "key": "geo-en-02",
+     "stem": "Which is an important physical condition for hydroelectric power development?",
+     "image_url": null,
+     "explanation": "HEP needs plenty of water flowing all year, a good fall and a narrow valley with hard rock.\n\n**Why the other options are wrong**\n\n- a large local population: A market is a human condition.\n- soft, porous rocks for the dam: Dams need hard, impermeable rock.\n- a wide, flat valley at the dam site: A narrow gorge is best for the dam itself.",
+     "position": 2,
+     "options": [
+      {
+       "id": "24869d1c-774d-5e50-aef6-de3c3fc1285a",
+       "label": "A",
+       "content": "a large and regular volume of water",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7f846d37-4997-54d4-b4d7-5f6745aeef0a",
+       "label": "B",
+       "content": "a large local population",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ad482f65-5d28-56cf-9cef-94ee6a892817",
+       "label": "C",
+       "content": "soft, porous rocks for the dam",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "55d285ad-5433-5da2-86d9-0e14df84496a",
+       "label": "D",
+       "content": "a wide, flat valley at the dam site",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "126c1684-fca0-5f73-a217-e1ded8ea4412",
+     "key": "geo-en-03",
+     "stem": "The Akosombo Dam is built across the",
+     "image_url": null,
+     "explanation": "Akosombo, completed in 1965, created Lake Volta in Ghana.\n\n**Why the other options are wrong**\n\n- River Niger: Kainji is on the Niger.\n- River Senegal: Manantali is on a tributary of the Senegal.\n- Seli River: Bumbuna is on the Seli.",
+     "position": 3,
+     "options": [
+      {
+       "id": "110b591c-a016-581e-832a-c6cb3e7ad2a1",
+       "label": "A",
+       "content": "River Niger",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "71e7ee6e-cb54-5dde-b347-4157c78cff5a",
+       "label": "B",
+       "content": "River Volta",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "64561d61-d439-5b68-855c-f6e362bfc2e3",
+       "label": "C",
+       "content": "River Senegal",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "09207c8a-c5c1-5b35-89e9-a18e871201f9",
+       "label": "D",
+       "content": "Seli River",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0b5b1138-f916-56c0-a0d9-77627949e571",
+     "key": "geo-en-04",
+     "stem": "The Bumbuna hydroelectric dam in Sierra Leone is on the",
+     "image_url": null,
+     "explanation": "Bumbuna, in Tonkolili District, began supplying power in 2009.\n\n**Why the other options are wrong**\n\n- Moa River: The Moa flows through the east past Tiwai Island.\n- Sewa River: The Sewa flows through the centre and south.\n- Mano River: The Mano forms part of the Liberian border.",
+     "position": 4,
+     "options": [
+      {
+       "id": "5cfd53ec-1037-5a23-b2e7-2e9f73932894",
+       "label": "A",
+       "content": "Moa River",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b48e2e9c-46db-576c-a1af-edf04331de82",
+       "label": "B",
+       "content": "Sewa River",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b00a2c2a-a9b4-5b80-86a2-20ee30c1dd38",
+       "label": "C",
+       "content": "Seli (Rokel) River",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "54a9bf23-cc5c-500f-a100-6ebbdba6c48c",
+       "label": "D",
+       "content": "Mano River",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "74e5ea9d-5110-5587-a907-df80729c314f",
+     "key": "geo-en-05",
+     "stem": "A disease that often spreads around the reservoirs of hydroelectric dams is",
+     "image_url": null,
+     "explanation": "The snails that carry bilharzia breed in the still water of reservoirs and irrigation channels.\n\n**Why the other options are wrong**\n\n- measles: Measles spreads from person to person through the air.\n- tuberculosis: Tuberculosis is not linked to still water.\n- diabetes: Diabetes is not an infectious disease.",
+     "position": 5,
+     "options": [
+      {
+       "id": "0b2afb2e-e18a-53f4-84fa-5ac4b42da980",
+       "label": "A",
+       "content": "measles",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "239d95d9-a78d-53f5-abda-de27b1d6a92e",
+       "label": "B",
+       "content": "tuberculosis",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8cbb0c0c-41fa-5abe-ab5c-619003ccef4c",
+       "label": "C",
+       "content": "diabetes",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "38e35dc6-9d2c-55b5-b690-747a4f5d0014",
+       "label": "D",
+       "content": "bilharzia (schistosomiasis)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5212f53b-887b-5d74-8b86-fa316cb7ac82",
+   "topic": "Transportation",
+   "title": "Transportation: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on transportation, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 144,
+   "questions": [
+    {
+     "id": "c1b2481d-e22d-512e-ac24-66a52248622d",
+     "key": "geo-tr-01",
+     "stem": "The cheapest way of moving bulky goods over long distances is by",
+     "image_url": null,
+     "explanation": "Ships carry very large loads cheaply, though slowly.\n\n**Why the other options are wrong**\n\n- air transport: Air is the most expensive mode.\n- road transport: Road is costly for bulky loads over long distances.\n- motorbike taxis: These carry only light loads over short distances.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f0809e21-279f-57bb-8475-17b72b09a708",
+       "label": "A",
+       "content": "water transport",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "47d55196-145a-5fec-a9b9-8f77db5920be",
+       "label": "B",
+       "content": "air transport",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f4031b55-67ed-5965-a931-52aeca2cc3f3",
+       "label": "C",
+       "content": "road transport",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c70a09ec-8bbb-51a7-ab95-98792d7e4fdc",
+       "label": "D",
+       "content": "motorbike taxis",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ddd87580-74f6-5230-b047-aaf7290cf38b",
+     "key": "geo-tr-02",
+     "stem": "An advantage of road transport over rail transport is that road transport",
+     "image_url": null,
+     "explanation": "Roads reach farms, villages and homes, so goods need no transfer at either end.\n\n**Why the other options are wrong**\n\n- carries heavier loads: Rail carries heavier loads.\n- is cheaper over very long distances: Rail and water are cheaper over long distances.\n- has fewer accidents: Road has more accidents than rail.",
+     "position": 2,
+     "options": [
+      {
+       "id": "1e75f115-7f27-5e90-88e5-ddc16f9db832",
+       "label": "A",
+       "content": "carries heavier loads",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "196f4aca-56bc-53f2-8565-8d5ca67b03ad",
+       "label": "B",
+       "content": "provides a door-to-door service",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7464885d-31e3-5c31-a05e-e608d44a3b02",
+       "label": "C",
+       "content": "is cheaper over very long distances",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0ecbe1ec-768b-589d-b74a-d2452be7b8d0",
+       "label": "D",
+       "content": "has fewer accidents",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9f39f1d8-be7f-5189-b4dd-a86592e96c2b",
+     "key": "geo-tr-03",
+     "stem": "Medicines and fresh flowers are often sent by air because air transport is",
+     "image_url": null,
+     "explanation": "Perishable, valuable and urgent goods justify the high cost of air transport.\n\n**Why the other options are wrong**\n\n- the cheapest mode: Air transport is the most expensive.\n- able to carry the heaviest loads: Aircraft carry limited, light loads.\n- not affected by weather: Bad weather can delay flights.",
+     "position": 3,
+     "options": [
+      {
+       "id": "a5394bcc-1ebc-5b7e-a67e-8590d89e358a",
+       "label": "A",
+       "content": "the cheapest mode",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1ee8bc64-14a3-569d-8b65-59395dafea72",
+       "label": "B",
+       "content": "able to carry the heaviest loads",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "93663828-ee20-5ef1-965a-4431bc5fd574",
+       "label": "C",
+       "content": "the fastest mode",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d4ad014a-a161-5d12-b352-ddb88e226b7e",
+       "label": "D",
+       "content": "not affected by weather",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d565d9ea-96c2-539b-8d7e-8690b440b19e",
+     "key": "geo-tr-04",
+     "stem": "The West African Gas Pipeline carries natural gas from",
+     "image_url": null,
+     "explanation": "It runs from Nigeria through Benin and Togo to Ghana.\n\n**Why the other options are wrong**\n\n- Ghana to Nigeria: Nigeria is the source of the gas.\n- Senegal to Mali: This pipeline runs along the Gulf of Guinea coast.\n- Sierra Leone to Guinea: Sierra Leone does not produce natural gas.",
+     "position": 4,
+     "options": [
+      {
+       "id": "68183b40-d90e-5bd8-965a-9234904bd72f",
+       "label": "A",
+       "content": "Ghana to Nigeria",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "eb62ca92-cb82-5e25-944b-9acfa60dae58",
+       "label": "B",
+       "content": "Senegal to Mali",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9dbac11c-a7fc-5fff-a992-6a13880d8961",
+       "label": "C",
+       "content": "Sierra Leone to Guinea",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8efa4097-aa69-5779-a6a1-d9ba5336f6aa",
+       "label": "D",
+       "content": "Nigeria to Ghana",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "66b4f672-d10e-5b7d-b5f8-fbb6192ac2f3",
+     "key": "geo-tr-05",
+     "stem": "Lungi International Airport is separated from Freetown by",
+     "image_url": null,
+     "explanation": "Travellers cross the estuary by ferry or water taxi, or drive a long way round.\n\n**Why the other options are wrong**\n\n- the Loma Mountains: The Loma Mountains are in the north-east.\n- the Moa River: The Moa is in the east.\n- Sherbro Island: Sherbro Island is off the south coast.",
+     "position": 5,
+     "options": [
+      {
+       "id": "5f1288e8-0889-5246-9528-02f83998688d",
+       "label": "A",
+       "content": "the Sierra Leone River estuary",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "691dc9e2-c8e7-52a7-9f69-dc6735f0d66b",
+       "label": "B",
+       "content": "the Loma Mountains",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9078bcfc-81f1-505f-a3a4-a276f901f465",
+       "label": "C",
+       "content": "the Moa River",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2378b625-1207-5154-9057-0bf7b18d2000",
+       "label": "D",
+       "content": "Sherbro Island",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2595d738-c208-522a-b810-00fe01343cd9",
+   "topic": "International Trade and Tourism",
+   "title": "International Trade and Tourism: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on international trade and tourism, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 145,
+   "questions": [
+    {
+     "id": "0e853b0a-1d86-5e63-8d6a-791136c76733",
+     "key": "geo-tt-01",
+     "stem": "The balance of trade of a country is the difference between",
+     "image_url": null,
+     "explanation": "Balance of trade = visible exports − visible imports; it covers goods only.\n\n**Why the other options are wrong**\n\n- its total income and total spending: That describes a budget.\n- its birth rate and death rate: That is natural increase.\n- all its money flows with the rest of the world: That is the balance of payments.",
+     "position": 1,
+     "options": [
+      {
+       "id": "44326b8b-c4e8-55fa-84e6-5d9f403c15c0",
+       "label": "A",
+       "content": "its total income and total spending",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2d0f58c1-e57c-5ec7-8062-c1d5937bcf44",
+       "label": "B",
+       "content": "the value of its visible exports and visible imports",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c7a0f650-876f-5f54-86ba-bd92666c19fc",
+       "label": "C",
+       "content": "its birth rate and death rate",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "157bc6c0-c1a8-59ac-a95d-c1354fd2d8af",
+       "label": "D",
+       "content": "all its money flows with the rest of the world",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a5ea73f6-3b5b-5c6b-92f3-246fd1428774",
+     "key": "geo-tt-02",
+     "stem": "A country exports goods worth 800 million US dollars and imports goods worth 950 million US dollars. It has",
+     "image_url": null,
+     "explanation": "800 − 950 = −150 million: imports exceed exports, an unfavourable balance.\n\n**Why the other options are wrong**\n\n- a trade surplus of 150 million US dollars: Imports are greater than exports, so it is a deficit.\n- a trade deficit of 1,750 million US dollars: That adds the values instead of subtracting.\n- a balanced trade: The values are not equal.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d23579b5-b6e1-51de-9a2c-43725a765279",
+       "label": "A",
+       "content": "a trade surplus of 150 million US dollars",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "762603a8-a08f-5d66-80d1-edf451a49220",
+       "label": "B",
+       "content": "a trade deficit of 1,750 million US dollars",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a63d3b33-980e-51fb-89d0-ab39f85a30bf",
+       "label": "C",
+       "content": "a trade deficit of 150 million US dollars",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "91c67e28-f3a6-521d-b179-9a3423ef6f59",
+       "label": "D",
+       "content": "a balanced trade",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "25ac4ebc-8482-563e-92e7-2614e612bffb",
+     "key": "geo-tt-03",
+     "stem": "The main reason why countries trade with one another is",
+     "image_url": null,
+     "explanation": "Each country specialises in what it can produce best and buys what others produce more cheaply.\n\n**Why the other options are wrong**\n\n- all countries produce the same goods: If they did, there would be little reason to trade.\n- every country has the same climate: Climates differ, which encourages trade.\n- trade requires no transport: Trade depends on transport.",
+     "position": 3,
+     "options": [
+      {
+       "id": "a15f243b-5f5f-564e-ad5b-25eca09ee2f5",
+       "label": "A",
+       "content": "all countries produce the same goods",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "39114f93-e323-5e81-be5a-a6936702f8e6",
+       "label": "B",
+       "content": "every country has the same climate",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bcf64dc6-c25c-589c-a480-6c11f2291bd5",
+       "label": "C",
+       "content": "trade requires no transport",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bca53ed1-0927-504a-a32c-3ae799bac97e",
+       "label": "D",
+       "content": "the uneven distribution of natural resources",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e76aae16-e2d4-5160-8d35-91cf4ee77fcd",
+     "key": "geo-tt-04",
+     "stem": "Tacugama in Sierra Leone is known as",
+     "image_url": null,
+     "explanation": "Tacugama Chimpanzee Sanctuary is in the Western Area Peninsula forest near Freetown.\n\n**Why the other options are wrong**\n\n- an iron-ore mine: Iron ore is mined at Tonkolili and Marampa.\n- a historic slave-trading fort: That is Bunce Island.\n- a hydroelectric dam: That is Bumbuna.",
+     "position": 4,
+     "options": [
+      {
+       "id": "53869b2b-7298-577d-b14e-2a2726d90f09",
+       "label": "A",
+       "content": "a chimpanzee sanctuary",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9ec1d6b5-9c30-539e-938e-d8ded19c12be",
+       "label": "B",
+       "content": "an iron-ore mine",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5e1509dc-e606-5b7f-9017-4601f737d209",
+       "label": "C",
+       "content": "a historic slave-trading fort",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d3c94e4c-c7a8-53bd-94b5-5ca5a4502ca6",
+       "label": "D",
+       "content": "a hydroelectric dam",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "02047f22-e7ee-5e2c-a91b-bc478f95f5bc",
+     "key": "geo-tt-05",
+     "stem": "Earnings from tourism are regarded as",
+     "image_url": null,
+     "explanation": "Tourism sells a service to foreigners, so it appears in the balance of payments, not the balance of trade.\n\n**Why the other options are wrong**\n\n- a visible import: Tourists bring money into the country; it is not an import.\n- a visible export: No goods leave the country; it is a service.\n- an invisible import: Money spent by foreign tourists is earned, not spent, by the country.",
+     "position": 5,
+     "options": [
+      {
+       "id": "6a4f2e50-563d-5eda-8951-ceaedc4de423",
+       "label": "A",
+       "content": "a visible import",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6a93b72e-4f5a-5681-a0a0-287c6f099eb5",
+       "label": "B",
+       "content": "an invisible export",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "090e955b-ddc7-5c28-b05b-297f90f02d2f",
+       "label": "C",
+       "content": "a visible export",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "97229bc0-236d-5cbf-ae50-08b857870da9",
+       "label": "D",
+       "content": "an invisible import",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e62dacaf-0139-561c-9a5e-6784675871e5",
+   "topic": "Environmental Issues and Sustainable Development",
+   "title": "Environmental Issues and Sustainable Development: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on environmental issues and sustainable development, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 146,
+   "questions": [
+    {
+     "id": "d48d2d31-4d2a-5253-b5d7-980e8a8052a7",
+     "key": "geo-ev-01",
+     "stem": "Desertification in West Africa is most serious in the",
+     "image_url": null,
+     "explanation": "Overgrazing, over-cultivation, fuelwood cutting and drought degrade the dry Sahel.\n\n**Why the other options are wrong**\n\n- Niger Delta: The Delta is wet; its main problem is oil pollution.\n- coastal mangrove belt: Mangroves grow in wet tidal areas.\n- tropical rainforest: Rainforest areas suffer deforestation, not desertification.",
+     "position": 1,
+     "options": [
+      {
+       "id": "5063e567-5b9a-5095-ac47-2af0923e449f",
+       "label": "A",
+       "content": "Niger Delta",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8ec085d5-1a50-5656-968a-b73b9b4d9ebc",
+       "label": "B",
+       "content": "coastal mangrove belt",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "54ff1a6f-8937-5247-b33f-1efeb1fa9017",
+       "label": "C",
+       "content": "Sahel",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3af65881-8f9f-5358-bd4e-fd2e95904f20",
+       "label": "D",
+       "content": "tropical rainforest",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c97a04f0-6e6b-55e9-bb99-3d6a7d3402a4",
+     "key": "geo-ev-02",
+     "stem": "The Great Green Wall project aims to",
+     "image_url": null,
+     "explanation": "Launched by the African Union in 2007, it aims to restore degraded land across the Sahel.\n\n**Why the other options are wrong**\n\n- build a wall to stop sand dunes moving south: It is a planting and land-restoration project, not a wall.\n- protect the rainforests of the Congo Basin: It is in the Sahel, not the Congo.\n- build dams on the River Niger: It is not a dam project.",
+     "position": 2,
+     "options": [
+      {
+       "id": "b6c5a23e-dfe6-5c43-bfa0-d40ca31744c9",
+       "label": "A",
+       "content": "build a wall to stop sand dunes moving south",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9fd82424-9a12-55a9-af6b-a123f46cf77a",
+       "label": "B",
+       "content": "protect the rainforests of the Congo Basin",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1bd5002e-8bcf-5acc-ac84-0aee064216d9",
+       "label": "C",
+       "content": "build dams on the River Niger",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d035d94b-9c41-5ee8-a78c-5def5485b528",
+       "label": "D",
+       "content": "plant a belt of trees and restore land across the Sahel to halt desertification",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "89463b89-c21f-545d-8ff6-05e7d48fcefc",
+     "key": "geo-ev-03",
+     "stem": "The main greenhouse gas released by burning fossil fuels is",
+     "image_url": null,
+     "explanation": "Carbon dioxide from burning coal, oil and gas traps heat and causes global warming.\n\n**Why the other options are wrong**\n\n- oxygen: Oxygen is not a greenhouse gas.\n- nitrogen: Nitrogen is not a greenhouse gas.\n- ozone: Burning fossil fuels mainly releases carbon dioxide.",
+     "position": 3,
+     "options": [
+      {
+       "id": "55aaf1be-9617-52af-808b-13cd8ae2bc88",
+       "label": "A",
+       "content": "carbon dioxide",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "80944ffe-2a70-579f-b643-c4e01b7bacd2",
+       "label": "B",
+       "content": "oxygen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2c9597a1-c878-54ad-9890-0a807bcf909c",
+       "label": "C",
+       "content": "nitrogen",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bd963180-4d78-53ef-9638-7dcd09c0b25b",
+       "label": "D",
+       "content": "ozone",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "10961473-4fa0-51f0-9be2-4f2e04004e79",
+     "key": "geo-ev-04",
+     "stem": "Sustainable development is development that",
+     "image_url": null,
+     "explanation": "This definition comes from the Brundtland Report (1987).\n\n**Why the other options are wrong**\n\n- uses all resources as quickly as possible: That would leave nothing for the future.\n- stops all economic growth: Sustainable development balances growth with protection.\n- depends only on foreign aid: Aid is not the definition.",
+     "position": 4,
+     "options": [
+      {
+       "id": "86208cfa-6b86-59e2-9640-cb15154a4a6b",
+       "label": "A",
+       "content": "uses all resources as quickly as possible",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "455807ab-3835-571a-a9b1-a09bf59143aa",
+       "label": "B",
+       "content": "meets the needs of the present without compromising the ability of future generations to meet their own needs",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d5e8628e-02c7-5a9e-baca-e1839f240e37",
+       "label": "C",
+       "content": "stops all economic growth",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8d7676bd-5555-5182-9a60-4e6eb713efaa",
+       "label": "D",
+       "content": "depends only on foreign aid",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c92ee411-6b4b-53c3-8fd0-a77fbbaa3d7f",
+     "key": "geo-ev-05",
+     "stem": "A major effect of deforestation on steep slopes is",
+     "image_url": null,
+     "explanation": "Without roots and cover, rain washes soil away, as in the 2017 Regent mudslide in Freetown.\n\n**Why the other options are wrong**\n\n- increased soil fertility: Bare soil loses nutrients and topsoil.\n- more wildlife habitats: Deforestation destroys habitats.\n- less flooding downstream: Faster runoff increases flooding.",
+     "position": 5,
+     "options": [
+      {
+       "id": "28f42152-d12e-5d4a-b184-f4f57d2cd2b6",
+       "label": "A",
+       "content": "increased soil fertility",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e7099735-873e-5a3a-b9a5-66e3c004a98b",
+       "label": "B",
+       "content": "more wildlife habitats",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "436a82fa-9857-53f3-897d-c689ddca0859",
+       "label": "C",
+       "content": "increased soil erosion and landslides",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0257a1ff-bf9c-54e3-8890-e26654e2d162",
+       "label": "D",
+       "content": "less flooding downstream",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e04fa3d2-1a4b-53ac-a46b-05d9bb1ab145",
+   "topic": "Physical Geography of Sierra Leone",
+   "title": "Physical Geography of Sierra Leone: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on physical geography of sierra leone, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 147,
+   "questions": [
+    {
+     "id": "c9017eb2-20c1-50bd-9a10-8a3fe94474a8",
+     "key": "geo-sl-01",
+     "stem": "Sierra Leone is bordered on the north and east by",
+     "image_url": null,
+     "explanation": "Guinea lies to the north and east, Liberia to the south-east and the Atlantic to the west.\n\n**Why the other options are wrong**\n\n- Liberia: Liberia borders Sierra Leone on the south-east.\n- Côte d'Ivoire: Côte d'Ivoire does not border Sierra Leone.\n- Senegal: Senegal does not border Sierra Leone.",
+     "position": 1,
+     "options": [
+      {
+       "id": "636a1cc1-b0ed-5012-93be-a203dd44837d",
+       "label": "A",
+       "content": "Liberia",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e9005580-2084-5d40-8811-b77800471186",
+       "label": "B",
+       "content": "Côte d'Ivoire",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9b32167f-d698-5d0b-8128-8dcdf20f46ac",
+       "label": "C",
+       "content": "Senegal",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0067905f-ae7a-5996-8a06-fd38f48b0d0b",
+       "label": "D",
+       "content": "Guinea",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "668e3dca-a6e3-5d55-b87f-706f9f5f4b79",
+     "key": "geo-sl-02",
+     "stem": "The highest point in Sierra Leone is",
+     "image_url": null,
+     "explanation": "Bintumani rises to 1,945 m in the Loma Mountains of the north-east.\n\n**Why the other options are wrong**\n\n- Picket Hill, on the Freetown Peninsula: Picket Hill (888 m) is the highest point of the Peninsula.\n- Mount Nimba: Mount Nimba is on the Guinea–Côte d'Ivoire–Liberia border.\n- the Kangari Hills: The Kangari Hills are much lower.",
+     "position": 2,
+     "options": [
+      {
+       "id": "e4fddb93-cc49-5239-956a-0005aa89f3e5",
+       "label": "A",
+       "content": "Bintumani, in the Loma Mountains",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "fc0932c2-5415-5f28-ae3d-992c675effbf",
+       "label": "B",
+       "content": "Picket Hill, on the Freetown Peninsula",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6294591a-8b00-592a-bc90-074eac3fcb39",
+       "label": "C",
+       "content": "Mount Nimba",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3e80379f-33a9-5dab-9f9e-175260669d17",
+       "label": "D",
+       "content": "the Kangari Hills",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "378cbbf8-b086-5e19-90e4-ce324e62cb1e",
+     "key": "geo-sl-03",
+     "stem": "Most of the main rivers of Sierra Leone flow from",
+     "image_url": null,
+     "explanation": "The land rises towards the north-east, so rivers such as the Rokel, Jong, Sewa and Moa flow south-west to the sea.\n\n**Why the other options are wrong**\n\n- south-west to north-east: Rivers flow away from the higher land in the north-east.\n- west to east: The Atlantic is to the west, so rivers flow westwards.\n- south to north: The rivers flow towards the Atlantic, not north.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ae3d9638-82eb-52bb-970b-1ea53eab38e0",
+       "label": "A",
+       "content": "south-west to north-east",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3c1ab9c3-0686-599f-8dee-28bfef782578",
+       "label": "B",
+       "content": "north-east to south-west",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c3b2e56c-b621-5a8a-8488-1d20a2a4ec05",
+       "label": "C",
+       "content": "west to east",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "89f9d1a7-ea40-5b01-8d81-5621cf928bc5",
+       "label": "D",
+       "content": "south to north",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bfebba73-9a3e-5955-8aa1-3801ba5d179d",
+     "key": "geo-sl-04",
+     "stem": "The rainy season in Sierra Leone lasts from about",
+     "image_url": null,
+     "explanation": "The moist south-west monsoon brings rain from about May to October, heaviest in July and August.\n\n**Why the other options are wrong**\n\n- November to April: That is the dry season.\n- December to February: That is the harmattan period of the dry season.\n- January to December: Sierra Leone has a distinct dry season.",
+     "position": 4,
+     "options": [
+      {
+       "id": "95967a22-ad2f-5ff7-9a01-941f7298b2ed",
+       "label": "A",
+       "content": "November to April",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6e9d79bb-d57d-5032-9053-7aa2f04fa0f4",
+       "label": "B",
+       "content": "December to February",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ccb3a681-688f-539e-88d6-2ae2ca5ef30d",
+       "label": "C",
+       "content": "May to October",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b17c0a65-bc6d-521e-9e49-cc805068695c",
+       "label": "D",
+       "content": "January to December",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a90f1771-3f8b-5525-939d-43b6a4e59040",
+     "key": "geo-sl-05",
+     "stem": "The dry, dusty wind that blows over Sierra Leone during the dry season is the",
+     "image_url": null,
+     "explanation": "The harmattan blows from the Sahara, especially from December to February, bringing dust and haze.\n\n**Why the other options are wrong**\n\n- south-west monsoon: The monsoon is moist and brings rain.\n- land breeze: Land breezes are local night-time winds.\n- westerlies: The westerlies blow in temperate latitudes.",
+     "position": 5,
+     "options": [
+      {
+       "id": "3779e04d-0767-5c2c-88d0-200e8f0a9d08",
+       "label": "A",
+       "content": "south-west monsoon",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f45ba231-4992-550b-a085-b6ca4ebb05c2",
+       "label": "B",
+       "content": "land breeze",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b6a068e3-6c97-526b-9044-9eae697d87bd",
+       "label": "C",
+       "content": "westerlies",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5c3773e2-fff7-56d1-8194-b1ccc0b0fffe",
+       "label": "D",
+       "content": "harmattan (north-east trade wind)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "b35242aefcd2"
+}

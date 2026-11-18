@@ -283,6 +283,25 @@ SETS += [
 
 SETS += [
     {
+        "module": ROOT / f"content/questions/geography/set{n}_p1.py",
+        "subject_slug": "geography",
+        "name": f"geography_set{n}_p1",
+        "label": label,
+        "review": ROOT / f"content/questions/geography/set{n}_p1.review.md",
+        "sort_from": 80 + 20 * n,
+        # Factual answers cannot be recomputed by code: an editor checked each one.
+        "checked": "facts",
+    }
+    for n, label in (
+        (1, "Geography: set 1 (the Earth, rocks, tectonics, weathering, rivers, coasts and landforms)"),
+        (2, "Geography: set 2 (drainage, weather and climate, vegetation, soils, population and settlement)"),
+        (3, "Geography: set 3 (agriculture, mining, industry, energy, transport, trade, environment, Sierra Leone)"),
+        (4, "Geography: set 4 (Sierra Leone's economy, West Africa, Africa, ECOWAS and practical geography)"),
+    )
+]
+
+SETS += [
+    {
         "module": ROOT / "content/questions/biology/set1_p1.py",
         "subject_slug": "biology",
         "name": "biology_set1_p1",
