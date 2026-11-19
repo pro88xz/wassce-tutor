@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">How a pre-colonial Sierra Leone chiefdom was organised</title>
+<desc id="d">Diagram of a typical pre-colonial chiefdom in Sierra Leone. The chief or king, such as a Temne Bai, ruled with a council of elders and sub-chiefs and a speaker who spoke for him. Below were section and town chiefs, then village and family heads, then the people. Beside the chief, the men&#x27;s Poro society advised and checked his power, made laws, controlled trade and initiated boys, and the women&#x27;s Sande (Bondo) society initiated and trained girls and protected women&#x27;s interests.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="600" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A pre-colonial chiefdom in Sierra Leone</text>
+<rect x="80.0" y="65.0" width="420.0" height="70.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="290.0" y="88.5" font-size="17" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Chief or king</text>
+<text x="290.0" y="111.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. a Temne Bai; chosen from ruling houses</text>
+<rect x="80.0" y="161.0" width="420.0" height="70.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="290.0" y="184.5" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Council of elders and sub-chiefs</text>
+<text x="290.0" y="207.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">with a speaker who spoke for the chief</text>
+<rect x="80.0" y="264.0" width="420.0" height="56.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="290.0" y="292.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Section and town chiefs</text>
+<rect x="80.0" y="360.0" width="420.0" height="56.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="290.0" y="388.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Village and family heads</text>
+<rect x="80.0" y="456.0" width="420.0" height="56.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="290.0" y="484.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The people</text>
+<line x1="290.0" y1="141.0" x2="290.0" y2="155.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="290.0" y1="237.0" x2="290.0" y2="258.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="290.0" y1="326.0" x2="290.0" y2="354.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="290.0" y1="422.0" x2="290.0" y2="450.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="550.0" y="75.0" width="220.0" height="150.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="660.0" y="106.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Poro society</text>
+<text x="660.0" y="128.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">men&#x27;s society: makes</text>
+<text x="660.0" y="150.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">laws, controls trade,</text>
+<text x="660.0" y="172.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">checks the chief,</text>
+<text x="660.0" y="194.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">initiates boys</text>
+<rect x="550.0" y="315.0" width="220.0" height="130.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="660.0" y="347.0" font-size="16" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sande (Bondo)</text>
+<text x="660.0" y="369.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">women&#x27;s society:</text>
+<text x="660.0" y="391.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">initiates and trains</text>
+<text x="660.0" y="413.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">girls</text>
+<line x1="550.0" y1="100.0" x2="500.0" y2="100.0" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 4"/>
+<line x1="550.0" y1="100.0" x2="550.0" y2="150.0" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 4"/>
+<line x1="550.0" y1="380.0" x2="500.0" y2="380.0" stroke="#0f766e" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 4"/>
+</svg>

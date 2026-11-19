@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The Hut Tax War of 1898: causes and results</title>
+<desc id="d">Diagram. Causes: the hut tax of 5 or 10 shillings a year from January 1898; brutal collection by the Frontier Police; chiefs losing their powers under the Protectorate Ordinance; fears that the government would take land; and anger at Krio traders and missionaries seen as part of colonial rule. Results: the Chalmers Commission of 1899 blamed the tax and the police, but the Colonial Office kept the tax; British control of the Protectorate was completed; Bai Bureh was exiled; the West African Regiment was formed; distrust grew between the Colony and the Protectorate; and chiefs became agents of colonial rule.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="620" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The Hut Tax War, 1898: causes and results</text>
+<text x="200.0" y="76.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">CAUSES</text>
+<text x="600.0" y="76.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">RESULTS</text>
+<rect x="340.0" y="270.0" width="120.0" height="120.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="400.0" y="317.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">WAR</text>
+<text x="400.0" y="343.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1898</text>
+<rect x="25.0" y="86.0" width="270.0" height="76.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="160.0" y="113.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The hut tax</text>
+<text x="160.0" y="135.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">5s or 10s a year from Jan 1898</text>
+<rect x="505.0" y="86.0" width="270.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="640.0" y="113.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Chalmers Commission (1899)</text>
+<text x="640.0" y="135.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">blamed the tax; tax kept</text>
+<line x1="296.0" y1="124.0" x2="336.0" y2="260.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="464.0" y1="260.0" x2="504.0" y2="124.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="25.0" y="186.0" width="270.0" height="76.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="160.0" y="213.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Frontier Police abuses</text>
+<text x="160.0" y="235.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">chiefs flogged and humiliated</text>
+<rect x="505.0" y="186.0" width="270.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="640.0" y="213.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">British control completed</text>
+<text x="640.0" y="235.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the Protectorate pacified</text>
+<line x1="296.0" y1="224.0" x2="336.0" y2="295.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="464.0" y1="295.0" x2="504.0" y2="224.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="25.0" y="286.0" width="270.0" height="76.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="160.0" y="313.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Chiefs lose powers</text>
+<text x="160.0" y="335.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">under the Protectorate Ordinance</text>
+<rect x="505.0" y="286.0" width="270.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="640.0" y="313.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Bai Bureh exiled</text>
+<text x="640.0" y="335.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">to the Gold Coast</text>
+<line x1="296.0" y1="324.0" x2="336.0" y2="330.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="464.0" y1="330.0" x2="504.0" y2="324.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="25.0" y="386.0" width="270.0" height="76.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="160.0" y="413.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Fear for land</text>
+<text x="160.0" y="435.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rumours the land would be taken</text>
+<rect x="505.0" y="386.0" width="270.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="640.0" y="413.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Colony–Protectorate distrust</text>
+<text x="640.0" y="435.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">lasting divisions</text>
+<line x1="296.0" y1="424.0" x2="336.0" y2="365.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="464.0" y1="365.0" x2="504.0" y2="424.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="25.0" y="486.0" width="270.0" height="76.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="160.0" y="513.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Anger at Krio and missions</text>
+<text x="160.0" y="535.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">seen as part of colonial rule</text>
+<rect x="505.0" y="486.0" width="270.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="640.0" y="513.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Chiefs as colonial agents</text>
+<text x="640.0" y="535.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">under District Commissioners</text>
+<line x1="296.0" y1="524.0" x2="336.0" y2="400.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="464.0" y1="400.0" x2="504.0" y2="524.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Trade between the hinterland, Freetown and Europe in the nineteenth century</title>
+<desc id="d">Flow diagram: the hinterland sent palm kernels and palm oil, kola nuts, timber, groundnuts, rice, and hides, ivory and gold from the north to Freetown, where Krio and European merchants shipped produce to Europe. Europe sent cloth, salt, tobacco, guns and gunpowder, spirits and hardware, which Krio and African traders carried inland. Wars over trade routes disrupted this trade and led Britain to move inland.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="800" height="520" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">How the Colony lived on hinterland trade</text>
+<rect x="20.0" y="115.0" width="240.0" height="230.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="140.0" y="164.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">HINTERLAND</text>
+<text x="140.0" y="186.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">palm kernels, palm oil</text>
+<text x="140.0" y="208.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">kola nuts</text>
+<text x="140.0" y="230.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">timber</text>
+<text x="140.0" y="252.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">groundnuts, rice</text>
+<text x="140.0" y="274.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">hides, ivory and gold</text>
+<text x="140.0" y="296.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(from the north)</text>
+<rect x="300.0" y="155.0" width="200.0" height="150.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="195.5" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">FREETOWN</text>
+<text x="400.0" y="218.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Krio and European</text>
+<text x="400.0" y="241.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">merchants;</text>
+<text x="400.0" y="264.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the port</text>
+<rect x="540.0" y="115.0" width="240.0" height="230.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="660.0" y="175.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">EUROPE</text>
+<text x="660.0" y="197.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cloth</text>
+<text x="660.0" y="219.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">salt and tobacco</text>
+<text x="660.0" y="241.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">guns and gunpowder</text>
+<text x="660.0" y="263.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">spirits</text>
+<text x="660.0" y="285.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">iron and hardware</text>
+<line x1="262.0" y1="200.0" x2="298.0" y2="200.0" stroke="#15803d" stroke-width="3" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<line x1="502.0" y1="200.0" x2="538.0" y2="200.0" stroke="#15803d" stroke-width="3" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<line x1="538.0" y1="262.0" x2="502.0" y2="262.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="298.0" y1="262.0" x2="262.0" y2="262.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<text x="400.0" y="132.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">produce →</text>
+<text x="400.0" y="330.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">← imports</text>
+<rect x="30.0" y="400.0" width="740.0" height="80.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="400.0" y="418.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Trade wars and raids on the routes</text>
+<text x="400.0" y="440.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">hurt Freetown&#x27;s trade and led Britain to send expeditions inland</text>
+<text x="400.0" y="462.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">and, in 1896, to declare the Protectorate.</text>
+</svg>

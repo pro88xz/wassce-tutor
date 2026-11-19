@@ -23,7 +23,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from chemistry_figs import box, link  # noqa: E402
 from geography_figs import (  # noqa: E402
-    BROWN, MAPS, NEIGHBOUR, RIVER, SEA_FILL, WA_BOX, Proj, country, north_arrow, ring_d, town,
+    BROWN, MAPS, NEIGHBOUR, RIVER, SEA_FILL, SL_BOX, WA_BOX, Proj, country, north_arrow, ring_d, sl_base, town,
 )
 from government_figs import heading, note  # noqa: E402
 from svgfig import (  # noqa: E402
@@ -680,6 +680,362 @@ def world_war_two_effects():
         s.arrow(x, 131, x, 142, color=MUTED, width=2)
     for x in (150, 400, 650):
         s.line(x, 252, x, 308, color=MUTED, width=2)
+    return s
+
+
+# ═══ H3: Sierra Leone to 1945 ════════════════════════════════════════════════
+
+def sl_frame(s: Svg, h=None):
+    P = Proj(SL_BOX, 10, 10, 780, (h or s.h) - 20)
+    sl_base(s, P)
+    return P
+
+
+@fig
+def sl_peoples_map():
+    s = Svg(800, 820, "Main ethnic groups of Sierra Leone",
+            "Map of Sierra Leone showing where the main ethnic groups mostly live. Mande-speaking peoples: Mende in the south "
+            "and east, Kono in the east, Koranko and Yalunka in the north-east, Susu in the north-west, Loko, Vai, and Fula "
+            "and Mandinka communities in the north. Atlantic-speaking peoples: Temne in the north-west and centre, Limba in "
+            "the north, Bullom on the northern coast, Sherbro on the southern coast and Sherbro Island, Kissi in the far "
+            "east, Krim and Gola in the south-east. The Krio live mainly in Freetown and the Western Area. Locations are "
+            "approximate and people of every group live throughout the country.")
+    P = sl_frame(s, h=740)
+    MANDE, ATL, KRIO = ORANGE, BLUE, PURPLE
+    groups = [("TEMNE", -12.55, 8.78, ATL, 19), ("LIMBA", -12.05, 9.38, ATL, 17), ("SUSU", -12.88, 9.32, MANDE, 15),
+              ("LOKO", -12.35, 9.08, MANDE, 14), ("KORANKO", -11.35, 9.3, MANDE, 16), ("YALUNKA", -11.35, 9.82, MANDE, 15),
+              ("KONO", -10.95, 8.58, MANDE, 17), ("KISSI", -10.42, 8.42, ATL, 14), ("MENDE", -11.6, 7.9, MANDE, 21),
+              ("SHERBRO", -12.55, 7.52, ATL, 15), ("BULLOM", -13.05, 8.72, ATL, 13), ("KRIM", -11.95, 7.22, ATL, 14),
+              ("VAI", -11.42, 7.0, MANDE, 14), ("GOLA", -10.92, 7.45, ATL, 14), ("KRIO", -13.18, 8.34, KRIO, 15)]
+    for n, lon, lat, col, size in groups:
+        x, y = P(lon, lat)
+        s.label(x, y, n, size=size, weight="bold", color=col, pad=3)
+    x, y = P(-11.95, 9.66)
+    s.label(x, y, "Fula and Mandinka (north)", size=13, color=MANDE, italic=True, pad=3)
+    legend(s, [(ORANGE, "Mande languages"), (BLUE, "Atlantic languages"), (PURPLE, "Krio (English-based creole)")], 30, 768,
+           cols=3, colw=250, rowh=28, size=15)
+    s.text(400, 806, "Locations are approximate; people of every group live all over the country.", size=13, color=MUTED)
+    return s
+
+
+@fig
+def sl_coast_trade_map():
+    s = Svg(800, 700, "European trading and slave-trading posts on the Sierra Leone coast",
+            "Map of the Sierra Leone coast showing places used by European and Afro-European traders from the sixteenth to "
+            "the nineteenth centuries: Bunce Island in the Sierra Leone River, a British slave-trading fort whose captives "
+            "were shipped to South Carolina and Georgia; the Banana Islands; Plantain Island and York Island in the "
+            "Sherbro; and the Gallinas, centre of the illegal slave trade in the 1820s to 1840s, where the Amistad captives "
+            "were held at Lomboko. Positions are approximate.")
+    P = Proj((-13.75, 6.75, -11.2, 9.15), 10, 10, 780, 680)
+    s.rect(0, 0, s.w, s.h, fill=SEA_FILL, stroke="none", width=0, rx=20)
+    for n in ("Guinea", "Liberia"):
+        country(s, P, MAPS["sl_countries"][n], NEIGHBOUR)
+    country(s, P, MAPS["sl_countries"]["Sierra Leone"], LANDFILL, stroke=INK, width=2)
+    posts = [(-13.04, 8.57, "Bunce Island", "British fort, about 1670–1807", "start", 14),
+             (-13.22, 8.11, "Banana Islands", "Cleveland family traders", "end", -14),
+             (-12.95, 7.91, "Plantain Island", "John Newton worked here, 1740s", "end", -14),
+             (-12.48, 7.56, "York Island (Sherbro)", "Royal African Company post", "start", 14),
+             (-11.55, 6.97, "Gallinas (Lomboko)", "illegal slave trade, 1820s–40s", "end", -14)]
+    for lon, lat, n, sub, anchor, dx in posts:
+        x, y = P(lon, lat)
+        s.rect(x - 8, y - 8, 16, 16, fill=RED, stroke=INK, width=1.5)
+        s.label(x + dx, y - 10, n, size=16, anchor=anchor, weight="bold", color=RED, pad=3)
+        s.label(x + dx, y + 11, sub, size=13, anchor=anchor, color=INK, pad=2)
+    town(s, P, -13.23, 8.48, "Freetown (from 1792)", dx=-12, anchor="end", capital=True, size=14)
+    x, y = P(-13.04, 8.57)
+    s.arrow(x - 14, y - 22, 70, 60, color=RED, width=2.5)
+    s.label(84, 46, "captives to South Carolina, Georgia and the Caribbean", size=14, anchor="start", color=RED, weight="bold", pad=3)
+    x, y = P(-11.6, 8.75)
+    s.text(x, y, "SIERRA LEONE", size=20, weight="bold", color=MUTED)
+    north_arrow(s, 740, 600)
+    return s
+
+
+@fig
+def freetown_founding_timeline():
+    s = Svg(800, 680, "From the Province of Freedom to the Crown Colony, 1786–1808",
+            "Timeline: 1786, the Committee for the Relief of the Black Poor is formed in London; 1787, about 400 settlers "
+            "found the Province of Freedom on land obtained from King Tom; 1788, King Naimbana confirms the grant; 1789, "
+            "Granville Town is burned; 1791, the Sierra Leone Company is formed; 1792, about 1,190 Nova Scotians arrive "
+            "with John Clarkson and Freetown is founded; 1794, a French squadron sacks Freetown; 1800, the Nova Scotian "
+            "rising is put down and the Jamaican Maroons arrive; 1808, Sierra Leone becomes a Crown Colony.")
+    heading(s, "From the Province of Freedom to the Crown Colony")
+    events = [("1786", ["Committee for the Relief of the Black Poor", "formed in London; Granville Sharp supports it"], INK),
+              ("1787", ["Province of Freedom founded", "about 400 settlers; land from King Tom"], GREEN),
+              ("1788", ["King Naimbana confirms the grant", "of land to the settlers"], GREEN),
+              ("1789", ["Granville Town burned", "after a quarrel with the Temne ruler King Jimmy"], RED),
+              ("1791", ["Sierra Leone Company formed", "Henry Thornton, Wilberforce, Sharp, Clarkson"], BLUE),
+              ("1792", ["Nova Scotians arrive; Freetown founded", "about 1,190 settlers led by John Clarkson"], GREEN),
+              ("1794", ["French squadron sacks Freetown", "during the war between Britain and France"], RED),
+              ("1800", ["Nova Scotian rising put down", "about 550 Jamaican Maroons arrive"], ORANGE),
+              ("1808", ["Sierra Leone becomes a Crown Colony", "1 January; the Company hands over to Britain"], BLUE)]
+    vtimeline(s, 130, 90, 68, events, size=18)
+    return s
+
+
+@fig
+def krio_origins():
+    s = Svg(800, 560, "Where the Krio came from",
+            "Diagram: four groups of settlers joined to form the Krio people of Sierra Leone: the Black Poor from London "
+            "(1787), the Nova Scotians, formerly enslaved Black Loyalists who arrived from Canada in 1792, the Jamaican "
+            "Maroons (1800), and the Liberated Africans or recaptives, freed from slave ships by the Royal Navy and landed "
+            "at Freetown from 1808 to the 1860s, who became the largest group. Krio culture combined the Krio language, "
+            "Christianity and Islam, Western education, and trade and the professions.")
+    heading(s, "Where the Krio came from")
+    src = [(110, ["Black Poor", "from London", "1787"], INK, F_GREY),
+              (303, ["Nova Scotians", "Black Loyalists", "1792"], GREEN, F_GREEN),
+              (497, ["Jamaican Maroons", "from Jamaica", "via Nova Scotia, 1800"], ORANGE, F_AMBER),
+              (690, ["Liberated Africans", "recaptives, 1808–60s", "the largest group"], BLUE, F_BLUE)]
+    k = box(s, 400, 300, 360, 76, ["THE KRIO", "Freetown and the Colony villages"], col=PURPLE, fill=F_PURPLE, size=21)
+    for x, lines, col, fill in src:
+        b = box(s, x, 140, 180, 100, lines, col=col, fill=fill, size=16)
+        link(s, b, k, color=MUTED, width=2.5)
+    traits = [(140, ["Krio language", "English-based, with", "Yoruba and other words"]),
+              (400, ["Religion", "mostly Christian;", "Muslim Krio (Aku)"]),
+              (660, ["Education and work", "teachers, clergy, lawyers,", "doctors, traders"])]
+    for x, lines in traits:
+        b = box(s, x, 462, 236, 104, lines, col=INK, fill="#ffffff", size=16)
+        link(s, k, b, color=MUTED, width=2.5)
+    return s
+
+
+@fig
+def colony_and_protectorate():
+    s = Svg(800, 600, "The Colony and the Protectorate of Sierra Leone after 1896",
+            "Diagram comparing the two parts of Sierra Leone under one Governor after 1896. The Colony, made up of Freetown, "
+            "the peninsula, Sherbro and other coastal areas, whose people were British subjects under English law, with a "
+            "Legislative Council from 1863. The Protectorate, the hinterland declared on 31 August 1896, whose people were "
+            "British-protected persons, divided into five districts (Karene, Ronietta, Bandajuma, Panguma and Koinadugu) "
+            "under District Commissioners, ruled through paramount chiefs and customary law, and taxed by the hut tax from "
+            "1898.")
+    heading(s, "One Governor, two systems: the Colony and the Protectorate")
+    g = box(s, 400, 96, 300, 56, ["GOVERNOR (Freetown)"], col=INK, fill=F_GREY, size=19)
+    c = box(s, 205, 196, 350, 68, ["THE COLONY", "Freetown, peninsula, Sherbro"], col=PURPLE, fill=F_PURPLE, size=19)
+    pr = box(s, 595, 196, 350, 68, ["THE PROTECTORATE", "the hinterland, from 31 August 1896"], col=GREEN, fill=F_GREEN, size=19)
+    link(s, g, c, color=MUTED, width=2.5)
+    link(s, g, pr, color=MUTED, width=2.5)
+    left = ["People: British subjects", "English law and courts", "Legislative Council from 1863", "Freetown City Council, 1893",
+            "Krio, settlers and others"]
+    right = ["People: British-protected persons", "five districts under District", "Commissioners (DCs)",
+             "paramount chiefs; customary law", "hut tax from 1898"]
+    for k, (l, r) in enumerate(zip(left, right)):
+        y = 270 + k * 48
+        s.text(40, y, "•  " + l, size=17, anchor="start", color=INK)
+        s.text(430 if k != 2 else 452, y, ("•  " if k != 2 else "") + r, size=17, anchor="start", color=INK)
+    box(s, 400, 548, 740, 64, ["Districts of 1896", "Karene · Ronietta · Bandajuma · Panguma · Koinadugu"], col=GREEN, fill="#ffffff", size=17)
+    return s
+
+
+@fig
+def hut_tax_war_map():
+    s = Svg(800, 800, "The Hut Tax War of 1898",
+            "Map of Sierra Leone showing the two main areas of fighting in 1898. In the north, Bai Bureh of Kasseh led the "
+            "Temne rising around Port Loko from February to November 1898. In the south, the Mende rising broke out at the "
+            "end of April 1898 around Rotifunk, Taiama, Bonthe and other places, where missionaries, Krio traders and "
+            "officials were attacked. Areas are approximate.")
+    P = sl_frame(s, h=760)
+    zone(s, P, -12.75, 8.85, 0.45, 0.32, RED, "#fecaca", "NORTHERN RISING", "Bai Bureh, Feb–Nov 1898", lx=-12.55, ly=9.45)
+    zone(s, P, -12.2, 7.85, 0.8, 0.55, ORANGE, "#fed7aa", "MENDE RISING", "from late April 1898", lx=-11.55, ly=8.55)
+    for lon, lat, n, dx, anchor in [(-12.79, 8.77, "Port Loko", 10, "start"), (-12.68, 8.23, "Rotifunk", -10, "end"),
+                                    (-12.06, 8.2, "Taiama", 10, "start"), (-12.50, 7.53, "Bonthe", 10, "start")]:
+        town(s, P, lon, lat, n, dx=dx, anchor=anchor, size=15)
+    town(s, P, -13.23, 8.48, "Freetown", dx=6, dy=-22, anchor="start", capital=True, size=15)
+    s.label(400, 784, "Areas are approximate. Both risings began after the hut tax was imposed in January 1898.", size=13, color=MUTED, pad=2)
+    north_arrow(s, 740, 80)
+    return s
+
+
+@fig
+def sl_railway_map():
+    s = Svg(800, 800, "Sierra Leone Government Railway and early mining",
+            "Map of Sierra Leone showing the narrow-gauge Sierra Leone Government Railway, begun in 1896, running from "
+            "Freetown through Bauya and Bo to Pendembu (1908), with a branch from Bauya to Makeni; the separate mining "
+            "railway from the Marampa iron-ore mine to the port of Pepel (1933); and the Kono diamond fields, where "
+            "diamonds were found in 1930. Routes are simplified.")
+    P = sl_frame(s, h=760)
+    main = [(-13.23, 8.48), (-13.07, 8.34), (-12.9, 8.32), (-12.57, 8.18), (-12.43, 8.16), (-12.1, 8.0), (-11.74, 7.96),
+            (-11.35, 7.87), (-11.19, 7.88), (-10.95, 7.99), (-10.69, 8.1)]
+    branch = [(-12.57, 8.18), (-12.45, 8.45), (-12.25, 8.7), (-12.05, 8.88)]
+    mine = [(-13.05, 8.58), (-12.75, 8.64), (-12.48, 8.68)]
+    for pts, col, dash in [(main, INK, None), (branch, INK, "7 5"), (mine, RED, None)]:
+        xy = [P(*p) for p in pts]
+        if dash:
+            s.polyline(xy, color=col, width=4, dash=dash)
+        else:
+            s.polyline(xy, color=col, width=4)
+    for lon, lat, n, dx, anchor in [(-12.57, 8.18, "Bauya (junction)", -10, "end"), (-11.74, 7.96, "Bo (1903)", 0, "middle"),
+                                    (-10.69, 8.1, "Pendembu (1908)", -6, "end"), (-12.05, 8.88, "Makeni", 10, "start"),
+                                    (-13.05, 8.58, "Pepel", 0, "middle"), (-12.48, 8.68, "Marampa iron ore", 10, "start")]:
+        x, y = P(lon, lat)
+        s.circle(x, y, 6, fill="#ffffff", stroke=INK, width=2.5)
+        dy = 24 if n.startswith("Bo") else (-20 if n == "Pepel" else 0)
+        s.label(x + dx, y + dy, n, size=15, anchor=anchor, weight="bold", pad=3)
+    town(s, P, -13.23, 8.48, "Freetown (1896)", dx=8, dy=24, anchor="start", capital=True, size=15)
+    x, y = P(-10.97, 8.66)
+    s.polygon([(x, y - 12), (x + 10, y), (x, y + 12), (x - 10, y)], fill="#38bdf8", stroke=INK, width=1.5)
+    s.label(x - 14, y, "Kono diamonds (1930)", size=15, anchor="end", weight="bold", color=BLUE, pad=3)
+    legend(s, [(INK, "Government Railway, 1896–1908"), (RED, "Marampa–Pepel mining line, 1933")], 30, 712, cols=2, colw=370, rowh=28, size=15)
+    s.text(30, 744, "Dashed: branch line to Makeni. Routes simplified; the railway closed in the 1970s.", size=13, color=MUTED, anchor="start")
+    return s
+
+
+@fig
+def sl_colonial_timeline():
+    s = Svg(800, 760, "Colonial Sierra Leone, 1863–1945: key political events",
+            "Timeline: 1863, Legislative Council set up; 1893, Freetown City Council created, with Samuel Lewis as first "
+            "mayor in 1895; 1896, Protectorate declared; 1898, Hut Tax War; 1906, Bo School opened for the sons of chiefs; "
+            "1919, riots and a railway strike in Freetown; 1920, Sierra Leone joins the National Congress of British West "
+            "Africa; 1924, new constitution with the first elected members and paramount chiefs in the Legislative "
+            "Council; 1926, railway workers' strike; 1938, I. T. A. Wallace-Johnson founds the Sierra Leone branch of the "
+            "West African Youth League; 1939, strikes and Wallace-Johnson's detention.")
+    heading(s, "Colonial Sierra Leone: political milestones, 1863–1945")
+    events = [("1863", ["Legislative Council set up", "Governor with officials and nominated members"], INK),
+              ("1893", ["Freetown City Council created", "Sir Samuel Lewis first mayor, 1895"], PURPLE),
+              ("1896", ["Protectorate declared", "31 August; five districts"], GREEN),
+              ("1898", ["Hut Tax War", "Bai Bureh and the Mende rising"], RED),
+              ("1906", ["Bo School opens", "for the sons and nominees of chiefs"], GREEN),
+              ("1919", ["Freetown riots and railway strike", "high prices, rice shortage, low pay"], RED),
+              ("1920", ["Sierra Leone in the NCBWA", "Bankole-Bright among the delegates"], BLUE),
+              ("1924", ["New constitution", "first elected members; 3 paramount chiefs"], BLUE),
+              ("1926", ["Railway workers' strike", "a landmark in labour history"], ORANGE),
+              ("1938–39", ["West African Youth League", "Wallace-Johnson; strikes; detained 1939"], ORANGE)]
+    vtimeline(s, 150, 90, 66, events, size=18)
+    return s
+
+
+@fig
+def sl_chiefdom_structure():
+    s = Svg(800, 600, "How a pre-colonial Sierra Leone chiefdom was organised",
+            "Diagram of a typical pre-colonial chiefdom in Sierra Leone. The chief or king, such as a Temne Bai, ruled with "
+            "a council of elders and sub-chiefs and a speaker who spoke for him. Below were section and town chiefs, then "
+            "village and family heads, then the people. Beside the chief, the men's Poro society advised and checked his "
+            "power, made laws, controlled trade and initiated boys, and the women's Sande (Bondo) society initiated and "
+            "trained girls and protected women's interests.")
+    heading(s, "A pre-colonial chiefdom in Sierra Leone")
+    levels = [["Chief or king", "e.g. a Temne Bai; chosen from ruling houses"],
+              ["Council of elders and sub-chiefs", "with a speaker who spoke for the chief"],
+              ["Section and town chiefs"],
+              ["Village and family heads"],
+              ["The people"]]
+    bs = []
+    for k, lines in enumerate(levels):
+        bs.append(box(s, 290, 100 + k * 96, 420, 70 if len(lines) > 1 else 56, lines,
+                      col=[RED, ORANGE, BLUE, GREEN, INK][k], fill=[F_RED, F_AMBER, F_BLUE, F_GREEN, F_GREY][k], size=17))
+    for a, b in zip(bs, bs[1:]):
+        link(s, a, b, color=MUTED, width=2.5)
+    po = box(s, 660, 150, 220, 150, ["Poro society", "men's society: makes", "laws, controls trade,", "checks the chief,", "initiates boys"],
+             col=PURPLE, fill=F_PURPLE, size=16)
+    sa = box(s, 660, 380, 220, 130, ["Sande (Bondo)", "women's society:", "initiates and trains", "girls"], col=TEAL, fill=F_TEAL, size=16)
+    s.line(550, 100, 500, 100, color=PURPLE, width=2.5, dash="6 4")
+    s.line(550, 100, 550, 150, color=PURPLE, width=2.5, dash="6 4")
+    s.line(550, 380, 500, 380, color=TEAL, width=2.5, dash="6 4")
+    return s
+
+
+@fig
+def amistad_journey():
+    s = Svg(800, 600, "The Amistad captives: from Mende country to freedom, 1839–1842",
+            "Flow diagram of the Amistad story: early in 1839 Sengbe Pieh and other Mende people were captured and sold at "
+            "Lomboko in the Gallinas to the Spanish slave trader Pedro Blanco; they were shipped illegally to Havana in "
+            "Cuba; in July 1839, on the schooner La Amistad, they rose up and took the ship; in August 1839 it was seized "
+            "off Long Island in the United States; after trials, the US Supreme Court freed them in March 1841; and 35 "
+            "survivors returned to Sierra Leone in January 1842.")
+    heading(s, "The Amistad captives, 1839–1842")
+    steps = [(150, 120, ["1. Captured, early 1839", "Sengbe Pieh and other Mende", "sold at Lomboko (Gallinas)"], RED, F_RED),
+             (400, 120, ["2. Atlantic crossing", "illegal slave ship", "to Havana, Cuba"], ORANGE, F_AMBER),
+             (650, 120, ["3. Revolt, July 1839", "on the schooner La Amistad;", "the captives take the ship"], PURPLE, F_PURPLE),
+             (650, 300, ["4. Seized, August 1839", "off Long Island, USA;", "held in Connecticut"], BLUE, F_BLUE),
+             (400, 300, ["5. Freed, March 1841", "US Supreme Court rules", "they were free people"], GREEN, F_GREEN),
+             (150, 300, ["6. Home, January 1842", "35 survivors return", "to Sierra Leone"], GREEN, F_GREEN)]
+    bs = [box(s, x, y, 230, 112, lines, col=col, fill=fill, size=16) for x, y, lines, col, fill in steps]
+    for a, b in zip(bs, bs[1:]):
+        link(s, a, b, color=INK, width=2.5)
+    box(s, 400, 470, 740, 110, ["Why it matters", "The case became a famous victory against the illegal slave trade.",
+                                "Sengbe Pieh is a Sierra Leonean national hero, and the returning",
+                                "group helped to begin the Mende Mission in the south."], col=INK, fill="#ffffff", size=16)
+    return s
+
+
+@fig
+def settler_journeys():
+    s = Svg(800, 620, "Four journeys to Freetown",
+            "Schematic diagram, not to scale, of the four main groups who settled in Freetown: the Black Poor sailed from "
+            "London in 1787; Black Loyalists who had sided with Britain in the American Revolution were moved to Nova "
+            "Scotia in 1783 and sailed from Halifax to Freetown in 1792; the Jamaican Maroons were deported from Jamaica to "
+            "Nova Scotia in 1796 and brought to Freetown in 1800; and from 1808 the Royal Navy landed Liberated Africans "
+            "freed from slave ships off the West African coast.")
+    heading(s, "Four journeys to Freetown (not to scale)")
+    ns = box(s, 150, 110, 230, 60, ["NOVA SCOTIA", "Halifax, Canada"], col=BLUE, fill=F_BLUE, size=17)
+    am = box(s, 120, 300, 200, 60, ["AMERICAN COLONIES", "Black Loyalists"], col=INK, fill=F_GREY, size=16)
+    ja = box(s, 400, 540, 230, 60, ["JAMAICA", "Trelawny Town Maroons"], col=ORANGE, fill=F_AMBER, size=17)
+    lo = box(s, 640, 110, 230, 60, ["LONDON", "the Black Poor"], col=INK, fill=F_GREY, size=17)
+    ft = box(s, 640, 400, 230, 70, ["FREETOWN", "Sierra Leone"], col=PURPLE, fill=F_PURPLE, size=19)
+    sh = box(s, 660, 560, 240, 56, ["Slave ships captured at sea", "by the Royal Navy"], col=RED, fill=F_RED, size=15)
+
+    def leg(a, b, text, tx, ty, col, anchor="middle"):
+        link(s, a, b, color=col, width=3)
+        s.label(tx, ty, text, size=15, weight="bold", color=col, anchor=anchor, pad=3)
+
+    leg(am, ns, "1783: evacuated", 152, 205, INK, anchor="start")
+    leg(ja, ns, "", 0, 0, ORANGE)
+    s.label(292, 352, "1796: deported", size=15, weight="bold", color=ORANGE, anchor="start", pad=3)
+    leg(lo, ft, "1787: about 400", 640, 250, INK)
+    leg(ns, ft, "1792: about 1,190 Nova Scotians", 395, 236, BLUE)
+    s.label(395, 300, "1800: about 550 Maroons", size=15, weight="bold", color=ORANGE, pad=3)
+    leg(sh, ft, "", 0, 0, RED)
+    s.label(780, 478, "1808–1860s:", size=15, weight="bold", color=RED, anchor="end", pad=3)
+    s.label(780, 498, "Liberated Africans", size=15, weight="bold", color=RED, anchor="end", pad=3)
+    return s
+
+
+@fig
+def colony_hinterland_trade():
+    s = Svg(800, 520, "Trade between the hinterland, Freetown and Europe in the nineteenth century",
+            "Flow diagram: the hinterland sent palm kernels and palm oil, kola nuts, timber, groundnuts, rice, and hides, "
+            "ivory and gold from the north to Freetown, where Krio and European merchants shipped produce to Europe. Europe "
+            "sent cloth, salt, tobacco, guns and gunpowder, spirits and hardware, which Krio and African traders carried "
+            "inland. Wars over trade routes disrupted this trade and led Britain to move inland.")
+    heading(s, "How the Colony lived on hinterland trade")
+    hi = box(s, 140, 230, 240, 230, ["HINTERLAND", "palm kernels, palm oil", "kola nuts", "timber", "groundnuts, rice",
+                                     "hides, ivory and gold", "(from the north)"], col=GREEN, fill=F_GREEN, size=16)
+    ft = box(s, 400, 230, 200, 150, ["FREETOWN", "Krio and European", "merchants;", "the port"], col=PURPLE, fill=F_PURPLE, size=17)
+    eu = box(s, 660, 230, 240, 230, ["EUROPE", "cloth", "salt and tobacco", "guns and gunpowder", "spirits",
+                                     "iron and hardware"], col=BLUE, fill=F_BLUE, size=16)
+    for (x1, x2, y, col, t) in [(262, 298, 200, GREEN, "produce"), (502, 538, 200, GREEN, "produce"),
+                                (538, 502, 262, BLUE, "imports"), (298, 262, 262, BLUE, "imports")]:
+        s.arrow(x1, y, x2, y, color=col, width=3)
+    s.text(400, 132, "produce →", size=15, weight="bold", color=GREEN)
+    s.text(400, 330, "← imports", size=15, weight="bold", color=BLUE)
+    box(s, 400, 440, 740, 80, ["Trade wars and raids on the routes", "hurt Freetown's trade and led Britain to send expeditions inland",
+                                "and, in 1896, to declare the Protectorate."], col=RED, fill=F_RED, size=16)
+    return s
+
+
+@fig
+def hut_tax_war_causes_results():
+    s = Svg(800, 620, "The Hut Tax War of 1898: causes and results",
+            "Diagram. Causes: the hut tax of 5 or 10 shillings a year from January 1898; brutal collection by the Frontier "
+            "Police; chiefs losing their powers under the Protectorate Ordinance; fears that the government would take "
+            "land; and anger at Krio traders and missionaries seen as part of colonial rule. Results: the Chalmers "
+            "Commission of 1899 blamed the tax and the police, but the Colonial Office kept the tax; British control of "
+            "the Protectorate was completed; Bai Bureh was exiled; the West African Regiment was formed; distrust grew "
+            "between the Colony and the Protectorate; and chiefs became agents of colonial rule.")
+    heading(s, "The Hut Tax War, 1898: causes and results")
+    s.text(200, 76, "CAUSES", size=18, weight="bold", color=RED)
+    s.text(600, 76, "RESULTS", size=18, weight="bold", color=BLUE)
+    causes = [["The hut tax", "5s or 10s a year from Jan 1898"], ["Frontier Police abuses", "chiefs flogged and humiliated"],
+              ["Chiefs lose powers", "under the Protectorate Ordinance"], ["Fear for land", "rumours the land would be taken"],
+              ["Anger at Krio and missions", "seen as part of colonial rule"]]
+    results = [["Chalmers Commission (1899)", "blamed the tax; tax kept"], ["British control completed", "the Protectorate pacified"],
+               ["Bai Bureh exiled", "to the Gold Coast"], ["Colony–Protectorate distrust", "lasting divisions"],
+               ["Chiefs as colonial agents", "under District Commissioners"]]
+    centre = box(s, 400, 330, 120, 120, ["WAR", "1898"], col=INK, fill=F_GREY, size=20)
+    for k, (c, r) in enumerate(zip(causes, results)):
+        y = 124 + k * 100
+        a = box(s, 160, y, 270, 76, c, col=RED, fill=F_RED, size=16)
+        b = box(s, 640, y, 270, 76, r, col=BLUE, fill=F_BLUE, size=16)
+        s.arrow(296, y, 336, 330 + (y - 324) * 0.35, color=MUTED, width=2)
+        s.arrow(464, 330 + (y - 324) * 0.35, 504, y, color=MUTED, width=2)
     return s
 
 # ─────────────────────────────────────────────────────────────────────────────

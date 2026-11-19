@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Where the Krio came from</title>
+<desc id="d">Diagram: four groups of settlers joined to form the Krio people of Sierra Leone: the Black Poor from London (1787), the Nova Scotians, formerly enslaved Black Loyalists who arrived from Canada in 1792, the Jamaican Maroons (1800), and the Liberated Africans or recaptives, freed from slave ships by the Royal Navy and landed at Freetown from 1808 to the 1860s, who became the largest group. Krio culture combined the Krio language, Christianity and Islam, Western education, and trade and the professions.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="560" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Where the Krio came from</text>
+<rect x="220.0" y="262.0" width="360.0" height="76.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="286.5" font-size="21" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">THE KRIO</text>
+<text x="400.0" y="313.5" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Freetown and the Colony villages</text>
+<rect x="20.0" y="90.0" width="180.0" height="100.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="110.0" y="118.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Black Poor</text>
+<text x="110.0" y="140.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">from London</text>
+<text x="110.0" y="162.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1787</text>
+<line x1="206.0" y1="140.0" x2="214.0" y2="300.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="213.0" y="90.0" width="180.0" height="100.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="303.0" y="118.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Nova Scotians</text>
+<text x="303.0" y="140.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Black Loyalists</text>
+<text x="303.0" y="162.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1792</text>
+<line x1="303.0" y1="196.0" x2="400.0" y2="256.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="407.0" y="90.0" width="180.0" height="100.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="497.0" y="118.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Jamaican Maroons</text>
+<text x="497.0" y="140.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">from Jamaica</text>
+<text x="497.0" y="162.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">via Nova Scotia, 1800</text>
+<line x1="497.0" y1="196.0" x2="400.0" y2="256.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="600.0" y="90.0" width="180.0" height="100.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="690.0" y="118.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Liberated Africans</text>
+<text x="690.0" y="140.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">recaptives, 1808–60s</text>
+<text x="690.0" y="162.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the largest group</text>
+<line x1="594.0" y1="140.0" x2="586.0" y2="300.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="22.0" y="410.0" width="236.0" height="104.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="140.0" y="440.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Krio language</text>
+<text x="140.0" y="462.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">English-based, with</text>
+<text x="140.0" y="484.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Yoruba and other words</text>
+<line x1="400.0" y1="344.0" x2="140.0" y2="404.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="282.0" y="410.0" width="236.0" height="104.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="400.0" y="440.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Religion</text>
+<text x="400.0" y="462.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">mostly Christian;</text>
+<text x="400.0" y="484.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Muslim Krio (Aku)</text>
+<line x1="400.0" y1="344.0" x2="400.0" y2="404.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="542.0" y="410.0" width="236.0" height="104.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="660.0" y="440.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Education and work</text>
+<text x="660.0" y="462.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">teachers, clergy, lawyers,</text>
+<text x="660.0" y="484.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">doctors, traders</text>
+<line x1="400.0" y1="344.0" x2="660.0" y2="404.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+</svg>

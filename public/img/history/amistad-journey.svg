@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The Amistad captives: from Mende country to freedom, 1839–1842</title>
+<desc id="d">Flow diagram of the Amistad story: early in 1839 Sengbe Pieh and other Mende people were captured and sold at Lomboko in the Gallinas to the Spanish slave trader Pedro Blanco; they were shipped illegally to Havana in Cuba; in July 1839, on the schooner La Amistad, they rose up and took the ship; in August 1839 it was seized off Long Island in the United States; after trials, the US Supreme Court freed them in March 1841; and 35 survivors returned to Sierra Leone in January 1842.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="800" height="600" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The Amistad captives, 1839–1842</text>
+<rect x="35.0" y="64.0" width="230.0" height="112.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="150.0" y="98.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. Captured, early 1839</text>
+<text x="150.0" y="120.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Sengbe Pieh and other Mende</text>
+<text x="150.0" y="142.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sold at Lomboko (Gallinas)</text>
+<rect x="285.0" y="64.0" width="230.0" height="112.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="400.0" y="98.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2. Atlantic crossing</text>
+<text x="400.0" y="120.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">illegal slave ship</text>
+<text x="400.0" y="142.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">to Havana, Cuba</text>
+<rect x="535.0" y="64.0" width="230.0" height="112.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="650.0" y="98.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3. Revolt, July 1839</text>
+<text x="650.0" y="120.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">on the schooner La Amistad;</text>
+<text x="650.0" y="142.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the captives take the ship</text>
+<rect x="535.0" y="244.0" width="230.0" height="112.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="650.0" y="278.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4. Seized, August 1839</text>
+<text x="650.0" y="300.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">off Long Island, USA;</text>
+<text x="650.0" y="322.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">held in Connecticut</text>
+<rect x="285.0" y="244.0" width="230.0" height="112.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="278.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5. Freed, March 1841</text>
+<text x="400.0" y="300.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">US Supreme Court rules</text>
+<text x="400.0" y="322.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">they were free people</text>
+<rect x="35.0" y="244.0" width="230.0" height="112.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="150.0" y="278.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6. Home, January 1842</text>
+<text x="150.0" y="300.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">35 survivors return</text>
+<text x="150.0" y="322.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">to Sierra Leone</text>
+<line x1="271.0" y1="120.0" x2="279.0" y2="120.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="521.0" y1="120.0" x2="529.0" y2="120.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="650.0" y1="182.0" x2="650.0" y2="238.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="529.0" y1="300.0" x2="521.0" y2="300.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="279.0" y1="300.0" x2="271.0" y2="300.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="30.0" y="415.0" width="740.0" height="110.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="400.0" y="437.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Why it matters</text>
+<text x="400.0" y="459.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">The case became a famous victory against the illegal slave trade.</text>
+<text x="400.0" y="481.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Sengbe Pieh is a Sierra Leonean national hero, and the returning</text>
+<text x="400.0" y="503.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">group helped to begin the Mende Mission in the south.</text>
+</svg>
