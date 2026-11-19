@@ -22,6 +22,26 @@
       "permanent": false
     },
     {
+      "source": "/wassce/agricultural-science/introduction-to-agriculture/branches-of-agriculture",
+      "destination": "/wassce/agricultural-science/introduction-to-agriculture/defining-agriculture-and-its-importance",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/agricultural-science/introduction-to-agriculture/types-of-agriculture",
+      "destination": "/wassce/agricultural-science/introduction-to-agriculture/defining-agriculture-and-its-importance",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/agricultural-science/land-tenure-systems/renting-land-for-farming",
+      "destination": "/wassce/agricultural-science/land-tenure-systems/tenant-farming-systems",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/agricultural-science/land-tenure-systems/types-of-land-tenure-systems",
+      "destination": "/wassce/agricultural-science/land-tenure-systems/meaning-of-land-tenure-systems",
+      "permanent": true
+    },
+    {
       "source": "/wassce/chemistry/acid-base-titration/acid-base-titration",
       "destination": "/wassce/chemistry/acid-base-titration/titration-apparatus-procedure-and-indicators",
       "permanent": true
@@ -497,6 +517,46 @@
       "permanent": true
     },
     {
+      "source": "/wassce/history/independence-and-the-margai-era/sir-milton-margais-government-19611964-achievements-and-problems",
+      "destination": "/wassce/history/independence-and-the-margai-era/sir-milton-margais-government-1961-1964-achievements-and-problems",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/history/military-rule-and-the-kabbah-administration/nprc-military-government-19921996-strasser-bio-and-the-return-to-civilian-rule",
+      "destination": "/wassce/history/military-rule-and-the-kabbah-administration/nprc-military-government-1992-1996-strasser-bio-and-the-return-to-civilian-rule",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/history/military-rule-and-the-kabbah-administration/president-kabbah-19962007-afrc-coup-lom-agreement-and-the-end-of-the-war",
+      "destination": "/wassce/history/military-rule-and-the-kabbah-administration/president-kabbah-1996-2007-afrc-coup-lome-agreement-and-the-end-of-the-war",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/history/political-developments-1947-1961/sierra-leones-road-to-independence-19511961-lancaster-house-and-the-apc",
+      "destination": "/wassce/history/political-developments-1947-1961/sierra-leones-road-to-independence-1951-1961-lancaster-house-and-the-apc",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/history/the-european-partition-of-africa/berlin-conference-188485-decisions-methods-and-effects-of-partition",
+      "destination": "/wassce/history/the-european-partition-of-africa/berlin-conference-1884-85-decisions-methods-and-effects-of-partition",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/history/the-founding-of-freetown-and-the-settlement-colony/nova-scotian-settlers-the-maroons-and-the-sierra-leone-company-17921808",
+      "destination": "/wassce/history/the-founding-of-freetown-and-the-settlement-colony/nova-scotian-settlers-the-maroons-and-the-sierra-leone-company-1792-1808",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/history/the-momoh-administration-and-the-civil-war/joseph-saidu-momohs-government-19851992-and-why-it-fell",
+      "destination": "/wassce/history/the-momoh-administration-and-the-civil-war/joseph-saidu-momohs-government-1985-1992-and-why-it-fell",
+      "permanent": true
+    },
+    {
+      "source": "/wassce/history/the-momoh-administration-and-the-civil-war/sierra-leone-civil-war-19912002-causes-course-and-effects",
+      "destination": "/wassce/history/the-momoh-administration-and-the-civil-war/sierra-leone-civil-war-1991-2002-causes-course-and-effects",
+      "permanent": true
+    },
+    {
       "source": "/wassce/mathematics/number-bases/number-bases",
       "destination": "/wassce/mathematics/number-bases/number-bases-place-value-and-converting-to-and-from-base-ten",
       "permanent": true
@@ -644,46 +704,6 @@
     {
       "source": "/wassce/physics/scalars-and-vectors/vector-quantities",
       "destination": "/wassce/physics/scalars-and-vectors/scalars-and-vectors-adding-and-resolving-vectors",
-      "permanent": true
-    },
-    {
-      "source": "/wassce/history/the-european-partition-of-africa/berlin-conference-188485-decisions-methods-and-effects-of-partition",
-      "destination": "/wassce/history/the-european-partition-of-africa/berlin-conference-1884-85-decisions-methods-and-effects-of-partition",
-      "permanent": true
-    },
-    {
-      "source": "/wassce/history/the-founding-of-freetown-and-the-settlement-colony/nova-scotian-settlers-the-maroons-and-the-sierra-leone-company-17921808",
-      "destination": "/wassce/history/the-founding-of-freetown-and-the-settlement-colony/nova-scotian-settlers-the-maroons-and-the-sierra-leone-company-1792-1808",
-      "permanent": true
-    },
-    {
-      "source": "/wassce/history/political-developments-1947-1961/sierra-leones-road-to-independence-19511961-lancaster-house-and-the-apc",
-      "destination": "/wassce/history/political-developments-1947-1961/sierra-leones-road-to-independence-1951-1961-lancaster-house-and-the-apc",
-      "permanent": true
-    },
-    {
-      "source": "/wassce/history/independence-and-the-margai-era/sir-milton-margais-government-19611964-achievements-and-problems",
-      "destination": "/wassce/history/independence-and-the-margai-era/sir-milton-margais-government-1961-1964-achievements-and-problems",
-      "permanent": true
-    },
-    {
-      "source": "/wassce/history/the-momoh-administration-and-the-civil-war/joseph-saidu-momohs-government-19851992-and-why-it-fell",
-      "destination": "/wassce/history/the-momoh-administration-and-the-civil-war/joseph-saidu-momohs-government-1985-1992-and-why-it-fell",
-      "permanent": true
-    },
-    {
-      "source": "/wassce/history/the-momoh-administration-and-the-civil-war/sierra-leone-civil-war-19912002-causes-course-and-effects",
-      "destination": "/wassce/history/the-momoh-administration-and-the-civil-war/sierra-leone-civil-war-1991-2002-causes-course-and-effects",
-      "permanent": true
-    },
-    {
-      "source": "/wassce/history/military-rule-and-the-kabbah-administration/nprc-military-government-19921996-strasser-bio-and-the-return-to-civilian-rule",
-      "destination": "/wassce/history/military-rule-and-the-kabbah-administration/nprc-military-government-1992-1996-strasser-bio-and-the-return-to-civilian-rule",
-      "permanent": true
-    },
-    {
-      "source": "/wassce/history/military-rule-and-the-kabbah-administration/president-kabbah-19962007-afrc-coup-lom-agreement-and-the-end-of-the-war",
-      "destination": "/wassce/history/military-rule-and-the-kabbah-administration/president-kabbah-1996-2007-afrc-coup-lome-agreement-and-the-end-of-the-war",
       "permanent": true
     }
   ],
