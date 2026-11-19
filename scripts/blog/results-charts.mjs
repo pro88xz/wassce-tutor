@@ -245,7 +245,53 @@ function coverEntries() {
   }
 }
 
-const CHARTS = [coverEntries(), entriesChart(), englishMathsChart(), withheldChart()]
+// The withheld-results guide's cover: what happens to a withheld result, as a
+// flow. The three outcomes use the fixed status colours, each with an icon and
+// a label so colour never carries the meaning alone. Same 16:8 safe area.
+function coverWithheld() {
+  const outcomes = [
+    { icon: '✓', color: '#0ca30c', title: 'Cleared', body: 'every result released' },
+    { icon: '–', color: '#ec835a', title: 'Subject cancelled', body: 'one or more papers lost' },
+    { icon: '✕', color: '#d03b3b', title: 'Whole result cancelled', body: 'and possibly barred for a time' },
+  ]
+  return {
+    name: '../wassce-2026-withheld-results',
+    cover: true,
+    width: W,
+    height: H,
+    css: `
+      body{background:#130d2b;color:#fff}
+      .cover{width:${W}px;height:${H}px;padding:44px 34px 42px;display:flex;flex-direction:column}
+      .kicker{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#c4b5fd}
+      h1{margin-top:8px;font-size:27px;line-height:1.08;font-weight:800;letter-spacing:-.03em}
+      .flow{margin-top:16px;display:grid;grid-template-columns:128px 16px 128px 16px 1fr;align-items:center}
+      .box{border:1px solid rgb(255 255 255 / 16%);background:rgb(255 255 255 / 6%);border-radius:12px;padding:11px 12px}
+      .box b{display:block;font-size:13.5px;font-weight:700;line-height:1.2}
+      .box span{display:block;margin-top:4px;font-size:11.5px;line-height:1.35;color:rgb(255 255 255 / 70%)}
+      .arrow{justify-self:center;color:rgb(255 255 255 / 55%);font-size:14px}
+      .outcomes{display:grid;gap:6px}
+      .out{display:flex;align-items:center;gap:10px;border-radius:10px;background:rgb(255 255 255 / 6%);padding:7px 11px;line-height:1.25}
+      .out i{flex:none;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:13px;font-weight:800;color:#fff}
+      .out b{font-size:12.5px;font-weight:700;white-space:nowrap}
+      .out span{font-size:11px;color:rgb(255 255 255 / 70%);white-space:nowrap}
+      .note{margin-top:auto;font-size:11px;color:rgb(255 255 255 / 58%);display:flex;justify-content:space-between;gap:12px}`,
+    html: `
+      <div class="cover">
+        <p class="kicker">Sierra Leone · WASSCE 2026 · 47,454 withheld</p>
+        <h1>A withheld result is a suspicion, not a verdict.</h1>
+        <div class="flow">
+          <div class="box"><b>Result withheld</b><span>every subject, while malpractice is suspected</span></div>
+          <div class="arrow">→</div>
+          <div class="box"><b>WAEC investigates</b><span>case by case, under 13 categories</span></div>
+          <div class="arrow">→</div>
+          <div class="outcomes">${outcomes.map((o) => `<div class="out"><i style="background:${o.color}">${o.icon}</i><div><b>${o.title}</b><br><span>${o.body}</span></div></div>`).join('')}</div>
+        </div>
+        <p class="note"><span>Outcomes as described by the Ministry and reports of WAEC’s rules</span><span>wasscetutor.com</span></p>
+      </div>`,
+  }
+}
+
+const CHARTS = [coverEntries(), coverWithheld(), entriesChart(), englishMathsChart(), withheldChart()]
 
 await mkdir(OUT, { recursive: true })
 const font = await fontCss()
