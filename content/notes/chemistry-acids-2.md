@@ -59,7 +59,9 @@ Alternatively, [H⁺] = 10⁻¹⁴ ÷ 10⁻² = 10⁻¹², so pH = 12.
 
 ## Indicators
 
+:::callout{type=definition}
 An **indicator** is a substance that changes colour depending on whether the solution is acidic or alkaline.
+:::
 
 | Indicator | In acid | In alkali | Changes around pH |
 |---|---|---|---|
@@ -68,7 +70,11 @@ An **indicator** is a substance that changes colour depending on whether the sol
 | **Phenolphthalein** | Colourless | Pink | 8.3–10 |
 | **Universal indicator** | Red → orange → yellow | Green (neutral) → blue → purple | Whole range 1–14 |
 
-**Universal indicator** is a mixture of indicators that shows a range of colours, so it gives the **approximate pH**. A **pH meter** gives a more accurate reading.
+:::callout{type=definition}
+**Universal indicator** is a mixture of indicators that shows a range of colours, so it gives the **approximate pH**.
+:::
+
+A **pH meter** gives a more accurate reading.
 
 **Natural indicators:** extracts of **hibiscus (sorrel) flowers**, red cabbage and some fruit skins also change colour with pH. Hibiscus extract is red in acid and turns green-yellow in alkali.
 

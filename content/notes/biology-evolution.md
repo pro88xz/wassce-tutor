@@ -1,4 +1,8 @@
-**Evolution** is the gradual change in the inherited characteristics of a population over many generations, which over very long periods has produced the huge variety of life on Earth. It is happening around us now: malaria parasites that no longer respond to old drugs, mosquitoes that survive insecticide on bed nets, bacteria that resist antibiotics. Biology explains these changes with **natural selection**, the idea published by Charles Darwin and Alfred Russel Wallace in 1858. This lesson explains the theories of evolution, the evidence for it, how natural selection works, and examples you can see today.
+:::callout{type=definition}
+**Evolution** is the gradual change in the inherited characteristics of a population over many generations, which over very long periods has produced the huge variety of life on Earth.
+:::
+
+It is happening around us now: malaria parasites that no longer respond to old drugs, mosquitoes that survive insecticide on bed nets, bacteria that resist antibiotics. Biology explains these changes with **natural selection**, the idea published by Charles Darwin and Alfred Russel Wallace in 1858. This lesson explains the theories of evolution, the evidence for it, how natural selection works, and examples you can see today.
 
 ## Learning objectives
 

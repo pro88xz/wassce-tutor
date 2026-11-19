@@ -1,4 +1,8 @@
-A **cumulative frequency** is a running total: how many values are **up to** a certain point. "How many students scored 40 or less?" "What mark did the top 10% beat?" Questions like these are answered quickly from a **cumulative frequency curve**, also called an **ogive**. WASSCE sets an ogive question in Paper 2 very often: complete the table, draw the curve, and read off the median, the quartiles, a percentile or the number of students above a pass mark. This lesson takes you through every step, with the marks lost most often highlighted.
+:::callout{type=definition}
+A **cumulative frequency** is a running total: how many values are **up to** a certain point.
+:::
+
+"How many students scored 40 or less?" "What mark did the top 10% beat?" Questions like these are answered quickly from a **cumulative frequency curve**, also called an **ogive**. WASSCE sets an ogive question in Paper 2 very often: complete the table, draw the curve, and read off the median, the quartiles, a percentile or the number of students above a pass mark. This lesson takes you through every step, with the marks lost most often highlighted.
 
 ## Learning objectives
 

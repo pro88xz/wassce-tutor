@@ -39,7 +39,9 @@ Production is complete when a family buys the oil to cook with.
 
 ## Occupations
 
+:::callout{type=definition}
 An **occupation** is the work a person does to earn a living.
+:::
 
 ![A tree diagram: occupations divide into industrial (extractive, manufacturing, construction), commercial (trade and aids to trade) and direct services (teachers, nurses, police and others)](https://wasscetutor.com/img/commerce/occupations.svg)
 

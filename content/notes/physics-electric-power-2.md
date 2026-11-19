@@ -29,7 +29,11 @@ Doubling the current produces **four times** as much heat.
 
 **Filament lamps** use **tungsten**, which has a very high melting point (about 3400 °C); the bulb is filled with an inert gas so the filament does not burn.
 
-**A fuse** is a short, thin wire (of tin–lead alloy or a similar low-melting-point metal) in series with the live wire. If the current becomes too large, the fuse **melts** ("blows") and breaks the circuit before the wiring overheats.
+:::callout{type=definition}
+A **fuse** is a short, thin wire (of tin–lead alloy or a similar low-melting-point metal) in series with the live wire.
+:::
+
+If the current becomes too large, the fuse **melts** ("blows") and breaks the circuit before the wiring overheats.
 
 ## Heating water electrically
 

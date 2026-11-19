@@ -74,7 +74,11 @@ $$2\text{H}_2\text{(g)} + \text{O}_2\text{(g)} \rightarrow 2\text{H}_2\text{O(l)
 
 ## Percentage yield
 
-The **theoretical yield** is the mass calculated from the equation. The **actual yield** is the mass obtained in practice, which is usually less because of incomplete reaction, side reactions and losses in filtering or transferring.
+:::callout{type=definition}
+The **theoretical yield** is the mass calculated from the equation.
+:::
+
+The **actual yield** is the mass obtained in practice, which is usually less because of incomplete reaction, side reactions and losses in filtering or transferring.
 
 $$\text{percentage yield} = \dfrac{\text{actual yield}}{\text{theoretical yield}} \times 100$$
 

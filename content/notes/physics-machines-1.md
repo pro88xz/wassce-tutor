@@ -53,7 +53,11 @@ $$\text{MA} = \dfrac{400}{100} = 4 \qquad \eta = \dfrac{4}{5} \times 100\% = 80\
 
 ## Levers
 
-A **lever** is a rigid bar that turns about a fixed point, the **fulcrum** (pivot). By the principle of moments,
+:::callout{type=definition}
+A **lever** is a rigid bar that turns about a fixed point, the **fulcrum** (pivot).
+:::
+
+By the principle of moments,
 
 $$\text{effort} \times \text{effort arm} = \text{load} \times \text{load arm}$$
 

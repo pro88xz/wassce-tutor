@@ -27,7 +27,9 @@ $$F = ke$$
 where $F$ is the force (N), $e$ the extension (m) and $k$ the **spring constant** (or force constant) in **N m⁻¹**.
 :::
 
+:::callout{type=definition}
 The **extension** is the **increase** in length: $e = l - l_0$, where $l_0$ is the original (natural) length.
+:::
 
 The spring constant measures **stiffness**: a large $k$ means a stiff spring that stretches little.
 

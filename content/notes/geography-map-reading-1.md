@@ -1,4 +1,8 @@
-**Map reading** is the skill of getting information from a map: measuring **distances** and **areas** with the **scale**, finding **directions** and **bearings**, and locating places with **grid references**. A **topographical map** shows both natural features (relief, rivers, vegetation) and human features (settlements, roads, land use) using **conventional signs**. The **scale** tells you how much smaller the map is than the ground; on a **1:50,000** map, **2 cm on the map represents 1 km on the ground**. This lesson covers scale, distance, area, direction, bearings and grid references, the skills tested in every WASSCE Geography map question.
+:::callout{type=definition}
+**Map reading** is the skill of getting information from a map: measuring **distances** and **areas** with the **scale**, finding **directions** and **bearings**, and locating places with **grid references**.
+:::
+
+A **topographical map** shows both natural features (relief, rivers, vegetation) and human features (settlements, roads, land use) using **conventional signs**. The **scale** tells you how much smaller the map is than the ground; on a **1:50,000** map, **2 cm on the map represents 1 km on the ground**. This lesson covers scale, distance, area, direction, bearings and grid references, the skills tested in every WASSCE Geography map question.
 
 ## Learning objectives
 

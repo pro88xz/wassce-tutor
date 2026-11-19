@@ -84,7 +84,9 @@ The Pearson square finds the proportions of **two** feeds needed to reach a targ
 | **zero grazing (cut and carry)** | forage is cut and brought to housed animals |
 | **tethering** | animals tied on a rope and moved during the day (common for village goats and sheep) |
 
+:::callout{type=definition}
 **Carrying capacity** is the number of animals a pasture can support without being damaged.
+:::
 
 ### Conserving forage for the dry season
 

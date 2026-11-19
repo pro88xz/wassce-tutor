@@ -38,7 +38,9 @@ By the end of this lesson you should be able to:
 
 ### Land tenure
 
+:::callout{type=definition}
 **Land tenure** is the system by which land is owned and used.
+:::
 
 :::callout{type=definition}
 - **Communal or family ownership**: land belongs to the community or extended family and is allocated by chiefs or family heads. This is common in the provinces of Sierra Leone.

@@ -116,7 +116,9 @@ One leone now buys only what 80 cents bought in the base year: its value has fal
 
 ## Exchange rate
 
+:::callout{type=definition}
 The **exchange rate** is the price of one currency in terms of another.
+:::
 
 :::callout{type=worked-example}
 **An importer in Freetown must pay US\$4,000 for goods. Suppose US\$1 = NLe 24.**

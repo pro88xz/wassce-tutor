@@ -58,7 +58,9 @@ Translocation is the movement of dissolved organic substances through the phloem
 A **source** is a region where sugars are loaded into the phloem, such as a mature photosynthesising leaf.
 :::
 
+:::callout{type=definition}
 A **sink** is a region where sugars are used or stored, such as a growing root, developing fruit, seed or storage organ.
+:::
 
 Phloem contains sieve tube elements joined end to end, with sieve plates between them. Mature sieve tube elements have reduced cell contents and depend on companion cells for metabolic support. Companion cells contain many mitochondria and help load and unload sucrose.
 

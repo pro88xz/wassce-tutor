@@ -1,4 +1,8 @@
-**Ecology** is the study of living things in relation to each other and to their environment. It asks why mangroves grow at the coast but not on the Loma Mountains, why there are more rats on a farm after harvest, and what happens to a river when a mine washes mud into it. Sierra Leone is an excellent place to study ecology: in a small country there is tropical rainforest, savanna woodland, mangrove swamp, inland valley swamp, rivers, beaches and the open sea. This lesson introduces the vocabulary of ecology, the factors that shape every habitat, and how ecologists measure them.
+:::callout{type=definition}
+**Ecology** is the study of living things in relation to each other and to their environment.
+:::
+
+It asks why mangroves grow at the coast but not on the Loma Mountains, why there are more rats on a farm after harvest, and what happens to a river when a mine washes mud into it. Sierra Leone is an excellent place to study ecology: in a small country there is tropical rainforest, savanna woodland, mangrove swamp, inland valley swamp, rivers, beaches and the open sea. This lesson introduces the vocabulary of ecology, the factors that shape every habitat, and how ecologists measure them.
 
 ## Learning objectives
 

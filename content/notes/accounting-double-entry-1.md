@@ -1,4 +1,8 @@
-**Double-entry bookkeeping** is the system in which **every transaction is recorded twice**: once on the **debit** side of one account and once on the **credit** side of another, for the **same amount**. It rests on the dual aspect concept: every transaction gives value and receives value. The **rules of debit and credit** tell you which account to debit and which to credit: **debit** increases in **assets, expenses and drawings**; **credit** increases in **liabilities, capital and income**. This lesson explains the rules, the T-account, and how to record common transactions with worked examples.
+:::callout{type=definition}
+**Double-entry bookkeeping** is the system in which **every transaction is recorded twice**: once on the **debit** side of one account and once on the **credit** side of another, for the **same amount**.
+:::
+
+It rests on the dual aspect concept: every transaction gives value and receives value. The **rules of debit and credit** tell you which account to debit and which to credit: **debit** increases in **assets, expenses and drawings**; **credit** increases in **liabilities, capital and income**. This lesson explains the rules, the T-account, and how to record common transactions with worked examples.
 
 ## Learning objectives
 

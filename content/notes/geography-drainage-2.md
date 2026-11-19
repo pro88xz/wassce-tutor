@@ -1,4 +1,8 @@
-A **drainage pattern** is the shape formed by a river and its tributaries on a map. The six main **types of drainage patterns** are **dendritic** (branching like a tree), **trellis** (a rectangular grid), **radial** (flowing outwards from a central high point), **centripetal** (flowing inwards to a basin), **rectangular** (following right-angled joints) and **parallel**. Each reflects the rocks and slope beneath. This lesson explains drainage basins, the six patterns, how lakes are formed, and the rivers and lakes of Sierra Leone and West Africa.
+:::callout{type=definition}
+A **drainage pattern** is the shape formed by a river and its tributaries on a map.
+:::
+
+The six main **types of drainage patterns** are **dendritic** (branching like a tree), **trellis** (a rectangular grid), **radial** (flowing outwards from a central high point), **centripetal** (flowing inwards to a basin), **rectangular** (following right-angled joints) and **parallel**. Each reflects the rocks and slope beneath. This lesson explains drainage basins, the six patterns, how lakes are formed, and the rivers and lakes of Sierra Leone and West Africa.
 
 ## Learning objectives
 

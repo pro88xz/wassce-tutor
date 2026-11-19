@@ -25,7 +25,11 @@ On diagrams, current **into** the page is shown as ⊗ (the tail of an arrow), a
 
 ## The field of a solenoid
 
-A **solenoid** is a long coil of wire. When current flows, its field is like that of a **bar magnet**: almost uniform inside, with a north pole at one end and a south pole at the other.
+:::callout{type=definition}
+A **solenoid** is a long coil of wire.
+:::
+
+When current flows, its field is like that of a **bar magnet**: almost uniform inside, with a north pole at one end and a south pole at the other.
 
 **Finding the poles:**
 
@@ -58,7 +62,11 @@ Soft iron is used because it is **easily magnetised** and **loses its magnetism 
 
 ## The relay
 
-A **relay** is a switch operated by an electromagnet. A **small current** in the coil circuit attracts an armature that closes (or opens) contacts in a **second circuit**, which may carry a **large current** or high voltage. Relays let a small, safe circuit control a large one — for example the starter motor of a car, or a water pump controlled by a float switch.
+:::callout{type=definition}
+A **relay** is a switch operated by an electromagnet.
+:::
+
+A **small current** in the coil circuit attracts an armature that closes (or opens) contacts in a **second circuit**, which may carry a **large current** or high voltage. Relays let a small, safe circuit control a large one — for example the starter motor of a car, or a water pump controlled by a float switch.
 
 :::callout{type=local-example}
 In the electric bell at a school gate, and in the circuit breakers of a house distribution board, an electromagnet is at work. A circuit breaker's electromagnet pulls open a switch when the current becomes dangerously large.

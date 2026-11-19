@@ -42,7 +42,9 @@ Marketing is wider than **selling**. Selling is persuading people to buy what ha
 
 ## Market research
 
+:::callout{type=definition}
 **Market research** is the systematic collection and analysis of information about customers, markets and competitors.
+:::
 
 | Method | Example |
 |---|---|

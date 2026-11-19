@@ -1,4 +1,8 @@
-A **settlement** is any place where people live, from a single farmhouse to a great city. Settlements are classified as **rural** (villages and hamlets, where most people farm, fish or mine) or **urban** (towns and cities, where most people work in industry, trade and services). By the arrangement of their buildings, settlements form three main **patterns**: **nucleated** (clustered), **dispersed** (scattered) and **linear** (in a line). This lesson explains the types and patterns of settlement and the factors that decide where settlements grow.
+:::callout{type=definition}
+A **settlement** is any place where people live, from a single farmhouse to a great city.
+:::
+
+Settlements are classified as **rural** (villages and hamlets, where most people farm, fish or mine) or **urban** (towns and cities, where most people work in industry, trade and services). By the arrangement of their buildings, settlements form three main **patterns**: **nucleated** (clustered), **dispersed** (scattered) and **linear** (in a line). This lesson explains the types and patterns of settlement and the factors that decide where settlements grow.
 
 ## Learning objectives
 

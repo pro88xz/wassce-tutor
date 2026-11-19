@@ -23,7 +23,9 @@ By the end of this lesson you should be able to:
 | **Hachures** | short lines drawn down the slope; thicker and closer on steep slopes |
 | **Form lines** | dashed lines that show the general shape where heights are not surveyed |
 
+:::callout{type=definition}
 The **contour interval** (vertical interval) is the difference in height between neighbouring contours, for example **50 m** on many 1:50,000 maps.
+:::
 
 ## Slopes
 

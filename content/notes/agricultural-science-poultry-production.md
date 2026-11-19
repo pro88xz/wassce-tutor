@@ -47,7 +47,9 @@ By the end of this lesson you should be able to:
 
 ## Brooding day-old chicks
 
+:::callout{type=definition}
 **Brooding** is the care of chicks in the first weeks, when they cannot keep themselves warm.
+:::
 
 1. Clean and **disinfect** the house; spread fresh litter; set up a **brooder** (heat from bulbs, charcoal pots or gas) with a **brooder guard** (a ring that keeps chicks near the heat).
 2. **Temperature**: about **32–35 °C** in the first week, reduced by about 3 °C each week until about 21 °C.

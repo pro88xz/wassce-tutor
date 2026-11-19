@@ -10,7 +10,11 @@ By the end of this lesson you should be able to:
 
 ## Measures of central tendency
 
-A **measure of central tendency** is a single figure that represents the middle or typical value of a set of data. The three you need are the **mean**, the **median** and the **mode**.
+:::callout{type=definition}
+A **measure of central tendency** is a single figure that represents the middle or typical value of a set of data.
+:::
+
+The three you need are the **mean**, the **median** and the **mode**.
 
 :::callout{type=worked-example}
 A phone-credit kiosk in Makeni records its sales (in NLe) for one week:

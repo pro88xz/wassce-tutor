@@ -65,7 +65,11 @@ In 2022 Sierra Leone **redenominated** its currency: 1,000 old leones (Le) becam
 
 ## The demand for money
 
-The **demand for money** is the desire to hold wealth in the form of money (cash and current accounts) instead of buying goods or other assets. Keynes gave three motives:
+:::callout{type=definition}
+The **demand for money** is the desire to hold wealth in the form of money (cash and current accounts) instead of buying goods or other assets.
+:::
+
+Keynes gave three motives:
 
 1. **Transactions motive**: to pay for everyday purchases between paydays. It rises with income.
 2. **Precautionary motive**: to meet unexpected needs, such as illness or accidents.
@@ -73,7 +77,11 @@ The **demand for money** is the desire to hold wealth in the form of money (cash
 
 ## The supply of money
 
-The **money supply** is the total amount of money in the economy: notes and coins held by the public **plus** bank deposits. It is controlled mainly by the **central bank** (see the next lesson).
+:::callout{type=definition}
+The **money supply** is the total amount of money in the economy: notes and coins held by the public **plus** bank deposits.
+:::
+
+It is controlled mainly by the **central bank** (see the next lesson).
 
 ## The value of money
 

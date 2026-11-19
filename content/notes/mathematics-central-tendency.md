@@ -1,4 +1,8 @@
-An **average** is a single number that represents a whole set of data: the typical mark in a class, the usual price of rice at the market, the normal household size in a village. There are three averages, the **mean**, the **median** and the **mode**, and each tells a slightly different story. WASSCE asks you to calculate all three from lists, frequency tables and grouped data, and sometimes to say which is most suitable. This lesson covers every method, including the **assumed mean** shortcut and the formulas for the median and mode of grouped data.
+:::callout{type=definition}
+An **average** is a single number that represents a whole set of data: the typical mark in a class, the usual price of rice at the market, the normal household size in a village.
+:::
+
+There are three averages, the **mean**, the **median** and the **mode**, and each tells a slightly different story. WASSCE asks you to calculate all three from lists, frequency tables and grouped data, and sometimes to say which is most suitable. This lesson covers every method, including the **assumed mean** shortcut and the formulas for the median and mode of grouped data.
 
 ## Learning objectives
 

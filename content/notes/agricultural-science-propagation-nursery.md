@@ -74,7 +74,9 @@ Certified maize seed usually needs at least about 80–85% germination, so this 
 
 ## The nursery
 
+:::callout{type=definition}
 A **nursery** is a place where seedlings or young plants are raised and cared for until they are ready for transplanting.
+:::
 
 **Why use a nursery?** Small seeds need fine care; seedlings can be protected from sun, heavy rain, pests and weeds; only the strongest are transplanted; land is used efficiently while seedlings grow.
 

@@ -53,7 +53,11 @@ Crops can also be grouped by **life span**: **annuals** complete their life in o
 
 ## Spacing and plant population
 
-**Spacing** is the distance between rows and between plants within a row. Correct spacing gives each plant enough light, water and nutrients without wasting land.
+:::callout{type=definition}
+**Spacing** is the distance between rows and between plants within a row.
+:::
+
+Correct spacing gives each plant enough light, water and nutrients without wasting land.
 
 - Too wide: wasted land, more weeds, lower yield per hectare.
 - Too close: competition, thin weak plants, more pests and diseases, lower yield per plant.

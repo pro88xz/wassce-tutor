@@ -1,4 +1,8 @@
-**Population distribution** is the way people are spread out over an area, and **population density** is the average number of people living in each square kilometre: total population divided by land area. Some places, such as river valleys, coasts and cities, are **densely populated**; others, such as deserts, high mountains and thick forests, are **sparsely populated**. This lesson explains why, how a population is counted in a **census**, and how to calculate density, with Sierra Leone examples.
+:::callout{type=definition}
+**Population distribution** is the way people are spread out over an area, and **population density** is the average number of people living in each square kilometre: total population divided by land area.
+:::
+
+Some places, such as river valleys, coasts and cities, are **densely populated**; others, such as deserts, high mountains and thick forests, are **sparsely populated**. This lesson explains why, how a population is counted in a **census**, and how to calculate density, with Sierra Leone examples.
 
 ## Learning objectives
 

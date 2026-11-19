@@ -52,7 +52,11 @@ Unlike a trade association, which serves **one** trade, a chamber of commerce re
 
 ## Employers' associations
 
-An **employers' association** is a body of employers in an industry or country formed mainly to deal with **labour matters**: wages, working conditions and relations with trade unions. Sierra Leone has a national **Employers' Federation** that represents employers in national wage discussions.
+:::callout{type=definition}
+An **employers' association** is a body of employers in an industry or country formed mainly to deal with **labour matters**: wages, working conditions and relations with trade unions.
+:::
+
+Sierra Leone has a national **Employers' Federation** that represents employers in national wage discussions.
 
 | Employers' association | Trade union |
 |---|---|

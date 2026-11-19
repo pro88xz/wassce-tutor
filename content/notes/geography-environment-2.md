@@ -1,4 +1,8 @@
-**Climate change** is a long-term change in the Earth's climate, especially the rise in average temperatures, known as **global warming**, caused mainly by human activities that add **greenhouse gases** to the atmosphere. **Sustainable development** is development that meets the needs of the present without compromising the ability of future generations to meet their own needs. West Africa is among the regions most exposed to climate change, through **rising seas**, **floods**, **droughts** and **heat**. This lesson explains the greenhouse effect, the causes and effects of climate change, the responses to it, and the meaning and practice of sustainable development.
+:::callout{type=definition}
+**Climate change** is a long-term change in the Earth's climate, especially the rise in average temperatures, known as **global warming**, caused mainly by human activities that add **greenhouse gases** to the atmosphere.
+:::
+
+**Sustainable development** is development that meets the needs of the present without compromising the ability of future generations to meet their own needs. West Africa is among the regions most exposed to climate change, through **rising seas**, **floods**, **droughts** and **heat**. This lesson explains the greenhouse effect, the causes and effects of climate change, the responses to it, and the meaning and practice of sustainable development.
 
 ## Learning objectives
 

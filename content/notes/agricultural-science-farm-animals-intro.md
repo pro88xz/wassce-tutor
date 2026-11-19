@@ -54,7 +54,9 @@ By the end of this lesson you should be able to:
 | **semi-intensive** | animals graze or forage in the day and are housed at night, with some supplementary feed | moderate cost; better control and growth | needs fencing, housing and some feed |
 | **intensive** | animals kept **confined** all the time and given all their feed and care | fast growth, high output; easy control of disease, breeding and records | high cost of housing, feed and labour; disease spreads fast if hygiene fails |
 
+:::callout{type=definition}
 **Transhumance** is the seasonal movement of cattle herds to find grazing and water, practised by herders in the north and across West Africa.
+:::
 
 :::callout{type=common-mistake}
 **Thinking intensive is always best.** Intensive systems need money, reliable feed supply and skills. For many village farmers, a **semi-intensive** system (housing at night, grazing by day, vaccination and a little extra feed) gives the best return on a small investment.

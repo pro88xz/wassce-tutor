@@ -76,7 +76,11 @@ Standard containers are 20 feet or 40 feet long. Special ports have **container 
 
 ## Freight charges
 
-**Freight** is the charge for carrying goods. It is usually based on **weight**, **volume** or **distance**, and some carriers quote a rate **per tonne-kilometre**.
+:::callout{type=definition}
+**Freight** is the charge for carrying goods.
+:::
+
+It is usually based on **weight**, **volume** or **distance**, and some carriers quote a rate **per tonne-kilometre**.
 
 :::callout{type=worked-example}
 **A trader sends 20 tonnes of rice from Freetown to Kenema, a road distance of 300 km.** The haulage company charges NLe 2 per tonne-kilometre, plus a loading charge of NLe 500.

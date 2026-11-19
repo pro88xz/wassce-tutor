@@ -1,4 +1,8 @@
-**Mining** is the extraction of valuable minerals from the Earth's crust. The main **methods of mining** are **open-cast (surface) mining**, **underground (shaft) mining**, **alluvial (placer) mining** of river gravels, and **drilling** for oil and gas. West Africa is rich in minerals: oil and gas in Nigeria, gold in Ghana, bauxite in Guinea, iron ore in Liberia, Mauritania and Sierra Leone, uranium in Niger, and diamonds and rutile in Sierra Leone. This lesson explains the methods, the factors that affect mining and the main minerals of West Africa.
+:::callout{type=definition}
+**Mining** is the extraction of valuable minerals from the Earth's crust.
+:::
+
+The main **methods of mining** are **open-cast (surface) mining**, **underground (shaft) mining**, **alluvial (placer) mining** of river gravels, and **drilling** for oil and gas. West Africa is rich in minerals: oil and gas in Nigeria, gold in Ghana, bauxite in Guinea, iron ore in Liberia, Mauritania and Sierra Leone, uranium in Niger, and diamonds and rutile in Sierra Leone. This lesson explains the methods, the factors that affect mining and the main minerals of West Africa.
 
 ## Learning objectives
 

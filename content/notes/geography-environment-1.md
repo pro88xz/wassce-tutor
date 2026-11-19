@@ -19,7 +19,9 @@ The **environment** is everything around us: land, water, air, plants, animals a
 
 ## Deforestation
 
+:::callout{type=definition}
 **Deforestation** is the clearing of forests faster than they can regrow.
+:::
 
 | Causes | Effects |
 |---|---|
@@ -42,7 +44,9 @@ Sierra Leone has lost much of its original forest. The **Western Area Peninsula 
 
 *Figure 1. Causes and effects of desertification. WASSCE Tutor diagram.*
 
+:::callout{type=definition}
 **Desertification** is the spread of desert-like conditions into dry lands, especially the **Sahel**, the semi-arid belt south of the Sahara (northern Senegal, Mali, Burkina Faso, Niger, northern Nigeria, Chad).
+:::
 
 - **Causes:** **overgrazing**, **over-cultivation**, **cutting trees for fuel**, **bush burning**, **drought** and **climate change**, poor irrigation that causes salty soils, and **population growth**.
 - **Effects:** loss of farmland and pasture, **food shortage and famine**, **migration**, **dust storms**, drying of rivers and lakes (Lake Chad has shrunk greatly since the 1960s), and **conflicts** over land and water.

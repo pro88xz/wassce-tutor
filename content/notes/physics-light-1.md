@@ -44,7 +44,9 @@ Evidence in daily life: sharp shadows; sunbeams through gaps in clouds or a wind
 
 ## Shadows
 
+:::callout{type=definition}
 A **shadow** is a region that light cannot reach because an opaque object blocks it.
+:::
 
 - A **point source** gives a **sharp shadow** (umbra only).
 - An **extended (large) source** gives a dark central **umbra** surrounded by a lighter **penumbra**.

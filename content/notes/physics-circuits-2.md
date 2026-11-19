@@ -42,7 +42,11 @@ The balance method is accurate because at balance **no current flows through the
 
 ## The potentiometer
 
-A **potentiometer** is a long uniform wire carrying a steady current from a **driver cell**. The p.d. along the wire is proportional to the length. A test cell connected through a galvanometer and jockey **balances** at a length $l$ where the p.d. along the wire equals its e.m.f.
+:::callout{type=definition}
+A **potentiometer** is a long uniform wire carrying a steady current from a **driver cell**.
+:::
+
+The p.d. along the wire is proportional to the length. A test cell connected through a galvanometer and jockey **balances** at a length $l$ where the p.d. along the wire equals its e.m.f.
 
 At balance **no current is drawn from the test cell**, so the potentiometer measures its **true e.m.f.** (unlike a voltmeter, which draws a little current and reads the terminal p.d.).
 

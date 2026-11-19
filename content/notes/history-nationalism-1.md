@@ -1,4 +1,8 @@
-**Nationalism in West Africa** was the movement of Africans to **end colonial rule** and win **self-government and independence** for their countries. It grew from early protests by the **educated elite** before the First World War, through the **National Congress of British West Africa (NCBWA)** of **1920**, to the **mass political parties** that followed the **Second World War**. Its main causes were **Western education**, the **African press**, **colonial grievances** such as racial discrimination and economic exploitation, the effects of the **two World Wars**, the **Atlantic Charter (1941)** and the **United Nations**, **Pan-Africanism**, and the example of **India's independence (1947)**. This lesson explains the **causes and growth of nationalism in West Africa**.
+:::callout{type=definition}
+**Nationalism in West Africa** was the movement of Africans to **end colonial rule** and win **self-government and independence** for their countries.
+:::
+
+It grew from early protests by the **educated elite** before the First World War, through the **National Congress of British West Africa (NCBWA)** of **1920**, to the **mass political parties** that followed the **Second World War**. Its main causes were **Western education**, the **African press**, **colonial grievances** such as racial discrimination and economic exploitation, the effects of the **two World Wars**, the **Atlantic Charter (1941)** and the **United Nations**, **Pan-Africanism**, and the example of **India's independence (1947)**. This lesson explains the **causes and growth of nationalism in West Africa**.
 
 ## Learning objectives
 

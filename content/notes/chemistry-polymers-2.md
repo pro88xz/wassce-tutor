@@ -62,7 +62,9 @@ Raw rubber is **soft and sticky** when warm and **brittle** when cold.
 | Absorb water; comfortable; may shrink or crease | Strong, light, quick-drying, do not rot; melt if ironed too hot |
 | Biodegradable | Mostly not biodegradable |
 
+:::callout{type=definition}
 **Rayon** is a **semi-synthetic** fibre: natural cellulose (from wood pulp) chemically treated and re-formed into fibres.
+:::
 
 ## Disposing of plastic waste
 
