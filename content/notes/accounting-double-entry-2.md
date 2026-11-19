@@ -68,7 +68,11 @@ The movement of **goods for resale** is not recorded in a single "stock" account
 Returns inwards account is **debited** NLe 500 (sales are reduced); Kamara's account is **credited** NLe 500 (he now owes less, because he is giving the goods back).
 :::
 
-**Purchases** means only **goods bought for resale**. A van or a computer bought for use in the business is a **non-current asset**, debited to its own account, not to purchases.
+:::callout{type=definition}
+**Purchases** means only **goods bought for resale**.
+:::
+
+A van or a computer bought for use in the business is a **non-current asset**, debited to its own account, not to purchases.
 
 :::callout{type=common-mistake}
 Do not debit the purchases account when the business buys a motor van, shop fittings or a computer for its own use. These are **non-current assets** and have their own real accounts. Purchases are **only goods bought for resale**.

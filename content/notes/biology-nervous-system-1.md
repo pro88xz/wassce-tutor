@@ -15,7 +15,11 @@ By the end of this lesson, you should be able to:
 
 An organism is exposed to changes inside and outside its body. A change that can be detected and may produce a response is called a **stimulus**. Examples include bright light, heat, sound, pressure, injury and a change in blood glucose concentration.
 
-**Coordination** is the organisation of activities in different parts of the body so that they work together. **Control** involves regulating these activities and responses. In humans, the nervous system provides rapid communication using electrical impulses along neurones, while the endocrine system uses hormones carried in the blood. The two systems interact to maintain a stable internal environment.
+:::callout{type=definition}
+**Coordination** is the organisation of activities in different parts of the body so that they work together.
+:::
+
+**Control** involves regulating these activities and responses. In humans, the nervous system provides rapid communication using electrical impulses along neurones, while the endocrine system uses hormones carried in the blood. The two systems interact to maintain a stable internal environment.
 
 A typical nervous response follows this sequence:
 
@@ -32,7 +36,11 @@ The nervous system is divided structurally into two main parts.
 | Central nervous system (CNS) | Brain and spinal cord | Receives information, integrates it and coordinates responses |
 | Peripheral nervous system (PNS) | Cranial and spinal nerves outside the CNS | Carries impulses between the CNS and the rest of the body |
 
-The **brain** is the major control centre. It receives sensory information, interprets it and coordinates many responses. The **spinal cord** carries impulses between the brain and the body and also coordinates many rapid reflex actions.
+:::callout{type=definition}
+The **brain** is the major control centre.
+:::
+
+It receives sensory information, interprets it and coordinates many responses. The **spinal cord** carries impulses between the brain and the body and also coordinates many rapid reflex actions.
 
 The PNS includes nerves that carry information towards the CNS and nerves that carry instructions away from it. Functionally, it includes:
 
@@ -45,7 +53,11 @@ The autonomic system includes sympathetic and parasympathetic divisions. They of
 
 ## The neurone: a specialised nerve cell
 
-A **neurone** is a specialised cell adapted to receive and transmit nerve impulses. A typical neurone has the following parts:
+:::callout{type=definition}
+A **neurone** is a specialised cell adapted to receive and transmit nerve impulses.
+:::
+
+A typical neurone has the following parts:
 
 - **Cell body (cyton):** contains the nucleus and most of the cytoplasm; it maintains the cell.
 - **Dendrites:** short, branched extensions that receive signals from receptors or other neurones and carry them towards the cell body.
@@ -74,7 +86,11 @@ Synapses help ensure that signals are transmitted in an organised direction and 
 
 ## Reflex actions and the reflex arc
 
-A **reflex action** is a rapid, automatic response to a stimulus that occurs without deliberate conscious control at the time of the response. Pulling the hand away from a hot object is a familiar example. Reflexes help protect the body from injury and support functions such as posture.
+:::callout{type=definition}
+A **reflex action** is a rapid, automatic response to a stimulus that occurs without deliberate conscious control at the time of the response.
+:::
+
+Pulling the hand away from a hot object is a familiar example. Reflexes help protect the body from injury and support functions such as posture.
 
 The pathway followed by impulses during a reflex is called a **reflex arc**.
 

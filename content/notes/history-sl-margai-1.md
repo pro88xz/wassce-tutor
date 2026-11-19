@@ -27,7 +27,11 @@ By the end of this lesson you should be able to:
 
 ## Margai's style of leadership
 
-**Sir Milton Margai (1895–1964)** was a **medical doctor** from **Gbangbatoke** in Moyamba District. He was:
+:::callout{type=definition title="Key figure"}
+**Sir Milton Margai (1895–1964)** was a **medical doctor** from **Gbangbatoke** in Moyamba District.
+:::
+
+He was:
 
 1. **Moderate and cautious**, preferring gradual change and good relations with Britain.
 2. **Consensus-seeking**: he formed a **broad government** and brought rivals into his party.

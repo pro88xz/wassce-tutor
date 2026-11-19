@@ -13,7 +13,11 @@ By the end of this lesson, you should be able to:
 
 ## Seed germination
 
-**Germination** is the resumption of growth of a viable seed embryo under suitable conditions. It begins when the seed absorbs water and ends, in the usual school-level description, when the young seedling becomes established and begins independent growth.
+:::callout{type=definition}
+**Germination** is the resumption of growth of a viable seed embryo under suitable conditions.
+:::
+
+It begins when the seed absorbs water and ends, in the usual school-level description, when the young seedling becomes established and begins independent growth.
 
 ### Conditions required
 
@@ -55,7 +59,9 @@ In direct development, the young animal resembles a smaller version of the adult
 
 ### Development with metamorphosis
 
+:::callout{type=definition}
 **Metamorphosis** is a marked change in body form during development.
+:::
 
 A frog has an aquatic tadpole stage with a tail and gills. During metamorphosis, limbs develop, lungs become functional, the tail is resorbed and the body changes towards the adult form.
 

@@ -48,7 +48,9 @@ Named after **Governor Alexander Ransford Slater**, it was the first constitutio
 2. For the first time the **Protectorate was represented** in the Legislative Council.
 3. **Weaknesses:** officials kept control; the vote was limited to a few; Protectorate members were **nominated chiefs**, not elected; the educated elite of the Protectorate had no voice.
 
+:::callout{type=definition title="Key figure"}
 **Bankole-Bright** was one of the elected members and an outspoken critic of the government.
+:::
 
 ## Wallace-Johnson and the West African Youth League
 

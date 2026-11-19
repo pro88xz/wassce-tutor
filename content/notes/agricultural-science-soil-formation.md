@@ -50,11 +50,13 @@ Rock breaks into smaller pieces **without changing its minerals**.
 
 The minerals in the rock are **changed** into new substances.
 
+:::callout{type=definition}
 - **Hydrolysis**: water reacts with minerals such as feldspar to form clay.
 - **Oxidation**: iron in the rock reacts with oxygen, giving the **red and yellow colours** of many tropical soils and forming **laterite** (ironstone).
 - **Carbonation**: rainwater with dissolved carbon dioxide (a weak acid) dissolves limestone.
 - **Solution**: some minerals simply dissolve in water.
 - **Hydration**: minerals take up water and swell, weakening the rock.
+:::
 
 Chemical weathering is fast in hot, wet climates like Sierra Leone's.
 

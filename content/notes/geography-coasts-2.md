@@ -60,7 +60,11 @@ Every year from about December to February, the **Harmattan**, a dry north-east 
 
 ## Glaciers and glacial erosion
 
-A **glacier** is a large mass of ice moving slowly downhill under its own weight. Glaciers form where more snow falls in winter than melts in summer, and the snow is compressed into ice. **Valley glaciers** flow down mountain valleys; **ice sheets** cover huge areas, as in Antarctica and Greenland.
+:::callout{type=definition}
+A **glacier** is a large mass of ice moving slowly downhill under its own weight.
+:::
+
+Glaciers form where more snow falls in winter than melts in summer, and the snow is compressed into ice. **Valley glaciers** flow down mountain valleys; **ice sheets** cover huge areas, as in Antarctica and Greenland.
 
 **Processes of glacial erosion:**
 

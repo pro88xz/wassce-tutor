@@ -63,7 +63,11 @@ Released in about a thousandth of a second, this gives a power of several kilowa
 
 ## Dielectrics
 
-A **dielectric** is the insulating material between the plates. Placing a dielectric between the plates **increases** the capacitance by a factor $\varepsilon_r$ (the **relative permittivity** or dielectric constant):
+:::callout{type=definition}
+A **dielectric** is the insulating material between the plates.
+:::
+
+Placing a dielectric between the plates **increases** the capacitance by a factor $\varepsilon_r$ (the **relative permittivity** or dielectric constant):
 
 | Material | $\varepsilon_r$ (approx.) |
 |---|---|

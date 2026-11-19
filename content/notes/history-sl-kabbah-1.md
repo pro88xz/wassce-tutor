@@ -1,4 +1,8 @@
-The **National Provisional Ruling Council (NPRC)** was the military government that ruled Sierra Leone from **29 April 1992** to **29 March 1996**. It was led first by **Captain Valentine Strasser**, who at **25** was one of the world's youngest heads of state, and from **January 1996** by **Brigadier Julius Maada Bio**. The NPRC was popular at first for promising to **end the war, fight corruption** and clean up the country, but it failed to defeat the **RUF**, carried out **executions** and abuses, and was accused of corruption itself. Under pressure from civil society at the **Bintumani conferences**, it held **elections in February 1996** and handed power to President **Ahmad Tejan Kabbah**. This lesson explains **the NPRC military government and the return to civilian rule**.
+:::callout{type=definition}
+The **National Provisional Ruling Council (NPRC)** was the military government that ruled Sierra Leone from **29 April 1992** to **29 March 1996**.
+:::
+
+It was led first by **Captain Valentine Strasser**, who at **25** was one of the world's youngest heads of state, and from **January 1996** by **Brigadier Julius Maada Bio**. The NPRC was popular at first for promising to **end the war, fight corruption** and clean up the country, but it failed to defeat the **RUF**, carried out **executions** and abuses, and was accused of corruption itself. Under pressure from civil society at the **Bintumani conferences**, it held **elections in February 1996** and handed power to President **Ahmad Tejan Kabbah**. This lesson explains **the NPRC military government and the return to civilian rule**.
 
 ## Learning objectives
 

@@ -43,8 +43,10 @@ By the end of this lesson you should be able to:
 
 ## Regenerating forests
 
+:::callout{type=definition}
 - **Natural regeneration**: letting the forest regrow from seeds, stumps and roots already present, by protecting the area from fire and cutting.
 - **Artificial regeneration**: **planting** trees, by **afforestation** (planting where there was no forest) or **reforestation** (replanting after cutting).
+:::
 
 ### Silvicultural practices
 

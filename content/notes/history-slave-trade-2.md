@@ -41,7 +41,11 @@ Coastal states needed **guns** to defend themselves and to raid neighbours. Euro
 
 ## The African diaspora
 
-The **African diaspora** is the community of people of African descent living outside Africa, created largely by the slave trade. Its members later played key roles in the **abolition movement**, in **Pan-Africanism**, and in the founding of **Sierra Leone** and **Liberia**.
+:::callout{type=definition}
+The **African diaspora** is the community of people of African descent living outside Africa, created largely by the slave trade.
+:::
+
+Its members later played key roles in the **abolition movement**, in **Pan-Africanism**, and in the founding of **Sierra Leone** and **Liberia**.
 
 :::callout{type=local-example}
 The **Gullah** people of the coastal **South Carolina and Georgia** in the United States, many descended from captives shipped from the Upper Guinea coast, including Sierra Leone, kept words, songs and customs that link them to Sierra Leone today. Visits and research have strengthened these ties between Sierra Leone and the diaspora.

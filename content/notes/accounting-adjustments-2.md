@@ -1,4 +1,8 @@
-**Depreciation** is the part of the **cost of a non-current asset** that is used up in a period through **wear and tear, passage of time or becoming out of date**, and it is charged as an **expense** each year. The two main methods are the **straight-line method** (an equal charge each year) and the **reducing-balance method** (a fixed percentage of the falling carrying amount). Two related adjustments deal with customers who will not pay: **bad debts written off** and the **provision for doubtful debts**. This lesson explains how to calculate and record all three.
+:::callout{type=definition}
+**Depreciation** is the part of the **cost of a non-current asset** that is used up in a period through **wear and tear, passage of time or becoming out of date**, and it is charged as an **expense** each year.
+:::
+
+The two main methods are the **straight-line method** (an equal charge each year) and the **reducing-balance method** (a fixed percentage of the falling carrying amount). Two related adjustments deal with customers who will not pay: **bad debts written off** and the **provision for doubtful debts**. This lesson explains how to calculate and record all three.
 
 ## Learning objectives
 
@@ -53,7 +57,11 @@ The asset stays at **cost** in its account; depreciation is accumulated in a **p
 
 ## Bad debts
 
-A **bad debt** is an amount owed by a customer that will **never be paid** (the customer is bankrupt, has died or disappeared). It is written off:
+:::callout{type=definition}
+A **bad debt** is an amount owed by a customer that will **never be paid** (the customer is bankrupt, has died or disappeared).
+:::
+
+It is written off:
 
 - **Debit** bad debts account; **credit** the customer's account.
 - At the year end, the bad debts account is transferred to the **income statement** as an expense.

@@ -33,7 +33,9 @@ Only the damaged fridge is written down, from 4,000 to 2,700: a loss of 1,300 re
 
 ## Stocktaking
 
+:::callout{type=definition}
 **Stocktaking** is the physical counting, listing and valuing of all goods held at a date, usually the last day of the financial year.
+:::
 
 **Purposes:**
 

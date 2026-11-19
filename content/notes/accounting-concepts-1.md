@@ -1,4 +1,8 @@
-**Accounting concepts and conventions** are the basic assumptions and rules that guide how transactions are recorded and how financial statements are prepared, so that accounts are **consistent, reliable and comparable**. The most important are the **business entity**, **going concern**, **money measurement**, **historical cost**, **dual aspect**, **accruals (matching)**, **realisation**, **periodicity**, **consistency**, **prudence (conservatism)** and **materiality** concepts. This lesson explains each one with an example of how it is applied.
+:::callout{type=definition}
+**Accounting concepts and conventions** are the basic assumptions and rules that guide how transactions are recorded and how financial statements are prepared, so that accounts are **consistent, reliable and comparable**.
+:::
+
+The most important are the **business entity**, **going concern**, **money measurement**, **historical cost**, **dual aspect**, **accruals (matching)**, **realisation**, **periodicity**, **consistency**, **prudence (conservatism)** and **materiality** concepts. This lesson explains each one with an example of how it is applied.
 
 ## Learning objectives
 

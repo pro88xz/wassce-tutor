@@ -41,7 +41,11 @@ Deforestation, coastal erosion, pollution and climate change are environmental i
 
 ## Geography as a spatial subject
 
-A **spatial pattern** is the way a feature is arranged across an area. Settlements may form a linear pattern along a road or river, while industries may cluster around a port or an urban market.
+:::callout{type=definition}
+A **spatial pattern** is the way a feature is arranged across an area.
+:::
+
+Settlements may form a linear pattern along a road or river, while industries may cluster around a port or an urban market.
 
 Geographers use several key ideas:
 

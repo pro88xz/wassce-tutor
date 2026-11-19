@@ -1,4 +1,8 @@
-The **Atlantic slave trade** was the forced transport of **millions of Africans** across the **Atlantic Ocean** to work as enslaved labourers on **plantations and mines in the Americas**, from the sixteenth to the nineteenth century. It was driven by European demand for **cheap labour** to grow **sugar, tobacco, cotton and coffee**. Historians estimate that about **12.5 million** Africans were put on ships, and about **10.7 million** survived the crossing, known as the **Middle Passage**. This lesson explains the causes of the Atlantic slave trade and how it was organised.
+:::callout{type=definition}
+The **Atlantic slave trade** was the forced transport of **millions of Africans** across the **Atlantic Ocean** to work as enslaved labourers on **plantations and mines in the Americas**, from the sixteenth to the nineteenth century.
+:::
+
+It was driven by European demand for **cheap labour** to grow **sugar, tobacco, cotton and coffee**. Historians estimate that about **12.5 million** Africans were put on ships, and about **10.7 million** survived the crossing, known as the **Middle Passage**. This lesson explains the causes of the Atlantic slave trade and how it was organised.
 
 ## Learning objectives
 

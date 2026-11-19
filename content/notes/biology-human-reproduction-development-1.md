@@ -40,7 +40,11 @@ The scrotum helps keep the testes slightly cooler than normal internal body temp
 
 Sperm are produced in the seminiferous tubules, mature and are stored in the epididymis, then pass through the sperm duct. They mix with secretions from accessory glands, enter the urethra and leave the body through the penis.
 
-**Semen** is the mixture of sperm and fluids from accessory glands. It provides a medium that helps transport and support sperm. Semen and sperm are not the same thing: sperm are the male gametes, while semen is the fluid containing them.
+:::callout{type=definition}
+**Semen** is the mixture of sperm and fluids from accessory glands.
+:::
+
+It provides a medium that helps transport and support sperm. Semen and sperm are not the same thing: sperm are the male gametes, while semen is the fluid containing them.
 
 ## The female reproductive system
 
@@ -67,10 +71,12 @@ The cycle is controlled by hormones from the pituitary gland and ovaries.
 
 ### Main hormones
 
+:::callout{type=definition}
 - **Follicle-stimulating hormone (FSH)**: released by the anterior pituitary; stimulates the development of ovarian follicles.
 - **Luteinising hormone (LH)**: released by the anterior pituitary; a surge in LH triggers ovulation and helps form the corpus luteum.
 - **Oestrogen**: produced mainly by developing ovarian follicles; rebuilds and thickens the endometrium and helps regulate FSH and LH release.
 - **Progesterone**: produced mainly by the corpus luteum after ovulation; maintains the uterine lining and helps prevent another ovulation during that cycle.
+:::
 
 ### Stages of a typical cycle
 
@@ -105,12 +111,14 @@ If pregnancy is established, the early embryo produces human chorionic gonadotro
 
 ## Key reproductive terms
 
+:::callout{type=definition}
 - **Ovulation**: release of a mature ovum from an ovary.
 - **Fertilisation**: fusion of the nuclei of sperm and ovum, usually in the oviduct.
 - **Zygote**: the diploid cell formed by fertilisation.
 - **Implantation**: attachment and embedding of the early embryo in the endometrium.
 - **Menstruation**: shedding of the uterine lining when pregnancy has not been established.
 - **Menstrual cycle**: recurring ovarian and uterine changes controlled by hormones.
+:::
 
 Do not use these terms interchangeably. Ovulation is not fertilisation; fertilisation is not implantation; menstruation is not the release of an ovum.
 

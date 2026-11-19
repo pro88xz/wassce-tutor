@@ -29,7 +29,9 @@ By the end of this lesson you should be able to:
 
 ## The Stevenson screen
 
+:::callout{type=definition}
 The **Stevenson screen** is a wooden box that houses the thermometers and hygrometer.
+:::
 
 | Feature | Reason |
 |---|---|

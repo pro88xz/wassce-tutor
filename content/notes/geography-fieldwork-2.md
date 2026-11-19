@@ -53,7 +53,11 @@ Surveys are used to make **maps and plans**, mark **plot and farm boundaries**, 
 
 *Figure 2. Bearings and back bearings are the basis of a compass traverse. WASSCE Tutor diagram.*
 
-A **traverse** is a series of connected straight lines (legs) between stations. At each station:
+:::callout{type=definition}
+A **traverse** is a series of connected straight lines (legs) between stations.
+:::
+
+At each station:
 
 1. Sight the next station with the **prismatic compass** and read its **forward bearing**.
 2. **Measure the distance** to the next station with a tape or chain.
@@ -74,7 +78,11 @@ If the reading at Q is 309°, there is a 4° error, possibly from local magnetic
 
 ## Plane table survey
 
-A **plane table** is a drawing board on a tripod, with an **alidade** (sighting rule), a spirit level and a trough compass. The map is **drawn directly in the field** by sighting features and drawing rays towards them.
+:::callout{type=definition}
+A **plane table** is a drawing board on a tripod, with an **alidade** (sighting rule), a spirit level and a trough compass.
+:::
+
+The map is **drawn directly in the field** by sighting features and drawing rays towards them.
 
 - **Radiation:** from one station, draw rays to each feature and measure the distances.
 - **Intersection:** draw rays to each feature from two stations; where the rays cross fixes the feature, so few distances need measuring.

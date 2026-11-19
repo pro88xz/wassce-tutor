@@ -1,4 +1,8 @@
-A **wrongly prepared trial balance** is one in which some balances have been placed on the **wrong side**, so the totals do not agree. Redrafting it correctly is a common WASSCE task: you must place each balance on its **correct side** using the rules of debit and credit, then find any missing figure. This lesson shows a step-by-step method for **correcting a trial balance**, how to **find missing figures**, and how to tell whether a difference is caused by misplaced balances or by errors in the books.
+:::callout{type=definition}
+A **wrongly prepared trial balance** is one in which some balances have been placed on the **wrong side**, so the totals do not agree.
+:::
+
+Redrafting it correctly is a common WASSCE task: you must place each balance on its **correct side** using the rules of debit and credit, then find any missing figure. This lesson shows a step-by-step method for **correcting a trial balance**, how to **find missing figures**, and how to tell whether a difference is caused by misplaced balances or by errors in the books.
 
 ## Learning objectives
 

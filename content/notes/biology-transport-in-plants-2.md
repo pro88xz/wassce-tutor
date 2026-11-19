@@ -12,7 +12,11 @@ By the end of this lesson, you should be able to:
 
 ## Transpiration
 
-**Transpiration** is the loss of water vapour from the aerial parts of a plant, mainly through the stomata in leaves. Water evaporates from moist cell surfaces inside the leaf, moves into the intercellular air spaces and diffuses out through open stomata.
+:::callout{type=definition}
+**Transpiration** is the loss of water vapour from the aerial parts of a plant, mainly through the stomata in leaves.
+:::
+
+Water evaporates from moist cell surfaces inside the leaf, moves into the intercellular air spaces and diffuses out through open stomata.
 
 Most leaves have many stomata, each surrounded by two guard cells. When guard cells become turgid, the stomatal pore usually opens; when they lose turgor, the pore usually closes. The opening and closing of stomata regulate gas exchange and water loss. Carbon dioxide enters through stomata for photosynthesis, while oxygen and water vapour can leave.
 
@@ -50,7 +54,11 @@ For reliability, repeat readings and calculate a mean. Check the apparatus for l
 
 Translocation is the movement of dissolved organic substances through the phloem. The main transported carbohydrate is sucrose, although amino acids and other substances can also be moved. Unlike xylem transport, phloem transport can occur from a source to a sink in either direction in different sieve tubes.
 
-A **source** is a region where sugars are loaded into the phloem, such as a mature photosynthesising leaf. A **sink** is a region where sugars are used or stored, such as a growing root, developing fruit, seed or storage organ.
+:::callout{type=definition}
+A **source** is a region where sugars are loaded into the phloem, such as a mature photosynthesising leaf.
+:::
+
+A **sink** is a region where sugars are used or stored, such as a growing root, developing fruit, seed or storage organ.
 
 Phloem contains sieve tube elements joined end to end, with sieve plates between them. Mature sieve tube elements have reduced cell contents and depend on companion cells for metabolic support. Companion cells contain many mitochondria and help load and unload sucrose.
 

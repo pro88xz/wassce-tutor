@@ -1,4 +1,8 @@
-**Branch accounts** are the accounts kept by a business that trades in **more than one place**, to find the **profit of each branch**. A **dependent branch** does not keep a full set of books: **head office** sends it goods, pays its main expenses, receives its cash and keeps its accounts. An **independent branch** keeps its own full set of books. This lesson explains the types of branch and works through the **branch account (debtors) method** for a dependent branch that receives goods **at cost**.
+:::callout{type=definition}
+**Branch accounts** are the accounts kept by a business that trades in **more than one place**, to find the **profit of each branch**.
+:::
+
+A **dependent branch** does not keep a full set of books: **head office** sends it goods, pays its main expenses, receives its cash and keeps its accounts. An **independent branch** keeps its own full set of books. This lesson explains the types of branch and works through the **branch account (debtors) method** for a dependent branch that receives goods **at cost**.
 
 ## Learning objectives
 

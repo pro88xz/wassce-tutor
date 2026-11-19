@@ -1,4 +1,8 @@
-The **qualitative characteristics of financial information** are the qualities that make accounts useful to people who rely on them: **relevance**, **faithful representation (reliability)**, **comparability**, **verifiability**, **timeliness** and **understandability**. Accounts are also prepared on an agreed **basis**: the **accrual basis**, which records income and expenses when they are **earned or incurred**, or the simpler **cash basis**, which records them only when **cash is received or paid**. This lesson explains the characteristics, compares the two bases, and introduces the accounting standards that govern financial statements.
+:::callout{type=definition}
+The **qualitative characteristics of financial information** are the qualities that make accounts useful to people who rely on them: **relevance**, **faithful representation (reliability)**, **comparability**, **verifiability**, **timeliness** and **understandability**.
+:::
+
+Accounts are also prepared on an agreed **basis**: the **accrual basis**, which records income and expenses when they are **earned or incurred**, or the simpler **cash basis**, which records them only when **cash is received or paid**. This lesson explains the characteristics, compares the two bases, and introduces the accounting standards that govern financial statements.
 
 ## Learning objectives
 

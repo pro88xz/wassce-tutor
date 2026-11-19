@@ -51,7 +51,11 @@ A **component (subdivided) bar chart** splits each bar into parts, for example a
 
 ## Pie charts
 
-A **pie chart** is a circle divided into sectors. Each sector shows a **share of the whole**.
+:::callout{type=definition}
+A **pie chart** is a circle divided into sectors.
+:::
+
+Each sector shows a **share of the whole**.
 
 Because a full circle is 360°, each item's angle is:
 

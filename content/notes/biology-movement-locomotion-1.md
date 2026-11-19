@@ -12,7 +12,11 @@ By the end of this lesson, you should be able to:
 
 ## Movement and locomotion
 
-**Movement** is a change in position of the whole organism or of part of its body. **Locomotion** is movement that carries an organism from one place to another. A person bending an arm shows movement, but not locomotion. Walking, swimming and flying are forms of locomotion.
+:::callout{type=definition}
+**Movement** is a change in position of the whole organism or of part of its body.
+:::
+
+**Locomotion** is movement that carries an organism from one place to another. A person bending an arm shows movement, but not locomotion. Walking, swimming and flying are forms of locomotion.
 
 Movement is important for obtaining food, escaping predators, finding mates, dispersing offspring and responding to environmental changes. In mammals, the skeleton provides support and acts as a system of levers, while skeletal muscles provide the pulling force.
 

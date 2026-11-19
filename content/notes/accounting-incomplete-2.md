@@ -1,4 +1,8 @@
-**Converting incomplete records into final accounts** means rebuilding the missing figures, especially **sales** and **purchases**, from cash records and lists of debts, so that a full **income statement** and **statement of financial position** can be prepared. The key tools are the **total receivables (debtors) account**, which finds credit sales, the **total payables (creditors) account**, which finds credit purchases, and **mark-up and margin**, which find missing figures such as cost of sales or goods lost in a fire or theft. This lesson works through each tool.
+:::callout{type=definition}
+**Converting incomplete records into final accounts** means rebuilding the missing figures, especially **sales** and **purchases**, from cash records and lists of debts, so that a full **income statement** and **statement of financial position** can be prepared.
+:::
+
+The key tools are the **total receivables (debtors) account**, which finds credit sales, the **total payables (creditors) account**, which finds credit purchases, and **mark-up and margin**, which find missing figures such as cost of sales or goods lost in a fire or theft. This lesson works through each tool.
 
 ## Learning objectives
 
@@ -38,8 +42,10 @@ The same reasoning finds **expenses for the year** from cash paid adjusted for o
 
 ## Mark-up and margin
 
+:::callout{type=definition}
 - **Mark-up** is gross profit as a percentage of **cost of sales**.
 - **Margin** is gross profit as a percentage of **sales**.
+:::
 
 | Mark-up | Margin |
 |---|---|

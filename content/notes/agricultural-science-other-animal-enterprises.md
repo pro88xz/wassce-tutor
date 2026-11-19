@@ -12,7 +12,11 @@ By the end of this lesson you should be able to:
 
 ## Aquaculture (fish farming)
 
-**Aquaculture** is the rearing of fish and other aquatic animals under controlled conditions. Common species: **tilapia** (fast-breeding, eats plankton and plant matter) and **African catfish** (*Clarias*; hardy, tolerates low oxygen, fast-growing).
+:::callout{type=definition}
+**Aquaculture** is the rearing of fish and other aquatic animals under controlled conditions.
+:::
+
+Common species: **tilapia** (fast-breeding, eats plankton and plant matter) and **African catfish** (*Clarias*; hardy, tolerates low oxygen, fast-growing).
 
 ![An earthen fish pond in cross-section: inlet with a screen at the shallow end, water deepening to about 1.5 m at the outlet end with a drain pipe, and dykes planted with grass](https://wasscetutor.com/img/agriculture/fish-pond.svg)
 
@@ -76,7 +80,11 @@ The **giant African land snail** (*Achatina*) is popular, high in protein and lo
 
 ## Grasscutter (cane rat) rearing
 
-The **grasscutter** (*Thryonomys swinderianus*) is a highly prized bushmeat. Rearing it in cages or pens with grass (elephant grass, guinea grass), cassava, groundnuts and other feed produces the meat **without hunting** in the wild, which also reduces the risk of disease from wild bushmeat.
+:::callout{type=definition}
+The **grasscutter** (*Thryonomys swinderianus*) is a highly prized bushmeat.
+:::
+
+Rearing it in cages or pens with grass (elephant grass, guinea grass), cassava, groundnuts and other feed produces the meat **without hunting** in the wild, which also reduces the risk of disease from wild bushmeat.
 
 :::callout{type=local-example}
 **Inland valley swamps and fish ponds.** Some farmers in Sierra Leone have built small fish ponds in or beside their inland valley swamps, using the same water channels as the rice. The ponds give fish for the family and the market, and the pond water and mud fertilise the rice and vegetables around them. It is a good example of **integrated farming**: one resource serving several enterprises.

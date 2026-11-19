@@ -46,10 +46,12 @@ The names of these vessels are based on the direction in which blood travels rel
 
 The developing embryo is surrounded by membranes that support and protect it.
 
+:::callout{type=definition}
 - **Amnion**: surrounds the embryo and encloses amniotic fluid.
 - **Amniotic fluid**: cushions the developing fetus against mechanical shock, allows movement and helps maintain a relatively stable environment.
 - **Chorion**: the outer foetal membrane; contributes to formation of the placenta.
 - **Allantois**: contributes to structures associated with the umbilical cord and placental development in humans.
+:::
 
 Amniotic fluid is not the fetus's food supply. Nutrients and oxygen are transferred through the placenta and umbilical cord.
 
@@ -63,7 +65,11 @@ Pregnancy involves several interacting hormones. Avoid the oversimplified claim 
 
 ## Birth (parturition)
 
-**Parturition** is the process of childbirth. Near the end of pregnancy, hormonal and mechanical signals contribute to the onset of labour. The uterus contracts rhythmically, and the cervix gradually dilates to allow the baby to pass through the birth canal.
+:::callout{type=definition}
+**Parturition** is the process of childbirth.
+:::
+
+Near the end of pregnancy, hormonal and mechanical signals contribute to the onset of labour. The uterus contracts rhythmically, and the cervix gradually dilates to allow the baby to pass through the birth canal.
 
 The main stages are:
 
@@ -75,7 +81,11 @@ After birth, the umbilical cord is clamped and cut. The newborn must begin breat
 
 ## Lactation and breastfeeding
 
-**Lactation** is the production and release of milk by the mammary glands. The hormone prolactin stimulates milk production, while oxytocin causes contraction of cells around the milk-producing structures, helping milk to be released (the let-down reflex).
+:::callout{type=definition}
+**Lactation** is the production and release of milk by the mammary glands.
+:::
+
+The hormone prolactin stimulates milk production, while oxytocin causes contraction of cells around the milk-producing structures, helping milk to be released (the let-down reflex).
 
 Breast milk provides water, nutrients and protective immune factors. Colostrum, the first milk produced after birth, is especially rich in antibodies and other protective substances. Breastfeeding can support infant nutrition and protection against some infections.
 

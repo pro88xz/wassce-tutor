@@ -1,4 +1,8 @@
-**Source documents** are the original business papers that **prove a transaction took place** and give the details needed to record it: the **invoice**, **credit note**, **debit note**, **receipt**, **cheque and its counterfoil**, **bank paying-in slip**, **petty cash voucher** and **bank statement**. No entry should be made in the books without a source document, because it is the **evidence** the auditor and the tax authority will ask for. This lesson describes each document, who issues it, and where it is recorded.
+:::callout{type=definition}
+**Source documents** are the original business papers that **prove a transaction took place** and give the details needed to record it: the **invoice**, **credit note**, **debit note**, **receipt**, **cheque and its counterfoil**, **bank paying-in slip**, **petty cash voucher** and **bank statement**.
+:::
+
+No entry should be made in the books without a source document, because it is the **evidence** the auditor and the tax authority will ask for. This lesson describes each document, who issues it, and where it is recorded.
 
 ## Learning objectives
 
@@ -35,7 +39,11 @@ By the end of this lesson you should be able to:
 
 ## The invoice and trade discount
 
-**Trade discount** is a reduction from the list price given by a wholesaler or manufacturer to a **trader** who buys for resale. It is shown on the invoice and **is not recorded in the books**: only the net amount is entered.
+:::callout{type=definition}
+**Trade discount** is a reduction from the list price given by a wholesaler or manufacturer to a **trader** who buys for resale.
+:::
+
+It is shown on the invoice and **is not recorded in the books**: only the net amount is entered.
 
 :::callout{type=worked-example}
 **Sesay Wholesalers sell 20 bags of rice at NLe 600 a bag and 10 cartons of oil at NLe 450 a carton to Amie's Store on credit, less 10% trade discount. Find the invoice total.**

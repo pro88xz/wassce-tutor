@@ -63,9 +63,11 @@ The image on the retina is **real, inverted and diminished**. The brain interpre
 
 ### Other defects
 
+:::callout{type=definition}
 - **Presbyopia**: with age the lens stiffens and cannot accommodate well, so older people struggle to read; corrected with converging (reading) glasses or bifocals.
 - **Astigmatism**: the cornea is unevenly curved, so lines in some directions are blurred; corrected with cylindrical lenses.
 - **Cataract**: the lens becomes cloudy; treated by surgically replacing the lens.
+:::
 
 :::callout{type=local-example}
 Free eye-screening camps run by health NGOs in Sierra Leone often find students who cannot read the board from the back of the class — short sight, quickly fixed with diverging spectacles. Cataract surgery restores sight to many older people.

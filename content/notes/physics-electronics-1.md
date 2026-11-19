@@ -45,8 +45,10 @@ When p-type and n-type material are joined, electrons near the junction diffuse 
 
 *Figure 1. The diode and half-wave rectification. WASSCE Tutor diagram.*
 
+:::callout{type=definition}
 - **Forward bias**: p-side connected to **+**, n-side to **−**. The depletion layer **narrows**; once the p.d. exceeds about 0.6 V, a **large current flows**.
 - **Reverse bias**: p-side to **−**, n-side to **+**. The depletion layer **widens**; **almost no current** flows (only a tiny leakage current).
+:::
 
 A diode therefore lets current flow in **one direction only** — the direction of the arrow in its symbol.
 
@@ -56,9 +58,11 @@ A diode therefore lets current flow in **one direction only** — the direction 
 **Rectification** is the conversion of **alternating current into direct current**.
 :::
 
+:::callout{type=definition}
 - **Half-wave rectification**: a single diode in series with the load lets through only the **positive half-cycles**. The output is a series of humps with gaps.
 - **Full-wave rectification**: a **bridge** of four diodes (or two diodes with a centre-tapped transformer) turns the negative half-cycles positive too, giving a continuous series of humps.
 - **Smoothing**: a large **capacitor** across the output charges at the peaks and discharges between them, giving an almost steady d.c.
+:::
 
 :::callout{type=local-example}
 A phone charger plugged into a 230 V socket contains a small transformer (or switching circuit) to lower the voltage, a bridge rectifier of four diodes, and a smoothing capacitor, giving the steady 5 V d.c. that a phone needs.

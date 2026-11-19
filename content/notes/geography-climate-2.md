@@ -43,7 +43,9 @@ Rain does not fall right at the ITD but in a belt **south** of it, where the moi
 
 ## The Harmattan
 
+:::callout{type=definition}
 The **Harmattan** is the dry, dusty north-east trade wind that blows from the Sahara over West Africa, mainly from **November to March**, reaching the coast around **December to February**.
+:::
 
 | Effects | |
 |---|---|

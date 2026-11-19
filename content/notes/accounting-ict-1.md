@@ -1,4 +1,8 @@
-**Computerised accounting** is the use of **computers and accounting software** to record, process and report financial transactions. Instead of writing entries by hand in day books and ledgers, the user enters each transaction once from its source document, and the software **posts it automatically by double entry** and produces the trial balance and final accounts in seconds. Popular packages include **QuickBooks**, **Sage** and **Tally**, while **spreadsheets** such as Microsoft Excel are widely used by small businesses. This lesson compares manual and computerised accounting and explains the main features, advantages and disadvantages of accounting software.
+:::callout{type=definition}
+**Computerised accounting** is the use of **computers and accounting software** to record, process and report financial transactions.
+:::
+
+Instead of writing entries by hand in day books and ledgers, the user enters each transaction once from its source document, and the software **posts it automatically by double entry** and produces the trial balance and final accounts in seconds. Popular packages include **QuickBooks**, **Sage** and **Tally**, while **spreadsheets** such as Microsoft Excel are widely used by small businesses. This lesson compares manual and computerised accounting and explains the main features, advantages and disadvantages of accounting software.
 
 ## Learning objectives
 

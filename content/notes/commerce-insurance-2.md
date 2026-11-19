@@ -121,13 +121,19 @@ The owner bears $40000 - 24000 = $ NLe 16,000. Had the shop been insured for its
 
 ## Reinsurance, double insurance and co-insurance
 
+:::callout{type=definition}
 - **Reinsurance**: an insurer passes **part of a large risk** to another insurer (a reinsurer), so that one big loss will not ruin it.
 - **Double insurance**: the **insured** covers the same property with **two or more insurers**. **Contribution** stops the insured collecting more than the loss.
 - **Co-insurance**: several insurers **share** one large risk from the start, each taking a stated part.
+:::
 
 ## Social insurance
 
-**Social insurance** is a compulsory scheme run by the state, to which employers and workers contribute, giving pensions and benefits for old age, disability and death. In Sierra Leone it is run by the **National Social Security and Insurance Trust (NASSIT)**.
+:::callout{type=definition}
+**Social insurance** is a compulsory scheme run by the state, to which employers and workers contribute, giving pensions and benefits for old age, disability and death.
+:::
+
+In Sierra Leone it is run by the **National Social Security and Insurance Trust (NASSIT)**.
 
 :::callout{type=local-example}
 A transporter in Bo must carry at least **third-party motor insurance**. Many also choose **comprehensive** cover for new vehicles bought on credit, because the lender demands it. An importer bringing goods into Freetown usually takes a **marine cargo policy**, and the bank financing the letter of credit will ask for the **certificate of insurance**.

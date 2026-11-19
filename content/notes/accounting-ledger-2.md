@@ -1,4 +1,8 @@
-**Balancing off a ledger account** means finding the **difference between the two sides** at the end of a period, entering it as the **balance carried down (c/d)** on the smaller side so both sides total the same, and then **bringing the balance down (b/d)** on the opposite side at the start of the next period. A **debit balance** usually shows an **asset or expense** (or an amount owed **to** the business); a **credit balance** shows a **liability, capital or income** (or an amount owed **by** the business). This lesson shows how to balance accounts step by step and how to interpret their balances.
+:::callout{type=definition}
+**Balancing off a ledger account** means finding the **difference between the two sides** at the end of a period, entering it as the **balance carried down (c/d)** on the smaller side so both sides total the same, and then **bringing the balance down (b/d)** on the opposite side at the start of the next period.
+:::
+
+A **debit balance** usually shows an **asset or expense** (or an amount owed **to** the business); a **credit balance** shows a **liability, capital or income** (or an amount owed **by** the business). This lesson shows how to balance accounts step by step and how to interpret their balances.
 
 ## Learning objectives
 

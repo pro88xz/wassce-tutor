@@ -1,4 +1,8 @@
-The **cash book** is the book in which a business records all its **cash and bank transactions**: money received on the **debit (left) side** and money paid on the **credit (right) side**. It is both a **book of original entry** and a **ledger account**, because it takes the place of the cash account and the bank account. There are three main types: the **single-column cash book** (cash only), the **two-column (double-column) cash book** (cash and bank) and the **three-column cash book** (discount, cash and bank). This lesson explains the cash book and works through a two-column cash book step by step.
+:::callout{type=definition}
+The **cash book** is the book in which a business records all its **cash and bank transactions**: money received on the **debit (left) side** and money paid on the **credit (right) side**.
+:::
+
+It is both a **book of original entry** and a **ledger account**, because it takes the place of the cash account and the bank account. There are three main types: the **single-column cash book** (cash only), the **two-column (double-column) cash book** (cash and bank) and the **three-column cash book** (discount, cash and bank). This lesson explains the cash book and works through a two-column cash book step by step.
 
 ## Learning objectives
 

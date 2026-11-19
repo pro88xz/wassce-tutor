@@ -1,4 +1,8 @@
-A **partnership** is an association of **two to twenty persons** who carry on business together with a view to **profit**. Its accounts differ from a sole trader's in two ways: the net profit is shared through a **partnership appropriation account**, using the terms of the **partnership agreement** (profit-sharing ratio, interest on capital, partners' salaries, interest on drawings), and each partner has a **capital account** and usually a **current account**. This lesson explains the partnership agreement, the rules that apply without one, and how to prepare the appropriation and current accounts.
+:::callout{type=definition}
+A **partnership** is an association of **two to twenty persons** who carry on business together with a view to **profit**.
+:::
+
+Its accounts differ from a sole trader's in two ways: the net profit is shared through a **partnership appropriation account**, using the terms of the **partnership agreement** (profit-sharing ratio, interest on capital, partners' salaries, interest on drawings), and each partner has a **capital account** and usually a **current account**. This lesson explains the partnership agreement, the rules that apply without one, and how to prepare the appropriation and current accounts.
 
 ## Learning objectives
 
@@ -12,7 +16,11 @@ By the end of this lesson you should be able to:
 
 ## The partnership agreement
 
-A **partnership agreement** (deed of partnership) is a written or oral agreement setting out the partners' rights and duties. It usually covers:
+:::callout{type=definition}
+A **partnership agreement** (deed of partnership) is a written or oral agreement setting out the partners' rights and duties.
+:::
+
+It usually covers:
 
 1. the **capital** each partner contributes;
 2. the **profit-sharing ratio** (PSR);

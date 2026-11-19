@@ -1,4 +1,8 @@
-**Chronology** is the arrangement of events in the **order in which they happened**, and it is the backbone of history. Historians date events using systems such as **BC and AD** (or **BCE and CE**), group years into **decades, centuries and millennia**, and divide the past into **periods** such as the **Stone Age**, the **Iron Age**, the **pre-colonial**, **colonial** and **post-colonial** eras. This lesson explains how historical time is measured, how to work out centuries, the main periods of West African history, and the historian's methods of **cause and effect**, **continuity and change**, and **bias**.
+:::callout{type=definition}
+**Chronology** is the arrangement of events in the **order in which they happened**, and it is the backbone of history.
+:::
+
+Historians date events using systems such as **BC and AD** (or **BCE and CE**), group years into **decades, centuries and millennia**, and divide the past into **periods** such as the **Stone Age**, the **Iron Age**, the **pre-colonial**, **colonial** and **post-colonial** eras. This lesson explains how historical time is measured, how to work out centuries, the main periods of West African history, and the historian's methods of **cause and effect**, **continuity and change**, and **bias**.
 
 ## Learning objectives
 

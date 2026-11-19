@@ -57,9 +57,11 @@ A **cheque** is an **unconditional order in writing**, addressed by a customer t
 
 **Endorsement** is the payee's **signature on the back** of an order cheque to transfer it to someone else.
 
+:::callout{type=definition}
 - **Blank endorsement**: just the signature, which makes the cheque payable to the bearer.
 - **Special endorsement**: names the new payee ("Pay A. Sesay, signed B. Kamara").
 - **Restrictive endorsement**: stops further transfer ("Pay A. Sesay only").
+:::
 
 ## Dishonoured cheques
 

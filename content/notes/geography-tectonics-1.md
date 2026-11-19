@@ -1,4 +1,8 @@
-**Plate tectonics** is the theory that the Earth's outer shell, the lithosphere, is broken into large slabs called **plates** that move slowly over the softer mantle beneath, a few centimetres a year. Where plates meet, at **plate boundaries**, they move **apart** (constructive), **together** (destructive) or **past each other** (conservative), and these movements cause most earthquakes, volcanoes and fold mountains. This lesson explains the theory, the evidence for it and the three types of boundary.
+:::callout{type=definition}
+**Plate tectonics** is the theory that the Earth's outer shell, the lithosphere, is broken into large slabs called **plates** that move slowly over the softer mantle beneath, a few centimetres a year.
+:::
+
+Where plates meet, at **plate boundaries**, they move **apart** (constructive), **together** (destructive) or **past each other** (conservative), and these movements cause most earthquakes, volcanoes and fold mountains. This lesson explains the theory, the evidence for it and the three types of boundary.
 
 ## Learning objectives
 

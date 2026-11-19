@@ -1,4 +1,8 @@
-**Weather** is the condition of the atmosphere at a particular place and time, such as hot and sunny this morning or heavy rain this afternoon. **Climate** is the average weather of a large area over a long period, usually 30 years or more: Sierra Leone, for example, has a hot, humid tropical climate with a long rainy season. Both are described by the same **elements of weather**: temperature, rainfall, humidity, air pressure, wind, sunshine and cloud. This lesson explains the elements and the **factors that affect climate**.
+:::callout{type=definition}
+**Weather** is the condition of the atmosphere at a particular place and time, such as hot and sunny this morning or heavy rain this afternoon.
+:::
+
+**Climate** is the average weather of a large area over a long period, usually 30 years or more: Sierra Leone, for example, has a hot, humid tropical climate with a long rainy season. Both are described by the same **elements of weather**: temperature, rainfall, humidity, air pressure, wind, sunshine and cloud. This lesson explains the elements and the **factors that affect climate**.
 
 ## Learning objectives
 

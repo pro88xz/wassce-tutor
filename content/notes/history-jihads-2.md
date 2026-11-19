@@ -16,7 +16,11 @@ By the end of this lesson you should be able to:
 
 ## The Masina jihad: Seku Ahmadu
 
-**Seku Ahmadu (Ahmad Lobbo, about 1776–1845)** was a Fulani scholar from **Masina**, the fertile land of the **inland Niger delta** in present-day Mali. He was influenced by Usman dan Fodio's success.
+:::callout{type=definition title="Key figure"}
+**Seku Ahmadu (Ahmad Lobbo, about 1776–1845)** was a Fulani scholar from **Masina**, the fertile land of the **inland Niger delta** in present-day Mali.
+:::
+
+He was influenced by Usman dan Fodio's success.
 
 **Causes:**
 
@@ -41,7 +45,11 @@ Seku Ahmadu died in **1845** and was followed by his son **Ahmadu II** and grand
 
 ## The Tukulor jihad: al-Hajj Umar Tall
 
-**Al-Hajj Umar Tall (about 1796–1864)** was a scholar from **Futa Toro** in the Senegal valley, of the **Tukulor** (Toucouleur) people. He made the **pilgrimage to Mecca**, where he was made **khalifa (leader) of the Tijaniyya brotherhood** for West Africa. On his way home he stayed for years at **Sokoto** with Muhammad Bello, whose daughter he married. He then settled at **Dinguiraye**, in the Futa Jallon area, where he trained and armed a large following.
+:::callout{type=definition title="Key figure"}
+**Al-Hajj Umar Tall (about 1796–1864)** was a scholar from **Futa Toro** in the Senegal valley, of the **Tukulor** (Toucouleur) people.
+:::
+
+He made the **pilgrimage to Mecca**, where he was made **khalifa (leader) of the Tijaniyya brotherhood** for West Africa. On his way home he stayed for years at **Sokoto** with Muhammad Bello, whose daughter he married. He then settled at **Dinguiraye**, in the Futa Jallon area, where he trained and armed a large following.
 
 **Causes:**
 

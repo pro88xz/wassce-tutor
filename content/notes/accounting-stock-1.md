@@ -1,4 +1,8 @@
-**Stock (inventory) valuation** is the process of putting a money value on the goods a business holds at the end of a period. Because identical goods are often bought at **different prices**, the business needs a rule for which costs belong to the goods **sold** and which to the goods **still in stock**. The main methods are **FIFO** (first in, first out), **LIFO** (last in, first out) and **AVCO** (weighted average cost). The method chosen changes the **closing inventory**, the **cost of sales** and therefore the **gross profit**. This lesson works through all three methods with the same data.
+:::callout{type=definition}
+**Stock (inventory) valuation** is the process of putting a money value on the goods a business holds at the end of a period.
+:::
+
+Because identical goods are often bought at **different prices**, the business needs a rule for which costs belong to the goods **sold** and which to the goods **still in stock**. The main methods are **FIFO** (first in, first out), **LIFO** (last in, first out) and **AVCO** (weighted average cost). The method chosen changes the **closing inventory**, the **cost of sales** and therefore the **gross profit**. This lesson works through all three methods with the same data.
 
 ## Learning objectives
 

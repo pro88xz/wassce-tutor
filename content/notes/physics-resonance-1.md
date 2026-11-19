@@ -63,7 +63,11 @@ $f \propto \sqrt{T}$, so the frequency is multiplied by $\sqrt{4} = 2$: **600 Hz
 
 ## The sonometer
 
-A **sonometer** is a hollow wooden box with a wire stretched over two movable bridges. The tension is set by hanging masses from one end of the wire (over a pulley). The box amplifies the sound.
+:::callout{type=definition}
+A **sonometer** is a hollow wooden box with a wire stretched over two movable bridges.
+:::
+
+The tension is set by hanging masses from one end of the wire (over a pulley). The box amplifies the sound.
 
 **Using it to verify the length law:**
 

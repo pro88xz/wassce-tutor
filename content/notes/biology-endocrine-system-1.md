@@ -15,7 +15,11 @@ By the end of this lesson, you should be able to:
 
 The body must coordinate activities that involve different organs. Some responses need to happen very quickly, such as withdrawing a hand from a hot surface. Others involve slower changes that may continue for hours, days or years, such as growth, development, reproduction and adjustment of blood glucose concentration.
 
-The **endocrine system** is a group of ductless glands and hormone-producing tissues that release chemical messengers called **hormones** directly into the blood. The blood carries hormones around the body. A hormone affects only cells or organs that have the appropriate receptors; these are called its **target cells** or **target organs**.
+:::callout{type=definition}
+The **endocrine system** is a group of ductless glands and hormone-producing tissues that release chemical messengers called **hormones** directly into the blood.
+:::
+
+The blood carries hormones around the body. A hormone affects only cells or organs that have the appropriate receptors; these are called its **target cells** or **target organs**.
 
 A hormone is effective even when present in a small concentration. Its effect depends on the target tissue, the number and activity of receptors, and the concentration of the hormone. Hormones may alter the activity of cells, stimulate secretion, influence growth or change the rate of chemical reactions.
 

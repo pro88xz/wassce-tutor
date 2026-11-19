@@ -40,9 +40,11 @@ By the end of this lesson you should be able to:
 
 **Land tenure** is the system by which land is owned and used.
 
+:::callout{type=definition}
 - **Communal or family ownership**: land belongs to the community or extended family and is allocated by chiefs or family heads. This is common in the provinces of Sierra Leone.
 - **Individual (freehold) ownership**: one person owns the land outright, as in much of the Western Area.
 - **Leasehold**: land is rented for a fixed period, often to investors.
+:::
 
 Communal tenure gives everyone access to land, but it can **discourage investment** (a farmer may not plant tree crops on land he does not own), makes land **hard to use as security for loans** and leads to **fragmented plots** and disputes.
 

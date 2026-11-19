@@ -90,8 +90,10 @@ To bring down the high inflation of 2022–2023, the **Bank of Sierra Leone rais
 
 ### Related terms
 
+:::callout{type=definition}
 - **Disinflation**: the **rate** of inflation falls, but prices are still rising (for example from 30% to 15%).
 - **Stagflation**: **high inflation together with stagnant output and high unemployment**, often caused by a sharp rise in costs such as fuel.
+:::
 
 :::callout{type=common-mistake}
 "Inflation is falling" usually means **disinflation**, not deflation. Prices are still rising, only more slowly.

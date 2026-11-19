@@ -85,9 +85,11 @@ Biology explains why food spoils and how to stop it: **smoking** and **drying** 
 
 ### Waste treatment and energy
 
+:::callout{type=definition}
 - **Sewage treatment**: bacteria break down organic matter so that treated water can be released safely.
 - **Composting**: microbes turn kitchen and farm waste into manure.
 - **Biogas**: in a sealed **digester**, anaerobic bacteria break down animal dung and plant waste, producing **methane** gas for cooking and lighting; the remaining sludge is a good fertiliser.
+:::
 
 ## Genetic engineering
 

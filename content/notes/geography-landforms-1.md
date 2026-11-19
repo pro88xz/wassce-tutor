@@ -1,4 +1,8 @@
-A **mountain** is a large, steep-sided area of land rising high above its surroundings, usually more than about 600 m, with a peak or ridge at the top. There are four main **types of mountains**: **fold mountains**, formed when rock layers are squeezed and crumpled (the Atlas, Alps and Himalayas); **block mountains**, raised between faults (the Ruwenzori); **volcanic mountains**, built up by eruptions (Mount Cameroon and Kilimanjaro); and **residual mountains**, the worn-down remains of older, higher land. This lesson explains how each type forms and why mountains matter.
+:::callout{type=definition}
+A **mountain** is a large, steep-sided area of land rising high above its surroundings, usually more than about 600 m, with a peak or ridge at the top.
+:::
+
+There are four main **types of mountains**: **fold mountains**, formed when rock layers are squeezed and crumpled (the Atlas, Alps and Himalayas); **block mountains**, raised between faults (the Ruwenzori); **volcanic mountains**, built up by eruptions (Mount Cameroon and Kilimanjaro); and **residual mountains**, the worn-down remains of older, higher land. This lesson explains how each type forms and why mountains matter.
 
 ## Learning objectives
 
@@ -28,7 +32,9 @@ By the end of this lesson you should be able to:
 
 ## Faulting: block mountains and rift valleys
 
+:::callout{type=definition}
 A **fault** is a crack in the Earth's crust along which rocks have moved.
+:::
 
 - **Tension** (pulling apart) or **compression** (pushing together) causes faults.
 - A **block mountain (horst)** forms when a block of land between two roughly parallel faults is **raised**, or when the land on either side sinks. It has steep sides and a flat or gently sloping top.
@@ -44,7 +50,11 @@ A **fault** is a crack in the Earth's crust along which rocks have moved.
 
 ## Residual mountains
 
-**Residual (relict) mountains** are the remains of older, higher land that has been worn down by weathering and erosion over very long periods. The harder rocks are left standing while softer rocks around them are removed.
+:::callout{type=definition}
+**Residual (relict) mountains** are the remains of older, higher land that has been worn down by weathering and erosion over very long periods.
+:::
+
+The harder rocks are left standing while softer rocks around them are removed.
 
 :::callout{type=local-example}
 Sierra Leone's highest land is in the north-east, in the **Loma Mountains**, where **Mount Bintumani (Loma Mansa)**, at about **1,945 m**, is the highest point in Sierra Leone. The **Tingi Hills** rise nearby. These are ancient uplands of very old, hard rocks shaped by long erosion. Nearer the coast, the steep **Freetown Peninsula mountains**, rising to over 800 m, are formed of a large igneous intrusion exposed by erosion.
