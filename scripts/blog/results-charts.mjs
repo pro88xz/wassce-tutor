@@ -333,7 +333,48 @@ function coverBestSchools() {
   }
 }
 
-const CHARTS = [coverEntries(), coverWithheld(), coverBestSchools(), entriesChart(), englishMathsChart(), withheldChart()]
+// The English article's cover: the share of candidates with an English
+// credit, by year, in the dark-surface violet. 2024's figure was announced as
+// a "pass rate", so it is drawn lighter and footnoted rather than left out.
+function coverEnglish() {
+  const rows = [
+    { year: '2023', value: 17, label: '17%' },
+    { year: '2024', value: 19.7, label: '19.7%*', faint: true },
+    { year: '2025', value: 11.77, label: '11.77%' },
+    { year: '2026', value: 9.77, label: '9.77%' },
+  ]
+  const track = 330
+  return {
+    name: '../wassce-2026-english-results',
+    cover: true,
+    width: W,
+    height: H,
+    css: `
+      body{background:#130d2b;color:#fff}
+      .cover{width:${W}px;height:${H}px;padding:44px 34px 42px;display:flex;flex-direction:column}
+      .kicker{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#c4b5fd}
+      h1{margin-top:8px;font-size:27px;line-height:1.08;font-weight:800;letter-spacing:-.03em}
+      .sub{margin-top:8px;font-size:13.5px;color:rgb(255 255 255 / 72%)}
+      .bars{margin-top:18px;display:grid;gap:13px}
+      .b{display:flex;align-items:center;gap:14px}
+      .y{width:40px;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums}
+      .t{display:flex;align-items:center;gap:10px;border-left:1px solid rgb(255 255 255 / 45%);height:26px}
+      .bar{height:22px;border-radius:0 4px 4px 0;background:#9085e9}
+      .bar.faint{background:rgb(144 133 233 / 45%)}
+      .v{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums}
+      .note{margin-top:auto;font-size:11px;color:rgb(255 255 255 / 58%);display:flex;justify-content:space-between;gap:12px}`,
+    html: `
+      <div class="cover">
+        <p class="kicker">Sierra Leone · WASSCE English Language</p>
+        <h1>Fewer than one candidate in ten got an English credit</h1>
+        <p class="sub">Share of candidates with a credit (A1 to C6) in English Language, as announced</p>
+        <div class="bars">${rows.map((r) => `<div class="b"><span class="y">${r.year}</span><span class="t"><span class="bar${r.faint ? ' faint' : ''}" style="width:${(r.value / 20) * track}px"></span><span class="v">${r.label}</span></span></div>`).join('')}</div>
+        <p class="note"><span>*2024 was announced as a “pass rate”. Figures: Ministry announcements.</span><span>wasscetutor.com</span></p>
+      </div>`,
+  }
+}
+
+const CHARTS = [coverEntries(), coverWithheld(), coverBestSchools(), coverEnglish(), entriesChart(), englishMathsChart(), withheldChart()]
 
 await mkdir(OUT, { recursive: true })
 const font = await fontCss()

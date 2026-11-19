@@ -97,7 +97,7 @@ export const RESULTS_POSTS: BlogPost[] = [
           note: 'The 2025 figures are from the Ministry’s announcement of October 2025 as reported at the time. The Ministry did not state which group of candidates the English and Mathematics percentages are shares of, in either year, so treat the comparison as indicative.'
         },
         after: [
-          'The gap between the two subjects matters because most degree programmes ask for credits in both. In 2025, only 7,024 candidates had five credits including both English and Mathematics, out of 47,434 with five credits of any kind. The Ministry has not announced the 2026 figure. If the 9.77% is a share of the 141,810 candidates with results, about 13,900 candidates hold an English credit this year, which is the ceiling on how many can meet a rule that requires one.',
+          'The gap between the two subjects matters because most degree programmes ask for credits in both ([what the English results mean](/blog/wassce-2026-english-results-sierra-leone)). In 2025, only 7,024 candidates had five credits including both English and Mathematics, out of 47,434 with five credits of any kind. The Ministry has not announced the 2026 figure. If the 9.77% is a share of the 141,810 candidates with results, about 13,900 candidates hold an English credit this year, which is the ceiling on how many can meet a rule that requires one.',
           'Writing in The Sierra Leone Telegraph, Dr Mohamed Ibrahim Justice Ganawah, a former St Edward’s teacher who now coordinates examinations in a university faculty, argued that a 52-point gap between Mathematics and English is unusual (in Ghana the two rates were within two points this year) and called on WAEC and the Ministry to examine centre-level data. He also noted that 2026 was the first sitting examined on two curricula at once, which may have moved results in ways not yet understood. These are his arguments, not findings of the Ministry.'
         ]
       },
@@ -509,5 +509,153 @@ export const RESULTS_POSTS: BlogPost[] = [
     ],
     related: ['2026-wassce-results-sierra-leone', 'what-counts-as-a-wassce-credit-for-university-admission', 'how-to-pass-wassce-english-language', 'sierra-leone-university-admission-requirements-2026-2027'],
     action: { heading: 'The top candidates all have credits in English and Maths. Start with yours.', label: 'Explore subjects', href: '/wassce/subjects' }
+  },
+  {
+    slug: 'wassce-2026-english-results-sierra-leone',
+    seoTitle: '2026 WASSCE English Results: 9.77% Credit, New University Rules',
+    title: '2026 WASSCE English Results: Why Fewer Than One in Ten Got a Credit, and What Universities Are Changing',
+    description: 'Only 9.77% of 2026 WASSCE candidates in Sierra Leone got an English credit. The figures, USL’s new entry rule, why results keep falling and what to do next.',
+    category: 'WASSCE results',
+    publishedAt: '2026-11-19',
+    updatedAt: '2026-11-19',
+    readMinutes: 9,
+    news: true,
+    image: '/img/blog/wassce-2026-english-results.webp',
+    imageAlt: 'Bar chart of the share of Sierra Leone WASSCE candidates with an English Language credit: 17% in 2023, 19.7% in 2024 (announced as a pass rate), 11.77% in 2025 and 9.77% in 2026',
+    ...OURS,
+    keyFacts: [
+      { value: '9.77%', label: 'of candidates got a credit (A1 to C6) in English Language' },
+      { value: '63.33%', label: 'failed English Language' },
+      { value: '62.15%', label: 'got a credit in Mathematics, for comparison' },
+      { value: 'D7', label: 'now accepted in English by USL for diplomas and certificates' }
+    ],
+    intro: 'English Language decided more futures than any other subject in the 2026 WASSCE. Only 9.77% of candidates in Sierra Leone earned a credit in it, down from 11.77% in 2025, and 63.33% failed it, while Mathematics improved to 62.15%. Because almost every degree course asks for an English credit, the University of Sierra Leone has changed its entry rule for this year’s results, Parliament has summoned the Minister, and the Ministry has promised emergency training for English teachers. This article sets out the figures, the changes, the explanations on offer and the options for candidates without an English credit.',
+    updates: [
+      { date: '2026-11-05', text: 'The Minister appeared before Parliament, whose education committee had summoned him over the English results and the withheld results. The Ministry has announced emergency in-service training for English teachers, Sierra Leone Monitor reported.' },
+      { date: '2026-11-02', text: 'The University of Sierra Leone’s Senate changed its English Language requirement for 2026 results.' },
+      { date: '2026-10-27', text: 'The Ministry announced the results: 9.77% of candidates obtained an English credit and 63.33% failed the subject.' }
+    ],
+    sections: [
+      {
+        heading: 'What the 2026 English results show',
+        paragraphs: [
+          'A credit in WASSCE is a grade from A1 to C6; D7 and E8 are passes, and F9 is a fail. In 2026, 9.77% of candidates obtained a credit in English Language and 63.33% failed it, which leaves about 27% with a D7 or E8 pass (our calculation from the two announced figures). In Mathematics, 62.15% obtained a credit.',
+          'The Ministry did not say which group of candidates these percentages are shares of. If it is the 141,810 candidates who sat at least one subject and have results, about 13,900 candidates hold an English credit this year, which is the most who can meet a rule that requires one.'
+        ],
+        table: {
+          caption: 'English Language results in the WASSCE in Sierra Leone, as announced',
+          columns: ['Year', 'Credit (A1 to C6)', 'Failed (F9)'],
+          rows: [
+            ['2023', '17%', '–'],
+            ['2024', '19.7%*', '–'],
+            ['2025', '11.77%', '63.02%'],
+            ['2026', '9.77%', '63.33%']
+          ],
+          note: '*The Minister announced 2024’s figure as a “pass rate” in English. He used the same term for Mathematics, whose 2024 figure (46%) matches the 46.3% credit rate reported a year later, so it is most likely a credit rate. At the March 2026 English conference the Ministry said the credit rate had fallen from 19.71% to 11.77% by 2025; the report of the conference gives the starting year as 2021. “–” means the figure was not announced.'
+        }
+      },
+      {
+        heading: 'Why one subject matters so much',
+        paragraphs: [
+          'Most degree programmes in Sierra Leone ask for five credits including English Language, and many also ask for Mathematics. A candidate with excellent results in every other subject can still be shut out by English. In 2025, only 7,024 candidates had five credits including both English and Mathematics, out of 47,434 with five credits of any kind.',
+          'The Deputy Minister of Technical and Higher Education, Sarjoh Aziz-Kamara, made the same point at the Ministry’s national English conference in March: many students who pass their other subjects fail to meet the English requirement, and that limits access to tertiary education. [Our guide to WASSCE credits](/blog/what-counts-as-a-wassce-credit-for-university-admission) explains how universities count them.'
+        ]
+      },
+      {
+        heading: 'What universities are changing',
+        paragraphs: [
+          'On 2 November the Executive Committee of the University of Sierra Leone’s Senate revised its English Language requirement for candidates presenting 2026 results, after considering four options put forward by the University Registrar. The Vice-Chancellor, Professor Aiah Randolph Lebbie, said the university remained committed to quality and standards.'
+        ],
+        table: {
+          caption: 'University of Sierra Leone: English Language grade accepted with 2026 WASSCE results',
+          columns: ['Programmes', 'English grade accepted'],
+          rows: [
+            ['Degree programmes at Fourah Bay College and IPAM', 'C6 (a credit)'],
+            ['Diploma and certificate programmes', 'D7 (a pass)'],
+            ['All programmes at COMAHS', 'Unchanged'],
+            ['Bachelor of Laws (LLB) at Fourah Bay College', 'Unchanged']
+          ],
+          note: 'As reported by Sierra Leone Monitor. The change applies to 2026 WASSCE results. Check the programme’s full requirements on USL’s admission portal, which lists 30 November 2026 as the undergraduate deadline.'
+        },
+        after: [
+          'Sierra Leone Monitor also reported that the University of Makeni has offered provisional admission, as a one-off for this intake, to candidates with four or more credits in other subjects, except for Law and Nursing. We have found no change at Njala University, Ernest Bai Koroma University of Science and Technology or Milton Margai Technical University, whose published requirements still include an English credit for degrees. At the March conference the Ministry said it was working with the Ministry of Technical and Higher Education on pathways into tertiary education, with intensive English remediation, for students who passed other subjects but failed English. We have not found details of those pathways yet.'
+        ]
+      },
+      {
+        heading: 'Why English results keep falling',
+        paragraphs: [
+          'There is no single official explanation, but the people closest to the problem point to the same few causes. These are their views, attributed to each.'
+        ],
+        bullets: [
+          'The Ministry: at its national English conference on 30 and 31 March 2026, the Minister, Conrad Sackey, called the situation a “foundational wound” and blamed gaps in early literacy. Participants cited a 2014 assessment in which 97.4% of Primary 2 pupils could not recognise a single letter sound, and WAEC data showing the Southern Region with some of the lowest pass rates and Pujehun District as a critical area.',
+          'University lecturers: on AYV, Sahr Jimissa, acting head of the Language Department at Milton Margai Technical University, said too few English teachers are trained to teach the language, and that knowing English is not the same as knowing how to teach it. Ambrose T. Rogers, a senior lecturer in language studies at Fourah Bay College, said turning teacher-training colleges such as Bo Teachers College into universities had weakened the focus on preparing teachers.',
+          'Parliament: the chair of the education committee, Hon. Rebecca Yei Kamara, told the March conference she was concerned about a declining reading culture, social media distractions and unqualified teachers in classrooms.',
+          'An education commentator: in The Sierra Leone Telegraph, Dr Mohamed Ibrahim Justice Ganawah noted that pupils and teachers speak Krio far more than English in school, and cited a 2020 Education Commission study which found that in 2019 one junior secondary school in five had no English specialist. He also argued that the widening gap with Mathematics should be checked against centre-level data, since short answers travel by phone more easily than essays.'
+        ]
+      },
+      {
+        heading: 'What the government has promised',
+        bullets: [
+          'A roadmap from the March conference built on five pillars: data-driven diagnosis, immediate remedial help, reforms to higher-education admissions, long-term teacher development, and stronger monitoring and accountability. The Minister said the outcomes would be written up as a “living document” to guide policy.',
+          'Emergency in-service training for English teachers, announced after the 2026 results, according to Sierra Leone Monitor.',
+          'Private partners, including the Orange Foundation, United Bank for Africa and HCD Plus, supporting after-school learning, digital platforms and teacher training, according to The Calabash.',
+          'Parliament’s scrutiny: the education committee summoned the Minister and WAEC to explain the English results, and the Minister appeared before the House on 5 November.'
+        ]
+      },
+      {
+        heading: 'If you did not get an English credit',
+        bullets: [
+          'Check whether a diploma or certificate route accepts your grade. USL now accepts a D7 in English for its diplomas and certificates with 2026 results.',
+          'Plan a resit of English alone. Many degree programmes accept credits from up to two sittings (USL asks for five credits in no more than two), so an English credit from a later sitting can be combined with this year’s other credits. Confirm the rule for your programme before you register.',
+          'If you think your English grade is wrong, ask your school about a remark. The Minister said applications go through the school within 60 days of the release of results, and a fee applies.',
+          'Ask the universities you want about provisional or foundation routes before their deadlines, and get any offer in writing.'
+        ]
+      },
+      {
+        heading: 'How to prepare for English next time',
+        paragraphs: [
+          'WASSCE English Language has three papers. Paper 1 is 80 multiple-choice questions on vocabulary and grammar. Paper 2, the essay, comprehension and summary, carries 100 of the 170 marks. Paper 3 is oral English, which candidates in Sierra Leone take as a listening comprehension test. Give Paper 2 most of your time: write a timed essay of at least 450 words every week, practise summaries in your own words, and read something in English every day, because comprehension and summary reward readers.',
+          '[Our guide to WASSCE English Language](/blog/how-to-pass-wassce-english-language) explains what each paper wants, and the [English Language lessons](/wassce/english-language) cover every topic in the syllabus with practice questions.'
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: 'What was the WASSCE English pass rate in Sierra Leone in 2026?',
+        answer: '9.77% of candidates obtained a credit (A1 to C6) and 63.33% failed. About 27% obtained a pass grade, D7 or E8.'
+      },
+      {
+        question: 'Can I get into the University of Sierra Leone without an English credit?',
+        answer: 'For diplomas and certificates, yes: with 2026 results USL accepts a D7 pass in English. Degree programmes at Fourah Bay College and IPAM still need at least C6, and the rules for COMAHS and the Law degree have not changed.'
+      },
+      {
+        question: 'Can I resit only English and keep my other results?',
+        answer: 'Usually. Many degree programmes accept credits from up to two sittings, so an English credit from a later sitting can be combined with this year’s credits. Check the rule for the exact programme first.'
+      },
+      {
+        question: 'Which grades count as a credit in WASSCE English?',
+        answer: 'A1, B2, B3, C4, C5 and C6. D7 and E8 are passes but not credits, and F9 is a fail.'
+      },
+      {
+        question: 'Why are WASSCE English results getting worse?',
+        answer: 'The Ministry points to weak early literacy; university lecturers point to a shortage of trained English teachers; MPs and commentators add a declining reading culture and how rarely pupils use English outside lessons. There is no official study of the 2026 results yet.'
+      }
+    ],
+    sources: [
+      { label: 'Sierraloaded: Government of Sierra Leone releases 2026 WASSCE results (27 October 2026)', url: 'https://sierraloaded.sl/news/sierra-leone-releases-2026-wassce-results/' },
+      { label: 'AYV News: 2026 WASSCE results, 47,454 withheld, 63.33% fail English (27 October 2026)', url: 'https://ayvnews.com/2026-wassce-results-47454-results-withheld-63-33-fail-english/' },
+      { label: 'Sierra Leone Monitor: USL adjusts English Language entry requirements (2 November 2026)', url: 'https://www.sierraleonemonitor.com/usl-adjusts-english-language-requirements/' },
+      { label: 'Sierra Leone Monitor: Parliament summons Education Minister over English failure and withheld results (November 2026)', url: 'https://www.sierraleonemonitor.com/parliament-summons-minister-wassce-results/' },
+      { label: 'AYV News: WAEC under fire, but is Sierra Leone’s education system the real problem? (7 November 2026)', url: 'https://ayvnews.com/waec-under-fire-but-is-sierra-leones-education-system-the-real-problem/' },
+      { label: 'The Calabash: MBSSE concludes national English conference, unveils reform agenda (1 April 2026)', url: 'https://thecalabashnewspaper.com/?p=58990' },
+      { label: 'The Calabash: Partners support national drive to tackle English Language crisis (22 April 2026)', url: 'https://thecalabashnewspaper.com/?p=59539' },
+      { label: 'The Sierra Leone Telegraph: What WASSCE exams 2026 is telling Sierra Leone (opinion, 31 October 2026)', url: 'https://www.thesierraleonetelegraph.com/what-wassce-exams-2026-is-telling-sierra-leone/' },
+      { label: 'Sierra Leone Monitor: 2025 WASSCE English results hit record low (16 October 2025)', url: 'https://www.sierraleonemonitor.com/wassce-english-language-results/' },
+      { label: 'Sierraloaded: Sierra Leone government releases 2023 WASSCE results (2 October 2023)', url: 'https://sierraloaded.sl/education/sierra-leone-government-releases-2023-wassce-results/' },
+      { label: 'AYV News: WASSCE 2024 results announcement (11 October 2024)', url: 'https://ayvnews.com/wassce-2024-220-pupils-met-university-requirements-27097-results-withheld/' },
+      { label: 'Njala University: undergraduate admission requirements', url: 'https://app.njala.edu.sl/admissions/requirements' }
+    ],
+    related: ['how-to-pass-wassce-english-language', '2026-wassce-results-sierra-leone', 'what-counts-as-a-wassce-credit-for-university-admission', 'sierra-leone-university-admission-requirements-2026-2027'],
+    action: { heading: 'Resitting English? Practise every paper, topic by topic.', label: 'Practise WASSCE English', href: '/wassce/english-language' }
   }
 ]
