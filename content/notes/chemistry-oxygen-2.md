@@ -65,7 +65,9 @@ The **fire triangle**: a fire needs **fuel**, **oxygen** (air) and **heat** (to 
 | Blue, clean, hot flame | Yellow, smoky, cooler flame |
 | CH₄ + 2O₂ → CO₂ + 2H₂O | 2CH₄ + 3O₂ → 2CO + 4H₂O |
 
+:::callout{type=definition}
 **Respiration** is a slow combustion inside cells: glucose + oxygen → carbon(IV) oxide + water + energy.
+:::
 
 ## Fighting fires
 

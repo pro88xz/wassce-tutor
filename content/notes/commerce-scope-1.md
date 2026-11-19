@@ -29,7 +29,9 @@ Commerce is **wider than trade**. Trade is only the buying and selling of goods;
 
 ### 1. Trade
 
+:::callout{type=definition}
 **Trade** is the buying and selling of goods and services.
+:::
 
 | Branch | Meaning | Example in Sierra Leone |
 |---|---|---|

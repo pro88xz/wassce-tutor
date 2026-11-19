@@ -65,7 +65,11 @@ $$n = \dfrac{0.10 \times 25.0}{1000} = 0.0025 \text{ mol} = 2.5 \times 10^{-3} \
 
 ## Preparing a standard solution
 
-A **standard solution** is a solution of **accurately known concentration**. It is prepared from a pure, stable solid (a **primary standard**) such as anhydrous sodium carbonate.
+:::callout{type=definition}
+A **standard solution** is a solution of **accurately known concentration**.
+:::
+
+It is prepared from a pure, stable solid (a **primary standard**) such as anhydrous sodium carbonate.
 
 :::callout{type=worked-example}
 **Prepare 250 cm³ of 0.100 mol/dm³ sodium carbonate solution (Na₂CO₃, M = 106).**

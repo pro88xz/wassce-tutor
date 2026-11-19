@@ -37,7 +37,11 @@ All contracts are agreements, but not all agreements are contracts. An agreement
 
 ### Offer and invitation to treat
 
-An **invitation to treat** is an invitation to others to **make an offer**. It is **not** itself an offer.
+:::callout{type=definition}
+An **invitation to treat** is an invitation to others to **make an offer**.
+:::
+
+It is **not** itself an offer.
 
 | Invitation to treat (not an offer) | Offer |
 |---|---|

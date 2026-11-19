@@ -1,4 +1,8 @@
-A **locus** (plural **loci**) is the set of all points that obey a rule. "All the points 3 cm from O" is a locus: it is a circle. "All the points the same distance from two villages" is a locus: it is a straight line. Loci turn a description in words into a drawing, and they answer real questions such as *where should a well be dug so that it is the same distance from two compounds?* WASSCE sets loci with constructions: you draw two or more loci and find where they meet. This lesson teaches the four basic loci and how to combine them.
+:::callout{type=definition}
+A **locus** (plural **loci**) is the set of all points that obey a rule.
+:::
+
+"All the points 3 cm from O" is a locus: it is a circle. "All the points the same distance from two villages" is a locus: it is a straight line. Loci turn a description in words into a drawing, and they answer real questions such as *where should a well be dug so that it is the same distance from two compounds?* WASSCE sets loci with constructions: you draw two or more loci and find where they meet. This lesson teaches the four basic loci and how to combine them.
 
 ## Learning objectives
 

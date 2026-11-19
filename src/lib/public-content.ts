@@ -302,16 +302,18 @@ const isProse = (block: string) =>
 /** Meta description for a lesson: its opening prose, without headings or the objectives list. */
 export function lessonSummary(markdown: string, max = 155): string {
   const md = markdown.replace(/\r\n?/g, '\n')
-  // A lesson that opens with a definition box ("The **ledger** is the main book of account..."):
-  // that definition is the best first line for a search snippet, so it is kept.
-  const lead = /^\s*:::callout\{type=definition[^}]*\}[ \t]*\n([\s\S]*?)\n:::[ \t]*(?:\n|$)/.exec(md)
+  // A lesson that opens with definition boxes ("The **ledger** is the main book of account..."):
+  // those definitions are the best first lines for a search snippet, so they are kept.
+  const leads: string[] = []
+  let rest = md
+  for (let m; (m = /^\s*:::callout\{type=definition[^}]*\}[ \t]*\n([\s\S]*?)\n:::[ \t]*(?:\n|$)/.exec(rest)); ) {
+    leads.push(m[1])
+    rest = rest.slice(m[0].length)
+  }
   // Outside directives (:::callout ... :::), blocks of prose in order, until there is enough text.
-  const blocks = [
-    ...(lead ? [lead[1]] : []),
-    ...(lead ? md.slice(lead[0].length) : md).replace(/^:::[^\n]*\n[\s\S]*?^:::\s*$/gm, '').split(/\n\s*\n/),
-  ]
+  const blocks = [...leads, ...rest.replace(/^:::[^\n]*\n[\s\S]*?^:::\s*$/gm, '').split(/\n\s*\n/)]
   let prose = ''
-  for (const block of blocks.map((b) => b.trim()).filter(isProse)) {
+  for (const block of blocks.map((b) => b.trim()).filter((b) => b && isProse(b))) {
     prose += ` ${plainText(block)}`
     if (prose.length > max) break
   }

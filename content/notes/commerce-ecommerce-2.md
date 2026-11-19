@@ -70,7 +70,9 @@ Fast-food chains, filling stations and mobile phone shops often operate as franc
 
 ## Globalisation and regional integration
 
+:::callout{type=definition}
 **Globalisation** is the growing **interconnection of the world's economies** through trade, investment, technology and communication.
+:::
 
 - **Effects:** wider markets, foreign investment, cheaper imports and new technology. But local firms face strong foreign competition, and economies become exposed to world price shocks.
 - **Regional integration:** **ECOWAS** promotes free movement of goods, people and services in West Africa. The **African Continental Free Trade Area (AfCFTA)**, of which Sierra Leone is a member, aims to create a single African market by reducing tariffs between member countries.

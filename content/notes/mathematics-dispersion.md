@@ -42,7 +42,9 @@ The **range** uses only the two extreme values, so one unusual value changes it 
 
 ## Mean deviation
 
+:::callout{type=definition}
 The **mean deviation** is the average distance of the values from the mean, ignoring signs.
+:::
 
 :::callout{type=definition}
 $$\text{mean deviation} = \frac{\sum |x - \bar{x}|}{n} \qquad \text{or} \qquad \frac{\sum f|x - \bar{x}|}{\sum f}$$

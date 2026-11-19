@@ -68,7 +68,9 @@ Signs of neo-colonialism include dependence on **one or two export crops or mine
 
 ## Apartheid in South Africa
 
+:::callout{type=definition}
 **Apartheid** ("separateness" in Afrikaans) was the system of **legal racial segregation and white-minority rule** introduced by the **National Party** after it won power in **1948**.
+:::
 
 | Apartheid laws and features | Struggle and end |
 |---|---|

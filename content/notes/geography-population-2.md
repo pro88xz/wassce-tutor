@@ -1,4 +1,8 @@
-**Population growth** is the change in the number of people in an area over time. It depends on **births**, **deaths** and **migration**: the population grows when births and immigration exceed deaths and emigration. The **population structure**, the numbers of males and females in each age group, is shown on a **population pyramid**, and **migration** is the movement of people from one place to another to live. This lesson explains how populations grow, how to read a pyramid, and the causes and effects of migration in West Africa.
+:::callout{type=definition}
+**Population growth** is the change in the number of people in an area over time.
+:::
+
+It depends on **births**, **deaths** and **migration**: the population grows when births and immigration exceed deaths and emigration. The **population structure**, the numbers of males and females in each age group, is shown on a **population pyramid**, and **migration** is the movement of people from one place to another to live. This lesson explains how populations grow, how to read a pyramid, and the causes and effects of migration in West Africa.
 
 ## Learning objectives
 

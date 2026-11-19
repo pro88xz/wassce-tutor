@@ -99,7 +99,11 @@ Face-to-face selling by **sales representatives**, who explain the product, answ
 
 ### Public relations (PR)
 
-**Public relations** is the effort to create and keep **goodwill** and a good image of the firm among the public. It uses:
+:::callout{type=definition}
+**Public relations** is the effort to create and keep **goodwill** and a good image of the firm among the public.
+:::
+
+It uses:
 
 - press releases and news conferences
 - sponsorship of sports, education and health

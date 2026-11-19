@@ -68,7 +68,11 @@ Chiefs were **civil servants**: they could be appointed, moved or dismissed, and
 | could vote and be elected | no political rights |
 | exempt from forced labour | **forced labour** (corvée) and military conscription |
 
-The **indigénat** was a code that allowed French officials to **punish subjects without trial**, with fines or imprisonment, for offences such as disrespect or failure to pay tax. Subjects also had to perform **forced labour** on roads, railways and plantations. Both were abolished only in **1946**.
+:::callout{type=definition}
+The **indigénat** was a code that allowed French officials to **punish subjects without trial**, with fines or imprisonment, for offences such as disrespect or failure to pay tax.
+:::
+
+Subjects also had to perform **forced labour** on roads, railways and plantations. Both were abolished only in **1946**.
 
 ## French and British systems compared
 

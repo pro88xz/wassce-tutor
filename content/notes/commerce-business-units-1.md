@@ -12,7 +12,11 @@ By the end of this lesson you should be able to:
 
 ## Business units
 
-A **business unit** is an organisation set up to produce or distribute goods and services. Business units are found in two sectors:
+:::callout{type=definition}
+A **business unit** is an organisation set up to produce or distribute goods and services.
+:::
+
+Business units are found in two sectors:
 
 | Private sector | Public sector |
 |---|---|

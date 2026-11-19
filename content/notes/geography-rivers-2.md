@@ -1,4 +1,8 @@
-**River landforms** are the features a river creates as it erodes and deposits along its course: **V-shaped valleys, waterfalls, rapids and gorges** in the upper course; **meanders** in the middle course; and **floodplains, levees, ox-bow lakes, deltas and estuaries** in the lower course. This lesson explains how each landform is formed, with diagrams and African examples, the way WASSCE asks you to describe them.
+:::callout{type=definition}
+**River landforms** are the features a river creates as it erodes and deposits along its course: **V-shaped valleys, waterfalls, rapids and gorges** in the upper course; **meanders** in the middle course; and **floodplains, levees, ox-bow lakes, deltas and estuaries** in the lower course.
+:::
+
+This lesson explains how each landform is formed, with diagrams and African examples, the way WASSCE asks you to describe them.
 
 ## Learning objectives
 
@@ -33,7 +37,9 @@ By the end of this lesson you should be able to:
 
 ## Landforms of the middle course: meanders
 
+:::callout{type=definition}
 A **meander** is a large bend in a river.
+:::
 
 - On the **outside of the bend**, the water flows fastest and deepest; erosion undercuts the bank, forming a steep **river cliff**.
 - On the **inside of the bend**, the water is slow and shallow; deposition builds a gentle **slip-off slope** (point bar) of sand and gravel.
@@ -76,7 +82,11 @@ A **delta** is a low, flat, often triangular area of deposited sediment at the m
 
 ### Estuaries
 
-An **estuary** is the wide, funnel-shaped tidal mouth of a river, where fresh water mixes with sea water. Estuaries form where strong tides and currents carry sediment away, so no delta can build up.
+:::callout{type=definition}
+An **estuary** is the wide, funnel-shaped tidal mouth of a river, where fresh water mixes with sea water.
+:::
+
+Estuaries form where strong tides and currents carry sediment away, so no delta can build up.
 
 :::callout{type=local-example}
 The **Rokel River** enters the Atlantic through the **Sierra Leone River estuary**, one of the largest natural harbours in Africa. Its deep, sheltered water is why Freetown grew where it did, and why the **Queen Elizabeth II Quay** can handle ocean-going ships. By contrast, the **Niger** carries a huge load into a sea with weak currents and has built the vast **Niger Delta**, rich in oil and gas.

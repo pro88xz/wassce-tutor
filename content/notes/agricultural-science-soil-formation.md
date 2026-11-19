@@ -36,7 +36,9 @@ Remember the five factors as **"Parent material, Climate, Organisms, Relief, Tim
 
 ![Parent rock is broken down by physical, chemical and biological weathering, and with organic matter added it becomes soil](https://wasscetutor.com/img/agriculture/weathering.svg)
 
+:::callout{type=definition}
 **Weathering** is the breakdown of rock in place.
+:::
 
 ### Physical (mechanical) weathering
 

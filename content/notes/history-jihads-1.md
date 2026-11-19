@@ -1,4 +1,8 @@
-The **Sokoto jihad** was the Islamic reform movement and holy war led by the Fulani scholar **Usman dan Fodio** against the Hausa rulers of **Gobir** and the other Hausa states, beginning in **1804**. It was caused by **religious** grievances (rulers mixing Islam with traditional practices), **political oppression**, **heavy and unjust taxes**, and **social injustice**. It created the **Sokoto Caliphate**, the largest state in nineteenth-century West Africa, with its capital at **Sokoto (founded 1809)**. This lesson explains the causes, course, success and effects of Usman dan Fodio's jihad.
+:::callout{type=definition}
+The **Sokoto jihad** was the Islamic reform movement and holy war led by the Fulani scholar **Usman dan Fodio** against the Hausa rulers of **Gobir** and the other Hausa states, beginning in **1804**.
+:::
+
+It was caused by **religious** grievances (rulers mixing Islam with traditional practices), **political oppression**, **heavy and unjust taxes**, and **social injustice**. It created the **Sokoto Caliphate**, the largest state in nineteenth-century West Africa, with its capital at **Sokoto (founded 1809)**. This lesson explains the causes, course, success and effects of Usman dan Fodio's jihad.
 
 ## Learning objectives
 
@@ -29,7 +33,11 @@ The Sokoto jihad was part of a wave of reform movements in the Western Sudan led
 
 ## Usman dan Fodio
 
-**Usman dan Fodio (1754–1817)** was a Fulani Muslim scholar and teacher of the **Qadiriyya** brotherhood, born in **Gobir**, one of the Hausa states. From about **1774** he travelled and **preached** across Hausaland, condemning corruption, injustice and the mixing of Islam with traditional worship. His learning and simple life won him many followers among the Fulani and the ordinary Hausa peasants (**talakawa**).
+:::callout{type=definition title="Key figure"}
+**Usman dan Fodio (1754–1817)** was a Fulani Muslim scholar and teacher of the **Qadiriyya** brotherhood, born in **Gobir**, one of the Hausa states.
+:::
+
+From about **1774** he travelled and **preached** across Hausaland, condemning corruption, injustice and the mixing of Islam with traditional worship. His learning and simple life won him many followers among the Fulani and the ordinary Hausa peasants (**talakawa**).
 
 ## Causes of the Sokoto jihad
 

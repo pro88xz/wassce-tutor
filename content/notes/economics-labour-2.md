@@ -68,7 +68,11 @@ Most trade unions in Sierra Leone belong to the **Sierra Leone Labour Congress (
 
 ## A minimum wage
 
-A **minimum wage** is a legal wage floor. If it is set **above** the equilibrium wage (Figure 1 in the previous lesson), more people want to work at that wage than employers want to hire:
+:::callout{type=definition}
+A **minimum wage** is a legal wage floor.
+:::
+
+If it is set **above** the equilibrium wage (Figure 1 in the previous lesson), more people want to work at that wage than employers want to hire:
 
 - workers who keep their jobs **earn more**, which reduces poverty
 - but there may be **unemployment** ($L_s - L_d$), especially in small firms

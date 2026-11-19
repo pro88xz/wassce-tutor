@@ -1,4 +1,8 @@
-An **earthquake** is a sudden shaking of the ground caused by the release of energy when rocks break or slip along a fault, usually at a plate boundary. A **volcano** is an opening in the Earth's crust through which magma, gases and ash erupt onto the surface. Both are caused mainly by plate movements, both can be deadly, and both also bring benefits. This lesson explains their causes, features, effects and how people reduce the risks.
+:::callout{type=definition}
+An **earthquake** is a sudden shaking of the ground caused by the release of energy when rocks break or slip along a fault, usually at a plate boundary.
+:::
+
+A **volcano** is an opening in the Earth's crust through which magma, gases and ash erupt onto the surface. Both are caused mainly by plate movements, both can be deadly, and both also bring benefits. This lesson explains their causes, features, effects and how people reduce the risks.
 
 ## Learning objectives
 

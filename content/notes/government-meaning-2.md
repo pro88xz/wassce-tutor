@@ -96,7 +96,11 @@ Political scientists Almond and Verba described three types:
 
 **Forms of political participation:** voting in elections, joining or campaigning for a party, contesting for office, attending rallies and public meetings, writing petitions, joining pressure groups, peaceful demonstration, and debating public issues in the media.
 
-**Political apathy** is a lack of interest in politics. Its causes include poverty, illiteracy, disappointment with politicians, fear of violence or intimidation, rigged elections and the belief that one vote makes no difference.
+:::callout{type=definition}
+**Political apathy** is a lack of interest in politics.
+:::
+
+Its causes include poverty, illiteracy, disappointment with politicians, fear of violence or intimidation, rigged elections and the belief that one vote makes no difference.
 
 :::callout{type=local-example}
 In Sierra Leone the **paramount chief** has **traditional authority**: chiefs come from recognised ruling houses and are respected by custom. Under the Chieftaincy Act and the 1991 Constitution, chiefs also hold **legal-rational** authority, because the law sets out how they are elected and what they may do. One office can rest on more than one type of authority.

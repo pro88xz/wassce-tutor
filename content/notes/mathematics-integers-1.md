@@ -28,7 +28,11 @@ By the end of this lesson you should be able to:
 
 ## The number line
 
-The **number line** is a visual representation of numbers. Zero is in the middle; positives extend to the right; negatives extend to the left.
+:::callout{type=definition}
+The **number line** is a visual representation of numbers.
+:::
+
+Zero is in the middle; positives extend to the right; negatives extend to the left.
 
 ```
 ... -4   -3   -2   -1    0    1    2    3    4 ...
@@ -80,7 +84,9 @@ This matters because students sometimes think $-5 > -2$ (wrong — the more nega
 
 ## Rational numbers — fractions and integers together
 
+:::callout{type=definition}
 A **rational number** is any number expressible as $\dfrac{a}{b}$ with integers $a, b$ and $b \neq 0$.
+:::
 
 ### Examples
 

@@ -30,7 +30,11 @@ The tractor is the main power unit on a mechanized farm. It pulls or powers othe
 | **drawbar** | a bar for pulling trailed implements and trailers |
 | **tyres** | large, deep-treaded rear tyres give grip in soft soil |
 
-A **power tiller** (two-wheel or walking tractor) is a small tractor steered by an operator walking behind it. It is well suited to small farms and **inland valley swamps**.
+:::callout{type=definition}
+A **power tiller** (two-wheel or walking tractor) is a small tractor steered by an operator walking behind it.
+:::
+
+It is well suited to small farms and **inland valley swamps**.
 
 ## Implements for each operation
 

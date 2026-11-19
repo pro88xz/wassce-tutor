@@ -26,7 +26,11 @@ By the end of this lesson you should be able to:
 | **Weak electrolyte** | Partly ionised; conducts poorly | Ethanoic acid, aqueous ammonia, water |
 | **Non-electrolyte** | No ions | Sugar solution, ethanol, kerosene |
 
-**Metallic conduction** is a flow of **electrons**; the metal is not changed. **Electrolytic conduction** is a flow of **ions**, and chemical changes happen at the electrodes.
+:::callout{type=definition}
+**Metallic conduction** is a flow of **electrons**; the metal is not changed.
+:::
+
+**Electrolytic conduction** is a flow of **ions**, and chemical changes happen at the electrodes.
 
 ## How electrolysis works
 

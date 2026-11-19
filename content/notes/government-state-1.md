@@ -54,7 +54,11 @@ Before 1961, Sierra Leone had people, territory and a (colonial) government, but
 | **Government** | The machinery of the state | Temporary and concrete, while the state is permanent and abstract |
 | **Society** | All the people living together and their relationships, including families, clubs, churches and markets | Society is wider and older; the state is the political organisation of society |
 
-A **nation-state** is a state whose people mostly share one national identity, such as Japan. A **multinational state** contains several nations or ethnic groups under one government. Sierra Leone, with many ethnic groups, is a multinational state that seeks unity through shared national institutions and symbols.
+:::callout{type=definition}
+A **nation-state** is a state whose people mostly share one national identity, such as Japan.
+:::
+
+A **multinational state** contains several nations or ethnic groups under one government. Sierra Leone, with many ethnic groups, is a multinational state that seeks unity through shared national institutions and symbols.
 
 :::callout{type=worked-example}
 **Applying the elements.** *Is a province of a country a state?* No. A province has people, territory and a (local) government, but it is **not sovereign**: it is under the central government. All four elements must be present.

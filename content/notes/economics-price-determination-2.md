@@ -112,7 +112,11 @@ The **incidence of a tax** is who finally bears its burden. The **more inelastic
 
 ### A subsidy
 
-A **subsidy** is a payment by the government to producers for each unit produced. It works the opposite way: **supply increases** (the curve shifts **down** by the subsidy), the **price falls** and the **quantity rises**. Subsidies on fertiliser or seed rice are meant to cut farmers' costs and lower food prices.
+:::callout{type=definition}
+A **subsidy** is a payment by the government to producers for each unit produced.
+:::
+
+It works the opposite way: **supply increases** (the curve shifts **down** by the subsidy), the **price falls** and the **quantity rises**. Subsidies on fertiliser or seed rice are meant to cut farmers' costs and lower food prices.
 
 ## Key points
 

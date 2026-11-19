@@ -19,7 +19,11 @@ In **1786** the **Committee for the Relief of the Black Poor**, led by philanthr
 
 ## Granville Sharp's Province of Freedom
 
-**Granville Sharp** was a leading **abolitionist**, famous for the **Somerset case (1772)**. He planned a **free, self-governing settlement** in Sierra Leone, the **Province of Freedom**, where:
+:::callout{type=definition title="Key figure"}
+**Granville Sharp** was a leading **abolitionist**, famous for the **Somerset case (1772)**.
+:::
+
+He planned a **free, self-governing settlement** in Sierra Leone, the **Province of Freedom**, where:
 
 1. settlers would govern themselves through elected leaders (a system he called **frankpledge**);
 2. there would be **no slavery**;

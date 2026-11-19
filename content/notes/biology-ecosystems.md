@@ -1,4 +1,8 @@
-An **ecosystem** is a community of living things together with its non-living environment, all working as one system. A mangrove swamp, an inland valley swamp, a stretch of the Moa River and a patch of Gola rainforest are each an ecosystem. Inside every ecosystem two great processes run all the time: **energy flows through** it, from the sun to producers to consumers, and **materials cycle round** it, from the air and soil into living things and back again. This lesson describes the parts of an ecosystem, the carbon, nitrogen and water cycles, how organisms live together, and how ecosystems change over time through succession.
+:::callout{type=definition}
+An **ecosystem** is a community of living things together with its non-living environment, all working as one system.
+:::
+
+A mangrove swamp, an inland valley swamp, a stretch of the Moa River and a patch of Gola rainforest are each an ecosystem. Inside every ecosystem two great processes run all the time: **energy flows through** it, from the sun to producers to consumers, and **materials cycle round** it, from the air and soil into living things and back again. This lesson describes the parts of an ecosystem, the carbon, nitrogen and water cycles, how organisms live together, and how ecosystems change over time through succession.
 
 ## Learning objectives
 
@@ -80,7 +84,9 @@ Water evaporates from the sea, rivers and land, and **transpires** from leaves. 
 
 ## Ecological succession
 
+:::callout{type=definition}
 **Succession** is the gradual, orderly change in the community of an area over time.
+:::
 
 - **Primary succession** starts on bare ground with no soil: bare rock, new sand, a cooled lava flow. Pioneers such as **lichens and mosses** break down rock and add humus; then grasses, shrubs and finally trees.
 - **Secondary succession** starts where a community was removed but soil remains: an abandoned farm, burnt bush.

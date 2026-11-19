@@ -68,7 +68,11 @@ A fuse with **too high** a rating (or a piece of ordinary wire or a nail used in
 
 ## Circuit breakers
 
-A **circuit breaker** is an automatic switch that **trips** (opens) when the current is too large — usually by the magnetic pull of an electromagnet or the bending of a bimetallic strip. Advantages over fuses: it acts **faster**, and it can simply be **reset** after the fault is cleared.
+:::callout{type=definition}
+A **circuit breaker** is an automatic switch that **trips** (opens) when the current is too large — usually by the magnetic pull of an electromagnet or the bending of a bimetallic strip.
+:::
+
+Advantages over fuses: it acts **faster**, and it can simply be **reset** after the fault is cleared.
 
 A **residual current device (RCD)** compares the currents in the live and neutral wires and cuts off the supply in milliseconds if they differ (because current is leaking — perhaps through a person — to earth). It gives excellent protection against electric shock.
 

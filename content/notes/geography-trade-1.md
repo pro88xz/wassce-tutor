@@ -1,4 +1,8 @@
-**International trade** is the exchange of goods and services between countries. It happens because natural resources, climate, skills and technology are **unevenly distributed**, so each country gains by **specialising** in what it produces best and buying what others produce more cheaply. A country's **balance of trade** is the value of its **exports minus its imports**: a surplus when exports are greater, a deficit when imports are greater. This lesson explains why countries trade, the importance and problems of trade in West Africa, and Sierra Leone's main exports and imports.
+:::callout{type=definition}
+**International trade** is the exchange of goods and services between countries.
+:::
+
+It happens because natural resources, climate, skills and technology are **unevenly distributed**, so each country gains by **specialising** in what it produces best and buying what others produce more cheaply. A country's **balance of trade** is the value of its **exports minus its imports**: a surplus when exports are greater, a deficit when imports are greater. This lesson explains why countries trade, the importance and problems of trade in West Africa, and Sierra Leone's main exports and imports.
 
 ## Learning objectives
 
