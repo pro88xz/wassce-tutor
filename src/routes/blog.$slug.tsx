@@ -40,11 +40,51 @@ export const Route = createFileRoute('/blog/$slug')({
         isPartOf: { '@type': 'Blog', name: 'WASSCE Tutor Blog', url: absoluteUrl('/blog') },
         ...(loaderData.news ? { dateline: 'Freetown, Sierra Leone', contentLocation: { '@type': 'Country', name: 'Sierra Leone' } } : {}),
       },
-      breadcrumbJsonLd([['Home','/'],['Blog','/blog'],[loaderData.title,`/blog/${loaderData.slug}`]])
+      breadcrumbJsonLd([['Home','/'],['Blog','/blog'],[loaderData.title,`/blog/${loaderData.slug}`]]),
+      ...articleImagesJsonLd(loaderData),
     ]
   }) : privatePageTags('Article not found'),
   component: BlogArticlePage,
 })
+
+/**
+ * Image metadata for Google Images: one ImageObject for the cover and each
+ * chart or photo in the article, with its caption and who to credit. Our own
+ * covers and charts are credited to WASSCE Tutor; Pexels and openly licensed
+ * photos to their photographer, with the licence. Google can then show the
+ * credit in image search and link the image back to this article.
+ */
+function articleImagesJsonLd(post: BlogPost): Record<string, unknown>[] {
+  const year = post.publishedAt.slice(0, 4)
+  const ours = { creator: { '@type': 'Organization', name: SITE.name, url: SITE.origin }, creditText: SITE.name, copyrightNotice: `© ${year} ${SITE.name}` }
+  const base = (path: string, caption: string, description: string) => ({
+    '@context': 'https://schema.org',
+    '@type': 'ImageObject',
+    contentUrl: absoluteUrl(path),
+    url: absoluteUrl(path),
+    caption,
+    description,
+    datePublished: post.publishedAt,
+    isPartOf: { '@id': absoluteUrl(`/blog/${post.slug}`) },
+  })
+  const coverCredit = post.imageSourceLabel === 'WASSCE Tutor'
+    ? { ...ours, width: 1200, height: 750 }
+    : post.imageSourceLabel === 'Pexels'
+      ? { creator: { '@type': 'Person', name: post.imageCredit.replace(/ via Pexels$/, '') }, creditText: post.imageCredit, license: 'https://www.pexels.com/license/' }
+      : post.imageLicense
+        ? { creator: { '@type': 'Person', name: post.imageCredit.split(' via ')[0] }, creditText: post.imageCredit, ...(post.imageLicense.url ? { license: post.imageLicense.url } : {}) }
+        : null
+  const cover = coverCredit ? [{ ...base(post.image, post.imageAlt, post.description), name: post.title, representativeOfPage: true, ...coverCredit }] : []
+  const figures = post.sections.flatMap((section) => {
+    const f = section.figure
+    if (!f) return []
+    const credit = f.photoCredit
+      ? { creator: { '@type': 'Person', name: f.photoCredit.creator }, creditText: `${f.photoCredit.creator} via ${f.photoCredit.source}`, ...(f.photoCredit.licenseUrl ? { license: f.photoCredit.licenseUrl } : {}) }
+      : ours
+    return [{ ...base(f.image, f.caption, f.alt), name: f.caption, width: f.width, height: f.height, ...credit }]
+  })
+  return [...cover, ...figures]
+}
 
 type RelatedCard = { slug: string; label: string; title: string; description: string; href: string }
 
