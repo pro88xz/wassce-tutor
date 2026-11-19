@@ -37,6 +37,7 @@ export const RESULTS_POSTS: BlogPost[] = [
       { date: '2026-11-19', text: 'We have found no official report that any of the 47,454 withheld results has been released. Candidates should keep checking WAEC’s irregularities page and their school.' },
       { date: '2026-11-05', text: 'After the Minister appeared before Parliament, the Speaker, Hon. Segepoh Solomon Thomas, ordered the immediate release of withheld results where there is no clear evidence of malpractice, Sierra Leone Monitor reported. The Ministry was to give a timeline for finishing the investigation within four working days.' },
       { date: '2026-11-02', text: 'The University of Sierra Leone changed its English Language entry rule for 2026 results: a D7 pass in English is accepted for diplomas and certificates, and a C6 credit for all degree programmes at Fourah Bay College and IPAM. COMAHS and the Law degree are unchanged.' },
+      { date: '2026-10-30', text: 'The Justice Reform Initiative-SL, a legal and human rights group, gave WAEC and the Ministry 21 days to release results where there is no direct evidence of cheating, or face legal action.' },
       { date: '2026-10-27', text: 'The Minister announced the results on SLBC. WAEC had given them to the Ministry on Friday 23 October.' }
     ],
     sections: [
@@ -114,7 +115,7 @@ export const RESULTS_POSTS: BlogPost[] = [
           height: 750
         },
         after: [
-          'A withheld result is a suspicion, not a verdict. “Withholding does not mean guilty,” Minister Sackey said. WAEC investigates each case; it may release some or all of the results, and it may cancel the results of candidates it finds took part in malpractice. Candidates can check whether their own result is withheld on [WAEC Sierra Leone’s irregularities page](https://www.waec-sierra-leone.org/irregularities), and should stay in close touch with their principal.',
+          'A withheld result is a suspicion, not a verdict. “Withholding does not mean guilty,” Minister Sackey said. WAEC investigates each case; it may release some or all of the results, and it may cancel the results of candidates it finds took part in malpractice. Candidates can check whether their own result is withheld on [WAEC Sierra Leone’s irregularities page](https://www.waec-sierra-leone.org/irregularities), and should stay in close touch with their principal. [Our guide to withheld results](/blog/wassce-result-withheld-2026-sierra-leone) explains the possible outcomes and what to do while you wait.',
           'The Ministry said the Chief Education Officer, the government’s chief nominee to WAEC, would work with the council’s committee to speed up decisions, and that it would ask three respected educationists to observe the committee’s deliberations. It warned that sanctions would not stop at candidates: centre managers, supervisors, invigilators, principals and proprietors found to have helped could also be punished, and principals and proprietors involved in repeated malpractice would be referred to the Anti-Corruption Commission.'
         ]
       },
@@ -194,6 +195,7 @@ export const RESULTS_POSTS: BlogPost[] = [
       { label: 'Sierra Leone Monitor: 368 candidates stranded as five private schools owe WAEC fees (27 October 2026)', url: 'https://www.sierraleonemonitor.com/wassce-candidates-private-schools-waec/' },
       { label: 'Sierra Leone Monitor: Minister Sackey explains how to seek redress (28 October 2026)', url: 'https://www.sierraleonemonitor.com/wassce-grades-minister-sackey-redress/' },
       { label: 'Sierra Leone Monitor: Opposition Leader raises alarm over withheld results (28 October 2026)', url: 'https://www.sierraleonemonitor.com/opposition-leader-withheld-wassce-results/' },
+      { label: 'Sierraloaded: JRI-SL gives WAEC and the Ministry 21 days to release withheld results (31 October 2026)', url: 'https://sierraloaded.sl/local/jri-sl-waec-ministry-21-days-wassce-results/' },
       { label: 'Sierra Leone Monitor: Parliament summons Education Minister (November 2026)', url: 'https://www.sierraleonemonitor.com/parliament-summons-minister-wassce-results/' },
       { label: 'Sierra Leone Monitor: Parliament orders release of results without clear evidence of malpractice (5 November 2026)', url: 'https://www.sierraleonemonitor.com/parliament-orders-release-wassce-results/' },
       { label: 'Sierra Leone Monitor: USL adjusts English Language entry requirements (2 November 2026)', url: 'https://www.sierraleonemonitor.com/usl-adjusts-english-language-requirements/' },
@@ -202,7 +204,150 @@ export const RESULTS_POSTS: BlogPost[] = [
       { label: 'The Sierra Leone Telegraph: What WASSCE exams 2026 is telling Sierra Leone (opinion, 31 October 2026)', url: 'https://www.thesierraleonetelegraph.com/what-wassce-exams-2026-is-telling-sierra-leone/' },
       { label: 'WAEC Sierra Leone online result checker', url: 'https://www.waecsierra-leone.org/' }
     ],
-    related: ['how-to-check-wassce-result-sierra-leone', 'sierra-leone-university-admission-requirements-2026-2027', 'what-counts-as-a-wassce-credit-for-university-admission', 'how-to-pass-wassce-english-language'],
+    related: ['wassce-result-withheld-2026-sierra-leone', 'how-to-check-wassce-result-sierra-leone', 'sierra-leone-university-admission-requirements-2026-2027', 'how-to-pass-wassce-english-language'],
     action: { heading: 'English is the credit that decides university entry. Start on it now.', label: 'Practise WASSCE English', href: '/wassce/english-language' }
+  },
+  {
+    slug: 'wassce-result-withheld-2026-sierra-leone',
+    seoTitle: 'WASSCE Result Withheld in 2026? What It Means and What to Do',
+    title: 'WASSCE Result Withheld in 2026? What It Means, How to Check It and What Happens Next',
+    description: 'WAEC withheld 47,454 Sierra Leone WASSCE results in 2026. What withheld means, how to check your status, the possible outcomes and what to do while you wait.',
+    category: 'WASSCE results',
+    publishedAt: '2026-11-19',
+    updatedAt: '2026-11-19',
+    readMinutes: 8,
+    news: true,
+    image: '/img/blog/wassce-2026-withheld-results.webp',
+    imageAlt: 'Diagram: a withheld WASSCE result is investigated by WAEC, then cleared and released, cancelled for a subject, or cancelled in full',
+    ...OURS,
+    keyFacts: [
+      { value: '47,454', label: 'candidates with every result withheld' },
+      { value: '23.6%', label: 'of the 200,756 entries on WAEC’s list' },
+      { value: '26,735', label: 'of them are girls; 20,719 are boys' },
+      { value: '13', label: 'categories of suspected malpractice' }
+    ],
+    intro: 'If the WAEC checker shows your 2026 WASSCE result as withheld, you have not failed and you have not been found guilty of anything. WAEC withholds results while it investigates suspected malpractice, and this year it withheld the results of 47,454 candidates in Sierra Leone, more than three times as many as in 2025. This guide explains what withheld means, how it differs from a result that is missing for another reason, how to check your status, what can happen next and what to do while you wait.',
+    updates: [
+      { date: '2026-11-19', text: 'We have found no official report that any withheld result has been released, and no published timetable for WAEC’s decisions. The 21-day deadline the Justice Reform Initiative-SL set on 30 October runs out on 20 November.' },
+      { date: '2026-11-05', text: 'Parliament ordered the immediate release of withheld results where there is no clear evidence of malpractice, and asked the Ministry for a timeline within four working days, Sierra Leone Monitor reported.' },
+      { date: '2026-10-30', text: 'The Justice Reform Initiative-SL gave WAEC and the Ministry 21 days to release results where there is no direct evidence of cheating, and said it would go to court on behalf of families if they did not.' },
+      { date: '2026-10-27', text: 'The Ministry announced that 47,454 results had been withheld, up from 13,237 in 2025.' }
+    ],
+    sections: [
+      {
+        heading: 'What “withheld” means',
+        paragraphs: [
+          'WAEC has the authority to withhold a candidate’s results when it suspects examination malpractice. For the 47,454 candidates this year, every subject is withheld, not only the paper under suspicion. The result has not been cancelled. WAEC investigates, then releases some or all of the results, or cancels the results of candidates it finds took part in malpractice.',
+          '“Withholding does not mean guilty,” the Minister of Basic and Senior Secondary Education, Conrad Sackey, said. When a whole hall or centre is flagged, candidates who did nothing wrong can be caught alongside those who did. That is why the Justice Reform Initiative-SL, a legal and human rights group, and others have asked for each case to be decided on evidence about the individual candidate.'
+        ]
+      },
+      {
+        heading: 'Three reasons a result may not show',
+        paragraphs: [
+          'Not every missing result is a withheld one. The Ministry’s figures for 2026 describe three different situations, and each has a different next step.'
+        ],
+        bullets: [
+          'Withheld for suspected malpractice: 47,454 candidates. The status page shows the result as withheld. You wait for WAEC’s investigation, and you cannot ask for a withheld result to be remarked.',
+          'Your school owes WAEC its fees: 368 candidates at five private schools. The results exist, but WAEC will not release them until the school pays. “The candidates did nothing wrong. The debt belongs to the schools,” the Minister said. Ask your school when it will pay.',
+          'You were recorded absent from every paper: 11,492 candidates. If you did sit your papers, tell your principal straight away and ask the school to raise it with WAEC. The Ministry says it is investigating absenteeism.'
+        ],
+        after: [
+          'The five schools whose results were held back over fees are Great High School of Science and Business, Reverend Christian International High School, Royal International School, Globe International and Faith Walk Academy Senior Secondary School. Sierra Leone Monitor reported that together they owe WAEC NLe 114,093, and that the Ministry warned they could lose recognition as examination centres if they do not pay.'
+        ]
+      },
+      {
+        heading: 'How to check your status',
+        paragraphs: [
+          'Check on [WAEC Sierra Leone’s irregularities page](https://www.waec-sierra-leone.org/irregularities), which the Ministry pointed candidates to on results day, or on the official result checker ([our step-by-step guide](/blog/how-to-check-wassce-result-sierra-leone) explains it). Your school also receives the results of its candidates, so your principal will know your status.',
+          'The Ministry said it would publish a breakdown of the 13 reasons for withholding on its website and learning platform. We have not found it published yet.',
+          'Take a screenshot of the status page that shows the date. If a university or an employer asks why you cannot show a result, it is your evidence that the result is under investigation rather than failed.'
+        ]
+      },
+      {
+        heading: 'What WAEC is investigating',
+        paragraphs: [
+          'The Ministry said results were withheld under 13 categories of suspected malpractice, and named some of them: collusion, sharing answers inside the examination room, and using social media platforms or artificial intelligence to obtain answers and spread them across examination centres.',
+          'Sierra Leone Monitor reported that a WAEC summary of 47,525 suspected cases put about half of them, 23,980, under social media offences, with 6,005 involving mobile phones and 3,319 the possession of written materials. Other categories it listed include the same handwriting in different scripts, two answer booklets, impersonation and assault on invigilators. The summary counts cases, so its total is not the same as the number of candidates.',
+          'The Ministry has said sanctions will not stop at candidates. Centre managers, supervisors, invigilators, principals and proprietors found to have taken part could also be punished, and principals and proprietors involved in repeated malpractice will be referred to the Anti-Corruption Commission.'
+        ]
+      },
+      {
+        heading: 'What can happen to a withheld result',
+        paragraphs: [
+          'The Ministry has said WAEC may release some or all withheld results after investigation, and may cancel the results of candidates found to have taken part in malpractice. Describing WAEC’s rules, Sierra Leone Monitor reported three possible outcomes: if a candidate is cleared, the results are released in full; a single subject result can be cancelled; or the entire result can be cancelled, which can come with a ban from WAEC examinations for a period.',
+          'The decision belongs to the relevant WAEC committee. The Ministry said the Chief Education Officer, who is the government’s chief nominee to WAEC, would work with that committee to speed up its decisions, and that it would ask three respected educationists to observe the committee’s deliberations, for transparency.'
+        ]
+      },
+      {
+        heading: 'What Parliament and others have demanded',
+        bullets: [
+          'Parliament, 5 November: after the Minister appeared before the House, the Speaker, Hon. Segepoh Solomon Thomas, ordered the immediate release of all withheld results without clear evidence of malpractice. He directed the Ministry to involve Parliament’s education committee and civil society in the investigation and to give a timeline for finishing it within four working days, and asked WAEC for a report on why the results were withheld, Sierra Leone Monitor reported.',
+          'Justice Reform Initiative-SL, 30 October: a 21-day deadline for WAEC and the Ministry to set up an emergency, transparent review of the 13 categories, release results where there is no direct evidence of cheating, announce a deadline for the investigation and examine the conduct of examination officials. It said it would seek legal redress for families if they did not.',
+          'The Leader of the Opposition, Hon. Abdul Kargbo: a clear explanation and timeline, decisions based on evidence and a fair hearing, and a special university admission window for candidates who are later cleared.'
+        ],
+        after: [
+          'As of 19 November we have not found a published timeline, or any announcement that withheld results have been released. We will update this page when that changes.'
+        ]
+      },
+      {
+        heading: 'University admission while you wait',
+        paragraphs: [
+          'Without a result you cannot show that you meet a university’s entry requirement, and the University of Sierra Leone’s portal lists 30 November 2026 as its undergraduate submission deadline. The Opposition Leader has asked the Ministry to arrange a special admission window for candidates who are later cleared. We have not found a university that has announced one.',
+          'If you planned to start university this year, contact the admissions office of each university you want before its deadline. Explain that your result is withheld, and ask in writing whether it will accept a late or provisional application. [Our admissions guide](/blog/sierra-leone-university-admission-requirements-2026-2027) links to every university’s official admissions pages.'
+        ]
+      },
+      {
+        heading: 'What to do now',
+        bullets: [
+          'Check your status on the irregularities page and keep a dated screenshot.',
+          'Stay in close touch with your principal. The school deals with WAEC for its candidates and will hear about decisions.',
+          'If you think you were wrongly caught up, write down what happened in your examination hall while you remember it, and give it to your principal.',
+          'Do not pay anyone who says they can release or fix a result. The Minister has warned about fake accounts using his name to ask families for money. Only WAEC can release a result.',
+          'Keep studying. If your result is released, you may still want to improve a grade; if it is cancelled, the next step is a later sitting of the WASSCE for private candidates. Ask your school or WAEC when registration opens.'
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: 'Does a withheld WASSCE result mean I failed?',
+        answer: 'No. A withheld result has not been failed or cancelled. It means WAEC suspects malpractice and is investigating. It may be released in full.'
+      },
+      {
+        question: 'How long will the investigation take?',
+        answer: 'No timeline has been published. On 5 November Parliament asked the Ministry to give one within four working days; as of 19 November we have not found it.'
+      },
+      {
+        question: 'Can I ask for a withheld result to be remarked?',
+        answer: 'No. Remarking is for candidates who have a result and think a grade is wrong. A candidate whose result is withheld has to wait for the outcome of WAEC’s investigation.'
+      },
+      {
+        question: 'Can someone pay to have my result released?',
+        answer: 'No. Only WAEC can release a withheld result, and it does so after its investigation. Anyone who asks you for money to release or upgrade a result is running a scam.'
+      },
+      {
+        question: 'Will my result be released if I did nothing wrong?',
+        answer: 'That is what the investigation decides: if WAEC clears a candidate, the results are released in full. Parliament has also ordered the release of results where there is no clear evidence of malpractice.'
+      },
+      {
+        question: 'I was marked absent, but I sat my papers. What should I do?',
+        answer: 'Tell your principal straight away and ask the school to raise it with WAEC. Being recorded absent is different from having a result withheld, and it needs to be corrected through your school.'
+      }
+    ],
+    sources: [
+      { label: 'Sierraloaded: How to check if your 2026 WASSCE result has been withheld (27 October 2026)', url: 'https://sierraloaded.sl/education/check-2026-wassce-result-withheld/' },
+      { label: 'Sierraloaded: WAEC withholds 47,454 results over suspected malpractice (27 October 2026)', url: 'https://sierraloaded.sl/education/2026-wassce-waec-withholds-47454-results/' },
+      { label: 'Sierraloaded: Government of Sierra Leone releases 2026 WASSCE results (27 October 2026)', url: 'https://sierraloaded.sl/news/sierra-leone-releases-2026-wassce-results/' },
+      { label: 'Sierra Leone Monitor: 47,454 results withheld over malpractice (27 October 2026)', url: 'https://www.sierraleonemonitor.com/wassce-results-withheld-malpractice/' },
+      { label: 'Sierra Leone Monitor: 368 candidates stranded as five private schools owe WAEC fees (27 October 2026)', url: 'https://www.sierraleonemonitor.com/wassce-candidates-private-schools-waec/' },
+      { label: 'Sierra Leone Monitor: Minister Sackey explains how to seek redress (28 October 2026)', url: 'https://www.sierraleonemonitor.com/wassce-grades-minister-sackey-redress/' },
+      { label: 'Sierra Leone Monitor: Opposition Leader raises alarm over withheld results (28 October 2026)', url: 'https://www.sierraleonemonitor.com/opposition-leader-withheld-wassce-results/' },
+      { label: 'Sierraloaded: JRI-SL gives WAEC and the Ministry 21 days to release withheld results (31 October 2026)', url: 'https://sierraloaded.sl/local/jri-sl-waec-ministry-21-days-wassce-results/' },
+      { label: 'Sierra Leone Monitor: 78-year-old candidate among 47,454 whose results were withheld, with WAEC’s summary of cases (2 November 2026)', url: 'https://www.sierraleonemonitor.com/wassce-candidate-results-withheld-waec/' },
+      { label: 'Sierra Leone Monitor: Parliament orders release of results without clear evidence of malpractice (5 November 2026)', url: 'https://www.sierraleonemonitor.com/parliament-orders-release-wassce-results/' },
+      { label: 'The Sierra Leone Telegraph: What WASSCE exams 2026 is telling Sierra Leone (opinion, 31 October 2026)', url: 'https://www.thesierraleonetelegraph.com/what-wassce-exams-2026-is-telling-sierra-leone/' },
+      { label: 'WAEC Sierra Leone online result checker', url: 'https://www.waecsierra-leone.org/' }
+    ],
+    related: ['2026-wassce-results-sierra-leone', 'how-to-check-wassce-result-sierra-leone', 'sierra-leone-university-admission-requirements-2026-2027', 'what-counts-as-a-wassce-credit-for-university-admission'],
+    action: { heading: 'Waiting on a result? Keep your subjects fresh for whatever comes next.', label: 'Explore subjects', href: '/wassce/subjects' }
   }
 ]
