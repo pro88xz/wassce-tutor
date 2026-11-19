@@ -1038,6 +1038,294 @@ def hut_tax_war_causes_results():
         s.arrow(464, 330 + (y - 324) * 0.35, 504, y, color=MUTED, width=2)
     return s
 
+
+# ═══ H4: Sierra Leone 1947 to today ══════════════════════════════════════════
+
+@fig
+def sl_1951_divide():
+    s = Svg(800, 600, "The Colony–Protectorate divide over the 1951 constitution",
+            "Diagram of the debate over the Stevenson Constitution. In the Colony, the National Council of the Colony of "
+            "Sierra Leone (NCSL), led by Dr H. C. Bankole-Bright, opposed it, arguing that the Colony's British subjects "
+            "should not be ruled by a Protectorate majority, that the Protectorate was less educated, and that the two "
+            "areas should advance separately. In the Protectorate, the Sierra Leone People's Party (SLPP), led by Dr "
+            "Milton Margai, supported it, arguing that the Protectorate had most of the people and wealth and deserved a "
+            "majority, and that the country must advance as one. The SLPP won the 1951 elections.")
+    heading(s, "The 1951 constitution: Colony against Protectorate")
+    a = box(s, 205, 116, 350, 76, ["THE COLONY", "NCSL, led by Dr Bankole-Bright"], col=PURPLE, fill=F_PURPLE, size=18)
+    b = box(s, 595, 116, 350, 76, ["THE PROTECTORATE", "SLPP, led by Dr Milton Margai"], col=GREEN, fill=F_GREEN, size=18)
+    s.text(205, 186, "OPPOSED the constitution", size=17, weight="bold", color=RED)
+    s.text(595, 186, "SUPPORTED the constitution", size=17, weight="bold", color=GREEN)
+    left = ["Colony people were British", "subjects with older rights", "Protectorate had fewer", "educated people", "two areas should advance", "separately"]
+    right = ["Protectorate had most of the", "people and the wealth", "a majority was only fair", "and democratic", "the country must advance", "as one nation"]
+    for k in range(3):
+        box(s, 205, 262 + k * 96, 350, 78, [left[2 * k], left[2 * k + 1]], col=INK, fill="#ffffff", size=16, bold_first=False)
+        box(s, 595, 262 + k * 96, 350, 78, [right[2 * k], right[2 * k + 1]], col=INK, fill="#ffffff", size=16, bold_first=False)
+    box(s, 400, 556, 740, 56, ["Result: the SLPP won the 1951 elections; Milton Margai led government business"], col=GREEN, fill=F_GREEN, size=17)
+    return s
+
+
+@fig
+def sl_independence_timeline():
+    s = Svg(800, 740, "Sierra Leone's road to independence, 1946–1961",
+            "Timeline: 1946, Protectorate Assembly set up; 1947, Governor Stevenson proposes a new constitution; 1950, Colony "
+            "leaders form the NCSL; 1951, the SLPP is formed, the Stevenson Constitution introduced and the SLPP wins the "
+            "elections; 1953, African ministers, with Milton Margai Chief Minister from 1954; 1955, strikes and riots in "
+            "Freetown and later in the north; 1957, elections to the new House of Representatives; 1958, Margai becomes "
+            "Premier and the PNP is formed; 1960, the Lancaster House conference and the founding of the APC; 27 April "
+            "1961, independence.")
+    heading(s, "Sierra Leone's road to independence, 1946–1961")
+    events = [("1946", ["Protectorate Assembly set up", "a voice for the Protectorate"], INK),
+              ("1947", ["Stevenson proposals", "African majority in the Legislative Council"], BLUE),
+              ("1950", ["NCSL formed by Colony leaders", "led by Dr H. C. Bankole-Bright"], PURPLE),
+              ("1951", ["SLPP formed; Stevenson Constitution", "SLPP wins; Milton Margai leads"], GREEN),
+              ("1953–54", ["African ministers", "Margai becomes Chief Minister (1954)"], GREEN),
+              ("1955", ["Strike and riots in Freetown", "tax riots in the north, 1955–56"], RED),
+              ("1957", ["Elections to the House of Representatives", "most members directly elected"], BLUE),
+              ("1958", ["Margai becomes Premier", "Albert Margai and Siaka Stevens form the PNP"], ORANGE),
+              ("1960", ["Lancaster House conference, London", "Stevens refuses to sign; APC formed"], ORANGE),
+              ("1961", ["Independence, 27 April", "Sir Milton Margai Prime Minister"], GREEN)]
+    vtimeline(s, 150, 90, 66, events, size=18)
+    return s
+
+
+@fig
+def sl_1961_1968_timeline():
+    s = Svg(800, 640, "Sierra Leone under the Margais, 1961–1968",
+            "Timeline: 27 April 1961, independence under Sir Milton Margai; September 1961, Sierra Leone joins the United "
+            "Nations; 1962, the SLPP wins the first general election after independence; 1963, Sierra Leone is a founding "
+            "member of the OAU; 1964, Sir Milton Margai dies and Albert Margai becomes Prime Minister, and the leone "
+            "replaces the West African pound; 1966, Albert Margai proposes a one-party state; 1967, the APC wins the "
+            "election and the army seizes power; 1968, the Sergeants' revolt restores civilian rule under Siaka Stevens.")
+    heading(s, "Independence and the Margai era, 1961–1968")
+    events = [("1961", ["Independence, 27 April", "Sir Milton Margai Prime Minister"], GREEN),
+              ("1961", ["Joins the United Nations", "27 September; also the Commonwealth"], BLUE),
+              ("1962", ["First general election after independence", "the SLPP wins"], GREEN),
+              ("1963", ["Founding member of the OAU", "Addis Ababa, 25 May"], BLUE),
+              ("1964", ["Milton Margai dies; Albert Margai PM", "the leone and the Bank of Sierra Leone"], ORANGE),
+              ("1966", ["One-party state proposed", "strong opposition from the APC and public"], RED),
+              ("1967", ["APC wins the election", "army seizes power; NRC military rule"], RED),
+              ("1968", ["Sergeants' revolt", "civilian rule; Siaka Stevens Prime Minister"], PURPLE)]
+    vtimeline(s, 140, 92, 68, events, size=18)
+    return s
+
+
+@fig
+def sl_1967_crisis():
+    s = Svg(800, 640, "The 1967 election crisis and military rule",
+            "Flow diagram: on 17 March 1967 the APC won the general election; on 21 March the Governor-General swore in "
+            "Siaka Stevens as Prime Minister; the same day Brigadier David Lansana declared martial law; on 23 March other "
+            "officers arrested Lansana and formed the National Reformation Council (NRC), later led by Lieutenant-Colonel "
+            "Andrew Juxon-Smith, which ruled by decree; in April 1968 junior ranks overthrew the NRC in the Sergeants' "
+            "revolt; and on 26 April 1968 Siaka Stevens was sworn in as Prime Minister.")
+    heading(s, "From election to coup and back: 1967–1968")
+    steps = [(["17 March 1967", "APC wins most seats in", "the general election"], GREEN, F_GREEN),
+             (["21 March 1967", "Stevens sworn in as", "Prime Minister"], GREEN, F_GREEN),
+             (["21 March 1967", "Brigadier Lansana", "declares martial law"], RED, F_RED),
+             (["23 March 1967", "officers arrest Lansana;", "NRC takes power"], RED, F_RED),
+             (["1967–1968", "NRC rule by decree under", "Lt-Col Juxon-Smith"], ORANGE, F_AMBER),
+             (["April 1968", "Sergeants' revolt", "overthrows the NRC"], PURPLE, F_PURPLE)]
+    pos = [(150, 130), (400, 130), (650, 130), (650, 300), (400, 300), (150, 300)]
+    bs = [box(s, x, y, 230, 112, lines, col=col, fill=fill, size=16) for (x, y), (lines, col, fill) in zip(pos, steps)]
+    for a, b in zip(bs, bs[1:]):
+        link(s, a, b, color=INK, width=2.5)
+    end = box(s, 150, 470, 230, 96, ["26 April 1968", "Siaka Stevens", "Prime Minister"], col=BLUE, fill=F_BLUE, size=16)
+    link(s, bs[-1], end, color=INK, width=2.5)
+    box(s, 530, 470, 470, 150, ["Lessons of 1967–68", "the army could overturn an election;", "a peaceful change of government was",
+                                "blocked; the crisis led to a stronger", "presidency in 1971"], col=INK, fill="#ffffff", size=16)
+    return s
+
+
+@fig
+def stevens_era_timeline():
+    s = Svg(800, 700, "The Siaka Stevens era, 1968–1985",
+            "Timeline: 1968, Siaka Stevens becomes Prime Minister; 1971, a failed coup, Guinean troops invited, and on 19 "
+            "April Sierra Leone becomes a republic with Stevens as executive President; 1973, the SLPP withdraws from "
+            "elections; 1977, student demonstrations and a violent election; 1978, the one-party constitution makes the "
+            "APC the only legal party; 1980, Freetown hosts the OAU summit; 1981, a general strike; 1985, Stevens retires "
+            "and hands over to Joseph Saidu Momoh.")
+    heading(s, "The Siaka Stevens era, 1968–1985")
+    events = [("1968", ["Stevens becomes Prime Minister", "after the Sergeants' revolt"], PURPLE),
+              ("1971", ["Failed coup; Guinean troops invited", "Republic, 19 April; Stevens President"], RED),
+              ("1973", ["General election", "SLPP withdraws amid violence"], ORANGE),
+              ("1977", ["Student demonstrations", "followed by a violent election"], RED),
+              ("1978", ["One-party constitution", "the APC becomes the only legal party"], RED),
+              ("1980", ["Freetown hosts the OAU summit", "Stevens OAU chairman; huge costs"], BLUE),
+              ("1981", ["General strike", "over prices, pay and shortages"], ORANGE),
+              ("1985", ["Stevens retires", "hands over to Joseph Saidu Momoh"], INK)]
+    vtimeline(s, 140, 92, 74, events, size=18)
+    return s
+
+
+@fig
+def stevens_economy():
+    s = Svg(800, 600, "Why Sierra Leone's economy declined under Siaka Stevens",
+            "Diagram: causes of economic decline in the 1970s and 1980s were diamond smuggling and loss of mining revenue, "
+            "corruption and patronage, the closure of the Marampa iron-ore mine in 1975, rising oil prices, the cost of the "
+            "1980 OAU summit, and the mismanagement of state enterprises. The effects were shortages of fuel and rice, "
+            "inflation, unpaid salaries, a collapse of services such as schools and hospitals, and the emigration of "
+            "educated people, which prepared the ground for the civil war.")
+    heading(s, "Why the economy declined under Stevens")
+    s.text(200, 76, "CAUSES", size=18, weight="bold", color=RED)
+    s.text(600, 76, "EFFECTS", size=18, weight="bold", color=BLUE)
+    causes = [["Diamond smuggling", "revenue lost to the state"], ["Corruption and patronage", "wealth for a few insiders"],
+              ["Mining decline", "Marampa iron ore closed, 1975"], ["Oil price rises", "1973 and 1979"],
+              ["OAU summit, 1980", "huge spending, scandals"]]
+    effects = [["Shortages", "fuel, rice and power"], ["Inflation", "the leone lost value"], ["Unpaid salaries", "teachers, civil servants"],
+               ["Collapse of services", "schools, hospitals, roads"], ["Brain drain", "educated people emigrate"]]
+    centre = box(s, 400, 324, 120, 120, ["DECLINE", "1970s–80s"], col=INK, fill=F_GREY, size=17)
+    for k, (c, e) in enumerate(zip(causes, effects)):
+        y = 124 + k * 100
+        box(s, 160, y, 270, 76, c, col=RED, fill=F_RED, size=16)
+        box(s, 640, y, 270, 76, e, col=BLUE, fill=F_BLUE, size=16)
+        s.arrow(296, y, 336, 324 + (y - 324) * 0.35, color=MUTED, width=2)
+        s.arrow(464, 324 + (y - 324) * 0.35, 504, y, color=MUTED, width=2)
+    return s
+
+
+@fig
+def momoh_timeline():
+    s = Svg(800, 640, "The Momoh years, 1985–1992",
+            "Timeline: November 1985, Major-General Joseph Saidu Momoh becomes President; 1986, one-party elections; 1987, "
+            "an alleged coup plot and a state of economic emergency; 1989, former Vice-President Francis Minah executed; "
+            "1990, the Tucker Constitutional Review Commission; 23 March 1991, the RUF attacks Bomaru and the civil war "
+            "begins; 1 October 1991, the multi-party constitution comes into force; 29 April 1992, the NPRC coup "
+            "overthrows Momoh.")
+    heading(s, "Joseph Saidu Momoh's government, 1985–1992")
+    events = [("1985", ["Momoh becomes President", "army commander; the 'New Order'"], INK),
+              ("1986", ["One-party elections", "only APC candidates"], ORANGE),
+              ("1987", ["Alleged coup plot", "state of economic emergency"], RED),
+              ("1989", ["Francis Minah executed", "former Vice-President"], RED),
+              ("1990", ["Tucker Commission", "reviews the constitution"], BLUE),
+              ("1991", ["War begins, 23 March", "RUF attacks Bomaru, Kailahun"], RED),
+              ("1991", ["Multi-party constitution", "in force from 1 October"], GREEN),
+              ("1992", ["NPRC coup, 29 April", "Momoh flees to Guinea"], PURPLE)]
+    vtimeline(s, 140, 92, 68, events, size=18)
+    return s
+
+
+@fig
+def civil_war_map():
+    s = Svg(800, 800, "Key places in the Sierra Leone Civil War, 1991–2002",
+            "Map of Sierra Leone marking key places in the civil war: Bomaru in Kailahun District, where the RUF attack on 23 "
+            "March 1991 began the war; Kailahun, an RUF stronghold; the Kono diamond fields, fought over throughout the "
+            "war; Makeni, the RUF's headquarters around 2000; Lungi, base of UN and British forces in 2000; and Freetown, "
+            "invaded by AFRC and RUF forces on 6 January 1999. Positions are approximate.")
+    P = sl_frame(s, h=760)
+    pts = [(-10.6, 7.95, "Bomaru", "war begins, 23 March 1991", "end", -14, RED),
+           (-10.57, 8.28, "Kailahun", "RUF stronghold", "start", 14, RED),
+           (-10.97, 8.64, "Kono diamond fields", "fought over all through the war", "end", -14, BLUE),
+           (-12.05, 8.88, "Makeni", "RUF headquarters, about 2000", "start", 14, RED),
+           (-13.2, 8.62, "Lungi", "UN and British base, 2000", "start", 14, GREEN),
+           (-13.23, 8.48, "Freetown", "invaded 6 January 1999", "start", 14, RED)]
+    for lon, lat, n, sub, anchor, dx, col in pts:
+        x, y = P(lon, lat)
+        s.polygon([(x, y - 11), (x + 10, y), (x, y + 11), (x - 10, y)], fill=col, stroke=INK, width=1.5)
+        dy = 30 if n == "Freetown" else 0
+        s.label(x + dx, y - 10 + dy, n, size=16, anchor=anchor, weight="bold", color=col, pad=3)
+        s.label(x + dx, y + 11 + dy, sub, size=13, anchor=anchor, color=INK, pad=2)
+    x, y = P(-10.4, 7.55)
+    s.arrow(x + 40, y + 10, x - 10, y - 30, color=RED, width=3)
+    s.label(x + 30, y + 30, "from Liberia", size=14, anchor="middle", color=RED, weight="bold", pad=3)
+    s.label(400, 784, "Positions approximate.", size=13, color=MUTED, pad=2)
+    north_arrow(s, 740, 80)
+    return s
+
+
+@fig
+def nprc_timeline():
+    s = Svg(800, 640, "The NPRC military government, 1992–1996",
+            "Timeline: 29 April 1992, young officers led by Captain Valentine Strasser seize power as the National "
+            "Provisional Ruling Council; December 1992, alleged coup plotters executed; 1994 to 1995, the RUF advances and "
+            "attacks come close to Freetown; 1995, the government hires the private military company Executive Outcomes "
+            "and holds the first Bintumani conference; 16 January 1996, Brigadier Julius Maada Bio replaces Strasser; "
+            "February 1996, the second Bintumani conference backs elections before peace and elections are held; 29 March "
+            "1996, power is handed to the elected President, Ahmad Tejan Kabbah.")
+    heading(s, "The NPRC years, 1992–1996")
+    events = [("1992", ["NPRC coup, 29 April", "Captain Valentine Strasser, aged 25"], PURPLE),
+              ("1992", ["Executions, December", "of alleged coup plotters"], RED),
+              ("1994–95", ["RUF advances", "attacks reach near Freetown"], RED),
+              ("1995", ["Executive Outcomes hired", "Bintumani I conference"], ORANGE),
+              ("1996", ["Palace coup, 16 January", "Brigadier Julius Maada Bio replaces Strasser"], PURPLE),
+              ("1996", ["Bintumani II and elections", "'elections before peace', February"], BLUE),
+              ("1996", ["Handover, 29 March", "Ahmad Tejan Kabbah President"], GREEN)]
+    vtimeline(s, 140, 92, 74, events, size=18)
+    return s
+
+
+@fig
+def sl_peace_process():
+    s = Svg(800, 700, "The road to peace in Sierra Leone, 1996–2002",
+            "Flow diagram of the peace process: the Abidjan Peace Accord, November 1996; the AFRC coup, May 1997; the Conakry "
+            "Peace Plan, October 1997; ECOMOG restores President Kabbah, February to March 1998; the invasion of Freetown, "
+            "January 1999; the Lomé Peace Agreement, July 1999; the UN mission UNAMSIL, from October 1999; the hostage "
+            "crisis and British intervention, May 2000; the Abuja ceasefire agreements, 2000 to 2001, and disarmament; and "
+            "the end of the war on 18 January 2002, followed by elections in May 2002, the Truth and Reconciliation "
+            "Commission and the Special Court.")
+    heading(s, "The long road to peace, 1996–2002")
+    steps = [(["Abidjan Accord", "November 1996"], BLUE), (["AFRC coup", "25 May 1997"], RED),
+             (["Conakry Peace Plan", "October 1997"], BLUE), (["ECOMOG restores Kabbah", "Feb–March 1998"], GREEN),
+             (["Freetown invaded", "6 January 1999"], RED), (["Lomé Agreement", "7 July 1999"], BLUE),
+             (["UNAMSIL", "from October 1999"], GREEN), (["Hostage crisis; UK troops", "May 2000"], RED),
+             (["Abuja ceasefires", "2000–2001; disarmament"], BLUE)]
+    bs = []
+    for k, (lines, col) in enumerate(steps):
+        row, c = divmod(k, 3)
+        x = [140, 400, 660][c] if row != 1 else [660, 400, 140][c]
+        y = 120 + row * 130
+        bs.append(box(s, x, y, 230, 76, lines, col=col, fill={BLUE: F_BLUE, RED: F_RED, GREEN: F_GREEN}[col], size=17))
+    for a, b in zip(bs, bs[1:]):
+        link(s, a, b, color=INK, width=2.5)
+    end = box(s, 400, 520, 500, 76, ["WAR DECLARED OVER", "18 January 2002"], col=GREEN, fill=F_GREEN, size=20)
+    link(s, bs[-1], end, color=INK, width=2.5)
+    box(s, 400, 636, 740, 70, ["After the war", "May 2002 elections · Truth and Reconciliation Commission · Special Court"],
+        col=INK, fill="#ffffff", size=17)
+    return s
+
+
+@fig
+def sl_memberships():
+    s = Svg(800, 600, "Sierra Leone in the international community",
+            "Diagram of the international organisations Sierra Leone belongs to: the United Nations (joined 27 September "
+            "1961), the Commonwealth (1961), the Organisation of African Unity (founding member, 1963) and its successor "
+            "the African Union (2002), the Mano River Union (founding member, 1973), the Economic Community of West African "
+            "States (founding member, 1975), the Non-Aligned Movement, and the Organisation of Islamic Cooperation.")
+    heading(s, "Sierra Leone in the international community")
+    c = box(s, 400, 320, 220, 90, ["SIERRA LEONE", "independent 1961"], col=GREEN, fill=F_GREEN, size=20)
+    orgs = [(140, 130, ["United Nations", "joined 27 Sept 1961"], BLUE, F_BLUE),
+            (400, 110, ["Commonwealth", "joined 1961"], PURPLE, F_PURPLE),
+            (660, 130, ["OAU → African Union", "founder 1963; AU 2002"], ORANGE, F_AMBER),
+            (120, 320, ["Mano River Union", "founder 1973"], TEAL, F_TEAL),
+            (680, 320, ["ECOWAS", "founder 1975"], RED, F_RED),
+            (220, 500, ["Non-Aligned Movement", "no Cold War bloc"], INK, F_GREY),
+            (580, 500, ["Organisation of", "Islamic Cooperation"], INK, F_GREY)]
+    for x, y, lines, col, fill in orgs:
+        b = box(s, x, y, 230, 76, lines, col=col, fill=fill, size=17)
+        link(s, c, b, color=MUTED, width=2.5)
+    return s
+
+
+@fig
+def mano_river_union_map():
+    s = Svg(800, 600, "The Mano River Union",
+            "Map of West Africa highlighting the four members of the Mano River Union: Sierra Leone and Liberia, which "
+            "founded it in 1973, Guinea, which joined in 1980, and Côte d'Ivoire, which joined in 2008. Its secretariat is "
+            "in Freetown. The Mano River forms part of the border between Sierra Leone and Liberia.")
+    P = map_frame(s, (-15.5, 3.8, -2.0, 13.0))
+    cols = {"Sierra Leone": ("#86efac", "1973"), "Liberia": ("#86efac", "1973"), "Guinea": ("#93c5fd", "1980"),
+            "Côte d'Ivoire": ("#fde68a", "2008")}
+    for n, (col, _) in cols.items():
+        country(s, P, MAPS["wa_countries"][n], col, stroke=INK, width=1.6)
+    for n, lon, lat in [("Sierra Leone", -11.8, 8.85), ("Liberia", -9.4, 6.6), ("Guinea", -10.6, 10.6), ("Côte d'Ivoire", -5.6, 7.8)]:
+        x, y = P(lon, lat)
+        s.label(x, y - 10, n, size=17, weight="bold", pad=3)
+        s.label(x, y + 12, "joined " + cols[n][1] if n not in ("Sierra Leone", "Liberia") else "founder, " + cols[n][1], size=14, pad=2)
+    town(s, P, -13.23, 8.48, "Freetown", dx=-10, dy=-16, anchor="end", capital=True, size=14)
+    s.label(22, 28, "Secretariat: Freetown", size=15, anchor="start", weight="bold", pad=4)
+    x, y = P(-11.4, 7.05)
+    s.label(x - 6, y + 22, "Mano River", size=13, italic=True, color=BLUE, anchor="end", pad=2)
+    legend(s, [("#86efac", "founders, 1973"), ("#93c5fd", "joined 1980"), ("#fde68a", "joined 2008")], 30, 572, cols=3, colw=240, rowh=28, size=15)
+    return s
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main(names: list[str]) -> None:

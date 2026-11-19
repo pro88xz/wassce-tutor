@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The 1967 election crisis and military rule</title>
+<desc id="d">Flow diagram: on 17 March 1967 the APC won the general election; on 21 March the Governor-General swore in Siaka Stevens as Prime Minister; the same day Brigadier David Lansana declared martial law; on 23 March other officers arrested Lansana and formed the National Reformation Council (NRC), later led by Lieutenant-Colonel Andrew Juxon-Smith, which ruled by decree; in April 1968 junior ranks overthrew the NRC in the Sergeants&#x27; revolt; and on 26 April 1968 Siaka Stevens was sworn in as Prime Minister.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="800" height="640" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">From election to coup and back: 1967–1968</text>
+<rect x="35.0" y="74.0" width="230.0" height="112.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="150.0" y="108.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">17 March 1967</text>
+<text x="150.0" y="130.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">APC wins most seats in</text>
+<text x="150.0" y="152.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the general election</text>
+<rect x="285.0" y="74.0" width="230.0" height="112.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="108.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">21 March 1967</text>
+<text x="400.0" y="130.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Stevens sworn in as</text>
+<text x="400.0" y="152.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Prime Minister</text>
+<rect x="535.0" y="74.0" width="230.0" height="112.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="650.0" y="108.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">21 March 1967</text>
+<text x="650.0" y="130.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Brigadier Lansana</text>
+<text x="650.0" y="152.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">declares martial law</text>
+<rect x="535.0" y="244.0" width="230.0" height="112.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="650.0" y="278.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">23 March 1967</text>
+<text x="650.0" y="300.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">officers arrest Lansana;</text>
+<text x="650.0" y="322.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">NRC takes power</text>
+<rect x="285.0" y="244.0" width="230.0" height="112.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="400.0" y="278.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1967–1968</text>
+<text x="400.0" y="300.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">NRC rule by decree under</text>
+<text x="400.0" y="322.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Lt-Col Juxon-Smith</text>
+<rect x="35.0" y="244.0" width="230.0" height="112.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="150.0" y="278.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">April 1968</text>
+<text x="150.0" y="300.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Sergeants&#x27; revolt</text>
+<text x="150.0" y="322.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">overthrows the NRC</text>
+<line x1="271.0" y1="130.0" x2="279.0" y2="130.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="521.0" y1="130.0" x2="529.0" y2="130.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="650.0" y1="192.0" x2="650.0" y2="238.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="529.0" y1="300.0" x2="521.0" y2="300.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="279.0" y1="300.0" x2="271.0" y2="300.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="35.0" y="422.0" width="230.0" height="96.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="150.0" y="448.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">26 April 1968</text>
+<text x="150.0" y="470.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Siaka Stevens</text>
+<text x="150.0" y="492.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Prime Minister</text>
+<line x1="150.0" y1="362.0" x2="150.0" y2="416.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="295.0" y="395.0" width="470.0" height="150.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="530.0" y="426.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Lessons of 1967–68</text>
+<text x="530.0" y="448.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the army could overturn an election;</text>
+<text x="530.0" y="470.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">a peaceful change of government was</text>
+<text x="530.0" y="492.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">blocked; the crisis led to a stronger</text>
+<text x="530.0" y="514.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">presidency in 1971</text>
+</svg>

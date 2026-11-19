@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Why Sierra Leone&#x27;s economy declined under Siaka Stevens</title>
+<desc id="d">Diagram: causes of economic decline in the 1970s and 1980s were diamond smuggling and loss of mining revenue, corruption and patronage, the closure of the Marampa iron-ore mine in 1975, rising oil prices, the cost of the 1980 OAU summit, and the mismanagement of state enterprises. The effects were shortages of fuel and rice, inflation, unpaid salaries, a collapse of services such as schools and hospitals, and the emigration of educated people, which prepared the ground for the civil war.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="600" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Why the economy declined under Stevens</text>
+<text x="200.0" y="76.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">CAUSES</text>
+<text x="600.0" y="76.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">EFFECTS</text>
+<rect x="340.0" y="264.0" width="120.0" height="120.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="400.0" y="312.5" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">DECLINE</text>
+<text x="400.0" y="335.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1970s–80s</text>
+<rect x="25.0" y="86.0" width="270.0" height="76.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="160.0" y="113.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Diamond smuggling</text>
+<text x="160.0" y="135.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">revenue lost to the state</text>
+<rect x="505.0" y="86.0" width="270.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="640.0" y="113.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Shortages</text>
+<text x="640.0" y="135.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">fuel, rice and power</text>
+<line x1="296.0" y1="124.0" x2="336.0" y2="254.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="464.0" y1="254.0" x2="504.0" y2="124.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="25.0" y="186.0" width="270.0" height="76.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="160.0" y="213.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Corruption and patronage</text>
+<text x="160.0" y="235.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">wealth for a few insiders</text>
+<rect x="505.0" y="186.0" width="270.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="640.0" y="213.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Inflation</text>
+<text x="640.0" y="235.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the leone lost value</text>
+<line x1="296.0" y1="224.0" x2="336.0" y2="289.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="464.0" y1="289.0" x2="504.0" y2="224.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="25.0" y="286.0" width="270.0" height="76.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="160.0" y="313.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Mining decline</text>
+<text x="160.0" y="335.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Marampa iron ore closed, 1975</text>
+<rect x="505.0" y="286.0" width="270.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="640.0" y="313.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Unpaid salaries</text>
+<text x="640.0" y="335.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">teachers, civil servants</text>
+<line x1="296.0" y1="324.0" x2="336.0" y2="324.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="464.0" y1="324.0" x2="504.0" y2="324.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="25.0" y="386.0" width="270.0" height="76.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="160.0" y="413.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Oil price rises</text>
+<text x="160.0" y="435.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1973 and 1979</text>
+<rect x="505.0" y="386.0" width="270.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="640.0" y="413.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Collapse of services</text>
+<text x="640.0" y="435.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">schools, hospitals, roads</text>
+<line x1="296.0" y1="424.0" x2="336.0" y2="359.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="464.0" y1="359.0" x2="504.0" y2="424.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="25.0" y="486.0" width="270.0" height="76.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="160.0" y="513.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">OAU summit, 1980</text>
+<text x="160.0" y="535.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">huge spending, scandals</text>
+<rect x="505.0" y="486.0" width="270.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="640.0" y="513.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Brain drain</text>
+<text x="640.0" y="535.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">educated people emigrate</text>
+<line x1="296.0" y1="524.0" x2="336.0" y2="394.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="464.0" y1="394.0" x2="504.0" y2="524.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+</svg>

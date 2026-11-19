@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The road to peace in Sierra Leone, 1996–2002</title>
+<desc id="d">Flow diagram of the peace process: the Abidjan Peace Accord, November 1996; the AFRC coup, May 1997; the Conakry Peace Plan, October 1997; ECOMOG restores President Kabbah, February to March 1998; the invasion of Freetown, January 1999; the Lomé Peace Agreement, July 1999; the UN mission UNAMSIL, from October 1999; the hostage crisis and British intervention, May 2000; the Abuja ceasefire agreements, 2000 to 2001, and disarmament; and the end of the war on 18 January 2002, followed by elections in May 2002, the Truth and Reconciliation Commission and the Special Court.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="800" height="700" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The long road to peace, 1996–2002</text>
+<rect x="25.0" y="82.0" width="230.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="140.0" y="108.5" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Abidjan Accord</text>
+<text x="140.0" y="131.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">November 1996</text>
+<rect x="285.0" y="82.0" width="230.0" height="76.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="400.0" y="108.5" font-size="17" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">AFRC coup</text>
+<text x="400.0" y="131.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">25 May 1997</text>
+<rect x="545.0" y="82.0" width="230.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="660.0" y="108.5" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Conakry Peace Plan</text>
+<text x="660.0" y="131.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">October 1997</text>
+<rect x="545.0" y="212.0" width="230.0" height="76.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="660.0" y="238.5" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">ECOMOG restores Kabbah</text>
+<text x="660.0" y="261.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Feb–March 1998</text>
+<rect x="285.0" y="212.0" width="230.0" height="76.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="400.0" y="238.5" font-size="17" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Freetown invaded</text>
+<text x="400.0" y="261.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">6 January 1999</text>
+<rect x="25.0" y="212.0" width="230.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="140.0" y="238.5" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Lomé Agreement</text>
+<text x="140.0" y="261.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">7 July 1999</text>
+<rect x="25.0" y="342.0" width="230.0" height="76.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="140.0" y="368.5" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">UNAMSIL</text>
+<text x="140.0" y="391.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">from October 1999</text>
+<rect x="285.0" y="342.0" width="230.0" height="76.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="400.0" y="368.5" font-size="17" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Hostage crisis; UK troops</text>
+<text x="400.0" y="391.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">May 2000</text>
+<rect x="545.0" y="342.0" width="230.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="660.0" y="368.5" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Abuja ceasefires</text>
+<text x="660.0" y="391.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2000–2001; disarmament</text>
+<line x1="261.0" y1="120.0" x2="279.0" y2="120.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="521.0" y1="120.0" x2="539.0" y2="120.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="660.0" y1="164.0" x2="660.0" y2="206.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="539.0" y1="250.0" x2="521.0" y2="250.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="279.0" y1="250.0" x2="261.0" y2="250.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="140.0" y1="294.0" x2="140.0" y2="336.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="261.0" y1="380.0" x2="279.0" y2="380.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="521.0" y1="380.0" x2="539.0" y2="380.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="150.0" y="482.0" width="500.0" height="76.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="507.0" font-size="20" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">WAR DECLARED OVER</text>
+<text x="400.0" y="533.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">18 January 2002</text>
+<line x1="660.0" y1="424.0" x2="400.0" y2="476.0" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="30.0" y="601.0" width="740.0" height="70.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="400.0" y="624.5" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">After the war</text>
+<text x="400.0" y="647.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">May 2002 elections · Truth and Reconciliation Commission · Special Court</text>
+</svg>

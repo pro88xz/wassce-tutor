@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Sierra Leone in the international community</title>
+<desc id="d">Diagram of the international organisations Sierra Leone belongs to: the United Nations (joined 27 September 1961), the Commonwealth (1961), the Organisation of African Unity (founding member, 1963) and its successor the African Union (2002), the Mano River Union (founding member, 1973), the Economic Community of West African States (founding member, 1975), the Non-Aligned Movement, and the Organisation of Islamic Cooperation.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="600" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sierra Leone in the international community</text>
+<rect x="290.0" y="275.0" width="220.0" height="90.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="400.0" y="307.0" font-size="20" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">SIERRA LEONE</text>
+<text x="400.0" y="333.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">independent 1961</text>
+<rect x="25.0" y="92.0" width="230.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="140.0" y="118.5" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">United Nations</text>
+<text x="140.0" y="141.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">joined 27 Sept 1961</text>
+<line x1="400.0" y1="269.0" x2="140.0" y2="174.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="285.0" y="72.0" width="230.0" height="76.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="98.5" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Commonwealth</text>
+<text x="400.0" y="121.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">joined 1961</text>
+<line x1="400.0" y1="269.0" x2="400.0" y2="154.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="545.0" y="92.0" width="230.0" height="76.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="660.0" y="118.5" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">OAU → African Union</text>
+<text x="660.0" y="141.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">founder 1963; AU 2002</text>
+<line x1="400.0" y1="269.0" x2="660.0" y2="174.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="5.0" y="282.0" width="230.0" height="76.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="120.0" y="308.5" font-size="17" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Mano River Union</text>
+<text x="120.0" y="331.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">founder 1973</text>
+<line x1="284.0" y1="320.0" x2="241.0" y2="320.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="565.0" y="282.0" width="230.0" height="76.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="680.0" y="308.5" font-size="17" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">ECOWAS</text>
+<text x="680.0" y="331.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">founder 1975</text>
+<line x1="516.0" y1="320.0" x2="559.0" y2="320.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="105.0" y="462.0" width="230.0" height="76.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="220.0" y="488.5" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Non-Aligned Movement</text>
+<text x="220.0" y="511.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">no Cold War bloc</text>
+<line x1="400.0" y1="371.0" x2="220.0" y2="456.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="465.0" y="462.0" width="230.0" height="76.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="580.0" y="488.5" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Organisation of</text>
+<text x="580.0" y="511.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Islamic Cooperation</text>
+<line x1="400.0" y1="371.0" x2="580.0" y2="456.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+</svg>
