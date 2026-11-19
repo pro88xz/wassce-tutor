@@ -111,6 +111,21 @@ export type PublicPath = keyof typeof PUBLIC_PAGES
 // "chemistry for beginners" or "learn about literature". Keyed by path. Keep
 // each one true to what the page has; it replaces the template's text only.
 export const SEARCH_COPY: Partial<Record<string, { title: string; description: string }>> = {
+  // Nov 2026 content audit: the lesson's snippet opened "Lesson 1 gave you the basic
+  // transformation in outline. This lesson goes deeper..."; students search for
+  // "active to passive voice".
+  '/wassce/english-language/active-and-passive-voice/how-to-form-the-passive': {
+    title: 'How to Change Active to Passive Voice | WASSCE English',
+    description:
+      'Change active sentences to the passive in three steps: object to subject, be + past participle in the same tense, and the by-phrase. With WASSCE examples.',
+  },
+  // Nov 2026 content audit: the topic's description was "Solving equations of the first
+  // degree." Its lesson also teaches simultaneous equations, a common search.
+  '/wassce/mathematics/linear-equations': {
+    title: 'Linear and Simultaneous Equations | WASSCE Maths',
+    description:
+      'Solve linear equations for WASSCE Maths: the balance method, brackets, fractions, word problems, and simultaneous equations by elimination and substitution.',
+  },
   // Nov 2026: about 1,500 impressions at position 5 for "chemistry for beginners",
   // "chemistry explained", "learn about chemistry", "understanding chemistry".
   '/wassce/chemistry/introduction-to-chemistry': {
