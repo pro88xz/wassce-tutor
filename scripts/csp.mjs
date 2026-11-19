@@ -48,7 +48,7 @@ const serialise = (directives) =>
 export function headerPolicy() {
   return serialise({
     ...BASE,
-    'script-src': ["'self'", "'unsafe-inline'", GOOGLE, GA_SCRIPT],
+    'script-src': ["'self'", "'unsafe-inline'", GOOGLE, GA_SCRIPT, 'https://pagead2.googlesyndication.com'],
     // Header-only directives: a <meta> policy cannot carry these.
     'frame-ancestors': ["'none'"],
     'upgrade-insecure-requests': [],
@@ -68,7 +68,7 @@ export function pagePolicy(html) {
   for (const [, attrs, body] of html.matchAll(INLINE_SCRIPT)) {
     if (isExecutable(attrs) && body.length > 0) hashes.add(`'sha256-${crypto.createHash('sha256').update(body, 'utf8').digest('base64')}'`)
   }
-  return serialise({ ...BASE, 'script-src': ["'self'", ...hashes, GOOGLE, GA_SCRIPT] })
+  return serialise({ ...BASE, 'script-src': ["'self'", ...hashes, GOOGLE, GA_SCRIPT, 'https://pagead2.googlesyndication.com'] })
 }
 
 const META = /<meta http-equiv="Content-Security-Policy"[^>]*>/i
