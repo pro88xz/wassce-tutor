@@ -187,8 +187,8 @@ export const GUIDE_POSTS: BlogPost[] = [
       {
         heading: 'After you see your grades',
         paragraphs: [
-          'Count your credits first: grades A1 to C6. Most university programmes ask for a set number of credits, usually including English Language and often Mathematics, and many ask for specific subjects as well. Our guide to WASSCE credits explains how universities in Sierra Leone count them.',
-          'If the result on the screen does not match what you expected, or it shows as withheld, speak to your school (for school candidates) or a WAEC office. They are the only ones who can explain or correct a result.'
+          'Count your credits first: grades A1 to C6. Most university programmes ask for a set number of credits, usually including English Language and often Mathematics, and many ask for specific subjects as well. [Our guide to WASSCE credits](/blog/what-counts-as-a-wassce-credit-for-university-admission) explains how universities in Sierra Leone count them.',
+          'If the result on the screen does not match what you expected, or it shows as withheld, speak to your school (for school candidates) or a WAEC office. They are the only ones who can explain or correct a result. [Our guide to withheld results](/blog/wassce-result-withheld-2026-sierra-leone) explains what withheld means and what happens next.'
         ]
       }
     ],
@@ -197,7 +197,7 @@ export const GUIDE_POSTS: BlogPost[] = [
       { label: 'WAEC Sierra Leone result checker: frequently asked questions', url: 'https://www.waecsierra-leone.org/faq.aspx' },
       { label: 'WAEC Sierra Leone result checker: offices and outlets', url: 'https://www.waecsierra-leone.org/outlets.aspx' }
     ],
-    related: ['what-counts-as-a-wassce-credit-for-university-admission', 'sierra-leone-university-admission-requirements-2026-2027'],
+    related: ['2026-wassce-results-sierra-leone', 'wassce-result-withheld-2026-sierra-leone', 'what-counts-as-a-wassce-credit-for-university-admission', 'sierra-leone-university-admission-requirements-2026-2027'],
     action: { heading: 'Not the grade you wanted? Start on the topics that cost you marks.', label: 'Explore subjects', href: '/wassce/subjects' }
   },
   {
