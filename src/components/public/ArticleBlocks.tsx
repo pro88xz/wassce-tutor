@@ -92,6 +92,8 @@ function Figure({ figure }: { figure: EditorialFigure }) {
 }
 
 function DataTable({ table }: { table: EditorialTable }) {
+  // Columns of figures are right-aligned and kept on one line; columns of names wrap.
+  const numeric = table.columns.map((_, i) => i > 0 && table.rows.every((row) => /^[-–\d.,%*×\s]*$/.test(row[i] ?? '')))
   return (
     <figure className="mt-6">
       <div className="overflow-x-auto rounded-2xl border bg-card">
@@ -99,15 +101,15 @@ function DataTable({ table }: { table: EditorialTable }) {
           <caption className="border-b bg-slate-50 px-3 py-3 text-left text-sm font-semibold text-foreground sm:px-4">{table.caption}</caption>
           <thead>
             <tr className="border-b">
-              {table.columns.map((c, i) => <th key={c} scope="col" className={`px-3 py-2.5 text-xs font-bold uppercase tracking-wide text-muted-foreground sm:px-4 ${i > 0 ? 'whitespace-nowrap text-right' : ''}`}>{c}</th>)}
+              {table.columns.map((c, i) => <th key={c} scope="col" className={`px-3 py-2.5 text-xs font-bold uppercase tracking-wide text-muted-foreground sm:px-4 ${numeric[i] ? 'whitespace-nowrap text-right' : ''}`}>{c}</th>)}
             </tr>
           </thead>
           <tbody>
             {table.rows.map((row) => (
-              <tr key={row[0]} className="border-b last:border-b-0">
+              <tr key={row[0]} className="border-b align-top last:border-b-0">
                 {row.map((cell, i) => i === 0
                   ? <th key={i} scope="row" className="px-3 py-2.5 font-medium text-foreground sm:px-4">{cell}</th>
-                  : <td key={i} className="whitespace-nowrap px-3 py-2.5 text-right tabular-nums text-foreground sm:px-4">{cell}</td>)}
+                  : <td key={i} className={`px-3 py-2.5 text-foreground sm:px-4 ${numeric[i] ? 'whitespace-nowrap text-right tabular-nums' : ''}`}>{cell}</td>)}
               </tr>
             ))}
           </tbody>

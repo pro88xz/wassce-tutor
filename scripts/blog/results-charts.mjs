@@ -291,7 +291,49 @@ function coverWithheld() {
   }
 }
 
-const CHARTS = [coverEntries(), coverWithheld(), entriesChart(), englishMathsChart(), withheldChart()]
+// The best-schools article's cover: each year's best school as named by the
+// Ministry, with how many candidates it entered. Same 16:8 safe area.
+function coverBestSchools() {
+  const rows = [
+    ['2026', 'Awada Senior Secondary School', 'Bo', '30 candidates'],
+    ['2025', 'Kamboi Senior Secondary School', 'Kenema', '10 candidates'],
+    ['2024', 'Dele-Peddle International School', 'Allen Town', '17 candidates'],
+    ['2023', 'Providence International Senior High', 'Freetown', '185 candidates'],
+    ['2022', 'Kamboi (Lebanese) Senior Secondary', 'Kenema', 'top by average grade'],
+    ['2021', 'Kamboi (Lebanese) Senior Secondary', 'Kenema', '6 candidates'],
+  ]
+  return {
+    name: '../best-wassce-schools-sierra-leone',
+    cover: true,
+    width: W,
+    height: H,
+    css: `
+      body{background:#130d2b;color:#fff}
+      .cover{width:${W}px;height:${H}px;padding:44px 34px 42px;display:flex;flex-direction:column}
+      .kicker{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#c4b5fd}
+      h1{margin-top:8px;font-size:27px;line-height:1.08;font-weight:800;letter-spacing:-.03em}
+      .rows{margin-top:14px;margin-bottom:12px;display:grid;gap:5px}
+      .r{display:grid;grid-template-columns:44px 1fr auto;align-items:baseline;gap:12px;padding:6px 12px;border-radius:9px;background:rgb(255 255 255 / 6%)}
+      .r:first-child{background:#6438d8}
+      .y{font-size:13px;font-weight:800;font-variant-numeric:tabular-nums;color:#c4b5fd}
+      .r:first-child .y{color:#fff}
+      .s{font-size:13.5px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+      .s span{font-weight:400;color:rgb(255 255 255 / 70%)}
+      .r:first-child .s span{color:rgb(255 255 255 / 85%)}
+      .n{font-size:11.5px;color:rgb(255 255 255 / 70%);white-space:nowrap}
+      .r:first-child .n{color:rgb(255 255 255 / 90%)}
+      .note{margin-top:auto;font-size:11px;color:rgb(255 255 255 / 58%);display:flex;justify-content:space-between;gap:12px}`,
+    html: `
+      <div class="cover">
+        <p class="kicker">Sierra Leone · WASSCE · 2021 to 2026</p>
+        <h1>The best WASSCE school, year by year</h1>
+        <div class="rows">${rows.map(([y, s, t, n]) => `<div class="r"><span class="y">${y}</span><span class="s">${s} <span>· ${t}</span></span><span class="n">${n}</span></div>`).join('')}</div>
+        <p class="note"><span>As announced each year. Sources in the article.</span><span>wasscetutor.com</span></p>
+      </div>`,
+  }
+}
+
+const CHARTS = [coverEntries(), coverWithheld(), coverBestSchools(), entriesChart(), englishMathsChart(), withheldChart()]
 
 await mkdir(OUT, { recursive: true })
 const font = await fontCss()
