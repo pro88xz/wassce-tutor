@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Indirect rule in Nigeria: why results differed</title>
+<desc id="d">Three columns. Northern Nigeria: emirs already had courts, taxes and officials, so indirect rule worked well and the emirs ran Native Authorities. Western Nigeria: obas were checked by councils of chiefs, so indirect rule partly worked but made obas too powerful and caused protests. Eastern Nigeria: most communities had no kings and were governed by elders and village councils, so the British appointed warrant chiefs; indirect rule failed and led to the Aba Women&#x27;s War of 1929.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="560" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Indirect rule in Nigeria: why results differed</text>
+<rect x="22.0" y="79.0" width="236.0" height="66.0" rx="12" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="140.0" y="100.0" font-size="18" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">NORTH</text>
+<text x="140.0" y="124.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Hausa-Fulani emirates</text>
+<rect x="22.0" y="202.0" width="236.0" height="104.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="140.0" y="232.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Existing system</text>
+<text x="140.0" y="254.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">emirs with courts,</text>
+<text x="140.0" y="276.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">taxes and officials</text>
+<rect x="22.0" y="358.0" width="236.0" height="104.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="140.0" y="388.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">WORKED WELL</text>
+<text x="140.0" y="410.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">emirs ran the</text>
+<text x="140.0" y="432.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Native Authorities</text>
+<line x1="140.0" y1="151.0" x2="140.0" y2="196.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="140.0" y1="312.0" x2="140.0" y2="352.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="282.0" y="79.0" width="236.0" height="66.0" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="400.0" y="100.0" font-size="18" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">WEST</text>
+<text x="400.0" y="124.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Yoruba kingdoms</text>
+<rect x="282.0" y="202.0" width="236.0" height="104.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="400.0" y="232.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Existing system</text>
+<text x="400.0" y="254.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">obas checked by</text>
+<text x="400.0" y="276.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">councils of chiefs</text>
+<rect x="282.0" y="358.0" width="236.0" height="104.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="400.0" y="388.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">PARTLY WORKED</text>
+<text x="400.0" y="410.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">obas made too</text>
+<text x="400.0" y="432.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">powerful; protests</text>
+<line x1="400.0" y1="151.0" x2="400.0" y2="196.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="400.0" y1="312.0" x2="400.0" y2="352.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="542.0" y="79.0" width="236.0" height="66.0" rx="12" fill="#ffffff" stroke="#dc2626" stroke-width="2.5"/>
+<text x="660.0" y="100.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">EAST</text>
+<text x="660.0" y="124.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Igbo, Ibibio and others</text>
+<rect x="542.0" y="202.0" width="236.0" height="104.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="660.0" y="232.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Existing system</text>
+<text x="660.0" y="254.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">no kings: elders and</text>
+<text x="660.0" y="276.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">village assemblies</text>
+<rect x="542.0" y="358.0" width="236.0" height="104.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="660.0" y="388.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">FAILED</text>
+<text x="660.0" y="410.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">warrant chiefs; Aba</text>
+<text x="660.0" y="432.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Women&#x27;s War, 1929</text>
+<line x1="660.0" y1="151.0" x2="660.0" y2="196.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="660.0" y1="312.0" x2="660.0" y2="352.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="400.0" y="512.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Indirect rule worked best where strong, centralised rulers already existed.</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Causes of the Scramble for Africa</title>
+<desc id="d">Diagram of the causes of the Scramble for Africa, 1880 to 1914. Economic: raw materials such as palm oil, rubber, cotton and minerals, new markets and places to invest. Political: national pride and prestige, rivalry after 1870 and the balance of power. Strategic: the Suez Canal of 1869, the route to India and the British occupation of Egypt in 1882. Humanitarian and religious: missionaries, ending the slave trade and the so-called civilising mission. Enabling factors: quinine against malaria, steamships and railways, the Maxim gun and the work of explorers.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="600" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Why Europe scrambled for Africa, 1880–1914</text>
+<rect x="275.0" y="280.0" width="250.0" height="76.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="400.0" y="305.0" font-size="20" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">THE SCRAMBLE</text>
+<text x="400.0" y="331.0" font-size="18" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">for Africa</text>
+<rect x="15.0" y="89.0" width="250.0" height="122.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="140.0" y="117.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Economic</text>
+<text x="140.0" y="139.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">raw materials: palm oil,</text>
+<text x="140.0" y="161.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rubber, cotton, minerals</text>
+<text x="140.0" y="183.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">markets and investment</text>
+<line x1="140.0" y1="217.0" x2="400.0" y2="274.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="275.0" y="89.0" width="250.0" height="122.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="117.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Political</text>
+<text x="400.0" y="139.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">national pride, prestige</text>
+<text x="400.0" y="161.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">rivalry after 1870</text>
+<text x="400.0" y="183.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">balance of power</text>
+<line x1="400.0" y1="217.0" x2="400.0" y2="274.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="535.0" y="89.0" width="250.0" height="122.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="660.0" y="117.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Strategic</text>
+<text x="660.0" y="139.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Suez Canal (1869)</text>
+<text x="660.0" y="161.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">route to India</text>
+<text x="660.0" y="183.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Egypt occupied (1882)</text>
+<line x1="660.0" y1="217.0" x2="400.0" y2="274.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="65.0" y="431.0" width="320.0" height="122.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="225.0" y="459.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Humanitarian and religious</text>
+<text x="225.0" y="481.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">missionaries; ending the</text>
+<text x="225.0" y="503.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">slave trade; the so-called</text>
+<text x="225.0" y="525.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">&#x27;civilising mission&#x27;</text>
+<line x1="225.0" y1="425.0" x2="400.0" y2="362.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="415.0" y="431.0" width="320.0" height="122.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="575.0" y="459.0" font-size="16" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">What made it possible</text>
+<text x="575.0" y="481.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">quinine against malaria</text>
+<text x="575.0" y="503.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">steamships and railways</text>
+<text x="575.0" y="525.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the Maxim gun; explorers</text>
+<line x1="575.0" y1="425.0" x2="400.0" y2="362.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+</svg>

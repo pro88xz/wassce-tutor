@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">British indirect rule and French direct rule compared</title>
+<desc id="d">Two chains of authority. British indirect rule: the Governor, then Residents or District Commissioners, then the Native Authority of traditional chiefs, then district and village heads, then the people; chiefs kept their positions and ruled through local custom under British supervision. French direct rule: the Governor-General of French West Africa at Dakar, then Lieutenant-Governors of each colony, then commandants of districts (cercles), then appointed canton and village chiefs, then the people; chiefs became agents of the French administration.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="800" height="520" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Who ruled whom? British and French systems</text>
+<text x="205.0" y="70.0" font-size="17" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">BRITISH: indirect rule</text>
+<text x="595.0" y="70.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">FRENCH: direct rule</text>
+<rect x="40.0" y="93.0" width="330.0" height="54.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="205.0" y="120.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Governor</text>
+<rect x="40.0" y="173.0" width="330.0" height="54.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="205.0" y="200.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Resident / District Commissioner</text>
+<rect x="40.0" y="253.0" width="330.0" height="54.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="205.0" y="269.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Native Authority</text>
+<text x="205.0" y="291.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(traditional chiefs)</text>
+<rect x="40.0" y="333.0" width="330.0" height="54.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="205.0" y="360.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">District and village heads</text>
+<rect x="40.0" y="413.0" width="330.0" height="54.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="205.0" y="440.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The people</text>
+<rect x="430.0" y="93.0" width="330.0" height="54.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="595.0" y="120.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Governor-General (Dakar)</text>
+<rect x="430.0" y="173.0" width="330.0" height="54.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="595.0" y="200.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Lieutenant-Governor</text>
+<rect x="430.0" y="253.0" width="330.0" height="54.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="595.0" y="280.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Commandant de cercle</text>
+<rect x="430.0" y="333.0" width="330.0" height="54.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="595.0" y="360.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Canton and village chiefs</text>
+<rect x="430.0" y="413.0" width="330.0" height="54.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="595.0" y="440.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The people</text>
+<line x1="205.0" y1="153.0" x2="205.0" y2="167.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="205.0" y1="233.0" x2="205.0" y2="247.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="205.0" y1="313.0" x2="205.0" y2="327.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="205.0" y1="393.0" x2="205.0" y2="407.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="595.0" y1="153.0" x2="595.0" y2="167.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="595.0" y1="233.0" x2="595.0" y2="247.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="595.0" y1="313.0" x2="595.0" y2="327.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="595.0" y1="393.0" x2="595.0" y2="407.0" stroke="#475569" stroke-width="2" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="400.0" y="508.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">British: chiefs kept power under supervision.   French: chiefs became appointed agents.</text>
+</svg>

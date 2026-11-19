@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Milestones of Pan-Africanism</title>
+<desc id="d">Timeline: the first Pan-African Conference in London in 1900, organised by Henry Sylvester Williams; the Pan-African Congress in Paris in 1919 led by W. E. B. Du Bois; the National Congress of British West Africa in 1920; the Fifth Pan-African Congress in Manchester in 1945; the All-African Peoples&#x27; Conference in Accra in 1958; the founding of the Organisation of African Unity in Addis Ababa in 1963; and the African Union in 2002.</desc>
+<defs></defs>
+<rect width="800" height="600" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Pan-Africanism: from conferences to the African Union</text>
+<line x1="140.0" y1="78.0" x2="140.0" y2="538.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="140.0" cy="92.0" r="9.0" fill="#7c3aed" stroke="#ffffff" stroke-width="2.5"/>
+<text x="118.0" y="92.0" font-size="19" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">1900</text>
+<text x="164.0" y="80.5" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">First Pan-African Conference, London</text>
+<text x="164.0" y="103.5" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">organised by Henry Sylvester Williams</text>
+<circle cx="140.0" cy="164.0" r="9.0" fill="#7c3aed" stroke="#ffffff" stroke-width="2.5"/>
+<text x="118.0" y="164.0" font-size="19" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">1919</text>
+<text x="164.0" y="152.5" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Pan-African Congress, Paris</text>
+<text x="164.0" y="175.5" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">led by W. E. B. Du Bois</text>
+<circle cx="140.0" cy="236.0" r="9.0" fill="#15803d" stroke="#ffffff" stroke-width="2.5"/>
+<text x="118.0" y="236.0" font-size="19" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">1920</text>
+<text x="164.0" y="224.5" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">National Congress of British West Africa</text>
+<text x="164.0" y="247.5" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">J. E. Casely Hayford; delegates from Sierra Leone</text>
+<circle cx="140.0" cy="308.0" r="9.0" fill="#dc2626" stroke="#ffffff" stroke-width="2.5"/>
+<text x="118.0" y="308.0" font-size="19" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">1945</text>
+<text x="164.0" y="296.5" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Fifth Pan-African Congress, Manchester</text>
+<text x="164.0" y="319.5" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Nkrumah, Kenyatta, Padmore, Du Bois</text>
+<circle cx="140.0" cy="380.0" r="9.0" fill="#ea580c" stroke="#ffffff" stroke-width="2.5"/>
+<text x="118.0" y="380.0" font-size="19" fill="#ea580c" text-anchor="end" dominant-baseline="middle" font-weight="bold">1958</text>
+<text x="164.0" y="368.5" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">All-African Peoples&#x27; Conference, Accra</text>
+<text x="164.0" y="391.5" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">hosted by Nkrumah after Ghana&#x27;s independence</text>
+<circle cx="140.0" cy="452.0" r="9.0" fill="#2563eb" stroke="#ffffff" stroke-width="2.5"/>
+<text x="118.0" y="452.0" font-size="19" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">1963</text>
+<text x="164.0" y="440.5" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Organisation of African Unity founded</text>
+<text x="164.0" y="463.5" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Addis Ababa, 25 May; 32 founding states</text>
+<circle cx="140.0" cy="524.0" r="9.0" fill="#2563eb" stroke="#ffffff" stroke-width="2.5"/>
+<text x="118.0" y="524.0" font-size="19" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">2002</text>
+<text x="164.0" y="512.5" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">African Union launched</text>
+<text x="164.0" y="535.5" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">replaces the OAU</text>
+</svg>

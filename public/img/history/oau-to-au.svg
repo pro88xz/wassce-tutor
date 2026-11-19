@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">From the OAU to the African Union</title>
+<desc id="d">Two columns comparing the Organisation of African Unity and the African Union. The OAU was founded in Addis Ababa on 25 May 1963 and its main organs were the Assembly of Heads of State and Government, the Council of Ministers, the General Secretariat, the Commission of Mediation, Conciliation and Arbitration, and the Liberation Committee. The African Union was launched in Durban on 9 July 2002 and its organs include the Assembly, the Executive Council, the AU Commission in Addis Ababa, the Peace and Security Council and the Pan-African Parliament. The key change was from strict non-interference to the right to intervene in grave circumstances such as genocide and war crimes.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="800" height="600" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">From the OAU (1963) to the African Union (2002)</text>
+<rect x="30.0" y="75.0" width="350.0" height="66.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="205.0" y="96.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">OAU, 1963–2002</text>
+<text x="205.0" y="120.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">founded at Addis Ababa, 25 May 1963</text>
+<rect x="420.0" y="75.0" width="350.0" height="66.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="595.0" y="96.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">AFRICAN UNION, 2002–</text>
+<text x="595.0" y="120.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">launched at Durban, 9 July 2002</text>
+<line x1="386.0" y1="108.0" x2="414.0" y2="108.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="30.0" y="158.0" width="350.0" height="56.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="205.0" y="186.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Assembly of Heads of State</text>
+<rect x="420.0" y="158.0" width="350.0" height="56.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="595.0" y="186.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Assembly of the Union</text>
+<rect x="30.0" y="224.0" width="350.0" height="56.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="205.0" y="252.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Council of Ministers</text>
+<rect x="420.0" y="224.0" width="350.0" height="56.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="595.0" y="252.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Executive Council</text>
+<rect x="30.0" y="290.0" width="350.0" height="56.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="205.0" y="318.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">General Secretariat</text>
+<rect x="420.0" y="290.0" width="350.0" height="56.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="595.0" y="318.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">AU Commission (Addis Ababa)</text>
+<rect x="30.0" y="356.0" width="350.0" height="56.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="205.0" y="373.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Commission of Mediation,</text>
+<text x="205.0" y="394.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Conciliation and Arbitration</text>
+<rect x="420.0" y="356.0" width="350.0" height="56.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="595.0" y="384.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Peace and Security Council</text>
+<rect x="30.0" y="422.0" width="350.0" height="56.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="205.0" y="439.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Liberation Committee</text>
+<text x="205.0" y="460.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(Dar es Salaam)</text>
+<rect x="420.0" y="422.0" width="350.0" height="56.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="595.0" y="439.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Pan-African Parliament</text>
+<text x="595.0" y="460.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(Midrand, South Africa)</text>
+<rect x="30.0" y="518.0" width="740.0" height="60.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="400.0" y="537.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Key change</text>
+<text x="400.0" y="559.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">OAU: strict non-interference.  AU: may intervene in genocide and war crimes.</text>
+</svg>
