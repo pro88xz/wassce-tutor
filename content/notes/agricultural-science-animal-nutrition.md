@@ -69,8 +69,10 @@ The Pearson square finds the proportions of **two** feeds needed to reach a targ
 
 **Pasture** is land covered with grasses and legumes grazed by animals.
 
+:::callout{type=definition}
 - **Natural pasture**: whatever grows naturally; often low in quality.
 - **Improved (sown) pasture**: planted grasses such as **guinea grass** (*Panicum maximum*), **elephant grass** (*Pennisetum purpureum*) and *Brachiaria*, mixed with **legumes** such as *Stylosanthes*, *Centrosema* and *Pueraria*, which add protein and fix nitrogen.
+:::
 
 ### Grazing systems
 

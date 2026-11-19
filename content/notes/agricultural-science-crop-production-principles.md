@@ -43,11 +43,13 @@ Crops can also be grouped by **life span**: **annuals** complete their life in o
 
 ## Methods of planting
 
+:::callout{type=definition}
 - **Broadcasting**: scattering seeds evenly by hand over the land (rice in some uplands, pasture grasses). Quick, but uneven spacing and weeding is harder.
 - **Drilling**: sowing seeds in a continuous line in furrows (rice, millet).
 - **Dibbling**: making holes with a stick or dibber and placing seeds in each (maize, groundnut, cowpea).
 - **Transplanting**: raising seedlings in a nursery and moving them to the field (swamp rice, tomato, pepper, cabbage, cocoa, oil palm).
 - **Planting vegetative parts**: cuttings (cassava, sweet potato), suckers (plantain), setts (yam, sugarcane).
+:::
 
 ## Spacing and plant population
 

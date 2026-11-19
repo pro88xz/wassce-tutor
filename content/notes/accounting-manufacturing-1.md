@@ -40,8 +40,10 @@ Direct costs and factory overheads go to the **manufacturing account**; office, 
 
 **Work in progress (WIP)** is goods that are **partly finished** at the end of the period, such as chairs that have been cut and joined but not yet polished. At the year end:
 
+:::callout{type=definition}
 - **opening WIP** is **added** (its cost was incurred last year but it is finished this year);
 - **closing WIP** is **deducted** (part of this year's cost belongs to goods not yet finished).
+:::
 
 ## Apportioning shared expenses
 

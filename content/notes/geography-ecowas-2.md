@@ -1,4 +1,8 @@
-**Regional cooperation** is when neighbouring countries work together to achieve goals they could not reach as easily alone, such as larger markets, shared infrastructure, management of shared rivers, and peace. Besides ECOWAS, West Africa's main regional organisations are the **Mano River Union (MRU)**, founded in **1973** by **Sierra Leone and Liberia** and later joined by **Guinea** and **Côte d'Ivoire**; the **West African Economic and Monetary Union (WAEMU/UEMOA)**; and river-basin bodies such as the **Senegal River Basin Development Organisation (OMVS)**, the **Niger Basin Authority** and the **Lake Chad Basin Commission**. This lesson describes these organisations and the benefits and problems of regional cooperation.
+:::callout{type=definition}
+**Regional cooperation** is when neighbouring countries work together to achieve goals they could not reach as easily alone, such as larger markets, shared infrastructure, management of shared rivers, and peace.
+:::
+
+Besides ECOWAS, West Africa's main regional organisations are the **Mano River Union (MRU)**, founded in **1973** by **Sierra Leone and Liberia** and later joined by **Guinea** and **Côte d'Ivoire**; the **West African Economic and Monetary Union (WAEMU/UEMOA)**; and river-basin bodies such as the **Senegal River Basin Development Organisation (OMVS)**, the **Niger Basin Authority** and the **Lake Chad Basin Commission**. This lesson describes these organisations and the benefits and problems of regional cooperation.
 
 ## Learning objectives
 

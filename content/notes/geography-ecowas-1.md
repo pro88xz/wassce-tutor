@@ -1,4 +1,8 @@
-The **Economic Community of West African States (ECOWAS)** is a regional organisation founded on **28 May 1975** by the **Treaty of Lagos** to promote **economic integration**, **free movement** of people and goods, and **peace and security** in West Africa. Its headquarters, the **ECOWAS Commission**, is in **Abuja**, Nigeria. It now has **twelve members**: Benin, Cabo Verde, Côte d'Ivoire, The Gambia, Ghana, Guinea, Guinea-Bissau, Liberia, Nigeria, Senegal, **Sierra Leone** and Togo, after **Mali, Burkina Faso and Niger** left in **January 2025**. This lesson covers the members, aims, institutions, achievements and problems of ECOWAS.
+:::callout{type=definition}
+The **Economic Community of West African States (ECOWAS)** is a regional organisation founded on **28 May 1975** by the **Treaty of Lagos** to promote **economic integration**, **free movement** of people and goods, and **peace and security** in West Africa.
+:::
+
+Its headquarters, the **ECOWAS Commission**, is in **Abuja**, Nigeria. It now has **twelve members**: Benin, Cabo Verde, Côte d'Ivoire, The Gambia, Ghana, Guinea, Guinea-Bissau, Liberia, Nigeria, Senegal, **Sierra Leone** and Togo, after **Mali, Burkina Faso and Niger** left in **January 2025**. This lesson covers the members, aims, institutions, achievements and problems of ECOWAS.
 
 ## Learning objectives
 

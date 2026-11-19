@@ -17,8 +17,10 @@ Gregor Mendel (1822–1884) was a monk who bred **garden peas**. Peas were a goo
 
 He crossed pure-breeding **tall** plants with pure-breeding **dwarf** plants:
 
+:::callout{type=definition}
 - **F₁** (first generation): **all tall**. The dwarf character seemed to disappear.
 - **F₂** (F₁ self-pollinated): about **3 tall : 1 dwarf**. The dwarf character came back.
+:::
 
 Mendel concluded that each character is controlled by a pair of "factors" (we now call them **alleles**), one from each parent, and that one can mask the other.
 

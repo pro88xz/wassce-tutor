@@ -27,8 +27,10 @@ Always say **which particle** you mean: one mole of oxygen **atoms** (O) is not 
 
 ## Relative molecular mass and formula mass
 
+:::callout{type=definition}
 - **Relative molecular mass (Mᵣ)**: the sum of the relative atomic masses of all the atoms in a **molecule**.
 - **Relative formula mass**: the same idea for **ionic** compounds, which have no molecules.
+:::
 
 :::callout{type=worked-example}
 **Using H = 1, C = 12, O = 16, Na = 23, S = 32, Ca = 40, Cu = 64:**

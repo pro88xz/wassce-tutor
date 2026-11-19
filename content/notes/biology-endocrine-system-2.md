@@ -77,9 +77,17 @@ The liver can also make new glucose from non-carbohydrate substances through **g
 
 ## Negative feedback and homeostasis
 
-**Homeostasis** is the maintenance of a relatively stable internal environment within limits that allow cells to function properly. It does not mean that every condition remains perfectly constant. Body temperature, blood glucose and water balance fluctuate around regulated levels.
+:::callout{type=definition}
+**Homeostasis** is the maintenance of a relatively stable internal environment within limits that allow cells to function properly.
+:::
 
-**Negative feedback** is a control mechanism in which a change away from a regulated level triggers responses that oppose the original change. It helps prevent internal conditions from moving too far from their normal range.
+It does not mean that every condition remains perfectly constant. Body temperature, blood glucose and water balance fluctuate around regulated levels.
+
+:::callout{type=definition}
+**Negative feedback** is a control mechanism in which a change away from a regulated level triggers responses that oppose the original change.
+:::
+
+It helps prevent internal conditions from moving too far from their normal range.
 
 Blood glucose regulation is an example:
 
@@ -127,7 +135,11 @@ These hormones interact with hormones from the pituitary gland. Reproductive con
 
 ## Diabetes mellitus and diabetes insipidus
 
-**Diabetes mellitus** is a disorder in which blood glucose remains abnormally high because insulin is absent, insufficient or not working effectively. In type 1 diabetes, the pancreatic beta cells are destroyed by an autoimmune process, so little or no insulin is produced. In type 2 diabetes, body tissues become resistant to insulin and insulin production may also become inadequate.
+:::callout{type=definition}
+**Diabetes mellitus** is a disorder in which blood glucose remains abnormally high because insulin is absent, insufficient or not working effectively.
+:::
+
+In type 1 diabetes, the pancreatic beta cells are destroyed by an autoimmune process, so little or no insulin is produced. In type 2 diabetes, body tissues become resistant to insulin and insulin production may also become inadequate.
 
 Possible signs include frequent urination, excessive thirst, tiredness and unexplained weight loss. Long-term poorly controlled diabetes can damage blood vessels, nerves, kidneys and eyes. Diagnosis and treatment require qualified healthcare professionals.
 

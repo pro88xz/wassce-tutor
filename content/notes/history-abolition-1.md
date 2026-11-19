@@ -1,4 +1,8 @@
-The **abolition of the slave trade** was the movement, mainly in **Britain**, Europe and the Americas, that ended the legal Atlantic slave trade in the early nineteenth century, beginning with the **British Act of 1807**. It was driven by **humanitarian and religious** campaigners such as **Granville Sharp, Thomas Clarkson, William Wilberforce** and the African writer **Olaudah Equiano**, by changing **economic** interests during the **Industrial Revolution**, and by **political** ideas of liberty and the **Haitian Revolution**. Britain then used its navy, based in **Freetown**, to enforce abolition. This lesson explains the reasons for abolition and how it was carried out.
+:::callout{type=definition}
+The **abolition of the slave trade** was the movement, mainly in **Britain**, Europe and the Americas, that ended the legal Atlantic slave trade in the early nineteenth century, beginning with the **British Act of 1807**.
+:::
+
+It was driven by **humanitarian and religious** campaigners such as **Granville Sharp, Thomas Clarkson, William Wilberforce** and the African writer **Olaudah Equiano**, by changing **economic** interests during the **Industrial Revolution**, and by **political** ideas of liberty and the **Haitian Revolution**. Britain then used its navy, based in **Freetown**, to enforce abolition. This lesson explains the reasons for abolition and how it was carried out.
 
 ## Learning objectives
 

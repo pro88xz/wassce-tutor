@@ -178,8 +178,10 @@ $E$ = {Senegal, Seychelles, Sierra Leone, Somalia, South Africa, South Sudan, Su
 
 ## Set equality vs equivalence
 
+:::callout{type=definition}
 - **Equal sets** ($A = B$): have exactly the same elements.
 - **Equivalent sets** ($A \sim B$): have the same number of elements (same cardinality), but the elements may differ.
+:::
 
 Examples:
 - $\{1, 2, 3\} = \{3, 1, 2\}$ — equal.

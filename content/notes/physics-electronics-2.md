@@ -11,7 +11,11 @@ By the end of this lesson you should be able to:
 
 ## The transistor
 
-A **bipolar transistor** is a sandwich of three layers of semiconductor: **n-p-n** or **p-n-p**. Its three terminals are the **emitter (E)**, **base (B)** and **collector (C)**. The base is very thin and lightly doped.
+:::callout{type=definition}
+A **bipolar transistor** is a sandwich of three layers of semiconductor: **n-p-n** or **p-n-p**.
+:::
+
+Its three terminals are the **emitter (E)**, **base (B)** and **collector (C)**. The base is very thin and lightly doped.
 
 **Action (n-p-n):**
 

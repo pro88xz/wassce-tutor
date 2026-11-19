@@ -47,7 +47,11 @@ Most of Africa is a vast **plateau** of very old rocks.
 
 ### The Great Rift Valley
 
-The **East African Rift Valley** is a long trough formed where the crust has been **pulled apart** and blocks have sunk between parallel faults. It runs from the **Red Sea** through **Ethiopia** and **Kenya** to **Mozambique**, with a western branch through Uganda, DR Congo and Tanzania. It contains deep lakes such as **Tanganyika** and **Malawi**, volcanoes and steep escarpments. **Lake Assal** in Djibouti, about **155 m below sea level**, is the lowest point in Africa.
+:::callout{type=definition}
+The **East African Rift Valley** is a long trough formed where the crust has been **pulled apart** and blocks have sunk between parallel faults.
+:::
+
+It runs from the **Red Sea** through **Ethiopia** and **Kenya** to **Mozambique**, with a western branch through Uganda, DR Congo and Tanzania. It contains deep lakes such as **Tanganyika** and **Malawi**, volcanoes and steep escarpments. **Lake Assal** in Djibouti, about **155 m below sea level**, is the lowest point in Africa.
 
 ## Drainage
 

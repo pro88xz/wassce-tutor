@@ -31,7 +31,11 @@ The two gametes have complementary roles. Sperm delivers a paternal haploid nucl
 
 ## Fertilisation: internal and external
 
-**Fertilisation** is the fusion of the nuclei of male and female gametes. It forms a diploid zygote.
+:::callout{type=definition}
+**Fertilisation** is the fusion of the nuclei of male and female gametes.
+:::
+
+It forms a diploid zygote.
 
 ### External fertilisation
 

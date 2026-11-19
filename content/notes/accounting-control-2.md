@@ -1,4 +1,8 @@
-**Reconciling a control account with the ledger** means finding out why the control account balance and the **total of the individual balances** in the ledger disagree, and correcting both until they agree. Some errors affect **only the control account** (such as a day book total cast wrongly), some affect **only the list of ledger balances** (such as one customer's account posted wrongly), and some affect **both**. This lesson shows how to sort the errors, correct each side, and record **set-offs (contra entries)** between the sales and purchases ledgers.
+:::callout{type=definition}
+**Reconciling a control account with the ledger** means finding out why the control account balance and the **total of the individual balances** in the ledger disagree, and correcting both until they agree.
+:::
+
+Some errors affect **only the control account** (such as a day book total cast wrongly), some affect **only the list of ledger balances** (such as one customer's account posted wrongly), and some affect **both**. This lesson shows how to sort the errors, correct each side, and record **set-offs (contra entries)** between the sales and purchases ledgers.
 
 ## Learning objectives
 

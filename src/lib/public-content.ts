@@ -294,13 +294,22 @@ function plainText(markdown: string): string {
  * line that opens the learning objectives are not: as a search snippet they
  * read as "Learning objectives By the end of this lesson, you should be able to:".
  */
+// A list item needs a space after its marker ("- ", "* "): a paragraph that opens
+// with **bold** ("**Depreciation** is ...") is prose, and often the lesson's best line.
 const isProse = (block: string) =>
-  !/^(#|[-*+>|]|\d+[.)]\s|:::|!\[|\$\$)/.test(block) && !/^by the end of this (lesson|topic)/i.test(block)
+  !/^(#|[-*+]\s|>|\||\d+[.)]\s|:::|!\[|\$\$)/.test(block) && !/^by the end of this (lesson|topic)/i.test(block)
 
 /** Meta description for a lesson: its opening prose, without headings or the objectives list. */
 export function lessonSummary(markdown: string, max = 155): string {
+  const md = markdown.replace(/\r\n?/g, '\n')
+  // A lesson that opens with a definition box ("The **ledger** is the main book of account..."):
+  // that definition is the best first line for a search snippet, so it is kept.
+  const lead = /^\s*:::callout\{type=definition[^}]*\}[ \t]*\n([\s\S]*?)\n:::[ \t]*(?:\n|$)/.exec(md)
   // Outside directives (:::callout ... :::), blocks of prose in order, until there is enough text.
-  const blocks = markdown.replace(/\r\n?/g, '\n').replace(/^:::[^\n]*\n[\s\S]*?^:::\s*$/gm, '').split(/\n\s*\n/)
+  const blocks = [
+    ...(lead ? [lead[1]] : []),
+    ...(lead ? md.slice(lead[0].length) : md).replace(/^:::[^\n]*\n[\s\S]*?^:::\s*$/gm, '').split(/\n\s*\n/),
+  ]
   let prose = ''
   for (const block of blocks.map((b) => b.trim()).filter(isProse)) {
     prose += ` ${plainText(block)}`

@@ -1,4 +1,8 @@
-A **suspense account** is a **temporary account** opened to hold the **difference** when the trial balance totals do not agree, so that the trial balance can be made to balance and the final accounts prepared while the errors are being found. When the errors are discovered, each is corrected through the journal, with one side of the correction going to the suspense account, until the **suspense account is closed** with a nil balance. Only errors that **affect the agreement of the trial balance** pass through the suspense account. This lesson explains when and how a suspense account is opened and which errors it holds.
+:::callout{type=definition}
+A **suspense account** is a **temporary account** opened to hold the **difference** when the trial balance totals do not agree, so that the trial balance can be made to balance and the final accounts prepared while the errors are being found.
+:::
+
+When the errors are discovered, each is corrected through the journal, with one side of the correction going to the suspense account, until the **suspense account is closed** with a nil balance. Only errors that **affect the agreement of the trial balance** pass through the suspense account. This lesson explains when and how a suspense account is opened and which errors it holds.
 
 ## Learning objectives
 

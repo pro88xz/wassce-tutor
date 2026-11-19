@@ -1,4 +1,8 @@
-The **Krio** are the people of Sierra Leone descended from the four groups who settled in Freetown between **1787 and the 1860s**: the **Black Poor**, the **Nova Scotians**, the **Jamaican Maroons**, and, above all, the **Liberated Africans (recaptives)**. They developed a distinct culture with the **Krio language**, Christian and Muslim faith, and a strong love of **Western education**. Through **Fourah Bay College (1827)** and mission schools, Freetown became the "**Athens of West Africa**", and Krio teachers, clergy, doctors, lawyers and traders worked all along the West African coast. Leading Krio included **Bishop Samuel Ajayi Crowther**, **Dr James Africanus Horton** and **Sir Samuel Lewis**. This lesson explains **the origin of the Krio people, their culture and their contribution to Sierra Leone and West Africa**.
+:::callout{type=definition}
+The **Krio** are the people of Sierra Leone descended from the four groups who settled in Freetown between **1787 and the 1860s**: the **Black Poor**, the **Nova Scotians**, the **Jamaican Maroons**, and, above all, the **Liberated Africans (recaptives)**.
+:::
+
+They developed a distinct culture with the **Krio language**, Christian and Muslim faith, and a strong love of **Western education**. Through **Fourah Bay College (1827)** and mission schools, Freetown became the "**Athens of West Africa**", and Krio teachers, clergy, doctors, lawyers and traders worked all along the West African coast. Leading Krio included **Bishop Samuel Ajayi Crowther**, **Dr James Africanus Horton** and **Sir Samuel Lewis**. This lesson explains **the origin of the Krio people, their culture and their contribution to Sierra Leone and West Africa**.
 
 ## Learning objectives
 

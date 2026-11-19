@@ -31,7 +31,11 @@ A flower may be bisexual, with both stamens and carpels, or unisexual, with only
 
 ## Pollination
 
-**Pollination** is the transfer of pollen grains from an anther to a stigma of a flower of the same species. Pollination is not fertilisation. Pollination places pollen on the stigma; fertilisation occurs later when male and female gamete nuclei fuse.
+:::callout{type=definition}
+**Pollination** is the transfer of pollen grains from an anther to a stigma of a flower of the same species.
+:::
+
+Pollination is not fertilisation. Pollination places pollen on the stigma; fertilisation occurs later when male and female gamete nuclei fuse.
 
 There are two main types:
 

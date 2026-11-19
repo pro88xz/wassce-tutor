@@ -1,4 +1,8 @@
-**Natural vegetation** is the plant cover that grows in an area without human interference. The main **types of natural vegetation** are **forests** (such as the tropical rainforest), **grasslands** (such as the savanna), **desert vegetation**, **mangrove swamps** and **mountain (montane) vegetation**. Which type grows where depends mainly on climate, especially rainfall and temperature, and also on soil, relief and human activity. This lesson describes each type, its features and how plants adapt to their environment.
+:::callout{type=definition}
+**Natural vegetation** is the plant cover that grows in an area without human interference.
+:::
+
+The main **types of natural vegetation** are **forests** (such as the tropical rainforest), **grasslands** (such as the savanna), **desert vegetation**, **mangrove swamps** and **mountain (montane) vegetation**. Which type grows where depends mainly on climate, especially rainfall and temperature, and also on soil, relief and human activity. This lesson describes each type, its features and how plants adapt to their environment.
 
 ## Learning objectives
 

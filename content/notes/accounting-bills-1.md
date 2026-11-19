@@ -1,4 +1,8 @@
-A **bill of exchange** is an **unconditional order in writing**, addressed by one person (the **drawer**) to another (the **drawee**), signed by the drawer, requiring the drawee to pay a **certain sum of money** on demand or at a **fixed or determinable future time** to a named person or to bearer. In trade, a seller who gives credit draws a bill on the buyer; once the buyer **accepts** it by signing, the bill becomes a **negotiable** document that can be **held**, **discounted** with a bank for immediate cash, or **endorsed** to someone else. This lesson explains bills, their parties and features, due dates and discounting.
+:::callout{type=definition}
+A **bill of exchange** is an **unconditional order in writing**, addressed by one person (the **drawer**) to another (the **drawee**), signed by the drawer, requiring the drawee to pay a **certain sum of money** on demand or at a **fixed or determinable future time** to a named person or to bearer.
+:::
+
+In trade, a seller who gives credit draws a bill on the buyer; once the buyer **accepts** it by signing, the bill becomes a **negotiable** document that can be **held**, **discounted** with a bank for immediate cash, or **endorsed** to someone else. This lesson explains bills, their parties and features, due dates and discounting.
 
 ## Learning objectives
 

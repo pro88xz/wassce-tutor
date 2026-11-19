@@ -29,7 +29,11 @@ By the end of this lesson you should be able to:
 
 ## Nana Olomu and the fall of Benin
 
-**Nana Olomu** was the **Itsekiri** "governor of the Benin River" (appointed **1884**) and a rich trader who controlled the palm-oil trade of the area. Like Jaja, he blocked British traders from reaching producers. In **1894** British forces attacked his fortified town of **Ebrohimi**, which fell after fierce fighting. Nana escaped but **surrendered**, and was **deported**, first to Calabar and then to the Gold Coast; he was allowed home in 1906 and died in **1916**.
+:::callout{type=definition title="Key figure"}
+**Nana Olomu** was the **Itsekiri** "governor of the Benin River" (appointed **1884**) and a rich trader who controlled the palm-oil trade of the area.
+:::
+
+Like Jaja, he blocked British traders from reaching producers. In **1894** British forces attacked his fortified town of **Ebrohimi**, which fell after fierce fighting. Nana escaped but **surrendered**, and was **deported**, first to Calabar and then to the Gold Coast; he was allowed home in 1906 and died in **1916**.
 
 In **1897** a British party led by **James Phillips** tried to visit **Benin City** during a sacred festival against the Oba's wishes, and most of its members were killed. Britain sent a **punitive expedition**, captured Benin City in **February 1897**, burned much of it, **looted the Benin Bronzes**, and exiled **Oba Ovonramwen** to **Calabar**.
 

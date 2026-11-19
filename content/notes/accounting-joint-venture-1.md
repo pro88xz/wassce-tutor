@@ -1,4 +1,8 @@
-A **joint venture** is a **temporary partnership** between two or more persons (the **co-venturers**) to carry out a **specific business project**, such as buying and selling one consignment of goods, after which the venture ends and the profit is shared in an agreed ratio. Usually no separate set of books is opened: each co-venturer records **their own** part of the venture in a **joint venture account with the other party**, and a **memorandum joint venture account** is drawn up to find the **total profit**. This lesson explains joint ventures and works through the memorandum method.
+:::callout{type=definition}
+A **joint venture** is a **temporary partnership** between two or more persons (the **co-venturers**) to carry out a **specific business project**, such as buying and selling one consignment of goods, after which the venture ends and the profit is shared in an agreed ratio.
+:::
+
+Usually no separate set of books is opened: each co-venturer records **their own** part of the venture in a **joint venture account with the other party**, and a **memorandum joint venture account** is drawn up to find the **total profit**. This lesson explains joint ventures and works through the memorandum method.
 
 ## Learning objectives
 

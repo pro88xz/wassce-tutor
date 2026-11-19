@@ -1,4 +1,8 @@
-**Samori Toure (about 1830–1900)** was the Mandinka ruler who built a powerful empire in the Western Sudan and **resisted French conquest for about seventeen years**, from **1882 to 1898**, longer than almost any other West African leader. He succeeded for so long because of his **well-organised standing army**, his **own production and purchase of modern guns**, his **scorched-earth tactics**, his **mobility** in moving his whole empire eastwards, and his skilful **diplomacy**. He was finally captured at **Guelemou** on **29 September 1898** and exiled to **Gabon**, where he died in 1900. This lesson explains **Samori Toure's resistance**, why it lasted so long and why it failed, and compares it with other resistance to the **French in West Africa**.
+:::callout{type=definition title="Key figure"}
+**Samori Toure (about 1830–1900)** was the Mandinka ruler who built a powerful empire in the Western Sudan and **resisted French conquest for about seventeen years**, from **1882 to 1898**, longer than almost any other West African leader.
+:::
+
+He succeeded for so long because of his **well-organised standing army**, his **own production and purchase of modern guns**, his **scorched-earth tactics**, his **mobility** in moving his whole empire eastwards, and his skilful **diplomacy**. He was finally captured at **Guelemou** on **29 September 1898** and exiled to **Gabon**, where he died in 1900. This lesson explains **Samori Toure's resistance**, why it lasted so long and why it failed, and compares it with other resistance to the **French in West Africa**.
 
 ## Learning objectives
 

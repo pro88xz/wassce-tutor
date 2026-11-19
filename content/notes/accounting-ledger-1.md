@@ -1,4 +1,8 @@
-The **ledger** is the **main book of account**, containing all the **accounts** of a business, in which transactions are classified after they have been recorded in the books of original entry. Because a business may have hundreds of accounts, the ledger is divided into the **sales ledger** (customers' accounts), the **purchases ledger** (suppliers' accounts), the **general (nominal) ledger** (income, expense, asset and liability accounts) and the **private ledger** (confidential accounts such as capital and drawings). This lesson explains the ledger, its divisions, and how entries are posted to it.
+:::callout{type=definition}
+The **ledger** is the **main book of account**, containing all the **accounts** of a business, in which transactions are classified after they have been recorded in the books of original entry.
+:::
+
+Because a business may have hundreds of accounts, the ledger is divided into the **sales ledger** (customers' accounts), the **purchases ledger** (suppliers' accounts), the **general (nominal) ledger** (income, expense, asset and liability accounts) and the **private ledger** (confidential accounts such as capital and drawings). This lesson explains the ledger, its divisions, and how entries are posted to it.
 
 ## Learning objectives
 

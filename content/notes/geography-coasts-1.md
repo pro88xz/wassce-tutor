@@ -1,4 +1,8 @@
-**Coastal landforms** are the features shaped by the sea where the land meets the ocean. **Landforms of coastal erosion** include **cliffs, wave-cut platforms, headlands and bays, caves, arches, stacks and stumps**; **landforms of coastal deposition** include **beaches, spits, bars, tombolos and lagoons**. They are made by waves, which erode the coast in some places and deposit sand and shingle in others. This lesson explains how waves work and how each landform is formed.
+:::callout{type=definition}
+**Coastal landforms** are the features shaped by the sea where the land meets the ocean.
+:::
+
+**Landforms of coastal erosion** include **cliffs, wave-cut platforms, headlands and bays, caves, arches, stacks and stumps**; **landforms of coastal deposition** include **beaches, spits, bars, tombolos and lagoons**. They are made by waves, which erode the coast in some places and deposit sand and shingle in others. This lesson explains how waves work and how each landform is formed.
 
 ## Learning objectives
 

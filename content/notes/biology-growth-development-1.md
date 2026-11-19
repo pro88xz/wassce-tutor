@@ -13,9 +13,17 @@ By the end of this lesson, you should be able to:
 
 ## Meaning of growth and development
 
-**Growth** is a permanent increase in the size, dry mass, volume or number of cells of an organism. It results mainly from cell division and cell enlargement. A temporary increase in size caused only by water intake is not, by itself, reliable evidence of growth.
+:::callout{type=definition}
+**Growth** is a permanent increase in the size, dry mass, volume or number of cells of an organism.
+:::
 
-**Development** is the series of changes through which an organism becomes more complex and functionally mature. It includes cell differentiation, formation of tissues and organs, and changes in body form and function.
+It results mainly from cell division and cell enlargement. A temporary increase in size caused only by water intake is not, by itself, reliable evidence of growth.
+
+:::callout{type=definition}
+**Development** is the series of changes through which an organism becomes more complex and functionally mature.
+:::
+
+It includes cell differentiation, formation of tissues and organs, and changes in body form and function.
 
 Growth and development are related but are not identical. A seedling increases in height and mass as it grows; at the same time, it develops leaves, roots and specialised tissues. Some developmental changes, such as the formation of a flower, may occur without a large increase in the organism's overall size.
 

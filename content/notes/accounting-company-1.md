@@ -1,4 +1,8 @@
-A **limited liability company** is a business that is a **separate legal person** from its owners, the **shareholders**, whose liability for its debts is **limited** to the amount they have agreed to pay for their shares. Companies raise long-term finance by issuing **shares** (ordinary and preference) and borrowing through **debentures**. Their accounts show special items: **share capital** at several levels, **reserves**, **dividends** and **debenture interest**. This lesson explains the types of company, shares, debentures and reserves, and how a share issue is recorded.
+:::callout{type=definition}
+A **limited liability company** is a business that is a **separate legal person** from its owners, the **shareholders**, whose liability for its debts is **limited** to the amount they have agreed to pay for their shares.
+:::
+
+Companies raise long-term finance by issuing **shares** (ordinary and preference) and borrowing through **debentures**. Their accounts show special items: **share capital** at several levels, **reserves**, **dividends** and **debenture interest**. This lesson explains the types of company, shares, debentures and reserves, and how a share issue is recorded.
 
 ## Learning objectives
 

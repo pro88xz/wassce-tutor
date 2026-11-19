@@ -32,8 +32,10 @@ So $\dfrac{3}{4}$ is the same as $3 \div 4 = 0.75$. We use this fact when we con
 
 ### What the numbers mean
 
+:::callout{type=definition}
 - **Numerator** ($a$): how many parts you are taking.
 - **Denominator** ($b$): how many parts the whole is divided into.
+:::
 
 If I divide a loaf of bread into $5$ equal pieces and you take $2$ of them, you have $\dfrac{2}{5}$ of the bread. The $5$ is the denominator (total slices), the $2$ is the numerator (slices you took).
 

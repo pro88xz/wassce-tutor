@@ -43,7 +43,11 @@ Do not classify every animal that gives birth to live young as a placental mamma
 
 ## Metamorphosis in insects
 
-**Metamorphosis** is a marked change in body form during development. Insects show two major patterns.
+:::callout{type=definition}
+**Metamorphosis** is a marked change in body form during development.
+:::
+
+Insects show two major patterns.
 
 ### Complete metamorphosis
 

@@ -1,4 +1,8 @@
-The **trans-Saharan trade** was the long-distance trade across the **Sahara Desert** between **North Africa** and **West Africa**, carried by **camel caravans** for more than a thousand years. West Africa sent **gold, kola nuts, ivory, leather and slaves** north; North Africa sent **salt, horses, cloth, copper, books and luxury goods** south. The trade made the **Sudanese empires** rich, built cities such as **Timbuktu**, **Gao** and **Kano**, and carried **Islam** into West Africa. It declined from the sixteenth century as the **Atlantic trade** drew commerce to the coast. This lesson explains the routes, goods, organisation and decline of the trade.
+:::callout{type=definition}
+The **trans-Saharan trade** was the long-distance trade across the **Sahara Desert** between **North Africa** and **West Africa**, carried by **camel caravans** for more than a thousand years.
+:::
+
+West Africa sent **gold, kola nuts, ivory, leather and slaves** north; North Africa sent **salt, horses, cloth, copper, books and luxury goods** south. The trade made the **Sudanese empires** rich, built cities such as **Timbuktu**, **Gao** and **Kano**, and carried **Islam** into West Africa. It declined from the sixteenth century as the **Atlantic trade** drew commerce to the coast. This lesson explains the routes, goods, organisation and decline of the trade.
 
 ## Learning objectives
 

@@ -53,7 +53,11 @@ Britain abolished the slave trade in **1807** and made **Freetown** the base of 
 
 *Figure 1. The Amistad captives, 1839–1842. WASSCE Tutor diagram.*
 
-**Sengbe Pieh** (known in America as **Joseph Cinqué**) was a **Mende** rice farmer captured early in **1839** and sold at **Lomboko**. He and others were shipped illegally to **Havana, Cuba**, and sold. In **July 1839**, while being taken along the Cuban coast on the schooner **La Amistad**, the captives **rose up**, took control of the ship and ordered the survivors of the crew to sail to Africa. The crew secretly steered north, and in **August 1839** the ship was seized off **Long Island** in the United States.
+:::callout{type=definition title="Key figure"}
+**Sengbe Pieh** (known in America as **Joseph Cinqué**) was a **Mende** rice farmer captured early in **1839** and sold at **Lomboko**.
+:::
+
+He and others were shipped illegally to **Havana, Cuba**, and sold. In **July 1839**, while being taken along the Cuban coast on the schooner **La Amistad**, the captives **rose up**, took control of the ship and ordered the survivors of the crew to sail to Africa. The crew secretly steered north, and in **August 1839** the ship was seized off **Long Island** in the United States.
 
 The case went to the **United States Supreme Court**, where former President **John Quincy Adams** argued for the captives. In **March 1841** the court ruled that they had been **illegally enslaved** and were **free**. In **January 1842**, **35 survivors** returned to Sierra Leone with American missionaries, who began the **Mende Mission** in the south.
 

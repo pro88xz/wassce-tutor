@@ -58,9 +58,11 @@ Lorries, vans, buses, taxis, poda-podas, kekes (tricycles) and okadas (motorbike
 
 ### Water transport
 
+:::callout{type=definition}
 - **Inland waterways**: rivers, lakes, creeks and canals; canoes, boats, barges and ferries.
 - **Coastal shipping**: ships moving goods between ports of the **same** country or nearby countries.
 - **Ocean shipping**: ships crossing the oceans in foreign trade.
+:::
 
 | Advantages | Disadvantages |
 |---|---|

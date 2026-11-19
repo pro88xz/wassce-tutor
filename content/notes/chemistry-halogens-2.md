@@ -64,7 +64,11 @@ Dry it with concentrated sulphuric acid and collect by **downward delivery** (it
 - forms **dense white fumes** of ammonium chloride with ammonia: NH₃ + HCl → NH₄Cl
 - dry HCl gas (or HCl in methylbenzene) shows **no acidic properties**; it ionises only in water
 
-**Hydrochloric acid** (HCl in water) is a **strong acid**. It reacts with metals, bases and carbonates. A concentrated solution is about 36% HCl.
+:::callout{type=definition}
+**Hydrochloric acid** (HCl in water) is a **strong acid**.
+:::
+
+It reacts with metals, bases and carbonates. A concentrated solution is about 36% HCl.
 
 **Uses of hydrochloric acid:**
 

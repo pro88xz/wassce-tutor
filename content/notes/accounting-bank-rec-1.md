@@ -1,4 +1,8 @@
-A **bank reconciliation statement** is a statement prepared to **explain the difference** between the **bank balance in the cash book** and the **balance on the bank statement** on the same date. The two balances rarely agree because of **timing differences** (cheques paid out but not yet presented, money paid in but not yet credited) and items the business **has not yet recorded** (bank charges, standing orders, direct credits, dishonoured cheques), as well as **errors**. This lesson explains the causes of the difference, the purposes of a bank reconciliation, and the standard format.
+:::callout{type=definition}
+A **bank reconciliation statement** is a statement prepared to **explain the difference** between the **bank balance in the cash book** and the **balance on the bank statement** on the same date.
+:::
+
+The two balances rarely agree because of **timing differences** (cheques paid out but not yet presented, money paid in but not yet credited) and items the business **has not yet recorded** (bank charges, standing orders, direct credits, dishonoured cheques), as well as **errors**. This lesson explains the causes of the difference, the purposes of a bank reconciliation, and the standard format.
 
 ## Learning objectives
 
@@ -12,7 +16,11 @@ By the end of this lesson you should be able to:
 
 ## The bank statement
 
-The **bank statement** is a copy of the customer's account **in the bank's books**. Because the bank **owes** the money to the customer, a positive balance appears as a **credit** on the bank statement, while the same money is a **debit** (an asset) in the business's cash book. The two records are **mirror images**.
+:::callout{type=definition}
+The **bank statement** is a copy of the customer's account **in the bank's books**.
+:::
+
+Because the bank **owes** the money to the customer, a positive balance appears as a **credit** on the bank statement, while the same money is a **debit** (an asset) in the business's cash book. The two records are **mirror images**.
 
 | Item | Cash book (business) | Bank statement (bank) |
 |---|---|---|

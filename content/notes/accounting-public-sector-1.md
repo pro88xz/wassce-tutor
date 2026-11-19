@@ -1,4 +1,8 @@
-**Public sector accounting** is the recording, classifying, summarising and reporting of the **financial transactions of government** and its ministries, departments and agencies (MDAs), in order to show how **public money** has been raised and spent and to hold those in charge **accountable**. Unlike a business, the government does not aim to make a profit: its accounts focus on **legal authority** to spend, **budget control** and **stewardship** of public funds. This lesson explains the meaning, objectives and features of public sector accounting and the sources of government revenue in Sierra Leone.
+:::callout{type=definition}
+**Public sector accounting** is the recording, classifying, summarising and reporting of the **financial transactions of government** and its ministries, departments and agencies (MDAs), in order to show how **public money** has been raised and spent and to hold those in charge **accountable**.
+:::
+
+Unlike a business, the government does not aim to make a profit: its accounts focus on **legal authority** to spend, **budget control** and **stewardship** of public funds. This lesson explains the meaning, objectives and features of public sector accounting and the sources of government revenue in Sierra Leone.
 
 ## Learning objectives
 

@@ -1,4 +1,8 @@
-**Soil** is the thin layer of loose material on the Earth's surface in which plants grow. It is made of **mineral particles** from weathered rock, **humus** (decayed plant and animal matter), **water**, **air** and **living organisms**. A **soil profile** is a vertical section through the soil from the surface down to the bedrock, showing layers called **horizons**: the organic layer (O), topsoil (A), subsoil (B), weathered parent rock (C) and bedrock (R). This lesson explains how soil forms and what its profile and properties tell us.
+:::callout{type=definition}
+**Soil** is the thin layer of loose material on the Earth's surface in which plants grow.
+:::
+
+It is made of **mineral particles** from weathered rock, **humus** (decayed plant and animal matter), **water**, **air** and **living organisms**. A **soil profile** is a vertical section through the soil from the surface down to the bedrock, showing layers called **horizons**: the organic layer (O), topsoil (A), subsoil (B), weathered parent rock (C) and bedrock (R). This lesson explains how soil forms and what its profile and properties tell us.
 
 ## Learning objectives
 

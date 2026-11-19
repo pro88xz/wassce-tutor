@@ -1,4 +1,8 @@
-**Goodwill** is the value of a business **over and above the value of its separate net assets**, arising from its reputation, location, customers and staff. It matters in partnerships whenever the **profit-sharing ratio changes**: on the **admission** of a new partner, the **retirement** or **death** of a partner, or a change in the agreement. Existing partners are compensated for the goodwill they built up, and assets are **revalued** so that gains or losses up to that date go to the old partners. This lesson explains goodwill, its valuation, and the entries for admitting a new partner.
+:::callout{type=definition}
+**Goodwill** is the value of a business **over and above the value of its separate net assets**, arising from its reputation, location, customers and staff.
+:::
+
+It matters in partnerships whenever the **profit-sharing ratio changes**: on the **admission** of a new partner, the **retirement** or **death** of a partner, or a change in the agreement. Existing partners are compensated for the goodwill they built up, and assets are **revalued** so that gains or losses up to that date go to the old partners. This lesson explains goodwill, its valuation, and the entries for admitting a new partner.
 
 ## Learning objectives
 

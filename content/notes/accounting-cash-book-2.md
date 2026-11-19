@@ -67,8 +67,10 @@ The discount columns are **memorandum columns**: they are not part of the cash b
 
 ## Discounts in the final accounts
 
+:::callout{type=definition}
 - **Discount allowed** is an **expense** in the income statement (profit and loss section).
 - **Discount received** is **income** in the income statement.
+:::
 
 :::callout{type=local-example}
 Wholesalers at Freetown's big markets often give regular retail customers a small cash discount for paying within a week, because getting cash quickly helps them restock. In the wholesaler's cash book this is **discount allowed**; in the retailer's cash book the same amount is **discount received**.

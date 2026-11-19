@@ -54,7 +54,9 @@ Waves spreading out from a point source spread their energy over an ever larger 
 
 ## The ripple tank
 
+:::callout{type=definition}
 A **ripple tank** is a shallow glass-bottomed tray of water used to study water waves.
+:::
 
 - A **vibrating dipper** (a straight bar for plane waves, or a small ball for circular waves) driven by a motor produces the waves.
 - A **lamp above** the tank casts shadows of the waves onto a white screen below: crests act like converging lenses and show as **bright lines**, troughs as dark lines.
@@ -63,7 +65,11 @@ A **ripple tank** is a shallow glass-bottomed tray of water used to study water 
 
 ### Freezing waves with a stroboscope
 
-A **hand stroboscope** is a disc with equally spaced slits. Looking at the waves through the spinning disc, you see them only at regular instants. If the number of views per second equals the wave frequency, each crest has moved exactly one wavelength between views, so the pattern appears **stationary ("frozen")**.
+:::callout{type=definition}
+A **hand stroboscope** is a disc with equally spaced slits.
+:::
+
+Looking at the waves through the spinning disc, you see them only at regular instants. If the number of views per second equals the wave frequency, each crest has moved exactly one wavelength between views, so the pattern appears **stationary ("frozen")**.
 
 :::callout{type=worked-example}
 **A stroboscope has 12 slits. The waves first appear frozen when it turns at 2 revolutions per second. What is the frequency of the waves?**

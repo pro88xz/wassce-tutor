@@ -1,4 +1,8 @@
-The **government budget** is the annual estimate of the revenue the government expects to collect and the expenditure it plans to make. Once Parliament passes it as the **Appropriation Act**, it gives the legal **authority** to spend. All public revenue is paid into the **Consolidated Revenue Fund**, and money can only be withdrawn from it as authorised by law. Controls such as **warrants**, the **vote book**, **public procurement rules** and the **Auditor-General's audit** make sure public money is spent only for approved purposes. This lesson explains the budget, the Consolidated Revenue Fund and the controls over public spending.
+:::callout{type=definition}
+The **government budget** is the annual estimate of the revenue the government expects to collect and the expenditure it plans to make.
+:::
+
+Once Parliament passes it as the **Appropriation Act**, it gives the legal **authority** to spend. All public revenue is paid into the **Consolidated Revenue Fund**, and money can only be withdrawn from it as authorised by law. Controls such as **warrants**, the **vote book**, **public procurement rules** and the **Auditor-General's audit** make sure public money is spent only for approved purposes. This lesson explains the budget, the Consolidated Revenue Fund and the controls over public spending.
 
 ## Learning objectives
 

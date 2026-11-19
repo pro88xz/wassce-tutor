@@ -1,4 +1,8 @@
-The **Berlin Conference of 1884–85** was a meeting of European powers and the United States, called by the German chancellor **Otto von Bismarck**, to agree rules for claiming African territory. It met from **15 November 1884 to 26 February 1885**, **no African was present**, and its **General Act** set the principle of **effective occupation**, opened the **Congo and Niger rivers** to free navigation, and recognised **King Leopold II's Congo Free State**. Africa was then partitioned through **treaties, conquest, boundary agreements and chartered companies**. This lesson explains the Berlin Conference, the **methods of partition** and the **effects of the partition of Africa**.
+:::callout{type=definition}
+The **Berlin Conference of 1884–85** was a meeting of European powers and the United States, called by the German chancellor **Otto von Bismarck**, to agree rules for claiming African territory.
+:::
+
+It met from **15 November 1884 to 26 February 1885**, **no African was present**, and its **General Act** set the principle of **effective occupation**, opened the **Congo and Niger rivers** to free navigation, and recognised **King Leopold II's Congo Free State**. Africa was then partitioned through **treaties, conquest, boundary agreements and chartered companies**. This lesson explains the Berlin Conference, the **methods of partition** and the **effects of the partition of Africa**.
 
 ## Learning objectives
 

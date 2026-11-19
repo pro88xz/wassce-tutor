@@ -24,7 +24,9 @@ $$\text{Capital} = \text{Assets} - \text{Liabilities}$$
 
 $$\text{Liabilities} = \text{Assets} - \text{Capital}$$
 
+:::callout{type=definition}
 **Capital** is the owner's claim on the business, also called **owner's equity** or **net assets** (assets minus liabilities).
+:::
 
 ## Assets, liabilities and capital
 

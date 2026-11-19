@@ -1,4 +1,8 @@
-The **Hut Tax War of 1898** was the armed rising of the peoples of the new **Sierra Leone Protectorate** against British rule, sparked by the **hut tax** introduced by **Governor Frederic Cardew** from **1 January 1898**. In the north, the Temne chief **Bai Bureh of Kasseh** led a skilful **guerrilla war** from **February to November 1898**; in the south, a more violent **Mende rising** broke out at the end of **April 1898**, in which **missionaries, Krio traders and officials** were killed. The British used troops of the **West India Regiment** and the **Frontier Police** to crush both risings. This lesson explains the **causes of the Hut Tax War**, the **role of Bai Bureh** and the **course of the war**.
+:::callout{type=definition}
+The **Hut Tax War of 1898** was the armed rising of the peoples of the new **Sierra Leone Protectorate** against British rule, sparked by the **hut tax** introduced by **Governor Frederic Cardew** from **1 January 1898**.
+:::
+
+In the north, the Temne chief **Bai Bureh of Kasseh** led a skilful **guerrilla war** from **February to November 1898**; in the south, a more violent **Mende rising** broke out at the end of **April 1898**, in which **missionaries, Krio traders and officials** were killed. The British used troops of the **West India Regiment** and the **Frontier Police** to crush both risings. This lesson explains the **causes of the Hut Tax War**, the **role of Bai Bureh** and the **course of the war**.
 
 ## Learning objectives
 
@@ -35,7 +39,9 @@ By the end of this lesson you should be able to:
 
 ## Bai Bureh and the northern rising
 
+:::callout{type=definition title="Key figure"}
 **Bai Bureh** (also called **Kebalai**) was the ruler of **Kasseh**, near **Port Loko**, and an experienced war leader who had fought in earlier wars in the north, sometimes as an ally of the British.
+:::
 
 **Course of the northern rising:**
 

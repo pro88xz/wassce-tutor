@@ -1,4 +1,8 @@
-A **trial balance** is a **list of all the balances** in the ledger accounts and the cash book on a particular date, set out in two columns, **debit balances** and **credit balances**. If the double entry has been carried out correctly, the **two totals are equal**. The trial balance is therefore an **arithmetical check** on the books, and it is also the starting point for preparing the **final accounts**. This lesson explains the purpose and format of the trial balance and how to prepare one, with a full worked example.
+:::callout{type=definition}
+A **trial balance** is a **list of all the balances** in the ledger accounts and the cash book on a particular date, set out in two columns, **debit balances** and **credit balances**.
+:::
+
+If the double entry has been carried out correctly, the **two totals are equal**. The trial balance is therefore an **arithmetical check** on the books, and it is also the starting point for preparing the **final accounts**. This lesson explains the purpose and format of the trial balance and how to prepare one, with a full worked example.
 
 ## Learning objectives
 

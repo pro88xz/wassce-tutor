@@ -1,4 +1,8 @@
-**Bookkeeping** is the **recording** of financial transactions in books of account, while **accounting** goes further to **summarise, analyse and interpret** those records and report the results. Bookkeeping is the foundation; accounting is the building. The work of a business's accounts follows a repeating series of steps called the **accounting cycle**, from the source document to the final accounts. This lesson compares bookkeeping and accounting, describes the branches of accounting, and walks through the accounting cycle.
+:::callout{type=definition}
+**Bookkeeping** is the **recording** of financial transactions in books of account, while **accounting** goes further to **summarise, analyse and interpret** those records and report the results.
+:::
+
+Bookkeeping is the foundation; accounting is the building. The work of a business's accounts follows a repeating series of steps called the **accounting cycle**, from the source document to the final accounts. This lesson compares bookkeeping and accounting, describes the branches of accounting, and walks through the accounting cycle.
 
 ## Learning objectives
 

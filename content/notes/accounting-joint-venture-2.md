@@ -1,4 +1,8 @@
-A **consignment** is an arrangement in which one trader, the **consignor**, sends goods to an agent, the **consignee**, who sells them on the consignor's behalf in return for a **commission**. The goods remain the **consignor's property** until they are sold. The consignee sends the consignor an **account sales**, a statement showing the sales made, the expenses paid and the commission deducted, together with the **balance due**. This lesson explains consignment terms and prepares the consignor's **consignment account** to find the profit.
+:::callout{type=definition}
+A **consignment** is an arrangement in which one trader, the **consignor**, sends goods to an agent, the **consignee**, who sells them on the consignor's behalf in return for a **commission**.
+:::
+
+The goods remain the **consignor's property** until they are sold. The consignee sends the consignor an **account sales**, a statement showing the sales made, the expenses paid and the commission deducted, together with the **balance due**. This lesson explains consignment terms and prepares the consignor's **consignment account** to find the profit.
 
 ## Learning objectives
 

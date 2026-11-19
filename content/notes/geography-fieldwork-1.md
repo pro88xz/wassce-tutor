@@ -1,4 +1,8 @@
-**Geographical fieldwork** is the study of geography **outside the classroom**, by observing, measuring, recording and analysing features of the real environment, such as a river, a market, a farm, a settlement or the weather. A good fieldwork study follows clear steps: **choosing a topic and aims**, **planning**, **collecting data** by observation, measurement, interviews and questionnaires, **processing and presenting** the data, and **writing a report** with conclusions. This lesson explains how to plan and carry out fieldwork and how to write it up.
+:::callout{type=definition}
+**Geographical fieldwork** is the study of geography **outside the classroom**, by observing, measuring, recording and analysing features of the real environment, such as a river, a market, a farm, a settlement or the weather.
+:::
+
+A good fieldwork study follows clear steps: **choosing a topic and aims**, **planning**, **collecting data** by observation, measurement, interviews and questionnaires, **processing and presenting** the data, and **writing a report** with conclusions. This lesson explains how to plan and carry out fieldwork and how to write it up.
 
 ## Learning objectives
 
