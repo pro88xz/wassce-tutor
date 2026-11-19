@@ -635,6 +635,70 @@
   "questions": 15
  },
  {
+  "name": "history_set1_p1",
+  "label": "History: set 1 (sources, West African states, trans-Saharan trade, forest states, Europeans, slave trade, abolition)",
+  "subject_slug": "history",
+  "version": "4270f1ec9751",
+  "papers": [
+   "b4d51b23-baa6-5402-be93-1ac89886dfd9",
+   "ac227db0-191f-5ea6-8f70-65956a31f270",
+   "651cbeff-940f-5713-a3ee-b7b21416ce66",
+   "ba2e1704-2477-550e-8b40-3b1c1cbba199",
+   "61ec6f68-80c0-51f5-ba98-885b6e62a7f4",
+   "9eda828a-8a3d-5b48-a009-1c2d1b3d1b0a",
+   "f57f3808-d9f0-50e6-8edc-e528badfc09e",
+   "89b9bb1e-9174-594a-8443-5f469ff553de"
+  ],
+  "questions": 40
+ },
+ {
+  "name": "history_set2_p1",
+  "label": "History: set 2 (jihads, partition, colonial rule, resistance, nationalism, Pan-Africanism, 20th-century Africa)",
+  "subject_slug": "history",
+  "version": "33e6cd94d20e",
+  "papers": [
+   "6dacbfa2-2e17-5c27-bfb1-2145da75b71a",
+   "f5d7829b-287f-5dad-8042-a751973613bf",
+   "4ae6e1de-289b-53d6-84b6-4fd706771584",
+   "37015448-bfa1-5963-a810-61b24214d2ae",
+   "40a5a31d-ec70-526f-9dfc-300c44978422",
+   "71b92170-a155-5746-a295-f70139cf7b81",
+   "1514ddf5-addc-5f99-afc3-41d0a65f2971"
+  ],
+  "questions": 35
+ },
+ {
+  "name": "history_set3_p1",
+  "label": "History: set 3 (Sierra Leone to 1945: early peoples, Freetown, the Krio, the Protectorate, the Hut Tax War)",
+  "subject_slug": "history",
+  "version": "d93a30a9c46a",
+  "papers": [
+   "098141ab-7cc9-5425-a244-5b88a971e1c4",
+   "21228d76-527b-5b69-aadb-0b49c9c46f07",
+   "5c3040df-513c-5b07-bf06-7b5ff75a13e9",
+   "8c089bc2-622f-5010-a2bb-abbe25bf991d",
+   "b639063a-0933-5f04-8c81-d375c1799ace",
+   "eb328db5-26f1-595c-8205-490cbf5762c3",
+   "fc819126-f750-58d8-9f93-bb7a2891aa85"
+  ],
+  "questions": 35
+ },
+ {
+  "name": "history_set4_p1",
+  "label": "History: set 4 (Sierra Leone 1947 to today: independence, Margai, Stevens, Momoh, the civil war, Kabbah, foreign relations)",
+  "subject_slug": "history",
+  "version": "7ac4e0a808a7",
+  "papers": [
+   "df8954cc-a2e1-5a6b-a183-8ad863d39f1c",
+   "6d7d1061-1b70-5136-9012-2acc8d3c0bda",
+   "9f6e18c9-fabc-51e9-beea-a2b4bd84cfc9",
+   "e4f77f1f-09e7-531f-9ec7-a8ce2a277864",
+   "ef326e33-03e7-5cb9-b0e0-5e04d03bbd9d",
+   "dd0f711b-fed1-5828-ba0d-f8131503a560"
+  ],
+  "questions": 30
+ },
+ {
   "name": "biology_set1_p1",
   "label": "Biology: set 1 (cells, nutrition, respiration, transport, ecology and genetics)",
   "subject_slug": "biology",

@@ -321,6 +321,25 @@ SETS += [
 
 SETS += [
     {
+        "module": ROOT / f"content/questions/history/set{n}_p1.py",
+        "subject_slug": "history",
+        "name": f"history_set{n}_p1",
+        "label": label,
+        "review": ROOT / f"content/questions/history/set{n}_p1.review.md",
+        "sort_from": 80 + 20 * n,
+        # Facts, causes and effects checked by an editor against the History notes.
+        "checked": "facts",
+    }
+    for n, label in (
+        (1, "History: set 1 (sources, West African states, trans-Saharan trade, forest states, Europeans, slave trade, abolition)"),
+        (2, "History: set 2 (jihads, partition, colonial rule, resistance, nationalism, Pan-Africanism, 20th-century Africa)"),
+        (3, "History: set 3 (Sierra Leone to 1945: early peoples, Freetown, the Krio, the Protectorate, the Hut Tax War)"),
+        (4, "History: set 4 (Sierra Leone 1947 to today: independence, Margai, Stevens, Momoh, the civil war, Kabbah, foreign relations)"),
+    )
+]
+
+SETS += [
+    {
         "module": ROOT / "content/questions/biology/set1_p1.py",
         "subject_slug": "biology",
         "name": "biology_set1_p1",
