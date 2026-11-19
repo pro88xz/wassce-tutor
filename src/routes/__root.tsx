@@ -62,6 +62,7 @@ export const Route = createRootRoute({
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
       { name: 'google-site-verification', content: 'S8kJyYT-6kCzOytVerViOFKhPDPleWCwfltAxOG1DM4' },
+      { name: 'google-adsense-account', content: 'ca-pub-9121922395304175' },
       { name: 'theme-color', content: '#6438d8' },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: SITE.name },
