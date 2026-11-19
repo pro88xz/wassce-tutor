@@ -67,6 +67,16 @@ Benin's **guild of bronze and brass casters**, working for the Oba, produced pla
 The **Benin Kingdom** was in present-day **southern Nigeria**, not in the modern Republic of Benin, which was formerly called **Dahomey** and took its name from the **Bight of Benin** in 1975.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Alaafin**: the king of Oyo, sacred ruler and head of government.
+- **Oyo Mesi**: the council of seven chiefs of Oyo, led by the Bashorun, which chose and advised the Alaafin and could reject a bad one.
+- **Ogboni**: a powerful society of elders and religious leaders in Oyo that checked the Oyo Mesi.
+- **Are-Ona-Kakanfo**: the commander of the Oyo army, stationed away from the capital so that he could not seize power.
+- **Oba**: the title of the king of Benin.
+:::
+
 ## Key points
 
 - **Oyo:** Yoruba empire founded by Oranmiyan of Ife; power from **cavalry**, **trade** and tribute.

@@ -73,6 +73,13 @@ Many Sierra Leoneans who left during this period formed a large **diaspora** in 
 Sierra Leone's economic decline was **not** caused by a lack of natural resources. The country was rich in **diamonds, rutile, bauxite and iron ore**. The problem was **how the resources were managed**: smuggling, corruption, patronage and poor policies.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Diamond smuggling**: taking diamonds out of the country illegally, which robbed the government of revenue.
+- **Brain drain**: the emigration of educated and skilled people, such as doctors and teachers, to work abroad.
+:::
+
 ## Key points
 
 - Resources: **diamonds (NDMC, 1970)**, **iron ore (Marampa, closed 1975)**, **rutile (from 1967)**, **bauxite**, cash crops.

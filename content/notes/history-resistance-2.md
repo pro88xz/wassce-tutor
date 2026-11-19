@@ -91,6 +91,13 @@ Bai Bureh is one of **Sierra Leone's national heroes**. Although his resistance 
 Jaja and Nana were not mainly resisting for religion or land: they resisted to protect their **commercial monopoly** as **middlemen** in the palm-oil trade. Explain the **economic** nature of their resistance.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Jaja of Opobo**: the trader-king who founded Opobo in 1869 and defended his palm-oil monopoly until he was arrested and deported by the British in 1887.
+- **Oba Ovonramwen**: the king of Benin exiled by the British after their punitive expedition captured Benin City in 1897.
+:::
+
 ## Key points
 
 - **Jaja of Opobo** (founded Opobo **1869**): defended his palm-oil **monopoly**; arrested by **Consul Johnston** in **1887** and deported.

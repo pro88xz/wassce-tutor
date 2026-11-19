@@ -100,6 +100,14 @@ Samori had close links with **Sierra Leone**. His agents bought **rifles and amm
 Do not say that Samori "failed because he was a poor leader". He was one of the ablest military leaders of his time. He was defeated mainly by **French military superiority**, the **loss of his arms supply** and **opposition among conquered peoples**.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Almami**: the title of a Muslim political and religious leader, taken by Samori Toure in 1884.
+- **Sofas**: the infantry soldiers of Samori Toure's professional standing army.
+- **Scorched earth**: destroying crops and villages while retreating, so that the enemy finds no food or shelter; a tactic Samori used against the French.
+:::
+
 ## Key points
 
 - Reactions to conquest: **armed resistance, diplomacy, collaboration, passive resistance**.

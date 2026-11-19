@@ -83,6 +83,14 @@ The "**elections before peace**" decision at **Bintumani II** is remembered as a
 The NPRC had **two** leaders: **Valentine Strasser** (1992–January 1996) and **Julius Maada Bio** (January–March 1996). It was Bio who **handed over power** to the elected President Kabbah on **29 March 1996**.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Valentine Strasser**: the young army captain who became head of state after the NPRC coup of 29 April 1992.
+- **Sobels**: "soldiers by day, rebels by night": soldiers who looted and attacked civilians during the war.
+- **Bintumani conferences**: the national conferences of 1995–96 at which civil society called for elections before peace.
+:::
+
 ## Key points
 
 - **NPRC coup: 29 April 1992**, by young officers from the war front; **Captain Valentine Strasser** head of state.

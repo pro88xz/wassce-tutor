@@ -70,6 +70,15 @@ The **Nok culture** of central Nigeria, which flourished more than 2,000 years a
 The year **1900** belongs to the **19th century**, not the 20th, because centuries run from year 1 to year 100 (and from 1801 to 1900). The 20th century is 1901 to 2000.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Circa** (c.): "about", written before a date that is approximate, as in c. 1235.
+- **Century**: a period of 100 years; the 15th century runs from 1401 to 1500, so 1482 falls in it.
+- **Cause and effect**: the historian's idea that every event has causes and leads to results, which must be explained.
+- **Continuity and change**: the study of what stays the same and what changes over a period of history.
+:::
+
 ## Key points
 
 - **BC/BCE** counts back from year 1; **AD/CE** counts forward; **c.** means approximately.

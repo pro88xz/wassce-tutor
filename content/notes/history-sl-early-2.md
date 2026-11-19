@@ -67,6 +67,14 @@ Today's **paramount chiefs**, chiefdom councils and the continuing importance of
 Do not describe pre-colonial chiefs as absolute rulers. In most Sierra Leone societies the chief's power was **limited** by the **council of elders**, by **custom**, and by the **Poro society**, which could discipline or even remove a bad ruler.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Poro**: the men's society that educated young men, helped to make laws and checked the power of chiefs.
+- **Sande** (Bondo): the women's society that educated girls and, like the Poro, helped to keep order.
+- **Ruling house**: a family from which, by custom, a chief may be chosen.
+:::
+
 ## Key points
 
 - Pre-colonial Sierra Leone had many **chiefdoms**; chiefs (e.g. the Temne **Bai**) were chosen from **ruling houses** and ruled with **councils of elders**.

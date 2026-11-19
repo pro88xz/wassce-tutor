@@ -47,6 +47,14 @@ The **tsetse fly**, found in the forest and wetter savanna, carries **sleeping s
 Do not describe the Sahara only as a barrier. For more than a thousand years it was also a **bridge**, crossed by organised caravans that linked West Africa to North Africa and the Mediterranean world.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Sahel**: the belt of dry grassland on the southern edge of the Sahara, where horses, trade and trading cities helped large empires grow.
+- **Oasis**: a fertile place in the desert with water, where trans-Saharan caravans could rest and take on supplies.
+- **Tsetse fly**: an insect of the forest zone that spreads disease to horses and cattle, so forest states could not rely on cavalry.
+:::
+
 ## Key points
 
 - Zones: **desert, Sahel and Sudan savanna, Guinea savanna, forest, coast**.

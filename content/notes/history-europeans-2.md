@@ -60,6 +60,13 @@ Coastal peoples became **middlemen** between European traders and the producers 
 Early European traders did **not** rule West Africa. Until the late nineteenth century they mostly stayed on the **coast**, renting land for their forts from African rulers, who kept political control of the interior.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Middlemen**: African traders on the coast who controlled trade between the European forts and the peoples of the interior.
+- **Trading post**: a fort or station on the coast where Europeans stored goods and traded with Africans.
+:::
+
 ## Key points
 
 - Trade: gold, ivory, pepper, later **slaves**, for **cloth, metals, beads, alcohol, guns**.

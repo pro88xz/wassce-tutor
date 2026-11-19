@@ -66,6 +66,16 @@ The traveller **Ibn Battuta** visited Mali in **1352–1353** and praised its **
 Do not confuse **Sunni Ali** and **Askia Muhammad**. Sunni Ali was the **conqueror** who built the empire by war; Askia Muhammad was the **organiser** who reformed its government and promoted Islam.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Sundiata Keita**: the founder of the Mali empire, who defeated Sumanguru Kante of Sosso at the battle of Kirina in about 1235.
+- **Mansa Musa**: the ruler of Mali at its height, whose pilgrimage (hajj) to Mecca in 1324 made Mali famous for its gold.
+- **Sunni Ali** (ruled 1464–1492): the warrior king who built the Songhai empire by conquest.
+- **Askia Muhammad** (ruled 1493–1528): the Songhai ruler who reformed the government and promoted Islam and learning.
+- **Battle of Tondibi** (1591): the victory of a Moroccan army armed with guns that brought down the Songhai empire.
+:::
+
 ## Key points
 
 - **Mali:** founded by **Sundiata Keita** after **Kirina (c. 1235)**; height under **Mansa Musa** (hajj **1324**); visited by **Ibn Battuta (1352–53)**; declined through weak rulers, revolts and attacks.

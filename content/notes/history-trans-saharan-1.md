@@ -68,6 +68,14 @@ By the end of this lesson you should be able to:
 The trade was not mainly a slave trade. **Gold** and **salt** were the most important goods for most of its history, although enslaved people were also taken north across the desert.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Caravan**: a large group of traders and camels travelling together across the Sahara for safety.
+- **Taghaza**: a place in the Sahara with rich salt mines, on the western trans-Saharan route.
+- **Sijilmasa**: a trading town in Morocco at the northern end of the western trans-Saharan route.
+:::
+
 ## Key points
 
 - Made possible by the **camel, oases, demand for gold and salt, Berber guides, strong states and Islam**.

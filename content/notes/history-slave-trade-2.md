@@ -55,6 +55,13 @@ The **Gullah** people of the coastal **South Carolina and Georgia** in the Unite
 Do not list only economic effects. WASSCE answers on the slave trade should include **population, political, social and technological** effects, each explained with an example.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Plantation**: a large estate in the Americas growing a cash crop such as sugar, cotton or tobacco with the labour of enslaved Africans.
+- **Depopulation**: the loss of a large part of an area's population, as happened in parts of West Africa during the slave trade.
+:::
+
 ## Key points
 
 - West Africa lost **millions of young people**; some areas were **depopulated**.

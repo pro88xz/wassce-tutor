@@ -81,6 +81,14 @@ Wallace-Johnson's career shows how Sierra Leone was part of a **West African** n
 The **1924 Constitution** did **not** give Africans control of government. Officials kept a **majority** in the Legislative Council, only **three** members were elected, and the Protectorate was represented by **nominated** chiefs. Its importance lies in introducing the **elective principle** and **Protectorate representation**.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Constitution of 1924**: the constitution that gave Sierra Leone three elected Colony members and three nominated paramount chiefs in the Legislative Council.
+- **West African Youth League**: the radical movement founded by Wallace-Johnson, active in Sierra Leone from 1938, which brought workers and young people into politics.
+- **Native Administration**: the system introduced in 1937 that gave Protectorate chiefdoms their own treasuries and native courts.
+:::
+
 ## Key points
 
 - **Colony:** Governor, Executive and Legislative Councils, **Freetown City Council (1893)**; **Protectorate:** DCs and paramount chiefs; **Native Administration (1937)**.

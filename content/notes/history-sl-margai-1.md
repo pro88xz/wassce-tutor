@@ -82,6 +82,13 @@ Sir Milton Margai is honoured as Sierra Leone's **founding father**. The **Milto
 At independence Sierra Leone was **not yet a republic**. The **Queen** remained head of state, represented by a **Governor-General**, until Sierra Leone became a **republic on 19 April 1971**.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Governor-General**: the Queen's representative in Sierra Leone from independence in 1961 until the country became a republic in 1971.
+- **Bank of Sierra Leone**: the central bank set up in 1964, which issued the leone, the national currency.
+:::
+
 ## Key points
 
 - At independence: **Queen** as head of state, **Governor-General**, **Prime Minister**, **Parliament**, appeals to the **Privy Council**.

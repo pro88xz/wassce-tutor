@@ -78,6 +78,14 @@ Many families in Sierra Leone have relatives in **Guinea** or **Liberia**, and m
 Do not describe Sierra Leone's foreign relations only in terms of **aid**. Relations also involve **trade, security, shared peoples, diplomacy** and Sierra Leone's own **contributions**, such as peacekeeping and regional leadership.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Mano River Union**: the organisation founded on 3 October 1973 by Sierra Leone and Liberia, later joined by Guinea and Côte d'Ivoire, with its secretariat in Freetown.
+- **Operation Palliser**: the British military intervention of 2000 that helped to save Freetown and end the war.
+- **HIPC** (Heavily Indebted Poor Countries): the debt-relief scheme under which much of Sierra Leone's debt was cancelled in 2006.
+:::
+
 ## Key points
 
 - **Guinea**: troops in 1971, refuge for leaders and refugees, the **Yenga** border dispute; **Liberia**: shared peoples, **Taylor's** role in the war, later cooperation.

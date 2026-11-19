@@ -72,6 +72,13 @@ When a trade route was closed by war, **produce stopped reaching Freetown**, **c
 Before **1896** most of present-day Sierra Leone was **not** British territory. Only the **Colony** (Freetown, the peninsula and some coastal areas) was ruled by Britain; the hinterland was made up of **independent chiefdoms**, many of them bound to the Colony only by **treaties of friendship**.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Hinterland**: the land lying inland, behind the coast and the Colony.
+- **Stipend**: a yearly payment made by the Colony government to chiefs to keep trade routes open and the peace.
+:::
+
 ## Key points
 
 - The **Colony** depended on the **hinterland** for food, produce, trade and customs revenue.

@@ -94,6 +94,14 @@ Sierra Leone was a **founding member of the OAU** in 1963. During the civil war 
 The OAU was **not** founded in Accra. It was founded at **Addis Ababa** in **1963**. Accra hosted the **All-African Peoples' Conference** in 1958, and the AU was launched in **Durban** in 2002.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Organisation of African Unity (OAU)**: the organisation of independent African states founded on 25 May 1963 in Addis Ababa by 32 states.
+- **African Union (AU)**: the body that replaced the OAU, launched on 9 July 2002 in Durban, which can intervene in cases of genocide and war crimes.
+- **Agenda 2063**: the African Union's long-term plan for the development and unity of Africa.
+:::
+
 ## Key points
 
 - **OAU**: founded **25 May 1963**, **Addis Ababa**, **32 states**; aims: **unity, sovereignty, end of colonialism**.

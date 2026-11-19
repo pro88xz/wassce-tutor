@@ -71,6 +71,14 @@ Coastal rulers did not see the early Europeans as conquerors. Traders paid **ren
 Do not say that the Portuguese "discovered" Sierra Leone. The land had been inhabited for thousands of years. Pedro de Sintra was the first **European** known to have reached and named the coast.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Pedro de Sintra**: the Portuguese navigator who in 1462 named the mountains of the peninsula Serra Lyoa (Lion Mountains), the origin of the name Sierra Leone.
+- **Lançados**: Portuguese traders who settled on the coast and married into local families; their descendants became important middlemen.
+- **Royal African Company**: the English company that traded on the Sierra Leone coast from 1672.
+:::
+
 ## Key points
 
 - **1462:** **Pedro de Sintra** named the mountains **Serra Lyoa** (Lion Mountains).

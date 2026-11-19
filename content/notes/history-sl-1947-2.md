@@ -84,6 +84,14 @@ Independence Day, **27 April**, is celebrated every year as a public holiday in 
 Siaka Stevens did **not** oppose independence itself. He opposed the **timing** (he wanted **elections before independence**) and the **defence agreement** with Britain.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Lancaster House conference** (1960): the conference in London, attended by a United Front of Sierra Leone's parties, that agreed the terms of independence.
+- **APC** (All People's Congress): the party founded by Siaka Stevens in 1960 after he refused to sign the independence agreement.
+- **PNP** (People's National Party): the party formed in 1958 by Albert Margai and Siaka Stevens.
+:::
+
 ## Key points
 
 - Stages: **ministers (1953)**, **Chief Minister (1954)**, **House of Representatives (1956/57)**, **Premier and internal self-government (1958)**.

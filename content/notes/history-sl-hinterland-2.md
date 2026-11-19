@@ -70,6 +70,14 @@ The **chiefdoms** of today's Sierra Leone, and the office of **paramount chief**
 The Protectorate was **not** the same as the Colony. The **Colony** (Freetown and nearby areas) had been British since **1808**; the **Protectorate** (the hinterland) was declared only in **1896**, and its people had a different legal status and different courts.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Frontier Police**: the armed force set up in 1890 to keep order in the hinterland and enforce British authority.
+- **Paramount chief**: the highest traditional ruler of a chiefdom, through whom the British ruled the Protectorate.
+- **District Commissioner**: the British official in charge of one of the districts of the Protectorate.
+:::
+
 ## Key points
 
 - **Protectorate declared 31 August 1896** over the hinterland; people were **British-protected persons** under **customary law**.

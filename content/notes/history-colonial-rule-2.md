@@ -99,6 +99,13 @@ Sierra Leone's neighbour **Guinea** was a French colony, so families living acro
 Assimilation was **not** applied to all French colonies. It worked fully only in the **Four Communes of Senegal**. Elsewhere, most Africans remained **subjects** without citizenship. Do not write that "all Africans in French colonies became French citizens".
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Four Communes**: Saint-Louis, Gorée, Rufisque and Dakar, the only places in French West Africa where assimilation was fully applied.
+- **Commandant de cercle**: the French official in charge of a district (cercle) in French West Africa.
+:::
+
 ## Key points
 
 - **Assimilation:** make Africans **French citizens** in culture, language and law; fully applied only in the **Four Communes** (Saint-Louis, Gorée, Rufisque, Dakar).

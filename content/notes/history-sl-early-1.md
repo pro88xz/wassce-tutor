@@ -78,6 +78,14 @@ Many Mende farmers who found **nomoli** figures in their fields kept them as pro
 Do not write that all of Sierra Leone's peoples arrived at the same time or came from one place. The country was settled by **many waves of people** over hundreds of years, from the early Limba and Bullom to the Mane, the Mende and the northern Mande and Fula peoples.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Nomoli**: small soapstone figures of people, made centuries ago and found by farmers in Mende, Kissi and Kono country.
+- **Mane invasions**: the invasions of Mande-speaking warriors from about 1545, which brought new ruling families, iron weapons and warfare to Sierra Leone.
+- **Lingua franca**: a common language used between peoples who speak different languages; in Sierra Leone it is Krio.
+:::
+
 ## Key points
 
 - Early settlement is shown by **Yengema**, **Kamabai**, **nomoli**, **Sapi ivories**, oral traditions and Portuguese accounts.

@@ -90,6 +90,14 @@ The **chiefdom** system in Sierra Leone today, with **paramount chiefs** elected
 Indirect rule did **not** give real power to African rulers. Chiefs ruled **under British control**: the Resident or District Commissioner could **depose** them, and they could not oppose colonial policy. In an essay, show that indirect rule was a method of **colonial control**, not self-government.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Lord Lugard**: the British administrator whose name is linked with indirect rule, first applied in Northern Nigeria.
+- **Native Authority**: under indirect rule, the traditional ruler and council that governed local people under British supervision.
+- **Warrant chiefs**: chiefs appointed by the British in south-eastern Nigeria, where there were no traditional kings.
+:::
+
 ## Key points
 
 - **Indirect rule** = ruling **through traditional rulers** under British supervision; linked with **Lugard** and Northern Nigeria.

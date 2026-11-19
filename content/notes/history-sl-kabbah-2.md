@@ -83,6 +83,14 @@ On **18 January 2002**, thousands gathered at **Lungi** to watch weapons collect
 Kabbah was **not** in power continuously from 1996 to 2007. He was **overthrown** by the **AFRC on 25 May 1997** and spent about ten months in exile in **Guinea** before **ECOMOG** restored him in **March 1998**.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Ahmad Tejan Kabbah**: the former UN official elected President in 1996, restored by ECOMOG in 1998, who led Sierra Leone to the end of the war.
+- **AFRC** (Armed Forces Revolutionary Council): the junta led by Johnny Paul Koroma that seized power on 25 May 1997 and joined with the RUF.
+- **Abidjan Accord** (November 1996): the peace agreement between the Kabbah government and the RUF, which failed.
+:::
+
 ## Key points
 
 - **Kabbah** (former UN official) elected **1996**; **Abidjan Accord (November 1996)** failed.

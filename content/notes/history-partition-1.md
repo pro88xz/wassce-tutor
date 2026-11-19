@@ -81,6 +81,14 @@ In West Africa, **French** expansion from Senegal towards the **Niger** and the 
 Do not say the Scramble happened because Africa was "empty" or "uncivilised". Africa had organised states, trade and governments. The causes lay mainly in **European economic needs and rivalries**, and conquest was made possible by **superior weapons**.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Maxim gun**: an early machine gun that gave European armies overwhelming firepower in the conquest of Africa.
+- **Quinine**: a medicine against malaria that allowed Europeans to survive in tropical Africa.
+- **Suez Canal** (opened 1869): the canal in Egypt linking the Mediterranean and the Red Sea, Britain's short route to India.
+:::
+
 ## Key points
 
 - The **Scramble** (about **1880–1914**) left only **Ethiopia** and **Liberia** independent.

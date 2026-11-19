@@ -104,6 +104,14 @@ Sierra Leone is a **founding member of ECOWAS**. During the civil war, **ECOMOG*
 Do not confuse **ECOWAS** with the **OAU/AU**. ECOWAS is a **regional** economic community of **West African** states, founded in **1975**; the OAU (1963) and AU (2002) are **continental** organisations of all African states.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Decolonisation**: the process by which colonies won their independence, which in Africa ran from the 1950s to the 1990s.
+- **Economic Community of West African States (ECOWAS)**: the organisation founded by the Treaty of Lagos on 28 May 1975 to integrate the economies of West Africa.
+- **ECOMOG**: the West African peacekeeping force of ECOWAS, which served in Liberia and Sierra Leone.
+:::
+
 ## Key points
 
 - Decolonisation: **1950s** North Africa and Ghana; **1960** "Year of Africa"; **1970s** Portuguese colonies; **Zimbabwe 1980, Namibia 1990, South Africa 1994**.

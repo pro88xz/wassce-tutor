@@ -72,6 +72,13 @@ Many of the villages founded for recaptives, such as **Regent, Gloucester, Hasti
 The Liberated Africans did **not** all come from Sierra Leone. Most came from **other parts of Africa**, especially **Yoruba and Igbo** country and the **Congo-Angola** region, because they were freed from slave ships that had loaded captives all along the coast.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Governor Charles MacCarthy**: the governor (1814–1824) who settled Liberated Africans in villages and parishes with churches and schools.
+- **Mixed Commission Courts**: the international courts set up in Freetown in 1819 to try captured slave ships.
+:::
+
 ## Key points
 
 - **1 January 1808:** Sierra Leone became a **Crown Colony** because of the Company's **failure**, **insecurity**, and Britain's need for an **anti-slavery base**.

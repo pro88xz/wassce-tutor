@@ -85,6 +85,14 @@ The old railway still lives on in Freetown's memory: the **Sierra Leone National
 Diamonds were **not** discovered in Sierra Leone until **1930**. In the early colonial period, the main exports were **agricultural**, especially **palm kernels**. Minerals became dominant only in the **1930s**.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Sierra Leone Government Railway**: the railway begun in 1896, which reached Bo in 1903 and Pendembu in 1908, built for trade and control; it closed in the 1970s.
+- **SLST** (Sierra Leone Selection Trust): the company given a monopoly of diamond mining in 1935.
+- **Bo School**: the school founded in 1906 to educate the sons and nominees of chiefs in the Protectorate.
+:::
+
 ## Key points
 
 - **Railway:** begun **1896**; **Bo 1903**; **Pendembu 1908**; branch to **Makeni**; built for trade and control; closed in the **1970s**.

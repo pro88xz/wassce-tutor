@@ -59,6 +59,15 @@ Tens of thousands of **"Liberated Africans" (recaptives)**, freed from slave shi
 The **1807 Act** abolished the **slave trade** for British subjects; it did **not** free people who were already enslaved. **Slavery** itself in the British colonies was abolished only by the **1833 Act**.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Somerset case** (1772): the English court case in which Lord Mansfield ruled that an enslaved man could not be forced to leave England.
+- **William Wilberforce**: the British member of parliament who led the campaign in Parliament against the slave trade.
+- **West Africa Squadron**: the British Royal Navy force, based at Freetown, that captured slave ships after 1807.
+- **Liberated Africans** (recaptives): Africans freed by the West Africa Squadron from slave ships and landed at Freetown.
+:::
+
 ## Key points
 
 - Reasons: **humanitarian and religious** campaigns, **African voices**, **economic change**, **revolutionary ideas and Haiti**, **resistance**, the **Somerset case**.

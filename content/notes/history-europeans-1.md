@@ -72,6 +72,15 @@ Europeans usually **rented** the land from local rulers and depended on African 
 The Portuguese did not come to West Africa mainly for slaves. Their early aims were **gold**, a **sea route to India**, **Christianity** and **rivalry with Muslims**. The slave trade grew later, with the demand for labour in the Americas.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Prince Henry the Navigator**: the Portuguese prince who sponsored voyages of exploration down the West African coast in the 15th century.
+- **Caravel**: a light, fast Portuguese sailing ship used on the voyages along the African coast.
+- **Prester John**: a legendary Christian king thought to rule in Africa or Asia, whom the Portuguese hoped to find as an ally.
+- **Elmina Castle**: the fort built by the Portuguese on the Gold Coast in 1482 to protect their trade, especially in gold.
+:::
+
 ## Key points
 
 - Motives: **gold, sea route to India, Christianity (Prester John), rivalry with Muslims, curiosity, prestige**.
