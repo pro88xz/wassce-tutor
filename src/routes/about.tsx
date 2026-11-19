@@ -56,6 +56,37 @@ const PHOTO_CREDITS = [
       },
     },
   ] as const),
+  // Openly licensed blog cover photos (Wikimedia Commons and similar): imageCredit is "Name via Source".
+  ...BLOG_POSTS.filter((post) => post.imageLicense).map((post) => {
+    const [creator, source = 'Wikimedia Commons'] = post.imageCredit.split(' via ')
+    return [
+      `blog-${post.slug}`,
+      {
+        subject: `${post.title.split(':')[0]} (blog)`,
+        caption: post.imageAlt,
+        credit: {
+          creator,
+          creatorUrl: undefined as string | undefined,
+          source,
+          sourceUrl: post.imageSourceUrl ?? 'https://commons.wikimedia.org/',
+          license: post.imageLicense!.name,
+          licenseUrl: post.imageLicense!.url as string | undefined,
+        },
+      },
+    ] as const
+  }),
+  // Photographs inside blog articles.
+  ...BLOG_POSTS.flatMap((post) => post.sections.flatMap((section) => {
+    const credit = section.figure?.photoCredit
+    return credit ? [[
+      `blog-figure-${section.figure!.image}`,
+      {
+        subject: `${post.title.split(':')[0]} (blog)`,
+        caption: section.figure!.alt,
+        credit: { creator: credit.creator, creatorUrl: undefined as string | undefined, source: credit.source, sourceUrl: credit.sourceUrl, license: credit.license, licenseUrl: credit.licenseUrl as string | undefined },
+      },
+    ] as const] : []
+  })),
   // University photos. "Name via Source — Licence" for openly
   // licensed photos, "Publisher — where" for photos credited to the institution that published them.
   ...UNIVERSITY_GUIDES.map((guide) => {
