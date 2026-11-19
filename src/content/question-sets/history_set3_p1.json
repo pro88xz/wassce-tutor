@@ -1,0 +1,1408 @@
+{
+ "name": "history_set3_p1",
+ "label": "History: set 3 (Sierra Leone to 1945: early peoples, Freetown, the Krio, the Protectorate, the Hut Tax War)",
+ "subject_slug": "history",
+ "papers": [
+  {
+   "id": "098141ab-7cc9-5425-a244-5b88a971e1c4",
+   "topic": "Early Inhabitants and Pre-Colonial Sierra Leone",
+   "title": "Early Inhabitants and Pre-Colonial Sierra Leone: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on early inhabitants and pre-colonial sierra leone, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 140,
+   "questions": [
+    {
+     "id": "d8a76e58-77d2-55e6-9719-2c518119da8f",
+     "key": "hi-se-01",
+     "stem": "Which people are regarded as among the oldest inhabitants of Sierra Leone?",
+     "image_url": null,
+     "explanation": "The Limba of the northern hills, with the Bullom/Sherbro, Kissi, Gola and Krim, are among the earliest known peoples of Sierra Leone.\n\n**Why the other options are wrong**\n\n- the Krio: The Krio formed in Freetown from 1787 onwards.\n- the Mende: The Mende moved in from the south-east in the seventeenth and eighteenth centuries.\n- the Susu: The Susu came from Futa Jallon from the eighteenth century.",
+     "position": 1,
+     "options": [
+      {
+       "id": "748e67f4-a829-5bb2-aa0c-d8df33019048",
+       "label": "A",
+       "content": "the Limba",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6b3c960e-4d3d-54c8-8178-96d9a7922aa0",
+       "label": "B",
+       "content": "the Krio",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "74d9f41b-9fdd-5830-8553-9307425670ce",
+       "label": "C",
+       "content": "the Mende",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d6e8d5ee-3499-5d35-afea-80ea3063cde9",
+       "label": "D",
+       "content": "the Susu",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "64df5821-0b63-5e15-b14c-5ed427a5b7e0",
+     "key": "hi-se-02",
+     "stem": "The Mane invaders who entered Sierra Leone from about 1545 came from the",
+     "image_url": null,
+     "explanation": "The Mane, Mande-speaking warriors, invaded from the south-east from about 1545 to the 1560s, conquering the coastal Bullom and Temne.\n\n**Why the other options are wrong**\n\n- north-west: The Mane came from the south-east, through present-day Liberia.\n- Atlantic Ocean: The Mane came overland, not by sea.\n- Sahara Desert: The Mane were Mande-speakers from the south-east, not desert peoples.",
+     "position": 2,
+     "options": [
+      {
+       "id": "47644dd4-3605-54ea-8953-225bd7918535",
+       "label": "A",
+       "content": "north-west",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f289a00a-60f5-5d9b-adcd-84bace5cb47f",
+       "label": "B",
+       "content": "Atlantic Ocean",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2a55a0e2-4079-5a0a-87c1-7197cfae34ef",
+       "label": "C",
+       "content": "Sahara Desert",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9fe84da6-dc8d-5047-9fc4-b69da6526b81",
+       "label": "D",
+       "content": "south-east",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1b5e7825-1f88-5065-ab58-2812b0b837cb",
+     "key": "hi-se-03",
+     "stem": "Small soapstone figures found by farmers in Mende, Kissi and Kono country are called",
+     "image_url": null,
+     "explanation": "Nomoli are small soapstone figures made centuries ago by the ancestors of local peoples; Mende farmers often kept them as 'rice gods'.\n\n**Why the other options are wrong**\n\n- sowei: Sowei are the helmet masks of the Sande (Bondo) society.\n- Sapi ivories: Sapi ivories are carved ivory objects made for Portuguese buyers.\n- kabaslot: The kabaslot is a Krio women's gown.",
+     "position": 3,
+     "options": [
+      {
+       "id": "de29bb5c-5fac-5b0c-8080-68fb7cf647fc",
+       "label": "A",
+       "content": "nomoli",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4590127d-3112-56d6-9ffc-926ea9f30ab0",
+       "label": "B",
+       "content": "sowei",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "915fc35c-ee83-5645-90d8-e9c7c691882f",
+       "label": "C",
+       "content": "Sapi ivories",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a2dca2f7-2024-5d2e-95c0-73776d101256",
+       "label": "D",
+       "content": "kabaslot",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "189e5c1a-08cc-5b10-a5b0-6f2e62ba12ef",
+     "key": "hi-se-04",
+     "stem": "Which of the following was a function of the Poro society in pre-colonial Sierra Leone?",
+     "image_url": null,
+     "explanation": "The Poro initiated boys, made and enforced laws, controlled trade, settled disputes, helped choose and check chiefs, and could declare war or peace.\n\n**Why the other options are wrong**\n\n- initiating and training girls: That was the role of the women's Sande (Bondo) society.\n- collecting the hut tax for the British: The hut tax came in 1898 under colonial rule.\n- training clergy at Fourah Bay College: Fourah Bay College was founded by the CMS in 1827.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d67ac5f9-eea0-584b-a756-3fba4b18e6f0",
+       "label": "A",
+       "content": "initiating and training girls",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8ff224de-d439-53c9-b6b0-fc69d897780c",
+       "label": "B",
+       "content": "collecting the hut tax for the British",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "510b6d60-e3eb-5e27-9465-316d25f3908e",
+       "label": "C",
+       "content": "training clergy at Fourah Bay College",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f73dba68-76fe-5322-a2bc-751d28658f08",
+       "label": "D",
+       "content": "making laws and checking the power of chiefs",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1350ccb5-6cd1-518d-b669-5cb78f4bec50",
+     "key": "hi-se-05",
+     "stem": "In pre-colonial Sierra Leone, land was owned by",
+     "image_url": null,
+     "explanation": "Land belonged to the lineage or community; the chief held it in trust and could grant strangers the right to use it.\n\n**Why the other options are wrong**\n\n- European traders who bought it: Europeans were treated as strangers given the use of land.\n- individual farmers with written titles: Written land titles came with colonial and modern law.\n- the Governor in Freetown: The Governor ruled the Colony only from 1808.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b4202e7a-d127-5071-a0ff-4dc06fa4934a",
+       "label": "A",
+       "content": "the lineage or community, with the chief holding it in trust",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "753577e3-5043-5ef8-98d7-2196c968b176",
+       "label": "B",
+       "content": "European traders who bought it",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6b9c194b-bc65-5976-a7c3-bbd41d7339e9",
+       "label": "C",
+       "content": "individual farmers with written titles",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "39a004b5-a829-5ca5-8a63-c0528b55044f",
+       "label": "D",
+       "content": "the Governor in Freetown",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "21228d76-527b-5b69-aadb-0b49c9c46f07",
+   "topic": "European Contact and the Slave Trade in Sierra Leone",
+   "title": "European Contact and the Slave Trade in Sierra Leone: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on european contact and the slave trade in sierra leone, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 141,
+   "questions": [
+    {
+     "id": "3f35b302-cfcd-5f6b-9821-7657e913cf2e",
+     "key": "hi-sx-01",
+     "stem": "The Portuguese explorer who named Sierra Leone in 1462 was",
+     "image_url": null,
+     "explanation": "Pedro de Sintra named the mountains of the peninsula 'Serra Lyoa', meaning Lion Mountains, in 1462.\n\n**Why the other options are wrong**\n\n- Prince Henry the Navigator: Prince Henry sponsored voyages but did not reach Sierra Leone.\n- Vasco da Gama: Vasco da Gama reached India in 1498.\n- John Hawkins: John Hawkins was an English slave trader in the 1560s.",
+     "position": 1,
+     "options": [
+      {
+       "id": "49c8dcd4-c0b1-50cc-bef5-4dc05f1d2ba2",
+       "label": "A",
+       "content": "Prince Henry the Navigator",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c2ad05a9-e703-5809-89e6-93c77d57b6d9",
+       "label": "B",
+       "content": "Pedro de Sintra",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "669c37b9-72ee-5e39-9ec7-93d22ee8186e",
+       "label": "C",
+       "content": "Vasco da Gama",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d78074f7-afdf-5b5f-a6e7-01ef1da3457f",
+       "label": "D",
+       "content": "John Hawkins",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1b747de4-4f56-5d19-a557-c7c2e2875185",
+     "key": "hi-sx-02",
+     "stem": "The Caulkers, Tuckers and Clevelands of the Sierra Leone coast were",
+     "image_url": null,
+     "explanation": "European traders married into local ruling families; their descendants, such as the Caulkers, Tuckers and Clevelands, became powerful middlemen and chiefs.\n\n**Why the other options are wrong**\n\n- Portuguese Jesuit missionaries: The Jesuit mission was led by Baltasar Barreira from 1605.\n- leaders of the Nova Scotian settlers: Nova Scotian leaders included Thomas Peters and David George.\n- British colonial governors: Governors included Thompson, MacCarthy and Cardew.",
+     "position": 2,
+     "options": [
+      {
+       "id": "9665656f-4c54-5777-a0ef-91f034aafdf7",
+       "label": "A",
+       "content": "Portuguese Jesuit missionaries",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0650583e-63e3-5266-9a57-06b1934c5566",
+       "label": "B",
+       "content": "leaders of the Nova Scotian settlers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b0a7b5ba-51f5-54aa-a512-b7d4a609d95b",
+       "label": "C",
+       "content": "Afro-European trading families",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0704baa1-9730-5f1c-b2af-205c408df1a4",
+       "label": "D",
+       "content": "British colonial governors",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "127b4e42-3d0b-5b9f-aba2-b33896a6850c",
+     "key": "hi-sx-03",
+     "stem": "Many captives shipped from Bunce Island went to South Carolina and Georgia because planters there valued their skill in",
+     "image_url": null,
+     "explanation": "Africans from the 'Rice Coast', including Sierra Leone, knew how to grow rice, so rice planters in South Carolina and Georgia paid high prices for them.\n\n**Why the other options are wrong**\n\n- cotton spinning: The planters wanted their knowledge of growing rice.\n- gold mining: South Carolina and Georgia planters grew rice, not gold.\n- sugar refining: Sugar was grown mainly in the Caribbean and Brazil.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d2e69395-f738-58d2-b912-d72a3a1e74e2",
+       "label": "A",
+       "content": "cotton spinning",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c755cc35-95d3-5754-9a6d-a642dd5b2480",
+       "label": "B",
+       "content": "gold mining",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "62cae2d1-172e-5050-ac37-e9409ba8f1b8",
+       "label": "C",
+       "content": "sugar refining",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b875acae-ece9-5a7c-9d22-c6c3cf177c99",
+       "label": "D",
+       "content": "rice farming",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "913c5767-9202-5c28-8080-7eb25be7b7a0",
+     "key": "hi-sx-04",
+     "stem": "Sengbe Pieh is famous for",
+     "image_url": null,
+     "explanation": "Sengbe Pieh, a Mende captive, led the Amistad revolt in July 1839; the US Supreme Court freed the captives in 1841, and they returned home in 1842.\n\n**Why the other options are wrong**\n\n- founding the Province of Freedom in 1787: The Province of Freedom was founded by the Black Poor under Sharp's plan.\n- leading the northern rising of 1898: Bai Bureh led the northern rising of 1898.\n- becoming the first African Anglican bishop: Samuel Ajayi Crowther became bishop in 1864.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d87a02f0-34e9-56c3-8e6b-79d42f766b01",
+       "label": "A",
+       "content": "leading the revolt on the slave ship Amistad in 1839",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9ee44e81-5592-532c-b8bc-3744d698eb67",
+       "label": "B",
+       "content": "founding the Province of Freedom in 1787",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "da3bdc70-ffd6-5ec8-b263-ae0df0adbde8",
+       "label": "C",
+       "content": "leading the northern rising of 1898",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "65ad2f08-a018-543b-ac06-fb4b5085451b",
+       "label": "D",
+       "content": "becoming the first African Anglican bishop",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c9f17d3a-f31d-56cf-a83d-2b9662b8f6e9",
+     "key": "hi-sx-05",
+     "stem": "After 1807, the main centre of the illegal slave trade on the Sierra Leone coast was the",
+     "image_url": null,
+     "explanation": "Spanish and Portuguese traders such as Pedro Blanco ran slave barracoons at Lomboko in the Gallinas until the Royal Navy attack of 1840.\n\n**Why the other options are wrong**\n\n- Freetown peninsula: Freetown was the base for suppressing the trade.\n- Loma Mountains: The Loma Mountains are inland, not a slave-trading port.\n- Isles de Los: The Isles de Los were ceded to Britain in 1818 and were not the main illegal centre.",
+     "position": 5,
+     "options": [
+      {
+       "id": "8ecc30af-bb8e-597e-99b7-2e0f4ef94f7b",
+       "label": "A",
+       "content": "Freetown peninsula",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "79bdcf85-6840-5a2f-affd-0f387df71f7c",
+       "label": "B",
+       "content": "Gallinas",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "93bbb730-9ca8-51dd-83dd-5941b6cc3388",
+       "label": "C",
+       "content": "Loma Mountains",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "abad9c08-8460-5d98-987a-2ab76d7539aa",
+       "label": "D",
+       "content": "Isles de Los",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5c3040df-513c-5b07-bf06-7b5ff75a13e9",
+   "topic": "The Founding of Freetown and the Settlement Colony",
+   "title": "The Founding of Freetown and the Settlement Colony: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the founding of freetown and the settlement colony, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 142,
+   "questions": [
+    {
+     "id": "937eb477-7645-5820-b472-c971126a8473",
+     "key": "hi-ff-01",
+     "stem": "The Province of Freedom was founded in 1787 by settlers mainly from",
+     "image_url": null,
+     "explanation": "About 400 settlers, mostly the Black Poor of London, founded the Province of Freedom in May 1787 under Granville Sharp's plan.\n\n**Why the other options are wrong**\n\n- Nova Scotia: The Nova Scotians arrived in 1792 and founded Freetown.\n- Jamaica: The Jamaican Maroons arrived in 1800.\n- captured slave ships: Liberated Africans were landed from 1808.",
+     "position": 1,
+     "options": [
+      {
+       "id": "1628b24a-a934-5827-abdc-cc3561041fc9",
+       "label": "A",
+       "content": "Nova Scotia",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b281a955-e16e-5dbd-83d0-2e43dbc389e7",
+       "label": "B",
+       "content": "Jamaica",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8c9c8c2e-fd18-54c0-a5b5-ce5369dff67b",
+       "label": "C",
+       "content": "the Black Poor of London",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ac01ab33-e486-5219-8c72-517ec880d2c2",
+       "label": "D",
+       "content": "captured slave ships",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6ddde8af-dfa9-511e-a59a-c1b112739e38",
+     "key": "hi-ff-02",
+     "stem": "The land grant to the settlers of 1787 was confirmed in 1788 by",
+     "image_url": null,
+     "explanation": "King Tom, a Koya Temne sub-chief, granted land in 1787; the overlord King Naimbana confirmed the grant in 1788.\n\n**Why the other options are wrong**\n\n- King Jimmy: King Jimmy burned Granville Town in 1789.\n- Bai Bureh: Bai Bureh led the 1898 northern rising.\n- Sengbe Pieh: Sengbe Pieh led the Amistad revolt in 1839.",
+     "position": 2,
+     "options": [
+      {
+       "id": "6ab09a50-ec72-5ddb-bab8-94614917d07a",
+       "label": "A",
+       "content": "King Jimmy",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c24c40da-b1b3-5d12-8b39-47c4a1714022",
+       "label": "B",
+       "content": "Bai Bureh",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b9d7e877-e24d-5f81-8190-af5a4e81b2b9",
+       "label": "C",
+       "content": "Sengbe Pieh",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "72afc03b-a515-570e-8095-c4b0bedeb53b",
+       "label": "D",
+       "content": "King Naimbana",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2e8aa4c9-aa12-5fb1-adb5-8c7e95d5f38a",
+     "key": "hi-ff-03",
+     "stem": "Freetown was founded in 1792 by settlers from",
+     "image_url": null,
+     "explanation": "About 1,190 Nova Scotians, Black Loyalists from the American War of Independence, sailed from Halifax in January 1792 with John Clarkson and founded Freetown.\n\n**Why the other options are wrong**\n\n- London: The Black Poor from London founded the Province of Freedom in 1787.\n- Jamaica: The Jamaican Maroons arrived in 1800.\n- Liberia: Liberia was founded later, in 1822.",
+     "position": 3,
+     "options": [
+      {
+       "id": "46e50bc6-3cb6-5f09-a9fa-7e0db1f1a29f",
+       "label": "A",
+       "content": "Nova Scotia",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2429c1c5-e3dc-5704-a487-3b8671d9b397",
+       "label": "B",
+       "content": "London",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5c4f13ae-0291-5c11-9c9c-ea67e234fc3d",
+       "label": "C",
+       "content": "Jamaica",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f24e2873-f2de-5dce-b76d-8707a545c7c4",
+       "label": "D",
+       "content": "Liberia",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "08c9de3c-2781-5fe0-b188-4e03545af92d",
+     "key": "hi-ff-04",
+     "stem": "Which of the following was a cause of the Nova Scotian rising of 1800?",
+     "image_url": null,
+     "explanation": "Settlers resented quitrents (land rents), the shortage of land and the Company's refusal of self-government, made worse by the 1799 charter.\n\n**Why the other options are wrong**\n\n- the introduction of the hut tax: The hut tax was introduced in the Protectorate in 1898.\n- the arrival of the Liberated Africans: Liberated Africans arrived from 1808.\n- the Berlin Conference: The Berlin Conference was in 1884–85.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d497d86c-97e0-5a19-9692-250666745c08",
+       "label": "A",
+       "content": "the introduction of the hut tax",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "111a929b-1262-585a-9fe9-cd25c5866a6d",
+       "label": "B",
+       "content": "anger over quitrents demanded by the Sierra Leone Company",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0e578ee3-3beb-5c3b-8b21-ab62f08e1759",
+       "label": "C",
+       "content": "the arrival of the Liberated Africans",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b5430f90-1951-5c6a-9546-78cc58359181",
+       "label": "D",
+       "content": "the Berlin Conference",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0562a3b7-1027-5790-b17e-27a38cb2be06",
+     "key": "hi-ff-05",
+     "stem": "Sierra Leone became a British Crown Colony on",
+     "image_url": null,
+     "explanation": "The bankrupt Sierra Leone Company handed the colony to the British Crown on 1 January 1808.\n\n**Why the other options are wrong**\n\n- 31 August 1896: That date marks the declaration of the Protectorate.\n- 27 April 1961: That date marks independence.\n- 11 March 1792: 1792 was the founding of Freetown by the Nova Scotians.",
+     "position": 5,
+     "options": [
+      {
+       "id": "5625b7c1-160b-5fe2-bd9c-838b2a11fcc4",
+       "label": "A",
+       "content": "31 August 1896",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0cb18671-4f68-5ea6-98f0-1d82bbee99a5",
+       "label": "B",
+       "content": "27 April 1961",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ba0bf9ff-c5dc-54dd-8952-81888419b064",
+       "label": "C",
+       "content": "1 January 1808",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0b14cf82-53e9-595d-9d5f-f87a33448ae3",
+       "label": "D",
+       "content": "11 March 1792",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8c089bc2-622f-5010-a2bb-abbe25bf991d",
+   "topic": "The Crown Colony and the Emergence of the Krio",
+   "title": "The Crown Colony and the Emergence of the Krio: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the crown colony and the emergence of the krio, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 143,
+   "questions": [
+    {
+     "id": "953f7011-73c2-5d19-9787-d6b320dc1af0",
+     "key": "hi-kr-01",
+     "stem": "The Liberated Africans landed at Freetown were",
+     "image_url": null,
+     "explanation": "Liberated Africans (recaptives) were freed from captured slave ships by the West Africa Squadron and landed at Freetown from 1808 to the 1860s.\n\n**Why the other options are wrong**\n\n- Black Loyalists from Nova Scotia: Those were the Nova Scotians of 1792.\n- descendants of the Mane invaders: The Mane invaded in the sixteenth century.\n- Krio traders returning from Lagos: The Saro went from Freetown to Lagos, not the reverse.",
+     "position": 1,
+     "options": [
+      {
+       "id": "786809c5-72d2-54c1-af73-6a8c3c4e4116",
+       "label": "A",
+       "content": "Black Loyalists from Nova Scotia",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dbbd20cb-51ae-5924-bbaa-10f11700b6dc",
+       "label": "B",
+       "content": "descendants of the Mane invaders",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a96eb2a2-847a-5bcc-b92b-a85d08c79a66",
+       "label": "C",
+       "content": "Krio traders returning from Lagos",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "63d917f6-66b2-5a14-b4db-c9755aa6a62e",
+       "label": "D",
+       "content": "Africans freed by the Royal Navy from slave ships",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aba7a16b-80a6-5034-8246-a3e39e3117e4",
+     "key": "hi-kr-02",
+     "stem": "Which governor settled Liberated Africans in villages such as Regent, Gloucester and Wellington?",
+     "image_url": null,
+     "explanation": "Governor Charles MacCarthy (1814–1824) settled recaptives in parish villages run by CMS missionaries, each with a church and school.\n\n**Why the other options are wrong**\n\n- Frederic Cardew: Cardew introduced the hut tax in 1898.\n- Hubert Stevenson: Stevenson proposed the 1951 constitution.\n- Alexander Ransford Slater: Slater gave his name to the 1924 Constitution.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f6e12931-4d90-5d9c-813f-3f28b5992bbb",
+       "label": "A",
+       "content": "Charles MacCarthy",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b7fdc6b6-6228-55b9-a908-b99a6059b802",
+       "label": "B",
+       "content": "Frederic Cardew",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dc725877-e584-5499-b597-da09062c6f01",
+       "label": "C",
+       "content": "Hubert Stevenson",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "204a30da-231a-590f-b079-3815a904ce31",
+       "label": "D",
+       "content": "Alexander Ransford Slater",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d6b29a60-9dcf-56d6-be1c-79679633dffc",
+     "key": "hi-kr-03",
+     "stem": "Fourah Bay College was founded in 1827 by the",
+     "image_url": null,
+     "explanation": "The Church Missionary Society (CMS) founded Fourah Bay College in 1827; its first student was Samuel Ajayi Crowther.\n\n**Why the other options are wrong**\n\n- Sierra Leone Company: The Company had handed over to the Crown in 1808.\n- Royal African Company: The Royal African Company was a slave-trading company.\n- United Africa Company: The UAC was a trading company formed in 1929.",
+     "position": 3,
+     "options": [
+      {
+       "id": "40193405-a5dc-5407-9382-b550118e4cbe",
+       "label": "A",
+       "content": "Sierra Leone Company",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ca5e9d43-89b1-5107-a3b7-3b17eb2f15b0",
+       "label": "B",
+       "content": "Church Missionary Society",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "fa1046d9-6be1-5003-ab38-fed8db4d88e1",
+       "label": "C",
+       "content": "Royal African Company",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c089a563-4984-5ed4-ae9f-cfecc03c903d",
+       "label": "D",
+       "content": "United Africa Company",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "06a7ecbe-7ae9-5b8f-8376-61eb4a1dee89",
+     "key": "hi-kr-04",
+     "stem": "Freetown was called the 'Athens of West Africa' because of its",
+     "image_url": null,
+     "explanation": "Freetown's mission schools, the CMS Grammar School and Fourah Bay College produced teachers, clergy, lawyers and doctors for all of West Africa.\n\n**Why the other options are wrong**\n\n- ancient Greek ruins: The name is a comparison with Athens as a centre of learning.\n- large number of Greek traders: The name refers to education, not traders.\n- role as the capital of the Sokoto Caliphate: Sokoto was the capital of the caliphate in Nigeria.",
+     "position": 4,
+     "options": [
+      {
+       "id": "91d00b8f-b22e-5c45-b862-58b240321a3a",
+       "label": "A",
+       "content": "ancient Greek ruins",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d3fcd308-2f46-586e-92f0-b1b816394752",
+       "label": "B",
+       "content": "large number of Greek traders",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fc48d7c9-2135-5820-ac9c-e8f86902fdd9",
+       "label": "C",
+       "content": "schools and Fourah Bay College, which educated Africans from across West Africa",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "cec3e3b7-13c4-5e8f-ade6-0e8ac1a5db80",
+       "label": "D",
+       "content": "role as the capital of the Sokoto Caliphate",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "522fd8cf-c4fb-5f43-8cef-b8e469c4af98",
+     "key": "hi-kr-05",
+     "stem": "Krio and recaptives who settled in Lagos and Abeokuta were known as",
+     "image_url": null,
+     "explanation": "From the 1830s and 1840s many Krio and recaptives returned to Yoruba country, where they were called Saro.\n\n**Why the other options are wrong**\n\n- Aku: The Aku are Muslim Krio, mainly of Yoruba descent, in Freetown.\n- Maroons: The Maroons came from Jamaica to Freetown in 1800.\n- évolués: Évolués were Africans assimilated to French culture.",
+     "position": 5,
+     "options": [
+      {
+       "id": "39868ea9-8a52-5718-82fc-3966069582df",
+       "label": "A",
+       "content": "Aku",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0b837ee3-81c3-5be0-afce-29c738ea8dbd",
+       "label": "B",
+       "content": "Maroons",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "554bad45-b047-58d4-af79-03db3f8e8ca2",
+       "label": "C",
+       "content": "évolués",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "674748fd-6793-5acb-9bc8-9c7b7aa05405",
+       "label": "D",
+       "content": "Saro",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b639063a-0933-5f04-8c81-d375c1799ace",
+   "topic": "The Colony and the Hinterland",
+   "title": "The Colony and the Hinterland: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the colony and the hinterland, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 144,
+   "questions": [
+    {
+     "id": "09499ec8-c523-5149-ac98-8c5eecd777fe",
+     "key": "hi-ch-01",
+     "stem": "Before 1896, the Colony government mainly dealt with chiefs in the hinterland through",
+     "image_url": null,
+     "explanation": "The Colony signed treaties with chiefs to keep roads open and end the slave trade, paying stipends, and used expeditions only when trade was badly threatened.\n\n**Why the other options are wrong**\n\n- direct rule by District Commissioners: District Commissioners came with the Protectorate in 1896.\n- the indigénat code: The indigénat was used in French colonies.\n- membership of ECOWAS: ECOWAS was founded in 1975.",
+     "position": 1,
+     "options": [
+      {
+       "id": "fae85a66-c073-5410-be56-a76e7db0be6f",
+       "label": "A",
+       "content": "treaties of friendship and yearly stipends",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a5377c31-b17a-5585-83e6-793f93be3b3f",
+       "label": "B",
+       "content": "direct rule by District Commissioners",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e88f3313-d53f-5b21-ac99-4a96effa1c52",
+       "label": "C",
+       "content": "the indigénat code",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dc15edff-8ed8-5ee1-a323-389be7b76657",
+       "label": "D",
+       "content": "membership of ECOWAS",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "80589d96-f409-5ac9-a252-d054bc73cf08",
+     "key": "hi-ch-02",
+     "stem": "Which product became the main export of the Sierra Leone hinterland by the late nineteenth century?",
+     "image_url": null,
+     "explanation": "By the late nineteenth century palm kernels and palm oil, mainly from Mende country and the Sherbro, were the main exports.\n\n**Why the other options are wrong**\n\n- diamonds: Diamonds were discovered only in 1930.\n- iron ore: Iron ore exports from Marampa began in 1933.\n- cocoa: Cocoa became important only in the twentieth century.",
+     "position": 2,
+     "options": [
+      {
+       "id": "be846934-8332-5afe-8edf-621cde47374c",
+       "label": "A",
+       "content": "diamonds",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "36a2d4a0-f5e2-51fd-9d2d-76c3f47aa60a",
+       "label": "B",
+       "content": "palm kernels",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d61b916f-e451-5173-9fcb-2664850e0efa",
+       "label": "C",
+       "content": "iron ore",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5b569b23-4d71-5248-a962-86d17682d867",
+       "label": "D",
+       "content": "cocoa",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "06777cfb-fb83-5a36-b467-3cb0edb25cad",
+     "key": "hi-ch-03",
+     "stem": "The Sierra Leone Protectorate was declared on",
+     "image_url": null,
+     "explanation": "Britain declared the Protectorate over the hinterland on 31 August 1896.\n\n**Why the other options are wrong**\n\n- 1 January 1808: That was when Sierra Leone became a Crown Colony.\n- 1 January 1898: That was when the hut tax began.\n- 27 April 1961: That was independence day.",
+     "position": 3,
+     "options": [
+      {
+       "id": "23a07f7f-030d-5670-b145-69e2c82571a4",
+       "label": "A",
+       "content": "1 January 1808",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "04483bed-b8ec-58dd-8551-855e1dd194fc",
+       "label": "B",
+       "content": "1 January 1898",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b3bc285c-4acb-5449-a318-8ca552aef9fe",
+       "label": "C",
+       "content": "31 August 1896",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4b8cb5a9-d8b2-538a-8170-870479e06469",
+       "label": "D",
+       "content": "27 April 1961",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d5026517-9a41-51bb-8c35-b32432ba7b40",
+     "key": "hi-ch-04",
+     "stem": "One reason Britain declared the Protectorate in 1896 was to",
+     "image_url": null,
+     "explanation": "Britain wanted to stop French expansion, protect trade routes, end wars and the slave trade, meet the rule of effective occupation and raise revenue.\n\n**Why the other options are wrong**\n\n- hand Sierra Leone over to Liberia: Britain fixed the border with Liberia, it did not hand over land.\n- end the Sierra Leone Company's rule: The Company had handed over to the Crown in 1808.\n- prepare for independence: Independence came only in 1961.",
+     "position": 4,
+     "options": [
+      {
+       "id": "3a21cc7d-86a8-52be-a0ff-2b82d75f2bea",
+       "label": "A",
+       "content": "hand Sierra Leone over to Liberia",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b199426a-ff3d-58f8-939a-21d98887e800",
+       "label": "B",
+       "content": "end the Sierra Leone Company's rule",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "10f17fca-ae45-514c-b550-e77672746e9c",
+       "label": "C",
+       "content": "prepare for independence",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7d71e5b0-fc4e-5e14-aee1-ad1a5703ba81",
+       "label": "D",
+       "content": "stop French expansion from cutting Freetown off from its hinterland",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bef06c4a-c010-5248-a599-451ba7c102b6",
+     "key": "hi-ch-05",
+     "stem": "The Frontier Police of Sierra Leone was created in",
+     "image_url": null,
+     "explanation": "The Frontier Police was formed in 1890 to keep order along the borders and trade routes, preparing the way for the Protectorate.\n\n**Why the other options are wrong**\n\n- 1808: 1808 was the year of the Crown Colony.\n- 1896: 1896 was the year the Protectorate was declared.\n- 1924: 1924 was the year of the Slater Constitution.",
+     "position": 5,
+     "options": [
+      {
+       "id": "6d761459-06a2-5c21-b04a-fc3bf2e664ef",
+       "label": "A",
+       "content": "1808",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "177684dd-0053-5083-937c-e2dfba9ad4c8",
+       "label": "B",
+       "content": "1890",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1b67f2b5-b3cc-58b6-b475-9a1100d59f55",
+       "label": "C",
+       "content": "1896",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "62322288-980e-5567-93af-fce49c401e37",
+       "label": "D",
+       "content": "1924",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eb328db5-26f1-595c-8205-490cbf5762c3",
+   "topic": "The Protectorate and the Hut Tax War",
+   "title": "The Protectorate and the Hut Tax War: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the protectorate and the hut tax war, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 145,
+   "questions": [
+    {
+     "id": "3a23f240-c335-52ee-9220-7f99e94662f9",
+     "key": "hi-ht-01",
+     "stem": "The hut tax in the Sierra Leone Protectorate was introduced by Governor",
+     "image_url": null,
+     "explanation": "Governor Frederic Cardew introduced the hut tax from 1 January 1898 to make the Protectorate pay for its administration.\n\n**Why the other options are wrong**\n\n- Charles MacCarthy: MacCarthy governed from 1814 to 1824.\n- Thomas Perronet Thompson: Thompson was the first Crown governor, 1808–1810.\n- Hubert Stevenson: Stevenson proposed the 1951 constitution.",
+     "position": 1,
+     "options": [
+      {
+       "id": "2a321ce3-5952-5bce-ab2f-a57f78d4af38",
+       "label": "A",
+       "content": "Frederic Cardew",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e8084550-6d1d-56d0-ae8d-4021d1cfc73e",
+       "label": "B",
+       "content": "Charles MacCarthy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "62e7c1de-d467-5f9f-aafb-974b1389bee1",
+       "label": "C",
+       "content": "Thomas Perronet Thompson",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a9c2d20d-7a19-511c-8a81-ac7e111b3b3d",
+       "label": "D",
+       "content": "Hubert Stevenson",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4261dad2-60c5-5cab-9dc2-e0de2736788a",
+     "key": "hi-ht-02",
+     "stem": "Bai Bureh, leader of the northern rising of 1898, was the ruler of",
+     "image_url": null,
+     "explanation": "Bai Bureh was the Temne ruler of Kasseh, near Port Loko, who led the northern rising from February to November 1898.\n\n**Why the other options are wrong**\n\n- Kono: Kono is in the east, a diamond area.\n- Ejisu: Ejisu in Asante was Yaa Asantewaa's home.\n- Opobo: Opobo was Jaja's state in the Niger Delta.",
+     "position": 2,
+     "options": [
+      {
+       "id": "44f4eb79-1004-5f6d-b37d-40f7a32b235b",
+       "label": "A",
+       "content": "Kono",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "40dd40da-4e3b-5e5b-9f82-33bcabafb8cd",
+       "label": "B",
+       "content": "Kasseh",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "88c9bb46-2ec1-5149-b991-cedcb6bd9cf5",
+       "label": "C",
+       "content": "Ejisu",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4ac437dc-0854-55b3-9ce6-261e283b7bca",
+       "label": "D",
+       "content": "Opobo",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7e87385f-e153-5f95-93a6-28061a223cf2",
+     "key": "hi-ht-03",
+     "stem": "Which of the following was a cause of the Hut Tax War?",
+     "image_url": null,
+     "explanation": "Causes included the tax itself, poverty, Frontier Police abuses, the loss of chiefs' powers, fear for land and anger at Krio and missionaries.\n\n**Why the other options are wrong**\n\n- the arrival of the Nova Scotians: The Nova Scotians arrived in 1792.\n- the discovery of diamonds in Kono: Diamonds were discovered in 1930.\n- the 1924 Constitution: The 1924 Constitution came long after the war.",
+     "position": 3,
+     "options": [
+      {
+       "id": "eee22e1a-efbf-5fed-9101-8b77cb25319f",
+       "label": "A",
+       "content": "the arrival of the Nova Scotians",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c7d07401-28f5-517c-91bc-d0dfb1082ed9",
+       "label": "B",
+       "content": "the discovery of diamonds in Kono",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0d9f36ae-c971-50b5-9b95-2cf73e0d7259",
+       "label": "C",
+       "content": "brutal collection of the tax by the Frontier Police",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3af97216-69d0-5a0a-993d-0f9c9b8df13d",
+       "label": "D",
+       "content": "the 1924 Constitution",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cf048a32-ba8e-544f-b33e-95d9d188ee74",
+     "key": "hi-ht-04",
+     "stem": "The Chalmers Report of 1899 recommended that",
+     "image_url": null,
+     "explanation": "Sir David Chalmers blamed the hut tax and the Frontier Police and recommended abolishing the tax, but Cardew and Chamberlain rejected this and kept it.\n\n**Why the other options are wrong**\n\n- Bai Bureh should be made Governor: The report did not recommend this.\n- the Protectorate should be given independence: Independence came only in 1961.\n- the tax should be doubled: Chalmers blamed the tax and urged its abolition.",
+     "position": 4,
+     "options": [
+      {
+       "id": "0a82c583-c7c0-5ce2-b60d-4f1bb4071ffc",
+       "label": "A",
+       "content": "Bai Bureh should be made Governor",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5eb65f19-acfa-5376-ab43-7cbb37b1b085",
+       "label": "B",
+       "content": "the Protectorate should be given independence",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e69afbaa-a97d-5a90-a8bf-ed41d3bd53a9",
+       "label": "C",
+       "content": "the tax should be doubled",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f29500ec-abd9-5c8b-9611-6c5b2d2e7372",
+       "label": "D",
+       "content": "the hut tax should be abolished",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "02e79e39-1077-5ebe-ba86-f25941ed2506",
+     "key": "hi-ht-05",
+     "stem": "One long-term effect of the Hut Tax War was",
+     "image_url": null,
+     "explanation": "The killing of Krio traders and missionaries in the Mende rising left lasting bitterness between the Colony and the Protectorate.\n\n**Why the other options are wrong**\n\n- the end of British rule in Sierra Leone: British rule was completed, not ended.\n- the abolition of the hut tax: The tax was kept.\n- the immediate founding of the SLPP: The SLPP was founded in 1951.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d6bd33e1-bebe-5096-95a1-b557c807824b",
+       "label": "A",
+       "content": "mistrust between the Krio of the Colony and the peoples of the Protectorate",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "017fbe19-35a9-512d-a6a8-f564231b2168",
+       "label": "B",
+       "content": "the end of British rule in Sierra Leone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2ec82c5a-4ad8-5d1d-9311-a1321486c238",
+       "label": "C",
+       "content": "the abolition of the hut tax",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fc03711a-9a48-591c-9fda-e330b96d2fe3",
+       "label": "D",
+       "content": "the immediate founding of the SLPP",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fc819126-f750-58d8-9f93-bb7a2891aa85",
+   "topic": "Colonial Sierra Leone in the Early 20th Century",
+   "title": "Colonial Sierra Leone in the Early 20th Century: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on colonial sierra leone in the early 20th century, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 146,
+   "questions": [
+    {
+     "id": "4dab9dfa-1d76-54a0-9a74-adfb0cc9c794",
+     "key": "hi-co-01",
+     "stem": "The Sierra Leone Government Railway reached Pendembu in",
+     "image_url": null,
+     "explanation": "Begun in 1896, the railway reached Bo in 1903 and its terminus at Pendembu, near the Liberian border, in 1908.\n\n**Why the other options are wrong**\n\n- 1896: Construction began in 1896 at Freetown.\n- 1903: The railway reached Bo in 1903.\n- 1933: 1933 was when iron-ore exports began on the Marampa–Pepel line.",
+     "position": 1,
+     "options": [
+      {
+       "id": "5793ec28-1aa8-51a8-831c-959d7223f07c",
+       "label": "A",
+       "content": "1896",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "653993ba-58ed-560f-b254-c81c7663db85",
+       "label": "B",
+       "content": "1903",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e5b17454-a74b-597a-894a-4a6a26724cd8",
+       "label": "C",
+       "content": "1908",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "bedb55f5-2738-5b47-841d-85ae81480193",
+       "label": "D",
+       "content": "1933",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c671f2e7-4d4b-5321-8fab-445e0f3500a1",
+     "key": "hi-co-02",
+     "stem": "Diamonds were discovered in Kono in",
+     "image_url": null,
+     "explanation": "The colonial Geological Survey discovered diamonds in Kono in 1930; the SLST received a mining monopoly from 1935.\n\n**Why the other options are wrong**\n\n- 1896: 1896 was the year of the Protectorate.\n- 1951: 1951 was the year of the Stevenson Constitution.\n- 1961: 1961 was the year of independence.",
+     "position": 2,
+     "options": [
+      {
+       "id": "0081dec8-34ac-545c-ac0c-f3377bea154c",
+       "label": "A",
+       "content": "1896",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2e62cdfb-6ce5-5fb1-a2b1-24d9bab595b8",
+       "label": "B",
+       "content": "1930",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8445e32c-7d62-5580-a194-9aa3888f7ac0",
+       "label": "C",
+       "content": "1951",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "70d1aab5-b5ef-5786-b184-18d1c8055292",
+       "label": "D",
+       "content": "1961",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7374bf78-8cbf-596a-a02e-1beb45116f31",
+     "key": "hi-co-03",
+     "stem": "Bo School was founded in 1906 to educate",
+     "image_url": null,
+     "explanation": "Bo School was founded in 1906 for the sons and nominees of chiefs, to train future chiefs and clerks for the Protectorate.\n\n**Why the other options are wrong**\n\n- Liberated Africans in Freetown: Liberated Africans were educated in Colony mission schools.\n- girls from the Colony: Bo School was for boys from the Protectorate.\n- army officers: Bo School trained future chiefs and clerks.",
+     "position": 3,
+     "options": [
+      {
+       "id": "45c54ba4-00f7-59d6-80c0-22cc2e34d9f9",
+       "label": "A",
+       "content": "Liberated Africans in Freetown",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9a201bfc-827d-5386-ab14-80925f4344ea",
+       "label": "B",
+       "content": "the sons and nominees of chiefs",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b66d13e7-8f38-5e70-9bd9-f2afdb277336",
+       "label": "C",
+       "content": "girls from the Colony",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "74cc5def-5d37-522a-9621-0a46f17dea20",
+       "label": "D",
+       "content": "army officers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d752a741-e83f-52cc-be7d-fbc752b8bb12",
+     "key": "hi-co-04",
+     "stem": "The 1924 Constitution of Sierra Leone was important because it",
+     "image_url": null,
+     "explanation": "The 1924 (Slater) Constitution introduced three elected members for the Colony and three nominated paramount chiefs for the Protectorate, though officials kept a majority.\n\n**Why the other options are wrong**\n\n- gave Sierra Leone independence: Independence came in 1961.\n- abolished the Legislative Council: The Legislative Council was replaced only in 1956.\n- created a one-party state: The one-party state was introduced in 1978.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7a39da33-2fda-595a-bb8c-0fd5c8edbc29",
+       "label": "A",
+       "content": "gave Sierra Leone independence",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1a701f26-0b8c-52f0-89fa-71157efbb44a",
+       "label": "B",
+       "content": "abolished the Legislative Council",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ca945b9f-e5f3-5b8e-924f-54912919f566",
+       "label": "C",
+       "content": "introduced elected African members and Protectorate representation",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "564d8dbc-f192-5bff-aaa2-cc805cd74c0e",
+       "label": "D",
+       "content": "created a one-party state",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5ca415bc-c13c-53f1-9039-9102f409047d",
+     "key": "hi-co-05",
+     "stem": "I. T. A. Wallace-Johnson was detained by the colonial government in",
+     "image_url": null,
+     "explanation": "At the start of the Second World War in 1939, the government used emergency powers to detain Wallace-Johnson, leader of the West African Youth League.\n\n**Why the other options are wrong**\n\n- 1919: 1919 was the year of the Freetown riots.\n- 1926: 1926 was the year of the railway strike.\n- 1951: In 1951 the Stevenson Constitution came into force.",
+     "position": 5,
+     "options": [
+      {
+       "id": "8f25969a-df5d-5548-84c4-53b87d6afcb6",
+       "label": "A",
+       "content": "1919",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a25256a3-50af-5203-aaa0-50124496f120",
+       "label": "B",
+       "content": "1926",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1f067a19-34c0-5236-8ee9-d67c22e92881",
+       "label": "C",
+       "content": "1939",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8e3a2ff0-6c08-5aed-a0c9-835959556d2a",
+       "label": "D",
+       "content": "1951",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "d93a30a9c46a"
+}

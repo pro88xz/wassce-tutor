@@ -1,0 +1,1208 @@
+{
+ "name": "history_set4_p1",
+ "label": "History: set 4 (Sierra Leone 1947 to today: independence, Margai, Stevens, Momoh, the civil war, Kabbah, foreign relations)",
+ "subject_slug": "history",
+ "papers": [
+  {
+   "id": "df8954cc-a2e1-5a6b-a183-8ad863d39f1c",
+   "topic": "Political Developments 1947-1961",
+   "title": "Political Developments 1947-1961: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on political developments 1947-1961, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 160,
+   "questions": [
+    {
+     "id": "0de180b1-2e1c-50e8-9047-ca0c4dbbd605",
+     "key": "hi-pd-01",
+     "stem": "The 1951 constitution of Sierra Leone is named after Governor",
+     "image_url": null,
+     "explanation": "Governor Sir Hubert Stevenson proposed the new constitution in 1947; it came into force with elections in 1951.\n\n**Why the other options are wrong**\n\n- Frederic Cardew: Cardew introduced the hut tax in 1898.\n- Alexander Ransford Slater: Slater's name is attached to the 1924 Constitution.\n- Charles MacCarthy: MacCarthy governed from 1814 to 1824.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f411ef4a-5d2f-50a3-8883-2749b95be461",
+       "label": "A",
+       "content": "Hubert Stevenson",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "227295da-4954-59d8-a04d-acdd7a7c54e3",
+       "label": "B",
+       "content": "Frederic Cardew",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "76085500-a3cd-54af-afe5-1c79ed512a08",
+       "label": "C",
+       "content": "Alexander Ransford Slater",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "210b6064-d952-591f-b1ae-4da01b90be3d",
+       "label": "D",
+       "content": "Charles MacCarthy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "caf7f1bb-e6fd-57bf-bbd6-88eb7d5a5917",
+     "key": "hi-pd-02",
+     "stem": "Colony leaders opposed the 1951 constitution mainly because it",
+     "image_url": null,
+     "explanation": "The NCSL, led by Dr Bankole-Bright, feared domination by the Protectorate, which was given a majority of representatives, and by its chiefs.\n\n**Why the other options are wrong**\n\n- abolished the office of Governor: The Governor remained in office.\n- made the APC the only legal party: The one-party state came in 1978.\n- gave Sierra Leone immediate independence: Independence came in 1961.",
+     "position": 2,
+     "options": [
+      {
+       "id": "db6a3b10-60a6-5fdd-a2aa-eb8e172ce8b2",
+       "label": "A",
+       "content": "abolished the office of Governor",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8f3afa1c-a723-5350-8e0c-bfd4d56b53bd",
+       "label": "B",
+       "content": "gave the Protectorate a majority in the Legislative Council",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4ff8cccc-30b7-56fd-b0fa-edbc4b99c8dd",
+       "label": "C",
+       "content": "made the APC the only legal party",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e0d79ea6-6e00-5168-8c70-f98f3860f025",
+       "label": "D",
+       "content": "gave Sierra Leone immediate independence",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b08acf76-0364-5efe-90de-9e7c82dc2f5a",
+     "key": "hi-pd-03",
+     "stem": "The Sierra Leone People's Party was formed in 1951 under the leadership of",
+     "image_url": null,
+     "explanation": "The SLPP was formed in 1951 from the SOS, the People's Party and PEPU members, led by Dr Milton Margai.\n\n**Why the other options are wrong**\n\n- Siaka Stevens: Stevens later founded the APC in 1960.\n- H. C. Bankole-Bright: Bankole-Bright led the NCSL, which opposed the SLPP.\n- I. T. A. Wallace-Johnson: Wallace-Johnson led the West African Youth League.",
+     "position": 3,
+     "options": [
+      {
+       "id": "33e3d07e-3d29-529c-a0be-96104f5614d3",
+       "label": "A",
+       "content": "Siaka Stevens",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cdf526dc-e205-52dd-9af8-a7cc141799ac",
+       "label": "B",
+       "content": "H. C. Bankole-Bright",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "542c02be-1c08-578a-a720-0c1cfd9f473a",
+       "label": "C",
+       "content": "I. T. A. Wallace-Johnson",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fe9a1da6-91e6-56f8-bd36-1988ba6c0e94",
+       "label": "D",
+       "content": "Dr Milton Margai",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4e390c67-199e-5c00-9460-6c3cbd607961",
+     "key": "hi-pd-04",
+     "stem": "Siaka Stevens refused to sign the Lancaster House agreement of 1960 because he",
+     "image_url": null,
+     "explanation": "Stevens demanded elections before independence and opposed the defence pact with Britain; he formed the Elections Before Independence Movement, which became the APC.\n\n**Why the other options are wrong**\n\n- opposed independence for Sierra Leone: He supported independence but opposed its terms and timing.\n- wanted Sierra Leone to join French West Africa: There was no such demand.\n- supported continued British rule: He wanted elections first, not continued colonial rule.",
+     "position": 4,
+     "options": [
+      {
+       "id": "9e5d488c-ef26-5ef4-af10-dd7726ad38a0",
+       "label": "A",
+       "content": "wanted elections before independence and opposed the defence agreement",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8b130511-36f2-5684-8182-fc9217cab6b2",
+       "label": "B",
+       "content": "opposed independence for Sierra Leone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8bc0cb2b-5a8c-563d-92b9-d1f679b6da57",
+       "label": "C",
+       "content": "wanted Sierra Leone to join French West Africa",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "42837075-1d7a-5159-ac73-82433b87a13c",
+       "label": "D",
+       "content": "supported continued British rule",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "28e3d301-c99e-5a5a-aa78-6c1a8279766a",
+     "key": "hi-pd-05",
+     "stem": "Sierra Leone became independent on",
+     "image_url": null,
+     "explanation": "Sierra Leone became independent on 27 April 1961 with Sir Milton Margai as Prime Minister.\n\n**Why the other options are wrong**\n\n- 19 April 1971: That was when Sierra Leone became a republic.\n- 6 March 1957: That was Ghana's independence day.\n- 1 October 1960: That was Nigeria's independence day.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e9a17a2f-ce43-598f-aebc-5ed4044233ea",
+       "label": "A",
+       "content": "19 April 1971",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9557e096-3b7f-5efc-88af-299c4878ec7e",
+       "label": "B",
+       "content": "27 April 1961",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "172523f6-2310-59a5-8fb3-7db5fa78b9eb",
+       "label": "C",
+       "content": "6 March 1957",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "48e5daec-4848-5d9d-9aea-64abd1c276aa",
+       "label": "D",
+       "content": "1 October 1960",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6d7d1061-1b70-5136-9012-2acc8d3c0bda",
+   "topic": "Independence and the Margai Era",
+   "title": "Independence and the Margai Era: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on independence and the margai era, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 161,
+   "questions": [
+    {
+     "id": "3fbd7af9-671d-5695-8b3f-fed21f9146f0",
+     "key": "hi-me-01",
+     "stem": "Which of the following was an achievement of Sir Milton Margai's government?",
+     "image_url": null,
+     "explanation": "Milton Margai's government kept the country peaceful and united, joined the UN and OAU, and set up the Bank of Sierra Leone and the leone in 1964.\n\n**Why the other options are wrong**\n\n- the creation of the one-party state: The one-party state was introduced under Stevens in 1978.\n- hosting the 1980 OAU summit: The OAU summit was hosted under Stevens.\n- ending the civil war in 2002: The war was ended under Kabbah.",
+     "position": 1,
+     "options": [
+      {
+       "id": "c1b7cc1c-4065-508b-8a67-e6ae2783a6c2",
+       "label": "A",
+       "content": "the creation of the one-party state",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9b1897a2-5074-548f-bc56-bec21af93a11",
+       "label": "B",
+       "content": "hosting the 1980 OAU summit",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "75d086a1-5c12-559f-9c48-9a746719af95",
+       "label": "C",
+       "content": "the introduction of the leone and the Bank of Sierra Leone in 1964",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b7ec2e0f-3646-54f7-83f5-38c9cb291c09",
+       "label": "D",
+       "content": "ending the civil war in 2002",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "830b4576-ed4e-5709-bd0a-8d1650b37ac4",
+     "key": "hi-me-02",
+     "stem": "Who succeeded Sir Milton Margai as Prime Minister in 1964?",
+     "image_url": null,
+     "explanation": "On Milton Margai's death in April 1964, Governor-General Lightfoot Boston appointed his brother Albert Margai as Prime Minister.\n\n**Why the other options are wrong**\n\n- Siaka Stevens: Stevens became Prime Minister in 1968.\n- John Karefa-Smart: Karefa-Smart had support but was not appointed.\n- Andrew Juxon-Smith: Juxon-Smith led the NRC military government in 1967–68.",
+     "position": 2,
+     "options": [
+      {
+       "id": "2db81c34-8eff-5437-b33c-0298854aba18",
+       "label": "A",
+       "content": "Siaka Stevens",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3d82c220-9b45-5615-8180-66a02b7badb4",
+       "label": "B",
+       "content": "John Karefa-Smart",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2b805d96-0eb8-5817-b73e-d10a9c6a8773",
+       "label": "C",
+       "content": "Andrew Juxon-Smith",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "043bb202-28ae-5d52-97d9-17924a1c0f83",
+       "label": "D",
+       "content": "Albert Margai",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c46eb2d4-bd7e-567d-a98c-b6da7165c847",
+     "key": "hi-me-03",
+     "stem": "One reason Sir Albert Margai's government became unpopular was his proposal to",
+     "image_url": null,
+     "explanation": "Albert Margai's 1966 proposals for a one-party state and an executive presidency met strong opposition from the APC, students, lawyers and the press.\n\n**Why the other options are wrong**\n\n- join the Mano River Union: The Mano River Union was founded in 1973 under Stevens.\n- abolish the hut tax: The hut tax belonged to the colonial era.\n- hold elections before independence: That was Stevens's demand in 1960.",
+     "position": 3,
+     "options": [
+      {
+       "id": "fa90a190-0626-5023-ad0a-9bd1d3278ff4",
+       "label": "A",
+       "content": "make Sierra Leone a one-party state",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b09a2ac1-9332-5c6d-bce7-d56a2abb1d67",
+       "label": "B",
+       "content": "join the Mano River Union",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5435a5cd-24fa-5c38-bf71-113d2e7bb646",
+       "label": "C",
+       "content": "abolish the hut tax",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f00189d8-3d23-5824-926d-42f2b721b36d",
+       "label": "D",
+       "content": "hold elections before independence",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fa2a870f-b026-5165-9031-e75589164c15",
+     "key": "hi-me-04",
+     "stem": "Who declared martial law in Sierra Leone on 21 March 1967?",
+     "image_url": null,
+     "explanation": "After the APC won the 1967 election and Stevens was sworn in, Brigadier David Lansana declared martial law; two days later other officers formed the NRC.\n\n**Why the other options are wrong**\n\n- Captain Valentine Strasser: Strasser led the NPRC coup of 1992.\n- Major Johnny Paul Koroma: Koroma led the AFRC coup of 1997.\n- Brigadier John Bangura: Bangura headed the interim council after the 1968 Sergeants' revolt.",
+     "position": 4,
+     "options": [
+      {
+       "id": "70fad3c5-08cf-5e7a-a483-9834371a5712",
+       "label": "A",
+       "content": "Captain Valentine Strasser",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f0538578-fa21-5ff1-8c88-eb012161baa8",
+       "label": "B",
+       "content": "Brigadier David Lansana",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "485c2e12-7395-5f62-a5fd-012397d30d84",
+       "label": "C",
+       "content": "Major Johnny Paul Koroma",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "10f9ba2c-950c-5358-a02f-ce8705cc5163",
+       "label": "D",
+       "content": "Brigadier John Bangura",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1395834b-ca86-5551-b5b7-686b8471fa04",
+     "key": "hi-me-05",
+     "stem": "The NRC military government was overthrown in April 1968 by",
+     "image_url": null,
+     "explanation": "In April 1968 non-commissioned officers and privates (the Anti-Corruption Revolutionary Movement) overthrew the NRC; Siaka Stevens became Prime Minister on 26 April 1968.\n\n**Why the other options are wrong**\n\n- ECOMOG forces: ECOMOG intervened in Sierra Leone in the 1990s.\n- a general election: The NRC was removed by soldiers, not an election.\n- British troops: British troops intervened in 2000, not 1968.",
+     "position": 5,
+     "options": [
+      {
+       "id": "035fbb9c-3374-500e-b19e-6d7d41a3e3ac",
+       "label": "A",
+       "content": "ECOMOG forces",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "17a8aaa5-96d3-51c8-a671-41c3653fbbc8",
+       "label": "B",
+       "content": "a general election",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "50b93cf6-5708-583c-aedf-2f63154353e7",
+       "label": "C",
+       "content": "junior ranks in the Sergeants' revolt",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "13f44985-f165-5d35-a4e2-3c214c493ef5",
+       "label": "D",
+       "content": "British troops",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "9f6e18c9-fabc-51e9-beea-a2b4bd84cfc9",
+   "topic": "The Siaka Stevens Era",
+   "title": "The Siaka Stevens Era: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the siaka stevens era, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 162,
+   "questions": [
+    {
+     "id": "1ef599dd-0dbd-57e0-b071-5d1f7edc9750",
+     "key": "hi-st-01",
+     "stem": "Sierra Leone became a republic on",
+     "image_url": null,
+     "explanation": "Parliament made Sierra Leone a republic on 19 April 1971; Siaka Stevens became executive President on 21 April 1971.\n\n**Why the other options are wrong**\n\n- 27 April 1961: That was independence day.\n- 1 October 1991: That was when the multi-party constitution came into force.\n- 29 April 1992: That was the date of the NPRC coup.",
+     "position": 1,
+     "options": [
+      {
+       "id": "9479b934-db97-50a3-91af-73b28f6320b8",
+       "label": "A",
+       "content": "27 April 1961",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ec57a600-028f-5887-b72e-84b1db0c9e02",
+       "label": "B",
+       "content": "1 October 1991",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d7046f22-d0ac-5fcd-9c1d-7a6fe93083b4",
+       "label": "C",
+       "content": "29 April 1992",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9fe7e699-5dd6-5d04-925e-cd95b60757d9",
+       "label": "D",
+       "content": "19 April 1971",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3bda013c-c84a-57ae-8e8a-cf6467c7c1a0",
+     "key": "hi-st-02",
+     "stem": "Which country sent troops to protect Siaka Stevens's government after the failed coup of 1971?",
+     "image_url": null,
+     "explanation": "Under a defence agreement with President Sékou Touré, Guinea sent troops to Freetown after the March 1971 coup attempt.\n\n**Why the other options are wrong**\n\n- Nigeria: Nigeria led ECOMOG in the 1990s.\n- Liberia: Liberia did not send troops in 1971.\n- Ghana: Ghana did not send troops in 1971.",
+     "position": 2,
+     "options": [
+      {
+       "id": "47a714f8-f0de-5fb5-a5cc-28aca9e75ea7",
+       "label": "A",
+       "content": "Guinea",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "af9f9b0e-8345-5ed4-9d1c-cabf82f8b359",
+       "label": "B",
+       "content": "Nigeria",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "517857ff-9472-5e62-8ac2-c91eed1d47fc",
+       "label": "C",
+       "content": "Liberia",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1ac8b82e-6e58-5032-8e3c-0e7aedc0899a",
+       "label": "D",
+       "content": "Ghana",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "668b2e06-50e2-5a17-be25-2ffbed7925d6",
+     "key": "hi-st-03",
+     "stem": "Under the 1978 Constitution, Sierra Leone became",
+     "image_url": null,
+     "explanation": "The 1978 one-party constitution, approved by referendum, made the APC the only legal party.\n\n**Why the other options are wrong**\n\n- a military dictatorship: Military rule came in 1967–68 and 1992–96, not under the 1978 Constitution.\n- a federal state of four regions: Sierra Leone has never been a federation.\n- a multi-party democracy: Multi-party democracy was restored in 1991.",
+     "position": 3,
+     "options": [
+      {
+       "id": "21273914-55c5-5fce-9cb2-0b906262e678",
+       "label": "A",
+       "content": "a military dictatorship",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6c02fcd4-3e70-5281-8683-ae693e959ce4",
+       "label": "B",
+       "content": "a one-party state with the APC as the only legal party",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9accdd12-6c1a-5c0b-93db-b13e93cdeaa3",
+       "label": "C",
+       "content": "a federal state of four regions",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d47ee6f9-0141-5fb3-bd46-dd3694cf22c4",
+       "label": "D",
+       "content": "a multi-party democracy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f858d845-fed2-5c8c-b8c8-ef1cc7f95ba5",
+     "key": "hi-st-04",
+     "stem": "The Marampa iron-ore mine closed in",
+     "image_url": null,
+     "explanation": "The closure of the Marampa iron-ore mine in 1975 cut exports and jobs and added to the economic decline of the Stevens era.\n\n**Why the other options are wrong**\n\n- 1933: 1933 was when Marampa began exporting iron ore.\n- 1961: 1961 was independence.\n- 1991: 1991 was when the civil war began.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d3aa9626-822c-5241-b284-9ef518907008",
+       "label": "A",
+       "content": "1933",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0e21c7a3-cfca-5a11-b335-5b04d6fea0a3",
+       "label": "B",
+       "content": "1961",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1f24fee3-c1ba-501d-b23f-ecf6e3d33782",
+       "label": "C",
+       "content": "1975",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6c63fbc4-b69a-5350-a706-f7f4627b6249",
+       "label": "D",
+       "content": "1991",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c1205bf9-7c7f-52db-bfaf-7743a50fffbc",
+     "key": "hi-st-05",
+     "stem": "Which of the following contributed to economic decline under Siaka Stevens?",
+     "image_url": null,
+     "explanation": "Smuggling, corruption and patronage, mining decline, oil price rises, the cost of the 1980 OAU summit and mismanagement caused the decline.\n\n**Why the other options are wrong**\n\n- the discovery of diamonds in Kono: Diamonds were discovered in 1930 and were a source of wealth.\n- the abolition of the one-party state: The one-party state was introduced, not abolished, under Stevens.\n- the end of the civil war: The war began after Stevens left office.",
+     "position": 5,
+     "options": [
+      {
+       "id": "0ff43202-785c-5c6f-840a-97f5c3140534",
+       "label": "A",
+       "content": "the discovery of diamonds in Kono",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4f6976f2-2095-5e70-be9a-55b3d3580068",
+       "label": "B",
+       "content": "the abolition of the one-party state",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6eeb499a-8851-5cc2-9196-9c5e098314e1",
+       "label": "C",
+       "content": "diamond smuggling and corruption",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "93cd6679-f871-5574-a65e-84d30b656608",
+       "label": "D",
+       "content": "the end of the civil war",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e4f77f1f-09e7-531f-9ec7-a8ce2a277864",
+   "topic": "The Momoh Administration and the Civil War",
+   "title": "The Momoh Administration and the Civil War: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the momoh administration and the civil war, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 163,
+   "questions": [
+    {
+     "id": "4ecec9df-9bc5-5fb4-9572-3c860c59427d",
+     "key": "hi-mc-01",
+     "stem": "Before becoming President in 1985, Joseph Saidu Momoh was",
+     "image_url": null,
+     "explanation": "Major-General Joseph Saidu Momoh, the Force Commander, was chosen by Stevens and became President in November 1985.\n\n**Why the other options are wrong**\n\n- Mayor of Freetown: Siaka Stevens had been Mayor of Freetown.\n- a United Nations official: Kabbah had worked for the UN.\n- leader of the SLPP: Momoh was chosen by Stevens within the APC.",
+     "position": 1,
+     "options": [
+      {
+       "id": "31194ca2-2c47-5a5b-bd61-d9353d5bddb7",
+       "label": "A",
+       "content": "Mayor of Freetown",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c7c3a7b0-a214-5950-92b9-bdb57f40be0b",
+       "label": "B",
+       "content": "a United Nations official",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "103f6b35-8719-5e81-acc1-3cd7e801e7ae",
+       "label": "C",
+       "content": "leader of the SLPP",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3e480d15-853b-5c13-871d-05f54332e9ac",
+       "label": "D",
+       "content": "commander of the army",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b2dd751f-c36d-5a94-acda-741387c3fef1",
+     "key": "hi-mc-02",
+     "stem": "The constitution that restored multi-party democracy in Sierra Leone came into force on",
+     "image_url": null,
+     "explanation": "The 1991 Constitution, prepared after the Tucker Commission (1990) and approved by referendum, came into force on 1 October 1991.\n\n**Why the other options are wrong**\n\n- 19 April 1971: That was when Sierra Leone became a republic.\n- 27 April 1961: That was independence day.\n- 18 January 2002: That was when the war was declared over.",
+     "position": 2,
+     "options": [
+      {
+       "id": "e46fb6d1-6dca-59ad-ac6e-509cf2c5e629",
+       "label": "A",
+       "content": "1 October 1991",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e7e2ff05-9116-5fd4-b9d4-2143be80ef40",
+       "label": "B",
+       "content": "19 April 1971",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e20f4b66-6c11-52b4-b0d0-5cfaff973f30",
+       "label": "C",
+       "content": "27 April 1961",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "29aed372-4788-57f3-b6e7-f9c99627a3d6",
+       "label": "D",
+       "content": "18 January 2002",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6aba0e20-8446-5f14-ba7f-a2a98fed26f1",
+     "key": "hi-mc-03",
+     "stem": "The Sierra Leone civil war began on 23 March 1991 when the RUF attacked",
+     "image_url": null,
+     "explanation": "The RUF, led by Foday Sankoh and backed by Charles Taylor, attacked Bomaru in Kailahun District from Liberia on 23 March 1991.\n\n**Why the other options are wrong**\n\n- Freetown: Freetown was invaded later, on 6 January 1999.\n- Makeni: Makeni later became an RUF headquarters.\n- Lungi: Lungi was a base of UN and British forces in 2000.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c0c7fbb1-e550-557a-bdf2-ae78165fed94",
+       "label": "A",
+       "content": "Freetown",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9ede3c4e-3f7f-551c-a3af-9e3d8df7c671",
+       "label": "B",
+       "content": "Bomaru in Kailahun District",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9f3d71a1-a7b4-569c-b4f9-63c2980b447d",
+       "label": "C",
+       "content": "Makeni",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "eb5564b9-c07d-5a60-b70f-75c2597a8d57",
+       "label": "D",
+       "content": "Lungi",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2cdf6680-cf1f-5d99-acbb-5db1e0feb909",
+     "key": "hi-mc-04",
+     "stem": "According to the Truth and Reconciliation Commission, a root cause of the civil war was",
+     "image_url": null,
+     "explanation": "The TRC report (2004) named bad governance, corruption and the marginalisation of youth as root causes; diamonds financed and prolonged the war.\n\n**Why the other options are wrong**\n\n- the Berlin Conference of 1884–85: The war's causes lay in Sierra Leone's recent history.\n- the abolition of the hut tax: The hut tax had long ceased to be an issue.\n- the founding of ECOWAS: ECOWAS later helped to end the war.",
+     "position": 4,
+     "options": [
+      {
+       "id": "5a39ecae-fdac-549e-b032-725da3821cd7",
+       "label": "A",
+       "content": "the Berlin Conference of 1884–85",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d8837289-30bd-5693-9ca9-a1f2976e8f30",
+       "label": "B",
+       "content": "the abolition of the hut tax",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bc1991c9-6bb1-57dd-ad73-1c36a9d780e7",
+       "label": "C",
+       "content": "bad governance, corruption and the exclusion of young people",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a3dacf81-39ff-55f2-974f-ce180fdf80ea",
+       "label": "D",
+       "content": "the founding of ECOWAS",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "21ba9df7-cf91-56f2-93c5-9cceac204bd9",
+     "key": "hi-mc-05",
+     "stem": "Which of the following was an effect of the civil war on Sierra Leone?",
+     "image_url": null,
+     "explanation": "About 50,000 people were killed and over two million displaced; there were amputations, child soldiers and great destruction.\n\n**Why the other options are wrong**\n\n- the growth of the railway network: The railway had closed in the 1970s.\n- the immediate rise of exports: Mining and trade collapsed during the war.\n- the return of the one-party state: The one-party state had ended in 1991.",
+     "position": 5,
+     "options": [
+      {
+       "id": "663d35f3-37aa-5ea9-b69b-5f99791198e8",
+       "label": "A",
+       "content": "the growth of the railway network",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7ae06e97-8af1-550f-affe-ebaee9c47ef9",
+       "label": "B",
+       "content": "the immediate rise of exports",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b2f67f98-fc39-55dc-8ec3-14b6ac28109b",
+       "label": "C",
+       "content": "the return of the one-party state",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5fd37388-a6f6-556e-b8cf-d584ba4f332c",
+       "label": "D",
+       "content": "the displacement of over two million people",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ef326e33-03e7-5cb9-b0e0-5e04d03bbd9d",
+   "topic": "Military Rule and the Kabbah Administration",
+   "title": "Military Rule and the Kabbah Administration: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on military rule and the kabbah administration, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 164,
+   "questions": [
+    {
+     "id": "951b7754-1888-55f5-abb3-715186469af9",
+     "key": "hi-mk-01",
+     "stem": "The National Provisional Ruling Council (NPRC) came to power on 29 April 1992 under",
+     "image_url": null,
+     "explanation": "Young officers from the war front overthrew Momoh on 29 April 1992 and formed the NPRC under Captain Valentine Strasser.\n\n**Why the other options are wrong**\n\n- Major Johnny Paul Koroma: Koroma led the AFRC in 1997.\n- Brigadier David Lansana: Lansana declared martial law in 1967.\n- Lieutenant-Colonel Andrew Juxon-Smith: Juxon-Smith led the NRC in 1967–68.",
+     "position": 1,
+     "options": [
+      {
+       "id": "ac46e4bf-604f-5d4a-b5ff-aec0d67543bb",
+       "label": "A",
+       "content": "Captain Valentine Strasser",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ca7bcbea-ad14-5ea4-b2ca-022200b32fba",
+       "label": "B",
+       "content": "Major Johnny Paul Koroma",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "658ffca0-22bc-55f8-b679-d0c1c8e5ae1b",
+       "label": "C",
+       "content": "Brigadier David Lansana",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "61847ea8-3ec6-5d97-873f-00165341c7eb",
+       "label": "D",
+       "content": "Lieutenant-Colonel Andrew Juxon-Smith",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "be139645-826b-53ee-bb6c-a8dc72b692f7",
+     "key": "hi-mk-02",
+     "stem": "The decision of 'elections before peace' was taken at",
+     "image_url": null,
+     "explanation": "At Bintumani II in February 1996, civil society and women's groups insisted on elections before peace; elections followed later that month.\n\n**Why the other options are wrong**\n\n- the Lancaster House conference in 1960: Lancaster House agreed the terms of independence.\n- the Lomé peace talks in 1999: Lomé produced a peace agreement with the RUF.\n- the Berlin Conference in 1884: The Berlin Conference set rules for partitioning Africa.",
+     "position": 2,
+     "options": [
+      {
+       "id": "78a95ec1-1817-54a9-a567-f85037985898",
+       "label": "A",
+       "content": "the Lancaster House conference in 1960",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b881962e-7b8a-579b-bc5d-e3750321bee4",
+       "label": "B",
+       "content": "the second Bintumani conference in 1996",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "18f894c5-b17f-584c-9d7c-ab7398b51758",
+       "label": "C",
+       "content": "the Lomé peace talks in 1999",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4adc3cd6-8853-587a-9bbb-602575c4902c",
+       "label": "D",
+       "content": "the Berlin Conference in 1884",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3881a336-6eb2-5028-a171-696fe0f396e0",
+     "key": "hi-mk-03",
+     "stem": "The AFRC, which overthrew President Kabbah on 25 May 1997, was led by",
+     "image_url": null,
+     "explanation": "Junior soldiers formed the Armed Forces Revolutionary Council under Major Johnny Paul Koroma and invited the RUF to join the government.\n\n**Why the other options are wrong**\n\n- Foday Sankoh: Sankoh led the RUF, which the AFRC invited to share power.\n- Julius Maada Bio: Bio led the NPRC in 1996 and handed power to Kabbah.\n- Valentine Strasser: Strasser led the NPRC from 1992 to 1996.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0ba58d5f-eb97-5b25-a52d-b4dfd3f7356e",
+       "label": "A",
+       "content": "Foday Sankoh",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7ae3d784-9b10-5001-8f28-951cf497bcfb",
+       "label": "B",
+       "content": "Julius Maada Bio",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9bb114d7-e3b2-5ed9-8de8-e9e2cdc77e39",
+       "label": "C",
+       "content": "Major Johnny Paul Koroma",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "babafcd6-af4c-5da0-beaf-e38ccd6f8f7a",
+       "label": "D",
+       "content": "Valentine Strasser",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "86967a8d-2584-526b-b0f0-d226c7f915cb",
+     "key": "hi-mk-04",
+     "stem": "President Kabbah was restored to power in 1998 by",
+     "image_url": null,
+     "explanation": "ECOMOG drove the AFRC and RUF out of Freetown in February 1998, and Kabbah returned on 10 March 1998.\n\n**Why the other options are wrong**\n\n- UNAMSIL: UNAMSIL was set up later, in October 1999.\n- Executive Outcomes: Executive Outcomes was hired by the NPRC in 1995.\n- the Sergeants' revolt: The Sergeants' revolt was in 1968.",
+     "position": 4,
+     "options": [
+      {
+       "id": "70b5541c-1aef-5c08-83f3-2cd1a7c94bae",
+       "label": "A",
+       "content": "UNAMSIL",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "87a145dd-8801-537c-8c0e-e863b7017f93",
+       "label": "B",
+       "content": "Executive Outcomes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "85501870-181c-598c-b300-25256eb5f9d2",
+       "label": "C",
+       "content": "the Sergeants' revolt",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0f9f098d-ddc0-5c28-8f9c-40d7fb58367f",
+       "label": "D",
+       "content": "ECOMOG, the ECOWAS force led by Nigeria",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "78a4e67e-0169-5ac1-97dc-689af48069db",
+     "key": "hi-mk-05",
+     "stem": "The Lomé Peace Agreement of 7 July 1999 provided for",
+     "image_url": null,
+     "explanation": "The Lomé Agreement gave the RUF government posts, made Sankoh head of a commission on mineral resources, granted an amnesty and provided for disarmament and UNAMSIL.\n\n**Why the other options are wrong**\n\n- the creation of the one-party state: That was the 1978 constitution.\n- Sierra Leone's independence: Independence came in 1961.\n- the arrest of Foday Sankoh: Sankoh was arrested in May 2000, after Lomé broke down.",
+     "position": 5,
+     "options": [
+      {
+       "id": "dea2e5f0-149e-521f-b555-f5f85dcc61c1",
+       "label": "A",
+       "content": "power-sharing with the RUF and a general amnesty",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b827f523-eb76-5101-ba14-45ce9a9344da",
+       "label": "B",
+       "content": "the creation of the one-party state",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3c51b3c8-dc72-5469-8516-b97183b1e37d",
+       "label": "C",
+       "content": "Sierra Leone's independence",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e0475613-52be-5b0f-a98d-3dea08d7bb27",
+       "label": "D",
+       "content": "the arrest of Foday Sankoh",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dd0f711b-fed1-5828-ba0d-f8131503a560",
+   "topic": "Sierra Leone in the International Community",
+   "title": "Sierra Leone in the International Community: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on sierra leone in the international community, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 165,
+   "questions": [
+    {
+     "id": "421909a4-6fb7-555d-aadc-b487e7a7aaad",
+     "key": "hi-ic-01",
+     "stem": "Sierra Leone joined the United Nations on",
+     "image_url": null,
+     "explanation": "Sierra Leone became a member of the United Nations on 27 September 1961, a few months after independence.\n\n**Why the other options are wrong**\n\n- 25 May 1963: That was the founding of the OAU.\n- 28 May 1975: That was the founding of ECOWAS.\n- 3 October 1973: That was the founding of the Mano River Union.",
+     "position": 1,
+     "options": [
+      {
+       "id": "28aa3af0-b2de-5077-b7ce-faf1f5e3a829",
+       "label": "A",
+       "content": "25 May 1963",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ccdfbd14-de50-5fa1-9034-aa7c7042fd62",
+       "label": "B",
+       "content": "27 September 1961",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1b820652-46d2-5393-9d7f-86ba35d2a467",
+       "label": "C",
+       "content": "28 May 1975",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c8c63f90-dca4-5191-9066-5d0094b955d6",
+       "label": "D",
+       "content": "3 October 1973",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "784130a4-0cf2-5fe7-8736-ce12da13b21f",
+     "key": "hi-ic-02",
+     "stem": "The Mano River Union was founded in 1973 by Sierra Leone and",
+     "image_url": null,
+     "explanation": "The Mano River Declaration of 3 October 1973 between Sierra Leone and Liberia founded the Union; its secretariat is in Freetown.\n\n**Why the other options are wrong**\n\n- Guinea: Guinea joined the Union in 1980.\n- Côte d'Ivoire: Côte d'Ivoire joined in 2008.\n- Nigeria: Nigeria is not a member of the Mano River Union.",
+     "position": 2,
+     "options": [
+      {
+       "id": "49beff13-ccef-5739-9e7f-1e68657f291b",
+       "label": "A",
+       "content": "Guinea",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2c2c1b83-3252-5b1f-8d36-80c630cc908b",
+       "label": "B",
+       "content": "Côte d'Ivoire",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fc90cd82-abeb-5b31-a7ad-29e7f7a95ed6",
+       "label": "C",
+       "content": "Liberia",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "421f8b08-5745-5c02-8ef2-e36bee3e75b1",
+       "label": "D",
+       "content": "Nigeria",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0339c547-4658-50e9-b619-9d812cf7084a",
+     "key": "hi-ic-03",
+     "stem": "Which of the following is an objective of Sierra Leone's foreign policy?",
+     "image_url": null,
+     "explanation": "Sierra Leone's foreign policy aims include sovereignty, development, peace, African unity, good neighbourliness, non-alignment and support for the UN.\n\n**Why the other options are wrong**\n\n- membership of a Cold War military bloc: Sierra Leone follows non-alignment.\n- restoring colonial rule: Foreign policy defends sovereignty.\n- ending membership of the United Nations: Sierra Leone supports the UN.",
+     "position": 3,
+     "options": [
+      {
+       "id": "868f6228-e992-59f2-baec-0e69e775c2e2",
+       "label": "A",
+       "content": "membership of a Cold War military bloc",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6d48c67f-a43b-5ebe-be04-e8b61ff19dd9",
+       "label": "B",
+       "content": "restoring colonial rule",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7402d77d-3f47-5efc-a974-39bed4c717ca",
+       "label": "C",
+       "content": "ending membership of the United Nations",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "35bdf3b3-7903-528f-98be-c97910065fb5",
+       "label": "D",
+       "content": "good relations with neighbouring countries",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a64330b5-93cd-574a-b28e-3c32e0cdc9fe",
+     "key": "hi-ic-04",
+     "stem": "In May 2000, which country's troops intervened to help secure Freetown against the RUF?",
+     "image_url": null,
+     "explanation": "In Operation Palliser (May 2000), British forces secured Lungi airport and Freetown, helping to turn the tide of the war.\n\n**Why the other options are wrong**\n\n- France: France did not intervene militarily in Sierra Leone.\n- the United States: The USA gave aid but did not send combat troops.\n- China: China provided aid and built infrastructure, not troops.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a61029aa-8bd7-5e89-a767-8a588f6ab619",
+       "label": "A",
+       "content": "Britain",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8b3ce0dd-8b8f-55fd-82ff-bb22d275d5a5",
+       "label": "B",
+       "content": "France",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dbf56508-1ba1-56b1-bd44-577524a67841",
+       "label": "C",
+       "content": "the United States",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "542ebd71-0b9d-54ab-813e-e759f2675d52",
+       "label": "D",
+       "content": "China",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "50de790c-ba6c-5c1a-b19f-b1049a489588",
+     "key": "hi-ic-05",
+     "stem": "Under the HIPC initiative in 2006, the IMF and World Bank",
+     "image_url": null,
+     "explanation": "The Heavily Indebted Poor Countries initiative cancelled much of Sierra Leone's debt when it reached its completion point in 2006.\n\n**Why the other options are wrong**\n\n- created the Mano River Union: The Mano River Union was founded in 1973 by its member states.\n- ended the civil war: The war had ended in 2002.\n- introduced the leone currency: The leone was introduced in 1964.",
+     "position": 5,
+     "options": [
+      {
+       "id": "85188067-a107-5396-ace8-7446df614235",
+       "label": "A",
+       "content": "created the Mano River Union",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ca8b547f-de5e-534f-b250-5b8413a601f0",
+       "label": "B",
+       "content": "cancelled much of Sierra Leone's foreign debt",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ac093895-0d66-574f-92c2-6ba90e4f7fd0",
+       "label": "C",
+       "content": "ended the civil war",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ec6a4760-23de-584e-b192-b739967d263d",
+       "label": "D",
+       "content": "introduced the leone currency",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "7ac4e0a808a7"
+}

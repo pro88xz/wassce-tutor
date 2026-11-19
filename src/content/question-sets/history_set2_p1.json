@@ -1,0 +1,1408 @@
+{
+ "name": "history_set2_p1",
+ "label": "History: set 2 (jihads, partition, colonial rule, resistance, nationalism, Pan-Africanism, 20th-century Africa)",
+ "subject_slug": "history",
+ "papers": [
+  {
+   "id": "6dacbfa2-2e17-5c27-bfb1-2145da75b71a",
+   "topic": "The 19th Century Jihads",
+   "title": "The 19th Century Jihads: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the 19th century jihads, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 120,
+   "questions": [
+    {
+     "id": "6be909d3-023b-5d82-8318-fc2f4713ee16",
+     "key": "hi-jh-01",
+     "stem": "The Sokoto jihad of 1804 was led by",
+     "image_url": null,
+     "explanation": "Usman dan Fodio, a Fulani scholar in Gobir, declared the jihad in 1804 after his hijra to Gudu, and founded the Sokoto Caliphate.\n\n**Why the other options are wrong**\n\n- al-Hajj Umar Tall: al-Hajj Umar led the Tukulor jihad from 1852.\n- Seku Ahmadu: Seku Ahmadu led the Masina jihad from 1818.\n- Samori Toure: Samori built the Mandinka empire and resisted the French; he did not lead the Sokoto jihad.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7de3ae51-03be-586e-a37c-bcf65af3ca2a",
+       "label": "A",
+       "content": "Usman dan Fodio",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c9107fdb-e26d-535d-a8fa-139fdd2f1e66",
+       "label": "B",
+       "content": "al-Hajj Umar Tall",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "589c2f7a-5843-5ffb-82af-d04ecdda04dd",
+       "label": "C",
+       "content": "Seku Ahmadu",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4ce46f0a-01fa-51c3-8afb-ec413aff21f5",
+       "label": "D",
+       "content": "Samori Toure",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "67d6d238-4910-5243-91c5-dd09f86634ce",
+     "key": "hi-jh-02",
+     "stem": "Which of the following was a cause of the Sokoto jihad?",
+     "image_url": null,
+     "explanation": "Causes included religious impurity, oppression and corruption of Hausa rulers, heavy taxes such as the cattle tax, injustice, Fulani grievances and the example of earlier jihads.\n\n**Why the other options are wrong**\n\n- the arrival of the Portuguese at Elmina: Elmina was built in 1482 on the coast, far from Hausaland.\n- the Berlin Conference's decisions: The Berlin Conference was held in 1884–85.\n- British demands for the Golden Stool: That caused the Asante war of 1900.",
+     "position": 2,
+     "options": [
+      {
+       "id": "559617ec-7f44-5b35-a3ad-cfa1b1382fea",
+       "label": "A",
+       "content": "the arrival of the Portuguese at Elmina",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "62840a3b-f4b0-51d8-bb0d-cafbcd9fb588",
+       "label": "B",
+       "content": "the Berlin Conference's decisions",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dd807979-98bd-5564-b298-f514e8cc17b4",
+       "label": "C",
+       "content": "Hausa rulers mixing Islam with traditional religious practices",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "08f784ca-9872-5487-bfe8-a28fb9bd2126",
+       "label": "D",
+       "content": "British demands for the Golden Stool",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f324e072-8b18-57e8-957a-8773ecea0f2f",
+     "key": "hi-jh-03",
+     "stem": "The capital of the Sokoto Caliphate, founded in 1809, was built by",
+     "image_url": null,
+     "explanation": "Muhammad Bello, Usman's son, founded Sokoto in 1809 and became caliph after Usman's death in 1817.\n\n**Why the other options are wrong**\n\n- Abdullahi: Abdullahi, Usman's brother, ruled the western emirates from Gwandu.\n- Yunfa: Yunfa was the king of Gobir defeated by the jihadists.\n- Ahmadu Seku: Ahmadu Seku was al-Hajj Umar's son, ruling from Segou.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0819556c-1c80-5aad-90bf-57014dbd8473",
+       "label": "A",
+       "content": "Abdullahi",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "536b65d3-308b-522b-872c-925d195d5284",
+       "label": "B",
+       "content": "Yunfa",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "108e3213-1f2b-5635-9ca0-63fc71f4a802",
+       "label": "C",
+       "content": "Ahmadu Seku",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c51238e7-ab59-56b8-aa3c-9c58e574d932",
+       "label": "D",
+       "content": "Muhammad Bello",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9482db1c-5ffc-5c8d-8eb2-3b63b12ae68d",
+     "key": "hi-jh-04",
+     "stem": "Al-Hajj Umar Tall belonged to which Islamic brotherhood?",
+     "image_url": null,
+     "explanation": "Al-Hajj Umar was made khalifa of the Tijaniyya brotherhood for West Africa during his pilgrimage to Mecca.\n\n**Why the other options are wrong**\n\n- the Qadiriyya: Usman dan Fodio belonged to the Qadiriyya, the older brotherhood.\n- the Mouride: The Mouride brotherhood was founded later in Senegal by Amadou Bamba.\n- the Sanusiyya: The Sanusiyya was a Libyan brotherhood.",
+     "position": 4,
+     "options": [
+      {
+       "id": "6b9cea23-fbae-5fd3-a63a-d1f338dbfca8",
+       "label": "A",
+       "content": "the Tijaniyya",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b700f09f-270c-5d51-a236-f65d077f585e",
+       "label": "B",
+       "content": "the Qadiriyya",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "07a3f88c-cf24-5187-a8ea-97bacd3911a2",
+       "label": "C",
+       "content": "the Mouride",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "aa836faf-c638-5e4a-9bfd-398f043848b6",
+       "label": "D",
+       "content": "the Sanusiyya",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c5c64fad-a9c8-54db-a0e8-a9e2c10e4452",
+     "key": "hi-jh-05",
+     "stem": "One political effect of the nineteenth-century jihads was the",
+     "image_url": null,
+     "explanation": "The jihads created large states such as Sokoto, Masina and the Tukulor empire, destroyed older states, spread Islam and learning, but also caused wars and slave raiding.\n\n**Why the other options are wrong**\n\n- immediate colonisation of Hausaland by France: Northern Nigeria was conquered by Britain in 1903, long after the jihad.\n- revival of the Oyo empire: The jihad helped to destroy Old Oyo through Ilorin.\n- end of Islam in the Western Sudan: The jihads spread and strengthened Islam.",
+     "position": 5,
+     "options": [
+      {
+       "id": "27a8ff13-39ea-5fc8-8713-0028606d22c2",
+       "label": "A",
+       "content": "immediate colonisation of Hausaland by France",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "58b7655d-dd1a-5f72-800b-132e97b9fb1f",
+       "label": "B",
+       "content": "creation of large new states such as the Sokoto Caliphate",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "afd172dc-ae14-50ea-a93a-3127b5863f3d",
+       "label": "C",
+       "content": "revival of the Oyo empire",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "478d5e93-5c3f-5628-9270-693649f6e571",
+       "label": "D",
+       "content": "end of Islam in the Western Sudan",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f5d7829b-287f-5dad-8042-a751973613bf",
+   "topic": "The European Partition of Africa",
+   "title": "The European Partition of Africa: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the european partition of africa, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 121,
+   "questions": [
+    {
+     "id": "295029d8-a788-50c0-882c-c18e33971827",
+     "key": "hi-pa-01",
+     "stem": "The Berlin Conference of 1884–85 was called by",
+     "image_url": null,
+     "explanation": "The German chancellor Otto von Bismarck called the Berlin Conference to agree rules for claiming African territory without war between European powers.\n\n**Why the other options are wrong**\n\n- King Leopold II: Leopold II benefited from the conference but did not call it.\n- Cecil Rhodes: Cecil Rhodes was a British imperialist in southern Africa.\n- Frederick Lugard: Lugard was a British colonial administrator in Nigeria.",
+     "position": 1,
+     "options": [
+      {
+       "id": "0349a33c-09c9-5c12-8c9d-a0c61d500c73",
+       "label": "A",
+       "content": "King Leopold II",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2085c6e8-2c8a-57ea-9232-070975ed4cfb",
+       "label": "B",
+       "content": "Cecil Rhodes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cac5079f-741b-59b6-9f3b-930ed439d93a",
+       "label": "C",
+       "content": "Otto von Bismarck",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "18fc37c2-05c7-572a-9f1c-18fe30a638bb",
+       "label": "D",
+       "content": "Frederick Lugard",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "59c65c98-86e9-518f-a1ba-5d0412146cd7",
+     "key": "hi-pa-02",
+     "stem": "The principle of 'effective occupation' agreed at Berlin meant that a European power must",
+     "image_url": null,
+     "explanation": "A power claiming coastal territory had to occupy it effectively, with an administration able to keep order and protect trade, and notify other powers.\n\n**Why the other options are wrong**\n\n- obtain the consent of the African people by referendum: Africans were not consulted at Berlin.\n- buy the land from the Ottoman Empire: There was no such rule.\n- leave Africa within ten years: The conference was about claiming Africa, not leaving it.",
+     "position": 2,
+     "options": [
+      {
+       "id": "858a07eb-a535-5093-b4e5-75cf25db3397",
+       "label": "A",
+       "content": "obtain the consent of the African people by referendum",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9deda5d0-5b08-501c-bccf-9c91a732e639",
+       "label": "B",
+       "content": "buy the land from the Ottoman Empire",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fcca9bb9-c883-589a-8f63-53a2e919d72b",
+       "label": "C",
+       "content": "leave Africa within ten years",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b6490729-29b1-512c-8ef3-195fb739c314",
+       "label": "D",
+       "content": "set up a real administration in coastal territory it claimed",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "923de78e-ac64-5dad-bd01-33ae779419cd",
+     "key": "hi-pa-03",
+     "stem": "Which of the following was an economic cause of the Scramble for Africa?",
+     "image_url": null,
+     "explanation": "European industries needed raw materials such as palm oil, rubber and cotton, protected markets and places to invest, especially during the depression of 1873–96.\n\n**Why the other options are wrong**\n\n- the Haitian Revolution: The Haitian Revolution influenced abolition, not the Scramble.\n- the spread of the camel caravans: Camel caravans belong to the trans-Saharan trade.\n- the decline of Timbuktu's scholars: This had no link with European economic motives.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0a4a25cb-8223-5b05-a7ad-e2c4015f853c",
+       "label": "A",
+       "content": "the need for raw materials and markets for European industries",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "eb764451-fd02-51fe-9687-2dca23904229",
+       "label": "B",
+       "content": "the Haitian Revolution",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fcd45d47-bd6a-5844-b188-1d743354c01c",
+       "label": "C",
+       "content": "the spread of the camel caravans",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3b36c4e4-7f83-59cf-803e-501427b1bd4c",
+       "label": "D",
+       "content": "the decline of Timbuktu's scholars",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "386b5661-db65-5490-af4b-c19d675bfa62",
+     "key": "hi-pa-04",
+     "stem": "Which two African countries were still independent in 1914?",
+     "image_url": null,
+     "explanation": "By 1914 only Ethiopia, which defeated Italy at Adwa in 1896, and Liberia remained independent.\n\n**Why the other options are wrong**\n\n- Egypt and Morocco: Egypt was under British and Morocco under French control.\n- Ghana and Nigeria: Both were British colonies until 1957 and 1960.\n- Sierra Leone and Senegal: Sierra Leone was British and Senegal French.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ace32bed-3538-5267-9ef5-299e9bb91f48",
+       "label": "A",
+       "content": "Egypt and Morocco",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a2e55ff7-a5b4-5efb-a41d-636075301559",
+       "label": "B",
+       "content": "Ethiopia and Liberia",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "96256638-f0db-5759-b5e2-5c76024bcf7a",
+       "label": "C",
+       "content": "Ghana and Nigeria",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7b096dc5-db76-5be7-899c-283745c221df",
+       "label": "D",
+       "content": "Sierra Leone and Senegal",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7b340921-d862-5a79-be22-d1580bdc4098",
+     "key": "hi-pa-05",
+     "stem": "Which effect of the partition explains why the Ewe people live in both Ghana and Togo?",
+     "image_url": null,
+     "explanation": "Colonial borders were drawn by European agreements, often splitting peoples such as the Ewe (Ghana and Togo), Yoruba (Nigeria and Benin) and Hausa (Nigeria and Niger).\n\n**Why the other options are wrong**\n\n- the spread of Islam by the jihads: The jihads did not divide the Ewe.\n- the trans-Saharan caravan routes: The caravan routes did not create modern borders.\n- the voluntary migration of Ewe to Europe: There was no such migration.",
+     "position": 5,
+     "options": [
+      {
+       "id": "2a9e04ec-f502-5ba8-84f0-7d940d49042e",
+       "label": "A",
+       "content": "the spread of Islam by the jihads",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bdc746b4-f737-5436-872b-880b7c96e642",
+       "label": "B",
+       "content": "the trans-Saharan caravan routes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5308bee4-e8a9-560b-85df-8c6999fc8df8",
+       "label": "C",
+       "content": "artificial boundaries drawn without regard to African peoples",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "71c16a38-9009-549e-ac6e-27e6e64ffbcd",
+       "label": "D",
+       "content": "the voluntary migration of Ewe to Europe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "4ae6e1de-289b-53d6-84b6-4fd706771584",
+   "topic": "Systems of Colonial Administration",
+   "title": "Systems of Colonial Administration: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on systems of colonial administration, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 122,
+   "questions": [
+    {
+     "id": "83ef535f-d834-520e-adaa-81706db9e98f",
+     "key": "hi-ca-01",
+     "stem": "Indirect rule is most closely associated with",
+     "image_url": null,
+     "explanation": "Lugard developed indirect rule in Northern Nigeria after 1900, ruling through the emirs under British Residents.\n\n**Why the other options are wrong**\n\n- Blaise Diagne in Senegal: Blaise Diagne was the first Black African deputy in the French parliament.\n- Frederic Cardew in Sierra Leone: Cardew introduced the hut tax in Sierra Leone.\n- Félix Éboué in Chad: Éboué was a French colonial governor who joined the Free French.",
+     "position": 1,
+     "options": [
+      {
+       "id": "2f462144-6494-5428-b287-7cc14e7f32f4",
+       "label": "A",
+       "content": "Blaise Diagne in Senegal",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "efc293a7-dbe6-5881-a2d9-34631e977d96",
+       "label": "B",
+       "content": "Frederic Cardew in Sierra Leone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "96a7014d-4908-5ba0-beaf-0c4bc03773f3",
+       "label": "C",
+       "content": "Félix Éboué in Chad",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0a4412ce-3fea-526c-96cd-02916f474ea5",
+       "label": "D",
+       "content": "Frederick Lugard in Northern Nigeria",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "781433d2-78e8-5030-9b54-9a016dcd6350",
+     "key": "hi-ca-02",
+     "stem": "Indirect rule failed in Eastern Nigeria mainly because",
+     "image_url": null,
+     "explanation": "Igbo and other eastern societies were decentralised; the warrant chiefs the British appointed had no traditional authority, were often corrupt, and the Aba Women's War of 1929 followed.\n\n**Why the other options are wrong**\n\n- the emirs refused to collect taxes: The emirs were in the North, where indirect rule worked.\n- the French controlled Eastern Nigeria: Eastern Nigeria was British.\n- there were too many British officials: Indirect rule was used because there were too few officials.",
+     "position": 2,
+     "options": [
+      {
+       "id": "2329af7e-417d-5074-a181-c208ec300b83",
+       "label": "A",
+       "content": "most societies there had no kings, so the British created warrant chiefs",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "230699ad-f4a8-5b33-a472-4aacb7e95d69",
+       "label": "B",
+       "content": "the emirs refused to collect taxes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4d1f366e-5a0e-5501-94ff-b1558d417c61",
+       "label": "C",
+       "content": "the French controlled Eastern Nigeria",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d112d1f9-2e17-5efb-94ff-8a82b7ca7931",
+       "label": "D",
+       "content": "there were too many British officials",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2a86c9e3-f97a-5cf2-9b6f-3446dba4a263",
+     "key": "hi-ca-03",
+     "stem": "The Four Communes of Senegal, whose people were French citizens, were Saint-Louis, Gorée, Rufisque and",
+     "image_url": null,
+     "explanation": "Assimilation was applied fully only in the Four Communes of Senegal: Saint-Louis, Gorée, Rufisque and Dakar.\n\n**Why the other options are wrong**\n\n- Bamako: Bamako is in Mali, not one of the Four Communes.\n- Conakry: Conakry is the capital of Guinea.\n- Abidjan: Abidjan is in Côte d'Ivoire.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5d95b47a-b551-5631-a7a9-71c3f6fb5eb2",
+       "label": "A",
+       "content": "Bamako",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5c2549c2-f88e-56e0-906c-f1895cfa4bc5",
+       "label": "B",
+       "content": "Dakar",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "88f325a7-1e9c-5dea-b163-73cce887f108",
+       "label": "C",
+       "content": "Conakry",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2f2874a5-9804-55ae-a8b3-1c72c406f6af",
+       "label": "D",
+       "content": "Abidjan",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2735fba3-9805-5c86-b2dd-74bb12513ede",
+     "key": "hi-ca-04",
+     "stem": "The indigénat in French West Africa was",
+     "image_url": null,
+     "explanation": "Under the indigénat, French officials could fine or imprison African subjects without trial; it and forced labour were abolished in 1946.\n\n**Why the other options are wrong**\n\n- a council of traditional rulers: French chiefs were appointed agents, not a ruling council.\n- the French name for indirect rule: The French used direct rule, not indirect rule.\n- a school for training évolués: The indigénat was a legal code of punishments.",
+     "position": 4,
+     "options": [
+      {
+       "id": "808f3c62-7587-5d7d-a1b2-132d8de28cd7",
+       "label": "A",
+       "content": "a council of traditional rulers",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2a404538-1b30-5196-b59e-a99ec2a20c8d",
+       "label": "B",
+       "content": "the French name for indirect rule",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7f24ac11-4011-5184-a900-e794d292087c",
+       "label": "C",
+       "content": "a code allowing officials to punish African subjects without trial",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "26167d4f-ea6e-5f67-9a7d-a3107a1954a0",
+       "label": "D",
+       "content": "a school for training évolués",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c9bf1c59-08bb-53bf-9610-a0b73ed1006c",
+     "key": "hi-ca-05",
+     "stem": "A major difference between British and French colonial rule was that",
+     "image_url": null,
+     "explanation": "Under indirect rule, traditional rulers kept authority as Native Authorities; under French direct rule, chiefs were appointed, moved or dismissed as civil servants.\n\n**Why the other options are wrong**\n\n- Britain used forced labour while France never did: France used forced labour (corvée) widely until 1946.\n- France allowed no African deputies in Paris: The Four Communes elected deputies to the French parliament.\n- Britain governed all its colonies as one federation: French West Africa was a federation; British colonies were separate.",
+     "position": 5,
+     "options": [
+      {
+       "id": "dd52131e-80fb-5c31-97ce-a76503878db3",
+       "label": "A",
+       "content": "Britain used forced labour while France never did",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "07cbfc57-bc4d-53ab-9af9-cb06efc5119d",
+       "label": "B",
+       "content": "France allowed no African deputies in Paris",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d081e452-215a-5910-8ef0-626241819890",
+       "label": "C",
+       "content": "Britain governed all its colonies as one federation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "151787cb-5bc4-551a-b960-8488e3faa8aa",
+       "label": "D",
+       "content": "British rule kept traditional rulers in power, while the French made chiefs appointed agents",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "37015448-bfa1-5963-a810-61b24214d2ae",
+   "topic": "Resistance to Colonial Rule",
+   "title": "Resistance to Colonial Rule: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on resistance to colonial rule, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 123,
+   "questions": [
+    {
+     "id": "b0354e11-1017-5ca3-b18c-4b53fbc6657a",
+     "key": "hi-re-01",
+     "stem": "Samori Toure resisted which European power?",
+     "image_url": null,
+     "explanation": "Samori Toure resisted French conquest from 1882 until his capture at Guelemou in 1898.\n\n**Why the other options are wrong**\n\n- Britain: Samori sought British help; his long war was against the French.\n- Germany: Germany had no colonies in Samori's region.\n- Portugal: Portugal held only Guinea-Bissau, not Samori's lands.",
+     "position": 1,
+     "options": [
+      {
+       "id": "3d864c66-7a5a-55b2-add9-9e338d76b65e",
+       "label": "A",
+       "content": "France",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "547e3ddd-d8eb-5abc-9ac6-94bea55da0c8",
+       "label": "B",
+       "content": "Britain",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "57c513e6-d0fd-501b-8e8c-eddd9ad0c6cb",
+       "label": "C",
+       "content": "Germany",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6ff17345-b3e5-5eea-a94a-e9244e521506",
+       "label": "D",
+       "content": "Portugal",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2a5776b4-49cc-53fe-b010-be517197b40b",
+     "key": "hi-re-02",
+     "stem": "One reason Samori Toure resisted the French for so long was that he",
+     "image_url": null,
+     "explanation": "Samori had a strong standing army, bought and made guns, used scorched-earth tactics, moved his empire east, and used diplomacy to gain time.\n\n**Why the other options are wrong**\n\n- received military help from the British: Britain refused to help or sell him arms.\n- had more Maxim guns than the French: The French had superior weapons.\n- signed no treaties with the French: He signed the treaties of Kenieba-Koura and Bissandugu.",
+     "position": 2,
+     "options": [
+      {
+       "id": "a9535653-3201-572e-a93c-36cfa1618f84",
+       "label": "A",
+       "content": "received military help from the British",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "298aba02-72fb-567d-a634-3a95c1708e52",
+       "label": "B",
+       "content": "used scorched-earth tactics and moved his empire eastwards",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e6ec22b3-7bb9-5827-83df-81c54d829dc5",
+       "label": "C",
+       "content": "had more Maxim guns than the French",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "56744c84-a84c-5d56-b98f-e0f2f377dd7e",
+       "label": "D",
+       "content": "signed no treaties with the French",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "661fd762-5f8f-54e6-9c92-39579fc63ae4",
+     "key": "hi-re-03",
+     "stem": "Jaja of Opobo came into conflict with the British mainly because he",
+     "image_url": null,
+     "explanation": "Jaja controlled the palm-oil markets of the interior and blocked British traders; Consul Johnston arrested and deported him in 1887.\n\n**Why the other options are wrong**\n\n- led a jihad against Christian missionaries: Jaja's conflict was commercial, not religious.\n- refused to hand over the Golden Stool: The Golden Stool was the issue in Asante in 1900.\n- opposed the hut tax in Sierra Leone: The hut tax war was in Sierra Leone in 1898.",
+     "position": 3,
+     "options": [
+      {
+       "id": "a93bb795-65ad-58fe-ab61-63a37a47278f",
+       "label": "A",
+       "content": "led a jihad against Christian missionaries",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "74a691ff-ce8a-5d15-bbed-37fce395d7bc",
+       "label": "B",
+       "content": "refused to hand over the Golden Stool",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c11d4006-0e5d-5143-9fd7-e63b3ea884cc",
+       "label": "C",
+       "content": "held a monopoly of the palm-oil trade and refused free trade",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c115ef6d-1f3b-5bc5-8971-8bddb3a7e489",
+       "label": "D",
+       "content": "opposed the hut tax in Sierra Leone",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f9b0207f-daaa-5915-9e48-98f3cbc11199",
+     "key": "hi-re-04",
+     "stem": "The immediate cause of the Yaa Asantewaa War of 1900 was",
+     "image_url": null,
+     "explanation": "In March 1900 Governor Hodgson demanded the Golden Stool so he could sit on it; Yaa Asantewaa, queen mother of Ejisu, led the Asante war.\n\n**Why the other options are wrong**\n\n- the introduction of the hut tax in Sierra Leone: That caused the Hut Tax War of 1898.\n- the arrest of Jaja of Opobo: Jaja was arrested in 1887 in the Niger Delta.\n- the Berlin Conference's decisions: The Berlin Conference set rules for partition in 1884–85.",
+     "position": 4,
+     "options": [
+      {
+       "id": "52ec698a-2335-52ab-b49f-a060bf02b53c",
+       "label": "A",
+       "content": "the introduction of the hut tax in Sierra Leone",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "27e4d9d2-dc84-5b55-91c8-3552d8e0968c",
+       "label": "B",
+       "content": "the arrest of Jaja of Opobo",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "952ee8d4-3a97-5e44-8887-35506f86c310",
+       "label": "C",
+       "content": "the Berlin Conference's decisions",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e759b6e1-e014-5b37-b62c-ca24420af93e",
+       "label": "D",
+       "content": "the British Governor's demand for the Golden Stool",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "41a7dd2b-9970-51b8-bc8d-63d31e572690",
+     "key": "hi-re-05",
+     "stem": "Which of the following was a general reason for the failure of African resistance?",
+     "image_url": null,
+     "explanation": "Resistance failed because of superior European weapons, African disunity, African troops in European armies, European resources and diplomacy.\n\n**Why the other options are wrong**\n\n- Africans had no armies at all: Many African states had large, organised armies.\n- Europeans never used African soldiers: Europeans relied heavily on African troops.\n- African rulers always united against Europeans: African disunity helped Europeans conquer.",
+     "position": 5,
+     "options": [
+      {
+       "id": "7c157e99-72e9-521f-b70e-98f05899c5c9",
+       "label": "A",
+       "content": "Europeans had superior weapons such as the Maxim gun",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1cb7b358-bd27-589f-8a9e-af3612ec09e2",
+       "label": "B",
+       "content": "Africans had no armies at all",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "975703cf-69a6-5abe-a74e-b55a6f6d3e10",
+       "label": "C",
+       "content": "Europeans never used African soldiers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3dd844a4-4b6c-5191-854f-5b19a2530d2b",
+       "label": "D",
+       "content": "African rulers always united against Europeans",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "40a5a31d-ec70-526f-9dfc-300c44978422",
+   "topic": "Nationalism and the Road to Independence",
+   "title": "Nationalism and the Road to Independence: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on nationalism and the road to independence, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 124,
+   "questions": [
+    {
+     "id": "df170953-5c89-53ec-88ec-0a0b3b4a47e7",
+     "key": "hi-na-01",
+     "stem": "The National Congress of British West Africa (NCBWA) was founded in 1920 under the leadership of",
+     "image_url": null,
+     "explanation": "The NCBWA was founded in Accra in March 1920 by educated Africans from all four British West African colonies, led by J. E. Casely Hayford.\n\n**Why the other options are wrong**\n\n- Kwame Nkrumah: Nkrumah led the CPP from 1949.\n- Nnamdi Azikiwe: Azikiwe founded the West African Pilot (1937) and co-founded the NCNC.\n- Milton Margai: Milton Margai led the SLPP from 1951.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7cecc54e-f116-5052-a254-6041295c38c7",
+       "label": "A",
+       "content": "Kwame Nkrumah",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "00f84c1e-d379-5198-bb71-f2433414d570",
+       "label": "B",
+       "content": "J. E. Casely Hayford",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8db6ee3e-c1fa-5280-bf09-559aeb724edd",
+       "label": "C",
+       "content": "Nnamdi Azikiwe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1bc322de-578c-5fbd-91b3-1a049ef9a857",
+       "label": "D",
+       "content": "Milton Margai",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d6df3aef-dfb7-59a1-ab41-7fed9a4cd069",
+     "key": "hi-na-02",
+     "stem": "Which of the following was a cause of the growth of nationalism in West Africa after 1945?",
+     "image_url": null,
+     "explanation": "Ex-servicemen, the Atlantic Charter, the UN, India's independence, economic hardship and mass parties turned nationalism into a mass movement after 1945.\n\n**Why the other options are wrong**\n\n- the founding of Elmina Castle: Elmina was built in 1482.\n- the Moroccan invasion of Songhai: That happened in 1591.\n- the decline of the trans-Saharan trade: This was not a cause of modern nationalism.",
+     "position": 2,
+     "options": [
+      {
+       "id": "ad7e039c-5984-555c-a4a1-c80c1e8e38c6",
+       "label": "A",
+       "content": "the founding of Elmina Castle",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8350a614-698a-543e-a588-c66d510c4e12",
+       "label": "B",
+       "content": "the Moroccan invasion of Songhai",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1178ec87-3a4d-5ea7-8697-dc1088fc9435",
+       "label": "C",
+       "content": "the return of African ex-servicemen from the Second World War",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f1e04623-154e-5d43-bcd9-09c81df30c3e",
+       "label": "D",
+       "content": "the decline of the trans-Saharan trade",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f42cc019-7a34-52f6-89a6-8cdfc404188a",
+     "key": "hi-na-03",
+     "stem": "Ghana became independent on 6 March 1957 under the leadership of",
+     "image_url": null,
+     "explanation": "Kwame Nkrumah's Convention People's Party (1949) led the Gold Coast to independence as Ghana on 6 March 1957.\n\n**Why the other options are wrong**\n\n- J. B. Danquah: Danquah led the UGCC, which Nkrumah left in 1949.\n- Sékou Touré: Sékou Touré led Guinea to independence in 1958.\n- Obafemi Awolowo: Awolowo led the Action Group in Western Nigeria.",
+     "position": 3,
+     "options": [
+      {
+       "id": "69cdf709-e085-51ae-aff1-7fd91593b400",
+       "label": "A",
+       "content": "J. B. Danquah",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "147cf7c9-bcec-5ade-bd2c-23a54c886bb9",
+       "label": "B",
+       "content": "Sékou Touré",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dcaa492e-a2cd-5ff9-be7d-36c44eb7d65d",
+       "label": "C",
+       "content": "Obafemi Awolowo",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9ba39218-43a0-51e4-ae6b-351142841ba9",
+       "label": "D",
+       "content": "Kwame Nkrumah",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fb8d404a-224b-5dea-b640-32b480044c1e",
+     "key": "hi-na-04",
+     "stem": "Guinea became independent in 1958 because it",
+     "image_url": null,
+     "explanation": "In the 1958 referendum, only Guinea, led by Ahmed Sékou Touré, voted 'No' to joining the French Community and became independent on 2 October 1958.\n\n**Why the other options are wrong**\n\n- won a long war of liberation against France: Guinea's independence came by referendum, not war.\n- was a British colony that followed Ghana: Guinea was a French colony.\n- was given independence at the Berlin Conference: The Berlin Conference divided Africa among Europeans.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ce6ada22-e5ec-5fea-accd-041f2ca14375",
+       "label": "A",
+       "content": "voted 'No' in de Gaulle's referendum on the French Community",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2c74ecb0-600d-5460-822c-d6a0e5932bdf",
+       "label": "B",
+       "content": "won a long war of liberation against France",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5df4b641-4725-5328-8690-c0526f695feb",
+       "label": "C",
+       "content": "was a British colony that followed Ghana",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "48188625-65b6-554e-95c9-3f21ebf69871",
+       "label": "D",
+       "content": "was given independence at the Berlin Conference",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "98aeb325-564e-5f38-ab6c-dce5921f3d6f",
+     "key": "hi-na-05",
+     "stem": "Which Sierra Leonean founded the West African Youth League?",
+     "image_url": null,
+     "explanation": "Wallace-Johnson founded the West African Youth League in the Gold Coast in 1935 and its Sierra Leone branch in 1938.\n\n**Why the other options are wrong**\n\n- H. C. Bankole-Bright: Bankole-Bright was an NCBWA delegate and later led the NCSL.\n- Siaka Stevens: Stevens was a trade unionist who later founded the APC.\n- Samuel Lewis: Sir Samuel Lewis was Freetown's first mayor in 1895.",
+     "position": 5,
+     "options": [
+      {
+       "id": "05eae1eb-d8bd-55f2-9382-cb30da00e0cf",
+       "label": "A",
+       "content": "H. C. Bankole-Bright",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e9938936-4654-5995-97c4-d32cf977a4ea",
+       "label": "B",
+       "content": "I. T. A. Wallace-Johnson",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "663cbc5e-493c-59e9-bfb5-3d0c9e37cb5f",
+       "label": "C",
+       "content": "Siaka Stevens",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "55180bf3-0cb4-5d02-9cb6-7e241a97719e",
+       "label": "D",
+       "content": "Samuel Lewis",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "71b92170-a155-5746-a295-f70139cf7b81",
+   "topic": "Pan-Africanism",
+   "title": "Pan-Africanism: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on pan-africanism, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 125,
+   "questions": [
+    {
+     "id": "72469d8b-4a23-5624-860b-91dc6cf65eca",
+     "key": "hi-pf-01",
+     "stem": "The first Pan-African Conference, held in London in 1900, was organised by",
+     "image_url": null,
+     "explanation": "The Trinidadian lawyer Henry Sylvester Williams organised the first Pan-African Conference in London in 1900.\n\n**Why the other options are wrong**\n\n- Marcus Garvey: Garvey founded the UNIA in 1914.\n- George Padmore: Padmore helped organise the Manchester Congress of 1945.\n- Edward Blyden: Blyden was an early thinker of the 'African personality', not the 1900 organiser.",
+     "position": 1,
+     "options": [
+      {
+       "id": "9bb9077d-95bd-5576-ae3c-eaf90b42cf85",
+       "label": "A",
+       "content": "Marcus Garvey",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ff62af3c-72b9-5166-ba6f-8db5b06384d4",
+       "label": "B",
+       "content": "George Padmore",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "79b61491-6499-5131-aa65-9f56bc9b73c1",
+       "label": "C",
+       "content": "Henry Sylvester Williams",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ef4dcb97-24af-5917-8e99-252ef4d49b6d",
+       "label": "D",
+       "content": "Edward Blyden",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "117a8c11-9fe3-5106-9df5-615c26e4c488",
+     "key": "hi-pf-02",
+     "stem": "Marcus Garvey is associated with the slogan",
+     "image_url": null,
+     "explanation": "Marcus Garvey, the Jamaican founder of the UNIA, preached 'Africa for the Africans' and racial pride.\n\n**Why the other options are wrong**\n\n- 'Self-government now': 'Self-government now' was the slogan of Nkrumah's CPP.\n- 'One Country, One People': That was the SLPP's motto in Sierra Leone.\n- 'Elections before peace': That was the demand at Bintumani II in Sierra Leone in 1996.",
+     "position": 2,
+     "options": [
+      {
+       "id": "29f6d8f8-8116-5091-9806-debf71c28be2",
+       "label": "A",
+       "content": "'Self-government now'",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c92b4dcf-72e1-5088-8c62-7812047215ef",
+       "label": "B",
+       "content": "'One Country, One People'",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "51210877-0e65-59ae-85c4-2fdb11f4f481",
+       "label": "C",
+       "content": "'Elections before peace'",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "81dc95f7-1c55-5a52-a04d-0d5a19daccf2",
+       "label": "D",
+       "content": "'Africa for the Africans'",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ca0b1312-d02c-5988-af81-55669d661d9c",
+     "key": "hi-pf-03",
+     "stem": "Why was the Manchester Pan-African Congress of 1945 a turning point?",
+     "image_url": null,
+     "explanation": "At Manchester, leaders such as Nkrumah and Kenyatta demanded independence and supported mass action, and then went home to lead independence movements.\n\n**Why the other options are wrong**\n\n- it created the African Union: The AU was launched in 2002.\n- it was the first meeting held in Africa: The first major Pan-African meeting in Africa was in Accra in 1958.\n- it divided Africa among European powers: That was the Berlin Conference of 1884–85.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5277e9b6-66a1-5028-a22b-cc260b3cd6a4",
+       "label": "A",
+       "content": "Africans from Africa dominated it and demanded full independence",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "49a9a966-a3a7-547c-8ec1-05a1720f7405",
+       "label": "B",
+       "content": "it created the African Union",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d32d1291-0386-5678-95b7-4119d150a471",
+       "label": "C",
+       "content": "it was the first meeting held in Africa",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "11ebd549-8e0e-5d1c-82d1-4afaed5c1283",
+       "label": "D",
+       "content": "it divided Africa among European powers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "df3ea46d-45d8-57f9-b54b-ed2148f28dd0",
+     "key": "hi-pf-04",
+     "stem": "The Organisation of African Unity was founded on 25 May 1963 at",
+     "image_url": null,
+     "explanation": "Thirty-two independent states founded the OAU at Addis Ababa, Ethiopia, on 25 May 1963, now celebrated as Africa Day.\n\n**Why the other options are wrong**\n\n- Accra: Accra hosted the All-African Peoples' Conference in 1958.\n- Durban: The African Union was launched at Durban in 2002.\n- Lagos: ECOWAS was founded by the Treaty of Lagos in 1975.",
+     "position": 4,
+     "options": [
+      {
+       "id": "034b222f-5450-5d93-b4a7-ac05f5e433bb",
+       "label": "A",
+       "content": "Accra",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9f772502-506a-5805-8dac-e91ae98a0666",
+       "label": "B",
+       "content": "Addis Ababa",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "477b8db8-e89b-5a8e-960b-61bcbc901b64",
+       "label": "C",
+       "content": "Durban",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "75b4a628-dc85-59cd-aa4d-d3a92c113551",
+       "label": "D",
+       "content": "Lagos",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "785c87fb-c2c8-59f5-83dc-a1a3113d23ed",
+     "key": "hi-pf-05",
+     "stem": "A major weakness of the OAU was its principle of",
+     "image_url": null,
+     "explanation": "Non-interference stopped the OAU from acting against dictators, coups and civil wars; the AU later gained the right to intervene in genocide and war crimes.\n\n**Why the other options are wrong**\n\n- support for liberation movements: Support for liberation was one of its achievements.\n- respect for colonial borders: Accepting borders helped to prevent border wars.\n- opposition to apartheid: Opposition to apartheid was one of its achievements.",
+     "position": 5,
+     "options": [
+      {
+       "id": "32bea242-7261-590c-8535-146cbb2eb988",
+       "label": "A",
+       "content": "support for liberation movements",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "61356006-e81c-5a42-8a6c-f8690913b8c9",
+       "label": "B",
+       "content": "respect for colonial borders",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e5548991-60f5-5c82-a0a7-40cd9b6300a2",
+       "label": "C",
+       "content": "non-interference in the internal affairs of member states",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fce46d29-49ed-5e66-970d-269904a7438d",
+       "label": "D",
+       "content": "opposition to apartheid",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1514ddf5-addc-5f99-afc3-41d0a65f2971",
+   "topic": "Africa in the 20th Century",
+   "title": "Africa in the 20th Century: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on africa in the 20th century, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 126,
+   "questions": [
+    {
+     "id": "17a254f7-745a-5889-9954-f9b4621250b4",
+     "key": "hi-ac-01",
+     "stem": "After the First World War, Germany's African colonies became",
+     "image_url": null,
+     "explanation": "Togoland and Kamerun were divided between Britain and France, Tanganyika went to Britain, Ruanda-Urundi to Belgium and South West Africa to South Africa, as mandates.\n\n**Why the other options are wrong**\n\n- independent states: They were placed under other colonial powers, not made independent.\n- parts of French West Africa: Only parts of Togoland and Kamerun went to France, as mandates.\n- members of the Commonwealth: The Commonwealth of independent states came later.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e487a487-f682-530c-ba22-5845c8a6c802",
+       "label": "A",
+       "content": "independent states",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5d4109d2-74e8-5fe4-a507-f7e9b1a133d2",
+       "label": "B",
+       "content": "parts of French West Africa",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "23ea3a21-5111-579e-9730-0d3e2612b460",
+       "label": "C",
+       "content": "members of the Commonwealth",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "41480859-21d0-5357-ad6f-94073221a393",
+       "label": "D",
+       "content": "League of Nations mandates",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0100a50d-0b19-5237-bc35-b96361029c45",
+     "key": "hi-ac-02",
+     "stem": "The Atlantic Charter of 1941 encouraged African nationalism because it",
+     "image_url": null,
+     "explanation": "The Atlantic Charter declared the right of all peoples to choose the form of government under which they live, which African nationalists claimed for themselves.\n\n**Why the other options are wrong**\n\n- ended the slave trade in Africa: The slave trade had been abolished long before.\n- created the Organisation of African Unity: The OAU was founded in 1963.\n- divided Africa among the Allies: The Charter did not divide Africa.",
+     "position": 2,
+     "options": [
+      {
+       "id": "35117b1d-16f9-5787-8505-4042d66798c8",
+       "label": "A",
+       "content": "spoke of the right of all peoples to choose their own government",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1070be71-6a68-5c9d-8eda-078082de4a0d",
+       "label": "B",
+       "content": "ended the slave trade in Africa",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "612d93ed-bb37-56a8-bf81-bd62cdf45bd1",
+       "label": "C",
+       "content": "created the Organisation of African Unity",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "240e9540-f095-5057-b0b8-c6af15cec963",
+       "label": "D",
+       "content": "divided Africa among the Allies",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a33eb2d7-7a7b-53b3-941f-13177bfd1bfa",
+     "key": "hi-ac-03",
+     "stem": "Why is 1960 called the 'Year of Africa'?",
+     "image_url": null,
+     "explanation": "In 1960 seventeen African countries, including Nigeria and most French colonies, became independent.\n\n**Why the other options are wrong**\n\n- the OAU was founded that year: The OAU was founded in 1963.\n- apartheid ended that year: Apartheid ended with the 1994 election.\n- the Berlin Conference was held that year: The Berlin Conference was in 1884–85.",
+     "position": 3,
+     "options": [
+      {
+       "id": "f623a484-e0e2-5134-a59b-cece12356ee9",
+       "label": "A",
+       "content": "the OAU was founded that year",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d8f93cc3-d6c3-5648-a72e-65d31e5d93fe",
+       "label": "B",
+       "content": "seventeen African countries became independent that year",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "afe1aa07-0da9-53c6-ba7b-8332d5c62a4c",
+       "label": "C",
+       "content": "apartheid ended that year",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "42bc87b7-f256-559b-b90a-64a75684069c",
+       "label": "D",
+       "content": "the Berlin Conference was held that year",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "86d9e9e1-7ec9-5186-9e96-5aa3b330a57b",
+     "key": "hi-ac-04",
+     "stem": "Apartheid in South Africa was introduced by the National Party after it won power in",
+     "image_url": null,
+     "explanation": "The National Party won the 1948 election and introduced apartheid laws such as the Population Registration Act and the Group Areas Act (1950).\n\n**Why the other options are wrong**\n\n- 1910: 1910 was when the Union of South Africa was formed.\n- 1960: 1960 was the year of the Sharpeville massacre.\n- 1994: 1994 was the year apartheid ended with the first non-racial election.",
+     "position": 4,
+     "options": [
+      {
+       "id": "67ed7900-84ad-5692-b289-2babe0c0258a",
+       "label": "A",
+       "content": "1910",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8ad8801f-a93d-53c2-82b1-b138efc2aedb",
+       "label": "B",
+       "content": "1948",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8d4d0d28-09db-5115-a29a-ede45c0dde12",
+       "label": "C",
+       "content": "1960",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "420289f9-5b1d-55be-9cfa-522a6d35f637",
+       "label": "D",
+       "content": "1994",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b8dd6c45-b92f-54d5-b9e7-6b5b75f6b8aa",
+     "key": "hi-ac-05",
+     "stem": "ECOWAS was founded in 1975 by the",
+     "image_url": null,
+     "explanation": "The Economic Community of West African States was founded by the Treaty of Lagos on 28 May 1975, with fifteen founding members.\n\n**Why the other options are wrong**\n\n- Treaty of Abuja: The Abuja Treaty of 1991 planned an African Economic Community.\n- Lomé Peace Agreement: The Lomé Agreement of 1999 concerned Sierra Leone's civil war.\n- Constitutive Act: The Constitutive Act (2000) created the African Union.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a6958526-8e55-5e28-831b-77e0d380df22",
+       "label": "A",
+       "content": "Treaty of Abuja",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "65b68973-6626-5949-afd1-42a21045faa9",
+       "label": "B",
+       "content": "Lomé Peace Agreement",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4403a3c7-62b9-5a70-b960-5892aa113af6",
+       "label": "C",
+       "content": "Treaty of Lagos",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fd51e474-4821-539d-be32-01101d7a887e",
+       "label": "D",
+       "content": "Constitutive Act",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "33e6cd94d20e"
+}

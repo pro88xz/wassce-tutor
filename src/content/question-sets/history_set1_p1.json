@@ -1,0 +1,1608 @@
+{
+ "name": "history_set1_p1",
+ "label": "History: set 1 (sources, West African states, trans-Saharan trade, forest states, Europeans, slave trade, abolition)",
+ "subject_slug": "history",
+ "papers": [
+  {
+   "id": "b4d51b23-baa6-5402-be93-1ac89886dfd9",
+   "topic": "Introduction to History",
+   "title": "Introduction to History: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on introduction to history, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 100,
+   "questions": [
+    {
+     "id": "4c43f177-d88d-560f-9065-5e21ee2ce872",
+     "key": "hi-in-01",
+     "stem": "Which of the following is a primary source of history?",
+     "image_url": null,
+     "explanation": "Primary sources date from the time being studied, such as letters, diaries, artefacts and eyewitness accounts. Later accounts are secondary sources.\n\n**Why the other options are wrong**\n\n- a textbook written by a modern historian: A textbook written later is a secondary source.\n- a film made today about the slave trade: A modern film is a later interpretation, a secondary source.\n- a newspaper article reviewing a history book: A review of a history book is a secondary source.",
+     "position": 1,
+     "options": [
+      {
+       "id": "3ccef459-9d7e-554c-b34d-ffd716a8c445",
+       "label": "A",
+       "content": "a letter written by a trader in the year described",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a2c1385b-1d53-5f5b-a914-db4d11e5e3ff",
+       "label": "B",
+       "content": "a textbook written by a modern historian",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "08df9286-21fb-5831-b889-b7b2dc219cbd",
+       "label": "C",
+       "content": "a film made today about the slave trade",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b256a2f7-072b-506f-af65-790cce98c5ef",
+       "label": "D",
+       "content": "a newspaper article reviewing a history book",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "38b06c84-966e-5f0b-96a0-221301b44022",
+     "key": "hi-in-02",
+     "stem": "Which source is most important for reconstructing the history of West African societies that did not use writing?",
+     "image_url": null,
+     "explanation": "Oral tradition, passed down by elders, griots and court historians, preserves the history of societies without writing, and is cross-checked with archaeology and other sources.\n\n**Why the other options are wrong**\n\n- government gazettes: Gazettes are written records produced by colonial and modern governments.\n- census reports: Censuses are modern written records.\n- printed newspapers: Newspapers arrived with Western printing in the nineteenth century.",
+     "position": 2,
+     "options": [
+      {
+       "id": "efc10aff-da0a-5f51-b812-7812b133fddf",
+       "label": "A",
+       "content": "government gazettes",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6eda42c0-92bb-5c82-b70b-e056464bf0c2",
+       "label": "B",
+       "content": "census reports",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "940f741f-1df7-58cf-9fc9-760fc997864c",
+       "label": "C",
+       "content": "printed newspapers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c8fe14f5-0a60-55d5-9551-ee1c2b531da5",
+       "label": "D",
+       "content": "oral tradition",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4ffacf12-c903-5deb-8ec0-9399d15b3394",
+     "key": "hi-in-03",
+     "stem": "The study of past human societies by excavating and examining material remains is called",
+     "image_url": null,
+     "explanation": "Archaeology studies the past through material remains such as tools, pottery, buildings and bones, recovered by excavation.\n\n**Why the other options are wrong**\n\n- anthropology: Anthropology studies human societies and cultures, mostly living ones.\n- linguistics: Linguistics studies languages and their relationships.\n- numismatics: Numismatics is the study of coins only.",
+     "position": 3,
+     "options": [
+      {
+       "id": "98e73cab-f79d-55c6-a646-2b10ebda11f0",
+       "label": "A",
+       "content": "archaeology",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "53b90acc-8527-5f3d-ba1c-334a368b695d",
+       "label": "B",
+       "content": "anthropology",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ad0b954c-79aa-5ba7-9f82-fdb60be162a3",
+       "label": "C",
+       "content": "linguistics",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5af46532-d1f7-50ed-bb3d-a896f935192c",
+       "label": "D",
+       "content": "numismatics",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "caf441f3-4493-56d9-8260-ca3085f0dbb5",
+     "key": "hi-in-04",
+     "stem": "In which century did the year 1482 fall?",
+     "image_url": null,
+     "explanation": "The century is one more than the hundreds figure: 1482 has 14 hundreds, so it is in the 15th century (1401–1500).\n\n**Why the other options are wrong**\n\n- the fourteenth century: The fourteenth century covers 1301–1400.\n- the sixteenth century: The sixteenth century covers 1501–1600.\n- the thirteenth century: The thirteenth century covers 1201–1300.",
+     "position": 4,
+     "options": [
+      {
+       "id": "8f3d32c6-022b-5d80-b674-0727003ce447",
+       "label": "A",
+       "content": "the fourteenth century",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4cf40109-3f11-534e-8739-3d51c05a6884",
+       "label": "B",
+       "content": "the sixteenth century",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "13825c7f-e69a-58d0-900c-0f50b74ac3c7",
+       "label": "C",
+       "content": "the fifteenth century",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b7294cbb-18f3-5e37-b092-687e7b65a118",
+       "label": "D",
+       "content": "the thirteenth century",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f88fa2d1-cbb5-5d9d-9ba9-bf65bb9ba200",
+     "key": "hi-in-05",
+     "stem": "A major weakness of oral tradition as a historical source is that it",
+     "image_url": null,
+     "explanation": "Oral traditions can be altered, shortened or exaggerated over generations, may favour ruling families, and are hard to date, so historians cross-check them with other sources.\n\n**Why the other options are wrong**\n\n- cannot be used for African history: Oral tradition is a vital source for African history.\n- is always written in Arabic: Oral tradition is spoken, not written.\n- records only European activities: Oral tradition records the history of local peoples.",
+     "position": 5,
+     "options": [
+      {
+       "id": "dbf2ef21-d490-5f29-a2d1-7a6a2641e9fe",
+       "label": "A",
+       "content": "cannot be used for African history",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2b2e379d-0bd3-5ad5-8aea-2b78ed3a6fc8",
+       "label": "B",
+       "content": "is always written in Arabic",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "81b22fa8-5d83-525d-8a2f-00547beb6388",
+       "label": "C",
+       "content": "records only European activities",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6296bb0d-0b77-5074-9e8a-2ede8333e305",
+       "label": "D",
+       "content": "may change or be exaggerated as it is passed down",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ac227db0-191f-5ea6-8f70-65956a31f270",
+   "topic": "The Land and Peoples of West Africa",
+   "title": "The Land and Peoples of West Africa: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the land and peoples of west africa, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 101,
+   "questions": [
+    {
+     "id": "587a9ae5-16f1-5f75-a05c-0b94d989fed1",
+     "key": "hi-lp-01",
+     "stem": "Why did the large empires of Ghana, Mali and Songhai develop in the savanna rather than the forest?",
+     "image_url": null,
+     "explanation": "Open savanna country allowed horses and cavalry, easy movement of armies and traders, and contact with trans-Saharan trade, so large empires grew there.\n\n**Why the other options are wrong**\n\n- the savanna had the most rainfall in West Africa: The forest, not the savanna, has the most rainfall.\n- the savanna was closest to the Atlantic coast: The savanna empires were far from the coast, on the Sahara's edge.\n- the tsetse fly was common in the savanna: The tsetse fly was a problem mainly in the forest, limiting horses there.",
+     "position": 1,
+     "options": [
+      {
+       "id": "af040725-a35e-5625-ab4a-8473ba56ba3e",
+       "label": "A",
+       "content": "open grassland allowed horses, cavalry and easy movement for trade",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a5a209b3-f6ef-5200-9fc9-b9c049d69548",
+       "label": "B",
+       "content": "the savanna had the most rainfall in West Africa",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3bf9546f-f053-591b-bab5-c697bdc0c6c3",
+       "label": "C",
+       "content": "the savanna was closest to the Atlantic coast",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d7718eb6-2c91-54e5-a74e-72cb3b452b03",
+       "label": "D",
+       "content": "the tsetse fly was common in the savanna",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f3af1a0a-fed4-5f54-8994-a475e97aad3d",
+     "key": "hi-lp-02",
+     "stem": "Which insect limited the use of horses in the forest zone of West Africa?",
+     "image_url": null,
+     "explanation": "The tsetse fly spreads trypanosomiasis, which kills horses and cattle, so forest states relied more on infantry than cavalry.\n\n**Why the other options are wrong**\n\n- the locust: Locusts destroy crops but did not stop the use of horses.\n- the mosquito: Mosquitoes spread malaria among people, not the horse disease that limited cavalry.\n- the termite: Termites damage wood and buildings, not horses.",
+     "position": 2,
+     "options": [
+      {
+       "id": "ddb06ab2-c2a0-5a2d-928a-1b1370de4ef5",
+       "label": "A",
+       "content": "the locust",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cd2d1920-577c-5ee6-93ca-0882c26710cc",
+       "label": "B",
+       "content": "the tsetse fly",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "405e1013-da6e-5c18-97b9-4a43170b2b7a",
+       "label": "C",
+       "content": "the mosquito",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a282402c-3d1a-5950-b224-ac4a00d2b511",
+       "label": "D",
+       "content": "the termite",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3bab23e4-629f-547e-97b7-db7684c9a48d",
+     "key": "hi-lp-03",
+     "stem": "The Hausa and Kanuri languages belong to which language families respectively?",
+     "image_url": null,
+     "explanation": "Hausa is a Chadic language in the Afro-Asiatic family; Kanuri belongs to the Nilo-Saharan family. Most other West African languages are Niger-Congo.\n\n**Why the other options are wrong**\n\n- Niger-Congo and Afro-Asiatic: Hausa is Afro-Asiatic, but Kanuri is Nilo-Saharan, not Afro-Asiatic.\n- Nilo-Saharan and Niger-Congo: This reverses Hausa's family; Hausa is Afro-Asiatic (Chadic).\n- Niger-Congo and Niger-Congo: Neither Hausa nor Kanuri is a Niger-Congo language.",
+     "position": 3,
+     "options": [
+      {
+       "id": "bf78b14a-7181-5883-962c-3af0bd4e5a4e",
+       "label": "A",
+       "content": "Niger-Congo and Afro-Asiatic",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "aaf3a801-c46a-568c-8f06-2b60fe462df6",
+       "label": "B",
+       "content": "Nilo-Saharan and Niger-Congo",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c2b3f695-d838-580f-9ea5-fef5fb1b90a7",
+       "label": "C",
+       "content": "Afro-Asiatic and Nilo-Saharan",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "87589f8d-fe8c-5928-b8e5-a305d8d289f0",
+       "label": "D",
+       "content": "Niger-Congo and Niger-Congo",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "de46bcd6-db79-5c94-b3a3-dc6b036f8110",
+     "key": "hi-lp-04",
+     "stem": "A society governed by elders, age grades and village councils without a king is described as",
+     "image_url": null,
+     "explanation": "Decentralised (acephalous) societies, such as many Igbo communities, were governed by elders, age grades, title societies and village assemblies, without a single ruler.\n\n**Why the other options are wrong**\n\n- centralised: A centralised society has a king or chief with a central government.\n- theocratic: A theocracy is ruled by religious leaders according to religious law.\n- feudal: Feudalism was a European system of lords and vassals based on land.",
+     "position": 4,
+     "options": [
+      {
+       "id": "3eee45bd-979b-5807-8b80-842c57288a1e",
+       "label": "A",
+       "content": "centralised",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4c51ed76-db6b-5513-944c-4944be017b7a",
+       "label": "B",
+       "content": "theocratic",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "14ef2332-7c08-5924-a9d1-4389c7741ae5",
+       "label": "C",
+       "content": "feudal",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8c7e07ed-96e4-5286-9af0-2b51c47c2fd8",
+       "label": "D",
+       "content": "decentralised",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6e25a818-71e9-51e3-bfe4-9180e1bc97f0",
+     "key": "hi-lp-05",
+     "stem": "Which two ethnic groups are the largest in Sierra Leone?",
+     "image_url": null,
+     "explanation": "The Temne and Mende each make up roughly a third of Sierra Leone's population; the country has about sixteen ethnic groups.\n\n**Why the other options are wrong**\n\n- the Krio and the Limba: The Krio and Limba are important but smaller groups.\n- the Fula and the Mandinka: Fula and Mandinka communities are smaller, mainly in the north.\n- the Kono and the Sherbro: The Kono and Sherbro are much smaller than the Temne and Mende.",
+     "position": 5,
+     "options": [
+      {
+       "id": "18cebdf8-8fe4-5be7-b8b0-a380166f9047",
+       "label": "A",
+       "content": "the Temne and the Mende",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3275d984-9774-5273-ba6d-81a4847ffc5e",
+       "label": "B",
+       "content": "the Krio and the Limba",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d075627d-3c5c-5d53-97ed-20758a77f28e",
+       "label": "C",
+       "content": "the Fula and the Mandinka",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "642957e9-63a4-547e-8e34-43d28e7e41fb",
+       "label": "D",
+       "content": "the Kono and the Sherbro",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "651cbeff-940f-5713-a3ee-b7b21416ce66",
+   "topic": "Early West African States",
+   "title": "Early West African States: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on early west african states, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 102,
+   "questions": [
+    {
+     "id": "ece32e41-3424-501d-9ddc-3d1376154e82",
+     "key": "hi-es-01",
+     "stem": "Ancient Ghana was founded by the",
+     "image_url": null,
+     "explanation": "Ancient Ghana, called Wagadu by its people, was founded by the Soninke in the area of present-day Mauritania and Mali.\n\n**Why the other options are wrong**\n\n- Mandinka: The Mandinka founded Mali under Sundiata.\n- Songhai: The Songhai founded the Songhai empire based at Gao.\n- Hausa: The Hausa built city-states such as Kano and Katsina further east.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e6f7147a-891b-5438-9198-ba489c269787",
+       "label": "A",
+       "content": "Mandinka",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8199c32c-10df-532e-9def-c7d64173188c",
+       "label": "B",
+       "content": "Soninke",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "420bc65f-7515-52fa-a829-3fba16100d7e",
+       "label": "C",
+       "content": "Songhai",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f85af18d-2069-5202-89fd-8933e6347cc6",
+       "label": "D",
+       "content": "Hausa",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "de74a932-3357-5cb6-ae79-e613d283836b",
+     "key": "hi-es-02",
+     "stem": "The Mali empire was founded by Sundiata Keita after his victory at the battle of",
+     "image_url": null,
+     "explanation": "Sundiata defeated Sumanguru of Sosso at Kirina in about 1235 and founded the Mali empire.\n\n**Why the other options are wrong**\n\n- Tondibi: Tondibi (1591) was the Moroccan victory that ended Songhai.\n- Feyiase: Feyiase (1701) was Asante's victory over Denkyira.\n- Tabkin Kwotto: Tabkin Kwotto (1804) was an early victory of Usman dan Fodio's jihad.",
+     "position": 2,
+     "options": [
+      {
+       "id": "1f7962fb-e43c-5893-9679-d47666484281",
+       "label": "A",
+       "content": "Tondibi",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fa1732b6-4aa8-5cb0-b888-77e7630b6c86",
+       "label": "B",
+       "content": "Feyiase",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "da73bd59-d0da-5c32-815c-89c39682bd30",
+       "label": "C",
+       "content": "Kirina",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3d8310c1-4117-5051-937d-82aee220398c",
+       "label": "D",
+       "content": "Tabkin Kwotto",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4ba1d0a7-dda8-5ee4-914c-7683cc60451b",
+     "key": "hi-es-03",
+     "stem": "Mansa Musa of Mali is best remembered for",
+     "image_url": null,
+     "explanation": "Mansa Musa's hajj of 1324, with great quantities of gold, made Mali famous across North Africa and Europe; he also built mosques and encouraged scholarship.\n\n**Why the other options are wrong**\n\n- founding the city of Gao: Gao was an old Songhai centre, not founded by Mansa Musa.\n- defeating the Moroccan army at Tondibi: The Moroccans won at Tondibi in 1591, long after Musa.\n- introducing Christianity into Mali: Mansa Musa was a devout Muslim who spread Islam.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b7b41c75-ca23-5580-b583-c509676cf85d",
+       "label": "A",
+       "content": "founding the city of Gao",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5f97d7c8-a38b-5928-bf28-bb36ac156af1",
+       "label": "B",
+       "content": "defeating the Moroccan army at Tondibi",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "66d85078-b418-5a9b-9e0e-c09d2b4ee244",
+       "label": "C",
+       "content": "introducing Christianity into Mali",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "30b7582f-ac60-504f-aa64-dc1996a4bb98",
+       "label": "D",
+       "content": "his pilgrimage to Mecca in 1324",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "78f1ba5a-75a6-5c9a-997e-53e7dfbbb5f3",
+     "key": "hi-es-04",
+     "stem": "Which ruler reformed the government of Songhai, divided it into provinces and made the pilgrimage to Mecca in 1496–1497?",
+     "image_url": null,
+     "explanation": "Askia Muhammad (1493–1528) reorganised Songhai into provinces, created a professional army, standardised weights and measures, promoted Islam and made the hajj.\n\n**Why the other options are wrong**\n\n- Sunni Ali: Sunni Ali built the empire by conquest but was not a reformer of this kind.\n- Sundiata Keita: Sundiata founded Mali, not Songhai.\n- Mansa Musa: Mansa Musa ruled Mali and made his pilgrimage in 1324.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2d0b666c-28eb-5bf6-a8e4-63ebe0bad820",
+       "label": "A",
+       "content": "Askia Muhammad",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c1d218ff-5750-5d85-b7eb-60870cba153b",
+       "label": "B",
+       "content": "Sunni Ali",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "38e1c3f6-45f0-58d0-a588-c66cf2f71773",
+       "label": "C",
+       "content": "Sundiata Keita",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7375edd7-a0c1-54bb-a7dc-58c81cff6a4b",
+       "label": "D",
+       "content": "Mansa Musa",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e1d4ec2a-3696-55d7-aee3-36d414e13197",
+     "key": "hi-es-05",
+     "stem": "The Songhai empire collapsed after the invasion of",
+     "image_url": null,
+     "explanation": "A Moroccan army with firearms defeated Songhai at Tondibi in 1591, after which the empire broke up.\n\n**Why the other options are wrong**\n\n- the Almoravids in 1076: The Almoravids attacked Ancient Ghana in 1076.\n- the Portuguese in 1482: The Portuguese built Elmina on the coast in 1482 and never invaded Songhai.\n- the Fulani jihadists in 1804: The Fulani jihad began in Hausaland in 1804, long after Songhai fell.",
+     "position": 5,
+     "options": [
+      {
+       "id": "0912ba95-c573-502e-963b-989d1d2ba187",
+       "label": "A",
+       "content": "the Almoravids in 1076",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7a57d2a2-97f1-5f3b-96f2-b97ea764d119",
+       "label": "B",
+       "content": "Morocco in 1591",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "fa761074-055a-5946-97d2-1c1783dc6e02",
+       "label": "C",
+       "content": "the Portuguese in 1482",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f1f16330-ef5a-5cc4-a2c5-9f7805e9e0e4",
+       "label": "D",
+       "content": "the Fulani jihadists in 1804",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ba2e1704-2477-550e-8b40-3b1c1cbba199",
+   "topic": "Trans-Saharan Trade and the Spread of Islam",
+   "title": "Trans-Saharan Trade and the Spread of Islam: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on trans-saharan trade and the spread of islam, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 103,
+   "questions": [
+    {
+     "id": "fbc1f403-22a6-5e9c-994d-a2969e8e0305",
+     "key": "hi-ts-01",
+     "stem": "Which animal made the trans-Saharan trade possible on a large scale?",
+     "image_url": null,
+     "explanation": "The camel can travel long distances with little water, so camel caravans made regular crossings of the Sahara possible.\n\n**Why the other options are wrong**\n\n- the horse: Horses need much water and could not cross the Sahara reliably.\n- the donkey: Donkeys were used locally but could not make long desert crossings.\n- the ox: Oxen cannot survive long without water and grazing.",
+     "position": 1,
+     "options": [
+      {
+       "id": "630df93e-3c87-5aa2-9b4f-b6d88385fd25",
+       "label": "A",
+       "content": "the horse",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "07d82703-ca5e-5ec7-aa4c-479cca23326a",
+       "label": "B",
+       "content": "the donkey",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7d91b278-8a05-54d3-bb8f-c41fca8f6135",
+       "label": "C",
+       "content": "the camel",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9f16e91d-6804-5bea-b736-6329f29cb34f",
+       "label": "D",
+       "content": "the ox",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6afa0006-5d97-523e-8b5e-83ba12ca563b",
+     "key": "hi-ts-02",
+     "stem": "The main commodities exchanged in the trans-Saharan trade were",
+     "image_url": null,
+     "explanation": "West Africa exported gold, kola, ivory and slaves northwards, and imported salt, horses, cloth and books from the north.\n\n**Why the other options are wrong**\n\n- salt from the south and gold from the north: This reverses the trade: gold came from West Africa and salt from the Sahara.\n- guns from the south and kola from the north: Kola went north from the forest; guns came mainly later from Europeans by sea.\n- rubber from the south and cocoa from the north: Rubber and cocoa were colonial-era exports, not trans-Saharan goods.",
+     "position": 2,
+     "options": [
+      {
+       "id": "2e9b63b5-3de1-5ff8-9f28-6935ac54dd90",
+       "label": "A",
+       "content": "salt from the south and gold from the north",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "25311217-e24d-520f-9cfb-564577c9b94e",
+       "label": "B",
+       "content": "guns from the south and kola from the north",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "730156de-d0de-588c-85a4-9ab86cb268b2",
+       "label": "C",
+       "content": "rubber from the south and cocoa from the north",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dd7d4b46-973d-5771-a3c4-77c2298c35f2",
+       "label": "D",
+       "content": "gold from the south and salt from the north",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "62bc0069-7595-5483-ada9-27dc81b2bf6f",
+     "key": "hi-ts-03",
+     "stem": "Which town was the most famous centre of Islamic learning in the Western Sudan?",
+     "image_url": null,
+     "explanation": "Timbuktu, with the Sankore mosque and many scholars and libraries, was the leading centre of Islamic learning in Mali and Songhai.\n\n**Why the other options are wrong**\n\n- Elmina: Elmina was a Portuguese castle on the Gold Coast.\n- Kumasi: Kumasi was the capital of Asante in the forest.\n- Ouidah: Ouidah was a slave-trading port of Dahomey on the coast.",
+     "position": 3,
+     "options": [
+      {
+       "id": "223d328d-6851-5537-926c-0c354611c565",
+       "label": "A",
+       "content": "Timbuktu",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "02e8001a-32b5-5606-9df6-4b64da358546",
+       "label": "B",
+       "content": "Elmina",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3610e18e-c589-5678-8deb-f43f5660b06a",
+       "label": "C",
+       "content": "Kumasi",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8ae0f7fe-9b90-5cbc-ad9e-fe30f56b5da1",
+       "label": "D",
+       "content": "Ouidah",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c7e56bf8-2d85-55a8-88ce-70a1c8653ba2",
+     "key": "hi-ts-04",
+     "stem": "One major reason why West African rulers accepted Islam was that it",
+     "image_url": null,
+     "explanation": "Islam brought Arabic literacy, so rulers gained scribes and officials, as well as trade links, law and prestige in the Muslim world.\n\n**Why the other options are wrong**\n\n- required them to abandon all trade with North Africa: Islam strengthened trade links with North Africa.\n- was brought by Portuguese missionaries: Islam came across the Sahara with Muslim traders and clerics.\n- forbade the use of written records: Islam brought Arabic literacy and written records.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7179b257-0051-57dd-b80c-88e403a22afd",
+       "label": "A",
+       "content": "required them to abandon all trade with North Africa",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b8b9c2d2-88cb-5b75-bf35-d33b8fdae33a",
+       "label": "B",
+       "content": "provided literate officials who could keep records and write letters",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1d4efeb4-838a-50e1-a5a4-c96f3ce23ccf",
+       "label": "C",
+       "content": "was brought by Portuguese missionaries",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "910cfbd5-09b2-54bd-96ab-436d83f57972",
+       "label": "D",
+       "content": "forbade the use of written records",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ef1db548-7c95-5102-966c-ed0a76c32583",
+     "key": "hi-ts-05",
+     "stem": "Islam reached Sierra Leone mainly through",
+     "image_url": null,
+     "explanation": "Fula and Mandinka (and Susu) traders and Muslim clerics, many linked to Futa Jallon, brought Islam into northern Sierra Leone.\n\n**Why the other options are wrong**\n\n- Portuguese sailors on the coast: The Portuguese were Christians; they did not spread Islam.\n- British colonial officials: British officials did not spread Islam.\n- the Nova Scotian settlers: The Nova Scotians were mostly Christians.",
+     "position": 5,
+     "options": [
+      {
+       "id": "4e9f328b-8c6c-51df-8c08-9eabc38b3f61",
+       "label": "A",
+       "content": "Portuguese sailors on the coast",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e7e1a800-d92a-5756-bd48-84227aeb7353",
+       "label": "B",
+       "content": "British colonial officials",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b028ab44-9980-5bc4-8d3a-7a2fbedb42e9",
+       "label": "C",
+       "content": "Fula and Mandinka traders and clerics from the north",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ce3700a9-e086-561e-ad44-8af3bd4a1628",
+       "label": "D",
+       "content": "the Nova Scotian settlers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "61ec6f68-80c0-51f5-ba98-885b6e62a7f4",
+   "topic": "The Forest States of West Africa",
+   "title": "The Forest States of West Africa: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the forest states of west africa, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 104,
+   "questions": [
+    {
+     "id": "9b1b6832-d03d-527b-893c-153543a08189",
+     "key": "hi-fs-01",
+     "stem": "In the Oyo empire, the council that could ask the Alaafin to commit suicide was the",
+     "image_url": null,
+     "explanation": "The Oyo Mesi, a council of seven nobles led by the Bashorun, could reject a bad Alaafin by presenting an empty calabash or parrot's eggs, meaning he must take his own life.\n\n**Why the other options are wrong**\n\n- Ogboni: The Ogboni was a society that checked the Oyo Mesi and represented the earth cult.\n- Are-Ona-Kakanfo: The Are-Ona-Kakanfo was the head of the army.\n- Asantehene's council: The Asantehene ruled Asante, not Oyo.",
+     "position": 1,
+     "options": [
+      {
+       "id": "dc189af5-adc2-52c8-9706-ec1d3af4a47e",
+       "label": "A",
+       "content": "Ogboni",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "265df25b-b116-5808-92c4-a55e1c7550cc",
+       "label": "B",
+       "content": "Are-Ona-Kakanfo",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "946e2dc8-a787-5243-b62b-093234f57a5e",
+       "label": "C",
+       "content": "Asantehene's council",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0493a210-dfbe-5328-be9f-1b886c185020",
+       "label": "D",
+       "content": "Oyo Mesi",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f21a608b-4e57-5d91-a576-d015bc5455e0",
+     "key": "hi-fs-02",
+     "stem": "The Golden Stool of Asante is associated with",
+     "image_url": null,
+     "explanation": "Tradition says the priest Okomfo Anokye brought the Golden Stool down from the sky for Osei Tutu; it became the symbol of Asante unity.\n\n**Why the other options are wrong**\n\n- Agaja and Gezo: Agaja and Gezo were kings of Dahomey.\n- Ewuare and Esigie: Ewuare and Esigie were Obas of Benin.\n- Oranmiyan and Afonja: Oranmiyan was linked to the founding of Oyo; Afonja revolted at Ilorin.",
+     "position": 2,
+     "options": [
+      {
+       "id": "83d76b97-f61e-56fb-b7db-20b6618f9fd1",
+       "label": "A",
+       "content": "Osei Tutu and Okomfo Anokye",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7e679edb-0596-5431-9710-5664c7334738",
+       "label": "B",
+       "content": "Agaja and Gezo",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "de9efcd6-ef60-55a1-860f-b784d11e1c03",
+       "label": "C",
+       "content": "Ewuare and Esigie",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f98f4996-3267-5c8f-a1af-204f14508888",
+       "label": "D",
+       "content": "Oranmiyan and Afonja",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "278f2d61-d196-55ef-9d11-350cfc22bd00",
+     "key": "hi-fs-03",
+     "stem": "Asante gained its independence from Denkyira after the battle of",
+     "image_url": null,
+     "explanation": "Osei Tutu's Asante defeated Denkyira at Feyiase in 1701, freeing Asante and making it the leading Akan power.\n\n**Why the other options are wrong**\n\n- Kirina in 1235: Kirina was Sundiata's victory that founded Mali.\n- Tondibi in 1591: Tondibi was the Moroccan victory over Songhai.\n- Abomey in 1892: Abomey was Dahomey's capital, taken by the French in 1892.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5f163d4b-5bd0-5c37-9787-58827da221f9",
+       "label": "A",
+       "content": "Kirina in 1235",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "acba204e-101f-58a4-9c5f-0a3603819198",
+       "label": "B",
+       "content": "Feyiase in 1701",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "462aa943-eb02-5c78-9870-bdef31361032",
+       "label": "C",
+       "content": "Tondibi in 1591",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "eab4ba6d-533b-5b52-a010-b420c2c1c142",
+       "label": "D",
+       "content": "Abomey in 1892",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1c756114-6353-5fa3-9997-cd068fdde5e6",
+     "key": "hi-fs-04",
+     "stem": "The kingdom of Dahomey was famous for its",
+     "image_url": null,
+     "explanation": "Dahomey's centralised state at Abomey had a famous army that included women soldiers, called Amazons by Europeans.\n\n**Why the other options are wrong**\n\n- council of forty scholars: A council of forty scholars governed Masina, not Dahomey.\n- Golden Stool: The Golden Stool belongs to Asante.\n- cavalry of the Oyo Mesi: The Oyo Mesi was a council of Oyo, not Dahomey's army.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f18ac634-0213-5cc2-a0f6-b4d30d8f771b",
+       "label": "A",
+       "content": "council of forty scholars",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a5e28fc6-d7b9-5d60-bdb1-5b8eda13f042",
+       "label": "B",
+       "content": "Golden Stool",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "31f7679a-4928-55e0-8cfe-6de0dfd2f376",
+       "label": "C",
+       "content": "army that included women soldiers",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0c8d5315-dfe9-5799-ab59-3e74c1635109",
+       "label": "D",
+       "content": "cavalry of the Oyo Mesi",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1f69c238-3b6c-55dc-b37d-052dcd588d36",
+     "key": "hi-fs-05",
+     "stem": "Benin City was captured and its famous bronzes looted by the British in",
+     "image_url": null,
+     "explanation": "After a British party was killed in January 1897, a punitive expedition captured Benin City in February 1897, looted the Benin Bronzes and exiled Oba Ovonramwen.\n\n**Why the other options are wrong**\n\n- 1807: 1807 was the year Britain abolished the slave trade.\n- 1861: 1861 was the year Britain annexed Lagos.\n- 1914: 1914 was the year Nigeria was amalgamated.",
+     "position": 5,
+     "options": [
+      {
+       "id": "cc224b84-f7dd-5a7f-bd3e-456e355ecb59",
+       "label": "A",
+       "content": "1807",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2c86276b-93e6-583b-8ec9-3755ce05552d",
+       "label": "B",
+       "content": "1861",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a079e947-864f-59da-9a23-d4660ba7b3a9",
+       "label": "C",
+       "content": "1897",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "723a2283-2022-57e2-8125-a03fc94c7bf4",
+       "label": "D",
+       "content": "1914",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "9eda828a-8a3d-5b48-a009-1c2d1b3d1b0a",
+   "topic": "The Coming of Europeans to West Africa",
+   "title": "The Coming of Europeans to West Africa: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the coming of europeans to west africa, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 105,
+   "questions": [
+    {
+     "id": "c31792e0-d3b7-52d9-b49b-1aa11f21e13f",
+     "key": "hi-eu-01",
+     "stem": "Which European nation was the first to explore the West African coast in the fifteenth century?",
+     "image_url": null,
+     "explanation": "Portugal, encouraged by Prince Henry the Navigator, led the exploration of the West African coast from the early fifteenth century.\n\n**Why the other options are wrong**\n\n- Britain: The English arrived on the coast later, in the sixteenth century.\n- France: French traders came after the Portuguese.\n- the Netherlands: The Dutch arrived in the late sixteenth and seventeenth centuries.",
+     "position": 1,
+     "options": [
+      {
+       "id": "6aa92b96-9505-57c7-af59-aab7ece0c6ea",
+       "label": "A",
+       "content": "Britain",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0af37d43-ade6-57f1-9f91-3a75eb7afd69",
+       "label": "B",
+       "content": "France",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4b0d2601-c29c-5c0f-8954-ffe3dfb78f21",
+       "label": "C",
+       "content": "the Netherlands",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "584e95d9-a790-55ee-9526-b5129f2de434",
+       "label": "D",
+       "content": "Portugal",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3a6943ea-2956-560c-9b53-f3adfd515aba",
+     "key": "hi-eu-02",
+     "stem": "Which of the following was a motive for Portuguese exploration of West Africa?",
+     "image_url": null,
+     "explanation": "The Portuguese sought gold, a sea route to India and its spices, Christian allies such as Prester John, and to outflank Muslim traders.\n\n**Why the other options are wrong**\n\n- to escape the Industrial Revolution: The Industrial Revolution began in Britain in the eighteenth century.\n- to enforce the abolition of the slave trade: Abolition came in the nineteenth century.\n- to obey the Berlin Conference: The Berlin Conference was held in 1884–85.",
+     "position": 2,
+     "options": [
+      {
+       "id": "3167581e-86bc-5909-aa31-2858e59f80a2",
+       "label": "A",
+       "content": "to find a sea route to India",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "73ec7709-efe0-5389-8d1e-1adaae33ab72",
+       "label": "B",
+       "content": "to escape the Industrial Revolution",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "73746f46-a7b4-5680-8563-7604af41e9f4",
+       "label": "C",
+       "content": "to enforce the abolition of the slave trade",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "30ea363c-413e-5d0a-a74e-6a382dc04895",
+       "label": "D",
+       "content": "to obey the Berlin Conference",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2bd14048-cbe3-57cf-a556-536d5837a5f4",
+     "key": "hi-eu-03",
+     "stem": "Elmina Castle, the first European fort in West Africa, was built by the Portuguese in",
+     "image_url": null,
+     "explanation": "The Portuguese built São Jorge da Mina (Elmina) on the Gold Coast in 1482 to protect their gold trade.\n\n**Why the other options are wrong**\n\n- 1462: 1462 was when Pedro de Sintra named Sierra Leone.\n- 1562: 1562 was the year of John Hawkins's first slaving voyage.\n- 1652: 1652 is too late; Elmina was built in the fifteenth century.",
+     "position": 3,
+     "options": [
+      {
+       "id": "92459898-f106-5416-8a3c-77fc277232ba",
+       "label": "A",
+       "content": "1462",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d1985eab-8bc2-5efc-a77d-64291aff17df",
+       "label": "B",
+       "content": "1482",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "038665d4-efc8-577c-9b88-4c4cfe3f3ece",
+       "label": "C",
+       "content": "1562",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9a6b6f7e-93fb-5d93-bb64-3eabc5427a3d",
+       "label": "D",
+       "content": "1652",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e1846374-19c0-56ff-b734-dc3ad5df1fbc",
+     "key": "hi-eu-04",
+     "stem": "Which crop was introduced into West Africa from the Americas through European contact?",
+     "image_url": null,
+     "explanation": "Maize, cassava, groundnuts, sweet potatoes and tomatoes came from the Americas and became staple foods in West Africa.\n\n**Why the other options are wrong**\n\n- yam: Yams are native to West Africa.\n- African rice: African rice was domesticated in West Africa long before European contact.\n- kola: Kola is a West African forest tree.",
+     "position": 4,
+     "options": [
+      {
+       "id": "9c310dbf-9ea0-5883-a0f3-edb75aec0e2d",
+       "label": "A",
+       "content": "yam",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2f8be6ed-2430-51b9-8495-f47ca10ae8e7",
+       "label": "B",
+       "content": "cassava",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7b0d4213-804c-572e-8825-4c4fbbbd3acc",
+       "label": "C",
+       "content": "African rice",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "26f2fb99-37fe-57b4-96e8-3b3a1a4003b5",
+       "label": "D",
+       "content": "kola",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "37491d07-691e-5bc7-9ee3-f730a6cbf9c0",
+     "key": "hi-eu-05",
+     "stem": "Early European traders on the West African coast generally",
+     "image_url": null,
+     "explanation": "Until the late nineteenth century, Europeans stayed mainly on the coast, paying rent and customs to African rulers who kept control of the interior.\n\n**Why the other options are wrong**\n\n- ruled the interior directly as colonies: European rule of the interior came only in the late nineteenth century.\n- refused to trade with African middlemen: Europeans depended on African middlemen for trade.\n- built railways to the interior: Railways came in the colonial period.",
+     "position": 5,
+     "options": [
+      {
+       "id": "2a232299-ab9e-5014-8920-d1049ee3949e",
+       "label": "A",
+       "content": "ruled the interior directly as colonies",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e6cb2f13-bad2-5270-8d38-e19a0dc608e7",
+       "label": "B",
+       "content": "refused to trade with African middlemen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "39aa2a96-1edf-5351-88ab-c6d19ad7fc96",
+       "label": "C",
+       "content": "paid rent to African rulers for the land on which their forts stood",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "53c34a4d-d56e-56ed-bcf4-07a1289590e6",
+       "label": "D",
+       "content": "built railways to the interior",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f57f3808-d9f0-50e6-8edc-e528badfc09e",
+   "topic": "The Atlantic Slave Trade",
+   "title": "The Atlantic Slave Trade: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on the atlantic slave trade, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 106,
+   "questions": [
+    {
+     "id": "7539c393-c951-52c1-a488-7b6fcae6c1aa",
+     "key": "hi-as-01",
+     "stem": "The main cause of the Atlantic slave trade was",
+     "image_url": null,
+     "explanation": "European plantations of sugar, tobacco, cotton and coffee, and mines in the Americas, needed huge amounts of labour after the Native American population collapsed.\n\n**Why the other options are wrong**\n\n- the need for soldiers in European wars: Enslaved Africans were taken mainly as plantation and mine labour.\n- the spread of Islam in West Africa: Islam's spread was not the cause of the Atlantic trade.\n- the shortage of land in Africa: The trade was driven by demand in the Americas, not land shortage in Africa.",
+     "position": 1,
+     "options": [
+      {
+       "id": "411511ab-2cf9-5de9-a54b-2151929092c8",
+       "label": "A",
+       "content": "the need for soldiers in European wars",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "85e02e9e-f4f5-5702-9587-408e6ff08945",
+       "label": "B",
+       "content": "the spread of Islam in West Africa",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e628538d-f898-581c-8153-809576690e9d",
+       "label": "C",
+       "content": "the shortage of land in Africa",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cc4b9ab7-4ed9-5a49-9d14-1431a41e612d",
+       "label": "D",
+       "content": "the demand for labour on plantations and in mines in the Americas",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "62abcaf5-92a8-57bc-ada1-ddda76d44c48",
+     "key": "hi-as-02",
+     "stem": "The Middle Passage was the",
+     "image_url": null,
+     "explanation": "In the triangular trade, the Middle Passage was the second leg, carrying enslaved Africans from West Africa across the Atlantic in terrible conditions.\n\n**Why the other options are wrong**\n\n- route of goods from Europe to West Africa: That was the first leg of the triangular trade.\n- route of sugar and cotton from the Americas to Europe: That was the third leg of the triangular trade.\n- caravan route across the Sahara: That was the trans-Saharan trade, not the Atlantic trade.",
+     "position": 2,
+     "options": [
+      {
+       "id": "5e570b42-f828-51af-a913-b02e46afa943",
+       "label": "A",
+       "content": "voyage of enslaved Africans across the Atlantic to the Americas",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4d30305e-f22b-5364-8737-ff6afbac3d33",
+       "label": "B",
+       "content": "route of goods from Europe to West Africa",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a632c896-2c32-5978-b06f-6f46d1c28a35",
+       "label": "C",
+       "content": "route of sugar and cotton from the Americas to Europe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b58d1502-aaeb-5550-8f67-2a9bf8da9c16",
+       "label": "D",
+       "content": "caravan route across the Sahara",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d981bb25-04b3-539b-afeb-e72cabc524a6",
+     "key": "hi-as-03",
+     "stem": "Which goods did European traders mainly bring to West Africa in exchange for captives?",
+     "image_url": null,
+     "explanation": "European ships brought manufactured goods such as guns, gunpowder, cloth, iron bars, beads and alcohol to exchange for captives.\n\n**Why the other options are wrong**\n\n- sugar, tobacco, cotton and rum: These plantation goods went from the Americas to Europe.\n- gold, ivory, kola and pepper: These were West African exports, not European imports.\n- salt, horses and books from North Africa: These came across the Sahara in the trans-Saharan trade.",
+     "position": 3,
+     "options": [
+      {
+       "id": "88656ae2-dba6-51a3-938d-0996f30c3e79",
+       "label": "A",
+       "content": "sugar, tobacco, cotton and rum",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "023ab6b8-281f-5c6e-b11a-c84e960988f2",
+       "label": "B",
+       "content": "guns, cloth, iron bars, beads and alcohol",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ee4995c7-21b5-5e42-9c54-bff160f59e10",
+       "label": "C",
+       "content": "gold, ivory, kola and pepper",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e85b095c-e517-5362-9c90-ec51f88fa658",
+       "label": "D",
+       "content": "salt, horses and books from North Africa",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c3cb6992-b90f-5dab-83f6-f6127bcca19c",
+     "key": "hi-as-04",
+     "stem": "Which of the following was an effect of the Atlantic slave trade on West Africa?",
+     "image_url": null,
+     "explanation": "The trade took millions of young people, caused depopulation, wars and insecurity, spread firearms, and harmed farming and crafts.\n\n**Why the other options are wrong**\n\n- rapid growth of local industries: Imported goods and insecurity harmed local crafts.\n- the end of warfare between states: The trade fuelled wars and raids for captives.\n- the spread of the camel across the forest: Camels were used in the Sahara, not the forest.",
+     "position": 4,
+     "options": [
+      {
+       "id": "6d22895f-d8db-5d2d-b346-968f4123f825",
+       "label": "A",
+       "content": "rapid growth of local industries",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2622c271-ed8d-5cad-a8ed-31e616bee3be",
+       "label": "B",
+       "content": "the end of warfare between states",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "02a54969-dbbf-5158-9f14-732858ef65b7",
+       "label": "C",
+       "content": "loss of millions of young and productive people",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6ce436a6-9e6a-57d8-bf32-3da5a8b18b4a",
+       "label": "D",
+       "content": "the spread of the camel across the forest",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c30193c0-9075-5042-92ef-b2e8a0825adc",
+     "key": "hi-as-05",
+     "stem": "Bunce Island in the Sierra Leone River was",
+     "image_url": null,
+     "explanation": "Bunce Island was one of the most important British slave-trading forts on the Upper Guinea coast, shipping many captives to South Carolina and Georgia.\n\n**Why the other options are wrong**\n\n- the first settlement of the Nova Scotians: The Nova Scotians founded Freetown in 1792.\n- a Portuguese mission school: Bunce Island was a British trading fort.\n- the capital of the Sierra Leone Protectorate: The Protectorate was governed from Freetown.",
+     "position": 5,
+     "options": [
+      {
+       "id": "209bc600-7eea-55ec-8e3e-18f617777861",
+       "label": "A",
+       "content": "the first settlement of the Nova Scotians",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d52135cc-cc8d-5fa8-921c-c0601c069de6",
+       "label": "B",
+       "content": "a Portuguese mission school",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ae1d6445-4819-5c7d-a8c5-423824515879",
+       "label": "C",
+       "content": "the capital of the Sierra Leone Protectorate",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "74e1e214-ab87-5ab9-bf7c-4b81d3d4cfd2",
+       "label": "D",
+       "content": "a British slave-trading fort",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "89b9bb1e-9174-594a-8443-5f469ff553de",
+   "topic": "Abolition of the Slave Trade and Its Consequences",
+   "title": "Abolition of the Slave Trade and Its Consequences: practice set 1",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on abolition of the slave trade and its consequences, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 107,
+   "questions": [
+    {
+     "id": "9f67d9d2-734b-5feb-a688-8dfd414f1ae0",
+     "key": "hi-ab-01",
+     "stem": "In which year did Britain pass the Act abolishing the slave trade?",
+     "image_url": null,
+     "explanation": "The Abolition of the Slave Trade Act of 1807 made it illegal for British subjects to take part in the slave trade.\n\n**Why the other options are wrong**\n\n- 1787: In 1787 the abolition society was formed and the Province of Freedom founded.\n- 1833: The 1833 Act abolished slavery itself in most British colonies.\n- 1865: Slavery was abolished in the United States in 1865.",
+     "position": 1,
+     "options": [
+      {
+       "id": "930cd149-c175-5d36-9fb3-dd4dcf6208d8",
+       "label": "A",
+       "content": "1787",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "14d1935c-23b6-5fba-82b9-7122a2bcc0e8",
+       "label": "B",
+       "content": "1807",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "873b3f50-97c9-5d05-908c-31861fcc5955",
+       "label": "C",
+       "content": "1833",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "76045612-4fdd-5325-849e-55bf83f215c0",
+       "label": "D",
+       "content": "1865",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8b7179f0-07f9-5173-8ee5-f3bda52fedce",
+     "key": "hi-ab-02",
+     "stem": "Which of these men was a leading British abolitionist?",
+     "image_url": null,
+     "explanation": "William Wilberforce led the campaign in Parliament, with Granville Sharp, Thomas Clarkson and others, to abolish the slave trade.\n\n**Why the other options are wrong**\n\n- John Hawkins: John Hawkins was an English slave trader of the sixteenth century.\n- Frederick Lugard: Lugard was a colonial administrator in Nigeria.\n- Pedro de Sintra: Pedro de Sintra was a Portuguese explorer who named Sierra Leone.",
+     "position": 2,
+     "options": [
+      {
+       "id": "992f1b29-5e13-5b4c-91a7-897eae1d971a",
+       "label": "A",
+       "content": "William Wilberforce",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0ab9a4a8-334d-5288-983d-9048f7b23f03",
+       "label": "B",
+       "content": "John Hawkins",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "719a89e6-e07d-5178-a688-d955490c9dee",
+       "label": "C",
+       "content": "Frederick Lugard",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b3c355a9-ecb9-587e-bd18-6d05db656ccc",
+       "label": "D",
+       "content": "Pedro de Sintra",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4893185f-94c4-505b-b2bf-cf657967ab92",
+     "key": "hi-ab-03",
+     "stem": "Freetown was important in enforcing abolition because it was",
+     "image_url": null,
+     "explanation": "The West Africa Squadron was based at Freetown from 1808; captured slave ships were tried there and freed Africans were landed and settled there.\n\n**Why the other options are wrong**\n\n- the headquarters of the slave trade on the coast: Freetown was founded for freed Africans and opposed the trade.\n- the capital of French West Africa: French West Africa was governed from Dakar.\n- the main port of the Atlantic slave trade to Brazil: Freetown was the centre of anti-slavery work.",
+     "position": 3,
+     "options": [
+      {
+       "id": "42b8b962-e737-5e95-a802-49371aa40017",
+       "label": "A",
+       "content": "the headquarters of the slave trade on the coast",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2ebf3770-973d-598d-86dd-3ecadfcf531f",
+       "label": "B",
+       "content": "the base of the Royal Navy's West Africa Squadron",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bd805449-6f32-52a5-88c8-6d1e684b4e79",
+       "label": "C",
+       "content": "the capital of French West Africa",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b242ed3d-0767-562b-9be7-ea1c9e3465c1",
+       "label": "D",
+       "content": "the main port of the Atlantic slave trade to Brazil",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "17db031a-f20f-5091-8118-c0900879921e",
+     "key": "hi-ab-04",
+     "stem": "Legitimate trade refers to trade in",
+     "image_url": null,
+     "explanation": "After abolition, Europeans encouraged trade in agricultural and forest produce, especially palm oil, palm kernels, groundnuts and timber.\n\n**Why the other options are wrong**\n\n- slaves carried under licence from the Crown: Legitimate trade replaced the slave trade.\n- gold and salt across the Sahara: That was the older trans-Saharan trade.\n- guns sold only to African rulers: Legitimate trade means produce, not arms.",
+     "position": 4,
+     "options": [
+      {
+       "id": "5b5534c6-29e6-5621-a1cd-80a47a046cec",
+       "label": "A",
+       "content": "slaves carried under licence from the Crown",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b96693b4-2dad-5236-896b-3062b214e67e",
+       "label": "B",
+       "content": "gold and salt across the Sahara",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b1e266f5-a161-54ad-b6e4-4a0e50f194fe",
+       "label": "C",
+       "content": "palm oil, groundnuts and other produce instead of slaves",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d64df9cc-1418-574c-abd3-b7efc4fa55e0",
+       "label": "D",
+       "content": "guns sold only to African rulers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "439fdb1f-95e1-533a-acb8-b18b475614b3",
+     "key": "hi-ab-05",
+     "stem": "Which of the following was a consequence of the abolition of the slave trade in West Africa?",
+     "image_url": null,
+     "explanation": "Abolition led to legitimate trade, freed settlements in Sierra Leone and Liberia, missions and Western education, new educated elites, and greater European involvement inland.\n\n**Why the other options are wrong**\n\n- the immediate end of domestic slavery everywhere: Domestic slavery continued in many places for decades.\n- the revival of the Songhai empire: Songhai had fallen in 1591.\n- the withdrawal of all Europeans from the coast: European involvement in fact grew after abolition.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9d70818f-d44b-5dcc-8b45-d3d6adcc094c",
+       "label": "A",
+       "content": "the immediate end of domestic slavery everywhere",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "abda173a-9dd2-5bd0-91e5-076c89740d73",
+       "label": "B",
+       "content": "the revival of the Songhai empire",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "99ea0f37-8d0f-515b-9b25-f2765361618d",
+       "label": "C",
+       "content": "the withdrawal of all Europeans from the coast",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a3c9e36e-2adb-5dd1-adf5-b0a5b73035bb",
+       "label": "D",
+       "content": "the spread of Christian missions and Western education",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "4270f1ec9751"
+}
