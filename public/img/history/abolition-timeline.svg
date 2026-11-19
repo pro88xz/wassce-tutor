@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 530" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Milestones in the abolition of the slave trade and slavery</title>
+<desc id="d">Timeline: the Somerset case in England in 1772; the Province of Freedom in Sierra Leone in 1787; the British Act abolishing the slave trade in 1807; Sierra Leone becomes a Crown Colony and base for the anti-slavery squadron in 1808; the Slavery Abolition Act passed in 1833; slavery abolished in the United States in 1865; and in Brazil in 1888.</desc>
+<defs></defs>
+<rect width="800" height="530" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">From the slave trade to the end of slavery</text>
+<line x1="140.0" y1="78.0" x2="140.0" y2="502.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="140.0" cy="92.0" r="9.0" fill="#7c3aed" stroke="#ffffff" stroke-width="2.5"/>
+<text x="118.0" y="92.0" font-size="19" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">1772</text>
+<text x="164.0" y="80.5" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Somerset case in England</text>
+<text x="164.0" y="103.5" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">a slave cannot be forced to leave England</text>
+<circle cx="140.0" cy="158.0" r="9.0" fill="#15803d" stroke="#ffffff" stroke-width="2.5"/>
+<text x="118.0" y="158.0" font-size="19" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">1787</text>
+<text x="164.0" y="146.5" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Province of Freedom founded</text>
+<text x="164.0" y="169.5" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">freed Black settlers land in Sierra Leone</text>
+<circle cx="140.0" cy="224.0" r="9.0" fill="#dc2626" stroke="#ffffff" stroke-width="2.5"/>
+<text x="118.0" y="224.0" font-size="19" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">1807</text>
+<text x="164.0" y="212.5" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Britain abolishes the slave trade</text>
+<text x="164.0" y="235.5" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">British subjects may no longer trade in slaves</text>
+<circle cx="140.0" cy="290.0" r="9.0" fill="#15803d" stroke="#ffffff" stroke-width="2.5"/>
+<text x="118.0" y="290.0" font-size="19" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">1808</text>
+<text x="164.0" y="278.5" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Sierra Leone becomes a Crown Colony</text>
+<text x="164.0" y="301.5" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">base for the anti-slavery naval squadron</text>
+<circle cx="140.0" cy="356.0" r="9.0" fill="#dc2626" stroke="#ffffff" stroke-width="2.5"/>
+<text x="118.0" y="356.0" font-size="19" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">1833</text>
+<text x="164.0" y="344.5" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Slavery Abolition Act</text>
+<text x="164.0" y="367.5" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">slavery ended in most British colonies from 1834</text>
+<circle cx="140.0" cy="422.0" r="9.0" fill="#2563eb" stroke="#ffffff" stroke-width="2.5"/>
+<text x="118.0" y="422.0" font-size="19" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">1865</text>
+<text x="164.0" y="410.5" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Slavery abolished in the USA</text>
+<text x="164.0" y="433.5" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Thirteenth Amendment</text>
+<circle cx="140.0" cy="488.0" r="9.0" fill="#2563eb" stroke="#ffffff" stroke-width="2.5"/>
+<text x="118.0" y="488.0" font-size="19" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">1888</text>
+<text x="164.0" y="476.5" font-size="18" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Slavery abolished in Brazil</text>
+<text x="164.0" y="499.5" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">the last country in the Americas</text>
+</svg>

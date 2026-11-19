@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The triangular trade</title>
+<desc id="d">The triangular trade of the Atlantic: ships carried manufactured goods such as guns, gunpowder, cloth, iron bars, beads and alcohol from Europe to West Africa; enslaved Africans across the Atlantic in the Middle Passage to the Americas; and plantation produce such as sugar, cotton, tobacco, rum and coffee back to Europe.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The triangular trade (16th to 19th centuries)</text>
+<rect x="270.0" y="65.0" width="260.0" height="90.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="400.0" y="87.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">EUROPE</text>
+<text x="400.0" y="110.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Britain, Portugal, France,</text>
+<text x="400.0" y="133.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the Netherlands</text>
+<rect x="25.0" y="325.0" width="250.0" height="90.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="150.0" y="347.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">THE AMERICAS</text>
+<text x="150.0" y="370.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Caribbean, Brazil,</text>
+<text x="150.0" y="393.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">North America</text>
+<rect x="525.0" y="325.0" width="250.0" height="90.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="650.0" y="347.0" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">WEST AFRICA</text>
+<text x="650.0" y="370.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">coastal forts and</text>
+<text x="650.0" y="393.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">trading posts</text>
+<line x1="520.0" y1="150.0" x2="640.0" y2="318.0" stroke="#2563eb" stroke-width="4" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="574.7" y="215.0" width="170.6" height="20.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="660.0" y="225.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. guns, cloth, iron,</text>
+<rect x="602.1" y="236.0" width="115.8" height="20.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="660.0" y="246.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">beads, alcohol</text>
+<line x1="520.0" y1="382.0" x2="280.0" y2="382.0" stroke="#dc2626" stroke-width="5" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<rect x="313.0" y="399.5" width="174.0" height="21.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="400.0" y="410.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2. enslaved Africans</text>
+<rect x="324.2" y="422.5" width="151.6" height="19.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="400.0" y="432.0" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(the Middle Passage)</text>
+<line x1="170.0" y1="318.0" x2="290.0" y2="150.0" stroke="#15803d" stroke-width="4" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="60.4" y="215.0" width="139.3" height="20.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="130.0" y="225.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3. sugar, cotton,</text>
+<rect x="48.6" y="236.0" width="162.8" height="20.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="130.0" y="246.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">tobacco, rum, coffee</text>
+</svg>
