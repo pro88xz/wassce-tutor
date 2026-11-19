@@ -1,9 +1,41 @@
 import { GUIDE_POSTS } from './editorial-guides'
+import { RESULTS_POSTS } from './editorial-results'
+
+/**
+ * A chart or photograph inside an article. Charts are our own work, drawn from
+ * the figures in the post's sources. Photographs follow the same three-file
+ * rule as editorial photos (see lib/editorial-images.ts) and, like every photo
+ * on the site, are credited on the About page, not under the photo.
+ */
+export type EditorialFigure = {
+  /** Site path to the 1200 px WebP; a -640.webp copy sits beside it */
+  image: string
+  alt: string
+  caption: string
+  /** Intrinsic size of the 1200 px file, so the page does not jump while it loads */
+  width: number
+  height: number
+  /** Photographs only: who took it, for the About page's photo credits */
+  photoCredit?: { creator: string; source: string; sourceUrl: string; license: string; licenseUrl?: string }
+}
+
+/** A small data table. Keep cells short so it fits a phone; it scrolls sideways if it must. */
+export type EditorialTable = {
+  caption: string
+  columns: string[]
+  rows: string[][]
+  /** Caveats about the figures, shown under the table */
+  note?: string
+}
 
 export type EditorialSection = {
   heading: string
   paragraphs?: string[]
   bullets?: string[]
+  figure?: EditorialFigure
+  table?: EditorialTable
+  /** Paragraphs that follow the figure or table */
+  after?: string[]
 }
 
 export type EditorialSource = { label: string; url: string }
@@ -412,6 +444,16 @@ export type BlogPost = {
   imageSourceLabel?: string
   /** The study call to action beside the article (default: browse all subjects). */
   action?: { heading: string; label: string; href: string }
+  /** Reporting on a news event (results day, a ministry statement): marked up as a NewsArticle. */
+  news?: boolean
+  /** Headline figures shown above the article, each one stated in the sources. */
+  keyFacts?: { value: string; label: string }[]
+  /** Dated changes to a developing story, newest first. Keep updatedAt in step with the first entry. */
+  updates?: { date: string; text: string }[]
+  /** Short answers to the questions readers ask, shown after the article. */
+  faq?: { question: string; answer: string }[]
+  /** Licence of the cover photo when it is not from Pexels, for the About page's photo credits. */
+  imageLicense?: { name: string; url?: string }
 }
 
 const UNIVERSITY_POSTS: BlogPost[] = [
@@ -696,9 +738,9 @@ const UNIVERSITY_POSTS: BlogPost[] = [
   }
 ]
 
-// The admissions guide stays first (it is the featured article); the exam
-// guides follow it so they appear at the top of the article grid.
-export const BLOG_POSTS: BlogPost[] = [UNIVERSITY_POSTS[0], ...GUIDE_POSTS, ...UNIVERSITY_POSTS.slice(1)]
+// The 2026 results report leads (it is the featured article while results are
+// news), then the admissions guide, then the exam guides at the top of the grid.
+export const BLOG_POSTS: BlogPost[] = [...RESULTS_POSTS, UNIVERSITY_POSTS[0], ...GUIDE_POSTS, ...UNIVERSITY_POSTS.slice(1)]
 
 export const EDITORIAL_PUBLIC_PAGES = [
   ...BLOG_POSTS.map((post) => ({ path: `/blog/${post.slug}`, lastmod: post.updatedAt })),

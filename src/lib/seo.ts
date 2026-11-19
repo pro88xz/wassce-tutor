@@ -69,7 +69,7 @@ export const PUBLIC_PAGES = {
   '/blog': {
     title: 'WASSCE Tutor Blog: Study & University Guides',
     description: 'Research-backed WASSCE study advice, Sierra Leone university admissions guides, subject planning and practical resources for students and families.',
-    lastmod: '2026-11-08',
+    lastmod: '2026-11-19',
   },
   '/universities': {
     title: 'Sierra Leone Universities: Courses & WASSCE Requirements',
