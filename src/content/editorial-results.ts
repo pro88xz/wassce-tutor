@@ -122,9 +122,9 @@ export const RESULTS_POSTS: BlogPost[] = [
       {
         heading: 'The best candidate and the best school',
         paragraphs: [
-          'The best candidate among the results released to the Ministry was Alfred Farwell Thorpe of the Sierra Leone Grammar School, Murray Town. He sat eight subjects and obtained six A1s, one B3 and one C4, an average grade of 1.63, which the Ministry classed as very good. Second was Silawi Ali (spelled Silawi Alie in some reports) of Kamboi Lebanese Senior Secondary School in Kenema, who also sat eight subjects and obtained four A1s, two B2s and two B3s, an average of 1.75.',
+          'The best candidate among the results released to the Ministry was Alfred Farwell Thorpe of the Sierra Leone Grammar School, Murray Town. He sat eight subjects and obtained six A1s, one B3 and one C4, an average grade of 1.63, which the Ministry classed as very good. Second was Silawi Ali (spelled Silawi Alie or Syllawa Alie in some reports) of Kamboi Lebanese Senior Secondary School in Kenema, who also sat eight subjects and obtained four A1s, two B2s and two B3s, an average of 1.75.',
           'The best school was Awada Senior Secondary School in Bo. All 30 of its candidates sat the examination, and 29 of them, 96.7%, obtained at least five credits including English Language and Mathematics, enough for direct entry to a degree programme in Sierra Leone. The school’s average grade was 3.6. The Ministry’s initial ranking left out schools with very small entries and schools where more than 5% of candidates were absent.',
-          'The Ministry also congratulated 119 schools where at least 90% of candidates with released results obtained five credits including English and/or Mathematics. It did not publish a full ranked list of schools. For comparison, the best candidate in 2025 was Mariam Roselyne Jalloh of Modern Academy Senior School of Excellence (average 1.78), and the best school was Kamboi Senior Secondary School in Kenema, where all 10 candidates met the university entry requirement.'
+          'The Ministry also congratulated 119 schools where at least 90% of candidates with released results obtained five credits including English and/or Mathematics. It did not publish a full ranked list of schools. [Our list of the best schools and candidates since 2021](/blog/best-wassce-schools-sierra-leone) puts this year in context. For comparison, the best candidate in 2025 was Mariam Roselyne Jalloh of Modern Academy Senior School of Excellence (average 1.78), and the best school was Kamboi Senior Secondary School in Kenema, where all 10 candidates met the university entry requirement.'
         ]
       },
       {
@@ -349,5 +349,165 @@ export const RESULTS_POSTS: BlogPost[] = [
     ],
     related: ['2026-wassce-results-sierra-leone', 'how-to-check-wassce-result-sierra-leone', 'sierra-leone-university-admission-requirements-2026-2027', 'what-counts-as-a-wassce-credit-for-university-admission'],
     action: { heading: 'Waiting on a result? Keep your subjects fresh for whatever comes next.', label: 'Explore subjects', href: '/wassce/subjects' }
+  },
+  {
+    slug: 'best-wassce-schools-sierra-leone',
+    seoTitle: 'Best WASSCE Schools in Sierra Leone 2026, and Every Year Since 2021',
+    title: 'The Best WASSCE Schools and Candidates in Sierra Leone, 2021 to 2026',
+    description: 'Every year’s best WASSCE school and top candidate in Sierra Leone since 2021, from the Ministry’s announcements: Awada, Kamboi, Providence, Dele-Peddle and more.',
+    category: 'WASSCE results',
+    publishedAt: '2026-11-19',
+    updatedAt: '2026-11-19',
+    readMinutes: 8,
+    image: '/img/blog/best-wassce-schools-sierra-leone.webp',
+    imageAlt: 'List of the best WASSCE school in Sierra Leone each year: Awada (2026), Kamboi (2025), Dele-Peddle (2024), Providence (2023) and Kamboi (Lebanese) in 2022 and 2021',
+    ...OURS,
+    keyFacts: [
+      { value: 'Awada SSS', label: '2026’s best school, in Bo: 29 of its 30 candidates qualified for a degree' },
+      { value: '1.11', label: 'best average grade of the six years: two Providence candidates, 2023' },
+      { value: '185 of 185', label: 'Providence candidates who qualified for university in 2023' },
+      { value: '119', label: 'schools in 2026 where at least 90% got five credits' }
+    ],
+    intro: 'Every year, when the Minister of Basic and Senior Secondary Education announces the WASSCE results, the Ministry names the best-performing candidate and school in Sierra Leone. This page collects those announcements from 2021 to 2026 in one place, using the Ministry’s own analyses where they are published and contemporary reports of the announcement where they are not. It also explains how the Ministry ranks schools, and why the school at the top is often a small one.',
+    sections: [
+      {
+        heading: 'The best school and candidate each year',
+        paragraphs: [
+          'The best school in 2026 was Awada Senior Secondary School in Bo, and the best candidate was Alfred Farwell Thorpe of the Sierra Leone Grammar School, Murray Town. The table lists every year since 2021.'
+        ],
+        table: {
+          caption: 'Best WASSCE school and candidate in Sierra Leone, as announced each year',
+          columns: ['Year', 'Best school', 'Best candidate', 'Average'],
+          rows: [
+            ['2026', 'Awada SSS, Bo', 'Alfred Farwell Thorpe, Sierra Leone Grammar School', '1.63'],
+            ['2025', 'Kamboi SSS, Kenema', 'Mariam Roselyne Jalloh, Modern Academy Senior School of Excellence', '1.78'],
+            ['2024', 'Dele-Peddle International School, Allen Town', 'Areej Zayid, Naiahcom High School', '1.50*'],
+            ['2023', 'Providence International SHS, Freetown', 'Raymonda E. Mammah and Sahr Edward Fillie (joint), Providence International SHS', '1.11'],
+            ['2022', 'Kamboi (Lebanese) SSS, Kenema', 'Skaikay Nasma, Kamboi (Lebanese) SSS', '1.63'],
+            ['2021', 'Kamboi (Lebanese) SSS, Kenema', 'Momoh Sankoh, Murialdo Secondary School, Port Loko', '1.56']
+          ],
+          note: 'Average is the candidate’s average grade, where A1 counts 1, B2 counts 2 and so on down to F9, so lower is better. *Not announced for 2024: we worked it out from Areej Zayid’s reported grades (six A1s and two B3s). The 2021 analysis gives Momoh Sankoh’s average as 1.58 in its highlights and 1.56 in its table. Names are as the Ministry or the reports give them; 2022’s top candidate is listed surname first, as in the Ministry’s list.'
+        }
+      },
+      {
+        heading: '2026: Awada in Bo, and Thorpe at the Grammar School',
+        paragraphs: [
+          'All 30 of Awada Senior Secondary School’s candidates sat the examination, and 29 of them, 96.7%, obtained at least five credits including English Language and Mathematics, the requirement for direct entry to a degree programme in Sierra Leone. The school’s average grade was 3.6. In its initial ranking the Ministry left out schools with very small entries and schools where more than 5% of candidates were absent.',
+          'Alfred Farwell Thorpe sat eight subjects and obtained six A1s, one B3 and one C4. Second was a candidate from Kamboi Lebanese Senior Secondary School in Kenema, whose name is spelled Silawi Ali, Silawi Alie or Syllawa Alie in different reports, with four A1s, two B2s and two B3s (average 1.75).',
+          'The Ministry also congratulated 119 schools where at least 90% of candidates with released results obtained five credits including English and/or Mathematics, but it did not publish their names or a full ranking. [Our report on the 2026 results](/blog/2026-wassce-results-sierra-leone) has the national figures.'
+        ]
+      },
+      {
+        heading: '2025: two girls at the top, and Kamboi again',
+        paragraphs: [
+          'The best candidate in 2025 was Mariam Roselyne Jalloh of Modern Academy Senior School of Excellence, with four A1s, three B2s and two B3s in nine subjects (average 1.78). Second was Russell Afwa Jemis, as the Ministry listed her, of the International Secondary School, Freetown, with six A1s, two B3s and a C5 (average 1.89).',
+          'The best school was Kamboi Senior Secondary School in Kenema, where all ten candidates obtained five credits including English Language and Mathematics. Kabala Christian Secondary School also had every candidate meet the university entrance requirement.'
+        ]
+      },
+      {
+        heading: '2024: Dele-Peddle and Naiahcom',
+        paragraphs: [
+          'Sierraloaded reported, from the Ministry’s 2024 figures, that the best school was Dele-Peddle International School in Allen Town, where all 17 candidates met the university requirement, and that the best candidate was Areej Zayid, a science student at Naiahcom High School, with six A1s and two B3s. The best boy was Alpha Ibrahim Bah of St Edward’s Secondary School.',
+          'WAEC runs its own awards, which rank candidates differently, so its winners do not always match the Ministry’s. At its April 2025 ceremony WAEC gave first place for the 2024 WASSCE to Jared Augustus Sankoh-Hughes of the Sierra Leone Grammar School.'
+        ]
+      },
+      {
+        heading: '2023: Providence, 185 out of 185',
+        paragraphs: [
+          'Providence International Senior High School in Freetown had results released for 185 candidates, and every one of them obtained five credits including English Language and Mathematics. Two of its candidates shared first place nationally: Raymonda E. Mammah and Sahr Edward Fillie each sat nine subjects and obtained eight A1s and a B2, an average of 1.11, the best of the six years on this page. The Ministry noted that 16 candidates in 2023 had a better average than the best in 2022.'
+        ]
+      },
+      {
+        heading: '2022 and 2021: Kamboi (Lebanese) in Kenema',
+        paragraphs: [
+          'The Ministry published fuller rankings in 2021 and 2022. In 2022 the top student was a girl who passed all eight of her subjects with an average of 1.63, and the top school had every candidate meet the university requirement with an average grade of 2.33. The Ministry’s list of top schools by average grade that year was led by Kamboi (Lebanese) Senior Secondary School in Kenema.'
+        ],
+        bullets: [
+          'Top schools by average grade, 2022, in the Ministry’s order: Kamboi (Lebanese) SSS, Kenema; Science World SSS, Freetown; Providence International Senior High School, Freetown; Hammond International Academy Secondary School, Freetown; Mallory Jansen Memorial High School, Ngolala (Bonthe); Pentecostal SSS, Aberdeen Ferry Road; Furlange School of Excellence (EducAid) SSS, Port Loko; Dele-Peddle International High School, Freetown; Extra Mile Oba Funkia Community SSS, Goderich.',
+          'Top four candidates, 2022: Skaikay Nasma, Kamboi (Lebanese) SSS (six A grades); Kallon Khadijah Hassan, Kenema Community Initiative Academy SSS; Nchezor Peter Onyeka, Providence International Senior High School; and Kpaka Julius Alie, Saline High School, Freetown (five A grades each).'
+        ],
+        table: {
+          caption: 'Top 10 WASSCE schools in 2021, by share of candidates meeting university requirements',
+          columns: ['School', 'Sat', 'University', 'Average'],
+          rows: [
+            ['Kamboi (Lebanese) SSS, Kenema', '6', '100%', '2.90'],
+            ['Government SS for Boys, Magburaka', '95', '100%', '3.48'],
+            ['Kabala Christian Secondary, Kabala', '52', '100%', '3.82'],
+            ['Pathway Academy SS, Benguema', '38', '100%', '4.52'],
+            ['St. Ambrose SSS, Allen Town', '37', '94.6%', '4.63'],
+            ['International Islamic SSS, Freetown', '41', '92.7%', '4.85'],
+            ['EducAid Sierra Leone SS, Freetown', '52', '92.3%', '4.51'],
+            ['International College of Makeni', '37', '89.2%', '3.55'],
+            ['Dele-Peddle Int. High School, Freetown', '24', '87.5%', '4.21'],
+            ['Browndel High School, Freetown', '14', '78.6%', '4.21']
+          ],
+          note: 'From the Ministry’s 2021 WASSCE results analysis. Only schools where every candidate obtained five credits in any subjects were ranked. “University” is the share who met the requirement for direct entry to a degree. Three of the ten, all in the top five, are government-assisted.'
+        },
+        after: [
+          'In 2021 the top student was Momoh Sankoh of Murialdo Secondary School in Port Loko, a government-assisted school, who sat nine subjects and obtained six A1s. The Ministry noted that 67% of the top students in each district that year attended government-assisted schools.'
+        ]
+      },
+      {
+        heading: 'Why the best school is often a small one',
+        paragraphs: [
+          'The Ministry ranks schools by the share of their candidates who meet the university entry requirement of five credits including English Language and Mathematics, and uses the average grade to separate schools on the same share. A share is easier to keep at 100% with six or ten candidates than with a hundred. The winners in 2021 (6 candidates), 2024 (17) and 2025 (10) were all small, which makes Providence’s 185 out of 185 in 2023 the most striking result on this page.',
+          'The rules have tightened. In 2021 only schools where every candidate obtained the five-credit benchmark were ranked; in 2026 the Ministry also left out schools with very small entries and schools where more than 5% of candidates were absent, so that a school cannot improve its share by keeping weaker candidates away from the examination.'
+        ]
+      },
+      {
+        heading: 'The schools that keep coming back',
+        bullets: [
+          'Kamboi (Lebanese) Senior Secondary School, Kenema: top school in 2021 and 2022, and the school of 2026’s second-best candidate. A Kamboi Senior Secondary School in Kenema was also named best school in 2025.',
+          'Providence International Senior High School, Freetown: third in 2022, best school in 2023 with both joint top candidates, and the school of one of 2022’s top four candidates.',
+          'Dele-Peddle International High School, Freetown: in the top ten in 2021 and 2022, and best school in 2024.',
+          'Sierra Leone Grammar School, Murray Town: WAEC’s top 2024 WASSCE award and the best candidate of 2026.',
+          'Kabala Christian Secondary School, Kabala: third in 2021, and every candidate qualified for university in 2025.'
+        ]
+      },
+      {
+        heading: 'What this means if you are choosing a school or studying now',
+        paragraphs: [
+          'A school’s place in one year’s ranking says less than it seems, because so few candidates decide it. A better test is whether a school appears near the top year after year, and how many of its candidates it enters. Ask a school how many of its candidates met the university requirement last year, out of how many it entered.',
+          'The candidates at the top of these lists have one thing in common: credits in both English Language and Mathematics. In 2026 only 9.77% of candidates earned an English credit, so English is where most candidates have the most to gain. [Our guide to the three English papers](/blog/how-to-pass-wassce-english-language) is a good place to start.'
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: 'Which school was the best in the 2026 WASSCE in Sierra Leone?',
+        answer: 'Awada Senior Secondary School in Bo. All 30 of its candidates sat the examination and 29 obtained five credits including English Language and Mathematics.'
+      },
+      {
+        question: 'Who was the best WASSCE candidate in Sierra Leone in 2026?',
+        answer: 'Alfred Farwell Thorpe of the Sierra Leone Grammar School, Murray Town, with six A1s, one B3 and one C4 in eight subjects, an average grade of 1.63.'
+      },
+      {
+        question: 'Which school has been named best most often?',
+        answer: 'Kamboi (Lebanese) Senior Secondary School in Kenema led the Ministry’s rankings in 2021 and 2022, and a Kamboi Senior Secondary School in Kenema was named best school in 2025.'
+      },
+      {
+        question: 'How does the Ministry decide the best school?',
+        answer: 'By the share of a school’s candidates who obtain five credits including English Language and Mathematics, with the average grade used to separate schools. In 2026 it left out schools with very small entries and those where more than 5% of candidates were absent.'
+      },
+      {
+        question: 'Is there a full ranking of every school for 2026?',
+        answer: 'Not yet. The Ministry congratulated 119 schools where at least 90% of candidates obtained five credits, but it has not published their names or a full ranking.'
+      }
+    ],
+    sources: [
+      { label: 'Ministry of Basic and Senior Secondary Education: 2021 WASSCE results analysis (PDF)', url: 'https://mbsse.gov.sl/wp-content/uploads/2022/04/2021-West-African-Senior-School-Certificate-Examination-Analysis_rev27March2022.pdf' },
+      { label: 'Ministry of Basic and Senior Secondary Education: Number of candidates sitting WASSCE increased by 479%, 2018 to 2022', url: 'https://mbsse.gov.sl/number-of-candidates-sitting-wassce-increased-by-479-2018-2022/' },
+      { label: 'Sierraloaded: Sierra Leone government releases 2023 WASSCE results (2 October 2023)', url: 'https://sierraloaded.sl/education/sierra-leone-government-releases-2023-wassce-results/' },
+      { label: 'Sierraloaded: Providence International Senior High School tops WASSCE (2 October 2023)', url: 'https://sierraloaded.sl/education/providence-senior-high-school-tops-wassce-2023/' },
+      { label: 'Sierraloaded: WASSCE 2024 statistics show girls performing better than boys (12 October 2024)', url: 'https://sierraloaded.sl/education/wassce-2024-statistics-girls-better-than-boys/' },
+      { label: 'Sierraloaded: WAEC honours top performers of 2023 and 2024 public exams (30 April 2025)', url: 'https://sierraloaded.sl/news/waec-candidates-2023-2024-public-examinations/' },
+      { label: 'AYV News: Female pupils, Kenema top 2025 WASSCE (17 October 2025)', url: 'https://ayvnews.com/female-pupils-kenema-top-2025-wassce/' },
+      { label: 'Sierraloaded: Government announces 2025 WASSCE results (16 October 2025)', url: 'https://sierraloaded.sl/news/government-announces-2025-wassce-results/' },
+      { label: 'Sierraloaded: Awada Senior Secondary School named best-performing school in 2026 (27 October 2026)', url: 'https://sierraloaded.sl/education/awada-school-bo-best-school-2026-wassce/' },
+      { label: 'Sierraloaded: Alfred Farwell Thorpe emerges best candidate in 2026 (27 October 2026)', url: 'https://sierraloaded.sl/news/grammar-school-alfred-thorpe-best-2026-wassce/' },
+      { label: 'The Calabash: Thorpe best pupil and Awada best school as 47,454 results withheld (28 October 2026)', url: 'https://thecalabashnewspaper.com/archives/65743' }
+    ],
+    related: ['2026-wassce-results-sierra-leone', 'what-counts-as-a-wassce-credit-for-university-admission', 'how-to-pass-wassce-english-language', 'sierra-leone-university-admission-requirements-2026-2027'],
+    action: { heading: 'The top candidates all have credits in English and Maths. Start with yours.', label: 'Explore subjects', href: '/wassce/subjects' }
   }
 ]
