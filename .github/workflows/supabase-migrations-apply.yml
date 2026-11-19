@@ -316,3 +316,16 @@ jobs:
           set -euo pipefail
           # The update skips a card the tutor edited meanwhile, so this only reports.
           psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select string_agg(full_name || ': ' || array_length(regexp_split_to_array(btrim(bio), '\s+'), 1) || ' words, ' || location, '; ' order by verified_at) from public.tutors where status = 'active' and listed;"
+
+      - name: Verify (32) rewritten lessons carry no old approval; two text fixes applied
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            (select count(*) from public.lessons where id in ('6aa1ff46-fbee-48ea-b76e-cb24e2a26231','ea3be6ef-17d8-44a7-b643-d739da45a812','e5b2cf54-2451-423f-bf51-c10005a14dd2','8a6898e6-93e2-403c-8d23-ca366276fa31','d581e82f-9bad-439c-8f56-70a8c3383757','60434abd-d891-4c24-acd8-26afd389e8f3','730555e2-ddc3-44dc-9eb4-fd73c4cdb8e7','bbdbc508-6b59-48b5-84a6-b0ce03898870','dcae68f0-944d-4ce8-829a-2903c1d31c28','f9e5ccb9-9029-47f8-9066-8b70d6679163') and reviewed_at < timestamptz '2026-11-19 00:00:00+00'),
+            (select count(*) from public.lessons where id = '192d9ccc-6f49-42d9-8f64-a74276db8e44' and content like '%<br>%'),
+            (select count(*) from public.lessons where id = 'aa39949a-d814-4b12-862a-7d7ff1da5ef9' and content like '%nearest cedi%'));" | tr -d '[:space:]')"
+          echo "rewritten lessons with an old approval, literal <br>, weight rounded to a currency: $RESULT"
+          test "$RESULT" = "0,0,0" || { echo "Checks did not match 0,0,0"; exit 1; }

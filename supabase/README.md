@@ -30,6 +30,7 @@ etc.). Don't run them against the live project.
 | `20261117_22_everything_free.sql` | Every published lesson and every practice set is free for everyone, signed in or not, and public (`wassce_public_lessons`, `wassce_public_questions`). Plans still give the AI study tutor and the timed mock exams (`papers.paper_type = 'Mock'`). Apply with the "Apply database migrations" workflow |
 | `20261117_23_lesson_currency_signs.sql` | Escapes plain-text `$` amounts in the hand-imported accounting-equation lesson, which otherwise rendered as italic maths. Apply with the "Apply database migrations" workflow |
 | `20261117_24_key_term_progress.sql` | `key_term_progress`: which key terms (the lessons' definitions as revision cards) each student knows, "I know this" or "Not yet". Each student reads and changes only their own rows; visitors have no access. Apply with the "Apply database migrations" workflow |
+| `20261119_32_lesson_quality_fixes.sql` | From a content audit: clears the approvals recorded for the ten Business Management outlines, which are rewritten as full lessons (notes sync), and fixes a literal `<br>` and a weight "rounded to the nearest cedi" in two hand-imported lessons. Apply with the "Apply database migrations" workflow |
 
 Each was tested against a local Postgres copy of the live schema (logged-out
 visitor, student on trial, expired student, admin) before being committed.
