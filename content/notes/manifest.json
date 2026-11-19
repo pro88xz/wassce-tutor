@@ -9115,7 +9115,11 @@
       "auto_sync": true,
       "title": "Berlin Conference 1884–85: decisions, methods and effects of partition",
       "est_minutes": 8,
-      "sort_order": 2
+      "sort_order": 2,
+      "slug": "berlin-conference-1884-85-decisions-methods-and-effects-of-partition",
+      "retire": [
+        "berlin-conference-188485-decisions-methods-and-effects-of-partition"
+      ]
     },
     {
       "file": "history-colonial-rule-1.md",
@@ -9323,7 +9327,11 @@
       "auto_sync": true,
       "title": "Nova Scotian settlers, the Maroons and the Sierra Leone Company, 1792–1808",
       "est_minutes": 9,
-      "sort_order": 2
+      "sort_order": 2,
+      "slug": "nova-scotian-settlers-the-maroons-and-the-sierra-leone-company-1792-1808",
+      "retire": [
+        "nova-scotian-settlers-the-maroons-and-the-sierra-leone-company-17921808"
+      ]
     },
     {
       "file": "history-sl-krio-1.md",
@@ -9453,7 +9461,11 @@
       "auto_sync": true,
       "title": "Sierra Leone's road to independence 1951–1961: Lancaster House and the APC",
       "est_minutes": 8,
-      "sort_order": 2
+      "sort_order": 2,
+      "slug": "sierra-leones-road-to-independence-1951-1961-lancaster-house-and-the-apc",
+      "retire": [
+        "sierra-leones-road-to-independence-19511961-lancaster-house-and-the-apc"
+      ]
     },
     {
       "file": "history-sl-margai-1.md",
@@ -9466,7 +9478,11 @@
       "auto_sync": true,
       "title": "Sir Milton Margai's government 1961–1964: achievements and problems",
       "est_minutes": 8,
-      "sort_order": 1
+      "sort_order": 1,
+      "slug": "sir-milton-margais-government-1961-1964-achievements-and-problems",
+      "retire": [
+        "sir-milton-margais-government-19611964-achievements-and-problems"
+      ]
     },
     {
       "file": "history-sl-margai-2.md",
@@ -9518,7 +9534,11 @@
       "auto_sync": true,
       "title": "Joseph Saidu Momoh's government 1985–1992 and why it fell",
       "est_minutes": 8,
-      "sort_order": 1
+      "sort_order": 1,
+      "slug": "joseph-saidu-momohs-government-1985-1992-and-why-it-fell",
+      "retire": [
+        "joseph-saidu-momohs-government-19851992-and-why-it-fell"
+      ]
     },
     {
       "file": "history-sl-momoh-2.md",
@@ -9531,7 +9551,11 @@
       "auto_sync": true,
       "title": "Sierra Leone Civil War 1991–2002: causes, course and effects",
       "est_minutes": 8,
-      "sort_order": 2
+      "sort_order": 2,
+      "slug": "sierra-leone-civil-war-1991-2002-causes-course-and-effects",
+      "retire": [
+        "sierra-leone-civil-war-19912002-causes-course-and-effects"
+      ]
     },
     {
       "file": "history-sl-kabbah-1.md",
@@ -9544,7 +9568,11 @@
       "auto_sync": true,
       "title": "NPRC military government 1992–1996: Strasser, Bio and the return to civilian rule",
       "est_minutes": 9,
-      "sort_order": 1
+      "sort_order": 1,
+      "slug": "nprc-military-government-1992-1996-strasser-bio-and-the-return-to-civilian-rule",
+      "retire": [
+        "nprc-military-government-19921996-strasser-bio-and-the-return-to-civilian-rule"
+      ]
     },
     {
       "file": "history-sl-kabbah-2.md",
@@ -9557,7 +9585,11 @@
       "auto_sync": true,
       "title": "President Kabbah 1996–2007: AFRC coup, Lomé Agreement and the end of the war",
       "est_minutes": 9,
-      "sort_order": 2
+      "sort_order": 2,
+      "slug": "president-kabbah-1996-2007-afrc-coup-lome-agreement-and-the-end-of-the-war",
+      "retire": [
+        "president-kabbah-19962007-afrc-coup-lom-agreement-and-the-end-of-the-war"
+      ]
     },
     {
       "file": "history-sl-international-1.md",
