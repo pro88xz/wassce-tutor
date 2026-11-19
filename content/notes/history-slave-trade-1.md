@@ -73,6 +73,14 @@ Many died on the voyage; others resisted through **revolts**, hunger strikes and
 Do not describe the Atlantic slave trade as "just another trade". It was a system of **forced migration and human suffering** on a vast scale, and essays should explain its human cost as well as its organisation.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Triangular trade**: the three-sided trade: European goods to Africa, captives from Africa to the Americas, and plantation produce from the Americas back to Europe.
+- **Middle Passage**: the crossing of the Atlantic from Africa to the Americas, the leg of the triangular trade on which captives were carried.
+- **Bunce Island**: a major slave-trading fort in the Sierra Leone River.
+:::
+
 ## Key points
 
 - Cause: **demand for plantation and mine labour in the Americas**, plus profits, government support and African participation.

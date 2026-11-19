@@ -92,6 +92,14 @@ The **National Congress of British West Africa (NCBWA)** was founded in **Accra 
 Early nationalists of the NCBWA did **not** demand immediate independence. They asked for **reforms and representation** within the British Empire. The demand for **"self-government now"** came after the Second World War, especially from Nkrumah's CPP.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **J. E. Casely Hayford**: the Gold Coast lawyer who led the National Congress of British West Africa, founded in Accra in 1920.
+- **Elective principle**: the right of Africans to elect some members of a colony's Legislative Council, won in Nigeria (1922), Sierra Leone (1924) and the Gold Coast (1925).
+- **I. T. A. Wallace-Johnson**: the Sierra Leonean nationalist and trade unionist who led the West African Youth League.
+:::
+
 ## Key points
 
 - **Nationalism** = the struggle against colonial rule for **self-government and independence**.

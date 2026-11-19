@@ -79,6 +79,13 @@ Older Sierra Leoneans remember the late 1980s as the time of "**no light, no wat
 The **1991 Constitution** was introduced under **Momoh**, not by the NPRC or Kabbah. The NPRC actually **suspended** it in 1992; it was restored after the **1996** elections.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Joseph Saidu Momoh**: the army commander chosen by Stevens who became President in November 1985 and promised a New Order.
+- **Constitution of 1991**: the constitution of 1 October 1991 that restored multi-party politics in Sierra Leone.
+:::
+
 ## Key points
 
 - **Momoh** (army commander) became President in **November 1985** as Stevens's chosen successor; promised a **New Order**.

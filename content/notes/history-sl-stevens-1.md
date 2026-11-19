@@ -79,6 +79,14 @@ Stevens was popularly known as "**Pa Shaki**" and was famous for his political s
 Sierra Leone became a **republic** in **1971** but a **one-party state** only in **1978**. These are two separate changes: the first replaced the Queen as head of state; the second banned all parties except the APC.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Siaka Stevens** (1905–1988): the trade unionist who founded the APC, became Prime Minister in 1968 and was President from 1971 to 1985.
+- **Republic**: a state whose head is a president, not a monarch; Sierra Leone became one on 19 April 1971.
+- **One-party state**: a state in which only one political party is allowed; Sierra Leone became one under the APC in 1978.
+:::
+
 ## Key points
 
 - **Siaka Stevens (1905–1988)**: trade unionist; founded the **APC (1960)**; PM **1968**; President **1971–1985**.

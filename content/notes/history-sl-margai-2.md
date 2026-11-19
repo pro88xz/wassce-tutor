@@ -80,6 +80,14 @@ The 1967 election is often remembered as the first time in **independent Africa*
 Do not confuse the three military groups of 1967–1968. **Lansana** declared martial law on **21 March 1967**; the **NRC**, soon led by **Juxon-Smith**, took over on **23 March 1967**; and the **Sergeants' revolt** (Anti-Corruption Revolutionary Movement) overthrew the NRC in **April 1968**.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Albert Margai**: Milton Margai's brother, Prime Minister from 1964 to 1967, whose one-party and republican proposals made him unpopular.
+- **National Reformation Council (NRC)**: the military government set up on 23 March 1967 and led by Andrew Juxon-Smith.
+- **Sergeants' revolt** (April 1968): the revolt by soldiers that overthrew the NRC and brought Siaka Stevens to power as Prime Minister.
+:::
+
 ## Key points
 
 - **Albert Margai** became PM in **1964**, appointed by **Governor-General Lightfoot Boston**; the choice was disputed.

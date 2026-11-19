@@ -74,6 +74,14 @@ The case went to the **United States Supreme Court**, where former President **J
 The slave trade did **not** end in Sierra Leone in 1807. The British Act stopped **British** trading, but **illegal trading** by others continued at places such as the **Gallinas** until the **1840s and 1850s**.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Bunce Island**: the slave-trading fort in the Sierra Leone River which, from about 1670, shipped captives to South Carolina and Georgia.
+- **Gallinas**: the coast in the south where the illegal slave trade continued after 1807, until the Royal Navy attack of 1840.
+- **Amistad revolt** (1839): the revolt led by Sengbe Pieh on the slave ship Amistad; the US Supreme Court freed the captives in 1841.
+:::
+
 ## Key points
 
 - Captives came from **wars, raids, courts and debt**, sold through **middlemen** for European goods.

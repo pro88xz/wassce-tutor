@@ -84,6 +84,14 @@ The names of places in Freetown still recall its early history: **King Tom**, **
 Do not confuse the **Province of Freedom (1787)** with the founding of **Freetown (1792)**. The 1787 settlement of the Black Poor, Granville Town, failed in 1789; **Freetown** was founded by the **Nova Scotians** under the **Sierra Leone Company** in **1792**.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Black Poor**: poor Black people in London, many of them former soldiers and servants, about 400 of whom founded the Province of Freedom in 1787.
+- **King Naimbana**: the Koya Temne ruler who confirmed the grant of land to the settlers in 1788.
+- **Sierra Leone Company**: the company formed by abolitionists in 1791 to run the settlement through legitimate trade, Christianity and profit.
+:::
+
 ## Key points
 
 - The **Black Poor** of London were helped by the **Committee for the Relief of the Black Poor (1786)**.

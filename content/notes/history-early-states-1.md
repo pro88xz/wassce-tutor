@@ -62,6 +62,15 @@ Al-Bakri, writing in Córdoba from the reports of traders, described Kumbi Saleh
 Ancient Ghana was **not** in the area of today's Republic of Ghana. Modern Ghana borrowed the name in 1957. Ancient Ghana lay in the Sahel of present-day Mauritania and Mali.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Ancient Ghana** (Wagadu): the empire of the Soninke, from about the 4th to the 11th century, in present-day Mauritania and Mali, which grew rich on the gold and salt trade.
+- **Kumbi Saleh**: the capital of ancient Ghana, described by the Arab geographer al-Bakri in 1068.
+- **Matrilineal succession**: inheritance through the mother's line; in ancient Ghana the king was succeeded by his sister's son.
+- **Almoravids**: Berber Muslim reformers from the north whose attack in 1076 helped to bring about the decline of ancient Ghana.
+:::
+
 ## Key points
 
 - Ancient **Ghana (Wagadu)** of the **Soninke**, about the 4th to 11th centuries, in present-day **Mauritania and Mali**.

@@ -82,6 +82,16 @@ Some government soldiers, called "**sobels**" (soldiers by day, rebels by night)
 Do not write that the war was caused only by diamonds. Diamonds **financed and prolonged** the war, but its **root causes** were **bad governance, corruption, economic collapse and the exclusion of young people**, as the TRC concluded.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **RUF** (Revolutionary United Front): the rebel movement led by Foday Sankoh that began the civil war at Bomaru on 23 March 1991.
+- **Foday Sankoh**: the leader of the RUF, backed by Charles Taylor of Liberia.
+- **Lomé Peace Agreement** (7 July 1999): the peace agreement between the government and the RUF signed in Lomé, Togo.
+- **UNAMSIL** (United Nations Mission in Sierra Leone): the UN peacekeeping force sent to Sierra Leone after the Lomé agreement.
+- **Disarmament, demobilisation and reintegration (DDR)**: the programme that took weapons from fighters and helped them back into civilian life.
+:::
+
 ## Key points
 
 - War began **23 March 1991** at **Bomaru**; **RUF** led by **Foday Sankoh**, backed by **Charles Taylor**.

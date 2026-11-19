@@ -88,6 +88,14 @@ The **SLPP's palm tree symbol** and its base in the **south and east** date from
 The SLPP was **not** formed only by Protectorate people. The **People's Party** of Lamina Sankoh was a **Colony** group, and the SLPP always presented itself as a **national** party. But its main strength in 1951 came from the **Protectorate** and the chiefs.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Stevenson Constitution**: the constitution of 1951, based on Governor Stevenson's 1947 proposals, which gave Africans, and the Protectorate, a majority in the Legislative Council.
+- **SLPP** (Sierra Leone People's Party): the party formed in 1951 and led by Milton Margai, which won the 1951 elections.
+- **National Council of the Colony of Sierra Leone (NCSL)**: the party led by Bankole-Bright, formed in 1950, which opposed the Stevenson Constitution.
+:::
+
 ## Key points
 
 - **Protectorate Assembly (1946)**; **Stevenson proposals (1947)**; **constitution and elections (1951)**.

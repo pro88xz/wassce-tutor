@@ -68,6 +68,13 @@ The Colony–Protectorate divide that grew after 1898 remained a major issue unt
 The Chalmers Report did **not** lead to the end of the hut tax. Chalmers **recommended** abolishing it, but the Colonial Office **rejected** his advice and supported Governor Cardew; the tax was **kept**.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Sir David Chalmers**: the commissioner whose 1899 report blamed the war on the hut tax and the Frontier Police and urged that the tax be abolished.
+- **West African Regiment**: the army regiment raised by the British in 1898, during the Hut Tax War.
+:::
+
 ## Key points
 
 - **Sir David Chalmers** investigated; his **1899 report** blamed the **hut tax** and the **Frontier Police**, and urged abolition of the tax.

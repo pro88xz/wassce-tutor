@@ -63,6 +63,15 @@ Oral traditions and early Portuguese records suggest that peoples such as the **
 "Stateless" or decentralised societies were **not** without government. They were governed by **councils of elders, lineage heads, age grades and secret societies**, without a single king.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Centralised society**: a society ruled by a king or chief with a central government, courts and an army, such as Oyo or Mali.
+- **Decentralised society**: a society without a single ruler, governed by elders, age grades and secret societies, such as the Igbo communities.
+- **Fulani** (Fula, Peul): a people spread across the savanna and the Fouta Djallon, known as pastoralists and Islamic scholars, who led the 19th-century jihads.
+- **Tuareg**: Berber-speaking camel nomads of the Sahara who guided the caravans of the trans-Saharan trade.
+:::
+
 ## Key points
 
 - Major peoples include the **Wolof, Soninke, Mandinka, Fulani, Songhai, Hausa, Kanuri, Akan, Yoruba, Edo, Igbo** and **Tuareg**.

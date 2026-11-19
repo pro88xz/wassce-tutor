@@ -78,6 +78,14 @@ Krio is now spoken by almost everyone in Sierra Leone as a **first or second lan
 Do not say that the Krio are "Europeans" or "not Africans". The Krio are **Africans**, descended mainly from **African recaptives and settlers of African descent**, who created a new African culture in Freetown.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Athens of West Africa**: the name given to Freetown for its schools and college, which educated people from all over West Africa.
+- **Saro**: the name given in Nigeria to Krio and recaptives from Sierra Leone who settled in Lagos and Abeokuta.
+- **Aku**: Krio of Yoruba descent, many of them Muslims.
+:::
+
 ## Key points
 
 - The **Krio** descend from the **Black Poor, Nova Scotians, Maroons** and, above all, the **Liberated Africans**.

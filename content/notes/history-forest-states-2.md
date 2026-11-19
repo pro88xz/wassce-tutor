@@ -58,6 +58,16 @@ According to tradition, Okomfo Anokye **called down a Golden Stool from the sky*
 Do not confuse **Asante** and **Dahomey**. **Asante** was an Akan union in present-day **Ghana**, held together by the **Golden Stool**; **Dahomey** was a Fon kingdom in present-day **Benin Republic**, known for its centralised rule and women soldiers.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Osei Tutu**: the first Asantehene, who united the Asante states with the priest Okomfo Anokye and defeated Denkyira at Feyiase in 1701.
+- **Okomfo Anokye**: the priest and adviser of Osei Tutu who, by tradition, brought down the Golden Stool.
+- **Golden Stool**: the sacred symbol of Asante unity, believed to hold the soul (sunsum) of the Asante nation.
+- **Odwira festival**: the yearly Asante festival that brought the chiefs to Kumasi to renew their loyalty.
+- **Yaa Asantewaa**: the queen mother of Ejisu who led the Asante war against the British in 1900.
+:::
+
 ## Key points
 
 - **Asante:** united by **Osei Tutu** and **Okomfo Anokye**; victory over **Denkyira at Feyiase (1701)**; the **Golden Stool** and **Odwira** festival as symbols of unity.

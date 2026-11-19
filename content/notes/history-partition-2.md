@@ -82,6 +82,14 @@ Sierra Leone's borders were drawn by agreements with **France** (for the border 
 The Berlin Conference did **not** divide the whole of Africa at one meeting. It set the **rules**; the actual division happened over the next thirty years through **treaties, conquest and agreements** between the powers.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Otto von Bismarck**: the German chancellor who called the Berlin Conference of 1884–85.
+- **Effective occupation**: the Berlin Conference rule that a European power could claim African land only if it actually controlled it.
+- **Chartered company**: a trading company given a charter by its government to trade in and govern an area of Africa.
+:::
+
 ## Key points
 
 - **Berlin Conference**, called by **Bismarck**, **15 November 1884 – 26 February 1885**, 14 states, **no Africans**.

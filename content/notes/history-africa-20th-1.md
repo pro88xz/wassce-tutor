@@ -66,6 +66,14 @@ West African ex-servicemen had been promised jobs, pensions and better condition
 Do not say that Africans "were not involved" in the World Wars because the wars began in Europe. Africa was a **battlefield** in both wars, and **hundreds of thousands of Africans** served as soldiers and carriers.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Mandate**: a former German colony, such as Togoland or Kamerun, that the League of Nations gave to another power, such as Britain or France, to govern after the First World War.
+- **Tirailleurs Sénégalais**: African soldiers recruited by France from its colonies, who served in large numbers in Europe.
+- **Atlantic Charter** (1941): the declaration by Britain and the United States of the right of peoples to choose their own government, which African nationalists quoted.
+:::
+
 ## Key points
 
 - **First World War:** campaigns in **Togoland, Kamerun, South West Africa, East Africa**; **Tirailleurs Sénégalais** in Europe; German colonies became **mandates**; hardship and revolts; ideas of **self-determination**.

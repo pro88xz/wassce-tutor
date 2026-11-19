@@ -68,6 +68,14 @@ Abolition contributed to colonialism because:
 "Legitimate trade" did not mean that slavery disappeared at once in West Africa. **Domestic slavery** continued in many places, and enslaved people were sometimes used to produce the new export crops.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Samuel Ajayi Crowther**: a Yoruba recaptive educated in Freetown and at Fourah Bay College, who became the first African Anglican bishop.
+- **Fourah Bay College**: the college founded in Freetown in 1827 by the Church Missionary Society, which trained West Africa's educated elite.
+- **Liberia**: the settlement founded in 1822 for freed Black Americans, which became independent in 1847.
+:::
+
 ## Key points
 
 - **Legitimate trade**: palm oil, palm kernels, groundnuts, timber; driven by **European industry**.

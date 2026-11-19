@@ -87,6 +87,14 @@ Bai Bureh is honoured as one of **Sierra Leone's national heroes**. Even British
 Do not say that Bai Bureh led the **whole** Hut Tax War. He led the **northern (Temne) rising**. The **Mende rising in the south** was a separate movement, organised differently and led by many local chiefs and war leaders.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Hut tax**: the tax of 5s or 10s a year on every house in the Protectorate, introduced by Governor Cardew from 1 January 1898.
+- **Governor Frederic Cardew**: the governor who introduced the hut tax and refused to abolish it.
+- **Guerrilla warfare**: fighting in small, mobile bands that ambush the enemy and avoid open battle, as Bai Bureh did in 1898.
+:::
+
 ## Key points
 
 - **Hut tax**: introduced by **Governor Cardew** from **1 January 1898**; **5s or 10s** a year per house.

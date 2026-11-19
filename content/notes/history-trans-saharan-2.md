@@ -57,6 +57,14 @@ Islam reached Sierra Leone mainly through **Fula (Fulani)** and **Mandingo (Mand
 Do not say Islam spread in West Africa mainly by war. For most of its history it spread **peacefully** through **trade, teaching and the conversion of rulers**; jihads came later and affected particular regions.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Wangara** (Dyula): West African Muslim merchants who traded gold and kola and helped to spread Islam along the trade routes.
+- **Sharia**: Islamic law, which Muslim rulers and scholars brought into government and the courts.
+- **Timbuktu**: a trading city on the Niger bend that became a famous centre of Islamic learning, with scholars at Sankore.
+:::
+
 ## Key points
 
 - Agents: **traders (Berbers, Wangara), clerics, rulers, pilgrims, intermarriage, jihads**.

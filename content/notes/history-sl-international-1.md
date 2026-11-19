@@ -79,6 +79,13 @@ Sierra Leone's experience of war and recovery made it a voice for **peacebuildin
 Do not confuse the **Mano River Union** (founded in **1973** by Sierra Leone and Liberia, later joined by Guinea and Côte d'Ivoire) with **ECOWAS** (founded in **1975** with fifteen West African states). The Mano River Union is a smaller sub-regional body.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Non-alignment**: the policy of not taking sides with either power bloc in the Cold War.
+- **Commonwealth**: the association of Britain and its former colonies, which Sierra Leone joined at independence in 1961.
+:::
+
 ## Key points
 
 - Foreign policy aims: **sovereignty, development, peace, African unity, good neighbourliness, non-alignment, support for the UN**.

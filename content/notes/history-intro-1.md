@@ -66,6 +66,15 @@ Much of Sierra Leone's early history comes from **oral traditions** of the Temne
 Do not treat any single source as automatically true. Good historians **compare several sources**, ask **who** produced each one and **why**, and look for **bias**.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Primary source**: evidence produced at the time of the events or by an eyewitness, such as a letter, a treaty, a chronicle or an artefact.
+- **Secondary source**: an account produced later by people who studied the primary sources, such as a textbook or a history book.
+- **Oral tradition**: history passed down by word of mouth, such as the stories, genealogies and praise songs kept by griots and elders.
+- **Archaeology**: the study of the past through material remains dug from the ground, such as tools, pottery and the ruins of towns like Kumbi Saleh.
+:::
+
 ## Key points
 
 - **History** studies the human past using **evidence**: what, when, why and with what effects.

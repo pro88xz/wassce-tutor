@@ -97,6 +97,14 @@ Sierra Leone's leaders watched Ghana closely. The **Sierra Leone People's Party 
 Do not write that Ghana was the first African country to become independent. **Liberia, Ethiopia, Egypt, Libya, Sudan, Morocco and Tunisia** were independent earlier. Ghana is rightly described as the first **colony in sub-Saharan Africa** to win independence from colonial rule.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Kwame Nkrumah**: the founder of the Convention People's Party (1949), who led the Gold Coast to independence as Ghana on 6 March 1957.
+- **Positive Action**: the campaign of strikes and boycotts launched by Nkrumah's CPP in January 1950 to demand self-government.
+- **Loi-cadre** (1956): the French "framework law" that gave universal suffrage and elected territorial assemblies to each French West African colony.
+:::
+
 ## Key points
 
 - **Ghana (6 March 1957)**: Burns Constitution 1946 → UGCC 1947 → **Accra riots 1948** → **CPP 1949** → Positive Action 1950 → elections 1951 → independence.

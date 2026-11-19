@@ -93,6 +93,16 @@ Sierra Leone has a special place in Pan-African history. **Freetown** was founde
 Do not confuse **Pan-Africanism** with **nationalism**. Nationalism aimed at the independence of **one country**; Pan-Africanism aimed at the **liberation and unity of all Africans** everywhere. The two supported each other.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Edward Wilmot Blyden** (1832–1912): a scholar born in the Danish West Indies who lived in Liberia and Sierra Leone and wrote about the dignity of Africans.
+- **Henry Sylvester Williams** (1869–1911): the Trinidadian lawyer in London who organised the first Pan-African Conference in London in 1900.
+- **W. E. B. Du Bois**: the African American scholar who organised Pan-African congresses from 1919 onwards.
+- **Marcus Garvey**: the Jamaican leader who called on people of African descent to take pride in Africa and look to it as their home.
+- **Manchester Congress** (1945): the Pan-African Congress, attended by future leaders such as Nkrumah, that turned the movement towards independence.
+:::
+
 ## Key points
 
 - **Pan-Africanism**: unity of all people of African descent against **racism and colonialism**.

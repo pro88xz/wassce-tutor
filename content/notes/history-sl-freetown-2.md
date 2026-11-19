@@ -84,6 +84,15 @@ Freetown's old buildings and places preserve this history: **St John's Maroon Ch
 The Nova Scotians were **not** Canadians by origin. They were **African Americans**, many born in Africa or the American colonies, who had escaped slavery, sided with Britain, and were moved to Nova Scotia only after the war.
 :::
 
+## Key figures and terms
+
+:::callout{type=definition title="Key figures and terms"}
+- **Nova Scotians**: Black Loyalists who fought for Britain in the American War of Independence, moved to Nova Scotia and founded Freetown in 1792.
+- **Thomas Peters**: the Black Loyalist who petitioned London in 1790 on behalf of the Nova Scotians.
+- **John Clarkson**: the British naval officer who led about 1,190 Nova Scotians from Halifax to Sierra Leone in 1792.
+- **Jamaican Maroons**: free Black people from Jamaica, about 550 of whom arrived in 1800 and helped to put down the settlers' rising.
+:::
+
 ## Key points
 
 - **Nova Scotians:** Black Loyalists moved to Nova Scotia (1783); left because of **poor land, discrimination and cold**.
