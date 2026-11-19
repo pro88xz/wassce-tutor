@@ -157,8 +157,9 @@ console.log('[postbuild] updated _shell.html and wrote 404.html')
   console.log(`[postbuild] wrote llms.txt (${pages.length} pages)`)
 }
 
-// Question diagrams in the sitemap (Google image sitemap extension), so the
-// diagrams on /wassce/{subject}/{topic}/questions can be found in image search.
+// Images in the sitemap (Google image sitemap extension), so they can be found
+// in image search: the question diagrams on /wassce/{subject}/{topic}/questions,
+// and the photos, covers and charts on the blog and university pages (/img/...).
 // The urlset already declares the image namespace (TanStack Start writes it).
 {
   const SITE = 'https://wasscetutor.com'
@@ -170,18 +171,25 @@ console.log('[postbuild] updated _shell.html and wrote 404.html')
   }
   const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
   let images = 0
+  let editorialImages = 0
   const out = xml.replace(/<url>\s*<loc>([^<]+)<\/loc>([\s\S]*?)<\/url>/g, (whole, loc, rest) => {
     const p = loc.replace(SITE, '')
-    if (!/\/questions$/.test(p) || rest.includes('<image:image>')) return whole
+    const questions = /\/questions$/.test(p)
+    const editorial = /^\/(blog|universities)(\/|$)/.test(p)
+    if ((!questions && !editorial) || rest.includes('<image:image>')) return whole
     const file = path.join(client, `${p.slice(1)}.html`)
     if (!fs.existsSync(file)) return whole
     const html = fs.readFileSync(file, 'utf8')
-    const srcs = [...new Set([...html.matchAll(/<img [^>]*src="(https:\/\/wasscetutor\.com\/questions\/[^"]+)"/g)].map((m) => m[1].replace(/&amp;/g, '&')))]
+    // An <img>'s src is its full-size file; the smaller srcset copies are left out.
+    // Only article photos, covers and charts: not the site's own icons and banners.
+    const pattern = questions ? /<img [^>]*src="(https:\/\/wasscetutor\.com\/questions\/[^"]+)"/g : /<img\s(?:[^>]*\s)?src="((?:https:\/\/wasscetutor\.com)?\/img\/(?:blog|universities)\/[^"]+)"/g
+    const srcs = [...new Set([...html.matchAll(pattern)].map((m) => m[1].replace(/&amp;/g, '&')).map((s) => (s.startsWith('/') ? SITE + s : s)))]
     if (srcs.length === 0) return whole
-    images += srcs.length
+    if (questions) images += srcs.length
+    else editorialImages += srcs.length
     const entries = srcs.map((s) => `\n    <image:image>\n      <image:loc>${esc(s)}</image:loc>\n    </image:image>`).join('')
     return `<url>\n    <loc>${loc}</loc>${rest.replace(/\s+$/, '')}${entries}\n  </url>`
   })
   fs.writeFileSync(sitemapPath, out)
-  console.log(`[postbuild] sitemap.xml: ${images} question diagrams listed for image search`)
+  console.log(`[postbuild] sitemap.xml: ${images} question diagrams and ${editorialImages} blog and university images listed for image search`)
 }
