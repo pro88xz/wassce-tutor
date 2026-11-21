@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { BadgePercent, Copy, Gift } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { supabase } from '@/lib/supabase'
@@ -13,23 +13,32 @@ type Payout = {id:string;amount_nle:number;payout_method:string;payout_account_n
 
 export const Route = createFileRoute('/affiliate-dashboard')({head:privateHead('Affiliate dashboard'),component:AffiliateProgramme})
 
+/** An account's affiliate record with its referrals, commissions and payout requests (none without a record). */
+async function fetchAffiliate(userId:string){
+ const a=await supabase.from('affiliates').select('id,code,status').eq('user_id',userId).maybeSingle()
+ const mine=a.error?null:a.data
+ if(!mine)return {mine,at:null,c:null,p:null}
+ const [at,c,p]=await Promise.all([
+  supabase.from('affiliate_attributions').select('id,referred_user_id,attributed_at,converted_at').eq('affiliate_id',mine.id).order('attributed_at',{ascending:false}).limit(500),
+  supabase.from('affiliate_commissions').select('id,gross_amount_nle,commission_amount_nle,status,created_at').eq('affiliate_id',mine.id).order('created_at',{ascending:false}).limit(100),
+  supabase.from('affiliate_payout_requests').select('id,amount_nle,payout_method,payout_account_name,payout_account_number,status,requested_at,affiliate_id').eq('affiliate_id',mine.id).order('requested_at',{ascending:false}).limit(100),
+ ])
+ return {mine,at,c,p}
+}
+
 function AffiliateProgramme(){
  const {user,loading}=useAuth(); const {data:profile}=useProfile(user?.id??null)
  const [affiliate,setAffiliate]=useState<Affiliate|null>(null),[commissions,setCommissions]=useState<Commission[]>([]),[payouts,setPayouts]=useState<Payout[]>([]),[attributions,setAttributions]=useState<Attribution[]>([])
  const [referral,setReferral]=useState(''),[amount,setAmount]=useState(''),[method,setMethod]=useState('orange_money'),[accountName,setAccountName]=useState(''),[accountNumber,setAccountNumber]=useState('')
  const [busy,setBusy]=useState(false),[error,setError]=useState<string|null>(null),[notice,setNotice]=useState<string|null>(null)
- const load=async()=>{if(!user)return
-  const a=await supabase.from('affiliates').select('id,code,status').eq('user_id',user.id).maybeSingle()
-  const mine=a.error?null:a.data
-  setAffiliate(mine)
-  if(!mine){setAttributions([]);setCommissions([]);setPayouts([]);return}
-  const [at,c,p]=await Promise.all([
-   supabase.from('affiliate_attributions').select('id,referred_user_id,attributed_at,converted_at').eq('affiliate_id',mine.id).order('attributed_at',{ascending:false}).limit(500),
-   supabase.from('affiliate_commissions').select('id,gross_amount_nle,commission_amount_nle,status,created_at').eq('affiliate_id',mine.id).order('created_at',{ascending:false}).limit(100),
-   supabase.from('affiliate_payout_requests').select('id,amount_nle,payout_method,payout_account_name,payout_account_number,status,requested_at,affiliate_id').eq('affiliate_id',mine.id).order('requested_at',{ascending:false}).limit(100),
-  ])
-  if(!at.error)setAttributions((at.data??[]) as Attribution[]);if(!c.error)setCommissions(c.data??[]);if(!p.error)setPayouts((p.data??[]) as Payout[])}
- useEffect(()=>{if(user)void load()},[user])
+ const userId=user?.id??null
+ const load=useCallback(()=>{if(!userId)return Promise.resolve()
+  return fetchAffiliate(userId).then(({mine,at,c,p})=>{
+   setAffiliate(mine)
+   if(!mine){setAttributions([]);setCommissions([]);setPayouts([]);return}
+   if(at&&!at.error)setAttributions((at.data??[]) as Attribution[]);if(c&&!c.error)setCommissions(c.data??[]);if(p&&!p.error)setPayouts((p.data??[]) as Payout[])
+  })},[userId])
+ useEffect(()=>{void load()},[load])
  const available=useMemo(()=>commissions.filter(c=>c.status==='approved').reduce((n,c)=>n+Number(c.commission_amount_nle),0),[commissions])
  const reserved=useMemo(()=>payouts.filter(p=>['requested','processing'].includes(p.status)).reduce((n,p)=>n+Number(p.amount_nle),0),[payouts])
  // Requesting a payout moves its commissions from approved to reserved, so the

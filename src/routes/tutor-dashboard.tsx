@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { Bell, MessageCircle, ShieldCheck } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { supabase } from '@/lib/supabase'
@@ -23,6 +23,19 @@ export const Route = createFileRoute('/tutor-dashboard')({
 
 const dateLabel = (value:string) => new Date(value).toLocaleString('en-GB',{dateStyle:'medium',timeStyle:'short'})
 
+/** Everything the dashboard shows, for one tutor account. */
+async function fetchTutorDashboard(userId: string) {
+  const tutorResult = await supabase.from('tutors').select('id,user_id,slug,reviewer,full_name,bio,qualifications,experience_years,location,avatar_path,status,listed,verified_at,multi_subject_discount_pct,group_max,group_discount_pct,payment_methods,tutor_subjects(subject_id,price_nle,lessons_per_week,subject:subjects(id,name)),tutor_booking_reviews(rating)').eq('user_id',userId).maybeSingle()
+  const tutorRecord = tutorResult.error ? null : (tutorResult.data as unknown as EditableTutor|null)
+  const [b,n,ct,app] = await Promise.all([
+    supabase.from('tutor_bookings').select('id,starts_at,duration_minutes,price_nle,status,student_id,tutor_id,student_message,subject:subjects(name),tutor:tutors(user_id,full_name)').eq('tutor_id',tutorRecord?.id ?? '00000000-0000-0000-0000-000000000000').order('starts_at',{ascending:false}).limit(50),
+    supabase.from('user_notifications').select('id,title,body,created_at,read_at,event_type').eq('recipient_id',userId).in('event_type',['tutor_contacted','booking_requested','booking_request_sent','booking_accepted','booking_declined','booking_confirmed','booking_completed','booking_cancelled','booking_no_show','tutor_approved','tutor_rejected','tutor_suspended','tutor_reactivated','tutor_reviewer_on']).order('created_at',{ascending:false}).limit(30),
+    tutorRecord ? supabase.rpc('my_tutor_contacts') : Promise.resolve({data:[],error:null}),
+    supabase.from('tutor_applications').select('status,review_note').eq('user_id',userId).order('created_at',{ascending:false}).limit(1).maybeSingle(),
+  ])
+  return { tutorRecord, b, n, ct, app }
+}
+
 function TutorDashboard() {
   const { user, loading } = useAuth()
   const { data: profile } = useProfile(user?.id ?? null)
@@ -37,37 +50,33 @@ function TutorDashboard() {
   const [message,setMessage] = useState<string|null>(null)
   const [error,setError] = useState<string|null>(null)
 
-  const load = async () => {
-    if (!user) return
-    const tutorResult = await supabase.from('tutors').select('id,user_id,slug,reviewer,full_name,bio,qualifications,experience_years,location,avatar_path,status,listed,verified_at,multi_subject_discount_pct,group_max,group_discount_pct,payment_methods,tutor_subjects(subject_id,price_nle,lessons_per_week,subject:subjects(id,name)),tutor_booking_reviews(rating)').eq('user_id',user.id).maybeSingle()
-    const tutorRecord = tutorResult.error ? null : (tutorResult.data as unknown as EditableTutor|null)
-    const [b,n,ct,app] = await Promise.all([
-      supabase.from('tutor_bookings').select('id,starts_at,duration_minutes,price_nle,status,student_id,tutor_id,student_message,subject:subjects(name),tutor:tutors(user_id,full_name)').eq('tutor_id',tutorRecord?.id ?? '00000000-0000-0000-0000-000000000000').order('starts_at',{ascending:false}).limit(50),
-      supabase.from('user_notifications').select('id,title,body,created_at,read_at,event_type').eq('recipient_id',user.id).in('event_type',['tutor_contacted','booking_requested','booking_request_sent','booking_accepted','booking_declined','booking_confirmed','booking_completed','booking_cancelled','booking_no_show','tutor_approved','tutor_rejected','tutor_suspended','tutor_reactivated','tutor_reviewer_on']).order('created_at',{ascending:false}).limit(30),
-      tutorRecord ? supabase.rpc('my_tutor_contacts') : Promise.resolve({data:[],error:null}),
-      supabase.from('tutor_applications').select('status,review_note').eq('user_id',user.id).order('created_at',{ascending:false}).limit(1).maybeSingle(),
-    ])
-    setTutor(tutorRecord)
-    if (!b.error) setBookings((b.data??[]) as unknown as Booking[])
-    if (!n.error) setNotifications((n.data??[]) as Notification[])
-    if (!app.error) setApplication(app.data)
-    if (!ct.error) {
-      const list=(ct.data??[]) as Contact[]
-      const since=Date.now()-30*86400000
-      setContacts(list)
-      setRecentContacts(list.filter((c)=>new Date(c.contacted_at).getTime()>since).length)
-    }
-  }
+  const userId = user?.id ?? null
+  const load = useCallback(() => {
+    if (!userId) return Promise.resolve()
+    return fetchTutorDashboard(userId).then(({ tutorRecord, b, n, ct, app }) => {
+      setTutor(tutorRecord)
+      if (!b.error) setBookings((b.data??[]) as unknown as Booking[])
+      if (!n.error) setNotifications((n.data??[]) as Notification[])
+      if (!app.error) setApplication(app.data)
+      if (!ct.error) {
+        const list=(ct.data??[]) as Contact[]
+        const since=Date.now()-30*86400000
+        setContacts(list)
+        setRecentContacts(list.filter((c)=>new Date(c.contacted_at).getTime()>since).length)
+      }
+    })
+  }, [userId])
 
-  useEffect(()=>{ if(user) void load() },[user,profile?.is_admin])
+  // Loaded again once admin status is known: an admin sees more.
+  useEffect(()=>{ void load() },[load,profile?.is_admin])
   useEffect(()=>{
-    if(!user) return
-    const channel=supabase.channel(`tutor-dashboard-${user.id}`)
-      .on('postgres_changes',{event:'*',schema:'public',table:'user_notifications',filter:`recipient_id=eq.${user.id}`},()=>{void load()})
+    if(!userId) return
+    const channel=supabase.channel(`tutor-dashboard-${userId}`)
+      .on('postgres_changes',{event:'*',schema:'public',table:'user_notifications',filter:`recipient_id=eq.${userId}`},()=>{void load()})
       .on('postgres_changes',{event:'*',schema:'public',table:'tutor_bookings'},()=>{void load()})
       .subscribe()
     return ()=>{void supabase.removeChannel(channel)}
-  },[user?.id,profile?.is_admin])
+  },[userId,load,profile?.is_admin])
 
   const updateBooking = async (id:string,status:string) => {
     setBusy(true);setError(null);setMessage(null)

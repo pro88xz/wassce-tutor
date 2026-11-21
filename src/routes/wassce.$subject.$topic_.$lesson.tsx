@@ -10,7 +10,8 @@ import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { fetchPublicLessonPage, keyTermsPath, lessonPath, lessonSummary, questionsPath, subjectPath, topicKeyTermCount, topicPath, topicQuestionCount } from '@/lib/public-content'
 import type { PublicLessonPageData } from '@/lib/public-content'
 import { SEARCH_COPY, SITE, absoluteUrl, brandedTitle, breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
-import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
+import { SubjectIcon } from '@/components/SubjectIcon'
+import { subjectTheme } from '@/lib/subject-theme'
 import { displayName, tutorPagePath } from '@/lib/tutor-profile'
 
 const trail = ({ subject, topic, lesson }: PublicLessonPageData): [string, string][] => [

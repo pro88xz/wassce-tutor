@@ -3,7 +3,7 @@
 // the card, then mark it "I know this" or "Not yet" (saved, migration 24).
 // A round starts with the cards not known yet; when every card is known, a
 // round goes over them all. The topic screen shows how many are known.
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
 import { ArrowLeft, ArrowRight, Check, CircleCheck, Eye, Layers, RotateCcw, X } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
@@ -46,10 +46,11 @@ function KeyTermsRevision() {
     setAt(0)
     setOpen(false)
   }
-  useEffect(() => {
-    if (round === null && terms && (marks || !user)) startRound(true)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [terms, marks, user, round])
+  // Chosen during render, not in an effect, so the first round shows without an extra empty pass.
+  if (round === null && terms && (marks || !user)) {
+    const unknown = terms.filter((t) => marks?.get(t.id) !== true)
+    setRound(unknown.length > 0 ? unknown : terms)
+  }
 
   const lessonNumber = useMemo(() => new Map((topicData?.lessons ?? []).map((l, i) => [l.id, i + 1])), [topicData])
 

@@ -8,7 +8,8 @@ import { TUTOR_PHOTO } from '@/lib/tutors'
 import { supabase } from '@/lib/supabase'
 import { BookingForm } from '@/components/tutors/BookingForm'
 import { TutorMarketplace } from '@/components/tutors/Marketplace'
-import { PrivateLessonsGuide, TUTOR_FAQ, TutorFaq, TutorHowItWorks, TutorJoinBand, TutorSubjectGrid } from '@/components/tutors/TutorSections'
+import { PrivateLessonsGuide, TutorFaq, TutorHowItWorks, TutorJoinBand, TutorSubjectGrid } from '@/components/tutors/TutorSections'
+import { TUTOR_FAQ } from '@/lib/tutor-seo'
 
 const TRAIL: [string, string][] = [
   ['Home', '/'],

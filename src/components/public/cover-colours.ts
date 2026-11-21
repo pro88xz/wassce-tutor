@@ -1,7 +1,7 @@
 // Cover colours for TopicCover, kept apart from the component so pages can
 // colour themselves to match a topic's cover (the topic page header and
 // lesson numbers).
-import { subjectArt } from '@/components/ds/SubjectCover'
+import { subjectArt } from '@/components/ds/subject-art'
 
 /** Cover colours, cycled along a row so neighbouring cards never match. */
 const COVERS = [

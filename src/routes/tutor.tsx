@@ -4,22 +4,25 @@ import { privateHead } from '@/lib/seo'
 import { useEffect, useRef, useState, lazy, Suspense } from 'react'
 // Lazy-loaded markdown stack — only fetched when AI starts answering
 const ReactMarkdown = lazy(() => import('react-markdown'))
+import type { Components } from 'react-markdown'
 // remarkMath + rehypeKatex are plugins (small), but we'll load them with markdown
-let remarkMathPlugin: any = null
-let rehypeKatexPlugin: any = null
-let remarkGfmPlugin: any = null
-async function ensureMarkdownPlugins() {
-  if (!remarkMathPlugin) {
+type MarkdownPlugins = {
+  remark: typeof import('remark-math').default
+  rehype: typeof import('rehype-katex').default
+  gfm: typeof import('remark-gfm').default
+}
+let markdownPlugins: MarkdownPlugins | null = null
+async function ensureMarkdownPlugins(): Promise<MarkdownPlugins> {
+  if (!markdownPlugins) {
     const [rm, rk, gfm] = await Promise.all([
       import('remark-math'),
       import('rehype-katex'),
       import('remark-gfm'),
       import('katex/dist/katex.min.css'),
     ])
-    remarkMathPlugin = rm.default
-    rehypeKatexPlugin = rk.default
-    remarkGfmPlugin = gfm.default
+    markdownPlugins = { remark: rm.default, rehype: rk.default, gfm: gfm.default }
   }
+  return markdownPlugins
 }
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
@@ -27,7 +30,7 @@ import { checkAccess } from '@/lib/access'
 import { PLANS } from '@/lib/plans'
 import { supabase } from '@/lib/supabase'
 import { Flag, Sparkles } from 'lucide-react'
-import { SubjectIcon } from '@/lib/subject-theme'
+import { SubjectIcon } from '@/components/SubjectIcon'
 import { MdTable } from '@/components/MdTable'
 
 export const Route = createFileRoute('/tutor')({
@@ -159,7 +162,7 @@ function TutorPage() {
     setSending(true)
 
     const tempUserMsg: Message = {
-      id: 'temp-' + Date.now(),
+      id: `temp-${crypto.randomUUID()}`,
       role: 'user',
       content: trimmed,
       created_at: new Date().toISOString(),
@@ -187,7 +190,7 @@ function TutorPage() {
       if (!res.ok) throw new Error(data.error || 'Something went wrong')
 
       const aiMsg: Message = {
-        id: 'ai-' + Date.now(),
+        id: `ai-${crypto.randomUUID()}`,
         role: 'assistant',
         content: data.reply,
         created_at: new Date().toISOString(),
@@ -362,12 +365,12 @@ function TutorPage() {
 }
 
 // Wrapper that loads remarkMath + rehypeKatex once, then renders ReactMarkdown
+const MARKDOWN_COMPONENTS: Components = { table: (props) => <MdTable className="my-3" {...props} /> }
+
 function MarkdownView({ content }: { content: string }) {
-  const [plugins, setPlugins] = useState<{ remark: any; rehype: any } | null>(null)
+  const [plugins, setPlugins] = useState<MarkdownPlugins | null>(null)
   useEffect(() => {
-    ensureMarkdownPlugins().then(() =>
-      setPlugins({ remark: remarkMathPlugin, rehype: rehypeKatexPlugin })
-    )
+    ensureMarkdownPlugins().then(setPlugins)
   }, [])
   if (!plugins) {
     // First render: show plain text while plugins load
@@ -375,9 +378,9 @@ function MarkdownView({ content }: { content: string }) {
   }
   return (
     <ReactMarkdown
-      remarkPlugins={[[remarkGfmPlugin, { singleTilde: false }], plugins.remark]}
+      remarkPlugins={[[plugins.gfm, { singleTilde: false }], plugins.remark]}
       rehypePlugins={[plugins.rehype]}
-      components={{ table: (props: any) => <MdTable className="my-3" {...props} /> } as any}
+      components={MARKDOWN_COMPONENTS}
     >
       {content}
     </ReactMarkdown>

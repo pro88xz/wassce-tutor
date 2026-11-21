@@ -26,15 +26,18 @@ export function StudentTutorBookings({ userId }: { userId: string }) {
   const [error, setError] = useState<string | null>(null)
   const [notice, setNotice] = useState<string | null>(null)
 
-  const load = useCallback(async () => {
-    const [bookingResult, reviewResult] = await Promise.all([
-      supabase.from('tutor_bookings').select('id,starts_at,duration_minutes,price_nle,status,student_message,subject:subjects(name),tutor:tutors(full_name,location,user_id)').eq('student_id', userId).order('starts_at', { ascending: false }).limit(50),
-      supabase.from('tutor_booking_reviews').select('booking_id').eq('reviewer_id', userId),
-    ])
-    if (!bookingResult.error) setBookings((bookingResult.data ?? []) as unknown as StudentBooking[])
-    if (!reviewResult.error) setReviewed(new Set((reviewResult.data ?? []).map((row) => row.booking_id)))
-    setLoading(false)
-  }, [userId])
+  const load = useCallback(
+    () =>
+      Promise.all([
+        supabase.from('tutor_bookings').select('id,starts_at,duration_minutes,price_nle,status,student_message,subject:subjects(name),tutor:tutors(full_name,location,user_id)').eq('student_id', userId).order('starts_at', { ascending: false }).limit(50),
+        supabase.from('tutor_booking_reviews').select('booking_id').eq('reviewer_id', userId),
+      ]).then(([bookingResult, reviewResult]) => {
+        if (!bookingResult.error) setBookings((bookingResult.data ?? []) as unknown as StudentBooking[])
+        if (!reviewResult.error) setReviewed(new Set((reviewResult.data ?? []).map((row) => row.booking_id)))
+        setLoading(false)
+      }),
+    [userId],
+  )
 
   useEffect(() => { void load() }, [load])
 

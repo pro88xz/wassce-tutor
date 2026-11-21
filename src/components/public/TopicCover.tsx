@@ -7,7 +7,7 @@
 //
 //   card  the topic's name set on the cover, the drawing to the right
 //   hero  the same layout at page size (no pale circle behind the drawing)
-import { subjectArt } from '@/components/ds/SubjectCover'
+import { subjectArt } from '@/components/ds/subject-art'
 import { topicArt } from '@/components/landing/TopicArt'
 import { coverColours } from '@/components/public/cover-colours'
 

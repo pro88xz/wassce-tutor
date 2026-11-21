@@ -6,7 +6,8 @@
 //   per row, each cell labelled with its column heading (CSS container query
 //   on .md-table-wrap). Wider screens show the normal table.
 // - Anything still too wide scrolls sideways instead of squeezing the page.
-import { Children, cloneElement, isValidElement, type ReactElement, type ReactNode } from 'react'
+import { Children, cloneElement, isValidElement, type ComponentPropsWithoutRef, type ReactElement, type ReactNode } from 'react'
+import type { ExtraProps } from 'react-markdown'
 
 type HastNode = { type: string; value?: string; tagName?: string; properties?: { className?: unknown }; children?: HastNode[] }
 
@@ -26,7 +27,7 @@ function findAll(n: HastNode, tag: string, out: HastNode[] = []): HastNode[] {
   return out
 }
 
-export function tableShape(node: HastNode | undefined) {
+function tableShape(node: HastNode | undefined) {
   if (!node) return { labels: [] as string[], compact: false }
   const head = findAll(node, 'tr')[0]
   const labels = (head?.children ?? []).filter((c) => c.tagName === 'th' || c.tagName === 'td').map((c) => textOf(c).trim())
@@ -58,7 +59,7 @@ function withLabels(children: ReactNode, labels: string[]): ReactNode {
   })
 }
 
-export function MdTable({ node, className = 'not-prose my-5', children, ...props }: any) {
+export function MdTable({ node, className = 'not-prose my-5', children, ...props }: ComponentPropsWithoutRef<'table'> & ExtraProps) {
   const { labels, compact } = tableShape(node)
   const cols = labels.length
   const stack = !compact && cols >= 3

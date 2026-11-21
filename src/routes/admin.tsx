@@ -3,7 +3,7 @@ import { BadgeCheck, BadgePercent, BookOpen, Download, FileText, FileUp, Graduat
 import { useQuery } from '@tanstack/react-query'
 import { supabase } from '@/lib/supabase'
 import { privateHead } from '@/lib/seo'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useAuth } from '@/lib/auth'
 import { useProfile } from '@/lib/queries'
 import { Button } from '@/components/ui/button'
@@ -20,14 +20,10 @@ function AdminPage() {
   const { data: profile, isLoading } = useProfile(user?.id ?? null)
   const loc = useLocation()
   const atRoot = loc.pathname === '/admin' || loc.pathname === '/admin/'
-  const [unlocked, setUnlocked] = useState(false)
+  const [unlocked, setUnlocked] = useState(isUnlockedThisSession)
   const [password, setPassword] = useState('')
   const [message, setMessage] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
-
-  useEffect(() => {
-    setUnlocked(isUnlockedThisSession())
-  }, [])
 
   // What is waiting for an admin decision (tutor and affiliate programmes).
   const pending = useQuery({

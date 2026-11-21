@@ -5,11 +5,11 @@ import { fetchSubjectHub, fetchSubjectSummaries, hasSubjectPage, subjectPath } f
 import type { SubjectHub, SubjectSummary } from '@/lib/public-content'
 import { tutorsPath } from '@/lib/public-rules'
 import { breadcrumbJsonLd, faqJsonLd, indexablePageTags, privatePageTags, tutoringServiceJsonLd } from '@/lib/seo'
-import { shortSubject, subjectTutorDescription, subjectTutorTitle } from '@/lib/tutor-seo'
+import { shortSubject, subjectTutorDescription, subjectTutorTitle, TUTOR_FAQ } from '@/lib/tutor-seo'
 import { SubjectBanner } from '@/components/ds/SubjectCover'
 import { BookingForm } from '@/components/tutors/BookingForm'
 import { TutorMarketplace } from '@/components/tutors/Marketplace'
-import { TUTOR_FAQ, TutorFaq, TutorHowItWorks, TutorSubjectGrid, TutorJoinBand } from '@/components/tutors/TutorSections'
+import { TutorFaq, TutorHowItWorks, TutorSubjectGrid, TutorJoinBand } from '@/components/tutors/TutorSections'
 import { TutorProfile } from '@/components/tutors/TutorProfile'
 import { displayName, fetchTutorPage, tutorJsonLd, tutorPageDescription, tutorPagePath, tutorPageTitle, tutorPhoto, type TutorPageData } from '@/lib/tutor-profile'
 

@@ -2,12 +2,21 @@
 // react-markdown + remark-math + rehype-katex + katex CSS are only fetched
 // the first time MarkdownView mounts on any page.
 import { lazy, Suspense, useEffect, useState } from 'react'
+import type { Components } from 'react-markdown'
 import { MdTable } from './MdTable'
 import { MarkdownLink } from './AudioChip'
 
 const ReactMarkdown = lazy(() => import('react-markdown'))
 
-let plugins: { remark: any; gfm: any; rehype: any } | null = null
+type Plugins = {
+  remark: typeof import('remark-math').default
+  gfm: typeof import('remark-gfm').default
+  rehype: typeof import('rehype-katex').default
+}
+let plugins: Plugins | null = null
+
+// Links to a clip under /audio/ become play buttons (AudioChip).
+const COMPONENTS: Components = { table: (props) => <MdTable className="not-prose my-3" {...props} />, a: MarkdownLink }
 async function loadPlugins() {
   if (plugins) return plugins
   const [rm, rk, gfm] = await Promise.all([
@@ -38,7 +47,7 @@ export function MarkdownView({ content, className }: { content: string; classNam
         <ReactMarkdown
           remarkPlugins={[[plugins!.gfm, { singleTilde: false }], plugins!.remark]}
           rehypePlugins={[plugins!.rehype]}
-          components={{ table: (props: any) => <MdTable className="not-prose my-3" {...props} />, a: MarkdownLink } as any}
+          components={COMPONENTS}
         >
           {content}
         </ReactMarkdown>
