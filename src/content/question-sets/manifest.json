@@ -811,6 +811,21 @@
   "questions": 59
  },
  {
+  "name": "agricultural_science_set2_p1",
+  "label": "Agricultural Science: set 2 (crop production, propagation, cereals, legumes, roots, cash crops, vegetables and fruit)",
+  "subject_slug": "agricultural-science",
+  "version": "00f6e2f7a2f2",
+  "papers": [
+   "b96e43ef-7581-5b08-9016-bc93223a8b5d",
+   "dfe338a8-a673-51c2-86f2-86a9a3bb4118",
+   "68b1fbc6-33f1-5f83-8c6f-7d4d662d7bb9",
+   "6df00460-dcb0-5d69-a0b9-ca88c2639c50",
+   "b573ed59-922d-550f-8d03-32ef1092f59b",
+   "2d7cc577-5a0f-50e7-b402-0ffb2a46f4cc"
+  ],
+  "questions": 46
+ },
+ {
   "name": "maths_mock_p1",
   "label": "Mathematics: timed mock exam, Paper 1",
   "subject_slug": "mathematics",

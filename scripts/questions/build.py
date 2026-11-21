@@ -372,6 +372,7 @@ SETS += [
     }
     for n, label in (
         (1, "Agricultural Science: set 1 (agriculture, land tenure, tools, machinery and soil)"),
+        (2, "Agricultural Science: set 2 (crop production, propagation, cereals, legumes, roots, cash crops, vegetables and fruit)"),
     )
 ]
 

@@ -1,0 +1,1816 @@
+{
+ "name": "agricultural_science_set2_p1",
+ "label": "Agricultural Science: set 2 (crop production, propagation, cereals, legumes, roots, cash crops, vegetables and fruit)",
+ "subject_slug": "agricultural-science",
+ "papers": [
+  {
+   "id": "b96e43ef-7581-5b08-9016-bc93223a8b5d",
+   "topic": "Principles of Crop Production",
+   "title": "Principles of Crop Production: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on principles of crop production, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 120,
+   "questions": [
+    {
+     "id": "5553ae00-1f80-5544-aa62-94d466453b74",
+     "key": "agr-cp-01",
+     "stem": "Making a hole with a stick and placing seeds in it, as is done for maize and groundnut, is called",
+     "image_url": null,
+     "explanation": "Dibbling places seeds at a set spacing and depth, so the stand is even and weeding is easier than after broadcasting.\n\n**Why the other options are wrong**\n\n- broadcasting: Broadcasting is scattering seeds evenly by hand over the land.\n- drilling: Drilling is sowing seeds in a continuous line in a furrow.\n- transplanting: Transplanting is moving seedlings from a nursery to the field.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a0807bb0-56bc-5d2d-9017-3f116578d157",
+       "label": "A",
+       "content": "dibbling",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b53314eb-b254-53fb-9d5c-6059605f2451",
+       "label": "B",
+       "content": "broadcasting",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3b423f0e-334d-5ba1-87a8-c0b343fd4e88",
+       "label": "C",
+       "content": "drilling",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "14929a29-dc8f-55ee-9b45-83d938052562",
+       "label": "D",
+       "content": "transplanting",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "726773bd-1dd7-58e2-9876-2d23687f6a58",
+     "key": "agr-cp-02",
+     "stem": "Maize is planted at a spacing of 80 cm between rows and 25 cm within rows, with one plant per stand. What is the plant population per hectare?",
+     "image_url": null,
+     "explanation": "Area per plant = 0.80 m × 0.25 m = 0.2 m². Plant population = 10 000 m² ÷ 0.2 m² = 50 000 plants per hectare.\n\n**Why the other options are wrong**\n\n- 5: This divides 10 000 by 80 × 25 without first converting the spacing to metres.\n- 2000: This is just 80 × 25, the area per plant in cm², not the number of plants.\n- 100 000: This doubles the answer, as if there were two plants per stand.",
+     "position": 2,
+     "options": [
+      {
+       "id": "9b5534dc-d550-56da-9554-8f2fc2cec736",
+       "label": "A",
+       "content": "5",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6a8144df-d757-57ff-a2d9-955d84380efb",
+       "label": "B",
+       "content": "2000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c4e2bde3-f12f-5feb-87a9-3568cc62992d",
+       "label": "C",
+       "content": "50 000",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7a3eb920-40dd-5afb-bca1-51f26c992aea",
+       "label": "D",
+       "content": "100 000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8b66f032-02e3-5925-8a66-b96541248588",
+     "key": "agr-cp-03",
+     "stem": "Removing extra seedlings so that each stand has the right number of plants is called",
+     "image_url": null,
+     "explanation": "Thinning reduces competition for light, water and nutrients; supplying fills the gaps. Both give an even plant population.\n\n**Why the other options are wrong**\n\n- supplying: Supplying is replacing seeds or seedlings that failed to grow.\n- pruning: Pruning is cutting off unwanted branches of trees and shrubs.\n- earthing up: Earthing up is drawing soil around the base of plants.",
+     "position": 3,
+     "options": [
+      {
+       "id": "30d8bb6d-9c3d-55de-bf3d-68cda89546c1",
+       "label": "A",
+       "content": "supplying",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d2c0ff82-27ac-5615-918f-9901b644ce28",
+       "label": "B",
+       "content": "pruning",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "465cb677-b47c-5854-9b71-74f54f6741b0",
+       "label": "C",
+       "content": "earthing up",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "08e40eed-152c-5b9e-8838-17b72124439b",
+       "label": "D",
+       "content": "thinning",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ab4b02b5-45f2-5c07-9b0b-941f37747e3d",
+     "key": "agr-cp-04",
+     "stem": "Growing maize and cowpea together in alternate rows is an example of",
+     "image_url": null,
+     "explanation": "Intercropping places two or more crops in definite rows or patterns. The cowpea, a legume, adds nitrogen that the maize can use.\n\n**Why the other options are wrong**\n\n- mixed cropping: In mixed cropping the crops grow together with no definite pattern.\n- relay cropping: In relay cropping a second crop is planted before the first one is harvested.\n- crop rotation: Crop rotation grows different crops one after another, not together.",
+     "position": 4,
+     "options": [
+      {
+       "id": "71c23019-c165-549b-8584-2c75b08654ef",
+       "label": "A",
+       "content": "intercropping",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7dc44a09-3a36-5c08-8ed6-ca227b863b4f",
+       "label": "B",
+       "content": "mixed cropping",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ec475541-c5ee-5d66-ad46-8151a05f9561",
+       "label": "C",
+       "content": "relay cropping",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "33ca1006-33fe-523c-8db0-fcf6ae9b0efe",
+       "label": "D",
+       "content": "crop rotation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "27d3d2d4-6c45-5858-a330-135d5679a537",
+     "key": "agr-cp-05",
+     "stem": "Which of the following is a principle of crop rotation?",
+     "image_url": null,
+     "explanation": "Rotation maintains fertility, breaks the life cycles of pests and diseases, and helps control weeds.\n\n**Why the other options are wrong**\n\n- A crop should be followed by another crop of the same family: Crops of the same family share pests and diseases, so they should not follow one another.\n- Shallow-rooted crops should always follow shallow-rooted crops: Deep- and shallow-rooted crops should alternate, so different soil layers are used.\n- The same crop should be grown every year to build up its pests' enemies: Growing the same crop every year builds up its pests and diseases.",
+     "position": 5,
+     "options": [
+      {
+       "id": "aeaef258-06b5-504f-8aa9-394337becb6d",
+       "label": "A",
+       "content": "A crop should be followed by another crop of the same family",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f85a017a-ea37-5584-b7a0-91de07c1e5c6",
+       "label": "B",
+       "content": "Shallow-rooted crops should always follow shallow-rooted crops",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7b8374bc-1726-5871-b999-fb01459d2797",
+       "label": "C",
+       "content": "Heavy feeders such as maize should follow, or be followed by, legumes",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2b2b0b6a-dc63-51c8-b5e8-8eeb8c4ddd8a",
+       "label": "D",
+       "content": "The same crop should be grown every year to build up its pests' enemies",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "70ccc13f-b4fb-5b76-b271-7fc07874f781",
+     "key": "agr-cp-06",
+     "stem": "Crops are planted at the start of the rains mainly because",
+     "image_url": null,
+     "explanation": "A crop planted several weeks late can lose a large part of its yield, because the rains end before it matures and pests have multiplied.\n\n**Why the other options are wrong**\n\n- seeds will not germinate later in the year: Seeds can germinate whenever there is moisture; late planting reduces yield, not germination.\n- fertilisers work only at the start of the rains: Fertilisers work whenever there is moisture for roots to take them up.\n- weeds do not grow at the start of the rains: Weeds grow vigorously when the rains start; that is why early weeding matters.",
+     "position": 6,
+     "options": [
+      {
+       "id": "5e3d515e-35a3-51eb-b6f4-e04c3b2462f9",
+       "label": "A",
+       "content": "seeds will not germinate later in the year",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a6736283-23ba-56a8-8f08-81adbc9c59ce",
+       "label": "B",
+       "content": "fertilisers work only at the start of the rains",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "07652145-3174-5e51-9f3d-1ed98c099039",
+       "label": "C",
+       "content": "weeds do not grow at the start of the rains",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8e719b4a-1496-54ea-aa00-f7eb8d9af822",
+       "label": "D",
+       "content": "the crop then has moisture for the whole season, before many pests build up",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "27d1a06a-0bc4-5eb4-8265-ace68c16c47c",
+     "key": "agr-cp-07",
+     "stem": "Weeding is most important during the first four to six weeks after planting because",
+     "image_url": null,
+     "explanation": "Early weed competition stunts the crop and reduces yield more than later weeds do.\n\n**Why the other options are wrong**\n\n- weeds cannot grow after six weeks: Weeds can grow at any time; a well-grown crop simply shades them out.\n- the crop needs no nutrients after six weeks: The crop needs nutrients until it matures.\n- fertiliser can only be applied after weeding: Fertiliser can be applied at planting (basal) as well as later.",
+     "position": 7,
+     "options": [
+      {
+       "id": "f0f58693-0ad4-52cf-81b4-127ce843d76e",
+       "label": "A",
+       "content": "young crop plants are least able to compete with weeds for light, water and nutrients",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e178bdbf-2cf5-54ab-930a-6a750823fdfb",
+       "label": "B",
+       "content": "weeds cannot grow after six weeks",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "71b5b9ac-a7dc-5272-8595-8b99691ea9e8",
+       "label": "C",
+       "content": "the crop needs no nutrients after six weeks",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "11e9c6cc-2516-5bf9-83d2-6f64e59fd837",
+       "label": "D",
+       "content": "fertiliser can only be applied after weeding",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b60756a8-c716-59a4-a9ce-64fa06c179be",
+     "key": "agr-cp-08",
+     "stem": "Seeds of crops such as groundnut are dressed with a fungicide or insecticide before planting in order to",
+     "image_url": null,
+     "explanation": "Seed treatment is part of using good planting material: improved, certified seed of a suitable variety, free of pests and diseases.\n\n**Why the other options are wrong**\n\n- break the dormancy of the seed: Dormancy is broken by scarification or soaking, not by seed dressing.\n- supply nitrogen to the young plant: Seed dressings are pesticides, not fertilisers.\n- make the seeds germinate faster: Seed dressing protects the seed; it does not speed up germination.",
+     "position": 8,
+     "options": [
+      {
+       "id": "9b49bcf3-5dba-552f-9787-6501caff253e",
+       "label": "A",
+       "content": "break the dormancy of the seed",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "18f40f3e-1e62-5b80-bef5-3ca7eff19015",
+       "label": "B",
+       "content": "protect the seeds and seedlings from soil-borne pests and diseases",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ca981cc8-5b96-531a-94fc-43930c5586e3",
+       "label": "C",
+       "content": "supply nitrogen to the young plant",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "78fdae1e-0402-5d26-8a11-011ff42d0796",
+       "label": "D",
+       "content": "make the seeds germinate faster",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dfe338a8-a673-51c2-86f2-86a9a3bb4118",
+   "topic": "Plant Propagation and Nursery Management",
+   "title": "Plant Propagation and Nursery Management: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on plant propagation and nursery management, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 121,
+   "questions": [
+    {
+     "id": "f1cea44a-6b7c-5c79-a6f6-0e379c9dd4c0",
+     "key": "agr-pn-01",
+     "stem": "An advantage of vegetative propagation over propagation by seed is that",
+     "image_url": null,
+     "explanation": "Vegetative propagation keeps the good qualities of a selected parent and often gives earlier maturity.\n\n**Why the other options are wrong**\n\n- it produces new varieties through variation: Variation comes from sexual reproduction with seeds; vegetative propagation gives copies.\n- the planting material is light and easy to store: Cuttings, suckers and tubers are bulky and perishable; seeds are light and store well.\n- diseases are never carried to the new plants: Vegetative material often carries diseases, such as cassava mosaic in cuttings.",
+     "position": 1,
+     "options": [
+      {
+       "id": "1de2bdd5-f2bc-5366-8fdf-9529c1fcd5a5",
+       "label": "A",
+       "content": "it produces new varieties through variation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f6628a32-a3b1-56b1-ac68-472da983505b",
+       "label": "B",
+       "content": "the planting material is light and easy to store",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2a043e8a-4d34-5562-b31e-148c391e19d7",
+       "label": "C",
+       "content": "the new plants are true to type, identical to the parent",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "419a8bfd-2f75-5294-8446-9c2f19c1a406",
+       "label": "D",
+       "content": "diseases are never carried to the new plants",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f2f420de-bbe8-5aa9-8e02-cd285e6dab90",
+     "key": "agr-pn-02",
+     "stem": "Plantain is usually propagated by",
+     "image_url": null,
+     "explanation": "Suckers grow from the base of the parent plant. Tissue-culture plantlets are also used to give disease-free planting material.\n\n**Why the other options are wrong**\n\n- stem cuttings: Stem cuttings are used for cassava and sweet potato.\n- corms: Corms are used for cocoyam.\n- seeds: Plantain does not produce viable seeds for planting.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c4c449ac-1975-5597-870b-46c1f8690f36",
+       "label": "A",
+       "content": "stem cuttings",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "26e70079-c336-5327-9dc7-daf96dc0843c",
+       "label": "B",
+       "content": "corms",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d4b2fc58-8b9d-5e5f-b052-18509362ed9d",
+       "label": "C",
+       "content": "seeds",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9a0cdbc4-9802-5d70-a6a9-501b68ce69b7",
+       "label": "D",
+       "content": "suckers",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4fcafa32-edd4-5485-90f1-38b8f3801836",
+     "key": "agr-pn-03",
+     "stem": "In budding, as used for citrus,",
+     "image_url": null,
+     "explanation": "T-budding is common in citrus. The bud and rootstock must be compatible, their cambium layers must touch, and the union must be tied firmly.\n\n**Why the other options are wrong**\n\n- a shoot with several buds is joined to a rootstock: Joining a shoot (scion) with several buds is grafting, used for mango.\n- a branch is made to root while still attached to the parent: Rooting a branch while it is still attached is layering.\n- a piece of stem is planted directly in the soil: Planting a piece of stem is propagation by stem cuttings.",
+     "position": 3,
+     "options": [
+      {
+       "id": "f4bc03ef-b852-567e-b741-390c9da252ff",
+       "label": "A",
+       "content": "a single bud from the desired variety is joined to a rootstock",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "f1904adb-a6ba-5bd8-8b26-a85a0544ecce",
+       "label": "B",
+       "content": "a shoot with several buds is joined to a rootstock",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "089299ae-88ce-5f3e-a3e9-ec8e30687c9a",
+       "label": "C",
+       "content": "a branch is made to root while still attached to the parent",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3d89a05e-e072-57c3-836a-cc5ad1ec884c",
+       "label": "D",
+       "content": "a piece of stem is planted directly in the soil",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fdffe7cf-f9e9-5aa3-95fb-ec6d84ef4fad",
+     "key": "agr-pn-04",
+     "stem": "For a graft to succeed, the cambium of the scion and the rootstock must be in contact because",
+     "image_url": null,
+     "explanation": "When the two cambium layers touch, their new cells grow together and form a continuous link of xylem and phloem between stock and scion.\n\n**Why the other options are wrong**\n\n- the cambium stores the food the scion needs: The cambium is a layer of dividing cells, not a food store.\n- the cambium carries water from the roots: Water is carried by the xylem.\n- the cambium contains the chlorophyll: The cambium does not photosynthesise.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7fbb4538-255b-5044-85fa-5ef290555ece",
+       "label": "A",
+       "content": "the cambium stores the food the scion needs",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d2c1017b-b909-5505-8576-ca85de32686b",
+       "label": "B",
+       "content": "the cambium is the tissue that divides to unite the two parts",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e6d1e885-1c00-577b-8cdd-8bece10c57ff",
+       "label": "C",
+       "content": "the cambium carries water from the roots",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "545a60b4-1dda-5c41-9f61-cc576d29ae3e",
+       "label": "D",
+       "content": "the cambium contains the chlorophyll",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9ea63536-06e4-5b48-96e3-784f0d25258d",
+     "key": "agr-pn-05",
+     "stem": "A farmer tests 150 maize seeds on damp paper. After seven days, 120 have germinated. What is the germination percentage?",
+     "image_url": null,
+     "explanation": "Germination % = (seeds germinated ÷ seeds tested) × 100 = (120 ÷ 150) × 100 = 80%. The farmer should sow more seed per hectare to allow for the 20% that fail.\n\n**Why the other options are wrong**\n\n- 20%: 20% is the percentage of seeds that failed to germinate.\n- 120%: This writes the number of seeds that germinated as a percentage; it must be divided by the number tested.\n- 125%: This divides 150 by 120, the wrong way round; a germination percentage cannot be more than 100%.",
+     "position": 5,
+     "options": [
+      {
+       "id": "19d524f8-cf9b-5417-ac24-b145ee5a41ee",
+       "label": "A",
+       "content": "20%",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "140337fa-6e5d-5848-9695-6524537c9e51",
+       "label": "B",
+       "content": "80%",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9dfee786-d75e-5eec-bb37-90b163ced31c",
+       "label": "C",
+       "content": "120%",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ad7544c2-4699-5e10-bdbe-fb8b1f38faf4",
+       "label": "D",
+       "content": "125%",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7af9d322-2656-5762-b923-aa3e3fc14589",
+     "key": "agr-pn-06",
+     "stem": "Seed dormancy caused by a hard seed coat can be broken by",
+     "image_url": null,
+     "explanation": "Scarification or soaking lets water reach the embryo, so the seed can germinate.\n\n**Why the other options are wrong**\n\n- drying the seeds in the sun: Drying does not soften a hard coat; it can make it harder.\n- storing the seeds in a sealed container: Storage keeps seeds viable; it does not break dormancy caused by the coat.\n- dressing the seeds with a fungicide: Seed dressing protects seeds from disease; it does not break dormancy.",
+     "position": 6,
+     "options": [
+      {
+       "id": "45206e75-8a9c-5674-97af-e4c64abd73ed",
+       "label": "A",
+       "content": "drying the seeds in the sun",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6531669f-e4f6-53cf-99ba-178ff69c1ef3",
+       "label": "B",
+       "content": "storing the seeds in a sealed container",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5cc4d6e0-7184-563f-bb30-b8369d8723b5",
+       "label": "C",
+       "content": "scarification: nicking or rubbing the seed coat",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3ba61a58-6ddc-5525-97d1-7b0909983d10",
+       "label": "D",
+       "content": "dressing the seeds with a fungicide",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "464bac78-171a-58fd-aab7-cfa964ccaf57",
+     "key": "agr-pn-07",
+     "stem": "Why are crops such as cocoa, oil palm and pepper first raised in a nursery?",
+     "image_url": null,
+     "explanation": "In a nursery, seedlings are protected from strong sun, heavy rain, pests and weeds. Cocoa and oil palm are raised in polybags; tomato and pepper in beds or boxes.\n\n**Why the other options are wrong**\n\n- Nursery seedlings never need to be watered: Nursery seedlings need regular watering.\n- A nursery makes the plants bear fruit without pollination: Raising seedlings in a nursery does not change how they produce fruit.\n- Planting from a nursery needs more land than direct sowing: A nursery uses land efficiently: the field can be prepared, or used for something else, while seedlings grow.",
+     "position": 7,
+     "options": [
+      {
+       "id": "a42f26a3-3389-5418-aefd-2e5fb88d1d48",
+       "label": "A",
+       "content": "Nursery seedlings never need to be watered",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "819f393c-b2a5-5f76-9720-e39c8aa68c37",
+       "label": "B",
+       "content": "A nursery makes the plants bear fruit without pollination",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1095da05-678e-5180-a23f-b7ccf31d557c",
+       "label": "C",
+       "content": "Planting from a nursery needs more land than direct sowing",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "af953b00-2fa2-5691-ba3d-dfcf77ee0906",
+       "label": "D",
+       "content": "Young seedlings can be given special care and protection, and only the strongest are planted out",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d8bce331-a5e8-5ed3-a838-8db360c982ca",
+     "key": "agr-pn-08",
+     "stem": "Swamp rice seedlings in Sierra Leone are usually transplanted from the nursery at about",
+     "image_url": null,
+     "explanation": "Two or three seedlings are planted per hill. Transplanting at the right age gives a quick recovery and good tillering.\n\n**Why the other options are wrong**\n\n- 3 days old: At 3 days the seedlings are far too small and weak to survive in the field.\n- 3 months old: At 3 months the rice would be nearly mature; old seedlings recover poorly after transplanting.\n- 1 year old: Rice is an annual crop; it completes its life cycle in a few months.",
+     "position": 8,
+     "options": [
+      {
+       "id": "77bdacd4-3def-581b-8ef5-07cd49f5950b",
+       "label": "A",
+       "content": "3 days old",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2cb458d3-9628-5c37-9688-9c6b04cafd49",
+       "label": "B",
+       "content": "3 weeks old",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "70e57d82-0035-5c5a-88c9-bf24c22d6d03",
+       "label": "C",
+       "content": "3 months old",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "64d7d8b3-5b8a-5154-8f2c-f44cfa2e1ab7",
+       "label": "D",
+       "content": "1 year old",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "68b1fbc6-33f1-5f83-8c6f-7d4d662d7bb9",
+   "topic": "Cereal Crops",
+   "title": "Cereal Crops: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on cereal crops, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 122,
+   "questions": [
+    {
+     "id": "fe5f6d6a-5edd-5181-a91b-757dcfece2b8",
+     "key": "agr-cc-01",
+     "stem": "The scientific name of African rice is",
+     "image_url": null,
+     "explanation": "Crossing African and Asian rice produced NERICA varieties, which combine hardiness with higher yield.\n\n**Why the other options are wrong**\n\n- *Oryza sativa*: *Oryza sativa* is Asian rice.\n- *Zea mays*: *Zea mays* is maize.\n- *Sorghum bicolor*: *Sorghum bicolor* is sorghum (guinea corn).",
+     "position": 1,
+     "options": [
+      {
+       "id": "37c61157-337e-5248-b278-4a8423e565bd",
+       "label": "A",
+       "content": "*Oryza glaberrima*",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "bcaa9b0c-7d02-5dc2-9f87-4784f0de0c35",
+       "label": "B",
+       "content": "*Oryza sativa*",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f6516f86-7475-5cf7-8e50-bcc75a86684b",
+       "label": "C",
+       "content": "*Zea mays*",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9d42c37f-f488-5a56-8c59-ea56be28d430",
+       "label": "D",
+       "content": "*Sorghum bicolor*",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "032be22f-40f5-50e2-b4aa-7515196ede32",
+     "key": "agr-cc-02",
+     "stem": "Which rice ecology in Sierra Leone can usually be cropped every year, and sometimes twice a year, without a fallow?",
+     "image_url": null,
+     "explanation": "With bunds and channels, an inland valley swamp keeps the right depth of water and controls weeds by flooding, so rice can be grown every year.\n\n**Why the other options are wrong**\n\n- Upland: Upland rice is grown on leached slopes that must rest after one or two crops.\n- Boliland: Bolilands are seasonally flooded; yields are moderate and cropping depends on the floods.\n- Riverine grassland: Riverine grasslands are flood plains whose cropping depends on the river's flood.",
+     "position": 2,
+     "options": [
+      {
+       "id": "aac7ea3e-2db1-58c8-a712-5729e620d316",
+       "label": "A",
+       "content": "Upland",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8d35f693-cc30-52a6-8196-8186eb46ff9c",
+       "label": "B",
+       "content": "Inland valley swamp",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b40332ae-4ad5-50af-aec7-4d094e317f40",
+       "label": "C",
+       "content": "Boliland",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4d9731f5-4680-5661-a0d8-d67b6352e346",
+       "label": "D",
+       "content": "Riverine grassland",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b3da5b1f-f3f4-5dcf-8866-506baddebdae",
+     "key": "agr-cc-03",
+     "stem": "Rice plants have 'dead hearts' and produce white, empty heads. The pest most likely responsible is the",
+     "image_url": null,
+     "explanation": "Stem borer larvae tunnel inside the stem, killing the central shoot (dead heart) or the panicle (white head). Destroying stubble after harvest removes larvae that would carry over.\n\n**Why the other options are wrong**\n\n- African rice gall midge: The gall midge makes onion-like tubes (galls) instead of panicles.\n- rice bug: Rice bugs suck the developing grains, leaving them empty, but do not cause dead hearts.\n- weaver bird: Weaver birds eat the ripening grain; they do not kill the central shoot.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b5797708-bb28-557a-b8e4-3d4b67a865bc",
+       "label": "A",
+       "content": "African rice gall midge",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1578815a-0e41-5a52-be0b-45feaab25f21",
+       "label": "B",
+       "content": "rice bug",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e10c543b-5989-5367-998a-ad5d7f75f8b6",
+       "label": "C",
+       "content": "stem borer",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2a5a337e-9c13-53da-8042-f62c0f9d354c",
+       "label": "D",
+       "content": "weaver bird",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "af4b4311-7294-552c-a1cc-9660aeabd178",
+     "key": "agr-cc-04",
+     "stem": "Parboiling rice before milling",
+     "image_url": null,
+     "explanation": "Parboiling is soaking the paddy, steaming it and drying it before milling. Much of the rice in Sierra Leone is parboiled.\n\n**Why the other options are wrong**\n\n- removes the husk from the grain: The husk is removed by milling, after parboiling.\n- separates the grain from the straw: Separating grain from straw is threshing.\n- removes the chaff by wind: Removing chaff by wind is winnowing.",
+     "position": 4,
+     "options": [
+      {
+       "id": "5221779a-0185-5fab-bd0a-3813052000bf",
+       "label": "A",
+       "content": "removes the husk from the grain",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "99d7b4f8-47a9-53d0-8e4b-afb66a640c89",
+       "label": "B",
+       "content": "separates the grain from the straw",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8a911cb2-67fc-513c-8635-fb97bf163e40",
+       "label": "C",
+       "content": "removes the chaff by wind",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "49c69f00-7082-5f14-8ca5-1cb5c04c6efe",
+       "label": "D",
+       "content": "hardens the grain so fewer grains break, keeps more nutrients and improves storage",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "78ae6138-0e67-5818-91b3-b1e0b756b7bd",
+     "key": "agr-cc-05",
+     "stem": "Grain should be dried to a moisture content of about 12 to 14% before storage in order to",
+     "image_url": null,
+     "explanation": "Damp grain heats up and goes mouldy, and insects multiply quickly in it. Well-dried grain in clean, dry, rat-proof stores keeps for months.\n\n**Why the other options are wrong**\n\n- make it germinate in the store: Damp grain may sprout in store; drying prevents this.\n- increase its weight for sale: Drying reduces the weight, because water is removed.\n- make it easier to thresh after storage: Threshing is done before storage, not after.",
+     "position": 5,
+     "options": [
+      {
+       "id": "83d806aa-45fd-520b-92fa-4c0131026042",
+       "label": "A",
+       "content": "prevent moulds and storage insects from damaging it",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4dde448b-68b2-571b-9d2e-e1ff843bd1d1",
+       "label": "B",
+       "content": "make it germinate in the store",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5e3f4867-4fc9-5544-8a61-41e3f67db0ef",
+       "label": "C",
+       "content": "increase its weight for sale",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "65825283-e061-5956-b4ed-b3997746218e",
+       "label": "D",
+       "content": "make it easier to thresh after storage",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7a9fbe3d-8dc3-52f7-aa27-6e50d07bdd59",
+     "key": "agr-cc-06",
+     "stem": "Maize streak disease, which causes yellow streaks on the leaves, is",
+     "image_url": null,
+     "explanation": "Control: resistant varieties, timely planting and removing infected plants early.\n\n**Why the other options are wrong**\n\n- a fungal disease spread by rain splash: Rain splash spreads fungal diseases such as cocoa black pod.\n- caused by a shortage of nitrogen: Nitrogen shortage yellows older leaves evenly; it is not an infectious disease.\n- caused by stem borers tunnelling in the stem: Stem borers cause dead hearts and broken stems, not streaks.",
+     "position": 6,
+     "options": [
+      {
+       "id": "368cf2e8-595d-53a6-9013-961e4692e367",
+       "label": "A",
+       "content": "a fungal disease spread by rain splash",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4861dc21-b382-50e2-99fa-7b7b0642f094",
+       "label": "B",
+       "content": "a virus disease spread by leafhoppers",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2c25735d-87bc-5bce-b972-747e9202f88f",
+       "label": "C",
+       "content": "caused by a shortage of nitrogen",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ce385fd6-2306-5aa1-bbd9-1b1f4111bb3c",
+       "label": "D",
+       "content": "caused by stem borers tunnelling in the stem",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a032b2e3-32b7-5e0f-bc79-a7dc9dc46031",
+     "key": "agr-cc-07",
+     "stem": "The fall armyworm is a serious pest of maize. Its damage is recognised by",
+     "image_url": null,
+     "explanation": "The caterpillars feed inside the funnel of young leaves (the whorl). Scouting fields early and acting quickly limits the damage.\n\n**Why the other options are wrong**\n\n- onion-like tubes in place of the tassels: Onion-like tubes are made by the gall midge on rice.\n- small round holes in stored grain: Holes in stored grain are made by weevils.\n- yellow streaks along the leaves: Yellow streaks are a sign of maize streak virus.",
+     "position": 7,
+     "options": [
+      {
+       "id": "cc919669-f478-5dfd-ba5a-53279621bf3a",
+       "label": "A",
+       "content": "onion-like tubes in place of the tassels",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a7918555-9801-592a-8948-4952c84d8b87",
+       "label": "B",
+       "content": "small round holes in stored grain",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5eb89022-21a0-51bb-9e6b-6ed450eeb532",
+       "label": "C",
+       "content": "ragged holes in the leaves and droppings in the whorl",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f510754b-1936-5b5d-ab53-d0bfd9628574",
+       "label": "D",
+       "content": "yellow streaks along the leaves",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a5929124-b20a-5148-9b26-51257d711542",
+     "key": "agr-cc-08",
+     "stem": "Maize is especially important as an animal feed because it is used in large amounts in feeds for",
+     "image_url": null,
+     "explanation": "Ground maize supplies most of the energy in broiler and layer feeds, so the poultry industry depends heavily on maize.\n\n**Why the other options are wrong**\n\n- cattle grazing on pasture: Grazing cattle feed mainly on grass; grain is a small part of their diet.\n- goats browsing in the bush: Goats feed mainly by browsing shrubs and grasses.\n- fish in the sea: Wild sea fish are not fed by farmers.",
+     "position": 8,
+     "options": [
+      {
+       "id": "a324e177-bffa-5aa1-bf97-3a44275616a5",
+       "label": "A",
+       "content": "cattle grazing on pasture",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b3884db4-8fee-520d-bf4c-4f015bb07952",
+       "label": "B",
+       "content": "goats browsing in the bush",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4f99d17d-cb36-5ae1-a94b-9a338b7205d6",
+       "label": "C",
+       "content": "fish in the sea",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "be02bb97-77f5-5b87-82dc-2ee3f10d5aa9",
+       "label": "D",
+       "content": "poultry",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6df00460-dcb0-5d69-a0b9-ca88c2639c50",
+   "topic": "Legumes, Roots, and Tubers",
+   "title": "Legumes, Roots, and Tubers: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on legumes, roots, and tubers, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 123,
+   "questions": [
+    {
+     "id": "ca1d0d79-550a-59a1-b9cc-47cea189dde2",
+     "key": "agr-lr-01",
+     "stem": "Legumes such as groundnut and cowpea improve soil fertility because",
+     "image_url": null,
+     "explanation": "This is why legumes are grown in rotation or intercropped with heavy feeders such as maize and cassava.\n\n**Why the other options are wrong**\n\n- their leaves contain a great deal of potassium: The benefit of legumes comes from nitrogen fixation, not potassium.\n- their roots dissolve the rocks to release phosphorus: Legume roots do not dissolve rock.\n- they are never attacked by pests: Legumes are attacked by many pests, such as aphids and pod borers.",
+     "position": 1,
+     "options": [
+      {
+       "id": "4df274a6-e218-5deb-988f-1f2fb4f630fe",
+       "label": "A",
+       "content": "*Rhizobium* bacteria in their root nodules fix nitrogen from the air",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "522e9edd-23f8-5e21-b3eb-340ea1998224",
+       "label": "B",
+       "content": "their leaves contain a great deal of potassium",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "212a1726-6661-5331-911d-e2085a7e24c7",
+       "label": "C",
+       "content": "their roots dissolve the rocks to release phosphorus",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5b2fa260-db33-5b8c-b0db-449777fdf704",
+       "label": "D",
+       "content": "they are never attacked by pests",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "144f4907-0b26-58f2-b7db-24c7020ed78c",
+     "key": "agr-lr-02",
+     "stem": "Cassava is propagated by",
+     "image_url": null,
+     "explanation": "Cuttings should be taken only from healthy plants, because cassava mosaic virus is carried inside the stem.\n\n**Why the other options are wrong**\n\n- seeds: Cassava is not grown from seed by farmers.\n- setts or minisetts: Setts and minisetts are pieces of tuber used to propagate yam.\n- corms: Corms are used to propagate cocoyam.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c90a3e8b-ee7a-5f96-92b7-0a2edd667679",
+       "label": "A",
+       "content": "seeds",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "82d3a0b8-5c28-5137-a094-cba02d006d7f",
+       "label": "B",
+       "content": "stem cuttings",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "616bc8c2-8c45-5d5a-a0c1-cc3b0f70fa30",
+       "label": "C",
+       "content": "setts or minisetts",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "60550997-d41c-52f7-8c18-99e702e902aa",
+       "label": "D",
+       "content": "corms",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9f25b3f9-83d0-5c0a-b74b-419bf2e29943",
+     "key": "agr-lr-03",
+     "stem": "Yam vines are trained up stakes mainly so that",
+     "image_url": null,
+     "explanation": "More light means more photosynthesis, so more food is stored in the tuber.\n\n**Why the other options are wrong**\n\n- the tubers grow above the ground: Yam tubers grow underground, whether or not the vines are staked.\n- rats cannot reach the tubers: Staking the vines does not protect the tubers from rats.\n- the vines do not need any fertiliser: Staking does not replace the need for nutrients.",
+     "position": 3,
+     "options": [
+      {
+       "id": "9141fcbd-8841-566e-8237-c22f6bb2aff2",
+       "label": "A",
+       "content": "the tubers grow above the ground",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "504c877e-ac2d-54fc-a26e-8a58a620f424",
+       "label": "B",
+       "content": "rats cannot reach the tubers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "43f03667-029a-5e91-923f-82c68ca7afc1",
+       "label": "C",
+       "content": "the leaves receive more light, which increases tuber yield",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9894f336-ba9c-515b-9cf4-6020501dbe3a",
+       "label": "D",
+       "content": "the vines do not need any fertiliser",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8c7a6123-654b-5e00-b8a6-7fb140a96a5f",
+     "key": "agr-lr-04",
+     "stem": "Which of these crops is grown in Sierra Leone as much for its leaves, used in sauce, as for its roots?",
+     "image_url": null,
+     "explanation": "Potato leaf sauce and cassava leaf sauce, cooked with palm oil, are everyday dishes, so both crops are valued for their leaves.\n\n**Why the other options are wrong**\n\n- Yam: Yam is grown for its tubers.\n- Groundnut: Groundnut is grown for its seeds; the haulms are fed to animals.\n- Ginger: Ginger is grown for its rhizomes.",
+     "position": 4,
+     "options": [
+      {
+       "id": "0b6e5947-6300-57d5-8405-ca9605a4906e",
+       "label": "A",
+       "content": "Yam",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "97c8f6ce-03e7-5fcf-b4b9-c741648f275c",
+       "label": "B",
+       "content": "Groundnut",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ed903e15-e586-5420-99a1-0844d3ad4a42",
+       "label": "C",
+       "content": "Ginger",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e832c68e-0fdc-56e7-bdb4-546923778b97",
+       "label": "D",
+       "content": "Sweet potato",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7b2b60ab-8e63-5b1d-920a-dbc6a807a1c2",
+     "key": "agr-lr-05",
+     "stem": "In making gari, grated cassava is pressed after fermentation and then",
+     "image_url": null,
+     "explanation": "Gari: peel, wash, grate, ferment for 2 to 3 days, press out the liquid, sieve, roast. Processing removes most of the poisonous cyanide compounds.\n\n**Why the other options are wrong**\n\n- soaked in water for several days: Soaking for several days is how fufu is made.\n- sliced and sun-dried into chips: Sun-dried slices make cassava chips and flour.\n- washed to separate out the starch: Washing out and settling the starch makes cassava starch.",
+     "position": 5,
+     "options": [
+      {
+       "id": "8d881224-3be4-58cc-b90d-d131a04b303f",
+       "label": "A",
+       "content": "roasted in a wide pan",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "24a5c350-8e91-5a63-bb6c-ee78aae52e92",
+       "label": "B",
+       "content": "soaked in water for several days",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3d65514b-66d6-5106-93f1-40c565ef7e2f",
+       "label": "C",
+       "content": "sliced and sun-dried into chips",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "aedb2e67-ca82-5295-b4ea-0c7fb5a52933",
+       "label": "D",
+       "content": "washed to separate out the starch",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2863fe1e-85dc-597b-9c19-84ebb25f1705",
+     "key": "agr-lr-06",
+     "stem": "Which crop is a legume?",
+     "image_url": null,
+     "explanation": "Legumes have pods and root nodules. Groundnut, cowpea, soya bean, pigeon pea and bambara groundnut are grain legumes.\n\n**Why the other options are wrong**\n\n- Cassava: Cassava is a root crop.\n- Cocoyam: Cocoyam is grown for its corms; it is not a legume.\n- Sorghum: Sorghum is a cereal.",
+     "position": 6,
+     "options": [
+      {
+       "id": "246a34b2-1bab-5266-abbe-23a6dd6eb421",
+       "label": "A",
+       "content": "Cassava",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "342964f2-f04f-573a-a02d-ae5ac6572501",
+       "label": "B",
+       "content": "Pigeon pea",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "04fd45ee-6866-5a8d-b3e3-9cf8fa5580e7",
+       "label": "C",
+       "content": "Cocoyam",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d018d397-62d4-5e3d-afaa-3d62256552fd",
+       "label": "D",
+       "content": "Sorghum",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "28f13122-d49a-5d9d-8f40-2229677cc4d3",
+     "key": "agr-lr-07",
+     "stem": "Small pieces of yam tuber of about 25 to 50 g, dusted with ash or fungicide before planting, are called",
+     "image_url": null,
+     "explanation": "Minisetts save tubers that would otherwise be used as planting material, leaving more to eat or sell. The ash or fungicide protects the cut surfaces from rot.\n\n**Why the other options are wrong**\n\n- suckers: Suckers are shoots from the base of plants such as plantain.\n- slips: Slips are shoots used to propagate pineapple.\n- vine cuttings: Vine cuttings are used for sweet potato.",
+     "position": 7,
+     "options": [
+      {
+       "id": "31f664c5-118e-5177-85e7-e46d931f3b7d",
+       "label": "A",
+       "content": "suckers",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "edc9ea72-1291-57ca-a5c0-a9b39735d292",
+       "label": "B",
+       "content": "slips",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "83ed69b6-0233-5c28-a537-c3c49483dee0",
+       "label": "C",
+       "content": "minisetts",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ca8b5da6-4c84-5d96-a96c-cd05f6131bc7",
+       "label": "D",
+       "content": "vine cuttings",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b573ed59-922d-550f-8d03-32ef1092f59b",
+   "topic": "Plantation and Cash Crops",
+   "title": "Plantation and Cash Crops: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on plantation and cash crops, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 124,
+   "questions": [
+    {
+     "id": "062f33cf-7fd2-5166-b18c-fd939b0e437f",
+     "key": "agr-pc-01",
+     "stem": "In Sierra Leone, cocoa and coffee are grown mainly in the",
+     "image_url": null,
+     "explanation": "The forested east has the deep soils, rainfall and humidity cocoa and coffee need; cashew is spreading in the north.\n\n**Why the other options are wrong**\n\n- Western Area peninsula: The Western Area is too small and built up for large cocoa and coffee production.\n- bolilands of the north: The bolilands are seasonally flooded grasslands used mainly for rice.\n- mangrove swamps of the coast: Cocoa and coffee cannot grow in salty tidal swamps.",
+     "position": 1,
+     "options": [
+      {
+       "id": "c998575c-4ec7-5ed9-9a00-69bd8f505972",
+       "label": "A",
+       "content": "Western Area peninsula",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "47f6edef-4354-54d5-b801-9239ccc4db08",
+       "label": "B",
+       "content": "bolilands of the north",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "90892723-abe2-5783-8382-d37317f53485",
+       "label": "C",
+       "content": "mangrove swamps of the coast",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6f217e1f-1e6a-5f2c-ab1b-630b600fb382",
+       "label": "D",
+       "content": "east, in Kailahun, Kenema and Kono",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "418267a7-48c5-5db4-9e43-44270988de06",
+     "key": "agr-pc-02",
+     "stem": "Cocoa beans are fermented after harvest mainly to",
+     "image_url": null,
+     "explanation": "Fermentation kills the germ, removes the sticky pulp and starts the chemical changes that produce chocolate flavour. Poorly fermented beans are graded down.\n\n**Why the other options are wrong**\n\n- make the beans germinate before sale: Fermentation kills the embryo, so the beans cannot germinate.\n- increase the weight of the beans: Fermentation and drying reduce the weight of the beans.\n- kill the mirids on the pods: Mirids are controlled in the field; fermentation is done on harvested beans.",
+     "position": 2,
+     "options": [
+      {
+       "id": "da54e662-3edc-5dcf-826b-81dd51c76233",
+       "label": "A",
+       "content": "develop the chocolate flavour and brown colour of the beans",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "800bc854-6192-5cf1-93ab-69bd842b6519",
+       "label": "B",
+       "content": "make the beans germinate before sale",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f2876772-835b-5228-8a36-d62ff920d815",
+       "label": "C",
+       "content": "increase the weight of the beans",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c4268629-4d9c-5875-a2ab-93923292bbb1",
+       "label": "D",
+       "content": "kill the mirids on the pods",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5ce3fb08-3ed3-5a7c-ab87-a992e60efc33",
+     "key": "agr-pc-03",
+     "stem": "Black pod disease of cocoa, in which the pods rot brown-black in wet weather, is caused by",
+     "image_url": null,
+     "explanation": "Control: harvest often, remove and destroy infected pods, prune to let air move through the trees, and spray copper fungicides.\n\n**Why the other options are wrong**\n\n- a virus spread by mealybugs: A virus spread by mealybugs causes cocoa swollen shoot disease.\n- sap-sucking mirids: Mirids cause black patches and dieback of branches.\n- a shortage of potassium: Potassium shortage scorches leaf edges; it is not an infectious disease.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5b7d9ed3-002c-5369-9f2a-c2f59e871082",
+       "label": "A",
+       "content": "a virus spread by mealybugs",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "298b6933-046b-5080-80e5-f78e84387362",
+       "label": "B",
+       "content": "a fungus, *Phytophthora*",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e88388b4-7f7a-5442-8a7f-6b9e061c4b81",
+       "label": "C",
+       "content": "sap-sucking mirids",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fe48123a-da34-57d8-8f51-20b558089a94",
+       "label": "D",
+       "content": "a shortage of potassium",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dff00639-634b-54be-9ff3-d47571c49dc6",
+     "key": "agr-pc-04",
+     "stem": "The oil palm type planted on modern farms, which has a thin shell and the most oil, is",
+     "image_url": null,
+     "explanation": "Tenera is the hybrid Dura × Pisifera. Its thick mesocarp holds more oil, so it gives the highest yields.\n\n**Why the other options are wrong**\n\n- Dura: Dura has a thick shell and less oil; it is common in wild groves.\n- Pisifera: Pisifera has no shell, but its female flowers are usually sterile; it is used as the male parent.\n- Cocos: *Cocos nucifera* is the coconut palm, not a type of oil palm.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a7491cc4-211b-5185-b637-8267cf228d34",
+       "label": "A",
+       "content": "Dura",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "318a9619-1f56-5c65-aa67-d5d8510a3603",
+       "label": "B",
+       "content": "Pisifera",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c06dbc3c-3455-5227-9d7a-7aa3630763bd",
+       "label": "C",
+       "content": "Tenera",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fbd02a72-d5cc-50d4-9281-b2bda232b449",
+       "label": "D",
+       "content": "Cocos",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d87a3c9c-561d-59fc-ace5-9f7af79ef31a",
+     "key": "agr-pc-05",
+     "stem": "Cashew trees are grown for",
+     "image_url": null,
+     "explanation": "Cashew is increasingly planted, especially in the north, and is a growing source of export income.\n\n**Why the other options are wrong**\n\n- latex for making rubber: Latex comes from the rubber tree.\n- rhizomes that are dried and exported: Dried rhizomes come from ginger.\n- beans that are fermented to make chocolate: Fermented beans for chocolate come from cocoa.",
+     "position": 5,
+     "options": [
+      {
+       "id": "2112bc6a-7607-5d9c-80d0-d071fee97069",
+       "label": "A",
+       "content": "latex for making rubber",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8f48e843-87ce-53ba-8daf-c62d497e3d7b",
+       "label": "B",
+       "content": "rhizomes that are dried and exported",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c7c9df5b-838f-5aaf-8e61-655bf5707c35",
+       "label": "C",
+       "content": "beans that are fermented to make chocolate",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d93b8f41-23d7-5426-94f1-a63c97f3f026",
+       "label": "D",
+       "content": "their nuts for export, and their 'apples' for juice",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8d11967f-0b02-535b-b08a-43b7e77b8f8b",
+     "key": "agr-pc-06",
+     "stem": "Which of the following is a problem of cash-crop production in Sierra Leone?",
+     "image_url": null,
+     "explanation": "Other problems include old, low-yielding trees, pests and diseases, the long wait for the first harvest and competition with food crops for land and labour.\n\n**Why the other options are wrong**\n\n- Cash crops bring in no foreign exchange: Cash crops earn foreign exchange; that is one of their main benefits.\n- Cash crops are ready to harvest in a few weeks: Tree crops take years to bear; the long wait is a problem, not a quick harvest.\n- Cash crops create no employment: Cash crops employ many people in farming, processing and trade.",
+     "position": 6,
+     "options": [
+      {
+       "id": "0cdc4c3e-8559-5189-9c2c-b5361ad5e04f",
+       "label": "A",
+       "content": "Prices on world markets rise and fall, so farmers' incomes are uncertain",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6c50b27a-9239-5541-a58d-38e012c54c36",
+       "label": "B",
+       "content": "Cash crops bring in no foreign exchange",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bd45176e-5a58-51d9-8922-5d90548bce83",
+       "label": "C",
+       "content": "Cash crops are ready to harvest in a few weeks",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0c285808-80a0-500a-8b0b-940d91138e0e",
+       "label": "D",
+       "content": "Cash crops create no employment",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "58e42f31-1702-539e-8cf7-346fdef4e671",
+     "key": "agr-pc-07",
+     "stem": "Cocoa beans should be dried on raised platforms or mats rather than on the roadside because beans dried on the road",
+     "image_url": null,
+     "explanation": "Clean, well-fermented, well-dried beans fetch the best price.\n\n**Why the other options are wrong**\n\n- dry too slowly in the sun: Drying speed is not the problem; contamination is.\n- lose their chocolate flavour by fermenting again: Beans do not ferment again once they are drying.\n- become too heavy to sell: Dirt is not the main problem because of weight; it lowers quality and price.",
+     "position": 7,
+     "options": [
+      {
+       "id": "a128f62e-5b2a-5b74-9872-e3b9fd2fcc82",
+       "label": "A",
+       "content": "dry too slowly in the sun",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fd05a18e-7ed2-5487-8e95-8f846adb141a",
+       "label": "B",
+       "content": "pick up dirt and smells and may go mouldy, so they are graded down",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1746baa3-7242-5f87-8584-67fc40a749dd",
+       "label": "C",
+       "content": "lose their chocolate flavour by fermenting again",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "70896193-fdc1-55c3-99b1-64a5fefec2d8",
+       "label": "D",
+       "content": "become too heavy to sell",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "71ae9480-e9ad-5d7b-9c23-85185cd4688f",
+     "key": "agr-pc-08",
+     "stem": "Cocoa trees infected with swollen shoot virus must be cut out because",
+     "image_url": null,
+     "explanation": "Removing infected trees, and replanting with healthy material, stops the virus spreading through the farm.\n\n**Why the other options are wrong**\n\n- the trees will recover if they are cut back: Infected trees do not recover; cutting back does not remove the virus.\n- swollen shoot is caused by too much shade: Swollen shoot is a virus disease, not a result of shade.\n- fungicides make the disease worse: Fungicides act on fungi; they have no effect on a virus.",
+     "position": 8,
+     "options": [
+      {
+       "id": "e0ef55e4-ccc7-5d2a-9612-e0004b8b6b8d",
+       "label": "A",
+       "content": "the trees will recover if they are cut back",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e1977a04-f72d-50c3-8b9b-4f007e003744",
+       "label": "B",
+       "content": "swollen shoot is caused by too much shade",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3bea078f-33ec-5c13-b767-8ee70c1a690f",
+       "label": "C",
+       "content": "the virus cannot be cured, and infected trees spread it through mealybugs to healthy trees",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "47fbe943-6109-5a1c-96c6-91a0cfe8570b",
+       "label": "D",
+       "content": "fungicides make the disease worse",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2d7cc577-5a0f-50e7-b402-0ffb2a46f4cc",
+   "topic": "Vegetable and Fruit Production",
+   "title": "Vegetable and Fruit Production: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on vegetable and fruit production, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 125,
+   "questions": [
+    {
+     "id": "ea262eca-ed07-5577-9f0b-b67c33b651b0",
+     "key": "agr-vf-01",
+     "stem": "Which of these is a fruit vegetable?",
+     "image_url": null,
+     "explanation": "Fruit vegetables are eaten as fruits: pepper, tomato, okra, garden egg, cucumber and pumpkin.\n\n**Why the other options are wrong**\n\n- Krain-krain: Krain-krain (jute mallow) is a leafy vegetable.\n- Onion: Onion is a bulb vegetable.\n- Carrot: Carrot is a root vegetable.",
+     "position": 1,
+     "options": [
+      {
+       "id": "2d104d9c-2028-539b-8e97-2eba147f1934",
+       "label": "A",
+       "content": "Krain-krain",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "22011192-14c9-5d11-b7f5-bf86de86725d",
+       "label": "B",
+       "content": "Onion",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bea1e922-9879-5cc7-a4a0-16b78831aa7b",
+       "label": "C",
+       "content": "Carrot",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d153201d-ef46-5a82-800d-259b40c6b92e",
+       "label": "D",
+       "content": "Garden egg",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e2dcd90f-8ae9-5737-9cde-4f4a17ea8f9b",
+     "key": "agr-vf-02",
+     "stem": "Vegetables are often grown on raised beds about 1 m wide because raised beds",
+     "image_url": null,
+     "explanation": "A bed about 1 m wide can be reached from both sides without stepping on the soil, so its structure is kept loose.\n\n**Why the other options are wrong**\n\n- need no organic manure: Vegetables on raised beds still need plenty of organic matter.\n- stop all pests reaching the plants: Raised beds do not keep pests away.\n- allow tractors to work between the plants: Beds are made for hand work; their width lets the gardener reach the middle from each side.",
+     "position": 2,
+     "options": [
+      {
+       "id": "eadec619-adf3-58e2-905d-5a367fb832e0",
+       "label": "A",
+       "content": "drain well in the rains and are easy to water and weed",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "055dc80a-9606-5c75-891e-49ae04944eaf",
+       "label": "B",
+       "content": "need no organic manure",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b04ce5c4-a060-5ee6-896f-54f9eec1de05",
+       "label": "C",
+       "content": "stop all pests reaching the plants",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "23d1555a-8d1b-5867-a87a-839be669581f",
+       "label": "D",
+       "content": "allow tractors to work between the plants",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "60d4c96d-d740-56d9-bdfa-eaad9a5a9d91",
+     "key": "agr-vf-03",
+     "stem": "Which vegetable is usually raised in a nursery and then transplanted?",
+     "image_url": null,
+     "explanation": "Tomato, pepper, garden egg, cabbage, lettuce and onion are raised in a nursery and transplanted at about 4 to 6 weeks.\n\n**Why the other options are wrong**\n\n- Okra: Okra is usually sown directly in the bed.\n- Cucumber: Cucumber is usually sown directly.\n- Krain-krain: Krain-krain is usually sown directly.",
+     "position": 3,
+     "options": [
+      {
+       "id": "a8e7d0f9-2811-537e-8ee2-54bc49854d10",
+       "label": "A",
+       "content": "Okra",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9cd84265-a2e2-5cd3-a845-03f11f8d7e12",
+       "label": "B",
+       "content": "Tomato",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "54b1dee5-bae8-5181-868b-66a08876d790",
+       "label": "C",
+       "content": "Cucumber",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "85b7b79f-3101-53b8-803e-54e11608052e",
+       "label": "D",
+       "content": "Krain-krain",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "030132bc-3345-5deb-acf7-514c452fa7b7",
+     "key": "agr-vf-04",
+     "stem": "Tomato, pepper and garden egg should not follow one another in the same bed, season after season, because they",
+     "image_url": null,
+     "explanation": "Rotating with crops of a different family, such as leafy vegetables or legumes, starves out the pests and pathogens.\n\n**Why the other options are wrong**\n\n- need completely different soils: They grow in similar soils; the problem is shared pests and diseases.\n- can only be grown in the dry season: These vegetables can be grown in the rains as well as in the dry season.\n- poison the soil for one another: They do not poison the soil; disease organisms build up in it.",
+     "position": 4,
+     "options": [
+      {
+       "id": "107b65ab-688d-5bd9-8141-117632f467d8",
+       "label": "A",
+       "content": "need completely different soils",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "074f33d0-0729-5552-9368-841bd34dfee7",
+       "label": "B",
+       "content": "can only be grown in the dry season",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "09d3b09e-d355-5dcf-9305-41f954f8914a",
+       "label": "C",
+       "content": "belong to the same family and share pests and diseases such as bacterial wilt",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1cd6a4b2-3ac0-52fe-a5da-0bd1b174a676",
+       "label": "D",
+       "content": "poison the soil for one another",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "df75e853-a137-5920-b96e-78a1c3790c3b",
+     "key": "agr-vf-05",
+     "stem": "Mango is usually propagated by grafting rather than by seed because",
+     "image_url": null,
+     "explanation": "Grafted mango trees bear in 3 to 5 years and are true to type. Citrus is propagated by budding for the same reasons.\n\n**Why the other options are wrong**\n\n- mango seeds never germinate: Mango seeds germinate well; the problem is that seedlings take long to bear and vary.\n- grafted trees need no care after planting: Grafted trees still need watering, weeding and the removal of rootstock shoots.\n- seedling trees cannot produce fruit at all: Seedling trees do bear, but only after many years, and their fruit varies.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d8dfaa3c-9573-5bce-83bd-a5e7d4aa0979",
+       "label": "A",
+       "content": "mango seeds never germinate",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c725a548-eba5-5577-915f-a4754d75ca1e",
+       "label": "B",
+       "content": "grafted trees need no care after planting",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "41749d73-7820-5f54-a944-6e486cd20bf9",
+       "label": "C",
+       "content": "seedling trees cannot produce fruit at all",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "783eeead-49b0-5a3e-8a9f-3dc13809a606",
+       "label": "D",
+       "content": "grafted trees bear earlier and give fruit of the same quality as the parent",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "55447332-a7b1-53b0-a3ad-c500da642358",
+     "key": "agr-vf-06",
+     "stem": "Pineapple is propagated by",
+     "image_url": null,
+     "explanation": "The first fruit is ready at about 15 to 20 months, and flowering can be induced so that the harvest is uniform.\n\n**Why the other options are wrong**\n\n- budding onto a rootstock: Budding is used for citrus.\n- stem cuttings: Stem cuttings are used for cassava.\n- seeds: Pineapple is not grown from seed by farmers.",
+     "position": 6,
+     "options": [
+      {
+       "id": "9502187a-8ebc-5b31-a774-57bdea2f9a29",
+       "label": "A",
+       "content": "suckers, slips or crowns",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "14553edf-4951-559f-9cfa-8a6c7946ab0c",
+       "label": "B",
+       "content": "budding onto a rootstock",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b23f2473-a783-596c-a54c-c6ce8bb0ad10",
+       "label": "C",
+       "content": "stem cuttings",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ef3a2973-28fe-53b9-84b9-b6458219a05a",
+       "label": "D",
+       "content": "seeds",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eee1e6ca-a27d-5007-978a-404aae5bcdf6",
+     "key": "agr-vf-07",
+     "stem": "Which practice best reduces post-harvest losses of tomatoes taken to market?",
+     "image_url": null,
+     "explanation": "Gentle handling, crates instead of sacks, shade and quick transport keep vegetables fresh; drying and processing reduce losses further.\n\n**Why the other options are wrong**\n\n- Packing them tightly in sacks: Sacks crush the fruit, and bruised tomatoes rot quickly.\n- Leaving them in the sun to ripen evenly: Sun heats the fruit and speeds up rotting.\n- Harvesting them in the hottest part of the day: Fruit picked in the heat spoils faster.",
+     "position": 7,
+     "options": [
+      {
+       "id": "73915822-0229-5146-b59b-ee4d01e5c2eb",
+       "label": "A",
+       "content": "Packing them tightly in sacks",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b77311b5-75fc-55e8-9554-4a37139e107d",
+       "label": "B",
+       "content": "Picking in the cool morning, packing in crates and transporting quickly",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "439275c0-e940-574f-8744-2a7df75297ed",
+       "label": "C",
+       "content": "Leaving them in the sun to ripen evenly",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "54d9c72c-c8bf-5a1a-9d41-28d53ee28ec1",
+       "label": "D",
+       "content": "Harvesting them in the hottest part of the day",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "00f6e2f7a2f2"
+}
