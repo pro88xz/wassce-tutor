@@ -43,3 +43,6 @@ export const keyTermsPath = (subjectSlug: string, topicSlug: string) => `/wassce
 
 /** Book a tutor pages: /tutors and /tutors/{subject} (one per subject with a syllabus page). */
 export const tutorsPath = (subjectSlug?: string) => (subjectSlug ? `/tutors/${subjectSlug}` : '/tutors')
+/** Where the booking steps and the general tutoring FAQ live (on /tutors), for subject pages to link to rather than repeat. */
+export const TUTOR_HUB_HOW = '/tutors#tutor-how'
+export const TUTOR_HUB_FAQ = '/tutors#tutor-faq'
