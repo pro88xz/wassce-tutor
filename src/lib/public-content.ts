@@ -3,7 +3,7 @@
 // subjects, topics, and the wassce_lesson_index view (lesson titles, never
 // lesson content). Runs at build time (prerendering) and in the browser.
 import { supabase } from '@/lib/supabase'
-import { hasQuestionsPageByCount, hasSubjectPage, hasTopicPageByCount, subjectPath, topicPath } from '@/lib/public-rules'
+import { hasQuestionsPageByCount, hasSubjectPage, hasTopicPageByCount, lessonPath, questionsPath, subjectPath, topicPath } from '@/lib/public-rules'
 import { hasKeyTermsByCount, topicKeyTerms, type KeyTerm } from '@/lib/key-terms'
 import { topicPhoto } from '@/lib/topic-photos'
 import { mathToText } from '@/lib/math-text'
@@ -705,12 +705,91 @@ export async function fetchKeyTermPreview(topic: TopicWithLessons, count = 6): P
   return hasKeyTermsByCount(terms.length) ? { total: terms.length, terms: terms.slice(0, count) } : { total: 0, terms: [] }
 }
 
+/** Where a key term is used beyond its definition: the topic's practice questions that use it, and other topics' lessons. */
+export type TermUsage = {
+  /** Questions on this topic's questions page that use the term (numbered as that page numbers them). */
+  tested: { n: number; href: string }[]
+  /** Other topics in the subject whose lessons use the term, linked to the lesson that uses it most (up to four, in syllabus order). */
+  alsoIn: { name: string; href: string }[]
+}
+
 export type KeyTermsPageData = TopicPageData & {
   terms: KeyTerm[]
   questionCount: number
+  /** By term id; empty outside the build (it needs every lesson's text). */
+  usage: Record<string, TermUsage>
+  /** How many of the topic's practice questions use at least one of its key terms. */
+  questionsUsingTerms: number
   /** Neighbouring topics in syllabus order with a key terms page of their own. */
   previousTerms: TopicWithLessons | null
   nextTerms: TopicWithLessons | null
+}
+
+/** Markdown (with maths) as plain words, for finding where a term is used. */
+const plainWords = (md: string) => mathToText(md).replace(/[*_`#>|]/g, ' ').replace(/\s+/g, ' ')
+const lessonWords = new Map<string, string>()
+const wordsOf = (lesson: LessonBody) => {
+  if (!lessonWords.has(lesson.id)) lessonWords.set(lesson.id, plainWords(lesson.content))
+  return lessonWords.get(lesson.id)!
+}
+
+/**
+ * A term as a pattern that finds it in running text: whole words, any case,
+ * singular or plural ("Isotopes" also finds "isotope"). Null for a term too
+ * short to find reliably, or one written with maths.
+ */
+function termPattern(term: string, flags = 'i'): RegExp | null {
+  const t = term.trim().replace(/\s+/g, ' ')
+  if (t.length < 3 || /[$\\]/.test(t)) return null
+  const singular = t.length > 3 && /[^su]s$/i.test(t) ? t.slice(0, -1) : t
+  const body = singular.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s+')
+  return new RegExp(`(?<![A-Za-z])${body}(?:s|es)?(?![A-Za-z])`, flags)
+}
+
+/**
+ * For a topic's key terms page (build time): which of the topic's practice
+ * questions use each term, and which other topics' lessons in the subject use
+ * it. This is what the key terms page adds to the topic page's preview cards.
+ */
+async function termUsage(subjectSlug: string, topic: TopicWithLessons, terms: KeyTerm[], subjectTopics: TopicWithLessons[]): Promise<{ usage: Record<string, TermUsage>; questionsUsingTerms: number }> {
+  const [questions, bodies] = await Promise.all([loadTopicQuestions(topic.id), loadAllLessonBodies()])
+  const withQuestionsPage = hasQuestionsPageByCount(questions.length)
+  const questionWords = questions.map((q) => plainWords([q.stem, ...q.options.map((o) => o.content), q.explanation ?? ''].join(' ')))
+  const bodiesByTopic = new Map<string, Map<string, LessonBody>>()
+  for (const b of bodies) {
+    if (!bodiesByTopic.has(b.topic_id)) bodiesByTopic.set(b.topic_id, new Map())
+    bodiesByTopic.get(b.topic_id)!.set(b.slug, b)
+  }
+  const others = subjectTopics.filter((t) => t.id !== topic.id)
+  const usage: Record<string, TermUsage> = {}
+  const used = new Set<number>()
+  for (const term of terms) {
+    const find = termPattern(term.term)
+    const count = termPattern(term.term, 'gi')
+    if (!find || !count) {
+      usage[term.id] = { tested: [], alsoIn: [] }
+      continue
+    }
+    const tested = withQuestionsPage ? questionWords.flatMap((words, i) => (find.test(words) ? [i] : [])) : []
+    for (const i of tested) used.add(i)
+    const hits = others.flatMap((t, order) => {
+      const lessons = t.lessons.flatMap((l) => {
+        const body = bodiesByTopic.get(t.id)?.get(l.slug)
+        const n = body ? (wordsOf(body).match(count) ?? []).length : 0
+        return n ? [{ slug: l.slug, n }] : []
+      })
+      if (!lessons.length) return []
+      const best = lessons.reduce((a, b) => (b.n > a.n ? b : a))
+      return [{ order, total: lessons.reduce((n, l) => n + l.n, 0), name: t.name, href: lessonPath(subjectSlug, t.slug, best.slug) }]
+    })
+    const alsoIn = hits
+      .sort((a, b) => b.total - a.total || a.order - b.order)
+      .slice(0, 4)
+      .sort((a, b) => a.order - b.order)
+      .map(({ name, href }) => ({ name, href }))
+    usage[term.id] = { tested: tested.map((i) => ({ n: i + 1, href: `${questionsPath(subjectSlug, topic.slug)}#q${i + 1}` })), alsoIn }
+  }
+  return { usage, questionsUsingTerms: used.size }
 }
 
 /** Everything for /wassce/{subject}/{topic}/key-terms; null unless the topic has enough key terms. */
@@ -725,10 +804,13 @@ export async function fetchKeyTermsPage(subjectSlug: string, topicSlug: string):
   const withTerms: TopicWithLessons[] = []
   if (isServer) for (const t of ordered) if (hasKeyTermsByCount((await loadTopicKeyTerms(t)).length)) withTerms.push(t)
   const at = withTerms.findIndex((t) => t.id === page.topic.id)
+  const { usage, questionsUsingTerms } = isServer ? await termUsage(page.subject.slug, page.topic, terms, ordered) : { usage: {}, questionsUsingTerms: 0 }
   return {
     ...page,
     terms,
     questionCount: await topicQuestionCount(page.topic.id),
+    usage,
+    questionsUsingTerms,
     previousTerms: at > 0 ? withTerms[at - 1] : null,
     nextTerms: at >= 0 ? (withTerms[at + 1] ?? null) : null,
   }

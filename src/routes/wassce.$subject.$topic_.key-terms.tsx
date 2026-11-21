@@ -67,7 +67,7 @@ export const Route = createFileRoute('/wassce/$subject/$topic_/key-terms')({
 
 function KeyTermsPage() {
   const data = Route.useLoaderData()
-  const { subject, topic, terms, questionCount, previousTerms, nextTerms, coverIndex } = data
+  const { subject, topic, terms, questionCount, usage, questionsUsingTerms, previousTerms, nextTerms, coverIndex } = data
   const { palette } = subjectTheme(subject.slug)
   const colours = coverColours(subject.slug, coverIndex[topic.id] ?? 0)
   const [allOpen, setAllOpen] = useState(false)
@@ -86,6 +86,8 @@ function KeyTermsPage() {
         <p className="max-w-3xl text-[17px] leading-relaxed text-muted-foreground">
           The {terms.length} terms {lessons === 1 ? 'the lesson defines' : `the ${lessons} lessons define`}, in the lessons&rsquo; own words. Read a term, say what it means,
           then open the card to check. WASSCE theory questions often begin &ldquo;Define&hellip;&rdquo;.
+          {questionsUsingTerms > 0 &&
+            ` ${questionsUsingTerms} of the ${questionCount} practice questions on ${topic.name.toLowerCase()} use at least one of them: each card links to those questions.`}
         </p>
         <div className="flex flex-wrap gap-3">
           <button type="button" onClick={() => setAllOpen((v) => !v)} className="site-btn site-btn-primary" aria-pressed={allOpen}>
@@ -105,7 +107,7 @@ function KeyTermsPage() {
       <ol className="grid gap-3 sm:grid-cols-2 sm:gap-4">
         {terms.map((t) => (
           <li key={`${t.id}-${allOpen}`}>
-            <KeyTermCard term={t} lessonNumber={lessonNumber.get(t.lessonSlug) ?? 1} lessonHref={href(t)} colours={colours} open={allOpen} />
+            <KeyTermCard term={t} lessonNumber={lessonNumber.get(t.lessonSlug) ?? 1} lessonHref={href(t)} colours={colours} open={allOpen} usage={usage[t.id]} />
           </li>
         ))}
       </ol>
