@@ -169,7 +169,9 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     slug: 'njala-university',
     name: 'Njala University',
     shortName: 'Njala',
-    seoTitle: 'Njala University Admissions & Requirements | WASSCE Tutor',
+    // Search Console to 21 Nov 2026: "njala university courses and fees" (position 11), "... courses and requirements".
+    seoTitle: 'Njala University Courses, Fees & Entry Requirements',
+    seoDescription: 'Njala University courses, the NLe 500 application fee and WASSCE entry requirements: five credits with English for a degree, three for a diploma. How to apply.',
     location: 'Njala and Bo, with additional teaching locations',
     summary: 'A public university with undergraduate and postgraduate study across agriculture, basic sciences, environmental sciences, natural resources, technology, veterinary medicine, public health, nursing, medicine and education.',
     entrySummary: 'Degree: 5 WASSCE credits including English, in up to 2 sittings; school and department rules apply.',
