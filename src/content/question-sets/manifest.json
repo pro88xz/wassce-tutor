@@ -716,6 +716,21 @@
   "questions": 40
  },
  {
+  "name": "biology_set2_p1",
+  "label": "Biology: set 2 (the science of biology, classification, cell function, cell division and organisation)",
+  "subject_slug": "biology",
+  "version": "4fbb4cb0bfa4",
+  "papers": [
+   "2e3a8637-9044-5280-add0-126e7285f949",
+   "e879bb46-dfae-55be-9c6f-9d07269c9663",
+   "5506d79a-1f16-5c22-b527-a08d92060828",
+   "ef6731b1-43d7-55d1-a1f7-1c211537c360",
+   "954b91cf-ea69-5d74-9b8a-db8d5008fa6d",
+   "b1688a9e-5def-5b72-927b-d5fac33266b8"
+  ],
+  "questions": 42
+ },
+ {
   "name": "maths_mock_p1",
   "label": "Mathematics: timed mock exam, Paper 1",
   "subject_slug": "mathematics",

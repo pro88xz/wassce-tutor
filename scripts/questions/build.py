@@ -340,15 +340,19 @@ SETS += [
 
 SETS += [
     {
-        "module": ROOT / "content/questions/biology/set1_p1.py",
+        "module": ROOT / f"content/questions/biology/set{n}_p1.py",
         "subject_slug": "biology",
-        "name": "biology_set1_p1",
-        "label": "Biology: set 1 (cells, nutrition, respiration, transport, ecology and genetics)",
-        "review": ROOT / "content/questions/biology/set1_p1.review.md",
-        "sort_from": 100,
-        # Factual answers cannot be recomputed by code: each was checked against the syllabus.
+        "name": f"biology_set{n}_p1",
+        "label": label,
+        "review": ROOT / f"content/questions/biology/set{n}_p1.review.md",
+        "sort_from": 80 + 20 * n,
+        # Factual answers cannot be recomputed by code: each was checked against the syllabus and the notes.
         "checked": "facts",
-    },
+    }
+    for n, label in (
+        (1, "Biology: set 1 (cells, nutrition, respiration, transport, ecology and genetics)"),
+        (2, "Biology: set 2 (the science of biology, classification, cell function, cell division and organisation)"),
+    )
 ]
 
 # Timed mock exams: a full Paper 1 drawn from a subject's practice sets, with the
