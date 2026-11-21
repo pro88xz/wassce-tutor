@@ -3,7 +3,8 @@ import { useState } from 'react'
 import { ArrowRight, ChevronDown, ChevronRight } from 'lucide-react'
 import type { GroupProgress, TopicProgress } from '@/lib/progress'
 import type { Palette } from '@/lib/subject-theme'
-import { TopicStatusIcon, topicStateLabel } from '@/components/ds/TopicStatus'
+import { TopicStatusIcon } from '@/components/ds/TopicStatus'
+import { topicStateLabel } from '@/components/ds/topic-state'
 import { ProgressBar } from '@/components/ds/Progress'
 
 /**

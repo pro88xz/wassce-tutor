@@ -1,6 +1,6 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { privateHead } from '@/lib/seo'
-import { useEffect, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useFaculties, useFacultySubjects } from '@/lib/queries'
 import { useSaveOnboarding } from '@/lib/mutations'
 import { useAuth } from '@/lib/auth'
@@ -23,30 +23,25 @@ function Onboarding() {
   const { data: faculties, isLoading } = useFaculties()
   const [facultyId, setFacultyId] = useState<string | null>(null)
   const { data: subjects, isLoading: subjectsLoading } = useFacultySubjects(facultyId)
-  const [selected, setSelected] = useState<Set<string>>(new Set())
+  // The faculty's core and default subjects are selected until the student
+  // changes the selection (picked, kept per faculty).
+  const defaults = useMemo(
+    () => new Set((subjects ?? []).filter((fs) => fs.role === 'core' || fs.is_default).map((fs) => fs.subject_id)),
+    [subjects],
+  )
+  const [picked, setPicked] = useState<{ facultyId: string; ids: Set<string> } | null>(null)
+  const selected = picked && picked.facultyId === facultyId ? picked.ids : defaults
   const save = useSaveOnboarding()
 
-  // When a faculty's subjects load, pre-select core + default-faculty subjects
-  useEffect(() => {
-    if (!subjects) return
-    const initial = new Set<string>()
-    for (const fs of subjects) {
-      if (fs.role === 'core' || fs.is_default) initial.add(fs.subject_id)
-    }
-    setSelected(initial)
-  }, [subjects])
-
   const toggle = (subjectId: string, role: string) => {
-    if (role === 'core') return // locked
-    setSelected((prev) => {
-      const next = new Set(prev)
-      if (next.has(subjectId)) next.delete(subjectId)
-      else {
-        if (next.size >= MAX_SUBJECTS) return prev // cap
-        next.add(subjectId)
-      }
-      return next
-    })
+    if (role === 'core' || !facultyId) return // core subjects are locked
+    const next = new Set(selected)
+    if (next.has(subjectId)) next.delete(subjectId)
+    else {
+      if (next.size >= MAX_SUBJECTS) return // cap
+      next.add(subjectId)
+    }
+    setPicked({ facultyId, ids: next })
   }
 
   const handleSave = async () => {

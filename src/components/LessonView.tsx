@@ -6,7 +6,14 @@
 // Used by lesson pages and the admin preview pane.
 // MarkdownView (sibling) stays simpler for tutor/papers/question previews.
 import { memo, useEffect } from 'react'
+import type { ComponentProps, ReactNode } from 'react'
 import ReactMarkdown from 'react-markdown'
+import type { Components, Options } from 'react-markdown'
+import type { Element, Root as HastRoot, RootContent } from 'hast'
+import type { Nodes as MdastNodes, Root as MdastRoot } from 'mdast'
+// Type-only: adds the directive nodes to mdast's and hName/hProperties to its data.
+import type {} from 'mdast-util-directive'
+import type {} from 'mdast-util-to-hast'
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
@@ -41,10 +48,10 @@ const DIRECTIVES: Record<string, string[]> = {
 }
 
 function directiveTransformer() {
-  return (tree: any) => {
+  return (tree: MdastRoot) => {
     walk(tree)
   }
-  function walk(node: any) {
+  function walk(node: MdastNodes) {
     if (
       node.type === 'containerDirective' ||
       node.type === 'leafDirective' ||
@@ -64,17 +71,16 @@ function directiveTransformer() {
         }
         data.hName = node.name
         data.hProperties = attributes
-      } else if (node.type === 'textDirective' && !node.children?.length) {
+      } else if (node.type === 'textDirective' && !node.children.length) {
         // A colon followed by a word in ordinary text ("a:b"): keep it as written.
-        node.type = 'text'
-        node.value = `:${node.name}`
         delete node.data
+        Object.assign(node, { type: 'text', value: `:${node.name}` })
       } else {
         data.hName = node.type === 'textDirective' ? 'span' : 'div'
         data.hProperties = {}
       }
     }
-    if (node.children) {
+    if ('children' in node) {
       for (const child of node.children) walk(child)
     }
   }
@@ -94,11 +100,11 @@ const ONE_LINE_DISPLAY = /^[ \t]*\$\$([^\n$]+?)\$\$[ \t]*$/gm
  * title already (its <h1>), so that first line is left out instead of
  * showing the title twice.
  */
-export function withoutTitleHeading(md: string): string {
+function withoutTitleHeading(md: string): string {
   return md.replace(/^\s*#[ \t]+[^\n]*(\n+|$)/, '')
 }
 
-export function normalizeMath(md: string): string {
+function normalizeMath(md: string): string {
   return md
     .replace(DISPLAY_MATH, (_m, tex: string) => ['', '$$', tex.trim(), '$$', ''].join('\n'))
     .replace(INLINE_MATH, (_m, tex: string) => '$' + tex.trim() + '$')
@@ -109,14 +115,14 @@ export function normalizeMath(md: string): string {
 // page can link straight to a part of a lesson. scripts/notes/outlines.mjs
 // counts headings the same way.
 function rehypeSectionIds() {
-  return (tree: any) => {
+  return (tree: HastRoot) => {
     let n = 0
-    const walk = (node: any) => {
+    const walk = (node: HastRoot | RootContent) => {
       if (node.type === 'element' && node.tagName === 'h2') {
         n += 1
-        node.properties = { ...(node.properties ?? {}), id: `section-${n}` }
+        node.properties = { ...node.properties, id: `section-${n}` }
       }
-      node.children?.forEach(walk)
+      if ('children' in node) node.children.forEach(walk)
     }
     walk(tree)
   }
@@ -124,67 +130,76 @@ function rehypeSectionIds() {
 
 // A long displayed equation gets a second, stacked form (one step per line)
 // for screens too narrow for it; fitLongMath() picks which one shows.
-const mathBlock = (tex: string) => ({
+const mathBlock = (tex: string): Element => ({
   type: 'element',
   tagName: 'pre',
   properties: {},
   children: [{ type: 'element', tagName: 'code', properties: { className: ['language-math', 'math-display'] }, children: [{ type: 'text', value: tex }] }],
 })
+const box = (className: string, children: Element[]): Element => ({ type: 'element', tagName: 'div', properties: { className: [className] }, children })
+/** A displayed formula (<pre><code class="math-display">) as its wide and stacked forms, or null when it is not one or needs no stacking. */
+function splitMath(el: Element): Element | null {
+  const code = el.tagName === 'pre' ? el.children[0] : undefined
+  if (code?.type !== 'element' || code.tagName !== 'code') return null
+  const cls = code.properties.className
+  if (!Array.isArray(cls) || !cls.includes('math-display')) return null
+  const tex = code.children.map((c) => (c.type === 'text' ? c.value : '')).join('')
+  const narrow = splitForNarrow(tex)
+  return narrow ? box('math-split', [box('math-wide', [mathBlock(tex)]), box('math-narrow', [mathBlock(narrow)])]) : null
+}
 function rehypeNarrowMath() {
-  return (tree: any) => {
-    const walk = (node: any) => {
-      if (!node.children) return
-      node.children = node.children.map((child: any) => {
-        const code = child.type === 'element' && child.tagName === 'pre' ? child.children?.[0] : null
-        const cls = code?.properties?.className
-        if (code?.tagName === 'code' && Array.isArray(cls) && cls.includes('math-display')) {
-          const tex = (code.children ?? []).map((c: any) => c.value ?? '').join('')
-          const narrow = splitForNarrow(tex)
-          if (!narrow) return child
-          return {
-            type: 'element',
-            tagName: 'div',
-            properties: { className: ['math-split'] },
-            children: [
-              { type: 'element', tagName: 'div', properties: { className: ['math-wide'] }, children: [mathBlock(tex)] },
-              { type: 'element', tagName: 'div', properties: { className: ['math-narrow'] }, children: [mathBlock(narrow)] },
-            ],
-          }
-        }
-        walk(child)
-        return child
+  return (tree: HastRoot) => {
+    const walk = (node: HastRoot | Element) => {
+      node.children.forEach((child, i) => {
+        if (child.type !== 'element') return
+        const split = splitMath(child)
+        if (split) node.children[i] = split
+        else walk(child)
       })
     }
     walk(tree)
   }
 }
 
+/** An element's props without react-markdown's `node`, which is not an HTML attribute. */
+function withoutNode<P extends { node?: unknown }>(props: P): Omit<P, 'node'> {
+  const rest = { ...props }
+  delete rest.node
+  return rest
+}
+
+/** Props react-markdown gives our directive elements: their attributes, lowercase, as strings. */
+type DirectiveProps = { children?: ReactNode; type?: string; title?: string; name?: string; label?: string; n?: string }
+
 // Defined once, outside the component: if these were recreated on every
 // render, React would rebuild every callout and diagram each time the page
 // re-rendered (losing scroll state and the stacked-equation choice).
-const REMARK_PLUGINS = [[remarkGfm, { singleTilde: false }], remarkMath, remarkDirective, directiveTransformer]
-const REHYPE_PLUGINS = [rehypeSectionIds, rehypeNarrowMath, rehypeKatex]
-const MD_COMPONENTS = {
-  // The page already has the lesson's title as its one <h1>; a "#" heading
-  // inside a lesson is a section, like "##".
-  h1: ({ node: _node, ...props }: any) => <h2 {...props} />,
-  // Map our custom directive elements to React components.
-  // react-markdown passes attribute props as lowercase HTML-style props.
-  callout: ({ type, title, children }: any) => (
-    <Callout type={type} title={title}>
+const REMARK_PLUGINS: Options['remarkPlugins'] = [[remarkGfm, { singleTilde: false }], remarkMath, remarkDirective, directiveTransformer]
+const REHYPE_PLUGINS: Options['rehypePlugins'] = [rehypeSectionIds, rehypeNarrowMath, rehypeKatex]
+// Our directive elements (see DIRECTIVES), mapped to React components.
+const DIRECTIVE_COMPONENTS: Record<keyof typeof DIRECTIVES, (props: DirectiveProps) => ReactNode> = {
+  // Lesson text can name any type; Callout shows one it does not know as a definition.
+  callout: ({ type, title, children }) => (
+    <Callout type={type as ComponentProps<typeof Callout>['type']} title={title}>
       {children}
     </Callout>
   ),
-  diagram: ({ name }: any) => <Diagram name={name} />,
-  model: ({ title, label, children }: any) => <ModelAnswer title={title} label={label}>{children}</ModelAnswer>,
-  right: ({ children }: any) => <RightAligned>{children}</RightAligned>,
-  reveal: ({ title, children }: any) => <Reveal title={title}>{children}</Reveal>,
-  mark: ({ n, children }: any) => <Marked n={n}>{children}</Marked>,
+  diagram: ({ name }) => <Diagram name={name ?? ''} />,
+  model: ({ title, label, children }) => <ModelAnswer title={title} label={label}>{children}</ModelAnswer>,
+  right: ({ children }) => <RightAligned>{children}</RightAligned>,
+  reveal: ({ title, children }) => <Reveal title={title}>{children}</Reveal>,
+  mark: ({ n, children }) => <Marked n={n}>{children}</Marked>,
+}
+const MD_COMPONENTS: Components = {
+  // The page already has the lesson's title as its one <h1>; a "#" heading
+  // inside a lesson is a section, like "##".
+  h1: (props) => <h2 {...withoutNode(props)} />,
+  ...DIRECTIVE_COMPONENTS,
   // Wide tables scroll sideways on phones; short-cell tables fit the screen.
   table: MdTable,
   // Diagrams sit on a white card, so line drawings stay readable in dark mode.
   // Tapping one opens it full screen (Zoomable), where its labels are readable on a phone.
-  img: ({ node: _node, src, alt }: any) => (
+  img: ({ src, alt }) => (
     <span className="not-prose mx-auto my-5 block w-full max-w-2xl">
       <Zoomable
         label={alt || 'Lesson diagram'}
@@ -200,7 +215,7 @@ const MD_COMPONENTS = {
       </Zoomable>
     </span>
   ),
-} as any
+}
 
 // Memoised: a lesson is thousands of DOM nodes (KaTeX), and re-parsing it
 // costs about a second on a mid-range phone. Without memo, any re-render of
@@ -232,8 +247,8 @@ export const LessonView = memo(function LessonView({ content }: { content: strin
   return (
     <ReactMarkdown
       // GFM: tables (and task lists, autolinks). singleTilde off, so "~5 min" never strikes text through.
-      remarkPlugins={REMARK_PLUGINS as any}
-      rehypePlugins={REHYPE_PLUGINS as any}
+      remarkPlugins={REMARK_PLUGINS}
+      rehypePlugins={REHYPE_PLUGINS}
       components={MD_COMPONENTS}
     >
       {normalizeMath(withoutTitleHeading(content))}

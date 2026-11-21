@@ -5,6 +5,7 @@ import { useProfile } from '@/lib/queries'
 import { supabase } from '@/lib/supabase'
 import { Button } from '@/components/ui/button'
 import { isUnlockedThisSession } from '@/lib/adminGate'
+import { useNow } from '@/lib/use-now'
 
 export const Route = createFileRoute('/admin/downloads')({
   component: AdminDownloads,
@@ -44,6 +45,8 @@ function AdminDownloads() {
   const { data: profile } = useProfile(user?.id ?? null)
   const [rows, setRows] = useState<DownloadRow[]>([])
   const [loading, setLoading] = useState(true)
+  // The time the "last hour" and "last 24 hours" counts are measured from.
+  const now = useNow(60_000)
 
   // Initial load + realtime subscription
   useEffect(() => {
@@ -92,7 +95,6 @@ function AdminDownloads() {
     )
   }
 
-  const now = Date.now()
   const last1h = rows.filter((r) => now - new Date(r.created_at).getTime() < 60 * 60 * 1000).length
   const last24h = rows.filter((r) => now - new Date(r.created_at).getTime() < 24 * 60 * 60 * 1000).length
   const uniqueClients = new Set(rows.filter((r) => r.client_id).map((r) => r.client_id)).size

@@ -1,19 +1,13 @@
-import { createContext, useContext, useEffect, useState } from 'react'
+// The signed-in session for the whole app (src/router.tsx wraps every page in
+// it); read it with useAuth() from '@/lib/auth'.
+import { useEffect, useState } from 'react'
 import type { ReactNode } from 'react'
-import type { Session, User } from '@supabase/supabase-js'
+import type { Session } from '@supabase/supabase-js'
 import { Capacitor } from '@capacitor/core'
 import { supabase } from '@/lib/supabase'
 import { clearUnlocked } from '@/lib/adminGate'
 import { captureCampaign, reportCampaign } from '@/lib/attribution'
-
-type AuthState = {
-  session: Session | null
-  user: User | null
-  loading: boolean
-  signOut: () => Promise<void>
-}
-
-const AuthContext = createContext<AuthState | undefined>(undefined)
+import { AuthContext } from '@/lib/auth'
 
 /** Removes every Supabase session entry this app keeps on the device. */
 function clearStoredSession() {
@@ -94,12 +88,4 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       {children}
     </AuthContext.Provider>
   )
-}
-
-export function useAuth() {
-  const ctx = useContext(AuthContext)
-  if (ctx === undefined) {
-    throw new Error('useAuth must be used within an AuthProvider')
-  }
-  return ctx
 }

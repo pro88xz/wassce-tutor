@@ -63,8 +63,9 @@ export function useStudentSubjects(profileId: string | null) {
         .select('subject:subjects(*)')
         .eq('profile_id', profileId!)
       if (error) throw error
-      // unwrap the joined subject from each row
-      return (data ?? []).map((row: any) => row.subject) as Subject[]
+      // unwrap the joined subject from each row (one per row: subject_id is a
+      // foreign key; without generated database types supabase-js types it as a list)
+      return (data ?? []).map((row) => row.subject as unknown as Subject)
     },
   })
 }

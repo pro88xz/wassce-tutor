@@ -13,7 +13,7 @@ import { subjectPath } from '@/lib/public-content'
 import { PRACTICE_QUESTIONS } from '@/lib/practice-counts'
 import { CourseCard } from '@/components/public/CourseCard'
 import { coverColours } from '@/components/public/cover-colours'
-import { subjectArt } from '@/components/ds/SubjectCover'
+import { subjectArt } from '@/components/ds/subject-art'
 import { Band, SectionHeading } from '@/components/public/Section'
 import { subjectTheme } from '@/lib/subject-theme'
 

@@ -19,4 +19,13 @@ export default defineConfig([
       globals: globals.browser,
     },
   },
+  {
+    // A TanStack Router route file exports `Route` and keeps its components
+    // local, which this rule reports whatever its options; the router plugin
+    // handles hot reload for route files itself.
+    files: ['src/routes/**/*.tsx'],
+    rules: {
+      'react-refresh/only-export-components': 'off',
+    },
+  },
 ])

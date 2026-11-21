@@ -31,7 +31,9 @@ function AdminQuestions() {
   const [paperId, setPaperId] = useState<string>('')
   const { data: papers } = usePapers(subjectId || null)
   const { data: topics } = useTopics(subjectId || null)
-  const { data: paperQuestions } = usePaper(paperId || null)
+  // Until a paper is chosen, the subject's first paper.
+  const activePaperId = paperId || papers?.[0]?.id || ''
+  const { data: paperQuestions } = usePaper(activePaperId || null)
   const createQuestion = useCreateQuestion()
   const deleteQuestion = useDeleteQuestion()
 
@@ -50,11 +52,6 @@ function AdminQuestions() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  useEffect(() => { setPaperId('') }, [subjectId])
-  useEffect(() => {
-    if (papers && papers.length > 0 && !paperId) setPaperId(papers[0].id)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [papers])
 
   if (!user) return <p>Sign in required.</p>
   if (!profile?.is_admin) return <p>Not authorised.</p>
@@ -96,7 +93,7 @@ function AdminQuestions() {
 
   const handleCreate = async () => {
     setError(null)
-    if (!paperId) return setError('Pick a paper first.')
+    if (!activePaperId) return setError('Pick a paper first.')
     if (!stem.trim()) return setError('Question stem is required.')
     if (options.some((o) => !o.content.trim())) return setError('All 4 options must have content.')
     const correctCount = options.filter((o) => o.is_correct).length
@@ -104,7 +101,7 @@ function AdminQuestions() {
 
     try {
       await createQuestion.mutateAsync({
-        paper_id: paperId,
+        paper_id: activePaperId,
         stem,
         explanation,
         topic_id: topicId || null,
@@ -132,14 +129,14 @@ function AdminQuestions() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div>
           <label className="text-sm font-semibold">Subject</label>
-          <select value={subjectId} onChange={(e) => setSubjectId(e.target.value)}
+          <select value={subjectId} onChange={(e) => { setSubjectId(e.target.value); setPaperId('') /* the new subject's first paper */ }}
             className="mt-1 w-full rounded-md border bg-background px-3 py-2 text-sm">
             {subjects.map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}
           </select>
         </div>
         <div>
           <label className="text-sm font-semibold">Paper</label>
-          <select value={paperId} onChange={(e) => setPaperId(e.target.value)}
+          <select value={activePaperId} onChange={(e) => setPaperId(e.target.value)}
             disabled={!papers || papers.length === 0}
             className="mt-1 w-full rounded-md border bg-background px-3 py-2 text-sm">
             {!papers || papers.length === 0
@@ -221,7 +218,7 @@ function AdminQuestions() {
         )}
 
         {error && <p className="text-sm text-red-500">{error}</p>}
-        <Button onClick={handleCreate} disabled={createQuestion.isPending || !paperId}>
+        <Button onClick={handleCreate} disabled={createQuestion.isPending || !activePaperId}>
           {createQuestion.isPending ? 'Saving…' : 'Add question'}
         </Button>
       </div>
@@ -249,7 +246,7 @@ function AdminQuestions() {
                   <button
                     onClick={() => {
                       if (confirm('Delete this question?')) {
-                        deleteQuestion.mutate({ questionId: q.id, paperId })
+                        deleteQuestion.mutate({ questionId: q.id, paperId: activePaperId })
                       }
                     }}
                     className="ml-3 text-xs text-red-500 hover:underline"

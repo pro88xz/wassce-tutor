@@ -3,7 +3,8 @@ import { ChevronRight } from 'lucide-react'
 import type { SubjectProgress } from '@/lib/progress'
 import { subjectTheme } from '@/lib/subject-theme'
 import { SubjectCover } from '@/components/ds/SubjectCover'
-import { ProgressBar, percent } from '@/components/ds/Progress'
+import { ProgressBar } from '@/components/ds/Progress'
+import { percent } from '@/components/ds/percent'
 
 /**
  * A subject with lessons: name, lessons and topics, progress only once there

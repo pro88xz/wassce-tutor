@@ -99,7 +99,7 @@ function breakSums(step: string): string[] {
     else if ((c === '+' || c === '-') && depth === 0) {
       const before = step.slice(start, i).trim()
       // a sign right after the relation ("= -4") is unary, not a break point
-      if (before && !/[=+\-]$/.test(before)) {
+      if (before && !/[=+-]$/.test(before)) {
         pieces.push(step.slice(start, i).trim())
         start = i
       }

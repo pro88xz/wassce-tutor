@@ -39,7 +39,9 @@ function AdminLessons() {
   const [subjectId, setSubjectId] = useState<string>('')
   const [topicId, setTopicId] = useState<string>('')
   const { data: topics } = useTopics(subjectId || null)
-  const { data: topicData } = useTopic(topicId || null)
+  // Until a topic is chosen, the subject's first topic.
+  const activeTopicId = topicId || topics?.[0]?.id || ''
+  const { data: topicData } = useTopic(activeTopicId || null)
   const createLesson = useCreateLesson()
   const deleteLesson = useDeleteLesson()
 
@@ -197,13 +199,6 @@ function AdminLessons() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  // Reset topic when subject changes
-  useEffect(() => { setTopicId('') }, [subjectId])
-  // Auto-pick first topic when topics load
-  useEffect(() => {
-    if (topics && topics.length > 0 && !topicId) setTopicId(topics[0].id)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [topics])
 
   if (!user) return <p>Sign in required.</p>
   if (!profile?.is_admin) return <p>Not authorised.</p>
@@ -218,13 +213,13 @@ function AdminLessons() {
 
   const handleCreate = async () => {
     setError(null)
-    if (!topicId || !title.trim() || !content.trim()) {
+    if (!activeTopicId || !title.trim() || !content.trim()) {
       setError('Topic, title and content are required.')
       return
     }
     try {
       await createLesson.mutateAsync({
-        topic_id: topicId,
+        topic_id: activeTopicId,
         slug: (slug || title).trim(),
         title,
         content,
@@ -254,7 +249,10 @@ function AdminLessons() {
           <label className="text-sm font-semibold">Subject</label>
           <select
             value={subjectId}
-            onChange={(e) => setSubjectId(e.target.value)}
+            onChange={(e) => {
+              setSubjectId(e.target.value)
+              setTopicId('') // the new subject's first topic
+            }}
             className="mt-1 w-full rounded-md border bg-background px-3 py-2 text-sm"
           >
             {subjects.map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}
@@ -263,7 +261,7 @@ function AdminLessons() {
         <div>
           <label className="text-sm font-semibold">Topic</label>
           <select
-            value={topicId}
+            value={activeTopicId}
             onChange={(e) => setTopicId(e.target.value)}
             className="mt-1 w-full rounded-md border bg-background px-3 py-2 text-sm"
             disabled={!topics || topics.length === 0}
@@ -438,7 +436,7 @@ function AdminLessons() {
         </div>
 
         {error && <p className="text-sm text-red-500">{error}</p>}
-        <Button onClick={handleCreate} disabled={createLesson.isPending || !topicId}>
+        <Button onClick={handleCreate} disabled={createLesson.isPending || !activeTopicId}>
           {createLesson.isPending ? 'Saving…' : 'Create lesson'}
         </Button>
       </div>
