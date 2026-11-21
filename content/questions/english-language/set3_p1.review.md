@@ -113,11 +113,53 @@ The clause answers *why did we stay at home?* Clauses beginning with *because*, 
 
 ---
 
+### 6. `eng-clause-06`
+
+What is the grammatical name of the clause in bold?
+
+**If you work hard**, you will pass the examination.
+
+- **A.** noun clause
+- **B.** adjectival clause
+- **C.** adverbial clause of time
+- **D.** adverbial clause of condition  ✅
+
+*If* (also *unless*, *provided that*) introduces an adverbial clause of condition.
+
+**Why the other options are wrong**
+
+- noun clause: A noun clause acts as a subject or object; this one gives a condition.
+- adjectival clause: An adjectival clause describes a noun; this one modifies the main verb.
+- adverbial clause of time: A clause of time answers *when?*; *if* introduces a condition.
+
+---
+
+### 7. `eng-clause-07`
+
+What is the grammatical name of the group of words in bold?
+
+The man **in the blue shirt** is our new Mathematics teacher.
+
+- **A.** adjectival phrase  ✅
+- **B.** adverbial phrase
+- **C.** noun phrase
+- **D.** adjectival clause
+
+*In the blue shirt* is a prepositional phrase working as an adjective: it tells us which man.
+
+**Why the other options are wrong**
+
+- adverbial phrase: An adverbial phrase tells how, when or where an action happens; this one describes *the man*.
+- noun phrase: It does not name the subject; it describes it.
+- adjectival clause: A clause has a finite verb; *in the blue shirt* has none.
+
+---
+
 ## Sentence Types
 
 _Syllabus: Structure: simple, compound, complex and compound-complex sentences; sentence functions_
 
-### 6. `eng-stype-01`
+### 8. `eng-stype-01`
 
 What type of sentence is this?
 
@@ -138,7 +180,7 @@ Two independent clauses (*Musa ran to the shop* / *it was already closed*) joine
 
 ---
 
-### 7. `eng-stype-02`
+### 9. `eng-stype-02`
 
 What type of sentence is this?
 
@@ -159,7 +201,7 @@ One main clause (*Hawa finished her homework*) plus one dependent clause (*Altho
 
 ---
 
-### 8. `eng-stype-03`
+### 10. `eng-stype-03`
 
 What type of sentence is this?
 
@@ -180,7 +222,7 @@ One subject (*the pupils in the front row*) and one finite verb (*clapped*): a s
 
 ---
 
-### 9. `eng-stype-04`
+### 11. `eng-stype-04`
 
 What is the function of this sentence?
 
@@ -201,7 +243,7 @@ A sentence that gives an order, request or instruction is imperative. The subjec
 
 ---
 
-### 10. `eng-stype-05`
+### 12. `eng-stype-05`
 
 What type of sentence is this?
 
@@ -222,11 +264,53 @@ Two main clauses (*we went outside* / *the children played football*) plus a dep
 
 ---
 
+### 13. `eng-stype-06`
+
+What type of sentence is this?
+
+*Did you see the football match on Saturday?*
+
+- **A.** declarative
+- **B.** interrogative  ✅
+- **C.** imperative
+- **D.** exclamatory
+
+An interrogative sentence asks a question and ends with a question mark.
+
+**Why the other options are wrong**
+
+- declarative: A declarative sentence makes a statement.
+- imperative: An imperative gives a command or request.
+- exclamatory: An exclamatory sentence expresses strong feeling.
+
+---
+
+### 14. `eng-stype-07`
+
+What type of sentence is this?
+
+*What a beautiful voice she has!*
+
+- **A.** interrogative
+- **B.** imperative
+- **C.** exclamatory  ✅
+- **D.** declarative
+
+*What a…!* and *How…!* begin many exclamatory sentences.
+
+**Why the other options are wrong**
+
+- interrogative: It begins with *what*, but it does not ask a question.
+- imperative: It does not give a command.
+- declarative: It expresses strong feeling, shown by *What a…!* and the exclamation mark.
+
+---
+
 ## Punctuation
 
 _Syllabus: Mechanics: apostrophes, colons, semicolons, commas and quotation marks_
 
-### 11. `eng-punct-01`
+### 15. `eng-punct-01`
 
 Which sentence is correctly punctuated?
 
@@ -248,7 +332,7 @@ Which sentence is correctly punctuated?
 
 ---
 
-### 12. `eng-punct-02`
+### 16. `eng-punct-02`
 
 Which sentence is correctly punctuated?
 
@@ -270,7 +354,7 @@ A colon introduces a list after a complete clause, and commas separate the items
 
 ---
 
-### 13. `eng-punct-03`
+### 17. `eng-punct-03`
 
 Which sentence is correctly punctuated?
 
@@ -291,7 +375,7 @@ Direct speech goes inside quotation marks, and when the reporting words follow, 
 
 ---
 
-### 14. `eng-punct-04`
+### 18. `eng-punct-04`
 
 Which sentence is correctly punctuated?
 
@@ -313,7 +397,7 @@ Two closely related complete sentences can be joined with a semicolon: *It was g
 
 ---
 
-### 15. `eng-punct-05`
+### 19. `eng-punct-05`
 
 Which sentence is correctly punctuated?
 
@@ -335,11 +419,55 @@ A reported (indirect) question is not itself a question: it takes statement word
 
 ---
 
+### 20. `eng-punct-06`
+
+Which sentence is correctly punctuated?
+
+- **A.** Its raining, so the match has been cancelled.
+- **B.** It's raining so, the match has been cancelled.
+- **C.** Its' raining, so the match has been cancelled.
+- **D.** It's raining, so the match has been cancelled.  ✅
+
+*It's* = *it is* or *it has*; *its* = belonging to it.
+
+**Why the other options are wrong**
+
+- Its raining, so the match has been cancelled.  
+  *It is* is shortened to *it's*, with an apostrophe.
+- It's raining so, the match has been cancelled.  
+  The comma belongs before *so*, not after it.
+- Its' raining, so the match has been cancelled.  
+  *Its'* is never correct.
+
+---
+
+### 21. `eng-punct-07`
+
+Which sentence is correctly punctuated?
+
+- **A.** "Where are you going?" asked Fatu.  ✅
+- **B.** "Where are you going," asked Fatu.
+- **C.** "Where are you going?" Asked Fatu.
+- **D.** "Where are you going"? asked Fatu.
+
+The question mark goes inside the quotation marks, and the reporting words continue with a small letter.
+
+**Why the other options are wrong**
+
+- "Where are you going," asked Fatu.  
+  A question needs a question mark, not a comma.
+- "Where are you going?" Asked Fatu.  
+  *Asked* continues the same sentence, so it takes a small letter.
+- "Where are you going"? asked Fatu.  
+  The question mark belongs inside the quotation marks.
+
+---
+
 ## Homonyms and Homophones
 
 _Syllabus: Lexis: words that sound or look alike_
 
-### 16. `eng-homo-01`
+### 22. `eng-homo-01`
 
 Choose the option that best completes the sentence.
 
@@ -360,7 +488,7 @@ The bride walked slowly down the ____ of the church.
 
 ---
 
-### 17. `eng-homo-02`
+### 23. `eng-homo-02`
 
 Choose the option that best completes the sentence.
 
@@ -381,7 +509,7 @@ We could not ____ the teacher because of the noise from the road.
 
 ---
 
-### 18. `eng-homo-03`
+### 24. `eng-homo-03`
 
 Choose the option that best completes the sentence.
 
@@ -402,7 +530,7 @@ Mariama wants to buy a new ____ of sandals for the wedding.
 
 ---
 
-### 19. `eng-homo-04`
+### 25. `eng-homo-04`
 
 In which sentence does the word *bank* mean the side of a river?
 
@@ -424,7 +552,7 @@ In which sentence does the word *bank* mean the side of a river?
 
 ---
 
-### 20. `eng-homo-05`
+### 26. `eng-homo-05`
 
 Choose the option that best completes the sentence.
 
@@ -445,11 +573,53 @@ The soldiers marched ____ the town at dawn.
 
 ---
 
+### 27. `eng-homo-06`
+
+Choose the option that best completes the sentence.
+
+The strong wind ____ the papers off the teacher's table.
+
+- **A.** blue
+- **B.** blew  ✅
+- **C.** blewed
+- **D.** blow
+
+*Blew* (past of *blow*) and *blue* (a colour) are homophones: same sound, different spelling and meaning.
+
+**Why the other options are wrong**
+
+- blue: *Blue* is a colour; it sounds like *blew* but is a different word.
+- blewed: *Blewed* is not a word; the past of *blow* is *blew*.
+- blow: The sentence is in the past, so the verb must be *blew*.
+
+---
+
+### 28. `eng-homo-07`
+
+Choose the option that best completes the sentence.
+
+There are ____ books missing from the library shelf.
+
+- **A.** too
+- **B.** to
+- **C.** two  ✅
+- **D.** tow
+
+*Two* (the number), *too* (also, excessively) and *to* (preposition) sound the same but mean different things.
+
+**Why the other options are wrong**
+
+- too: *Too* means *also* or *more than enough*.
+- to: *To* is a preposition or part of an infinitive.
+- tow: *Tow* means to pull a vehicle, and it is pronounced differently.
+
+---
+
 ## Figures of Speech
 
 _Syllabus: Lexis: simile, metaphor, personification, hyperbole, alliteration_
 
-### 21. `eng-fig-01`
+### 29. `eng-fig-01`
 
 Which figure of speech is used in this sentence?
 
@@ -470,7 +640,7 @@ A simile compares two different things using *like* or *as*: *as quiet as a grav
 
 ---
 
-### 22. `eng-fig-02`
+### 30. `eng-fig-02`
 
 Which figure of speech is used in this sentence?
 
@@ -491,7 +661,7 @@ Personification gives human qualities or actions to things that are not human: t
 
 ---
 
-### 23. `eng-fig-03`
+### 31. `eng-fig-03`
 
 Which figure of speech is used in this sentence?
 
@@ -512,7 +682,7 @@ Hyperbole is deliberate exaggeration for effect: nobody has really said it *a mi
 
 ---
 
-### 24. `eng-fig-04`
+### 32. `eng-fig-04`
 
 Which figure of speech is used in this sentence?
 
@@ -533,7 +703,7 @@ A metaphor says one thing **is** another to show a shared quality, without *like
 
 ---
 
-### 25. `eng-fig-05`
+### 33. `eng-fig-05`
 
 Which figure of speech is used in this sentence?
 
@@ -554,11 +724,53 @@ Alliteration repeats the same first consonant sound in words close together: *Fa
 
 ---
 
+### 34. `eng-fig-06`
+
+Which figure of speech is used in this sentence?
+
+*It was an open secret that the shop would close at the end of the month.*
+
+- **A.** simile
+- **B.** metaphor
+- **C.** hyperbole
+- **D.** oxymoron  ✅
+
+An oxymoron puts two opposite ideas together: a secret cannot normally be *open*.
+
+**Why the other options are wrong**
+
+- simile: There is no comparison using *like* or *as*.
+- metaphor: Nothing is said to *be* something else.
+- hyperbole: There is no exaggeration.
+
+---
+
+### 35. `eng-fig-07`
+
+Which figure of speech is used in this sentence?
+
+*The old wooden door creaked as it opened.*
+
+- **A.** onomatopoeia  ✅
+- **B.** alliteration
+- **C.** simile
+- **D.** oxymoron
+
+Onomatopoeia uses a word that imitates the sound it describes: *creak*, *buzz*, *bang*, *hiss*.
+
+**Why the other options are wrong**
+
+- alliteration: The words do not repeat the same opening consonant sound.
+- simile: There is no comparison with *like* or *as*.
+- oxymoron: There are no contradictory words placed together.
+
+---
+
 ## Word Formation
 
 _Syllabus: Lexis: prefixes, suffixes and derived words_
 
-### 26. `eng-form-01`
+### 36. `eng-form-01`
 
 Choose the option that best completes the sentence.
 
@@ -579,7 +791,7 @@ The negative prefix *in-* changes to *im-* before *p*, *b* and *m*: *impossible*
 
 ---
 
-### 27. `eng-form-02`
+### 37. `eng-form-02`
 
 Choose the option that best completes the sentence.
 
@@ -600,7 +812,7 @@ The noun formed from the verb *decide* is *decision* (like *divide* → *divisio
 
 ---
 
-### 28. `eng-form-03`
+### 38. `eng-form-03`
 
 Choose the option that best completes the sentence.
 
@@ -621,7 +833,7 @@ The suffix *-ness* turns many adjectives into nouns: *fair* → *fairness*, *kin
 
 ---
 
-### 29. `eng-form-04`
+### 39. `eng-form-04`
 
 Choose the option that best completes the sentence.
 
@@ -642,7 +854,7 @@ The prefix *re-* means *again*: *rewrite*, *redo*, *reconsider*.
 
 ---
 
-### 30. `eng-form-05`
+### 40. `eng-form-05`
 
 Choose the option that best completes the sentence.
 
@@ -663,11 +875,53 @@ The suffix *-ous* forms adjectives from some nouns: *danger* → *dangerous*, *f
 
 ---
 
+### 41. `eng-form-06`
+
+Choose the option that best completes the sentence.
+
+The pupils showed great ____ for the visiting athlete. (ADMIRE)
+
+- **A.** admirement
+- **B.** admiration  ✅
+- **C.** admiring
+- **D.** admire
+
+Verb *admire* → noun *admiration*, like *inform* → *information*.
+
+**Why the other options are wrong**
+
+- admirement: There is no such word.
+- admiring: *Admiring* is a verb form or adjective; the sentence needs a noun after *great*.
+- admire: *Admire* is the verb; *great* needs a noun.
+
+---
+
+### 42. `eng-form-07`
+
+Choose the option that best completes the sentence.
+
+Selling drugs without a licence is ____. (LEGAL)
+
+- **A.** unlegal
+- **B.** inlegal
+- **C.** illegal  ✅
+- **D.** dislegal
+
+*In-* changes to *il-* before *l* (*illegal*, *illiterate*), *im-* before *m* or *p* (*impossible*) and *ir-* before *r* (*irregular*).
+
+**Why the other options are wrong**
+
+- unlegal: *Legal* takes the prefix *il-*, not *un-*.
+- inlegal: *In-* becomes *il-* before *l*.
+- dislegal: *Dis-* is not used with *legal*.
+
+---
+
 ## Vocabulary in Context
 
 _Syllabus: Lexis: meaning of a word from its context_
 
-### 31. `eng-ctx-01`
+### 43. `eng-ctx-01`
 
 Choose the option nearest in meaning to the word in bold as it is used in the sentence.
 
@@ -688,7 +942,7 @@ The clue is *food had to be carried in on foot*: with no bridge, the village was
 
 ---
 
-### 32. `eng-ctx-02`
+### 44. `eng-ctx-02`
 
 Choose the option nearest in meaning to the word in bold as it is used in the sentence.
 
@@ -709,7 +963,7 @@ The clue is *must*: a mandatory rule is one that has to be obeyed, that is, comp
 
 ---
 
-### 33. `eng-ctx-03`
+### 45. `eng-ctx-03`
 
 Choose the option nearest in meaning to the word in bold as it is used in the sentence.
 
@@ -730,7 +984,7 @@ The clues are *weeks without rain* and *cracked in the sun*: *parched* means ver
 
 ---
 
-### 34. `eng-ctx-04`
+### 46. `eng-ctx-04`
 
 Choose the option nearest in meaning to the word in bold as it is used in the sentence.
 
@@ -751,7 +1005,7 @@ The clue is that the police *could not identify the thief*: the description was 
 
 ---
 
-### 35. `eng-ctx-05`
+### 47. `eng-ctx-05`
 
 Choose the option nearest in meaning to the word in bold as it is used in the sentence.
 
@@ -769,5 +1023,47 @@ Despite his **meagre** salary, the teacher bought books for his poorest pupils.
 - generous: *Despite* signals a contrast: a generous salary would not need *despite*.
 - regular: *Meagre* is about how much, not how often.
 - late: *Meagre* is about amount, not timing.
+
+---
+
+### 48. `eng-ctx-06`
+
+Choose the option nearest in meaning to the word in bold as it is used in the sentence.
+
+The landlord **evicted** the family when they could not pay the rent.
+
+- **A.** welcomed into the house
+- **B.** visited at the house
+- **C.** fined for being late
+- **D.** forced out of the house  ✅
+
+To *evict* is to force someone out of a property, usually by legal means.
+
+**Why the other options are wrong**
+
+- welcomed into the house: This is the opposite of the meaning.
+- visited at the house: Visiting does not mean removing someone.
+- fined for being late: A fine is a penalty of money, not removal from the house.
+
+---
+
+### 49. `eng-ctx-07`
+
+Choose the option nearest in meaning to the word in bold as it is used in the sentence.
+
+The doctor gave a **candid** account of the problems facing the hospital.
+
+- **A.** honest and open  ✅
+- **B.** long and boring
+- **C.** secret
+- **D.** angry
+
+A *candid* account says the truth plainly, even when it is uncomfortable.
+
+**Why the other options are wrong**
+
+- long and boring: *Candid* is about honesty, not length.
+- secret: *Candid* means the opposite of hiding the truth.
+- angry: *Candid* does not describe anger.
 
 ---

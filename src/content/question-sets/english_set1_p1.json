@@ -8,7 +8,7 @@
    "topic": "Nouns",
    "title": "Nouns: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on nouns, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on nouns, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 100,
    "questions": [
     {
@@ -200,6 +200,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "9539c28b-f9a0-5b1d-8e11-608a1d44a978",
+     "key": "eng-nouns-06",
+     "stem": "Choose the option that best completes the sentence.\n\nMama bought two new ____ for cutting vegetables.",
+     "image_url": null,
+     "explanation": "*Knife* → *knives*, like *wife* → *wives* and *leaf* → *leaves*.\n\n**Why the other options are wrong**\n\n- knifes: Nouns ending in *-fe* usually change to *-ves* in the plural; *knifes* is not the plural noun.\n- knife's: The apostrophe shows possession, not a plural.\n- knive: There is no such word; the plural adds *-s* after changing *f* to *v*: *knives*.",
+     "position": 6,
+     "options": [
+      {
+       "id": "4b2ad81b-6dab-523b-8aec-afbe4c026542",
+       "label": "A",
+       "content": "knifes",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3f8667ec-b560-59ea-a463-ce43bc357b8b",
+       "label": "B",
+       "content": "knife's",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cafb8b44-c736-5f12-bb0a-fd6add0eccbb",
+       "label": "C",
+       "content": "knives",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "49477d55-5a53-5424-bca7-18f5ad73943a",
+       "label": "D",
+       "content": "knive",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e3117dd8-5421-544d-b4a1-607dfc3e4e9a",
+     "key": "eng-nouns-07",
+     "stem": "Choose the option that best completes the sentence.\n\nThe market women sold baskets of ripe ____.",
+     "image_url": null,
+     "explanation": "Some nouns ending in *-o* add *-es*: *tomatoes*, *potatoes*, *heroes*, *echoes*. Others add only *-s*: *radios*, *photos*, *pianos*.\n\n**Why the other options are wrong**\n\n- tomatos: *Tomato* takes *-es* in the plural, like *potato* → *potatoes*.\n- tomato's: The apostrophe shows possession, not a plural.\n- tomatoe: There is no such word; the singular is *tomato* and the plural *tomatoes*.",
+     "position": 7,
+     "options": [
+      {
+       "id": "baf054a2-2206-5df1-99f3-7400d1ba2a70",
+       "label": "A",
+       "content": "tomatos",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a493d410-2bc2-5e97-beba-a33e428823a5",
+       "label": "B",
+       "content": "tomato's",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "699d4ee1-7922-529e-acdd-bafcf8ddac79",
+       "label": "C",
+       "content": "tomatoe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bd6087de-d317-5c20-9737-18ecef689037",
+       "label": "D",
+       "content": "tomatoes",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -208,7 +284,7 @@
    "topic": "Pronouns",
    "title": "Pronouns: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on pronouns, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on pronouns, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 101,
    "questions": [
     {
@@ -400,6 +476,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "9a1fefef-f50f-55a7-a4b6-96f1cc393975",
+     "key": "eng-pron-06",
+     "stem": "Choose the option that best completes the sentence.\n\nThe man ____ we met at the market yesterday is my uncle.",
+     "image_url": null,
+     "explanation": "*Whom* is the object of *met*: *we met him* → *the man whom we met*.\n\n**Why the other options are wrong**\n\n- whose: *Whose* shows possession, as in *the man whose shop we visited*.\n- which: *Which* is used for things and animals, not people.\n- what: *What* cannot follow a noun to begin a relative clause.",
+     "position": 6,
+     "options": [
+      {
+       "id": "90055a0c-67f5-5c34-8e26-d1b2bc385fc2",
+       "label": "A",
+       "content": "whom",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "72faee81-fcae-5ce1-874d-00ec7c4942fc",
+       "label": "B",
+       "content": "whose",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "65db1a16-bfb8-5c21-85fa-381717d9b65b",
+       "label": "C",
+       "content": "which",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f003f716-f476-5e70-97df-85b271112d1b",
+       "label": "D",
+       "content": "what",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e71e4db0-725c-5257-8140-bee9100c53d3",
+     "key": "eng-pron-07",
+     "stem": "Choose the option that best completes the sentence.\n\nThe two friends looked at ____ and burst out laughing.",
+     "image_url": null,
+     "explanation": "*Each other* shows a two-way action between two people: A looked at B and B looked at A.\n\n**Why the other options are wrong**\n\n- themselves: *Themselves* would mean that each friend looked at himself or herself.\n- theirselves: *Theirselves* is not standard English.\n- ourselves: *Ourselves* refers to *we*, not to *the two friends*.",
+     "position": 7,
+     "options": [
+      {
+       "id": "8a4615d5-8b76-53cc-86e9-42e811b700fb",
+       "label": "A",
+       "content": "themselves",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "86ff31f6-a4be-582d-bb5c-45e6434521af",
+       "label": "B",
+       "content": "each other",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0de400da-1669-5713-bb10-745fc4bb7f96",
+       "label": "C",
+       "content": "theirselves",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e207a2dc-ce2f-5fee-8ed6-723d0076b8fb",
+       "label": "D",
+       "content": "ourselves",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -408,7 +560,7 @@
    "topic": "Verbs and Verb Forms",
    "title": "Verbs and Verb Forms: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on verbs and verb forms, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on verbs and verb forms, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 102,
    "questions": [
     {
@@ -600,6 +752,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "a3d9921e-e16e-5167-a105-6905f9ceb311",
+     "key": "eng-verbs-06",
+     "stem": "Choose the option that best completes the sentence.\n\nThe church choir ____ beautifully at the thanksgiving service last Sunday.",
+     "image_url": null,
+     "explanation": "*Sing, sang, sung*: the simple past is *sang*.\n\n**Why the other options are wrong**\n\n- sung: *Sung* is the past participle; it needs *has*, *had* or *was*: *had sung*.\n- singed: *Singed* is the past of *singe*, meaning to burn slightly.\n- sing: *Last Sunday* needs the simple past, not the present.",
+     "position": 6,
+     "options": [
+      {
+       "id": "663416e9-9f1d-5839-9bf2-019d3bc6f581",
+       "label": "A",
+       "content": "sung",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b79e438a-2fe0-57a5-8561-cb0b1287bba1",
+       "label": "B",
+       "content": "singed",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f190ab0c-7916-5ea8-a099-7f30d9f1ad1c",
+       "label": "C",
+       "content": "sang",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "66298ee6-5282-550e-8eb3-cb936720e6e6",
+       "label": "D",
+       "content": "sing",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0711f2ca-5b3e-5072-9f0f-81d3353bfae6",
+     "key": "eng-verbs-07",
+     "stem": "Choose the option that best completes the sentence.\n\nMy teacher suggested that I ____ more past questions before the examination.",
+     "image_url": null,
+     "explanation": "After *suggest that*, use the base form (*that I practise*) or *should* (*that I should practise*). British spelling: *practise* (verb), *practice* (noun).\n\n**Why the other options are wrong**\n\n- to practise: *Suggest that…* is followed by a clause, not an infinitive.\n- practising: *-ing* cannot follow *that I* here; it needs a verb form such as *practise* or *should practise*.\n- practice: In British English *practice* is the noun; the verb is spelt *practise*.",
+     "position": 7,
+     "options": [
+      {
+       "id": "841a8854-a951-511f-98ae-1006d1d9c7b5",
+       "label": "A",
+       "content": "to practise",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dced84bb-26a6-500d-bd99-30ec05a405f4",
+       "label": "B",
+       "content": "practising",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "09afcfe8-4112-5922-b78d-d74188b2b0c6",
+       "label": "C",
+       "content": "practice",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8c3479e5-ea17-582d-97f1-3718a9293d42",
+       "label": "D",
+       "content": "practise",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -608,7 +836,7 @@
    "topic": "Tenses",
    "title": "Tenses: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on tenses, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on tenses, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 103,
    "questions": [
     {
@@ -800,6 +1028,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "da56e707-0bfb-5f4f-a768-49da4be0825f",
+     "key": "eng-tense-06",
+     "stem": "Choose the option that best completes the sentence.\n\nI ____ my homework when the light suddenly went off.",
+     "image_url": null,
+     "explanation": "The past continuous (*was doing*) shows an action in progress; the simple past (*went off*) shows the shorter event that interrupted it.\n\n**Why the other options are wrong**\n\n- did: *Did* suggests the homework was completed, not interrupted.\n- have done: The present perfect does not fit a story in the past.\n- am doing: The present continuous does not fit *went off*, which is past.",
+     "position": 6,
+     "options": [
+      {
+       "id": "e3588b06-6d1f-50d0-bbad-90ddf0a790b1",
+       "label": "A",
+       "content": "was doing",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "da1979cd-38c3-54f7-9a1c-52bd0a7c542d",
+       "label": "B",
+       "content": "did",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a00fa8bc-a2c2-5136-9512-bdf9fd00fe3d",
+       "label": "C",
+       "content": "have done",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "68ca9db3-6836-53fc-8429-ca18991f0366",
+       "label": "D",
+       "content": "am doing",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "63e52548-e574-5088-b2a3-db67ba304a15",
+     "key": "eng-tense-07",
+     "stem": "Choose the option that best completes the sentence.\n\nBy the end of this year, my father ____ at the bank for twenty years.",
+     "image_url": null,
+     "explanation": "*By* + a future time + a period of time → the future perfect: *will have worked*.\n\n**Why the other options are wrong**\n\n- will work: *Will work* does not show the twenty years completed by a point in the future.\n- has worked: *Has worked* looks from now, not from the end of the year.\n- worked: *Worked* is past, but the time is in the future.",
+     "position": 7,
+     "options": [
+      {
+       "id": "3e2ce970-618c-53ad-93af-767057ea8972",
+       "label": "A",
+       "content": "will work",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0329c821-cb8d-59e4-b57d-2c332fb316dc",
+       "label": "B",
+       "content": "will have worked",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "db219acf-1681-5009-9fe4-80a7fd1cf1ae",
+       "label": "C",
+       "content": "has worked",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "84dc9046-fffd-5a0f-8dca-708562679fef",
+       "label": "D",
+       "content": "worked",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -808,7 +1112,7 @@
    "topic": "Active and Passive Voice",
    "title": "Active and Passive Voice: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on active and passive voice, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on active and passive voice, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 104,
    "questions": [
     {
@@ -1000,6 +1304,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "a586b0df-940a-5f56-9c43-f907bb1f6146",
+     "key": "eng-voice-06",
+     "stem": "Choose the option that correctly changes this sentence into the passive voice.\n\n*The farmers are harvesting the rice.*",
+     "image_url": null,
+     "explanation": "Present continuous active *are harvesting* → present continuous passive *is being harvested*. The object (*the rice*) becomes the subject.\n\n**Why the other options are wrong**\n\n- The rice was harvested by the farmers.  \n  *Was harvested* changes the tense: the original is in the present continuous.\n- The rice is harvested by the farmers.  \n  This loses the continuous meaning of *are harvesting*.\n- The farmers are being harvested by the rice.  \n  The subject and object have been swapped wrongly.",
+     "position": 6,
+     "options": [
+      {
+       "id": "4d21698d-0553-5019-b179-a8df9cf28579",
+       "label": "A",
+       "content": "The rice was harvested by the farmers.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a31ba615-e3c1-552a-ac3d-6ac58738541a",
+       "label": "B",
+       "content": "The rice is harvested by the farmers.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f4bca6ae-aefc-50bc-aa43-b65d574aa3f6",
+       "label": "C",
+       "content": "The rice is being harvested by the farmers.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7b7f2ddf-375e-5c89-baeb-2dcfc65bf0ae",
+       "label": "D",
+       "content": "The farmers are being harvested by the rice.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "794d6944-5a49-5186-aa6d-1908be6b88a3",
+     "key": "eng-voice-07",
+     "stem": "Choose the option that best completes the sentence.\n\nThe road to Kabala ____ at last.",
+     "image_url": null,
+     "explanation": "Present perfect passive: *has/have been* + past participle. The road did not do the repairing; it received the action.\n\n**Why the other options are wrong**\n\n- has repaired: This is active: it says the road repaired something.\n- has been repair: After *been*, the passive needs the past participle *repaired*.\n- have been repaired: *The road* is singular, so it takes *has*.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b23625ca-72b5-5888-a812-144e27f7dcd4",
+       "label": "A",
+       "content": "has repaired",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f77fa523-0805-53e2-84b2-c63d1ec3b4d8",
+       "label": "B",
+       "content": "has been repair",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "00fff6f8-0607-5caf-8c99-d56709ed1887",
+       "label": "C",
+       "content": "have been repaired",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "30576bcc-eb44-5904-8286-29e3d0823e77",
+       "label": "D",
+       "content": "has been repaired",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -1008,7 +1388,7 @@
    "topic": "Non-finite Verb Forms",
    "title": "Non-finite Verb Forms: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on non-finite verb forms, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on non-finite verb forms, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 105,
    "questions": [
     {
@@ -1200,6 +1580,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "7db5a8af-a3ef-5d6d-8b21-d01117f9729f",
+     "key": "eng-nonfin-06",
+     "stem": "Choose the option that best completes the sentence.\n\nI remember ____ the door this morning, but now it is open.",
+     "image_url": null,
+     "explanation": "*Remember doing*: a memory of a past action. *Remember to do*: not forgetting a future action (*Remember to lock the door tonight*).\n\n**Why the other options are wrong**\n\n- to lock: *Remember to do* means not forgetting to do something in the future; here the action is already past.\n- lock: *Remember* is not followed by the bare infinitive.\n- locked: *Remember* is not followed by a past form.",
+     "position": 6,
+     "options": [
+      {
+       "id": "b8ba8d02-2c5d-5b6c-a3f2-2beb4aa979f6",
+       "label": "A",
+       "content": "locking",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "51bcb0ce-06a4-5b0c-a527-1a3d66383d0d",
+       "label": "B",
+       "content": "to lock",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d2bcbda7-1796-5f9d-8fd2-6d38c27b7d04",
+       "label": "C",
+       "content": "lock",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cb97c43e-6a5e-56fd-8176-6fa333dfaae2",
+       "label": "D",
+       "content": "locked",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fae0db35-87d9-516f-9c6b-724e9f35068f",
+     "key": "eng-nonfin-07",
+     "stem": "Choose the option that best completes the sentence.\n\nAfter three years in the boarding house, she is used to ____ up early.",
+     "image_url": null,
+     "explanation": "*Be used to* means *be accustomed to*, and its *to* is a preposition, so it takes the *-ing* form: *used to waking*.\n\n**Why the other options are wrong**\n\n- wake: *Used to + base form* (*she used to wake*) describes a past habit; *be used to* is followed by *-ing*.\n- woke: A past form cannot follow *to* here.\n- woken: A past participle cannot follow *to* here.",
+     "position": 7,
+     "options": [
+      {
+       "id": "e6b2721d-95b8-5b08-b01c-25727e70b624",
+       "label": "A",
+       "content": "wake",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "22605f72-de5c-5a61-bb87-cb1a88b319e6",
+       "label": "B",
+       "content": "waking",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "27f492da-b916-57d3-95eb-84563456034d",
+       "label": "C",
+       "content": "woke",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4d0ea837-732b-56d5-a1a8-bf1c60e3f1ac",
+       "label": "D",
+       "content": "woken",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -1208,7 +1664,7 @@
    "topic": "Adjectives",
    "title": "Adjectives: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on adjectives, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on adjectives, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 106,
    "questions": [
     {
@@ -1400,6 +1856,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "4679aa75-5c5a-54c9-a44e-ba7535823a53",
+     "key": "eng-adj-06",
+     "stem": "Choose the option that best completes the sentence.\n\nThis is the ____ film I have ever watched.",
+     "image_url": null,
+     "explanation": "Superlative of long adjectives: *the most* + adjective. *-ing* adjectives describe the cause of a feeling; *-ed* adjectives describe the feeling.\n\n**Why the other options are wrong**\n\n- more interesting: *More* compares two things; *ever* and *the* call for the superlative.\n- interestingest: Long adjectives form the superlative with *most*, not *-est*.\n- most interested: *Interested* describes how a person feels; a film is *interesting*.",
+     "position": 6,
+     "options": [
+      {
+       "id": "afe4eb0c-6d9d-5bdb-925d-b27159ac61e6",
+       "label": "A",
+       "content": "more interesting",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5cf47f4a-e646-5be4-a7f8-1ede04a1583b",
+       "label": "B",
+       "content": "interestingest",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "72711e01-cfad-5c28-bd1a-b24cd942fb68",
+       "label": "C",
+       "content": "most interesting",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4a133119-7135-5186-8160-4aac57bc2fa0",
+       "label": "D",
+       "content": "most interested",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "836e1f7a-4c8a-5f49-9918-a78393659bbf",
+     "key": "eng-adj-07",
+     "stem": "Choose the option that best completes the sentence.\n\nThere were ____ people at the meeting than we expected.",
+     "image_url": null,
+     "explanation": "*Fewer* + plural countable nouns; *less* + uncountable nouns.\n\n**Why the other options are wrong**\n\n- less: *Less* is used with uncountable nouns (*less water*); *people* is countable.\n- little: *Little* is used with uncountable nouns and does not compare.\n- few: *Few* does not compare; *than* needs the comparative *fewer*.",
+     "position": 7,
+     "options": [
+      {
+       "id": "7d28b86e-a3c6-59c2-a910-73ef506e7c07",
+       "label": "A",
+       "content": "less",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f624ae47-4ac1-5305-9243-31ead2b2ed26",
+       "label": "B",
+       "content": "little",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "15882b9e-0eda-53b3-aac4-3fd69afcdaff",
+       "label": "C",
+       "content": "few",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "77d52823-fcf2-52c9-a7d2-07c61fea4636",
+       "label": "D",
+       "content": "fewer",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -1408,7 +1940,7 @@
    "topic": "Prepositions",
    "title": "Prepositions: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on prepositions, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on prepositions, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 107,
    "questions": [
     {
@@ -1600,6 +2132,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "0f51338f-00f2-58c3-b0cb-95b0aa309298",
+     "key": "eng-prep-06",
+     "stem": "Choose the option that best completes the sentence.\n\nMy birthday is ____ the fourth of July.",
+     "image_url": null,
+     "explanation": "*On* is used with days and dates: *on Monday*, *on the fourth of July*.\n\n**Why the other options are wrong**\n\n- in: *In* is used with months and years: *in July*, *in 2026*.\n- at: *At* is used with clock times: *at 9 a.m.*\n- by: *By* means *not later than*, which does not fit a birthday.",
+     "position": 6,
+     "options": [
+      {
+       "id": "6d7f2d66-ce9c-5864-b938-3f679394b541",
+       "label": "A",
+       "content": "on",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "16b99679-398f-5c6f-99d1-547b2c46bc43",
+       "label": "B",
+       "content": "in",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d3fa88db-00df-5197-af54-0e4d23af7404",
+       "label": "C",
+       "content": "at",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "023be5d6-7c3b-5cac-9d4f-d3816159e140",
+       "label": "D",
+       "content": "by",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aba5f11e-cbf8-532b-a0c4-100fabf8ef16",
+     "key": "eng-prep-07",
+     "stem": "Choose the option that best completes the sentence.\n\nHawa is afraid ____ dogs because one bit her when she was small.",
+     "image_url": null,
+     "explanation": "*Afraid of* something or someone is the fixed pattern, like *fond of*, *proud of* and *tired of*.\n\n**Why the other options are wrong**\n\n- from: *Afraid* is not followed by *from*.\n- with: *Afraid* is not followed by *with*.\n- for: *Afraid for* means worried about someone's safety, which is a different meaning.",
+     "position": 7,
+     "options": [
+      {
+       "id": "ad7a08bc-497d-549c-abe7-7732cef5fa7a",
+       "label": "A",
+       "content": "from",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "691a188e-a610-5f44-aeb9-c49c1eabc7c4",
+       "label": "B",
+       "content": "of",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a0c9b802-668e-54c8-86fe-4b02e78cb152",
+       "label": "C",
+       "content": "with",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9f2c36e2-7660-5036-b75b-d4c175836cfe",
+       "label": "D",
+       "content": "for",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -1608,7 +2216,7 @@
    "topic": "Conjunctions",
    "title": "Conjunctions: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on conjunctions, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on conjunctions, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 108,
    "questions": [
     {
@@ -1800,6 +2408,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "bf5b73b5-2914-5d36-a417-5b5b53b0d408",
+     "key": "eng-conj-06",
+     "stem": "Choose the option that best completes the sentence.\n\nEither you apologise to your sister ____ you will not go out this evening.",
+     "image_url": null,
+     "explanation": "Correlative pairs: *either… or*, *neither… nor*, *both… and*, *not only… but also*.\n\n**Why the other options are wrong**\n\n- nor: *Nor* pairs with *neither*, not *either*.\n- and: *Either* pairs with *or*.\n- but: *But* does not complete *either…*.",
+     "position": 6,
+     "options": [
+      {
+       "id": "58f0fba7-9c71-56b4-be1b-d1192b28eba8",
+       "label": "A",
+       "content": "nor",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fa912984-3799-5897-9eb0-11e862165de5",
+       "label": "B",
+       "content": "and",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0357043c-29bb-50ae-9453-d6b989f01a3e",
+       "label": "C",
+       "content": "or",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "bcc790c9-c9a9-5533-803c-8aefd8d3e5ef",
+       "label": "D",
+       "content": "but",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8af70988-00a3-5492-be4a-0ddeb9a4dfbf",
+     "key": "eng-conj-07",
+     "stem": "Choose the option that best completes the sentence.\n\nThe candidates started writing ____ the invigilator said, \"You may begin.\"",
+     "image_url": null,
+     "explanation": "*As soon as* shows that one action happened immediately after another.\n\n**Why the other options are wrong**\n\n- although: *Although* shows contrast, which does not fit.\n- unless: *Unless* shows a condition, which does not fit.\n- so that: *So that* shows purpose, which does not fit.",
+     "position": 7,
+     "options": [
+      {
+       "id": "be704b08-7a1c-5cbf-9bad-d4d6bafd2b9c",
+       "label": "A",
+       "content": "although",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8016a987-1479-54e7-80a9-41c56d79cf44",
+       "label": "B",
+       "content": "unless",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6c39017e-a65e-5405-863d-b17490f6cb3e",
+       "label": "C",
+       "content": "so that",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c4942b78-02b9-56cd-90c0-3c28c3639ecc",
+       "label": "D",
+       "content": "as soon as",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -1808,7 +2492,7 @@
    "topic": "Subject-Verb Agreement",
    "title": "Subject-Verb Agreement: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on subject-verb agreement, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on subject-verb agreement, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 109,
    "questions": [
     {
@@ -2000,9 +2684,85 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "15265ccf-d060-5cb8-bb70-09571dc70c81",
+     "key": "eng-concord-06",
+     "stem": "Choose the option that best completes the sentence.\n\nThe news about the floods ____ very worrying.",
+     "image_url": null,
+     "explanation": "*News*, like *mathematics* and *physics*, ends in *-s* but takes a singular verb.\n\n**Why the other options are wrong**\n\n- are: *News* looks plural but is an uncountable noun and takes a singular verb.\n- were: *Were* is plural.\n- have been: *Have* is plural; *news* needs *has been* or *is*.",
+     "position": 6,
+     "options": [
+      {
+       "id": "1f206cc7-a007-55df-ab46-316dc866e40d",
+       "label": "A",
+       "content": "is",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "49647871-a060-5b9a-afc1-c2e0751b4a12",
+       "label": "B",
+       "content": "are",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "222807c7-dca5-52d3-992d-b6a3ff3ffcb9",
+       "label": "C",
+       "content": "were",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0e1008b0-ac2c-5435-9b02-ae095e7e74fe",
+       "label": "D",
+       "content": "have been",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4cf98201-fad0-5abb-a0c5-085e26608352",
+     "key": "eng-concord-07",
+     "stem": "Choose the option that best completes the sentence.\n\nOne of the boys ____ lost his bag on the way to school.",
+     "image_url": null,
+     "explanation": "The verb agrees with *one*, not with *boys*: *One of the boys has…*.\n\n**Why the other options are wrong**\n\n- have: The subject is *one*, which is singular; *of the boys* does not change that.\n- are: *Are lost* changes the meaning and is plural.\n- were: *Were* is plural and does not fit with *lost his bag*.",
+     "position": 7,
+     "options": [
+      {
+       "id": "9a4ac139-d610-52a2-ba94-bc67c36a49e1",
+       "label": "A",
+       "content": "have",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "79715966-df92-56ea-bebb-e928939d6567",
+       "label": "B",
+       "content": "has",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "27002a5d-ef9c-530d-bbdd-bd67985c5694",
+       "label": "C",
+       "content": "are",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dc1955f7-e590-5c00-b72b-4f69ea40d87b",
+       "label": "D",
+       "content": "were",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
     }
    ]
   }
  ],
- "version": "813e71f8650e"
+ "version": "d2a17540bbec"
 }

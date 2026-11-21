@@ -117,11 +117,53 @@ What part of speech is the word in bold?
 
 ---
 
+### 6. `eng-pos-06`
+
+What part of speech is the word in bold?
+
+The **rich** should help the poor.
+
+- **A.** adjective
+- **B.** verb
+- **C.** noun  ✅
+- **D.** adverb
+
+*The* + adjective can name a whole group of people: *the rich*, *the poor*, *the young*. It then works as a noun, the subject of *should help*.
+
+**Why the other options are wrong**
+
+- adjective: *Rich* is usually an adjective, but here, with *the* and no noun after it, it names a group of people.
+- verb: *Rich* is not an action or state verb here.
+- adverb: *Rich* does not describe how an action is done.
+
+---
+
+### 7. `eng-pos-07`
+
+What part of speech is the word in bold?
+
+We **water** the vegetable garden every evening.
+
+- **A.** noun
+- **B.** adjective
+- **C.** adverb
+- **D.** verb  ✅
+
+The same word can be different parts of speech. Here *water* follows the subject *we* and names the action, so it is a verb.
+
+**Why the other options are wrong**
+
+- noun: *Water* is a noun in *a glass of water*; here it is the action we do.
+- adjective: *Water* does not describe a noun here.
+- adverb: *Water* does not describe how an action is done.
+
+---
+
 ## Adverbs
 
 _Syllabus: Structure: adverbs (form, position, comparison, hard/hardly, so... that)_
 
-### 6. `eng-adv-01`
+### 8. `eng-adv-01`
 
 Choose the option that best completes the sentence.
 
@@ -142,7 +184,7 @@ Adverbs of manner tell us **how** something is done, and many are formed by addi
 
 ---
 
-### 7. `eng-adv-02`
+### 9. `eng-adv-02`
 
 Which sentence is correctly written?
 
@@ -164,7 +206,7 @@ Adverbs of frequency (*always, usually, often, never*) go after *be* (*she is al
 
 ---
 
-### 8. `eng-adv-03`
+### 10. `eng-adv-03`
 
 Choose the option that best completes the sentence.
 
@@ -185,7 +227,7 @@ Musa worked ____ to pass his examinations.
 
 ---
 
-### 9. `eng-adv-04`
+### 11. `eng-adv-04`
 
 Choose the option that best completes the sentence.
 
@@ -206,7 +248,7 @@ A result is shown with *so* + adjective/adverb + *that*: *She sang so well that 
 
 ---
 
-### 10. `eng-adv-05`
+### 12. `eng-adv-05`
 
 Choose the option that best completes the sentence.
 
@@ -227,11 +269,53 @@ Of all the runners in the race, Sahr ran the ____.
 
 ---
 
+### 13. `eng-adv-06`
+
+Choose the option that best completes the sentence.
+
+Sorie ____ ever comes late to school; he is almost always early.
+
+- **A.** hardly  ✅
+- **B.** hard
+- **C.** harder
+- **D.** hardy
+
+*Hardly ever* means *almost never*. *Hard* and *hardly* are different words with different meanings.
+
+**Why the other options are wrong**
+
+- hard: *Hard* means with great effort; it does not mean *almost never*.
+- harder: *Harder* compares effort; it does not fit *ever comes late*.
+- hardy: *Hardy* is an adjective meaning tough and able to survive bad conditions.
+
+---
+
+### 14. `eng-adv-07`
+
+Choose the option that best completes the sentence.
+
+Have you ____ finished your assignment? It is only nine o'clock.
+
+- **A.** yet
+- **B.** already  ✅
+- **C.** still
+- **D.** since
+
+*Already* means *by now*, often with surprise that something has happened so soon.
+
+**Why the other options are wrong**
+
+- yet: *Yet* goes at the end of a question: *Have you finished your assignment yet?*
+- still: *Still* shows that something continues; it does not fit *finished*.
+- since: *Since* needs a point in time after it.
+
+---
+
 ## Articles
 
 _Syllabus: Structure: a, an, the and no article_
 
-### 11. `eng-art-01`
+### 15. `eng-art-01`
 
 Choose the option that best completes the sentence.
 
@@ -252,7 +336,7 @@ The choice between *a* and *an* depends on the first **sound**, not the letter: 
 
 ---
 
-### 12. `eng-art-02`
+### 16. `eng-art-02`
 
 Choose the option that best completes the sentence.
 
@@ -273,7 +357,7 @@ Rivers, seas, oceans and mountain ranges take *the*: *the Niger*, *the Atlantic 
 
 ---
 
-### 13. `eng-art-03`
+### 17. `eng-art-03`
 
 Choose the option that best completes the sentence.
 
@@ -294,7 +378,7 @@ Meeting the President was ____ unique experience for the prize-winners.
 
 ---
 
-### 14. `eng-art-04`
+### 18. `eng-art-04`
 
 Choose the option that best completes the sentence.
 
@@ -315,7 +399,7 @@ Meals (*breakfast, lunch, supper*) take no article when we talk about them in ge
 
 ---
 
-### 15. `eng-art-05`
+### 19. `eng-art-05`
 
 Choose the option that best completes the sentence.
 
@@ -336,11 +420,53 @@ Things that are unique take *the*: *the sun*, *the moon*, *the sky*.
 
 ---
 
+### 20. `eng-art-06`
+
+Choose the option that best completes the sentence.
+
+Musa saw ____ eagle sitting on top of the palm tree.
+
+- **A.** a
+- **B.** some
+- **C.** an  ✅
+- **D.** (no article)
+
+*An* comes before a vowel sound: *an eagle*, *an orange*, *an hour*. *A* comes before a consonant sound.
+
+**Why the other options are wrong**
+
+- a: *Eagle* begins with a vowel sound, so it takes *an*.
+- some: *Some* is not used with a single countable noun like *eagle* in this meaning.
+- (no article): A singular countable noun such as *eagle* needs an article here.
+
+---
+
+### 21. `eng-art-07`
+
+Choose the option that best completes the sentence.
+
+____ Mount Bintumani is the highest mountain in Sierra Leone.
+
+- **A.** The
+- **B.** A
+- **C.** An
+- **D.** (no article)  ✅
+
+Single mountains (*Mount Bintumani*, *Mount Kilimanjaro*) take no article; mountain ranges do: *the Loma Mountains*.
+
+**Why the other options are wrong**
+
+- The: Names of single mountains with *Mount* take no article.
+- A: *A* would suggest there are several Mount Bintumanis.
+- An: *An* is wrong for a name, and *Mount* begins with a consonant sound.
+
+---
+
 ## Question Tags
 
 _Syllabus: Structure: question tags (auxiliary, polarity, special cases)_
 
-### 16. `eng-tag-01`
+### 22. `eng-tag-01`
 
 Choose the option that best completes the sentence.
 
@@ -361,7 +487,7 @@ A question tag repeats the auxiliary verb and the subject pronoun, with the oppo
 
 ---
 
-### 17. `eng-tag-02`
+### 23. `eng-tag-02`
 
 Choose the option that best completes the sentence.
 
@@ -382,7 +508,7 @@ The present perfect uses *has* as its auxiliary, so the tag is *hasn't she?*
 
 ---
 
-### 18. `eng-tag-03`
+### 24. `eng-tag-03`
 
 Choose the option that best completes the sentence.
 
@@ -403,7 +529,7 @@ Suggestions beginning with *Let's* take the tag *shall we?*
 
 ---
 
-### 19. `eng-tag-04`
+### 25. `eng-tag-04`
 
 Choose the option that best completes the sentence.
 
@@ -424,7 +550,7 @@ After *I am*, the negative tag is the special form *aren't I?* (*Am I not?* is t
 
 ---
 
-### 20. `eng-tag-05`
+### 26. `eng-tag-05`
 
 Choose the option that best completes the sentence.
 
@@ -445,11 +571,53 @@ Words like *nobody*, *never* and *nothing* make a statement negative, so the tag
 
 ---
 
+### 27. `eng-tag-06`
+
+Choose the option that best completes the sentence.
+
+She never misses a lesson, ____?
+
+- **A.** does she  ✅
+- **B.** doesn't she
+- **C.** isn't it
+- **D.** is she
+
+A negative statement takes a positive tag. Words like *never*, *hardly* and *no one* make a statement negative.
+
+**Why the other options are wrong**
+
+- doesn't she: *Never* makes the statement negative, so the tag must be positive.
+- isn't it: *Isn't it* does not match the subject *she* or the verb *misses*.
+- is she: The verb is *misses*, so the auxiliary in the tag is *does*.
+
+---
+
+### 28. `eng-tag-07`
+
+Choose the option that best completes the sentence.
+
+Close the window, ____?
+
+- **A.** do you
+- **B.** will you  ✅
+- **C.** isn't it
+- **D.** shall we
+
+An imperative (a command or request) usually takes *will you?* (or *would you?*, *can you?*).
+
+**Why the other options are wrong**
+
+- do you: A command does not take *do you*.
+- isn't it: *Isn't it* does not match a command.
+- shall we: *Shall we* follows *Let's…*, a suggestion that includes the speaker.
+
+---
+
 ## Modal Verbs
 
 _Syllabus: Structure: modal verbs (obligation, permission, ability, deduction)_
 
-### 21. `eng-modal-01`
+### 29. `eng-modal-01`
 
 Choose the option that best completes the sentence.
 
@@ -470,7 +638,7 @@ The rules are strict: candidates ____ switch off their phones before entering th
 
 ---
 
-### 22. `eng-modal-02`
+### 30. `eng-modal-02`
 
 Choose the option that best completes the sentence.
 
@@ -491,7 +659,7 @@ To draw a confident conclusion about the past, use *must have* + past participle
 
 ---
 
-### 23. `eng-modal-03`
+### 31. `eng-modal-03`
 
 Choose the option that best completes the sentence.
 
@@ -512,7 +680,7 @@ ____ I borrow your dictionary, please?
 
 ---
 
-### 24. `eng-modal-04`
+### 32. `eng-modal-04`
 
 Choose the option that best completes the sentence.
 
@@ -533,7 +701,7 @@ Modal verbs (*can, could, may, might, must, shall, should, will, would*) are fol
 
 ---
 
-### 25. `eng-modal-05`
+### 33. `eng-modal-05`
 
 Choose the option that best completes the sentence.
 
@@ -554,11 +722,53 @@ When he was younger, my grandfather ____ climb a palm tree in a few minutes.
 
 ---
 
+### 34. `eng-modal-06`
+
+Choose the option that best completes the sentence.
+
+You ____ bring any food tomorrow; lunch will be provided.
+
+- **A.** mustn't
+- **B.** can't
+- **C.** needn't  ✅
+- **D.** couldn't
+
+*Needn't* means *it is not necessary*. *Mustn't* means *it is not allowed*.
+
+**Why the other options are wrong**
+
+- mustn't: *Mustn't* forbids something; the reason given (*lunch will be provided*) shows there is simply no need.
+- can't: *Can't* shows inability or that something is not allowed, which is not the point here.
+- couldn't: *Couldn't* is past or tentative and does not fit an instruction about tomorrow.
+
+---
+
+### 35. `eng-modal-07`
+
+Choose the option that best completes the sentence.
+
+When I was a child, I ____ walk to school every day.
+
+- **A.** use to
+- **B.** am used to
+- **C.** was use to
+- **D.** used to  ✅
+
+*Used to* + base form describes a past habit that no longer happens.
+
+**Why the other options are wrong**
+
+- use to: In an affirmative sentence the form is *used to*, with *-d*.
+- am used to: *Be used to* means *accustomed to* and is followed by *-ing*; it also does not fit *when I was a child*.
+- was use to: This mixes two forms and is not standard English.
+
+---
+
 ## Conditionals
 
 _Syllabus: Structure: conditional sentences (first, second, third; unless; inversion)_
 
-### 26. `eng-cond-01`
+### 36. `eng-cond-01`
 
 Choose the option that best completes the sentence.
 
@@ -579,7 +789,7 @@ First conditional (a real possibility): *If* + present simple, *will* + base for
 
 ---
 
-### 27. `eng-cond-02`
+### 37. `eng-cond-02`
 
 Choose the option that best completes the sentence.
 
@@ -600,7 +810,7 @@ Second conditional (imaginary): *If* + past, *would* + base form. With *I*, form
 
 ---
 
-### 28. `eng-cond-03`
+### 38. `eng-cond-03`
 
 Choose the option that best completes the sentence.
 
@@ -621,7 +831,7 @@ Third conditional (an imaginary past): *If* + past perfect, *would have* + past 
 
 ---
 
-### 29. `eng-cond-04`
+### 39. `eng-cond-04`
 
 Choose the option that best completes the sentence.
 
@@ -642,7 +852,7 @@ Unless he ____ now, he will miss the last ferry.
 
 ---
 
-### 30. `eng-cond-05`
+### 40. `eng-cond-05`
 
 Choose the option that best completes the sentence.
 
@@ -663,11 +873,53 @@ Had I known about the meeting, I ____ attended it.
 
 ---
 
+### 41. `eng-cond-06`
+
+Choose the option that best completes the sentence.
+
+If water is heated to 100 °C, it ____.
+
+- **A.** boils  ✅
+- **B.** would boil
+- **C.** boiled
+- **D.** would have boiled
+
+General truths use the zero conditional: *if* + present, present. *If water is heated to 100 °C, it boils.*
+
+**Why the other options are wrong**
+
+- would boil: *Would* is for imaginary situations; this is a scientific fact.
+- boiled: The past tense does not fit a general fact in the present.
+- would have boiled: This is for past situations that did not happen.
+
+---
+
+### 42. `eng-cond-07`
+
+Choose the option that best completes the sentence.
+
+If it ____ to rain heavily tonight, the road to the village would flood.
+
+- **A.** is
+- **B.** were  ✅
+- **C.** will
+- **D.** has
+
+*If* + *were to* + base form describes an unlikely future event, followed by *would*.
+
+**Why the other options are wrong**
+
+- is: *Is* would need *will flood*, not *would flood*.
+- will: *Will* is not used in the *if* clause of this kind of conditional.
+- has: *Has to rain* changes the meaning and does not fit *would flood*.
+
+---
+
 ## Direct and Reported Speech
 
 _Syllabus: Structure: reported statements, questions and commands_
 
-### 31. `eng-rep-01`
+### 43. `eng-rep-01`
 
 Choose the option that best reports this sentence.
 
@@ -691,7 +943,7 @@ Reporting after a past verb: the pronoun changes (*I* → *she*), the tense move
 
 ---
 
-### 32. `eng-rep-02`
+### 44. `eng-rep-02`
 
 Choose the option that best reports this sentence.
 
@@ -715,7 +967,7 @@ In a reported question, keep the question word, use statement word order (*where
 
 ---
 
-### 33. `eng-rep-03`
+### 45. `eng-rep-03`
 
 Choose the option that best reports this sentence.
 
@@ -739,7 +991,7 @@ Commands are reported with *tell/order* + person + *to* + base form: *told the b
 
 ---
 
-### 34. `eng-rep-04`
+### 46. `eng-rep-04`
 
 Choose the option that best reports this sentence.
 
@@ -763,7 +1015,7 @@ Yes/no questions are reported with *if* or *whether* + statement word order, wit
 
 ---
 
-### 35. `eng-rep-05`
+### 47. `eng-rep-05`
 
 Choose the option that best reports this sentence.
 
@@ -787,11 +1039,59 @@ She said, "I will travel to Bo tomorrow."
 
 ---
 
+### 48. `eng-rep-06`
+
+Choose the option that best reports this sentence.
+
+Kemoh said, "I bought this phone yesterday."
+
+- **A.** Kemoh said that he bought this phone yesterday.
+- **B.** Kemoh said that I had bought that phone the day before.
+- **C.** Kemoh said that he had bought that phone the day before.  ✅
+- **D.** Kemoh said that he has bought this phone yesterday.
+
+Past simple → past perfect (*bought* → *had bought*); *this* → *that*; *yesterday* → *the day before*.
+
+**Why the other options are wrong**
+
+- Kemoh said that he bought this phone yesterday.  
+  The tense, *this* and *yesterday* have not been changed for reported speech.
+- Kemoh said that I had bought that phone the day before.  
+  The pronoun must change: *I* becomes *he*.
+- Kemoh said that he has bought this phone yesterday.  
+  *Has bought* cannot go with a past time, and *this* should become *that*.
+
+---
+
+### 49. `eng-rep-07`
+
+Choose the option that best reports this sentence.
+
+The teacher said to us, "Don't talk during the test."
+
+- **A.** The teacher told us don't talk during the test.
+- **B.** The teacher said us not to talk during the test.
+- **C.** The teacher told that we not talk during the test.
+- **D.** The teacher told us not to talk during the test.  ✅
+
+Negative commands: *told* + person + *not to* + base form.
+
+**Why the other options are wrong**
+
+- The teacher told us don't talk during the test.  
+  Commands are reported with *told* + object + *not to*, not by keeping *don't*.
+- The teacher said us not to talk during the test.  
+  *Said* cannot be followed directly by *us*; use *told us*.
+- The teacher told that we not talk during the test.  
+  This is not a standard way to report a command.
+
+---
+
 ## Synonyms and Antonyms
 
 _Syllabus: Lexis: words nearest and opposite in meaning_
 
-### 36. `eng-syn-01`
+### 50. `eng-syn-01`
 
 Choose the option nearest in meaning to the word in bold.
 
@@ -812,7 +1112,7 @@ The headmaster was **furious** when he saw the broken window.
 
 ---
 
-### 37. `eng-syn-02`
+### 51. `eng-syn-02`
 
 Choose the option nearest in meaning to the word in bold.
 
@@ -833,7 +1133,7 @@ The doctor warned that the disease is highly **contagious**.
 
 ---
 
-### 38. `eng-syn-03`
+### 52. `eng-syn-03`
 
 Choose the option nearest in meaning to the word in bold.
 
@@ -854,7 +1154,7 @@ To *abandon* a place is to leave it, usually for good or in a hurry.
 
 ---
 
-### 39. `eng-ant-01`
+### 53. `eng-ant-01`
 
 Choose the option most nearly opposite in meaning to the word in bold.
 
@@ -875,7 +1175,7 @@ The trader is very **generous** to his poorer customers.
 
 ---
 
-### 40. `eng-ant-02`
+### 54. `eng-ant-02`
 
 Choose the option most nearly opposite in meaning to the word in bold.
 
@@ -896,11 +1196,53 @@ The minister gave a **brief** speech at the opening ceremony.
 
 ---
 
+### 55. `eng-syn-04`
+
+Choose the option nearest in meaning to the word in bold.
+
+The pupils were **diligent** in their studies throughout the term.
+
+- **A.** hard-working  ✅
+- **B.** lazy
+- **C.** clever
+- **D.** noisy
+
+*Diligent* means careful and hard-working.
+
+**Why the other options are wrong**
+
+- lazy: *Lazy* is the opposite of *diligent*.
+- clever: Cleverness is about ability, not effort.
+- noisy: *Noisy* has nothing to do with *diligent*.
+
+---
+
+### 56. `eng-ant-03`
+
+Choose the option most nearly opposite in meaning to the word in bold.
+
+The new footbridge over the stream is very **sturdy**.
+
+- **A.** strong
+- **B.** flimsy  ✅
+- **C.** long
+- **D.** new
+
+*Sturdy* means strong and solidly built; *flimsy* means weak and easily broken.
+
+**Why the other options are wrong**
+
+- strong: *Strong* is close in meaning to *sturdy*, not opposite.
+- long: *Long* is about length, not strength.
+- new: *New* is about age, not strength.
+
+---
+
 ## Idioms and Idiomatic Expressions
 
 _Syllabus: Lexis: interpreting common idioms_
 
-### 41. `eng-idiom-01`
+### 57. `eng-idiom-01`
 
 Choose the option that best explains the expression in bold.
 
@@ -921,7 +1263,7 @@ To *let the cat out of the bag* is to reveal a secret, often by accident.
 
 ---
 
-### 42. `eng-idiom-02`
+### 58. `eng-idiom-02`
 
 Choose the option that best explains the expression in bold.
 
@@ -942,7 +1284,7 @@ When the results were announced, the losing candidate **threw in the towel**.
 
 ---
 
-### 43. `eng-idiom-03`
+### 59. `eng-idiom-03`
 
 Choose the option that best explains the expression in bold.
 
@@ -963,7 +1305,7 @@ My uncle always **foots the bill** when the family eats out.
 
 ---
 
-### 44. `eng-idiom-04`
+### 60. `eng-idiom-04`
 
 Choose the option that best explains the expression in bold.
 
@@ -984,7 +1326,7 @@ After weeks of revision, the Mathematics paper was **a piece of cake** for Isatu
 
 ---
 
-### 45. `eng-idiom-05`
+### 61. `eng-idiom-05`
 
 Choose the option that best explains the expression in bold.
 
@@ -1005,11 +1347,53 @@ Stop **beating about the bush** and tell us what really happened.
 
 ---
 
+### 62. `eng-idiom-06`
+
+Choose the option that best explains the expression in bold.
+
+The news of her scholarship was **music to her ears**.
+
+- **A.** loud and noisy
+- **B.** a song on the radio
+- **C.** very pleasant to hear  ✅
+- **D.** hard to believe
+
+Something that is *music to your ears* is news you are very happy to hear.
+
+**Why the other options are wrong**
+
+- loud and noisy: The idiom is not about loudness.
+- a song on the radio: The idiom has nothing to do with real music.
+- hard to believe: Disbelief is a different idea.
+
+---
+
+### 63. `eng-idiom-07`
+
+Choose the option that best explains the expression in bold.
+
+Sorie **burnt the midnight oil** before his WASSCE examinations.
+
+- **A.** wasted fuel at night
+- **B.** set fire to his lamp
+- **C.** slept early every night
+- **D.** studied late into the night  ✅
+
+To *burn the midnight oil* is to work or study late into the night.
+
+**Why the other options are wrong**
+
+- wasted fuel at night: The idiom has nothing to do with wasting fuel.
+- set fire to his lamp: The idiom is not about a real fire.
+- slept early every night: This is the opposite of the meaning.
+
+---
+
 ## Common Confusable Words
 
 _Syllabus: Lexis: words often confused (affect/effect, than/then, lose/loose)_
 
-### 46. `eng-conf-01`
+### 64. `eng-conf-01`
 
 Choose the option that best completes the sentence.
 
@@ -1030,7 +1414,7 @@ The late rains will badly ____ this year's rice harvest.
 
 ---
 
-### 47. `eng-conf-02`
+### 65. `eng-conf-02`
 
 Choose the option that best completes the sentence.
 
@@ -1051,7 +1435,7 @@ Use *than* after a comparative (*bigger than*); use *then* for time or sequence.
 
 ---
 
-### 48. `eng-conf-03`
+### 66. `eng-conf-03`
 
 Choose the option that best completes the sentence.
 
@@ -1072,7 +1456,7 @@ The ____ asked the pupils to sit quietly before the visitors arrived.
 
 ---
 
-### 49. `eng-conf-04`
+### 67. `eng-conf-04`
 
 Choose the option that best completes the sentence.
 
@@ -1093,7 +1477,7 @@ Do not ____ your admission card before the examination.
 
 ---
 
-### 50. `eng-conf-05`
+### 68. `eng-conf-05`
 
 Choose the option that best completes the sentence.
 
@@ -1111,5 +1495,47 @@ The bookshop near the school sells pens, rulers, exercise books and other ____.
 - stationary: *Stationary* (with an *a*) means not moving, as in *a stationary vehicle*.
 - stationeries: *Stationery* is uncountable, so it has no plural.
 - stationaries: There is no such word.
+
+---
+
+### 69. `eng-conf-06`
+
+Choose the option that best completes the sentence.
+
+The ____ of the medicine made the patient sleepy.
+
+- **A.** effect  ✅
+- **B.** affect
+- **C.** affection
+- **D.** efect
+
+*Effect* (noun) is a result; *affect* (verb) is to have an influence on.
+
+**Why the other options are wrong**
+
+- affect: *Affect* is usually a verb: *The medicine may affect you.*
+- affection: *Affection* means fondness or love.
+- efect: This is a spelling mistake.
+
+---
+
+### 70. `eng-conf-07`
+
+Choose the option that best completes the sentence.
+
+The teacher will not ____ any assignment that is handed in late.
+
+- **A.** except
+- **B.** accept  ✅
+- **C.** expect
+- **D.** excerpt
+
+*Accept* means to receive or agree to; *except* means apart from.
+
+**Why the other options are wrong**
+
+- except: *Except* means *not including*: *everyone except Musa*.
+- expect: *Expect* means to think something will happen.
+- excerpt: An *excerpt* is a short passage taken from a longer text.
 
 ---

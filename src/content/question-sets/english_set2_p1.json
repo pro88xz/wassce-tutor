@@ -8,7 +8,7 @@
    "topic": "Parts of Speech",
    "title": "Parts of Speech: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on parts of speech, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on parts of speech, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 110,
    "questions": [
     {
@@ -200,6 +200,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "2d04297a-1940-5372-ae47-dc167418101a",
+     "key": "eng-pos-06",
+     "stem": "What part of speech is the word in bold?\n\nThe **rich** should help the poor.",
+     "image_url": null,
+     "explanation": "*The* + adjective can name a whole group of people: *the rich*, *the poor*, *the young*. It then works as a noun, the subject of *should help*.\n\n**Why the other options are wrong**\n\n- adjective: *Rich* is usually an adjective, but here, with *the* and no noun after it, it names a group of people.\n- verb: *Rich* is not an action or state verb here.\n- adverb: *Rich* does not describe how an action is done.",
+     "position": 6,
+     "options": [
+      {
+       "id": "54f69c9c-e7c4-543b-8ca4-8a8a91210e4f",
+       "label": "A",
+       "content": "adjective",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a17f8c1d-a37d-5974-822c-5f3a544980ab",
+       "label": "B",
+       "content": "verb",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "348d3c58-d32a-5b50-831d-c51067a6ceb8",
+       "label": "C",
+       "content": "noun",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "395708a0-6f91-518b-99ee-323591350e5e",
+       "label": "D",
+       "content": "adverb",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "52b821c8-9be6-58fd-ba45-9411d8b6ab5b",
+     "key": "eng-pos-07",
+     "stem": "What part of speech is the word in bold?\n\nWe **water** the vegetable garden every evening.",
+     "image_url": null,
+     "explanation": "The same word can be different parts of speech. Here *water* follows the subject *we* and names the action, so it is a verb.\n\n**Why the other options are wrong**\n\n- noun: *Water* is a noun in *a glass of water*; here it is the action we do.\n- adjective: *Water* does not describe a noun here.\n- adverb: *Water* does not describe how an action is done.",
+     "position": 7,
+     "options": [
+      {
+       "id": "150cbc3b-ad50-5629-b082-2c9ee15ff35f",
+       "label": "A",
+       "content": "noun",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "de2aabb3-5b2a-58e0-8293-2f45847e391f",
+       "label": "B",
+       "content": "adjective",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "75342d0e-d2e6-5260-8650-e4d34f2bcfba",
+       "label": "C",
+       "content": "adverb",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1200f03e-bda8-53bc-a8c5-a5497dd01016",
+       "label": "D",
+       "content": "verb",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -208,7 +284,7 @@
    "topic": "Adverbs",
    "title": "Adverbs: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on adverbs, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on adverbs, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 111,
    "questions": [
     {
@@ -400,6 +476,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "f041dc9b-33f8-56f6-9375-99e465e2ed42",
+     "key": "eng-adv-06",
+     "stem": "Choose the option that best completes the sentence.\n\nSorie ____ ever comes late to school; he is almost always early.",
+     "image_url": null,
+     "explanation": "*Hardly ever* means *almost never*. *Hard* and *hardly* are different words with different meanings.\n\n**Why the other options are wrong**\n\n- hard: *Hard* means with great effort; it does not mean *almost never*.\n- harder: *Harder* compares effort; it does not fit *ever comes late*.\n- hardy: *Hardy* is an adjective meaning tough and able to survive bad conditions.",
+     "position": 6,
+     "options": [
+      {
+       "id": "65320704-e484-5300-b827-e9054b5222ba",
+       "label": "A",
+       "content": "hardly",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b735a12d-f50a-5850-8277-4adf24c8db52",
+       "label": "B",
+       "content": "hard",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "65e9a668-8e01-5bc3-bfab-9c74cfa5d7b3",
+       "label": "C",
+       "content": "harder",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "62884a76-9688-55b0-8b19-5e3874c1cc84",
+       "label": "D",
+       "content": "hardy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9f9efb28-3b55-59ab-93a3-f77746835b53",
+     "key": "eng-adv-07",
+     "stem": "Choose the option that best completes the sentence.\n\nHave you ____ finished your assignment? It is only nine o'clock.",
+     "image_url": null,
+     "explanation": "*Already* means *by now*, often with surprise that something has happened so soon.\n\n**Why the other options are wrong**\n\n- yet: *Yet* goes at the end of a question: *Have you finished your assignment yet?*\n- still: *Still* shows that something continues; it does not fit *finished*.\n- since: *Since* needs a point in time after it.",
+     "position": 7,
+     "options": [
+      {
+       "id": "a00ebf77-32c8-58c9-9d60-7a989f13b570",
+       "label": "A",
+       "content": "yet",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "99257a2e-eb76-5859-991a-d5325e6ba9b1",
+       "label": "B",
+       "content": "already",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4c94c850-d3e7-5dd5-9e86-6d2a7e68b39a",
+       "label": "C",
+       "content": "still",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "58999b61-88fc-5182-a753-1e51ff1f29ed",
+       "label": "D",
+       "content": "since",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -408,7 +560,7 @@
    "topic": "Articles",
    "title": "Articles: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on articles, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on articles, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 112,
    "questions": [
     {
@@ -600,6 +752,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "2f7459b3-736e-5263-aac1-b149e4ebb189",
+     "key": "eng-art-06",
+     "stem": "Choose the option that best completes the sentence.\n\nMusa saw ____ eagle sitting on top of the palm tree.",
+     "image_url": null,
+     "explanation": "*An* comes before a vowel sound: *an eagle*, *an orange*, *an hour*. *A* comes before a consonant sound.\n\n**Why the other options are wrong**\n\n- a: *Eagle* begins with a vowel sound, so it takes *an*.\n- some: *Some* is not used with a single countable noun like *eagle* in this meaning.\n- (no article): A singular countable noun such as *eagle* needs an article here.",
+     "position": 6,
+     "options": [
+      {
+       "id": "e58b3c67-ef7b-562a-ad68-2330a517bb3e",
+       "label": "A",
+       "content": "a",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4ae895d5-1c9c-5e3e-9836-375ee6f72480",
+       "label": "B",
+       "content": "some",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "02a63763-a7e6-5465-b821-0aaf50dce1a0",
+       "label": "C",
+       "content": "an",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e3bec9db-c23c-55e2-8834-feb3a08744e2",
+       "label": "D",
+       "content": "(no article)",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cd3e847a-b537-5497-8532-b7c14431b8c7",
+     "key": "eng-art-07",
+     "stem": "Choose the option that best completes the sentence.\n\n____ Mount Bintumani is the highest mountain in Sierra Leone.",
+     "image_url": null,
+     "explanation": "Single mountains (*Mount Bintumani*, *Mount Kilimanjaro*) take no article; mountain ranges do: *the Loma Mountains*.\n\n**Why the other options are wrong**\n\n- The: Names of single mountains with *Mount* take no article.\n- A: *A* would suggest there are several Mount Bintumanis.\n- An: *An* is wrong for a name, and *Mount* begins with a consonant sound.",
+     "position": 7,
+     "options": [
+      {
+       "id": "864091e3-80c5-5411-bb3a-6eae00b571c6",
+       "label": "A",
+       "content": "The",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6bbadb69-4a2c-502a-b7ae-f61b9ddf571b",
+       "label": "B",
+       "content": "A",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ea7b17b2-8b4b-5560-b0ae-e5406e6b6600",
+       "label": "C",
+       "content": "An",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0d3acd4f-12cd-5cd3-9888-dcddfbfb9057",
+       "label": "D",
+       "content": "(no article)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -608,7 +836,7 @@
    "topic": "Question Tags",
    "title": "Question Tags: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on question tags, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on question tags, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 113,
    "questions": [
     {
@@ -800,6 +1028,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "bfba1977-e1d7-569d-81b8-da57d6e09a52",
+     "key": "eng-tag-06",
+     "stem": "Choose the option that best completes the sentence.\n\nShe never misses a lesson, ____?",
+     "image_url": null,
+     "explanation": "A negative statement takes a positive tag. Words like *never*, *hardly* and *no one* make a statement negative.\n\n**Why the other options are wrong**\n\n- doesn't she: *Never* makes the statement negative, so the tag must be positive.\n- isn't it: *Isn't it* does not match the subject *she* or the verb *misses*.\n- is she: The verb is *misses*, so the auxiliary in the tag is *does*.",
+     "position": 6,
+     "options": [
+      {
+       "id": "706ccd59-9f7c-5b71-a6cf-56be45ac686e",
+       "label": "A",
+       "content": "does she",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4b7ff433-6462-5907-b8d0-cbb39a2880e2",
+       "label": "B",
+       "content": "doesn't she",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9f14da35-affb-5c8f-9e2c-5fbba3cef8dd",
+       "label": "C",
+       "content": "isn't it",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "72c52b67-8321-5fdc-8094-532a0bdebd6a",
+       "label": "D",
+       "content": "is she",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9190141b-0a9f-5931-85e8-454669cad306",
+     "key": "eng-tag-07",
+     "stem": "Choose the option that best completes the sentence.\n\nClose the window, ____?",
+     "image_url": null,
+     "explanation": "An imperative (a command or request) usually takes *will you?* (or *would you?*, *can you?*).\n\n**Why the other options are wrong**\n\n- do you: A command does not take *do you*.\n- isn't it: *Isn't it* does not match a command.\n- shall we: *Shall we* follows *Let's…*, a suggestion that includes the speaker.",
+     "position": 7,
+     "options": [
+      {
+       "id": "d0254664-ca80-5791-bb45-81bc2f4544f6",
+       "label": "A",
+       "content": "do you",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c9412116-19a1-5e4b-a1d9-224b521d74ba",
+       "label": "B",
+       "content": "will you",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9bc2a139-3dbc-5dce-b260-ea054b05eb5b",
+       "label": "C",
+       "content": "isn't it",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a969213a-37d8-555e-9cba-8e1aab9a5d83",
+       "label": "D",
+       "content": "shall we",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -808,7 +1112,7 @@
    "topic": "Modal Verbs",
    "title": "Modal Verbs: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on modal verbs, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on modal verbs, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 114,
    "questions": [
     {
@@ -1000,6 +1304,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "24ecd2bc-1c53-5cc9-911e-83d30992d461",
+     "key": "eng-modal-06",
+     "stem": "Choose the option that best completes the sentence.\n\nYou ____ bring any food tomorrow; lunch will be provided.",
+     "image_url": null,
+     "explanation": "*Needn't* means *it is not necessary*. *Mustn't* means *it is not allowed*.\n\n**Why the other options are wrong**\n\n- mustn't: *Mustn't* forbids something; the reason given (*lunch will be provided*) shows there is simply no need.\n- can't: *Can't* shows inability or that something is not allowed, which is not the point here.\n- couldn't: *Couldn't* is past or tentative and does not fit an instruction about tomorrow.",
+     "position": 6,
+     "options": [
+      {
+       "id": "d8dc1a3f-e780-556f-a5dd-62cac5a5f05d",
+       "label": "A",
+       "content": "mustn't",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9d1ef618-9e98-5715-98da-8c4e09702066",
+       "label": "B",
+       "content": "can't",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c90ad5bf-3d49-579f-b49a-9b1db35936cd",
+       "label": "C",
+       "content": "needn't",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7ec70dc4-94f5-52e7-9377-8c29a463ec4e",
+       "label": "D",
+       "content": "couldn't",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5e0fc6c1-e8ae-50d2-bad2-8278f4b0bbe8",
+     "key": "eng-modal-07",
+     "stem": "Choose the option that best completes the sentence.\n\nWhen I was a child, I ____ walk to school every day.",
+     "image_url": null,
+     "explanation": "*Used to* + base form describes a past habit that no longer happens.\n\n**Why the other options are wrong**\n\n- use to: In an affirmative sentence the form is *used to*, with *-d*.\n- am used to: *Be used to* means *accustomed to* and is followed by *-ing*; it also does not fit *when I was a child*.\n- was use to: This mixes two forms and is not standard English.",
+     "position": 7,
+     "options": [
+      {
+       "id": "681b5a04-3ec8-50f7-b872-a4bfb60680ef",
+       "label": "A",
+       "content": "use to",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "99e7512a-2687-5d57-9ee2-b229d21750ea",
+       "label": "B",
+       "content": "am used to",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0872550c-4029-57e1-9196-05e9f3b4fecd",
+       "label": "C",
+       "content": "was use to",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a3e2e247-8557-5d0c-a629-2d1fe94c1a96",
+       "label": "D",
+       "content": "used to",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -1008,7 +1388,7 @@
    "topic": "Conditionals",
    "title": "Conditionals: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on conditionals, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on conditionals, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 115,
    "questions": [
     {
@@ -1200,6 +1580,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "5292b1b5-ad38-5020-b580-0558cf2a3c16",
+     "key": "eng-cond-06",
+     "stem": "Choose the option that best completes the sentence.\n\nIf water is heated to 100 °C, it ____.",
+     "image_url": null,
+     "explanation": "General truths use the zero conditional: *if* + present, present. *If water is heated to 100 °C, it boils.*\n\n**Why the other options are wrong**\n\n- would boil: *Would* is for imaginary situations; this is a scientific fact.\n- boiled: The past tense does not fit a general fact in the present.\n- would have boiled: This is for past situations that did not happen.",
+     "position": 6,
+     "options": [
+      {
+       "id": "eca09d7e-dcf0-5561-9d7d-a4798c565949",
+       "label": "A",
+       "content": "boils",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5766d966-2ffc-57d8-b4a4-00736fab2ece",
+       "label": "B",
+       "content": "would boil",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b76a3926-c320-591f-a173-93de2b86fcee",
+       "label": "C",
+       "content": "boiled",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ebb1a5f9-e7a9-5143-9406-9e5d8b701330",
+       "label": "D",
+       "content": "would have boiled",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5460cca5-d908-55ee-ab33-5f37db5eca55",
+     "key": "eng-cond-07",
+     "stem": "Choose the option that best completes the sentence.\n\nIf it ____ to rain heavily tonight, the road to the village would flood.",
+     "image_url": null,
+     "explanation": "*If* + *were to* + base form describes an unlikely future event, followed by *would*.\n\n**Why the other options are wrong**\n\n- is: *Is* would need *will flood*, not *would flood*.\n- will: *Will* is not used in the *if* clause of this kind of conditional.\n- has: *Has to rain* changes the meaning and does not fit *would flood*.",
+     "position": 7,
+     "options": [
+      {
+       "id": "c558f4f0-536e-5dd0-ab7c-bbbd6571940e",
+       "label": "A",
+       "content": "is",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "795eba05-5dd6-5d91-9b3a-43517ceedc56",
+       "label": "B",
+       "content": "were",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "481a379a-255f-5671-bb96-dd52788c7467",
+       "label": "C",
+       "content": "will",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9f32ad8f-b0d8-59f6-8598-417d3e3e51dd",
+       "label": "D",
+       "content": "has",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -1208,7 +1664,7 @@
    "topic": "Direct and Reported Speech",
    "title": "Direct and Reported Speech: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on direct and reported speech, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on direct and reported speech, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 116,
    "questions": [
     {
@@ -1400,6 +1856,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "901a91aa-43d1-5b52-a7aa-d51bd38e06c1",
+     "key": "eng-rep-06",
+     "stem": "Choose the option that best reports this sentence.\n\nKemoh said, \"I bought this phone yesterday.\"",
+     "image_url": null,
+     "explanation": "Past simple → past perfect (*bought* → *had bought*); *this* → *that*; *yesterday* → *the day before*.\n\n**Why the other options are wrong**\n\n- Kemoh said that he bought this phone yesterday.  \n  The tense, *this* and *yesterday* have not been changed for reported speech.\n- Kemoh said that I had bought that phone the day before.  \n  The pronoun must change: *I* becomes *he*.\n- Kemoh said that he has bought this phone yesterday.  \n  *Has bought* cannot go with a past time, and *this* should become *that*.",
+     "position": 6,
+     "options": [
+      {
+       "id": "dea89c32-514e-572e-9301-55dc1e22ddbc",
+       "label": "A",
+       "content": "Kemoh said that he bought this phone yesterday.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c4a3b5f6-c4ad-536f-8e7e-4f3b1dac7cc8",
+       "label": "B",
+       "content": "Kemoh said that I had bought that phone the day before.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a4817199-8e22-5b89-9811-e099b8e75493",
+       "label": "C",
+       "content": "Kemoh said that he had bought that phone the day before.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7de32de0-9029-564e-b207-a0d18fa1d959",
+       "label": "D",
+       "content": "Kemoh said that he has bought this phone yesterday.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "efe5bdda-bbd3-5e1f-adb0-f606dce38d6b",
+     "key": "eng-rep-07",
+     "stem": "Choose the option that best reports this sentence.\n\nThe teacher said to us, \"Don't talk during the test.\"",
+     "image_url": null,
+     "explanation": "Negative commands: *told* + person + *not to* + base form.\n\n**Why the other options are wrong**\n\n- The teacher told us don't talk during the test.  \n  Commands are reported with *told* + object + *not to*, not by keeping *don't*.\n- The teacher said us not to talk during the test.  \n  *Said* cannot be followed directly by *us*; use *told us*.\n- The teacher told that we not talk during the test.  \n  This is not a standard way to report a command.",
+     "position": 7,
+     "options": [
+      {
+       "id": "925637e6-c50a-5379-ad4e-bdd5e7ffdf70",
+       "label": "A",
+       "content": "The teacher told us don't talk during the test.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fce58d1f-8e35-506e-ad9f-b1e56b472453",
+       "label": "B",
+       "content": "The teacher said us not to talk during the test.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "57ac4e5b-f0a1-5cb0-b4ba-6f5c6d7528dc",
+       "label": "C",
+       "content": "The teacher told that we not talk during the test.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "50275843-af6b-573d-a9c2-f65b2de34e2d",
+       "label": "D",
+       "content": "The teacher told us not to talk during the test.",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -1408,7 +1940,7 @@
    "topic": "Synonyms and Antonyms",
    "title": "Synonyms and Antonyms: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on synonyms and antonyms, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on synonyms and antonyms, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 117,
    "questions": [
     {
@@ -1600,6 +2132,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "936ee651-1e84-531b-9ef1-2bf4faa09c64",
+     "key": "eng-syn-04",
+     "stem": "Choose the option nearest in meaning to the word in bold.\n\nThe pupils were **diligent** in their studies throughout the term.",
+     "image_url": null,
+     "explanation": "*Diligent* means careful and hard-working.\n\n**Why the other options are wrong**\n\n- lazy: *Lazy* is the opposite of *diligent*.\n- clever: Cleverness is about ability, not effort.\n- noisy: *Noisy* has nothing to do with *diligent*.",
+     "position": 6,
+     "options": [
+      {
+       "id": "02b0c427-72f7-5ced-aa74-5d5854bc9184",
+       "label": "A",
+       "content": "hard-working",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "60f93853-7c93-5a02-b2ed-f3bd3fa08257",
+       "label": "B",
+       "content": "lazy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f5b720c0-3f7e-5d21-98ba-82322e20feeb",
+       "label": "C",
+       "content": "clever",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "aa11a476-0174-5d94-afa3-48a37ade6836",
+       "label": "D",
+       "content": "noisy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0361afee-9ce2-52fb-a5d2-a95056b57efb",
+     "key": "eng-ant-03",
+     "stem": "Choose the option most nearly opposite in meaning to the word in bold.\n\nThe new footbridge over the stream is very **sturdy**.",
+     "image_url": null,
+     "explanation": "*Sturdy* means strong and solidly built; *flimsy* means weak and easily broken.\n\n**Why the other options are wrong**\n\n- strong: *Strong* is close in meaning to *sturdy*, not opposite.\n- long: *Long* is about length, not strength.\n- new: *New* is about age, not strength.",
+     "position": 7,
+     "options": [
+      {
+       "id": "2ea9b010-8989-5587-8670-241f79d24323",
+       "label": "A",
+       "content": "strong",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9e43e946-d719-5faa-a026-0cfccddee02d",
+       "label": "B",
+       "content": "flimsy",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "82ce8030-1214-51fe-bb6f-98a7e8d16d52",
+       "label": "C",
+       "content": "long",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "04edee99-3486-5b1d-9f6d-ba5aa9aed721",
+       "label": "D",
+       "content": "new",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -1608,7 +2216,7 @@
    "topic": "Idioms and Idiomatic Expressions",
    "title": "Idioms and Idiomatic Expressions: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on idioms and idiomatic expressions, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on idioms and idiomatic expressions, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 118,
    "questions": [
     {
@@ -1800,6 +2408,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "3442aee2-f668-5703-a162-105d5a05bd9b",
+     "key": "eng-idiom-06",
+     "stem": "Choose the option that best explains the expression in bold.\n\nThe news of her scholarship was **music to her ears**.",
+     "image_url": null,
+     "explanation": "Something that is *music to your ears* is news you are very happy to hear.\n\n**Why the other options are wrong**\n\n- loud and noisy: The idiom is not about loudness.\n- a song on the radio: The idiom has nothing to do with real music.\n- hard to believe: Disbelief is a different idea.",
+     "position": 6,
+     "options": [
+      {
+       "id": "d530bb0b-243a-5d5c-aed5-76c97d7c4431",
+       "label": "A",
+       "content": "loud and noisy",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "837eeed6-2196-52d8-b8a8-8a68bf709e58",
+       "label": "B",
+       "content": "a song on the radio",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e72431df-1499-5745-aa7f-391660f7c1e3",
+       "label": "C",
+       "content": "very pleasant to hear",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "99938c7d-5484-545a-b6e5-48f9f1c35ada",
+       "label": "D",
+       "content": "hard to believe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "44367487-cb26-5685-b47d-91295d4a7e11",
+     "key": "eng-idiom-07",
+     "stem": "Choose the option that best explains the expression in bold.\n\nSorie **burnt the midnight oil** before his WASSCE examinations.",
+     "image_url": null,
+     "explanation": "To *burn the midnight oil* is to work or study late into the night.\n\n**Why the other options are wrong**\n\n- wasted fuel at night: The idiom has nothing to do with wasting fuel.\n- set fire to his lamp: The idiom is not about a real fire.\n- slept early every night: This is the opposite of the meaning.",
+     "position": 7,
+     "options": [
+      {
+       "id": "fc8770f9-8861-5c43-8f52-beb506734b2a",
+       "label": "A",
+       "content": "wasted fuel at night",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f77be93a-2ae9-58bd-a040-2f2b92a794dd",
+       "label": "B",
+       "content": "set fire to his lamp",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6b48862b-da6e-5db0-b1a3-ad636fad92c4",
+       "label": "C",
+       "content": "slept early every night",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2e8028b1-d39a-5a95-b6ef-f732f63a9e60",
+       "label": "D",
+       "content": "studied late into the night",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -1808,7 +2492,7 @@
    "topic": "Common Confusable Words",
    "title": "Common Confusable Words: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on common confusable words, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on common confusable words, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 119,
    "questions": [
     {
@@ -2000,9 +2684,85 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "acf232ef-0742-56b9-8939-5d45af044693",
+     "key": "eng-conf-06",
+     "stem": "Choose the option that best completes the sentence.\n\nThe ____ of the medicine made the patient sleepy.",
+     "image_url": null,
+     "explanation": "*Effect* (noun) is a result; *affect* (verb) is to have an influence on.\n\n**Why the other options are wrong**\n\n- affect: *Affect* is usually a verb: *The medicine may affect you.*\n- affection: *Affection* means fondness or love.\n- efect: This is a spelling mistake.",
+     "position": 6,
+     "options": [
+      {
+       "id": "ee21801f-59bb-5584-9f3b-ac27d9a2ae0c",
+       "label": "A",
+       "content": "effect",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "09f2011a-07e9-55cb-89d8-c6ce19cd8652",
+       "label": "B",
+       "content": "affect",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6dbd3c57-38af-57eb-9f88-4ce5b09805ed",
+       "label": "C",
+       "content": "affection",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "05a12c28-25ce-56ee-86ee-768380229486",
+       "label": "D",
+       "content": "efect",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3fcd7e03-ecae-5229-a024-f4ce6db318ff",
+     "key": "eng-conf-07",
+     "stem": "Choose the option that best completes the sentence.\n\nThe teacher will not ____ any assignment that is handed in late.",
+     "image_url": null,
+     "explanation": "*Accept* means to receive or agree to; *except* means apart from.\n\n**Why the other options are wrong**\n\n- except: *Except* means *not including*: *everyone except Musa*.\n- expect: *Expect* means to think something will happen.\n- excerpt: An *excerpt* is a short passage taken from a longer text.",
+     "position": 7,
+     "options": [
+      {
+       "id": "55345e0f-8ead-507e-8ccb-6c66c5742685",
+       "label": "A",
+       "content": "except",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "74f45903-bc58-5bad-8a7c-6d4dc1723879",
+       "label": "B",
+       "content": "accept",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d413bd8a-9e83-5ead-ba44-cc59ddd2eace",
+       "label": "C",
+       "content": "expect",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c4d39f9c-f85d-523d-a7b6-bb3425e85d78",
+       "label": "D",
+       "content": "excerpt",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
     }
    ]
   }
  ],
- "version": "d4d3fc189afc"
+ "version": "917aac8ac632"
 }

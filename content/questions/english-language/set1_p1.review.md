@@ -117,11 +117,53 @@ Some nouns ending in -f change to -ves (*leaf, leaves*; *knife, knives*), but *c
 
 ---
 
+### 6. `eng-nouns-06`
+
+Choose the option that best completes the sentence.
+
+Mama bought two new ____ for cutting vegetables.
+
+- **A.** knifes
+- **B.** knife's
+- **C.** knives  ✅
+- **D.** knive
+
+*Knife* → *knives*, like *wife* → *wives* and *leaf* → *leaves*.
+
+**Why the other options are wrong**
+
+- knifes: Nouns ending in *-fe* usually change to *-ves* in the plural; *knifes* is not the plural noun.
+- knife's: The apostrophe shows possession, not a plural.
+- knive: There is no such word; the plural adds *-s* after changing *f* to *v*: *knives*.
+
+---
+
+### 7. `eng-nouns-07`
+
+Choose the option that best completes the sentence.
+
+The market women sold baskets of ripe ____.
+
+- **A.** tomatos
+- **B.** tomato's
+- **C.** tomatoe
+- **D.** tomatoes  ✅
+
+Some nouns ending in *-o* add *-es*: *tomatoes*, *potatoes*, *heroes*, *echoes*. Others add only *-s*: *radios*, *photos*, *pianos*.
+
+**Why the other options are wrong**
+
+- tomatos: *Tomato* takes *-es* in the plural, like *potato* → *potatoes*.
+- tomato's: The apostrophe shows possession, not a plural.
+- tomatoe: There is no such word; the singular is *tomato* and the plural *tomatoes*.
+
+---
+
 ## Pronouns
 
 _Syllabus: Structure: pronouns (case, relative, reflexive and possessive pronouns)_
 
-### 6. `eng-pron-01`
+### 8. `eng-pron-01`
 
 Choose the option that best completes the sentence.
 
@@ -142,7 +184,7 @@ A pronoun after a preposition takes the object form: *between you and me*, *for 
 
 ---
 
-### 7. `eng-pron-02`
+### 9. `eng-pron-02`
 
 Choose the option that best completes the sentence.
 
@@ -163,7 +205,7 @@ The girl ____ father owns the shop at Lumley is my classmate.
 
 ---
 
-### 8. `eng-pron-03`
+### 10. `eng-pron-03`
 
 Choose the option that best completes the sentence.
 
@@ -184,7 +226,7 @@ When the subject and the object are the same person, use a reflexive pronoun: *F
 
 ---
 
-### 9. `eng-pron-04`
+### 11. `eng-pron-04`
 
 Choose the option that best completes the sentence.
 
@@ -205,7 +247,7 @@ A possessive pronoun stands alone in place of a noun, with no apostrophe: *it is
 
 ---
 
-### 10. `eng-pron-05`
+### 12. `eng-pron-05`
 
 Choose the option that best completes the sentence.
 
@@ -226,11 +268,53 @@ For things, the relative pronoun is *which* (or *that*): *the poda-poda which br
 
 ---
 
+### 13. `eng-pron-06`
+
+Choose the option that best completes the sentence.
+
+The man ____ we met at the market yesterday is my uncle.
+
+- **A.** whom  ✅
+- **B.** whose
+- **C.** which
+- **D.** what
+
+*Whom* is the object of *met*: *we met him* → *the man whom we met*.
+
+**Why the other options are wrong**
+
+- whose: *Whose* shows possession, as in *the man whose shop we visited*.
+- which: *Which* is used for things and animals, not people.
+- what: *What* cannot follow a noun to begin a relative clause.
+
+---
+
+### 14. `eng-pron-07`
+
+Choose the option that best completes the sentence.
+
+The two friends looked at ____ and burst out laughing.
+
+- **A.** themselves
+- **B.** each other  ✅
+- **C.** theirselves
+- **D.** ourselves
+
+*Each other* shows a two-way action between two people: A looked at B and B looked at A.
+
+**Why the other options are wrong**
+
+- themselves: *Themselves* would mean that each friend looked at himself or herself.
+- theirselves: *Theirselves* is not standard English.
+- ourselves: *Ourselves* refers to *we*, not to *the two friends*.
+
+---
+
 ## Verbs and Verb Forms
 
 _Syllabus: Structure: verbs (irregular forms, transitive and intransitive pairs, phrasal verbs, verb patterns)_
 
-### 11. `eng-verbs-01`
+### 15. `eng-verbs-01`
 
 Choose the option that best completes the sentence.
 
@@ -251,7 +335,7 @@ By the time we reached the gate, the bell had already ____.
 
 ---
 
-### 12. `eng-verbs-02`
+### 16. `eng-verbs-02`
 
 Choose the option that best completes the sentence.
 
@@ -272,7 +356,7 @@ Every morning the sun ____ in the east.
 
 ---
 
-### 13. `eng-verbs-03`
+### 17. `eng-verbs-03`
 
 Choose the option that best completes the sentence.
 
@@ -293,7 +377,7 @@ After the long journey from Kabala, my grandfather went to ____ down for an hour
 
 ---
 
-### 14. `eng-verbs-04`
+### 18. `eng-verbs-04`
 
 Choose the option that best completes the sentence.
 
@@ -314,7 +398,7 @@ The football match was ____ because the field was flooded.
 
 ---
 
-### 15. `eng-verbs-05`
+### 19. `eng-verbs-05`
 
 Choose the option that best completes the sentence.
 
@@ -335,11 +419,53 @@ My father made me ____ my homework before supper.
 
 ---
 
+### 20. `eng-verbs-06`
+
+Choose the option that best completes the sentence.
+
+The church choir ____ beautifully at the thanksgiving service last Sunday.
+
+- **A.** sung
+- **B.** singed
+- **C.** sang  ✅
+- **D.** sing
+
+*Sing, sang, sung*: the simple past is *sang*.
+
+**Why the other options are wrong**
+
+- sung: *Sung* is the past participle; it needs *has*, *had* or *was*: *had sung*.
+- singed: *Singed* is the past of *singe*, meaning to burn slightly.
+- sing: *Last Sunday* needs the simple past, not the present.
+
+---
+
+### 21. `eng-verbs-07`
+
+Choose the option that best completes the sentence.
+
+My teacher suggested that I ____ more past questions before the examination.
+
+- **A.** to practise
+- **B.** practising
+- **C.** practice
+- **D.** practise  ✅
+
+After *suggest that*, use the base form (*that I practise*) or *should* (*that I should practise*). British spelling: *practise* (verb), *practice* (noun).
+
+**Why the other options are wrong**
+
+- to practise: *Suggest that…* is followed by a clause, not an infinitive.
+- practising: *-ing* cannot follow *that I* here; it needs a verb form such as *practise* or *should practise*.
+- practice: In British English *practice* is the noun; the verb is spelt *practise*.
+
+---
+
 ## Tenses
 
 _Syllabus: Structure: tense and aspect (present perfect, past perfect, continuous forms, time clauses)_
 
-### 16. `eng-tense-01`
+### 22. `eng-tense-01`
 
 Choose the option that best completes the sentence.
 
@@ -360,7 +486,7 @@ An action that started in the past and continues now, with *since* or *for*, tak
 
 ---
 
-### 17. `eng-tense-02`
+### 23. `eng-tense-02`
 
 Choose the option that best completes the sentence.
 
@@ -381,7 +507,7 @@ For the earlier of two past actions, especially with *by the time*, use the past
 
 ---
 
-### 18. `eng-tense-03`
+### 24. `eng-tense-03`
 
 Choose the option that best completes the sentence.
 
@@ -402,7 +528,7 @@ In time clauses about the future (*as soon as, when, before, after, until*), use
 
 ---
 
-### 19. `eng-tense-04`
+### 25. `eng-tense-04`
 
 Choose the option that best completes the sentence.
 
@@ -423,7 +549,7 @@ An action in progress at the moment of speaking takes the present continuous: *a
 
 ---
 
-### 20. `eng-tense-05`
+### 26. `eng-tense-05`
 
 Choose the option that best completes the sentence.
 
@@ -444,11 +570,53 @@ A long action in progress takes the past continuous (*was reading*); the short a
 
 ---
 
+### 27. `eng-tense-06`
+
+Choose the option that best completes the sentence.
+
+I ____ my homework when the light suddenly went off.
+
+- **A.** was doing  ✅
+- **B.** did
+- **C.** have done
+- **D.** am doing
+
+The past continuous (*was doing*) shows an action in progress; the simple past (*went off*) shows the shorter event that interrupted it.
+
+**Why the other options are wrong**
+
+- did: *Did* suggests the homework was completed, not interrupted.
+- have done: The present perfect does not fit a story in the past.
+- am doing: The present continuous does not fit *went off*, which is past.
+
+---
+
+### 28. `eng-tense-07`
+
+Choose the option that best completes the sentence.
+
+By the end of this year, my father ____ at the bank for twenty years.
+
+- **A.** will work
+- **B.** will have worked  ✅
+- **C.** has worked
+- **D.** worked
+
+*By* + a future time + a period of time → the future perfect: *will have worked*.
+
+**Why the other options are wrong**
+
+- will work: *Will work* does not show the twenty years completed by a point in the future.
+- has worked: *Has worked* looks from now, not from the end of the year.
+- worked: *Worked* is past, but the time is in the future.
+
+---
+
 ## Active and Passive Voice
 
 _Syllabus: Structure: the passive (form, tense, modals)_
 
-### 21. `eng-voice-01`
+### 29. `eng-voice-01`
 
 Choose the option that best completes the sentence.
 
@@ -469,7 +637,7 @@ The future passive is *will be* + past participle: *will be opened by the Minist
 
 ---
 
-### 22. `eng-voice-02`
+### 30. `eng-voice-02`
 
 Which option is the correct passive form of this sentence?
 
@@ -493,7 +661,7 @@ To make the passive, the object (*the scripts*) becomes the subject, the verb be
 
 ---
 
-### 23. `eng-voice-03`
+### 31. `eng-voice-03`
 
 Choose the option that best completes the sentence.
 
@@ -514,7 +682,7 @@ The present simple passive is *am/is/are* + past participle: *English is spoken*
 
 ---
 
-### 24. `eng-voice-04`
+### 32. `eng-voice-04`
 
 Choose the option that best completes the sentence.
 
@@ -535,7 +703,7 @@ The thief receives the action, so the verb is passive: *was* + past participle *
 
 ---
 
-### 25. `eng-voice-05`
+### 33. `eng-voice-05`
 
 Choose the option that best completes the sentence.
 
@@ -556,11 +724,56 @@ The passive after a modal is modal + *be* + past participle: *must be written*, 
 
 ---
 
+### 34. `eng-voice-06`
+
+Choose the option that correctly changes this sentence into the passive voice.
+
+*The farmers are harvesting the rice.*
+
+- **A.** The rice was harvested by the farmers.
+- **B.** The rice is harvested by the farmers.
+- **C.** The rice is being harvested by the farmers.  ✅
+- **D.** The farmers are being harvested by the rice.
+
+Present continuous active *are harvesting* → present continuous passive *is being harvested*. The object (*the rice*) becomes the subject.
+
+**Why the other options are wrong**
+
+- The rice was harvested by the farmers.  
+  *Was harvested* changes the tense: the original is in the present continuous.
+- The rice is harvested by the farmers.  
+  This loses the continuous meaning of *are harvesting*.
+- The farmers are being harvested by the rice.  
+  The subject and object have been swapped wrongly.
+
+---
+
+### 35. `eng-voice-07`
+
+Choose the option that best completes the sentence.
+
+The road to Kabala ____ at last.
+
+- **A.** has repaired
+- **B.** has been repair
+- **C.** have been repaired
+- **D.** has been repaired  ✅
+
+Present perfect passive: *has/have been* + past participle. The road did not do the repairing; it received the action.
+
+**Why the other options are wrong**
+
+- has repaired: This is active: it says the road repaired something.
+- has been repair: After *been*, the passive needs the past participle *repaired*.
+- have been repaired: *The road* is singular, so it takes *has*.
+
+---
+
 ## Non-finite Verb Forms
 
 _Syllabus: Structure: gerunds, infinitives and participles_
 
-### 26. `eng-nonfin-01`
+### 36. `eng-nonfin-01`
 
 Choose the option that best completes the sentence.
 
@@ -581,7 +794,7 @@ We are looking forward to ____ our WASSCE results.
 
 ---
 
-### 27. `eng-nonfin-02`
+### 37. `eng-nonfin-02`
 
 Choose the option that best completes the sentence.
 
@@ -602,7 +815,7 @@ After his father's illness, Sorie decided ____ a doctor.
 
 ---
 
-### 28. `eng-nonfin-03`
+### 38. `eng-nonfin-03`
 
 Which sentence is correctly written?
 
@@ -624,7 +837,7 @@ A participle phrase at the start of a sentence must describe the subject that fo
 
 ---
 
-### 29. `eng-nonfin-04`
+### 39. `eng-nonfin-04`
 
 Choose the option that best completes the sentence.
 
@@ -645,7 +858,7 @@ The suspect avoided ____ the question about where he was that night.
 
 ---
 
-### 30. `eng-nonfin-05`
+### 40. `eng-nonfin-05`
 
 Choose the option that best completes the sentence.
 
@@ -666,11 +879,53 @@ ____ his homework, Amadu went out to play football.
 
 ---
 
+### 41. `eng-nonfin-06`
+
+Choose the option that best completes the sentence.
+
+I remember ____ the door this morning, but now it is open.
+
+- **A.** locking  ✅
+- **B.** to lock
+- **C.** lock
+- **D.** locked
+
+*Remember doing*: a memory of a past action. *Remember to do*: not forgetting a future action (*Remember to lock the door tonight*).
+
+**Why the other options are wrong**
+
+- to lock: *Remember to do* means not forgetting to do something in the future; here the action is already past.
+- lock: *Remember* is not followed by the bare infinitive.
+- locked: *Remember* is not followed by a past form.
+
+---
+
+### 42. `eng-nonfin-07`
+
+Choose the option that best completes the sentence.
+
+After three years in the boarding house, she is used to ____ up early.
+
+- **A.** wake
+- **B.** waking  ✅
+- **C.** woke
+- **D.** woken
+
+*Be used to* means *be accustomed to*, and its *to* is a preposition, so it takes the *-ing* form: *used to waking*.
+
+**Why the other options are wrong**
+
+- wake: *Used to + base form* (*she used to wake*) describes a past habit; *be used to* is followed by *-ing*.
+- woke: A past form cannot follow *to* here.
+- woken: A past participle cannot follow *to* here.
+
+---
+
 ## Adjectives
 
 _Syllabus: Structure: adjectives (comparison, order, -ed and -ing forms, quantifiers)_
 
-### 31. `eng-adj-01`
+### 43. `eng-adj-01`
 
 Choose the option that best completes the sentence.
 
@@ -691,7 +946,7 @@ When comparing exactly two, use the comparative: *the taller of the two*.
 
 ---
 
-### 32. `eng-adj-02`
+### 44. `eng-adj-02`
 
 Choose the option that best completes the sentence.
 
@@ -712,7 +967,7 @@ Adjectives usually follow this order: opinion, size, age, shape, colour, origin,
 
 ---
 
-### 33. `eng-adj-03`
+### 45. `eng-adj-03`
 
 Choose the option that best completes the sentence.
 
@@ -733,7 +988,7 @@ The students were ____ by the long lecture on a hot afternoon.
 
 ---
 
-### 34. `eng-adj-04`
+### 46. `eng-adj-04`
 
 Choose the option that best completes the sentence.
 
@@ -754,7 +1009,7 @@ This year's rice harvest is ____ than last year's because the rains came late.
 
 ---
 
-### 35. `eng-adj-05`
+### 47. `eng-adj-05`
 
 Choose the option that best completes the sentence.
 
@@ -775,11 +1030,53 @@ There is very ____ water left in the tank, so we must fetch more from the well.
 
 ---
 
+### 48. `eng-adj-06`
+
+Choose the option that best completes the sentence.
+
+This is the ____ film I have ever watched.
+
+- **A.** more interesting
+- **B.** interestingest
+- **C.** most interesting  ✅
+- **D.** most interested
+
+Superlative of long adjectives: *the most* + adjective. *-ing* adjectives describe the cause of a feeling; *-ed* adjectives describe the feeling.
+
+**Why the other options are wrong**
+
+- more interesting: *More* compares two things; *ever* and *the* call for the superlative.
+- interestingest: Long adjectives form the superlative with *most*, not *-est*.
+- most interested: *Interested* describes how a person feels; a film is *interesting*.
+
+---
+
+### 49. `eng-adj-07`
+
+Choose the option that best completes the sentence.
+
+There were ____ people at the meeting than we expected.
+
+- **A.** less
+- **B.** little
+- **C.** few
+- **D.** fewer  ✅
+
+*Fewer* + plural countable nouns; *less* + uncountable nouns.
+
+**Why the other options are wrong**
+
+- less: *Less* is used with uncountable nouns (*less water*); *people* is countable.
+- little: *Little* is used with uncountable nouns and does not compare.
+- few: *Few* does not compare; *than* needs the comparative *fewer*.
+
+---
+
 ## Prepositions
 
 _Syllabus: Structure: prepositions (time, duration, fixed verb and adjective + preposition pairs)_
 
-### 36. `eng-prep-01`
+### 50. `eng-prep-01`
 
 Choose the option that best completes the sentence.
 
@@ -800,7 +1097,7 @@ Use *at* for clock times (*at 9 a.m.*), *on* for days and dates, and *in* for mo
 
 ---
 
-### 37. `eng-prep-02`
+### 51. `eng-prep-02`
 
 Choose the option that best completes the sentence.
 
@@ -821,7 +1118,7 @@ Some verbs always take the same preposition: *accuse someone of*, *charge someon
 
 ---
 
-### 38. `eng-prep-03`
+### 52. `eng-prep-03`
 
 Choose the option that best completes the sentence.
 
@@ -842,7 +1139,7 @@ Aminata is very good ____ Mathematics.
 
 ---
 
-### 39. `eng-prep-04`
+### 53. `eng-prep-04`
 
 Choose the option that best completes the sentence.
 
@@ -863,7 +1160,7 @@ With the present perfect continuous, use *for* + a length of time (*for two hour
 
 ---
 
-### 40. `eng-prep-05`
+### 54. `eng-prep-05`
 
 Choose the option that best completes the sentence.
 
@@ -884,11 +1181,53 @@ Mohamed is married ____ a nurse who works at Connaught Hospital.
 
 ---
 
+### 55. `eng-prep-06`
+
+Choose the option that best completes the sentence.
+
+My birthday is ____ the fourth of July.
+
+- **A.** on  ✅
+- **B.** in
+- **C.** at
+- **D.** by
+
+*On* is used with days and dates: *on Monday*, *on the fourth of July*.
+
+**Why the other options are wrong**
+
+- in: *In* is used with months and years: *in July*, *in 2026*.
+- at: *At* is used with clock times: *at 9 a.m.*
+- by: *By* means *not later than*, which does not fit a birthday.
+
+---
+
+### 56. `eng-prep-07`
+
+Choose the option that best completes the sentence.
+
+Hawa is afraid ____ dogs because one bit her when she was small.
+
+- **A.** from
+- **B.** of  ✅
+- **C.** with
+- **D.** for
+
+*Afraid of* something or someone is the fixed pattern, like *fond of*, *proud of* and *tired of*.
+
+**Why the other options are wrong**
+
+- from: *Afraid* is not followed by *from*.
+- with: *Afraid* is not followed by *with*.
+- for: *Afraid for* means worried about someone's safety, which is a different meaning.
+
+---
+
 ## Conjunctions
 
 _Syllabus: Structure: conjunctions (contrast, condition, purpose, correlative pairs)_
 
-### 41. `eng-conj-01`
+### 57. `eng-conj-01`
 
 Choose the option that best completes the sentence.
 
@@ -909,7 +1248,7 @@ ____ it was raining heavily, the inter-secondary sports went on.
 
 ---
 
-### 42. `eng-conj-02`
+### 58. `eng-conj-02`
 
 Choose the option that best completes the sentence.
 
@@ -930,7 +1269,7 @@ You will fail the examination ____ you study harder.
 
 ---
 
-### 43. `eng-conj-03`
+### 59. `eng-conj-03`
 
 Choose the option that best completes the sentence.
 
@@ -951,7 +1290,7 @@ Correlative conjunctions come in fixed pairs: *neither… nor*, *either… or*, 
 
 ---
 
-### 44. `eng-conj-04`
+### 60. `eng-conj-04`
 
 Choose the option that best completes the sentence.
 
@@ -972,7 +1311,7 @@ Not only did Hawa pass all her subjects, ____ she also won a scholarship.
 
 ---
 
-### 45. `eng-conj-05`
+### 61. `eng-conj-05`
 
 Choose the option that best completes the sentence.
 
@@ -993,11 +1332,53 @@ He ran all the way to the junction ____ he would not miss the last bus.
 
 ---
 
+### 62. `eng-conj-06`
+
+Choose the option that best completes the sentence.
+
+Either you apologise to your sister ____ you will not go out this evening.
+
+- **A.** nor
+- **B.** and
+- **C.** or  ✅
+- **D.** but
+
+Correlative pairs: *either… or*, *neither… nor*, *both… and*, *not only… but also*.
+
+**Why the other options are wrong**
+
+- nor: *Nor* pairs with *neither*, not *either*.
+- and: *Either* pairs with *or*.
+- but: *But* does not complete *either…*.
+
+---
+
+### 63. `eng-conj-07`
+
+Choose the option that best completes the sentence.
+
+The candidates started writing ____ the invigilator said, "You may begin."
+
+- **A.** although
+- **B.** unless
+- **C.** so that
+- **D.** as soon as  ✅
+
+*As soon as* shows that one action happened immediately after another.
+
+**Why the other options are wrong**
+
+- although: *Although* shows contrast, which does not fit.
+- unless: *Unless* shows a condition, which does not fit.
+- so that: *So that* shows purpose, which does not fit.
+
+---
+
 ## Subject-Verb Agreement
 
 _Syllabus: Structure: concord (subject-verb agreement)_
 
-### 46. `eng-concord-01`
+### 64. `eng-concord-01`
 
 Choose the option that best completes the sentence.
 
@@ -1018,7 +1399,7 @@ Names of subjects ending in -s, such as *Mathematics*, *Economics* and *Physics*
 
 ---
 
-### 47. `eng-concord-02`
+### 65. `eng-concord-02`
 
 Choose the option that best completes the sentence.
 
@@ -1039,7 +1420,7 @@ Each of the candidates ____ given a seat number before the examination.
 
 ---
 
-### 48. `eng-concord-03`
+### 66. `eng-concord-03`
 
 Choose the option that best completes the sentence.
 
@@ -1060,7 +1441,7 @@ Phrases such as *together with*, *as well as* and *along with* do not change the
 
 ---
 
-### 49. `eng-concord-04`
+### 67. `eng-concord-04`
 
 Choose the option that best completes the sentence.
 
@@ -1081,7 +1462,7 @@ With *neither… nor* and *either… or*, the verb agrees with the subject close
 
 ---
 
-### 50. `eng-concord-05`
+### 68. `eng-concord-05`
 
 Choose the option that best completes the sentence.
 
@@ -1099,5 +1480,47 @@ The number of students who passed English ____ increased this year.
 - have: The subject is *the number*, which is singular. (*A number of students have…* is plural.)
 - were: *Were* is plural and past, and it does not form a tense with *increased*.
 - are: *Are increased* is not the right tense, and *the number* is singular.
+
+---
+
+### 69. `eng-concord-06`
+
+Choose the option that best completes the sentence.
+
+The news about the floods ____ very worrying.
+
+- **A.** is  ✅
+- **B.** are
+- **C.** were
+- **D.** have been
+
+*News*, like *mathematics* and *physics*, ends in *-s* but takes a singular verb.
+
+**Why the other options are wrong**
+
+- are: *News* looks plural but is an uncountable noun and takes a singular verb.
+- were: *Were* is plural.
+- have been: *Have* is plural; *news* needs *has been* or *is*.
+
+---
+
+### 70. `eng-concord-07`
+
+Choose the option that best completes the sentence.
+
+One of the boys ____ lost his bag on the way to school.
+
+- **A.** have
+- **B.** has  ✅
+- **C.** are
+- **D.** were
+
+The verb agrees with *one*, not with *boys*: *One of the boys has…*.
+
+**Why the other options are wrong**
+
+- have: The subject is *one*, which is singular; *of the boys* does not change that.
+- are: *Are lost* changes the meaning and is plural.
+- were: *Were* is plural and does not fit with *lost his bag*.
 
 ---

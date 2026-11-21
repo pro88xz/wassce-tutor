@@ -150,6 +150,28 @@ He uses *examination* figuratively: rebuilding the bridge was a hard test, and b
 
 ---
 
+### 7. `eng-comp-07`
+
+What does the fourth paragraph show about the people who built the bridge?
+
+- **A.** They were careless and lost the timber in the river.
+- **B.** They finished the bridge in a single day.
+- **C.** They were determined and kept going when things went wrong.  ✅
+- **D.** They refused to let the children help.
+
+*Twice the current swept away a post… and twice the workers waded back into the cold water to try again. Yet nobody gave up.* The repeated effort shows determination.
+
+**Why the other options are wrong**
+
+- They were careless and lost the timber in the river.  
+  The posts were swept away by the strong current, not because anyone was careless.
+- They finished the bridge in a single day.  
+  The last paragraph says the work took three weeks.
+- They refused to let the children help.  
+  The paragraph says even the children carried stones to steady the posts.
+
+---
+
 ## Tone and Attitude in Comprehension
 
 _Syllabus: Comprehension: the writer's tone, attitude, purpose and mood_
@@ -166,7 +188,7 @@ So I will make you an offer. For every book you finish this holiday, I will buy 
 
 I believe in you. The same hands that scroll so quickly can turn pages just as fast, and the same eyes that never tire of videos can learn to love words. Start tonight. The tin box is open.
 
-### 7. `eng-tone-01`
+### 8. `eng-tone-01`
 
 What is the writer's tone in the second paragraph?
 
@@ -185,7 +207,7 @@ He says the opposite of what he means: *my generation must look very foolish to 
 
 ---
 
-### 8. `eng-tone-02`
+### 9. `eng-tone-02`
 
 What is the writer's attitude to the phone itself, in the third paragraph?
 
@@ -207,7 +229,7 @@ What is the writer's attitude to the phone itself, in the third paragraph?
 
 ---
 
-### 9. `eng-tone-03`
+### 10. `eng-tone-03`
 
 What is the writer's main purpose in the passage?
 
@@ -226,7 +248,7 @@ Everything builds towards reading: the treasured books of his youth, the wasted 
 
 ---
 
-### 10. `eng-tone-04`
+### 11. `eng-tone-04`
 
 Which word best describes the mood of the final paragraph?
 
@@ -245,7 +267,7 @@ Which word best describes the mood of the final paragraph?
 
 ---
 
-### 11. `eng-tone-05`
+### 12. `eng-tone-05`
 
 Why does the writer mention his father's tin box in the first paragraph?
 
@@ -264,7 +286,7 @@ The paragraph opens *a book was a treasure*; keeping three books safe from rain 
 
 ---
 
-### 12. `eng-tone-06`
+### 13. `eng-tone-06`
 
 What does the writer mean by *The tin box is open*?
 
@@ -286,6 +308,25 @@ The tin box stands for books and reading. Saying it is *open* invites the grandc
 
 ---
 
+### 14. `eng-tone-07`
+
+What offer does the writer make to the grandchildren?
+
+- **A.** A new phone for every book they finish
+- **B.** Money for every page they read
+- **C.** A visit to Mama Fatu's stall every day
+- **D.** A bag of groundnuts for every book they finish this holiday  ✅
+
+*For every book you finish this holiday, I will buy you a bag of groundnuts from Mama Fatu's stall, and I will listen while you tell me the story.*
+
+**Why the other options are wrong**
+
+- A new phone for every book they finish: The writer does not offer a phone; he wants them to read books instead of watching videos.
+- Money for every page they read: No money is mentioned; the reward is groundnuts.
+- A visit to Mama Fatu's stall every day: Mama Fatu's stall is where the groundnuts will be bought, not a daily visit.
+
+---
+
 ## Summary Writing
 
 _Syllabus: Summary: identifying main points and leaving out examples and detail_
@@ -302,7 +343,7 @@ Third, revise in short sessions with breaks. The mind tires, and after a long st
 
 Finally, look after your body. Candidates who stay up all night before a paper often cannot remember what they know when they need it most. Regular meals and enough sleep are part of revision, not a distraction from it.
 
-### 13. `eng-sum-01`
+### 15. `eng-sum-01`
 
 Which of the following is one of the habits the writer recommends?
 
@@ -324,7 +365,7 @@ The third paragraph begins: *Second, test yourself rather than simply rereading 
 
 ---
 
-### 14. `eng-sum-02`
+### 16. `eng-sum-02`
 
 Which sentence best summarises the second paragraph?
 
@@ -346,7 +387,7 @@ The paragraph's main point is in its first two sentences: plan your revision, an
 
 ---
 
-### 15. `eng-sum-03`
+### 17. `eng-sum-03`
 
 In a summary of the writer's advice, which of these should be left out because it is an example, not a main point?
 
@@ -368,7 +409,7 @@ A summary keeps the main points and drops illustrations. Cousin Ibrahim's story 
 
 ---
 
-### 16. `eng-sum-04`
+### 18. `eng-sum-04`
 
 How many main habits does the writer recommend?
 
@@ -387,7 +428,7 @@ The habits are signposted: *First* (plan), *Second* (test yourself), *Third* (sh
 
 ---
 
-### 17. `eng-sum-05`
+### 19. `eng-sum-05`
 
 Which sentence best states the main idea of the whole passage?
 
@@ -409,7 +450,7 @@ The first paragraph states the main idea: *The problem is usually not how much t
 
 ---
 
-### 18. `eng-sum-06`
+### 20. `eng-sum-06`
 
 Which of the following is NOT one of the writer's recommendations?
 
@@ -428,5 +469,24 @@ Study groups are never mentioned. The four recommendations are planning, testing
   This is the third habit.
 - Eat regular meals and get enough sleep.  
   This is the last habit.
+
+---
+
+### 21. `eng-sum-07`
+
+Why does the writer say that regular meals and enough sleep *are part of revision, not a distraction from it*?
+
+- **A.** Because a well-fed, rested body helps the mind remember what it has learnt  ✅
+- **B.** Because eating and sleeping take up most of the day
+- **C.** Because candidates should revise while they eat
+- **D.** Because staying up all night is the best way to remember
+
+The last paragraph links rest and food to being able to recall knowledge when it is needed, so looking after the body is part of preparing.
+
+**Why the other options are wrong**
+
+- Because eating and sleeping take up most of the day: The writer does not say this; the point is about memory in the examination.
+- Because candidates should revise while they eat: The passage does not suggest revising during meals.
+- Because staying up all night is the best way to remember: The passage says the opposite: candidates who stay up all night often cannot remember what they know.
 
 ---

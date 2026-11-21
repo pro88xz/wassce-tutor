@@ -238,6 +238,44 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "4febfa4c-15da-52f9-b98d-d0664be113e9",
+     "key": "eng-comp-07",
+     "stem": "What does the fourth paragraph show about the people who built the bridge?",
+     "image_url": null,
+     "explanation": "*Twice the current swept away a post… and twice the workers waded back into the cold water to try again. Yet nobody gave up.* The repeated effort shows determination.\n\n**Why the other options are wrong**\n\n- They were careless and lost the timber in the river.  \n  The posts were swept away by the strong current, not because anyone was careless.\n- They finished the bridge in a single day.  \n  The last paragraph says the work took three weeks.\n- They refused to let the children help.  \n  The paragraph says even the children carried stones to steady the posts.",
+     "position": 7,
+     "options": [
+      {
+       "id": "1e65b937-6b1b-5f85-89a9-ce0c74dde71c",
+       "label": "A",
+       "content": "They were careless and lost the timber in the river.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "65e7717d-095f-5fc0-807b-e396c1bb358d",
+       "label": "B",
+       "content": "They finished the bridge in a single day.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9b624a14-9219-5b1f-a910-36f3ee9a9895",
+       "label": "C",
+       "content": "They were determined and kept going when things went wrong.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0dec0ad6-c4b2-5e41-ace7-3d45ba7fe430",
+       "label": "D",
+       "content": "They refused to let the children help.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -472,6 +510,44 @@
        "id": "12d73076-be9b-5726-9033-84b7ae984354",
        "label": "D",
        "content": "He is inviting them to start reading.",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f6ade725-5877-5685-8a75-679b3e7e035b",
+     "key": "eng-tone-07",
+     "stem": "What offer does the writer make to the grandchildren?",
+     "image_url": null,
+     "explanation": "*For every book you finish this holiday, I will buy you a bag of groundnuts from Mama Fatu's stall, and I will listen while you tell me the story.*\n\n**Why the other options are wrong**\n\n- A new phone for every book they finish: The writer does not offer a phone; he wants them to read books instead of watching videos.\n- Money for every page they read: No money is mentioned; the reward is groundnuts.\n- A visit to Mama Fatu's stall every day: Mama Fatu's stall is where the groundnuts will be bought, not a daily visit.",
+     "position": 7,
+     "options": [
+      {
+       "id": "086cd457-11ec-5628-8de4-f1b9f4d54e11",
+       "label": "A",
+       "content": "A new phone for every book they finish",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d0df9a39-a985-5bc4-85ee-70ba37913e6d",
+       "label": "B",
+       "content": "Money for every page they read",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9c2e6c03-7f04-5479-883f-2e7ae385f899",
+       "label": "C",
+       "content": "A visit to Mama Fatu's stall every day",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b77bd01c-02c2-57ea-9baf-321b145735b0",
+       "label": "D",
+       "content": "A bag of groundnuts for every book they finish this holiday",
        "is_correct": true,
        "position": 3
       }
@@ -714,9 +790,47 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "3564b3fb-fdad-543c-8c11-d3e66a55be59",
+     "key": "eng-sum-07",
+     "stem": "Why does the writer say that regular meals and enough sleep *are part of revision, not a distraction from it*?",
+     "image_url": null,
+     "explanation": "The last paragraph links rest and food to being able to recall knowledge when it is needed, so looking after the body is part of preparing.\n\n**Why the other options are wrong**\n\n- Because eating and sleeping take up most of the day: The writer does not say this; the point is about memory in the examination.\n- Because candidates should revise while they eat: The passage does not suggest revising during meals.\n- Because staying up all night is the best way to remember: The passage says the opposite: candidates who stay up all night often cannot remember what they know.",
+     "position": 7,
+     "options": [
+      {
+       "id": "0834cd18-c159-5fc9-baa2-985bdaf62b4e",
+       "label": "A",
+       "content": "Because a well-fed, rested body helps the mind remember what it has learnt",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6f8a399c-ed83-5790-9d12-1c9b531f5fed",
+       "label": "B",
+       "content": "Because eating and sleeping take up most of the day",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "502f5cb7-3b17-5a99-995d-ea13f4284595",
+       "label": "C",
+       "content": "Because candidates should revise while they eat",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5dbdecc6-70f7-5a9e-93ee-4208f23e2750",
+       "label": "D",
+       "content": "Because staying up all night is the best way to remember",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
     }
    ]
   }
  ],
- "version": "5fe0eb40a200"
+ "version": "7d7119a9e257"
 }
