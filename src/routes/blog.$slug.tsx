@@ -51,12 +51,22 @@ export const Route = createFileRoute('/blog/$slug')({
  * Image metadata for Google Images: one ImageObject for the cover and each
  * chart or photo in the article, with its caption and who to credit. Our own
  * covers and charts are credited to WASSCE Tutor; Pexels and openly licensed
- * photos to their photographer, with the licence. Google can then show the
- * credit in image search and link the image back to this article.
+ * photos to their photographer, with the licence. Each image says where its
+ * terms are (license) and where to get permission to reuse it
+ * (acquireLicensePage): for ours, the Terms page and its "Using our images"
+ * note (routes/terms.tsx); for a photo, the page it came from. Google can then
+ * show the credit and a "Licensable" badge in image search and link the image
+ * back to this article.
  */
 function articleImagesJsonLd(post: BlogPost): Record<string, unknown>[] {
   const year = post.publishedAt.slice(0, 4)
-  const ours = { creator: { '@type': 'Organization', name: SITE.name, url: SITE.origin }, creditText: SITE.name, copyrightNotice: `© ${year} ${SITE.name}` }
+  const ours = {
+    creator: { '@type': 'Organization', name: SITE.name, url: SITE.origin },
+    creditText: SITE.name,
+    copyrightNotice: `© ${year} ${SITE.name}`,
+    license: absoluteUrl('/terms#content'),
+    acquireLicensePage: absoluteUrl('/terms#image-licensing'),
+  }
   const base = (path: string, caption: string, description: string) => ({
     '@context': 'https://schema.org',
     '@type': 'ImageObject',
@@ -70,16 +80,16 @@ function articleImagesJsonLd(post: BlogPost): Record<string, unknown>[] {
   const coverCredit = post.imageSourceLabel === 'WASSCE Tutor'
     ? { ...ours, width: 1200, height: 750 }
     : post.imageSourceLabel === 'Pexels'
-      ? { creator: { '@type': 'Person', name: post.imageCredit.replace(/ via Pexels$/, '') }, creditText: post.imageCredit, license: 'https://www.pexels.com/license/' }
+      ? { creator: { '@type': 'Person', name: post.imageCredit.replace(/ via Pexels$/, '') }, creditText: post.imageCredit, license: 'https://www.pexels.com/license/', acquireLicensePage: post.imageSourceUrl ?? 'https://www.pexels.com/license/' }
       : post.imageLicense
-        ? { creator: { '@type': 'Person', name: post.imageCredit.split(' via ')[0] }, creditText: post.imageCredit, ...(post.imageLicense.url ? { license: post.imageLicense.url } : {}) }
+        ? { creator: { '@type': 'Person', name: post.imageCredit.split(' via ')[0] }, creditText: post.imageCredit, ...(post.imageLicense.url ? { license: post.imageLicense.url } : {}), ...(post.imageSourceUrl ? { acquireLicensePage: post.imageSourceUrl } : {}) }
         : null
   const cover = coverCredit ? [{ ...base(post.image, post.imageAlt, post.description), name: post.title, representativeOfPage: true, ...coverCredit }] : []
   const figures = post.sections.flatMap((section) => {
     const f = section.figure
     if (!f) return []
     const credit = f.photoCredit
-      ? { creator: { '@type': 'Person', name: f.photoCredit.creator }, creditText: `${f.photoCredit.creator} via ${f.photoCredit.source}`, ...(f.photoCredit.licenseUrl ? { license: f.photoCredit.licenseUrl } : {}) }
+      ? { creator: { '@type': 'Person', name: f.photoCredit.creator }, creditText: `${f.photoCredit.creator} via ${f.photoCredit.source}`, ...(f.photoCredit.licenseUrl ? { license: f.photoCredit.licenseUrl } : {}), acquireLicensePage: f.photoCredit.sourceUrl }
       : ours
     return [{ ...base(f.image, f.caption, f.alt), name: f.caption, width: f.width, height: f.height, ...credit }]
   })
