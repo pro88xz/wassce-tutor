@@ -794,6 +794,23 @@
   "questions": 50
  },
  {
+  "name": "agricultural_science_set1_p1",
+  "label": "Agricultural Science: set 1 (agriculture, land tenure, tools, machinery and soil)",
+  "subject_slug": "agricultural-science",
+  "version": "865fa4064ec2",
+  "papers": [
+   "31e903d3-b00d-5969-b375-76e19ba95622",
+   "ea508886-c0db-54da-a647-8835b3ca1c62",
+   "c0b662a8-7e37-5f46-816d-db0b473c6dd1",
+   "394c6f30-b92c-5c1d-b010-dccf1488ea2e",
+   "7d774e42-dcb9-5c42-8537-16f45010e7bf",
+   "61f90683-697b-5a54-85ee-54341f3d3301",
+   "5fc64702-1bb0-57bc-8d48-e77c5ca0d405",
+   "faef65ed-f0cd-502a-bc41-2f5a4c742617"
+  ],
+  "questions": 59
+ },
+ {
   "name": "maths_mock_p1",
   "label": "Mathematics: timed mock exam, Paper 1",
   "subject_slug": "mathematics",

@@ -359,6 +359,22 @@ SETS += [
     )
 ]
 
+SETS += [
+    {
+        "module": ROOT / f"content/questions/agricultural-science/set{n}_p1.py",
+        "subject_slug": "agricultural-science",
+        "name": f"agricultural_science_set{n}_p1",
+        "label": label,
+        "review": ROOT / f"content/questions/agricultural-science/set{n}_p1.review.md",
+        "sort_from": 80 + 20 * n,
+        # Factual answers cannot be recomputed by code: each was checked against the syllabus and the notes.
+        "checked": "facts",
+    }
+    for n, label in (
+        (1, "Agricultural Science: set 1 (agriculture, land tenure, tools, machinery and soil)"),
+    )
+]
+
 # Timed mock exams: a full Paper 1 drawn from a subject's practice sets, with the
 # number of questions and the time the WAEC syllabus gives for that paper.
 # Each mock question is a copy of a practice question (new ids, its own topic),

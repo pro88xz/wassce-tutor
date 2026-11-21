@@ -1,0 +1,2330 @@
+{
+ "name": "agricultural_science_set1_p1",
+ "label": "Agricultural Science: set 1 (agriculture, land tenure, tools, machinery and soil)",
+ "subject_slug": "agricultural-science",
+ "papers": [
+  {
+   "id": "31e903d3-b00d-5969-b375-76e19ba95622",
+   "topic": "Introduction to Agriculture",
+   "title": "Introduction to Agriculture: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on introduction to agriculture, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 100,
+   "questions": [
+    {
+     "id": "be210b91-c308-506c-87c4-169bddd8823f",
+     "key": "agr-in-01",
+     "stem": "Agriculture is best defined as",
+     "image_url": null,
+     "explanation": "Agriculture is the art and science of producing crops and animals, and it includes processing and marketing what is produced.\n\n**Why the other options are wrong**\n\n- the growing of food crops to feed the farmer's own family: This describes subsistence farming only; agriculture also includes animals, sale and processing.\n- the keeping of animals for meat: Animals are only one part of agriculture, and they are kept for milk, eggs, hides and work as well as meat.\n- the scientific study of soils and rocks: The study of soils is soil science, only one branch of agriculture.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f881a47b-fe60-56b9-a23c-6f1cf1b7ad87",
+       "label": "A",
+       "content": "the cultivation of crops and rearing of animals for food, raw materials and income, including processing and marketing",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "57bcd22b-abcf-5cd7-a191-930abee351db",
+       "label": "B",
+       "content": "the growing of food crops to feed the farmer's own family",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ee9f1803-6e72-5bf0-acc9-8290f75b7edd",
+       "label": "C",
+       "content": "the keeping of animals for meat",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5f7eaa8e-d2fd-5b99-b319-521f28ed71ce",
+       "label": "D",
+       "content": "the scientific study of soils and rocks",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1cee6b08-eb98-51cc-850d-73b38aa78e6d",
+     "key": "agr-in-02",
+     "stem": "Which of the following is a feature of subsistence agriculture?",
+     "image_url": null,
+     "explanation": "Subsistence farms are small, grow several crops together, use the hoe and cutlass and family labour, and produce mainly to feed the family, with little left to sell.\n\n**Why the other options are wrong**\n\n- Produce is grown mainly for sale and profit: Producing mainly for sale is commercial agriculture.\n- It uses many machines and hired workers: Machines and hired labour are typical of commercial farms.\n- One crop is grown on a very large area: Large single-crop farms are typical of plantation or commercial farming.",
+     "position": 2,
+     "options": [
+      {
+       "id": "b5c9189a-c854-58da-9db1-d4f6c63deb0d",
+       "label": "A",
+       "content": "Produce is grown mainly for sale and profit",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "35556432-92cc-523f-a782-084b6f121ffa",
+       "label": "B",
+       "content": "It uses mainly family labour and simple hand tools",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2ce63166-2c16-5692-9b73-75a4bce83f66",
+       "label": "C",
+       "content": "It uses many machines and hired workers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "19f1e2c5-e070-5d47-9664-a3ee745f7112",
+       "label": "D",
+       "content": "One crop is grown on a very large area",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "70f2cec6-8b09-5f51-ba97-380ab7c9f9e0",
+     "key": "agr-in-03",
+     "stem": "The branch of agriculture concerned with growing fruits, vegetables and ornamental plants is",
+     "image_url": null,
+     "explanation": "Horticulture covers crops such as pepper, garden eggs, oranges, mangoes and flowers.\n\n**Why the other options are wrong**\n\n- agronomy: Agronomy deals with field crops, such as rice and cassava, and soil management.\n- forestry: Forestry deals with establishing and managing trees and forests.\n- animal husbandry: Animal husbandry is the care, breeding and management of farm animals.",
+     "position": 3,
+     "options": [
+      {
+       "id": "26968e22-f437-58ff-917f-fa83d0c01976",
+       "label": "A",
+       "content": "agronomy",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "09f50be8-f2ff-5082-84d1-4d867a999bca",
+       "label": "B",
+       "content": "forestry",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6e609e8d-c9a3-569c-9aee-c5046eaf31b3",
+       "label": "C",
+       "content": "animal husbandry",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bc0887ea-ceb4-5c58-8652-0dba8a092da4",
+       "label": "D",
+       "content": "horticulture",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f6022d57-19be-5ceb-a57b-0505894a9ce0",
+     "key": "agr-in-04",
+     "stem": "Which of the following is a perennial crop?",
+     "image_url": null,
+     "explanation": "A perennial crop lives and produces for more than two years. Cocoa, coffee, oil palm and cashew are perennials.\n\n**Why the other options are wrong**\n\n- Rice: Rice is an annual: it completes its life cycle in one season.\n- Maize: Maize is an annual crop.\n- Groundnut: Groundnut is an annual crop.",
+     "position": 4,
+     "options": [
+      {
+       "id": "288cd690-0ba9-5a01-b966-1a884089324b",
+       "label": "A",
+       "content": "Cocoa",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5e04223d-acaa-54a4-bd2e-7c426fd7ac55",
+       "label": "B",
+       "content": "Rice",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a755bfd6-1852-5ce8-b0dc-52722b2df042",
+       "label": "C",
+       "content": "Maize",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7dbe27ef-3357-57ec-8681-3ae921857ec8",
+       "label": "D",
+       "content": "Groundnut",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "df28e6f9-a4f2-530f-b23b-4c5120c77a99",
+     "key": "agr-in-05",
+     "stem": "A farmer crops a plot for two or three years, then leaves it to rest and clears another plot, while the family stays in the same permanent village. This farming system is",
+     "image_url": null,
+     "explanation": "In bush fallowing the land rests while natural vegetation restores its organic matter and fertility; the village does not move.\n\n**Why the other options are wrong**\n\n- shifting cultivation: In shifting cultivation the farmer moves the homestead as well as the farm.\n- continuous cropping: In continuous cropping the same land is cropped every year without a rest.\n- mixed farming: Mixed farming means keeping animals and growing crops on the same farm.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d90be677-2bd4-5fc7-af2e-b1a1e777cc93",
+       "label": "A",
+       "content": "shifting cultivation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ebc9c7c4-e3e3-5be4-9e19-abc1ebdfad7e",
+       "label": "B",
+       "content": "bush fallowing (land rotation)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bf3ca281-e686-52f3-9a4c-5152cb772608",
+       "label": "C",
+       "content": "continuous cropping",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "72c7329c-283f-5841-95b4-98b13cbc8e6f",
+       "label": "D",
+       "content": "mixed farming",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e53ea4cf-6a94-5836-a0c4-8fff5fc78678",
+     "key": "agr-in-06",
+     "stem": "An advantage of mixed farming is that",
+     "image_url": null,
+     "explanation": "Mixed farming also spreads the risk across two sources of income and spreads the work through the year.\n\n**Why the other options are wrong**\n\n- it needs very little capital, skill or management: Mixed farming needs more capital, skill and management, because two enterprises must be run.\n- it allows one crop to be grown on a very large scale: Growing one crop on a large scale is monoculture or plantation farming.\n- the animals never damage the crops: Animals can damage crops if they are not controlled; this is a disadvantage of mixed farming.",
+     "position": 6,
+     "options": [
+      {
+       "id": "0dc2ba91-3333-5f8f-8b06-0c151e249638",
+       "label": "A",
+       "content": "it needs very little capital, skill or management",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b1fc0ed5-c37f-591d-b7c3-ad61f2455c1d",
+       "label": "B",
+       "content": "it allows one crop to be grown on a very large scale",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dafa2036-65c5-55af-b674-37d47add0b0b",
+       "label": "C",
+       "content": "animal manure fertilises the crops, and crop residues feed the animals",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "92a93dd5-de0e-58cc-86e4-ac258469552f",
+       "label": "D",
+       "content": "the animals never damage the crops",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dd194b24-053b-5497-9450-60b01745493e",
+     "key": "agr-in-07",
+     "stem": "Which of the following is a socio-economic factor affecting agricultural production?",
+     "image_url": null,
+     "explanation": "Socio-economic factors include capital and credit, labour, land tenure, transport, markets, storage, education and extension, and government policy.\n\n**Why the other options are wrong**\n\n- Rainfall: Rainfall is a climatic (environmental) factor.\n- Soil pH: Soil pH is an edaphic (soil) factor.\n- The steepness of the slope: Slope is a topographic factor.",
+     "position": 7,
+     "options": [
+      {
+       "id": "8237cd16-937c-5adf-a0ec-af0c0b492a32",
+       "label": "A",
+       "content": "Rainfall",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cdd179f7-fd83-5430-8e2c-07cc6d83f35b",
+       "label": "B",
+       "content": "Soil pH",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7c037e2d-2d6c-5eda-b1df-54aefa1d144e",
+       "label": "C",
+       "content": "The steepness of the slope",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2b0f2ea8-8224-5e10-87c0-782444194a3c",
+       "label": "D",
+       "content": "The availability of credit to farmers",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4e192711-4cbc-549b-8d65-c3679156ec43",
+     "key": "agr-in-08",
+     "stem": "High relative humidity affects crop production mainly by",
+     "image_url": null,
+     "explanation": "Fungal spores germinate and spread best in moist, humid conditions, so diseases such as rice blast and cocoa black pod are worse in humid weather.\n\n**Why the other options are wrong**\n\n- increasing the loss of water from leaves: Water loss is greater when the air is dry, that is, when humidity is low.\n- stopping photosynthesis: Humid air does not stop photosynthesis.\n- causing the dry Harmattan winds: The Harmattan is a dry wind; it brings low humidity.",
+     "position": 8,
+     "options": [
+      {
+       "id": "919ccb24-9702-5617-8783-4d8584572f66",
+       "label": "A",
+       "content": "encouraging fungal diseases",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d068b990-08b1-5875-82b2-ade3addb59b2",
+       "label": "B",
+       "content": "increasing the loss of water from leaves",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f48f0493-51b2-59cc-904f-87f6120e4722",
+       "label": "C",
+       "content": "stopping photosynthesis",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d66c6af8-1260-5f28-81af-bda16bef338b",
+       "label": "D",
+       "content": "causing the dry Harmattan winds",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ea508886-c0db-54da-a647-8835b3ca1c62",
+   "topic": "Land Tenure Systems",
+   "title": "Land Tenure Systems: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on land tenure systems, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 101,
+   "questions": [
+    {
+     "id": "dd96d35b-3f94-5fdd-8a49-3236ce2362e7",
+     "key": "agr-lt-01",
+     "stem": "Land tenure is",
+     "image_url": null,
+     "explanation": "Land tenure sets out who holds rights to land, how they get them, what they may do with the land and how it passes to others.\n\n**Why the other options are wrong**\n\n- the amount of rent paid for a piece of land: Rent is only one part of some tenure systems, such as tenancy.\n- the clearing of land for farming: Clearing land is a farm operation, not a system of rights.\n- the fertility of a piece of farmland: Fertility is a property of the soil, not of the rights to the land.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e20d5139-5750-59d6-ac2f-34db92f7ed43",
+       "label": "A",
+       "content": "the amount of rent paid for a piece of land",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "47729482-5563-5e44-bbdc-cafed4d4d585",
+       "label": "B",
+       "content": "the system by which land is owned, acquired, used and transferred",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "746db6b6-c917-591b-a619-267a8986c8fc",
+       "label": "C",
+       "content": "the clearing of land for farming",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1d546bf9-6fb8-5d2c-a28c-39bd48d37c5f",
+       "label": "D",
+       "content": "the fertility of a piece of farmland",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "140fab49-a60b-5651-bb23-c2340418bb9c",
+     "key": "agr-lt-02",
+     "stem": "In Sierra Leone, freehold land, which can be bought and sold outright, is found mainly in",
+     "image_url": null,
+     "explanation": "The Western Area (Freetown and the peninsula) follows English-style law: land can be held freehold and transfers are recorded at the Ministry of Lands.\n\n**Why the other options are wrong**\n\n- the Northern Province: The provinces follow customary tenure, where land belongs mainly to landowning families.\n- the Southern Province: The provinces follow customary tenure, not freehold.\n- the Eastern Province: The provinces follow customary tenure, not freehold.",
+     "position": 2,
+     "options": [
+      {
+       "id": "7c4426d4-84ba-52d2-b2ca-a7f8f1b9e21b",
+       "label": "A",
+       "content": "the Northern Province",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d64e7a10-455e-5574-ad6a-5af806903235",
+       "label": "B",
+       "content": "the Southern Province",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "596491a1-dd60-546b-b3e0-590505770ca2",
+       "label": "C",
+       "content": "the Western Area",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b416040b-828f-5664-9c3c-12d02c13d9d9",
+       "label": "D",
+       "content": "the Eastern Province",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "943d659b-2c08-5773-9135-c068ce81dcaa",
+     "key": "agr-lt-03",
+     "stem": "Under customary tenure in the provinces of Sierra Leone, most farmland belongs to",
+     "image_url": null,
+     "explanation": "Family members farm the land by right; a 'stranger' farmer asks the landowning family or the chief for permission and may give part of the harvest in return.\n\n**Why the other options are wrong**\n\n- the central government, which leases it to every farmer: State land is only a small part of the land; most provincial land is family land.\n- individual farmers who bought it with title deeds: Buying land outright with a title is freehold, found mainly in the Western Area.\n- foreign companies: Companies may lease land for plantations, but the land still belongs to the landowning families.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c2fc4f0a-1885-51f5-9dea-e69b3e04b933",
+       "label": "A",
+       "content": "the central government, which leases it to every farmer",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4600ac2d-40f2-5362-8821-e9d4a0d09cde",
+       "label": "B",
+       "content": "individual farmers who bought it with title deeds",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7000676c-1c08-58f9-9c29-0989f69f9719",
+       "label": "C",
+       "content": "foreign companies",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7f935768-2088-5f68-a6d6-8f01e293e02c",
+       "label": "D",
+       "content": "landowning families, with the paramount chief and chiefdom council as custodians",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7a8b3346-e97a-5690-8275-edcfccce5be6",
+     "key": "agr-lt-04",
+     "stem": "Under a lease, the landowner who grants the right to use the land is called the",
+     "image_url": null,
+     "explanation": "Lessor = owner; lessee = user. The lessee pays rent for an agreed number of years, and the land returns to the lessor at the end.\n\n**Why the other options are wrong**\n\n- lessee: The lessee is the person who receives the right to use the land.\n- sharecropper: A sharecropper pays for the use of land with a share of the harvest.\n- custodian: A custodian, such as a paramount chief, looks after land on behalf of others.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ae58d551-3e78-519c-ade2-b56a66b97fbe",
+       "label": "A",
+       "content": "lessor",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b41f98a2-cac4-50bb-9fc4-9274ee33a2cf",
+       "label": "B",
+       "content": "lessee",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "225d089d-c264-54cc-b2b0-0624ea9d4881",
+       "label": "C",
+       "content": "sharecropper",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a3f0fea0-0bcb-5040-87f3-c3d2c2000f2c",
+       "label": "D",
+       "content": "custodian",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cec59d6d-d329-5adc-ace1-53d74ec71ae0",
+     "key": "agr-lt-05",
+     "stem": "A farmer uses another person's land and, after harvest, gives the owner an agreed share of the crop, such as one-third. This arrangement is",
+     "image_url": null,
+     "explanation": "In sharecropping the payment rises and falls with the harvest, so the owner shares the risk of a poor season.\n\n**Why the other options are wrong**\n\n- cash-rent tenancy: In cash-rent tenancy the farmer pays a fixed sum of money, not a share of the crop.\n- rent in kind: Rent in kind is a fixed quantity of produce, such as two bags of rice, whatever the size of the harvest.\n- freehold: Freehold is outright ownership, with no payment to anyone else for using the land.",
+     "position": 5,
+     "options": [
+      {
+       "id": "c703ff2f-0eb0-5af8-bcac-a0f364cc9ad0",
+       "label": "A",
+       "content": "cash-rent tenancy",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "314ecafb-2e5d-585b-a4d8-60928c5c6125",
+       "label": "B",
+       "content": "sharecropping",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5d7d8240-bd2f-56d6-8444-a6891ac4ab2c",
+       "label": "C",
+       "content": "rent in kind",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5a18fa44-d64b-58bd-8750-7e2cc20fe757",
+       "label": "D",
+       "content": "freehold",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "987a2350-eb84-5a61-930c-4b51d092ecc6",
+     "key": "agr-lt-06",
+     "stem": "Farmers who hold land only on short, insecure arrangements are often unwilling to plant tree crops such as cocoa because",
+     "image_url": null,
+     "explanation": "Secure, predictable access encourages long-term investment: tree planting, soil conservation, irrigation and borrowing for improvements.\n\n**Why the other options are wrong**\n\n- tree crops cannot grow on rented land: Tree crops grow on any suitable soil; the problem is security of the farmer's rights.\n- tree crops cost nothing to establish: Tree crops need a lot of investment and take years to bear; that is the problem.\n- landowners always plant the trees themselves: Who plants the trees depends on the agreement; this is not why tenants avoid them.",
+     "position": 6,
+     "options": [
+      {
+       "id": "72680db0-dbad-5f48-aa2e-2e9d2c57e041",
+       "label": "A",
+       "content": "tree crops cannot grow on rented land",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "707ccf0e-413a-591a-a8fb-03f4d736545b",
+       "label": "B",
+       "content": "tree crops cost nothing to establish",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5090cb1e-1832-5e51-bb48-eae2be0ddc16",
+       "label": "C",
+       "content": "they may lose the land before the trees bear and repay the cost of planting them",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d1b5c5a6-748b-5e03-8bda-c2f9de730dbe",
+       "label": "D",
+       "content": "landowners always plant the trees themselves",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b49cfaba-2bf6-5a9f-b697-b59859f2ddab",
+     "key": "agr-lt-07",
+     "stem": "An advantage of communal (family) land tenure is that",
+     "image_url": null,
+     "explanation": "Communal tenure protects access for people who could not afford to buy land, but it can make large-scale investment and borrowing harder.\n\n**Why the other options are wrong**\n\n- the land can easily be used as security for a bank loan: Family land is hard to mortgage, because no single member owns it outright.\n- it prevents all disputes over land: Disputes can arise over boundaries, inheritance and who may decide.\n- it encourages large, consolidated mechanised farms: Sharing land among many family members tends to break it into small plots.",
+     "position": 7,
+     "options": [
+      {
+       "id": "8cf8cf80-1a32-505f-8e8e-cbfadf9e2adc",
+       "label": "A",
+       "content": "the land can easily be used as security for a bank loan",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8eed5f83-b867-58f9-b215-24eaa13e6990",
+       "label": "B",
+       "content": "it prevents all disputes over land",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ffd7c47c-485a-5719-bb78-6d65103e0fad",
+       "label": "C",
+       "content": "it encourages large, consolidated mechanised farms",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8fb69847-8aa2-5dc0-bcc7-e41512a75470",
+       "label": "D",
+       "content": "members of the family can obtain land to farm without having to buy it",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5eeba3b8-3040-5a6a-b362-b0c2bdbb3a68",
+     "key": "agr-lt-08",
+     "stem": "Which of the following is a use of state land for agricultural development?",
+     "image_url": null,
+     "explanation": "The state uses its land for research stations, government farms and settlements, youth farming schemes, forest reserves and leases to investors.\n\n**Why the other options are wrong**\n\n- A family farm inherited through the lineage: Inherited family land is held under customary tenure.\n- A plot bought freehold near Waterloo: A plot bought outright is private freehold land.\n- A plot rented for one season by a stranger farmer: Renting land for a season is tenancy.",
+     "position": 8,
+     "options": [
+      {
+       "id": "a9884250-7a63-5224-a705-b8d363f83457",
+       "label": "A",
+       "content": "A research station where improved crop varieties are developed and tested",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b591bfae-524a-5941-8399-1cf71b8824b1",
+       "label": "B",
+       "content": "A family farm inherited through the lineage",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "945a538a-4706-5dce-b1dd-4e83f6bd8714",
+       "label": "C",
+       "content": "A plot bought freehold near Waterloo",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "557f53f3-154a-5a70-b69a-11b9b40d8aa4",
+       "label": "D",
+       "content": "A plot rented for one season by a stranger farmer",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c0b662a8-7e37-5f46-816d-db0b473c6dd1",
+   "topic": "Farm Tools and Implements",
+   "title": "Farm Tools and Implements: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on farm tools and implements, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 102,
+   "questions": [
+    {
+     "id": "3865fe88-90cc-5112-9efb-acf7ec659632",
+     "key": "agr-ft-01",
+     "stem": "Which tool is used for harvesting rice and cutting grass?",
+     "image_url": null,
+     "explanation": "The sickle has a curved, crescent-shaped blade that gathers and cuts stems, which is why it is used to harvest rice and other cereals.\n\n**Why the other options are wrong**\n\n- Hoe: The hoe is used for tilling, making ridges and mounds, and weeding.\n- Rake: The rake is used for levelling seedbeds and collecting trash.\n- Shovel: The shovel is used for digging and moving soil, sand and manure.",
+     "position": 1,
+     "options": [
+      {
+       "id": "46f3a57e-bcf5-5b31-85f2-56e5e8453a1c",
+       "label": "A",
+       "content": "Hoe",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e14f7bf6-aa1f-5f95-bd20-4d508fc57821",
+       "label": "B",
+       "content": "Sickle",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "cc229ef2-18b8-53db-a005-c10134568f8f",
+       "label": "C",
+       "content": "Rake",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fff10794-4fc6-5b9d-8e7b-5f18aced4a7b",
+       "label": "D",
+       "content": "Shovel",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "659b6521-c3b2-54d4-999f-72c604a5aa1a",
+     "key": "agr-ft-02",
+     "stem": "The hoe is mainly used for",
+     "image_url": null,
+     "explanation": "The hoe is the farmer's main digging tool. It is also used for earthing up crops such as yam and groundnut.\n\n**Why the other options are wrong**\n\n- measuring and marking out plots: Plots are measured with a measuring tape and ranging poles.\n- spraying pesticides on crops: Pesticides are applied with a knapsack sprayer.\n- weighing harvested produce: Produce is weighed with a spring balance or weighing scale.",
+     "position": 2,
+     "options": [
+      {
+       "id": "9c797dca-1862-516a-96ba-bc0178509778",
+       "label": "A",
+       "content": "measuring and marking out plots",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dcb138c5-4b39-5b3f-a60e-20f3ccf9024d",
+       "label": "B",
+       "content": "spraying pesticides on crops",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "714e16f0-3e23-5478-a155-3823c9b01426",
+       "label": "C",
+       "content": "tilling the soil, making ridges and mounds, and weeding",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1a1c6f80-6d61-5329-8fd1-0a80c5d8c2da",
+       "label": "D",
+       "content": "weighing harvested produce",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2a0bbb2f-3b96-59c7-b2ff-f48cd4304a98",
+     "key": "agr-ft-03",
+     "stem": "A plough pulled by a tractor or by oxen is best described as",
+     "image_url": null,
+     "explanation": "Tools are hand-worked; implements are pulled or driven by animals or tractors; machines have engines.\n\n**Why the other options are wrong**\n\n- a hand tool: Hand tools, such as the hoe and cutlass, are worked by human energy.\n- a machine: A machine, such as a tractor, has its own engine.\n- a measuring instrument: Measuring instruments, such as a tape or rain gauge, measure; they do not till the soil.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0f2cef76-6f15-531e-8a46-6764726087d2",
+       "label": "A",
+       "content": "a hand tool",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "96a9dd15-9fcf-5b3a-bac4-300cb48bf183",
+       "label": "B",
+       "content": "a machine",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7714dea5-b1ed-59f2-b4a8-b7866a1ce416",
+       "label": "C",
+       "content": "a measuring instrument",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5705bba8-c480-5b23-a799-aca62d4feec5",
+       "label": "D",
+       "content": "an implement",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2297db76-c668-51b2-864f-ac189ec9d302",
+     "key": "agr-ft-04",
+     "stem": "Which is the correct way to care for a cutlass after the day's work?",
+     "image_url": null,
+     "explanation": "Cleaning, drying, sharpening, oiling and dry storage make tools last longer and work better. Loose handles should be repaired.\n\n**Why the other options are wrong**\n\n- Leave it in the field, ready for the next day: Left in the open, the blade rusts and the handle rots, and someone may be cut.\n- Store it while it is still wet with sap: Moisture makes the blade rust.\n- Paint over the cutting edge to keep it sharp: Paint does not keep an edge sharp; it must be sharpened with a file.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d6a2c8a3-7fda-53b4-a465-11db1e92fe16",
+       "label": "A",
+       "content": "Clean and dry it, sharpen it, oil the blade and store it in a dry place",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "73bbf3e8-72e1-5afd-9c6e-854fc6a9f074",
+       "label": "B",
+       "content": "Leave it in the field, ready for the next day",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e87f8556-67fe-53c3-9d78-7019e8e6738a",
+       "label": "C",
+       "content": "Store it while it is still wet with sap",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a870bca1-3ad0-57c8-bc91-f36c9ead01bd",
+       "label": "D",
+       "content": "Paint over the cutting edge to keep it sharp",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "933855dc-1d93-5ea4-a3a4-928b26e81dcd",
+     "key": "agr-ft-05",
+     "stem": "A knapsack sprayer is used for",
+     "image_url": null,
+     "explanation": "The sprayer is carried on the back and pumped by hand. Users should wear protective clothing and wash after spraying.\n\n**Why the other options are wrong**\n\n- watering seedlings in a nursery: Seedlings are watered with a watering can, which gives a gentle spray of water.\n- carrying harvested crops from the farm: Crops and manure are carried with a wheelbarrow.\n- breaking hard ground and digging out stumps: Hard ground and stumps are dealt with using a mattock or pickaxe.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f189f505-7f28-5e72-b4f0-ec96b126fcac",
+       "label": "A",
+       "content": "watering seedlings in a nursery",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0f82ddcf-465b-5f52-9c4e-09e37e8a775f",
+       "label": "B",
+       "content": "applying pesticides and herbicides to crops",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f73df0bb-db72-5d6b-a08a-6578784b3b89",
+       "label": "C",
+       "content": "carrying harvested crops from the farm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dfce9dc5-1c0f-56cf-8b4c-800bb45c78a1",
+       "label": "D",
+       "content": "breaking hard ground and digging out stumps",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "018b906b-511e-5cd7-a5da-51bceb917cc7",
+     "key": "agr-ft-06",
+     "stem": "A measuring tape and ranging poles are used on the farm to",
+     "image_url": null,
+     "explanation": "Ranging poles mark straight lines across a field, and the tape measures distances, so plots of a known area can be laid out.\n\n**Why the other options are wrong**\n\n- test the pH of the soil: Soil pH is measured with a pH meter or indicator kit.\n- record the rainfall: Rainfall is recorded with a rain gauge.\n- weigh fertiliser before application: Fertiliser is weighed with a spring balance or scale.",
+     "position": 6,
+     "options": [
+      {
+       "id": "c2b8dd19-e65a-52fb-8f0c-1a8a13696618",
+       "label": "A",
+       "content": "test the pH of the soil",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d77fd2f3-879c-57c8-917e-bb0223f989c5",
+       "label": "B",
+       "content": "record the rainfall",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "aaf9ff3f-6ee7-5568-b875-3dbc021709f8",
+       "label": "C",
+       "content": "measure and mark out plots",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9575dec2-f4f3-5510-9130-990bcf07da27",
+       "label": "D",
+       "content": "weigh fertiliser before application",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0d8ea723-e0a4-5315-82b2-45588c09bc8e",
+     "key": "agr-ft-07",
+     "stem": "Which is a safe way to carry a cutlass on the farm?",
+     "image_url": null,
+     "explanation": "Carry sharp tools blade down, keep a safe distance from others while working, and wear boots.\n\n**Why the other options are wrong**\n\n- On the shoulder with the blade facing up: A raised blade can cut the carrier or someone nearby.\n- Swinging it while walking in a group: Swinging a cutlass near others is the commonest cause of cuts on the farm.\n- Left lying hidden in the grass: A cutlass hidden in grass can cause a serious injury to anyone who steps on it.",
+     "position": 7,
+     "options": [
+      {
+       "id": "f2e89239-4003-593f-95d9-33b578d15df8",
+       "label": "A",
+       "content": "On the shoulder with the blade facing up",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "45e3d733-dd91-570c-97ed-0478fcccc67a",
+       "label": "B",
+       "content": "Swinging it while walking in a group",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8da53e36-697f-5403-b6b8-0c05b036dda6",
+       "label": "C",
+       "content": "Left lying hidden in the grass",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c5cc870c-6459-5e1f-b601-524a411d281a",
+       "label": "D",
+       "content": "With the blade pointing down, away from other people",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "394c6f30-b92c-5c1d-b010-dccf1488ea2e",
+   "topic": "Farm Machinery and Mechanization",
+   "title": "Farm Machinery and Mechanization: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on farm machinery and mechanization, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 103,
+   "questions": [
+    {
+     "id": "94116fbd-5ce4-5df6-8dec-1d23ac3d85e9",
+     "key": "agr-fm-01",
+     "stem": "The part of a tractor that transmits engine power to drive implements such as a rotavator or sprayer is the",
+     "image_url": null,
+     "explanation": "The PTO is a rotating shaft at the back of the tractor. Loose clothing must be kept well away from it.\n\n**Why the other options are wrong**\n\n- drawbar: The drawbar is a bar for pulling trailed implements and trailers.\n- three-point linkage: The three-point linkage attaches mounted implements to the back of the tractor.\n- hydraulic system: The hydraulic system raises and lowers mounted implements.",
+     "position": 1,
+     "options": [
+      {
+       "id": "9e04017a-9e8f-5898-a44f-e163908da799",
+       "label": "A",
+       "content": "power take-off (PTO)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3c770d44-9b7f-590f-abc1-ddd9426fabcb",
+       "label": "B",
+       "content": "drawbar",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "12fcdb3f-fac2-5e5e-9f9b-29307e522b4c",
+       "label": "C",
+       "content": "three-point linkage",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4fe101a9-2a41-5bce-8073-764a74ea9946",
+       "label": "D",
+       "content": "hydraulic system",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b56f0011-7ad9-5465-8093-9bd01d3dfc0f",
+     "key": "agr-fm-02",
+     "stem": "Which implement is used for primary tillage, to break and turn the soil and bury weeds and trash?",
+     "image_url": null,
+     "explanation": "Primary tillage (ploughing) opens and turns the soil; secondary tillage (harrowing) then breaks the clods into a fine tilth.\n\n**Why the other options are wrong**\n\n- Disc harrow: The disc harrow is used after ploughing, for secondary tillage.\n- Ridger: The ridger makes ridges for crops such as cassava and sweet potato.\n- Boom sprayer: The boom sprayer applies chemicals evenly over a crop.",
+     "position": 2,
+     "options": [
+      {
+       "id": "97c74138-7e45-557a-b1fe-542daa57af16",
+       "label": "A",
+       "content": "Disc harrow",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5c81b214-2f2c-5369-845e-9f3cfa3ee603",
+       "label": "B",
+       "content": "Disc plough",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8776e033-62fb-5b51-afdf-6cbe5a21d274",
+       "label": "C",
+       "content": "Ridger",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b28696fc-5524-5be8-9e4c-bae9f7cdc115",
+       "label": "D",
+       "content": "Boom sprayer",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bd719e13-fb5d-5597-86fe-5032bd3ba57e",
+     "key": "agr-fm-03",
+     "stem": "After a field has been ploughed, a harrow is used to",
+     "image_url": null,
+     "explanation": "A fine, level tilth gives good contact between seed and soil, so seeds germinate evenly.\n\n**Why the other options are wrong**\n\n- turn the soil over and bury the weeds: Turning the soil and burying weeds is the job of the plough.\n- make ridges for planting cassava: Ridges are made with a ridger.\n- cut and thresh the crop: Cutting and threshing is done by a combine harvester.",
+     "position": 3,
+     "options": [
+      {
+       "id": "437308a4-ef8f-52c3-aa9c-330a067eced5",
+       "label": "A",
+       "content": "turn the soil over and bury the weeds",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4c3fd08c-5fde-5f6c-a67e-eb30d842b333",
+       "label": "B",
+       "content": "make ridges for planting cassava",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c74ac99b-ef98-57bf-82eb-f79efb848a46",
+       "label": "C",
+       "content": "break the clods into a fine tilth and level the land",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1808826b-eb8a-500b-81a7-9fb104e80696",
+       "label": "D",
+       "content": "cut and thresh the crop",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4f175a1a-86a2-5c01-b63e-ca71acf3dde2",
+     "key": "agr-fm-04",
+     "stem": "A machine that cuts a cereal crop and threshes the grain in one operation is a",
+     "image_url": null,
+     "explanation": "The combine harvester combines reaping and threshing, saving a great deal of labour at harvest.\n\n**Why the other options are wrong**\n\n- rice thresher: A thresher separates grain from straw that has already been cut.\n- reaper: A reaper cuts the crop but does not thresh it.\n- rice mill (huller): A rice mill removes the husk from threshed rice.",
+     "position": 4,
+     "options": [
+      {
+       "id": "dedc089a-8613-5884-b3a4-d640f64896ee",
+       "label": "A",
+       "content": "rice thresher",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a5d84347-e577-5b9d-a353-918bbc4b63cc",
+       "label": "B",
+       "content": "reaper",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "990fe3bf-c8de-5429-be04-0942aad755d9",
+       "label": "C",
+       "content": "rice mill (huller)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4a448668-6946-53ad-a9a7-f03c693dc5db",
+       "label": "D",
+       "content": "combine harvester",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "830646b9-4a08-54fe-8885-ade5a65d136f",
+     "key": "agr-fm-05",
+     "stem": "An advantage of farm mechanisation is that it",
+     "image_url": null,
+     "explanation": "Mechanisation lets operations be done on time, reduces the need for scarce hired labour at peak times, and can make farming more attractive to young people.\n\n**Why the other options are wrong**\n\n- costs very little to buy and run: Tractors, implements, fuel and spare parts are expensive.\n- works best on small, scattered plots full of stumps: Small plots, stumps and rocks make mechanisation difficult.\n- needs no skilled operators or mechanics: Machines need trained operators and mechanics, who are scarce.",
+     "position": 5,
+     "options": [
+      {
+       "id": "2d027152-1543-559e-a2a4-9d201d8413ac",
+       "label": "A",
+       "content": "reduces drudgery and allows large areas to be worked quickly",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "defa38b9-17f4-5ca8-afd0-21f8a28e5127",
+       "label": "B",
+       "content": "costs very little to buy and run",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bbd77415-74e1-5531-8d53-2e76a6586de0",
+       "label": "C",
+       "content": "works best on small, scattered plots full of stumps",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "71c96888-2598-56cf-98e6-0e8be0578b96",
+       "label": "D",
+       "content": "needs no skilled operators or mechanics",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1a88ef82-2b4a-5b77-bc0f-033702fb7839",
+     "key": "agr-fm-06",
+     "stem": "For a small farmer in Sierra Leone, the most practical way to use a tractor is usually",
+     "image_url": null,
+     "explanation": "Hiring services, Agricultural Business Centres and cooperatives let many small farmers share machines and services.\n\n**Why the other options are wrong**\n\n- to buy a large tractor for a two-hectare farm: A tractor costs far more than a small farm can repay.\n- to use a heavy four-wheel tractor in a waterlogged swamp: Heavy tractors sink in waterlogged swamps.\n- to use the tractor only for carrying drinking water: This wastes an expensive machine; it should be used for tillage and other operations.",
+     "position": 6,
+     "options": [
+      {
+       "id": "f7f83355-9184-52f0-84ba-774610342db2",
+       "label": "A",
+       "content": "to buy a large tractor for a two-hectare farm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "188ab50b-be31-58f3-b554-c0730060bf39",
+       "label": "B",
+       "content": "to hire a tractor and its operator by the hectare, or share one through a cooperative",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6387db54-30b4-5daa-81e4-e0eeecd4e9fc",
+       "label": "C",
+       "content": "to use a heavy four-wheel tractor in a waterlogged swamp",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "accd04c3-b654-5ae8-8cac-209c6eb50920",
+       "label": "D",
+       "content": "to use the tractor only for carrying drinking water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f36f8a34-2749-5a58-aac9-a6388a8dec23",
+     "key": "agr-fm-07",
+     "stem": "Which machine is most suitable for tilling waterlogged inland valley swamps and bolilands?",
+     "image_url": null,
+     "explanation": "A power tiller is a small two-wheel tractor steered by an operator walking behind it. It is light enough to work in swamps without sinking.\n\n**Why the other options are wrong**\n\n- Large four-wheel tractor: Heavy four-wheel tractors often get stuck in waterlogged soil.\n- Combine harvester: A combine harvester harvests crops; it does not till the soil.\n- Bulldozer: A bulldozer clears trees and stumps; it is far too heavy for swamp tillage.",
+     "position": 7,
+     "options": [
+      {
+       "id": "8dc7fb38-755f-51ad-a841-028958e11c1d",
+       "label": "A",
+       "content": "Large four-wheel tractor",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6264eb22-a26a-5d7f-aa30-564715cb9ed2",
+       "label": "B",
+       "content": "Combine harvester",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b2c26c18-61b5-53d6-aa8d-97bc8a4a3ab2",
+       "label": "C",
+       "content": "Power tiller",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "31996589-906d-59ec-b19d-52c9761377ea",
+       "label": "D",
+       "content": "Bulldozer",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7d774e42-dcb9-5c42-8537-16f45010e7bf",
+   "topic": "Soil Formation and Composition",
+   "title": "Soil Formation and Composition: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on soil formation and composition, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 104,
+   "questions": [
+    {
+     "id": "9199fb09-6366-5c7f-841c-5e49d007c45e",
+     "key": "agr-sf-01",
+     "stem": "A soil formed from granite parent rock is usually",
+     "image_url": null,
+     "explanation": "Parent material sets a soil's minerals and texture. Granite contains much quartz, which resists weathering and remains as sand.\n\n**Why the other options are wrong**\n\n- clayey: Clayey soils usually form from rocks such as basalt and shale.\n- peaty: Peaty soils form where plant remains build up in waterlogged places, not from the rock.\n- rich in lime: Soils rich in lime form from limestone, not granite.",
+     "position": 1,
+     "options": [
+      {
+       "id": "4431c0c6-270e-51c8-a2d3-da06b909960c",
+       "label": "A",
+       "content": "clayey",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0228dd0c-162c-529c-854a-c1e127b37554",
+       "label": "B",
+       "content": "peaty",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b5c71b93-2ac3-51b0-9e6d-534c0ef5c8b6",
+       "label": "C",
+       "content": "rich in lime",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3f3906a5-fe2b-5dea-90d9-113882619960",
+       "label": "D",
+       "content": "sandy",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8b203873-add7-5749-bc04-4a1ef0b14e48",
+     "key": "agr-sf-02",
+     "stem": "The red and yellow colours of many tropical soils, and the formation of laterite, are caused mainly by",
+     "image_url": null,
+     "explanation": "Oxidation is a form of chemical weathering: iron reacts with oxygen to form iron oxides, which colour the soil and can harden into laterite (ironstone).\n\n**Why the other options are wrong**\n\n- hydrolysis of feldspar: Hydrolysis of feldspar forms clay; it does not give red colours.\n- carbonation of limestone: Carbonation dissolves limestone; it does not give red colours.\n- the build-up of humus: Humus makes a soil dark brown or black, not red.",
+     "position": 2,
+     "options": [
+      {
+       "id": "73eb26df-6bcb-52cb-b00c-b6ec98b77fa6",
+       "label": "A",
+       "content": "the oxidation of iron in the rock",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4b072195-7684-5989-b6f8-934d2c01cfd7",
+       "label": "B",
+       "content": "hydrolysis of feldspar",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "67ccb4a9-bdfe-5cc9-925d-4aafe92e2cb4",
+       "label": "C",
+       "content": "carbonation of limestone",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "08a55cdb-2e55-5f2a-8bd0-512c453b3765",
+       "label": "D",
+       "content": "the build-up of humus",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "458a83b9-073b-5605-b642-30f93e092f6b",
+     "key": "agr-sf-03",
+     "stem": "The outer layers of a rock peel off after it has been heated by the sun each day and cooled each night for many years. This process is",
+     "image_url": null,
+     "explanation": "Physical weathering breaks rock into smaller pieces without changing its minerals; chemical weathering changes the minerals.\n\n**Why the other options are wrong**\n\n- oxidation, a type of chemical weathering: Oxidation changes the minerals in the rock; peeling from heating and cooling does not.\n- carbonation, a type of chemical weathering: Carbonation is the dissolving of limestone by rainwater containing carbon dioxide.\n- biological weathering by roots: Roots widen cracks; they do not cause layers to peel off with temperature changes.",
+     "position": 3,
+     "options": [
+      {
+       "id": "f2a10456-80d8-5790-a353-ea4ea10c7910",
+       "label": "A",
+       "content": "oxidation, a type of chemical weathering",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "12065641-e467-5b0f-8fb0-19613bd4602f",
+       "label": "B",
+       "content": "exfoliation, a type of physical weathering",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "adca4638-5ba9-556c-bd4c-8ccbd016b404",
+       "label": "C",
+       "content": "carbonation, a type of chemical weathering",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2c1a11ed-bc44-5029-9be1-4c9d351bf89a",
+       "label": "D",
+       "content": "biological weathering by roots",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "768717a3-4cfa-5146-9262-dccb953274a0",
+     "key": "agr-sf-04",
+     "stem": "Which of the following is an example of biological weathering?",
+     "image_url": null,
+     "explanation": "Biological weathering is caused by living things: roots, burrowing animals such as termites and earthworms, and lichens and microbes that release acids.\n\n**Why the other options are wrong**\n\n- Rainwater containing carbon dioxide dissolving limestone: This is carbonation, a type of chemical weathering.\n- Rock expanding and contracting with changes of temperature: This is physical weathering.\n- Water reacting with feldspar to form clay: This is hydrolysis, a type of chemical weathering.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2e5d5e2b-c4a2-56b2-abba-9b1aaaec585d",
+       "label": "A",
+       "content": "Rainwater containing carbon dioxide dissolving limestone",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e7142a9f-8efb-51e7-9f39-e3fd1227b079",
+       "label": "B",
+       "content": "Rock expanding and contracting with changes of temperature",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3e61ddfd-26ed-5bf7-ba13-7fc01ed4a934",
+       "label": "C",
+       "content": "Roots growing into cracks in a rock and widening them",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ae88c31f-2010-53c5-be21-35c4c2bb11fd",
+       "label": "D",
+       "content": "Water reacting with feldspar to form clay",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "39766094-a52d-562f-b4f0-30854eb9ccda",
+     "key": "agr-sf-05",
+     "stem": "In a soil profile, the layer in which minerals and clay washed down from above accumulate is the",
+     "image_url": null,
+     "explanation": "O (leaf litter) → A (topsoil, dark and fertile) → B (subsoil, where leached material collects) → C (weathered parent material) → R (bedrock).\n\n**Why the other options are wrong**\n\n- A horizon (topsoil): The topsoil is where nutrients are leached from, not where they collect.\n- C horizon: The C horizon is broken, partly weathered parent material.\n- O horizon: The O horizon is the layer of fresh and decaying leaves on the surface.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a17293af-67d5-58b1-a621-c48b8cec14a9",
+       "label": "A",
+       "content": "A horizon (topsoil)",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "83645895-a211-5ee8-9460-985c00fab3a8",
+       "label": "B",
+       "content": "C horizon",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cb103163-e29f-58e2-a4d2-d7fc284905a8",
+       "label": "C",
+       "content": "O horizon",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f7c15908-3b39-5a7e-899e-aaf9447c0f2c",
+       "label": "D",
+       "content": "B horizon (subsoil)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2edc1562-84e5-56fc-9cc3-bf6cfe4b165a",
+     "key": "agr-sf-06",
+     "stem": "Which component of the soil supplies oxygen for the respiration of roots and soil organisms?",
+     "image_url": null,
+     "explanation": "Waterlogged soil has its air spaces filled with water, so roots of most crops suffocate. Good drainage keeps air in the soil.\n\n**Why the other options are wrong**\n\n- Soil water: Soil water dissolves nutrients so that roots can absorb them.\n- Mineral matter: Mineral matter forms the skeleton of the soil and supplies mineral nutrients.\n- Humus: Humus holds water and nutrients and improves structure.",
+     "position": 6,
+     "options": [
+      {
+       "id": "dea546d8-a9ea-5510-9132-77b3ab8fa8d3",
+       "label": "A",
+       "content": "Soil air",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "46ddb598-cbde-5cfa-8d67-0bbe47226994",
+       "label": "B",
+       "content": "Soil water",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "87b2362c-e08b-5c05-92a3-89a914f07c2e",
+       "label": "C",
+       "content": "Mineral matter",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f50747ae-06bb-56dd-8ee2-42a8e4a97069",
+       "label": "D",
+       "content": "Humus",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "716eb134-9265-5399-97bb-c2d22dda4f39",
+     "key": "agr-sf-07",
+     "stem": "Soils on steep slopes are usually thin because",
+     "image_url": null,
+     "explanation": "Topography affects soil depth: soil washes off steep slopes and collects as deep, often wet soils in valley bottoms.\n\n**Why the other options are wrong**\n\n- steep slopes receive no rainfall: Slopes receive rain like any other land; the run-off on them carries soil away.\n- rock does not weather on slopes: Rock weathers on slopes too; the weathered material does not stay there.\n- no plants can grow on slopes: Plants grow on slopes, and their roots help hold the soil.",
+     "position": 7,
+     "options": [
+      {
+       "id": "f228cc33-baf0-5797-8378-61e05d843675",
+       "label": "A",
+       "content": "steep slopes receive no rainfall",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ac99e0b6-4cb4-5c86-8c32-84e00fc1c116",
+       "label": "B",
+       "content": "soil is washed downhill almost as fast as it forms",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "88691df6-c550-5280-91ba-25228422b39c",
+       "label": "C",
+       "content": "rock does not weather on slopes",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e3814325-6d5d-53b0-8edf-0b3b815afca5",
+       "label": "D",
+       "content": "no plants can grow on slopes",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "61f90683-697b-5a54-85ee-54341f3d3301",
+   "topic": "Soil Properties and Types",
+   "title": "Soil Properties and Types: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on soil properties and types, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 105,
+   "questions": [
+    {
+     "id": "c3aff57b-7235-58dd-97f6-c4c801b94787",
+     "key": "agr-sp-01",
+     "stem": "Soil texture refers to",
+     "image_url": null,
+     "explanation": "Texture depends on particle sizes and is hard to change; structure is how the particles are arranged and can be improved, for example by adding organic matter.\n\n**Why the other options are wrong**\n\n- the way soil particles are grouped together into crumbs: This is soil structure.\n- how easily water passes through the soil: This is permeability.\n- the amount of pore space between the particles: This is porosity.",
+     "position": 1,
+     "options": [
+      {
+       "id": "2f3df009-6119-5a07-8d50-aaf0ce48404e",
+       "label": "A",
+       "content": "the way soil particles are grouped together into crumbs",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "77dd6133-db2e-5d75-8d4e-7b56c851ec55",
+       "label": "B",
+       "content": "how easily water passes through the soil",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fb186aec-1ccb-59b2-8b58-0a5e077350ff",
+       "label": "C",
+       "content": "the proportions of sand, silt and clay particles in a soil",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e90ca1e7-58f8-523a-bfd2-baaa61c34df5",
+       "label": "D",
+       "content": "the amount of pore space between the particles",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1b101c92-1ec4-526c-8f48-2394d3c20d49",
+     "key": "agr-sp-02",
+     "stem": "A soil sample is shaken with water in a jar and left to settle. Which of the following describes the result?",
+     "image_url": null,
+     "explanation": "This sedimentation experiment shows the components of soil: the largest, heaviest particles settle first and the finest last.\n\n**Why the other options are wrong**\n\n- Clay settles at the bottom and sand settles on top: Heavy sand settles first, at the bottom; fine clay settles last.\n- Organic matter sinks to the bottom first: Organic matter is light and floats on the water.\n- All the particles settle together in one mixed layer: Particles settle at different rates according to their size, so they form separate layers.",
+     "position": 2,
+     "options": [
+      {
+       "id": "14534639-0259-5359-940d-50a73176424b",
+       "label": "A",
+       "content": "Clay settles at the bottom and sand settles on top",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5051dc7f-b31c-5bc5-b9d1-fea76cf7edf2",
+       "label": "B",
+       "content": "Organic matter sinks to the bottom first",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "46674e18-d384-523f-9c90-391de7ca2688",
+       "label": "C",
+       "content": "All the particles settle together in one mixed layer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3a300c4c-f859-51bb-85f1-c12c1425cce6",
+       "label": "D",
+       "content": "Gravel and sand settle at the bottom, clay settles last on top, and organic matter floats",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5456286f-e330-5fda-bbf0-9b9da89eab7c",
+     "key": "agr-sp-03",
+     "stem": "Compared with a sandy soil, a clay soil",
+     "image_url": null,
+     "explanation": "Clay has very small pores, so it holds water but lets little air in and can become waterlogged. Sand has large pores and drains quickly.\n\n**Why the other options are wrong**\n\n- drains water away faster: Sandy soil drains fastest because of its large pore spaces.\n- is lighter and easier to dig: Sandy soil is light; clay is heavy and sticky when wet.\n- holds fewer plant nutrients: Clay particles hold nutrients well; sandy soils are usually poorer.",
+     "position": 3,
+     "options": [
+      {
+       "id": "6199c1a1-ddcb-5524-b3a4-725190605ce5",
+       "label": "A",
+       "content": "holds more water but is poorly aerated",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7129eb74-129b-533a-8df8-43c8385eff68",
+       "label": "B",
+       "content": "drains water away faster",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "52747558-0773-51c9-bd55-564ae40c1be3",
+       "label": "C",
+       "content": "is lighter and easier to dig",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d431b798-58a5-51ca-a4a5-fddbf93f9471",
+       "label": "D",
+       "content": "holds fewer plant nutrients",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fc16c475-6ad3-5e6d-a735-7e47188a27f6",
+     "key": "agr-sp-04",
+     "stem": "Which type of soil is generally best for most crops?",
+     "image_url": null,
+     "explanation": "Loam is a mixture of sand, silt and clay with humus. It drains well yet holds enough water and nutrients, and is easy to work.\n\n**Why the other options are wrong**\n\n- Sandy soil, because it drains fastest: Sandy soil drains so fast that it dries out and loses nutrients by leaching.\n- Clay soil, because it holds the most water: Clay holds water but is heavy, poorly aerated and easily waterlogged.\n- Gravelly soil, because it is easiest to dig: Gravelly soil holds little water or nutrients.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2c5db0a4-89c8-5aba-85e8-029df4d47070",
+       "label": "A",
+       "content": "Sandy soil, because it drains fastest",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "00b6654e-e33d-5357-b858-16e6c28eeda8",
+       "label": "B",
+       "content": "Loam, because it balances drainage, aeration and water-holding",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6325d00c-9d77-5f3e-a7cb-41455b36c08b",
+       "label": "C",
+       "content": "Clay soil, because it holds the most water",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cd66e8f0-ae95-5e47-b48a-0e3e574b6382",
+       "label": "D",
+       "content": "Gravelly soil, because it is easiest to dig",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c216a282-4975-5cc1-ae74-260855b25af5",
+     "key": "agr-sp-05",
+     "stem": "Many leached upland soils in Sierra Leone are acidic. Their acidity is corrected by adding",
+     "image_url": null,
+     "explanation": "Most crops prefer a pH of about 5.5 to 7. Heavy rainfall leaches bases from the soil and leaves it acidic; liming raises the pH.\n\n**Why the other options are wrong**\n\n- sulfate of ammonia: Sulfate of ammonia is a nitrogen fertiliser that tends to make soils more acidic.\n- urea: Urea is a nitrogen fertiliser; it does not correct acidity.\n- common salt: Salt does not correct acidity and can damage crops.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ff26516c-b8ac-5a60-a64b-df6be2ee83cb",
+       "label": "A",
+       "content": "sulfate of ammonia",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e60774e2-d1f6-5f71-9e79-958a5230440d",
+       "label": "B",
+       "content": "urea",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "032eaf76-c43e-5693-bacd-1701347284a9",
+       "label": "C",
+       "content": "lime",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d2b29c47-7668-5753-b9b4-b48c9c464864",
+       "label": "D",
+       "content": "common salt",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2bbc314d-83cf-5975-8b0f-4551d69728cb",
+     "key": "agr-sp-06",
+     "stem": "Why do many farmers in Sierra Leone grow rice in inland valley swamps rather than on upland soils?",
+     "image_url": null,
+     "explanation": "Inland valley swamps have fertile, clayey alluvial soils that receive nutrients washed down from the slopes and stay wet for most of the year. The land does not need long fallows.\n\n**Why the other options are wrong**\n\n- Swamps need no water management at all: Good swamp rice needs bunds and channels to control the water.\n- Upland soils are too wet for rice: Upland soils are well drained, often too dry; the problem is that they are leached and poor.\n- Swamp rice needs no labour: Developing and farming a swamp takes a great deal of labour.",
+     "position": 6,
+     "options": [
+      {
+       "id": "789667af-1997-55dd-89aa-161e6678b667",
+       "label": "A",
+       "content": "Swamps need no water management at all",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c844beac-f589-5ae7-976a-653dcb78e3d4",
+       "label": "B",
+       "content": "Upland soils are too wet for rice",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c3efab7f-29c1-5749-89ca-764c2d77cb4a",
+       "label": "C",
+       "content": "Swamp rice needs no labour",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2b75f349-e96f-5950-888d-e23786fdd72e",
+       "label": "D",
+       "content": "Swamp soils are more fertile and stay moist, so rice yields are higher",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "27e752f1-07f2-5a5e-a93a-7c7bb55b9c7b",
+     "key": "agr-sp-07",
+     "stem": "Seasonally flooded grasslands with heavy, poorly drained soils in northern Sierra Leone, often used for mechanised rice farming, are called",
+     "image_url": null,
+     "explanation": "The five main rice ecologies of Sierra Leone are the uplands, inland valley swamps, bolilands, riverine grasslands and mangrove swamps.\n\n**Why the other options are wrong**\n\n- inland valley swamps: Inland valley swamps lie in narrow valley bottoms throughout the country.\n- mangrove swamps: Mangrove swamps are salty tidal mudflats on the coast and in estuaries such as the Scarcies.\n- riverine grasslands: Riverine grasslands are flooded plains along the major rivers in the south.",
+     "position": 7,
+     "options": [
+      {
+       "id": "fefd9632-8dfe-55db-98ce-6cd3cdb0a96f",
+       "label": "A",
+       "content": "bolilands",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e7510c64-a86d-50d7-8b85-26887a1ed690",
+       "label": "B",
+       "content": "inland valley swamps",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c3b94608-7ba1-599f-a0dd-2bbf8e0fd6f4",
+       "label": "C",
+       "content": "mangrove swamps",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9752613f-ae14-528f-98a3-b03632d90483",
+       "label": "D",
+       "content": "riverine grasslands",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5fc64702-1bb0-57bc-8d48-e77c5ca0d405",
+   "topic": "Soil Fertility and Fertilizers",
+   "title": "Soil Fertility and Fertilizers: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on soil fertility and fertilizers, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 106,
+   "questions": [
+    {
+     "id": "34ab4cac-1237-5f09-8943-04fc643394cd",
+     "key": "agr-fe-01",
+     "stem": "A soil contains plenty of plant nutrients, but crops on it give a poor yield because it is waterlogged. This soil is",
+     "image_url": null,
+     "explanation": "Fertility is the ability to supply nutrients; productivity is the ability to give a high yield, which also needs good drainage, structure, water and management. A productive soil must be fertile, but a fertile soil is not always productive.\n\n**Why the other options are wrong**\n\n- productive but not fertile: It cannot be productive, because its yields are poor.\n- neither fertile nor productive: It has plenty of nutrients, so it is fertile.\n- both fertile and productive: Its poor yields show that it is not productive.",
+     "position": 1,
+     "options": [
+      {
+       "id": "92fb18d0-76a3-5bc1-9eeb-efece6ce8349",
+       "label": "A",
+       "content": "productive but not fertile",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7c28cfb9-6b08-50b4-ac5d-14f37c80e1da",
+       "label": "B",
+       "content": "fertile but not productive",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "88ba8c02-8334-577f-8b98-c34cb6bf7970",
+       "label": "C",
+       "content": "neither fertile nor productive",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1f4c3457-9597-5ea2-aade-7a9801bf430e",
+       "label": "D",
+       "content": "both fertile and productive",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8cbc6f31-f444-5161-a82b-88557143c46f",
+     "key": "agr-fe-02",
+     "stem": "The older leaves of a maize crop turn yellow and the plants are stunted. The nutrient most likely to be lacking is",
+     "image_url": null,
+     "explanation": "Nitrogen is needed for chlorophyll and proteins. When it is short, the plant moves it from old leaves to young ones, so the older leaves yellow first (chlorosis).\n\n**Why the other options are wrong**\n\n- phosphorus: Phosphorus deficiency gives purplish leaves, poor roots and delayed maturity.\n- potassium: Potassium deficiency gives scorched leaf edges and weak stems that fall over.\n- calcium: Calcium deficiency kills the growing points.",
+     "position": 2,
+     "options": [
+      {
+       "id": "4e8d7766-1518-5c0c-ad28-7dc8b347f076",
+       "label": "A",
+       "content": "phosphorus",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d7888b5d-9490-5d0f-af70-eac4becd42ff",
+       "label": "B",
+       "content": "potassium",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "da48bd53-8ebb-5702-8a14-7d24b21959a4",
+       "label": "C",
+       "content": "nitrogen",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6b6a5976-5b43-5c47-94d7-5e130d256ad1",
+       "label": "D",
+       "content": "calcium",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "be91cc54-5f80-5dd4-8b3b-97174327b567",
+     "key": "agr-fe-03",
+     "stem": "Which nutrient is most important for root development, flowering and seed formation?",
+     "image_url": null,
+     "explanation": "Phosphorus also hastens maturity. Single superphosphate is a straight phosphorus fertiliser.\n\n**Why the other options are wrong**\n\n- Nitrogen: Nitrogen mainly promotes leaf and stem growth.\n- Potassium: Potassium mainly strengthens stems, improves disease resistance and helps form starch and sugar.\n- Magnesium: Magnesium is part of the chlorophyll molecule.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b44ea5ba-47a5-56e5-a6f5-fb3ce7949fe2",
+       "label": "A",
+       "content": "Nitrogen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7e331c56-a7a8-530e-bf4d-2a4caa0f160a",
+       "label": "B",
+       "content": "Potassium",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d4a4e210-0da0-5711-8798-2e6bb97ebb5c",
+       "label": "C",
+       "content": "Magnesium",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8a4e6744-120d-5b85-9cf6-f51300d97e70",
+       "label": "D",
+       "content": "Phosphorus",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f79eff0a-981e-5a63-919c-effb77d757ae",
+     "key": "agr-fe-04",
+     "stem": "Which of the following is a micronutrient (trace element)?",
+     "image_url": null,
+     "explanation": "Micronutrients are needed in tiny amounts: iron, manganese, zinc, copper, boron, molybdenum and chlorine. They are as essential as the macronutrients.\n\n**Why the other options are wrong**\n\n- Nitrogen: Nitrogen is a macronutrient, needed in large amounts.\n- Potassium: Potassium is a macronutrient.\n- Calcium: Calcium is a macronutrient.",
+     "position": 4,
+     "options": [
+      {
+       "id": "bc78ab47-b9c8-5c9e-8180-a42050670817",
+       "label": "A",
+       "content": "Zinc",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "93df0ef0-f24c-530b-ae9b-3792a10e8685",
+       "label": "B",
+       "content": "Nitrogen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8043084a-92dc-5f79-88ed-488a1b62cffb",
+       "label": "C",
+       "content": "Potassium",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "86f6ca31-8d30-527d-b7ed-64423e4e6864",
+       "label": "D",
+       "content": "Calcium",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a0a89b5b-6f3f-564e-ac82-a5222bba164f",
+     "key": "agr-fe-05",
+     "stem": "NPK 15-15-15 is an example of",
+     "image_url": null,
+     "explanation": "The three numbers give the percentages of the three nutrients in the fertiliser, in the order N, P, K.\n\n**Why the other options are wrong**\n\n- a straight fertiliser, which supplies nitrogen only: A straight fertiliser supplies one main nutrient, as urea supplies nitrogen.\n- an organic manure: NPK is manufactured; organic manures come from plant and animal remains.\n- a liming material for acid soils: Lime corrects acidity; NPK supplies nutrients.",
+     "position": 5,
+     "options": [
+      {
+       "id": "46f7144c-7de5-524a-9fa7-cc368f2514a0",
+       "label": "A",
+       "content": "a straight fertiliser, which supplies nitrogen only",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8ca48438-b4de-59c9-ab15-12a09ed5eb63",
+       "label": "B",
+       "content": "a compound fertiliser, which supplies nitrogen, phosphorus and potassium",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bafc3fb7-ec50-588a-a058-0da644d0af83",
+       "label": "C",
+       "content": "an organic manure",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "43b1d26c-8f86-592c-8e16-b4c3ac4d46de",
+       "label": "D",
+       "content": "a liming material for acid soils",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5108afa7-fd9f-521b-b9df-0c538968471e",
+     "key": "agr-fe-06",
+     "stem": "Urea contains 46% nitrogen. How much nitrogen is there in a 50 kg bag of urea?",
+     "image_url": null,
+     "explanation": "Nitrogen = 46/100 × 50 kg = 23 kg.\n\n**Why the other options are wrong**\n\n- 2.3 kg: The decimal point has been misplaced: 46% of 50 kg is 23 kg.\n- 4 kg: This subtracts 46 from 50; a percentage must be multiplied, not subtracted.\n- 46 kg: This reads the percentage as a mass; 46% of the bag, not 46 kg, is nitrogen.",
+     "position": 6,
+     "options": [
+      {
+       "id": "95561f4b-829b-5d4b-9b63-a06563efeb34",
+       "label": "A",
+       "content": "2.3 kg",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "94ef743e-5fa2-5866-a143-5d1b9f9fa1f0",
+       "label": "B",
+       "content": "4 kg",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5a61294f-2720-5716-b0ac-d0015aa267a2",
+       "label": "C",
+       "content": "23 kg",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1acc6742-039e-5397-b12a-6a4b58766f25",
+       "label": "D",
+       "content": "46 kg",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "45e45459-1536-5231-a2c5-bfc35cef325c",
+     "key": "agr-fe-07",
+     "stem": "Applying nitrogen fertiliser such as urea to a rice crop that is already growing, for example at tillering, is called",
+     "image_url": null,
+     "explanation": "Nitrogen is easily lost by leaching, so it is often split: part at planting and part as a top dressing when the crop needs it most.\n\n**Why the other options are wrong**\n\n- ring placement: Ring placement puts fertiliser in a ring around a tree or plant.\n- band placement: Band placement puts fertiliser in a band beside the row of plants.\n- liming: Liming adds lime to correct soil acidity.",
+     "position": 7,
+     "options": [
+      {
+       "id": "1697a6b6-61a8-57b2-9dc3-b95fb5a46152",
+       "label": "A",
+       "content": "ring placement",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9ce8eebc-a0a4-548d-8054-a5dd20fb72df",
+       "label": "B",
+       "content": "band placement",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "310535f3-0402-5b38-9896-03488664756b",
+       "label": "C",
+       "content": "top dressing",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c8ae7989-7542-593d-8c0d-8bfab92a417d",
+       "label": "D",
+       "content": "liming",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "371ce3e5-cd21-52c4-bb27-70c4679821af",
+     "key": "agr-fe-08",
+     "stem": "Which farm practice reduces soil fertility?",
+     "image_url": null,
+     "explanation": "Burning destroys organic matter, loses nitrogen and sulfur as gases and leaves the soil bare to erosion. Leaching, erosion, crop removal and continuous cropping also reduce fertility.\n\n**Why the other options are wrong**\n\n- Adding compost: Compost adds nutrients and humus.\n- Growing legumes such as cowpea: Legumes add nitrogen through the *Rhizobium* in their root nodules.\n- Mulching: Mulch protects the soil, keeps it moist and adds organic matter as it decays.",
+     "position": 8,
+     "options": [
+      {
+       "id": "21bc6305-e58b-5931-99e8-fa1f51598da4",
+       "label": "A",
+       "content": "Adding compost",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "43834f16-f0a2-584f-9a9e-dba564acfc4f",
+       "label": "B",
+       "content": "Growing legumes such as cowpea",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "58ec2d5c-5806-51fe-ad14-3a808d3e0f68",
+       "label": "C",
+       "content": "Mulching",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "450810f5-11ee-54a5-b271-174431c3ded8",
+       "label": "D",
+       "content": "Bush burning",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "faef65ed-f0cd-502a-bc41-2f5a4c742617",
+   "topic": "Soil Conservation and Erosion",
+   "title": "Soil Conservation and Erosion: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on soil conservation and erosion, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 107,
+   "questions": [
+    {
+     "id": "1805926a-20c9-5095-8a8e-2997ba03fb53",
+     "key": "agr-sc-01",
+     "stem": "Run-off collects into many small channels a few centimetres deep, which can be removed by ploughing. This type of erosion is",
+     "image_url": null,
+     "explanation": "Erosion often goes splash → sheet → rill → gully as run-off gathers into larger and larger channels.\n\n**Why the other options are wrong**\n\n- sheet erosion: Sheet erosion removes a thin, even layer of topsoil from a wide area, without channels.\n- gully erosion: Gullies are deep, wide channels that cannot be crossed by machines or ploughed out.\n- splash erosion: Splash erosion is caused by raindrops knocking soil particles out of place.",
+     "position": 1,
+     "options": [
+      {
+       "id": "3a1d010a-5f79-5e30-a6a2-b1d7be316573",
+       "label": "A",
+       "content": "rill erosion",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "fb6cc20f-5637-5157-979e-526cd3a1c054",
+       "label": "B",
+       "content": "sheet erosion",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "aca76c69-1864-525e-abdf-9288034e0236",
+       "label": "C",
+       "content": "gully erosion",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1aaf1540-76b0-512f-9776-644fbe4d8589",
+       "label": "D",
+       "content": "splash erosion",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5ee56677-5674-5eff-ae99-20c1c2db296c",
+     "key": "agr-sc-02",
+     "stem": "The main agent of soil erosion in Sierra Leone is",
+     "image_url": null,
+     "explanation": "Many parts of Sierra Leone receive over 2500 mm of rain a year, often in intense storms, so bare soil is quickly washed away.\n\n**Why the other options are wrong**\n\n- wind: Wind erosion matters mainly in dry areas and on bare, dry soil in the Harmattan.\n- ice: There are no glaciers in Sierra Leone.\n- grazing animals: Overgrazing and trampling expose the soil, but the water that follows does most of the removing.",
+     "position": 2,
+     "options": [
+      {
+       "id": "cc8e291c-db58-5b3f-980d-627fee87bd06",
+       "label": "A",
+       "content": "wind",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6c5433a7-ee68-5431-9d57-f6171558a5e1",
+       "label": "B",
+       "content": "water from heavy rainfall and run-off",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6d709d33-dd89-51ad-bda2-c05ef39f1241",
+       "label": "C",
+       "content": "ice",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8e4fc6af-87dc-5515-8891-67d468bf6cb8",
+       "label": "D",
+       "content": "grazing animals",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aedd821d-59c1-5254-9f71-a090c536076e",
+     "key": "agr-sc-03",
+     "stem": "Growing alternate strips of a close-growing crop, such as grass or legumes, and a row crop, such as maize, across a slope is called",
+     "image_url": null,
+     "explanation": "The close-growing strips slow down run-off from the row-crop strips and trap the soil it carries.\n\n**Why the other options are wrong**\n\n- terracing: Terracing is cutting level steps into a steep slope.\n- contour bunding: Contour bunds are low earth or stone walls built across the slope.\n- mulching: Mulching is covering the soil surface with dry grass, leaves or crop residues.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0c3de8ac-ffa9-5d95-b229-29737184ec6b",
+       "label": "A",
+       "content": "terracing",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2a9dc782-43fb-50a9-a712-0075de3b4d62",
+       "label": "B",
+       "content": "contour bunding",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "68738175-f63d-560f-b555-7b08ed9f487d",
+       "label": "C",
+       "content": "strip cropping",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "923dd4a7-b588-5952-9a51-56d7ebd6816d",
+       "label": "D",
+       "content": "mulching",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "09f66332-7801-502d-94f1-127c030e189b",
+     "key": "agr-sc-04",
+     "stem": "On a very steep hillside that is to be farmed, the best mechanical method of controlling erosion is",
+     "image_url": null,
+     "explanation": "Terraces cut the slope into level steps, so water cannot gather speed and soaks into the soil instead.\n\n**Why the other options are wrong**\n\n- ploughing up and down the slope: Furrows up and down the slope channel water downhill and increase erosion.\n- burning the vegetation before planting: Burning leaves the soil bare and increases erosion.\n- leaving the soil bare after harvest: Bare soil is quickly washed away.",
+     "position": 4,
+     "options": [
+      {
+       "id": "57716824-5552-5169-b9d6-ced342c8840a",
+       "label": "A",
+       "content": "ploughing up and down the slope",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6bec1ad1-b3b1-5f9e-907e-d477d011637a",
+       "label": "B",
+       "content": "burning the vegetation before planting",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f00b6b52-9d42-54ee-8fce-f34fe5da0fff",
+       "label": "C",
+       "content": "leaving the soil bare after harvest",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0b26e47f-03ff-5106-9158-43c8adc22bd0",
+       "label": "D",
+       "content": "terracing",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b9b269ca-b32b-595c-b515-96e568fcae5c",
+     "key": "agr-sc-05",
+     "stem": "A gully that is cutting across a farm is best controlled by",
+     "image_url": null,
+     "explanation": "Check dams slow the water so it drops its soil, gradually filling the gully; grass then holds the trapped soil in place.\n\n**Why the other options are wrong**\n\n- ploughing along the bottom of the gully: Ploughing loosens the soil and makes the gully worse.\n- burning the grass around the gully: Burning removes the plant cover that holds the soil.\n- digging the gully deeper so it drains faster: Faster water carries away even more soil.",
+     "position": 5,
+     "options": [
+      {
+       "id": "0a38f3df-20c3-5f4b-8d15-a2184c7e830a",
+       "label": "A",
+       "content": "building check dams of stones or sandbags across it, then planting grass",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "68d9fbde-1787-51bf-a4a0-811984aa81db",
+       "label": "B",
+       "content": "ploughing along the bottom of the gully",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "73e1dbe5-a78e-575b-b589-360c95a304ef",
+       "label": "C",
+       "content": "burning the grass around the gully",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "25a0deb7-8b3d-525e-948d-3003e8e9dc6b",
+       "label": "D",
+       "content": "digging the gully deeper so it drains faster",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5ca23b74-86f0-586e-ae99-7bcfe11b4b1c",
+     "key": "agr-sc-06",
+     "stem": "Cover crops such as cowpea and *Mucuna* reduce soil erosion mainly because they",
+     "image_url": null,
+     "explanation": "A living cover breaks the force of raindrops and holds the soil with its roots. Leguminous covers also add nitrogen.\n\n**Why the other options are wrong**\n\n- make the soil more acidic: Cover crops do not reduce erosion by changing the pH.\n- use up all the water in the soil: Cover crops do not dry out the soil; they shield it.\n- attract pests away from the main crop: Pest control is not how cover crops prevent erosion.",
+     "position": 6,
+     "options": [
+      {
+       "id": "3530bece-befe-5888-87a0-0f5c879519f9",
+       "label": "A",
+       "content": "make the soil more acidic",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b5426ef5-2a43-5b24-9674-8f6fdbbe7401",
+       "label": "B",
+       "content": "protect the soil surface from the impact of raindrops and slow down run-off",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d279d4cf-4f12-5023-bc91-793224d8a7b6",
+       "label": "C",
+       "content": "use up all the water in the soil",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "81e87785-3919-5e6b-9ff4-5ac3478cc1b3",
+       "label": "D",
+       "content": "attract pests away from the main crop",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cf8aa716-6540-5266-a164-b4ffbddb908c",
+     "key": "agr-sc-07",
+     "stem": "Which of the following is an effect of soil erosion on land and water downstream?",
+     "image_url": null,
+     "explanation": "Erosion removes the most fertile soil from one place and dumps it where it causes harm, blocking channels and filling dams and swamps.\n\n**Why the other options are wrong**\n\n- A rise in the fertility of the eroded farm: The eroded farm loses its fertile topsoil, so its fertility falls.\n- Faster growth of the crops on the eroded slope: Crops on the eroded slope grow worse on the poor subsoil left behind.\n- Less flooding along rivers: Silt raises riverbeds and fills reservoirs, so flooding becomes more likely.",
+     "position": 7,
+     "options": [
+      {
+       "id": "143f0178-b9f7-566f-a96a-4c21c13f0d62",
+       "label": "A",
+       "content": "A rise in the fertility of the eroded farm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f2c8c9c5-1413-5a31-ba70-a635fcfb8bfe",
+       "label": "B",
+       "content": "Faster growth of the crops on the eroded slope",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "35fc08fe-9aef-5013-94c7-cd73de204809",
+       "label": "C",
+       "content": "Silting of rivers, swamps and reservoirs, which leads to more flooding",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b28ca925-b2bc-5b6d-9eca-58fbaac44624",
+       "label": "D",
+       "content": "Less flooding along rivers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "865fa4064ec2"
+}
