@@ -1,0 +1,1208 @@
+{
+ "name": "maths_set10_p1",
+ "label": "Mathematics: practice set 2 for similar figures, loci, construction, financial arithmetic, differentiation and integration",
+ "subject_slug": "mathematics",
+ "papers": [
+  {
+   "id": "456ae697-fce5-5cab-8351-be88617c8dd9",
+   "topic": "Similar and Congruent Figures",
+   "title": "Similar and Congruent Figures: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on similar and congruent figures, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 240,
+   "questions": [
+    {
+     "id": "4a034a4b-b154-5a64-82a4-34f41d8bbcb4",
+     "key": "maths-similar-06",
+     "stem": "Two right-angled triangles have equal hypotenuses, and one other side of the first equals one side of the second. Which condition shows they are congruent?",
+     "image_url": null,
+     "explanation": "For right-angled triangles, a right angle, the hypotenuse and one other side equal (RHS) is enough to prove congruence.\n\n**Why the other options are wrong**\n\n- AAA (three angles): Equal angles show triangles are similar, not that they are the same size.\n- SAS (two sides and the included angle): The equal side and hypotenuse do not enclose a known equal angle here, so SAS does not apply directly.\n- ASA (two angles and the included side): Only one angle (the right angle) is known to be equal.",
+     "position": 1,
+     "options": [
+      {
+       "id": "3ee6a97a-8518-5a1d-8d1b-ebf66c4479c1",
+       "label": "A",
+       "content": "RHS (right angle, hypotenuse, side)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "64a54c9d-1bbe-5e17-99a7-89515fcbdfe6",
+       "label": "B",
+       "content": "AAA (three angles)",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8fcdf2f6-5c1b-5a2e-90a9-628b78733c56",
+       "label": "C",
+       "content": "SAS (two sides and the included angle)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "63e153d6-13a9-51e0-bf02-cbe635364613",
+       "label": "D",
+       "content": "ASA (two angles and the included side)",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1ea215ed-c737-592a-96bc-5830d8696a9f",
+     "key": "maths-similar-07",
+     "stem": "On a map with a scale of 1 : 20 000, a rectangular field measures 3 cm by 2 cm. Find the real area of the field in hectares. (1 hectare = 10 000 m²)",
+     "image_url": null,
+     "explanation": "Real lengths: $3 \\times 20\\,000 = 60\\,000$ cm $= 600$ m and $2 \\times 20\\,000 = 40\\,000$ cm $= 400$ m.\n\nArea $= 600 \\times 400 = 240\\,000$ m² $= 24$ hectares.\n\n**Why the other options are wrong**\n\n- $2.4$ hectares: Check the conversion: 240 000 m² $\\div$ 10 000 = 24 hectares.\n- $12$ hectares: You multiplied the map area (6 cm²) by 20 000 once. Areas scale by the square of the scale factor.\n- $240$ hectares: 1 hectare is 10 000 m², not 1 000 m².",
+     "position": 2,
+     "options": [
+      {
+       "id": "f6c16a63-3bcf-561c-ae55-1b008af5bd64",
+       "label": "A",
+       "content": "$2.4$ hectares",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "93face07-b48f-5966-b09c-e607594a205a",
+       "label": "B",
+       "content": "$12$ hectares",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3bf0dbcf-1f0c-5fc0-9c7e-e7d4d2e73ec8",
+       "label": "C",
+       "content": "$24$ hectares",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d5217147-3903-54b2-94a1-e5b51a9d3ad6",
+       "label": "D",
+       "content": "$240$ hectares",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "22e113ac-61f4-5049-b5fd-d3eb650f9ce4",
+     "key": "maths-similar-08",
+     "stem": "At the same time of day, a vertical stick 1.5 m tall casts a shadow 2 m long, and a tree casts a shadow 12 m long. Find the height of the tree.",
+     "image_url": null,
+     "explanation": "The stick and the tree make similar triangles with their shadows:\n\n$\\dfrac{h}{12} = \\dfrac{1.5}{2} \\Rightarrow h = 12 \\times 0.75 = 9$ m\n\n**Why the other options are wrong**\n\n- $10.5$ m: You subtracted 1.5 from 12. The shapes are similar, so use a ratio.\n- $11.5$ m: You subtracted the difference between the stick and its shadow. Use the ratio height : shadow.\n- $16$ m: You used shadow ÷ height for the stick. Height ÷ shadow $= \\dfrac{1.5}{2}$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d90d7cf1-096a-5a06-a9f5-4bcb5755e24a",
+       "label": "A",
+       "content": "$9$ m",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a4153c79-6057-50db-a18f-f8d0849ea570",
+       "label": "B",
+       "content": "$10.5$ m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b8fde4bc-4181-500b-a845-3e8098fef4bc",
+       "label": "C",
+       "content": "$11.5$ m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a269957f-48b0-57c6-b819-332a699db946",
+       "label": "D",
+       "content": "$16$ m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "42ac0700-3df8-5b53-b67d-788bf19b65eb",
+     "key": "maths-similar-09",
+     "stem": "Two similar triangles have areas of 25 cm² and 64 cm². The perimeter of the smaller triangle is 20 cm. Find the perimeter of the larger triangle.",
+     "image_url": null,
+     "explanation": "Ratio of areas $= 25 : 64$, so the ratio of lengths $= \\sqrt{25} : \\sqrt{64} = 5 : 8$.\n\nPerimeter of the larger $= 20 \\times \\dfrac{8}{5} = 32$ cm\n\n**Why the other options are wrong**\n\n- $12.5$ cm: You used the ratio the wrong way round. The larger triangle has the larger perimeter.\n- $23$ cm: You added the difference of the square roots. Lengths are in the ratio $5 : 8$.\n- $51.2$ cm: You used the ratio of the areas, $\\dfrac{64}{25}$. Lengths use its square root, $\\dfrac{8}{5}$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "172d97fd-28b5-5899-a012-4b0dae904257",
+       "label": "A",
+       "content": "$12.5$ cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "14620147-0ab5-5151-8358-a59bed8c8c2b",
+       "label": "B",
+       "content": "$23$ cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "165c0d61-72c2-52c1-999e-26c1b52c8a35",
+       "label": "C",
+       "content": "$32$ cm",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9efa9e95-3cd7-5e78-bc00-85ae90f0c8ec",
+       "label": "D",
+       "content": "$51.2$ cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b79efb93-763e-53e4-ac7b-47fa4dc8d1ad",
+     "key": "maths-similar-10",
+     "stem": "Two similar solids have volumes of 8 cm³ and 27 cm³. Find the ratio of their surface areas.",
+     "image_url": null,
+     "explanation": "Ratio of lengths $= \\sqrt[3]{8} : \\sqrt[3]{27} = 2 : 3$.\n\nRatio of areas $= 2^{2} : 3^{2} = 4 : 9$\n\n**Why the other options are wrong**\n\n- $2 : 3$: $2 : 3$ is the ratio of their lengths. Areas are in the ratio of the squares.\n- $8 : 27$: $8 : 27$ is the ratio of the volumes.\n- $16 : 81$: You squared the volume ratio's cube roots twice. Areas: $(2 : 3)^{2} = 4 : 9$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "6502bcef-bdb1-5417-9d7a-5f35a7f20ca1",
+       "label": "A",
+       "content": "$4 : 9$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ec405907-5e9c-5a54-ad90-e0c5d4b48037",
+       "label": "B",
+       "content": "$2 : 3$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "39f9c0cd-275b-5f38-b625-d28d709e9c34",
+       "label": "C",
+       "content": "$8 : 27$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f2c035f2-01b6-5033-82cc-a81c76a18b26",
+       "label": "D",
+       "content": "$16 : 81$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "27f5e14b-402c-54ea-9c25-cff354604d30",
+   "topic": "Loci",
+   "title": "Loci: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on loci, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 241,
+   "questions": [
+    {
+     "id": "e009f525-1bd9-5b68-a7f7-58fe29aee7e0",
+     "key": "maths-loci-06",
+     "stem": "The point inside a triangle that is equidistant from all three sides is where",
+     "image_url": null,
+     "explanation": "The locus of points equidistant from two lines is the bisector of the angle between them. The point equidistant from all three sides lies on all three angle bisectors. (It is the centre of the circle that touches all three sides.)\n\n**Why the other options are wrong**\n\n- the perpendicular bisectors of the sides meet: That point is equidistant from the three vertices (corners), not the sides.\n- the medians meet: The medians meet at the centre of mass, which is not equidistant from the sides in general.\n- the altitudes meet: The altitudes meet at a point that is not, in general, equidistant from the sides.",
+     "position": 1,
+     "options": [
+      {
+       "id": "fefd5cc5-7c24-57a0-a637-3879b57f8604",
+       "label": "A",
+       "content": "the perpendicular bisectors of the sides meet",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8c6ea7c7-a2f0-5072-9779-d40b7c2c9b06",
+       "label": "B",
+       "content": "the bisectors of the angles meet",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "207fb7fa-4be5-5276-953d-33174c7c0428",
+       "label": "C",
+       "content": "the medians meet",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ff561a6a-0e39-5a69-a910-a3acb05ace7f",
+       "label": "D",
+       "content": "the altitudes meet",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b83bffb4-c788-5939-89be-43239de9eb22",
+     "key": "maths-loci-07",
+     "stem": "The point that is equidistant from the three vertices of a triangle is where",
+     "image_url": null,
+     "explanation": "Points equidistant from two vertices lie on the perpendicular bisector of the side joining them. The point on all three perpendicular bisectors is equidistant from all three vertices (the centre of the circle through them).\n\n**Why the other options are wrong**\n\n- the bisectors of the angles meet: That point is equidistant from the three sides, not the vertices.\n- the medians meet: The medians meet at the centre of mass, which is not equidistant from the vertices in general.\n- the altitudes meet: The altitudes do not, in general, meet at a point equidistant from the vertices.",
+     "position": 2,
+     "options": [
+      {
+       "id": "16169c39-195d-52d9-805b-4ced3b3aaed1",
+       "label": "A",
+       "content": "the perpendicular bisectors of the sides meet",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "26cf9675-93e2-5537-b991-492306872964",
+       "label": "B",
+       "content": "the bisectors of the angles meet",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "97cb1784-3203-56f4-979e-a3a7d025ee6f",
+       "label": "C",
+       "content": "the medians meet",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fa7274d3-2efa-5f15-9e61-96c22d18ba52",
+       "label": "D",
+       "content": "the altitudes meet",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "80d295ca-1be2-52aa-89d7-d9604dfe511e",
+     "key": "maths-loci-08",
+     "stem": "A goat is tied to a post in an open field by a rope 5 m long. Which describes the region the goat can graze?",
+     "image_url": null,
+     "explanation": "Every point within 5 m of the post can be reached: the inside of a circle, centre the post, radius 5 m.\n\n**Why the other options are wrong**\n\n- A straight line 5 m long: The goat can move in every direction, not just along a line.\n- A square of side 5 m: Every point the goat can reach is at most 5 m from the post, which describes a circle.\n- The inside of a circle of radius 10 m: 10 m is the diameter. The radius is the length of the rope, 5 m.",
+     "position": 3,
+     "options": [
+      {
+       "id": "3b04dadb-e666-54ff-b7c8-f757acd80e69",
+       "label": "A",
+       "content": "A straight line 5 m long",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "353ef13f-f261-5737-bbc3-d5fc5d592a68",
+       "label": "B",
+       "content": "The inside of a circle of radius 5 m with centre at the post",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b7fb1744-1c74-5b1a-96d7-224005f88098",
+       "label": "C",
+       "content": "A square of side 5 m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f6192157-9d37-5ce4-b47b-314092e9c413",
+       "label": "D",
+       "content": "The inside of a circle of radius 10 m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8d80d9c2-d85e-5dcd-83dc-9d6cb8e17e85",
+     "key": "maths-loci-09",
+     "stem": "Which line is the locus of points equidistant from $A(1, 0)$ and $B(5, 0)$?",
+     "image_url": null,
+     "explanation": "The locus is the perpendicular bisector of $AB$. The mid-point of $AB$ is $(3, 0)$, and $AB$ is horizontal, so the bisector is the vertical line $x = 3$.\n\n**Why the other options are wrong**\n\n- $y = 3$: The locus is perpendicular to $AB$, which lies along the $x$-axis, so it is a vertical line $x = \\ldots$\n- $x = 2$: 2 is half the distance $AB$. The mid-point is at $x = \\dfrac{1 + 5}{2} = 3$.\n- $x = 6$: You added the $x$-coordinates without halving.",
+     "position": 4,
+     "options": [
+      {
+       "id": "0132b560-dc6c-5309-a47e-054979669d01",
+       "label": "A",
+       "content": "$y = 3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "95e299b4-ec75-5459-acda-35747096baf9",
+       "label": "B",
+       "content": "$x = 2$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "34f81585-b749-5d37-ba36-c2ac27e0f5f1",
+       "label": "C",
+       "content": "$x = 6$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0cd753f6-ecb4-53a6-ba9d-3f27755fb4bc",
+       "label": "D",
+       "content": "$x = 3$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "18b6a72e-f169-5972-9798-333c89ebe2af",
+     "key": "maths-loci-10",
+     "stem": "What is the locus of points equidistant from the parallel lines $y = 1$ and $y = 7$?",
+     "image_url": null,
+     "explanation": "The locus is the line halfway between them: $y = \\dfrac{1 + 7}{2} = 4$.\n\n**Why the other options are wrong**\n\n- $y = 3$: 3 is half the distance between the lines. Add it to 1: $y = 4$.\n- $y = 6$: 6 is the distance between the lines, not the line halfway between them.\n- $y = 8$: You added 1 and 7 without halving.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e7758e61-0d13-540e-9321-12167cd45a6b",
+       "label": "A",
+       "content": "$y = 4$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ef992d90-24df-5362-b4c1-733453a22ff9",
+       "label": "B",
+       "content": "$y = 3$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e8158468-6e06-5831-9071-1a08adf4c37a",
+       "label": "C",
+       "content": "$y = 6$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "83e9c581-1b46-5ba4-8672-6c25b8509d09",
+       "label": "D",
+       "content": "$y = 8$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f21577d6-5c2a-5ff5-a72b-d87a12b35f9e",
+   "topic": "Construction",
+   "title": "Construction: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on construction, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 242,
+   "questions": [
+    {
+     "id": "46f0e9ed-5802-53ae-bca4-05a56019c529",
+     "key": "maths-construction-06",
+     "stem": "Which of these angles CAN be constructed using only a ruler and a pair of compasses?",
+     "image_url": null,
+     "explanation": "Constructible angles come from 60° and 90° by bisecting, adding and subtracting. $15°$ is $60°$ bisected twice ($60° \\to 30° \\to 15°$).\n\n**Why the other options are wrong**\n\n- 20°: 20° cannot be made from 60° and 90° by bisecting, adding or subtracting.\n- 50°: 50° cannot be made from 60° and 90° by bisecting, adding or subtracting.\n- 70°: 70° cannot be made from 60° and 90° by bisecting, adding or subtracting.",
+     "position": 1,
+     "options": [
+      {
+       "id": "40a8fe22-5ee3-590a-bffa-6fa6bd840b55",
+       "label": "A",
+       "content": "15°",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "426eac61-a8ad-5e02-b8ae-e43703a2ee66",
+       "label": "B",
+       "content": "20°",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "580021b5-e6ef-56c3-8c1a-3c1119578587",
+       "label": "C",
+       "content": "50°",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dc5d516b-9f14-5b76-97d5-ba5b086fe69f",
+       "label": "D",
+       "content": "70°",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bf055228-d89c-5e70-be3c-c174162f7dd6",
+     "key": "maths-construction-07",
+     "stem": "How is an angle of 45° constructed with ruler and compasses?",
+     "image_url": null,
+     "explanation": "Construct a perpendicular (90°), then bisect it: $90° \\div 2 = 45°$.\n\n**Why the other options are wrong**\n\n- Construct 60° and bisect it: Bisecting 60° gives 30°.\n- Bisect an angle of 120°: Bisecting 120° gives 60°.\n- Construct 60° and subtract 30° from 90°: $90° - 30° = 60°$, not 45°.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f3e518d1-ef46-523f-b165-76346934ddac",
+       "label": "A",
+       "content": "Construct 60° and bisect it",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "34cf0a74-4f4f-5789-a622-8c1b2805c556",
+       "label": "B",
+       "content": "Construct 90° and bisect it",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7fa27ce2-3b8a-5cc0-ba8a-620a6bb905bc",
+       "label": "C",
+       "content": "Bisect an angle of 120°",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a18ef42d-f2f0-5434-bc3e-fcd01a87c28f",
+       "label": "D",
+       "content": "Construct 60° and subtract 30° from 90°",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0fa24c06-dc5a-5b67-a47e-da3d94841b1f",
+     "key": "maths-construction-08",
+     "stem": "When bisecting an angle with ruler and compasses, what is the first step after drawing the angle?",
+     "image_url": null,
+     "explanation": "1. With centre at the vertex, draw an arc cutting both arms.\n2. From each of those points, draw arcs of equal radius that cross.\n3. Join the vertex to the crossing point: this line bisects the angle.\n\n**Why the other options are wrong**\n\n- Draw a line from the vertex at 45° to one arm: Measuring 45° needs a protractor, and the bisector depends on the size of the angle.\n- With centre at the end of one arm, draw a circle through the vertex: The arcs are drawn from the vertex first, so that they mark equal distances on both arms.\n- Join the ends of the two arms: The arms can be of any length, so joining their ends does not help find the bisector.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8c9b2dc5-a11b-5b6f-bffc-4dec2430f9a0",
+       "label": "A",
+       "content": "Draw a line from the vertex at 45° to one arm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "37da6060-0da5-5956-b223-288530669189",
+       "label": "B",
+       "content": "With centre at the end of one arm, draw a circle through the vertex",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cdd41a11-125d-524c-849b-e8733cab65d6",
+       "label": "C",
+       "content": "Join the ends of the two arms",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d061a1c5-e02d-568f-a764-166cdb3c8e27",
+       "label": "D",
+       "content": "With centre at the vertex, draw an arc cutting both arms",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "389ec409-eb7b-568b-aaf3-3787734b0b14",
+     "key": "maths-construction-09",
+     "stem": "The perpendicular bisector of a line segment $AB$",
+     "image_url": null,
+     "explanation": "The perpendicular bisector cuts $AB$ into two equal halves and is at right angles to it. Every point on it is equidistant from $A$ and $B$.\n\n**Why the other options are wrong**\n\n- passes through $A$ at right angles to $AB$: A perpendicular at $A$ does not bisect $AB$.\n- passes through the mid-point of $AB$ at 60° to $AB$: A perpendicular bisector meets $AB$ at 90°.\n- passes through $B$, parallel to $AB$: A parallel line never meets $AB$, so it cannot bisect it.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c66ab047-4292-569f-998d-4cc345fadb65",
+       "label": "A",
+       "content": "passes through the mid-point of $AB$ at right angles to $AB$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "945a5cc2-a340-5089-bfbe-9ca4a4090292",
+       "label": "B",
+       "content": "passes through $A$ at right angles to $AB$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1d3cc52d-beb5-5d46-a18e-026c1cbc3af2",
+       "label": "C",
+       "content": "passes through the mid-point of $AB$ at 60° to $AB$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1a3c9f02-9fa3-5491-8f87-ef1e7632f2ad",
+       "label": "D",
+       "content": "passes through $B$, parallel to $AB$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c0977b73-6eb7-5277-a717-45dae493afd5",
+     "key": "maths-construction-10",
+     "stem": "To construct a line through a point $P$ parallel to a given line $AB$, one method is to",
+     "image_url": null,
+     "explanation": "Draw any line through $P$ that cuts $AB$. Copy the angle it makes with $AB$ at $P$, in the corresponding position. Equal corresponding angles mean the new line is parallel to $AB$.\n\n**Why the other options are wrong**\n\n- bisect $AB$ and join the mid-point to $P$: The line from the mid-point to $P$ generally crosses $AB$; it is not parallel.\n- draw a circle with centre $P$ passing through $A$: A circle alone does not give a line parallel to $AB$.\n- construct an angle of 60° at $A$: An angle at $A$ gives a line through $A$, not through $P$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "45ece053-ce1b-5651-9a27-0167afaddc76",
+       "label": "A",
+       "content": "bisect $AB$ and join the mid-point to $P$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "501f9977-dd4e-5b21-9856-8875beecdd45",
+       "label": "B",
+       "content": "copy an angle so that equal corresponding angles are formed at $P$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4dde8cde-b5b7-5c10-87f1-dbe481fc736d",
+       "label": "C",
+       "content": "draw a circle with centre $P$ passing through $A$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "44435fca-4877-5dcb-877d-2f42757922a9",
+       "label": "D",
+       "content": "construct an angle of 60° at $A$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bb556b5f-bc7e-547c-81d8-dbf40a636a5b",
+   "topic": "Financial Arithmetic",
+   "title": "Financial Arithmetic: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on financial arithmetic, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 243,
+   "questions": [
+    {
+     "id": "1fb31373-9c46-55e2-8a4b-b7410bc6a58b",
+     "key": "maths-financial-06",
+     "stem": "A salesman earns 5% commission on his sales. In one month he sells goods worth Le 24,000. Find his commission.",
+     "image_url": null,
+     "explanation": "Commission $= \\dfrac{5}{100} \\times 24\\,000 = $ Le 1,200\n\n**Why the other options are wrong**\n\n- Le 120: That is 0.5% of the sales. 5% means $\\dfrac{5}{100}$.\n- Le 4,800: You divided the sales by 5. 5% is one-twentieth, not one-fifth.\n- Le 22,800: That is the sales minus the commission.",
+     "position": 1,
+     "options": [
+      {
+       "id": "81aabc94-26bf-5567-b798-07dedc095225",
+       "label": "A",
+       "content": "Le 120",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "def9a41b-bc44-51c6-a2ec-23b5a3250206",
+       "label": "B",
+       "content": "Le 1,200",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "38b22d44-06ba-505a-8578-8382d955c5c0",
+       "label": "C",
+       "content": "Le 4,800",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6a14902f-bc04-5525-937a-642ed147d2bf",
+       "label": "D",
+       "content": "Le 22,800",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "840c94b5-5b54-55c6-b459-61bd3f67888d",
+     "key": "maths-financial-07",
+     "stem": "A phone has a cash price of Le 3,000. On hire purchase it costs a deposit of Le 500 and 10 monthly instalments of Le 300. How much more does a buyer pay on hire purchase than for cash?",
+     "image_url": null,
+     "explanation": "Hire purchase price $= 500 + 10 \\times 300 = $ Le 3,500.\n\nExtra cost $= 3\\,500 - 3\\,000 = $ Le 500\n\n**Why the other options are wrong**\n\n- Le 300: Le 300 is one instalment, not the extra cost.\n- Le 3,000: Le 3,000 is the total of the instalments alone.\n- Le 3,500: Le 3,500 is the total hire purchase price. Subtract the cash price.",
+     "position": 2,
+     "options": [
+      {
+       "id": "10a13958-c654-58fb-a675-571258950095",
+       "label": "A",
+       "content": "Le 300",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "727a15d3-48d0-5f16-a85c-08bb690561da",
+       "label": "B",
+       "content": "Le 500",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a0d59add-21ca-5ea3-86d3-82061c300571",
+       "label": "C",
+       "content": "Le 3,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "121d3ad4-9fbb-5584-aba2-c2ce87b8d43a",
+       "label": "D",
+       "content": "Le 3,500",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "35b763d2-ff29-5280-af59-85a0e96cd205",
+     "key": "maths-financial-08",
+     "stem": "A radio costs Le 400 before value added tax (VAT) of 15% is added. Find its price including VAT.",
+     "image_url": null,
+     "explanation": "VAT $= 15\\%$ of Le 400 $= $ Le 60. Price including VAT $= 400 + 60 = $ Le 460.\n\n**Why the other options are wrong**\n\n- Le 60: Le 60 is the VAT alone. Add it to the price.\n- Le 340: You subtracted the VAT. VAT is added to the price.\n- Le 415: You added Le 15, not 15%.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ef32eacf-f664-54f6-8771-7d3050ae6213",
+       "label": "A",
+       "content": "Le 60",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a25ccda9-b474-57bd-a515-f844dcbd6dd6",
+       "label": "B",
+       "content": "Le 340",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8594ca7a-968c-5332-9896-c1925ef9d8f5",
+       "label": "C",
+       "content": "Le 415",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c5d248d3-37ae-525e-958b-2f3b24f06b6a",
+       "label": "D",
+       "content": "Le 460",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ce057434-bbb0-53de-9468-0bea2943587c",
+     "key": "maths-financial-09",
+     "stem": "A machine bought for Le 10,000 depreciates by 10% each year on the reducing balance. Find its value after 2 years.",
+     "image_url": null,
+     "explanation": "After 1 year: $10\\,000 \\times 0.9 = 9\\,000$. After 2 years: $9\\,000 \\times 0.9 = 8\\,100$.\n\nValue $= $ Le 8,100\n\n**Why the other options are wrong**\n\n- Le 1,900: Le 1,900 is the total depreciation, not the value.\n- Le 8,000: That is straight-line depreciation (Le 1,000 each year). On the reducing balance, the second year's 10% is of Le 9,000.\n- Le 9,000: That is the value after only 1 year.",
+     "position": 4,
+     "options": [
+      {
+       "id": "166d885e-c819-52f3-9e8e-b1096fb8a85c",
+       "label": "A",
+       "content": "Le 1,900",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ab5db6c0-c246-5a15-9358-37c52dd137f3",
+       "label": "B",
+       "content": "Le 8,000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "df2ca237-fe13-5d03-9ed3-53e69a69b122",
+       "label": "C",
+       "content": "Le 8,100",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2d62c1a0-bbf6-598b-8f48-8ad86132f40c",
+       "label": "D",
+       "content": "Le 9,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0f475c80-8dd6-555f-bc01-6c0644a4f3dd",
+     "key": "maths-financial-10",
+     "stem": "A man earns Le 30,000 a year. The first Le 10,000 is free of tax and the rest is taxed at 20%. How much tax does he pay?",
+     "image_url": null,
+     "explanation": "Taxable income $= 30\\,000 - 10\\,000 = $ Le 20,000.\n\nTax $= 20\\%$ of Le 20,000 $= $ Le 4,000\n\n**Why the other options are wrong**\n\n- Le 2,000: You taxed the tax-free Le 10,000 instead of the rest.\n- Le 6,000: You taxed the whole income. The first Le 10,000 is tax-free.\n- Le 26,000: Le 26,000 is his income after tax.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ba931b56-90e1-59a9-b830-e13cb6679f3b",
+       "label": "A",
+       "content": "Le 2,000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ff6209b4-44dc-5bdf-acee-77e6e2424c7a",
+       "label": "B",
+       "content": "Le 4,000",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "12aa0b9c-2beb-5265-b671-85bbfb3e2fc6",
+       "label": "C",
+       "content": "Le 6,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "58a47a27-4fb8-587f-a9ba-2850cbb5ce07",
+       "label": "D",
+       "content": "Le 26,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "61280424-650e-56ef-a3d2-57f44d264e5a",
+   "topic": "Differentiation",
+   "title": "Differentiation: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on differentiation, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 244,
+   "questions": [
+    {
+     "id": "a070e8ee-6dd9-532a-bde8-954fb0b8e492",
+     "key": "maths-differentiation-06",
+     "stem": "Find $\\dfrac{dy}{dx}$ if $y = (2x + 1)^{2}$.",
+     "image_url": null,
+     "explanation": "Expand: $y = 4x^{2} + 4x + 1$. Then $\\dfrac{dy}{dx} = 8x + 4$.\n\n**Why the other options are wrong**\n\n- $4x + 2$: You wrote $2(2x + 1)$ and forgot the factor 2 from inside the bracket. Expand first: $4x^{2} + 4x + 1$.\n- $4x + 4$: Expanding gives $4x^{2} + 4x + 1$; the derivative of $4x^{2}$ is $8x$, not $4x$.\n- $4x^{2} + 4x$: That is $y - 1$, not its derivative.",
+     "position": 1,
+     "options": [
+      {
+       "id": "37bc4dbd-4300-5184-a047-463aa906c793",
+       "label": "A",
+       "content": "$4x + 2$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a06adc53-3e11-5f6d-9889-9389c25c12f8",
+       "label": "B",
+       "content": "$4x + 4$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5a7714d7-21b6-5ed3-89d1-ea95c0677087",
+       "label": "C",
+       "content": "$8x + 4$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "86a12ae3-699a-5109-90b1-9c991fd3177a",
+       "label": "D",
+       "content": "$4x^{2} + 4x$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b7a010d5-29aa-5bd9-aa7f-77ae67519439",
+     "key": "maths-differentiation-07",
+     "stem": "Find $\\dfrac{dy}{dx}$ if $y = \\dfrac{4}{x^{2}}$.",
+     "image_url": null,
+     "explanation": "$y = 4x^{-2}$, so $\\dfrac{dy}{dx} = 4 \\times (-2)x^{-3} = -8x^{-3} = -\\dfrac{8}{x^{3}}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{8}{x^{3}}$: $y = 4x^{-2}$; bringing down the power $-2$ makes the answer negative.\n- $-\\dfrac{8}{x}$: Subtract 1 from the power: $-2 - 1 = -3$, not $-1$.\n- $\\dfrac{4}{2x}$: You differentiated the bottom only. Write $y = 4x^{-2}$ first.",
+     "position": 2,
+     "options": [
+      {
+       "id": "340ecde7-d7bf-5057-8009-22cc0593ee20",
+       "label": "A",
+       "content": "$\\dfrac{8}{x^{3}}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2f833e03-38b4-536b-8288-4f8e270e1a9e",
+       "label": "B",
+       "content": "$-\\dfrac{8}{x}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "15ace15b-0c49-55e8-b1eb-8746b25f21ff",
+       "label": "C",
+       "content": "$\\dfrac{4}{2x}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2ad2837f-3178-5645-9207-984b52373b96",
+       "label": "D",
+       "content": "$-\\dfrac{8}{x^{3}}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "95493385-a4ac-5070-be37-5fa03086562c",
+     "key": "maths-differentiation-08",
+     "stem": "Find the maximum value of $y = 6x - x^{2}$.",
+     "image_url": null,
+     "explanation": "$\\dfrac{dy}{dx} = 6 - 2x = 0 \\Rightarrow x = 3$.\n\n$y = 6(3) - 3^{2} = 18 - 9 = 9$. (It is a maximum because the $x^{2}$ term is negative.)\n\n**Why the other options are wrong**\n\n- $-9$: At $x = 3$, $y = 18 - 9 = +9$.\n- $3$: 3 is the value of $x$ at the maximum, not the maximum value of $y$.\n- $18$: You worked out only $6x$ at $x = 3$; subtract $x^{2} = 9$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1b670db9-69ef-5f03-85b6-3af7bf18649b",
+       "label": "A",
+       "content": "$-9$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ac984159-16af-5cb0-a401-afcf3b15ca8b",
+       "label": "B",
+       "content": "$3$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c1ae0cef-2097-5cec-a4b3-f913f0db7f42",
+       "label": "C",
+       "content": "$9$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "80becfce-721b-517a-9032-c8cab2041b91",
+       "label": "D",
+       "content": "$18$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e7f1efc8-4499-516f-8990-b0438f24eb74",
+     "key": "maths-differentiation-09",
+     "stem": "A particle moves so that its distance in metres after $t$ seconds is $s = 2t^{3} - 5t$. Find its acceleration when $t = 2$.",
+     "image_url": null,
+     "explanation": "Velocity $v = \\dfrac{ds}{dt} = 6t^{2} - 5$. Acceleration $a = \\dfrac{dv}{dt} = 12t$.\n\nAt $t = 2$: $a = 24$ m/s²\n\n**Why the other options are wrong**\n\n- $6$ m/s²: 6 is the distance $s$ at $t = 2$. Acceleration is the second derivative.\n- $12$ m/s²: $\\dfrac{dv}{dt} = 12t$; substitute $t = 2$.\n- $19$ m/s²: 19 m/s is the velocity at $t = 2$. Differentiate once more for acceleration.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e0965e42-4efb-5dc8-8b14-2bf260041ce2",
+       "label": "A",
+       "content": "$6$ m/s²",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "facf99bb-ae3b-592b-9f16-b7f19d651839",
+       "label": "B",
+       "content": "$12$ m/s²",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "175520de-4da3-57e6-84e1-fca1fd0fc74d",
+       "label": "C",
+       "content": "$19$ m/s²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fe922aca-7c82-51ff-b7da-c8feda6200bf",
+       "label": "D",
+       "content": "$24$ m/s²",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "79d9751e-943f-5ac2-95d2-14a33a3218d6",
+     "key": "maths-differentiation-10",
+     "stem": "At what value of $x$ is the gradient of the curve $y = x^{2} - 6x + 2$ equal to 4?",
+     "image_url": null,
+     "explanation": "Gradient $= \\dfrac{dy}{dx} = 2x - 6$. Set $2x - 6 = 4 \\Rightarrow 2x = 10 \\Rightarrow x = 5$.\n\n**Why the other options are wrong**\n\n- $-1$: From $2x - 6 = 4$, $2x = 10$; you subtracted 6 instead of adding it.\n- $2$: You left out the $-6$: $2x = 4$.\n- $3$: At $x = 3$ the gradient is 0 (the turning point), not 4.",
+     "position": 5,
+     "options": [
+      {
+       "id": "340a63bd-61b0-503b-9c03-3358784a5aa9",
+       "label": "A",
+       "content": "$-1$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "948c3930-c4c4-59b7-bc79-49351167893d",
+       "label": "B",
+       "content": "$2$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8752de57-5c83-5547-a9c3-2b2d04c77aac",
+       "label": "C",
+       "content": "$3$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "26459d62-64ca-5c86-ba63-17ec506e26f3",
+       "label": "D",
+       "content": "$5$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "796de0e7-6525-57c8-bf30-ac668bb7c00f",
+   "topic": "Integration",
+   "title": "Integration: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on integration, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 245,
+   "questions": [
+    {
+     "id": "8aad183b-7e4f-5512-8eb0-afdba979714b",
+     "key": "maths-integration-06",
+     "stem": "Find $\\displaystyle\\int (4x^{3} - 2x)\\, dx$.",
+     "image_url": null,
+     "explanation": "Add 1 to each power and divide by the new power:\n\n$\\int 4x^{3}\\, dx = \\dfrac{4x^{4}}{4} = x^{4}$ and $\\int 2x\\, dx = \\dfrac{2x^{2}}{2} = x^{2}$.\n\n$\\int (4x^{3} - 2x)\\, dx = x^{4} - x^{2} + c$\n\n**Why the other options are wrong**\n\n- $12x^{2} - 2 + c$: You differentiated instead of integrating.\n- $x^{4} - 2x^{2} + c$: $\\int 2x\\, dx = \\dfrac{2x^{2}}{2} = x^{2}$: divide by the new power.\n- $4x^{4} - 2x^{2} + c$: You raised the powers but did not divide by them.",
+     "position": 1,
+     "options": [
+      {
+       "id": "36be1c6d-aa5d-5d3d-89eb-5831681801fa",
+       "label": "A",
+       "content": "$x^{4} - x^{2} + c$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "cf7e1aef-1975-5b34-9c4f-4bc2efc8930e",
+       "label": "B",
+       "content": "$12x^{2} - 2 + c$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f2ef2af2-4991-529f-9658-5903a5e5bb62",
+       "label": "C",
+       "content": "$x^{4} - 2x^{2} + c$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "18b430bc-8c05-5cc8-9b6f-823cacfdbfdb",
+       "label": "D",
+       "content": "$4x^{4} - 2x^{2} + c$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c7359160-ff4f-54e8-b904-3a630841ba7f",
+     "key": "maths-integration-07",
+     "stem": "Evaluate $\\displaystyle\\int_{0}^{3} (2x + 1)\\, dx$.",
+     "image_url": null,
+     "explanation": "$\\displaystyle\\int_{0}^{3} (2x + 1)\\, dx = \\Big[x^{2} + x\\Big]_{0}^{3} = (9 + 3) - 0 = 12$\n\n**Why the other options are wrong**\n\n- $2$: 2 is the derivative of $2x + 1$. Integrate: $x^{2} + x$.\n- $7$: 7 is the value of $2x + 1$ at $x = 3$. Integrate first, then substitute the limits.\n- $9$: You integrated $2x$ to $x^{2}$ but left out the integral of 1, which is $x$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "22bc3468-c1cb-5220-96ba-fd4d19e6ec0a",
+       "label": "A",
+       "content": "$2$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0739dc7d-0683-59d8-89a8-5c35d56aa975",
+       "label": "B",
+       "content": "$7$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "261b7845-64ad-574c-98c0-39c34a483390",
+       "label": "C",
+       "content": "$9$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cfc11f4c-2f44-5b2d-94c9-98cca4bda23b",
+       "label": "D",
+       "content": "$12$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5328f345-d043-57c3-9bbc-e5719834fb6b",
+     "key": "maths-integration-08",
+     "stem": "Find the area enclosed by the curve $y = 4 - x^{2}$, the $x$-axis and the lines $x = 0$ and $x = 2$.",
+     "image_url": null,
+     "explanation": "Area $= \\displaystyle\\int_{0}^{2} (4 - x^{2})\\, dx = \\Big[4x - \\dfrac{x^{3}}{3}\\Big]_{0}^{2} = 8 - \\dfrac{8}{3} = \\dfrac{16}{3}$ square units\n\n**Why the other options are wrong**\n\n- $\\dfrac{8}{3}$ square units: That is $\\int_{0}^{2} x^{2}\\, dx$ alone. Integrate the whole of $4 - x^{2}$.\n- $4$ square units: 4 is the height of the curve at $x = 0$, not the area under it.\n- $8$ square units: You integrated only the 4, leaving out $-\\dfrac{x^{3}}{3}$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ef9e77e2-0d91-5000-9108-161a5f07593c",
+       "label": "A",
+       "content": "$\\dfrac{8}{3}$ square units",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "44063437-188e-5f9a-b366-a17ccf969567",
+       "label": "B",
+       "content": "$4$ square units",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7320d2ac-c638-5480-aa96-030d8ca2bcc4",
+       "label": "C",
+       "content": "$\\dfrac{16}{3}$ square units",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2ea46155-4732-50fe-b5ea-c9cb03184ee7",
+       "label": "D",
+       "content": "$8$ square units",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ac55bae3-1b44-558b-b6b6-c558fef8ab02",
+     "key": "maths-integration-09",
+     "stem": "Given that $\\dfrac{dy}{dx} = 6x^{2}$ and $y = 10$ when $x = 1$, find $y$ when $x = 2$.",
+     "image_url": null,
+     "explanation": "$y = \\int 6x^{2}\\, dx = 2x^{3} + c$. When $x = 1$, $y = 10$: $10 = 2 + c$, so $c = 8$.\n\nWhen $x = 2$: $y = 2(8) + 8 = 24$\n\n**Why the other options are wrong**\n\n- $8$: 8 is the constant of integration, not the value of $y$ at $x = 2$.\n- $16$: You left out the constant of integration: $y = 2x^{3} + 8$.\n- $26$: You took the constant as 10. From $10 = 2(1)^{3} + c$, $c = 8$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "fe9a9fc6-9073-52c1-a6f7-d43f1b30fb8b",
+       "label": "A",
+       "content": "$8$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "36cab314-aaf1-56b6-b6d1-16184764b1f4",
+       "label": "B",
+       "content": "$16$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cd4f43b9-ac4a-5856-9336-ecd81de80c18",
+       "label": "C",
+       "content": "$24$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "875fca7d-50d5-58a1-9e0a-572c52e66673",
+       "label": "D",
+       "content": "$26$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "116c2aa4-65b9-5a35-b079-5eef3093eb2a",
+     "key": "maths-integration-10",
+     "stem": "Find $\\displaystyle\\int (x + 1)(x - 1)\\, dx$.",
+     "image_url": null,
+     "explanation": "Expand first: $(x + 1)(x - 1) = x^{2} - 1$.\n\n$\\int (x^{2} - 1)\\, dx = \\dfrac{x^{3}}{3} - x + c$\n\n**Why the other options are wrong**\n\n- $x^{3} - x + c$: $\\int x^{2}\\, dx = \\dfrac{x^{3}}{3}$: divide by the new power.\n- $\\dfrac{x^{3}}{3} + x + c$: $(x + 1)(x - 1) = x^{2} - 1$, so the second term is $-x$.\n- $2x + c$: You differentiated $x^{2} - 1$ instead of integrating it.",
+     "position": 5,
+     "options": [
+      {
+       "id": "80cc0f9a-5af2-572b-8b2f-4704ca91af3f",
+       "label": "A",
+       "content": "$x^{3} - x + c$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4dca7f13-5d4e-5251-980b-1fe29c5ec61e",
+       "label": "B",
+       "content": "$\\dfrac{x^{3}}{3} - x + c$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c3a6d5d0-b729-592e-aa25-5b9c4705ab9e",
+       "label": "C",
+       "content": "$\\dfrac{x^{3}}{3} + x + c$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1808941c-db11-5f64-900b-8cdb28d0bffc",
+       "label": "D",
+       "content": "$2x + c$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "72e5d077336a"
+}

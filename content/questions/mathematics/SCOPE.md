@@ -146,15 +146,30 @@ handbooks. Financial arithmetic and calculus are in the WAEC syllabus but
 were not set in 2018 or 2019 for Sierra Leone, so they get one short set
 each until there is evidence they are examined.
 
+## Practice set 2: 230 more questions (sets 6 to 10)
+
+`set6_p1.py` to `set10_p1.py` give every topic a second practice set of five
+questions, mirroring sets 1 to 5 topic for topic, so each topic has ten. They
+test skills and mistakes the first set does not (for example standard form
+without a calculator, subtraction in base five, chord distance, the sine rule
+for an angle, singular matrices, recurring decimals, turning points, VAT and
+income tax, second derivatives). Two circle-theorem questions have diagrams
+drawn from the coordinates their answers are measured from.
+
+- Each set is its own paper per topic, titled "practice set 2", so the first
+  sets and their answer letters are untouched (`practice_set` in build.py).
+- Mocks draw only on each topic's first practice set, so the timed mock exam
+  does not change when practice sets are added.
+- Distractors were chosen so the correct letters spread across A to D even
+  though numerical options are in ascending order.
+
 ## Where Mathematics stands
 
-All 46 Mathematics topics now have at least one practice set: 230 Paper 1
-questions in 46 sets, with every answer and all 920 option texts checked by
-the build.
+All 46 Mathematics topics have two practice sets: 460 Paper 1 questions, with
+every answer and every option text checked by the build.
 
-Next: more questions on the most-examined topics (5 per topic is a starter
-set), full 50-question mock Paper 1s, and Paper 2-style questions with
-worked mark schemes.
+Next: full 50-question mock Paper 1s from the second sets, and Paper 2-style
+questions with worked mark schemes.
 
 ## Sources
 

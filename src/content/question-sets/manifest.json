@@ -167,6 +167,21 @@
   "questions": 50
  },
  {
+  "name": "maths_set10_p1",
+  "label": "Mathematics: practice set 2 for similar figures, loci, construction, financial arithmetic, differentiation and integration",
+  "subject_slug": "mathematics",
+  "version": "72e5d077336a",
+  "papers": [
+   "456ae697-fce5-5cab-8351-be88617c8dd9",
+   "27f5e14b-402c-54ea-9c25-cff354604d30",
+   "f21577d6-5c2a-5ff5-a72b-d87a12b35f9e",
+   "bb556b5f-bc7e-547c-81d8-dbf40a636a5b",
+   "61280424-650e-56ef-a3d2-57f44d264e5a",
+   "796de0e7-6525-57c8-bf30-ac668bb7c00f"
+  ],
+  "questions": 30
+ },
+ {
   "name": "english_set1_p1",
   "label": "English Language: set 1 (grammar)",
   "subject_slug": "english-language",

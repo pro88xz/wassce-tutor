@@ -118,6 +118,15 @@ SETS = [
         "practice_set": 2,
     },
     {
+        "module": ROOT / "content/questions/mathematics/set10_p1.py",
+        "subject_slug": "mathematics",
+        "name": "maths_set10_p1",
+        "label": "Mathematics: practice set 2 for similar figures, loci, construction, financial arithmetic, differentiation and integration",
+        "review": ROOT / "content/questions/mathematics/set10_p1.review.md",
+        "sort_from": 240,
+        "practice_set": 2,
+    },
+    {
         "module": ROOT / "content/questions/english-language/set1_p1.py",
         "subject_slug": "english-language",
         "name": "english_set1_p1",

@@ -9,9 +9,10 @@ correct form), with four options **A–D**. The sources do not agree on the
 number of items or the time allowed, and WAEC's own e-learning toolkit for
 English is no longer online, so those numbers are not stated here.
 
-The essay, comprehension and summary questions (written answers) and the oral
-English paper (sounds, stress, intonation) need different practice formats and
-are not covered by these objective sets yet.
+The essay, comprehension and summary questions are written answers on Paper 2,
+and oral English is its own paper. Sets 5 and 6 practise them in objective form:
+the test-of-orals formats for sounds, stress and intonation, and the conventions
+the written tasks are marked on (format, register, organisation, technique).
 
 ## Set 1: structure (grammar), 50 questions
 
@@ -50,8 +51,30 @@ practise the same reading skills; every answer is backed by a sentence in its
 passage. A set with a passage has `paper_type` *Comprehension*, and the
 practice screen shows the passage above the questions.
 
-Next: more passages (narrative, argumentative, a report), then oral English
-(vowels, consonants, word and sentence stress) in the test-of-orals format.
+## Set 5: oral English, 40 questions
+
+Eight items each on Vowels and Diphthongs, Consonants and Consonant Clusters,
+Word Stress, Sentence Stress and Intonation, and Listening Comprehension Skills,
+in the test-of-orals formats (same sound, rhyme, odd one out, stress pattern,
+emphatic stress, tunes). RP symbols as in the lessons; letters in **bold** mark
+the sound tested and CAPITALS mark stress. Listening items carry a short
+transcript in the question.
+
+## Set 6: reading approach and writing tasks, 84 questions
+
+Seven items each on Approaching a Comprehension Passage, Essay Writing
+Fundamentals, Formal and Informal Letter Writing, Speech Writing, Narrative,
+Descriptive, Argumentative and Expository Essays, Report Writing, Article
+Writing and Creative Writing. Wrong options are the mistakes examiners report.
+
+## Top-up
+
+Sets 1 to 4 have two more items per topic (one per passage in set 4), added at
+the end of each file so earlier answer letters never move. Every English topic
+now has at least seven questions: 334 in all.
+
+Next: more passages (narrative, argumentative, a report), and audio for the
+oral English items.
 
 ## House rules
 
