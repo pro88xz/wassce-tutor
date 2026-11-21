@@ -352,6 +352,7 @@ SETS += [
     for n, label in (
         (1, "Biology: set 1 (cells, nutrition, respiration, transport, ecology and genetics)"),
         (2, "Biology: set 2 (the science of biology, classification, cell function, cell division and organisation)"),
+        (3, "Biology: set 3 (blood and circulation, gas exchange, excretion, the kidney, support and movement)"),
     )
 ]
 

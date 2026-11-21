@@ -731,6 +731,21 @@
   "questions": 42
  },
  {
+  "name": "biology_set3_p1",
+  "label": "Biology: set 3 (blood and circulation, gas exchange, excretion, the kidney, support and movement)",
+  "subject_slug": "biology",
+  "version": "f4276bf719d3",
+  "papers": [
+   "c0dcdc8b-7e0e-5649-9d7f-6196d1a1601a",
+   "0f9bd5a7-00f8-5f14-97a0-bad6128f45b5",
+   "83234a7a-810a-5b3b-8982-52242091773b",
+   "e1c49d1a-0bd6-579e-9324-2b7a903473be",
+   "5a2b85a7-106c-5311-b83e-9e33f953fc20",
+   "463d21d9-f299-59de-b02e-1470c9c4c364"
+  ],
+  "questions": 42
+ },
+ {
   "name": "maths_mock_p1",
   "label": "Mathematics: timed mock exam, Paper 1",
   "subject_slug": "mathematics",

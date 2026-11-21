@@ -1,0 +1,1664 @@
+{
+ "name": "biology_set3_p1",
+ "label": "Biology: set 3 (blood and circulation, gas exchange, excretion, the kidney, support and movement)",
+ "subject_slug": "biology",
+ "papers": [
+  {
+   "id": "c0dcdc8b-7e0e-5649-9d7f-6196d1a1601a",
+   "topic": "Blood, Heart, and Circulation in Mammals",
+   "title": "Blood, Heart, and Circulation in Mammals: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on blood, heart, and circulation in mammals, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 140,
+   "questions": [
+    {
+     "id": "da5aa1e6-e3eb-573c-96ca-954cdfbcefdc",
+     "key": "bio-bh-01",
+     "stem": "The main function of blood platelets is to",
+     "image_url": null,
+     "explanation": "At a cut, platelets release substances that start clotting: soluble fibrinogen is changed into insoluble fibrin threads, which trap blood cells and seal the wound.\n\n**Why the other options are wrong**\n\n- carry oxygen to the tissues: Oxygen is carried by the haemoglobin in red blood cells.\n- engulf and destroy bacteria: Engulfing bacteria is the work of phagocytes, a kind of white blood cell.\n- produce antibodies against germs: Antibodies are made by lymphocytes, another kind of white blood cell.",
+     "position": 1,
+     "options": [
+      {
+       "id": "69550356-633f-59a8-9c46-cae12d857512",
+       "label": "A",
+       "content": "help the blood to clot at a wound",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "27c55e93-9589-5d23-b2cf-a16fa496d343",
+       "label": "B",
+       "content": "carry oxygen to the tissues",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ce0f752d-61fd-52e5-90a5-ae91bb446a3b",
+       "label": "C",
+       "content": "engulf and destroy bacteria",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "441d354d-7903-50f0-b42b-0607ef454eec",
+       "label": "D",
+       "content": "produce antibodies against germs",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "afc20393-f044-56e2-abae-ec26924f4da2",
+     "key": "bio-bh-02",
+     "stem": "The wall of the left ventricle is much thicker than that of the right ventricle because the left ventricle",
+     "image_url": null,
+     "explanation": "The left ventricle sends blood through the aorta to the whole body, a long way against high resistance, so it has the thickest, most muscular wall in the heart.\n\n**Why the other options are wrong**\n\n- pumps a larger volume of blood at each beat: Both ventricles pump the same volume of blood at each beat; the left pumps it at a higher pressure.\n- receives deoxygenated blood from the body: Deoxygenated blood from the body enters the right atrium, not the left ventricle.\n- pumps blood only as far as the lungs: Pumping blood to the nearby lungs is the job of the right ventricle, which is why its wall is thinner.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f505dce5-f8ae-5938-8fa0-f7b39244cc90",
+       "label": "A",
+       "content": "pumps a larger volume of blood at each beat",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "416908c1-d362-5338-a1e2-a92758f5301b",
+       "label": "B",
+       "content": "pumps blood all round the body, which needs a higher pressure",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "41634287-f846-5872-a405-3b166fd91383",
+       "label": "C",
+       "content": "receives deoxygenated blood from the body",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "27c1a5aa-89f2-5dce-a8d5-540ec1df4fd4",
+       "label": "D",
+       "content": "pumps blood only as far as the lungs",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2559fbd9-3bc4-5339-a374-76dbd1844cdc",
+     "key": "bio-bh-03",
+     "stem": "Which blood vessel carries oxygenated blood?",
+     "image_url": null,
+     "explanation": "Arteries carry blood away from the heart and veins carry it back, whatever its oxygen content. The pulmonary vein brings oxygenated blood from the lungs to the left atrium: it is the one vein that carries oxygenated blood.\n\n**Why the other options are wrong**\n\n- Pulmonary artery: The pulmonary artery carries deoxygenated blood from the right ventricle to the lungs.\n- Vena cava: The vena cava brings deoxygenated blood from the body back to the right atrium.\n- Hepatic portal vein: The hepatic portal vein carries deoxygenated blood, rich in digested food, from the intestine to the liver.",
+     "position": 3,
+     "options": [
+      {
+       "id": "e9c3819a-2477-5526-aa94-d3f1962a02ae",
+       "label": "A",
+       "content": "Pulmonary artery",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "13ae408a-69fa-5667-96a3-77d331351346",
+       "label": "B",
+       "content": "Vena cava",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "df26b734-f9d2-5f08-bd14-17661be5429a",
+       "label": "C",
+       "content": "Pulmonary vein",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ab5360ab-5b5e-5fe7-ae42-67afadfe89c9",
+       "label": "D",
+       "content": "Hepatic portal vein",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "87260ae1-c751-551a-adf0-f1c7593c4874",
+     "key": "bio-bh-04",
+     "stem": "Veins have valves but arteries do not (except where they leave the heart). This is because",
+     "image_url": null,
+     "explanation": "By the time blood reaches the veins its pressure is low. Valves let it move only towards the heart, especially in the legs, where it must rise against gravity.\n\n**Why the other options are wrong**\n\n- veins carry oxygenated blood: Most veins carry deoxygenated blood; and valves have nothing to do with oxygen.\n- valves pump blood back to the heart: Valves do not pump. Blood is pushed along by the squeezing of nearby muscles; valves only stop it flowing back.\n- blood flows through veins in spurts: Blood flows in spurts (the pulse) in arteries, close to the heart; in veins it flows smoothly and slowly.",
+     "position": 4,
+     "options": [
+      {
+       "id": "8440d55d-c19f-5874-b013-b1d44166c50a",
+       "label": "A",
+       "content": "veins carry oxygenated blood",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "aa64c389-6319-580c-99ac-64a9c42e5c9a",
+       "label": "B",
+       "content": "valves pump blood back to the heart",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f8d42f52-436e-562e-b639-99ec171c8ed7",
+       "label": "C",
+       "content": "blood flows through veins in spurts",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ce01edf5-e766-5207-bcce-988119e039f3",
+       "label": "D",
+       "content": "blood in veins is at low pressure and could flow backwards",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "25f54a15-eef0-584b-8772-94eb68b6f97a",
+     "key": "bio-bh-05",
+     "stem": "A person of blood group O is called a universal donor because",
+     "image_url": null,
+     "explanation": "In a transfusion, what matters most is whether the donor's red cells carry an antigen that the recipient's antibodies attack. Group O cells carry no A or B antigen, so they can be given to any ABO group. Group AB is the universal recipient.\n\n**Why the other options are wrong**\n\n- their red cells carry both A and B antigens: Red cells with both A and B antigens belong to group AB.\n- their plasma contains no antibodies against A or B: Group O plasma contains both anti-A and anti-B; it is group AB plasma that contains neither.\n- their blood can be given safely only to people of group O: That would make group O the most limited donor, not the universal one.",
+     "position": 5,
+     "options": [
+      {
+       "id": "2a8ca634-9072-533c-8dd1-807e76c339f2",
+       "label": "A",
+       "content": "their red cells carry neither A nor B antigens, so they are not clumped by the recipient's antibodies",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "22e6f353-e016-5f73-87f1-99c806addd0b",
+       "label": "B",
+       "content": "their red cells carry both A and B antigens",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "54e79c6d-68a4-57c3-a715-95db0da77fcc",
+       "label": "C",
+       "content": "their plasma contains no antibodies against A or B",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "83202203-8e6d-568e-b821-f64022dcad9a",
+       "label": "D",
+       "content": "their blood can be given safely only to people of group O",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a67aa99a-34cb-535e-a177-7e0e043835c5",
+     "key": "bio-bh-06",
+     "stem": "In a mammal's double circulation, blood passes through the heart twice in each complete circuit. What is the main advantage of this?",
+     "image_url": null,
+     "explanation": "Pulmonary circuit: heart, then lungs, then heart. Systemic circuit: heart, then body, then heart. After the lungs the blood is at low pressure. Pumping it again sends oxygen quickly to active tissues.\n\n**Why the other options are wrong**\n\n- Oxygenated and deoxygenated blood mix in the heart: In mammals the two sides of the heart are separate, so the two kinds of blood do not mix; mixing would be a disadvantage.\n- Blood flows through the lungs at very high pressure: Blood goes to the lungs at a lower pressure, which protects the thin lung capillaries.\n- The heart needs to beat only half as often: The heart beats just as often; each beat pumps both circuits at once.",
+     "position": 6,
+     "options": [
+      {
+       "id": "89630274-309e-5399-a648-c48e2cea5d18",
+       "label": "A",
+       "content": "Oxygenated and deoxygenated blood mix in the heart",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9041a21c-89cc-5e84-9079-58843faf9976",
+       "label": "B",
+       "content": "Blood returning from the lungs is pumped again, so it reaches the body at high pressure",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "fbff5364-da8d-5cd1-b114-82be1dfdcfaa",
+       "label": "C",
+       "content": "Blood flows through the lungs at very high pressure",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b9379e94-33fa-5be0-a5b1-3c0632f547bb",
+       "label": "D",
+       "content": "The heart needs to beat only half as often",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "19849d1b-daa2-56dc-ba1a-6ab3cb3fd016",
+     "key": "bio-bh-07",
+     "stem": "Materials are exchanged between the blood and the body cells through the walls of the capillaries because capillary walls",
+     "image_url": null,
+     "explanation": "Capillary walls are a single layer of flat cells, so the diffusion distance is very short. Oxygen and food pass out to the cells; carbon dioxide and wastes pass in.\n\n**Why the other options are wrong**\n\n- are thick and muscular: Thick, muscular walls belong to arteries; they would make the diffusion distance long.\n- contain valves: Valves are found in veins, and they control the direction of flow, not exchange.\n- carry blood at very high pressure: Blood pressure in capillaries is much lower than in arteries; very high pressure would burst them.",
+     "position": 7,
+     "options": [
+      {
+       "id": "9a7cd38a-a2ad-52b6-a3dc-f92c94ab33d8",
+       "label": "A",
+       "content": "are thick and muscular",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3de6c1c3-e1f9-57e2-ba27-a18dac1c761c",
+       "label": "B",
+       "content": "contain valves",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9f090121-d5f9-5363-b5dd-7935665bc540",
+       "label": "C",
+       "content": "are only one cell thick",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "5026d924-721f-5a6c-92e4-4f065ff858d7",
+       "label": "D",
+       "content": "carry blood at very high pressure",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "0f9bd5a7-00f8-5f14-97a0-bad6128f45b5",
+   "topic": "Respiratory Systems and Gas Exchange",
+   "title": "Respiratory Systems and Gas Exchange: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on respiratory systems and gas exchange, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 141,
+   "questions": [
+    {
+     "id": "ccd135d9-2087-5d97-9cc8-9d6244aab32f",
+     "key": "bio-rg-01",
+     "stem": "Which of the following happens during inhalation (breathing in) in a mammal?",
+     "image_url": null,
+     "explanation": "The chest volume increases, so the pressure in the lungs falls below the air pressure outside and air flows in.\n\n**Why the other options are wrong**\n\n- The diaphragm relaxes and domes upwards, and the ribs move down and in: These are the movements of exhalation, which make the chest smaller.\n- The diaphragm contracts and flattens, and the ribs move down and in: When the external intercostal muscles contract during inhalation, the ribs move up and out, not down and in.\n- Air rushes into the lungs first and pushes the diaphragm down: Air moves in because the chest gets bigger and the pressure inside falls; the air does not move the diaphragm.",
+     "position": 1,
+     "options": [
+      {
+       "id": "79babb48-9ecd-518b-8467-43265703a3cf",
+       "label": "A",
+       "content": "The diaphragm relaxes and domes upwards, and the ribs move down and in",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "55068d23-9e10-58ea-ad16-aaec6a942d91",
+       "label": "B",
+       "content": "The diaphragm contracts and flattens, and the ribs move down and in",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "78654b92-83c5-5797-b0e1-44d28f92ebf6",
+       "label": "C",
+       "content": "Air rushes into the lungs first and pushes the diaphragm down",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "23585302-0fe2-575a-bd20-7c104cec68e3",
+       "label": "D",
+       "content": "The diaphragm contracts and flattens, and the ribs move up and out",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6787d5fe-ad29-59fb-a5fa-6b5029ef75de",
+     "key": "bio-rg-02",
+     "stem": "Which of the following is NOT an adaptation of the alveoli for gas exchange?",
+     "image_url": null,
+     "explanation": "Rings of cartilage support the trachea and bronchi, not the alveoli. The alveoli are adapted by their huge total surface area, thin moist walls and rich blood supply.\n\n**Why the other options are wrong**\n\n- Their walls are only one cell thick: This IS an adaptation: thin walls give a short distance for diffusion.\n- Their inner surface is kept moist: This IS an adaptation: oxygen dissolves in the moisture before it diffuses into the blood.\n- They are surrounded by many blood capillaries: This IS an adaptation: the blood carries oxygen away and brings carbon dioxide, keeping the gradients steep.",
+     "position": 2,
+     "options": [
+      {
+       "id": "a9aa845f-24ae-5ede-b925-2b6965ded43b",
+       "label": "A",
+       "content": "They are held open by C-shaped rings of cartilage",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "183038ae-e9e1-570b-89e5-f01c22e405da",
+       "label": "B",
+       "content": "Their walls are only one cell thick",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4b6b6daf-2555-56fb-a94a-0935a1876de5",
+       "label": "C",
+       "content": "Their inner surface is kept moist",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "71457cbb-d494-5cca-b78f-394c649d77c5",
+       "label": "D",
+       "content": "They are surrounded by many blood capillaries",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6a0452cb-2ef6-5414-a32b-b4769b5b6a0c",
+     "key": "bio-rg-03",
+     "stem": "In an insect, oxygen reaches the body cells mainly through",
+     "image_url": null,
+     "explanation": "Air enters through spiracles on the thorax and abdomen and travels along branching tracheae to fine tracheoles beside the cells, so oxygen is delivered straight to the tissues.\n\n**Why the other options are wrong**\n\n- the blood, which collects it from gills: Insect blood plays little part in carrying oxygen, and land insects have no gills.\n- a pair of lungs connected to the mouth: Insects have no lungs.\n- the moist skin covering the whole body: Insects have a waxy exoskeleton that keeps water in, so gases cannot pass through it easily.",
+     "position": 3,
+     "options": [
+      {
+       "id": "12ed9629-c5da-5c48-a2bb-faffd5629530",
+       "label": "A",
+       "content": "the blood, which collects it from gills",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e94c45b5-b620-5a8e-ba70-856f2aa56235",
+       "label": "B",
+       "content": "tracheae and tracheoles that open to the air at spiracles",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bb05d46b-5470-580f-b62b-3052b0d9c553",
+       "label": "C",
+       "content": "a pair of lungs connected to the mouth",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "04a4b299-9de6-53b7-a1b3-f1b0833a80f4",
+       "label": "D",
+       "content": "the moist skin covering the whole body",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9545a2e9-021c-505a-b13f-63ee40657d6f",
+     "key": "bio-rg-04",
+     "stem": "In the gills of a bony fish, water flows over the lamellae in the opposite direction to the blood flowing through them. This arrangement",
+     "image_url": null,
+     "explanation": "In this counter-current flow, the blood always meets water that has more oxygen than it has, so oxygen keeps diffusing into the blood all along the lamella.\n\n**Why the other options are wrong**\n\n- stops water from entering the blood: Water and blood are separated by the lamella wall whichever way they flow.\n- allows the fish to take in oxygen without moving water over its gills: A fish must keep water flowing over its gills, because water holds little oxygen.\n- makes the blood flow faster through the gills: The direction of flow does not change the speed of the blood.",
+     "position": 4,
+     "options": [
+      {
+       "id": "06d1ac85-e8cc-5c4d-bb2e-51bfefa2d6a4",
+       "label": "A",
+       "content": "stops water from entering the blood",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a8d339c3-cc28-586e-9edd-efbcda0d8546",
+       "label": "B",
+       "content": "allows the fish to take in oxygen without moving water over its gills",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c1b6d689-0532-5101-a609-aa0cb0fba86f",
+       "label": "C",
+       "content": "keeps a concentration gradient for oxygen along the whole lamella",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "92dcf785-2aed-55cc-81a7-f21b314b21bf",
+       "label": "D",
+       "content": "makes the blood flow faster through the gills",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6c26de73-e7de-59fd-852c-0db3cfde56b6",
+     "key": "bio-rg-05",
+     "stem": "The mucus and cilia lining the trachea",
+     "image_url": null,
+     "explanation": "Mucus traps dust and microorganisms; the beating cilia carry the mucus up to the throat, where it is swallowed or coughed out. Cigarette smoke damages the cilia.\n\n**Why the other options are wrong**\n\n- absorb oxygen from the air passing down: Oxygen is absorbed in the alveoli, not in the trachea.\n- keep the trachea open during breathing: The trachea is kept open by rings of cartilage.\n- produce the sounds of speech: Sounds are produced by the vocal cords in the larynx.",
+     "position": 5,
+     "options": [
+      {
+       "id": "13806537-2a84-5471-98e1-0f8b4a29bc05",
+       "label": "A",
+       "content": "absorb oxygen from the air passing down",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "346818a7-f1c3-58d6-9980-7b00a294c803",
+       "label": "B",
+       "content": "keep the trachea open during breathing",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5e047ca6-af2a-5b04-8f52-29e0e46fa7d2",
+       "label": "C",
+       "content": "produce the sounds of speech",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f8a5baf1-1845-5bfd-b472-46558990971d",
+       "label": "D",
+       "content": "trap dust and germs and sweep them up towards the throat",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0b4e774d-9e7c-5bac-b8eb-13ea797e026a",
+     "key": "bio-rg-06",
+     "stem": "On a bright, sunny day, a green plant gives out oxygen and takes in carbon dioxide through its leaves. This is because",
+     "image_url": null,
+     "explanation": "Respiration takes in oxygen and gives out carbon dioxide all the time. In bright light photosynthesis is much faster, so overall the leaf gives out oxygen. In darkness only respiration happens.\n\n**Why the other options are wrong**\n\n- plants respire only at night: Plants respire all the time, by day and by night.\n- plants stop respiring when light falls on them: Respiration never stops; in bright light it is simply hidden by faster photosynthesis.\n- the stomata let gases move in one direction only: Gases move through the stomata in both directions, down their concentration gradients.",
+     "position": 6,
+     "options": [
+      {
+       "id": "aca74d5d-c023-5556-849a-54554e96af48",
+       "label": "A",
+       "content": "photosynthesis is faster than respiration, so the oxygen it makes exceeds the oxygen used",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "019cc375-0a01-59d2-b63f-fad4eedc87a4",
+       "label": "B",
+       "content": "plants respire only at night",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5e9e7c5b-a0b9-5396-bd2b-570fcf3166a6",
+       "label": "C",
+       "content": "plants stop respiring when light falls on them",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "81a25a3b-a0d3-559b-a81a-925f2c8b6bb3",
+       "label": "D",
+       "content": "the stomata let gases move in one direction only",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0c52d1ba-c19a-56d7-a01e-dc656c1f7da6",
+     "key": "bio-rg-07",
+     "stem": "In the woody stem of a tree, gases are exchanged with the air through",
+     "image_url": null,
+     "explanation": "Lenticels are small pores of loosely packed cells in the bark, through which oxygen enters and carbon dioxide leaves the living cells inside.\n\n**Why the other options are wrong**\n\n- stomata: Stomata are found on leaves and young green stems; a woody stem is covered by bark.\n- root hairs: Root hairs grow on young roots in the soil, not on stems.\n- spiracles: Spiracles are the openings of the breathing system of insects.",
+     "position": 7,
+     "options": [
+      {
+       "id": "41f0c6c0-f750-5056-92c3-657f498063c3",
+       "label": "A",
+       "content": "stomata",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "13acaa73-2c38-5601-b9d5-76d524841710",
+       "label": "B",
+       "content": "lenticels",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a68d1524-2a77-5e5c-8022-841868a995f7",
+       "label": "C",
+       "content": "root hairs",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a84a791c-2c12-5a2b-ae2e-46882ebba08d",
+       "label": "D",
+       "content": "spiracles",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "83234a7a-810a-5b3b-8982-52242091773b",
+   "topic": "Excretion in Plants and Animals",
+   "title": "Excretion in Plants and Animals: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on excretion in plants and animals, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 142,
+   "questions": [
+    {
+     "id": "0fc40cd7-8825-56bb-8b6f-8f196a6a94c3",
+     "key": "bio-ex-01",
+     "stem": "Which of the following is egestion and NOT excretion?",
+     "image_url": null,
+     "explanation": "Faeces are mostly undigested food that never entered the body cells, so removing them is egestion. Excretion removes the waste products of metabolism.\n\n**Why the other options are wrong**\n\n- Breathing out carbon dioxide: Carbon dioxide is made in respiration, so removing it is excretion.\n- Passing out urine: Urine carries urea and salts produced or left over by metabolism, so this is excretion.\n- Sweating: Sweat removes water, salts and a little urea from the body, so it is a form of excretion.",
+     "position": 1,
+     "options": [
+      {
+       "id": "80bfcf51-d4bf-5f8a-aa5e-f828b2cda49a",
+       "label": "A",
+       "content": "Breathing out carbon dioxide",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "30b93011-6795-56a0-adc6-2a00a7a731c7",
+       "label": "B",
+       "content": "Passing out urine",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a574f1ab-2102-5c8d-a981-e891ae74d630",
+       "label": "C",
+       "content": "Passing out faeces",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c1bcbd9b-0b8c-52f3-ac45-19b7acdfb271",
+       "label": "D",
+       "content": "Sweating",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "552f48b2-72bc-5621-a903-ed272adb4e7d",
+     "key": "bio-ex-02",
+     "stem": "In mammals, urea is made in the",
+     "image_url": null,
+     "explanation": "Excess amino acids cannot be stored. The liver removes their nitrogen-containing part (deamination) and turns it into urea, which the blood carries to the kidneys.\n\n**Why the other options are wrong**\n\n- kidneys, from excess amino acids: The kidneys remove urea from the blood, but it is made in the liver.\n- liver, from excess fatty acids: Fatty acids contain no nitrogen, so they cannot form urea.\n- kidneys, from excess glucose: Glucose contains no nitrogen, and the kidneys do not make urea.",
+     "position": 2,
+     "options": [
+      {
+       "id": "3f51be92-69a6-58a6-beb5-a7da384e95e3",
+       "label": "A",
+       "content": "kidneys, from excess amino acids",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "34f8d818-e461-51d9-b07f-1498dac8d150",
+       "label": "B",
+       "content": "liver, from excess fatty acids",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "60ffe7cd-98c7-5309-b3bb-9bf7e79283a8",
+       "label": "C",
+       "content": "kidneys, from excess glucose",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1576eeca-6d0d-5aaf-8f80-f10bf5ceb805",
+       "label": "D",
+       "content": "liver, from excess amino acids",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f9104b69-2cd2-55bc-a6f7-aef091b606ef",
+     "key": "bio-ex-03",
+     "stem": "Which of the following is an excretory product of plants?",
+     "image_url": null,
+     "explanation": "Plants store wastes such as tannins, resins, gums, latex and some crystals in bark, old leaves and dead tissues, and lose them when these are shed.\n\n**Why the other options are wrong**\n\n- Starch: Starch is a stored food that the plant uses later.\n- Cellulose: Cellulose is the useful material of cell walls.\n- Chlorophyll: Chlorophyll is the pigment the plant uses to trap light.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8ee3246f-b803-5d19-8695-6b7d7f91af75",
+       "label": "A",
+       "content": "Tannins",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3a49d61f-c01d-5967-980a-2f202a7b4848",
+       "label": "B",
+       "content": "Starch",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "225e6adf-f60d-53e1-a46b-8cd4bde39de6",
+       "label": "C",
+       "content": "Cellulose",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7fb4a1a2-f36a-5fe5-bbb5-137f24d55c47",
+       "label": "D",
+       "content": "Chlorophyll",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "027ebd57-8567-58c6-8756-7ec3ac34713d",
+     "key": "bio-ex-04",
+     "stem": "Plants have no special excretory organs. The main reason is that they",
+     "image_url": null,
+     "explanation": "Plants are less active than animals, so wastes build up slowly. Carbon dioxide from respiration is used in photosynthesis, and oxygen from photosynthesis in respiration; other wastes are stored.\n\n**Why the other options are wrong**\n\n- do not respire: Plants respire all the time and produce carbon dioxide.\n- make no waste products at all: Plants do make wastes, such as tannins, resins and excess oxygen.\n- remove all their wastes through their roots: Some wastes leave through the roots, but most leave through the stomata or are stored and shed.",
+     "position": 4,
+     "options": [
+      {
+       "id": "fe570bf5-4243-5b1c-8ced-3b5b54105bb0",
+       "label": "A",
+       "content": "do not respire",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7d307ce5-4563-5262-a0a4-d52effc66c81",
+       "label": "B",
+       "content": "make wastes slowly and reuse some of them, such as the gases of photosynthesis and respiration",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f26103ca-4063-5a3b-962d-50c0947525a9",
+       "label": "C",
+       "content": "make no waste products at all",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e63e7892-7e99-5543-9474-3c6630431c3a",
+       "label": "D",
+       "content": "remove all their wastes through their roots",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4215e9d2-1f93-5343-89b4-0538f8903f6e",
+     "key": "bio-ex-05",
+     "stem": "In insects, nitrogenous wastes are removed from the blood by the",
+     "image_url": null,
+     "explanation": "Malpighian tubules lie in the body cavity of an insect. They take up wastes from the blood and pass uric acid into the gut, to leave with the faeces.\n\n**Why the other options are wrong**\n\n- nephridia: Nephridia are the excretory organs of earthworms.\n- flame cells: Flame cells are the excretory structures of flatworms such as tapeworms.\n- contractile vacuole: The contractile vacuole of *Amoeba* and *Paramecium* mainly removes excess water.",
+     "position": 5,
+     "options": [
+      {
+       "id": "994b03aa-c9eb-5fa7-a5b3-64b894ded074",
+       "label": "A",
+       "content": "nephridia",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "63f26001-67af-5b5d-9cb4-112c4d175f3d",
+       "label": "B",
+       "content": "flame cells",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e37d1f4e-1546-57d8-8541-bbd10b46d7e6",
+       "label": "C",
+       "content": "Malpighian tubules",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "287353ea-0148-547a-96fb-bf92690adac6",
+       "label": "D",
+       "content": "contractile vacuole",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f10240d6-9cf5-5637-a9df-9156d03f96d7",
+     "key": "bio-ex-06",
+     "stem": "Birds and insects excrete their nitrogenous waste mainly as uric acid. Compared with ammonia and urea, uric acid",
+     "image_url": null,
+     "explanation": "Ammonia is very toxic and needs a lot of water. Urea is less toxic and needs less. Uric acid is almost insoluble and non-toxic, so it can be removed with very little water: useful for flying birds and land insects, and in eggs.\n\n**Why the other options are wrong**\n\n- is very toxic, so it must be diluted with much water: This describes ammonia, which is removed by animals that live in water.\n- dissolves easily, so it is flushed out quickly: Uric acid is nearly insoluble; it is removed as a white paste.\n- is made in the lungs and breathed out: Uric acid is made from the breakdown of proteins and leaves as a semi-solid paste, not as a gas.",
+     "position": 6,
+     "options": [
+      {
+       "id": "9379e339-e77a-5dbd-bd37-7df34eecf060",
+       "label": "A",
+       "content": "is very toxic, so it must be diluted with much water",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ce2db1c6-42c1-57e5-936c-d5fd4e8f99aa",
+       "label": "B",
+       "content": "dissolves easily, so it is flushed out quickly",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "734fe9f6-64eb-5dd8-b0e1-00bb0f259e6f",
+       "label": "C",
+       "content": "is made in the lungs and breathed out",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fb30f6de-8ad0-52b0-b2ca-38dad1084f21",
+       "label": "D",
+       "content": "needs very little water to remove, so water is saved",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "847abb5c-4da4-5076-aba3-111e66e58228",
+     "key": "bio-ex-07",
+     "stem": "Which pair of organs are both excretory organs in a mammal?",
+     "image_url": null,
+     "explanation": "Lungs excrete carbon dioxide and some water vapour; kidneys excrete urea, salts and water. The skin and liver also excrete.\n\n**Why the other options are wrong**\n\n- Stomach and kidneys: The stomach digests food; it is not an excretory organ.\n- Heart and lungs: The heart pumps blood; it does not excrete.\n- Pancreas and kidneys: The pancreas makes digestive enzymes and hormones; it is not an excretory organ.",
+     "position": 7,
+     "options": [
+      {
+       "id": "a08e5637-f0ad-50c3-914b-acdf026ebc82",
+       "label": "A",
+       "content": "Lungs and kidneys",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6b21b659-8760-5467-b3dc-d71f035f12a0",
+       "label": "B",
+       "content": "Stomach and kidneys",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "763214df-ec3f-585e-9d18-35c0f681df00",
+       "label": "C",
+       "content": "Heart and lungs",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f9dd4db2-bf2d-5e2f-9c3d-513d1fe5c6ac",
+       "label": "D",
+       "content": "Pancreas and kidneys",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e1c49d1a-0bd6-579e-9324-2b7a903473be",
+   "topic": "The Kidney and Urinary System",
+   "title": "The Kidney and Urinary System: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on the kidney and urinary system, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 143,
+   "questions": [
+    {
+     "id": "4086c000-546c-576d-84f5-8bb4a4507bf9",
+     "key": "bio-ku-01",
+     "stem": "Ultrafiltration of the blood takes place in the",
+     "image_url": null,
+     "explanation": "Blood enters the glomerulus under high pressure, which forces water and small dissolved substances out into Bowman's capsule as the glomerular filtrate.\n\n**Why the other options are wrong**\n\n- loop of Henle: The loop of Henle builds up a high salt concentration in the medulla, which helps the kidney save water.\n- collecting duct: In the collecting duct water is reabsorbed, under the control of ADH.\n- proximal convoluted tubule: The proximal convoluted tubule is where most selective reabsorption takes place.",
+     "position": 1,
+     "options": [
+      {
+       "id": "154b73e3-d358-56f1-9b23-d21d464e1731",
+       "label": "A",
+       "content": "loop of Henle",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "43cc0f41-1406-5dd1-a1cb-a8868806d6d0",
+       "label": "B",
+       "content": "glomerulus and Bowman's capsule",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "13a76aca-e811-5fcb-83d7-47e52802b882",
+       "label": "C",
+       "content": "collecting duct",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3ce95656-ae08-53e8-be1c-d707eba1c8e1",
+       "label": "D",
+       "content": "proximal convoluted tubule",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "887eacc0-d709-5bb4-9202-68a527ac91a6",
+     "key": "bio-ku-02",
+     "stem": "Which substance is present in the glomerular filtrate but NOT normally in the urine of a healthy person?",
+     "image_url": null,
+     "explanation": "All the glucose filtered is reabsorbed in the proximal convoluted tubule. Glucose in the urine is a sign that blood glucose is too high, as in diabetes mellitus.\n\n**Why the other options are wrong**\n\n- Urea: Urea is in the filtrate and stays in the tubule to leave in the urine.\n- Water: Water is in the filtrate, and much of it is reabsorbed, but some always remains in the urine.\n- Mineral salts: Salts are in the filtrate, and the excess is left in the urine.",
+     "position": 2,
+     "options": [
+      {
+       "id": "03b83bde-d536-5b10-9743-34243b6e689a",
+       "label": "A",
+       "content": "Urea",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "923aca5a-fa65-5792-a23f-15fdf6f99c70",
+       "label": "B",
+       "content": "Water",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4a320578-8b81-5869-bb42-c5cc7d3d303c",
+       "label": "C",
+       "content": "Glucose",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "20169d71-e0d6-5c80-a547-100f1f3fe044",
+       "label": "D",
+       "content": "Mineral salts",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "500599a4-67ab-5da9-8733-eb0bca8f52a5",
+     "key": "bio-ku-03",
+     "stem": "Which of the following does NOT normally pass from the blood into the glomerular filtrate?",
+     "image_url": null,
+     "explanation": "The filter lets small molecules through but holds back blood cells and large plasma proteins, which stay in the blood.\n\n**Why the other options are wrong**\n\n- Glucose: Glucose molecules are small enough to be filtered; they are then reabsorbed.\n- Urea: Urea molecules are small and are filtered.\n- Amino acids: Amino acids are small and are filtered; they are then reabsorbed.",
+     "position": 3,
+     "options": [
+      {
+       "id": "6bd55ae7-4ba6-51f6-b6a0-d8c84cd0c93c",
+       "label": "A",
+       "content": "Glucose",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "05780a96-d866-5e81-afdf-43bf6dbfcd7b",
+       "label": "B",
+       "content": "Urea",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "43a208a7-5349-574a-b05c-9dd621375aca",
+       "label": "C",
+       "content": "Amino acids",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e57b5b08-eea6-53a6-b8d4-2b1299bb3ce6",
+       "label": "D",
+       "content": "Plasma proteins",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "56830625-f5af-571f-8297-7830c0d5eee5",
+     "key": "bio-ku-04",
+     "stem": "On a hot day a farmer sweats a lot and drinks little water. Which of the following describes what happens?",
+     "image_url": null,
+     "explanation": "Water loss makes the blood more concentrated. The pituitary releases more ADH, the collecting ducts become more permeable to water, more water returns to the blood, and the urine is small in volume and concentrated.\n\n**Why the other options are wrong**\n\n- More ADH is released, and a large volume of dilute urine is made: ADH makes the collecting ducts reabsorb more water, so the urine becomes smaller in volume, not larger.\n- Less ADH is released, and a small volume of concentrated urine is made: With less ADH less water is reabsorbed, so more urine would be made.\n- Less ADH is released, and a large volume of dilute urine is made: This happens after drinking a lot of water, when the body has water to spare.",
+     "position": 4,
+     "options": [
+      {
+       "id": "34a88a23-af22-5795-bf66-25b4ac853ce7",
+       "label": "A",
+       "content": "More ADH is released, and a small volume of concentrated urine is made",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e1be1416-4700-5223-bcd3-cabe37f021a4",
+       "label": "B",
+       "content": "More ADH is released, and a large volume of dilute urine is made",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a0440c3b-52a7-55a9-a09c-e2320a010ae1",
+       "label": "C",
+       "content": "Less ADH is released, and a small volume of concentrated urine is made",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "812e59a4-0405-5f67-a9de-a98b4067f07b",
+       "label": "D",
+       "content": "Less ADH is released, and a large volume of dilute urine is made",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cc59cc28-5c33-590b-a0d2-870839f81814",
+     "key": "bio-ku-05",
+     "stem": "Urine is carried from each kidney to the bladder by the",
+     "image_url": null,
+     "explanation": "Kidney → ureter → bladder → urethra → outside. Ureter and urethra are easily confused: the ureter comes first.\n\n**Why the other options are wrong**\n\n- urethra: The urethra carries urine from the bladder to the outside of the body.\n- renal vein: The renal vein carries filtered blood away from the kidney.\n- renal artery: The renal artery brings blood to the kidney to be filtered.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a2d6db75-a6e9-5465-b50c-7ba32f7eea84",
+       "label": "A",
+       "content": "urethra",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "82a5f15b-a30d-5a83-bbbb-64afb12cdd20",
+       "label": "B",
+       "content": "ureter",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d100dee3-dc01-5c81-8553-eb8dd9e1df9c",
+       "label": "C",
+       "content": "renal vein",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2ee4358f-df63-5ab2-8ae6-b2e4658c0db9",
+       "label": "D",
+       "content": "renal artery",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3283c725-45c3-5e0c-99ad-cbfb3d891a30",
+     "key": "bio-ku-06",
+     "stem": "Cells lining the proximal convoluted tubule have many mitochondria. This is because they",
+     "image_url": null,
+     "explanation": "Mitochondria release energy by respiration. The tubule cells use it to move glucose, amino acids and salts back into the blood against concentration gradients.\n\n**Why the other options are wrong**\n\n- make urea from amino acids: Urea is made in the liver, not in the kidney.\n- filter the blood under high pressure: The pressure for filtration comes from the heart, and filtration happens in the glomerulus.\n- produce antidiuretic hormone (ADH): ADH is released by the pituitary gland, not by the kidney.",
+     "position": 6,
+     "options": [
+      {
+       "id": "0b1bcb62-d0b4-5acd-a191-18fa169ee661",
+       "label": "A",
+       "content": "make urea from amino acids",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9d5f3b2d-cf84-5632-943d-2016402fb7b6",
+       "label": "B",
+       "content": "filter the blood under high pressure",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0fff96b9-2aa3-5964-9a10-6a18ded60275",
+       "label": "C",
+       "content": "reabsorb glucose and salts by active transport, which needs energy",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7aa34510-ee1c-5068-bc75-d8723bc0c29c",
+       "label": "D",
+       "content": "produce antidiuretic hormone (ADH)",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "31710274-409f-5820-9479-301500ac5fa8",
+     "key": "bio-ku-07",
+     "stem": "In kidney dialysis, a patient's blood flows past a selectively permeable membrane, on the other side of which is dialysis fluid containing glucose and salts at normal blood concentrations but no urea. Which substance passes out of the blood?",
+     "image_url": null,
+     "explanation": "Urea is small and its concentration is high in the blood and zero in the fluid, so it diffuses out. Matching the glucose and salt levels stops useful substances being lost.\n\n**Why the other options are wrong**\n\n- Red blood cells: Blood cells are far too large to pass through the membrane.\n- Plasma proteins: Plasma proteins are too large to pass through the membrane.\n- Glucose: The fluid has the same glucose concentration as normal blood, so there is no gradient and no overall loss of glucose.",
+     "position": 7,
+     "options": [
+      {
+       "id": "966ef793-43e1-505e-aca7-c100866e6b3f",
+       "label": "A",
+       "content": "Red blood cells",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cb717fed-c275-5404-a257-30b20b58c3e6",
+       "label": "B",
+       "content": "Plasma proteins",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d87dd4af-1e89-5447-97eb-fa3595ef4d2d",
+       "label": "C",
+       "content": "Glucose",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "58491059-bceb-52a4-8d75-2812eab0e4a1",
+       "label": "D",
+       "content": "Urea",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5a2b85a7-106c-5311-b83e-9e33f953fc20",
+   "topic": "Support in Plants and Animals",
+   "title": "Support in Plants and Animals: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on support in plants and animals, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 144,
+   "questions": [
+    {
+     "id": "d774535a-faa6-5eab-aaeb-225aeb040c41",
+     "key": "bio-sp-01",
+     "stem": "A young, non-woody plant wilts on a hot afternoon when the soil is dry. The plant wilts because",
+     "image_url": null,
+     "explanation": "Herbaceous plants are held up mainly by turgid cells pressing against their walls. When more water is lost than taken in, the cells become flaccid and the plant droops. It recovers when water is available.\n\n**Why the other options are wrong**\n\n- its xylem vessels dissolve: Xylem vessels are not dissolved by drought.\n- its cell walls break down: Cell walls stay whole; it is the pressure of the cell contents against them that falls.\n- its lignin is used up for respiration: Lignin is not used as food, and young non-woody plants have little of it.",
+     "position": 1,
+     "options": [
+      {
+       "id": "814017e3-62cb-56f5-a79c-0598a5579433",
+       "label": "A",
+       "content": "its cells lose water and turgor pressure",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "47ae4776-381a-50d9-813c-c5940cc9c04d",
+       "label": "B",
+       "content": "its xylem vessels dissolve",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "378d7b90-f563-5c30-9efe-d17488306df0",
+       "label": "C",
+       "content": "its cell walls break down",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "04f16fe2-bafe-5065-8bc0-63d190e459a6",
+       "label": "D",
+       "content": "its lignin is used up for respiration",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f4d81ef7-736a-5855-bf85-f6dd8a5147f7",
+     "key": "bio-sp-02",
+     "stem": "Which supporting tissue in plants is made of cells that are usually dead at maturity, with thick walls containing lignin?",
+     "image_url": null,
+     "explanation": "Sclerenchyma fibres give rigid support in mature parts of the plant. Collenchyma is living and flexible and is found in young stems and leaf stalks.\n\n**Why the other options are wrong**\n\n- Collenchyma: Collenchyma cells are living, with walls thickened unevenly with cellulose; they give flexible support.\n- Parenchyma: Parenchyma cells are living and thin-walled; they give support only when turgid.\n- Phloem: Phloem carries food; its sieve tubes are living cells.",
+     "position": 2,
+     "options": [
+      {
+       "id": "b84f8b7e-79d4-5d76-93fe-b08d96dcab58",
+       "label": "A",
+       "content": "Collenchyma",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "63f6660e-08b9-5398-9d80-3ae1d94d81cf",
+       "label": "B",
+       "content": "Sclerenchyma",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8f7d311b-6f3a-59a1-8b18-db126140c8d1",
+       "label": "C",
+       "content": "Parenchyma",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0818860b-719f-505d-8421-c6a5f0f82169",
+       "label": "D",
+       "content": "Phloem",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f34072df-cfa3-58a5-a145-7d46d6b2e03b",
+     "key": "bio-sp-03",
+     "stem": "An earthworm is supported by",
+     "image_url": null,
+     "explanation": "The fluid in an earthworm's body cannot be squashed. Its circular and longitudinal muscles press against this fluid, which gives the body shape and lets it move.\n\n**Why the other options are wrong**\n\n- an exoskeleton made of chitin: An exoskeleton of chitin is found in insects and other arthropods.\n- an endoskeleton of bone: An endoskeleton of bone and cartilage is found in vertebrates.\n- a shell of calcium carbonate: A calcium carbonate shell is found in snails.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1835006f-4a7d-55f0-8d13-64c0ef97d3f5",
+       "label": "A",
+       "content": "an exoskeleton made of chitin",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d05c1889-fd0e-516e-aeab-89fb9e788ace",
+       "label": "B",
+       "content": "an endoskeleton of bone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "940a0328-955c-591b-86a5-a6267f7714af",
+       "label": "C",
+       "content": "a hydrostatic skeleton: body fluid held under pressure by its muscles",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0d91d94f-fede-5c37-b901-b51c79a4644d",
+       "label": "D",
+       "content": "a shell of calcium carbonate",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "898af4cf-141f-56fb-be64-1ff65679ff85",
+     "key": "bio-sp-04",
+     "stem": "A disadvantage of an exoskeleton is that",
+     "image_url": null,
+     "explanation": "A hard exoskeleton cannot stretch, so an arthropod must shed it and grow before a new one hardens. Until it hardens, the animal is soft and easily attacked.\n\n**Why the other options are wrong**\n\n- it gives no protection to the soft parts: An exoskeleton covers and protects the whole body.\n- it cannot reduce water loss: The waxy layer of an insect's exoskeleton is very good at reducing water loss.\n- it gives no surface for muscles to attach to: Muscles are attached to the inside of the exoskeleton.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a1ef397a-e0ae-5b53-a66b-dcad16f08705",
+       "label": "A",
+       "content": "it gives no protection to the soft parts",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "80c6bf6e-9f7e-5daf-852f-6397c1217862",
+       "label": "B",
+       "content": "it cannot reduce water loss",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d132f6bd-c6b2-5418-91c5-e7d462d9b232",
+       "label": "C",
+       "content": "it gives no surface for muscles to attach to",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "df390f4b-c897-503f-b8a9-2def98a18156",
+       "label": "D",
+       "content": "the animal must moult (shed it) in order to grow",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f2d21060-fff1-5580-8f9e-09742fdef788",
+     "key": "bio-sp-05",
+     "stem": "Which vertebra allows the head to nod up and down?",
+     "image_url": null,
+     "explanation": "The atlas is the first cervical vertebra. The skull rests on it, and the joint between them lets the head nod. The odontoid process of the axis fits into the atlas and lets the head turn.\n\n**Why the other options are wrong**\n\n- Axis: The axis, the second cervical vertebra, allows the head to turn from side to side.\n- Lumbar vertebra: Lumbar vertebrae are in the lower back, far from the skull.\n- Thoracic vertebra: Thoracic vertebrae are in the chest region and carry the ribs.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b1be59e1-4dfe-5a0c-8866-1a176dbf5001",
+       "label": "A",
+       "content": "Atlas",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "20b9526e-e44d-525c-94ec-a803174cce5f",
+       "label": "B",
+       "content": "Axis",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "12038dff-3c6a-5309-b81b-6236b212fe13",
+       "label": "C",
+       "content": "Lumbar vertebra",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "37d2688d-d643-5c85-a44b-fa547d630a1b",
+       "label": "D",
+       "content": "Thoracic vertebra",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ecf78033-fb5f-5758-b091-f5ff5c6ded8d",
+     "key": "bio-sp-06",
+     "stem": "In a mammal, the pelvic girdle is joined firmly to the vertebral column at the",
+     "image_url": null,
+     "explanation": "The sacral vertebrae are fused into one bone, the sacrum, which is joined to the pelvic girdle. Through it the weight of the body passes to the hind limbs.\n\n**Why the other options are wrong**\n\n- atlas: The atlas is in the neck and supports the skull.\n- thoracic vertebrae: The thoracic vertebrae carry the ribs, not the pelvic girdle.\n- caudal vertebrae: The caudal vertebrae form the tail.",
+     "position": 6,
+     "options": [
+      {
+       "id": "1b980047-7d74-518d-93a9-4cabd20457a3",
+       "label": "A",
+       "content": "atlas",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "73826502-f307-5ec4-a26c-a1462863efac",
+       "label": "B",
+       "content": "sacrum",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a3f7692a-0903-5bc9-a4ab-5ccdab3c00a9",
+       "label": "C",
+       "content": "thoracic vertebrae",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "80c8fb52-e9a9-58d2-8f5f-2ed6f996aa8e",
+       "label": "D",
+       "content": "caudal vertebrae",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7a60cd22-4761-5244-91ee-5248b642a437",
+     "key": "bio-sp-07",
+     "stem": "A tall tree is supported mainly by",
+     "image_url": null,
+     "explanation": "Year after year the cambium adds layers of xylem, whose walls are thickened with lignin. This wood is strong and rigid, with support from sclerenchyma fibres too.\n\n**Why the other options are wrong**\n\n- turgor pressure in its cells: Turgor is the main support in young, non-woody plants; it could never hold up a tall trunk.\n- collenchyma in its leaves: Collenchyma gives flexible support to young stems and leaf stalks, not to a trunk.\n- a hydrostatic skeleton: A hydrostatic skeleton is found in soft-bodied animals such as earthworms.",
+     "position": 7,
+     "options": [
+      {
+       "id": "42fd3f23-45ef-5e9b-8089-abdbc88a7829",
+       "label": "A",
+       "content": "turgor pressure in its cells",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c0f71675-77dc-53e6-9cf4-7f55a5457a57",
+       "label": "B",
+       "content": "collenchyma in its leaves",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8d755b8c-16f3-550b-8bcf-d878cf699594",
+       "label": "C",
+       "content": "wood: the lignified xylem produced by secondary growth",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "22a6f9b5-3322-5108-9c2b-9195f2d647b7",
+       "label": "D",
+       "content": "a hydrostatic skeleton",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "463d21d9-f299-59de-b02e-1470c9c4c364",
+   "topic": "Movement and Locomotion",
+   "title": "Movement and Locomotion: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on movement and locomotion, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 145,
+   "questions": [
+    {
+     "id": "282a0cbc-4c30-5c77-bd39-95b86d9a7206",
+     "key": "bio-ml-01",
+     "stem": "When the arm is bent at the elbow,",
+     "image_url": null,
+     "explanation": "The biceps and triceps are an antagonistic pair. Each can only pull, so one bends the joint and the other straightens it.\n\n**Why the other options are wrong**\n\n- the triceps contracts and the biceps relaxes: This happens when the arm is straightened.\n- the biceps and the triceps both contract: If both contracted together, they would pull against each other and the arm would stay rigid.\n- the biceps relaxes and pushes the forearm up: A muscle can only pull when it contracts; it can never push.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a0b0bd93-4c65-5c2a-8cfd-dc2ee9898c1b",
+       "label": "A",
+       "content": "the triceps contracts and the biceps relaxes",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e19d0875-e31a-5e38-9769-1de17c1142a0",
+       "label": "B",
+       "content": "the biceps and the triceps both contract",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2d964736-a6da-5aa5-aa22-7f0340cc8e35",
+       "label": "C",
+       "content": "the biceps relaxes and pushes the forearm up",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "47261b5f-e9ae-52d8-bfc9-d8bcad06582e",
+       "label": "D",
+       "content": "the biceps contracts and the triceps relaxes",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f47f4d2a-f1ed-57d6-a98c-a1d89f85cea2",
+     "key": "bio-ml-02",
+     "stem": "Tendons join",
+     "image_url": null,
+     "explanation": "Tendons do not stretch, so when a muscle contracts its pull is passed straight to the bone. Ligaments are slightly elastic and hold the bones of a joint together.\n\n**Why the other options are wrong**\n\n- bone to bone: Ligaments join bone to bone at a joint.\n- muscle to muscle: Muscles are not joined to each other by tendons.\n- cartilage to cartilage: Cartilage covers the ends of bones; tendons do not join pieces of cartilage.",
+     "position": 2,
+     "options": [
+      {
+       "id": "9a974591-7f67-51da-86ab-56613353c140",
+       "label": "A",
+       "content": "muscle to bone",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b4464c61-422b-57dc-aba4-2ddaac84b790",
+       "label": "B",
+       "content": "bone to bone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "49b306b0-910c-5b05-81f5-8f43bf5d57b6",
+       "label": "C",
+       "content": "muscle to muscle",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9c3f24c4-319c-5de6-971d-c78a9df91b05",
+       "label": "D",
+       "content": "cartilage to cartilage",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6d2de943-9ef9-5afe-9e43-4d2400e59d30",
+     "key": "bio-ml-03",
+     "stem": "Which joint allows movement in all directions?",
+     "image_url": null,
+     "explanation": "The shoulder and hip are ball and socket joints: the rounded head of one bone turns in a cup of another, so the limb can move in all directions and rotate.\n\n**Why the other options are wrong**\n\n- The elbow joint: The elbow is a hinge joint: it moves in one plane only, like a door.\n- The knee joint: The knee is a hinge joint.\n- The joints between the bones of the skull: These are fixed (immovable) joints.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0d8c9384-d48a-57af-993a-2d23b68e72c7",
+       "label": "A",
+       "content": "The elbow joint",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b9b9faec-348e-5e81-9dd1-39355269d4af",
+       "label": "B",
+       "content": "The shoulder joint",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "01505c5b-3593-55f2-947d-7b890e71a5b4",
+       "label": "C",
+       "content": "The knee joint",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "52d5e560-c037-5b86-a3a9-197378a76c0b",
+       "label": "D",
+       "content": "The joints between the bones of the skull",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b9a12123-55de-548b-adff-774f5158a7b7",
+     "key": "bio-ml-04",
+     "stem": "In a synovial joint, the synovial fluid",
+     "image_url": null,
+     "explanation": "The synovial membrane makes synovial fluid, which reduces friction between the smooth cartilage at the ends of the bones.\n\n**Why the other options are wrong**\n\n- joins the bones together: Bones are held together by ligaments.\n- contracts to move the bones: Only muscles contract to move bones.\n- makes new bone cells: New bone is made by bone cells, not by synovial fluid.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d140e71e-c41e-5aea-8d3c-80b1fe181ad4",
+       "label": "A",
+       "content": "joins the bones together",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "59c0bc35-3b79-5fdb-834a-58552b1bfb2c",
+       "label": "B",
+       "content": "contracts to move the bones",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eb26fda0-4c7f-5765-8826-92f1fb171f9b",
+       "label": "C",
+       "content": "lubricates the joint so that the bones move smoothly",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0c1cde4c-6314-5b12-bfdd-d65f509f4884",
+       "label": "D",
+       "content": "makes new bone cells",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4eb9611d-b0ab-5d85-9cde-20750f906fee",
+     "key": "bio-ml-05",
+     "stem": "In a swimming fish, the forward thrust comes mainly from",
+     "image_url": null,
+     "explanation": "Blocks of muscle contract in turn on each side of the backbone, sending waves along the body; the tail fin pushes back against the water and drives the fish forward.\n\n**Why the other options are wrong**\n\n- the swim bladder: The swim bladder controls buoyancy, so the fish can stay at one depth; it does not push the fish forward.\n- the paired pectoral fins: The pectoral fins steer, balance and brake.\n- the dorsal fin: The dorsal fin stops the fish rolling over.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b16a7056-e1ad-5cfa-9bc5-9c24c0b63932",
+       "label": "A",
+       "content": "the swim bladder",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c769132b-0fee-575a-bcde-b44d955d1b01",
+       "label": "B",
+       "content": "the paired pectoral fins",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f076bf4b-76df-5eff-9603-2ec70a1ef09a",
+       "label": "C",
+       "content": "the dorsal fin",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a31bfeb6-111d-5667-9c6a-9fe9dc8f920a",
+       "label": "D",
+       "content": "side-to-side waves of the body and the tail (caudal) fin",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0f91df33-6dc1-54cd-9804-a278739a788b",
+     "key": "bio-ml-06",
+     "stem": "Which feature of a bird is an adaptation that keeps its body light for flight?",
+     "image_url": null,
+     "explanation": "Hollow, air-filled bones, a beak instead of heavy jaws and teeth, and feathers all keep a bird light; the keel and flight muscles give it the power to fly.\n\n**Why the other options are wrong**\n\n- A large keel on the breastbone: The keel gives a large surface for the flight muscles to attach to; it does not reduce weight.\n- Strong breast (pectoral) muscles: These muscles power the wings; they add weight rather than reduce it.\n- A beak suited to its diet: The shape of the beak is an adaptation for feeding, not for flight.",
+     "position": 6,
+     "options": [
+      {
+       "id": "fafecb8f-3d5f-5e13-8dc5-a68fb2fa5a22",
+       "label": "A",
+       "content": "Hollow bones with air spaces",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "f40b522f-6451-5e95-add0-40d2a7ad9cd6",
+       "label": "B",
+       "content": "A large keel on the breastbone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2c2d7108-7b5f-5f46-97cb-f730d00523b4",
+       "label": "C",
+       "content": "Strong breast (pectoral) muscles",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "541ca138-b554-5238-8b67-9c435f2535cd",
+       "label": "D",
+       "content": "A beak suited to its diet",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "10b87cc4-20e0-5459-bbe5-9641652d30dd",
+     "key": "bio-ml-07",
+     "stem": "Skeletal muscles are arranged in antagonistic pairs because",
+     "image_url": null,
+     "explanation": "Because a muscle can only shorten and pull, a second muscle is needed to pull the bone back. As one contracts, its partner relaxes.\n\n**Why the other options are wrong**\n\n- one muscle of each pair must always rest: Both muscles work: one moves the bone one way and the other moves it back.\n- each muscle needs a partner to receive nerve impulses: Each muscle receives its own nerve impulses.\n- two muscles pulling the same way give twice the force: Antagonistic muscles pull in opposite directions, not the same direction.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b3de0660-2295-5f02-8df6-c9f759f388c5",
+       "label": "A",
+       "content": "one muscle of each pair must always rest",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "864b3812-13fa-538c-9fca-a508645bee4f",
+       "label": "B",
+       "content": "a muscle can only pull when it contracts; it cannot push",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "618aab76-0cf1-5acc-90b1-66c7f1860584",
+       "label": "C",
+       "content": "each muscle needs a partner to receive nerve impulses",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a0a4e06a-fa62-58da-b108-615abb2c39fa",
+       "label": "D",
+       "content": "two muscles pulling the same way give twice the force",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "f4276bf719d3"
+}
