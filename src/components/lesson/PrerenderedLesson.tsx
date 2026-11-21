@@ -5,8 +5,9 @@
 // of a mid-range phone's main thread on a maths lesson (10,000 elements),
 // during which taps went unanswered (Lighthouse: total blocking time 3.5 s).
 // So on a page loaded from the build, this keeps the build's HTML as it is
-// and adds back the one thing in a lesson that needs JavaScript: tapping a
-// diagram to enlarge it (Zoomable marks each one with data-zoom-label).
+// and adds back the things in a lesson that need JavaScript: tapping a
+// diagram to enlarge it (Zoomable marks each one with data-zoom-label), and
+// tapping a word to hear it (AudioChip marks each play button with data-src).
 // "Try it" answers are <details> and work without JavaScript.
 //
 // Reached any other way (no HTML for it on the page), it renders LessonView.
@@ -14,6 +15,7 @@ import { useEffect, useRef, useState } from 'react'
 import { LessonView } from '@/components/LessonView'
 import { ZoomDialog } from '@/components/lesson/Zoomable'
 import { fitLongMath } from '@/lib/math-split'
+import { onClipChange, playingClip, toggleClip } from '@/lib/audio-player'
 
 export function PrerenderedLesson({ id, content, className }: { id: string; content: string; className?: string }) {
   const ref = useRef<HTMLDivElement>(null)
@@ -33,6 +35,11 @@ export function PrerenderedLesson({ id, content, className }: { id: string; cont
     window.addEventListener('resize', fit)
     // Tap a diagram (or its Enlarge button) to open it full screen, as Zoomable does.
     const onClick = (e: MouseEvent) => {
+      const chip = (e.target as Element | null)?.closest<HTMLElement>('.audio-chip[data-src]')
+      if (chip?.dataset.src && root.contains(chip)) {
+        toggleClip(chip.dataset.src)
+        return
+      }
       const wrap = (e.target as Element | null)?.closest<HTMLElement>('[data-zoom-label]')
       if (!wrap || !root.contains(wrap)) return
       const picture = wrap.querySelector<HTMLElement>('img, [role="img"]')
@@ -47,9 +54,19 @@ export function PrerenderedLesson({ id, content, className }: { id: string; cont
       setZoom({ label: wrap.dataset.zoomLabel || 'Lesson diagram', html: large.outerHTML })
     }
     root.addEventListener('click', onClick)
+    // Show which word is playing, as AudioChip does.
+    const stopWatching = onClipChange(() => {
+      const now = playingClip()
+      root.querySelectorAll<HTMLElement>('.audio-chip[data-src]').forEach((b) => {
+        const on = b.dataset.src === now
+        b.classList.toggle('is-playing', on)
+        b.setAttribute('aria-pressed', String(on))
+      })
+    })
     return () => {
       window.removeEventListener('resize', fit)
       root.removeEventListener('click', onClick)
+      stopWatching()
     }
   }, [html])
 

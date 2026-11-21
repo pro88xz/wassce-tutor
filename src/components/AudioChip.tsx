@@ -6,44 +6,10 @@
 // The clips are made and checked by scripts/audio/oral_audio.py.
 import { Pause, Play, Volume2 } from 'lucide-react'
 import { useSyncExternalStore, type ReactNode } from 'react'
+import { onClipChange, playingClip, toggleClip } from '@/lib/audio-player'
 
 const AUDIO_HREF = /^(?:https:\/\/wasscetutor\.com)?\/audio\/[\w/-]+\.mp3(?:\?v=\w+)?$/
 const isAudioHref = (href: unknown): href is string => typeof href === 'string' && AUDIO_HREF.test(href)
-
-// One player for the whole page, so starting a clip stops the one before it.
-let player: HTMLAudioElement | null = null
-let playing: string | null = null
-const listeners = new Set<() => void>()
-const setPlaying = (src: string | null) => {
-  playing = src
-  listeners.forEach((l) => l())
-}
-
-function toggle(src: string) {
-  if (!player) {
-    player = new Audio()
-    player.preload = 'auto'
-    player.addEventListener('ended', () => setPlaying(null))
-    // Media events arrive late: the pause of the clip being replaced must not
-    // clear the clip that has just started.
-    player.addEventListener('pause', () => player?.paused && setPlaying(null))
-    player.addEventListener('error', () => setPlaying(null))
-  }
-  if (playing === src) {
-    player.pause()
-    return
-  }
-  player.pause()
-  player.src = src
-  setPlaying(src)
-  // A play cut short by the next clip fails too; only a failure of this clip clears it.
-  player.play().catch(() => playing === src && setPlaying(null))
-}
-
-const subscribe = (l: () => void) => {
-  listeners.add(l)
-  return () => listeners.delete(l)
-}
 
 /** Draws an audio link as a play button; any other link as a normal link. */
 export function MarkdownLink({ href, children, title }: { href?: string; children?: ReactNode; title?: string }) {
@@ -56,7 +22,7 @@ export function MarkdownLink({ href, children, title }: { href?: string; childre
 }
 
 export function AudioChip({ src, children }: { src: string; children: ReactNode }) {
-  const isPlaying = useSyncExternalStore(subscribe, () => playing === src, () => false)
+  const isPlaying = useSyncExternalStore(onClipChange, () => playingClip() === src, () => false)
   // "Play the passage" is a listening passage: a bigger button with its own label.
   const label = typeof children === 'string' ? children : Array.isArray(children) ? children.join('') : ''
   const passage = /^Play\b/.test(label)
@@ -66,7 +32,9 @@ export function AudioChip({ src, children }: { src: string; children: ReactNode 
   return (
     <button
       type="button"
-      onClick={() => toggle(src)}
+      onClick={() => toggleClip(src)}
+      // A lesson keeps its prerendered HTML without React (PrerenderedLesson), so the clip is in the markup too.
+      data-src={src}
       aria-pressed={isPlaying}
       aria-label={passage ? label : `Play ${spoken}`}
       className={['audio-chip not-prose', passage && 'audio-chip--passage', isPlaying && 'is-playing'].filter(Boolean).join(' ')}
