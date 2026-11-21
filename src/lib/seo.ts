@@ -207,6 +207,52 @@ export const SEARCH_COPY: Partial<Record<string, { title: string; description: s
     description:
       'Definitions of distance, displacement, speed, velocity and acceleration, with their units, converting km/h to m/s, and WASSCE examples to practise.',
   },
+  // Search Console to 21 Nov 2026: lessons shown for the searches below, mostly at
+  // positions 3 to 10, with no clicks. Their template title ("WASSCE Government:
+  // The executive: types, composition and functions") ran past 60 characters and
+  // put the searched words last; their description was the lesson's opening scene.
+  // "what are the 7 characteristics of soil?" (position 4): the lesson's table has exactly seven.
+  '/wassce/agricultural-science/soil-properties-and-types/soil-properties-and-types-sandy-clay-and-loam': {
+    title: 'Soil Properties: 7 Physical Characteristics of Soil | WASSCE',
+    description:
+      'The 7 physical properties of soil: texture, structure, porosity, permeability, water-holding capacity, colour and temperature. Sandy, clay and loam compared.',
+  },
+  // "types of executive" (position 8), "functions of executive", "8 functions of executive".
+  '/wassce/government/the-executive/the-executive-types-composition-and-functions': {
+    title: 'Types of Executive and Functions of the Executive | WASSCE',
+    description:
+      'The seven types of executive (nominal, real, single, dual, plural, political, permanent), who makes up the executive, and its 11 functions, with examples.',
+  },
+  // "triangle of forces method" (position 3), "triangle of forces equilibrium", "... method example".
+  '/wassce/physics/equilibrium-of-forces/equilibrium-of-forces-triangle-of-forces-and-lamis-theorem': {
+    title: "Triangle of Forces Method and Lami's Theorem, with Examples",
+    description:
+      "Three forces in equilibrium form a closed triangle, drawn nose to tail. The triangle of forces method, Lami's theorem, worked examples and inclined planes.",
+  },
+  // "testing a leaf for starch", "steps to test for starch in a leaf" (position 4), "how to test a leaf for starch".
+  '/wassce/biology/photosynthesis-and-plant-nutrition/testing-a-leaf-for-starch': {
+    title: 'How to Test a Leaf for Starch: 5 Steps and Why Each Matters',
+    description:
+      'Test a leaf for starch: boil it in water, decolourise it in ethanol in a water bath, rinse it, add iodine. Blue-black means starch. Why each step matters.',
+  },
+  // "balance bd and cd" (position 5), "balance cd and bd meaning", "balancing off ledger accounts".
+  '/wassce/financial-accounting/the-ledger/how-to-balance-off-ledger-accounts-balance-cd-and-bd': {
+    title: 'Balance c/d and b/d: How to Balance Off Ledger Accounts',
+    description:
+      'Balance c/d is carried down on the smaller side to make both sides equal; balance b/d is the same amount brought down to start the next period. Step by step.',
+  },
+  // "how does inflation work" (position 8).
+  '/wassce/economics/inflation-and-deflation/inflation-meaning-measurement-and-causes': {
+    title: 'How Inflation Works: Meaning, Measurement and Causes | WASSCE',
+    description:
+      'What inflation is, how the price index measures it, and its five causes: demand-pull, cost-push, imported, monetary and structural. With Sierra Leone examples.',
+  },
+  // "vowels and diphthongs in english" (position 5), "vowels and diphthongs examples" (4), "... list".
+  '/wassce/english-language/vowels-and-diphthongs/vowels-and-diphthongs-the-20-vowel-sounds-of-english': {
+    title: 'Vowels and Diphthongs in English: List with Examples | WASSCE',
+    description:
+      'All 20 vowel sounds of English: the 12 pure vowels and 8 diphthongs, each with its symbol and example words, the pairs students confuse, and practice.',
+  },
 }
 
 /** Google shows about 60 characters of a title: add the brand only when it still fits. */

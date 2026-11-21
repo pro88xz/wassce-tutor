@@ -169,7 +169,9 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     slug: 'njala-university',
     name: 'Njala University',
     shortName: 'Njala',
-    seoTitle: 'Njala University Admissions & Requirements | WASSCE Tutor',
+    // Search Console to 21 Nov 2026: "njala university courses and fees" (position 11), "... courses and requirements".
+    seoTitle: 'Njala University Courses, Fees & Entry Requirements',
+    seoDescription: 'Njala University courses, the NLe 500 application fee and WASSCE entry requirements: five credits with English for a degree, three for a diploma. How to apply.',
     location: 'Njala and Bo, with additional teaching locations',
     summary: 'A public university with undergraduate and postgraduate study across agriculture, basic sciences, environmental sciences, natural resources, technology, veterinary medicine, public health, nursing, medicine and education.',
     entrySummary: 'Degree: 5 WASSCE credits including English, in up to 2 sittings; school and department rules apply.',
@@ -180,8 +182,8 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     officialUrl: 'https://njala.edu.sl/',
     admissionsUrl: 'https://njala.edu.sl/admissions/undergraduate-admissions',
     applicationUrl: 'https://misnjala.edu.sl/apply',
-    status: '2026/2027 undergraduate admissions information published',
-    statusNote: 'The official undergraduate admissions page states that applications are open for 2026/2027 and gives 13 November 2026 as the submission deadline. A separate 2026/2027 programme PDF contains an older 31 August deadline. Use the live admissions page and application portal for the current deadline, and verify before paying.',
+    status: 'Published 2026/2027 deadline has passed: check for an extension',
+    statusNote: 'At our last source review, the official undergraduate admissions page gave 13 November 2026 as the submission deadline for 2026/2027, and that date has now passed. Universities in Sierra Leone sometimes extend deadlines or open a late window: check the live admissions page and application portal before you pay any fee. A separate 2026/2027 programme PDF gave an older 31 August deadline.',
     requirements: [
       'Undergraduate degree programmes: five WASSCE credits or equivalent, including English Language, in not more than two sittings.',
       'School and departmental requirements may add subject-specific conditions. Check the entry rules for the exact programme.',
@@ -201,7 +203,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
       'Prepare electronic copies of your birth certificate or sworn declaration, WASSCE/GCE certificate, school-leaving testimonial, passport photograph and payment evidence.'
     ],
     fees: 'The official page lists NLe 500 for undergraduate application processing. Postgraduate fees and current payment instructions should be checked on the portal.',
-    deadline: '13 November 2026, as stated on Njala University’s official undergraduate admissions page.',
+    deadline: '13 November 2026, as stated on Njala University’s official undergraduate admissions page at our last source review. This date has passed; check the portal for any extension.',
     sources: [
       { label: 'Njala University — Undergraduate Admissions', url: 'https://njala.edu.sl/admissions/undergraduate-admissions' },
       { label: 'Njala University — Application Procedure', url: 'https://njala.edu.sl/admissions/application-procedure' },
@@ -515,7 +517,7 @@ const UNIVERSITY_POSTS: BlogPost[] = [
       {
         heading: 'Application dates and fees: check the live portal',
         paragraphs: [
-          'Njala University’s official undergraduate admissions page gives 13 November 2026 as the 2026/2027 submission deadline and lists a NLe 500 undergraduate application-processing fee. Its separate programme PDF carries an earlier August deadline, so use the live admissions page and portal to confirm the active window.',
+          'Njala University’s official undergraduate admissions page gave 13 November 2026 as the 2026/2027 submission deadline, and that date has now passed; it lists a NLe 500 undergraduate application-processing fee. Its separate programme PDF carries an earlier August deadline. If you have not applied, check the live admissions page and portal for any extension or late window before paying.',
           'The USL admission portal states 30 November 2026 for undergraduate submissions and says the portal shuts at noon on 10 December 2026. Another USL admissions page still displays earlier September dates. Because the official pages conflict, contact Central Admissions before making a payment.',
           'ETU-SL’s website advertises 2026/2027 admissions as open, but its downloadable advertisement says the online application window ran from 3 August to 20 September 2026. Confirm whether late applications are being accepted. MMTU and EBKUST also advertise 2026/2027 admissions, but applicants should verify the current deadline and fee in their live portals.'
         ]
