@@ -148,6 +148,25 @@
   "questions": 50
  },
  {
+  "name": "maths_set9_p1",
+  "label": "Mathematics: practice set 2 for fractions, integers, logic, expressions, operations, equations, graphs, algebraic fractions, functions and coordinate geometry",
+  "subject_slug": "mathematics",
+  "version": "af04a85c47d7",
+  "papers": [
+   "64f2e331-8776-5a77-84ad-aac2e67b32fa",
+   "18219506-11f8-5574-8c85-7705883692d2",
+   "43c61165-ae1e-59c7-bb5a-49be14783ed2",
+   "8f00ce2e-3317-5f72-b454-127320acaeee",
+   "1c07049e-05c8-5131-8c3d-7e4915711d5d",
+   "cfbe6b9e-b168-5d62-9972-c204e2f099d9",
+   "4b9ae6fc-e809-597a-bd0f-9dd40f7065ac",
+   "76ddc0e1-7052-5b45-affb-4e0dcb39d639",
+   "aecb9faf-d401-5a4f-b82d-8df482d4a22f",
+   "13116900-fadc-5610-b8f7-14f92e3e538a"
+  ],
+  "questions": 50
+ },
+ {
   "name": "english_set1_p1",
   "label": "English Language: set 1 (grammar)",
   "subject_slug": "english-language",

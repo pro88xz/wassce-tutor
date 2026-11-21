@@ -1,0 +1,2008 @@
+{
+ "name": "maths_set9_p1",
+ "label": "Mathematics: practice set 2 for fractions, integers, logic, expressions, operations, equations, graphs, algebraic fractions, functions and coordinate geometry",
+ "subject_slug": "mathematics",
+ "papers": [
+  {
+   "id": "64f2e331-8776-5a77-84ad-aac2e67b32fa",
+   "topic": "Fractions, Decimals and Approximations",
+   "title": "Fractions, Decimals and Approximations: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on fractions, decimals and approximations, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 230,
+   "questions": [
+    {
+     "id": "70c54624-dcda-5fb2-99bc-a959d2bf341c",
+     "key": "maths-fractions-06",
+     "stem": "Express 0.375 as a fraction in its lowest terms.",
+     "image_url": null,
+     "explanation": "$0.375 = \\dfrac{375}{1000}$. Divide top and bottom by 125: $\\dfrac{3}{8}$.\n\n**Why the other options are wrong**\n\n- $\\dfrac{3}{80}$: 0.375 has three decimal places, so it is $\\dfrac{375}{1000}$, not $\\dfrac{375}{10\\,000}$.\n- $\\dfrac{37}{100}$: You dropped the last digit. Use all three decimal places: $\\dfrac{375}{1000}$.\n- $\\dfrac{15}{4}$: You wrote $\\dfrac{375}{100}$, which is 3.75.",
+     "position": 1,
+     "options": [
+      {
+       "id": "ba394d55-1846-5642-9c62-18b81178638d",
+       "label": "A",
+       "content": "$\\dfrac{3}{80}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "547cd8e5-e2b3-51b4-84cc-08b9594d5df8",
+       "label": "B",
+       "content": "$\\dfrac{37}{100}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7d82fc1e-7e73-5648-a9bb-45f55a3855f3",
+       "label": "C",
+       "content": "$\\dfrac{3}{8}$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "788d16fb-6146-5263-8685-018b9abb6a1d",
+       "label": "D",
+       "content": "$\\dfrac{15}{4}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "73f23efe-2617-5e47-8307-0e29c0195f65",
+     "key": "maths-fractions-07",
+     "stem": "Write 3.14159 correct to three decimal places.",
+     "image_url": null,
+     "explanation": "Look at the fourth decimal place: 3.141**5**9. It is 5, so round the third decimal place up: $3.142$.\n\n**Why the other options are wrong**\n\n- $3.14$: That has only two decimal places.\n- $3.141$: You cut off the digits without rounding. The next digit, 5, rounds the 1 up to 2.\n- $3.1416$: That has four decimal places.",
+     "position": 2,
+     "options": [
+      {
+       "id": "91343f96-fdaa-5fc2-bd39-d548e08e57ff",
+       "label": "A",
+       "content": "$3.14$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6b738abe-93a4-52cb-9e43-15bdc9cdbea3",
+       "label": "B",
+       "content": "$3.141$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b5c911fb-336c-53d8-b603-f063199ed856",
+       "label": "C",
+       "content": "$3.1416$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "468297a8-90d6-5439-ac1a-bb74625b6a02",
+       "label": "D",
+       "content": "$3.142$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c6a25f51-08e1-5b55-86c8-fd4da401b7cc",
+     "key": "maths-fractions-08",
+     "stem": "Evaluate $2\\dfrac{1}{4} \\div 1\\dfrac{1}{2}$.",
+     "image_url": null,
+     "explanation": "$2\\dfrac{1}{4} \\div 1\\dfrac{1}{2} = \\dfrac{9}{4} \\div \\dfrac{3}{2} = \\dfrac{9}{4} \\times \\dfrac{2}{3} = \\dfrac{18}{12} = \\dfrac{3}{2} = 1\\dfrac{1}{2}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{2}{3}$: You divided the second number by the first. $2\\dfrac{1}{4} \\div 1\\dfrac{1}{2} = \\dfrac{9}{4} \\times \\dfrac{2}{3}$.\n- $\\dfrac{3}{4}$: You subtracted the numbers instead of dividing.\n- $3\\dfrac{3}{8}$: You multiplied instead of dividing. To divide, multiply by the reciprocal.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0a9fbd5f-0e09-51b5-a8f1-d6db9edae288",
+       "label": "A",
+       "content": "$\\dfrac{2}{3}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "36ddba45-d64c-5e58-b8ce-ccadcd16f0c8",
+       "label": "B",
+       "content": "$\\dfrac{3}{4}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "23f46885-4d43-5365-a194-53583505ecaa",
+       "label": "C",
+       "content": "$1\\dfrac{1}{2}$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8ae874e9-45d0-50bf-832d-3d2437070f7e",
+       "label": "D",
+       "content": "$3\\dfrac{3}{8}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ca2b5685-103b-5732-82b5-00558ec7ee42",
+     "key": "maths-fractions-09",
+     "stem": "Calculate $49.8 \\times 0.21$, giving your answer correct to two significant figures.",
+     "image_url": null,
+     "explanation": "$49.8 \\times 0.21 = 10.458$. The first two significant figures are 1 and 0; the next digit is 4, so round down: $10$.\n\n**Why the other options are wrong**\n\n- $10.5$: 10.5 is correct to three significant figures.\n- $10.46$: 10.46 is correct to two decimal places, which is four significant figures.\n- $11$: $49.8 \\times 0.21 = 10.458$; the second significant figure is 0, and the next digit, 4, rounds down.",
+     "position": 4,
+     "options": [
+      {
+       "id": "1908e95d-6f51-50dd-95f2-1fbae1450b41",
+       "label": "A",
+       "content": "$10$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "26dd890a-0e25-522f-82e7-56a789aa1fa5",
+       "label": "B",
+       "content": "$10.46$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cf003333-82fe-5291-a7e7-c2087f104f82",
+       "label": "C",
+       "content": "$10.5$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "293b20b0-7d27-5191-9922-811dbee1817c",
+       "label": "D",
+       "content": "$11$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bb693833-b4ba-5aab-99a6-800f71b75a19",
+     "key": "maths-fractions-10",
+     "stem": "Express the recurring decimal $0.\\dot{4}$ $(0.444\\ldots)$ as a fraction.",
+     "image_url": null,
+     "explanation": "Let $n = 0.444\\ldots$ Then $10n = 4.444\\ldots$\n\nSubtract: $9n = 4$, so $n = \\dfrac{4}{9}$.\n\n**Why the other options are wrong**\n\n- $\\dfrac{4}{99}$: $\\dfrac{4}{99} = 0.0404\\ldots$ Only one digit recurs, so divide by 9.\n- $\\dfrac{2}{5}$: $\\dfrac{2}{5} = 0.4$ exactly; the decimal does not stop.\n- $\\dfrac{11}{25}$: $\\dfrac{11}{25} = 0.44$ exactly; the 4s go on for ever.",
+     "position": 5,
+     "options": [
+      {
+       "id": "6d6a9584-2915-50fa-8e73-5923c0cc6bc1",
+       "label": "A",
+       "content": "$\\dfrac{4}{99}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ba02a933-cbf3-51ea-87b0-a4bf11e55319",
+       "label": "B",
+       "content": "$\\dfrac{2}{5}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e7588850-c1c7-5148-ac43-19f7a50358be",
+       "label": "C",
+       "content": "$\\dfrac{11}{25}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "62d1fa48-89e1-5e78-80ca-b997bf495b4a",
+       "label": "D",
+       "content": "$\\dfrac{4}{9}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "18219506-11f8-5574-8c85-7705883692d2",
+   "topic": "Integers and Rational Numbers",
+   "title": "Integers and Rational Numbers: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on integers and rational numbers, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 231,
+   "questions": [
+    {
+     "id": "99bfe3df-0dd6-5d8b-baa2-d7391cdffacb",
+     "key": "maths-integers-06",
+     "stem": "Evaluate $-12 \\div (-3) \\times 2$.",
+     "image_url": null,
+     "explanation": "Work from left to right: $-12 \\div (-3) = 4$, then $4 \\times 2 = 8$.\n\n**Why the other options are wrong**\n\n- $-8$: A negative divided by a negative is positive: $-12 \\div (-3) = 4$.\n- $-2$: You worked out $(-3) \\times 2$ first and lost a sign. Division and multiplication go from left to right.\n- $2$: You worked out $(-3) \\times 2 = -6$ first. Division and multiplication are done from left to right.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8451cb8f-2e01-5f2b-adf7-c0351783dcb6",
+       "label": "A",
+       "content": "$-8$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1d92f32e-ba7b-5fe0-8866-38cdfb5b37c4",
+       "label": "B",
+       "content": "$-2$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "780186c2-985f-5cd1-b786-8103d1635995",
+       "label": "C",
+       "content": "$2$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5c27485a-51db-57a9-8e24-b4a6f12d1cc8",
+       "label": "D",
+       "content": "$8$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "72f39a06-7696-5657-a52d-778ce83ef7e1",
+     "key": "maths-integers-07",
+     "stem": "Arrange $-\\dfrac{3}{4}$, $-0.7$ and $-\\dfrac{5}{6}$ in ascending order (smallest first).",
+     "image_url": null,
+     "explanation": "As decimals: $-\\dfrac{3}{4} = -0.75$, $-0.7$, $-\\dfrac{5}{6} = -0.833\\ldots$\n\nSmallest first: $-0.833, -0.75, -0.7$, that is $-\\dfrac{5}{6}, -\\dfrac{3}{4}, -0.7$.\n\n**Why the other options are wrong**\n\n- $-0.7,\\ -\\dfrac{3}{4},\\ -\\dfrac{5}{6}$: That is descending order. For negative numbers, the one furthest from zero is the smallest.\n- $-\\dfrac{3}{4},\\ -0.7,\\ -\\dfrac{5}{6}$: As decimals they are $-0.75$, $-0.7$ and $-0.833$; $-0.833$ is the smallest.\n- $-\\dfrac{5}{6},\\ -0.7,\\ -\\dfrac{3}{4}$: $-0.75$ is smaller than $-0.7$, so $-\\dfrac{3}{4}$ comes before $-0.7$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f674b893-5dcd-5b9c-a7c4-86e1816fe3cd",
+       "label": "A",
+       "content": "$-\\dfrac{5}{6},\\ -\\dfrac{3}{4},\\ -0.7$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6adfd1ec-fd30-5707-b8cf-554acf301b4f",
+       "label": "B",
+       "content": "$-0.7,\\ -\\dfrac{3}{4},\\ -\\dfrac{5}{6}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "35aaeb87-6eb0-5686-870a-07d49e5d6eee",
+       "label": "C",
+       "content": "$-\\dfrac{3}{4},\\ -0.7,\\ -\\dfrac{5}{6}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3e536477-8e46-5d77-b38b-f822d8f3d4ca",
+       "label": "D",
+       "content": "$-\\dfrac{5}{6},\\ -0.7,\\ -\\dfrac{3}{4}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6c3c95f7-4e1b-54c6-a1d2-8848ca345b34",
+     "key": "maths-integers-08",
+     "stem": "The temperature inside a cold store is $-18$ °C and outside it is $27$ °C. Find the difference between the two temperatures.",
+     "image_url": null,
+     "explanation": "Difference $= 27 - (-18) = 27 + 18 = 45$ °C\n\n**Why the other options are wrong**\n\n- $-45$ °C: A difference between temperatures is given as a positive amount.\n- $-9$ °C: You added $-18$ and $27$ and took the wrong sign.\n- $9$ °C: You found $27 - 18$. Subtracting a negative: $27 - (-18) = 27 + 18$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5fd3d086-2c79-5a52-ba74-642ebb5a4823",
+       "label": "A",
+       "content": "$-45$ °C",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "71c91972-0cb9-5bea-94ee-da5d0752dbb7",
+       "label": "B",
+       "content": "$-9$ °C",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "282825a4-f375-577f-8846-b2681ba48e47",
+       "label": "C",
+       "content": "$9$ °C",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2c96a6d1-d302-587a-b4f5-96e10e2205bf",
+       "label": "D",
+       "content": "$45$ °C",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4214d194-f37b-5382-a123-19278863b72a",
+     "key": "maths-integers-09",
+     "stem": "Find the reciprocal of $-2\\dfrac{1}{2}$.",
+     "image_url": null,
+     "explanation": "$-2\\dfrac{1}{2} = -\\dfrac{5}{2}$, so its reciprocal is $-\\dfrac{2}{5}$. Check: $-\\dfrac{5}{2} \\times -\\dfrac{2}{5} = 1$. ✓\n\n**Why the other options are wrong**\n\n- $-\\dfrac{5}{2}$: $-\\dfrac{5}{2}$ is the number itself as an improper fraction. Turn it upside down.\n- $\\dfrac{2}{5}$: A reciprocal keeps the sign: the reciprocal of a negative number is negative.\n- $\\dfrac{5}{2}$: That is the negative of the number. The reciprocal is 1 divided by the number.",
+     "position": 4,
+     "options": [
+      {
+       "id": "15719e32-acef-57e1-8306-831b129b2c51",
+       "label": "A",
+       "content": "$-\\dfrac{5}{2}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2da09c61-217d-5df6-8141-ae5c2a040291",
+       "label": "B",
+       "content": "$-\\dfrac{2}{5}$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6e718452-c058-5018-ad1f-8a9e64f72d03",
+       "label": "C",
+       "content": "$\\dfrac{2}{5}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4e03ccdf-70b1-5e97-9344-c730f58e9805",
+       "label": "D",
+       "content": "$\\dfrac{5}{2}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "548634ed-7be0-595d-b2be-8b00619ff7da",
+     "key": "maths-integers-10",
+     "stem": "Evaluate $(-2)^{4} \\div (-2)^{2} - 3^{0}$.",
+     "image_url": null,
+     "explanation": "$(-2)^{4} = 16$, $(-2)^{2} = 4$ and $3^{0} = 1$.\n\n$16 \\div 4 - 1 = 4 - 1 = 3$\n\n**Why the other options are wrong**\n\n- $-5$: $(-2)^{4}$ is positive: an even power of a negative number is positive.\n- $4$: $3^{0} = 1$, not 0.\n- $5$: You added $3^{0}$ instead of subtracting it.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b39fefb8-e3e7-5121-b665-3c1df9f299e3",
+       "label": "A",
+       "content": "$-5$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d3fd7ed8-e460-5bde-98c8-9be93da7e722",
+       "label": "B",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d8b8f020-e64b-568c-9fa6-aee749d25f18",
+       "label": "C",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0f8c8b30-fbb3-5ff8-8798-abb19e76d389",
+       "label": "D",
+       "content": "$5$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "43c61165-ae1e-59c7-bb5a-49be14783ed2",
+   "topic": "Logical Reasoning",
+   "title": "Logical Reasoning: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on logical reasoning, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 232,
+   "questions": [
+    {
+     "id": "e5d08544-2314-5c0c-80ae-fd242d14f083",
+     "key": "maths-logic-06",
+     "stem": "What is the negation of the statement “Some pupils wear glasses”?",
+     "image_url": null,
+     "explanation": "“Some pupils wear glasses” means at least one does. It is false only when not even one pupil wears glasses: “No pupil wears glasses”.\n\n**Why the other options are wrong**\n\n- Some pupils do not wear glasses: This can be true at the same time as the original, so it is not its negation.\n- All pupils wear glasses: This does not contradict the original; if all wear glasses, some certainly do.\n- Not all pupils wear glasses: That is the negation of “All pupils wear glasses”, a different statement.",
+     "position": 1,
+     "options": [
+      {
+       "id": "34f09e1c-36f8-5669-84c8-c4320ec6c8cc",
+       "label": "A",
+       "content": "No pupil wears glasses",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0b7af734-831a-5f4b-ada0-f85ab71d59de",
+       "label": "B",
+       "content": "Some pupils do not wear glasses",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7cfcad7b-50e4-50d1-85bc-7fb87e7ab3b6",
+       "label": "C",
+       "content": "All pupils wear glasses",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "54650ff3-74bd-50e8-bd20-8aad266f9c6a",
+       "label": "D",
+       "content": "Not all pupils wear glasses",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7085c32e-d25f-5c28-bfbd-8b90678805d6",
+     "key": "maths-logic-07",
+     "stem": "No reptile has feathers. A snake is a reptile. Which conclusion is valid?",
+     "image_url": null,
+     "explanation": "All snakes are inside the set of reptiles, and no reptile is inside the set of feathered animals, so no snake has feathers.\n\n**Why the other options are wrong**\n\n- Some snakes have feathers: This contradicts the first statement, since every snake is a reptile.\n- Every animal without feathers is a reptile: The statements do not say this; many animals without feathers are not reptiles.\n- A snake is a bird: Nothing in the statements leads to this.",
+     "position": 2,
+     "options": [
+      {
+       "id": "53c55049-c56d-5863-aaf4-240d2a12ed81",
+       "label": "A",
+       "content": "A snake has no feathers",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e51dc65c-945c-5313-a498-5d662e3ea4a4",
+       "label": "B",
+       "content": "Some snakes have feathers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "19d921ca-ffbb-5bda-96e4-f037f856cdec",
+       "label": "C",
+       "content": "Every animal without feathers is a reptile",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a22b2709-7603-5208-bec6-e38ee8c23af4",
+       "label": "D",
+       "content": "A snake is a bird",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "99c4df95-dfc8-5490-8b69-59056efb2b94",
+     "key": "maths-logic-08",
+     "stem": "What is the converse of the statement “If it is Sunday, then the market is closed”?",
+     "image_url": null,
+     "explanation": "The converse of “if $p$ then $q$” swaps the two parts: “if $q$ then $p$”. A statement can be true while its converse is false: the market may also close on a holiday.\n\n**Why the other options are wrong**\n\n- If the market is not closed, then it is not Sunday: That is the contrapositive, which means the same as the original.\n- If it is not Sunday, then the market is not closed: That is the inverse: both parts are negated but not swapped.\n- It is Sunday and the market is open: That is the negation of the original statement.",
+     "position": 3,
+     "options": [
+      {
+       "id": "bd8ce6a4-a158-5e35-936b-b68146375973",
+       "label": "A",
+       "content": "If the market is not closed, then it is not Sunday",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cc8cffd6-1ec3-5d8f-b79d-3e4d4dd54ef2",
+       "label": "B",
+       "content": "If it is not Sunday, then the market is not closed",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b3b81db3-e5f8-586a-94e8-cacc1555bfbd",
+       "label": "C",
+       "content": "If the market is closed, then it is Sunday",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "842f853b-a1ec-538b-928b-751270bdfce8",
+       "label": "D",
+       "content": "It is Sunday and the market is open",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "300ee376-7e35-53cb-a4bf-f0c5e7de4a3a",
+     "key": "maths-logic-09",
+     "stem": "Which of the following is a statement (a sentence that is either true or false)?",
+     "image_url": null,
+     "explanation": "In logic, a statement is a sentence that is either true or false. Commands, questions and exclamations are not statements.\n\n**Why the other options are wrong**\n\n- Close the door.  \n  A command is neither true nor false.\n- Is it raining?  \n  A question is neither true nor false.\n- What a lovely day!  \n  An exclamation expresses feeling; it is not true or false.",
+     "position": 4,
+     "options": [
+      {
+       "id": "eb94f0cc-d05c-5ed3-9d25-1e93986a7290",
+       "label": "A",
+       "content": "Bo is a city in Sierra Leone.",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "430264d2-59ff-50ad-b9e4-466a5a4bcb8d",
+       "label": "B",
+       "content": "Close the door.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9700ad3f-2316-534a-b198-afda0d59adea",
+       "label": "C",
+       "content": "Is it raining?",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "78c6339d-fb75-59c5-8898-20c33155a9ba",
+       "label": "D",
+       "content": "What a lovely day!",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "02b05368-2d49-51ae-99ba-668688ae06aa",
+     "key": "maths-logic-10",
+     "stem": "Which statement means the same as “$p$ only if $q$”?",
+     "image_url": null,
+     "explanation": "“$p$ only if $q$” says $q$ must be true whenever $p$ is. That is “if $p$, then $q$”. For example, “You pass only if you study” means “If you pass, then you studied”.\n\n**Why the other options are wrong**\n\n- If $q$, then $p$: That is the converse. “$p$ only if $q$” means $p$ cannot happen without $q$.\n- $p$ and $q$: “Only if” is a condition, not a statement that both are true.\n- If not $p$, then not $q$: That is the inverse of “if $p$ then $q$”.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ece66b3e-8b79-5fd2-b22b-ee5840447cce",
+       "label": "A",
+       "content": "If $q$, then $p$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cea22595-67d9-5b22-84eb-a3c4f31baa50",
+       "label": "B",
+       "content": "$p$ and $q$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1d12aafb-3a44-57c6-a618-7595968dc8c0",
+       "label": "C",
+       "content": "If $p$, then $q$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d11dd047-fe06-5cf1-a021-23b9f2c41fec",
+       "label": "D",
+       "content": "If not $p$, then not $q$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8f00ce2e-3317-5f72-b454-127320acaeee",
+   "topic": "Algebraic Expressions",
+   "title": "Algebraic Expressions: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on algebraic expressions, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 233,
+   "questions": [
+    {
+     "id": "08279320-d212-5e43-9d26-dbcea8c2140f",
+     "key": "maths-expressions-06",
+     "stem": "A pen costs Le $x$ and a book costs Le 3 more than a pen. Find the total cost, in Leones, of 2 pens and 3 books.",
+     "image_url": null,
+     "explanation": "Cost of 2 pens $= 2x$; cost of 3 books $= 3(x + 3) = 3x + 9$.\n\nTotal $= 2x + 3x + 9 = 5x + 9$\n\n**Why the other options are wrong**\n\n- $5x + 3$: Each of the 3 books costs Le 3 more, so add $3 \\times 3 = 9$, not 3.\n- $5x$: You forgot that each book costs Le 3 more than a pen.\n- $6x + 9$: You multiplied: $2 \\times 3$ items. Add the costs: $2x + 3(x + 3)$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "fe0125a9-7e8c-57e5-809e-13adb0e8cd61",
+       "label": "A",
+       "content": "$5x + 9$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6598e4a0-7d08-5cb4-b094-ab477d024456",
+       "label": "B",
+       "content": "$5x + 3$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "506fbe6a-cc20-5389-ab8d-c9fc30e5022f",
+       "label": "C",
+       "content": "$5x$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dba2d08f-d457-55a9-8566-2fac42f97b28",
+       "label": "D",
+       "content": "$6x + 9$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "29a032d1-5bdb-5b58-8456-41664c538987",
+     "key": "maths-expressions-07",
+     "stem": "Evaluate $2p^{2} - 3pq$ when $p = -1$ and $q = 2$.",
+     "image_url": null,
+     "explanation": "$2(-1)^{2} - 3(-1)(2) = 2(1) + 6 = 8$\n\n**Why the other options are wrong**\n\n- $-8$: Two sign mistakes: $p^{2} = (-1)^{2} = +1$, and $-3pq = -3(-1)(2) = +6$.\n- $-4$: $-3pq = -3 \\times (-1) \\times 2 = +6$, not $-6$.\n- $4$: $(-1)^{2} = +1$, so $2p^{2} = 2$, not $-2$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "ab52d36e-97b2-5f30-8042-8a90cc919c2a",
+       "label": "A",
+       "content": "$-8$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "444e4107-5048-5309-8a6c-7d39c85e5a02",
+       "label": "B",
+       "content": "$-4$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "72d7c6cb-1e94-50b3-8edc-0e3586830255",
+       "label": "C",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "11df7128-ddb3-5437-8ee8-a79bd9d102c2",
+       "label": "D",
+       "content": "$8$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8e13a74f-5657-5ebc-a3c8-604bf250e89d",
+     "key": "maths-expressions-08",
+     "stem": "Musa is $x$ years old and his father is four times as old. What will be the sum of their ages in 5 years' time?",
+     "image_url": null,
+     "explanation": "In 5 years: Musa $x + 5$, father $4x + 5$. Sum $= 5x + 10$.\n\n**Why the other options are wrong**\n\n- $5x + 5$: Both of them will be 5 years older, so add 5 twice.\n- $4x + 10$: You left out Musa's own age, $x$.\n- $5x$: $5x$ is the sum of their ages now. Add 5 years for each person.",
+     "position": 3,
+     "options": [
+      {
+       "id": "3ae4891b-2ee3-50b9-a256-a847aced07cf",
+       "label": "A",
+       "content": "$5x + 5$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3458d4b8-bc28-5801-82aa-852526b0c078",
+       "label": "B",
+       "content": "$5x + 10$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a96328f5-48d7-5248-b55c-f5ee691be29e",
+       "label": "C",
+       "content": "$4x + 10$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "94d3df01-9eb5-5f24-b857-7c5be95552c5",
+       "label": "D",
+       "content": "$5x$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b8f259cf-6a87-50a2-b0f3-957571270cd1",
+     "key": "maths-expressions-09",
+     "stem": "If $a = 3$, $b = -2$ and $c = 0$, evaluate $(a - b)^{2} + abc$.",
+     "image_url": null,
+     "explanation": "$(a - b)^{2} = (3 - (-2))^{2} = 5^{2} = 25$, and $abc = 3 \\times (-2) \\times 0 = 0$.\n\nTotal $= 25$\n\n**Why the other options are wrong**\n\n- $1$: $a - b = 3 - (-2) = 5$, not $3 - 2 = 1$.\n- $5$: You forgot to square $a - b$.\n- $13$: You worked out $a^{2} + b^{2}$. $(a - b)^{2}$ is not $a^{2} + b^{2}$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c0a3a7a0-fe63-5b33-9341-c24b7f54b767",
+       "label": "A",
+       "content": "$1$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8e094d3d-0f6f-515f-82cd-6d121768b4f4",
+       "label": "B",
+       "content": "$5$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "10792692-8270-5e1f-96e5-9e297a782384",
+       "label": "C",
+       "content": "$13$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "91891705-4e90-50a7-8a17-296814b949b1",
+       "label": "D",
+       "content": "$25$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b5553253-0744-58cf-b94f-d3d4d0678b5e",
+     "key": "maths-expressions-10",
+     "stem": "Simplify $3a - 2b + 5a + 4b - a$.",
+     "image_url": null,
+     "explanation": "Collect like terms: $a$ terms $3 + 5 - 1 = 7$; $b$ terms $-2 + 4 = 2$.\n\n$7a + 2b$\n\n**Why the other options are wrong**\n\n- $9a + 2b$: The last term is $-a$, so subtract it: $3 + 5 - 1 = 7$.\n- $7a - 6b$: $-2b + 4b = +2b$.\n- $9ab$: Unlike terms ($a$ and $b$) cannot be combined.",
+     "position": 5,
+     "options": [
+      {
+       "id": "c5f6abdd-f24a-5212-ad8a-e3aee767eed4",
+       "label": "A",
+       "content": "$9a + 2b$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "07805a2c-3b8a-5b12-9172-00916076e9fb",
+       "label": "B",
+       "content": "$7a - 6b$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cc12da38-26bc-5471-99ef-6e3ad700521e",
+       "label": "C",
+       "content": "$7a + 2b$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "02df5b34-2269-5a2b-ba85-25f05d4c6145",
+       "label": "D",
+       "content": "$9ab$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1c07049e-05c8-5131-8c3d-7e4915711d5d",
+   "topic": "Operations on Algebraic Expressions",
+   "title": "Operations on Algebraic Expressions: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on operations on algebraic expressions, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 234,
+   "questions": [
+    {
+     "id": "54e8da32-3829-53a3-9820-916d77e320e8",
+     "key": "maths-operations-06",
+     "stem": "Factorise $4x^{2} - 9y^{2}$.",
+     "image_url": null,
+     "explanation": "$4x^{2} - 9y^{2} = (2x)^{2} - (3y)^{2} = (2x - 3y)(2x + 3y)$\n\n**Why the other options are wrong**\n\n- $(2x - 3y)^{2}$: $(2x - 3y)^{2} = 4x^{2} - 12xy + 9y^{2}$. A difference of two squares factorises into a sum and a difference.\n- $(4x - 9y)(x + y)$: Expanding gives $4x^{2} - 5xy - 9y^{2}$, not $4x^{2} - 9y^{2}$.\n- $(2x + 3y)^{2}$: $(2x + 3y)^{2}$ has a middle term, $+12xy$, and $+9y^{2}$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "c098baf7-94c3-52ea-85a3-9fc27493c6d7",
+       "label": "A",
+       "content": "$(2x - 3y)(2x + 3y)$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3aa643e2-67a9-50db-8f42-19ffc17f0c9c",
+       "label": "B",
+       "content": "$(2x - 3y)^{2}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "634b5a62-4727-5ddd-8142-9d27ca43e912",
+       "label": "C",
+       "content": "$(4x - 9y)(x + y)$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3e8e45da-4f17-540b-9ba2-1aae7ef64774",
+       "label": "D",
+       "content": "$(2x + 3y)^{2}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "016910e9-15bf-5691-9376-5004ec66b665",
+     "key": "maths-operations-07",
+     "stem": "Expand $(x - 4)^{2}$.",
+     "image_url": null,
+     "explanation": "$(x - 4)^{2} = (x - 4)(x - 4) = x^{2} - 4x - 4x + 16 = x^{2} - 8x + 16$\n\n**Why the other options are wrong**\n\n- $x^{2} + 16$: You squared each term and left out the middle term, $-8x$.\n- $x^{2} - 16$: That is $(x - 4)(x + 4)$. $(x - 4)^{2} = (x - 4)(x - 4)$.\n- $x^{2} - 4x + 16$: The middle term is $2 \\times x \\times (-4) = -8x$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "b7164c63-665f-5c39-bb87-8f45d84b6aaa",
+       "label": "A",
+       "content": "$x^{2} + 16$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "66dd30fc-0db6-59e1-9064-6391e12ffaed",
+       "label": "B",
+       "content": "$x^{2} - 8x + 16$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "dc34a4e2-edc7-541b-83e3-7091f48be226",
+       "label": "C",
+       "content": "$x^{2} - 16$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "671bac2b-418a-5587-b65b-26f3d002b716",
+       "label": "D",
+       "content": "$x^{2} - 4x + 16$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "63a361e9-8dc1-5dc9-bbb7-32cc280f7a2e",
+     "key": "maths-operations-08",
+     "stem": "A binary operation $*$ is defined by $a * b = a^{2} - b$. Evaluate $(2 * 3) * 1$.",
+     "image_url": null,
+     "explanation": "$2 * 3 = 2^{2} - 3 = 1$. Then $1 * 1 = 1^{2} - 1 = 0$.\n\n**Why the other options are wrong**\n\n- $-4$: You worked out $2 * (3 * 1)$. Do the bracket $(2 * 3)$ first.\n- $1$: $2 * 3 = 1$ is only the first step. Now find $1 * 1$.\n- $3$: You used $2^{2} - 1$ and forgot the bracket. First $2 * 3 = 4 - 3 = 1$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "e04ad7e9-2af7-5321-810c-49c6d1bde966",
+       "label": "A",
+       "content": "$-4$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e76c2ff1-7634-5b82-8b9f-95d2b05fc89c",
+       "label": "B",
+       "content": "$0$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "34a79ae3-8093-54fb-bc57-9b402fdabf58",
+       "label": "C",
+       "content": "$1$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e6e038f9-ed5a-5bda-9450-925cc6d95231",
+       "label": "D",
+       "content": "$3$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8cc1bd7b-8d32-5d07-baa8-8aa433d0dc07",
+     "key": "maths-operations-09",
+     "stem": "Factorise $ax + ay - bx - by$.",
+     "image_url": null,
+     "explanation": "Group in pairs: $a(x + y) - b(x + y) = (a - b)(x + y)$\n\n**Why the other options are wrong**\n\n- $(a + b)(x - y)$: Expanding gives $ax - ay + bx - by$. Check the signs.\n- $(a - b)(x - y)$: Expanding gives $ax - ay - bx + by$.\n- $(a + b)(x + y)$: Expanding gives $ax + ay + bx + by$: all signs positive.",
+     "position": 4,
+     "options": [
+      {
+       "id": "19842abf-8328-5382-9542-9ce2db482399",
+       "label": "A",
+       "content": "$(a + b)(x - y)$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7f54f724-a5d3-5c38-bd82-fb792dce3c8b",
+       "label": "B",
+       "content": "$(a - b)(x - y)$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c12066c6-2305-5750-837f-1a318f71575f",
+       "label": "C",
+       "content": "$(a - b)(x + y)$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "5f73d6c8-9797-580d-a573-8de7385ab7de",
+       "label": "D",
+       "content": "$(a + b)(x + y)$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b0ff3c18-477a-5849-a90d-7dd781d33804",
+     "key": "maths-operations-10",
+     "stem": "Simplify $(x + 3)(x - 3) - x(x - 2)$.",
+     "image_url": null,
+     "explanation": "$(x + 3)(x - 3) = x^{2} - 9$ and $x(x - 2) = x^{2} - 2x$.\n\n$x^{2} - 9 - (x^{2} - 2x) = x^{2} - 9 - x^{2} + 2x = 2x - 9$\n\n**Why the other options are wrong**\n\n- $-2x - 9$: $-x(x - 2) = -x^{2} + 2x$: minus times minus is plus.\n- $2x - 3$: $(x + 3)(x - 3) = x^{2} - 9$, not $x^{2} - 3$.\n- $2x^{2} - 2x - 9$: You added $x(x - 2)$ instead of subtracting it.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9aed151c-c0e4-55ba-a547-5a95aeebd315",
+       "label": "A",
+       "content": "$-2x - 9$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d7109f6e-4054-5699-a687-4aaf48c19958",
+       "label": "B",
+       "content": "$2x - 3$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b05cc95b-55be-55e2-b868-ec360891f670",
+       "label": "C",
+       "content": "$2x^{2} - 2x - 9$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e612f63f-92fd-5707-af35-ee37fdbac7ea",
+       "label": "D",
+       "content": "$2x - 9$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cfbe6b9e-b168-5d62-9972-c204e2f099d9",
+   "topic": "Linear Equations",
+   "title": "Linear Equations: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on linear equations, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 235,
+   "questions": [
+    {
+     "id": "4af2f814-916b-59cd-9311-0a8818b522db",
+     "key": "maths-equations-06",
+     "stem": "Solve $3(x - 2) = 2(x + 4)$.",
+     "image_url": null,
+     "explanation": "$3x - 6 = 2x + 8$\n\n$3x - 2x = 8 + 6 \\Rightarrow x = 14$\n\n**Why the other options are wrong**\n\n- $-14$: From $3x - 6 = 2x + 8$, $x = 8 + 6 = 14$. Check the signs when moving terms.\n- $2$: You added $-6$ and $8$. Moving $-6$ to the right makes it $+6$: $x = 8 + 6$.\n- $10$: You expanded $3(x - 2)$ as $3x - 2$. Multiply both terms: $3x - 6$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "19abc8d2-2bc7-5a04-9c85-ce32f89f4eb6",
+       "label": "A",
+       "content": "$-14$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2a3a415c-12cc-5998-b8ed-18853f16d148",
+       "label": "B",
+       "content": "$2$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b5febb07-b738-5e0d-911e-f554a685312f",
+       "label": "C",
+       "content": "$10$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "810d9f3f-2e54-5ec0-82c6-2b1167b7fdac",
+       "label": "D",
+       "content": "$14$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5ec68bd8-3dcc-5cd8-b14a-1624fe640415",
+     "key": "maths-equations-07",
+     "stem": "Solve the simultaneous equations $3x + 2y = 16$ and $x + 2y = 8$.",
+     "image_url": null,
+     "explanation": "Subtract the second equation from the first: $2x = 8$, so $x = 4$.\n\nThen $4 + 2y = 8$, so $y = 2$. Check: $3(4) + 2(2) = 16$. ✓\n\n**Why the other options are wrong**\n\n- $x = 2$, $y = 4$: The values are swapped. Check: $3(2) + 2(4) = 14$, not 16.\n- $x = 4$, $y = 6$: From $4 + 2y = 8$, $2y = 4$ and $y = 2$.\n- $x = 8$, $y = 0$: Subtracting the equations gives $2x = 8$, not $x = 8$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "33fde49a-968b-5e89-9459-2544fcf44d38",
+       "label": "A",
+       "content": "$x = 4$, $y = 2$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1749823b-218f-5378-976c-1284fa0d4e27",
+       "label": "B",
+       "content": "$x = 2$, $y = 4$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "95a87336-f3eb-5cbe-b3c1-9853a061effa",
+       "label": "C",
+       "content": "$x = 4$, $y = 6$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2d4c7e8a-b02d-5e87-b650-4e9b410974f5",
+       "label": "D",
+       "content": "$x = 8$, $y = 0$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a591b505-037c-5f8a-958e-dcf046cb1789",
+     "key": "maths-equations-08",
+     "stem": "The sum of two numbers is 25 and their difference is 7. Find the larger number.",
+     "image_url": null,
+     "explanation": "$x + y = 25$ and $x - y = 7$. Adding: $2x = 32$, so $x = 16$ (and $y = 9$).\n\n**Why the other options are wrong**\n\n- $9$: 9 is the smaller number.\n- $18$: $25 - 7 = 18$ is twice the smaller number.\n- $32$: $25 + 7 = 32$ is twice the larger number; divide by 2.",
+     "position": 3,
+     "options": [
+      {
+       "id": "65d89e11-0c08-577c-a726-da2687ffde8c",
+       "label": "A",
+       "content": "$9$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c0afd67b-0e87-5c33-9174-bf7fd6254c64",
+       "label": "B",
+       "content": "$16$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6f290f3c-4470-50f5-84d5-562198467c7b",
+       "label": "C",
+       "content": "$18$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "111f9c69-9325-53a8-b9db-c47e95585378",
+       "label": "D",
+       "content": "$32$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8f487f73-2cfe-5a4f-a623-6d5fb554a41e",
+     "key": "maths-equations-09",
+     "stem": "Solve $\\dfrac{2x + 1}{3} = x - 2$.",
+     "image_url": null,
+     "explanation": "Multiply both sides by 3: $2x + 1 = 3(x - 2) = 3x - 6$\n\n$1 + 6 = 3x - 2x \\Rightarrow x = 7$\n\n**Why the other options are wrong**\n\n- $-7$: From $2x + 1 = 3x - 6$, $x = 1 + 6 = 7$, not $-7$.\n- $-3$: You did not multiply the right-hand side by 3.\n- $3$: You multiplied only $x$ by 3. Multiply the whole of $x - 2$: $3x - 6$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "0da5784f-e7fd-5ed8-b29b-4f45774d2dfb",
+       "label": "A",
+       "content": "$-7$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fe59fa3f-ec6e-5216-bb37-faa0cb8099bc",
+       "label": "B",
+       "content": "$-3$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "423f2be1-ff22-5195-ac35-800115039c72",
+       "label": "C",
+       "content": "$3$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "af703a85-0979-5df8-9652-bd0488d8bb98",
+       "label": "D",
+       "content": "$7$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2d3e685c-4e9c-5fb3-bbd6-14b59fb64255",
+     "key": "maths-equations-10",
+     "stem": "The length of a rectangle is 3 cm more than twice its width. Its perimeter is 42 cm. Find the width.",
+     "image_url": null,
+     "explanation": "Width $w$, length $2w + 3$. Perimeter: $2(2w + 3 + w) = 42$\n\n$6w + 6 = 42 \\Rightarrow 6w = 36 \\Rightarrow w = 6$ cm\n\n**Why the other options are wrong**\n\n- $7$ cm: You left out the 3 cm: $6w = 42$.\n- $13$ cm: You wrote $3w + 3 = 42$, forgetting that the perimeter counts each side twice.\n- $15$ cm: 15 cm is the length, $2(6) + 3$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "89ca3f5a-84b0-5f8f-9300-287ac7c84737",
+       "label": "A",
+       "content": "$6$ cm",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c226376f-119f-5141-9168-2b423b890e5e",
+       "label": "B",
+       "content": "$7$ cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f85f9143-f30f-5121-813a-9b5bfcb393d4",
+       "label": "C",
+       "content": "$13$ cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "90fb9eb6-07c7-53ea-af31-1c791eec3ecf",
+       "label": "D",
+       "content": "$15$ cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "4b9ae6fc-e809-597a-bd0f-9dd40f7065ac",
+   "topic": "Graphs of Linear and Quadratic Functions",
+   "title": "Graphs of Linear and Quadratic Functions: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on graphs of linear and quadratic functions, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 236,
+   "questions": [
+    {
+     "id": "602b7dc5-d6cf-55fd-9860-d6f11295736b",
+     "key": "maths-graphs-06",
+     "stem": "Where does the graph of $y = 2x - 6$ cut the $y$-axis?",
+     "image_url": null,
+     "explanation": "On the $y$-axis $x = 0$: $y = 2(0) - 6 = -6$. The point is $(0, -6)$.\n\n**Why the other options are wrong**\n\n- $(3, 0)$: $(3, 0)$ is where the line cuts the $x$-axis.\n- $(0, 2)$: 2 is the gradient, not the intercept.\n- $(-6, 0)$: On the $y$-axis, $x = 0$, so the point is $(0, -6)$, not $(-6, 0)$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "2f366a56-d105-5e0c-9e94-b129147a16a0",
+       "label": "A",
+       "content": "$(3, 0)$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fc8e2035-ff05-51c4-8e01-b0b139378088",
+       "label": "B",
+       "content": "$(0, -6)$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "83835b08-ed67-59b2-8460-1c89b37e3f7c",
+       "label": "C",
+       "content": "$(0, 2)$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b0244a7e-6fc6-5de8-bc66-829ff32967e1",
+       "label": "D",
+       "content": "$(-6, 0)$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "66e079a5-f1e3-5b30-9aa7-5bfb280f8aad",
+     "key": "maths-graphs-07",
+     "stem": "What is the gradient of the line $y = 5 - 3x$?",
+     "image_url": null,
+     "explanation": "Written as $y = -3x + 5$, the coefficient of $x$ is the gradient: $-3$.\n\n**Why the other options are wrong**\n\n- $\\dfrac{5}{3}$: $\\dfrac{5}{3}$ is where the line cuts the $x$-axis.\n- $3$: The coefficient of $x$ is $-3$; keep the sign.\n- $5$: 5 is the $y$-intercept, not the gradient.",
+     "position": 2,
+     "options": [
+      {
+       "id": "71fb1003-1fab-5e74-a11e-cd5317a90181",
+       "label": "A",
+       "content": "$-3$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3d18460f-0816-53b0-955c-67e3a90b84e6",
+       "label": "B",
+       "content": "$\\dfrac{5}{3}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "846f4adc-3787-539a-afd1-f0077982667f",
+       "label": "C",
+       "content": "$3$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c48bb084-7090-5286-8ad2-e418fe3a0e81",
+       "label": "D",
+       "content": "$5$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f4d20a1b-84fc-5425-afc5-fca9279bb703",
+     "key": "maths-graphs-08",
+     "stem": "Find the coordinates of the turning point of the graph of $y = x^{2} - 4x + 1$.",
+     "image_url": null,
+     "explanation": "$x = -\\dfrac{b}{2a} = -\\dfrac{-4}{2} = 2$, and $y = 2^{2} - 4(2) + 1 = -3$.\n\nThe turning point (a minimum) is $(2, -3)$.\n\n**Why the other options are wrong**\n\n- $(-2, 13)$: The line of symmetry is $x = -\\dfrac{b}{2a} = +2$, not $-2$.\n- $(4, 1)$: You took $x = -b = 4$. The turning point is at $x = -\\dfrac{b}{2a}$.\n- $(2, 1)$: Substitute carefully: $2^{2} - 4(2) + 1 = 4 - 8 + 1 = -3$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b0081c95-8101-59f6-b606-135ebc67ef88",
+       "label": "A",
+       "content": "$(-2, 13)$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2b80ea0c-2e6a-5f08-a80c-c91d01ac331c",
+       "label": "B",
+       "content": "$(4, 1)$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "64f37af7-6feb-5dfb-b5dc-bb840ec8ed21",
+       "label": "C",
+       "content": "$(2, -3)$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fabed045-4dfd-5868-bc24-0a0fc3a3c2f6",
+       "label": "D",
+       "content": "$(2, 1)$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dd2e2ba1-df62-5379-ae2f-f2f3cc6199f7",
+     "key": "maths-graphs-09",
+     "stem": "At which values of $x$ does the graph of $y = x^{2} - x - 6$ cut the $x$-axis?",
+     "image_url": null,
+     "explanation": "The graph cuts the $x$-axis where $y = 0$: $x^{2} - x - 6 = (x + 2)(x - 3) = 0$, so $x = -2$ or $x = 3$.\n\n**Why the other options are wrong**\n\n- $x = 2$ and $x = -3$: The signs are reversed. $(x + 2)(x - 3) = 0$ gives $x = -2$ or $x = 3$.\n- $x = -6$ and $x = 0$: $-6$ is where the graph cuts the $y$-axis, not the $x$-axis.\n- $x = -1$ and $x = 6$: $(x + 1)(x - 6) = x^{2} - 5x - 6$, which is a different equation.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f70cf8a8-03b4-5edc-b5d0-e2fb4b16338b",
+       "label": "A",
+       "content": "$x = 2$ and $x = -3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bb50490b-ae89-5ccd-bd5c-0a9dd8a32198",
+       "label": "B",
+       "content": "$x = -6$ and $x = 0$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9f8736e2-377a-537e-b6fa-e170da1218a5",
+       "label": "C",
+       "content": "$x = -1$ and $x = 6$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2a550c4b-8dab-5783-91ac-3754d94bda92",
+       "label": "D",
+       "content": "$x = -2$ and $x = 3$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "08106b85-1316-5298-a227-76d516308fba",
+     "key": "maths-graphs-10",
+     "stem": "Find the equation of the line of symmetry of the graph of $y = 2x^{2} + 8x - 3$.",
+     "image_url": null,
+     "explanation": "Line of symmetry: $x = -\\dfrac{b}{2a} = -\\dfrac{8}{2 \\times 2} = -2$\n\n**Why the other options are wrong**\n\n- $x = 2$: $x = -\\dfrac{b}{2a} = -\\dfrac{8}{4} = -2$: keep the minus sign.\n- $x = -4$: You divided by $a = 2$ only. The formula is $x = -\\dfrac{b}{2a}$.\n- $x = -3$: $-3$ is the constant term; it does not give the line of symmetry.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9ef13dd4-a2b3-5311-8231-5d6c021bfd63",
+       "label": "A",
+       "content": "$x = -2$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "96b9054f-1fa1-5d62-96e2-8fbcddfeba55",
+       "label": "B",
+       "content": "$x = 2$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d064b906-1033-5ae4-b2bb-b4c0135777cb",
+       "label": "C",
+       "content": "$x = -4$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "37f6afcd-2280-5ca9-a066-5e254d908525",
+       "label": "D",
+       "content": "$x = -3$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "76ddc0e1-7052-5b45-affb-4e0dcb39d639",
+   "topic": "Algebraic Fractions",
+   "title": "Algebraic Fractions: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on algebraic fractions, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 237,
+   "questions": [
+    {
+     "id": "50264e44-ce72-52f7-8bf2-3d14e57eeab1",
+     "key": "maths-algfractions-06",
+     "stem": "Simplify $\\dfrac{x^{2} - 9}{x + 3}$.",
+     "image_url": null,
+     "explanation": "$\\dfrac{x^{2} - 9}{x + 3} = \\dfrac{(x - 3)(x + 3)}{x + 3} = x - 3$\n\n**Why the other options are wrong**\n\n- $x + 3$: $x^{2} - 9 = (x - 3)(x + 3)$; cancelling $x + 3$ leaves $x - 3$.\n- $x - 9$: You cancelled $x$ from $x^{2}$ and $x$. Only common factors can be cancelled.\n- $x^{2} - 3$: You divided only 9 by 3. Factorise the top first.",
+     "position": 1,
+     "options": [
+      {
+       "id": "0e920eae-a4e1-5628-88dd-a39746fe717b",
+       "label": "A",
+       "content": "$x + 3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1ef3f466-5645-53ed-a7c3-ea901df510b9",
+       "label": "B",
+       "content": "$x - 3$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "12b23ce2-8348-51b3-a8b1-48712aa32c21",
+       "label": "C",
+       "content": "$x - 9$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5ad1ab17-26a1-5e42-9ea0-a7a435908049",
+       "label": "D",
+       "content": "$x^{2} - 3$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bc3a3740-ba1a-514a-8b67-e7682a935bd2",
+     "key": "maths-algfractions-07",
+     "stem": "Simplify $\\dfrac{3}{x + 1} - \\dfrac{2}{x - 1}$.",
+     "image_url": null,
+     "explanation": "Common denominator $(x + 1)(x - 1) = x^{2} - 1$:\n\n$\\dfrac{3(x - 1) - 2(x + 1)}{x^{2} - 1} = \\dfrac{3x - 3 - 2x - 2}{x^{2} - 1} = \\dfrac{x - 5}{x^{2} - 1}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{x - 1}{x^{2} - 1}$: $-2(x + 1) = -2x - 2$, not $-2x + 2$.\n- $\\dfrac{1}{x^{2} - 1}$: You subtracted the numerators without multiplying each by the other denominator.\n- $\\dfrac{1}{2}$: You subtracted the tops and the bottoms separately. Use a common denominator.",
+     "position": 2,
+     "options": [
+      {
+       "id": "1a1c973a-0b75-5053-a4d3-3941477182df",
+       "label": "A",
+       "content": "$\\dfrac{x - 1}{x^{2} - 1}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c02dc573-c028-56cb-9430-aef9ae80ca62",
+       "label": "B",
+       "content": "$\\dfrac{1}{x^{2} - 1}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d7cf0d09-e80f-55e2-b05c-0f3808365f48",
+       "label": "C",
+       "content": "$\\dfrac{x - 5}{x^{2} - 1}$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6d7cef29-b400-5bee-94d0-d984e89da63c",
+       "label": "D",
+       "content": "$\\dfrac{1}{2}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7f605add-778c-50cc-843b-d49fd4bfdf16",
+     "key": "maths-algfractions-08",
+     "stem": "For what value of $x$ is $\\dfrac{2x + 1}{x - 4}$ equal to zero?",
+     "image_url": null,
+     "explanation": "A fraction is zero when its numerator is zero (and its denominator is not): $2x + 1 = 0 \\Rightarrow x = -\\dfrac{1}{2}$.\n\n**Why the other options are wrong**\n\n- $-4$: The fraction is zero when its numerator is zero: $2x + 1 = 0$.\n- $\\dfrac{1}{2}$: From $2x + 1 = 0$, $x = -\\dfrac{1}{2}$: keep the sign.\n- $4$: At $x = 4$ the fraction is undefined (the denominator is zero), not zero.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ac336b29-cff2-5c4a-8712-625f79fff6c6",
+       "label": "A",
+       "content": "$-4$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "065fa24a-b5d6-5813-b236-398822322bbc",
+       "label": "B",
+       "content": "$-\\dfrac{1}{2}$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0338c2fb-dcad-5401-8932-73e3270a3418",
+       "label": "C",
+       "content": "$\\dfrac{1}{2}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "596f7733-184e-5a77-92bd-1666cb4b5287",
+       "label": "D",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e309ee20-c05c-514e-9e6c-737244c0aa5e",
+     "key": "maths-algfractions-09",
+     "stem": "Simplify $\\dfrac{6x^{2}y}{9xy^{2}}$.",
+     "image_url": null,
+     "explanation": "$\\dfrac{6}{9} = \\dfrac{2}{3}$, $\\dfrac{x^{2}}{x} = x$, $\\dfrac{y}{y^{2}} = \\dfrac{1}{y}$, so the fraction is $\\dfrac{2x}{3y}$.\n\n**Why the other options are wrong**\n\n- $\\dfrac{3x}{2y}$: $\\dfrac{6}{9} = \\dfrac{2}{3}$, not $\\dfrac{3}{2}$.\n- $\\dfrac{2y}{3x}$: The $x$ and $y$ are upside down. One $x$ is left on top and one $y$ underneath.\n- $\\dfrac{2}{3}$: You cancelled all the letters. $x^{2} \\div x = x$ and $y \\div y^{2} = \\dfrac{1}{y}$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7f4a50d7-b6e8-570c-b5ae-186963150fbf",
+       "label": "A",
+       "content": "$\\dfrac{3x}{2y}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6e87e5d7-4c73-50d5-a110-7e09cf11fcc8",
+       "label": "B",
+       "content": "$\\dfrac{2y}{3x}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "30142146-96c8-5b1a-b76c-16dd95d5d5d1",
+       "label": "C",
+       "content": "$\\dfrac{2}{3}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c75c535c-4471-5342-850b-3798fb85b2a5",
+       "label": "D",
+       "content": "$\\dfrac{2x}{3y}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "23a43125-a9c5-5904-b0d2-59b829f5ecfc",
+     "key": "maths-algfractions-10",
+     "stem": "Solve $\\dfrac{x}{2} + \\dfrac{x}{3} = 5$.",
+     "image_url": null,
+     "explanation": "Multiply by 6: $3x + 2x = 30 \\Rightarrow 5x = 30 \\Rightarrow x = 6$\n\n**Why the other options are wrong**\n\n- $\\dfrac{25}{6}$: From $\\dfrac{5x}{6} = 5$, multiply by $\\dfrac{6}{5}$, not by $\\dfrac{5}{6}$.\n- $12.5$: You added the denominators: $\\dfrac{x}{2} + \\dfrac{x}{3}$ is not $\\dfrac{2x}{5}$.\n- $30$: $5x = 30$, so divide by 5.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9499eb14-6bf2-5674-93ec-98caff8e0d2a",
+       "label": "A",
+       "content": "$\\dfrac{25}{6}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d8d5b172-85b1-51fe-bf55-2f688ab8a6fc",
+       "label": "B",
+       "content": "$6$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d5e2d549-d227-5922-a192-410d76213e5d",
+       "label": "C",
+       "content": "$12.5$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "90f45c39-c8ec-57a1-a149-f27153a60ebb",
+       "label": "D",
+       "content": "$30$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aecb9faf-d401-5a4f-b82d-8df482d4a22f",
+   "topic": "Functions and Relations",
+   "title": "Functions and Relations: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on functions and relations, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 238,
+   "questions": [
+    {
+     "id": "b344c40b-bdae-5230-8a20-2670494384d1",
+     "key": "maths-functions-06",
+     "stem": "If $g(x) = 3x + 1$, find $g(2) + g(-1)$.",
+     "image_url": null,
+     "explanation": "$g(2) = 7$ and $g(-1) = -3 + 1 = -2$. So $g(2) + g(-1) = 7 - 2 = 5$.\n\n**Why the other options are wrong**\n\n- $-14$: You multiplied $g(2)$ by $g(-1)$. The question asks for their sum.\n- $4$: You worked out $g(2 + (-1)) = g(1)$. Find each value first, then add.\n- $9$: $g(-1) = 3(-1) + 1 = -2$, not $+2$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f52967db-0f6a-5649-afa6-3995e6f882c5",
+       "label": "A",
+       "content": "$-14$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "03a9eb58-41c6-538f-91b8-9d7137545825",
+       "label": "B",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "45906d33-49f7-5e93-8e52-7f340d99ba24",
+       "label": "C",
+       "content": "$5$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e6522fe9-e51c-58b2-960a-46a5505b6488",
+       "label": "D",
+       "content": "$9$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4f527008-491b-5662-af11-c448e58c49e7",
+     "key": "maths-functions-07",
+     "stem": "Which of the following relations is NOT a function?",
+     "image_url": null,
+     "explanation": "A function gives each input exactly one output. In $\\{(1, 2), (1, 3), (2, 4)\\}$ the input 1 has two outputs, 2 and 3, so it is not a function (it is one-to-many).\n\n**Why the other options are wrong**\n\n- $\\{(1, 5), (2, 5), (3, 5)\\}$: This is a many-to-one mapping. Each input has exactly one output, so it is a function.\n- $\\{(1, 4), (2, 5), (3, 6)\\}$: This is one-to-one, so it is a function.\n- $\\{(0, 0), (1, 1)\\}$: Each input has one output, so it is a function.",
+     "position": 2,
+     "options": [
+      {
+       "id": "faf0a25c-785a-59a0-b3a1-f36175276608",
+       "label": "A",
+       "content": "$\\{(1, 2), (1, 3), (2, 4)\\}$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "01255b76-da9e-56eb-8ef9-e6e1f949d08e",
+       "label": "B",
+       "content": "$\\{(1, 5), (2, 5), (3, 5)\\}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "88748933-d583-5a83-a168-2c5193839662",
+       "label": "C",
+       "content": "$\\{(1, 4), (2, 5), (3, 6)\\}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c10fe7f6-5cec-5c00-8050-6092eee1e611",
+       "label": "D",
+       "content": "$\\{(0, 0), (1, 1)\\}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e0bf78fd-d928-5839-862c-376722b72855",
+     "key": "maths-functions-08",
+     "stem": "If $f(x) = \\dfrac{x + 5}{2}$, find $x$ when $f(x) = 8$.",
+     "image_url": null,
+     "explanation": "$\\dfrac{x + 5}{2} = 8 \\Rightarrow x + 5 = 16 \\Rightarrow x = 11$\n\n**Why the other options are wrong**\n\n- $3$: You subtracted 5 from 8 but did not first multiply by 2.\n- $6.5$: $6.5 = f(8)$. The question gives $f(x) = 8$ and asks for $x$.\n- $21$: You added 5 instead of subtracting it: $x = 2 \\times 8 - 5$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0d64f257-80cc-5197-ac55-f3b2ab8aa5a2",
+       "label": "A",
+       "content": "$3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b50fcf6f-23ee-514d-b5b2-e00af46b5c72",
+       "label": "B",
+       "content": "$6.5$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "70a13074-b7e7-5328-bc03-8bc72ea545d0",
+       "label": "C",
+       "content": "$11$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "bd12a026-901c-54dd-99f9-611c7c3fb39e",
+       "label": "D",
+       "content": "$21$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "02947700-1787-5355-9ea3-84d976895c4f",
+     "key": "maths-functions-09",
+     "stem": "A mapping takes $1 \\to 3$, $2 \\to 6$, $3 \\to 11$ and $4 \\to 18$. What is its rule?",
+     "image_url": null,
+     "explanation": "The outputs 3, 6, 11, 18 are each 2 more than the squares 1, 4, 9, 16. The rule is $x \\to x^{2} + 2$.\n\n**Why the other options are wrong**\n\n- $x \\to 3x$: $3x$ works for 1 and 2, but $3 \\times 3 = 9$, not 11.\n- $x \\to x^{2} + 1$: $1^{2} + 1 = 2$, not 3.\n- $x \\to 2x + 1$: $2(2) + 1 = 5$, not 6. The differences 3, 5, 7 grow, so the rule involves $x^{2}$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c8e7d685-2f3c-559f-9c76-6bffa6527454",
+       "label": "A",
+       "content": "$x \\to 3x$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8dedfc8d-bcbe-50b2-ac18-0c3f4b1be282",
+       "label": "B",
+       "content": "$x \\to x^{2} + 2$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2321cbb0-7660-5f89-9707-e810999fd95b",
+       "label": "C",
+       "content": "$x \\to x^{2} + 1$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4ec8fdc5-123c-5c35-9345-a4bbf69ec964",
+       "label": "D",
+       "content": "$x \\to 2x + 1$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ab1856fb-caa2-5151-acec-1182bc6ff2cd",
+     "key": "maths-functions-10",
+     "stem": "Find the image of 3 under the mapping $f: x \\to x^{2} - 2x$.",
+     "image_url": null,
+     "explanation": "$f(3) = 3^{2} - 2(3) = 9 - 6 = 3$\n\n**Why the other options are wrong**\n\n- $-3$: $3^{2} = 9$, so $9 - 6 = 3$, not $-3$.\n- $6$: You worked out $3^{2} - 3$, leaving out the 2 in $2x$.\n- $15$: You added $2x$ instead of subtracting it.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e1d0448c-9f9a-5a31-bba0-b9c7b8fc7e3e",
+       "label": "A",
+       "content": "$-3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dc305991-286b-5b1a-a8ce-11f37ea94753",
+       "label": "B",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e69fe486-53be-55ee-adea-368c6df85397",
+       "label": "C",
+       "content": "$6$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "22d4ea69-d947-5379-8494-c6b216715b29",
+       "label": "D",
+       "content": "$15$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "13116900-fadc-5610-b8f7-14f92e3e538a",
+   "topic": "Coordinate Geometry",
+   "title": "Coordinate Geometry: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on coordinate geometry, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 239,
+   "questions": [
+    {
+     "id": "57060e56-28b4-5f7d-9ee0-419a0ffb896c",
+     "key": "maths-coordinates-06",
+     "stem": "Find the equation of the line through $(2, 1)$ that is parallel to $y = 3x - 4$.",
+     "image_url": null,
+     "explanation": "Parallel lines have equal gradients, so $m = 3$: $y = 3x + c$.\n\nThrough $(2, 1)$: $1 = 6 + c \\Rightarrow c = -5$. The line is $y = 3x - 5$.\n\n**Why the other options are wrong**\n\n- $y = 3x - 4$: That is the given line, which does not pass through $(2, 1)$.\n- $y = 3x + 5$: From $1 = 3(2) + c$, $c = 1 - 6 = -5$, not $+5$.\n- $y = -3x + 7$: Parallel lines have the same gradient, 3, not $-3$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "3a082858-248c-5582-a54f-082b58aa4bd0",
+       "label": "A",
+       "content": "$y = 3x - 4$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "58fd29bb-4807-5eb8-9ec1-423fef40553c",
+       "label": "B",
+       "content": "$y = 3x + 5$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a19c23b7-5147-5951-bb6c-05fedb85f841",
+       "label": "C",
+       "content": "$y = 3x - 5$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "58224716-d7f7-5e2f-b43c-7ff115663d05",
+       "label": "D",
+       "content": "$y = -3x + 7$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fd22d64f-1c42-577b-a30c-36a344f79e9f",
+     "key": "maths-coordinates-07",
+     "stem": "$M(3, -1)$ is the mid-point of the line $AB$, and $A$ is the point $(1, 2)$. Find the coordinates of $B$.",
+     "image_url": null,
+     "explanation": "$\\dfrac{1 + x}{2} = 3 \\Rightarrow x = 5$ and $\\dfrac{2 + y}{2} = -1 \\Rightarrow y = -4$. So $B = (5, -4)$.\n\n**Why the other options are wrong**\n\n- $(2, 0.5)$: That is the mid-point of $A$ and $M$, not the point $B$.\n- $(4, 1)$: You added the coordinates of $A$ and $M$. $B = 2M - A$.\n- $(-1, 5)$: You worked out $2A - M$. The mid-point is $M$, so $B = 2M - A$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "cd82ce18-feee-5af6-be02-e4669070e5a5",
+       "label": "A",
+       "content": "$(2, 0.5)$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ef96a3bb-f58b-5013-b365-e5e458cb75f9",
+       "label": "B",
+       "content": "$(4, 1)$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3b73df68-ea61-5afb-b7b8-cd1c225abaed",
+       "label": "C",
+       "content": "$(-1, 5)$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "27303e31-4a1a-587d-a024-44b83721c10d",
+       "label": "D",
+       "content": "$(5, -4)$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e89a91f7-06fc-593d-9974-01ab92d97439",
+     "key": "maths-coordinates-08",
+     "stem": "Where does the line $2x + 5y = 10$ cut the $y$-axis?",
+     "image_url": null,
+     "explanation": "On the $y$-axis $x = 0$: $5y = 10 \\Rightarrow y = 2$. The point is $(0, 2)$.\n\n**Why the other options are wrong**\n\n- $(5, 0)$: $(5, 0)$ is where the line cuts the $x$-axis.\n- $(0, 10)$: With $x = 0$, $5y = 10$, so $y = 2$, not 10.\n- $(0, 5)$: 5 is the coefficient of $y$, not the intercept.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2beca5a8-9f74-5761-a5b4-57b7cb9e572e",
+       "label": "A",
+       "content": "$(0, 2)$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "89bd2838-56c3-5e8d-98ab-92987eaeec4a",
+       "label": "B",
+       "content": "$(5, 0)$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2717702b-796a-52a9-9fd8-0c4c3b68e153",
+       "label": "C",
+       "content": "$(0, 10)$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4eb77655-92b2-5418-8097-2ea922a27e65",
+       "label": "D",
+       "content": "$(0, 5)$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e80dca4e-6e4b-5f3e-8a29-6eebd0c4f189",
+     "key": "maths-coordinates-09",
+     "stem": "The line through $(1, 2)$ and $(3, k)$ has gradient 4. Find $k$.",
+     "image_url": null,
+     "explanation": "$\\dfrac{k - 2}{3 - 1} = 4 \\Rightarrow k - 2 = 8 \\Rightarrow k = 10$\n\n**Why the other options are wrong**\n\n- $6$: You wrote $k - 2 = 4$. The run is $3 - 1 = 2$, so $k - 2 = 4 \\times 2$.\n- $8$: $k - 2 = 8$, so $k = 10$: add the 2.\n- $18$: You used $3 + 1 = 4$ for the run. The run is $3 - 1 = 2$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4bf63eb4-ccd3-5be1-aee1-48c0c98b27e9",
+       "label": "A",
+       "content": "$6$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "96e09bfd-d50d-56a3-85ee-4d27ab86d149",
+       "label": "B",
+       "content": "$8$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "008c0c28-dd44-55dd-be63-2174e958594c",
+       "label": "C",
+       "content": "$10$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a5dca721-5075-5450-b676-7986f91988f1",
+       "label": "D",
+       "content": "$18$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "209f5e5e-e345-52bc-859f-5b0dd6d690cd",
+     "key": "maths-coordinates-10",
+     "stem": "Find the equation of the line through the points $(0, 3)$ and $(2, 7)$.",
+     "image_url": null,
+     "explanation": "Gradient $= \\dfrac{7 - 3}{2 - 0} = 2$; the line passes through $(0, 3)$, so the intercept is 3: $y = 2x + 3$.\n\n**Why the other options are wrong**\n\n- $y = 3x + 2$: The gradient and intercept are swapped. Gradient $= \\dfrac{7 - 3}{2 - 0} = 2$; intercept $= 3$.\n- $y = \\dfrac{1}{2}x + 3$: You found $\\dfrac{\\text{run}}{\\text{rise}}$. Gradient is rise over run: $\\dfrac{4}{2} = 2$.\n- $y = 2x + 7$: The line cuts the $y$-axis at $(0, 3)$, so the intercept is 3.",
+     "position": 5,
+     "options": [
+      {
+       "id": "5424d530-357f-5170-a5d1-9fd559fd45bc",
+       "label": "A",
+       "content": "$y = 3x + 2$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7a780d63-2c6a-55f6-8df2-d7464800e284",
+       "label": "B",
+       "content": "$y = 2x + 3$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "46e9c2d6-da10-5865-86fc-96f9b2396203",
+       "label": "C",
+       "content": "$y = \\dfrac{1}{2}x + 3$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "23d7f7eb-c36f-5451-91b5-3b13f539f6ab",
+       "label": "D",
+       "content": "$y = 2x + 7$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "af04a85c47d7"
+}

@@ -109,6 +109,15 @@ SETS = [
         "practice_set": 2,
     },
     {
+        "module": ROOT / "content/questions/mathematics/set9_p1.py",
+        "subject_slug": "mathematics",
+        "name": "maths_set9_p1",
+        "label": "Mathematics: practice set 2 for fractions, integers, logic, expressions, operations, equations, graphs, algebraic fractions, functions and coordinate geometry",
+        "review": ROOT / "content/questions/mathematics/set9_p1.review.md",
+        "sort_from": 230,
+        "practice_set": 2,
+    },
+    {
         "module": ROOT / "content/questions/english-language/set1_p1.py",
         "subject_slug": "english-language",
         "name": "english_set1_p1",
