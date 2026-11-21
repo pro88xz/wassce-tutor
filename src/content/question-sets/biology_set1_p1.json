@@ -8,7 +8,7 @@
    "topic": "Characteristics of Living Things",
    "title": "Characteristics of Living Things: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on characteristics of living things, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on characteristics of living things, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 100,
    "questions": [
     {
@@ -200,6 +200,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "4b82d7da-4ee0-5065-83a0-d27d22e89644",
+     "key": "bio-cl-06",
+     "stem": "A green plant takes in carbon dioxide and water and uses light energy to make glucose. Which characteristic of living things does this show?",
+     "image_url": null,
+     "explanation": "Nutrition is the taking in or making of food. Green plants make their own food by photosynthesis (autotrophic nutrition); animals take in ready-made food.\n\n**Why the other options are wrong**\n\n- Respiration: Respiration releases energy from food such as glucose; it does not make the food.\n- Excretion: Excretion removes the waste products of metabolism.\n- Growth: Growth is a permanent increase in size; making food supplies the materials for it, but is not growth itself.",
+     "position": 6,
+     "options": [
+      {
+       "id": "85e1374e-8230-5fd1-a167-e7fb581e2cf2",
+       "label": "A",
+       "content": "Nutrition",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "db8d91c9-9d12-51bb-8c61-fd02017716be",
+       "label": "B",
+       "content": "Respiration",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e2b1d8b4-3c62-55a7-97da-4740cb928912",
+       "label": "C",
+       "content": "Excretion",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e0d953e4-548f-5efc-b252-37b81807c74a",
+       "label": "D",
+       "content": "Growth",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "33cdf7c4-8973-59bc-88c5-ebc7c27605af",
+     "key": "bio-cl-07",
+     "stem": "Movement in green plants differs from movement in most animals because plants",
+     "image_url": null,
+     "explanation": "Most animals show locomotion, moving the whole body. Plants are fixed, so their movements are slow movements of parts, mostly by growth.\n\n**Why the other options are wrong**\n\n- do not move at all: Plants do move: leaves turn towards light, flowers open and close, and tendrils coil round supports.\n- move from place to place faster than animals: Rooted plants cannot move from place to place.\n- move from place to place using their roots: Roots anchor a plant in one place; they do not carry it about.",
+     "position": 7,
+     "options": [
+      {
+       "id": "33f0115c-19df-540b-8f81-d389f6a7f2ab",
+       "label": "A",
+       "content": "do not move at all",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e939e3a3-f2cc-5629-bc89-0576b22dc0b2",
+       "label": "B",
+       "content": "move only parts of their bodies, such as leaves turning towards light, and do not move from place to place",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "17129e8d-33e6-5cc8-b06c-50f26a3769e2",
+       "label": "C",
+       "content": "move from place to place faster than animals",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "af175711-4064-5cc1-aff9-030742ac18e7",
+       "label": "D",
+       "content": "move from place to place using their roots",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -208,7 +284,7 @@
    "topic": "Cell Structure",
    "title": "Cell Structure: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on cell structure, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on cell structure, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 101,
    "questions": [
     {
@@ -400,6 +476,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "96f9f263-fde3-5cdb-b91f-d4b4ea0ea434",
+     "key": "bio-cs-06",
+     "stem": "Which part of a cell controls the movement of substances into and out of it?",
+     "image_url": null,
+     "explanation": "The cell membrane is selectively (partially) permeable: it lets some substances through and holds others back.\n\n**Why the other options are wrong**\n\n- Cell wall: The cell wall of a plant is fully permeable, so it lets almost everything through; it gives shape and strength.\n- Nucleus: The nucleus controls the cell's activities through its genes, but substances enter and leave through the membrane.\n- Vacuole: The vacuole stores cell sap; it does not control what enters the cell.",
+     "position": 6,
+     "options": [
+      {
+       "id": "9468d927-1de3-50cb-916e-ecc0380719f2",
+       "label": "A",
+       "content": "Cell wall",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6bb5285d-30ff-569b-b30a-24825d80fc10",
+       "label": "B",
+       "content": "Nucleus",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a30e8427-5681-530e-b2f8-2d91c0df2024",
+       "label": "C",
+       "content": "Cell membrane",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "31acde04-3131-5e22-8fcd-69b1b82930f8",
+       "label": "D",
+       "content": "Vacuole",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c4f152e1-eb9e-5ad8-ad02-92a469bccc87",
+     "key": "bio-cs-07",
+     "stem": "The large permanent vacuole of a plant cell",
+     "image_url": null,
+     "explanation": "Cell sap is a solution of sugars, salts and other substances. When the vacuole is full of water, it presses the cytoplasm against the wall and keeps the cell turgid, which helps support the plant.\n\n**Why the other options are wrong**\n\n- contains the chromosomes: The chromosomes are in the nucleus.\n- is the site of photosynthesis: Photosynthesis takes place in the chloroplasts.\n- makes proteins for the cell: Proteins are made on the ribosomes.",
+     "position": 7,
+     "options": [
+      {
+       "id": "e057d016-a305-50b0-9749-2c22ce618639",
+       "label": "A",
+       "content": "contains the chromosomes",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bdc83167-17e0-5f2f-8a2d-4eaf74388a81",
+       "label": "B",
+       "content": "is the site of photosynthesis",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b9aa61a3-172f-5a37-a495-31ea5c066818",
+       "label": "C",
+       "content": "makes proteins for the cell",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3e51d0a2-a04f-529e-9437-a16b14c61ccc",
+       "label": "D",
+       "content": "contains cell sap and keeps the cell firm (turgid)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -408,7 +560,7 @@
    "topic": "Photosynthesis and Plant Nutrition",
    "title": "Photosynthesis and Plant Nutrition: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on photosynthesis and plant nutrition, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on photosynthesis and plant nutrition, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 102,
    "questions": [
     {
@@ -600,6 +752,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "55bd735d-898e-52b7-95a3-8f9de4d5aeaa",
+     "key": "bio-ps-06",
+     "stem": "A variegated leaf (part green, part white) on a destarched plant is left in sunlight for six hours and then tested with iodine. Only the green parts turn blue-black. This shows that photosynthesis needs",
+     "image_url": null,
+     "explanation": "The only difference between the green and white parts is chlorophyll. Starch formed only where chlorophyll was present, so chlorophyll is needed for photosynthesis.\n\n**Why the other options are wrong**\n\n- light: The whole leaf was in the light, so light was not the difference between the parts.\n- carbon dioxide: Carbon dioxide reached the whole leaf, so it was not the difference between the parts.\n- water: Water reached the whole leaf through its veins, so it was not the difference between the parts.",
+     "position": 6,
+     "options": [
+      {
+       "id": "3c3ef875-2e92-551e-87b9-e6d39f45e74c",
+       "label": "A",
+       "content": "chlorophyll",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "863b28c0-ca31-5d32-97b0-165c8755fe2a",
+       "label": "B",
+       "content": "light",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d7d04cd6-c0ba-50a1-98e7-6abffdcc63a9",
+       "label": "C",
+       "content": "carbon dioxide",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d4d16933-7588-5c39-9f03-cfd1807f36e6",
+       "label": "D",
+       "content": "water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c77800ae-f62d-50f4-be38-56943f4097b5",
+     "key": "bio-ps-07",
+     "stem": "Before an experiment on photosynthesis, a potted plant is destarched by",
+     "image_url": null,
+     "explanation": "In the dark the plant cannot photosynthesise, so it uses up or moves away the starch in its leaves. Any starch found after the experiment must then have been made during it.\n\n**Why the other options are wrong**\n\n- boiling its leaves in alcohol: Boiling a leaf in alcohol removes its chlorophyll during the starch test; it would kill the plant.\n- watering it heavily for two days: Water does not remove the starch already in the leaves.\n- keeping it in bright light for 48 hours: In bright light the plant would make more starch, not less.",
+     "position": 7,
+     "options": [
+      {
+       "id": "538018f2-a747-5990-88f5-c253fd2a1e91",
+       "label": "A",
+       "content": "boiling its leaves in alcohol",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "03c77506-0778-5625-830a-0ea4491b2269",
+       "label": "B",
+       "content": "keeping it in darkness for about 48 hours",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f0abefee-9187-561d-8269-07741931854f",
+       "label": "C",
+       "content": "watering it heavily for two days",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d63d0180-ba70-54bc-849a-5d9a2854b2e6",
+       "label": "D",
+       "content": "keeping it in bright light for 48 hours",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -608,7 +836,7 @@
    "topic": "Food, Nutrition, and the Digestive System",
    "title": "Food, Nutrition, and the Digestive System: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on food, nutrition, and the digestive system, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on food, nutrition, and the digestive system, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 103,
    "questions": [
     {
@@ -800,6 +1028,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "822ed1e1-adc0-53d3-b393-e24531196cae",
+     "key": "bio-fn-06",
+     "stem": "Which enzyme begins the digestion of starch in the mouth?",
+     "image_url": null,
+     "explanation": "Salivary amylase starts to break starch down into maltose in the mouth. Pancreatic amylase continues the work in the small intestine.\n\n**Why the other options are wrong**\n\n- Pepsin: Pepsin digests protein, in the stomach.\n- Lipase: Lipase digests fats and oils into fatty acids and glycerol.\n- Trypsin: Trypsin, from the pancreas, digests protein in the small intestine.",
+     "position": 6,
+     "options": [
+      {
+       "id": "c4944eda-9a89-5cbe-82c7-a1944d31ff5d",
+       "label": "A",
+       "content": "Pepsin",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6f116dec-f529-530e-b6bd-73182446c90c",
+       "label": "B",
+       "content": "Lipase",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bc107824-2cf7-51b4-9f58-1d1586241fef",
+       "label": "C",
+       "content": "Amylase",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c5ed5269-d915-5cd9-8155-043e2f7556e0",
+       "label": "D",
+       "content": "Trypsin",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e72e33ab-4a0b-51e6-a4ad-08900cbeebf5",
+     "key": "bio-fn-07",
+     "stem": "Roughage (dietary fibre) is important in the diet because it",
+     "image_url": null,
+     "explanation": "Fibre, mainly cellulose from vegetables, fruit and whole grains, adds bulk, so the gut muscles can push the food along by peristalsis.\n\n**Why the other options are wrong**\n\n- supplies most of the body's energy: Most energy comes from carbohydrates and fats; humans cannot digest fibre.\n- is digested into amino acids: Amino acids come from the digestion of protein.\n- builds strong bones and teeth: Strong bones and teeth need calcium and vitamin D.",
+     "position": 7,
+     "options": [
+      {
+       "id": "3bd622d7-1d69-5ddb-ac01-0ab4245fed8e",
+       "label": "A",
+       "content": "supplies most of the body's energy",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "edee27d8-115c-50cb-b5b4-fcf4e68c51cb",
+       "label": "B",
+       "content": "is digested into amino acids",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "217e8ee1-c0d9-5063-89ea-6ddcc6b2cbd8",
+       "label": "C",
+       "content": "builds strong bones and teeth",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "032bbd47-442c-5788-af82-2a20eda191a2",
+       "label": "D",
+       "content": "helps food move along the intestine and prevents constipation",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -808,7 +1112,7 @@
    "topic": "Cellular Respiration",
    "title": "Cellular Respiration: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on cellular respiration, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on cellular respiration, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 104,
    "questions": [
     {
@@ -1000,6 +1304,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "a330da7a-3a4c-560b-ab7b-13436d63208b",
+     "key": "bio-cr-06",
+     "stem": "The energy released by respiration is transferred to a molecule that supplies energy for the activities of the cell. This molecule is",
+     "image_url": null,
+     "explanation": "ATP carries energy in a form the cell can use straight away: for muscle contraction, active transport, making proteins and cell division.\n\n**Why the other options are wrong**\n\n- glucose: Glucose is the fuel that is broken down; the energy released is passed to ATP.\n- glycogen: Glycogen is a stored carbohydrate in the liver and muscles.\n- carbon dioxide: Carbon dioxide is a waste product of respiration and carries no useful energy.",
+     "position": 6,
+     "options": [
+      {
+       "id": "a22070cf-e77a-5418-ba88-d465c3f57fdb",
+       "label": "A",
+       "content": "ATP (adenosine triphosphate)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "11965ea0-b802-50e5-99f0-3bbcfed5fdb7",
+       "label": "B",
+       "content": "glucose",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b3f2e094-ebcc-50d8-946a-2b7e9e6e84af",
+       "label": "C",
+       "content": "glycogen",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "25c7b2df-6959-5fc2-bcfc-bfe7e58e7f7f",
+       "label": "D",
+       "content": "carbon dioxide",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5a1b3cd9-a6b9-5d08-9f54-6834c84fa4d1",
+     "key": "bio-cr-07",
+     "stem": "After a race, an athlete keeps breathing deeply and quickly for some time. This is to",
+     "image_url": null,
+     "explanation": "During hard exercise muscles respire anaerobically and lactic acid builds up. Afterwards, extra oxygen is used to break it down: this is the oxygen debt being repaid.\n\n**Why the other options are wrong**\n\n- store extra oxygen in the muscles for the next race: The body cannot store extra oxygen for later in this way.\n- get rid of the ethanol made in the muscles: Human muscle makes lactic acid, not ethanol.\n- cool the body by breathing out heat: Breathing does lose a little heat, but it is not why breathing stays fast after exercise.",
+     "position": 7,
+     "options": [
+      {
+       "id": "2d79e82b-72db-5cd8-9d73-ac001d70501d",
+       "label": "A",
+       "content": "store extra oxygen in the muscles for the next race",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "17a166e2-9bbf-509b-88a3-5be78d601ed5",
+       "label": "B",
+       "content": "take in the extra oxygen needed to remove the lactic acid made during the race (the oxygen debt)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c85d326e-ffd7-5226-8a36-dbc5973bc38e",
+       "label": "C",
+       "content": "get rid of the ethanol made in the muscles",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8e8e1d1f-c3d6-50e1-8450-844b7e273703",
+       "label": "D",
+       "content": "cool the body by breathing out heat",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -1008,7 +1388,7 @@
    "topic": "Transport in Plants",
    "title": "Transport in Plants: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on transport in plants, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on transport in plants, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 105,
    "questions": [
     {
@@ -1200,6 +1580,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "33b087af-7efb-5174-b5ca-a341ce452bf4",
+     "key": "bio-tp-06",
+     "stem": "Food made in the leaves is carried to other parts of the plant mainly as",
+     "image_url": null,
+     "explanation": "Translocation moves sucrose and amino acids in the phloem, up and down the plant, to where they are used or stored.\n\n**Why the other options are wrong**\n\n- starch, in the xylem: Starch is insoluble, so it cannot be carried in solution; and the xylem carries water and minerals.\n- glucose, in the xylem: The xylem carries water and mineral salts upwards, not food.\n- starch, in the phloem: Starch is insoluble; sugar is carried in the phloem as soluble sucrose.",
+     "position": 6,
+     "options": [
+      {
+       "id": "ebb642ca-f865-580b-a403-99542864c2f2",
+       "label": "A",
+       "content": "starch, in the xylem",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bacf6fdc-fdf5-5f0d-8082-6aed0cd9ba14",
+       "label": "B",
+       "content": "glucose, in the xylem",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e0a94b4e-eee6-574f-ac9c-2405d6a14fc4",
+       "label": "C",
+       "content": "sucrose, in the phloem",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "055ab346-2f33-599f-a748-63bc3adaab26",
+       "label": "D",
+       "content": "starch, in the phloem",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "91f1003c-b93d-53df-8190-58e84c29ac89",
+     "key": "bio-tp-07",
+     "stem": "A potometer is used to measure",
+     "image_url": null,
+     "explanation": "The distance an air bubble moves along the capillary tube in a set time shows how fast the shoot takes up water. Comparing conditions, such as still and moving air, shows what affects transpiration.\n\n**Why the other options are wrong**\n\n- the rate of photosynthesis of the shoot: A potometer measures water movement, not photosynthesis.\n- the amount of food carried in the phloem: A potometer cannot measure food movement.\n- the exact amount of water lost by transpiration: It measures water uptake, which is only an estimate of transpiration, because some water is used by the shoot.",
+     "position": 7,
+     "options": [
+      {
+       "id": "8a2f44a3-50f6-58b5-b950-c789cb1c425e",
+       "label": "A",
+       "content": "the rate of photosynthesis of the shoot",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4ec84066-6bdd-519f-a437-f19c7b24ff4f",
+       "label": "B",
+       "content": "the amount of food carried in the phloem",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c2335ef3-1442-5d09-9747-c635bb589559",
+       "label": "C",
+       "content": "the exact amount of water lost by transpiration",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bea6da60-f526-57f7-b191-c68da36575a8",
+       "label": "D",
+       "content": "the rate at which a leafy shoot takes up water",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -1208,7 +1664,7 @@
    "topic": "Ecosystems",
    "title": "Ecosystems: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on ecosystems, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on ecosystems, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 106,
    "questions": [
     {
@@ -1400,6 +1856,82 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "4d4af8de-8f6a-5e56-9443-d8645f7bf441",
+     "key": "bio-ec-06",
+     "stem": "*Rhizobium* bacteria live in the root nodules of legumes. The bacteria get food from the plant, and the plant gets nitrogen compounds from the bacteria. This relationship is",
+     "image_url": null,
+     "explanation": "Mutualism (symbiosis) benefits both partners. Lichens (a fungus with an alga) and the bacteria in the rumen of cattle are other examples.\n\n**Why the other options are wrong**\n\n- parasitism: In parasitism one partner benefits and the other (the host) is harmed.\n- commensalism: In commensalism one partner benefits and the other is neither helped nor harmed.\n- predation: In predation one animal kills and eats another.",
+     "position": 6,
+     "options": [
+      {
+       "id": "8a11010b-bab2-5fac-9924-dedc35e7d40e",
+       "label": "A",
+       "content": "mutualism",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0fcc027c-bb2c-5838-b726-dcb9dc3ac4a5",
+       "label": "B",
+       "content": "parasitism",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1a4da2da-a127-5d34-8edf-34b0c0174eb1",
+       "label": "C",
+       "content": "commensalism",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6011508e-e359-58cf-8158-61f7430a5529",
+       "label": "D",
+       "content": "predation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b5dbeff7-212d-5388-8db7-d66bb5a7ec4c",
+     "key": "bio-ec-07",
+     "stem": "Bare land left after a farm is abandoned is colonised first by grasses and weeds, then by shrubs, and finally by forest trees. This gradual change in the community is called",
+     "image_url": null,
+     "explanation": "Each community changes the conditions (soil, shade, moisture) so that new species can establish, until a stable climax community, such as forest, develops.\n\n**Why the other options are wrong**\n\n- eutrophication: Eutrophication is the enrichment of water with nutrients, which leads to algal blooms.\n- competition: Competition between species is part of what drives succession, but it is not the name of the whole process.\n- evolution: Evolution is the change in species over many generations, not the change of a community in one place.",
+     "position": 7,
+     "options": [
+      {
+       "id": "cb0a3d63-33fb-59e1-9d32-0669b43ecd30",
+       "label": "A",
+       "content": "eutrophication",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c49f5091-6fbf-5a9e-9b4e-ac365fb78493",
+       "label": "B",
+       "content": "ecological succession",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d19a9e39-fbbb-5e3d-a9dd-84d924428c01",
+       "label": "C",
+       "content": "competition",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1d82d58f-e5f7-580e-9bac-3b9560f2f3a9",
+       "label": "D",
+       "content": "evolution",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
     }
    ]
   },
@@ -1408,7 +1940,7 @@
    "topic": "Mendelian Genetics",
    "title": "Mendelian Genetics: practice set 1",
    "paper_type": "Practice",
-   "description": "5 original WASSCE-style objective questions on mendelian genetics, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "description": "7 original WASSCE-style objective questions on mendelian genetics, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
    "sort_order": 107,
    "questions": [
     {
@@ -1600,9 +2132,85 @@
        "position": 3
       }
      ]
+    },
+    {
+     "id": "3829ca76-b361-5b86-aded-961d93b7fe0a",
+     "key": "bio-mg-06",
+     "stem": "A man and a woman both have the sickle cell trait (genotype AS). What is the chance that their child will also be a carrier (AS)?",
+     "image_url": null,
+     "explanation": "AS × AS gives AA, AS, AS and SS. Two outcomes in four are AS, so the chance is 1 in 2 (50%). The chance of SS, sickle cell disease, is 1 in 4 (25%) for each child, in every pregnancy.\n\n**Why the other options are wrong**\n\n- 0%: Each parent can pass on either A or S, so a child can easily receive one of each.\n- 25%: 25% is the chance that a child will have sickle cell disease (SS), or will be AA.\n- 75%: 75% is the chance that a child will NOT have sickle cell disease (AA or AS).",
+     "position": 6,
+     "options": [
+      {
+       "id": "897c1cc1-6041-54b1-8bba-66f3d3cac385",
+       "label": "A",
+       "content": "0%",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "936d856b-1ddc-50bd-a229-5b77be9dd299",
+       "label": "B",
+       "content": "25%",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3fdd6979-fb3b-59f4-b9cc-c3a20758b85c",
+       "label": "C",
+       "content": "50%",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7af00aeb-6730-5e90-9b1d-37dbbf614b48",
+       "label": "D",
+       "content": "75%",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c867733e-a6a8-599f-a279-07e301a13a7c",
+     "key": "bio-mg-07",
+     "stem": "To find out whether a tall pea plant is TT or Tt, it is crossed with a dwarf plant (tt). Some of the offspring are dwarf. The tall plant must be",
+     "image_url": null,
+     "explanation": "In a test cross the unknown is crossed with a homozygous recessive. Tt × tt gives Tt and tt in a 1 : 1 ratio, so dwarf offspring prove that the tall parent carried t.\n\n**Why the other options are wrong**\n\n- TT (homozygous tall): TT × tt gives only Tt offspring, so all would be tall.\n- tt (homozygous dwarf): A tt plant would itself be dwarf, not tall.\n- impossible to tell from this cross: This cross, a test cross, is exactly how the genotype is found.",
+     "position": 7,
+     "options": [
+      {
+       "id": "bdf3c21a-3255-5f7e-ada0-60debf83d57c",
+       "label": "A",
+       "content": "TT (homozygous tall)",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8c4adc86-db82-562b-bb79-7f3ddfa19ee9",
+       "label": "B",
+       "content": "tt (homozygous dwarf)",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9cb7ccd9-2521-5062-805d-33e789faed3a",
+       "label": "C",
+       "content": "impossible to tell from this cross",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2912e409-e325-517c-b564-21d7dba9edb4",
+       "label": "D",
+       "content": "Tt (heterozygous)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
     }
    ]
   }
  ],
- "version": "3f574f9399e1"
+ "version": "9d43d36cc672"
 }

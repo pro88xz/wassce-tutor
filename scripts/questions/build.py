@@ -547,8 +547,11 @@ def build_review(cfg: dict, questions: list[Q], ordered: dict, scope_note: str, 
         ),
         "",
     ]
+    # Grouped by topic in order of first appearance, so questions added to a topic at the end of
+    # a set (to keep earlier answer letters fixed) still appear under that topic's heading.
+    first = {t: i for i, t in reversed(list(enumerate(q.topic for q in questions)))}
     topic = None
-    for num_, q in enumerate(questions, start=1):
+    for num_, q in enumerate(sorted(questions, key=lambda q: first[q.topic]), start=1):
         if q.topic != topic:
             topic = q.topic
             out += [f"## {topic}", "", f"_Syllabus: {q.ref}_", ""]
