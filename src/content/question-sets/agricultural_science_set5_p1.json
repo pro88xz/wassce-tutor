@@ -1,0 +1,1664 @@
+{
+ "name": "agricultural_science_set5_p1",
+ "label": "Agricultural Science: set 5 (economics, farm management, marketing, credit, extension and practical skills)",
+ "subject_slug": "agricultural-science",
+ "papers": [
+  {
+   "id": "e7648965-50db-553f-ac26-a26148ef3682",
+   "topic": "Agricultural Economics",
+   "title": "Agricultural Economics: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on agricultural economics, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 180,
+   "questions": [
+    {
+     "id": "3d2162b1-30f0-582e-be95-d84e4ffaa5bb",
+     "key": "agr-ae-01",
+     "stem": "A farmer can use a plot either for groundnut, expected to earn NLe 4000, or for pepper, expected to earn NLe 7000. She chooses pepper. What is the opportunity cost of her choice?",
+     "image_url": null,
+     "explanation": "Opportunity cost is the next best alternative given up when a choice is made. Choosing pepper means giving up the groundnut income.\n\n**Why the other options are wrong**\n\n- The NLe 7000 she will earn from pepper: This is what she gains from her choice, not what she gives up.\n- NLe 3000, the difference between the two: Opportunity cost is the whole of the next best alternative given up, not the difference.\n- NLe 11 000, the two earnings added together: She cannot have both; only the alternative she gives up counts.",
+     "position": 1,
+     "options": [
+      {
+       "id": "11a05963-70e1-5e90-a8da-a5a100d46ea0",
+       "label": "A",
+       "content": "The NLe 7000 she will earn from pepper",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "939cd9f6-bce2-53a9-8f97-ca734379f185",
+       "label": "B",
+       "content": "NLe 3000, the difference between the two",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "84d58bff-4bff-52fd-b477-ffbac4828f58",
+       "label": "C",
+       "content": "The NLe 4000 she could have earned from groundnut",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "73d8710a-3129-5f20-a366-5a2bb8e08a96",
+       "label": "D",
+       "content": "NLe 11 000, the two earnings added together",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c6f0ae02-f571-55b9-830e-5c0518fbea5b",
+     "key": "agr-ae-02",
+     "stem": "Seed, fertiliser, feed and fuel bought for one season are examples of",
+     "image_url": null,
+     "explanation": "Working capital is used up within one production cycle and must be bought again each season.\n\n**Why the other options are wrong**\n\n- fixed capital: Fixed capital lasts for many seasons: buildings, machines, land improvements and tree crops.\n- land: Land, as a factor of production, means natural resources such as soil and water.\n- management: Management is the organising of the other factors and the bearing of risk.",
+     "position": 2,
+     "options": [
+      {
+       "id": "7fe0f2a1-3b35-5696-9a18-bbcefc18f11e",
+       "label": "A",
+       "content": "fixed capital",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ec4394b1-4456-5779-b3f9-9bf3be802b66",
+       "label": "B",
+       "content": "land",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4a9a7165-f5d1-553a-a87f-8ec640de255c",
+       "label": "C",
+       "content": "management",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d28b3dbd-9462-555c-9726-c18bc95c3ffa",
+       "label": "D",
+       "content": "working (circulating) capital",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6cfbc30b-7bac-54b3-8866-887f72185e62",
+     "key": "agr-ae-03",
+     "stem": "The law of diminishing returns states that, as more and more units of a variable input are added to a fixed input,",
+     "image_url": null,
+     "explanation": "For example, adding more workers to one hectare: the first few raise output a lot, later ones add less and less, and too many can even reduce total output.\n\n**Why the other options are wrong**\n\n- total output falls from the very first unit: Total output rises at first; it is the extra (marginal) output that eventually falls.\n- the extra output from each unit keeps rising for ever: Extra output rises at first but must eventually fall, because the fixed input limits production.\n- average output stays exactly the same: Average output changes as more input is added.",
+     "position": 3,
+     "options": [
+      {
+       "id": "06ec3fd3-0b7e-5a43-9998-accf2fb8fe39",
+       "label": "A",
+       "content": "the extra output from each additional unit eventually falls",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b25a5878-83b5-5647-a4dc-34b75be2f256",
+       "label": "B",
+       "content": "total output falls from the very first unit",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d9019887-6fc2-537a-8338-2c8f59fc626e",
+       "label": "C",
+       "content": "the extra output from each unit keeps rising for ever",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6a5614d3-d8f7-5146-ab29-391887c90cd5",
+       "label": "D",
+       "content": "average output stays exactly the same",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f43b4a96-ccb6-56dc-b1ff-097da085d107",
+     "key": "agr-ae-04",
+     "stem": "Which of these is a fixed cost on a maize farm?",
+     "image_url": null,
+     "explanation": "Fixed costs, such as rent, depreciation and interest, do not change with output. Variable costs rise and fall with the level of production.\n\n**Why the other options are wrong**\n\n- Seed: The amount of seed changes with the area planted, so it is a variable cost.\n- Fertiliser: Fertiliser use changes with the area and output, so it is a variable cost.\n- Wages of hired labour: Hired labour changes with the work done, so it is a variable cost.",
+     "position": 4,
+     "options": [
+      {
+       "id": "97e0c91d-7961-5f4d-b314-6648130d054e",
+       "label": "A",
+       "content": "Seed",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "494d9a34-90bc-557e-9d20-37669945ff52",
+       "label": "B",
+       "content": "Fertiliser",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5bd1064f-999f-5a01-a2da-a8a0f8048296",
+       "label": "C",
+       "content": "Rent for the land",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3d760916-3ef5-586d-9d84-148bec8209c2",
+       "label": "D",
+       "content": "Wages of hired labour",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a0098024-c2bb-5ffa-a764-962c7220f8ff",
+     "key": "agr-ae-05",
+     "stem": "A farmer's fixed costs are NLe 1000 and variable costs NLe 3000. She sells 2000 kg of maize at NLe 3 per kg. What is her profit?",
+     "image_url": null,
+     "explanation": "Total revenue = 2000 × 3 = NLe 6000. Total cost = 1000 + 3000 = NLe 4000. Profit = 6000 − 4000 = NLe 2000.\n\n**Why the other options are wrong**\n\n- NLe 3000: This subtracts only the variable costs; the fixed costs must also be taken away.\n- NLe 5000: This subtracts only the fixed costs; the variable costs must also be taken away.\n- NLe 6000: This is the total revenue, before any costs are subtracted.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9ee6a98d-e74d-5257-b53d-141a012a3d40",
+       "label": "A",
+       "content": "NLe 2000",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ef35296e-65fa-5731-951d-506a6ad8d39c",
+       "label": "B",
+       "content": "NLe 3000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d6d10b43-22f6-5343-a120-5755570e514e",
+       "label": "C",
+       "content": "NLe 5000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "51c17753-d221-5209-9f76-79549ed1cdb5",
+       "label": "D",
+       "content": "NLe 6000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b3cc60bd-2b6d-5f4a-8d4d-0f06ee1b47c9",
+     "key": "agr-ae-06",
+     "stem": "According to the law of demand, when the price of rice rises, other things being equal,",
+     "image_url": null,
+     "explanation": "Demand also depends on income, tastes, population and the prices of substitutes such as imported rice.\n\n**Why the other options are wrong**\n\n- the quantity of rice demanded rises: This is the opposite of the law of demand.\n- the supply of rice falls: A higher price tends to raise the quantity supplied, not lower it.\n- the quantity of rice demanded stays the same: Buyers respond to price: at a higher price they buy less.",
+     "position": 6,
+     "options": [
+      {
+       "id": "eb78e7d5-203b-57c7-946c-7ccec693fb58",
+       "label": "A",
+       "content": "the quantity of rice demanded rises",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d4b06edd-09fa-52ca-8d1f-148ab48f4035",
+       "label": "B",
+       "content": "the supply of rice falls",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "79c30369-b29a-5d32-9b96-34c4a5ebf7d1",
+       "label": "C",
+       "content": "the quantity of rice demanded stays the same",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a762fdc4-a439-56a7-883a-493ec29c06e2",
+       "label": "D",
+       "content": "the quantity of rice demanded falls",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9404ee76-2619-59d2-ad07-53a143a57e4a",
+     "key": "agr-ae-07",
+     "stem": "A list of a farmer's wants arranged in order of importance is called",
+     "image_url": null,
+     "explanation": "Because resources are scarce, the farmer must choose, satisfying the most important wants first.\n\n**Why the other options are wrong**\n\n- an opportunity cost: Opportunity cost is the next best alternative given up.\n- a demand schedule: A demand schedule shows the quantities buyers would buy at different prices.\n- an inventory: An inventory is a list of all the assets of the farm.",
+     "position": 7,
+     "options": [
+      {
+       "id": "d52817e4-47c6-5042-abad-a4badab8aee7",
+       "label": "A",
+       "content": "a scale of preference",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "14e573ff-3cc2-58a7-a3ef-837079fac63d",
+       "label": "B",
+       "content": "an opportunity cost",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fb98150d-ee88-58f1-bf76-725920416a75",
+       "label": "C",
+       "content": "a demand schedule",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "17383b47-28ec-5417-a5f0-fcca4707c5ff",
+       "label": "D",
+       "content": "an inventory",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8a564999-d2ee-58eb-99e5-fbfae6d0b0a5",
+   "topic": "Farm Planning, Records, and Management",
+   "title": "Farm Planning, Records, and Management: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on farm planning, records, and management, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 181,
+   "questions": [
+    {
+     "id": "54dd734a-8082-571e-8424-e25de63a5e45",
+     "key": "agr-fr-01",
+     "stem": "Deciding in advance what to produce, how much, when and how, is the management function of",
+     "image_url": null,
+     "explanation": "The other functions of a farm manager include decision making, risk bearing, record keeping and marketing.\n\n**Why the other options are wrong**\n\n- organising: Organising is arranging the land, labour, inputs and equipment to carry out the plan.\n- controlling: Controlling is checking results against the plan and correcting problems.\n- directing: Directing is guiding workers and coordinating their activities.",
+     "position": 1,
+     "options": [
+      {
+       "id": "2aec6fb9-30dd-5fb9-b04e-135f01152d08",
+       "label": "A",
+       "content": "organising",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a3163658-2bfb-5661-8b00-9bd285a7c89a",
+       "label": "B",
+       "content": "controlling",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "65b325a3-6e07-5bf3-a20d-37b359cbd950",
+       "label": "C",
+       "content": "planning",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9db8791f-c1ce-5243-bac0-f85e17944387",
+       "label": "D",
+       "content": "directing",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "339ea52d-8556-5fed-8333-60a44ec3c792",
+     "key": "agr-fr-02",
+     "stem": "A record that lists all the assets of a farm, such as land, buildings, machines, tools and animals, at a particular date, is",
+     "image_url": null,
+     "explanation": "Comparing inventories from year to year shows whether the farm's assets are growing or wearing out.\n\n**Why the other options are wrong**\n\n- a farm diary: A farm diary records daily activities and events, such as rain, pests and visitors.\n- a labour record: A labour record lists the workers, days worked and wages paid.\n- a production record: A production record shows yields, eggs, milk and weights.",
+     "position": 2,
+     "options": [
+      {
+       "id": "53e060ce-780d-5aed-84e2-7a175a9c4573",
+       "label": "A",
+       "content": "a farm diary",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e5e8f518-08de-586f-a10c-86e56f6444f3",
+       "label": "B",
+       "content": "a labour record",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b5126151-f912-51f5-b6fa-f25a5fe4fa35",
+       "label": "C",
+       "content": "a production record",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "00d09563-f5d0-5385-aad0-99972b0f587f",
+       "label": "D",
+       "content": "an inventory record",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "df29ea39-e7ff-590f-88f3-e950fc9bc1c9",
+     "key": "agr-fr-03",
+     "stem": "The main reason a farmer should keep records is",
+     "image_url": null,
+     "explanation": "Records also support applications for credit, help trace problems such as disease outbreaks, and show which enterprises pay best.\n\n**Why the other options are wrong**\n\n- to avoid paying any tax: Records help with honest tax returns; avoiding tax is not their purpose.\n- because records directly increase crop yields: Records do not grow crops; they help the farmer make better decisions.\n- to impress visitors to the farm: Records are a management tool, not a display.",
+     "position": 3,
+     "options": [
+      {
+       "id": "dc63697b-0551-5c6a-a724-e513d1121803",
+       "label": "A",
+       "content": "to know whether the farm is making a profit and to plan better",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "87421a1d-a2b0-552e-9ba5-d09a4392fcd1",
+       "label": "B",
+       "content": "to avoid paying any tax",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "596ccb6e-9008-521d-a003-115929362712",
+       "label": "C",
+       "content": "because records directly increase crop yields",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f219f701-0ca1-5842-b684-79a4111a21c7",
+       "label": "D",
+       "content": "to impress visitors to the farm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "87807c74-ba45-5cd2-be9a-0a1ec9f074f9",
+     "key": "agr-fr-04",
+     "stem": "In planning the layout of a farm, livestock houses should be placed",
+     "image_url": null,
+     "explanation": "The farmhouse, store and office should be near the road and entrance; crop plots are divided for rotation; fish ponds go where water can flow in and out by gravity.\n\n**Why the other options are wrong**\n\n- upwind of the farmhouse: Upwind, the smells and flies would blow towards the house.\n- as far as possible from the feed store: Feed must be carried to the animals every day, so the store should be near.\n- in the middle of the crop plots: Animals there could damage the crops and make rotation difficult.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4f630ca7-f94e-5fd2-bcf1-f8154e2eb328",
+       "label": "A",
+       "content": "upwind of the farmhouse",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "baf27111-805b-5966-8202-2738f4f18029",
+       "label": "B",
+       "content": "as far as possible from the feed store",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "41757a0e-fcf2-52df-86d4-a63dba410e2c",
+       "label": "C",
+       "content": "near the store but downwind of the farmhouse",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "180dcf06-a843-5f08-8971-878a9fdcddeb",
+       "label": "D",
+       "content": "in the middle of the crop plots",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "166da357-1307-5fb2-a35c-e4f4e6afc3c3",
+     "key": "agr-fr-05",
+     "stem": "A farmer group buys a power tiller for NLe 30 000. It is expected to last 5 years and then be sold for NLe 5000. Using the straight-line method, what is the yearly depreciation?",
+     "image_url": null,
+     "explanation": "Depreciation per year = (cost − scrap value) ÷ life = (30 000 − 5000) ÷ 5 = NLe 5000.\n\n**Why the other options are wrong**\n\n- NLe 1000: This divides the scrap value by the life; the cost minus the scrap value must be divided.\n- NLe 6000: This ignores the scrap value: 30 000 ÷ 5.\n- NLe 25 000: This is the total depreciation over the whole life, not the yearly figure.",
+     "position": 5,
+     "options": [
+      {
+       "id": "852201f1-a4ec-5294-99c3-1a7fb433c107",
+       "label": "A",
+       "content": "NLe 1000",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e539f486-1736-51f5-96e0-54e5e33ec181",
+       "label": "B",
+       "content": "NLe 5000",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f138b70d-b711-5604-9958-82556ee91321",
+       "label": "C",
+       "content": "NLe 6000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3ec1595d-049b-5478-8068-04fe90d5278b",
+       "label": "D",
+       "content": "NLe 25 000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f4d4db85-3f8d-53e6-b36d-07fd143fef47",
+     "key": "agr-fr-06",
+     "stem": "A farmer who lives far from any market, on a bad road, with no refrigeration, decides not to produce fresh milk. Which factor most influenced the choice?",
+     "image_url": null,
+     "explanation": "Fresh milk spoils within hours without cooling, so it can only be produced where it can be sold or processed quickly.\n\n**Why the other options are wrong**\n\n- The type of soil on the farm: Soil matters for crops, but it is not the problem with selling fresh milk.\n- The land tenure system: Tenure matters for long-term crops; it is not the issue here.\n- The amount of rainfall: Rainfall is not what stops the farmer selling milk.",
+     "position": 6,
+     "options": [
+      {
+       "id": "4ba91c13-c013-5588-b471-fdc19fd1e157",
+       "label": "A",
+       "content": "The type of soil on the farm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b07b5007-0cf0-54f1-85a1-d3ae4379f20a",
+       "label": "B",
+       "content": "The land tenure system",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2699f2c0-265c-5c5b-91bb-6892bf0844fd",
+       "label": "C",
+       "content": "The amount of rainfall",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5b5c1829-b8c9-5d8e-9f89-d0c102044ec2",
+       "label": "D",
+       "content": "Access to markets and the perishability of the product",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a61e533f-814c-52dd-aafb-a4850ae0e260",
+     "key": "agr-fr-07",
+     "stem": "Some farmers raise fish in ponds fed by the water channels of their rice swamps. Such enterprises are described as",
+     "image_url": null,
+     "explanation": "Crops and livestock are another example: manure fertilises crops and crop residues feed animals.\n\n**Why the other options are wrong**\n\n- competitive, because they compete for the same resources: Here the enterprises share water and channels to mutual benefit.\n- independent, because they have no effect on each other: They share water and channels, so they do affect each other.\n- supplementary, because one replaces the other: Neither replaces the other; both are kept.",
+     "position": 7,
+     "options": [
+      {
+       "id": "adfe45c3-0a24-5e48-9755-4924f0c7c075",
+       "label": "A",
+       "content": "complementary, because they help each other",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "45499536-6b53-5e6c-bf1f-47568a4595cf",
+       "label": "B",
+       "content": "competitive, because they compete for the same resources",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8b0e7ebe-7ea6-5931-a8d7-be1ee1bbefee",
+       "label": "C",
+       "content": "independent, because they have no effect on each other",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "24700e06-7306-5e0c-924a-b1c4d9e683a4",
+       "label": "D",
+       "content": "supplementary, because one replaces the other",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2750b55c-f48c-5244-9d4f-275901115dc8",
+   "topic": "Agricultural Marketing and Cooperatives",
+   "title": "Agricultural Marketing and Cooperatives: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on agricultural marketing and cooperatives, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 182,
+   "questions": [
+    {
+     "id": "68325de2-46f3-52ce-b0e1-de675a4975cf",
+     "key": "agr-mc-01",
+     "stem": "Sorting produce by size, quality and cleanliness, so that buyers know what they are getting and good quality earns more, is",
+     "image_url": null,
+     "explanation": "Without grading, good and poor produce sell at the same price, so farmers have no reason to improve quality.\n\n**Why the other options are wrong**\n\n- assembling: Assembling is collecting small amounts from many farmers into larger lots.\n- processing: Processing is changing the form of produce, as in milling rice or making gari.\n- risk bearing: Risk bearing is carrying the losses from spoilage, theft or falling prices.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8c65eb7f-bf58-5199-82d4-a599e792f543",
+       "label": "A",
+       "content": "assembling",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7ade7d4f-9977-5a2e-ba51-48ef4d4c3708",
+       "label": "B",
+       "content": "processing",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8b8f62e4-b52b-5cfa-a242-78a824811189",
+       "label": "C",
+       "content": "grading and standardisation",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f92abdc0-ee6f-54a4-ae23-4d46930082b4",
+       "label": "D",
+       "content": "risk bearing",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "46cd3aba-8a7c-59b9-b06f-c22099b9242f",
+     "key": "agr-mc-02",
+     "stem": "Storing rice after harvest and selling it later in the lean season mainly",
+     "image_url": null,
+     "explanation": "Prices are lowest at harvest, when everyone sells. Farmers with good storage and no urgent need for cash can wait for better prices.\n\n**Why the other options are wrong**\n\n- lowers the price the farmer receives: Prices are usually higher in the lean season, not lower.\n- removes the need to dry the rice: Rice must be well dried before storage.\n- makes the rice grow more: Stored rice does not grow.",
+     "position": 2,
+     "options": [
+      {
+       "id": "58a00045-c9d9-53d5-b5c3-a522ae45ae6d",
+       "label": "A",
+       "content": "lowers the price the farmer receives",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "892ca4d5-cf85-51be-a221-5eefa8b68a2c",
+       "label": "B",
+       "content": "removes the need to dry the rice",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "05bcc7e9-b106-59fb-ab65-ac56bd2c5cc3",
+       "label": "C",
+       "content": "makes the rice grow more",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "50ebc7ad-de5b-57d5-906a-283d82816cd4",
+       "label": "D",
+       "content": "spreads supply through the year and earns a better price",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7610c96a-5957-529a-9dad-5990bfc71ff3",
+     "key": "agr-mc-03",
+     "stem": "Which statement about middlemen in agricultural marketing is correct?",
+     "image_url": null,
+     "explanation": "Farmers lose out when there are too many layers of middlemen or when they have no other buyers. Cooperatives and market information help.\n\n**Why the other options are wrong**\n\n- They do no work and should be banned: Middlemen do real work; the problem is too many layers, not middlemen as such.\n- They are paid by the government to buy all produce: Middlemen are private traders, not government agents.\n- They always lower the price paid by consumers: Their costs and profits are usually added to the final price.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c7ee37bc-2a9a-57df-8622-a57c34eb13ba",
+       "label": "A",
+       "content": "They perform useful services such as collecting, transporting, storing and financing produce",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5e136599-f456-5798-8cae-91c19c19945c",
+       "label": "B",
+       "content": "They do no work and should be banned",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bf9a6943-8a70-5a2d-a3bd-4dcf84ca05d9",
+       "label": "C",
+       "content": "They are paid by the government to buy all produce",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0779cb34-3ba0-55f1-ab7b-b177073d8c6c",
+       "label": "D",
+       "content": "They always lower the price paid by consumers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "00207067-ba59-5b2e-b87b-3fa8b7a6be39",
+     "key": "agr-mc-04",
+     "stem": "Which is a major problem of marketing farm produce in Sierra Leone?",
+     "image_url": null,
+     "explanation": "Other problems include the perishability of produce, small scattered quantities, lack of grading, lack of credit and competition from imports.\n\n**Why the other options are wrong**\n\n- Too much information about prices in other markets: Farmers usually have too little market information, not too much.\n- Too many storage and processing facilities: Storage and processing facilities are inadequate.\n- Prices that never change during the year: Prices rise and fall sharply between harvest and the lean season.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2b3ab60e-96b9-5bb0-8b7e-579b9b02eb6b",
+       "label": "A",
+       "content": "Too much information about prices in other markets",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b44af6ff-4a98-573f-9992-3e6f81a96688",
+       "label": "B",
+       "content": "Too many storage and processing facilities",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0d6587e8-893d-563e-9e30-dd5de7ec8df7",
+       "label": "C",
+       "content": "Poor feeder roads, especially in the rainy season",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8c5c52b0-5241-5ef7-ae4d-ee9c65fd84db",
+       "label": "D",
+       "content": "Prices that never change during the year",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6684e4e8-497f-57cd-bdd6-5df09bb17787",
+     "key": "agr-mc-05",
+     "stem": "Which is a principle of cooperative societies?",
+     "image_url": null,
+     "explanation": "Cooperative principles include voluntary and open membership, democratic control, fair sharing of surplus and education of members.\n\n**Why the other options are wrong**\n\n- Members vote in proportion to the money they invest: Voting by shares is how companies are run, not cooperatives.\n- Membership is compulsory for all farmers in the area: Cooperative membership is voluntary and open.\n- All profits go to the chairman: Surpluses are shared among members or used for their common good.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b3fa7da9-1b99-550b-b748-feec53023f28",
+       "label": "A",
+       "content": "Members vote in proportion to the money they invest",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "88cfabd7-fa3a-5ce9-9725-12c20b37f54b",
+       "label": "B",
+       "content": "Membership is compulsory for all farmers in the area",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a9690b7a-3726-5fe8-9ae0-9f367ffa926a",
+       "label": "C",
+       "content": "All profits go to the chairman",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4716b79c-e73c-5777-8a26-8ab8be97319d",
+       "label": "D",
+       "content": "One member, one vote, whatever the number of shares held",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d81330b2-5875-556a-be65-fbd9b9efecb6",
+     "key": "agr-mc-06",
+     "stem": "By selling through a marketing cooperative, small farmers are able to",
+     "image_url": null,
+     "explanation": "Cooperatives can also buy inputs in bulk at lower prices, share machines and stores, and give members access to credit.\n\n**Why the other options are wrong**\n\n- avoid repaying their loans: Membership does not cancel loans.\n- make sure prices never fall: No cooperative can control world or national prices.\n- sell without grading their produce: Cooperatives often grade produce so that better quality earns more.",
+     "position": 6,
+     "options": [
+      {
+       "id": "214a7695-6756-56ef-8291-90cf6dbf69e0",
+       "label": "A",
+       "content": "sell in larger quantities and bargain for better prices",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a7ae933c-08d5-521f-994a-2d4d8568f745",
+       "label": "B",
+       "content": "avoid repaying their loans",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ff1d1d86-b2d4-5d02-ba1d-e231282f9422",
+       "label": "C",
+       "content": "make sure prices never fall",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "284f29ca-c64c-5f87-b5f3-a964f913118b",
+       "label": "D",
+       "content": "sell without grading their produce",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "02e132db-7b70-5b3b-9bf7-f7afb7dc1bf3",
+     "key": "agr-mc-07",
+     "stem": "Which of these farm products is the most perishable?",
+     "image_url": null,
+     "explanation": "Perishable produce must be sold quickly, cooled or processed, which makes marketing harder and losses greater.\n\n**Why the other options are wrong**\n\n- Dried maize grain: Dried grain keeps for months in good storage.\n- Gari: Gari is processed and dry, so it keeps well.\n- Palm kernels: Dry palm kernels keep for a long time.",
+     "position": 7,
+     "options": [
+      {
+       "id": "cda91d7c-c509-5400-9825-9ed9df5a9476",
+       "label": "A",
+       "content": "Dried maize grain",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b50bc399-7ee3-5e8e-9107-cf5338525668",
+       "label": "B",
+       "content": "Fresh fish",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d8943c51-032d-55a3-b999-e889cda645f8",
+       "label": "C",
+       "content": "Gari",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7bebd1ab-20e6-5353-a068-6d13a7113bca",
+       "label": "D",
+       "content": "Palm kernels",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8271acc8-b6bb-5eaf-9b14-8abf49e79d01",
+   "topic": "Agricultural Finance and Credit",
+   "title": "Agricultural Finance and Credit: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on agricultural finance and credit, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 183,
+   "questions": [
+    {
+     "id": "897c07eb-a190-563f-a2e1-3a3c2bfca3aa",
+     "key": "agr-fc-01",
+     "stem": "In an osusu,",
+     "image_url": null,
+     "explanation": "Osusu is widely used in Sierra Leone to raise lump sums for inputs, school fees and other needs.\n\n**Why the other options are wrong**\n\n- members borrow from a commercial bank using land as collateral: Bank loans need collateral; an osusu is a savings group among members.\n- members receive free grants from the government: An osusu uses members' own contributions.\n- members pay high interest to a moneylender: An osusu charges no interest; each member gets back what was paid in.",
+     "position": 1,
+     "options": [
+      {
+       "id": "6bd86e3f-5944-5ae0-a17c-5563a9dd0b8d",
+       "label": "A",
+       "content": "members borrow from a commercial bank using land as collateral",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ba915c04-f3eb-5c6f-8f55-0176bd8b839b",
+       "label": "B",
+       "content": "members receive free grants from the government",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d14f410d-db07-5a56-ba6a-98adc39554e6",
+       "label": "C",
+       "content": "members contribute a fixed amount regularly, and each in turn receives the whole amount collected",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1b5bcb51-ffbe-5687-a4c8-4e2d807d56c6",
+       "label": "D",
+       "content": "members pay high interest to a moneylender",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d34247f2-98fe-5bf1-847d-0ee3b9c38604",
+     "key": "agr-fc-02",
+     "stem": "Property pledged to a lender, which can be taken if a loan is not repaid, is called",
+     "image_url": null,
+     "explanation": "Many small farmers cannot borrow from banks because they have no land title or other collateral.\n\n**Why the other options are wrong**\n\n- interest: Interest is the charge paid for using borrowed money.\n- principal: The principal is the amount borrowed.\n- dividend: A dividend is a share of profits paid to shareholders or members.",
+     "position": 2,
+     "options": [
+      {
+       "id": "35504448-5afa-52a1-a899-3811aea7e537",
+       "label": "A",
+       "content": "interest",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f11533b3-1d9e-5139-86ed-3fac2e2d1e39",
+       "label": "B",
+       "content": "principal",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "21db9962-210f-5bf7-8c21-4977e5c3972a",
+       "label": "C",
+       "content": "dividend",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "70e64fe9-f1ed-51a3-ac21-244b6bc89176",
+       "label": "D",
+       "content": "collateral (security)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "18ecc326-dae8-5a94-bc24-e8e456023e60",
+     "key": "agr-fc-03",
+     "stem": "A farmer borrows NLe 5000 at 20% simple interest per year and repays the loan after 6 months. How much does she repay in total?",
+     "image_url": null,
+     "explanation": "Interest = 5000 × 20/100 × 6/12 = NLe 500. Total repaid = 5000 + 500 = NLe 5500.\n\n**Why the other options are wrong**\n\n- NLe 500: NLe 500 is the interest alone; the amount borrowed must also be repaid.\n- NLe 6000: This charges a full year's interest; the loan lasted only half a year.\n- NLe 11 000: This treats the 6 months as 6 years.",
+     "position": 3,
+     "options": [
+      {
+       "id": "28bcd4d0-f023-5e72-adef-a5303a131b8b",
+       "label": "A",
+       "content": "NLe 500",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f5e3daf1-322e-56e4-9c9b-9d1da70fb2bb",
+       "label": "B",
+       "content": "NLe 5500",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "db024d9a-04dc-5d27-bdf1-78abac3f3f6b",
+       "label": "C",
+       "content": "NLe 6000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e5276e8d-026e-5bdb-8091-4cfa6ed30531",
+       "label": "D",
+       "content": "NLe 11 000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7689dd88-c4ae-5eb2-8a9d-c8df685cedc4",
+     "key": "agr-fc-04",
+     "stem": "Credit used to establish a cocoa farm should be",
+     "image_url": null,
+     "explanation": "Short-term credit suits seasonal inputs; medium-term suits animals and small machines; long-term suits tree crops, land and swamp development and buildings.\n\n**Why the other options are wrong**\n\n- short-term, repaid within one year: A new cocoa farm earns nothing in its first year, so it cannot repay a short-term loan.\n- medium-term, repaid within two years: Cocoa takes longer than this to give a good income.\n- repaid within a month from the first harvest: There is no harvest within a month of planting cocoa.",
+     "position": 4,
+     "options": [
+      {
+       "id": "9e6e19fd-4caa-55d1-a9f5-7c4eb2610e4c",
+       "label": "A",
+       "content": "long-term, because tree crops take several years to start bearing",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "57fb4fd0-f259-5d2d-8943-109ed6741721",
+       "label": "B",
+       "content": "short-term, repaid within one year",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ea693f3c-d858-5258-9185-60bb07c1905a",
+       "label": "C",
+       "content": "medium-term, repaid within two years",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "baa7185a-7440-5324-a5b1-4c403ba6a6f6",
+       "label": "D",
+       "content": "repaid within a month from the first harvest",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9b91f4ae-3a69-5fad-afb5-8c2924ef8656",
+     "key": "agr-fc-05",
+     "stem": "Microfinance institutions often lend small amounts to farmers without collateral by using",
+     "image_url": null,
+     "explanation": "Group members know one another and press each other to repay, which replaces the need for collateral.\n\n**Why the other options are wrong**\n\n- land titles registered at the Ministry of Lands: Land titles are collateral; microfinance often lends without them.\n- the farmer's next harvest bought in advance at a very low price: This is how some traders lend, often unfairly.\n- government ownership of the farm: The government does not take over farms in microfinance.",
+     "position": 5,
+     "options": [
+      {
+       "id": "749c287a-a621-5f0e-97f7-3bb0646a6f3a",
+       "label": "A",
+       "content": "land titles registered at the Ministry of Lands",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3295df89-6cb9-574a-87f3-9464006e41f5",
+       "label": "B",
+       "content": "a group guarantee, in which members are responsible for one another's loans",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9237f9b5-d8f9-52ca-acd7-d9fb34f97498",
+       "label": "C",
+       "content": "the farmer's next harvest bought in advance at a very low price",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "285f8ebe-09ef-5aba-988e-fe25becf93d8",
+       "label": "D",
+       "content": "government ownership of the farm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "681385f4-a7a4-56ba-b128-4ba12af4d01d",
+     "key": "agr-fc-06",
+     "stem": "Why do many small farmers in Sierra Leone find it hard to borrow from commercial banks?",
+     "image_url": null,
+     "explanation": "Other problems are high interest, short repayment periods, the risk of crop failure and poor records.\n\n**Why the other options are wrong**\n\n- Banks lend only to farmers in the provinces: Banks lend in towns and require collateral; they do not favour the provinces.\n- Farmers never need inputs such as seed and fertiliser: Farmers do need inputs; that is why credit matters.\n- Banks charge no interest on farm loans: Banks charge interest; high rates are another problem.",
+     "position": 6,
+     "options": [
+      {
+       "id": "01672687-1dc8-5bfd-aa4c-c54d7b1b5093",
+       "label": "A",
+       "content": "Banks lend only to farmers in the provinces",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e89054cd-1c66-5180-97c0-d37d35eaaf37",
+       "label": "B",
+       "content": "Farmers never need inputs such as seed and fertiliser",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "79048fb3-218d-5f84-aab7-5d4114278e28",
+       "label": "C",
+       "content": "They often lack collateral such as land titles, and banks have few rural branches",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9b7f3bab-ebf7-5176-b4ce-b2ee4c656318",
+       "label": "D",
+       "content": "Banks charge no interest on farm loans",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9417f887-7177-5ee8-9562-b29305f30c59",
+     "key": "agr-fc-07",
+     "stem": "A farmer borrows money for seed and fertiliser but spends it on a wedding. The most likely result is that",
+     "image_url": null,
+     "explanation": "A production loan must be used for production, so that the extra income can repay it.\n\n**Why the other options are wrong**\n\n- the harvest will be larger than planned: Without the inputs, the harvest will not increase.\n- the lender will cancel the interest: Lenders do not cancel interest because a loan was misused.\n- the loan automatically becomes long-term: Misusing a loan does not change its terms.",
+     "position": 7,
+     "options": [
+      {
+       "id": "43e67cac-a7ee-5bb0-b42b-65725cfb7e28",
+       "label": "A",
+       "content": "the harvest will be larger than planned",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "937419c4-e256-5845-a21f-5a11b053c7d3",
+       "label": "B",
+       "content": "the lender will cancel the interest",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "29ae18ce-23b0-5dfc-b4e7-56d62557db12",
+       "label": "C",
+       "content": "the loan automatically becomes long-term",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2a74bdac-9b4b-5794-9965-99257a6ceb43",
+       "label": "D",
+       "content": "the harvest does not increase, so the loan is hard to repay and the farmer falls into debt",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e6af8b57-e0d9-5bac-8414-b6a588fafacc",
+   "topic": "Agricultural Extension and Government Policy",
+   "title": "Agricultural Extension and Government Policy: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on agricultural extension and government policy, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 184,
+   "questions": [
+    {
+     "id": "6712a55e-5e99-55a9-89c0-d4a2b5708637",
+     "key": "agr-ex-01",
+     "stem": "Agricultural extension is best described as",
+     "image_url": null,
+     "explanation": "Extension workers teach improved practices, carry research results to farmers, advise on inputs and markets, and organise farmer groups.\n\n**Why the other options are wrong**\n\n- a government shop that sells farm produce: Extension teaches; it does not run shops.\n- the clearing of forest to extend farmland: Extension does not mean extending farmland.\n- a bank that lends money to farmers: Extension may advise on credit, but it is not a bank.",
+     "position": 1,
+     "options": [
+      {
+       "id": "49fd6d1e-a4e3-5479-ac13-0321c97908aa",
+       "label": "A",
+       "content": "an educational service that helps farmers adopt improved methods",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "70d5991f-eabf-5763-8608-35b2ee1e3f73",
+       "label": "B",
+       "content": "a government shop that sells farm produce",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "99b24330-e93d-5721-b176-3617ac252d67",
+       "label": "C",
+       "content": "the clearing of forest to extend farmland",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e521721c-eb1a-5348-99c1-ac6f49d35157",
+       "label": "D",
+       "content": "a bank that lends money to farmers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ea3958d5-1c2f-5ce1-826d-1e0b14329c99",
+     "key": "agr-ex-02",
+     "stem": "An extension officer grows maize with fertiliser and without fertiliser side by side on a respected farmer's field, for neighbours to see. This is",
+     "image_url": null,
+     "explanation": "Seeing is believing: a result demonstration on a neighbour's field persuades farmers far more than a lecture.\n\n**Why the other options are wrong**\n\n- a method demonstration: A method demonstration shows how to do something, such as budding or spraying.\n- a farm and home visit: A farm visit is individual contact with one farmer.\n- a mass method: Mass methods use radio, television, posters and leaflets.",
+     "position": 2,
+     "options": [
+      {
+       "id": "64459b31-b6dc-5ee5-9da0-863ada70345b",
+       "label": "A",
+       "content": "a method demonstration",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "958da327-7a57-57ea-9ef8-28f6e004594e",
+       "label": "B",
+       "content": "a result demonstration",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e8b1d220-695d-5875-9b6a-19a58fc3dc27",
+       "label": "C",
+       "content": "a farm and home visit",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b7599e08-803b-5830-88ac-22f8af7f23e3",
+       "label": "D",
+       "content": "a mass method",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6dc5c66c-a574-5160-9b3c-9d037b066dfe",
+     "key": "agr-ex-03",
+     "stem": "An advantage of using radio for agricultural extension is that it",
+     "image_url": null,
+     "explanation": "Mass methods reach many people, but cannot answer individual questions, so they work best alongside group and individual methods.\n\n**Why the other options are wrong**\n\n- lets each farmer ask the officer questions face to face: Radio is one-way; face-to-face questions need individual or group methods.\n- lets farmers practise a new skill under supervision: Practising under supervision needs a method demonstration.\n- works only for farmers who can read: Radio does not need reading; that is an advantage over leaflets.",
+     "position": 3,
+     "options": [
+      {
+       "id": "7ea6e44e-409a-5668-bcd1-7ebfb6953409",
+       "label": "A",
+       "content": "lets each farmer ask the officer questions face to face",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1e551fc8-0e5e-51eb-91bb-d2d940a3c85c",
+       "label": "B",
+       "content": "lets farmers practise a new skill under supervision",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0688e1bb-3a3f-51e7-9418-28a4599f1fed",
+       "label": "C",
+       "content": "reaches many farmers quickly and cheaply",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ebd32f0d-204f-5659-8377-a9d02f827dc5",
+       "label": "D",
+       "content": "works only for farmers who can read",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "92050d66-ec09-5689-939e-d91c8cbefa14",
+     "key": "agr-ex-04",
+     "stem": "Besides teaching farmers, an important role of extension workers is to",
+     "image_url": null,
+     "explanation": "Feedback from farmers helps researchers develop recommendations that suit local conditions.\n\n**Why the other options are wrong**\n\n- fix the prices of farm produce: Prices are not set by extension workers.\n- take over the land of farmers who do not adopt new methods: Extension is voluntary and educational, not a land authority.\n- collect taxes from farmers: Extension workers do not collect taxes.",
+     "position": 4,
+     "options": [
+      {
+       "id": "dd9b9d58-4c1d-577e-a6a8-f900fdc7afee",
+       "label": "A",
+       "content": "fix the prices of farm produce",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "aeaf875e-e2be-520f-b69f-2f2025612af5",
+       "label": "B",
+       "content": "take over the land of farmers who do not adopt new methods",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "16e26f91-efc4-588d-b047-b686c24969a9",
+       "label": "C",
+       "content": "collect taxes from farmers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e70f7321-7f41-5186-a601-dc476e50b232",
+       "label": "D",
+       "content": "carry farmers' problems back to the researchers",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "89d81a93-addf-58c2-bc1c-5fb2ce64189c",
+     "key": "agr-ex-05",
+     "stem": "Which is a problem of agricultural extension in Sierra Leone?",
+     "image_url": null,
+     "explanation": "Other problems include poor funding, illiteracy, fear of risk and weak links with research.\n\n**Why the other options are wrong**\n\n- Too many extension workers for each farmer: Each extension worker usually serves far too many farmers.\n- Farmers receive too much research information: Farmers usually receive too little information.\n- Roads to villages are too good: Poor roads are a problem, not good ones.",
+     "position": 5,
+     "options": [
+      {
+       "id": "62e24b48-e7d8-5de8-8262-c1448579bd4c",
+       "label": "A",
+       "content": "Too few extension workers, with little transport to reach remote villages",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8d32e7f1-13e4-5338-bb39-332a9e375e57",
+       "label": "B",
+       "content": "Too many extension workers for each farmer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e708bb1c-b032-5214-8265-7e00129e928e",
+       "label": "C",
+       "content": "Farmers receive too much research information",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bd6fa280-3a54-5f85-a73e-f3eab2c35a6b",
+       "label": "D",
+       "content": "Roads to villages are too good",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c826d6c8-a454-5511-8626-6f1b12e0d1c6",
+     "key": "agr-ex-06",
+     "stem": "Which government action most directly helps farmers get their produce to market?",
+     "image_url": null,
+     "explanation": "Government also helps through research and extension, input supply, credit schemes, mechanisation services, swamp development and market information.\n\n**Why the other options are wrong**\n\n- Banning the storage of farm produce: Storage helps marketing; banning it would harm farmers.\n- Raising taxes on improved seed: Taxing inputs makes production more costly.\n- Closing agricultural research stations: Research stations develop better varieties; closing them would not help marketing.",
+     "position": 6,
+     "options": [
+      {
+       "id": "61c15d08-dfc9-5d37-b8f2-04b819411a26",
+       "label": "A",
+       "content": "Banning the storage of farm produce",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "814c0ecf-cb13-5a92-a56e-dc447d255d0f",
+       "label": "B",
+       "content": "Building and maintaining feeder roads",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "fff7d2a3-b38e-5bdc-a39b-67f248edb458",
+       "label": "C",
+       "content": "Raising taxes on improved seed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "56157000-6903-5c04-9aed-c2535506bf94",
+       "label": "D",
+       "content": "Closing agricultural research stations",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eb619210-738d-5e54-86c9-56b17d8aca2c",
+     "key": "agr-ex-07",
+     "stem": "Agricultural Business Centres in Sierra Leone mainly provide",
+     "image_url": null,
+     "explanation": "Sharing machines through centres and cooperatives lets small farmers use services none could afford alone.\n\n**Why the other options are wrong**\n\n- loans to buy land in Freetown: They serve rural farmer groups, not land buyers in Freetown.\n- free houses for farmers: They provide farm services, not housing.\n- university degrees in agriculture: University training is given by institutions such as Njala University.",
+     "position": 7,
+     "options": [
+      {
+       "id": "8916d74e-e164-56c8-b1f7-807a59e36acc",
+       "label": "A",
+       "content": "loans to buy land in Freetown",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "64354b4b-789f-5b36-9e6d-b386ab85e420",
+       "label": "B",
+       "content": "free houses for farmers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9fe08e12-f9ab-54e3-b7be-33e3f067cc6b",
+       "label": "C",
+       "content": "shared services, such as tractor hire and processing machines, to farmer groups",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6a8062e2-b0db-5a81-896a-c2777d68a3b0",
+       "label": "D",
+       "content": "university degrees in agriculture",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d34dfc47-ccde-5a55-8cbf-e0ef7d21f27f",
+   "topic": "Practical Agricultural Skills",
+   "title": "Practical Agricultural Skills: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on practical agricultural skills, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 185,
+   "questions": [
+    {
+     "id": "b547d3e1-f667-5dd2-9aa6-8213e0b2f494",
+     "key": "agr-pk-01",
+     "stem": "A rectangular school farm plot measures 80 m by 50 m. What is its area in hectares?",
+     "image_url": null,
+     "explanation": "Area = 80 × 50 = 4000 m². Hectares = 4000 ÷ 10 000 = 0.4 ha.\n\n**Why the other options are wrong**\n\n- 0.04 ha: This divides by 100 000; one hectare is 10 000 m².\n- 4 ha: This divides by 1000; one hectare is 10 000 m².\n- 4000 ha: 4000 is the area in square metres; it must be divided by 10 000 to give hectares.",
+     "position": 1,
+     "options": [
+      {
+       "id": "60f5ca0d-dd2f-5a98-9147-48fa06a5df29",
+       "label": "A",
+       "content": "0.04 ha",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1a4b88b7-0654-5004-be8c-f234e62c2fee",
+       "label": "B",
+       "content": "0.4 ha",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0fec61b2-c706-5a3e-8af6-600904562200",
+       "label": "C",
+       "content": "4 ha",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2d662df2-dea6-5f1f-8346-1af29fb5b102",
+       "label": "D",
+       "content": "4000 ha",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "69a683ea-48dd-569c-8c9f-d173ec110bb0",
+     "key": "agr-pk-02",
+     "stem": "Fertiliser is recommended at 200 kg per hectare. How much fertiliser is needed for a plot of 0.25 ha?",
+     "image_url": null,
+     "explanation": "Fertiliser = rate × area = 200 × 0.25 = 50 kg. Always convert the area to hectares before using a rate per hectare.\n\n**Why the other options are wrong**\n\n- 5 kg: This multiplies by 0.025 instead of 0.25.\n- 200 kg: This uses the rate per hectare without adjusting for the smaller plot, putting four times too much on it.\n- 800 kg: This divides by 0.25 instead of multiplying.",
+     "position": 2,
+     "options": [
+      {
+       "id": "4c7c2142-df8d-52b0-838a-a1e1e276379e",
+       "label": "A",
+       "content": "5 kg",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6e6858fb-8dd8-57b1-980b-6fa30d144df2",
+       "label": "B",
+       "content": "50 kg",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "59066aa1-865b-5cc7-a0f4-614b4c60e994",
+       "label": "C",
+       "content": "200 kg",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "81994b6c-ba39-5790-a9d6-97037d006259",
+       "label": "D",
+       "content": "800 kg",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b646c1d3-dd08-59f8-9e11-6fbf40326414",
+     "key": "agr-pk-03",
+     "stem": "A flock of 200 laying hens lays 150 eggs in one day. What is the laying percentage for that day?",
+     "image_url": null,
+     "explanation": "Laying percentage = (eggs laid ÷ number of hens) × 100 = (150 ÷ 200) × 100 = 75%.\n\n**Why the other options are wrong**\n\n- 25%: 25% is the percentage of hens that did not lay.\n- 133%: This divides 200 by 150, the wrong way round.\n- 150%: This writes the number of eggs as a percentage without dividing by the number of hens.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b184e274-ed44-5edd-ba2a-7e8ef08f04e4",
+       "label": "A",
+       "content": "25%",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9b5eb735-fb7e-54d0-b253-7858e3b2fe96",
+       "label": "B",
+       "content": "75%",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bf089bec-0f29-5ef5-821a-fb3251f9f1f0",
+       "label": "C",
+       "content": "133%",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c1d47193-3ced-581e-bc38-e8968ca19812",
+       "label": "D",
+       "content": "150%",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d413599d-23da-538c-93a0-4fc6d8f650a0",
+     "key": "agr-pk-04",
+     "stem": "A batch of broilers ate 3600 kg of feed and gained 2000 kg in live weight. What is the feed conversion ratio (FCR)?",
+     "image_url": null,
+     "explanation": "FCR = feed eaten ÷ weight gained = 3600 ÷ 2000 = 1.8. A lower FCR is better: less feed for each kilogram of meat.\n\n**Why the other options are wrong**\n\n- 0.56: This divides the weight gained by the feed eaten, the wrong way round.\n- 18: The decimal point is misplaced: 3600 ÷ 2000 = 1.8.\n- 1600: This subtracts the weight gained from the feed eaten instead of dividing.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7bbc78e1-aed6-56df-a50e-25f8d36c4de9",
+       "label": "A",
+       "content": "0.56",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "428432ca-8aa5-586f-b3d8-bd444aebc340",
+       "label": "B",
+       "content": "1.8",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "89807982-3cd6-5ceb-a984-2c3ec9fa2522",
+       "label": "C",
+       "content": "18",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5149b952-8687-599c-bc11-513122c8b972",
+       "label": "D",
+       "content": "1600",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "988a6783-717a-51cc-8124-39edd3383a21",
+     "key": "agr-pk-05",
+     "stem": "Which is the best way to catch and hold a chicken with little stress?",
+     "image_url": null,
+     "explanation": "Birds are calm in the dark, which is why poultry are usually caught at night.\n\n**Why the other options are wrong**\n\n- Chase it round the yard in the midday sun: Chasing in the heat causes great stress and can kill birds.\n- Pick it up by the neck: Holding by the neck can injure or kill the bird.\n- Hold it by one wing: Holding by one wing can dislocate or break the wing.",
+     "position": 5,
+     "options": [
+      {
+       "id": "da76b7f1-f402-59b7-b641-7827ed72b85c",
+       "label": "A",
+       "content": "Chase it round the yard in the midday sun",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8e2ab5ab-48be-5828-bb29-b1a71ad916e7",
+       "label": "B",
+       "content": "Pick it up by the neck",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "018e47bb-f366-5cd1-8411-445d68b2f7b5",
+       "label": "C",
+       "content": "Hold it by one wing",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "02b809ae-d434-5e40-ba87-60b1449a0f19",
+       "label": "D",
+       "content": "Catch it in dim light, and hold it against the body with the wings folded and the legs held",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b4a88a25-e2ef-51e3-98ff-cf3a21e21ab4",
+     "key": "agr-pk-06",
+     "stem": "In a practical examination, specimen X is a piece of woody stem about 25 cm long, with several nodes and buds. It is most likely",
+     "image_url": null,
+     "explanation": "Describe what you see: 'a woody stem piece about 25 cm long with six nodes and buds' earns more marks than just 'cassava'.\n\n**Why the other options are wrong**\n\n- a yam sett: A yam sett is a piece of tuber, not a woody stem with nodes.\n- a plantain sucker: A plantain sucker is a young shoot growing from the corm at the base of the plant.\n- a maize grain: A maize grain is a single seed, not a piece of stem.",
+     "position": 6,
+     "options": [
+      {
+       "id": "b9c2fc75-478c-5465-ab15-95d8b4c2a402",
+       "label": "A",
+       "content": "a cassava cutting",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "639c596c-4018-5533-8d4c-9ee72d9ecbe3",
+       "label": "B",
+       "content": "a yam sett",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1588bce9-f403-5cde-b0c4-360b0cee71ff",
+       "label": "C",
+       "content": "a plantain sucker",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "44954f52-a5b5-5398-bb4e-a67be33c4689",
+       "label": "D",
+       "content": "a maize grain",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0aa1735d-48c4-570c-b51f-c7fbbbd58de0",
+     "key": "agr-pk-07",
+     "stem": "Pigs are best guided from one pen to another using",
+     "image_url": null,
+     "explanation": "A pig board is a flat board held beside the pig's head to block its view and steer it. A snout rope is used to restrain a pig.\n\n**Why the other options are wrong**\n\n- a halter tied to the horns: Pigs have no horns; halters are used for cattle.\n- a sweep net: A sweep net is for catching insects.\n- a rope tied around the tail: Pulling by the tail injures the pig.",
+     "position": 7,
+     "options": [
+      {
+       "id": "21d62141-e625-558c-ae61-33bb28b4fbf8",
+       "label": "A",
+       "content": "a halter tied to the horns",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "21730485-147a-511b-9e36-b4390239e7fa",
+       "label": "B",
+       "content": "a pig board",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "962cdc7d-99ad-56f4-b377-5515ca67d725",
+       "label": "C",
+       "content": "a sweep net",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bd24db4c-59d9-582e-8280-7f55566ca303",
+       "label": "D",
+       "content": "a rope tied around the tail",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "432918f0f24d"
+}

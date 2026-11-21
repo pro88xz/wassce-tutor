@@ -375,6 +375,7 @@ SETS += [
         (2, "Agricultural Science: set 2 (crop production, propagation, cereals, legumes, roots, cash crops, vegetables and fruit)"),
         (3, "Agricultural Science: set 3 (weeds, pests and diseases, crop improvement, processing and storage, forestry)"),
         (4, "Agricultural Science: set 4 (farm animals: anatomy, nutrition, breeding, health, livestock, poultry, fish, bees and products)"),
+        (5, "Agricultural Science: set 5 (economics, farm management, marketing, credit, extension and practical skills)"),
     )
 ]
 

@@ -858,6 +858,21 @@
   "questions": 66
  },
  {
+  "name": "agricultural_science_set5_p1",
+  "label": "Agricultural Science: set 5 (economics, farm management, marketing, credit, extension and practical skills)",
+  "subject_slug": "agricultural-science",
+  "version": "432918f0f24d",
+  "papers": [
+   "e7648965-50db-553f-ac26-a26148ef3682",
+   "8a564999-d2ee-58eb-99e5-fbfae6d0b0a5",
+   "2750b55c-f48c-5244-9d4f-275901115dc8",
+   "8271acc8-b6bb-5eaf-9b14-8abf49e79d01",
+   "e6af8b57-e0d9-5bac-8414-b6a588fafacc",
+   "d34dfc47-ccde-5a55-8cbf-e0ef7d21f27f"
+  ],
+  "questions": 42
+ },
+ {
   "name": "maths_mock_p1",
   "label": "Mathematics: timed mock exam, Paper 1",
   "subject_slug": "mathematics",
