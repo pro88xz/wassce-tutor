@@ -1,0 +1,1940 @@
+{
+ "name": "biology_set4_p1",
+ "label": "Biology: set 4 (senses, nerves, hormones, reproduction and growth)",
+ "subject_slug": "biology",
+ "papers": [
+  {
+   "id": "2c73f169-634d-5eab-900d-571d3af958eb",
+   "topic": "Sense Organs",
+   "title": "Sense Organs: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on sense organs, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 160,
+   "questions": [
+    {
+     "id": "bbf24707-edab-5a16-9337-df9de0b22c22",
+     "key": "bio-so-01",
+     "stem": "The cells in the retina that are sensitive to dim light but do not detect colour are the",
+     "image_url": null,
+     "explanation": "Rods are very sensitive and let us see in dim light, but only in shades of grey. Cones need brighter light and give colour vision and fine detail.\n\n**Why the other options are wrong**\n\n- cones: Cones work in bright light and are responsible for colour vision.\n- cells of the iris: The iris is the coloured ring of muscle that controls the size of the pupil; it does not detect light.\n- cells of the choroid: The choroid is a dark layer that absorbs stray light and supplies the retina with blood; it does not detect light.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e9fa1aa0-be70-5178-b337-8bdef1a76590",
+       "label": "A",
+       "content": "rods",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8978d7dd-a5f5-516e-a26c-e30d6a2e94d4",
+       "label": "B",
+       "content": "cones",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "356a4b64-52cc-5dec-84ac-4dcc4913419c",
+       "label": "C",
+       "content": "cells of the iris",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "89335d5d-b611-5e79-b435-0d752873f3a9",
+       "label": "D",
+       "content": "cells of the choroid",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "450918a8-fd2e-5d7e-9f30-f5cfa5f61462",
+     "key": "bio-so-02",
+     "stem": "A pupil walks out of a dark classroom into bright sunlight. What happens to the pupils of the eyes?",
+     "image_url": null,
+     "explanation": "This is the pupil reflex. In bright light the circular muscles contract and the radial muscles relax, so the pupil narrows; in dim light the reverse happens.\n\n**Why the other options are wrong**\n\n- They become smaller, as the radial muscles of the iris contract: When the radial muscles contract, they pull the pupil wider, not smaller.\n- They become larger, as the circular muscles of the iris contract: Contracting the circular muscles closes the pupil down; it does not widen it.\n- They become larger, to let in more light: In bright light the pupil narrows, to protect the retina from too much light.",
+     "position": 2,
+     "options": [
+      {
+       "id": "7094382c-97c8-5677-9e39-8546f2a2c317",
+       "label": "A",
+       "content": "They become smaller, as the radial muscles of the iris contract",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ddcaf326-a536-5843-a555-8b1eef2a3912",
+       "label": "B",
+       "content": "They become smaller, as the circular muscles of the iris contract",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "33c7b747-de4a-5f31-8d1b-f94b02f78cfa",
+       "label": "C",
+       "content": "They become larger, as the circular muscles of the iris contract",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8f2cb60b-d543-5089-b18e-f6e0bcfc3a7d",
+       "label": "D",
+       "content": "They become larger, to let in more light",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f7a8385c-fd60-59f5-923a-1e1e9481cf85",
+     "key": "bio-so-03",
+     "stem": "When the eye focuses on a near object,",
+     "image_url": null,
+     "explanation": "This change of lens shape is called accommodation. A thicker, more rounded lens bends light more, which is needed to focus the spreading rays from a near object.\n\n**Why the other options are wrong**\n\n- the ciliary muscles relax, the suspensory ligaments tighten and the lens becomes thinner: This is how the eye focuses on a distant object.\n- the ciliary muscles contract, the suspensory ligaments tighten and the lens becomes thinner: When the ciliary muscles contract, the pull on the ligaments is reduced, so they slacken.\n- the ciliary muscles relax, the suspensory ligaments slacken and the lens becomes thicker: Relaxed ciliary muscles let the eyeball pull the ligaments tight, which makes the lens thinner.",
+     "position": 3,
+     "options": [
+      {
+       "id": "9cb83ee9-5e27-5005-811d-5a15e6caa16c",
+       "label": "A",
+       "content": "the ciliary muscles relax, the suspensory ligaments tighten and the lens becomes thinner",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c614d521-f741-5778-ad6e-f7f2ac440dd4",
+       "label": "B",
+       "content": "the ciliary muscles contract, the suspensory ligaments tighten and the lens becomes thinner",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6d3ecba5-d36f-526b-96c7-cc1370712314",
+       "label": "C",
+       "content": "the ciliary muscles relax, the suspensory ligaments slacken and the lens becomes thicker",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2c82c01a-0b2f-50bb-8f29-bea5a26ad6b8",
+       "label": "D",
+       "content": "the ciliary muscles contract, the suspensory ligaments slacken and the lens becomes thicker",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c58217e3-49b6-5174-8f8b-ee11ed32e29a",
+     "key": "bio-so-04",
+     "stem": "A short-sighted (myopic) student cannot see the board clearly. In this student's eye, the image of a distant object forms",
+     "image_url": null,
+     "explanation": "In short sight the eyeball is too long or the lens too strong. A concave (diverging) lens spreads the rays a little, so the image moves back onto the retina.\n\n**Why the other options are wrong**\n\n- behind the retina, and the defect is corrected with a convex lens: This describes long sight (hypermetropia).\n- in front of the retina, and the defect is corrected with a convex lens: A convex lens would bend the light even more and bring the image further in front of the retina.\n- behind the retina, and the defect is corrected with a concave lens: In short sight the image falls in front of the retina, not behind it.",
+     "position": 4,
+     "options": [
+      {
+       "id": "78f7377b-9c5a-50ff-a530-596875debe0f",
+       "label": "A",
+       "content": "in front of the retina, and the defect is corrected with a concave lens",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8d4ee95e-8b2d-58b3-a26b-6c83e1c720cc",
+       "label": "B",
+       "content": "behind the retina, and the defect is corrected with a convex lens",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d5658cc5-443c-5b6f-8061-94d212d5b9ea",
+       "label": "C",
+       "content": "in front of the retina, and the defect is corrected with a convex lens",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8fc9ed89-834d-5ade-a443-e5939a57e139",
+       "label": "D",
+       "content": "behind the retina, and the defect is corrected with a concave lens",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7a86d3ef-7217-507e-a670-e42ee1432c91",
+     "key": "bio-so-05",
+     "stem": "Which part of the ear detects movements of the head and helps the body keep its balance?",
+     "image_url": null,
+     "explanation": "The three semicircular canals lie at right angles to each other. When the head moves, the fluid inside them moves and stimulates sensory cells, which send impulses to the cerebellum.\n\n**Why the other options are wrong**\n\n- Cochlea: The cochlea contains the receptors for hearing.\n- Ossicles: The ossicles (hammer, anvil and stirrup) carry vibrations from the eardrum to the inner ear.\n- Eustachian tube: The Eustachian tube keeps the air pressure equal on both sides of the eardrum.",
+     "position": 5,
+     "options": [
+      {
+       "id": "cfcdc9c6-6d0f-5c5a-b1a7-73ee1e81f17b",
+       "label": "A",
+       "content": "Cochlea",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6d3ee782-234c-5f8c-9c7a-57707a9cf0ed",
+       "label": "B",
+       "content": "Semicircular canals",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "52c578ba-0db1-5772-9d85-2daf10b2aa01",
+       "label": "C",
+       "content": "Ossicles",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "77a7c57d-bb0c-5884-8845-50dd03f85ceb",
+       "label": "D",
+       "content": "Eustachian tube",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f87ea0e7-24a1-5f5b-8b1d-0fa1cf9fe7c8",
+     "key": "bio-so-06",
+     "stem": "The Eustachian tube, which links the middle ear to the throat,",
+     "image_url": null,
+     "explanation": "Swallowing or yawning opens the Eustachian tube, which is why the ears 'pop' when pressure changes, for example in an aeroplane or a fast lift.\n\n**Why the other options are wrong**\n\n- carries sound vibrations to the inner ear: Vibrations are carried by the three ossicles.\n- contains the receptors for hearing: The receptors for hearing are in the cochlea.\n- carries nerve impulses from the ear to the brain: Impulses travel to the brain along the auditory nerve.",
+     "position": 6,
+     "options": [
+      {
+       "id": "a31a1894-1854-5752-816f-dffbb40d9f03",
+       "label": "A",
+       "content": "carries sound vibrations to the inner ear",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6fd1b1f6-43ab-5988-9095-0ed30ca132c0",
+       "label": "B",
+       "content": "contains the receptors for hearing",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7df1b4bc-eb78-506b-a198-a034d912b4d6",
+       "label": "C",
+       "content": "keeps the air pressure equal on both sides of the eardrum",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b654ef3f-5114-5ac0-8294-73fd28604266",
+       "label": "D",
+       "content": "carries nerve impulses from the ear to the brain",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "003fbffc-1aa5-5b55-a618-1bd269f6fa4f",
+     "key": "bio-so-07",
+     "stem": "There is a blind spot in the retina because at that point",
+     "image_url": null,
+     "explanation": "Without rods or cones, an image falling on the blind spot cannot be detected. The fovea, by contrast, is packed with cones.\n\n**Why the other options are wrong**\n\n- the lens cannot focus light onto it: Light can be focused there; there are simply no receptor cells to detect it.\n- the choroid is too thick for light to pass: The choroid lies behind the retina, so it does not block light from reaching it.\n- there are only cones, which need bright light: The area with the most cones is the fovea (yellow spot), the point of sharpest vision.",
+     "position": 7,
+     "options": [
+      {
+       "id": "773583df-f8c7-5a83-b5eb-0f95737e4b7b",
+       "label": "A",
+       "content": "the lens cannot focus light onto it",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "75f26d85-e675-5632-a7f8-7d2fd22b4155",
+       "label": "B",
+       "content": "the choroid is too thick for light to pass",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ec6642ab-d8c5-5ecf-892e-e469a13f94ad",
+       "label": "C",
+       "content": "there are only cones, which need bright light",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "95c542d4-ae78-5169-b8b3-c2191cebe3d1",
+       "label": "D",
+       "content": "there are no rods or cones, as the optic nerve leaves the eye there",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7350e23b-879a-5309-99e5-fddebd9e2712",
+   "topic": "The Nervous System",
+   "title": "The Nervous System: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on the nervous system, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 161,
+   "questions": [
+    {
+     "id": "d3fefd4c-045a-5406-bfc7-a5d2bc762ebf",
+     "key": "bio-ns-01",
+     "stem": "Which sequence shows the correct path of a nerve impulse in a reflex arc?",
+     "image_url": null,
+     "explanation": "In a reflex such as pulling the hand away from a hot pot, the impulse goes from the receptor in the skin through the spinal cord to the muscle, without waiting for the brain to decide.\n\n**Why the other options are wrong**\n\n- Receptor → motor neurone → relay neurone → sensory neurone → effector: The sensory neurone carries impulses from the receptor, so it comes first; the motor neurone carries them to the effector.\n- Effector → sensory neurone → relay neurone → motor neurone → receptor: The receptor detects the stimulus at the start, and the effector responds at the end.\n- Receptor → relay neurone → sensory neurone → motor neurone → effector: The relay neurone in the spinal cord sits between the sensory and the motor neurone.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f2b733c8-d599-5725-96d6-c0a29c166e2c",
+       "label": "A",
+       "content": "Receptor → sensory neurone → relay neurone → motor neurone → effector",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a35c66b4-261b-5eef-94d5-16eb8d03f69b",
+       "label": "B",
+       "content": "Receptor → motor neurone → relay neurone → sensory neurone → effector",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1db71a20-865f-5473-bdcf-198cf937f872",
+       "label": "C",
+       "content": "Effector → sensory neurone → relay neurone → motor neurone → receptor",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a3c134cd-6833-51f7-9b37-3d481e567625",
+       "label": "D",
+       "content": "Receptor → relay neurone → sensory neurone → motor neurone → effector",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "523dedcc-51ff-5237-b2b6-31edf9e06077",
+     "key": "bio-ns-02",
+     "stem": "Which part of the brain coordinates muscular movements and maintains balance?",
+     "image_url": null,
+     "explanation": "The cerebellum smooths and coordinates movements and uses messages from the semicircular canals to keep balance. Damage to it makes movement clumsy.\n\n**Why the other options are wrong**\n\n- Cerebrum: The cerebrum controls thinking, memory, the senses and voluntary actions.\n- Medulla oblongata: The medulla controls automatic actions such as breathing and heartbeat.\n- Hypothalamus: The hypothalamus controls body temperature, thirst and hunger, and links the nervous system to the pituitary.",
+     "position": 2,
+     "options": [
+      {
+       "id": "5a520cc7-ad3e-5980-abce-34cb55067980",
+       "label": "A",
+       "content": "Cerebrum",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ac6ba785-19e2-5b5b-bb8f-9f2a0178f0d5",
+       "label": "B",
+       "content": "Cerebellum",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "61fabd0b-a27d-5d39-9f16-0287e0c9d84f",
+       "label": "C",
+       "content": "Medulla oblongata",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "37482fd9-ac1b-5197-b7ad-a23e33077643",
+       "label": "D",
+       "content": "Hypothalamus",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cfa2a730-93eb-5cb3-96ec-e2a42f5e48ce",
+     "key": "bio-ns-03",
+     "stem": "Damage to the medulla oblongata is often fatal because the medulla controls",
+     "image_url": null,
+     "explanation": "The medulla oblongata, at the base of the brain, controls automatic (involuntary) actions that keep us alive, such as the rate of breathing, the heartbeat and blood pressure.\n\n**Why the other options are wrong**\n\n- memory and reasoning: Memory and reasoning are functions of the cerebrum.\n- balance and posture: Balance is controlled by the cerebellum.\n- hearing and sight: The senses are interpreted in the cerebrum.",
+     "position": 3,
+     "options": [
+      {
+       "id": "628784dd-adc2-503c-82d5-7d19f7cfd8e4",
+       "label": "A",
+       "content": "memory and reasoning",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6c89428a-8652-5e5e-bc24-33daabd99eb2",
+       "label": "B",
+       "content": "balance and posture",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4bc98526-dd63-5266-820d-7f803d228020",
+       "label": "C",
+       "content": "breathing and heartbeat",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ffcf1d40-ef44-5b67-84c5-3b89ecbef672",
+       "label": "D",
+       "content": "hearing and sight",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "04146171-7ba9-5362-b369-e0f9c5343cec",
+     "key": "bio-ns-04",
+     "stem": "A nerve impulse crosses a synapse, the gap between two neurones, by",
+     "image_url": null,
+     "explanation": "The impulse makes the end of one neurone release a transmitter, which diffuses across and starts an impulse in the next neurone. Because only one side releases it, impulses cross in one direction only.\n\n**Why the other options are wrong**\n\n- an electric spark that jumps across the gap: The impulse travels electrically along a neurone, but it crosses the synapse as a chemical.\n- the two neurones touching each other: The neurones do not touch; there is a tiny gap between them.\n- the blood carrying the impulse across: Blood does not carry nerve impulses; that would be far too slow.",
+     "position": 4,
+     "options": [
+      {
+       "id": "85a9b101-419e-56cd-842c-e3ec4e7f63a3",
+       "label": "A",
+       "content": "an electric spark that jumps across the gap",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fe0b168e-aa00-539b-9b45-c5585cc39b21",
+       "label": "B",
+       "content": "the two neurones touching each other",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9faef274-3039-5985-88e6-184282951c0c",
+       "label": "C",
+       "content": "the blood carrying the impulse across",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fd5c7306-5880-59d0-b8fb-586514f3f524",
+       "label": "D",
+       "content": "the release of a chemical transmitter that diffuses across the gap",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0b7ab482-fb12-57bd-bb1b-331a8d1be104",
+     "key": "bio-ns-05",
+     "stem": "Which of the following is a reflex action?",
+     "image_url": null,
+     "explanation": "A reflex is a rapid, automatic response to a stimulus, made without thinking. Blinking protects the eye before the brain is even aware of the danger.\n\n**Why the other options are wrong**\n\n- Writing a letter: Writing is a voluntary action, decided on and controlled by the cerebrum.\n- Kicking a football: Kicking a ball is a voluntary action that the player decides to make.\n- Answering a question in class: Answering involves thinking, so it is a voluntary action.",
+     "position": 5,
+     "options": [
+      {
+       "id": "7baca8cd-ed2c-52fe-a4e5-a9885b2faf33",
+       "label": "A",
+       "content": "Blinking when dust blows towards the eye",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d0238a1c-6843-530f-8199-3c96def3cc36",
+       "label": "B",
+       "content": "Writing a letter",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fa106e5e-a887-5986-81c3-64a100905d0e",
+       "label": "C",
+       "content": "Kicking a football",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "89ba5953-ff08-5e9b-b340-740fceb5bc30",
+       "label": "D",
+       "content": "Answering a question in class",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a7f86e2a-ba4a-582f-ab10-9e6b8c530305",
+     "key": "bio-ns-06",
+     "stem": "The myelin sheath that surrounds many nerve fibres",
+     "image_url": null,
+     "explanation": "Myelin is a fatty layer. It insulates the fibre, and the impulse jumps from one gap in the sheath to the next, so it travels much faster than in a fibre without myelin.\n\n**Why the other options are wrong**\n\n- releases the transmitter chemical at the synapse: The transmitter is released from the endings of the neurone, not by the myelin.\n- receives impulses from other neurones: Impulses are received by the dendrites and the cell body.\n- contains the nucleus of the neurone: The nucleus is in the cell body.",
+     "position": 6,
+     "options": [
+      {
+       "id": "26b6a28b-a50c-57c8-b263-b7c6ec9d6902",
+       "label": "A",
+       "content": "releases the transmitter chemical at the synapse",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ef2c8cf2-f885-502e-a089-38e4d8f13d7e",
+       "label": "B",
+       "content": "insulates the fibre and speeds up the nerve impulse",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "920a3980-5082-5c5a-bed5-3c053e186eec",
+       "label": "C",
+       "content": "receives impulses from other neurones",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "04f60264-759c-577e-a761-de9fc8b75a2a",
+       "label": "D",
+       "content": "contains the nucleus of the neurone",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3b79c06d-230d-583e-a42b-8f78fcafb55b",
+     "key": "bio-ns-07",
+     "stem": "A motor neurone carries impulses from",
+     "image_url": null,
+     "explanation": "Effectors are muscles, which contract, and glands, which secrete. Motor neurones have their cell body in the brain or spinal cord and a long axon running to the effector.\n\n**Why the other options are wrong**\n\n- a receptor to the central nervous system: This is the job of a sensory neurone.\n- a sensory neurone to a motor neurone: This is the job of a relay neurone, inside the central nervous system.\n- an effector to the central nervous system: Impulses travel to effectors, such as muscles and glands, not from them.",
+     "position": 7,
+     "options": [
+      {
+       "id": "4389cc75-9432-56e0-b90c-bf547b9313ee",
+       "label": "A",
+       "content": "a receptor to the central nervous system",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "53bbe793-9a2c-5b81-b3fb-77f438743405",
+       "label": "B",
+       "content": "a sensory neurone to a motor neurone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2b51b0ef-69f3-58f1-bdea-9804eee60713",
+       "label": "C",
+       "content": "the central nervous system to an effector",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f56cefab-5f05-5ff7-ad93-ff753622dc57",
+       "label": "D",
+       "content": "an effector to the central nervous system",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eb06ebb1-1b6b-5910-ba9b-009d5b26b4c5",
+   "topic": "The Endocrine System",
+   "title": "The Endocrine System: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on the endocrine system, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 162,
+   "questions": [
+    {
+     "id": "ebe4b97b-e844-5cc4-98af-4a8500873866",
+     "key": "bio-en-01",
+     "stem": "After a meal rich in carbohydrate, the level of glucose in the blood rises. The pancreas responds by releasing",
+     "image_url": null,
+     "explanation": "Insulin lowers blood glucose: the liver and muscles take up glucose and store it as glycogen. When glucose falls, glucagon raises it again. This is negative feedback.\n\n**Why the other options are wrong**\n\n- glucagon, which makes the liver change glucose into glycogen: Glucagon does the opposite: it makes the liver change glycogen into glucose when blood glucose is low.\n- insulin, which makes the liver change glycogen into glucose: Changing glycogen into glucose would raise blood glucose even further; that is the effect of glucagon.\n- adrenaline, which makes the muscles store glucose: Adrenaline is made by the adrenal glands, not the pancreas, and it raises blood glucose.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7836cc5f-45e5-5315-a69a-444384c0f615",
+       "label": "A",
+       "content": "glucagon, which makes the liver change glucose into glycogen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a7c90945-a25e-5eed-8874-74eec8f5e50c",
+       "label": "B",
+       "content": "insulin, which makes the liver change glycogen into glucose",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "42da72b7-3ebf-54fa-aaa0-e39e8805a058",
+       "label": "C",
+       "content": "adrenaline, which makes the muscles store glucose",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "21451d2a-ad7f-59dc-8256-d73fa63e26d1",
+       "label": "D",
+       "content": "insulin, which makes the liver change glucose into glycogen",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f7f380ca-8c29-571d-95af-dee9cfa2c900",
+     "key": "bio-en-02",
+     "stem": "A shortage of iodine in the diet can cause goitre, a swelling of the",
+     "image_url": null,
+     "explanation": "Thyroxine controls the rate of metabolism and contains iodine. Iodised salt and seafood help to prevent goitre.\n\n**Why the other options are wrong**\n\n- pituitary gland, which needs iodine to make growth hormone: Growth hormone does not contain iodine, and goitre is a swelling in the neck, where the thyroid is.\n- adrenal gland, which needs iodine to make adrenaline: Adrenaline does not contain iodine; the adrenal glands sit on the kidneys.\n- pancreas, which needs iodine to make insulin: Insulin does not contain iodine.",
+     "position": 2,
+     "options": [
+      {
+       "id": "ac485604-ef1d-5b37-9879-9f56f2cc79ce",
+       "label": "A",
+       "content": "thyroid gland, which needs iodine to make thyroxine",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9d3ca1d7-2c73-523b-a38b-d7b181bf655b",
+       "label": "B",
+       "content": "pituitary gland, which needs iodine to make growth hormone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "df5afd99-80e9-540a-a2be-9752beed4d43",
+       "label": "C",
+       "content": "adrenal gland, which needs iodine to make adrenaline",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9ab813c9-ea69-5668-8753-831ccc1d994a",
+       "label": "D",
+       "content": "pancreas, which needs iodine to make insulin",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "44f680ff-ac50-58d8-ad1e-48595ddc20d8",
+     "key": "bio-en-03",
+     "stem": "Which hormone prepares the body for 'fight or flight' in a sudden emergency?",
+     "image_url": null,
+     "explanation": "Adrenaline from the adrenal glands makes the heart beat faster, deepens breathing, raises blood glucose and sends more blood to the muscles, so the body can fight or run.\n\n**Why the other options are wrong**\n\n- Insulin: Insulin lowers blood glucose after a meal.\n- Thyroxine: Thyroxine controls the rate of metabolism over a long period, not sudden emergencies.\n- Oestrogen: Oestrogen controls female sexual development and the menstrual cycle.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b22d8cd1-cb1f-5d7a-ac97-bf3f3e7f99de",
+       "label": "A",
+       "content": "Insulin",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "69dddb3e-829e-5497-be7e-92742126cd43",
+       "label": "B",
+       "content": "Adrenaline",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1b2caa74-36c8-580b-b322-7b6265943bf7",
+       "label": "C",
+       "content": "Thyroxine",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "76e41934-68f9-5ad1-97d1-36f7f1ce1f2f",
+       "label": "D",
+       "content": "Oestrogen",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8401a0e9-c0bf-5c78-bccb-f45e01ca4e1f",
+     "key": "bio-en-04",
+     "stem": "The pituitary gland is often called the master gland because it",
+     "image_url": null,
+     "explanation": "Pituitary hormones such as TSH, FSH and LH stimulate the thyroid and the ovaries or testes; it also makes growth hormone and releases ADH.\n\n**Why the other options are wrong**\n\n- is the largest gland in the body: The pituitary is only about the size of a pea.\n- produces every hormone in the body: Many hormones are made by other glands, such as insulin by the pancreas.\n- controls all the actions of the nervous system: The pituitary is itself controlled by the hypothalamus of the brain.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c4b71d9f-6337-5122-aca1-5da5e8542575",
+       "label": "A",
+       "content": "is the largest gland in the body",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4e9b2d79-5f83-5785-8969-1f088b59f604",
+       "label": "B",
+       "content": "produces every hormone in the body",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1a746e0c-2a98-5016-9080-ace6d29b7ae2",
+       "label": "C",
+       "content": "releases hormones that control the activity of other endocrine glands",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6bb11efa-acdb-5c56-b19c-a6ffc0f55ad5",
+       "label": "D",
+       "content": "controls all the actions of the nervous system",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7cf37ede-5508-54d2-ae26-86f20d22c617",
+     "key": "bio-en-05",
+     "stem": "Endocrine glands differ from exocrine glands, such as the salivary glands, because endocrine glands",
+     "image_url": null,
+     "explanation": "Endocrine glands are ductless: their hormones enter the blood flowing through them and are carried to target organs anywhere in the body. The pancreas is both: an exocrine gland (enzymes) and an endocrine gland (insulin).\n\n**Why the other options are wrong**\n\n- pass their secretions through ducts into the gut: That describes exocrine glands, such as the salivary glands.\n- produce enzymes rather than hormones: Endocrine glands produce hormones; enzymes come mainly from exocrine glands.\n- affect only the organs right next to them: Hormones travel in the blood and can act on organs far from the gland.",
+     "position": 5,
+     "options": [
+      {
+       "id": "3297c203-a340-5d62-9bc9-946e988a2655",
+       "label": "A",
+       "content": "pass their secretions through ducts into the gut",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d442ec99-70fc-58a5-b85a-4ff765a791eb",
+       "label": "B",
+       "content": "produce enzymes rather than hormones",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b4b20b53-bed4-53dd-a561-e2c576584a56",
+       "label": "C",
+       "content": "affect only the organs right next to them",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8fa74c62-169a-5c98-82b3-9879d61fc58c",
+       "label": "D",
+       "content": "have no ducts and release their secretions directly into the blood",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9fbd5360-b6ab-58b8-94c9-b2eff5d37a96",
+     "key": "bio-en-06",
+     "stem": "Compared with hormonal control, control by the nervous system is",
+     "image_url": null,
+     "explanation": "Nervous control: electrical impulses along neurones, very fast, short-lived, precise. Hormonal control: chemicals in the blood, slower, longer-lasting, often widespread.\n\n**Why the other options are wrong**\n\n- slower, with effects that last a long time: Slower, longer-lasting effects are typical of hormones.\n- faster, with effects that last a long time and spread through the body: Nervous responses are quick but brief, and they reach one muscle or gland precisely.\n- slower, with effects on one precise place: Nerve impulses travel very fast, much faster than hormones carried in the blood.",
+     "position": 6,
+     "options": [
+      {
+       "id": "9bdb6c1b-a5fc-5a2b-ac69-f96b34a3f1f2",
+       "label": "A",
+       "content": "faster, with effects that are short-lived and act on a precise place",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "baa1e87e-d707-5698-bd88-b44038d3a1f3",
+       "label": "B",
+       "content": "slower, with effects that last a long time",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "aeb9b87c-a9c2-56dd-b51b-6b6d5f8daf2c",
+       "label": "C",
+       "content": "faster, with effects that last a long time and spread through the body",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2b32e2f8-5635-53b5-9bc1-6e3102d1d293",
+       "label": "D",
+       "content": "slower, with effects on one precise place",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dbe919f2-30e8-5b6e-bef5-8d65577a9f55",
+     "key": "bio-en-07",
+     "stem": "In diabetes mellitus (type 1), the body",
+     "image_url": null,
+     "explanation": "Without enough insulin, glucose is not taken up and stored, so it stays high in the blood. The kidneys cannot reabsorb it all, and it spills into the urine. Treatment is insulin injections and a controlled diet.\n\n**Why the other options are wrong**\n\n- makes too much insulin, so blood glucose falls very low: Diabetes mellitus is a shortage of insulin, not an excess.\n- makes too little ADH, so a large volume of dilute urine is produced: A shortage of ADH causes a different condition, diabetes insipidus.\n- makes too much thyroxine, so the rate of metabolism rises: Too much thyroxine is an overactive thyroid, not diabetes.",
+     "position": 7,
+     "options": [
+      {
+       "id": "4d1d7009-93b6-5259-97be-8ac875d61f17",
+       "label": "A",
+       "content": "makes too much insulin, so blood glucose falls very low",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "af58bdc4-f02d-584c-a644-73b22b771a15",
+       "label": "B",
+       "content": "makes too little insulin, so blood glucose stays high and glucose appears in the urine",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "460564dd-002e-54b0-ba04-3a7c72c99e31",
+       "label": "C",
+       "content": "makes too little ADH, so a large volume of dilute urine is produced",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "64e6a3c4-e9b1-5535-b43c-437fd1676ce2",
+       "label": "D",
+       "content": "makes too much thyroxine, so the rate of metabolism rises",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2cdb479e-f1db-521e-9c99-5f567bcb39f1",
+   "topic": "Reproduction in Plants",
+   "title": "Reproduction in Plants: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on reproduction in plants, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 163,
+   "questions": [
+    {
+     "id": "2545e2d9-f351-5543-bebf-6e8f323068ea",
+     "key": "bio-rp-01",
+     "stem": "Which feature is typical of an insect-pollinated flower?",
+     "image_url": null,
+     "explanation": "Insect-pollinated flowers attract insects with colour, scent and nectar. Their pollen is sticky or spiky so it clings to the insect, and their stigmas are inside the flower.\n\n**Why the other options are wrong**\n\n- Long, feathery stigmas hanging outside the flower: Feathery stigmas that catch pollen from the air are a feature of wind-pollinated flowers.\n- Large amounts of light, smooth, dry pollen: Light, smooth pollen made in huge amounts is carried by the wind.\n- Anthers on long filaments that dangle in the wind: Dangling anthers shake pollen into the wind.",
+     "position": 1,
+     "options": [
+      {
+       "id": "ae9c9e19-4e87-5e67-a5e6-cc8c46eb1562",
+       "label": "A",
+       "content": "Long, feathery stigmas hanging outside the flower",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "02bff61a-61a2-5724-a8ba-dc147e18d3fe",
+       "label": "B",
+       "content": "Large amounts of light, smooth, dry pollen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3e214a9d-7d7a-51f5-b003-f4769faf90d5",
+       "label": "C",
+       "content": "Large, brightly coloured petals, with scent and nectar",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ba3ecc2f-2784-52ce-94cf-33ebfbb03d7a",
+       "label": "D",
+       "content": "Anthers on long filaments that dangle in the wind",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d5976c04-3189-517e-a003-0dcb339be6b9",
+     "key": "bio-rp-02",
+     "stem": "Pollination is",
+     "image_url": null,
+     "explanation": "Pollination comes first, then the pollen tube grows, then fertilisation takes place in the ovule. Examiners often test the difference between pollination and fertilisation.\n\n**Why the other options are wrong**\n\n- the fusion of a male nucleus with an egg cell: This is fertilisation, which happens later, inside the ovule.\n- the growth of a pollen tube down the style: The pollen tube grows after pollination, to carry the male nuclei to the ovule.\n- the scattering of seeds away from the parent plant: This is dispersal, after the fruit has formed.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f27bd4f8-381f-560c-aa48-ad44b90a36a6",
+       "label": "A",
+       "content": "the fusion of a male nucleus with an egg cell",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2e2ebfaa-c600-5cab-b94c-c0c9ea0baae9",
+       "label": "B",
+       "content": "the growth of a pollen tube down the style",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8208f72c-13aa-5892-9382-26cfa789c8e6",
+       "label": "C",
+       "content": "the scattering of seeds away from the parent plant",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "37f6a7d6-15ac-5329-8495-2a2858a18658",
+       "label": "D",
+       "content": "the transfer of pollen grains from an anther to a stigma",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6ffaa4a6-24e0-51ec-ba27-19f7152defbf",
+     "key": "bio-rp-03",
+     "stem": "After fertilisation in a flowering plant,",
+     "image_url": null,
+     "explanation": "The fertilised egg becomes the embryo, the ovule becomes the seed (its integuments become the seed coat) and the ovary wall becomes the fruit wall (pericarp).\n\n**Why the other options are wrong**\n\n- the ovule becomes the fruit and the ovary becomes the seed: This is the wrong way round: the seed forms inside the fruit.\n- the ovule becomes the seed and the petals become the fruit: The petals usually wither and fall off after fertilisation.\n- the stigma becomes the fruit and the style becomes the seed: The stigma and style usually wither after fertilisation.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2d89b622-a77d-55b7-8701-b3b16d2e7b64",
+       "label": "A",
+       "content": "the ovule becomes the seed and the ovary becomes the fruit",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "547bade3-e5d6-53e2-adb2-bce702b8f1a2",
+       "label": "B",
+       "content": "the ovule becomes the fruit and the ovary becomes the seed",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9c1c9b3f-0178-5bd8-bf57-e4809aefdb11",
+       "label": "C",
+       "content": "the ovule becomes the seed and the petals become the fruit",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d4bf9066-ef6f-5609-aa17-4c39bad85bc0",
+       "label": "D",
+       "content": "the stigma becomes the fruit and the style becomes the seed",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8dcb0c9c-507b-5ad0-9fb4-4f0dfd255349",
+     "key": "bio-rp-04",
+     "stem": "The fruit of *Tridax* has a light parachute of feathery hairs. It is dispersed by",
+     "image_url": null,
+     "explanation": "Light fruits with hairs or wings, like those of *Tridax* or the winged seeds of the African tulip tree, are carried far by wind, which reduces competition with the parent.\n\n**Why the other options are wrong**\n\n- animals: Fruits dispersed by animals are usually fleshy and edible, or have hooks that catch on fur.\n- water: Fruits dispersed by water, such as the coconut, have a fibrous, air-filled layer that floats.\n- explosive splitting of the fruit: Fruits that split explosively, such as the pods of balsam and some beans, throw their seeds out.",
+     "position": 4,
+     "options": [
+      {
+       "id": "6fe57359-aa09-5d45-a816-d58219eb7b84",
+       "label": "A",
+       "content": "animals",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "126d42a5-2991-55fd-8789-9989883424de",
+       "label": "B",
+       "content": "wind",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c5493744-94e9-5b18-9ced-99dca649485a",
+       "label": "C",
+       "content": "water",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ae25741e-aa21-58cc-9207-663b2cbcb185",
+       "label": "D",
+       "content": "explosive splitting of the fruit",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a7c5343c-b9e5-5119-903f-f6ddc04a021b",
+     "key": "bio-rp-05",
+     "stem": "Which crop is commonly propagated by stem cuttings in West Africa?",
+     "image_url": null,
+     "explanation": "Cassava stems are cut into pieces with several nodes and planted; each grows roots and shoots. Like all vegetative propagation, the new plants are identical to the parent.\n\n**Why the other options are wrong**\n\n- Yam: Yam is propagated by tubers or pieces of tuber (setts).\n- Pineapple: Pineapple is propagated by suckers, slips and crowns.\n- Banana: Banana is propagated by suckers that grow from the base of the parent.",
+     "position": 5,
+     "options": [
+      {
+       "id": "9aed95b3-9baa-5324-bd88-aa28ff5da1f8",
+       "label": "A",
+       "content": "Yam",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b7de80d6-38bf-5cf2-846a-2bd64a9aaf35",
+       "label": "B",
+       "content": "Pineapple",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6a29c702-e270-5e8e-8c9c-87e1a5d1611d",
+       "label": "C",
+       "content": "Cassava",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f0319687-c07f-5304-8f80-2a01aeb0cdf4",
+       "label": "D",
+       "content": "Banana",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "36311945-8baf-5826-a037-3cb7945d9dd2",
+     "key": "bio-rp-06",
+     "stem": "An advantage of cross-pollination over self-pollination is that cross-pollination",
+     "image_url": null,
+     "explanation": "Cross-pollination combines genes from two plants. The variety among the offspring helps a species survive changes such as new diseases or drought.\n\n**Why the other options are wrong**\n\n- does not need an agent such as wind or insects: Cross-pollination always needs an agent to carry pollen to another plant.\n- ensures that a flower is pollinated even when there are no other plants nearby: That is an advantage of self-pollination.\n- produces offspring that are identical to the parent: Mixing genes from two parents produces offspring that differ from both.",
+     "position": 6,
+     "options": [
+      {
+       "id": "e0454607-afd7-5d6a-9895-6f35699d715c",
+       "label": "A",
+       "content": "does not need an agent such as wind or insects",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3e709cf1-f0d4-5df5-8e90-9466136faeef",
+       "label": "B",
+       "content": "ensures that a flower is pollinated even when there are no other plants nearby",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "28ccfaa7-63fa-5a3b-a413-3b9815a3d0e0",
+       "label": "C",
+       "content": "produces offspring that are identical to the parent",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bc26629e-f24d-56e1-a3a6-6200bb6c967d",
+       "label": "D",
+       "content": "produces offspring with more genetic variation",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "360f949a-f1af-5508-8313-e781d2114e79",
+     "key": "bio-rp-07",
+     "stem": "In double fertilisation in flowering plants, one male nucleus fuses with the egg cell. The other male nucleus fuses with the",
+     "image_url": null,
+     "explanation": "Male nucleus + egg cell = zygote, which becomes the embryo. Male nucleus + two polar nuclei = endosperm nucleus, which becomes the food store, as in maize.\n\n**Why the other options are wrong**\n\n- egg cell as well, forming a second embryo: Only one male nucleus fuses with the egg cell.\n- integuments, forming the seed coat: The integuments become the seed coat without any fusion with a male nucleus.\n- ovary wall, forming the fruit: The ovary wall develops into the fruit wall without fusing with a male nucleus.",
+     "position": 7,
+     "options": [
+      {
+       "id": "8b0e8cea-4c2b-575a-80d9-613e71dd3882",
+       "label": "A",
+       "content": "two polar nuclei, forming the endosperm",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3b0ad026-fa19-5289-b033-328c12260bc2",
+       "label": "B",
+       "content": "egg cell as well, forming a second embryo",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cdef1d9d-eddd-56cd-853c-7e5ae1224d85",
+       "label": "C",
+       "content": "integuments, forming the seed coat",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e735b687-7d53-5e86-a030-cb9143f28bd1",
+       "label": "D",
+       "content": "ovary wall, forming the fruit",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5e3a702f-5db3-59d3-8bcf-9d0829f8ded8",
+   "topic": "Reproduction in Animals",
+   "title": "Reproduction in Animals: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on reproduction in animals, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 164,
+   "questions": [
+    {
+     "id": "9fefd14a-2704-56e6-9362-05bc26211320",
+     "key": "bio-ra-01",
+     "stem": "Frogs and many bony fish, which use external fertilisation, release very large numbers of eggs. This is mainly because",
+     "image_url": null,
+     "explanation": "In open water, sperm and eggs may fail to meet, and eggs and young have no protection. Producing huge numbers makes it likely that a few survive to adulthood.\n\n**Why the other options are wrong**\n\n- each egg needs many sperm to fertilise it: Each egg is fertilised by a single sperm.\n- the eggs are fertilised inside the female's body: In external fertilisation, the eggs are fertilised outside, in the water.\n- the parents take great care of every egg and young: Animals with external fertilisation usually give little or no parental care.",
+     "position": 1,
+     "options": [
+      {
+       "id": "658075a6-da9b-548c-8b7f-e42acd80039c",
+       "label": "A",
+       "content": "each egg needs many sperm to fertilise it",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "793a7b81-928a-59e8-88e5-81eb6b8695d9",
+       "label": "B",
+       "content": "many eggs are never fertilised, and many eggs and young are eaten by predators",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "857fddf6-398d-57c8-8155-ebe6890f1be1",
+       "label": "C",
+       "content": "the eggs are fertilised inside the female's body",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b91b4749-9673-5e1c-8aa7-0d4544cea5ef",
+       "label": "D",
+       "content": "the parents take great care of every egg and young",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5d931170-c96c-56fd-8028-b1d40d862948",
+     "key": "bio-ra-02",
+     "stem": "Which sequence shows the life cycle of a housefly?",
+     "image_url": null,
+     "explanation": "The housefly shows complete metamorphosis: the larva (maggot) feeds on decaying matter, forms a pupa, and the adult develops inside it.\n\n**Why the other options are wrong**\n\n- Egg → nymph → adult: This is incomplete metamorphosis, seen in grasshoppers and cockroaches.\n- Egg → pupa → larva → adult: The larva comes before the pupa: it feeds and grows, then becomes a pupa.\n- Egg → larva → nymph → adult: Houseflies have no nymph stage; a nymph is a young insect that looks like the adult.",
+     "position": 2,
+     "options": [
+      {
+       "id": "18349e57-6c43-581a-8d77-80d338577071",
+       "label": "A",
+       "content": "Egg → nymph → adult",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "77df0bdb-b55c-5ac7-84b0-ac11f428a523",
+       "label": "B",
+       "content": "Egg → pupa → larva → adult",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5b7e5dea-e8d1-5747-aa14-3caddfe250d0",
+       "label": "C",
+       "content": "Egg → larva → pupa → adult",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1cf66fde-1d00-5e06-afab-f23b0616bc63",
+       "label": "D",
+       "content": "Egg → larva → nymph → adult",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9aab8844-709a-57b1-900b-e1243a1e9ed7",
+     "key": "bio-ra-03",
+     "stem": "The young of a grasshopper look like small adults without fully developed wings, and they grow by moulting. This type of development is",
+     "image_url": null,
+     "explanation": "Incomplete metamorphosis: egg → nymph → adult, with no pupa. The nymphs moult several times, getting larger, until the wings and reproductive organs are fully formed.\n\n**Why the other options are wrong**\n\n- complete metamorphosis: Complete metamorphosis has a larva that looks very different from the adult, and a pupa.\n- budding: Budding is asexual reproduction, in which a new individual grows out from the parent, as in *Hydra*.\n- binary fission: Binary fission is asexual reproduction in which one cell divides into two, as in *Amoeba*.",
+     "position": 3,
+     "options": [
+      {
+       "id": "4a9344e9-3a2b-5fbf-8402-c7764574fbe4",
+       "label": "A",
+       "content": "complete metamorphosis",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0b87fe0a-d52b-5606-bed6-8db6f5525f64",
+       "label": "B",
+       "content": "budding",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "da5e512c-c886-5ad1-af95-d1b13e146b7c",
+       "label": "C",
+       "content": "binary fission",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "753de4cf-30c1-51f1-aa86-96de7782f77c",
+       "label": "D",
+       "content": "incomplete metamorphosis",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bbbeba6e-2087-5ab8-bef2-aee6264c4df5",
+     "key": "bio-ra-04",
+     "stem": "During the metamorphosis of a tadpole into a toad,",
+     "image_url": null,
+     "explanation": "A tadpole is a water-living larva with gills and a tail. Legs grow (hind legs first), lungs form, the gills disappear and the tail is absorbed until a young toad leaves the water.\n\n**Why the other options are wrong**\n\n- the lungs are lost and gills develop: It is the other way round: the tadpole breathes with gills, the adult with lungs.\n- the tail grows longer and the legs are absorbed: The legs grow and the tail is absorbed.\n- the tadpole forms a pupa in which the adult develops: Toads have no pupa; a pupa is found in insects such as houseflies.",
+     "position": 4,
+     "options": [
+      {
+       "id": "13de30e0-f767-5a48-9821-16f45eebdc7b",
+       "label": "A",
+       "content": "the gills are lost, lungs develop and the tail is absorbed",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a80196da-a3f6-59e7-8e25-f2a611cd40c6",
+       "label": "B",
+       "content": "the lungs are lost and gills develop",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "25406551-c7d1-5d26-b572-80a27b8bf8e8",
+       "label": "C",
+       "content": "the tail grows longer and the legs are absorbed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8c5ee422-19b3-5908-a3ad-d4bf9b32bdb4",
+       "label": "D",
+       "content": "the tadpole forms a pupa in which the adult develops",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3c26624b-a654-5865-a7e6-cebb874fae58",
+     "key": "bio-ra-05",
+     "stem": "Which of these animals gives the most parental care to its young?",
+     "image_url": null,
+     "explanation": "Mammals feed their young on milk and protect them for a long time, so they produce few young. Animals that give little care produce many eggs.\n\n**Why the other options are wrong**\n\n- A toad, which lays its eggs in water and leaves them: Toads give no care: the eggs and tadpoles look after themselves.\n- A housefly, which lays its eggs on rotting matter: Houseflies lay their eggs on food and leave them.\n- A sea turtle, which buries its eggs in the sand and returns to the sea: Sea turtles leave the eggs; the hatchlings must find their own way to the sea.",
+     "position": 5,
+     "options": [
+      {
+       "id": "480853b3-b632-575f-b790-b9b444d71375",
+       "label": "A",
+       "content": "A toad, which lays its eggs in water and leaves them",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "01627e95-8be4-5e9b-beb8-431e3ff23a72",
+       "label": "B",
+       "content": "A goat, which feeds its young on milk and protects them",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7a398afb-c43b-537e-ac9b-f79c3de40f18",
+       "label": "C",
+       "content": "A housefly, which lays its eggs on rotting matter",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "77e344fe-ec69-5e1a-9dd9-ef669606d08a",
+       "label": "D",
+       "content": "A sea turtle, which buries its eggs in the sand and returns to the sea",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d95453d6-0195-5aaa-8269-c4e8fe75ffea",
+     "key": "bio-ra-06",
+     "stem": "*Hydra* reproduces asexually by",
+     "image_url": null,
+     "explanation": "In budding, a small outgrowth (bud) forms on the side of the parent, grows tentacles and a mouth, and then breaks off as a new *Hydra*, identical to its parent.\n\n**Why the other options are wrong**\n\n- binary fission: Binary fission is seen in single-celled organisms such as *Amoeba* and bacteria.\n- spore formation: Spore formation is seen in fungi such as the bread mould *Rhizopus*.\n- fertilisation: Fertilisation is the fusion of gametes, which is sexual, not asexual.",
+     "position": 6,
+     "options": [
+      {
+       "id": "854350cc-63fc-50d3-844d-2002aae2ffc0",
+       "label": "A",
+       "content": "binary fission",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "76489377-6bb1-5c52-b7ea-c77895d24ada",
+       "label": "B",
+       "content": "spore formation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a07b0361-7368-51a3-a399-51fd905459ae",
+       "label": "C",
+       "content": "budding",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2e6774b6-96a7-5d9d-b6c5-7e16efdbbe43",
+       "label": "D",
+       "content": "fertilisation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "698a9568-c535-5cd5-9433-ebb7665ded83",
+     "key": "bio-ra-07",
+     "stem": "An advantage of internal fertilisation over external fertilisation is that",
+     "image_url": null,
+     "explanation": "Inside the female, the sperm do not dry out or get washed away, so the chance of fertilisation is high, and the fertilised egg can be protected inside the body or in a shell.\n\n**Why the other options are wrong**\n\n- it can take place only in water: Internal fertilisation is what lets animals such as reptiles, birds and mammals reproduce on dry land.\n- the female must produce millions of eggs: With internal fertilisation far fewer eggs are needed.\n- the young never need any parental care: Many animals with internal fertilisation, such as mammals, give a great deal of care.",
+     "position": 7,
+     "options": [
+      {
+       "id": "81776cb2-8a78-511f-8773-9493a7d907c3",
+       "label": "A",
+       "content": "it can take place only in water",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "afa03f88-5f50-518e-8be7-c3b282611096",
+       "label": "B",
+       "content": "the female must produce millions of eggs",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "abc59290-b15b-589e-8ee6-403d771edd0e",
+       "label": "C",
+       "content": "the young never need any parental care",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e15b0c8e-9557-5f73-9be1-381e6825c455",
+       "label": "D",
+       "content": "sperm are placed close to the eggs, so fewer gametes are wasted",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "00ecd096-a9de-5480-8e37-5de04903b539",
+   "topic": "Human Reproduction and Development",
+   "title": "Human Reproduction and Development: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on human reproduction and development, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 165,
+   "questions": [
+    {
+     "id": "913e0538-8815-5061-8735-5e6ca21880ae",
+     "key": "bio-hr-01",
+     "stem": "In humans, fertilisation normally takes place in the",
+     "image_url": null,
+     "explanation": "The ovum is fertilised in the oviduct. The zygote divides as cilia and muscle move it to the uterus, where the embryo implants in the thickened lining.\n\n**Why the other options are wrong**\n\n- uterus: The embryo implants in the lining of the uterus, but fertilisation has already happened in the oviduct.\n- ovary: The ovary releases the ovum; it is fertilised after it has entered the oviduct.\n- vagina: Sperm are deposited in the vagina, then swim through the uterus to the oviducts.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e20fae7c-d3d1-5598-8dcb-89dc7fed8b07",
+       "label": "A",
+       "content": "oviduct (fallopian tube)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d4ff39fb-e1bc-5980-bb27-41e340bee65a",
+       "label": "B",
+       "content": "uterus",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "45d7f229-7cbd-541e-b242-e50356db42cc",
+       "label": "C",
+       "content": "ovary",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c88c5ef0-7c99-5492-8746-fdf32e826922",
+       "label": "D",
+       "content": "vagina",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a85ef4aa-53bf-5bec-8f31-e99f55e7bba2",
+     "key": "bio-hr-02",
+     "stem": "Which substance passes across the placenta from the mother's blood into the blood of the fetus?",
+     "image_url": null,
+     "explanation": "Oxygen, glucose, amino acids and antibodies pass from mother to fetus; carbon dioxide and urea pass from fetus to mother. The placenta also keeps the two blood systems separate.\n\n**Why the other options are wrong**\n\n- Carbon dioxide: Carbon dioxide passes the other way, from the fetus to the mother, who breathes it out.\n- Urea: Urea passes from the fetus to the mother, whose kidneys remove it.\n- Red blood cells: The two bloods do not mix, and cells are too large to cross the placenta.",
+     "position": 2,
+     "options": [
+      {
+       "id": "fcb4c51e-9278-5546-9836-748f4e12b057",
+       "label": "A",
+       "content": "Carbon dioxide",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9393a15a-76f1-59e6-a857-bd8cba9f8f16",
+       "label": "B",
+       "content": "Oxygen",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c8dbbd69-0ffc-5d3f-8b68-44c604480e9d",
+       "label": "C",
+       "content": "Urea",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e6b34300-5d55-55ee-984a-86ebd2940e08",
+       "label": "D",
+       "content": "Red blood cells",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "27a871ce-5a7f-5bd9-b747-7a67d7396cb9",
+     "key": "bio-hr-03",
+     "stem": "In a regular 28-day menstrual cycle, counting the first day of menstruation as day 1, ovulation usually takes place on about",
+     "image_url": null,
+     "explanation": "Ovulation is triggered by a surge of LH from the pituitary, near the middle of the cycle. An ovum lives for only about a day after its release.\n\n**Why the other options are wrong**\n\n- day 1: Day 1 is the start of menstruation, when the lining of the uterus is being shed.\n- day 5: Around day 5 menstruation is ending and the lining begins to rebuild.\n- day 28: Day 28 is the end of the cycle, just before the next menstruation.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8a8369c8-468d-5942-b969-51e43b93041a",
+       "label": "A",
+       "content": "day 1",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "97c52c30-3c79-5bdc-8678-5e0753dfc48d",
+       "label": "B",
+       "content": "day 5",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2abd6ea5-c5fc-5468-8644-b279f8adb25e",
+       "label": "C",
+       "content": "day 14",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "edcf45e7-4252-5529-870b-03dc2835c05c",
+       "label": "D",
+       "content": "day 28",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9f13cb91-8f58-54ef-a631-27dd324f252f",
+     "key": "bio-hr-04",
+     "stem": "Which hormone, produced by the corpus luteum after ovulation, keeps the lining of the uterus thick and ready for implantation?",
+     "image_url": null,
+     "explanation": "If no pregnancy occurs, the corpus luteum breaks down, progesterone falls and the lining is shed as menstruation.\n\n**Why the other options are wrong**\n\n- Oestrogen: Oestrogen, made by the developing follicle before ovulation, rebuilds and thickens the lining; progesterone maintains it afterwards.\n- Follicle-stimulating hormone (FSH): FSH, from the pituitary, makes a follicle develop in the ovary.\n- Luteinising hormone (LH): LH, from the pituitary, triggers ovulation.",
+     "position": 4,
+     "options": [
+      {
+       "id": "818ca0e8-ca98-5d8e-b47a-6fe252e02456",
+       "label": "A",
+       "content": "Oestrogen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dc358d4f-b427-5bc5-b1e5-8e5985467665",
+       "label": "B",
+       "content": "Follicle-stimulating hormone (FSH)",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "011d2b04-ebb3-5398-a3d2-becd65c28286",
+       "label": "C",
+       "content": "Progesterone",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3d264b92-67cc-56a3-b8c0-b3a11f9704af",
+       "label": "D",
+       "content": "Luteinising hormone (LH)",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "05382db1-a994-5c85-b116-83219c686d5d",
+     "key": "bio-hr-05",
+     "stem": "In the human male, sperm are produced in the",
+     "image_url": null,
+     "explanation": "Sperm are made in the seminiferous tubules of the testes, which hang outside the body in the scrotum because sperm develop best slightly below body temperature.\n\n**Why the other options are wrong**\n\n- epididymis: The epididymis stores sperm while they mature, but does not produce them.\n- prostate gland: The prostate gland adds fluid to the semen.\n- urethra: The urethra carries semen (and urine) out of the body.",
+     "position": 5,
+     "options": [
+      {
+       "id": "426df091-3005-5140-a495-ba6e9673deba",
+       "label": "A",
+       "content": "epididymis",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8828c0c8-b530-5f76-bf91-ce48f0fbed33",
+       "label": "B",
+       "content": "prostate gland",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1a25bde9-ad93-59e3-b39e-2753caa46d46",
+       "label": "C",
+       "content": "urethra",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5d056248-eb12-521f-b586-affe52e3b4ac",
+       "label": "D",
+       "content": "testes",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "333576c7-80ee-504a-b042-e60390b65b3e",
+     "key": "bio-hr-06",
+     "stem": "Which sexually transmitted infection is caused by a bacterium and can be cured with antibiotics?",
+     "image_url": null,
+     "explanation": "Gonorrhoea and syphilis are bacterial and can be treated with antibiotics. Antibiotics do not work against viruses.\n\n**Why the other options are wrong**\n\n- HIV infection: HIV is a virus; antiretroviral drugs control it, but antibiotics have no effect on it.\n- Genital herpes: Genital herpes is caused by a virus, so antibiotics cannot cure it.\n- Hepatitis B: Hepatitis B is caused by a virus; it can be prevented by vaccination.",
+     "position": 6,
+     "options": [
+      {
+       "id": "ae0c14d6-f209-5b1b-a86d-a2f7fa430b8b",
+       "label": "A",
+       "content": "Gonorrhoea",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7e41a045-e6f8-52cc-aab0-85097cb431ef",
+       "label": "B",
+       "content": "HIV infection",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "28185def-e305-5667-8e80-253a856832d7",
+       "label": "C",
+       "content": "Genital herpes",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9d4ee805-c464-5345-8b86-e3fde8ff2b98",
+       "label": "D",
+       "content": "Hepatitis B",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c7280403-59b2-5636-aa89-ecbbb7a2fa89",
+     "key": "bio-hr-07",
+     "stem": "Which method of birth control also helps to protect against sexually transmitted infections?",
+     "image_url": null,
+     "explanation": "A condom stops semen and body fluids passing between partners, so it reduces the risk of STIs, including HIV, if used correctly every time. Abstinence is the only fully certain protection.\n\n**Why the other options are wrong**\n\n- The contraceptive pill: The pill uses hormones to stop ovulation; it gives no protection against infections.\n- The intra-uterine device (IUD): An IUD prevents implantation in the uterus but does not stop infections passing between partners.\n- Vasectomy: A vasectomy stops sperm leaving the testes, but infections can still pass in body fluids.",
+     "position": 7,
+     "options": [
+      {
+       "id": "7e2ca5e8-be0f-512c-9c8c-9d1ef161a049",
+       "label": "A",
+       "content": "The contraceptive pill",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "48e48fa4-7857-54d2-a723-178cc3686796",
+       "label": "B",
+       "content": "The condom",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "3df47ce3-8f5a-56a5-b991-ac49758cf44c",
+       "label": "C",
+       "content": "The intra-uterine device (IUD)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f088dfcf-f938-5074-a374-a1c3766ea288",
+       "label": "D",
+       "content": "Vasectomy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c7cfd8cd-cdbe-5316-9cb9-a65e01b29214",
+   "topic": "Growth and Development",
+   "title": "Growth and Development: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on growth and development, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 166,
+   "questions": [
+    {
+     "id": "cabda266-9675-5611-9954-110be7a0972b",
+     "key": "bio-gd-01",
+     "stem": "Which conditions are needed for a seed to germinate?",
+     "image_url": null,
+     "explanation": "Water activates enzymes and softens the seed coat; oxygen is needed for respiration to release energy; a suitable temperature lets the enzymes work.\n\n**Why the other options are wrong**\n\n- Water, light and soil: Most seeds germinate in the dark, and seeds will germinate on damp cotton wool without soil.\n- Oxygen, carbon dioxide and light: Carbon dioxide and light are needed later, for photosynthesis by the seedling.\n- Water, fertiliser and light: Fertiliser and light are not needed: the seed uses its own food store.",
+     "position": 1,
+     "options": [
+      {
+       "id": "96fda846-71b3-5f8b-b852-1760c67053be",
+       "label": "A",
+       "content": "Water, light and soil",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2359cbef-ba24-50d8-a0ac-6b5385ca9221",
+       "label": "B",
+       "content": "Oxygen, carbon dioxide and light",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "292b5c8c-f8f0-5447-a8c7-ca10a2f1871c",
+       "label": "C",
+       "content": "Water, oxygen and a suitable temperature",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "35a9cd37-acf8-59f6-9242-1a47d32c3531",
+       "label": "D",
+       "content": "Water, fertiliser and light",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "91fc2eb4-0acb-5c5c-b728-96a6ba9ee434",
+     "key": "bio-gd-02",
+     "stem": "In epigeal germination, as in the bean,",
+     "image_url": null,
+     "explanation": "Epigeal: the hypocotyl (stem below the cotyledons) grows and lifts the cotyledons into the light. Hypogeal: the epicotyl (stem above them) grows, and the cotyledons stay underground.\n\n**Why the other options are wrong**\n\n- the cotyledons stay below the soil while the epicotyl lengthens: This is hypogeal germination, as in maize and the pea.\n- the plumule appears above the soil before the radicle emerges: The radicle always emerges first and grows downwards.\n- the seed germinates without taking in any water: Every seed must take in water (imbibition) before it can germinate.",
+     "position": 2,
+     "options": [
+      {
+       "id": "a93f52bb-68c2-5fbb-9f6d-a74f52a5e283",
+       "label": "A",
+       "content": "the cotyledons stay below the soil while the epicotyl lengthens",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1defc2ae-a24d-533a-ac12-4c4f97570e7d",
+       "label": "B",
+       "content": "the plumule appears above the soil before the radicle emerges",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e67d2e3f-4aae-50c7-a1eb-baa308d94d86",
+       "label": "C",
+       "content": "the seed germinates without taking in any water",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "02b375e4-bef0-5b37-b3a1-54b5ceab196c",
+       "label": "D",
+       "content": "the cotyledons are carried above the soil by the lengthening hypocotyl",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e78f5d70-3361-5ec8-b996-793ed38b9cf9",
+     "key": "bio-gd-03",
+     "stem": "Dry mass is a more reliable measure of the growth of a plant than fresh mass because",
+     "image_url": null,
+     "explanation": "Water content changes from hour to hour, but dry mass shows the permanent material actually built into the plant.\n\n**Why the other options are wrong**\n\n- dry mass can be measured without killing the plant: Measuring dry mass means drying the plant, which kills it; that is its main disadvantage.\n- dry mass includes the water stored in the cells: Dry mass is measured after all the water has been removed.\n- fresh mass cannot be measured on a balance: Fresh mass is easily measured on a balance; the problem is that it varies with water content.",
+     "position": 3,
+     "options": [
+      {
+       "id": "a112ed1c-b22c-52ab-98e9-11fd4226679e",
+       "label": "A",
+       "content": "fresh mass changes with the amount of water the plant has taken in or lost",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ed2288c4-abaf-5d9e-8243-1785adbea89b",
+       "label": "B",
+       "content": "dry mass can be measured without killing the plant",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0421df41-42ee-561c-8017-af371f5358e6",
+       "label": "C",
+       "content": "dry mass includes the water stored in the cells",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2588739e-e793-50f1-ab25-1ea662a693a9",
+       "label": "D",
+       "content": "fresh mass cannot be measured on a balance",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8c4100b3-2bf2-5860-a37e-cc885b0e7e74",
+     "key": "bio-gd-04",
+     "stem": "In the S-shaped (sigmoid) growth curve of an annual plant, the rate of growth is fastest during the",
+     "image_url": null,
+     "explanation": "Lag (slow start), exponential (rapid growth), slowing, then stationary (no further growth) and, for many organisms, decline.\n\n**Why the other options are wrong**\n\n- lag phase: In the lag phase, at the start, growth is slow while the young plant becomes established.\n- stationary (plateau) phase: In the stationary phase growth has almost stopped, as the plant reaches its full size.\n- phase of decline: In the phase of decline the plant is ageing and may lose mass.",
+     "position": 4,
+     "options": [
+      {
+       "id": "89de46ac-ced6-5a75-b5c6-cb28a11149f8",
+       "label": "A",
+       "content": "lag phase",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f68866ec-c169-50a4-a1df-6a78390ce811",
+       "label": "B",
+       "content": "exponential (log) phase",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c946920d-2e90-5301-9b75-d4587995efd7",
+       "label": "C",
+       "content": "stationary (plateau) phase",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "70473753-a398-5e65-a38e-1285f98c0bb7",
+       "label": "D",
+       "content": "phase of decline",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9785b332-8ee2-5c6d-b3a7-2b4f0a2edd66",
+     "key": "bio-gd-05",
+     "stem": "A young shoot lit from one side grows towards the light because auxin",
+     "image_url": null,
+     "explanation": "This is positive phototropism. Auxin moves to the shaded side, cells there elongate more, and the shoot curves towards the light, which helps the leaves photosynthesise.\n\n**Why the other options are wrong**\n\n- collects on the lit side, where it makes the cells lengthen more: If the lit side grew faster, the shoot would bend away from the light.\n- is destroyed on the shaded side, so that side grows less: If the shaded side grew less, the shoot would bend towards the shaded side, away from the light.\n- makes the cells on the lit side divide faster: The bending is caused by cells lengthening on the shaded side, not by faster division on the lit side.",
+     "position": 5,
+     "options": [
+      {
+       "id": "dde8df83-d2b4-5646-bb51-48d1d8826669",
+       "label": "A",
+       "content": "collects on the lit side, where it makes the cells lengthen more",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "53872b5e-1454-5f14-8451-cc47932a8036",
+       "label": "B",
+       "content": "is destroyed on the shaded side, so that side grows less",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e626b844-1a60-5e5d-bcc8-2e8230e15e5f",
+       "label": "C",
+       "content": "collects on the shaded side, where it makes the cells lengthen more",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "328e7eb4-1a63-57d2-b4ab-d7615cc352f4",
+       "label": "D",
+       "content": "makes the cells on the lit side divide faster",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "239a9432-eeb2-584a-aff1-011e8fdcbcbb",
+     "key": "bio-gd-06",
+     "stem": "The radicle of a germinating seed grows downwards whichever way the seed is placed. This response is",
+     "image_url": null,
+     "explanation": "Roots are positively geotropic (they grow towards gravity), which anchors the plant and takes the root to water; shoots are negatively geotropic.\n\n**Why the other options are wrong**\n\n- negative geotropism: Negative geotropism is growth away from gravity, shown by shoots.\n- positive phototropism: Phototropism is a response to light, not gravity; and roots are not lit underground.\n- hydrotropism: Hydrotropism is growth in response to water, not gravity.",
+     "position": 6,
+     "options": [
+      {
+       "id": "0e1e2fd6-314f-59d2-9994-42bbb9487751",
+       "label": "A",
+       "content": "negative geotropism",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "aa36d0b9-fef1-59b0-9b30-dcaf9029ca2f",
+       "label": "B",
+       "content": "positive phototropism",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "abae8dd5-9949-5f0f-982d-dc1e01762146",
+       "label": "C",
+       "content": "hydrotropism",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a9062ce2-f42f-55f1-84f5-ea1544073597",
+       "label": "D",
+       "content": "positive geotropism",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "701eed6f-d4e8-5afd-befc-e46e7a5a15b9",
+     "key": "bio-gd-07",
+     "stem": "Development, as distinct from growth, is best described as",
+     "image_url": null,
+     "explanation": "Growth is an increase in size; development is a change in form and function, such as a seedling forming leaves and flowers, or a tadpole becoming a toad.\n\n**Why the other options are wrong**\n\n- a permanent increase in size and dry mass: This is the definition of growth.\n- an increase in the number of cells: An increase in cell number is part of growth.\n- a temporary increase in mass from taking in water: Taking in water is temporary and is not counted as growth or development.",
+     "position": 7,
+     "options": [
+      {
+       "id": "e41c8341-0228-5f90-9dce-6d21ce4998b7",
+       "label": "A",
+       "content": "the changes by which an organism becomes more complex and mature",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "bec2b4a9-61d1-5f33-a683-94554518efc2",
+       "label": "B",
+       "content": "a permanent increase in size and dry mass",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cbec852c-261e-5cc6-bc27-ce230e363944",
+       "label": "C",
+       "content": "an increase in the number of cells",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "29021391-985f-595e-a442-98e45e546e0b",
+       "label": "D",
+       "content": "a temporary increase in mass from taking in water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "654a2c7ba7a2"
+}

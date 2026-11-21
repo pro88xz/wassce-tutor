@@ -746,6 +746,22 @@
   "questions": 42
  },
  {
+  "name": "biology_set4_p1",
+  "label": "Biology: set 4 (senses, nerves, hormones, reproduction and growth)",
+  "subject_slug": "biology",
+  "version": "654a2c7ba7a2",
+  "papers": [
+   "2c73f169-634d-5eab-900d-571d3af958eb",
+   "7350e23b-879a-5309-99e5-fddebd9e2712",
+   "eb06ebb1-1b6b-5910-ba9b-009d5b26b4c5",
+   "2cdb479e-f1db-521e-9c99-5f567bcb39f1",
+   "5e3a702f-5db3-59d3-8bcf-9d0829f8ded8",
+   "00ecd096-a9de-5480-8e37-5de04903b539",
+   "c7cfd8cd-cdbe-5316-9cb9-a65e01b29214"
+  ],
+  "questions": 49
+ },
+ {
   "name": "maths_mock_p1",
   "label": "Mathematics: timed mock exam, Paper 1",
   "subject_slug": "mathematics",
