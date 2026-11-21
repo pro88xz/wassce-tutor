@@ -91,6 +91,25 @@
   "questions": 30
  },
  {
+  "name": "maths_set6_p1",
+  "label": "Mathematics: practice set 2 for indices, bases, surds, sequences, percentages, variation, formulae, quadratics, sets and probability",
+  "subject_slug": "mathematics",
+  "version": "09c7730096d1",
+  "papers": [
+   "8adee68e-91ba-5beb-8246-e114d245033a",
+   "f7d545e0-c023-55c9-807b-847ca8dc7ad1",
+   "27ab081f-ab52-5676-ade8-d77335dadc8a",
+   "70fb8caf-423e-567f-a529-624bbbfe3daf",
+   "fbf25f4a-2363-56b0-9614-fa4596342683",
+   "369fc055-72d2-51a7-9e53-83fb06547432",
+   "33c95dd4-be51-5b2a-abd9-3fe44b5e9b25",
+   "38859804-52d1-5378-b959-9a3f444d5dfe",
+   "36b66843-96d5-5b76-882b-f580fa91fe33",
+   "3c5441f4-b52c-5443-ad46-c56427030e3a"
+  ],
+  "questions": 50
+ },
+ {
   "name": "english_set1_p1",
   "label": "English Language: set 1 (grammar)",
   "subject_slug": "english-language",

@@ -82,6 +82,15 @@ SETS = [
         "sort_from": 140,
     },
     {
+        "module": ROOT / "content/questions/mathematics/set6_p1.py",
+        "subject_slug": "mathematics",
+        "name": "maths_set6_p1",
+        "label": "Mathematics: practice set 2 for indices, bases, surds, sequences, percentages, variation, formulae, quadratics, sets and probability",
+        "review": ROOT / "content/questions/mathematics/set6_p1.review.md",
+        "sort_from": 200,
+        "practice_set": 2,
+    },
+    {
         "module": ROOT / "content/questions/english-language/set1_p1.py",
         "subject_slug": "english-language",
         "name": "english_set1_p1",
@@ -509,7 +518,8 @@ def build_set(cfg: dict, questions: list[Q], ordered: dict, svgs: dict[str, str]
         papers.append({
             "id": uid(cfg["name"], "paper", topic),
             "topic": topic,
-            "title": f"{topic}: practice set 1",
+            # A topic can have more than one set (Mathematics "practice set 2"), each its own paper.
+            "title": f"{topic}: practice set {cfg.get('practice_set', 1)}",
             # A comprehension set carries its passage in the description; the
             # practice screen shows it above the questions.
             "paper_type": "Comprehension" if topic in passages else "Practice",
@@ -670,7 +680,10 @@ def main() -> int:
               + (f" and {len(svgs)} diagrams" if svgs else ""))
     bodies: dict[str, list[dict]] = {}
     for cfg, mod, questions, ordered, svgs in built:
-        bodies.setdefault(cfg["subject_slug"], []).append(json.loads((OUT / f"{cfg['name']}.json").read_text()))
+        # Mocks draw only on each topic's first practice set, so adding a second set never
+        # reshuffles a mock that students have already sat.
+        if cfg.get("practice_set", 1) == 1:
+            bodies.setdefault(cfg["subject_slug"], []).append(json.loads((OUT / f"{cfg['name']}.json").read_text()))
     for mcfg in MOCKS:
         body = build_mock(mcfg, bodies.get(mcfg["subject_slug"], []))
         (OUT / f"{mcfg['name']}.json").write_text(json.dumps(body, ensure_ascii=False, indent=1) + "\n")

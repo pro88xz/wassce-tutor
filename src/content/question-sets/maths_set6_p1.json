@@ -1,0 +1,2008 @@
+{
+ "name": "maths_set6_p1",
+ "label": "Mathematics: practice set 2 for indices, bases, surds, sequences, percentages, variation, formulae, quadratics, sets and probability",
+ "subject_slug": "mathematics",
+ "papers": [
+  {
+   "id": "8adee68e-91ba-5beb-8246-e114d245033a",
+   "topic": "Indices",
+   "title": "Indices: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on indices, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 200,
+   "questions": [
+    {
+     "id": "d48105e8-bdb5-5af6-ae39-e1fe259a2d09",
+     "key": "maths-indices-06",
+     "stem": "Simplify $\\dfrac{a^{5} \\times a^{-2}}{a^{4}}$.",
+     "image_url": null,
+     "explanation": "Multiplying powers: add the indices. Dividing: subtract them.\n\n$a^{5} \\times a^{-2} \\div a^{4} = a^{5 + (-2) - 4} = a^{-1} = \\dfrac{1}{a}$\n\n**Why the other options are wrong**\n\n- $a^{3}$: You treated $a^{-2}$ as $a^{2}$: $5 + 2 - 4 = 3$. Adding a negative index lowers the power.\n- $a^{11}$: You added all the indices, $5 + 2 + 4$. Dividing by $a^{4}$ means subtracting 4.\n- $a^{-\\frac{5}{2}}$: You multiplied the indices, $5 \\times (-2) = -10$, then divided by 4. Multiply powers by adding indices.",
+     "position": 1,
+     "options": [
+      {
+       "id": "931d6a2c-0254-5d64-aafb-d35596dd4647",
+       "label": "A",
+       "content": "$a^{3}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c4fb3570-0f02-55df-a7a9-c87d6383620b",
+       "label": "B",
+       "content": "$a^{11}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "65be9a35-4837-5958-ae9a-75d91f128bd1",
+       "label": "C",
+       "content": "$a^{-\\frac{5}{2}}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a73a24fc-4e83-5e0d-97d7-43c4b270ef66",
+       "label": "D",
+       "content": "$\\dfrac{1}{a}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cfc6e92a-f939-521f-9f4b-99470dec1929",
+     "key": "maths-indices-07",
+     "stem": "Without using a calculator, evaluate $(4 \\times 10^{3}) \\times (3 \\times 10^{-5})$, giving your answer in standard form.",
+     "image_url": null,
+     "explanation": "Multiply the numbers and add the indices:\n\n$(4 \\times 3) \\times 10^{3 + (-5)} = 12 \\times 10^{-2}$\n\n$12$ is not between 1 and 10, so write $12 = 1.2 \\times 10^{1}$:\n\n$1.2 \\times 10^{1} \\times 10^{-2} = 1.2 \\times 10^{-1}$\n\n**Why the other options are wrong**\n\n- $1.2 \\times 10^{-2}$: $4 \\times 3 = 12 = 1.2 \\times 10$, so the index must go up by 1: $10^{-2} \\times 10 = 10^{-1}$.\n- $1.2 \\times 10^{9}$: You subtracted the indices, $3 - (-5) = 8$. Multiplying powers of 10 means adding the indices.\n- $1.2 \\times 10^{-15}$: You multiplied the indices, $3 \\times (-5)$. Multiplying powers of 10 means adding the indices.",
+     "position": 2,
+     "options": [
+      {
+       "id": "0945bb84-df8e-5e0a-8754-81130bff04bd",
+       "label": "A",
+       "content": "$1.2 \\times 10^{-15}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cb68accb-5de1-5612-adb1-cc0f83f84476",
+       "label": "B",
+       "content": "$1.2 \\times 10^{-2}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "28baccee-2cbf-527a-af35-c181b5da2367",
+       "label": "C",
+       "content": "$1.2 \\times 10^{-1}$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a8af8d5f-9c92-55c2-acde-96f117ebf69e",
+       "label": "D",
+       "content": "$1.2 \\times 10^{9}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5c865c97-07a9-598e-a9d8-b994fe677b10",
+     "key": "maths-indices-08",
+     "stem": "Evaluate $8^{\\frac{2}{3}} \\times 4^{-\\frac{1}{2}}$.",
+     "image_url": null,
+     "explanation": "$8^{\\frac{2}{3}} = (\\sqrt[3]{8})^{2} = 2^{2} = 4$\n\n$4^{-\\frac{1}{2}} = \\dfrac{1}{\\sqrt{4}} = \\dfrac{1}{2}$\n\n$4 \\times \\dfrac{1}{2} = 2$\n\n**Why the other options are wrong**\n\n- $-8$: You took $4^{-\\frac{1}{2}}$ as $-2$. A negative index means the reciprocal, not a negative number.\n- $\\dfrac{1}{2}$: You found the reciprocal of the whole answer. Only $4^{-\\frac{1}{2}}$ is a reciprocal.\n- $\\dfrac{8}{3}$: You took $8^{\\frac{2}{3}}$ as $8 \\times \\dfrac{2}{3}$. A fractional index means a root and a power: $(\\sqrt[3]{8})^{2} = 4$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "524fc6e6-47d0-5006-80b1-6fc0b551929f",
+       "label": "A",
+       "content": "$-8$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2c359232-9d95-5b44-815d-47e565495b27",
+       "label": "B",
+       "content": "$\\dfrac{1}{2}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b2c038bd-4dd8-563b-bfdd-8481e8b51d5c",
+       "label": "C",
+       "content": "$2$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fd3bf935-59a9-5f39-8127-9d8ef8c3a938",
+       "label": "D",
+       "content": "$\\dfrac{8}{3}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d6eb2f35-cf74-533b-aeba-26859bcce8df",
+     "key": "maths-indices-09",
+     "stem": "Solve $3^{2x - 1} = 27$.",
+     "image_url": null,
+     "explanation": "Write 27 as a power of 3: $27 = 3^{3}$.\n\n$3^{2x - 1} = 3^{3}$, so $2x - 1 = 3$, $2x = 4$, $x = 2$.\n\nCheck: $3^{2(2) - 1} = 3^{3} = 27$. ✓\n\n**Why the other options are wrong**\n\n- $1$: You wrote $2x = 3 - 1$. Moving $-1$ across the equals sign makes it $+1$: $2x = 4$.\n- $\\dfrac{3}{2}$: You wrote $2x = 3$ and forgot the $-1$.\n- $14$: You equated the index to 27. First write 27 as a power of 3: $27 = 3^{3}$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "cfb218b5-76e2-5446-9d34-b9e1ee4dffed",
+       "label": "A",
+       "content": "$1$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3257c013-3f68-578c-bfb4-48ee04a97e0a",
+       "label": "B",
+       "content": "$\\dfrac{3}{2}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "82294c83-61d9-5392-b55d-66ef003f66dd",
+       "label": "C",
+       "content": "$2$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0a5bb09e-c96e-5f6c-b4f0-8c9d06120376",
+       "label": "D",
+       "content": "$14$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "44d95147-691e-56d1-a997-fd11d45dfa8a",
+     "key": "maths-indices-10",
+     "stem": "Simplify $\\dfrac{3^{n+1} \\times 9^{n}}{27^{n}}$.",
+     "image_url": null,
+     "explanation": "Write everything as a power of 3: $9^{n} = 3^{2n}$ and $27^{n} = 3^{3n}$.\n\n$\\dfrac{3^{n+1} \\times 3^{2n}}{3^{3n}} = 3^{(n + 1) + 2n - 3n} = 3^{1} = 3$\n\n**Why the other options are wrong**\n\n- $3^{1 - n}$: You wrote $9^{n}$ as $3^{n}$. Since $9 = 3^{2}$, $9^{n} = 3^{2n}$.\n- $3^{n + 1}$: You wrote $27^{n}$ as $3^{2n}$. Since $27 = 3^{3}$, $27^{n} = 3^{3n}$.\n- $3^{6n + 1}$: You added all the indices. Dividing by $27^{n}$ means subtracting $3n$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "92e32735-6cea-57e9-bb28-0089f73df3be",
+       "label": "A",
+       "content": "$3^{1 - n}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e2edf91f-3d51-5bf4-9142-5e0714f1fabf",
+       "label": "B",
+       "content": "$3^{n + 1}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c4a0fcfa-e135-5a9f-be18-56b16df115d0",
+       "label": "C",
+       "content": "$3^{6n + 1}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "14a77d6a-0804-5049-b33e-a3d0663e95e7",
+       "label": "D",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f7d545e0-c023-55c9-807b-847ca8dc7ad1",
+   "topic": "Number Bases",
+   "title": "Number Bases: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on number bases, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 201,
+   "questions": [
+    {
+     "id": "f6ff8467-9b16-522a-a8cc-382ba09a0309",
+     "key": "maths-bases-06",
+     "stem": "Convert $214_{\\text{five}}$ to a number in base ten.",
+     "image_url": null,
+     "explanation": "$214_{\\text{five}} = 2 \\times 5^{2} + 1 \\times 5^{1} + 4 \\times 5^{0} = 50 + 5 + 4 = 59$\n\n**Why the other options are wrong**\n\n- $7$: You added the digits, $2 + 1 + 4$. Each digit must be multiplied by its place value.\n- $39$: You gave the place values in the wrong order: $2 \\times 5 + 1 \\times 25 + 4$. The left-hand digit has the largest place value.\n- $295$: You started the powers of 5 at $5^{1}$ instead of $5^{0}$ for the last digit.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f0bdf6e0-a9fe-50e3-9192-1febd9a3b496",
+       "label": "A",
+       "content": "$7$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "52d94510-d0bc-5bba-ba19-b8988ad1686d",
+       "label": "B",
+       "content": "$39$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eaaf558e-5358-57ed-aff1-934f21f80619",
+       "label": "C",
+       "content": "$59$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "41cb3b99-b98b-5ad9-bb01-2fb218184270",
+       "label": "D",
+       "content": "$295$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8f270936-14ce-57f9-a38c-d67938963909",
+     "key": "maths-bases-07",
+     "stem": "Convert $37_{\\text{ten}}$ to a number in base two.",
+     "image_url": null,
+     "explanation": "Divide by 2 repeatedly and record the remainders:\n\n$37 \\div 2 = 18$ r $1$; $18 \\div 2 = 9$ r $0$; $9 \\div 2 = 4$ r $1$; $4 \\div 2 = 2$ r $0$; $2 \\div 2 = 1$ r $0$; $1 \\div 2 = 0$ r $1$.\n\nRead the remainders from the bottom up: $100101_{\\text{two}}$.\n\nCheck: $32 + 4 + 1 = 37$. ✓\n\n**Why the other options are wrong**\n\n- $101001_{\\text{two}}$: You wrote the remainders in the order you found them. Read them from the last remainder to the first.\n- $10010_{\\text{two}}$: You left out the first remainder (the last digit). $37$ is odd, so the base-two number must end in 1.\n- $100111_{\\text{two}}$: That is 39 in base two. Check each remainder: $37 = 32 + 4 + 1$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "5972a328-6ed1-5143-b47b-be04830bcee6",
+       "label": "A",
+       "content": "$101001_{\\text{two}}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f4753750-0945-5d95-b175-5498db582872",
+       "label": "B",
+       "content": "$10010_{\\text{two}}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cbfedda5-1a13-529c-b649-279874a03afb",
+       "label": "C",
+       "content": "$100111_{\\text{two}}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "61742c1c-fefd-53f6-adc1-207585b1cf37",
+       "label": "D",
+       "content": "$100101_{\\text{two}}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "608d2cbc-9ad1-5e6f-964d-3df7cdb567c2",
+     "key": "maths-bases-08",
+     "stem": "Evaluate $342_{\\text{five}} - 134_{\\text{five}}$, leaving your answer in base five.",
+     "image_url": null,
+     "explanation": "Units: $2 - 4$ is not possible, so borrow 5 from the next column: $2 + 5 - 4 = 3$.\n\nFives: the 4 became 3 after lending; $3 - 3 = 0$.\n\nTwenty-fives: $3 - 1 = 2$.\n\nAnswer: $203_{\\text{five}}$. Check in base ten: $97 - 44 = 53 = 2 \\times 25 + 0 \\times 5 + 3$. ✓\n\n**Why the other options are wrong**\n\n- $208_{\\text{five}}$: You borrowed 10, as in base ten. In base five you borrow 5; the digit 8 cannot appear in base five.\n- $212_{\\text{five}}$: In each column you took the smaller digit from the larger. When the top digit is smaller you must borrow.\n- $213_{\\text{five}}$: You borrowed from the middle column but did not reduce it: the 4 becomes 3 after lending.",
+     "position": 3,
+     "options": [
+      {
+       "id": "bdb3f814-434e-5fb0-99a1-b3fb963e9210",
+       "label": "A",
+       "content": "$203_{\\text{five}}$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "70807bb2-c0f5-5e97-92fd-15501b429c3a",
+       "label": "B",
+       "content": "$208_{\\text{five}}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a504afbf-d560-547b-8bbe-42fb8f1fcaf4",
+       "label": "C",
+       "content": "$212_{\\text{five}}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8ed7e1ee-32c5-5c7e-a095-0d82b75c2db6",
+       "label": "D",
+       "content": "$213_{\\text{five}}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cc4cc3cb-3d81-58e0-8d5f-137d69bb3461",
+     "key": "maths-bases-09",
+     "stem": "Which of the following CANNOT be a number in base five?",
+     "image_url": null,
+     "explanation": "Base five uses only the digits 0, 1, 2, 3 and 4. The numeral $1253$ contains the digit 5, so it cannot be a base-five number.\n\n**Why the other options are wrong**\n\n- $1243$: All the digits 1, 2, 4 and 3 are less than 5, so this can be a base-five number.\n- $3300$: The digits 3 and 0 are allowed in base five.\n- $4021$: The digits 4, 0, 2 and 1 are all less than 5.",
+     "position": 4,
+     "options": [
+      {
+       "id": "debea970-b059-5f9b-8d5e-888c1295aab0",
+       "label": "A",
+       "content": "$1243$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "755fb26c-de65-50bc-af02-0b11aedddcf6",
+       "label": "B",
+       "content": "$1253$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "858f959e-cfa3-5112-90d6-e0d04f3d508b",
+       "label": "C",
+       "content": "$3300$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ecd57614-43c9-5822-aad0-7d151d9fa388",
+       "label": "D",
+       "content": "$4021$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cb4f839f-5bdf-59c7-8a87-1b41ab18ee81",
+     "key": "maths-bases-10",
+     "stem": "Express $17_{\\text{eight}}$ in base two.",
+     "image_url": null,
+     "explanation": "$17_{\\text{eight}} = 1 \\times 8 + 7 = 15$.\n\n$15 = 8 + 4 + 2 + 1 = 1111_{\\text{two}}$.\n\n(Shortcut: each base-eight digit is three base-two digits: $1 \\to 001$, $7 \\to 111$, giving $001111 = 1111_{\\text{two}}$.)\n\n**Why the other options are wrong**\n\n- $111_{\\text{two}}$: You converted only the digit 7. The 1 in front is worth 8.\n- $1110_{\\text{two}}$: That is 14. $17_{\\text{eight}} = 8 + 7 = 15$.\n- $10001_{\\text{two}}$: You treated 17 as a base-ten number. $17_{\\text{eight}}$ means $1 \\times 8 + 7 = 15$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "5a763bb5-2dac-5be3-b03c-e8a2964794c0",
+       "label": "A",
+       "content": "$111_{\\text{two}}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6764751f-97bc-5cae-a9e9-5e18e2a173a8",
+       "label": "B",
+       "content": "$1110_{\\text{two}}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "23cbac57-c8ad-5cce-85a5-d47d94c7c3a4",
+       "label": "C",
+       "content": "$10001_{\\text{two}}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "24f501a7-3895-50aa-96e4-80bfcaf602bd",
+       "label": "D",
+       "content": "$1111_{\\text{two}}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "27ab081f-ab52-5676-ade8-d77335dadc8a",
+   "topic": "Surds",
+   "title": "Surds: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on surds, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 202,
+   "questions": [
+    {
+     "id": "969766fa-6159-5e00-9191-9725490b137d",
+     "key": "maths-surds-06",
+     "stem": "Simplify $\\sqrt{3}\\,(\\sqrt{12} - \\sqrt{3})$.",
+     "image_url": null,
+     "explanation": "$\\sqrt{3} \\times \\sqrt{12} = \\sqrt{36} = 6$ and $\\sqrt{3} \\times \\sqrt{3} = 3$.\n\nSo $\\sqrt{3}(\\sqrt{12} - \\sqrt{3}) = 6 - 3 = 3$.\n\n**Why the other options are wrong**\n\n- $-3$: You took $\\sqrt{3} \\times \\sqrt{3}$ as 9. $\\sqrt{3} \\times \\sqrt{3} = 3$.\n- $\\sqrt{15} - 3$: You added the numbers under the roots, $3 + 12$. Roots are multiplied: $\\sqrt{3} \\times \\sqrt{12} = \\sqrt{36}$.\n- $6$: You multiplied only the first term. $\\sqrt{3}$ multiplies both terms in the bracket.",
+     "position": 1,
+     "options": [
+      {
+       "id": "d5f386c8-e850-544d-bff9-91fcdc890b76",
+       "label": "A",
+       "content": "$-3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "423a8fd2-3bf6-5d75-963a-30fe8f5c064d",
+       "label": "B",
+       "content": "$\\sqrt{15} - 3$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "85b80353-9aaf-504d-a4f7-ceb249efae57",
+       "label": "C",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ffb9489c-3189-5ee2-bf09-b122b4c19309",
+       "label": "D",
+       "content": "$6$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9d39f61e-a13d-5eed-975d-bf913d90e0b8",
+     "key": "maths-surds-07",
+     "stem": "Rationalise $\\dfrac{6}{\\sqrt{3}}$.",
+     "image_url": null,
+     "explanation": "Multiply the top and bottom by $\\sqrt{3}$:\n\n$\\dfrac{6}{\\sqrt{3}} \\times \\dfrac{\\sqrt{3}}{\\sqrt{3}} = \\dfrac{6\\sqrt{3}}{3} = 2\\sqrt{3}$\n\n**Why the other options are wrong**\n\n- $\\sqrt{2}$: You wrote $\\dfrac{6}{\\sqrt{3}}$ as $\\sqrt{\\dfrac{6}{3}}$. The 6 is not under the root.\n- $2$: You divided 6 by 3 and dropped the root.\n- $6\\sqrt{3}$: You multiplied the top by $\\sqrt{3}$ but forgot that the bottom becomes $\\sqrt{3} \\times \\sqrt{3} = 3$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "850a496f-4ba2-5f6d-a16a-206d4d633860",
+       "label": "A",
+       "content": "$\\sqrt{2}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "66d55bb2-087c-5d2d-8701-d682c42e195e",
+       "label": "B",
+       "content": "$2$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0c8cdf95-2c2f-511a-8e38-637bf169bc04",
+       "label": "C",
+       "content": "$2\\sqrt{3}$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "22163389-489b-5112-a33c-66c179b70a16",
+       "label": "D",
+       "content": "$6\\sqrt{3}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3e9eb73e-499c-57b8-8f4c-bbcaaee2b6a5",
+     "key": "maths-surds-08",
+     "stem": "Given that $\\sqrt{2} = 1.414$, evaluate $\\dfrac{1}{\\sqrt{2}}$ correct to three decimal places.",
+     "image_url": null,
+     "explanation": "Rationalise first: $\\dfrac{1}{\\sqrt{2}} = \\dfrac{\\sqrt{2}}{2} = \\dfrac{1.414}{2} = 0.707$.\n\nRationalising makes the division easy: dividing by 2 instead of by 1.414.\n\n**Why the other options are wrong**\n\n- $0.414$: You subtracted 1 from 1.414. Rationalise: $\\dfrac{1}{\\sqrt{2}} = \\dfrac{\\sqrt{2}}{2}$.\n- $1.414$: You wrote down $\\sqrt{2}$ itself. $\\dfrac{1}{\\sqrt{2}}$ is half of $\\sqrt{2}$.\n- $2.828$: You multiplied by 2 instead of dividing by 2.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ea6d4f5e-010f-5bd1-a2a0-92bd112e2754",
+       "label": "A",
+       "content": "$0.414$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "91b273c7-1dba-5ab2-99cd-6f1a5af99166",
+       "label": "B",
+       "content": "$0.707$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1e499309-d3d1-59c3-919a-f2adb921470d",
+       "label": "C",
+       "content": "$1.414$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f5f34f0f-4108-540b-ac4e-ad96eb7474a8",
+       "label": "D",
+       "content": "$2.828$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "46be5d88-8ea0-5be9-a4cd-4408344992fc",
+     "key": "maths-surds-09",
+     "stem": "Expand and simplify $(3 - \\sqrt{2})^{2}$.",
+     "image_url": null,
+     "explanation": "$(3 - \\sqrt{2})^{2} = 3^{2} - 2(3)(\\sqrt{2}) + (\\sqrt{2})^{2} = 9 - 6\\sqrt{2} + 2 = 11 - 6\\sqrt{2}$\n\n**Why the other options are wrong**\n\n- $7$: You squared each term separately: $9 - 2$. $(p - q)^{2} = p^{2} - 2pq + q^{2}$ has a middle term.\n- $7 - 6\\sqrt{2}$: You took $(\\sqrt{2})^{2}$ with a minus sign. $(-\\sqrt{2})^{2} = +2$.\n- $11 - 3\\sqrt{2}$: You forgot to double the middle term: it is $2 \\times 3 \\times \\sqrt{2} = 6\\sqrt{2}$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "efe0e03e-d758-530e-ae4a-255e9b77eb1b",
+       "label": "A",
+       "content": "$7 - 6\\sqrt{2}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "abffe491-8c24-59d4-a4bc-d92b400021e6",
+       "label": "B",
+       "content": "$11 - 6\\sqrt{2}$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d7b14c24-84cd-5f5c-87b5-0f87a93c34f2",
+       "label": "C",
+       "content": "$11 - 3\\sqrt{2}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e1fa5448-ad4b-58a7-86cb-015149b05a46",
+       "label": "D",
+       "content": "$7$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3c9e9a48-828b-5c88-a56c-d72213a41e44",
+     "key": "maths-surds-10",
+     "stem": "A rectangular flower bed measures $(\\sqrt{5} + 1)$ m by $(\\sqrt{5} - 1)$ m. Find its area.",
+     "image_url": null,
+     "explanation": "Area $= (\\sqrt{5} + 1)(\\sqrt{5} - 1) = (\\sqrt{5})^{2} - 1^{2} = 5 - 1 = 4$ m².\n\nThis is the difference of two squares, $(p + q)(p - q) = p^{2} - q^{2}$.\n\n**Why the other options are wrong**\n\n- $5$ m²: You multiplied $\\sqrt{5} \\times \\sqrt{5}$ and forgot the $-1 \\times 1$ term.\n- $6$ m²: You added $1 \\times 1$ instead of subtracting it. $(p + q)(p - q) = p^{2} - q^{2}$.\n- $2\\sqrt{5}$ m²: You added the two sides. Area is length × width.",
+     "position": 5,
+     "options": [
+      {
+       "id": "3643d11c-3aff-558b-9f84-bbf09e72bbaa",
+       "label": "A",
+       "content": "$4$ m²",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "befc9f54-9ed9-525d-8f55-0d416cfc201a",
+       "label": "B",
+       "content": "$2\\sqrt{5}$ m²",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d186bf30-ee12-5679-9a5a-cb75f116c583",
+       "label": "C",
+       "content": "$5$ m²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f356cfa6-8dca-55d8-9d6d-4506bba8f86b",
+       "label": "D",
+       "content": "$6$ m²",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "70fb8caf-423e-567f-a529-624bbbfe3daf",
+   "topic": "Sequences and Series",
+   "title": "Sequences and Series: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on sequences and series, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 203,
+   "questions": [
+    {
+     "id": "e7f050ab-5134-5cbe-a744-11f5e80ef65e",
+     "key": "maths-sequences-06",
+     "stem": "Find the 10th term of the A.P. $7, 4, 1, \\ldots$",
+     "image_url": null,
+     "explanation": "$a = 7$, $d = 4 - 7 = -3$.\n\n$U_{10} = a + 9d = 7 + 9(-3) = 7 - 27 = -20$\n\n**Why the other options are wrong**\n\n- $-23$: You used $a + 10d$. The $n$th term is $a + (n - 1)d$, so the 10th term uses $9d$.\n- $-17$: You used $a + 8d$. The 10th term is $a + 9d$.\n- $34$: You took the common difference as $+3$. Each term is 3 less: $d = 4 - 7 = -3$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "b1307773-9ac3-5907-8b68-98d61bd5a38c",
+       "label": "A",
+       "content": "$-23$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b4d92db7-4e8e-5350-8366-ec74ccee1bdc",
+       "label": "B",
+       "content": "$-20$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "595cbe3d-04c7-5fb3-b5ba-66ce617adc17",
+       "label": "C",
+       "content": "$-17$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "160b95fd-c59c-5a99-9613-ee3c79c6a41f",
+       "label": "D",
+       "content": "$34$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5ef4e8e5-88dc-5f25-8bee-9963428ea97e",
+     "key": "maths-sequences-07",
+     "stem": "How many terms are there in the A.P. $5, 8, 11, \\ldots, 62$?",
+     "image_url": null,
+     "explanation": "$a = 5$, $d = 3$, last term $= 62$.\n\n$5 + (n - 1)3 = 62 \\Rightarrow (n - 1)3 = 57 \\Rightarrow n - 1 = 19 \\Rightarrow n = 20$\n\n**Why the other options are wrong**\n\n- $12$: You divided the last term by the first term. Use $U_{n} = a + (n - 1)d$.\n- $19$: $\\dfrac{62 - 5}{3} = 19$ is the number of steps between the terms; there is one more term than steps.\n- $21$: You divided the last term by the common difference, $62 \\div 3 \\approx 21$. Subtract the first term first.",
+     "position": 2,
+     "options": [
+      {
+       "id": "87ebe740-eb37-5de8-817c-d05412315c4d",
+       "label": "A",
+       "content": "$12$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8186665d-7400-591f-9dc5-70480d0ffe73",
+       "label": "B",
+       "content": "$19$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f519790f-8d9a-527e-8a2c-020083bb2f4c",
+       "label": "C",
+       "content": "$20$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ab017ec6-39d1-5a50-8a25-d6b1f85d70e4",
+       "label": "D",
+       "content": "$21$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "30989c4d-288c-5ed0-ac0a-9e8b7e0f580d",
+     "key": "maths-sequences-08",
+     "stem": "Find the common ratio of the G.P. $48, -24, 12, \\ldots$",
+     "image_url": null,
+     "explanation": "$r = \\dfrac{\\text{second term}}{\\text{first term}} = \\dfrac{-24}{48} = -\\dfrac{1}{2}$\n\nCheck: $-24 \\times (-\\dfrac{1}{2}) = 12$. ✓\n\n**Why the other options are wrong**\n\n- $-72$: You found a common difference, $-24 - 48 = -72$, as for an A.P. In a G.P., divide a term by the one before it.\n- $-2$: You divided the first term by the second. The ratio is a term divided by the term before it.\n- $\\dfrac{1}{2}$: You lost the sign. The terms alternate in sign, so the ratio is negative.",
+     "position": 3,
+     "options": [
+      {
+       "id": "9c5d429c-cf82-5093-8b65-682771382305",
+       "label": "A",
+       "content": "$-72$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2d803281-64ec-5eb8-9fc0-a6a010d873dc",
+       "label": "B",
+       "content": "$-2$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c15943e5-0471-5213-9c5b-9cb9a64d11c3",
+       "label": "C",
+       "content": "$-\\dfrac{1}{2}$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "bb7615e8-feb6-5103-a5cf-84e574628431",
+       "label": "D",
+       "content": "$\\dfrac{1}{2}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aa90b0ec-fbe9-5226-99b6-614eedb0c94c",
+     "key": "maths-sequences-09",
+     "stem": "The $n$th term of an A.P. is $U_{n} = 5n - 3$. Find the common difference.",
+     "image_url": null,
+     "explanation": "$U_{1} = 2$, $U_{2} = 7$, $U_{3} = 12$, …\n\n$d = U_{2} - U_{1} = 7 - 2 = 5$, the coefficient of $n$.\n\n**Why the other options are wrong**\n\n- $-3$: $-3$ is the constant in the formula, not the difference between terms.\n- $2$: $2$ is the first term, $U_{1} = 5 - 3$. Subtract consecutive terms to find $d$.\n- $7$: $7$ is the second term, $U_{2}$. The difference is $U_{2} - U_{1}$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "5393075f-54fe-57fb-a196-245178fe1f1e",
+       "label": "A",
+       "content": "$-3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7b2df25e-d2f2-5d8f-a48e-72fdb8355dc3",
+       "label": "B",
+       "content": "$2$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "87522168-8709-59fe-8a19-b396e104c93b",
+       "label": "C",
+       "content": "$5$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3a74a944-c4d3-5fd7-8fc1-e6ef364786ae",
+       "label": "D",
+       "content": "$7$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "de820cf6-f815-5042-915b-346be86e7611",
+     "key": "maths-sequences-10",
+     "stem": "The second term of a G.P. is 6 and the fourth term is 54. Find the common ratio, given that it is positive.",
+     "image_url": null,
+     "explanation": "$ar = 6$ and $ar^{3} = 54$.\n\nDividing: $r^{2} = \\dfrac{54}{6} = 9$, so $r = 3$ (positive).\n\nCheck: $2, 6, 18, 54$. ✓\n\n**Why the other options are wrong**\n\n- $9$: $\\dfrac{54}{6} = 9$ is $r^{2}$, because two steps separate the terms. Take the square root.\n- $24$: You treated it as an A.P.: $(54 - 6) \\div 2$. In a G.P., terms are multiplied by $r$.\n- $48$: You subtracted the terms. In a G.P. you divide.",
+     "position": 5,
+     "options": [
+      {
+       "id": "faaecacb-cf8e-57e8-bc1d-b18a22043c0d",
+       "label": "A",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6a09fd95-c452-58e6-99c6-c38330bd8f0b",
+       "label": "B",
+       "content": "$9$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "26538331-5911-56e7-afe4-ddfc7a748781",
+       "label": "C",
+       "content": "$24$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3a62dd6a-6c0d-5e23-8052-367e0462a47d",
+       "label": "D",
+       "content": "$48$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fbf25f4a-2363-56b0-9614-fa4596342683",
+   "topic": "Percentages",
+   "title": "Percentages: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on percentages, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 204,
+   "questions": [
+    {
+     "id": "be64191d-0d3e-58ae-94be-fcc7adbfab8c",
+     "key": "maths-percentages-06",
+     "stem": "A shirt marked Le 250 is sold at a discount of 12%. Find the selling price.",
+     "image_url": null,
+     "explanation": "Discount $= 12\\%$ of Le 250 $= \\dfrac{12}{100} \\times 250 = $ Le 30.\n\nSelling price $= 250 - 30 = $ Le 220. (Or $88\\%$ of $250$.)\n\n**Why the other options are wrong**\n\n- Le 30: Le 30 is the discount. Subtract it from the marked price.\n- Le 238: You took 12 Leones off, not 12%.\n- Le 280: You added the discount. A discount reduces the price.",
+     "position": 1,
+     "options": [
+      {
+       "id": "4f08d903-b63f-5ff1-b88f-0bdc85b41d08",
+       "label": "A",
+       "content": "Le 30",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d1ebe9b2-7311-5a81-b045-b483822151de",
+       "label": "B",
+       "content": "Le 220",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "021b96df-4db0-54f3-8130-0f21a84aaf21",
+       "label": "C",
+       "content": "Le 238",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0a8bf7e3-830f-5caa-bb65-05c272eb5c33",
+       "label": "D",
+       "content": "Le 280",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d88f501b-193c-58ba-ba6c-a540d079694a",
+     "key": "maths-percentages-07",
+     "stem": "A trader bought a radio for Le 800 and sold it for Le 680. Find the percentage loss.",
+     "image_url": null,
+     "explanation": "Loss $= 800 - 680 = $ Le 120.\n\nPercentage loss $= \\dfrac{120}{800} \\times 100\\% = 15\\%$\n\n**Why the other options are wrong**\n\n- 17.6%: You divided the loss by the selling price. Percentage loss is worked out on the cost price.\n- 85%: That is the selling price as a percentage of the cost price. The loss is $100\\% - 85\\%$.\n- 120%: Le 120 is the loss in Leones. Write it as a percentage of the cost price.",
+     "position": 2,
+     "options": [
+      {
+       "id": "fd6e08c2-14a0-5dec-acf4-d0d759807621",
+       "label": "A",
+       "content": "15%",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b54a5ea2-90df-5922-86ee-7fbf05011689",
+       "label": "B",
+       "content": "17.6%",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a69999bc-ae25-5af0-a90f-316fb0da798b",
+       "label": "C",
+       "content": "85%",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "75badb47-5bf6-570e-bed7-90fc0f8030df",
+       "label": "D",
+       "content": "120%",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "51948469-0caa-550c-85c0-e76a72c53cde",
+     "key": "maths-percentages-08",
+     "stem": "What principal will earn Le 900 simple interest in 3 years at 5% per annum?",
+     "image_url": null,
+     "explanation": "$I = \\dfrac{PRT}{100}$, so $P = \\dfrac{100 I}{RT} = \\dfrac{100 \\times 900}{5 \\times 3} = $ Le 6,000.\n\nCheck: $\\dfrac{6000 \\times 5 \\times 3}{100} = 900$. ✓\n\n**Why the other options are wrong**\n\n- Le 135: You worked out $\\dfrac{900 \\times 5 \\times 3}{100}$, treating 900 as the principal. Here 900 is the interest.\n- Le 18,000: You left out the time. $P = \\dfrac{100 I}{RT}$ divides by both the rate and the time.\n- Le 30,000: You left out the rate. $P = \\dfrac{100 I}{RT}$ divides by both $R$ and $T$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "76cb0327-f259-5146-84b3-5b2944f492e7",
+       "label": "A",
+       "content": "Le 135",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f1c3ff41-b061-5541-8a74-3cb75234a77d",
+       "label": "B",
+       "content": "Le 6,000",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6300d205-7e7f-53d1-81d7-fc33366f6191",
+       "label": "C",
+       "content": "Le 18,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "91d4bab0-fac2-52d1-86f3-400c865a85d1",
+       "label": "D",
+       "content": "Le 30,000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a5cd4887-f1f5-50db-bfd6-4f8564f81980",
+     "key": "maths-percentages-09",
+     "stem": "Find the amount when Le 10,000 is invested for 3 years at 10% per annum compound interest.",
+     "image_url": null,
+     "explanation": "Year 1: $10\\,000 \\times 1.1 = 11\\,000$\n\nYear 2: $11\\,000 \\times 1.1 = 12\\,100$\n\nYear 3: $12\\,100 \\times 1.1 = 13\\,310$\n\nAmount $= $ Le 13,310. (Or $A = P(1 + \\dfrac{R}{100})^{n} = 10\\,000 \\times 1.1^{3}$.)\n\n**Why the other options are wrong**\n\n- Le 3,310: Le 3,310 is the interest. The amount is the principal plus the interest.\n- Le 12,100: That is the amount after 2 years. Multiply by 1.1 once more.\n- Le 13,000: That is simple interest. With compound interest, each year's interest is added before the next year.",
+     "position": 4,
+     "options": [
+      {
+       "id": "8feaf787-b4c9-53ca-a4db-d17b7b29927c",
+       "label": "A",
+       "content": "Le 3,310",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5f437fe5-dfd9-5f67-a2c6-85099621b4af",
+       "label": "B",
+       "content": "Le 12,100",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4ce5757c-dc63-5738-986c-52be2920b0d9",
+       "label": "C",
+       "content": "Le 13,000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4a6f1ed2-bc91-5632-8272-d773bf82132f",
+       "label": "D",
+       "content": "Le 13,310",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a7104aec-2ba0-5764-a1af-5a9923ec53c3",
+     "key": "maths-percentages-10",
+     "stem": "The population of a town rose from 40,000 to 46,000. Find the percentage increase.",
+     "image_url": null,
+     "explanation": "Increase $= 46\\,000 - 40\\,000 = 6\\,000$.\n\nPercentage increase $= \\dfrac{6\\,000}{40\\,000} \\times 100\\% = 15\\%$\n\n**Why the other options are wrong**\n\n- 13.0%: You divided the increase by the new population. Use the original population.\n- 87.0%: You divided the old population by the new one.\n- 115%: That is the new population as a percentage of the old. The increase is $115\\% - 100\\%$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "8828d450-4062-584c-a43b-6b31b1deee01",
+       "label": "A",
+       "content": "13.0%",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a864146f-4bee-5cf9-b27b-14c013b6c888",
+       "label": "B",
+       "content": "15%",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bec48bb0-ae0d-5c2f-9c35-9fd65dd550ff",
+       "label": "C",
+       "content": "87.0%",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a3e3959d-1d74-500c-b99f-12d8ebfe1d5a",
+       "label": "D",
+       "content": "115%",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "369fc055-72d2-51a7-9e53-83fb06547432",
+   "topic": "Variation",
+   "title": "Variation: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on variation, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 205,
+   "questions": [
+    {
+     "id": "96a2c6e2-f857-5444-b8a6-a17283ef79ca",
+     "key": "maths-variation-06",
+     "stem": "$y$ varies inversely as $x^{2}$. If $y = 8$ when $x = 3$, find $y$ when $x = 6$.",
+     "image_url": null,
+     "explanation": "$y = \\dfrac{k}{x^{2}}$. When $x = 3$, $y = 8$: $k = 8 \\times 9 = 72$.\n\nWhen $x = 6$: $y = \\dfrac{72}{36} = 2$.\n\n**Why the other options are wrong**\n\n- $4$: You used $y = \\dfrac{k}{x}$. The variation is with $x^{2}$.\n- $16$: You used direct variation, $y = kx$.\n- $32$: You used $y = kx^{2}$ (direct). *Inversely* means $y = \\dfrac{k}{x^{2}}$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e4f9a909-b13e-598b-a1c6-58db734269af",
+       "label": "A",
+       "content": "$2$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "60ee7350-2c74-5180-9988-ee59211ac529",
+       "label": "B",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "37fd96d0-eefc-59e8-b7ee-46fc47f24904",
+       "label": "C",
+       "content": "$16$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "098180e6-453e-522d-8e34-279bb449714a",
+       "label": "D",
+       "content": "$32$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a71a51db-98ba-5bce-b67c-32259a836f40",
+     "key": "maths-variation-07",
+     "stem": "$w$ varies jointly as $x$ and $y$. If $w = 24$ when $x = 2$ and $y = 3$, find $w$ when $x = 5$ and $y = 4$.",
+     "image_url": null,
+     "explanation": "$w = kxy$. When $x = 2$, $y = 3$: $24 = 6k$, so $k = 4$.\n\nWhen $x = 5$, $y = 4$: $w = 4 \\times 5 \\times 4 = 80$.\n\n**Why the other options are wrong**\n\n- $20$: You found $xy = 20$ but forgot to multiply by the constant $k = 4$.\n- $43.2$: You used $w = k(x + y)$. Joint variation means $w = kxy$.\n- $45$: You used $w = \\dfrac{kx}{y}$, inverse in $y$. Joint variation multiplies.",
+     "position": 2,
+     "options": [
+      {
+       "id": "28afd733-aaea-523e-a06f-97c873fbcf09",
+       "label": "A",
+       "content": "$20$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cd02ab87-3e3a-5abd-aaaf-7a245f54290a",
+       "label": "B",
+       "content": "$43.2$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ccdfe8ac-5c53-5078-9817-1912331d3a7b",
+       "label": "C",
+       "content": "$45$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "75117ae6-e7c3-5b82-b7f1-88749869d9ae",
+       "label": "D",
+       "content": "$80$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "575f309e-0f70-5be3-8bbc-68377d2199d5",
+     "key": "maths-variation-08",
+     "stem": "$r$ varies directly as $\\sqrt{s}$. If $r = 6$ when $s = 16$, find $r$ when $s = 49$.",
+     "image_url": null,
+     "explanation": "$r = k\\sqrt{s}$. When $s = 16$, $r = 6$: $6 = 4k$, so $k = \\dfrac{3}{2}$.\n\nWhen $s = 49$: $r = \\dfrac{3}{2} \\times 7 = 10.5$.\n\n**Why the other options are wrong**\n\n- $\\dfrac{24}{7}$: You used inverse variation, $r = \\dfrac{k}{\\sqrt{s}}$.\n- $7$: $\\sqrt{49} = 7$, but you forgot to multiply by $k = \\dfrac{3}{2}$.\n- $18.375$: You used $r = ks$, without the square root.",
+     "position": 3,
+     "options": [
+      {
+       "id": "54f205b6-6415-5fb0-b090-74864baf79a8",
+       "label": "A",
+       "content": "$\\dfrac{24}{7}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "00be7b1d-4d44-51ad-9b3f-485bdfe167dd",
+       "label": "B",
+       "content": "$7$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d0d66395-9c35-552f-95e4-99b1c42b0f44",
+       "label": "C",
+       "content": "$10.5$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "34714640-a379-5226-9b34-ca3d923d28ad",
+       "label": "D",
+       "content": "$18.375$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "51cc437b-8454-57a6-bb2f-4b7a10f6ba17",
+     "key": "maths-variation-09",
+     "stem": "$y$ varies inversely as $x$. If $x$ is doubled, what happens to $y$?",
+     "image_url": null,
+     "explanation": "$y = \\dfrac{k}{x}$. If $x$ becomes $2x$, then $y$ becomes $\\dfrac{k}{2x} = \\dfrac{1}{2} \\times \\dfrac{k}{x}$: it is halved.\n\n**Why the other options are wrong**\n\n- It is doubled: That would be direct variation.\n- It is divided by 4: That would be inverse variation with $x^{2}$.\n- It is unchanged: $y$ depends on $x$, so it must change.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4aff2a62-098f-53e6-a47f-53fa690a2919",
+       "label": "A",
+       "content": "It is halved",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "bd38ebbc-ee24-58ec-b712-3607acc7043d",
+       "label": "B",
+       "content": "It is doubled",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c2c83056-9e89-5a91-8cc4-24b42181dbed",
+       "label": "C",
+       "content": "It is divided by 4",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d56d46f8-7053-5e15-a0bb-e24d8ce74a27",
+       "label": "D",
+       "content": "It is unchanged",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7baa2cff-8638-588c-a9e7-bc62446b5f3b",
+     "key": "maths-variation-10",
+     "stem": "$x$ varies directly as $y$. If $x = 15$ when $y = 5$, find $y$ when $x = 36$.",
+     "image_url": null,
+     "explanation": "$x = ky$. When $y = 5$, $x = 15$: $k = 3$.\n\nWhen $x = 36$: $36 = 3y$, so $y = 12$.\n\n**Why the other options are wrong**\n\n- $7.2$: You divided 36 by the first value of $y$. Find the constant $k$ first.\n- $26$: You assumed $x$ and $y$ differ by a fixed amount (10). In direct variation they are in a fixed ratio.\n- $108$: You multiplied by $k$. Since $x = 3y$, $y = \\dfrac{x}{3}$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b43d7f79-8b00-5b23-8bd4-42ea1407d816",
+       "label": "A",
+       "content": "$7.2$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a8c90e1f-2d75-5755-9b0c-01fd0a089092",
+       "label": "B",
+       "content": "$12$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9788efe4-b9ff-50ba-9aac-d6882475d069",
+       "label": "C",
+       "content": "$26$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bb44afb5-b1a0-59e9-8f09-2b2298bd7b6d",
+       "label": "D",
+       "content": "$108$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "33c95dd4-be51-5b2a-abd9-3fe44b5e9b25",
+   "topic": "Change of Subject",
+   "title": "Change of Subject: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on change of subject, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 206,
+   "questions": [
+    {
+     "id": "b020dea4-093f-56d2-b163-aa30e7cf09d4",
+     "key": "maths-subject-06",
+     "stem": "Make $t$ the subject of the formula $v = u + at$.",
+     "image_url": null,
+     "explanation": "$v = u + at$\n\nSubtract $u$: $v - u = at$\n\nDivide by $a$: $t = \\dfrac{v - u}{a}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{v + u}{a}$: Moving $+u$ across the equals sign makes it $-u$, not $+u$.\n- $\\dfrac{v}{a} - u$: You divided only $v$ by $a$. Subtract $u$ first, then divide the whole of $v - u$ by $a$.\n- $a(v - u)$: You multiplied by $a$. To undo $\\times a$, divide by $a$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "c06430db-71b9-564a-923b-735475ffd32e",
+       "label": "A",
+       "content": "$\\dfrac{v + u}{a}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8ed76aa6-bfcd-56b0-b3ae-d1d0720652a1",
+       "label": "B",
+       "content": "$\\dfrac{v}{a} - u$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2f37a7c8-b039-5999-b5b2-ce7d8eee2ea8",
+       "label": "C",
+       "content": "$a(v - u)$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1e58603f-1c83-55d8-bc48-7bec1bd33d7e",
+       "label": "D",
+       "content": "$\\dfrac{v - u}{a}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ad7e8595-5056-5686-9161-f0084463d0e6",
+     "key": "maths-subject-07",
+     "stem": "Make $h$ the subject of $A = 2\\pi r^{2} + 2\\pi r h$.",
+     "image_url": null,
+     "explanation": "$A = 2\\pi r^{2} + 2\\pi r h$\n\n$A - 2\\pi r^{2} = 2\\pi r h$\n\n$h = \\dfrac{A - 2\\pi r^{2}}{2\\pi r}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{A - 2\\pi r^{2}}{2\\pi}$: You divided by $2\\pi$ only. $h$ is multiplied by $2\\pi r$, so divide by $2\\pi r$.\n- $\\dfrac{A + 2\\pi r^{2}}{2\\pi r}$: Subtracting $2\\pi r^{2}$ from both sides gives $A - 2\\pi r^{2}$, not $A + 2\\pi r^{2}$.\n- $\\dfrac{A}{2\\pi r} - 2\\pi r^{2}$: You divided only $A$ by $2\\pi r$. The whole of $A - 2\\pi r^{2}$ must be divided.",
+     "position": 2,
+     "options": [
+      {
+       "id": "cb610aec-f497-5116-95ed-7a7ff2c78e5e",
+       "label": "A",
+       "content": "$\\dfrac{A - 2\\pi r^{2}}{2\\pi r}$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9e6fff11-55fb-5db2-9e48-a84d3ed6e083",
+       "label": "B",
+       "content": "$\\dfrac{A - 2\\pi r^{2}}{2\\pi}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3a6ea5f2-fa2e-57b2-9fff-ce7af437d957",
+       "label": "C",
+       "content": "$\\dfrac{A + 2\\pi r^{2}}{2\\pi r}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3d806a83-5cc5-5489-910a-3e667f5aab68",
+       "label": "D",
+       "content": "$\\dfrac{A}{2\\pi r} - 2\\pi r^{2}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "161926c9-f637-5fb9-bdc2-32d0d0413411",
+     "key": "maths-subject-08",
+     "stem": "Given that $s = ut + \\dfrac{1}{2}at^{2}$, find $a$ when $s = 100$, $u = 5$ and $t = 4$.",
+     "image_url": null,
+     "explanation": "$100 = 5(4) + \\dfrac{1}{2}a(4)^{2} = 20 + 8a$\n\n$8a = 80$, so $a = 10$.\n\n**Why the other options are wrong**\n\n- $5$: You used $at^{2}$ without the $\\dfrac{1}{2}$: $80 = 16a$.\n- $12.5$: You left out the $ut$ term: $100 = 8a$.\n- $20$: You divided $80$ by $t$ only. $\\dfrac{1}{2}at^{2} = 8a$ when $t = 4$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "4aecc0b5-e2fe-5434-9de2-3f93d0b8b921",
+       "label": "A",
+       "content": "$5$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "59a05f95-62b7-5d9b-bac7-b52d6b6ce688",
+       "label": "B",
+       "content": "$10$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0ee97a57-b628-5f54-b2be-04515fa7a953",
+       "label": "C",
+       "content": "$12.5$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f3814739-fd86-5df5-a9cf-13b6b0691972",
+       "label": "D",
+       "content": "$20$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "343b6635-4a2b-5f42-93a0-1bad055c50d3",
+     "key": "maths-subject-09",
+     "stem": "Make $v$ the subject of the formula $K = \\dfrac{1}{2}mv^{2}$.",
+     "image_url": null,
+     "explanation": "$K = \\dfrac{1}{2}mv^{2}$\n\nMultiply by 2: $2K = mv^{2}$\n\nDivide by $m$: $v^{2} = \\dfrac{2K}{m}$\n\nSquare root: $v = \\sqrt{\\dfrac{2K}{m}}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{2K}{m}$: That is $v^{2}$. Take the square root to find $v$.\n- $\\sqrt{\\dfrac{K}{2m}}$: To remove $\\dfrac{1}{2}$, multiply by 2; you divided by 2.\n- $\\sqrt{2Km}$: $m$ multiplies $v^{2}$, so you must divide by $m$, not multiply.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e0917d61-8614-523b-aba3-826fa67dda4c",
+       "label": "A",
+       "content": "$\\dfrac{2K}{m}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dc54668d-2480-5976-83d3-fca729da3197",
+       "label": "B",
+       "content": "$\\sqrt{\\dfrac{K}{2m}}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f338670b-954c-5798-8124-f1b953dd34a7",
+       "label": "C",
+       "content": "$\\sqrt{2Km}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4d3cc98b-8d15-5228-ba5d-e0fcd138fb38",
+       "label": "D",
+       "content": "$\\sqrt{\\dfrac{2K}{m}}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9067a828-bee6-56fd-8c16-40017b6fc8ec",
+     "key": "maths-subject-10",
+     "stem": "Make $x$ the subject of $ax + b = cx + d$.",
+     "image_url": null,
+     "explanation": "Collect the $x$ terms on one side: $ax - cx = d - b$\n\nFactorise: $x(a - c) = d - b$\n\nDivide: $x = \\dfrac{d - b}{a - c}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{d + b}{a + c}$: Moving terms across the equals sign changes their signs: $ax - cx = d - b$.\n- $\\dfrac{b - d}{a - c}$: The top has the wrong sign: from $ax - cx = d - b$, the top is $d - b$.\n- $\\dfrac{d - b}{a} - c$: You divided by $a$ only. Factorise first: $x(a - c) = d - b$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "78985b37-4db1-5415-a20b-d71e3e7fcf50",
+       "label": "A",
+       "content": "$\\dfrac{d - b}{a - c}$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "35bdaec8-8096-50ac-aa4d-e8589a491263",
+       "label": "B",
+       "content": "$\\dfrac{d + b}{a + c}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c751eaea-11fa-542c-af4b-b009e9fbae58",
+       "label": "C",
+       "content": "$\\dfrac{b - d}{a - c}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "47005665-4c5e-50d1-9f65-6c64b9c5e05f",
+       "label": "D",
+       "content": "$\\dfrac{d - b}{a} - c$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "38859804-52d1-5378-b959-9a3f444d5dfe",
+   "topic": "Quadratic Equations",
+   "title": "Quadratic Equations: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on quadratic equations, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 207,
+   "questions": [
+    {
+     "id": "e5c09885-5cc3-56cc-b7bf-3491268a30e6",
+     "key": "maths-quadratics-06",
+     "stem": "Solve $x^{2} = 4x$.",
+     "image_url": null,
+     "explanation": "$x^{2} - 4x = 0$\n\n$x(x - 4) = 0$\n\n$x = 0$ or $x = 4$\n\n**Why the other options are wrong**\n\n- $x = 4$ only: You divided both sides by $x$ and lost the root $x = 0$. Never divide by an unknown: factorise $x(x - 4) = 0$.\n- $x = 2$ or $x = -2$: You took the square root of 4. The equation is $x^{2} = 4x$, not $x^{2} = 4$.\n- $x = 0$ or $x = -4$: $x(x - 4) = 0$ gives $x = 4$, not $-4$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7d6a053d-d2dd-5565-bea8-19b96ff667bd",
+       "label": "A",
+       "content": "$x = 4$ only",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "84735c73-92fa-560f-840a-e59b1b464d49",
+       "label": "B",
+       "content": "$x = 2$ or $x = -2$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f698c06b-5414-5b57-bcf5-53a1a862561a",
+       "label": "C",
+       "content": "$x = 0$ or $x = -4$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a8fa8333-e8ee-5bb6-9e63-fc38d278aac6",
+       "label": "D",
+       "content": "$x = 0$ or $x = 4$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d694a763-e9cb-5533-ab63-2e249709591b",
+     "key": "maths-quadratics-07",
+     "stem": "Solve $3x^{2} - 10x - 8 = 0$.",
+     "image_url": null,
+     "explanation": "Factorise: $3x^{2} - 10x - 8 = (3x + 2)(x - 4)$\n\nCheck: $3x^{2} - 12x + 2x - 8 = 3x^{2} - 10x - 8$. ✓\n\n$3x + 2 = 0 \\Rightarrow x = -\\dfrac{2}{3}$; $x - 4 = 0 \\Rightarrow x = 4$.\n\n**Why the other options are wrong**\n\n- $x = \\dfrac{2}{3}$ or $x = -4$: The signs are reversed. From $(3x + 2)(x - 4) = 0$: $3x = -2$ and $x = 4$.\n- $x = -2$ or $x = 4$: From $3x + 2 = 0$, divide by 3: $x = -\\dfrac{2}{3}$, not $-2$.\n- $x = -\\dfrac{4}{3}$ or $x = 2$: $(3x + 4)(x - 2) = 3x^{2} - 2x - 8$: the middle term is wrong. Check by expanding.",
+     "position": 2,
+     "options": [
+      {
+       "id": "84e4a802-f50e-5247-b345-208137be4b6c",
+       "label": "A",
+       "content": "$x = -\\dfrac{2}{3}$ or $x = 4$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5f83915e-2842-5132-af87-72022e564b38",
+       "label": "B",
+       "content": "$x = \\dfrac{2}{3}$ or $x = -4$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "61f44618-ad0d-5c29-bd78-6cdcac5bebc7",
+       "label": "C",
+       "content": "$x = -2$ or $x = 4$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "52b8a2bb-8153-51db-a616-3f8844972601",
+       "label": "D",
+       "content": "$x = -\\dfrac{4}{3}$ or $x = 2$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6d0e5bb2-b406-53a0-a226-4f71d8e53980",
+     "key": "maths-quadratics-08",
+     "stem": "The product of two consecutive positive whole numbers is 132. Find the larger number.",
+     "image_url": null,
+     "explanation": "Let the numbers be $x$ and $x + 1$: $x(x + 1) = 132$\n\n$x^{2} + x - 132 = 0 \\Rightarrow (x + 12)(x - 11) = 0 \\Rightarrow x = 11$ (positive).\n\nThe numbers are 11 and 12; the larger is 12.\n\n**Why the other options are wrong**\n\n- $11$: 11 is the smaller number. The question asks for the larger.\n- $13$: $12 \\times 13 = 156$, not 132.\n- $66$: You halved 132. The numbers are multiplied, not added.",
+     "position": 3,
+     "options": [
+      {
+       "id": "674cdd57-77b4-5abc-adaa-2307f4e57dc7",
+       "label": "A",
+       "content": "$11$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9e2954c0-e2d8-5aec-ad43-c705aefa1950",
+       "label": "B",
+       "content": "$12$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5571fe3f-3829-52a5-8d71-b78e10d08c26",
+       "label": "C",
+       "content": "$13$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ebe2c1a3-3f72-5f44-ba71-a4f32d16c5d0",
+       "label": "D",
+       "content": "$66$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5635bb75-b326-5b90-97e3-5c60f916400c",
+     "key": "maths-quadratics-09",
+     "stem": "A rectangle has a perimeter of 26 cm and an area of 40 cm². Find its length (the longer side).",
+     "image_url": null,
+     "explanation": "$2(l + w) = 26 \\Rightarrow l + w = 13 \\Rightarrow w = 13 - l$\n\n$l(13 - l) = 40 \\Rightarrow l^{2} - 13l + 40 = 0 \\Rightarrow (l - 8)(l - 5) = 0$\n\nThe sides are 8 cm and 5 cm, so the length is 8 cm.\n\n**Why the other options are wrong**\n\n- $5$ cm: 5 cm is the width, the shorter side.\n- $10$ cm: You divided the area by 4. Use $l + w = 13$ and $lw = 40$.\n- $13$ cm: 13 cm is the sum of the length and width (half the perimeter).",
+     "position": 4,
+     "options": [
+      {
+       "id": "dbda94d6-2952-58a2-831b-16c9b67e62eb",
+       "label": "A",
+       "content": "$5$ cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "01de8531-f53b-5432-8ce8-b943da2e52ce",
+       "label": "B",
+       "content": "$8$ cm",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f29d6ba2-ce9d-5484-8f57-233dcbc7fdf3",
+       "label": "C",
+       "content": "$10$ cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "48774ebd-ce81-5b2c-b6dc-5bfa3301f8ce",
+       "label": "D",
+       "content": "$13$ cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "282f511d-b8ab-560e-a57d-cb3ecabd4659",
+     "key": "maths-quadratics-10",
+     "stem": "Solve $4x^{2} - 25 = 0$.",
+     "image_url": null,
+     "explanation": "Difference of two squares: $(2x - 5)(2x + 5) = 0$\n\n$x = \\dfrac{5}{2}$ or $x = -\\dfrac{5}{2}$\n\n**Why the other options are wrong**\n\n- $x = \\dfrac{5}{2}$ only: A square root has two values: $x = \\pm\\dfrac{5}{2}$.\n- $x = \\dfrac{25}{4}$ or $x = -\\dfrac{25}{4}$: That is $x^{2}$. Take the square root: $\\sqrt{\\dfrac{25}{4}} = \\dfrac{5}{2}$.\n- $x = \\dfrac{5}{4}$ or $x = -\\dfrac{5}{4}$: You rooted 25 but not 4: $\\sqrt{\\dfrac{25}{4}} = \\dfrac{5}{2}$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "bcd741bd-7827-59a7-a691-ad072f947e3a",
+       "label": "A",
+       "content": "$x = \\dfrac{5}{2}$ only",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "195e10a1-fa36-5966-8a2f-dfb7d1821ac7",
+       "label": "B",
+       "content": "$x = \\dfrac{25}{4}$ or $x = -\\dfrac{25}{4}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "74cd57bc-eb65-5741-a2f9-8ff983de7b50",
+       "label": "C",
+       "content": "$x = \\dfrac{5}{4}$ or $x = -\\dfrac{5}{4}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1eb9dc0a-7ce2-5a8a-a044-95acf8341b54",
+       "label": "D",
+       "content": "$x = \\dfrac{5}{2}$ or $x = -\\dfrac{5}{2}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "36b66843-96d5-5b76-882b-f580fa91fe33",
+   "topic": "Sets",
+   "title": "Sets: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on sets, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 208,
+   "questions": [
+    {
+     "id": "fb2eaddc-866e-5a22-a246-e874b7835767",
+     "key": "maths-sets-06",
+     "stem": "$U = \\{1, 2, 3, \\ldots, 10\\}$ and $A$ is the set of prime numbers in $U$. Find $n(A')$.",
+     "image_url": null,
+     "explanation": "$A = \\{2, 3, 5, 7\\}$, so $n(A) = 4$.\n\n$A' = \\{1, 4, 6, 8, 9, 10\\}$, so $n(A') = 10 - 4 = 6$.\n\n**Why the other options are wrong**\n\n- $4$: 4 is $n(A)$, the number of primes. $A'$ is everything else in $U$.\n- $5$: You counted 1 as a prime. A prime has exactly two factors, so 1 is not prime.\n- $10$: 10 is $n(U)$. Remove the primes to find $n(A')$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "5fabd7de-50c0-5665-98f9-f59a60bed930",
+       "label": "A",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4d6d457a-ab42-56fb-a065-a6c206036196",
+       "label": "B",
+       "content": "$5$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "15924365-aca1-503d-8329-dd05a7e75d3c",
+       "label": "C",
+       "content": "$6$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2b5feca1-b4c8-5374-b786-1968ed13b85d",
+       "label": "D",
+       "content": "$10$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8b48604e-7770-5326-9f25-24dab5330bf8",
+     "key": "maths-sets-07",
+     "stem": "In a class, 22 pupils like football, 15 like athletics and 8 like both. How many like football only?",
+     "image_url": null,
+     "explanation": "Football only $= n(F) - n(F \\cap A) = 22 - 8 = 14$.\n\n**Why the other options are wrong**\n\n- $7$: 7 is the number who like athletics only, $15 - 8$.\n- $22$: 22 includes the 8 who like both. Subtract them.\n- $29$: 29 is the number who like at least one sport, $22 + 15 - 8$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "5e641e02-f782-5657-a95c-151932d21a8b",
+       "label": "A",
+       "content": "$7$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8dd4712d-d5b3-5da4-90ce-b9b59918a9ff",
+       "label": "B",
+       "content": "$14$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8c2696db-5ad5-5089-ae07-0375fd661dbe",
+       "label": "C",
+       "content": "$22$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bb8daee6-9ea7-51ad-9b30-3957c9368187",
+       "label": "D",
+       "content": "$29$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aa9d174e-0e4e-55a0-a155-8231a1e85acc",
+     "key": "maths-sets-08",
+     "stem": "Given that $n(A) = 15$, $n(B) = 12$ and $n(A \\cap B) = 5$, find $n(A \\cup B)$.",
+     "image_url": null,
+     "explanation": "$n(A \\cup B) = n(A) + n(B) - n(A \\cap B) = 15 + 12 - 5 = 22$\n\n**Why the other options are wrong**\n\n- $17$: You subtracted $n(A \\cap B)$ twice. It is counted twice in $15 + 12$, so subtract it once.\n- $27$: You added $n(A)$ and $n(B)$ but did not subtract the overlap.\n- $32$: You added the overlap instead of subtracting it.",
+     "position": 3,
+     "options": [
+      {
+       "id": "47a93449-b2d2-5aef-87f3-3814001b663a",
+       "label": "A",
+       "content": "$17$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "89242a3b-0618-5df0-841a-b4278b8957c5",
+       "label": "B",
+       "content": "$22$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "60c1207a-556a-50a7-a9a1-1c88af9b315f",
+       "label": "C",
+       "content": "$27$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7e09a04b-2722-562d-8091-14078c7809c8",
+       "label": "D",
+       "content": "$32$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "78d9231f-0734-57f9-8516-69c458fd75bd",
+     "key": "maths-sets-09",
+     "stem": "Which of the following is an empty set?",
+     "image_url": null,
+     "explanation": "An empty set has no members, written $\\{\\ \\}$ or $\\varnothing$. There is no whole number between 3 and 4.\n\nBe careful: $\\{0\\}$ is not empty; it contains one member, 0.\n\n**Why the other options are wrong**\n\n- $\\{0\\}$: $\\{0\\}$ has one member, the number 0, so it is not empty.\n- The set of odd numbers less than 2: This set contains 1 (and negative odd numbers if they are allowed), so it is not empty.\n- The set of numbers whose square is 4: This set is $\\{2, -2\\}$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b18251d4-d2e1-591f-964b-edbef0fc410f",
+       "label": "A",
+       "content": "The set of whole numbers between 3 and 4",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2b0912b5-667b-5530-bd48-0db9260b88d0",
+       "label": "B",
+       "content": "$\\{0\\}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "887ab8e7-565d-577b-a7b7-ad6377e659ae",
+       "label": "C",
+       "content": "The set of odd numbers less than 2",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "70dde1ee-140f-5eaa-88f9-daeb3d64b96a",
+       "label": "D",
+       "content": "The set of numbers whose square is 4",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2b81a741-3995-57a9-a2fc-d4e0dcf283c3",
+     "key": "maths-sets-10",
+     "stem": "$P$ is the set of factors of 18 and $Q$ is the set of factors of 24. Find $P \\cap Q$.",
+     "image_url": null,
+     "explanation": "$P = \\{1, 2, 3, 6, 9, 18\\}$, $Q = \\{1, 2, 3, 4, 6, 8, 12, 24\\}$.\n\n$P \\cap Q$ = the members in both $= \\{1, 2, 3, 6\\}$.\n\n**Why the other options are wrong**\n\n- $\\{2, 3, 6\\}$: You left out 1, which is a factor of every whole number.\n- $\\{1, 2, 3, 4, 6\\}$: 4 is a factor of 24 but not of 18.\n- $\\{1, 2, 3, 6, 9, 18\\}$: That is all of $P$. The intersection keeps only the factors common to both.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f4b3eded-5e53-5ea6-b596-7f66c97f1931",
+       "label": "A",
+       "content": "$\\{2, 3, 6\\}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "818cff55-35e2-5349-92f4-7ec877f2b653",
+       "label": "B",
+       "content": "$\\{1, 2, 3, 4, 6\\}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "aa0303d0-8f2b-5390-886b-0db6c1c3254c",
+       "label": "C",
+       "content": "$\\{1, 2, 3, 6, 9, 18\\}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a053c387-aca9-5a2a-a0f3-38f76a689955",
+       "label": "D",
+       "content": "$\\{1, 2, 3, 6\\}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "3c5441f4-b52c-5443-ad46-c56427030e3a",
+   "topic": "Probability",
+   "title": "Probability: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on probability, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 209,
+   "questions": [
+    {
+     "id": "1006f1ff-fd92-5e13-bed6-b54e26d5b091",
+     "key": "maths-probability-06",
+     "stem": "A letter is chosen at random from the word MATHEMATICS. What is the probability that it is M?",
+     "image_url": null,
+     "explanation": "MATHEMATICS has 11 letters, and 2 of them are M.\n\n$P(\\text{M}) = \\dfrac{2}{11}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{1}{11}$: There are two Ms in MATHEMATICS, not one.\n- $\\dfrac{1}{8}$: You counted only the 8 different letters. Each of the 11 letters is equally likely.\n- $\\dfrac{1}{4}$: You took 2 Ms out of the 8 different letters. There are 11 letters in all.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7b2f4904-8820-5d0f-a7dc-e703a6e3e339",
+       "label": "A",
+       "content": "$\\dfrac{1}{11}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "68abb5b2-e86a-5bf4-ba76-dbfc42a8a2d9",
+       "label": "B",
+       "content": "$\\dfrac{1}{8}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f7e2bc53-b005-59c9-8974-0953d2060aeb",
+       "label": "C",
+       "content": "$\\dfrac{2}{11}$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a7d469be-52f4-5dfe-ae5c-68bf9473ff48",
+       "label": "D",
+       "content": "$\\dfrac{1}{4}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3cce4d7b-e933-5c8c-8072-ed25b284d6d6",
+     "key": "maths-probability-07",
+     "stem": "The probability that it will rain tomorrow is 0.35. What is the probability that it will NOT rain tomorrow?",
+     "image_url": null,
+     "explanation": "$P(\\text{not rain}) = 1 - P(\\text{rain}) = 1 - 0.35 = 0.65$\n\n**Why the other options are wrong**\n\n- $0.35$: 0.35 is the probability that it WILL rain.\n- $0.5$: Rain and no rain are not equally likely here.\n- $1.35$: You added 1. A probability can never be more than 1.",
+     "position": 2,
+     "options": [
+      {
+       "id": "6e6cb4bf-fb1c-563a-83da-da71ab34578d",
+       "label": "A",
+       "content": "$0.35$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d49c35aa-8a75-52b1-b917-48c57d0e5ddf",
+       "label": "B",
+       "content": "$0.5$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0a9a0a6f-b8b7-5632-b2fb-da96ccd41ab8",
+       "label": "C",
+       "content": "$0.65$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "37cfa1b2-7793-5aaf-8952-3c79c627b501",
+       "label": "D",
+       "content": "$1.35$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6ae9013a-b98f-548e-88c0-7dbf7c406aad",
+     "key": "maths-probability-08",
+     "stem": "A fair coin is tossed and a fair die is thrown. What is the probability of getting a head and a 6?",
+     "image_url": null,
+     "explanation": "The coin and the die are independent, so multiply:\n\n$P(\\text{head and } 6) = \\dfrac{1}{2} \\times \\dfrac{1}{6} = \\dfrac{1}{12}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{1}{8}$: You added the numbers of outcomes, $2 + 6$. There are $2 \\times 6 = 12$ equally likely outcomes.\n- $\\dfrac{1}{6}$: That is the probability of a 6 alone. Both events must happen.\n- $\\dfrac{2}{3}$: You added the probabilities. For independent events happening together, multiply.",
+     "position": 3,
+     "options": [
+      {
+       "id": "00973595-c4a9-5c10-ad82-f82edc0ae023",
+       "label": "A",
+       "content": "$\\dfrac{1}{12}$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7021d0fe-5ed4-5518-8f0c-323337ecaab0",
+       "label": "B",
+       "content": "$\\dfrac{1}{8}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ae8e0879-9fa6-5e64-b151-2767299200f2",
+       "label": "C",
+       "content": "$\\dfrac{1}{6}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3b87dfac-2c63-58c4-8385-e2af41159637",
+       "label": "D",
+       "content": "$\\dfrac{2}{3}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "37c05b1f-0c71-5875-a874-ca6a28ebf855",
+     "key": "maths-probability-09",
+     "stem": "A bag contains 3 red and 2 white balls. A ball is picked, its colour noted, and it is put back. A second ball is then picked. Find the probability that both balls are red.",
+     "image_url": null,
+     "explanation": "With replacement, the bag is the same for each pick:\n\n$P(\\text{red, red}) = \\dfrac{3}{5} \\times \\dfrac{3}{5} = \\dfrac{9}{25}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{3}{10}$: That is the answer without replacement, $\\dfrac{3}{5} \\times \\dfrac{2}{4}$. Here the ball is put back.\n- $\\dfrac{3}{5}$: That is the probability for one ball. Both picks must be red.\n- $\\dfrac{6}{5}$: You added the probabilities. A probability cannot be more than 1.",
+     "position": 4,
+     "options": [
+      {
+       "id": "81f2a451-c202-51fb-99da-dcb6e7edb4f0",
+       "label": "A",
+       "content": "$\\dfrac{3}{10}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9892e2ed-2fb0-5a48-8add-31f0e830eda7",
+       "label": "B",
+       "content": "$\\dfrac{9}{25}$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "17df96a3-d97d-5d0b-97f3-db8aeca8bfa8",
+       "label": "C",
+       "content": "$\\dfrac{3}{5}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "42a23c6f-0d2a-50dd-a697-a71ba5ea75ec",
+       "label": "D",
+       "content": "$\\dfrac{6}{5}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aa5560b6-1483-514a-8781-e14e297ce515",
+     "key": "maths-probability-10",
+     "stem": "A fair die is thrown 120 times. How many times would you expect to get a 5?",
+     "image_url": null,
+     "explanation": "Expected number $= \\text{probability} \\times \\text{number of trials} = \\dfrac{1}{6} \\times 120 = 20$\n\n**Why the other options are wrong**\n\n- $6$: 6 is the number of faces on the die, not the expected number of fives.\n- $24$: You divided by 5. The probability of a 5 is $\\dfrac{1}{6}$.\n- $100$: That is the expected number of throws that are NOT a 5.",
+     "position": 5,
+     "options": [
+      {
+       "id": "21f589ce-9195-529f-b852-c315a9691b4d",
+       "label": "A",
+       "content": "$6$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f7cf56a3-9464-58a4-b2eb-815dbd2df33e",
+       "label": "B",
+       "content": "$20$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "dac5ee97-7fb2-52f4-8768-3d59e14abe86",
+       "label": "C",
+       "content": "$24$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9b88fb3a-ea9a-5c61-bd5b-d1206c39d6ce",
+       "label": "D",
+       "content": "$100$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "09c7730096d1"
+}
