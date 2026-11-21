@@ -840,6 +840,24 @@
   "questions": 40
  },
  {
+  "name": "agricultural_science_set4_p1",
+  "label": "Agricultural Science: set 4 (farm animals: anatomy, nutrition, breeding, health, livestock, poultry, fish, bees and products)",
+  "subject_slug": "agricultural-science",
+  "version": "0556ac04afaa",
+  "papers": [
+   "7d8653b7-a171-5935-a0ae-c24f404b6cd2",
+   "d8e3c9ea-3eb6-5648-ae89-96c20e43e538",
+   "14e9970f-57ea-5d30-816e-07b694cd4b17",
+   "8f243e4f-ec98-5503-be5c-3592571a4684",
+   "09e22bd4-f64e-55a2-a5a3-0f77a4a0439b",
+   "1f61a7ac-c2a5-588b-8861-cfcd0dc3ab0f",
+   "aeb744a7-ef9c-5d0e-9372-46e0f7d31a8b",
+   "5f969a4a-3d56-50bb-99aa-575cd35c91f4",
+   "5cd5febc-68e2-553e-976b-379877c78f55"
+  ],
+  "questions": 66
+ },
+ {
   "name": "maths_mock_p1",
   "label": "Mathematics: timed mock exam, Paper 1",
   "subject_slug": "mathematics",

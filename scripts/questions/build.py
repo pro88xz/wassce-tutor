@@ -374,6 +374,7 @@ SETS += [
         (1, "Agricultural Science: set 1 (agriculture, land tenure, tools, machinery and soil)"),
         (2, "Agricultural Science: set 2 (crop production, propagation, cereals, legumes, roots, cash crops, vegetables and fruit)"),
         (3, "Agricultural Science: set 3 (weeds, pests and diseases, crop improvement, processing and storage, forestry)"),
+        (4, "Agricultural Science: set 4 (farm animals: anatomy, nutrition, breeding, health, livestock, poultry, fish, bees and products)"),
     )
 ]
 

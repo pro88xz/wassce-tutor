@@ -1,0 +1,2606 @@
+{
+ "name": "agricultural_science_set4_p1",
+ "label": "Agricultural Science: set 4 (farm animals: anatomy, nutrition, breeding, health, livestock, poultry, fish, bees and products)",
+ "subject_slug": "agricultural-science",
+ "papers": [
+  {
+   "id": "7d8653b7-a171-5935-a0ae-c24f404b6cd2",
+   "topic": "Introduction to Farm Animals",
+   "title": "Introduction to Farm Animals: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on introduction to farm animals, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 160,
+   "questions": [
+    {
+     "id": "dc7cbd22-7d5c-57d3-8865-61c7f8ac0ea4",
+     "key": "agr-fa2-01",
+     "stem": "Which of these farm animals is a ruminant?",
+     "image_url": null,
+     "explanation": "Ruminants (cattle, sheep, goats) have one stomach with four chambers, chew the cud, and can digest the cellulose in grass with the help of microbes.\n\n**Why the other options are wrong**\n\n- Pig: The pig has a simple stomach: it is a non-ruminant (monogastric).\n- Rabbit: The rabbit is a non-ruminant; it does not chew the cud.\n- Chicken: The chicken is a bird with a crop and gizzard, not a ruminant.",
+     "position": 1,
+     "options": [
+      {
+       "id": "25ec6a07-97e9-537c-8bf4-21bc6df8b82e",
+       "label": "A",
+       "content": "Pig",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "661f5bc6-069b-53c9-aad9-1e7d37845151",
+       "label": "B",
+       "content": "Rabbit",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "84761068-eaf3-5b5e-bc9c-039ba3aec61f",
+       "label": "C",
+       "content": "Chicken",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "05211b8d-98fa-5ef8-9778-fed7ccda3d00",
+       "label": "D",
+       "content": "Goat",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8fe1b581-3bc3-5113-8c84-fce9c94aabfe",
+     "key": "agr-fa2-02",
+     "stem": "Which breed of cattle is native to West Africa and tolerant of trypanosomiasis?",
+     "image_url": null,
+     "explanation": "The N'Dama is small and hardy and survives where tsetse flies spread trypanosomiasis, which is why it is the main cattle breed in Sierra Leone.\n\n**Why the other options are wrong**\n\n- Friesian: The Friesian is an exotic dairy breed and is very susceptible to trypanosomiasis.\n- Jersey: The Jersey is an exotic dairy breed.\n- Brahman: The Brahman is an exotic breed developed outside West Africa.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8ea097db-ff8d-5c1b-9916-deeef21789fd",
+       "label": "A",
+       "content": "N'Dama",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "acf0118c-6a0a-517f-90c0-5e6f5969e5e6",
+       "label": "B",
+       "content": "Friesian",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c28d9e1e-85e5-5f8f-8b96-03d52ba6bd5c",
+       "label": "C",
+       "content": "Jersey",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1fb0964d-ad55-57c3-a111-c97bb59f52fa",
+       "label": "D",
+       "content": "Brahman",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9b768a69-a376-51c0-82de-0825d79ce54f",
+     "key": "agr-fa2-03",
+     "stem": "Compared with exotic breeds, local breeds of livestock are generally",
+     "image_url": null,
+     "explanation": "Crossbreeding local and exotic animals aims to combine hardiness with productivity.\n\n**Why the other options are wrong**\n\n- more productive but less hardy: This describes exotic breeds: high yields of meat, milk or eggs, but less able to cope with heat, poor feed and local diseases.\n- both hardier and more productive: Local breeds survive local conditions well, but grow slowly and give little milk or few eggs.\n- both less hardy and less productive: Local breeds are hardier than exotic ones, which is their main advantage.",
+     "position": 3,
+     "options": [
+      {
+       "id": "054f4a3d-f01e-5152-a6b9-34e9f86627af",
+       "label": "A",
+       "content": "more productive but less hardy",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "89ce17fb-54d4-5576-88fa-931d1506fd4b",
+       "label": "B",
+       "content": "both hardier and more productive",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "26638384-30ce-5008-9f71-b70ebb5ab53d",
+       "label": "C",
+       "content": "hardier but less productive",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a6121e9c-5674-501d-a78b-d57cd1404d81",
+       "label": "D",
+       "content": "both less hardy and less productive",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7d0d90d2-89b7-5075-8a57-dc1c5cd28e06",
+     "key": "agr-fa2-04",
+     "stem": "Goats are kept in a house at night and allowed out to graze during the day, with some extra feed given. This system of management is",
+     "image_url": null,
+     "explanation": "For many village farmers, the semi-intensive system is the best balance: better control and growth than free range, at a cost they can afford.\n\n**Why the other options are wrong**\n\n- extensive: In the extensive (free-range) system, animals roam to find their own food with little housing or care.\n- intensive: In the intensive system, animals are confined all the time and given all their feed.\n- transhumance: Transhumance is the seasonal movement of herds in search of grazing and water.",
+     "position": 4,
+     "options": [
+      {
+       "id": "cd57174e-1865-57e5-8b31-bff4ac47a3c6",
+       "label": "A",
+       "content": "extensive",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3445d474-7abf-5982-8af4-260aabfea21d",
+       "label": "B",
+       "content": "intensive",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "34b042c3-f275-5a18-96b9-c9ea59c2009b",
+       "label": "C",
+       "content": "transhumance",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f7042560-3cae-5448-a58c-5ad706971c98",
+       "label": "D",
+       "content": "semi-intensive",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "614852f4-2b64-5b19-a960-e028de6a17ed",
+     "key": "agr-fa2-05",
+     "stem": "Which is a disadvantage of the extensive (free-range) system of keeping livestock?",
+     "image_url": null,
+     "explanation": "Free-range animals also spread parasites and diseases, and can damage crops.\n\n**Why the other options are wrong**\n\n- Housing and feed are very expensive: High housing and feed costs are a disadvantage of the intensive system.\n- A lot of skilled labour is needed: The extensive system needs little labour; that is why it is cheap.\n- The animals cannot be let out to find their own food: In the extensive system the animals do find their own food.",
+     "position": 5,
+     "options": [
+      {
+       "id": "94a7ebff-e584-5a00-bbff-430582db3c53",
+       "label": "A",
+       "content": "Animals grow slowly and are easily lost to theft, predators and disease",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1765547c-5aa7-5ad0-99a9-227d7e1be0c5",
+       "label": "B",
+       "content": "Housing and feed are very expensive",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "63ccaa5f-5544-5833-b18f-2d0c62f5120d",
+       "label": "C",
+       "content": "A lot of skilled labour is needed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "05636884-cfd4-5d55-a6ba-b92539c26479",
+       "label": "D",
+       "content": "The animals cannot be let out to find their own food",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fe335695-9fca-5cae-8ee7-64a5a580e48c",
+     "key": "agr-fa2-06",
+     "stem": "Which method is used to identify individual cattle in a herd?",
+     "image_url": null,
+     "explanation": "Ear tags, ear notching, tattooing and branding identify animals, so that records of breeding, treatment and growth can be kept.\n\n**Why the other options are wrong**\n\n- Debeaking: Debeaking is trimming the beaks of poultry to reduce pecking.\n- Castration: Castration removes the testes of males not kept for breeding.\n- Deworming: Deworming treats animals for internal worms.",
+     "position": 6,
+     "options": [
+      {
+       "id": "ae757c0c-02b7-5b27-a65f-26cf28b5b43d",
+       "label": "A",
+       "content": "Debeaking",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2ae63cd8-6b5b-5c3e-a731-38ceadc8f135",
+       "label": "B",
+       "content": "Ear tagging",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bc5fbcb8-0de6-5f9d-8641-365d1109cd5e",
+       "label": "C",
+       "content": "Castration",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "26acd94c-1356-58f4-b084-9936803511b0",
+       "label": "D",
+       "content": "Deworming",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c2181def-c837-5f58-b14c-0bbf66444005",
+     "key": "agr-fa2-07",
+     "stem": "Livestock in rural Sierra Leone are often called a 'bank on legs' because",
+     "image_url": null,
+     "explanation": "Animals store wealth that grows as they grow and breed, and can be turned into cash when needed.\n\n**Why the other options are wrong**\n\n- they earn money only from the milk they produce: Most village livestock earn money when they are sold, not from milk.\n- banks lend money only to livestock farmers: This is not true and not the meaning of the saying.\n- they never die or need any care: Animals can die and need feeding and health care.",
+     "position": 7,
+     "options": [
+      {
+       "id": "c18b165a-555e-5e89-8250-08f4f277a3e9",
+       "label": "A",
+       "content": "they earn money only from the milk they produce",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "81f73ef6-6bb3-590f-8a93-0df6debe9659",
+       "label": "B",
+       "content": "banks lend money only to livestock farmers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "382584e1-54b0-52fa-b840-817b30c755f8",
+       "label": "C",
+       "content": "they can be sold when the family needs money, for example for school fees",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9be7019a-562e-5bec-a981-23e98e823441",
+       "label": "D",
+       "content": "they never die or need any care",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d8e3c9ea-3eb6-5648-ae89-96c20e43e538",
+   "topic": "Animal Anatomy and Physiology",
+   "title": "Animal Anatomy and Physiology: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on animal anatomy and physiology, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 161,
+   "questions": [
+    {
+     "id": "55c441bc-0122-546d-8d76-985bb637545d",
+     "key": "agr-aa-01",
+     "stem": "In a ruminant, the cellulose in grass is digested mainly in the",
+     "image_url": null,
+     "explanation": "Bacteria and protozoa in the rumen ferment cellulose into volatile fatty acids, which the animal absorbs for energy. The microbes also make protein that the animal later digests.\n\n**Why the other options are wrong**\n\n- abomasum, by the animal's own enzymes: No mammal makes an enzyme that digests cellulose; the abomasum digests protein.\n- omasum, by hydrochloric acid: The omasum absorbs water from the food.\n- reticulum, by grinding with stones: The reticulum forms the cud; grinding with stones happens in a bird's gizzard.",
+     "position": 1,
+     "options": [
+      {
+       "id": "2ffdfb10-86b3-5bf6-bafc-6853a1172254",
+       "label": "A",
+       "content": "abomasum, by the animal's own enzymes",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3dae332f-5222-5848-ad6c-7c32c642ab0e",
+       "label": "B",
+       "content": "omasum, by hydrochloric acid",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2ff4ad1c-341f-591f-9f0a-d5ed0624ef1f",
+       "label": "C",
+       "content": "reticulum, by grinding with stones",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "545d6147-0583-58cd-9ea5-11afa9fb470e",
+       "label": "D",
+       "content": "rumen, by microbes",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "55d8a176-0805-58ca-ba27-d061303c401d",
+     "key": "agr-aa-02",
+     "stem": "Nails and other heavy objects swallowed by cattle are often trapped in the",
+     "image_url": null,
+     "explanation": "The reticulum, with its honeycomb lining, also forms food into balls of cud that are returned to the mouth.\n\n**Why the other options are wrong**\n\n- rumen: The rumen is the large fermentation chamber; heavy objects pass on and lodge in the honeycomb-lined reticulum.\n- omasum: The omasum absorbs water from the food.\n- abomasum: The abomasum is the true stomach, which secretes acid and enzymes.",
+     "position": 2,
+     "options": [
+      {
+       "id": "84d28139-46ee-5da4-b540-629efc0519d7",
+       "label": "A",
+       "content": "reticulum",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "04573c4c-4db5-5245-8352-f5b017c3ead9",
+       "label": "B",
+       "content": "rumen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ed7ef5c7-ee3e-54cc-9720-c1480f8b3b38",
+       "label": "C",
+       "content": "omasum",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c2716270-6aaf-5532-bd24-2f5a48a6fae9",
+       "label": "D",
+       "content": "abomasum",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cab3a0aa-ee06-5d6e-bafc-410583bac243",
+     "key": "agr-aa-03",
+     "stem": "When a cow 'chews the cud', it is",
+     "image_url": null,
+     "explanation": "Rumination breaks the food into small pieces with a large surface for the rumen microbes, so cellulose is digested more completely.\n\n**Why the other options are wrong**\n\n- chewing grass thoroughly before swallowing it for the first time: Ruminants swallow grass quickly at first; the thorough chewing comes later.\n- vomiting food it cannot digest: Rumination is a normal part of digestion, not vomiting.\n- grinding food with grit in its gizzard: Only birds have a gizzard.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1568ddfe-c8ba-56f8-92ce-fd02f2053e1f",
+       "label": "A",
+       "content": "chewing grass thoroughly before swallowing it for the first time",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "61be292f-0cfd-5bf9-a9f4-7a4375a42438",
+       "label": "B",
+       "content": "bringing partly digested food back to the mouth and chewing it again",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "913d978e-14b4-54eb-97ac-5687b26638de",
+       "label": "C",
+       "content": "vomiting food it cannot digest",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3a072638-d8d9-5d1f-a9e1-f74801195e73",
+       "label": "D",
+       "content": "grinding food with grit in its gizzard",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cb94f8e4-8906-5c0d-9954-3d6c1a4239fb",
+     "key": "agr-aa-04",
+     "stem": "In the digestive system of a fowl, the gizzard",
+     "image_url": null,
+     "explanation": "Birds have no teeth, so the thick, muscular gizzard does the grinding.\n\n**Why the other options are wrong**\n\n- stores and softens the food: Storing and softening food is the job of the crop.\n- secretes digestive enzymes and acid: Enzymes and acid are secreted by the proventriculus.\n- is the common opening for droppings and eggs: The common opening is the cloaca.",
+     "position": 4,
+     "options": [
+      {
+       "id": "9deb7385-003a-5208-832b-3be7f0e660f9",
+       "label": "A",
+       "content": "stores and softens the food",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "96352586-0fe8-5968-ba36-cfdb3d90de63",
+       "label": "B",
+       "content": "secretes digestive enzymes and acid",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3df4bc51-8e6a-5ad3-8272-dd38bac8433a",
+       "label": "C",
+       "content": "grinds the food with grit the bird has swallowed",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "76657bd3-ce43-552b-a28b-8459b7076fd6",
+       "label": "D",
+       "content": "is the common opening for droppings and eggs",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d4255c67-61b6-5a66-9b38-0ab643feb783",
+     "key": "agr-aa-05",
+     "stem": "Chickens kept indoors on deep litter should be given grit because",
+     "image_url": null,
+     "explanation": "Free-range birds pick up their own small stones; housed birds cannot, so grit must be provided.\n\n**Why the other options are wrong**\n\n- grit is a rich source of protein: Grit is small stones; it supplies no protein.\n- grit prevents coccidiosis: Coccidiosis is prevented by dry litter and coccidiostats.\n- grit keeps the litter dry: Litter is kept dry by good ventilation and fixing leaking drinkers.",
+     "position": 5,
+     "options": [
+      {
+       "id": "fec76046-a5b4-5b86-9589-21ec79100ae7",
+       "label": "A",
+       "content": "grit is a rich source of protein",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "02f765d3-e575-5724-b7af-0e34099095b4",
+       "label": "B",
+       "content": "grit prevents coccidiosis",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "04781d01-fc9b-5925-8601-f3e12522b3ae",
+       "label": "C",
+       "content": "grit keeps the litter dry",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2752e749-bbe3-5e24-b547-6f1903a25b2e",
+       "label": "D",
+       "content": "they have no teeth, and the gizzard needs grit to grind whole grains",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fc7f0f0a-f2bf-5101-bef8-b0cc1ae7b334",
+     "key": "agr-aa-06",
+     "stem": "In a bull, sperm are stored and matured in the",
+     "image_url": null,
+     "explanation": "Testes (produce) → epididymis (store and mature) → vas deferens (carry) → urethra; the accessory glands add the fluid of the semen.\n\n**Why the other options are wrong**\n\n- testes: The testes produce the sperm.\n- vas deferens: The vas deferens carries sperm to the urethra.\n- prostate gland: The prostate is an accessory gland that adds fluid to the semen.",
+     "position": 6,
+     "options": [
+      {
+       "id": "14657331-20f9-5681-a2f9-2a684fef5625",
+       "label": "A",
+       "content": "epididymis",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c80679b4-f92c-507e-bd73-e4acff5204a5",
+       "label": "B",
+       "content": "testes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b4d154e1-5014-5bb0-9d49-48da6107d966",
+       "label": "C",
+       "content": "vas deferens",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "790f64d7-a914-500c-a47e-607bb35796dc",
+       "label": "D",
+       "content": "prostate gland",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "daec48e1-82b4-502c-b056-0491998a3625",
+     "key": "agr-aa-07",
+     "stem": "In the oviduct of a hen, the shell is added to the egg in the",
+     "image_url": null,
+     "explanation": "Infundibulum → magnum (albumen) → isthmus (membranes) → uterus or shell gland (shell, the longest stage) → vagina → cloaca.\n\n**Why the other options are wrong**\n\n- infundibulum: The infundibulum catches the yolk; fertilisation takes place here.\n- magnum: The magnum adds the albumen (egg white).\n- isthmus: The isthmus adds the shell membranes.",
+     "position": 7,
+     "options": [
+      {
+       "id": "df8e4d4a-c83d-5012-80df-5c7836c98873",
+       "label": "A",
+       "content": "infundibulum",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4fb97e27-ac26-5382-90b2-e8f7f0d53e9e",
+       "label": "B",
+       "content": "uterus (shell gland)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "3e92176f-af62-5ea8-9ff5-7b36de932d70",
+       "label": "C",
+       "content": "magnum",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6e5e9e80-db18-55a7-af69-86e59b489446",
+       "label": "D",
+       "content": "isthmus",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "14e9970f-57ea-5d30-816e-07b694cd4b17",
+   "topic": "Animal Nutrition and Feeding",
+   "title": "Animal Nutrition and Feeding: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on animal nutrition and feeding, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 162,
+   "questions": [
+    {
+     "id": "d250a3c6-93ac-5bab-8b9a-db3a41242f03",
+     "key": "agr-an-01",
+     "stem": "Which of these feedstuffs is a protein concentrate?",
+     "image_url": null,
+     "explanation": "Protein concentrates include fish meal, groundnut cake, soya bean meal and blood meal.\n\n**Why the other options are wrong**\n\n- Maize: Maize is an energy concentrate, rich in carbohydrate.\n- Rice straw: Rice straw is a roughage: bulky, high in fibre and low in protein.\n- Salt lick: A salt lick is a mineral supplement.",
+     "position": 1,
+     "options": [
+      {
+       "id": "540ef273-d497-579a-a500-f3106da80090",
+       "label": "A",
+       "content": "Maize",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "80c3a396-2d16-5ff8-80d0-8c7fb4599799",
+       "label": "B",
+       "content": "Rice straw",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ca70a2f7-05ba-5c70-8572-fb769da8e913",
+       "label": "C",
+       "content": "Groundnut cake",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0e00e777-fce1-5b57-bd24-5bbd047d3c98",
+       "label": "D",
+       "content": "Salt lick",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9d443b08-7ab9-53fb-9154-384742b97c8a",
+     "key": "agr-an-02",
+     "stem": "Roughages differ from concentrates in that roughages are",
+     "image_url": null,
+     "explanation": "Roughages include fresh grass, legume forages, hay, silage, straw and crop residues.\n\n**Why the other options are wrong**\n\n- low in fibre and high in protein: This describes protein concentrates such as fish meal.\n- fed mainly to poultry: Roughages are fed mainly to ruminants, which can digest fibre.\n- always made in a feed mill: Most roughages, such as grass and straw, are not manufactured.",
+     "position": 2,
+     "options": [
+      {
+       "id": "b7cd6ef6-f852-5ec6-941f-20f40da1445e",
+       "label": "A",
+       "content": "low in fibre and high in protein",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a00c14ca-044b-5528-95ab-d7bb59fa0722",
+       "label": "B",
+       "content": "fed mainly to poultry",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "91374346-f87b-5cc5-b8ac-487f33fad9d8",
+       "label": "C",
+       "content": "always made in a feed mill",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4901ba70-c254-5936-b5fd-e3a75df7db4f",
+       "label": "D",
+       "content": "bulky, high in fibre and low in energy per kilogram",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4aee283e-8f13-5224-9c4a-70ceb9865151",
+     "key": "agr-an-03",
+     "stem": "A farmer wants 100 kg of feed containing 16% crude protein, using maize (10% crude protein) and groundnut cake (40% crude protein). How much of each is needed?",
+     "image_url": null,
+     "explanation": "Pearson square: maize 40 − 16 = 24 parts; groundnut cake 16 − 10 = 6 parts; total 30 parts. Maize = 24/30 × 100 = 80 kg; groundnut cake = 6/30 × 100 = 20 kg. Check: 0.8 × 10 + 0.2 × 40 = 8 + 8 = 16%.\n\n**Why the other options are wrong**\n\n- 20 kg of maize and 80 kg of groundnut cake: The amounts are on the wrong feeds; this mix would contain 34% protein.\n- 50 kg of maize and 50 kg of groundnut cake: Equal amounts give 25% protein, far more than 16%.\n- 60 kg of maize and 40 kg of groundnut cake: This mix gives 22% protein, not 16%.",
+     "position": 3,
+     "options": [
+      {
+       "id": "f68d8880-20c0-5b1c-b14f-f4605bb9eb97",
+       "label": "A",
+       "content": "80 kg of maize and 20 kg of groundnut cake",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a369257e-c2c2-57a8-b2dd-2a05c5a05c3c",
+       "label": "B",
+       "content": "20 kg of maize and 80 kg of groundnut cake",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5d4e7f93-e599-528c-9b18-c19a5959308c",
+       "label": "C",
+       "content": "50 kg of maize and 50 kg of groundnut cake",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "82d0b6be-f507-5695-a549-9ac4e12cd451",
+       "label": "D",
+       "content": "60 kg of maize and 40 kg of groundnut cake",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c22f46c4-6fa1-5b34-99e6-02396eeabc9d",
+     "key": "agr-an-04",
+     "stem": "Silage is made by",
+     "image_url": null,
+     "explanation": "The bacteria make acid that preserves the forage, so animals have feed in the dry season. Air must be kept out, or the silage rots.\n\n**Why the other options are wrong**\n\n- drying grass in the sun to about 15% moisture: Drying grass for storage makes hay.\n- burning crop residues and storing the ash: Ash has almost no feeding value.\n- mixing fresh grass with fish meal: Mixing in fish meal does not preserve grass.",
+     "position": 4,
+     "options": [
+      {
+       "id": "28a7aeb0-eed2-5d81-809f-75f018cb0ca1",
+       "label": "A",
+       "content": "drying grass in the sun to about 15% moisture",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f122a799-89f2-5a4a-83e6-ba524fb7271a",
+       "label": "B",
+       "content": "packing chopped green forage tightly in an airtight pit so that bacteria ferment it",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1e257e08-76a8-5978-951b-937fab9260a6",
+       "label": "C",
+       "content": "burning crop residues and storing the ash",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9e333f48-ba56-5803-9fcb-6e17335ec46c",
+       "label": "D",
+       "content": "mixing fresh grass with fish meal",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "72d7422a-ae9b-5756-adc8-291e8c104a12",
+     "key": "agr-an-05",
+     "stem": "Dividing a pasture into paddocks that are grazed in turn, so that each can recover, is called",
+     "image_url": null,
+     "explanation": "Rotational grazing lets the grass regrow and breaks the life cycles of some parasites.\n\n**Why the other options are wrong**\n\n- continuous grazing: In continuous grazing animals graze the same area all the time, which leads to overgrazing.\n- zero grazing: In zero grazing (cut and carry), forage is cut and brought to housed animals.\n- tethering: Tethering is tying an animal on a rope and moving it during the day.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e75d961d-5f2c-58da-aa28-de86a004234f",
+       "label": "A",
+       "content": "continuous grazing",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9df9c898-1012-562b-889d-c2a1e4ab5848",
+       "label": "B",
+       "content": "zero grazing",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b938f4f7-541e-5d9c-90d5-df76741d691c",
+       "label": "C",
+       "content": "rotational grazing",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6d1fdb08-e657-5c58-b55a-d3c29be8cbe9",
+       "label": "D",
+       "content": "tethering",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3561e6d6-871a-513e-ac2b-d59f4509c068",
+     "key": "agr-an-06",
+     "stem": "If a flock of laying hens runs out of drinking water for a day, the most likely result is",
+     "image_url": null,
+     "explanation": "Water is the cheapest and most neglected nutrient. Without it, feeding and production fall quickly, especially in hot weather.\n\n**Why the other options are wrong**\n\n- an increase in the size of the eggs: Shortage of water reduces laying; it does not make eggs bigger.\n- no effect, because hens get enough water from their feed: A laying hen drinks about twice as much water as the feed she eats.\n- thicker eggshells: Shell thickness depends on calcium, not on a shortage of water.",
+     "position": 6,
+     "options": [
+      {
+       "id": "c294f277-ebda-5872-ab8b-fa9a7b36ade6",
+       "label": "A",
+       "content": "an increase in the size of the eggs",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "df9661b8-05b4-536a-86cf-2cb7165e1da9",
+       "label": "B",
+       "content": "no effect, because hens get enough water from their feed",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a79273e1-c074-5e09-898e-f1128eff1d57",
+       "label": "C",
+       "content": "thicker eggshells",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "626387ba-5a06-5e22-8728-587790aeca44",
+       "label": "D",
+       "content": "a sharp fall in egg production",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "57b429b9-446d-5703-963e-7e8b2b57c981",
+     "key": "agr-an-07",
+     "stem": "Layers' mash contains extra calcium, and oyster shell may also be given, so that the hens",
+     "image_url": null,
+     "explanation": "An eggshell is mostly calcium carbonate. Thin-shelled eggs are a sign that the hens need more calcium.\n\n**Why the other options are wrong**\n\n- grow faster for meat: Fast growth for meat is the aim of broiler feeding.\n- are protected against Newcastle disease: Newcastle disease is prevented by vaccination.\n- lay eggs with larger yolks: Calcium is used for the shell, not the yolk.",
+     "position": 7,
+     "options": [
+      {
+       "id": "671b0020-509f-51a0-9336-afd86d940ce7",
+       "label": "A",
+       "content": "lay eggs with strong shells",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0a5ae760-dcee-5576-b591-4e5b07263c95",
+       "label": "B",
+       "content": "grow faster for meat",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2be7a906-7470-5453-93c3-cf9c031ab76d",
+       "label": "C",
+       "content": "are protected against Newcastle disease",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "65e48956-5455-5b52-84dc-f860466d34c3",
+       "label": "D",
+       "content": "lay eggs with larger yolks",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fa6ba991-ba1d-5d95-b6fc-765e4cb2961b",
+     "key": "agr-an-08",
+     "stem": "Which of these is a legume grown with grasses in improved pastures?",
+     "image_url": null,
+     "explanation": "Pasture legumes add nitrogen to the soil and raise the protein content of the forage.\n\n**Why the other options are wrong**\n\n- Guinea grass (*Panicum maximum*): Guinea grass is a pasture grass, not a legume.\n- Elephant grass (*Pennisetum purpureum*): Elephant grass is a tall pasture grass.\n- *Brachiaria*: *Brachiaria* is a pasture grass.",
+     "position": 8,
+     "options": [
+      {
+       "id": "01910538-a586-5cc0-af09-130437b1ea5f",
+       "label": "A",
+       "content": "Guinea grass (*Panicum maximum*)",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ad369e60-eb24-581c-9b5c-5d265037a41e",
+       "label": "B",
+       "content": "*Stylosanthes*",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0d48f009-c3d5-5998-bcd1-1c46b75029d9",
+       "label": "C",
+       "content": "Elephant grass (*Pennisetum purpureum*)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3a149a8a-86ed-53fd-bad5-0632efa2a1e3",
+       "label": "D",
+       "content": "*Brachiaria*",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8f243e4f-ec98-5503-be5c-3592571a4684",
+   "topic": "Animal Reproduction and Breeding",
+   "title": "Animal Reproduction and Breeding: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on animal reproduction and breeding, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 163,
+   "questions": [
+    {
+     "id": "34f788e2-8da7-5749-ae75-b2af4221cd64",
+     "key": "agr-ar-01",
+     "stem": "The gestation period of a sow is about",
+     "image_url": null,
+     "explanation": "114 days is easy to remember as 3 months, 3 weeks and 3 days.\n\n**Why the other options are wrong**\n\n- 31 days: About 31 days is the gestation period of a rabbit.\n- 150 days: About 150 days is the gestation period of a goat.\n- 283 days: About 283 days is the gestation period of a cow.",
+     "position": 1,
+     "options": [
+      {
+       "id": "28e64c31-eab4-58cb-b855-281014cde192",
+       "label": "A",
+       "content": "31 days",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cb181d8c-f5c6-521e-8f74-e16cbb858294",
+       "label": "B",
+       "content": "114 days",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6897e41a-93a2-5b14-8e21-1ee2c10acb1f",
+       "label": "C",
+       "content": "150 days",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c3875f70-597b-5352-8aab-1f4b34ce33d3",
+       "label": "D",
+       "content": "283 days",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "15591429-70d3-5b44-8113-85308d76f810",
+     "key": "agr-ar-02",
+     "stem": "The surest sign that a cow is on heat is that she",
+     "image_url": null,
+     "explanation": "Other signs are restlessness, bellowing, mounting other cows, a swollen red vulva and a clear mucus discharge.\n\n**Why the other options are wrong**\n\n- eats much more than usual: A cow on heat usually eats less, not more.\n- lies down and refuses to move: A cow on heat is restless, not inactive.\n- suddenly produces more milk: Milk yield often falls slightly during heat.",
+     "position": 2,
+     "options": [
+      {
+       "id": "210dbeef-e2f9-59b1-8602-4c23f859baa8",
+       "label": "A",
+       "content": "eats much more than usual",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "37ac732d-2cb5-59a8-8ddf-12c0433f0bcb",
+       "label": "B",
+       "content": "lies down and refuses to move",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ec0bac44-6de0-53ad-9698-ceb8a40557ae",
+       "label": "C",
+       "content": "stands still to be mounted by other animals",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "de12f33c-6730-5d9d-94b8-2a7d6de19959",
+       "label": "D",
+       "content": "suddenly produces more milk",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "62759601-0648-5649-8e44-dbded55dba84",
+     "key": "agr-ar-03",
+     "stem": "A newborn calf, kid or piglet should receive colostrum within the first 24 hours of life because",
+     "image_url": null,
+     "explanation": "The antibodies in colostrum give the newborn passive immunity until its own immune system develops.\n\n**Why the other options are wrong**\n\n- colostrum is poorer in nutrients than later milk: Colostrum is richer, not poorer, than later milk.\n- the mother stops producing milk after 24 hours: The mother goes on producing milk for months.\n- colostrum is the only source of iron for the young: The iron problem applies to piglets, which need an iron injection.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d73eea6f-12e9-59c4-8775-60b2577d7fca",
+       "label": "A",
+       "content": "colostrum is poorer in nutrients than later milk",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "01ed3d25-a069-5fa8-af5e-536aab1ca68d",
+       "label": "B",
+       "content": "the mother stops producing milk after 24 hours",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e06ce6f4-e68e-592e-b759-aefbf6c8c0ff",
+       "label": "C",
+       "content": "colostrum is the only source of iron for the young",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d97c92d2-7434-538b-8827-020b1f2c10bd",
+       "label": "D",
+       "content": "colostrum contains antibodies that the young can absorb only in their first hours",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "015c48f7-0ce5-5042-ab42-07d3a716f751",
+     "key": "agr-ar-04",
+     "stem": "Piglets kept on concrete floors are given an iron injection at about three days old because",
+     "image_url": null,
+     "explanation": "Without iron, piglets become anaemic, grow slowly and may die.\n\n**Why the other options are wrong**\n\n- iron prevents African swine fever: Iron does not prevent this virus disease.\n- iron helps their needle teeth fall out: Needle teeth are clipped; iron has nothing to do with them.\n- iron replaces the colostrum they need: Piglets still need colostrum for antibodies.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c8e5109f-9163-5871-9d2e-edb6c781874f",
+       "label": "A",
+       "content": "the sow's milk contains little iron, and they cannot get iron from soil",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "09d2e5cd-38fd-5897-ad33-6ea12dec44df",
+       "label": "B",
+       "content": "iron prevents African swine fever",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "10af5e02-9a94-5756-bb4e-d445d156e301",
+       "label": "C",
+       "content": "iron helps their needle teeth fall out",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "469959eb-1329-5873-ae1d-3a6a60cbaaa0",
+       "label": "D",
+       "content": "iron replaces the colostrum they need",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "43a86008-589b-5b64-ac3a-a53f71afb188",
+     "key": "agr-ar-05",
+     "stem": "Mating a local N'Dama cow with a bull of a high-yielding exotic breed is an example of",
+     "image_url": null,
+     "explanation": "Crossbred offspring often show hybrid vigour and combine the hardiness of the local breed with the productivity of the exotic one.\n\n**Why the other options are wrong**\n\n- inbreeding: Inbreeding is mating closely related animals.\n- line breeding: Line breeding is mild inbreeding to keep the traits of one outstanding ancestor.\n- selection: Selection is choosing the best animals within a breed as parents.",
+     "position": 5,
+     "options": [
+      {
+       "id": "c0ccd03e-21d7-54d6-9532-bc1b2fb68321",
+       "label": "A",
+       "content": "inbreeding",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "32a66461-0fe4-54f2-a553-027c8353973b",
+       "label": "B",
+       "content": "crossbreeding",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "171a11c0-da14-5c3f-bdd6-7159a3f5171d",
+       "label": "C",
+       "content": "line breeding",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f9c5c1e2-a55a-5de9-8e92-71aaa6fda4ee",
+       "label": "D",
+       "content": "selection",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "094ddb9a-84f4-526d-9693-02a1fd154f32",
+     "key": "agr-ar-06",
+     "stem": "An advantage of artificial insemination (AI) over natural mating is that",
+     "image_url": null,
+     "explanation": "AI also saves the cost of keeping a male and reduces the spread of some diseases passed on at mating.\n\n**Why the other options are wrong**\n\n- no trained person is needed: AI must be done by a trained technician.\n- the farmer no longer needs to detect heat: Heat detection is even more important with AI, so that it is done at the right time.\n- every insemination produces twins: AI does not increase the number of young per birth.",
+     "position": 6,
+     "options": [
+      {
+       "id": "9190ff25-808d-5a79-abb8-56351c53b372",
+       "label": "A",
+       "content": "no trained person is needed",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "64b66305-e90f-5806-aecb-d3a8e85038d3",
+       "label": "B",
+       "content": "the farmer no longer needs to detect heat",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5cf1f47a-e01a-5777-9723-3450b1468662",
+       "label": "C",
+       "content": "semen from one outstanding male can be used to serve many females, even far away",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "44deb7b0-1cfc-58c8-9bb0-7b5d19ec697e",
+       "label": "D",
+       "content": "every insemination produces twins",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2cc9b7b4-66da-5451-b765-4b4b1d7023d3",
+     "key": "agr-ar-07",
+     "stem": "How long do fertile chicken eggs take to hatch, under a broody hen or in an incubator?",
+     "image_url": null,
+     "explanation": "An incubator must be kept at about 37.5 °C with the right humidity, and the eggs turned several times a day.\n\n**Why the other options are wrong**\n\n- 14 days: 14 days is far too short; the chick is not fully formed.\n- 28 days: 28 days is too long for chicken eggs.\n- 31 days: About 31 days is the gestation period of a rabbit, not the incubation period of an egg.",
+     "position": 7,
+     "options": [
+      {
+       "id": "6a4be8f4-0557-5af3-bef6-c0d603e120e3",
+       "label": "A",
+       "content": "14 days",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7b1e50d7-bc0d-564b-b60d-86106111db31",
+       "label": "B",
+       "content": "21 days",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c0273751-c404-5cfe-8e50-326b648b7785",
+       "label": "C",
+       "content": "28 days",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "707e07ad-cd3a-5851-b11a-2b239226a773",
+       "label": "D",
+       "content": "31 days",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "09e22bd4-f64e-55a2-a5a3-0f77a4a0439b",
+   "topic": "Animal Health and Disease Management",
+   "title": "Animal Health and Disease Management: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on animal health and disease management, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 164,
+   "questions": [
+    {
+     "id": "711b750e-6eb3-58c1-891f-701528b74e86",
+     "key": "agr-ah-01",
+     "stem": "Gasping, twisted necks, green diarrhoea, a fall in egg production and sudden deaths in a poultry flock are signs of",
+     "image_url": null,
+     "explanation": "Newcastle disease is a virus disease that can kill most of a flock. It is prevented by vaccination on schedule, quarantine and hygiene.\n\n**Why the other options are wrong**\n\n- coccidiosis: Coccidiosis causes bloody diarrhoea and ruffled feathers.\n- fowl pox: Fowl pox causes wart-like scabs on the comb and wattles.\n- Gumboro disease: Gumboro causes depression and whitish diarrhoea in chicks of 3 to 6 weeks.",
+     "position": 1,
+     "options": [
+      {
+       "id": "0fd81176-088f-5bac-ab4c-0b75d6607a08",
+       "label": "A",
+       "content": "coccidiosis",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ccdfe80c-c8f6-56f0-afd1-fa196729367d",
+       "label": "B",
+       "content": "fowl pox",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e9b0ef96-32c7-5d60-a489-7b77f22ddb19",
+       "label": "C",
+       "content": "Gumboro disease",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "03592f76-749a-5d8b-b45f-7c58f18b42da",
+       "label": "D",
+       "content": "Newcastle disease",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3020cb73-5fe8-53bd-87da-f4244d9a2f9e",
+     "key": "agr-ah-02",
+     "stem": "Coccidiosis in poultry is caused by",
+     "image_url": null,
+     "explanation": "Prevention: keep litter dry, fix leaking drinkers and add coccidiostats to the feed or water.\n\n**Why the other options are wrong**\n\n- a virus spread by mosquitoes: A virus spread by mosquitoes is fowl pox.\n- bacteria in clean, dry litter: Coccidiosis is not bacterial, and dry litter helps prevent it.\n- a shortage of calcium in the feed: Calcium shortage causes thin eggshells and weak bones, not coccidiosis.",
+     "position": 2,
+     "options": [
+      {
+       "id": "53192b18-5d9d-58f6-800b-9b8b38a526be",
+       "label": "A",
+       "content": "a protozoan, and outbreaks are encouraged by wet litter",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "52e8cc8b-8897-5a9e-8743-c2f7582408eb",
+       "label": "B",
+       "content": "a virus spread by mosquitoes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7d5c67b1-e0aa-5a7c-977d-fdde581c56ba",
+       "label": "C",
+       "content": "bacteria in clean, dry litter",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bc96361c-f664-56ab-adbe-46388584f538",
+       "label": "D",
+       "content": "a shortage of calcium in the feed",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ad20ddaf-6868-5f1e-af50-8207e77f9552",
+     "key": "agr-ah-03",
+     "stem": "Trypanosomiasis of cattle is spread by",
+     "image_url": null,
+     "explanation": "Trypanosomiasis causes anaemia, weakness and weight loss. Keeping trypanotolerant breeds such as the N'Dama and controlling tsetse flies are the main defences.\n\n**Why the other options are wrong**\n\n- ticks: Ticks spread other diseases, such as babesiosis (redwater).\n- mosquitoes: Mosquitoes spread fowl pox among poultry, not trypanosomiasis.\n- houseflies: Houseflies carry germs onto food; they do not spread trypanosomiasis.",
+     "position": 3,
+     "options": [
+      {
+       "id": "734abae2-d519-5abb-b96f-8f87f6de03da",
+       "label": "A",
+       "content": "ticks",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c78a608b-7bcb-5292-82a7-8df04c67af26",
+       "label": "B",
+       "content": "tsetse flies",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "81e1ee44-e480-55c5-9b94-b622974052c5",
+       "label": "C",
+       "content": "mosquitoes",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "10af6d3f-74e6-5d0c-ba14-e4894d918f98",
+       "label": "D",
+       "content": "houseflies",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b74fea95-b9a6-5160-85ce-fcdf07b44dca",
+     "key": "agr-ah-04",
+     "stem": "A cow dies suddenly, with dark blood oozing from its body openings, and anthrax is suspected. The farmer should",
+     "image_url": null,
+     "explanation": "Anthrax is a bacterial disease of cattle, sheep and goats that can also kill people. It is prevented by vaccination.\n\n**Why the other options are wrong**\n\n- skin it quickly and sell the meat: Anthrax can infect and kill people who handle or eat the meat.\n- open it to find out the cause of death: Opening the carcass lets the bacteria form spores that survive in soil for decades.\n- leave it in the field for vultures: Scavengers spread the infection.",
+     "position": 4,
+     "options": [
+      {
+       "id": "5bc11f59-0342-5ff4-9fc0-594ec1734967",
+       "label": "A",
+       "content": "skin it quickly and sell the meat",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d03e46b5-416d-56ec-bd09-0af3c1ffd737",
+       "label": "B",
+       "content": "open it to find out the cause of death",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "08f8720e-a109-55cb-b8a5-d1ad084ea0ba",
+       "label": "C",
+       "content": "not open the carcass, report it, and burn or bury it deeply",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "bc6d6cb5-1742-5018-8ea4-70eb369539b7",
+       "label": "D",
+       "content": "leave it in the field for vultures",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "909e2259-23c2-5bd0-b988-725d037d1662",
+     "key": "agr-ah-05",
+     "stem": "There is no vaccine for African swine fever. The disease is controlled mainly by",
+     "image_url": null,
+     "explanation": "The virus can spread in uncooked pork scraps and on boots, vehicles and equipment, and kills most infected pigs. Infected herds must be slaughtered.\n\n**Why the other options are wrong**\n\n- treating sick pigs with antibiotics: African swine fever is caused by a virus, so antibiotics do not cure it.\n- vaccinating every piglet at birth: There is no vaccine for this disease.\n- deworming the pigs regularly: Deworming controls worms, not this virus.",
+     "position": 5,
+     "options": [
+      {
+       "id": "89a06add-1a81-569c-a65d-19c69e06a150",
+       "label": "A",
+       "content": "treating sick pigs with antibiotics",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "da0a8e76-7ed6-5109-90e3-6ee8ffe2bcb0",
+       "label": "B",
+       "content": "vaccinating every piglet at birth",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "007a6ce3-cb19-5198-bb63-e1603e955582",
+       "label": "C",
+       "content": "deworming the pigs regularly",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e35af715-dc3e-5708-994c-81f9db6f6caa",
+       "label": "D",
+       "content": "strict biosecurity, and never feeding pigs uncooked kitchen swill",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "06a91091-8e92-5401-b36c-25331ddc7149",
+     "key": "agr-ah-06",
+     "stem": "Peste des petits ruminants (PPR), a virus disease that kills many goats and sheep, is best prevented by",
+     "image_url": null,
+     "explanation": "PPR causes fever, discharges from the eyes and nose, mouth sores, diarrhoea and pneumonia. Vaccination and isolating sick animals control it.\n\n**Why the other options are wrong**\n\n- antibiotics: Antibiotics act on bacteria, not on viruses such as PPR.\n- deworming: Deworming controls internal worms, not PPR.\n- dipping: Dipping controls ticks and other external parasites, not PPR.",
+     "position": 6,
+     "options": [
+      {
+       "id": "3dc195bf-bdb8-5a4b-adaa-067e2b11ccf3",
+       "label": "A",
+       "content": "vaccination",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5017a61e-d4ac-5f6d-9a46-1bc5f4338377",
+       "label": "B",
+       "content": "antibiotics",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9a410e85-f0ba-545b-b717-4b11fca5a1f6",
+       "label": "C",
+       "content": "deworming",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1c616fb1-711b-5134-814e-6e49275f1934",
+       "label": "D",
+       "content": "dipping",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "36500785-1978-5182-a344-be3ed5515876",
+     "key": "agr-ah-07",
+     "stem": "A cow has a hot, swollen, painful udder, and there are clots in her milk. She is suffering from",
+     "image_url": null,
+     "explanation": "Mastitis is a bacterial infection of the udder. Clean milking and treatment with antibiotics control it.\n\n**Why the other options are wrong**\n\n- milk fever: Milk fever is a shortage of calcium in the blood around calving; it causes weakness and collapse.\n- foot-and-mouth disease: Foot-and-mouth disease causes blisters on the mouth and feet.\n- anthrax: Anthrax usually causes sudden death.",
+     "position": 7,
+     "options": [
+      {
+       "id": "e72ad2e6-db74-5b2b-9f83-2eae9b7f03e2",
+       "label": "A",
+       "content": "milk fever",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0fffa375-9e60-59e5-b962-b2df468fc81b",
+       "label": "B",
+       "content": "mastitis",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4f433933-88f4-5cbf-a478-20a4b481cfdf",
+       "label": "C",
+       "content": "foot-and-mouth disease",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5584f223-6603-5b4c-a716-9914a9840652",
+       "label": "D",
+       "content": "anthrax",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "757ae8f1-0851-5c05-bbd4-f7754499fab7",
+     "key": "agr-ah-08",
+     "stem": "New animals bought for a farm should be kept apart from the existing herd for some weeks mainly to",
+     "image_url": null,
+     "explanation": "Quarantine gives time for any disease the new animals carry to show itself before they mix with the herd.\n\n**Why the other options are wrong**\n\n- let them get used to the farm's feed: They can get used to the feed while kept with the herd; isolation is for disease control.\n- fatten them before they join the herd: Fattening is not the purpose of quarantine.\n- allow them to breed without competition: Breeding is not the purpose of quarantine.",
+     "position": 8,
+     "options": [
+      {
+       "id": "9115763b-4319-5d8a-baaa-eb1a21d8a1dd",
+       "label": "A",
+       "content": "let them get used to the farm's feed",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "97331839-ad3d-5cc9-a829-74d52d0d7466",
+       "label": "B",
+       "content": "fatten them before they join the herd",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "66c092ff-0cd7-54e8-b861-332e9d001284",
+       "label": "C",
+       "content": "make sure they do not bring a disease into the herd",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6c6ddd5d-4732-50aa-b3b0-68f8074830a6",
+       "label": "D",
+       "content": "allow them to breed without competition",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1f61a7ac-c2a5-588b-8861-cfcd0dc3ab0f",
+   "topic": "Livestock Production",
+   "title": "Livestock Production: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on livestock production, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 165,
+   "questions": [
+    {
+     "id": "9421f1a2-6ecd-5ded-8d80-d9a1afb56afd",
+     "key": "agr-lp-01",
+     "stem": "Goats can cause serious damage to young trees and crops because they",
+     "image_url": null,
+     "explanation": "Goats and sheep must be controlled, by tethering, fencing or housing, to protect crops and young trees.\n\n**Why the other options are wrong**\n\n- are grazers that eat only short grass: Grazing short grass close to the ground describes sheep.\n- are carnivores that dig up roots for insects: Goats are herbivores.\n- cannot digest grass at all: Goats can digest grass; they simply prefer to browse.",
+     "position": 1,
+     "options": [
+      {
+       "id": "690c55ce-5192-5a6c-8846-ae194c28c70b",
+       "label": "A",
+       "content": "are grazers that eat only short grass",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e2695597-3c6d-5777-ad6e-71c0bf0abad4",
+       "label": "B",
+       "content": "are carnivores that dig up roots for insects",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "91946072-a91d-5fab-b635-d7f476478ad6",
+       "label": "C",
+       "content": "cannot digest grass at all",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b6413f33-84cc-5f04-85a7-3932b25ecd4c",
+       "label": "D",
+       "content": "are browsers that eat the leaves and shoots of shrubs and trees",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ce4abdac-7890-585f-a3e9-f2be8eda41b5",
+     "key": "agr-lp-02",
+     "stem": "Goat and sheep houses are often raised off the ground with slatted floors because",
+     "image_url": null,
+     "explanation": "A dry, clean house reduces parasites and disease. The roof must keep out rain and the house must be well ventilated.\n\n**Why the other options are wrong**\n\n- goats and sheep prefer to sleep on bare earth: A dry, raised floor is healthier than damp ground.\n- the slats make the house warmer: Slats are for cleanliness and dryness, not warmth.\n- the animals can graze through the slats: The animals are fed inside or let out to graze; they do not graze through the floor.",
+     "position": 2,
+     "options": [
+      {
+       "id": "3ef01a1d-72a6-5eb0-84cf-8a344005b3bb",
+       "label": "A",
+       "content": "droppings fall through, keeping the animals dry and reducing worms and foot rot",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "983636a1-9947-5498-9b11-e907fc3b593f",
+       "label": "B",
+       "content": "goats and sheep prefer to sleep on bare earth",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4a579dfa-7103-53bc-bcf0-2e7d800dc820",
+       "label": "C",
+       "content": "the slats make the house warmer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "49abd885-999e-553a-8c78-80efc64be110",
+       "label": "D",
+       "content": "the animals can graze through the slats",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aba93321-f5a2-5b06-b02d-963937901954",
+     "key": "agr-lp-03",
+     "stem": "Pig pens must provide good shade because pigs",
+     "image_url": null,
+     "explanation": "Heat-stressed pigs eat less, grow slowly and may die. Shade, ventilation and wallowing water help them keep cool.\n\n**Why the other options are wrong**\n\n- need sunlight to make their own iron: Pigs cannot make iron from sunlight; piglets are given iron injections.\n- are browsers that feed on tree leaves: Pigs are not browsers; they eat concentrate rations.\n- lose all their bristles in the sun: This is not why shade is provided.",
+     "position": 3,
+     "options": [
+      {
+       "id": "98642b10-d9a2-5eb5-93e4-2f1979e928de",
+       "label": "A",
+       "content": "need sunlight to make their own iron",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fbb54f54-ea1e-58e7-a318-5ed2c1c919e4",
+       "label": "B",
+       "content": "sweat very little and suffer badly in heat",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b6aa9385-829b-53eb-bbb2-662ffa1533c5",
+       "label": "C",
+       "content": "are browsers that feed on tree leaves",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2ca57328-3917-5404-9b3f-5df1c97a29a5",
+       "label": "D",
+       "content": "lose all their bristles in the sun",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "edb5bb25-7c35-5305-ad49-08d1727f8412",
+     "key": "agr-lp-04",
+     "stem": "The needle teeth of piglets are clipped soon after birth in order to",
+     "image_url": null,
+     "explanation": "Other piglet care: iron injection, castration of males not kept for breeding, and a warm, dry creep area.\n\n**Why the other options are wrong**\n\n- help them chew solid feed: Clipping the teeth does not help chewing.\n- prevent anaemia: Anaemia is prevented by the iron injection.\n- make them grow faster: Clipping the teeth does not speed growth directly; it prevents injuries.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d77a23a6-666c-548c-8571-c1e97b61d74c",
+       "label": "A",
+       "content": "help them chew solid feed",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "970069bd-b586-53b7-927b-bf2040044d7f",
+       "label": "B",
+       "content": "prevent anaemia",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1e6fd42c-04c5-59a0-8d1e-dc4256e0de8d",
+       "label": "C",
+       "content": "stop them injuring the sow's teats and one another",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1c66d060-35ca-520d-80f0-56e12f733cc7",
+       "label": "D",
+       "content": "make them grow faster",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "70638c3a-43fa-55c1-a3dc-4b2ea6b82069",
+     "key": "agr-lp-05",
+     "stem": "A farmer buys 20 young goats at NLe 400 each, spends NLe 300 on each for feed and treatment, and sells each one for NLe 1000. What is the profit?",
+     "image_url": null,
+     "explanation": "Profit per goat = 1000 − (400 + 300) = NLe 300. Total profit = 20 × 300 = NLe 6000.\n\n**Why the other options are wrong**\n\n- NLe 12 000: This subtracts only the purchase price; the feed and treatment costs must also be taken away.\n- NLe 14 000: This subtracts only the feed and treatment costs; the purchase price must also be taken away.\n- NLe 20 000: This is the total sales income, before any costs are taken away.",
+     "position": 5,
+     "options": [
+      {
+       "id": "80a7cc8f-d4d1-58df-ae05-669880a83934",
+       "label": "A",
+       "content": "NLe 6000",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "af8237f2-ebae-54a4-9c56-b1d6b087b1e0",
+       "label": "B",
+       "content": "NLe 12 000",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1239f252-546f-51f8-a504-02b747ad585c",
+       "label": "C",
+       "content": "NLe 14 000",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cab35068-872a-5b24-83c4-424c499a01e0",
+       "label": "D",
+       "content": "NLe 20 000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2d2fc639-79b0-58c6-a3f8-02f2bd79d419",
+     "key": "agr-lp-06",
+     "stem": "Removing old, barren, sick or slow-growing animals from a herd is called",
+     "image_url": null,
+     "explanation": "Culled animals eat feed and spread disease without producing. Culling each year and keeping the best for breeding improves the herd.\n\n**Why the other options are wrong**\n\n- weaning: Weaning is separating young animals from their mother's milk.\n- castration: Castration is removing the testes of males.\n- dehorning: Dehorning is removing horns or horn buds.",
+     "position": 6,
+     "options": [
+      {
+       "id": "faacbe30-6c08-5836-9394-96a13ab1f2fd",
+       "label": "A",
+       "content": "weaning",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e82c7e5a-e0c6-5427-9067-3c9da7e8188d",
+       "label": "B",
+       "content": "castration",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0f0a2cc5-6dfe-53ed-a868-fd4d4bcd6e69",
+       "label": "C",
+       "content": "dehorning",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2d75feee-8d0f-5e45-ab29-0fa647cf4921",
+       "label": "D",
+       "content": "culling",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "54f51595-4a38-563e-b304-efb7a80b17d4",
+     "key": "agr-lp-07",
+     "stem": "A goat farmer in Sierra Leone is most likely to get the best price by having well-grown animals ready to sell",
+     "image_url": null,
+     "explanation": "Planning breeding so that animals reach a good size at the right time is part of good farm management.\n\n**Why the other options are wrong**\n\n- just after the festivals: Prices fall after the festivals, once the demand has passed.\n- at any time, because the price of goats never changes: Goat prices rise sharply before the festivals.\n- only in the middle of the rainy season: The rainy season is not when demand peaks.",
+     "position": 7,
+     "options": [
+      {
+       "id": "f6c20a19-2a4f-51ea-97e3-9d00bdb37221",
+       "label": "A",
+       "content": "just before Eid al-Adha and Christmas, when demand is highest",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "44f42ac1-2da2-57a1-9261-568c5d8ba6fc",
+       "label": "B",
+       "content": "just after the festivals",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f0cca82c-bde2-5984-8e66-83697a618311",
+       "label": "C",
+       "content": "at any time, because the price of goats never changes",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "48f11ef9-52ed-572a-8a89-9898a11e111c",
+       "label": "D",
+       "content": "only in the middle of the rainy season",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aeb744a7-ef9c-5d0e-9372-46e0f7d31a8b",
+   "topic": "Poultry Production",
+   "title": "Poultry Production: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on poultry production, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 166,
+   "questions": [
+    {
+     "id": "950ce9bb-e2d1-5c8c-a677-c3cd55045753",
+     "key": "agr-pp-01",
+     "stem": "A poultry house is built with its long axis running east to west so that",
+     "image_url": null,
+     "explanation": "The long sides then face north and south, with wire mesh for ventilation and a wide roof overhang against sun and rain.\n\n**Why the other options are wrong**\n\n- the birds get direct sunlight all day: Direct sun overheats the birds; the aim is to avoid it.\n- rain blows straight in to cool the birds: Rain must be kept out; wet litter causes disease.\n- the house is cheaper to build: Orientation does not change the building cost.",
+     "position": 1,
+     "options": [
+      {
+       "id": "cc55da3b-1b65-5a50-b7df-e52a0bc03953",
+       "label": "A",
+       "content": "the birds get direct sunlight all day",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2da0264d-11c3-581b-acad-654860dc2f0b",
+       "label": "B",
+       "content": "the sun does not shine directly in on the birds",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "790591e6-1eed-595d-8d34-bfad26167c62",
+       "label": "C",
+       "content": "rain blows straight in to cool the birds",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a694f87f-8798-52b2-a545-2dcdda30caa0",
+       "label": "D",
+       "content": "the house is cheaper to build",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c9fe45e7-baca-5052-bfd7-97e3f027d70c",
+     "key": "agr-pp-02",
+     "stem": "Wet, caked litter around the drinkers in a poultry house is dangerous because it",
+     "image_url": null,
+     "explanation": "Litter of wood shavings or rice husks, 5 to 10 cm deep, must be kept dry. Leaking drinkers should be fixed and wet patches removed.\n\n**Why the other options are wrong**\n\n- makes the birds lay more eggs: Wet litter harms the birds and lowers production.\n- keeps the birds cool and healthy: Wet litter breeds disease; cooling comes from ventilation.\n- provides grit for the gizzard: Litter is not a source of grit.",
+     "position": 2,
+     "options": [
+      {
+       "id": "76aa610f-8535-51f2-970f-2dab7f37a28c",
+       "label": "A",
+       "content": "makes the birds lay more eggs",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f69589e7-14ef-5aa3-96f6-55b38386fef9",
+       "label": "B",
+       "content": "keeps the birds cool and healthy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "da3e0959-ec44-5e9f-af85-0deb2196c99b",
+       "label": "C",
+       "content": "releases ammonia and encourages coccidiosis",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7d0d8388-e933-5f2e-85d3-08f6d0f4f042",
+       "label": "D",
+       "content": "provides grit for the gizzard",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3a30a2a1-1cf7-5b01-bbf4-20d9467d9859",
+     "key": "agr-pp-03",
+     "stem": "Broiler starter feed has a high protein content, about 22 to 23%, because",
+     "image_url": null,
+     "explanation": "Broilers get starter for the first 3 to 4 weeks, then finisher until they reach market weight.\n\n**Why the other options are wrong**\n\n- protein gives eggs strong shells: Strong shells need calcium; and broilers are meat birds, not layers.\n- protein protects chicks against Newcastle disease: Newcastle disease is prevented by vaccination.\n- chicks cannot digest carbohydrate: Chicks digest carbohydrate; maize supplies most of their energy.",
+     "position": 3,
+     "options": [
+      {
+       "id": "09f62f51-e8c1-5348-9ae9-3c8f14e1ad14",
+       "label": "A",
+       "content": "protein gives eggs strong shells",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "386eb50c-aa7b-58c7-8960-557cd4db66a2",
+       "label": "B",
+       "content": "protein protects chicks against Newcastle disease",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ff8ff515-cdf6-5382-9b12-8177033dfb38",
+       "label": "C",
+       "content": "chicks cannot digest carbohydrate",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ce87966b-4895-5fea-947d-258563f9c170",
+       "label": "D",
+       "content": "young broilers grow very fast and need protein to build their bodies",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "048ed43d-596b-5545-a665-77abf0d6a3a5",
+     "key": "agr-pp-04",
+     "stem": "To keep laying well, layers need light for about",
+     "image_url": null,
+     "explanation": "Day length controls the hormones that bring hens into lay. In the tropics, a few hours of artificial light are added to the natural day.\n\n**Why the other options are wrong**\n\n- 4 hours a day: 4 hours is far too little light; laying would stop.\n- 8 hours a day: 8 hours is too short a day for good laying.\n- 24 hours a day: Continuous light gives the birds no rest and is not needed.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b98754e6-28b2-5471-bcbe-8a7e203f69d7",
+       "label": "A",
+       "content": "4 hours a day",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0eeb5544-8183-5358-8c48-f4afa29090b6",
+       "label": "B",
+       "content": "8 hours a day",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "01138a34-87c0-5b5a-85f9-668447b3d1ff",
+       "label": "C",
+       "content": "16 hours a day",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1df4d36f-7f00-557d-9f81-0ca93bd5eabe",
+       "label": "D",
+       "content": "24 hours a day",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "23f7b6d9-9e48-59a6-968e-3dc7fe99770d",
+     "key": "agr-pp-05",
+     "stem": "Layers are debeaked (beak trimmed) in order to",
+     "image_url": null,
+     "explanation": "Pecking can injure birds badly when they are crowded or stressed. Debeaking is done carefully by a trained person.\n\n**Why the other options are wrong**\n\n- help them pick up grit: Debeaking does not help birds pick up grit.\n- stop them drinking too much water: Hens need plenty of water; debeaking is not for that.\n- make them lay bigger eggs: Beak trimming does not change egg size.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d6d63c48-ccc2-533d-8f38-96f6c10ad71a",
+       "label": "A",
+       "content": "reduce feather pecking and cannibalism",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8537474e-808a-5cc5-8edc-ccfe66f7dd2e",
+       "label": "B",
+       "content": "help them pick up grit",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "768644fe-a12a-592e-927e-9530cc5ddf91",
+       "label": "C",
+       "content": "stop them drinking too much water",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "92eb1cab-0b62-5084-bb9f-5248d5eab1c7",
+       "label": "D",
+       "content": "make them lay bigger eggs",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a4aeb59c-bde1-5673-9cfa-a2f9a961bda3",
+     "key": "agr-pp-06",
+     "stem": "Eggs collected for sale should be stored",
+     "image_url": null,
+     "explanation": "Eggs should be collected at least three times a day and kept cool, so that they stay fresh until they are sold.\n\n**Why the other options are wrong**\n\n- in the sun with the pointed end up: Heat spoils eggs quickly, and the air cell at the blunt end should face up.\n- in a warm room to keep them fresh: Warmth makes eggs go stale faster.\n- with the blunt end down in a hot store: Heat spoils eggs, and the blunt end should face up.",
+     "position": 6,
+     "options": [
+      {
+       "id": "ef442b7a-f94a-53ed-9661-7ea079b3bc09",
+       "label": "A",
+       "content": "in the sun with the pointed end up",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a8aa82d7-bb44-5af5-9b54-4fb1a9bc1487",
+       "label": "B",
+       "content": "in a cool place with the blunt end up",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "468a4af6-7ebd-5396-8a28-c1bbebe44809",
+       "label": "C",
+       "content": "in a warm room to keep them fresh",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "427ddc7c-2e28-5500-86af-b41220b07d67",
+       "label": "D",
+       "content": "with the blunt end down in a hot store",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "de4f84c5-0c9c-538a-9dde-db2e14cf12a1",
+     "key": "agr-pp-07",
+     "stem": "Brooding, in poultry management, means",
+     "image_url": null,
+     "explanation": "Young chicks cannot keep themselves warm, so a brooder gives them heat, feed, water and protection until they are feathered.\n\n**Why the other options are wrong**\n\n- hatching eggs in a machine: Hatching eggs in a machine is artificial incubation.\n- selling birds when they reach market weight: This is marketing, not brooding.\n- removing hens that have stopped laying: Removing unproductive hens is culling.",
+     "position": 7,
+     "options": [
+      {
+       "id": "d4664ef2-a4ad-561b-a100-e0a182df96cc",
+       "label": "A",
+       "content": "hatching eggs in a machine",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c50a1870-4901-5700-b5d0-b60b53518947",
+       "label": "B",
+       "content": "selling birds when they reach market weight",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b535bcdc-b85d-5a73-a585-f6f11d0ffc1b",
+       "label": "C",
+       "content": "caring for young chicks, especially keeping them warm, in their first weeks",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "99085e3b-9e08-54e3-abdf-9c0bb70365d2",
+       "label": "D",
+       "content": "removing hens that have stopped laying",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "38b9e6bb-e051-53cc-b31a-5375b6512a66",
+     "key": "agr-pp-08",
+     "stem": "In an 'all-in, all-out' system of poultry management,",
+     "image_url": null,
+     "explanation": "All-in, all-out breaks the cycle of disease between batches. A footbath and limiting visitors are other parts of biosecurity.\n\n**Why the other options are wrong**\n\n- birds of different ages are mixed so that older birds teach the young: Mixing ages lets older birds pass diseases to younger ones.\n- new birds are added whenever some die: Adding birds to an existing flock brings in disease.\n- birds are let out each day and brought in at night: This describes a semi-intensive system, not all-in all-out.",
+     "position": 8,
+     "options": [
+      {
+       "id": "6fb96122-557e-5d72-a145-b461f976b200",
+       "label": "A",
+       "content": "birds of different ages are mixed so that older birds teach the young",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5b4996d4-b9f0-5e48-bb47-22c54a428278",
+       "label": "B",
+       "content": "new birds are added whenever some die",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "32bcc0fb-3e48-540c-871c-f7cbd5323eef",
+       "label": "C",
+       "content": "birds are let out each day and brought in at night",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a8fc9597-ea0b-5081-a2f1-6577d7ae7e1a",
+       "label": "D",
+       "content": "all birds of a batch arrive and leave together, and the house is cleaned and disinfected before the next batch",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5f969a4a-3d56-50bb-99aa-575cd35c91f4",
+   "topic": "Other Animal Enterprises",
+   "title": "Other Animal Enterprises: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on other animal enterprises, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 167,
+   "questions": [
+    {
+     "id": "265a599a-5e87-5397-8e41-ada0aa12cf37",
+     "key": "agr-oe-01",
+     "stem": "The best soil for building a fish pond is",
+     "image_url": null,
+     "explanation": "A good site also has a reliable supply of clean water all year and a gentle slope, so the pond can be filled and drained by gravity.\n\n**Why the other options are wrong**\n\n- sandy soil, which drains quickly: Water would drain out of a pond built in sandy soil.\n- gravelly soil: Gravel lets water seep away.\n- loose topsoil full of roots: Loose, root-filled soil cannot be compacted to make watertight banks.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7ac4dcc3-26c0-54cf-8ee2-d48863b0e289",
+       "label": "A",
+       "content": "clay or clay loam, which holds water",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "770171ee-3dda-55b0-859d-633583017f74",
+       "label": "B",
+       "content": "sandy soil, which drains quickly",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9217e903-8426-52c7-805a-483f757e042f",
+       "label": "C",
+       "content": "gravelly soil",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d0012faf-6d7a-5828-bfcf-9ce6586c1e41",
+       "label": "D",
+       "content": "loose topsoil full of roots",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "67da5de1-273a-5e50-8ad7-69b6cc74a7be",
+     "key": "agr-oe-02",
+     "stem": "A new fish pond is fertilised with manure before stocking in order to",
+     "image_url": null,
+     "explanation": "Acidic ponds are limed first. Then manure feeds the plankton, which feed the fish.\n\n**Why the other options are wrong**\n\n- kill any wild fish in the pond: Wild fish are kept out by screens on the inlet, not by manure.\n- make the water clearer: Fertilising makes the water greener with plankton, not clearer.\n- raise the water temperature: Manure is added to feed the plankton, not to warm the water.",
+     "position": 2,
+     "options": [
+      {
+       "id": "1b60c285-340c-5e5b-8677-a29882fc656e",
+       "label": "A",
+       "content": "kill any wild fish in the pond",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "940a58de-28a7-55ba-b1c3-e33e05827ede",
+       "label": "B",
+       "content": "grow plankton, the natural food of young fish",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "61059f83-2fe3-538b-ae07-a78903d4a18f",
+       "label": "C",
+       "content": "make the water clearer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b3f568e0-182c-5697-a6bc-d6fdd9d6cc39",
+       "label": "D",
+       "content": "raise the water temperature",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bf8e3c80-c774-545d-afc4-f022c2c65c10",
+     "key": "agr-oe-03",
+     "stem": "Fish in an overstocked pond that is also overfed often die suddenly around dawn. The main reason is that",
+     "image_url": null,
+     "explanation": "At night, plants and plankton use oxygen instead of producing it, so oxygen is lowest at dawn. Stock and feed at the recommended rates.\n\n**Why the other options are wrong**\n\n- the water becomes too cold at night: Pond water does not cool enough at night to kill tropical fish.\n- plankton poisons them at dawn: Plankton is their food; the problem is the lack of oxygen.\n- birds eat them at dawn: Predators take some fish, but they do not cause sudden mass deaths.",
+     "position": 3,
+     "options": [
+      {
+       "id": "3685624a-5427-5d47-88be-8f70e0a86d5a",
+       "label": "A",
+       "content": "the water becomes too cold at night",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b6e02363-7fbf-5de0-b797-bf2f37283704",
+       "label": "B",
+       "content": "plankton poisons them at dawn",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "760590ba-d306-5ab7-960f-edc3724d0258",
+       "label": "C",
+       "content": "decaying feed and many fish use up the oxygen in the water",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "354b787c-6eba-57fd-a8a0-e63bb64b5b97",
+       "label": "D",
+       "content": "birds eat them at dawn",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "117bea71-fbe2-51bf-9ff4-713b82049b8f",
+     "key": "agr-oe-04",
+     "stem": "In a honeybee colony, the sterile females that collect nectar and pollen and make honey and wax are the",
+     "image_url": null,
+     "explanation": "Workers also build comb, feed the young, and guard and clean the hive.\n\n**Why the other options are wrong**\n\n- queen: The queen is the only fertile female; she lays all the eggs.\n- drones: Drones are males whose role is to mate with a new queen.\n- brood: The brood are the eggs, larvae and pupae developing in the comb.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b1935f8d-a41a-5486-9729-44e42f7216db",
+       "label": "A",
+       "content": "queen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "aa5f9491-814e-53b9-b451-bf2e1ed06dc2",
+       "label": "B",
+       "content": "drones",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e7ffe592-c9bd-5281-9a10-2bcfa72d3151",
+       "label": "C",
+       "content": "brood",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "146c0984-87f6-5ed8-85ac-1f327099f128",
+       "label": "D",
+       "content": "workers",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "22e2bd42-fc77-52ce-8449-4f4d43b2cc6d",
+     "key": "agr-oe-05",
+     "stem": "A beekeeper uses a smoker when opening a hive to harvest honey in order to",
+     "image_url": null,
+     "explanation": "Harvest in the early morning or evening, wear protective clothing, take only ripe, capped comb and leave enough honey for the bees.\n\n**Why the other options are wrong**\n\n- kill the bees: Smoke calms bees; killing them would destroy the colony.\n- dry the honey: Honey is not dried with smoke.\n- flavour the honey: Smoke is not used to flavour honey.",
+     "position": 5,
+     "options": [
+      {
+       "id": "c0beb214-d299-5954-8298-d4f44b61e742",
+       "label": "A",
+       "content": "calm the bees",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "092e7813-c33e-5025-8ea0-c2c7dd1fe93b",
+       "label": "B",
+       "content": "kill the bees",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "86107614-deca-5539-ab18-b6068516d59a",
+       "label": "C",
+       "content": "dry the honey",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d69efa51-925f-5267-86aa-1c5175554614",
+       "label": "D",
+       "content": "flavour the honey",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aa544f56-8d33-5095-b8cc-3f04029a5731",
+     "key": "agr-oe-06",
+     "stem": "In rabbit keeping, 'kindling' means",
+     "image_url": null,
+     "explanation": "A nest box with dry grass is put in the hutch a few days before kindling. Litters are usually 6 to 8.\n\n**Why the other options are wrong**\n\n- mating: Mating is called serving; kindling comes about 31 days later.\n- weaning the young: Weaning is taking the young off their mother's milk, at about 6 weeks.\n- building the hutch: Building the hutch is not called kindling.",
+     "position": 6,
+     "options": [
+      {
+       "id": "58e7a53e-8879-5b6f-b64a-ef810e90ef76",
+       "label": "A",
+       "content": "mating",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "42aabce2-8a86-5adc-8008-8f76fc7003ad",
+       "label": "B",
+       "content": "giving birth",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a6ded268-f168-54f2-bc67-ede4be4780f2",
+       "label": "C",
+       "content": "weaning the young",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0f429939-0509-54d1-ab1e-e3914d0fddb0",
+       "label": "D",
+       "content": "building the hutch",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9d8b31ee-04e1-5bea-b94b-e1a1b16ed999",
+     "key": "agr-oe-07",
+     "stem": "Snails reared in a snailery are given crushed shells or limestone in order to",
+     "image_url": null,
+     "explanation": "Snails also need shade, moist but not waterlogged soil, leaves and fruit, and protection from ants, rats and other predators.\n\n**Why the other options are wrong**\n\n- keep the soil in the pen dry: Snails need moist soil; limestone is fed for calcium, not used to dry the soil.\n- help them digest cellulose: Calcium does not help digestion of cellulose.\n- make them lay eggs in water: Snails lay their eggs in the soil, not in water.",
+     "position": 7,
+     "options": [
+      {
+       "id": "214fb3de-288a-5525-a81b-ecd53f7a524f",
+       "label": "A",
+       "content": "keep the soil in the pen dry",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "62eaf2ba-90aa-5db2-be8c-c0b10ef4e909",
+       "label": "B",
+       "content": "help them digest cellulose",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3deb9fe5-4a2a-5555-9217-245a713c85f8",
+       "label": "C",
+       "content": "supply the calcium they need for strong shells",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e151fe37-8fc8-5084-8093-2fb9b5409ffd",
+       "label": "D",
+       "content": "make them lay eggs in water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5cd5febc-68e2-553e-976b-379877c78f55",
+   "topic": "Animal Products and Processing",
+   "title": "Animal Products and Processing: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on animal products and processing, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 168,
+   "questions": [
+    {
+     "id": "82f87076-2f31-57ce-bcb9-aaddec817aa1",
+     "key": "agr-ap-01",
+     "stem": "Pasteurisation of milk",
+     "image_url": null,
+     "explanation": "Milk is heated to about 63 °C for 30 minutes, or about 72 °C for 15 seconds, then cooled quickly.\n\n**Why the other options are wrong**\n\n- removes all the fat from the milk: Fat is separated by skimming or a separator, not by pasteurisation.\n- adds bacteria that turn the milk into yoghurt: Adding lactic acid bacteria makes yoghurt; pasteurisation kills bacteria.\n- freezes the milk solid: Pasteurisation heats milk; it does not freeze it.",
+     "position": 1,
+     "options": [
+      {
+       "id": "cb719d6c-d1b4-5750-b5a8-423f4b02577e",
+       "label": "A",
+       "content": "removes all the fat from the milk",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "23f720d4-c52e-55cc-ad7d-aa4a3788612e",
+       "label": "B",
+       "content": "adds bacteria that turn the milk into yoghurt",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6facde1a-5902-56db-b697-6e4e22b8226f",
+       "label": "C",
+       "content": "freezes the milk solid",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b2f145d2-d0f1-5ea2-a052-54bfb7c4a07e",
+       "label": "D",
+       "content": "heats the milk enough to kill harmful bacteria without boiling it",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a534eb53-0856-5637-9e87-ef83fd68f7b6",
+     "key": "agr-ap-02",
+     "stem": "When an egg is placed in a bowl of water, it stands on end or floats. This shows that the egg is",
+     "image_url": null,
+     "explanation": "As an egg ages, water is lost through the shell and the air cell at the blunt end grows, so the egg becomes lighter for its size.\n\n**Why the other options are wrong**\n\n- fresh, because fresh eggs float: A fresh egg sinks and lies flat.\n- fertile, because fertile eggs float: Floating is a sign of age, not fertility.\n- hard-boiled: Boiling does not make an egg float.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8e6d832c-be21-58c5-83e6-036bb0bac628",
+       "label": "A",
+       "content": "stale, because its air cell has grown larger",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "466785d0-c0d5-5909-8559-01cbd8bde5b3",
+       "label": "B",
+       "content": "fresh, because fresh eggs float",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a3f95f7d-b944-5dc2-bace-e69ed96b2eb3",
+       "label": "C",
+       "content": "fertile, because fertile eggs float",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a57bb0c3-9db1-5e1a-a3a1-870b24f2e38d",
+       "label": "D",
+       "content": "hard-boiled",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fccdaa48-39db-5ba4-b8da-34fa167bc370",
+     "key": "agr-ap-03",
+     "stem": "Shining a bright light through an egg in a dark room, to check for cracks, blood spots and the size of the air cell, is called",
+     "image_url": null,
+     "explanation": "Candling also shows whether an egg is fertile, which is used to remove infertile eggs from an incubator.\n\n**Why the other options are wrong**\n\n- grading: Grading sorts eggs by size, cleanliness and shell quality.\n- incubation: Incubation keeps fertile eggs warm until they hatch.\n- pasteurisation: Pasteurisation is heat treatment of milk.",
+     "position": 3,
+     "options": [
+      {
+       "id": "11521089-d4c2-59a9-abe8-147483869a4b",
+       "label": "A",
+       "content": "grading",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d252cdc3-a609-5c91-9d3c-6fa77aba692e",
+       "label": "B",
+       "content": "candling",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "308f5aa7-062f-5dd2-b4a3-31eeafe7352f",
+       "label": "C",
+       "content": "incubation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fbfa7e5c-9521-5568-b257-3178bc1862eb",
+       "label": "D",
+       "content": "pasteurisation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e2a1d2ae-5b5c-5cb3-89c7-213fe0668cfa",
+     "key": "agr-ap-04",
+     "stem": "In the leather trade, the word 'skins' is used for the coverings of",
+     "image_url": null,
+     "explanation": "Hides and skins must be removed carefully, without cuts, and cured promptly by salting or drying to keep their value.\n\n**Why the other options are wrong**\n\n- large animals such as cattle: The coverings of large animals are called hides.\n- fish: Fish skins are not what the leather trade means by skins.\n- poultry: Poultry are plucked; their skins are not used for leather.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7b3567a3-dfdf-57a7-9345-998e538de9e8",
+       "label": "A",
+       "content": "large animals such as cattle",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0edd722a-1d7e-5b70-b542-67421d44f09f",
+       "label": "B",
+       "content": "fish",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1b6e05b8-73fd-5bd8-8c7d-94947521eb6d",
+       "label": "C",
+       "content": "small animals such as goats and sheep",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "85e11e15-b651-5fbc-8b66-527e880efd69",
+       "label": "D",
+       "content": "poultry",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "645c75fa-8567-56d1-8efd-3348c9e4a179",
+     "key": "agr-ap-05",
+     "stem": "Bone meal is added to animal feed mainly as a source of",
+     "image_url": null,
+     "explanation": "Calcium and phosphorus build bones and, in layers, eggshells. Bone meal is also used as a fertiliser.\n\n**Why the other options are wrong**\n\n- protein: Protein by-products include blood meal, fish meal and feather meal.\n- energy: Energy comes mainly from grains such as maize.\n- vitamin A: Vitamin A comes from green forage, fish oil and premixes.",
+     "position": 5,
+     "options": [
+      {
+       "id": "fa2bdd69-29c1-523b-b3ee-a67c5b299a4e",
+       "label": "A",
+       "content": "protein",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "22c198d3-f9a7-5362-b88d-61e4ae528459",
+       "label": "B",
+       "content": "energy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3c7f3f8e-4e6a-58a8-b525-710977290d6f",
+       "label": "C",
+       "content": "vitamin A",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5eed180d-d682-58c7-88cf-3a7d5a929a59",
+       "label": "D",
+       "content": "calcium and phosphorus",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "237f9841-114a-59ac-9725-10ba11ac5ce6",
+     "key": "agr-ap-06",
+     "stem": "Improved fish-smoking ovens are encouraged in coastal towns such as Tombo because they",
+     "image_url": null,
+     "explanation": "Most fish processors are women who spend long hours by the ovens, so less smoke protects their health, and less wood saves forests.\n\n**Why the other options are wrong**\n\n- smoke the fish without any heat: Smoking always uses heat from a fire.\n- add salt to the fish as it smokes: Salting is a separate method of preservation.\n- turn the fish into fish meal: Fish meal is made by drying and grinding low-grade fish and waste.",
+     "position": 6,
+     "options": [
+      {
+       "id": "cdacac2b-6fcd-5ef7-b489-5dbf76a934a3",
+       "label": "A",
+       "content": "use less firewood and produce less smoke for the processors",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b5aa399a-f046-58ee-a2b8-e2119b4ba32d",
+       "label": "B",
+       "content": "smoke the fish without any heat",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "375801f3-3240-508a-9766-14ff8b98dc74",
+       "label": "C",
+       "content": "add salt to the fish as it smokes",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fef71f24-52c7-5ffd-891a-38b7070ac361",
+       "label": "D",
+       "content": "turn the fish into fish meal",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b01db5f7-6b66-569b-a0c3-6523f3412104",
+     "key": "agr-ap-07",
+     "stem": "Meat should be inspected before it is sold mainly to",
+     "image_url": null,
+     "explanation": "Meat should come from an inspected slaughter place, and be kept cold or preserved by smoking, drying, salting or canning.\n\n**Why the other options are wrong**\n\n- fix the price of the meat: Prices are set by the market, not by inspection.\n- make the meat more tender: Inspection checks safety; it does not change tenderness.\n- add preservatives to the meat: Inspectors check meat; they do not add preservatives.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b7fbdc88-d370-544f-b723-88e2516c8a26",
+       "label": "A",
+       "content": "fix the price of the meat",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "94c5ce1d-2bea-5f85-a0b1-55f31e2bad37",
+       "label": "B",
+       "content": "stop diseases such as anthrax, tuberculosis and tapeworms reaching consumers",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "118213f6-d2a9-5de0-9f0e-3a567476e5e9",
+       "label": "C",
+       "content": "make the meat more tender",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "23286ab9-cebf-592f-b21e-4312c34a1cb7",
+       "label": "D",
+       "content": "add preservatives to the meat",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "0556ac04afaa"
+}
