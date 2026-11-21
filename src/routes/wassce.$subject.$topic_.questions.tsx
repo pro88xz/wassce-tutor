@@ -10,11 +10,12 @@ import { ArrowLeft, ArrowRight, BookOpen, Layers } from 'lucide-react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { StartCta } from '@/components/public/StartCta'
 import { QuestionCard } from '@/components/public/QuestionCard'
-import { plainText as plain } from '@/lib/question-text'
+import { markdownWithMath, plainText as plain, splitExplanation } from '@/lib/question-text'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { fetchTopicQuestionsPage, keyTermsPath, lessonPath, questionsPath, subjectPath, topicPath } from '@/lib/public-content'
-import type { TopicQuestionsPageData } from '@/lib/public-content'
+import type { PublicQuestion, TopicQuestionsPageData } from '@/lib/public-content'
 import { brandedTitle, breadcrumbJsonLd, fitDescription, indexablePageTags, privatePageTags, quizJsonLd } from '@/lib/seo'
+import type { QuizQuestion } from '@/lib/seo'
 import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
 
 const trail = ({ subject, topic }: TopicQuestionsPageData): [string, string][] => [
@@ -24,6 +25,21 @@ const trail = ({ subject, topic }: TopicQuestionsPageData): [string, string][] =
   [topic.name, topicPath(subject.slug, topic.slug)],
   ['Questions', questionsPath(subject.slug, topic.slug)],
 ]
+
+/** A question for the page's Quiz markup: the working and each wrong option's reason, as the answer fold shows them. */
+function quizQuestion(q: PublicQuestion): QuizQuestion {
+  const wrong = q.options.filter((o) => !o.is_correct)
+  const { working, reasons } = splitExplanation(q.explanation ?? '', wrong.map((o) => o.content))
+  return {
+    text: markdownWithMath(q.stem),
+    image: q.image_url,
+    explanation: working ? markdownWithMath(working) : undefined,
+    options: q.options.map((o) => {
+      const reason = o.is_correct ? undefined : reasons[wrong.indexOf(o)]
+      return { text: markdownWithMath(o.content), correct: o.is_correct, reason: reason ? markdownWithMath(reason) : undefined }
+    }),
+  }
+}
 
 function describe({ subject, topic, questions }: TopicQuestionsPageData): string {
   const n = questions.length
@@ -58,12 +74,7 @@ export const Route = createFileRoute('/wassce/$subject/$topic_/questions')({
           path,
           about: data.topic.name,
           subject: `WASSCE ${data.subject.name}`,
-          questions: data.questions.map((q) => ({
-            text: plain(q.stem),
-            image: q.image_url,
-            explanation: q.explanation ? plain(q.explanation) : undefined,
-            options: q.options.map((o) => ({ label: o.label, text: plain(o.content), correct: o.is_correct })),
-          })),
+          questions: data.questions.map(quizQuestion),
         }),
         breadcrumbJsonLd(trail(data)),
       ],

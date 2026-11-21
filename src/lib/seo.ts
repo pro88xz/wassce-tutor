@@ -98,7 +98,7 @@ export const PUBLIC_PAGES = {
     title: 'Terms of Service | WASSCE Tutor',
     description:
       'The terms that apply when you create an account or use WASSCE Tutor, including subscriptions, payments and acceptable use.',
-    lastmod: '2026-11-07',
+    lastmod: '2026-11-21',
   },
 } as const satisfies Record<string, PublicPage>
 
@@ -487,27 +487,48 @@ export function faqJsonLd(items: [question: string, answer: string][]): Record<s
   }
 }
 
+/**
+ * One question for quizJsonLd. Every text is Markdown with its maths as LaTeX
+ * between $$ … $$ (markdownWithMath in lib/question-text.ts), as Google's
+ * practice problems read it, and all of it is on the page.
+ */
 export type QuizQuestion = {
-  /** Plain text: the question as written, maths spelled out (no LaTeX). */
+  /** The question as written. */
   text: string
-  /** Plain text of each option, with its letter. */
-  options: { label: string; text: string; correct: boolean }[]
-  /** Plain text of the worked solution. */
+  /** The options in the order shown, each wrong one with the page's reason it is wrong. */
+  options: { text: string; correct: boolean; reason?: string }[]
+  /** The worked solution for the correct option. */
   explanation?: string
   image?: string | null
 }
 
+/** Senior secondary school (SSS 1 to 3) and older private candidates. */
+const WASSCE_AGE_RANGE = '15-'
+
 /**
  * schema.org Quiz for a page of multiple-choice questions with their answers
- * and working (all visible on the page). Not marked as flashcards: Google's
- * Education Q&A carousel is for flashcard pages only, and these are not.
+ * and working (all visible on the page), with the fields Google's practice
+ * problems ask for: each option's position and format, why each wrong option
+ * is wrong, and the working for the right one. Not marked as flashcards:
+ * Google's Education Q&A carousel is for flashcard pages only, and these are
+ * not. There is no question-level hint (`comment`): the pages show none, and
+ * markup must not say more than the page.
  */
 export function quizJsonLd({ name, path, about, subject, questions }: { name: string; path: string; about: string; subject: string; questions: QuizQuestion[] }): Record<string, unknown> {
   const url = absoluteUrl(path)
-  const answer = (o: QuizQuestion['options'][number], explanation?: string) => ({
+  const comment = (text?: string) => (text ? { comment: { '@type': 'Comment', encodingFormat: 'text/markdown', text } } : {})
+  const answer = (o: QuizQuestion['options'][number], position: number, explanation?: string) => ({
     '@type': 'Answer',
-    text: `${o.label}. ${o.text}`,
-    ...(explanation ? { answerExplanation: { '@type': 'Comment', text: explanation } } : {}),
+    position,
+    encodingFormat: 'text/markdown',
+    text: o.text,
+    ...(o.correct
+      ? {
+          // The first paragraph of the working says why it is right; all of it is the explanation.
+          ...comment(explanation?.split(/\n\s*\n/)[0]),
+          ...(explanation ? { answerExplanation: { '@type': 'Comment', encodingFormat: 'text/markdown', text: explanation } } : {}),
+        }
+      : comment(o.reason)),
   })
   return {
     '@context': 'https://schema.org',
@@ -525,16 +546,20 @@ export function quizJsonLd({ name, path, about, subject, questions }: { name: st
     audience: { '@type': 'EducationalAudience', educationalRole: 'student', audienceType: 'WASSCE candidates' },
     provider: { '@id': ORG_ID },
     hasPart: questions.map((q, i) => {
-      const correct = q.options.find((o) => o.correct)
+      const answers = q.options.map((o, position) => answer(o, position, q.explanation))
+      const correct = q.options.findIndex((o) => o.correct)
       return {
         '@type': 'Question',
         '@id': `${url}#q${i + 1}`,
         name: `Question ${i + 1}`,
-        text: q.text,
+        learningResourceType: 'Practice problem',
         eduQuestionType: 'Multiple choice',
+        typicalAgeRange: WASSCE_AGE_RANGE,
+        encodingFormat: 'text/markdown',
+        text: q.text,
         ...(q.image ? { image: q.image } : {}),
-        ...(correct ? { acceptedAnswer: answer(correct, q.explanation) } : {}),
-        suggestedAnswer: q.options.filter((o) => !o.correct).map((o) => answer(o)),
+        ...(correct >= 0 ? { acceptedAnswer: answers[correct] } : {}),
+        suggestedAnswer: answers.filter((_, j) => j !== correct),
       }
     }),
   }

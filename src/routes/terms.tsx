@@ -19,7 +19,7 @@ function Terms() {
       <header className="space-y-3 pb-4 pt-2">
         <p className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">Legal</p>
         <h1 className="text-4xl font-bold tracking-tight text-balance">Terms of Service</h1>
-        <p className="text-sm text-muted-foreground">Last updated: 8 June 2026</p>
+        <p className="text-sm text-muted-foreground">Last updated: 21 November 2026</p>
       </header>
 
       <section className="space-y-3 rounded-2xl border bg-card p-6">
@@ -45,10 +45,24 @@ function Terms() {
         </p>
       </section>
 
-      <section className="space-y-3 rounded-2xl border bg-card p-6">
+      {/* #content is the licence and #image-licensing the "acquire a licence"
+          page in our images' structured data (articleImagesJsonLd in routes/blog.$slug.tsx). */}
+      <section id="content" className="scroll-mt-24 space-y-3 rounded-2xl border bg-card p-6">
         <h2 className="text-xl font-bold tracking-tight">Content &amp; intellectual property</h2>
         <p className="text-muted-foreground">
           All lessons, questions, explanations, diagrams, and other content on WASSCE Tutor are owned by WASSCE Tutor or licensed for use. You may use this content for your personal study. You may not copy, redistribute, republish, or commercially exploit any content without written permission.
+        </p>
+        <h3 id="image-licensing" className="scroll-mt-24 pt-1 font-semibold">Using our images and charts</h3>
+        <p className="text-muted-foreground">
+          The cover images, charts and diagrams that WASSCE Tutor makes are &copy; WASSCE Tutor. To republish one, for example in a news report, a school newsletter or a presentation, ask us first by{' '}
+          <a href={`mailto:${CONTACT.email}?subject=${encodeURIComponent('Permission to use a WASSCE Tutor image')}`} className="font-semibold text-primary hover:underline">
+            email
+          </a>{' '}
+          or on{' '}
+          <a href={`https://wa.me/${CONTACT.whatsapp}`} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">
+            WhatsApp ({CONTACT.phoneDisplay})
+          </a>
+          , saying which image you would like to use and where it will appear. If we give permission, credit &ldquo;WASSCE Tutor&rdquo; and link to the page the image came from. Photos credited to a photographer (for example via Pexels or Wikimedia Commons) are not ours to license: follow the licence named in the photo&rsquo;s credit.
         </p>
         <p className="text-muted-foreground">
           You may not share your account credentials with others or attempt to bypass the paywall. Doing so may result in account suspension without refund.
