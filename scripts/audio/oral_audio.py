@@ -423,7 +423,7 @@ def main() -> None:
     clips = set5_p1.CLIPS
     # Each word's rivals: the other words of every row it is in, and their homophones.
     rivals: dict[str, set[str]] = {slug: set() for slug in clips}
-    for row in set5_p1.ROWS:
+    for row in set5_p1.ROWS.values():
         for slug in row:
             for other in row:
                 if clips[other]["text"].lower() != clips[slug]["text"].lower():

@@ -30,9 +30,9 @@ AUDIO = "https://wasscetutor.com/audio/oral"
 # this, speaks each clip in standard British English and checks it before saving
 # public/audio/oral/<slug>.mp3. See scripts/audio/README.md.
 CLIPS: dict[str, dict] = {}
-# The words of each Listen row, by slug. A clip must not sound like another word
-# in its row: those are the sounds being contrasted.
-ROWS: list[list[str]] = []
+# The words of each question's Listen row, by slug. A clip must not sound like
+# another word in its row: those are the sounds being contrasted.
+ROWS: dict[str, list[str]] = {}
 # The clips that passed those checks, with a hash of each file. Only these are
 # linked, and the hash in the link makes a changed clip reach phones at once.
 _PASSED_PATH = Path(__file__).with_name("audio_manifest.json")
@@ -73,9 +73,11 @@ def oral(id: str, topic: str, stem: str, answer: str, wrong: list[tuple[str, str
     if listen:
         for w in listen:
             _register(w["slug"], {k: v for k, v in w.items() if k != "slug"})
-        ROWS.append([w["slug"] for w in listen])
-        chips = " ".join(f"[{w['label']} /{w['ipa']}/]({_url(w['slug'])})" for w in listen if w["slug"] in PASSED)
-        if chips:
+        ROWS[id] = [w["slug"] for w in listen]
+        # A row is shown only when every word in it passed: half a set of
+        # contrasting sounds would mislead more than it helps.
+        if all(w["slug"] in PASSED for w in listen):
+            chips = " ".join(f"[{w['label']} /{w['ipa']}/]({_url(w['slug'])})" for w in listen)
             working += f"\n\n**Listen** (standard British English)\n\n{chips}"
     if passage:
         _register(id, {"kind": "passage", "segments": [list(seg) for seg in passage]})
