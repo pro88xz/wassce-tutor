@@ -22,7 +22,9 @@ export function DownloadButton({ variant = 'default' }: { variant?: 'default' | 
         user_agent: navigator.userAgent.slice(0, 500),
         client_id: clientId,
       })
-    } catch {}
+    } catch {
+      // Counting the download is best effort (storage can be blocked); the download itself must still start.
+    }
     const a = document.createElement('a')
     a.href = 'https://cfclkwugbexrihloqofc.supabase.co/storage/v1/object/public/apk/wassce-tutor.apk'
     a.download = 'wassce-tutor.apk'

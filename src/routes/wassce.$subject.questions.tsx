@@ -9,7 +9,8 @@ import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { fetchSubjectQuestionsHub, questionsPath, subjectPath } from '@/lib/public-content'
 import type { SubjectQuestionsHub } from '@/lib/public-content'
 import { absoluteUrl, brandedTitle, breadcrumbJsonLd, fitDescription, indexablePageTags, privatePageTags } from '@/lib/seo'
-import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
+import { SubjectIcon } from '@/components/SubjectIcon'
+import { subjectTheme } from '@/lib/subject-theme'
 
 const trail = ({ subject }: SubjectQuestionsHub): [string, string][] => [
   ['Home', '/'],

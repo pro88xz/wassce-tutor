@@ -15,7 +15,8 @@ import { fetchKeyTermsPage, keyTermsPath, lessonPath, questionsPath, subjectPath
 import type { KeyTermsPageData } from '@/lib/public-content'
 import { sectionId } from '@/lib/lesson-outlines'
 import { brandedTitle, breadcrumbJsonLd, fitDescription, flashcardsJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
-import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
+import { SubjectIcon } from '@/components/SubjectIcon'
+import { subjectTheme } from '@/lib/subject-theme'
 
 const trail = ({ subject, topic }: KeyTermsPageData): [string, string][] => [
   ['Home', '/'],

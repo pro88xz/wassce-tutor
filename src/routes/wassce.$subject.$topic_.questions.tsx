@@ -16,7 +16,8 @@ import { fetchTopicQuestionsPage, keyTermsPath, lessonPath, questionsPath, subje
 import type { PublicQuestion, TopicQuestionsPageData } from '@/lib/public-content'
 import { brandedTitle, breadcrumbJsonLd, fitDescription, indexablePageTags, privatePageTags, quizJsonLd } from '@/lib/seo'
 import type { QuizQuestion } from '@/lib/seo'
-import { SubjectIcon, subjectTheme } from '@/lib/subject-theme'
+import { SubjectIcon } from '@/components/SubjectIcon'
+import { subjectTheme } from '@/lib/subject-theme'
 
 const trail = ({ subject, topic }: TopicQuestionsPageData): [string, string][] => [
   ['Home', '/'],

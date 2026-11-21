@@ -1,6 +1,5 @@
 // Progress indicators shared by the learning screens.
-
-const pct = (value: number, max: number) => (max > 0 ? Math.min(100, Math.max(0, Math.round((value / max) * 100))) : 0)
+import { percent as pct } from './percent'
 
 /** Horizontal progress bar. `fill` is a background class (e.g. a subject palette's `bar`). */
 export function ProgressBar({
@@ -90,4 +89,3 @@ export function ProgressRing({
   )
 }
 
-export { pct as percent }
