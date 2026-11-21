@@ -269,6 +269,8 @@ export const SEARCH_COPY: Partial<Record<string, { title: string; description: s
 
 /** Google shows about 60 characters of a title: add the brand only when it still fits. */
 export function brandedTitle(title: string, max = 65): string {
+  // A title that already ends "| WASSCE" or "| WASSCE Maths" would read "| WASSCE | WASSCE Tutor".
+  if (/\|\s*WASSCE\b[^|]*$/.test(title)) return title
   const full = `${title} | ${SITE.name}`
   return full.length <= max ? full : title
 }
